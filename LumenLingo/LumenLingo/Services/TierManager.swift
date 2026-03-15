@@ -7,6 +7,7 @@ extension Notification.Name {
     static let languagePairAutoSwitched = Notification.Name("languagePairAutoSwitched")
     static let breathingOrbsAutoDisabled = Notification.Name("breathingOrbsAutoDisabled")
     static let quantumFlowAutoAdjusted = Notification.Name("quantumFlowAutoAdjusted")
+    static let nebulaDriftAutoAdjusted = Notification.Name("nebulaDriftAutoAdjusted")
 }
 
 // MARK: - Tier Manager
@@ -177,6 +178,27 @@ final class TierManager {
         scene.sortOrder < allowedCount(for: .quantumFlow)
     }
 
+    // MARK: - Nebula Drift Gating
+
+    /// Whether the current tier can access any nebula drift preset.
+    var nebulaDriftAccessible: Bool {
+        hasAccess(to: .nebulaDrift)
+    }
+
+    /// Returns all nebula drift presets sorted by unlock priority, limited by tier.
+    func unlockedNebulaPresets() -> [NebulaPreset] {
+        let limit = allowedCount(for: .nebulaDrift)
+        return NebulaPreset.allCases
+            .sorted { $0.sortOrder < $1.sortOrder }
+            .prefix(limit)
+            .map { $0 }
+    }
+
+    /// Check whether a specific nebula drift preset is unlocked for the current tier.
+    func isNebulaPresetUnlocked(_ preset: NebulaPreset) -> Bool {
+        preset.sortOrder < allowedCount(for: .nebulaDrift)
+    }
+
     // MARK: - Sync
 
     /// Sync tier from `UserProfile` on app launch / view appear.
@@ -247,6 +269,25 @@ final class TierManager {
                         let highest = unlockedQuantumScenes().last ?? .dubaiCelestialMirage
                         profile.quantumScene = highest
                         NotificationCenter.default.post(name: .quantumFlowAutoAdjusted, object: nil)
+                    }
+                }
+            }
+
+            // Nebula drift: adjust or disable on downgrade
+            if let profile {
+                let ndLimit = allowedCount(for: .nebulaDrift)
+                if ndLimit == 0 && profile.nebulaDriftEnabled {
+                    // No access at all — disable entirely
+                    profile.nebulaDriftEnabled = false
+                    profile.nebulaPresetEnum = .lagoonNebula
+                    NotificationCenter.default.post(name: .nebulaDriftAutoAdjusted, object: nil)
+                } else if ndLimit > 0 {
+                    let activePreset = profile.nebulaPresetEnum
+                    if !isNebulaPresetUnlocked(activePreset) {
+                        // Active preset exceeds new limit — switch to highest allowed
+                        let highest = unlockedNebulaPresets().last ?? .lagoonNebula
+                        profile.nebulaPresetEnum = highest
+                        NotificationCenter.default.post(name: .nebulaDriftAutoAdjusted, object: nil)
                     }
                 }
             }

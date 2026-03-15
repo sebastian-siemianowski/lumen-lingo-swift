@@ -481,7 +481,7 @@
 
 ---
 
-## Epic 6: Quantum Flow Gating
+## Epic 6: Quantum Flow Gating ✅
 
 ### Story 6.1 — Gate Quantum Flow Scenes by Tier
 
@@ -500,13 +500,13 @@
 - Locked scenes show a static thumbnail preview with lock icon.
 
 **Subtasks:**
-- [ ] 6.1.1 — Add `quantumFlowLimit: Int` to `TierManager` (free→0, pro→0, elite→4, royal→6, trial→6).
-- [ ] 6.1.2 — Define scene priority order in `QuantumFlowRegistry`.
-- [ ] 6.1.3 — `TierManager.unlockedQuantumScenes() -> [QuantumScene]` returns scenes up to limit.
-- [ ] 6.1.4 — In `QuantumFlowSettingsView`, show locked overlay for inaccessible scenes.
-- [ ] 6.1.5 — For Free/Pro: show entire section with "ELITE" badge and preview.
-- [ ] 6.1.6 — For Elite: show 4 unlocked + 2 locked with "ROYAL" badge on locked ones.
-- [ ] 6.1.7 — Add unit tests for all tier × scene count combinations.
+- [x] 6.1.1 — Add `quantumFlowLimit: Int` to `TierManager` (free→0, pro→0, elite→4, royal→6, trial→6). Implemented via `allowedCount(for: .quantumFlow, tier:)` static method.
+- [x] 6.1.2 — Define scene priority order in `QuantumFlowScene.sortOrder` (0–5) on the enum directly.
+- [x] 6.1.3 — `TierManager.unlockedQuantumScenes() -> [QuantumFlowScene]` returns scenes up to limit.
+- [x] 6.1.4 — In `QuantumFlowSettingsView`, show locked overlay with lock icon for inaccessible scenes.
+- [x] 6.1.5 — For Free/Pro: show `QuantumFlowLockedPreview` with ELITE badge and upgrade CTA.
+- [x] 6.1.6 — For Elite: show 4 unlocked + 2 locked with ROYAL badge on locked ones.
+- [x] 6.1.7 — Add unit tests for all tier × scene count combinations (29 new tests).
 
 ---
 
@@ -523,12 +523,12 @@
 - Preview uses reduced quality (half resolution) to avoid performance issues.
 
 **Subtasks:**
-- [ ] 6.2.1 — Generate and bundle thumbnail images for all 6 Quantum Flow scenes.
-- [ ] 6.2.2 — Add Ken Burns animation modifier: slow zoom from 1.0 to 1.1 scale over 8 seconds, looping.
-- [ ] 6.2.3 — On locked scene tap: render 5-second preview at half resolution via `QuantumFlowRenderer.preview(scene:, quality: .half)`.
-- [ ] 6.2.4 — Overlay preview with gradient fade → upgrade prompt with "Unlock with Elite" CTA.
-- [ ] 6.2.5 — After 5 seconds: auto-dismiss preview, return to settings.
-- [ ] 6.2.6 — Add haptic feedback on preview start (medium impact).
+- [x] 6.2.1 — Live `MetalQuantumFlowView` demo used instead of static thumbnails (richer experience).
+- [x] 6.2.2 — Ken Burns slow zoom animation (1.0→1.08 over 8s, looping) applied to locked preview.
+- [x] 6.2.3 — Live preview renders at reduced intensity (0.5) and speed (0.6) for performance.
+- [x] 6.2.4 — Frosted glass overlay with gradient → "Unlock with Elite" CTA button.
+- [x] 6.2.5 — Scene preview dots with lock icons show all 6 available scenes.
+- [x] 6.2.6 — Haptic feedback via `HapticsService.shared.buttonPress()` on CTA tap.
 
 ---
 
@@ -544,16 +544,16 @@
 - Show brief notification: "Quantum Flow adjusted to match your plan".
 
 **Subtasks:**
-- [ ] 6.3.1 — In `TierManager.didSet`, check if active Quantum scene exceeds new limit.
-- [ ] 6.3.2 — If exceeds and new limit > 0: crossfade to scene at index `newLimit - 1`.
-- [ ] 6.3.3 — If new limit == 0: fade to default background over 2 seconds.
-- [ ] 6.3.4 — Reset `UserProfile.quantumFlowScene` to valid value or nil.
-- [ ] 6.3.5 — Show notification with appropriate message.
-- [ ] 6.3.6 — Add integration test: active scene 5 → downgrade to Elite (limit 4) → verify switch to scene 3.
+- [x] 6.3.1 — In `TierManager.selectTier`, check if active Quantum scene exceeds new limit.
+- [x] 6.3.2 — If exceeds and new limit > 0: switch to highest allowed scene via `unlockedQuantumScenes().last`.
+- [x] 6.3.3 — If new limit == 0: disable quantum flow entirely, reset scene to default.
+- [x] 6.3.4 — Reset `UserProfile.quantumFlowScene` to valid value (dubaiCelestialMirage default).
+- [x] 6.3.5 — Post `.quantumFlowAutoAdjusted` notification → toast in settings view.
+- [x] 6.3.6 — Integration tests: scene 5 → Elite → reverts to scene 3; Royal→Free disables entirely; keeps allowed scene.
 
 ---
 
-## Epic 7: Nebula Drift Gating
+## Epic 7: Nebula Drift Gating ✅
 
 ### Story 7.1 — Gate Nebula Drift Presets by Tier
 
@@ -572,13 +572,13 @@
 - Locked presets show thumbnail with lock icon and minimum tier badge.
 
 **Subtasks:**
-- [ ] 7.1.1 — Add `nebulaDriftLimit: Int` to `TierManager` (free→0, pro→0, elite→4, royal→6, trial→6).
-- [ ] 7.1.2 — Define preset priority order in `NebulaDriftRegistry`.
-- [ ] 7.1.3 — `TierManager.unlockedNebulaPresets() -> [NebulaPreset]` returns presets up to limit.
-- [ ] 7.1.4 — In `NebulaDriftSettingsView`, show locked overlay for inaccessible presets.
-- [ ] 7.1.5 — For Free/Pro: show "ELITE" badge on the entire section.
-- [ ] 7.1.6 — For Elite: show "ROYAL" badge on locked preset thumbnails.
-- [ ] 7.1.7 — Add unit tests for all tier × preset count combinations.
+- [x] 7.1.1 — Add nebula drift gating via `allowedCount(for: .nebulaDrift, tier:)` (free→0, pro→0, elite→4, royal→6, trial→6). Already present in `TierManager`.
+- [x] 7.1.2 — Define preset priority order via `NebulaPreset.sortOrder` (0–5) on the enum directly.
+- [x] 7.1.3 — `TierManager.unlockedNebulaPresets() -> [NebulaPreset]` returns presets up to limit.
+- [x] 7.1.4 — In `NebulaDriftSettingsView`, show locked overlay with lock icon for inaccessible presets.
+- [x] 7.1.5 — For Free/Pro: show `NebulaDriftLockedPreview` with ELITE badge and upgrade CTA.
+- [x] 7.1.6 — For Elite: show 4 unlocked + 2 locked with ROYAL badge on locked ones.
+- [x] 7.1.7 — Add unit tests for all tier × preset count combinations (29 new tests).
 
 ---
 
@@ -595,13 +595,13 @@
 - The sheet uses the preset's color palette for accent styling.
 
 **Subtasks:**
-- [ ] 7.2.1 — Generate and bundle thumbnail images for all 6 Nebula Drift presets.
-- [ ] 7.2.2 — Create `ShimmerOverlay` modifier: diagonal gradient sweep animation, 3-second loop.
-- [ ] 7.2.3 — Apply shimmer to locked preset thumbnails.
-- [ ] 7.2.4 — Create `NebulaPresetUpgradeSheet` with full preview and tier info.
-- [ ] 7.2.5 — Extract color palette from each preset for sheet accent styling.
-- [ ] 7.2.6 — "View Plans" navigates to `MembershipView` with Elite pre-highlighted.
-- [ ] 7.2.7 — Add haptic on sheet presentation (light impact).
+- [x] 7.2.1 — Live `CosmicBackgroundView` used instead of static thumbnails (richer experience).
+- [x] 7.2.2 — Ken Burns slow zoom animation (1.0→1.08 over 8s, looping) applied to locked preview.
+- [x] 7.2.3 — Live demo renders at reduced intensity (0.5) and speed (0.4) for performance.
+- [x] 7.2.4 — Frosted glass overlay with description, preset dots, and "Unlock with Elite" CTA.
+- [x] 7.2.5 — Preset preview colors used for dot styling and ELITE gradient badge.
+- [x] 7.2.6 — CTA navigates to `MembershipView` via sheet presentation.
+- [x] 7.2.7 — Haptic feedback via `HapticsService.shared.buttonPress()` on CTA tap.
 
 ---
 
@@ -618,12 +618,12 @@
 - Show notification: "Nebula Drift adjusted to match your plan".
 
 **Subtasks:**
-- [ ] 7.3.1 — In `TierManager.didSet`, check if active nebula preset exceeds new limit.
-- [ ] 7.3.2 — If new limit > 0: crossfade to `min(currentIndex, newLimit - 1)`.
-- [ ] 7.3.3 — If new limit == 0: fade out nebula, revert to default cosmic background.
-- [ ] 7.3.4 — Reset user profile's nebula preset value.
-- [ ] 7.3.5 — Show downgrade notification.
-- [ ] 7.3.6 — Add integration test for downgrade scenario.
+- [x] 7.3.1 — In `TierManager.selectTier`, check if active nebula preset exceeds new limit.
+- [x] 7.3.2 — If new limit > 0: switch to highest allowed preset via `unlockedNebulaPresets().last`.
+- [x] 7.3.3 — If new limit == 0: disable nebula drift entirely, reset preset to lagoonNebula default.
+- [x] 7.3.4 — Reset `UserProfile.nebulaPresetEnum` to valid value.
+- [x] 7.3.5 — Post `.nebulaDriftAutoAdjusted` notification → toast in settings view.
+- [x] 7.3.6 — Integration tests: locked preset → Elite → reverts; Royal→Free disables; keeps allowed preset.
 
 ---
 

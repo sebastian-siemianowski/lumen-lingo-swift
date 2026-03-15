@@ -9,13 +9,51 @@ struct NebulaDriftSettingsView: View {
     @Query private var profiles: [UserProfile]
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(TierManager.self) private var tierManager
     @State private var previewingPreset: NebulaPreset? = nil
+    @State private var showDowngradeToast = false
 
     private var L: AppStrings { localization.strings }
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
     var body: some View {
+        ZStack(alignment: .bottom) {
+            if tierManager.nebulaDriftAccessible {
+                unlockedContent
+            } else {
+                lockedContent
+            }
+
+            if showDowngradeToast {
+                downgradeToast
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                    .padding(.bottom, 16)
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .nebulaDriftAutoAdjusted)) { _ in
+            withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
+                showDowngradeToast = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                withAnimation(.easeOut(duration: 0.3)) {
+                    showDowngradeToast = false
+                }
+            }
+        }
+    }
+
+    // MARK: - Locked (Free/Pro)
+
+    private var lockedContent: some View {
+        VStack(spacing: 20) {
+            NebulaDriftLockedPreview()
+        }
+    }
+
+    // MARK: - Unlocked (Elite+)
+
+    private var unlockedContent: some View {
         VStack(spacing: 20) {
             // Header with toggle
             headerRow
@@ -47,6 +85,55 @@ struct NebulaDriftSettingsView: View {
         .fullScreenCover(item: $previewingPreset) { preset in
             nebulaFullscreenPreview(preset: preset)
         }
+    }
+
+    // MARK: - Downgrade Toast
+
+    private var downgradeToast: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "cloud.fog.fill")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(.white.opacity(0.9))
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Nebula Drift adjusted")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(.white)
+                Text("Adjusted to match your plan")
+                    .font(.system(size: 11))
+                    .foregroundStyle(.white.opacity(0.7))
+            }
+
+            Spacer()
+
+            Button {
+                withAnimation {
+                    showDowngradeToast = false
+                }
+            } label: {
+                Image(systemName: "xmark")
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundStyle(.white.opacity(0.6))
+                    .padding(6)
+            }
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 10)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(.ultraThinMaterial)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(
+                            LinearGradient(
+                                colors: [.purple.opacity(0.7), .indigo.opacity(0.5)],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                )
+        )
+        .padding(.horizontal, 16)
     }
 
     // MARK: - Header
@@ -135,19 +222,43 @@ struct NebulaDriftSettingsView: View {
                 GridItem(.flexible(), spacing: 10),
             ], spacing: 10) {
                 ForEach(NebulaPreset.allCases) { preset in
-                    SchemeCardView(
-                        name: preset.displayName,
-                        description: preset.localizedDescription(L),
-                        previewColors: preset.previewColors,
-                        isSelected: profile?.nebulaPresetEnum == preset,
-                        previewHeight: 70,
-                        icon: preset.iconName
-                    ) {
-                        withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                            profile?.nebulaPresetEnum = preset
+                    let isLocked = !tierManager.isNebulaPresetUnlocked(preset)
+                    ZStack {
+                        SchemeCardView(
+                            name: preset.displayName,
+                            description: preset.localizedDescription(L),
+                            previewColors: preset.previewColors,
+                            isSelected: !isLocked && profile?.nebulaPresetEnum == preset,
+                            previewHeight: 70,
+                            icon: preset.iconName
+                        ) {
+                            if !isLocked {
+                                withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                                    profile?.nebulaPresetEnum = preset
+                                }
+                            }
+                        } onFullscreen: {
+                            if !isLocked {
+                                previewingPreset = preset
+                            }
                         }
-                    } onFullscreen: {
-                        previewingPreset = preset
+                        .opacity(isLocked ? 0.6 : 1.0)
+
+                        if isLocked {
+                            // Lock overlay for tier-restricted presets
+                            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                                .fill(.black.opacity(0.35))
+                                .overlay(
+                                    VStack(spacing: 6) {
+                                        Image(systemName: "lock.fill")
+                                            .font(.system(size: 16, weight: .semibold))
+                                            .foregroundStyle(.white.opacity(0.9))
+                                        PremiumFeatureBadge(tier: preset.minimumTier, style: .outlined)
+                                            .scaleEffect(0.8)
+                                    }
+                                )
+                                .allowsHitTesting(false)
+                        }
                     }
                 }
             }

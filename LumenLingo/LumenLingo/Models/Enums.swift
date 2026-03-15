@@ -766,6 +766,25 @@ enum NebulaPreset: String, CaseIterable, Identifiable {
         }
     }
 
+    /// Deterministic unlock priority. Lower = unlocked first.
+    /// Elite (4 presets) gets sortOrder 0–3; Royal/Trial get all 6.
+    var sortOrder: Int {
+        switch self {
+        case .lagoonNebula:      return 0
+        case .celestialLagoon:   return 1
+        case .edgeOfAndromeda:   return 2
+        case .solarAurora:       return 3   // Elite cap
+        case .spiralHaloGalaxy:  return 4
+        case .starburstRing:     return 5
+        }
+    }
+
+    /// The minimum membership tier required to unlock this preset.
+    var minimumTier: MembershipTier {
+        if sortOrder < 4 { return .elite }
+        return .royal
+    }
+
     /// 3-color preview gradient for preset cards
     var previewColors: [Color] {
         switch self {

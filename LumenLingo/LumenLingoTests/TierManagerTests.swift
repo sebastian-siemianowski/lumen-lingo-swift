@@ -798,4 +798,247 @@ final class TierManagerTests: XCTestCase {
     func testQuantumFlowNotificationName() {
         XCTAssertEqual(Notification.Name.quantumFlowAutoAdjusted.rawValue, "quantumFlowAutoAdjusted")
     }
+
+    // MARK: - Nebula Drift Gating
+
+    func testFreeTierNebulaDriftNotAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertFalse(manager.nebulaDriftAccessible)
+    }
+
+    func testProTierNebulaDriftNotAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        XCTAssertFalse(manager.nebulaDriftAccessible)
+    }
+
+    func testEliteTierNebulaDriftAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        XCTAssertTrue(manager.nebulaDriftAccessible)
+    }
+
+    func testRoyalTierNebulaDriftAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        XCTAssertTrue(manager.nebulaDriftAccessible)
+    }
+
+    func testTrialTierNebulaDriftAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "trial"
+        XCTAssertTrue(manager.nebulaDriftAccessible)
+    }
+
+    func testNebulaDriftAllowedCount_Free0() {
+        XCTAssertEqual(TierManager.allowedCount(for: .nebulaDrift, tier: .free), 0)
+    }
+
+    func testNebulaDriftAllowedCount_Pro0() {
+        XCTAssertEqual(TierManager.allowedCount(for: .nebulaDrift, tier: .pro), 0)
+    }
+
+    func testNebulaDriftAllowedCount_Elite4() {
+        XCTAssertEqual(TierManager.allowedCount(for: .nebulaDrift, tier: .elite), 4)
+    }
+
+    func testNebulaDriftAllowedCount_Royal6() {
+        XCTAssertEqual(TierManager.allowedCount(for: .nebulaDrift, tier: .royal), 6)
+    }
+
+    func testNebulaDriftAllowedCount_Trial6() {
+        XCTAssertEqual(TierManager.allowedCount(for: .nebulaDrift, tier: .trial), 6)
+    }
+
+    // MARK: - Nebula Drift Preset Unlock Counts
+
+    func testFreeTierUnlocks0NebulaPresets() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertEqual(manager.unlockedNebulaPresets().count, 0)
+    }
+
+    func testProTierUnlocks0NebulaPresets() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        XCTAssertEqual(manager.unlockedNebulaPresets().count, 0)
+    }
+
+    func testEliteTierUnlocks4NebulaPresets() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        XCTAssertEqual(manager.unlockedNebulaPresets().count, 4)
+    }
+
+    func testRoyalTierUnlocksAll6NebulaPresets() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        XCTAssertEqual(manager.unlockedNebulaPresets().count, 6)
+    }
+
+    func testTrialTierUnlocksAll6NebulaPresets() {
+        let manager = TierManager()
+        manager.currentTierId = "trial"
+        XCTAssertEqual(manager.unlockedNebulaPresets().count, 6)
+    }
+
+    // MARK: - Nebula Drift Preset Sort Order
+
+    func testNebulaPresetSortOrdersAreUnique() {
+        let orders = NebulaPreset.allCases.map(\.sortOrder)
+        XCTAssertEqual(Set(orders).count, NebulaPreset.allCases.count)
+    }
+
+    func testNebulaPresetSortOrdersAreSequential() {
+        let orders = NebulaPreset.allCases.map(\.sortOrder).sorted()
+        for i in 0..<6 {
+            XCTAssertTrue(orders.contains(i), "Missing sort order \(i)")
+        }
+    }
+
+    // MARK: - Nebula Drift Preset Unlock Checks
+
+    func testIsNebulaPresetUnlocked_EliteUnlocksFirst4() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        let sorted = NebulaPreset.allCases.sorted { $0.sortOrder < $1.sortOrder }
+        for preset in sorted.prefix(4) {
+            XCTAssertTrue(manager.isNebulaPresetUnlocked(preset),
+                          "\(preset.displayName) should be unlocked for Elite")
+        }
+        for preset in sorted.suffix(2) {
+            XCTAssertFalse(manager.isNebulaPresetUnlocked(preset),
+                           "\(preset.displayName) should be locked for Elite")
+        }
+    }
+
+    func testIsNebulaPresetUnlocked_RoyalUnlocksAll() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        for preset in NebulaPreset.allCases {
+            XCTAssertTrue(manager.isNebulaPresetUnlocked(preset),
+                          "\(preset.displayName) should be unlocked for Royal")
+        }
+    }
+
+    func testIsNebulaPresetUnlocked_FreeLocksAll() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        for preset in NebulaPreset.allCases {
+            XCTAssertFalse(manager.isNebulaPresetUnlocked(preset),
+                           "\(preset.displayName) should be locked for Free")
+        }
+    }
+
+    // MARK: - Nebula Drift Minimum Tier
+
+    func testFirst4NebulaPresetsRequireElite() {
+        let sorted = NebulaPreset.allCases.sorted { $0.sortOrder < $1.sortOrder }
+        for preset in sorted.prefix(4) {
+            XCTAssertEqual(preset.minimumTier, .elite,
+                           "\(preset.displayName) should require Elite")
+        }
+    }
+
+    func testLast2NebulaPresetsRequireRoyal() {
+        let sorted = NebulaPreset.allCases.sorted { $0.sortOrder < $1.sortOrder }
+        for preset in sorted.suffix(2) {
+            XCTAssertEqual(preset.minimumTier, .royal,
+                           "\(preset.displayName) should require Royal")
+        }
+    }
+
+    // MARK: - Nebula Drift Downgrade
+
+    func testNebulaDriftDowngradeToFreeDisablesEntirely() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "elite"
+        manager.syncFromProfile(profile)
+        profile.nebulaDriftEnabled = true
+        profile.nebulaPresetEnum = .lagoonNebula
+
+        manager.selectTier("free", profile: profile)
+
+        XCTAssertFalse(profile.nebulaDriftEnabled)
+    }
+
+    func testNebulaDriftDowngradeToProDisablesEntirely() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "royal"
+        manager.syncFromProfile(profile)
+        profile.nebulaDriftEnabled = true
+
+        manager.selectTier("pro", profile: profile)
+
+        XCTAssertFalse(profile.nebulaDriftEnabled)
+    }
+
+    func testNebulaDriftDowngradeToEliteRevertsLockedPreset() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "royal"
+        manager.syncFromProfile(profile)
+        profile.nebulaDriftEnabled = true
+        // Set to a preset that will be locked at Elite (sortOrder >= 4)
+        let lockedPreset = NebulaPreset.allCases.sorted { $0.sortOrder < $1.sortOrder }[4]
+        profile.nebulaPresetEnum = lockedPreset
+
+        manager.selectTier("elite", profile: profile)
+
+        // Should revert to highest allowed preset (sortOrder 3)
+        let highestAllowed = NebulaPreset.allCases.sorted { $0.sortOrder < $1.sortOrder }[3]
+        XCTAssertEqual(profile.nebulaPresetEnum, highestAllowed)
+        XCTAssertTrue(profile.nebulaDriftEnabled, "Should remain enabled since Elite has 4 presets")
+    }
+
+    func testNebulaDriftDowngradeKeepsAllowedPreset() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "royal"
+        manager.syncFromProfile(profile)
+        profile.nebulaDriftEnabled = true
+        // Set to a preset that is also available at Elite (sortOrder < 4)
+        let allowedPreset = NebulaPreset.allCases.sorted { $0.sortOrder < $1.sortOrder }[2]
+        profile.nebulaPresetEnum = allowedPreset
+
+        manager.selectTier("elite", profile: profile)
+
+        XCTAssertEqual(profile.nebulaPresetEnum, allowedPreset, "Allowed preset should not change")
+        XCTAssertTrue(profile.nebulaDriftEnabled)
+    }
+
+    func testNebulaDriftUpgradeDoesNotAutoEnable() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "free"
+        manager.syncFromProfile(profile)
+        profile.nebulaDriftEnabled = false
+
+        manager.selectTier("elite", profile: profile)
+
+        XCTAssertFalse(profile.nebulaDriftEnabled)
+    }
+
+    func testNebulaDriftDowngradeResetsPresetToDefault() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "elite"
+        manager.syncFromProfile(profile)
+        profile.nebulaDriftEnabled = true
+        profile.nebulaPresetEnum = .solarAurora  // sortOrder 3, still valid at Elite
+
+        // But let's set to a Royal-only preset
+        profile.nebulaPresetEnum = .starburstRing  // sortOrder 5
+
+        manager.selectTier("free", profile: profile)
+
+        XCTAssertEqual(profile.nebulaPresetEnum, .lagoonNebula)
+    }
+
+    func testNebulaDriftNotificationName() {
+        XCTAssertEqual(Notification.Name.nebulaDriftAutoAdjusted.rawValue, "nebulaDriftAutoAdjusted")
+    }
 }

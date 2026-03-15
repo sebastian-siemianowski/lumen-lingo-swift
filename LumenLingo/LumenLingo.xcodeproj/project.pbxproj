@@ -36,6 +36,7 @@
 		2B8FCD7F1A048D812A58D29E /* flashcards_english_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 184332E9A816388D71A52CC4 /* flashcards_english_polish.json */; };
 		2D10BFD2A89BA820AEAC4490 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082370545F169B205DEB7118 /* DataModels.swift */; };
 		2F46AAA7A365380EDAAAA25F /* Midnight-Jazz-Piano.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FA63307B7ED662E74F5272BE /* Midnight-Jazz-Piano.m4a */; };
+		3043011483273E4F8D1F3BC3 /* NebulaDriftLockedPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C273E365C514538CA4F196 /* NebulaDriftLockedPreview.swift */; };
 		30865DEE0594C3D69795C953 /* flashcards_english_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 053CFBAF57D151555C331BB2 /* flashcards_english_german.json */; };
 		3286490C7847CF0EA8136B2B /* grammar_english_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 934EFECE842530C820F715B2 /* grammar_english_german.json */; };
 		343AD391FC75380A01F03858 /* ProgressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310DB5BD274A6F504FBCFFC1 /* ProgressService.swift */; };
@@ -304,6 +305,7 @@
 		869CE2159CF9460A51BA2008 /* AppStrings+French.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+French.swift"; sourceTree = "<group>"; };
 		873F283713D80218498D7120 /* TierBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierBadgeView.swift; sourceTree = "<group>"; };
 		881BEF19BF6BC1C0A955764B /* flashcards_japanese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_japanese_english.json; sourceTree = "<group>"; };
+		88C273E365C514538CA4F196 /* NebulaDriftLockedPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaDriftLockedPreview.swift; sourceTree = "<group>"; };
 		894DD05B6C1F9A54FFFA697A /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
 		8A7CB0448DE947B938B41FF7 /* Tokyo-Night-Street.m4a */ = {isa = PBXFileReference; path = "Tokyo-Night-Street.m4a"; sourceTree = "<group>"; };
 		8BBC7CB529E2BAA14AC41CCD /* PracticeExpiredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeExpiredView.swift; sourceTree = "<group>"; };
@@ -932,6 +934,7 @@
 			children = (
 				F27B4ACED23C18E53C32B300 /* BreathingOrbsLockedPreview.swift */,
 				0C84297D92B80DD22BB1E11C /* BreathingOrbsSettingsView.swift */,
+				88C273E365C514538CA4F196 /* NebulaDriftLockedPreview.swift */,
 				8D7E271F15AB922B3AF19043 /* NebulaDriftSettingsView.swift */,
 				55B9BA72516085422014F289 /* ProfileView.swift */,
 				7E101E50905734D656D5E754 /* QuantumFlowLockedPreview.swift */,
@@ -1208,6 +1211,7 @@
 				9B62C71FC47783DF6BB80D30 /* MetalCosmicView.swift in Sources */,
 				F6F7A30CD0594D8726E59FA2 /* MetalQuantumFlowView.swift in Sources */,
 				4F2F8873556D56DC57B10789 /* MetalQuantumRenderer.swift in Sources */,
+				3043011483273E4F8D1F3BC3 /* NebulaDriftLockedPreview.swift in Sources */,
 				5F8D5BC0E027A8B5E7340923 /* NebulaDriftSettingsView.swift in Sources */,
 				B9313B9CC02F968DC9318B94 /* PracticeExpiredView.swift in Sources */,
 				207C74D6A9B9CC98B4F2E6B4 /* PracticeTimeBanner.swift in Sources */,
