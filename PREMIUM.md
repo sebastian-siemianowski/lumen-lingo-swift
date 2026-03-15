@@ -1417,12 +1417,14 @@
 
 ---
 
-## Appendix A: Tier-Feature Matrix (Complete) - Please do double check and modify as Ive changed and removed some of the stories - this might not be accurate
+## Appendix A: Tier-Feature Matrix (Complete)
+
+> Verified against `TierManager.swift` source code (March 2026).
 
 | Feature | Free | Pro | Elite | Royal | Trial |
 |---|---|---|---|---|---|
 | Game Modes | All 3 | All 3 | All 3 | All 3 | All 3 |
-| Language Pairs | 3 | 7 | 25+ | 25+ | 25+ |
+| Language Pairs | 3 | 7 | 25 | 25 | 25 |
 | Practice Time | 30 min/day | Unlimited | Unlimited | Unlimited | Unlimited |
 | Soundscapes | 0 | 1 | 8 | All 12 | All 12 |
 | Breathing Orbs | 0 | 6 schemes | 6 schemes | 6 schemes | 6 schemes |
@@ -1430,22 +1432,17 @@
 | Nebula Drift | 0 | 0 | 4 presets | 6 presets | 6 presets |
 | Offline Mode | No | Yes | Yes | Yes | Yes |
 | XP Multiplier | 1.0× | 1.25× | 1.5× | 2.0× | 2.0× |
-| Theme Customization | Basic | Standard | Advanced | Premium | Premium |
-| Streak Freezes | 0/mo | 1/mo | 2/mo | Unlimited | Unlimited |
-| Reminders | 1 | 3 | Smart | Smart + Custom | Smart + Custom |
 | Session Results | Basic | Enhanced | Advanced | Premium | Premium |
-| Data Export | No | No | CSV | CSV + JSON + PDF | CSV + JSON + PDF |
+| Data Export | No | No | Yes (Elite) | Yes | Yes |
 | Learning Insights | No | No | No | Yes | Yes |
 | Milestone Badge Style | Basic | Gradient | Sparkle | Holographic | Holographic |
-| Loading Screen | Simple | Pulsing | Particle | Golden | Golden |
 | Card Haptics | Basic | Enhanced | Rich | Premium | Premium |
-| Dashboard Widgets | Core | + Soundscape | + Quantum | + Nebula + Badge | All |
-| Feature Discovery | Shows carousel | No | No | No | No |
-| Post-Session Nudge | Every 3rd | No | No | No | No |
+| Dashboard Widgets | Core + Time + Carousel | Core + Soundscape + Offline | Core + Soundscape + Offline | Core + Soundscape + Offline + Badge | All |
+| Post-Session Nudge | Every 3rd session | No | No | No | No |
 
 ---
 
-## Appendix B: Story Dependency Graph - Please do double check and modify as Ive changed and removed some of the stories - this might not be accurate
+## Appendix B: Story Dependency Graph
 
 ```
 Epic 1 (Tier Persistence)
@@ -1464,49 +1461,54 @@ Epic 1 (Tier Persistence)
 Epic 10 (Trial) depends on Epic 1
 Epic 9 (Upgrade Prompts) depends on Epic 19
 Epic 12 (Dashboard) depends on Epics 2, 4, 6, 7
-Epic 15 (Notifications) depends on Epic 19
-Epic 16 (Accessibility) runs in parallel with all
 Epic 17 (Animations) depends on Epic 1
-Epic 18 (Data Export) depends on Epic 14
+Epic 18 (Data & Analytics) depends on Epic 14
 Epic 20 (Edge Cases) depends on Epic 1, 19
+Epic 21 (Onboarding) depends on Epic 1
+Epic 22 (Content Personalization) depends on Epic 3
+Epic 23 (Social & Community) depends on Epic 1
+Epic 24 (Tier Transitions) depends on Epic 17
 ```
 
 ---
 
-## Appendix C: Implementation Priority - Please do double check and modify as Ive changed and removed some of the stories - this might not be accurate
+## Appendix C: Implementation Priority
 
-### Phase 1 — Foundation (Must-Have)
+### Phase 1 — Foundation (Must-Have) ✅
 1. Epic 1: Tier Selection & Persistence
 2. Epic 19: Feature Flag Infrastructure
-3. Story 20.1: Corrupt Data Handling
+3. Epic 20: Edge Cases & Error Handling
 
-### Phase 2 — Core Gating (Must-Have)
+### Phase 2 — Core Gating (Must-Have) ✅
 4. Epic 2: Soundscape Gating
 5. Epic 3: Language Pair Gating
 6. Epic 4: Practice Time Gating
 7. Epic 5: Breathing Orbs Gating
 
-### Phase 3 — Premium Visual Gating (Should-Have)
+### Phase 3 — Premium Visual Gating (Should-Have) ✅
 8. Epic 6: Quantum Flow Gating
 9. Epic 7: Nebula Drift Gating
 10. Epic 8: Offline Mode Gating
 
-### Phase 4 — Engagement & Upsell (Should-Have)
+### Phase 4 — Engagement & Upsell (Should-Have) ✅
 11. Epic 9: Upgrade Prompts
 12. Epic 10: Royal Trial Lifecycle
 13. Epic 12: Dashboard Feature Visibility
 
-### Phase 5 — Deep Personalization (Nice-to-Have)
-14. Epic 11: Settings Gating
-15. Epic 13: Game Session Integration
-16. Epic 14: Journey Stats Gating
+### Phase 5 — Deep Integration (Should-Have) ✅
+14. Epic 11: Settings & Appearance Gating
+15. Epic 13: Game Session Feature Integration
+16. Epic 14: Journey / Progress View Gating
 
-### Phase 6 — Advanced & Polish (Nice-to-Have)
-17. Epic 15: Notification Gating
-18. Epic 17: Tier Animations
-19. Epic 18: Data Export & Insights
-20. Epic 16: Accessibility Audit
-21. Epic 20: Remaining Edge Cases
+### Phase 6 — Animation & Data (Should-Have) ✅
+17. Epic 17: Tier-Specific Animations & Polish
+18. Epic 18: Data & Analytics by Tier
+
+### Phase 7 — Future Expansion (Not Started)
+19. Epic 21: Onboarding & First-Run Tier Education
+20. Epic 22: Content Personalization by Tier
+21. Epic 23: Social & Community Gating
+22. Epic 24: Tier Transition Animations & Micro-interactions
 
 ---
 
