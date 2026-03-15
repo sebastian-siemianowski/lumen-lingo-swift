@@ -33,11 +33,11 @@ struct JourneyView: View {
                 // Header
                 journeyHeader
 
+                // Overall stats
+                overallStatsPanel
+
                 // Milestones timeline
                 milestonesSection
-
-                // Overall stats inside GlassPanelWrapper
-                overallStatsPanel
 
                 // Game type breakdown
                 gameTypeBreakdown
@@ -212,54 +212,148 @@ struct JourneyView: View {
     // MARK: - Overall Stats
 
     private var overallStatsPanel: some View {
-        VStack(spacing: 10) {
-            Text(L.overview)
-                .font(.system(size: 15, weight: .semibold))
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-                .frame(maxWidth: .infinity, alignment: .leading)
+        let level = profile?.currentLevel ?? 1
+        let totalXP = profile?.totalXP ?? 0
+        let progress = profile?.levelProgress ?? 0
+        let xpInLevel = profile?.xpInCurrentLevel ?? 0
+        let xpNeeded = profile?.xpForNextLevel ?? 100
 
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
-                journeyStat(title: L.level, value: "\(profile?.currentLevel ?? 1)", icon: "star.fill", color: .yellow)
-                journeyStat(title: L.totalXP, value: formattedXP(profile?.totalXP ?? 0), icon: "bolt.fill", color: .cyan)
-                journeyStat(title: L.sessions, value: "\(allProgress.count)", icon: "play.circle.fill", color: .green)
-                journeyStat(title: L.streak, value: "\(profile?.streakDays ?? 0) \(L.days)", icon: "flame.fill", color: .orange)
+        return VStack(spacing: 16) {
+            // Hero: Level ring + XP bar
+            HStack(spacing: 16) {
+                // Circular level badge
+                ZStack {
+                    Circle()
+                        .stroke(
+                            LinearGradient(
+                                colors: [Color(hex: "#667eea").opacity(0.15), Color(hex: "#764ba2").opacity(0.15)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 4
+                        )
+                        .frame(width: 64, height: 64)
+
+                    Circle()
+                        .trim(from: 0, to: progress)
+                        .stroke(
+                            LinearGradient(
+                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            style: StrokeStyle(lineWidth: 4, lineCap: .round)
+                        )
+                        .frame(width: 64, height: 64)
+                        .rotationEffect(.degrees(-90))
+
+                    VStack(spacing: 0) {
+                        Text("\(level)")
+                            .font(.system(size: 22, weight: .bold, design: .rounded))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                        Text(L.level.uppercased())
+                            .font(.system(size: 8, weight: .semibold))
+                            .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
+                            .tracking(1)
+                    }
+                }
+
+                // XP info
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(formattedXP(totalXP) + " XP")
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+
+                    // Progress bar
+                    GeometryReader { geo in
+                        ZStack(alignment: .leading) {
+                            Capsule()
+                                .fill(isDark ? .white.opacity(0.08) : .black.opacity(0.06))
+                                .frame(height: 6)
+
+                            Capsule()
+                                .fill(
+                                    LinearGradient(
+                                        colors: [Color(hex: "#667eea"), Color(hex: "#a855f7")],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
+                                .frame(width: max(6, geo.size.width * progress), height: 6)
+                        }
+                    }
+                    .frame(height: 6)
+
+                    Text("\(formattedXP(xpInLevel)) / \(formattedXP(xpNeeded)) " + L.xp.lowercased())
+                        .font(.system(size: 10))
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
+                }
+            }
+
+            // Divider
+            Rectangle()
+                .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
+                .frame(height: 1)
+                .padding(.horizontal, 4)
+
+            // Three stat columns
+            HStack(spacing: 0) {
+                overviewStat(
+                    icon: "bolt.fill",
+                    value: formattedXP(totalXP),
+                    label: L.totalXP,
+                    color: .cyan
+                )
+
+                Rectangle()
+                    .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
+                    .frame(width: 1, height: 32)
+
+                overviewStat(
+                    icon: "play.circle.fill",
+                    value: "\(allProgress.count)",
+                    label: L.sessions,
+                    color: .green
+                )
+
+                Rectangle()
+                    .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
+                    .frame(width: 1, height: 32)
+
+                overviewStat(
+                    icon: "flame.fill",
+                    value: "\(profile?.streakDays ?? 0)",
+                    label: L.streak,
+                    color: .orange
+                )
             }
         }
-        .padding(14)
+        .padding(16)
         .background(GlassCardBackground())
     }
 
-    private func journeyStat(title: String, value: String, icon: String, color: Color) -> some View {
-        VStack(spacing: 5) {
+    private func overviewStat(icon: String, value: String, label: String, color: Color) -> some View {
+        HStack(spacing: 6) {
             Image(systemName: icon)
-                .font(.system(size: 18))
+                .font(.system(size: 14))
                 .foregroundStyle(color)
-                .shadow(color: color.opacity(0.4), radius: 6)
 
-            Text(value)
-                .font(.system(size: 16, weight: .bold))
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
-
-            Text(title)
-                .font(.system(size: 10))
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+            VStack(alignment: .leading, spacing: 1) {
+                Text(value)
+                    .font(.system(size: 14, weight: .bold, design: .rounded))
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                Text(label)
+                    .font(.system(size: 9))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
+            }
         }
         .frame(maxWidth: .infinity)
-        .padding(8)
-        .background(
-            RoundedRectangle(cornerRadius: 14)
-                .fill(color.opacity(0.06))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 14)
-                        .strokeBorder(color.opacity(0.1), lineWidth: 1)
-                )
-        )
     }
 
     // MARK: - Game Type Breakdown
