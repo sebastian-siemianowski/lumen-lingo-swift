@@ -4,25 +4,26 @@ import SwiftUI
 
 /// Full-screen celebration overlay shown when a user upgrades to a higher tier.
 /// Uses a single Canvas with lightweight per-particle math (no drawLayer),
-/// radial glow, ring burst, icon spring, tier-specific linguistic message,
-/// and auto-dismiss after 4.5s.
+/// a frosted glass card with tier-gradient ornamental border, icon spring,
+/// tier-specific linguistic message in serif italic, and auto-dismiss after 5s.
 struct TierUpgradeCelebrationView: View {
     @Environment(TierManager.self) private var tierManager
     @Environment(\.localization) private var localization
 
+    @State private var showCard = false
     @State private var showIcon = false
     @State private var showName = false
     @State private var showMessage = false
+    @State private var showDividers = false
     @State private var dismissing = false
     @State private var particlePhase: CGFloat = 0
-    @State private var glowScale: CGFloat = 0.3
-    @State private var glowOpacity: Double = 0
+    @State private var glowPulse: CGFloat = 0
     @State private var ringExpand: CGFloat = 0
+    @State private var borderGlow: Double = 0
 
     private var tier: MembershipTier { tierManager.upgradedToTier }
     private var L: AppStrings { localization.strings }
 
-    /// Returns the tier-specific linguistic celebration message.
     private var tierMessage: String {
         switch tier {
         case .pro:   return L.upgradeMessagePro
@@ -46,92 +47,220 @@ struct TierUpgradeCelebrationView: View {
     private var celebrationContent: some View {
         GeometryReader { geo in
             ZStack {
-                // Dim backdrop
-                Color.black.opacity(dismissing ? 0 : 0.65)
+                Color.black.opacity(dismissing ? 0 : 0.7)
                     .ignoresSafeArea()
 
-                // Expanding ring burst (lightweight SwiftUI shapes)
                 ringBurst(size: geo.size)
 
-                // Single merged particle canvas (confetti + sparkles)
                 particleCanvas(size: geo.size)
 
-                // Center content
-                VStack(spacing: 18) {
-                    Spacer()
-
-                    // Glow behind icon
-                    ZStack {
-                        Circle()
-                            .fill(
-                                RadialGradient(
-                                    colors: [
-                                        tier.gradientColors.first?.opacity(0.35) ?? .clear,
-                                        .clear
-                                    ],
-                                    center: .center,
-                                    startRadius: 10,
-                                    endRadius: 100
-                                )
-                            )
-                            .frame(width: 200, height: 200)
-                            .scaleEffect(glowScale)
-                            .opacity(glowOpacity)
-
-                        // Tier icon
-                        Image(systemName: tier.iconName)
-                            .font(.system(size: 72, weight: .bold))
-                            .foregroundStyle(
-                                LinearGradient(
-                                    colors: tier.gradientColors,
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
-                            .scaleEffect(showIcon ? 1.0 : 0.01)
-                            .opacity(showIcon ? 1 : 0)
-                            .shadow(color: tier.gradientColors.first?.opacity(0.5) ?? .clear, radius: 24, y: 4)
-                    }
-
-                    // Tier name
-                    Text(tier.displayName)
-                        .font(.system(size: 34, weight: .heavy, design: .rounded))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: tier.gradientColors,
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .tracking(showName ? 2 : 14)
-                        .opacity(showName ? 1 : 0)
-                        .scaleEffect(showName ? 1 : 0.85)
-
-                    // "Upgraded!" subtitle
-                    Text(L.upgradedExclamation)
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(.white.opacity(0.85))
-                        .opacity(showName ? 1 : 0)
-                        .offset(y: showName ? 0 : 6)
-
-                    // Tier-specific linguistic message
-                    Text(tierMessage)
-                        .font(.system(size: 14, weight: .regular, design: .serif))
-                        .italic()
-                        .foregroundStyle(.white.opacity(0.7))
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 40)
-                        .opacity(showMessage ? 1 : 0)
-                        .offset(y: showMessage ? 0 : 12)
-
-                    Spacer()
-                    Spacer()
-                }
+                // --- Royal Card ---
+                cardView
+                    .frame(maxWidth: 320)
+                    .scaleEffect(showCard ? 1.0 : 0.85)
+                    .opacity(showCard ? 1 : 0)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .opacity(dismissing ? 0 : 1)
         }
         .ignoresSafeArea()
-        .drawingGroup() // Render entire overlay in Metal-backed buffer
+        .drawingGroup()
+    }
+
+    // MARK: - Card
+
+    private var cardView: some View {
+        VStack(spacing: 0) {
+            // Top ornamental divider
+            ornamentalDivider
+                .opacity(showDividers ? 1 : 0)
+                .padding(.top, 28)
+                .padding(.bottom, 8)
+
+            // Icon with radial glow
+            ZStack {
+                // Pulsing radial glow behind icon
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [
+                                tier.gradientColors.first?.opacity(0.35) ?? .clear,
+                                tier.gradientColors.first?.opacity(0.08) ?? .clear,
+                                .clear
+                            ],
+                            center: .center,
+                            startRadius: 5,
+                            endRadius: 80
+                        )
+                    )
+                    .frame(width: 160, height: 160)
+                    .scaleEffect(0.9 + glowPulse * 0.15)
+                    .opacity(showIcon ? 0.9 : 0)
+
+                Image(systemName: tier.iconName)
+                    .font(.system(size: 64, weight: .bold))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: tier.gradientColors,
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .scaleEffect(showIcon ? 1.0 : 0.01)
+                    .opacity(showIcon ? 1 : 0)
+                    .shadow(color: tier.gradientColors.first?.opacity(0.6) ?? .clear, radius: 20, y: 2)
+            }
+            .padding(.vertical, 4)
+
+            // Tier name
+            Text(tier.displayName)
+                .font(.system(size: 32, weight: .heavy, design: .rounded))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: tier.gradientColors,
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .tracking(showName ? 3 : 16)
+                .opacity(showName ? 1 : 0)
+                .scaleEffect(showName ? 1 : 0.85)
+                .padding(.top, 2)
+
+            // "Upgraded!" badge
+            Text(L.upgradedExclamation)
+                .font(.system(size: 13, weight: .bold, design: .rounded))
+                .tracking(1.5)
+                .textCase(.uppercase)
+                .foregroundStyle(tier.gradientColors.first?.opacity(0.8) ?? .white)
+                .opacity(showName ? 1 : 0)
+                .padding(.top, 4)
+
+            // Middle ornamental divider
+            ornamentalDivider
+                .opacity(showDividers ? 1 : 0)
+                .padding(.vertical, 14)
+
+            // Tier-specific linguistic message
+            Text(tierMessage)
+                .font(.system(size: 15, weight: .regular, design: .serif))
+                .italic()
+                .foregroundStyle(.white.opacity(0.85))
+                .multilineTextAlignment(.center)
+                .lineSpacing(4)
+                .padding(.horizontal, 28)
+                .opacity(showMessage ? 1 : 0)
+                .offset(y: showMessage ? 0 : 8)
+
+            // Bottom ornamental divider
+            ornamentalDivider
+                .opacity(showDividers ? 1 : 0)
+                .padding(.top, 16)
+                .padding(.bottom, 28)
+        }
+        .background(cardBackground)
+        .clipShape(RoundedRectangle(cornerRadius: 24))
+        .overlay(cardBorder)
+        .shadow(color: tier.gradientColors.first?.opacity(0.3) ?? .clear, radius: 30, y: 8)
+        .shadow(color: .black.opacity(0.4), radius: 20, y: 10)
+    }
+
+    // MARK: - Card Background
+
+    private var cardBackground: some View {
+        ZStack {
+            // Deep frosted dark base
+            RoundedRectangle(cornerRadius: 24)
+                .fill(.ultraThinMaterial)
+                .environment(\.colorScheme, .dark)
+
+            // Subtle tier-colored tint
+            RoundedRectangle(cornerRadius: 24)
+                .fill(
+                    LinearGradient(
+                        colors: [
+                            tier.gradientColors.first?.opacity(0.08) ?? .clear,
+                            .clear,
+                            tier.gradientColors.last?.opacity(0.05) ?? .clear
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+
+            // Vignette inner glow at top
+            RoundedRectangle(cornerRadius: 24)
+                .fill(
+                    LinearGradient(
+                        colors: [
+                            .white.opacity(0.04),
+                            .clear,
+                            .clear,
+                            .black.opacity(0.15)
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
+        }
+    }
+
+    // MARK: - Card Border
+
+    private var cardBorder: some View {
+        RoundedRectangle(cornerRadius: 24)
+            .strokeBorder(
+                LinearGradient(
+                    colors: [
+                        tier.gradientColors.first?.opacity(0.5 + borderGlow * 0.3) ?? .clear,
+                        tier.gradientColors.last?.opacity(0.2 + borderGlow * 0.15) ?? .clear,
+                        .white.opacity(0.08),
+                        tier.gradientColors.first?.opacity(0.3 + borderGlow * 0.2) ?? .clear
+                    ],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                ),
+                lineWidth: 1.5
+            )
+    }
+
+    // MARK: - Ornamental Divider
+
+    /// A decorative line with a small diamond in the center, tier-colored.
+    private var ornamentalDivider: some View {
+        HStack(spacing: 8) {
+            // Left line with fade
+            tier.gradientColors.first.map { color in
+                Rectangle()
+                    .fill(
+                        LinearGradient(
+                            colors: [.clear, color.opacity(0.4)],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(height: 0.5)
+            }
+
+            // Center diamond
+            Image(systemName: "diamond.fill")
+                .font(.system(size: 5))
+                .foregroundStyle(tier.gradientColors.first?.opacity(0.5) ?? .clear)
+
+            // Right line with fade
+            tier.gradientColors.last.map { color in
+                Rectangle()
+                    .fill(
+                        LinearGradient(
+                            colors: [color.opacity(0.4), .clear],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(height: 0.5)
+            }
+        }
+        .padding(.horizontal, 32)
     }
 
     // MARK: - Ring Burst
@@ -153,11 +282,8 @@ struct TierUpgradeCelebrationView: View {
         .position(x: size.width / 2, y: size.height / 2)
     }
 
-    // MARK: - Single Merged Particle Canvas
+    // MARK: - Particle Canvas
 
-    /// Draws both confetti and sparkle particles in a single Canvas pass.
-    /// Avoids `drawLayer` — uses direct math for tumbling effect (width oscillation)
-    /// and sets opacity directly before each fill.
     private func particleCanvas(size: CGSize) -> some View {
         Canvas { context, canvasSize in
             let cx = canvasSize.width / 2
@@ -165,32 +291,25 @@ struct TierUpgradeCelebrationView: View {
             let phase = Double(particlePhase)
             let gradientColors = tier.gradientColors
 
-            // --- Confetti (50 particles, no drawLayer) ---
             let confettiCount = 50
             for i in 0..<confettiCount {
                 let seed = Double(i) * 137.508
                 let color = gradientColors[i % gradientColors.count]
 
-                // Base particle dimensions
                 let baseW = CGFloat(3.5 + seed.truncatingRemainder(dividingBy: 6))
                 let baseH = baseW * CGFloat(1.2 + (seed * 0.37).truncatingRemainder(dividingBy: 2.0) / 2.0)
 
-                // Tumble: oscillate width like a card flipping in 3D
                 let tumbleFreq = 2.0 + seed.truncatingRemainder(dividingBy: 3.0)
                 let tumbleW = baseW * CGFloat(0.3 + 0.7 * abs(cos(phase * tumbleFreq + seed)))
 
-                // Radial burst from center
                 let burstAngle = (seed * 2.399).truncatingRemainder(dividingBy: .pi * 2)
                 let burstRadius = 30.0 + seed.truncatingRemainder(dividingBy: 250.0)
-                let burstT = min(phase * 2.5, 1.0) // fast initial burst
+                let burstT = min(phase * 2.5, 1.0)
 
                 let bx = cos(burstAngle) * burstRadius * burstT
                 let by = sin(burstAngle) * burstRadius * burstT
-
-                // Gentle sway
                 let sway = sin(phase * .pi * 2.0 + seed * 0.4) * 18.0
 
-                // Gravity drift after burst
                 let gravityT = max(0, phase - 0.25)
                 let gravitySpeed = 0.4 + seed.truncatingRemainder(dividingBy: 0.6)
                 let gravityDrop = gravityT * gravityT * Double(canvasSize.height) * 0.7 * gravitySpeed
@@ -198,10 +317,8 @@ struct TierUpgradeCelebrationView: View {
                 let x = cx + bx + sway
                 let y = cy + by + gravityDrop
 
-                // Skip off-screen particles
                 guard y < canvasSize.height + 20 && x > -20 && x < canvasSize.width + 20 else { continue }
 
-                // Fade: quick in, hold, fade at end
                 var alpha: Double = 0.8
                 if phase < 0.06 { alpha = (phase / 0.06) * 0.8 }
                 if phase > 0.7 { alpha = (1.0 - (phase - 0.7) / 0.3) * 0.8 }
@@ -215,7 +332,6 @@ struct TierUpgradeCelebrationView: View {
                 )
             }
 
-            // --- Sparkles (16 white dots) ---
             let sparkleCount = 16
             for i in 0..<sparkleCount {
                 let seed = Double(i) * 97.3
@@ -226,7 +342,6 @@ struct TierUpgradeCelebrationView: View {
                 let x = cx + cos(angle) * dist * burstT
                 let y = cy + sin(angle) * dist * burstT
 
-                // Twinkle
                 let twinkle = sin(phase * .pi * 3.5 + seed) * 0.5 + 0.5
                 var alpha = twinkle * 0.85
                 if phase < 0.1 { alpha *= phase / 0.1 }
@@ -245,26 +360,34 @@ struct TierUpgradeCelebrationView: View {
     // MARK: - Animation Sequence
 
     private func startSequence() {
+        // +0.05s: Card appears with scale spring
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.75).delay(0.05)) {
+            showCard = true
+        }
+
         // +0.1s: Ring burst
         withAnimation(.easeOut(duration: 0.7).delay(0.1)) {
             ringExpand = 1.0
         }
 
-        // +0.12s: Glow pulse
-        withAnimation(.easeOut(duration: 0.5).delay(0.12)) {
-            glowScale = 1.15
-            glowOpacity = 1.0
-        }
-
-        // +0.2s: Icon spring in
-        withAnimation(.spring(response: 0.4, dampingFraction: 0.6).delay(0.2)) {
+        // +0.25s: Icon spring in
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.6).delay(0.25)) {
             showIcon = true
         }
 
-        // +0.45s: Glow settles
-        withAnimation(.easeInOut(duration: 1.0).delay(0.45)) {
-            glowScale = 1.0
-            glowOpacity = 0.4
+        // +0.3s: Glow pulse starts (repeating)
+        withAnimation(.easeInOut(duration: 1.8).repeatForever(autoreverses: true).delay(0.3)) {
+            glowPulse = 1.0
+        }
+
+        // +0.4s: Dividers fade in
+        withAnimation(.easeOut(duration: 0.6).delay(0.4)) {
+            showDividers = true
+        }
+
+        // +0.5s: Border glow breathes
+        withAnimation(.easeInOut(duration: 2.0).repeatForever(autoreverses: true).delay(0.5)) {
+            borderGlow = 1.0
         }
 
         // +0.6s: Name reveal
@@ -272,31 +395,33 @@ struct TierUpgradeCelebrationView: View {
             showName = true
         }
 
-        // +1.2s: Tier message fades in gracefully
-        withAnimation(.easeOut(duration: 0.8).delay(1.2)) {
+        // +1.3s: Tier message fades in
+        withAnimation(.easeOut(duration: 0.9).delay(1.3)) {
             showMessage = true
         }
 
-        // Particle animation: single easeOut curve
+        // Particles
         withAnimation(.easeOut(duration: 3.5)) {
             particlePhase = 1.0
         }
 
-        // 4.5s: Auto-dismiss
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4.5) {
-            withAnimation(.easeOut(duration: 0.5)) {
+        // 5.0s: Auto-dismiss
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            withAnimation(.easeOut(duration: 0.6)) {
                 dismissing = true
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                 tierManager.showUpgradeCelebration = false
+                showCard = false
                 showIcon = false
                 showName = false
                 showMessage = false
+                showDividers = false
                 dismissing = false
                 particlePhase = 0
-                glowScale = 0.3
-                glowOpacity = 0
+                glowPulse = 0
                 ringExpand = 0
+                borderGlow = 0
             }
         }
     }
