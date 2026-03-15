@@ -369,6 +369,32 @@ extension AppStrings {
         areasToImprove: "مجالات للتحسين",
         reviewIncorrect: { "راجع \($0) إجابات خاطئة" },
         shareResult: "مشاركة النتيجة",
-        availableOn: { "متاح في \($0)" }
+        availableOn: { "متاح في \($0)" },
+
+        // MARK: - Journey Progress Gating
+        dailyXPChart: "XP اليومي",
+        last7Days: "آخر ٧ أيام",
+        weeklyTrend: "الاتجاه الأسبوعي",
+        thisWeekVsLastWeek: "هذا الأسبوع مقابل الأسبوع الماضي",
+        thisWeekLabel: "هذا الأسبوع",
+        lastWeekLabel: "الأسبوع الماضي",
+        totalThisWeek: "إجمالي هذا الأسبوع",
+        accuracyHeatmap: "خريطة الدقة",
+        accuracyByCategory: "الدقة حسب الفئة",
+        playSessionsToSeeData: "العب جلسات لرؤية البيانات",
+        monthlyReport: "التقرير الشهري",
+        last30Days: "آخر ٣٠ يوماً",
+        activeDaysLabel: "الأيام النشطة",
+        milestonePredictionsTitle: "توقعات الإنجازات",
+        basedOnYourPace: "بناءً على وتيرتك الحالية",
+        allMilestonesReached: "تم تحقيق جميع الإنجازات!",
+        tapToUpgrade: "اضغط للترقية",
+        unlockFeature: "افتح هذه الميزة",
+        gameBreakdownDesc: "اكتشف أين تتألق — تتبع النتائج والدقة والوقت في كل وضع لعب",
+        dailyXPChartDesc: "تصور زخمك — شاهد نقاط خبرتك اليومية تتكشف على مدار الأسبوع",
+        weeklyTrendDesc: "قارن هذا الأسبوع بالسابق واكتشف الأنماط التي تدفع نموك",
+        accuracyHeatmapDesc: "اكشف فوراً عن أقوى وأضعف فئاتك بنظرة واحدة",
+        monthlyReportDesc: "ملخصك الشخصي لـ 30 يوماً — الجلسات والسلاسل والدقة والأيام النشطة",
+        milestonePredictionsDesc: "اعرف بالضبط متى ستصل إلى إنجازك التالي بناءً على وتيرة تعلمك"
     )
 }

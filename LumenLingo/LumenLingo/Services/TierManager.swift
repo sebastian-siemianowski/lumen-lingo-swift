@@ -214,6 +214,83 @@ final class TierManager {
         }
     }
 
+    // MARK: - Journey Stats Configuration
+
+    /// Sections available in the Journey / Progress view, gated by tier.
+    enum JourneyStatsSection: String, CaseIterable, Equatable {
+        case basicStats           // total XP, sessions, current streak
+        case gameBreakdown        // per-game-type stats table
+        case dailyXPChart         // bar chart of last 7 days
+        case weeklyTrend          // line chart this week vs last week
+        case accuracyHeatmap      // category grid colour-coded by accuracy
+        case monthlyReport        // summary card with key metrics
+        case milestonePredictions // estimated dates for next milestones
+    }
+
+    /// Configuration listing which journey sections a tier should display.
+    struct JourneyStatsConfig: Equatable {
+        let sections: [JourneyStatsSection]
+    }
+
+    /// Returns the journey stats configuration for the current tier.
+    func journeyStatsConfig() -> JourneyStatsConfig {
+        Self.journeyStatsConfig(for: currentTier)
+    }
+
+    /// Static tier→journey mapping for unit testing.
+    static func journeyStatsConfig(for tier: MembershipTier) -> JourneyStatsConfig {
+        var sections: [JourneyStatsSection] = [.basicStats]
+        switch tier {
+        case .free:
+            break
+        case .pro:
+            sections.append(contentsOf: [.gameBreakdown, .dailyXPChart])
+        case .elite:
+            sections.append(contentsOf: [.gameBreakdown, .dailyXPChart, .weeklyTrend, .accuracyHeatmap])
+        case .royal, .trial:
+            sections.append(contentsOf: [.gameBreakdown, .dailyXPChart, .weeklyTrend, .accuracyHeatmap, .monthlyReport, .milestonePredictions])
+        }
+        return JourneyStatsConfig(sections: sections)
+    }
+
+    /// Returns the minimum tier required for a given journey section.
+    static func minimumTierForJourneySection(_ section: JourneyStatsSection) -> MembershipTier {
+        switch section {
+        case .basicStats:           return .free
+        case .gameBreakdown:        return .pro
+        case .dailyXPChart:         return .pro
+        case .weeklyTrend:          return .elite
+        case .accuracyHeatmap:      return .elite
+        case .monthlyReport:        return .royal
+        case .milestonePredictions: return .royal
+        }
+    }
+
+    // MARK: - Milestone Badge Styles
+
+    /// Visual style for milestone badges, varying by tier.
+    enum MilestoneBadgeStyle: String, CaseIterable, Equatable {
+        case basic        // flat color, no animation
+        case gradient     // linear gradient fill
+        case sparkle      // gradient + particle sparkle on appear
+        case holographic  // animated rainbow gradient sweep + confetti
+    }
+
+    /// Returns the milestone badge style for the current tier.
+    var milestoneBadgeStyle: MilestoneBadgeStyle {
+        Self.milestoneBadgeStyle(for: currentTier)
+    }
+
+    /// Static tier→badge style mapping for unit testing.
+    static func milestoneBadgeStyle(for tier: MembershipTier) -> MilestoneBadgeStyle {
+        switch tier {
+        case .free:          return .basic
+        case .pro:           return .gradient
+        case .elite:         return .sparkle
+        case .royal, .trial: return .holographic
+        }
+    }
+
     // MARK: - Soundscape Gating
 
     /// IDs of soundscapes unlocked for a given session (previewed once per session).

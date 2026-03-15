@@ -372,6 +372,32 @@ extension AppStrings {
         areasToImprove: "Points à améliorer",
         reviewIncorrect: { "Revoir \($0) réponses incorrectes" },
         shareResult: "Partager le résultat",
-        availableOn: { "Disponible sur \($0)" }
+        availableOn: { "Disponible sur \($0)" },
+
+        // MARK: - Journey Progress Gating
+        dailyXPChart: "XP Quotidien",
+        last7Days: "7 derniers jours",
+        weeklyTrend: "Tendance Hebdomadaire",
+        thisWeekVsLastWeek: "Cette semaine vs la précédente",
+        thisWeekLabel: "Cette semaine",
+        lastWeekLabel: "Semaine dernière",
+        totalThisWeek: "Total cette semaine",
+        accuracyHeatmap: "Carte de Précision",
+        accuracyByCategory: "Précision par catégorie",
+        playSessionsToSeeData: "Jouez pour voir les données",
+        monthlyReport: "Rapport Mensuel",
+        last30Days: "30 derniers jours",
+        activeDaysLabel: "Jours Actifs",
+        milestonePredictionsTitle: "Prédictions d'Étapes",
+        basedOnYourPace: "Basé sur votre rythme actuel",
+        allMilestonesReached: "Toutes les étapes atteintes !",
+        tapToUpgrade: "Appuyez pour upgrader",
+        unlockFeature: "Débloquez cette fonctionnalité",
+        gameBreakdownDesc: "Découvrez où vous excellez — suivez scores, précision et temps pour chaque mode de jeu",
+        dailyXPChartDesc: "Visualisez votre élan — observez vos XP quotidiens se déployer sur la semaine",
+        weeklyTrendDesc: "Comparez cette semaine à la précédente et repérez les tendances qui accélèrent vos progrès",
+        accuracyHeatmapDesc: "Révélez instantanément vos catégories fortes et faibles d'un seul coup d'œil",
+        monthlyReportDesc: "Votre bilan personnalisé sur 30 jours — sessions, séries, précision et jours actifs",
+        milestonePredictionsDesc: "Voyez précisément quand vous atteindrez votre prochain palier selon votre rythme"
     )
 }

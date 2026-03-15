@@ -371,6 +371,32 @@ extension AppStrings {
         areasToImprove: "Areas to Improve",
         reviewIncorrect: { "Review \($0) incorrect answers" },
         shareResult: "Share Result",
-        availableOn: { "Available on \($0)" }
+        availableOn: { "Available on \($0)" },
+
+        // MARK: - Journey Progress Gating
+        dailyXPChart: "Daily XP",
+        last7Days: "Last 7 days",
+        weeklyTrend: "Weekly Trend",
+        thisWeekVsLastWeek: "This week vs last week",
+        thisWeekLabel: "This week",
+        lastWeekLabel: "Last week",
+        totalThisWeek: "Total this week",
+        accuracyHeatmap: "Accuracy Heatmap",
+        accuracyByCategory: "Accuracy by category",
+        playSessionsToSeeData: "Play sessions to see data",
+        monthlyReport: "Monthly Report",
+        last30Days: "Last 30 days",
+        activeDaysLabel: "Active Days",
+        milestonePredictionsTitle: "Milestone Predictions",
+        basedOnYourPace: "Based on your current pace",
+        allMilestonesReached: "All milestones reached!",
+        tapToUpgrade: "Tap to upgrade",
+        unlockFeature: "Unlock this feature",
+        gameBreakdownDesc: "See exactly where you shine — track scores, accuracy & time across every game mode",
+        dailyXPChartDesc: "Visualise your momentum — watch your daily XP unfold across the week",
+        weeklyTrendDesc: "Compare this week to last and spot the patterns that drive your growth",
+        accuracyHeatmapDesc: "Instantly reveal your strongest and weakest categories at a glance",
+        monthlyReportDesc: "Your personalised 30-day snapshot — sessions, streaks, accuracy & active days",
+        milestonePredictionsDesc: "See exactly when you'll hit your next milestone based on your learning pace"
     )
 }

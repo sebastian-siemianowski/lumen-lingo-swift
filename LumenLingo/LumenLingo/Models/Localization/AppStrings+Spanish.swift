@@ -372,6 +372,32 @@ extension AppStrings {
         areasToImprove: "Áreas a mejorar",
         reviewIncorrect: { "Revisar \($0) respuestas incorrectas" },
         shareResult: "Compartir resultado",
-        availableOn: { "Disponible en \($0)" }
+        availableOn: { "Disponible en \($0)" },
+
+        // MARK: - Journey Progress Gating
+        dailyXPChart: "XP Diario",
+        last7Days: "Últimos 7 días",
+        weeklyTrend: "Tendencia Semanal",
+        thisWeekVsLastWeek: "Esta semana vs la anterior",
+        thisWeekLabel: "Esta semana",
+        lastWeekLabel: "Semana pasada",
+        totalThisWeek: "Total esta semana",
+        accuracyHeatmap: "Mapa de Precisión",
+        accuracyByCategory: "Precisión por categoría",
+        playSessionsToSeeData: "Juega sesiones para ver datos",
+        monthlyReport: "Informe Mensual",
+        last30Days: "Últimos 30 días",
+        activeDaysLabel: "Días Activos",
+        milestonePredictionsTitle: "Predicción de Hitos",
+        basedOnYourPace: "Basado en tu ritmo actual",
+        allMilestonesReached: "¡Todos los hitos alcanzados!",
+        tapToUpgrade: "Toca para mejorar",
+        unlockFeature: "Desbloquea esta función",
+        gameBreakdownDesc: "Descubre dónde brillas — sigue puntuaciones, precisión y tiempo en cada modo de juego",
+        dailyXPChartDesc: "Visualiza tu impulso — observa cómo se despliega tu XP diario a lo largo de la semana",
+        weeklyTrendDesc: "Compara esta semana con la anterior y detecta los patrones que impulsan tu crecimiento",
+        accuracyHeatmapDesc: "Revela al instante tus categorías más fuertes y débiles de un vistazo",
+        monthlyReportDesc: "Tu resumen personalizado de 30 días — sesiones, rachas, precisión y días activos",
+        milestonePredictionsDesc: "Descubre cuándo alcanzarás tu próximo hito según tu ritmo de aprendizaje"
     )
 }

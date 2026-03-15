@@ -1109,7 +1109,7 @@
 
 ---
 
-## Epic 14: Journey / Progress View Gating
+## Epic 14: Journey / Progress View Gating ✅
 
 ### Story 14.1 — Journey Statistics Depth by Tier
 
@@ -1125,17 +1125,17 @@
 - Locked stat sections show blurred preview with tier badge.
 
 **Subtasks:**
-- [ ] 14.1.1 — Create `JourneyStatsConfig` listing enabled sections per tier.
-- [ ] 14.1.2 — `TierManager.journeyStatsConfig() -> JourneyStatsConfig`.
-- [ ] 14.1.3 — In `JourneyView`, conditionally render stat sections based on config.
-- [ ] 14.1.4 — Create `DailyXPChart` widget: bar chart of last 7 days' XP.
-- [ ] 14.1.5 — Create `WeeklyTrendWidget`: line chart comparing this week vs last week.
-- [ ] 14.1.6 — Create `AccuracyHeatmap` widget: grid of categories color-coded by accuracy.
-- [ ] 14.1.7 — Create `MonthlyReportWidget`: summary card with key metrics and percentage changes.
-- [ ] 14.1.8 — Create `MilestonePredictionWidget`: estimated dates for next milestones based on current pace.
-- [ ] 14.1.9 — For locked sections: apply `.blur(radius: 6)` + tier badge overlay.
-- [ ] 14.1.10 — Tapping a blurred section shows upgrade prompt for that feature.
-- [ ] 14.1.11 — Add unit tests for each tier's enabled journey sections.
+- [x] 14.1.1 — Create `JourneyStatsConfig` listing enabled sections per tier.
+- [x] 14.1.2 — `TierManager.journeyStatsConfig() -> JourneyStatsConfig`.
+- [x] 14.1.3 — In `JourneyView`, conditionally render stat sections based on config.
+- [x] 14.1.4 — Create `DailyXPChart` widget: bar chart of last 7 days' XP.
+- [x] 14.1.5 — Create `WeeklyTrendWidget`: line chart comparing this week vs last week.
+- [x] 14.1.6 — Create `AccuracyHeatmap` widget: grid of categories color-coded by accuracy.
+- [x] 14.1.7 — Create `MonthlyReportWidget`: summary card with key metrics and percentage changes.
+- [x] 14.1.8 — Create `MilestonePredictionWidget`: estimated dates for next milestones based on current pace.
+- [x] 14.1.9 — For locked sections: apply `.blur(radius: 6)` + tier badge overlay.
+- [x] 14.1.10 — Tapping a blurred section shows upgrade prompt for that feature.
+- [x] 14.1.11 — Add unit tests for each tier's enabled journey sections.
 
 ---
 
@@ -1153,15 +1153,15 @@
 - Badge quality upgrades retroactively when user upgrades tier.
 
 **Subtasks:**
-- [ ] 14.2.1 — Create `MilestoneBadgeStyle` enum: `.basic`, `.gradient`, `.sparkle`, `.holographic`.
-- [ ] 14.2.2 — Map tiers to badge styles: free→basic, pro→gradient, elite→sparkle, royal→holographic.
-- [ ] 14.2.3 — Create `MilestoneBadgeView` that renders differently based on style.
-- [ ] 14.2.4 — `.basic` style: flat color fill, no animation.
-- [ ] 14.2.5 — `.gradient` style: linear gradient fill matching tier colors.
-- [ ] 14.2.6 — `.sparkle` style: gradient + particle emitter on appear.
-- [ ] 14.2.7 — `.holographic` style: animated rainbow gradient sweep + confetti.
-- [ ] 14.2.8 — On tier upgrade: existing badges re-render in new style with celebration animation.
-- [ ] 14.2.9 — Add snapshot tests for all 4 badge styles.
+- [x] 14.2.1 — Create `MilestoneBadgeStyle` enum: `.basic`, `.gradient`, `.sparkle`, `.holographic`.
+- [x] 14.2.2 — Map tiers to badge styles: free→basic, pro→gradient, elite→sparkle, royal→holographic.
+- [x] 14.2.3 — Create `MilestoneBadgeView` that renders differently based on style.
+- [x] 14.2.4 — `.basic` style: flat color fill, no animation.
+- [x] 14.2.5 — `.gradient` style: linear gradient fill matching tier colors.
+- [x] 14.2.6 — `.sparkle` style: gradient + particle emitter on appear.
+- [x] 14.2.7 — `.holographic` style: animated rainbow gradient sweep + confetti.
+- [x] 14.2.8 — On tier upgrade: existing badges re-render in new style with celebration animation.
+- [x] 14.2.9 — Add snapshot tests for all 4 badge styles.
 
 ---
 
@@ -1641,27 +1641,9 @@ Epic 20 (Edge Cases) depends on Epic 1, 19
 - [ ] 22.2.7 — On upgrade: new difficulty levels appear with "NEW" badge animation.
 - [ ] 22.2.8 — Add unit test: free tier → only difficulty 1-2 exercises loaded.
 
----
-
-### Story 22.3 — Word Builder Dictionary Size by Tier
-
-**As a** Pro+ user,  
-**I want** a larger word builder dictionary,  
-**So that** I encounter more varied and challenging word construction exercises.
-
+### Story 22.3 — Wordbuilder Exercise Complexity by Tier
 **Acceptance Criteria:**
-- Free tier: 100 base words per language pair.
-- Pro tier: 400 words.
-- Elite / Royal / Trial: all available words (typically 1000+).
-- Words sorted by frequency (most common first for lower tiers).
-- Deck info shows word count: "100 of 1,200 words" style.
-
-**Subtasks:**
-- [ ] 22.3.1 — Add `TierManager.wordBuilderLimit: Int?` (free→100, pro→400, elite/royal→nil).
-- [ ] 22.3.2 — In word builder content loader, apply limit after frequency sort.
-- [ ] 22.3.3 — Show word count in session start screen.
-- [ ] 22.3.4 — On upgrade: reload word lists for current pair.
-- [ ] 22.3.5 — Add unit test: free tier → 100 words loaded; pro → 400.
+- Similar to  Story 22.2 
 
 ---
 
@@ -1690,25 +1672,6 @@ Epic 20 (Edge Cases) depends on Epic 1, 19
 - [ ] 23.1.7 — Add snapshot test for each tier's card rendering.
 
 ---
-
-### Story 23.2 — Leaderboard Tier Indicators
-
-**As a** user viewing a future leaderboard,  
-**I want** other users' tiers to be subtly indicated,  
-**So that** I can see the tier distribution and feel motivated.
-
-**Acceptance Criteria:**
-- Next to each leaderboard entry: small colored dot indicating the user's tier.
-- Color coding: free=gray, pro=purple, elite=cyan, royal=gold.
-- Dot is purely decorative — no gameplay advantage from tier.
-- Own entry highlights with tier gradient border.
-
-**Subtasks:**
-- [ ] 23.2.1 — Add `tierColor: Color` to leaderboard entry model.
-- [ ] 23.2.2 — Render 6pt colored dot next to username.
-- [ ] 23.2.3 — Own entry: add tier gradient border (2pt) around the row.
-- [ ] 23.2.4 — Add legend in leaderboard header explaining dot colors.
-- [ ] 23.2.5 — Add VoiceOver label: "[Username], [tier] plan, [rank] place".
 
 ---
 

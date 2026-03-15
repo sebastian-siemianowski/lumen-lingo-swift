@@ -1827,4 +1827,190 @@ final class TierManagerTests: XCTestCase {
         XCTAssertFalse(tracker.isLimited(for: .elite), "Elite tier game sessions should not be time-limited")
         XCTAssertFalse(tracker.isLimited(for: .royal), "Royal tier game sessions should not be time-limited")
     }
+
+    // MARK: - Epic 14: Journey / Progress View Gating
+
+    // MARK: 14.1 — Journey Stats Config per tier
+
+    func testJourneyStatsConfigFreeTier() {
+        let config = TierManager.journeyStatsConfig(for: .free)
+        XCTAssertEqual(config.sections, [.basicStats])
+        XCTAssertFalse(config.sections.contains(.gameBreakdown))
+        XCTAssertFalse(config.sections.contains(.dailyXPChart))
+        XCTAssertFalse(config.sections.contains(.weeklyTrend))
+        XCTAssertFalse(config.sections.contains(.accuracyHeatmap))
+        XCTAssertFalse(config.sections.contains(.monthlyReport))
+        XCTAssertFalse(config.sections.contains(.milestonePredictions))
+    }
+
+    func testJourneyStatsConfigProTier() {
+        let config = TierManager.journeyStatsConfig(for: .pro)
+        XCTAssertTrue(config.sections.contains(.basicStats))
+        XCTAssertTrue(config.sections.contains(.gameBreakdown))
+        XCTAssertTrue(config.sections.contains(.dailyXPChart))
+        XCTAssertFalse(config.sections.contains(.weeklyTrend))
+        XCTAssertFalse(config.sections.contains(.accuracyHeatmap))
+        XCTAssertFalse(config.sections.contains(.monthlyReport))
+        XCTAssertFalse(config.sections.contains(.milestonePredictions))
+    }
+
+    func testJourneyStatsConfigEliteTier() {
+        let config = TierManager.journeyStatsConfig(for: .elite)
+        XCTAssertTrue(config.sections.contains(.basicStats))
+        XCTAssertTrue(config.sections.contains(.gameBreakdown))
+        XCTAssertTrue(config.sections.contains(.dailyXPChart))
+        XCTAssertTrue(config.sections.contains(.weeklyTrend))
+        XCTAssertTrue(config.sections.contains(.accuracyHeatmap))
+        XCTAssertFalse(config.sections.contains(.monthlyReport))
+        XCTAssertFalse(config.sections.contains(.milestonePredictions))
+    }
+
+    func testJourneyStatsConfigRoyalTier() {
+        let config = TierManager.journeyStatsConfig(for: .royal)
+        XCTAssertTrue(config.sections.contains(.basicStats))
+        XCTAssertTrue(config.sections.contains(.gameBreakdown))
+        XCTAssertTrue(config.sections.contains(.dailyXPChart))
+        XCTAssertTrue(config.sections.contains(.weeklyTrend))
+        XCTAssertTrue(config.sections.contains(.accuracyHeatmap))
+        XCTAssertTrue(config.sections.contains(.monthlyReport))
+        XCTAssertTrue(config.sections.contains(.milestonePredictions))
+    }
+
+    func testJourneyStatsConfigTrialTier() {
+        let config = TierManager.journeyStatsConfig(for: .trial)
+        XCTAssertEqual(config.sections.count, TierManager.journeyStatsConfig(for: .royal).sections.count,
+                       "Trial should have same journey sections as Royal")
+        XCTAssertTrue(config.sections.contains(.milestonePredictions))
+    }
+
+    func testJourneyStatsConfigInstanceMethod() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        let freeConfig = manager.journeyStatsConfig()
+        XCTAssertEqual(freeConfig.sections, [.basicStats])
+        manager.currentTierId = "elite"
+        let eliteConfig = manager.journeyStatsConfig()
+        XCTAssertTrue(eliteConfig.sections.contains(.weeklyTrend))
+        XCTAssertTrue(eliteConfig.sections.contains(.accuracyHeatmap))
+    }
+
+    // MARK: 14.1 — Minimum tier for journey section
+
+    func testMinimumTierForBasicStatsJourney() {
+        XCTAssertEqual(TierManager.minimumTierForJourneySection(.basicStats), .free)
+    }
+
+    func testMinimumTierForGameBreakdown() {
+        XCTAssertEqual(TierManager.minimumTierForJourneySection(.gameBreakdown), .pro)
+    }
+
+    func testMinimumTierForDailyXPChart() {
+        XCTAssertEqual(TierManager.minimumTierForJourneySection(.dailyXPChart), .pro)
+    }
+
+    func testMinimumTierForWeeklyTrend() {
+        XCTAssertEqual(TierManager.minimumTierForJourneySection(.weeklyTrend), .elite)
+    }
+
+    func testMinimumTierForAccuracyHeatmap() {
+        XCTAssertEqual(TierManager.minimumTierForJourneySection(.accuracyHeatmap), .elite)
+    }
+
+    func testMinimumTierForMonthlyReport() {
+        XCTAssertEqual(TierManager.minimumTierForJourneySection(.monthlyReport), .royal)
+    }
+
+    func testMinimumTierForMilestonePredictions() {
+        XCTAssertEqual(TierManager.minimumTierForJourneySection(.milestonePredictions), .royal)
+    }
+
+    // MARK: 14.2 — Milestone Badge Style per tier
+
+    func testMilestoneBadgeStyleFreeTier() {
+        XCTAssertEqual(TierManager.milestoneBadgeStyle(for: .free), .basic)
+    }
+
+    func testMilestoneBadgeStyleProTier() {
+        XCTAssertEqual(TierManager.milestoneBadgeStyle(for: .pro), .gradient)
+    }
+
+    func testMilestoneBadgeStyleEliteTier() {
+        XCTAssertEqual(TierManager.milestoneBadgeStyle(for: .elite), .sparkle)
+    }
+
+    func testMilestoneBadgeStyleRoyalTier() {
+        XCTAssertEqual(TierManager.milestoneBadgeStyle(for: .royal), .holographic)
+    }
+
+    func testMilestoneBadgeStyleTrialTier() {
+        XCTAssertEqual(TierManager.milestoneBadgeStyle(for: .trial), .holographic,
+                       "Trial should have same badge style as Royal")
+    }
+
+    func testMilestoneBadgeStyleInstanceProperty() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertEqual(manager.milestoneBadgeStyle, .basic)
+        manager.currentTierId = "pro"
+        XCTAssertEqual(manager.milestoneBadgeStyle, .gradient)
+        manager.currentTierId = "elite"
+        XCTAssertEqual(manager.milestoneBadgeStyle, .sparkle)
+        manager.currentTierId = "royal"
+        XCTAssertEqual(manager.milestoneBadgeStyle, .holographic)
+    }
+
+    func testMilestoneBadgeStyleChangesOnTierChange() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertEqual(manager.milestoneBadgeStyle, .basic, "Free tier should have basic badges")
+        manager.currentTierId = "royal"
+        XCTAssertEqual(manager.milestoneBadgeStyle, .holographic, "Royal badges should upgrade immediately")
+    }
+
+    // MARK: 14.1 — Journey sections count per tier
+
+    func testJourneyFreeTierHasOnlyOneSection() {
+        let config = TierManager.journeyStatsConfig(for: .free)
+        XCTAssertEqual(config.sections.count, 1, "Free tier should only have basicStats")
+    }
+
+    func testJourneyProTierHasThreeSections() {
+        let config = TierManager.journeyStatsConfig(for: .pro)
+        XCTAssertEqual(config.sections.count, 3, "Pro tier: basicStats + gameBreakdown + dailyXPChart")
+    }
+
+    func testJourneyEliteTierHasFiveSections() {
+        let config = TierManager.journeyStatsConfig(for: .elite)
+        XCTAssertEqual(config.sections.count, 5, "Elite tier: basicStats + gameBreakdown + dailyXPChart + weeklyTrend + accuracyHeatmap")
+    }
+
+    func testJourneyRoyalTierHasSevenSections() {
+        let config = TierManager.journeyStatsConfig(for: .royal)
+        XCTAssertEqual(config.sections.count, 7, "Royal tier: all 7 journey sections")
+    }
+
+    // MARK: 14.2 — Badge style enum cases
+
+    func testMilestoneBadgeStyleAllCases() {
+        let allCases = TierManager.MilestoneBadgeStyle.allCases
+        XCTAssertEqual(allCases.count, 4)
+        XCTAssertTrue(allCases.contains(.basic))
+        XCTAssertTrue(allCases.contains(.gradient))
+        XCTAssertTrue(allCases.contains(.sparkle))
+        XCTAssertTrue(allCases.contains(.holographic))
+    }
+
+    // MARK: 14.1 — Journey sections enum cases
+
+    func testJourneyStatsSectionAllCases() {
+        let allCases = TierManager.JourneyStatsSection.allCases
+        XCTAssertEqual(allCases.count, 7)
+        XCTAssertTrue(allCases.contains(.basicStats))
+        XCTAssertTrue(allCases.contains(.gameBreakdown))
+        XCTAssertTrue(allCases.contains(.dailyXPChart))
+        XCTAssertTrue(allCases.contains(.weeklyTrend))
+        XCTAssertTrue(allCases.contains(.accuracyHeatmap))
+        XCTAssertTrue(allCases.contains(.monthlyReport))
+        XCTAssertTrue(allCases.contains(.milestonePredictions))
+    }
 }

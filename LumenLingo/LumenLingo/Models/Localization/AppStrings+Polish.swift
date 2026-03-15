@@ -371,6 +371,32 @@ extension AppStrings {
         areasToImprove: "Obszary do poprawy",
         reviewIncorrect: { "Przejrzyj \($0) błędnych odpowiedzi" },
         shareResult: "Udostępnij wynik",
-        availableOn: { "Dostępne w \($0)" }
+        availableOn: { "Dostępne w \($0)" },
+
+        // MARK: - Journey Progress Gating
+        dailyXPChart: "Dzienny XP",
+        last7Days: "Ostatnie 7 dni",
+        weeklyTrend: "Trend Tygodniowy",
+        thisWeekVsLastWeek: "Ten tydzień vs poprzedni",
+        thisWeekLabel: "Ten tydzień",
+        lastWeekLabel: "Poprzedni tydzień",
+        totalThisWeek: "Łącznie w tym tygodniu",
+        accuracyHeatmap: "Mapa Dokładności",
+        accuracyByCategory: "Dokładność wg kategorii",
+        playSessionsToSeeData: "Graj aby zobaczyć dane",
+        monthlyReport: "Raport Miesięczny",
+        last30Days: "Ostatnie 30 dni",
+        activeDaysLabel: "Aktywne Dni",
+        milestonePredictionsTitle: "Prognozy Kamieni Milowych",
+        basedOnYourPace: "Na podstawie twojego tempa",
+        allMilestonesReached: "Wszystkie kamienie milowe osiągnięte!",
+        tapToUpgrade: "Dotknij aby ulepszyć",
+        unlockFeature: "Odblokuj tę funkcję",
+        gameBreakdownDesc: "Sprawdź, w czym błyszczysz — śledź wyniki, dokładność i czas w każdym trybie gry",
+        dailyXPChartDesc: "Wizualizuj swój postęp — obserwuj dzienny XP rozwijający się przez cały tydzień",
+        weeklyTrendDesc: "Porównaj ten tydzień z poprzednim i odkryj wzorce napędzające Twój rozwój",
+        accuracyHeatmapDesc: "Natychmiast odkryj swoje najsilniejsze i najsłabsze kategorie jednym spojrzeniem",
+        monthlyReportDesc: "Twoje spersonalizowane podsumowanie 30 dni — sesje, serie, dokładność i aktywne dni",
+        milestonePredictionsDesc: "Dowiedz się, kiedy osiągniesz kolejny kamień milowy na podstawie swojego tempa nauki"
     )
 }

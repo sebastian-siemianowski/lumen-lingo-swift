@@ -372,6 +372,32 @@ extension AppStrings {
         areasToImprove: "Verbesserungsbereiche",
         reviewIncorrect: { "\($0) falsche Antworten überprüfen" },
         shareResult: "Ergebnis teilen",
-        availableOn: { "Verfügbar auf \($0)" }
+        availableOn: { "Verfügbar auf \($0)" },
+
+        // MARK: - Journey Progress Gating
+        dailyXPChart: "Tägliche XP",
+        last7Days: "Letzte 7 Tage",
+        weeklyTrend: "Wochentrend",
+        thisWeekVsLastWeek: "Diese Woche vs letzte Woche",
+        thisWeekLabel: "Diese Woche",
+        lastWeekLabel: "Letzte Woche",
+        totalThisWeek: "Gesamt diese Woche",
+        accuracyHeatmap: "Genauigkeitskarte",
+        accuracyByCategory: "Genauigkeit nach Kategorie",
+        playSessionsToSeeData: "Spiele Sitzungen um Daten zu sehen",
+        monthlyReport: "Monatsbericht",
+        last30Days: "Letzte 30 Tage",
+        activeDaysLabel: "Aktive Tage",
+        milestonePredictionsTitle: "Meilenstein-Vorhersagen",
+        basedOnYourPace: "Basierend auf deinem aktuellen Tempo",
+        allMilestonesReached: "Alle Meilensteine erreicht!",
+        tapToUpgrade: "Tippen zum Upgraden",
+        unlockFeature: "Funktion freischalten",
+        gameBreakdownDesc: "Sieh genau, wo du glänzt — verfolge Punkte, Genauigkeit und Zeit in jedem Spielmodus",
+        dailyXPChartDesc: "Visualisiere deinen Schwung — beobachte deine täglichen XP über die Woche",
+        weeklyTrendDesc: "Vergleiche diese Woche mit der letzten und erkenne die Muster deines Wachstums",
+        accuracyHeatmapDesc: "Erkenne sofort deine stärksten und schwächsten Kategorien auf einen Blick",
+        monthlyReportDesc: "Dein persönlicher 30-Tage-Überblick — Sitzungen, Serien, Genauigkeit und aktive Tage",
+        milestonePredictionsDesc: "Erfahre genau, wann du deinen nächsten Meilenstein basierend auf deinem Lerntempo erreichst"
     )
 }

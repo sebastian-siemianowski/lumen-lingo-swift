@@ -9,6 +9,7 @@ struct JourneyView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(TierManager.self) private var tierManager
 
     private var L: AppStrings { localization.strings }
 
@@ -18,6 +19,14 @@ struct JourneyView: View {
 
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
+
+    private var statsConfig: TierManager.JourneyStatsConfig {
+        tierManager.journeyStatsConfig()
+    }
+
+    private var badgeStyle: TierManager.MilestoneBadgeStyle {
+        tierManager.milestoneBadgeStyle
+    }
 
     @State private var currentQuote: WisdomQuote = WisdomQuote.allQuotes.randomElement() ?? WisdomQuote.allQuotes[0]
     @State private var shownQuoteIndices: Set<Int> = []
@@ -33,16 +42,47 @@ struct JourneyView: View {
                 // Header
                 journeyHeader
 
-                // Overall stats
+                // Overall stats (always visible — basicStats)
                 overallStatsPanel
 
-                // Milestones timeline
+                // Milestones timeline (always visible, badge style varies by tier)
                 milestonesSection
 
-                // Game type breakdown
-                gameTypeBreakdown
+                // Game type breakdown (Pro+)
+                journeySection(for: .gameBreakdown) {
+                    gameTypeBreakdown
+                }
 
-                // Streak section
+                // Daily XP Chart (Pro+)
+                journeySection(for: .dailyXPChart) {
+                    DailyXPChartView(allProgress: allProgress)
+                }
+
+                // Weekly Trend (Elite+)
+                journeySection(for: .weeklyTrend) {
+                    WeeklyTrendWidget(allProgress: allProgress)
+                }
+
+                // Accuracy Heatmap (Elite+)
+                journeySection(for: .accuracyHeatmap) {
+                    AccuracyHeatmapView(allProgress: allProgress)
+                }
+
+                // Monthly Report (Royal)
+                journeySection(for: .monthlyReport) {
+                    MonthlyReportWidget(allProgress: allProgress, profile: profile)
+                }
+
+                // Milestone Predictions (Royal)
+                journeySection(for: .milestonePredictions) {
+                    MilestonePredictionWidget(
+                        allProgress: allProgress,
+                        profile: profile,
+                        milestones: milestones.map { JourneyMilestone(title: $0.title, icon: $0.icon, color: $0.color, xpRequired: $0.xpRequired) }
+                    )
+                }
+
+                // Streak section (always visible — part of basicStats)
                 streakSection
 
                 // Wisdom quote
@@ -67,6 +107,50 @@ struct JourneyView: View {
             }
         } message: {
             Text(L.resetProgressMessage)
+        }
+    }
+
+    // MARK: - Tier-Gated Section Helper
+
+    /// Shows the content if the section is unlocked, or a blurred locked overlay if not.
+    @ViewBuilder
+    private func journeySection<Content: View>(
+        for section: TierManager.JourneyStatsSection,
+        @ViewBuilder content: () -> Content
+    ) -> some View {
+        if statsConfig.sections.contains(section) {
+            content()
+        } else {
+            LockedJourneySectionOverlay(
+                requiredTier: TierManager.minimumTierForJourneySection(section),
+                featureTitle: sectionTitle(for: section),
+                featureDescription: sectionDescription(for: section),
+                content: content
+            )
+        }
+    }
+
+    private func sectionTitle(for section: TierManager.JourneyStatsSection) -> String {
+        switch section {
+        case .basicStats:           return L.yourLearningJourney
+        case .gameBreakdown:        return L.gamePerformance
+        case .dailyXPChart:         return L.dailyXPChart
+        case .weeklyTrend:          return L.weeklyTrend
+        case .accuracyHeatmap:      return L.accuracyHeatmap
+        case .monthlyReport:        return L.monthlyReport
+        case .milestonePredictions: return L.milestonePredictionsTitle
+        }
+    }
+
+    private func sectionDescription(for section: TierManager.JourneyStatsSection) -> String {
+        switch section {
+        case .basicStats:           return ""
+        case .gameBreakdown:        return L.gameBreakdownDesc
+        case .dailyXPChart:         return L.dailyXPChartDesc
+        case .weeklyTrend:          return L.weeklyTrendDesc
+        case .accuracyHeatmap:      return L.accuracyHeatmapDesc
+        case .monthlyReport:        return L.monthlyReportDesc
+        case .milestonePredictions: return L.milestonePredictionsDesc
         }
     }
 
@@ -156,19 +240,16 @@ struct JourneyView: View {
     private func milestoneRow(_ milestone: Milestone, isLast: Bool) -> some View {
         let currentXP = profile?.totalXP ?? 0
         let isUnlocked = currentXP >= milestone.xpRequired
+        let journeyMilestone = JourneyMilestone(title: milestone.title, icon: milestone.icon, color: milestone.color, xpRequired: milestone.xpRequired)
 
         return HStack(spacing: 10) {
             // Timeline column
             VStack(spacing: 0) {
-                Circle()
-                    .fill(isUnlocked ? milestone.color : .gray.opacity(0.3))
-                    .frame(width: 26, height: 26)
-                    .overlay {
-                        Image(systemName: milestone.icon)
-                            .font(.system(size: 11))
-                            .foregroundStyle(isUnlocked ? .white : .gray)
-                    }
-                    .shadow(color: isUnlocked ? milestone.color.opacity(0.4) : .clear, radius: 4)
+                MilestoneBadgeView(
+                    milestone: journeyMilestone,
+                    isUnlocked: isUnlocked,
+                    style: badgeStyle
+                )
 
                 if !isLast {
                     Rectangle()

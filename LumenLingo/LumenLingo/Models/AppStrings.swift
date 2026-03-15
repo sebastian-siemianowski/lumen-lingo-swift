@@ -381,6 +381,32 @@ struct AppStrings {
     let shareResult: String                // "Share Result"
     let availableOn: (String) -> String    // "Available on {tier}"
 
+    // MARK: - Journey Progress Gating
+    let dailyXPChart: String               // "Daily XP"
+    let last7Days: String                  // "Last 7 days"
+    let weeklyTrend: String                // "Weekly Trend"
+    let thisWeekVsLastWeek: String         // "This week vs last week"
+    let thisWeekLabel: String              // "This week"
+    let lastWeekLabel: String              // "Last week"
+    let totalThisWeek: String              // "Total this week"
+    let accuracyHeatmap: String            // "Accuracy Heatmap"
+    let accuracyByCategory: String         // "Accuracy by category"
+    let playSessionsToSeeData: String      // "Play sessions to see data"
+    let monthlyReport: String              // "Monthly Report"
+    let last30Days: String                 // "Last 30 days"
+    let activeDaysLabel: String            // "Active Days"
+    let milestonePredictionsTitle: String   // "Milestone Predictions"
+    let basedOnYourPace: String            // "Based on your current pace"
+    let allMilestonesReached: String       // "All milestones reached!"
+    let tapToUpgrade: String               // "Tap to upgrade"
+    let unlockFeature: String               // "Unlock this feature"
+    let gameBreakdownDesc: String           // feature sell description
+    let dailyXPChartDesc: String            // feature sell description
+    let weeklyTrendDesc: String             // feature sell description
+    let accuracyHeatmapDesc: String         // feature sell description
+    let monthlyReportDesc: String           // feature sell description
+    let milestonePredictionsDesc: String    // feature sell description
+
     // MARK: - Factory
 
     static func forLanguage(_ lang: SupportedLanguage) -> AppStrings {

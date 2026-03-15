@@ -371,6 +371,32 @@ extension AppStrings {
         areasToImprove: "待改进",
         reviewIncorrect: { "复习\($0)个错误答案" },
         shareResult: "分享结果",
-        availableOn: { "\($0)可用" }
+        availableOn: { "\($0)可用" },
+
+        // MARK: - Journey Progress Gating
+        dailyXPChart: "每日XP",
+        last7Days: "最近7天",
+        weeklyTrend: "周趋势",
+        thisWeekVsLastWeek: "本周对比上周",
+        thisWeekLabel: "本周",
+        lastWeekLabel: "上周",
+        totalThisWeek: "本周总计",
+        accuracyHeatmap: "准确率热力图",
+        accuracyByCategory: "按分类准确率",
+        playSessionsToSeeData: "完成练习后查看数据",
+        monthlyReport: "月度报告",
+        last30Days: "最近30天",
+        activeDaysLabel: "活跃天数",
+        milestonePredictionsTitle: "里程碑预测",
+        basedOnYourPace: "基于您当前的进度",
+        allMilestonesReached: "所有里程碑已达成！",
+        tapToUpgrade: "点击升级",
+        unlockFeature: "解锁此功能",
+        gameBreakdownDesc: "看看你在哪里最出色——追踪每种游戏模式的得分、准确率和时间",
+        dailyXPChartDesc: "可视化你的势头——观察每日经验值在一周内的变化",
+        weeklyTrendDesc: "对比本周与上周，发现驱动你成长的模式",
+        accuracyHeatmapDesc: "一眼看清你最强和最弱的类别",
+        monthlyReportDesc: "你的个性化30天快照——会话、连续记录、准确率和活跃天数",
+        milestonePredictionsDesc: "根据你的学习节奏，精确预测你何时达到下一个里程碑"
     )
 }

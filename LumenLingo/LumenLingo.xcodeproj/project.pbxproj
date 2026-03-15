@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		013C7DB3471169827FFF58CB /* EdgeOfAndromedaPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9DD06C49CE0742785FB126D2 /* EdgeOfAndromedaPreset.metal */; };
 		01500500A4FD056AB4F66B62 /* SoundSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC10073EF860BE9CC25D85 /* SoundSettingsView.swift */; };
+		016A5792B73AF67510461454 /* WeeklyTrendWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004BA37BD207437B687DFE9 /* WeeklyTrendWidget.swift */; };
+		02A0E6527407A7AEC61BA21B /* DailyXPChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBF53CD0CD62463AAFA667 /* DailyXPChartView.swift */; };
 		02F84F17E86EADD53144E803 /* wordbuilder_german_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF7640DC44203CE5639A144 /* wordbuilder_german_spanish.json */; };
 		03403985A831D6F970331DF5 /* LiquidGlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A4CC223AB0F0CBD300360 /* LiquidGlassCard.swift */; };
 		0474733EC0D7C2209706CAC7 /* wordbuilder_german_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 30D601D8409F9C3374AE838F /* wordbuilder_german_english.json */; };
@@ -26,6 +28,7 @@
 		1C395C349595E73E20DFA8B0 /* Deep-Space-Drift.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B178E2105317DAAB335D322B /* Deep-Space-Drift.m4a */; };
 		1CC6873A54551A7C52D43BB9 /* flashcards_polish_chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = 3815318D8DCB4AC7CE373CE6 /* flashcards_polish_chinese.json */; };
 		1DBE1D85EC15E247BF7BD55D /* wordbuilder_ukrainian_english.json in Resources */ = {isa = PBXBuildFile; fileRef = EAF104A60741D3796E320D1A /* wordbuilder_ukrainian_english.json */; };
+		1E3D0DC303769FF56DF02C03 /* MilestoneBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1633D0552F820F1DECE14C /* MilestoneBadgeView.swift */; };
 		207C74D6A9B9CC98B4F2E6B4 /* PracticeTimeBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C476BFA1673DE127430A20B /* PracticeTimeBanner.swift */; };
 		23047B0D2D01C11FC3BB90D6 /* flashcards_german_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C9888AA5863A661728358B1 /* flashcards_german_polish.json */; };
 		25A677F6A0117823278B6B1F /* flashcards_ukrainian_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F07D558A1E5F26403A7997C /* flashcards_ukrainian_english.json */; };
@@ -34,6 +37,7 @@
 		29353E7CFC6BBCEF606A0978 /* SoundscapesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1229A638A337B4432FA3EC1D /* SoundscapesSettingsView.swift */; };
 		29EAAFC3AD4526A7DF87B720 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829FC2D29C631AC681A340D /* Enums.swift */; };
 		2A74FD303D0EC9DE6CBE598F /* wordbuilder_german_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 62C61FD456ED0B02634CD315 /* wordbuilder_german_polish.json */; };
+		2A87FF2626ED84C5687E1D27 /* MilestonePredictionWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF80C185D1108772AD43DE80 /* MilestonePredictionWidget.swift */; };
 		2B8FCD7F1A048D812A58D29E /* flashcards_english_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 184332E9A816388D71A52CC4 /* flashcards_english_polish.json */; };
 		2D10BFD2A89BA820AEAC4490 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082370545F169B205DEB7118 /* DataModels.swift */; };
 		2F46AAA7A365380EDAAAA25F /* Midnight-Jazz-Piano.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FA63307B7ED662E74F5272BE /* Midnight-Jazz-Piano.m4a */; };
@@ -99,6 +103,7 @@
 		7DAA6B7270C82DB77C328FAD /* grammar_german_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 6822F2E4E589FD329251ABF1 /* grammar_german_polish.json */; };
 		7E0E5D2EF72790528AB9C09E /* wordbuilder_english_chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = 533FA37F2ECDF2DAF07D198E /* wordbuilder_english_chinese.json */; };
 		8037523F05A7FB2AB42816D9 /* grammar_english_french.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D6FE4BD7584212604B3B839 /* grammar_english_french.json */; };
+		81CCD35E7204881630C3D6CF /* MonthlyReportWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EAF9D804D2B676F6EAF215 /* MonthlyReportWidget.swift */; };
 		843BC98E419594075277EFB7 /* wordbuilder_arabic_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EC2B96594BDF217EB44C9F8 /* wordbuilder_arabic_english.json */; };
 		845F96740BB1219565F758AB /* AppStrings+Japanese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A93ED414D0470C87039F9 /* AppStrings+Japanese.swift */; };
 		85173516305E3F46D20A615C /* flashcards_french_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 72DC7028C7F8CC902DD56A80 /* flashcards_french_english.json */; };
@@ -156,6 +161,7 @@
 		BA5B8481D3BD9E9C73C52CC8 /* FlashcardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A5EB7427BAE3106C94D4ED /* FlashcardsViewModel.swift */; };
 		BBB021509E641F28D020C46E /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91F45BE0B0F87E54E615E52 /* ProgressViewModel.swift */; };
 		BCDD18444DE1C80FEF877D9A /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE1A87C9FE959A341B5B7EF /* TranslationService.swift */; };
+		BD1D6890A6B4D7D9F9B3456D /* LockedJourneySectionOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E837BDCAD527DE18810EF3 /* LockedJourneySectionOverlay.swift */; };
 		BDD803A484EDE5040D2854A3 /* grammar_english_arabic.json in Resources */ = {isa = PBXBuildFile; fileRef = 4721CE7D6096C14C2E5DF593 /* grammar_english_arabic.json */; };
 		BEE77809A2E693E84FDF4963 /* grammar_arabic_english.json in Resources */ = {isa = PBXBuildFile; fileRef = A02AB5B911E71E7D7B839369 /* grammar_arabic_english.json */; };
 		C0651FD8C9746D52B953B5F1 /* BreathingOrbsLockedPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B4ACED23C18E53C32B300 /* BreathingOrbsLockedPreview.swift */; };
@@ -200,6 +206,7 @@
 		F5439D82BFE2910F8A446299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D84080B3E5FBF4012D412B /* ContentView.swift */; };
 		F5B050BBD9675556C37EF44F /* grammar_french_english.json in Resources */ = {isa = PBXBuildFile; fileRef = EE209D9EF404AA5D75D6D840 /* grammar_french_english.json */; };
 		F6F7A30CD0594D8726E59FA2 /* MetalQuantumFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D714A552DAA2C0B4C1F0B8 /* MetalQuantumFlowView.swift */; };
+		F9CEA1D33EF3254085E2BE83 /* AccuracyHeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B39BE55826C6132EE40D6 /* AccuracyHeatmapView.swift */; };
 		FC1203F47C411DF45D54CA27 /* wordbuilder_english_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 2516A4527A7F21A7FD49DA48 /* wordbuilder_english_polish.json */; };
 		FED1EF451B08FBEF1081AC4D /* grammar_polish_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 1529F75859B9520B053C7083 /* grammar_polish_german.json */; };
 		FEDBB41A11D82843DDC00888 /* AppStrings+French.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CE2159CF9460A51BA2008 /* AppStrings+French.swift */; };
@@ -231,6 +238,7 @@
 		107F7B698151D459F508D133 /* Dominican-Beach-2.m4a */ = {isa = PBXFileReference; path = "Dominican-Beach-2.m4a"; sourceTree = "<group>"; };
 		11F2243A3F5171B5E1D1731A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1229A638A337B4432FA3EC1D /* SoundscapesSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapesSettingsView.swift; sourceTree = "<group>"; };
+		12E837BDCAD527DE18810EF3 /* LockedJourneySectionOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedJourneySectionOverlay.swift; sourceTree = "<group>"; };
 		12F5A0006F1BE35C07723FF8 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		12F5C299F7CF3AB7152E80AD /* SoundMixerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundMixerView.swift; sourceTree = "<group>"; };
 		14117EBFC8212F28D65628C1 /* TrialEndedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialEndedView.swift; sourceTree = "<group>"; };
@@ -241,6 +249,7 @@
 		184332E9A816388D71A52CC4 /* flashcards_english_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_polish.json; sourceTree = "<group>"; };
 		19D0AFE49B5144D47E971846 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		1CD9C429C1C49ACDEF66DB34 /* flashcards_german_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_german_spanish.json; sourceTree = "<group>"; };
+		1E1633D0552F820F1DECE14C /* MilestoneBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneBadgeView.swift; sourceTree = "<group>"; };
 		1EF7640DC44203CE5639A144 /* wordbuilder_german_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_german_spanish.json; sourceTree = "<group>"; };
 		1FB2375AD490242C723FC30E /* wordbuilder_polish_ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_ukrainian.json; sourceTree = "<group>"; };
 		1FC0C0DB194CFC6D81344A4F /* grammar_polish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_english.json; sourceTree = "<group>"; };
@@ -271,16 +280,19 @@
 		3C8D4D41E794AAF840BF37C9 /* flashcards_english_japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_japanese.json; sourceTree = "<group>"; };
 		3F7A93ED414D0470C87039F9 /* AppStrings+Japanese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Japanese.swift"; sourceTree = "<group>"; };
 		3FAA135975F4BAFABE14B7C3 /* CosmicNoise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CosmicNoise.h; sourceTree = "<group>"; };
+		4004BA37BD207437B687DFE9 /* WeeklyTrendWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTrendWidget.swift; sourceTree = "<group>"; };
 		400F64CE0D3152B0BE1DD138 /* wordbuilder_english_french.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_french.json; sourceTree = "<group>"; };
 		4198AE62B582238D9214B56E /* flashcards_polish_french.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_french.json; sourceTree = "<group>"; };
 		44222FA157B1496887D5F6BD /* flashcards_polish_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_german.json; sourceTree = "<group>"; };
 		45A2278E3B176354236AF109 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		4721CE7D6096C14C2E5DF593 /* grammar_english_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_english_arabic.json; sourceTree = "<group>"; };
 		4891182963548D55B27CD859 /* flashcards_chinese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_chinese_english.json; sourceTree = "<group>"; };
+		4B9B39BE55826C6132EE40D6 /* AccuracyHeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccuracyHeatmapView.swift; sourceTree = "<group>"; };
 		4C476BFA1673DE127430A20B /* PracticeTimeBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimeBanner.swift; sourceTree = "<group>"; };
 		4D8094790693AC9E42966B5F /* QuantumFlowSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumFlowSettingsView.swift; sourceTree = "<group>"; };
 		4DCFB0CC96C4AA4F7E7FC737 /* LagoonStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LagoonStars.metal; sourceTree = "<group>"; };
 		4DFF01D34AAF3901078DA05B /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
+		50FBF53CD0CD62463AAFA667 /* DailyXPChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyXPChartView.swift; sourceTree = "<group>"; };
 		517921F6008B8CC3CF2455D0 /* wordbuilder_japanese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_japanese_english.json; sourceTree = "<group>"; };
 		51D0F6292AC1C7E48E337608 /* grammar_polish_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_spanish.json; sourceTree = "<group>"; };
 		533FA37F2ECDF2DAF07D198E /* wordbuilder_english_chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_chinese.json; sourceTree = "<group>"; };
@@ -326,6 +338,7 @@
 		881BEF19BF6BC1C0A955764B /* flashcards_japanese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_japanese_english.json; sourceTree = "<group>"; };
 		88C273E365C514538CA4F196 /* NebulaDriftLockedPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaDriftLockedPreview.swift; sourceTree = "<group>"; };
 		894DD05B6C1F9A54FFFA697A /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
+		89EAF9D804D2B676F6EAF215 /* MonthlyReportWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReportWidget.swift; sourceTree = "<group>"; };
 		8A7CB0448DE947B938B41FF7 /* Tokyo-Night-Street.m4a */ = {isa = PBXFileReference; path = "Tokyo-Night-Street.m4a"; sourceTree = "<group>"; };
 		8BBC7CB529E2BAA14AC41CCD /* PracticeExpiredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeExpiredView.swift; sourceTree = "<group>"; };
 		8C9082790B59A90F1EFFED6F /* flashcards_polish_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_spanish.json; sourceTree = "<group>"; };
@@ -392,6 +405,7 @@
 		DB8D135B47E89CA45DF67B97 /* SpiralHaloPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SpiralHaloPreset.metal; sourceTree = "<group>"; };
 		DD1B56548F0ECE743038D67E /* grammar_ukrainian_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_ukrainian_english.json; sourceTree = "<group>"; };
 		DE743C6D3380728D60B135A6 /* WordBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBuilderView.swift; sourceTree = "<group>"; };
+		DF80C185D1108772AD43DE80 /* MilestonePredictionWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestonePredictionWidget.swift; sourceTree = "<group>"; };
 		DFFCAB9270E7EDFE53A120B2 /* TrialConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialConfirmationView.swift; sourceTree = "<group>"; };
 		E4AC7C7FA534F4ABAF34D181 /* BreathingOrbsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingOrbsView.swift; sourceTree = "<group>"; };
 		E56328BCC55D6C38A861C0F9 /* grammar_polish_ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_ukrainian.json; sourceTree = "<group>"; };
@@ -1001,7 +1015,14 @@
 		FA0B35E46580DC60BD869CAB /* Journey */ = {
 			isa = PBXGroup;
 			children = (
+				4B9B39BE55826C6132EE40D6 /* AccuracyHeatmapView.swift */,
+				50FBF53CD0CD62463AAFA667 /* DailyXPChartView.swift */,
 				00238DB4631FF527FE002203 /* JourneyView.swift */,
+				12E837BDCAD527DE18810EF3 /* LockedJourneySectionOverlay.swift */,
+				1E1633D0552F820F1DECE14C /* MilestoneBadgeView.swift */,
+				DF80C185D1108772AD43DE80 /* MilestonePredictionWidget.swift */,
+				89EAF9D804D2B676F6EAF215 /* MonthlyReportWidget.swift */,
+				4004BA37BD207437B687DFE9 /* WeeklyTrendWidget.swift */,
 			);
 			path = Journey;
 			sourceTree = "<group>";
@@ -1197,6 +1218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CEA1D33EF3254085E2BE83 /* AccuracyHeatmapView.swift in Sources */,
 				D944A99D79DAE4DB61D4A0CA /* AndromedaStars.metal in Sources */,
 				48C3F46354D69FC50A03B221 /* AppStrings+Arabic.swift in Sources */,
 				47DF8C954EF56CC76450F79D /* AppStrings+Chinese.swift in Sources */,
@@ -1224,6 +1246,7 @@
 				A71CCAEA069D1304C4EFFF39 /* CosmicBackgroundView.swift in Sources */,
 				3C83D6934D1A9F0C1D007D89 /* CosmicPostProcess.metal in Sources */,
 				B645E29FBDBE19F17A624933 /* CosmicStars.metal in Sources */,
+				02A0E6527407A7AEC61BA21B /* DailyXPChartView.swift in Sources */,
 				9A088AC44F03937FC1939412 /* DashboardView.swift in Sources */,
 				C22897E4F70EE3C7ED6D25F8 /* DashboardViewModel.swift in Sources */,
 				2D10BFD2A89BA820AEAC4490 /* DataModels.swift in Sources */,
@@ -1246,12 +1269,16 @@
 				43BC39433248FE27AA9CB536 /* LiquidGlassPagination.swift in Sources */,
 				D6C1FF69FC5BCBFCE19E86D4 /* LocalizationManager.swift in Sources */,
 				9A0B9633423DAAE2A755A384 /* LockedFeatureIndicator.swift in Sources */,
+				BD1D6890A6B4D7D9F9B3456D /* LockedJourneySectionOverlay.swift in Sources */,
 				B77CAF0468C0B5BE9AE655B5 /* LumenLingoApp.swift in Sources */,
 				DF2BC01B8E34CB130AB3B7B6 /* MembershipView.swift in Sources */,
 				158A5B1BCC24775744979354 /* MetalCosmicRenderer.swift in Sources */,
 				9B62C71FC47783DF6BB80D30 /* MetalCosmicView.swift in Sources */,
 				F6F7A30CD0594D8726E59FA2 /* MetalQuantumFlowView.swift in Sources */,
 				4F2F8873556D56DC57B10789 /* MetalQuantumRenderer.swift in Sources */,
+				1E3D0DC303769FF56DF02C03 /* MilestoneBadgeView.swift in Sources */,
+				2A87FF2626ED84C5687E1D27 /* MilestonePredictionWidget.swift in Sources */,
+				81CCD35E7204881630C3D6CF /* MonthlyReportWidget.swift in Sources */,
 				3043011483273E4F8D1F3BC3 /* NebulaDriftLockedPreview.swift in Sources */,
 				5F8D5BC0E027A8B5E7340923 /* NebulaDriftSettingsView.swift in Sources */,
 				34EFCCB95E24AE39B86CE316 /* NetworkMonitor.swift in Sources */,
@@ -1299,6 +1326,7 @@
 				F15DA9BF1C2DA25798FE4855 /* TrialEndedView.swift in Sources */,
 				E374714E6F741D49D839BDB9 /* UpgradePromptManager.swift in Sources */,
 				EB14E6E4C10C13B33A501ED1 /* UpgradePromptView.swift in Sources */,
+				016A5792B73AF67510461454 /* WeeklyTrendWidget.swift in Sources */,
 				9B95136E0053CB309F0470A0 /* WordBuilderView.swift in Sources */,
 				686CCE8D7420E55A83113C58 /* WordBuilderViewModel.swift in Sources */,
 				766670ECFE1A56A3084DBE60 /* XPMultiplierBadge.swift in Sources */,

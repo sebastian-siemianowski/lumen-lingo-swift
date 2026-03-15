@@ -371,6 +371,32 @@ extension AppStrings {
         areasToImprove: "改善点",
         reviewIncorrect: { "\($0)件の不正解を復習" },
         shareResult: "結果を共有",
-        availableOn: { "\($0)で利用可能" }
+        availableOn: { "\($0)で利用可能" },
+
+        // MARK: - Journey Progress Gating
+        dailyXPChart: "デイリーXP",
+        last7Days: "過去7日間",
+        weeklyTrend: "週間トレンド",
+        thisWeekVsLastWeek: "今週 vs 先週",
+        thisWeekLabel: "今週",
+        lastWeekLabel: "先週",
+        totalThisWeek: "今週の合計",
+        accuracyHeatmap: "正答率ヒートマップ",
+        accuracyByCategory: "カテゴリ別正答率",
+        playSessionsToSeeData: "データを見るにはプレイしてください",
+        monthlyReport: "月次レポート",
+        last30Days: "過去30日間",
+        activeDaysLabel: "アクティブ日数",
+        milestonePredictionsTitle: "マイルストーン予測",
+        basedOnYourPace: "現在のペースに基づく",
+        allMilestonesReached: "全マイルストーン達成！",
+        tapToUpgrade: "タップしてアップグレード",
+        unlockFeature: "この機能をアンロック",
+        gameBreakdownDesc: "あなたの得意分野を発見 — 全ゲームモードのスコア・正確率・時間を追跡",
+        dailyXPChartDesc: "勢いを可視化 — 一週間の日別XPの推移を確認",
+        weeklyTrendDesc: "今週と先週を比較し、成長を加速させるパターンを見つけよう",
+        accuracyHeatmapDesc: "最も得意・不得意なカテゴリーを一目で把握",
+        monthlyReportDesc: "あなた専用の30日レポート — セッション数・連続記録・正確率・アクティブ日数",
+        milestonePredictionsDesc: "学習ペースに基づいて、次のマイルストーン到達日を正確に予測"
     )
 }

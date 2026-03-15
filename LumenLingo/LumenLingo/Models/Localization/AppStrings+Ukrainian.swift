@@ -371,6 +371,32 @@ extension AppStrings {
         areasToImprove: "Що покращити",
         reviewIncorrect: { "Переглянути \($0) неправильних відповідей" },
         shareResult: "Поділитися результатом",
-        availableOn: { "Доступно на \($0)" }
+        availableOn: { "Доступно на \($0)" },
+
+        // MARK: - Journey Progress Gating
+        dailyXPChart: "Щоденний XP",
+        last7Days: "Останні 7 днів",
+        weeklyTrend: "Тижневий Тренд",
+        thisWeekVsLastWeek: "Цей тиждень проти минулого",
+        thisWeekLabel: "Цей тиждень",
+        lastWeekLabel: "Минулий тиждень",
+        totalThisWeek: "Загалом цього тижня",
+        accuracyHeatmap: "Карта Точності",
+        accuracyByCategory: "Точність за категоріями",
+        playSessionsToSeeData: "Грайте щоб побачити дані",
+        monthlyReport: "Місячний Звіт",
+        last30Days: "Останні 30 днів",
+        activeDaysLabel: "Активні Дні",
+        milestonePredictionsTitle: "Прогнози Досягнень",
+        basedOnYourPace: "На основі вашого темпу",
+        allMilestonesReached: "Всі досягнення отримано!",
+        tapToUpgrade: "Натисніть для покращення",
+        unlockFeature: "Розблокувати цю функцію",
+        gameBreakdownDesc: "Дізнайтесь, де ви найкращі — відстежуйте бали, точність і час у кожному режимі гри",
+        dailyXPChartDesc: "Візуалізуйте свій прогрес — спостерігайте за щоденним XP протягом тижня",
+        weeklyTrendDesc: "Порівняйте цей тиждень з минулим і виявіть патерни вашого зростання",
+        accuracyHeatmapDesc: "Миттєво визначте свої найсильніші та найслабші категорії одним поглядом",
+        monthlyReportDesc: "Ваш персональний огляд за 30 днів — сесії, серії, точність та активні дні",
+        milestonePredictionsDesc: "Дізнайтесь, коли ви досягнете наступного рубежу на основі вашого темпу навчання"
     )
 }
