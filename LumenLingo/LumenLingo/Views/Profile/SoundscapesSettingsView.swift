@@ -31,6 +31,7 @@ struct SoundscapesSettingsView: View {
         }
         .animation(.easeInOut(duration: 0.35), value: isEnabled)
         .animation(.spring(response: 0.35, dampingFraction: 0.8), value: profile?.selectedSoundscape)
+        .animation(.spring(response: 0.3, dampingFraction: 0.85), value: profile?.soundscapeVariantIndex)
     }
 
     // MARK: - Header Toggle
@@ -88,7 +89,7 @@ struct SoundscapesSettingsView: View {
                     // Start/stop soundscape based on toggle
                     if profile?.ambientSoundsEnabled == true {
                         if let soundscape = profile?.soundscapeEnum {
-                            AudioService.shared.startSoundscape(soundscape)
+                            AudioService.shared.startSoundscape(soundscape, variantIndex: profile?.soundscapeVariantIndex ?? 0)
                         }
                     } else {
                         AudioService.shared.stopAmbient()
@@ -101,7 +102,9 @@ struct SoundscapesSettingsView: View {
     // MARK: - Category Section
 
     private func categorySection(_ category: SoundscapeCategory) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
+        let selectedInCategory = category.soundscapes.first { $0 == profile?.soundscapeEnum }
+
+        return VStack(alignment: .leading, spacing: 8) {
             // Category header
             HStack(spacing: 6) {
                 Image(systemName: category.icon)
@@ -122,6 +125,12 @@ struct SoundscapesSettingsView: View {
                 }
                 .padding(.horizontal, 4)
                 .padding(.vertical, 4)
+            }
+
+            // Variant picker — appears below the scroll when a multi-variant soundscape in this category is selected
+            if let selected = selectedInCategory, selected.hasMultipleVariants {
+                variantPicker(for: selected)
+                    .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
     }
@@ -280,7 +289,13 @@ struct SoundscapesSettingsView: View {
     // MARK: - Helpers
 
     private var currentSoundscapeName: String? {
-        profile?.soundscapeEnum?.displayName
+        guard let soundscape = profile?.soundscapeEnum else { return nil }
+        if soundscape.hasMultipleVariants {
+            let idx = profile?.soundscapeVariantIndex ?? 0
+            let variant = soundscape.variants[min(idx, soundscape.variants.count - 1)]
+            return "\(soundscape.displayName) — \(variant.label)"
+        }
+        return soundscape.displayName
     }
 
     private func handleSoundscapeTap(_ soundscape: Soundscape) {
@@ -292,20 +307,97 @@ struct SoundscapesSettingsView: View {
             if wasSelected {
                 // Deselect — stop ambient
                 profile?.soundscapeEnum = nil
+                profile?.soundscapeVariantIndex = 0
                 AudioService.shared.stopAmbient()
                 AudioService.shared.playToggleOff()
             } else {
                 let hadPrevious = profile?.soundscapeEnum != nil
                 profile?.soundscapeEnum = soundscape
+                profile?.soundscapeVariantIndex = 0
                 AudioService.shared.playToggleOn()
 
                 if hadPrevious {
-                    AudioService.shared.crossfadeSoundscape(to: soundscape)
+                    AudioService.shared.crossfadeSoundscape(to: soundscape, variantIndex: 0)
                 } else {
-                    AudioService.shared.startSoundscape(soundscape)
+                    AudioService.shared.startSoundscape(soundscape, variantIndex: 0)
                 }
             }
         }
+    }
+
+    // MARK: - Variant Picker
+
+    private func variantPicker(for soundscape: Soundscape) -> some View {
+        HStack(spacing: 8) {
+            Image(systemName: "music.note.list")
+                .font(.system(size: 11))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+
+            ForEach(soundscape.variants) { variant in
+                variantPill(variant, soundscape: soundscape)
+            }
+
+            Spacer()
+        }
+        .padding(.horizontal, 8)
+        .padding(.vertical, 6)
+    }
+
+    private func variantPill(_ variant: Soundscape.Variant, soundscape: Soundscape) -> some View {
+        let isActive = (profile?.soundscapeVariantIndex ?? 0) == variant.id
+
+        return Button {
+            handleVariantTap(soundscape: soundscape, variant: variant)
+        } label: {
+            HStack(spacing: 4) {
+                if isActive && AudioService.shared.isSoundscapePlaying {
+                    Image(systemName: "waveform")
+                        .font(.system(size: 9, weight: .semibold))
+                        .symbolEffect(.variableColor.iterative, options: .repeating, isActive: true)
+                }
+                Text(variant.label)
+                    .font(.system(size: 11, weight: isActive ? .semibold : .medium))
+            }
+            .foregroundStyle(
+                isActive
+                    ? .white
+                    : (isDark ? .white.opacity(0.6) : .caribbeanInk.opacity(0.7))
+            )
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
+            .background(
+                Capsule()
+                    .fill(
+                        isActive
+                            ? LinearGradient(colors: [.purple, .indigo], startPoint: .leading, endPoint: .trailing)
+                            : LinearGradient(colors: [
+                                isDark ? Color.white.opacity(0.08) : Color.black.opacity(0.05),
+                                isDark ? Color.white.opacity(0.04) : Color.black.opacity(0.02)
+                              ], startPoint: .leading, endPoint: .trailing)
+                    )
+            )
+            .overlay(
+                Capsule()
+                    .strokeBorder(
+                        isActive
+                            ? Color.clear
+                            : (isDark ? Color.white.opacity(0.1) : Color.black.opacity(0.08)),
+                        lineWidth: 0.5
+                    )
+            )
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func handleVariantTap(soundscape: Soundscape, variant: Soundscape.Variant) {
+        let currentVariant = profile?.soundscapeVariantIndex ?? 0
+        guard currentVariant != variant.id else { return }
+
+        HapticsService.shared.toggleSwitch()
+        withAnimation(.spring(response: 0.3, dampingFraction: 0.85)) {
+            profile?.soundscapeVariantIndex = variant.id
+        }
+        AudioService.shared.crossfadeSoundscape(to: soundscape, variantIndex: variant.id)
     }
 
     private func categoryColor(_ category: SoundscapeCategory) -> Color {

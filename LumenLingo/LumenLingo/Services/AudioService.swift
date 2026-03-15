@@ -62,6 +62,7 @@ final class AudioService {
     private var ambientFadeTimer: Timer?
     private var wasAmbientPlaying = false
     private var currentSoundscape: Soundscape?
+    private var currentVariantIndex: Int = 0
 
     // MARK: - Adaptive State
 
@@ -206,7 +207,7 @@ final class AudioService {
     private func handleForeground() {
         sessionStartTime = Date()
         if wasAmbientPlaying, let soundscape = currentSoundscape {
-            startSoundscape(soundscape)
+            startSoundscape(soundscape, variantIndex: currentVariantIndex)
         }
     }
 
@@ -1330,12 +1331,43 @@ final class AudioService {
 
     // MARK: - Soundscapes (Ambient Audio Engine)
 
-    /// Start a soundscape — fades in over 3 seconds
-    func startSoundscape(_ soundscape: Soundscape) {
+    /// Start a soundscape variant — plays bundled m4a file, falls back to generated drone
+    func startSoundscape(_ soundscape: Soundscape, variantIndex: Int = 0) {
         guard isEnabled, ambientSoundsEnabled else { return }
         configureSessionIfNeeded()
         currentSoundscape = soundscape
+        currentVariantIndex = variantIndex
 
+        let clampedIndex = min(variantIndex, soundscape.variants.count - 1)
+        let variant = soundscape.variants[max(0, clampedIndex)]
+
+        // Try bundled audio file first
+        if let url = Bundle.main.url(forResource: variant.fileName, withExtension: "m4a") {
+            DispatchQueue.main.async { [weak self] in
+                guard let self else { return }
+                do {
+                    self.ambientPlayer?.stop()
+                    let player = try AVAudioPlayer(contentsOf: url)
+                    player.numberOfLoops = -1
+                    player.volume = 0
+                    player.prepareToPlay()
+                    player.play()
+                    self.ambientPlayer = player
+                    self.fadeAmbient(to: self.ambientVolume * self.masterVolume * 10,
+                                    duration: 3.0)
+                } catch {
+                    print("⚠️ Soundscape file playback error: \(error)")
+                    self.startSoundscapeFallback(soundscape)
+                }
+            }
+        } else {
+            // Fallback to generated drone
+            startSoundscapeFallback(soundscape)
+        }
+    }
+
+    /// Fallback: generated ambient drone (used when audio file not found)
+    private func startSoundscapeFallback(_ soundscape: Soundscape) {
         cacheQueue.async { [weak self] in
             guard let self else { return }
             let data = self.generateSoundscapeData(soundscape.ambientConfig)
@@ -1351,7 +1383,7 @@ final class AudioService {
                     self.fadeAmbient(to: self.ambientVolume * self.masterVolume * 10,
                                     duration: 3.0)
                 } catch {
-                    print("⚠️ Soundscape playback error: \(error)")
+                    print("⚠️ Soundscape fallback playback error: \(error)")
                 }
             }
         }
@@ -1379,11 +1411,11 @@ final class AudioService {
         }
     }
 
-    /// Crossfade to a different soundscape
-    func crossfadeSoundscape(to soundscape: Soundscape) {
+    /// Crossfade to a different soundscape variant
+    func crossfadeSoundscape(to soundscape: Soundscape, variantIndex: Int = 0) {
         stopAmbient(fadeDuration: 1.5)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) { [weak self] in
-            self?.startSoundscape(soundscape)
+            self?.startSoundscape(soundscape, variantIndex: variantIndex)
         }
     }
 

@@ -43,6 +43,7 @@ final class UserProfile {
     var achievementSoundsEnabled: Bool = true
     var ambientSoundsEnabled: Bool = false
     var selectedSoundscape: String = ""
+    var soundscapeVariantIndex: Int = 0
     var hapticsEnabled: Bool = true
     var adaptiveAudioEnabled: Bool = true
     var gameSoundsVolume: Float = 1.0
@@ -129,6 +130,7 @@ final class UserProfile {
         achievementSoundsEnabled: Bool = true,
         ambientSoundsEnabled: Bool = false,
         selectedSoundscape: String = "",
+        soundscapeVariantIndex: Int = 0,
         hapticsEnabled: Bool = true,
         adaptiveAudioEnabled: Bool = true,
         gameSoundsVolume: Float = 1.0,
@@ -168,6 +170,7 @@ final class UserProfile {
         self.achievementSoundsEnabled = achievementSoundsEnabled
         self.ambientSoundsEnabled = ambientSoundsEnabled
         self.selectedSoundscape = selectedSoundscape
+        self.soundscapeVariantIndex = soundscapeVariantIndex
         self.hapticsEnabled = hapticsEnabled
         self.adaptiveAudioEnabled = adaptiveAudioEnabled
         self.gameSoundsVolume = gameSoundsVolume

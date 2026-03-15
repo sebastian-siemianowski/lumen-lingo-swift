@@ -798,6 +798,35 @@ enum Soundscape: String, CaseIterable, Identifiable {
         }
     }
 
+    /// Audio file variants bundled in the Soundscapes folder.
+    struct Variant: Identifiable, Equatable {
+        let id: Int          // 0-based index
+        let fileName: String // e.g. "Paris-Café-1" (no extension)
+        let label: String    // e.g. "Variant 1"
+    }
+
+    var variants: [Variant] {
+        switch self {
+        case .parisCafe:             return [Variant(id: 0, fileName: "Paris-Café-1", label: "Parisian Dawn"),
+                                              Variant(id: 1, fileName: "Paris-Café-2", label: "Evening Terrace")]
+        case .observatoryNight:      return [Variant(id: 0, fileName: "Observatory-Night-1", label: "Stargazer"),
+                                              Variant(id: 1, fileName: "Observatory-Night-2", label: "Deep Sky")]
+        case .dominicanBeach:        return [Variant(id: 0, fileName: "Dominican-Beach-1", label: "Shoreline"),
+                                              Variant(id: 1, fileName: "Dominican-Beach-2", label: "Sunset Cove")]
+        case .midnightJazzPiano:     return [Variant(id: 0, fileName: "Midnight-Jazz-Piano", label: "Late Set")]
+        case .rainyWindow:           return [Variant(id: 0, fileName: "Rainy-Window", label: "Gentle Rain")]
+        case .japaneseBambooForest:  return [Variant(id: 0, fileName: "Japanese-Bamboo-Forest", label: "Zen Garden")]
+        case .amazonRainforest:      return [Variant(id: 0, fileName: "Amazon-Rainforest", label: "Canopy")]
+        case .mountainCampfire:      return [Variant(id: 0, fileName: "Mountain-Campfire", label: "Fireside")]
+        case .desertNightSky:        return [Variant(id: 0, fileName: "Desert-Night-Sky", label: "Starlit Sand")]
+        case .deepSpaceDrift:        return [Variant(id: 0, fileName: "Deep-Space-Drift", label: "Cosmic Float")]
+        case .veniceCanalMorning:    return [Variant(id: 0, fileName: "Venice-Canal-Morning", label: "Canal Bells")]
+        case .tokyoNightStreet:      return [Variant(id: 0, fileName: "Tokyo-Night-Street", label: "Neon Walk")]
+        }
+    }
+
+    var hasMultipleVariants: Bool { variants.count > 1 }
+
     var previewColors: [Color] {
         switch self {
         case .parisCafe: return [Color(hex: "8B6914"), Color(hex: "C4956A"), Color(hex: "5C3A1E")]
