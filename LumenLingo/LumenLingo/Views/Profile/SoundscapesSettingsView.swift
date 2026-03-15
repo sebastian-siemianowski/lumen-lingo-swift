@@ -120,7 +120,8 @@ struct SoundscapesSettingsView: View {
                         soundscapeCard(soundscape)
                     }
                 }
-                .padding(.horizontal, 2)
+                .padding(.horizontal, 4)
+                .padding(.vertical, 4)
             }
         }
     }
@@ -129,138 +130,119 @@ struct SoundscapesSettingsView: View {
 
     private func soundscapeCard(_ soundscape: Soundscape) -> some View {
         let isSelected = profile?.soundscapeEnum == soundscape
-        let isPlaying = isSelected && AudioService.shared.isSoundscapePlaying
 
         return Button {
             handleSoundscapeTap(soundscape)
         } label: {
-            VStack(spacing: 0) {
-                // Gradient preview with icon — fixed height
-                ZStack {
-                    LinearGradient(
-                        colors: soundscape.previewColors,
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                    .overlay(
-                        LinearGradient(
-                            colors: [.white.opacity(0.12), .clear],
-                            startPoint: .top,
-                            endPoint: .center
-                        )
-                    )
-
-                    // Playing indicator badge
-                    if isSelected {
-                        VStack {
-                            HStack {
-                                Spacer()
-                                ZStack {
-                                    Circle()
-                                        .fill(.white.opacity(0.3))
-                                        .frame(width: 22, height: 22)
-
-                                    Image(systemName: isPlaying ? "waveform" : "checkmark")
-                                        .font(.system(size: 9, weight: .bold))
-                                        .foregroundStyle(.white)
-                                        .symbolEffect(.variableColor.iterative, options: .repeating, isActive: isPlaying)
-                                }
-                                .transition(.scale.combined(with: .opacity))
-                                .padding(5)
-                            }
-                            Spacer()
-                        }
-                    }
-
-                    Image(systemName: soundscape.icon)
-                        .font(.system(size: 20))
-                        .foregroundStyle(.white.opacity(isSelected ? 1.0 : 0.7))
-                        .shadow(color: .black.opacity(0.3), radius: 4, y: 2)
-                }
-                .frame(height: 56)
-                .clipped()
-
-                // Info section — fixed height
-                VStack(spacing: 2) {
-                    Text(soundscape.displayName)
-                        .font(.system(size: 11, weight: .bold))
-                        .foregroundStyle(
-                            isSelected
-                                ? (isDark ? .white : .caribbeanInk)
-                                : (isDark ? .white.opacity(0.65) : .caribbeanMist)
-                        )
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.8)
-
-                    Text(soundscape.subtitle)
-                        .font(.system(size: 9))
-                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist.opacity(0.8))
-                        .lineLimit(2)
-                        .multilineTextAlignment(.center)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-                .padding(.horizontal, 6)
-                .padding(.vertical, 6)
-                .frame(width: 130, height: 44)
-                .background(
-                    isDark
-                        ? Color(red: 25/255, green: 20/255, blue: 45/255).opacity(isSelected ? 0.95 : 0.85)
-                        : Color(red: 240/255, green: 238/255, blue: 248/255).opacity(isSelected ? 0.95 : 0.90)
-                )
-            }
-            .frame(width: 130, height: 100)
-            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-            .overlay(
-                RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .strokeBorder(
-                        isSelected
-                            ? LinearGradient(
-                                colors: [
-                                    .purple.opacity(0.95),
-                                    .indigo.opacity(0.7),
-                                    .purple.opacity(0.5)
-                                ],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                              )
-                            : LinearGradient(
-                                colors: [
-                                    Color.white.opacity(isDark ? 0.10 : 0.25),
-                                    Color.white.opacity(isDark ? 0.04 : 0.12)
-                                ],
-                                startPoint: .top,
-                                endPoint: .bottom
-                              ),
-                        lineWidth: isSelected ? 2.5 : 0.5
-                    )
-            )
-            .overlay(
-                // Outer glow ring for selected state
-                isSelected
-                    ? RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .stroke(
-                            LinearGradient(
-                                colors: [
-                                    .purple.opacity(0.5),
-                                    .indigo.opacity(0.3)
-                                ],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 1.5
-                        )
-                        .padding(-2)
-                        .blur(radius: 2)
-                    : nil
-            )
-            .shadow(
-                color: isSelected ? .purple.opacity(isDark ? 0.5 : 0.3) : .black.opacity(0.05),
-                radius: isSelected ? 12 : 4,
-                y: isSelected ? 4 : 2
-            )
-            .scaleEffect(isSelected ? 1.05 : 1.0)
+            soundscapeCardContent(soundscape, isSelected: isSelected)
         }
         .buttonStyle(LumenPressStyle(weight: .soft))
+    }
+
+    private func soundscapeCardContent(_ soundscape: Soundscape, isSelected: Bool) -> some View {
+        let isPlaying = isSelected && AudioService.shared.isSoundscapePlaying
+        let anySelected = profile?.soundscapeEnum != nil
+
+        return VStack(spacing: 0) {
+            soundscapePreview(soundscape, isSelected: isSelected, isPlaying: isPlaying)
+            soundscapeInfo(soundscape, isSelected: isSelected)
+        }
+        .frame(width: 130)
+        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .overlay(soundscapeBorder(isSelected: isSelected))
+        .opacity(anySelected && !isSelected ? 0.55 : 1.0)
+    }
+
+    private func soundscapePreview(_ soundscape: Soundscape, isSelected: Bool, isPlaying: Bool) -> some View {
+        ZStack {
+            LinearGradient(
+                colors: soundscape.previewColors,
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .overlay(
+                LinearGradient(
+                    colors: [.white.opacity(0.18), .clear, .black.opacity(0.08)],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+            )
+
+            // Checkmark badge top-right
+            if isSelected {
+                VStack {
+                    HStack {
+                        Spacer()
+                        ZStack {
+                            Circle()
+                                .fill(.white)
+                                .frame(width: 22, height: 22)
+
+                            Image(systemName: isPlaying ? "waveform" : "checkmark")
+                                .font(.system(size: 10, weight: .bold))
+                                .foregroundStyle(.purple)
+                                .symbolEffect(.variableColor.iterative, options: .repeating, isActive: isPlaying)
+                        }
+                        .shadow(color: .purple.opacity(0.5), radius: 4)
+                        .transition(.scale.combined(with: .opacity))
+                        .padding(6)
+                    }
+                    Spacer()
+                }
+            }
+
+            Image(systemName: soundscape.icon)
+                .font(.system(size: 22, weight: .medium))
+                .foregroundStyle(.white.opacity(0.8))
+                .shadow(color: .black.opacity(0.3), radius: 4, y: 2)
+        }
+        .frame(height: 60)
+        .clipped()
+    }
+
+    private func soundscapeInfo(_ soundscape: Soundscape, isSelected: Bool) -> some View {
+        VStack(spacing: 3) {
+            Text(soundscape.displayName)
+                .font(.system(size: 12, weight: .bold))
+                .foregroundStyle(isDark ? .white.opacity(0.85) : .caribbeanInk)
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
+
+            Text(soundscape.subtitle)
+                .font(.system(size: 9))
+                .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanMist)
+                .lineLimit(2)
+                .multilineTextAlignment(.center)
+        }
+        .padding(.horizontal, 6)
+        .padding(.vertical, 8)
+        .frame(maxWidth: .infinity, minHeight: 50, alignment: .top)
+        .background(
+            isDark
+                ? Color(red: 25/255, green: 20/255, blue: 45/255).opacity(0.9)
+                : Color(red: 240/255, green: 238/255, blue: 248/255).opacity(0.92)
+        )
+    }
+
+    private func soundscapeBorder(isSelected: Bool) -> some View {
+        RoundedRectangle(cornerRadius: 14, style: .continuous)
+            .strokeBorder(
+                isSelected
+                    ? LinearGradient(
+                        colors: [.purple, .indigo, .purple.opacity(0.8)],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                      )
+                    : LinearGradient(
+                        colors: [
+                            Color.white.opacity(isDark ? 0.10 : 0.25),
+                            Color.white.opacity(isDark ? 0.04 : 0.12)
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                      ),
+                lineWidth: isSelected ? 3 : 0.5
+            )
     }
 
     // MARK: - Volume Row
