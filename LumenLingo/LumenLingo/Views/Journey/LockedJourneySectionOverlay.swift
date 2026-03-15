@@ -91,7 +91,7 @@ struct LockedJourneySectionOverlay<Content: View>: View {
                 showUpgradePrompt = true
             }
             .sheet(isPresented: $showUpgradePrompt) {
-                MembershipView()
+                NavigationStack { MembershipView(isSheet: true) }
             }
     }
 }

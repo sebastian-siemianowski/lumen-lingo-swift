@@ -1286,15 +1286,15 @@
 - Flag evaluation is O(1) — dictionary lookup, not iteration.
 
 **Subtasks:**
-- [ ] 19.1.1 — Define complete `PremiumFeature` enum with all features from Epics 2–18.
-- [ ] 19.1.2 — Create `TierFeatureMap: [String: Set<PremiumFeature>]` mapping tier IDs to feature sets.
-- [ ] 19.1.3 — `TierManager.hasAccess(to:) -> Bool` uses dictionary lookup.
-- [ ] 19.1.4 — `TierManager.allowedCount(for:) -> Int` for variable-limit features.
-- [ ] 19.1.5 — Add `#if DEBUG` menu in settings to override individual features.
-- [ ] 19.1.6 — Override stored in `UserDefaults` with `featureOverride_` prefix.
-- [ ] 19.1.7 — Overrides only active in debug builds — stripped from release.
-- [ ] 19.1.8 — Add exhaustive unit tests: every feature × every tier permutation.
-- [ ] 19.1.9 — Document flag system in code comments for new developers.
+- [x] 19.1.1 — Define complete `PremiumFeature` enum with all features from Epics 2–18.
+- [x] 19.1.2 — Create `TierFeatureMap: [String: Set<PremiumFeature>]` mapping tier IDs to feature sets.
+- [x] 19.1.3 — `TierManager.hasAccess(to:) -> Bool` uses dictionary lookup.
+- [x] 19.1.4 — `TierManager.allowedCount(for:) -> Int` for variable-limit features.
+- [x] 19.1.5 — Add `#if DEBUG` menu in settings to override individual features.
+- [x] 19.1.6 — Override stored in `UserDefaults` with `featureOverride_` prefix.
+- [x] 19.1.7 — Overrides only active in debug builds — stripped from release.
+- [x] 19.1.8 — Add exhaustive unit tests: every feature × every tier permutation.
+- [x] 19.1.9 — Document flag system in code comments for new developers.
 
 ---
 
@@ -1312,14 +1312,14 @@
 - Panel shows a live list of all features and their current enabled/disabled state.
 
 **Subtasks:**
-- [ ] 19.2.1 — Create `TierDebugView` accessible from Beta settings.
-- [ ] 19.2.2 — Show 5 tier buttons: tap to switch, selected shows checkmark.
-- [ ] 19.2.3 — Below buttons: list all `PremiumFeature` cases with enabled/disabled toggle.
-- [ ] 19.2.4 — Add trial date override: date picker to set `trialStartDate` for testing expiry.
-- [ ] 19.2.5 — Add "Reset to Default" button that clears all overrides.
-- [ ] 19.2.6 — Show live feature status: green dot = enabled, red dot = disabled, yellow = overridden.
-- [ ] 19.2.7 — Wrap entire view in `#if DEBUG` compilation condition.
-- [ ] 19.2.8 — Add section showing `PracticeTimeTracker` status: used time, remaining, expired state.
+- [x] 19.2.1 — Create `TierDebugView` accessible from Settings footer (DEBUG only).
+- [x] 19.2.2 — Show 5 tier buttons: tap to switch, selected shows checkmark.
+- [x] 19.2.3 — Below buttons: list all `PremiumFeature` cases with enabled/disabled toggle.
+- [x] 19.2.4 — Add trial date override: date picker to set `trialStartDate` for testing expiry.
+- [x] 19.2.5 — Add "Reset to Default" button that clears all overrides.
+- [x] 19.2.6 — Show live feature status: green dot = enabled, red dot = disabled, yellow = overridden.
+- [x] 19.2.7 — Wrap entire view in `#if DEBUG` compilation condition.
+- [x] 19.2.8 — Add section showing `PracticeTimeTracker` status: used time, remaining, expired state.
 
 ---
 

@@ -101,7 +101,7 @@ struct DashboardView: View {
             LanguageSelectionView()
         }
         .sheet(isPresented: $showMembershipSheet) {
-            NavigationStack { MembershipView() }
+            NavigationStack { MembershipView(isSheet: true) }
         }
         .sheet(isPresented: $showExpiredSheet) {
             PracticeExpiredView(

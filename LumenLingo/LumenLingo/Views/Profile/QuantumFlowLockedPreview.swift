@@ -130,7 +130,7 @@ struct QuantumFlowLockedPreview: View {
                 .strokeBorder(.white.opacity(isDark ? 0.08 : 0.15), lineWidth: 0.5)
         )
         .sheet(isPresented: $showMembership) {
-            NavigationStack { MembershipView() }
+            NavigationStack { MembershipView(isSheet: true) }
         }
         .onAppear {
             withAnimation(.spring(response: 0.7, dampingFraction: 0.75).delay(0.15)) {

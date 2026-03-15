@@ -156,7 +156,7 @@ struct WordBuilderView: View {
             }
         }
         .sheet(isPresented: $showMembershipFromExpired) {
-            NavigationStack { MembershipView() }
+            NavigationStack { MembershipView(isSheet: true) }
         }
     }
 

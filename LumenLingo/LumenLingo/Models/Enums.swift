@@ -517,6 +517,19 @@ enum PremiumFeature: Equatable, Hashable, CaseIterable {
     static var carouselFeatures: [PremiumFeature] {
         [.soundscapes, .breathingOrbs, .unlimitedPractice]
     }
+
+    /// Key for storing debug overrides in UserDefaults.
+    var overrideKey: String {
+        switch self {
+        case .soundscapes:       return "soundscapes"
+        case .languagePairs:     return "languagePairs"
+        case .unlimitedPractice: return "unlimitedPractice"
+        case .breathingOrbs:     return "breathingOrbs"
+        case .quantumFlow:       return "quantumFlow"
+        case .nebulaDrift:       return "nebulaDrift"
+        case .offlineMode:       return "offlineMode"
+        }
+    }
 }
 
 // MARK: - Breathing Orb Color Scheme

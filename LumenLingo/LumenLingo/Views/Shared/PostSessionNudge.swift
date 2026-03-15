@@ -113,7 +113,7 @@ struct PostSessionNudge: View {
                 }
             }
             .sheet(isPresented: $showMembershipSheet) {
-                NavigationStack { MembershipView() }
+                NavigationStack { MembershipView(isSheet: true) }
             }
             .confirmationDialog("Hide upgrade suggestions?", isPresented: $showHideOption, titleVisibility: .visible) {
                 Button("Hide Forever", role: .destructive) {

@@ -41,17 +41,30 @@ final class TierManager {
     // MARK: - Feature Gating
 
     /// Check whether the current tier has access to a given feature.
+    /// In DEBUG builds, checks for feature overrides first.
     func hasAccess(to feature: PremiumFeature) -> Bool {
-        allowedCount(for: feature) > 0
+        #if DEBUG
+        if let override = featureOverride(for: feature) {
+            return override
+        }
+        #endif
+        return allowedCount(for: feature) > 0
     }
 
     /// Returns how many items are allowed for a given feature on the current tier.
     /// Returns `Int.max` for unlimited. Returns `0` for no access.
+    /// In DEBUG builds, checks for feature overrides first.
     func allowedCount(for feature: PremiumFeature) -> Int {
-        Self.allowedCount(for: feature, tier: currentTier)
+        #if DEBUG
+        if let override = featureOverride(for: feature) {
+            return override ? Self.allowedCount(for: feature, tier: .royal) : 0
+        }
+        #endif
+        return Self.allowedCount(for: feature, tier: currentTier)
     }
 
     /// Static tier→feature mapping used by both instance and unit tests.
+    /// Not affected by debug overrides — always returns the canonical mapping.
     static func allowedCount(for feature: PremiumFeature, tier: MembershipTier) -> Int {
         switch feature {
         case .soundscapes:
@@ -570,4 +583,68 @@ final class TierManager {
             self?.isTransitioning = false
         }
     }
+
+    // MARK: - Feature Flag Overrides (Debug Only)
+
+    #if DEBUG
+    /// UserDefaults key prefix for per-feature overrides.
+    /// Each feature stores a tri-state: nil = no override, true = force-on, false = force-off.
+    private static let overridePrefix = "featureOverride_"
+
+    /// Returns the feature override state, or nil if no override is set.
+    func featureOverride(for feature: PremiumFeature) -> Bool? {
+        let key = Self.overridePrefix + feature.overrideKey
+        guard UserDefaults.standard.object(forKey: key) != nil else { return nil }
+        return UserDefaults.standard.bool(forKey: key)
+    }
+
+    /// Set a feature override. Pass nil to clear the override.
+    func setFeatureOverride(_ value: Bool?, for feature: PremiumFeature) {
+        let key = Self.overridePrefix + feature.overrideKey
+        if let value {
+            UserDefaults.standard.set(value, forKey: key)
+        } else {
+            UserDefaults.standard.removeObject(forKey: key)
+        }
+    }
+
+    /// Returns true if any feature override is currently active.
+    var hasActiveOverrides: Bool {
+        PremiumFeature.allCases.contains { featureOverride(for: $0) != nil }
+    }
+
+    /// Clear all feature overrides.
+    func clearAllOverrides() {
+        for feature in PremiumFeature.allCases {
+            let key = Self.overridePrefix + feature.overrideKey
+            UserDefaults.standard.removeObject(forKey: key)
+        }
+    }
+
+    /// Effective access status for a feature — includes override info.
+    func effectiveFeatureStatus(for feature: PremiumFeature) -> FeatureStatus {
+        if let override = featureOverride(for: feature) {
+            return .overridden(enabled: override)
+        }
+        let enabled = Self.allowedCount(for: feature, tier: currentTier) > 0
+        return .natural(enabled: enabled)
+    }
+
+    /// Status of a feature flag — natural (from tier) or overridden.
+    enum FeatureStatus {
+        case natural(enabled: Bool)
+        case overridden(enabled: Bool)
+
+        var isEnabled: Bool {
+            switch self {
+            case .natural(let enabled), .overridden(let enabled): return enabled
+            }
+        }
+
+        var isOverridden: Bool {
+            if case .overridden = self { return true }
+            return false
+        }
+    }
+    #endif
 }

@@ -25,7 +25,7 @@ struct OfflineBanner: View {
             bannerContent
                 .transition(.move(edge: .top).combined(with: .opacity))
                 .sheet(isPresented: $showMembership) {
-                    NavigationStack { MembershipView() }
+                    NavigationStack { MembershipView(isSheet: true) }
                 }
         }
     }

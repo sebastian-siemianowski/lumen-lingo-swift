@@ -49,7 +49,7 @@ struct ConnectivitySettingsView: View {
             }
         }
         .sheet(isPresented: $showMembership) {
-            NavigationStack { MembershipView() }
+            NavigationStack { MembershipView(isSheet: true) }
         }
     }
 

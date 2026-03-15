@@ -84,7 +84,7 @@ struct TrialCountdownBanner: View {
             }
             .buttonStyle(.plain)
             .sheet(isPresented: $showMembership) {
-                NavigationStack { MembershipView() }
+                NavigationStack { MembershipView(isSheet: true) }
             }
             .onAppear {
                 if isUrgent {

@@ -8,11 +8,15 @@ import SwiftData
 struct MembershipView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(\.dismiss) private var dismiss
     @Environment(TierManager.self) private var tierManager
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
     @State private var showComparison = false
     @State private var selectedTierId: String = "free"
+
+    /// When true, shows a close button in the toolbar (for sheet presentations).
+    var isSheet: Bool = false
 
     private var L: AppStrings { localization.strings }
     private var isDark: Bool { colorScheme == .dark }
@@ -51,6 +55,21 @@ struct MembershipView: View {
         )
         .navigationBarTitleDisplayMode(.inline)
         .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
+        .toolbar {
+            if isSheet {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .font(.system(size: 22))
+                            .symbolRenderingMode(.hierarchical)
+                            .foregroundStyle(isDark ? .white.opacity(0.6) : .primary.opacity(0.5))
+                    }
+                    .accessibilityLabel("Close")
+                }
+            }
+        }
         .onAppear {
             selectedTierId = tierManager.currentTierId
         }

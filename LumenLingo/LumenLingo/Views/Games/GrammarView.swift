@@ -152,7 +152,7 @@ struct GrammarView: View {
             }
         }
         .sheet(isPresented: $showMembershipFromExpired) {
-            NavigationStack { MembershipView() }
+            NavigationStack { MembershipView(isSheet: true) }
         }
     }
 

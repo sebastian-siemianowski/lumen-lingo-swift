@@ -2289,4 +2289,196 @@ final class TierManagerTests: XCTestCase {
     func testJourneyStatsSectionContainsInsights() {
         XCTAssertTrue(TierManager.JourneyStatsSection.allCases.contains(.insights))
     }
+
+    // MARK: - Feature Override Infrastructure (DEBUG only)
+
+    #if DEBUG
+    func testFeatureOverrideDefaultsToNil() {
+        let tm = TierManager()
+        for feature in PremiumFeature.allCases {
+            XCTAssertNil(tm.featureOverride(for: feature),
+                         "\(feature) should have no override by default")
+        }
+    }
+
+    func testSetFeatureOverrideTrue() {
+        let tm = TierManager()
+        tm.setFeatureOverride(true, for: .soundscapes)
+        XCTAssertEqual(tm.featureOverride(for: .soundscapes), true)
+        tm.setFeatureOverride(nil, for: .soundscapes)
+    }
+
+    func testSetFeatureOverrideFalse() {
+        let tm = TierManager()
+        tm.setFeatureOverride(false, for: .quantumFlow)
+        XCTAssertEqual(tm.featureOverride(for: .quantumFlow), false)
+        tm.setFeatureOverride(nil, for: .quantumFlow)
+    }
+
+    func testClearFeatureOverride() {
+        let tm = TierManager()
+        tm.setFeatureOverride(true, for: .offlineMode)
+        XCTAssertNotNil(tm.featureOverride(for: .offlineMode))
+        tm.setFeatureOverride(nil, for: .offlineMode)
+        XCTAssertNil(tm.featureOverride(for: .offlineMode))
+    }
+
+    func testHasActiveOverridesInitiallyFalse() {
+        let tm = TierManager()
+        tm.clearAllOverrides()
+        XCTAssertFalse(tm.hasActiveOverrides)
+    }
+
+    func testHasActiveOverridesTrueWhenSet() {
+        let tm = TierManager()
+        tm.clearAllOverrides()
+        tm.setFeatureOverride(true, for: .breathingOrbs)
+        XCTAssertTrue(tm.hasActiveOverrides)
+        tm.clearAllOverrides()
+    }
+
+    func testClearAllOverrides() {
+        let tm = TierManager()
+        for feature in PremiumFeature.allCases {
+            tm.setFeatureOverride(true, for: feature)
+        }
+        XCTAssertTrue(tm.hasActiveOverrides)
+        tm.clearAllOverrides()
+        XCTAssertFalse(tm.hasActiveOverrides)
+        for feature in PremiumFeature.allCases {
+            XCTAssertNil(tm.featureOverride(for: feature))
+        }
+    }
+
+    func testOverrideEnablesFeatureOnFreeTier() {
+        let tm = TierManager()
+        tm.currentTierId = MembershipTier.free.rawValue
+        // Free tier should NOT have quantum flow
+        XCTAssertFalse(tm.hasAccess(to: .quantumFlow))
+        // Override to enable it
+        tm.setFeatureOverride(true, for: .quantumFlow)
+        XCTAssertTrue(tm.hasAccess(to: .quantumFlow))
+        tm.setFeatureOverride(nil, for: .quantumFlow)
+    }
+
+    func testOverrideDisablesFeatureOnRoyalTier() {
+        let tm = TierManager()
+        tm.currentTierId = MembershipTier.royal.rawValue
+        // Royal should have soundscapes
+        XCTAssertTrue(tm.hasAccess(to: .soundscapes))
+        // Override to disable
+        tm.setFeatureOverride(false, for: .soundscapes)
+        XCTAssertFalse(tm.hasAccess(to: .soundscapes))
+        tm.setFeatureOverride(nil, for: .soundscapes)
+    }
+
+    func testEffectiveStatusNaturalEnabled() {
+        let tm = TierManager()
+        tm.currentTierId = MembershipTier.royal.rawValue
+        let status = tm.effectiveFeatureStatus(for: .soundscapes)
+        if case .natural(let enabled) = status {
+            XCTAssertTrue(enabled)
+        } else {
+            XCTFail("Expected natural status")
+        }
+    }
+
+    func testEffectiveStatusNaturalDisabled() {
+        let tm = TierManager()
+        tm.currentTierId = MembershipTier.free.rawValue
+        let status = tm.effectiveFeatureStatus(for: .quantumFlow)
+        if case .natural(let enabled) = status {
+            XCTAssertFalse(enabled)
+        } else {
+            XCTFail("Expected natural status")
+        }
+    }
+
+    func testEffectiveStatusOverriddenEnabled() {
+        let tm = TierManager()
+        tm.currentTierId = MembershipTier.free.rawValue
+        tm.setFeatureOverride(true, for: .nebulaDrift)
+        let status = tm.effectiveFeatureStatus(for: .nebulaDrift)
+        if case .overridden(let enabled) = status {
+            XCTAssertTrue(enabled)
+        } else {
+            XCTFail("Expected overridden status")
+        }
+        tm.setFeatureOverride(nil, for: .nebulaDrift)
+    }
+
+    func testEffectiveStatusOverriddenDisabled() {
+        let tm = TierManager()
+        tm.currentTierId = MembershipTier.royal.rawValue
+        tm.setFeatureOverride(false, for: .offlineMode)
+        let status = tm.effectiveFeatureStatus(for: .offlineMode)
+        if case .overridden(let enabled) = status {
+            XCTAssertFalse(enabled)
+        } else {
+            XCTFail("Expected overridden status")
+        }
+        tm.setFeatureOverride(nil, for: .offlineMode)
+    }
+
+    func testFeatureStatusIsEnabledProperty() {
+        XCTAssertTrue(TierManager.FeatureStatus.natural(enabled: true).isEnabled)
+        XCTAssertFalse(TierManager.FeatureStatus.natural(enabled: false).isEnabled)
+        XCTAssertTrue(TierManager.FeatureStatus.overridden(enabled: true).isEnabled)
+        XCTAssertFalse(TierManager.FeatureStatus.overridden(enabled: false).isEnabled)
+    }
+
+    func testFeatureStatusIsOverriddenProperty() {
+        XCTAssertFalse(TierManager.FeatureStatus.natural(enabled: true).isOverridden)
+        XCTAssertFalse(TierManager.FeatureStatus.natural(enabled: false).isOverridden)
+        XCTAssertTrue(TierManager.FeatureStatus.overridden(enabled: true).isOverridden)
+        XCTAssertTrue(TierManager.FeatureStatus.overridden(enabled: false).isOverridden)
+    }
+
+    func testOverrideKeyUniqueness() {
+        let keys = PremiumFeature.allCases.map(\.overrideKey)
+        XCTAssertEqual(Set(keys).count, keys.count, "Override keys must be unique")
+    }
+
+    func testOverrideDoesNotAffectOtherFeatures() {
+        let tm = TierManager()
+        tm.clearAllOverrides()
+        tm.currentTierId = MembershipTier.free.rawValue
+        tm.setFeatureOverride(true, for: .soundscapes)
+        // Other features should remain at their natural state
+        XCTAssertFalse(tm.hasAccess(to: .quantumFlow))
+        XCTAssertFalse(tm.hasAccess(to: .nebulaDrift))
+        XCTAssertFalse(tm.hasAccess(to: .offlineMode))
+        tm.clearAllOverrides()
+    }
+
+    func testOverrideSurvivesRoundTrip() {
+        let tm1 = TierManager()
+        tm1.setFeatureOverride(true, for: .breathingOrbs)
+        let tm2 = TierManager()
+        XCTAssertEqual(tm2.featureOverride(for: .breathingOrbs), true)
+        tm1.clearAllOverrides()
+    }
+
+    func testAllowedCountRespectsOverride() {
+        let tm = TierManager()
+        tm.currentTierId = MembershipTier.free.rawValue
+        // Free tier gets limited language pairs
+        let naturalCount = tm.allowedCount(for: .languagePairs)
+        // Override should enable unlimited (nil means it falls through to natural)
+        // But when we force enable, the count should reflect enabled state
+        tm.setFeatureOverride(true, for: .languagePairs)
+        let overriddenCount = tm.allowedCount(for: .languagePairs)
+        // If allowedCount short-circuits on override=true → Int.max
+        XCTAssertGreaterThan(overriddenCount, naturalCount)
+        tm.setFeatureOverride(nil, for: .languagePairs)
+    }
+
+    func testAllowedCountOverrideDisableReturnsZero() {
+        let tm = TierManager()
+        tm.currentTierId = MembershipTier.royal.rawValue
+        tm.setFeatureOverride(false, for: .languagePairs)
+        XCTAssertEqual(tm.allowedCount(for: .languagePairs), 0)
+        tm.setFeatureOverride(nil, for: .languagePairs)
+    }
+    #endif
 }

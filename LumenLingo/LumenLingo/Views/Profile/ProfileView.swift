@@ -11,6 +11,9 @@ struct ProfileView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(ThemeManager.self) private var themeManager
     @Environment(\.localization) private var localization
+    #if DEBUG
+    @Environment(TierManager.self) private var tierManager
+    #endif
 
     private var L: AppStrings { localization.strings }
 
@@ -91,6 +94,12 @@ struct ProfileView: View {
                 // App footer
                 appInfoSection
                     .padding(.top, 24)
+
+                #if DEBUG
+                debugPanelLink
+                    .padding(.horizontal, 16)
+                    .padding(.top, 16)
+                #endif
 
                 Spacer(minLength: 100)
             }
@@ -707,4 +716,43 @@ struct ProfileView: View {
             content()
         }
     }
+
+    // MARK: - Debug Panel (DEBUG only)
+
+    #if DEBUG
+    private var debugPanelLink: some View {
+        NavigationLink {
+            TierDebugView()
+        } label: {
+            GlassPanelWrapper {
+                HStack(spacing: 10) {
+                    Image(systemName: "ladybug.fill")
+                        .font(.system(size: 16))
+                        .foregroundStyle(.orange)
+
+                    Text("Tier Debug Panel")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundStyle(isDark ? .white.opacity(0.7) : .primary)
+
+                    Spacer()
+
+                    if tierManager.hasActiveOverrides {
+                        Text("ACTIVE")
+                            .font(.system(size: 8, weight: .heavy, design: .rounded))
+                            .tracking(0.5)
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 2)
+                            .background(Capsule().fill(.orange.opacity(0.2)))
+                            .foregroundStyle(.orange)
+                    }
+
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
+                }
+            }
+        }
+        .buttonStyle(.plain)
+    }
+    #endif
 }
