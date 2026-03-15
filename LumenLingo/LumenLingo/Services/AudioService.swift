@@ -128,6 +128,12 @@ final class AudioService {
         uiSoundsVolume = profile.uiSoundsVolume
         achievementSoundsVolume = profile.achievementSoundsVolume
         ambientVolume = profile.ambientVolume
+
+        // Auto-start soundscape if enabled and one is selected
+        if profile.ambientSoundsEnabled, let soundscape = profile.soundscapeEnum,
+           currentSoundscape == nil {
+            startSoundscape(soundscape, variantIndex: profile.soundscapeVariantIndex)
+        }
     }
 
     // MARK: - Audio Session
@@ -198,10 +204,14 @@ final class AudioService {
     }
 
     private func handleBackground() {
-        wasAmbientPlaying = ambientPlayer?.isPlaying == true
-        stopAmbient(fadeDuration: 0.3)
+        // Keep soundscape playing in the background
+        if ambientPlayer?.isPlaying == true {
+            wasAmbientPlaying = true
+        } else {
+            wasAmbientPlaying = false
+            deactivateSession()
+        }
         playerPool.forEach { $0.stop() }
-        deactivateSession()
     }
 
     private func handleForeground() {

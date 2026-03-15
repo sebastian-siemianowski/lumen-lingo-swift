@@ -41,8 +41,8 @@ final class UserProfile {
     var wordBuilderSoundsEnabled: Bool = true
     var uiSoundsEnabled: Bool = true
     var achievementSoundsEnabled: Bool = true
-    var ambientSoundsEnabled: Bool = false
-    var selectedSoundscape: String = ""
+    var ambientSoundsEnabled: Bool = true
+    var selectedSoundscape: String = "parisCafe"
     var soundscapeVariantIndex: Int = 0
     var hapticsEnabled: Bool = true
     var adaptiveAudioEnabled: Bool = true
@@ -128,8 +128,8 @@ final class UserProfile {
         wordBuilderSoundsEnabled: Bool = true,
         uiSoundsEnabled: Bool = true,
         achievementSoundsEnabled: Bool = true,
-        ambientSoundsEnabled: Bool = false,
-        selectedSoundscape: String = "",
+        ambientSoundsEnabled: Bool = true,
+        selectedSoundscape: String = "parisCafe",
         soundscapeVariantIndex: Int = 0,
         hapticsEnabled: Bool = true,
         adaptiveAudioEnabled: Bool = true,
