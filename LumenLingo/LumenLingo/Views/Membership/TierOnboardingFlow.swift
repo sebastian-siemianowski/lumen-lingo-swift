@@ -3,10 +3,11 @@ import SwiftData
 
 // MARK: - Tier Onboarding Flow
 
-/// A gorgeous 3-screen introduction to membership tiers shown on first launch.
+/// A gorgeous 4-screen introduction to membership tiers shown on first launch.
 /// Screen 1: "Learn for Free" — Free tier features with animated demo.
-/// Screen 2: "Go Further" — Pro/Elite comparison cards.
-/// Screen 3: "Try Royal for Free" — 14-day Royal Trial CTA.
+/// Screen 2: "Level Up" — Pro tier deep-dive with benefits.
+/// Screen 3: "Go Elite" — Elite tier deep-dive with benefits.
+/// Screen 4: "Try Royal for Free" — 14-day Royal Trial CTA.
 struct TierOnboardingFlow: View {
     @Environment(TierManager.self) private var tierManager
     @Environment(\.colorScheme) private var colorScheme
@@ -46,8 +47,9 @@ struct TierOnboardingFlow: View {
                 // Page content
                 TabView(selection: $currentPage) {
                     learnForFreePage.tag(0)
-                    goFurtherPage.tag(1)
-                    tryRoyalPage.tag(2)
+                    levelUpProPage.tag(1)
+                    goElitePage.tag(2)
+                    tryRoyalPage.tag(3)
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
                 .animation(.spring(response: 0.4, dampingFraction: 0.85), value: currentPage)
@@ -88,9 +90,15 @@ struct TierOnboardingFlow: View {
             ]
         case 1:
             return [
-                Color(red: 20/255, green: 10/255, blue: 60/255),
-                Color(red: 72/255, green: 12/255, blue: 120/255),
-                Color(red: 15/255, green: 8/255, blue: 40/255)
+                Color(red: 25/255, green: 10/255, blue: 55/255),
+                Color(red: 60/255, green: 15/255, blue: 90/255),
+                Color(red: 18/255, green: 8/255, blue: 42/255)
+            ]
+        case 2:
+            return [
+                Color(red: 15/255, green: 12/255, blue: 65/255),
+                Color(red: 50/255, green: 10/255, blue: 110/255),
+                Color(red: 12/255, green: 8/255, blue: 45/255)
             ]
         default:
             return [
@@ -205,20 +213,20 @@ struct TierOnboardingFlow: View {
         }
     }
 
-    // MARK: - Page 2: Go Further
+    // MARK: - Page 2: Level Up (Pro)
 
-    private var goFurtherPage: some View {
-        VStack(spacing: 20) {
-            Spacer(minLength: 8)
+    private var levelUpProPage: some View {
+        VStack(spacing: 24) {
+            Spacer()
 
-            // Hero visual — animated sparkles with radial glow
+            // Hero — bolt icon with radial glow
             ZStack {
                 Circle()
                     .fill(
                         RadialGradient(
                             colors: [
                                 Color(hex: "#a855f7").opacity(0.35),
-                                Color(hex: "#7c3aed").opacity(0.15),
+                                Color(hex: "#ec4899").opacity(0.15),
                                 .clear
                             ],
                             center: .center,
@@ -226,10 +234,10 @@ struct TierOnboardingFlow: View {
                             endRadius: 80
                         )
                     )
-                    .frame(width: 140, height: 140)
+                    .frame(width: 160, height: 160)
 
-                Image(systemName: "sparkles")
-                    .font(.system(size: 52, weight: .medium))
+                Image(systemName: "bolt.fill")
+                    .font(.system(size: 56, weight: .medium))
                     .foregroundStyle(
                         LinearGradient(
                             colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
@@ -237,11 +245,11 @@ struct TierOnboardingFlow: View {
                             endPoint: .bottomTrailing
                         )
                     )
-                    .symbolEffect(.pulse, options: .repeating)
+                    .symbolEffect(.bounce, options: .repeating.speed(0.3))
             }
 
             VStack(spacing: 8) {
-                Text("Go Further")
+                Text("Level Up")
                     .font(.system(size: 32, weight: .bold, design: .rounded))
                     .foregroundStyle(
                         LinearGradient(
@@ -251,46 +259,200 @@ struct TierOnboardingFlow: View {
                         )
                     )
 
-                Text("Every tier builds on the last — upgrade\nwhenever you're ready")
-                    .font(.system(size: 15, weight: .medium))
+                Text("Ditch the timer & unlock your first soundscape")
+                    .font(.system(size: 16, weight: .medium))
+                    .foregroundStyle(.white.opacity(0.7))
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 24)
+            }
+
+            // Price badge
+            tierPriceBadge(tier: .pro)
+
+            // Feature bullets
+            VStack(spacing: 14) {
+                featureBullet(
+                    icon: "infinity",
+                    text: "Unlimited Practice",
+                    detail: "No daily time limits — learn at your own pace",
+                    colors: [Color(hex: "#a855f7"), Color(hex: "#d946ef")]
+                )
+                featureBullet(
+                    icon: "headphones",
+                    text: "1 Soundscape",
+                    detail: "Focus-enhancing ambient audio while you learn",
+                    colors: [Color(hex: "#ec4899"), Color(hex: "#f43f5e")]
+                )
+                featureBullet(
+                    icon: "globe",
+                    text: "7 Language Pairs",
+                    detail: "More languages to explore and master",
+                    colors: [.green, .teal]
+                )
+                featureBullet(
+                    icon: "scope",
+                    text: "Breathing Orbs",
+                    detail: "Beautiful mindful learning animations",
+                    colors: [.cyan, .blue]
+                )
+            }
+            .padding(.horizontal, 32)
+
+            Spacer()
+
+            // Next page CTA
+            Button {
+                withAnimation { currentPage = 2 }
+            } label: {
+                Text("See Elite →")
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 16)
+                    .background(
+                        Capsule()
+                            .fill(
+                                LinearGradient(
+                                    colors: MembershipTier.pro.gradientColors,
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .shadow(color: Color(hex: "#a855f7").opacity(0.35), radius: 12, y: 4)
+                    )
+            }
+            .padding(.horizontal, 32)
+
+            // Continue with Free
+            Button {
+                completeOnboarding(startTrial: false)
+            } label: {
+                Text("Continue with Free")
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundStyle(.white.opacity(0.5))
+            }
+            .padding(.bottom, 16)
+        }
+    }
+
+    // MARK: - Page 3: Go Elite
+
+    private var goElitePage: some View {
+        VStack(spacing: 24) {
+            Spacer()
+
+            // Hero — sparkles icon with radial glow
+            ZStack {
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [
+                                Color(hex: "#7c3aed").opacity(0.35),
+                                Color(hex: "#06b6d4").opacity(0.15),
+                                .clear
+                            ],
+                            center: .center,
+                            startRadius: 15,
+                            endRadius: 80
+                        )
+                    )
+                    .frame(width: 160, height: 160)
+
+                Image(systemName: "sparkles")
+                    .font(.system(size: 56, weight: .medium))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [Color(hex: "#7c3aed"), Color(hex: "#06b6d4")],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .symbolEffect(.pulse, options: .repeating)
+            }
+
+            VStack(spacing: 8) {
+                HStack(spacing: 6) {
+                    Text("Go")
+                    Text("Elite")
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [Color(hex: "#7c3aed"), Color(hex: "#06b6d4")],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                }
+                .font(.system(size: 32, weight: .bold, design: .rounded))
+                .foregroundStyle(.white)
+
+                Text("Full creative suite — visuals, sounds\n& every language")
+                    .font(.system(size: 16, weight: .medium))
                     .foregroundStyle(.white.opacity(0.7))
                     .multilineTextAlignment(.center)
             }
 
-            // Vertical tier progression
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack(spacing: 14) {
-                    tierProgressionCard(
-                        tier: .pro,
-                        badge: "GREAT VALUE",
-                        tagline: "Unlock your first soundscape & ditch the timer",
-                        features: [
-                            (icon: "headphones", text: "1 Soundscape", detail: "Focus-enhancing ambient audio"),
-                            (icon: "infinity", text: "Unlimited Practice", detail: "No daily time limits"),
-                            (icon: "globe", text: "7 Language Pairs", detail: "More languages to explore"),
-                            (icon: "scope", text: "Breathing Orbs", detail: "Mindful learning animations"),
-                        ]
+            // Popular + price badge
+            HStack(spacing: 12) {
+                Text("MOST POPULAR")
+                    .font(.system(size: 11, weight: .heavy, design: .rounded))
+                    .tracking(0.8)
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(
+                        Capsule()
+                            .fill(
+                                LinearGradient(
+                                    colors: MembershipTier.elite.gradientColors,
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
                     )
 
-                    tierProgressionCard(
-                        tier: .elite,
-                        badge: "MOST POPULAR",
-                        tagline: "Full creative suite — visuals, sounds & every language",
-                        features: [
-                            (icon: "headphones", text: "8 Soundscapes", detail: "Complete ambient library"),
-                            (icon: "globe", text: "25+ Language Pairs", detail: "Every pair we offer"),
-                            (icon: "waveform.path.ecg", text: "Quantum Flow", detail: "Mesmerising particle scenes"),
-                            (icon: "cloud.fog.fill", text: "Nebula Drift", detail: "Evolving nebula backgrounds"),
-                            (icon: "wifi.slash", text: "Offline Mode", detail: "Learn anywhere, no internet needed"),
-                        ]
-                    )
-                }
-                .padding(.horizontal, 24)
+                tierPriceBadge(tier: .elite)
             }
 
-            // CTA: See Royal Trial
+            // Feature bullets
+            VStack(spacing: 14) {
+                featureBullet(
+                    icon: "headphones",
+                    text: "8 Soundscapes",
+                    detail: "Complete immersive ambient library",
+                    colors: [Color(hex: "#7c3aed"), Color(hex: "#9333ea")]
+                )
+                featureBullet(
+                    icon: "globe",
+                    text: "25+ Language Pairs",
+                    detail: "Every language pair we offer",
+                    colors: [.green, .teal]
+                )
+                featureBullet(
+                    icon: "waveform.path.ecg",
+                    text: "Quantum Flow",
+                    detail: "Mesmerising particle visualisations",
+                    colors: [.cyan, .blue]
+                )
+                featureBullet(
+                    icon: "cloud.fog.fill",
+                    text: "Nebula Drift",
+                    detail: "Stunning nebula backgrounds that evolve",
+                    colors: [Color(hex: "#8b5cf6"), Color(hex: "#a78bfa")]
+                )
+                featureBullet(
+                    icon: "wifi.slash",
+                    text: "Offline Mode",
+                    detail: "Learn anywhere, even without internet",
+                    colors: [.orange, .yellow]
+                )
+            }
+            .padding(.horizontal, 32)
+
+            Spacer()
+
+            // Next page CTA
             Button {
-                withAnimation { currentPage = 2 }
+                withAnimation { currentPage = 3 }
             } label: {
                 HStack(spacing: 8) {
                     Image(systemName: "crown.fill")
@@ -305,12 +467,12 @@ struct TierOnboardingFlow: View {
                     Capsule()
                         .fill(
                             LinearGradient(
-                                colors: [Color(hex: "#7c3aed"), Color(hex: "#a21caf")],
+                                colors: MembershipTier.elite.gradientColors,
                                 startPoint: .leading,
                                 endPoint: .trailing
                             )
                         )
-                        .shadow(color: Color(hex: "#a855f7").opacity(0.35), radius: 12, y: 4)
+                        .shadow(color: Color(hex: "#7c3aed").opacity(0.35), radius: 12, y: 4)
                 )
             }
             .padding(.horizontal, 32)
@@ -327,7 +489,7 @@ struct TierOnboardingFlow: View {
         }
     }
 
-    // MARK: - Page 3: Try Royal
+    // MARK: - Page 4: Try Royal
 
     private var tryRoyalPage: some View {
         VStack(spacing: 24) {
@@ -488,119 +650,6 @@ struct TierOnboardingFlow: View {
         }
     }
 
-    private func tierProgressionCard(
-        tier: MembershipTier,
-        badge: String,
-        tagline: String,
-        features: [(icon: String, text: String, detail: String)]
-    ) -> some View {
-        VStack(spacing: 14) {
-            // Badge + tier header
-            HStack(spacing: 10) {
-                Text(badge)
-                    .font(.system(size: 10, weight: .heavy, design: .rounded))
-                    .tracking(0.8)
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 4)
-                    .background(
-                        Capsule()
-                            .fill(
-                                LinearGradient(
-                                    colors: tier.gradientColors,
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
-                            )
-                    )
-
-                Spacer()
-
-                let priceStr = NumberFormatter.localizedString(
-                    from: tier.monthlyPrice as NSDecimalNumber,
-                    number: .currency
-                )
-                Text(priceStr + "/mo")
-                    .font(.system(size: 13, weight: .semibold, design: .rounded))
-                    .foregroundStyle(.white.opacity(0.6))
-            }
-
-            // Tier name + tagline
-            HStack(spacing: 10) {
-                Image(systemName: tier.iconName)
-                    .font(.system(size: 24, weight: .semibold))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: tier.gradientColors,
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(tier.displayName)
-                        .font(.system(size: 20, weight: .bold))
-                        .foregroundStyle(.white)
-                    Text(tagline)
-                        .font(.system(size: 13, weight: .medium))
-                        .foregroundStyle(.white.opacity(0.55))
-                        .lineLimit(2)
-                }
-
-                Spacer(minLength: 0)
-            }
-
-            Divider()
-                .overlay(
-                    LinearGradient(
-                        colors: tier.gradientColors.map { $0.opacity(0.4) },
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-
-            // Features
-            VStack(alignment: .leading, spacing: 10) {
-                ForEach(Array(features.enumerated()), id: \.offset) { _, feature in
-                    HStack(spacing: 10) {
-                        Image(systemName: feature.icon)
-                            .font(.system(size: 13, weight: .semibold))
-                            .foregroundStyle(tier.accentColor)
-                            .frame(width: 22)
-
-                        VStack(alignment: .leading, spacing: 1) {
-                            Text(feature.text)
-                                .font(.system(size: 14, weight: .semibold))
-                                .foregroundStyle(.white.opacity(0.9))
-                            Text(feature.detail)
-                                .font(.system(size: 11, weight: .medium))
-                                .foregroundStyle(.white.opacity(0.45))
-                        }
-
-                        Spacer()
-                    }
-                }
-            }
-        }
-        .padding(18)
-        .background(
-            RoundedRectangle(cornerRadius: 20)
-                .fill(.white.opacity(0.07))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 20)
-                        .strokeBorder(
-                            LinearGradient(
-                                colors: tier.gradientColors.map { $0.opacity(0.45) },
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 1
-                        )
-                )
-                .shadow(color: tier.gradientColors[0].opacity(0.2), radius: 16, y: 6)
-        )
-    }
-
     private func royalFeature(icon: String, text: String) -> some View {
         HStack(spacing: 10) {
             Image(systemName: "checkmark.circle.fill")
@@ -620,11 +669,31 @@ struct TierOnboardingFlow: View {
         }
     }
 
+    private func tierPriceBadge(tier: MembershipTier) -> some View {
+        let priceStr = NumberFormatter.localizedString(
+            from: tier.monthlyPrice as NSDecimalNumber,
+            number: .currency
+        )
+        return Text(priceStr + "/mo")
+            .font(.system(size: 13, weight: .semibold, design: .rounded))
+            .foregroundStyle(.white.opacity(0.9))
+            .padding(.horizontal, 14)
+            .padding(.vertical, 6)
+            .background(
+                Capsule()
+                    .fill(.white.opacity(0.1))
+                    .overlay(
+                        Capsule()
+                            .strokeBorder(.white.opacity(0.15), lineWidth: 1)
+                    )
+            )
+    }
+
     // MARK: - Page Indicator
 
     private var pageIndicator: some View {
         HStack(spacing: 8) {
-            ForEach(0..<3, id: \.self) { index in
+            ForEach(0..<4, id: \.self) { index in
                 Capsule()
                     .fill(
                         currentPage == index
@@ -648,7 +717,8 @@ struct TierOnboardingFlow: View {
     private func pageIndicatorColors(for index: Int) -> [Color] {
         switch index {
         case 0: return MembershipTier.free.gradientColors
-        case 1: return MembershipTier.elite.gradientColors
+        case 1: return MembershipTier.pro.gradientColors
+        case 2: return MembershipTier.elite.gradientColors
         default: return MembershipTier.royal.gradientColors
         }
     }
