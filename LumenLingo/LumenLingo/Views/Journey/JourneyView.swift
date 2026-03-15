@@ -300,32 +300,28 @@ struct JourneyView: View {
             }
         }()
 
-        return VStack(spacing: 10) {
-            HStack(spacing: 8) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 8)
-                        .fill(
-                            LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
-                        )
-                        .frame(width: 32, height: 32)
+        return HStack(spacing: 0) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(
+                        LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
+                    )
+                    .frame(width: 32, height: 32)
 
-                    Image(systemName: gameTypeIcon(type))
-                        .font(.system(size: 14))
-                        .foregroundStyle(.white)
-                }
-
-                Text(type.displayName)
-                    .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-
-                Spacer()
+                Image(systemName: gameTypeIcon(type))
+                    .font(.system(size: 14))
+                    .foregroundStyle(.white)
             }
+            .padding(.trailing, 8)
 
-            HStack(spacing: 0) {
-                statPill(value: "\(records.count)", label: L.sessions.lowercased())
-                statPill(value: formattedXP(totalScore), label: L.xp)
-                statPill(value: "\(Int(accuracy))%", label: L.accuracy.lowercased())
-            }
+            Text(type.displayName)
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .frame(width: 80, alignment: .leading)
+
+            statPill(value: "\(records.count)", label: L.sessions.lowercased())
+            statPill(value: formattedXP(totalScore), label: L.xp)
+            statPill(value: "\(Int(accuracy))%", label: L.accuracy.lowercased())
         }
         .padding(10)
         .background(
