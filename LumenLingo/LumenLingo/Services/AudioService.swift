@@ -220,6 +220,11 @@ final class AudioService {
         }
     }
 
+    /// Soundscapes ordered by category, matching the UI display order
+    private var orderedSoundscapes: [Soundscape] {
+        SoundscapeCategory.allCases.flatMap { $0.soundscapes }
+    }
+
     private func skipToNextSoundscape() {
         guard let current = currentSoundscape else { return }
         // Try next variant first
@@ -229,7 +234,7 @@ final class AudioService {
             return
         }
         // All variants exhausted — move to next soundscape, first variant
-        let all = Soundscape.allCases
+        let all = orderedSoundscapes
         guard let idx = all.firstIndex(of: current) else { return }
         let nextIdx = all.index(after: idx)
         let next = nextIdx < all.endIndex ? all[nextIdx] : all[all.startIndex]
@@ -245,7 +250,7 @@ final class AudioService {
             return
         }
         // Already at first variant — move to previous soundscape, last variant
-        let all = Soundscape.allCases
+        let all = orderedSoundscapes
         guard let idx = all.firstIndex(of: current) else { return }
         let prev = idx == all.startIndex ? all[all.index(before: all.endIndex)] : all[all.index(before: idx)]
         quickSkip(to: prev, variantIndex: prev.variants.count - 1)
