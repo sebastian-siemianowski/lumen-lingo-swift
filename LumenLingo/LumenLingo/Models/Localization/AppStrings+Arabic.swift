@@ -420,6 +420,7 @@ extension AppStrings {
         night: "ليلاً",
         needMoreData: "العب المزيد من الجلسات للحصول على تحليلات",
         upgradedExclamation: "تمت الترقية!",
+        tierChangedExclamation: "!أهلاً",
         upgradeMessagePro: "أنت تتحدث لغة التقدم — كل درس يشكّل صوتك في العالم.",
         upgradeMessageElite: "كلماتك تحمل ثقل التفاني — التميّز يصبح لغتك الأم.",
         upgradeMessageRoyal: "توّجت رحلتك بالكلمات — لغة الأساطير ملكك.",

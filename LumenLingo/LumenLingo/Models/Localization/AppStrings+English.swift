@@ -426,6 +426,7 @@ extension AppStrings {
 
         // MARK: - Tier Upgrade Celebration
         upgradedExclamation: "Upgraded!",
+        tierChangedExclamation: "Welcome!",
         upgradeMessagePro: "You speak the language of progress — every lesson shapes your voice in the world.",
         upgradeMessageElite: "Your words carry the weight of dedication — excellence is becoming your mother tongue.",
         upgradeMessageRoyal: "You've crowned your journey with words — the language of legends is yours to command.",

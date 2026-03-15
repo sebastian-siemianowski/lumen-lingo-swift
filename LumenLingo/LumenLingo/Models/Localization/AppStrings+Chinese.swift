@@ -422,6 +422,7 @@ extension AppStrings {
         night: "夜晚",
         needMoreData: "多玩几场以获取洞察",
         upgradedExclamation: "已升级！",
+        tierChangedExclamation: "欢迎！",
         upgradeMessagePro: "你说着进步的语言——每一课都在塑造你在世界上的声音。",
         upgradeMessageElite: "你的文字承载着奉献的力量——卓越正成为你的母语。",
         upgradeMessageRoyal: "你用文字为旅程加冕——传奇的语言由你掌控。",

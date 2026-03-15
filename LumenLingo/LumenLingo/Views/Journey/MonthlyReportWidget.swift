@@ -24,11 +24,12 @@ struct MonthlyReportWidget: View {
 
     private func metrics(daysAgo offset: Int, days: Int) -> MonthMetrics {
         let calendar = Calendar.current
-        let today = calendar.startOfDay(for: .now)
-        let start = calendar.date(byAdding: .day, value: -(offset + days), to: today)!
-        let end = calendar.date(byAdding: .day, value: -offset, to: today)!
+        let startOfToday = calendar.startOfDay(for: .now)
+        let start = calendar.date(byAdding: .day, value: -(offset + days), to: startOfToday)!
+        // When offset is 0 (current period), use the actual current time so today's sessions are included
+        let end: Date = offset == 0 ? .now : calendar.date(byAdding: .day, value: -offset, to: startOfToday)!
 
-        let records = allProgress.filter { $0.createdDate >= start && $0.createdDate < end }
+        let records = allProgress.filter { $0.createdDate >= start && $0.createdDate <= end }
         let totalXP = records.reduce(0) { $0 + $1.score }
         let totalCorrect = records.reduce(0) { $0 + $1.correctAnswers }
         let totalQuestions = records.reduce(0) { $0 + $1.totalQuestions }

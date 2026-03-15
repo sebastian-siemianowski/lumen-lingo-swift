@@ -93,7 +93,7 @@ final class ProgressService {
         // Update streak
         updateStreak()
 
-        // Trim to max 50 records (FIFO)
+        // Trim to max 500 records (FIFO) — enough for ~30 days of monthly report data
         trimProgressRecords()
 
         try? modelContext.save()
@@ -104,9 +104,9 @@ final class ProgressService {
             sortBy: [SortDescriptor(\.createdDate, order: .reverse)]
         )
         guard let allRecords = try? modelContext.fetch(descriptor),
-              allRecords.count > 50 else { return }
+              allRecords.count > 500 else { return }
 
-        for record in allRecords.dropFirst(50) {
+        for record in allRecords.dropFirst(500) {
             modelContext.delete(record)
         }
     }

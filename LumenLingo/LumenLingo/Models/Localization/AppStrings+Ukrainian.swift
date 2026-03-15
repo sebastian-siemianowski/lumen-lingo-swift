@@ -422,6 +422,7 @@ extension AppStrings {
         night: "Ніч",
         needMoreData: "Зіграйте більше сесій для аналітики",
         upgradedExclamation: "Покращено!",
+        tierChangedExclamation: "Ласкаво просимо!",
         upgradeMessagePro: "Ви говорите мовою прогресу — кожен урок формує ваш голос у світі.",
         upgradeMessageElite: "Ваші слова несуть вагу відданості — досконалість стає вашою рідною мовою.",
         upgradeMessageRoyal: "Ви увінчали свою подорож словами — мова легенд належить вам.",

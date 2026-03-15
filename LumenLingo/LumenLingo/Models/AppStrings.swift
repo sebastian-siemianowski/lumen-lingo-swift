@@ -434,6 +434,7 @@ struct AppStrings {
 
     // MARK: - Tier Upgrade Celebration
     let upgradedExclamation: String         // "Upgraded!"
+    let tierChangedExclamation: String      // "Tier Changed!"
     let upgradeMessagePro: String           // tier-specific linguistic celebration
     let upgradeMessageElite: String         // tier-specific linguistic celebration
     let upgradeMessageRoyal: String         // tier-specific linguistic celebration

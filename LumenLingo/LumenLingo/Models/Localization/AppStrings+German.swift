@@ -423,6 +423,7 @@ extension AppStrings {
         night: "Nacht",
         needMoreData: "Spiele mehr Sitzungen für Einblicke",
         upgradedExclamation: "Aufgestuft!",
+        tierChangedExclamation: "Willkommen!",
         upgradeMessagePro: "Du sprichst die Sprache des Fortschritts — jede Lektion formt deine Stimme in der Welt.",
         upgradeMessageElite: "Deine Worte tragen das Gewicht der Hingabe — Exzellenz wird deine Muttersprache.",
         upgradeMessageRoyal: "Du hast deine Reise mit Worten gekrönt — die Sprache der Legenden gehört dir.",

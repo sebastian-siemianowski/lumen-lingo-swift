@@ -422,6 +422,7 @@ extension AppStrings {
         night: "夜",
         needMoreData: "インサイトを得るにはもっとセッションをプレイ",
         upgradedExclamation: "アップグレード完了！",
+        tierChangedExclamation: "ようこそ！",
         upgradeMessagePro: "あなたは進歩の言葉を話しています——すべてのレッスンが世界でのあなたの声を形作ります。",
         upgradeMessageElite: "あなたの言葉には献身の重みがあります——卓越があなたの母語になりつつあります。",
         upgradeMessageRoyal: "言葉であなたの旅に冠を——伝説の言語はあなたのものです。",

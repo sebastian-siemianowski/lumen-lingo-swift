@@ -25,9 +25,10 @@ final class TierManager {
     /// True during the animated tier-change transition.
     private(set) var isTransitioning: Bool = false
 
-    /// Set when the user upgrades — drives the celebration overlay.
+    /// Set when the user changes tier — drives the celebration overlay.
     var showUpgradeCelebration: Bool = false
     var upgradedToTier: MembershipTier = .free
+    var isTierUpgrade: Bool = true
 
     // MARK: - Tier Access
 
@@ -481,10 +482,16 @@ final class TierManager {
         }
         profile?.selectedTierId = tierId
 
-        // Celebration on upgrade
-        if wasUpgrade {
+        // Celebration on any non-free tier change
+        if newTier != .free {
             upgradedToTier = newTier
-            HapticsService.shared.tierUpgrade()
+            isTierUpgrade = wasUpgrade
+            if wasUpgrade {
+                HapticsService.shared.tierUpgrade()
+            } else {
+                let feedback = UIImpactFeedbackGenerator(style: .medium)
+                feedback.impactOccurred()
+            }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { [weak self] in
                 self?.showUpgradeCelebration = true
             }

@@ -64,7 +64,6 @@ struct TierUpgradeCelebrationView: View {
             .opacity(dismissing ? 0 : 1)
         }
         .ignoresSafeArea()
-        .drawingGroup()
     }
 
     // MARK: - Card
@@ -127,8 +126,8 @@ struct TierUpgradeCelebrationView: View {
                 .scaleEffect(showName ? 1 : 0.85)
                 .padding(.top, 2)
 
-            // "Upgraded!" badge
-            Text(L.upgradedExclamation)
+            // Badge text — "Upgraded!" or "Welcome!" depending on direction
+            Text(tierManager.isTierUpgrade ? L.upgradedExclamation : L.tierChangedExclamation)
                 .font(.system(size: 13, weight: .bold, design: .rounded))
                 .tracking(1.5)
                 .textCase(.uppercase)
@@ -355,6 +354,7 @@ struct TierUpgradeCelebrationView: View {
             }
         }
         .allowsHitTesting(false)
+        .drawingGroup()
     }
 
     // MARK: - Animation Sequence
