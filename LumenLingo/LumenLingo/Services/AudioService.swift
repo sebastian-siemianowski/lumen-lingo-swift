@@ -174,9 +174,8 @@ final class AudioService {
         // Play
         center.playCommand.isEnabled = true
         center.playCommand.addTarget { [weak self] _ in
-            guard let self, let soundscape = self.currentSoundscape else { return .noActionableNowPlayingItem }
-            self.ambientPlayer?.play()
-            self.updateNowPlayingInfo(isPlaying: true)
+            guard let self, self.currentSoundscape != nil else { return .noActionableNowPlayingItem }
+            self.resumeAmbient()
             return .success
         }
 
@@ -184,8 +183,7 @@ final class AudioService {
         center.pauseCommand.isEnabled = true
         center.pauseCommand.addTarget { [weak self] _ in
             guard let self else { return .commandFailed }
-            self.ambientPlayer?.pause()
-            self.updateNowPlayingInfo(isPlaying: false)
+            self.pauseAmbient()
             return .success
         }
 
@@ -194,11 +192,9 @@ final class AudioService {
         center.togglePlayPauseCommand.addTarget { [weak self] _ in
             guard let self else { return .commandFailed }
             if self.ambientPlayer?.isPlaying == true {
-                self.ambientPlayer?.pause()
-                self.updateNowPlayingInfo(isPlaying: false)
-            } else if let soundscape = self.currentSoundscape {
-                self.ambientPlayer?.play()
-                self.updateNowPlayingInfo(isPlaying: true)
+                self.pauseAmbient()
+            } else if self.currentSoundscape != nil {
+                self.resumeAmbient()
             }
             return .success
         }
@@ -1706,6 +1702,19 @@ final class AudioService {
         case .gardenRain, .stellarMeditation: soundscape = .rainyWindow
         }
         startSoundscape(soundscape)
+    }
+
+    /// Pause ambient playback, keeping the soundscape selected so the widget stays visible.
+    func pauseAmbient() {
+        ambientPlayer?.pause()
+        updateNowPlayingInfo(isPlaying: false)
+    }
+
+    /// Resume a previously paused ambient soundscape.
+    func resumeAmbient() {
+        guard currentSoundscape != nil, ambientPlayer != nil else { return }
+        ambientPlayer?.play()
+        updateNowPlayingInfo(isPlaying: true)
     }
 
     /// Stop ambient with fade

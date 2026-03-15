@@ -63,10 +63,6 @@ struct DashboardView: View {
 
                     // Soundscape now-playing widget (Pro+ with active soundscape)
                     SoundscapeNowPlaying()
-                        .transition(.asymmetric(
-                            insertion: .move(edge: .top).combined(with: .opacity),
-                            removal: .opacity
-                        ))
 
                     // Divider
                     GlassDivider(color: .white, opacity: 0.08)
