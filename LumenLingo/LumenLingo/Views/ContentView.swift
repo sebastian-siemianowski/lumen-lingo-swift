@@ -146,6 +146,9 @@ struct ContentView: View {
         .onChange(of: languagePrefs.first?.sourceLanguage) { _, _ in
             localization.update(from: languagePrefs)
         }
+        .onChange(of: tierManager.currentTier) { _, _ in
+            validateActiveLanguagePair()
+        }
         .environment(audioService)
         .environment(hapticsService)
         .environment(contentLoader)
@@ -301,6 +304,34 @@ struct ContentView: View {
             if let found = findTabBar(in: subview) { return found }
         }
         return nil
+    }
+
+    // MARK: - Language Pair Validation
+
+    /// When the tier changes (downgrade), validate that the active language pair
+    /// is still unlocked. If not, switch to the first unlocked pair.
+    private func validateActiveLanguagePair() {
+        guard let pref = languagePrefs.first else { return }
+        let currentPair = LanguagePair(
+            source: pref.sourceLanguageEnum,
+            target: pref.targetLanguageEnum
+        )
+        guard !tierManager.isLanguagePairUnlocked(currentPair) else { return }
+
+        // Switch to the first unlocked pair
+        if let fallback = tierManager.unlockedLanguagePairs().first {
+            pref.sourceLanguage = fallback.source.rawValue
+            pref.targetLanguage = fallback.target.rawValue
+            NotificationCenter.default.post(
+                name: .languagePairAutoSwitched,
+                object: nil,
+                userInfo: [
+                    "oldPair": currentPair.displayName,
+                    "newPair": fallback.displayName,
+                    "requiredTier": currentPair.minimumTier.displayName,
+                ]
+            )
+        }
     }
 }
 

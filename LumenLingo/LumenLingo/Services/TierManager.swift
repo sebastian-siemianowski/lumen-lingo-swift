@@ -4,6 +4,7 @@ import SwiftUI
 
 extension Notification.Name {
     static let soundscapeAutoStopped = Notification.Name("soundscapeAutoStopped")
+    static let languagePairAutoSwitched = Notification.Name("languagePairAutoSwitched")
 }
 
 // MARK: - Tier Manager
@@ -125,6 +126,25 @@ final class TierManager {
     /// Mark a soundscape as previewed (once per session).
     func markSoundscapePreviewed(_ soundscape: Soundscape) {
         previewedSoundscapeIds.insert(soundscape.id)
+    }
+
+    // MARK: - Language Pair Gating
+
+    /// Returns all language pairs sorted by priority, limited by the current tier.
+    func unlockedLanguagePairs() -> [LanguagePair] {
+        let limit = allowedCount(for: .languagePairs)
+        return Array(LanguagePair.withContent.prefix(limit))
+    }
+
+    /// Check whether a specific language pair is unlocked for the current tier.
+    func isLanguagePairUnlocked(_ pair: LanguagePair) -> Bool {
+        guard let order = pair.priorityOrder else { return false }
+        return order < allowedCount(for: .languagePairs)
+    }
+
+    /// Returns the minimum tier required to unlock a given language pair.
+    func minimumTierForPair(_ pair: LanguagePair) -> MembershipTier {
+        pair.minimumTier
     }
 
     // MARK: - Sync

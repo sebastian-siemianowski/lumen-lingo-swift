@@ -326,4 +326,141 @@ final class TierManagerTests: XCTestCase {
         XCTAssertTrue(manager.hasPreviewedSoundscape(.parisCafe))
         XCTAssertFalse(manager.hasPreviewedSoundscape(.rainyWindow))
     }
+
+    // MARK: - Language Pair Priority Order
+
+    func testLanguagePairPriorityOrderIsUnique() {
+        let orders = LanguagePair.withContent.compactMap { $0.priorityOrder }
+        XCTAssertEqual(orders.count, LanguagePair.withContent.count, "All pairs must have a priority order")
+        XCTAssertEqual(Set(orders).count, orders.count, "All priority orders must be unique")
+    }
+
+    func testLanguagePairPriorityOrderCovers0Through24() {
+        let orders = Set(LanguagePair.withContent.compactMap { $0.priorityOrder })
+        for i in 0..<25 {
+            XCTAssertTrue(orders.contains(i), "Missing priority order \(i)")
+        }
+    }
+
+    func testLanguagePairWithContentHas25Pairs() {
+        XCTAssertEqual(LanguagePair.withContent.count, 25)
+    }
+
+    // MARK: - Language Pair Tier Limits
+
+    func testFreeTierUnlocksExactly3LanguagePairs() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertEqual(manager.unlockedLanguagePairs().count, 3)
+    }
+
+    func testProTierUnlocksExactly7LanguagePairs() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        XCTAssertEqual(manager.unlockedLanguagePairs().count, 7)
+    }
+
+    func testEliteTierUnlocksAll25LanguagePairs() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        XCTAssertEqual(manager.unlockedLanguagePairs().count, 25)
+    }
+
+    func testRoyalTierUnlocksAll25LanguagePairs() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        XCTAssertEqual(manager.unlockedLanguagePairs().count, 25)
+    }
+
+    func testTrialTierUnlocksAll25LanguagePairs() {
+        let manager = TierManager()
+        manager.currentTierId = "trial"
+        XCTAssertEqual(manager.unlockedLanguagePairs().count, 25)
+    }
+
+    // MARK: - Language Pair Unlock Checks
+
+    func testIsLanguagePairUnlocked_FreeUnlocksFirst3() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        // First 3 should be unlocked
+        for i in 0..<3 {
+            let pair = LanguagePair.withContent[i]
+            XCTAssertTrue(manager.isLanguagePairUnlocked(pair),
+                          "\(pair.displayName) at index \(i) should be unlocked for Free")
+        }
+        // 4th and beyond should be locked
+        for i in 3..<LanguagePair.withContent.count {
+            let pair = LanguagePair.withContent[i]
+            XCTAssertFalse(manager.isLanguagePairUnlocked(pair),
+                           "\(pair.displayName) at index \(i) should be locked for Free")
+        }
+    }
+
+    func testIsLanguagePairUnlocked_ProUnlocksFirst7() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        for i in 0..<7 {
+            let pair = LanguagePair.withContent[i]
+            XCTAssertTrue(manager.isLanguagePairUnlocked(pair),
+                          "\(pair.displayName) at index \(i) should be unlocked for Pro")
+        }
+        for i in 7..<LanguagePair.withContent.count {
+            let pair = LanguagePair.withContent[i]
+            XCTAssertFalse(manager.isLanguagePairUnlocked(pair),
+                           "\(pair.displayName) at index \(i) should be locked for Pro")
+        }
+    }
+
+    func testIsLanguagePairUnlocked_EliteUnlocksAll() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        for pair in LanguagePair.withContent {
+            XCTAssertTrue(manager.isLanguagePairUnlocked(pair),
+                          "\(pair.displayName) should be unlocked for Elite")
+        }
+    }
+
+    // MARK: - Language Pair Minimum Tier
+
+    func testFirst3PairsHaveMinimumTierFree() {
+        for i in 0..<3 {
+            let pair = LanguagePair.withContent[i]
+            XCTAssertEqual(pair.minimumTier, .free,
+                           "\(pair.displayName) at index \(i) should require Free")
+        }
+    }
+
+    func testPairs3Through6HaveMinimumTierPro() {
+        for i in 3..<7 {
+            let pair = LanguagePair.withContent[i]
+            XCTAssertEqual(pair.minimumTier, .pro,
+                           "\(pair.displayName) at index \(i) should require Pro")
+        }
+    }
+
+    func testPairs7Through24HaveMinimumTierElite() {
+        for i in 7..<25 {
+            let pair = LanguagePair.withContent[i]
+            XCTAssertEqual(pair.minimumTier, .elite,
+                           "\(pair.displayName) at index \(i) should require Elite")
+        }
+    }
+
+    // MARK: - Language Pair Content
+
+    func testFreeTierFirstPairIsEnglishSpanish() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        let unlocked = manager.unlockedLanguagePairs()
+        XCTAssertEqual(unlocked.first?.source, .english)
+        XCTAssertEqual(unlocked.first?.target, .spanish)
+    }
+
+    func testPairWithoutContentIsNotUnlocked() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        let fakePair = LanguagePair(source: .spanish, target: .arabic)
+        XCTAssertFalse(manager.isLanguagePairUnlocked(fakePair))
+    }
 }

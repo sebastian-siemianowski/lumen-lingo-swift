@@ -180,6 +180,7 @@ struct LanguageSelectionView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(TierManager.self) private var tierManager
 
     private var L: AppStrings { localization.strings }
 
@@ -189,6 +190,9 @@ struct LanguageSelectionView: View {
     @State private var selectedTarget: SupportedLanguage = .spanish
     @State private var appeared = false
     @State private var orbPhase: CGFloat = 0
+    @State private var lockedPairToShow: LanguagePair?
+    @State private var showAutoSwitchToast = false
+    @State private var autoSwitchMessage = ""
 
     private var currentPref: LanguagePreference? { languagePrefs.first }
     private var isDark: Bool { colorScheme == .dark }
@@ -209,6 +213,11 @@ struct LanguageSelectionView: View {
     private var hasChanged: Bool {
         guard let pref = currentPref else { return true }
         return pref.sourceLanguageEnum != selectedSource || pref.targetLanguageEnum != selectedTarget
+    }
+
+    private var isSelectedPairLocked: Bool {
+        let pair = LanguagePair(source: selectedSource, target: selectedTarget)
+        return !tierManager.isLanguagePairUnlocked(pair)
     }
 
     var body: some View {
@@ -254,6 +263,29 @@ struct LanguageSelectionView: View {
             }
             .sensoryFeedback(.selection, trigger: selectedSource)
             .sensoryFeedback(.selection, trigger: selectedTarget)
+            .sheet(item: $lockedPairToShow) { pair in
+                LanguagePairUpgradeSheet(pair: pair)
+            }
+            .overlay(alignment: .bottom) {
+                if showAutoSwitchToast {
+                    autoSwitchToast
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
+                        .padding(.bottom, 100)
+                }
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .languagePairAutoSwitched)) { notification in
+                if let oldPair = notification.userInfo?["oldPair"] as? String,
+                   let newPair = notification.userInfo?["newPair"] as? String,
+                   let tier = notification.userInfo?["requiredTier"] as? String {
+                    autoSwitchMessage = "\(oldPair) requires \(tier). Switched to \(newPair)."
+                    withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
+                        showAutoSwitchToast = true
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                        withAnimation { showAutoSwitchToast = false }
+                    }
+                }
+            }
         }
     }
 
@@ -486,7 +518,12 @@ struct LanguageSelectionView: View {
             withAnimation(.spring(response: 0.45, dampingFraction: 0.75)) {
                 selectedSource = lang
                 if selectedTarget == lang || !LanguagePair(source: lang, target: selectedTarget).hasContent {
-                    selectedTarget = availableTargetsFor(lang).first ?? .spanish
+                    // Prefer the first unlocked target
+                    let targets = availableTargetsFor(lang)
+                    let firstUnlocked = targets.first { target in
+                        tierManager.isLanguagePairUnlocked(LanguagePair(source: lang, target: target))
+                    }
+                    selectedTarget = firstUnlocked ?? targets.first ?? .spanish
                 }
             }
         } label: {
@@ -620,15 +657,24 @@ struct LanguageSelectionView: View {
                     spacing: 10
                 ) {
                     ForEach(availableTargets, id: \.self) { lang in
+                        let pair = LanguagePair(source: selectedSource, target: lang)
+                        let isLocked = !tierManager.isLanguagePairUnlocked(pair)
                         TargetCardView(
                             lang: lang,
                             selectedSource: selectedSource,
                             isSelected: lang == selectedTarget,
+                            isLocked: isLocked,
+                            minimumTier: isLocked ? pair.minimumTier : nil,
                             isDark: isDark
                         ) {
-                            AudioService.shared.playLanguageHover()
-                            withAnimation(.spring(response: 0.35, dampingFraction: 0.72)) {
-                                selectedTarget = lang
+                            if isLocked {
+                                HapticsService.shared.warning()
+                                lockedPairToShow = pair
+                            } else {
+                                AudioService.shared.playLanguageHover()
+                                withAnimation(.spring(response: 0.35, dampingFraction: 0.72)) {
+                                    selectedTarget = lang
+                                }
                             }
                         }
                     }
@@ -645,12 +691,17 @@ struct LanguageSelectionView: View {
 
     private var floatingCTA: some View {
         Button {
-            AudioService.shared.playLanguageConfirmed()
-            HapticsService.shared.correctAnswer()
-            withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                savePair()
+            if isSelectedPairLocked {
+                HapticsService.shared.warning()
+                lockedPairToShow = LanguagePair(source: selectedSource, target: selectedTarget)
+            } else {
+                AudioService.shared.playLanguageConfirmed()
+                HapticsService.shared.correctAnswer()
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                    savePair()
+                }
+                dismiss()
             }
-            dismiss()
         } label: {
             HStack(spacing: 12) {
                 // Mini flag pair
@@ -879,6 +930,41 @@ struct LanguageSelectionView: View {
             modelContext.insert(pref)
         }
     }
+
+    // MARK: - Auto-Switch Toast
+
+    private var autoSwitchToast: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "arrow.triangle.swap")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(.orange)
+            Text(autoSwitchMessage)
+                .font(.system(size: 13, weight: .medium))
+                .foregroundStyle(isDark ? .white.opacity(0.9) : .primary)
+                .lineLimit(2)
+                .minimumScaleFactor(0.8)
+            Spacer(minLength: 0)
+            Button {
+                withAnimation { showAutoSwitchToast = false }
+            } label: {
+                Image(systemName: "xmark")
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                .fill(.ultraThinMaterial)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .strokeBorder(.orange.opacity(0.3), lineWidth: 1)
+                )
+                .shadow(color: .black.opacity(0.15), radius: 8, y: 4)
+        )
+        .padding(.horizontal, 20)
+    }
 }
 
 // MARK: - Target Card (Extracted for Diffing)
@@ -889,6 +975,8 @@ private struct TargetCardView: View {
     let lang: SupportedLanguage
     let selectedSource: SupportedLanguage
     let isSelected: Bool
+    let isLocked: Bool
+    let minimumTier: MembershipTier?
     let isDark: Bool
     let onTap: () -> Void
 
@@ -900,30 +988,30 @@ private struct TargetCardView: View {
                     .frame(width: 32, height: 32)
                     .background(flagCircle)
                     .overlay(flagRing)
+                    .saturation(isLocked ? 0.2 : 1.0)
 
                 // Dual-line label
                 VStack(alignment: .leading, spacing: 2) {
                     Text(lang.name(in: selectedSource))
-                        .font(.footnote.weight(isSelected ? .semibold : .medium))
-                        .foregroundStyle(isSelected
-                                         ? (isDark ? .white : .indigo)
-                                         : (isDark ? .white.opacity(0.85) : Color(red: 45/255, green: 22/255, blue: 62/255)))
+                        .font(.footnote.weight(isSelected && !isLocked ? .semibold : .medium))
+                        .foregroundStyle(labelPrimary)
                         .lineLimit(1)
                         .minimumScaleFactor(0.7)
 
                     Text(lang.displayName)
                         .font(.caption2.weight(.medium))
-                        .foregroundStyle(isSelected
-                                         ? .indigo.opacity(0.7)
-                                         : (isDark ? .white.opacity(0.5) : Color(red: 140/255, green: 96/255, blue: 136/255)))
+                        .foregroundStyle(labelSecondary)
                         .lineLimit(1)
                         .minimumScaleFactor(0.7)
                 }
 
                 Spacer(minLength: 0)
 
-                // Checkmark
-                if isSelected {
+                // Lock icon or checkmark
+                if isLocked {
+                    lockBadge
+                        .transition(.scale.combined(with: .opacity))
+                } else if isSelected {
                     Image(systemName: "checkmark.circle.fill")
                         .font(.system(size: 16))
                         .symbolRenderingMode(.hierarchical)
@@ -936,8 +1024,67 @@ private struct TargetCardView: View {
             .padding(.trailing, 10)
             .padding(.vertical, 10)
             .background(cardBackground)
+            .animation(.easeInOut(duration: 0.3), value: isLocked)
         }
-        .buttonStyle(LumenCardPressStyle(accentColor: isSelected ? .indigo : .clear))
+        .buttonStyle(LumenCardPressStyle(accentColor: isSelected && !isLocked ? .indigo : .clear))
+    }
+
+    // MARK: - Lock Badge
+
+    @ViewBuilder
+    private var lockBadge: some View {
+        if let tier = minimumTier {
+            HStack(spacing: 3) {
+                Image(systemName: "lock.fill")
+                    .font(.system(size: 9, weight: .bold))
+                Text(tier.displayName)
+                    .font(.system(size: 9, weight: .bold))
+            }
+            .foregroundStyle(
+                LinearGradient(
+                    colors: tier.gradientColors,
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+            .padding(.horizontal, 6)
+            .padding(.vertical, 3)
+            .background(
+                Capsule()
+                    .fill(tier.accentColor.opacity(isDark ? 0.15 : 0.1))
+                    .overlay(
+                        Capsule()
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: tier.gradientColors.map { $0.opacity(0.3) },
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                ),
+                                lineWidth: 0.5
+                            )
+                    )
+            )
+        }
+    }
+
+    // MARK: - Label Styles
+
+    private var labelPrimary: Color {
+        if isLocked {
+            return isDark ? .white.opacity(0.4) : .secondary
+        }
+        return isSelected
+            ? (isDark ? .white : .indigo)
+            : (isDark ? .white.opacity(0.85) : Color(red: 45/255, green: 22/255, blue: 62/255))
+    }
+
+    private var labelSecondary: Color {
+        if isLocked {
+            return isDark ? .white.opacity(0.25) : .secondary.opacity(0.7)
+        }
+        return isSelected
+            ? .indigo.opacity(0.7)
+            : (isDark ? .white.opacity(0.5) : Color(red: 140/255, green: 96/255, blue: 136/255))
     }
 
     @ViewBuilder

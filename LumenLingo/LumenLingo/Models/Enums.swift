@@ -289,10 +289,11 @@ enum SupportedLanguage: String, Codable, CaseIterable, Identifiable {
 
 // MARK: - Language Pair
 
-struct LanguagePair: Equatable, Hashable, Codable {
+struct LanguagePair: Equatable, Hashable, Codable, Identifiable {
     let source: SupportedLanguage
     let target: SupportedLanguage
 
+    var id: String { key }
     var key: String { "\(source.rawValue)_\(target.rawValue)" }
 
     var displayName: String {
@@ -306,34 +307,52 @@ struct LanguagePair: Equatable, Hashable, Codable {
         }
     }
 
-    /// All language pairs that have bundled content (flashcards, grammar, wordbuilder)
+    /// All language pairs that have bundled content, sorted by popularity (priority order).
+    /// Position in this array determines unlock priority: Free gets first 3, Pro first 7, Elite+ all 25.
     static let withContent: [LanguagePair] = [
-        .init(source: .arabic, target: .english),
-        .init(source: .chinese, target: .english),
-        .init(source: .english, target: .arabic),
-        .init(source: .english, target: .chinese),
-        .init(source: .english, target: .french),
-        .init(source: .english, target: .german),
-        .init(source: .english, target: .japanese),
-        .init(source: .english, target: .polish),
-        .init(source: .english, target: .spanish),
-        .init(source: .french, target: .english),
-        .init(source: .german, target: .english),
-        .init(source: .german, target: .polish),
-        .init(source: .german, target: .spanish),
-        .init(source: .japanese, target: .english),
-        .init(source: .polish, target: .arabic),
-        .init(source: .polish, target: .chinese),
-        .init(source: .polish, target: .english),
-        .init(source: .polish, target: .french),
-        .init(source: .polish, target: .german),
-        .init(source: .polish, target: .japanese),
-        .init(source: .polish, target: .spanish),
-        .init(source: .polish, target: .ukrainian),
-        .init(source: .spanish, target: .english),
-        .init(source: .ukrainian, target: .english),
-        .init(source: .ukrainian, target: .polish),
+        // Free tier (0-2): Most popular globally
+        .init(source: .english, target: .spanish),      // 0
+        .init(source: .english, target: .french),        // 1
+        .init(source: .english, target: .german),        // 2
+        // Pro tier (3-6): Extended English pairs
+        .init(source: .english, target: .japanese),      // 3
+        .init(source: .english, target: .chinese),       // 4
+        .init(source: .english, target: .arabic),        // 5
+        .init(source: .english, target: .polish),        // 6
+        // Elite+ (7-24): Reverse pairs & regional combos
+        .init(source: .spanish, target: .english),       // 7
+        .init(source: .french, target: .english),        // 8
+        .init(source: .german, target: .english),        // 9
+        .init(source: .japanese, target: .english),      // 10
+        .init(source: .chinese, target: .english),       // 11
+        .init(source: .arabic, target: .english),        // 12
+        .init(source: .ukrainian, target: .english),     // 13
+        .init(source: .polish, target: .english),        // 14
+        .init(source: .polish, target: .spanish),        // 15
+        .init(source: .polish, target: .german),         // 16
+        .init(source: .polish, target: .french),         // 17
+        .init(source: .polish, target: .japanese),       // 18
+        .init(source: .polish, target: .chinese),        // 19
+        .init(source: .polish, target: .arabic),         // 20
+        .init(source: .polish, target: .ukrainian),      // 21
+        .init(source: .german, target: .spanish),        // 22
+        .init(source: .german, target: .polish),         // 23
+        .init(source: .ukrainian, target: .polish),      // 24
     ]
+
+    /// Zero-based position in the unlock priority list (lower = unlocked earlier).
+    /// Returns `nil` for pairs without bundled content.
+    var priorityOrder: Int? {
+        Self.withContent.firstIndex(of: self)
+    }
+
+    /// The minimum membership tier required to unlock this pair.
+    var minimumTier: MembershipTier {
+        guard let order = priorityOrder else { return .elite }
+        if order < 3  { return .free }   // First 3 are free
+        if order < 7  { return .pro }    // Next 4 unlock at Pro
+        return .elite                     // Remaining unlock at Elite
+    }
 
     /// Check if a pair has bundled content
     var hasContent: Bool {
