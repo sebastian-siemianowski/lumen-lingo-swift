@@ -10,6 +10,7 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(ThemeManager.self) private var themeManager
     @Environment(TierManager.self) private var tierManager
+    @Environment(PracticeTimeTracker.self) private var practiceTimeTracker
     @Environment(\.localization) private var localization
 
     @Query private var profiles: [UserProfile]
@@ -152,6 +153,7 @@ struct ContentView: View {
         .environment(audioService)
         .environment(hapticsService)
         .environment(contentLoader)
+        .environment(practiceTimeTracker)
     }
 
     // MARK: Route Destination

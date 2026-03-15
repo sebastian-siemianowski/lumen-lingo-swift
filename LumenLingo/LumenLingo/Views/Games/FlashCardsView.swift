@@ -15,6 +15,8 @@ struct FlashCardsView: View {
     @Environment(AudioService.self) private var audioService
     @Environment(HapticsService.self) private var hapticsService
     @Environment(ContentLoader.self) private var contentLoader
+    @Environment(TierManager.self) private var tierManager
+    @Environment(PracticeTimeTracker.self) private var practiceTracker
     @Environment(\.localization) private var localization
 
     private var L: AppStrings { localization.strings }
@@ -88,6 +90,12 @@ struct FlashCardsView: View {
     @State private var nextUnplayedCategoryId: String?
     @State private var nextUnplayedCategoryName: String?
 
+    // Practice time gating
+    @State private var showTimeBanner: Bool = false
+    @State private var showTimeExpired: Bool = false
+    @State private var bannerDismissed: Bool = false
+    @State private var showMembershipFromExpired: Bool = false
+
     private var nextCategoryAction: (() -> Void)? {
         guard let nextId = nextUnplayedCategoryId else { return nil }
         return {
@@ -112,12 +120,35 @@ struct FlashCardsView: View {
 
     var body: some View {
         ZStack {
-            if isLoading {
+            if showTimeExpired {
+                PracticeExpiredView(
+                    score: score,
+                    correctAnswers: correctCount,
+                    totalAnswered: correctCount + wrongCount,
+                    onUpgradeTap: { showMembershipFromExpired = true },
+                    onDismiss: {
+                        navigationPath.removeLast(navigationPath.count)
+                    }
+                )
+            } else if isLoading {
                 loadingView
             } else if isGameComplete {
                 gameCompleteView
             } else if let word = currentWord {
-                gameplayView(word: word)
+                ZStack(alignment: .top) {
+                    gameplayView(word: word)
+
+                    // Practice time warning banner
+                    if showTimeBanner && !bannerDismissed {
+                        PracticeTimeBanner(
+                            remainingSeconds: practiceTracker.remainingSeconds(for: tierManager.currentTier) ?? 0,
+                            onUpgradeTap: { showMembershipFromExpired = true },
+                            onDismiss: { bannerDismissed = true }
+                        )
+                        .padding(.top, 8)
+                        .zIndex(10)
+                    }
+                }
             } else {
                 emptyStateView
             }
@@ -128,10 +159,50 @@ struct FlashCardsView: View {
         .onAppear {
             hideTabBar = true
             loadContent()
+            if practiceTracker.isLimited(for: tierManager.currentTier) {
+                practiceTracker.startSession()
+            }
         }
         .onDisappear {
             hideTabBar = false
+            practiceTracker.endSession()
         }
+        .onReceive(NotificationCenter.default.publisher(for: .practiceTimeFiveMinuteWarning)) { _ in
+            guard practiceTracker.isLimited(for: tierManager.currentTier) else { return }
+            let feedback = UINotificationFeedbackGenerator()
+            feedback.notificationOccurred(.warning)
+            withAnimation(.spring(response: 0.4)) {
+                showTimeBanner = true
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .practiceTimeExpired)) { _ in
+            guard practiceTracker.isLimited(for: tierManager.currentTier) else { return }
+            // Save progress before showing expired screen
+            saveProgressBeforeExpiry()
+            withAnimation(.spring(response: 0.5)) {
+                showTimeExpired = true
+            }
+        }
+        .sheet(isPresented: $showMembershipFromExpired) {
+            NavigationStack { MembershipView() }
+        }
+    }
+
+    /// Save current game progress when time expires mid-session.
+    private func saveProgressBeforeExpiry() {
+        let timeSpent = practiceTracker.endSession()
+        guard correctCount + wrongCount > 0 else { return }
+        let progressService = ProgressService(modelContext: modelContext)
+        let result = GameSessionResult(
+            gameType: .flashCards,
+            categoryId: categoryId,
+            categoryName: categoryName,
+            score: score,
+            correctAnswers: correctCount,
+            totalQuestions: correctCount + wrongCount,
+            timeSpent: timeSpent
+        )
+        progressService.recordGameSession(result)
     }
 
     // MARK: - Loading
@@ -1015,6 +1086,9 @@ struct FlashCardsView: View {
     }
 
     private func completeGame() {
+        // Stop practice time tracking
+        let timeSpent = practiceTracker.endSession()
+
         // Save progress
         let progressService = ProgressService(modelContext: modelContext)
         let result = GameSessionResult(
@@ -1024,7 +1098,7 @@ struct FlashCardsView: View {
             score: score,
             correctAnswers: correctCount,
             totalQuestions: words.count,
-            timeSpent: 0
+            timeSpent: timeSpent
         )
         progressService.recordGameSession(result)
 

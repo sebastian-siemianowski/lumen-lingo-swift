@@ -305,7 +305,7 @@
 
 ---
 
-## Epic 4: Practice Time Gating
+## Epic 4: Practice Time Gating ✅
 
 ### Story 4.1 — Enforce Daily Practice Time Limit for Free Tier
 
@@ -321,15 +321,15 @@
 - When time expires, gracefully end the session with a summary.
 
 **Subtasks:**
-- [ ] 4.1.1 — Create `PracticeTimeTracker` service: tracks cumulative daily practice seconds.
-- [ ] 4.1.2 — `PracticeTimeTracker.remainingTime(for tier:) -> TimeInterval?` — returns nil for unlimited tiers.
-- [ ] 4.1.3 — Store daily usage in `UserDefaults` keyed by date string (ISO 8601 date only).
-- [ ] 4.1.4 — Reset counter at midnight local time (use `Calendar.current.startOfDay`).
-- [ ] 4.1.5 — Start tracking on game session start; pause on app background; resume on foreground.
-- [ ] 4.1.6 — Only count time when user is actively in a game view (not menus/settings).
-- [ ] 4.1.7 — Add unit test: accumulate 1800 seconds → `remainingTime` returns 0 for free tier.
-- [ ] 4.1.8 — Add unit test: pro tier → `remainingTime` always returns nil.
-- [ ] 4.1.9 — Add unit test: counter resets after midnight.
+- [x] 4.1.1 — Create `PracticeTimeTracker` service: tracks cumulative daily practice seconds.
+- [x] 4.1.2 — `PracticeTimeTracker.remainingTime(for tier:) -> TimeInterval?` — returns nil for unlimited tiers.
+- [x] 4.1.3 — Store daily usage in `UserDefaults` keyed by date string (ISO 8601 date only).
+- [x] 4.1.4 — Reset counter at midnight local time (use `Calendar.current.startOfDay`).
+- [x] 4.1.5 — Start tracking on game session start; pause on app background; resume on foreground.
+- [x] 4.1.6 — Only count time when user is actively in a game view (not menus/settings).
+- [x] 4.1.7 — Add unit test: accumulate 1800 seconds → `remainingTime` returns 0 for free tier.
+- [x] 4.1.8 — Add unit test: pro tier → `remainingTime` always returns nil.
+- [x] 4.1.9 — Add unit test: counter resets after midnight.
 
 ---
 
@@ -347,14 +347,14 @@
 - Banner does not appear for unlimited tiers.
 
 **Subtasks:**
-- [ ] 4.2.1 — Create `PracticeTimeBanner` view with countdown text and CTA button.
-- [ ] 4.2.2 — Add `.transition(.move(edge: .top).combined(with: .opacity))` for entrance.
-- [ ] 4.2.3 — Add swipe-up `DragGesture` to dismiss.
-- [ ] 4.2.4 — `PracticeTimeTracker` publishes `fiveMinuteWarning` notification when threshold crossed.
-- [ ] 4.2.5 — Only fire warning once per session (not repeatedly if user navigates away and back).
-- [ ] 4.2.6 — Add gentle haptic (notification info) when banner appears.
-- [ ] 4.2.7 — Update countdown text every 60 seconds (not every second — avoid performance drain).
-- [ ] 4.2.8 — Add snapshot test for banner in both themes.
+- [x] 4.2.1 — Create `PracticeTimeBanner` view with countdown text and CTA button.
+- [x] 4.2.2 — Add `.transition(.move(edge: .top).combined(with: .opacity))` for entrance.
+- [x] 4.2.3 — Add swipe-up `DragGesture` to dismiss.
+- [x] 4.2.4 — `PracticeTimeTracker` publishes `fiveMinuteWarning` notification when threshold crossed.
+- [x] 4.2.5 — Only fire warning once per session (not repeatedly if user navigates away and back).
+- [x] 4.2.6 — Add gentle haptic (notification info) when banner appears.
+- [x] 4.2.7 — Update countdown text every 60 seconds (not every second — avoid performance drain).
+- [ ] 4.2.8 — Add snapshot test for banner in both themes. (deferred — requires snapshot testing infrastructure)
 
 ---
 
@@ -372,15 +372,15 @@
 - Game entry points show "Daily limit reached" state.
 
 **Subtasks:**
-- [ ] 4.3.1 — Create `PracticeExpiredView` with stats summary, countdown, and upgrade CTA.
-- [ ] 4.3.2 — Calculate time until midnight: `Calendar.current.nextDate(after: .now, matching: DateComponents(hour: 0, minute: 0), matchingPolicy: .nextTime)`.
-- [ ] 4.3.3 — On timer expiry: let current question finish, then navigate to `PracticeExpiredView`.
-- [ ] 4.3.4 — Save session results before showing expired screen (don't lose progress).
-- [ ] 4.3.5 — In game entry points (`DashboardView`), check `PracticeTimeTracker.isExpired` — if true, show disabled state.
-- [ ] 4.3.6 — Disabled game buttons show "Resets at [time]" label instead of "Play".
-- [ ] 4.3.7 — Add confetti/celebration animation for XP earned in the expired screen.
-- [ ] 4.3.8 — Add unit test: mid-question expiry → question completes → expired screen.
-- [ ] 4.3.9 — Add unit test: game buttons disabled when expired, re-enabled after midnight reset.
+- [x] 4.3.1 — Create `PracticeExpiredView` with stats summary, countdown, and upgrade CTA.
+- [x] 4.3.2 — Calculate time until midnight: `Calendar.current.nextDate(after: .now, matching: DateComponents(hour: 0, minute: 0), matchingPolicy: .nextTime)`.
+- [x] 4.3.3 — On timer expiry: let current question finish, then navigate to `PracticeExpiredView`.
+- [x] 4.3.4 — Save session results before showing expired screen (don't lose progress).
+- [x] 4.3.5 — In game entry points (`DashboardView`), check `PracticeTimeTracker.isExpired` — if true, show disabled state.
+- [x] 4.3.6 — Disabled game buttons show "Resets at [time]" label instead of "Play".
+- [x] 4.3.7 — Add confetti/celebration animation for XP earned in the expired screen.
+- [ ] 4.3.8 — Add unit test: mid-question expiry → question completes → expired screen. (deferred — requires UI testing infrastructure)
+- [ ] 4.3.9 — Add unit test: game buttons disabled when expired, re-enabled after midnight reset. (deferred — requires UI testing infrastructure)
 
 ---
 
@@ -397,13 +397,13 @@
 - Ring is not shown for unlimited tiers (replaced with an infinity icon).
 
 **Subtasks:**
-- [ ] 4.4.1 — Create `PracticeTimeRing` view: circular progress with dynamic color.
-- [ ] 4.4.2 — Read from `PracticeTimeTracker.usedMinutes` and `totalMinutes`.
-- [ ] 4.4.3 — Color logic: `progress < 0.5 ? .green : progress < 0.75 ? .yellow : .red`.
-- [ ] 4.4.4 — For unlimited tiers: show `Image(systemName: "infinity")` with tier gradient.
-- [ ] 4.4.5 — Place in dashboard header area, next to the greeting.
-- [ ] 4.4.6 — Add pulse animation when under 5 minutes remaining.
-- [ ] 4.4.7 — Add unit test: verify color transitions at exact thresholds.
+- [x] 4.4.1 — Create `PracticeTimeRing` view: circular progress with dynamic color.
+- [x] 4.4.2 — Read from `PracticeTimeTracker.usedMinutes` and `totalMinutes`.
+- [x] 4.4.3 — Color logic: `progress < 0.5 ? .green : progress < 0.75 ? .yellow : .red`.
+- [x] 4.4.4 — For unlimited tiers: show `Image(systemName: "infinity")` with tier gradient.
+- [x] 4.4.5 — Place in dashboard header area, next to the greeting.
+- [x] 4.4.6 — Add pulse animation when under 5 minutes remaining.
+- [x] 4.4.7 — Add unit test: verify color transitions at exact thresholds.
 
 ---
 

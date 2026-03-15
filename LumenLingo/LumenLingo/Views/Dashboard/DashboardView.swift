@@ -10,6 +10,8 @@ import SwiftData
 struct DashboardView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(TierManager.self) private var tierManager
+    @Environment(PracticeTimeTracker.self) private var practiceTracker
 
     @Query private var profiles: [UserProfile]
     @Query private var languagePrefs: [LanguagePreference]
@@ -21,6 +23,7 @@ struct DashboardView: View {
 
     @State private var isHeaderCollapsed = false
     @State private var showLanguageSheet = false
+    @State private var showMembershipSheet = false
     @State private var fogBreath: CGFloat = 0
     @State private var adventureIconPulse: CGFloat = 0
 
@@ -82,6 +85,14 @@ struct DashboardView: View {
         .sheet(isPresented: $showLanguageSheet) {
             LanguageSelectionView()
         }
+        .sheet(isPresented: $showMembershipSheet) {
+            NavigationStack { MembershipView() }
+        }
+    }
+
+    /// Whether practice time has expired and games should show a disabled state.
+    private var isPracticeExpired: Bool {
+        practiceTracker.isLimited(for: tierManager.currentTier) && practiceTracker.isExpired
     }
 
     // MARK: - Language Selector
@@ -165,6 +176,9 @@ struct DashboardView: View {
                 }
 
                 Spacer()
+
+                // Practice time ring
+                PracticeTimeRing()
 
                 if !isHeaderCollapsed {
                     Button {
@@ -418,6 +432,12 @@ struct DashboardView: View {
                     navigationPath: $navigationPath
                 )
             }
+            .allowsHitTesting(!isPracticeExpired)
+            .overlay {
+                if isPracticeExpired {
+                    practiceExpiredOverlay
+                }
+            }
         }
     }
 
@@ -588,6 +608,70 @@ struct DashboardView: View {
             navigationPath.append(AppRoute.grammarGame(categoryId: categoryId))
         case .wordBuilder:
             navigationPath.append(AppRoute.wordBuilderGame(categoryId: categoryId))
+        }
+    }
+
+    // MARK: - Practice Expired Overlay
+
+    private var practiceExpiredOverlay: some View {
+        VStack(spacing: 16) {
+            Spacer()
+
+            VStack(spacing: 14) {
+                ZStack {
+                    Circle()
+                        .fill(Color(hex: "#667eea").opacity(0.15))
+                        .frame(width: 56, height: 56)
+
+                    Image(systemName: "clock.badge.checkmark")
+                        .font(.system(size: 24, weight: .semibold))
+                        .foregroundStyle(Color(hex: "#667eea"))
+                }
+
+                Text("Daily Limit Reached")
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundStyle(isDark ? .white : .primary)
+
+                Text("Resets in \(practiceTracker.resetCountdownDisplay)")
+                    .font(.system(size: 14))
+                    .foregroundStyle(.secondary)
+
+                Button {
+                    showMembershipSheet = true
+                } label: {
+                    HStack(spacing: 6) {
+                        Image(systemName: "infinity")
+                            .font(.system(size: 13, weight: .bold))
+                        Text("Go Unlimited")
+                            .font(.system(size: 13, weight: .bold))
+                    }
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
+                    .background(
+                        Capsule()
+                            .fill(
+                                LinearGradient(
+                                    colors: [Color(hex: "#8b5cf6"), Color(hex: "#d946ef")],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                    )
+                }
+            }
+            .padding(24)
+            .frame(maxWidth: .infinity)
+            .background(
+                RoundedRectangle(cornerRadius: 22)
+                    .fill(.ultraThinMaterial)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 22)
+                            .strokeBorder(isDark ? .white.opacity(0.1) : .black.opacity(0.06), lineWidth: 1)
+                    )
+            )
+
+            Spacer()
         }
     }
 }
