@@ -271,6 +271,7 @@ extension AppStrings {
         unlockFullPotential: "أطلق العنان لإمكاناتك الكاملة",
         ultimateExperience: "التجربة المطلقة",
         currentPlan: "الخطة الحالية",
+        getStarted: "ابدأ الآن",
         startPro: "ابدأ Pro",
         upgradeToElite: "ترقية إلى Elite",
         ascendToRoyal: "الارتقاء إلى Royal",

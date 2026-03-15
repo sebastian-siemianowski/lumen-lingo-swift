@@ -8,6 +8,7 @@ struct MembershipView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
     @State private var showComparison = false
+    @State private var selectedTierId: String = "free"
 
     private var L: AppStrings { localization.strings }
     private var isDark: Bool { colorScheme == .dark }
@@ -100,7 +101,8 @@ struct MembershipView: View {
             ForEach(Array(tiers.enumerated()), id: \.element.id) { index, tier in
                 TierCardView(
                     tier: tier,
-                    index: index
+                    index: index,
+                    selectedTierId: $selectedTierId
                 )
             }
         }
@@ -208,10 +210,25 @@ struct MembershipView: View {
         let cta: String
         let isCurrent: Bool
         let isHighlighted: Bool
+        var badgeText: String? = nil
     }
 
     private var tiers: [TierData] {
         [
+            TierData(
+                id: "trial", name: "Royal Trial", icon: "gift.fill",
+                gradientColors: [Color(hex: "#fbbf24"), Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+                priceMonthly: 0,
+                tagline: "2 weeks of Royal, on us",
+                benefits: [
+                    ("Everything in Royal", "ultimate"),
+                    ("All 12 Soundscapes", "ultimate"),
+                    ("All visual themes", "ultimate"),
+                    ("Reverts to Free after 14 days", "limited")
+                ],
+                cta: "Start Free Trial", isCurrent: false, isHighlighted: false,
+                badgeText: "2 WEEKS FREE"
+            ),
             TierData(
                 id: "free", name: L.starter, icon: "globe",
                 gradientColors: [Color(hex: "#94a3b8"), Color(hex: "#64748b")],
@@ -220,10 +237,9 @@ struct MembershipView: View {
                 benefits: [
                     ("3 language pairs", "core"),
                     ("All game modes", "core"),
-                    ("30 min/day practice", "limited"),
-                    ("Basic analytics", "limited")
+                    ("30 min/day practice", "limited")
                 ],
-                cta: L.currentPlan, isCurrent: true, isHighlighted: false
+                cta: L.getStarted, isCurrent: selectedTierId == "free", isHighlighted: false
             ),
             TierData(
                 id: "pro", name: L.pro, icon: "bolt.fill",
@@ -233,11 +249,11 @@ struct MembershipView: View {
                 benefits: [
                     ("7 language pairs", "premium"),
                     ("Unlimited practice", "premium"),
-                    ("Advanced analytics", "premium"),
-                    ("3 Breathing Orbs", "delight"),
+                    ("1 Soundscape", "delight"),
+                    ("6 Breathing Orbs", "delight"),
                     ("Offline access", "premium")
                 ],
-                cta: L.startPro, isCurrent: false, isHighlighted: false
+                cta: L.startPro, isCurrent: selectedTierId == "pro", isHighlighted: false
             ),
             TierData(
                 id: "elite", name: L.elite, icon: "sparkles",
@@ -247,11 +263,11 @@ struct MembershipView: View {
                 benefits: [
                     ("Everything in Pro", "inherit"),
                     ("25+ language pairs", "exclusive"),
+                    ("8 Soundscapes", "exclusive"),
                     ("4 Quantum scenes", "exclusive"),
-                    ("4 Nebula presets", "exclusive"),
-                    ("Early feature access", "exclusive")
+                    ("4 Nebula presets", "exclusive")
                 ],
-                cta: L.upgradeToElite, isCurrent: false, isHighlighted: true
+                cta: L.upgradeToElite, isCurrent: selectedTierId == "elite", isHighlighted: true
             ),
             TierData(
                 id: "royal", name: L.royal, icon: "crown.fill",
@@ -260,11 +276,11 @@ struct MembershipView: View {
                 tagline: L.ultimateExperience,
                 benefits: [
                     ("Everything in Elite", "inherit"),
-                    ("6 Breathing Orbs (all)", "ultimate"),
+                    ("All 12 Soundscapes", "ultimate"),
                     ("6 Quantum scenes", "ultimate"),
                     ("6 Nebula presets", "ultimate")
                 ],
-                cta: L.ascendToRoyal, isCurrent: false, isHighlighted: false
+                cta: L.ascendToRoyal, isCurrent: selectedTierId == "royal", isHighlighted: false
             )
         ]
     }
@@ -278,11 +294,10 @@ struct MembershipView: View {
         .init(name: "Language Pairs", values: ["3 pairs", "12 pairs", "25 pairs", "25 pairs"]),
         .init(name: "Practice Time", values: ["30 min/day", "Unlimited", "Unlimited", "Unlimited"]),
         .init(name: "Game Modes", values: ["All 3", "All 3", "All 3", "All 3"]),
-        .init(name: "Progress Tracking", values: ["Basic", "Advanced", "Advanced", "Advanced"]),
+        .init(name: "Soundscapes", values: ["—", "1", "8", "All 12"]),
         .init(name: "Breathing Orbs", values: ["—", "6 schemes", "6 schemes", "6 schemes"]),
         .init(name: "Quantum Flow", values: ["—", "—", "4 scenes", "6 scenes"]),
         .init(name: "Nebula Drift", values: ["—", "—", "4 presets", "6 presets"]),
-        .init(name: "Animation Controls", values: ["—", "—", "Full", "Full"]),
         .init(name: "Offline Mode", values: ["—", "✓", "✓", "✓"]),
     ]
 }
@@ -297,12 +312,17 @@ struct TierCardView: View {
 
     let tier: MembershipView.TierData
     let index: Int
+    @Binding var selectedTierId: String
 
     @State private var isHovered = false
     @State private var ctaPressed = false
 
     private var price: Double {
         tier.priceMonthly
+    }
+
+    private var isSelected: Bool {
+        selectedTierId == tier.id
     }
 
     var body: some View {
@@ -335,7 +355,23 @@ struct TierCardView: View {
 
                 Spacer()
 
-                if tier.isHighlighted {
+                if let badge = tier.badgeText {
+                    Text(badge)
+                        .font(.system(size: 9, weight: .heavy))
+                        .tracking(1)
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(
+                            Capsule()
+                                .fill(
+                                    LinearGradient(
+                                        colors: tier.gradientColors,
+                                        startPoint: .leading, endPoint: .trailing
+                                    )
+                                )
+                        )
+                } else if tier.isHighlighted {
                     Text(L.popular)
                         .font(.system(size: 9, weight: .heavy))
                         .tracking(1)
@@ -376,7 +412,7 @@ struct TierCardView: View {
                                 endPoint: .trailing
                             )
                         )
-                    Text("/\(L.perMonth)")
+                    Text(L.perMonth)
                         .font(.subheadline)
                         .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 }
@@ -397,7 +433,13 @@ struct TierCardView: View {
             }
 
             // CTA button
-            Text(tier.cta)
+            HStack(spacing: 6) {
+                if isSelected {
+                    Image(systemName: "checkmark.circle.fill")
+                        .font(.caption)
+                }
+                Text(isSelected ? L.currentPlan : tier.cta)
+            }
                 .font(.subheadline.bold())
                 .foregroundStyle(.white)
                 .frame(maxWidth: .infinity)
@@ -405,7 +447,7 @@ struct TierCardView: View {
                 .background(
                     Capsule()
                         .fill(
-                            tier.isCurrent
+                            isSelected
                                 ? AnyShapeStyle(.white.opacity(0.08))
                                 : AnyShapeStyle(
                                     LinearGradient(
@@ -426,22 +468,21 @@ struct TierCardView: View {
                 .animation(.spring(response: 0.25, dampingFraction: 0.55), value: ctaPressed)
                 .contentShape(Capsule())
                 .onTapGesture {
-                    guard !tier.isCurrent else { return }
-                    // Press-in
+                    guard !isSelected else { return }
                     withAnimation(.spring(response: 0.08, dampingFraction: 0.80)) {
                         ctaPressed = true
                     }
                     let g = UIImpactFeedbackGenerator(style: .medium)
                     g.impactOccurred()
                     AudioService.shared.playTierSelect()
-                    // Spring-back
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
                         withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
                             ctaPressed = false
+                            selectedTierId = tier.id
                         }
                     }
                 }
-                .opacity(tier.isCurrent ? 0.5 : 1.0)
+                .opacity(isSelected ? 0.5 : 1.0)
         }
         .padding(18)
         .background(
@@ -450,14 +491,14 @@ struct TierCardView: View {
                 .overlay(
                     RoundedRectangle(cornerRadius: 22)
                         .strokeBorder(
-                            tier.isHighlighted
+                            (tier.isHighlighted || isSelected)
                                 ? LinearGradient(colors: tier.gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing)
                                 : LinearGradient(colors: [.white.opacity(0.06)], startPoint: .top, endPoint: .bottom),
-                            lineWidth: tier.isHighlighted ? 1.5 : 1
+                            lineWidth: (tier.isHighlighted || isSelected) ? 1.5 : 1
                         )
                 )
                 .shadow(
-                    color: tier.isHighlighted ? tier.gradientColors.first!.opacity(0.2) : .clear,
+                    color: (tier.isHighlighted || isSelected) ? tier.gradientColors.first!.opacity(0.2) : .clear,
                     radius: 20, y: 8
                 )
         )

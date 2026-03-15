@@ -280,6 +280,7 @@ struct AppStrings {
     let unlockFullPotential: String
     let ultimateExperience: String
     let currentPlan: String
+    let getStarted: String
     let startPro: String
     let upgradeToElite: String
     let ascendToRoyal: String

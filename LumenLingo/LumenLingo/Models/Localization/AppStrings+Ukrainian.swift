@@ -273,6 +273,7 @@ extension AppStrings {
         unlockFullPotential: "Розкрийте свій повний потенціал",
         ultimateExperience: "Найкращий досвід",
         currentPlan: "Поточний план",
+        getStarted: "Розпочати",
         startPro: "Почати Pro",
         upgradeToElite: "Перейти на Elite",
         ascendToRoyal: "Піднятися до Royal",

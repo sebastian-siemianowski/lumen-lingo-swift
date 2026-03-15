@@ -274,6 +274,7 @@ extension AppStrings {
         unlockFullPotential: "Libérez tout votre potentiel",
         ultimateExperience: "L'expérience ultime",
         currentPlan: "Forfait actuel",
+        getStarted: "Commencer",
         startPro: "Commencer Pro",
         upgradeToElite: "Passer à Elite",
         ascendToRoyal: "Accéder à Royal",

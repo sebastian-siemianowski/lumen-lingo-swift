@@ -273,6 +273,7 @@ extension AppStrings {
         unlockFullPotential: "あなたの可能性を最大限に",
         ultimateExperience: "究極の体験",
         currentPlan: "現在のプラン",
+        getStarted: "始める",
         startPro: "Pro を始める",
         upgradeToElite: "Elite にアップグレード",
         ascendToRoyal: "Royal に昇格",

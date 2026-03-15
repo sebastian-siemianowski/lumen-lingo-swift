@@ -273,6 +273,7 @@ extension AppStrings {
         unlockFullPotential: "释放你的全部潜力",
         ultimateExperience: "终极体验",
         currentPlan: "当前套餐",
+        getStarted: "立即开始",
         startPro: "开通 Pro",
         upgradeToElite: "升级至 Elite",
         ascendToRoyal: "升级至 Royal",

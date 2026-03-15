@@ -17,7 +17,6 @@
 		07B712391A300AD45EF1E676 /* ProgressServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72117EE3770443D8D6B3895E /* ProgressServiceTests.swift */; };
 		08218D64D6DE01F7EC3D1CF0 /* wordbuilder_polish_german.json in Resources */ = {isa = PBXBuildFile; fileRef = A708414AAB15B2AD16D073EF /* wordbuilder_polish_german.json */; };
 		0AE69303D99B0260AF04748A /* grammar_ukrainian_english.json in Resources */ = {isa = PBXBuildFile; fileRef = DD1B56548F0ECE743038D67E /* grammar_ukrainian_english.json */; };
-		0FB4AB4039AF8387966B22B7 /* Paris-Café-2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EF06703DE5AAF7D2C7D0EAAB /* Paris-Café-2.m4a */; };
 		0FB9ECCFE323936072D44022 /* LagoonNebulaPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = A46D9B996CC8601EBBCCB4AA /* LagoonNebulaPreset.metal */; };
 		104BAF772F08F7567C8358CE /* flashcards_english_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 2378260414FE146694223E05 /* flashcards_english_spanish.json */; };
 		158A5B1BCC24775744979354 /* MetalCosmicRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BB8A676728B666DFB159B8 /* MetalCosmicRenderer.swift */; };
@@ -70,6 +69,7 @@
 		61636958291765DA59A50806 /* grammar_polish_french.json in Resources */ = {isa = PBXBuildFile; fileRef = 63AD997B04058E2091CC562A /* grammar_polish_french.json */; };
 		637BD9450D9DA97AB7A865D4 /* FlashCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E4874F32867EAD578F46A /* FlashCardsView.swift */; };
 		661A719FB70972A35AD6E977 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8193CDA27C5F43BF910C5 /* LanguageSelectionView.swift */; };
+		6633EEEC1516F35A75D8040B /* Paris-Café-1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 262EF23FC7FDF13661748EC8 /* Paris-Café-1.m4a */; };
 		68219C8D587F4836A58D645C /* wordbuilder_spanish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 21F05258ABE2A1A6CEA8E742 /* wordbuilder_spanish_english.json */; };
 		683883509B146B763360F6A8 /* grammar_polish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FC0C0DB194CFC6D81344A4F /* grammar_polish_english.json */; };
 		686CCE8D7420E55A83113C58 /* WordBuilderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900EAC3D8E68D78ADF09620 /* WordBuilderViewModel.swift */; };
@@ -93,6 +93,7 @@
 		845F96740BB1219565F758AB /* AppStrings+Japanese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A93ED414D0470C87039F9 /* AppStrings+Japanese.swift */; };
 		85173516305E3F46D20A615C /* flashcards_french_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 72DC7028C7F8CC902DD56A80 /* flashcards_french_english.json */; };
 		854C496AA558DC855EBF27DC /* grammar_english_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = FCAA7717377E15C1E4F98955 /* grammar_english_japanese.json */; };
+		865409E249B90575BD70DBCD /* Paris-Café-2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 321A6A5269762B9A3953A31C /* Paris-Café-2.m4a */; };
 		86AE2EA2C07C7B04D3C1AF95 /* flashcards_ukrainian_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = A55C2F133F96E1EF1211904B /* flashcards_ukrainian_polish.json */; };
 		89075F39060121315E6E3CEB /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D0AFE49B5144D47E971846 /* CategoriesView.swift */; };
 		8E550F02E987B6C8C684D34D /* Venice-Canal-Morning.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5CE6659F8979C9D0010BE085 /* Venice-Canal-Morning.m4a */; };
@@ -150,7 +151,6 @@
 		CE535ED079A9AFF89EB06028 /* SpiralHaloStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = E78D46284A32A5BAEDE26A2A /* SpiralHaloStars.metal */; };
 		D00AB6E60F7E92B4B1868126 /* JourneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00238DB4631FF527FE002203 /* JourneyView.swift */; };
 		D0806A3443CF384745B8EC43 /* grammar_spanish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = D41E1DDF3573205870644CDF /* grammar_spanish_english.json */; };
-		D0ACB6741A6F80A8DA88A00A /* Paris-Café-1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 21767052AE35297AE29B1015 /* Paris-Café-1.m4a */; };
 		D2CB9DACCE1C173522A816D0 /* QuantumFlowPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5B38FAED4DFE3C66C33071BE /* QuantumFlowPreset.metal */; };
 		D6C1FF69FC5BCBFCE19E86D4 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766F4844525AE0B8F693647 /* LocalizationManager.swift */; };
 		D944A99D79DAE4DB61D4A0CA /* AndromedaStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = 16CBC7FA67305C12DB95778D /* AndromedaStars.metal */; };
@@ -219,13 +219,13 @@
 		1EF7640DC44203CE5639A144 /* wordbuilder_german_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_german_spanish.json; sourceTree = "<group>"; };
 		1FB2375AD490242C723FC30E /* wordbuilder_polish_ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_ukrainian.json; sourceTree = "<group>"; };
 		1FC0C0DB194CFC6D81344A4F /* grammar_polish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_english.json; sourceTree = "<group>"; };
-		21767052AE35297AE29B1015 /* Paris-Café-1.m4a */ = {isa = PBXFileReference; path = "Paris-Café-1.m4a"; sourceTree = "<group>"; };
 		21F05258ABE2A1A6CEA8E742 /* wordbuilder_spanish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_spanish_english.json; sourceTree = "<group>"; };
 		2378260414FE146694223E05 /* flashcards_english_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_spanish.json; sourceTree = "<group>"; };
 		2426F02F8E3AB9B6634761D6 /* flashcards_polish_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_arabic.json; sourceTree = "<group>"; };
 		2489FCF457D3A3F60F75B983 /* AppStrings+Arabic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Arabic.swift"; sourceTree = "<group>"; };
 		2516A4527A7F21A7FD49DA48 /* wordbuilder_english_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_polish.json; sourceTree = "<group>"; };
 		253ACC5CC16E7092400D4079 /* flashcards_arabic_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_arabic_english.json; sourceTree = "<group>"; };
+		262EF23FC7FDF13661748EC8 /* Paris-Café-1.m4a */ = {isa = PBXFileReference; path = "Paris-Café-1.m4a"; sourceTree = "<group>"; };
 		2A37D0B6CA9D686E2F337F28 /* StarburstStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = StarburstStars.metal; sourceTree = "<group>"; };
 		2B7E4874F32867EAD578F46A /* FlashCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardsView.swift; sourceTree = "<group>"; };
 		2B970F6867A17435C10D64B2 /* Amazon-Rainforest.m4a */ = {isa = PBXFileReference; path = "Amazon-Rainforest.m4a"; sourceTree = "<group>"; };
@@ -234,6 +234,7 @@
 		30901FAF98191E36051506A8 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		30D601D8409F9C3374AE838F /* wordbuilder_german_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_german_english.json; sourceTree = "<group>"; };
 		310DB5BD274A6F504FBCFFC1 /* ProgressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressService.swift; sourceTree = "<group>"; };
+		321A6A5269762B9A3953A31C /* Paris-Café-2.m4a */ = {isa = PBXFileReference; path = "Paris-Café-2.m4a"; sourceTree = "<group>"; };
 		336042DB300C9D556EC563AD /* wordbuilder_polish_chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_chinese.json; sourceTree = "<group>"; };
 		354EAD059D0A762F62E2B0AF /* grammar_chinese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_chinese_english.json; sourceTree = "<group>"; };
 		35E3C7A79DB8469686B2712B /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
@@ -359,7 +360,6 @@
 		EB5EA1D2487A9E973C303FE8 /* SolarAuroraStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SolarAuroraStars.metal; sourceTree = "<group>"; };
 		EBB9411DB022EF3C046C2B75 /* AppStrings+Polish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Polish.swift"; sourceTree = "<group>"; };
 		EE209D9EF404AA5D75D6D840 /* grammar_french_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_french_english.json; sourceTree = "<group>"; };
-		EF06703DE5AAF7D2C7D0EAAB /* Paris-Café-2.m4a */ = {isa = PBXFileReference; path = "Paris-Café-2.m4a"; sourceTree = "<group>"; };
 		EFE521ADD54E6635CA76C3A1 /* wordbuilder_english_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_spanish.json; sourceTree = "<group>"; };
 		F0AE02E5AA944BBF9A1E7BB2 /* grammar_ukrainian_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_ukrainian_polish.json; sourceTree = "<group>"; };
 		F1079AD7C7C0B803C74DDCC7 /* SyncStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusView.swift; sourceTree = "<group>"; };
@@ -851,8 +851,8 @@
 				FA972466A8306EAB9FFDD2AF /* Mountain-Campfire.m4a */,
 				59C0A048BA91DCF01083EFDA /* Observatory-Night-1.m4a */,
 				B2044354899CA1CB213DE5C1 /* Observatory-Night-2.m4a */,
-				21767052AE35297AE29B1015 /* Paris-Café-1.m4a */,
-				EF06703DE5AAF7D2C7D0EAAB /* Paris-Café-2.m4a */,
+				262EF23FC7FDF13661748EC8 /* Paris-Café-1.m4a */,
+				321A6A5269762B9A3953A31C /* Paris-Café-2.m4a */,
 				B95DDDEEBA8E45BFB1B39434 /* Rainy-Window.m4a */,
 				8A7CB0448DE947B938B41FF7 /* Tokyo-Night-Street.m4a */,
 				5CE6659F8979C9D0010BE085 /* Venice-Canal-Morning.m4a */,
@@ -1027,8 +1027,8 @@
 				43F804CCAE58040657DB23B1 /* Mountain-Campfire.m4a in Resources */,
 				6D41BF4356271CBF59F05DCF /* Observatory-Night-1.m4a in Resources */,
 				7D9029A0A19E06C7DB28C407 /* Observatory-Night-2.m4a in Resources */,
-				D0ACB6741A6F80A8DA88A00A /* Paris-Café-1.m4a in Resources */,
-				0FB4AB4039AF8387966B22B7 /* Paris-Café-2.m4a in Resources */,
+				6633EEEC1516F35A75D8040B /* Paris-Café-1.m4a in Resources */,
+				865409E249B90575BD70DBCD /* Paris-Café-2.m4a in Resources */,
 				8EE163C95C8B895DCFC5E71F /* Rainy-Window.m4a in Resources */,
 				94B616D28FC3A7C26CDA94C5 /* Tokyo-Night-Street.m4a in Resources */,
 				8E550F02E987B6C8C684D34D /* Venice-Canal-Morning.m4a in Resources */,
