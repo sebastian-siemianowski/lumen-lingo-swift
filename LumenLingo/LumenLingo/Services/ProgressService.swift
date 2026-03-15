@@ -87,8 +87,8 @@ final class ProgressService {
         )
         modelContext.insert(record)
 
-        // Update XP
-        addXP(result.score)
+        // Update XP (applies tier multiplier)
+        addXP(result.xpEarned)
 
         // Update streak
         updateStreak()

@@ -367,6 +367,20 @@ struct AppStrings {
     let nowPlaying: String                 // "Playing"
     let paused: String                     // "Paused"
 
+    // MARK: - Game Session Results
+    let xpBonus: String                    // "XP Bonus"
+    let timeSpentLabel: String             // "Time"
+    let streakActive: String               // "Active"
+    let streakLabel: String                // "Streak"
+    let vsPreviousSession: String          // "vs Previous Session"
+    let keepImproving: String              // "Keep improving every session!"
+    let recentPerformance: String          // "Recent Performance"
+    let last7Sessions: String              // "Last 7 sessions"
+    let areasToImprove: String             // "Areas to Improve"
+    let reviewIncorrect: (Int) -> String   // "Review {n} incorrect answers"
+    let shareResult: String                // "Share Result"
+    let availableOn: (String) -> String    // "Available on {tier}"
+
     // MARK: - Factory
 
     static func forLanguage(_ lang: SupportedLanguage) -> AppStrings {

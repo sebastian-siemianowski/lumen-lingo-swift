@@ -357,6 +357,20 @@ extension AppStrings {
         thirtyMinPerDay: "30分/日",
         resetsIn: { "\($0)後にリセット" },
         nowPlaying: "再生中",
-        paused: "一時停止"
+        paused: "一時停止",
+
+        // MARK: - Game Session Results
+        xpBonus: "XPボーナス",
+        timeSpentLabel: "時間",
+        streakActive: "アクティブ",
+        streakLabel: "連続",
+        vsPreviousSession: "vs 前回のセッション",
+        keepImproving: "毎回成長しています！",
+        recentPerformance: "最近の成績",
+        last7Sessions: "過去7セッション",
+        areasToImprove: "改善点",
+        reviewIncorrect: { "\($0)件の不正解を復習" },
+        shareResult: "結果を共有",
+        availableOn: { "\($0)で利用可能" }
     )
 }

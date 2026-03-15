@@ -357,6 +357,20 @@ extension AppStrings {
         thirtyMinPerDay: "30 хв/день",
         resetsIn: { "Оновиться через \($0)" },
         nowPlaying: "Відтворення",
-        paused: "Призупинено"
+        paused: "Призупинено",
+
+        // MARK: - Game Session Results
+        xpBonus: "Бонус XP",
+        timeSpentLabel: "Час",
+        streakActive: "Активна",
+        streakLabel: "Серія",
+        vsPreviousSession: "порівняно з попередньою",
+        keepImproving: "Продовжуйте покращуватися кожну сесію!",
+        recentPerformance: "Останні результати",
+        last7Sessions: "Останні 7 сесій",
+        areasToImprove: "Що покращити",
+        reviewIncorrect: { "Переглянути \($0) неправильних відповідей" },
+        shareResult: "Поділитися результатом",
+        availableOn: { "Доступно на \($0)" }
     )
 }

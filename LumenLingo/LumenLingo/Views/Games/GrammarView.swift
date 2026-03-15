@@ -48,6 +48,7 @@ struct GrammarView: View {
     @State private var showTimeExpired: Bool = false
     @State private var bannerDismissed: Bool = false
     @State private var showMembershipFromExpired: Bool = false
+    @State private var lastTimeSpent: Int = 0
 
     private var nextCategoryAction: (() -> Void)? {
         guard let nextId = nextUnplayedCategoryId else { return nil }
@@ -167,7 +168,8 @@ struct GrammarView: View {
             score: score,
             correctAnswers: correctCount,
             totalQuestions: correctCount + wrongCount,
-            timeSpent: timeSpent
+            timeSpent: timeSpent,
+            xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
     }
@@ -636,6 +638,8 @@ struct GrammarView: View {
             totalQuestions: questions.count,
             gameType: .grammar,
             categoryName: categoryName,
+            xpMultiplier: tierManager.xpMultiplier,
+            timeSpent: lastTimeSpent,
             onPlayAgain: { resetGame() },
             onNextCategory: nextCategoryAction,
             nextCategoryName: nextUnplayedCategoryName,
@@ -717,6 +721,7 @@ struct GrammarView: View {
 
     private func completeGame() {
         let timeSpent = practiceTracker.endSession()
+        lastTimeSpent = timeSpent
         let progressService = ProgressService(modelContext: modelContext)
         let result = GameSessionResult(
             gameType: .grammar,
@@ -725,7 +730,8 @@ struct GrammarView: View {
             score: score,
             correctAnswers: correctCount,
             totalQuestions: questions.count,
-            timeSpent: timeSpent
+            timeSpent: timeSpent,
+            xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
         audioService.playCelebration()

@@ -45,6 +45,7 @@ struct WordBuilderView: View {
     @State private var showTimeExpired: Bool = false
     @State private var bannerDismissed: Bool = false
     @State private var showMembershipFromExpired: Bool = false
+    @State private var lastTimeSpent: Int = 0
 
     private var nextCategoryAction: (() -> Void)? {
         guard let nextId = nextUnplayedCategoryId else { return nil }
@@ -171,7 +172,8 @@ struct WordBuilderView: View {
             score: score,
             correctAnswers: correctCount,
             totalQuestions: correctCount + wrongCount,
-            timeSpent: timeSpent
+            timeSpent: timeSpent,
+            xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
     }
@@ -702,6 +704,8 @@ struct WordBuilderView: View {
             totalQuestions: words.count,
             gameType: .wordBuilder,
             categoryName: categoryName,
+            xpMultiplier: tierManager.xpMultiplier,
+            timeSpent: lastTimeSpent,
             onPlayAgain: { resetGame() },
             onNextCategory: nextCategoryAction,
             nextCategoryName: nextUnplayedCategoryName,
@@ -915,6 +919,7 @@ struct WordBuilderView: View {
 
     private func completeGame() {
         let timeSpent = practiceTracker.endSession()
+        lastTimeSpent = timeSpent
         let progressService = ProgressService(modelContext: modelContext)
         let result = GameSessionResult(
             gameType: .wordBuilder,
@@ -923,7 +928,8 @@ struct WordBuilderView: View {
             score: score,
             correctAnswers: correctCount,
             totalQuestions: words.count,
-            timeSpent: timeSpent
+            timeSpent: timeSpent,
+            xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
         audioService.playCelebration()

@@ -357,6 +357,20 @@ extension AppStrings {
         thirtyMinPerDay: "30分钟/天",
         resetsIn: { "\($0)后重置" },
         nowPlaying: "正在播放",
-        paused: "已暂停"
+        paused: "已暂停",
+
+        // MARK: - Game Session Results
+        xpBonus: "XP加成",
+        timeSpentLabel: "时间",
+        streakActive: "活跃",
+        streakLabel: "连续",
+        vsPreviousSession: "对比上次",
+        keepImproving: "每次练习都在进步！",
+        recentPerformance: "近期表现",
+        last7Sessions: "最近7次",
+        areasToImprove: "待改进",
+        reviewIncorrect: { "复习\($0)个错误答案" },
+        shareResult: "分享结果",
+        availableOn: { "\($0)可用" }
     )
 }

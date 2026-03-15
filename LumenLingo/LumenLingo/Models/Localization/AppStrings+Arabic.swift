@@ -355,6 +355,20 @@ extension AppStrings {
         thirtyMinPerDay: "٣٠ دقيقة/يوم",
         resetsIn: { "يتجدد خلال \($0)" },
         nowPlaying: "قيد التشغيل",
-        paused: "متوقف مؤقتاً"
+        paused: "متوقف مؤقتاً",
+
+        // MARK: - Game Session Results
+        xpBonus: "مكافأة XP",
+        timeSpentLabel: "الوقت",
+        streakActive: "نشط",
+        streakLabel: "السلسلة",
+        vsPreviousSession: "مقابل الجلسة السابقة",
+        keepImproving: "استمر في التحسّن كل جلسة!",
+        recentPerformance: "الأداء الأخير",
+        last7Sessions: "آخر ٧ جلسات",
+        areasToImprove: "مجالات للتحسين",
+        reviewIncorrect: { "راجع \($0) إجابات خاطئة" },
+        shareResult: "مشاركة النتيجة",
+        availableOn: { "متاح في \($0)" }
     )
 }

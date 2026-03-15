@@ -91,6 +91,7 @@
 		73A7E6DA708ED07D00A689B2 /* GlassDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC466E954463C21BDA8D3C /* GlassDivider.swift */; };
 		73AD9317D69C59C90258DF4C /* wordbuilder_english_arabic.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B08B450C156D682E189D898 /* wordbuilder_english_arabic.json */; };
 		74435F6A6EC5F4E3D5C6EA1C /* LayoutBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8853A00938061AC818C42D /* LayoutBackgroundView.swift */; };
+		766670ECFE1A56A3084DBE60 /* XPMultiplierBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5477D11222E706CD9576D790 /* XPMultiplierBadge.swift */; };
 		7988B7142EFD009714229EC9 /* wordbuilder_polish_arabic.json in Resources */ = {isa = PBXBuildFile; fileRef = E9695959319EDA311AB53C48 /* wordbuilder_polish_arabic.json */; };
 		7B10D980961D062826FA81D0 /* wordbuilder_polish_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = 62CD085C23242718140E3A0D /* wordbuilder_polish_japanese.json */; };
 		7D3E00173527F078F1B16EAC /* grammar_polish_arabic.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C637EFA05F05EEE861FA130 /* grammar_polish_arabic.json */; };
@@ -285,6 +286,7 @@
 		533FA37F2ECDF2DAF07D198E /* wordbuilder_english_chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_chinese.json; sourceTree = "<group>"; };
 		534F80BB19C4E83CA6907874 /* LumenLingo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LumenLingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B3BC180E8CA6F328FF7C7F /* OfflineBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineBanner.swift; sourceTree = "<group>"; };
+		5477D11222E706CD9576D790 /* XPMultiplierBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPMultiplierBadge.swift; sourceTree = "<group>"; };
 		55B9BA72516085422014F289 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		57E4B1517FF079FD28CE5508 /* CelestialStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CelestialStars.metal; sourceTree = "<group>"; };
 		59A8193CDA27C5F43BF910C5 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
@@ -578,6 +580,7 @@
 				8BBC7CB529E2BAA14AC41CCD /* PracticeExpiredView.swift */,
 				4C476BFA1673DE127430A20B /* PracticeTimeBanner.swift */,
 				DE743C6D3380728D60B135A6 /* WordBuilderView.swift */,
+				5477D11222E706CD9576D790 /* XPMultiplierBadge.swift */,
 			);
 			path = Games;
 			sourceTree = "<group>";
@@ -1298,6 +1301,7 @@
 				EB14E6E4C10C13B33A501ED1 /* UpgradePromptView.swift in Sources */,
 				9B95136E0053CB309F0470A0 /* WordBuilderView.swift in Sources */,
 				686CCE8D7420E55A83113C58 /* WordBuilderViewModel.swift in Sources */,
+				766670ECFE1A56A3084DBE60 /* XPMultiplierBadge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

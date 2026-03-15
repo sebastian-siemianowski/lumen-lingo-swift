@@ -145,6 +145,75 @@ final class TierManager {
         return DashboardWidgetConfig(widgets: widgets)
     }
 
+    // MARK: - XP Multiplier
+
+    /// XP multiplier for the current tier.
+    var xpMultiplier: Double {
+        Self.xpMultiplier(for: currentTier)
+    }
+
+    /// Static tier→multiplier mapping for unit testing.
+    static func xpMultiplier(for tier: MembershipTier) -> Double {
+        switch tier {
+        case .free:          return 1.0
+        case .pro:           return 1.25
+        case .elite:         return 1.5
+        case .royal, .trial: return 2.0
+        }
+    }
+
+    // MARK: - Session Results Configuration
+
+    /// Sections available in the session results screen, gated by tier.
+    enum SessionResultsSection: String, CaseIterable, Equatable {
+        case basicStats           // XP, accuracy, cards reviewed
+        case timeAndStreak        // time spent breakdown, streak info
+        case previousComparison   // comparison to previous session
+        case performanceGraph     // last 7 sessions accuracy graph
+        case weakAreas            // categories with lowest accuracy
+        case personalizedTips     // tips based on mistakes
+        case shareableCard        // shareable result image
+    }
+
+    /// Configuration listing which result sections a tier should display.
+    struct SessionResultsConfig: Equatable {
+        let sections: [SessionResultsSection]
+    }
+
+    /// Returns the session results configuration for the current tier.
+    func sessionResultsConfig() -> SessionResultsConfig {
+        Self.sessionResultsConfig(for: currentTier)
+    }
+
+    /// Static tier→results mapping for unit testing.
+    static func sessionResultsConfig(for tier: MembershipTier) -> SessionResultsConfig {
+        var sections: [SessionResultsSection] = [.basicStats]
+        switch tier {
+        case .free:
+            break
+        case .pro:
+            sections.append(contentsOf: [.timeAndStreak, .previousComparison])
+        case .elite:
+            sections.append(contentsOf: [.timeAndStreak, .previousComparison, .performanceGraph, .weakAreas])
+        case .royal, .trial:
+            sections.append(contentsOf: [.timeAndStreak, .previousComparison, .performanceGraph, .weakAreas, .personalizedTips, .shareableCard])
+        }
+        return SessionResultsConfig(sections: sections)
+    }
+
+    /// Returns the minimum tier required for a given results section.
+    static func minimumTierForSection(_ section: SessionResultsSection) -> MembershipTier {
+        switch section {
+        case .basicStats:         return .free
+        case .timeAndStreak:      return .pro
+        case .previousComparison: return .pro
+        case .performanceGraph:   return .elite
+        case .weakAreas:          return .elite
+        case .personalizedTips:   return .royal
+        case .shareableCard:      return .royal
+        }
+    }
+
     // MARK: - Soundscape Gating
 
     /// IDs of soundscapes unlocked for a given session (previewed once per session).

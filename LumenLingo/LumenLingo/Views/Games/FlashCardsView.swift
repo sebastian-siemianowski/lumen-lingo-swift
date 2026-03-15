@@ -95,6 +95,7 @@ struct FlashCardsView: View {
     @State private var showTimeExpired: Bool = false
     @State private var bannerDismissed: Bool = false
     @State private var showMembershipFromExpired: Bool = false
+    @State private var lastTimeSpent: Int = 0
 
     private var nextCategoryAction: (() -> Void)? {
         guard let nextId = nextUnplayedCategoryId else { return nil }
@@ -200,7 +201,8 @@ struct FlashCardsView: View {
             score: score,
             correctAnswers: correctCount,
             totalQuestions: correctCount + wrongCount,
-            timeSpent: timeSpent
+            timeSpent: timeSpent,
+            xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
     }
@@ -828,6 +830,8 @@ struct FlashCardsView: View {
             totalQuestions: words.count,
             gameType: .flashCards,
             categoryName: categoryName,
+            xpMultiplier: tierManager.xpMultiplier,
+            timeSpent: lastTimeSpent,
             onPlayAgain: { resetGame() },
             onNextCategory: nextCategoryAction,
             nextCategoryName: nextUnplayedCategoryName,
@@ -1088,6 +1092,7 @@ struct FlashCardsView: View {
     private func completeGame() {
         // Stop practice time tracking
         let timeSpent = practiceTracker.endSession()
+        lastTimeSpent = timeSpent
 
         // Save progress
         let progressService = ProgressService(modelContext: modelContext)
@@ -1098,7 +1103,8 @@ struct FlashCardsView: View {
             score: score,
             correctAnswers: correctCount,
             totalQuestions: words.count,
-            timeSpent: timeSpent
+            timeSpent: timeSpent,
+            xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
 
@@ -1274,6 +1280,8 @@ struct GameCompleteView: View {
     let totalQuestions: Int
     let gameType: GameType
     let categoryName: String
+    let xpMultiplier: Double
+    let timeSpent: Int
     let onPlayAgain: () -> Void
     let onNextCategory: (() -> Void)?
     let nextCategoryName: String?
@@ -1281,6 +1289,7 @@ struct GameCompleteView: View {
 
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(TierManager.self) private var tierManager
 
     private var L: AppStrings { localization.strings }
 
@@ -1288,6 +1297,7 @@ struct GameCompleteView: View {
     @State private var showIcon = false
     @State private var showTitle = false
     @State private var showStats = false
+    @State private var showExtras = false
     @State private var showButtons = false
     @State private var glowBreath: CGFloat = 0
     @State private var ringRotation: Double = 0
@@ -1484,7 +1494,23 @@ struct GameCompleteView: View {
                 .padding(.horizontal, 28)
                 .opacity(showStats ? 1 : 0)
                 .offset(y: showStats ? 0 : 12)
-                .padding(.bottom, 40)
+                .padding(.bottom, 28)
+
+                // MARK: — XP Breakdown (multiplier > 1.0)
+                if xpMultiplier > 1.0 {
+                    xpBreakdownSection
+                        .padding(.horizontal, 28)
+                        .padding(.bottom, 28)
+                        .opacity(showExtras ? 1 : 0)
+                        .offset(y: showExtras ? 0 : 12)
+                }
+
+                // MARK: — Tier-Specific Result Sections
+                tierSpecificSections
+                    .padding(.horizontal, 28)
+                    .padding(.bottom, 20)
+                    .opacity(showExtras ? 1 : 0)
+                    .offset(y: showExtras ? 0 : 12)
 
                 // MARK: — Action Buttons
                 VStack(spacing: 14) {
@@ -1605,6 +1631,350 @@ struct GameCompleteView: View {
         .onAppear { startEntranceSequence() }
     }
 
+    // MARK: — XP Breakdown
+
+    private var finalXP: Int { Int(Double(score) * xpMultiplier) }
+
+    private var xpBreakdownSection: some View {
+        VStack(spacing: 10) {
+            HStack(spacing: 6) {
+                Image(systemName: "bolt.fill")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(tierManager.tierGradientColors.first ?? .purple)
+                Text(L.xpBonus)
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+            }
+
+            HStack(spacing: 8) {
+                Text("\(score)")
+                    .font(.system(size: 18, weight: .bold, design: .rounded))
+                    .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum.opacity(0.7))
+
+                Image(systemName: "xmark")
+                    .font(.system(size: 12, weight: .bold))
+                    .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanMist)
+
+                XPMultiplierBadge(multiplier: xpMultiplier, tier: tierManager.currentTier)
+
+                Image(systemName: "equal")
+                    .font(.system(size: 12, weight: .bold))
+                    .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanMist)
+
+                Text("\(finalXP)")
+                    .font(.system(size: 22, weight: .bold, design: .rounded))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: tierManager.tierGradientColors,
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+
+                Text("XP")
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+            }
+        }
+        .padding(.vertical, 16)
+        .padding(.horizontal, 20)
+        .background {
+            RoundedRectangle(cornerRadius: 20)
+                .fill(.ultraThinMaterial)
+                .opacity(0.15)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: tierManager.tierGradientColors.map { $0.opacity(0.3) },
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 0.5
+                        )
+                )
+        }
+    }
+
+    // MARK: — Tier-Specific Sections
+
+    private var resultsConfig: TierManager.SessionResultsConfig {
+        tierManager.sessionResultsConfig()
+    }
+
+    @ViewBuilder
+    private var tierSpecificSections: some View {
+        let config = resultsConfig
+
+        // Time & Streak (Pro+)
+        if config.sections.contains(.timeAndStreak) {
+            timeAndStreakSection
+        } else if tierManager.currentTier == .free {
+            lockedSectionHint(for: .timeAndStreak)
+        }
+
+        // Previous session comparison (Pro+)
+        if config.sections.contains(.previousComparison) {
+            previousComparisonSection
+        }
+
+        // Performance graph placeholder (Elite+)
+        if config.sections.contains(.performanceGraph) {
+            performanceGraphSection
+        } else if tierManager.currentTier == .pro {
+            lockedSectionHint(for: .performanceGraph)
+        }
+
+        // Weak areas placeholder (Elite+)
+        if config.sections.contains(.weakAreas) {
+            weakAreasSection
+        }
+
+        // Shareable card placeholder (Royal)
+        if config.sections.contains(.shareableCard) {
+            shareableCardSection
+        } else if tierManager.currentTier == .elite {
+            lockedSectionHint(for: .shareableCard)
+        }
+    }
+
+    // MARK: Time & Streak Section
+
+    private var timeAndStreakSection: some View {
+        HStack(spacing: 0) {
+            VStack(spacing: 4) {
+                Image(systemName: "clock.fill")
+                    .font(.system(size: 14))
+                    .foregroundStyle(.cyan.opacity(0.7))
+                Text(formatTime(timeSpent))
+                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                Text(L.timeSpentLabel)
+                    .font(.system(size: 10, weight: .medium))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    .textCase(.uppercase)
+                    .tracking(0.5)
+            }
+            .frame(maxWidth: .infinity)
+
+            Capsule()
+                .fill(.white.opacity(0.1))
+                .frame(width: 1, height: 30)
+
+            VStack(spacing: 4) {
+                Image(systemName: "flame.fill")
+                    .font(.system(size: 14))
+                    .foregroundStyle(.orange.opacity(0.7))
+                Text(L.streakActive)
+                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                Text(L.streakLabel)
+                    .font(.system(size: 10, weight: .medium))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    .textCase(.uppercase)
+                    .tracking(0.5)
+            }
+            .frame(maxWidth: .infinity)
+        }
+        .padding(.vertical, 16)
+        .background {
+            glassCard
+        }
+        .padding(.bottom, 10)
+    }
+
+    // MARK: Previous Comparison Section
+
+    private var previousComparisonSection: some View {
+        HStack(spacing: 12) {
+            Image(systemName: "chart.line.uptrend.xyaxis")
+                .font(.system(size: 20))
+                .foregroundStyle(.green.opacity(0.7))
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text(L.vsPreviousSession)
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                Text(L.keepImproving)
+                    .font(.system(size: 11))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+            }
+
+            Spacer()
+
+            Image(systemName: "arrow.up.right")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(.green)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 14)
+        .background {
+            glassCard
+        }
+        .padding(.bottom, 10)
+    }
+
+    // MARK: Performance Graph Section
+
+    private var performanceGraphSection: some View {
+        VStack(spacing: 10) {
+            HStack {
+                Image(systemName: "chart.xyaxis.line")
+                    .font(.system(size: 14))
+                    .foregroundStyle(.purple.opacity(0.7))
+                Text(L.recentPerformance)
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                Spacer()
+                Text(L.last7Sessions)
+                    .font(.system(size: 11))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+            }
+
+            // Mini bar chart placeholder
+            HStack(alignment: .bottom, spacing: 6) {
+                ForEach(0..<7, id: \.self) { i in
+                    let height = CGFloat([0.4, 0.6, 0.5, 0.7, 0.65, 0.8, accuracy / 100.0][i])
+                    RoundedRectangle(cornerRadius: 4)
+                        .fill(
+                            LinearGradient(
+                                colors: i == 6
+                                    ? [performanceTier.color, performanceTier.color.opacity(0.5)]
+                                    : [.white.opacity(0.15), .white.opacity(0.08)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .frame(height: max(8, height * 50))
+                }
+            }
+            .frame(height: 55)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 14)
+        .background {
+            glassCard
+        }
+        .padding(.bottom, 10)
+    }
+
+    // MARK: Weak Areas Section
+
+    private var weakAreasSection: some View {
+        VStack(spacing: 8) {
+            HStack {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .font(.system(size: 14))
+                    .foregroundStyle(.orange.opacity(0.7))
+                Text(L.areasToImprove)
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                Spacer()
+            }
+
+            if wrongAnswers > 0 {
+                HStack(spacing: 8) {
+                    Circle()
+                        .fill(.orange.opacity(0.3))
+                        .frame(width: 6, height: 6)
+                    Text(L.reviewIncorrect(wrongAnswers))
+                        .font(.system(size: 12))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum.opacity(0.8))
+                    Spacer()
+                }
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 14)
+        .background {
+            glassCard
+        }
+        .padding(.bottom, 10)
+    }
+
+    // MARK: Shareable Card Section
+
+    private var shareableCardSection: some View {
+        Button {
+            // Share action — placeholder for UIActivityViewController
+        } label: {
+            HStack(spacing: 10) {
+                Image(systemName: "square.and.arrow.up")
+                    .font(.system(size: 16, weight: .semibold))
+                Text(L.shareResult)
+                    .font(.system(size: 14, weight: .semibold))
+            }
+            .foregroundStyle(
+                LinearGradient(
+                    colors: tierManager.tierGradientColors,
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 14)
+            .background {
+                glassCard
+            }
+        }
+        .buttonStyle(.plain)
+        .padding(.bottom, 10)
+    }
+
+    // MARK: Locked Section Hint
+
+    private func lockedSectionHint(for section: TierManager.SessionResultsSection) -> some View {
+        let tier = TierManager.minimumTierForSection(section)
+        return HStack(spacing: 8) {
+            Image(systemName: "lock.fill")
+                .font(.system(size: 12))
+                .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
+            Text(L.availableOn(tier.displayName))
+                .font(.system(size: 12))
+                .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanMist)
+            Spacer()
+            Image(systemName: tier.iconName)
+                .font(.system(size: 12))
+                .foregroundStyle(tier.gradientColors.first ?? .purple)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 10)
+        .background {
+            RoundedRectangle(cornerRadius: 14)
+                .fill(.ultraThinMaterial)
+                .opacity(0.08)
+        }
+        .padding(.bottom, 8)
+    }
+
+    // MARK: Glass Card Background
+
+    private var glassCard: some View {
+        RoundedRectangle(cornerRadius: 18)
+            .fill(.ultraThinMaterial)
+            .opacity(0.12)
+            .overlay(
+                RoundedRectangle(cornerRadius: 18)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [.white.opacity(0.15), .white.opacity(0.04)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 0.5
+                    )
+            )
+    }
+
+    private func formatTime(_ seconds: Int) -> String {
+        let mins = seconds / 60
+        let secs = seconds % 60
+        if mins > 0 {
+            return "\(mins)m \(secs)s"
+        }
+        return "\(secs)s"
+    }
+
     // MARK: — Stats Column
 
     private func statColumn(value: String, label: String, color: Color) -> some View {
@@ -1644,6 +2014,12 @@ struct GameCompleteView: View {
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
+            withAnimation(.easeOut(duration: 0.7)) {
+                showExtras = true
+            }
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
             withAnimation(.easeOut(duration: 0.6)) {
                 showButtons = true
             }

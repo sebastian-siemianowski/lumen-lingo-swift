@@ -1606,4 +1606,225 @@ final class TierManagerTests: XCTestCase {
         XCTAssertEqual(tracker.remainingTimeDisplay(for: .elite), "Unlimited")
         XCTAssertEqual(tracker.remainingTimeDisplay(for: .royal), "Unlimited")
     }
+
+    // MARK: - Epic 13: Game Session Feature Integration
+
+    // MARK: 13.3 — XP Multiplier per tier
+
+    func testXPMultiplierFreeTierIsBase() {
+        XCTAssertEqual(TierManager.xpMultiplier(for: .free), 1.0)
+    }
+
+    func testXPMultiplierProTierIs125() {
+        XCTAssertEqual(TierManager.xpMultiplier(for: .pro), 1.25)
+    }
+
+    func testXPMultiplierEliteTierIs150() {
+        XCTAssertEqual(TierManager.xpMultiplier(for: .elite), 1.5)
+    }
+
+    func testXPMultiplierRoyalTierIs200() {
+        XCTAssertEqual(TierManager.xpMultiplier(for: .royal), 2.0)
+    }
+
+    func testXPMultiplierTrialTierIs200() {
+        XCTAssertEqual(TierManager.xpMultiplier(for: .trial), 2.0)
+    }
+
+    func testXPMultiplierInstanceMethod() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertEqual(manager.xpMultiplier, 1.0)
+        manager.currentTierId = "pro"
+        XCTAssertEqual(manager.xpMultiplier, 1.25)
+        manager.currentTierId = "elite"
+        XCTAssertEqual(manager.xpMultiplier, 1.5)
+        manager.currentTierId = "royal"
+        XCTAssertEqual(manager.xpMultiplier, 2.0)
+    }
+
+    func testXPMultiplierChangesOnTierChange() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertEqual(manager.xpMultiplier, 1.0, "Free tier should have 1.0x multiplier")
+        manager.currentTierId = "royal"
+        XCTAssertEqual(manager.xpMultiplier, 2.0, "Royal tier should have 2.0x multiplier immediately")
+    }
+
+    // MARK: 13.3 — XP Calculation with multiplier
+
+    func testGameSessionResultBaseXP() {
+        let result = GameSessionResult(
+            gameType: .flashCards,
+            categoryKey: "animals",
+            score: 100,
+            correctAnswers: 10,
+            totalQuestions: 10,
+            timeSpent: 60,
+            sourceLanguage: "english",
+            targetLanguage: "spanish"
+        )
+        XCTAssertEqual(result.baseXP, 100)
+        XCTAssertEqual(result.xpEarned, 100, "Default multiplier 1.0 → xpEarned == score")
+    }
+
+    func testGameSessionResultWithRoyalMultiplier() {
+        let result = GameSessionResult(
+            gameType: .flashCards,
+            categoryKey: "animals",
+            score: 100,
+            correctAnswers: 10,
+            totalQuestions: 10,
+            timeSpent: 60,
+            sourceLanguage: "english",
+            targetLanguage: "spanish",
+            xpMultiplier: 2.0
+        )
+        XCTAssertEqual(result.baseXP, 100)
+        XCTAssertEqual(result.xpEarned, 200, "100 base XP × 2.0 multiplier = 200 final XP")
+    }
+
+    func testGameSessionResultWithProMultiplier() {
+        let result = GameSessionResult(
+            gameType: .grammar,
+            categoryKey: "basics",
+            score: 80,
+            correctAnswers: 8,
+            totalQuestions: 10,
+            timeSpent: 45,
+            sourceLanguage: "english",
+            targetLanguage: "french",
+            xpMultiplier: 1.25
+        )
+        XCTAssertEqual(result.baseXP, 80)
+        XCTAssertEqual(result.xpEarned, 100, "80 base XP × 1.25 multiplier = 100 final XP")
+    }
+
+    func testGameSessionResultWithEliteMultiplier() {
+        let result = GameSessionResult(
+            gameType: .wordBuilder,
+            categoryKey: "food",
+            score: 60,
+            correctAnswers: 4,
+            totalQuestions: 5,
+            timeSpent: 30,
+            sourceLanguage: "english",
+            targetLanguage: "german",
+            xpMultiplier: 1.5
+        )
+        XCTAssertEqual(result.baseXP, 60)
+        XCTAssertEqual(result.xpEarned, 90, "60 base XP × 1.5 multiplier = 90 final XP")
+    }
+
+    // MARK: 13.2 — Session Results Config per tier
+
+    func testSessionResultsConfigFreeTier() {
+        let config = TierManager.sessionResultsConfig(for: .free)
+        XCTAssertEqual(config.sections, [.basicStats])
+        XCTAssertFalse(config.sections.contains(.timeAndStreak))
+        XCTAssertFalse(config.sections.contains(.previousComparison))
+        XCTAssertFalse(config.sections.contains(.performanceGraph))
+        XCTAssertFalse(config.sections.contains(.shareableCard))
+    }
+
+    func testSessionResultsConfigProTier() {
+        let config = TierManager.sessionResultsConfig(for: .pro)
+        XCTAssertTrue(config.sections.contains(.basicStats))
+        XCTAssertTrue(config.sections.contains(.timeAndStreak))
+        XCTAssertTrue(config.sections.contains(.previousComparison))
+        XCTAssertFalse(config.sections.contains(.performanceGraph))
+        XCTAssertFalse(config.sections.contains(.weakAreas))
+        XCTAssertFalse(config.sections.contains(.shareableCard))
+    }
+
+    func testSessionResultsConfigEliteTier() {
+        let config = TierManager.sessionResultsConfig(for: .elite)
+        XCTAssertTrue(config.sections.contains(.basicStats))
+        XCTAssertTrue(config.sections.contains(.timeAndStreak))
+        XCTAssertTrue(config.sections.contains(.previousComparison))
+        XCTAssertTrue(config.sections.contains(.performanceGraph))
+        XCTAssertTrue(config.sections.contains(.weakAreas))
+        XCTAssertFalse(config.sections.contains(.personalizedTips))
+        XCTAssertFalse(config.sections.contains(.shareableCard))
+    }
+
+    func testSessionResultsConfigRoyalTier() {
+        let config = TierManager.sessionResultsConfig(for: .royal)
+        XCTAssertTrue(config.sections.contains(.basicStats))
+        XCTAssertTrue(config.sections.contains(.timeAndStreak))
+        XCTAssertTrue(config.sections.contains(.previousComparison))
+        XCTAssertTrue(config.sections.contains(.performanceGraph))
+        XCTAssertTrue(config.sections.contains(.weakAreas))
+        XCTAssertTrue(config.sections.contains(.personalizedTips))
+        XCTAssertTrue(config.sections.contains(.shareableCard))
+    }
+
+    func testSessionResultsConfigTrialTier() {
+        let config = TierManager.sessionResultsConfig(for: .trial)
+        XCTAssertEqual(config.sections.count, TierManager.sessionResultsConfig(for: .royal).sections.count,
+                       "Trial should have same sections as Royal")
+        XCTAssertTrue(config.sections.contains(.shareableCard))
+    }
+
+    func testSessionResultsConfigInstanceMethod() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        let freeConfig = manager.sessionResultsConfig()
+        XCTAssertEqual(freeConfig.sections, [.basicStats])
+        manager.currentTierId = "elite"
+        let eliteConfig = manager.sessionResultsConfig()
+        XCTAssertTrue(eliteConfig.sections.contains(.performanceGraph))
+    }
+
+    // MARK: 13.2 — Minimum tier for section
+
+    func testMinimumTierForBasicStats() {
+        XCTAssertEqual(TierManager.minimumTierForSection(.basicStats), .free)
+    }
+
+    func testMinimumTierForTimeAndStreak() {
+        XCTAssertEqual(TierManager.minimumTierForSection(.timeAndStreak), .pro)
+    }
+
+    func testMinimumTierForPreviousComparison() {
+        XCTAssertEqual(TierManager.minimumTierForSection(.previousComparison), .pro)
+    }
+
+    func testMinimumTierForPerformanceGraph() {
+        XCTAssertEqual(TierManager.minimumTierForSection(.performanceGraph), .elite)
+    }
+
+    func testMinimumTierForWeakAreas() {
+        XCTAssertEqual(TierManager.minimumTierForSection(.weakAreas), .elite)
+    }
+
+    func testMinimumTierForShareableCard() {
+        XCTAssertEqual(TierManager.minimumTierForSection(.shareableCard), .royal)
+    }
+
+    // MARK: 13.1 — In-Session Tier Awareness
+
+    func testFreeTierHasNoSoundscapeInSession() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertFalse(manager.hasAccess(to: .soundscapes), "Free tier should not have soundscape access during sessions")
+    }
+
+    func testProTierHasSoundscapeInSession() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        XCTAssertTrue(manager.hasAccess(to: .soundscapes), "Pro tier should have soundscape access during sessions")
+    }
+
+    func testFreeTierSessionIsTimeLimited() {
+        let tracker = PracticeTimeTracker()
+        XCTAssertTrue(tracker.isLimited(for: .free), "Free tier game sessions should be time-limited")
+    }
+
+    func testPaidTierSessionIsNotTimeLimited() {
+        let tracker = PracticeTimeTracker()
+        XCTAssertFalse(tracker.isLimited(for: .pro), "Pro tier game sessions should not be time-limited")
+        XCTAssertFalse(tracker.isLimited(for: .elite), "Elite tier game sessions should not be time-limited")
+        XCTAssertFalse(tracker.isLimited(for: .royal), "Royal tier game sessions should not be time-limited")
+    }
 }

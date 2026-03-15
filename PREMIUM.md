@@ -1031,7 +1031,7 @@
 
 ---
 
-## Epic 13: Game Session Feature Integration
+## Epic 13: Game Session Feature Integration ✅
 
 ### Story 13.1 — In-Session Tier Awareness
 
@@ -1046,12 +1046,12 @@
 - Session UI shows no tier badges — immersive, distraction-free.
 
 **Subtasks:**
-- [ ] 13.1.1 — In game session view, check `PracticeTimeTracker.remainingTime` each question.
-- [ ] 13.1.2 — If time expires: complete current question, save progress, show expired view.
-- [ ] 13.1.3 — If soundscape is enabled and tier allows: play ambient audio via `AudioService`.
-- [ ] 13.1.5 — Remove all tier badges/indicators from in-session UI (keep it clean).
-- [ ] 13.1.6 — Add unit test: free tier → session ends on time expiry with progress saved.
-- [ ] 13.1.7 — Add unit test: pro tier → soundscape plays during session.
+- [x] 13.1.1 — In game session view, check `PracticeTimeTracker.remainingTime` each question.
+- [x] 13.1.2 — If time expires: complete current question, save progress, show expired view.
+- [x] 13.1.3 — If soundscape is enabled and tier allows: play ambient audio via `AudioService`.
+- [x] 13.1.5 — Remove all tier badges/indicators from in-session UI (keep it clean).
+- [x] 13.1.6 — Add unit test: free tier → session ends on time expiry with progress saved.
+- [x] 13.1.7 — Add unit test: pro tier → soundscape plays during session.
 
 ---
 
@@ -1069,16 +1069,16 @@
 - Locked enhancements show "Available on [tier]" below the divider.
 
 **Subtasks:**
-- [ ] 13.2.1 — Create `SessionResultsConfig` struct with sections enabled per tier.
-- [ ] 13.2.2 — `TierManager.sessionResultsConfig() -> SessionResultsConfig`.
-- [ ] 13.2.3 — In `SessionResultsView`, conditionally render sections based on config.
-- [ ] 13.2.4 — Create `SessionComparisonWidget`: compare XP/accuracy vs previous session.
-- [ ] 13.2.5 — Create `PerformanceGraphWidget`: line chart of last 7 sessions' accuracy.
-- [ ] 13.2.6 — Create `WeakAreasWidget`: list of categories with lowest accuracy, with improvement tips.
-- [ ] 13.2.7 — Create `ShareableResultCard`: rendered as an image, shareable via `UIActivityViewController`.
-- [ ] 13.2.8 — Below each locked section: show "Available on [tier]" with tier badge.
-- [ ] 13.2.9 — Add staggered reveal animations for result sections.
-- [ ] 13.2.10 — Add unit tests for each tier's enabled sections.
+- [x] 13.2.1 — Create `SessionResultsConfig` struct with sections enabled per tier.
+- [x] 13.2.2 — `TierManager.sessionResultsConfig() -> SessionResultsConfig`.
+- [x] 13.2.3 — In `SessionResultsView`, conditionally render sections based on config.
+- [x] 13.2.4 — Create `SessionComparisonWidget`: compare XP/accuracy vs previous session.
+- [x] 13.2.5 — Create `PerformanceGraphWidget`: line chart of last 7 sessions' accuracy.
+- [x] 13.2.6 — Create `WeakAreasWidget`: list of categories with lowest accuracy, with improvement tips.
+- [x] 13.2.7 — Create `ShareableResultCard`: rendered as an image, shareable via `UIActivityViewController`.
+- [x] 13.2.8 — Below each locked section: show "Available on [tier]" with tier badge.
+- [x] 13.2.9 — Add staggered reveal animations for result sections.
+- [x] 13.2.10 — Add unit tests for each tier's enabled sections.
 
 ---
 
@@ -1098,14 +1098,14 @@
 - Multiplier badge animates with a glow effect for Royal tier.
 
 **Subtasks:**
-- [ ] 13.3.1 — Add `TierManager.xpMultiplier: Double` (free→1.0, pro→1.25, elite→1.5, royal/trial→2.0).
-- [ ] 13.3.2 — In `GameSession.calculateXP()`, multiply base XP by `TierManager.xpMultiplier`.
-- [ ] 13.3.3 — Create `XPMultiplierBadge` view: "X.X× XP" capsule with tier gradient.
-- [ ] 13.3.4 — Show badge on session start screen, positioned below game mode title.
-- [ ] 13.3.5 — For Royal: add glow animation (pulsing shadow, 2-second loop).
-- [ ] 13.3.6 — In session results: show base XP, multiplier, and final XP breakdown.
-- [ ] 13.3.7 — Add unit test: 100 base XP × 2.0 multiplier (Royal) = 200 final XP.
-- [ ] 13.3.8 — Add unit test: multiplier changes immediately on tier change.
+- [x] 13.3.1 — Add `TierManager.xpMultiplier: Double` (free→1.0, pro→1.25, elite→1.5, royal/trial→2.0).
+- [x] 13.3.2 — In `GameSession.calculateXP()`, multiply base XP by `TierManager.xpMultiplier`.
+- [x] 13.3.3 — Create `XPMultiplierBadge` view: "X.X× XP" capsule with tier gradient.
+- [x] 13.3.4 — Show badge on session start screen, positioned below game mode title.
+- [x] 13.3.5 — For Royal: add glow animation (pulsing shadow, 2-second loop).
+- [x] 13.3.6 — In session results: show base XP, multiplier, and final XP breakdown.
+- [x] 13.3.7 — Add unit test: 100 base XP × 2.0 multiplier (Royal) = 200 final XP.
+- [x] 13.3.8 — Add unit test: multiplier changes immediately on tier change.
 
 ---
 

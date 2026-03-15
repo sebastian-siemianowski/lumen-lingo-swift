@@ -358,6 +358,20 @@ extension AppStrings {
         thirtyMinPerDay: "30 min/jour",
         resetsIn: { "Réinitialise dans \($0)" },
         nowPlaying: "En lecture",
-        paused: "En pause"
+        paused: "En pause",
+
+        // MARK: - Game Session Results
+        xpBonus: "Bonus XP",
+        timeSpentLabel: "Temps",
+        streakActive: "Actif",
+        streakLabel: "Série",
+        vsPreviousSession: "vs Session précédente",
+        keepImproving: "Continuez à progresser à chaque session !",
+        recentPerformance: "Performance récente",
+        last7Sessions: "7 dernières sessions",
+        areasToImprove: "Points à améliorer",
+        reviewIncorrect: { "Revoir \($0) réponses incorrectes" },
+        shareResult: "Partager le résultat",
+        availableOn: { "Disponible sur \($0)" }
     )
 }

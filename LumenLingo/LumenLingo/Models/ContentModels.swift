@@ -146,13 +146,15 @@ struct GameSessionResult {
     let timeSpent: Int
     let sourceLanguage: String
     let targetLanguage: String
+    let xpMultiplier: Double
 
     var accuracy: Double {
         guard totalQuestions > 0 else { return 0 }
         return Double(correctAnswers) / Double(totalQuestions) * 100
     }
 
-    var xpEarned: Int { score }
+    var baseXP: Int { score }
+    var xpEarned: Int { Int(Double(score) * xpMultiplier) }
 
     /// Convenience init used by game views (categoryId/categoryName variant)
     init(
@@ -164,7 +166,8 @@ struct GameSessionResult {
         totalQuestions: Int,
         timeSpent: Int,
         sourceLanguage: String = SupportedLanguage.english.rawValue,
-        targetLanguage: String = SupportedLanguage.spanish.rawValue
+        targetLanguage: String = SupportedLanguage.spanish.rawValue,
+        xpMultiplier: Double = 1.0
     ) {
         self.gameType = gameType
         self.categoryKey = categoryId
@@ -174,6 +177,7 @@ struct GameSessionResult {
         self.timeSpent = timeSpent
         self.sourceLanguage = sourceLanguage
         self.targetLanguage = targetLanguage
+        self.xpMultiplier = xpMultiplier
     }
 
     /// Primary init
@@ -185,7 +189,8 @@ struct GameSessionResult {
         totalQuestions: Int,
         timeSpent: Int,
         sourceLanguage: String,
-        targetLanguage: String
+        targetLanguage: String,
+        xpMultiplier: Double = 1.0
     ) {
         self.gameType = gameType
         self.categoryKey = categoryKey
@@ -195,6 +200,7 @@ struct GameSessionResult {
         self.timeSpent = timeSpent
         self.sourceLanguage = sourceLanguage
         self.targetLanguage = targetLanguage
+        self.xpMultiplier = xpMultiplier
     }
 }
 
