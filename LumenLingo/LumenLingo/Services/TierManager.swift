@@ -1,5 +1,11 @@
 import SwiftUI
 
+// MARK: - Notifications
+
+extension Notification.Name {
+    static let soundscapeAutoStopped = Notification.Name("soundscapeAutoStopped")
+}
+
 // MARK: - Tier Manager
 
 /// Central service for tier selection, persistence, and feature gating.
@@ -92,6 +98,35 @@ final class TierManager {
     /// SF Symbol for the current tier.
     var tierIcon: String { currentTier.iconName }
 
+    // MARK: - Soundscape Gating
+
+    /// IDs of soundscapes unlocked for a given session (previewed once per session).
+    private(set) var previewedSoundscapeIds: Set<String> = []
+
+    /// Returns all soundscapes sorted by unlock priority, limited by tier.
+    func unlockedSoundscapes() -> [Soundscape] {
+        let limit = allowedCount(for: .soundscapes)
+        return Soundscape.allCases
+            .sorted { $0.sortOrder < $1.sortOrder }
+            .prefix(limit)
+            .map { $0 }
+    }
+
+    /// Check whether a specific soundscape is unlocked for the current tier.
+    func isSoundscapeUnlocked(_ soundscape: Soundscape) -> Bool {
+        soundscape.sortOrder < allowedCount(for: .soundscapes)
+    }
+
+    /// True if this soundscape has already been previewed this session.
+    func hasPreviewedSoundscape(_ soundscape: Soundscape) -> Bool {
+        previewedSoundscapeIds.contains(soundscape.id)
+    }
+
+    /// Mark a soundscape as previewed (once per session).
+    func markSoundscapePreviewed(_ soundscape: Soundscape) {
+        previewedSoundscapeIds.insert(soundscape.id)
+    }
+
     // MARK: - Sync
 
     /// Sync tier from `UserProfile` on app launch / view appear.
@@ -100,6 +135,12 @@ final class TierManager {
         let tier = MembershipTier(tierId: profile.selectedTierId)
         if tier != currentTier {
             currentTier = tier
+        }
+
+        // Clear saved soundscape if it exceeds the tier's limit
+        if let soundscape = profile.soundscapeEnum, !isSoundscapeUnlocked(soundscape) {
+            profile.soundscapeEnum = nil
+            profile.soundscapeVariantIndex = 0
         }
     }
 
@@ -120,9 +161,19 @@ final class TierManager {
         let feedback = UIImpactFeedbackGenerator(style: wasUpgrade ? .medium : .light)
         feedback.impactOccurred()
 
-        // Graceful feature degradation: stop features the new tier can't access
-        if !hasAccess(to: .soundscapes) {
-            AudioService.shared.stopAmbient()
+        // Graceful feature degradation on downgrade
+        if !wasUpgrade {
+            let audio = AudioService.shared
+            if let active = audio.activeSoundscape {
+                if !isSoundscapeUnlocked(active) {
+                    // Active soundscape now exceeds tier limit — fade out
+                    audio.stopAmbient(fadeDuration: 2.0)
+                    // Post notification for toast display
+                    NotificationCenter.default.post(name: .soundscapeAutoStopped, object: nil)
+                }
+            } else if !hasAccess(to: .soundscapes) {
+                audio.stopAmbient()
+            }
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { [weak self] in

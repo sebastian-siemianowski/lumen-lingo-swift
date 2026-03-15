@@ -790,6 +790,25 @@ enum Soundscape: String, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
+    /// Deterministic unlock priority. Lower = unlocked first.
+    /// Pro (1 soundscape) gets sortOrder 0; Elite (8) gets 0–7; Royal/Trial get all 12.
+    var sortOrder: Int {
+        switch self {
+        case .parisCafe:             return 0   // Pro's single soundscape
+        case .rainyWindow:           return 1
+        case .dominicanBeach:        return 2
+        case .mountainCampfire:      return 3
+        case .midnightJazzPiano:     return 4
+        case .japaneseBambooForest:  return 5
+        case .observatoryNight:      return 6
+        case .tokyoNightStreet:      return 7   // Elite cap
+        case .amazonRainforest:      return 8
+        case .desertNightSky:        return 9
+        case .veniceCanalMorning:    return 10
+        case .deepSpaceDrift:        return 11
+        }
+    }
+
     var category: SoundscapeCategory {
         switch self {
         case .parisCafe, .midnightJazzPiano, .rainyWindow: return .cozy
@@ -878,6 +897,15 @@ enum Soundscape: String, CaseIterable, Identifiable {
     }
 
     var hasMultipleVariants: Bool { variants.count > 1 }
+
+    /// The minimum tier required to unlock this soundscape.
+    var minimumTier: MembershipTier {
+        switch sortOrder {
+        case 0:      return .pro    // Pro gets 1
+        case 1...7:  return .elite  // Elite gets 8
+        default:     return .royal  // Royal gets all 12
+        }
+    }
 
     var previewColors: [Color] {
         switch self {

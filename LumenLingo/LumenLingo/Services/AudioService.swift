@@ -1723,6 +1723,55 @@ final class AudioService {
         }
     }
 
+    /// Play a brief preview of a locked soundscape (fade-in then fade-out).
+    func playPreview(soundscape: Soundscape, duration: TimeInterval = 3.0) {
+        let variant = soundscape.variants.first
+        guard let fileName = variant?.fileName,
+              let url = bundleURL(for: fileName, extension: "m4a") else { return }
+
+        do {
+            let player = try AVAudioPlayer(contentsOf: url)
+            player.numberOfLoops = 0
+            player.volume = 0
+            player.prepareToPlay()
+            player.play()
+
+            let previewVolume = ambientVolume * masterVolume * 6
+
+            // Fade in over 0.6s
+            let fadeInSteps = 12
+            let fadeInInterval = 0.6 / Double(fadeInSteps)
+            let volDelta = previewVolume / Float(fadeInSteps)
+            var step = 0
+            Timer.scheduledTimer(withTimeInterval: fadeInInterval, repeats: true) { timer in
+                step += 1
+                player.volume = volDelta * Float(step)
+                if step >= fadeInSteps {
+                    timer.invalidate()
+                }
+            }
+
+            // After duration, fade out over 0.8s then stop
+            DispatchQueue.main.asyncAfter(deadline: .now() + duration - 0.8) {
+                let fadeOutSteps = 16
+                let fadeOutInterval = 0.8 / Double(fadeOutSteps)
+                let startVol = player.volume
+                let outDelta = -startVol / Float(fadeOutSteps)
+                var outStep = 0
+                Timer.scheduledTimer(withTimeInterval: fadeOutInterval, repeats: true) { timer in
+                    outStep += 1
+                    player.volume = max(0, startVol + outDelta * Float(outStep))
+                    if outStep >= fadeOutSteps {
+                        timer.invalidate()
+                        player.stop()
+                    }
+                }
+            }
+        } catch {
+            print("⚠️ Preview playback error: \(error)")
+        }
+    }
+
     /// Crossfade to a different soundscape — true overlapping transition
     func crossfadeSoundscape(to soundscape: Soundscape, variantIndex: Int = 0) {
         // Update metadata immediately for responsive UI

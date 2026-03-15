@@ -213,4 +213,117 @@ final class TierManagerTests: XCTestCase {
     private func tierHasAccess(_ tier: MembershipTier, _ feature: PremiumFeature) -> Bool {
         TierManager.allowedCount(for: feature, tier: tier) > 0
     }
+
+    // MARK: - Soundscape Sort Order
+
+    func testSoundscapeSortOrderIsUnique() {
+        let orders = Soundscape.allCases.map(\.sortOrder)
+        XCTAssertEqual(orders.count, Set(orders).count, "Sort orders must be unique")
+    }
+
+    func testSoundscapeSortOrderCovers0Through11() {
+        let orders = Set(Soundscape.allCases.map(\.sortOrder))
+        XCTAssertEqual(orders, Set(0...11))
+    }
+
+    // MARK: - Soundscape Unlock Counts
+
+    func testProTierUnlocksExactly1Soundscape() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        let unlocked = manager.unlockedSoundscapes()
+        XCTAssertEqual(unlocked.count, 1)
+        XCTAssertEqual(unlocked.first?.sortOrder, 0)
+    }
+
+    func testEliteTierUnlocksExactly8Soundscapes() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        let unlocked = manager.unlockedSoundscapes()
+        XCTAssertEqual(unlocked.count, 8)
+        // Verify they are sortOrder 0–7
+        for (i, s) in unlocked.enumerated() {
+            XCTAssertEqual(s.sortOrder, i)
+        }
+    }
+
+    func testRoyalTierUnlocksAll12Soundscapes() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        let unlocked = manager.unlockedSoundscapes()
+        XCTAssertEqual(unlocked.count, 12)
+    }
+
+    func testTrialTierUnlocksAll12Soundscapes() {
+        let manager = TierManager()
+        manager.currentTierId = "trial"
+        let unlocked = manager.unlockedSoundscapes()
+        XCTAssertEqual(unlocked.count, 12)
+    }
+
+    func testFreeTierUnlocks0Soundscapes() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        let unlocked = manager.unlockedSoundscapes()
+        XCTAssertEqual(unlocked.count, 0)
+    }
+
+    // MARK: - isSoundscapeUnlocked
+
+    func testIsSoundscapeUnlocked_ProOnlyUnlocksSortOrder0() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        let sortOrder0 = Soundscape.allCases.first { $0.sortOrder == 0 }!
+        XCTAssertTrue(manager.isSoundscapeUnlocked(sortOrder0))
+
+        // sortOrder 1 should be locked for Pro
+        let sortOrder1 = Soundscape.allCases.first { $0.sortOrder == 1 }!
+        XCTAssertFalse(manager.isSoundscapeUnlocked(sortOrder1))
+    }
+
+    func testIsSoundscapeUnlocked_FreeLockEverything() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        for soundscape in Soundscape.allCases {
+            XCTAssertFalse(manager.isSoundscapeUnlocked(soundscape))
+        }
+    }
+
+    // MARK: - Minimum Tier
+
+    func testSortOrder0HasMinimumTierPro() {
+        let s = Soundscape.allCases.first { $0.sortOrder == 0 }!
+        XCTAssertEqual(s.minimumTier, .pro)
+    }
+
+    func testSortOrder1Through7HaveMinimumTierElite() {
+        for i in 1...7 {
+            let s = Soundscape.allCases.first { $0.sortOrder == i }!
+            XCTAssertEqual(s.minimumTier, .elite, "sortOrder \(i) should require Elite")
+        }
+    }
+
+    func testSortOrder8Through11HaveMinimumTierRoyal() {
+        for i in 8...11 {
+            let s = Soundscape.allCases.first { $0.sortOrder == i }!
+            XCTAssertEqual(s.minimumTier, .royal, "sortOrder \(i) should require Royal")
+        }
+    }
+
+    // MARK: - Preview Tracking
+
+    func testPreviewTracking() {
+        let manager = TierManager()
+        let soundscape = Soundscape.parisCafe
+        XCTAssertFalse(manager.hasPreviewedSoundscape(soundscape))
+        manager.markSoundscapePreviewed(soundscape)
+        XCTAssertTrue(manager.hasPreviewedSoundscape(soundscape))
+    }
+
+    func testPreviewTrackingIsPerSoundscape() {
+        let manager = TierManager()
+        manager.markSoundscapePreviewed(.parisCafe)
+        XCTAssertTrue(manager.hasPreviewedSoundscape(.parisCafe))
+        XCTAssertFalse(manager.hasPreviewedSoundscape(.rainyWindow))
+    }
 }

@@ -9,6 +9,10 @@ import SwiftData
 struct SoundscapesSettingsView: View {
     @Query private var profiles: [UserProfile]
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(TierManager.self) private var tierManager
+
+    @State private var lockedSoundscapeToShow: Soundscape?
+    @State private var showAutoStopToast = false
 
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
@@ -32,6 +36,26 @@ struct SoundscapesSettingsView: View {
         .animation(.easeInOut(duration: 0.35), value: isEnabled)
         .animation(.spring(response: 0.35, dampingFraction: 0.8), value: profile?.selectedSoundscape)
         .animation(.spring(response: 0.3, dampingFraction: 0.85), value: profile?.soundscapeVariantIndex)
+        .sheet(item: $lockedSoundscapeToShow) { soundscape in
+            SoundscapeUpgradeSheet(soundscape: soundscape)
+        }
+        .overlay(alignment: .bottom) {
+            if showAutoStopToast {
+                autoStopToast
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                    .padding(.bottom, 16)
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .soundscapeAutoStopped)) { _ in
+            withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
+                showAutoStopToast = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                withAnimation(.easeOut(duration: 0.3)) {
+                    showAutoStopToast = false
+                }
+            }
+        }
     }
 
     // MARK: - Header Toggle
@@ -88,7 +112,8 @@ struct SoundscapesSettingsView: View {
                     profile?.ambientSoundsEnabled.toggle()
                     // Start/stop soundscape based on toggle
                     if profile?.ambientSoundsEnabled == true {
-                        if let soundscape = profile?.soundscapeEnum {
+                        if let soundscape = profile?.soundscapeEnum,
+                           tierManager.isSoundscapeUnlocked(soundscape) {
                             AudioService.shared.startSoundscape(soundscape, variantIndex: profile?.soundscapeVariantIndex ?? 0)
                         }
                     } else {
@@ -103,6 +128,7 @@ struct SoundscapesSettingsView: View {
 
     private func categorySection(_ category: SoundscapeCategory) -> some View {
         let selectedInCategory = category.soundscapes.first { $0 == profile?.soundscapeEnum }
+        let sorted = category.soundscapes.sorted { $0.sortOrder < $1.sortOrder }
 
         return VStack(alignment: .leading, spacing: 8) {
             // Category header
@@ -116,10 +142,10 @@ struct SoundscapesSettingsView: View {
             }
             .padding(.leading, 4)
 
-            // Horizontal scroll of soundscape cards
+            // Horizontal scroll of soundscape cards (sorted: unlocked first)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
-                    ForEach(category.soundscapes) { soundscape in
+                    ForEach(sorted) { soundscape in
                         soundscapeCard(soundscape)
                     }
                 }
@@ -139,30 +165,35 @@ struct SoundscapesSettingsView: View {
 
     private func soundscapeCard(_ soundscape: Soundscape) -> some View {
         let isSelected = profile?.soundscapeEnum == soundscape
+        let isLocked = !tierManager.isSoundscapeUnlocked(soundscape)
 
         return Button {
-            handleSoundscapeTap(soundscape)
+            if isLocked {
+                handleLockedSoundscapeTap(soundscape)
+            } else {
+                handleSoundscapeTap(soundscape)
+            }
         } label: {
-            soundscapeCardContent(soundscape, isSelected: isSelected)
+            soundscapeCardContent(soundscape, isSelected: isSelected, isLocked: isLocked)
         }
         .buttonStyle(LumenPressStyle(weight: .soft))
     }
 
-    private func soundscapeCardContent(_ soundscape: Soundscape, isSelected: Bool) -> some View {
+    private func soundscapeCardContent(_ soundscape: Soundscape, isSelected: Bool, isLocked: Bool) -> some View {
         let isPlaying = isSelected && AudioService.shared.isSoundscapePlaying
         let anySelected = profile?.soundscapeEnum != nil
 
         return VStack(spacing: 0) {
-            soundscapePreview(soundscape, isSelected: isSelected, isPlaying: isPlaying)
-            soundscapeInfo(soundscape, isSelected: isSelected)
+            soundscapePreview(soundscape, isSelected: isSelected, isPlaying: isPlaying, isLocked: isLocked)
+            soundscapeInfo(soundscape, isSelected: isSelected, isLocked: isLocked)
         }
         .frame(width: 130)
         .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
         .overlay(soundscapeBorder(isSelected: isSelected))
-        .opacity(anySelected && !isSelected ? 0.55 : 1.0)
+        .opacity(isLocked ? 0.72 : (anySelected && !isSelected ? 0.55 : 1.0))
     }
 
-    private func soundscapePreview(_ soundscape: Soundscape, isSelected: Bool, isPlaying: Bool) -> some View {
+    private func soundscapePreview(_ soundscape: Soundscape, isSelected: Bool, isPlaying: Bool, isLocked: Bool) -> some View {
         ZStack {
             LinearGradient(
                 colors: soundscape.previewColors,
@@ -176,9 +207,10 @@ struct SoundscapesSettingsView: View {
                     endPoint: .bottom
                 )
             )
+            .saturation(isLocked ? 0.25 : 1.0)
 
-            // Checkmark badge top-right
-            if isSelected {
+            // Checkmark badge top-right (unlocked & selected)
+            if isSelected && !isLocked {
                 VStack {
                     HStack {
                         Spacer()
@@ -202,14 +234,44 @@ struct SoundscapesSettingsView: View {
 
             Image(systemName: soundscape.icon)
                 .font(.system(size: 22, weight: .medium))
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(.white.opacity(isLocked ? 0.4 : 0.8))
                 .shadow(color: .black.opacity(0.3), radius: 4, y: 2)
+
+            // Lock overlay for gated soundscapes
+            if isLocked {
+                Color.black.opacity(0.35)
+
+                VStack(spacing: 4) {
+                    Image(systemName: "lock.fill")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundStyle(.white.opacity(0.9))
+                        .shadow(color: .black.opacity(0.5), radius: 4)
+
+                    // Minimum tier badge
+                    Text(soundscape.minimumTier.displayName.uppercased())
+                        .font(.system(size: 8, weight: .heavy))
+                        .tracking(0.5)
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 2)
+                        .background(
+                            Capsule()
+                                .fill(
+                                    LinearGradient(
+                                        colors: soundscape.minimumTier.gradientColors,
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
+                        )
+                }
+            }
         }
         .frame(height: 60)
         .clipped()
     }
 
-    private func soundscapeInfo(_ soundscape: Soundscape, isSelected: Bool) -> some View {
+    private func soundscapeInfo(_ soundscape: Soundscape, isSelected: Bool, isLocked: Bool) -> some View {
         VStack(spacing: 3) {
             Text(soundscape.displayName)
                 .font(.system(size: 12, weight: .bold))
@@ -323,6 +385,69 @@ struct SoundscapesSettingsView: View {
                 }
             }
         }
+    }
+
+    private func handleLockedSoundscapeTap(_ soundscape: Soundscape) {
+        let feedback = UINotificationFeedbackGenerator()
+        feedback.notificationOccurred(.warning)
+
+        // Play 3-second preview if not already previewed this session
+        if !tierManager.hasPreviewedSoundscape(soundscape) {
+            tierManager.markSoundscapePreviewed(soundscape)
+            AudioService.shared.playPreview(soundscape: soundscape, duration: 3.0)
+        }
+
+        // Show upgrade sheet
+        lockedSoundscapeToShow = soundscape
+    }
+
+    // MARK: - Auto-Stop Toast
+
+    private var autoStopToast: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "speaker.slash.fill")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(.white.opacity(0.9))
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Soundscape paused")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(.white)
+                Text("Upgrade to continue listening")
+                    .font(.system(size: 11))
+                    .foregroundStyle(.white.opacity(0.7))
+            }
+
+            Spacer()
+
+            Button {
+                withAnimation {
+                    showAutoStopToast = false
+                }
+            } label: {
+                Image(systemName: "xmark")
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundStyle(.white.opacity(0.6))
+                    .padding(6)
+            }
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 10)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(.ultraThinMaterial)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(
+                            LinearGradient(
+                                colors: [Color(hex: "#6366F1").opacity(0.7), Color(hex: "#8B5CF6").opacity(0.5)],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                )
+        )
+        .padding(.horizontal, 16)
     }
 
     // MARK: - Variant Picker
