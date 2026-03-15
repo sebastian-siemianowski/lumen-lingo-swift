@@ -51,6 +51,9 @@ final class UserProfile {
     var achievementSoundsVolume: Float = 1.0
     var ambientVolume: Float = 0.3
 
+    /// Selected membership tier (persisted across launches). Defaults to "free".
+    var selectedTierId: String = "free"
+
     /// Level scales quadratically: cumulative XP for level L = 50·L·(L−1).
     /// Each level costs 100·L XP, so reaching high levels takes real dedication.
     var currentLevel: Int {
@@ -140,7 +143,8 @@ final class UserProfile {
         gameSoundsVolume: Float = 1.0,
         uiSoundsVolume: Float = 1.0,
         achievementSoundsVolume: Float = 1.0,
-        ambientVolume: Float = 0.3
+        ambientVolume: Float = 0.3,
+        selectedTierId: String = "free"
     ) {
         self.totalXP = totalXP
         self.dailyStreak = dailyStreak
@@ -181,6 +185,7 @@ final class UserProfile {
         self.uiSoundsVolume = uiSoundsVolume
         self.achievementSoundsVolume = achievementSoundsVolume
         self.ambientVolume = ambientVolume
+        self.selectedTierId = selectedTierId
     }
 }
 

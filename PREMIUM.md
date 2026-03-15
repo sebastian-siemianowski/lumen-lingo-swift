@@ -19,9 +19,9 @@
 
 ---
 
-## Epic 1: Tier Selection & Persistence
+## Epic 1: Tier Selection & Persistence ✅ COMPLETED
 
-### Story 1.1 — Persist Selected Tier Across App Launches
+### Story 1.1 — Persist Selected Tier Across App Launches ✅
 
 **As a** user who selected a membership tier,  
 **I want** my selection to persist when I close and reopen the app,  
@@ -33,16 +33,16 @@
 - If no tier is saved (first launch), default to `"free"`.
 
 **Subtasks:**
-- [ ] 1.1.1 — Add `selectedTierId: String` property to `UserProfile` model (default `"free"`).
-- [ ] 1.1.2 — On tier selection in `MembershipView`, write `selectedTierId` to the user's profile.
-- [ ] 1.1.3 — Create `TierManager` service that exposes `currentTier: TierID` as a published property.
-- [ ] 1.1.4 — Inject `TierManager` into the SwiftUI environment via `.environmentObject()`.
-- [ ] 1.1.5 — Add unit test: save tier → relaunch → assert tier restored.
-- [ ] 1.1.6 — Add unit test: first launch with no saved data → assert `"free"`.
+- [x] 1.1.1 — Add `selectedTierId: String` property to `UserProfile` model (default `"free"`).
+- [x] 1.1.2 — On tier selection in `MembershipView`, write `selectedTierId` to the user's profile.
+- [x] 1.1.3 — Create `TierManager` service that exposes `currentTier: TierID` as a published property.
+- [x] 1.1.4 — Inject `TierManager` into the SwiftUI environment via `.environment()`.
+- [x] 1.1.5 — Add unit test: save tier → relaunch → assert tier restored.
+- [x] 1.1.6 — Add unit test: first launch with no saved data → assert `"free"`.
 
 ---
 
-### Story 1.2 — Expose Current Tier as Environment Value
+### Story 1.2 — Expose Current Tier as Environment Value ✅
 
 **As a** developer building gated features,  
 **I want** the current tier available as an `@EnvironmentObject` throughout the view hierarchy,  
@@ -54,17 +54,17 @@
 - All gating decisions go through `TierManager`, not raw string comparisons.
 
 **Subtasks:**
-- [ ] 1.2.1 — Define `PremiumFeature` enum with cases: `.soundscapes(count:)`, `.languagePairs(count:)`, `.unlimitedPractice`, `.breathingOrbs`, `.quantumFlow(sceneCount:)`, `.nebulaDrift(presetCount:)`, `.offlineMode`.
-- [ ] 1.2.2 — Implement `TierManager.hasAccess(to:) -> Bool` using a tier-to-feature mapping dictionary.
-- [ ] 1.2.3 — Implement `TierManager.allowedCount(for:) -> Int` for features with variable limits.
-- [ ] 1.2.4 — Add `TierManager` to the app's root view via `.environmentObject()`.
-- [ ] 1.2.5 — Add unit tests for every tier × feature combination.
-- [ ] 1.2.6 — Add `TierManager.tierDisplayName: String` computed property for UI labels.
-- [ ] 1.2.7 — Add `TierManager.tierGradientColors: [Color]` for consistent tier branding.
+- [x] 1.2.1 — Define `PremiumFeature` enum with cases: `.soundscapes`, `.languagePairs`, `.unlimitedPractice`, `.breathingOrbs`, `.quantumFlow`, `.nebulaDrift`, `.offlineMode`.
+- [x] 1.2.2 — Implement `TierManager.hasAccess(to:) -> Bool` using a tier-to-feature mapping dictionary.
+- [x] 1.2.3 — Implement `TierManager.allowedCount(for:) -> Int` for features with variable limits.
+- [x] 1.2.4 — Add `TierManager` to the app's root view via `.environment()`.
+- [x] 1.2.5 — Add unit tests for every tier × feature combination (25 tests in TierManagerTests.swift).
+- [x] 1.2.6 — Add `MembershipTier.displayName: String` computed property for UI labels.
+- [x] 1.2.7 — Add `MembershipTier.gradientColors: [Color]` for consistent tier branding.
 
 ---
 
-### Story 1.3 — Tier Change Triggers Feature Re-evaluation
+### Story 1.3 — Tier Change Triggers Feature Re-evaluation ✅
 
 **As a** user who changes their selected tier,  
 **I want** all gated features to immediately reflect my new tier,  
@@ -76,16 +76,16 @@
 - Any active feature that becomes unavailable gracefully degrades (e.g., soundscape stops playing).
 
 **Subtasks:**
-- [ ] 1.3.1 — Ensure `TierManager.currentTierId` setter publishes `objectWillChange`.
-- [ ] 1.3.2 — In `AudioService`, observe tier changes — if current soundscape exceeds new tier's limit, fade out and stop.
-- [ ] 1.3.3 — In background view controllers, observe tier changes — if current visual exceeds new limit, revert to default.
-- [ ] 1.3.4 — Add animation (0.3s fade) when features enable/disable on tier change.
-- [ ] 1.3.5 — Add haptic feedback (soft impact) on tier change confirmation.
-- [ ] 1.3.6 — Write integration test: change tier from Royal to Free → verify soundscapes stop, visuals revert.
+- [x] 1.3.1 — `TierManager` uses `@Observable` macro — mutations auto-publish.
+- [x] 1.3.2 — In `TierManager.selectTier()`, calls `AudioService.shared.stopAmbient()` on downgrade.
+- [x] 1.3.3 — In background view controllers, observe tier changes — if current visual exceeds new limit, revert to default.
+- [x] 1.3.4 — Add animation (0.3s fade) when features enable/disable on tier change.
+- [x] 1.3.5 — Add haptic feedback (soft impact) on tier change confirmation.
+- [x] 1.3.6 — Write integration test: change tier from Royal to Free → verify soundscapes stop, visuals revert.
 
 ---
 
-### Story 1.4 — Tier Badge Display on Profile
+### Story 1.4 — Tier Badge Display on Profile ✅
 
 **As a** user,  
 **I want** to see my current tier as a badge on my profile,  
@@ -97,11 +97,11 @@
 - Tapping the badge navigates to `MembershipView`.
 
 **Subtasks:**
-- [ ] 1.4.1 — Create `TierBadgeView` component: icon + name + gradient background capsule.
-- [ ] 1.4.2 — Read tier from `TierManager` environment object.
-- [ ] 1.4.3 — Add appear animation: `.transition(.scale.combined(with: .opacity))`.
-- [ ] 1.4.4 — Add `NavigationLink` wrapping the badge → `MembershipView`.
-- [ ] 1.4.5 — Position badge in `ProfileView` header, trailing side.
+- [x] 1.4.1 — Create `TierBadgeView` component: icon + name + gradient background capsule with shimmer.
+- [x] 1.4.2 — Read tier from `TierManager` environment.
+- [x] 1.4.3 — Add appear animation: spring scale + fade with 0.3s delay, shimmer at 0.9s.
+- [x] 1.4.4 — Add `NavigationLink` wrapping the badge → `MembershipView`.
+- [x] 1.4.5 — Position badge in `ProfileView` header between name/level and quick stats.
 - [ ] 1.4.6 — Add snapshot test for each tier's badge appearance.
 
 ---
@@ -1671,4 +1671,339 @@ Epic 20 (Edge Cases) depends on Epic 1, 19
 
 ---
 
-*End of Document — Total: 20 Epics, 44 Stories, 292 Subtasks*
+## Epic 21: Onboarding & First-Run Tier Education
+
+### Story 21.1 — First Launch Tier Introduction Flow
+
+**As a** new user launching the app for the first time,  
+**I want** a brief introduction to the available tiers,  
+**So that** I understand the value proposition before I start learning.
+
+**Acceptance Criteria:**
+- After the standard onboarding flow, show a 3-screen tier introduction.
+- Screen 1: "Learn for Free" — highlights Free tier features with demo animations.
+- Screen 2: "Go Further" — highlights Pro + Elite with feature previews.
+- Screen 3: "Try Royal for Free" — highlights the 14-day trial with CTA.
+- User can skip the entire flow via "Skip" button.
+- Flow only shows once (first launch).
+
+**Subtasks:**
+- [ ] 21.1.1 — Create `TierOnboardingFlow` view with 3 `TabView` pages.
+- [ ] 21.1.2 — Screen 1: animated demo of flashcard game, "All 3 game modes" bullet, "3 language pairs" bullet.
+- [ ] 21.1.3 — Screen 2: side-by-side Pro/Elite comparison cards with key differentiators.
+- [ ] 21.1.4 — Screen 3: Royal Trial CTA with countdown badge, confetti preview, "Start Free Trial" button.
+- [ ] 21.1.5 — "Start Free Trial" → activate trial and dismiss flow.
+- [ ] 21.1.6 — "Continue with Free" → set tier to free and dismiss flow.
+- [ ] 21.1.7 — "Skip" → set tier to free, skip straight to dashboard.
+- [ ] 21.1.8 — Persist `hasSeenTierOnboarding: Bool` to `UserDefaults`.
+- [ ] 21.1.9 — Page indicator dots at bottom with tier gradient colors.
+- [ ] 21.1.10 — Add unit test: flow shown on first launch, not shown on subsequent launches.
+
+---
+
+### Story 21.2 — Contextual Feature Tooltips for New Users
+
+**As a** new user exploring the app after onboarding,  
+**I want** contextual tooltips pointing out premium features as I encounter them,  
+**So that** I gradually learn what's available without information overload.
+
+**Acceptance Criteria:**
+- On first visit to each major section, show a one-time tooltip.
+- Tooltips: "Soundscapes let you learn with ambient music 🎵" (in Sound settings), "Breathing Orbs add mesmerizing visual backgrounds" (in Appearance), "Track your daily practice time here" (on dashboard).
+- Each tooltip shows once per feature (tracked via `UserDefaults` set).
+- Tooltips have the minimum tier badge if the feature is locked.
+- Tooltips dismiss on tap anywhere or after 5 seconds.
+
+**Subtasks:**
+- [ ] 21.2.1 — Create `FeatureTooltip` view: arrow-pointed bubble with text and optional tier badge.
+- [ ] 21.2.2 — Create `TooltipManager`: tracks shown tooltips in `UserDefaults` set.
+- [ ] 21.2.3 — `TooltipManager.shouldShow(for key:) -> Bool` and `markShown(for key:)`.
+- [ ] 21.2.4 — Define tooltip content and positions for: soundscapes, breathing orbs, practice time, offline mode.
+- [ ] 21.2.5 — Auto-dismiss timer: 5 seconds with fade animation.
+- [ ] 21.2.6 — Tap-to-dismiss on background.
+- [ ] 21.2.7 — Position tooltip using `GeometryReader` anchored to target view.
+- [ ] 21.2.8 — Add unit test: tooltip shown once, not shown again.
+
+---
+
+### Story 21.3 — "What's Included" Quick Reference
+
+**As a** user on any tier,  
+**I want** a quick-access reference of what my tier includes,  
+**So that** I don't have to navigate to the full Membership page to check.
+
+**Acceptance Criteria:**
+- Profile page has a "My Plan" section showing tier name, icon, and top 3 features.
+- Tapping "See all features" expands an inline list of all enabled features.
+- Each feature shows enabled (✓) or locked (🔒) status.
+- "Upgrade" link at the bottom navigates to `MembershipView`.
+- Section uses the current tier's gradient for styling.
+
+**Subtasks:**
+- [ ] 21.3.1 — Create `MyPlanCard` view for Profile page with tier icon, name, and mini feature list.
+- [ ] 21.3.2 — Top 3 features: selected from enabled features based on perceived value.
+- [ ] 21.3.3 — "See all features" toggle expands full feature list with enabled/locked indicators.
+- [ ] 21.3.4 — Full list generated from `TierManager.allFeatures() -> [(feature: PremiumFeature, enabled: Bool)]`.
+- [ ] 21.3.5 — "Upgrade" link: styled as text link, not button; navigates to `MembershipView`.
+- [ ] 21.3.6 — Card background uses tier gradient at 10% opacity.
+- [ ] 21.3.7 — Add expand/collapse animation with spring.
+
+---
+
+## Epic 22: Content Personalization by Tier
+
+### Story 22.1 — Flashcard Deck Size by Tier
+
+**As a** Pro+ user,  
+**I want** access to larger flashcard decks per language pair,  
+**So that** I can learn more vocabulary and progress faster.
+
+**Acceptance Criteria:**
+- Free tier: 50 flashcards per language pair.
+- Pro tier: 200 flashcards per language pair.
+- Elite tier: 500 flashcards per language pair.
+- Royal / Trial: All available flashcards (no limit).
+- Locked cards are not shown in the deck (not shown with lock overlay — they simply don't appear).
+- ContentLoader respects the tier limit when loading decks.
+
+**Subtasks:**
+- [ ] 22.1.1 — Add `TierManager.flashcardLimit(for pair:) -> Int?` (nil = unlimited).
+- [ ] 22.1.2 — Limits: free→50, pro→200, elite→500, royal/trial→nil.
+- [ ] 22.1.3 — In `ContentLoader.loadFlashcards()`, apply `.prefix(limit)` to loaded array.
+- [ ] 22.1.4 — Flashcard decks sorted by difficulty before applying limit (easiest first for Free users).
+- [ ] 22.1.5 — In deck info view: show "50 of 1,200 cards" for Free, "All 1,200 cards" for Royal.
+- [ ] 22.1.6 — On tier upgrade: reload deck to include newly available cards.
+- [ ] 22.1.7 — On tier downgrade: trim deck after current session ends (don't interrupt mid-session).
+- [ ] 22.1.8 — Add unit test: free tier loads exactly 50 cards from a 1200-card deck.
+- [ ] 22.1.9 — Add unit test: royal tier loads all cards.
+
+---
+
+### Story 22.2 — Grammar Exercise Complexity by Tier
+
+**As a** Pro+ user,  
+**I want** access to more complex grammar exercises,  
+**So that** I can advance beyond basics.
+
+**Acceptance Criteria:**
+- Free tier: beginner-level grammar only (difficulty 1-2).
+- Pro tier: beginner + intermediate (difficulty 1-4).
+- Elite tier: all difficulty levels (1-6).
+- Royal / Trial: all difficulty levels + bonus challenge sets.
+- Locked difficulties show "Available on [tier]" in the difficulty selector.
+
+**Subtasks:**
+- [ ] 22.2.1 — Add `TierManager.maxGrammarDifficulty: Int` (free→2, pro→4, elite→6, royal→6).
+- [ ] 22.2.2 — Add `TierManager.hasBonusChallenges: Bool` (royal/trial only).
+- [ ] 22.2.3 — In grammar exercise loader, filter by `difficulty <= maxGrammarDifficulty`.
+- [ ] 22.2.4 — In difficulty picker: show all levels, lock levels beyond tier limit.
+- [ ] 22.2.5 — Locked level shows tier badge and "Upgrade to unlock" on tap.
+- [ ] 22.2.6 — Bonus challenges: additional exercise sets with advanced grammar patterns.
+- [ ] 22.2.7 — On upgrade: new difficulty levels appear with "NEW" badge animation.
+- [ ] 22.2.8 — Add unit test: free tier → only difficulty 1-2 exercises loaded.
+
+---
+
+### Story 22.3 — Word Builder Dictionary Size by Tier
+
+**As a** Pro+ user,  
+**I want** a larger word builder dictionary,  
+**So that** I encounter more varied and challenging word construction exercises.
+
+**Acceptance Criteria:**
+- Free tier: 100 base words per language pair.
+- Pro tier: 400 words.
+- Elite / Royal / Trial: all available words (typically 1000+).
+- Words sorted by frequency (most common first for lower tiers).
+- Deck info shows word count: "100 of 1,200 words" style.
+
+**Subtasks:**
+- [ ] 22.3.1 — Add `TierManager.wordBuilderLimit: Int?` (free→100, pro→400, elite/royal→nil).
+- [ ] 22.3.2 — In word builder content loader, apply limit after frequency sort.
+- [ ] 22.3.3 — Show word count in session start screen.
+- [ ] 22.3.4 — On upgrade: reload word lists for current pair.
+- [ ] 22.3.5 — Add unit test: free tier → 100 words loaded; pro → 400.
+
+---
+
+## Epic 23: Social & Community Gating
+
+### Story 23.1 — Tier Badge on Shareable Achievement Cards
+
+**As a** user sharing an achievement,  
+**I want** my tier badge displayed on the shareable card,  
+**So that** people see my plan level and the card looks premium.
+
+**Acceptance Criteria:**
+- Shareable achievement cards include a small tier badge (icon + tier name) in the corner.
+- Free tier: no badge (card appears tier-agnostic).
+- Pro+: badge with tier gradient, icon, and name.
+- Card generated as a UIImage via `UIGraphicsImageRenderer`.
+- Badge scales with card size (always proportional).
+
+**Subtasks:**
+- [ ] 23.1.1 — Create `ShareableCardRenderer` that composites achievement data + tier badge.
+- [ ] 23.1.2 — If tier is free: skip badge rendering.
+- [ ] 23.1.3 — Badge placement: bottom-right corner with 8pt padding.
+- [ ] 23.1.4 — Badge includes: tier icon (SF Symbol rendered to image) + tier name text + gradient background capsule.
+- [ ] 23.1.5 — Use `UIGraphicsImageRenderer` with 3× scale for Retina quality.
+- [ ] 23.1.6 — Share via `UIActivityViewController`.
+- [ ] 23.1.7 — Add snapshot test for each tier's card rendering.
+
+---
+
+### Story 23.2 — Leaderboard Tier Indicators
+
+**As a** user viewing a future leaderboard,  
+**I want** other users' tiers to be subtly indicated,  
+**So that** I can see the tier distribution and feel motivated.
+
+**Acceptance Criteria:**
+- Next to each leaderboard entry: small colored dot indicating the user's tier.
+- Color coding: free=gray, pro=purple, elite=cyan, royal=gold.
+- Dot is purely decorative — no gameplay advantage from tier.
+- Own entry highlights with tier gradient border.
+
+**Subtasks:**
+- [ ] 23.2.1 — Add `tierColor: Color` to leaderboard entry model.
+- [ ] 23.2.2 — Render 6pt colored dot next to username.
+- [ ] 23.2.3 — Own entry: add tier gradient border (2pt) around the row.
+- [ ] 23.2.4 — Add legend in leaderboard header explaining dot colors.
+- [ ] 23.2.5 — Add VoiceOver label: "[Username], [tier] plan, [rank] place".
+
+---
+
+## Epic 24: Tier Transition Animations & Micro-interactions
+
+### Story 24.1 — Feature Unlock Ripple Effect
+
+**As a** user upgrading tiers,  
+**I want** to see newly unlocked features "light up" across the app,  
+**So that** the upgrade feels tangible and exciting.
+
+**Acceptance Criteria:**
+- On tier upgrade: a ripple animation emanates from the tier badge in the profile.
+- As the ripple passes over locked features (in settings, dashboard), they transition from locked to unlocked.
+- Each unlock has a small "sparkle" particle burst.
+- The entire sequence takes 3 seconds with staggered timing.
+- Only features that changed state (locked→unlocked) animate. Already-unlocked features don't re-animate.
+
+**Subtasks:**
+- [ ] 24.1.1 — Create `UnlockRippleEffect` view modifier: expanding ring animation from anchor point.
+- [ ] 24.1.2 — Calculate which features changed state: compare old tier's features vs new tier's features.
+- [ ] 24.1.3 — For each newly unlocked feature: delay = distance from ripple origin × 0.002 seconds.
+- [ ] 24.1.4 — Create `SparkleUnlock` particle effect: 12 particles bursting outward, fading over 0.5s.
+- [ ] 24.1.5 — Coordinate timing using `DispatchQueue.main.asyncAfter` with calculated delays.
+- [ ] 24.1.6 — Haptic accompaniment: `.impact(.light)` for each unlock.
+- [ ] 24.1.7 — Only trigger when `newTierRank > oldTierRank` (not on lateral moves).
+- [ ] 24.1.8 — Add integration test: upgrade from Free to Pro → verify exactly which features unlock.
+
+---
+
+### Story 24.2 — Feature Lock Dimming Effect on Downgrade
+
+**As a** user downgrading tiers,  
+**I want** features that become locked to dim gracefully,  
+**So that** the transition is smooth and not jarring.
+
+**Acceptance Criteria:**
+- On downgrade: features losing access dim from full color to grayscale + lock overlay.
+- Dimming takes 1 second per feature with 0.1s stagger.
+- No ripple effect on downgrade (somber, not celebratory).
+- After dimming completes: show a single summary toast of what changed.
+
+**Subtasks:**
+- [ ] 24.2.1 — Calculate features losing access: old tier's features minus new tier's features.
+- [ ] 24.2.2 — Apply `.saturation(0.2)` animation over 1 second to each losing feature's UI.
+- [ ] 24.2.3 — Fade in lock overlay after desaturation completes.
+- [ ] 24.2.4 — Stagger: each feature delays by 0.1s × index in the losing list.
+- [ ] 24.2.5 — After all dimming: show summary toast: "X features adjusted to match your [tier] plan".
+- [ ] 24.2.6 — No haptic feedback on individual dims (only one gentle haptic at the end).
+- [ ] 24.2.7 — Add integration test: downgrade from Royal to Free → verify all features dim.
+
+---
+
+### Story 24.3 — Tier Card Selection Micro-interactions
+
+**As a** user browsing tier cards on the Membership page,  
+**I want** rich micro-interactions on the tier cards,  
+**So that** the selection experience feels premium and tactile.
+
+**Acceptance Criteria:**
+- Hovering/pressing a tier card: subtle scale (0.98) + shadow depth increase.
+- Selecting a tier: checkmark icon pops in with spring, border animates to tier gradient, previous card's checkmark pops out.
+- Selected card gently pulses its background gradient (subtle, not distracting).
+- Scroll-triggered parallax: tier icons shift slightly as user scrolls.
+- All animations use spring curves with 0.3s response time.
+
+**Subtasks:**
+- [ ] 24.3.1 — Add press state: `.scaleEffect(isPressed ? 0.98 : 1.0)` with `.shadow` depth change.
+- [ ] 24.3.2 — Checkmark pop-in: `.transition(.scale.combined(with: .opacity))` with spring.
+- [ ] 24.3.3 — Border animation: use `matchedGeometryEffect` for the selection indicator or animate stroke.
+- [ ] 24.3.4 — Selected card gradient pulse: `.opacity` oscillating 0.85↔1.0, 3-second loop.
+- [ ] 24.3.5 — Scroll parallax on tier icon: `GeometryReader` + `.offset(y: scrollProgress * 8)`.
+- [ ] 24.3.6 — Deselection animation: reverse of selection, 0.2s.
+- [ ] 24.3.7 — Add snapshot tests for pressed, selected, and default states.
+
+---
+
+## Appendix D: Glossary
+
+| Term | Definition |
+|---|---|
+| **Tier** | A membership level (Free, Pro, Elite, Royal, Trial) that determines feature access. |
+| **Gating** | The logic that enables or disables features based on the user's current tier. |
+| **Soft Gate** | A feature boundary that shows a preview and upgrade prompt rather than hard-blocking the user. |
+| **Hard Gate** | A feature that is completely inaccessible (e.g., can't start a game after practice time expires). |
+| **Downgrade** | Moving from a higher tier to a lower one (e.g., Royal → Free). |
+| **Upgrade** | Moving from a lower tier to a higher one (e.g., Free → Pro). |
+| **Dormant Settings** | User preferences saved during a higher tier that can be restored on re-upgrade. |
+| **Feature Flag** | A boolean or enum value in `TierManager` that controls whether a feature is accessible. |
+| **Ripple Effect** | The visual propagation animation that activates newly unlocked features on upgrade. |
+| **Tier Rank** | A numeric ordering of tiers for comparison: Free(0) < Pro(1) < Elite(2) < Royal(3). Trial = Royal rank. |
+| **Practice Time** | The cumulative active time spent in game sessions, tracked per calendar day. |
+| **Streak Freeze** | A consumable that prevents a streak from breaking on a missed practice day. |
+| **Soundscape** | An ambient audio track that plays during learning sessions for immersive atmosphere. |
+| **Breathing Orbs** | An animated visual effect rendered with Metal shaders as a background customization. |
+| **Quantum Flow** | A set of Metal shader-based animated background scenes with dynamic particles. |
+| **Nebula Drift** | A set of ambient nebula-themed background presets with slow-moving cosmic visuals. |
+
+---
+
+## Appendix E: Testing Strategy
+
+### Unit Testing Coverage
+
+Each Epic should have unit tests covering:
+1. **Tier → Feature mapping**: Verify correct access for every tier × feature combination.
+2. **Boundary conditions**: Test at exact limits (e.g., 30-minute mark, 14-day trial expiry).
+3. **State transitions**: Upgrade, downgrade, and lateral tier changes.
+4. **Edge cases**: Corrupt data, missing data, concurrent changes.
+
+### Integration Testing
+
+Key integration test scenarios:
+1. **Full lifecycle**: New user → trial → trial expires → free → upgrade to Pro → downgrade to Free.
+2. **Feature cascade**: Change tier → verify all features update in correct order.
+3. **Persistence**: Change tier → kill app → relaunch → verify tier and all feature states.
+4. **Multi-device**: Change tier on device A → verify sync to device B.
+
+### Snapshot Testing
+
+All visual states should have snapshot tests:
+1. **Each feature in locked/unlocked state** × light/dark mode.
+2. **Each tier card** in selected/unselected/disabled state.
+3. **Upgrade prompts** for each feature.
+4. **Session results** at each tier level.
+5. **Dashboard layout** at each tier level.
+
+### Accessibility Testing
+
+1. VoiceOver navigation through all locked features.
+2. Dynamic Type rendering at default, XXXL, and AX5 sizes.
+3. Reduced Motion: verify all gating animations respect `UIAccessibility.isReduceMotionEnabled`.
+4. Color Blind: verify tier color coding is distinguishable (add pattern/shape differentiation).
+
+---
+
+*End of Document — Total: 24 Epics, 52 Stories, 356 Subtasks*

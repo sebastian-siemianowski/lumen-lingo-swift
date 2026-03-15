@@ -344,41 +344,93 @@ struct LanguagePair: Equatable, Hashable, Codable {
 // MARK: - Membership Tier
 
 enum MembershipTier: String, CaseIterable, Identifiable {
-    case starter
+    case trial
+    case free
     case pro
     case elite
     case royal
 
     var id: String { rawValue }
 
-    var displayName: String { rawValue.capitalized }
+    /// Numeric rank for comparison: higher = more premium.
+    var rank: Int {
+        switch self {
+        case .free:  return 0
+        case .pro:   return 1
+        case .elite: return 2
+        case .royal: return 3
+        case .trial: return 3  // Trial = Royal-level access
+        }
+    }
+
+    var displayName: String {
+        switch self {
+        case .trial: return "Royal Trial"
+        case .free:  return "Starter"
+        case .pro:   return "Pro"
+        case .elite: return "Elite"
+        case .royal: return "Royal"
+        }
+    }
 
     var monthlyPrice: Decimal {
         switch self {
-        case .starter: return 0
-        case .pro: return 9.99
-        case .elite: return 19.99
-        case .royal: return 99.99
+        case .trial:   return 0
+        case .free:    return 0
+        case .pro:     return 9.99
+        case .elite:   return 19.99
+        case .royal:   return 99.99
         }
     }
 
     var iconName: String {
         switch self {
-        case .starter: return "star"
-        case .pro: return "star.fill"
-        case .elite: return "crown"
+        case .trial: return "gift.fill"
+        case .free:  return "globe"
+        case .pro:   return "bolt.fill"
+        case .elite: return "sparkles"
         case .royal: return "crown.fill"
+        }
+    }
+
+    var gradientColors: [Color] {
+        switch self {
+        case .trial: return [Color(hex: "#fbbf24"), Color(hex: "#a855f7"), Color(hex: "#ec4899")]
+        case .free:  return [Color(hex: "#94a3b8"), Color(hex: "#64748b")]
+        case .pro:   return [Color(hex: "#a855f7"), Color(hex: "#d946ef"), Color(hex: "#ec4899")]
+        case .elite: return [Color(hex: "#7c3aed"), Color(hex: "#9333ea"), Color(hex: "#a21caf")]
+        case .royal: return [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#f43f5e")]
         }
     }
 
     var accentColor: Color {
         switch self {
-        case .starter: return .gray
-        case .pro: return .blue
-        case .elite: return .purple
+        case .trial: return .orange
+        case .free:  return .gray
+        case .pro:   return .purple
+        case .elite: return .cyan
         case .royal: return .yellow
         }
     }
+
+    /// Initialise from a tier ID string (e.g. from MembershipView or UserProfile).
+    /// Falls back to `.free` for unknown values.
+    init(tierId: String) {
+        self = MembershipTier(rawValue: tierId) ?? .free
+    }
+}
+
+// MARK: - Premium Feature
+
+/// Features that can be gated by tier.
+enum PremiumFeature: Equatable {
+    case soundscapes
+    case languagePairs
+    case unlimitedPractice
+    case breathingOrbs
+    case quantumFlow
+    case nebulaDrift
+    case offlineMode
 }
 
 // MARK: - Breathing Orb Color Scheme

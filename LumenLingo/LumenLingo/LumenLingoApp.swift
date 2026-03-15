@@ -7,6 +7,7 @@ import SwiftData
 struct LumenLingoApp: App {
     @State private var themeManager = ThemeManager()
     @State private var localizationManager = LocalizationManager()
+    @State private var tierManager = TierManager()
 
     private var debugBackgroundOnly: Bool {
         ProcessInfo.processInfo.environment["LL_DEBUG_BACKGROUND_ONLY"] == "1"
@@ -31,6 +32,7 @@ struct LumenLingoApp: App {
                 }
             }
             .environment(themeManager)
+            .environment(tierManager)
             .environment(\.localization, localizationManager)
             .preferredColorScheme(themeManager.colorScheme)
         }

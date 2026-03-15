@@ -198,6 +198,14 @@ struct ProfileView: View {
                     }
                 }
 
+                // Tier badge — tapping navigates to Membership
+                NavigationLink {
+                    MembershipView()
+                } label: {
+                    TierBadgeView()
+                }
+                .buttonStyle(.plain)
+
                 // Quick stats row
                 HStack(spacing: 0) {
                     quickStat(value: "\(profile?.totalXP ?? 0)", label: L.xp, icon: "bolt.fill", color: .cyan)

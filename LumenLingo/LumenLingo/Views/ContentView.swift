@@ -9,6 +9,7 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(ThemeManager.self) private var themeManager
+    @Environment(TierManager.self) private var tierManager
     @Environment(\.localization) private var localization
 
     @Query private var profiles: [UserProfile]
@@ -108,6 +109,7 @@ struct ContentView: View {
             setupServices()
             localization.update(from: languagePrefs)
             themeManager.syncFromProfile(profile)
+            tierManager.syncFromProfile(profile)
             if let profile {
                 audioService.syncFromProfile(profile)
                 hapticsService.syncFromProfile(profile)

@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 // MARK: - Membership View
 
@@ -7,6 +8,9 @@ import SwiftUI
 struct MembershipView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(TierManager.self) private var tierManager
+    @Query private var profiles: [UserProfile]
+    private var profile: UserProfile? { profiles.first }
     @State private var showComparison = false
     @State private var selectedTierId: String = "free"
 
@@ -47,6 +51,9 @@ struct MembershipView: View {
         )
         .navigationBarTitleDisplayMode(.inline)
         .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
+        .onAppear {
+            selectedTierId = tierManager.currentTierId
+        }
     }
 
     // MARK: - Hero
@@ -307,6 +314,9 @@ struct MembershipView: View {
 struct TierCardView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(TierManager.self) private var tierManager
+    @Query private var profiles: [UserProfile]
+    private var profile: UserProfile? { profiles.first }
     private var L: AppStrings { localization.strings }
     private var isDark: Bool { colorScheme == .dark }
 
@@ -472,14 +482,13 @@ struct TierCardView: View {
                     withAnimation(.spring(response: 0.08, dampingFraction: 0.80)) {
                         ctaPressed = true
                     }
-                    let g = UIImpactFeedbackGenerator(style: .medium)
-                    g.impactOccurred()
                     AudioService.shared.playTierSelect()
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
                         withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
                             ctaPressed = false
                             selectedTierId = tier.id
                         }
+                        tierManager.selectTier(tier.id, profile: profile)
                     }
                 }
                 .opacity(isSelected ? 0.5 : 1.0)
