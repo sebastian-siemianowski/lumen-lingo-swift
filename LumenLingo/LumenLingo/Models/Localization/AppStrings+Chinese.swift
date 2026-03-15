@@ -308,6 +308,16 @@ extension AppStrings {
         allScenes: "所有场景",
         presets3: "3个预设",
         allPresets: "所有预设",
-        min15: "15分钟"
+        min15: "15分钟",
+
+        // Offline Mode / Connectivity
+        offlineMode: "离线模式",
+        offlineModeDescription: "无需网络连接即可使用内容",
+        offlineModeLockedDescription: "升级到Pro以离线使用内容",
+        connectToUse: "连接网络以使用内容",
+        connectivityRequired: "免费版需要网络连接才能访问内容",
+        offlineModeInfo: "启用离线模式后，无需网络连接即可使用内容。Pro及以上等级可随时随地学习。",
+        offlineModeDisabled: "离线模式已禁用",
+        offlineModeDisabledDetail: "您的等级不再包含离线访问"
     )
 }

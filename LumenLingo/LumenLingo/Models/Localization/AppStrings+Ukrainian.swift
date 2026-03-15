@@ -308,6 +308,16 @@ extension AppStrings {
         allScenes: "Усі сцени",
         presets3: "3 пресети",
         allPresets: "Усі пресети",
-        min15: "15 хв"
+        min15: "15 хв",
+
+        // Offline Mode / Connectivity
+        offlineMode: "Офлайн-режим",
+        offlineModeDescription: "Використовуйте контент без підключення до інтернету",
+        offlineModeLockedDescription: "Оновіть до Pro для використання контенту офлайн",
+        connectToUse: "Підключіться для використання контенту",
+        connectivityRequired: "Безкоштовний план потребує підключення до інтернету для доступу до контенту",
+        offlineModeInfo: "Коли офлайн-режим увімкнено, контент доступний без мережевого підключення. Плани Pro та вище дозволяють навчатися будь-де.",
+        offlineModeDisabled: "Офлайн-режим вимкнено",
+        offlineModeDisabledDetail: "Ваш план більше не включає офлайн-доступ"
     )
 }

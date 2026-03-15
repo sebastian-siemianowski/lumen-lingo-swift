@@ -608,8 +608,14 @@ struct ProfileView: View {
     // MARK: - Sync Tab (Delegated)
 
     private var syncTab: some View {
-        settingsCard(tint: .teal) {
-            SyncStatusView()
+        VStack(spacing: 16) {
+            settingsCard(tint: .teal) {
+                ConnectivitySettingsView()
+            }
+
+            settingsCard(tint: .teal) {
+                SyncStatusView()
+            }
         }
     }
 

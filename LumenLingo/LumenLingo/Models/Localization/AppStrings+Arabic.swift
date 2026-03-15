@@ -306,6 +306,16 @@ extension AppStrings {
         allScenes: "جميع المشاهد",
         presets3: "٣ إعدادات",
         allPresets: "جميع الإعدادات",
-        min15: "١٥ دقيقة"
+        min15: "١٥ دقيقة",
+
+        // Offline Mode / Connectivity
+        offlineMode: "وضع عدم الاتصال",
+        offlineModeDescription: "استخدم المحتوى بدون اتصال بالإنترنت",
+        offlineModeLockedDescription: "قم بالترقية إلى Pro لاستخدام المحتوى بدون اتصال",
+        connectToUse: "اتصل لاستخدام المحتوى",
+        connectivityRequired: "تتطلب الخطة المجانية اتصالاً بالإنترنت للوصول إلى المحتوى",
+        offlineModeInfo: "عند تفعيل وضع عدم الاتصال، يكون المحتوى متاحاً بدون اتصال شبكي. يمكن لخطط Pro والأعلى التعلم في أي مكان.",
+        offlineModeDisabled: "تم تعطيل وضع عدم الاتصال",
+        offlineModeDisabledDetail: "لم تعد خطتك تتضمن الوصول بدون اتصال"
     )
 }

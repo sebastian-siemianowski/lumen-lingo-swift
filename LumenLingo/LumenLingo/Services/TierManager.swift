@@ -8,6 +8,7 @@ extension Notification.Name {
     static let breathingOrbsAutoDisabled = Notification.Name("breathingOrbsAutoDisabled")
     static let quantumFlowAutoAdjusted = Notification.Name("quantumFlowAutoAdjusted")
     static let nebulaDriftAutoAdjusted = Notification.Name("nebulaDriftAutoAdjusted")
+    static let offlineModeAutoDisabled = Notification.Name("offlineModeAutoDisabled")
 }
 
 // MARK: - Tier Manager
@@ -199,6 +200,13 @@ final class TierManager {
         preset.sortOrder < allowedCount(for: .nebulaDrift)
     }
 
+    // MARK: - Offline Mode Gating
+
+    /// Whether the current tier can use offline mode (Pro+).
+    var offlineModeAvailable: Bool {
+        hasAccess(to: .offlineMode)
+    }
+
     // MARK: - Sync
 
     /// Sync tier from `UserProfile` on app launch / view appear.
@@ -290,6 +298,12 @@ final class TierManager {
                         NotificationCenter.default.post(name: .nebulaDriftAutoAdjusted, object: nil)
                     }
                 }
+            }
+
+            // Offline mode: disable on downgrade to free
+            if !offlineModeAvailable, profile?.offlineModeEnabled == true {
+                profile?.offlineModeEnabled = false
+                NotificationCenter.default.post(name: .offlineModeAutoDisabled, object: nil)
             }
         }
 

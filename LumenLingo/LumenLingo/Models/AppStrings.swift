@@ -317,6 +317,16 @@ struct AppStrings {
     let allPresets: String         // "All presets"
     let min15: String              // "15 min"
 
+    // MARK: - Offline Mode / Connectivity
+    let offlineMode: String
+    let offlineModeDescription: String
+    let offlineModeLockedDescription: String
+    let connectToUse: String
+    let connectivityRequired: String
+    let offlineModeInfo: String
+    let offlineModeDisabled: String
+    let offlineModeDisabledDetail: String
+
     // MARK: - Factory
 
     static func forLanguage(_ lang: SupportedLanguage) -> AppStrings {

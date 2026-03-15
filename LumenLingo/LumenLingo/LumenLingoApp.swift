@@ -9,6 +9,7 @@ struct LumenLingoApp: App {
     @State private var localizationManager = LocalizationManager()
     @State private var tierManager = TierManager()
     @State private var practiceTimeTracker = PracticeTimeTracker()
+    @State private var networkMonitor = NetworkMonitor()
 
     private var debugBackgroundOnly: Bool {
         ProcessInfo.processInfo.environment["LL_DEBUG_BACKGROUND_ONLY"] == "1"
@@ -35,6 +36,7 @@ struct LumenLingoApp: App {
             .environment(themeManager)
             .environment(tierManager)
             .environment(practiceTimeTracker)
+            .environment(networkMonitor)
             .environment(\.localization, localizationManager)
             .preferredColorScheme(themeManager.colorScheme)
         }

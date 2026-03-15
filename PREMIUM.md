@@ -627,7 +627,7 @@
 
 ---
 
-## Epic 8: Offline Mode Gating (IMPORTANT MAKE IT COSMETIC - Currently no content is downloaded offline - simply make sure user has to be connected to internet on Free Tier - Modify stories accordingly)
+## Epic 8: Offline Mode Gating ✅ (COSMETIC — Free tier requires connectivity, Pro+ can use offline)
 
 ### Story 8.1 — Gate Offline Mode by Tier
 
@@ -647,58 +647,58 @@
 - Downloaded content is removed if user downgrades to Free.
 
 **Subtasks:**
-- [ ] 8.1.1 — Add `offlineModeAvailable: Bool` to `TierManager` (false for free, true for all others).
-- [ ] 8.1.2 — In Settings, show offline toggle with`.disabled(!tierManager.offlineModeAvailable)`.
-- [ ] 8.1.3 — Add "PRO" badge next to disabled toggle for Free users.
-- [ ] 8.1.4 — Tapping disabled toggle shows upgrade prompt sheet.
-- [ ] 8.1.5 — Add unit test: free → offline unavailable; pro → offline available.
+- [x] 8.1.1 — Add `offlineModeAvailable: Bool` to `TierManager` (false for free, true for all others).
+- [x] 8.1.2 — In Settings, show offline toggle with`.disabled(!tierManager.offlineModeAvailable)`.
+- [x] 8.1.3 — Add "PRO" badge next to disabled toggle for Free users.
+- [x] 8.1.4 — Tapping disabled toggle shows upgrade prompt sheet.
+- [x] 8.1.5 — Add unit test: free → offline unavailable; pro → offline available.
 
 ---
 
-### Story 8.2 — Offline Content Download Manager
+### Story 8.2 — Connectivity Monitor & Free Tier Gate ✅ (Modified: no downloadable content)
 
-**As a** Pro+ user enabling offline mode,  
-**I want** to download content for my active language pairs,  
-**So that** I can practice without connectivity.
+**As a** Free tier user going offline,  
+**I want** to see a connectivity warning banner,  
+**So that** I know I need an internet connection to use the app.
 
 **Acceptance Criteria:**
-- Download starts automatically when offline mode is toggled on.
-- Progress indicator shows: total size, downloaded size, percentage, estimated time.
-- Download respects Wi-Fi only preference (configurable in settings).
-- Content includes: flashcard decks, grammar exercises, word builder data for unlocked pairs.
-- Downloaded content is stored in the app's sandboxed documents directory.
+- Shared `NetworkMonitor` @Observable service monitors connectivity app-wide.
+- SignOutView uses shared NetworkMonitor instead of its own local NWPathMonitor.
+- Dashboard shows an `OfflineBanner` for Free users when offline.
+- Banner includes PRO badge button leading to upgrade sheet.
+- ConnectivitySettingsView in Sync tab shows real-time connection status.
 
 **Subtasks:**
-- [ ] 8.2.1 — Create `OfflineContentManager` service with download queue.
-- [ ] 8.2.2 — Determine content items to download based on unlocked language pairs.
-- [ ] 8.2.3 — Create `DownloadProgressView` with animated progress bar and stats.
-- [ ] 8.2.4 — Add Wi-Fi only toggle in offline settings.
-- [ ] 8.2.5 — Use `URLSession` background download task for reliability.
-- [ ] 8.2.6 — Store downloaded content in `FileManager.default.urls(for: .documentDirectory)`.
-- [ ] 8.2.7 — Add `OfflineContentManager.isContentAvailable(for pair:) -> Bool`.
-- [ ] 8.2.8 — Add unit test: download completes → content is available offline.
+- [x] 8.2.1 — Create `NetworkMonitor` @Observable service using NWPathMonitor.
+- [x] 8.2.2 — Inject `NetworkMonitor` via `.environment()` in LumenLingoApp.
+- [x] 8.2.3 — Create `OfflineBanner` view with connectivity warning + PRO badge CTA.
+- [x] 8.2.4 — Add `OfflineBanner` to Dashboard tab in ContentView.
+- [x] 8.2.5 — Refactor SignOutView to use shared NetworkMonitor.
+- [x] 8.2.6 — Create `ConnectivitySettingsView` with offline mode toggle + status.
+- [x] 8.2.7 — Add ConnectivitySettingsView to Profile → Sync tab.
+- [x] 8.2.8 — Add localization strings for all 9 languages.
 
 ---
 
-### Story 8.3 — Offline Content Cleanup on Downgrade
+### Story 8.3 — Offline Mode Reset on Downgrade ✅ (Modified: no content cleanup, only toggle reset)
 
 **As a** user who downgrades to Free,  
-**I want** downloaded offline content to be cleaned up,  
-**So that** the app doesn't waste storage on content I can't access.
+**I want** offline mode to be automatically disabled,  
+**So that** the toggle reflects my tier's capabilities.
 
 **Acceptance Criteria:**
-- On downgrade to Free: delete all downloaded offline content.
-- Show confirmation before deletion: "Offline content will be removed. [X] MB will be freed."
-- Deletion happens in background to avoid UI blocking.
-- Offline mode toggle resets to off.
+- On downgrade to Free: `offlineModeEnabled` resets to false.
+- Post `.offlineModeAutoDisabled` notification for toast display.
+- Downgrade toast shown in ConnectivitySettingsView.
+- Upgrade does not auto-enable offline mode.
 
 **Subtasks:**
-- [ ] 8.3.1 — In `TierManager.didSet`, if new tier is free and offline content exists, schedule cleanup.
-- [ ] 8.3.2 — Show confirmation alert with storage size info.
-- [ ] 8.3.3 — `OfflineContentManager.deleteAllContent()` runs on background queue.
-- [ ] 8.3.4 — Reset `UserProfile.offlineModeEnabled` to false.
-- [ ] 8.3.5 — Update UI to reflect disabled state.
-- [ ] 8.3.6 — Add unit test: downgrade → content removed → toggle reset.
+- [x] 8.3.1 — In `TierManager.selectTier`, disable offline mode on downgrade to free.
+- [x] 8.3.2 — Post `.offlineModeAutoDisabled` notification.
+- [x] 8.3.3 — Add `offlineModeEnabled: Bool` property to `UserProfile` (SwiftData).
+- [x] 8.3.4 — ConnectivitySettingsView shows downgrade toast on notification.
+- [x] 8.3.5 — Downgrade to Pro from Elite keeps offline mode enabled.
+- [x] 8.3.6 — Unit tests: downgrade→disabled, upgrade→not auto-enabled, pro→pro keeps state.
 
 ---
 
@@ -930,33 +930,6 @@
 - [ ] 11.1.6 — Add smooth animations for lock icon appear/disappear on tier change.
 - [ ] 11.1.7 — Add unit test: free tier → 3 sub-tabs locked; pro → 2 locked; elite/royal → 0 locked.
 
----
-
-### Story 11.2 — Theme Customization Depth by Tier
-
-**As a** paid tier user,  
-**I want** deeper theme customization options,  
-**So that** my app feels truly personalized.
-
-**Acceptance Criteria:**
-- Free tier: Light/Dark mode toggle only.
-- Pro tier: Light/Dark + accent color picker (6 predefined colors).
-- Elite tier: Pro features + custom background opacity slider.
-- Royal tier: Elite features + gradient direction picker + glass material intensity slider.
-- Locked options show the minimum tier badge and are non-interactive.
-
-**Subtasks:**
-- [ ] 11.2.1 — Create `ThemeCustomizationLevel` enum: `.basic`, `.standard`, `.advanced`, `.premium`.
-- [ ] 11.2.2 — Map tiers to customization levels: free→basic, pro→standard, elite→advanced, royal/trial→premium.
-- [ ] 11.2.3 — In theme settings view, conditionally render controls based on `TierManager.themeLevel`.
-- [ ] 11.2.4 — For locked controls: render disabled with tier badge overlay.
-- [ ] 11.2.5 — Add accent color picker for Pro+: 6 color options in a horizontal row.
-- [ ] 11.2.6 — Add background opacity slider for Elite+: range 0.5–1.0, default 0.85.
-- [ ] 11.2.7 — Add gradient direction picker for Royal: 4 options (top→bottom, leading→trailing, diagonal, radial).
-- [ ] 11.2.8 — Add glass intensity slider for Royal: range 0.3–1.0, default 0.6.
-- [ ] 11.2.9 — Persist all theme settings to `UserProfile`.
-- [ ] 11.2.10 — On downgrade: reset any inaccessible settings to defaults with animation.
-- [ ] 11.2.11 — Add unit tests for each tier's available controls.
 
 ---
 
@@ -996,9 +969,8 @@
 **Acceptance Criteria:**
 - Free tier dashboard: shows game modes, overview stats, daily time remaining indicator, premium feature carousel.
 - Pro tier: shows game modes, overview stats, soundscape now-playing widget, offline status.
-- Elite tier: Pro features + Quantum Flow mini-preview widget.
-- Royal tier: Elite features + Nebula Drift mini-preview + "Royal" badge in header.
-- All unlocked widgets animate in with staggered spring transitions.
+- Elite tier: Pro features .
+- Royal tier: Elite features + "Royal" badge in header.
 
 **Subtasks:**
 - [ ] 12.1.1 — Create `DashboardWidgetConfig` struct listing widgets per tier.
@@ -1006,9 +978,6 @@
 - [ ] 12.1.3 — In `DashboardView`, iterate over `dashboardWidgets` to render dynamic layout.
 - [ ] 12.1.4 — Create `SoundscapeNowPlaying` widget: mini player with current soundscape name and pause/play.
 - [ ] 12.1.5 — Create `OfflineStatusWidget`: shows downloaded/available content count.
-- [ ] 12.1.6 — Create `QuantumFlowPreviewWidget`: small thumbnail of active scene.
-- [ ] 12.1.7 — Create `NebulaDriftPreviewWidget`: small thumbnail of active preset.
-- [ ] 12.1.8 — Add staggered animations: each widget delays by 0.05s × index.
 - [ ] 12.1.9 — On tier change: widgets add/remove with spring transitions.
 - [ ] 12.1.10 — Add snapshot tests for each tier's dashboard layout.
 
@@ -1075,14 +1044,12 @@
 - Free tier: session ends when daily practice time expires (after current question completes).
 - Free tier: no soundscape playback during sessions.
 - Pro: soundscape can play during sessions (if enabled in settings).
-- Elite+: soundscapes + visual enhancements (subtle particle effects) during sessions.
 - Session UI shows no tier badges — immersive, distraction-free.
 
 **Subtasks:**
 - [ ] 13.1.1 — In game session view, check `PracticeTimeTracker.remainingTime` each question.
 - [ ] 13.1.2 — If time expires: complete current question, save progress, show expired view.
 - [ ] 13.1.3 — If soundscape is enabled and tier allows: play ambient audio via `AudioService`.
-- [ ] 13.1.4 — If tier is Elite+: enable subtle background particle effects.
 - [ ] 13.1.5 — Remove all tier badges/indicators from in-session UI (keep it clean).
 - [ ] 13.1.6 — Add unit test: free tier → session ends on time expiry with progress saved.
 - [ ] 13.1.7 — Add unit test: pro tier → soundscape plays during session.

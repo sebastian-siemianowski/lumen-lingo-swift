@@ -309,6 +309,16 @@ extension AppStrings {
         allScenes: "Todas las escenas",
         presets3: "3 preajustes",
         allPresets: "Todos los preajustes",
-        min15: "15 min"
+        min15: "15 min",
+
+        // Offline Mode / Connectivity
+        offlineMode: "Modo sin conexión",
+        offlineModeDescription: "Usa el contenido sin conexión a internet",
+        offlineModeLockedDescription: "Actualiza a Pro para usar contenido sin conexión",
+        connectToUse: "Conéctate para usar el contenido",
+        connectivityRequired: "El nivel gratuito requiere conexión a internet para acceder al contenido",
+        offlineModeInfo: "Cuando el modo sin conexión está activado, el contenido está disponible sin red. Los niveles Pro y superiores pueden aprender en cualquier lugar.",
+        offlineModeDisabled: "Modo sin conexión desactivado",
+        offlineModeDisabledDetail: "Tu nivel ya no incluye acceso sin conexión"
     )
 }

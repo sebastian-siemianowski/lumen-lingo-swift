@@ -54,6 +54,9 @@ final class UserProfile {
     /// Selected membership tier (persisted across launches). Defaults to "free".
     var selectedTierId: String = "free"
 
+    /// Whether offline mode is enabled (Pro+ feature). Free tier always false.
+    var offlineModeEnabled: Bool = false
+
     /// Level scales quadratically: cumulative XP for level L = 50·L·(L−1).
     /// Each level costs 100·L XP, so reaching high levels takes real dedication.
     var currentLevel: Int {
@@ -144,7 +147,8 @@ final class UserProfile {
         uiSoundsVolume: Float = 1.0,
         achievementSoundsVolume: Float = 1.0,
         ambientVolume: Float = 0.3,
-        selectedTierId: String = "free"
+        selectedTierId: String = "free",
+        offlineModeEnabled: Bool = false
     ) {
         self.totalXP = totalXP
         self.dailyStreak = dailyStreak
@@ -186,6 +190,7 @@ final class UserProfile {
         self.achievementSoundsVolume = achievementSoundsVolume
         self.ambientVolume = ambientVolume
         self.selectedTierId = selectedTierId
+        self.offlineModeEnabled = offlineModeEnabled
     }
 }
 

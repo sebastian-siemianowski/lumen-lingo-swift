@@ -1,5 +1,4 @@
 import SwiftUI
-import Network
 
 // MARK: - Sign Out View
 
@@ -8,18 +7,16 @@ import Network
 struct SignOutView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(NetworkMonitor.self) private var networkMonitor
 
     private var L: AppStrings { localization.strings }
 
-    @State private var isOnline = true
     @State private var isLoggingOut = false
     @State private var logoutStep = ""
     @State private var showConfirmation = false
 
-    // Network monitor
-    @State private var networkMonitor: NWPathMonitor?
-
     private var isDark: Bool { colorScheme == .dark }
+    private var isOnline: Bool { networkMonitor.isConnected }
 
     var body: some View {
         VStack(spacing: 20) {
@@ -42,8 +39,6 @@ struct SignOutView: View {
                 logoutProgressView
             }
         }
-        .onAppear { startNetworkMonitoring() }
-        .onDisappear { stopNetworkMonitoring() }
     }
 
     // MARK: - Network Status
@@ -257,23 +252,5 @@ struct SignOutView: View {
                 // via the AuthService. For mock, we simply reset.
             }
         }
-    }
-
-    // MARK: - Network Monitoring
-
-    private func startNetworkMonitoring() {
-        let monitor = NWPathMonitor()
-        monitor.pathUpdateHandler = { path in
-            DispatchQueue.main.async {
-                isOnline = (path.status == .satisfied)
-            }
-        }
-        monitor.start(queue: DispatchQueue(label: "NetworkMonitor"))
-        networkMonitor = monitor
-    }
-
-    private func stopNetworkMonitoring() {
-        networkMonitor?.cancel()
-        networkMonitor = nil
     }
 }

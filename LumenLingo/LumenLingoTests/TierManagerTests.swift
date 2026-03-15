@@ -1041,4 +1041,122 @@ final class TierManagerTests: XCTestCase {
     func testNebulaDriftNotificationName() {
         XCTAssertEqual(Notification.Name.nebulaDriftAutoAdjusted.rawValue, "nebulaDriftAutoAdjusted")
     }
+
+    // MARK: - Offline Mode Gating
+
+    func testFreeTierOfflineModeNotAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertFalse(manager.offlineModeAvailable)
+    }
+
+    func testProTierOfflineModeAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        XCTAssertTrue(manager.offlineModeAvailable)
+    }
+
+    func testEliteTierOfflineModeAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        XCTAssertTrue(manager.offlineModeAvailable)
+    }
+
+    func testRoyalTierOfflineModeAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        XCTAssertTrue(manager.offlineModeAvailable)
+    }
+
+    func testTrialTierOfflineModeAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "trial"
+        XCTAssertTrue(manager.offlineModeAvailable)
+    }
+
+    func testOfflineModeAllowedCount_Free0() {
+        XCTAssertEqual(TierManager.allowedCount(for: .offlineMode, tier: .free), 0)
+    }
+
+    func testOfflineModeAllowedCount_Pro1() {
+        XCTAssertEqual(TierManager.allowedCount(for: .offlineMode, tier: .pro), 1)
+    }
+
+    func testOfflineModeAllowedCount_Elite1() {
+        XCTAssertEqual(TierManager.allowedCount(for: .offlineMode, tier: .elite), 1)
+    }
+
+    func testOfflineModeAllowedCount_Royal1() {
+        XCTAssertEqual(TierManager.allowedCount(for: .offlineMode, tier: .royal), 1)
+    }
+
+    func testOfflineModeAllowedCount_Trial1() {
+        XCTAssertEqual(TierManager.allowedCount(for: .offlineMode, tier: .trial), 1)
+    }
+
+    // MARK: - Offline Mode Downgrade
+
+    func testOfflineModeDowngradeToFreeDisables() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "pro"
+        manager.syncFromProfile(profile)
+        profile.offlineModeEnabled = true
+
+        manager.selectTier("free", profile: profile)
+
+        XCTAssertFalse(profile.offlineModeEnabled)
+    }
+
+    func testOfflineModeDowngradeProToFreeResetsFlag() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "elite"
+        manager.syncFromProfile(profile)
+        profile.offlineModeEnabled = true
+
+        manager.selectTier("free", profile: profile)
+
+        XCTAssertFalse(profile.offlineModeEnabled)
+    }
+
+    func testOfflineModeDowngradeEliteToProKeepsEnabled() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "elite"
+        manager.syncFromProfile(profile)
+        profile.offlineModeEnabled = true
+
+        // Pro still has offline mode
+        manager.selectTier("pro", profile: profile)
+
+        XCTAssertTrue(profile.offlineModeEnabled)
+    }
+
+    func testOfflineModeUpgradeDoesNotAutoEnable() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "free"
+        manager.syncFromProfile(profile)
+        profile.offlineModeEnabled = false
+
+        manager.selectTier("pro", profile: profile)
+
+        XCTAssertFalse(profile.offlineModeEnabled)
+    }
+
+    func testOfflineModeNotificationName() {
+        XCTAssertEqual(Notification.Name.offlineModeAutoDisabled.rawValue, "offlineModeAutoDisabled")
+    }
+
+    func testOfflineModeDefaultIsFalse() {
+        let profile = UserProfile()
+        XCTAssertFalse(profile.offlineModeEnabled)
+    }
+
+    func testOfflineModeCanBeEnabled() {
+        let profile = UserProfile()
+        profile.offlineModeEnabled = true
+        XCTAssertTrue(profile.offlineModeEnabled)
+    }
 }

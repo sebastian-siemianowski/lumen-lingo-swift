@@ -308,6 +308,16 @@ extension AppStrings {
         allScenes: "Wszystkie sceny",
         presets3: "3 presety",
         allPresets: "Wszystkie presety",
-        min15: "15 min"
+        min15: "15 min",
+
+        // Offline Mode / Connectivity
+        offlineMode: "Tryb offline",
+        offlineModeDescription: "Korzystaj z treści bez połączenia z internetem",
+        offlineModeLockedDescription: "Ulepsz do Pro, aby korzystać z treści offline",
+        connectToUse: "Połącz się, aby korzystać z treści",
+        connectivityRequired: "Plan darmowy wymaga połączenia z internetem, aby uzyskać dostęp do treści",
+        offlineModeInfo: "Gdy tryb offline jest włączony, treści są dostępne bez połączenia sieciowego. Plany Pro i wyższe pozwalają uczyć się wszędzie.",
+        offlineModeDisabled: "Tryb offline wyłączony",
+        offlineModeDisabledDetail: "Twój plan nie obejmuje już dostępu offline"
     )
 }

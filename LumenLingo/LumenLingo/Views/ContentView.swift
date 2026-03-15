@@ -50,10 +50,14 @@ struct ContentView: View {
             TabView(selection: $selectedTab) {
                 // MARK: Dashboard Tab
                 NavigationStack(path: $navigationPath) {
-                    DashboardView(
-                        hideTabBar: $hideTabBar,
-                        navigationPath: $navigationPath
-                    )
+                    VStack(spacing: 0) {
+                        OfflineBanner()
+
+                        DashboardView(
+                            hideTabBar: $hideTabBar,
+                            navigationPath: $navigationPath
+                        )
+                    }
                     .navigationDestination(for: AppRoute.self) { route in
                         routeDestination(for: route)
                     }
