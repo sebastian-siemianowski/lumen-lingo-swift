@@ -22,6 +22,7 @@ struct ContentView: View {
     @State private var hideTabBar: Bool = false
     @State private var navigationPath = NavigationPath()
     @State private var showTrialEnded = false
+    @State private var showTierOnboarding = false
 
     // Services (shared across all views)
     @State private var progressService: ProgressService?
@@ -123,6 +124,10 @@ struct ContentView: View {
             if tierManager.checkTrialExpiration(profile: profile) {
                 showTrialEnded = true
             }
+            // Show tier onboarding on first launch
+            if !UserDefaults.standard.bool(forKey: "hasSeenTierOnboarding") {
+                showTierOnboarding = true
+            }
             if let profile {
                 audioService.syncFromProfile(profile)
                 hapticsService.syncFromProfile(profile)
@@ -168,6 +173,9 @@ struct ContentView: View {
         .environment(practiceTimeTracker)
         .fullScreenCover(isPresented: $showTrialEnded) {
             TrialEndedView()
+        }
+        .fullScreenCover(isPresented: $showTierOnboarding) {
+            TierOnboardingFlow()
         }
     }
 

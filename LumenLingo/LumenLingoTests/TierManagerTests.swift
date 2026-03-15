@@ -2767,6 +2767,132 @@ final class TierManagerTests: XCTestCase {
         tm.pushToCloud(profile: profile)
         XCTAssertEqual(mock.double(forKey: "cloud_trialStartDate"), 0.0)
     }
+
+    // MARK: - Epic 21: Onboarding & First-Run Tier Education Tests
+
+    // MARK: Story 21.1 — TierOnboardingFlow
+
+    func testOnboardingFlagDefaultsFalse() {
+        // hasSeenTierOnboarding defaults to false on fresh install
+        UserDefaults.standard.removeObject(forKey: "hasSeenTierOnboarding")
+        XCTAssertFalse(UserDefaults.standard.bool(forKey: "hasSeenTierOnboarding"))
+    }
+
+    func testOnboardingFlagPersistsAfterSet() {
+        UserDefaults.standard.set(true, forKey: "hasSeenTierOnboarding")
+        XCTAssertTrue(UserDefaults.standard.bool(forKey: "hasSeenTierOnboarding"))
+        // Cleanup
+        UserDefaults.standard.removeObject(forKey: "hasSeenTierOnboarding")
+    }
+
+    func testOnboardingStartTrialActivatesTrial() {
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "free")
+        XCTAssertFalse(profile.hasUsedTrial)
+        let started = tm.startTrial(profile: profile)
+        XCTAssertTrue(started)
+        XCTAssertEqual(tm.currentTier, .trial)
+        XCTAssertNotNil(profile.trialStartDate)
+    }
+
+    func testOnboardingContinueWithFreeKeepsFree() {
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "free")
+        tm.syncFromProfile(profile)
+        // Simulating "Continue with Free" — tier stays free
+        XCTAssertEqual(tm.currentTier, .free)
+        XCTAssertEqual(profile.selectedTierId, "free")
+    }
+
+    // MARK: Story 21.2 — TooltipManager
+
+    func testTooltipManagerShowsOnce() {
+        let manager = TooltipManager()
+        manager.resetAll()
+        XCTAssertTrue(manager.shouldShow(for: "test_tooltip"))
+        manager.markShown(for: "test_tooltip")
+        XCTAssertFalse(manager.shouldShow(for: "test_tooltip"))
+        // Cleanup
+        manager.resetAll()
+    }
+
+    func testTooltipManagerResetAll() {
+        let manager = TooltipManager()
+        manager.markShown(for: "tooltip_a")
+        manager.markShown(for: "tooltip_b")
+        XCTAssertFalse(manager.shouldShow(for: "tooltip_a"))
+        XCTAssertFalse(manager.shouldShow(for: "tooltip_b"))
+        manager.resetAll()
+        XCTAssertTrue(manager.shouldShow(for: "tooltip_a"))
+        XCTAssertTrue(manager.shouldShow(for: "tooltip_b"))
+    }
+
+    func testTooltipManagerIndependentKeys() {
+        let manager = TooltipManager()
+        manager.resetAll()
+        manager.markShown(for: "tooltip_x")
+        XCTAssertFalse(manager.shouldShow(for: "tooltip_x"))
+        XCTAssertTrue(manager.shouldShow(for: "tooltip_y"))
+        // Cleanup
+        manager.resetAll()
+    }
+
+    func testTooltipMarkShownIdempotent() {
+        let manager = TooltipManager()
+        manager.resetAll()
+        manager.markShown(for: "tooltip_z")
+        manager.markShown(for: "tooltip_z") // Double mark
+        let shown = UserDefaults.standard.stringArray(forKey: "shownTooltips") ?? []
+        XCTAssertEqual(shown.filter { $0 == "tooltip_z" }.count, 1, "Should not duplicate entries")
+        // Cleanup
+        manager.resetAll()
+    }
+
+    // MARK: Story 21.3 — allFeatures()
+
+    func testAllFeaturesReturnAllCases() {
+        let tm = TierManager()
+        let features = tm.allFeatures()
+        XCTAssertEqual(features.count, PremiumFeature.allCases.count)
+        let featureSet = Set(features.map(\.feature))
+        for feature in PremiumFeature.allCases {
+            XCTAssertTrue(featureSet.contains(feature), "\(feature) should be in allFeatures()")
+        }
+    }
+
+    func testAllFeaturesFreeHasLimitedAccess() {
+        let tm = TierManager()
+        tm.currentTier = .free
+        let features = tm.allFeatures()
+        // Free tier: only languagePairs should be enabled
+        let enabled = features.filter(\.enabled)
+        XCTAssertEqual(enabled.count, 1, "Free tier should only enable languagePairs")
+        XCTAssertEqual(enabled.first?.feature, .languagePairs)
+    }
+
+    func testAllFeaturesRoyalHasAllAccess() {
+        let tm = TierManager()
+        tm.currentTier = .royal
+        let features = tm.allFeatures()
+        let enabled = features.filter(\.enabled)
+        XCTAssertEqual(enabled.count, PremiumFeature.allCases.count, "Royal tier should enable all features")
+    }
+
+    func testAllFeaturesProHasCorrectAccess() {
+        let tm = TierManager()
+        tm.currentTier = .pro
+        let features = tm.allFeatures()
+        let enabledFeatures = Set(features.filter(\.enabled).map(\.feature))
+        // Pro: soundscapes, languagePairs, unlimitedPractice, breathingOrbs, offlineMode = YES
+        // quantumFlow, nebulaDrift = NO
+        XCTAssertTrue(enabledFeatures.contains(.soundscapes))
+        XCTAssertTrue(enabledFeatures.contains(.languagePairs))
+        XCTAssertTrue(enabledFeatures.contains(.unlimitedPractice))
+        XCTAssertTrue(enabledFeatures.contains(.breathingOrbs))
+        XCTAssertTrue(enabledFeatures.contains(.offlineMode))
+        XCTAssertFalse(enabledFeatures.contains(.quantumFlow))
+        XCTAssertFalse(enabledFeatures.contains(.nebulaDrift))
+    }
 }
 
 // MARK: - Mock Cloud Store

@@ -84,6 +84,14 @@ final class TierManager {
         return Self.allowedCount(for: feature, tier: currentTier)
     }
 
+    /// Returns all premium features with their enabled/disabled status for the current tier.
+    /// Ordered by perceived value (most impactful first).
+    func allFeatures() -> [(feature: PremiumFeature, enabled: Bool)] {
+        PremiumFeature.allCases.map { feature in
+            (feature: feature, enabled: hasAccess(to: feature))
+        }
+    }
+
     /// Static tier→feature mapping used by both instance and unit tests.
     /// Not affected by debug overrides — always returns the canonical mapping.
     /// `nonisolated` because this is a pure function with no state access.

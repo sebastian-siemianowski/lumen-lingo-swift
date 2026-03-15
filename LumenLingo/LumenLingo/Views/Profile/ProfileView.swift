@@ -76,6 +76,13 @@ struct ProfileView: View {
                     .opacity(headerAppeared ? 1 : 0)
                     .offset(y: headerAppeared ? 0 : 20)
 
+                // My Plan card
+                MyPlanCard()
+                    .padding(.horizontal, 16)
+                    .padding(.top, 14)
+                    .opacity(headerAppeared ? 1 : 0)
+                    .offset(y: headerAppeared ? 0 : 15)
+
                 // Top-level settings tabs
                 settingsTabBar
                     .padding(.top, 20)
@@ -357,6 +364,7 @@ struct ProfileView: View {
                         darkLightSettings
                     case .breathingOrbs:
                         BreathingOrbsSettingsView()
+                            .featureTooltip(key: TooltipKey.breathingOrbs)
                     case .quantumFlow:
                         QuantumFlowSettingsView()
                     case .nebulaDrift:
@@ -541,6 +549,7 @@ struct ProfileView: View {
                         SoundControlsView()
                     case .soundscapes:
                         SoundscapesSettingsView()
+                            .featureTooltip(key: TooltipKey.soundscapes)
                     case .mixer:
                         SoundMixerView()
                     }

@@ -1512,9 +1512,9 @@ Epic 24 (Tier Transitions) depends on Epic 17
 
 ---
 
-## Epic 21: Onboarding & First-Run Tier Education
+## Epic 21: Onboarding & First-Run Tier Education ✅ COMPLETED
 
-### Story 21.1 — First Launch Tier Introduction Flow
+### Story 21.1 — First Launch Tier Introduction Flow ✅
 
 **As a** new user launching the app for the first time,  
 **I want** a brief introduction to the available tiers,  
@@ -1529,20 +1529,20 @@ Epic 24 (Tier Transitions) depends on Epic 17
 - Flow only shows once (first launch).
 
 **Subtasks:**
-- [ ] 21.1.1 — Create `TierOnboardingFlow` view with 3 `TabView` pages.
-- [ ] 21.1.2 — Screen 1: animated demo of flashcard game, "All 3 game modes" bullet, "3 language pairs" bullet.
-- [ ] 21.1.3 — Screen 2: side-by-side Pro/Elite comparison cards with key differentiators.
-- [ ] 21.1.4 — Screen 3: Royal Trial CTA with countdown badge, confetti preview, "Start Free Trial" button.
-- [ ] 21.1.5 — "Start Free Trial" → activate trial and dismiss flow.
-- [ ] 21.1.6 — "Continue with Free" → set tier to free and dismiss flow.
-- [ ] 21.1.7 — "Skip" → set tier to free, skip straight to dashboard.
-- [ ] 21.1.8 — Persist `hasSeenTierOnboarding: Bool` to `UserDefaults`.
-- [ ] 21.1.9 — Page indicator dots at bottom with tier gradient colors.
-- [ ] 21.1.10 — Add unit test: flow shown on first launch, not shown on subsequent launches.
+- [x] 21.1.1 — Create `TierOnboardingFlow` view with 3 `TabView` pages.
+- [x] 21.1.2 — Screen 1: animated demo of flashcard game, "All 3 game modes" bullet, "3 language pairs" bullet.
+- [x] 21.1.3 — Screen 2: side-by-side Pro/Elite comparison cards with key differentiators.
+- [x] 21.1.4 — Screen 3: Royal Trial CTA with countdown badge, confetti preview, "Start Free Trial" button.
+- [x] 21.1.5 — "Start Free Trial" → activate trial and dismiss flow.
+- [x] 21.1.6 — "Continue with Free" → set tier to free and dismiss flow.
+- [x] 21.1.7 — "Skip" → set tier to free, skip straight to dashboard.
+- [x] 21.1.8 — Persist `hasSeenTierOnboarding: Bool` to `UserDefaults`.
+- [x] 21.1.9 — Page indicator dots at bottom with tier gradient colors.
+- [x] 21.1.10 — Add unit test: flow shown on first launch, not shown on subsequent launches.
 
 ---
 
-### Story 21.2 — Contextual Feature Tooltips for New Users
+### Story 21.2 — Contextual Feature Tooltips for New Users ✅
 
 **As a** new user exploring the app after onboarding,  
 **I want** contextual tooltips pointing out premium features as I encounter them,  
@@ -1556,18 +1556,18 @@ Epic 24 (Tier Transitions) depends on Epic 17
 - Tooltips dismiss on tap anywhere or after 5 seconds.
 
 **Subtasks:**
-- [ ] 21.2.1 — Create `FeatureTooltip` view: arrow-pointed bubble with text and optional tier badge.
-- [ ] 21.2.2 — Create `TooltipManager`: tracks shown tooltips in `UserDefaults` set.
-- [ ] 21.2.3 — `TooltipManager.shouldShow(for key:) -> Bool` and `markShown(for key:)`.
-- [ ] 21.2.4 — Define tooltip content and positions for: soundscapes, breathing orbs, practice time, offline mode.
-- [ ] 21.2.5 — Auto-dismiss timer: 5 seconds with fade animation.
-- [ ] 21.2.6 — Tap-to-dismiss on background.
-- [ ] 21.2.7 — Position tooltip using `GeometryReader` anchored to target view.
-- [ ] 21.2.8 — Add unit test: tooltip shown once, not shown again.
+- [x] 21.2.1 — Create `FeatureTooltip` view: arrow-pointed bubble with text and optional tier badge.
+- [x] 21.2.2 — Create `TooltipManager`: tracks shown tooltips in `UserDefaults` set.
+- [x] 21.2.3 — `TooltipManager.shouldShow(for key:) -> Bool` and `markShown(for key:)`.
+- [x] 21.2.4 — Define tooltip content and positions for: soundscapes, breathing orbs, practice time, offline mode.
+- [x] 21.2.5 — Auto-dismiss timer: 5 seconds with fade animation.
+- [x] 21.2.6 — Tap-to-dismiss on background.
+- [x] 21.2.7 — Position tooltip using `GeometryReader` anchored to target view.
+- [x] 21.2.8 — Add unit test: tooltip shown once, not shown again.
 
 ---
 
-### Story 21.3 — "What's Included" Quick Reference
+### Story 21.3 — "What's Included" Quick Reference ✅
 
 **As a** user on any tier,  
 **I want** a quick-access reference of what my tier includes,  
@@ -1581,13 +1581,13 @@ Epic 24 (Tier Transitions) depends on Epic 17
 - Section uses the current tier's gradient for styling.
 
 **Subtasks:**
-- [ ] 21.3.1 — Create `MyPlanCard` view for Profile page with tier icon, name, and mini feature list.
-- [ ] 21.3.2 — Top 3 features: selected from enabled features based on perceived value.
-- [ ] 21.3.3 — "See all features" toggle expands full feature list with enabled/locked indicators.
-- [ ] 21.3.4 — Full list generated from `TierManager.allFeatures() -> [(feature: PremiumFeature, enabled: Bool)]`.
-- [ ] 21.3.5 — "Upgrade" link: styled as text link, not button; navigates to `MembershipView`.
-- [ ] 21.3.6 — Card background uses tier gradient at 10% opacity.
-- [ ] 21.3.7 — Add expand/collapse animation with spring.
+- [x] 21.3.1 — Create `MyPlanCard` view for Profile page with tier icon, name, and mini feature list.
+- [x] 21.3.2 — Top 3 features: selected from enabled features based on perceived value.
+- [x] 21.3.3 — "See all features" toggle expands full feature list with enabled/locked indicators.
+- [x] 21.3.4 — Full list generated from `TierManager.allFeatures() -> [(feature: PremiumFeature, enabled: Bool)]`.
+- [x] 21.3.5 — "Upgrade" link: styled as text link, not button; navigates to `MembershipView`.
+- [x] 21.3.6 — Card background uses tier gradient at 10% opacity.
+- [x] 21.3.7 — Add expand/collapse animation with spring.
 
 ---
 
