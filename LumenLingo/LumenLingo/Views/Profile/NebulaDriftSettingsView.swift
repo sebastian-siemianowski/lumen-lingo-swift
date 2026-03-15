@@ -140,7 +140,8 @@ struct NebulaDriftSettingsView: View {
                         description: preset.localizedDescription(L),
                         previewColors: preset.previewColors,
                         isSelected: profile?.nebulaPresetEnum == preset,
-                        previewHeight: 70
+                        previewHeight: 70,
+                        icon: preset.iconName
                     ) {
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
                             profile?.nebulaPresetEnum = preset

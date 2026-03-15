@@ -422,6 +422,17 @@ enum BreathingOrbScheme: String, CaseIterable, Identifiable {
         }
     }
 
+    var iconName: String {
+        switch self {
+        case .barcelonaNights: return "moon.stars.fill"
+        case .shanghaiShimmeringNexus: return "building.2.crop.circle.fill"
+        case .tokyoSunset: return "sun.horizon.fill"
+        case .newYorkMysticalGardens: return "leaf.circle.fill"
+        case .parisEclatNocturne: return "staroflife.fill"
+        case .krakowLuminescence: return "crown.fill"
+        }
+    }
+
     /// Dark mode orb colors (5 orbs per scheme)
     var darkColors: [[Color]] {
         switch self {
@@ -567,6 +578,17 @@ enum QuantumFlowScene: String, CaseIterable, Identifiable {
         }
     }
 
+    var iconName: String {
+        switch self {
+        case .dubaiCelestialMirage: return "sun.max.fill"
+        case .kyotoSacredTwilight: return "bird.fill"
+        case .buenosAiresTangoFlame: return "flame.fill"
+        case .hongKongHarbourDreams: return "ferry.fill"
+        case .marrakechSpiceReverie: return "wind"
+        case .viennaImperialWaltz: return "music.note"
+        }
+    }
+
     /// Dark mode curtain colors (4 colors per scene)
     var colors: [Color] {
         switch self {
@@ -646,11 +668,11 @@ enum NebulaPreset: String, CaseIterable, Identifiable {
     var iconName: String {
         switch self {
         case .lagoonNebula: return "cloud.fog.fill"
-        case .celestialLagoon: return "water.waves"
-        case .solarAurora: return "cloud.fog.fill"
-        case .spiralHaloGalaxy: return "circle.dashed"
+        case .celestialLagoon: return "drop.triangle.fill"
+        case .solarAurora: return "sun.and.horizon.fill"
+        case .spiralHaloGalaxy: return "hurricane"
         case .edgeOfAndromeda: return "star.fill"
-        case .starburstRing: return "circle.dashed"
+        case .starburstRing: return "rays"
         }
     }
 

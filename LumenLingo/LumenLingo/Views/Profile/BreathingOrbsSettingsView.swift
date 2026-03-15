@@ -148,7 +148,8 @@ struct BreathingOrbsSettingsView: View {
                         description: scheme.description,
                         previewColors: scheme.previewColors,
                         isSelected: profile?.orbScheme == scheme,
-                        previewHeight: 70
+                        previewHeight: 70,
+                        icon: scheme.iconName
                     ) {
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
                             profile?.orbScheme = scheme

@@ -147,7 +147,8 @@ struct QuantumFlowSettingsView: View {
                         description: scene.description,
                         previewColors: scene.previewColors,
                         isSelected: profile?.quantumScene == scene,
-                        previewHeight: 70
+                        previewHeight: 70,
+                        icon: scene.iconName
                     ) {
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
                             profile?.quantumScene = scene
