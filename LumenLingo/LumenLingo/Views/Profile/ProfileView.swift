@@ -24,7 +24,7 @@ struct ProfileView: View {
 
     @State private var activeTab: ProfileTab = .appearance
     @State private var activeAppearanceSubTab: AppearanceSubTab = .darkLight
-    @State private var activeSoundSubTab: SoundSubTab = .controls
+    @State private var activeSoundSubTab: SoundSubTab = .soundscapes
     @State private var showLanguageSelector = false
 
     private var isDark: Bool { colorScheme == .dark }
@@ -58,8 +58,8 @@ struct ProfileView: View {
     }
 
     enum SoundSubTab: String, CaseIterable {
-        case controls = "Controls"
         case soundscapes = "Soundscapes"
+        case controls = "Controls"
         case mixer = "Mixer"
     }
 

@@ -61,6 +61,8 @@ final class AudioService {
 
     private var ambientPlayer: AVAudioPlayer?
     private var ambientFadeTimer: Timer?
+    private var crossfadeOutPlayer: AVAudioPlayer?
+    private var crossfadeOutTimer: Timer?
     private var wasAmbientPlaying = false
     private var currentSoundscape: Soundscape?
     private var currentVariantIndex: Int = 0
@@ -224,7 +226,7 @@ final class AudioService {
         guard let idx = all.firstIndex(of: current) else { return }
         let nextIdx = all.index(after: idx)
         let next = nextIdx < all.endIndex ? all[nextIdx] : all[all.startIndex]
-        crossfadeSoundscape(to: next, variantIndex: 0)
+        quickSkip(to: next, variantIndex: 0)
     }
 
     private func skipToPreviousSoundscape() {
@@ -232,7 +234,63 @@ final class AudioService {
         let all = Soundscape.allCases
         guard let idx = all.firstIndex(of: current) else { return }
         let prev = idx == all.startIndex ? all[all.index(before: all.endIndex)] : all[all.index(before: idx)]
-        crossfadeSoundscape(to: prev, variantIndex: 0)
+        quickSkip(to: prev, variantIndex: 0)
+    }
+
+    /// Fast overlapping crossfade for skip next/previous — instant Now Playing update,
+    /// old soundscape fades out while new one fades in simultaneously.
+    private func quickSkip(to soundscape: Soundscape, variantIndex: Int) {
+        // 1. Immediately update metadata so lock screen feels instant
+        currentSoundscape = soundscape
+        currentVariantIndex = variantIndex
+        updateNowPlayingInfo(isPlaying: true)
+
+        // 2. Move current player to crossfade-out slot and fade it out
+        crossfadeOutTimer?.invalidate()
+        crossfadeOutPlayer?.stop()
+        crossfadeOutPlayer = ambientPlayer
+        ambientPlayer = nil
+        ambientFadeTimer?.invalidate()
+
+        if let outgoing = crossfadeOutPlayer {
+            let fadeSteps = 12
+            let fadeInterval = 0.4 / Double(fadeSteps)
+            let startVol = outgoing.volume
+            let delta = -startVol / Float(fadeSteps)
+            var step = 0
+            crossfadeOutTimer = Timer.scheduledTimer(withTimeInterval: fadeInterval, repeats: true) { [weak self] timer in
+                step += 1
+                outgoing.volume = max(0, startVol + delta * Float(step))
+                if step >= fadeSteps {
+                    timer.invalidate()
+                    self?.crossfadeOutTimer = nil
+                    outgoing.stop()
+                    self?.crossfadeOutPlayer = nil
+                }
+            }
+        }
+
+        // 3. Start new soundscape with quick fade-in
+        let clampedIndex = min(variantIndex, soundscape.variants.count - 1)
+        let variant = soundscape.variants[max(0, clampedIndex)]
+        let targetVolume = ambientVolume * masterVolume * 10
+
+        if let url = bundleURL(for: variant.fileName, extension: "m4a") {
+            do {
+                let player = try AVAudioPlayer(contentsOf: url)
+                player.numberOfLoops = -1
+                player.volume = 0
+                player.prepareToPlay()
+                player.play()
+                self.ambientPlayer = player
+                fadeAmbient(to: targetVolume, duration: 0.6)
+            } catch {
+                print("⚠️ Quick skip playback error: \(error)")
+                startSoundscapeFallback(soundscape)
+            }
+        } else {
+            startSoundscapeFallback(soundscape)
+        }
     }
 
     private func updateNowPlayingInfo(isPlaying: Bool? = nil) {
@@ -1635,6 +1693,10 @@ final class AudioService {
     func stopAmbient(fadeDuration: TimeInterval = 2.0) {
         currentSoundscape = nil
         updateNowPlayingInfo(isPlaying: false)
+        // Clean up any in-progress crossfade
+        crossfadeOutTimer?.invalidate()
+        crossfadeOutPlayer?.stop()
+        crossfadeOutPlayer = nil
         fadeAmbient(to: 0, duration: fadeDuration) { [weak self] in
             self?.ambientPlayer?.stop()
             self?.ambientPlayer = nil
@@ -1642,11 +1704,59 @@ final class AudioService {
         }
     }
 
-    /// Crossfade to a different soundscape variant
+    /// Crossfade to a different soundscape — true overlapping transition
     func crossfadeSoundscape(to soundscape: Soundscape, variantIndex: Int = 0) {
-        stopAmbient(fadeDuration: 1.5)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) { [weak self] in
-            self?.startSoundscape(soundscape, variantIndex: variantIndex)
+        // Update metadata immediately for responsive UI
+        currentSoundscape = soundscape
+        currentVariantIndex = variantIndex
+        updateNowPlayingInfo(isPlaying: true)
+
+        // Move current player to crossfade-out slot
+        crossfadeOutTimer?.invalidate()
+        crossfadeOutPlayer?.stop()
+        crossfadeOutPlayer = ambientPlayer
+        ambientPlayer = nil
+        ambientFadeTimer?.invalidate()
+
+        // Fade out old player over 1s
+        if let outgoing = crossfadeOutPlayer {
+            let fadeSteps = 15
+            let fadeInterval = 1.0 / Double(fadeSteps)
+            let startVol = outgoing.volume
+            let delta = -startVol / Float(fadeSteps)
+            var step = 0
+            crossfadeOutTimer = Timer.scheduledTimer(withTimeInterval: fadeInterval, repeats: true) { [weak self] timer in
+                step += 1
+                outgoing.volume = max(0, startVol + delta * Float(step))
+                if step >= fadeSteps {
+                    timer.invalidate()
+                    self?.crossfadeOutTimer = nil
+                    outgoing.stop()
+                    self?.crossfadeOutPlayer = nil
+                }
+            }
+        }
+
+        // Start new soundscape with 1.2s fade-in (overlaps with fade-out)
+        let clampedIndex = min(variantIndex, soundscape.variants.count - 1)
+        let variant = soundscape.variants[max(0, clampedIndex)]
+        let targetVolume = ambientVolume * masterVolume * 10
+
+        if let url = bundleURL(for: variant.fileName, extension: "m4a") {
+            do {
+                let player = try AVAudioPlayer(contentsOf: url)
+                player.numberOfLoops = -1
+                player.volume = 0
+                player.prepareToPlay()
+                player.play()
+                self.ambientPlayer = player
+                fadeAmbient(to: targetVolume, duration: 1.2)
+            } catch {
+                print("⚠️ Crossfade playback error: \(error)")
+                startSoundscapeFallback(soundscape)
+            }
+        } else {
+            startSoundscapeFallback(soundscape)
         }
     }
 
