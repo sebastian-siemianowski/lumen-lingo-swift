@@ -349,6 +349,14 @@ extension AppStrings {
         trialContinueFree: "继续免费使用",
         trialCompleted: "试用已完成",
         trialCompletedTagline: "您已体验过Royal",
-        trialStartFree: "开始免费试用"
+        trialStartFree: "开始免费试用",
+
+        // MARK: - Dashboard Feature Visibility
+        welcomeName: { "欢迎，\($0)！" },
+        daysLeftInTrial: { "试用还剩 \($0) 天" },
+        thirtyMinPerDay: "30分钟/天",
+        resetsIn: { "\($0)后重置" },
+        nowPlaying: "正在播放",
+        paused: "已暂停"
     )
 }

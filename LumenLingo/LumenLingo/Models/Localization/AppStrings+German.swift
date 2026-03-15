@@ -350,6 +350,14 @@ extension AppStrings {
         trialContinueFree: "Kostenlos Fortfahren",
         trialCompleted: "Testversion Abgeschlossen",
         trialCompletedTagline: "Sie haben Royal erlebt",
-        trialStartFree: "Kostenlose Testversion Starten"
+        trialStartFree: "Kostenlose Testversion Starten",
+
+        // MARK: - Dashboard Feature Visibility
+        welcomeName: { "Willkommen, \($0)!" },
+        daysLeftInTrial: { "\($0) Tage Testversion übrig" },
+        thirtyMinPerDay: "30 Min/Tag",
+        resetsIn: { "Zurücksetzen in \($0)" },
+        nowPlaying: "Wird abgespielt",
+        paused: "Pausiert"
     )
 }

@@ -432,6 +432,16 @@ enum MembershipTier: String, CaseIterable, Identifiable {
         }
     }
 
+    var emoji: String {
+        switch self {
+        case .trial: return "🎁"
+        case .free:  return ""
+        case .pro:   return "⚡"
+        case .elite: return "✨"
+        case .royal: return "👑"
+        }
+    }
+
     /// Initialise from a tier ID string (e.g. from MembershipView or UserProfile).
     /// Falls back to `.free` for unknown values.
     init(tierId: String) {

@@ -103,6 +103,48 @@ final class TierManager {
     /// SF Symbol for the current tier.
     var tierIcon: String { currentTier.iconName }
 
+    /// Emoji string for the current tier.
+    var tierEmoji: String { currentTier.emoji }
+
+    // MARK: - Dashboard Widget Configuration
+
+    /// Widgets available on the dashboard, varying by tier.
+    enum DashboardWidget: String, CaseIterable, Equatable {
+        case gameModes
+        case overviewStats
+        case dailyTimeRemaining
+        case premiumCarousel
+        case soundscapeNowPlaying
+        case offlineStatus
+        case royalBadge
+    }
+
+    /// Configuration listing which widgets a tier's dashboard should display.
+    struct DashboardWidgetConfig: Equatable {
+        let widgets: [DashboardWidget]
+    }
+
+    /// Returns the dashboard widget configuration for the current tier.
+    func dashboardWidgets() -> DashboardWidgetConfig {
+        Self.dashboardWidgets(for: currentTier)
+    }
+
+    /// Static tier→widget mapping for unit testing.
+    static func dashboardWidgets(for tier: MembershipTier) -> DashboardWidgetConfig {
+        var widgets: [DashboardWidget] = [.gameModes, .overviewStats]
+        switch tier {
+        case .free:
+            widgets.append(contentsOf: [.dailyTimeRemaining, .premiumCarousel])
+        case .pro:
+            widgets.append(contentsOf: [.soundscapeNowPlaying, .offlineStatus])
+        case .elite:
+            widgets.append(contentsOf: [.soundscapeNowPlaying, .offlineStatus])
+        case .royal, .trial:
+            widgets.append(contentsOf: [.soundscapeNowPlaying, .offlineStatus, .royalBadge])
+        }
+        return DashboardWidgetConfig(widgets: widgets)
+    }
+
     // MARK: - Soundscape Gating
 
     /// IDs of soundscapes unlocked for a given session (previewed once per session).

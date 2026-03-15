@@ -349,6 +349,14 @@ extension AppStrings {
         trialContinueFree: "Продовжити Безкоштовно",
         trialCompleted: "Пробну Версію Завершено",
         trialCompletedTagline: "Ви спробували Royal",
-        trialStartFree: "Почати Безкоштовну Пробну Версію"
+        trialStartFree: "Почати Безкоштовну Пробну Версію",
+
+        // MARK: - Dashboard Feature Visibility
+        welcomeName: { "Ласкаво просимо, \($0)!" },
+        daysLeftInTrial: { "\($0) днів пробної версії залишилось" },
+        thirtyMinPerDay: "30 хв/день",
+        resetsIn: { "Оновиться через \($0)" },
+        nowPlaying: "Відтворення",
+        paused: "Призупинено"
     )
 }

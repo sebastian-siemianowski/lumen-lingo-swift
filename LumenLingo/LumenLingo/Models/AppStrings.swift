@@ -358,6 +358,15 @@ struct AppStrings {
     let trialCompletedTagline: String
     let trialStartFree: String
 
+    // MARK: - Dashboard Feature Visibility
+    let welcomeName: (String) -> String   // "Welcome, {name}!"
+    let daysLeftInTrial: (Int) -> String   // "{n} days left in your trial"
+    let thirtyMinPerDay: String            // "30 min/day"
+    // unlimited — reused from Membership section
+    let resetsIn: (String) -> String       // "Resets in {time}"
+    let nowPlaying: String                 // "Playing"
+    let paused: String                     // "Paused"
+
     // MARK: - Factory
 
     static func forLanguage(_ lang: SupportedLanguage) -> AppStrings {

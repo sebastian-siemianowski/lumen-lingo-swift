@@ -1477,4 +1477,133 @@ final class TierManagerTests: XCTestCase {
         XCTAssertTrue(manager.hasAccess(to: .soundscapes))
         XCTAssertEqual(manager.allowedCount(for: .soundscapes), 8)
     }
+
+    // MARK: - Epic 12: Dashboard Feature Visibility
+
+    // MARK: 12.2 — tierEmoji per tier
+
+    func testTierEmojiFreeTierIsEmpty() {
+        XCTAssertEqual(MembershipTier.free.emoji, "")
+    }
+
+    func testTierEmojiProTierIsBolt() {
+        XCTAssertEqual(MembershipTier.pro.emoji, "⚡")
+    }
+
+    func testTierEmojiEliteTierIsSparkles() {
+        XCTAssertEqual(MembershipTier.elite.emoji, "✨")
+    }
+
+    func testTierEmojiRoyalTierIsCrown() {
+        XCTAssertEqual(MembershipTier.royal.emoji, "👑")
+    }
+
+    func testTierEmojiTrialTierIsGift() {
+        XCTAssertEqual(MembershipTier.trial.emoji, "🎁")
+    }
+
+    func testTierManagerForwardsEmoji() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        XCTAssertEqual(manager.tierEmoji, "⚡")
+        manager.currentTierId = "royal"
+        XCTAssertEqual(manager.tierEmoji, "👑")
+    }
+
+    // MARK: 12.2 — tierIcon per tier
+
+    func testTierIconPerTier() {
+        XCTAssertEqual(MembershipTier.free.iconName, "globe")
+        XCTAssertEqual(MembershipTier.pro.iconName, "bolt.fill")
+        XCTAssertEqual(MembershipTier.elite.iconName, "sparkles")
+        XCTAssertEqual(MembershipTier.royal.iconName, "crown.fill")
+        XCTAssertEqual(MembershipTier.trial.iconName, "gift.fill")
+    }
+
+    // MARK: 12.1 — Dashboard Widgets per tier
+
+    func testDashboardWidgetsFreeTier() {
+        let config = TierManager.dashboardWidgets(for: .free)
+        XCTAssertTrue(config.widgets.contains(.gameModes))
+        XCTAssertTrue(config.widgets.contains(.overviewStats))
+        XCTAssertTrue(config.widgets.contains(.dailyTimeRemaining))
+        XCTAssertTrue(config.widgets.contains(.premiumCarousel))
+        XCTAssertFalse(config.widgets.contains(.soundscapeNowPlaying))
+        XCTAssertFalse(config.widgets.contains(.royalBadge))
+    }
+
+    func testDashboardWidgetsProTier() {
+        let config = TierManager.dashboardWidgets(for: .pro)
+        XCTAssertTrue(config.widgets.contains(.gameModes))
+        XCTAssertTrue(config.widgets.contains(.overviewStats))
+        XCTAssertTrue(config.widgets.contains(.soundscapeNowPlaying))
+        XCTAssertTrue(config.widgets.contains(.offlineStatus))
+        XCTAssertFalse(config.widgets.contains(.dailyTimeRemaining))
+        XCTAssertFalse(config.widgets.contains(.premiumCarousel))
+        XCTAssertFalse(config.widgets.contains(.royalBadge))
+    }
+
+    func testDashboardWidgetsEliteTier() {
+        let config = TierManager.dashboardWidgets(for: .elite)
+        XCTAssertTrue(config.widgets.contains(.soundscapeNowPlaying))
+        XCTAssertTrue(config.widgets.contains(.offlineStatus))
+        XCTAssertFalse(config.widgets.contains(.royalBadge))
+    }
+
+    func testDashboardWidgetsRoyalTier() {
+        let config = TierManager.dashboardWidgets(for: .royal)
+        XCTAssertTrue(config.widgets.contains(.soundscapeNowPlaying))
+        XCTAssertTrue(config.widgets.contains(.offlineStatus))
+        XCTAssertTrue(config.widgets.contains(.royalBadge))
+    }
+
+    func testDashboardWidgetsTrialTier() {
+        let config = TierManager.dashboardWidgets(for: .trial)
+        XCTAssertTrue(config.widgets.contains(.royalBadge), "Trial has Royal-level access, should show Royal badge")
+        XCTAssertTrue(config.widgets.contains(.soundscapeNowPlaying))
+    }
+
+    func testDashboardWidgetsInstanceMethod() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        let config = manager.dashboardWidgets()
+        XCTAssertTrue(config.widgets.contains(.premiumCarousel))
+        manager.currentTierId = "pro"
+        let proConfig = manager.dashboardWidgets()
+        XCTAssertFalse(proConfig.widgets.contains(.premiumCarousel))
+    }
+
+    // MARK: 12.3 — Game Mode Time Badge
+
+    func testFreeTierIsLimitedReturnsTrue() {
+        let tracker = PracticeTimeTracker()
+        XCTAssertTrue(tracker.isLimited(for: .free), "Free tier should have practice time limit")
+    }
+
+    func testProTierIsLimitedReturnsFalse() {
+        let tracker = PracticeTimeTracker()
+        XCTAssertFalse(tracker.isLimited(for: .pro), "Pro tier should have unlimited practice time")
+    }
+
+    func testEliteTierIsLimitedReturnsFalse() {
+        let tracker = PracticeTimeTracker()
+        XCTAssertFalse(tracker.isLimited(for: .elite))
+    }
+
+    func testRoyalTierIsLimitedReturnsFalse() {
+        let tracker = PracticeTimeTracker()
+        XCTAssertFalse(tracker.isLimited(for: .royal))
+    }
+
+    func testTrialTierIsLimitedReturnsFalse() {
+        let tracker = PracticeTimeTracker()
+        XCTAssertFalse(tracker.isLimited(for: .trial))
+    }
+
+    func testRemainingTimeDisplayUnlimited() {
+        let tracker = PracticeTimeTracker()
+        XCTAssertEqual(tracker.remainingTimeDisplay(for: .pro), "Unlimited")
+        XCTAssertEqual(tracker.remainingTimeDisplay(for: .elite), "Unlimited")
+        XCTAssertEqual(tracker.remainingTimeDisplay(for: .royal), "Unlimited")
+    }
 }

@@ -26,6 +26,8 @@ struct DashboardView: View {
     @State private var showMembershipSheet = false
     @State private var fogBreath: CGFloat = 0
     @State private var adventureIconPulse: CGFloat = 0
+    @State private var tierIconAppeared = false
+    @State private var showExpiredSheet = false
 
     private var profile: UserProfile? { profiles.first }
     private var user: AppUser { .mock }
@@ -58,6 +60,13 @@ struct DashboardView: View {
 
                     // Header: Avatar + Greeting + Stats
                     dashboardHeader
+
+                    // Soundscape now-playing widget (Pro+ with active soundscape)
+                    SoundscapeNowPlaying()
+                        .transition(.asymmetric(
+                            insertion: .move(edge: .top).combined(with: .opacity),
+                            removal: .opacity
+                        ))
 
                     // Divider
                     GlassDivider(color: .white, opacity: 0.08)
@@ -94,11 +103,42 @@ struct DashboardView: View {
         .sheet(isPresented: $showMembershipSheet) {
             NavigationStack { MembershipView() }
         }
+        .sheet(isPresented: $showExpiredSheet) {
+            PracticeExpiredView(
+                score: 0,
+                correctAnswers: 0,
+                totalAnswered: 0,
+                onUpgradeTap: { showMembershipSheet = true },
+                onDismiss: { showExpiredSheet = false }
+            )
+        }
     }
 
     /// Whether practice time has expired and games should show a disabled state.
     private var isPracticeExpired: Bool {
         practiceTracker.isLimited(for: tierManager.currentTier) && practiceTracker.isExpired
+    }
+
+    /// Time badge text for game cards: "30 min/day" for free, "Unlimited" for paid, nil for trial/royal.
+    private var gameTimeBadge: String? {
+        if practiceTracker.isLimited(for: tierManager.currentTier) {
+            return "30 min/day"
+        } else {
+            return "Unlimited"
+        }
+    }
+
+    /// Formatted reset time string when practice time has expired.
+    private var practiceResetTime: String? {
+        guard isPracticeExpired else { return nil }
+        let total = practiceTracker.secondsUntilReset
+        let hours = total / 3600
+        let minutes = (total % 3600) / 60
+        if hours > 0 {
+            return "Resets in \(hours)h \(minutes)m"
+        } else {
+            return "Resets in \(minutes)m"
+        }
     }
 
     // MARK: - Language Selector
@@ -164,21 +204,52 @@ struct DashboardView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Hello, \(user.firstName)!")
-                        .font(.system(size: 18, weight: .bold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#d946ef")],
-                                startPoint: .leading,
-                                endPoint: .trailing
+                    HStack(spacing: 4) {
+                        Text("Hello, \(user.firstName)!")
+                            .font(.system(size: 18, weight: .bold))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: tierManager.currentTier == .free
+                                        ? [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#d946ef")]
+                                        : tierManager.tierGradientColors,
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
                             )
-                        )
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.8)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.8)
 
-                    Text("Ready for a new adventure?")
-                        .font(.system(size: 13))
-                        .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                        if tierManager.currentTier != .free {
+                            Image(systemName: tierManager.tierIcon)
+                                .font(.system(size: 14, weight: .semibold))
+                                .foregroundStyle(
+                                    LinearGradient(
+                                        colors: tierManager.tierGradientColors,
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
+                                .scaleEffect(tierIconAppeared ? 1 : 0)
+                                .opacity(tierIconAppeared ? 1 : 0)
+                        }
+                    }
+
+                    if tierManager.currentTier == .trial,
+                       let days = profile?.trialDaysRemaining, days > 0 {
+                        Text("\(days) days left in your trial")
+                            .font(.system(size: 11, weight: .medium))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: tierManager.tierGradientColors,
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                    } else {
+                        Text("Ready for a new adventure?")
+                            .font(.system(size: 13))
+                            .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                    }
                 }
 
                 Spacer()
@@ -213,6 +284,11 @@ struct DashboardView: View {
         }
         .padding(16)
         .background(GlassCardBackground())
+        .onAppear {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.3)) {
+                tierIconAppeared = true
+            }
+        }
         .onTapGesture {
             if isHeaderCollapsed {
                 withAnimation(.spring(response: 0.4)) {
@@ -415,6 +491,10 @@ struct DashboardView: View {
                     cta: "Master New Words",
                     colorScheme: .flashCards,
                     route: .flashcardsCategories,
+                    timeBadge: gameTimeBadge,
+                    isExpired: isPracticeExpired,
+                    resetTime: practiceResetTime,
+                    onExpiredTap: { showExpiredSheet = true },
                     navigationPath: $navigationPath
                 )
 
@@ -425,6 +505,10 @@ struct DashboardView: View {
                     cta: "Test Your Skills",
                     colorScheme: .grammar,
                     route: .grammarCategories,
+                    timeBadge: gameTimeBadge,
+                    isExpired: isPracticeExpired,
+                    resetTime: practiceResetTime,
+                    onExpiredTap: { showExpiredSheet = true },
                     navigationPath: $navigationPath
                 )
 
@@ -435,14 +519,12 @@ struct DashboardView: View {
                     cta: "Craft & Discover",
                     colorScheme: .wordBuilder,
                     route: .wordBuilderCategories,
+                    timeBadge: gameTimeBadge,
+                    isExpired: isPracticeExpired,
+                    resetTime: practiceResetTime,
+                    onExpiredTap: { showExpiredSheet = true },
                     navigationPath: $navigationPath
                 )
-            }
-            .allowsHitTesting(!isPracticeExpired)
-            .overlay {
-                if isPracticeExpired {
-                    practiceExpiredOverlay
-                }
             }
         }
     }
@@ -616,70 +698,6 @@ struct DashboardView: View {
             navigationPath.append(AppRoute.wordBuilderGame(categoryId: categoryId))
         }
     }
-
-    // MARK: - Practice Expired Overlay
-
-    private var practiceExpiredOverlay: some View {
-        VStack(spacing: 16) {
-            Spacer()
-
-            VStack(spacing: 14) {
-                ZStack {
-                    Circle()
-                        .fill(Color(hex: "#667eea").opacity(0.15))
-                        .frame(width: 56, height: 56)
-
-                    Image(systemName: "clock.badge.checkmark")
-                        .font(.system(size: 24, weight: .semibold))
-                        .foregroundStyle(Color(hex: "#667eea"))
-                }
-
-                Text("Daily Limit Reached")
-                    .font(.system(size: 18, weight: .bold))
-                    .foregroundStyle(isDark ? .white : .primary)
-
-                Text("Resets in \(practiceTracker.resetCountdownDisplay)")
-                    .font(.system(size: 14))
-                    .foregroundStyle(.secondary)
-
-                Button {
-                    showMembershipSheet = true
-                } label: {
-                    HStack(spacing: 6) {
-                        Image(systemName: "infinity")
-                            .font(.system(size: 13, weight: .bold))
-                        Text("Go Unlimited")
-                            .font(.system(size: 13, weight: .bold))
-                    }
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 10)
-                    .background(
-                        Capsule()
-                            .fill(
-                                LinearGradient(
-                                    colors: [Color(hex: "#8b5cf6"), Color(hex: "#d946ef")],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
-                            )
-                    )
-                }
-            }
-            .padding(24)
-            .frame(maxWidth: .infinity)
-            .background(
-                RoundedRectangle(cornerRadius: 22)
-                    .fill(.ultraThinMaterial)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 22)
-                            .strokeBorder(isDark ? .white.opacity(0.1) : .black.opacity(0.06), lineWidth: 1)
-                    )
-            )
-
-            Spacer()
-        }
-    }
 }
 
 // MARK: - Game Card Color Scheme
@@ -740,6 +758,10 @@ struct DashboardGameCard: View {
     let cta: String
     let colorScheme: GameCardColorScheme
     let route: AppRoute
+    var timeBadge: String? = nil
+    var isExpired: Bool = false
+    var resetTime: String? = nil
+    var onExpiredTap: (() -> Void)? = nil
     @Binding var navigationPath: NavigationPath
 
     @Environment(\.self) private var env
@@ -761,17 +783,35 @@ struct DashboardGameCard: View {
                     // Gradient icon container with pulsing glow
                     iconView
 
-                    // Title + Description
+                    // Title + Description + Time Badge
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(title)
-                            .font(.system(size: 16, weight: .bold))
-                            .foregroundStyle(
-                                LinearGradient(
-                                    colors: [colorScheme.primary, colorScheme.secondary],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
+                        HStack(spacing: 6) {
+                            Text(title)
+                                .font(.system(size: 16, weight: .bold))
+                                .foregroundStyle(
+                                    LinearGradient(
+                                        colors: [colorScheme.primary, colorScheme.secondary],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
                                 )
-                            )
+
+                            if let badge = isExpired ? resetTime : timeBadge {
+                                Text(badge)
+                                    .font(.system(size: 10, weight: .bold))
+                                    .foregroundStyle(isExpired ? .orange : colorScheme.primary)
+                                    .padding(.horizontal, 7)
+                                    .padding(.vertical, 3)
+                                    .background(
+                                        Capsule()
+                                            .fill(
+                                                isExpired
+                                                    ? Color.orange.opacity(isDark ? 0.15 : 0.1)
+                                                    : colorScheme.primary.opacity(isDark ? 0.15 : 0.1)
+                                            )
+                                    )
+                            }
+                        }
 
                         Text(description)
                             .font(.system(size: 12, weight: .medium))
@@ -838,10 +878,15 @@ struct DashboardGameCard: View {
         .clipShape(RoundedRectangle(cornerRadius: 22))
         .contentShape(RoundedRectangle(cornerRadius: 22))
         .dashboardPress(accentColor: colorScheme.primary, scale: 0.955) {
-            navigationPath.append(route)
+            if isExpired {
+                onExpiredTap?()
+            } else {
+                navigationPath.append(route)
+            }
         }
-        .opacity(appeared ? 1 : 0)
+        .opacity(isExpired ? 0.5 : (appeared ? 1 : 0))
         .offset(y: appeared ? 0 : 20)
+        .animation(.easeInOut(duration: 0.3), value: isExpired)
         .onAppear {
             withAnimation(.spring(response: 0.5, dampingFraction: 0.8).delay(0.1)) {
                 appeared = true

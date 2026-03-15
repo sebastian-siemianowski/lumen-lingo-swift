@@ -347,6 +347,14 @@ extension AppStrings {
         trialContinueFree: "المتابعة مجاناً",
         trialCompleted: "اكتملت النسخة التجريبية",
         trialCompletedTagline: "لقد جربت Royal",
-        trialStartFree: "ابدأ النسخة التجريبية المجانية"
+        trialStartFree: "ابدأ النسخة التجريبية المجانية",
+
+        // MARK: - Dashboard Feature Visibility
+        welcomeName: { "مرحباً، \($0)!" },
+        daysLeftInTrial: { "\($0) أيام متبقية في تجربتك" },
+        thirtyMinPerDay: "٣٠ دقيقة/يوم",
+        resetsIn: { "يتجدد خلال \($0)" },
+        nowPlaying: "قيد التشغيل",
+        paused: "متوقف مؤقتاً"
     )
 }

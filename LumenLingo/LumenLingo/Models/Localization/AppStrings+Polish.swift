@@ -349,6 +349,14 @@ extension AppStrings {
         trialContinueFree: "Kontynuuj za Darmo",
         trialCompleted: "Próba Zakończona",
         trialCompletedTagline: "Doświadczyłeś Royal",
-        trialStartFree: "Rozpocznij Darmową Próbę"
+        trialStartFree: "Rozpocznij Darmową Próbę",
+
+        // MARK: - Dashboard Feature Visibility
+        welcomeName: { "Witaj, \($0)!" },
+        daysLeftInTrial: { "\($0) dni próby pozostało" },
+        thirtyMinPerDay: "30 min/dzień",
+        resetsIn: { "Odświeża za \($0)" },
+        nowPlaying: "Odtwarzanie",
+        paused: "Wstrzymano"
     )
 }

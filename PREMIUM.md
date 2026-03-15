@@ -958,7 +958,7 @@
 
 ---
 
-## Epic 12: Dashboard Feature Visibility
+## Epic 12: Dashboard Feature Visibility ✅
 
 ### Story 12.1 — Dynamic Dashboard Layout by Tier
 
@@ -973,12 +973,12 @@
 - Royal tier: Elite features + "Royal" badge in header.
 
 **Subtasks:**
-- [ ] 12.1.1 — Create `DashboardWidgetConfig` struct listing widgets per tier.
-- [ ] 12.1.2 — `TierManager.dashboardWidgets() -> [DashboardWidget]` returns tier-appropriate widgets.
-- [ ] 12.1.3 — In `DashboardView`, iterate over `dashboardWidgets` to render dynamic layout.
-- [ ] 12.1.4 — Create `SoundscapeNowPlaying` widget: mini player with current soundscape name and pause/play.
-- [ ] 12.1.9 — On tier change: widgets add/remove with spring transitions.
-- [ ] 12.1.10 — Add snapshot tests for each tier's dashboard layout.
+- [x] 12.1.1 — Create `DashboardWidgetConfig` struct listing widgets per tier.
+- [x] 12.1.2 — `TierManager.dashboardWidgets() -> [DashboardWidget]` returns tier-appropriate widgets.
+- [x] 12.1.3 — In `DashboardView`, iterate over `dashboardWidgets` to render dynamic layout.
+- [x] 12.1.4 — Create `SoundscapeNowPlaying` widget: mini player with current soundscape name and pause/play.
+- [x] 12.1.9 — On tier change: widgets add/remove with spring transitions.
+- [x] 12.1.10 — Add snapshot tests for each tier's dashboard layout.
 
 ---
 
@@ -997,13 +997,13 @@
 - Icon uses the tier's gradient colors.
 
 **Subtasks:**
-- [ ] 12.2.1 — Add `TierManager.tierIcon: String` computed property returning the tier's SF Symbol name.
-- [ ] 12.2.2 — Add `TierManager.tierEmoji: String` for fallback display.
-- [ ] 12.2.3 — In dashboard header, append tier icon after user name.
-- [ ] 12.2.4 — Apply tier gradient to the icon.
-- [ ] 12.2.5 — For trial: add subtitle "X days left in your trial" below greeting.
-- [ ] 12.2.6 — Add entrance animation: icon bounces in with spring.
-- [ ] 12.2.7 — Add unit test: each tier returns correct icon.
+- [x] 12.2.1 — Add `TierManager.tierIcon: String` computed property returning the tier's SF Symbol name.
+- [x] 12.2.2 — Add `TierManager.tierEmoji: String` for fallback display.
+- [x] 12.2.3 — In dashboard header, append tier icon after user name.
+- [x] 12.2.4 — Apply tier gradient to the icon.
+- [x] 12.2.5 — For trial: add subtitle "X days left in your trial" below greeting.
+- [x] 12.2.6 — Add entrance animation: icon bounces in with spring.
+- [x] 12.2.7 — Add unit test: each tier returns correct icon.
 
 ---
 
@@ -1021,13 +1021,13 @@
 - Cards are never fully locked — only time-limited for Free tier.
 
 **Subtasks:**
-- [ ] 12.3.1 — In game mode card view, add conditional badge: time-limited vs unlimited.
-- [ ] 12.3.2 — Badge text from `TierManager`: free → "30 min/day", others → "Unlimited".
-- [ ] 12.3.3 — When `PracticeTimeTracker.isExpired`: dim card to `.opacity(0.5)`, show reset time.
-- [ ] 12.3.4 — Reset time formatted as: "Resets at 12:00 AM" using `DateFormatter.shortTime`.
-- [ ] 12.3.5 — On card tap when expired: show `PracticeExpiredView` instead of starting game.
-- [ ] 12.3.6 — Add smooth transition between active and expired states.
-- [ ] 12.3.7 — Add unit test: free tier expired → cards dimmed; pro tier → always active.
+- [x] 12.3.1 — In game mode card view, add conditional badge: time-limited vs unlimited.
+- [x] 12.3.2 — Badge text from `TierManager`: free → "30 min/day", others → "Unlimited".
+- [x] 12.3.3 — When `PracticeTimeTracker.isExpired`: dim card to `.opacity(0.5)`, show reset time.
+- [x] 12.3.4 — Reset time formatted as: "Resets at 12:00 AM" using `DateFormatter.shortTime`.
+- [x] 12.3.5 — On card tap when expired: show `PracticeExpiredView` instead of starting game.
+- [x] 12.3.6 — Add smooth transition between active and expired states.
+- [x] 12.3.7 — Add unit test: free tier expired → cards dimmed; pro tier → always active.
 
 ---
 
@@ -1473,7 +1473,7 @@ Epic 20 (Edge Cases) depends on Epic 1, 19
 
 ---
 
-## Appendix C: Implementation Priority
+## Appendix C: Implementation Priority - Please do double check and modify as Ive changed and removed some of the stories - this might not be accurate
 
 ### Phase 1 — Foundation (Must-Have)
 1. Epic 1: Tier Selection & Persistence

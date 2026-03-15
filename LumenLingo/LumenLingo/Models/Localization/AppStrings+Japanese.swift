@@ -349,6 +349,14 @@ extension AppStrings {
         trialContinueFree: "無料で続ける",
         trialCompleted: "トライアル完了",
         trialCompletedTagline: "Royalを体験済み",
-        trialStartFree: "無料トライアルを開始"
+        trialStartFree: "無料トライアルを開始",
+
+        // MARK: - Dashboard Feature Visibility
+        welcomeName: { "ようこそ、\($0)さん！" },
+        daysLeftInTrial: { "トライアル残り\($0)日" },
+        thirtyMinPerDay: "30分/日",
+        resetsIn: { "\($0)後にリセット" },
+        nowPlaying: "再生中",
+        paused: "一時停止"
     )
 }

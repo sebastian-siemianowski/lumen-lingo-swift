@@ -350,6 +350,14 @@ extension AppStrings {
         trialContinueFree: "Continuer en Gratuit",
         trialCompleted: "Essai Terminé",
         trialCompletedTagline: "Vous avez découvert Royal",
-        trialStartFree: "Démarrer l'Essai Gratuit"
+        trialStartFree: "Démarrer l'Essai Gratuit",
+
+        // MARK: - Dashboard Feature Visibility
+        welcomeName: { "Bienvenue, \($0) !" },
+        daysLeftInTrial: { "\($0) jours restants d'essai" },
+        thirtyMinPerDay: "30 min/jour",
+        resetsIn: { "Réinitialise dans \($0)" },
+        nowPlaying: "En lecture",
+        paused: "En pause"
     )
 }
