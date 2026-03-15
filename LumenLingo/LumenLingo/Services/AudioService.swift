@@ -222,6 +222,13 @@ final class AudioService {
 
     private func skipToNextSoundscape() {
         guard let current = currentSoundscape else { return }
+        // Try next variant first
+        let nextVariant = currentVariantIndex + 1
+        if nextVariant < current.variants.count {
+            quickSkip(to: current, variantIndex: nextVariant)
+            return
+        }
+        // All variants exhausted — move to next soundscape, first variant
         let all = Soundscape.allCases
         guard let idx = all.firstIndex(of: current) else { return }
         let nextIdx = all.index(after: idx)
@@ -231,10 +238,17 @@ final class AudioService {
 
     private func skipToPreviousSoundscape() {
         guard let current = currentSoundscape else { return }
+        // Try previous variant first
+        let prevVariant = currentVariantIndex - 1
+        if prevVariant >= 0 {
+            quickSkip(to: current, variantIndex: prevVariant)
+            return
+        }
+        // Already at first variant — move to previous soundscape, last variant
         let all = Soundscape.allCases
         guard let idx = all.firstIndex(of: current) else { return }
         let prev = idx == all.startIndex ? all[all.index(before: all.endIndex)] : all[all.index(before: idx)]
-        quickSkip(to: prev, variantIndex: 0)
+        quickSkip(to: prev, variantIndex: prev.variants.count - 1)
     }
 
     /// Fast overlapping crossfade for skip next/previous — instant Now Playing update,
