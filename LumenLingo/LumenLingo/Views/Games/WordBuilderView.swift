@@ -848,11 +848,11 @@ struct WordBuilderView: View {
 
             if streak >= 3 {
                 audioService.playStreakBonus()
-                HapticsService.shared.streakBuilding(count: streak)
+                TierHapticsService.shared.streakMilestone(level: tierManager.hapticLevel, count: streak)
             } else {
                 audioService.playWordCorrect()
             }
-            HapticsService.shared.correctAnswer()
+            TierHapticsService.shared.correctAnswer(level: tierManager.hapticLevel)
 
             // Mark mastered
             let progressService = ProgressService(modelContext: modelContext)
@@ -873,7 +873,7 @@ struct WordBuilderView: View {
             wrongCount += 1
             streak = 0
             audioService.playLetterWrong()
-            HapticsService.shared.wrongAnswer()
+            TierHapticsService.shared.wrongAnswer(level: tierManager.hapticLevel)
 
             // Shake animation
             withAnimation(.spring(response: 0.1, dampingFraction: 0.2)) {

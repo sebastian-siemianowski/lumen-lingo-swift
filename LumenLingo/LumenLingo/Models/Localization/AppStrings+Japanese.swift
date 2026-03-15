@@ -397,6 +397,7 @@ extension AppStrings {
         weeklyTrendDesc: "今週と先週を比較し、成長を加速させるパターンを見つけよう",
         accuracyHeatmapDesc: "最も得意・不得意なカテゴリーを一目で把握",
         monthlyReportDesc: "あなた専用の30日レポート — セッション数・連続記録・正確率・アクティブ日数",
-        milestonePredictionsDesc: "学習ペースに基づいて、次のマイルストーン到達日を正確に予測"
+        milestonePredictionsDesc: "学習ペースに基づいて、次のマイルストーン到達日を正確に予測",
+        upgradedExclamation: "アップグレード完了！"
     )
 }

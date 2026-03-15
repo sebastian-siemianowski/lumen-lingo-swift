@@ -688,15 +688,15 @@ struct GrammarView: View {
             score += 10
             streak += 1
             audioService.playGrammarCorrect(consecutiveCount: streak)
-            HapticsService.shared.correctAnswer()
+            TierHapticsService.shared.correctAnswer(level: tierManager.hapticLevel)
             if streak >= 3 {
-                HapticsService.shared.streakBuilding(count: streak)
+                TierHapticsService.shared.streakMilestone(level: tierManager.hapticLevel, count: streak)
             }
         } else {
             wrongCount += 1
             streak = 0
             audioService.playGrammarWrong()
-            HapticsService.shared.wrongAnswer()
+            TierHapticsService.shared.wrongAnswer(level: tierManager.hapticLevel)
         }
     }
 

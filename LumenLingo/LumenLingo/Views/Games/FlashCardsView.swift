@@ -876,7 +876,7 @@ struct FlashCardsView: View {
         guard !isFlipped else { return }
 
         audioService.playCardFlipEnhanced()
-        HapticsService.shared.cardFlip()
+        TierHapticsService.shared.cardFlip(level: tierManager.hapticLevel)
 
         // Gentle press-in
         withAnimation(.easeOut(duration: 0.1)) {
@@ -940,11 +940,11 @@ struct FlashCardsView: View {
             score += 10
             streak += 1
             audioService.playSwipeRight()
-            HapticsService.shared.correctAnswer()
+            TierHapticsService.shared.correctAnswer(level: tierManager.hapticLevel)
 
             // Streak haptics on milestones
             if streak >= 3 {
-                HapticsService.shared.streakBuilding(count: streak)
+                TierHapticsService.shared.streakMilestone(level: tierManager.hapticLevel, count: streak)
             }
 
             // Animate score counter
@@ -990,7 +990,7 @@ struct FlashCardsView: View {
             wrongCount += 1
             streak = 0
             audioService.playSwipeLeft()
-            HapticsService.shared.wrongAnswer()
+            TierHapticsService.shared.wrongAnswer(level: tierManager.hapticLevel)
 
             // Orange glow around the card
             answerGlow = .orange

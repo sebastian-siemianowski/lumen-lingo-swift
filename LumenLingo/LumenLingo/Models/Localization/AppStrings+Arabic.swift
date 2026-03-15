@@ -395,6 +395,7 @@ extension AppStrings {
         weeklyTrendDesc: "قارن هذا الأسبوع بالسابق واكتشف الأنماط التي تدفع نموك",
         accuracyHeatmapDesc: "اكشف فوراً عن أقوى وأضعف فئاتك بنظرة واحدة",
         monthlyReportDesc: "ملخصك الشخصي لـ 30 يوماً — الجلسات والسلاسل والدقة والأيام النشطة",
-        milestonePredictionsDesc: "اعرف بالضبط متى ستصل إلى إنجازك التالي بناءً على وتيرة تعلمك"
+        milestonePredictionsDesc: "اعرف بالضبط متى ستصل إلى إنجازك التالي بناءً على وتيرة تعلمك",
+        upgradedExclamation: "تمت الترقية!"
     )
 }

@@ -7,6 +7,7 @@ import SwiftUI
 /// tier name fade-in, and multi-step haptic pattern. Auto-dismisses at 2.5s.
 struct TierUpgradeCelebrationView: View {
     @Environment(TierManager.self) private var tierManager
+    @Environment(\.localization) private var localization
 
     @State private var showIcon = false
     @State private var showName = false
@@ -14,6 +15,7 @@ struct TierUpgradeCelebrationView: View {
     @State private var confettiPhase: CGFloat = 0
 
     private var tier: MembershipTier { tierManager.upgradedToTier }
+    private var L: AppStrings { localization.strings }
 
     var body: some View {
         if tierManager.showUpgradeCelebration {
@@ -65,7 +67,7 @@ struct TierUpgradeCelebrationView: View {
                         .opacity(showName ? 1 : 0)
 
                     // Subtitle
-                    Text("Upgraded!")
+                    Text(L.upgradedExclamation)
                         .font(.subheadline.weight(.medium))
                         .foregroundStyle(.white.opacity(0.7))
                         .opacity(showName ? 1 : 0)

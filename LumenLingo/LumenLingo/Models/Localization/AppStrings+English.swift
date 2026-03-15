@@ -397,6 +397,9 @@ extension AppStrings {
         weeklyTrendDesc: "Compare this week to last and spot the patterns that drive your growth",
         accuracyHeatmapDesc: "Instantly reveal your strongest and weakest categories at a glance",
         monthlyReportDesc: "Your personalised 30-day snapshot — sessions, streaks, accuracy & active days",
-        milestonePredictionsDesc: "See exactly when you'll hit your next milestone based on your learning pace"
+        milestonePredictionsDesc: "See exactly when you'll hit your next milestone based on your learning pace",
+
+        // MARK: - Tier Upgrade Celebration
+        upgradedExclamation: "Upgraded!"
     )
 }

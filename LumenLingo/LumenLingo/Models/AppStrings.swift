@@ -407,6 +407,9 @@ struct AppStrings {
     let monthlyReportDesc: String           // feature sell description
     let milestonePredictionsDesc: String    // feature sell description
 
+    // MARK: - Tier Upgrade Celebration
+    let upgradedExclamation: String         // "Upgraded!"
+
     // MARK: - Factory
 
     static func forLanguage(_ lang: SupportedLanguage) -> AppStrings {

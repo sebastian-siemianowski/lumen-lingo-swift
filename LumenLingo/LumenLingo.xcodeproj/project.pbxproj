@@ -108,6 +108,7 @@
 		845F96740BB1219565F758AB /* AppStrings+Japanese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A93ED414D0470C87039F9 /* AppStrings+Japanese.swift */; };
 		85173516305E3F46D20A615C /* flashcards_french_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 72DC7028C7F8CC902DD56A80 /* flashcards_french_english.json */; };
 		854C496AA558DC855EBF27DC /* grammar_english_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = FCAA7717377E15C1E4F98955 /* grammar_english_japanese.json */; };
+		8620AC1E74579EF160476488 /* TierHapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3AD887EF40F084F88A511 /* TierHapticsService.swift */; };
 		865409E249B90575BD70DBCD /* Paris-Café-2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 321A6A5269762B9A3953A31C /* Paris-Café-2.m4a */; };
 		86AE2EA2C07C7B04D3C1AF95 /* flashcards_ukrainian_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = A55C2F133F96E1EF1211904B /* flashcards_ukrainian_polish.json */; };
 		89075F39060121315E6E3CEB /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D0AFE49B5144D47E971846 /* CategoriesView.swift */; };
@@ -202,6 +203,7 @@
 		F0A31588D49A21C91000A1A1 /* grammar_english_chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = 39CDFBF6DCB5ECB7689CE6C6 /* grammar_english_chinese.json */; };
 		F15DA9BF1C2DA25798FE4855 /* TrialEndedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14117EBFC8212F28D65628C1 /* TrialEndedView.swift */; };
 		F2179422CEED9CB6181430C3 /* OfflineBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3BC180E8CA6F328FF7C7F /* OfflineBanner.swift */; };
+		F221D575468FBB991514F654 /* TierUpgradeCelebrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04E6F0294D1C986283316B3 /* TierUpgradeCelebrationView.swift */; };
 		F23589F39FA41E6D3F04ED22 /* flashcards_polish_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E8D26ACC3A64927138AB641 /* flashcards_polish_ukrainian.json */; };
 		F5439D82BFE2910F8A446299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D84080B3E5FBF4012D412B /* ContentView.swift */; };
 		F5B050BBD9675556C37EF44F /* grammar_french_english.json in Resources */ = {isa = PBXBuildFile; fileRef = EE209D9EF404AA5D75D6D840 /* grammar_french_english.json */; };
@@ -227,6 +229,7 @@
 		00238DB4631FF527FE002203 /* JourneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyView.swift; sourceTree = "<group>"; };
 		00AC10073EF860BE9CC25D85 /* SoundSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSettingsView.swift; sourceTree = "<group>"; };
 		053CFBAF57D151555C331BB2 /* flashcards_english_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_german.json; sourceTree = "<group>"; };
+		05F3AD887EF40F084F88A511 /* TierHapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierHapticsService.swift; sourceTree = "<group>"; };
 		082370545F169B205DEB7118 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		0B6BC346843C39C8CEC01294 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		0C637EFA05F05EEE861FA130 /* grammar_polish_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_arabic.json; sourceTree = "<group>"; };
@@ -357,6 +360,7 @@
 		9E8FCD7819D46F40F48FCD4D /* LockedFeatureIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedFeatureIndicator.swift; sourceTree = "<group>"; };
 		9F049FEAB56C3145BCF41D5A /* GrammarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarViewModel.swift; sourceTree = "<group>"; };
 		A02AB5B911E71E7D7B839369 /* grammar_arabic_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_arabic_english.json; sourceTree = "<group>"; };
+		A04E6F0294D1C986283316B3 /* TierUpgradeCelebrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierUpgradeCelebrationView.swift; sourceTree = "<group>"; };
 		A09DE5B1813E2A548A69FE53 /* flashcards_polish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_english.json; sourceTree = "<group>"; };
 		A1043A7A28122A7496303992 /* AppStrings+English.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+English.swift"; sourceTree = "<group>"; };
 		A258E34605BA4E0F602DFD6A /* CosmicStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CosmicStars.metal; sourceTree = "<group>"; };
@@ -635,6 +639,7 @@
 				A9E9C6E57618CAF9511BB3E9 /* PremiumFeatureBadge.swift */,
 				B84D8F4C0D9010A47DE7222A /* SoundscapeUpgradeSheet.swift */,
 				873F283713D80218498D7120 /* TierBadgeView.swift */,
+				A04E6F0294D1C986283316B3 /* TierUpgradeCelebrationView.swift */,
 				DFFCAB9270E7EDFE53A120B2 /* TrialConfirmationView.swift */,
 				14117EBFC8212F28D65628C1 /* TrialEndedView.swift */,
 				8D758E0FCC818F2BA8CE747E /* UpgradePromptView.swift */,
@@ -848,6 +853,7 @@
 				310DB5BD274A6F504FBCFFC1 /* ProgressService.swift */,
 				4DFF01D34AAF3901078DA05B /* SyncService.swift */,
 				12F5A0006F1BE35C07723FF8 /* ThemeManager.swift */,
+				05F3AD887EF40F084F88A511 /* TierHapticsService.swift */,
 				EBE04D8108F905F4A7F4E750 /* TierManager.swift */,
 				8EE1A87C9FE959A341B5B7EF /* TranslationService.swift */,
 				170A9F40ACA962BFEDF0C55D /* UpgradePromptManager.swift */,
@@ -1319,7 +1325,9 @@
 				B867C37A62E184BD32312922 /* SyncStatusView.swift in Sources */,
 				26607CDE095F6084E24E2AD0 /* ThemeManager.swift in Sources */,
 				51F9957933F8A2A36D03865A /* TierBadgeView.swift in Sources */,
+				8620AC1E74579EF160476488 /* TierHapticsService.swift in Sources */,
 				9F4FB170007FA4D6C074FB23 /* TierManager.swift in Sources */,
+				F221D575468FBB991514F654 /* TierUpgradeCelebrationView.swift in Sources */,
 				BCDD18444DE1C80FEF877D9A /* TranslationService.swift in Sources */,
 				135AE1BCF8F739B94DE65461 /* TrialConfirmationView.swift in Sources */,
 				E6EF650284231578942E29AD /* TrialCountdownBanner.swift in Sources */,

@@ -1165,7 +1165,7 @@
 
 ---
 
-## Epic 17: Tier-Specific Animations & Polish
+## Epic 17: Tier-Specific Animations & Polish ✅
 
 ### Story 17.1 — Tier Upgrade Celebration Animation
 
@@ -1180,16 +1180,16 @@
 - Celebration only plays on upgrade (not on downgrade or horizontal switch).
 
 **Subtasks:**
-- [ ] 17.1.1 — Create `TierUpgradeCelebration` view: full-screen overlay.
-- [ ] 17.1.2 — Determine if change is an upgrade: compare tier rank (free<pro<elite<royal).
-- [ ] 17.1.3 — Add `TierRank` comparable enum for tier ordering.
-- [ ] 17.1.4 — Confetti particle emitter using `Canvas` or Metal: 100 particles in tier gradient colors.
-- [ ] 17.1.5 — Icon animation: scale 0→1.2→1.0 with spring, starting at +0.3s.
-- [ ] 17.1.6 — Tier name: fade in with tracking animation (letters spacing out then in), at +0.8s.
-- [ ] 17.1.7 — Haptic pattern: `.success` at +0.3s, `.impact(.light)` at +0.5s, +0.7s, +0.9s.
-- [ ] 17.1.8 — Auto-dismiss at 2.5s with fade-out.
-- [ ] 17.1.9 — Only trigger when `newRank > oldRank`.
-- [ ] 17.1.10 — Add unit test: free→pro = celebration; pro→free = no celebration.
+- [x] 17.1.1 — Create `TierUpgradeCelebration` view: full-screen overlay.
+- [x] 17.1.2 — Determine if change is an upgrade: compare tier rank (free<pro<elite<royal).
+- [x] 17.1.3 — Add `TierRank` comparable enum for tier ordering.
+- [x] 17.1.4 — Confetti particle emitter using `Canvas` or Metal: 100 particles in tier gradient colors.
+- [x] 17.1.5 — Icon animation: scale 0→1.2→1.0 with spring, starting at +0.3s.
+- [x] 17.1.6 — Tier name: fade in with tracking animation (letters spacing out then in), at +0.8s.
+- [x] 17.1.7 — Haptic pattern: `.success` at +0.3s, `.impact(.light)` at +0.5s, +0.7s, +0.9s.
+- [x] 17.1.8 — Auto-dismiss at 2.5s with fade-out.
+- [x] 17.1.9 — Only trigger when `newRank > oldRank`.
+- [x] 17.1.10 — Add unit test: free→pro = celebration; pro→free = no celebration.
 
 ---
 
@@ -1207,14 +1207,14 @@
 - Haptic preferences can be disabled per user preference (always respect accessibility).
 
 **Subtasks:**
-- [ ] 17.3.1 — Add `TierManager.hapticLevel: HapticLevel` enum: `.basic`, `.enhanced`, `.rich`, `.premium`.
-- [ ] 17.3.2 — Create `TierHapticsService` that wraps `HapticsService` with tier-aware patterns.
-- [ ] 17.3.3 — `.basic`: single impact on key actions.
-- [ ] 17.3.4 — `.enhanced`: double-tap pattern on correct answers.
-- [ ] 17.3.5 — `.rich`: continuous haptic engine during swipe gestures.
-- [ ] 17.3.6 — `.premium`: custom `CHHapticPattern` for 4 distinct events (correct, incorrect, streak, milestone).
-- [ ] 17.3.7 — Respect `UserProfile.hapticsEnabled` toggle — always check before playing.
-- [ ] 17.3.8 — Add unit test: haptic level matches tier; disabled → no haptics regardless of tier.
+- [x] 17.3.1 — Add `TierManager.hapticLevel: HapticLevel` enum: `.basic`, `.enhanced`, `.rich`, `.premium`.
+- [x] 17.3.2 — Create `TierHapticsService` that wraps `HapticsService` with tier-aware patterns.
+- [x] 17.3.3 — `.basic`: single impact on key actions.
+- [x] 17.3.4 — `.enhanced`: double-tap pattern on correct answers.
+- [x] 17.3.5 — `.rich`: continuous haptic engine during swipe gestures.
+- [x] 17.3.6 — `.premium`: custom `CHHapticPattern` for 4 distinct events (correct, incorrect, streak, milestone).
+- [x] 17.3.7 — Respect `UserProfile.hapticsEnabled` toggle — always check before playing.
+- [x] 17.3.8 — Add unit test: haptic level matches tier; disabled → no haptics regardless of tier.
 
 ---
 

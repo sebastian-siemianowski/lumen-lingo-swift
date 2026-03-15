@@ -398,6 +398,7 @@ extension AppStrings {
         weeklyTrendDesc: "Comparez cette semaine à la précédente et repérez les tendances qui accélèrent vos progrès",
         accuracyHeatmapDesc: "Révélez instantanément vos catégories fortes et faibles d'un seul coup d'œil",
         monthlyReportDesc: "Votre bilan personnalisé sur 30 jours — sessions, séries, précision et jours actifs",
-        milestonePredictionsDesc: "Voyez précisément quand vous atteindrez votre prochain palier selon votre rythme"
+        milestonePredictionsDesc: "Voyez précisément quand vous atteindrez votre prochain palier selon votre rythme",
+        upgradedExclamation: "Amélioré !"
     )
 }

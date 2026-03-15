@@ -398,6 +398,7 @@ extension AppStrings {
         weeklyTrendDesc: "Compara esta semana con la anterior y detecta los patrones que impulsan tu crecimiento",
         accuracyHeatmapDesc: "Revela al instante tus categorías más fuertes y débiles de un vistazo",
         monthlyReportDesc: "Tu resumen personalizado de 30 días — sesiones, rachas, precisión y días activos",
-        milestonePredictionsDesc: "Descubre cuándo alcanzarás tu próximo hito según tu ritmo de aprendizaje"
+        milestonePredictionsDesc: "Descubre cuándo alcanzarás tu próximo hito según tu ritmo de aprendizaje",
+        upgradedExclamation: "¡Mejorado!"
     )
 }

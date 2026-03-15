@@ -397,6 +397,7 @@ extension AppStrings {
         weeklyTrendDesc: "Porównaj ten tydzień z poprzednim i odkryj wzorce napędzające Twój rozwój",
         accuracyHeatmapDesc: "Natychmiast odkryj swoje najsilniejsze i najsłabsze kategorie jednym spojrzeniem",
         monthlyReportDesc: "Twoje spersonalizowane podsumowanie 30 dni — sesje, serie, dokładność i aktywne dni",
-        milestonePredictionsDesc: "Dowiedz się, kiedy osiągniesz kolejny kamień milowy na podstawie swojego tempa nauki"
+        milestonePredictionsDesc: "Dowiedz się, kiedy osiągniesz kolejny kamień milowy na podstawie swojego tempa nauki",
+        upgradedExclamation: "Ulepszono!"
     )
 }

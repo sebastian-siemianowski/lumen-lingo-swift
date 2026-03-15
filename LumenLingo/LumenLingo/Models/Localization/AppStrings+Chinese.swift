@@ -397,6 +397,7 @@ extension AppStrings {
         weeklyTrendDesc: "对比本周与上周，发现驱动你成长的模式",
         accuracyHeatmapDesc: "一眼看清你最强和最弱的类别",
         monthlyReportDesc: "你的个性化30天快照——会话、连续记录、准确率和活跃天数",
-        milestonePredictionsDesc: "根据你的学习节奏，精确预测你何时达到下一个里程碑"
+        milestonePredictionsDesc: "根据你的学习节奏，精确预测你何时达到下一个里程碑",
+        upgradedExclamation: "已升级！"
     )
 }

@@ -2013,4 +2013,108 @@ final class TierManagerTests: XCTestCase {
         XCTAssertTrue(allCases.contains(.monthlyReport))
         XCTAssertTrue(allCases.contains(.milestonePredictions))
     }
+
+    // MARK: - Epic 17: Haptic Level
+
+    func testHapticLevelFreeIsBasic() {
+        XCTAssertEqual(TierManager.hapticLevel(for: .free), .basic)
+    }
+
+    func testHapticLevelProIsEnhanced() {
+        XCTAssertEqual(TierManager.hapticLevel(for: .pro), .enhanced)
+    }
+
+    func testHapticLevelEliteIsRich() {
+        XCTAssertEqual(TierManager.hapticLevel(for: .elite), .rich)
+    }
+
+    func testHapticLevelRoyalIsPremium() {
+        XCTAssertEqual(TierManager.hapticLevel(for: .royal), .premium)
+    }
+
+    func testHapticLevelTrialIsPremium() {
+        XCTAssertEqual(TierManager.hapticLevel(for: .trial), .premium)
+    }
+
+    func testHapticLevelInstanceProperty() {
+        let tm = TierManager()
+        tm.currentTier = .elite
+        XCTAssertEqual(tm.hapticLevel, .rich)
+    }
+
+    func testHapticLevelChangesOnTierChange() {
+        let tm = TierManager()
+        tm.currentTier = .free
+        XCTAssertEqual(tm.hapticLevel, .basic)
+        tm.currentTier = .royal
+        XCTAssertEqual(tm.hapticLevel, .premium)
+    }
+
+    func testHapticLevelAllCases() {
+        let allCases = TierManager.HapticLevel.allCases
+        XCTAssertEqual(allCases.count, 4)
+        XCTAssertTrue(allCases.contains(.basic))
+        XCTAssertTrue(allCases.contains(.enhanced))
+        XCTAssertTrue(allCases.contains(.rich))
+        XCTAssertTrue(allCases.contains(.premium))
+    }
+
+    // MARK: - Epic 17: Upgrade Celebration State
+
+    func testUpgradeCelebrationInitiallyFalse() {
+        let tm = TierManager()
+        XCTAssertFalse(tm.showUpgradeCelebration)
+    }
+
+    func testUpgradedToTierInitiallyFree() {
+        let tm = TierManager()
+        XCTAssertEqual(tm.upgradedToTier, .free)
+    }
+
+    func testUpgradeDetectionFreeToProIsUpgrade() {
+        // Verify rank ordering that drives celebration
+        XCTAssertTrue(MembershipTier.pro.rank > MembershipTier.free.rank)
+    }
+
+    func testUpgradeDetectionProToFreeIsNotUpgrade() {
+        XCTAssertFalse(MembershipTier.free.rank > MembershipTier.pro.rank)
+    }
+
+    func testUpgradeDetectionFreeToEliteIsUpgrade() {
+        XCTAssertTrue(MembershipTier.elite.rank > MembershipTier.free.rank)
+    }
+
+    func testUpgradeDetectionEliteToProIsNotUpgrade() {
+        XCTAssertFalse(MembershipTier.pro.rank > MembershipTier.elite.rank)
+    }
+
+    func testUpgradeDetectionFreeToRoyalIsUpgrade() {
+        XCTAssertTrue(MembershipTier.royal.rank > MembershipTier.free.rank)
+    }
+
+    func testRankOrderingCompleteness() {
+        // free < pro < elite < royal == trial
+        XCTAssertLessThan(MembershipTier.free.rank, MembershipTier.pro.rank)
+        XCTAssertLessThan(MembershipTier.pro.rank, MembershipTier.elite.rank)
+        XCTAssertLessThan(MembershipTier.elite.rank, MembershipTier.royal.rank)
+        XCTAssertEqual(MembershipTier.royal.rank, MembershipTier.trial.rank)
+    }
+
+    // MARK: - Epic 17: TierHapticsService
+
+    func testTierHapticsServiceExists() {
+        let service = TierHapticsService.shared
+        XCTAssertNotNil(service)
+    }
+
+    func testTierHapticsServiceAcceptsAllLevels() {
+        let service = TierHapticsService.shared
+        // Verify no crash for all haptic levels
+        for level in TierManager.HapticLevel.allCases {
+            service.correctAnswer(level: level)
+            service.wrongAnswer(level: level)
+            service.cardFlip(level: level)
+            service.streakMilestone(level: level, count: 5)
+        }
+    }
 }

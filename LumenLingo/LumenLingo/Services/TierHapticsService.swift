@@ -25,9 +25,9 @@ final class TierHapticsService {
         case .enhanced:
             haptics.doubleTap()
         case .rich:
-            haptics.doubleTap()
+            haptics.enhancedDoubleTap()
         case .premium:
-            haptics.doubleTap()
+            haptics.enhancedDoubleTap()
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
                 haptics.success()
             }

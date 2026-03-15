@@ -319,9 +319,9 @@ final class HapticsService {
         }
     }
 
-    /// Tier-aware double-tap pattern for enhanced haptic level
-    func doubleTap() {
-        guard isEnabled, canFire("doubleTap", cooldown: 0.2) else { return }
+    /// Enhanced double-tap pattern for higher tier haptic levels
+    func enhancedDoubleTap() {
+        guard isEnabled, canFire("enhancedDoubleTap", cooldown: 0.2) else { return }
         lightGenerator.impactOccurred(intensity: 0.6)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in
             self?.lightGenerator.impactOccurred(intensity: 0.8)

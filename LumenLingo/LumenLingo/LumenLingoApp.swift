@@ -32,6 +32,9 @@ struct LumenLingoApp: App {
                         .cosmicBackground(preset: debugForcedNebula)
                 } else {
                     ContentView()
+                        .overlay {
+                            TierUpgradeCelebrationView()
+                        }
                 }
             }
             .environment(themeManager)
