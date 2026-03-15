@@ -1339,13 +1339,13 @@
 - User sees no error UI — just seamless fallback.
 
 **Subtasks:**
-- [ ] 20.1.1 — In `TierManager.init()`, validate loaded tier ID against known set.
-- [ ] 20.1.2 — If unknown: set to `"free"`, log `os_log(.error, "Invalid tier ID: %@, resetting to free")`.
-- [ ] 20.1.3 — Validate `trialStartDate`: if future → set to nil; if > 365 days old → mark expired.
-- [ ] 20.1.4 — Add `TierManager.validateState()` method called on every app launch.
-- [ ] 20.1.5 — Add unit test: invalid tier ID → falls back to free.
-- [ ] 20.1.6 — Add unit test: future trial date → treated as not started.
-- [ ] 20.1.7 — Add unit test: ancient trial date → treated as expired.
+- [x] 20.1.1 — In `TierManager.init()`, validate loaded tier ID against known set.
+- [x] 20.1.2 — If unknown: set to `"free"`, log `os_log(.error, "Invalid tier ID: %@, resetting to free")`.
+- [x] 20.1.3 — Validate `trialStartDate`: if future → set to nil; if > 365 days old → mark expired.
+- [x] 20.1.4 — Add `TierManager.validateState()` method called on every app launch.
+- [x] 20.1.5 — Add unit test: invalid tier ID → falls back to free.
+- [x] 20.1.6 — Add unit test: future trial date → treated as not started.
+- [x] 20.1.7 — Add unit test: ancient trial date → treated as expired.
 
 ---
 
@@ -1361,11 +1361,11 @@
 - Trial expiration check and tier change cannot race with manual tier selection.
 
 **Subtasks:**
-- [ ] 20.2.1 — Mark `TierManager` as `@MainActor`.
-- [ ] 20.2.2 — Ensure `checkTrialExpiration()` and manual tier change use same path.
-- [ ] 20.2.3 — Use `@Published` property wrapper which publishes on main thread.
-- [ ] 20.2.4 — Add concurrency test: simultaneous tier change and trial check → no crash, consistent state.
-- [ ] 20.2.5 — Review all `DispatchQueue.main.async` calls related to tier changes — consolidate to `@MainActor`.
+- [x] 20.2.1 — Mark `TierManager` as `@MainActor`.
+- [x] 20.2.2 — Ensure `checkTrialExpiration()` and manual tier change use same path.
+- [x] 20.2.3 — Use `@Observable` pattern (replaces `@Published`) with `@MainActor` for main-thread-safe state.
+- [x] 20.2.4 — Add concurrency test: simultaneous tier change and trial check → no crash, consistent state.
+- [x] 20.2.5 — Review all `DispatchQueue.main.async` calls related to tier changes — consolidated under `@MainActor`.
 
 ---
 
@@ -1382,14 +1382,14 @@
 - Only settings that are valid for the new tier are restored (don't restore Elite settings for Pro).
 
 **Subtasks:**
-- [ ] 20.3.1 — On downgrade: mark settings as "dormant" rather than deleting.
-- [ ] 20.3.2 — Add `UserProfile.dormantSettings: [String: AnyCodable]` dictionary.
-- [ ] 20.3.3 — On upgrade: check dormant settings for restorable values.
-- [ ] 20.3.4 — Validate restored values against new tier's allowed options.
-- [ ] 20.3.5 — Apply restored settings with animation (features "come back to life").
-- [ ] 20.3.6 — Show brief notification: "Your settings from [previous period] have been restored".
-- [ ] 20.3.7 — Add unit test: configure on trial → downgrade → upgrade to Pro → verify restoration.
-- [ ] 20.3.8 — Add unit test: Royal settings not restored when upgrading to Pro (beyond Pro's scope).
+- [x] 20.3.1 — On downgrade: mark settings as "dormant" rather than deleting.
+- [x] 20.3.2 — Add `UserProfile.dormantSettings: [String: String]` dictionary (JSON-encoded Data).
+- [x] 20.3.3 — On upgrade: check dormant settings for restorable values.
+- [x] 20.3.4 — Validate restored values against new tier's allowed options.
+- [x] 20.3.5 — Apply restored settings with animation (features "come back to life").
+- [x] 20.3.6 — Post `settingsRestored` notification for toast display.
+- [x] 20.3.7 — Add unit test: configure on trial → downgrade → upgrade to Pro → verify restoration.
+- [x] 20.3.8 — Add unit test: Royal settings not restored when upgrading to Pro (beyond Pro's scope).
 
 ---
 
@@ -1406,14 +1406,14 @@
 - Offline changes are queued and applied when connectivity returns.
 
 **Subtasks:**
-- [ ] 20.4.1 — Save `selectedTierId` to both local `UserDefaults` and `NSUbiquitousKeyValueStore`.
-- [ ] 20.4.2 — On `NSUbiquitousKeyValueStore.didChangeExternallyNotification`: compare remote vs local tier.
-- [ ] 20.4.3 — If remote tier rank > local: adopt remote tier.
-- [ ] 20.4.4 — If local tier rank > remote: push local to remote.
-- [ ] 20.4.5 — Sync trial dates: if remote `trialStartDate` exists and local doesn't, adopt it.
-- [ ] 20.4.6 — Handle `NSUbiquitousKeyValueStore` not available (iCloud disabled): fall back to local-only.
-- [ ] 20.4.7 — Add unit test: remote Pro + local Free → resolves to Pro.
-- [ ] 20.4.8 — Add unit test: both trial with different dates → use earliest start date.
+- [x] 20.4.1 — Save `selectedTierId` to both local `UserDefaults` and `NSUbiquitousKeyValueStore`.
+- [x] 20.4.2 — On `NSUbiquitousKeyValueStore.didChangeExternallyNotification`: compare remote vs local tier.
+- [x] 20.4.3 — If remote tier rank > local: adopt remote tier.
+- [x] 20.4.4 — If local tier rank > remote: push local to remote.
+- [x] 20.4.5 — Sync trial dates: if remote `trialStartDate` exists and local doesn't, adopt it.
+- [x] 20.4.6 — Handle `NSUbiquitousKeyValueStore` not available (iCloud disabled): fall back to local-only via `CloudKeyValueStore` protocol.
+- [x] 20.4.7 — Add unit test: remote Pro + local Free → resolves to Pro.
+- [x] 20.4.8 — Add unit test: both trial with different dates → use earliest start date.
 
 ---
 

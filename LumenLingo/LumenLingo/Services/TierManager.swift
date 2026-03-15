@@ -1,4 +1,22 @@
 import SwiftUI
+import os.log
+
+// MARK: - Logging
+
+private let tierLog = Logger(subsystem: "com.lumenlingo", category: "TierManager")
+
+// MARK: - Cloud Key-Value Store Protocol
+
+/// Abstraction over NSUbiquitousKeyValueStore for testability.
+protocol CloudKeyValueStore: AnyObject {
+    func string(forKey key: String) -> String?
+    func double(forKey key: String) -> Double
+    func set(_ value: Any?, forKey key: String)
+    func removeObject(forKey key: String)
+    @discardableResult func synchronize() -> Bool
+}
+
+extension NSUbiquitousKeyValueStore: CloudKeyValueStore {}
 
 // MARK: - Notifications
 
@@ -9,12 +27,15 @@ extension Notification.Name {
     static let quantumFlowAutoAdjusted = Notification.Name("quantumFlowAutoAdjusted")
     static let nebulaDriftAutoAdjusted = Notification.Name("nebulaDriftAutoAdjusted")
     static let offlineModeAutoDisabled = Notification.Name("offlineModeAutoDisabled")
+    static let settingsRestored = Notification.Name("settingsRestored")
 }
 
 // MARK: - Tier Manager
 
 /// Central service for tier selection, persistence, and feature gating.
 /// Follows the same `@Observable` + `.environment()` pattern as `ThemeManager`.
+/// All state mutations are serialized on the main actor for thread safety.
+@MainActor
 @Observable
 final class TierManager {
 
@@ -65,7 +86,8 @@ final class TierManager {
 
     /// Static tier→feature mapping used by both instance and unit tests.
     /// Not affected by debug overrides — always returns the canonical mapping.
-    static func allowedCount(for feature: PremiumFeature, tier: MembershipTier) -> Int {
+    /// `nonisolated` because this is a pure function with no state access.
+    nonisolated static func allowedCount(for feature: PremiumFeature, tier: MembershipTier) -> Int {
         switch feature {
         case .soundscapes:
             switch tier {
@@ -459,6 +481,167 @@ final class TierManager {
         }
     }
 
+    // MARK: - Dormant Settings
+
+    /// Keys used in the dormant settings dictionary.
+    private enum DormantKey {
+        static let soundscape = "soundscape"
+        static let soundscapeVariant = "soundscapeVariant"
+        static let breathingOrbsEnabled = "breathingOrbsEnabled"
+        static let breathingOrbScheme = "breathingOrbScheme"
+        static let quantumFlowEnabled = "quantumFlowEnabled"
+        static let quantumFlowScene = "quantumFlowScene"
+        static let nebulaDriftEnabled = "nebulaDriftEnabled"
+        static let nebulaPreset = "nebulaPreset"
+        static let offlineModeEnabled = "offlineModeEnabled"
+    }
+
+    /// Capture tier-sensitive settings before they are reset on downgrade.
+    func captureDormantSettings(profile: UserProfile) {
+        var settings = profile.dormantSettings
+
+        // Only capture settings that are actually configured (non-default)
+        if !profile.selectedSoundscape.isEmpty {
+            settings[DormantKey.soundscape] = profile.selectedSoundscape
+            settings[DormantKey.soundscapeVariant] = String(profile.soundscapeVariantIndex)
+        }
+        if profile.breathingOrbsEnabled {
+            settings[DormantKey.breathingOrbsEnabled] = "true"
+            settings[DormantKey.breathingOrbScheme] = profile.breathingOrbScheme
+        }
+        if profile.quantumFlowEnabled {
+            settings[DormantKey.quantumFlowEnabled] = "true"
+            settings[DormantKey.quantumFlowScene] = profile.quantumFlowScene
+        }
+        if profile.nebulaDriftEnabled {
+            settings[DormantKey.nebulaDriftEnabled] = "true"
+            settings[DormantKey.nebulaPreset] = profile.nebulaPreset
+        }
+        if profile.offlineModeEnabled {
+            settings[DormantKey.offlineModeEnabled] = "true"
+        }
+
+        profile.dormantSettings = settings
+    }
+
+    /// Restore dormant settings that are valid for the new (higher) tier.
+    /// Returns true if any settings were restored.
+    @discardableResult
+    func restoreDormantSettings(profile: UserProfile) -> Bool {
+        let settings = profile.dormantSettings
+        guard !settings.isEmpty else { return false }
+
+        var restored = false
+
+        // Soundscape — only restore if new tier has access
+        if hasAccess(to: .soundscapes),
+           let savedSoundscape = settings[DormantKey.soundscape],
+           let soundscape = Soundscape(rawValue: savedSoundscape),
+           isSoundscapeUnlocked(soundscape) {
+            profile.selectedSoundscape = savedSoundscape
+            if let variant = settings[DormantKey.soundscapeVariant], let idx = Int(variant) {
+                profile.soundscapeVariantIndex = idx
+            }
+            restored = true
+        }
+
+        // Breathing orbs — Pro+
+        if hasAccess(to: .breathingOrbs),
+           settings[DormantKey.breathingOrbsEnabled] == "true" {
+            profile.breathingOrbsEnabled = true
+            if let scheme = settings[DormantKey.breathingOrbScheme],
+               BreathingOrbScheme(rawValue: scheme) != nil {
+                profile.breathingOrbScheme = scheme
+            }
+            restored = true
+        }
+
+        // Quantum flow — Elite+
+        if hasAccess(to: .quantumFlow),
+           settings[DormantKey.quantumFlowEnabled] == "true" {
+            profile.quantumFlowEnabled = true
+            if let scene = settings[DormantKey.quantumFlowScene],
+               let qfScene = QuantumFlowScene(rawValue: scene),
+               isQuantumSceneUnlocked(qfScene) {
+                profile.quantumFlowScene = scene
+            }
+            restored = true
+        }
+
+        // Nebula drift — Elite+
+        if hasAccess(to: .nebulaDrift),
+           settings[DormantKey.nebulaDriftEnabled] == "true" {
+            profile.nebulaDriftEnabled = true
+            if let preset = settings[DormantKey.nebulaPreset],
+               let ndPreset = NebulaPreset(rawValue: preset),
+               isNebulaPresetUnlocked(ndPreset) {
+                profile.nebulaPreset = preset
+            }
+            restored = true
+        }
+
+        // Offline mode — Pro+
+        if hasAccess(to: .offlineMode),
+           settings[DormantKey.offlineModeEnabled] == "true" {
+            profile.offlineModeEnabled = true
+            restored = true
+        }
+
+        if restored {
+            tierLog.info("Restored dormant settings after upgrade to \(self.currentTier.displayName, privacy: .public)")
+            NotificationCenter.default.post(name: .settingsRestored, object: nil)
+        }
+
+        return restored
+    }
+
+    // MARK: - State Validation
+
+    /// Validates tier and trial state on app launch, recovering gracefully from corrupt data.
+    /// Call this once after `syncFromProfile` on every launch.
+    func validateState(profile: UserProfile?) {
+        guard let profile else { return }
+
+        // 1. Validate tier ID — unknown values reset to "free"
+        let knownTierIds = Set(MembershipTier.allCases.map(\.rawValue))
+        if !knownTierIds.contains(profile.selectedTierId) {
+            tierLog.error("Invalid tier ID: \(profile.selectedTierId, privacy: .public), resetting to free")
+            profile.selectedTierId = "free"
+            currentTier = .free
+        }
+
+        // 2. Validate trial start date
+        if let trialStart = profile.trialStartDate {
+            // Future trial date (clock manipulation) — treat trial as not started
+            if trialStart > Date.now {
+                tierLog.error("Trial start date is in the future (\(trialStart, privacy: .public)), clearing trial")
+                profile.trialStartDate = nil
+                profile.trialExpiredShown = false
+                if currentTier == .trial {
+                    profile.selectedTierId = "free"
+                    currentTier = .free
+                }
+            }
+            // Unreasonably old trial (>365 days) — treat as expired
+            else if let daysAgo = Calendar.current.dateComponents([.day], from: trialStart, to: Date.now).day,
+                    daysAgo > 365 {
+                tierLog.error("Trial start date is over 1 year old (\(daysAgo) days), marking expired")
+                profile.trialExpiredShown = true
+                if currentTier == .trial {
+                    profile.selectedTierId = "free"
+                    currentTier = .free
+                }
+            }
+        }
+
+        // 3. Trial tier without a start date — shouldn't happen, reset to free
+        if currentTier == .trial && profile.trialStartDate == nil {
+            tierLog.error("Tier is trial but no trialStartDate exists, resetting to free")
+            profile.selectedTierId = "free"
+            currentTier = .free
+        }
+    }
+
     // MARK: - Royal Trial Lifecycle
 
     /// Start the 14-day Royal Trial. Can only be started once per user.
@@ -513,8 +696,18 @@ final class TierManager {
             feedback.impactOccurred()
         }
 
+        // Restore dormant settings on upgrade
+        if wasUpgrade, let profile {
+            restoreDormantSettings(profile: profile)
+        }
+
         // Graceful feature degradation on downgrade
         if !wasUpgrade {
+            // Capture current settings as dormant before resetting
+            if let profile {
+                captureDormantSettings(profile: profile)
+            }
+
             let audio = AudioService.shared
             if let active = audio.activeSoundscape {
                 if !isSoundscapeUnlocked(active) {
@@ -579,9 +772,83 @@ final class TierManager {
             }
         }
 
+        // Sync tier change to iCloud
+        pushToCloud(profile: profile)
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { [weak self] in
             self?.isTransitioning = false
         }
+    }
+
+    // MARK: - iCloud Tier Sync
+
+    /// NSUbiquitousKeyValueStore keys for cross-device sync.
+    private enum CloudKey {
+        static let tierId = "cloud_selectedTierId"
+        static let trialStartDate = "cloud_trialStartDate"
+    }
+
+    /// Injectable cloud store — defaults to NSUbiquitousKeyValueStore.default.
+    var cloudStore: CloudKeyValueStore = NSUbiquitousKeyValueStore.default
+
+    /// Push the current tier and trial date to iCloud KVS.
+    func pushToCloud(profile: UserProfile?) {
+        guard let profile else { return }
+        cloudStore.set(profile.selectedTierId, forKey: CloudKey.tierId)
+        if let trialStart = profile.trialStartDate {
+            cloudStore.set(trialStart.timeIntervalSince1970, forKey: CloudKey.trialStartDate)
+        } else {
+            cloudStore.removeObject(forKey: CloudKey.trialStartDate)
+        }
+        cloudStore.synchronize()
+        tierLog.info("Pushed tier to iCloud: \(profile.selectedTierId, privacy: .public)")
+    }
+
+    /// Pull tier and trial date from iCloud KVS and resolve conflicts.
+    /// Higher tier wins; for trial dates, earliest start wins.
+    func pullFromCloud(profile: UserProfile?) {
+        guard let profile else { return }
+
+        // Resolve tier: highest rank wins
+        if let remoteTierId = cloudStore.string(forKey: CloudKey.tierId) {
+            let remoteTier = MembershipTier(tierId: remoteTierId)
+            let localTier = MembershipTier(tierId: profile.selectedTierId)
+
+            if remoteTier.rank > localTier.rank {
+                tierLog.info("iCloud tier (\(remoteTierId, privacy: .public)) outranks local (\(profile.selectedTierId, privacy: .public)), adopting remote")
+                selectTier(remoteTierId, profile: profile)
+            } else if localTier.rank > remoteTier.rank {
+                // Local is higher — push to remote
+                cloudStore.set(profile.selectedTierId, forKey: CloudKey.tierId)
+                cloudStore.synchronize()
+            }
+        }
+
+        // Resolve trial date: earliest start wins (preserves trial history)
+        let remoteTimestamp = cloudStore.double(forKey: CloudKey.trialStartDate)
+        if remoteTimestamp > 0 {
+            let remoteDate = Date(timeIntervalSince1970: remoteTimestamp)
+            if let localDate = profile.trialStartDate {
+                if remoteDate < localDate {
+                    profile.trialStartDate = remoteDate
+                }
+            } else {
+                // No local trial date — adopt remote
+                profile.trialStartDate = remoteDate
+            }
+        }
+    }
+
+    /// Register for iCloud KVS external change notifications.
+    func startCloudSync(profile: UserProfile?) {
+        NotificationCenter.default.addObserver(
+            forName: NSUbiquitousKeyValueStore.didChangeExternallyNotification,
+            object: NSUbiquitousKeyValueStore.default,
+            queue: .main
+        ) { [weak self] _ in
+            self?.pullFromCloud(profile: profile)
+        }
+        NSUbiquitousKeyValueStore.default.synchronize()
     }
 
     // MARK: - Feature Flag Overrides (Debug Only)

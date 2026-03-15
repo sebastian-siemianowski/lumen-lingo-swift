@@ -63,6 +63,10 @@ final class UserProfile {
     /// Whether the trial-expired screen has already been shown (prevents repeat).
     var trialExpiredShown: Bool = false
 
+    /// Dormant settings captured on tier downgrade, restored on re-upgrade.
+    /// JSON-encoded dictionary of feature settings preserved across tier changes.
+    var dormantSettingsData: Data? = nil
+
     /// Level scales quadratically: cumulative XP for level L = 50·L·(L−1).
     /// Each level costs 100·L XP, so reaching high levels takes real dedication.
     var currentLevel: Int {
@@ -133,6 +137,20 @@ final class UserProfile {
     var isTrialExpired: Bool {
         guard let expiry = trialExpiryDate else { return false }
         return Date.now >= expiry
+    }
+
+    /// Decoded dormant settings dictionary. Returns empty dict if no data.
+    var dormantSettings: [String: String] {
+        get {
+            guard let data = dormantSettingsData,
+                  let dict = try? JSONDecoder().decode([String: String].self, from: data) else {
+                return [:]
+            }
+            return dict
+        }
+        set {
+            dormantSettingsData = try? JSONEncoder().encode(newValue)
+        }
     }
 
     init(

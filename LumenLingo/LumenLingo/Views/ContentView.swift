@@ -116,6 +116,9 @@ struct ContentView: View {
             localization.update(from: languagePrefs)
             themeManager.syncFromProfile(profile)
             tierManager.syncFromProfile(profile)
+            tierManager.validateState(profile: profile)
+            tierManager.pullFromCloud(profile: profile)
+            tierManager.startCloudSync(profile: profile)
             // Check for trial expiration on app launch
             if tierManager.checkTrialExpiration(profile: profile) {
                 showTrialEnded = true

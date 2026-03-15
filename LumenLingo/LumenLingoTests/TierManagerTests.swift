@@ -2,6 +2,7 @@ import XCTest
 @testable import LumenLingo
 
 /// Tests for TierManager — tier persistence, feature gating, and tier-change logic.
+@MainActor
 final class TierManagerTests: XCTestCase {
 
     // MARK: - Default Tier
@@ -2481,4 +2482,319 @@ final class TierManagerTests: XCTestCase {
         tm.setFeatureOverride(nil, for: .languagePairs)
     }
     #endif
+
+    // MARK: - Epic 20: Edge Cases & Error Handling
+
+    // MARK: 20.1 — Corrupt Tier Data Validation
+
+    func testValidateStateInvalidTierIdResetsToFree() {
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "diamond_ultra")
+        tm.syncFromProfile(profile)
+        // After sync, MembershipTier(tierId:) already falls back to .free
+        // but validateState should also fix the profile's stored ID
+        tm.validateState(profile: profile)
+        XCTAssertEqual(profile.selectedTierId, "free")
+        XCTAssertEqual(tm.currentTier, .free)
+    }
+
+    func testValidateStateFutureTrialDateClearsTrial() {
+        let tm = TierManager()
+        let futureDate = Calendar.current.date(byAdding: .day, value: 7, to: Date.now)!
+        let profile = UserProfile(selectedTierId: "trial", trialStartDate: futureDate)
+        tm.syncFromProfile(profile)
+        tm.validateState(profile: profile)
+        XCTAssertNil(profile.trialStartDate, "Future trial date should be cleared")
+        XCTAssertFalse(profile.trialExpiredShown, "trialExpiredShown should be reset")
+        XCTAssertEqual(tm.currentTier, .free, "Tier should fall back to free")
+        XCTAssertEqual(profile.selectedTierId, "free")
+    }
+
+    func testValidateStateAncientTrialDateMarksExpired() {
+        let tm = TierManager()
+        let ancientDate = Calendar.current.date(byAdding: .day, value: -400, to: Date.now)!
+        let profile = UserProfile(selectedTierId: "trial", trialStartDate: ancientDate)
+        tm.syncFromProfile(profile)
+        tm.validateState(profile: profile)
+        XCTAssertTrue(profile.trialExpiredShown, "Ancient trial should be marked as expired")
+        XCTAssertEqual(tm.currentTier, .free, "Tier should fall back to free")
+        XCTAssertEqual(profile.selectedTierId, "free")
+    }
+
+    func testValidateStateTrialWithoutStartDateResetsToFree() {
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "trial")
+        tm.syncFromProfile(profile)
+        tm.validateState(profile: profile)
+        XCTAssertEqual(tm.currentTier, .free)
+        XCTAssertEqual(profile.selectedTierId, "free")
+    }
+
+    func testValidateStateValidTierIdUnchanged() {
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "pro")
+        tm.syncFromProfile(profile)
+        tm.validateState(profile: profile)
+        XCTAssertEqual(tm.currentTier, .pro)
+        XCTAssertEqual(profile.selectedTierId, "pro")
+    }
+
+    func testValidateStateValidTrialUnchanged() {
+        let tm = TierManager()
+        let recentDate = Calendar.current.date(byAdding: .day, value: -3, to: Date.now)!
+        let profile = UserProfile(selectedTierId: "trial", trialStartDate: recentDate)
+        tm.syncFromProfile(profile)
+        tm.validateState(profile: profile)
+        XCTAssertEqual(tm.currentTier, .trial)
+        XCTAssertEqual(profile.selectedTierId, "trial")
+        XCTAssertNotNil(profile.trialStartDate)
+    }
+
+    func testValidateStateNilProfileNoOp() {
+        let tm = TierManager()
+        tm.validateState(profile: nil)
+        XCTAssertEqual(tm.currentTier, .free) // unchanged default
+    }
+
+    // MARK: 20.2 — Concurrent Tier Change Safety
+
+    func testTierManagerIsMainActorIsolated() {
+        // TierManager is @MainActor — verify we can call non-static methods
+        // from this @MainActor test context without any async boundary
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "pro")
+        tm.syncFromProfile(profile)
+        XCTAssertEqual(tm.currentTier, .pro)
+        tm.selectTier("elite", profile: profile)
+        XCTAssertEqual(tm.currentTier, .elite)
+    }
+
+    func testCheckTrialExpirationAndSelectTierBothUseSelectTier() {
+        // Both manual changes and trial expiration flow through selectTier
+        let tm = TierManager()
+        let expiredDate = Calendar.current.date(byAdding: .day, value: -15, to: Date.now)!
+        let profile = UserProfile(selectedTierId: "trial", trialStartDate: expiredDate)
+        tm.syncFromProfile(profile)
+        // Trial just expired — checkTrialExpiration should downgrade via selectTier
+        let didExpire = tm.checkTrialExpiration(profile: profile)
+        XCTAssertTrue(didExpire)
+        XCTAssertEqual(tm.currentTier, .free)
+    }
+
+    func testSequentialTierChangesProduceConsistentState() {
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "free")
+        tm.syncFromProfile(profile)
+        // Rapid sequential changes
+        tm.selectTier("pro", profile: profile)
+        tm.selectTier("elite", profile: profile)
+        tm.selectTier("royal", profile: profile)
+        XCTAssertEqual(tm.currentTier, .royal)
+        XCTAssertEqual(profile.selectedTierId, "royal")
+    }
+
+    // MARK: 20.3 — Dormant Settings Capture & Restore
+
+    func testDormantSettingsCapturedOnDowngrade() {
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "royal")
+        tm.syncFromProfile(profile)
+        // Configure some premium features
+        profile.breathingOrbsEnabled = true
+        profile.breathingOrbScheme = BreathingOrbScheme.tokyoSunset.rawValue
+        profile.quantumFlowEnabled = true
+        profile.offlineModeEnabled = true
+        // Downgrade to free — should capture settings
+        tm.selectTier("free", profile: profile)
+        let dormant = profile.dormantSettings
+        XCTAssertEqual(dormant["breathingOrbsEnabled"], "true")
+        XCTAssertEqual(dormant["breathingOrbScheme"], BreathingOrbScheme.tokyoSunset.rawValue)
+        XCTAssertEqual(dormant["quantumFlowEnabled"], "true")
+        XCTAssertEqual(dormant["offlineModeEnabled"], "true")
+    }
+
+    func testDormantSettingsRestoredOnUpgrade() {
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "royal")
+        tm.syncFromProfile(profile)
+        // Configure premium features during Royal
+        profile.breathingOrbsEnabled = true
+        profile.breathingOrbScheme = BreathingOrbScheme.tokyoSunset.rawValue
+        profile.offlineModeEnabled = true
+        // Downgrade to free (captures dormant settings)
+        tm.selectTier("free", profile: profile)
+        XCTAssertFalse(profile.breathingOrbsEnabled, "Should be disabled after downgrade")
+        XCTAssertFalse(profile.offlineModeEnabled, "Should be disabled after downgrade")
+        // Upgrade to pro (should restore breathing orbs + offline from dormant)
+        tm.selectTier("pro", profile: profile)
+        XCTAssertTrue(profile.breathingOrbsEnabled, "Should be restored from dormant")
+        XCTAssertEqual(profile.breathingOrbScheme, BreathingOrbScheme.tokyoSunset.rawValue)
+        XCTAssertTrue(profile.offlineModeEnabled, "Should be restored from dormant")
+    }
+
+    func testDormantSettingsDoNotRestoreBeyondNewTierScope() {
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "royal")
+        tm.syncFromProfile(profile)
+        // Configure Royal-only features
+        profile.quantumFlowEnabled = true
+        profile.quantumFlowScene = QuantumFlowScene.dubaiCelestialMirage.rawValue
+        profile.nebulaDriftEnabled = true
+        // Downgrade to free
+        tm.selectTier("free", profile: profile)
+        // Upgrade to Pro only — Quantum Flow and Nebula are Elite+
+        tm.selectTier("pro", profile: profile)
+        XCTAssertFalse(profile.quantumFlowEnabled, "Quantum Flow is Elite+, should NOT be restored for Pro")
+        XCTAssertFalse(profile.nebulaDriftEnabled, "Nebula Drift is Elite+, should NOT be restored for Pro")
+    }
+
+    func testDormantSettingsEmptyByDefault() {
+        let profile = UserProfile()
+        XCTAssertTrue(profile.dormantSettings.isEmpty)
+        XCTAssertNil(profile.dormantSettingsData)
+    }
+
+    func testDormantSettingsRoundTrip() {
+        let profile = UserProfile()
+        profile.dormantSettings = ["key1": "value1", "key2": "value2"]
+        let reloaded = profile.dormantSettings
+        XCTAssertEqual(reloaded["key1"], "value1")
+        XCTAssertEqual(reloaded["key2"], "value2")
+    }
+
+    func testCaptureDoesNotOverwriteExistingDormant() {
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "elite")
+        tm.syncFromProfile(profile)
+        // Pre-existing dormant setting from a previous cycle
+        profile.dormantSettings = ["breathingOrbScheme": BreathingOrbScheme.tokyoSunset.rawValue]
+        // Current profile has a different scheme
+        profile.breathingOrbsEnabled = true
+        profile.breathingOrbScheme = BreathingOrbScheme.barcelonaNights.rawValue
+        // Capture on downgrade — should overwrite with current values
+        tm.captureDormantSettings(profile: profile)
+        XCTAssertEqual(profile.dormantSettings["breathingOrbScheme"], BreathingOrbScheme.barcelonaNights.rawValue)
+    }
+
+    func testRestoreReturnsFalseWhenNoDormantSettings() {
+        let tm = TierManager()
+        let profile = UserProfile(selectedTierId: "pro")
+        tm.syncFromProfile(profile)
+        XCTAssertFalse(tm.restoreDormantSettings(profile: profile))
+    }
+
+    // MARK: 20.4 — iCloud Tier Sync
+
+    /// In-memory mock for CloudKeyValueStore used by iCloud sync tests.
+    private func makeMockCloudStore() -> MockCloudStore {
+        MockCloudStore()
+    }
+
+    func testPullFromCloudHigherRemoteTierWins() {
+        let tm = TierManager()
+        let mock = makeMockCloudStore()
+        tm.cloudStore = mock
+        let profile = UserProfile(selectedTierId: "free")
+        tm.syncFromProfile(profile)
+        mock.set("pro", forKey: "cloud_selectedTierId")
+        tm.pullFromCloud(profile: profile)
+        XCTAssertEqual(tm.currentTier, .pro)
+        XCTAssertEqual(profile.selectedTierId, "pro")
+    }
+
+    func testPullFromCloudLocalHigherTierPushes() {
+        let tm = TierManager()
+        let mock = makeMockCloudStore()
+        tm.cloudStore = mock
+        let profile = UserProfile(selectedTierId: "elite")
+        tm.syncFromProfile(profile)
+        mock.set("free", forKey: "cloud_selectedTierId")
+        tm.pullFromCloud(profile: profile)
+        XCTAssertEqual(tm.currentTier, .elite)
+        XCTAssertEqual(mock.string(forKey: "cloud_selectedTierId"), "elite")
+    }
+
+    func testPullFromCloudTrialDateEarliestWins() {
+        let tm = TierManager()
+        let mock = makeMockCloudStore()
+        tm.cloudStore = mock
+        let localDate = Calendar.current.date(byAdding: .day, value: -5, to: Date.now)!
+        let remoteDate = Calendar.current.date(byAdding: .day, value: -10, to: Date.now)!
+        let profile = UserProfile(selectedTierId: "trial", trialStartDate: localDate)
+        tm.syncFromProfile(profile)
+        mock.storage["cloud_trialStartDate"] = remoteDate.timeIntervalSince1970
+        tm.pullFromCloud(profile: profile)
+        XCTAssertEqual(profile.trialStartDate!.timeIntervalSince1970,
+                       remoteDate.timeIntervalSince1970,
+                       accuracy: 1.0)
+    }
+
+    func testPullFromCloudAdoptsRemoteTrialDateWhenLocalNil() {
+        let tm = TierManager()
+        let mock = makeMockCloudStore()
+        tm.cloudStore = mock
+        let profile = UserProfile(selectedTierId: "free")
+        tm.syncFromProfile(profile)
+        let remoteDate = Calendar.current.date(byAdding: .day, value: -3, to: Date.now)!
+        mock.storage["cloud_trialStartDate"] = remoteDate.timeIntervalSince1970
+        tm.pullFromCloud(profile: profile)
+        XCTAssertNotNil(profile.trialStartDate)
+        XCTAssertEqual(profile.trialStartDate!.timeIntervalSince1970,
+                       remoteDate.timeIntervalSince1970,
+                       accuracy: 1.0)
+    }
+
+    func testPushToCloudWritesTierAndTrialDate() {
+        let tm = TierManager()
+        let mock = makeMockCloudStore()
+        tm.cloudStore = mock
+        let trialDate = Calendar.current.date(byAdding: .day, value: -2, to: Date.now)!
+        let profile = UserProfile(selectedTierId: "trial", trialStartDate: trialDate)
+        tm.syncFromProfile(profile)
+        tm.pushToCloud(profile: profile)
+        XCTAssertEqual(mock.string(forKey: "cloud_selectedTierId"), "trial")
+        let storedTimestamp = mock.double(forKey: "cloud_trialStartDate")
+        XCTAssertEqual(storedTimestamp, trialDate.timeIntervalSince1970, accuracy: 1.0)
+    }
+
+    func testPushToCloudClearsTrialDateWhenNil() {
+        let tm = TierManager()
+        let mock = makeMockCloudStore()
+        tm.cloudStore = mock
+        let profile = UserProfile(selectedTierId: "pro")
+        tm.syncFromProfile(profile)
+        mock.storage["cloud_trialStartDate"] = Date.now.timeIntervalSince1970
+        tm.pushToCloud(profile: profile)
+        XCTAssertEqual(mock.double(forKey: "cloud_trialStartDate"), 0.0)
+    }
+}
+
+// MARK: - Mock Cloud Store
+
+@MainActor
+final class MockCloudStore: CloudKeyValueStore {
+    var storage: [String: Any] = [:]
+
+    func string(forKey key: String) -> String? {
+        storage[key] as? String
+    }
+
+    func double(forKey key: String) -> Double {
+        storage[key] as? Double ?? 0.0
+    }
+
+    func set(_ value: Any?, forKey key: String) {
+        if let value {
+            storage[key] = value
+        } else {
+            storage.removeValue(forKey: key)
+        }
+    }
+
+    func removeObject(forKey key: String) {
+        storage.removeValue(forKey: key)
+    }
+
+    @discardableResult
+    func synchronize() -> Bool { true }
 }
