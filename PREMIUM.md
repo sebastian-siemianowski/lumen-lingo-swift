@@ -407,7 +407,7 @@
 
 ---
 
-## Epic 5: Breathing Orbs Gating
+## Epic 5: Breathing Orbs Gating ✅
 
 ### Story 5.1 — Gate Breathing Orb Schemes by Tier
 
@@ -426,14 +426,14 @@
 - Free tier sees a preview animation of breathing orbs with a frosted "Unlock with Pro" overlay.
 
 **Subtasks:**
-- [ ] 5.1.1 — Add `breathingOrbsAccessible: Bool` to `TierManager` (false for free, true for others).
-- [ ] 5.1.2 — In `BreathingOrbsSettingsView`, check `TierManager.breathingOrbsAccessible`.
-- [ ] 5.1.3 — If not accessible: show preview animation with frosted overlay and "Unlock with Pro" CTA.
-- [ ] 5.1.4 — If accessible: show full scheme picker with all 6 options.
-- [ ] 5.1.5 — Add `PremiumFeatureBadge` reusable view: tier name capsule (e.g., "PRO") with gradient.
-- [ ] 5.1.6 — On "Unlock with Pro" tap: navigate to `MembershipView` with Pro pre-highlighted.
-- [ ] 5.1.7 — Add unit test: free tier → `breathingOrbsAccessible` returns false.
-- [ ] 5.1.8 — Add unit test: pro tier → `breathingOrbsAccessible` returns true.
+- [x] 5.1.1 — Add `breathingOrbsAccessible: Bool` to `TierManager` (false for free, true for others).
+- [x] 5.1.2 — In `BreathingOrbsSettingsView`, check `TierManager.breathingOrbsAccessible`.
+- [x] 5.1.3 — If not accessible: show preview animation with frosted overlay and "Unlock with Pro" CTA.
+- [x] 5.1.4 — If accessible: show full scheme picker with all 6 options.
+- [x] 5.1.5 — Add `PremiumFeatureBadge` reusable view: tier name capsule (e.g., "PRO") with gradient.
+- [x] 5.1.6 — On "Unlock with Pro" tap: navigate to `MembershipView` with Pro pre-highlighted.
+- [x] 5.1.7 — Add unit test: free tier → `breathingOrbsAccessible` returns false.
+- [x] 5.1.8 — Add unit test: pro tier → `breathingOrbsAccessible` returns true.
 
 ---
 
@@ -450,13 +450,13 @@
 - The preview orb uses the same Metal shader as the real feature.
 
 **Subtasks:**
-- [ ] 5.2.1 — Create `BreathingOrbsPreview` view using the existing `BreathingOrbsRenderer` in demo mode.
-- [ ] 5.2.2 — Demo mode: single orb, fixed color scheme, reduced particle count for performance.
-- [ ] 5.2.3 — Overlay with `.ultraThinMaterial` + `.opacity(0.85)` for frosted effect.
-- [ ] 5.2.4 — Add title, description text, and tier badge to overlay.
-- [ ] 5.2.5 — "Unlock" CTA button with Pro tier gradient and spring animation on tap.
-- [ ] 5.2.6 — CTA navigates to `MembershipView`.
-- [ ] 5.2.7 — Add subtle parallax effect on device tilt using `CMMotionManager`.
+- [x] 5.2.1 — Create `BreathingOrbsLockedPreview` view using the existing `BreathingOrbsView` in demo mode (reduced intensity 0.6, speed 0.7).
+- [x] 5.2.2 — Demo mode: default scheme (barcelonaNights), reduced intensity for performance.
+- [x] 5.2.3 — Overlay with `.ultraThinMaterial` + `.opacity(0.85)` for frosted effect.
+- [x] 5.2.4 — Add title, description text, tier badge, and scheme preview dots to overlay.
+- [x] 5.2.5 — "Unlock with Pro" CTA button with Pro tier gradient and spring animation on tap.
+- [x] 5.2.6 — CTA navigates to `MembershipView` via `.sheet`.
+- [ ] 5.2.7 — Add subtle parallax effect on device tilt using `CMMotionManager`. (deferred — requires CoreMotion entitlement)
 
 ---
 
@@ -473,11 +473,11 @@
 - A brief toast confirms: "Breathing Orbs paused — upgrade to resume".
 
 **Subtasks:**
-- [ ] 5.3.1 — Add `MetalCosmicRenderer.fadeOutOrbs(duration: 1.5)` method.
-- [ ] 5.3.2 — In `TierManager.didSet`, if new tier is free and orbs were active: trigger fade-out.
-- [ ] 5.3.3 — After fade completes, reset `UserProfile.breathingOrbScheme` to nil.
-- [ ] 5.3.4 — Show toast notification with upgrade CTA.
-- [ ] 5.3.5 — Add integration test: enable orbs on Pro → downgrade to Free → verify fade and reset.
+- [x] 5.3.1 — Breathing orbs are pure SwiftUI (not Metal). Disable handled via `breathingOrbsEnabled = false` which removes orbs from LayoutBackgroundView.
+- [x] 5.3.2 — In `TierManager.selectTier`, if new tier is free and orbs were active: disable orbs and reset scheme.
+- [x] 5.3.3 — After downgrade, reset `UserProfile.breathingOrbScheme` to barcelonaNights default.
+- [x] 5.3.4 — Show toast notification ("Breathing Orbs paused — upgrade to resume") via `.onReceive(.breathingOrbsAutoDisabled)`.
+- [x] 5.3.5 — Unit tests: downgrade disables orbs, resets scheme; upgrade does not auto-enable.
 
 ---
 
@@ -627,7 +627,7 @@
 
 ---
 
-## Epic 8: Offline Mode Gating
+## Epic 8: Offline Mode Gating (IMPORTANT MAKE IT COSMETIC - Currently no content is downloaded offline - simply make sure user has to be connected to internet on Free Tier - Modify stories accordingly)
 
 ### Story 8.1 — Gate Offline Mode by Tier
 

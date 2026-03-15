@@ -463,4 +463,339 @@ final class TierManagerTests: XCTestCase {
         let fakePair = LanguagePair(source: .spanish, target: .arabic)
         XCTAssertFalse(manager.isLanguagePairUnlocked(fakePair))
     }
+
+    // MARK: - Breathing Orbs Gating
+
+    func testFreeTierBreathingOrbsNotAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertFalse(manager.breathingOrbsAccessible)
+    }
+
+    func testProTierBreathingOrbsAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        XCTAssertTrue(manager.breathingOrbsAccessible)
+    }
+
+    func testEliteTierBreathingOrbsAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        XCTAssertTrue(manager.breathingOrbsAccessible)
+    }
+
+    func testRoyalTierBreathingOrbsAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        XCTAssertTrue(manager.breathingOrbsAccessible)
+    }
+
+    func testTrialTierBreathingOrbsAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "trial"
+        XCTAssertTrue(manager.breathingOrbsAccessible)
+    }
+
+    func testBreathingOrbsAllowedCount_Free0() {
+        XCTAssertEqual(TierManager.allowedCount(for: .breathingOrbs, tier: .free), 0)
+    }
+
+    func testBreathingOrbsAllowedCount_Pro6() {
+        XCTAssertEqual(TierManager.allowedCount(for: .breathingOrbs, tier: .pro), 6)
+    }
+
+    func testBreathingOrbsAllowedCount_Elite6() {
+        XCTAssertEqual(TierManager.allowedCount(for: .breathingOrbs, tier: .elite), 6)
+    }
+
+    func testBreathingOrbsAllowedCount_Royal6() {
+        XCTAssertEqual(TierManager.allowedCount(for: .breathingOrbs, tier: .royal), 6)
+    }
+
+    func testBreathingOrbsAllowedCount_Trial6() {
+        XCTAssertEqual(TierManager.allowedCount(for: .breathingOrbs, tier: .trial), 6)
+    }
+
+    func testBreathingOrbsDowngradeDisablesOrbs() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "pro"
+        manager.syncFromProfile(profile)
+        profile.breathingOrbsEnabled = true
+
+        // Downgrade to free
+        manager.selectTier("free", profile: profile)
+
+        XCTAssertFalse(profile.breathingOrbsEnabled)
+    }
+
+    func testBreathingOrbsDowngradeResetsScheme() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "pro"
+        manager.syncFromProfile(profile)
+        profile.breathingOrbsEnabled = true
+        profile.orbScheme = .krakowLuminescence
+
+        manager.selectTier("free", profile: profile)
+
+        XCTAssertEqual(profile.breathingOrbScheme, BreathingOrbScheme.barcelonaNights.rawValue)
+    }
+
+    func testBreathingOrbsUpgradeDoesNotDisable() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "free"
+        manager.syncFromProfile(profile)
+        profile.breathingOrbsEnabled = false
+
+        // Upgrade to pro — should not auto-enable
+        manager.selectTier("pro", profile: profile)
+
+        XCTAssertFalse(profile.breathingOrbsEnabled)
+    }
+
+    func testBreathingOrbsNotificationName() {
+        XCTAssertEqual(Notification.Name.breathingOrbsAutoDisabled.rawValue, "breathingOrbsAutoDisabled")
+    }
+
+    // MARK: - Quantum Flow Gating
+
+    func testFreeTierQuantumFlowNotAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertFalse(manager.quantumFlowAccessible)
+    }
+
+    func testProTierQuantumFlowNotAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        XCTAssertFalse(manager.quantumFlowAccessible)
+    }
+
+    func testEliteTierQuantumFlowAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        XCTAssertTrue(manager.quantumFlowAccessible)
+    }
+
+    func testRoyalTierQuantumFlowAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        XCTAssertTrue(manager.quantumFlowAccessible)
+    }
+
+    func testTrialTierQuantumFlowAccessible() {
+        let manager = TierManager()
+        manager.currentTierId = "trial"
+        XCTAssertTrue(manager.quantumFlowAccessible)
+    }
+
+    func testQuantumFlowAllowedCount_Free0() {
+        XCTAssertEqual(TierManager.allowedCount(for: .quantumFlow, tier: .free), 0)
+    }
+
+    func testQuantumFlowAllowedCount_Pro0() {
+        XCTAssertEqual(TierManager.allowedCount(for: .quantumFlow, tier: .pro), 0)
+    }
+
+    func testQuantumFlowAllowedCount_Elite4() {
+        XCTAssertEqual(TierManager.allowedCount(for: .quantumFlow, tier: .elite), 4)
+    }
+
+    func testQuantumFlowAllowedCount_Royal6() {
+        XCTAssertEqual(TierManager.allowedCount(for: .quantumFlow, tier: .royal), 6)
+    }
+
+    func testQuantumFlowAllowedCount_Trial6() {
+        XCTAssertEqual(TierManager.allowedCount(for: .quantumFlow, tier: .trial), 6)
+    }
+
+    // MARK: - Quantum Flow Scene Unlock Counts
+
+    func testFreeTierUnlocks0QuantumScenes() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertEqual(manager.unlockedQuantumScenes().count, 0)
+    }
+
+    func testProTierUnlocks0QuantumScenes() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        XCTAssertEqual(manager.unlockedQuantumScenes().count, 0)
+    }
+
+    func testEliteTierUnlocks4QuantumScenes() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        XCTAssertEqual(manager.unlockedQuantumScenes().count, 4)
+    }
+
+    func testRoyalTierUnlocksAll6QuantumScenes() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        XCTAssertEqual(manager.unlockedQuantumScenes().count, 6)
+    }
+
+    func testTrialTierUnlocksAll6QuantumScenes() {
+        let manager = TierManager()
+        manager.currentTierId = "trial"
+        XCTAssertEqual(manager.unlockedQuantumScenes().count, 6)
+    }
+
+    // MARK: - Quantum Flow Scene Sort Order
+
+    func testQuantumFlowSceneSortOrdersAreUnique() {
+        let orders = QuantumFlowScene.allCases.map(\.sortOrder)
+        XCTAssertEqual(Set(orders).count, QuantumFlowScene.allCases.count)
+    }
+
+    func testQuantumFlowSceneSortOrdersAreSequential() {
+        let orders = QuantumFlowScene.allCases.map(\.sortOrder).sorted()
+        for i in 0..<6 {
+            XCTAssertTrue(orders.contains(i), "Missing sort order \(i)")
+        }
+    }
+
+    // MARK: - Quantum Flow Scene Unlock Checks
+
+    func testIsQuantumSceneUnlocked_EliteUnlocksFirst4() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        let sorted = QuantumFlowScene.allCases.sorted { $0.sortOrder < $1.sortOrder }
+        for scene in sorted.prefix(4) {
+            XCTAssertTrue(manager.isQuantumSceneUnlocked(scene),
+                          "\(scene.displayName) should be unlocked for Elite")
+        }
+        for scene in sorted.suffix(2) {
+            XCTAssertFalse(manager.isQuantumSceneUnlocked(scene),
+                           "\(scene.displayName) should be locked for Elite")
+        }
+    }
+
+    func testIsQuantumSceneUnlocked_RoyalUnlocksAll() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        for scene in QuantumFlowScene.allCases {
+            XCTAssertTrue(manager.isQuantumSceneUnlocked(scene),
+                          "\(scene.displayName) should be unlocked for Royal")
+        }
+    }
+
+    func testIsQuantumSceneUnlocked_FreeLocksAll() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        for scene in QuantumFlowScene.allCases {
+            XCTAssertFalse(manager.isQuantumSceneUnlocked(scene),
+                           "\(scene.displayName) should be locked for Free")
+        }
+    }
+
+    // MARK: - Quantum Flow Minimum Tier
+
+    func testFirst4QuantumScenesRequireElite() {
+        let sorted = QuantumFlowScene.allCases.sorted { $0.sortOrder < $1.sortOrder }
+        for scene in sorted.prefix(4) {
+            XCTAssertEqual(scene.minimumTier, .elite,
+                           "\(scene.displayName) should require Elite")
+        }
+    }
+
+    func testLast2QuantumScenesRequireRoyal() {
+        let sorted = QuantumFlowScene.allCases.sorted { $0.sortOrder < $1.sortOrder }
+        for scene in sorted.suffix(2) {
+            XCTAssertEqual(scene.minimumTier, .royal,
+                           "\(scene.displayName) should require Royal")
+        }
+    }
+
+    // MARK: - Quantum Flow Downgrade
+
+    func testQuantumFlowDowngradeToFreeDisablesEntirely() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "elite"
+        manager.syncFromProfile(profile)
+        profile.quantumFlowEnabled = true
+        profile.quantumFlowScene = QuantumFlowScene.dubaiCelestialMirage.rawValue
+
+        manager.selectTier("free", profile: profile)
+
+        XCTAssertFalse(profile.quantumFlowEnabled)
+    }
+
+    func testQuantumFlowDowngradeToProDisablesEntirely() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "royal"
+        manager.syncFromProfile(profile)
+        profile.quantumFlowEnabled = true
+
+        manager.selectTier("pro", profile: profile)
+
+        XCTAssertFalse(profile.quantumFlowEnabled)
+    }
+
+    func testQuantumFlowDowngradeToEliteRevertsLockedScene() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "royal"
+        manager.syncFromProfile(profile)
+        profile.quantumFlowEnabled = true
+        // Set to a scene that will be locked at Elite (sortOrder >= 4)
+        let lockedScene = QuantumFlowScene.allCases.sorted { $0.sortOrder < $1.sortOrder }[4]
+        profile.quantumScene = lockedScene
+
+        manager.selectTier("elite", profile: profile)
+
+        // Should revert to highest allowed scene (sortOrder 3)
+        let highestAllowed = QuantumFlowScene.allCases.sorted { $0.sortOrder < $1.sortOrder }[3]
+        XCTAssertEqual(profile.quantumScene, highestAllowed)
+        XCTAssertTrue(profile.quantumFlowEnabled, "Should remain enabled since Elite has 4 scenes")
+    }
+
+    func testQuantumFlowDowngradeKeepsAllowedScene() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "royal"
+        manager.syncFromProfile(profile)
+        profile.quantumFlowEnabled = true
+        // Set to a scene that is also available at Elite (sortOrder < 4)
+        let allowedScene = QuantumFlowScene.allCases.sorted { $0.sortOrder < $1.sortOrder }[2]
+        profile.quantumScene = allowedScene
+
+        manager.selectTier("elite", profile: profile)
+
+        XCTAssertEqual(profile.quantumScene, allowedScene, "Allowed scene should not change")
+        XCTAssertTrue(profile.quantumFlowEnabled)
+    }
+
+    func testQuantumFlowUpgradeDoesNotAutoEnable() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "free"
+        manager.syncFromProfile(profile)
+        profile.quantumFlowEnabled = false
+
+        manager.selectTier("elite", profile: profile)
+
+        XCTAssertFalse(profile.quantumFlowEnabled)
+    }
+
+    func testQuantumFlowDowngradeResetsSceneToDefault() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "elite"
+        manager.syncFromProfile(profile)
+        profile.quantumFlowEnabled = true
+        profile.quantumFlowScene = QuantumFlowScene.viennaImperialWaltz.rawValue  // sortOrder 5
+
+        manager.selectTier("free", profile: profile)
+
+        XCTAssertEqual(profile.quantumFlowScene, QuantumFlowScene.dubaiCelestialMirage.rawValue)
+    }
+
+    func testQuantumFlowNotificationName() {
+        XCTAssertEqual(Notification.Name.quantumFlowAutoAdjusted.rawValue, "quantumFlowAutoAdjusted")
+    }
 }

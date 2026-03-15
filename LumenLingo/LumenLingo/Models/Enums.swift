@@ -696,6 +696,25 @@ enum QuantumFlowScene: String, CaseIterable, Identifiable {
         }
     }
 
+    /// Deterministic unlock priority. Lower = unlocked first.
+    /// Elite (4 scenes) gets sortOrder 0–3; Royal/Trial get all 6.
+    var sortOrder: Int {
+        switch self {
+        case .dubaiCelestialMirage:      return 0
+        case .kyotoSacredTwilight:       return 1
+        case .buenosAiresTangoFlame:     return 2
+        case .hongKongHarbourDreams:     return 3   // Elite cap
+        case .marrakechSpiceReverie:     return 4
+        case .viennaImperialWaltz:       return 5
+        }
+    }
+
+    /// The minimum membership tier required to unlock this scene.
+    var minimumTier: MembershipTier {
+        if sortOrder < 4 { return .elite }
+        return .royal
+    }
+
     /// 3-color preview gradient for scheme cards
     var previewColors: [Color] {
         return [colors[0], colors[1], colors[2]]

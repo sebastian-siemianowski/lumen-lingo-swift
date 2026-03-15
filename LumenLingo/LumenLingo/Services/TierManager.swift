@@ -5,6 +5,8 @@ import SwiftUI
 extension Notification.Name {
     static let soundscapeAutoStopped = Notification.Name("soundscapeAutoStopped")
     static let languagePairAutoSwitched = Notification.Name("languagePairAutoSwitched")
+    static let breathingOrbsAutoDisabled = Notification.Name("breathingOrbsAutoDisabled")
+    static let quantumFlowAutoAdjusted = Notification.Name("quantumFlowAutoAdjusted")
 }
 
 // MARK: - Tier Manager
@@ -147,6 +149,34 @@ final class TierManager {
         pair.minimumTier
     }
 
+    // MARK: - Breathing Orbs Gating
+
+    /// Whether the current tier can access breathing orb schemes.
+    var breathingOrbsAccessible: Bool {
+        hasAccess(to: .breathingOrbs)
+    }
+
+    // MARK: - Quantum Flow Gating
+
+    /// Whether the current tier can access any quantum flow scene.
+    var quantumFlowAccessible: Bool {
+        hasAccess(to: .quantumFlow)
+    }
+
+    /// Returns all quantum flow scenes sorted by unlock priority, limited by tier.
+    func unlockedQuantumScenes() -> [QuantumFlowScene] {
+        let limit = allowedCount(for: .quantumFlow)
+        return QuantumFlowScene.allCases
+            .sorted { $0.sortOrder < $1.sortOrder }
+            .prefix(limit)
+            .map { $0 }
+    }
+
+    /// Check whether a specific quantum flow scene is unlocked for the current tier.
+    func isQuantumSceneUnlocked(_ scene: QuantumFlowScene) -> Bool {
+        scene.sortOrder < allowedCount(for: .quantumFlow)
+    }
+
     // MARK: - Sync
 
     /// Sync tier from `UserProfile` on app launch / view appear.
@@ -193,6 +223,32 @@ final class TierManager {
                 }
             } else if !hasAccess(to: .soundscapes) {
                 audio.stopAmbient()
+            }
+
+            // Breathing orbs: disable on downgrade to free
+            if !breathingOrbsAccessible, profile?.breathingOrbsEnabled == true {
+                profile?.breathingOrbsEnabled = false
+                profile?.breathingOrbScheme = BreathingOrbScheme.barcelonaNights.rawValue
+                NotificationCenter.default.post(name: .breathingOrbsAutoDisabled, object: nil)
+            }
+
+            // Quantum flow: adjust or disable on downgrade
+            if let profile {
+                let qfLimit = allowedCount(for: .quantumFlow)
+                if qfLimit == 0 && profile.quantumFlowEnabled {
+                    // No access at all — disable entirely
+                    profile.quantumFlowEnabled = false
+                    profile.quantumFlowScene = QuantumFlowScene.dubaiCelestialMirage.rawValue
+                    NotificationCenter.default.post(name: .quantumFlowAutoAdjusted, object: nil)
+                } else if qfLimit > 0 {
+                    let activeScene = profile.quantumScene
+                    if !isQuantumSceneUnlocked(activeScene) {
+                        // Active scene exceeds new limit — switch to highest allowed
+                        let highest = unlockedQuantumScenes().last ?? .dubaiCelestialMirage
+                        profile.quantumScene = highest
+                        NotificationCenter.default.post(name: .quantumFlowAutoAdjusted, object: nil)
+                    }
+                }
             }
         }
 
