@@ -1979,14 +1979,14 @@ final class TierManagerTests: XCTestCase {
         XCTAssertEqual(config.sections.count, 3, "Pro tier: basicStats + gameBreakdown + dailyXPChart")
     }
 
-    func testJourneyEliteTierHasFiveSections() {
+    func testJourneyEliteTierHasSixSections() {
         let config = TierManager.journeyStatsConfig(for: .elite)
-        XCTAssertEqual(config.sections.count, 5, "Elite tier: basicStats + gameBreakdown + dailyXPChart + weeklyTrend + accuracyHeatmap")
+        XCTAssertEqual(config.sections.count, 6, "Elite tier: basicStats + gameBreakdown + dailyXPChart + weeklyTrend + accuracyHeatmap + exportData")
     }
 
-    func testJourneyRoyalTierHasSevenSections() {
+    func testJourneyRoyalTierHasNineSections() {
         let config = TierManager.journeyStatsConfig(for: .royal)
-        XCTAssertEqual(config.sections.count, 7, "Royal tier: all 7 journey sections")
+        XCTAssertEqual(config.sections.count, 9, "Royal tier: all 9 journey sections")
     }
 
     // MARK: 14.2 — Badge style enum cases
@@ -2004,7 +2004,7 @@ final class TierManagerTests: XCTestCase {
 
     func testJourneyStatsSectionAllCases() {
         let allCases = TierManager.JourneyStatsSection.allCases
-        XCTAssertEqual(allCases.count, 7)
+        XCTAssertEqual(allCases.count, 9)
         XCTAssertTrue(allCases.contains(.basicStats))
         XCTAssertTrue(allCases.contains(.gameBreakdown))
         XCTAssertTrue(allCases.contains(.dailyXPChart))
@@ -2012,6 +2012,8 @@ final class TierManagerTests: XCTestCase {
         XCTAssertTrue(allCases.contains(.accuracyHeatmap))
         XCTAssertTrue(allCases.contains(.monthlyReport))
         XCTAssertTrue(allCases.contains(.milestonePredictions))
+        XCTAssertTrue(allCases.contains(.exportData))
+        XCTAssertTrue(allCases.contains(.insights))
     }
 
     // MARK: - Epic 17: Haptic Level
@@ -2116,5 +2118,175 @@ final class TierManagerTests: XCTestCase {
             service.cardFlip(level: level)
             service.streakMilestone(level: level, count: 5)
         }
+    }
+
+    // MARK: - Epic 18: Data Export & Insights
+
+    // MARK: Journey Section Gating (exportData, insights)
+
+    func testExportDataSectionRequiresElite() {
+        XCTAssertEqual(TierManager.minimumTierForJourneySection(.exportData), .elite)
+    }
+
+    func testInsightsSectionRequiresRoyal() {
+        XCTAssertEqual(TierManager.minimumTierForJourneySection(.insights), .royal)
+    }
+
+    func testFreeHasNoExportOrInsights() {
+        let config = TierManager.journeyStatsConfig(for: .free)
+        XCTAssertFalse(config.sections.contains(.exportData))
+        XCTAssertFalse(config.sections.contains(.insights))
+    }
+
+    func testProHasNoExportOrInsights() {
+        let config = TierManager.journeyStatsConfig(for: .pro)
+        XCTAssertFalse(config.sections.contains(.exportData))
+        XCTAssertFalse(config.sections.contains(.insights))
+    }
+
+    func testEliteHasExportButNoInsights() {
+        let config = TierManager.journeyStatsConfig(for: .elite)
+        XCTAssertTrue(config.sections.contains(.exportData))
+        XCTAssertFalse(config.sections.contains(.insights))
+    }
+
+    func testRoyalHasBothExportAndInsights() {
+        let config = TierManager.journeyStatsConfig(for: .royal)
+        XCTAssertTrue(config.sections.contains(.exportData))
+        XCTAssertTrue(config.sections.contains(.insights))
+    }
+
+    func testTrialHasBothExportAndInsights() {
+        let config = TierManager.journeyStatsConfig(for: .trial)
+        XCTAssertTrue(config.sections.contains(.exportData))
+        XCTAssertTrue(config.sections.contains(.insights))
+    }
+
+    // MARK: DataExporter — Available Formats
+
+    func testExportFormatsForFreeIsEmpty() {
+        XCTAssertTrue(DataExporter.availableFormats(for: .free).isEmpty)
+    }
+
+    func testExportFormatsForProIsEmpty() {
+        XCTAssertTrue(DataExporter.availableFormats(for: .pro).isEmpty)
+    }
+
+    func testExportFormatsForEliteIsCSVOnly() {
+        let formats = DataExporter.availableFormats(for: .elite)
+        XCTAssertEqual(formats, [.csv])
+    }
+
+    func testExportFormatsForRoyalIncludesCSVJSONPDF() {
+        let formats = DataExporter.availableFormats(for: .royal)
+        XCTAssertEqual(formats, [.csv, .json, .pdf])
+    }
+
+    func testExportFormatsForTrialIncludesCSVJSONPDF() {
+        let formats = DataExporter.availableFormats(for: .trial)
+        XCTAssertEqual(formats, [.csv, .json, .pdf])
+    }
+
+    // MARK: DataExporter — CSV Export
+
+    func testCSVExportProducesHeaderLine() {
+        let csv = DataExporter.exportCSV(records: [])
+        let csvStr = String(data: csv, encoding: .utf8) ?? ""
+        XCTAssertTrue(csvStr.hasPrefix("Date,Game Type,Category,Score,Correct,Total"))
+    }
+
+    func testCSVExportEmptyRecordsProducesOnlyHeader() {
+        let csv = DataExporter.exportCSV(records: [])
+        let csvStr = String(data: csv, encoding: .utf8) ?? ""
+        let lines = csvStr.components(separatedBy: "\n")
+        XCTAssertEqual(lines.count, 1) // header only
+    }
+
+    // MARK: DataExporter — JSON Export
+
+    func testJSONExportProducesValidJSON() {
+        let jsonData = DataExporter.exportJSON(records: [])
+        let obj = try? JSONSerialization.jsonObject(with: jsonData) as? [String: Any]
+        XCTAssertNotNil(obj)
+        XCTAssertEqual(obj?["totalSessions"] as? Int, 0)
+    }
+
+    func testJSONExportContainsMetadata() {
+        let jsonData = DataExporter.exportJSON(records: [])
+        let obj = try? JSONSerialization.jsonObject(with: jsonData) as? [String: Any]
+        XCTAssertNotNil(obj?["exportDate"])
+        XCTAssertNotNil(obj?["totalXP"])
+        XCTAssertNotNil(obj?["overallAccuracy"])
+        XCTAssertNotNil(obj?["sessions"])
+    }
+
+    // MARK: DataExporter — PDF Export
+
+    func testPDFExportProducesNonEmptyData() {
+        let pdfData = DataExporter.exportPDF(records: [])
+        XCTAssertFalse(pdfData.isEmpty)
+    }
+
+    func testPDFExportStartsWithPDFHeader() {
+        let pdfData = DataExporter.exportPDF(records: [])
+        let prefix = String(data: pdfData.prefix(5), encoding: .ascii) ?? ""
+        XCTAssertEqual(prefix, "%PDF-")
+    }
+
+    // MARK: LearningInsights — Time Slots
+
+    func testTimeSlotFromHour6IsMorning() {
+        XCTAssertEqual(LearningInsights.TimeSlot.from(hour: 6), .morning)
+    }
+
+    func testTimeSlotFromHour12IsAfternoon() {
+        XCTAssertEqual(LearningInsights.TimeSlot.from(hour: 12), .afternoon)
+    }
+
+    func testTimeSlotFromHour20IsEvening() {
+        XCTAssertEqual(LearningInsights.TimeSlot.from(hour: 20), .evening)
+    }
+
+    func testTimeSlotFromHour23IsNight() {
+        XCTAssertEqual(LearningInsights.TimeSlot.from(hour: 23), .night)
+    }
+
+    func testTimeSlotFromHour3IsNight() {
+        XCTAssertEqual(LearningInsights.TimeSlot.from(hour: 3), .night)
+    }
+
+    func testTimeSlotAllCasesCountIs4() {
+        XCTAssertEqual(LearningInsights.TimeSlot.allCases.count, 4)
+    }
+
+    // MARK: LearningInsights — Empty Records
+
+    func testInsightsWithNoRecordsHasEmptyCategories() {
+        let insights = LearningInsights(records: [])
+        XCTAssertTrue(insights.categoryAccuracies.isEmpty)
+    }
+
+    func testInsightsWithNoRecordsHasEmptyWeeklyTrend() {
+        let insights = LearningInsights(records: [])
+        XCTAssertTrue(insights.weeklyAccuracyTrend.isEmpty)
+    }
+
+    func testInsightsWithNoRecordsHasEmptyFluencyMilestones() {
+        let insights = LearningInsights(records: [])
+        XCTAssertTrue(insights.fluencyMilestones.isEmpty)
+    }
+
+    // MARK: JourneyStatsSection new cases
+
+    func testJourneyStatsSectionAllCasesIncludes9() {
+        XCTAssertEqual(TierManager.JourneyStatsSection.allCases.count, 9)
+    }
+
+    func testJourneyStatsSectionContainsExportData() {
+        XCTAssertTrue(TierManager.JourneyStatsSection.allCases.contains(.exportData))
+    }
+
+    func testJourneyStatsSectionContainsInsights() {
+        XCTAssertTrue(TierManager.JourneyStatsSection.allCases.contains(.insights))
     }
 }

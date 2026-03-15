@@ -407,8 +407,37 @@ struct AppStrings {
     let monthlyReportDesc: String           // feature sell description
     let milestonePredictionsDesc: String    // feature sell description
 
+    // MARK: - Data Export & Insights (Epic 18)
+    let exportData: String                   // "Export Data"
+    let exportDataDesc: String               // feature sell description
+    let exportAsCSV: String                  // "Export as CSV"
+    let exportAsJSON: String                 // "Export as JSON"
+    let exportAsPDF: String                  // "Export as PDF"
+    let exportReady: String                  // "Your data is ready to share"
+    let noDataToExport: String               // "No data to export yet"
+    let sessionsLabel: String                // "Sessions"
+    let learningInsights: String             // "Learning Insights"
+    let insightsDesc: String                 // feature sell description
+    let optimalPracticeTimes: String         // "Optimal Practice Times"
+    let bestTimeToLearn: String              // "Your best time to learn"
+    let categoryMastery: String              // "Category Mastery"
+    let masteryByCategory: String            // "Mastery by category"
+    let retentionCurve: String               // "Retention Curve"
+    let retentionOverTime: String            // "Retention over time"
+    let fluencyTimeline: String              // "Fluency Timeline"
+    let predictedMilestones: String          // "Predicted milestones"
+    let morning: String                      // "Morning"
+    let afternoon: String                    // "Afternoon"
+    let evening: String                      // "Evening"
+    let night: String                        // "Night"
+    let needMoreData: String                 // "Play more sessions for insights"
+
     // MARK: - Tier Upgrade Celebration
     let upgradedExclamation: String         // "Upgraded!"
+    let upgradeMessagePro: String           // tier-specific linguistic celebration
+    let upgradeMessageElite: String         // tier-specific linguistic celebration
+    let upgradeMessageRoyal: String         // tier-specific linguistic celebration
+    let upgradeMessageTrial: String         // tier-specific linguistic celebration
 
     // MARK: - Factory
 

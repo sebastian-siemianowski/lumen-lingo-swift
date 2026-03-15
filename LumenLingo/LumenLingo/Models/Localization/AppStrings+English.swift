@@ -399,7 +399,36 @@ extension AppStrings {
         monthlyReportDesc: "Your personalised 30-day snapshot — sessions, streaks, accuracy & active days",
         milestonePredictionsDesc: "See exactly when you'll hit your next milestone based on your learning pace",
 
+        // MARK: - Data Export & Insights (Epic 18)
+        exportData: "Export Data",
+        exportDataDesc: "Download your learning history — review progress offline, share with tutors or keep a personal record",
+        exportAsCSV: "Export as CSV",
+        exportAsJSON: "Export as JSON",
+        exportAsPDF: "Export as PDF",
+        exportReady: "Your data is ready to share",
+        noDataToExport: "No data to export yet",
+        sessionsLabel: "Sessions",
+        learningInsights: "Learning Insights",
+        insightsDesc: "Unlock deep analytics — discover your optimal study times, track mastery across categories and predict your fluency timeline",
+        optimalPracticeTimes: "Optimal Practice Times",
+        bestTimeToLearn: "Your best time to learn",
+        categoryMastery: "Category Mastery",
+        masteryByCategory: "Mastery by category",
+        retentionCurve: "Retention Curve",
+        retentionOverTime: "Retention over time",
+        fluencyTimeline: "Fluency Timeline",
+        predictedMilestones: "Predicted milestones",
+        morning: "Morning",
+        afternoon: "Afternoon",
+        evening: "Evening",
+        night: "Night",
+        needMoreData: "Play more sessions for insights",
+
         // MARK: - Tier Upgrade Celebration
-        upgradedExclamation: "Upgraded!"
+        upgradedExclamation: "Upgraded!",
+        upgradeMessagePro: "You speak the language of progress — every lesson shapes your voice in the world.",
+        upgradeMessageElite: "Your words carry the weight of dedication — excellence is becoming your mother tongue.",
+        upgradeMessageRoyal: "You've crowned your journey with words — the language of legends is yours to command.",
+        upgradeMessageTrial: "A royal chapter begins — the full story of your linguistic potential awaits."
     )
 }

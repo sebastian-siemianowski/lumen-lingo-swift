@@ -229,6 +229,8 @@ final class TierManager {
         case accuracyHeatmap      // category grid colour-coded by accuracy
         case monthlyReport        // summary card with key metrics
         case milestonePredictions // estimated dates for next milestones
+        case exportData           // export learning data (Elite+)
+        case insights             // deep analytics dashboard (Royal)
     }
 
     /// Configuration listing which journey sections a tier should display.
@@ -250,9 +252,9 @@ final class TierManager {
         case .pro:
             sections.append(contentsOf: [.gameBreakdown, .dailyXPChart])
         case .elite:
-            sections.append(contentsOf: [.gameBreakdown, .dailyXPChart, .weeklyTrend, .accuracyHeatmap])
+            sections.append(contentsOf: [.gameBreakdown, .dailyXPChart, .weeklyTrend, .accuracyHeatmap, .exportData])
         case .royal, .trial:
-            sections.append(contentsOf: [.gameBreakdown, .dailyXPChart, .weeklyTrend, .accuracyHeatmap, .monthlyReport, .milestonePredictions])
+            sections.append(contentsOf: [.gameBreakdown, .dailyXPChart, .weeklyTrend, .accuracyHeatmap, .monthlyReport, .milestonePredictions, .exportData, .insights])
         }
         return JourneyStatsConfig(sections: sections)
     }
@@ -267,6 +269,8 @@ final class TierManager {
         case .accuracyHeatmap:      return .elite
         case .monthlyReport:        return .royal
         case .milestonePredictions: return .royal
+        case .exportData:           return .elite
+        case .insights:             return .royal
         }
     }
 

@@ -1218,7 +1218,7 @@
 
 ---
 
-## Epic 18: Data & Analytics by Tier
+## Epic 18: Data & Analytics by Tier ✅
 
 ### Story 18.1 — Export Learning Data by Tier
 
@@ -1234,15 +1234,15 @@
 - Shared via `UIActivityViewController` (AirDrop, email, Files, etc.).
 
 **Subtasks:**
-- [ ] 18.1.1 — Add `TierManager.exportFormats: [ExportFormat]` (elite→[.csv], royal→[.csv, .json, .pdf]).
-- [ ] 18.1.2 — Create "Export Data" button in Journey/Profile view, gated by tier.
-- [ ] 18.1.3 — For locked tiers: show "ELITE" badge on the button.
-- [ ] 18.1.4 — Create `DataExporter` service: accepts `[GameProgressRecord]`, produces `Data` in requested format.
-- [ ] 18.1.5 — CSV export: headers + rows with session data.
-- [ ] 18.1.6 — JSON export: structured dictionary with metadata and session array.
-- [ ] 18.1.7 — PDF export: use `UIGraphicsPDFRenderer` to generate report with embedded charts.
-- [ ] 18.1.8 — Present `UIActivityViewController` with generated file.
-- [ ] 18.1.9 — Add unit test: export produces valid CSV with correct row count.
+- [x] 18.1.1 — Add `TierManager.exportFormats: [ExportFormat]` (elite→[.csv], royal→[.csv, .json, .pdf]).
+- [x] 18.1.2 — Create "Export Data" button in Journey/Profile view, gated by tier.
+- [x] 18.1.3 — For locked tiers: show "ELITE" badge on the button.
+- [x] 18.1.4 — Create `DataExporter` service: accepts `[GameProgressRecord]`, produces `Data` in requested format.
+- [x] 18.1.5 — CSV export: headers + rows with session data.
+- [x] 18.1.6 — JSON export: structured dictionary with metadata and session array.
+- [x] 18.1.7 — PDF export: use `UIGraphicsPDFRenderer` to generate report with embedded charts.
+- [x] 18.1.8 — Present `UIActivityViewController` with generated file.
+- [x] 18.1.9 — Add unit test: export produces valid CSV with correct row count.
 
 ---
 
@@ -1259,15 +1259,15 @@
 - Dashboard updates after each completed session.
 
 **Subtasks:**
-- [ ] 18.2.1 — Add "Insights" tab/section to JourneyView, gated by `TierManager.insightsAvailable`.
-- [ ] 18.2.2 — For non-Royal: show blurred preview with "ROYAL" badge.
-- [ ] 18.2.3 — Create `OptimalTimesWidget`: analyze session timestamps vs accuracy → recommend best practice times.
-- [ ] 18.2.4 — Create `MasteryRadarChart`: radar/spider chart of category scores.
-- [ ] 18.2.5 — Create `RetentionCurveWidget`: plot spaced repetition efficiency over time.
-- [ ] 18.2.6 — Create `FluencyTimelineWidget`: predict milestone dates based on current pace.
-- [ ] 18.2.7 — All computations run on background queue to avoid UI jank.
-- [ ] 18.2.8 — Cache computed insights, invalidate after new session completion.
-- [ ] 18.2.9 — Add unit tests for computation accuracy.
+- [x] 18.2.1 — Add "Insights" tab/section to JourneyView, gated by `TierManager.insightsAvailable`.
+- [x] 18.2.2 — For non-Royal: show blurred preview with "ROYAL" badge.
+- [x] 18.2.3 — Create `OptimalTimesWidget`: analyze session timestamps vs accuracy → recommend best practice times.
+- [x] 18.2.4 — Create `MasteryRadarChart`: radar/spider chart of category scores.
+- [x] 18.2.5 — Create `RetentionCurveWidget`: plot spaced repetition efficiency over time.
+- [x] 18.2.6 — Create `FluencyTimelineWidget`: predict milestone dates based on current pace.
+- [x] 18.2.7 — All computations run on background queue to avoid UI jank.
+- [x] 18.2.8 — Cache computed insights, invalidate after new session completion.
+- [x] 18.2.9 — Add unit tests for computation accuracy.
 
 ---
 

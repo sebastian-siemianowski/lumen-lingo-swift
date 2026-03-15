@@ -82,6 +82,16 @@ struct JourneyView: View {
                     )
                 }
 
+                // Export Data (Elite+)
+                journeySection(for: .exportData) {
+                    ExportDataWidget(allProgress: allProgress)
+                }
+
+                // Learning Insights (Royal)
+                journeySection(for: .insights) {
+                    InsightsDashboardWidget(allProgress: allProgress)
+                }
+
                 // Streak section (always visible — part of basicStats)
                 streakSection
 
@@ -139,6 +149,8 @@ struct JourneyView: View {
         case .accuracyHeatmap:      return L.accuracyHeatmap
         case .monthlyReport:        return L.monthlyReport
         case .milestonePredictions: return L.milestonePredictionsTitle
+        case .exportData:           return L.exportData
+        case .insights:             return L.learningInsights
         }
     }
 
@@ -151,6 +163,8 @@ struct JourneyView: View {
         case .accuracyHeatmap:      return L.accuracyHeatmapDesc
         case .monthlyReport:        return L.monthlyReportDesc
         case .milestonePredictions: return L.milestonePredictionsDesc
+        case .exportData:           return L.exportDataDesc
+        case .insights:             return L.insightsDesc
         }
     }
 
