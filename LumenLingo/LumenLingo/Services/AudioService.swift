@@ -1372,10 +1372,10 @@ final class AudioService {
 
     /// Stop ambient with fade
     func stopAmbient(fadeDuration: TimeInterval = 2.0) {
+        currentSoundscape = nil
         fadeAmbient(to: 0, duration: fadeDuration) { [weak self] in
             self?.ambientPlayer?.stop()
             self?.ambientPlayer = nil
-            self?.currentSoundscape = nil
         }
     }
 

@@ -241,7 +241,7 @@ struct SoundscapesSettingsView: View {
                         startPoint: .top,
                         endPoint: .bottom
                       ),
-                lineWidth: isSelected ? 3 : 0.5
+                lineWidth: isSelected ? 1.5 : 0.5
             )
     }
 
