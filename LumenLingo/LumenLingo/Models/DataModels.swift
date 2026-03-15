@@ -30,32 +30,45 @@ final class UserProfile {
     var orbRaveMode: Bool
     var quantumIntensity: Double
     var quantumSpeed: Double
+    var quantumRaveMode: Bool = false
     var nebulaDriftIntensity: Double
     var nebulaDriftSpeed: Double
 
     // Per-category sound toggles (React parity)
-    var gamesSoundsEnabled: Bool
-    var flashcardsSoundsEnabled: Bool
-    var grammarSoundsEnabled: Bool
-    var wordBuilderSoundsEnabled: Bool
-    var uiSoundsEnabled: Bool
-    var achievementSoundsEnabled: Bool
-    var ambientSoundsEnabled: Bool
+    var gamesSoundsEnabled: Bool = true
+    var flashcardsSoundsEnabled: Bool = true
+    var grammarSoundsEnabled: Bool = true
+    var wordBuilderSoundsEnabled: Bool = true
+    var uiSoundsEnabled: Bool = true
+    var achievementSoundsEnabled: Bool = true
+    var ambientSoundsEnabled: Bool = true
+    var selectedSoundscape: String = "parisCafe"
+    var soundscapeVariantIndex: Int = 0
+    var hapticsEnabled: Bool = true
+    var adaptiveAudioEnabled: Bool = true
+    var gameSoundsVolume: Float = 1.0
+    var uiSoundsVolume: Float = 1.0
+    var achievementSoundsVolume: Float = 1.0
+    var ambientVolume: Float = 0.3
 
+    /// Level scales quadratically: cumulative XP for level L = 50·L·(L−1).
+    /// Each level costs 100·L XP, so reaching high levels takes real dedication.
     var currentLevel: Int {
-        (totalXP / 100) + 1
+        max(1, Int((1.0 + (1.0 + 0.08 * Double(totalXP)).squareRoot()) / 2.0))
     }
 
     var xpInCurrentLevel: Int {
-        totalXP % 100
+        totalXP - 50 * currentLevel * (currentLevel - 1)
     }
 
     var xpForNextLevel: Int {
-        currentLevel * 100
+        100 * currentLevel
     }
 
     var levelProgress: Double {
-        Double(xpInCurrentLevel) / 100.0
+        let needed = xpForNextLevel
+        guard needed > 0 else { return 0 }
+        return min(1.0, Double(xpInCurrentLevel) / Double(needed))
     }
 
     /// Alias used by views
@@ -82,6 +95,12 @@ final class UserProfile {
         set { quantumFlowScene = newValue.rawValue }
     }
 
+    /// Typed accessor for selected soundscape (nil = none selected)
+    var soundscapeEnum: Soundscape? {
+        get { Soundscape(rawValue: selectedSoundscape) }
+        set { selectedSoundscape = newValue?.rawValue ?? "" }
+    }
+
     init(
         totalXP: Int = 0,
         dailyStreak: Int = 0,
@@ -104,6 +123,7 @@ final class UserProfile {
         orbRaveMode: Bool = false,
         quantumIntensity: Double = 1.0,
         quantumSpeed: Double = 1.0,
+        quantumRaveMode: Bool = false,
         nebulaDriftIntensity: Double = 1.0,
         nebulaDriftSpeed: Double = 1.0,
         gamesSoundsEnabled: Bool = true,
@@ -112,7 +132,15 @@ final class UserProfile {
         wordBuilderSoundsEnabled: Bool = true,
         uiSoundsEnabled: Bool = true,
         achievementSoundsEnabled: Bool = true,
-        ambientSoundsEnabled: Bool = false
+        ambientSoundsEnabled: Bool = true,
+        selectedSoundscape: String = "parisCafe",
+        soundscapeVariantIndex: Int = 0,
+        hapticsEnabled: Bool = true,
+        adaptiveAudioEnabled: Bool = true,
+        gameSoundsVolume: Float = 1.0,
+        uiSoundsVolume: Float = 1.0,
+        achievementSoundsVolume: Float = 1.0,
+        ambientVolume: Float = 0.3
     ) {
         self.totalXP = totalXP
         self.dailyStreak = dailyStreak
@@ -135,6 +163,7 @@ final class UserProfile {
         self.orbRaveMode = orbRaveMode
         self.quantumIntensity = quantumIntensity
         self.quantumSpeed = quantumSpeed
+        self.quantumRaveMode = quantumRaveMode
         self.nebulaDriftIntensity = nebulaDriftIntensity
         self.nebulaDriftSpeed = nebulaDriftSpeed
         self.gamesSoundsEnabled = gamesSoundsEnabled
@@ -144,6 +173,14 @@ final class UserProfile {
         self.uiSoundsEnabled = uiSoundsEnabled
         self.achievementSoundsEnabled = achievementSoundsEnabled
         self.ambientSoundsEnabled = ambientSoundsEnabled
+        self.selectedSoundscape = selectedSoundscape
+        self.soundscapeVariantIndex = soundscapeVariantIndex
+        self.hapticsEnabled = hapticsEnabled
+        self.adaptiveAudioEnabled = adaptiveAudioEnabled
+        self.gameSoundsVolume = gameSoundsVolume
+        self.uiSoundsVolume = uiSoundsVolume
+        self.achievementSoundsVolume = achievementSoundsVolume
+        self.ambientVolume = ambientVolume
     }
 }
 
@@ -308,15 +345,4 @@ final class MasteredContent {
     }
 }
 
-// MARK: - Beta Language Pair (SwiftData)
 
-@Model
-final class EnabledBetaPair {
-    var sourceLanguage: String
-    var targetLanguage: String
-
-    init(sourceLanguage: String, targetLanguage: String) {
-        self.sourceLanguage = sourceLanguage
-        self.targetLanguage = targetLanguage
-    }
-}

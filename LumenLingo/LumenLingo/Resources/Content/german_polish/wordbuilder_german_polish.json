@@ -1,0 +1,7002 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Früchte",
+    "description": "Häufige Früchte auf Polnisch",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "jabłko",
+        "hint": "Apfel"
+      },
+      {
+        "word": "pomarańcza",
+        "hint": "Orange"
+      },
+      {
+        "word": "banan",
+        "hint": "Banane"
+      },
+      {
+        "word": "truskawka",
+        "hint": "Erdbeere"
+      },
+      {
+        "word": "winogrono",
+        "hint": "Traube"
+      },
+      {
+        "word": "cytryna",
+        "hint": "Zitrone"
+      },
+      {
+        "word": "arbuz",
+        "hint": "Wassermelone"
+      },
+      {
+        "word": "brzoskwinia",
+        "hint": "Pfirsich"
+      },
+      {
+        "word": "wiśnia",
+        "hint": "Kirsche"
+      },
+      {
+        "word": "ananas",
+        "hint": "Ananas"
+      },
+      {
+        "word": "gruszka",
+        "hint": "Birne"
+      },
+      {
+        "word": "malina",
+        "hint": "Himbeere"
+      },
+      {
+        "word": "śliwka",
+        "hint": "Pflaume"
+      },
+      {
+        "word": "jagoda",
+        "hint": "Heidelbeere"
+      },
+      {
+        "word": "mango",
+        "hint": "Mango"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Gemüse",
+    "description": "Wichtiges Gemüse auf Polnisch",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pomidor",
+        "hint": "Tomate"
+      },
+      {
+        "word": "cebula",
+        "hint": "Zwiebel"
+      },
+      {
+        "word": "sałata",
+        "hint": "Kopfsalat"
+      },
+      {
+        "word": "marchew",
+        "hint": "Karotte"
+      },
+      {
+        "word": "ziemniak",
+        "hint": "Kartoffel"
+      },
+      {
+        "word": "czosnek",
+        "hint": "Knoblauch"
+      },
+      {
+        "word": "ogórek",
+        "hint": "Gurke"
+      },
+      {
+        "word": "papryka",
+        "hint": "Paprika"
+      },
+      {
+        "word": "szpinak",
+        "hint": "Spinat"
+      },
+      {
+        "word": "brokuł",
+        "hint": "Brokkoli"
+      },
+      {
+        "word": "kapusta",
+        "hint": "Kohl"
+      },
+      {
+        "word": "dynia",
+        "hint": "Kürbis"
+      },
+      {
+        "word": "burak",
+        "hint": "Rote Bete"
+      },
+      {
+        "word": "fasola",
+        "hint": "Bohne"
+      },
+      {
+        "word": "groszek",
+        "hint": "Erbse"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Farben",
+    "description": "Grundfarben auf Polnisch",
+    "iconName": "paintpalette",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "czerwony",
+        "hint": "Rot"
+      },
+      {
+        "word": "niebieski",
+        "hint": "Blau"
+      },
+      {
+        "word": "zielony",
+        "hint": "Grün"
+      },
+      {
+        "word": "żółty",
+        "hint": "Gelb"
+      },
+      {
+        "word": "biały",
+        "hint": "Weiß"
+      },
+      {
+        "word": "czarny",
+        "hint": "Schwarz"
+      },
+      {
+        "word": "pomarańczowy",
+        "hint": "Orange (Farbe)"
+      },
+      {
+        "word": "fioletowy",
+        "hint": "Violett"
+      },
+      {
+        "word": "różowy",
+        "hint": "Rosa"
+      },
+      {
+        "word": "brązowy",
+        "hint": "Braun"
+      },
+      {
+        "word": "szary",
+        "hint": "Grau"
+      },
+      {
+        "word": "srebrny",
+        "hint": "Silber"
+      },
+      {
+        "word": "złoty",
+        "hint": "Gold"
+      },
+      {
+        "word": "granatowy",
+        "hint": "Dunkelblau"
+      },
+      {
+        "word": "turkusowy",
+        "hint": "Türkis"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Familie",
+    "description": "Familienmitglieder auf Polnisch",
+    "iconName": "person.3",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "matka",
+        "hint": "Mutter"
+      },
+      {
+        "word": "ojciec",
+        "hint": "Vater"
+      },
+      {
+        "word": "siostra",
+        "hint": "Schwester"
+      },
+      {
+        "word": "brat",
+        "hint": "Bruder"
+      },
+      {
+        "word": "babcia",
+        "hint": "Großmutter"
+      },
+      {
+        "word": "dziadek",
+        "hint": "Großvater"
+      },
+      {
+        "word": "córka",
+        "hint": "Tochter"
+      },
+      {
+        "word": "syn",
+        "hint": "Sohn"
+      },
+      {
+        "word": "rodzice",
+        "hint": "Eltern"
+      },
+      {
+        "word": "wujek",
+        "hint": "Onkel"
+      },
+      {
+        "word": "ciotka",
+        "hint": "Tante"
+      },
+      {
+        "word": "kuzyn",
+        "hint": "Cousin"
+      },
+      {
+        "word": "kuzynka",
+        "hint": "Cousine"
+      },
+      {
+        "word": "teściowa",
+        "hint": "Schwiegermutter"
+      },
+      {
+        "word": "wnuczka",
+        "hint": "Enkelin"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Tiere",
+    "description": "Häufige Tiere auf Polnisch",
+    "iconName": "hare",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pies",
+        "hint": "Hund"
+      },
+      {
+        "word": "kot",
+        "hint": "Katze"
+      },
+      {
+        "word": "koń",
+        "hint": "Pferd"
+      },
+      {
+        "word": "krowa",
+        "hint": "Kuh"
+      },
+      {
+        "word": "królik",
+        "hint": "Kaninchen"
+      },
+      {
+        "word": "ryba",
+        "hint": "Fisch"
+      },
+      {
+        "word": "ptak",
+        "hint": "Vogel"
+      },
+      {
+        "word": "żółw",
+        "hint": "Schildkröte"
+      },
+      {
+        "word": "niedźwiedź",
+        "hint": "Bär"
+      },
+      {
+        "word": "wilk",
+        "hint": "Wolf"
+      },
+      {
+        "word": "owca",
+        "hint": "Schaf"
+      },
+      {
+        "word": "kaczka",
+        "hint": "Ente"
+      },
+      {
+        "word": "motyl",
+        "hint": "Schmetterling"
+      },
+      {
+        "word": "żyrafa",
+        "hint": "Giraffe"
+      },
+      {
+        "word": "delfin",
+        "hint": "Delphin"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Körperteile",
+    "description": "Wichtige Körperteile auf Polnisch",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "głowa",
+        "hint": "Kopf"
+      },
+      {
+        "word": "ręka",
+        "hint": "Hand"
+      },
+      {
+        "word": "noga",
+        "hint": "Bein"
+      },
+      {
+        "word": "oko",
+        "hint": "Auge"
+      },
+      {
+        "word": "ucho",
+        "hint": "Ohr"
+      },
+      {
+        "word": "nos",
+        "hint": "Nase"
+      },
+      {
+        "word": "usta",
+        "hint": "Mund"
+      },
+      {
+        "word": "serce",
+        "hint": "Herz"
+      },
+      {
+        "word": "palec",
+        "hint": "Finger"
+      },
+      {
+        "word": "kolano",
+        "hint": "Knie"
+      },
+      {
+        "word": "ramię",
+        "hint": "Schulter"
+      },
+      {
+        "word": "brzuch",
+        "hint": "Bauch"
+      },
+      {
+        "word": "plecy",
+        "hint": "Rücken"
+      },
+      {
+        "word": "stopa",
+        "hint": "Fuß"
+      },
+      {
+        "word": "łokieć",
+        "hint": "Ellbogen"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Zahlen",
+    "description": "Zahlwörter auf Polnisch",
+    "iconName": "number",
+    "color": "#6366f1",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "jeden",
+        "hint": "Eins"
+      },
+      {
+        "word": "dwa",
+        "hint": "Zwei"
+      },
+      {
+        "word": "trzy",
+        "hint": "Drei"
+      },
+      {
+        "word": "cztery",
+        "hint": "Vier"
+      },
+      {
+        "word": "pięć",
+        "hint": "Fünf"
+      },
+      {
+        "word": "sześć",
+        "hint": "Sechs"
+      },
+      {
+        "word": "siedem",
+        "hint": "Sieben"
+      },
+      {
+        "word": "osiem",
+        "hint": "Acht"
+      },
+      {
+        "word": "dziewięć",
+        "hint": "Neun"
+      },
+      {
+        "word": "dziesięć",
+        "hint": "Zehn"
+      },
+      {
+        "word": "dwanaście",
+        "hint": "Zwölf"
+      },
+      {
+        "word": "piętnaście",
+        "hint": "Fünfzehn"
+      },
+      {
+        "word": "dwadzieścia",
+        "hint": "Zwanzig"
+      },
+      {
+        "word": "pięćdziesiąt",
+        "hint": "Fünfzig"
+      },
+      {
+        "word": "sto",
+        "hint": "Hundert"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Begrüßungen",
+    "description": "Grundlegende Begrüßungen auf Polnisch",
+    "iconName": "hand.wave",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cześć",
+        "hint": "Hallo"
+      },
+      {
+        "word": "dzień dobry",
+        "hint": "Guten Tag"
+      },
+      {
+        "word": "dobranoc",
+        "hint": "Gute Nacht"
+      },
+      {
+        "word": "dziękuję",
+        "hint": "Danke"
+      },
+      {
+        "word": "przepraszam",
+        "hint": "Entschuldigung"
+      },
+      {
+        "word": "proszę",
+        "hint": "Bitte"
+      },
+      {
+        "word": "witaj",
+        "hint": "Willkommen"
+      },
+      {
+        "word": "do widzenia",
+        "hint": "Auf Wiedersehen"
+      },
+      {
+        "word": "tak",
+        "hint": "Ja"
+      },
+      {
+        "word": "nie",
+        "hint": "Nein"
+      },
+      {
+        "word": "dobry wieczór",
+        "hint": "Guten Abend"
+      },
+      {
+        "word": "do zobaczenia",
+        "hint": "Bis bald"
+      },
+      {
+        "word": "smacznego",
+        "hint": "Guten Appetit"
+      },
+      {
+        "word": "na zdrowie",
+        "hint": "Gesundheit / Prost"
+      },
+      {
+        "word": "powodzenia",
+        "hint": "Viel Glück"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Essen",
+    "description": "Allgemeine Lebensmittel auf Polnisch",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chleb",
+        "hint": "Brot"
+      },
+      {
+        "word": "masło",
+        "hint": "Butter"
+      },
+      {
+        "word": "ser",
+        "hint": "Käse"
+      },
+      {
+        "word": "jajko",
+        "hint": "Ei"
+      },
+      {
+        "word": "mleko",
+        "hint": "Milch"
+      },
+      {
+        "word": "ryż",
+        "hint": "Reis"
+      },
+      {
+        "word": "makaron",
+        "hint": "Nudeln"
+      },
+      {
+        "word": "mięso",
+        "hint": "Fleisch"
+      },
+      {
+        "word": "kurczak",
+        "hint": "Hähnchen"
+      },
+      {
+        "word": "zupa",
+        "hint": "Suppe"
+      },
+      {
+        "word": "sałatka",
+        "hint": "Salat (Gericht)"
+      },
+      {
+        "word": "kiełbasa",
+        "hint": "Wurst"
+      },
+      {
+        "word": "pierogi",
+        "hint": "Teigtaschen"
+      },
+      {
+        "word": "śniadanie",
+        "hint": "Frühstück"
+      },
+      {
+        "word": "obiad",
+        "hint": "Mittagessen"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Kleidung",
+    "description": "Kleidungsstücke auf Polnisch",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "koszula",
+        "hint": "Hemd"
+      },
+      {
+        "word": "spodnie",
+        "hint": "Hose"
+      },
+      {
+        "word": "sukienka",
+        "hint": "Kleid"
+      },
+      {
+        "word": "buty",
+        "hint": "Schuhe"
+      },
+      {
+        "word": "kurtka",
+        "hint": "Jacke"
+      },
+      {
+        "word": "czapka",
+        "hint": "Mütze"
+      },
+      {
+        "word": "skarpetki",
+        "hint": "Socken"
+      },
+      {
+        "word": "rękawiczki",
+        "hint": "Handschuhe"
+      },
+      {
+        "word": "sweter",
+        "hint": "Pullover"
+      },
+      {
+        "word": "szalik",
+        "hint": "Schal"
+      },
+      {
+        "word": "krawat",
+        "hint": "Krawatte"
+      },
+      {
+        "word": "spódnica",
+        "hint": "Rock"
+      },
+      {
+        "word": "płaszcz",
+        "hint": "Mantel"
+      },
+      {
+        "word": "kapelusz",
+        "hint": "Hut"
+      },
+      {
+        "word": "bluza",
+        "hint": "Sweatshirt"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "Haus & Zimmer",
+    "description": "Räume und Bereiche im Haus auf Polnisch",
+    "iconName": "house",
+    "color": "#84cc16",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "kuchnia",
+        "hint": "Küche"
+      },
+      {
+        "word": "sypialnia",
+        "hint": "Schlafzimmer"
+      },
+      {
+        "word": "łazienka",
+        "hint": "Badezimmer"
+      },
+      {
+        "word": "salon",
+        "hint": "Wohnzimmer"
+      },
+      {
+        "word": "korytarz",
+        "hint": "Flur"
+      },
+      {
+        "word": "garaż",
+        "hint": "Garage"
+      },
+      {
+        "word": "piwnica",
+        "hint": "Keller"
+      },
+      {
+        "word": "strych",
+        "hint": "Dachboden"
+      },
+      {
+        "word": "balkon",
+        "hint": "Balkon"
+      },
+      {
+        "word": "ogród",
+        "hint": "Garten"
+      },
+      {
+        "word": "schody",
+        "hint": "Treppe"
+      },
+      {
+        "word": "jadalnia",
+        "hint": "Esszimmer"
+      },
+      {
+        "word": "drzwi",
+        "hint": "Tür"
+      },
+      {
+        "word": "okno",
+        "hint": "Fenster"
+      },
+      {
+        "word": "sufit",
+        "hint": "Decke (Zimmer)"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Wetter",
+    "description": "Wetterbegriffe auf Polnisch",
+    "iconName": "cloud.sun",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "słońce",
+        "hint": "Sonne"
+      },
+      {
+        "word": "deszcz",
+        "hint": "Regen"
+      },
+      {
+        "word": "śnieg",
+        "hint": "Schnee"
+      },
+      {
+        "word": "wiatr",
+        "hint": "Wind"
+      },
+      {
+        "word": "chmura",
+        "hint": "Wolke"
+      },
+      {
+        "word": "burza",
+        "hint": "Gewitter"
+      },
+      {
+        "word": "mgła",
+        "hint": "Nebel"
+      },
+      {
+        "word": "tęcza",
+        "hint": "Regenbogen"
+      },
+      {
+        "word": "mróz",
+        "hint": "Frost"
+      },
+      {
+        "word": "grad",
+        "hint": "Hagel"
+      },
+      {
+        "word": "upał",
+        "hint": "Hitze"
+      },
+      {
+        "word": "wilgoć",
+        "hint": "Feuchtigkeit"
+      },
+      {
+        "word": "pogoda",
+        "hint": "Wetter"
+      },
+      {
+        "word": "temperatura",
+        "hint": "Temperatur"
+      },
+      {
+        "word": "prognoza",
+        "hint": "Vorhersage"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Berufe",
+    "description": "Häufige Berufe auf Polnisch",
+    "iconName": "briefcase",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "lekarz",
+        "hint": "Arzt"
+      },
+      {
+        "word": "nauczyciel",
+        "hint": "Lehrer"
+      },
+      {
+        "word": "inżynier",
+        "hint": "Ingenieur"
+      },
+      {
+        "word": "prawnik",
+        "hint": "Anwalt"
+      },
+      {
+        "word": "kucharz",
+        "hint": "Koch"
+      },
+      {
+        "word": "pielęgniarka",
+        "hint": "Krankenschwester"
+      },
+      {
+        "word": "policjant",
+        "hint": "Polizist"
+      },
+      {
+        "word": "strażak",
+        "hint": "Feuerwehrmann"
+      },
+      {
+        "word": "aktor",
+        "hint": "Schauspieler"
+      },
+      {
+        "word": "kierowca",
+        "hint": "Fahrer"
+      },
+      {
+        "word": "dentysta",
+        "hint": "Zahnarzt"
+      },
+      {
+        "word": "architekt",
+        "hint": "Architekt"
+      },
+      {
+        "word": "farmaceuta",
+        "hint": "Apotheker"
+      },
+      {
+        "word": "dziennikarz",
+        "hint": "Journalist"
+      },
+      {
+        "word": "programista",
+        "hint": "Programmierer"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Verkehrsmittel",
+    "description": "Transportmittel auf Polnisch",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "samochód",
+        "hint": "Auto"
+      },
+      {
+        "word": "autobus",
+        "hint": "Bus"
+      },
+      {
+        "word": "pociąg",
+        "hint": "Zug"
+      },
+      {
+        "word": "rower",
+        "hint": "Fahrrad"
+      },
+      {
+        "word": "samolot",
+        "hint": "Flugzeug"
+      },
+      {
+        "word": "statek",
+        "hint": "Schiff"
+      },
+      {
+        "word": "tramwaj",
+        "hint": "Straßenbahn"
+      },
+      {
+        "word": "motocykl",
+        "hint": "Motorrad"
+      },
+      {
+        "word": "taksówka",
+        "hint": "Taxi"
+      },
+      {
+        "word": "helikopter",
+        "hint": "Hubschrauber"
+      },
+      {
+        "word": "metro",
+        "hint": "U-Bahn"
+      },
+      {
+        "word": "łódź",
+        "hint": "Boot"
+      },
+      {
+        "word": "hulajnoga",
+        "hint": "Roller"
+      },
+      {
+        "word": "ciężarówka",
+        "hint": "Lastwagen"
+      },
+      {
+        "word": "ambulans",
+        "hint": "Krankenwagen"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "Schule",
+    "description": "Schulbezogene Wörter auf Polnisch",
+    "iconName": "book",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "książka",
+        "hint": "Buch"
+      },
+      {
+        "word": "zeszyt",
+        "hint": "Heft"
+      },
+      {
+        "word": "ołówek",
+        "hint": "Bleistift"
+      },
+      {
+        "word": "długopis",
+        "hint": "Kugelschreiber"
+      },
+      {
+        "word": "plecak",
+        "hint": "Rucksack"
+      },
+      {
+        "word": "tablica",
+        "hint": "Tafel"
+      },
+      {
+        "word": "kreda",
+        "hint": "Kreide"
+      },
+      {
+        "word": "gumka",
+        "hint": "Radiergummi"
+      },
+      {
+        "word": "linijka",
+        "hint": "Lineal"
+      },
+      {
+        "word": "lekcja",
+        "hint": "Unterricht"
+      },
+      {
+        "word": "uczeń",
+        "hint": "Schüler"
+      },
+      {
+        "word": "klasa",
+        "hint": "Klasse"
+      },
+      {
+        "word": "egzamin",
+        "hint": "Prüfung"
+      },
+      {
+        "word": "zadanie",
+        "hint": "Aufgabe"
+      },
+      {
+        "word": "biblioteka",
+        "hint": "Bibliothek"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Küchenutensilien",
+    "description": "Küchengeräte und -utensilien auf Polnisch",
+    "iconName": "frying.pan",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "nóż",
+        "hint": "Messer"
+      },
+      {
+        "word": "widelec",
+        "hint": "Gabel"
+      },
+      {
+        "word": "łyżka",
+        "hint": "Löffel"
+      },
+      {
+        "word": "talerz",
+        "hint": "Teller"
+      },
+      {
+        "word": "garnek",
+        "hint": "Topf"
+      },
+      {
+        "word": "patelnia",
+        "hint": "Pfanne"
+      },
+      {
+        "word": "kubek",
+        "hint": "Tasse / Becher"
+      },
+      {
+        "word": "szklanka",
+        "hint": "Glas (Trinkglas)"
+      },
+      {
+        "word": "deska",
+        "hint": "Schneidebrett"
+      },
+      {
+        "word": "piekarnik",
+        "hint": "Backofen"
+      },
+      {
+        "word": "lodówka",
+        "hint": "Kühlschrank"
+      },
+      {
+        "word": "czajnik",
+        "hint": "Wasserkocher"
+      },
+      {
+        "word": "mikser",
+        "hint": "Mixer"
+      },
+      {
+        "word": "durszlak",
+        "hint": "Sieb"
+      },
+      {
+        "word": "taca",
+        "hint": "Tablett"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Sport",
+    "description": "Beliebte Sportarten auf Polnisch",
+    "iconName": "sportscourt",
+    "color": "#10b981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "piłka nożna",
+        "hint": "Fußball"
+      },
+      {
+        "word": "koszykówka",
+        "hint": "Basketball"
+      },
+      {
+        "word": "siatkówka",
+        "hint": "Volleyball"
+      },
+      {
+        "word": "tenis",
+        "hint": "Tennis"
+      },
+      {
+        "word": "pływanie",
+        "hint": "Schwimmen"
+      },
+      {
+        "word": "bieganie",
+        "hint": "Laufen"
+      },
+      {
+        "word": "kolarstwo",
+        "hint": "Radfahren"
+      },
+      {
+        "word": "boks",
+        "hint": "Boxen"
+      },
+      {
+        "word": "narciarstwo",
+        "hint": "Skifahren"
+      },
+      {
+        "word": "łyżwiarstwo",
+        "hint": "Eislaufen"
+      },
+      {
+        "word": "lekkoatletyka",
+        "hint": "Leichtathletik"
+      },
+      {
+        "word": "szermierka",
+        "hint": "Fechten"
+      },
+      {
+        "word": "wioślarstwo",
+        "hint": "Rudern"
+      },
+      {
+        "word": "wspinaczka",
+        "hint": "Klettern"
+      },
+      {
+        "word": "judo",
+        "hint": "Judo"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Musikinstrumente",
+    "description": "Musikinstrumente auf Polnisch",
+    "iconName": "music.note",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "fortepian",
+        "hint": "Klavier"
+      },
+      {
+        "word": "gitara",
+        "hint": "Gitarre"
+      },
+      {
+        "word": "skrzypce",
+        "hint": "Geige"
+      },
+      {
+        "word": "perkusja",
+        "hint": "Schlagzeug"
+      },
+      {
+        "word": "flet",
+        "hint": "Flöte"
+      },
+      {
+        "word": "trąbka",
+        "hint": "Trompete"
+      },
+      {
+        "word": "saksofon",
+        "hint": "Saxophon"
+      },
+      {
+        "word": "harfa",
+        "hint": "Harfe"
+      },
+      {
+        "word": "wiolonczela",
+        "hint": "Cello"
+      },
+      {
+        "word": "klarnet",
+        "hint": "Klarinette"
+      },
+      {
+        "word": "akordeon",
+        "hint": "Akkordeon"
+      },
+      {
+        "word": "organy",
+        "hint": "Orgel"
+      },
+      {
+        "word": "kontrabas",
+        "hint": "Kontrabass"
+      },
+      {
+        "word": "puzon",
+        "hint": "Posaune"
+      },
+      {
+        "word": "ukulele",
+        "hint": "Ukulele"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Natur",
+    "description": "Naturbegriffe auf Polnisch",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "drzewo",
+        "hint": "Baum"
+      },
+      {
+        "word": "kwiat",
+        "hint": "Blume"
+      },
+      {
+        "word": "rzeka",
+        "hint": "Fluss"
+      },
+      {
+        "word": "góra",
+        "hint": "Berg"
+      },
+      {
+        "word": "jezioro",
+        "hint": "See"
+      },
+      {
+        "word": "morze",
+        "hint": "Meer"
+      },
+      {
+        "word": "las",
+        "hint": "Wald"
+      },
+      {
+        "word": "plaża",
+        "hint": "Strand"
+      },
+      {
+        "word": "dolina",
+        "hint": "Tal"
+      },
+      {
+        "word": "wodospad",
+        "hint": "Wasserfall"
+      },
+      {
+        "word": "wyspa",
+        "hint": "Insel"
+      },
+      {
+        "word": "jaskinia",
+        "hint": "Höhle"
+      },
+      {
+        "word": "pustynia",
+        "hint": "Wüste"
+      },
+      {
+        "word": "łąka",
+        "hint": "Wiese"
+      },
+      {
+        "word": "polana",
+        "hint": "Lichtung"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Gefühle",
+    "description": "Emotionen und Gefühle auf Polnisch",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "radość",
+        "hint": "Freude"
+      },
+      {
+        "word": "smutek",
+        "hint": "Traurigkeit"
+      },
+      {
+        "word": "złość",
+        "hint": "Wut"
+      },
+      {
+        "word": "strach",
+        "hint": "Angst"
+      },
+      {
+        "word": "miłość",
+        "hint": "Liebe"
+      },
+      {
+        "word": "nadzieja",
+        "hint": "Hoffnung"
+      },
+      {
+        "word": "zazdrość",
+        "hint": "Eifersucht"
+      },
+      {
+        "word": "duma",
+        "hint": "Stolz"
+      },
+      {
+        "word": "wstyd",
+        "hint": "Scham"
+      },
+      {
+        "word": "nuda",
+        "hint": "Langeweile"
+      },
+      {
+        "word": "spokój",
+        "hint": "Ruhe"
+      },
+      {
+        "word": "zdziwienie",
+        "hint": "Überraschung"
+      },
+      {
+        "word": "tęsknota",
+        "hint": "Sehnsucht"
+      },
+      {
+        "word": "wdzięczność",
+        "hint": "Dankbarkeit"
+      },
+      {
+        "word": "ciekawość",
+        "hint": "Neugier"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technologie",
+    "description": "Technologiebegriffe auf Polnisch",
+    "iconName": "desktopcomputer",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "komputer",
+        "hint": "Computer"
+      },
+      {
+        "word": "telefon",
+        "hint": "Telefon"
+      },
+      {
+        "word": "klawiatura",
+        "hint": "Tastatur"
+      },
+      {
+        "word": "ekran",
+        "hint": "Bildschirm"
+      },
+      {
+        "word": "drukarka",
+        "hint": "Drucker"
+      },
+      {
+        "word": "mysz",
+        "hint": "Maus (Computer)"
+      },
+      {
+        "word": "słuchawki",
+        "hint": "Kopfhörer"
+      },
+      {
+        "word": "ładowarka",
+        "hint": "Ladegerät"
+      },
+      {
+        "word": "aparat",
+        "hint": "Kamera"
+      },
+      {
+        "word": "głośnik",
+        "hint": "Lautsprecher"
+      },
+      {
+        "word": "oprogramowanie",
+        "hint": "Software"
+      },
+      {
+        "word": "sieć",
+        "hint": "Netzwerk"
+      },
+      {
+        "word": "hasło",
+        "hint": "Passwort"
+      },
+      {
+        "word": "przeglądarka",
+        "hint": "Browser"
+      },
+      {
+        "word": "aplikacja",
+        "hint": "App / Anwendung"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Büro",
+    "description": "Bürobegriffe auf Polnisch",
+    "iconName": "building.2",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "biurko",
+        "hint": "Schreibtisch"
+      },
+      {
+        "word": "krzesło",
+        "hint": "Stuhl"
+      },
+      {
+        "word": "spotkanie",
+        "hint": "Besprechung"
+      },
+      {
+        "word": "dokument",
+        "hint": "Dokument"
+      },
+      {
+        "word": "teczka",
+        "hint": "Mappe / Ordner"
+      },
+      {
+        "word": "kalendarz",
+        "hint": "Kalender"
+      },
+      {
+        "word": "szuflada",
+        "hint": "Schublade"
+      },
+      {
+        "word": "segregator",
+        "hint": "Aktenordner"
+      },
+      {
+        "word": "koperta",
+        "hint": "Umschlag"
+      },
+      {
+        "word": "pieczątka",
+        "hint": "Stempel"
+      },
+      {
+        "word": "notatnik",
+        "hint": "Notizblock"
+      },
+      {
+        "word": "spinacz",
+        "hint": "Büroklammer"
+      },
+      {
+        "word": "zszywacz",
+        "hint": "Hefter"
+      },
+      {
+        "word": "wizytówka",
+        "hint": "Visitenkarte"
+      },
+      {
+        "word": "nożyczki",
+        "hint": "Schere"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Gesundheit",
+    "description": "Gesundheits- und Medizinbegriffe auf Polnisch",
+    "iconName": "cross.case",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "szpital",
+        "hint": "Krankenhaus"
+      },
+      {
+        "word": "apteka",
+        "hint": "Apotheke"
+      },
+      {
+        "word": "recepta",
+        "hint": "Rezept"
+      },
+      {
+        "word": "gorączka",
+        "hint": "Fieber"
+      },
+      {
+        "word": "kaszel",
+        "hint": "Husten"
+      },
+      {
+        "word": "katar",
+        "hint": "Schnupfen"
+      },
+      {
+        "word": "tabletka",
+        "hint": "Tablette"
+      },
+      {
+        "word": "zastrzyk",
+        "hint": "Spritze"
+      },
+      {
+        "word": "bandaż",
+        "hint": "Verband"
+      },
+      {
+        "word": "antybiotyk",
+        "hint": "Antibiotikum"
+      },
+      {
+        "word": "diagnoza",
+        "hint": "Diagnose"
+      },
+      {
+        "word": "operacja",
+        "hint": "Operation"
+      },
+      {
+        "word": "szczepienie",
+        "hint": "Impfung"
+      },
+      {
+        "word": "badanie",
+        "hint": "Untersuchung"
+      },
+      {
+        "word": "ciśnienie",
+        "hint": "Blutdruck"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Reisen",
+    "description": "Reisebezogene Wörter auf Polnisch",
+    "iconName": "airplane",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "walizka",
+        "hint": "Koffer"
+      },
+      {
+        "word": "paszport",
+        "hint": "Reisepass"
+      },
+      {
+        "word": "bilet",
+        "hint": "Fahrkarte / Ticket"
+      },
+      {
+        "word": "lotnisko",
+        "hint": "Flughafen"
+      },
+      {
+        "word": "dworzec",
+        "hint": "Bahnhof"
+      },
+      {
+        "word": "hotel",
+        "hint": "Hotel"
+      },
+      {
+        "word": "rezerwacja",
+        "hint": "Reservierung"
+      },
+      {
+        "word": "mapa",
+        "hint": "Karte / Landkarte"
+      },
+      {
+        "word": "wakacje",
+        "hint": "Urlaub"
+      },
+      {
+        "word": "wycieczka",
+        "hint": "Ausflug"
+      },
+      {
+        "word": "przewodnik",
+        "hint": "Reiseführer"
+      },
+      {
+        "word": "pamiątka",
+        "hint": "Souvenir"
+      },
+      {
+        "word": "odprawa",
+        "hint": "Check-in"
+      },
+      {
+        "word": "wyjazd",
+        "hint": "Abreise"
+      },
+      {
+        "word": "przyjazd",
+        "hint": "Ankunft"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobbys",
+    "description": "Hobbys und Freizeitaktivitäten auf Polnisch",
+    "iconName": "paintbrush",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "czytanie",
+        "hint": "Lesen"
+      },
+      {
+        "word": "gotowanie",
+        "hint": "Kochen"
+      },
+      {
+        "word": "malowanie",
+        "hint": "Malen"
+      },
+      {
+        "word": "ogrodnictwo",
+        "hint": "Gärtnern"
+      },
+      {
+        "word": "wędkarstwo",
+        "hint": "Angeln"
+      },
+      {
+        "word": "fotografia",
+        "hint": "Fotografie"
+      },
+      {
+        "word": "podróże",
+        "hint": "Reisen (Hobby)"
+      },
+      {
+        "word": "rysowanie",
+        "hint": "Zeichnen"
+      },
+      {
+        "word": "szycie",
+        "hint": "Nähen"
+      },
+      {
+        "word": "taniec",
+        "hint": "Tanzen"
+      },
+      {
+        "word": "szachy",
+        "hint": "Schach"
+      },
+      {
+        "word": "kolekcjonowanie",
+        "hint": "Sammeln"
+      },
+      {
+        "word": "ceramika",
+        "hint": "Keramik"
+      },
+      {
+        "word": "piekarstwo",
+        "hint": "Backen"
+      },
+      {
+        "word": "żeglarstwo",
+        "hint": "Segeln"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Getränke",
+    "description": "Verschiedene Getränke auf Polnisch",
+    "iconName": "cup.and.saucer",
+    "color": "#0891b2",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "woda",
+        "hint": "Wasser"
+      },
+      {
+        "word": "kawa",
+        "hint": "Kaffee"
+      },
+      {
+        "word": "herbata",
+        "hint": "Tee"
+      },
+      {
+        "word": "sok",
+        "hint": "Saft"
+      },
+      {
+        "word": "piwo",
+        "hint": "Bier"
+      },
+      {
+        "word": "wino",
+        "hint": "Wein"
+      },
+      {
+        "word": "lemoniada",
+        "hint": "Limonade"
+      },
+      {
+        "word": "kakao",
+        "hint": "Kakao"
+      },
+      {
+        "word": "koktajl",
+        "hint": "Cocktail / Smoothie"
+      },
+      {
+        "word": "kompot",
+        "hint": "Kompott"
+      },
+      {
+        "word": "szampan",
+        "hint": "Champagner"
+      },
+      {
+        "word": "napój",
+        "hint": "Getränk"
+      },
+      {
+        "word": "likier",
+        "hint": "Likör"
+      },
+      {
+        "word": "cydr",
+        "hint": "Apfelwein / Cider"
+      },
+      {
+        "word": "espresso",
+        "hint": "Espresso"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desserts & Süßigkeiten",
+    "description": "Süße Leckereien auf Polnisch",
+    "iconName": "birthday.cake",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ciasto",
+        "hint": "Kuchen"
+      },
+      {
+        "word": "ciastko",
+        "hint": "Keks / Plätzchen"
+      },
+      {
+        "word": "czekolada",
+        "hint": "Schokolade"
+      },
+      {
+        "word": "lody",
+        "hint": "Eiscreme"
+      },
+      {
+        "word": "pączek",
+        "hint": "Berliner / Krapfen"
+      },
+      {
+        "word": "sernik",
+        "hint": "Käsekuchen"
+      },
+      {
+        "word": "szarlotka",
+        "hint": "Apfelkuchen"
+      },
+      {
+        "word": "makowiec",
+        "hint": "Mohnkuchen"
+      },
+      {
+        "word": "gofr",
+        "hint": "Waffel"
+      },
+      {
+        "word": "naleśnik",
+        "hint": "Pfannkuchen"
+      },
+      {
+        "word": "budyń",
+        "hint": "Pudding"
+      },
+      {
+        "word": "marcepan",
+        "hint": "Marzipan"
+      },
+      {
+        "word": "cukierek",
+        "hint": "Bonbon"
+      },
+      {
+        "word": "herbatnik",
+        "hint": "Butterkeks"
+      },
+      {
+        "word": "krem",
+        "hint": "Creme / Sahne"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Möbel",
+    "description": "Möbelstücke auf Polnisch",
+    "iconName": "sofa",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "kanapa",
+        "hint": "Sofa"
+      },
+      {
+        "word": "fotel",
+        "hint": "Sessel"
+      },
+      {
+        "word": "łóżko",
+        "hint": "Bett"
+      },
+      {
+        "word": "szafa",
+        "hint": "Schrank"
+      },
+      {
+        "word": "stół",
+        "hint": "Tisch"
+      },
+      {
+        "word": "komoda",
+        "hint": "Kommode"
+      },
+      {
+        "word": "półka",
+        "hint": "Regal"
+      },
+      {
+        "word": "lustro",
+        "hint": "Spiegel"
+      },
+      {
+        "word": "dywan",
+        "hint": "Teppich"
+      },
+      {
+        "word": "zasłona",
+        "hint": "Vorhang"
+      },
+      {
+        "word": "lampa",
+        "hint": "Lampe"
+      },
+      {
+        "word": "szafka",
+        "hint": "Schränkchen"
+      },
+      {
+        "word": "stolik",
+        "hint": "Beistelltisch"
+      },
+      {
+        "word": "wieszak",
+        "hint": "Kleiderhaken"
+      },
+      {
+        "word": "regał",
+        "hint": "Bücherregal"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Werkzeuge",
+    "description": "Werkzeuge und Geräte auf Polnisch",
+    "iconName": "wrench",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "młotek",
+        "hint": "Hammer"
+      },
+      {
+        "word": "śrubokręt",
+        "hint": "Schraubenzieher"
+      },
+      {
+        "word": "piła",
+        "hint": "Säge"
+      },
+      {
+        "word": "klucz",
+        "hint": "Schraubenschlüssel"
+      },
+      {
+        "word": "wiertarka",
+        "hint": "Bohrmaschine"
+      },
+      {
+        "word": "szczypce",
+        "hint": "Zange"
+      },
+      {
+        "word": "drabina",
+        "hint": "Leiter"
+      },
+      {
+        "word": "śruba",
+        "hint": "Schraube"
+      },
+      {
+        "word": "gwóźdź",
+        "hint": "Nagel"
+      },
+      {
+        "word": "taśma",
+        "hint": "Klebeband"
+      },
+      {
+        "word": "pędzel",
+        "hint": "Pinsel"
+      },
+      {
+        "word": "szlifierka",
+        "hint": "Schleifmaschine"
+      },
+      {
+        "word": "poziomica",
+        "hint": "Wasserwaage"
+      },
+      {
+        "word": "miarka",
+        "hint": "Maßband"
+      },
+      {
+        "word": "imadło",
+        "hint": "Schraubstock"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materialien",
+    "description": "Verschiedene Materialien auf Polnisch",
+    "iconName": "cube",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "drewno",
+        "hint": "Holz"
+      },
+      {
+        "word": "metal",
+        "hint": "Metall"
+      },
+      {
+        "word": "szkło",
+        "hint": "Glas"
+      },
+      {
+        "word": "plastik",
+        "hint": "Plastik / Kunststoff"
+      },
+      {
+        "word": "bawełna",
+        "hint": "Baumwolle"
+      },
+      {
+        "word": "wełna",
+        "hint": "Wolle"
+      },
+      {
+        "word": "skóra",
+        "hint": "Leder"
+      },
+      {
+        "word": "jedwab",
+        "hint": "Seide"
+      },
+      {
+        "word": "kamień",
+        "hint": "Stein"
+      },
+      {
+        "word": "cement",
+        "hint": "Zement"
+      },
+      {
+        "word": "guma",
+        "hint": "Gummi"
+      },
+      {
+        "word": "papier",
+        "hint": "Papier"
+      },
+      {
+        "word": "glina",
+        "hint": "Ton / Lehm"
+      },
+      {
+        "word": "miedź",
+        "hint": "Kupfer"
+      },
+      {
+        "word": "marmur",
+        "hint": "Marmor"
+      }
+    ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Tagesablauf",
+    "description": "Tägliche Routinen und Aktivitäten auf Polnisch",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "budzik",
+        "hint": "Wecker"
+      },
+      {
+        "word": "prysznic",
+        "hint": "Dusche"
+      },
+      {
+        "word": "śniadanie",
+        "hint": "Frühstück"
+      },
+      {
+        "word": "praca",
+        "hint": "Arbeit"
+      },
+      {
+        "word": "obiad",
+        "hint": "Mittagessen"
+      },
+      {
+        "word": "kolacja",
+        "hint": "Abendessen"
+      },
+      {
+        "word": "spacer",
+        "hint": "Spaziergang"
+      },
+      {
+        "word": "zakupy",
+        "hint": "Einkäufe"
+      },
+      {
+        "word": "odpoczynek",
+        "hint": "Erholung"
+      },
+      {
+        "word": "porządek",
+        "hint": "Ordnung"
+      },
+      {
+        "word": "gotowanie",
+        "hint": "Kochen"
+      },
+      {
+        "word": "sprzątanie",
+        "hint": "Putzen"
+      },
+      {
+        "word": "czytanie",
+        "hint": "Lesen"
+      },
+      {
+        "word": "zasypianie",
+        "hint": "Einschlafen"
+      },
+      {
+        "word": "ubieranie",
+        "hint": "Anziehen"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Einkaufen",
+    "description": "Einkaufen und Geschäfte auf Polnisch",
+    "iconName": "cart",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "sklep",
+        "hint": "Geschäft"
+      },
+      {
+        "word": "koszyk",
+        "hint": "Einkaufskorb"
+      },
+      {
+        "word": "kasa",
+        "hint": "Kasse"
+      },
+      {
+        "word": "paragon",
+        "hint": "Kassenbon"
+      },
+      {
+        "word": "promocja",
+        "hint": "Sonderangebot"
+      },
+      {
+        "word": "rabat",
+        "hint": "Rabatt"
+      },
+      {
+        "word": "torba",
+        "hint": "Tüte/Tasche"
+      },
+      {
+        "word": "półka",
+        "hint": "Regal"
+      },
+      {
+        "word": "kolejka",
+        "hint": "Schlange/Warteschlange"
+      },
+      {
+        "word": "wybór",
+        "hint": "Auswahl"
+      },
+      {
+        "word": "sprzedawca",
+        "hint": "Verkäufer"
+      },
+      {
+        "word": "cennik",
+        "hint": "Preisliste"
+      },
+      {
+        "word": "rachunek",
+        "hint": "Rechnung"
+      },
+      {
+        "word": "wydatek",
+        "hint": "Ausgabe"
+      },
+      {
+        "word": "okazja",
+        "hint": "Schnäppchen"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restaurant",
+    "description": "Im Restaurant – polnische Begriffe",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "kelner",
+        "hint": "Kellner"
+      },
+      {
+        "word": "stolik",
+        "hint": "Tisch"
+      },
+      {
+        "word": "zamówienie",
+        "hint": "Bestellung"
+      },
+      {
+        "word": "danie",
+        "hint": "Gericht"
+      },
+      {
+        "word": "przystawka",
+        "hint": "Vorspeise"
+      },
+      {
+        "word": "deser",
+        "hint": "Dessert/Nachtisch"
+      },
+      {
+        "word": "napiwek",
+        "hint": "Trinkgeld"
+      },
+      {
+        "word": "rezerwacja",
+        "hint": "Reservierung"
+      },
+      {
+        "word": "kuchnia",
+        "hint": "Küche"
+      },
+      {
+        "word": "lokal",
+        "hint": "Lokal/Gaststätte"
+      },
+      {
+        "word": "porcja",
+        "hint": "Portion"
+      },
+      {
+        "word": "sałatka",
+        "hint": "Salat"
+      },
+      {
+        "word": "rachunek",
+        "hint": "Rechnung"
+      },
+      {
+        "word": "szef kuchni",
+        "hint": "Küchenchef"
+      },
+      {
+        "word": "specjalność",
+        "hint": "Spezialität"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Garten",
+    "description": "Garten und Pflanzen auf Polnisch",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ogród",
+        "hint": "Garten"
+      },
+      {
+        "word": "trawnik",
+        "hint": "Rasen"
+      },
+      {
+        "word": "grządka",
+        "hint": "Beet"
+      },
+      {
+        "word": "konewka",
+        "hint": "Gießkanne"
+      },
+      {
+        "word": "nasiona",
+        "hint": "Samen"
+      },
+      {
+        "word": "drzewo",
+        "hint": "Baum"
+      },
+      {
+        "word": "krzew",
+        "hint": "Strauch"
+      },
+      {
+        "word": "płot",
+        "hint": "Zaun"
+      },
+      {
+        "word": "ścieżka",
+        "hint": "Weg/Pfad"
+      },
+      {
+        "word": "ławka",
+        "hint": "Bank/Gartenbank"
+      },
+      {
+        "word": "szklarnia",
+        "hint": "Gewächshaus"
+      },
+      {
+        "word": "nawóz",
+        "hint": "Dünger"
+      },
+      {
+        "word": "podlewanie",
+        "hint": "Gießen/Bewässern"
+      },
+      {
+        "word": "rabatka",
+        "hint": "Blumenbeet"
+      },
+      {
+        "word": "kompost",
+        "hint": "Kompost"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Badezimmer",
+    "description": "Badezimmer und Hygiene auf Polnisch",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "wanna",
+        "hint": "Badewanne"
+      },
+      {
+        "word": "umywalka",
+        "hint": "Waschbecken"
+      },
+      {
+        "word": "lustro",
+        "hint": "Spiegel"
+      },
+      {
+        "word": "ręcznik",
+        "hint": "Handtuch"
+      },
+      {
+        "word": "mydło",
+        "hint": "Seife"
+      },
+      {
+        "word": "szampon",
+        "hint": "Shampoo"
+      },
+      {
+        "word": "szczoteczka",
+        "hint": "Zahnbürste"
+      },
+      {
+        "word": "pasta",
+        "hint": "Zahnpasta"
+      },
+      {
+        "word": "suszarka",
+        "hint": "Föhn/Haartrockner"
+      },
+      {
+        "word": "prysznic",
+        "hint": "Dusche"
+      },
+      {
+        "word": "kafelki",
+        "hint": "Fliesen"
+      },
+      {
+        "word": "kran",
+        "hint": "Wasserhahn"
+      },
+      {
+        "word": "pralka",
+        "hint": "Waschmaschine"
+      },
+      {
+        "word": "gąbka",
+        "hint": "Schwamm"
+      },
+      {
+        "word": "zasłona",
+        "hint": "Duschvorhang"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Kino",
+    "description": "Kino und Filme auf Polnisch",
+    "iconName": "film",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ekran",
+        "hint": "Leinwand/Bildschirm"
+      },
+      {
+        "word": "bilet",
+        "hint": "Eintrittskarte"
+      },
+      {
+        "word": "seans",
+        "hint": "Vorstellung/Vorführung"
+      },
+      {
+        "word": "reżyser",
+        "hint": "Regisseur"
+      },
+      {
+        "word": "aktor",
+        "hint": "Schauspieler"
+      },
+      {
+        "word": "aktorka",
+        "hint": "Schauspielerin"
+      },
+      {
+        "word": "fabuła",
+        "hint": "Handlung"
+      },
+      {
+        "word": "komedia",
+        "hint": "Komödie"
+      },
+      {
+        "word": "dramat",
+        "hint": "Drama"
+      },
+      {
+        "word": "horror",
+        "hint": "Horrorfilm"
+      },
+      {
+        "word": "zwiastun",
+        "hint": "Trailer/Vorschau"
+      },
+      {
+        "word": "popcorn",
+        "hint": "Popcorn"
+      },
+      {
+        "word": "napisy",
+        "hint": "Untertitel"
+      },
+      {
+        "word": "premiera",
+        "hint": "Premiere"
+      },
+      {
+        "word": "dubbing",
+        "hint": "Synchronisation"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Kunst",
+    "description": "Kunst und Kreativität auf Polnisch",
+    "iconName": "paintbrush",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "obraz",
+        "hint": "Gemälde/Bild"
+      },
+      {
+        "word": "rzeźba",
+        "hint": "Skulptur"
+      },
+      {
+        "word": "galeria",
+        "hint": "Galerie"
+      },
+      {
+        "word": "wystawa",
+        "hint": "Ausstellung"
+      },
+      {
+        "word": "pędzel",
+        "hint": "Pinsel"
+      },
+      {
+        "word": "farba",
+        "hint": "Farbe (Malfarbe)"
+      },
+      {
+        "word": "płótno",
+        "hint": "Leinwand"
+      },
+      {
+        "word": "szkic",
+        "hint": "Skizze"
+      },
+      {
+        "word": "portret",
+        "hint": "Porträt"
+      },
+      {
+        "word": "pejzaż",
+        "hint": "Landschaftsbild"
+      },
+      {
+        "word": "artysta",
+        "hint": "Künstler"
+      },
+      {
+        "word": "muzeum",
+        "hint": "Museum"
+      },
+      {
+        "word": "rysowanie",
+        "hint": "Zeichnen"
+      },
+      {
+        "word": "paleta",
+        "hint": "Palette"
+      },
+      {
+        "word": "akwarela",
+        "hint": "Aquarell"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Tanz",
+    "description": "Tanz und Bewegung auf Polnisch",
+    "iconName": "figure.dance",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "taniec",
+        "hint": "Tanz"
+      },
+      {
+        "word": "balet",
+        "hint": "Ballett"
+      },
+      {
+        "word": "walc",
+        "hint": "Walzer"
+      },
+      {
+        "word": "tango",
+        "hint": "Tango"
+      },
+      {
+        "word": "polka",
+        "hint": "Polka"
+      },
+      {
+        "word": "choreograf",
+        "hint": "Choreograf"
+      },
+      {
+        "word": "scena",
+        "hint": "Bühne"
+      },
+      {
+        "word": "partner",
+        "hint": "Tanzpartner"
+      },
+      {
+        "word": "muzyka",
+        "hint": "Musik"
+      },
+      {
+        "word": "krok",
+        "hint": "Schritt"
+      },
+      {
+        "word": "obrót",
+        "hint": "Drehung"
+      },
+      {
+        "word": "kostium",
+        "hint": "Kostüm"
+      },
+      {
+        "word": "występ",
+        "hint": "Aufführung"
+      },
+      {
+        "word": "tancerz",
+        "hint": "Tänzer"
+      },
+      {
+        "word": "gala",
+        "hint": "Gala/Tanzball"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Fotografie",
+    "description": "Fotografie und Kamera auf Polnisch",
+    "iconName": "camera",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "aparat",
+        "hint": "Kamera"
+      },
+      {
+        "word": "obiektyw",
+        "hint": "Objektiv"
+      },
+      {
+        "word": "zdjęcie",
+        "hint": "Foto/Bild"
+      },
+      {
+        "word": "portret",
+        "hint": "Porträtfoto"
+      },
+      {
+        "word": "krajobraz",
+        "hint": "Landschaftsfoto"
+      },
+      {
+        "word": "ostrość",
+        "hint": "Schärfe"
+      },
+      {
+        "word": "migawka",
+        "hint": "Verschluss/Auslöser"
+      },
+      {
+        "word": "naświetlanie",
+        "hint": "Belichtung"
+      },
+      {
+        "word": "lampa",
+        "hint": "Blitzlicht"
+      },
+      {
+        "word": "statyw",
+        "hint": "Stativ"
+      },
+      {
+        "word": "kadr",
+        "hint": "Bildausschnitt"
+      },
+      {
+        "word": "powiększenie",
+        "hint": "Vergrößerung"
+      },
+      {
+        "word": "negatyw",
+        "hint": "Negativ"
+      },
+      {
+        "word": "fotograf",
+        "hint": "Fotograf"
+      },
+      {
+        "word": "retusz",
+        "hint": "Retusche"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Handwerk",
+    "description": "Basteln und Handarbeit auf Polnisch",
+    "iconName": "scissors",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "nożyczki",
+        "hint": "Schere"
+      },
+      {
+        "word": "klej",
+        "hint": "Kleber/Klebstoff"
+      },
+      {
+        "word": "włóczka",
+        "hint": "Wolle/Garn"
+      },
+      {
+        "word": "druty",
+        "hint": "Stricknadeln"
+      },
+      {
+        "word": "szydełko",
+        "hint": "Häkelnadel"
+      },
+      {
+        "word": "haft",
+        "hint": "Stickerei"
+      },
+      {
+        "word": "origami",
+        "hint": "Origami"
+      },
+      {
+        "word": "tkanina",
+        "hint": "Stoff/Gewebe"
+      },
+      {
+        "word": "koraliki",
+        "hint": "Perlen"
+      },
+      {
+        "word": "szycie",
+        "hint": "Nähen"
+      },
+      {
+        "word": "wzór",
+        "hint": "Muster/Vorlage"
+      },
+      {
+        "word": "pieczątka",
+        "hint": "Stempel"
+      },
+      {
+        "word": "biżuteria",
+        "hint": "Schmuck"
+      },
+      {
+        "word": "ceramika",
+        "hint": "Keramik"
+      },
+      {
+        "word": "makrama",
+        "hint": "Makramee"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geografie",
+    "description": "Geografische Begriffe auf Polnisch",
+    "iconName": "globe",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "kontynent",
+        "hint": "Kontinent"
+      },
+      {
+        "word": "półwysep",
+        "hint": "Halbinsel"
+      },
+      {
+        "word": "wyspa",
+        "hint": "Insel"
+      },
+      {
+        "word": "dolina",
+        "hint": "Tal"
+      },
+      {
+        "word": "równina",
+        "hint": "Ebene"
+      },
+      {
+        "word": "pustynia",
+        "hint": "Wüste"
+      },
+      {
+        "word": "rzeka",
+        "hint": "Fluss"
+      },
+      {
+        "word": "jezioro",
+        "hint": "See"
+      },
+      {
+        "word": "wulkan",
+        "hint": "Vulkan"
+      },
+      {
+        "word": "lodowiec",
+        "hint": "Gletscher"
+      },
+      {
+        "word": "granica",
+        "hint": "Grenze"
+      },
+      {
+        "word": "wybrzeże",
+        "hint": "Küste"
+      },
+      {
+        "word": "wodospad",
+        "hint": "Wasserfall"
+      },
+      {
+        "word": "jaskinia",
+        "hint": "Höhle"
+      },
+      {
+        "word": "zatoka",
+        "hint": "Bucht"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomie",
+    "description": "Astronomie und Weltraum auf Polnisch",
+    "iconName": "star",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "gwiazda",
+        "hint": "Stern"
+      },
+      {
+        "word": "planeta",
+        "hint": "Planet"
+      },
+      {
+        "word": "księżyc",
+        "hint": "Mond"
+      },
+      {
+        "word": "galaktyka",
+        "hint": "Galaxie"
+      },
+      {
+        "word": "kometa",
+        "hint": "Komet"
+      },
+      {
+        "word": "mgławica",
+        "hint": "Nebel (kosmisch)"
+      },
+      {
+        "word": "teleskop",
+        "hint": "Teleskop"
+      },
+      {
+        "word": "orbita",
+        "hint": "Umlaufbahn"
+      },
+      {
+        "word": "zaćmienie",
+        "hint": "Finsternis"
+      },
+      {
+        "word": "asteroida",
+        "hint": "Asteroid"
+      },
+      {
+        "word": "meteoryt",
+        "hint": "Meteorit"
+      },
+      {
+        "word": "astronauta",
+        "hint": "Astronaut"
+      },
+      {
+        "word": "rakieta",
+        "hint": "Rakete"
+      },
+      {
+        "word": "konstelacja",
+        "hint": "Sternbild"
+      },
+      {
+        "word": "grawitacja",
+        "hint": "Schwerkraft"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ozean",
+    "description": "Meer und Ozean auf Polnisch",
+    "iconName": "water.waves",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ocean",
+        "hint": "Ozean"
+      },
+      {
+        "word": "fala",
+        "hint": "Welle"
+      },
+      {
+        "word": "plaża",
+        "hint": "Strand"
+      },
+      {
+        "word": "rafa",
+        "hint": "Riff"
+      },
+      {
+        "word": "delfin",
+        "hint": "Delfin"
+      },
+      {
+        "word": "wieloryb",
+        "hint": "Wal"
+      },
+      {
+        "word": "rekin",
+        "hint": "Hai"
+      },
+      {
+        "word": "meduza",
+        "hint": "Qualle"
+      },
+      {
+        "word": "kotwica",
+        "hint": "Anker"
+      },
+      {
+        "word": "latarnia",
+        "hint": "Leuchtturm"
+      },
+      {
+        "word": "statek",
+        "hint": "Schiff"
+      },
+      {
+        "word": "żagiel",
+        "hint": "Segel"
+      },
+      {
+        "word": "muszla",
+        "hint": "Muschel"
+      },
+      {
+        "word": "przypływ",
+        "hint": "Flut/Gezeiten"
+      },
+      {
+        "word": "głębia",
+        "hint": "Tiefe"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Berge",
+    "description": "Berge und Gebirge auf Polnisch",
+    "iconName": "mountain.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "szczyt",
+        "hint": "Gipfel"
+      },
+      {
+        "word": "przełęcz",
+        "hint": "Pass/Gebirgspass"
+      },
+      {
+        "word": "dolina",
+        "hint": "Tal"
+      },
+      {
+        "word": "skała",
+        "hint": "Felsen"
+      },
+      {
+        "word": "potok",
+        "hint": "Bach/Gebirgsbach"
+      },
+      {
+        "word": "szlak",
+        "hint": "Wanderweg"
+      },
+      {
+        "word": "schronisko",
+        "hint": "Berghütte/Schutzhütte"
+      },
+      {
+        "word": "lawina",
+        "hint": "Lawine"
+      },
+      {
+        "word": "turystyka",
+        "hint": "Wandertourismus"
+      },
+      {
+        "word": "plecak",
+        "hint": "Rucksack"
+      },
+      {
+        "word": "kije",
+        "hint": "Wanderstöcke"
+      },
+      {
+        "word": "zbocze",
+        "hint": "Hang/Abhang"
+      },
+      {
+        "word": "panorama",
+        "hint": "Aussicht/Panorama"
+      },
+      {
+        "word": "stok",
+        "hint": "Skipiste/Hang"
+      },
+      {
+        "word": "grań",
+        "hint": "Grat/Bergrücken"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Camping",
+    "description": "Camping und Outdoor auf Polnisch",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "namiot",
+        "hint": "Zelt"
+      },
+      {
+        "word": "ognisko",
+        "hint": "Lagerfeuer"
+      },
+      {
+        "word": "śpiwór",
+        "hint": "Schlafsack"
+      },
+      {
+        "word": "karimata",
+        "hint": "Isomatte"
+      },
+      {
+        "word": "latarka",
+        "hint": "Taschenlampe"
+      },
+      {
+        "word": "kompas",
+        "hint": "Kompass"
+      },
+      {
+        "word": "biwak",
+        "hint": "Biwak/Freiluftlager"
+      },
+      {
+        "word": "termos",
+        "hint": "Thermoskanne"
+      },
+      {
+        "word": "scyzoryk",
+        "hint": "Taschenmesser"
+      },
+      {
+        "word": "hamak",
+        "hint": "Hängematte"
+      },
+      {
+        "word": "kuchenka",
+        "hint": "Campingkocher"
+      },
+      {
+        "word": "mapa",
+        "hint": "Karte/Landkarte"
+      },
+      {
+        "word": "polana",
+        "hint": "Lichtung"
+      },
+      {
+        "word": "tropik",
+        "hint": "Pfad/Fährte"
+      },
+      {
+        "word": "naczepa",
+        "hint": "Wohnwagen"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Recht",
+    "description": "Recht und Justiz auf Polnisch",
+    "iconName": "scale.3d",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "sędzia",
+        "hint": "Richter"
+      },
+      {
+        "word": "adwokat",
+        "hint": "Rechtsanwalt"
+      },
+      {
+        "word": "wyrok",
+        "hint": "Urteil"
+      },
+      {
+        "word": "oskarżony",
+        "hint": "Angeklagter"
+      },
+      {
+        "word": "dowód",
+        "hint": "Beweis"
+      },
+      {
+        "word": "świadek",
+        "hint": "Zeuge"
+      },
+      {
+        "word": "kara",
+        "hint": "Strafe"
+      },
+      {
+        "word": "grzywna",
+        "hint": "Geldstrafe/Bußgeld"
+      },
+      {
+        "word": "umowa",
+        "hint": "Vertrag"
+      },
+      {
+        "word": "prokurator",
+        "hint": "Staatsanwalt"
+      },
+      {
+        "word": "przesłuchanie",
+        "hint": "Verhör"
+      },
+      {
+        "word": "odwołanie",
+        "hint": "Berufung"
+      },
+      {
+        "word": "ława",
+        "hint": "Geschworenenbank"
+      },
+      {
+        "word": "przestępstwo",
+        "hint": "Straftat/Verbrechen"
+      },
+      {
+        "word": "więzienie",
+        "hint": "Gefängnis"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Politik",
+    "description": "Politik und Regierung auf Polnisch",
+    "iconName": "building.columns",
+    "color": "#1d4ed8",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "parlament",
+        "hint": "Parlament"
+      },
+      {
+        "word": "prezydent",
+        "hint": "Präsident"
+      },
+      {
+        "word": "premier",
+        "hint": "Premierminister"
+      },
+      {
+        "word": "wybory",
+        "hint": "Wahlen"
+      },
+      {
+        "word": "głosowanie",
+        "hint": "Abstimmung"
+      },
+      {
+        "word": "partia",
+        "hint": "Partei"
+      },
+      {
+        "word": "ustawa",
+        "hint": "Gesetz"
+      },
+      {
+        "word": "demokracja",
+        "hint": "Demokratie"
+      },
+      {
+        "word": "konstytucja",
+        "hint": "Verfassung"
+      },
+      {
+        "word": "opozycja",
+        "hint": "Opposition"
+      },
+      {
+        "word": "koalicja",
+        "hint": "Koalition"
+      },
+      {
+        "word": "minister",
+        "hint": "Minister"
+      },
+      {
+        "word": "debata",
+        "hint": "Debatte"
+      },
+      {
+        "word": "kampania",
+        "hint": "Wahlkampf"
+      },
+      {
+        "word": "reforma",
+        "hint": "Reform"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Wirtschaft",
+    "description": "Wirtschaftliche Begriffe auf Polnisch",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "rynek",
+        "hint": "Markt"
+      },
+      {
+        "word": "inflacja",
+        "hint": "Inflation"
+      },
+      {
+        "word": "podatek",
+        "hint": "Steuer"
+      },
+      {
+        "word": "budżet",
+        "hint": "Haushalt/Budget"
+      },
+      {
+        "word": "eksport",
+        "hint": "Export"
+      },
+      {
+        "word": "import",
+        "hint": "Import"
+      },
+      {
+        "word": "waluta",
+        "hint": "Währung"
+      },
+      {
+        "word": "giełda",
+        "hint": "Börse"
+      },
+      {
+        "word": "inwestycja",
+        "hint": "Investition"
+      },
+      {
+        "word": "zysk",
+        "hint": "Gewinn"
+      },
+      {
+        "word": "strata",
+        "hint": "Verlust"
+      },
+      {
+        "word": "produkcja",
+        "hint": "Produktion"
+      },
+      {
+        "word": "konkurencja",
+        "hint": "Konkurrenz/Wettbewerb"
+      },
+      {
+        "word": "bezrobocie",
+        "hint": "Arbeitslosigkeit"
+      },
+      {
+        "word": "handel",
+        "hint": "Handel"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Bankwesen",
+    "description": "Bank und Finanzen auf Polnisch",
+    "iconName": "banknote",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "konto",
+        "hint": "Konto"
+      },
+      {
+        "word": "przelew",
+        "hint": "Überweisung"
+      },
+      {
+        "word": "kredyt",
+        "hint": "Kredit"
+      },
+      {
+        "word": "hipoteka",
+        "hint": "Hypothek"
+      },
+      {
+        "word": "oszczędności",
+        "hint": "Ersparnisse"
+      },
+      {
+        "word": "odsetki",
+        "hint": "Zinsen"
+      },
+      {
+        "word": "bankomat",
+        "hint": "Geldautomat"
+      },
+      {
+        "word": "wpłata",
+        "hint": "Einzahlung"
+      },
+      {
+        "word": "wypłata",
+        "hint": "Auszahlung"
+      },
+      {
+        "word": "pożyczka",
+        "hint": "Darlehen"
+      },
+      {
+        "word": "saldo",
+        "hint": "Kontostand"
+      },
+      {
+        "word": "prowizja",
+        "hint": "Gebühr/Provision"
+      },
+      {
+        "word": "lokata",
+        "hint": "Festgeld"
+      },
+      {
+        "word": "zadłużenie",
+        "hint": "Verschuldung"
+      },
+      {
+        "word": "rata",
+        "hint": "Rate"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Versicherung",
+    "description": "Versicherung und Vorsorge auf Polnisch",
+    "iconName": "shield",
+    "color": "#0891b2",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "polisa",
+        "hint": "Police/Versicherungsschein"
+      },
+      {
+        "word": "składka",
+        "hint": "Beitrag/Prämie"
+      },
+      {
+        "word": "odszkodowanie",
+        "hint": "Entschädigung"
+      },
+      {
+        "word": "wypadek",
+        "hint": "Unfall"
+      },
+      {
+        "word": "szkoda",
+        "hint": "Schaden"
+      },
+      {
+        "word": "emerytura",
+        "hint": "Rente"
+      },
+      {
+        "word": "ubezpieczenie",
+        "hint": "Versicherung"
+      },
+      {
+        "word": "agent",
+        "hint": "Versicherungsagent"
+      },
+      {
+        "word": "roszczenie",
+        "hint": "Anspruch/Forderung"
+      },
+      {
+        "word": "ryzyko",
+        "hint": "Risiko"
+      },
+      {
+        "word": "ochrona",
+        "hint": "Schutz"
+      },
+      {
+        "word": "renta",
+        "hint": "Erwerbsminderungsrente"
+      },
+      {
+        "word": "zgłoszenie",
+        "hint": "Meldung/Schadensmeldung"
+      },
+      {
+        "word": "umowa",
+        "hint": "Versicherungsvertrag"
+      },
+      {
+        "word": "franszyza",
+        "hint": "Selbstbeteiligung"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Kochen",
+    "description": "Kochen und Zubereitung auf Polnisch",
+    "iconName": "flame",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "garnek",
+        "hint": "Kochtopf"
+      },
+      {
+        "word": "patelnia",
+        "hint": "Bratpfanne"
+      },
+      {
+        "word": "piekarnik",
+        "hint": "Backofen"
+      },
+      {
+        "word": "gotowanie",
+        "hint": "Kochen"
+      },
+      {
+        "word": "smażenie",
+        "hint": "Braten"
+      },
+      {
+        "word": "krojenie",
+        "hint": "Schneiden"
+      },
+      {
+        "word": "mieszanie",
+        "hint": "Rühren/Mischen"
+      },
+      {
+        "word": "przepis",
+        "hint": "Rezept"
+      },
+      {
+        "word": "składnik",
+        "hint": "Zutat"
+      },
+      {
+        "word": "przyprawy",
+        "hint": "Gewürze"
+      },
+      {
+        "word": "tarka",
+        "hint": "Reibe"
+      },
+      {
+        "word": "durszlak",
+        "hint": "Sieb/Abtropfsieb"
+      },
+      {
+        "word": "rondel",
+        "hint": "Stielkasserolle"
+      },
+      {
+        "word": "deska",
+        "hint": "Schneidebrett"
+      },
+      {
+        "word": "widelec",
+        "hint": "Gabel"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Backen",
+    "description": "Backen und Gebäck auf Polnisch",
+    "iconName": "birthday.cake",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ciasto",
+        "hint": "Teig/Kuchen"
+      },
+      {
+        "word": "mąka",
+        "hint": "Mehl"
+      },
+      {
+        "word": "drożdże",
+        "hint": "Hefe"
+      },
+      {
+        "word": "cukier",
+        "hint": "Zucker"
+      },
+      {
+        "word": "masło",
+        "hint": "Butter"
+      },
+      {
+        "word": "jajko",
+        "hint": "Ei"
+      },
+      {
+        "word": "pieczenie",
+        "hint": "Backen"
+      },
+      {
+        "word": "forma",
+        "hint": "Backform"
+      },
+      {
+        "word": "lukier",
+        "hint": "Glasur/Zuckerguss"
+      },
+      {
+        "word": "biszkopt",
+        "hint": "Biskuit"
+      },
+      {
+        "word": "blacha",
+        "hint": "Backblech"
+      },
+      {
+        "word": "rogalik",
+        "hint": "Croissant/Hörnchen"
+      },
+      {
+        "word": "bułka",
+        "hint": "Brötchen"
+      },
+      {
+        "word": "chleb",
+        "hint": "Brot"
+      },
+      {
+        "word": "wałek",
+        "hint": "Nudelholz"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Gewürze",
+    "description": "Kräuter und Gewürze auf Polnisch",
+    "iconName": "leaf",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pieprz",
+        "hint": "Pfeffer"
+      },
+      {
+        "word": "cynamon",
+        "hint": "Zimt"
+      },
+      {
+        "word": "imbir",
+        "hint": "Ingwer"
+      },
+      {
+        "word": "bazylia",
+        "hint": "Basilikum"
+      },
+      {
+        "word": "oregano",
+        "hint": "Oregano"
+      },
+      {
+        "word": "kminek",
+        "hint": "Kümmel"
+      },
+      {
+        "word": "kurkuma",
+        "hint": "Kurkuma"
+      },
+      {
+        "word": "papryka",
+        "hint": "Paprika (Gewürz)"
+      },
+      {
+        "word": "tymianek",
+        "hint": "Thymian"
+      },
+      {
+        "word": "rozmaryn",
+        "hint": "Rosmarin"
+      },
+      {
+        "word": "szafran",
+        "hint": "Safran"
+      },
+      {
+        "word": "goździki",
+        "hint": "Nelken (Gewürz)"
+      },
+      {
+        "word": "koperek",
+        "hint": "Dill"
+      },
+      {
+        "word": "majeranek",
+        "hint": "Majoran"
+      },
+      {
+        "word": "kolendra",
+        "hint": "Koriander"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Milchprodukte",
+    "description": "Milchprodukte auf Polnisch",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mleko",
+        "hint": "Milch"
+      },
+      {
+        "word": "jogurt",
+        "hint": "Joghurt"
+      },
+      {
+        "word": "śmietana",
+        "hint": "Sahne/Sauerrahm"
+      },
+      {
+        "word": "twaróg",
+        "hint": "Quark"
+      },
+      {
+        "word": "kefir",
+        "hint": "Kefir"
+      },
+      {
+        "word": "maślanka",
+        "hint": "Buttermilch"
+      },
+      {
+        "word": "masło",
+        "hint": "Butter"
+      },
+      {
+        "word": "serek",
+        "hint": "Frischkäse"
+      },
+      {
+        "word": "mozzarella",
+        "hint": "Mozzarella"
+      },
+      {
+        "word": "parmezan",
+        "hint": "Parmesan"
+      },
+      {
+        "word": "camembert",
+        "hint": "Camembert"
+      },
+      {
+        "word": "brie",
+        "hint": "Brie"
+      },
+      {
+        "word": "gouda",
+        "hint": "Gouda"
+      },
+      {
+        "word": "lody",
+        "hint": "Eiscreme/Eis"
+      },
+      {
+        "word": "budyń",
+        "hint": "Pudding"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Fleisch",
+    "description": "Fleisch und Wurst auf Polnisch",
+    "iconName": "fork.knife",
+    "color": "#b91c1c",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "wołowina",
+        "hint": "Rindfleisch"
+      },
+      {
+        "word": "wieprzowina",
+        "hint": "Schweinefleisch"
+      },
+      {
+        "word": "kurczak",
+        "hint": "Hähnchen"
+      },
+      {
+        "word": "indyk",
+        "hint": "Truthahn"
+      },
+      {
+        "word": "jagnięcina",
+        "hint": "Lammfleisch"
+      },
+      {
+        "word": "kiełbasa",
+        "hint": "Wurst"
+      },
+      {
+        "word": "szynka",
+        "hint": "Schinken"
+      },
+      {
+        "word": "boczek",
+        "hint": "Speck"
+      },
+      {
+        "word": "schab",
+        "hint": "Schweinelende"
+      },
+      {
+        "word": "kotlet",
+        "hint": "Schnitzel/Kotelett"
+      },
+      {
+        "word": "pieczeń",
+        "hint": "Braten"
+      },
+      {
+        "word": "gulasz",
+        "hint": "Gulasch"
+      },
+      {
+        "word": "pasztet",
+        "hint": "Pastete"
+      },
+      {
+        "word": "salami",
+        "hint": "Salami"
+      },
+      {
+        "word": "filet",
+        "hint": "Filet"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Haustiere",
+    "description": "Haustiere und Tierpflege auf Polnisch",
+    "iconName": "pawprint",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pies",
+        "hint": "Hund"
+      },
+      {
+        "word": "kot",
+        "hint": "Katze"
+      },
+      {
+        "word": "chomik",
+        "hint": "Hamster"
+      },
+      {
+        "word": "królik",
+        "hint": "Kaninchen"
+      },
+      {
+        "word": "papuga",
+        "hint": "Papagei"
+      },
+      {
+        "word": "rybka",
+        "hint": "Fisch (Haustier)"
+      },
+      {
+        "word": "żółw",
+        "hint": "Schildkröte"
+      },
+      {
+        "word": "świnka",
+        "hint": "Meerschweinchen"
+      },
+      {
+        "word": "szczur",
+        "hint": "Ratte"
+      },
+      {
+        "word": "kanarki",
+        "hint": "Kanarienvogel"
+      },
+      {
+        "word": "klatka",
+        "hint": "Käfig"
+      },
+      {
+        "word": "smycz",
+        "hint": "Leine"
+      },
+      {
+        "word": "karma",
+        "hint": "Futter"
+      },
+      {
+        "word": "weterynarz",
+        "hint": "Tierarzt"
+      },
+      {
+        "word": "obroża",
+        "hint": "Halsband"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Vögel",
+    "description": "Vogelarten auf Polnisch",
+    "iconName": "bird",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "orzeł",
+        "hint": "Adler"
+      },
+      {
+        "word": "sokół",
+        "hint": "Falke"
+      },
+      {
+        "word": "sowa",
+        "hint": "Eule"
+      },
+      {
+        "word": "wróbel",
+        "hint": "Spatz"
+      },
+      {
+        "word": "gołąb",
+        "hint": "Taube"
+      },
+      {
+        "word": "łabędź",
+        "hint": "Schwan"
+      },
+      {
+        "word": "bocian",
+        "hint": "Storch"
+      },
+      {
+        "word": "jaskółka",
+        "hint": "Schwalbe"
+      },
+      {
+        "word": "sroka",
+        "hint": "Elster"
+      },
+      {
+        "word": "kruk",
+        "hint": "Rabe"
+      },
+      {
+        "word": "sikorka",
+        "hint": "Meise"
+      },
+      {
+        "word": "dzięcioł",
+        "hint": "Specht"
+      },
+      {
+        "word": "pelikan",
+        "hint": "Pelikan"
+      },
+      {
+        "word": "pingwin",
+        "hint": "Pinguin"
+      },
+      {
+        "word": "flaming",
+        "hint": "Flamingo"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Insekten",
+    "description": "Insekten und Krabbeltiere auf Polnisch",
+    "iconName": "ladybug",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pszczoła",
+        "hint": "Biene"
+      },
+      {
+        "word": "motyl",
+        "hint": "Schmetterling"
+      },
+      {
+        "word": "mrówka",
+        "hint": "Ameise"
+      },
+      {
+        "word": "biedronka",
+        "hint": "Marienkäfer"
+      },
+      {
+        "word": "ważka",
+        "hint": "Libelle"
+      },
+      {
+        "word": "komar",
+        "hint": "Mücke"
+      },
+      {
+        "word": "mucha",
+        "hint": "Fliege"
+      },
+      {
+        "word": "pająk",
+        "hint": "Spinne"
+      },
+      {
+        "word": "chrząszcz",
+        "hint": "Käfer"
+      },
+      {
+        "word": "osa",
+        "hint": "Wespe"
+      },
+      {
+        "word": "świerszcz",
+        "hint": "Grille"
+      },
+      {
+        "word": "szarańcza",
+        "hint": "Heuschrecke"
+      },
+      {
+        "word": "gąsienica",
+        "hint": "Raupe"
+      },
+      {
+        "word": "ślimak",
+        "hint": "Schnecke"
+      },
+      {
+        "word": "karaluch",
+        "hint": "Kakerlake/Schabe"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Meerestiere",
+    "description": "Meereslebewesen auf Polnisch",
+    "iconName": "fish",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ośmiornica",
+        "hint": "Krake/Oktopus"
+      },
+      {
+        "word": "żółw morski",
+        "hint": "Meeresschildkröte"
+      },
+      {
+        "word": "krab",
+        "hint": "Krabbe"
+      },
+      {
+        "word": "homar",
+        "hint": "Hummer"
+      },
+      {
+        "word": "krewetka",
+        "hint": "Garnele"
+      },
+      {
+        "word": "rozgwiazda",
+        "hint": "Seestern"
+      },
+      {
+        "word": "konik morski",
+        "hint": "Seepferdchen"
+      },
+      {
+        "word": "płaszczka",
+        "hint": "Rochen"
+      },
+      {
+        "word": "tuńczyk",
+        "hint": "Thunfisch"
+      },
+      {
+        "word": "łosoś",
+        "hint": "Lachs"
+      },
+      {
+        "word": "dorsz",
+        "hint": "Kabeljau"
+      },
+      {
+        "word": "foka",
+        "hint": "Robbe/Seehund"
+      },
+      {
+        "word": "mors",
+        "hint": "Walross"
+      },
+      {
+        "word": "śledź",
+        "hint": "Hering"
+      },
+      {
+        "word": "kalmar",
+        "hint": "Tintenfisch"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Bauernhoftiere",
+    "description": "Nutztiere und Bauernhof auf Polnisch",
+    "iconName": "hare",
+    "color": "#a16207",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "krowa",
+        "hint": "Kuh"
+      },
+      {
+        "word": "świnia",
+        "hint": "Schwein"
+      },
+      {
+        "word": "kura",
+        "hint": "Huhn/Henne"
+      },
+      {
+        "word": "kogut",
+        "hint": "Hahn"
+      },
+      {
+        "word": "owca",
+        "hint": "Schaf"
+      },
+      {
+        "word": "koza",
+        "hint": "Ziege"
+      },
+      {
+        "word": "kaczka",
+        "hint": "Ente"
+      },
+      {
+        "word": "gęś",
+        "hint": "Gans"
+      },
+      {
+        "word": "osioł",
+        "hint": "Esel"
+      },
+      {
+        "word": "źrebak",
+        "hint": "Fohlen"
+      },
+      {
+        "word": "cielak",
+        "hint": "Kalb"
+      },
+      {
+        "word": "baran",
+        "hint": "Widder"
+      },
+      {
+        "word": "stodoła",
+        "hint": "Scheune"
+      },
+      {
+        "word": "traktor",
+        "hint": "Traktor"
+      },
+      {
+        "word": "pastwisko",
+        "hint": "Weide"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Gefühle",
+    "description": "Gefühle und Empfindungen auf Polnisch",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "radość",
+        "hint": "Freude"
+      },
+      {
+        "word": "smutek",
+        "hint": "Traurigkeit"
+      },
+      {
+        "word": "złość",
+        "hint": "Wut/Ärger"
+      },
+      {
+        "word": "nadzieja",
+        "hint": "Hoffnung"
+      },
+      {
+        "word": "wdzięczność",
+        "hint": "Dankbarkeit"
+      },
+      {
+        "word": "tęsknota",
+        "hint": "Sehnsucht"
+      },
+      {
+        "word": "duma",
+        "hint": "Stolz"
+      },
+      {
+        "word": "wstyd",
+        "hint": "Scham"
+      },
+      {
+        "word": "zaskoczenie",
+        "hint": "Überraschung"
+      },
+      {
+        "word": "zaufanie",
+        "hint": "Vertrauen"
+      },
+      {
+        "word": "zazdrość",
+        "hint": "Eifersucht"
+      },
+      {
+        "word": "odwaga",
+        "hint": "Mut"
+      },
+      {
+        "word": "spokój",
+        "hint": "Ruhe/Gelassenheit"
+      },
+      {
+        "word": "ciekawość",
+        "hint": "Neugier"
+      },
+      {
+        "word": "samotność",
+        "hint": "Einsamkeit"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Persönlichkeit",
+    "description": "Charaktereigenschaften auf Polnisch",
+    "iconName": "person",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "odważny",
+        "hint": "mutig"
+      },
+      {
+        "word": "uczciwy",
+        "hint": "ehrlich"
+      },
+      {
+        "word": "cierpliwy",
+        "hint": "geduldig"
+      },
+      {
+        "word": "uprzejmy",
+        "hint": "höflich"
+      },
+      {
+        "word": "ambitny",
+        "hint": "ehrgeizig"
+      },
+      {
+        "word": "wrażliwy",
+        "hint": "empfindsam/sensibel"
+      },
+      {
+        "word": "uparty",
+        "hint": "stur/hartnäckig"
+      },
+      {
+        "word": "życzliwy",
+        "hint": "freundlich/wohlwollend"
+      },
+      {
+        "word": "skromny",
+        "hint": "bescheiden"
+      },
+      {
+        "word": "lojalny",
+        "hint": "loyal/treu"
+      },
+      {
+        "word": "kreatywny",
+        "hint": "kreativ"
+      },
+      {
+        "word": "pracowity",
+        "hint": "fleißig"
+      },
+      {
+        "word": "szczodry",
+        "hint": "großzügig"
+      },
+      {
+        "word": "optymista",
+        "hint": "Optimist"
+      },
+      {
+        "word": "pesymista",
+        "hint": "Pessimist"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Beziehungen",
+    "description": "Beziehungen und Zusammenleben auf Polnisch",
+    "iconName": "heart.circle",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "przyjaciel",
+        "hint": "Freund"
+      },
+      {
+        "word": "sąsiad",
+        "hint": "Nachbar"
+      },
+      {
+        "word": "koleżanka",
+        "hint": "Kollegin"
+      },
+      {
+        "word": "partner",
+        "hint": "Partner/Lebensgefährte"
+      },
+      {
+        "word": "narzeczony",
+        "hint": "Verlobter"
+      },
+      {
+        "word": "małżeństwo",
+        "hint": "Ehe"
+      },
+      {
+        "word": "rozwód",
+        "hint": "Scheidung"
+      },
+      {
+        "word": "zaręczyny",
+        "hint": "Verlobung"
+      },
+      {
+        "word": "ślub",
+        "hint": "Hochzeit"
+      },
+      {
+        "word": "związek",
+        "hint": "Beziehung"
+      },
+      {
+        "word": "randka",
+        "hint": "Date/Verabredung"
+      },
+      {
+        "word": "zaufanie",
+        "hint": "Vertrauen"
+      },
+      {
+        "word": "rozmowa",
+        "hint": "Gespräch"
+      },
+      {
+        "word": "kompromis",
+        "hint": "Kompromiss"
+      },
+      {
+        "word": "wsparcie",
+        "hint": "Unterstützung"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Kommunikation",
+    "description": "Kommunikation und Austausch auf Polnisch",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "rozmowa",
+        "hint": "Gespräch"
+      },
+      {
+        "word": "pytanie",
+        "hint": "Frage"
+      },
+      {
+        "word": "odpowiedź",
+        "hint": "Antwort"
+      },
+      {
+        "word": "dyskusja",
+        "hint": "Diskussion"
+      },
+      {
+        "word": "wymowa",
+        "hint": "Aussprache"
+      },
+      {
+        "word": "przekaz",
+        "hint": "Botschaft/Nachricht"
+      },
+      {
+        "word": "słuchanie",
+        "hint": "Zuhören"
+      },
+      {
+        "word": "tłumaczenie",
+        "hint": "Übersetzung"
+      },
+      {
+        "word": "negocjacje",
+        "hint": "Verhandlungen"
+      },
+      {
+        "word": "prezentacja",
+        "hint": "Präsentation"
+      },
+      {
+        "word": "mowa",
+        "hint": "Rede/Sprache"
+      },
+      {
+        "word": "dowcip",
+        "hint": "Witz"
+      },
+      {
+        "word": "opinia",
+        "hint": "Meinung"
+      },
+      {
+        "word": "komplement",
+        "hint": "Kompliment"
+      },
+      {
+        "word": "przeprosiny",
+        "hint": "Entschuldigung"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gesten",
+    "description": "Gesten und Körpersprache auf Polnisch",
+    "iconName": "hand.raised",
+    "color": "#f59e0b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "uścisk",
+        "hint": "Umarmung"
+      },
+      {
+        "word": "uśmiech",
+        "hint": "Lächeln"
+      },
+      {
+        "word": "skinienie",
+        "hint": "Nicken"
+      },
+      {
+        "word": "machanie",
+        "hint": "Winken"
+      },
+      {
+        "word": "ukłon",
+        "hint": "Verbeugung"
+      },
+      {
+        "word": "klaskanie",
+        "hint": "Klatschen"
+      },
+      {
+        "word": "mruganie",
+        "hint": "Zwinkern/Blinzeln"
+      },
+      {
+        "word": "wzruszenie",
+        "hint": "Achselzucken"
+      },
+      {
+        "word": "pocałunek",
+        "hint": "Kuss"
+      },
+      {
+        "word": "grymas",
+        "hint": "Grimasse"
+      },
+      {
+        "word": "gest",
+        "hint": "Geste"
+      },
+      {
+        "word": "wskazywanie",
+        "hint": "Zeigen/Deuten"
+      },
+      {
+        "word": "powitanie",
+        "hint": "Begrüßung"
+      },
+      {
+        "word": "pożegnanie",
+        "hint": "Verabschiedung"
+      },
+      {
+        "word": "kiwanie",
+        "hint": "Kopfschütteln"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architektur",
+    "description": "Architektur und Bauwerke auf Polnisch",
+    "iconName": "building.2",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "katedra",
+        "hint": "Kathedrale"
+      },
+      {
+        "word": "kolumna",
+        "hint": "Säule"
+      },
+      {
+        "word": "fasada",
+        "hint": "Fassade"
+      },
+      {
+        "word": "kopuła",
+        "hint": "Kuppel"
+      },
+      {
+        "word": "wieża",
+        "hint": "Turm"
+      },
+      {
+        "word": "fundament",
+        "hint": "Fundament"
+      },
+      {
+        "word": "balkon",
+        "hint": "Balkon"
+      },
+      {
+        "word": "taras",
+        "hint": "Terrasse"
+      },
+      {
+        "word": "sklepienie",
+        "hint": "Gewölbe"
+      },
+      {
+        "word": "schody",
+        "hint": "Treppe"
+      },
+      {
+        "word": "arkada",
+        "hint": "Arkade"
+      },
+      {
+        "word": "portal",
+        "hint": "Portal/Eingang"
+      },
+      {
+        "word": "witraż",
+        "hint": "Buntglasfenster"
+      },
+      {
+        "word": "mozaika",
+        "hint": "Mosaik"
+      },
+      {
+        "word": "fronton",
+        "hint": "Giebel"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Bauwesen",
+    "description": "Bauwesen und Baustellen auf Polnisch",
+    "iconName": "hammer",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "budowa",
+        "hint": "Baustelle"
+      },
+      {
+        "word": "cegła",
+        "hint": "Ziegel/Backstein"
+      },
+      {
+        "word": "cement",
+        "hint": "Zement"
+      },
+      {
+        "word": "beton",
+        "hint": "Beton"
+      },
+      {
+        "word": "dźwig",
+        "hint": "Kran"
+      },
+      {
+        "word": "rusztowanie",
+        "hint": "Gerüst"
+      },
+      {
+        "word": "murarz",
+        "hint": "Maurer"
+      },
+      {
+        "word": "dach",
+        "hint": "Dach"
+      },
+      {
+        "word": "tynk",
+        "hint": "Putz/Verputz"
+      },
+      {
+        "word": "izolacja",
+        "hint": "Isolierung"
+      },
+      {
+        "word": "belka",
+        "hint": "Balken"
+      },
+      {
+        "word": "deska",
+        "hint": "Brett"
+      },
+      {
+        "word": "szalowanie",
+        "hint": "Schalung"
+      },
+      {
+        "word": "wykop",
+        "hint": "Aushub/Grube"
+      },
+      {
+        "word": "spawanie",
+        "hint": "Schweißen"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Elektrizität",
+    "description": "Elektrik und Strom auf Polnisch",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "prąd",
+        "hint": "Strom"
+      },
+      {
+        "word": "gniazdko",
+        "hint": "Steckdose"
+      },
+      {
+        "word": "wtyczka",
+        "hint": "Stecker"
+      },
+      {
+        "word": "kabel",
+        "hint": "Kabel"
+      },
+      {
+        "word": "bezpiecznik",
+        "hint": "Sicherung"
+      },
+      {
+        "word": "żarówka",
+        "hint": "Glühbirne"
+      },
+      {
+        "word": "wyłącznik",
+        "hint": "Schalter"
+      },
+      {
+        "word": "napięcie",
+        "hint": "Spannung"
+      },
+      {
+        "word": "przewód",
+        "hint": "Leitung"
+      },
+      {
+        "word": "bateria",
+        "hint": "Batterie"
+      },
+      {
+        "word": "akumulator",
+        "hint": "Akkumulator"
+      },
+      {
+        "word": "generator",
+        "hint": "Generator"
+      },
+      {
+        "word": "transformator",
+        "hint": "Transformator"
+      },
+      {
+        "word": "instalacja",
+        "hint": "Installation/Anlage"
+      },
+      {
+        "word": "oświetlenie",
+        "hint": "Beleuchtung"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Sanitärtechnik",
+    "description": "Sanitärtechnik und Rohrleitungen auf Polnisch",
+    "iconName": "wrench",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "rura",
+        "hint": "Rohr"
+      },
+      {
+        "word": "zawór",
+        "hint": "Ventil"
+      },
+      {
+        "word": "kran",
+        "hint": "Wasserhahn"
+      },
+      {
+        "word": "odpływ",
+        "hint": "Abfluss"
+      },
+      {
+        "word": "syfon",
+        "hint": "Siphon"
+      },
+      {
+        "word": "kanalizacja",
+        "hint": "Kanalisation"
+      },
+      {
+        "word": "pompa",
+        "hint": "Pumpe"
+      },
+      {
+        "word": "uszczelka",
+        "hint": "Dichtung"
+      },
+      {
+        "word": "hydraulik",
+        "hint": "Klempner"
+      },
+      {
+        "word": "bojler",
+        "hint": "Boiler"
+      },
+      {
+        "word": "kaloryfer",
+        "hint": "Heizkörper"
+      },
+      {
+        "word": "filtr",
+        "hint": "Filter"
+      },
+      {
+        "word": "ciśnienie",
+        "hint": "Druck"
+      },
+      {
+        "word": "spłuczka",
+        "hint": "Spülkasten"
+      },
+      {
+        "word": "wyciek",
+        "hint": "Leck/Undichtigkeit"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Gartengeräte",
+    "description": "Gartengeräte und Werkzeuge auf Polnisch",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "grabie",
+        "hint": "Harke/Rechen"
+      },
+      {
+        "word": "łopata",
+        "hint": "Schaufel/Spaten"
+      },
+      {
+        "word": "sekator",
+        "hint": "Gartenschere"
+      },
+      {
+        "word": "kosiarka",
+        "hint": "Rasenmäher"
+      },
+      {
+        "word": "motyka",
+        "hint": "Hacke"
+      },
+      {
+        "word": "taczka",
+        "hint": "Schubkarre"
+      },
+      {
+        "word": "podkaszarka",
+        "hint": "Rasentrimmer"
+      },
+      {
+        "word": "piła",
+        "hint": "Säge"
+      },
+      {
+        "word": "wąż",
+        "hint": "Gartenschlauch"
+      },
+      {
+        "word": "rękawice",
+        "hint": "Gartenhandschuhe"
+      },
+      {
+        "word": "konewka",
+        "hint": "Gießkanne"
+      },
+      {
+        "word": "kosz",
+        "hint": "Gartenkorb"
+      },
+      {
+        "word": "nożyce",
+        "hint": "Heckenschere"
+      },
+      {
+        "word": "widły",
+        "hint": "Mistgabel"
+      },
+      {
+        "word": "zraszacz",
+        "hint": "Rasensprenger"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medizin",
+    "description": "Medizinische Begriffe auf Polnisch",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "diagnoza",
+        "hint": "Diagnose"
+      },
+      {
+        "word": "operacja",
+        "hint": "Operation"
+      },
+      {
+        "word": "recepta",
+        "hint": "Rezept"
+      },
+      {
+        "word": "szczepionka",
+        "hint": "Impfstoff"
+      },
+      {
+        "word": "antybiotyk",
+        "hint": "Antibiotikum"
+      },
+      {
+        "word": "badanie",
+        "hint": "Untersuchung"
+      },
+      {
+        "word": "chirurg",
+        "hint": "Chirurg"
+      },
+      {
+        "word": "pielęgniarka",
+        "hint": "Krankenschwester"
+      },
+      {
+        "word": "ambulans",
+        "hint": "Krankenwagen"
+      },
+      {
+        "word": "szpital",
+        "hint": "Krankenhaus"
+      },
+      {
+        "word": "objaw",
+        "hint": "Symptom"
+      },
+      {
+        "word": "terapia",
+        "hint": "Therapie"
+      },
+      {
+        "word": "zapalenie",
+        "hint": "Entzündung"
+      },
+      {
+        "word": "gorączka",
+        "hint": "Fieber"
+      },
+      {
+        "word": "leczenie",
+        "hint": "Behandlung"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Apotheke",
+    "description": "Apotheke und Medikamente auf Polnisch",
+    "iconName": "pills",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "apteka",
+        "hint": "Apotheke"
+      },
+      {
+        "word": "tabletka",
+        "hint": "Tablette"
+      },
+      {
+        "word": "syrop",
+        "hint": "Sirup/Hustensaft"
+      },
+      {
+        "word": "maść",
+        "hint": "Salbe"
+      },
+      {
+        "word": "krople",
+        "hint": "Tropfen"
+      },
+      {
+        "word": "plaster",
+        "hint": "Pflaster"
+      },
+      {
+        "word": "bandaż",
+        "hint": "Verband"
+      },
+      {
+        "word": "termometr",
+        "hint": "Thermometer"
+      },
+      {
+        "word": "witaminy",
+        "hint": "Vitamine"
+      },
+      {
+        "word": "dawka",
+        "hint": "Dosis"
+      },
+      {
+        "word": "alergia",
+        "hint": "Allergie"
+      },
+      {
+        "word": "kapsułka",
+        "hint": "Kapsel"
+      },
+      {
+        "word": "zastrzyk",
+        "hint": "Spritze/Injektion"
+      },
+      {
+        "word": "farmaceuta",
+        "hint": "Apotheker"
+      },
+      {
+        "word": "ulotka",
+        "hint": "Beipackzettel"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Fitness und Training auf Polnisch",
+    "iconName": "figure.run",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "siłownia",
+        "hint": "Fitnessstudio"
+      },
+      {
+        "word": "trening",
+        "hint": "Training"
+      },
+      {
+        "word": "ćwiczenie",
+        "hint": "Übung"
+      },
+      {
+        "word": "rozgrzewka",
+        "hint": "Aufwärmen"
+      },
+      {
+        "word": "wytrzymałość",
+        "hint": "Ausdauer"
+      },
+      {
+        "word": "mięśnie",
+        "hint": "Muskeln"
+      },
+      {
+        "word": "hantle",
+        "hint": "Hanteln"
+      },
+      {
+        "word": "bieżnia",
+        "hint": "Laufband"
+      },
+      {
+        "word": "rower",
+        "hint": "Fahrrad/Ergometer"
+      },
+      {
+        "word": "przysiady",
+        "hint": "Kniebeugen"
+      },
+      {
+        "word": "pompki",
+        "hint": "Liegestütze"
+      },
+      {
+        "word": "brzuszki",
+        "hint": "Sit-ups"
+      },
+      {
+        "word": "stretching",
+        "hint": "Dehnen"
+      },
+      {
+        "word": "trener",
+        "hint": "Trainer"
+      },
+      {
+        "word": "kondycja",
+        "hint": "Kondition"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Yoga",
+    "description": "Yoga und Meditation auf Polnisch",
+    "iconName": "figure.mind.and.body",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "oddech",
+        "hint": "Atem/Atmung"
+      },
+      {
+        "word": "medytacja",
+        "hint": "Meditation"
+      },
+      {
+        "word": "równowaga",
+        "hint": "Gleichgewicht"
+      },
+      {
+        "word": "elastyczność",
+        "hint": "Flexibilität"
+      },
+      {
+        "word": "relaks",
+        "hint": "Entspannung"
+      },
+      {
+        "word": "mantra",
+        "hint": "Mantra"
+      },
+      {
+        "word": "uważność",
+        "hint": "Achtsamkeit"
+      },
+      {
+        "word": "harmonia",
+        "hint": "Harmonie"
+      },
+      {
+        "word": "energia",
+        "hint": "Energie"
+      },
+      {
+        "word": "pozycja",
+        "hint": "Position/Stellung"
+      },
+      {
+        "word": "mata",
+        "hint": "Yogamatte"
+      },
+      {
+        "word": "skupienie",
+        "hint": "Konzentration"
+      },
+      {
+        "word": "cisza",
+        "hint": "Stille"
+      },
+      {
+        "word": "świadomość",
+        "hint": "Bewusstsein"
+      },
+      {
+        "word": "spokój",
+        "hint": "innere Ruhe"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Psychische Gesundheit",
+    "description": "Psychische Gesundheit auf Polnisch",
+    "iconName": "brain",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "psycholog",
+        "hint": "Psychologe"
+      },
+      {
+        "word": "lęk",
+        "hint": "Angststörung"
+      },
+      {
+        "word": "depresja",
+        "hint": "Depression"
+      },
+      {
+        "word": "stres",
+        "hint": "Stress"
+      },
+      {
+        "word": "emocje",
+        "hint": "Emotionen"
+      },
+      {
+        "word": "samoocena",
+        "hint": "Selbstwertgefühl"
+      },
+      {
+        "word": "uzależnienie",
+        "hint": "Sucht/Abhängigkeit"
+      },
+      {
+        "word": "trauma",
+        "hint": "Trauma"
+      },
+      {
+        "word": "wsparcie",
+        "hint": "Unterstützung"
+      },
+      {
+        "word": "odporność",
+        "hint": "Resilienz"
+      },
+      {
+        "word": "regeneracja",
+        "hint": "Erholung/Regeneration"
+      },
+      {
+        "word": "terapeuta",
+        "hint": "Therapeut"
+      },
+      {
+        "word": "kryzys",
+        "hint": "Krise"
+      },
+      {
+        "word": "wypalenie",
+        "hint": "Burnout"
+      },
+      {
+        "word": "akceptacja",
+        "hint": "Akzeptanz"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Fahrzeuge",
+    "description": "Fahrzeuge und Automobile auf Polnisch",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "samochód",
+        "hint": "Auto"
+      },
+      {
+        "word": "ciężarówka",
+        "hint": "Lastwagen"
+      },
+      {
+        "word": "motocykl",
+        "hint": "Motorrad"
+      },
+      {
+        "word": "skuter",
+        "hint": "Roller"
+      },
+      {
+        "word": "autobus",
+        "hint": "Bus"
+      },
+      {
+        "word": "karetka",
+        "hint": "Krankenwagen"
+      },
+      {
+        "word": "silnik",
+        "hint": "Motor"
+      },
+      {
+        "word": "hamulec",
+        "hint": "Bremse"
+      },
+      {
+        "word": "kierownica",
+        "hint": "Lenkrad"
+      },
+      {
+        "word": "opona",
+        "hint": "Reifen"
+      },
+      {
+        "word": "lusterko",
+        "hint": "Spiegel (Auto)"
+      },
+      {
+        "word": "bagażnik",
+        "hint": "Kofferraum"
+      },
+      {
+        "word": "klakson",
+        "hint": "Hupe"
+      },
+      {
+        "word": "bieg",
+        "hint": "Gang (Getriebe)"
+      },
+      {
+        "word": "paliwo",
+        "hint": "Treibstoff"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Luftfahrt",
+    "description": "Luftfahrt und Flugverkehr auf Polnisch",
+    "iconName": "airplane",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "samolot",
+        "hint": "Flugzeug"
+      },
+      {
+        "word": "lotnisko",
+        "hint": "Flughafen"
+      },
+      {
+        "word": "pilot",
+        "hint": "Pilot"
+      },
+      {
+        "word": "stewardesa",
+        "hint": "Stewardess"
+      },
+      {
+        "word": "lądowanie",
+        "hint": "Landung"
+      },
+      {
+        "word": "start",
+        "hint": "Start/Abflug"
+      },
+      {
+        "word": "turbulencje",
+        "hint": "Turbulenzen"
+      },
+      {
+        "word": "kabina",
+        "hint": "Kabine"
+      },
+      {
+        "word": "pas",
+        "hint": "Sicherheitsgurt"
+      },
+      {
+        "word": "bagaż",
+        "hint": "Gepäck"
+      },
+      {
+        "word": "odprawa",
+        "hint": "Check-in/Abfertigung"
+      },
+      {
+        "word": "bramka",
+        "hint": "Gate/Flugsteig"
+      },
+      {
+        "word": "hala",
+        "hint": "Terminal"
+      },
+      {
+        "word": "kontrola",
+        "hint": "Sicherheitskontrolle"
+      },
+      {
+        "word": "helikopter",
+        "hint": "Hubschrauber"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Schifffahrt",
+    "description": "Schifffahrt und Seeverkehr auf Polnisch",
+    "iconName": "ferry",
+    "color": "#1d4ed8",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "statek",
+        "hint": "Schiff"
+      },
+      {
+        "word": "port",
+        "hint": "Hafen"
+      },
+      {
+        "word": "kapitan",
+        "hint": "Kapitän"
+      },
+      {
+        "word": "marynarz",
+        "hint": "Matrose"
+      },
+      {
+        "word": "łódź",
+        "hint": "Boot"
+      },
+      {
+        "word": "jacht",
+        "hint": "Yacht"
+      },
+      {
+        "word": "prom",
+        "hint": "Fähre"
+      },
+      {
+        "word": "ładunek",
+        "hint": "Fracht/Ladung"
+      },
+      {
+        "word": "kontener",
+        "hint": "Container"
+      },
+      {
+        "word": "kotwica",
+        "hint": "Anker"
+      },
+      {
+        "word": "maszt",
+        "hint": "Mast"
+      },
+      {
+        "word": "pokład",
+        "hint": "Deck"
+      },
+      {
+        "word": "kabina",
+        "hint": "Kabine (Schiff)"
+      },
+      {
+        "word": "cumowanie",
+        "hint": "Anlegen/Festmachen"
+      },
+      {
+        "word": "nawigacja",
+        "hint": "Navigation"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Radfahren",
+    "description": "Radfahren und Fahrrad auf Polnisch",
+    "iconName": "bicycle",
+    "color": "#10b981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "rower",
+        "hint": "Fahrrad"
+      },
+      {
+        "word": "pedał",
+        "hint": "Pedal"
+      },
+      {
+        "word": "łańcuch",
+        "hint": "Kette"
+      },
+      {
+        "word": "siodełko",
+        "hint": "Sattel"
+      },
+      {
+        "word": "kierownica",
+        "hint": "Lenker"
+      },
+      {
+        "word": "hamulec",
+        "hint": "Bremse (Fahrrad)"
+      },
+      {
+        "word": "koło",
+        "hint": "Rad"
+      },
+      {
+        "word": "dętka",
+        "hint": "Schlauch"
+      },
+      {
+        "word": "pompka",
+        "hint": "Luftpumpe"
+      },
+      {
+        "word": "kask",
+        "hint": "Helm"
+      },
+      {
+        "word": "ścieżka",
+        "hint": "Radweg"
+      },
+      {
+        "word": "światło",
+        "hint": "Fahrradlicht"
+      },
+      {
+        "word": "dzwonek",
+        "hint": "Klingel"
+      },
+      {
+        "word": "przerzutka",
+        "hint": "Schaltung"
+      },
+      {
+        "word": "błotnik",
+        "hint": "Schutzblech"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Eisenbahn",
+    "description": "Eisenbahn und Zugverkehr auf Polnisch",
+    "iconName": "tram",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pociąg",
+        "hint": "Zug"
+      },
+      {
+        "word": "dworzec",
+        "hint": "Bahnhof"
+      },
+      {
+        "word": "peron",
+        "hint": "Bahnsteig"
+      },
+      {
+        "word": "wagon",
+        "hint": "Waggon"
+      },
+      {
+        "word": "lokomotywa",
+        "hint": "Lokomotive"
+      },
+      {
+        "word": "rozkład",
+        "hint": "Fahrplan"
+      },
+      {
+        "word": "bilet",
+        "hint": "Fahrkarte"
+      },
+      {
+        "word": "konduktor",
+        "hint": "Schaffner"
+      },
+      {
+        "word": "przesiadka",
+        "hint": "Umsteigen"
+      },
+      {
+        "word": "opóźnienie",
+        "hint": "Verspätung"
+      },
+      {
+        "word": "kuszetka",
+        "hint": "Schlafwagen"
+      },
+      {
+        "word": "przedział",
+        "hint": "Abteil"
+      },
+      {
+        "word": "tory",
+        "hint": "Gleise"
+      },
+      {
+        "word": "kasa",
+        "hint": "Fahrkartenschalter"
+      },
+      {
+        "word": "maszynista",
+        "hint": "Lokführer"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Mathematik",
+    "description": "Mathematische Begriffe auf Polnisch",
+    "iconName": "function",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "równanie",
+        "hint": "Gleichung"
+      },
+      {
+        "word": "ułamek",
+        "hint": "Bruch"
+      },
+      {
+        "word": "procent",
+        "hint": "Prozent"
+      },
+      {
+        "word": "średnia",
+        "hint": "Durchschnitt"
+      },
+      {
+        "word": "dodawanie",
+        "hint": "Addition"
+      },
+      {
+        "word": "odejmowanie",
+        "hint": "Subtraktion"
+      },
+      {
+        "word": "mnożenie",
+        "hint": "Multiplikation"
+      },
+      {
+        "word": "dzielenie",
+        "hint": "Division"
+      },
+      {
+        "word": "trójkąt",
+        "hint": "Dreieck"
+      },
+      {
+        "word": "prostokąt",
+        "hint": "Rechteck"
+      },
+      {
+        "word": "okrąg",
+        "hint": "Kreis"
+      },
+      {
+        "word": "objętość",
+        "hint": "Volumen"
+      },
+      {
+        "word": "algebra",
+        "hint": "Algebra"
+      },
+      {
+        "word": "geometria",
+        "hint": "Geometrie"
+      },
+      {
+        "word": "statystyka",
+        "hint": "Statistik"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Physik",
+    "description": "Physikalische Begriffe auf Polnisch",
+    "iconName": "atom",
+    "color": "#0891b2",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "grawitacja",
+        "hint": "Schwerkraft"
+      },
+      {
+        "word": "prędkość",
+        "hint": "Geschwindigkeit"
+      },
+      {
+        "word": "energia",
+        "hint": "Energie"
+      },
+      {
+        "word": "siła",
+        "hint": "Kraft"
+      },
+      {
+        "word": "ciśnienie",
+        "hint": "Druck"
+      },
+      {
+        "word": "fala",
+        "hint": "Welle"
+      },
+      {
+        "word": "magnes",
+        "hint": "Magnet"
+      },
+      {
+        "word": "próżnia",
+        "hint": "Vakuum"
+      },
+      {
+        "word": "tarcie",
+        "hint": "Reibung"
+      },
+      {
+        "word": "dźwięk",
+        "hint": "Schall"
+      },
+      {
+        "word": "światło",
+        "hint": "Licht"
+      },
+      {
+        "word": "ciepło",
+        "hint": "Wärme"
+      },
+      {
+        "word": "ruch",
+        "hint": "Bewegung"
+      },
+      {
+        "word": "masa",
+        "hint": "Masse"
+      },
+      {
+        "word": "elektryczność",
+        "hint": "Elektrizität"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemie",
+    "description": "Chemische Begriffe auf Polnisch",
+    "iconName": "flask",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "atom",
+        "hint": "Atom"
+      },
+      {
+        "word": "cząsteczka",
+        "hint": "Molekül"
+      },
+      {
+        "word": "pierwiastek",
+        "hint": "Element"
+      },
+      {
+        "word": "reakcja",
+        "hint": "Reaktion"
+      },
+      {
+        "word": "kwas",
+        "hint": "Säure"
+      },
+      {
+        "word": "zasada",
+        "hint": "Base/Lauge"
+      },
+      {
+        "word": "roztwór",
+        "hint": "Lösung"
+      },
+      {
+        "word": "tlen",
+        "hint": "Sauerstoff"
+      },
+      {
+        "word": "wodór",
+        "hint": "Wasserstoff"
+      },
+      {
+        "word": "węgiel",
+        "hint": "Kohlenstoff"
+      },
+      {
+        "word": "laboratorium",
+        "hint": "Labor"
+      },
+      {
+        "word": "probówka",
+        "hint": "Reagenzglas"
+      },
+      {
+        "word": "odczynnik",
+        "hint": "Reagenz"
+      },
+      {
+        "word": "mieszanina",
+        "hint": "Gemisch"
+      },
+      {
+        "word": "katalizator",
+        "hint": "Katalysator"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biologie",
+    "description": "Biologische Begriffe auf Polnisch",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "komórka",
+        "hint": "Zelle"
+      },
+      {
+        "word": "organizm",
+        "hint": "Organismus"
+      },
+      {
+        "word": "ewolucja",
+        "hint": "Evolution"
+      },
+      {
+        "word": "gatunek",
+        "hint": "Art/Spezies"
+      },
+      {
+        "word": "ekosystem",
+        "hint": "Ökosystem"
+      },
+      {
+        "word": "fotosynteza",
+        "hint": "Fotosynthese"
+      },
+      {
+        "word": "bakteria",
+        "hint": "Bakterie"
+      },
+      {
+        "word": "wirus",
+        "hint": "Virus"
+      },
+      {
+        "word": "mikroskop",
+        "hint": "Mikroskop"
+      },
+      {
+        "word": "genetyka",
+        "hint": "Genetik"
+      },
+      {
+        "word": "chromosom",
+        "hint": "Chromosom"
+      },
+      {
+        "word": "tkanka",
+        "hint": "Gewebe"
+      },
+      {
+        "word": "narząd",
+        "hint": "Organ"
+      },
+      {
+        "word": "oddychanie",
+        "hint": "Atmung"
+      },
+      {
+        "word": "metabolizm",
+        "hint": "Stoffwechsel"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Wissenschaft",
+    "description": "Wissenschaft allgemein auf Polnisch",
+    "iconName": "magnifyingglass",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "badanie",
+        "hint": "Forschung"
+      },
+      {
+        "word": "odkrycie",
+        "hint": "Entdeckung"
+      },
+      {
+        "word": "hipoteza",
+        "hint": "Hypothese"
+      },
+      {
+        "word": "teoria",
+        "hint": "Theorie"
+      },
+      {
+        "word": "eksperyment",
+        "hint": "Experiment"
+      },
+      {
+        "word": "wynik",
+        "hint": "Ergebnis"
+      },
+      {
+        "word": "dowód",
+        "hint": "Beweis"
+      },
+      {
+        "word": "dane",
+        "hint": "Daten"
+      },
+      {
+        "word": "wykres",
+        "hint": "Diagramm/Grafik"
+      },
+      {
+        "word": "analiza",
+        "hint": "Analyse"
+      },
+      {
+        "word": "naukowiec",
+        "hint": "Wissenschaftler"
+      },
+      {
+        "word": "wynalazek",
+        "hint": "Erfindung"
+      },
+      {
+        "word": "technologia",
+        "hint": "Technologie"
+      },
+      {
+        "word": "metoda",
+        "hint": "Methode"
+      },
+      {
+        "word": "publikacja",
+        "hint": "Veröffentlichung"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Feste",
+    "description": "Feste und Feiern auf Polnisch",
+    "iconName": "party.popper",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "karnawał",
+        "hint": "Karneval"
+      },
+      {
+        "word": "sylwester",
+        "hint": "Silvester"
+      },
+      {
+        "word": "jarmark",
+        "hint": "Jahrmarkt"
+      },
+      {
+        "word": "festiwal",
+        "hint": "Festival"
+      },
+      {
+        "word": "koncert",
+        "hint": "Konzert"
+      },
+      {
+        "word": "parada",
+        "hint": "Parade/Umzug"
+      },
+      {
+        "word": "fajerwerki",
+        "hint": "Feuerwerk"
+      },
+      {
+        "word": "lampion",
+        "hint": "Lampion"
+      },
+      {
+        "word": "tłum",
+        "hint": "Menschenmenge"
+      },
+      {
+        "word": "zabawa",
+        "hint": "Feier/Spaß"
+      },
+      {
+        "word": "dekoracja",
+        "hint": "Dekoration"
+      },
+      {
+        "word": "nagroda",
+        "hint": "Preis/Auszeichnung"
+      },
+      {
+        "word": "karuzela",
+        "hint": "Karussell"
+      },
+      {
+        "word": "balonik",
+        "hint": "Luftballon"
+      },
+      {
+        "word": "występ",
+        "hint": "Auftritt/Vorführung"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Traditionen",
+    "description": "Traditionen und Bräuche auf Polnisch",
+    "iconName": "book",
+    "color": "#a16207",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "tradycja",
+        "hint": "Tradition"
+      },
+      {
+        "word": "zwyczaj",
+        "hint": "Brauch/Sitte"
+      },
+      {
+        "word": "obrzęd",
+        "hint": "Ritual/Zeremonie"
+      },
+      {
+        "word": "dziedzictwo",
+        "hint": "Erbe/Kulturerbe"
+      },
+      {
+        "word": "legendy",
+        "hint": "Legenden"
+      },
+      {
+        "word": "pieśń",
+        "hint": "Volkslied"
+      },
+      {
+        "word": "strój",
+        "hint": "Tracht"
+      },
+      {
+        "word": "rękodzieło",
+        "hint": "Kunsthandwerk"
+      },
+      {
+        "word": "uroczystość",
+        "hint": "Feierlichkeit"
+      },
+      {
+        "word": "pokolenie",
+        "hint": "Generation"
+      },
+      {
+        "word": "kultura",
+        "hint": "Kultur"
+      },
+      {
+        "word": "ceremonia",
+        "hint": "Zeremonie"
+      },
+      {
+        "word": "opłatek",
+        "hint": "Oblate (Weihnachten)"
+      },
+      {
+        "word": "wigilia",
+        "hint": "Heiligabend"
+      },
+      {
+        "word": "kolęda",
+        "hint": "Weihnachtslied"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Hochzeit",
+    "description": "Hochzeit und Heirat auf Polnisch",
+    "iconName": "heart",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ślub",
+        "hint": "Hochzeit/Trauung"
+      },
+      {
+        "word": "wesele",
+        "hint": "Hochzeitsfeier"
+      },
+      {
+        "word": "panna młoda",
+        "hint": "Braut"
+      },
+      {
+        "word": "pan młody",
+        "hint": "Bräutigam"
+      },
+      {
+        "word": "obrączka",
+        "hint": "Ehering"
+      },
+      {
+        "word": "bukiet",
+        "hint": "Brautstrauß"
+      },
+      {
+        "word": "tort",
+        "hint": "Hochzeitstorte"
+      },
+      {
+        "word": "suknia",
+        "hint": "Brautkleid"
+      },
+      {
+        "word": "garnitur",
+        "hint": "Anzug"
+      },
+      {
+        "word": "drużba",
+        "hint": "Trauzeuge"
+      },
+      {
+        "word": "druhna",
+        "hint": "Brautjungfer"
+      },
+      {
+        "word": "zaproszenie",
+        "hint": "Einladung"
+      },
+      {
+        "word": "kościół",
+        "hint": "Kirche"
+      },
+      {
+        "word": "przysięga",
+        "hint": "Gelübde/Schwur"
+      },
+      {
+        "word": "taniec",
+        "hint": "erster Tanz"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Feiertage",
+    "description": "Feiertage und Urlaub auf Polnisch",
+    "iconName": "calendar",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Boże Narodzenie",
+        "hint": "Weihnachten"
+      },
+      {
+        "word": "Wielkanoc",
+        "hint": "Ostern"
+      },
+      {
+        "word": "wakacje",
+        "hint": "Ferien/Urlaub"
+      },
+      {
+        "word": "urlop",
+        "hint": "Urlaub (Arbeit)"
+      },
+      {
+        "word": "ferie",
+        "hint": "Schulferien"
+      },
+      {
+        "word": "rocznica",
+        "hint": "Jahrestag"
+      },
+      {
+        "word": "urodziny",
+        "hint": "Geburtstag"
+      },
+      {
+        "word": "imieniny",
+        "hint": "Namenstag"
+      },
+      {
+        "word": "majówka",
+        "hint": "Maifeiertage"
+      },
+      {
+        "word": "Triduum",
+        "hint": "Ostertriduum"
+      },
+      {
+        "word": "Zaduszki",
+        "hint": "Allerseelen"
+      },
+      {
+        "word": "Andrzejki",
+        "hint": "Andreasabend"
+      },
+      {
+        "word": "Mikołajki",
+        "hint": "Nikolaustag"
+      },
+      {
+        "word": "Walentynki",
+        "hint": "Valentinstag"
+      },
+      {
+        "word": "Trzech Króli",
+        "hint": "Dreikönigstag"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Feierlichkeiten",
+    "description": "Feierlichkeiten und Anlässe auf Polnisch",
+    "iconName": "gift",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "rocznica",
+        "hint": "Jubiläum"
+      },
+      {
+        "word": "przyjęcie",
+        "hint": "Empfang/Party"
+      },
+      {
+        "word": "prezent",
+        "hint": "Geschenk"
+      },
+      {
+        "word": "toast",
+        "hint": "Toast/Trinkspruch"
+      },
+      {
+        "word": "gratulacje",
+        "hint": "Glückwunsch"
+      },
+      {
+        "word": "życzenia",
+        "hint": "Wünsche"
+      },
+      {
+        "word": "przemowa",
+        "hint": "Ansprache/Rede"
+      },
+      {
+        "word": "bankiet",
+        "hint": "Bankett"
+      },
+      {
+        "word": "bal",
+        "hint": "Ball/Tanzveranstaltung"
+      },
+      {
+        "word": "gala",
+        "hint": "Galaabend"
+      },
+      {
+        "word": "niespodzianka",
+        "hint": "Überraschung"
+      },
+      {
+        "word": "dekoracje",
+        "hint": "Schmuck/Dekorationen"
+      },
+      {
+        "word": "kwiaty",
+        "hint": "Blumen"
+      },
+      {
+        "word": "szampan",
+        "hint": "Champagner"
+      },
+      {
+        "word": "zaproszenie",
+        "hint": "Einladung"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Mode",
+    "description": "Modebegriffe auf Polnisch",
+    "iconName": "tshirt",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "moda",
+        "hint": "Mode"
+      },
+      {
+        "word": "styl",
+        "hint": "Stil"
+      },
+      {
+        "word": "sukienka",
+        "hint": "Kleid"
+      },
+      {
+        "word": "garnitur",
+        "hint": "Anzug"
+      },
+      {
+        "word": "krawat",
+        "hint": "Krawatte"
+      },
+      {
+        "word": "szalik",
+        "hint": "Schal"
+      },
+      {
+        "word": "pasek",
+        "hint": "Gürtel"
+      },
+      {
+        "word": "kapelusz",
+        "hint": "Hut"
+      },
+      {
+        "word": "torebka",
+        "hint": "Handtasche"
+      },
+      {
+        "word": "projektant",
+        "hint": "Designer"
+      },
+      {
+        "word": "wybieg",
+        "hint": "Laufsteg"
+      },
+      {
+        "word": "kolekcja",
+        "hint": "Kollektion"
+      },
+      {
+        "word": "elegancja",
+        "hint": "Eleganz"
+      },
+      {
+        "word": "szpilki",
+        "hint": "Stöckelschuhe"
+      },
+      {
+        "word": "kamizelka",
+        "hint": "Weste"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Textilien",
+    "description": "Stoffe und Textilien auf Polnisch",
+    "iconName": "scissors",
+    "color": "#8b5cf6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "bawełna",
+        "hint": "Baumwolle"
+      },
+      {
+        "word": "jedwab",
+        "hint": "Seide"
+      },
+      {
+        "word": "wełna",
+        "hint": "Wolle"
+      },
+      {
+        "word": "len",
+        "hint": "Leinen"
+      },
+      {
+        "word": "aksamit",
+        "hint": "Samt"
+      },
+      {
+        "word": "satyna",
+        "hint": "Satin"
+      },
+      {
+        "word": "tkanina",
+        "hint": "Stoff/Gewebe"
+      },
+      {
+        "word": "dzianina",
+        "hint": "Strickware"
+      },
+      {
+        "word": "koronka",
+        "hint": "Spitze"
+      },
+      {
+        "word": "zamek",
+        "hint": "Reißverschluss"
+      },
+      {
+        "word": "guzik",
+        "hint": "Knopf"
+      },
+      {
+        "word": "nić",
+        "hint": "Faden"
+      },
+      {
+        "word": "igła",
+        "hint": "Nadel"
+      },
+      {
+        "word": "wzór",
+        "hint": "Muster"
+      },
+      {
+        "word": "haft",
+        "hint": "Stickerei"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Schmuck",
+    "description": "Schmuckstücke auf Polnisch",
+    "iconName": "sparkles",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pierścionek",
+        "hint": "Ring"
+      },
+      {
+        "word": "naszyjnik",
+        "hint": "Halskette"
+      },
+      {
+        "word": "bransoletka",
+        "hint": "Armband"
+      },
+      {
+        "word": "kolczyki",
+        "hint": "Ohrringe"
+      },
+      {
+        "word": "broszka",
+        "hint": "Brosche"
+      },
+      {
+        "word": "wisiorek",
+        "hint": "Anhänger"
+      },
+      {
+        "word": "złoto",
+        "hint": "Gold"
+      },
+      {
+        "word": "srebro",
+        "hint": "Silber"
+      },
+      {
+        "word": "diament",
+        "hint": "Diamant"
+      },
+      {
+        "word": "perła",
+        "hint": "Perle"
+      },
+      {
+        "word": "szmaragd",
+        "hint": "Smaragd"
+      },
+      {
+        "word": "rubin",
+        "hint": "Rubin"
+      },
+      {
+        "word": "szafir",
+        "hint": "Saphir"
+      },
+      {
+        "word": "zegarek",
+        "hint": "Armbanduhr"
+      },
+      {
+        "word": "klejnot",
+        "hint": "Juwel/Edelstein"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Kosmetik",
+    "description": "Kosmetikprodukte auf Polnisch",
+    "iconName": "wand.and.stars",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "krem",
+        "hint": "Creme"
+      },
+      {
+        "word": "szminka",
+        "hint": "Lippenstift"
+      },
+      {
+        "word": "tusz",
+        "hint": "Wimperntusche"
+      },
+      {
+        "word": "puder",
+        "hint": "Puder"
+      },
+      {
+        "word": "perfumy",
+        "hint": "Parfüm"
+      },
+      {
+        "word": "lakier",
+        "hint": "Nagellack"
+      },
+      {
+        "word": "balsam",
+        "hint": "Balsam/Lotion"
+      },
+      {
+        "word": "podkład",
+        "hint": "Foundation"
+      },
+      {
+        "word": "cień",
+        "hint": "Lidschatten"
+      },
+      {
+        "word": "eyeliner",
+        "hint": "Eyeliner"
+      },
+      {
+        "word": "peeling",
+        "hint": "Peeling"
+      },
+      {
+        "word": "serum",
+        "hint": "Serum"
+      },
+      {
+        "word": "maseczka",
+        "hint": "Gesichtsmaske"
+      },
+      {
+        "word": "odżywka",
+        "hint": "Spülung/Conditioner"
+      },
+      {
+        "word": "tonik",
+        "hint": "Gesichtswasser/Toner"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Frisuren",
+    "description": "Frisuren und Haarpflege auf Polnisch",
+    "iconName": "scissors",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "fryzura",
+        "hint": "Frisur"
+      },
+      {
+        "word": "grzywka",
+        "hint": "Pony (Haar)"
+      },
+      {
+        "word": "warkocz",
+        "hint": "Zopf"
+      },
+      {
+        "word": "kucyk",
+        "hint": "Pferdeschwanz"
+      },
+      {
+        "word": "loki",
+        "hint": "Locken"
+      },
+      {
+        "word": "kok",
+        "hint": "Dutt/Haarknoten"
+      },
+      {
+        "word": "farbowanie",
+        "hint": "Färben"
+      },
+      {
+        "word": "strzyżenie",
+        "hint": "Haarschnitt"
+      },
+      {
+        "word": "suszarka",
+        "hint": "Föhn/Haartrockner"
+      },
+      {
+        "word": "prostownica",
+        "hint": "Glätteisen"
+      },
+      {
+        "word": "lokówka",
+        "hint": "Lockenstab"
+      },
+      {
+        "word": "szampon",
+        "hint": "Shampoo"
+      },
+      {
+        "word": "żel",
+        "hint": "Haargel"
+      },
+      {
+        "word": "lakier",
+        "hint": "Haarspray"
+      },
+      {
+        "word": "przedziałek",
+        "hint": "Scheitel"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Umwelt",
+    "description": "Umweltbegriffe auf Polnisch",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "środowisko",
+        "hint": "Umwelt"
+      },
+      {
+        "word": "ekologia",
+        "hint": "Ökologie"
+      },
+      {
+        "word": "zanieczyszczenie",
+        "hint": "Verschmutzung"
+      },
+      {
+        "word": "ochrona",
+        "hint": "Schutz"
+      },
+      {
+        "word": "przyroda",
+        "hint": "Natur"
+      },
+      {
+        "word": "gatunki",
+        "hint": "Arten/Spezies"
+      },
+      {
+        "word": "rezerwat",
+        "hint": "Naturschutzgebiet"
+      },
+      {
+        "word": "ekosystem",
+        "hint": "Ökosystem"
+      },
+      {
+        "word": "bioróżnorodność",
+        "hint": "Biodiversität"
+      },
+      {
+        "word": "emisja",
+        "hint": "Emission"
+      },
+      {
+        "word": "wylesienie",
+        "hint": "Abholzung"
+      },
+      {
+        "word": "susza",
+        "hint": "Dürre"
+      },
+      {
+        "word": "powódź",
+        "hint": "Überschwemmung"
+      },
+      {
+        "word": "odpady",
+        "hint": "Abfall/Müll"
+      },
+      {
+        "word": "filtr",
+        "hint": "Filter"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recycling",
+    "description": "Recycling und Abfallwirtschaft auf Polnisch",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recykling",
+        "hint": "Recycling"
+      },
+      {
+        "word": "segregacja",
+        "hint": "Mülltrennung"
+      },
+      {
+        "word": "pojemnik",
+        "hint": "Behälter/Container"
+      },
+      {
+        "word": "śmieci",
+        "hint": "Müll"
+      },
+      {
+        "word": "kompost",
+        "hint": "Kompost"
+      },
+      {
+        "word": "sortowanie",
+        "hint": "Sortierung"
+      },
+      {
+        "word": "butelka",
+        "hint": "Flasche"
+      },
+      {
+        "word": "opakowanie",
+        "hint": "Verpackung"
+      },
+      {
+        "word": "makulatura",
+        "hint": "Altpapier"
+      },
+      {
+        "word": "złom",
+        "hint": "Schrott/Altmetall"
+      },
+      {
+        "word": "wysypisko",
+        "hint": "Mülldeponie"
+      },
+      {
+        "word": "utylizacja",
+        "hint": "Entsorgung"
+      },
+      {
+        "word": "biodegradacja",
+        "hint": "Bioabbau"
+      },
+      {
+        "word": "surowce",
+        "hint": "Rohstoffe"
+      },
+      {
+        "word": "odzysk",
+        "hint": "Rückgewinnung"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energie",
+    "description": "Energiequellen und -begriffe auf Polnisch",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "energia",
+        "hint": "Energie"
+      },
+      {
+        "word": "elektryczność",
+        "hint": "Elektrizität"
+      },
+      {
+        "word": "elektrownia",
+        "hint": "Kraftwerk"
+      },
+      {
+        "word": "panele",
+        "hint": "Solarpanele"
+      },
+      {
+        "word": "turbina",
+        "hint": "Turbine"
+      },
+      {
+        "word": "wiatrak",
+        "hint": "Windrad"
+      },
+      {
+        "word": "biopaliwo",
+        "hint": "Biokraftstoff"
+      },
+      {
+        "word": "reaktor",
+        "hint": "Reaktor"
+      },
+      {
+        "word": "węgiel",
+        "hint": "Kohle"
+      },
+      {
+        "word": "gaz",
+        "hint": "Gas"
+      },
+      {
+        "word": "ropa",
+        "hint": "Erdöl"
+      },
+      {
+        "word": "akumulator",
+        "hint": "Akku/Batterie"
+      },
+      {
+        "word": "napięcie",
+        "hint": "Spannung"
+      },
+      {
+        "word": "prąd",
+        "hint": "Strom"
+      },
+      {
+        "word": "oszczędność",
+        "hint": "Einsparung"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Klima",
+    "description": "Klimabezogene Begriffe auf Polnisch",
+    "iconName": "thermometer",
+    "color": "#06b6d4",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "klimat",
+        "hint": "Klima"
+      },
+      {
+        "word": "ocieplenie",
+        "hint": "Erwärmung"
+      },
+      {
+        "word": "temperatura",
+        "hint": "Temperatur"
+      },
+      {
+        "word": "atmosfera",
+        "hint": "Atmosphäre"
+      },
+      {
+        "word": "dwutlenek",
+        "hint": "Dioxid"
+      },
+      {
+        "word": "lodowiec",
+        "hint": "Gletscher"
+      },
+      {
+        "word": "topnienie",
+        "hint": "Schmelzen"
+      },
+      {
+        "word": "huragan",
+        "hint": "Hurrikan"
+      },
+      {
+        "word": "tornado",
+        "hint": "Tornado"
+      },
+      {
+        "word": "efekt",
+        "hint": "Effekt"
+      },
+      {
+        "word": "ozon",
+        "hint": "Ozon"
+      },
+      {
+        "word": "prognoza",
+        "hint": "Vorhersage"
+      },
+      {
+        "word": "opady",
+        "hint": "Niederschlag"
+      },
+      {
+        "word": "wilgotność",
+        "hint": "Feuchtigkeit"
+      },
+      {
+        "word": "suchy",
+        "hint": "trocken"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Nachhaltigkeit",
+    "description": "Nachhaltigkeit und grüne Konzepte auf Polnisch",
+    "iconName": "globe.americas",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "zrównoważony",
+        "hint": "nachhaltig"
+      },
+      {
+        "word": "rozwój",
+        "hint": "Entwicklung"
+      },
+      {
+        "word": "odnawialne",
+        "hint": "erneuerbar"
+      },
+      {
+        "word": "ekologiczny",
+        "hint": "ökologisch/umweltfreundlich"
+      },
+      {
+        "word": "organiczny",
+        "hint": "organisch/bio"
+      },
+      {
+        "word": "zasoby",
+        "hint": "Ressourcen"
+      },
+      {
+        "word": "oszczędzanie",
+        "hint": "Sparen/Einsparen"
+      },
+      {
+        "word": "ślad",
+        "hint": "Fußabdruck (ökologisch)"
+      },
+      {
+        "word": "redukcja",
+        "hint": "Reduktion"
+      },
+      {
+        "word": "czysty",
+        "hint": "sauber/rein"
+      },
+      {
+        "word": "naturalny",
+        "hint": "natürlich"
+      },
+      {
+        "word": "inicjatywa",
+        "hint": "Initiative"
+      },
+      {
+        "word": "świadomość",
+        "hint": "Bewusstsein"
+      },
+      {
+        "word": "konsumpcja",
+        "hint": "Konsum/Verbrauch"
+      },
+      {
+        "word": "alternatywa",
+        "hint": "Alternative"
+      }
+    ]
+  }
+]

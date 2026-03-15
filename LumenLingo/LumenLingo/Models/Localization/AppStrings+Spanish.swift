@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "Construye palabras letra por letra a partir de pistas y sugerencias",
         craftAndDiscover: "Crea y Descubre",
         recentActivity: "Actividad Reciente",
+        resetProgress: "Restablecer progreso",
+        resetProgressMessage: "Esto borrará todos tus XP, niveles, rachas, historial de juegos y contenido dominado. Esta acción no se puede deshacer.",
+        progressReset: "El progreso ha sido restablecido",
+        startFreshDescription: "Borra todo tu progreso, XP, rachas e historial de juegos para comenzar tu aprendizaje desde cero.",
 
         // Language Selection
         languages: "Idiomas",
@@ -40,9 +44,11 @@ extension AppStrings {
         iSpeak: "Yo hablo",
         imLearning: "Estoy aprendiendo",
         noLanguagesAvailable: "No hay idiomas disponibles para este origen.",
-        betaLanguagePairs: "Pares de Idiomas Beta",
-        showExperimentalPairs: "Mostrar pares experimentales con contenido limitado",
         confirm: "Confirmar:",
+        done: "Listo",
+        languagesAvailable: "idiomas disponibles",
+        startYourAdventure: "Comienza Tu Aventura",
+        keepLearning: "Sigue Aprendiendo",
 
         // Categories
         back: "Atrás",
@@ -81,6 +87,7 @@ extension AppStrings {
         undo: "Deshacer",
         clear: "Borrar",
         check: "Comprobar",
+        hint: "Pista",
         noWordsAvailable: "No hay palabras disponibles",
 
         // Game Complete
@@ -97,6 +104,7 @@ extension AppStrings {
         correct: "Correcto",
         toReview: "Para Repasar",
         playAgain: "Jugar de Nuevo",
+        nextCategory: "Siguiente categoría",
         backToCategories: "Volver a Categorías",
 
         // Journey
@@ -106,8 +114,14 @@ extension AppStrings {
         firstSteps: "Primeros Pasos",
         gettingStarted: "Empezando",
         dedicatedLearner: "Estudiante Dedicado",
-        wordWarrior: "Guerrero de las Palabras",
+        risingStar: "Estrella en Ascenso",
+        wordWarrior: "Guerrero de Palabras",
+        knowledgeSeeker: "Buscador de Saber",
+        sentenceCrafter: "Artesano de Frases",
+        grammarGuardian: "Guardián Gramatical",
+        vocabularyVirtuoso: "Virtuoso del Vocabulario",
         languageMaster: "Maestro del Idioma",
+        fluencyPioneer: "Pionero de la Fluidez",
         polyglotLegend: "Leyenda Políglota",
         xpRequired: "XP requeridos",
         overview: "Resumen",
@@ -121,7 +135,6 @@ extension AppStrings {
         // Profile
         appearance: "Apariencia",
         sound: "Sonido",
-        beta: "Beta",
         sync: "Sincronizar",
         signOut: "Cerrar Sesión",
         darkLight: "Oscuro/Claro",
@@ -158,17 +171,6 @@ extension AppStrings {
         backgroundAtmospheric: "Sonidos atmosféricos de fondo",
 
         // Beta Languages
-        betaLanguages: "Idiomas Beta",
-        experimentalLanguagePairs: "Pares de idiomas experimentales",
-        experimentalFeatures: "Funciones Experimentales",
-        betaLimitedContent: "Los idiomas beta pueden tener contenido limitado o peculiaridades de traducción ocasionales.",
-        coreLanguages: "Idiomas Principales",
-        alwaysOn: "Siempre activo",
-        active: "Activo",
-        experimentalLanguagesSection: "Idiomas Experimentales",
-        on: "Sí",
-        off: "No",
-
         // Sync
         cloudSync: "Sincronización en la Nube",
         backupRestore: "Respalda y restaura tu progreso",
@@ -240,6 +242,12 @@ extension AppStrings {
         vivid: "Vívido",
         driftSpeed: "Velocidad de Deriva",
         frozen: "Congelado",
+        nebulaDescLagoon: "Nubes etéreas rosa y violeta donde estrellas recién nacidas se encienden entre pilares de polvo cósmico",
+        nebulaDescCelestial: "Un océano turquesa infinito de gas luminoso, resplandeciente con reflejos de luz estelar cian y verde azulado",
+        nebulaDescAndromeda: "Un billón de soles suspendidos al borde de la galaxia, luz ámbar disolviéndose en el espacio índigo",
+        nebulaDescSolarAurora: "Cintas doradas de partículas cargadas que caen por campos magnéticos, pintando el vacío con calidez",
+        nebulaDescSpiralHalo: "Cien mil millones de estrellas en espiral perfecta, su brillo violeta trazando senderos gravitacionales",
+        nebulaDescStarburst: "Un anillo brillante de rápida formación estelar, arcos azul eléctrico y magenta ardiendo con energía radiante",
 
         // Membership
         plansAndPricing: "Planes y Precios",

@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "根据打乱的线索和提示逐字母构建单词",
         craftAndDiscover: "构建与发现",
         recentActivity: "最近活动",
+        resetProgress: "重置进度",
+        resetProgressMessage: "这将清除您所有的经验值、等级、连续记录、游戏历史和已掌握内容。此操作无法撤销。",
+        progressReset: "进度已重置",
+        startFreshDescription: "清除您所有的进度、经验值、连续记录和游戏历史，从头开始您的学习之旅。",
 
         // Language Selection
         languages: "语言",
@@ -40,9 +44,11 @@ extension AppStrings {
         iSpeak: "我会说",
         imLearning: "我正在学习",
         noLanguagesAvailable: "该源语言暂无可用语言。",
-        betaLanguagePairs: "测试版语言对",
-        showExperimentalPairs: "显示内容有限的实验性语言对",
         confirm: "确认：",
+        done: "完成",
+        languagesAvailable: "种语言可用",
+        startYourAdventure: "开启你的冒险",
+        keepLearning: "继续学习",
 
         // Categories
         back: "返回",
@@ -81,6 +87,7 @@ extension AppStrings {
         undo: "撤销",
         clear: "清除",
         check: "检查",
+        hint: "提示",
         noWordsAvailable: "暂无可用单词",
 
         // Game Complete
@@ -97,6 +104,7 @@ extension AppStrings {
         correct: "正确",
         toReview: "待复习",
         playAgain: "再玩一次",
+        nextCategory: "下一个分类",
         backToCategories: "返回分类",
 
         // Journey
@@ -106,8 +114,14 @@ extension AppStrings {
         firstSteps: "初出茅庐",
         gettingStarted: "崭露头角",
         dedicatedLearner: "勤奋学者",
+        risingStar: "新星崛起",
         wordWarrior: "词汇达人",
+        knowledgeSeeker: "知识探索者",
+        sentenceCrafter: "造句工匠",
+        grammarGuardian: "语法守护者",
+        vocabularyVirtuoso: "词汇大师",
         languageMaster: "语言大师",
+        fluencyPioneer: "流利先锋",
         polyglotLegend: "多语传奇",
         xpRequired: "所需 XP",
         overview: "总览",
@@ -121,7 +135,6 @@ extension AppStrings {
         // Profile
         appearance: "外观",
         sound: "声音",
-        beta: "测试版",
         sync: "同步",
         signOut: "退出登录",
         darkLight: "深色/浅色",
@@ -156,18 +169,6 @@ extension AppStrings {
         levelUpFanfares: "升级庆祝和连续奖励",
         ambientAudio: "环境音效",
         backgroundAtmospheric: "背景氛围音效",
-
-        // Beta Languages
-        betaLanguages: "测试版语言",
-        experimentalLanguagePairs: "实验性语言对",
-        experimentalFeatures: "实验性功能",
-        betaLimitedContent: "测试版语言可能内容有限或偶有翻译偏差。",
-        coreLanguages: "核心语言",
-        alwaysOn: "始终开启",
-        active: "已激活",
-        experimentalLanguagesSection: "实验性语言",
-        on: "开",
-        off: "关",
 
         // Sync
         cloudSync: "云同步",
@@ -240,6 +241,12 @@ extension AppStrings {
         vivid: "鲜明",
         driftSpeed: "漂移速度",
         frozen: "冻结",
+        nebulaDescLagoon: "缥缈的粉紫色云雾中，新生的恒星在星际尘柱间燃起光芒",
+        nebulaDescCelestial: "无垠的绿松石色发光气体海洋，闪烁着青色与深碧的星光倒影",
+        nebulaDescAndromeda: "万亿颗太阳悬浮在星系边缘，琥珀色的光芒消融于深邃的靛蓝星空",
+        nebulaDescSolarAurora: "金色的带电粒子丝带穿过磁场倾泻而下，为虚空涂上温暖的色调",
+        nebulaDescSpiralHalo: "千亿颗恒星在完美和谐中旋转，紫色的光芒勾勒出引力的轨迹",
+        nebulaDescStarburst: "一圈灿烂的恒星急速诞生，电蓝与品红的弧光迸发着璀璨能量",
 
         // Membership
         plansAndPricing: "套餐与价格",

@@ -33,8 +33,17 @@ struct LayoutBackgroundView: View {
 
     private var profile: UserProfile? { profiles.first }
 
+    private var debugForcedPreset: NebulaPreset? {
+        guard let raw = ProcessInfo.processInfo.environment["LL_DEBUG_FORCE_NEBULA"] else { return nil }
+        return NebulaPreset(rawValue: raw)
+    }
+
+    private var debugIsolateCosmic: Bool {
+        ProcessInfo.processInfo.environment["LL_DEBUG_ISOLATE_COSMIC"] == "1"
+    }
+
     private var nebulaPreset: NebulaPreset {
-        previewPreset ?? profile?.nebulaPresetEnum ?? .lagoonNebula
+        previewPreset ?? debugForcedPreset ?? profile?.nebulaPresetEnum ?? .lagoonNebula
     }
     private var orbScheme: BreathingOrbScheme {
         previewOrbScheme ?? profile?.orbScheme ?? .barcelonaNights
@@ -43,13 +52,13 @@ struct LayoutBackgroundView: View {
         previewQuantumScene ?? profile?.quantumScene ?? .dubaiCelestialMirage
     }
     private var showOrbs: Bool {
-        profile?.breathingOrbsEnabled ?? true
+        debugIsolateCosmic ? false : (profile?.breathingOrbsEnabled ?? true)
     }
     private var showQuantumFlow: Bool {
-        profile?.quantumFlowEnabled ?? true
+        debugIsolateCosmic ? false : (profile?.quantumFlowEnabled ?? true)
     }
     private var showCosmic: Bool {
-        profile?.nebulaDriftEnabled ?? true
+        debugIsolateCosmic ? true : (profile?.nebulaDriftEnabled ?? true)
     }
     private var orbIntensity: Double {
         profile?.orbIntensity ?? 1.0
@@ -72,6 +81,9 @@ struct LayoutBackgroundView: View {
     private var orbRaveMode: Bool {
         profile?.orbRaveMode ?? false
     }
+    private var quantumRaveMode: Bool {
+        profile?.quantumRaveMode ?? false
+    }
 
     var body: some View {
         let isDark = colorScheme == .dark
@@ -79,33 +91,13 @@ struct LayoutBackgroundView: View {
             ZStack {
                 // Layer 0: Base gradient
                 baseGradient
+                    .animation(.smooth(duration: 0.65), value: isDark)
 
-                // Layer 0b: Accent overlay — purple/orange corners (light only)
-                if !isDark {
-                    LinearGradient(
-                        stops: [
-                            .init(color: Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.2), location: 0),
-                            .init(color: .clear, location: 0.5),
-                            .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.2), location: 1),
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                }
-
-                // Layer 0c: Dynamic shimmer — sunlight on water (light only)
-                if !isDark {
-                    LinearGradient(
-                        stops: [
-                            .init(color: Color.white.opacity(0.12), location: 0),
-                            .init(color: .clear, location: 0.5),
-                            .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.08), location: 1),
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                    .opacity(0.6)
-                }
+                // Light-mode accent overlays (single compositing group)
+                lightAccentOverlays
+                    .opacity(isDark ? 0 : 1)
+                    .animation(.smooth(duration: 0.65), value: isDark)
+                    .allowsHitTesting(false)
 
                 // Layer 1: Breathing orbs (respects user toggle + active state)
                 if showOrbs && isActive {
@@ -115,7 +107,7 @@ struct LayoutBackgroundView: View {
 
                 // Layer 2: Quantum flow — Metal GPU aurora (respects user toggle + active state)
                 if showQuantumFlow && isActive {
-                    MetalQuantumFlowView(scene: quantumScene, intensity: quantumIntensity, speed: quantumSpeed, isDarkMode: isDark)
+                    MetalQuantumFlowView(scene: quantumScene, intensity: quantumIntensity, speed: quantumSpeed, isDarkMode: isDark, raveMode: quantumRaveMode)
                         .opacity(isDark ? 0.85 : 0.7)
                 }
 
@@ -129,42 +121,15 @@ struct LayoutBackgroundView: View {
                     .opacity(isDark ? 0.8 : 0.25)
                 }
 
-                // Layer 4: Center depth vignette (light only — subtle 5% black at edges)
-                if !isDark {
-                    RadialGradient(
-                        colors: [
-                            .clear,
-                            Color.black.opacity(0.05)
-                        ],
-                        center: .center,
-                        startRadius: 0,
-                        endRadius: max(geometry.size.width, geometry.size.height) * 0.7
-                    )
-                }
-
-                // Layer 5: Atmospheric haze — Caribbean humidity (light only)
-                if !isDark {
-                    Color.white.opacity(0.04)
-                        .blendMode(.softLight)
-                        .blur(radius: 0.5)
-                }
-
-                // Layer 6: Vertical depth — brighter sky, grounded bottom (light only)
-                if !isDark {
-                    LinearGradient(
-                        stops: [
-                            .init(color: Color.white.opacity(0.08), location: 0),
-                            .init(color: .clear, location: 0.35),
-                            .init(color: .clear, location: 0.65),
-                            .init(color: Color.black.opacity(0.03), location: 1.0),
-                        ],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                }
+                // Light-mode depth overlays (single compositing group)
+                lightDepthOverlays(size: geometry.size)
+                    .opacity(isDark ? 0 : 1)
+                    .animation(.smooth(duration: 0.65), value: isDark)
+                    .allowsHitTesting(false)
 
                 // Layer 7: Top-level fog/overlay (dark only)
                 topOverlay
+                    .animation(.smooth(duration: 0.65), value: isDark)
             }
             .ignoresSafeArea()
         }
@@ -194,21 +159,75 @@ struct LayoutBackgroundView: View {
     private var topOverlay: some View {
         ZStack {
             // Subtle grain/texture effect (noise approximation)
-            if colorScheme == .dark {
-                Color.black.opacity(0.05)
-                    .blendMode(.overlay)
+            Color.black.opacity(0.05)
+                .blendMode(.overlay)
+                .opacity(colorScheme == .dark ? 1 : 0)
 
-                // Bottom safe area fade
-                LinearGradient(
-                    stops: [
-                        .init(color: .clear, location: 0.85),
-                        .init(color: Color(red: 2/255, green: 1/255, blue: 6/255).opacity(0.3), location: 1.0),
-                    ],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-            }
+            // Bottom safe area fade
+            LinearGradient(
+                stops: [
+                    .init(color: .clear, location: 0.85),
+                    .init(color: Color(red: 2/255, green: 1/255, blue: 6/255).opacity(0.3), location: 1.0),
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .opacity(colorScheme == .dark ? 1 : 0)
         }
+    }
+
+    /// Light-mode accent gradients consolidated into one compositing group
+    private var lightAccentOverlays: some View {
+        ZStack {
+            LinearGradient(
+                stops: [
+                    .init(color: Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.2), location: 0),
+                    .init(color: .clear, location: 0.5),
+                    .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.2), location: 1),
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+
+            LinearGradient(
+                stops: [
+                    .init(color: Color.white.opacity(0.12), location: 0),
+                    .init(color: .clear, location: 0.5),
+                    .init(color: Color(red: 251/255, green: 146/255, blue: 60/255).opacity(0.08), location: 1),
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .opacity(0.6)
+        }
+        .compositingGroup()
+    }
+
+    /// Light-mode depth/haze overlays consolidated into one compositing group
+    private func lightDepthOverlays(size: CGSize) -> some View {
+        ZStack {
+            RadialGradient(
+                colors: [.clear, Color.black.opacity(0.05)],
+                center: .center,
+                startRadius: 0,
+                endRadius: max(size.width, size.height) * 0.7
+            )
+
+            Color.white.opacity(0.04)
+                .blendMode(.softLight)
+
+            LinearGradient(
+                stops: [
+                    .init(color: Color.white.opacity(0.08), location: 0),
+                    .init(color: .clear, location: 0.35),
+                    .init(color: .clear, location: 0.65),
+                    .init(color: Color.black.opacity(0.03), location: 1.0),
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        }
+        .compositingGroup()
     }
 }
 

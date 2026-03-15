@@ -52,15 +52,46 @@ struct SoundSettingsView: View {
                 profile?.achievementSoundsEnabled.toggle()
             }
 
+            Divider()
+                .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
+                .padding(.horizontal, 8)
+
+            // Soundscapes section (replaces simple ambient toggle)
+            SoundscapesSettingsView()
+
+            Divider()
+                .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
+                .padding(.horizontal, 8)
+
+            // Haptics toggle
             standaloneSoundToggle(
-                icon: "waveform",
-                color: .indigo,
-                title: L.ambientAudio,
-                subtitle: L.backgroundAtmospheric,
-                isOn: profile?.ambientSoundsEnabled ?? false
+                icon: "iphone.radiowaves.left.and.right",
+                color: .pink,
+                title: "Haptic Feedback",
+                subtitle: "Vibrations & tactile response",
+                isOn: profile?.hapticsEnabled ?? true
             ) {
-                profile?.ambientSoundsEnabled.toggle()
+                profile?.hapticsEnabled.toggle()
+                HapticsService.shared.syncFromProfile(profile!)
             }
+
+            // Adaptive audio toggle
+            standaloneSoundToggle(
+                icon: "brain.head.profile",
+                color: .teal,
+                title: "Adaptive Audio",
+                subtitle: "Auto-adjusts volume with usage",
+                isOn: profile?.adaptiveAudioEnabled ?? true
+            ) {
+                profile?.adaptiveAudioEnabled.toggle()
+            }
+
+            Divider()
+                .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
+                .padding(.horizontal, 8)
+
+            // Volume sliders section
+            volumeSlidersSection
         }
         .animation(.easeInOut(duration: 0.3), value: profile?.soundEnabled)
     }
@@ -97,6 +128,12 @@ struct SoundSettingsView: View {
                 enabledIcon: "speaker.wave.2.fill",
                 disabledIcon: "speaker.slash.fill"
             ) {
+                HapticsService.shared.toggleSwitch()
+                if profile?.soundEnabled == true {
+                    AudioService.shared.playToggleOff()
+                } else {
+                    AudioService.shared.playToggleOn()
+                }
                 handleMasterToggle()
             }
         }
@@ -118,15 +155,16 @@ struct SoundSettingsView: View {
                 p.uiSoundsEnabled = false
                 p.achievementSoundsEnabled = false
                 p.ambientSoundsEnabled = false
+                AudioService.shared.stopAmbient()
             } else {
-                // Turn everything on except ambient
+                // Turn everything on except ambient/soundscapes
                 p.gamesSoundsEnabled = true
                 p.flashcardsSoundsEnabled = true
                 p.grammarSoundsEnabled = true
                 p.wordBuilderSoundsEnabled = true
                 p.uiSoundsEnabled = true
                 p.achievementSoundsEnabled = true
-                // Ambient stays off by default
+                // Soundscapes stay off by default
             }
         }
     }
@@ -156,6 +194,12 @@ struct SoundSettingsView: View {
                     isOn: profile?.gamesSoundsEnabled ?? true,
                     enabledColor: .green
                 ) {
+                    HapticsService.shared.toggleSwitch()
+                    if profile?.gamesSoundsEnabled == true {
+                        AudioService.shared.playToggleOff()
+                    } else {
+                        AudioService.shared.playToggleOn()
+                    }
                     handleGamesParentToggle()
                 }
             }
@@ -240,10 +284,84 @@ struct SoundSettingsView: View {
             Spacer()
 
             PremiumToggle(isOn: isOn, enabledColor: color) {
+                HapticsService.shared.toggleSwitch()
+                if isOn {
+                    AudioService.shared.playToggleOff()
+                } else {
+                    AudioService.shared.playToggleOn()
+                }
                 withAnimation { action() }
             }
         }
         .padding(.vertical, 4)
+    }
+
+    // MARK: - Volume Sliders
+
+    private var volumeSlidersSection: some View {
+        VStack(spacing: 12) {
+            Text("Volume Controls")
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            volumeSlider(
+                icon: "gamecontroller.fill",
+                color: .green,
+                title: "Game Sounds",
+                value: Binding(
+                    get: { profile?.gameSoundsVolume ?? 1.0 },
+                    set: { profile?.gameSoundsVolume = $0 }
+                )
+            )
+
+            volumeSlider(
+                icon: "hand.tap.fill",
+                color: .cyan,
+                title: "UI Sounds",
+                value: Binding(
+                    get: { profile?.uiSoundsVolume ?? 1.0 },
+                    set: { profile?.uiSoundsVolume = $0 }
+                )
+            )
+
+            volumeSlider(
+                icon: "trophy.fill",
+                color: .yellow,
+                title: "Achievements",
+                value: Binding(
+                    get: { profile?.achievementSoundsVolume ?? 1.0 },
+                    set: { profile?.achievementSoundsVolume = $0 }
+                )
+            )
+        }
+    }
+
+    private func volumeSlider(
+        icon: String,
+        color: Color,
+        title: String,
+        value: Binding<Float>
+    ) -> some View {
+        HStack(spacing: 10) {
+            Image(systemName: icon)
+                .font(.system(size: 13))
+                .foregroundStyle(color)
+                .frame(width: 24)
+
+            Text(title)
+                .font(.system(size: 14, weight: .medium))
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
+                .frame(width: 90, alignment: .leading)
+
+            Slider(value: value, in: 0...1, step: 0.05)
+                .tint(color)
+
+            Text("\(Int(value.wrappedValue * 100))%")
+                .font(.system(size: 12, weight: .medium).monospacedDigit())
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                .frame(width: 36, alignment: .trailing)
+        }
     }
 
     // MARK: - Standalone Toggle Row
@@ -273,6 +391,12 @@ struct SoundSettingsView: View {
             Spacer()
 
             PremiumToggle(isOn: isOn, enabledColor: color) {
+                HapticsService.shared.toggleSwitch()
+                if isOn {
+                    AudioService.shared.playToggleOff()
+                } else {
+                    AudioService.shared.playToggleOn()
+                }
                 withAnimation { action() }
             }
         }

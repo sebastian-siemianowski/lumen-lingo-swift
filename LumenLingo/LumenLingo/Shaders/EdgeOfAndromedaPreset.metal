@@ -83,21 +83,26 @@ fragment float4 andromedaBgFragment(
     float lowerHalo = gaussian2D(uv, float2(0.5, 0.75), float2(0.20, 0.12));
     col = screenBlend(col, violetHalo, (upperHalo + lowerHalo) * 0.06 * u.intensity);
     
-    // ---- Magenta Accents ----
-    float3 magentaAcc = rgb(180, 80, 160);
-    float magGlow1 = radialGlow(uv, float2(0.35, 0.48), 0.08);
-    float magGlow2 = radialGlow(uv, float2(0.62, 0.52), 0.06);
-    magGlow1 = pow(magGlow1, 3.0);
-    magGlow2 = pow(magGlow2, 3.0);
-    col = screenBlend(col, magentaAcc, (magGlow1 + magGlow2) * 0.04 * u.intensity);
+    // ---- Magenta Accents (batched) ----
+    {
+        float3 magentaAcc = rgb(180, 80, 160);
+        float magGlow1 = radialGlow(uv, float2(0.35, 0.48), 0.08);
+        float magGlow2 = radialGlow(uv, float2(0.62, 0.52), 0.06);
+        magGlow1 = magGlow1 * magGlow1 * magGlow1;
+        magGlow2 = magGlow2 * magGlow2 * magGlow2;
+        col = screenBlend(col, magentaAcc, (magGlow1 + magGlow2) * 0.04 * u.intensity);
+    }
     
     // ---- Warped FBM for structural detail ----
-    float3 gasP = float3(centered * float2(3.0, 8.0), t * 0.05);
-    float gasNoise = warpedFBM(gasP, t, 4);
-    float gasDensity = pow(gasNoise * 0.5 + 0.5, 2.5);
-    float3 gasColor = mix(rgb(180, 160, 200), rgb(200, 180, 160), smoothstep(-0.2, 0.4, gasNoise));
+    // Apply disc mask BEFORE FBM: skip expensive noise for off-disc pixels
     float discMask = gaussian(centered.y, 0.04);
-    col = screenBlend(col, gasColor, gasDensity * discMask * 0.08 * u.intensity);
+    if (discMask > 0.01) {
+        float3 gasP = float3(centered * float2(3.0, 8.0), t * 0.05);
+        float gasNoise = warpedFBM(gasP, t, 4);
+        float gasDensity = pow(gasNoise * 0.5 + 0.5, 2.5);
+        float3 gasColor = mix(rgb(180, 160, 200), rgb(200, 180, 160), smoothstep(-0.2, 0.4, gasNoise));
+        col = screenBlend(col, gasColor, gasDensity * discMask * 0.08 * u.intensity);
+    }
     
     float alpha = clamp(length(col) * 5.0 + 0.35, 0.0, 1.0);
     return float4(col, alpha);

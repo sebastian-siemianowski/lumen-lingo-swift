@@ -145,7 +145,13 @@ final class CategoryViewModel {
         if let index = categories.firstIndex(where: { $0.key == categoryKey }) {
             categories[index].isFavorite.toggle()
         }
-        HapticsService.shared.medium()
+        let wasFavorite = !(categories.first(where: { $0.key == categoryKey })?.isFavorite ?? false)
+        HapticsService.shared.favoriteToggle()
+        if wasFavorite {
+            AudioService.shared.playFavoriteRemove()
+        } else {
+            AudioService.shared.playFavoriteAdd()
+        }
     }
 
     func toggleHideCompleted() {

@@ -1,0 +1,7002 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Fruits",
+    "description": "Common fruit names in Chinese",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "苹果",
+        "hint": "Apple"
+      },
+      {
+        "word": "橙子",
+        "hint": "Orange"
+      },
+      {
+        "word": "香蕉",
+        "hint": "Banana"
+      },
+      {
+        "word": "草莓",
+        "hint": "Strawberry"
+      },
+      {
+        "word": "葡萄",
+        "hint": "Grape"
+      },
+      {
+        "word": "柠檬",
+        "hint": "Lemon"
+      },
+      {
+        "word": "西瓜",
+        "hint": "Watermelon"
+      },
+      {
+        "word": "桃子",
+        "hint": "Peach"
+      },
+      {
+        "word": "樱桃",
+        "hint": "Cherry"
+      },
+      {
+        "word": "菠萝",
+        "hint": "Pineapple"
+      },
+      {
+        "word": "梨子",
+        "hint": "Pear"
+      },
+      {
+        "word": "芒果",
+        "hint": "Mango"
+      },
+      {
+        "word": "椰子",
+        "hint": "Coconut"
+      },
+      {
+        "word": "李子",
+        "hint": "Plum"
+      },
+      {
+        "word": "蓝莓",
+        "hint": "Blueberry"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Vegetables",
+    "description": "Common vegetable names in Chinese",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "番茄",
+        "hint": "Tomato"
+      },
+      {
+        "word": "洋葱",
+        "hint": "Onion"
+      },
+      {
+        "word": "生菜",
+        "hint": "Lettuce"
+      },
+      {
+        "word": "胡萝卜",
+        "hint": "Carrot"
+      },
+      {
+        "word": "土豆",
+        "hint": "Potato"
+      },
+      {
+        "word": "大蒜",
+        "hint": "Garlic"
+      },
+      {
+        "word": "黄瓜",
+        "hint": "Cucumber"
+      },
+      {
+        "word": "辣椒",
+        "hint": "Chili pepper"
+      },
+      {
+        "word": "菠菜",
+        "hint": "Spinach"
+      },
+      {
+        "word": "西兰花",
+        "hint": "Broccoli"
+      },
+      {
+        "word": "玉米",
+        "hint": "Corn"
+      },
+      {
+        "word": "豌豆",
+        "hint": "Pea"
+      },
+      {
+        "word": "蘑菇",
+        "hint": "Mushroom"
+      },
+      {
+        "word": "茄子",
+        "hint": "Eggplant"
+      },
+      {
+        "word": "南瓜",
+        "hint": "Pumpkin"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Colors",
+    "description": "Spell out color names in Chinese",
+    "iconName": "paintpalette",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "红色",
+        "hint": "Red"
+      },
+      {
+        "word": "蓝色",
+        "hint": "Blue"
+      },
+      {
+        "word": "绿色",
+        "hint": "Green"
+      },
+      {
+        "word": "黄色",
+        "hint": "Yellow"
+      },
+      {
+        "word": "黑色",
+        "hint": "Black"
+      },
+      {
+        "word": "白色",
+        "hint": "White"
+      },
+      {
+        "word": "橙色",
+        "hint": "Orange"
+      },
+      {
+        "word": "紫色",
+        "hint": "Purple"
+      },
+      {
+        "word": "粉色",
+        "hint": "Pink"
+      },
+      {
+        "word": "棕色",
+        "hint": "Brown"
+      },
+      {
+        "word": "灰色",
+        "hint": "Gray"
+      },
+      {
+        "word": "金色",
+        "hint": "Gold"
+      },
+      {
+        "word": "银色",
+        "hint": "Silver"
+      },
+      {
+        "word": "天蓝色",
+        "hint": "Sky blue"
+      },
+      {
+        "word": "深色",
+        "hint": "Dark"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Family",
+    "description": "Family member names in Chinese",
+    "iconName": "person.3",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "妈妈",
+        "hint": "Mother"
+      },
+      {
+        "word": "爸爸",
+        "hint": "Father"
+      },
+      {
+        "word": "姐姐",
+        "hint": "Older sister"
+      },
+      {
+        "word": "哥哥",
+        "hint": "Older brother"
+      },
+      {
+        "word": "奶奶",
+        "hint": "Grandmother (paternal)"
+      },
+      {
+        "word": "爷爷",
+        "hint": "Grandfather (paternal)"
+      },
+      {
+        "word": "儿子",
+        "hint": "Son"
+      },
+      {
+        "word": "女儿",
+        "hint": "Daughter"
+      },
+      {
+        "word": "叔叔",
+        "hint": "Uncle"
+      },
+      {
+        "word": "阿姨",
+        "hint": "Aunt"
+      },
+      {
+        "word": "弟弟",
+        "hint": "Younger brother"
+      },
+      {
+        "word": "妹妹",
+        "hint": "Younger sister"
+      },
+      {
+        "word": "丈夫",
+        "hint": "Husband"
+      },
+      {
+        "word": "妻子",
+        "hint": "Wife"
+      },
+      {
+        "word": "孩子",
+        "hint": "Child"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Animals",
+    "description": "Common animal names in Chinese",
+    "iconName": "pawprint",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "小狗",
+        "hint": "Dog"
+      },
+      {
+        "word": "小猫",
+        "hint": "Cat"
+      },
+      {
+        "word": "马匹",
+        "hint": "Horse"
+      },
+      {
+        "word": "小鸟",
+        "hint": "Bird"
+      },
+      {
+        "word": "金鱼",
+        "hint": "Goldfish"
+      },
+      {
+        "word": "奶牛",
+        "hint": "Cow"
+      },
+      {
+        "word": "小猪",
+        "hint": "Pig"
+      },
+      {
+        "word": "兔子",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "乌龟",
+        "hint": "Turtle"
+      },
+      {
+        "word": "蝴蝶",
+        "hint": "Butterfly"
+      },
+      {
+        "word": "狮子",
+        "hint": "Lion"
+      },
+      {
+        "word": "大象",
+        "hint": "Elephant"
+      },
+      {
+        "word": "猴子",
+        "hint": "Monkey"
+      },
+      {
+        "word": "熊猫",
+        "hint": "Panda"
+      },
+      {
+        "word": "老鼠",
+        "hint": "Mouse"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Body Parts",
+    "description": "Human body part names in Chinese",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "头发",
+        "hint": "Hair"
+      },
+      {
+        "word": "眼睛",
+        "hint": "Eye"
+      },
+      {
+        "word": "耳朵",
+        "hint": "Ear"
+      },
+      {
+        "word": "鼻子",
+        "hint": "Nose"
+      },
+      {
+        "word": "嘴巴",
+        "hint": "Mouth"
+      },
+      {
+        "word": "手指",
+        "hint": "Finger"
+      },
+      {
+        "word": "肩膀",
+        "hint": "Shoulder"
+      },
+      {
+        "word": "膝盖",
+        "hint": "Knee"
+      },
+      {
+        "word": "脚趾",
+        "hint": "Toe"
+      },
+      {
+        "word": "心脏",
+        "hint": "Heart"
+      },
+      {
+        "word": "胳膊",
+        "hint": "Arm"
+      },
+      {
+        "word": "腿部",
+        "hint": "Leg"
+      },
+      {
+        "word": "牙齿",
+        "hint": "Teeth"
+      },
+      {
+        "word": "脖子",
+        "hint": "Neck"
+      },
+      {
+        "word": "背部",
+        "hint": "Back"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Numbers",
+    "description": "Number words in Chinese characters",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "一百",
+        "hint": "One hundred"
+      },
+      {
+        "word": "二十",
+        "hint": "Twenty"
+      },
+      {
+        "word": "三十",
+        "hint": "Thirty"
+      },
+      {
+        "word": "四十",
+        "hint": "Forty"
+      },
+      {
+        "word": "五十",
+        "hint": "Fifty"
+      },
+      {
+        "word": "六十",
+        "hint": "Sixty"
+      },
+      {
+        "word": "七十",
+        "hint": "Seventy"
+      },
+      {
+        "word": "八十",
+        "hint": "Eighty"
+      },
+      {
+        "word": "九十",
+        "hint": "Ninety"
+      },
+      {
+        "word": "一千",
+        "hint": "One thousand"
+      },
+      {
+        "word": "一万",
+        "hint": "Ten thousand"
+      },
+      {
+        "word": "十五",
+        "hint": "Fifteen"
+      },
+      {
+        "word": "二百",
+        "hint": "Two hundred"
+      },
+      {
+        "word": "三百",
+        "hint": "Three hundred"
+      },
+      {
+        "word": "五百",
+        "hint": "Five hundred"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Greetings",
+    "description": "Common greeting phrases in Chinese",
+    "iconName": "hand.wave",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "你好",
+        "hint": "Hello"
+      },
+      {
+        "word": "谢谢",
+        "hint": "Thank you"
+      },
+      {
+        "word": "再见",
+        "hint": "Goodbye"
+      },
+      {
+        "word": "早上好",
+        "hint": "Good morning"
+      },
+      {
+        "word": "晚上好",
+        "hint": "Good evening"
+      },
+      {
+        "word": "晚安",
+        "hint": "Good night"
+      },
+      {
+        "word": "对不起",
+        "hint": "Sorry"
+      },
+      {
+        "word": "没关系",
+        "hint": "It's okay"
+      },
+      {
+        "word": "请问",
+        "hint": "Excuse me"
+      },
+      {
+        "word": "欢迎",
+        "hint": "Welcome"
+      },
+      {
+        "word": "恭喜",
+        "hint": "Congratulations"
+      },
+      {
+        "word": "加油",
+        "hint": "Keep it up"
+      },
+      {
+        "word": "辛苦了",
+        "hint": "You've worked hard"
+      },
+      {
+        "word": "拜拜",
+        "hint": "Bye bye"
+      },
+      {
+        "word": "新年好",
+        "hint": "Happy New Year"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Food",
+    "description": "Common food items in Chinese",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "米饭",
+        "hint": "Rice"
+      },
+      {
+        "word": "面条",
+        "hint": "Noodles"
+      },
+      {
+        "word": "面包",
+        "hint": "Bread"
+      },
+      {
+        "word": "鸡蛋",
+        "hint": "Egg"
+      },
+      {
+        "word": "牛奶",
+        "hint": "Milk"
+      },
+      {
+        "word": "饺子",
+        "hint": "Dumplings"
+      },
+      {
+        "word": "豆腐",
+        "hint": "Tofu"
+      },
+      {
+        "word": "蛋糕",
+        "hint": "Cake"
+      },
+      {
+        "word": "汉堡",
+        "hint": "Hamburger"
+      },
+      {
+        "word": "比萨",
+        "hint": "Pizza"
+      },
+      {
+        "word": "沙拉",
+        "hint": "Salad"
+      },
+      {
+        "word": "牛肉",
+        "hint": "Beef"
+      },
+      {
+        "word": "猪肉",
+        "hint": "Pork"
+      },
+      {
+        "word": "鸡肉",
+        "hint": "Chicken meat"
+      },
+      {
+        "word": "海鲜",
+        "hint": "Seafood"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Clothing",
+    "description": "Clothing and garment names in Chinese",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "衬衫",
+        "hint": "Shirt"
+      },
+      {
+        "word": "裤子",
+        "hint": "Pants"
+      },
+      {
+        "word": "裙子",
+        "hint": "Skirt"
+      },
+      {
+        "word": "外套",
+        "hint": "Coat"
+      },
+      {
+        "word": "鞋子",
+        "hint": "Shoes"
+      },
+      {
+        "word": "帽子",
+        "hint": "Hat"
+      },
+      {
+        "word": "袜子",
+        "hint": "Socks"
+      },
+      {
+        "word": "围巾",
+        "hint": "Scarf"
+      },
+      {
+        "word": "手套",
+        "hint": "Gloves"
+      },
+      {
+        "word": "毛衣",
+        "hint": "Sweater"
+      },
+      {
+        "word": "背心",
+        "hint": "Vest"
+      },
+      {
+        "word": "睡衣",
+        "hint": "Pajamas"
+      },
+      {
+        "word": "短裤",
+        "hint": "Shorts"
+      },
+      {
+        "word": "领带",
+        "hint": "Tie"
+      },
+      {
+        "word": "雨衣",
+        "hint": "Raincoat"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "House & Rooms",
+    "description": "Rooms and parts of a house in Chinese",
+    "iconName": "house",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "厨房",
+        "hint": "Kitchen"
+      },
+      {
+        "word": "卧室",
+        "hint": "Bedroom"
+      },
+      {
+        "word": "客厅",
+        "hint": "Living room"
+      },
+      {
+        "word": "浴室",
+        "hint": "Bathroom"
+      },
+      {
+        "word": "阳台",
+        "hint": "Balcony"
+      },
+      {
+        "word": "花园",
+        "hint": "Garden"
+      },
+      {
+        "word": "车库",
+        "hint": "Garage"
+      },
+      {
+        "word": "楼梯",
+        "hint": "Stairs"
+      },
+      {
+        "word": "屋顶",
+        "hint": "Roof"
+      },
+      {
+        "word": "地板",
+        "hint": "Floor"
+      },
+      {
+        "word": "窗户",
+        "hint": "Window"
+      },
+      {
+        "word": "门口",
+        "hint": "Doorway"
+      },
+      {
+        "word": "墙壁",
+        "hint": "Wall"
+      },
+      {
+        "word": "天花板",
+        "hint": "Ceiling"
+      },
+      {
+        "word": "书房",
+        "hint": "Study room"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Weather",
+    "description": "Weather-related vocabulary in Chinese",
+    "iconName": "cloud.sun",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "晴天",
+        "hint": "Sunny day"
+      },
+      {
+        "word": "下雨",
+        "hint": "Raining"
+      },
+      {
+        "word": "下雪",
+        "hint": "Snowing"
+      },
+      {
+        "word": "多云",
+        "hint": "Cloudy"
+      },
+      {
+        "word": "大风",
+        "hint": "Strong wind"
+      },
+      {
+        "word": "雷电",
+        "hint": "Thunder and lightning"
+      },
+      {
+        "word": "温度",
+        "hint": "Temperature"
+      },
+      {
+        "word": "冰雹",
+        "hint": "Hail"
+      },
+      {
+        "word": "潮湿",
+        "hint": "Humid"
+      },
+      {
+        "word": "干燥",
+        "hint": "Dry"
+      },
+      {
+        "word": "台风",
+        "hint": "Typhoon"
+      },
+      {
+        "word": "彩虹",
+        "hint": "Rainbow"
+      },
+      {
+        "word": "雾气",
+        "hint": "Fog"
+      },
+      {
+        "word": "暴风雨",
+        "hint": "Storm"
+      },
+      {
+        "word": "微风",
+        "hint": "Breeze"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Professions",
+    "description": "Job and profession names in Chinese",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "医生",
+        "hint": "Doctor"
+      },
+      {
+        "word": "老师",
+        "hint": "Teacher"
+      },
+      {
+        "word": "律师",
+        "hint": "Lawyer"
+      },
+      {
+        "word": "护士",
+        "hint": "Nurse"
+      },
+      {
+        "word": "工程师",
+        "hint": "Engineer"
+      },
+      {
+        "word": "警察",
+        "hint": "Police officer"
+      },
+      {
+        "word": "厨师",
+        "hint": "Chef"
+      },
+      {
+        "word": "司机",
+        "hint": "Driver"
+      },
+      {
+        "word": "记者",
+        "hint": "Journalist"
+      },
+      {
+        "word": "演员",
+        "hint": "Actor"
+      },
+      {
+        "word": "画家",
+        "hint": "Painter"
+      },
+      {
+        "word": "音乐家",
+        "hint": "Musician"
+      },
+      {
+        "word": "科学家",
+        "hint": "Scientist"
+      },
+      {
+        "word": "建筑师",
+        "hint": "Architect"
+      },
+      {
+        "word": "消防员",
+        "hint": "Firefighter"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transport",
+    "description": "Transportation vocabulary in Chinese",
+    "iconName": "car",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "汽车",
+        "hint": "Car"
+      },
+      {
+        "word": "公共汽车",
+        "hint": "Bus"
+      },
+      {
+        "word": "火车",
+        "hint": "Train"
+      },
+      {
+        "word": "飞机",
+        "hint": "Airplane"
+      },
+      {
+        "word": "自行车",
+        "hint": "Bicycle"
+      },
+      {
+        "word": "地铁",
+        "hint": "Subway"
+      },
+      {
+        "word": "出租车",
+        "hint": "Taxi"
+      },
+      {
+        "word": "轮船",
+        "hint": "Ship"
+      },
+      {
+        "word": "摩托车",
+        "hint": "Motorcycle"
+      },
+      {
+        "word": "电动车",
+        "hint": "Electric vehicle"
+      },
+      {
+        "word": "直升机",
+        "hint": "Helicopter"
+      },
+      {
+        "word": "救护车",
+        "hint": "Ambulance"
+      },
+      {
+        "word": "消防车",
+        "hint": "Fire truck"
+      },
+      {
+        "word": "卡车",
+        "hint": "Truck"
+      },
+      {
+        "word": "高铁",
+        "hint": "High-speed rail"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "School",
+    "description": "School and education vocabulary in Chinese",
+    "iconName": "book",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "学校",
+        "hint": "School"
+      },
+      {
+        "word": "教室",
+        "hint": "Classroom"
+      },
+      {
+        "word": "黑板",
+        "hint": "Blackboard"
+      },
+      {
+        "word": "课本",
+        "hint": "Textbook"
+      },
+      {
+        "word": "铅笔",
+        "hint": "Pencil"
+      },
+      {
+        "word": "书包",
+        "hint": "School bag"
+      },
+      {
+        "word": "作业",
+        "hint": "Homework"
+      },
+      {
+        "word": "考试",
+        "hint": "Exam"
+      },
+      {
+        "word": "成绩",
+        "hint": "Grades"
+      },
+      {
+        "word": "同学",
+        "hint": "Classmate"
+      },
+      {
+        "word": "毕业",
+        "hint": "Graduation"
+      },
+      {
+        "word": "图书馆",
+        "hint": "Library"
+      },
+      {
+        "word": "操场",
+        "hint": "Playground"
+      },
+      {
+        "word": "数学",
+        "hint": "Mathematics"
+      },
+      {
+        "word": "历史",
+        "hint": "History"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Kitchen Utensils",
+    "description": "Kitchen tools and utensils in Chinese",
+    "iconName": "frying.pan",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "筷子",
+        "hint": "Chopsticks"
+      },
+      {
+        "word": "勺子",
+        "hint": "Spoon"
+      },
+      {
+        "word": "叉子",
+        "hint": "Fork"
+      },
+      {
+        "word": "盘子",
+        "hint": "Plate"
+      },
+      {
+        "word": "碗筷",
+        "hint": "Bowls and chopsticks"
+      },
+      {
+        "word": "刀具",
+        "hint": "Knife / Cutlery"
+      },
+      {
+        "word": "水壶",
+        "hint": "Kettle"
+      },
+      {
+        "word": "锅子",
+        "hint": "Pot"
+      },
+      {
+        "word": "杯子",
+        "hint": "Cup"
+      },
+      {
+        "word": "烤箱",
+        "hint": "Oven"
+      },
+      {
+        "word": "冰箱",
+        "hint": "Refrigerator"
+      },
+      {
+        "word": "微波炉",
+        "hint": "Microwave"
+      },
+      {
+        "word": "砧板",
+        "hint": "Cutting board"
+      },
+      {
+        "word": "围裙",
+        "hint": "Apron"
+      },
+      {
+        "word": "漏勺",
+        "hint": "Strainer"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Sports",
+    "description": "Sports and athletic activities in Chinese",
+    "iconName": "sportscourt",
+    "color": "#10b981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "足球",
+        "hint": "Soccer / Football"
+      },
+      {
+        "word": "篮球",
+        "hint": "Basketball"
+      },
+      {
+        "word": "网球",
+        "hint": "Tennis"
+      },
+      {
+        "word": "排球",
+        "hint": "Volleyball"
+      },
+      {
+        "word": "游泳",
+        "hint": "Swimming"
+      },
+      {
+        "word": "跑步",
+        "hint": "Running"
+      },
+      {
+        "word": "乒乓球",
+        "hint": "Table tennis"
+      },
+      {
+        "word": "羽毛球",
+        "hint": "Badminton"
+      },
+      {
+        "word": "棒球",
+        "hint": "Baseball"
+      },
+      {
+        "word": "高尔夫",
+        "hint": "Golf"
+      },
+      {
+        "word": "滑冰",
+        "hint": "Ice skating"
+      },
+      {
+        "word": "滑雪",
+        "hint": "Skiing"
+      },
+      {
+        "word": "拳击",
+        "hint": "Boxing"
+      },
+      {
+        "word": "武术",
+        "hint": "Martial arts"
+      },
+      {
+        "word": "体操",
+        "hint": "Gymnastics"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Musical Instruments",
+    "description": "Musical instrument names in Chinese",
+    "iconName": "pianokeys",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "钢琴",
+        "hint": "Piano"
+      },
+      {
+        "word": "吉他",
+        "hint": "Guitar"
+      },
+      {
+        "word": "小提琴",
+        "hint": "Violin"
+      },
+      {
+        "word": "鼓组",
+        "hint": "Drum set"
+      },
+      {
+        "word": "长笛",
+        "hint": "Flute"
+      },
+      {
+        "word": "二胡",
+        "hint": "Erhu (Chinese fiddle)"
+      },
+      {
+        "word": "琵琶",
+        "hint": "Pipa (Chinese lute)"
+      },
+      {
+        "word": "古筝",
+        "hint": "Guzheng (Chinese zither)"
+      },
+      {
+        "word": "萨克斯",
+        "hint": "Saxophone"
+      },
+      {
+        "word": "小号",
+        "hint": "Trumpet"
+      },
+      {
+        "word": "大提琴",
+        "hint": "Cello"
+      },
+      {
+        "word": "竖琴",
+        "hint": "Harp"
+      },
+      {
+        "word": "口琴",
+        "hint": "Harmonica"
+      },
+      {
+        "word": "手风琴",
+        "hint": "Accordion"
+      },
+      {
+        "word": "唢呐",
+        "hint": "Suona (Chinese horn)"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Nature",
+    "description": "Nature and landscape vocabulary in Chinese",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "大山",
+        "hint": "Mountain"
+      },
+      {
+        "word": "河流",
+        "hint": "River"
+      },
+      {
+        "word": "湖泊",
+        "hint": "Lake"
+      },
+      {
+        "word": "海洋",
+        "hint": "Ocean"
+      },
+      {
+        "word": "森林",
+        "hint": "Forest"
+      },
+      {
+        "word": "沙漠",
+        "hint": "Desert"
+      },
+      {
+        "word": "草地",
+        "hint": "Grassland"
+      },
+      {
+        "word": "瀑布",
+        "hint": "Waterfall"
+      },
+      {
+        "word": "火山",
+        "hint": "Volcano"
+      },
+      {
+        "word": "岛屿",
+        "hint": "Island"
+      },
+      {
+        "word": "洞穴",
+        "hint": "Cave"
+      },
+      {
+        "word": "峡谷",
+        "hint": "Canyon"
+      },
+      {
+        "word": "冰川",
+        "hint": "Glacier"
+      },
+      {
+        "word": "珊瑚",
+        "hint": "Coral"
+      },
+      {
+        "word": "树林",
+        "hint": "Woods"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Emotions",
+    "description": "Feelings and emotion words in Chinese",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "开心",
+        "hint": "Happy"
+      },
+      {
+        "word": "难过",
+        "hint": "Sad"
+      },
+      {
+        "word": "生气",
+        "hint": "Angry"
+      },
+      {
+        "word": "害怕",
+        "hint": "Scared"
+      },
+      {
+        "word": "惊讶",
+        "hint": "Surprised"
+      },
+      {
+        "word": "紧张",
+        "hint": "Nervous"
+      },
+      {
+        "word": "骄傲",
+        "hint": "Proud"
+      },
+      {
+        "word": "孤独",
+        "hint": "Lonely"
+      },
+      {
+        "word": "嫉妒",
+        "hint": "Jealous"
+      },
+      {
+        "word": "感动",
+        "hint": "Touched / Moved"
+      },
+      {
+        "word": "失望",
+        "hint": "Disappointed"
+      },
+      {
+        "word": "兴奋",
+        "hint": "Excited"
+      },
+      {
+        "word": "焦虑",
+        "hint": "Anxious"
+      },
+      {
+        "word": "满足",
+        "hint": "Satisfied"
+      },
+      {
+        "word": "尴尬",
+        "hint": "Embarrassed"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technology",
+    "description": "Technology and digital vocabulary in Chinese",
+    "iconName": "desktopcomputer",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "电脑",
+        "hint": "Computer"
+      },
+      {
+        "word": "手机",
+        "hint": "Mobile phone"
+      },
+      {
+        "word": "键盘",
+        "hint": "Keyboard"
+      },
+      {
+        "word": "鼠标",
+        "hint": "Mouse (computer)"
+      },
+      {
+        "word": "屏幕",
+        "hint": "Screen"
+      },
+      {
+        "word": "打印机",
+        "hint": "Printer"
+      },
+      {
+        "word": "耳机",
+        "hint": "Headphones"
+      },
+      {
+        "word": "摄像头",
+        "hint": "Camera / Webcam"
+      },
+      {
+        "word": "密码",
+        "hint": "Password"
+      },
+      {
+        "word": "网络",
+        "hint": "Network / Internet"
+      },
+      {
+        "word": "软件",
+        "hint": "Software"
+      },
+      {
+        "word": "硬件",
+        "hint": "Hardware"
+      },
+      {
+        "word": "数据",
+        "hint": "Data"
+      },
+      {
+        "word": "下载",
+        "hint": "Download"
+      },
+      {
+        "word": "充电器",
+        "hint": "Charger"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Office",
+    "description": "Office supplies and workplace vocabulary in Chinese",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "办公室",
+        "hint": "Office"
+      },
+      {
+        "word": "办公桌",
+        "hint": "Office desk"
+      },
+      {
+        "word": "椅子",
+        "hint": "Chair"
+      },
+      {
+        "word": "文件",
+        "hint": "Document"
+      },
+      {
+        "word": "信封",
+        "hint": "Envelope"
+      },
+      {
+        "word": "订书机",
+        "hint": "Stapler"
+      },
+      {
+        "word": "剪刀",
+        "hint": "Scissors"
+      },
+      {
+        "word": "胶带",
+        "hint": "Tape"
+      },
+      {
+        "word": "回形针",
+        "hint": "Paper clip"
+      },
+      {
+        "word": "日历",
+        "hint": "Calendar"
+      },
+      {
+        "word": "计算器",
+        "hint": "Calculator"
+      },
+      {
+        "word": "会议",
+        "hint": "Meeting"
+      },
+      {
+        "word": "合同",
+        "hint": "Contract"
+      },
+      {
+        "word": "名片",
+        "hint": "Business card"
+      },
+      {
+        "word": "笔记本",
+        "hint": "Notebook"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Health & Medical",
+    "description": "Health and medical vocabulary in Chinese",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "医院",
+        "hint": "Hospital"
+      },
+      {
+        "word": "药房",
+        "hint": "Pharmacy"
+      },
+      {
+        "word": "感冒",
+        "hint": "Cold (illness)"
+      },
+      {
+        "word": "发烧",
+        "hint": "Fever"
+      },
+      {
+        "word": "头疼",
+        "hint": "Headache"
+      },
+      {
+        "word": "咳嗽",
+        "hint": "Cough"
+      },
+      {
+        "word": "过敏",
+        "hint": "Allergy"
+      },
+      {
+        "word": "处方",
+        "hint": "Prescription"
+      },
+      {
+        "word": "手术",
+        "hint": "Surgery"
+      },
+      {
+        "word": "疫苗",
+        "hint": "Vaccine"
+      },
+      {
+        "word": "血压",
+        "hint": "Blood pressure"
+      },
+      {
+        "word": "体检",
+        "hint": "Physical exam"
+      },
+      {
+        "word": "急救",
+        "hint": "First aid"
+      },
+      {
+        "word": "绷带",
+        "hint": "Bandage"
+      },
+      {
+        "word": "药片",
+        "hint": "Pill / Tablet"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Travel",
+    "description": "Travel and tourism vocabulary in Chinese",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "护照",
+        "hint": "Passport"
+      },
+      {
+        "word": "签证",
+        "hint": "Visa"
+      },
+      {
+        "word": "行李",
+        "hint": "Luggage"
+      },
+      {
+        "word": "机票",
+        "hint": "Plane ticket"
+      },
+      {
+        "word": "酒店",
+        "hint": "Hotel"
+      },
+      {
+        "word": "旅游",
+        "hint": "Tourism"
+      },
+      {
+        "word": "景点",
+        "hint": "Scenic spot"
+      },
+      {
+        "word": "地图",
+        "hint": "Map"
+      },
+      {
+        "word": "导游",
+        "hint": "Tour guide"
+      },
+      {
+        "word": "纪念品",
+        "hint": "Souvenir"
+      },
+      {
+        "word": "海关",
+        "hint": "Customs"
+      },
+      {
+        "word": "登机牌",
+        "hint": "Boarding pass"
+      },
+      {
+        "word": "预订",
+        "hint": "Reservation"
+      },
+      {
+        "word": "货币",
+        "hint": "Currency"
+      },
+      {
+        "word": "旅馆",
+        "hint": "Inn / Hostel"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobbies",
+    "description": "Hobbies and leisure activities in Chinese",
+    "iconName": "star",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "阅读",
+        "hint": "Reading"
+      },
+      {
+        "word": "绘画",
+        "hint": "Painting"
+      },
+      {
+        "word": "摄影",
+        "hint": "Photography"
+      },
+      {
+        "word": "烹饪",
+        "hint": "Cooking"
+      },
+      {
+        "word": "钓鱼",
+        "hint": "Fishing"
+      },
+      {
+        "word": "园艺",
+        "hint": "Gardening"
+      },
+      {
+        "word": "下棋",
+        "hint": "Playing chess"
+      },
+      {
+        "word": "集邮",
+        "hint": "Stamp collecting"
+      },
+      {
+        "word": "编织",
+        "hint": "Knitting"
+      },
+      {
+        "word": "登山",
+        "hint": "Mountain climbing"
+      },
+      {
+        "word": "骑马",
+        "hint": "Horse riding"
+      },
+      {
+        "word": "潜水",
+        "hint": "Diving"
+      },
+      {
+        "word": "冲浪",
+        "hint": "Surfing"
+      },
+      {
+        "word": "瑜伽",
+        "hint": "Yoga"
+      },
+      {
+        "word": "书法",
+        "hint": "Calligraphy"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Drinks & Beverages",
+    "description": "Beverage and drink names in Chinese",
+    "iconName": "cup.and.saucer",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "绿茶",
+        "hint": "Green tea"
+      },
+      {
+        "word": "红茶",
+        "hint": "Black tea"
+      },
+      {
+        "word": "咖啡",
+        "hint": "Coffee"
+      },
+      {
+        "word": "果汁",
+        "hint": "Fruit juice"
+      },
+      {
+        "word": "可乐",
+        "hint": "Cola"
+      },
+      {
+        "word": "啤酒",
+        "hint": "Beer"
+      },
+      {
+        "word": "红酒",
+        "hint": "Red wine"
+      },
+      {
+        "word": "豆浆",
+        "hint": "Soy milk"
+      },
+      {
+        "word": "奶茶",
+        "hint": "Milk tea"
+      },
+      {
+        "word": "矿泉水",
+        "hint": "Mineral water"
+      },
+      {
+        "word": "白酒",
+        "hint": "Baijiu (Chinese liquor)"
+      },
+      {
+        "word": "酸奶",
+        "hint": "Yogurt drink"
+      },
+      {
+        "word": "椰汁",
+        "hint": "Coconut juice"
+      },
+      {
+        "word": "柠檬水",
+        "hint": "Lemonade"
+      },
+      {
+        "word": "热巧克力",
+        "hint": "Hot chocolate"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desserts & Sweets",
+    "description": "Dessert and sweet treat names in Chinese",
+    "iconName": "birthday.cake",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "月饼",
+        "hint": "Mooncake"
+      },
+      {
+        "word": "汤圆",
+        "hint": "Glutinous rice balls"
+      },
+      {
+        "word": "冰淇淋",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "巧克力",
+        "hint": "Chocolate"
+      },
+      {
+        "word": "饼干",
+        "hint": "Cookie / Biscuit"
+      },
+      {
+        "word": "布丁",
+        "hint": "Pudding"
+      },
+      {
+        "word": "糖果",
+        "hint": "Candy"
+      },
+      {
+        "word": "果冻",
+        "hint": "Jelly"
+      },
+      {
+        "word": "蜂蜜",
+        "hint": "Honey"
+      },
+      {
+        "word": "红豆沙",
+        "hint": "Red bean paste"
+      },
+      {
+        "word": "甜甜圈",
+        "hint": "Donut"
+      },
+      {
+        "word": "麻薯",
+        "hint": "Mochi"
+      },
+      {
+        "word": "蛋挞",
+        "hint": "Egg tart"
+      },
+      {
+        "word": "绿豆糕",
+        "hint": "Mung bean cake"
+      },
+      {
+        "word": "杏仁饼",
+        "hint": "Almond cookie"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Furniture",
+    "description": "Furniture and home furnishing names in Chinese",
+    "iconName": "sofa",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "沙发",
+        "hint": "Sofa"
+      },
+      {
+        "word": "书架",
+        "hint": "Bookshelf"
+      },
+      {
+        "word": "衣柜",
+        "hint": "Wardrobe"
+      },
+      {
+        "word": "床铺",
+        "hint": "Bed"
+      },
+      {
+        "word": "桌子",
+        "hint": "Table"
+      },
+      {
+        "word": "抽屉",
+        "hint": "Drawer"
+      },
+      {
+        "word": "台灯",
+        "hint": "Desk lamp"
+      },
+      {
+        "word": "窗帘",
+        "hint": "Curtain"
+      },
+      {
+        "word": "地毯",
+        "hint": "Carpet"
+      },
+      {
+        "word": "枕头",
+        "hint": "Pillow"
+      },
+      {
+        "word": "被子",
+        "hint": "Quilt / Blanket"
+      },
+      {
+        "word": "镜子",
+        "hint": "Mirror"
+      },
+      {
+        "word": "花瓶",
+        "hint": "Vase"
+      },
+      {
+        "word": "相框",
+        "hint": "Picture frame"
+      },
+      {
+        "word": "梳妆台",
+        "hint": "Vanity / Dressing table"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Tools",
+    "description": "Common tools and hardware in Chinese",
+    "iconName": "wrench",
+    "color": "#71717a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "锤子",
+        "hint": "Hammer"
+      },
+      {
+        "word": "螺丝刀",
+        "hint": "Screwdriver"
+      },
+      {
+        "word": "扳手",
+        "hint": "Wrench"
+      },
+      {
+        "word": "钳子",
+        "hint": "Pliers"
+      },
+      {
+        "word": "电钻",
+        "hint": "Electric drill"
+      },
+      {
+        "word": "锯子",
+        "hint": "Saw"
+      },
+      {
+        "word": "卷尺",
+        "hint": "Tape measure"
+      },
+      {
+        "word": "螺丝",
+        "hint": "Screw"
+      },
+      {
+        "word": "钉子",
+        "hint": "Nail"
+      },
+      {
+        "word": "胶水",
+        "hint": "Glue"
+      },
+      {
+        "word": "油漆",
+        "hint": "Paint"
+      },
+      {
+        "word": "刷子",
+        "hint": "Brush"
+      },
+      {
+        "word": "梯子",
+        "hint": "Ladder"
+      },
+      {
+        "word": "铲子",
+        "hint": "Shovel"
+      },
+      {
+        "word": "水管",
+        "hint": "Water pipe"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materials",
+    "description": "Common materials and substances in Chinese",
+    "iconName": "cube",
+    "color": "#57534e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "木头",
+        "hint": "Wood"
+      },
+      {
+        "word": "金属",
+        "hint": "Metal"
+      },
+      {
+        "word": "塑料",
+        "hint": "Plastic"
+      },
+      {
+        "word": "玻璃",
+        "hint": "Glass"
+      },
+      {
+        "word": "橡胶",
+        "hint": "Rubber"
+      },
+      {
+        "word": "皮革",
+        "hint": "Leather"
+      },
+      {
+        "word": "棉花",
+        "hint": "Cotton"
+      },
+      {
+        "word": "丝绸",
+        "hint": "Silk"
+      },
+      {
+        "word": "石头",
+        "hint": "Stone"
+      },
+      {
+        "word": "水泥",
+        "hint": "Cement"
+      },
+      {
+        "word": "钢铁",
+        "hint": "Steel"
+      },
+      {
+        "word": "黄铜",
+        "hint": "Brass"
+      },
+      {
+        "word": "陶瓷",
+        "hint": "Ceramic"
+      },
+      {
+        "word": "竹子",
+        "hint": "Bamboo"
+      },
+      {
+        "word": "大理石",
+        "hint": "Marble"
+      }
+    ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Daily Routine",
+    "description": "Everyday activities and routines in Chinese",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "起床",
+        "hint": "Wake up / Get up"
+      },
+      {
+        "word": "刷牙",
+        "hint": "Brush teeth"
+      },
+      {
+        "word": "洗脸",
+        "hint": "Wash face"
+      },
+      {
+        "word": "早餐",
+        "hint": "Breakfast"
+      },
+      {
+        "word": "上班",
+        "hint": "Go to work"
+      },
+      {
+        "word": "午饭",
+        "hint": "Lunch"
+      },
+      {
+        "word": "下班",
+        "hint": "Get off work"
+      },
+      {
+        "word": "做饭",
+        "hint": "Cook a meal"
+      },
+      {
+        "word": "洗澡",
+        "hint": "Take a shower"
+      },
+      {
+        "word": "睡觉",
+        "hint": "Go to sleep"
+      },
+      {
+        "word": "散步",
+        "hint": "Take a walk"
+      },
+      {
+        "word": "锻炼",
+        "hint": "Exercise"
+      },
+      {
+        "word": "休息",
+        "hint": "Rest / Take a break"
+      },
+      {
+        "word": "打扫",
+        "hint": "Clean up"
+      },
+      {
+        "word": "晚饭",
+        "hint": "Dinner"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Shopping",
+    "description": "Shopping vocabulary in Chinese",
+    "iconName": "cart",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "商店",
+        "hint": "Shop / Store"
+      },
+      {
+        "word": "价格",
+        "hint": "Price"
+      },
+      {
+        "word": "便宜",
+        "hint": "Cheap / Inexpensive"
+      },
+      {
+        "word": "打折",
+        "hint": "Discount / On sale"
+      },
+      {
+        "word": "收银台",
+        "hint": "Cashier / Checkout"
+      },
+      {
+        "word": "购物袋",
+        "hint": "Shopping bag"
+      },
+      {
+        "word": "试衣间",
+        "hint": "Fitting room"
+      },
+      {
+        "word": "超市",
+        "hint": "Supermarket"
+      },
+      {
+        "word": "付款",
+        "hint": "Pay / Make payment"
+      },
+      {
+        "word": "找零",
+        "hint": "Give change"
+      },
+      {
+        "word": "顾客",
+        "hint": "Customer"
+      },
+      {
+        "word": "售货员",
+        "hint": "Sales clerk"
+      },
+      {
+        "word": "购物车",
+        "hint": "Shopping cart"
+      },
+      {
+        "word": "收据",
+        "hint": "Receipt"
+      },
+      {
+        "word": "退货",
+        "hint": "Return goods"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restaurant",
+    "description": "Dining out vocabulary in Chinese",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "菜单",
+        "hint": "Menu"
+      },
+      {
+        "word": "点菜",
+        "hint": "Order food"
+      },
+      {
+        "word": "服务员",
+        "hint": "Waiter / Waitress"
+      },
+      {
+        "word": "筷子",
+        "hint": "Chopsticks"
+      },
+      {
+        "word": "碗",
+        "hint": "Bowl"
+      },
+      {
+        "word": "盘子",
+        "hint": "Plate / Dish"
+      },
+      {
+        "word": "勺子",
+        "hint": "Spoon"
+      },
+      {
+        "word": "账单",
+        "hint": "Bill / Check"
+      },
+      {
+        "word": "小费",
+        "hint": "Tip / Gratuity"
+      },
+      {
+        "word": "预订",
+        "hint": "Reservation"
+      },
+      {
+        "word": "外卖",
+        "hint": "Takeout / Delivery"
+      },
+      {
+        "word": "厨师",
+        "hint": "Chef / Cook"
+      },
+      {
+        "word": "座位",
+        "hint": "Seat"
+      },
+      {
+        "word": "饮料",
+        "hint": "Beverage / Drink"
+      },
+      {
+        "word": "甜点",
+        "hint": "Dessert"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Garden & Plants",
+    "description": "Garden and plant vocabulary in Chinese",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "花园",
+        "hint": "Garden"
+      },
+      {
+        "word": "种子",
+        "hint": "Seed"
+      },
+      {
+        "word": "泥土",
+        "hint": "Soil / Earth"
+      },
+      {
+        "word": "浇水",
+        "hint": "Water (plants)"
+      },
+      {
+        "word": "花盆",
+        "hint": "Flower pot"
+      },
+      {
+        "word": "草坪",
+        "hint": "Lawn"
+      },
+      {
+        "word": "肥料",
+        "hint": "Fertilizer"
+      },
+      {
+        "word": "修剪",
+        "hint": "Prune / Trim"
+      },
+      {
+        "word": "根",
+        "hint": "Root"
+      },
+      {
+        "word": "花瓣",
+        "hint": "Petal"
+      },
+      {
+        "word": "树枝",
+        "hint": "Branch"
+      },
+      {
+        "word": "阳光",
+        "hint": "Sunlight"
+      },
+      {
+        "word": "杂草",
+        "hint": "Weed"
+      },
+      {
+        "word": "花蕾",
+        "hint": "Bud (flower)"
+      },
+      {
+        "word": "篱笆",
+        "hint": "Fence / Hedge"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Bathroom",
+    "description": "Bathroom items and actions in Chinese",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "毛巾",
+        "hint": "Towel"
+      },
+      {
+        "word": "牙刷",
+        "hint": "Toothbrush"
+      },
+      {
+        "word": "牙膏",
+        "hint": "Toothpaste"
+      },
+      {
+        "word": "肥皂",
+        "hint": "Soap"
+      },
+      {
+        "word": "镜子",
+        "hint": "Mirror"
+      },
+      {
+        "word": "浴缸",
+        "hint": "Bathtub"
+      },
+      {
+        "word": "淋浴",
+        "hint": "Shower"
+      },
+      {
+        "word": "马桶",
+        "hint": "Toilet"
+      },
+      {
+        "word": "水龙头",
+        "hint": "Faucet / Tap"
+      },
+      {
+        "word": "洗手液",
+        "hint": "Hand soap / Hand wash"
+      },
+      {
+        "word": "吹风机",
+        "hint": "Hair dryer"
+      },
+      {
+        "word": "梳子",
+        "hint": "Comb"
+      },
+      {
+        "word": "浴帘",
+        "hint": "Shower curtain"
+      },
+      {
+        "word": "洗衣机",
+        "hint": "Washing machine"
+      },
+      {
+        "word": "地漏",
+        "hint": "Floor drain"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Cinema & Film",
+    "description": "Movie and cinema vocabulary in Chinese",
+    "iconName": "film",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "电影",
+        "hint": "Movie / Film"
+      },
+      {
+        "word": "导演",
+        "hint": "Director"
+      },
+      {
+        "word": "演员",
+        "hint": "Actor / Actress"
+      },
+      {
+        "word": "剧本",
+        "hint": "Script / Screenplay"
+      },
+      {
+        "word": "字幕",
+        "hint": "Subtitles"
+      },
+      {
+        "word": "荧幕",
+        "hint": "Screen"
+      },
+      {
+        "word": "票房",
+        "hint": "Box office"
+      },
+      {
+        "word": "首映",
+        "hint": "Premiere"
+      },
+      {
+        "word": "纪录片",
+        "hint": "Documentary"
+      },
+      {
+        "word": "喜剧",
+        "hint": "Comedy"
+      },
+      {
+        "word": "悲剧",
+        "hint": "Tragedy"
+      },
+      {
+        "word": "动画片",
+        "hint": "Animated film / Cartoon"
+      },
+      {
+        "word": "影院",
+        "hint": "Cinema / Movie theater"
+      },
+      {
+        "word": "镜头",
+        "hint": "Camera shot / Lens"
+      },
+      {
+        "word": "配乐",
+        "hint": "Film score / Soundtrack"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Art & Drawing",
+    "description": "Art and visual arts vocabulary in Chinese",
+    "iconName": "paintbrush",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "绘画",
+        "hint": "Painting / Drawing"
+      },
+      {
+        "word": "画家",
+        "hint": "Painter / Artist"
+      },
+      {
+        "word": "画笔",
+        "hint": "Paintbrush"
+      },
+      {
+        "word": "颜料",
+        "hint": "Paint / Pigment"
+      },
+      {
+        "word": "画布",
+        "hint": "Canvas"
+      },
+      {
+        "word": "素描",
+        "hint": "Sketch / Drawing"
+      },
+      {
+        "word": "雕塑",
+        "hint": "Sculpture"
+      },
+      {
+        "word": "展览",
+        "hint": "Exhibition"
+      },
+      {
+        "word": "美术馆",
+        "hint": "Art gallery / Museum"
+      },
+      {
+        "word": "水彩",
+        "hint": "Watercolor"
+      },
+      {
+        "word": "油画",
+        "hint": "Oil painting"
+      },
+      {
+        "word": "书法",
+        "hint": "Calligraphy"
+      },
+      {
+        "word": "陶瓷",
+        "hint": "Ceramics / Pottery"
+      },
+      {
+        "word": "版画",
+        "hint": "Print / Woodcut"
+      },
+      {
+        "word": "肖像",
+        "hint": "Portrait"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Dance",
+    "description": "Dance styles and vocabulary in Chinese",
+    "iconName": "figure.dance",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "舞蹈",
+        "hint": "Dance"
+      },
+      {
+        "word": "芭蕾",
+        "hint": "Ballet"
+      },
+      {
+        "word": "舞台",
+        "hint": "Stage"
+      },
+      {
+        "word": "舞者",
+        "hint": "Dancer"
+      },
+      {
+        "word": "节奏",
+        "hint": "Rhythm"
+      },
+      {
+        "word": "编舞",
+        "hint": "Choreography"
+      },
+      {
+        "word": "排练",
+        "hint": "Rehearsal"
+      },
+      {
+        "word": "舞步",
+        "hint": "Dance step"
+      },
+      {
+        "word": "旋转",
+        "hint": "Spin / Turn"
+      },
+      {
+        "word": "探戈",
+        "hint": "Tango"
+      },
+      {
+        "word": "华尔兹",
+        "hint": "Waltz"
+      },
+      {
+        "word": "民族舞",
+        "hint": "Folk dance"
+      },
+      {
+        "word": "街舞",
+        "hint": "Street dance / Hip-hop"
+      },
+      {
+        "word": "表演",
+        "hint": "Performance"
+      },
+      {
+        "word": "舞伴",
+        "hint": "Dance partner"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Photography",
+    "description": "Photography vocabulary in Chinese",
+    "iconName": "camera",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "摄影",
+        "hint": "Photography"
+      },
+      {
+        "word": "相机",
+        "hint": "Camera"
+      },
+      {
+        "word": "照片",
+        "hint": "Photo / Picture"
+      },
+      {
+        "word": "快门",
+        "hint": "Shutter"
+      },
+      {
+        "word": "光圈",
+        "hint": "Aperture"
+      },
+      {
+        "word": "曝光",
+        "hint": "Exposure"
+      },
+      {
+        "word": "对焦",
+        "hint": "Focus"
+      },
+      {
+        "word": "闪光灯",
+        "hint": "Flash (light)"
+      },
+      {
+        "word": "三脚架",
+        "hint": "Tripod"
+      },
+      {
+        "word": "自拍",
+        "hint": "Selfie"
+      },
+      {
+        "word": "风景照",
+        "hint": "Landscape photo"
+      },
+      {
+        "word": "人像",
+        "hint": "Portrait (photo)"
+      },
+      {
+        "word": "滤镜",
+        "hint": "Filter"
+      },
+      {
+        "word": "像素",
+        "hint": "Pixel"
+      },
+      {
+        "word": "修图",
+        "hint": "Photo editing / Retouching"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Crafts & Handwork",
+    "description": "Handicraft vocabulary in Chinese",
+    "iconName": "scissors",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "手工",
+        "hint": "Handicraft / Handmade"
+      },
+      {
+        "word": "针线",
+        "hint": "Needle and thread"
+      },
+      {
+        "word": "编织",
+        "hint": "Knitting / Weaving"
+      },
+      {
+        "word": "刺绣",
+        "hint": "Embroidery"
+      },
+      {
+        "word": "剪纸",
+        "hint": "Paper-cutting"
+      },
+      {
+        "word": "折纸",
+        "hint": "Origami / Paper folding"
+      },
+      {
+        "word": "缝纫",
+        "hint": "Sewing"
+      },
+      {
+        "word": "串珠",
+        "hint": "Beading"
+      },
+      {
+        "word": "粘土",
+        "hint": "Clay"
+      },
+      {
+        "word": "木工",
+        "hint": "Woodworking"
+      },
+      {
+        "word": "拼贴",
+        "hint": "Collage"
+      },
+      {
+        "word": "染色",
+        "hint": "Dyeing"
+      },
+      {
+        "word": "蜡烛",
+        "hint": "Candle (making)"
+      },
+      {
+        "word": "模具",
+        "hint": "Mold / Template"
+      },
+      {
+        "word": "装饰",
+        "hint": "Decoration / Ornament"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geography",
+    "description": "Geography and landform vocabulary in Chinese",
+    "iconName": "globe.americas",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "大陆",
+        "hint": "Continent"
+      },
+      {
+        "word": "半岛",
+        "hint": "Peninsula"
+      },
+      {
+        "word": "沙漠",
+        "hint": "Desert"
+      },
+      {
+        "word": "平原",
+        "hint": "Plain / Flatland"
+      },
+      {
+        "word": "高原",
+        "hint": "Plateau"
+      },
+      {
+        "word": "盆地",
+        "hint": "Basin"
+      },
+      {
+        "word": "岛屿",
+        "hint": "Island"
+      },
+      {
+        "word": "火山",
+        "hint": "Volcano"
+      },
+      {
+        "word": "峡谷",
+        "hint": "Canyon / Gorge"
+      },
+      {
+        "word": "河流",
+        "hint": "River"
+      },
+      {
+        "word": "湖泊",
+        "hint": "Lake"
+      },
+      {
+        "word": "瀑布",
+        "hint": "Waterfall"
+      },
+      {
+        "word": "冰川",
+        "hint": "Glacier"
+      },
+      {
+        "word": "赤道",
+        "hint": "Equator"
+      },
+      {
+        "word": "海峡",
+        "hint": "Strait"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomy",
+    "description": "Space and astronomy vocabulary in Chinese",
+    "iconName": "star",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "星球",
+        "hint": "Planet"
+      },
+      {
+        "word": "太阳",
+        "hint": "Sun"
+      },
+      {
+        "word": "月亮",
+        "hint": "Moon"
+      },
+      {
+        "word": "星座",
+        "hint": "Constellation"
+      },
+      {
+        "word": "银河",
+        "hint": "Milky Way / Galaxy"
+      },
+      {
+        "word": "黑洞",
+        "hint": "Black hole"
+      },
+      {
+        "word": "卫星",
+        "hint": "Satellite"
+      },
+      {
+        "word": "彗星",
+        "hint": "Comet"
+      },
+      {
+        "word": "流星",
+        "hint": "Meteor / Shooting star"
+      },
+      {
+        "word": "宇宙",
+        "hint": "Universe / Cosmos"
+      },
+      {
+        "word": "轨道",
+        "hint": "Orbit"
+      },
+      {
+        "word": "望远镜",
+        "hint": "Telescope"
+      },
+      {
+        "word": "太空",
+        "hint": "Outer space"
+      },
+      {
+        "word": "日食",
+        "hint": "Solar eclipse"
+      },
+      {
+        "word": "星云",
+        "hint": "Nebula"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean & Sea",
+    "description": "Ocean and marine vocabulary in Chinese",
+    "iconName": "water.waves",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "海洋",
+        "hint": "Ocean"
+      },
+      {
+        "word": "海浪",
+        "hint": "Wave (sea)"
+      },
+      {
+        "word": "潮汐",
+        "hint": "Tide"
+      },
+      {
+        "word": "珊瑚",
+        "hint": "Coral"
+      },
+      {
+        "word": "海滩",
+        "hint": "Beach"
+      },
+      {
+        "word": "灯塔",
+        "hint": "Lighthouse"
+      },
+      {
+        "word": "帆船",
+        "hint": "Sailboat"
+      },
+      {
+        "word": "码头",
+        "hint": "Dock / Pier"
+      },
+      {
+        "word": "深海",
+        "hint": "Deep sea"
+      },
+      {
+        "word": "海藻",
+        "hint": "Seaweed"
+      },
+      {
+        "word": "海豚",
+        "hint": "Dolphin"
+      },
+      {
+        "word": "鲨鱼",
+        "hint": "Shark"
+      },
+      {
+        "word": "海龟",
+        "hint": "Sea turtle"
+      },
+      {
+        "word": "贝壳",
+        "hint": "Seashell"
+      },
+      {
+        "word": "渔船",
+        "hint": "Fishing boat"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Mountains & Hiking",
+    "description": "Mountaineering and hiking vocabulary in Chinese",
+    "iconName": "mountain.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "山峰",
+        "hint": "Mountain peak"
+      },
+      {
+        "word": "登山",
+        "hint": "Mountain climbing"
+      },
+      {
+        "word": "徒步",
+        "hint": "Hiking / Trekking"
+      },
+      {
+        "word": "背包",
+        "hint": "Backpack"
+      },
+      {
+        "word": "帐篷",
+        "hint": "Tent"
+      },
+      {
+        "word": "悬崖",
+        "hint": "Cliff"
+      },
+      {
+        "word": "山谷",
+        "hint": "Valley"
+      },
+      {
+        "word": "小径",
+        "hint": "Trail / Path"
+      },
+      {
+        "word": "海拔",
+        "hint": "Altitude / Elevation"
+      },
+      {
+        "word": "指南针",
+        "hint": "Compass"
+      },
+      {
+        "word": "岩石",
+        "hint": "Rock / Stone"
+      },
+      {
+        "word": "溪流",
+        "hint": "Stream / Creek"
+      },
+      {
+        "word": "日出",
+        "hint": "Sunrise"
+      },
+      {
+        "word": "山顶",
+        "hint": "Summit / Mountaintop"
+      },
+      {
+        "word": "营地",
+        "hint": "Campsite"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Camping",
+    "description": "Camping and outdoor vocabulary in Chinese",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "露营",
+        "hint": "Camping"
+      },
+      {
+        "word": "篝火",
+        "hint": "Campfire / Bonfire"
+      },
+      {
+        "word": "睡袋",
+        "hint": "Sleeping bag"
+      },
+      {
+        "word": "手电筒",
+        "hint": "Flashlight / Torch"
+      },
+      {
+        "word": "烧烤",
+        "hint": "Barbecue / Grill"
+      },
+      {
+        "word": "钓鱼",
+        "hint": "Fishing"
+      },
+      {
+        "word": "救生衣",
+        "hint": "Life jacket"
+      },
+      {
+        "word": "防晒霜",
+        "hint": "Sunscreen"
+      },
+      {
+        "word": "驱虫剂",
+        "hint": "Insect repellent"
+      },
+      {
+        "word": "绳索",
+        "hint": "Rope"
+      },
+      {
+        "word": "水壶",
+        "hint": "Water bottle / Canteen"
+      },
+      {
+        "word": "瑞士刀",
+        "hint": "Swiss knife"
+      },
+      {
+        "word": "地图",
+        "hint": "Map"
+      },
+      {
+        "word": "野餐",
+        "hint": "Picnic"
+      },
+      {
+        "word": "星空",
+        "hint": "Starry sky"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Law & Justice",
+    "description": "Legal vocabulary in Chinese",
+    "iconName": "scalemass",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "法律",
+        "hint": "Law"
+      },
+      {
+        "word": "法官",
+        "hint": "Judge"
+      },
+      {
+        "word": "律师",
+        "hint": "Lawyer"
+      },
+      {
+        "word": "法庭",
+        "hint": "Court / Courtroom"
+      },
+      {
+        "word": "被告",
+        "hint": "Defendant"
+      },
+      {
+        "word": "原告",
+        "hint": "Plaintiff"
+      },
+      {
+        "word": "证据",
+        "hint": "Evidence"
+      },
+      {
+        "word": "审判",
+        "hint": "Trial"
+      },
+      {
+        "word": "判决",
+        "hint": "Verdict / Sentence"
+      },
+      {
+        "word": "犯罪",
+        "hint": "Crime"
+      },
+      {
+        "word": "合同",
+        "hint": "Contract"
+      },
+      {
+        "word": "权利",
+        "hint": "Right (legal)"
+      },
+      {
+        "word": "陪审团",
+        "hint": "Jury"
+      },
+      {
+        "word": "监狱",
+        "hint": "Prison"
+      },
+      {
+        "word": "罚款",
+        "hint": "Fine / Penalty"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Politics",
+    "description": "Political vocabulary in Chinese",
+    "iconName": "building.columns",
+    "color": "#1e40af",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "政府",
+        "hint": "Government"
+      },
+      {
+        "word": "选举",
+        "hint": "Election"
+      },
+      {
+        "word": "政策",
+        "hint": "Policy"
+      },
+      {
+        "word": "总统",
+        "hint": "President"
+      },
+      {
+        "word": "议会",
+        "hint": "Parliament"
+      },
+      {
+        "word": "外交",
+        "hint": "Diplomacy"
+      },
+      {
+        "word": "民主",
+        "hint": "Democracy"
+      },
+      {
+        "word": "公民",
+        "hint": "Citizen"
+      },
+      {
+        "word": "宪法",
+        "hint": "Constitution"
+      },
+      {
+        "word": "投票",
+        "hint": "Vote"
+      },
+      {
+        "word": "政党",
+        "hint": "Political party"
+      },
+      {
+        "word": "条约",
+        "hint": "Treaty"
+      },
+      {
+        "word": "抗议",
+        "hint": "Protest"
+      },
+      {
+        "word": "改革",
+        "hint": "Reform"
+      },
+      {
+        "word": "大使馆",
+        "hint": "Embassy"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Economy",
+    "description": "Economic vocabulary in Chinese",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "经济",
+        "hint": "Economy"
+      },
+      {
+        "word": "市场",
+        "hint": "Market"
+      },
+      {
+        "word": "股票",
+        "hint": "Stock / Share"
+      },
+      {
+        "word": "贸易",
+        "hint": "Trade"
+      },
+      {
+        "word": "出口",
+        "hint": "Export"
+      },
+      {
+        "word": "进口",
+        "hint": "Import"
+      },
+      {
+        "word": "通货膨胀",
+        "hint": "Inflation"
+      },
+      {
+        "word": "利率",
+        "hint": "Interest rate"
+      },
+      {
+        "word": "投资",
+        "hint": "Investment"
+      },
+      {
+        "word": "税收",
+        "hint": "Tax / Taxation"
+      },
+      {
+        "word": "预算",
+        "hint": "Budget"
+      },
+      {
+        "word": "货币",
+        "hint": "Currency"
+      },
+      {
+        "word": "利润",
+        "hint": "Profit"
+      },
+      {
+        "word": "竞争",
+        "hint": "Competition"
+      },
+      {
+        "word": "供应链",
+        "hint": "Supply chain"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Banking",
+    "description": "Banking and finance vocabulary in Chinese",
+    "iconName": "banknote",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "银行",
+        "hint": "Bank"
+      },
+      {
+        "word": "账户",
+        "hint": "Account"
+      },
+      {
+        "word": "存款",
+        "hint": "Deposit / Savings"
+      },
+      {
+        "word": "贷款",
+        "hint": "Loan"
+      },
+      {
+        "word": "利息",
+        "hint": "Interest"
+      },
+      {
+        "word": "转账",
+        "hint": "Transfer"
+      },
+      {
+        "word": "信用卡",
+        "hint": "Credit card"
+      },
+      {
+        "word": "取款机",
+        "hint": "ATM"
+      },
+      {
+        "word": "汇率",
+        "hint": "Exchange rate"
+      },
+      {
+        "word": "支票",
+        "hint": "Check / Cheque"
+      },
+      {
+        "word": "抵押",
+        "hint": "Mortgage / Collateral"
+      },
+      {
+        "word": "余额",
+        "hint": "Balance (account)"
+      },
+      {
+        "word": "手续费",
+        "hint": "Service fee"
+      },
+      {
+        "word": "网银",
+        "hint": "Online banking"
+      },
+      {
+        "word": "密码",
+        "hint": "Password / PIN"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Insurance",
+    "description": "Insurance vocabulary in Chinese",
+    "iconName": "shield",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "保险",
+        "hint": "Insurance"
+      },
+      {
+        "word": "保费",
+        "hint": "Premium"
+      },
+      {
+        "word": "索赔",
+        "hint": "Claim"
+      },
+      {
+        "word": "保单",
+        "hint": "Insurance policy"
+      },
+      {
+        "word": "赔偿",
+        "hint": "Compensation"
+      },
+      {
+        "word": "受益人",
+        "hint": "Beneficiary"
+      },
+      {
+        "word": "免赔额",
+        "hint": "Deductible"
+      },
+      {
+        "word": "投保人",
+        "hint": "Policyholder"
+      },
+      {
+        "word": "到期日",
+        "hint": "Expiration date"
+      },
+      {
+        "word": "意外险",
+        "hint": "Accident insurance"
+      },
+      {
+        "word": "健康险",
+        "hint": "Health insurance"
+      },
+      {
+        "word": "车险",
+        "hint": "Auto insurance"
+      },
+      {
+        "word": "理赔",
+        "hint": "Settle a claim"
+      },
+      {
+        "word": "保障",
+        "hint": "Coverage / Protection"
+      },
+      {
+        "word": "续保",
+        "hint": "Policy renewal"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Cooking",
+    "description": "Cooking methods and vocabulary in Chinese",
+    "iconName": "flame",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "炒菜",
+        "hint": "Stir-fry"
+      },
+      {
+        "word": "蒸",
+        "hint": "Steam (cooking)"
+      },
+      {
+        "word": "煮",
+        "hint": "Boil"
+      },
+      {
+        "word": "烤",
+        "hint": "Roast / Bake"
+      },
+      {
+        "word": "炖",
+        "hint": "Stew / Braise"
+      },
+      {
+        "word": "切",
+        "hint": "Cut / Chop"
+      },
+      {
+        "word": "搅拌",
+        "hint": "Stir / Mix"
+      },
+      {
+        "word": "调味",
+        "hint": "Season (food)"
+      },
+      {
+        "word": "食谱",
+        "hint": "Recipe"
+      },
+      {
+        "word": "火候",
+        "hint": "Heat control (cooking)"
+      },
+      {
+        "word": "油炸",
+        "hint": "Deep fry"
+      },
+      {
+        "word": "腌制",
+        "hint": "Marinate / Pickle"
+      },
+      {
+        "word": "砧板",
+        "hint": "Cutting board"
+      },
+      {
+        "word": "锅铲",
+        "hint": "Spatula / Wok turner"
+      },
+      {
+        "word": "平底锅",
+        "hint": "Frying pan"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Baking",
+    "description": "Baking vocabulary in Chinese",
+    "iconName": "birthday.cake",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "烘焙",
+        "hint": "Baking"
+      },
+      {
+        "word": "面粉",
+        "hint": "Flour"
+      },
+      {
+        "word": "酵母",
+        "hint": "Yeast"
+      },
+      {
+        "word": "面团",
+        "hint": "Dough"
+      },
+      {
+        "word": "烤箱",
+        "hint": "Oven"
+      },
+      {
+        "word": "蛋糕",
+        "hint": "Cake"
+      },
+      {
+        "word": "面包",
+        "hint": "Bread"
+      },
+      {
+        "word": "饼干",
+        "hint": "Cookie / Biscuit"
+      },
+      {
+        "word": "馅饼",
+        "hint": "Pie"
+      },
+      {
+        "word": "奶油",
+        "hint": "Cream / Butter"
+      },
+      {
+        "word": "糖霜",
+        "hint": "Frosting / Icing"
+      },
+      {
+        "word": "模具",
+        "hint": "Baking mold / Tin"
+      },
+      {
+        "word": "擀面杖",
+        "hint": "Rolling pin"
+      },
+      {
+        "word": "打蛋器",
+        "hint": "Whisk / Egg beater"
+      },
+      {
+        "word": "发酵",
+        "hint": "Fermentation / Rise"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Spices & Seasonings",
+    "description": "Spice and seasoning vocabulary in Chinese",
+    "iconName": "leaf",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "胡椒",
+        "hint": "Pepper"
+      },
+      {
+        "word": "盐",
+        "hint": "Salt"
+      },
+      {
+        "word": "酱油",
+        "hint": "Soy sauce"
+      },
+      {
+        "word": "醋",
+        "hint": "Vinegar"
+      },
+      {
+        "word": "花椒",
+        "hint": "Sichuan pepper"
+      },
+      {
+        "word": "八角",
+        "hint": "Star anise"
+      },
+      {
+        "word": "桂皮",
+        "hint": "Cinnamon"
+      },
+      {
+        "word": "生姜",
+        "hint": "Ginger"
+      },
+      {
+        "word": "大蒜",
+        "hint": "Garlic"
+      },
+      {
+        "word": "辣椒",
+        "hint": "Chili pepper"
+      },
+      {
+        "word": "芝麻",
+        "hint": "Sesame"
+      },
+      {
+        "word": "香菜",
+        "hint": "Cilantro / Coriander"
+      },
+      {
+        "word": "蚝油",
+        "hint": "Oyster sauce"
+      },
+      {
+        "word": "豆瓣酱",
+        "hint": "Bean paste"
+      },
+      {
+        "word": "五香粉",
+        "hint": "Five-spice powder"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Dairy Products",
+    "description": "Dairy product vocabulary in Chinese",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "牛奶",
+        "hint": "Milk"
+      },
+      {
+        "word": "酸奶",
+        "hint": "Yogurt"
+      },
+      {
+        "word": "奶酪",
+        "hint": "Cheese"
+      },
+      {
+        "word": "黄油",
+        "hint": "Butter"
+      },
+      {
+        "word": "冰淇淋",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "奶粉",
+        "hint": "Milk powder"
+      },
+      {
+        "word": "豆浆",
+        "hint": "Soy milk"
+      },
+      {
+        "word": "奶茶",
+        "hint": "Milk tea"
+      },
+      {
+        "word": "鸡蛋",
+        "hint": "Egg"
+      },
+      {
+        "word": "蛋黄",
+        "hint": "Egg yolk"
+      },
+      {
+        "word": "蛋白",
+        "hint": "Egg white"
+      },
+      {
+        "word": "炼乳",
+        "hint": "Condensed milk"
+      },
+      {
+        "word": "奶昔",
+        "hint": "Milkshake"
+      },
+      {
+        "word": "豆腐",
+        "hint": "Tofu"
+      },
+      {
+        "word": "布丁",
+        "hint": "Pudding"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Meat & Protein",
+    "description": "Meat and protein vocabulary in Chinese",
+    "iconName": "fork.knife",
+    "color": "#dc2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "猪肉",
+        "hint": "Pork"
+      },
+      {
+        "word": "牛肉",
+        "hint": "Beef"
+      },
+      {
+        "word": "鸡肉",
+        "hint": "Chicken"
+      },
+      {
+        "word": "羊肉",
+        "hint": "Lamb / Mutton"
+      },
+      {
+        "word": "鱼肉",
+        "hint": "Fish (meat)"
+      },
+      {
+        "word": "虾",
+        "hint": "Shrimp / Prawn"
+      },
+      {
+        "word": "螃蟹",
+        "hint": "Crab"
+      },
+      {
+        "word": "排骨",
+        "hint": "Spareribs"
+      },
+      {
+        "word": "香肠",
+        "hint": "Sausage"
+      },
+      {
+        "word": "火腿",
+        "hint": "Ham"
+      },
+      {
+        "word": "鸭肉",
+        "hint": "Duck"
+      },
+      {
+        "word": "培根",
+        "hint": "Bacon"
+      },
+      {
+        "word": "牛排",
+        "hint": "Steak"
+      },
+      {
+        "word": "肉丸",
+        "hint": "Meatball"
+      },
+      {
+        "word": "鱿鱼",
+        "hint": "Squid"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Pets",
+    "description": "Pet vocabulary in Chinese",
+    "iconName": "pawprint",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "小狗",
+        "hint": "Puppy / Dog"
+      },
+      {
+        "word": "小猫",
+        "hint": "Kitten / Cat"
+      },
+      {
+        "word": "金鱼",
+        "hint": "Goldfish"
+      },
+      {
+        "word": "仓鼠",
+        "hint": "Hamster"
+      },
+      {
+        "word": "兔子",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "鹦鹉",
+        "hint": "Parrot"
+      },
+      {
+        "word": "乌龟",
+        "hint": "Tortoise / Turtle"
+      },
+      {
+        "word": "狗粮",
+        "hint": "Dog food"
+      },
+      {
+        "word": "猫砂",
+        "hint": "Cat litter"
+      },
+      {
+        "word": "宠物店",
+        "hint": "Pet shop"
+      },
+      {
+        "word": "项圈",
+        "hint": "Collar (pet)"
+      },
+      {
+        "word": "牵绳",
+        "hint": "Leash"
+      },
+      {
+        "word": "笼子",
+        "hint": "Cage"
+      },
+      {
+        "word": "兽医",
+        "hint": "Veterinarian / Vet"
+      },
+      {
+        "word": "疫苗",
+        "hint": "Vaccine"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Birds",
+    "description": "Bird vocabulary in Chinese",
+    "iconName": "bird",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "麻雀",
+        "hint": "Sparrow"
+      },
+      {
+        "word": "老鹰",
+        "hint": "Eagle"
+      },
+      {
+        "word": "猫头鹰",
+        "hint": "Owl"
+      },
+      {
+        "word": "燕子",
+        "hint": "Swallow"
+      },
+      {
+        "word": "天鹅",
+        "hint": "Swan"
+      },
+      {
+        "word": "孔雀",
+        "hint": "Peacock"
+      },
+      {
+        "word": "乌鸦",
+        "hint": "Crow"
+      },
+      {
+        "word": "鸽子",
+        "hint": "Pigeon / Dove"
+      },
+      {
+        "word": "企鹅",
+        "hint": "Penguin"
+      },
+      {
+        "word": "仙鹤",
+        "hint": "Crane"
+      },
+      {
+        "word": "翠鸟",
+        "hint": "Kingfisher"
+      },
+      {
+        "word": "喜鹊",
+        "hint": "Magpie"
+      },
+      {
+        "word": "羽毛",
+        "hint": "Feather"
+      },
+      {
+        "word": "鸟巢",
+        "hint": "Bird nest"
+      },
+      {
+        "word": "翅膀",
+        "hint": "Wing"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Insects",
+    "description": "Insect vocabulary in Chinese",
+    "iconName": "ant",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "蝴蝶",
+        "hint": "Butterfly"
+      },
+      {
+        "word": "蜜蜂",
+        "hint": "Bee"
+      },
+      {
+        "word": "蚂蚁",
+        "hint": "Ant"
+      },
+      {
+        "word": "蚊子",
+        "hint": "Mosquito"
+      },
+      {
+        "word": "蜻蜓",
+        "hint": "Dragonfly"
+      },
+      {
+        "word": "蟋蟀",
+        "hint": "Cricket"
+      },
+      {
+        "word": "蜘蛛",
+        "hint": "Spider"
+      },
+      {
+        "word": "瓢虫",
+        "hint": "Ladybug"
+      },
+      {
+        "word": "蝉",
+        "hint": "Cicada"
+      },
+      {
+        "word": "萤火虫",
+        "hint": "Firefly"
+      },
+      {
+        "word": "蜗牛",
+        "hint": "Snail"
+      },
+      {
+        "word": "蚱蜢",
+        "hint": "Grasshopper"
+      },
+      {
+        "word": "蝎子",
+        "hint": "Scorpion"
+      },
+      {
+        "word": "蛾子",
+        "hint": "Moth"
+      },
+      {
+        "word": "蚯蚓",
+        "hint": "Earthworm"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Marine Life",
+    "description": "Marine animal vocabulary in Chinese",
+    "iconName": "fish",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "章鱼",
+        "hint": "Octopus"
+      },
+      {
+        "word": "水母",
+        "hint": "Jellyfish"
+      },
+      {
+        "word": "海星",
+        "hint": "Starfish"
+      },
+      {
+        "word": "龙虾",
+        "hint": "Lobster"
+      },
+      {
+        "word": "海马",
+        "hint": "Seahorse"
+      },
+      {
+        "word": "金枪鱼",
+        "hint": "Tuna"
+      },
+      {
+        "word": "三文鱼",
+        "hint": "Salmon"
+      },
+      {
+        "word": "海参",
+        "hint": "Sea cucumber"
+      },
+      {
+        "word": "海胆",
+        "hint": "Sea urchin"
+      },
+      {
+        "word": "扇贝",
+        "hint": "Scallop"
+      },
+      {
+        "word": "蛤蜊",
+        "hint": "Clam"
+      },
+      {
+        "word": "鳗鱼",
+        "hint": "Eel"
+      },
+      {
+        "word": "河豚",
+        "hint": "Pufferfish"
+      },
+      {
+        "word": "鲸鱼",
+        "hint": "Whale"
+      },
+      {
+        "word": "海狮",
+        "hint": "Sea lion"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Farm Animals",
+    "description": "Farm animal vocabulary in Chinese",
+    "iconName": "hare",
+    "color": "#a16207",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "母牛",
+        "hint": "Cow"
+      },
+      {
+        "word": "公鸡",
+        "hint": "Rooster"
+      },
+      {
+        "word": "母鸡",
+        "hint": "Hen"
+      },
+      {
+        "word": "山羊",
+        "hint": "Goat"
+      },
+      {
+        "word": "绵羊",
+        "hint": "Sheep"
+      },
+      {
+        "word": "猪",
+        "hint": "Pig"
+      },
+      {
+        "word": "马",
+        "hint": "Horse"
+      },
+      {
+        "word": "驴",
+        "hint": "Donkey"
+      },
+      {
+        "word": "水牛",
+        "hint": "Water buffalo"
+      },
+      {
+        "word": "鹅",
+        "hint": "Goose"
+      },
+      {
+        "word": "火鸡",
+        "hint": "Turkey"
+      },
+      {
+        "word": "牧场",
+        "hint": "Farm / Ranch"
+      },
+      {
+        "word": "谷仓",
+        "hint": "Barn"
+      },
+      {
+        "word": "饲料",
+        "hint": "Animal feed"
+      },
+      {
+        "word": "马厩",
+        "hint": "Stable (horse)"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Feelings & Moods",
+    "description": "Feelings and mood vocabulary in Chinese",
+    "iconName": "heart",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "幸福",
+        "hint": "Happiness / Bliss"
+      },
+      {
+        "word": "焦虑",
+        "hint": "Anxiety / Anxious"
+      },
+      {
+        "word": "孤独",
+        "hint": "Loneliness / Lonely"
+      },
+      {
+        "word": "嫉妒",
+        "hint": "Jealousy / Envy"
+      },
+      {
+        "word": "骄傲",
+        "hint": "Pride / Proud"
+      },
+      {
+        "word": "感激",
+        "hint": "Grateful / Thankful"
+      },
+      {
+        "word": "尴尬",
+        "hint": "Embarrassed"
+      },
+      {
+        "word": "兴奋",
+        "hint": "Excited / Thrilled"
+      },
+      {
+        "word": "失望",
+        "hint": "Disappointed"
+      },
+      {
+        "word": "紧张",
+        "hint": "Nervous / Tense"
+      },
+      {
+        "word": "满足",
+        "hint": "Satisfied / Content"
+      },
+      {
+        "word": "愧疚",
+        "hint": "Guilt / Guilty"
+      },
+      {
+        "word": "怀旧",
+        "hint": "Nostalgic"
+      },
+      {
+        "word": "烦躁",
+        "hint": "Irritated / Restless"
+      },
+      {
+        "word": "平静",
+        "hint": "Calm / Peaceful"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Personality Traits",
+    "description": "Personality description vocabulary in Chinese",
+    "iconName": "person",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "勇敢",
+        "hint": "Brave / Courageous"
+      },
+      {
+        "word": "善良",
+        "hint": "Kind / Kindhearted"
+      },
+      {
+        "word": "诚实",
+        "hint": "Honest"
+      },
+      {
+        "word": "耐心",
+        "hint": "Patient"
+      },
+      {
+        "word": "慷慨",
+        "hint": "Generous"
+      },
+      {
+        "word": "谦虚",
+        "hint": "Modest / Humble"
+      },
+      {
+        "word": "乐观",
+        "hint": "Optimistic"
+      },
+      {
+        "word": "悲观",
+        "hint": "Pessimistic"
+      },
+      {
+        "word": "固执",
+        "hint": "Stubborn"
+      },
+      {
+        "word": "温柔",
+        "hint": "Gentle / Tender"
+      },
+      {
+        "word": "自信",
+        "hint": "Confident"
+      },
+      {
+        "word": "害羞",
+        "hint": "Shy"
+      },
+      {
+        "word": "幽默",
+        "hint": "Humorous / Funny"
+      },
+      {
+        "word": "勤劳",
+        "hint": "Hardworking / Diligent"
+      },
+      {
+        "word": "聪明",
+        "hint": "Smart / Clever"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relationships",
+    "description": "Relationship vocabulary in Chinese",
+    "iconName": "heart.circle",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "朋友",
+        "hint": "Friend"
+      },
+      {
+        "word": "恋人",
+        "hint": "Lover / Partner"
+      },
+      {
+        "word": "婚姻",
+        "hint": "Marriage"
+      },
+      {
+        "word": "离婚",
+        "hint": "Divorce"
+      },
+      {
+        "word": "约会",
+        "hint": "Date (romantic)"
+      },
+      {
+        "word": "信任",
+        "hint": "Trust"
+      },
+      {
+        "word": "承诺",
+        "hint": "Promise / Commitment"
+      },
+      {
+        "word": "分手",
+        "hint": "Break up"
+      },
+      {
+        "word": "求婚",
+        "hint": "Propose (marriage)"
+      },
+      {
+        "word": "伴侣",
+        "hint": "Partner / Companion"
+      },
+      {
+        "word": "亲戚",
+        "hint": "Relative"
+      },
+      {
+        "word": "邻居",
+        "hint": "Neighbor"
+      },
+      {
+        "word": "同事",
+        "hint": "Colleague / Coworker"
+      },
+      {
+        "word": "知己",
+        "hint": "Soulmate / Close friend"
+      },
+      {
+        "word": "和解",
+        "hint": "Reconcile / Make up"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Communication",
+    "description": "Communication vocabulary in Chinese",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "对话",
+        "hint": "Dialogue / Conversation"
+      },
+      {
+        "word": "讨论",
+        "hint": "Discussion / Discuss"
+      },
+      {
+        "word": "辩论",
+        "hint": "Debate"
+      },
+      {
+        "word": "演讲",
+        "hint": "Speech / Lecture"
+      },
+      {
+        "word": "解释",
+        "hint": "Explain / Explanation"
+      },
+      {
+        "word": "翻译",
+        "hint": "Translate / Translation"
+      },
+      {
+        "word": "倾听",
+        "hint": "Listen attentively"
+      },
+      {
+        "word": "表达",
+        "hint": "Express / Expression"
+      },
+      {
+        "word": "误解",
+        "hint": "Misunderstanding"
+      },
+      {
+        "word": "沟通",
+        "hint": "Communicate"
+      },
+      {
+        "word": "建议",
+        "hint": "Suggest / Advice"
+      },
+      {
+        "word": "批评",
+        "hint": "Criticize / Criticism"
+      },
+      {
+        "word": "赞美",
+        "hint": "Praise / Compliment"
+      },
+      {
+        "word": "道歉",
+        "hint": "Apologize / Apology"
+      },
+      {
+        "word": "谈判",
+        "hint": "Negotiate / Negotiation"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gestures & Actions",
+    "description": "Body language and gesture vocabulary in Chinese",
+    "iconName": "hand.raised",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "握手",
+        "hint": "Handshake"
+      },
+      {
+        "word": "鞠躬",
+        "hint": "Bow"
+      },
+      {
+        "word": "拥抱",
+        "hint": "Hug / Embrace"
+      },
+      {
+        "word": "点头",
+        "hint": "Nod"
+      },
+      {
+        "word": "摇头",
+        "hint": "Shake head"
+      },
+      {
+        "word": "挥手",
+        "hint": "Wave (hand)"
+      },
+      {
+        "word": "鼓掌",
+        "hint": "Clap / Applaud"
+      },
+      {
+        "word": "微笑",
+        "hint": "Smile"
+      },
+      {
+        "word": "皱眉",
+        "hint": "Frown"
+      },
+      {
+        "word": "眨眼",
+        "hint": "Blink / Wink"
+      },
+      {
+        "word": "叹气",
+        "hint": "Sigh"
+      },
+      {
+        "word": "耸肩",
+        "hint": "Shrug shoulders"
+      },
+      {
+        "word": "跺脚",
+        "hint": "Stamp feet"
+      },
+      {
+        "word": "竖拇指",
+        "hint": "Thumbs up"
+      },
+      {
+        "word": "招手",
+        "hint": "Beckon / Wave to come"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architecture",
+    "description": "Architecture vocabulary in Chinese",
+    "iconName": "building.2",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "建筑",
+        "hint": "Architecture / Building"
+      },
+      {
+        "word": "设计",
+        "hint": "Design"
+      },
+      {
+        "word": "蓝图",
+        "hint": "Blueprint"
+      },
+      {
+        "word": "柱子",
+        "hint": "Column / Pillar"
+      },
+      {
+        "word": "拱门",
+        "hint": "Arch"
+      },
+      {
+        "word": "穹顶",
+        "hint": "Dome"
+      },
+      {
+        "word": "阳台",
+        "hint": "Balcony"
+      },
+      {
+        "word": "楼梯",
+        "hint": "Staircase / Stairs"
+      },
+      {
+        "word": "天花板",
+        "hint": "Ceiling"
+      },
+      {
+        "word": "地基",
+        "hint": "Foundation"
+      },
+      {
+        "word": "立面",
+        "hint": "Facade"
+      },
+      {
+        "word": "走廊",
+        "hint": "Corridor / Hallway"
+      },
+      {
+        "word": "尖塔",
+        "hint": "Spire / Steeple"
+      },
+      {
+        "word": "庭院",
+        "hint": "Courtyard"
+      },
+      {
+        "word": "屋顶",
+        "hint": "Roof"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Construction",
+    "description": "Construction vocabulary in Chinese",
+    "iconName": "hammer",
+    "color": "#ea580c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "施工",
+        "hint": "Construction work"
+      },
+      {
+        "word": "水泥",
+        "hint": "Cement"
+      },
+      {
+        "word": "砖头",
+        "hint": "Brick"
+      },
+      {
+        "word": "钢筋",
+        "hint": "Steel bar / Rebar"
+      },
+      {
+        "word": "脚手架",
+        "hint": "Scaffolding"
+      },
+      {
+        "word": "起重机",
+        "hint": "Crane (machine)"
+      },
+      {
+        "word": "挖掘机",
+        "hint": "Excavator"
+      },
+      {
+        "word": "安全帽",
+        "hint": "Hard hat / Safety helmet"
+      },
+      {
+        "word": "图纸",
+        "hint": "Architectural plans"
+      },
+      {
+        "word": "承重墙",
+        "hint": "Load-bearing wall"
+      },
+      {
+        "word": "瓷砖",
+        "hint": "Tile"
+      },
+      {
+        "word": "混凝土",
+        "hint": "Concrete"
+      },
+      {
+        "word": "隔热",
+        "hint": "Insulation"
+      },
+      {
+        "word": "装修",
+        "hint": "Renovation / Decoration"
+      },
+      {
+        "word": "工地",
+        "hint": "Construction site"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Electricity",
+    "description": "Electrical vocabulary in Chinese",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "电线",
+        "hint": "Wire / Electric cord"
+      },
+      {
+        "word": "开关",
+        "hint": "Switch"
+      },
+      {
+        "word": "插座",
+        "hint": "Socket / Outlet"
+      },
+      {
+        "word": "电压",
+        "hint": "Voltage"
+      },
+      {
+        "word": "电流",
+        "hint": "Electric current"
+      },
+      {
+        "word": "灯泡",
+        "hint": "Light bulb"
+      },
+      {
+        "word": "保险丝",
+        "hint": "Fuse"
+      },
+      {
+        "word": "变压器",
+        "hint": "Transformer"
+      },
+      {
+        "word": "电池",
+        "hint": "Battery"
+      },
+      {
+        "word": "电路",
+        "hint": "Circuit"
+      },
+      {
+        "word": "发电机",
+        "hint": "Generator"
+      },
+      {
+        "word": "断路器",
+        "hint": "Circuit breaker"
+      },
+      {
+        "word": "接地线",
+        "hint": "Ground wire"
+      },
+      {
+        "word": "导体",
+        "hint": "Conductor"
+      },
+      {
+        "word": "绝缘体",
+        "hint": "Insulator"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Plumbing",
+    "description": "Plumbing vocabulary in Chinese",
+    "iconName": "wrench",
+    "color": "#0369a1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "管道",
+        "hint": "Pipe / Pipeline"
+      },
+      {
+        "word": "水管",
+        "hint": "Water pipe"
+      },
+      {
+        "word": "阀门",
+        "hint": "Valve"
+      },
+      {
+        "word": "水泵",
+        "hint": "Water pump"
+      },
+      {
+        "word": "下水道",
+        "hint": "Sewer / Drain"
+      },
+      {
+        "word": "热水器",
+        "hint": "Water heater"
+      },
+      {
+        "word": "漏水",
+        "hint": "Water leak"
+      },
+      {
+        "word": "扳手",
+        "hint": "Wrench"
+      },
+      {
+        "word": "水表",
+        "hint": "Water meter"
+      },
+      {
+        "word": "马桶",
+        "hint": "Toilet"
+      },
+      {
+        "word": "排水管",
+        "hint": "Drain pipe"
+      },
+      {
+        "word": "密封圈",
+        "hint": "Gasket / Seal"
+      },
+      {
+        "word": "水压",
+        "hint": "Water pressure"
+      },
+      {
+        "word": "水箱",
+        "hint": "Water tank"
+      },
+      {
+        "word": "净水器",
+        "hint": "Water purifier"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Gardening Tools",
+    "description": "Gardening tool vocabulary in Chinese",
+    "iconName": "leaf",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "铲子",
+        "hint": "Shovel / Spade"
+      },
+      {
+        "word": "耙子",
+        "hint": "Rake"
+      },
+      {
+        "word": "水管",
+        "hint": "Garden hose"
+      },
+      {
+        "word": "喷壶",
+        "hint": "Watering can"
+      },
+      {
+        "word": "锄头",
+        "hint": "Hoe"
+      },
+      {
+        "word": "剪刀",
+        "hint": "Pruning shears"
+      },
+      {
+        "word": "手推车",
+        "hint": "Wheelbarrow"
+      },
+      {
+        "word": "手套",
+        "hint": "Gardening gloves"
+      },
+      {
+        "word": "割草机",
+        "hint": "Lawn mower"
+      },
+      {
+        "word": "花架",
+        "hint": "Plant stand / Trellis"
+      },
+      {
+        "word": "播种机",
+        "hint": "Seeder"
+      },
+      {
+        "word": "温室",
+        "hint": "Greenhouse"
+      },
+      {
+        "word": "堆肥",
+        "hint": "Compost"
+      },
+      {
+        "word": "喷雾器",
+        "hint": "Sprayer"
+      },
+      {
+        "word": "护膝垫",
+        "hint": "Kneeling pad"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medicine",
+    "description": "Medical vocabulary in Chinese",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "医生",
+        "hint": "Doctor"
+      },
+      {
+        "word": "护士",
+        "hint": "Nurse"
+      },
+      {
+        "word": "手术",
+        "hint": "Surgery / Operation"
+      },
+      {
+        "word": "诊断",
+        "hint": "Diagnosis"
+      },
+      {
+        "word": "处方",
+        "hint": "Prescription"
+      },
+      {
+        "word": "注射",
+        "hint": "Injection"
+      },
+      {
+        "word": "血压",
+        "hint": "Blood pressure"
+      },
+      {
+        "word": "心跳",
+        "hint": "Heartbeat"
+      },
+      {
+        "word": "体温",
+        "hint": "Body temperature"
+      },
+      {
+        "word": "检查",
+        "hint": "Examination / Checkup"
+      },
+      {
+        "word": "急诊",
+        "hint": "Emergency (medical)"
+      },
+      {
+        "word": "住院",
+        "hint": "Hospitalization"
+      },
+      {
+        "word": "症状",
+        "hint": "Symptom"
+      },
+      {
+        "word": "康复",
+        "hint": "Recovery / Rehabilitation"
+      },
+      {
+        "word": "听诊器",
+        "hint": "Stethoscope"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Pharmacy",
+    "description": "Pharmacy and medication vocabulary in Chinese",
+    "iconName": "pills",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "药房",
+        "hint": "Pharmacy / Drugstore"
+      },
+      {
+        "word": "药片",
+        "hint": "Pill / Tablet"
+      },
+      {
+        "word": "胶囊",
+        "hint": "Capsule"
+      },
+      {
+        "word": "药膏",
+        "hint": "Ointment / Cream"
+      },
+      {
+        "word": "止痛药",
+        "hint": "Painkiller"
+      },
+      {
+        "word": "抗生素",
+        "hint": "Antibiotic"
+      },
+      {
+        "word": "咳嗽药",
+        "hint": "Cough medicine"
+      },
+      {
+        "word": "维生素",
+        "hint": "Vitamin"
+      },
+      {
+        "word": "过敏药",
+        "hint": "Allergy medicine"
+      },
+      {
+        "word": "退烧药",
+        "hint": "Fever reducer"
+      },
+      {
+        "word": "创可贴",
+        "hint": "Band-aid / Plaster"
+      },
+      {
+        "word": "绷带",
+        "hint": "Bandage"
+      },
+      {
+        "word": "消毒液",
+        "hint": "Disinfectant"
+      },
+      {
+        "word": "眼药水",
+        "hint": "Eye drops"
+      },
+      {
+        "word": "剂量",
+        "hint": "Dosage"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Fitness and exercise vocabulary in Chinese",
+    "iconName": "figure.run",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "健身房",
+        "hint": "Gym"
+      },
+      {
+        "word": "哑铃",
+        "hint": "Dumbbell"
+      },
+      {
+        "word": "跑步机",
+        "hint": "Treadmill"
+      },
+      {
+        "word": "俯卧撑",
+        "hint": "Push-up"
+      },
+      {
+        "word": "仰卧起坐",
+        "hint": "Sit-up"
+      },
+      {
+        "word": "深蹲",
+        "hint": "Squat"
+      },
+      {
+        "word": "拉伸",
+        "hint": "Stretch"
+      },
+      {
+        "word": "有氧运动",
+        "hint": "Aerobic exercise"
+      },
+      {
+        "word": "肌肉",
+        "hint": "Muscle"
+      },
+      {
+        "word": "耐力",
+        "hint": "Endurance / Stamina"
+      },
+      {
+        "word": "教练",
+        "hint": "Coach / Trainer"
+      },
+      {
+        "word": "热身",
+        "hint": "Warm-up"
+      },
+      {
+        "word": "举重",
+        "hint": "Weightlifting"
+      },
+      {
+        "word": "瑜伽垫",
+        "hint": "Exercise mat"
+      },
+      {
+        "word": "心率",
+        "hint": "Heart rate"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Yoga",
+    "description": "Yoga vocabulary in Chinese",
+    "iconName": "figure.mind.and.body",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "瑜伽",
+        "hint": "Yoga"
+      },
+      {
+        "word": "冥想",
+        "hint": "Meditation"
+      },
+      {
+        "word": "呼吸",
+        "hint": "Breathing"
+      },
+      {
+        "word": "姿势",
+        "hint": "Pose / Posture"
+      },
+      {
+        "word": "平衡",
+        "hint": "Balance"
+      },
+      {
+        "word": "柔韧性",
+        "hint": "Flexibility"
+      },
+      {
+        "word": "放松",
+        "hint": "Relax / Relaxation"
+      },
+      {
+        "word": "禅修",
+        "hint": "Zen meditation"
+      },
+      {
+        "word": "专注",
+        "hint": "Focus / Concentration"
+      },
+      {
+        "word": "调息",
+        "hint": "Breath control"
+      },
+      {
+        "word": "太极",
+        "hint": "Tai chi"
+      },
+      {
+        "word": "正念",
+        "hint": "Mindfulness"
+      },
+      {
+        "word": "能量",
+        "hint": "Energy"
+      },
+      {
+        "word": "内心",
+        "hint": "Inner self / Heart"
+      },
+      {
+        "word": "和谐",
+        "hint": "Harmony"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Mental Health",
+    "description": "Mental health vocabulary in Chinese",
+    "iconName": "brain.head.profile",
+    "color": "#8b5cf6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "心理",
+        "hint": "Psychology / Mental"
+      },
+      {
+        "word": "压力",
+        "hint": "Stress / Pressure"
+      },
+      {
+        "word": "抑郁",
+        "hint": "Depression / Depressed"
+      },
+      {
+        "word": "焦虑症",
+        "hint": "Anxiety disorder"
+      },
+      {
+        "word": "咨询",
+        "hint": "Counseling / Consultation"
+      },
+      {
+        "word": "治疗",
+        "hint": "Therapy / Treatment"
+      },
+      {
+        "word": "情绪",
+        "hint": "Emotion / Mood"
+      },
+      {
+        "word": "自尊",
+        "hint": "Self-esteem"
+      },
+      {
+        "word": "睡眠",
+        "hint": "Sleep"
+      },
+      {
+        "word": "失眠",
+        "hint": "Insomnia"
+      },
+      {
+        "word": "倦怠",
+        "hint": "Burnout / Fatigue"
+      },
+      {
+        "word": "心理医生",
+        "hint": "Psychologist"
+      },
+      {
+        "word": "恢复力",
+        "hint": "Resilience"
+      },
+      {
+        "word": "减压",
+        "hint": "Stress relief"
+      },
+      {
+        "word": "自我调节",
+        "hint": "Self-regulation"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Vehicles",
+    "description": "Vehicle vocabulary in Chinese",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "汽车",
+        "hint": "Car / Automobile"
+      },
+      {
+        "word": "卡车",
+        "hint": "Truck"
+      },
+      {
+        "word": "摩托车",
+        "hint": "Motorcycle"
+      },
+      {
+        "word": "公共汽车",
+        "hint": "Bus"
+      },
+      {
+        "word": "出租车",
+        "hint": "Taxi"
+      },
+      {
+        "word": "救护车",
+        "hint": "Ambulance"
+      },
+      {
+        "word": "消防车",
+        "hint": "Fire truck"
+      },
+      {
+        "word": "拖拉机",
+        "hint": "Tractor"
+      },
+      {
+        "word": "电动车",
+        "hint": "Electric vehicle"
+      },
+      {
+        "word": "面包车",
+        "hint": "Van / Minibus"
+      },
+      {
+        "word": "吉普车",
+        "hint": "Jeep / SUV"
+      },
+      {
+        "word": "方向盘",
+        "hint": "Steering wheel"
+      },
+      {
+        "word": "后视镜",
+        "hint": "Rearview mirror"
+      },
+      {
+        "word": "引擎",
+        "hint": "Engine"
+      },
+      {
+        "word": "刹车",
+        "hint": "Brake"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Aviation",
+    "description": "Aviation vocabulary in Chinese",
+    "iconName": "airplane",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "飞机",
+        "hint": "Airplane"
+      },
+      {
+        "word": "机场",
+        "hint": "Airport"
+      },
+      {
+        "word": "跑道",
+        "hint": "Runway"
+      },
+      {
+        "word": "登机",
+        "hint": "Boarding"
+      },
+      {
+        "word": "飞行员",
+        "hint": "Pilot"
+      },
+      {
+        "word": "空姐",
+        "hint": "Flight attendant"
+      },
+      {
+        "word": "头等舱",
+        "hint": "First class"
+      },
+      {
+        "word": "经济舱",
+        "hint": "Economy class"
+      },
+      {
+        "word": "行李舱",
+        "hint": "Luggage compartment"
+      },
+      {
+        "word": "护照",
+        "hint": "Passport"
+      },
+      {
+        "word": "塔台",
+        "hint": "Control tower"
+      },
+      {
+        "word": "起飞",
+        "hint": "Take off"
+      },
+      {
+        "word": "降落",
+        "hint": "Landing"
+      },
+      {
+        "word": "航班",
+        "hint": "Flight (number)"
+      },
+      {
+        "word": "安全带",
+        "hint": "Seatbelt"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Shipping & Logistics",
+    "description": "Shipping and logistics vocabulary in Chinese",
+    "iconName": "shippingbox",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "快递",
+        "hint": "Express delivery"
+      },
+      {
+        "word": "包裹",
+        "hint": "Package / Parcel"
+      },
+      {
+        "word": "仓库",
+        "hint": "Warehouse"
+      },
+      {
+        "word": "集装箱",
+        "hint": "Container (shipping)"
+      },
+      {
+        "word": "货运",
+        "hint": "Freight / Cargo"
+      },
+      {
+        "word": "物流",
+        "hint": "Logistics"
+      },
+      {
+        "word": "运费",
+        "hint": "Shipping fee"
+      },
+      {
+        "word": "港口",
+        "hint": "Port / Harbor"
+      },
+      {
+        "word": "海关",
+        "hint": "Customs"
+      },
+      {
+        "word": "签收",
+        "hint": "Sign for delivery"
+      },
+      {
+        "word": "追踪",
+        "hint": "Tracking"
+      },
+      {
+        "word": "清关",
+        "hint": "Customs clearance"
+      },
+      {
+        "word": "发货",
+        "hint": "Ship / Dispatch"
+      },
+      {
+        "word": "收货人",
+        "hint": "Recipient / Consignee"
+      },
+      {
+        "word": "装卸",
+        "hint": "Loading and unloading"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Cycling",
+    "description": "Cycling vocabulary in Chinese",
+    "iconName": "bicycle",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "自行车",
+        "hint": "Bicycle"
+      },
+      {
+        "word": "车轮",
+        "hint": "Wheel"
+      },
+      {
+        "word": "踏板",
+        "hint": "Pedal"
+      },
+      {
+        "word": "链条",
+        "hint": "Chain"
+      },
+      {
+        "word": "车座",
+        "hint": "Seat / Saddle"
+      },
+      {
+        "word": "车把",
+        "hint": "Handlebar"
+      },
+      {
+        "word": "头盔",
+        "hint": "Helmet"
+      },
+      {
+        "word": "车灯",
+        "hint": "Bike light"
+      },
+      {
+        "word": "车铃",
+        "hint": "Bicycle bell"
+      },
+      {
+        "word": "轮胎",
+        "hint": "Tire"
+      },
+      {
+        "word": "变速器",
+        "hint": "Gear shifter"
+      },
+      {
+        "word": "车锁",
+        "hint": "Bike lock"
+      },
+      {
+        "word": "打气筒",
+        "hint": "Air pump"
+      },
+      {
+        "word": "自行车道",
+        "hint": "Bike lane"
+      },
+      {
+        "word": "山地车",
+        "hint": "Mountain bike"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Trains & Railways",
+    "description": "Train and railway vocabulary in Chinese",
+    "iconName": "tram",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "火车",
+        "hint": "Train"
+      },
+      {
+        "word": "高铁",
+        "hint": "High-speed rail"
+      },
+      {
+        "word": "地铁",
+        "hint": "Subway / Metro"
+      },
+      {
+        "word": "车站",
+        "hint": "Station"
+      },
+      {
+        "word": "站台",
+        "hint": "Platform"
+      },
+      {
+        "word": "车厢",
+        "hint": "Train carriage"
+      },
+      {
+        "word": "卧铺",
+        "hint": "Sleeper berth"
+      },
+      {
+        "word": "车票",
+        "hint": "Ticket"
+      },
+      {
+        "word": "铁轨",
+        "hint": "Rail / Track"
+      },
+      {
+        "word": "检票",
+        "hint": "Ticket check"
+      },
+      {
+        "word": "晚点",
+        "hint": "Delayed"
+      },
+      {
+        "word": "始发站",
+        "hint": "Starting station"
+      },
+      {
+        "word": "终点站",
+        "hint": "Terminal station"
+      },
+      {
+        "word": "换乘",
+        "hint": "Transfer (trains)"
+      },
+      {
+        "word": "列车员",
+        "hint": "Train conductor"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Mathematics",
+    "description": "Math vocabulary in Chinese",
+    "iconName": "function",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "加法",
+        "hint": "Addition"
+      },
+      {
+        "word": "减法",
+        "hint": "Subtraction"
+      },
+      {
+        "word": "乘法",
+        "hint": "Multiplication"
+      },
+      {
+        "word": "除法",
+        "hint": "Division"
+      },
+      {
+        "word": "分数",
+        "hint": "Fraction"
+      },
+      {
+        "word": "百分比",
+        "hint": "Percentage"
+      },
+      {
+        "word": "方程",
+        "hint": "Equation"
+      },
+      {
+        "word": "几何",
+        "hint": "Geometry"
+      },
+      {
+        "word": "三角形",
+        "hint": "Triangle"
+      },
+      {
+        "word": "圆形",
+        "hint": "Circle"
+      },
+      {
+        "word": "面积",
+        "hint": "Area"
+      },
+      {
+        "word": "体积",
+        "hint": "Volume"
+      },
+      {
+        "word": "平均数",
+        "hint": "Average"
+      },
+      {
+        "word": "概率",
+        "hint": "Probability"
+      },
+      {
+        "word": "坐标",
+        "hint": "Coordinates"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Physics",
+    "description": "Physics vocabulary in Chinese",
+    "iconName": "atom",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "重力",
+        "hint": "Gravity"
+      },
+      {
+        "word": "速度",
+        "hint": "Speed / Velocity"
+      },
+      {
+        "word": "加速度",
+        "hint": "Acceleration"
+      },
+      {
+        "word": "摩擦力",
+        "hint": "Friction"
+      },
+      {
+        "word": "磁铁",
+        "hint": "Magnet"
+      },
+      {
+        "word": "频率",
+        "hint": "Frequency"
+      },
+      {
+        "word": "波长",
+        "hint": "Wavelength"
+      },
+      {
+        "word": "质量",
+        "hint": "Mass"
+      },
+      {
+        "word": "密度",
+        "hint": "Density"
+      },
+      {
+        "word": "温度",
+        "hint": "Temperature"
+      },
+      {
+        "word": "能量",
+        "hint": "Energy"
+      },
+      {
+        "word": "动力",
+        "hint": "Power / Force"
+      },
+      {
+        "word": "光子",
+        "hint": "Photon"
+      },
+      {
+        "word": "原子",
+        "hint": "Atom"
+      },
+      {
+        "word": "粒子",
+        "hint": "Particle"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemistry",
+    "description": "Chemistry vocabulary in Chinese",
+    "iconName": "flask",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "元素",
+        "hint": "Element"
+      },
+      {
+        "word": "分子",
+        "hint": "Molecule"
+      },
+      {
+        "word": "化合物",
+        "hint": "Compound"
+      },
+      {
+        "word": "反应",
+        "hint": "Reaction"
+      },
+      {
+        "word": "溶液",
+        "hint": "Solution"
+      },
+      {
+        "word": "酸",
+        "hint": "Acid"
+      },
+      {
+        "word": "碱",
+        "hint": "Base / Alkali"
+      },
+      {
+        "word": "氧气",
+        "hint": "Oxygen"
+      },
+      {
+        "word": "氢气",
+        "hint": "Hydrogen"
+      },
+      {
+        "word": "试管",
+        "hint": "Test tube"
+      },
+      {
+        "word": "实验",
+        "hint": "Experiment"
+      },
+      {
+        "word": "催化剂",
+        "hint": "Catalyst"
+      },
+      {
+        "word": "蒸馏",
+        "hint": "Distillation"
+      },
+      {
+        "word": "结晶",
+        "hint": "Crystallization"
+      },
+      {
+        "word": "周期表",
+        "hint": "Periodic table"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biology",
+    "description": "Biology vocabulary in Chinese",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "细胞",
+        "hint": "Cell"
+      },
+      {
+        "word": "基因",
+        "hint": "Gene"
+      },
+      {
+        "word": "蛋白质",
+        "hint": "Protein"
+      },
+      {
+        "word": "进化",
+        "hint": "Evolution"
+      },
+      {
+        "word": "细菌",
+        "hint": "Bacteria"
+      },
+      {
+        "word": "病毒",
+        "hint": "Virus"
+      },
+      {
+        "word": "生态",
+        "hint": "Ecology"
+      },
+      {
+        "word": "遗传",
+        "hint": "Heredity / Genetics"
+      },
+      {
+        "word": "光合作用",
+        "hint": "Photosynthesis"
+      },
+      {
+        "word": "呼吸作用",
+        "hint": "Respiration"
+      },
+      {
+        "word": "新陈代谢",
+        "hint": "Metabolism"
+      },
+      {
+        "word": "染色体",
+        "hint": "Chromosome"
+      },
+      {
+        "word": "显微镜",
+        "hint": "Microscope"
+      },
+      {
+        "word": "物种",
+        "hint": "Species"
+      },
+      {
+        "word": "生物链",
+        "hint": "Food chain"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "General Science",
+    "description": "General science vocabulary in Chinese",
+    "iconName": "sparkles",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "科学",
+        "hint": "Science"
+      },
+      {
+        "word": "研究",
+        "hint": "Research"
+      },
+      {
+        "word": "假设",
+        "hint": "Hypothesis"
+      },
+      {
+        "word": "理论",
+        "hint": "Theory"
+      },
+      {
+        "word": "数据",
+        "hint": "Data"
+      },
+      {
+        "word": "证明",
+        "hint": "Proof / Prove"
+      },
+      {
+        "word": "发现",
+        "hint": "Discovery"
+      },
+      {
+        "word": "发明",
+        "hint": "Invention"
+      },
+      {
+        "word": "观察",
+        "hint": "Observation"
+      },
+      {
+        "word": "测量",
+        "hint": "Measurement"
+      },
+      {
+        "word": "结论",
+        "hint": "Conclusion"
+      },
+      {
+        "word": "分析",
+        "hint": "Analysis"
+      },
+      {
+        "word": "报告",
+        "hint": "Report"
+      },
+      {
+        "word": "实验室",
+        "hint": "Laboratory"
+      },
+      {
+        "word": "科学家",
+        "hint": "Scientist"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festivals",
+    "description": "Festival vocabulary in Chinese",
+    "iconName": "sparkles",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "春节",
+        "hint": "Spring Festival / Chinese New Year"
+      },
+      {
+        "word": "中秋节",
+        "hint": "Mid-Autumn Festival"
+      },
+      {
+        "word": "端午节",
+        "hint": "Dragon Boat Festival"
+      },
+      {
+        "word": "元宵节",
+        "hint": "Lantern Festival"
+      },
+      {
+        "word": "清明节",
+        "hint": "Qingming / Tomb-Sweeping Day"
+      },
+      {
+        "word": "国庆节",
+        "hint": "National Day"
+      },
+      {
+        "word": "重阳节",
+        "hint": "Double Ninth Festival"
+      },
+      {
+        "word": "七夕节",
+        "hint": "Qixi / Chinese Valentine's Day"
+      },
+      {
+        "word": "圣诞节",
+        "hint": "Christmas"
+      },
+      {
+        "word": "万圣节",
+        "hint": "Halloween"
+      },
+      {
+        "word": "感恩节",
+        "hint": "Thanksgiving"
+      },
+      {
+        "word": "狂欢节",
+        "hint": "Carnival"
+      },
+      {
+        "word": "复活节",
+        "hint": "Easter"
+      },
+      {
+        "word": "灯笼",
+        "hint": "Lantern"
+      },
+      {
+        "word": "烟花",
+        "hint": "Fireworks"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Traditions & Customs",
+    "description": "Cultural tradition vocabulary in Chinese",
+    "iconName": "scroll",
+    "color": "#b91c1c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "传统",
+        "hint": "Tradition"
+      },
+      {
+        "word": "习俗",
+        "hint": "Custom / Practice"
+      },
+      {
+        "word": "红包",
+        "hint": "Red envelope (lucky money)"
+      },
+      {
+        "word": "对联",
+        "hint": "Couplet (spring scrolls)"
+      },
+      {
+        "word": "年夜饭",
+        "hint": "New Year's Eve dinner"
+      },
+      {
+        "word": "舞龙",
+        "hint": "Dragon dance"
+      },
+      {
+        "word": "舞狮",
+        "hint": "Lion dance"
+      },
+      {
+        "word": "祭祖",
+        "hint": "Ancestor worship"
+      },
+      {
+        "word": "团圆",
+        "hint": "Family reunion"
+      },
+      {
+        "word": "拜年",
+        "hint": "New Year visit / Greetings"
+      },
+      {
+        "word": "月饼",
+        "hint": "Mooncake"
+      },
+      {
+        "word": "粽子",
+        "hint": "Zongzi (rice dumpling)"
+      },
+      {
+        "word": "饺子",
+        "hint": "Dumpling"
+      },
+      {
+        "word": "旗袍",
+        "hint": "Qipao (Chinese dress)"
+      },
+      {
+        "word": "功夫",
+        "hint": "Kung fu"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Weddings",
+    "description": "Wedding vocabulary in Chinese",
+    "iconName": "heart.circle",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "婚礼",
+        "hint": "Wedding ceremony"
+      },
+      {
+        "word": "新郎",
+        "hint": "Groom"
+      },
+      {
+        "word": "新娘",
+        "hint": "Bride"
+      },
+      {
+        "word": "婚纱",
+        "hint": "Wedding dress"
+      },
+      {
+        "word": "戒指",
+        "hint": "Ring"
+      },
+      {
+        "word": "宾客",
+        "hint": "Wedding guest"
+      },
+      {
+        "word": "请柬",
+        "hint": "Invitation card"
+      },
+      {
+        "word": "伴郎",
+        "hint": "Best man"
+      },
+      {
+        "word": "伴娘",
+        "hint": "Bridesmaid"
+      },
+      {
+        "word": "蜜月",
+        "hint": "Honeymoon"
+      },
+      {
+        "word": "婚宴",
+        "hint": "Wedding banquet"
+      },
+      {
+        "word": "花束",
+        "hint": "Bouquet"
+      },
+      {
+        "word": "誓言",
+        "hint": "Vows"
+      },
+      {
+        "word": "婚车",
+        "hint": "Wedding car"
+      },
+      {
+        "word": "喜糖",
+        "hint": "Wedding candy / Favor"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Holidays & Vacations",
+    "description": "Holiday and vacation vocabulary in Chinese",
+    "iconName": "sun.max",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "假期",
+        "hint": "Holiday / Vacation"
+      },
+      {
+        "word": "旅行",
+        "hint": "Trip / Travel"
+      },
+      {
+        "word": "度假",
+        "hint": "Go on vacation"
+      },
+      {
+        "word": "酒店",
+        "hint": "Hotel"
+      },
+      {
+        "word": "民宿",
+        "hint": "Homestay / B&B"
+      },
+      {
+        "word": "景点",
+        "hint": "Tourist attraction"
+      },
+      {
+        "word": "纪念品",
+        "hint": "Souvenir"
+      },
+      {
+        "word": "导游",
+        "hint": "Tour guide"
+      },
+      {
+        "word": "签证",
+        "hint": "Visa"
+      },
+      {
+        "word": "行李",
+        "hint": "Luggage / Baggage"
+      },
+      {
+        "word": "退房",
+        "hint": "Check out"
+      },
+      {
+        "word": "入住",
+        "hint": "Check in"
+      },
+      {
+        "word": "自由行",
+        "hint": "Independent travel"
+      },
+      {
+        "word": "跟团游",
+        "hint": "Group tour"
+      },
+      {
+        "word": "明信片",
+        "hint": "Postcard"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Celebrations",
+    "description": "Celebration vocabulary in Chinese",
+    "iconName": "party.popper",
+    "color": "#d946ef",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "庆祝",
+        "hint": "Celebrate / Celebration"
+      },
+      {
+        "word": "生日",
+        "hint": "Birthday"
+      },
+      {
+        "word": "蛋糕",
+        "hint": "Cake"
+      },
+      {
+        "word": "蜡烛",
+        "hint": "Candle"
+      },
+      {
+        "word": "气球",
+        "hint": "Balloon"
+      },
+      {
+        "word": "礼物",
+        "hint": "Gift / Present"
+      },
+      {
+        "word": "派对",
+        "hint": "Party"
+      },
+      {
+        "word": "祝福",
+        "hint": "Blessing / Wish"
+      },
+      {
+        "word": "惊喜",
+        "hint": "Surprise"
+      },
+      {
+        "word": "毕业",
+        "hint": "Graduation"
+      },
+      {
+        "word": "周年",
+        "hint": "Anniversary"
+      },
+      {
+        "word": "干杯",
+        "hint": "Cheers / Toast"
+      },
+      {
+        "word": "合影",
+        "hint": "Group photo"
+      },
+      {
+        "word": "彩带",
+        "hint": "Streamer / Ribbon"
+      },
+      {
+        "word": "鞭炮",
+        "hint": "Firecrackers"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Fashion",
+    "description": "Fashion vocabulary in Chinese",
+    "iconName": "tshirt",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "时尚",
+        "hint": "Fashion / Trendy"
+      },
+      {
+        "word": "潮流",
+        "hint": "Trend"
+      },
+      {
+        "word": "品牌",
+        "hint": "Brand"
+      },
+      {
+        "word": "款式",
+        "hint": "Style / Design"
+      },
+      {
+        "word": "尺码",
+        "hint": "Size"
+      },
+      {
+        "word": "搭配",
+        "hint": "Match / Coordinate (outfit)"
+      },
+      {
+        "word": "模特",
+        "hint": "Model"
+      },
+      {
+        "word": "时装秀",
+        "hint": "Fashion show"
+      },
+      {
+        "word": "设计师",
+        "hint": "Designer"
+      },
+      {
+        "word": "复古",
+        "hint": "Retro / Vintage"
+      },
+      {
+        "word": "休闲装",
+        "hint": "Casual wear"
+      },
+      {
+        "word": "正装",
+        "hint": "Formal wear"
+      },
+      {
+        "word": "定制",
+        "hint": "Custom-made / Tailored"
+      },
+      {
+        "word": "流行",
+        "hint": "Popular / In style"
+      },
+      {
+        "word": "配饰",
+        "hint": "Accessories"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Textiles & Fabrics",
+    "description": "Textile and fabric vocabulary in Chinese",
+    "iconName": "rectangle.stack",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "丝绸",
+        "hint": "Silk"
+      },
+      {
+        "word": "棉花",
+        "hint": "Cotton"
+      },
+      {
+        "word": "羊毛",
+        "hint": "Wool"
+      },
+      {
+        "word": "麻布",
+        "hint": "Linen"
+      },
+      {
+        "word": "织物",
+        "hint": "Fabric / Textile"
+      },
+      {
+        "word": "皮革",
+        "hint": "Leather"
+      },
+      {
+        "word": "尼龙",
+        "hint": "Nylon"
+      },
+      {
+        "word": "涤纶",
+        "hint": "Polyester"
+      },
+      {
+        "word": "天鹅绒",
+        "hint": "Velvet"
+      },
+      {
+        "word": "牛仔布",
+        "hint": "Denim"
+      },
+      {
+        "word": "纱线",
+        "hint": "Yarn / Thread"
+      },
+      {
+        "word": "纺织",
+        "hint": "Weaving / Spinning"
+      },
+      {
+        "word": "印花",
+        "hint": "Printed pattern"
+      },
+      {
+        "word": "刺绣",
+        "hint": "Embroidery"
+      },
+      {
+        "word": "拉链",
+        "hint": "Zipper"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Jewelry",
+    "description": "Jewelry vocabulary in Chinese",
+    "iconName": "sparkle",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "项链",
+        "hint": "Necklace"
+      },
+      {
+        "word": "手镯",
+        "hint": "Bracelet"
+      },
+      {
+        "word": "耳环",
+        "hint": "Earring"
+      },
+      {
+        "word": "戒指",
+        "hint": "Ring"
+      },
+      {
+        "word": "珠宝",
+        "hint": "Jewelry"
+      },
+      {
+        "word": "钻石",
+        "hint": "Diamond"
+      },
+      {
+        "word": "翡翠",
+        "hint": "Jade"
+      },
+      {
+        "word": "珍珠",
+        "hint": "Pearl"
+      },
+      {
+        "word": "黄金",
+        "hint": "Gold"
+      },
+      {
+        "word": "白银",
+        "hint": "Silver"
+      },
+      {
+        "word": "宝石",
+        "hint": "Gemstone"
+      },
+      {
+        "word": "胸针",
+        "hint": "Brooch"
+      },
+      {
+        "word": "吊坠",
+        "hint": "Pendant"
+      },
+      {
+        "word": "手表",
+        "hint": "Watch / Wristwatch"
+      },
+      {
+        "word": "发簪",
+        "hint": "Hairpin"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Cosmetics & Beauty",
+    "description": "Cosmetics and beauty vocabulary in Chinese",
+    "iconName": "paintbrush.pointed",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "化妆品",
+        "hint": "Cosmetics / Makeup"
+      },
+      {
+        "word": "口红",
+        "hint": "Lipstick"
+      },
+      {
+        "word": "粉底",
+        "hint": "Foundation"
+      },
+      {
+        "word": "眼影",
+        "hint": "Eye shadow"
+      },
+      {
+        "word": "睫毛膏",
+        "hint": "Mascara"
+      },
+      {
+        "word": "腮红",
+        "hint": "Blush"
+      },
+      {
+        "word": "护肤品",
+        "hint": "Skincare products"
+      },
+      {
+        "word": "面膜",
+        "hint": "Face mask"
+      },
+      {
+        "word": "防晒霜",
+        "hint": "Sunscreen"
+      },
+      {
+        "word": "卸妆",
+        "hint": "Remove makeup"
+      },
+      {
+        "word": "香水",
+        "hint": "Perfume"
+      },
+      {
+        "word": "指甲油",
+        "hint": "Nail polish"
+      },
+      {
+        "word": "保湿霜",
+        "hint": "Moisturizer"
+      },
+      {
+        "word": "眉笔",
+        "hint": "Eyebrow pencil"
+      },
+      {
+        "word": "遮瑕膏",
+        "hint": "Concealer"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Hairstyles",
+    "description": "Hairstyle vocabulary in Chinese",
+    "iconName": "scissors",
+    "color": "#be185d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "发型",
+        "hint": "Hairstyle"
+      },
+      {
+        "word": "理发",
+        "hint": "Haircut"
+      },
+      {
+        "word": "烫发",
+        "hint": "Perm"
+      },
+      {
+        "word": "染发",
+        "hint": "Hair dyeing"
+      },
+      {
+        "word": "刘海",
+        "hint": "Bangs / Fringe"
+      },
+      {
+        "word": "马尾",
+        "hint": "Ponytail"
+      },
+      {
+        "word": "辫子",
+        "hint": "Braid / Plait"
+      },
+      {
+        "word": "短发",
+        "hint": "Short hair"
+      },
+      {
+        "word": "长发",
+        "hint": "Long hair"
+      },
+      {
+        "word": "卷发",
+        "hint": "Curly hair"
+      },
+      {
+        "word": "直发",
+        "hint": "Straight hair"
+      },
+      {
+        "word": "发胶",
+        "hint": "Hair gel"
+      },
+      {
+        "word": "护发素",
+        "hint": "Conditioner"
+      },
+      {
+        "word": "发夹",
+        "hint": "Hair clip"
+      },
+      {
+        "word": "理发师",
+        "hint": "Barber / Hairdresser"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Environment",
+    "description": "Environmental vocabulary in Chinese",
+    "iconName": "globe.americas",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "环境",
+        "hint": "Environment"
+      },
+      {
+        "word": "污染",
+        "hint": "Pollution"
+      },
+      {
+        "word": "森林",
+        "hint": "Forest"
+      },
+      {
+        "word": "湿地",
+        "hint": "Wetland"
+      },
+      {
+        "word": "生态系统",
+        "hint": "Ecosystem"
+      },
+      {
+        "word": "野生动物",
+        "hint": "Wildlife"
+      },
+      {
+        "word": "保护区",
+        "hint": "Nature reserve"
+      },
+      {
+        "word": "灭绝",
+        "hint": "Extinction"
+      },
+      {
+        "word": "濒危",
+        "hint": "Endangered"
+      },
+      {
+        "word": "植被",
+        "hint": "Vegetation"
+      },
+      {
+        "word": "臭氧层",
+        "hint": "Ozone layer"
+      },
+      {
+        "word": "排放",
+        "hint": "Emissions"
+      },
+      {
+        "word": "废水",
+        "hint": "Wastewater"
+      },
+      {
+        "word": "沙尘暴",
+        "hint": "Sandstorm"
+      },
+      {
+        "word": "环保",
+        "hint": "Environmental protection"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recycling",
+    "description": "Recycling vocabulary in Chinese",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "回收",
+        "hint": "Recycle / Recycling"
+      },
+      {
+        "word": "垃圾",
+        "hint": "Trash / Garbage"
+      },
+      {
+        "word": "分类",
+        "hint": "Sort / Classify"
+      },
+      {
+        "word": "废品",
+        "hint": "Waste / Scrap"
+      },
+      {
+        "word": "塑料",
+        "hint": "Plastic"
+      },
+      {
+        "word": "纸板",
+        "hint": "Cardboard"
+      },
+      {
+        "word": "玻璃瓶",
+        "hint": "Glass bottle"
+      },
+      {
+        "word": "铝罐",
+        "hint": "Aluminum can"
+      },
+      {
+        "word": "电子垃圾",
+        "hint": "E-waste"
+      },
+      {
+        "word": "有机垃圾",
+        "hint": "Organic waste"
+      },
+      {
+        "word": "填埋场",
+        "hint": "Landfill"
+      },
+      {
+        "word": "焚烧炉",
+        "hint": "Incinerator"
+      },
+      {
+        "word": "可降解",
+        "hint": "Biodegradable"
+      },
+      {
+        "word": "循环利用",
+        "hint": "Reuse"
+      },
+      {
+        "word": "垃圾桶",
+        "hint": "Trash can / Bin"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energy",
+    "description": "Energy vocabulary in Chinese",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "太阳能",
+        "hint": "Solar energy"
+      },
+      {
+        "word": "风能",
+        "hint": "Wind energy"
+      },
+      {
+        "word": "核能",
+        "hint": "Nuclear energy"
+      },
+      {
+        "word": "水力",
+        "hint": "Hydropower"
+      },
+      {
+        "word": "电力",
+        "hint": "Electric power"
+      },
+      {
+        "word": "石油",
+        "hint": "Petroleum / Oil"
+      },
+      {
+        "word": "天然气",
+        "hint": "Natural gas"
+      },
+      {
+        "word": "煤炭",
+        "hint": "Coal"
+      },
+      {
+        "word": "可再生",
+        "hint": "Renewable"
+      },
+      {
+        "word": "发电站",
+        "hint": "Power plant"
+      },
+      {
+        "word": "太阳能板",
+        "hint": "Solar panel"
+      },
+      {
+        "word": "风力发电",
+        "hint": "Wind power generation"
+      },
+      {
+        "word": "电网",
+        "hint": "Power grid"
+      },
+      {
+        "word": "节能",
+        "hint": "Energy saving"
+      },
+      {
+        "word": "碳排放",
+        "hint": "Carbon emissions"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Climate",
+    "description": "Climate vocabulary in Chinese",
+    "iconName": "thermometer",
+    "color": "#ea580c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "气候",
+        "hint": "Climate"
+      },
+      {
+        "word": "全球变暖",
+        "hint": "Global warming"
+      },
+      {
+        "word": "温室效应",
+        "hint": "Greenhouse effect"
+      },
+      {
+        "word": "冰帽",
+        "hint": "Ice cap"
+      },
+      {
+        "word": "海平面",
+        "hint": "Sea level"
+      },
+      {
+        "word": "干旱",
+        "hint": "Drought"
+      },
+      {
+        "word": "洪水",
+        "hint": "Flood"
+      },
+      {
+        "word": "台风",
+        "hint": "Typhoon"
+      },
+      {
+        "word": "暴风雪",
+        "hint": "Blizzard / Snowstorm"
+      },
+      {
+        "word": "热浪",
+        "hint": "Heat wave"
+      },
+      {
+        "word": "气温",
+        "hint": "Air temperature"
+      },
+      {
+        "word": "降雨量",
+        "hint": "Rainfall"
+      },
+      {
+        "word": "季风",
+        "hint": "Monsoon"
+      },
+      {
+        "word": "碳足迹",
+        "hint": "Carbon footprint"
+      },
+      {
+        "word": "气候变化",
+        "hint": "Climate change"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Sustainability",
+    "description": "Sustainability vocabulary in Chinese",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "可持续",
+        "hint": "Sustainable"
+      },
+      {
+        "word": "绿色",
+        "hint": "Green (eco)"
+      },
+      {
+        "word": "有机食品",
+        "hint": "Organic food"
+      },
+      {
+        "word": "低碳",
+        "hint": "Low carbon"
+      },
+      {
+        "word": "生态农业",
+        "hint": "Ecological agriculture"
+      },
+      {
+        "word": "公平贸易",
+        "hint": "Fair trade"
+      },
+      {
+        "word": "零废弃",
+        "hint": "Zero waste"
+      },
+      {
+        "word": "节水",
+        "hint": "Water conservation"
+      },
+      {
+        "word": "植树造林",
+        "hint": "Afforestation"
+      },
+      {
+        "word": "绿色建筑",
+        "hint": "Green building"
+      },
+      {
+        "word": "共享经济",
+        "hint": "Sharing economy"
+      },
+      {
+        "word": "新能源",
+        "hint": "New energy"
+      },
+      {
+        "word": "碳中和",
+        "hint": "Carbon neutrality"
+      },
+      {
+        "word": "环保袋",
+        "hint": "Eco-friendly bag"
+      },
+      {
+        "word": "可降解材料",
+        "hint": "Biodegradable material"
+      }
+    ]
+  }
+]

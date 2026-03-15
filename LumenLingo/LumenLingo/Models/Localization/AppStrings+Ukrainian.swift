@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "Складайте слова літера за літерою з перемішаних підказок",
         craftAndDiscover: "Створюйте та відкривайте",
         recentActivity: "Остання активність",
+        resetProgress: "Скинути прогрес",
+        resetProgressMessage: "Це видалить усі XP, рівні, серії, історію ігор та засвоєний контент. Цю дію неможливо скасувати.",
+        progressReset: "Прогрес було скинуто",
+        startFreshDescription: "Очистіть увесь прогрес, XP, серії та історію ігор, щоб почати навчання з нуля.",
 
         // Language Selection
         languages: "Мови",
@@ -40,9 +44,11 @@ extension AppStrings {
         iSpeak: "Я говорю",
         imLearning: "Я вивчаю",
         noLanguagesAvailable: "Немає доступних мов для цього джерела.",
-        betaLanguagePairs: "Бета-мовні пари",
-        showExperimentalPairs: "Показати експериментальні пари з обмеженим вмістом",
         confirm: "Підтвердити:",
+        done: "Готово",
+        languagesAvailable: "доступних мов",
+        startYourAdventure: "Почни Свою Пригоду",
+        keepLearning: "Продовжуй Вчитися",
 
         // Categories
         back: "Назад",
@@ -81,6 +87,7 @@ extension AppStrings {
         undo: "Скасувати",
         clear: "Очистити",
         check: "Перевірити",
+        hint: "Підказка",
         noWordsAvailable: "Немає доступних слів",
 
         // Game Complete
@@ -97,6 +104,7 @@ extension AppStrings {
         correct: "Правильно",
         toReview: "На повторення",
         playAgain: "Грати знову",
+        nextCategory: "Наступна категорія",
         backToCategories: "До категорій",
 
         // Journey
@@ -106,8 +114,14 @@ extension AppStrings {
         firstSteps: "Перші кроки",
         gettingStarted: "Початок шляху",
         dedicatedLearner: "Відданий учень",
+        risingStar: "Зірка, що сходить",
         wordWarrior: "Воїн слів",
+        knowledgeSeeker: "Шукач знань",
+        sentenceCrafter: "Майстер речень",
+        grammarGuardian: "Страж граматики",
+        vocabularyVirtuoso: "Віртуоз словника",
         languageMaster: "Майстер мови",
+        fluencyPioneer: "Піонер вільного мовлення",
         polyglotLegend: "Легенда-поліглот",
         xpRequired: "Потрібно XP",
         overview: "Огляд",
@@ -121,7 +135,6 @@ extension AppStrings {
         // Profile
         appearance: "Вигляд",
         sound: "Звук",
-        beta: "Бета",
         sync: "Синхронізація",
         signOut: "Вийти",
         darkLight: "Темна/Світла",
@@ -156,18 +169,6 @@ extension AppStrings {
         levelUpFanfares: "Фанфари за підвищення рівня та серії",
         ambientAudio: "Фонове аудіо",
         backgroundAtmospheric: "Фонові атмосферні звуки",
-
-        // Beta Languages
-        betaLanguages: "Бета-мови",
-        experimentalLanguagePairs: "Експериментальні мовні пари",
-        experimentalFeatures: "Експериментальні функції",
-        betaLimitedContent: "Бета-мови можуть мати обмежений вміст або випадкові неточності в перекладі.",
-        coreLanguages: "Основні мови",
-        alwaysOn: "Завжди увімкнено",
-        active: "Активно",
-        experimentalLanguagesSection: "Експериментальні мови",
-        on: "Увімк.",
-        off: "Вимк.",
 
         // Sync
         cloudSync: "Хмарна синхронізація",
@@ -240,6 +241,12 @@ extension AppStrings {
         vivid: "Яскраво",
         driftSpeed: "Швидкість дрейфу",
         frozen: "Заморожено",
+        nebulaDescLagoon: "Ефірні рожево-фіолетові хмари, де новонароджені зорі спалахують серед стовпів космічного пилу",
+        nebulaDescCelestial: "Нескінченний бірюзовий океан сяйного газу, що мерехтить відблисками зоряного світла",
+        nebulaDescAndromeda: "Трильйон сонць завис на краю галактики, бурштинове світло розчиняється в глибокому індиго космосу",
+        nebulaDescSolarAurora: "Золоті стрічки заряджених частинок ллються крізь магнітні поля, забарвлюючи порожнечу теплом",
+        nebulaDescSpiralHalo: "Сто мільярдів зірок кружляють у досконалій гармонії, їхнє фіолетове сяйво вкриває гравітаційні стежки",
+        nebulaDescStarburst: "Яскравий кільцевий спалах зореутворення, електрично-сині та маджентові дуги палають сяйною енергією",
 
         // Membership
         plansAndPricing: "Плани та ціни",

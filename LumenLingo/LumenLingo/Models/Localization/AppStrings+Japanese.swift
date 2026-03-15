@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "スクランブルされたヒントから一文字ずつ単語を組み立てよう",
         craftAndDiscover: "組み立てて発見",
         recentActivity: "最近のアクティビティ",
+        resetProgress: "進捗をリセット",
+        resetProgressMessage: "すべてのXP、レベル、連続記録、ゲーム履歴、習得済みコンテンツが削除されます。この操作は元に戻せません。",
+        progressReset: "進捗がリセットされました",
+        startFreshDescription: "すべての進捗、XP、連続記録、ゲーム履歴をクリアして、学習を最初からやり直しましょう。",
 
         // Language Selection
         languages: "言語",
@@ -40,9 +44,11 @@ extension AppStrings {
         iSpeak: "話せる言語",
         imLearning: "学習中の言語",
         noLanguagesAvailable: "このソース言語で利用できる言語はありません。",
-        betaLanguagePairs: "ベータ言語ペア",
-        showExperimentalPairs: "コンテンツが限定的な実験的ペアを表示",
         confirm: "確認：",
+        done: "完了",
+        languagesAvailable: "言語が利用可能",
+        startYourAdventure: "冒険を始めよう",
+        keepLearning: "学び続けよう",
 
         // Categories
         back: "戻る",
@@ -81,6 +87,7 @@ extension AppStrings {
         undo: "元に戻す",
         clear: "クリア",
         check: "チェック",
+        hint: "ヒント",
         noWordsAvailable: "利用可能な単語がありません",
 
         // Game Complete
@@ -97,6 +104,7 @@ extension AppStrings {
         correct: "正解",
         toReview: "復習",
         playAgain: "もう一度プレイ",
+        nextCategory: "次のカテゴリー",
         backToCategories: "カテゴリーに戻る",
 
         // Journey
@@ -106,8 +114,14 @@ extension AppStrings {
         firstSteps: "最初の一歩",
         gettingStarted: "スタート",
         dedicatedLearner: "熱心な学習者",
+        risingStar: "ライジングスター",
         wordWarrior: "ワードウォリアー",
+        knowledgeSeeker: "知識の探求者",
+        sentenceCrafter: "文章の職人",
+        grammarGuardian: "文法の守護者",
+        vocabularyVirtuoso: "語彙の達人",
         languageMaster: "ランゲージマスター",
+        fluencyPioneer: "流暢さの先駆者",
         polyglotLegend: "ポリグロットレジェンド",
         xpRequired: "必要 XP",
         overview: "概要",
@@ -121,7 +135,6 @@ extension AppStrings {
         // Profile
         appearance: "外観",
         sound: "サウンド",
-        beta: "ベータ",
         sync: "同期",
         signOut: "サインアウト",
         darkLight: "ダーク/ライト",
@@ -156,18 +169,6 @@ extension AppStrings {
         levelUpFanfares: "レベルアップファンファーレと連続ボーナス",
         ambientAudio: "アンビエントオーディオ",
         backgroundAtmospheric: "バックグラウンド環境サウンド",
-
-        // Beta Languages
-        betaLanguages: "ベータ言語",
-        experimentalLanguagePairs: "実験的な言語ペア",
-        experimentalFeatures: "実験的な機能",
-        betaLimitedContent: "ベータ言語はコンテンツが限定的であったり、翻訳に不備がある場合があります。",
-        coreLanguages: "コア言語",
-        alwaysOn: "常にオン",
-        active: "有効",
-        experimentalLanguagesSection: "実験的な言語",
-        on: "オン",
-        off: "オフ",
 
         // Sync
         cloudSync: "クラウド同期",
@@ -240,6 +241,12 @@ extension AppStrings {
         vivid: "鮮やか",
         driftSpeed: "ドリフト速度",
         frozen: "静止",
+        nebulaDescLagoon: "淡いピンクと紫の雲の中で生まれたばかりの星が星間塵の柱の中で輝きを放つ",
+        nebulaDescCelestial: "無限に広がるターコイズ色の輝くガスの海、シアンとティールの星明かりが揺らめく",
+        nebulaDescAndromeda: "銀河の果てに浮かぶ一兆の太陽、琥珀色の光が深い藍色の宇宙に溶けてゆく",
+        nebulaDescSolarAurora: "帯電した粒子の金色のリボンが磁場を流れ落ち、虚空をあたたかく彩る",
+        nebulaDescSpiralHalo: "千億の星が完璧な調和を描きながら渦を巻き、紫の輝きが重力の軌跡をたどる",
+        nebulaDescStarburst: "急速な星形成の輝くリング、エレクトリックブルーとマゼンタのアークが眩い光を放つ",
 
         // Membership
         plansAndPricing: "プランと料金",

@@ -35,6 +35,14 @@ struct DashboardView: View {
         return "\(src) → \(tgt)"
     }
 
+    private var currentSourceCode: String {
+        languagePrefs.first.flatMap { SupportedLanguage(rawValue: $0.sourceLanguage) }?.countryCode ?? "GB"
+    }
+
+    private var currentTargetCode: String {
+        languagePrefs.first.flatMap { SupportedLanguage(rawValue: $0.targetLanguage) }?.countryCode ?? "ES"
+    }
+
     var body: some View {
         ZStack(alignment: .bottom) {
             ScrollView {
@@ -80,30 +88,34 @@ struct DashboardView: View {
 
     private var languageSelector: some View {
         Button {
+            AudioService.shared.playLanguageHover()
+            HapticsService.shared.buttonPress()
             showLanguageSheet = true
         } label: {
             HStack(spacing: 8) {
-                Image(systemName: "globe")
-                    .font(.system(size: 14))
-                    .foregroundStyle(Color(hex: "#667eea"))
+                ZStack {
+                    CountryFlagView(countryCode: currentTargetCode, size: 14)
+                        .offset(x: 4, y: 3)
+
+                    CountryFlagView(countryCode: currentSourceCode, size: 14)
+                        .shadow(color: .black.opacity(0.15), radius: 1, y: 1)
+                }
+                .frame(width: 26, height: 20)
 
                 Text(currentLanguagePair)
-                    .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(isDark ? .white.opacity(0.85) : .caribbeanInk)
+                    .font(.subheadline.weight(.medium))
+                    .foregroundStyle(isDark ? .white.opacity(0.9) : .primary)
 
                 Image(systemName: "chevron.down")
-                    .font(.system(size: 10, weight: .bold))
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    .font(.system(size: 10, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.35) : .secondary)
             }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 8)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 7)
             .background(
                 Capsule()
                     .fill(.ultraThinMaterial)
-                    .overlay(
-                        Capsule()
-                            .strokeBorder(.white.opacity(0.1), lineWidth: 1)
-                    )
+                    .shadow(color: .black.opacity(isDark ? 0.15 : 0.08), radius: 6, y: 2)
             )
         }
         .buttonStyle(LumenPressStyle(weight: .medium))
@@ -115,10 +127,10 @@ struct DashboardView: View {
     private var dashboardHeader: some View {
         VStack(spacing: 16) {
             // Avatar + Greeting row
-            HStack(spacing: 14) {
+            HStack(spacing: 10) {
                 // Gradient avatar
                 ZStack {
-                    RoundedRectangle(cornerRadius: 18)
+                    RoundedRectangle(cornerRadius: 14)
                         .fill(
                             LinearGradient(
                                 colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
@@ -126,17 +138,17 @@ struct DashboardView: View {
                                 endPoint: .bottomTrailing
                             )
                         )
-                        .frame(width: 56, height: 56)
+                        .frame(width: 44, height: 44)
                         .shadow(color: Color(hex: "#764ba2").opacity(0.4), radius: 12)
 
                     Image(systemName: "person.fill")
-                        .font(.system(size: 24))
+                        .font(.system(size: 18))
                         .foregroundStyle(.white)
                 }
 
-                VStack(alignment: .leading, spacing: 4) {
+                VStack(alignment: .leading, spacing: 2) {
                     Text("Hello, \(user.firstName)!")
-                        .font(.title2.bold())
+                        .font(.system(size: 18, weight: .bold))
                         .foregroundStyle(
                             LinearGradient(
                                 colors: [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#d946ef")],
@@ -144,9 +156,11 @@ struct DashboardView: View {
                                 endPoint: .trailing
                             )
                         )
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.8)
 
                     Text("Ready for a new adventure?")
-                        .font(.subheadline)
+                        .font(.system(size: 13))
                         .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 }
 
@@ -177,7 +191,7 @@ struct DashboardView: View {
                     .transition(.opacity)
             }
         }
-        .padding(20)
+        .padding(16)
         .background(GlassCardBackground())
         .onTapGesture {
             if isHeaderCollapsed {
@@ -189,7 +203,7 @@ struct DashboardView: View {
     }
 
     private var statsRow: some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 8) {
             statCard(
                 title: "Level",
                 value: "\(profile?.currentLevel ?? 1)",
@@ -208,7 +222,7 @@ struct DashboardView: View {
             )
 
             statCard(
-                title: "Active Days",
+                title: "Days",
                 value: "\(profile?.streakDays ?? 0)",
                 icon: "trophy.fill",
                 iconColor: .orange,
@@ -225,19 +239,21 @@ struct DashboardView: View {
         gradient: [Color],
         progress: Double? = nil
     ) -> some View {
-        VStack(spacing: 8) {
-            HStack(spacing: 6) {
+        VStack(spacing: 6) {
+            HStack(spacing: 4) {
                 Image(systemName: icon)
-                    .font(.system(size: 14))
+                    .font(.system(size: 12))
                     .foregroundStyle(iconColor)
                     .shadow(color: iconColor.opacity(0.5), radius: 4)
                 Text(value)
-                    .font(.title3.bold())
+                    .font(.system(size: 16, weight: .bold))
                     .foregroundStyle(isDark ? .white : .caribbeanInk)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
             }
 
             Text(title)
-                .font(.caption)
+                .font(.system(size: 10))
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
 
             if let progress {
@@ -247,15 +263,18 @@ struct DashboardView: View {
                     gradient: gradient,
                     showGlow: false
                 )
+            } else {
+                // Invisible spacer matching progress bar height for alignment
+                Color.clear.frame(height: 4)
             }
         }
         .frame(maxWidth: .infinity)
-        .padding(12)
+        .padding(8)
         .background(
-            RoundedRectangle(cornerRadius: 14)
+            RoundedRectangle(cornerRadius: 12)
                 .fill(isDark ? .white.opacity(0.06) : .white.opacity(0.45))
                 .overlay(
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 12)
                         .strokeBorder(isDark ? .white.opacity(0.08) : Color.caribbeanMist.opacity(0.15), lineWidth: 1)
                 )
         )
@@ -412,7 +431,7 @@ struct DashboardView: View {
                 VStack(spacing: 12) {
                     HStack {
                         Text("Recent Activity")
-                            .font(.system(size: 19, weight: .bold))
+                            .font(.system(size: 16, weight: .bold))
                             .foregroundStyle(
                                 LinearGradient(
                                     colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
@@ -446,7 +465,7 @@ struct DashboardView: View {
         let type = record.gameTypeEnum ?? .flashCards
         let colors = GameCardColorScheme.forType(type)
 
-        return HStack(spacing: 12) {
+        return HStack(spacing: 10) {
             // Game type icon
             ZStack {
                 Circle()
@@ -457,31 +476,39 @@ struct DashboardView: View {
                             endPoint: .bottomTrailing
                         )
                     )
-                    .frame(width: 40, height: 40)
+                    .frame(width: 34, height: 34)
 
                 Image(systemName: gameTypeIcon(type))
-                    .font(.system(size: 16))
+                    .font(.system(size: 14))
                     .foregroundStyle(colors.primary)
             }
 
             VStack(alignment: .leading, spacing: 2) {
                 Text("\(type.displayName) · \(record.categoryName)")
-                    .font(.subheadline.bold())
+                    .font(.system(size: 13, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .caribbeanInk)
                     .lineLimit(1)
 
-                Text("+\(record.score) XP · \(record.correctAnswers)/\(record.totalQuestions) correct · \(record.completedAt.timeAgoDisplay)")
-                    .font(.caption)
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                HStack(spacing: 4) {
+                    Text("+\(record.score) XP")
+                    Text("·")
+                    Text("\(record.correctAnswers)/\(record.totalQuestions)")
+                    Text("·")
+                    Text(record.completedAt.timeAgoDisplay)
+                }
+                .font(.system(size: 11))
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
             }
 
-            Spacer()
+            Spacer(minLength: 0)
 
             Image(systemName: "chevron.right")
-                .font(.caption)
+                .font(.system(size: 10))
                 .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
         }
-        .padding(.vertical, 6)
+        .padding(.vertical, 5)
     }
 
     // MARK: - Fog Overlay
@@ -645,9 +672,9 @@ struct DashboardGameCard: View {
                     iconView
 
                     // Title + Description
-                    VStack(alignment: .leading, spacing: 6) {
+                    VStack(alignment: .leading, spacing: 4) {
                         Text(title)
-                            .font(.system(size: 19, weight: .bold))
+                            .font(.system(size: 16, weight: .bold))
                             .foregroundStyle(
                                 LinearGradient(
                                     colors: [colorScheme.primary, colorScheme.secondary],
@@ -657,23 +684,23 @@ struct DashboardGameCard: View {
                             )
 
                         Text(description)
-                            .font(.system(size: 14, weight: .medium))
+                            .font(.system(size: 12, weight: .medium))
                             .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-                            .lineLimit(3)
+                            .lineLimit(2)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
-                .padding(.top, 24)
-                .padding(.horizontal, 20)
+                .padding(.top, 20)
+                .padding(.horizontal, 16)
 
                 // CTA row — premium gradient capsule
                 HStack {
                     Spacer()
-                    HStack(spacing: 8) {
+                    HStack(spacing: 6) {
                         Text(cta)
-                            .font(.system(size: 13, weight: .bold))
+                            .font(.system(size: 12, weight: .bold))
                         Image(systemName: "arrow.right")
-                            .font(.system(size: 11, weight: .bold))
+                            .font(.system(size: 10, weight: .bold))
                     }
                     .foregroundStyle(.white)
                     .padding(.horizontal, 16)
@@ -704,9 +731,9 @@ struct DashboardGameCard: View {
                     )
                     .shadow(color: colorScheme.primary.opacity(0.35), radius: 10, y: 3)
                 }
-                .padding(.top, 14)
-                .padding(.trailing, 20)
-                .padding(.bottom, 20)
+                .padding(.top, 10)
+                .padding(.trailing, 16)
+                .padding(.bottom, 16)
             }
         }
         .background(
@@ -756,19 +783,19 @@ struct DashboardGameCard: View {
             // Pulsing glow background orbs
             Circle()
                 .fill(colorScheme.primary.opacity(0.15))
-                .frame(width: 56, height: 56)
+                .frame(width: 48, height: 48)
                 .scaleEffect(1.0 + iconPulse * 0.15)
                 .blur(radius: 8)
 
             Circle()
                 .fill(colorScheme.secondary.opacity(0.1))
-                .frame(width: 48, height: 48)
+                .frame(width: 40, height: 40)
                 .scaleEffect(1.0 + iconPulse * 0.1)
                 .blur(radius: 6)
                 .offset(x: 4, y: 4)
 
             // Icon container
-            RoundedRectangle(cornerRadius: 14)
+            RoundedRectangle(cornerRadius: 12)
                 .fill(
                     LinearGradient(
                         colors: colorScheme.gradient,
@@ -776,10 +803,10 @@ struct DashboardGameCard: View {
                         endPoint: .bottomTrailing
                     )
                 )
-                .frame(width: 48, height: 48)
+                .frame(width: 40, height: 40)
                 .overlay(
                     // Inner glow highlight
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 12)
                         .fill(
                             LinearGradient(
                                 colors: [.white.opacity(0.25), .clear],
@@ -789,14 +816,14 @@ struct DashboardGameCard: View {
                         )
                 )
                 .overlay(
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 12)
                         .strokeBorder(.white.opacity(0.2), lineWidth: 1)
                 )
                 .shadow(color: colorScheme.primary.opacity(0.4 + iconPulse * 0.2), radius: 12)
 
             // Icon symbol
             Image(systemName: icon)
-                .font(.system(size: 22, weight: .medium))
+                .font(.system(size: 18, weight: .medium))
                 .foregroundStyle(.white)
                 .shadow(color: .white.opacity(0.3), radius: 2)
         }

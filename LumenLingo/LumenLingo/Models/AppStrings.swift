@@ -33,6 +33,10 @@ struct AppStrings {
     let wordBuilderDescription: String
     let craftAndDiscover: String
     let recentActivity: String
+    let resetProgress: String
+    let resetProgressMessage: String
+    let progressReset: String
+    let startFreshDescription: String
 
     // MARK: - Language Selection
     let languages: String
@@ -43,9 +47,11 @@ struct AppStrings {
     let iSpeak: String
     let imLearning: String
     let noLanguagesAvailable: String
-    let betaLanguagePairs: String
-    let showExperimentalPairs: String
     let confirm: String
+    let done: String
+    let languagesAvailable: String
+    let startYourAdventure: String
+    let keepLearning: String
 
     // MARK: - Categories
     let back: String
@@ -84,6 +90,7 @@ struct AppStrings {
     let undo: String
     let clear: String
     let check: String
+    let hint: String
     let noWordsAvailable: String
 
     // MARK: - Game Complete
@@ -100,6 +107,7 @@ struct AppStrings {
     let correct: String
     let toReview: String
     let playAgain: String
+    let nextCategory: String
     let backToCategories: String
 
     // MARK: - Journey
@@ -109,8 +117,14 @@ struct AppStrings {
     let firstSteps: String
     let gettingStarted: String
     let dedicatedLearner: String
+    let risingStar: String
     let wordWarrior: String
+    let knowledgeSeeker: String
+    let sentenceCrafter: String
+    let grammarGuardian: String
+    let vocabularyVirtuoso: String
     let languageMaster: String
+    let fluencyPioneer: String
     let polyglotLegend: String
     let xpRequired: String   // "{n} XP required"
     let overview: String
@@ -124,7 +138,6 @@ struct AppStrings {
     // MARK: - Profile
     let appearance: String
     let sound: String
-    let beta: String
     let sync: String
     let signOut: String
     let darkLight: String
@@ -159,18 +172,6 @@ struct AppStrings {
     let levelUpFanfares: String
     let ambientAudio: String
     let backgroundAtmospheric: String
-
-    // MARK: - Beta Languages
-    let betaLanguages: String
-    let experimentalLanguagePairs: String
-    let experimentalFeatures: String
-    let betaLimitedContent: String
-    let coreLanguages: String
-    let alwaysOn: String
-    let active: String
-    let experimentalLanguagesSection: String
-    let on: String
-    let off: String
 
     // MARK: - Sync
     let cloudSync: String
@@ -247,6 +248,12 @@ struct AppStrings {
     let frozen: String
     // flowing reused
     // swift_ reused
+    let nebulaDescLagoon: String
+    let nebulaDescCelestial: String
+    let nebulaDescAndromeda: String
+    let nebulaDescSolarAurora: String
+    let nebulaDescSpiralHalo: String
+    let nebulaDescStarburst: String
 
     // MARK: - Membership
     let plansAndPricing: String

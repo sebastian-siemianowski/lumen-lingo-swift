@@ -187,12 +187,14 @@ struct CategoriesView: View {
                         withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
                             currentPage += 1
                         }
-                        HapticsService.light()
+                        HapticsService.shared.tabSwitch()
+                        AudioService.shared.playPageChange()
                     } else if horizontal > 40, currentPage > 0 {
                         withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
                             currentPage -= 1
                         }
-                        HapticsService.light()
+                        HapticsService.shared.tabSwitch()
+                        AudioService.shared.playPageChange()
                     }
                 }
         )
@@ -346,9 +348,10 @@ struct CategoriesView: View {
                 // after system isPressed goes false
                 pressedCardId = item.id
 
-                // Haptic — soft, premium feel
+                // Haptic + sound — soft, premium feel
                 let g = UIImpactFeedbackGenerator(style: .soft)
                 g.impactOccurred(intensity: 0.7)
+                AudioService.shared.playCategoryTap()
 
                 // Phase 2: Bouncy spring-back after held 140ms
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.14) {
@@ -362,28 +365,29 @@ struct CategoriesView: View {
                     navigateToGame(categoryId: item.id)
                 }
             } label: {
-                VStack(alignment: .leading, spacing: isGridView ? 8 : 10) {
+                VStack(alignment: .leading, spacing: isGridView ? 6 : 10) {
                     // Top row: icon (heart is overlaid separately)
                     HStack(alignment: .top, spacing: 8) {
                         LiquidGlassIconContainer(
                             systemName: categoryIcon(item),
                             gradient: colors,
-                            size: isGridView ? 40 : 48
+                            size: isGridView ? 34 : 44
                         )
                         Spacer()
                         // Invisible spacer matching overlay size to preserve layout
-                        Color.clear.frame(width: isGridView ? 80 : 44, height: 36)
+                        Color.clear.frame(width: isGridView ? 72 : 44, height: 32)
                     }
 
                     // Category name
                     Text(item.name)
-                        .font(isGridView ? .subheadline.bold() : .headline.bold())
+                        .font(isGridView ? .system(size: 13, weight: .bold) : .system(size: 16, weight: .bold))
                         .foregroundStyle(isDark ? .white : .caribbeanInk)
-                        .lineLimit(isGridView ? 1 : 2)
+                        .lineLimit(isGridView ? 2 : 2)
+                        .minimumScaleFactor(0.8)
 
                     // Description
                     Text(item.description)
-                        .font(isGridView ? .caption : .subheadline)
+                        .font(isGridView ? .system(size: 11) : .system(size: 13))
                         .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
                         .lineLimit(isGridView ? 2 : 3)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -410,8 +414,8 @@ struct CategoriesView: View {
                         }
                     }
                 }
-                .padding(isGridView ? 14 : 16)
-                .frame(height: isGridView ? 220 : nil)
+                .padding(isGridView ? 12 : 14)
+                .frame(height: isGridView ? 200 : nil)
                 .background(
                     PremiumTransparentCardBackground(
                         cornerRadius: 22,
@@ -433,22 +437,28 @@ struct CategoriesView: View {
 
                 // Heart / favorite button
                 Button {
+                    let wasFavorite = favoriteIds.contains(item.id)
                     withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
-                        HapticsService.light()
+                        HapticsService.shared.favoriteToggle()
                         toggleFavorite(item.id)
+                    }
+                    if wasFavorite {
+                        AudioService.shared.playFavoriteRemove()
+                    } else {
+                        AudioService.shared.playFavoriteAdd()
                     }
                 } label: {
                     Image(systemName: fav ? "heart.fill" : "heart")
-                        .font(.system(size: 15, weight: .medium))
+                        .font(.system(size: 13, weight: .medium))
                         .foregroundStyle(fav ? .pink : (isDark ? .white.opacity(0.35) : .caribbeanMist))
                         .scaleEffect(fav ? 1.15 : 1.0)
-                        .frame(width: 36, height: 36)
+                        .frame(width: 30, height: 30)
                         .contentShape(Circle())
                 }
                 .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
             }
-            .padding(.top, 10)
-            .padding(.trailing, 10)
+            .padding(.top, 8)
+            .padding(.trailing, 8)
         }
         .accessibilityLabel("\(item.name), \(item.difficulty.rawValue), \(Int(pct))% \(L.complete.lowercased())")
         .accessibilityHint(L.doubleTapToStart)
@@ -477,7 +487,7 @@ struct CategoriesView: View {
                 .font(.system(size: 9, weight: .bold, design: .rounded))
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
         }
-        .frame(width: 34, height: 34)
+        .frame(width: 30, height: 30)
     }
 
     // MARK: - Progress Label (List Cards)

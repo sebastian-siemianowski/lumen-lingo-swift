@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "Buduj słowa litera po literze z pomieszanych liter i podpowiedzi",
         craftAndDiscover: "Twórz i odkrywaj",
         recentActivity: "Ostatnia aktywność",
+        resetProgress: "Zresetuj postęp",
+        resetProgressMessage: "Spowoduje to usunięcie wszystkich XP, poziomów, serii, historii gier i opanowanych treści. Tej operacji nie można cofnąć.",
+        progressReset: "Postęp został zresetowany",
+        startFreshDescription: "Wyczyść cały swój postęp, XP, serie i historię gier, aby rozpocząć naukę od początku.",
 
         // Language Selection
         languages: "Języki",
@@ -40,9 +44,11 @@ extension AppStrings {
         iSpeak: "Mówię po",
         imLearning: "Uczę się",
         noLanguagesAvailable: "Brak dostępnych języków dla tego źródła.",
-        betaLanguagePairs: "Pary językowe w wersji beta",
-        showExperimentalPairs: "Pokaż eksperymentalne pary z ograniczoną zawartością",
         confirm: "Potwierdź:",
+        done: "Gotowe",
+        languagesAvailable: "dostępnych języków",
+        startYourAdventure: "Rozpocznij Przygodę",
+        keepLearning: "Ucz Się Dalej",
 
         // Categories
         back: "Wstecz",
@@ -81,6 +87,7 @@ extension AppStrings {
         undo: "Cofnij",
         clear: "Wyczyść",
         check: "Sprawdź",
+        hint: "Podpowiedź",
         noWordsAvailable: "Brak dostępnych słów",
 
         // Game Complete
@@ -97,6 +104,7 @@ extension AppStrings {
         correct: "Poprawne",
         toReview: "Do powtórki",
         playAgain: "Zagraj ponownie",
+        nextCategory: "Następna kategoria",
         backToCategories: "Wróć do kategorii",
 
         // Journey
@@ -106,8 +114,14 @@ extension AppStrings {
         firstSteps: "Pierwsze kroki",
         gettingStarted: "Początek drogi",
         dedicatedLearner: "Zaangażowany uczeń",
+        risingStar: "Wschodząca gwiazda",
         wordWarrior: "Wojownik słów",
+        knowledgeSeeker: "Poszukiwacz wiedzy",
+        sentenceCrafter: "Budowniczy zdań",
+        grammarGuardian: "Strażnik gramatyki",
+        vocabularyVirtuoso: "Wirtuoz słownictwa",
         languageMaster: "Mistrz języka",
+        fluencyPioneer: "Pionier płynności",
         polyglotLegend: "Legenda poliglotów",
         xpRequired: "Wymagane XP",
         overview: "Przegląd",
@@ -121,7 +135,6 @@ extension AppStrings {
         // Profile
         appearance: "Wygląd",
         sound: "Dźwięk",
-        beta: "Beta",
         sync: "Synchronizacja",
         signOut: "Wyloguj się",
         darkLight: "Ciemny/Jasny",
@@ -156,18 +169,6 @@ extension AppStrings {
         levelUpFanfares: "Fanfary za awans i bonusy za serie",
         ambientAudio: "Dźwięk otoczenia",
         backgroundAtmospheric: "Atmosferyczne dźwięki w tle",
-
-        // Beta Languages
-        betaLanguages: "Języki w wersji beta",
-        experimentalLanguagePairs: "Eksperymentalne pary językowe",
-        experimentalFeatures: "Funkcje eksperymentalne",
-        betaLimitedContent: "Języki w wersji beta mogą mieć ograniczoną zawartość lub sporadyczne niedokładności w tłumaczeniu.",
-        coreLanguages: "Główne języki",
-        alwaysOn: "Zawsze włączone",
-        active: "Aktywne",
-        experimentalLanguagesSection: "Języki eksperymentalne",
-        on: "Wł.",
-        off: "Wył.",
 
         // Sync
         cloudSync: "Synchronizacja z chmurą",
@@ -240,6 +241,12 @@ extension AppStrings {
         vivid: "Żywa",
         driftSpeed: "Szybkość dryfu",
         frozen: "Zamrożona",
+        nebulaDescLagoon: "Eteryczne różowo-fioletowe obłoki, gdzie nowo narodzone gwiazdy rozbłyskują w filarach kosmicznego pyłu",
+        nebulaDescCelestial: "Nieskończony turkusowy ocean świecącego gazu, mieniący się cyjanowymi i morskimi refleksami gwiezdnego światła",
+        nebulaDescAndromeda: "Bilion słońc zawieszonych na krawędzi galaktyki, bursztynowe światło rozpływa się w głębokim indygo kosmosu",
+        nebulaDescSolarAurora: "Złote wstęgi naładowanych cząstek spływają przez pola magnetyczne, malując próżnię ciepłem i blaskiem",
+        nebulaDescSpiralHalo: "Sto miliardów gwiazd wiruje w doskonałej harmonii, ich fioletowa poświata kreśli grawitacyjne ścieżki",
+        nebulaDescStarburst: "Olśniewający pierścień szybkiej formacji gwiezdnej, łuki elektrycznego błękitu i magenty pełne energii",
 
         // Membership
         plansAndPricing: "Plany i cennik",

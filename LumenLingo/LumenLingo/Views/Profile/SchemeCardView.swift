@@ -2,19 +2,19 @@ import SwiftUI
 
 // MARK: - Scheme Card
 
-/// Reusable preset/scheme selection card matching React's SchemeCard component.
-/// Shows a gradient preview, name, description, and selected checkmark.
+/// Reusable preset/scheme selection card with 3D gradient preview, centered icon,
+/// and rich selection feedback matching the soundscape card design language.
 struct SchemeCardView: View {
     let name: String
     let description: String
     let previewColors: [Color]
     let isSelected: Bool
     let previewHeight: CGFloat
+    let icon: String?
     let onSelect: () -> Void
     var onFullscreen: (() -> Void)? = nil
 
     @Environment(\.colorScheme) private var colorScheme
-    @State private var isPressed = false
 
     init(
         name: String,
@@ -22,6 +22,7 @@ struct SchemeCardView: View {
         previewColors: [Color],
         isSelected: Bool,
         previewHeight: CGFloat = 80,
+        icon: String? = nil,
         onSelect: @escaping () -> Void,
         onFullscreen: (() -> Void)? = nil
     ) {
@@ -30,6 +31,7 @@ struct SchemeCardView: View {
         self.previewColors = previewColors
         self.isSelected = isSelected
         self.previewHeight = previewHeight
+        self.icon = icon
         self.onSelect = onSelect
         self.onFullscreen = onFullscreen
     }
@@ -39,165 +41,169 @@ struct SchemeCardView: View {
     var body: some View {
         Button(action: onSelect) {
             VStack(spacing: 0) {
-                // Gradient preview area
                 previewSection
-
-                // Name + description
                 infoSection
             }
-            .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+            .background(
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .fill(
+                        isDark
+                            ? Color(red: 25/255, green: 20/255, blue: 45/255)
+                            : Color(red: 240/255, green: 238/255, blue: 248/255)
+                    )
+            )
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
             .overlay(
-                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
                     .strokeBorder(
                         isSelected
                             ? LinearGradient(
                                 colors: [
-                                    .purple.opacity(0.9),
-                                    .indigo.opacity(0.6),
-                                    .purple.opacity(0.4)
+                                    .purple.opacity(0.95),
+                                    .indigo.opacity(0.7),
+                                    .purple.opacity(0.5)
                                 ],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                               )
                             : LinearGradient(
                                 colors: [
-                                    Color.white.opacity(isDark ? 0.14 : 0.30),
-                                    Color.white.opacity(isDark ? 0.06 : 0.15)
+                                    Color.white.opacity(isDark ? 0.12 : 0.28),
+                                    Color.white.opacity(isDark ? 0.05 : 0.12)
                                 ],
                                 startPoint: .top,
                                 endPoint: .bottom
                               ),
-                        lineWidth: isSelected ? 2 : 1
+                        lineWidth: isSelected ? 2.5 : 0.5
                     )
             )
-            .shadow(color: isSelected ? .purple.opacity(isDark ? 0.45 : 0.25) : .black.opacity(0.06), radius: 12, y: 4)
-            .shadow(color: isSelected ? .purple.opacity(0.20) : .clear, radius: 6, y: 2)
-            .scaleEffect(isPressed ? 0.96 : (isSelected ? 1.02 : 1.0))
-            .brightness(isPressed ? -0.03 : 0)
-            .saturation(isPressed ? 1.06 : 1.0)
+            // Outer glow ring for selected state
+            .overlay(
+                isSelected
+                    ? RoundedRectangle(cornerRadius: 18, style: .continuous)
+                        .stroke(
+                            LinearGradient(
+                                colors: [.purple.opacity(0.5), .indigo.opacity(0.3)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 1.5
+                        )
+                        .padding(-2)
+                        .blur(radius: 2)
+                    : nil
+            )
+            .shadow(
+                color: isSelected ? .purple.opacity(isDark ? 0.5 : 0.3) : .black.opacity(0.06),
+                radius: isSelected ? 14 : 5,
+                y: isSelected ? 5 : 3
+            )
+            .scaleEffect(isSelected ? 1.04 : 1.0)
             .animation(.spring(response: 0.35, dampingFraction: 0.7), value: isSelected)
-            .animation(.spring(response: 0.25, dampingFraction: 0.65), value: isPressed)
         }
-        .buttonStyle(.plain)
-        .simultaneousGesture(
-            DragGesture(minimumDistance: 0)
-                .onChanged { _ in
-                    if !isPressed {
-                        let g = UIImpactFeedbackGenerator(style: .soft)
-                        g.impactOccurred(intensity: 0.5)
-                    }
-                    isPressed = true
-                }
-                .onEnded { _ in isPressed = false }
-        )
+        .buttonStyle(SchemeCardButtonStyle())
     }
 
     // MARK: - Preview Section
 
     private var previewSection: some View {
         ZStack {
-            // Gradient preview
+            // Gradient with 3D depth layers
             LinearGradient(
                 colors: previewColors,
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
-            .frame(height: previewHeight)
             .overlay(
-                // Subtle inner top glow
+                // Inner highlight for depth
                 LinearGradient(
-                    colors: [.white.opacity(0.15), .clear],
+                    colors: [.white.opacity(0.18), .clear, .black.opacity(0.08)],
                     startPoint: .top,
-                    endPoint: .center
+                    endPoint: .bottom
                 )
             )
 
-            // Top row: fullscreen button (leading) + checkmark (trailing)
+            // Centered icon
+            if let icon {
+                Image(systemName: icon)
+                    .font(.system(size: 22, weight: .medium))
+                    .foregroundStyle(.white.opacity(isSelected ? 1.0 : 0.75))
+                    .shadow(color: .black.opacity(0.35), radius: 6, y: 3)
+            }
+
+            // HUD overlay: fullscreen (leading) + checkmark (trailing)
             VStack {
                 HStack {
-                    // Fullscreen preview button (only when onFullscreen is provided)
                     if let fullscreen = onFullscreen {
                         Button {
                             fullscreen()
                         } label: {
                             Image(systemName: "arrow.up.left.and.arrow.down.right")
-                                .font(.system(size: 10, weight: .bold))
+                                .font(.system(size: 9, weight: .bold))
                                 .foregroundStyle(.white)
-                                .frame(width: 26, height: 26)
+                                .frame(width: 22, height: 22)
                                 .background(
                                     Circle()
                                         .fill(.black.opacity(0.35))
-                                        .background(
-                                            Circle()
-                                                .fill(.ultraThinMaterial)
-                                        )
+                                        .background(Circle().fill(.ultraThinMaterial))
                                         .clipShape(Circle())
                                 )
-                                .overlay(
-                                    Circle()
-                                        .strokeBorder(.white.opacity(0.25), lineWidth: 0.5)
-                                )
+                                .overlay(Circle().strokeBorder(.white.opacity(0.25), lineWidth: 0.5))
                         }
                         .buttonStyle(LumenPressStyle(weight: .soft))
                     }
 
                     Spacer()
 
-                    // Selected checkmark
                     if isSelected {
                         ZStack {
                             Circle()
-                                .fill(.purple.opacity(0.3))
-                                .frame(width: 32, height: 32)
-                                .blur(radius: 5)
+                                .fill(.white.opacity(0.3))
+                                .frame(width: 22, height: 22)
 
-                            Circle()
-                                .fill(.white)
-                                .frame(width: 24, height: 24)
-                                .overlay(
-                                    Image(systemName: "checkmark")
-                                        .font(.system(size: 12, weight: .bold))
-                                        .foregroundStyle(.purple)
-                                )
-                                .shadow(color: .purple.opacity(0.5), radius: 6)
+                            Image(systemName: "checkmark")
+                                .font(.system(size: 9, weight: .bold))
+                                .foregroundStyle(.white)
                         }
                         .transition(.scale.combined(with: .opacity))
                     }
                 }
-                .padding(8)
+                .padding(6)
 
                 Spacer()
             }
         }
+        .frame(height: previewHeight)
+        .clipped()
     }
 
     // MARK: - Info Section
 
     private var infoSection: some View {
-        VStack(spacing: 4) {
+        VStack(spacing: 3) {
             Text(name)
-                .font(.system(size: 13, weight: .bold))
+                .font(.system(size: 12, weight: .bold))
                 .foregroundStyle(isSelected
                     ? (isDark ? .white : .caribbeanInk)
                     : (isDark ? .white.opacity(0.7) : .caribbeanMist)
                 )
-                // Neon glow on selected name
                 .shadow(color: isSelected && isDark ? .purple.opacity(0.5) : .clear, radius: 4)
-                .lineLimit(1)
+                .lineLimit(2)
+                .minimumScaleFactor(0.85)
+                .multilineTextAlignment(.center)
 
             if !description.isEmpty {
                 Text(description)
                     .font(.system(size: 10))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-                    .lineLimit(2)
+                    .lineLimit(4)
                     .multilineTextAlignment(.center)
             }
         }
-        .padding(.horizontal, 8)
-        .padding(.vertical, 10)
-        .frame(maxWidth: .infinity)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 12)
+        .frame(maxWidth: .infinity, minHeight: 100, alignment: .top)
         .background {
-            // Solid fill replacing ultraThinMaterial for performance
             Rectangle()
                 .fill(
                     LinearGradient(
@@ -225,21 +231,39 @@ struct SchemeCardView: View {
             name: "Barcelona Nights",
             description: "Twilight breathes Gaudí's forms",
             previewColors: [.indigo, .pink, .amber],
-            isSelected: true
+            isSelected: true,
+            icon: "moon.stars.fill"
         ) {}
 
         SchemeCardView(
             name: "Tokyo Sunset",
             description: "Cherry-hued clouds dissolve",
             previewColors: [.red, .orange, .pink],
-            isSelected: false
+            isSelected: false,
+            icon: "sun.horizon.fill"
         ) {}
     }
     .padding()
     .background(Color.black)
 }
 
-// Amber color helper
+// MARK: - Scheme Card Button Style
+
+private struct SchemeCardButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.96 : 1.0)
+            .brightness(configuration.isPressed ? -0.03 : 0)
+            .animation(.spring(response: 0.25, dampingFraction: 0.65), value: configuration.isPressed)
+            .onChange(of: configuration.isPressed) { _, pressed in
+                if pressed {
+                    let g = UIImpactFeedbackGenerator(style: .soft)
+                    g.impactOccurred(intensity: 0.5)
+                }
+            }
+    }
+}
+
 private extension Color {
     static let amber = Color(red: 251/255, green: 191/255, blue: 36/255)
 }

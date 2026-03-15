@@ -12,6 +12,7 @@ struct MetalQuantumFlowView: UIViewRepresentable {
     let intensity: Double
     let speed: Double
     let isDarkMode: Bool
+    var raveMode: Bool = false
     
     func makeUIView(context: Context) -> MTKView {
         guard let device = MTLCreateSystemDefaultDevice() else {
@@ -40,6 +41,7 @@ struct MetalQuantumFlowView: UIViewRepresentable {
         renderer.intensity = Float(intensity)
         renderer.speed = Float(speed)
         renderer.isDarkMode = isDarkMode
+        renderer.raveMode = raveMode
         view.delegate = renderer
         context.coordinator.renderer = renderer
         
@@ -52,6 +54,7 @@ struct MetalQuantumFlowView: UIViewRepresentable {
         renderer.intensity = Float(intensity)
         renderer.speed = Float(speed)
         renderer.isDarkMode = isDarkMode
+        renderer.raveMode = raveMode
     }
     
     func makeCoordinator() -> Coordinator {

@@ -3,17 +3,14 @@
 using namespace metal;
 
 // ============================================================
-// Starburst Ring Stars — radial pulsing stellar field
+// Starburst Ring Stars — React-faithful star canvas behavior
 //
-// 5 distinct motion classes based on depth:
-//   Far bg      (z < 0.15): glacial drift
-//   Deep mid    (0.15–0.35): gentle radial oscillation
-//   Mid-field   (0.35–0.55): ring rotation + radial pulse
-//   Near-mid    (0.55–0.75): tangential flow + radial drift
-//   Foreground  (z > 0.75): fast ring orbit + radial pulse + jitter
-//
-// NO uniform breathing, NO differential rotation.
-// Pulsing, radial, energetic.
+// React model:
+//   * Orbital stars (core/ring/halo) rotate slowly around center
+//   * Field stars drift almost imperceptibly with wrap
+//   * Hero stars breathe organically and roll ultra-slowly
+//   * Halo stars pulse gently like nebular beacons
+//   * No invented jitter / radial explosions / multi-band motion classes
 // ============================================================
 
 vertex StarVertexOut starburstStarVertex(
@@ -25,120 +22,111 @@ vertex StarVertexOut starburstStarVertex(
     StarData star = stars[instanceID];
     float t = uniforms.time * uniforms.speed;
     float phase = star.twinklePhase;
-    float z = star.zDepth;
 
-    float twinkle = computeTwinkle(t, star.twinkleSpeed, star.twinkleAmp, phase);
-    float sizePulse = computeSizePulse(t, star.twinkleSpeed, phase);
+    float minDim = uniforms.resolution.y > uniforms.resolution.x
+        ? uniforms.resolution.x * 1.35
+        : min(uniforms.resolution.x, uniforms.resolution.y);
 
-    float depthFactor = 0.08 + z * 0.92;
-    float2 camMotion = uniforms.cameraDrift * depthFactor;
+    float driftX = sin(t * 0.05) * minDim * 0.02;
+    float driftY = cos(t * 0.04) * minDim * 0.02;
 
-    float motionX = 0.0;
-    float motionY = 0.0;
+    float2 screenPos;
+    bool isOrbital = star.motionParams.y > 0.5;
 
-    float da = star.driftAngle;
-    float ds = star.driftSpeed;
-
-    if (z < 0.15) {
-        // ═══ FAR BACKGROUND — glacial ═══
-        float driftTime = t * 0.013;
-        motionX = cos(da) * ds * 0.12 * t
-                + sin(driftTime + phase) * 1.3;
-        motionY = sin(da) * ds * 0.12 * t
-                + cos(driftTime * 0.8 + phase * 1.3) * 1.1;
-
-    } else if (z < 0.35) {
-        // ═══ DEEP MID — gentle radial oscillation ═══
-        float radialAmp = 3.0 + ds * 4.5;
-        motionX = cos(da) * sin(t * 0.025 + phase) * radialAmp;
-        motionY = sin(da) * sin(t * 0.025 + phase) * radialAmp;
-
-        // Small tangential wander
-        motionX += -sin(da) * cos(t * 0.015 + phase * 1.3) * radialAmp * 0.4;
-        motionY += cos(da) * cos(t * 0.015 + phase * 1.3) * radialAmp * 0.4;
-
-        motionX += cos(da) * ds * 0.18 * t;
-        motionY += sin(da) * ds * 0.18 * t;
-
-    } else if (z < 0.55) {
-        // ═══ MID-FIELD — ring rotation + radial pulse ═══
-        float flowFreq = 0.11 + star.motionParams.y * 0.22;
-        float flowTime = t * flowFreq + phase;
-        float flowAmp = 7.5 + ds * 5.0;
-
-        // Tangential (ring rotation)
-        motionX += -sin(da) * sin(flowTime) * flowAmp;
-        motionY += cos(da) * sin(flowTime) * flowAmp;
-
-        // Radial pulse
-        float radialPulse = sin(t * 0.03 + phase * 1.5) * 4.0;
-        motionX += cos(da) * radialPulse;
-        motionY += sin(da) * radialPulse;
-
-        // Position wave
-        float waveX = sin(t * 0.020 + star.position.y * 6.5) * 3.0;
-        float waveY = cos(t * 0.017 + star.position.x * 5.0) * 2.5;
-        motionX += waveX;
-        motionY += waveY;
-
-        motionX += cos(da) * ds * 0.32 * t;
-        motionY += sin(da) * ds * 0.32 * t;
-
-    } else if (z < 0.75) {
-        // ═══ NEAR-MID — tangential flow + radial drift ═══
-        float orbitSpeed = 0.028 + ds * 0.015;
-        float orbitPhase = da * 1.4 + phase * 0.6;
-        float orbitA = 6.0 + ds * 10.0;
-        float orbitB = orbitA * (0.4 + star.motionParams.y * 0.5);
-        motionX = sin(t * orbitSpeed + orbitPhase) * orbitA;
-        motionY = cos(t * orbitSpeed * 1.18 + orbitPhase + 0.9) * orbitB;
-
-        // Radial drift component
-        float radialDrift = sin(t * 0.035 + phase) * 3.5;
-        motionX += cos(da) * radialDrift;
-        motionY += sin(da) * radialDrift;
-
-        motionX += cos(da) * ds * 0.48 * t;
-        motionY += sin(da) * ds * 0.48 * t;
-
-        float secPhase = phase * 2.3 + da;
-        motionX += sin(t * 0.065 + secPhase) * 2.8;
-        motionY += cos(t * 0.06 + secPhase + 1.8) * 2.3;
-
+    if (isOrbital) {
+        float a = star.driftAngle + t * star.driftSpeed + t * 0.0007;
+        float r = star.motionParams.x * minDim * 0.5
+                * (1.0 + sin(t * 0.2 + float(instanceID)) * 0.01);
+        screenPos.x = uniforms.resolution.x * 0.5 + cos(a) * r + driftX * star.motionParams.x;
+        screenPos.y = uniforms.resolution.y * 0.5 + sin(a) * r;
     } else {
-        // ═══ FOREGROUND — fast ring orbit + radial pulse + jitter ═══
-        float flowFreq = 0.15 + star.motionParams.y * 0.30;
-        float flowTime = t * flowFreq + phase;
-        float flowAmp = 12.0 + ds * 8.0;
-        motionX = sin(flowTime) * flowAmp;
-        motionY = cos(flowTime * 0.7) * flowAmp * 0.8;
+        float x = star.position.x * uniforms.resolution.x + driftX * 0.2 + star.driftAngle * t * 10.0;
+        float y = star.position.y * uniforms.resolution.y + driftY * 0.2 + star.driftSpeed * t * 10.0;
 
-        // Radial expansion/contraction
-        float radialPulse = sin(t * 0.04 + phase * 1.3) * 5.0;
-        motionX += cos(da) * radialPulse;
-        motionY += sin(da) * radialPulse;
+        x = fmod(x, uniforms.resolution.x);
+        y = fmod(y, uniforms.resolution.y);
+        if (x < 0.0) x += uniforms.resolution.x;
+        if (y < 0.0) y += uniforms.resolution.y;
 
-        // Orbital wander
-        float wanderSpeed = 0.04 + ds * 0.022;
-        float wanderPhase = da * 1.7 + phase * 0.8;
-        float wanderRadius = 7.0 + ds * 8.0;
-        motionX += sin(t * wanderSpeed + wanderPhase) * wanderRadius;
-        motionY += cos(t * wanderSpeed * 1.3 + wanderPhase + 1.2) * wanderRadius;
-
-        motionX += cos(da) * ds * 0.58 * t;
-        motionY += sin(da) * ds * 0.58 * t;
-
-        float jitterAmt = (z - 0.75) * 7.5;
-        motionX += sin(t * 2.1 + phase * 3.7) * jitterAmt;
-        motionY += cos(t * 1.8 + phase * 2.9) * jitterAmt;
+        screenPos = float2(x, y);
     }
 
-    // Compose final screen position — NO breathing scale
-    float2 screenPos = star.position * uniforms.resolution;
-    screenPos += camMotion;
-    screenPos.x += motionX;
-    screenPos.y += motionY;
+    float twinkle;
+    float alphaMultiplier;
+    float breatheRange;
+    float breatheEase;
 
-    return finalizeStarVertex(star, screenPos, t, twinkle, sizePulse,
-                              uniforms.resolution, uniforms.intensity, vertexID);
+    if (star.starType == 3) {
+        float wave1 = sin(t * 0.3 + phase);
+        float wave2 = sin(t * 1.1 + phase * 2.0) * 0.3;
+        twinkle = 0.5 + 0.5 * ((wave1 + wave2) / 1.3);
+        alphaMultiplier = 0.9 + 0.3 * twinkle;
+        breatheEase = sin((twinkle - 0.5) * M_PI_F) * 0.5 + 0.5;
+        breatheRange = 0.35;
+    } else if (star.starType == 2) {
+        twinkle = 0.6 + 0.4 * sin(t * 0.5 + phase);
+        alphaMultiplier = 0.7 + 0.4 * twinkle;
+        breatheEase = sin((twinkle - 0.5) * M_PI_F) * 0.5 + 0.5;
+        breatheRange = 0.15;
+    } else {
+        twinkle = (sin(t * star.twinkleSpeed + phase) + 1.0) * 0.5;
+        alphaMultiplier = 0.4 + 0.6 * twinkle;
+        breatheEase = twinkle;
+        breatheRange = 0.06;
+    }
+
+    float alpha = min(1.0, star.color.a * alphaMultiplier);
+    if ((star.starType == 3 || star.starType == 2) && twinkle > 0.8) {
+        alpha = min(1.0, alpha * 1.1);
+    }
+
+    float ringRadiusNorm = star.motionParams.x;
+    float ringBandBoost = isOrbital
+        ? smoothstep(0.20, 0.28, ringRadiusNorm) * (1.0 - smoothstep(0.54, 0.62, ringRadiusNorm))
+        : 0.0;
+    float coreBoost = isOrbital ? (1.0 - smoothstep(0.10, 0.16, ringRadiusNorm)) : 0.0;
+
+    alpha = min(1.0, alpha * (1.0 + ringBandBoost * 0.22 + coreBoost * 0.12));
+
+    float breathe = 1.0 + (breatheEase - 0.5) * breatheRange;
+    float scaledBase = star.baseSize * (minDim / 1000.0) * breathe;
+    scaledBase *= 1.0 + ringBandBoost * 0.18 + coreBoost * 0.10;
+
+    float quadScale = scaledBase;
+    if (star.starType == 3) {
+        quadScale *= 16.0;
+    } else if (star.starType == 2) {
+        quadScale *= 8.0;
+    } else {
+        quadScale *= 6.0;
+    }
+
+    float2 quadOffsets[6] = {
+        float2(-1, -1), float2( 1, -1), float2(-1,  1),
+        float2(-1,  1), float2( 1, -1), float2( 1,  1)
+    };
+
+    float2 offset = quadOffsets[vertexID % 6];
+    float2 pixelPos = screenPos + offset * quadScale;
+    float2 clipPos = (pixelPos / uniforms.resolution) * 2.0 - 1.0;
+    clipPos.y = -clipPos.y;
+
+    StarVertexOut out;
+    out.position = float4(clipPos, 0.0, 1.0);
+    out.uv = offset;
+    out.starColor = float4(star.color.rgb, 1.0);
+    out.starSize = scaledBase;
+    out.twinkle = twinkle;
+    out.starType = star.starType;
+    out.heroRotation = (star.starType == 3)
+        ? (t * 0.015 * ((instanceID & 1) == 0 ? 1.0 : -1.0) + phase)
+        : 0.0;
+    out.effectParam = isOrbital ? star.motionParams.x : 0.0;
+
+    float2 normPos = screenPos / uniforms.resolution;
+    float edgeFade = smoothstep(0.0, 0.05,
+        min(min(normPos.x, 1.0 - normPos.x), min(normPos.y, 1.0 - normPos.y)));
+    out.finalAlpha = alpha * uniforms.intensity * edgeFade;
+
+    return out;
 }

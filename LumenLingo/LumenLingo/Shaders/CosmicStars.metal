@@ -15,34 +15,40 @@ fragment float4 cosmicStarFragment(StarVertexOut in [[stage_in]]) {
     float4 color = float4(0.0);
     float alpha = in.finalAlpha;
     
-    if (in.starType == 0 || in.starType == 2) {
-        // ---- Normal / Mystical Star ----
-        // 3-pass rendering: diffusion → glow → core
-        
-        // Pass 1: Atmospheric diffusion (very soft, large radius)
-        float diffusion = 1.0 - smoothstep(0.0, 1.0, dist);
-        diffusion = diffusion * diffusion; // quadratic falloff
-        float diffAlpha = diffusion * alpha * 0.10;
-        
-        // Pass 2: Glow (medium radius)
-        float glowDist = dist * (6.0 / 2.8); // scale to glow radius
-        float glow = 1.0 - smoothstep(0.0, 1.0, glowDist);
-        glow = glow * glow;
+    if (in.starType == 0) {
+        // ---- Normal Star ----
+        // React normal sprite: atmospheric halo → inner aura → photosphere
+        float halo = pow(max(0.0, 1.0 - dist / 1.0), 2.0);
+        float aura = pow(max(0.0, 1.0 - dist / 0.62), 2.0);
+        float body = pow(max(0.0, 1.0 - dist / 0.26), 3.0);
+
+        float haloAlpha = halo * alpha * 0.10;
+        float auraAlpha = aura * alpha * 0.20;
+        float bodyAlpha = body * alpha * 0.92;
+
+        float3 hotBody = mix(float3(1.0), in.starColor.rgb, 0.22);
+        color.rgb = in.starColor.rgb * haloAlpha
+                  + in.starColor.rgb * auraAlpha
+                  + hotBody * bodyAlpha;
+        color.a = max(max(haloAlpha, auraAlpha), bodyAlpha);
+
+    } else if (in.starType == 2) {
+        // ---- Halo / Nebular Star ----
+        // React halo sprite: very wide atmospheric diffusion + soft glow + soft core.
+        float diffuse = pow(max(0.0, 1.0 - dist / 1.05), 2.0);
+        float glow = pow(max(0.0, 1.0 - dist / 0.72), 2.0);
+        float core = pow(max(0.0, 1.0 - dist / 0.34), 2.5);
+
+        float diffAlpha = diffuse * alpha * 0.15;
         float glowAlpha = glow * alpha * 0.40;
-        
-        // Pass 3: Core (sharp center, white-hot)
-        float coreDist = dist * (6.0 / 1.1); // scale to core radius
-        float core = 1.0 - smoothstep(0.0, 1.0, coreDist);
-        core = core * core * core; // cubic sharp falloff
-        float coreAlpha = core * alpha * 1.0;
-        
-        // Composite: diffusion (star color) + glow (star color) + core (white blend)
-        float3 coreColor = mix(float3(1.0), in.starColor.rgb, 0.3);
+        float coreAlpha = core * alpha * 0.90;
+
+        float3 softCore = mix(float3(1.0), in.starColor.rgb, 0.45);
         color.rgb = in.starColor.rgb * diffAlpha
                   + in.starColor.rgb * glowAlpha
-                  + coreColor * coreAlpha;
+                  + softCore * coreAlpha;
         color.a = max(max(diffAlpha, glowAlpha), coreAlpha);
-        
+
     } else if (in.starType == 1) {
         // ---- Hero Star (JWST-style 6-point diffraction) ----
         
@@ -86,44 +92,57 @@ fragment float4 cosmicStarFragment(StarVertexOut in [[stage_in]]) {
         color.a = max(max(max(haloAlpha, diffAlpha), coreAlpha), spikeAlpha);
         
     } else if (in.starType == 3) {
-        // ---- Hero Anamorphic (Starburst Ring style) ----
-        
-        // Horizontal anamorphic spike (very long)
-        float hSpike = 1.0 - smoothstep(0.0, 0.85, abs(uv.x));
-        hSpike *= 1.0 - smoothstep(0.0, 0.025, abs(uv.y));
-        
-        // Vertical spike (shorter)
-        float vSpike = 1.0 - smoothstep(0.0, 0.6, abs(uv.y));
-        vSpike *= 1.0 - smoothstep(0.0, 0.02, abs(uv.x));
-        
-        // Diagonal cross
-        float2 rot45 = float2(uv.x * 0.707 - uv.y * 0.707,
-                               uv.x * 0.707 + uv.y * 0.707);
-        float dSpike1 = 1.0 - smoothstep(0.0, 0.4, abs(rot45.x));
-        dSpike1 *= 1.0 - smoothstep(0.0, 0.015, abs(rot45.y));
-        float dSpike2 = 1.0 - smoothstep(0.0, 0.4, abs(rot45.y));
-        dSpike2 *= 1.0 - smoothstep(0.0, 0.015, abs(rot45.x));
-        
-        float allSpikes = max(max(hSpike, vSpike), max(dSpike1, dSpike2));
-        
-        // Lens bloom ring
-        float ringDist = abs(dist - 0.2);
-        float ring = 1.0 - smoothstep(0.0, 0.03, ringDist);
-        
-        // Core glow
-        float core = 1.0 - smoothstep(0.0, 0.12, dist);
-        core = core * core * core;
-        
-        // Halo
-        float halo = 1.0 - smoothstep(0.0, 0.55, dist);
-        halo = halo * halo;
-        
-        float3 coreColor = float3(1.0);
-        color.rgb = in.starColor.rgb * halo * alpha * 0.1
-                  + in.starColor.rgb * allSpikes * alpha * 0.5
-                  + in.starColor.rgb * ring * alpha * 0.3
-                  + coreColor * core * alpha * 0.95;
-        color.a = max(max(halo * 0.1, allSpikes * 0.5), max(ring * 0.3, core * 0.95)) * alpha;
+        // ---- Hero Anamorphic (React Starburst style) ----
+        float2 p = uv;
+
+        float halo = pow(max(0.0, 1.0 - dist / 1.0), 2.0);
+        float aura = pow(max(0.0, 1.0 - dist / 0.62), 2.0);
+        float core = pow(max(0.0, 1.0 - dist / 0.18), 3.0);
+
+        float angle = in.heroRotation;
+        float c = cos(angle);
+        float s = sin(angle);
+        float2 ruv = float2(p.x * c - p.y * s, p.x * s + p.y * c);
+        float2 rot45 = float2(ruv.x * 0.70710678 - ruv.y * 0.70710678,
+                              ruv.x * 0.70710678 + ruv.y * 0.70710678);
+
+        // Long horizontal anamorphic flare
+        float hSpike = (1.0 - smoothstep(0.0, 0.98, abs(ruv.x)))
+                     * (1.0 - smoothstep(0.0, 0.020, abs(ruv.y)));
+
+        // Distinct vertical flare
+        float vSpike = (1.0 - smoothstep(0.0, 0.70, abs(ruv.y)))
+                     * (1.0 - smoothstep(0.0, 0.028, abs(ruv.x)));
+
+        // Softer diagonal glows
+        float dSpike1 = (1.0 - smoothstep(0.0, 0.46, abs(rot45.x)))
+                      * (1.0 - smoothstep(0.0, 0.090, abs(rot45.y)));
+        float dSpike2 = (1.0 - smoothstep(0.0, 0.46, abs(rot45.y)))
+                      * (1.0 - smoothstep(0.0, 0.090, abs(rot45.x)));
+
+        float ringDist = abs(dist - 0.32);
+        float bloomRing = 1.0 - smoothstep(0.0, 0.05, ringDist);
+
+        float haloAlpha = halo * alpha * 0.22;
+        float auraAlpha = aura * alpha * 0.45;
+        float coreAlpha = core * alpha * 0.95;
+        float hAlpha = hSpike * alpha * 0.85;
+        float vAlpha = vSpike * alpha * 0.60;
+        float dAlpha = max(dSpike1, dSpike2) * alpha * 0.25;
+        float ringAlpha = bloomRing * alpha * 0.12;
+
+        float3 spikeColor = mix(float3(1.0), in.starColor.rgb, 0.50);
+        float3 coreColor = mix(float3(1.0), in.starColor.rgb, 0.20);
+
+        color.rgb = in.starColor.rgb * haloAlpha
+                  + in.starColor.rgb * auraAlpha
+                  + spikeColor * hAlpha
+                  + spikeColor * vAlpha
+                  + in.starColor.rgb * dAlpha
+                  + in.starColor.rgb * ringAlpha
+                  + coreColor * coreAlpha;
+        color.a = max(max(max(haloAlpha, auraAlpha), coreAlpha),
+                      max(max(hAlpha, vAlpha), max(dAlpha, ringAlpha)));
     }
     
     // Premultiply for additive blending

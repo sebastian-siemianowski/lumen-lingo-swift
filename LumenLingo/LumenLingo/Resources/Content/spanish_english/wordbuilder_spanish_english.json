@@ -1,0 +1,7002 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Frutas",
+    "description": "Frutas comunes en inglés",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "apple",
+        "hint": "Manzana"
+      },
+      {
+        "word": "orange",
+        "hint": "Naranja"
+      },
+      {
+        "word": "banana",
+        "hint": "Plátano"
+      },
+      {
+        "word": "strawberry",
+        "hint": "Fresa"
+      },
+      {
+        "word": "grape",
+        "hint": "Uva"
+      },
+      {
+        "word": "lemon",
+        "hint": "Limón"
+      },
+      {
+        "word": "watermelon",
+        "hint": "Sandía"
+      },
+      {
+        "word": "peach",
+        "hint": "Melocotón"
+      },
+      {
+        "word": "cherry",
+        "hint": "Cereza"
+      },
+      {
+        "word": "pineapple",
+        "hint": "Piña"
+      },
+      {
+        "word": "pear",
+        "hint": "Pera"
+      },
+      {
+        "word": "mango",
+        "hint": "Mango"
+      },
+      {
+        "word": "kiwi",
+        "hint": "Kiwi"
+      },
+      {
+        "word": "coconut",
+        "hint": "Coco"
+      },
+      {
+        "word": "plum",
+        "hint": "Ciruela"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Verduras",
+    "description": "Verduras comunes en inglés",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tomato",
+        "hint": "Tomate"
+      },
+      {
+        "word": "onion",
+        "hint": "Cebolla"
+      },
+      {
+        "word": "lettuce",
+        "hint": "Lechuga"
+      },
+      {
+        "word": "carrot",
+        "hint": "Zanahoria"
+      },
+      {
+        "word": "potato",
+        "hint": "Patata"
+      },
+      {
+        "word": "garlic",
+        "hint": "Ajo"
+      },
+      {
+        "word": "cucumber",
+        "hint": "Pepino"
+      },
+      {
+        "word": "pepper",
+        "hint": "Pimiento"
+      },
+      {
+        "word": "spinach",
+        "hint": "Espinaca"
+      },
+      {
+        "word": "broccoli",
+        "hint": "Brócoli"
+      },
+      {
+        "word": "corn",
+        "hint": "Maíz"
+      },
+      {
+        "word": "mushroom",
+        "hint": "Champiñón"
+      },
+      {
+        "word": "eggplant",
+        "hint": "Berenjena"
+      },
+      {
+        "word": "pumpkin",
+        "hint": "Calabaza"
+      },
+      {
+        "word": "celery",
+        "hint": "Apio"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Colores",
+    "description": "Colores básicos en inglés",
+    "iconName": "paintpalette",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "red",
+        "hint": "Rojo"
+      },
+      {
+        "word": "blue",
+        "hint": "Azul"
+      },
+      {
+        "word": "green",
+        "hint": "Verde"
+      },
+      {
+        "word": "yellow",
+        "hint": "Amarillo"
+      },
+      {
+        "word": "black",
+        "hint": "Negro"
+      },
+      {
+        "word": "white",
+        "hint": "Blanco"
+      },
+      {
+        "word": "purple",
+        "hint": "Morado"
+      },
+      {
+        "word": "pink",
+        "hint": "Rosa"
+      },
+      {
+        "word": "brown",
+        "hint": "Marrón"
+      },
+      {
+        "word": "gray",
+        "hint": "Gris"
+      },
+      {
+        "word": "golden",
+        "hint": "Dorado"
+      },
+      {
+        "word": "silver",
+        "hint": "Plateado"
+      },
+      {
+        "word": "turquoise",
+        "hint": "Turquesa"
+      },
+      {
+        "word": "crimson",
+        "hint": "Carmesí"
+      },
+      {
+        "word": "beige",
+        "hint": "Beis"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Familia",
+    "description": "Miembros de la familia en inglés",
+    "iconName": "person.3",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mother",
+        "hint": "Madre"
+      },
+      {
+        "word": "father",
+        "hint": "Padre"
+      },
+      {
+        "word": "sister",
+        "hint": "Hermana"
+      },
+      {
+        "word": "brother",
+        "hint": "Hermano"
+      },
+      {
+        "word": "grandmother",
+        "hint": "Abuela"
+      },
+      {
+        "word": "grandfather",
+        "hint": "Abuelo"
+      },
+      {
+        "word": "daughter",
+        "hint": "Hija"
+      },
+      {
+        "word": "son",
+        "hint": "Hijo"
+      },
+      {
+        "word": "cousin",
+        "hint": "Primo/Prima"
+      },
+      {
+        "word": "nephew",
+        "hint": "Sobrino"
+      },
+      {
+        "word": "niece",
+        "hint": "Sobrina"
+      },
+      {
+        "word": "husband",
+        "hint": "Esposo"
+      },
+      {
+        "word": "wife",
+        "hint": "Esposa"
+      },
+      {
+        "word": "uncle",
+        "hint": "Tío"
+      },
+      {
+        "word": "aunt",
+        "hint": "Tía"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Animales",
+    "description": "Animales comunes en inglés",
+    "iconName": "pawprint",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "dog",
+        "hint": "Perro"
+      },
+      {
+        "word": "cat",
+        "hint": "Gato"
+      },
+      {
+        "word": "horse",
+        "hint": "Caballo"
+      },
+      {
+        "word": "bird",
+        "hint": "Pájaro"
+      },
+      {
+        "word": "fish",
+        "hint": "Pez"
+      },
+      {
+        "word": "cow",
+        "hint": "Vaca"
+      },
+      {
+        "word": "rabbit",
+        "hint": "Conejo"
+      },
+      {
+        "word": "turtle",
+        "hint": "Tortuga"
+      },
+      {
+        "word": "butterfly",
+        "hint": "Mariposa"
+      },
+      {
+        "word": "lion",
+        "hint": "León"
+      },
+      {
+        "word": "elephant",
+        "hint": "Elefante"
+      },
+      {
+        "word": "monkey",
+        "hint": "Mono"
+      },
+      {
+        "word": "bear",
+        "hint": "Oso"
+      },
+      {
+        "word": "mouse",
+        "hint": "Ratón"
+      },
+      {
+        "word": "dolphin",
+        "hint": "Delfín"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Partes del cuerpo",
+    "description": "Partes del cuerpo humano en inglés",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "head",
+        "hint": "Cabeza"
+      },
+      {
+        "word": "arm",
+        "hint": "Brazo"
+      },
+      {
+        "word": "leg",
+        "hint": "Pierna"
+      },
+      {
+        "word": "hand",
+        "hint": "Mano"
+      },
+      {
+        "word": "foot",
+        "hint": "Pie"
+      },
+      {
+        "word": "eye",
+        "hint": "Ojo"
+      },
+      {
+        "word": "nose",
+        "hint": "Nariz"
+      },
+      {
+        "word": "mouth",
+        "hint": "Boca"
+      },
+      {
+        "word": "ear",
+        "hint": "Oreja"
+      },
+      {
+        "word": "finger",
+        "hint": "Dedo"
+      },
+      {
+        "word": "heart",
+        "hint": "Corazón"
+      },
+      {
+        "word": "shoulder",
+        "hint": "Hombro"
+      },
+      {
+        "word": "knee",
+        "hint": "Rodilla"
+      },
+      {
+        "word": "neck",
+        "hint": "Cuello"
+      },
+      {
+        "word": "stomach",
+        "hint": "Estómago"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Números",
+    "description": "Números escritos en inglés",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "one",
+        "hint": "Uno"
+      },
+      {
+        "word": "two",
+        "hint": "Dos"
+      },
+      {
+        "word": "three",
+        "hint": "Tres"
+      },
+      {
+        "word": "four",
+        "hint": "Cuatro"
+      },
+      {
+        "word": "five",
+        "hint": "Cinco"
+      },
+      {
+        "word": "seven",
+        "hint": "Siete"
+      },
+      {
+        "word": "eight",
+        "hint": "Ocho"
+      },
+      {
+        "word": "nine",
+        "hint": "Nueve"
+      },
+      {
+        "word": "twelve",
+        "hint": "Doce"
+      },
+      {
+        "word": "fifteen",
+        "hint": "Quince"
+      },
+      {
+        "word": "twenty",
+        "hint": "Veinte"
+      },
+      {
+        "word": "thirty",
+        "hint": "Treinta"
+      },
+      {
+        "word": "fifty",
+        "hint": "Cincuenta"
+      },
+      {
+        "word": "hundred",
+        "hint": "Cien"
+      },
+      {
+        "word": "thousand",
+        "hint": "Mil"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Saludos",
+    "description": "Saludos y expresiones comunes en inglés",
+    "iconName": "hand.wave",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "hello",
+        "hint": "Hola"
+      },
+      {
+        "word": "goodbye",
+        "hint": "Adiós"
+      },
+      {
+        "word": "please",
+        "hint": "Por favor"
+      },
+      {
+        "word": "thanks",
+        "hint": "Gracias"
+      },
+      {
+        "word": "sorry",
+        "hint": "Lo siento"
+      },
+      {
+        "word": "welcome",
+        "hint": "Bienvenido"
+      },
+      {
+        "word": "morning",
+        "hint": "Mañana (saludo)"
+      },
+      {
+        "word": "evening",
+        "hint": "Tarde/noche"
+      },
+      {
+        "word": "night",
+        "hint": "Noche (despedida)"
+      },
+      {
+        "word": "friend",
+        "hint": "Amigo"
+      },
+      {
+        "word": "cheers",
+        "hint": "¡Salud!"
+      },
+      {
+        "word": "excuse",
+        "hint": "Disculpa"
+      },
+      {
+        "word": "pardon",
+        "hint": "Perdón"
+      },
+      {
+        "word": "farewell",
+        "hint": "Despedida"
+      },
+      {
+        "word": "greetings",
+        "hint": "Saludos"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Comida",
+    "description": "Alimentos y comidas en inglés",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "bread",
+        "hint": "Pan"
+      },
+      {
+        "word": "cheese",
+        "hint": "Queso"
+      },
+      {
+        "word": "chicken",
+        "hint": "Pollo"
+      },
+      {
+        "word": "rice",
+        "hint": "Arroz"
+      },
+      {
+        "word": "egg",
+        "hint": "Huevo"
+      },
+      {
+        "word": "butter",
+        "hint": "Mantequilla"
+      },
+      {
+        "word": "pasta",
+        "hint": "Pasta"
+      },
+      {
+        "word": "soup",
+        "hint": "Sopa"
+      },
+      {
+        "word": "salad",
+        "hint": "Ensalada"
+      },
+      {
+        "word": "sandwich",
+        "hint": "Sándwich"
+      },
+      {
+        "word": "steak",
+        "hint": "Bistec"
+      },
+      {
+        "word": "cereal",
+        "hint": "Cereal"
+      },
+      {
+        "word": "sugar",
+        "hint": "Azúcar"
+      },
+      {
+        "word": "salt",
+        "hint": "Sal"
+      },
+      {
+        "word": "honey",
+        "hint": "Miel"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Ropa",
+    "description": "Prendas de vestir en inglés",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "shirt",
+        "hint": "Camisa"
+      },
+      {
+        "word": "pants",
+        "hint": "Pantalones"
+      },
+      {
+        "word": "dress",
+        "hint": "Vestido"
+      },
+      {
+        "word": "shoes",
+        "hint": "Zapatos"
+      },
+      {
+        "word": "jacket",
+        "hint": "Chaqueta"
+      },
+      {
+        "word": "hat",
+        "hint": "Sombrero"
+      },
+      {
+        "word": "socks",
+        "hint": "Calcetines"
+      },
+      {
+        "word": "scarf",
+        "hint": "Bufanda"
+      },
+      {
+        "word": "gloves",
+        "hint": "Guantes"
+      },
+      {
+        "word": "boots",
+        "hint": "Botas"
+      },
+      {
+        "word": "sweater",
+        "hint": "Suéter"
+      },
+      {
+        "word": "skirt",
+        "hint": "Falda"
+      },
+      {
+        "word": "belt",
+        "hint": "Cinturón"
+      },
+      {
+        "word": "coat",
+        "hint": "Abrigo"
+      },
+      {
+        "word": "tie",
+        "hint": "Corbata"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "Casa y habitaciones",
+    "description": "Partes de la casa y habitaciones en inglés",
+    "iconName": "house",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "kitchen",
+        "hint": "Cocina"
+      },
+      {
+        "word": "bedroom",
+        "hint": "Dormitorio"
+      },
+      {
+        "word": "bathroom",
+        "hint": "Baño"
+      },
+      {
+        "word": "garden",
+        "hint": "Jardín"
+      },
+      {
+        "word": "garage",
+        "hint": "Garaje"
+      },
+      {
+        "word": "balcony",
+        "hint": "Balcón"
+      },
+      {
+        "word": "hallway",
+        "hint": "Pasillo"
+      },
+      {
+        "word": "stairs",
+        "hint": "Escaleras"
+      },
+      {
+        "word": "ceiling",
+        "hint": "Techo"
+      },
+      {
+        "word": "floor",
+        "hint": "Suelo"
+      },
+      {
+        "word": "window",
+        "hint": "Ventana"
+      },
+      {
+        "word": "door",
+        "hint": "Puerta"
+      },
+      {
+        "word": "wall",
+        "hint": "Pared"
+      },
+      {
+        "word": "roof",
+        "hint": "Tejado"
+      },
+      {
+        "word": "basement",
+        "hint": "Sótano"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Clima",
+    "description": "Palabras sobre el clima y tiempo en inglés",
+    "iconName": "cloud.sun",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "rain",
+        "hint": "Lluvia"
+      },
+      {
+        "word": "snow",
+        "hint": "Nieve"
+      },
+      {
+        "word": "wind",
+        "hint": "Viento"
+      },
+      {
+        "word": "cloud",
+        "hint": "Nube"
+      },
+      {
+        "word": "storm",
+        "hint": "Tormenta"
+      },
+      {
+        "word": "thunder",
+        "hint": "Trueno"
+      },
+      {
+        "word": "lightning",
+        "hint": "Relámpago"
+      },
+      {
+        "word": "sunny",
+        "hint": "Soleado"
+      },
+      {
+        "word": "foggy",
+        "hint": "Neblinoso"
+      },
+      {
+        "word": "frost",
+        "hint": "Escarcha"
+      },
+      {
+        "word": "hail",
+        "hint": "Granizo"
+      },
+      {
+        "word": "breeze",
+        "hint": "Brisa"
+      },
+      {
+        "word": "drought",
+        "hint": "Sequía"
+      },
+      {
+        "word": "rainbow",
+        "hint": "Arcoíris"
+      },
+      {
+        "word": "humid",
+        "hint": "Húmedo"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Profesiones",
+    "description": "Profesiones y oficios en inglés",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "doctor",
+        "hint": "Médico"
+      },
+      {
+        "word": "teacher",
+        "hint": "Profesor"
+      },
+      {
+        "word": "engineer",
+        "hint": "Ingeniero"
+      },
+      {
+        "word": "lawyer",
+        "hint": "Abogado"
+      },
+      {
+        "word": "nurse",
+        "hint": "Enfermero/a"
+      },
+      {
+        "word": "pilot",
+        "hint": "Piloto"
+      },
+      {
+        "word": "chef",
+        "hint": "Cocinero"
+      },
+      {
+        "word": "dentist",
+        "hint": "Dentista"
+      },
+      {
+        "word": "farmer",
+        "hint": "Agricultor"
+      },
+      {
+        "word": "plumber",
+        "hint": "Fontanero"
+      },
+      {
+        "word": "painter",
+        "hint": "Pintor"
+      },
+      {
+        "word": "mechanic",
+        "hint": "Mecánico"
+      },
+      {
+        "word": "journalist",
+        "hint": "Periodista"
+      },
+      {
+        "word": "architect",
+        "hint": "Arquitecto"
+      },
+      {
+        "word": "surgeon",
+        "hint": "Cirujano"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transporte",
+    "description": "Medios de transporte en inglés",
+    "iconName": "car",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "car",
+        "hint": "Coche"
+      },
+      {
+        "word": "bus",
+        "hint": "Autobús"
+      },
+      {
+        "word": "train",
+        "hint": "Tren"
+      },
+      {
+        "word": "bicycle",
+        "hint": "Bicicleta"
+      },
+      {
+        "word": "airplane",
+        "hint": "Avión"
+      },
+      {
+        "word": "ship",
+        "hint": "Barco"
+      },
+      {
+        "word": "subway",
+        "hint": "Metro"
+      },
+      {
+        "word": "taxi",
+        "hint": "Taxi"
+      },
+      {
+        "word": "truck",
+        "hint": "Camión"
+      },
+      {
+        "word": "ferry",
+        "hint": "Transbordador"
+      },
+      {
+        "word": "scooter",
+        "hint": "Patinete"
+      },
+      {
+        "word": "tram",
+        "hint": "Tranvía"
+      },
+      {
+        "word": "canoe",
+        "hint": "Canoa"
+      },
+      {
+        "word": "helicopter",
+        "hint": "Helicóptero"
+      },
+      {
+        "word": "rocket",
+        "hint": "Cohete"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "Escuela",
+    "description": "Vocabulario escolar en inglés",
+    "iconName": "book",
+    "color": "#10b981",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pencil",
+        "hint": "Lápiz"
+      },
+      {
+        "word": "eraser",
+        "hint": "Borrador"
+      },
+      {
+        "word": "ruler",
+        "hint": "Regla"
+      },
+      {
+        "word": "notebook",
+        "hint": "Cuaderno"
+      },
+      {
+        "word": "backpack",
+        "hint": "Mochila"
+      },
+      {
+        "word": "chalk",
+        "hint": "Tiza"
+      },
+      {
+        "word": "desk",
+        "hint": "Escritorio"
+      },
+      {
+        "word": "globe",
+        "hint": "Globo terráqueo"
+      },
+      {
+        "word": "student",
+        "hint": "Estudiante"
+      },
+      {
+        "word": "lesson",
+        "hint": "Lección"
+      },
+      {
+        "word": "homework",
+        "hint": "Tarea"
+      },
+      {
+        "word": "exam",
+        "hint": "Examen"
+      },
+      {
+        "word": "library",
+        "hint": "Biblioteca"
+      },
+      {
+        "word": "crayon",
+        "hint": "Crayón"
+      },
+      {
+        "word": "marker",
+        "hint": "Marcador"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Utensilios de cocina",
+    "description": "Utensilios y objetos de cocina en inglés",
+    "iconName": "frying.pan",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "fork",
+        "hint": "Tenedor"
+      },
+      {
+        "word": "knife",
+        "hint": "Cuchillo"
+      },
+      {
+        "word": "spoon",
+        "hint": "Cuchara"
+      },
+      {
+        "word": "plate",
+        "hint": "Plato"
+      },
+      {
+        "word": "cup",
+        "hint": "Taza"
+      },
+      {
+        "word": "bowl",
+        "hint": "Cuenco"
+      },
+      {
+        "word": "pan",
+        "hint": "Sartén"
+      },
+      {
+        "word": "oven",
+        "hint": "Horno"
+      },
+      {
+        "word": "blender",
+        "hint": "Licuadora"
+      },
+      {
+        "word": "toaster",
+        "hint": "Tostadora"
+      },
+      {
+        "word": "kettle",
+        "hint": "Hervidor"
+      },
+      {
+        "word": "napkin",
+        "hint": "Servilleta"
+      },
+      {
+        "word": "whisk",
+        "hint": "Batidor"
+      },
+      {
+        "word": "tray",
+        "hint": "Bandeja"
+      },
+      {
+        "word": "strainer",
+        "hint": "Colador"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Deportes",
+    "description": "Deportes y actividades deportivas en inglés",
+    "iconName": "sportscourt",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "soccer",
+        "hint": "Fútbol"
+      },
+      {
+        "word": "tennis",
+        "hint": "Tenis"
+      },
+      {
+        "word": "swimming",
+        "hint": "Natación"
+      },
+      {
+        "word": "boxing",
+        "hint": "Boxeo"
+      },
+      {
+        "word": "cycling",
+        "hint": "Ciclismo"
+      },
+      {
+        "word": "running",
+        "hint": "Correr"
+      },
+      {
+        "word": "surfing",
+        "hint": "Surf"
+      },
+      {
+        "word": "skiing",
+        "hint": "Esquí"
+      },
+      {
+        "word": "golf",
+        "hint": "Golf"
+      },
+      {
+        "word": "wrestling",
+        "hint": "Lucha"
+      },
+      {
+        "word": "archery",
+        "hint": "Tiro con arco"
+      },
+      {
+        "word": "fencing",
+        "hint": "Esgrima"
+      },
+      {
+        "word": "rowing",
+        "hint": "Remo"
+      },
+      {
+        "word": "hockey",
+        "hint": "Hockey"
+      },
+      {
+        "word": "volleyball",
+        "hint": "Voleibol"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Instrumentos musicales",
+    "description": "Instrumentos musicales en inglés",
+    "iconName": "music.note",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "guitar",
+        "hint": "Guitarra"
+      },
+      {
+        "word": "piano",
+        "hint": "Piano"
+      },
+      {
+        "word": "drums",
+        "hint": "Batería"
+      },
+      {
+        "word": "violin",
+        "hint": "Violín"
+      },
+      {
+        "word": "flute",
+        "hint": "Flauta"
+      },
+      {
+        "word": "trumpet",
+        "hint": "Trompeta"
+      },
+      {
+        "word": "saxophone",
+        "hint": "Saxofón"
+      },
+      {
+        "word": "harp",
+        "hint": "Arpa"
+      },
+      {
+        "word": "cello",
+        "hint": "Violonchelo"
+      },
+      {
+        "word": "clarinet",
+        "hint": "Clarinete"
+      },
+      {
+        "word": "trombone",
+        "hint": "Trombón"
+      },
+      {
+        "word": "banjo",
+        "hint": "Banjo"
+      },
+      {
+        "word": "accordion",
+        "hint": "Acordeón"
+      },
+      {
+        "word": "oboe",
+        "hint": "Oboe"
+      },
+      {
+        "word": "tambourine",
+        "hint": "Pandereta"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Naturaleza",
+    "description": "Elementos de la naturaleza en inglés",
+    "iconName": "leaf.arrow.triangle.circlepath",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "mountain",
+        "hint": "Montaña"
+      },
+      {
+        "word": "river",
+        "hint": "Río"
+      },
+      {
+        "word": "forest",
+        "hint": "Bosque"
+      },
+      {
+        "word": "ocean",
+        "hint": "Océano"
+      },
+      {
+        "word": "desert",
+        "hint": "Desierto"
+      },
+      {
+        "word": "island",
+        "hint": "Isla"
+      },
+      {
+        "word": "valley",
+        "hint": "Valle"
+      },
+      {
+        "word": "waterfall",
+        "hint": "Cascada"
+      },
+      {
+        "word": "volcano",
+        "hint": "Volcán"
+      },
+      {
+        "word": "glacier",
+        "hint": "Glaciar"
+      },
+      {
+        "word": "cliff",
+        "hint": "Acantilado"
+      },
+      {
+        "word": "meadow",
+        "hint": "Pradera"
+      },
+      {
+        "word": "canyon",
+        "hint": "Cañón"
+      },
+      {
+        "word": "lagoon",
+        "hint": "Laguna"
+      },
+      {
+        "word": "cave",
+        "hint": "Cueva"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Emociones",
+    "description": "Sentimientos y emociones en inglés",
+    "iconName": "heart",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "happy",
+        "hint": "Feliz"
+      },
+      {
+        "word": "sad",
+        "hint": "Triste"
+      },
+      {
+        "word": "angry",
+        "hint": "Enfadado"
+      },
+      {
+        "word": "scared",
+        "hint": "Asustado"
+      },
+      {
+        "word": "excited",
+        "hint": "Emocionado"
+      },
+      {
+        "word": "nervous",
+        "hint": "Nervioso"
+      },
+      {
+        "word": "proud",
+        "hint": "Orgulloso"
+      },
+      {
+        "word": "lonely",
+        "hint": "Solitario"
+      },
+      {
+        "word": "jealous",
+        "hint": "Celoso"
+      },
+      {
+        "word": "grateful",
+        "hint": "Agradecido"
+      },
+      {
+        "word": "confused",
+        "hint": "Confundido"
+      },
+      {
+        "word": "anxious",
+        "hint": "Ansioso"
+      },
+      {
+        "word": "surprised",
+        "hint": "Sorprendido"
+      },
+      {
+        "word": "calm",
+        "hint": "Tranquilo"
+      },
+      {
+        "word": "bored",
+        "hint": "Aburrido"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Tecnología",
+    "description": "Vocabulario de tecnología en inglés",
+    "iconName": "desktopcomputer",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "computer",
+        "hint": "Computadora"
+      },
+      {
+        "word": "keyboard",
+        "hint": "Teclado"
+      },
+      {
+        "word": "screen",
+        "hint": "Pantalla"
+      },
+      {
+        "word": "printer",
+        "hint": "Impresora"
+      },
+      {
+        "word": "software",
+        "hint": "Programa informático"
+      },
+      {
+        "word": "website",
+        "hint": "Sitio web"
+      },
+      {
+        "word": "password",
+        "hint": "Contraseña"
+      },
+      {
+        "word": "network",
+        "hint": "Red"
+      },
+      {
+        "word": "upload",
+        "hint": "Subir (archivo)"
+      },
+      {
+        "word": "download",
+        "hint": "Descargar"
+      },
+      {
+        "word": "storage",
+        "hint": "Almacenamiento"
+      },
+      {
+        "word": "database",
+        "hint": "Base de datos"
+      },
+      {
+        "word": "browser",
+        "hint": "Navegador"
+      },
+      {
+        "word": "charger",
+        "hint": "Cargador"
+      },
+      {
+        "word": "speaker",
+        "hint": "Altavoz"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Oficina",
+    "description": "Vocabulario de oficina y trabajo en inglés",
+    "iconName": "building.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "stapler",
+        "hint": "Grapadora"
+      },
+      {
+        "word": "folder",
+        "hint": "Carpeta"
+      },
+      {
+        "word": "clipboard",
+        "hint": "Portapapeles"
+      },
+      {
+        "word": "calendar",
+        "hint": "Calendario"
+      },
+      {
+        "word": "envelope",
+        "hint": "Sobre"
+      },
+      {
+        "word": "stamp",
+        "hint": "Sello"
+      },
+      {
+        "word": "binder",
+        "hint": "Archivador"
+      },
+      {
+        "word": "meeting",
+        "hint": "Reunión"
+      },
+      {
+        "word": "receipt",
+        "hint": "Recibo"
+      },
+      {
+        "word": "invoice",
+        "hint": "Factura"
+      },
+      {
+        "word": "contract",
+        "hint": "Contrato"
+      },
+      {
+        "word": "schedule",
+        "hint": "Horario"
+      },
+      {
+        "word": "deadline",
+        "hint": "Fecha límite"
+      },
+      {
+        "word": "manager",
+        "hint": "Gerente"
+      },
+      {
+        "word": "colleague",
+        "hint": "Colega"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Salud y medicina",
+    "description": "Vocabulario médico y de salud en inglés",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "hospital",
+        "hint": "Hospital"
+      },
+      {
+        "word": "medicine",
+        "hint": "Medicamento"
+      },
+      {
+        "word": "bandage",
+        "hint": "Vendaje"
+      },
+      {
+        "word": "symptom",
+        "hint": "Síntoma"
+      },
+      {
+        "word": "fever",
+        "hint": "Fiebre"
+      },
+      {
+        "word": "cough",
+        "hint": "Tos"
+      },
+      {
+        "word": "allergy",
+        "hint": "Alergia"
+      },
+      {
+        "word": "vaccine",
+        "hint": "Vacuna"
+      },
+      {
+        "word": "surgery",
+        "hint": "Cirugía"
+      },
+      {
+        "word": "pharmacy",
+        "hint": "Farmacia"
+      },
+      {
+        "word": "illness",
+        "hint": "Enfermedad"
+      },
+      {
+        "word": "therapy",
+        "hint": "Terapia"
+      },
+      {
+        "word": "diagnosis",
+        "hint": "Diagnóstico"
+      },
+      {
+        "word": "headache",
+        "hint": "Dolor de cabeza"
+      },
+      {
+        "word": "injection",
+        "hint": "Inyección"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Viajes",
+    "description": "Vocabulario de viajes y turismo en inglés",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "passport",
+        "hint": "Pasaporte"
+      },
+      {
+        "word": "luggage",
+        "hint": "Equipaje"
+      },
+      {
+        "word": "ticket",
+        "hint": "Billete"
+      },
+      {
+        "word": "airport",
+        "hint": "Aeropuerto"
+      },
+      {
+        "word": "hotel",
+        "hint": "Hotel"
+      },
+      {
+        "word": "tourist",
+        "hint": "Turista"
+      },
+      {
+        "word": "suitcase",
+        "hint": "Maleta"
+      },
+      {
+        "word": "boarding",
+        "hint": "Embarque"
+      },
+      {
+        "word": "customs",
+        "hint": "Aduana"
+      },
+      {
+        "word": "itinerary",
+        "hint": "Itinerario"
+      },
+      {
+        "word": "souvenir",
+        "hint": "Recuerdo"
+      },
+      {
+        "word": "departure",
+        "hint": "Salida"
+      },
+      {
+        "word": "arrival",
+        "hint": "Llegada"
+      },
+      {
+        "word": "currency",
+        "hint": "Moneda"
+      },
+      {
+        "word": "journey",
+        "hint": "Viaje"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Pasatiempos",
+    "description": "Pasatiempos y actividades de ocio en inglés",
+    "iconName": "paintbrush",
+    "color": "#c026d3",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "painting",
+        "hint": "Pintura"
+      },
+      {
+        "word": "reading",
+        "hint": "Lectura"
+      },
+      {
+        "word": "cooking",
+        "hint": "Cocinar"
+      },
+      {
+        "word": "dancing",
+        "hint": "Bailar"
+      },
+      {
+        "word": "fishing",
+        "hint": "Pesca"
+      },
+      {
+        "word": "hiking",
+        "hint": "Senderismo"
+      },
+      {
+        "word": "camping",
+        "hint": "Acampar"
+      },
+      {
+        "word": "knitting",
+        "hint": "Tejer"
+      },
+      {
+        "word": "gardening",
+        "hint": "Jardinería"
+      },
+      {
+        "word": "pottery",
+        "hint": "Cerámica"
+      },
+      {
+        "word": "drawing",
+        "hint": "Dibujar"
+      },
+      {
+        "word": "writing",
+        "hint": "Escritura"
+      },
+      {
+        "word": "singing",
+        "hint": "Cantar"
+      },
+      {
+        "word": "juggling",
+        "hint": "Malabarismo"
+      },
+      {
+        "word": "sculpting",
+        "hint": "Escultura"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Bebidas",
+    "description": "Bebidas y refrescos en inglés",
+    "iconName": "cup.and.saucer",
+    "color": "#0284c7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "water",
+        "hint": "Agua"
+      },
+      {
+        "word": "juice",
+        "hint": "Zumo"
+      },
+      {
+        "word": "coffee",
+        "hint": "Café"
+      },
+      {
+        "word": "milk",
+        "hint": "Leche"
+      },
+      {
+        "word": "lemonade",
+        "hint": "Limonada"
+      },
+      {
+        "word": "smoothie",
+        "hint": "Batido"
+      },
+      {
+        "word": "milkshake",
+        "hint": "Malteada"
+      },
+      {
+        "word": "cocktail",
+        "hint": "Cóctel"
+      },
+      {
+        "word": "espresso",
+        "hint": "Expreso"
+      },
+      {
+        "word": "champagne",
+        "hint": "Champán"
+      },
+      {
+        "word": "cider",
+        "hint": "Sidra"
+      },
+      {
+        "word": "herbal",
+        "hint": "Infusión de hierbas"
+      },
+      {
+        "word": "sparkling",
+        "hint": "Con gas"
+      },
+      {
+        "word": "mocktail",
+        "hint": "Cóctel sin alcohol"
+      },
+      {
+        "word": "cappuccino",
+        "hint": "Capuchino"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Postres y dulces",
+    "description": "Postres y dulces en inglés",
+    "iconName": "birthday.cake",
+    "color": "#db2777",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cake",
+        "hint": "Pastel"
+      },
+      {
+        "word": "cookie",
+        "hint": "Galleta"
+      },
+      {
+        "word": "chocolate",
+        "hint": "Chocolate"
+      },
+      {
+        "word": "pudding",
+        "hint": "Pudín"
+      },
+      {
+        "word": "brownie",
+        "hint": "Brownie"
+      },
+      {
+        "word": "muffin",
+        "hint": "Magdalena"
+      },
+      {
+        "word": "cupcake",
+        "hint": "Pastelito"
+      },
+      {
+        "word": "donut",
+        "hint": "Rosquilla"
+      },
+      {
+        "word": "caramel",
+        "hint": "Caramelo"
+      },
+      {
+        "word": "waffle",
+        "hint": "Gofre"
+      },
+      {
+        "word": "pancake",
+        "hint": "Panqueque"
+      },
+      {
+        "word": "croissant",
+        "hint": "Cruasán"
+      },
+      {
+        "word": "toffee",
+        "hint": "Toffee"
+      },
+      {
+        "word": "fudge",
+        "hint": "Dulce de chocolate"
+      },
+      {
+        "word": "truffle",
+        "hint": "Trufa"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Muebles",
+    "description": "Muebles y mobiliario del hogar en inglés",
+    "iconName": "sofa",
+    "color": "#854d0e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "chair",
+        "hint": "Silla"
+      },
+      {
+        "word": "table",
+        "hint": "Mesa"
+      },
+      {
+        "word": "sofa",
+        "hint": "Sofá"
+      },
+      {
+        "word": "bed",
+        "hint": "Cama"
+      },
+      {
+        "word": "wardrobe",
+        "hint": "Armario"
+      },
+      {
+        "word": "shelf",
+        "hint": "Estante"
+      },
+      {
+        "word": "drawer",
+        "hint": "Cajón"
+      },
+      {
+        "word": "mirror",
+        "hint": "Espejo"
+      },
+      {
+        "word": "curtain",
+        "hint": "Cortina"
+      },
+      {
+        "word": "carpet",
+        "hint": "Alfombra"
+      },
+      {
+        "word": "pillow",
+        "hint": "Almohada"
+      },
+      {
+        "word": "blanket",
+        "hint": "Manta"
+      },
+      {
+        "word": "lamp",
+        "hint": "Lámpara"
+      },
+      {
+        "word": "mattress",
+        "hint": "Colchón"
+      },
+      {
+        "word": "bookcase",
+        "hint": "Estantería"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Herramientas",
+    "description": "Herramientas y utensilios en inglés",
+    "iconName": "wrench",
+    "color": "#57534e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "hammer",
+        "hint": "Martillo"
+      },
+      {
+        "word": "screwdriver",
+        "hint": "Destornillador"
+      },
+      {
+        "word": "wrench",
+        "hint": "Llave inglesa"
+      },
+      {
+        "word": "pliers",
+        "hint": "Alicates"
+      },
+      {
+        "word": "drill",
+        "hint": "Taladro"
+      },
+      {
+        "word": "saw",
+        "hint": "Sierra"
+      },
+      {
+        "word": "nail",
+        "hint": "Clavo"
+      },
+      {
+        "word": "screw",
+        "hint": "Tornillo"
+      },
+      {
+        "word": "bolt",
+        "hint": "Perno"
+      },
+      {
+        "word": "shovel",
+        "hint": "Pala"
+      },
+      {
+        "word": "rake",
+        "hint": "Rastrillo"
+      },
+      {
+        "word": "ladder",
+        "hint": "Escalera"
+      },
+      {
+        "word": "tape",
+        "hint": "Cinta"
+      },
+      {
+        "word": "chisel",
+        "hint": "Cincel"
+      },
+      {
+        "word": "clamp",
+        "hint": "Abrazadera"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materiales",
+    "description": "Materiales y sustancias comunes en inglés",
+    "iconName": "cube",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "wood",
+        "hint": "Madera"
+      },
+      {
+        "word": "metal",
+        "hint": "Metal"
+      },
+      {
+        "word": "glass",
+        "hint": "Vidrio"
+      },
+      {
+        "word": "plastic",
+        "hint": "Plástico"
+      },
+      {
+        "word": "cotton",
+        "hint": "Algodón"
+      },
+      {
+        "word": "leather",
+        "hint": "Cuero"
+      },
+      {
+        "word": "silk",
+        "hint": "Seda"
+      },
+      {
+        "word": "rubber",
+        "hint": "Goma"
+      },
+      {
+        "word": "concrete",
+        "hint": "Hormigón"
+      },
+      {
+        "word": "ceramic",
+        "hint": "Cerámica"
+      },
+      {
+        "word": "marble",
+        "hint": "Mármol"
+      },
+      {
+        "word": "bronze",
+        "hint": "Bronce"
+      },
+      {
+        "word": "copper",
+        "hint": "Cobre"
+      },
+      {
+        "word": "steel",
+        "hint": "Acero"
+      },
+      {
+        "word": "velvet",
+        "hint": "Terciopelo"
+      }
+    ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Rutina Diaria",
+    "description": "Palabras de la rutina diaria en inglés",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "breakfast",
+        "hint": "Desayuno"
+      },
+      {
+        "word": "shower",
+        "hint": "Ducha"
+      },
+      {
+        "word": "morning",
+        "hint": "Mañana"
+      },
+      {
+        "word": "evening",
+        "hint": "Tarde/noche"
+      },
+      {
+        "word": "lunch",
+        "hint": "Almuerzo"
+      },
+      {
+        "word": "dinner",
+        "hint": "Cena"
+      },
+      {
+        "word": "alarm",
+        "hint": "Alarma"
+      },
+      {
+        "word": "schedule",
+        "hint": "Horario"
+      },
+      {
+        "word": "routine",
+        "hint": "Rutina"
+      },
+      {
+        "word": "commute",
+        "hint": "Desplazamiento al trabajo"
+      },
+      {
+        "word": "nap",
+        "hint": "Siesta"
+      },
+      {
+        "word": "chore",
+        "hint": "Tarea doméstica"
+      },
+      {
+        "word": "bedtime",
+        "hint": "Hora de dormir"
+      },
+      {
+        "word": "toothbrush",
+        "hint": "Cepillo de dientes"
+      },
+      {
+        "word": "pillow",
+        "hint": "Almohada"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Compras",
+    "description": "Vocabulario de compras en inglés",
+    "iconName": "cart",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "store",
+        "hint": "Tienda"
+      },
+      {
+        "word": "market",
+        "hint": "Mercado"
+      },
+      {
+        "word": "price",
+        "hint": "Precio"
+      },
+      {
+        "word": "receipt",
+        "hint": "Recibo"
+      },
+      {
+        "word": "discount",
+        "hint": "Descuento"
+      },
+      {
+        "word": "cashier",
+        "hint": "Cajero/a"
+      },
+      {
+        "word": "basket",
+        "hint": "Cesta"
+      },
+      {
+        "word": "bargain",
+        "hint": "Ganga"
+      },
+      {
+        "word": "wallet",
+        "hint": "Billetera"
+      },
+      {
+        "word": "checkout",
+        "hint": "Caja (para pagar)"
+      },
+      {
+        "word": "refund",
+        "hint": "Reembolso"
+      },
+      {
+        "word": "coupon",
+        "hint": "Cupón"
+      },
+      {
+        "word": "shelf",
+        "hint": "Estante"
+      },
+      {
+        "word": "aisle",
+        "hint": "Pasillo"
+      },
+      {
+        "word": "brand",
+        "hint": "Marca"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restaurante",
+    "description": "Vocabulario del restaurante en inglés",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "menu",
+        "hint": "Menú"
+      },
+      {
+        "word": "waiter",
+        "hint": "Camarero"
+      },
+      {
+        "word": "table",
+        "hint": "Mesa"
+      },
+      {
+        "word": "order",
+        "hint": "Pedido"
+      },
+      {
+        "word": "bill",
+        "hint": "Cuenta"
+      },
+      {
+        "word": "appetizer",
+        "hint": "Aperitivo / entrante"
+      },
+      {
+        "word": "dessert",
+        "hint": "Postre"
+      },
+      {
+        "word": "napkin",
+        "hint": "Servilleta"
+      },
+      {
+        "word": "plate",
+        "hint": "Plato"
+      },
+      {
+        "word": "glass",
+        "hint": "Vaso"
+      },
+      {
+        "word": "fork",
+        "hint": "Tenedor"
+      },
+      {
+        "word": "knife",
+        "hint": "Cuchillo"
+      },
+      {
+        "word": "spoon",
+        "hint": "Cuchara"
+      },
+      {
+        "word": "tip",
+        "hint": "Propina"
+      },
+      {
+        "word": "chef",
+        "hint": "Chef / cocinero"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Jardín",
+    "description": "Vocabulario del jardín en inglés",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "flower",
+        "hint": "Flor"
+      },
+      {
+        "word": "soil",
+        "hint": "Tierra / suelo"
+      },
+      {
+        "word": "seed",
+        "hint": "Semilla"
+      },
+      {
+        "word": "fence",
+        "hint": "Cerca / valla"
+      },
+      {
+        "word": "lawn",
+        "hint": "Césped"
+      },
+      {
+        "word": "bush",
+        "hint": "Arbusto"
+      },
+      {
+        "word": "hose",
+        "hint": "Manguera"
+      },
+      {
+        "word": "shovel",
+        "hint": "Pala"
+      },
+      {
+        "word": "pruning",
+        "hint": "Poda"
+      },
+      {
+        "word": "weed",
+        "hint": "Mala hierba"
+      },
+      {
+        "word": "compost",
+        "hint": "Abono / compost"
+      },
+      {
+        "word": "mulch",
+        "hint": "Mantillo"
+      },
+      {
+        "word": "sprinkler",
+        "hint": "Aspersor"
+      },
+      {
+        "word": "petal",
+        "hint": "Pétalo"
+      },
+      {
+        "word": "bloom",
+        "hint": "Floración"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Baño",
+    "description": "Vocabulario del baño en inglés",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mirror",
+        "hint": "Espejo"
+      },
+      {
+        "word": "towel",
+        "hint": "Toalla"
+      },
+      {
+        "word": "sink",
+        "hint": "Lavabo"
+      },
+      {
+        "word": "bathtub",
+        "hint": "Bañera"
+      },
+      {
+        "word": "toilet",
+        "hint": "Inodoro"
+      },
+      {
+        "word": "faucet",
+        "hint": "Grifo"
+      },
+      {
+        "word": "soap",
+        "hint": "Jabón"
+      },
+      {
+        "word": "shampoo",
+        "hint": "Champú"
+      },
+      {
+        "word": "drain",
+        "hint": "Desagüe"
+      },
+      {
+        "word": "curtain",
+        "hint": "Cortina (de ducha)"
+      },
+      {
+        "word": "razor",
+        "hint": "Navaja / rasuradora"
+      },
+      {
+        "word": "sponge",
+        "hint": "Esponja"
+      },
+      {
+        "word": "cabinet",
+        "hint": "Armario / gabinete"
+      },
+      {
+        "word": "tile",
+        "hint": "Azulejo"
+      },
+      {
+        "word": "plunger",
+        "hint": "Desatascador"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Cine",
+    "description": "Vocabulario del cine en inglés",
+    "iconName": "film",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "screen",
+        "hint": "Pantalla"
+      },
+      {
+        "word": "ticket",
+        "hint": "Entrada / boleto"
+      },
+      {
+        "word": "director",
+        "hint": "Director"
+      },
+      {
+        "word": "actress",
+        "hint": "Actriz"
+      },
+      {
+        "word": "preview",
+        "hint": "Avance / tráiler"
+      },
+      {
+        "word": "subtitle",
+        "hint": "Subtítulo"
+      },
+      {
+        "word": "popcorn",
+        "hint": "Palomitas"
+      },
+      {
+        "word": "thriller",
+        "hint": "Película de suspenso"
+      },
+      {
+        "word": "comedy",
+        "hint": "Comedia"
+      },
+      {
+        "word": "scene",
+        "hint": "Escena"
+      },
+      {
+        "word": "plot",
+        "hint": "Trama / argumento"
+      },
+      {
+        "word": "sequel",
+        "hint": "Secuela"
+      },
+      {
+        "word": "premiere",
+        "hint": "Estreno"
+      },
+      {
+        "word": "audience",
+        "hint": "Público / audiencia"
+      },
+      {
+        "word": "screenplay",
+        "hint": "Guion cinematográfico"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Arte",
+    "description": "Vocabulario de arte en inglés",
+    "iconName": "paintbrush",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "canvas",
+        "hint": "Lienzo"
+      },
+      {
+        "word": "brush",
+        "hint": "Pincel"
+      },
+      {
+        "word": "palette",
+        "hint": "Paleta de colores"
+      },
+      {
+        "word": "sketch",
+        "hint": "Boceto"
+      },
+      {
+        "word": "portrait",
+        "hint": "Retrato"
+      },
+      {
+        "word": "gallery",
+        "hint": "Galería"
+      },
+      {
+        "word": "sculpture",
+        "hint": "Escultura"
+      },
+      {
+        "word": "mural",
+        "hint": "Mural"
+      },
+      {
+        "word": "easel",
+        "hint": "Caballete"
+      },
+      {
+        "word": "charcoal",
+        "hint": "Carboncillo"
+      },
+      {
+        "word": "mosaic",
+        "hint": "Mosaico"
+      },
+      {
+        "word": "frame",
+        "hint": "Marco"
+      },
+      {
+        "word": "pigment",
+        "hint": "Pigmento"
+      },
+      {
+        "word": "exhibit",
+        "hint": "Exposición"
+      },
+      {
+        "word": "collage",
+        "hint": "Collage"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Baile",
+    "description": "Vocabulario de baile en inglés",
+    "iconName": "figure.dance",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "rhythm",
+        "hint": "Ritmo"
+      },
+      {
+        "word": "stage",
+        "hint": "Escenario"
+      },
+      {
+        "word": "ballet",
+        "hint": "Ballet"
+      },
+      {
+        "word": "partner",
+        "hint": "Pareja de baile"
+      },
+      {
+        "word": "footwork",
+        "hint": "Juego de pies"
+      },
+      {
+        "word": "spinning",
+        "hint": "Giro"
+      },
+      {
+        "word": "posture",
+        "hint": "Postura"
+      },
+      {
+        "word": "tempo",
+        "hint": "Tempo"
+      },
+      {
+        "word": "graceful",
+        "hint": "Elegante / grácil"
+      },
+      {
+        "word": "practice",
+        "hint": "Práctica / ensayo"
+      },
+      {
+        "word": "costume",
+        "hint": "Disfraz / traje"
+      },
+      {
+        "word": "warmup",
+        "hint": "Calentamiento"
+      },
+      {
+        "word": "stretch",
+        "hint": "Estiramiento"
+      },
+      {
+        "word": "movement",
+        "hint": "Movimiento"
+      },
+      {
+        "word": "encore",
+        "hint": "Repetición / bis"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Fotografía",
+    "description": "Vocabulario de fotografía en inglés",
+    "iconName": "camera",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "camera",
+        "hint": "Cámara"
+      },
+      {
+        "word": "tripod",
+        "hint": "Trípode"
+      },
+      {
+        "word": "shutter",
+        "hint": "Obturador"
+      },
+      {
+        "word": "exposure",
+        "hint": "Exposición"
+      },
+      {
+        "word": "filter",
+        "hint": "Filtro"
+      },
+      {
+        "word": "portrait",
+        "hint": "Retrato fotográfico"
+      },
+      {
+        "word": "landscape",
+        "hint": "Paisaje"
+      },
+      {
+        "word": "flash",
+        "hint": "Flash"
+      },
+      {
+        "word": "aperture",
+        "hint": "Apertura"
+      },
+      {
+        "word": "zoom",
+        "hint": "Zum / acercar"
+      },
+      {
+        "word": "contrast",
+        "hint": "Contraste"
+      },
+      {
+        "word": "snapshot",
+        "hint": "Instantánea"
+      },
+      {
+        "word": "editing",
+        "hint": "Edición"
+      },
+      {
+        "word": "negative",
+        "hint": "Negativo"
+      },
+      {
+        "word": "viewfinder",
+        "hint": "Visor"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Manualidades",
+    "description": "Vocabulario de manualidades en inglés",
+    "iconName": "scissors",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "scissors",
+        "hint": "Tijeras"
+      },
+      {
+        "word": "thread",
+        "hint": "Hilo"
+      },
+      {
+        "word": "needle",
+        "hint": "Aguja"
+      },
+      {
+        "word": "fabric",
+        "hint": "Tela"
+      },
+      {
+        "word": "pattern",
+        "hint": "Patrón / molde"
+      },
+      {
+        "word": "ribbon",
+        "hint": "Cinta"
+      },
+      {
+        "word": "knitting",
+        "hint": "Tejer con agujas"
+      },
+      {
+        "word": "beads",
+        "hint": "Cuentas / abalorios"
+      },
+      {
+        "word": "stencil",
+        "hint": "Plantilla"
+      },
+      {
+        "word": "origami",
+        "hint": "Origami / papiroflexia"
+      },
+      {
+        "word": "pottery",
+        "hint": "Cerámica"
+      },
+      {
+        "word": "crochet",
+        "hint": "Ganchillo"
+      },
+      {
+        "word": "weaving",
+        "hint": "Tejido"
+      },
+      {
+        "word": "embroidery",
+        "hint": "Bordado"
+      },
+      {
+        "word": "quilting",
+        "hint": "Acolchado"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geografía",
+    "description": "Vocabulario de geografía en inglés",
+    "iconName": "globe.americas",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "island",
+        "hint": "Isla"
+      },
+      {
+        "word": "desert",
+        "hint": "Desierto"
+      },
+      {
+        "word": "volcano",
+        "hint": "Volcán"
+      },
+      {
+        "word": "river",
+        "hint": "Río"
+      },
+      {
+        "word": "valley",
+        "hint": "Valle"
+      },
+      {
+        "word": "glacier",
+        "hint": "Glaciar"
+      },
+      {
+        "word": "plateau",
+        "hint": "Meseta"
+      },
+      {
+        "word": "canyon",
+        "hint": "Cañón"
+      },
+      {
+        "word": "peninsula",
+        "hint": "Península"
+      },
+      {
+        "word": "continent",
+        "hint": "Continente"
+      },
+      {
+        "word": "equator",
+        "hint": "Ecuador (línea)"
+      },
+      {
+        "word": "latitude",
+        "hint": "Latitud"
+      },
+      {
+        "word": "altitude",
+        "hint": "Altitud"
+      },
+      {
+        "word": "cliff",
+        "hint": "Acantilado"
+      },
+      {
+        "word": "waterfall",
+        "hint": "Cascada"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomía",
+    "description": "Vocabulario de astronomía en inglés",
+    "iconName": "star",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "planet",
+        "hint": "Planeta"
+      },
+      {
+        "word": "galaxy",
+        "hint": "Galaxia"
+      },
+      {
+        "word": "comet",
+        "hint": "Cometa"
+      },
+      {
+        "word": "asteroid",
+        "hint": "Asteroide"
+      },
+      {
+        "word": "eclipse",
+        "hint": "Eclipse"
+      },
+      {
+        "word": "orbit",
+        "hint": "Órbita"
+      },
+      {
+        "word": "nebula",
+        "hint": "Nebulosa"
+      },
+      {
+        "word": "telescope",
+        "hint": "Telescopio"
+      },
+      {
+        "word": "satellite",
+        "hint": "Satélite"
+      },
+      {
+        "word": "meteor",
+        "hint": "Meteoro"
+      },
+      {
+        "word": "gravity",
+        "hint": "Gravedad"
+      },
+      {
+        "word": "constellation",
+        "hint": "Constelación"
+      },
+      {
+        "word": "dwarf",
+        "hint": "Enano (planeta enano)"
+      },
+      {
+        "word": "lunar",
+        "hint": "Lunar"
+      },
+      {
+        "word": "supernova",
+        "hint": "Supernova"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Océano",
+    "description": "Vocabulario del océano en inglés",
+    "iconName": "water.waves",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "tide",
+        "hint": "Marea"
+      },
+      {
+        "word": "coral",
+        "hint": "Coral"
+      },
+      {
+        "word": "whale",
+        "hint": "Ballena"
+      },
+      {
+        "word": "dolphin",
+        "hint": "Delfín"
+      },
+      {
+        "word": "seaweed",
+        "hint": "Alga marina"
+      },
+      {
+        "word": "current",
+        "hint": "Corriente"
+      },
+      {
+        "word": "shore",
+        "hint": "Orilla"
+      },
+      {
+        "word": "anchor",
+        "hint": "Ancla"
+      },
+      {
+        "word": "trench",
+        "hint": "Fosa oceánica"
+      },
+      {
+        "word": "reef",
+        "hint": "Arrecife"
+      },
+      {
+        "word": "iceberg",
+        "hint": "Iceberg"
+      },
+      {
+        "word": "plankton",
+        "hint": "Plancton"
+      },
+      {
+        "word": "seahorse",
+        "hint": "Caballito de mar"
+      },
+      {
+        "word": "oyster",
+        "hint": "Ostra"
+      },
+      {
+        "word": "starfish",
+        "hint": "Estrella de mar"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Montañas",
+    "description": "Vocabulario de montañas en inglés",
+    "iconName": "mountain.2",
+    "color": "#4b5563",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "summit",
+        "hint": "Cumbre / cima"
+      },
+      {
+        "word": "trail",
+        "hint": "Sendero"
+      },
+      {
+        "word": "ridge",
+        "hint": "Cresta"
+      },
+      {
+        "word": "boulder",
+        "hint": "Peñasco"
+      },
+      {
+        "word": "slope",
+        "hint": "Pendiente / ladera"
+      },
+      {
+        "word": "avalanche",
+        "hint": "Avalancha"
+      },
+      {
+        "word": "peak",
+        "hint": "Pico"
+      },
+      {
+        "word": "foothill",
+        "hint": "Estribación"
+      },
+      {
+        "word": "climbing",
+        "hint": "Escalada"
+      },
+      {
+        "word": "compass",
+        "hint": "Brújula"
+      },
+      {
+        "word": "backpack",
+        "hint": "Mochila"
+      },
+      {
+        "word": "altitude",
+        "hint": "Altura / altitud"
+      },
+      {
+        "word": "shelter",
+        "hint": "Refugio"
+      },
+      {
+        "word": "gorge",
+        "hint": "Desfiladero"
+      },
+      {
+        "word": "terrain",
+        "hint": "Terreno"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Acampar",
+    "description": "Vocabulario de acampar en inglés",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "tent",
+        "hint": "Tienda de campaña"
+      },
+      {
+        "word": "campfire",
+        "hint": "Fogata"
+      },
+      {
+        "word": "sleeping",
+        "hint": "Saco de dormir"
+      },
+      {
+        "word": "lantern",
+        "hint": "Linterna / farol"
+      },
+      {
+        "word": "firewood",
+        "hint": "Leña"
+      },
+      {
+        "word": "canteen",
+        "hint": "Cantimplora"
+      },
+      {
+        "word": "hammock",
+        "hint": "Hamaca"
+      },
+      {
+        "word": "matches",
+        "hint": "Cerillas / fósforos"
+      },
+      {
+        "word": "wildlife",
+        "hint": "Fauna silvestre"
+      },
+      {
+        "word": "hiking",
+        "hint": "Senderismo"
+      },
+      {
+        "word": "cooler",
+        "hint": "Nevera portátil"
+      },
+      {
+        "word": "fishing",
+        "hint": "Pesca"
+      },
+      {
+        "word": "flashlight",
+        "hint": "Linterna"
+      },
+      {
+        "word": "marshmallow",
+        "hint": "Malvavisco"
+      },
+      {
+        "word": "campsite",
+        "hint": "Lugar de acampada"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Derecho",
+    "description": "Vocabulario legal en inglés",
+    "iconName": "building.columns",
+    "color": "#78350f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "judge",
+        "hint": "Juez"
+      },
+      {
+        "word": "lawyer",
+        "hint": "Abogado"
+      },
+      {
+        "word": "trial",
+        "hint": "Juicio"
+      },
+      {
+        "word": "verdict",
+        "hint": "Veredicto"
+      },
+      {
+        "word": "witness",
+        "hint": "Testigo"
+      },
+      {
+        "word": "evidence",
+        "hint": "Evidencia / prueba"
+      },
+      {
+        "word": "sentence",
+        "hint": "Sentencia"
+      },
+      {
+        "word": "appeal",
+        "hint": "Apelación"
+      },
+      {
+        "word": "plaintiff",
+        "hint": "Demandante"
+      },
+      {
+        "word": "defendant",
+        "hint": "Acusado / demandado"
+      },
+      {
+        "word": "jury",
+        "hint": "Jurado"
+      },
+      {
+        "word": "statute",
+        "hint": "Estatuto / ley"
+      },
+      {
+        "word": "bail",
+        "hint": "Fianza"
+      },
+      {
+        "word": "custody",
+        "hint": "Custodia"
+      },
+      {
+        "word": "parole",
+        "hint": "Libertad condicional"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Política",
+    "description": "Vocabulario político en inglés",
+    "iconName": "person.3",
+    "color": "#1e40af",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "election",
+        "hint": "Elección"
+      },
+      {
+        "word": "congress",
+        "hint": "Congreso"
+      },
+      {
+        "word": "senator",
+        "hint": "Senador"
+      },
+      {
+        "word": "campaign",
+        "hint": "Campaña"
+      },
+      {
+        "word": "democracy",
+        "hint": "Democracia"
+      },
+      {
+        "word": "ballot",
+        "hint": "Papeleta de voto"
+      },
+      {
+        "word": "cabinet",
+        "hint": "Gabinete"
+      },
+      {
+        "word": "policy",
+        "hint": "Política (norma)"
+      },
+      {
+        "word": "debate",
+        "hint": "Debate"
+      },
+      {
+        "word": "republic",
+        "hint": "República"
+      },
+      {
+        "word": "treaty",
+        "hint": "Tratado"
+      },
+      {
+        "word": "diplomat",
+        "hint": "Diplomático"
+      },
+      {
+        "word": "petition",
+        "hint": "Petición"
+      },
+      {
+        "word": "reform",
+        "hint": "Reforma"
+      },
+      {
+        "word": "summit",
+        "hint": "Cumbre (política)"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Economía",
+    "description": "Vocabulario económico en inglés",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#047857",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "market",
+        "hint": "Mercado"
+      },
+      {
+        "word": "profit",
+        "hint": "Ganancia / beneficio"
+      },
+      {
+        "word": "budget",
+        "hint": "Presupuesto"
+      },
+      {
+        "word": "demand",
+        "hint": "Demanda"
+      },
+      {
+        "word": "supply",
+        "hint": "Oferta / suministro"
+      },
+      {
+        "word": "revenue",
+        "hint": "Ingresos"
+      },
+      {
+        "word": "surplus",
+        "hint": "Excedente / superávit"
+      },
+      {
+        "word": "deficit",
+        "hint": "Déficit"
+      },
+      {
+        "word": "tariff",
+        "hint": "Arancel"
+      },
+      {
+        "word": "export",
+        "hint": "Exportación"
+      },
+      {
+        "word": "import",
+        "hint": "Importación"
+      },
+      {
+        "word": "subsidy",
+        "hint": "Subsidio"
+      },
+      {
+        "word": "forecast",
+        "hint": "Pronóstico económico"
+      },
+      {
+        "word": "commodity",
+        "hint": "Materia prima"
+      },
+      {
+        "word": "currency",
+        "hint": "Moneda / divisa"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Banca",
+    "description": "Vocabulario bancario en inglés",
+    "iconName": "banknote",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "account",
+        "hint": "Cuenta bancaria"
+      },
+      {
+        "word": "deposit",
+        "hint": "Depósito"
+      },
+      {
+        "word": "withdraw",
+        "hint": "Retirar (dinero)"
+      },
+      {
+        "word": "interest",
+        "hint": "Interés"
+      },
+      {
+        "word": "mortgage",
+        "hint": "Hipoteca"
+      },
+      {
+        "word": "savings",
+        "hint": "Ahorros"
+      },
+      {
+        "word": "balance",
+        "hint": "Saldo"
+      },
+      {
+        "word": "transfer",
+        "hint": "Transferencia"
+      },
+      {
+        "word": "credit",
+        "hint": "Crédito"
+      },
+      {
+        "word": "statement",
+        "hint": "Extracto bancario"
+      },
+      {
+        "word": "overdraft",
+        "hint": "Sobregiro"
+      },
+      {
+        "word": "loan",
+        "hint": "Préstamo"
+      },
+      {
+        "word": "exchange",
+        "hint": "Tipo de cambio"
+      },
+      {
+        "word": "teller",
+        "hint": "Cajero de banco"
+      },
+      {
+        "word": "vault",
+        "hint": "Bóveda / caja fuerte"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Seguros",
+    "description": "Vocabulario de seguros en inglés",
+    "iconName": "shield",
+    "color": "#0f766e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "premium",
+        "hint": "Prima (de seguro)"
+      },
+      {
+        "word": "coverage",
+        "hint": "Cobertura"
+      },
+      {
+        "word": "deductible",
+        "hint": "Deducible"
+      },
+      {
+        "word": "claim",
+        "hint": "Reclamación"
+      },
+      {
+        "word": "liability",
+        "hint": "Responsabilidad"
+      },
+      {
+        "word": "beneficiary",
+        "hint": "Beneficiario"
+      },
+      {
+        "word": "policyholder",
+        "hint": "Asegurado"
+      },
+      {
+        "word": "renewal",
+        "hint": "Renovación"
+      },
+      {
+        "word": "exclusion",
+        "hint": "Exclusión"
+      },
+      {
+        "word": "indemnity",
+        "hint": "Indemnización"
+      },
+      {
+        "word": "adjuster",
+        "hint": "Perito / ajustador"
+      },
+      {
+        "word": "underwriter",
+        "hint": "Suscriptor"
+      },
+      {
+        "word": "broker",
+        "hint": "Corredor de seguros"
+      },
+      {
+        "word": "annuity",
+        "hint": "Anualidad"
+      },
+      {
+        "word": "rider",
+        "hint": "Cláusula adicional"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Cocina",
+    "description": "Vocabulario de cocina en inglés",
+    "iconName": "flame",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recipe",
+        "hint": "Receta"
+      },
+      {
+        "word": "boiling",
+        "hint": "Hervir"
+      },
+      {
+        "word": "frying",
+        "hint": "Freír"
+      },
+      {
+        "word": "roasting",
+        "hint": "Asar"
+      },
+      {
+        "word": "stirring",
+        "hint": "Remover / revolver"
+      },
+      {
+        "word": "chopping",
+        "hint": "Picar / cortar"
+      },
+      {
+        "word": "seasoning",
+        "hint": "Condimento / sazón"
+      },
+      {
+        "word": "simmering",
+        "hint": "Cocinar a fuego lento"
+      },
+      {
+        "word": "grilling",
+        "hint": "Asar a la parrilla"
+      },
+      {
+        "word": "steaming",
+        "hint": "Cocinar al vapor"
+      },
+      {
+        "word": "blending",
+        "hint": "Mezclar / licuar"
+      },
+      {
+        "word": "marinade",
+        "hint": "Adobo / marinada"
+      },
+      {
+        "word": "garnish",
+        "hint": "Guarnición / decorar"
+      },
+      {
+        "word": "sauteing",
+        "hint": "Saltear"
+      },
+      {
+        "word": "whisking",
+        "hint": "Batir"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Repostería",
+    "description": "Vocabulario de repostería en inglés",
+    "iconName": "birthday.cake",
+    "color": "#c2410c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "dough",
+        "hint": "Masa"
+      },
+      {
+        "word": "flour",
+        "hint": "Harina"
+      },
+      {
+        "word": "yeast",
+        "hint": "Levadura"
+      },
+      {
+        "word": "frosting",
+        "hint": "Glaseado"
+      },
+      {
+        "word": "muffin",
+        "hint": "Magdalena"
+      },
+      {
+        "word": "pastry",
+        "hint": "Pastelería / hojaldre"
+      },
+      {
+        "word": "croissant",
+        "hint": "Cruasán"
+      },
+      {
+        "word": "batter",
+        "hint": "Mezcla para hornear"
+      },
+      {
+        "word": "rolling",
+        "hint": "Rodillo (para estirar)"
+      },
+      {
+        "word": "whipping",
+        "hint": "Montar / batir (nata)"
+      },
+      {
+        "word": "kneading",
+        "hint": "Amasar"
+      },
+      {
+        "word": "sifting",
+        "hint": "Tamizar / cernir"
+      },
+      {
+        "word": "brownie",
+        "hint": "Brownie"
+      },
+      {
+        "word": "sourdough",
+        "hint": "Masa madre"
+      },
+      {
+        "word": "crust",
+        "hint": "Corteza / costra"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Especias",
+    "description": "Vocabulario de especias en inglés",
+    "iconName": "leaf.circle",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pepper",
+        "hint": "Pimienta"
+      },
+      {
+        "word": "cinnamon",
+        "hint": "Canela"
+      },
+      {
+        "word": "oregano",
+        "hint": "Orégano"
+      },
+      {
+        "word": "paprika",
+        "hint": "Pimentón"
+      },
+      {
+        "word": "turmeric",
+        "hint": "Cúrcuma"
+      },
+      {
+        "word": "cumin",
+        "hint": "Comino"
+      },
+      {
+        "word": "ginger",
+        "hint": "Jengibre"
+      },
+      {
+        "word": "parsley",
+        "hint": "Perejil"
+      },
+      {
+        "word": "saffron",
+        "hint": "Azafrán"
+      },
+      {
+        "word": "vanilla",
+        "hint": "Vainilla"
+      },
+      {
+        "word": "nutmeg",
+        "hint": "Nuez moscada"
+      },
+      {
+        "word": "thyme",
+        "hint": "Tomillo"
+      },
+      {
+        "word": "rosemary",
+        "hint": "Romero"
+      },
+      {
+        "word": "clove",
+        "hint": "Clavo de olor"
+      },
+      {
+        "word": "mustard",
+        "hint": "Mostaza"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Lácteos",
+    "description": "Vocabulario de lácteos en inglés",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "milk",
+        "hint": "Leche"
+      },
+      {
+        "word": "cheese",
+        "hint": "Queso"
+      },
+      {
+        "word": "butter",
+        "hint": "Mantequilla"
+      },
+      {
+        "word": "yogurt",
+        "hint": "Yogur"
+      },
+      {
+        "word": "cream",
+        "hint": "Crema / nata"
+      },
+      {
+        "word": "cottage",
+        "hint": "Requesón"
+      },
+      {
+        "word": "cheddar",
+        "hint": "Queso cheddar"
+      },
+      {
+        "word": "whey",
+        "hint": "Suero de leche"
+      },
+      {
+        "word": "custard",
+        "hint": "Natillas"
+      },
+      {
+        "word": "gouda",
+        "hint": "Queso gouda"
+      },
+      {
+        "word": "ricotta",
+        "hint": "Ricota"
+      },
+      {
+        "word": "milkshake",
+        "hint": "Batido de leche"
+      },
+      {
+        "word": "smoothie",
+        "hint": "Batido de frutas"
+      },
+      {
+        "word": "skimmed",
+        "hint": "Desnatada"
+      },
+      {
+        "word": "lactose",
+        "hint": "Lactosa"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Carnes",
+    "description": "Vocabulario de carnes en inglés",
+    "iconName": "fork.knife",
+    "color": "#991b1b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chicken",
+        "hint": "Pollo"
+      },
+      {
+        "word": "beef",
+        "hint": "Carne de res"
+      },
+      {
+        "word": "pork",
+        "hint": "Cerdo"
+      },
+      {
+        "word": "lamb",
+        "hint": "Cordero"
+      },
+      {
+        "word": "turkey",
+        "hint": "Pavo"
+      },
+      {
+        "word": "sausage",
+        "hint": "Salchicha"
+      },
+      {
+        "word": "steak",
+        "hint": "Filete / bistec"
+      },
+      {
+        "word": "bacon",
+        "hint": "Tocino"
+      },
+      {
+        "word": "ribs",
+        "hint": "Costillas"
+      },
+      {
+        "word": "veal",
+        "hint": "Ternera"
+      },
+      {
+        "word": "chop",
+        "hint": "Chuleta"
+      },
+      {
+        "word": "tenderloin",
+        "hint": "Solomillo"
+      },
+      {
+        "word": "drumstick",
+        "hint": "Muslo de pollo"
+      },
+      {
+        "word": "jerky",
+        "hint": "Cecina / carne seca"
+      },
+      {
+        "word": "meatball",
+        "hint": "Albóndiga"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Mascotas",
+    "description": "Vocabulario de mascotas en inglés",
+    "iconName": "pawprint",
+    "color": "#a16207",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "puppy",
+        "hint": "Cachorro"
+      },
+      {
+        "word": "kitten",
+        "hint": "Gatito"
+      },
+      {
+        "word": "hamster",
+        "hint": "Hámster"
+      },
+      {
+        "word": "parrot",
+        "hint": "Loro"
+      },
+      {
+        "word": "goldfish",
+        "hint": "Pez dorado"
+      },
+      {
+        "word": "collar",
+        "hint": "Collar (de mascota)"
+      },
+      {
+        "word": "leash",
+        "hint": "Correa"
+      },
+      {
+        "word": "kennel",
+        "hint": "Caseta de perro"
+      },
+      {
+        "word": "grooming",
+        "hint": "Acicalamiento"
+      },
+      {
+        "word": "feeder",
+        "hint": "Comedero"
+      },
+      {
+        "word": "turtle",
+        "hint": "Tortuga"
+      },
+      {
+        "word": "rabbit",
+        "hint": "Conejo"
+      },
+      {
+        "word": "aquarium",
+        "hint": "Acuario"
+      },
+      {
+        "word": "cage",
+        "hint": "Jaula"
+      },
+      {
+        "word": "whiskers",
+        "hint": "Bigotes (de gato)"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Aves",
+    "description": "Vocabulario de aves en inglés",
+    "iconName": "bird",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "eagle",
+        "hint": "Águila"
+      },
+      {
+        "word": "sparrow",
+        "hint": "Gorrión"
+      },
+      {
+        "word": "penguin",
+        "hint": "Pingüino"
+      },
+      {
+        "word": "peacock",
+        "hint": "Pavo real"
+      },
+      {
+        "word": "flamingo",
+        "hint": "Flamenco (ave)"
+      },
+      {
+        "word": "owl",
+        "hint": "Búho"
+      },
+      {
+        "word": "swallow",
+        "hint": "Golondrina"
+      },
+      {
+        "word": "pigeon",
+        "hint": "Paloma"
+      },
+      {
+        "word": "cardinal",
+        "hint": "Cardenal (ave)"
+      },
+      {
+        "word": "heron",
+        "hint": "Garza"
+      },
+      {
+        "word": "falcon",
+        "hint": "Halcón"
+      },
+      {
+        "word": "robin",
+        "hint": "Petirrojo"
+      },
+      {
+        "word": "pelican",
+        "hint": "Pelícano"
+      },
+      {
+        "word": "feather",
+        "hint": "Pluma"
+      },
+      {
+        "word": "nesting",
+        "hint": "Anidación"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Insectos",
+    "description": "Vocabulario de insectos en inglés",
+    "iconName": "ant",
+    "color": "#4d7c0f",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "butterfly",
+        "hint": "Mariposa"
+      },
+      {
+        "word": "beetle",
+        "hint": "Escarabajo"
+      },
+      {
+        "word": "mosquito",
+        "hint": "Mosquito"
+      },
+      {
+        "word": "dragonfly",
+        "hint": "Libélula"
+      },
+      {
+        "word": "cricket",
+        "hint": "Grillo"
+      },
+      {
+        "word": "firefly",
+        "hint": "Luciérnaga"
+      },
+      {
+        "word": "ladybug",
+        "hint": "Mariquita"
+      },
+      {
+        "word": "caterpillar",
+        "hint": "Oruga"
+      },
+      {
+        "word": "grasshopper",
+        "hint": "Saltamontes"
+      },
+      {
+        "word": "cockroach",
+        "hint": "Cucaracha"
+      },
+      {
+        "word": "wasp",
+        "hint": "Avispa"
+      },
+      {
+        "word": "moth",
+        "hint": "Polilla"
+      },
+      {
+        "word": "termite",
+        "hint": "Termita"
+      },
+      {
+        "word": "antenna",
+        "hint": "Antena (de insecto)"
+      },
+      {
+        "word": "cocoon",
+        "hint": "Capullo"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Vida Marina",
+    "description": "Vocabulario de vida marina en inglés",
+    "iconName": "fish",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "shark",
+        "hint": "Tiburón"
+      },
+      {
+        "word": "octopus",
+        "hint": "Pulpo"
+      },
+      {
+        "word": "jellyfish",
+        "hint": "Medusa"
+      },
+      {
+        "word": "lobster",
+        "hint": "Langosta"
+      },
+      {
+        "word": "shrimp",
+        "hint": "Camarón / gamba"
+      },
+      {
+        "word": "stingray",
+        "hint": "Raya (pez)"
+      },
+      {
+        "word": "clam",
+        "hint": "Almeja"
+      },
+      {
+        "word": "squid",
+        "hint": "Calamar"
+      },
+      {
+        "word": "crab",
+        "hint": "Cangrejo"
+      },
+      {
+        "word": "walrus",
+        "hint": "Morsa"
+      },
+      {
+        "word": "urchin",
+        "hint": "Erizo de mar"
+      },
+      {
+        "word": "manatee",
+        "hint": "Manatí"
+      },
+      {
+        "word": "swordfish",
+        "hint": "Pez espada"
+      },
+      {
+        "word": "barnacle",
+        "hint": "Percebe"
+      },
+      {
+        "word": "anemone",
+        "hint": "Anémona de mar"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Animales de Granja",
+    "description": "Vocabulario de animales de granja en inglés",
+    "iconName": "hare",
+    "color": "#92400e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "rooster",
+        "hint": "Gallo"
+      },
+      {
+        "word": "donkey",
+        "hint": "Burro"
+      },
+      {
+        "word": "goat",
+        "hint": "Cabra"
+      },
+      {
+        "word": "sheep",
+        "hint": "Oveja"
+      },
+      {
+        "word": "piglet",
+        "hint": "Cerdito / lechón"
+      },
+      {
+        "word": "duckling",
+        "hint": "Patito"
+      },
+      {
+        "word": "stallion",
+        "hint": "Semental"
+      },
+      {
+        "word": "barn",
+        "hint": "Granero"
+      },
+      {
+        "word": "trough",
+        "hint": "Comedero / abrevadero"
+      },
+      {
+        "word": "haystack",
+        "hint": "Pajar"
+      },
+      {
+        "word": "pasture",
+        "hint": "Pasto / pastizal"
+      },
+      {
+        "word": "milking",
+        "hint": "Ordeño"
+      },
+      {
+        "word": "harness",
+        "hint": "Arnés"
+      },
+      {
+        "word": "stable",
+        "hint": "Establo"
+      },
+      {
+        "word": "scarecrow",
+        "hint": "Espantapájaros"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Sentimientos",
+    "description": "Vocabulario de sentimientos en inglés",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "grateful",
+        "hint": "Agradecido"
+      },
+      {
+        "word": "anxious",
+        "hint": "Ansioso"
+      },
+      {
+        "word": "jealous",
+        "hint": "Celoso"
+      },
+      {
+        "word": "lonely",
+        "hint": "Solitario"
+      },
+      {
+        "word": "hopeful",
+        "hint": "Esperanzado"
+      },
+      {
+        "word": "confused",
+        "hint": "Confundido"
+      },
+      {
+        "word": "proud",
+        "hint": "Orgulloso"
+      },
+      {
+        "word": "ashamed",
+        "hint": "Avergonzado"
+      },
+      {
+        "word": "relieved",
+        "hint": "Aliviado"
+      },
+      {
+        "word": "excited",
+        "hint": "Emocionado"
+      },
+      {
+        "word": "frustrated",
+        "hint": "Frustrado"
+      },
+      {
+        "word": "peaceful",
+        "hint": "Tranquilo / en paz"
+      },
+      {
+        "word": "nostalgic",
+        "hint": "Nostálgico"
+      },
+      {
+        "word": "amused",
+        "hint": "Divertido"
+      },
+      {
+        "word": "overwhelmed",
+        "hint": "Abrumado"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Personalidad",
+    "description": "Vocabulario de personalidad en inglés",
+    "iconName": "person.circle",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "honest",
+        "hint": "Honesto"
+      },
+      {
+        "word": "generous",
+        "hint": "Generoso"
+      },
+      {
+        "word": "stubborn",
+        "hint": "Terco / obstinado"
+      },
+      {
+        "word": "cheerful",
+        "hint": "Alegre"
+      },
+      {
+        "word": "cautious",
+        "hint": "Cauteloso"
+      },
+      {
+        "word": "outgoing",
+        "hint": "Extrovertido"
+      },
+      {
+        "word": "reliable",
+        "hint": "Confiable"
+      },
+      {
+        "word": "ambitious",
+        "hint": "Ambicioso"
+      },
+      {
+        "word": "humble",
+        "hint": "Humilde"
+      },
+      {
+        "word": "witty",
+        "hint": "Ingenioso"
+      },
+      {
+        "word": "patient",
+        "hint": "Paciente"
+      },
+      {
+        "word": "selfish",
+        "hint": "Egoísta"
+      },
+      {
+        "word": "charming",
+        "hint": "Encantador"
+      },
+      {
+        "word": "moody",
+        "hint": "Temperamental"
+      },
+      {
+        "word": "loyal",
+        "hint": "Leal"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relaciones",
+    "description": "Vocabulario de relaciones en inglés",
+    "iconName": "person.2",
+    "color": "#db2777",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "friendship",
+        "hint": "Amistad"
+      },
+      {
+        "word": "partner",
+        "hint": "Pareja / compañero"
+      },
+      {
+        "word": "neighbor",
+        "hint": "Vecino"
+      },
+      {
+        "word": "colleague",
+        "hint": "Colega"
+      },
+      {
+        "word": "acquaintance",
+        "hint": "Conocido"
+      },
+      {
+        "word": "engagement",
+        "hint": "Compromiso"
+      },
+      {
+        "word": "spouse",
+        "hint": "Cónyuge"
+      },
+      {
+        "word": "divorced",
+        "hint": "Divorciado"
+      },
+      {
+        "word": "dating",
+        "hint": "Salir con alguien"
+      },
+      {
+        "word": "roommate",
+        "hint": "Compañero de cuarto"
+      },
+      {
+        "word": "reunion",
+        "hint": "Reunión / reencuentro"
+      },
+      {
+        "word": "breakup",
+        "hint": "Ruptura"
+      },
+      {
+        "word": "trust",
+        "hint": "Confianza"
+      },
+      {
+        "word": "bonding",
+        "hint": "Vínculo"
+      },
+      {
+        "word": "kinship",
+        "hint": "Parentesco"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Comunicación",
+    "description": "Vocabulario de comunicación en inglés",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "speech",
+        "hint": "Discurso"
+      },
+      {
+        "word": "argument",
+        "hint": "Argumento / discusión"
+      },
+      {
+        "word": "whisper",
+        "hint": "Susurro"
+      },
+      {
+        "word": "compliment",
+        "hint": "Cumplido / halago"
+      },
+      {
+        "word": "apology",
+        "hint": "Disculpa"
+      },
+      {
+        "word": "greeting",
+        "hint": "Saludo"
+      },
+      {
+        "word": "gossip",
+        "hint": "Chisme"
+      },
+      {
+        "word": "sarcasm",
+        "hint": "Sarcasmo"
+      },
+      {
+        "word": "slang",
+        "hint": "Argot / jerga"
+      },
+      {
+        "word": "accent",
+        "hint": "Acento"
+      },
+      {
+        "word": "dialect",
+        "hint": "Dialecto"
+      },
+      {
+        "word": "fluent",
+        "hint": "Fluido (en un idioma)"
+      },
+      {
+        "word": "translate",
+        "hint": "Traducir"
+      },
+      {
+        "word": "pronounce",
+        "hint": "Pronunciar"
+      },
+      {
+        "word": "feedback",
+        "hint": "Retroalimentación"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gestos",
+    "description": "Vocabulario de gestos en inglés",
+    "iconName": "hand.wave",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "waving",
+        "hint": "Saludar con la mano"
+      },
+      {
+        "word": "clapping",
+        "hint": "Aplaudir"
+      },
+      {
+        "word": "nodding",
+        "hint": "Asentir con la cabeza"
+      },
+      {
+        "word": "shrug",
+        "hint": "Encogerse de hombros"
+      },
+      {
+        "word": "pointing",
+        "hint": "Señalar"
+      },
+      {
+        "word": "thumbs",
+        "hint": "Pulgar arriba"
+      },
+      {
+        "word": "frowning",
+        "hint": "Fruncir el ceño"
+      },
+      {
+        "word": "winking",
+        "hint": "Guiñar"
+      },
+      {
+        "word": "bowing",
+        "hint": "Hacer una reverencia"
+      },
+      {
+        "word": "yawning",
+        "hint": "Bostezar"
+      },
+      {
+        "word": "crossing",
+        "hint": "Cruzar (los brazos)"
+      },
+      {
+        "word": "handshake",
+        "hint": "Apretón de manos"
+      },
+      {
+        "word": "hugging",
+        "hint": "Abrazar"
+      },
+      {
+        "word": "snapping",
+        "hint": "Chasquear los dedos"
+      },
+      {
+        "word": "blinking",
+        "hint": "Parpadear"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Arquitectura",
+    "description": "Vocabulario de arquitectura en inglés",
+    "iconName": "building.2",
+    "color": "#64748b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "column",
+        "hint": "Columna"
+      },
+      {
+        "word": "facade",
+        "hint": "Fachada"
+      },
+      {
+        "word": "balcony",
+        "hint": "Balcón"
+      },
+      {
+        "word": "dome",
+        "hint": "Cúpula"
+      },
+      {
+        "word": "staircase",
+        "hint": "Escalera"
+      },
+      {
+        "word": "archway",
+        "hint": "Arco / arcada"
+      },
+      {
+        "word": "blueprint",
+        "hint": "Plano / esquema"
+      },
+      {
+        "word": "ceiling",
+        "hint": "Techo (interior)"
+      },
+      {
+        "word": "foundation",
+        "hint": "Cimiento"
+      },
+      {
+        "word": "skylight",
+        "hint": "Tragaluz / claraboya"
+      },
+      {
+        "word": "corridor",
+        "hint": "Pasillo / corredor"
+      },
+      {
+        "word": "terrace",
+        "hint": "Terraza"
+      },
+      {
+        "word": "pillar",
+        "hint": "Pilar"
+      },
+      {
+        "word": "threshold",
+        "hint": "Umbral"
+      },
+      {
+        "word": "chimney",
+        "hint": "Chimenea"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Construcción",
+    "description": "Vocabulario de construcción en inglés",
+    "iconName": "hammer",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "scaffold",
+        "hint": "Andamio"
+      },
+      {
+        "word": "concrete",
+        "hint": "Concreto / hormigón"
+      },
+      {
+        "word": "beam",
+        "hint": "Viga"
+      },
+      {
+        "word": "crane",
+        "hint": "Grúa"
+      },
+      {
+        "word": "bulldozer",
+        "hint": "Excavadora"
+      },
+      {
+        "word": "mortar",
+        "hint": "Mortero"
+      },
+      {
+        "word": "rebar",
+        "hint": "Varilla de refuerzo"
+      },
+      {
+        "word": "insulation",
+        "hint": "Aislamiento"
+      },
+      {
+        "word": "drywall",
+        "hint": "Panel de yeso"
+      },
+      {
+        "word": "truss",
+        "hint": "Cercha / armadura"
+      },
+      {
+        "word": "gravel",
+        "hint": "Grava"
+      },
+      {
+        "word": "plywood",
+        "hint": "Contrachapado"
+      },
+      {
+        "word": "excavation",
+        "hint": "Excavación"
+      },
+      {
+        "word": "welding",
+        "hint": "Soldadura"
+      },
+      {
+        "word": "hardhat",
+        "hint": "Casco de obra"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Electricidad",
+    "description": "Vocabulario de electricidad en inglés",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "voltage",
+        "hint": "Voltaje"
+      },
+      {
+        "word": "circuit",
+        "hint": "Circuito"
+      },
+      {
+        "word": "outlet",
+        "hint": "Enchufe / toma"
+      },
+      {
+        "word": "wiring",
+        "hint": "Cableado"
+      },
+      {
+        "word": "switch",
+        "hint": "Interruptor"
+      },
+      {
+        "word": "fuse",
+        "hint": "Fusible"
+      },
+      {
+        "word": "current",
+        "hint": "Corriente eléctrica"
+      },
+      {
+        "word": "socket",
+        "hint": "Enchufe hembra"
+      },
+      {
+        "word": "transformer",
+        "hint": "Transformador"
+      },
+      {
+        "word": "generator",
+        "hint": "Generador"
+      },
+      {
+        "word": "grounding",
+        "hint": "Conexión a tierra"
+      },
+      {
+        "word": "panel",
+        "hint": "Panel / tablero"
+      },
+      {
+        "word": "conductor",
+        "hint": "Conductor"
+      },
+      {
+        "word": "resistor",
+        "hint": "Resistencia"
+      },
+      {
+        "word": "insulator",
+        "hint": "Aislante"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Fontanería",
+    "description": "Vocabulario de fontanería en inglés",
+    "iconName": "wrench",
+    "color": "#0369a1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "pipe",
+        "hint": "Tubería"
+      },
+      {
+        "word": "valve",
+        "hint": "Válvula"
+      },
+      {
+        "word": "wrench",
+        "hint": "Llave inglesa"
+      },
+      {
+        "word": "fitting",
+        "hint": "Accesorio / conector"
+      },
+      {
+        "word": "gasket",
+        "hint": "Junta / empaquetadura"
+      },
+      {
+        "word": "solder",
+        "hint": "Soldadura (de estaño)"
+      },
+      {
+        "word": "coupling",
+        "hint": "Acoplamiento"
+      },
+      {
+        "word": "pressure",
+        "hint": "Presión"
+      },
+      {
+        "word": "drainage",
+        "hint": "Drenaje"
+      },
+      {
+        "word": "leaking",
+        "hint": "Fuga / goteo"
+      },
+      {
+        "word": "overflow",
+        "hint": "Desbordamiento"
+      },
+      {
+        "word": "sprayer",
+        "hint": "Rociador"
+      },
+      {
+        "word": "cistern",
+        "hint": "Cisterna"
+      },
+      {
+        "word": "flange",
+        "hint": "Brida"
+      },
+      {
+        "word": "stopcock",
+        "hint": "Llave de paso"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Herramientas de Jardín",
+    "description": "Vocabulario de herramientas de jardín en inglés",
+    "iconName": "leaf.arrow.triangle.circlepath",
+    "color": "#166534",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "rake",
+        "hint": "Rastrillo"
+      },
+      {
+        "word": "wheelbarrow",
+        "hint": "Carretilla"
+      },
+      {
+        "word": "pruner",
+        "hint": "Podadora"
+      },
+      {
+        "word": "trowel",
+        "hint": "Paleta / desplantador"
+      },
+      {
+        "word": "edger",
+        "hint": "Bordeadora"
+      },
+      {
+        "word": "blower",
+        "hint": "Soplador de hojas"
+      },
+      {
+        "word": "mower",
+        "hint": "Cortacésped"
+      },
+      {
+        "word": "clippers",
+        "hint": "Tijeras de podar"
+      },
+      {
+        "word": "dibber",
+        "hint": "Plantador"
+      },
+      {
+        "word": "spade",
+        "hint": "Pala de jardín"
+      },
+      {
+        "word": "pitchfork",
+        "hint": "Horca / horquilla"
+      },
+      {
+        "word": "watering",
+        "hint": "Regadera"
+      },
+      {
+        "word": "cultivator",
+        "hint": "Cultivador"
+      },
+      {
+        "word": "sprayer",
+        "hint": "Pulverizador"
+      },
+      {
+        "word": "gloves",
+        "hint": "Guantes de jardín"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medicina",
+    "description": "Vocabulario médico en inglés",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "diagnosis",
+        "hint": "Diagnóstico"
+      },
+      {
+        "word": "symptom",
+        "hint": "Síntoma"
+      },
+      {
+        "word": "surgery",
+        "hint": "Cirugía"
+      },
+      {
+        "word": "therapy",
+        "hint": "Terapia"
+      },
+      {
+        "word": "injection",
+        "hint": "Inyección"
+      },
+      {
+        "word": "bandage",
+        "hint": "Vendaje"
+      },
+      {
+        "word": "stethoscope",
+        "hint": "Estetoscopio"
+      },
+      {
+        "word": "allergy",
+        "hint": "Alergia"
+      },
+      {
+        "word": "vaccine",
+        "hint": "Vacuna"
+      },
+      {
+        "word": "fracture",
+        "hint": "Fractura"
+      },
+      {
+        "word": "infection",
+        "hint": "Infección"
+      },
+      {
+        "word": "checkup",
+        "hint": "Revisión médica"
+      },
+      {
+        "word": "anesthesia",
+        "hint": "Anestesia"
+      },
+      {
+        "word": "scalpel",
+        "hint": "Bisturí"
+      },
+      {
+        "word": "stitches",
+        "hint": "Puntos de sutura"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Farmacia",
+    "description": "Vocabulario de farmacia en inglés",
+    "iconName": "pills",
+    "color": "#be185d",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "capsule",
+        "hint": "Cápsula"
+      },
+      {
+        "word": "tablet",
+        "hint": "Tableta / pastilla"
+      },
+      {
+        "word": "syrup",
+        "hint": "Jarabe"
+      },
+      {
+        "word": "ointment",
+        "hint": "Pomada / ungüento"
+      },
+      {
+        "word": "dosage",
+        "hint": "Dosis / dosificación"
+      },
+      {
+        "word": "prescription",
+        "hint": "Receta médica"
+      },
+      {
+        "word": "painkiller",
+        "hint": "Analgésico"
+      },
+      {
+        "word": "antibiotic",
+        "hint": "Antibiótico"
+      },
+      {
+        "word": "dropper",
+        "hint": "Cuentagotas"
+      },
+      {
+        "word": "expiration",
+        "hint": "Fecha de caducidad"
+      },
+      {
+        "word": "supplement",
+        "hint": "Suplemento"
+      },
+      {
+        "word": "lotion",
+        "hint": "Loción"
+      },
+      {
+        "word": "inhaler",
+        "hint": "Inhalador"
+      },
+      {
+        "word": "thermometer",
+        "hint": "Termómetro"
+      },
+      {
+        "word": "pharmacy",
+        "hint": "Farmacia"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Ejercicio",
+    "description": "Vocabulario de ejercicio en inglés",
+    "iconName": "figure.run",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "treadmill",
+        "hint": "Cinta de correr"
+      },
+      {
+        "word": "dumbbell",
+        "hint": "Mancuerna"
+      },
+      {
+        "word": "pushup",
+        "hint": "Flexión de brazos"
+      },
+      {
+        "word": "squat",
+        "hint": "Sentadilla"
+      },
+      {
+        "word": "plank",
+        "hint": "Plancha (ejercicio)"
+      },
+      {
+        "word": "cardio",
+        "hint": "Cardio"
+      },
+      {
+        "word": "warmup",
+        "hint": "Calentamiento"
+      },
+      {
+        "word": "cooldown",
+        "hint": "Enfriamiento"
+      },
+      {
+        "word": "barbell",
+        "hint": "Barra de pesas"
+      },
+      {
+        "word": "jogging",
+        "hint": "Trotar"
+      },
+      {
+        "word": "stretching",
+        "hint": "Estiramiento"
+      },
+      {
+        "word": "aerobics",
+        "hint": "Aeróbic"
+      },
+      {
+        "word": "endurance",
+        "hint": "Resistencia"
+      },
+      {
+        "word": "bench",
+        "hint": "Banco de pesas"
+      },
+      {
+        "word": "workout",
+        "hint": "Entrenamiento"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Yoga",
+    "description": "Vocabulario de yoga en inglés",
+    "iconName": "figure.mind.and.body",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "posture",
+        "hint": "Postura"
+      },
+      {
+        "word": "breathing",
+        "hint": "Respiración"
+      },
+      {
+        "word": "balance",
+        "hint": "Equilibrio"
+      },
+      {
+        "word": "flexibility",
+        "hint": "Flexibilidad"
+      },
+      {
+        "word": "meditation",
+        "hint": "Meditación"
+      },
+      {
+        "word": "alignment",
+        "hint": "Alineación"
+      },
+      {
+        "word": "mindful",
+        "hint": "Consciente / atento"
+      },
+      {
+        "word": "mantra",
+        "hint": "Mantra"
+      },
+      {
+        "word": "warrior",
+        "hint": "Guerrero (postura)"
+      },
+      {
+        "word": "downward",
+        "hint": "Hacia abajo (perro boca abajo)"
+      },
+      {
+        "word": "lotus",
+        "hint": "Loto (postura)"
+      },
+      {
+        "word": "chakra",
+        "hint": "Chakra"
+      },
+      {
+        "word": "namaste",
+        "hint": "Namasté"
+      },
+      {
+        "word": "exhale",
+        "hint": "Exhalar"
+      },
+      {
+        "word": "inhale",
+        "hint": "Inhalar"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Salud Mental",
+    "description": "Vocabulario de salud mental en inglés",
+    "iconName": "brain.head.profile",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "anxiety",
+        "hint": "Ansiedad"
+      },
+      {
+        "word": "therapy",
+        "hint": "Terapia"
+      },
+      {
+        "word": "resilience",
+        "hint": "Resiliencia"
+      },
+      {
+        "word": "mindset",
+        "hint": "Mentalidad"
+      },
+      {
+        "word": "burnout",
+        "hint": "Agotamiento"
+      },
+      {
+        "word": "coping",
+        "hint": "Afrontamiento"
+      },
+      {
+        "word": "empathy",
+        "hint": "Empatía"
+      },
+      {
+        "word": "awareness",
+        "hint": "Consciencia"
+      },
+      {
+        "word": "boundaries",
+        "hint": "Límites personales"
+      },
+      {
+        "word": "wellbeing",
+        "hint": "Bienestar"
+      },
+      {
+        "word": "gratitude",
+        "hint": "Gratitud"
+      },
+      {
+        "word": "healing",
+        "hint": "Sanación"
+      },
+      {
+        "word": "journal",
+        "hint": "Diario (escritura)"
+      },
+      {
+        "word": "trigger",
+        "hint": "Detonante"
+      },
+      {
+        "word": "selfcare",
+        "hint": "Autocuidado"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Vehículos",
+    "description": "Vocabulario de vehículos en inglés",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "truck",
+        "hint": "Camión"
+      },
+      {
+        "word": "motorcycle",
+        "hint": "Motocicleta"
+      },
+      {
+        "word": "ambulance",
+        "hint": "Ambulancia"
+      },
+      {
+        "word": "scooter",
+        "hint": "Patinete / scooter"
+      },
+      {
+        "word": "minivan",
+        "hint": "Monovolumen"
+      },
+      {
+        "word": "tractor",
+        "hint": "Tractor"
+      },
+      {
+        "word": "convertible",
+        "hint": "Descapotable"
+      },
+      {
+        "word": "limousine",
+        "hint": "Limusina"
+      },
+      {
+        "word": "pickup",
+        "hint": "Camioneta"
+      },
+      {
+        "word": "sedan",
+        "hint": "Sedán"
+      },
+      {
+        "word": "bumper",
+        "hint": "Parachoques"
+      },
+      {
+        "word": "engine",
+        "hint": "Motor"
+      },
+      {
+        "word": "windshield",
+        "hint": "Parabrisas"
+      },
+      {
+        "word": "headlight",
+        "hint": "Faro delantero"
+      },
+      {
+        "word": "dashboard",
+        "hint": "Tablero / salpicadero"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Aviación",
+    "description": "Vocabulario de aviación en inglés",
+    "iconName": "airplane",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "runway",
+        "hint": "Pista de aterrizaje"
+      },
+      {
+        "word": "cockpit",
+        "hint": "Cabina del piloto"
+      },
+      {
+        "word": "turbulence",
+        "hint": "Turbulencia"
+      },
+      {
+        "word": "altitude",
+        "hint": "Altitud"
+      },
+      {
+        "word": "boarding",
+        "hint": "Embarque"
+      },
+      {
+        "word": "fuselage",
+        "hint": "Fuselaje"
+      },
+      {
+        "word": "propeller",
+        "hint": "Hélice"
+      },
+      {
+        "word": "hangar",
+        "hint": "Hangar"
+      },
+      {
+        "word": "navigator",
+        "hint": "Navegante"
+      },
+      {
+        "word": "steward",
+        "hint": "Azafato / auxiliar"
+      },
+      {
+        "word": "takeoff",
+        "hint": "Despegue"
+      },
+      {
+        "word": "landing",
+        "hint": "Aterrizaje"
+      },
+      {
+        "word": "luggage",
+        "hint": "Equipaje"
+      },
+      {
+        "word": "terminal",
+        "hint": "Terminal"
+      },
+      {
+        "word": "passport",
+        "hint": "Pasaporte"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Navegación",
+    "description": "Vocabulario de navegación en inglés",
+    "iconName": "ferry",
+    "color": "#1d4ed8",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "harbor",
+        "hint": "Puerto"
+      },
+      {
+        "word": "vessel",
+        "hint": "Embarcación"
+      },
+      {
+        "word": "captain",
+        "hint": "Capitán"
+      },
+      {
+        "word": "compass",
+        "hint": "Brújula"
+      },
+      {
+        "word": "lighthouse",
+        "hint": "Faro"
+      },
+      {
+        "word": "cargo",
+        "hint": "Carga / mercancía"
+      },
+      {
+        "word": "mast",
+        "hint": "Mástil"
+      },
+      {
+        "word": "hull",
+        "hint": "Casco (del barco)"
+      },
+      {
+        "word": "stern",
+        "hint": "Popa"
+      },
+      {
+        "word": "porthole",
+        "hint": "Ojo de buey"
+      },
+      {
+        "word": "lifeboat",
+        "hint": "Bote salvavidas"
+      },
+      {
+        "word": "buoy",
+        "hint": "Boya"
+      },
+      {
+        "word": "docking",
+        "hint": "Atraque"
+      },
+      {
+        "word": "seafarer",
+        "hint": "Marinero"
+      },
+      {
+        "word": "voyage",
+        "hint": "Viaje marítimo"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Ciclismo",
+    "description": "Vocabulario de ciclismo en inglés",
+    "iconName": "bicycle",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pedal",
+        "hint": "Pedal"
+      },
+      {
+        "word": "helmet",
+        "hint": "Casco"
+      },
+      {
+        "word": "spoke",
+        "hint": "Rayo (de rueda)"
+      },
+      {
+        "word": "chain",
+        "hint": "Cadena"
+      },
+      {
+        "word": "saddle",
+        "hint": "Sillín"
+      },
+      {
+        "word": "handlebar",
+        "hint": "Manillar"
+      },
+      {
+        "word": "tire",
+        "hint": "Neumático"
+      },
+      {
+        "word": "braking",
+        "hint": "Frenado"
+      },
+      {
+        "word": "gearing",
+        "hint": "Cambio de marchas"
+      },
+      {
+        "word": "sprint",
+        "hint": "Sprint / esprint"
+      },
+      {
+        "word": "trail",
+        "hint": "Sendero / pista"
+      },
+      {
+        "word": "derailleur",
+        "hint": "Desviador"
+      },
+      {
+        "word": "pump",
+        "hint": "Bomba de aire"
+      },
+      {
+        "word": "reflector",
+        "hint": "Reflector"
+      },
+      {
+        "word": "kickstand",
+        "hint": "Pata de cabra"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Trenes",
+    "description": "Vocabulario de trenes en inglés",
+    "iconName": "tram",
+    "color": "#6d28d9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "platform",
+        "hint": "Andén"
+      },
+      {
+        "word": "station",
+        "hint": "Estación"
+      },
+      {
+        "word": "carriage",
+        "hint": "Vagón"
+      },
+      {
+        "word": "express",
+        "hint": "Expreso"
+      },
+      {
+        "word": "commuter",
+        "hint": "Tren de cercanías"
+      },
+      {
+        "word": "conductor",
+        "hint": "Conductor / revisor"
+      },
+      {
+        "word": "rail",
+        "hint": "Raíl / vía"
+      },
+      {
+        "word": "schedule",
+        "hint": "Horario"
+      },
+      {
+        "word": "sleeper",
+        "hint": "Coche cama"
+      },
+      {
+        "word": "junction",
+        "hint": "Empalme / cruce"
+      },
+      {
+        "word": "signal",
+        "hint": "Señal"
+      },
+      {
+        "word": "freight",
+        "hint": "Mercancía / carga"
+      },
+      {
+        "word": "crossing",
+        "hint": "Paso a nivel"
+      },
+      {
+        "word": "tunnel",
+        "hint": "Túnel"
+      },
+      {
+        "word": "departure",
+        "hint": "Salida / partida"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Matemáticas",
+    "description": "Vocabulario de matemáticas en inglés",
+    "iconName": "x.squareroot",
+    "color": "#4338ca",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "equation",
+        "hint": "Ecuación"
+      },
+      {
+        "word": "fraction",
+        "hint": "Fracción"
+      },
+      {
+        "word": "geometry",
+        "hint": "Geometría"
+      },
+      {
+        "word": "algebra",
+        "hint": "Álgebra"
+      },
+      {
+        "word": "diameter",
+        "hint": "Diámetro"
+      },
+      {
+        "word": "average",
+        "hint": "Promedio"
+      },
+      {
+        "word": "decimal",
+        "hint": "Decimal"
+      },
+      {
+        "word": "formula",
+        "hint": "Fórmula"
+      },
+      {
+        "word": "theorem",
+        "hint": "Teorema"
+      },
+      {
+        "word": "variable",
+        "hint": "Variable"
+      },
+      {
+        "word": "exponent",
+        "hint": "Exponente"
+      },
+      {
+        "word": "perimeter",
+        "hint": "Perímetro"
+      },
+      {
+        "word": "quotient",
+        "hint": "Cociente"
+      },
+      {
+        "word": "tangent",
+        "hint": "Tangente"
+      },
+      {
+        "word": "integer",
+        "hint": "Entero (número)"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Física",
+    "description": "Vocabulario de física en inglés",
+    "iconName": "atom",
+    "color": "#1e40af",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "velocity",
+        "hint": "Velocidad"
+      },
+      {
+        "word": "friction",
+        "hint": "Fricción"
+      },
+      {
+        "word": "momentum",
+        "hint": "Momento / impulso"
+      },
+      {
+        "word": "wavelength",
+        "hint": "Longitud de onda"
+      },
+      {
+        "word": "particle",
+        "hint": "Partícula"
+      },
+      {
+        "word": "electron",
+        "hint": "Electrón"
+      },
+      {
+        "word": "neutron",
+        "hint": "Neutrón"
+      },
+      {
+        "word": "proton",
+        "hint": "Protón"
+      },
+      {
+        "word": "inertia",
+        "hint": "Inercia"
+      },
+      {
+        "word": "quantum",
+        "hint": "Cuántico"
+      },
+      {
+        "word": "spectrum",
+        "hint": "Espectro"
+      },
+      {
+        "word": "density",
+        "hint": "Densidad"
+      },
+      {
+        "word": "magnet",
+        "hint": "Imán"
+      },
+      {
+        "word": "pendulum",
+        "hint": "Péndulo"
+      },
+      {
+        "word": "refraction",
+        "hint": "Refracción"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Química",
+    "description": "Vocabulario de química en inglés",
+    "iconName": "flask",
+    "color": "#7e22ce",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "molecule",
+        "hint": "Molécula"
+      },
+      {
+        "word": "compound",
+        "hint": "Compuesto"
+      },
+      {
+        "word": "element",
+        "hint": "Elemento"
+      },
+      {
+        "word": "reaction",
+        "hint": "Reacción"
+      },
+      {
+        "word": "catalyst",
+        "hint": "Catalizador"
+      },
+      {
+        "word": "solution",
+        "hint": "Solución"
+      },
+      {
+        "word": "isotope",
+        "hint": "Isótopo"
+      },
+      {
+        "word": "acid",
+        "hint": "Ácido"
+      },
+      {
+        "word": "alkaline",
+        "hint": "Alcalino"
+      },
+      {
+        "word": "oxidation",
+        "hint": "Oxidación"
+      },
+      {
+        "word": "bonding",
+        "hint": "Enlace químico"
+      },
+      {
+        "word": "beaker",
+        "hint": "Vaso de precipitados"
+      },
+      {
+        "word": "titration",
+        "hint": "Titulación"
+      },
+      {
+        "word": "solvent",
+        "hint": "Solvente / disolvente"
+      },
+      {
+        "word": "distillation",
+        "hint": "Destilación"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biología",
+    "description": "Vocabulario de biología en inglés",
+    "iconName": "leaf.fill",
+    "color": "#15803d",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cell",
+        "hint": "Célula"
+      },
+      {
+        "word": "organism",
+        "hint": "Organismo"
+      },
+      {
+        "word": "habitat",
+        "hint": "Hábitat"
+      },
+      {
+        "word": "species",
+        "hint": "Especie"
+      },
+      {
+        "word": "genetics",
+        "hint": "Genética"
+      },
+      {
+        "word": "protein",
+        "hint": "Proteína"
+      },
+      {
+        "word": "enzyme",
+        "hint": "Enzima"
+      },
+      {
+        "word": "nucleus",
+        "hint": "Núcleo"
+      },
+      {
+        "word": "membrane",
+        "hint": "Membrana"
+      },
+      {
+        "word": "bacteria",
+        "hint": "Bacteria"
+      },
+      {
+        "word": "fossil",
+        "hint": "Fósil"
+      },
+      {
+        "word": "ecosystem",
+        "hint": "Ecosistema"
+      },
+      {
+        "word": "evolution",
+        "hint": "Evolución"
+      },
+      {
+        "word": "chromosome",
+        "hint": "Cromosoma"
+      },
+      {
+        "word": "photosynthesis",
+        "hint": "Fotosíntesis"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Ciencia General",
+    "description": "Vocabulario científico general en inglés",
+    "iconName": "testtube.2",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "experiment",
+        "hint": "Experimento"
+      },
+      {
+        "word": "hypothesis",
+        "hint": "Hipótesis"
+      },
+      {
+        "word": "research",
+        "hint": "Investigación"
+      },
+      {
+        "word": "laboratory",
+        "hint": "Laboratorio"
+      },
+      {
+        "word": "microscope",
+        "hint": "Microscopio"
+      },
+      {
+        "word": "discovery",
+        "hint": "Descubrimiento"
+      },
+      {
+        "word": "theory",
+        "hint": "Teoría"
+      },
+      {
+        "word": "analysis",
+        "hint": "Análisis"
+      },
+      {
+        "word": "observation",
+        "hint": "Observación"
+      },
+      {
+        "word": "conclusion",
+        "hint": "Conclusión"
+      },
+      {
+        "word": "evidence",
+        "hint": "Evidencia"
+      },
+      {
+        "word": "method",
+        "hint": "Método"
+      },
+      {
+        "word": "sample",
+        "hint": "Muestra"
+      },
+      {
+        "word": "data",
+        "hint": "Datos"
+      },
+      {
+        "word": "peer",
+        "hint": "Par / colega (revisión)"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festivales",
+    "description": "Vocabulario de festivales en inglés",
+    "iconName": "party.popper",
+    "color": "#c026d3",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "parade",
+        "hint": "Desfile"
+      },
+      {
+        "word": "fireworks",
+        "hint": "Fuegos artificiales"
+      },
+      {
+        "word": "carnival",
+        "hint": "Carnaval"
+      },
+      {
+        "word": "costume",
+        "hint": "Disfraz"
+      },
+      {
+        "word": "float",
+        "hint": "Carroza"
+      },
+      {
+        "word": "ceremony",
+        "hint": "Ceremonia"
+      },
+      {
+        "word": "banner",
+        "hint": "Pancarta / bandera"
+      },
+      {
+        "word": "confetti",
+        "hint": "Confeti"
+      },
+      {
+        "word": "lantern",
+        "hint": "Farol / linterna"
+      },
+      {
+        "word": "bonfire",
+        "hint": "Hoguera"
+      },
+      {
+        "word": "stall",
+        "hint": "Puesto / caseta"
+      },
+      {
+        "word": "harvest",
+        "hint": "Cosecha"
+      },
+      {
+        "word": "pageant",
+        "hint": "Espectáculo / concurso"
+      },
+      {
+        "word": "jubilee",
+        "hint": "Jubileo"
+      },
+      {
+        "word": "garland",
+        "hint": "Guirnalda"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Tradiciones",
+    "description": "Vocabulario de tradiciones en inglés",
+    "iconName": "book.closed",
+    "color": "#9f1239",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "heritage",
+        "hint": "Herencia / patrimonio"
+      },
+      {
+        "word": "folklore",
+        "hint": "Folclore"
+      },
+      {
+        "word": "custom",
+        "hint": "Costumbre"
+      },
+      {
+        "word": "ritual",
+        "hint": "Ritual"
+      },
+      {
+        "word": "ancestor",
+        "hint": "Antepasado"
+      },
+      {
+        "word": "legend",
+        "hint": "Leyenda"
+      },
+      {
+        "word": "blessing",
+        "hint": "Bendición"
+      },
+      {
+        "word": "prophecy",
+        "hint": "Profecía"
+      },
+      {
+        "word": "proverb",
+        "hint": "Proverbio / refrán"
+      },
+      {
+        "word": "emblem",
+        "hint": "Emblema"
+      },
+      {
+        "word": "artifact",
+        "hint": "Artefacto"
+      },
+      {
+        "word": "pilgrimage",
+        "hint": "Peregrinación"
+      },
+      {
+        "word": "offering",
+        "hint": "Ofrenda"
+      },
+      {
+        "word": "ceremony",
+        "hint": "Ceremonia"
+      },
+      {
+        "word": "heirloom",
+        "hint": "Reliquia familiar"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Bodas",
+    "description": "Vocabulario de bodas en inglés",
+    "iconName": "heart.circle",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bride",
+        "hint": "Novia"
+      },
+      {
+        "word": "groom",
+        "hint": "Novio"
+      },
+      {
+        "word": "veil",
+        "hint": "Velo"
+      },
+      {
+        "word": "bouquet",
+        "hint": "Ramo de flores"
+      },
+      {
+        "word": "wedding",
+        "hint": "Boda"
+      },
+      {
+        "word": "chapel",
+        "hint": "Capilla"
+      },
+      {
+        "word": "honeymoon",
+        "hint": "Luna de miel"
+      },
+      {
+        "word": "bridesmaid",
+        "hint": "Dama de honor"
+      },
+      {
+        "word": "groomsman",
+        "hint": "Padrino de boda"
+      },
+      {
+        "word": "reception",
+        "hint": "Recepción"
+      },
+      {
+        "word": "toast",
+        "hint": "Brindis"
+      },
+      {
+        "word": "aisle",
+        "hint": "Pasillo (del altar)"
+      },
+      {
+        "word": "registry",
+        "hint": "Registro"
+      },
+      {
+        "word": "rehearsal",
+        "hint": "Ensayo"
+      },
+      {
+        "word": "invitation",
+        "hint": "Invitación"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Días Festivos",
+    "description": "Vocabulario de días festivos en inglés",
+    "iconName": "gift",
+    "color": "#dc2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "christmas",
+        "hint": "Navidad"
+      },
+      {
+        "word": "halloween",
+        "hint": "Halloween"
+      },
+      {
+        "word": "thanksgiving",
+        "hint": "Acción de Gracias"
+      },
+      {
+        "word": "easter",
+        "hint": "Pascua"
+      },
+      {
+        "word": "valentine",
+        "hint": "San Valentín"
+      },
+      {
+        "word": "independence",
+        "hint": "Independencia"
+      },
+      {
+        "word": "stocking",
+        "hint": "Calcetín navideño"
+      },
+      {
+        "word": "pumpkin",
+        "hint": "Calabaza"
+      },
+      {
+        "word": "ornament",
+        "hint": "Adorno"
+      },
+      {
+        "word": "wreath",
+        "hint": "Corona navideña"
+      },
+      {
+        "word": "candle",
+        "hint": "Vela"
+      },
+      {
+        "word": "mistletoe",
+        "hint": "Muérdago"
+      },
+      {
+        "word": "sleigh",
+        "hint": "Trineo"
+      },
+      {
+        "word": "reindeer",
+        "hint": "Reno"
+      },
+      {
+        "word": "nutcracker",
+        "hint": "Cascanueces"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Celebraciones",
+    "description": "Vocabulario de celebraciones en inglés",
+    "iconName": "sparkles",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "birthday",
+        "hint": "Cumpleaños"
+      },
+      {
+        "word": "anniversary",
+        "hint": "Aniversario"
+      },
+      {
+        "word": "graduation",
+        "hint": "Graduación"
+      },
+      {
+        "word": "retirement",
+        "hint": "Jubilación"
+      },
+      {
+        "word": "surprise",
+        "hint": "Sorpresa"
+      },
+      {
+        "word": "balloon",
+        "hint": "Globo"
+      },
+      {
+        "word": "candle",
+        "hint": "Vela (de cumpleaños)"
+      },
+      {
+        "word": "streamer",
+        "hint": "Serpentina"
+      },
+      {
+        "word": "present",
+        "hint": "Regalo"
+      },
+      {
+        "word": "cheers",
+        "hint": "¡Salud! / brindis"
+      },
+      {
+        "word": "gathering",
+        "hint": "Reunión"
+      },
+      {
+        "word": "banquet",
+        "hint": "Banquete"
+      },
+      {
+        "word": "milestone",
+        "hint": "Hito"
+      },
+      {
+        "word": "festive",
+        "hint": "Festivo"
+      },
+      {
+        "word": "applause",
+        "hint": "Aplauso"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Moda",
+    "description": "Vocabulario de moda en inglés",
+    "iconName": "tshirt",
+    "color": "#a21caf",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "designer",
+        "hint": "Diseñador"
+      },
+      {
+        "word": "runway",
+        "hint": "Pasarela de moda"
+      },
+      {
+        "word": "boutique",
+        "hint": "Boutique"
+      },
+      {
+        "word": "accessory",
+        "hint": "Accesorio"
+      },
+      {
+        "word": "trendy",
+        "hint": "De moda / tendencia"
+      },
+      {
+        "word": "vintage",
+        "hint": "Vintage / retro"
+      },
+      {
+        "word": "tailored",
+        "hint": "A medida"
+      },
+      {
+        "word": "couture",
+        "hint": "Alta costura"
+      },
+      {
+        "word": "wardrobe",
+        "hint": "Armario / guardarropa"
+      },
+      {
+        "word": "elegant",
+        "hint": "Elegante"
+      },
+      {
+        "word": "casual",
+        "hint": "Casual / informal"
+      },
+      {
+        "word": "outfit",
+        "hint": "Conjunto / atuendo"
+      },
+      {
+        "word": "lookbook",
+        "hint": "Catálogo de moda"
+      },
+      {
+        "word": "hemline",
+        "hint": "Dobladillo"
+      },
+      {
+        "word": "ensemble",
+        "hint": "Conjunto / traje"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Textiles",
+    "description": "Vocabulario de textiles en inglés",
+    "iconName": "rectangle.stack",
+    "color": "#9333ea",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cotton",
+        "hint": "Algodón"
+      },
+      {
+        "word": "silk",
+        "hint": "Seda"
+      },
+      {
+        "word": "linen",
+        "hint": "Lino"
+      },
+      {
+        "word": "velvet",
+        "hint": "Terciopelo"
+      },
+      {
+        "word": "denim",
+        "hint": "Mezclilla / vaquero"
+      },
+      {
+        "word": "satin",
+        "hint": "Satén"
+      },
+      {
+        "word": "leather",
+        "hint": "Cuero"
+      },
+      {
+        "word": "suede",
+        "hint": "Ante / gamuza"
+      },
+      {
+        "word": "polyester",
+        "hint": "Poliéster"
+      },
+      {
+        "word": "cashmere",
+        "hint": "Cachemira"
+      },
+      {
+        "word": "fleece",
+        "hint": "Polar / forro polar"
+      },
+      {
+        "word": "tweed",
+        "hint": "Tweed"
+      },
+      {
+        "word": "chiffon",
+        "hint": "Gasa"
+      },
+      {
+        "word": "corduroy",
+        "hint": "Pana"
+      },
+      {
+        "word": "nylon",
+        "hint": "Nailon"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Joyería",
+    "description": "Vocabulario de joyería en inglés",
+    "iconName": "sparkle",
+    "color": "#ca8a04",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "necklace",
+        "hint": "Collar"
+      },
+      {
+        "word": "bracelet",
+        "hint": "Pulsera"
+      },
+      {
+        "word": "earring",
+        "hint": "Pendiente / arete"
+      },
+      {
+        "word": "diamond",
+        "hint": "Diamante"
+      },
+      {
+        "word": "emerald",
+        "hint": "Esmeralda"
+      },
+      {
+        "word": "sapphire",
+        "hint": "Zafiro"
+      },
+      {
+        "word": "ruby",
+        "hint": "Rubí"
+      },
+      {
+        "word": "pendant",
+        "hint": "Colgante"
+      },
+      {
+        "word": "brooch",
+        "hint": "Broche"
+      },
+      {
+        "word": "charm",
+        "hint": "Dije"
+      },
+      {
+        "word": "tiara",
+        "hint": "Tiara"
+      },
+      {
+        "word": "anklet",
+        "hint": "Tobillera"
+      },
+      {
+        "word": "carat",
+        "hint": "Quilate"
+      },
+      {
+        "word": "gemstone",
+        "hint": "Piedra preciosa"
+      },
+      {
+        "word": "platinum",
+        "hint": "Platino"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Cosmética",
+    "description": "Vocabulario de cosmética en inglés",
+    "iconName": "paintbrush.pointed",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "lipstick",
+        "hint": "Pintalabios"
+      },
+      {
+        "word": "mascara",
+        "hint": "Rímel"
+      },
+      {
+        "word": "foundation",
+        "hint": "Base de maquillaje"
+      },
+      {
+        "word": "concealer",
+        "hint": "Corrector"
+      },
+      {
+        "word": "blush",
+        "hint": "Rubor / colorete"
+      },
+      {
+        "word": "eyeshadow",
+        "hint": "Sombra de ojos"
+      },
+      {
+        "word": "eyeliner",
+        "hint": "Delineador de ojos"
+      },
+      {
+        "word": "bronzer",
+        "hint": "Bronceador"
+      },
+      {
+        "word": "primer",
+        "hint": "Prebase"
+      },
+      {
+        "word": "moisturizer",
+        "hint": "Hidratante"
+      },
+      {
+        "word": "cleanser",
+        "hint": "Limpiador facial"
+      },
+      {
+        "word": "toner",
+        "hint": "Tónico"
+      },
+      {
+        "word": "serum",
+        "hint": "Sérum"
+      },
+      {
+        "word": "exfoliant",
+        "hint": "Exfoliante"
+      },
+      {
+        "word": "sunscreen",
+        "hint": "Protector solar"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Peinados",
+    "description": "Vocabulario de peinados en inglés",
+    "iconName": "comb",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ponytail",
+        "hint": "Cola de caballo"
+      },
+      {
+        "word": "braids",
+        "hint": "Trenzas"
+      },
+      {
+        "word": "bangs",
+        "hint": "Flequillo"
+      },
+      {
+        "word": "curling",
+        "hint": "Rizado"
+      },
+      {
+        "word": "highlights",
+        "hint": "Mechas / reflejos"
+      },
+      {
+        "word": "blowout",
+        "hint": "Secado con secador"
+      },
+      {
+        "word": "sideburns",
+        "hint": "Patillas"
+      },
+      {
+        "word": "trimming",
+        "hint": "Recorte"
+      },
+      {
+        "word": "layered",
+        "hint": "En capas"
+      },
+      {
+        "word": "updo",
+        "hint": "Recogido"
+      },
+      {
+        "word": "pixie",
+        "hint": "Corte pixie"
+      },
+      {
+        "word": "mohawk",
+        "hint": "Mohicano"
+      },
+      {
+        "word": "undercut",
+        "hint": "Degradado / rapado"
+      },
+      {
+        "word": "extension",
+        "hint": "Extensión de cabello"
+      },
+      {
+        "word": "conditioner",
+        "hint": "Acondicionador"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Medio Ambiente",
+    "description": "Vocabulario del medio ambiente en inglés",
+    "iconName": "globe.europe.africa",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pollution",
+        "hint": "Contaminación"
+      },
+      {
+        "word": "deforestation",
+        "hint": "Deforestación"
+      },
+      {
+        "word": "wildlife",
+        "hint": "Fauna silvestre"
+      },
+      {
+        "word": "wetland",
+        "hint": "Humedal"
+      },
+      {
+        "word": "ecosystem",
+        "hint": "Ecosistema"
+      },
+      {
+        "word": "endangered",
+        "hint": "En peligro de extinción"
+      },
+      {
+        "word": "biodiversity",
+        "hint": "Biodiversidad"
+      },
+      {
+        "word": "conservation",
+        "hint": "Conservación"
+      },
+      {
+        "word": "drought",
+        "hint": "Sequía"
+      },
+      {
+        "word": "erosion",
+        "hint": "Erosión"
+      },
+      {
+        "word": "ozone",
+        "hint": "Ozono"
+      },
+      {
+        "word": "rainforest",
+        "hint": "Selva tropical"
+      },
+      {
+        "word": "habitat",
+        "hint": "Hábitat"
+      },
+      {
+        "word": "emission",
+        "hint": "Emisión"
+      },
+      {
+        "word": "footprint",
+        "hint": "Huella (ecológica)"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Reciclaje",
+    "description": "Vocabulario de reciclaje en inglés",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "compost",
+        "hint": "Compost / abono orgánico"
+      },
+      {
+        "word": "landfill",
+        "hint": "Vertedero"
+      },
+      {
+        "word": "sorting",
+        "hint": "Clasificación"
+      },
+      {
+        "word": "reusable",
+        "hint": "Reutilizable"
+      },
+      {
+        "word": "container",
+        "hint": "Contenedor"
+      },
+      {
+        "word": "cardboard",
+        "hint": "Cartón"
+      },
+      {
+        "word": "aluminum",
+        "hint": "Aluminio"
+      },
+      {
+        "word": "disposal",
+        "hint": "Eliminación / desecho"
+      },
+      {
+        "word": "biodegradable",
+        "hint": "Biodegradable"
+      },
+      {
+        "word": "plastic",
+        "hint": "Plástico"
+      },
+      {
+        "word": "hazardous",
+        "hint": "Peligroso / tóxico"
+      },
+      {
+        "word": "upcycling",
+        "hint": "Reciclaje creativo"
+      },
+      {
+        "word": "scrap",
+        "hint": "Chatarra / desecho"
+      },
+      {
+        "word": "refill",
+        "hint": "Rellenar"
+      },
+      {
+        "word": "donation",
+        "hint": "Donación"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energía",
+    "description": "Vocabulario de energía en inglés",
+    "iconName": "bolt.fill",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "renewable",
+        "hint": "Renovable"
+      },
+      {
+        "word": "solar",
+        "hint": "Solar"
+      },
+      {
+        "word": "turbine",
+        "hint": "Turbina"
+      },
+      {
+        "word": "nuclear",
+        "hint": "Nuclear"
+      },
+      {
+        "word": "geothermal",
+        "hint": "Geotérmica"
+      },
+      {
+        "word": "biomass",
+        "hint": "Biomasa"
+      },
+      {
+        "word": "hydropower",
+        "hint": "Energía hidráulica"
+      },
+      {
+        "word": "windmill",
+        "hint": "Molino de viento"
+      },
+      {
+        "word": "fossil",
+        "hint": "Fósil (combustible)"
+      },
+      {
+        "word": "battery",
+        "hint": "Batería"
+      },
+      {
+        "word": "kilowatt",
+        "hint": "Kilovatio"
+      },
+      {
+        "word": "grid",
+        "hint": "Red eléctrica"
+      },
+      {
+        "word": "efficient",
+        "hint": "Eficiente"
+      },
+      {
+        "word": "blackout",
+        "hint": "Apagón"
+      },
+      {
+        "word": "petroleum",
+        "hint": "Petróleo"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Clima",
+    "description": "Vocabulario del clima en inglés",
+    "iconName": "thermometer.sun",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "greenhouse",
+        "hint": "Invernadero (efecto)"
+      },
+      {
+        "word": "warming",
+        "hint": "Calentamiento"
+      },
+      {
+        "word": "hurricane",
+        "hint": "Huracán"
+      },
+      {
+        "word": "tornado",
+        "hint": "Tornado"
+      },
+      {
+        "word": "monsoon",
+        "hint": "Monzón"
+      },
+      {
+        "word": "blizzard",
+        "hint": "Ventisca / tormenta de nieve"
+      },
+      {
+        "word": "heatwave",
+        "hint": "Ola de calor"
+      },
+      {
+        "word": "flooding",
+        "hint": "Inundación"
+      },
+      {
+        "word": "humidity",
+        "hint": "Humedad"
+      },
+      {
+        "word": "forecast",
+        "hint": "Pronóstico"
+      },
+      {
+        "word": "barometer",
+        "hint": "Barómetro"
+      },
+      {
+        "word": "celsius",
+        "hint": "Celsius / centígrado"
+      },
+      {
+        "word": "tropics",
+        "hint": "Trópicos"
+      },
+      {
+        "word": "arctic",
+        "hint": "Ártico"
+      },
+      {
+        "word": "seasonal",
+        "hint": "Estacional"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Sostenibilidad",
+    "description": "Vocabulario de sostenibilidad en inglés",
+    "iconName": "leaf.arrow.triangle.circlepath",
+    "color": "#15803d",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "organic",
+        "hint": "Orgánico"
+      },
+      {
+        "word": "ethical",
+        "hint": "Ético"
+      },
+      {
+        "word": "carbon",
+        "hint": "Carbono"
+      },
+      {
+        "word": "footprint",
+        "hint": "Huella ecológica"
+      },
+      {
+        "word": "offset",
+        "hint": "Compensación (de carbono)"
+      },
+      {
+        "word": "vegan",
+        "hint": "Vegano"
+      },
+      {
+        "word": "fairtrade",
+        "hint": "Comercio justo"
+      },
+      {
+        "word": "ecofriendly",
+        "hint": "Ecológico"
+      },
+      {
+        "word": "grassfed",
+        "hint": "Alimentado con pasto"
+      },
+      {
+        "word": "permaculture",
+        "hint": "Permacultura"
+      },
+      {
+        "word": "composting",
+        "hint": "Compostaje"
+      },
+      {
+        "word": "watershed",
+        "hint": "Cuenca hidrográfica"
+      },
+      {
+        "word": "stewardship",
+        "hint": "Gestión responsable"
+      },
+      {
+        "word": "resilient",
+        "hint": "Resiliente"
+      },
+      {
+        "word": "greenwashing",
+        "hint": "Lavado verde / ecoblanqueo"
+      }
+    ]
+  }
+]

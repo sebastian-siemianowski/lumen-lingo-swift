@@ -423,6 +423,7 @@ struct LumenNavigationPressModifier: ViewModifier {
                 }
                 let g = UIImpactFeedbackGenerator(style: .soft)
                 g.impactOccurred(intensity: 0.7)
+                AudioService.shared.playGameCardTap()
 
                 // 2) Bouncy spring-back after brief hold
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
@@ -689,73 +690,19 @@ struct GlassPanelWrapper<Content: View>: View {
 
     var body: some View {
         ZStack {
-            if isDark {
-                // Combined foggy aura (consolidated from 3 separate blur layers)
-                RoundedRectangle(cornerRadius: cornerRadius + 14)
-                    .fill(
-                        .radialGradient(
-                            colors: [
-                                resolvedTint.opacity(0.28),
-                                Color(red: 70/255, green: 200/255, blue: 220/255).opacity(0.14),
-                                .clear
-                            ],
-                            center: .top,
-                            startRadius: 0,
-                            endRadius: 190
-                        )
-                    )
-                    .blur(radius: 14)
-                    .padding(-16)
+            // Dark-only decorative layers — rasterized into single GPU texture
+            darkDecoration
+                .opacity(isDark ? 1 : 0)
+                .allowsHitTesting(false)
 
-                // Crisp edge highlight (border glow)
-                RoundedRectangle(cornerRadius: cornerRadius + 1)
-                    .strokeBorder(
-                        LinearGradient(
-                            colors: [
-                                Color(red: 100/255, green: 200/255, blue: 240/255).opacity(0.45),
-                                Color(red: 140/255, green: 120/255, blue: 220/255).opacity(0.25),
-                                Color(red: 100/255, green: 80/255, blue: 180/255).opacity(0.12),
-                                Color(red: 140/255, green: 120/255, blue: 220/255).opacity(0.20),
-                                Color(red: 80/255, green: 180/255, blue: 220/255).opacity(0.30)
-                            ],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        ),
-                        lineWidth: 1.5
-                    )
-                    .padding(-1)
-
-                // Winter mist overlays
-                winterMistOverlay
-            }
-
-            // BASE: Frosted glass material — reduced opacity so cosmic background bleeds through
-            // React uses rgba(20, 14, 38, 0.7) + backdrop-filter: blur(24px)
+            // BASE: Frosted glass material
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(.ultraThinMaterial)
                 .opacity(isDark ? 0.55 : 1.0)
 
-            // Semi-transparent dark tint matching React's rgba(20, 14, 38, 0.7)
-            if isDark {
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .fill(Color(red: 20/255, green: 14/255, blue: 38/255).opacity(0.45))
-            }
-
-            if isDark {
-                // Combined color tint + inner shadow (consolidated)
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .fill(
-                        LinearGradient(
-                            colors: [
-                                resolvedTint.opacity(0.10),
-                                .clear,
-                                resolvedTint.opacity(0.06)
-                            ],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-            }
+            // Dark tint overlay
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .fill(Color(red: 20/255, green: 14/255, blue: 38/255).opacity(isDark ? 0.45 : 0))
 
             // Inner highlight
             RoundedRectangle(cornerRadius: cornerRadius)
@@ -774,25 +721,23 @@ struct GlassPanelWrapper<Content: View>: View {
             // Border
             RoundedRectangle(cornerRadius: cornerRadius)
                 .strokeBorder(
-                    isDark
-                        ? .white.opacity(0.10)
-                        : .white.opacity(0.18),
+                    .white.opacity(isDark ? 0.10 : 0.18),
                     lineWidth: 1
                 )
 
-            if !isDark {
-                // Light mode: top wash
-                VStack {
-                    LinearGradient(
-                        colors: [.white.opacity(0.10), .clear],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                    .frame(height: 50)
-                    Spacer()
-                }
-                .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+            // Light mode: top wash
+            VStack {
+                LinearGradient(
+                    colors: [.white.opacity(0.10), .clear],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .frame(height: 50)
+                Spacer()
             }
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+            .opacity(isDark ? 0 : 1)
+            .allowsHitTesting(false)
 
             // Content
             content()
@@ -800,6 +745,63 @@ struct GlassPanelWrapper<Content: View>: View {
         }
         .shadow(color: .black.opacity(isDark ? 0.06 : 0.08), radius: 20, y: 8)
         .shadow(color: .black.opacity(0.04), radius: 6, y: 3)
+        .animation(.smooth(duration: 0.65), value: isDark)
+    }
+    private var darkDecoration: some View {
+        ZStack {
+            // Foggy aura
+            RoundedRectangle(cornerRadius: cornerRadius + 14)
+                .fill(
+                    .radialGradient(
+                        colors: [
+                            resolvedTint.opacity(0.28),
+                            Color(red: 70/255, green: 200/255, blue: 220/255).opacity(0.14),
+                            .clear
+                        ],
+                        center: .top,
+                        startRadius: 0,
+                        endRadius: 190
+                    )
+                )
+                .blur(radius: 14)
+                .padding(-16)
+
+            // Edge highlight
+            RoundedRectangle(cornerRadius: cornerRadius + 1)
+                .strokeBorder(
+                    LinearGradient(
+                        colors: [
+                            Color(red: 100/255, green: 200/255, blue: 240/255).opacity(0.45),
+                            Color(red: 140/255, green: 120/255, blue: 220/255).opacity(0.25),
+                            Color(red: 100/255, green: 80/255, blue: 180/255).opacity(0.12),
+                            Color(red: 140/255, green: 120/255, blue: 220/255).opacity(0.20),
+                            Color(red: 80/255, green: 180/255, blue: 220/255).opacity(0.30)
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    ),
+                    lineWidth: 1.5
+                )
+                .padding(-1)
+
+            // Winter mist
+            winterMistOverlay
+
+            // Color tint
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .fill(
+                    LinearGradient(
+                        colors: [
+                            resolvedTint.opacity(0.10),
+                            .clear,
+                            resolvedTint.opacity(0.06)
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+        }
+        .compositingGroup()
     }
 
     // MARK: - Winter Mist
@@ -822,6 +824,8 @@ struct GlassPanelWrapper<Content: View>: View {
                 .blur(radius: 14)
                 .offset(y: 70)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
         .drawingGroup()
         .allowsHitTesting(false)
     }
@@ -846,12 +850,11 @@ struct PremiumToggle: View {
             onToggle()
         } label: {
             ZStack {
-                // Static glow halo (layer 1)
-                if isOn {
-                    Capsule()
-                        .fill(enabledColor.opacity(isDark ? 0.34 : 0.22))
-                        .padding(-4)
-                }
+                // Static glow halo (layer 1) — always present for stable layout
+                Capsule()
+                    .fill(enabledColor.opacity(isDark ? 0.34 : 0.22))
+                    .padding(-4)
+                    .opacity(isOn ? 1 : 0)
 
                 // Track gradient (layer 2)
                 Capsule()
@@ -877,18 +880,17 @@ struct PremiumToggle: View {
                     )
                     .frame(width: 52, height: 30)
 
-                // Track inner highlight (layer 3)
-                if isOn {
-                    Capsule()
-                        .fill(
-                            LinearGradient(
-                                colors: [.white.opacity(0.25), .clear, .white.opacity(0.08)],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            )
+                // Track inner highlight (layer 3) — always present for stable layout
+                Capsule()
+                    .fill(
+                        LinearGradient(
+                            colors: [.white.opacity(0.25), .clear, .white.opacity(0.08)],
+                            startPoint: .top,
+                            endPoint: .bottom
                         )
-                        .frame(width: 52, height: 30)
-                }
+                    )
+                    .frame(width: 52, height: 30)
+                    .opacity(isOn ? 1 : 0)
 
                 // Thumb with shadow stack (layer 4)
                 Circle()

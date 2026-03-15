@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "Baue Wörter Buchstabe für Buchstabe aus durcheinander gewürfelten Hinweisen zusammen",
         craftAndDiscover: "Bauen & Entdecken",
         recentActivity: "Letzte Aktivität",
+        resetProgress: "Fortschritt zurücksetzen",
+        resetProgressMessage: "Dies löscht alle XP, Level, Streaks, Spielverlauf und gemeisterte Inhalte. Diese Aktion kann nicht rückgängig gemacht werden.",
+        progressReset: "Fortschritt wurde zurückgesetzt",
+        startFreshDescription: "Lösche deinen gesamten Fortschritt, XP, Streaks und Spielverlauf, um deine Lernreise von vorne zu beginnen.",
 
         // Language Selection
         languages: "Sprachen",
@@ -40,9 +44,11 @@ extension AppStrings {
         iSpeak: "Ich spreche",
         imLearning: "Ich lerne",
         noLanguagesAvailable: "Keine Sprachen für diese Ausgangssprache verfügbar.",
-        betaLanguagePairs: "Beta-Sprachpaare",
-        showExperimentalPairs: "Experimentelle Paare mit eingeschränktem Inhalt anzeigen",
         confirm: "Bestätigen:",
+        done: "Fertig",
+        languagesAvailable: "Sprachen verfügbar",
+        startYourAdventure: "Starte Dein Abenteuer",
+        keepLearning: "Weiter Lernen",
 
         // Categories
         back: "Zurück",
@@ -81,6 +87,7 @@ extension AppStrings {
         undo: "Rückgängig",
         clear: "Löschen",
         check: "Prüfen",
+        hint: "Tipp",
         noWordsAvailable: "Keine Wörter verfügbar",
 
         // Game Complete
@@ -97,6 +104,7 @@ extension AppStrings {
         correct: "Richtig",
         toReview: "Zu wiederholen",
         playAgain: "Nochmal spielen",
+        nextCategory: "Nächste Kategorie",
         backToCategories: "Zurück zu den Kategorien",
 
         // Journey
@@ -106,8 +114,14 @@ extension AppStrings {
         firstSteps: "Erste Schritte",
         gettingStarted: "Einstieg",
         dedicatedLearner: "Engagierter Lerner",
+        risingStar: "Aufsteigender Stern",
         wordWarrior: "Wortkämpfer",
+        knowledgeSeeker: "Wissenssuchender",
+        sentenceCrafter: "Satzbaumeister",
+        grammarGuardian: "Grammatikhüter",
+        vocabularyVirtuoso: "Wortschatzvirtuose",
         languageMaster: "Sprachmeister",
+        fluencyPioneer: "Fließend-Pionier",
         polyglotLegend: "Polyglott-Legende",
         xpRequired: "XP erforderlich",
         overview: "Übersicht",
@@ -121,7 +135,6 @@ extension AppStrings {
         // Profile
         appearance: "Aussehen",
         sound: "Ton",
-        beta: "Beta",
         sync: "Sync",
         signOut: "Abmelden",
         darkLight: "Dunkel/Hell",
@@ -158,17 +171,6 @@ extension AppStrings {
         backgroundAtmospheric: "Atmosphärische Hintergrundgeräusche",
 
         // Beta Languages
-        betaLanguages: "Beta-Sprachen",
-        experimentalLanguagePairs: "Experimentelle Sprachpaare",
-        experimentalFeatures: "Experimentelle Funktionen",
-        betaLimitedContent: "Beta-Sprachen können eingeschränkte Inhalte oder gelegentliche Übersetzungseigenheiten aufweisen.",
-        coreLanguages: "Kernsprachen",
-        alwaysOn: "Immer aktiv",
-        active: "Aktiv",
-        experimentalLanguagesSection: "Experimentelle Sprachen",
-        on: "An",
-        off: "Aus",
-
         // Sync
         cloudSync: "Cloud-Sync",
         backupRestore: "Sicherung & Wiederherstellung deines Fortschritts",
@@ -240,6 +242,12 @@ extension AppStrings {
         vivid: "Lebendig",
         driftSpeed: "Driftgeschwindigkeit",
         frozen: "Eingefroren",
+        nebulaDescLagoon: "Ätherische rosa-violette Wolken, in denen neugeborene Sterne in Säulen aus kosmischem Staub entflammen",
+        nebulaDescCelestial: "Ein endloser türkiser Ozean aus leuchtendem Gas, schimmernd in Cyan- und dunkeltürkisen Sternenreflexen",
+        nebulaDescAndromeda: "Eine Billion Sonnen schweben am Rand der Galaxie, bernsteinfarbenes Licht löst sich im Indigo-Raum auf",
+        nebulaDescSolarAurora: "Goldene Bänder geladener Teilchen strömen durch Magnetfelder und malen das Nichts mit sanfter Wärme",
+        nebulaDescSpiralHalo: "Hundert Milliarden Sterne spiralen in Harmonie, ihr violetter Schein zeichnet Gravitationspfade nach",
+        nebulaDescStarburst: "Ein strahlender Ring rasanter Sternentstehung, elektrisch blaue und magentafarbene Bögen voller Energie",
 
         // Membership
         plansAndPricing: "Pläne & Preise",

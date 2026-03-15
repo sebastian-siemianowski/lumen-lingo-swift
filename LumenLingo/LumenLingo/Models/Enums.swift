@@ -299,49 +299,6 @@ struct LanguagePair: Equatable, Hashable, Codable {
         "\(source.displayName) \u{2192} \(target.displayName)"
     }
 
-    /// Built-in (non-beta) language pairs that have content data
-    static let builtIn: [LanguagePair] = [
-        // English pairs
-        .init(source: .english, target: .spanish),
-        .init(source: .english, target: .french),
-        .init(source: .english, target: .german),
-        .init(source: .english, target: .polish),
-        .init(source: .english, target: .arabic),
-        .init(source: .english, target: .chinese),
-        .init(source: .english, target: .japanese),
-        // Spanish pairs
-        .init(source: .spanish, target: .english),
-        // French pairs
-        .init(source: .french, target: .english),
-        // German pairs
-        .init(source: .german, target: .english),
-        .init(source: .german, target: .spanish),
-        .init(source: .german, target: .polish),
-        // Polish pairs
-        .init(source: .polish, target: .english),
-        .init(source: .polish, target: .spanish),
-        .init(source: .polish, target: .german),
-        .init(source: .polish, target: .french),
-        .init(source: .polish, target: .arabic),
-        .init(source: .polish, target: .chinese),
-        .init(source: .polish, target: .japanese),
-        .init(source: .polish, target: .ukrainian),
-        // Arabic pairs
-        .init(source: .arabic, target: .english),
-        // Chinese pairs
-        .init(source: .chinese, target: .english),
-        // Japanese pairs
-        .init(source: .japanese, target: .english),
-        // Ukrainian pairs
-        .init(source: .ukrainian, target: .english),
-        .init(source: .ukrainian, target: .polish),
-    ]
-
-    /// Check if a pair is built-in by key
-    static func isBuiltInKey(_ key: String) -> Bool {
-        builtIn.contains { $0.key == key }
-    }
-
     /// All possible combinations where content might exist
     static let allAvailable: [LanguagePair] = SupportedLanguage.allCases.flatMap { source in
         SupportedLanguage.allCases.compactMap { target in
@@ -349,8 +306,38 @@ struct LanguagePair: Equatable, Hashable, Codable {
         }
     }
 
-    var isBuiltIn: Bool {
-        Self.builtIn.contains(self)
+    /// All language pairs that have bundled content (flashcards, grammar, wordbuilder)
+    static let withContent: [LanguagePair] = [
+        .init(source: .arabic, target: .english),
+        .init(source: .chinese, target: .english),
+        .init(source: .english, target: .arabic),
+        .init(source: .english, target: .chinese),
+        .init(source: .english, target: .french),
+        .init(source: .english, target: .german),
+        .init(source: .english, target: .japanese),
+        .init(source: .english, target: .polish),
+        .init(source: .english, target: .spanish),
+        .init(source: .french, target: .english),
+        .init(source: .german, target: .english),
+        .init(source: .german, target: .polish),
+        .init(source: .german, target: .spanish),
+        .init(source: .japanese, target: .english),
+        .init(source: .polish, target: .arabic),
+        .init(source: .polish, target: .chinese),
+        .init(source: .polish, target: .english),
+        .init(source: .polish, target: .french),
+        .init(source: .polish, target: .german),
+        .init(source: .polish, target: .japanese),
+        .init(source: .polish, target: .spanish),
+        .init(source: .polish, target: .ukrainian),
+        .init(source: .spanish, target: .english),
+        .init(source: .ukrainian, target: .english),
+        .init(source: .ukrainian, target: .polish),
+    ]
+
+    /// Check if a pair has bundled content
+    var hasContent: Bool {
+        Self.withContent.contains(self)
     }
 }
 
@@ -421,17 +408,28 @@ enum BreathingOrbScheme: String, CaseIterable, Identifiable {
     var description: String {
         switch self {
         case .barcelonaNights:
-            return "Twilight breathes Gaudí's forms, woven from mosaic, Mediterranean mystery."
+            return "Twilight breathes Gaudí's forms, woven from mosaic mystery"
         case .shanghaiShimmeringNexus:
-            return "A port where starlight docks, reflecting cosmic wonders in its depths"
+            return "Starlight docks at the port, reflecting cosmic wonders"
         case .tokyoSunset:
-            return "Mono no aware sunset, cherry-hued clouds dissolve, city's neon pulse awakens."
+            return "Cherry-hued clouds dissolve as the city's neon pulse awakens"
         case .newYorkMysticalGardens:
-            return "Skyline's tender kiss to emerald depths; New York's unmatched allure, love at first glance."
+            return "Skyline kisses emerald depths in unmatched urban allure"
         case .parisEclatNocturne:
-            return "Otherworldly brilliance descends nightly, where dreams entwine with light-coded verses falling like rain."
+            return "Brilliance descends nightly, dreams entwine with coded light"
         case .krakowLuminescence:
-            return "Ancient stones glow sapphire, echoing Wawel's dragon and royal legends. Serenity awaits kissed by spiritual light, sacred past"
+            return "Ancient stones glow sapphire, echoing royal legends"
+        }
+    }
+
+    var iconName: String {
+        switch self {
+        case .barcelonaNights: return "moon.stars.fill"
+        case .shanghaiShimmeringNexus: return "building.2.crop.circle.fill"
+        case .tokyoSunset: return "sun.horizon.fill"
+        case .newYorkMysticalGardens: return "leaf.circle.fill"
+        case .parisEclatNocturne: return "staroflife.fill"
+        case .krakowLuminescence: return "crown.fill"
         }
     }
 
@@ -580,6 +578,17 @@ enum QuantumFlowScene: String, CaseIterable, Identifiable {
         }
     }
 
+    var iconName: String {
+        switch self {
+        case .dubaiCelestialMirage: return "sun.max.fill"
+        case .kyotoSacredTwilight: return "bird.fill"
+        case .buenosAiresTangoFlame: return "flame.fill"
+        case .hongKongHarbourDreams: return "ferry.fill"
+        case .marrakechSpiceReverie: return "wind"
+        case .viennaImperialWaltz: return "music.note"
+        }
+    }
+
     /// Dark mode curtain colors (4 colors per scene)
     var colors: [Color] {
         switch self {
@@ -646,31 +655,24 @@ enum NebulaPreset: String, CaseIterable, Identifiable {
         }
     }
 
-    var description: String {
+    func localizedDescription(_ L: AppStrings) -> String {
         switch self {
-        case .lagoonNebula:
-            return "Ethereal cosmic clouds where newborn stars ignite"
-        case .celestialLagoon:
-            return "Infinite turquoise ocean of luminous serenity"
-        case .edgeOfAndromeda:
-            return "A trillion suns suspended in eternal dance"
-        case .solarAurora:
-            return "Golden ribbons dancing across the cosmic void"
-        case .spiralHaloGalaxy:
-            return "A hundred billion stars in cosmic harmony"
-        case .starburstRing:
-            return "Brilliant ring of star formation in radiance"
+        case .lagoonNebula: return L.nebulaDescLagoon
+        case .celestialLagoon: return L.nebulaDescCelestial
+        case .edgeOfAndromeda: return L.nebulaDescAndromeda
+        case .solarAurora: return L.nebulaDescSolarAurora
+        case .spiralHaloGalaxy: return L.nebulaDescSpiralHalo
+        case .starburstRing: return L.nebulaDescStarburst
         }
     }
-
     var iconName: String {
         switch self {
         case .lagoonNebula: return "cloud.fog.fill"
-        case .celestialLagoon: return "water.waves"
-        case .solarAurora: return "cloud.fog.fill"
-        case .spiralHaloGalaxy: return "circle.dashed"
+        case .celestialLagoon: return "drop.triangle.fill"
+        case .solarAurora: return "sun.and.horizon.fill"
+        case .spiralHaloGalaxy: return "hurricane"
         case .edgeOfAndromeda: return "star.fill"
-        case .starburstRing: return "circle.dashed"
+        case .starburstRing: return "rays"
         }
     }
 
@@ -683,6 +685,200 @@ enum NebulaPreset: String, CaseIterable, Identifiable {
         case .spiralHaloGalaxy: return [Color(hex: "6366F1"), Color(hex: "8B5CF6"), Color(hex: "C084FC")]
         case .edgeOfAndromeda: return [Color(hex: "F59E0B"), Color(hex: "A855F7"), Color(hex: "6366F1")]
         case .starburstRing: return [Color(hex: "5A2EFF").opacity(1), Color(hex: "FF3BEA"), Color(hex: "5CC9FF")]
+        }
+    }
+}
+
+// MARK: - Soundscape Categories & Presets
+
+enum SoundscapeCategory: String, CaseIterable, Identifiable {
+    case cozy
+    case travel
+    case nature
+    case atmospheric
+
+    var id: String { rawValue }
+
+    var icon: String {
+        switch self {
+        case .cozy: return "cup.and.saucer.fill"
+        case .nature: return "leaf.fill"
+        case .atmospheric: return "sparkles"
+        case .travel: return "globe.americas.fill"
+        }
+    }
+
+    var displayName: String {
+        switch self {
+        case .cozy: return "Cozy"
+        case .nature: return "Nature"
+        case .atmospheric: return "Atmospheric"
+        case .travel: return "Travel"
+        }
+    }
+
+    var soundscapes: [Soundscape] {
+        Soundscape.allCases.filter { $0.category == self }
+    }
+}
+
+enum Soundscape: String, CaseIterable, Identifiable {
+    case parisCafe
+    case midnightJazzPiano
+    case rainyWindow
+    case japaneseBambooForest
+    case amazonRainforest
+    case mountainCampfire
+    case observatoryNight
+    case desertNightSky
+    case deepSpaceDrift
+    case dominicanBeach
+    case veniceCanalMorning
+    case tokyoNightStreet
+
+    var id: String { rawValue }
+
+    var category: SoundscapeCategory {
+        switch self {
+        case .parisCafe, .midnightJazzPiano, .rainyWindow: return .cozy
+        case .japaneseBambooForest, .amazonRainforest, .mountainCampfire: return .nature
+        case .observatoryNight, .desertNightSky, .deepSpaceDrift: return .atmospheric
+        case .dominicanBeach, .veniceCanalMorning, .tokyoNightStreet: return .travel
+        }
+    }
+
+    var displayName: String {
+        switch self {
+        case .parisCafe: return "Paris Café"
+        case .midnightJazzPiano: return "Midnight Jazz Piano"
+        case .rainyWindow: return "Rainy Window"
+        case .japaneseBambooForest: return "Japanese Bamboo Forest"
+        case .amazonRainforest: return "Amazon Rainforest"
+        case .mountainCampfire: return "Mountain Campfire"
+        case .observatoryNight: return "Observatory Night"
+        case .desertNightSky: return "Desert Night Sky"
+        case .deepSpaceDrift: return "Deep Space Drift"
+        case .dominicanBeach: return "Dominican Beach"
+        case .veniceCanalMorning: return "Venice Canal Morning"
+        case .tokyoNightStreet: return "Tokyo Night Street"
+        }
+    }
+
+    var subtitle: String {
+        switch self {
+        case .parisCafe: return "Warm chatter & clinking cups"
+        case .midnightJazzPiano: return "Soft keys in a smoky lounge"
+        case .rainyWindow: return "Droplets on glass, distant thunder"
+        case .japaneseBambooForest: return "Wind chimes & rustling leaves"
+        case .amazonRainforest: return "Dense canopy, exotic birds"
+        case .mountainCampfire: return "Crackling flames under stars"
+        case .observatoryNight: return "Telescopes hum, cosmic silence"
+        case .desertNightSky: return "Infinite stillness, warm breeze"
+        case .deepSpaceDrift: return "Weightless among the stars"
+        case .dominicanBeach: return "Gentle waves & tropical breeze"
+        case .veniceCanalMorning: return "Water lapping, church bells"
+        case .tokyoNightStreet: return "Neon glow & distant chatter"
+        }
+    }
+
+    var icon: String {
+        switch self {
+        case .parisCafe: return "cup.and.saucer.fill"
+        case .midnightJazzPiano: return "pianokeys"
+        case .rainyWindow: return "cloud.rain.fill"
+        case .japaneseBambooForest: return "leaf.fill"
+        case .amazonRainforest: return "tree.fill"
+        case .mountainCampfire: return "flame.fill"
+        case .observatoryNight: return "moon.stars.fill"
+        case .desertNightSky: return "sparkles"
+        case .deepSpaceDrift: return "circle.dotted"
+        case .dominicanBeach: return "water.waves"
+        case .veniceCanalMorning: return "ferry.fill"
+        case .tokyoNightStreet: return "building.2.fill"
+        }
+    }
+
+    /// Audio file variants bundled in the Soundscapes folder.
+    struct Variant: Identifiable, Equatable {
+        let id: Int          // 0-based index
+        let fileName: String // e.g. "Paris-Café-1" (no extension)
+        let label: String    // e.g. "Variant 1"
+    }
+
+    var variants: [Variant] {
+        switch self {
+        case .parisCafe:             return [Variant(id: 0, fileName: "Paris-Café-1", label: "Parisian Dawn"),
+                                              Variant(id: 1, fileName: "Paris-Café-2", label: "Evening Terrace")]
+        case .observatoryNight:      return [Variant(id: 0, fileName: "Observatory-Night-1", label: "Stargazer"),
+                                              Variant(id: 1, fileName: "Observatory-Night-2", label: "Deep Sky")]
+        case .dominicanBeach:        return [Variant(id: 0, fileName: "Dominican-Beach-1", label: "Shoreline"),
+                                              Variant(id: 1, fileName: "Dominican-Beach-2", label: "Sunset Cove")]
+        case .midnightJazzPiano:     return [Variant(id: 0, fileName: "Midnight-Jazz-Piano", label: "Late Set")]
+        case .rainyWindow:           return [Variant(id: 0, fileName: "Rainy-Window", label: "Gentle Rain")]
+        case .japaneseBambooForest:  return [Variant(id: 0, fileName: "Japanese-Bamboo-Forest", label: "Zen Garden")]
+        case .amazonRainforest:      return [Variant(id: 0, fileName: "Amazon-Rainforest", label: "Canopy")]
+        case .mountainCampfire:      return [Variant(id: 0, fileName: "Mountain-Campfire", label: "Fireside")]
+        case .desertNightSky:        return [Variant(id: 0, fileName: "Desert-Night-Sky", label: "Starlit Sand")]
+        case .deepSpaceDrift:        return [Variant(id: 0, fileName: "Deep-Space-Drift", label: "Cosmic Float")]
+        case .veniceCanalMorning:    return [Variant(id: 0, fileName: "Venice-Canal-Morning", label: "Canal Bells")]
+        case .tokyoNightStreet:      return [Variant(id: 0, fileName: "Tokyo-Night-Street", label: "Neon Walk")]
+        }
+    }
+
+    var hasMultipleVariants: Bool { variants.count > 1 }
+
+    var previewColors: [Color] {
+        switch self {
+        case .parisCafe: return [Color(hex: "8B6914"), Color(hex: "C4956A"), Color(hex: "5C3A1E")]
+        case .midnightJazzPiano: return [Color(hex: "1A1A2E"), Color(hex: "4A3B6B"), Color(hex: "16213E")]
+        case .rainyWindow: return [Color(hex: "4A6FA5"), Color(hex: "7B9BBF"), Color(hex: "2C3E50")]
+        case .japaneseBambooForest: return [Color(hex: "2D6A4F"), Color(hex: "74C69D"), Color(hex: "1B4332")]
+        case .amazonRainforest: return [Color(hex: "1B4332"), Color(hex: "52B788"), Color(hex: "081C15")]
+        case .mountainCampfire: return [Color(hex: "C1440E"), Color(hex: "E85D04"), Color(hex: "370617")]
+        case .observatoryNight: return [Color(hex: "0B1354"), Color(hex: "4361EE"), Color(hex: "0A0E27")]
+        case .desertNightSky: return [Color(hex: "1B1464"), Color(hex: "6A5ACD"), Color(hex: "2E1A47")]
+        case .deepSpaceDrift: return [Color(hex: "0D0221"), Color(hex: "3C1361"), Color(hex: "150050")]
+        case .dominicanBeach: return [Color(hex: "0077B6"), Color(hex: "00B4D8"), Color(hex: "023E8A")]
+        case .veniceCanalMorning: return [Color(hex: "E6B8A2"), Color(hex: "DEAB90"), Color(hex: "8B6F47")]
+        case .tokyoNightStreet: return [Color(hex: "FF006E"), Color(hex: "8338EC"), Color(hex: "3A0CA3")]
+        }
+    }
+
+    /// Ambient drone config — 3-frequency synthesis with per-soundscape character
+    struct AmbientConfig {
+        let freq1: Float, amp1: Float
+        let freq2: Float, amp2: Float
+        let freq3: Float, amp3: Float
+        let breathRate: Float   // cycle period in seconds
+        let harmRate: Float     // harmonic LFO period
+    }
+
+    var ambientConfig: AmbientConfig {
+        switch self {
+        case .parisCafe:
+            return AmbientConfig(freq1: 131, amp1: 0.30, freq2: 165, amp2: 0.18, freq3: 196, amp3: 0.12, breathRate: 5.0, harmRate: 10.0)
+        case .midnightJazzPiano:
+            return AmbientConfig(freq1: 110, amp1: 0.32, freq2: 147, amp2: 0.20, freq3: 220, amp3: 0.10, breathRate: 8.0, harmRate: 16.0)
+        case .rainyWindow:
+            return AmbientConfig(freq1: 131, amp1: 0.28, freq2: 147, amp2: 0.22, freq3: 165, amp3: 0.16, breathRate: 4.0, harmRate: 8.0)
+        case .japaneseBambooForest:
+            return AmbientConfig(freq1: 147, amp1: 0.25, freq2: 220, amp2: 0.15, freq3: 294, amp3: 0.08, breathRate: 7.0, harmRate: 14.0)
+        case .amazonRainforest:
+            return AmbientConfig(freq1: 98, amp1: 0.35, freq2: 131, amp2: 0.22, freq3: 165, amp3: 0.14, breathRate: 3.0, harmRate: 6.0)
+        case .mountainCampfire:
+            return AmbientConfig(freq1: 110, amp1: 0.30, freq2: 165, amp2: 0.18, freq3: 220, amp3: 0.10, breathRate: 6.0, harmRate: 15.0)
+        case .observatoryNight:
+            return AmbientConfig(freq1: 196, amp1: 0.22, freq2: 294, amp2: 0.12, freq3: 392, amp3: 0.06, breathRate: 9.0, harmRate: 20.0)
+        case .desertNightSky:
+            return AmbientConfig(freq1: 110, amp1: 0.25, freq2: 165, amp2: 0.12, freq3: 262, amp3: 0.06, breathRate: 10.0, harmRate: 22.0)
+        case .deepSpaceDrift:
+            return AmbientConfig(freq1: 98, amp1: 0.30, freq2: 131, amp2: 0.15, freq3: 196, amp3: 0.08, breathRate: 12.0, harmRate: 25.0)
+        case .dominicanBeach:
+            return AmbientConfig(freq1: 131, amp1: 0.30, freq2: 165, amp2: 0.20, freq3: 220, amp3: 0.12, breathRate: 5.0, harmRate: 10.0)
+        case .veniceCanalMorning:
+            return AmbientConfig(freq1: 165, amp1: 0.28, freq2: 220, amp2: 0.18, freq3: 262, amp3: 0.10, breathRate: 6.0, harmRate: 12.0)
+        case .tokyoNightStreet:
+            return AmbientConfig(freq1: 131, amp1: 0.28, freq2: 196, amp2: 0.20, freq3: 262, amp3: 0.14, breathRate: 4.0, harmRate: 7.0)
         }
     }
 }

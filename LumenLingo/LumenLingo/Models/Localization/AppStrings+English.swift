@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "Construct words letter by letter from scrambled clues and hints",
         craftAndDiscover: "Craft & Discover",
         recentActivity: "Recent Activity",
+        resetProgress: "Reset Progress",
+        resetProgressMessage: "This will erase all your XP, levels, streaks, game history, and mastered content. This action cannot be undone.",
+        progressReset: "Progress has been reset",
+        startFreshDescription: "Clear all your progress, XP, streaks, and game history to start your learning journey from scratch.",
 
         // Language Selection
         languages: "Languages",
@@ -40,9 +44,11 @@ extension AppStrings {
         iSpeak: "I speak",
         imLearning: "I'm learning",
         noLanguagesAvailable: "No languages available for this source.",
-        betaLanguagePairs: "Beta Language Pairs",
-        showExperimentalPairs: "Show experimental pairs with limited content",
         confirm: "Confirm:",
+        done: "Done",
+        languagesAvailable: "languages available",
+        startYourAdventure: "Start Your Adventure",
+        keepLearning: "Keep Learning",
 
         // Categories
         back: "Back",
@@ -81,6 +87,7 @@ extension AppStrings {
         undo: "Undo",
         clear: "Clear",
         check: "Check",
+        hint: "Hint",
         noWordsAvailable: "No words available",
 
         // Game Complete
@@ -97,6 +104,7 @@ extension AppStrings {
         correct: "Correct",
         toReview: "To Review",
         playAgain: "Play Again",
+        nextCategory: "Next Category",
         backToCategories: "Back to Categories",
 
         // Journey
@@ -106,8 +114,14 @@ extension AppStrings {
         firstSteps: "First Steps",
         gettingStarted: "Getting Started",
         dedicatedLearner: "Dedicated Learner",
+        risingStar: "Rising Star",
         wordWarrior: "Word Warrior",
+        knowledgeSeeker: "Knowledge Seeker",
+        sentenceCrafter: "Sentence Crafter",
+        grammarGuardian: "Grammar Guardian",
+        vocabularyVirtuoso: "Vocabulary Virtuoso",
         languageMaster: "Language Master",
+        fluencyPioneer: "Fluency Pioneer",
         polyglotLegend: "Polyglot Legend",
         xpRequired: "XP required",
         overview: "Overview",
@@ -121,7 +135,6 @@ extension AppStrings {
         // Profile
         appearance: "Appearance",
         sound: "Sound",
-        beta: "Beta",
         sync: "Sync",
         signOut: "Sign Out",
         darkLight: "Dark/Light",
@@ -156,18 +169,6 @@ extension AppStrings {
         levelUpFanfares: "Level-up fanfares & streak bonuses",
         ambientAudio: "Ambient Audio",
         backgroundAtmospheric: "Background atmospheric sounds",
-
-        // Beta Languages
-        betaLanguages: "Beta Languages",
-        experimentalLanguagePairs: "Experimental language pairs",
-        experimentalFeatures: "Experimental Features",
-        betaLimitedContent: "Beta languages may have limited content or occasional translation quirks.",
-        coreLanguages: "Core Languages",
-        alwaysOn: "Always on",
-        active: "Active",
-        experimentalLanguagesSection: "Experimental Languages",
-        on: "On",
-        off: "Off",
 
         // Sync
         cloudSync: "Cloud Sync",
@@ -240,6 +241,12 @@ extension AppStrings {
         vivid: "Vivid",
         driftSpeed: "Drift Speed",
         frozen: "Frozen",
+        nebulaDescLagoon: "Ethereal pink and violet clouds where newborn stars ignite within pillars of interstellar dust",
+        nebulaDescCelestial: "An infinite turquoise ocean of luminous gas, shimmering with cyan and teal starlight reflections",
+        nebulaDescAndromeda: "A trillion suns suspended at the galaxy's edge, amber light dissolving into deep indigo space",
+        nebulaDescSolarAurora: "Golden ribbons of charged particles cascade through magnetic fields, painting the void with warmth",
+        nebulaDescSpiralHalo: "A hundred billion stars spiral in perfect harmony, their violet glow tracing gravitational paths",
+        nebulaDescStarburst: "A brilliant ring of rapid star formation, electric blue and magenta arcs blazing with radiant energy",
 
         // Membership
         plansAndPricing: "Plans & Pricing",

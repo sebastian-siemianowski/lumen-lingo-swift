@@ -625,7 +625,7 @@
       {
         "id": "gs_art1",
         "question": "___ libro (das Buch)",
-        "translation": null,
+        "translation": "Das Buch",
         "options": [
           "el",
           "la",
@@ -638,7 +638,7 @@
       {
         "id": "gs_art2",
         "question": "___ casa (das Haus)",
-        "translation": null,
+        "translation": "Das Haus",
         "options": [
           "la",
           "el",
@@ -651,7 +651,7 @@
       {
         "id": "gs_art3",
         "question": "___ hombre (der Mann)",
-        "translation": null,
+        "translation": "Der Mann",
         "options": [
           "el",
           "la",
@@ -664,7 +664,7 @@
       {
         "id": "gs_art4",
         "question": "___ mujer (die Frau)",
-        "translation": null,
+        "translation": "Die Frau",
         "options": [
           "la",
           "el",
@@ -677,7 +677,7 @@
       {
         "id": "gs_art5",
         "question": "___ libros (die Bücher)",
-        "translation": null,
+        "translation": "Die Bücher",
         "options": [
           "los",
           "el",
@@ -690,7 +690,7 @@
       {
         "id": "gs_art6",
         "question": "___ casas (die Häuser)",
-        "translation": null,
+        "translation": "Die Häuser",
         "options": [
           "las",
           "los",
@@ -703,7 +703,7 @@
       {
         "id": "gs_art7",
         "question": "___ estudiante (der/die Student/in)",
-        "translation": null,
+        "translation": "Der/Die Student/in",
         "options": [
           "el/la",
           "los",
@@ -716,7 +716,7 @@
       {
         "id": "gs_art8",
         "question": "___ agua (das Wasser)",
-        "translation": null,
+        "translation": "Das Wasser",
         "options": [
           "el",
           "la",
@@ -729,7 +729,7 @@
       {
         "id": "gs_art9",
         "question": "___ mano (die Hand)",
-        "translation": null,
+        "translation": "Die Hand",
         "options": [
           "la",
           "el",
@@ -742,7 +742,7 @@
       {
         "id": "gs_art10",
         "question": "___ día (der Tag)",
-        "translation": null,
+        "translation": "Der Tag",
         "options": [
           "el",
           "la",
@@ -755,7 +755,7 @@
       {
         "id": "gs_art11",
         "question": "___ profesor (der Lehrer)",
-        "translation": null,
+        "translation": "Der Lehrer",
         "options": [
           "el",
           "la",
@@ -768,7 +768,7 @@
       {
         "id": "gs_art12",
         "question": "___ noche (die Nacht)",
-        "translation": null,
+        "translation": "Die Nacht",
         "options": [
           "la",
           "un",
@@ -781,7 +781,7 @@
       {
         "id": "gs_art13",
         "question": "___ ciudad (die Stadt)",
-        "translation": null,
+        "translation": "Die Stadt",
         "options": [
           "la",
           "el",
@@ -794,7 +794,7 @@
       {
         "id": "gs_art14",
         "question": "___ universidades (die Universitäten)",
-        "translation": null,
+        "translation": "Die Universitäten",
         "options": [
           "las",
           "los",
@@ -807,7 +807,7 @@
       {
         "id": "gs_art15",
         "question": "___ problemas (die Probleme)",
-        "translation": null,
+        "translation": "Die Probleme",
         "options": [
           "los",
           "las",
@@ -1713,7 +1713,7 @@
         "explanation": "Für direktes Objekt (sie/ihn kennen) nutzen wir 'lo' (maskulin) oder 'la' (feminin): 'lo conozco' / 'la conozco'. Bei Personen als direktes Objekt bleibt es 'lo/la', nicht 'le'. Diese langjährige Bekanntschaft zeigt tiefe Verbindung über Jahre gewachsen."
       },
       {
-        "id": "subj_pres_6",
+        "id": "pro_per_6",
         "question": "¿_____ puedes ayudar con mi tarea de matemáticas?",
         "translation": "Kannst du mir mit meinen Mathe-Hausaufgaben helfen?",
         "options": [
@@ -5250,7 +5250,7 @@
         "explanation": "Augmentativ '-azo/-aza' macht Dinge RIESIG: 'perrazo' (Riesenhund). Für sehr große Exemplare. Dieser fünfzig Kilo schwere Hund ist außergewöhnlich groß, was durch Augmentativ betont wird."
       },
       {
-        "id": "gustar_like_10",
+        "id": "dim_aum_10",
         "question": "La comida está ric_____ - eres excelente cocinero de verdad.",
         "translation": "Das Essen ist extrem lecker - du bist wirklich ein ausgezeichneter Koch.",
         "options": [
@@ -7771,7 +7771,8 @@
           "cierra",
           "cerrará"
         ],
-        "explanation": "Schließung war VOR Versuch einzutreten: 'había cerrado' (hatte geschlossen). Diese enttäuschende Situation erfordert Plan B für Abendessen."
+        "explanation": "Schließung war VOR Versuch einzutreten: 'había cerrado' (hatte geschlossen). Diese enttäuschende Situation erfordert Plan B für Abendessen.",
+        "correct": "había cerrado"
       },
       {
         "id": "plusc_15",
@@ -8490,7 +8491,7 @@
         "explanation": "Adverb mit 'casi': 'casi puntualmente' (fast pünktlich). Diese minimale Verspätung ist akzeptabel in den meisten Situationen."
       },
       {
-        "id": "perif_7",
+        "id": "adv_mod_7",
         "question": "Respondió _____ a todas las preguntas difíciles del examen oral.",
         "translation": "Er antwortete korrekt auf alle schweren Fragen der mündlichen Prüfung.",
         "options": [
@@ -9964,7 +9965,7 @@
         "explanation": "Gleichzeitigkeit in Vergangenheit: 'dice' → 'decía' (sagte). Diese Behauptung von Wahrhaftigkeit kann angezweifelt werden."
       },
       {
-        "id": "indef_10",
+        "id": "est_ind_10",
         "question": "¿Tienes _____ pregunta sobre la lección de hoy presentada aquí?",
         "translation": "Hast du irgendeine Frage über die heute hier präsentierte Lektion?",
         "options": [
@@ -12577,7 +12578,7 @@
         "explanation": "Negativer Befehl mit 'hasta que': 'no salgas hasta que' (geh nicht bis). Mit Subjuntivo nach 'hasta que' bei Zukunft. Dieser praktische Wetterrat vermeidet Durchnässung."
       },
       {
-        "id": "recip_adv_6",
+        "id": "exp_tem_ava_6",
         "question": "_____ veo esa película antigua, me emociono y lloro mucho.",
         "translation": "Jedes Mal wenn ich diesen alten Film sehe, werde ich emotional und weine viel.",
         "options": [
@@ -15255,7 +15256,7 @@
         "explanation": "Redewendung 'tener suerte' (Glück haben). Dieses fehlende Glück bei schwerer Prüfung mit nur harten Fragen ist frustrierende Situation für Schüler."
       },
       {
-        "id": "refl_no_7",
+        "id": "exp_ten_7",
         "question": "Hace mucho calor - tengo mucha _____ ahora mismo en este momento.",
         "translation": "Es ist sehr heiß - ich habe jetzt gerade in diesem Moment großen Durst.",
         "options": [
@@ -18587,7 +18588,7 @@
         "explanation": "Für ZIEL nutzen wir 'para': 'para poder comprar' (um kaufen zu können). Dieses Hauskauf-Ziel motiviert tägliche harte Arbeit."
       },
       {
-        "id": "lugar_11",
+        "id": "inf_com_11",
         "question": "_____ oír la noticia terrible, se quedó en shock sin palabras.",
         "translation": "Beim Hören der schrecklichen Nachricht blieb er sprachlos im Schock.",
         "options": [
@@ -20419,7 +20420,7 @@
         "explanation": "Für AUFGELEGT ZU: 'no estar para hacer' (nicht aufgelegt zu machen). Diese Ablehnung basiert auf Überlastung."
       },
       {
-        "id": "comun_10",
+        "id": "est_exp_10",
         "question": "Estoy _____ buen humor hoy - todo me sale bien perfecto.",
         "translation": "Ich bin heute gut gelaunt - alles gelingt mir perfekt gut.",
         "options": [
@@ -20507,7 +20508,7 @@
     "level": "advanced",
     "items": [
       {
-        "id": "parec_1",
+        "id": "par_con_1",
         "question": "Me parece que esta película _____ muy interesante y profunda educativa.",
         "translation": "Mir scheint, dass dieser Film sehr interessant und tief lehrreich ist.",
         "options": [
@@ -20520,7 +20521,7 @@
         "explanation": "Nach 'me parece que' (BEJAHEND): Indikativ 'es' (ist). Diese positive Filmeinschätzung basiert auf Inhaltsbeschreibung."
       },
       {
-        "id": "parec_2",
+        "id": "par_con_2",
         "question": "No me parece que _____ una buena idea salir tan tarde noche.",
         "translation": "Mir scheint es nicht, dass es eine gute Idee ist, so spät nachts rauszugehen.",
         "options": [
@@ -20533,7 +20534,7 @@
         "explanation": "Nach 'no me parece que' (NEGIERT): Subjuntivo 'sea' (sei). Dieser Rat gegen spätes Ausgehen basiert auf Sicherheitsbedenken."
       },
       {
-        "id": "parec_3",
+        "id": "par_con_3",
         "question": "Parece que _____ a llover pronto - las nubes están muy oscuras.",
         "translation": "Es scheint, dass es bald regnen wird - die Wolken sind sehr dunkel.",
         "options": [
@@ -20546,7 +20547,7 @@
         "explanation": "Nach 'parece que' (ES SCHEINT): meist Indikativ 'va a llover'. Diese Wettervorhersage ist Beobachtung von Wolken."
       },
       {
-        "id": "parec_4",
+        "id": "par_con_4",
         "question": "Te ves cansado - pareces _____ trabajado mucho toda la semana entera.",
         "translation": "Du siehst müde aus - du scheinst die ganze Woche sehr viel gearbeitet zu haben.",
         "options": [
@@ -20559,7 +20560,7 @@
         "explanation": "Nach 'parecer' + INFINITIV (gleiches Subjekt): 'pareces haber trabajado' (scheinst gearbeitet zu haben). Dieser sichtbare Erschöpfungszustand deutet auf Überarbeitung."
       },
       {
-        "id": "parec_5",
+        "id": "par_con_5",
         "question": "¿Qué te parece si _____ al cine esta noche a ver algo?",
         "translation": "Was hältst du davon, wenn wir heute Abend ins Kino gehen, um etwas zu sehen?",
         "options": [
@@ -20572,7 +20573,7 @@
         "explanation": "Nach '¿qué te parece si...?' (was hältst du davon wenn): meist Indikativ 'vamos' (wir gehen). Dieser Kinovorschlag ist lockere Einladung."
       },
       {
-        "id": "parec_6",
+        "id": "par_con_6",
         "question": "Parece mentira que ya _____ terminado el curso académico escolar.",
         "translation": "Es scheint unglaublich, dass das Schuljahr schon beendet ist.",
         "options": [
@@ -20585,7 +20586,7 @@
         "explanation": "Nach 'parecer mentira que': Subjuntivo 'hayamos terminado' (beendet haben). Diese Überraschung über Schuljahresende zeigt schnell verflogene Zeit."
       },
       {
-        "id": "parec_7",
+        "id": "par_con_7",
         "question": "A mí me parece bien que _____ esa decisión importante - te apoyo.",
         "translation": "Mir scheint es gut, dass du jene wichtige Entscheidung triffst - ich unterstütze dich.",
         "options": [
@@ -20598,7 +20599,7 @@
         "explanation": "Nach 'parecer bien que': Subjuntivo 'tomes' (triffst). Diese Unterstützung deiner Entscheidung ist Vertrauensbeweis."
       },
       {
-        "id": "parec_8",
+        "id": "par_con_8",
         "question": "Ella parece _____ enferma - deberías llevarla al médico pronto.",
         "translation": "Sie scheint krank zu sein - du solltest sie bald zum Arzt bringen.",
         "options": [
@@ -20611,7 +20612,7 @@
         "explanation": "Mit INFINITIV (gleiches Subjekt): 'parece estar enferma' (scheint krank zu sein). Diese Krankheitszeichen erfordern ärztliche Untersuchung."
       },
       {
-        "id": "parec_9",
+        "id": "par_con_9",
         "question": "Me parece increíble que no _____ nada de esto antes hoy.",
         "translation": "Es scheint mir unglaublich, dass du heute vorher nichts davon wusstest.",
         "options": [
@@ -20624,7 +20625,7 @@
         "explanation": "Nach 'parecer increíble que' (Vergangenheit): Imperfecto Subjuntivo. Oder 'sepas' für Gegenwart. Diese Unwissenheit ist überraschend."
       },
       {
-        "id": "parec_10",
+        "id": "par_con_10",
         "question": "Parece como si _____ visto un fantasma - estás muy pálido blanco.",
         "translation": "Es scheint, als ob du einen Geist gesehen hättest - du bist sehr blass weiß.",
         "options": [
@@ -20637,7 +20638,7 @@
         "explanation": "Nach 'parecer como si': Subjuntivo 'hubieras visto' (hättest gesehen). Dieser Schockzustand ist an blassem Gesicht sichtbar."
       },
       {
-        "id": "parec_11",
+        "id": "par_con_11",
         "question": "¿Qué te parece este restaurante nuevo del barrio para cenar?",
         "translation": "Was hältst du von diesem neuen Restaurant im Viertel zum Abendessen?",
         "options": [
@@ -20650,7 +20651,7 @@
         "explanation": "Frage nach MEINUNG: '¿qué te parece?' (was hältst du von?). Diese Restaurant-Vorschlagsfrage testet Interesse an neuem Lokal."
       },
       {
-        "id": "parec_12",
+        "id": "par_con_12",
         "question": "No me parece normal que siempre _____ tarde a todas partes.",
         "translation": "Es scheint mir nicht normal, dass er immer überall zu spät kommt.",
         "options": [
@@ -20663,7 +20664,7 @@
         "explanation": "Nach 'no parecer normal que': Subjuntivo 'llegue' (komme). Diese chronische Unpünktlichkeit wird als abnormal bewertet."
       },
       {
-        "id": "parec_13",
+        "id": "par_con_13",
         "question": "Pareces _____ muy feliz últimamente - ¿te pasa algo bueno especial?",
         "translation": "Du scheinst in letzter Zeit sehr glücklich zu sein - passiert dir etwas Gutes Besonderes?",
         "options": [
@@ -20676,7 +20677,7 @@
         "explanation": "Mit Infinitiv: 'pareces estar feliz' (scheinst glücklich zu sein). Diese sichtbare Freude weckt Neugier über Grund."
       },
       {
-        "id": "parec_14",
+        "id": "par_con_14",
         "question": "Me parece mentira que _____ tan joven - pareces mucho mayor adulto.",
         "translation": "Es scheint mir unglaublich, dass du so jung bist - du scheinst viel erwachsener älter.",
         "options": [
@@ -20689,7 +20690,7 @@
         "explanation": "Nach 'parecer mentira que': Subjuntivo 'seas' (du seist). Diese Überraschung über Alter basiert auf reifem Aussehen."
       },
       {
-        "id": "parec_15",
+        "id": "par_con_15",
         "question": "Parece ser que _____ problemas técnicos con el servidor principal.",
         "translation": "Es scheint, dass es technische Probleme mit dem Hauptserver gibt.",
         "options": [

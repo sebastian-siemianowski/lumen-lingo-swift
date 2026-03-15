@@ -1,0 +1,7002 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Fruits",
+    "description": "Common fruits in German",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Apfel",
+        "hint": "Apple"
+      },
+      {
+        "word": "Orange",
+        "hint": "Orange (citrus fruit)"
+      },
+      {
+        "word": "Banane",
+        "hint": "Banana"
+      },
+      {
+        "word": "Erdbeere",
+        "hint": "Strawberry"
+      },
+      {
+        "word": "Traube",
+        "hint": "Grape"
+      },
+      {
+        "word": "Zitrone",
+        "hint": "Lemon"
+      },
+      {
+        "word": "Wassermelone",
+        "hint": "Watermelon"
+      },
+      {
+        "word": "Pfirsich",
+        "hint": "Peach"
+      },
+      {
+        "word": "Kirsche",
+        "hint": "Cherry"
+      },
+      {
+        "word": "Ananas",
+        "hint": "Pineapple"
+      },
+      {
+        "word": "Birne",
+        "hint": "Pear"
+      },
+      {
+        "word": "Mango",
+        "hint": "Mango"
+      },
+      {
+        "word": "Himbeere",
+        "hint": "Raspberry"
+      },
+      {
+        "word": "Pflaume",
+        "hint": "Plum"
+      },
+      {
+        "word": "Heidelbeere",
+        "hint": "Blueberry"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Vegetables",
+    "description": "Common vegetables in German",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Tomate",
+        "hint": "Tomato"
+      },
+      {
+        "word": "Zwiebel",
+        "hint": "Onion"
+      },
+      {
+        "word": "Salat",
+        "hint": "Lettuce / Salad"
+      },
+      {
+        "word": "Karotte",
+        "hint": "Carrot"
+      },
+      {
+        "word": "Kartoffel",
+        "hint": "Potato"
+      },
+      {
+        "word": "Knoblauch",
+        "hint": "Garlic"
+      },
+      {
+        "word": "Gurke",
+        "hint": "Cucumber"
+      },
+      {
+        "word": "Paprika",
+        "hint": "Bell pepper"
+      },
+      {
+        "word": "Spinat",
+        "hint": "Spinach"
+      },
+      {
+        "word": "Brokkoli",
+        "hint": "Broccoli"
+      },
+      {
+        "word": "Mais",
+        "hint": "Corn"
+      },
+      {
+        "word": "Erbse",
+        "hint": "Pea"
+      },
+      {
+        "word": "Pilz",
+        "hint": "Mushroom"
+      },
+      {
+        "word": "Aubergine",
+        "hint": "Eggplant"
+      },
+      {
+        "word": "Bohne",
+        "hint": "Bean"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Colors",
+    "description": "Basic colors in German",
+    "iconName": "paintpalette",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Rot",
+        "hint": "Red"
+      },
+      {
+        "word": "Blau",
+        "hint": "Blue"
+      },
+      {
+        "word": "Gelb",
+        "hint": "Yellow"
+      },
+      {
+        "word": "Schwarz",
+        "hint": "Black"
+      },
+      {
+        "word": "Braun",
+        "hint": "Brown"
+      },
+      {
+        "word": "Violett",
+        "hint": "Violet"
+      },
+      {
+        "word": "Lila",
+        "hint": "Purple"
+      },
+      {
+        "word": "Rosa",
+        "hint": "Pink"
+      },
+      {
+        "word": "Grau",
+        "hint": "Gray"
+      },
+      {
+        "word": "Gold",
+        "hint": "Gold"
+      },
+      {
+        "word": "Silber",
+        "hint": "Silver"
+      },
+      {
+        "word": "Beige",
+        "hint": "Beige"
+      },
+      {
+        "word": "Türkis",
+        "hint": "Turquoise"
+      },
+      {
+        "word": "Dunkelblau",
+        "hint": "Dark blue"
+      },
+      {
+        "word": "Hellgrün",
+        "hint": "Light green"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Family",
+    "description": "Family members in German",
+    "iconName": "person.3",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Mutter",
+        "hint": "Mother"
+      },
+      {
+        "word": "Vater",
+        "hint": "Father"
+      },
+      {
+        "word": "Schwester",
+        "hint": "Sister"
+      },
+      {
+        "word": "Bruder",
+        "hint": "Brother"
+      },
+      {
+        "word": "Großmutter",
+        "hint": "Grandmother"
+      },
+      {
+        "word": "Großvater",
+        "hint": "Grandfather"
+      },
+      {
+        "word": "Sohn",
+        "hint": "Son"
+      },
+      {
+        "word": "Tochter",
+        "hint": "Daughter"
+      },
+      {
+        "word": "Cousin",
+        "hint": "Cousin (male)"
+      },
+      {
+        "word": "Neffe",
+        "hint": "Nephew"
+      },
+      {
+        "word": "Nichte",
+        "hint": "Niece"
+      },
+      {
+        "word": "Ehemann",
+        "hint": "Husband"
+      },
+      {
+        "word": "Ehefrau",
+        "hint": "Wife"
+      },
+      {
+        "word": "Schwager",
+        "hint": "Brother-in-law"
+      },
+      {
+        "word": "Enkel",
+        "hint": "Grandchild"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Animals",
+    "description": "Common animals in German",
+    "iconName": "hare",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Hund",
+        "hint": "Dog"
+      },
+      {
+        "word": "Katze",
+        "hint": "Cat"
+      },
+      {
+        "word": "Pferd",
+        "hint": "Horse"
+      },
+      {
+        "word": "Vogel",
+        "hint": "Bird"
+      },
+      {
+        "word": "Fisch",
+        "hint": "Fish"
+      },
+      {
+        "word": "Kaninchen",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "Schildkröte",
+        "hint": "Turtle"
+      },
+      {
+        "word": "Schmetterling",
+        "hint": "Butterfly"
+      },
+      {
+        "word": "Löwe",
+        "hint": "Lion"
+      },
+      {
+        "word": "Elefant",
+        "hint": "Elephant"
+      },
+      {
+        "word": "Affe",
+        "hint": "Monkey"
+      },
+      {
+        "word": "Bär",
+        "hint": "Bear"
+      },
+      {
+        "word": "Maus",
+        "hint": "Mouse"
+      },
+      {
+        "word": "Schwein",
+        "hint": "Pig"
+      },
+      {
+        "word": "Schlange",
+        "hint": "Snake"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Body Parts",
+    "description": "Parts of the human body in German",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Kopf",
+        "hint": "Head"
+      },
+      {
+        "word": "Arm",
+        "hint": "Arm"
+      },
+      {
+        "word": "Bein",
+        "hint": "Leg"
+      },
+      {
+        "word": "Hand",
+        "hint": "Hand"
+      },
+      {
+        "word": "Auge",
+        "hint": "Eye"
+      },
+      {
+        "word": "Nase",
+        "hint": "Nose"
+      },
+      {
+        "word": "Mund",
+        "hint": "Mouth"
+      },
+      {
+        "word": "Finger",
+        "hint": "Finger"
+      },
+      {
+        "word": "Herz",
+        "hint": "Heart"
+      },
+      {
+        "word": "Rücken",
+        "hint": "Back"
+      },
+      {
+        "word": "Knie",
+        "hint": "Knee"
+      },
+      {
+        "word": "Schulter",
+        "hint": "Shoulder"
+      },
+      {
+        "word": "Hals",
+        "hint": "Neck / Throat"
+      },
+      {
+        "word": "Bauch",
+        "hint": "Belly / Stomach"
+      },
+      {
+        "word": "Zahn",
+        "hint": "Tooth"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Numbers",
+    "description": "Number words in German",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Eins",
+        "hint": "One"
+      },
+      {
+        "word": "Zwei",
+        "hint": "Two"
+      },
+      {
+        "word": "Drei",
+        "hint": "Three"
+      },
+      {
+        "word": "Vier",
+        "hint": "Four"
+      },
+      {
+        "word": "Fünf",
+        "hint": "Five"
+      },
+      {
+        "word": "Sechs",
+        "hint": "Six"
+      },
+      {
+        "word": "Sieben",
+        "hint": "Seven"
+      },
+      {
+        "word": "Acht",
+        "hint": "Eight"
+      },
+      {
+        "word": "Neun",
+        "hint": "Nine"
+      },
+      {
+        "word": "Zehn",
+        "hint": "Ten"
+      },
+      {
+        "word": "Zwanzig",
+        "hint": "Twenty"
+      },
+      {
+        "word": "Hundert",
+        "hint": "Hundred"
+      },
+      {
+        "word": "Tausend",
+        "hint": "Thousand"
+      },
+      {
+        "word": "Null",
+        "hint": "Zero"
+      },
+      {
+        "word": "Zwölf",
+        "hint": "Twelve"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Greetings",
+    "description": "Common greetings and polite phrases in German",
+    "iconName": "hand.wave",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Hallo",
+        "hint": "Hello"
+      },
+      {
+        "word": "Danke",
+        "hint": "Thank you"
+      },
+      {
+        "word": "Bitte",
+        "hint": "Please / You're welcome"
+      },
+      {
+        "word": "Willkommen",
+        "hint": "Welcome"
+      },
+      {
+        "word": "Entschuldigung",
+        "hint": "Excuse me / Sorry"
+      },
+      {
+        "word": "Morgen",
+        "hint": "Morning (as in 'Guten Morgen')"
+      },
+      {
+        "word": "Abend",
+        "hint": "Evening (as in 'Guten Abend')"
+      },
+      {
+        "word": "Nacht",
+        "hint": "Night (as in 'Gute Nacht')"
+      },
+      {
+        "word": "Wiedersehen",
+        "hint": "Goodbye (formal, 'Auf Wiedersehen')"
+      },
+      {
+        "word": "Tschüss",
+        "hint": "Bye (informal)"
+      },
+      {
+        "word": "Freut",
+        "hint": "Pleased (as in 'Freut mich')"
+      },
+      {
+        "word": "Grüße",
+        "hint": "Greetings / Regards"
+      },
+      {
+        "word": "Prost",
+        "hint": "Cheers (toast)"
+      },
+      {
+        "word": "Glückwunsch",
+        "hint": "Congratulations"
+      },
+      {
+        "word": "Herzlich",
+        "hint": "Cordial / Warm (greeting)"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Food",
+    "description": "Common food items in German",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Brot",
+        "hint": "Bread"
+      },
+      {
+        "word": "Käse",
+        "hint": "Cheese"
+      },
+      {
+        "word": "Butter",
+        "hint": "Butter"
+      },
+      {
+        "word": "Reis",
+        "hint": "Rice"
+      },
+      {
+        "word": "Nudeln",
+        "hint": "Noodles / Pasta"
+      },
+      {
+        "word": "Fleisch",
+        "hint": "Meat"
+      },
+      {
+        "word": "Hähnchen",
+        "hint": "Chicken"
+      },
+      {
+        "word": "Wurst",
+        "hint": "Sausage"
+      },
+      {
+        "word": "Suppe",
+        "hint": "Soup"
+      },
+      {
+        "word": "Salz",
+        "hint": "Salt"
+      },
+      {
+        "word": "Pfeffer",
+        "hint": "Pepper (spice)"
+      },
+      {
+        "word": "Zucker",
+        "hint": "Sugar"
+      },
+      {
+        "word": "Honig",
+        "hint": "Honey"
+      },
+      {
+        "word": "Marmelade",
+        "hint": "Jam / Marmalade"
+      },
+      {
+        "word": "Brötchen",
+        "hint": "Bread roll"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Clothing",
+    "description": "Clothing and accessories in German",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Hemd",
+        "hint": "Shirt"
+      },
+      {
+        "word": "Hose",
+        "hint": "Pants / Trousers"
+      },
+      {
+        "word": "Jacke",
+        "hint": "Jacket"
+      },
+      {
+        "word": "Kleid",
+        "hint": "Dress"
+      },
+      {
+        "word": "Schuh",
+        "hint": "Shoe"
+      },
+      {
+        "word": "Socke",
+        "hint": "Sock"
+      },
+      {
+        "word": "Mantel",
+        "hint": "Coat"
+      },
+      {
+        "word": "Schal",
+        "hint": "Scarf"
+      },
+      {
+        "word": "Mütze",
+        "hint": "Cap / Beanie"
+      },
+      {
+        "word": "Handschuh",
+        "hint": "Glove"
+      },
+      {
+        "word": "Gürtel",
+        "hint": "Belt"
+      },
+      {
+        "word": "Stiefel",
+        "hint": "Boot"
+      },
+      {
+        "word": "Pullover",
+        "hint": "Sweater / Pullover"
+      },
+      {
+        "word": "Rock",
+        "hint": "Skirt"
+      },
+      {
+        "word": "Bluse",
+        "hint": "Blouse"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "House & Rooms",
+    "description": "Rooms and parts of a house in German",
+    "iconName": "house",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Küche",
+        "hint": "Kitchen"
+      },
+      {
+        "word": "Schlafzimmer",
+        "hint": "Bedroom"
+      },
+      {
+        "word": "Badezimmer",
+        "hint": "Bathroom"
+      },
+      {
+        "word": "Wohnzimmer",
+        "hint": "Living room"
+      },
+      {
+        "word": "Dach",
+        "hint": "Roof"
+      },
+      {
+        "word": "Keller",
+        "hint": "Basement / Cellar"
+      },
+      {
+        "word": "Flur",
+        "hint": "Hallway / Corridor"
+      },
+      {
+        "word": "Garten",
+        "hint": "Garden"
+      },
+      {
+        "word": "Balkon",
+        "hint": "Balcony"
+      },
+      {
+        "word": "Treppe",
+        "hint": "Stairs"
+      },
+      {
+        "word": "Fenster",
+        "hint": "Window"
+      },
+      {
+        "word": "Garage",
+        "hint": "Garage"
+      },
+      {
+        "word": "Dachboden",
+        "hint": "Attic"
+      },
+      {
+        "word": "Terrasse",
+        "hint": "Terrace / Patio"
+      },
+      {
+        "word": "Eingang",
+        "hint": "Entrance"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Weather",
+    "description": "Weather and climate words in German",
+    "iconName": "cloud.sun",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Sonne",
+        "hint": "Sun"
+      },
+      {
+        "word": "Regen",
+        "hint": "Rain"
+      },
+      {
+        "word": "Schnee",
+        "hint": "Snow"
+      },
+      {
+        "word": "Wind",
+        "hint": "Wind"
+      },
+      {
+        "word": "Wolke",
+        "hint": "Cloud"
+      },
+      {
+        "word": "Gewitter",
+        "hint": "Thunderstorm"
+      },
+      {
+        "word": "Nebel",
+        "hint": "Fog"
+      },
+      {
+        "word": "Sturm",
+        "hint": "Storm"
+      },
+      {
+        "word": "Hagel",
+        "hint": "Hail"
+      },
+      {
+        "word": "Blitz",
+        "hint": "Lightning"
+      },
+      {
+        "word": "Donner",
+        "hint": "Thunder"
+      },
+      {
+        "word": "Frost",
+        "hint": "Frost"
+      },
+      {
+        "word": "Hitze",
+        "hint": "Heat"
+      },
+      {
+        "word": "Regenbogen",
+        "hint": "Rainbow"
+      },
+      {
+        "word": "Temperatur",
+        "hint": "Temperature"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Professions",
+    "description": "Jobs and professions in German",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Lehrer",
+        "hint": "Teacher (male)"
+      },
+      {
+        "word": "Arzt",
+        "hint": "Doctor (male)"
+      },
+      {
+        "word": "Ingenieur",
+        "hint": "Engineer"
+      },
+      {
+        "word": "Polizist",
+        "hint": "Police officer (male)"
+      },
+      {
+        "word": "Tierarzt",
+        "hint": "Veterinarian"
+      },
+      {
+        "word": "Anwalt",
+        "hint": "Lawyer (male)"
+      },
+      {
+        "word": "Koch",
+        "hint": "Cook / Chef"
+      },
+      {
+        "word": "Feuerwehrmann",
+        "hint": "Firefighter (male)"
+      },
+      {
+        "word": "Bäcker",
+        "hint": "Baker"
+      },
+      {
+        "word": "Kellner",
+        "hint": "Waiter"
+      },
+      {
+        "word": "Journalist",
+        "hint": "Journalist"
+      },
+      {
+        "word": "Mechaniker",
+        "hint": "Mechanic"
+      },
+      {
+        "word": "Architekt",
+        "hint": "Architect"
+      },
+      {
+        "word": "Pilot",
+        "hint": "Pilot"
+      },
+      {
+        "word": "Apotheker",
+        "hint": "Pharmacist"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transport",
+    "description": "Vehicles and transportation in German",
+    "iconName": "car",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Auto",
+        "hint": "Car"
+      },
+      {
+        "word": "Fahrrad",
+        "hint": "Bicycle"
+      },
+      {
+        "word": "Zug",
+        "hint": "Train"
+      },
+      {
+        "word": "Flugzeug",
+        "hint": "Airplane"
+      },
+      {
+        "word": "Schiff",
+        "hint": "Ship"
+      },
+      {
+        "word": "Straßenbahn",
+        "hint": "Tram / Streetcar"
+      },
+      {
+        "word": "Motorrad",
+        "hint": "Motorcycle"
+      },
+      {
+        "word": "Hubschrauber",
+        "hint": "Helicopter"
+      },
+      {
+        "word": "Lastwagen",
+        "hint": "Truck"
+      },
+      {
+        "word": "Taxi",
+        "hint": "Taxi"
+      },
+      {
+        "word": "Fähre",
+        "hint": "Ferry"
+      },
+      {
+        "word": "Roller",
+        "hint": "Scooter"
+      },
+      {
+        "word": "Krankenwagen",
+        "hint": "Ambulance"
+      },
+      {
+        "word": "Rakete",
+        "hint": "Rocket"
+      },
+      {
+        "word": "Segelboot",
+        "hint": "Sailboat"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "School",
+    "description": "School and education vocabulary in German",
+    "iconName": "book",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Schule",
+        "hint": "School"
+      },
+      {
+        "word": "Schüler",
+        "hint": "Student / Pupil"
+      },
+      {
+        "word": "Tafel",
+        "hint": "Blackboard"
+      },
+      {
+        "word": "Kreide",
+        "hint": "Chalk"
+      },
+      {
+        "word": "Bleistift",
+        "hint": "Pencil"
+      },
+      {
+        "word": "Kugelschreiber",
+        "hint": "Ballpoint pen"
+      },
+      {
+        "word": "Heft",
+        "hint": "Notebook / Exercise book"
+      },
+      {
+        "word": "Lineal",
+        "hint": "Ruler"
+      },
+      {
+        "word": "Radiergummi",
+        "hint": "Eraser"
+      },
+      {
+        "word": "Rucksack",
+        "hint": "Backpack"
+      },
+      {
+        "word": "Hausaufgabe",
+        "hint": "Homework"
+      },
+      {
+        "word": "Prüfung",
+        "hint": "Exam / Test"
+      },
+      {
+        "word": "Stunde",
+        "hint": "Lesson / Hour"
+      },
+      {
+        "word": "Zeugnis",
+        "hint": "Report card"
+      },
+      {
+        "word": "Klassenzimmer",
+        "hint": "Classroom"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Kitchen Utensils",
+    "description": "Kitchen items and utensils in German",
+    "iconName": "cup.and.saucer",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Messer",
+        "hint": "Knife"
+      },
+      {
+        "word": "Gabel",
+        "hint": "Fork"
+      },
+      {
+        "word": "Löffel",
+        "hint": "Spoon"
+      },
+      {
+        "word": "Teller",
+        "hint": "Plate"
+      },
+      {
+        "word": "Tasse",
+        "hint": "Cup"
+      },
+      {
+        "word": "Glas",
+        "hint": "Glass"
+      },
+      {
+        "word": "Pfanne",
+        "hint": "Frying pan"
+      },
+      {
+        "word": "Topf",
+        "hint": "Pot"
+      },
+      {
+        "word": "Schneidebrett",
+        "hint": "Cutting board"
+      },
+      {
+        "word": "Schüssel",
+        "hint": "Bowl"
+      },
+      {
+        "word": "Kanne",
+        "hint": "Jug / Pitcher"
+      },
+      {
+        "word": "Sieb",
+        "hint": "Sieve / Strainer"
+      },
+      {
+        "word": "Reibe",
+        "hint": "Grater"
+      },
+      {
+        "word": "Backblech",
+        "hint": "Baking tray"
+      },
+      {
+        "word": "Korkenzieher",
+        "hint": "Corkscrew"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Sports",
+    "description": "Sports and athletic activities in German",
+    "iconName": "sportscourt",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Fußball",
+        "hint": "Football / Soccer"
+      },
+      {
+        "word": "Schwimmen",
+        "hint": "Swimming"
+      },
+      {
+        "word": "Tennis",
+        "hint": "Tennis"
+      },
+      {
+        "word": "Basketball",
+        "hint": "Basketball"
+      },
+      {
+        "word": "Laufen",
+        "hint": "Running"
+      },
+      {
+        "word": "Radfahren",
+        "hint": "Cycling"
+      },
+      {
+        "word": "Skifahren",
+        "hint": "Skiing"
+      },
+      {
+        "word": "Boxen",
+        "hint": "Boxing"
+      },
+      {
+        "word": "Turnen",
+        "hint": "Gymnastics"
+      },
+      {
+        "word": "Reiten",
+        "hint": "Horse riding"
+      },
+      {
+        "word": "Segeln",
+        "hint": "Sailing"
+      },
+      {
+        "word": "Klettern",
+        "hint": "Climbing"
+      },
+      {
+        "word": "Eishockey",
+        "hint": "Ice hockey"
+      },
+      {
+        "word": "Handball",
+        "hint": "Handball"
+      },
+      {
+        "word": "Tischtennis",
+        "hint": "Table tennis"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Musical Instruments",
+    "description": "Musical instruments in German",
+    "iconName": "music.note",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Klavier",
+        "hint": "Piano"
+      },
+      {
+        "word": "Gitarre",
+        "hint": "Guitar"
+      },
+      {
+        "word": "Geige",
+        "hint": "Violin"
+      },
+      {
+        "word": "Flöte",
+        "hint": "Flute"
+      },
+      {
+        "word": "Trompete",
+        "hint": "Trumpet"
+      },
+      {
+        "word": "Schlagzeug",
+        "hint": "Drums"
+      },
+      {
+        "word": "Harfe",
+        "hint": "Harp"
+      },
+      {
+        "word": "Klarinette",
+        "hint": "Clarinet"
+      },
+      {
+        "word": "Orgel",
+        "hint": "Organ"
+      },
+      {
+        "word": "Cello",
+        "hint": "Cello"
+      },
+      {
+        "word": "Saxophon",
+        "hint": "Saxophone"
+      },
+      {
+        "word": "Akkordeon",
+        "hint": "Accordion"
+      },
+      {
+        "word": "Posaune",
+        "hint": "Trombone"
+      },
+      {
+        "word": "Oboe",
+        "hint": "Oboe"
+      },
+      {
+        "word": "Mundharmonika",
+        "hint": "Harmonica"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Nature",
+    "description": "Nature and landscape vocabulary in German",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Berg",
+        "hint": "Mountain"
+      },
+      {
+        "word": "Fluss",
+        "hint": "River"
+      },
+      {
+        "word": "Wald",
+        "hint": "Forest"
+      },
+      {
+        "word": "See",
+        "hint": "Lake"
+      },
+      {
+        "word": "Meer",
+        "hint": "Sea / Ocean"
+      },
+      {
+        "word": "Blume",
+        "hint": "Flower"
+      },
+      {
+        "word": "Baum",
+        "hint": "Tree"
+      },
+      {
+        "word": "Strand",
+        "hint": "Beach"
+      },
+      {
+        "word": "Wiese",
+        "hint": "Meadow"
+      },
+      {
+        "word": "Wasserfall",
+        "hint": "Waterfall"
+      },
+      {
+        "word": "Höhle",
+        "hint": "Cave"
+      },
+      {
+        "word": "Insel",
+        "hint": "Island"
+      },
+      {
+        "word": "Wüste",
+        "hint": "Desert"
+      },
+      {
+        "word": "Gletscher",
+        "hint": "Glacier"
+      },
+      {
+        "word": "Vulkan",
+        "hint": "Volcano"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Emotions",
+    "description": "Feelings and emotions in German",
+    "iconName": "heart",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Freude",
+        "hint": "Joy / Happiness"
+      },
+      {
+        "word": "Trauer",
+        "hint": "Sadness / Grief"
+      },
+      {
+        "word": "Angst",
+        "hint": "Fear / Anxiety"
+      },
+      {
+        "word": "Liebe",
+        "hint": "Love"
+      },
+      {
+        "word": "Wut",
+        "hint": "Anger / Rage"
+      },
+      {
+        "word": "Hoffnung",
+        "hint": "Hope"
+      },
+      {
+        "word": "Stolz",
+        "hint": "Pride"
+      },
+      {
+        "word": "Scham",
+        "hint": "Shame"
+      },
+      {
+        "word": "Eifersucht",
+        "hint": "Jealousy"
+      },
+      {
+        "word": "Überraschung",
+        "hint": "Surprise"
+      },
+      {
+        "word": "Langeweile",
+        "hint": "Boredom"
+      },
+      {
+        "word": "Neugier",
+        "hint": "Curiosity"
+      },
+      {
+        "word": "Dankbarkeit",
+        "hint": "Gratitude"
+      },
+      {
+        "word": "Mitleid",
+        "hint": "Compassion / Pity"
+      },
+      {
+        "word": "Sehnsucht",
+        "hint": "Longing / Yearning"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technology",
+    "description": "Technology and digital vocabulary in German",
+    "iconName": "desktopcomputer",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Computer",
+        "hint": "Computer"
+      },
+      {
+        "word": "Bildschirm",
+        "hint": "Screen / Monitor"
+      },
+      {
+        "word": "Tastatur",
+        "hint": "Keyboard"
+      },
+      {
+        "word": "Drucker",
+        "hint": "Printer"
+      },
+      {
+        "word": "Tablet",
+        "hint": "Tablet (device)"
+      },
+      {
+        "word": "Festplatte",
+        "hint": "Hard drive"
+      },
+      {
+        "word": "Lautsprecher",
+        "hint": "Speaker / Loudspeaker"
+      },
+      {
+        "word": "Kopfhörer",
+        "hint": "Headphones"
+      },
+      {
+        "word": "Kamera",
+        "hint": "Camera"
+      },
+      {
+        "word": "Ladegerät",
+        "hint": "Charger"
+      },
+      {
+        "word": "Netzwerk",
+        "hint": "Network"
+      },
+      {
+        "word": "Datenbank",
+        "hint": "Database"
+      },
+      {
+        "word": "Software",
+        "hint": "Software"
+      },
+      {
+        "word": "Passwort",
+        "hint": "Password"
+      },
+      {
+        "word": "Suchmaschine",
+        "hint": "Search engine"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Office",
+    "description": "Office supplies and workplace vocabulary in German",
+    "iconName": "paperclip",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Schreibtisch",
+        "hint": "Desk"
+      },
+      {
+        "word": "Stuhl",
+        "hint": "Chair"
+      },
+      {
+        "word": "Ordner",
+        "hint": "Folder / Binder"
+      },
+      {
+        "word": "Hefter",
+        "hint": "Stapler"
+      },
+      {
+        "word": "Büroklammer",
+        "hint": "Paper clip"
+      },
+      {
+        "word": "Kalender",
+        "hint": "Calendar"
+      },
+      {
+        "word": "Notizblock",
+        "hint": "Notepad"
+      },
+      {
+        "word": "Schere",
+        "hint": "Scissors"
+      },
+      {
+        "word": "Klebeband",
+        "hint": "Adhesive tape"
+      },
+      {
+        "word": "Briefumschlag",
+        "hint": "Envelope"
+      },
+      {
+        "word": "Stempel",
+        "hint": "Stamp (rubber)"
+      },
+      {
+        "word": "Locher",
+        "hint": "Hole punch"
+      },
+      {
+        "word": "Aktenkoffer",
+        "hint": "Briefcase"
+      },
+      {
+        "word": "Whiteboard",
+        "hint": "Whiteboard"
+      },
+      {
+        "word": "Besprechung",
+        "hint": "Meeting"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Health & Medical",
+    "description": "Health, medicine, and body care in German",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Medikament",
+        "hint": "Medicine / Medication"
+      },
+      {
+        "word": "Apotheke",
+        "hint": "Pharmacy"
+      },
+      {
+        "word": "Krankenhaus",
+        "hint": "Hospital"
+      },
+      {
+        "word": "Tablette",
+        "hint": "Tablet / Pill"
+      },
+      {
+        "word": "Spritze",
+        "hint": "Injection / Syringe"
+      },
+      {
+        "word": "Verband",
+        "hint": "Bandage"
+      },
+      {
+        "word": "Fieber",
+        "hint": "Fever"
+      },
+      {
+        "word": "Husten",
+        "hint": "Cough"
+      },
+      {
+        "word": "Schnupfen",
+        "hint": "Cold (runny nose)"
+      },
+      {
+        "word": "Schmerz",
+        "hint": "Pain"
+      },
+      {
+        "word": "Rezept",
+        "hint": "Prescription"
+      },
+      {
+        "word": "Pflaster",
+        "hint": "Band-Aid / Plaster"
+      },
+      {
+        "word": "Untersuchung",
+        "hint": "Examination"
+      },
+      {
+        "word": "Blutdruck",
+        "hint": "Blood pressure"
+      },
+      {
+        "word": "Allergie",
+        "hint": "Allergy"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Travel",
+    "description": "Travel and tourism vocabulary in German",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Koffer",
+        "hint": "Suitcase"
+      },
+      {
+        "word": "Reisepass",
+        "hint": "Passport"
+      },
+      {
+        "word": "Flughafen",
+        "hint": "Airport"
+      },
+      {
+        "word": "Bahnhof",
+        "hint": "Train station"
+      },
+      {
+        "word": "Hotel",
+        "hint": "Hotel"
+      },
+      {
+        "word": "Landkarte",
+        "hint": "Map"
+      },
+      {
+        "word": "Fahrkarte",
+        "hint": "Ticket (travel)"
+      },
+      {
+        "word": "Gepäck",
+        "hint": "Luggage / Baggage"
+      },
+      {
+        "word": "Abflug",
+        "hint": "Departure (flight)"
+      },
+      {
+        "word": "Ankunft",
+        "hint": "Arrival"
+      },
+      {
+        "word": "Zoll",
+        "hint": "Customs"
+      },
+      {
+        "word": "Unterkunft",
+        "hint": "Accommodation"
+      },
+      {
+        "word": "Ausflug",
+        "hint": "Excursion / Day trip"
+      },
+      {
+        "word": "Rundfahrt",
+        "hint": "Tour / Sightseeing trip"
+      },
+      {
+        "word": "Reiseführer",
+        "hint": "Travel guide"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobbies",
+    "description": "Hobbies and leisure activities in German",
+    "iconName": "paintbrush",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Malen",
+        "hint": "Painting / Drawing"
+      },
+      {
+        "word": "Lesen",
+        "hint": "Reading"
+      },
+      {
+        "word": "Kochen",
+        "hint": "Cooking"
+      },
+      {
+        "word": "Wandern",
+        "hint": "Hiking"
+      },
+      {
+        "word": "Stricken",
+        "hint": "Knitting"
+      },
+      {
+        "word": "Angeln",
+        "hint": "Fishing"
+      },
+      {
+        "word": "Gärtnern",
+        "hint": "Gardening"
+      },
+      {
+        "word": "Fotografieren",
+        "hint": "Photography"
+      },
+      {
+        "word": "Basteln",
+        "hint": "Crafting / DIY"
+      },
+      {
+        "word": "Tanzen",
+        "hint": "Dancing"
+      },
+      {
+        "word": "Singen",
+        "hint": "Singing"
+      },
+      {
+        "word": "Sammeln",
+        "hint": "Collecting"
+      },
+      {
+        "word": "Schach",
+        "hint": "Chess"
+      },
+      {
+        "word": "Puzzle",
+        "hint": "Jigsaw puzzle"
+      },
+      {
+        "word": "Zeichnen",
+        "hint": "Drawing / Sketching"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Drinks & Beverages",
+    "description": "Beverages and drinks in German",
+    "iconName": "cup.and.saucer",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Wasser",
+        "hint": "Water"
+      },
+      {
+        "word": "Kaffee",
+        "hint": "Coffee"
+      },
+      {
+        "word": "Tee",
+        "hint": "Tea"
+      },
+      {
+        "word": "Milch",
+        "hint": "Milk"
+      },
+      {
+        "word": "Saft",
+        "hint": "Juice"
+      },
+      {
+        "word": "Bier",
+        "hint": "Beer"
+      },
+      {
+        "word": "Wein",
+        "hint": "Wine"
+      },
+      {
+        "word": "Limonade",
+        "hint": "Lemonade / Soda"
+      },
+      {
+        "word": "Kakao",
+        "hint": "Hot chocolate / Cocoa"
+      },
+      {
+        "word": "Mineralwasser",
+        "hint": "Mineral water"
+      },
+      {
+        "word": "Eistee",
+        "hint": "Iced tea"
+      },
+      {
+        "word": "Smoothie",
+        "hint": "Smoothie"
+      },
+      {
+        "word": "Espresso",
+        "hint": "Espresso"
+      },
+      {
+        "word": "Apfelschorle",
+        "hint": "Apple spritzer (popular German drink)"
+      },
+      {
+        "word": "Glühwein",
+        "hint": "Mulled wine"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desserts & Sweets",
+    "description": "Desserts, sweets, and pastries in German",
+    "iconName": "birthday.cake",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Kuchen",
+        "hint": "Cake"
+      },
+      {
+        "word": "Schokolade",
+        "hint": "Chocolate"
+      },
+      {
+        "word": "Keks",
+        "hint": "Cookie / Biscuit"
+      },
+      {
+        "word": "Torte",
+        "hint": "Gateau / Layer cake"
+      },
+      {
+        "word": "Eis",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "Bonbon",
+        "hint": "Candy / Sweet"
+      },
+      {
+        "word": "Marzipan",
+        "hint": "Marzipan"
+      },
+      {
+        "word": "Strudel",
+        "hint": "Strudel (pastry)"
+      },
+      {
+        "word": "Brezel",
+        "hint": "Pretzel"
+      },
+      {
+        "word": "Lebkuchen",
+        "hint": "Gingerbread"
+      },
+      {
+        "word": "Pudding",
+        "hint": "Pudding"
+      },
+      {
+        "word": "Sahne",
+        "hint": "Cream (whipped)"
+      },
+      {
+        "word": "Pfannkuchen",
+        "hint": "Pancake"
+      },
+      {
+        "word": "Quark",
+        "hint": "Quark (German soft cheese)"
+      },
+      {
+        "word": "Waffel",
+        "hint": "Waffle"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Furniture",
+    "description": "Furniture and home furnishings in German",
+    "iconName": "sofa",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Sofa",
+        "hint": "Sofa / Couch"
+      },
+      {
+        "word": "Tisch",
+        "hint": "Table"
+      },
+      {
+        "word": "Bett",
+        "hint": "Bed"
+      },
+      {
+        "word": "Schrank",
+        "hint": "Wardrobe / Cabinet"
+      },
+      {
+        "word": "Regal",
+        "hint": "Shelf / Shelving unit"
+      },
+      {
+        "word": "Lampe",
+        "hint": "Lamp"
+      },
+      {
+        "word": "Teppich",
+        "hint": "Carpet / Rug"
+      },
+      {
+        "word": "Spiegel",
+        "hint": "Mirror"
+      },
+      {
+        "word": "Kommode",
+        "hint": "Dresser / Chest of drawers"
+      },
+      {
+        "word": "Vorhang",
+        "hint": "Curtain"
+      },
+      {
+        "word": "Matratze",
+        "hint": "Mattress"
+      },
+      {
+        "word": "Kissen",
+        "hint": "Pillow / Cushion"
+      },
+      {
+        "word": "Decke",
+        "hint": "Blanket / Ceiling"
+      },
+      {
+        "word": "Hocker",
+        "hint": "Stool"
+      },
+      {
+        "word": "Nachttisch",
+        "hint": "Nightstand / Bedside table"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Tools",
+    "description": "Tools and hardware in German",
+    "iconName": "wrench",
+    "color": "#71717a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Hammer",
+        "hint": "Hammer"
+      },
+      {
+        "word": "Schraubenzieher",
+        "hint": "Screwdriver"
+      },
+      {
+        "word": "Zange",
+        "hint": "Pliers"
+      },
+      {
+        "word": "Bohrmaschine",
+        "hint": "Drill"
+      },
+      {
+        "word": "Säge",
+        "hint": "Saw"
+      },
+      {
+        "word": "Nagel",
+        "hint": "Nail"
+      },
+      {
+        "word": "Schraube",
+        "hint": "Screw"
+      },
+      {
+        "word": "Feile",
+        "hint": "File (tool)"
+      },
+      {
+        "word": "Wasserwaage",
+        "hint": "Spirit level"
+      },
+      {
+        "word": "Maßband",
+        "hint": "Tape measure"
+      },
+      {
+        "word": "Leiter",
+        "hint": "Ladder"
+      },
+      {
+        "word": "Pinsel",
+        "hint": "Paintbrush"
+      },
+      {
+        "word": "Schleifpapier",
+        "hint": "Sandpaper"
+      },
+      {
+        "word": "Dübel",
+        "hint": "Wall plug / Anchor"
+      },
+      {
+        "word": "Werkzeugkasten",
+        "hint": "Toolbox"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materials",
+    "description": "Common materials and substances in German",
+    "iconName": "cube",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Holz",
+        "hint": "Wood"
+      },
+      {
+        "word": "Metall",
+        "hint": "Metal"
+      },
+      {
+        "word": "Stahl",
+        "hint": "Steel"
+      },
+      {
+        "word": "Plastik",
+        "hint": "Plastic"
+      },
+      {
+        "word": "Gummi",
+        "hint": "Rubber"
+      },
+      {
+        "word": "Beton",
+        "hint": "Concrete"
+      },
+      {
+        "word": "Ziegel",
+        "hint": "Brick"
+      },
+      {
+        "word": "Leder",
+        "hint": "Leather"
+      },
+      {
+        "word": "Wolle",
+        "hint": "Wool"
+      },
+      {
+        "word": "Seide",
+        "hint": "Silk"
+      },
+      {
+        "word": "Baumwolle",
+        "hint": "Cotton"
+      },
+      {
+        "word": "Keramik",
+        "hint": "Ceramic"
+      },
+      {
+        "word": "Marmor",
+        "hint": "Marble"
+      },
+      {
+        "word": "Kupfer",
+        "hint": "Copper"
+      },
+      {
+        "word": "Aluminium",
+        "hint": "Aluminum"
+      }
+    ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Daily Routine",
+    "description": "Everyday activities and routines in German",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Frühstück",
+        "hint": "Breakfast"
+      },
+      {
+        "word": "Aufwachen",
+        "hint": "To wake up"
+      },
+      {
+        "word": "Duschen",
+        "hint": "To shower"
+      },
+      {
+        "word": "Anziehen",
+        "hint": "To get dressed"
+      },
+      {
+        "word": "Schlafen",
+        "hint": "To sleep"
+      },
+      {
+        "word": "Kochen",
+        "hint": "To cook"
+      },
+      {
+        "word": "Arbeiten",
+        "hint": "To work"
+      },
+      {
+        "word": "Abendessen",
+        "hint": "Dinner / evening meal"
+      },
+      {
+        "word": "Zähneputzen",
+        "hint": "To brush teeth"
+      },
+      {
+        "word": "Einkaufen",
+        "hint": "To go shopping"
+      },
+      {
+        "word": "Pendeln",
+        "hint": "To commute"
+      },
+      {
+        "word": "Mittagessen",
+        "hint": "Lunch"
+      },
+      {
+        "word": "Aufräumen",
+        "hint": "To tidy up"
+      },
+      {
+        "word": "Spazieren",
+        "hint": "To go for a walk"
+      },
+      {
+        "word": "Lesen",
+        "hint": "To read"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Shopping",
+    "description": "Shopping-related vocabulary in German",
+    "iconName": "cart",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Laden",
+        "hint": "Shop / store"
+      },
+      {
+        "word": "Kasse",
+        "hint": "Checkout / register"
+      },
+      {
+        "word": "Preis",
+        "hint": "Price"
+      },
+      {
+        "word": "Angebot",
+        "hint": "Offer / deal"
+      },
+      {
+        "word": "Rabatt",
+        "hint": "Discount"
+      },
+      {
+        "word": "Tüte",
+        "hint": "Bag (shopping)"
+      },
+      {
+        "word": "Quittung",
+        "hint": "Receipt"
+      },
+      {
+        "word": "Warenkorb",
+        "hint": "Shopping cart"
+      },
+      {
+        "word": "Umtausch",
+        "hint": "Exchange / return"
+      },
+      {
+        "word": "Größe",
+        "hint": "Size"
+      },
+      {
+        "word": "Marke",
+        "hint": "Brand"
+      },
+      {
+        "word": "Bezahlen",
+        "hint": "To pay"
+      },
+      {
+        "word": "Schaufenster",
+        "hint": "Shop window"
+      },
+      {
+        "word": "Sonderangebot",
+        "hint": "Special offer"
+      },
+      {
+        "word": "Einkaufsliste",
+        "hint": "Shopping list"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restaurant",
+    "description": "Restaurant and dining vocabulary in German",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Speisekarte",
+        "hint": "Menu"
+      },
+      {
+        "word": "Kellner",
+        "hint": "Waiter"
+      },
+      {
+        "word": "Rechnung",
+        "hint": "Bill / check"
+      },
+      {
+        "word": "Vorspeise",
+        "hint": "Starter / appetizer"
+      },
+      {
+        "word": "Hauptgericht",
+        "hint": "Main course"
+      },
+      {
+        "word": "Nachtisch",
+        "hint": "Dessert"
+      },
+      {
+        "word": "Trinkgeld",
+        "hint": "Tip (gratuity)"
+      },
+      {
+        "word": "Bestellen",
+        "hint": "To order"
+      },
+      {
+        "word": "Reservierung",
+        "hint": "Reservation"
+      },
+      {
+        "word": "Beilage",
+        "hint": "Side dish"
+      },
+      {
+        "word": "Getränk",
+        "hint": "Beverage / drink"
+      },
+      {
+        "word": "Bedienung",
+        "hint": "Service"
+      },
+      {
+        "word": "Tischdecke",
+        "hint": "Tablecloth"
+      },
+      {
+        "word": "Serviette",
+        "hint": "Napkin"
+      },
+      {
+        "word": "Tageskarte",
+        "hint": "Daily specials menu"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Garden",
+    "description": "Garden and outdoor terms in German",
+    "iconName": "leaf.fill",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Garten",
+        "hint": "Garden"
+      },
+      {
+        "word": "Blume",
+        "hint": "Flower"
+      },
+      {
+        "word": "Rasen",
+        "hint": "Lawn"
+      },
+      {
+        "word": "Hecke",
+        "hint": "Hedge"
+      },
+      {
+        "word": "Schaufel",
+        "hint": "Shovel"
+      },
+      {
+        "word": "Gießkanne",
+        "hint": "Watering can"
+      },
+      {
+        "word": "Samen",
+        "hint": "Seeds"
+      },
+      {
+        "word": "Beet",
+        "hint": "Flower bed"
+      },
+      {
+        "word": "Erde",
+        "hint": "Soil / earth"
+      },
+      {
+        "word": "Zaun",
+        "hint": "Fence"
+      },
+      {
+        "word": "Strauch",
+        "hint": "Shrub / bush"
+      },
+      {
+        "word": "Gewächshaus",
+        "hint": "Greenhouse"
+      },
+      {
+        "word": "Pflanzen",
+        "hint": "To plant / plants"
+      },
+      {
+        "word": "Ernte",
+        "hint": "Harvest"
+      },
+      {
+        "word": "Kompost",
+        "hint": "Compost"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Bathroom",
+    "description": "Bathroom items and fixtures in German",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Badewanne",
+        "hint": "Bathtub"
+      },
+      {
+        "word": "Dusche",
+        "hint": "Shower"
+      },
+      {
+        "word": "Waschbecken",
+        "hint": "Sink / washbasin"
+      },
+      {
+        "word": "Spiegel",
+        "hint": "Mirror"
+      },
+      {
+        "word": "Handtuch",
+        "hint": "Towel"
+      },
+      {
+        "word": "Seife",
+        "hint": "Soap"
+      },
+      {
+        "word": "Zahnbürste",
+        "hint": "Toothbrush"
+      },
+      {
+        "word": "Zahnpasta",
+        "hint": "Toothpaste"
+      },
+      {
+        "word": "Shampoo",
+        "hint": "Shampoo"
+      },
+      {
+        "word": "Toilette",
+        "hint": "Toilet"
+      },
+      {
+        "word": "Föhn",
+        "hint": "Hair dryer"
+      },
+      {
+        "word": "Rasierer",
+        "hint": "Razor / shaver"
+      },
+      {
+        "word": "Badematte",
+        "hint": "Bath mat"
+      },
+      {
+        "word": "Waschlappen",
+        "hint": "Washcloth"
+      },
+      {
+        "word": "Badezimmer",
+        "hint": "Bathroom (the room)"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Cinema & Film",
+    "description": "Cinema and movie vocabulary in German",
+    "iconName": "film",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Kino",
+        "hint": "Cinema / movie theater"
+      },
+      {
+        "word": "Leinwand",
+        "hint": "Screen (movie)"
+      },
+      {
+        "word": "Schauspieler",
+        "hint": "Actor"
+      },
+      {
+        "word": "Regisseur",
+        "hint": "Director"
+      },
+      {
+        "word": "Drehbuch",
+        "hint": "Screenplay / script"
+      },
+      {
+        "word": "Vorstellung",
+        "hint": "Showing / performance"
+      },
+      {
+        "word": "Untertitel",
+        "hint": "Subtitles"
+      },
+      {
+        "word": "Handlung",
+        "hint": "Plot / storyline"
+      },
+      {
+        "word": "Filmplakat",
+        "hint": "Movie poster"
+      },
+      {
+        "word": "Popcorn",
+        "hint": "Popcorn"
+      },
+      {
+        "word": "Trailer",
+        "hint": "Trailer / preview"
+      },
+      {
+        "word": "Reihe",
+        "hint": "Row (of seats)"
+      },
+      {
+        "word": "Eintrittskarte",
+        "hint": "Admission ticket"
+      },
+      {
+        "word": "Komödie",
+        "hint": "Comedy"
+      },
+      {
+        "word": "Thriller",
+        "hint": "Thriller (genre)"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Art",
+    "description": "Art and creative vocabulary in German",
+    "iconName": "paintpalette",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Gemälde",
+        "hint": "Painting"
+      },
+      {
+        "word": "Skulptur",
+        "hint": "Sculpture"
+      },
+      {
+        "word": "Zeichnung",
+        "hint": "Drawing"
+      },
+      {
+        "word": "Galerie",
+        "hint": "Gallery"
+      },
+      {
+        "word": "Ausstellung",
+        "hint": "Exhibition"
+      },
+      {
+        "word": "Künstler",
+        "hint": "Artist"
+      },
+      {
+        "word": "Pinsel",
+        "hint": "Paintbrush"
+      },
+      {
+        "word": "Leinwand",
+        "hint": "Canvas"
+      },
+      {
+        "word": "Farbe",
+        "hint": "Paint / color"
+      },
+      {
+        "word": "Rahmen",
+        "hint": "Frame"
+      },
+      {
+        "word": "Porträt",
+        "hint": "Portrait"
+      },
+      {
+        "word": "Skizze",
+        "hint": "Sketch"
+      },
+      {
+        "word": "Aquarell",
+        "hint": "Watercolor"
+      },
+      {
+        "word": "Museum",
+        "hint": "Museum"
+      },
+      {
+        "word": "Meisterwerk",
+        "hint": "Masterpiece"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Dance",
+    "description": "Dance-related vocabulary in German",
+    "iconName": "figure.dance",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Tanz",
+        "hint": "Dance"
+      },
+      {
+        "word": "Walzer",
+        "hint": "Waltz"
+      },
+      {
+        "word": "Ballett",
+        "hint": "Ballet"
+      },
+      {
+        "word": "Tänzer",
+        "hint": "Dancer (male)"
+      },
+      {
+        "word": "Tänzerin",
+        "hint": "Dancer (female)"
+      },
+      {
+        "word": "Bühne",
+        "hint": "Stage"
+      },
+      {
+        "word": "Choreografie",
+        "hint": "Choreography"
+      },
+      {
+        "word": "Rhythmus",
+        "hint": "Rhythm"
+      },
+      {
+        "word": "Schritte",
+        "hint": "Steps"
+      },
+      {
+        "word": "Drehung",
+        "hint": "Turn / spin"
+      },
+      {
+        "word": "Bewegung",
+        "hint": "Movement"
+      },
+      {
+        "word": "Tanzschule",
+        "hint": "Dance school"
+      },
+      {
+        "word": "Tanzfläche",
+        "hint": "Dance floor"
+      },
+      {
+        "word": "Foxtrott",
+        "hint": "Foxtrot"
+      },
+      {
+        "word": "Aufführung",
+        "hint": "Performance / show"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Photography",
+    "description": "Photography terms in German",
+    "iconName": "camera",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Kamera",
+        "hint": "Camera"
+      },
+      {
+        "word": "Objektiv",
+        "hint": "Lens"
+      },
+      {
+        "word": "Blitz",
+        "hint": "Flash"
+      },
+      {
+        "word": "Aufnahme",
+        "hint": "Shot / recording"
+      },
+      {
+        "word": "Belichtung",
+        "hint": "Exposure"
+      },
+      {
+        "word": "Fokus",
+        "hint": "Focus"
+      },
+      {
+        "word": "Motiv",
+        "hint": "Subject / motif"
+      },
+      {
+        "word": "Stativ",
+        "hint": "Tripod"
+      },
+      {
+        "word": "Filter",
+        "hint": "Filter"
+      },
+      {
+        "word": "Auflösung",
+        "hint": "Resolution"
+      },
+      {
+        "word": "Selbstauslöser",
+        "hint": "Self-timer"
+      },
+      {
+        "word": "Weitwinkel",
+        "hint": "Wide angle"
+      },
+      {
+        "word": "Porträt",
+        "hint": "Portrait photo"
+      },
+      {
+        "word": "Bildbearbeitung",
+        "hint": "Photo editing"
+      },
+      {
+        "word": "Fotograf",
+        "hint": "Photographer"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Crafts",
+    "description": "Crafting and handicraft terms in German",
+    "iconName": "scissors",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Stricken",
+        "hint": "Knitting"
+      },
+      {
+        "word": "Nähen",
+        "hint": "Sewing"
+      },
+      {
+        "word": "Häkeln",
+        "hint": "Crocheting"
+      },
+      {
+        "word": "Wolle",
+        "hint": "Wool / yarn"
+      },
+      {
+        "word": "Nadel",
+        "hint": "Needle"
+      },
+      {
+        "word": "Schere",
+        "hint": "Scissors"
+      },
+      {
+        "word": "Kleber",
+        "hint": "Glue"
+      },
+      {
+        "word": "Papier",
+        "hint": "Paper"
+      },
+      {
+        "word": "Muster",
+        "hint": "Pattern"
+      },
+      {
+        "word": "Perlen",
+        "hint": "Beads"
+      },
+      {
+        "word": "Stickerei",
+        "hint": "Embroidery"
+      },
+      {
+        "word": "Töpfern",
+        "hint": "Pottery"
+      },
+      {
+        "word": "Faden",
+        "hint": "Thread"
+      },
+      {
+        "word": "Werkstatt",
+        "hint": "Workshop"
+      },
+      {
+        "word": "Handarbeit",
+        "hint": "Handicraft / handwork"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geography",
+    "description": "Geography terms in German",
+    "iconName": "globe.europe.africa",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Kontinent",
+        "hint": "Continent"
+      },
+      {
+        "word": "Grenze",
+        "hint": "Border"
+      },
+      {
+        "word": "Wüste",
+        "hint": "Desert"
+      },
+      {
+        "word": "Insel",
+        "hint": "Island"
+      },
+      {
+        "word": "Halbinsel",
+        "hint": "Peninsula"
+      },
+      {
+        "word": "Fluss",
+        "hint": "River"
+      },
+      {
+        "word": "Erdkunde",
+        "hint": "Geography (subject)"
+      },
+      {
+        "word": "Landkarte",
+        "hint": "Map"
+      },
+      {
+        "word": "Hauptstadt",
+        "hint": "Capital city"
+      },
+      {
+        "word": "Küste",
+        "hint": "Coast"
+      },
+      {
+        "word": "Ebene",
+        "hint": "Plain / flatland"
+      },
+      {
+        "word": "Vulkan",
+        "hint": "Volcano"
+      },
+      {
+        "word": "Gletscher",
+        "hint": "Glacier"
+      },
+      {
+        "word": "Tal",
+        "hint": "Valley"
+      },
+      {
+        "word": "Hügel",
+        "hint": "Hill"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomy",
+    "description": "Astronomy and space terms in German",
+    "iconName": "sparkles",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Stern",
+        "hint": "Star"
+      },
+      {
+        "word": "Planet",
+        "hint": "Planet"
+      },
+      {
+        "word": "Mond",
+        "hint": "Moon"
+      },
+      {
+        "word": "Sonne",
+        "hint": "Sun"
+      },
+      {
+        "word": "Galaxie",
+        "hint": "Galaxy"
+      },
+      {
+        "word": "Teleskop",
+        "hint": "Telescope"
+      },
+      {
+        "word": "Umlaufbahn",
+        "hint": "Orbit"
+      },
+      {
+        "word": "Komet",
+        "hint": "Comet"
+      },
+      {
+        "word": "Asteroid",
+        "hint": "Asteroid"
+      },
+      {
+        "word": "Sternbild",
+        "hint": "Constellation"
+      },
+      {
+        "word": "Weltraum",
+        "hint": "Outer space"
+      },
+      {
+        "word": "Rakete",
+        "hint": "Rocket"
+      },
+      {
+        "word": "Nebel",
+        "hint": "Nebula / fog"
+      },
+      {
+        "word": "Schwerkraft",
+        "hint": "Gravity"
+      },
+      {
+        "word": "Sonnensystem",
+        "hint": "Solar system"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean & Sea",
+    "description": "Ocean and marine vocabulary in German",
+    "iconName": "water.waves",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Ozean",
+        "hint": "Ocean"
+      },
+      {
+        "word": "Meer",
+        "hint": "Sea"
+      },
+      {
+        "word": "Welle",
+        "hint": "Wave"
+      },
+      {
+        "word": "Strand",
+        "hint": "Beach"
+      },
+      {
+        "word": "Koralle",
+        "hint": "Coral"
+      },
+      {
+        "word": "Muschel",
+        "hint": "Shell / clam"
+      },
+      {
+        "word": "Leuchtturm",
+        "hint": "Lighthouse"
+      },
+      {
+        "word": "Ebbe",
+        "hint": "Low tide"
+      },
+      {
+        "word": "Flut",
+        "hint": "High tide / flood"
+      },
+      {
+        "word": "Hafen",
+        "hint": "Harbor / port"
+      },
+      {
+        "word": "Tauchen",
+        "hint": "Diving"
+      },
+      {
+        "word": "Algen",
+        "hint": "Algae / seaweed"
+      },
+      {
+        "word": "Seepferdchen",
+        "hint": "Seahorse"
+      },
+      {
+        "word": "Krebs",
+        "hint": "Crab"
+      },
+      {
+        "word": "Anker",
+        "hint": "Anchor"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Mountains & Hiking",
+    "description": "Mountain and hiking vocabulary in German",
+    "iconName": "mountain.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Berg",
+        "hint": "Mountain"
+      },
+      {
+        "word": "Gipfel",
+        "hint": "Summit / peak"
+      },
+      {
+        "word": "Wanderung",
+        "hint": "Hike"
+      },
+      {
+        "word": "Pfad",
+        "hint": "Path / trail"
+      },
+      {
+        "word": "Klettern",
+        "hint": "Climbing"
+      },
+      {
+        "word": "Rucksack",
+        "hint": "Backpack"
+      },
+      {
+        "word": "Höhe",
+        "hint": "Height / altitude"
+      },
+      {
+        "word": "Schlucht",
+        "hint": "Gorge / canyon"
+      },
+      {
+        "word": "Berghütte",
+        "hint": "Mountain hut"
+      },
+      {
+        "word": "Aussicht",
+        "hint": "View / panorama"
+      },
+      {
+        "word": "Wasserfall",
+        "hint": "Waterfall"
+      },
+      {
+        "word": "Felsen",
+        "hint": "Rock / cliff"
+      },
+      {
+        "word": "Seilbahn",
+        "hint": "Cable car"
+      },
+      {
+        "word": "Wanderschuhe",
+        "hint": "Hiking boots"
+      },
+      {
+        "word": "Almwiese",
+        "hint": "Alpine meadow"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Camping",
+    "description": "Camping and outdoor terms in German",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Zelt",
+        "hint": "Tent"
+      },
+      {
+        "word": "Schlafsack",
+        "hint": "Sleeping bag"
+      },
+      {
+        "word": "Lagerfeuer",
+        "hint": "Campfire"
+      },
+      {
+        "word": "Taschenlampe",
+        "hint": "Flashlight"
+      },
+      {
+        "word": "Kompass",
+        "hint": "Compass"
+      },
+      {
+        "word": "Campingplatz",
+        "hint": "Campsite"
+      },
+      {
+        "word": "Wandern",
+        "hint": "To hike"
+      },
+      {
+        "word": "Isomatte",
+        "hint": "Sleeping pad"
+      },
+      {
+        "word": "Feuerholz",
+        "hint": "Firewood"
+      },
+      {
+        "word": "Grillrost",
+        "hint": "Grill grate"
+      },
+      {
+        "word": "Fernglas",
+        "hint": "Binoculars"
+      },
+      {
+        "word": "Mückenschutz",
+        "hint": "Mosquito repellent"
+      },
+      {
+        "word": "Gaskocher",
+        "hint": "Camping stove"
+      },
+      {
+        "word": "Kühltasche",
+        "hint": "Cooler bag"
+      },
+      {
+        "word": "Hängematte",
+        "hint": "Hammock"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Law & Justice",
+    "description": "Legal vocabulary in German",
+    "iconName": "building.columns",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Gesetz",
+        "hint": "Law"
+      },
+      {
+        "word": "Richter",
+        "hint": "Judge"
+      },
+      {
+        "word": "Anwalt",
+        "hint": "Lawyer"
+      },
+      {
+        "word": "Gericht",
+        "hint": "Court"
+      },
+      {
+        "word": "Urteil",
+        "hint": "Verdict / judgment"
+      },
+      {
+        "word": "Zeuge",
+        "hint": "Witness"
+      },
+      {
+        "word": "Vertrag",
+        "hint": "Contract"
+      },
+      {
+        "word": "Strafe",
+        "hint": "Penalty / punishment"
+      },
+      {
+        "word": "Klage",
+        "hint": "Lawsuit / complaint"
+      },
+      {
+        "word": "Beweis",
+        "hint": "Evidence / proof"
+      },
+      {
+        "word": "Gefängnis",
+        "hint": "Prison"
+      },
+      {
+        "word": "Schuldig",
+        "hint": "Guilty"
+      },
+      {
+        "word": "Verhandlung",
+        "hint": "Trial / hearing"
+      },
+      {
+        "word": "Paragraph",
+        "hint": "Section (of law)"
+      },
+      {
+        "word": "Gerechtigkeit",
+        "hint": "Justice"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Politics",
+    "description": "Political vocabulary in German",
+    "iconName": "person.3",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Regierung",
+        "hint": "Government"
+      },
+      {
+        "word": "Bundestag",
+        "hint": "German parliament"
+      },
+      {
+        "word": "Wahl",
+        "hint": "Election"
+      },
+      {
+        "word": "Partei",
+        "hint": "Political party"
+      },
+      {
+        "word": "Demokratie",
+        "hint": "Democracy"
+      },
+      {
+        "word": "Kanzler",
+        "hint": "Chancellor"
+      },
+      {
+        "word": "Abstimmung",
+        "hint": "Vote / ballot"
+      },
+      {
+        "word": "Bürger",
+        "hint": "Citizen"
+      },
+      {
+        "word": "Verfassung",
+        "hint": "Constitution"
+      },
+      {
+        "word": "Minister",
+        "hint": "Minister"
+      },
+      {
+        "word": "Abgeordneter",
+        "hint": "Member of parliament"
+      },
+      {
+        "word": "Opposition",
+        "hint": "Opposition"
+      },
+      {
+        "word": "Koalition",
+        "hint": "Coalition"
+      },
+      {
+        "word": "Debatte",
+        "hint": "Debate"
+      },
+      {
+        "word": "Grundrecht",
+        "hint": "Fundamental right"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Economy",
+    "description": "Economic terms in German",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Wirtschaft",
+        "hint": "Economy"
+      },
+      {
+        "word": "Markt",
+        "hint": "Market"
+      },
+      {
+        "word": "Handel",
+        "hint": "Trade / commerce"
+      },
+      {
+        "word": "Inflation",
+        "hint": "Inflation"
+      },
+      {
+        "word": "Wachstum",
+        "hint": "Growth"
+      },
+      {
+        "word": "Export",
+        "hint": "Export"
+      },
+      {
+        "word": "Import",
+        "hint": "Import"
+      },
+      {
+        "word": "Angebot",
+        "hint": "Supply"
+      },
+      {
+        "word": "Nachfrage",
+        "hint": "Demand"
+      },
+      {
+        "word": "Steuern",
+        "hint": "Taxes"
+      },
+      {
+        "word": "Umsatz",
+        "hint": "Revenue / turnover"
+      },
+      {
+        "word": "Gewinn",
+        "hint": "Profit"
+      },
+      {
+        "word": "Schulden",
+        "hint": "Debts"
+      },
+      {
+        "word": "Konjunktur",
+        "hint": "Economic cycle"
+      },
+      {
+        "word": "Bruttoinlandsprodukt",
+        "hint": "Gross domestic product"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Banking",
+    "description": "Banking and finance terms in German",
+    "iconName": "banknote",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Konto",
+        "hint": "Account"
+      },
+      {
+        "word": "Überweisung",
+        "hint": "Bank transfer"
+      },
+      {
+        "word": "Zinsen",
+        "hint": "Interest"
+      },
+      {
+        "word": "Kredit",
+        "hint": "Loan / credit"
+      },
+      {
+        "word": "Sparkasse",
+        "hint": "Savings bank"
+      },
+      {
+        "word": "Geldautomat",
+        "hint": "ATM"
+      },
+      {
+        "word": "Girokonto",
+        "hint": "Checking account"
+      },
+      {
+        "word": "Sparbuch",
+        "hint": "Savings book"
+      },
+      {
+        "word": "Hypothek",
+        "hint": "Mortgage"
+      },
+      {
+        "word": "Wechselkurs",
+        "hint": "Exchange rate"
+      },
+      {
+        "word": "Abheben",
+        "hint": "To withdraw"
+      },
+      {
+        "word": "Einzahlung",
+        "hint": "Deposit"
+      },
+      {
+        "word": "Kontostand",
+        "hint": "Account balance"
+      },
+      {
+        "word": "Dauerauftrag",
+        "hint": "Standing order"
+      },
+      {
+        "word": "Bankleitzahl",
+        "hint": "Bank routing number"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Insurance",
+    "description": "Insurance vocabulary in German",
+    "iconName": "shield",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Versicherung",
+        "hint": "Insurance"
+      },
+      {
+        "word": "Beitrag",
+        "hint": "Premium / contribution"
+      },
+      {
+        "word": "Schaden",
+        "hint": "Damage / claim"
+      },
+      {
+        "word": "Haftpflicht",
+        "hint": "Liability"
+      },
+      {
+        "word": "Krankenversicherung",
+        "hint": "Health insurance"
+      },
+      {
+        "word": "Police",
+        "hint": "Policy (insurance)"
+      },
+      {
+        "word": "Deckung",
+        "hint": "Coverage"
+      },
+      {
+        "word": "Selbstbeteiligung",
+        "hint": "Deductible / excess"
+      },
+      {
+        "word": "Anspruch",
+        "hint": "Claim / entitlement"
+      },
+      {
+        "word": "Prämie",
+        "hint": "Premium"
+      },
+      {
+        "word": "Unfall",
+        "hint": "Accident"
+      },
+      {
+        "word": "Schadensfall",
+        "hint": "Insurance claim event"
+      },
+      {
+        "word": "Risiko",
+        "hint": "Risk"
+      },
+      {
+        "word": "Vertragslaufzeit",
+        "hint": "Contract duration"
+      },
+      {
+        "word": "Kündigung",
+        "hint": "Cancellation / termination"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Cooking",
+    "description": "Cooking methods and terms in German",
+    "iconName": "flame",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Braten",
+        "hint": "To fry / roast"
+      },
+      {
+        "word": "Kochen",
+        "hint": "To boil / cook"
+      },
+      {
+        "word": "Backen",
+        "hint": "To bake"
+      },
+      {
+        "word": "Schneiden",
+        "hint": "To cut / chop"
+      },
+      {
+        "word": "Rühren",
+        "hint": "To stir"
+      },
+      {
+        "word": "Würzen",
+        "hint": "To season"
+      },
+      {
+        "word": "Schälen",
+        "hint": "To peel"
+      },
+      {
+        "word": "Dünsten",
+        "hint": "To steam / braise"
+      },
+      {
+        "word": "Rezept",
+        "hint": "Recipe"
+      },
+      {
+        "word": "Zutat",
+        "hint": "Ingredient"
+      },
+      {
+        "word": "Pfanne",
+        "hint": "Pan / skillet"
+      },
+      {
+        "word": "Topf",
+        "hint": "Pot"
+      },
+      {
+        "word": "Ofen",
+        "hint": "Oven"
+      },
+      {
+        "word": "Schneebesen",
+        "hint": "Whisk"
+      },
+      {
+        "word": "Marinade",
+        "hint": "Marinade"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Baking",
+    "description": "Baking vocabulary in German",
+    "iconName": "birthday.cake",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Teig",
+        "hint": "Dough"
+      },
+      {
+        "word": "Mehl",
+        "hint": "Flour"
+      },
+      {
+        "word": "Zucker",
+        "hint": "Sugar"
+      },
+      {
+        "word": "Hefe",
+        "hint": "Yeast"
+      },
+      {
+        "word": "Backpulver",
+        "hint": "Baking powder"
+      },
+      {
+        "word": "Kuchen",
+        "hint": "Cake"
+      },
+      {
+        "word": "Plätzchen",
+        "hint": "Cookies / biscuits"
+      },
+      {
+        "word": "Brot",
+        "hint": "Bread"
+      },
+      {
+        "word": "Brötchen",
+        "hint": "Roll (bread)"
+      },
+      {
+        "word": "Glasur",
+        "hint": "Icing / glaze"
+      },
+      {
+        "word": "Backform",
+        "hint": "Baking pan / mold"
+      },
+      {
+        "word": "Sauerteig",
+        "hint": "Sourdough"
+      },
+      {
+        "word": "Knetmaschine",
+        "hint": "Kneading machine"
+      },
+      {
+        "word": "Kruste",
+        "hint": "Crust"
+      },
+      {
+        "word": "Vanille",
+        "hint": "Vanilla"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Spices & Herbs",
+    "description": "Spices and herbs in German",
+    "iconName": "leaf",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Pfeffer",
+        "hint": "Pepper"
+      },
+      {
+        "word": "Salz",
+        "hint": "Salt"
+      },
+      {
+        "word": "Zimt",
+        "hint": "Cinnamon"
+      },
+      {
+        "word": "Knoblauch",
+        "hint": "Garlic"
+      },
+      {
+        "word": "Basilikum",
+        "hint": "Basil"
+      },
+      {
+        "word": "Oregano",
+        "hint": "Oregano"
+      },
+      {
+        "word": "Petersilie",
+        "hint": "Parsley"
+      },
+      {
+        "word": "Thymian",
+        "hint": "Thyme"
+      },
+      {
+        "word": "Rosmarin",
+        "hint": "Rosemary"
+      },
+      {
+        "word": "Muskatnuss",
+        "hint": "Nutmeg"
+      },
+      {
+        "word": "Kreuzkümmel",
+        "hint": "Cumin"
+      },
+      {
+        "word": "Ingwer",
+        "hint": "Ginger"
+      },
+      {
+        "word": "Kurkuma",
+        "hint": "Turmeric"
+      },
+      {
+        "word": "Safran",
+        "hint": "Saffron"
+      },
+      {
+        "word": "Schnittlauch",
+        "hint": "Chives"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Dairy Products",
+    "description": "Dairy product vocabulary in German",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Milch",
+        "hint": "Milk"
+      },
+      {
+        "word": "Käse",
+        "hint": "Cheese"
+      },
+      {
+        "word": "Butter",
+        "hint": "Butter"
+      },
+      {
+        "word": "Joghurt",
+        "hint": "Yogurt"
+      },
+      {
+        "word": "Sahne",
+        "hint": "Cream"
+      },
+      {
+        "word": "Quark",
+        "hint": "Quark (soft cheese)"
+      },
+      {
+        "word": "Eiscreme",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "Frischkäse",
+        "hint": "Cream cheese"
+      },
+      {
+        "word": "Schlagsahne",
+        "hint": "Whipped cream"
+      },
+      {
+        "word": "Buttermilch",
+        "hint": "Buttermilk"
+      },
+      {
+        "word": "Ziegenkäse",
+        "hint": "Goat cheese"
+      },
+      {
+        "word": "Hüttenkäse",
+        "hint": "Cottage cheese"
+      },
+      {
+        "word": "Kondensmilch",
+        "hint": "Condensed milk"
+      },
+      {
+        "word": "Mozzarella",
+        "hint": "Mozzarella"
+      },
+      {
+        "word": "Molke",
+        "hint": "Whey"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Meat & Poultry",
+    "description": "Meat and poultry vocabulary in German",
+    "iconName": "fork.knife",
+    "color": "#b91c1c",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Fleisch",
+        "hint": "Meat"
+      },
+      {
+        "word": "Rindfleisch",
+        "hint": "Beef"
+      },
+      {
+        "word": "Schweinefleisch",
+        "hint": "Pork"
+      },
+      {
+        "word": "Hähnchen",
+        "hint": "Chicken"
+      },
+      {
+        "word": "Lamm",
+        "hint": "Lamb"
+      },
+      {
+        "word": "Wurst",
+        "hint": "Sausage"
+      },
+      {
+        "word": "Schinken",
+        "hint": "Ham"
+      },
+      {
+        "word": "Steak",
+        "hint": "Steak"
+      },
+      {
+        "word": "Hackfleisch",
+        "hint": "Ground meat / mince"
+      },
+      {
+        "word": "Truthahn",
+        "hint": "Turkey"
+      },
+      {
+        "word": "Ente",
+        "hint": "Duck"
+      },
+      {
+        "word": "Speck",
+        "hint": "Bacon"
+      },
+      {
+        "word": "Frikadelle",
+        "hint": "Meatball / patty"
+      },
+      {
+        "word": "Kotelett",
+        "hint": "Cutlet / chop"
+      },
+      {
+        "word": "Schnitzel",
+        "hint": "Schnitzel (breaded cutlet)"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Pets",
+    "description": "Pet-related vocabulary in German",
+    "iconName": "pawprint",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Hund",
+        "hint": "Dog"
+      },
+      {
+        "word": "Katze",
+        "hint": "Cat"
+      },
+      {
+        "word": "Hamster",
+        "hint": "Hamster"
+      },
+      {
+        "word": "Kaninchen",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "Goldfisch",
+        "hint": "Goldfish"
+      },
+      {
+        "word": "Papagei",
+        "hint": "Parrot"
+      },
+      {
+        "word": "Wellensittich",
+        "hint": "Budgerigar / parakeet"
+      },
+      {
+        "word": "Schildkröte",
+        "hint": "Turtle / tortoise"
+      },
+      {
+        "word": "Futter",
+        "hint": "Pet food / feed"
+      },
+      {
+        "word": "Leine",
+        "hint": "Leash"
+      },
+      {
+        "word": "Käfig",
+        "hint": "Cage"
+      },
+      {
+        "word": "Tierarzt",
+        "hint": "Veterinarian"
+      },
+      {
+        "word": "Napf",
+        "hint": "Bowl (for pets)"
+      },
+      {
+        "word": "Hundehütte",
+        "hint": "Doghouse"
+      },
+      {
+        "word": "Aquarium",
+        "hint": "Aquarium / fish tank"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Birds",
+    "description": "Bird species and terms in German",
+    "iconName": "bird",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Vogel",
+        "hint": "Bird"
+      },
+      {
+        "word": "Adler",
+        "hint": "Eagle"
+      },
+      {
+        "word": "Spatz",
+        "hint": "Sparrow"
+      },
+      {
+        "word": "Taube",
+        "hint": "Pigeon / dove"
+      },
+      {
+        "word": "Schwan",
+        "hint": "Swan"
+      },
+      {
+        "word": "Eule",
+        "hint": "Owl"
+      },
+      {
+        "word": "Pinguin",
+        "hint": "Penguin"
+      },
+      {
+        "word": "Storch",
+        "hint": "Stork"
+      },
+      {
+        "word": "Krähe",
+        "hint": "Crow"
+      },
+      {
+        "word": "Falke",
+        "hint": "Falcon"
+      },
+      {
+        "word": "Flamingo",
+        "hint": "Flamingo"
+      },
+      {
+        "word": "Nachtigall",
+        "hint": "Nightingale"
+      },
+      {
+        "word": "Amsel",
+        "hint": "Blackbird"
+      },
+      {
+        "word": "Feder",
+        "hint": "Feather"
+      },
+      {
+        "word": "Vogelnest",
+        "hint": "Bird's nest"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Insects",
+    "description": "Insect vocabulary in German",
+    "iconName": "ladybug",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Biene",
+        "hint": "Bee"
+      },
+      {
+        "word": "Schmetterling",
+        "hint": "Butterfly"
+      },
+      {
+        "word": "Ameise",
+        "hint": "Ant"
+      },
+      {
+        "word": "Fliege",
+        "hint": "Fly"
+      },
+      {
+        "word": "Mücke",
+        "hint": "Mosquito"
+      },
+      {
+        "word": "Wespe",
+        "hint": "Wasp"
+      },
+      {
+        "word": "Käfer",
+        "hint": "Beetle"
+      },
+      {
+        "word": "Libelle",
+        "hint": "Dragonfly"
+      },
+      {
+        "word": "Marienkäfer",
+        "hint": "Ladybug"
+      },
+      {
+        "word": "Spinne",
+        "hint": "Spider"
+      },
+      {
+        "word": "Heuschrecke",
+        "hint": "Grasshopper"
+      },
+      {
+        "word": "Raupe",
+        "hint": "Caterpillar"
+      },
+      {
+        "word": "Grille",
+        "hint": "Cricket"
+      },
+      {
+        "word": "Glühwürmchen",
+        "hint": "Firefly"
+      },
+      {
+        "word": "Hornisse",
+        "hint": "Hornet"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Marine Life",
+    "description": "Marine animal vocabulary in German",
+    "iconName": "fish",
+    "color": "#0369a1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Fisch",
+        "hint": "Fish"
+      },
+      {
+        "word": "Hai",
+        "hint": "Shark"
+      },
+      {
+        "word": "Delphin",
+        "hint": "Dolphin"
+      },
+      {
+        "word": "Wal",
+        "hint": "Whale"
+      },
+      {
+        "word": "Tintenfisch",
+        "hint": "Octopus / squid"
+      },
+      {
+        "word": "Qualle",
+        "hint": "Jellyfish"
+      },
+      {
+        "word": "Krabbe",
+        "hint": "Crab"
+      },
+      {
+        "word": "Hummer",
+        "hint": "Lobster"
+      },
+      {
+        "word": "Seestern",
+        "hint": "Starfish"
+      },
+      {
+        "word": "Garnele",
+        "hint": "Shrimp"
+      },
+      {
+        "word": "Rochen",
+        "hint": "Ray (fish)"
+      },
+      {
+        "word": "Schildkröte",
+        "hint": "Sea turtle"
+      },
+      {
+        "word": "Seehund",
+        "hint": "Seal"
+      },
+      {
+        "word": "Lachs",
+        "hint": "Salmon"
+      },
+      {
+        "word": "Forelle",
+        "hint": "Trout"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Farm Animals",
+    "description": "Farm animal vocabulary in German",
+    "iconName": "hare",
+    "color": "#92400e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Kuh",
+        "hint": "Cow"
+      },
+      {
+        "word": "Schwein",
+        "hint": "Pig"
+      },
+      {
+        "word": "Pferd",
+        "hint": "Horse"
+      },
+      {
+        "word": "Schaf",
+        "hint": "Sheep"
+      },
+      {
+        "word": "Ziege",
+        "hint": "Goat"
+      },
+      {
+        "word": "Huhn",
+        "hint": "Chicken / hen"
+      },
+      {
+        "word": "Hahn",
+        "hint": "Rooster"
+      },
+      {
+        "word": "Gans",
+        "hint": "Goose"
+      },
+      {
+        "word": "Esel",
+        "hint": "Donkey"
+      },
+      {
+        "word": "Stier",
+        "hint": "Bull"
+      },
+      {
+        "word": "Kalb",
+        "hint": "Calf"
+      },
+      {
+        "word": "Ferkel",
+        "hint": "Piglet"
+      },
+      {
+        "word": "Lamm",
+        "hint": "Lamb"
+      },
+      {
+        "word": "Bauernhof",
+        "hint": "Farm"
+      },
+      {
+        "word": "Scheune",
+        "hint": "Barn"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Feelings & Moods",
+    "description": "Feelings and moods vocabulary in German",
+    "iconName": "heart",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Freude",
+        "hint": "Joy / happiness"
+      },
+      {
+        "word": "Traurigkeit",
+        "hint": "Sadness"
+      },
+      {
+        "word": "Angst",
+        "hint": "Fear / anxiety"
+      },
+      {
+        "word": "Ärger",
+        "hint": "Anger / annoyance"
+      },
+      {
+        "word": "Überraschung",
+        "hint": "Surprise"
+      },
+      {
+        "word": "Stolz",
+        "hint": "Pride"
+      },
+      {
+        "word": "Eifersucht",
+        "hint": "Jealousy"
+      },
+      {
+        "word": "Langeweile",
+        "hint": "Boredom"
+      },
+      {
+        "word": "Begeisterung",
+        "hint": "Excitement / enthusiasm"
+      },
+      {
+        "word": "Erleichterung",
+        "hint": "Relief"
+      },
+      {
+        "word": "Sehnsucht",
+        "hint": "Longing / yearning"
+      },
+      {
+        "word": "Zufriedenheit",
+        "hint": "Contentment / satisfaction"
+      },
+      {
+        "word": "Scham",
+        "hint": "Shame"
+      },
+      {
+        "word": "Dankbarkeit",
+        "hint": "Gratitude"
+      },
+      {
+        "word": "Einsamkeit",
+        "hint": "Loneliness"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Personality Traits",
+    "description": "Personality trait vocabulary in German",
+    "iconName": "person.circle",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Ehrlich",
+        "hint": "Honest"
+      },
+      {
+        "word": "Mutig",
+        "hint": "Brave / courageous"
+      },
+      {
+        "word": "Geduldig",
+        "hint": "Patient"
+      },
+      {
+        "word": "Freundlich",
+        "hint": "Friendly"
+      },
+      {
+        "word": "Schüchtern",
+        "hint": "Shy"
+      },
+      {
+        "word": "Großzügig",
+        "hint": "Generous"
+      },
+      {
+        "word": "Neugierig",
+        "hint": "Curious"
+      },
+      {
+        "word": "Fleißig",
+        "hint": "Hardworking / diligent"
+      },
+      {
+        "word": "Zuverlässig",
+        "hint": "Reliable"
+      },
+      {
+        "word": "Selbstbewusst",
+        "hint": "Self-confident"
+      },
+      {
+        "word": "Bescheiden",
+        "hint": "Modest / humble"
+      },
+      {
+        "word": "Stur",
+        "hint": "Stubborn"
+      },
+      {
+        "word": "Optimistisch",
+        "hint": "Optimistic"
+      },
+      {
+        "word": "Einfühlsam",
+        "hint": "Empathetic / sensitive"
+      },
+      {
+        "word": "Humorvoll",
+        "hint": "Humorous / funny"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relationships",
+    "description": "Relationship vocabulary in German",
+    "iconName": "heart.fill",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Freundschaft",
+        "hint": "Friendship"
+      },
+      {
+        "word": "Liebe",
+        "hint": "Love"
+      },
+      {
+        "word": "Vertrauen",
+        "hint": "Trust"
+      },
+      {
+        "word": "Partner",
+        "hint": "Partner"
+      },
+      {
+        "word": "Hochzeit",
+        "hint": "Wedding"
+      },
+      {
+        "word": "Verlobung",
+        "hint": "Engagement"
+      },
+      {
+        "word": "Scheidung",
+        "hint": "Divorce"
+      },
+      {
+        "word": "Nachbar",
+        "hint": "Neighbor"
+      },
+      {
+        "word": "Kollege",
+        "hint": "Colleague"
+      },
+      {
+        "word": "Bekannter",
+        "hint": "Acquaintance"
+      },
+      {
+        "word": "Beziehung",
+        "hint": "Relationship"
+      },
+      {
+        "word": "Zuneigung",
+        "hint": "Affection"
+      },
+      {
+        "word": "Streit",
+        "hint": "Argument / quarrel"
+      },
+      {
+        "word": "Versöhnung",
+        "hint": "Reconciliation"
+      },
+      {
+        "word": "Zusammenhalt",
+        "hint": "Solidarity / cohesion"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Communication",
+    "description": "Communication terms in German",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Gespräch",
+        "hint": "Conversation"
+      },
+      {
+        "word": "Nachricht",
+        "hint": "Message"
+      },
+      {
+        "word": "Rede",
+        "hint": "Speech"
+      },
+      {
+        "word": "Erklärung",
+        "hint": "Explanation"
+      },
+      {
+        "word": "Meinung",
+        "hint": "Opinion"
+      },
+      {
+        "word": "Frage",
+        "hint": "Question"
+      },
+      {
+        "word": "Antwort",
+        "hint": "Answer"
+      },
+      {
+        "word": "Zustimmung",
+        "hint": "Agreement / consent"
+      },
+      {
+        "word": "Ablehnung",
+        "hint": "Refusal / rejection"
+      },
+      {
+        "word": "Vorschlag",
+        "hint": "Suggestion / proposal"
+      },
+      {
+        "word": "Beschwerde",
+        "hint": "Complaint"
+      },
+      {
+        "word": "Unterhaltung",
+        "hint": "Chat / conversation"
+      },
+      {
+        "word": "Diskussion",
+        "hint": "Discussion"
+      },
+      {
+        "word": "Aussprache",
+        "hint": "Pronunciation"
+      },
+      {
+        "word": "Verständigung",
+        "hint": "Understanding / communication"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gestures & Body Language",
+    "description": "Gestures and body language in German",
+    "iconName": "hand.wave",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Händedruck",
+        "hint": "Handshake"
+      },
+      {
+        "word": "Nicken",
+        "hint": "Nodding"
+      },
+      {
+        "word": "Winken",
+        "hint": "Waving"
+      },
+      {
+        "word": "Umarmen",
+        "hint": "To hug / embrace"
+      },
+      {
+        "word": "Lächeln",
+        "hint": "To smile"
+      },
+      {
+        "word": "Stirnrunzeln",
+        "hint": "To frown"
+      },
+      {
+        "word": "Schulterzucken",
+        "hint": "Shrugging"
+      },
+      {
+        "word": "Klatschen",
+        "hint": "To clap / applaud"
+      },
+      {
+        "word": "Zeigen",
+        "hint": "To point"
+      },
+      {
+        "word": "Verbeugen",
+        "hint": "To bow"
+      },
+      {
+        "word": "Kopfschütteln",
+        "hint": "Shaking one's head"
+      },
+      {
+        "word": "Augenzwinkern",
+        "hint": "Winking"
+      },
+      {
+        "word": "Deuten",
+        "hint": "To gesture / indicate"
+      },
+      {
+        "word": "Gähnen",
+        "hint": "To yawn"
+      },
+      {
+        "word": "Verschränken",
+        "hint": "To cross (arms)"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architecture",
+    "description": "Architecture vocabulary in German",
+    "iconName": "building.2",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Gebäude",
+        "hint": "Building"
+      },
+      {
+        "word": "Fassade",
+        "hint": "Façade"
+      },
+      {
+        "word": "Grundriss",
+        "hint": "Floor plan"
+      },
+      {
+        "word": "Säule",
+        "hint": "Column / pillar"
+      },
+      {
+        "word": "Gewölbe",
+        "hint": "Vault / arch"
+      },
+      {
+        "word": "Treppe",
+        "hint": "Staircase"
+      },
+      {
+        "word": "Balkon",
+        "hint": "Balcony"
+      },
+      {
+        "word": "Dachboden",
+        "hint": "Attic"
+      },
+      {
+        "word": "Keller",
+        "hint": "Basement / cellar"
+      },
+      {
+        "word": "Entwurf",
+        "hint": "Design / draft"
+      },
+      {
+        "word": "Fundament",
+        "hint": "Foundation"
+      },
+      {
+        "word": "Giebel",
+        "hint": "Gable"
+      },
+      {
+        "word": "Erker",
+        "hint": "Bay window"
+      },
+      {
+        "word": "Turm",
+        "hint": "Tower"
+      },
+      {
+        "word": "Architektur",
+        "hint": "Architecture"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Construction",
+    "description": "Construction terms in German",
+    "iconName": "hammer",
+    "color": "#d97706",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Baustelle",
+        "hint": "Construction site"
+      },
+      {
+        "word": "Beton",
+        "hint": "Concrete"
+      },
+      {
+        "word": "Zement",
+        "hint": "Cement"
+      },
+      {
+        "word": "Ziegel",
+        "hint": "Brick"
+      },
+      {
+        "word": "Gerüst",
+        "hint": "Scaffolding"
+      },
+      {
+        "word": "Kran",
+        "hint": "Crane"
+      },
+      {
+        "word": "Bohren",
+        "hint": "To drill"
+      },
+      {
+        "word": "Mauer",
+        "hint": "Wall (masonry)"
+      },
+      {
+        "word": "Putz",
+        "hint": "Plaster"
+      },
+      {
+        "word": "Balken",
+        "hint": "Beam"
+      },
+      {
+        "word": "Bauarbeiter",
+        "hint": "Construction worker"
+      },
+      {
+        "word": "Estrich",
+        "hint": "Screed / floor finish"
+      },
+      {
+        "word": "Isolierung",
+        "hint": "Insulation"
+      },
+      {
+        "word": "Bauplan",
+        "hint": "Building plan"
+      },
+      {
+        "word": "Abbruch",
+        "hint": "Demolition"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Electricity",
+    "description": "Electrical terms in German",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Strom",
+        "hint": "Electricity / current"
+      },
+      {
+        "word": "Steckdose",
+        "hint": "Power outlet / socket"
+      },
+      {
+        "word": "Kabel",
+        "hint": "Cable / wire"
+      },
+      {
+        "word": "Schalter",
+        "hint": "Switch"
+      },
+      {
+        "word": "Sicherung",
+        "hint": "Fuse"
+      },
+      {
+        "word": "Batterie",
+        "hint": "Battery"
+      },
+      {
+        "word": "Spannung",
+        "hint": "Voltage"
+      },
+      {
+        "word": "Glühbirne",
+        "hint": "Light bulb"
+      },
+      {
+        "word": "Stecker",
+        "hint": "Plug"
+      },
+      {
+        "word": "Stromzähler",
+        "hint": "Electricity meter"
+      },
+      {
+        "word": "Leitung",
+        "hint": "Power line / cable"
+      },
+      {
+        "word": "Kurzschluss",
+        "hint": "Short circuit"
+      },
+      {
+        "word": "Elektriker",
+        "hint": "Electrician"
+      },
+      {
+        "word": "Verlängerungskabel",
+        "hint": "Extension cord"
+      },
+      {
+        "word": "Stromausfall",
+        "hint": "Power outage"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Plumbing",
+    "description": "Plumbing terms in German",
+    "iconName": "wrench.and.screwdriver",
+    "color": "#3b82f6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Rohr",
+        "hint": "Pipe"
+      },
+      {
+        "word": "Wasserhahn",
+        "hint": "Faucet / tap"
+      },
+      {
+        "word": "Abfluss",
+        "hint": "Drain"
+      },
+      {
+        "word": "Verstopfung",
+        "hint": "Clog / blockage"
+      },
+      {
+        "word": "Klempner",
+        "hint": "Plumber"
+      },
+      {
+        "word": "Ventil",
+        "hint": "Valve"
+      },
+      {
+        "word": "Dichtung",
+        "hint": "Seal / gasket"
+      },
+      {
+        "word": "Boiler",
+        "hint": "Boiler / water heater"
+      },
+      {
+        "word": "Heizung",
+        "hint": "Heating system"
+      },
+      {
+        "word": "Spüle",
+        "hint": "Kitchen sink"
+      },
+      {
+        "word": "Rohrzange",
+        "hint": "Pipe wrench"
+      },
+      {
+        "word": "Wasserdruck",
+        "hint": "Water pressure"
+      },
+      {
+        "word": "Siphon",
+        "hint": "U-bend / trap"
+      },
+      {
+        "word": "Warmwasser",
+        "hint": "Hot water"
+      },
+      {
+        "word": "Abwasser",
+        "hint": "Wastewater / sewage"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Gardening Tools",
+    "description": "Gardening tool vocabulary in German",
+    "iconName": "leaf.arrow.circlepath",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Rasenmäher",
+        "hint": "Lawn mower"
+      },
+      {
+        "word": "Harke",
+        "hint": "Rake"
+      },
+      {
+        "word": "Spaten",
+        "hint": "Spade"
+      },
+      {
+        "word": "Gartenschere",
+        "hint": "Pruning shears"
+      },
+      {
+        "word": "Schubkarre",
+        "hint": "Wheelbarrow"
+      },
+      {
+        "word": "Hacke",
+        "hint": "Hoe"
+      },
+      {
+        "word": "Gartenschlauch",
+        "hint": "Garden hose"
+      },
+      {
+        "word": "Heckenschere",
+        "hint": "Hedge trimmer"
+      },
+      {
+        "word": "Handschuhe",
+        "hint": "Gloves"
+      },
+      {
+        "word": "Blumentopf",
+        "hint": "Flower pot"
+      },
+      {
+        "word": "Sprinkler",
+        "hint": "Sprinkler"
+      },
+      {
+        "word": "Unkrautstecher",
+        "hint": "Weed puller"
+      },
+      {
+        "word": "Säge",
+        "hint": "Saw"
+      },
+      {
+        "word": "Eimer",
+        "hint": "Bucket"
+      },
+      {
+        "word": "Bewässerung",
+        "hint": "Irrigation"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medicine",
+    "description": "Medical terminology in German",
+    "iconName": "staroflife",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Arzt",
+        "hint": "Doctor"
+      },
+      {
+        "word": "Krankenhaus",
+        "hint": "Hospital"
+      },
+      {
+        "word": "Diagnose",
+        "hint": "Diagnosis"
+      },
+      {
+        "word": "Operation",
+        "hint": "Surgery / operation"
+      },
+      {
+        "word": "Krankheit",
+        "hint": "Illness / disease"
+      },
+      {
+        "word": "Symptom",
+        "hint": "Symptom"
+      },
+      {
+        "word": "Behandlung",
+        "hint": "Treatment"
+      },
+      {
+        "word": "Impfung",
+        "hint": "Vaccination"
+      },
+      {
+        "word": "Blutdruck",
+        "hint": "Blood pressure"
+      },
+      {
+        "word": "Sprechstunde",
+        "hint": "Office hours / consultation"
+      },
+      {
+        "word": "Krankenschwester",
+        "hint": "Nurse"
+      },
+      {
+        "word": "Notaufnahme",
+        "hint": "Emergency room"
+      },
+      {
+        "word": "Untersuchung",
+        "hint": "Examination"
+      },
+      {
+        "word": "Chirurg",
+        "hint": "Surgeon"
+      },
+      {
+        "word": "Heilung",
+        "hint": "Healing / cure"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Pharmacy",
+    "description": "Pharmacy and medication terms in German",
+    "iconName": "cross.case",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Apotheke",
+        "hint": "Pharmacy"
+      },
+      {
+        "word": "Rezept",
+        "hint": "Prescription"
+      },
+      {
+        "word": "Tablette",
+        "hint": "Tablet / pill"
+      },
+      {
+        "word": "Salbe",
+        "hint": "Ointment / cream"
+      },
+      {
+        "word": "Tropfen",
+        "hint": "Drops (medicine)"
+      },
+      {
+        "word": "Nebenwirkung",
+        "hint": "Side effect"
+      },
+      {
+        "word": "Dosierung",
+        "hint": "Dosage"
+      },
+      {
+        "word": "Schmerzmittel",
+        "hint": "Painkiller"
+      },
+      {
+        "word": "Hustensaft",
+        "hint": "Cough syrup"
+      },
+      {
+        "word": "Pflaster",
+        "hint": "Band-aid / plaster"
+      },
+      {
+        "word": "Antibiotikum",
+        "hint": "Antibiotic"
+      },
+      {
+        "word": "Beipackzettel",
+        "hint": "Package insert / leaflet"
+      },
+      {
+        "word": "Wirkstoff",
+        "hint": "Active ingredient"
+      },
+      {
+        "word": "Apotheker",
+        "hint": "Pharmacist"
+      },
+      {
+        "word": "Verband",
+        "hint": "Bandage"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Fitness and exercise vocabulary in German",
+    "iconName": "figure.run",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Training",
+        "hint": "Training / workout"
+      },
+      {
+        "word": "Fitnessstudio",
+        "hint": "Gym"
+      },
+      {
+        "word": "Ausdauer",
+        "hint": "Endurance / stamina"
+      },
+      {
+        "word": "Hantel",
+        "hint": "Dumbbell"
+      },
+      {
+        "word": "Liegestütze",
+        "hint": "Push-ups"
+      },
+      {
+        "word": "Kniebeuge",
+        "hint": "Squat"
+      },
+      {
+        "word": "Dehnen",
+        "hint": "Stretching"
+      },
+      {
+        "word": "Aufwärmen",
+        "hint": "Warm-up"
+      },
+      {
+        "word": "Wiederholung",
+        "hint": "Repetition"
+      },
+      {
+        "word": "Muskelkater",
+        "hint": "Muscle soreness"
+      },
+      {
+        "word": "Laufband",
+        "hint": "Treadmill"
+      },
+      {
+        "word": "Bauchmuskel",
+        "hint": "Abdominal muscle"
+      },
+      {
+        "word": "Kondition",
+        "hint": "Physical condition"
+      },
+      {
+        "word": "Krafttraining",
+        "hint": "Strength training"
+      },
+      {
+        "word": "Erholung",
+        "hint": "Recovery / rest"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Yoga & Meditation",
+    "description": "Yoga and meditation terms in German",
+    "iconName": "figure.mind.and.body",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Yogamatte",
+        "hint": "Yoga mat"
+      },
+      {
+        "word": "Atmung",
+        "hint": "Breathing"
+      },
+      {
+        "word": "Meditation",
+        "hint": "Meditation"
+      },
+      {
+        "word": "Gleichgewicht",
+        "hint": "Balance"
+      },
+      {
+        "word": "Entspannung",
+        "hint": "Relaxation"
+      },
+      {
+        "word": "Haltung",
+        "hint": "Posture / pose"
+      },
+      {
+        "word": "Achtsamkeit",
+        "hint": "Mindfulness"
+      },
+      {
+        "word": "Übung",
+        "hint": "Exercise / practice"
+      },
+      {
+        "word": "Beweglichkeit",
+        "hint": "Flexibility"
+      },
+      {
+        "word": "Konzentration",
+        "hint": "Concentration"
+      },
+      {
+        "word": "Harmonie",
+        "hint": "Harmony"
+      },
+      {
+        "word": "Anleitung",
+        "hint": "Instruction / guidance"
+      },
+      {
+        "word": "Kraft",
+        "hint": "Strength / power"
+      },
+      {
+        "word": "Gelassenheit",
+        "hint": "Serenity / calmness"
+      },
+      {
+        "word": "Körperhaltung",
+        "hint": "Body posture"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Mental Health",
+    "description": "Mental health vocabulary in German",
+    "iconName": "brain.head.profile",
+    "color": "#14b8a6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Therapie",
+        "hint": "Therapy"
+      },
+      {
+        "word": "Psychologe",
+        "hint": "Psychologist"
+      },
+      {
+        "word": "Selbstwertgefühl",
+        "hint": "Self-esteem"
+      },
+      {
+        "word": "Stressbewältigung",
+        "hint": "Stress management"
+      },
+      {
+        "word": "Wohlbefinden",
+        "hint": "Well-being"
+      },
+      {
+        "word": "Burnout",
+        "hint": "Burnout"
+      },
+      {
+        "word": "Bewältigung",
+        "hint": "Coping"
+      },
+      {
+        "word": "Resilienz",
+        "hint": "Resilience"
+      },
+      {
+        "word": "Selbstfürsorge",
+        "hint": "Self-care"
+      },
+      {
+        "word": "Erschöpfung",
+        "hint": "Exhaustion"
+      },
+      {
+        "word": "Beratung",
+        "hint": "Counseling"
+      },
+      {
+        "word": "Lebensqualität",
+        "hint": "Quality of life"
+      },
+      {
+        "word": "Ausgeglichenheit",
+        "hint": "Balance / equanimity"
+      },
+      {
+        "word": "Schlafstörung",
+        "hint": "Sleep disorder"
+      },
+      {
+        "word": "Geborgenheit",
+        "hint": "Sense of security"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Vehicles",
+    "description": "Vehicle vocabulary in German",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Auto",
+        "hint": "Car"
+      },
+      {
+        "word": "Lastwagen",
+        "hint": "Truck"
+      },
+      {
+        "word": "Motorrad",
+        "hint": "Motorcycle"
+      },
+      {
+        "word": "Roller",
+        "hint": "Scooter"
+      },
+      {
+        "word": "Lieferwagen",
+        "hint": "Van / delivery truck"
+      },
+      {
+        "word": "Krankenwagen",
+        "hint": "Ambulance"
+      },
+      {
+        "word": "Feuerwehr",
+        "hint": "Fire truck / fire dept."
+      },
+      {
+        "word": "Polizeiauto",
+        "hint": "Police car"
+      },
+      {
+        "word": "Traktor",
+        "hint": "Tractor"
+      },
+      {
+        "word": "Wohnmobil",
+        "hint": "Camper van / RV"
+      },
+      {
+        "word": "Geländewagen",
+        "hint": "SUV / off-road vehicle"
+      },
+      {
+        "word": "Taxi",
+        "hint": "Taxi / cab"
+      },
+      {
+        "word": "Führerschein",
+        "hint": "Driver's license"
+      },
+      {
+        "word": "Windschutzscheibe",
+        "hint": "Windshield"
+      },
+      {
+        "word": "Rückspiegel",
+        "hint": "Rearview mirror"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Aviation",
+    "description": "Aviation and flight vocabulary in German",
+    "iconName": "airplane",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Flugzeug",
+        "hint": "Airplane"
+      },
+      {
+        "word": "Flughafen",
+        "hint": "Airport"
+      },
+      {
+        "word": "Landung",
+        "hint": "Landing"
+      },
+      {
+        "word": "Start",
+        "hint": "Takeoff"
+      },
+      {
+        "word": "Pilot",
+        "hint": "Pilot"
+      },
+      {
+        "word": "Passagier",
+        "hint": "Passenger"
+      },
+      {
+        "word": "Flügel",
+        "hint": "Wing"
+      },
+      {
+        "word": "Turbine",
+        "hint": "Turbine / engine"
+      },
+      {
+        "word": "Cockpit",
+        "hint": "Cockpit"
+      },
+      {
+        "word": "Flugsteig",
+        "hint": "Gate (airport)"
+      },
+      {
+        "word": "Bordkarte",
+        "hint": "Boarding pass"
+      },
+      {
+        "word": "Gepäckband",
+        "hint": "Baggage carousel"
+      },
+      {
+        "word": "Stewardess",
+        "hint": "Flight attendant"
+      },
+      {
+        "word": "Höhenmesser",
+        "hint": "Altimeter"
+      },
+      {
+        "word": "Hubschrauber",
+        "hint": "Helicopter"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Shipping & Boats",
+    "description": "Shipping and boating vocabulary in German",
+    "iconName": "sailboat",
+    "color": "#0369a1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Schiff",
+        "hint": "Ship"
+      },
+      {
+        "word": "Boot",
+        "hint": "Boat"
+      },
+      {
+        "word": "Segelboot",
+        "hint": "Sailboat"
+      },
+      {
+        "word": "Fähre",
+        "hint": "Ferry"
+      },
+      {
+        "word": "Hafen",
+        "hint": "Port / harbor"
+      },
+      {
+        "word": "Kapitän",
+        "hint": "Captain"
+      },
+      {
+        "word": "Matrose",
+        "hint": "Sailor"
+      },
+      {
+        "word": "Ladung",
+        "hint": "Cargo / freight"
+      },
+      {
+        "word": "Deck",
+        "hint": "Deck"
+      },
+      {
+        "word": "Mast",
+        "hint": "Mast"
+      },
+      {
+        "word": "Segel",
+        "hint": "Sail"
+      },
+      {
+        "word": "Steuer",
+        "hint": "Helm / rudder"
+      },
+      {
+        "word": "Rettungsboot",
+        "hint": "Lifeboat"
+      },
+      {
+        "word": "Containerschiff",
+        "hint": "Container ship"
+      },
+      {
+        "word": "Kreuzfahrt",
+        "hint": "Cruise"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Cycling",
+    "description": "Cycling vocabulary in German",
+    "iconName": "bicycle",
+    "color": "#16a34a",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Fahrrad",
+        "hint": "Bicycle"
+      },
+      {
+        "word": "Reifen",
+        "hint": "Tire"
+      },
+      {
+        "word": "Sattel",
+        "hint": "Saddle / seat"
+      },
+      {
+        "word": "Lenker",
+        "hint": "Handlebars"
+      },
+      {
+        "word": "Bremse",
+        "hint": "Brake"
+      },
+      {
+        "word": "Pedal",
+        "hint": "Pedal"
+      },
+      {
+        "word": "Kette",
+        "hint": "Chain"
+      },
+      {
+        "word": "Helm",
+        "hint": "Helmet"
+      },
+      {
+        "word": "Schaltung",
+        "hint": "Gears / shifting"
+      },
+      {
+        "word": "Radweg",
+        "hint": "Bike path"
+      },
+      {
+        "word": "Speiche",
+        "hint": "Spoke"
+      },
+      {
+        "word": "Klingel",
+        "hint": "Bell"
+      },
+      {
+        "word": "Luftpumpe",
+        "hint": "Air pump"
+      },
+      {
+        "word": "Gepäckträger",
+        "hint": "Bike rack / carrier"
+      },
+      {
+        "word": "Fahrradschloss",
+        "hint": "Bike lock"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Trains & Rail",
+    "description": "Train and railway vocabulary in German",
+    "iconName": "tram",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Zug",
+        "hint": "Train"
+      },
+      {
+        "word": "Bahnhof",
+        "hint": "Train station"
+      },
+      {
+        "word": "Gleis",
+        "hint": "Track / platform"
+      },
+      {
+        "word": "Fahrkarte",
+        "hint": "Ticket"
+      },
+      {
+        "word": "Abfahrt",
+        "hint": "Departure"
+      },
+      {
+        "word": "Ankunft",
+        "hint": "Arrival"
+      },
+      {
+        "word": "Umsteigen",
+        "hint": "To transfer / change"
+      },
+      {
+        "word": "Abteil",
+        "hint": "Compartment"
+      },
+      {
+        "word": "Schaffner",
+        "hint": "Conductor"
+      },
+      {
+        "word": "Fahrplan",
+        "hint": "Schedule / timetable"
+      },
+      {
+        "word": "Verspätung",
+        "hint": "Delay"
+      },
+      {
+        "word": "Schnellzug",
+        "hint": "Express train"
+      },
+      {
+        "word": "Bahnsteig",
+        "hint": "Platform"
+      },
+      {
+        "word": "Schienenverkehr",
+        "hint": "Rail traffic"
+      },
+      {
+        "word": "Straßenbahn",
+        "hint": "Tram / streetcar"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Mathematics",
+    "description": "Math vocabulary in German",
+    "iconName": "function",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Rechnung",
+        "hint": "Calculation"
+      },
+      {
+        "word": "Gleichung",
+        "hint": "Equation"
+      },
+      {
+        "word": "Bruch",
+        "hint": "Fraction"
+      },
+      {
+        "word": "Prozent",
+        "hint": "Percent"
+      },
+      {
+        "word": "Summe",
+        "hint": "Sum / total"
+      },
+      {
+        "word": "Winkel",
+        "hint": "Angle"
+      },
+      {
+        "word": "Durchschnitt",
+        "hint": "Average"
+      },
+      {
+        "word": "Geometrie",
+        "hint": "Geometry"
+      },
+      {
+        "word": "Algebra",
+        "hint": "Algebra"
+      },
+      {
+        "word": "Dreieck",
+        "hint": "Triangle"
+      },
+      {
+        "word": "Quadrat",
+        "hint": "Square"
+      },
+      {
+        "word": "Formel",
+        "hint": "Formula"
+      },
+      {
+        "word": "Ergebnis",
+        "hint": "Result"
+      },
+      {
+        "word": "Taschenrechner",
+        "hint": "Calculator"
+      },
+      {
+        "word": "Dezimalzahl",
+        "hint": "Decimal number"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Physics",
+    "description": "Physics vocabulary in German",
+    "iconName": "atom",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Energie",
+        "hint": "Energy"
+      },
+      {
+        "word": "Geschwindigkeit",
+        "hint": "Speed / velocity"
+      },
+      {
+        "word": "Kraft",
+        "hint": "Force"
+      },
+      {
+        "word": "Schwerkraft",
+        "hint": "Gravity"
+      },
+      {
+        "word": "Masse",
+        "hint": "Mass"
+      },
+      {
+        "word": "Beschleunigung",
+        "hint": "Acceleration"
+      },
+      {
+        "word": "Elektrizität",
+        "hint": "Electricity"
+      },
+      {
+        "word": "Magnetismus",
+        "hint": "Magnetism"
+      },
+      {
+        "word": "Temperatur",
+        "hint": "Temperature"
+      },
+      {
+        "word": "Druck",
+        "hint": "Pressure"
+      },
+      {
+        "word": "Wellenlänge",
+        "hint": "Wavelength"
+      },
+      {
+        "word": "Reibung",
+        "hint": "Friction"
+      },
+      {
+        "word": "Optik",
+        "hint": "Optics"
+      },
+      {
+        "word": "Atom",
+        "hint": "Atom"
+      },
+      {
+        "word": "Experiment",
+        "hint": "Experiment"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemistry",
+    "description": "Chemistry vocabulary in German",
+    "iconName": "flask",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Element",
+        "hint": "Element"
+      },
+      {
+        "word": "Molekül",
+        "hint": "Molecule"
+      },
+      {
+        "word": "Reaktion",
+        "hint": "Reaction"
+      },
+      {
+        "word": "Säure",
+        "hint": "Acid"
+      },
+      {
+        "word": "Verbindung",
+        "hint": "Compound / bond"
+      },
+      {
+        "word": "Lösung",
+        "hint": "Solution"
+      },
+      {
+        "word": "Periodensystem",
+        "hint": "Periodic table"
+      },
+      {
+        "word": "Wasserstoff",
+        "hint": "Hydrogen"
+      },
+      {
+        "word": "Sauerstoff",
+        "hint": "Oxygen"
+      },
+      {
+        "word": "Reagenzglas",
+        "hint": "Test tube"
+      },
+      {
+        "word": "Katalysator",
+        "hint": "Catalyst"
+      },
+      {
+        "word": "Elektron",
+        "hint": "Electron"
+      },
+      {
+        "word": "Proton",
+        "hint": "Proton"
+      },
+      {
+        "word": "Forschung",
+        "hint": "Research"
+      },
+      {
+        "word": "Laboratorium",
+        "hint": "Laboratory"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biology",
+    "description": "Biology vocabulary in German",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Zelle",
+        "hint": "Cell"
+      },
+      {
+        "word": "Organismus",
+        "hint": "Organism"
+      },
+      {
+        "word": "Ökosystem",
+        "hint": "Ecosystem"
+      },
+      {
+        "word": "Photosynthese",
+        "hint": "Photosynthesis"
+      },
+      {
+        "word": "Chromosom",
+        "hint": "Chromosome"
+      },
+      {
+        "word": "Evolution",
+        "hint": "Evolution"
+      },
+      {
+        "word": "Bakterie",
+        "hint": "Bacterium"
+      },
+      {
+        "word": "Virus",
+        "hint": "Virus"
+      },
+      {
+        "word": "Mikroskop",
+        "hint": "Microscope"
+      },
+      {
+        "word": "Gewebe",
+        "hint": "Tissue"
+      },
+      {
+        "word": "Stoffwechsel",
+        "hint": "Metabolism"
+      },
+      {
+        "word": "Artenvielfalt",
+        "hint": "Biodiversity"
+      },
+      {
+        "word": "Vererbung",
+        "hint": "Heredity / inheritance"
+      },
+      {
+        "word": "Nahrungskette",
+        "hint": "Food chain"
+      },
+      {
+        "word": "Lebensraum",
+        "hint": "Habitat"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Science (General)",
+    "description": "General science vocabulary in German",
+    "iconName": "magnifyingglass",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Wissenschaft",
+        "hint": "Science"
+      },
+      {
+        "word": "Hypothese",
+        "hint": "Hypothesis"
+      },
+      {
+        "word": "Theorie",
+        "hint": "Theory"
+      },
+      {
+        "word": "Beweis",
+        "hint": "Proof / evidence"
+      },
+      {
+        "word": "Entdeckung",
+        "hint": "Discovery"
+      },
+      {
+        "word": "Erfindung",
+        "hint": "Invention"
+      },
+      {
+        "word": "Forscher",
+        "hint": "Researcher / scientist"
+      },
+      {
+        "word": "Versuch",
+        "hint": "Experiment / attempt"
+      },
+      {
+        "word": "Erkenntnis",
+        "hint": "Insight / finding"
+      },
+      {
+        "word": "Daten",
+        "hint": "Data"
+      },
+      {
+        "word": "Methode",
+        "hint": "Method"
+      },
+      {
+        "word": "Analyse",
+        "hint": "Analysis"
+      },
+      {
+        "word": "Ergebnis",
+        "hint": "Result / finding"
+      },
+      {
+        "word": "Technologie",
+        "hint": "Technology"
+      },
+      {
+        "word": "Fortschritt",
+        "hint": "Progress / advancement"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festivals",
+    "description": "Festival vocabulary in German",
+    "iconName": "party.popper",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Oktoberfest",
+        "hint": "Munich beer festival"
+      },
+      {
+        "word": "Karneval",
+        "hint": "Carnival"
+      },
+      {
+        "word": "Weihnachtsmarkt",
+        "hint": "Christmas market"
+      },
+      {
+        "word": "Silvester",
+        "hint": "New Year's Eve"
+      },
+      {
+        "word": "Ostern",
+        "hint": "Easter"
+      },
+      {
+        "word": "Erntedankfest",
+        "hint": "Thanksgiving / harvest fest"
+      },
+      {
+        "word": "Fasching",
+        "hint": "Carnival season"
+      },
+      {
+        "word": "Volksfest",
+        "hint": "Folk festival / fair"
+      },
+      {
+        "word": "Umzug",
+        "hint": "Parade / procession"
+      },
+      {
+        "word": "Feuerwerk",
+        "hint": "Fireworks"
+      },
+      {
+        "word": "Festzelt",
+        "hint": "Festival tent"
+      },
+      {
+        "word": "Bratwurst",
+        "hint": "Grilled sausage"
+      },
+      {
+        "word": "Lebkuchen",
+        "hint": "Gingerbread"
+      },
+      {
+        "word": "Glühwein",
+        "hint": "Mulled wine"
+      },
+      {
+        "word": "Jahrmarkt",
+        "hint": "Annual fair / funfair"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Traditions & Customs",
+    "description": "German traditions and customs vocabulary",
+    "iconName": "star",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Brauch",
+        "hint": "Custom / tradition"
+      },
+      {
+        "word": "Tracht",
+        "hint": "Traditional costume"
+      },
+      {
+        "word": "Maibaum",
+        "hint": "Maypole"
+      },
+      {
+        "word": "Adventskalender",
+        "hint": "Advent calendar"
+      },
+      {
+        "word": "Nikolaus",
+        "hint": "Saint Nicholas"
+      },
+      {
+        "word": "Christkind",
+        "hint": "Christ Child (gift bringer)"
+      },
+      {
+        "word": "Osterhase",
+        "hint": "Easter bunny"
+      },
+      {
+        "word": "Schützenfest",
+        "hint": "Shooting festival"
+      },
+      {
+        "word": "Dirndl",
+        "hint": "Traditional dress (fem.)"
+      },
+      {
+        "word": "Lederhosen",
+        "hint": "Leather shorts (trad.)"
+      },
+      {
+        "word": "Adventskranz",
+        "hint": "Advent wreath"
+      },
+      {
+        "word": "Brauchtum",
+        "hint": "Folklore / customs"
+      },
+      {
+        "word": "Stammtisch",
+        "hint": "Regular table (meetup)"
+      },
+      {
+        "word": "Kindergarten",
+        "hint": "Kindergarten"
+      },
+      {
+        "word": "Gemütlichkeit",
+        "hint": "Coziness / comfort"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Weddings",
+    "description": "Wedding vocabulary in German",
+    "iconName": "heart.circle",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Hochzeit",
+        "hint": "Wedding"
+      },
+      {
+        "word": "Braut",
+        "hint": "Bride"
+      },
+      {
+        "word": "Bräutigam",
+        "hint": "Groom"
+      },
+      {
+        "word": "Trauringe",
+        "hint": "Wedding rings"
+      },
+      {
+        "word": "Brautkleid",
+        "hint": "Wedding dress"
+      },
+      {
+        "word": "Standesamt",
+        "hint": "Registry office"
+      },
+      {
+        "word": "Trauzeuge",
+        "hint": "Best man / witness"
+      },
+      {
+        "word": "Brautstrauß",
+        "hint": "Bridal bouquet"
+      },
+      {
+        "word": "Feier",
+        "hint": "Celebration / reception"
+      },
+      {
+        "word": "Hochzeitstorte",
+        "hint": "Wedding cake"
+      },
+      {
+        "word": "Gelübde",
+        "hint": "Vow"
+      },
+      {
+        "word": "Flitterwochen",
+        "hint": "Honeymoon"
+      },
+      {
+        "word": "Einladung",
+        "hint": "Invitation"
+      },
+      {
+        "word": "Kirchenhochzeit",
+        "hint": "Church wedding"
+      },
+      {
+        "word": "Polterabend",
+        "hint": "Pre-wedding party"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Holidays",
+    "description": "Holiday vocabulary in German",
+    "iconName": "calendar",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Feiertag",
+        "hint": "Public holiday"
+      },
+      {
+        "word": "Urlaub",
+        "hint": "Vacation / holiday"
+      },
+      {
+        "word": "Weihnachten",
+        "hint": "Christmas"
+      },
+      {
+        "word": "Pfingsten",
+        "hint": "Pentecost / Whitsun"
+      },
+      {
+        "word": "Himmelfahrt",
+        "hint": "Ascension Day"
+      },
+      {
+        "word": "Neujahr",
+        "hint": "New Year's Day"
+      },
+      {
+        "word": "Karfreitag",
+        "hint": "Good Friday"
+      },
+      {
+        "word": "Allerheiligen",
+        "hint": "All Saints' Day"
+      },
+      {
+        "word": "Muttertag",
+        "hint": "Mother's Day"
+      },
+      {
+        "word": "Vatertag",
+        "hint": "Father's Day"
+      },
+      {
+        "word": "Valentinstag",
+        "hint": "Valentine's Day"
+      },
+      {
+        "word": "Rosenmontag",
+        "hint": "Carnival Monday"
+      },
+      {
+        "word": "Heiligabend",
+        "hint": "Christmas Eve"
+      },
+      {
+        "word": "Fronleichnam",
+        "hint": "Corpus Christi"
+      },
+      {
+        "word": "Reformationstag",
+        "hint": "Reformation Day"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Celebrations",
+    "description": "General celebration vocabulary in German",
+    "iconName": "gift",
+    "color": "#d946ef",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Geburtstag",
+        "hint": "Birthday"
+      },
+      {
+        "word": "Geschenk",
+        "hint": "Gift / present"
+      },
+      {
+        "word": "Kerze",
+        "hint": "Candle"
+      },
+      {
+        "word": "Luftballon",
+        "hint": "Balloon"
+      },
+      {
+        "word": "Torte",
+        "hint": "Cake (fancy)"
+      },
+      {
+        "word": "Überraschung",
+        "hint": "Surprise"
+      },
+      {
+        "word": "Einladung",
+        "hint": "Invitation"
+      },
+      {
+        "word": "Gast",
+        "hint": "Guest"
+      },
+      {
+        "word": "Feier",
+        "hint": "Party / celebration"
+      },
+      {
+        "word": "Konfetti",
+        "hint": "Confetti"
+      },
+      {
+        "word": "Girlande",
+        "hint": "Garland / streamer"
+      },
+      {
+        "word": "Jubiläum",
+        "hint": "Anniversary / jubilee"
+      },
+      {
+        "word": "Prosit",
+        "hint": "Cheers! / Toast!"
+      },
+      {
+        "word": "Gratulation",
+        "hint": "Congratulations"
+      },
+      {
+        "word": "Glückwunsch",
+        "hint": "Best wishes / congrats"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Fashion",
+    "description": "Fashion vocabulary in German",
+    "iconName": "tshirt",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Mode",
+        "hint": "Fashion"
+      },
+      {
+        "word": "Stil",
+        "hint": "Style"
+      },
+      {
+        "word": "Kollektion",
+        "hint": "Collection"
+      },
+      {
+        "word": "Designer",
+        "hint": "Designer"
+      },
+      {
+        "word": "Laufsteg",
+        "hint": "Runway / catwalk"
+      },
+      {
+        "word": "Modenschau",
+        "hint": "Fashion show"
+      },
+      {
+        "word": "Boutique",
+        "hint": "Boutique"
+      },
+      {
+        "word": "Schnitt",
+        "hint": "Cut / pattern"
+      },
+      {
+        "word": "Accessoire",
+        "hint": "Accessory"
+      },
+      {
+        "word": "Handtasche",
+        "hint": "Handbag / purse"
+      },
+      {
+        "word": "Gürtel",
+        "hint": "Belt"
+      },
+      {
+        "word": "Absatz",
+        "hint": "Heel (shoe)"
+      },
+      {
+        "word": "Eleganz",
+        "hint": "Elegance"
+      },
+      {
+        "word": "Garderobe",
+        "hint": "Wardrobe"
+      },
+      {
+        "word": "Modezeitschrift",
+        "hint": "Fashion magazine"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Textiles & Fabrics",
+    "description": "Textile and fabric vocabulary in German",
+    "iconName": "square.stack.3d.up",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Stoff",
+        "hint": "Fabric / material"
+      },
+      {
+        "word": "Baumwolle",
+        "hint": "Cotton"
+      },
+      {
+        "word": "Seide",
+        "hint": "Silk"
+      },
+      {
+        "word": "Leinen",
+        "hint": "Linen"
+      },
+      {
+        "word": "Wolle",
+        "hint": "Wool"
+      },
+      {
+        "word": "Polyester",
+        "hint": "Polyester"
+      },
+      {
+        "word": "Samt",
+        "hint": "Velvet"
+      },
+      {
+        "word": "Spitze",
+        "hint": "Lace"
+      },
+      {
+        "word": "Denim",
+        "hint": "Denim"
+      },
+      {
+        "word": "Kaschmir",
+        "hint": "Cashmere"
+      },
+      {
+        "word": "Filz",
+        "hint": "Felt"
+      },
+      {
+        "word": "Schneiderei",
+        "hint": "Tailoring / tailor shop"
+      },
+      {
+        "word": "Reißverschluss",
+        "hint": "Zipper"
+      },
+      {
+        "word": "Knopf",
+        "hint": "Button"
+      },
+      {
+        "word": "Nähmaschine",
+        "hint": "Sewing machine"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Jewelry",
+    "description": "Jewelry vocabulary in German",
+    "iconName": "sparkle",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Schmuck",
+        "hint": "Jewelry"
+      },
+      {
+        "word": "Ring",
+        "hint": "Ring"
+      },
+      {
+        "word": "Halskette",
+        "hint": "Necklace"
+      },
+      {
+        "word": "Armband",
+        "hint": "Bracelet"
+      },
+      {
+        "word": "Ohrring",
+        "hint": "Earring"
+      },
+      {
+        "word": "Brosche",
+        "hint": "Brooch"
+      },
+      {
+        "word": "Diamant",
+        "hint": "Diamond"
+      },
+      {
+        "word": "Gold",
+        "hint": "Gold"
+      },
+      {
+        "word": "Silber",
+        "hint": "Silver"
+      },
+      {
+        "word": "Perle",
+        "hint": "Pearl"
+      },
+      {
+        "word": "Edelstein",
+        "hint": "Gemstone"
+      },
+      {
+        "word": "Anhänger",
+        "hint": "Pendant"
+      },
+      {
+        "word": "Juwelier",
+        "hint": "Jeweler"
+      },
+      {
+        "word": "Karat",
+        "hint": "Carat"
+      },
+      {
+        "word": "Armbanduhr",
+        "hint": "Wristwatch"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Cosmetics & Beauty",
+    "description": "Cosmetics and beauty vocabulary in German",
+    "iconName": "sparkles",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Lippenstift",
+        "hint": "Lipstick"
+      },
+      {
+        "word": "Mascara",
+        "hint": "Mascara"
+      },
+      {
+        "word": "Lidschatten",
+        "hint": "Eye shadow"
+      },
+      {
+        "word": "Grundierung",
+        "hint": "Foundation (makeup)"
+      },
+      {
+        "word": "Puder",
+        "hint": "Powder"
+      },
+      {
+        "word": "Nagellack",
+        "hint": "Nail polish"
+      },
+      {
+        "word": "Creme",
+        "hint": "Cream / lotion"
+      },
+      {
+        "word": "Parfüm",
+        "hint": "Perfume"
+      },
+      {
+        "word": "Hautpflege",
+        "hint": "Skincare"
+      },
+      {
+        "word": "Sonnenschutz",
+        "hint": "Sunscreen"
+      },
+      {
+        "word": "Augencreme",
+        "hint": "Eye cream"
+      },
+      {
+        "word": "Wimperntusche",
+        "hint": "Mascara (alt.)"
+      },
+      {
+        "word": "Pinzette",
+        "hint": "Tweezers"
+      },
+      {
+        "word": "Feuchtigkeitscreme",
+        "hint": "Moisturizer"
+      },
+      {
+        "word": "Kosmetiktasche",
+        "hint": "Makeup bag"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Hairstyles & Hair Care",
+    "description": "Hair and hairstyle vocabulary in German",
+    "iconName": "scissors",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Frisur",
+        "hint": "Hairstyle"
+      },
+      {
+        "word": "Friseur",
+        "hint": "Hairdresser / barber"
+      },
+      {
+        "word": "Haarschnitt",
+        "hint": "Haircut"
+      },
+      {
+        "word": "Pony",
+        "hint": "Bangs / fringe"
+      },
+      {
+        "word": "Locken",
+        "hint": "Curls"
+      },
+      {
+        "word": "Zopf",
+        "hint": "Braid / ponytail"
+      },
+      {
+        "word": "Haarfarbe",
+        "hint": "Hair color"
+      },
+      {
+        "word": "Glätteisen",
+        "hint": "Hair straightener"
+      },
+      {
+        "word": "Lockenstab",
+        "hint": "Curling iron"
+      },
+      {
+        "word": "Haarspray",
+        "hint": "Hair spray"
+      },
+      {
+        "word": "Shampoo",
+        "hint": "Shampoo"
+      },
+      {
+        "word": "Conditioner",
+        "hint": "Conditioner"
+      },
+      {
+        "word": "Scheitel",
+        "hint": "Parting (hair)"
+      },
+      {
+        "word": "Haar",
+        "hint": "Hair"
+      },
+      {
+        "word": "Haarspange",
+        "hint": "Hair clip / barrette"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Environment",
+    "description": "Environmental vocabulary in German",
+    "iconName": "globe.europe.africa",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Umwelt",
+        "hint": "Environment"
+      },
+      {
+        "word": "Naturschutz",
+        "hint": "Nature conservation"
+      },
+      {
+        "word": "Verschmutzung",
+        "hint": "Pollution"
+      },
+      {
+        "word": "Abholzung",
+        "hint": "Deforestation"
+      },
+      {
+        "word": "Artensterben",
+        "hint": "Species extinction"
+      },
+      {
+        "word": "Ozonschicht",
+        "hint": "Ozone layer"
+      },
+      {
+        "word": "Klimawandel",
+        "hint": "Climate change"
+      },
+      {
+        "word": "Treibhausgas",
+        "hint": "Greenhouse gas"
+      },
+      {
+        "word": "Waldsterben",
+        "hint": "Forest dieback"
+      },
+      {
+        "word": "Müllkippe",
+        "hint": "Landfill / dump"
+      },
+      {
+        "word": "Grundwasser",
+        "hint": "Groundwater"
+      },
+      {
+        "word": "Luftqualität",
+        "hint": "Air quality"
+      },
+      {
+        "word": "Naturgebiet",
+        "hint": "Nature reserve"
+      },
+      {
+        "word": "Abgase",
+        "hint": "Exhaust fumes"
+      },
+      {
+        "word": "Ökologie",
+        "hint": "Ecology"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recycling & Waste",
+    "description": "Recycling and waste management in German",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Recycling",
+        "hint": "Recycling"
+      },
+      {
+        "word": "Mülltrennung",
+        "hint": "Waste separation"
+      },
+      {
+        "word": "Altpapier",
+        "hint": "Waste paper"
+      },
+      {
+        "word": "Pfandflasche",
+        "hint": "Deposit bottle"
+      },
+      {
+        "word": "Biomüll",
+        "hint": "Organic waste"
+      },
+      {
+        "word": "Restmüll",
+        "hint": "Residual waste"
+      },
+      {
+        "word": "Gelber Sack",
+        "hint": "Yellow bag (packaging)"
+      },
+      {
+        "word": "Wertstoff",
+        "hint": "Recyclable material"
+      },
+      {
+        "word": "Kompostieren",
+        "hint": "Composting"
+      },
+      {
+        "word": "Mülleimer",
+        "hint": "Trash can / bin"
+      },
+      {
+        "word": "Verpackung",
+        "hint": "Packaging"
+      },
+      {
+        "word": "Wiederverwertung",
+        "hint": "Reuse / recycling"
+      },
+      {
+        "word": "Sperrmüll",
+        "hint": "Bulky waste"
+      },
+      {
+        "word": "Deponie",
+        "hint": "Landfill / dump"
+      },
+      {
+        "word": "Abfallentsorgung",
+        "hint": "Waste disposal"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energy",
+    "description": "Energy-related vocabulary in German",
+    "iconName": "bolt.fill",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Energie",
+        "hint": "Energy"
+      },
+      {
+        "word": "Solaranlage",
+        "hint": "Solar panel system"
+      },
+      {
+        "word": "Windkraft",
+        "hint": "Wind power"
+      },
+      {
+        "word": "Kernenergie",
+        "hint": "Nuclear energy"
+      },
+      {
+        "word": "Erdgas",
+        "hint": "Natural gas"
+      },
+      {
+        "word": "Kohle",
+        "hint": "Coal"
+      },
+      {
+        "word": "Wasserkraft",
+        "hint": "Hydropower"
+      },
+      {
+        "word": "Biogas",
+        "hint": "Biogas"
+      },
+      {
+        "word": "Energiewende",
+        "hint": "Energy transition"
+      },
+      {
+        "word": "Stromverbrauch",
+        "hint": "Power consumption"
+      },
+      {
+        "word": "Energiequelle",
+        "hint": "Energy source"
+      },
+      {
+        "word": "Photovoltaik",
+        "hint": "Photovoltaics"
+      },
+      {
+        "word": "Stromnetz",
+        "hint": "Power grid"
+      },
+      {
+        "word": "Atomkraftwerk",
+        "hint": "Nuclear power plant"
+      },
+      {
+        "word": "Energiesparen",
+        "hint": "Energy saving"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Climate",
+    "description": "Climate vocabulary in German",
+    "iconName": "thermometer.sun",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Klima",
+        "hint": "Climate"
+      },
+      {
+        "word": "Erderwärmung",
+        "hint": "Global warming"
+      },
+      {
+        "word": "Dürre",
+        "hint": "Drought"
+      },
+      {
+        "word": "Überschwemmung",
+        "hint": "Flood"
+      },
+      {
+        "word": "Treibhauseffekt",
+        "hint": "Greenhouse effect"
+      },
+      {
+        "word": "Kohlendioxid",
+        "hint": "Carbon dioxide"
+      },
+      {
+        "word": "Eisschmelze",
+        "hint": "Ice melting"
+      },
+      {
+        "word": "Meeresspiegel",
+        "hint": "Sea level"
+      },
+      {
+        "word": "Unwetter",
+        "hint": "Severe weather / storm"
+      },
+      {
+        "word": "Klimaschutz",
+        "hint": "Climate protection"
+      },
+      {
+        "word": "Temperaturanstieg",
+        "hint": "Temperature rise"
+      },
+      {
+        "word": "Emissionen",
+        "hint": "Emissions"
+      },
+      {
+        "word": "Nachhaltigkeit",
+        "hint": "Sustainability"
+      },
+      {
+        "word": "Klimakonferenz",
+        "hint": "Climate conference"
+      },
+      {
+        "word": "Wetterextrem",
+        "hint": "Weather extreme"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Sustainability",
+    "description": "Sustainability vocabulary in German",
+    "iconName": "leaf.circle",
+    "color": "#15803d",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Nachhaltigkeit",
+        "hint": "Sustainability"
+      },
+      {
+        "word": "Fairtrade",
+        "hint": "Fair trade"
+      },
+      {
+        "word": "Ökolandbau",
+        "hint": "Organic farming"
+      },
+      {
+        "word": "Elektroauto",
+        "hint": "Electric car"
+      },
+      {
+        "word": "Umweltfreundlich",
+        "hint": "Eco-friendly"
+      },
+      {
+        "word": "Mehrweg",
+        "hint": "Reusable"
+      },
+      {
+        "word": "Bioprodukt",
+        "hint": "Organic product"
+      },
+      {
+        "word": "Ressource",
+        "hint": "Resource"
+      },
+      {
+        "word": "Artenschutz",
+        "hint": "Species protection"
+      },
+      {
+        "word": "Naturstrom",
+        "hint": "Green electricity"
+      },
+      {
+        "word": "Regenwasser",
+        "hint": "Rainwater"
+      },
+      {
+        "word": "Wärmedämmung",
+        "hint": "Thermal insulation"
+      },
+      {
+        "word": "Selbstversorgung",
+        "hint": "Self-sufficiency"
+      },
+      {
+        "word": "Kreislaufwirtschaft",
+        "hint": "Circular economy"
+      },
+      {
+        "word": "Klimaneutral",
+        "hint": "Climate neutral"
+      }
+    ]
+  }
+]

@@ -19,6 +19,7 @@ struct GrammarView: View {
     private var L: AppStrings { localization.strings }
 
     @Binding var hideTabBar: Bool
+    @Binding var navigationPath: NavigationPath
 
     @Query private var languagePrefs: [LanguagePreference]
 
@@ -35,6 +36,20 @@ struct GrammarView: View {
     @State private var questionTransitionId: UUID = UUID()
     @State private var isLoading: Bool = true
     @State private var categoryName: String = ""
+
+    // Next category navigation
+    @State private var nextUnplayedCategoryId: String?
+    @State private var nextUnplayedCategoryName: String?
+
+    private var nextCategoryAction: (() -> Void)? {
+        guard let nextId = nextUnplayedCategoryId else { return nil }
+        return {
+            navigationPath.removeLast(navigationPath.count)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+                navigationPath.append(AppRoute.grammarGame(categoryId: nextId))
+            }
+        }
+    }
 
     // Idle hint
     @State private var idleTimer: Timer? = nil
@@ -553,6 +568,8 @@ struct GrammarView: View {
             gameType: .grammar,
             categoryName: categoryName,
             onPlayAgain: { resetGame() },
+            onNextCategory: nextCategoryAction,
+            nextCategoryName: nextUnplayedCategoryName,
             onDismiss: { dismiss() }
         )
     }
@@ -597,13 +614,16 @@ struct GrammarView: View {
             correctCount += 1
             score += 10
             streak += 1
-            audioService.playWarmPulse()
-            hapticsService.success()
+            audioService.playGrammarCorrect(consecutiveCount: streak)
+            HapticsService.shared.correctAnswer()
+            if streak >= 3 {
+                HapticsService.shared.streakBuilding(count: streak)
+            }
         } else {
             wrongCount += 1
             streak = 0
-            audioService.playSoftNudge()
-            hapticsService.warning()
+            audioService.playGrammarWrong()
+            HapticsService.shared.wrongAnswer()
         }
     }
 
@@ -639,10 +659,40 @@ struct GrammarView: View {
         )
         progressService.recordGameSession(result)
         audioService.playCelebration()
-        hapticsService.success()
+        HapticsService.shared.celebrate()
+
+        // Find next unplayed category
+        findNextUnplayedCategory(progressService: progressService)
 
         withAnimation(.spring(response: 0.6)) {
             isGameComplete = true
+        }
+    }
+
+    private func findNextUnplayedCategory(progressService: ProgressService) {
+        let langPref = languagePrefs.first
+        let source = langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue
+        let target = langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue
+
+        Task {
+            let categories = await contentLoader.loadGrammarCategories(source: source, target: target)
+            guard let currentIdx = categories.firstIndex(where: { $0.id == categoryId }) else { return }
+
+            let ordered = Array(categories[(currentIdx + 1)...]) + Array(categories[..<currentIdx])
+            for cat in ordered {
+                let progress = progressService.categoryProgress(
+                    gameType: .grammar,
+                    category: cat.id,
+                    totalItems: cat.items.count,
+                    source: source,
+                    target: target
+                )
+                if !progress.isComplete {
+                    nextUnplayedCategoryId = cat.id
+                    nextUnplayedCategoryName = cat.name
+                    return
+                }
+            }
         }
     }
 

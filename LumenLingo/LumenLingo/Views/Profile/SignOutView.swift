@@ -123,6 +123,8 @@ struct SignOutView: View {
 
     private var signOutButton: some View {
         Button {
+            AudioService.shared.playSignOutWarning()
+            HapticsService.shared.destructiveAction()
             withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
                 showConfirmation = true
             }
@@ -169,6 +171,8 @@ struct SignOutView: View {
 
             HStack(spacing: 12) {
                 Button {
+                    AudioService.shared.playButtonTap()
+                    HapticsService.shared.buttonPress()
                     withAnimation { showConfirmation = false }
                 } label: {
                     Text(L.cancel)
@@ -184,6 +188,8 @@ struct SignOutView: View {
                 .buttonStyle(LumenPressStyle(weight: .medium))
 
                 Button {
+                    AudioService.shared.playSignOutConfirmed()
+                    HapticsService.shared.destructiveAction()
                     executeSignOut()
                 } label: {
                     Text(L.signOut)

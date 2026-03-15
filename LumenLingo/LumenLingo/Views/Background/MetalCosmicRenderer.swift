@@ -28,8 +28,12 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
     }
     private var starSystems: [Int: StarSystem] = [:]
     
-    // Pre-computed gas cloud particle buffer (spiral halo only)
-    private var gasCloudBuffer: MTLBuffer?
+    // Pre-computed gas cloud particle buffers (per-preset)
+    private var gasCloudBuffers: [Int: MTLBuffer] = [:]
+    // Secondary particle buffers (e.g., accretion disk for Starburst)
+    private var secondaryBuffers: [Int: MTLBuffer] = [:]
+    // Aurora ribbon buffer (preset 2)
+    private var auroraRibbonBuffer: MTLBuffer?
     
     // Timing
     private let startTime = CACurrentMediaTime()
@@ -72,7 +76,7 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
         
         buildPipelines()
         buildAllStarSystems()
-        buildGasCloudBuffer()
+        buildGasCloudBuffers()
     }
     
     // MARK: - Pipeline Construction
@@ -121,10 +125,21 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
             desc.colorAttachments[0].isBlendingEnabled = true
             desc.colorAttachments[0].rgbBlendOperation = .add
             desc.colorAttachments[0].alphaBlendOperation = .add
-            desc.colorAttachments[0].sourceRGBBlendFactor = .one        // premultiplied src
-            desc.colorAttachments[0].destinationRGBBlendFactor = .one   // additive
-            desc.colorAttachments[0].sourceAlphaBlendFactor = .one
-            desc.colorAttachments[0].destinationAlphaBlendFactor = .one
+            if index == 5 {
+                // Starburst React canvas uses source-over internally, then the whole
+                // canvas is screen-blended against the dark background. We cannot do a
+                // true screen composite without an intermediate texture, but source-over
+                // is much closer than raw additive for the dense ring clusters.
+                desc.colorAttachments[0].sourceRGBBlendFactor = .one
+                desc.colorAttachments[0].destinationRGBBlendFactor = .oneMinusSourceAlpha
+                desc.colorAttachments[0].sourceAlphaBlendFactor = .one
+                desc.colorAttachments[0].destinationAlphaBlendFactor = .oneMinusSourceAlpha
+            } else {
+                desc.colorAttachments[0].sourceRGBBlendFactor = .one        // premultiplied src
+                desc.colorAttachments[0].destinationRGBBlendFactor = .one   // additive
+                desc.colorAttachments[0].sourceAlphaBlendFactor = .one
+                desc.colorAttachments[0].destinationAlphaBlendFactor = .one
+            }
             
             do {
                 starPipelines[index] = try device.makeRenderPipelineState(descriptor: desc)
@@ -179,16 +194,41 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
         }
     }
     
-    // MARK: - Gas Cloud Buffer (pre-computed particle data for spiral halo)
+    // MARK: - Gas Cloud Buffers (pre-computed particle data per preset)
     
-    private func buildGasCloudBuffer() {
-        let clouds = StarFieldGenerator.spiralHaloGasClouds()
-        guard !clouds.isEmpty else { return }
-        gasCloudBuffer = device.makeBuffer(
-            bytes: clouds,
-            length: MemoryLayout<GasCloudData>.stride * clouds.count,
-            options: .storageModeShared
-        )
+    private func buildGasCloudBuffers() {
+        let presetClouds: [(index: Int, clouds: [GasCloudData])] = [
+            (0, StarFieldGenerator.lagoonGasClouds()),
+            (1, StarFieldGenerator.celestialGasClouds()),
+            (3, StarFieldGenerator.spiralHaloGasClouds()),
+            (5, StarFieldGenerator.starburstRingGasClouds()),
+        ]
+        for entry in presetClouds {
+            guard !entry.clouds.isEmpty else { continue }
+            gasCloudBuffers[entry.index] = device.makeBuffer(
+                bytes: entry.clouds,
+                length: MemoryLayout<GasCloudData>.stride * entry.clouds.count,
+                options: .storageModeShared
+            )
+        }
+        // Secondary buffers (accretion disk for Starburst)
+        let accretion = StarFieldGenerator.starburstAccretionClouds()
+        if !accretion.isEmpty {
+            secondaryBuffers[5] = device.makeBuffer(
+                bytes: accretion,
+                length: MemoryLayout<GasCloudData>.stride * accretion.count,
+                options: .storageModeShared
+            )
+        }
+        // Aurora ribbon buffer
+        let ribbons = StarFieldGenerator.auroraRibbons()
+        if !ribbons.isEmpty {
+            auroraRibbonBuffer = device.makeBuffer(
+                bytes: ribbons,
+                length: MemoryLayout<AuroraRibbonData>.stride * ribbons.count,
+                options: .storageModeShared
+            )
+        }
     }
     
     // MARK: - MTKViewDelegate
@@ -233,9 +273,17 @@ final class MetalCosmicRenderer: NSObject, MTKViewDelegate {
             
             encoder.setRenderPipelineState(bgPipeline)
             encoder.setFragmentBytes(&uniforms, length: MemoryLayout<CosmicUniforms>.stride, index: 0)
-            // Pass pre-computed gas cloud buffer for spiral halo preset
-            if presetIdx == 3, let gasBuf = gasCloudBuffer {
+            // Pass pre-computed gas cloud buffer for presets that use it
+            if let gasBuf = gasCloudBuffers[presetIdx] {
                 encoder.setFragmentBuffer(gasBuf, offset: 0, index: 1)
+            }
+            // Pass secondary buffer (e.g., accretion disk for Starburst)
+            if let secBuf = secondaryBuffers[presetIdx] {
+                encoder.setFragmentBuffer(secBuf, offset: 0, index: 2)
+            }
+            // Pass aurora ribbon buffer for Solar Aurora preset
+            if presetIdx == 2, let auroraBuf = auroraRibbonBuffer {
+                encoder.setFragmentBuffer(auroraBuf, offset: 0, index: 1)
             }
             encoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: 3)
         }

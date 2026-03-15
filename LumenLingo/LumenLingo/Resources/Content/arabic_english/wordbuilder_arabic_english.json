@@ -1,0 +1,7002 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "فواكه",
+    "description": "أسماء الفواكه الشائعة بالإنجليزية",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "apple",
+        "hint": "تفاحة"
+      },
+      {
+        "word": "orange",
+        "hint": "برتقالة"
+      },
+      {
+        "word": "banana",
+        "hint": "موزة"
+      },
+      {
+        "word": "grape",
+        "hint": "عنب"
+      },
+      {
+        "word": "lemon",
+        "hint": "ليمون"
+      },
+      {
+        "word": "mango",
+        "hint": "مانجو"
+      },
+      {
+        "word": "peach",
+        "hint": "خوخ"
+      },
+      {
+        "word": "cherry",
+        "hint": "كرز"
+      },
+      {
+        "word": "melon",
+        "hint": "شمام"
+      },
+      {
+        "word": "plum",
+        "hint": "برقوق"
+      },
+      {
+        "word": "pear",
+        "hint": "كمثرى"
+      },
+      {
+        "word": "fig",
+        "hint": "تين"
+      },
+      {
+        "word": "date",
+        "hint": "تمر"
+      },
+      {
+        "word": "guava",
+        "hint": "جوافة"
+      },
+      {
+        "word": "kiwi",
+        "hint": "كيوي"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "خضروات",
+    "description": "أسماء الخضروات الشائعة بالإنجليزية",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tomato",
+        "hint": "طماطم"
+      },
+      {
+        "word": "onion",
+        "hint": "بصل"
+      },
+      {
+        "word": "potato",
+        "hint": "بطاطس"
+      },
+      {
+        "word": "carrot",
+        "hint": "جزر"
+      },
+      {
+        "word": "garlic",
+        "hint": "ثوم"
+      },
+      {
+        "word": "pepper",
+        "hint": "فلفل"
+      },
+      {
+        "word": "corn",
+        "hint": "ذرة"
+      },
+      {
+        "word": "lettuce",
+        "hint": "خس"
+      },
+      {
+        "word": "spinach",
+        "hint": "سبانخ"
+      },
+      {
+        "word": "parsley",
+        "hint": "بقدونس"
+      },
+      {
+        "word": "celery",
+        "hint": "كرفس"
+      },
+      {
+        "word": "radish",
+        "hint": "فجل"
+      },
+      {
+        "word": "beans",
+        "hint": "فاصوليا"
+      },
+      {
+        "word": "peas",
+        "hint": "بازلاء"
+      },
+      {
+        "word": "squash",
+        "hint": "قرع"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "ألوان",
+    "description": "أسماء الألوان الأساسية بالإنجليزية",
+    "iconName": "paintpalette",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "red",
+        "hint": "أحمر"
+      },
+      {
+        "word": "blue",
+        "hint": "أزرق"
+      },
+      {
+        "word": "green",
+        "hint": "أخضر"
+      },
+      {
+        "word": "yellow",
+        "hint": "أصفر"
+      },
+      {
+        "word": "black",
+        "hint": "أسود"
+      },
+      {
+        "word": "white",
+        "hint": "أبيض"
+      },
+      {
+        "word": "maroon",
+        "hint": "كستنائي"
+      },
+      {
+        "word": "purple",
+        "hint": "بنفسجي"
+      },
+      {
+        "word": "pink",
+        "hint": "وردي"
+      },
+      {
+        "word": "brown",
+        "hint": "بني"
+      },
+      {
+        "word": "gray",
+        "hint": "رمادي"
+      },
+      {
+        "word": "golden",
+        "hint": "ذهبي"
+      },
+      {
+        "word": "silver",
+        "hint": "فضي"
+      },
+      {
+        "word": "beige",
+        "hint": "بيج"
+      },
+      {
+        "word": "violet",
+        "hint": "بنفسجي غامق"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "عائلة",
+    "description": "أسماء أفراد العائلة بالإنجليزية",
+    "iconName": "person.3",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mother",
+        "hint": "أم"
+      },
+      {
+        "word": "father",
+        "hint": "أب"
+      },
+      {
+        "word": "sister",
+        "hint": "أخت"
+      },
+      {
+        "word": "brother",
+        "hint": "أخ"
+      },
+      {
+        "word": "daughter",
+        "hint": "ابنة"
+      },
+      {
+        "word": "son",
+        "hint": "ابن"
+      },
+      {
+        "word": "uncle",
+        "hint": "عم / خال"
+      },
+      {
+        "word": "aunt",
+        "hint": "عمة / خالة"
+      },
+      {
+        "word": "cousin",
+        "hint": "ابن عم"
+      },
+      {
+        "word": "husband",
+        "hint": "زوج"
+      },
+      {
+        "word": "wife",
+        "hint": "زوجة"
+      },
+      {
+        "word": "grandma",
+        "hint": "جدة"
+      },
+      {
+        "word": "grandpa",
+        "hint": "جد"
+      },
+      {
+        "word": "nephew",
+        "hint": "ابن الأخ"
+      },
+      {
+        "word": "niece",
+        "hint": "ابنة الأخ"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "حيوانات",
+    "description": "أسماء الحيوانات الشائعة بالإنجليزية",
+    "iconName": "hare",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cat",
+        "hint": "قطة"
+      },
+      {
+        "word": "dog",
+        "hint": "كلب"
+      },
+      {
+        "word": "horse",
+        "hint": "حصان"
+      },
+      {
+        "word": "bird",
+        "hint": "طائر"
+      },
+      {
+        "word": "fish",
+        "hint": "سمكة"
+      },
+      {
+        "word": "lion",
+        "hint": "أسد"
+      },
+      {
+        "word": "camel",
+        "hint": "جمل"
+      },
+      {
+        "word": "rabbit",
+        "hint": "أرنب"
+      },
+      {
+        "word": "eagle",
+        "hint": "نسر"
+      },
+      {
+        "word": "sheep",
+        "hint": "خروف"
+      },
+      {
+        "word": "goat",
+        "hint": "ماعز"
+      },
+      {
+        "word": "tiger",
+        "hint": "نمر"
+      },
+      {
+        "word": "bear",
+        "hint": "دب"
+      },
+      {
+        "word": "monkey",
+        "hint": "قرد"
+      },
+      {
+        "word": "donkey",
+        "hint": "حمار"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "أجزاء الجسم",
+    "description": "أسماء أجزاء الجسم الرئيسية بالإنجليزية",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "head",
+        "hint": "رأس"
+      },
+      {
+        "word": "hand",
+        "hint": "يد"
+      },
+      {
+        "word": "foot",
+        "hint": "قدم"
+      },
+      {
+        "word": "nose",
+        "hint": "أنف"
+      },
+      {
+        "word": "mouth",
+        "hint": "فم"
+      },
+      {
+        "word": "heart",
+        "hint": "قلب"
+      },
+      {
+        "word": "back",
+        "hint": "ظهر"
+      },
+      {
+        "word": "knee",
+        "hint": "ركبة"
+      },
+      {
+        "word": "elbow",
+        "hint": "كوع"
+      },
+      {
+        "word": "neck",
+        "hint": "رقبة"
+      },
+      {
+        "word": "chest",
+        "hint": "صدر"
+      },
+      {
+        "word": "finger",
+        "hint": "إصبع"
+      },
+      {
+        "word": "shoulder",
+        "hint": "كتف"
+      },
+      {
+        "word": "stomach",
+        "hint": "معدة"
+      },
+      {
+        "word": "tooth",
+        "hint": "سن"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "أرقام",
+    "description": "الأرقام مكتوبة بالإنجليزية",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "one",
+        "hint": "واحد"
+      },
+      {
+        "word": "two",
+        "hint": "اثنان"
+      },
+      {
+        "word": "three",
+        "hint": "ثلاثة"
+      },
+      {
+        "word": "four",
+        "hint": "أربعة"
+      },
+      {
+        "word": "five",
+        "hint": "خمسة"
+      },
+      {
+        "word": "six",
+        "hint": "ستة"
+      },
+      {
+        "word": "seven",
+        "hint": "سبعة"
+      },
+      {
+        "word": "eight",
+        "hint": "ثمانية"
+      },
+      {
+        "word": "nine",
+        "hint": "تسعة"
+      },
+      {
+        "word": "ten",
+        "hint": "عشرة"
+      },
+      {
+        "word": "twelve",
+        "hint": "اثنا عشر"
+      },
+      {
+        "word": "twenty",
+        "hint": "عشرون"
+      },
+      {
+        "word": "fifty",
+        "hint": "خمسون"
+      },
+      {
+        "word": "hundred",
+        "hint": "مئة"
+      },
+      {
+        "word": "thousand",
+        "hint": "ألف"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "تحيات",
+    "description": "كلمات التحية والتعبيرات اليومية بالإنجليزية",
+    "iconName": "hand.wave",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "hello",
+        "hint": "مرحبا"
+      },
+      {
+        "word": "goodbye",
+        "hint": "مع السلامة"
+      },
+      {
+        "word": "thanks",
+        "hint": "شكراً"
+      },
+      {
+        "word": "please",
+        "hint": "من فضلك"
+      },
+      {
+        "word": "sorry",
+        "hint": "آسف"
+      },
+      {
+        "word": "welcome",
+        "hint": "أهلاً وسهلاً"
+      },
+      {
+        "word": "morning",
+        "hint": "صباح"
+      },
+      {
+        "word": "evening",
+        "hint": "مساء"
+      },
+      {
+        "word": "night",
+        "hint": "ليلة"
+      },
+      {
+        "word": "friend",
+        "hint": "صديق"
+      },
+      {
+        "word": "peace",
+        "hint": "سلام"
+      },
+      {
+        "word": "smile",
+        "hint": "ابتسامة"
+      },
+      {
+        "word": "cheers",
+        "hint": "تحياتي"
+      },
+      {
+        "word": "farewell",
+        "hint": "وداعاً"
+      },
+      {
+        "word": "blessing",
+        "hint": "بركة"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "طعام",
+    "description": "أسماء الأطعمة الشائعة بالإنجليزية",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "bread",
+        "hint": "خبز"
+      },
+      {
+        "word": "rice",
+        "hint": "أرز"
+      },
+      {
+        "word": "meat",
+        "hint": "لحم"
+      },
+      {
+        "word": "chicken",
+        "hint": "دجاج"
+      },
+      {
+        "word": "cheese",
+        "hint": "جبن"
+      },
+      {
+        "word": "butter",
+        "hint": "زبدة"
+      },
+      {
+        "word": "egg",
+        "hint": "بيضة"
+      },
+      {
+        "word": "honey",
+        "hint": "عسل"
+      },
+      {
+        "word": "salt",
+        "hint": "ملح"
+      },
+      {
+        "word": "sugar",
+        "hint": "سكر"
+      },
+      {
+        "word": "olive",
+        "hint": "زيتون"
+      },
+      {
+        "word": "pasta",
+        "hint": "معكرونة"
+      },
+      {
+        "word": "soup",
+        "hint": "شوربة"
+      },
+      {
+        "word": "salad",
+        "hint": "سلطة"
+      },
+      {
+        "word": "yogurt",
+        "hint": "زبادي"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "ملابس",
+    "description": "أسماء الملابس والأزياء بالإنجليزية",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "shirt",
+        "hint": "قميص"
+      },
+      {
+        "word": "pants",
+        "hint": "بنطلون"
+      },
+      {
+        "word": "dress",
+        "hint": "فستان"
+      },
+      {
+        "word": "jacket",
+        "hint": "جاكيت"
+      },
+      {
+        "word": "shoes",
+        "hint": "أحذية"
+      },
+      {
+        "word": "socks",
+        "hint": "جوارب"
+      },
+      {
+        "word": "belt",
+        "hint": "حزام"
+      },
+      {
+        "word": "scarf",
+        "hint": "وشاح"
+      },
+      {
+        "word": "gloves",
+        "hint": "قفازات"
+      },
+      {
+        "word": "boots",
+        "hint": "أحذية طويلة"
+      },
+      {
+        "word": "hat",
+        "hint": "قبعة"
+      },
+      {
+        "word": "coat",
+        "hint": "معطف"
+      },
+      {
+        "word": "skirt",
+        "hint": "تنورة"
+      },
+      {
+        "word": "sweater",
+        "hint": "كنزة صوف"
+      },
+      {
+        "word": "sandals",
+        "hint": "صندل"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "غرف المنزل",
+    "description": "أسماء أجزاء المنزل وغرفه بالإنجليزية",
+    "iconName": "house",
+    "color": "#64748b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "kitchen",
+        "hint": "مطبخ"
+      },
+      {
+        "word": "bedroom",
+        "hint": "غرفة نوم"
+      },
+      {
+        "word": "bathroom",
+        "hint": "حمام"
+      },
+      {
+        "word": "garden",
+        "hint": "حديقة"
+      },
+      {
+        "word": "garage",
+        "hint": "مرآب"
+      },
+      {
+        "word": "balcony",
+        "hint": "شرفة"
+      },
+      {
+        "word": "hallway",
+        "hint": "ممر"
+      },
+      {
+        "word": "ceiling",
+        "hint": "سقف"
+      },
+      {
+        "word": "floor",
+        "hint": "أرضية"
+      },
+      {
+        "word": "window",
+        "hint": "نافذة"
+      },
+      {
+        "word": "door",
+        "hint": "باب"
+      },
+      {
+        "word": "stairs",
+        "hint": "درج"
+      },
+      {
+        "word": "wall",
+        "hint": "جدار"
+      },
+      {
+        "word": "roof",
+        "hint": "سطح"
+      },
+      {
+        "word": "fence",
+        "hint": "سياج"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "طقس",
+    "description": "كلمات الطقس والمناخ بالإنجليزية",
+    "iconName": "cloud.sun",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "sunny",
+        "hint": "مشمس"
+      },
+      {
+        "word": "cloudy",
+        "hint": "غائم"
+      },
+      {
+        "word": "rainy",
+        "hint": "ممطر"
+      },
+      {
+        "word": "windy",
+        "hint": "عاصف"
+      },
+      {
+        "word": "snowy",
+        "hint": "ثلجي"
+      },
+      {
+        "word": "storm",
+        "hint": "عاصفة"
+      },
+      {
+        "word": "thunder",
+        "hint": "رعد"
+      },
+      {
+        "word": "fog",
+        "hint": "ضباب"
+      },
+      {
+        "word": "frost",
+        "hint": "صقيع"
+      },
+      {
+        "word": "hail",
+        "hint": "بَرَد"
+      },
+      {
+        "word": "breeze",
+        "hint": "نسيم"
+      },
+      {
+        "word": "rainbow",
+        "hint": "قوس قزح"
+      },
+      {
+        "word": "drought",
+        "hint": "جفاف"
+      },
+      {
+        "word": "humid",
+        "hint": "رطب"
+      },
+      {
+        "word": "climate",
+        "hint": "مناخ"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "مهن",
+    "description": "أسماء المهن والوظائف بالإنجليزية",
+    "iconName": "briefcase",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "doctor",
+        "hint": "طبيب"
+      },
+      {
+        "word": "teacher",
+        "hint": "معلم"
+      },
+      {
+        "word": "engineer",
+        "hint": "مهندس"
+      },
+      {
+        "word": "lawyer",
+        "hint": "محامي"
+      },
+      {
+        "word": "pilot",
+        "hint": "طيار"
+      },
+      {
+        "word": "nurse",
+        "hint": "ممرض"
+      },
+      {
+        "word": "farmer",
+        "hint": "مزارع"
+      },
+      {
+        "word": "artist",
+        "hint": "فنان"
+      },
+      {
+        "word": "chef",
+        "hint": "طاهٍ"
+      },
+      {
+        "word": "dentist",
+        "hint": "طبيب أسنان"
+      },
+      {
+        "word": "soldier",
+        "hint": "جندي"
+      },
+      {
+        "word": "tailor",
+        "hint": "خياط"
+      },
+      {
+        "word": "barber",
+        "hint": "حلاق"
+      },
+      {
+        "word": "driver",
+        "hint": "سائق"
+      },
+      {
+        "word": "plumber",
+        "hint": "سباك"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "وسائل النقل",
+    "description": "أسماء وسائل النقل والمواصلات بالإنجليزية",
+    "iconName": "car",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "car",
+        "hint": "سيارة"
+      },
+      {
+        "word": "bus",
+        "hint": "حافلة"
+      },
+      {
+        "word": "train",
+        "hint": "قطار"
+      },
+      {
+        "word": "plane",
+        "hint": "طائرة"
+      },
+      {
+        "word": "ship",
+        "hint": "سفينة"
+      },
+      {
+        "word": "bicycle",
+        "hint": "دراجة"
+      },
+      {
+        "word": "taxi",
+        "hint": "سيارة أجرة"
+      },
+      {
+        "word": "subway",
+        "hint": "مترو"
+      },
+      {
+        "word": "truck",
+        "hint": "شاحنة"
+      },
+      {
+        "word": "boat",
+        "hint": "قارب"
+      },
+      {
+        "word": "ferry",
+        "hint": "عبّارة"
+      },
+      {
+        "word": "scooter",
+        "hint": "دراجة بخارية"
+      },
+      {
+        "word": "tram",
+        "hint": "ترام"
+      },
+      {
+        "word": "rocket",
+        "hint": "صاروخ"
+      },
+      {
+        "word": "canoe",
+        "hint": "زورق"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "مدرسة",
+    "description": "كلمات تتعلق بالمدرسة والتعليم بالإنجليزية",
+    "iconName": "book",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pencil",
+        "hint": "قلم رصاص"
+      },
+      {
+        "word": "eraser",
+        "hint": "ممحاة"
+      },
+      {
+        "word": "ruler",
+        "hint": "مسطرة"
+      },
+      {
+        "word": "notebook",
+        "hint": "دفتر"
+      },
+      {
+        "word": "chalk",
+        "hint": "طباشير"
+      },
+      {
+        "word": "globe",
+        "hint": "كرة أرضية"
+      },
+      {
+        "word": "desk",
+        "hint": "مكتب"
+      },
+      {
+        "word": "library",
+        "hint": "مكتبة"
+      },
+      {
+        "word": "exam",
+        "hint": "اختبار"
+      },
+      {
+        "word": "lesson",
+        "hint": "درس"
+      },
+      {
+        "word": "student",
+        "hint": "طالب"
+      },
+      {
+        "word": "uniform",
+        "hint": "زي مدرسي"
+      },
+      {
+        "word": "backpack",
+        "hint": "حقيبة ظهر"
+      },
+      {
+        "word": "homework",
+        "hint": "واجب منزلي"
+      },
+      {
+        "word": "diploma",
+        "hint": "شهادة"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "أدوات المطبخ",
+    "description": "أسماء أدوات المطبخ والأواني بالإنجليزية",
+    "iconName": "cup.and.saucer",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "spoon",
+        "hint": "ملعقة"
+      },
+      {
+        "word": "fork",
+        "hint": "شوكة"
+      },
+      {
+        "word": "knife",
+        "hint": "سكين"
+      },
+      {
+        "word": "plate",
+        "hint": "طبق"
+      },
+      {
+        "word": "bowl",
+        "hint": "وعاء"
+      },
+      {
+        "word": "cup",
+        "hint": "كوب"
+      },
+      {
+        "word": "pan",
+        "hint": "مقلاة"
+      },
+      {
+        "word": "pot",
+        "hint": "قدر"
+      },
+      {
+        "word": "oven",
+        "hint": "فرن"
+      },
+      {
+        "word": "blender",
+        "hint": "خلاط"
+      },
+      {
+        "word": "kettle",
+        "hint": "غلاية"
+      },
+      {
+        "word": "tray",
+        "hint": "صينية"
+      },
+      {
+        "word": "grater",
+        "hint": "مبشرة"
+      },
+      {
+        "word": "ladle",
+        "hint": "مغرفة"
+      },
+      {
+        "word": "sieve",
+        "hint": "مصفاة"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "رياضة",
+    "description": "أسماء الألعاب الرياضية بالإنجليزية",
+    "iconName": "sportscourt",
+    "color": "#10b981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "soccer",
+        "hint": "كرة قدم"
+      },
+      {
+        "word": "tennis",
+        "hint": "تنس"
+      },
+      {
+        "word": "boxing",
+        "hint": "ملاكمة"
+      },
+      {
+        "word": "swimming",
+        "hint": "سباحة"
+      },
+      {
+        "word": "running",
+        "hint": "جري"
+      },
+      {
+        "word": "cycling",
+        "hint": "ركوب دراجات"
+      },
+      {
+        "word": "hockey",
+        "hint": "هوكي"
+      },
+      {
+        "word": "golf",
+        "hint": "غولف"
+      },
+      {
+        "word": "rugby",
+        "hint": "رغبي"
+      },
+      {
+        "word": "archery",
+        "hint": "رماية بالقوس"
+      },
+      {
+        "word": "fencing",
+        "hint": "مبارزة"
+      },
+      {
+        "word": "surfing",
+        "hint": "ركوب أمواج"
+      },
+      {
+        "word": "karate",
+        "hint": "كاراتيه"
+      },
+      {
+        "word": "diving",
+        "hint": "غوص"
+      },
+      {
+        "word": "wrestling",
+        "hint": "مصارعة"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "آلات موسيقية",
+    "description": "أسماء الآلات الموسيقية بالإنجليزية",
+    "iconName": "guitars",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "piano",
+        "hint": "بيانو"
+      },
+      {
+        "word": "guitar",
+        "hint": "جيتار"
+      },
+      {
+        "word": "violin",
+        "hint": "كمان"
+      },
+      {
+        "word": "drums",
+        "hint": "طبول"
+      },
+      {
+        "word": "flute",
+        "hint": "ناي"
+      },
+      {
+        "word": "trumpet",
+        "hint": "بوق"
+      },
+      {
+        "word": "harp",
+        "hint": "قيثارة"
+      },
+      {
+        "word": "cello",
+        "hint": "تشيلو"
+      },
+      {
+        "word": "organ",
+        "hint": "أرغن"
+      },
+      {
+        "word": "banjo",
+        "hint": "بانجو"
+      },
+      {
+        "word": "oboe",
+        "hint": "أوبوا"
+      },
+      {
+        "word": "cymbal",
+        "hint": "صنج"
+      },
+      {
+        "word": "tuba",
+        "hint": "توبا"
+      },
+      {
+        "word": "clarinet",
+        "hint": "كلارينيت"
+      },
+      {
+        "word": "tambourine",
+        "hint": "دف"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "طبيعة",
+    "description": "كلمات الطبيعة والبيئة بالإنجليزية",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "mountain",
+        "hint": "جبل"
+      },
+      {
+        "word": "river",
+        "hint": "نهر"
+      },
+      {
+        "word": "forest",
+        "hint": "غابة"
+      },
+      {
+        "word": "desert",
+        "hint": "صحراء"
+      },
+      {
+        "word": "ocean",
+        "hint": "محيط"
+      },
+      {
+        "word": "lake",
+        "hint": "بحيرة"
+      },
+      {
+        "word": "valley",
+        "hint": "وادي"
+      },
+      {
+        "word": "island",
+        "hint": "جزيرة"
+      },
+      {
+        "word": "volcano",
+        "hint": "بركان"
+      },
+      {
+        "word": "waterfall",
+        "hint": "شلال"
+      },
+      {
+        "word": "cave",
+        "hint": "كهف"
+      },
+      {
+        "word": "cliff",
+        "hint": "جرف"
+      },
+      {
+        "word": "meadow",
+        "hint": "مرج"
+      },
+      {
+        "word": "reef",
+        "hint": "شعاب مرجانية"
+      },
+      {
+        "word": "glacier",
+        "hint": "نهر جليدي"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "مشاعر",
+    "description": "كلمات المشاعر والأحاسيس بالإنجليزية",
+    "iconName": "heart",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "happy",
+        "hint": "سعيد"
+      },
+      {
+        "word": "sad",
+        "hint": "حزين"
+      },
+      {
+        "word": "angry",
+        "hint": "غاضب"
+      },
+      {
+        "word": "scared",
+        "hint": "خائف"
+      },
+      {
+        "word": "excited",
+        "hint": "متحمس"
+      },
+      {
+        "word": "calm",
+        "hint": "هادئ"
+      },
+      {
+        "word": "tired",
+        "hint": "متعب"
+      },
+      {
+        "word": "proud",
+        "hint": "فخور"
+      },
+      {
+        "word": "lonely",
+        "hint": "وحيد"
+      },
+      {
+        "word": "jealous",
+        "hint": "غيور"
+      },
+      {
+        "word": "nervous",
+        "hint": "متوتر"
+      },
+      {
+        "word": "confused",
+        "hint": "مشوش"
+      },
+      {
+        "word": "grateful",
+        "hint": "ممتن"
+      },
+      {
+        "word": "bored",
+        "hint": "يشعر بالملل"
+      },
+      {
+        "word": "curious",
+        "hint": "فضولي"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "تكنولوجيا",
+    "description": "كلمات التكنولوجيا والإلكترونيات بالإنجليزية",
+    "iconName": "desktopcomputer",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "laptop",
+        "hint": "حاسوب محمول"
+      },
+      {
+        "word": "phone",
+        "hint": "هاتف"
+      },
+      {
+        "word": "tablet",
+        "hint": "جهاز لوحي"
+      },
+      {
+        "word": "printer",
+        "hint": "طابعة"
+      },
+      {
+        "word": "screen",
+        "hint": "شاشة"
+      },
+      {
+        "word": "camera",
+        "hint": "كاميرا"
+      },
+      {
+        "word": "keyboard",
+        "hint": "لوحة مفاتيح"
+      },
+      {
+        "word": "mouse",
+        "hint": "فأرة حاسوب"
+      },
+      {
+        "word": "speaker",
+        "hint": "مكبر صوت"
+      },
+      {
+        "word": "charger",
+        "hint": "شاحن"
+      },
+      {
+        "word": "battery",
+        "hint": "بطارية"
+      },
+      {
+        "word": "software",
+        "hint": "برنامج"
+      },
+      {
+        "word": "network",
+        "hint": "شبكة"
+      },
+      {
+        "word": "server",
+        "hint": "خادم"
+      },
+      {
+        "word": "website",
+        "hint": "موقع إلكتروني"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "مكتب",
+    "description": "أدوات ومعدات المكتب بالإنجليزية",
+    "iconName": "paperclip",
+    "color": "#475569",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "stapler",
+        "hint": "دباسة"
+      },
+      {
+        "word": "folder",
+        "hint": "ملف"
+      },
+      {
+        "word": "envelope",
+        "hint": "مظروف"
+      },
+      {
+        "word": "stamp",
+        "hint": "طابع بريدي"
+      },
+      {
+        "word": "calendar",
+        "hint": "تقويم"
+      },
+      {
+        "word": "clipboard",
+        "hint": "لوح كتابة"
+      },
+      {
+        "word": "scissors",
+        "hint": "مقص"
+      },
+      {
+        "word": "binder",
+        "hint": "مجلد"
+      },
+      {
+        "word": "marker",
+        "hint": "قلم تحديد"
+      },
+      {
+        "word": "tape",
+        "hint": "شريط لاصق"
+      },
+      {
+        "word": "memo",
+        "hint": "مذكرة"
+      },
+      {
+        "word": "planner",
+        "hint": "مفكرة"
+      },
+      {
+        "word": "sticker",
+        "hint": "ملصق"
+      },
+      {
+        "word": "receipt",
+        "hint": "إيصال"
+      },
+      {
+        "word": "invoice",
+        "hint": "فاتورة"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "صحة وطب",
+    "description": "كلمات طبية وصحية بالإنجليزية",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "hospital",
+        "hint": "مستشفى"
+      },
+      {
+        "word": "medicine",
+        "hint": "دواء"
+      },
+      {
+        "word": "bandage",
+        "hint": "ضمادة"
+      },
+      {
+        "word": "syringe",
+        "hint": "حقنة"
+      },
+      {
+        "word": "pharmacy",
+        "hint": "صيدلية"
+      },
+      {
+        "word": "fever",
+        "hint": "حمى"
+      },
+      {
+        "word": "allergy",
+        "hint": "حساسية"
+      },
+      {
+        "word": "surgery",
+        "hint": "جراحة"
+      },
+      {
+        "word": "vaccine",
+        "hint": "لقاح"
+      },
+      {
+        "word": "symptom",
+        "hint": "عَرَض"
+      },
+      {
+        "word": "therapy",
+        "hint": "علاج"
+      },
+      {
+        "word": "capsule",
+        "hint": "كبسولة"
+      },
+      {
+        "word": "checkup",
+        "hint": "فحص طبي"
+      },
+      {
+        "word": "oxygen",
+        "hint": "أكسجين"
+      },
+      {
+        "word": "pulse",
+        "hint": "نبض"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "سفر",
+    "description": "كلمات السفر والسياحة بالإنجليزية",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "passport",
+        "hint": "جواز سفر"
+      },
+      {
+        "word": "luggage",
+        "hint": "أمتعة"
+      },
+      {
+        "word": "ticket",
+        "hint": "تذكرة"
+      },
+      {
+        "word": "hotel",
+        "hint": "فندق"
+      },
+      {
+        "word": "airport",
+        "hint": "مطار"
+      },
+      {
+        "word": "tourist",
+        "hint": "سائح"
+      },
+      {
+        "word": "journey",
+        "hint": "رحلة"
+      },
+      {
+        "word": "suitcase",
+        "hint": "حقيبة سفر"
+      },
+      {
+        "word": "compass",
+        "hint": "بوصلة"
+      },
+      {
+        "word": "souvenir",
+        "hint": "تذكار"
+      },
+      {
+        "word": "customs",
+        "hint": "جمارك"
+      },
+      {
+        "word": "boarding",
+        "hint": "صعود الطائرة"
+      },
+      {
+        "word": "cruise",
+        "hint": "رحلة بحرية"
+      },
+      {
+        "word": "resort",
+        "hint": "منتجع"
+      },
+      {
+        "word": "itinerary",
+        "hint": "خط سير الرحلة"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "هوايات",
+    "description": "أسماء الهوايات والأنشطة الترفيهية بالإنجليزية",
+    "iconName": "paintbrush",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "reading",
+        "hint": "قراءة"
+      },
+      {
+        "word": "cooking",
+        "hint": "طبخ"
+      },
+      {
+        "word": "painting",
+        "hint": "رسم"
+      },
+      {
+        "word": "gardening",
+        "hint": "بستنة"
+      },
+      {
+        "word": "fishing",
+        "hint": "صيد السمك"
+      },
+      {
+        "word": "hiking",
+        "hint": "تسلق الجبال"
+      },
+      {
+        "word": "knitting",
+        "hint": "حياكة"
+      },
+      {
+        "word": "writing",
+        "hint": "كتابة"
+      },
+      {
+        "word": "singing",
+        "hint": "غناء"
+      },
+      {
+        "word": "dancing",
+        "hint": "رقص"
+      },
+      {
+        "word": "camping",
+        "hint": "تخييم"
+      },
+      {
+        "word": "pottery",
+        "hint": "فخار"
+      },
+      {
+        "word": "chess",
+        "hint": "شطرنج"
+      },
+      {
+        "word": "origami",
+        "hint": "طي الورق"
+      },
+      {
+        "word": "sewing",
+        "hint": "خياطة"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "مشروبات",
+    "description": "أسماء المشروبات بالإنجليزية",
+    "iconName": "cup.and.saucer",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "water",
+        "hint": "ماء"
+      },
+      {
+        "word": "juice",
+        "hint": "عصير"
+      },
+      {
+        "word": "coffee",
+        "hint": "قهوة"
+      },
+      {
+        "word": "milk",
+        "hint": "حليب"
+      },
+      {
+        "word": "lemonade",
+        "hint": "عصير ليمون"
+      },
+      {
+        "word": "smoothie",
+        "hint": "عصير مخفوق"
+      },
+      {
+        "word": "cocoa",
+        "hint": "كاكاو"
+      },
+      {
+        "word": "milkshake",
+        "hint": "ميلك شيك"
+      },
+      {
+        "word": "espresso",
+        "hint": "إسبريسو"
+      },
+      {
+        "word": "mineral",
+        "hint": "مياه معدنية"
+      },
+      {
+        "word": "herbal",
+        "hint": "أعشاب"
+      },
+      {
+        "word": "cider",
+        "hint": "عصير تفاح"
+      },
+      {
+        "word": "sparkling",
+        "hint": "مياه فوارة"
+      },
+      {
+        "word": "cappuccino",
+        "hint": "كابتشينو"
+      },
+      {
+        "word": "latte",
+        "hint": "لاتيه"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "حلويات",
+    "description": "أسماء الحلويات والمعجنات بالإنجليزية",
+    "iconName": "birthday.cake",
+    "color": "#db2777",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cake",
+        "hint": "كعكة"
+      },
+      {
+        "word": "cookie",
+        "hint": "بسكويت"
+      },
+      {
+        "word": "chocolate",
+        "hint": "شوكولاتة"
+      },
+      {
+        "word": "pudding",
+        "hint": "بودينغ"
+      },
+      {
+        "word": "brownie",
+        "hint": "براوني"
+      },
+      {
+        "word": "muffin",
+        "hint": "مافن"
+      },
+      {
+        "word": "donut",
+        "hint": "دونات"
+      },
+      {
+        "word": "waffle",
+        "hint": "وافل"
+      },
+      {
+        "word": "cupcake",
+        "hint": "كب كيك"
+      },
+      {
+        "word": "tart",
+        "hint": "فطيرة"
+      },
+      {
+        "word": "candy",
+        "hint": "حلوى"
+      },
+      {
+        "word": "fudge",
+        "hint": "حلوى الفدج"
+      },
+      {
+        "word": "caramel",
+        "hint": "كراميل"
+      },
+      {
+        "word": "custard",
+        "hint": "كاسترد"
+      },
+      {
+        "word": "croissant",
+        "hint": "كرواسون"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "أثاث",
+    "description": "أسماء قطع الأثاث المنزلي بالإنجليزية",
+    "iconName": "sofa",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "chair",
+        "hint": "كرسي"
+      },
+      {
+        "word": "table",
+        "hint": "طاولة"
+      },
+      {
+        "word": "sofa",
+        "hint": "أريكة"
+      },
+      {
+        "word": "bed",
+        "hint": "سرير"
+      },
+      {
+        "word": "shelf",
+        "hint": "رف"
+      },
+      {
+        "word": "closet",
+        "hint": "خزانة ملابس"
+      },
+      {
+        "word": "drawer",
+        "hint": "درج"
+      },
+      {
+        "word": "mirror",
+        "hint": "مرآة"
+      },
+      {
+        "word": "cabinet",
+        "hint": "خزانة"
+      },
+      {
+        "word": "curtain",
+        "hint": "ستارة"
+      },
+      {
+        "word": "carpet",
+        "hint": "سجادة"
+      },
+      {
+        "word": "pillow",
+        "hint": "وسادة"
+      },
+      {
+        "word": "blanket",
+        "hint": "بطانية"
+      },
+      {
+        "word": "lamp",
+        "hint": "مصباح"
+      },
+      {
+        "word": "mattress",
+        "hint": "فراش"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "أدوات",
+    "description": "أسماء الأدوات والعدد بالإنجليزية",
+    "iconName": "wrench",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "hammer",
+        "hint": "مطرقة"
+      },
+      {
+        "word": "drill",
+        "hint": "مثقاب"
+      },
+      {
+        "word": "wrench",
+        "hint": "مفتاح ربط"
+      },
+      {
+        "word": "pliers",
+        "hint": "كماشة"
+      },
+      {
+        "word": "saw",
+        "hint": "منشار"
+      },
+      {
+        "word": "screw",
+        "hint": "برغي"
+      },
+      {
+        "word": "nail",
+        "hint": "مسمار"
+      },
+      {
+        "word": "shovel",
+        "hint": "مجرفة"
+      },
+      {
+        "word": "bucket",
+        "hint": "دلو"
+      },
+      {
+        "word": "ladder",
+        "hint": "سلم"
+      },
+      {
+        "word": "axe",
+        "hint": "فأس"
+      },
+      {
+        "word": "chisel",
+        "hint": "إزميل"
+      },
+      {
+        "word": "clamp",
+        "hint": "ملزمة"
+      },
+      {
+        "word": "level",
+        "hint": "ميزان مائي"
+      },
+      {
+        "word": "sandpaper",
+        "hint": "ورق صنفرة"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "مواد",
+    "description": "أسماء المواد والخامات بالإنجليزية",
+    "iconName": "cube",
+    "color": "#6d28d9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "wood",
+        "hint": "خشب"
+      },
+      {
+        "word": "metal",
+        "hint": "معدن"
+      },
+      {
+        "word": "glass",
+        "hint": "زجاج"
+      },
+      {
+        "word": "stone",
+        "hint": "حجر"
+      },
+      {
+        "word": "cotton",
+        "hint": "قطن"
+      },
+      {
+        "word": "leather",
+        "hint": "جلد"
+      },
+      {
+        "word": "silk",
+        "hint": "حرير"
+      },
+      {
+        "word": "rubber",
+        "hint": "مطاط"
+      },
+      {
+        "word": "plastic",
+        "hint": "بلاستيك"
+      },
+      {
+        "word": "ceramic",
+        "hint": "سيراميك"
+      },
+      {
+        "word": "bronze",
+        "hint": "برونز"
+      },
+      {
+        "word": "copper",
+        "hint": "نحاس"
+      },
+      {
+        "word": "marble",
+        "hint": "رخام"
+      },
+      {
+        "word": "velvet",
+        "hint": "مخمل"
+      },
+      {
+        "word": "concrete",
+        "hint": "خرسانة"
+      }
+    ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "الروتين اليومي",
+    "description": "كلمات تتعلق بالأنشطة اليومية بالإنجليزية",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "breakfast",
+        "hint": "فطور"
+      },
+      {
+        "word": "shower",
+        "hint": "دُش"
+      },
+      {
+        "word": "morning",
+        "hint": "صباح"
+      },
+      {
+        "word": "evening",
+        "hint": "مساء"
+      },
+      {
+        "word": "brush",
+        "hint": "يُنظّف بالفرشاة"
+      },
+      {
+        "word": "alarm",
+        "hint": "منبّه"
+      },
+      {
+        "word": "routine",
+        "hint": "روتين"
+      },
+      {
+        "word": "awake",
+        "hint": "مستيقظ"
+      },
+      {
+        "word": "asleep",
+        "hint": "نائم"
+      },
+      {
+        "word": "lunch",
+        "hint": "غداء"
+      },
+      {
+        "word": "dinner",
+        "hint": "عشاء"
+      },
+      {
+        "word": "commute",
+        "hint": "تنقّل يومي"
+      },
+      {
+        "word": "chores",
+        "hint": "أعمال منزلية"
+      },
+      {
+        "word": "schedule",
+        "hint": "جدول"
+      },
+      {
+        "word": "hygiene",
+        "hint": "نظافة شخصية"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "تسوّق",
+    "description": "كلمات تتعلق بالتسوّق والمشتريات بالإنجليزية",
+    "iconName": "cart",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "basket",
+        "hint": "سلّة"
+      },
+      {
+        "word": "receipt",
+        "hint": "إيصال"
+      },
+      {
+        "word": "cashier",
+        "hint": "أمين صندوق"
+      },
+      {
+        "word": "discount",
+        "hint": "خصم / تخفيض"
+      },
+      {
+        "word": "bargain",
+        "hint": "صفقة"
+      },
+      {
+        "word": "refund",
+        "hint": "استرداد"
+      },
+      {
+        "word": "aisle",
+        "hint": "ممرّ"
+      },
+      {
+        "word": "brand",
+        "hint": "علامة تجارية"
+      },
+      {
+        "word": "price",
+        "hint": "سعر"
+      },
+      {
+        "word": "wallet",
+        "hint": "محفظة"
+      },
+      {
+        "word": "trolley",
+        "hint": "عربة تسوّق"
+      },
+      {
+        "word": "counter",
+        "hint": "طاولة البيع"
+      },
+      {
+        "word": "coupon",
+        "hint": "قسيمة"
+      },
+      {
+        "word": "checkout",
+        "hint": "نقطة الدفع"
+      },
+      {
+        "word": "purchase",
+        "hint": "شراء"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "مطعم",
+    "description": "كلمات تتعلق بالمطاعم وتناول الطعام بالإنجليزية",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "waiter",
+        "hint": "نادل"
+      },
+      {
+        "word": "menu",
+        "hint": "قائمة الطعام"
+      },
+      {
+        "word": "order",
+        "hint": "طلب"
+      },
+      {
+        "word": "appetizer",
+        "hint": "مقبّلات"
+      },
+      {
+        "word": "dessert",
+        "hint": "حلوى"
+      },
+      {
+        "word": "napkin",
+        "hint": "منديل"
+      },
+      {
+        "word": "course",
+        "hint": "وجبة / طبق"
+      },
+      {
+        "word": "chef",
+        "hint": "طاهٍ / شيف"
+      },
+      {
+        "word": "reserve",
+        "hint": "يحجز"
+      },
+      {
+        "word": "portion",
+        "hint": "حصّة"
+      },
+      {
+        "word": "beverage",
+        "hint": "مشروب"
+      },
+      {
+        "word": "cutlery",
+        "hint": "أدوات المائدة"
+      },
+      {
+        "word": "recipe",
+        "hint": "وصفة طعام"
+      },
+      {
+        "word": "tip",
+        "hint": "إكرامية / بقشيش"
+      },
+      {
+        "word": "grill",
+        "hint": "شواية"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "حديقة",
+    "description": "كلمات تتعلق بالحدائق والنباتات بالإنجليزية",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "flower",
+        "hint": "زهرة"
+      },
+      {
+        "word": "garden",
+        "hint": "حديقة"
+      },
+      {
+        "word": "hedge",
+        "hint": "سياج نباتي"
+      },
+      {
+        "word": "lawn",
+        "hint": "عشب / مرج"
+      },
+      {
+        "word": "compost",
+        "hint": "سماد عضوي"
+      },
+      {
+        "word": "seedling",
+        "hint": "شتلة"
+      },
+      {
+        "word": "harvest",
+        "hint": "حصاد"
+      },
+      {
+        "word": "blossom",
+        "hint": "زهرة / إزهار"
+      },
+      {
+        "word": "mulch",
+        "hint": "نشارة"
+      },
+      {
+        "word": "pruning",
+        "hint": "تقليم"
+      },
+      {
+        "word": "sprout",
+        "hint": "برعم / نبتة"
+      },
+      {
+        "word": "trellis",
+        "hint": "تعريشة"
+      },
+      {
+        "word": "petal",
+        "hint": "بتلة"
+      },
+      {
+        "word": "stem",
+        "hint": "ساق النبات"
+      },
+      {
+        "word": "weed",
+        "hint": "عشب ضارّ"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "حمّام",
+    "description": "كلمات تتعلق بالحمّام ومستلزماته بالإنجليزية",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mirror",
+        "hint": "مرآة"
+      },
+      {
+        "word": "towel",
+        "hint": "منشفة"
+      },
+      {
+        "word": "faucet",
+        "hint": "صنبور"
+      },
+      {
+        "word": "bathtub",
+        "hint": "حوض استحمام"
+      },
+      {
+        "word": "toilet",
+        "hint": "مرحاض"
+      },
+      {
+        "word": "shampoo",
+        "hint": "شامبو"
+      },
+      {
+        "word": "sponge",
+        "hint": "إسفنجة"
+      },
+      {
+        "word": "drain",
+        "hint": "مصرف / بالوعة"
+      },
+      {
+        "word": "cabinet",
+        "hint": "خزانة"
+      },
+      {
+        "word": "razor",
+        "hint": "شفرة حلاقة"
+      },
+      {
+        "word": "curtain",
+        "hint": "ستارة"
+      },
+      {
+        "word": "plunger",
+        "hint": "مكبس / كبّاسة"
+      },
+      {
+        "word": "lotion",
+        "hint": "مرطّب / لوشن"
+      },
+      {
+        "word": "tissue",
+        "hint": "مناديل ورقية"
+      },
+      {
+        "word": "toothpaste",
+        "hint": "معجون أسنان"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "سينما",
+    "description": "كلمات تتعلق بالسينما والأفلام بالإنجليزية",
+    "iconName": "film",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "screen",
+        "hint": "شاشة"
+      },
+      {
+        "word": "ticket",
+        "hint": "تذكرة"
+      },
+      {
+        "word": "trailer",
+        "hint": "إعلان الفيلم"
+      },
+      {
+        "word": "director",
+        "hint": "مخرج"
+      },
+      {
+        "word": "actress",
+        "hint": "ممثلة"
+      },
+      {
+        "word": "subtitle",
+        "hint": "ترجمة مرئية"
+      },
+      {
+        "word": "comedy",
+        "hint": "كوميديا"
+      },
+      {
+        "word": "horror",
+        "hint": "رعب"
+      },
+      {
+        "word": "drama",
+        "hint": "دراما"
+      },
+      {
+        "word": "scene",
+        "hint": "مشهد"
+      },
+      {
+        "word": "popcorn",
+        "hint": "فشار"
+      },
+      {
+        "word": "sequel",
+        "hint": "جزء تالٍ"
+      },
+      {
+        "word": "plot",
+        "hint": "حبكة"
+      },
+      {
+        "word": "casting",
+        "hint": "اختيار الممثلين"
+      },
+      {
+        "word": "premiere",
+        "hint": "عرض أوّل"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "فنون",
+    "description": "كلمات تتعلق بالفنون والإبداع بالإنجليزية",
+    "iconName": "paintbrush",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "canvas",
+        "hint": "لوحة قماشية"
+      },
+      {
+        "word": "palette",
+        "hint": "لوحة ألوان"
+      },
+      {
+        "word": "sketch",
+        "hint": "رسم تخطيطي"
+      },
+      {
+        "word": "gallery",
+        "hint": "معرض فنّي"
+      },
+      {
+        "word": "sculpture",
+        "hint": "نحت / تمثال"
+      },
+      {
+        "word": "portrait",
+        "hint": "صورة شخصية"
+      },
+      {
+        "word": "abstract",
+        "hint": "تجريدي"
+      },
+      {
+        "word": "exhibit",
+        "hint": "معروضة / معرض"
+      },
+      {
+        "word": "mural",
+        "hint": "جدارية"
+      },
+      {
+        "word": "easel",
+        "hint": "حامل اللوحة"
+      },
+      {
+        "word": "pastel",
+        "hint": "ألوان باستيل"
+      },
+      {
+        "word": "mosaic",
+        "hint": "فسيفساء"
+      },
+      {
+        "word": "charcoal",
+        "hint": "فحم رسم"
+      },
+      {
+        "word": "pigment",
+        "hint": "صبغة"
+      },
+      {
+        "word": "collage",
+        "hint": "كولاج / ملصقة فنية"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "رقص",
+    "description": "كلمات تتعلق بالرقص والحركة بالإنجليزية",
+    "iconName": "figure.dance",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ballet",
+        "hint": "باليه"
+      },
+      {
+        "word": "rhythm",
+        "hint": "إيقاع"
+      },
+      {
+        "word": "partner",
+        "hint": "شريك الرقص"
+      },
+      {
+        "word": "waltz",
+        "hint": "فالس"
+      },
+      {
+        "word": "salsa",
+        "hint": "سالسا"
+      },
+      {
+        "word": "tango",
+        "hint": "تانغو"
+      },
+      {
+        "word": "posture",
+        "hint": "وضعية الجسم"
+      },
+      {
+        "word": "stage",
+        "hint": "خشبة المسرح"
+      },
+      {
+        "word": "costume",
+        "hint": "زيّ"
+      },
+      {
+        "word": "tempo",
+        "hint": "سرعة الإيقاع"
+      },
+      {
+        "word": "choreography",
+        "hint": "تصميم الرقصات"
+      },
+      {
+        "word": "footwork",
+        "hint": "حركات الأقدام"
+      },
+      {
+        "word": "spin",
+        "hint": "دوران"
+      },
+      {
+        "word": "stretch",
+        "hint": "تمدّد"
+      },
+      {
+        "word": "rehearsal",
+        "hint": "بروفة / تمرين"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "تصوير",
+    "description": "كلمات تتعلق بالتصوير الفوتوغرافي بالإنجليزية",
+    "iconName": "camera",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "camera",
+        "hint": "كاميرا"
+      },
+      {
+        "word": "focus",
+        "hint": "تركيز / بؤرة"
+      },
+      {
+        "word": "exposure",
+        "hint": "تعريض ضوئي"
+      },
+      {
+        "word": "shutter",
+        "hint": "غالق الكاميرا"
+      },
+      {
+        "word": "tripod",
+        "hint": "حامل ثلاثي"
+      },
+      {
+        "word": "filter",
+        "hint": "مرشّح / فلتر"
+      },
+      {
+        "word": "portrait",
+        "hint": "صورة شخصية"
+      },
+      {
+        "word": "landscape",
+        "hint": "منظر طبيعي"
+      },
+      {
+        "word": "aperture",
+        "hint": "فتحة العدسة"
+      },
+      {
+        "word": "flash",
+        "hint": "فلاش / وميض"
+      },
+      {
+        "word": "zoom",
+        "hint": "تكبير"
+      },
+      {
+        "word": "angle",
+        "hint": "زاوية"
+      },
+      {
+        "word": "macro",
+        "hint": "تصوير قريب"
+      },
+      {
+        "word": "framing",
+        "hint": "تأطير"
+      },
+      {
+        "word": "contrast",
+        "hint": "تباين"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "حِرَف يدوية",
+    "description": "كلمات تتعلق بالأشغال والحرف اليدوية بالإنجليزية",
+    "iconName": "scissors",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "needle",
+        "hint": "إبرة"
+      },
+      {
+        "word": "thread",
+        "hint": "خيط"
+      },
+      {
+        "word": "fabric",
+        "hint": "قماش"
+      },
+      {
+        "word": "pattern",
+        "hint": "نمط / باترون"
+      },
+      {
+        "word": "pottery",
+        "hint": "فخّار"
+      },
+      {
+        "word": "weaving",
+        "hint": "نسيج / حياكة"
+      },
+      {
+        "word": "knitting",
+        "hint": "حياكة بالإبر"
+      },
+      {
+        "word": "origami",
+        "hint": "فنّ طيّ الورق"
+      },
+      {
+        "word": "stencil",
+        "hint": "قالب رسم"
+      },
+      {
+        "word": "beading",
+        "hint": "تطريز بالخرز"
+      },
+      {
+        "word": "carving",
+        "hint": "نحت / حفر"
+      },
+      {
+        "word": "quilting",
+        "hint": "خياطة لحاف"
+      },
+      {
+        "word": "embroidery",
+        "hint": "تطريز"
+      },
+      {
+        "word": "calligraphy",
+        "hint": "خطّ / فنّ الكتابة"
+      },
+      {
+        "word": "macrame",
+        "hint": "مكرميّة"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "جغرافيا",
+    "description": "كلمات تتعلق بالجغرافيا والتضاريس بالإنجليزية",
+    "iconName": "globe.americas",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "continent",
+        "hint": "قارّة"
+      },
+      {
+        "word": "island",
+        "hint": "جزيرة"
+      },
+      {
+        "word": "valley",
+        "hint": "وادي"
+      },
+      {
+        "word": "desert",
+        "hint": "صحراء"
+      },
+      {
+        "word": "plateau",
+        "hint": "هضبة"
+      },
+      {
+        "word": "volcano",
+        "hint": "بركان"
+      },
+      {
+        "word": "glacier",
+        "hint": "نهر جليدي"
+      },
+      {
+        "word": "peninsula",
+        "hint": "شبه جزيرة"
+      },
+      {
+        "word": "canyon",
+        "hint": "وادي عميق"
+      },
+      {
+        "word": "equator",
+        "hint": "خطّ الاستواء"
+      },
+      {
+        "word": "latitude",
+        "hint": "خطّ العرض"
+      },
+      {
+        "word": "border",
+        "hint": "حدود"
+      },
+      {
+        "word": "terrain",
+        "hint": "تضاريس"
+      },
+      {
+        "word": "delta",
+        "hint": "دلتا"
+      },
+      {
+        "word": "cliff",
+        "hint": "جرف / منحدر صخري"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "فلك",
+    "description": "كلمات تتعلق بالفلك والفضاء بالإنجليزية",
+    "iconName": "star",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "planet",
+        "hint": "كوكب"
+      },
+      {
+        "word": "galaxy",
+        "hint": "مجرّة"
+      },
+      {
+        "word": "orbit",
+        "hint": "مدار"
+      },
+      {
+        "word": "comet",
+        "hint": "مذنّب"
+      },
+      {
+        "word": "asteroid",
+        "hint": "كويكب"
+      },
+      {
+        "word": "eclipse",
+        "hint": "كسوف / خسوف"
+      },
+      {
+        "word": "nebula",
+        "hint": "سديم"
+      },
+      {
+        "word": "satellite",
+        "hint": "قمر صناعي"
+      },
+      {
+        "word": "telescope",
+        "hint": "تلسكوب / مقراب"
+      },
+      {
+        "word": "meteor",
+        "hint": "شهاب"
+      },
+      {
+        "word": "gravity",
+        "hint": "جاذبية"
+      },
+      {
+        "word": "cosmos",
+        "hint": "كون"
+      },
+      {
+        "word": "lunar",
+        "hint": "قمري"
+      },
+      {
+        "word": "solar",
+        "hint": "شمسي"
+      },
+      {
+        "word": "constellation",
+        "hint": "كوكبة نجمية"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "محيط وبحر",
+    "description": "كلمات تتعلق بالمحيطات والبحار بالإنجليزية",
+    "iconName": "water.waves",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ocean",
+        "hint": "محيط"
+      },
+      {
+        "word": "coral",
+        "hint": "مرجان"
+      },
+      {
+        "word": "whale",
+        "hint": "حوت"
+      },
+      {
+        "word": "dolphin",
+        "hint": "دلفين"
+      },
+      {
+        "word": "current",
+        "hint": "تيّار مائي"
+      },
+      {
+        "word": "reef",
+        "hint": "شعاب مرجانية"
+      },
+      {
+        "word": "anchor",
+        "hint": "مرساة"
+      },
+      {
+        "word": "harbor",
+        "hint": "ميناء"
+      },
+      {
+        "word": "tide",
+        "hint": "مدّ وجزر"
+      },
+      {
+        "word": "seaweed",
+        "hint": "أعشاب بحرية"
+      },
+      {
+        "word": "lighthouse",
+        "hint": "منارة"
+      },
+      {
+        "word": "submarine",
+        "hint": "غوّاصة"
+      },
+      {
+        "word": "iceberg",
+        "hint": "جبل جليدي"
+      },
+      {
+        "word": "trench",
+        "hint": "خندق بحري"
+      },
+      {
+        "word": "lagoon",
+        "hint": "بحيرة ساحلية"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "جبال",
+    "description": "كلمات تتعلق بالجبال والتسلّق بالإنجليزية",
+    "iconName": "mountain.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "summit",
+        "hint": "قمّة"
+      },
+      {
+        "word": "ridge",
+        "hint": "حافّة جبلية"
+      },
+      {
+        "word": "slope",
+        "hint": "منحدر"
+      },
+      {
+        "word": "altitude",
+        "hint": "ارتفاع"
+      },
+      {
+        "word": "boulder",
+        "hint": "صخرة كبيرة"
+      },
+      {
+        "word": "avalanche",
+        "hint": "انهيار ثلجي"
+      },
+      {
+        "word": "trail",
+        "hint": "مسار / درب"
+      },
+      {
+        "word": "peak",
+        "hint": "ذروة"
+      },
+      {
+        "word": "hiking",
+        "hint": "مشي في الجبال"
+      },
+      {
+        "word": "climbing",
+        "hint": "تسلّق"
+      },
+      {
+        "word": "ravine",
+        "hint": "شِعب / وادٍ ضيّق"
+      },
+      {
+        "word": "terrain",
+        "hint": "أرض / تضاريس"
+      },
+      {
+        "word": "expedition",
+        "hint": "رحلة استكشافية"
+      },
+      {
+        "word": "waterfall",
+        "hint": "شلاّل"
+      },
+      {
+        "word": "foothill",
+        "hint": "تلّة عند سفح الجبل"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "تخييم",
+    "description": "كلمات تتعلق بالتخييم والتنزّه بالإنجليزية",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "tent",
+        "hint": "خيمة"
+      },
+      {
+        "word": "campfire",
+        "hint": "نار المخيّم"
+      },
+      {
+        "word": "sleeping",
+        "hint": "نوم"
+      },
+      {
+        "word": "backpack",
+        "hint": "حقيبة ظهر"
+      },
+      {
+        "word": "lantern",
+        "hint": "فانوس"
+      },
+      {
+        "word": "compass",
+        "hint": "بوصلة"
+      },
+      {
+        "word": "canteen",
+        "hint": "مطرة ماء"
+      },
+      {
+        "word": "firewood",
+        "hint": "حطب"
+      },
+      {
+        "word": "marshmallow",
+        "hint": "مارشميلو"
+      },
+      {
+        "word": "hammock",
+        "hint": "أرجوحة شبكية"
+      },
+      {
+        "word": "binoculars",
+        "hint": "منظار"
+      },
+      {
+        "word": "thermos",
+        "hint": "ترمس"
+      },
+      {
+        "word": "wildlife",
+        "hint": "حياة برّية"
+      },
+      {
+        "word": "campsite",
+        "hint": "موقع المخيّم"
+      },
+      {
+        "word": "bonfire",
+        "hint": "نار كبيرة"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "قانون",
+    "description": "كلمات تتعلق بالقانون والمحاكم بالإنجليزية",
+    "iconName": "building.columns",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "judge",
+        "hint": "قاضٍ"
+      },
+      {
+        "word": "lawyer",
+        "hint": "محامٍ"
+      },
+      {
+        "word": "verdict",
+        "hint": "حكم"
+      },
+      {
+        "word": "witness",
+        "hint": "شاهد"
+      },
+      {
+        "word": "trial",
+        "hint": "محاكمة"
+      },
+      {
+        "word": "evidence",
+        "hint": "دليل / برهان"
+      },
+      {
+        "word": "jury",
+        "hint": "هيئة محلّفين"
+      },
+      {
+        "word": "appeal",
+        "hint": "استئناف"
+      },
+      {
+        "word": "lawsuit",
+        "hint": "دعوى قضائية"
+      },
+      {
+        "word": "penalty",
+        "hint": "عقوبة"
+      },
+      {
+        "word": "statute",
+        "hint": "قانون / تشريع"
+      },
+      {
+        "word": "contract",
+        "hint": "عقد"
+      },
+      {
+        "word": "custody",
+        "hint": "حضانة / وصاية"
+      },
+      {
+        "word": "parole",
+        "hint": "إفراج مشروط"
+      },
+      {
+        "word": "defendant",
+        "hint": "مُتّهَم / مُدّعى عليه"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "سياسة",
+    "description": "كلمات تتعلق بالسياسة والحكومة بالإنجليزية",
+    "iconName": "person.3",
+    "color": "#1d4ed8",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "election",
+        "hint": "انتخاب"
+      },
+      {
+        "word": "parliament",
+        "hint": "برلمان"
+      },
+      {
+        "word": "president",
+        "hint": "رئيس"
+      },
+      {
+        "word": "democracy",
+        "hint": "ديمقراطية"
+      },
+      {
+        "word": "campaign",
+        "hint": "حملة انتخابية"
+      },
+      {
+        "word": "minister",
+        "hint": "وزير"
+      },
+      {
+        "word": "diplomacy",
+        "hint": "دبلوماسية"
+      },
+      {
+        "word": "citizen",
+        "hint": "مواطن"
+      },
+      {
+        "word": "republic",
+        "hint": "جمهورية"
+      },
+      {
+        "word": "senator",
+        "hint": "عضو مجلس شيوخ"
+      },
+      {
+        "word": "cabinet",
+        "hint": "مجلس وزراء"
+      },
+      {
+        "word": "congress",
+        "hint": "كونغرس / مؤتمر"
+      },
+      {
+        "word": "governor",
+        "hint": "حاكم"
+      },
+      {
+        "word": "treaty",
+        "hint": "معاهدة"
+      },
+      {
+        "word": "ideology",
+        "hint": "أيديولوجيا"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "اقتصاد",
+    "description": "كلمات تتعلق بالاقتصاد والأعمال بالإنجليزية",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "market",
+        "hint": "سوق"
+      },
+      {
+        "word": "profit",
+        "hint": "ربح"
+      },
+      {
+        "word": "budget",
+        "hint": "ميزانية"
+      },
+      {
+        "word": "trade",
+        "hint": "تجارة"
+      },
+      {
+        "word": "export",
+        "hint": "تصدير"
+      },
+      {
+        "word": "import",
+        "hint": "استيراد"
+      },
+      {
+        "word": "inflation",
+        "hint": "تضخّم"
+      },
+      {
+        "word": "revenue",
+        "hint": "إيرادات"
+      },
+      {
+        "word": "surplus",
+        "hint": "فائض"
+      },
+      {
+        "word": "deficit",
+        "hint": "عجز"
+      },
+      {
+        "word": "supply",
+        "hint": "عرض / إمداد"
+      },
+      {
+        "word": "demand",
+        "hint": "طلب"
+      },
+      {
+        "word": "tariff",
+        "hint": "تعريفة جمركية"
+      },
+      {
+        "word": "subsidy",
+        "hint": "دعم حكومي"
+      },
+      {
+        "word": "recession",
+        "hint": "ركود اقتصادي"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "بنوك",
+    "description": "كلمات تتعلق بالخدمات البنكية بالإنجليزية",
+    "iconName": "banknote",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "account",
+        "hint": "حساب بنكي"
+      },
+      {
+        "word": "deposit",
+        "hint": "إيداع"
+      },
+      {
+        "word": "withdraw",
+        "hint": "سحب"
+      },
+      {
+        "word": "balance",
+        "hint": "رصيد"
+      },
+      {
+        "word": "mortgage",
+        "hint": "رهن عقاري"
+      },
+      {
+        "word": "interest",
+        "hint": "فائدة"
+      },
+      {
+        "word": "transfer",
+        "hint": "تحويل"
+      },
+      {
+        "word": "savings",
+        "hint": "مدّخرات"
+      },
+      {
+        "word": "currency",
+        "hint": "عملة"
+      },
+      {
+        "word": "exchange",
+        "hint": "صرف"
+      },
+      {
+        "word": "credit",
+        "hint": "ائتمان"
+      },
+      {
+        "word": "debit",
+        "hint": "مدين / خصم"
+      },
+      {
+        "word": "overdraft",
+        "hint": "سحب على المكشوف"
+      },
+      {
+        "word": "statement",
+        "hint": "كشف حساب"
+      },
+      {
+        "word": "dividend",
+        "hint": "أرباح موزّعة"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "تأمين",
+    "description": "كلمات تتعلق بالتأمين بالإنجليزية",
+    "iconName": "shield",
+    "color": "#4f46e5",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "policy",
+        "hint": "بوليصة تأمين"
+      },
+      {
+        "word": "premium",
+        "hint": "قسط التأمين"
+      },
+      {
+        "word": "coverage",
+        "hint": "تغطية تأمينية"
+      },
+      {
+        "word": "claim",
+        "hint": "مطالبة"
+      },
+      {
+        "word": "liability",
+        "hint": "مسؤولية"
+      },
+      {
+        "word": "deductible",
+        "hint": "مبلغ مقتطع"
+      },
+      {
+        "word": "beneficiary",
+        "hint": "مستفيد"
+      },
+      {
+        "word": "renewal",
+        "hint": "تجديد"
+      },
+      {
+        "word": "broker",
+        "hint": "وسيط تأمين"
+      },
+      {
+        "word": "damage",
+        "hint": "ضرر"
+      },
+      {
+        "word": "accident",
+        "hint": "حادث"
+      },
+      {
+        "word": "pension",
+        "hint": "معاش تقاعدي"
+      },
+      {
+        "word": "hazard",
+        "hint": "خطر"
+      },
+      {
+        "word": "compensation",
+        "hint": "تعويض"
+      },
+      {
+        "word": "annuity",
+        "hint": "راتب سنوي"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "طبخ",
+    "description": "كلمات تتعلق بالطبخ وإعداد الطعام بالإنجليزية",
+    "iconName": "flame",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "boil",
+        "hint": "يغلي"
+      },
+      {
+        "word": "roast",
+        "hint": "يشوي في الفرن"
+      },
+      {
+        "word": "simmer",
+        "hint": "يطبخ على نار هادئة"
+      },
+      {
+        "word": "saute",
+        "hint": "يقلي سريعاً"
+      },
+      {
+        "word": "season",
+        "hint": "يتبّل"
+      },
+      {
+        "word": "marinate",
+        "hint": "ينقع في التتبيلة"
+      },
+      {
+        "word": "garnish",
+        "hint": "يزيّن الطبق"
+      },
+      {
+        "word": "stir",
+        "hint": "يحرّك"
+      },
+      {
+        "word": "whisk",
+        "hint": "يخفق"
+      },
+      {
+        "word": "chop",
+        "hint": "يقطّع"
+      },
+      {
+        "word": "blend",
+        "hint": "يخلط"
+      },
+      {
+        "word": "steam",
+        "hint": "يطبخ بالبخار"
+      },
+      {
+        "word": "strain",
+        "hint": "يصفّي"
+      },
+      {
+        "word": "braise",
+        "hint": "يطهو ببطء"
+      },
+      {
+        "word": "poach",
+        "hint": "يسلق برفق"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "خَبز",
+    "description": "كلمات تتعلق بالخبز والمعجّنات بالإنجليزية",
+    "iconName": "birthday.cake",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "dough",
+        "hint": "عجينة"
+      },
+      {
+        "word": "flour",
+        "hint": "طحين / دقيق"
+      },
+      {
+        "word": "yeast",
+        "hint": "خميرة"
+      },
+      {
+        "word": "oven",
+        "hint": "فرن"
+      },
+      {
+        "word": "knead",
+        "hint": "يعجن"
+      },
+      {
+        "word": "pastry",
+        "hint": "معجّنات"
+      },
+      {
+        "word": "frosting",
+        "hint": "تزيين الكيك"
+      },
+      {
+        "word": "muffin",
+        "hint": "كعكة صغيرة"
+      },
+      {
+        "word": "batter",
+        "hint": "خليط سائل"
+      },
+      {
+        "word": "crust",
+        "hint": "قشرة"
+      },
+      {
+        "word": "glaze",
+        "hint": "طلاء لامع"
+      },
+      {
+        "word": "rolling",
+        "hint": "فرد العجين"
+      },
+      {
+        "word": "sprinkle",
+        "hint": "يرشّ"
+      },
+      {
+        "word": "preheat",
+        "hint": "يسخّن مسبقاً"
+      },
+      {
+        "word": "brownie",
+        "hint": "براوني"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "بهارات",
+    "description": "أسماء البهارات والتوابل بالإنجليزية",
+    "iconName": "leaf",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "cinnamon",
+        "hint": "قرفة"
+      },
+      {
+        "word": "turmeric",
+        "hint": "كركم"
+      },
+      {
+        "word": "cumin",
+        "hint": "كمّون"
+      },
+      {
+        "word": "paprika",
+        "hint": "بابريكا / فلفل أحمر"
+      },
+      {
+        "word": "oregano",
+        "hint": "أوريغانو / زعتر بري"
+      },
+      {
+        "word": "thyme",
+        "hint": "زعتر"
+      },
+      {
+        "word": "saffron",
+        "hint": "زعفران"
+      },
+      {
+        "word": "ginger",
+        "hint": "زنجبيل"
+      },
+      {
+        "word": "nutmeg",
+        "hint": "جوزة الطيب"
+      },
+      {
+        "word": "vanilla",
+        "hint": "فانيليا"
+      },
+      {
+        "word": "clove",
+        "hint": "قرنفل"
+      },
+      {
+        "word": "basil",
+        "hint": "ريحان"
+      },
+      {
+        "word": "mint",
+        "hint": "نعناع"
+      },
+      {
+        "word": "chili",
+        "hint": "فلفل حارّ"
+      },
+      {
+        "word": "cardamom",
+        "hint": "هيل / حبّهان"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "ألبان",
+    "description": "كلمات تتعلق بمنتجات الألبان بالإنجليزية",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cheese",
+        "hint": "جبنة"
+      },
+      {
+        "word": "butter",
+        "hint": "زبدة"
+      },
+      {
+        "word": "cream",
+        "hint": "كريمة / قشطة"
+      },
+      {
+        "word": "yogurt",
+        "hint": "زبادي / لبن"
+      },
+      {
+        "word": "milk",
+        "hint": "حليب"
+      },
+      {
+        "word": "cottage",
+        "hint": "جبنة قريش"
+      },
+      {
+        "word": "whey",
+        "hint": "مصل اللبن"
+      },
+      {
+        "word": "cheddar",
+        "hint": "جبنة تشيدر"
+      },
+      {
+        "word": "custard",
+        "hint": "كاسترد"
+      },
+      {
+        "word": "mousse",
+        "hint": "موس"
+      },
+      {
+        "word": "ricotta",
+        "hint": "جبنة ريكوتا"
+      },
+      {
+        "word": "ghee",
+        "hint": "سمن"
+      },
+      {
+        "word": "skim",
+        "hint": "منزوع الدسم"
+      },
+      {
+        "word": "lactose",
+        "hint": "لاكتوز / سكّر الحليب"
+      },
+      {
+        "word": "pasteurize",
+        "hint": "يبستر"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "لحوم",
+    "description": "أسماء اللحوم والدواجن بالإنجليزية",
+    "iconName": "fork.knife",
+    "color": "#dc2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chicken",
+        "hint": "دجاج"
+      },
+      {
+        "word": "beef",
+        "hint": "لحم بقري"
+      },
+      {
+        "word": "lamb",
+        "hint": "لحم خروف"
+      },
+      {
+        "word": "turkey",
+        "hint": "ديك رومي"
+      },
+      {
+        "word": "steak",
+        "hint": "شريحة لحم"
+      },
+      {
+        "word": "sausage",
+        "hint": "نقانق"
+      },
+      {
+        "word": "bacon",
+        "hint": "لحم مقدّد"
+      },
+      {
+        "word": "veal",
+        "hint": "لحم عجل"
+      },
+      {
+        "word": "pork",
+        "hint": "لحم خنزير"
+      },
+      {
+        "word": "ribs",
+        "hint": "أضلاع / ريش"
+      },
+      {
+        "word": "fillet",
+        "hint": "شرائح لحم صافية"
+      },
+      {
+        "word": "thigh",
+        "hint": "فخذ"
+      },
+      {
+        "word": "breast",
+        "hint": "صدر دجاج"
+      },
+      {
+        "word": "mince",
+        "hint": "لحم مفروم"
+      },
+      {
+        "word": "liver",
+        "hint": "كبد"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "حيوانات أليفة",
+    "description": "كلمات تتعلق بالحيوانات الأليفة ورعايتها بالإنجليزية",
+    "iconName": "pawprint",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "puppy",
+        "hint": "جرو"
+      },
+      {
+        "word": "kitten",
+        "hint": "قطّة صغيرة"
+      },
+      {
+        "word": "hamster",
+        "hint": "هامستر"
+      },
+      {
+        "word": "parrot",
+        "hint": "ببّغاء"
+      },
+      {
+        "word": "turtle",
+        "hint": "سلحفاة"
+      },
+      {
+        "word": "goldfish",
+        "hint": "سمكة ذهبية"
+      },
+      {
+        "word": "collar",
+        "hint": "طوق"
+      },
+      {
+        "word": "leash",
+        "hint": "رباط / مقود"
+      },
+      {
+        "word": "kennel",
+        "hint": "بيت الكلب"
+      },
+      {
+        "word": "treat",
+        "hint": "مكافأة / حلوى"
+      },
+      {
+        "word": "grooming",
+        "hint": "تنظيف وعناية"
+      },
+      {
+        "word": "adopt",
+        "hint": "يتبنّى"
+      },
+      {
+        "word": "aquarium",
+        "hint": "حوض سمك"
+      },
+      {
+        "word": "ferret",
+        "hint": "ابن عرس"
+      },
+      {
+        "word": "rabbit",
+        "hint": "أرنب"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "طيور",
+    "description": "أسماء الطيور الشائعة بالإنجليزية",
+    "iconName": "bird",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "eagle",
+        "hint": "نسر"
+      },
+      {
+        "word": "sparrow",
+        "hint": "عصفور"
+      },
+      {
+        "word": "falcon",
+        "hint": "صقر"
+      },
+      {
+        "word": "pigeon",
+        "hint": "حمامة"
+      },
+      {
+        "word": "penguin",
+        "hint": "بطريق"
+      },
+      {
+        "word": "flamingo",
+        "hint": "فلامنغو"
+      },
+      {
+        "word": "peacock",
+        "hint": "طاووس"
+      },
+      {
+        "word": "heron",
+        "hint": "مالك الحزين"
+      },
+      {
+        "word": "pelican",
+        "hint": "بجعة"
+      },
+      {
+        "word": "seagull",
+        "hint": "نورس"
+      },
+      {
+        "word": "owl",
+        "hint": "بومة"
+      },
+      {
+        "word": "crow",
+        "hint": "غراب"
+      },
+      {
+        "word": "swallow",
+        "hint": "سنونو"
+      },
+      {
+        "word": "stork",
+        "hint": "لقلق"
+      },
+      {
+        "word": "robin",
+        "hint": "أبو الحنّاء"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "حشرات",
+    "description": "أسماء الحشرات الشائعة بالإنجليزية",
+    "iconName": "ant",
+    "color": "#a3e635",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "butterfly",
+        "hint": "فراشة"
+      },
+      {
+        "word": "mosquito",
+        "hint": "بعوضة"
+      },
+      {
+        "word": "beetle",
+        "hint": "خنفساء"
+      },
+      {
+        "word": "dragonfly",
+        "hint": "يعسوب"
+      },
+      {
+        "word": "ladybug",
+        "hint": "دعسوقة"
+      },
+      {
+        "word": "cricket",
+        "hint": "صرصور الليل"
+      },
+      {
+        "word": "ant",
+        "hint": "نملة"
+      },
+      {
+        "word": "wasp",
+        "hint": "دبّور"
+      },
+      {
+        "word": "firefly",
+        "hint": "يراعة"
+      },
+      {
+        "word": "caterpillar",
+        "hint": "يرقة / دودة"
+      },
+      {
+        "word": "scorpion",
+        "hint": "عقرب"
+      },
+      {
+        "word": "spider",
+        "hint": "عنكبوت"
+      },
+      {
+        "word": "mantis",
+        "hint": "فرس النبي"
+      },
+      {
+        "word": "centipede",
+        "hint": "أم أربع وأربعين"
+      },
+      {
+        "word": "locust",
+        "hint": "جراد"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "حياة بحرية",
+    "description": "كلمات تتعلق بالكائنات البحرية بالإنجليزية",
+    "iconName": "fish",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "shark",
+        "hint": "قرش"
+      },
+      {
+        "word": "octopus",
+        "hint": "أخطبوط"
+      },
+      {
+        "word": "jellyfish",
+        "hint": "قنديل بحر"
+      },
+      {
+        "word": "starfish",
+        "hint": "نجم بحر"
+      },
+      {
+        "word": "lobster",
+        "hint": "كركند / جراد البحر"
+      },
+      {
+        "word": "shrimp",
+        "hint": "جمبري / روبيان"
+      },
+      {
+        "word": "seahorse",
+        "hint": "حصان بحر"
+      },
+      {
+        "word": "stingray",
+        "hint": "سمكة الراي"
+      },
+      {
+        "word": "oyster",
+        "hint": "محار"
+      },
+      {
+        "word": "clam",
+        "hint": "بطلينوس"
+      },
+      {
+        "word": "crab",
+        "hint": "سلطعون / سرطان"
+      },
+      {
+        "word": "squid",
+        "hint": "حبّار"
+      },
+      {
+        "word": "urchin",
+        "hint": "قنفذ بحر"
+      },
+      {
+        "word": "eel",
+        "hint": "ثعبان البحر"
+      },
+      {
+        "word": "walrus",
+        "hint": "فظّ"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "حيوانات المزرعة",
+    "description": "أسماء حيوانات المزرعة بالإنجليزية",
+    "iconName": "hare",
+    "color": "#92400e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "rooster",
+        "hint": "ديك"
+      },
+      {
+        "word": "donkey",
+        "hint": "حمار"
+      },
+      {
+        "word": "goat",
+        "hint": "ماعز"
+      },
+      {
+        "word": "sheep",
+        "hint": "خروف"
+      },
+      {
+        "word": "piglet",
+        "hint": "خنزير صغير"
+      },
+      {
+        "word": "calf",
+        "hint": "عجل"
+      },
+      {
+        "word": "mare",
+        "hint": "فرس / أنثى الحصان"
+      },
+      {
+        "word": "stallion",
+        "hint": "حصان فحل"
+      },
+      {
+        "word": "duckling",
+        "hint": "بطّة صغيرة"
+      },
+      {
+        "word": "goose",
+        "hint": "إوزّة"
+      },
+      {
+        "word": "bull",
+        "hint": "ثور"
+      },
+      {
+        "word": "mule",
+        "hint": "بغل"
+      },
+      {
+        "word": "foal",
+        "hint": "مهر"
+      },
+      {
+        "word": "hen",
+        "hint": "دجاجة"
+      },
+      {
+        "word": "barn",
+        "hint": "حظيرة"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "مشاعر وأحاسيس",
+    "description": "كلمات تتعلق بالمشاعر العميقة بالإنجليزية",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "grateful",
+        "hint": "ممتنّ"
+      },
+      {
+        "word": "anxious",
+        "hint": "قلِق"
+      },
+      {
+        "word": "confident",
+        "hint": "واثق"
+      },
+      {
+        "word": "jealous",
+        "hint": "غيور"
+      },
+      {
+        "word": "nostalgic",
+        "hint": "حنين للماضي"
+      },
+      {
+        "word": "relieved",
+        "hint": "مرتاح"
+      },
+      {
+        "word": "ashamed",
+        "hint": "خجلان"
+      },
+      {
+        "word": "content",
+        "hint": "راضٍ / قانع"
+      },
+      {
+        "word": "furious",
+        "hint": "غاضب جداً"
+      },
+      {
+        "word": "hopeful",
+        "hint": "متفائل"
+      },
+      {
+        "word": "lonely",
+        "hint": "وحيد"
+      },
+      {
+        "word": "proud",
+        "hint": "فخور"
+      },
+      {
+        "word": "confused",
+        "hint": "محتار / مرتبك"
+      },
+      {
+        "word": "thrilled",
+        "hint": "متحمّس جداً"
+      },
+      {
+        "word": "overwhelmed",
+        "hint": "مغمور / مُثقَل"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "شخصية",
+    "description": "صفات الشخصية والطباع بالإنجليزية",
+    "iconName": "person.crop.circle",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "generous",
+        "hint": "كريم"
+      },
+      {
+        "word": "stubborn",
+        "hint": "عنيد"
+      },
+      {
+        "word": "humble",
+        "hint": "متواضع"
+      },
+      {
+        "word": "patient",
+        "hint": "صبور"
+      },
+      {
+        "word": "curious",
+        "hint": "فضولي"
+      },
+      {
+        "word": "ambitious",
+        "hint": "طموح"
+      },
+      {
+        "word": "reliable",
+        "hint": "يُعتمَد عليه"
+      },
+      {
+        "word": "cheerful",
+        "hint": "مرِح / بشوش"
+      },
+      {
+        "word": "cautious",
+        "hint": "حذِر"
+      },
+      {
+        "word": "creative",
+        "hint": "مبدع"
+      },
+      {
+        "word": "honest",
+        "hint": "صادق"
+      },
+      {
+        "word": "loyal",
+        "hint": "وفيّ"
+      },
+      {
+        "word": "selfish",
+        "hint": "أناني"
+      },
+      {
+        "word": "witty",
+        "hint": "ذكي وظريف"
+      },
+      {
+        "word": "diligent",
+        "hint": "مجتهد"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "علاقات",
+    "description": "كلمات تتعلق بالعلاقات الإنسانية بالإنجليزية",
+    "iconName": "heart.text.square",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "spouse",
+        "hint": "زوج / زوجة"
+      },
+      {
+        "word": "fiance",
+        "hint": "خطيب / خطيبة"
+      },
+      {
+        "word": "colleague",
+        "hint": "زميل عمل"
+      },
+      {
+        "word": "neighbor",
+        "hint": "جار"
+      },
+      {
+        "word": "stranger",
+        "hint": "غريب"
+      },
+      {
+        "word": "companion",
+        "hint": "رفيق"
+      },
+      {
+        "word": "rival",
+        "hint": "منافس"
+      },
+      {
+        "word": "mentor",
+        "hint": "مُرشد / مُعلّم"
+      },
+      {
+        "word": "divorce",
+        "hint": "طلاق"
+      },
+      {
+        "word": "engaged",
+        "hint": "مخطوب"
+      },
+      {
+        "word": "bond",
+        "hint": "رابطة"
+      },
+      {
+        "word": "trust",
+        "hint": "ثقة"
+      },
+      {
+        "word": "respect",
+        "hint": "احترام"
+      },
+      {
+        "word": "affection",
+        "hint": "عاطفة / محبّة"
+      },
+      {
+        "word": "commitment",
+        "hint": "التزام"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "تواصل",
+    "description": "كلمات تتعلق بالتواصل والحوار بالإنجليزية",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "announce",
+        "hint": "يُعلن"
+      },
+      {
+        "word": "persuade",
+        "hint": "يُقنع"
+      },
+      {
+        "word": "debate",
+        "hint": "مناظرة / نقاش"
+      },
+      {
+        "word": "gesture",
+        "hint": "إشارة / إيماءة"
+      },
+      {
+        "word": "whisper",
+        "hint": "يهمس"
+      },
+      {
+        "word": "negotiate",
+        "hint": "يتفاوض"
+      },
+      {
+        "word": "express",
+        "hint": "يعبّر"
+      },
+      {
+        "word": "clarify",
+        "hint": "يوضّح"
+      },
+      {
+        "word": "compliment",
+        "hint": "مجاملة / إطراء"
+      },
+      {
+        "word": "interrupt",
+        "hint": "يقاطع"
+      },
+      {
+        "word": "apologize",
+        "hint": "يعتذر"
+      },
+      {
+        "word": "greet",
+        "hint": "يحيّي"
+      },
+      {
+        "word": "translate",
+        "hint": "يترجم"
+      },
+      {
+        "word": "respond",
+        "hint": "يردّ / يستجيب"
+      },
+      {
+        "word": "summarize",
+        "hint": "يلخّص"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "إيماءات",
+    "description": "كلمات تتعلق بلغة الجسد والإيماءات بالإنجليزية",
+    "iconName": "hand.wave",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "handshake",
+        "hint": "مصافحة"
+      },
+      {
+        "word": "nod",
+        "hint": "إيماءة بالرأس"
+      },
+      {
+        "word": "wink",
+        "hint": "غمزة"
+      },
+      {
+        "word": "shrug",
+        "hint": "هزّ الكتفين"
+      },
+      {
+        "word": "clap",
+        "hint": "تصفيق"
+      },
+      {
+        "word": "wave",
+        "hint": "تلويح"
+      },
+      {
+        "word": "bow",
+        "hint": "انحناء"
+      },
+      {
+        "word": "frown",
+        "hint": "عبوس"
+      },
+      {
+        "word": "smile",
+        "hint": "ابتسامة"
+      },
+      {
+        "word": "embrace",
+        "hint": "عناق"
+      },
+      {
+        "word": "point",
+        "hint": "يشير"
+      },
+      {
+        "word": "salute",
+        "hint": "تحيّة عسكرية"
+      },
+      {
+        "word": "beckon",
+        "hint": "يلوّح لشخص ليأتي"
+      },
+      {
+        "word": "yawn",
+        "hint": "تثاؤب"
+      },
+      {
+        "word": "stare",
+        "hint": "تحديق"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "عمارة",
+    "description": "كلمات تتعلق بالعمارة والتصميم المعماري بالإنجليزية",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "column",
+        "hint": "عمود"
+      },
+      {
+        "word": "facade",
+        "hint": "واجهة المبنى"
+      },
+      {
+        "word": "dome",
+        "hint": "قبّة"
+      },
+      {
+        "word": "balcony",
+        "hint": "شرفة"
+      },
+      {
+        "word": "blueprint",
+        "hint": "مخطّط هندسي"
+      },
+      {
+        "word": "arch",
+        "hint": "قوس"
+      },
+      {
+        "word": "staircase",
+        "hint": "درج / سلّم"
+      },
+      {
+        "word": "foundation",
+        "hint": "أساس / قاعدة"
+      },
+      {
+        "word": "terrace",
+        "hint": "تراس / شرفة"
+      },
+      {
+        "word": "corridor",
+        "hint": "ممرّ / رواق"
+      },
+      {
+        "word": "pillar",
+        "hint": "دعامة / ركيزة"
+      },
+      {
+        "word": "skylight",
+        "hint": "كوّة سقفية"
+      },
+      {
+        "word": "ceiling",
+        "hint": "سقف"
+      },
+      {
+        "word": "minaret",
+        "hint": "مئذنة"
+      },
+      {
+        "word": "symmetry",
+        "hint": "تناظر"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "بناء",
+    "description": "كلمات تتعلق بالبناء والتشييد بالإنجليزية",
+    "iconName": "hammer",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "cement",
+        "hint": "أسمنت"
+      },
+      {
+        "word": "scaffold",
+        "hint": "سقالة"
+      },
+      {
+        "word": "crane",
+        "hint": "رافعة"
+      },
+      {
+        "word": "excavate",
+        "hint": "يحفر"
+      },
+      {
+        "word": "concrete",
+        "hint": "خرسانة"
+      },
+      {
+        "word": "plaster",
+        "hint": "جصّ"
+      },
+      {
+        "word": "beam",
+        "hint": "عارضة / كمرة"
+      },
+      {
+        "word": "mortar",
+        "hint": "ملاط"
+      },
+      {
+        "word": "insulation",
+        "hint": "عزل"
+      },
+      {
+        "word": "gravel",
+        "hint": "حصى"
+      },
+      {
+        "word": "bulldozer",
+        "hint": "جرّافة"
+      },
+      {
+        "word": "weld",
+        "hint": "لحام"
+      },
+      {
+        "word": "demolish",
+        "hint": "يهدم"
+      },
+      {
+        "word": "rebar",
+        "hint": "حديد تسليح"
+      },
+      {
+        "word": "blueprint",
+        "hint": "رسم هندسي"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "كهرباء",
+    "description": "كلمات تتعلق بالكهرباء والطاقة بالإنجليزية",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "voltage",
+        "hint": "جهد كهربائي"
+      },
+      {
+        "word": "circuit",
+        "hint": "دائرة كهربائية"
+      },
+      {
+        "word": "outlet",
+        "hint": "مقبس كهربائي"
+      },
+      {
+        "word": "switch",
+        "hint": "مفتاح"
+      },
+      {
+        "word": "fuse",
+        "hint": "صمام / فيوز"
+      },
+      {
+        "word": "wiring",
+        "hint": "أسلاك كهربائية"
+      },
+      {
+        "word": "adapter",
+        "hint": "محوّل"
+      },
+      {
+        "word": "generator",
+        "hint": "مولّد كهربائي"
+      },
+      {
+        "word": "battery",
+        "hint": "بطّارية"
+      },
+      {
+        "word": "current",
+        "hint": "تيّار كهربائي"
+      },
+      {
+        "word": "socket",
+        "hint": "مأخذ كهربائي"
+      },
+      {
+        "word": "transformer",
+        "hint": "محوّل كهربائي"
+      },
+      {
+        "word": "conductor",
+        "hint": "موصّل"
+      },
+      {
+        "word": "insulator",
+        "hint": "عازل"
+      },
+      {
+        "word": "resistor",
+        "hint": "مقاوِمة"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "سباكة",
+    "description": "كلمات تتعلق بالسباكة وأنابيب المياه بالإنجليزية",
+    "iconName": "wrench",
+    "color": "#0369a1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pipe",
+        "hint": "أنبوب"
+      },
+      {
+        "word": "valve",
+        "hint": "صمّام"
+      },
+      {
+        "word": "wrench",
+        "hint": "مفتاح ربط"
+      },
+      {
+        "word": "plumber",
+        "hint": "سبّاك"
+      },
+      {
+        "word": "leakage",
+        "hint": "تسريب"
+      },
+      {
+        "word": "fitting",
+        "hint": "وصلة أنابيب"
+      },
+      {
+        "word": "pressure",
+        "hint": "ضغط"
+      },
+      {
+        "word": "sewer",
+        "hint": "مجاري"
+      },
+      {
+        "word": "gasket",
+        "hint": "حشيّة"
+      },
+      {
+        "word": "spigot",
+        "hint": "حنفية / صنبور"
+      },
+      {
+        "word": "drainage",
+        "hint": "تصريف"
+      },
+      {
+        "word": "cistern",
+        "hint": "خزّان مياه"
+      },
+      {
+        "word": "elbow",
+        "hint": "وصلة كوع"
+      },
+      {
+        "word": "flange",
+        "hint": "شفّة / فلنجة"
+      },
+      {
+        "word": "sealant",
+        "hint": "مادّة سادّة"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "أدوات حدائق",
+    "description": "أدوات العناية بالحدائق بالإنجليزية",
+    "iconName": "leaf",
+    "color": "#4d7c0f",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "shovel",
+        "hint": "مجرفة"
+      },
+      {
+        "word": "rake",
+        "hint": "مشط أرضي"
+      },
+      {
+        "word": "hose",
+        "hint": "خرطوم مياه"
+      },
+      {
+        "word": "mower",
+        "hint": "آلة قصّ العشب"
+      },
+      {
+        "word": "pruner",
+        "hint": "مقصّ تقليم"
+      },
+      {
+        "word": "trowel",
+        "hint": "مسطرين صغير"
+      },
+      {
+        "word": "wheelbarrow",
+        "hint": "عربة يدوية"
+      },
+      {
+        "word": "sprinkler",
+        "hint": "رشّاش مياه"
+      },
+      {
+        "word": "gloves",
+        "hint": "قفّازات"
+      },
+      {
+        "word": "mulcher",
+        "hint": "آلة فرم"
+      },
+      {
+        "word": "trimmer",
+        "hint": "أداة تشذيب"
+      },
+      {
+        "word": "fertilizer",
+        "hint": "سماد"
+      },
+      {
+        "word": "planter",
+        "hint": "أصيص"
+      },
+      {
+        "word": "bucket",
+        "hint": "دلو"
+      },
+      {
+        "word": "spade",
+        "hint": "رفش"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "طبّ",
+    "description": "كلمات تتعلق بالطبّ والعلاج بالإنجليزية",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "diagnosis",
+        "hint": "تشخيص"
+      },
+      {
+        "word": "symptom",
+        "hint": "عرض / أعراض"
+      },
+      {
+        "word": "therapy",
+        "hint": "علاج"
+      },
+      {
+        "word": "surgeon",
+        "hint": "جرّاح"
+      },
+      {
+        "word": "stethoscope",
+        "hint": "سمّاعة الطبيب"
+      },
+      {
+        "word": "injection",
+        "hint": "حقنة"
+      },
+      {
+        "word": "anesthesia",
+        "hint": "تخدير"
+      },
+      {
+        "word": "prescription",
+        "hint": "وصفة طبية"
+      },
+      {
+        "word": "bandage",
+        "hint": "ضمادة"
+      },
+      {
+        "word": "infection",
+        "hint": "عدوى"
+      },
+      {
+        "word": "vaccine",
+        "hint": "لقاح"
+      },
+      {
+        "word": "recovery",
+        "hint": "تعافٍ / شفاء"
+      },
+      {
+        "word": "chronic",
+        "hint": "مزمن"
+      },
+      {
+        "word": "checkup",
+        "hint": "فحص طبّي"
+      },
+      {
+        "word": "ambulance",
+        "hint": "سيّارة إسعاف"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "صيدلة",
+    "description": "كلمات تتعلق بالصيدلة والأدوية بالإنجليزية",
+    "iconName": "pills",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "tablet",
+        "hint": "قرص دواء"
+      },
+      {
+        "word": "capsule",
+        "hint": "كبسولة"
+      },
+      {
+        "word": "dosage",
+        "hint": "جرعة"
+      },
+      {
+        "word": "ointment",
+        "hint": "مرهم"
+      },
+      {
+        "word": "syrup",
+        "hint": "شراب"
+      },
+      {
+        "word": "antibiotic",
+        "hint": "مضادّ حيوي"
+      },
+      {
+        "word": "painkiller",
+        "hint": "مسكّن ألم"
+      },
+      {
+        "word": "supplement",
+        "hint": "مكمّل غذائي"
+      },
+      {
+        "word": "pharmacist",
+        "hint": "صيدلي"
+      },
+      {
+        "word": "allergy",
+        "hint": "حساسية"
+      },
+      {
+        "word": "expiry",
+        "hint": "تاريخ انتهاء"
+      },
+      {
+        "word": "inhaler",
+        "hint": "بخّاخ"
+      },
+      {
+        "word": "dropper",
+        "hint": "قطّارة"
+      },
+      {
+        "word": "generic",
+        "hint": "دواء بديل"
+      },
+      {
+        "word": "sedative",
+        "hint": "مهدّئ"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "لياقة بدنية",
+    "description": "كلمات تتعلق باللياقة وتمارين الرياضة بالإنجليزية",
+    "iconName": "figure.run",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "treadmill",
+        "hint": "جهاز المشي"
+      },
+      {
+        "word": "dumbbell",
+        "hint": "دمبل / ثقل"
+      },
+      {
+        "word": "squat",
+        "hint": "تمرين القرفصاء"
+      },
+      {
+        "word": "cardio",
+        "hint": "تمارين قلب"
+      },
+      {
+        "word": "plank",
+        "hint": "تمرين اللوح"
+      },
+      {
+        "word": "workout",
+        "hint": "تمرين رياضي"
+      },
+      {
+        "word": "endurance",
+        "hint": "تحمّل"
+      },
+      {
+        "word": "warmup",
+        "hint": "إحماء"
+      },
+      {
+        "word": "cooldown",
+        "hint": "تهدئة"
+      },
+      {
+        "word": "repetition",
+        "hint": "تكرار"
+      },
+      {
+        "word": "strength",
+        "hint": "قوّة"
+      },
+      {
+        "word": "flexibility",
+        "hint": "مرونة"
+      },
+      {
+        "word": "aerobic",
+        "hint": "هوائي"
+      },
+      {
+        "word": "trainer",
+        "hint": "مدرّب"
+      },
+      {
+        "word": "protein",
+        "hint": "بروتين"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "يوغا",
+    "description": "كلمات تتعلق باليوغا والتأمّل بالإنجليزية",
+    "iconName": "figure.yoga",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "posture",
+        "hint": "وضعية"
+      },
+      {
+        "word": "breathe",
+        "hint": "يتنفّس"
+      },
+      {
+        "word": "balance",
+        "hint": "توازن"
+      },
+      {
+        "word": "stretch",
+        "hint": "تمدّد"
+      },
+      {
+        "word": "mindful",
+        "hint": "يقظ / واعٍ"
+      },
+      {
+        "word": "mantra",
+        "hint": "عبارة تأمّل"
+      },
+      {
+        "word": "chakra",
+        "hint": "شاكرا / مركز طاقة"
+      },
+      {
+        "word": "harmony",
+        "hint": "انسجام"
+      },
+      {
+        "word": "inhale",
+        "hint": "يشهق / يستنشق"
+      },
+      {
+        "word": "exhale",
+        "hint": "يزفر"
+      },
+      {
+        "word": "peaceful",
+        "hint": "هادئ / سلمي"
+      },
+      {
+        "word": "serene",
+        "hint": "صافٍ / هادئ"
+      },
+      {
+        "word": "lotus",
+        "hint": "وضعية اللوتس"
+      },
+      {
+        "word": "alignment",
+        "hint": "محاذاة"
+      },
+      {
+        "word": "wellness",
+        "hint": "عافية"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "صحة نفسية",
+    "description": "كلمات تتعلق بالصحة النفسية بالإنجليزية",
+    "iconName": "brain.head.profile",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "therapy",
+        "hint": "علاج نفسي"
+      },
+      {
+        "word": "anxiety",
+        "hint": "قلق"
+      },
+      {
+        "word": "depression",
+        "hint": "اكتئاب"
+      },
+      {
+        "word": "resilience",
+        "hint": "صمود / مرونة نفسية"
+      },
+      {
+        "word": "mindset",
+        "hint": "عقلية / طريقة تفكير"
+      },
+      {
+        "word": "coping",
+        "hint": "تأقلم"
+      },
+      {
+        "word": "boundary",
+        "hint": "حدود شخصية"
+      },
+      {
+        "word": "burnout",
+        "hint": "إرهاق نفسي"
+      },
+      {
+        "word": "trauma",
+        "hint": "صدمة نفسية"
+      },
+      {
+        "word": "selfcare",
+        "hint": "عناية بالذات"
+      },
+      {
+        "word": "empathy",
+        "hint": "تعاطف"
+      },
+      {
+        "word": "awareness",
+        "hint": "وعي"
+      },
+      {
+        "word": "phobia",
+        "hint": "رهاب"
+      },
+      {
+        "word": "counselor",
+        "hint": "مستشار نفسي"
+      },
+      {
+        "word": "gratitude",
+        "hint": "امتنان"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "مركبات",
+    "description": "أنواع المركبات وأجزائها بالإنجليزية",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "engine",
+        "hint": "محرّك"
+      },
+      {
+        "word": "steering",
+        "hint": "عجلة القيادة"
+      },
+      {
+        "word": "bumper",
+        "hint": "مصدّ السيّارة"
+      },
+      {
+        "word": "trunk",
+        "hint": "صندوق السيّارة"
+      },
+      {
+        "word": "windshield",
+        "hint": "زجاج أمامي"
+      },
+      {
+        "word": "headlight",
+        "hint": "مصباح أمامي"
+      },
+      {
+        "word": "exhaust",
+        "hint": "عادم"
+      },
+      {
+        "word": "dashboard",
+        "hint": "لوحة القيادة"
+      },
+      {
+        "word": "seatbelt",
+        "hint": "حزام الأمان"
+      },
+      {
+        "word": "accelerate",
+        "hint": "يتسارع"
+      },
+      {
+        "word": "brake",
+        "hint": "فرامل"
+      },
+      {
+        "word": "clutch",
+        "hint": "دبرياج / قابض"
+      },
+      {
+        "word": "mileage",
+        "hint": "عداد المسافة"
+      },
+      {
+        "word": "gasoline",
+        "hint": "بنزين"
+      },
+      {
+        "word": "ignition",
+        "hint": "إشعال / تشغيل"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "طيران",
+    "description": "كلمات تتعلق بالطيران والمطارات بالإنجليزية",
+    "iconName": "airplane",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "runway",
+        "hint": "مدرج الطائرات"
+      },
+      {
+        "word": "cockpit",
+        "hint": "قمرة القيادة"
+      },
+      {
+        "word": "turbulence",
+        "hint": "اضطراب جوّي"
+      },
+      {
+        "word": "boarding",
+        "hint": "صعود الطائرة"
+      },
+      {
+        "word": "altitude",
+        "hint": "ارتفاع"
+      },
+      {
+        "word": "terminal",
+        "hint": "صالة المطار"
+      },
+      {
+        "word": "passport",
+        "hint": "جواز سفر"
+      },
+      {
+        "word": "luggage",
+        "hint": "أمتعة"
+      },
+      {
+        "word": "departure",
+        "hint": "مغادرة"
+      },
+      {
+        "word": "arrival",
+        "hint": "وصول"
+      },
+      {
+        "word": "customs",
+        "hint": "جمارك"
+      },
+      {
+        "word": "fuselage",
+        "hint": "جسم الطائرة"
+      },
+      {
+        "word": "propeller",
+        "hint": "مروحة"
+      },
+      {
+        "word": "autopilot",
+        "hint": "طيّار آلي"
+      },
+      {
+        "word": "hangar",
+        "hint": "حظيرة طائرات"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "شحن بحري",
+    "description": "كلمات تتعلق بالشحن والنقل البحري بالإنجليزية",
+    "iconName": "ferry",
+    "color": "#1e40af",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cargo",
+        "hint": "بضائع / شحنة"
+      },
+      {
+        "word": "freight",
+        "hint": "نقل بضائع"
+      },
+      {
+        "word": "vessel",
+        "hint": "سفينة"
+      },
+      {
+        "word": "container",
+        "hint": "حاوية"
+      },
+      {
+        "word": "dock",
+        "hint": "رصيف ميناء"
+      },
+      {
+        "word": "captain",
+        "hint": "قبطان"
+      },
+      {
+        "word": "anchor",
+        "hint": "مرساة"
+      },
+      {
+        "word": "deck",
+        "hint": "سطح السفينة"
+      },
+      {
+        "word": "hull",
+        "hint": "هيكل السفينة"
+      },
+      {
+        "word": "maritime",
+        "hint": "بحري"
+      },
+      {
+        "word": "buoy",
+        "hint": "عوّامة"
+      },
+      {
+        "word": "porthole",
+        "hint": "كوّة السفينة"
+      },
+      {
+        "word": "starboard",
+        "hint": "يمين السفينة"
+      },
+      {
+        "word": "compass",
+        "hint": "بوصلة"
+      },
+      {
+        "word": "navigation",
+        "hint": "ملاحة"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "دراجات",
+    "description": "كلمات تتعلق بركوب الدراجات بالإنجليزية",
+    "iconName": "bicycle",
+    "color": "#16a34a",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pedal",
+        "hint": "دوّاسة"
+      },
+      {
+        "word": "handlebar",
+        "hint": "مقود الدراجة"
+      },
+      {
+        "word": "helmet",
+        "hint": "خوذة"
+      },
+      {
+        "word": "chain",
+        "hint": "سلسلة"
+      },
+      {
+        "word": "spoke",
+        "hint": "سلك العجلة"
+      },
+      {
+        "word": "saddle",
+        "hint": "مقعد الدراجة"
+      },
+      {
+        "word": "gear",
+        "hint": "ترس / سرعة"
+      },
+      {
+        "word": "tire",
+        "hint": "إطار"
+      },
+      {
+        "word": "pump",
+        "hint": "مضخّة هواء"
+      },
+      {
+        "word": "fender",
+        "hint": "واقي الطين"
+      },
+      {
+        "word": "reflector",
+        "hint": "عاكس ضوء"
+      },
+      {
+        "word": "kickstand",
+        "hint": "سناد الدراجة"
+      },
+      {
+        "word": "braking",
+        "hint": "كبح"
+      },
+      {
+        "word": "touring",
+        "hint": "جولة بالدراجة"
+      },
+      {
+        "word": "sprint",
+        "hint": "سباق سرعة"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "قطارات",
+    "description": "كلمات تتعلق بالقطارات والسكك الحديدية بالإنجليزية",
+    "iconName": "tram",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "station",
+        "hint": "محطّة"
+      },
+      {
+        "word": "platform",
+        "hint": "رصيف المحطّة"
+      },
+      {
+        "word": "carriage",
+        "hint": "عربة قطار"
+      },
+      {
+        "word": "railway",
+        "hint": "سكّة حديدية"
+      },
+      {
+        "word": "conductor",
+        "hint": "مفتّش التذاكر"
+      },
+      {
+        "word": "locomotive",
+        "hint": "قاطرة"
+      },
+      {
+        "word": "compartment",
+        "hint": "مقصورة"
+      },
+      {
+        "word": "express",
+        "hint": "قطار سريع"
+      },
+      {
+        "word": "commuter",
+        "hint": "مسافر يومي"
+      },
+      {
+        "word": "schedule",
+        "hint": "جدول مواعيد"
+      },
+      {
+        "word": "derail",
+        "hint": "يخرج عن السكّة"
+      },
+      {
+        "word": "junction",
+        "hint": "تقاطع سكك"
+      },
+      {
+        "word": "sleeper",
+        "hint": "عربة نوم"
+      },
+      {
+        "word": "tunnel",
+        "hint": "نفق"
+      },
+      {
+        "word": "crossing",
+        "hint": "معبر سكّة حديدية"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "رياضيات",
+    "description": "كلمات تتعلق بالرياضيات والحساب بالإنجليزية",
+    "iconName": "x.squareroot",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "equation",
+        "hint": "معادلة"
+      },
+      {
+        "word": "fraction",
+        "hint": "كسر"
+      },
+      {
+        "word": "decimal",
+        "hint": "عشري"
+      },
+      {
+        "word": "geometry",
+        "hint": "هندسة"
+      },
+      {
+        "word": "algebra",
+        "hint": "جبر"
+      },
+      {
+        "word": "formula",
+        "hint": "صيغة / معادلة"
+      },
+      {
+        "word": "diameter",
+        "hint": "قطر"
+      },
+      {
+        "word": "perimeter",
+        "hint": "محيط"
+      },
+      {
+        "word": "triangle",
+        "hint": "مثلّث"
+      },
+      {
+        "word": "parallel",
+        "hint": "متوازي"
+      },
+      {
+        "word": "calculate",
+        "hint": "يحسب"
+      },
+      {
+        "word": "multiply",
+        "hint": "يضرب"
+      },
+      {
+        "word": "subtract",
+        "hint": "يطرح"
+      },
+      {
+        "word": "integer",
+        "hint": "عدد صحيح"
+      },
+      {
+        "word": "variable",
+        "hint": "متغيّر"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "فيزياء",
+    "description": "كلمات تتعلق بالفيزياء والقوى بالإنجليزية",
+    "iconName": "atom",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "velocity",
+        "hint": "سرعة"
+      },
+      {
+        "word": "momentum",
+        "hint": "زخم"
+      },
+      {
+        "word": "friction",
+        "hint": "احتكاك"
+      },
+      {
+        "word": "wavelength",
+        "hint": "طول موجي"
+      },
+      {
+        "word": "frequency",
+        "hint": "تردّد"
+      },
+      {
+        "word": "quantum",
+        "hint": "كمّي"
+      },
+      {
+        "word": "magnetic",
+        "hint": "مغناطيسي"
+      },
+      {
+        "word": "electron",
+        "hint": "إلكترون"
+      },
+      {
+        "word": "neutron",
+        "hint": "نيوترون"
+      },
+      {
+        "word": "proton",
+        "hint": "بروتون"
+      },
+      {
+        "word": "particle",
+        "hint": "جسيم"
+      },
+      {
+        "word": "density",
+        "hint": "كثافة"
+      },
+      {
+        "word": "thermal",
+        "hint": "حراري"
+      },
+      {
+        "word": "kinetic",
+        "hint": "حركي"
+      },
+      {
+        "word": "spectrum",
+        "hint": "طيف"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "كيمياء",
+    "description": "كلمات تتعلق بالكيمياء والعناصر بالإنجليزية",
+    "iconName": "flask",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "molecule",
+        "hint": "جزيء"
+      },
+      {
+        "word": "compound",
+        "hint": "مركّب"
+      },
+      {
+        "word": "element",
+        "hint": "عنصر"
+      },
+      {
+        "word": "reaction",
+        "hint": "تفاعل"
+      },
+      {
+        "word": "catalyst",
+        "hint": "عامل محفّز"
+      },
+      {
+        "word": "solution",
+        "hint": "محلول"
+      },
+      {
+        "word": "solvent",
+        "hint": "مذيب"
+      },
+      {
+        "word": "acid",
+        "hint": "حمض"
+      },
+      {
+        "word": "alkali",
+        "hint": "قلوي"
+      },
+      {
+        "word": "isotope",
+        "hint": "نظير"
+      },
+      {
+        "word": "oxidation",
+        "hint": "أكسدة"
+      },
+      {
+        "word": "polymer",
+        "hint": "بوليمر"
+      },
+      {
+        "word": "bonding",
+        "hint": "ترابط كيميائي"
+      },
+      {
+        "word": "distill",
+        "hint": "يقطّر"
+      },
+      {
+        "word": "reagent",
+        "hint": "كاشف كيميائي"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "أحياء",
+    "description": "كلمات تتعلق بعلم الأحياء بالإنجليزية",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "cell",
+        "hint": "خلية"
+      },
+      {
+        "word": "organism",
+        "hint": "كائن حيّ"
+      },
+      {
+        "word": "photosynthesis",
+        "hint": "تمثيل ضوئي"
+      },
+      {
+        "word": "evolution",
+        "hint": "تطوّر"
+      },
+      {
+        "word": "genetics",
+        "hint": "علم الوراثة"
+      },
+      {
+        "word": "chromosome",
+        "hint": "كروموسوم"
+      },
+      {
+        "word": "nucleus",
+        "hint": "نواة"
+      },
+      {
+        "word": "protein",
+        "hint": "بروتين"
+      },
+      {
+        "word": "enzyme",
+        "hint": "إنزيم"
+      },
+      {
+        "word": "habitat",
+        "hint": "موطن طبيعي"
+      },
+      {
+        "word": "species",
+        "hint": "نوع / فصيلة"
+      },
+      {
+        "word": "bacteria",
+        "hint": "بكتيريا"
+      },
+      {
+        "word": "tissue",
+        "hint": "نسيج حيوي"
+      },
+      {
+        "word": "membrane",
+        "hint": "غشاء"
+      },
+      {
+        "word": "ecosystem",
+        "hint": "نظام بيئي"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "علوم عامّة",
+    "description": "كلمات علمية عامّة بالإنجليزية",
+    "iconName": "magnifyingglass",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "hypothesis",
+        "hint": "فرضية"
+      },
+      {
+        "word": "experiment",
+        "hint": "تجربة"
+      },
+      {
+        "word": "research",
+        "hint": "بحث علمي"
+      },
+      {
+        "word": "laboratory",
+        "hint": "مختبر"
+      },
+      {
+        "word": "microscope",
+        "hint": "مجهر"
+      },
+      {
+        "word": "specimen",
+        "hint": "عيّنة"
+      },
+      {
+        "word": "theory",
+        "hint": "نظرية"
+      },
+      {
+        "word": "discovery",
+        "hint": "اكتشاف"
+      },
+      {
+        "word": "analysis",
+        "hint": "تحليل"
+      },
+      {
+        "word": "observe",
+        "hint": "يراقب / يلاحظ"
+      },
+      {
+        "word": "data",
+        "hint": "بيانات"
+      },
+      {
+        "word": "evidence",
+        "hint": "دليل"
+      },
+      {
+        "word": "variable",
+        "hint": "متغيّر"
+      },
+      {
+        "word": "conclusion",
+        "hint": "استنتاج"
+      },
+      {
+        "word": "molecule",
+        "hint": "جزيء"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "مهرجانات",
+    "description": "كلمات تتعلق بالمهرجانات والاحتفالات بالإنجليزية",
+    "iconName": "sparkles",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "carnival",
+        "hint": "كرنفال"
+      },
+      {
+        "word": "parade",
+        "hint": "موكب / استعراض"
+      },
+      {
+        "word": "fireworks",
+        "hint": "ألعاب نارية"
+      },
+      {
+        "word": "costume",
+        "hint": "زيّ تنكّري"
+      },
+      {
+        "word": "crowd",
+        "hint": "حشد"
+      },
+      {
+        "word": "concert",
+        "hint": "حفلة موسيقية"
+      },
+      {
+        "word": "vendor",
+        "hint": "بائع متجوّل"
+      },
+      {
+        "word": "lantern",
+        "hint": "فانوس"
+      },
+      {
+        "word": "procession",
+        "hint": "موكب"
+      },
+      {
+        "word": "spectacle",
+        "hint": "مشهد مبهر"
+      },
+      {
+        "word": "banner",
+        "hint": "لافتة"
+      },
+      {
+        "word": "confetti",
+        "hint": "قصاصات ورقية"
+      },
+      {
+        "word": "drummer",
+        "hint": "عازف طبل"
+      },
+      {
+        "word": "festive",
+        "hint": "احتفالي"
+      },
+      {
+        "word": "jubilee",
+        "hint": "يوبيل / ذكرى"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "تقاليد",
+    "description": "كلمات تتعلق بالتقاليد والعادات بالإنجليزية",
+    "iconName": "book.closed",
+    "color": "#92400e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "heritage",
+        "hint": "تراث"
+      },
+      {
+        "word": "custom",
+        "hint": "عادة / تقليد"
+      },
+      {
+        "word": "ritual",
+        "hint": "طقس"
+      },
+      {
+        "word": "folklore",
+        "hint": "فلكلور / تراث شعبي"
+      },
+      {
+        "word": "ancestor",
+        "hint": "سلف / جدّ"
+      },
+      {
+        "word": "ceremony",
+        "hint": "حفل / مراسم"
+      },
+      {
+        "word": "cultural",
+        "hint": "ثقافي"
+      },
+      {
+        "word": "legacy",
+        "hint": "إرث"
+      },
+      {
+        "word": "artifact",
+        "hint": "أثر / قطعة أثرية"
+      },
+      {
+        "word": "monument",
+        "hint": "نصب تذكاري"
+      },
+      {
+        "word": "ancient",
+        "hint": "قديم / عريق"
+      },
+      {
+        "word": "preserve",
+        "hint": "يحافظ على"
+      },
+      {
+        "word": "symbol",
+        "hint": "رمز"
+      },
+      {
+        "word": "legend",
+        "hint": "أسطورة"
+      },
+      {
+        "word": "proverb",
+        "hint": "مثل / حكمة"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "أعراس",
+    "description": "كلمات تتعلق بحفلات الزفاف بالإنجليزية",
+    "iconName": "heart",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "bride",
+        "hint": "عروس"
+      },
+      {
+        "word": "groom",
+        "hint": "عريس"
+      },
+      {
+        "word": "veil",
+        "hint": "طرحة"
+      },
+      {
+        "word": "bouquet",
+        "hint": "باقة ورد"
+      },
+      {
+        "word": "ceremony",
+        "hint": "حفل الزفاف"
+      },
+      {
+        "word": "reception",
+        "hint": "حفل استقبال"
+      },
+      {
+        "word": "honeymoon",
+        "hint": "شهر عسل"
+      },
+      {
+        "word": "invitation",
+        "hint": "دعوة"
+      },
+      {
+        "word": "bridesmaid",
+        "hint": "وصيفة العروس"
+      },
+      {
+        "word": "toast",
+        "hint": "نخب"
+      },
+      {
+        "word": "registry",
+        "hint": "سجلّ هدايا"
+      },
+      {
+        "word": "aisle",
+        "hint": "ممرّ"
+      },
+      {
+        "word": "vow",
+        "hint": "عهد / قسم"
+      },
+      {
+        "word": "confetti",
+        "hint": "قصاصات احتفال"
+      },
+      {
+        "word": "engagement",
+        "hint": "خطوبة"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "إجازات وأعياد",
+    "description": "كلمات تتعلق بالعطل والأعياد بالإنجليزية",
+    "iconName": "gift",
+    "color": "#dc2626",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "vacation",
+        "hint": "إجازة"
+      },
+      {
+        "word": "souvenir",
+        "hint": "هدية تذكارية"
+      },
+      {
+        "word": "tradition",
+        "hint": "تقليد"
+      },
+      {
+        "word": "festive",
+        "hint": "احتفالي"
+      },
+      {
+        "word": "decorate",
+        "hint": "يزيّن"
+      },
+      {
+        "word": "ornament",
+        "hint": "زينة"
+      },
+      {
+        "word": "wreath",
+        "hint": "إكليل زينة"
+      },
+      {
+        "word": "candle",
+        "hint": "شمعة"
+      },
+      {
+        "word": "gratitude",
+        "hint": "امتنان"
+      },
+      {
+        "word": "reunion",
+        "hint": "لمّ شمل"
+      },
+      {
+        "word": "feast",
+        "hint": "وليمة"
+      },
+      {
+        "word": "carol",
+        "hint": "أنشودة احتفالية"
+      },
+      {
+        "word": "stocking",
+        "hint": "جورب الهدايا"
+      },
+      {
+        "word": "garland",
+        "hint": "إكليل زهور"
+      },
+      {
+        "word": "blessing",
+        "hint": "بركة / مباركة"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "احتفالات",
+    "description": "كلمات تتعلق بالاحتفالات والمناسبات بالإنجليزية",
+    "iconName": "party.popper",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "birthday",
+        "hint": "عيد ميلاد"
+      },
+      {
+        "word": "anniversary",
+        "hint": "ذكرى سنوية"
+      },
+      {
+        "word": "surprise",
+        "hint": "مفاجأة"
+      },
+      {
+        "word": "balloon",
+        "hint": "بالون"
+      },
+      {
+        "word": "streamer",
+        "hint": "شريط زينة"
+      },
+      {
+        "word": "candle",
+        "hint": "شمعة"
+      },
+      {
+        "word": "present",
+        "hint": "هدية"
+      },
+      {
+        "word": "champagne",
+        "hint": "شمبانيا"
+      },
+      {
+        "word": "toast",
+        "hint": "تحيّة احتفالية"
+      },
+      {
+        "word": "applause",
+        "hint": "تصفيق"
+      },
+      {
+        "word": "trophy",
+        "hint": "كأس / جائزة"
+      },
+      {
+        "word": "ribbon",
+        "hint": "شريط"
+      },
+      {
+        "word": "greeting",
+        "hint": "تهنئة"
+      },
+      {
+        "word": "milestone",
+        "hint": "إنجاز / معلم بارز"
+      },
+      {
+        "word": "graduation",
+        "hint": "تخرّج"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "أزياء",
+    "description": "كلمات تتعلق بعالم الموضة والأزياء بالإنجليزية",
+    "iconName": "tshirt",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "fashion",
+        "hint": "موضة"
+      },
+      {
+        "word": "designer",
+        "hint": "مصمم أزياء"
+      },
+      {
+        "word": "runway",
+        "hint": "منصة عرض الأزياء"
+      },
+      {
+        "word": "wardrobe",
+        "hint": "خزانة ملابس"
+      },
+      {
+        "word": "outfit",
+        "hint": "طقم ملابس"
+      },
+      {
+        "word": "elegant",
+        "hint": "أنيق"
+      },
+      {
+        "word": "trendy",
+        "hint": "عصري"
+      },
+      {
+        "word": "vintage",
+        "hint": "طراز قديم"
+      },
+      {
+        "word": "boutique",
+        "hint": "متجر أزياء"
+      },
+      {
+        "word": "tailor",
+        "hint": "خيّاط"
+      },
+      {
+        "word": "pattern",
+        "hint": "نقش / نمط"
+      },
+      {
+        "word": "collar",
+        "hint": "ياقة"
+      },
+      {
+        "word": "sleeve",
+        "hint": "كُم"
+      },
+      {
+        "word": "zipper",
+        "hint": "سحّاب"
+      },
+      {
+        "word": "button",
+        "hint": "زرّ"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "منسوجات",
+    "description": "كلمات تتعلق بالأقمشة والمنسوجات بالإنجليزية",
+    "iconName": "square.stack.3d.up",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "cotton",
+        "hint": "قطن"
+      },
+      {
+        "word": "silk",
+        "hint": "حرير"
+      },
+      {
+        "word": "wool",
+        "hint": "صوف"
+      },
+      {
+        "word": "linen",
+        "hint": "كتّان"
+      },
+      {
+        "word": "leather",
+        "hint": "جلد"
+      },
+      {
+        "word": "denim",
+        "hint": "قماش الجينز"
+      },
+      {
+        "word": "velvet",
+        "hint": "مخمل"
+      },
+      {
+        "word": "satin",
+        "hint": "ساتان"
+      },
+      {
+        "word": "nylon",
+        "hint": "نايلون"
+      },
+      {
+        "word": "thread",
+        "hint": "خيط"
+      },
+      {
+        "word": "fabric",
+        "hint": "قماش"
+      },
+      {
+        "word": "stitch",
+        "hint": "غرزة"
+      },
+      {
+        "word": "weave",
+        "hint": "نسج"
+      },
+      {
+        "word": "knit",
+        "hint": "حياكة"
+      },
+      {
+        "word": "fiber",
+        "hint": "ليف / ألياف"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "مجوهرات",
+    "description": "كلمات تتعلق بالمجوهرات والحلي بالإنجليزية",
+    "iconName": "sparkle",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "necklace",
+        "hint": "عقد / قلادة"
+      },
+      {
+        "word": "bracelet",
+        "hint": "سوار"
+      },
+      {
+        "word": "earring",
+        "hint": "قرط / حلق"
+      },
+      {
+        "word": "diamond",
+        "hint": "ألماس"
+      },
+      {
+        "word": "emerald",
+        "hint": "زمرّد"
+      },
+      {
+        "word": "ruby",
+        "hint": "ياقوت أحمر"
+      },
+      {
+        "word": "pearl",
+        "hint": "لؤلؤ"
+      },
+      {
+        "word": "pendant",
+        "hint": "تعليقة / قلادة"
+      },
+      {
+        "word": "brooch",
+        "hint": "بروش"
+      },
+      {
+        "word": "carat",
+        "hint": "قيراط"
+      },
+      {
+        "word": "chain",
+        "hint": "سلسلة"
+      },
+      {
+        "word": "gemstone",
+        "hint": "حجر كريم"
+      },
+      {
+        "word": "gold",
+        "hint": "ذهب"
+      },
+      {
+        "word": "silver",
+        "hint": "فضة"
+      },
+      {
+        "word": "ring",
+        "hint": "خاتم"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "مستحضرات تجميل",
+    "description": "كلمات تتعلق بمستحضرات التجميل والعناية بالإنجليزية",
+    "iconName": "paintbrush",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "lipstick",
+        "hint": "أحمر شفاه"
+      },
+      {
+        "word": "mascara",
+        "hint": "ماسكارا"
+      },
+      {
+        "word": "perfume",
+        "hint": "عطر"
+      },
+      {
+        "word": "powder",
+        "hint": "بودرة"
+      },
+      {
+        "word": "blush",
+        "hint": "أحمر خدود"
+      },
+      {
+        "word": "lotion",
+        "hint": "مرطّب / لوشن"
+      },
+      {
+        "word": "eyeliner",
+        "hint": "كحل / محدد عيون"
+      },
+      {
+        "word": "serum",
+        "hint": "سيروم"
+      },
+      {
+        "word": "cream",
+        "hint": "كريم"
+      },
+      {
+        "word": "makeup",
+        "hint": "مكياج"
+      },
+      {
+        "word": "concealer",
+        "hint": "كونسيلر / خافي عيوب"
+      },
+      {
+        "word": "primer",
+        "hint": "برايمر / قاعدة تجميل"
+      },
+      {
+        "word": "mirror",
+        "hint": "مرآة"
+      },
+      {
+        "word": "brush",
+        "hint": "فرشاة"
+      },
+      {
+        "word": "sponge",
+        "hint": "إسفنجة"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "تسريحات شعر",
+    "description": "كلمات تتعلق بتسريحات الشعر والعناية به بالإنجليزية",
+    "iconName": "scissors",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "haircut",
+        "hint": "قصة شعر"
+      },
+      {
+        "word": "ponytail",
+        "hint": "ذيل حصان"
+      },
+      {
+        "word": "braid",
+        "hint": "ضفيرة"
+      },
+      {
+        "word": "curly",
+        "hint": "مجعّد"
+      },
+      {
+        "word": "straight",
+        "hint": "أملس / ناعم"
+      },
+      {
+        "word": "bangs",
+        "hint": "غرّة"
+      },
+      {
+        "word": "salon",
+        "hint": "صالون تجميل"
+      },
+      {
+        "word": "shampoo",
+        "hint": "شامبو"
+      },
+      {
+        "word": "conditioner",
+        "hint": "بلسم شعر"
+      },
+      {
+        "word": "comb",
+        "hint": "مشط"
+      },
+      {
+        "word": "dryer",
+        "hint": "مجفف شعر"
+      },
+      {
+        "word": "dye",
+        "hint": "صبغة شعر"
+      },
+      {
+        "word": "trim",
+        "hint": "تشذيب / قص خفيف"
+      },
+      {
+        "word": "fringe",
+        "hint": "غرّة أمامية"
+      },
+      {
+        "word": "barber",
+        "hint": "حلّاق"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "بيئة",
+    "description": "كلمات تتعلق بالبيئة والطبيعة بالإنجليزية",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pollution",
+        "hint": "تلوّث"
+      },
+      {
+        "word": "ecosystem",
+        "hint": "نظام بيئي"
+      },
+      {
+        "word": "habitat",
+        "hint": "موطن طبيعي"
+      },
+      {
+        "word": "species",
+        "hint": "أنواع / فصائل"
+      },
+      {
+        "word": "wildlife",
+        "hint": "حياة برية"
+      },
+      {
+        "word": "forest",
+        "hint": "غابة"
+      },
+      {
+        "word": "wetland",
+        "hint": "أرض رطبة"
+      },
+      {
+        "word": "drought",
+        "hint": "جفاف"
+      },
+      {
+        "word": "flood",
+        "hint": "فيضان"
+      },
+      {
+        "word": "ozone",
+        "hint": "أوزون"
+      },
+      {
+        "word": "carbon",
+        "hint": "كربون"
+      },
+      {
+        "word": "organic",
+        "hint": "عضوي"
+      },
+      {
+        "word": "nature",
+        "hint": "طبيعة"
+      },
+      {
+        "word": "erosion",
+        "hint": "تآكل / انجراف"
+      },
+      {
+        "word": "compost",
+        "hint": "سماد عضوي"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "إعادة تدوير",
+    "description": "كلمات تتعلق بإعادة التدوير وإدارة النفايات بالإنجليزية",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recycle",
+        "hint": "إعادة تدوير"
+      },
+      {
+        "word": "compost",
+        "hint": "تسميد عضوي"
+      },
+      {
+        "word": "landfill",
+        "hint": "مكب نفايات"
+      },
+      {
+        "word": "plastic",
+        "hint": "بلاستيك"
+      },
+      {
+        "word": "cardboard",
+        "hint": "كرتون"
+      },
+      {
+        "word": "bottle",
+        "hint": "زجاجة"
+      },
+      {
+        "word": "container",
+        "hint": "حاوية"
+      },
+      {
+        "word": "disposal",
+        "hint": "التخلص من النفايات"
+      },
+      {
+        "word": "reusable",
+        "hint": "قابل لإعادة الاستخدام"
+      },
+      {
+        "word": "waste",
+        "hint": "نفايات"
+      },
+      {
+        "word": "sorting",
+        "hint": "فرز"
+      },
+      {
+        "word": "aluminum",
+        "hint": "ألومنيوم"
+      },
+      {
+        "word": "garbage",
+        "hint": "قمامة"
+      },
+      {
+        "word": "reduce",
+        "hint": "تقليل"
+      },
+      {
+        "word": "upcycle",
+        "hint": "إعادة تدوير إبداعي"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "طاقة",
+    "description": "كلمات تتعلق بالطاقة ومصادرها بالإنجليزية",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "solar",
+        "hint": "شمسي"
+      },
+      {
+        "word": "turbine",
+        "hint": "توربين"
+      },
+      {
+        "word": "nuclear",
+        "hint": "نووي"
+      },
+      {
+        "word": "battery",
+        "hint": "بطارية"
+      },
+      {
+        "word": "generator",
+        "hint": "مولّد كهربائي"
+      },
+      {
+        "word": "voltage",
+        "hint": "جهد كهربائي"
+      },
+      {
+        "word": "current",
+        "hint": "تيار كهربائي"
+      },
+      {
+        "word": "fossil",
+        "hint": "أحفوري"
+      },
+      {
+        "word": "windmill",
+        "hint": "طاحونة هوائية"
+      },
+      {
+        "word": "biomass",
+        "hint": "كتلة حيوية"
+      },
+      {
+        "word": "fuel",
+        "hint": "وقود"
+      },
+      {
+        "word": "watt",
+        "hint": "واط"
+      },
+      {
+        "word": "grid",
+        "hint": "شبكة كهربائية"
+      },
+      {
+        "word": "thermal",
+        "hint": "حراري"
+      },
+      {
+        "word": "panel",
+        "hint": "لوح (طاقة شمسية)"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "مناخ",
+    "description": "كلمات تتعلق بالمناخ والتغير المناخي بالإنجليزية",
+    "iconName": "thermometer.sun",
+    "color": "#ef4444",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "climate",
+        "hint": "مناخ"
+      },
+      {
+        "word": "warming",
+        "hint": "احتباس حراري"
+      },
+      {
+        "word": "glacier",
+        "hint": "نهر جليدي"
+      },
+      {
+        "word": "iceberg",
+        "hint": "جبل جليدي"
+      },
+      {
+        "word": "emission",
+        "hint": "انبعاثات"
+      },
+      {
+        "word": "monsoon",
+        "hint": "رياح موسمية"
+      },
+      {
+        "word": "hurricane",
+        "hint": "إعصار"
+      },
+      {
+        "word": "tornado",
+        "hint": "إعصار قمعي"
+      },
+      {
+        "word": "drought",
+        "hint": "جفاف"
+      },
+      {
+        "word": "heatwave",
+        "hint": "موجة حر"
+      },
+      {
+        "word": "forecast",
+        "hint": "توقعات جوية"
+      },
+      {
+        "word": "tropical",
+        "hint": "استوائي"
+      },
+      {
+        "word": "arctic",
+        "hint": "قطبي شمالي"
+      },
+      {
+        "word": "humidity",
+        "hint": "رطوبة"
+      },
+      {
+        "word": "celsius",
+        "hint": "درجة مئوية"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "استدامة",
+    "description": "كلمات تتعلق بالتنمية المستدامة بالإنجليزية",
+    "iconName": "globe.americas",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "sustain",
+        "hint": "يُديم / يحافظ"
+      },
+      {
+        "word": "renewable",
+        "hint": "متجدد"
+      },
+      {
+        "word": "footprint",
+        "hint": "بصمة (كربونية)"
+      },
+      {
+        "word": "biodegradable",
+        "hint": "قابل للتحلل البيولوجي"
+      },
+      {
+        "word": "conservation",
+        "hint": "حماية / صون"
+      },
+      {
+        "word": "ethical",
+        "hint": "أخلاقي"
+      },
+      {
+        "word": "emissions",
+        "hint": "انبعاثات"
+      },
+      {
+        "word": "ecology",
+        "hint": "علم البيئة"
+      },
+      {
+        "word": "preserve",
+        "hint": "يحفظ / يصون"
+      },
+      {
+        "word": "offset",
+        "hint": "تعويض (كربوني)"
+      },
+      {
+        "word": "green",
+        "hint": "أخضر / صديق للبيئة"
+      },
+      {
+        "word": "impact",
+        "hint": "تأثير"
+      },
+      {
+        "word": "resource",
+        "hint": "مورد طبيعي"
+      },
+      {
+        "word": "harvest",
+        "hint": "حصاد"
+      },
+      {
+        "word": "efficient",
+        "hint": "كفء / فعّال"
+      }
+    ]
+  }
+]

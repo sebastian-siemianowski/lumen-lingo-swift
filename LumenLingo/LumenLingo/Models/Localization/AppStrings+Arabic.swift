@@ -30,6 +30,10 @@ extension AppStrings {
         wordBuilderDescription: "ركّب الكلمات حرفًا بحرف من تلميحات مبعثرة",
         craftAndDiscover: "ركّب واكتشف",
         recentActivity: "النشاط الأخير",
+        resetProgress: "إعادة تعيين التقدم",
+        resetProgressMessage: "سيؤدي هذا إلى مسح جميع نقاط الخبرة والمستويات والسلاسل وسجل الألعاب والمحتوى المتقن. لا يمكن التراجع عن هذا الإجراء.",
+        progressReset: "تم إعادة تعيين التقدم",
+        startFreshDescription: "امسح كل تقدمك ونقاط الخبرة والسلاسل وسجل الألعاب لبدء رحلة التعلم من الصفر.",
 
         // Language Selection
         languages: "اللغات",
@@ -40,9 +44,11 @@ extension AppStrings {
         iSpeak: "أتحدّث",
         imLearning: "أتعلّم",
         noLanguagesAvailable: "لا تتوفر لغات لهذا المصدر.",
-        betaLanguagePairs: "أزواج لغات تجريبية",
-        showExperimentalPairs: "عرض الأزواج التجريبية ذات المحتوى المحدود",
         confirm: "تأكيد:",
+        done: "تم",
+        languagesAvailable: "لغات متاحة",
+        startYourAdventure: "ابدأ مغامرتك",
+        keepLearning: "واصل التعلّم",
 
         // Categories
         back: "رجوع",
@@ -81,6 +87,7 @@ extension AppStrings {
         undo: "تراجع",
         clear: "مسح",
         check: "تحقّق",
+        hint: "تلميح",
         noWordsAvailable: "لا تتوفر كلمات",
 
         // Game Complete
@@ -96,8 +103,7 @@ extension AppStrings {
         accuracy: "الدقة",
         correct: "صحيح",
         toReview: "للمراجعة",
-        playAgain: "العب مجددًا",
-        backToCategories: "العودة إلى الفئات",
+        playAgain: "العب مجددًا",        nextCategory: "الفئة التالية",        backToCategories: "العودة إلى الفئات",
 
         // Journey
         yourLearningJourney: "رحلتك التعليمية",
@@ -106,8 +112,14 @@ extension AppStrings {
         firstSteps: "الخطوات الأولى",
         gettingStarted: "البداية",
         dedicatedLearner: "متعلّم مُلتزم",
+        risingStar: "نجم صاعد",
         wordWarrior: "محارب الكلمات",
+        knowledgeSeeker: "باحث عن المعرفة",
+        sentenceCrafter: "صانع الجمل",
+        grammarGuardian: "حارس القواعد",
+        vocabularyVirtuoso: "ماهر المفردات",
         languageMaster: "سيّد اللغة",
+        fluencyPioneer: "رائد الطلاقة",
         polyglotLegend: "أسطورة متعدد اللغات",
         xpRequired: "XP المطلوبة",
         overview: "نظرة عامة",
@@ -121,7 +133,6 @@ extension AppStrings {
         // Profile
         appearance: "المظهر",
         sound: "الصوت",
-        beta: "تجريبي",
         sync: "المزامنة",
         signOut: "تسجيل الخروج",
         darkLight: "داكن/فاتح",
@@ -156,18 +167,6 @@ extension AppStrings {
         levelUpFanfares: "احتفالات الترقية ومكافآت السلسلة",
         ambientAudio: "الصوت المحيطي",
         backgroundAtmospheric: "أصوات الخلفية الجوية",
-
-        // Beta Languages
-        betaLanguages: "لغات تجريبية",
-        experimentalLanguagePairs: "أزواج لغات تجريبية",
-        experimentalFeatures: "ميزات تجريبية",
-        betaLimitedContent: "قد تحتوي اللغات التجريبية على محتوى محدود أو بعض الأخطاء في الترجمة.",
-        coreLanguages: "اللغات الأساسية",
-        alwaysOn: "مفعّل دائمًا",
-        active: "نشط",
-        experimentalLanguagesSection: "اللغات التجريبية",
-        on: "مفعّل",
-        off: "معطّل",
 
         // Sync
         cloudSync: "المزامنة السحابية",
@@ -240,6 +239,12 @@ extension AppStrings {
         vivid: "زاهٍ",
         driftSpeed: "سرعة الانجراف",
         frozen: "مُجمّد",
+        nebulaDescLagoon: "سحب أثيرية وردية وبنفسجية حيث تشتعل نجوم وليدة بين أعمدة الغبار الكوني",
+        nebulaDescCelestial: "محيط فيروزي لا نهائي من الغاز المضيء، يتلألأ بانعكاسات ضوء النجوم السماوية",
+        nebulaDescAndromeda: "تريليون شمس معلّقة على حافة المجرة، ضوء كهرماني يذوب في عمق الفضاء النيلي",
+        nebulaDescSolarAurora: "شرائط ذهبية من الجسيمات المشحونة تتدفق عبر حقول مغناطيسية، ترسم الفراغ بالدفء",
+        nebulaDescSpiralHalo: "مائة مليار نجم تدور في تناغم مثالي، وهجها البنفسجي يرسم مسارات الجاذبية",
+        nebulaDescStarburst: "حلقة مشرقة من تكوّن نجمي سريع، أقواس زرقاء كهربائية وأرجوانية متوهجة بالطاقة",
 
         // Membership
         plansAndPricing: "الخطط والأسعار",

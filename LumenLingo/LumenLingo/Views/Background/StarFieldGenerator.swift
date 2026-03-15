@@ -47,6 +47,26 @@ struct GasCloudData {
 }
 
 // ============================================================
+// MARK: - Aurora Ribbon Data (GPU Buffer Layout)
+// Must match Metal AuroraRibbonData struct exactly (12 floats = 48 bytes)
+// ============================================================
+
+struct AuroraRibbonData {
+    var baseHeight: Float    // Y center (0.2-0.65)
+    var speed: Float         // Animation speed
+    var drift: Float         // Horizontal drift factor
+    var colorOffset: Float   // Color cycle phase
+    var amplitude: Float     // Wave amplitude
+    var frequency: Float     // Wave frequency
+    var width: Float         // Ribbon width in UV
+    var flowSpeed: Float     // Traveling shimmer speed
+    var segHeight: Float     // Segment height (vertical extent)
+    var geomType: Int32      // 0-5 geometry type
+    var depth: Float         // Layer depth (0..1)
+    var _pad0: Float = 0     // Padding to 48 bytes
+}
+
+// ============================================================
 // MARK: - Star Field Generator
 // Generates per-preset star arrays matching React distributions
 // ============================================================
@@ -1303,12 +1323,13 @@ enum StarFieldGenerator {
             
             if sr > 0.985 {
                 // Massive Super-Giants (1.5%) — very rare
+                // React hero stars use anamorphic/lens-flare sprites, not JWST spikes.
                 sizeClass = 2.5
-                starType = 1 // hero
+                starType = 3 // hero anamorphic
             } else if sr > 0.95 {
                 // Large Bright Stars (3.5%)
                 sizeClass = 1.5
-                starType = 1 // hero
+                starType = 3 // hero anamorphic
             } else if sr > 0.85 {
                 // Medium normal (10%)
                 sizeClass = 1.0
@@ -1389,32 +1410,31 @@ enum StarFieldGenerator {
                 }
             }
             
-            // ── Alpha — opacity from React: 0.1 + rand * 0.7 ──
-            let baseAlpha: Float = (0.10 + rand(7) * 0.70) * (1.0 - z * 0.25)
+            // ── Alpha — tuned toward the reference image while staying React-close ──
+            // The supplied reference reads with a denser ring and a dimmer loose field,
+            // so bias opacity by spatial zone.
+            let zoneAlphaBoost: Float
+            switch zone {
+            case 0: zoneAlphaBoost = 1.12   // core cluster slightly brighter
+            case 1: zoneAlphaBoost = 1.22   // ring is the hero structure
+            case 2: zoneAlphaBoost = 0.96   // halo stays soft
+            default: zoneAlphaBoost = 0.80  // field must not overpower the ring
+            }
+            let baseAlpha: Float = (0.10 + rand(7) * 0.70) * (1.0 - z * 0.25) * zoneAlphaBoost
             baseColor.w = min(baseAlpha, 1.0)
             
             // ── Twinkle — slower for elegance ──
             let twinkleSpeed: Float = 0.10 + rand(11) * 0.50
             
-            // ── Orbital motion — Keplerian for core/ring/halo ──
+            // ── Motion payload — encoded to match React MicrostarCanvas ──
+            // Orbital stars: angle + radius + orbitalSpeed
+            // Field stars: tiny driftX/driftY with wrap
             let isOrbital = zone < 3 // core, ring, halo orbit; field doesn't
             let orbitalSpeed: Float = isOrbital
                 ? (0.01 + rand(9) * 0.02) * (0.3 / (dist + 0.1))
                 : 0.0
-            
-            // Zone tint — ring and core get violet/magenta tint
-            let tintStrength: Float
-            let tintColor: SIMD4<Float>
-            if isRing {
-                tintStrength = 0.08 + z * 0.06
-                tintColor = SIMD4(154.0/255, 86.0/255, 255.0/255, 1)
-            } else if zone == 0 {
-                tintStrength = 0.10 + z * 0.05
-                tintColor = SIMD4(217.0/255, 196.0/255, 255.0/255, 1)
-            } else {
-                tintStrength = 0
-                tintColor = SIMD4(0, 0, 0, 0)
-            }
+            let driftX = (rand(12) - 0.5) * 0.05
+            let driftY = (rand(13) - 0.5) * 0.05
             
             stars.append(StarData(
                 position: SIMD2(rx, ry),
@@ -1425,12 +1445,12 @@ enum StarFieldGenerator {
                 twinklePhase: rand(10) * .pi * 2,
                 twinkleAmp: 0.15,
                 starType: starType,
-                driftAngle: ringAngle,
-                driftSpeed: orbitalSpeed * 50.0,
-                motionParams: SIMD2(Float(zone), dist),
-                rotationFactor: 0,
-                zoneTintStrength: tintStrength,
-                zoneTintColor: tintColor
+                driftAngle: isOrbital ? ringAngle : driftX,
+                driftSpeed: isOrbital ? orbitalSpeed : driftY,
+                motionParams: SIMD2(isOrbital ? dist : 0.0, isOrbital ? 1.0 : 0.0),
+                rotationFactor: isOrbital ? 1.0 : 0.0,
+                zoneTintStrength: 0,
+                zoneTintColor: SIMD4(0, 0, 0, 0)
             ))
         }
         
@@ -1458,6 +1478,9 @@ enum StarFieldGenerator {
                 color = SIMD4(246.0/255, 201.0/255, 255.0/255, opacity) // Soft magenta
             }
             
+            let driftX = (sRand(seed, 11) - 0.5) * 0.05
+            let driftY = (sRand(seed, 12) - 0.5) * 0.05
+
             stars.append(StarData(
                 position: SIMD2(rx, ry),
                 baseSize: size,
@@ -1467,9 +1490,9 @@ enum StarFieldGenerator {
                 twinklePhase: sRand(seed, 7) * .pi * 2,
                 twinkleAmp: 0.10,
                 starType: 0,
-                driftAngle: sRand(seed, 8) * .pi * 2,
-                driftSpeed: 0.03 + sRand(seed, 9) * 0.08,
-                motionParams: SIMD2(0, 0.1 + sRand(seed, 10) * 0.15),
+                driftAngle: driftX,
+                driftSpeed: driftY,
+                motionParams: SIMD2(0, 0),
                 rotationFactor: 0,
                 zoneTintStrength: 0,
                 zoneTintColor: SIMD4(0, 0, 0, 0)
@@ -1483,6 +1506,139 @@ enum StarFieldGenerator {
     // MARK: - Factory
     // ============================================================
     
+    // ============================================================
+    // MARK: - Lagoon Gas Cloud Particles (pre-computed for GPU)
+    // Eliminates 13 seededRandom (sin) calls per particle per pixel.
+    // spiralDist/spiralTheta repurposed for velocity direction X/Y.
+    // ============================================================
+
+    static func lagoonGasClouds() -> [GasCloudData] {
+        var clouds: [GasCloudData] = []
+        for i in 0..<55 {
+            let sm = i * 49
+            let rx = sRand(sm, 1)
+            let ry = sRand(sm, 2)
+            let ridgePos = rx + ry
+
+            var colorR: Float, colorG: Float, colorB: Float
+            var sizePx: Float
+            var baseAlpha: Float
+
+            if ridgePos < 0.8 {
+                let cc = sRand(sm, 3)
+                if cc > 0.6 {
+                    colorR = 255.0/255; colorG = 180.0/255; colorB = 80.0/255
+                } else if cc > 0.3 {
+                    colorR = 220.0/255; colorG = 100.0/255; colorB = 50.0/255
+                } else {
+                    colorR = 180.0/255; colorG = 60.0/255; colorB = 40.0/255
+                }
+                sizePx = 180.0 + sRand(sm, 4) * 350.0
+                baseAlpha = 0.06 + sRand(sm, 5) * 0.09
+            } else if ridgePos > 1.2 {
+                let cc = sRand(sm, 3)
+                if cc > 0.5 {
+                    colorR = 100.0/255; colorG = 220.0/255; colorB = 255.0/255
+                } else {
+                    colorR = 20.0/255; colorG = 100.0/255; colorB = 120.0/255
+                }
+                sizePx = 130.0 + sRand(sm, 4) * 240.0
+                baseAlpha = 0.05 + sRand(sm, 5) * 0.07
+            } else {
+                colorR = 255.0/255; colorG = 180.0/255; colorB = 80.0/255
+                sizePx = 110.0 + sRand(sm, 4) * 180.0
+                baseAlpha = 0.08 + sRand(sm, 5) * 0.11
+            }
+
+            let depth = sRand(sm, 9)
+            let phase = sRand(sm, 8) * 6.283185
+            let flowFreq: Float = 0.18 + sRand(sm, 10) * 0.35
+            let flowBaseMul: Float = 45.0 + sRand(sm, 11) * 35.0
+            let pulseFreq: Float = 0.15 + sRand(sm, 12) * 0.25
+            let pulsePhase = phase + sRand(sm, 13) * 6.283185
+            let velDirX = sRand(sm, 6) - 0.5
+            let velDirY = sRand(sm, 7) - 0.5
+
+            clouds.append(GasCloudData(
+                basePosX: rx, basePosY: ry,
+                depth: depth, sizePx: sizePx,
+                colorR: colorR, colorG: colorG, colorB: colorB,
+                baseAlpha: baseAlpha,
+                phase: phase,
+                flowFreq: flowFreq, flowBaseMul: flowBaseMul,
+                pulseFreq: pulseFreq, pulsePhase: pulsePhase,
+                spiralDist: velDirX, spiralTheta: velDirY
+            ))
+        }
+        return clouds
+    }
+
+    // ============================================================
+    // MARK: - Celestial Lagoon Gas Cloud Particles (pre-computed)
+    // Same pattern as Lagoon but with aqua/cyan/teal palette.
+    // ============================================================
+
+    static func celestialGasClouds() -> [GasCloudData] {
+        var clouds: [GasCloudData] = []
+        for i in 0..<55 {
+            let sm = i * 53
+            let rx = sRand(sm, 1)
+            let ry = sRand(sm, 2)
+
+            var colorR: Float, colorG: Float, colorB: Float
+            var sizePx: Float
+            var baseAlpha: Float
+
+            let cc = sRand(sm, 3)
+            if cc < 0.22 {
+                colorR = 15.0/255; colorG = 200.0/255; colorB = 230.0/255
+                sizePx = 150.0 + sRand(sm, 4) * 300.0
+                baseAlpha = 0.05 + sRand(sm, 5) * 0.08
+            } else if cc < 0.42 {
+                colorR = 40.0/255; colorG = 180.0/255; colorB = 200.0/255
+                sizePx = 140.0 + sRand(sm, 4) * 280.0
+                baseAlpha = 0.05 + sRand(sm, 5) * 0.07
+            } else if cc < 0.58 {
+                colorR = 30.0/255; colorG = 150.0/255; colorB = 180.0/255
+                sizePx = 130.0 + sRand(sm, 4) * 260.0
+                baseAlpha = 0.04 + sRand(sm, 5) * 0.07
+            } else if cc < 0.72 {
+                colorR = 70.0/255; colorG = 235.0/255; colorB = 220.0/255
+                sizePx = 160.0 + sRand(sm, 4) * 320.0
+                baseAlpha = 0.05 + sRand(sm, 5) * 0.09
+            } else if cc < 0.85 {
+                colorR = 50.0/255; colorG = 160.0/255; colorB = 148.0/255
+                sizePx = 120.0 + sRand(sm, 4) * 220.0
+                baseAlpha = 0.04 + sRand(sm, 5) * 0.06
+            } else {
+                colorR = 45.0/255; colorG = 215.0/255; colorB = 200.0/255
+                sizePx = 155.0 + sRand(sm, 4) * 310.0
+                baseAlpha = 0.05 + sRand(sm, 5) * 0.08
+            }
+
+            let depth = sRand(sm, 9)
+            let phase = sRand(sm, 8) * 6.283185
+            let flowFreq: Float = 0.14 + sRand(sm, 10) * 0.30
+            let flowBaseMul: Float = 40.0 + sRand(sm, 11) * 30.0
+            let pulseFreq: Float = 0.25
+            let pulsePhase = phase
+            let velDirX = sRand(sm, 6) - 0.5
+            let velDirY = sRand(sm, 7) - 0.5
+
+            clouds.append(GasCloudData(
+                basePosX: rx, basePosY: ry,
+                depth: depth, sizePx: sizePx,
+                colorR: colorR, colorG: colorG, colorB: colorB,
+                baseAlpha: baseAlpha,
+                phase: phase,
+                flowFreq: flowFreq, flowBaseMul: flowBaseMul,
+                pulseFreq: pulseFreq, pulsePhase: pulsePhase,
+                spiralDist: velDirX, spiralTheta: velDirY
+            ))
+        }
+        return clouds
+    }
+
     // ============================================================
     // MARK: - Spiral Halo Gas Cloud Particles (pre-computed for GPU)
     // Matches the seededRandom-based particle placement that was
@@ -1575,6 +1731,144 @@ enum StarFieldGenerator {
             ))
         }
 
+        return clouds
+    }
+
+    // ============================================================
+    // MARK: - Solar Aurora Ribbons (pre-computed for GPU)
+    // Eliminates 54 seededRandom (sin) calls per pixel per frame.
+    // ============================================================
+
+    static func auroraRibbons() -> [AuroraRibbonData] {
+        var ribbons: [AuroraRibbonData] = []
+        let geomTypes: [Int32] = [0, 1, 2, 3, 4, 5, 0, 1, 3] // smooth/fold/spiral/s-curve/drape/ripple cycle
+
+        for i in 0..<9 {
+            let fi = Float(i)
+            let depth = fi / 8.0
+            let baseHeight = 0.2 + (sin(fi * 99.0) * 0.5 + 0.5) * 0.45
+            let speed: Float = 0.15 + sRand(31, i * 7 + 5) * 0.35
+            let drift = (sRand(31, i * 7 + 6) - 0.5) * 0.3
+            let amplitude: Float = 0.08 + sRand(31, i * 7 + 1) * 0.18
+            let frequency: Float = 0.3 + sRand(31, i * 7 + 2) * 1.2
+            let width: Float = 0.006 + sRand(31, i * 7 + 3) * 0.008
+            let flowSpeed: Float = 0.5 + sRand(31, i * 7 + 5) * 1.5
+            let colorOffset = sRand(31, i * 7 + 4) * Float.pi * 2.0
+            let segHeight: Float = 0.26 + sRand(31, i * 7) * 0.11 // 26-37% of screen
+
+            ribbons.append(AuroraRibbonData(
+                baseHeight: baseHeight,
+                speed: speed,
+                drift: drift,
+                colorOffset: colorOffset,
+                amplitude: amplitude,
+                frequency: frequency,
+                width: width,
+                flowSpeed: flowSpeed,
+                segHeight: segHeight,
+                geomType: geomTypes[i],
+                depth: depth
+            ))
+        }
+        return ribbons
+    }
+
+    // ============================================================
+    // MARK: - Starburst Ring Gas Particles (pre-computed for GPU)
+    // Reduced from the React-equivalent 200 for fullscreen Metal cost.
+    // Keep enough density for the ring, but avoid excessive per-pixel work.
+    // Evenly distributed base angles with small jitter (React pattern).
+    // ============================================================
+
+    static func starburstRingGasClouds() -> [GasCloudData] {
+        var clouds: [GasCloudData] = []
+        let ringRadius: Float = 0.35
+        let ringSpread: Float = 0.09
+        let count = 144
+
+        for i in 0..<count {
+            // Evenly distributed base angle + small jitter (matches React)
+            let baseAngle = Float(i) / Float(count) * Float.pi * 2.0
+            let jitter = sRand(55, i * 7) * 0.1 // ±0.1 rad ≈ ±5.7°
+            let angle = baseAngle + jitter
+
+            let radius = ringRadius + (sRand(55, i * 7 + 1) - 0.5) * ringSpread * 2.0
+            let size = (40.0 + sRand(55, i * 7 + 2) * 50.0) // 40-90 reference px (React range)
+
+            let cc = sRand(55, i * 7 + 3)
+            var colorR: Float, colorG: Float, colorB: Float
+            if cc < 0.20 {
+                colorR = 125.0/255; colorG = 44.0/255; colorB = 255.0/255  // violetGas
+            } else if cc < 0.40 {
+                colorR = 208.0/255; colorG = 75.0/255; colorB = 255.0/255  // magentaGas
+            } else if cc < 0.60 {
+                colorR = 75.0/255; colorG = 216.0/255; colorB = 255.0/255  // neonBlue
+            } else if cc < 0.80 {
+                colorR = 154.0/255; colorG = 86.0/255; colorB = 255.0/255  // innerHalo
+            } else {
+                colorR = 217.0/255; colorG = 196.0/255; colorB = 255.0/255 // coreGlow
+            }
+
+            let pulsePhase = sRand(55, i * 7 + 4) * Float.pi * 2.0
+            let stretch: Float = 1.5 + sRand(55, i * 7 + 5) * 1.5 // 1.5-3.0
+            let wobbleSpeed: Float = 0.5 + sRand(55, i * 7 + 6)   // 0.5-1.5
+            let speed: Float = 0.02 + sRand(55, i * 7 + 7) * 0.04 // orbit speed multiplier
+
+            clouds.append(GasCloudData(
+                basePosX: radius, basePosY: speed,
+                depth: wobbleSpeed, sizePx: size,
+                colorR: colorR, colorG: colorG, colorB: colorB,
+                baseAlpha: 0.03,
+                phase: angle,
+                flowFreq: stretch, flowBaseMul: 0,
+                pulseFreq: 0.8, pulsePhase: pulsePhase,
+                spiralDist: 0, spiralTheta: 0
+            ))
+        }
+        return clouds
+    }
+
+    // ============================================================
+    // MARK: - Starburst Accretion Particles (pre-computed for GPU)
+    // Reduced from the React-equivalent 160 for fullscreen Metal cost
+    // while preserving the luminous inner eye structure.
+    // ============================================================
+
+    static func starburstAccretionClouds() -> [GasCloudData] {
+        var clouds: [GasCloudData] = []
+        let colors: [(Float, Float, Float)] = [
+            (255.0/255, 255.0/255, 255.0/255),   // white
+            (200.0/255, 230.0/255, 255.0/255),   // blue-white
+            (230.0/255, 210.0/255, 255.0/255)    // lavender
+        ]
+        let count = 96
+
+        for i in 0..<count {
+            let angle = sRand(77, i * 6) * Float.pi * 2.0
+            let rNorm = pow(sRand(77, i * 6 + 1), 1.8) // power distribution: dense near center
+            let radius: Float = 0.13 + rNorm * 0.20
+            let size = (12.0 + sRand(77, i * 6 + 2) * 18.0) // reference px
+
+            // Keplerian speed — inner particles orbit faster
+            let speed: Float = 0.3 + sRand(77, i * 6 + 3) * 0.5
+            let orbSpeed = speed * (1.0 + (1.0 - rNorm) * 2.5)
+
+            let colorIdx = Int(sRand(77, i * 6 + 4) * 3.0) % 3
+            let color = colors[colorIdx]
+            
+            let phase = sRand(77, i * 6 + 5) * Float.pi * 2.0
+
+            clouds.append(GasCloudData(
+                basePosX: radius, basePosY: 0,
+                depth: rNorm, sizePx: size,
+                colorR: color.0, colorG: color.1, colorB: color.2,
+                baseAlpha: 0.025,
+                phase: angle,
+                flowFreq: orbSpeed, flowBaseMul: 0,
+                pulseFreq: 0, pulsePhase: phase,
+                spiralDist: 0, spiralTheta: 0
+            ))
+        }
         return clouds
     }
 

@@ -1,0 +1,7002 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Fruits",
+    "description": "Common fruits in Polish",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "jabłko",
+        "hint": "Apple"
+      },
+      {
+        "word": "pomarańcza",
+        "hint": "Orange"
+      },
+      {
+        "word": "banan",
+        "hint": "Banana"
+      },
+      {
+        "word": "truskawka",
+        "hint": "Strawberry"
+      },
+      {
+        "word": "winogrono",
+        "hint": "Grape"
+      },
+      {
+        "word": "cytryna",
+        "hint": "Lemon"
+      },
+      {
+        "word": "arbuz",
+        "hint": "Watermelon"
+      },
+      {
+        "word": "brzoskwinia",
+        "hint": "Peach"
+      },
+      {
+        "word": "wiśnia",
+        "hint": "Cherry"
+      },
+      {
+        "word": "ananas",
+        "hint": "Pineapple"
+      },
+      {
+        "word": "gruszka",
+        "hint": "Pear"
+      },
+      {
+        "word": "mango",
+        "hint": "Mango"
+      },
+      {
+        "word": "malina",
+        "hint": "Raspberry"
+      },
+      {
+        "word": "śliwka",
+        "hint": "Plum"
+      },
+      {
+        "word": "borówka",
+        "hint": "Blueberry"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Vegetables",
+    "description": "Common vegetables in Polish",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pomidor",
+        "hint": "Tomato"
+      },
+      {
+        "word": "cebula",
+        "hint": "Onion"
+      },
+      {
+        "word": "sałata",
+        "hint": "Lettuce"
+      },
+      {
+        "word": "marchewka",
+        "hint": "Carrot"
+      },
+      {
+        "word": "ziemniak",
+        "hint": "Potato"
+      },
+      {
+        "word": "czosnek",
+        "hint": "Garlic"
+      },
+      {
+        "word": "ogórek",
+        "hint": "Cucumber"
+      },
+      {
+        "word": "papryka",
+        "hint": "Pepper"
+      },
+      {
+        "word": "szpinak",
+        "hint": "Spinach"
+      },
+      {
+        "word": "brokuł",
+        "hint": "Broccoli"
+      },
+      {
+        "word": "kukurydza",
+        "hint": "Corn"
+      },
+      {
+        "word": "groszek",
+        "hint": "Pea"
+      },
+      {
+        "word": "pieczarka",
+        "hint": "Mushroom"
+      },
+      {
+        "word": "bakłażan",
+        "hint": "Eggplant"
+      },
+      {
+        "word": "dynia",
+        "hint": "Pumpkin"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Colors",
+    "description": "Common colors in Polish",
+    "iconName": "paintpalette",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "czerwony",
+        "hint": "Red"
+      },
+      {
+        "word": "niebieski",
+        "hint": "Blue"
+      },
+      {
+        "word": "zielony",
+        "hint": "Green"
+      },
+      {
+        "word": "żółty",
+        "hint": "Yellow"
+      },
+      {
+        "word": "czarny",
+        "hint": "Black"
+      },
+      {
+        "word": "biały",
+        "hint": "White"
+      },
+      {
+        "word": "fioletowy",
+        "hint": "Purple"
+      },
+      {
+        "word": "różowy",
+        "hint": "Pink"
+      },
+      {
+        "word": "brązowy",
+        "hint": "Brown"
+      },
+      {
+        "word": "szary",
+        "hint": "Gray"
+      },
+      {
+        "word": "złoty",
+        "hint": "Gold"
+      },
+      {
+        "word": "srebrny",
+        "hint": "Silver"
+      },
+      {
+        "word": "turkusowy",
+        "hint": "Turquoise"
+      },
+      {
+        "word": "granatowy",
+        "hint": "Navy blue"
+      },
+      {
+        "word": "bordowy",
+        "hint": "Burgundy"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Family",
+    "description": "Family members in Polish",
+    "iconName": "person.2",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "matka",
+        "hint": "Mother"
+      },
+      {
+        "word": "ojciec",
+        "hint": "Father"
+      },
+      {
+        "word": "siostra",
+        "hint": "Sister"
+      },
+      {
+        "word": "brat",
+        "hint": "Brother"
+      },
+      {
+        "word": "babcia",
+        "hint": "Grandmother"
+      },
+      {
+        "word": "dziadek",
+        "hint": "Grandfather"
+      },
+      {
+        "word": "córka",
+        "hint": "Daughter"
+      },
+      {
+        "word": "syn",
+        "hint": "Son"
+      },
+      {
+        "word": "wujek",
+        "hint": "Uncle"
+      },
+      {
+        "word": "ciotka",
+        "hint": "Aunt"
+      },
+      {
+        "word": "kuzyn",
+        "hint": "Cousin (male)"
+      },
+      {
+        "word": "bratanek",
+        "hint": "Nephew"
+      },
+      {
+        "word": "siostrzenica",
+        "hint": "Niece"
+      },
+      {
+        "word": "teściowa",
+        "hint": "Mother-in-law"
+      },
+      {
+        "word": "szwagier",
+        "hint": "Brother-in-law"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Animals",
+    "description": "Common animals in Polish",
+    "iconName": "pawprint",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pies",
+        "hint": "Dog"
+      },
+      {
+        "word": "kot",
+        "hint": "Cat"
+      },
+      {
+        "word": "koń",
+        "hint": "Horse"
+      },
+      {
+        "word": "ptak",
+        "hint": "Bird"
+      },
+      {
+        "word": "ryba",
+        "hint": "Fish"
+      },
+      {
+        "word": "krowa",
+        "hint": "Cow"
+      },
+      {
+        "word": "świnia",
+        "hint": "Pig"
+      },
+      {
+        "word": "królik",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "żółw",
+        "hint": "Turtle"
+      },
+      {
+        "word": "motyl",
+        "hint": "Butterfly"
+      },
+      {
+        "word": "niedźwiedź",
+        "hint": "Bear"
+      },
+      {
+        "word": "wilk",
+        "hint": "Wolf"
+      },
+      {
+        "word": "orzeł",
+        "hint": "Eagle"
+      },
+      {
+        "word": "jeleń",
+        "hint": "Deer"
+      },
+      {
+        "word": "wiewiórka",
+        "hint": "Squirrel"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Body Parts",
+    "description": "Human body parts in Polish",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "głowa",
+        "hint": "Head"
+      },
+      {
+        "word": "ramię",
+        "hint": "Arm"
+      },
+      {
+        "word": "noga",
+        "hint": "Leg"
+      },
+      {
+        "word": "dłoń",
+        "hint": "Hand"
+      },
+      {
+        "word": "stopa",
+        "hint": "Foot"
+      },
+      {
+        "word": "oko",
+        "hint": "Eye"
+      },
+      {
+        "word": "nos",
+        "hint": "Nose"
+      },
+      {
+        "word": "usta",
+        "hint": "Mouth"
+      },
+      {
+        "word": "ucho",
+        "hint": "Ear"
+      },
+      {
+        "word": "palec",
+        "hint": "Finger"
+      },
+      {
+        "word": "serce",
+        "hint": "Heart"
+      },
+      {
+        "word": "plecy",
+        "hint": "Back"
+      },
+      {
+        "word": "kolano",
+        "hint": "Knee"
+      },
+      {
+        "word": "bark",
+        "hint": "Shoulder"
+      },
+      {
+        "word": "szyja",
+        "hint": "Neck"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Numbers",
+    "description": "Numbers and counting in Polish",
+    "iconName": "number",
+    "color": "#6366f1",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "jeden",
+        "hint": "One"
+      },
+      {
+        "word": "dwa",
+        "hint": "Two"
+      },
+      {
+        "word": "trzy",
+        "hint": "Three"
+      },
+      {
+        "word": "cztery",
+        "hint": "Four"
+      },
+      {
+        "word": "pięć",
+        "hint": "Five"
+      },
+      {
+        "word": "sześć",
+        "hint": "Six"
+      },
+      {
+        "word": "siedem",
+        "hint": "Seven"
+      },
+      {
+        "word": "osiem",
+        "hint": "Eight"
+      },
+      {
+        "word": "dziewięć",
+        "hint": "Nine"
+      },
+      {
+        "word": "dziesięć",
+        "hint": "Ten"
+      },
+      {
+        "word": "dwadzieścia",
+        "hint": "Twenty"
+      },
+      {
+        "word": "sto",
+        "hint": "One hundred"
+      },
+      {
+        "word": "tysiąc",
+        "hint": "One thousand"
+      },
+      {
+        "word": "milion",
+        "hint": "One million"
+      },
+      {
+        "word": "dwanaście",
+        "hint": "Twelve"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Greetings",
+    "description": "Common greetings and phrases in Polish",
+    "iconName": "hand.wave",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "cześć",
+        "hint": "Hi / Hello"
+      },
+      {
+        "word": "dzieńdobry",
+        "hint": "Good morning"
+      },
+      {
+        "word": "dobranoc",
+        "hint": "Good night"
+      },
+      {
+        "word": "dowidzenia",
+        "hint": "Goodbye"
+      },
+      {
+        "word": "dziękuję",
+        "hint": "Thank you"
+      },
+      {
+        "word": "proszę",
+        "hint": "Please / You're welcome"
+      },
+      {
+        "word": "przepraszam",
+        "hint": "I'm sorry / Excuse me"
+      },
+      {
+        "word": "witaj",
+        "hint": "Welcome"
+      },
+      {
+        "word": "pozdrawiam",
+        "hint": "Best regards"
+      },
+      {
+        "word": "powodzenia",
+        "hint": "Good luck"
+      },
+      {
+        "word": "gratulacje",
+        "hint": "Congratulations"
+      },
+      {
+        "word": "smacznego",
+        "hint": "Bon appétit"
+      },
+      {
+        "word": "narazie",
+        "hint": "See you later"
+      },
+      {
+        "word": "nazdrowie",
+        "hint": "Cheers / Bless you"
+      },
+      {
+        "word": "dobrywieczór",
+        "hint": "Good evening"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Food",
+    "description": "Common food items in Polish",
+    "iconName": "fork.knife",
+    "color": "#d97706",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "chleb",
+        "hint": "Bread"
+      },
+      {
+        "word": "ser",
+        "hint": "Cheese"
+      },
+      {
+        "word": "jajko",
+        "hint": "Egg"
+      },
+      {
+        "word": "ryż",
+        "hint": "Rice"
+      },
+      {
+        "word": "makaron",
+        "hint": "Pasta"
+      },
+      {
+        "word": "mięso",
+        "hint": "Meat"
+      },
+      {
+        "word": "kurczak",
+        "hint": "Chicken"
+      },
+      {
+        "word": "zupa",
+        "hint": "Soup"
+      },
+      {
+        "word": "sałatka",
+        "hint": "Salad"
+      },
+      {
+        "word": "kanapka",
+        "hint": "Sandwich"
+      },
+      {
+        "word": "masło",
+        "hint": "Butter"
+      },
+      {
+        "word": "mąka",
+        "hint": "Flour"
+      },
+      {
+        "word": "cukier",
+        "hint": "Sugar"
+      },
+      {
+        "word": "pieprz",
+        "hint": "Pepper (spice)"
+      },
+      {
+        "word": "kiełbasa",
+        "hint": "Sausage"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Clothing",
+    "description": "Common clothing items in Polish",
+    "iconName": "tshirt",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "koszulka",
+        "hint": "T-shirt"
+      },
+      {
+        "word": "spodnie",
+        "hint": "Trousers"
+      },
+      {
+        "word": "sukienka",
+        "hint": "Dress"
+      },
+      {
+        "word": "buty",
+        "hint": "Shoes"
+      },
+      {
+        "word": "kurtka",
+        "hint": "Jacket"
+      },
+      {
+        "word": "czapka",
+        "hint": "Hat / Cap"
+      },
+      {
+        "word": "skarpetki",
+        "hint": "Socks"
+      },
+      {
+        "word": "sweter",
+        "hint": "Sweater"
+      },
+      {
+        "word": "szalik",
+        "hint": "Scarf"
+      },
+      {
+        "word": "rękawiczki",
+        "hint": "Gloves"
+      },
+      {
+        "word": "koszula",
+        "hint": "Shirt"
+      },
+      {
+        "word": "spódnica",
+        "hint": "Skirt"
+      },
+      {
+        "word": "pasek",
+        "hint": "Belt"
+      },
+      {
+        "word": "bluza",
+        "hint": "Hoodie / Sweatshirt"
+      },
+      {
+        "word": "marynarka",
+        "hint": "Blazer"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "House & Rooms",
+    "description": "Rooms and parts of a house in Polish",
+    "iconName": "house",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "kuchnia",
+        "hint": "Kitchen"
+      },
+      {
+        "word": "sypialnia",
+        "hint": "Bedroom"
+      },
+      {
+        "word": "łazienka",
+        "hint": "Bathroom"
+      },
+      {
+        "word": "salon",
+        "hint": "Living room"
+      },
+      {
+        "word": "korytarz",
+        "hint": "Hallway"
+      },
+      {
+        "word": "garaż",
+        "hint": "Garage"
+      },
+      {
+        "word": "piwnica",
+        "hint": "Basement"
+      },
+      {
+        "word": "strych",
+        "hint": "Attic"
+      },
+      {
+        "word": "balkon",
+        "hint": "Balcony"
+      },
+      {
+        "word": "ogród",
+        "hint": "Garden"
+      },
+      {
+        "word": "dach",
+        "hint": "Roof"
+      },
+      {
+        "word": "schody",
+        "hint": "Stairs"
+      },
+      {
+        "word": "okno",
+        "hint": "Window"
+      },
+      {
+        "word": "drzwi",
+        "hint": "Door"
+      },
+      {
+        "word": "podłoga",
+        "hint": "Floor"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Weather",
+    "description": "Weather and climate terms in Polish",
+    "iconName": "cloud.sun",
+    "color": "#38bdf8",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "słońce",
+        "hint": "Sun"
+      },
+      {
+        "word": "deszcz",
+        "hint": "Rain"
+      },
+      {
+        "word": "śnieg",
+        "hint": "Snow"
+      },
+      {
+        "word": "wiatr",
+        "hint": "Wind"
+      },
+      {
+        "word": "chmura",
+        "hint": "Cloud"
+      },
+      {
+        "word": "burza",
+        "hint": "Storm"
+      },
+      {
+        "word": "mgła",
+        "hint": "Fog"
+      },
+      {
+        "word": "tęcza",
+        "hint": "Rainbow"
+      },
+      {
+        "word": "mróz",
+        "hint": "Frost"
+      },
+      {
+        "word": "grad",
+        "hint": "Hail"
+      },
+      {
+        "word": "błyskawica",
+        "hint": "Lightning"
+      },
+      {
+        "word": "wilgotność",
+        "hint": "Humidity"
+      },
+      {
+        "word": "temperatura",
+        "hint": "Temperature"
+      },
+      {
+        "word": "ciepło",
+        "hint": "Warmth"
+      },
+      {
+        "word": "chłód",
+        "hint": "Cold / Coolness"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Professions",
+    "description": "Common professions and jobs in Polish",
+    "iconName": "briefcase",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "lekarz",
+        "hint": "Doctor"
+      },
+      {
+        "word": "nauczyciel",
+        "hint": "Teacher"
+      },
+      {
+        "word": "inżynier",
+        "hint": "Engineer"
+      },
+      {
+        "word": "prawnik",
+        "hint": "Lawyer"
+      },
+      {
+        "word": "kucharz",
+        "hint": "Cook / Chef"
+      },
+      {
+        "word": "policjant",
+        "hint": "Police officer"
+      },
+      {
+        "word": "strażak",
+        "hint": "Firefighter"
+      },
+      {
+        "word": "pielęgniarka",
+        "hint": "Nurse"
+      },
+      {
+        "word": "architekt",
+        "hint": "Architect"
+      },
+      {
+        "word": "mechanik",
+        "hint": "Mechanic"
+      },
+      {
+        "word": "dentysta",
+        "hint": "Dentist"
+      },
+      {
+        "word": "fryzjer",
+        "hint": "Hairdresser"
+      },
+      {
+        "word": "kierowca",
+        "hint": "Driver"
+      },
+      {
+        "word": "programista",
+        "hint": "Programmer"
+      },
+      {
+        "word": "farmaceuta",
+        "hint": "Pharmacist"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transport",
+    "description": "Vehicles and transport in Polish",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "samochód",
+        "hint": "Car"
+      },
+      {
+        "word": "autobus",
+        "hint": "Bus"
+      },
+      {
+        "word": "pociąg",
+        "hint": "Train"
+      },
+      {
+        "word": "rower",
+        "hint": "Bicycle"
+      },
+      {
+        "word": "samolot",
+        "hint": "Airplane"
+      },
+      {
+        "word": "tramwaj",
+        "hint": "Tram"
+      },
+      {
+        "word": "taksówka",
+        "hint": "Taxi"
+      },
+      {
+        "word": "motocykl",
+        "hint": "Motorcycle"
+      },
+      {
+        "word": "statek",
+        "hint": "Ship"
+      },
+      {
+        "word": "helikopter",
+        "hint": "Helicopter"
+      },
+      {
+        "word": "metro",
+        "hint": "Subway"
+      },
+      {
+        "word": "ciężarówka",
+        "hint": "Truck"
+      },
+      {
+        "word": "łódź",
+        "hint": "Boat"
+      },
+      {
+        "word": "hulajnoga",
+        "hint": "Scooter"
+      },
+      {
+        "word": "furgonetka",
+        "hint": "Van"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "School",
+    "description": "School and education vocabulary in Polish",
+    "iconName": "book",
+    "color": "#eab308",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "szkoła",
+        "hint": "School"
+      },
+      {
+        "word": "uczeń",
+        "hint": "Student (male)"
+      },
+      {
+        "word": "lekcja",
+        "hint": "Lesson"
+      },
+      {
+        "word": "zeszyt",
+        "hint": "Notebook"
+      },
+      {
+        "word": "ołówek",
+        "hint": "Pencil"
+      },
+      {
+        "word": "długopis",
+        "hint": "Pen"
+      },
+      {
+        "word": "tablica",
+        "hint": "Blackboard"
+      },
+      {
+        "word": "plecak",
+        "hint": "Backpack"
+      },
+      {
+        "word": "książka",
+        "hint": "Book"
+      },
+      {
+        "word": "egzamin",
+        "hint": "Exam"
+      },
+      {
+        "word": "zadanie",
+        "hint": "Assignment"
+      },
+      {
+        "word": "klasa",
+        "hint": "Classroom"
+      },
+      {
+        "word": "przerwa",
+        "hint": "Break / Recess"
+      },
+      {
+        "word": "ocena",
+        "hint": "Grade"
+      },
+      {
+        "word": "matematyka",
+        "hint": "Mathematics"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Kitchen Utensils",
+    "description": "Kitchen tools and utensils in Polish",
+    "iconName": "cup.and.saucer",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "garnek",
+        "hint": "Pot"
+      },
+      {
+        "word": "patelnia",
+        "hint": "Frying pan"
+      },
+      {
+        "word": "talerz",
+        "hint": "Plate"
+      },
+      {
+        "word": "kubek",
+        "hint": "Mug"
+      },
+      {
+        "word": "widelec",
+        "hint": "Fork"
+      },
+      {
+        "word": "łyżka",
+        "hint": "Spoon"
+      },
+      {
+        "word": "szklanka",
+        "hint": "Glass"
+      },
+      {
+        "word": "deska",
+        "hint": "Cutting board"
+      },
+      {
+        "word": "mikser",
+        "hint": "Blender"
+      },
+      {
+        "word": "piekarnik",
+        "hint": "Oven"
+      },
+      {
+        "word": "lodówka",
+        "hint": "Refrigerator"
+      },
+      {
+        "word": "czajnik",
+        "hint": "Kettle"
+      },
+      {
+        "word": "toster",
+        "hint": "Toaster"
+      },
+      {
+        "word": "durszlak",
+        "hint": "Colander"
+      },
+      {
+        "word": "trzepaczka",
+        "hint": "Whisk"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Sports",
+    "description": "Sports and athletic activities in Polish",
+    "iconName": "sportscourt",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "piłkanożna",
+        "hint": "Football / Soccer"
+      },
+      {
+        "word": "koszykówka",
+        "hint": "Basketball"
+      },
+      {
+        "word": "siatkówka",
+        "hint": "Volleyball"
+      },
+      {
+        "word": "tenis",
+        "hint": "Tennis"
+      },
+      {
+        "word": "pływanie",
+        "hint": "Swimming"
+      },
+      {
+        "word": "bieganie",
+        "hint": "Running"
+      },
+      {
+        "word": "jazda",
+        "hint": "Riding / Cycling"
+      },
+      {
+        "word": "boks",
+        "hint": "Boxing"
+      },
+      {
+        "word": "narciarstwo",
+        "hint": "Skiing"
+      },
+      {
+        "word": "łyżwiarstwo",
+        "hint": "Ice skating"
+      },
+      {
+        "word": "wspinaczka",
+        "hint": "Climbing"
+      },
+      {
+        "word": "szermierka",
+        "hint": "Fencing"
+      },
+      {
+        "word": "wioślarstwo",
+        "hint": "Rowing"
+      },
+      {
+        "word": "kajakarstwo",
+        "hint": "Kayaking"
+      },
+      {
+        "word": "lekkoatletyka",
+        "hint": "Athletics"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Music & Instruments",
+    "description": "Musical instruments in Polish",
+    "iconName": "guitars",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "gitara",
+        "hint": "Guitar"
+      },
+      {
+        "word": "pianino",
+        "hint": "Piano"
+      },
+      {
+        "word": "skrzypce",
+        "hint": "Violin"
+      },
+      {
+        "word": "perkusja",
+        "hint": "Drums"
+      },
+      {
+        "word": "flet",
+        "hint": "Flute"
+      },
+      {
+        "word": "trąbka",
+        "hint": "Trumpet"
+      },
+      {
+        "word": "saksofon",
+        "hint": "Saxophone"
+      },
+      {
+        "word": "harfa",
+        "hint": "Harp"
+      },
+      {
+        "word": "klarnet",
+        "hint": "Clarinet"
+      },
+      {
+        "word": "wiolonczela",
+        "hint": "Cello"
+      },
+      {
+        "word": "akordeon",
+        "hint": "Accordion"
+      },
+      {
+        "word": "puzon",
+        "hint": "Trombone"
+      },
+      {
+        "word": "organy",
+        "hint": "Organ"
+      },
+      {
+        "word": "kontrabas",
+        "hint": "Double bass"
+      },
+      {
+        "word": "tamburyn",
+        "hint": "Tambourine"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Nature",
+    "description": "Nature and landscape terms in Polish",
+    "iconName": "leaf",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "las",
+        "hint": "Forest"
+      },
+      {
+        "word": "rzeka",
+        "hint": "River"
+      },
+      {
+        "word": "góra",
+        "hint": "Mountain"
+      },
+      {
+        "word": "jezioro",
+        "hint": "Lake"
+      },
+      {
+        "word": "morze",
+        "hint": "Sea"
+      },
+      {
+        "word": "plaża",
+        "hint": "Beach"
+      },
+      {
+        "word": "dolina",
+        "hint": "Valley"
+      },
+      {
+        "word": "łąka",
+        "hint": "Meadow"
+      },
+      {
+        "word": "wodospad",
+        "hint": "Waterfall"
+      },
+      {
+        "word": "wyspa",
+        "hint": "Island"
+      },
+      {
+        "word": "jaskinia",
+        "hint": "Cave"
+      },
+      {
+        "word": "pustynia",
+        "hint": "Desert"
+      },
+      {
+        "word": "wulkan",
+        "hint": "Volcano"
+      },
+      {
+        "word": "drzewo",
+        "hint": "Tree"
+      },
+      {
+        "word": "kwiat",
+        "hint": "Flower"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Emotions",
+    "description": "Feelings and emotions in Polish",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "radość",
+        "hint": "Joy"
+      },
+      {
+        "word": "smutek",
+        "hint": "Sadness"
+      },
+      {
+        "word": "złość",
+        "hint": "Anger"
+      },
+      {
+        "word": "strach",
+        "hint": "Fear"
+      },
+      {
+        "word": "miłość",
+        "hint": "Love"
+      },
+      {
+        "word": "zazdrość",
+        "hint": "Jealousy"
+      },
+      {
+        "word": "wstyd",
+        "hint": "Shame"
+      },
+      {
+        "word": "duma",
+        "hint": "Pride"
+      },
+      {
+        "word": "nadzieja",
+        "hint": "Hope"
+      },
+      {
+        "word": "tęsknota",
+        "hint": "Longing"
+      },
+      {
+        "word": "spokój",
+        "hint": "Calm / Peace"
+      },
+      {
+        "word": "zachwyt",
+        "hint": "Delight"
+      },
+      {
+        "word": "niepokój",
+        "hint": "Anxiety"
+      },
+      {
+        "word": "szczęście",
+        "hint": "Happiness"
+      },
+      {
+        "word": "zaskoczenie",
+        "hint": "Surprise"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technology",
+    "description": "Technology and computing terms in Polish",
+    "iconName": "desktopcomputer",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "komputer",
+        "hint": "Computer"
+      },
+      {
+        "word": "telefon",
+        "hint": "Phone"
+      },
+      {
+        "word": "klawiatura",
+        "hint": "Keyboard"
+      },
+      {
+        "word": "ekran",
+        "hint": "Screen"
+      },
+      {
+        "word": "drukarka",
+        "hint": "Printer"
+      },
+      {
+        "word": "słuchawki",
+        "hint": "Headphones"
+      },
+      {
+        "word": "ładowarka",
+        "hint": "Charger"
+      },
+      {
+        "word": "aplikacja",
+        "hint": "Application"
+      },
+      {
+        "word": "przeglądarka",
+        "hint": "Browser"
+      },
+      {
+        "word": "hasło",
+        "hint": "Password"
+      },
+      {
+        "word": "sieć",
+        "hint": "Network"
+      },
+      {
+        "word": "tablet",
+        "hint": "Tablet"
+      },
+      {
+        "word": "oprogramowanie",
+        "hint": "Software"
+      },
+      {
+        "word": "głośnik",
+        "hint": "Speaker"
+      },
+      {
+        "word": "kamera",
+        "hint": "Camera"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Office",
+    "description": "Office and workplace vocabulary in Polish",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "biurko",
+        "hint": "Desk"
+      },
+      {
+        "word": "krzesło",
+        "hint": "Chair"
+      },
+      {
+        "word": "spotkanie",
+        "hint": "Meeting"
+      },
+      {
+        "word": "dokument",
+        "hint": "Document"
+      },
+      {
+        "word": "teczka",
+        "hint": "Folder / Briefcase"
+      },
+      {
+        "word": "segregator",
+        "hint": "Binder"
+      },
+      {
+        "word": "zszywacz",
+        "hint": "Stapler"
+      },
+      {
+        "word": "nożyczki",
+        "hint": "Scissors"
+      },
+      {
+        "word": "kalendarz",
+        "hint": "Calendar"
+      },
+      {
+        "word": "wizytówka",
+        "hint": "Business card"
+      },
+      {
+        "word": "kopertówka",
+        "hint": "Envelope"
+      },
+      {
+        "word": "raport",
+        "hint": "Report"
+      },
+      {
+        "word": "umowa",
+        "hint": "Contract"
+      },
+      {
+        "word": "faktura",
+        "hint": "Invoice"
+      },
+      {
+        "word": "pieczątka",
+        "hint": "Stamp / Seal"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Health & Medical",
+    "description": "Health and medical terms in Polish",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "szpital",
+        "hint": "Hospital"
+      },
+      {
+        "word": "apteka",
+        "hint": "Pharmacy"
+      },
+      {
+        "word": "recepta",
+        "hint": "Prescription"
+      },
+      {
+        "word": "tabletka",
+        "hint": "Pill / Tablet"
+      },
+      {
+        "word": "gorączka",
+        "hint": "Fever"
+      },
+      {
+        "word": "kaszel",
+        "hint": "Cough"
+      },
+      {
+        "word": "ból",
+        "hint": "Pain"
+      },
+      {
+        "word": "zastrzyk",
+        "hint": "Injection"
+      },
+      {
+        "word": "bandaż",
+        "hint": "Bandage"
+      },
+      {
+        "word": "operacja",
+        "hint": "Surgery"
+      },
+      {
+        "word": "alergia",
+        "hint": "Allergy"
+      },
+      {
+        "word": "diagnoza",
+        "hint": "Diagnosis"
+      },
+      {
+        "word": "terapia",
+        "hint": "Therapy"
+      },
+      {
+        "word": "szczepionka",
+        "hint": "Vaccine"
+      },
+      {
+        "word": "ciśnienie",
+        "hint": "Blood pressure"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Travel",
+    "description": "Travel and tourism vocabulary in Polish",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "lotnisko",
+        "hint": "Airport"
+      },
+      {
+        "word": "walizka",
+        "hint": "Suitcase"
+      },
+      {
+        "word": "paszport",
+        "hint": "Passport"
+      },
+      {
+        "word": "bilet",
+        "hint": "Ticket"
+      },
+      {
+        "word": "hotel",
+        "hint": "Hotel"
+      },
+      {
+        "word": "rezerwacja",
+        "hint": "Reservation"
+      },
+      {
+        "word": "wakacje",
+        "hint": "Vacation"
+      },
+      {
+        "word": "przewodnik",
+        "hint": "Guide"
+      },
+      {
+        "word": "mapa",
+        "hint": "Map"
+      },
+      {
+        "word": "pamiątka",
+        "hint": "Souvenir"
+      },
+      {
+        "word": "wycieczka",
+        "hint": "Excursion / Trip"
+      },
+      {
+        "word": "dworzec",
+        "hint": "Train station"
+      },
+      {
+        "word": "granica",
+        "hint": "Border"
+      },
+      {
+        "word": "wiza",
+        "hint": "Visa"
+      },
+      {
+        "word": "ambasada",
+        "hint": "Embassy"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobbies",
+    "description": "Hobbies and leisure activities in Polish",
+    "iconName": "star",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "czytanie",
+        "hint": "Reading"
+      },
+      {
+        "word": "gotowanie",
+        "hint": "Cooking"
+      },
+      {
+        "word": "malowanie",
+        "hint": "Painting"
+      },
+      {
+        "word": "fotografowanie",
+        "hint": "Photography"
+      },
+      {
+        "word": "ogrodnictwo",
+        "hint": "Gardening"
+      },
+      {
+        "word": "szycie",
+        "hint": "Sewing"
+      },
+      {
+        "word": "wędkarstwo",
+        "hint": "Fishing"
+      },
+      {
+        "word": "szachy",
+        "hint": "Chess"
+      },
+      {
+        "word": "taniec",
+        "hint": "Dancing"
+      },
+      {
+        "word": "żeglowanie",
+        "hint": "Sailing"
+      },
+      {
+        "word": "rysowanie",
+        "hint": "Drawing"
+      },
+      {
+        "word": "kolekcjonowanie",
+        "hint": "Collecting"
+      },
+      {
+        "word": "majsterkowanie",
+        "hint": "DIY / Crafting"
+      },
+      {
+        "word": "modelarstwo",
+        "hint": "Model building"
+      },
+      {
+        "word": "haftowanie",
+        "hint": "Embroidery"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Drinks & Beverages",
+    "description": "Drinks and beverages in Polish",
+    "iconName": "cup.and.saucer",
+    "color": "#06b6d4",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "herbata",
+        "hint": "Tea"
+      },
+      {
+        "word": "kawa",
+        "hint": "Coffee"
+      },
+      {
+        "word": "woda",
+        "hint": "Water"
+      },
+      {
+        "word": "sok",
+        "hint": "Juice"
+      },
+      {
+        "word": "mleko",
+        "hint": "Milk"
+      },
+      {
+        "word": "piwo",
+        "hint": "Beer"
+      },
+      {
+        "word": "wino",
+        "hint": "Wine"
+      },
+      {
+        "word": "lemoniada",
+        "hint": "Lemonade"
+      },
+      {
+        "word": "koktajl",
+        "hint": "Smoothie / Cocktail"
+      },
+      {
+        "word": "kakao",
+        "hint": "Cocoa / Hot chocolate"
+      },
+      {
+        "word": "kompot",
+        "hint": "Compote drink"
+      },
+      {
+        "word": "napój",
+        "hint": "Beverage"
+      },
+      {
+        "word": "szampan",
+        "hint": "Champagne"
+      },
+      {
+        "word": "likier",
+        "hint": "Liqueur"
+      },
+      {
+        "word": "nalewka",
+        "hint": "Tincture / Infusion"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desserts & Sweets",
+    "description": "Desserts and sweets in Polish",
+    "iconName": "birthday.cake",
+    "color": "#f97316",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ciasto",
+        "hint": "Cake / Pastry"
+      },
+      {
+        "word": "czekolada",
+        "hint": "Chocolate"
+      },
+      {
+        "word": "lody",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "ciastko",
+        "hint": "Cookie / Biscuit"
+      },
+      {
+        "word": "pączek",
+        "hint": "Doughnut"
+      },
+      {
+        "word": "sernik",
+        "hint": "Cheesecake"
+      },
+      {
+        "word": "szarlotka",
+        "hint": "Apple pie"
+      },
+      {
+        "word": "budyń",
+        "hint": "Pudding"
+      },
+      {
+        "word": "gofr",
+        "hint": "Waffle"
+      },
+      {
+        "word": "naleśnik",
+        "hint": "Crêpe / Pancake"
+      },
+      {
+        "word": "makowiec",
+        "hint": "Poppy seed roll"
+      },
+      {
+        "word": "piernik",
+        "hint": "Gingerbread"
+      },
+      {
+        "word": "drożdżówka",
+        "hint": "Sweet bun"
+      },
+      {
+        "word": "chałwa",
+        "hint": "Halva"
+      },
+      {
+        "word": "marcepan",
+        "hint": "Marzipan"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Furniture",
+    "description": "Furniture and home furnishings in Polish",
+    "iconName": "sofa",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "kanapa",
+        "hint": "Sofa / Couch"
+      },
+      {
+        "word": "stół",
+        "hint": "Table"
+      },
+      {
+        "word": "łóżko",
+        "hint": "Bed"
+      },
+      {
+        "word": "szafa",
+        "hint": "Wardrobe"
+      },
+      {
+        "word": "fotel",
+        "hint": "Armchair"
+      },
+      {
+        "word": "komoda",
+        "hint": "Dresser / Chest"
+      },
+      {
+        "word": "regał",
+        "hint": "Bookshelf"
+      },
+      {
+        "word": "lustro",
+        "hint": "Mirror"
+      },
+      {
+        "word": "dywan",
+        "hint": "Carpet / Rug"
+      },
+      {
+        "word": "zasłona",
+        "hint": "Curtain"
+      },
+      {
+        "word": "lampa",
+        "hint": "Lamp"
+      },
+      {
+        "word": "półka",
+        "hint": "Shelf"
+      },
+      {
+        "word": "taboret",
+        "hint": "Stool"
+      },
+      {
+        "word": "wieszak",
+        "hint": "Hanger / Coat rack"
+      },
+      {
+        "word": "stolik",
+        "hint": "Coffee table"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Tools",
+    "description": "Tools and hardware in Polish",
+    "iconName": "wrench",
+    "color": "#71717a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "młotek",
+        "hint": "Hammer"
+      },
+      {
+        "word": "śrubokręt",
+        "hint": "Screwdriver"
+      },
+      {
+        "word": "klucz",
+        "hint": "Wrench / Key"
+      },
+      {
+        "word": "wiertarka",
+        "hint": "Drill"
+      },
+      {
+        "word": "piła",
+        "hint": "Saw"
+      },
+      {
+        "word": "obcęgi",
+        "hint": "Pliers"
+      },
+      {
+        "word": "miarka",
+        "hint": "Tape measure"
+      },
+      {
+        "word": "poziomica",
+        "hint": "Spirit level"
+      },
+      {
+        "word": "drabina",
+        "hint": "Ladder"
+      },
+      {
+        "word": "śruba",
+        "hint": "Screw"
+      },
+      {
+        "word": "gwóźdź",
+        "hint": "Nail"
+      },
+      {
+        "word": "szlifierka",
+        "hint": "Grinder / Sander"
+      },
+      {
+        "word": "imadło",
+        "hint": "Vise"
+      },
+      {
+        "word": "lutownica",
+        "hint": "Soldering iron"
+      },
+      {
+        "word": "kombinerki",
+        "hint": "Combination pliers"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materials",
+    "description": "Common materials and substances in Polish",
+    "iconName": "cube",
+    "color": "#a1a1aa",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "drewno",
+        "hint": "Wood"
+      },
+      {
+        "word": "metal",
+        "hint": "Metal"
+      },
+      {
+        "word": "szkło",
+        "hint": "Glass"
+      },
+      {
+        "word": "plastik",
+        "hint": "Plastic"
+      },
+      {
+        "word": "bawełna",
+        "hint": "Cotton"
+      },
+      {
+        "word": "skóra",
+        "hint": "Leather"
+      },
+      {
+        "word": "wełna",
+        "hint": "Wool"
+      },
+      {
+        "word": "jedwab",
+        "hint": "Silk"
+      },
+      {
+        "word": "ceramika",
+        "hint": "Ceramics"
+      },
+      {
+        "word": "marmur",
+        "hint": "Marble"
+      },
+      {
+        "word": "granit",
+        "hint": "Granite"
+      },
+      {
+        "word": "guma",
+        "hint": "Rubber"
+      },
+      {
+        "word": "beton",
+        "hint": "Concrete"
+      },
+      {
+        "word": "cegła",
+        "hint": "Brick"
+      },
+      {
+        "word": "aluminium",
+        "hint": "Aluminum"
+      }
+    ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Daily Routine",
+    "description": "Everyday activities and routines in Polish",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "śniadanie",
+        "hint": "Breakfast"
+      },
+      {
+        "word": "prysznic",
+        "hint": "Shower"
+      },
+      {
+        "word": "budzik",
+        "hint": "Alarm clock"
+      },
+      {
+        "word": "ubierać",
+        "hint": "To dress"
+      },
+      {
+        "word": "mycie",
+        "hint": "Washing"
+      },
+      {
+        "word": "kolacja",
+        "hint": "Dinner / Supper"
+      },
+      {
+        "word": "obiad",
+        "hint": "Lunch"
+      },
+      {
+        "word": "spacer",
+        "hint": "Walk / Stroll"
+      },
+      {
+        "word": "spanie",
+        "hint": "Sleeping"
+      },
+      {
+        "word": "porządek",
+        "hint": "Order / Tidiness"
+      },
+      {
+        "word": "golenie",
+        "hint": "Shaving"
+      },
+      {
+        "word": "gotowanie",
+        "hint": "Cooking"
+      },
+      {
+        "word": "prasowanie",
+        "hint": "Ironing"
+      },
+      {
+        "word": "zakupy",
+        "hint": "Shopping (errand)"
+      },
+      {
+        "word": "relaks",
+        "hint": "Relaxation"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Shopping",
+    "description": "Shopping-related vocabulary in Polish",
+    "iconName": "cart",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "sklep",
+        "hint": "Shop / Store"
+      },
+      {
+        "word": "koszyk",
+        "hint": "Basket / Cart"
+      },
+      {
+        "word": "cena",
+        "hint": "Price"
+      },
+      {
+        "word": "rabat",
+        "hint": "Discount"
+      },
+      {
+        "word": "paragon",
+        "hint": "Receipt"
+      },
+      {
+        "word": "kasa",
+        "hint": "Cash register / Checkout"
+      },
+      {
+        "word": "torba",
+        "hint": "Bag"
+      },
+      {
+        "word": "rozmiar",
+        "hint": "Size"
+      },
+      {
+        "word": "oferta",
+        "hint": "Offer / Deal"
+      },
+      {
+        "word": "moneta",
+        "hint": "Coin"
+      },
+      {
+        "word": "kupować",
+        "hint": "To buy"
+      },
+      {
+        "word": "reszta",
+        "hint": "Change (money back)"
+      },
+      {
+        "word": "promocja",
+        "hint": "Promotion / Sale"
+      },
+      {
+        "word": "kolejka",
+        "hint": "Queue / Line"
+      },
+      {
+        "word": "przymierzalnia",
+        "hint": "Fitting room"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restaurant",
+    "description": "Restaurant and dining vocabulary in Polish",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "kelner",
+        "hint": "Waiter"
+      },
+      {
+        "word": "rachunek",
+        "hint": "Bill / Check"
+      },
+      {
+        "word": "zamówienie",
+        "hint": "Order"
+      },
+      {
+        "word": "napiwek",
+        "hint": "Tip (gratuity)"
+      },
+      {
+        "word": "danie",
+        "hint": "Dish / Course"
+      },
+      {
+        "word": "zupa",
+        "hint": "Soup"
+      },
+      {
+        "word": "deser",
+        "hint": "Dessert"
+      },
+      {
+        "word": "stolik",
+        "hint": "Table (in restaurant)"
+      },
+      {
+        "word": "kucharz",
+        "hint": "Chef / Cook"
+      },
+      {
+        "word": "przystawka",
+        "hint": "Appetizer / Starter"
+      },
+      {
+        "word": "rezerwacja",
+        "hint": "Reservation"
+      },
+      {
+        "word": "sałatka",
+        "hint": "Salad"
+      },
+      {
+        "word": "napój",
+        "hint": "Beverage / Drink"
+      },
+      {
+        "word": "porcja",
+        "hint": "Portion / Serving"
+      },
+      {
+        "word": "talerz",
+        "hint": "Plate"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Garden",
+    "description": "Garden and plants vocabulary in Polish",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ogród",
+        "hint": "Garden"
+      },
+      {
+        "word": "kwiat",
+        "hint": "Flower"
+      },
+      {
+        "word": "drzewo",
+        "hint": "Tree"
+      },
+      {
+        "word": "trawnik",
+        "hint": "Lawn"
+      },
+      {
+        "word": "grządka",
+        "hint": "Flower bed / Garden bed"
+      },
+      {
+        "word": "podlewanie",
+        "hint": "Watering"
+      },
+      {
+        "word": "nasiona",
+        "hint": "Seeds"
+      },
+      {
+        "word": "krzew",
+        "hint": "Bush / Shrub"
+      },
+      {
+        "word": "grabić",
+        "hint": "To rake"
+      },
+      {
+        "word": "doniczka",
+        "hint": "Flowerpot"
+      },
+      {
+        "word": "ziemia",
+        "hint": "Soil / Earth"
+      },
+      {
+        "word": "nawóz",
+        "hint": "Fertilizer"
+      },
+      {
+        "word": "altana",
+        "hint": "Gazebo / Garden shelter"
+      },
+      {
+        "word": "ławka",
+        "hint": "Bench"
+      },
+      {
+        "word": "płot",
+        "hint": "Fence"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Bathroom",
+    "description": "Bathroom items and vocabulary in Polish",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "łazienka",
+        "hint": "Bathroom"
+      },
+      {
+        "word": "ręcznik",
+        "hint": "Towel"
+      },
+      {
+        "word": "lustro",
+        "hint": "Mirror"
+      },
+      {
+        "word": "wanna",
+        "hint": "Bathtub"
+      },
+      {
+        "word": "mydło",
+        "hint": "Soap"
+      },
+      {
+        "word": "szampon",
+        "hint": "Shampoo"
+      },
+      {
+        "word": "umywalka",
+        "hint": "Sink / Washbasin"
+      },
+      {
+        "word": "szczoteczka",
+        "hint": "Toothbrush"
+      },
+      {
+        "word": "pasta",
+        "hint": "Toothpaste"
+      },
+      {
+        "word": "kran",
+        "hint": "Faucet / Tap"
+      },
+      {
+        "word": "grzebień",
+        "hint": "Comb"
+      },
+      {
+        "word": "suszarka",
+        "hint": "Hair dryer"
+      },
+      {
+        "word": "kafelki",
+        "hint": "Tiles"
+      },
+      {
+        "word": "prysznic",
+        "hint": "Shower (fixture)"
+      },
+      {
+        "word": "pralka",
+        "hint": "Washing machine"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Cinema & Film",
+    "description": "Cinema and movie vocabulary in Polish",
+    "iconName": "film",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "kino",
+        "hint": "Cinema / Movie theater"
+      },
+      {
+        "word": "ekran",
+        "hint": "Screen"
+      },
+      {
+        "word": "reżyser",
+        "hint": "Director"
+      },
+      {
+        "word": "aktor",
+        "hint": "Actor"
+      },
+      {
+        "word": "aktorka",
+        "hint": "Actress"
+      },
+      {
+        "word": "bilet",
+        "hint": "Ticket"
+      },
+      {
+        "word": "seans",
+        "hint": "Screening / Show"
+      },
+      {
+        "word": "zwiastun",
+        "hint": "Trailer"
+      },
+      {
+        "word": "napisy",
+        "hint": "Subtitles"
+      },
+      {
+        "word": "fabuła",
+        "hint": "Plot / Storyline"
+      },
+      {
+        "word": "scena",
+        "hint": "Scene"
+      },
+      {
+        "word": "komedia",
+        "hint": "Comedy"
+      },
+      {
+        "word": "dramat",
+        "hint": "Drama"
+      },
+      {
+        "word": "horror",
+        "hint": "Horror (film)"
+      },
+      {
+        "word": "popcorn",
+        "hint": "Popcorn"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Art",
+    "description": "Art and creativity vocabulary in Polish",
+    "iconName": "paintpalette",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "obraz",
+        "hint": "Painting / Picture"
+      },
+      {
+        "word": "malarz",
+        "hint": "Painter"
+      },
+      {
+        "word": "rzeźba",
+        "hint": "Sculpture"
+      },
+      {
+        "word": "galeria",
+        "hint": "Gallery"
+      },
+      {
+        "word": "pędzel",
+        "hint": "Paintbrush"
+      },
+      {
+        "word": "farba",
+        "hint": "Paint"
+      },
+      {
+        "word": "szkic",
+        "hint": "Sketch"
+      },
+      {
+        "word": "płótno",
+        "hint": "Canvas"
+      },
+      {
+        "word": "wystawa",
+        "hint": "Exhibition"
+      },
+      {
+        "word": "portret",
+        "hint": "Portrait"
+      },
+      {
+        "word": "paleta",
+        "hint": "Palette"
+      },
+      {
+        "word": "rysunek",
+        "hint": "Drawing"
+      },
+      {
+        "word": "muzeum",
+        "hint": "Museum"
+      },
+      {
+        "word": "twórczość",
+        "hint": "Creativity / Art works"
+      },
+      {
+        "word": "grafika",
+        "hint": "Graphics / Print"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Dance",
+    "description": "Dance styles and vocabulary in Polish",
+    "iconName": "figure.dance",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "taniec",
+        "hint": "Dance"
+      },
+      {
+        "word": "balet",
+        "hint": "Ballet"
+      },
+      {
+        "word": "tancerz",
+        "hint": "Dancer (male)"
+      },
+      {
+        "word": "tancerka",
+        "hint": "Dancer (female)"
+      },
+      {
+        "word": "choreografia",
+        "hint": "Choreography"
+      },
+      {
+        "word": "krok",
+        "hint": "Step"
+      },
+      {
+        "word": "rytm",
+        "hint": "Rhythm"
+      },
+      {
+        "word": "parkiet",
+        "hint": "Dance floor"
+      },
+      {
+        "word": "polonez",
+        "hint": "Polonaise (Polish dance)"
+      },
+      {
+        "word": "walc",
+        "hint": "Waltz"
+      },
+      {
+        "word": "tango",
+        "hint": "Tango"
+      },
+      {
+        "word": "muzyka",
+        "hint": "Music"
+      },
+      {
+        "word": "partner",
+        "hint": "Partner"
+      },
+      {
+        "word": "obrót",
+        "hint": "Spin / Turn"
+      },
+      {
+        "word": "występ",
+        "hint": "Performance"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Photography",
+    "description": "Photography vocabulary in Polish",
+    "iconName": "camera",
+    "color": "#64748b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "aparat",
+        "hint": "Camera"
+      },
+      {
+        "word": "obiektyw",
+        "hint": "Lens"
+      },
+      {
+        "word": "zdjęcie",
+        "hint": "Photo / Picture"
+      },
+      {
+        "word": "migawka",
+        "hint": "Shutter"
+      },
+      {
+        "word": "ostrość",
+        "hint": "Focus / Sharpness"
+      },
+      {
+        "word": "lampa",
+        "hint": "Flash (light)"
+      },
+      {
+        "word": "kadr",
+        "hint": "Frame / Shot"
+      },
+      {
+        "word": "portret",
+        "hint": "Portrait photo"
+      },
+      {
+        "word": "pejzaż",
+        "hint": "Landscape (photo)"
+      },
+      {
+        "word": "statyw",
+        "hint": "Tripod"
+      },
+      {
+        "word": "naświetlanie",
+        "hint": "Exposure"
+      },
+      {
+        "word": "fotograf",
+        "hint": "Photographer"
+      },
+      {
+        "word": "retusz",
+        "hint": "Retouching"
+      },
+      {
+        "word": "filtr",
+        "hint": "Filter"
+      },
+      {
+        "word": "albumik",
+        "hint": "Photo album"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Crafts",
+    "description": "Crafts and handwork vocabulary in Polish",
+    "iconName": "scissors",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "nożyczki",
+        "hint": "Scissors"
+      },
+      {
+        "word": "klej",
+        "hint": "Glue"
+      },
+      {
+        "word": "papier",
+        "hint": "Paper"
+      },
+      {
+        "word": "szycie",
+        "hint": "Sewing"
+      },
+      {
+        "word": "igła",
+        "hint": "Needle"
+      },
+      {
+        "word": "nitka",
+        "hint": "Thread"
+      },
+      {
+        "word": "dzianina",
+        "hint": "Knitwear / Knitting"
+      },
+      {
+        "word": "haft",
+        "hint": "Embroidery"
+      },
+      {
+        "word": "koraliki",
+        "hint": "Beads"
+      },
+      {
+        "word": "wzór",
+        "hint": "Pattern / Design"
+      },
+      {
+        "word": "guzik",
+        "hint": "Button"
+      },
+      {
+        "word": "wstążka",
+        "hint": "Ribbon"
+      },
+      {
+        "word": "szydełko",
+        "hint": "Crochet hook"
+      },
+      {
+        "word": "origami",
+        "hint": "Paper folding art"
+      },
+      {
+        "word": "rękodzieło",
+        "hint": "Handicraft / Handmade"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geography",
+    "description": "Geography vocabulary in Polish",
+    "iconName": "globe.europe.africa",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "kontynent",
+        "hint": "Continent"
+      },
+      {
+        "word": "wyspa",
+        "hint": "Island"
+      },
+      {
+        "word": "rzeka",
+        "hint": "River"
+      },
+      {
+        "word": "jezioro",
+        "hint": "Lake"
+      },
+      {
+        "word": "pustynia",
+        "hint": "Desert"
+      },
+      {
+        "word": "dolina",
+        "hint": "Valley"
+      },
+      {
+        "word": "półwysep",
+        "hint": "Peninsula"
+      },
+      {
+        "word": "równina",
+        "hint": "Plain / Flatland"
+      },
+      {
+        "word": "wybrzeże",
+        "hint": "Coast / Coastline"
+      },
+      {
+        "word": "wulkan",
+        "hint": "Volcano"
+      },
+      {
+        "word": "granica",
+        "hint": "Border / Boundary"
+      },
+      {
+        "word": "stolica",
+        "hint": "Capital (city)"
+      },
+      {
+        "word": "lodowiec",
+        "hint": "Glacier"
+      },
+      {
+        "word": "klimat",
+        "hint": "Climate"
+      },
+      {
+        "word": "zatoka",
+        "hint": "Bay / Gulf"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomy",
+    "description": "Space and astronomy vocabulary in Polish",
+    "iconName": "star",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "gwiazda",
+        "hint": "Star"
+      },
+      {
+        "word": "planeta",
+        "hint": "Planet"
+      },
+      {
+        "word": "księżyc",
+        "hint": "Moon"
+      },
+      {
+        "word": "słońce",
+        "hint": "Sun"
+      },
+      {
+        "word": "galaktyka",
+        "hint": "Galaxy"
+      },
+      {
+        "word": "kometa",
+        "hint": "Comet"
+      },
+      {
+        "word": "rakieta",
+        "hint": "Rocket"
+      },
+      {
+        "word": "orbita",
+        "hint": "Orbit"
+      },
+      {
+        "word": "teleskop",
+        "hint": "Telescope"
+      },
+      {
+        "word": "asteroida",
+        "hint": "Asteroid"
+      },
+      {
+        "word": "zaćmienie",
+        "hint": "Eclipse"
+      },
+      {
+        "word": "kosmos",
+        "hint": "Cosmos / Outer space"
+      },
+      {
+        "word": "astronauta",
+        "hint": "Astronaut"
+      },
+      {
+        "word": "mgławica",
+        "hint": "Nebula"
+      },
+      {
+        "word": "satelita",
+        "hint": "Satellite"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean & Sea",
+    "description": "Ocean and marine vocabulary in Polish",
+    "iconName": "water.waves",
+    "color": "#0077b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ocean",
+        "hint": "Ocean"
+      },
+      {
+        "word": "morze",
+        "hint": "Sea"
+      },
+      {
+        "word": "fala",
+        "hint": "Wave"
+      },
+      {
+        "word": "plaża",
+        "hint": "Beach"
+      },
+      {
+        "word": "rafa",
+        "hint": "Reef"
+      },
+      {
+        "word": "prąd",
+        "hint": "Current (water)"
+      },
+      {
+        "word": "głębia",
+        "hint": "Depth / Deep"
+      },
+      {
+        "word": "kotwica",
+        "hint": "Anchor"
+      },
+      {
+        "word": "latarnia",
+        "hint": "Lighthouse"
+      },
+      {
+        "word": "żagiel",
+        "hint": "Sail"
+      },
+      {
+        "word": "nurkowanie",
+        "hint": "Diving"
+      },
+      {
+        "word": "wodorosty",
+        "hint": "Seaweed"
+      },
+      {
+        "word": "piasek",
+        "hint": "Sand"
+      },
+      {
+        "word": "muszla",
+        "hint": "Seashell"
+      },
+      {
+        "word": "przypływ",
+        "hint": "Tide (incoming)"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Mountains",
+    "description": "Mountain and hiking vocabulary in Polish",
+    "iconName": "mountain.2",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "góra",
+        "hint": "Mountain"
+      },
+      {
+        "word": "szczyt",
+        "hint": "Summit / Peak"
+      },
+      {
+        "word": "szlak",
+        "hint": "Trail / Path"
+      },
+      {
+        "word": "dolina",
+        "hint": "Valley"
+      },
+      {
+        "word": "schronisko",
+        "hint": "Mountain shelter / Hostel"
+      },
+      {
+        "word": "wspinaczka",
+        "hint": "Climbing"
+      },
+      {
+        "word": "plecak",
+        "hint": "Backpack"
+      },
+      {
+        "word": "wodospad",
+        "hint": "Waterfall"
+      },
+      {
+        "word": "jaskinia",
+        "hint": "Cave"
+      },
+      {
+        "word": "skała",
+        "hint": "Rock / Cliff"
+      },
+      {
+        "word": "lawina",
+        "hint": "Avalanche"
+      },
+      {
+        "word": "stok",
+        "hint": "Slope"
+      },
+      {
+        "word": "przełęcz",
+        "hint": "Mountain pass"
+      },
+      {
+        "word": "turystyka",
+        "hint": "Tourism / Hiking"
+      },
+      {
+        "word": "widok",
+        "hint": "View / Panorama"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Camping",
+    "description": "Camping and outdoor vocabulary in Polish",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "namiot",
+        "hint": "Tent"
+      },
+      {
+        "word": "ognisko",
+        "hint": "Campfire / Bonfire"
+      },
+      {
+        "word": "śpiwór",
+        "hint": "Sleeping bag"
+      },
+      {
+        "word": "latarka",
+        "hint": "Flashlight / Torch"
+      },
+      {
+        "word": "kompas",
+        "hint": "Compass"
+      },
+      {
+        "word": "wędkowanie",
+        "hint": "Fishing (angling)"
+      },
+      {
+        "word": "karimata",
+        "hint": "Sleeping mat / Pad"
+      },
+      {
+        "word": "termos",
+        "hint": "Thermos"
+      },
+      {
+        "word": "mapa",
+        "hint": "Map"
+      },
+      {
+        "word": "polana",
+        "hint": "Clearing / Glade"
+      },
+      {
+        "word": "kempingowy",
+        "hint": "Camping (adjective)"
+      },
+      {
+        "word": "grill",
+        "hint": "Barbecue / Grill"
+      },
+      {
+        "word": "kajak",
+        "hint": "Kayak"
+      },
+      {
+        "word": "hamak",
+        "hint": "Hammock"
+      },
+      {
+        "word": "przyroda",
+        "hint": "Nature / Wildlife"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Law & Justice",
+    "description": "Legal vocabulary in Polish",
+    "iconName": "scalemass",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "prawo",
+        "hint": "Law"
+      },
+      {
+        "word": "sędzia",
+        "hint": "Judge"
+      },
+      {
+        "word": "adwokat",
+        "hint": "Lawyer / Attorney"
+      },
+      {
+        "word": "wyrok",
+        "hint": "Verdict / Sentence"
+      },
+      {
+        "word": "proces",
+        "hint": "Trial"
+      },
+      {
+        "word": "dowód",
+        "hint": "Evidence / Proof"
+      },
+      {
+        "word": "świadek",
+        "hint": "Witness"
+      },
+      {
+        "word": "oskarżony",
+        "hint": "Defendant / Accused"
+      },
+      {
+        "word": "kara",
+        "hint": "Punishment / Penalty"
+      },
+      {
+        "word": "grzywna",
+        "hint": "Fine (monetary)"
+      },
+      {
+        "word": "więzienie",
+        "hint": "Prison"
+      },
+      {
+        "word": "umowa",
+        "hint": "Contract / Agreement"
+      },
+      {
+        "word": "konstytucja",
+        "hint": "Constitution"
+      },
+      {
+        "word": "przestępstwo",
+        "hint": "Crime / Offense"
+      },
+      {
+        "word": "sprawiedliwość",
+        "hint": "Justice"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Politics",
+    "description": "Political vocabulary in Polish",
+    "iconName": "building.columns",
+    "color": "#1d4ed8",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "rząd",
+        "hint": "Government"
+      },
+      {
+        "word": "prezydent",
+        "hint": "President"
+      },
+      {
+        "word": "minister",
+        "hint": "Minister"
+      },
+      {
+        "word": "parlament",
+        "hint": "Parliament"
+      },
+      {
+        "word": "wybory",
+        "hint": "Elections"
+      },
+      {
+        "word": "partia",
+        "hint": "Political party"
+      },
+      {
+        "word": "głosowanie",
+        "hint": "Voting"
+      },
+      {
+        "word": "demokracja",
+        "hint": "Democracy"
+      },
+      {
+        "word": "kampania",
+        "hint": "Campaign"
+      },
+      {
+        "word": "polityk",
+        "hint": "Politician"
+      },
+      {
+        "word": "ustawa",
+        "hint": "Legislation / Act"
+      },
+      {
+        "word": "senat",
+        "hint": "Senate"
+      },
+      {
+        "word": "dyplomacja",
+        "hint": "Diplomacy"
+      },
+      {
+        "word": "koalicja",
+        "hint": "Coalition"
+      },
+      {
+        "word": "opozycja",
+        "hint": "Opposition"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Economy",
+    "description": "Economic vocabulary in Polish",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ekonomia",
+        "hint": "Economics"
+      },
+      {
+        "word": "budżet",
+        "hint": "Budget"
+      },
+      {
+        "word": "inflacja",
+        "hint": "Inflation"
+      },
+      {
+        "word": "podatek",
+        "hint": "Tax"
+      },
+      {
+        "word": "eksport",
+        "hint": "Export"
+      },
+      {
+        "word": "import",
+        "hint": "Import"
+      },
+      {
+        "word": "rynek",
+        "hint": "Market"
+      },
+      {
+        "word": "inwestycja",
+        "hint": "Investment"
+      },
+      {
+        "word": "zysk",
+        "hint": "Profit"
+      },
+      {
+        "word": "dług",
+        "hint": "Debt"
+      },
+      {
+        "word": "handel",
+        "hint": "Trade / Commerce"
+      },
+      {
+        "word": "waluta",
+        "hint": "Currency"
+      },
+      {
+        "word": "giełda",
+        "hint": "Stock exchange"
+      },
+      {
+        "word": "produkcja",
+        "hint": "Production"
+      },
+      {
+        "word": "bezrobocie",
+        "hint": "Unemployment"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Banking",
+    "description": "Banking and finance vocabulary in Polish",
+    "iconName": "banknote",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "bank",
+        "hint": "Bank"
+      },
+      {
+        "word": "konto",
+        "hint": "Account"
+      },
+      {
+        "word": "przelew",
+        "hint": "Transfer"
+      },
+      {
+        "word": "kredyt",
+        "hint": "Credit / Loan"
+      },
+      {
+        "word": "oszczędności",
+        "hint": "Savings"
+      },
+      {
+        "word": "odsetki",
+        "hint": "Interest (financial)"
+      },
+      {
+        "word": "wpłata",
+        "hint": "Deposit"
+      },
+      {
+        "word": "wypłata",
+        "hint": "Withdrawal / Salary"
+      },
+      {
+        "word": "bankomat",
+        "hint": "ATM"
+      },
+      {
+        "word": "hipoteka",
+        "hint": "Mortgage"
+      },
+      {
+        "word": "saldo",
+        "hint": "Balance"
+      },
+      {
+        "word": "prowizja",
+        "hint": "Commission / Fee"
+      },
+      {
+        "word": "gotówka",
+        "hint": "Cash"
+      },
+      {
+        "word": "pożyczka",
+        "hint": "Loan"
+      },
+      {
+        "word": "rata",
+        "hint": "Installment"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Insurance",
+    "description": "Insurance vocabulary in Polish",
+    "iconName": "shield",
+    "color": "#0891b2",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ubezpieczenie",
+        "hint": "Insurance"
+      },
+      {
+        "word": "polisa",
+        "hint": "Policy (insurance)"
+      },
+      {
+        "word": "składka",
+        "hint": "Premium / Contribution"
+      },
+      {
+        "word": "odszkodowanie",
+        "hint": "Compensation / Claim"
+      },
+      {
+        "word": "ryzyko",
+        "hint": "Risk"
+      },
+      {
+        "word": "wypadek",
+        "hint": "Accident"
+      },
+      {
+        "word": "szkoda",
+        "hint": "Damage / Loss"
+      },
+      {
+        "word": "agent",
+        "hint": "Agent"
+      },
+      {
+        "word": "ochrona",
+        "hint": "Protection / Coverage"
+      },
+      {
+        "word": "warunki",
+        "hint": "Terms / Conditions"
+      },
+      {
+        "word": "zgłoszenie",
+        "hint": "Report / Filing"
+      },
+      {
+        "word": "emerytura",
+        "hint": "Pension / Retirement"
+      },
+      {
+        "word": "świadczenie",
+        "hint": "Benefit / Allowance"
+      },
+      {
+        "word": "zdrowotne",
+        "hint": "Health (insurance adj.)"
+      },
+      {
+        "word": "franszyza",
+        "hint": "Deductible / Franchise"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Cooking",
+    "description": "Cooking methods and vocabulary in Polish",
+    "iconName": "frying.pan",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "gotować",
+        "hint": "To cook / To boil"
+      },
+      {
+        "word": "smażyć",
+        "hint": "To fry"
+      },
+      {
+        "word": "piec",
+        "hint": "To bake / To roast"
+      },
+      {
+        "word": "dusić",
+        "hint": "To stew / To braise"
+      },
+      {
+        "word": "kroić",
+        "hint": "To cut / To chop"
+      },
+      {
+        "word": "mieszać",
+        "hint": "To stir / To mix"
+      },
+      {
+        "word": "przepis",
+        "hint": "Recipe"
+      },
+      {
+        "word": "garnek",
+        "hint": "Pot / Saucepan"
+      },
+      {
+        "word": "patelnia",
+        "hint": "Frying pan"
+      },
+      {
+        "word": "składnik",
+        "hint": "Ingredient"
+      },
+      {
+        "word": "przyprawy",
+        "hint": "Seasonings / Spices"
+      },
+      {
+        "word": "piekarnik",
+        "hint": "Oven"
+      },
+      {
+        "word": "kuchnia",
+        "hint": "Kitchen / Cuisine"
+      },
+      {
+        "word": "obierać",
+        "hint": "To peel"
+      },
+      {
+        "word": "marynować",
+        "hint": "To marinate"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Baking",
+    "description": "Baking vocabulary in Polish",
+    "iconName": "birthday.cake",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ciasto",
+        "hint": "Cake / Dough"
+      },
+      {
+        "word": "mąka",
+        "hint": "Flour"
+      },
+      {
+        "word": "cukier",
+        "hint": "Sugar"
+      },
+      {
+        "word": "drożdże",
+        "hint": "Yeast"
+      },
+      {
+        "word": "pieczenie",
+        "hint": "Baking"
+      },
+      {
+        "word": "nadzienie",
+        "hint": "Filling / Stuffing"
+      },
+      {
+        "word": "lukier",
+        "hint": "Icing / Frosting"
+      },
+      {
+        "word": "biszkopt",
+        "hint": "Sponge cake"
+      },
+      {
+        "word": "forma",
+        "hint": "Baking tin / Mold"
+      },
+      {
+        "word": "kruszonka",
+        "hint": "Crumble topping"
+      },
+      {
+        "word": "makowiec",
+        "hint": "Poppy seed roll"
+      },
+      {
+        "word": "sernik",
+        "hint": "Cheesecake"
+      },
+      {
+        "word": "szarlotka",
+        "hint": "Apple pie (Polish)"
+      },
+      {
+        "word": "wałek",
+        "hint": "Rolling pin"
+      },
+      {
+        "word": "polewa",
+        "hint": "Glaze / Topping"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Spices & Herbs",
+    "description": "Spices and herbs vocabulary in Polish",
+    "iconName": "leaf",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pieprz",
+        "hint": "Pepper (spice)"
+      },
+      {
+        "word": "cynamon",
+        "hint": "Cinnamon"
+      },
+      {
+        "word": "imbir",
+        "hint": "Ginger"
+      },
+      {
+        "word": "czosnek",
+        "hint": "Garlic"
+      },
+      {
+        "word": "bazylia",
+        "hint": "Basil"
+      },
+      {
+        "word": "oregano",
+        "hint": "Oregano"
+      },
+      {
+        "word": "tymianek",
+        "hint": "Thyme"
+      },
+      {
+        "word": "papryka",
+        "hint": "Paprika / Pepper"
+      },
+      {
+        "word": "kminek",
+        "hint": "Caraway"
+      },
+      {
+        "word": "koperek",
+        "hint": "Dill"
+      },
+      {
+        "word": "rozmaryn",
+        "hint": "Rosemary"
+      },
+      {
+        "word": "szałwia",
+        "hint": "Sage"
+      },
+      {
+        "word": "kurkuma",
+        "hint": "Turmeric"
+      },
+      {
+        "word": "goździki",
+        "hint": "Cloves"
+      },
+      {
+        "word": "majeranek",
+        "hint": "Marjoram"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Dairy Products",
+    "description": "Dairy products vocabulary in Polish",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mleko",
+        "hint": "Milk"
+      },
+      {
+        "word": "masło",
+        "hint": "Butter"
+      },
+      {
+        "word": "ser",
+        "hint": "Cheese"
+      },
+      {
+        "word": "jogurt",
+        "hint": "Yogurt"
+      },
+      {
+        "word": "śmietana",
+        "hint": "Cream / Sour cream"
+      },
+      {
+        "word": "twaróg",
+        "hint": "Cottage cheese / Curd"
+      },
+      {
+        "word": "kefir",
+        "hint": "Kefir"
+      },
+      {
+        "word": "maślanka",
+        "hint": "Buttermilk"
+      },
+      {
+        "word": "lody",
+        "hint": "Ice cream"
+      },
+      {
+        "word": "serek",
+        "hint": "Cheese snack / Fromage"
+      },
+      {
+        "word": "mozzarella",
+        "hint": "Mozzarella"
+      },
+      {
+        "word": "parmezan",
+        "hint": "Parmesan"
+      },
+      {
+        "word": "brie",
+        "hint": "Brie cheese"
+      },
+      {
+        "word": "śmietanka",
+        "hint": "Whipping cream"
+      },
+      {
+        "word": "mleczarnia",
+        "hint": "Dairy (shop/factory)"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Meat & Poultry",
+    "description": "Meat and poultry vocabulary in Polish",
+    "iconName": "fork.knife",
+    "color": "#991b1b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "mięso",
+        "hint": "Meat"
+      },
+      {
+        "word": "kurczak",
+        "hint": "Chicken"
+      },
+      {
+        "word": "wołowina",
+        "hint": "Beef"
+      },
+      {
+        "word": "wieprzowina",
+        "hint": "Pork"
+      },
+      {
+        "word": "indyk",
+        "hint": "Turkey"
+      },
+      {
+        "word": "kiełbasa",
+        "hint": "Sausage"
+      },
+      {
+        "word": "szynka",
+        "hint": "Ham"
+      },
+      {
+        "word": "jagnięcina",
+        "hint": "Lamb (meat)"
+      },
+      {
+        "word": "kotlet",
+        "hint": "Cutlet / Chop"
+      },
+      {
+        "word": "befsztyk",
+        "hint": "Steak / Beefsteak"
+      },
+      {
+        "word": "boczek",
+        "hint": "Bacon / Belly"
+      },
+      {
+        "word": "kaczka",
+        "hint": "Duck"
+      },
+      {
+        "word": "wędlina",
+        "hint": "Cold cuts / Deli meat"
+      },
+      {
+        "word": "klopsiki",
+        "hint": "Meatballs"
+      },
+      {
+        "word": "pierś",
+        "hint": "Breast (meat cut)"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Pets",
+    "description": "Pet animals vocabulary in Polish",
+    "iconName": "pawprint",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "pies",
+        "hint": "Dog"
+      },
+      {
+        "word": "kot",
+        "hint": "Cat"
+      },
+      {
+        "word": "rybka",
+        "hint": "Fish (pet)"
+      },
+      {
+        "word": "chomik",
+        "hint": "Hamster"
+      },
+      {
+        "word": "królik",
+        "hint": "Rabbit"
+      },
+      {
+        "word": "papuga",
+        "hint": "Parrot"
+      },
+      {
+        "word": "żółw",
+        "hint": "Turtle / Tortoise"
+      },
+      {
+        "word": "świnka",
+        "hint": "Guinea pig"
+      },
+      {
+        "word": "klatka",
+        "hint": "Cage"
+      },
+      {
+        "word": "smycz",
+        "hint": "Leash"
+      },
+      {
+        "word": "karma",
+        "hint": "Pet food"
+      },
+      {
+        "word": "weterynarz",
+        "hint": "Veterinarian"
+      },
+      {
+        "word": "szczeniak",
+        "hint": "Puppy"
+      },
+      {
+        "word": "kociak",
+        "hint": "Kitten"
+      },
+      {
+        "word": "akwarium",
+        "hint": "Aquarium"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Birds",
+    "description": "Bird species vocabulary in Polish",
+    "iconName": "bird",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "orzeł",
+        "hint": "Eagle"
+      },
+      {
+        "word": "gołąb",
+        "hint": "Pigeon / Dove"
+      },
+      {
+        "word": "wróbel",
+        "hint": "Sparrow"
+      },
+      {
+        "word": "sowa",
+        "hint": "Owl"
+      },
+      {
+        "word": "jaskółka",
+        "hint": "Swallow"
+      },
+      {
+        "word": "bocian",
+        "hint": "Stork"
+      },
+      {
+        "word": "łabędź",
+        "hint": "Swan"
+      },
+      {
+        "word": "kanarek",
+        "hint": "Canary"
+      },
+      {
+        "word": "sroka",
+        "hint": "Magpie"
+      },
+      {
+        "word": "sikorka",
+        "hint": "Titmouse / Great tit"
+      },
+      {
+        "word": "sokół",
+        "hint": "Falcon"
+      },
+      {
+        "word": "kruk",
+        "hint": "Raven"
+      },
+      {
+        "word": "czapla",
+        "hint": "Heron"
+      },
+      {
+        "word": "pelikan",
+        "hint": "Pelican"
+      },
+      {
+        "word": "dzięcioł",
+        "hint": "Woodpecker"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Insects",
+    "description": "Insects and bugs vocabulary in Polish",
+    "iconName": "ladybug",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "motyl",
+        "hint": "Butterfly"
+      },
+      {
+        "word": "pszczoła",
+        "hint": "Bee"
+      },
+      {
+        "word": "mrówka",
+        "hint": "Ant"
+      },
+      {
+        "word": "biedronka",
+        "hint": "Ladybug"
+      },
+      {
+        "word": "pająk",
+        "hint": "Spider"
+      },
+      {
+        "word": "mucha",
+        "hint": "Fly"
+      },
+      {
+        "word": "komar",
+        "hint": "Mosquito"
+      },
+      {
+        "word": "ważka",
+        "hint": "Dragonfly"
+      },
+      {
+        "word": "chrząszcz",
+        "hint": "Beetle"
+      },
+      {
+        "word": "osa",
+        "hint": "Wasp"
+      },
+      {
+        "word": "świerszcz",
+        "hint": "Cricket (insect)"
+      },
+      {
+        "word": "gąsienica",
+        "hint": "Caterpillar"
+      },
+      {
+        "word": "ślimak",
+        "hint": "Snail"
+      },
+      {
+        "word": "stonoga",
+        "hint": "Centipede"
+      },
+      {
+        "word": "konik",
+        "hint": "Grasshopper"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Marine Life",
+    "description": "Sea creatures vocabulary in Polish",
+    "iconName": "fish",
+    "color": "#0077b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "wieloryb",
+        "hint": "Whale"
+      },
+      {
+        "word": "delfin",
+        "hint": "Dolphin"
+      },
+      {
+        "word": "rekin",
+        "hint": "Shark"
+      },
+      {
+        "word": "ośmiornica",
+        "hint": "Octopus"
+      },
+      {
+        "word": "meduza",
+        "hint": "Jellyfish"
+      },
+      {
+        "word": "krab",
+        "hint": "Crab"
+      },
+      {
+        "word": "homar",
+        "hint": "Lobster"
+      },
+      {
+        "word": "foka",
+        "hint": "Seal"
+      },
+      {
+        "word": "krewetka",
+        "hint": "Shrimp / Prawn"
+      },
+      {
+        "word": "rozgwiazda",
+        "hint": "Starfish"
+      },
+      {
+        "word": "konik",
+        "hint": "Seahorse"
+      },
+      {
+        "word": "żółw",
+        "hint": "Sea turtle"
+      },
+      {
+        "word": "mors",
+        "hint": "Walrus"
+      },
+      {
+        "word": "kałamarnica",
+        "hint": "Squid"
+      },
+      {
+        "word": "małż",
+        "hint": "Clam / Mussel"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Farm Animals",
+    "description": "Farm animals vocabulary in Polish",
+    "iconName": "hare",
+    "color": "#a16207",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "krowa",
+        "hint": "Cow"
+      },
+      {
+        "word": "koń",
+        "hint": "Horse"
+      },
+      {
+        "word": "świnia",
+        "hint": "Pig"
+      },
+      {
+        "word": "owca",
+        "hint": "Sheep"
+      },
+      {
+        "word": "koza",
+        "hint": "Goat"
+      },
+      {
+        "word": "kura",
+        "hint": "Hen / Chicken"
+      },
+      {
+        "word": "kogut",
+        "hint": "Rooster"
+      },
+      {
+        "word": "kaczka",
+        "hint": "Duck"
+      },
+      {
+        "word": "gęś",
+        "hint": "Goose"
+      },
+      {
+        "word": "osioł",
+        "hint": "Donkey"
+      },
+      {
+        "word": "cielak",
+        "hint": "Calf"
+      },
+      {
+        "word": "baran",
+        "hint": "Ram"
+      },
+      {
+        "word": "źrebak",
+        "hint": "Foal"
+      },
+      {
+        "word": "stodoła",
+        "hint": "Barn"
+      },
+      {
+        "word": "pastwisko",
+        "hint": "Pasture / Meadow"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Feelings & Moods",
+    "description": "Feelings and moods vocabulary in Polish",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "szczęście",
+        "hint": "Happiness"
+      },
+      {
+        "word": "smutek",
+        "hint": "Sadness"
+      },
+      {
+        "word": "złość",
+        "hint": "Anger"
+      },
+      {
+        "word": "strach",
+        "hint": "Fear"
+      },
+      {
+        "word": "nadzieja",
+        "hint": "Hope"
+      },
+      {
+        "word": "zazdrość",
+        "hint": "Jealousy"
+      },
+      {
+        "word": "wstyd",
+        "hint": "Shame / Embarrassment"
+      },
+      {
+        "word": "duma",
+        "hint": "Pride"
+      },
+      {
+        "word": "tęsknota",
+        "hint": "Longing / Nostalgia"
+      },
+      {
+        "word": "spokój",
+        "hint": "Peace / Calm"
+      },
+      {
+        "word": "zaskoczenie",
+        "hint": "Surprise"
+      },
+      {
+        "word": "rozczarowanie",
+        "hint": "Disappointment"
+      },
+      {
+        "word": "ciekawość",
+        "hint": "Curiosity"
+      },
+      {
+        "word": "wdzięczność",
+        "hint": "Gratitude"
+      },
+      {
+        "word": "samotność",
+        "hint": "Loneliness"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Personality",
+    "description": "Personality traits vocabulary in Polish",
+    "iconName": "person.fill",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "odważny",
+        "hint": "Brave / Courageous"
+      },
+      {
+        "word": "skromny",
+        "hint": "Modest / Humble"
+      },
+      {
+        "word": "ambitny",
+        "hint": "Ambitious"
+      },
+      {
+        "word": "cierpliwy",
+        "hint": "Patient"
+      },
+      {
+        "word": "uczciwy",
+        "hint": "Honest"
+      },
+      {
+        "word": "leniwy",
+        "hint": "Lazy"
+      },
+      {
+        "word": "uprzejmy",
+        "hint": "Polite / Kind"
+      },
+      {
+        "word": "pewny",
+        "hint": "Confident / Sure"
+      },
+      {
+        "word": "wrażliwy",
+        "hint": "Sensitive"
+      },
+      {
+        "word": "towarzyski",
+        "hint": "Sociable / Outgoing"
+      },
+      {
+        "word": "twórczy",
+        "hint": "Creative"
+      },
+      {
+        "word": "pracowity",
+        "hint": "Hardworking / Diligent"
+      },
+      {
+        "word": "zazdrosny",
+        "hint": "Jealous / Envious"
+      },
+      {
+        "word": "lojalny",
+        "hint": "Loyal"
+      },
+      {
+        "word": "mądry",
+        "hint": "Wise / Smart"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relationships",
+    "description": "Relationships vocabulary in Polish",
+    "iconName": "heart.fill",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "przyjaciel",
+        "hint": "Friend (male)"
+      },
+      {
+        "word": "przyjaciółka",
+        "hint": "Friend (female)"
+      },
+      {
+        "word": "małżeństwo",
+        "hint": "Marriage"
+      },
+      {
+        "word": "randka",
+        "hint": "Date (romantic)"
+      },
+      {
+        "word": "związek",
+        "hint": "Relationship"
+      },
+      {
+        "word": "miłość",
+        "hint": "Love"
+      },
+      {
+        "word": "zaufanie",
+        "hint": "Trust"
+      },
+      {
+        "word": "szacunek",
+        "hint": "Respect"
+      },
+      {
+        "word": "kłótnia",
+        "hint": "Argument / Quarrel"
+      },
+      {
+        "word": "przeprosiny",
+        "hint": "Apology"
+      },
+      {
+        "word": "zaręczyny",
+        "hint": "Engagement"
+      },
+      {
+        "word": "ślub",
+        "hint": "Wedding"
+      },
+      {
+        "word": "rozwód",
+        "hint": "Divorce"
+      },
+      {
+        "word": "sąsiad",
+        "hint": "Neighbor"
+      },
+      {
+        "word": "kolega",
+        "hint": "Colleague / Buddy"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Communication",
+    "description": "Communication vocabulary in Polish",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "rozmowa",
+        "hint": "Conversation"
+      },
+      {
+        "word": "wiadomość",
+        "hint": "Message"
+      },
+      {
+        "word": "pytanie",
+        "hint": "Question"
+      },
+      {
+        "word": "odpowiedź",
+        "hint": "Answer / Reply"
+      },
+      {
+        "word": "dyskusja",
+        "hint": "Discussion"
+      },
+      {
+        "word": "opinia",
+        "hint": "Opinion"
+      },
+      {
+        "word": "zgoda",
+        "hint": "Agreement / Consent"
+      },
+      {
+        "word": "sprzeciw",
+        "hint": "Objection / Protest"
+      },
+      {
+        "word": "wyjaśnienie",
+        "hint": "Explanation"
+      },
+      {
+        "word": "propozycja",
+        "hint": "Proposal / Suggestion"
+      },
+      {
+        "word": "powitanie",
+        "hint": "Greeting"
+      },
+      {
+        "word": "pożegnanie",
+        "hint": "Farewell / Goodbye"
+      },
+      {
+        "word": "prośba",
+        "hint": "Request"
+      },
+      {
+        "word": "odmowa",
+        "hint": "Refusal / Rejection"
+      },
+      {
+        "word": "skarga",
+        "hint": "Complaint"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gestures & Body Language",
+    "description": "Gestures and body language in Polish",
+    "iconName": "hand.raised",
+    "color": "#d97706",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "uścisk",
+        "hint": "Handshake / Hug"
+      },
+      {
+        "word": "uśmiech",
+        "hint": "Smile"
+      },
+      {
+        "word": "skinienie",
+        "hint": "Nod"
+      },
+      {
+        "word": "kiwanie",
+        "hint": "Nodding / Waving"
+      },
+      {
+        "word": "machanie",
+        "hint": "Waving (hand)"
+      },
+      {
+        "word": "klaskanie",
+        "hint": "Clapping"
+      },
+      {
+        "word": "mruganie",
+        "hint": "Winking / Blinking"
+      },
+      {
+        "word": "wzruszanie",
+        "hint": "Shrugging"
+      },
+      {
+        "word": "grożenie",
+        "hint": "Threatening (gesture)"
+      },
+      {
+        "word": "wskazywanie",
+        "hint": "Pointing"
+      },
+      {
+        "word": "ukłon",
+        "hint": "Bow"
+      },
+      {
+        "word": "pocałunek",
+        "hint": "Kiss"
+      },
+      {
+        "word": "objęcie",
+        "hint": "Embrace / Hug"
+      },
+      {
+        "word": "tupanie",
+        "hint": "Stomping / Stamping"
+      },
+      {
+        "word": "przytulanie",
+        "hint": "Cuddling / Hugging"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architecture",
+    "description": "Architecture vocabulary in Polish",
+    "iconName": "building.2",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "budynek",
+        "hint": "Building"
+      },
+      {
+        "word": "kolumna",
+        "hint": "Column / Pillar"
+      },
+      {
+        "word": "fasada",
+        "hint": "Facade"
+      },
+      {
+        "word": "dach",
+        "hint": "Roof"
+      },
+      {
+        "word": "fundament",
+        "hint": "Foundation"
+      },
+      {
+        "word": "balkon",
+        "hint": "Balcony"
+      },
+      {
+        "word": "katedra",
+        "hint": "Cathedral"
+      },
+      {
+        "word": "wieża",
+        "hint": "Tower"
+      },
+      {
+        "word": "kopuła",
+        "hint": "Dome / Cupola"
+      },
+      {
+        "word": "schody",
+        "hint": "Stairs / Staircase"
+      },
+      {
+        "word": "piwnica",
+        "hint": "Basement / Cellar"
+      },
+      {
+        "word": "strych",
+        "hint": "Attic"
+      },
+      {
+        "word": "projekt",
+        "hint": "Design / Project"
+      },
+      {
+        "word": "architekt",
+        "hint": "Architect"
+      },
+      {
+        "word": "elewacja",
+        "hint": "Elevation / Facade"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Construction",
+    "description": "Construction vocabulary in Polish",
+    "iconName": "hammer",
+    "color": "#ca8a04",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "budowa",
+        "hint": "Construction site"
+      },
+      {
+        "word": "cegła",
+        "hint": "Brick"
+      },
+      {
+        "word": "cement",
+        "hint": "Cement"
+      },
+      {
+        "word": "beton",
+        "hint": "Concrete"
+      },
+      {
+        "word": "dźwig",
+        "hint": "Crane"
+      },
+      {
+        "word": "rusztowanie",
+        "hint": "Scaffolding"
+      },
+      {
+        "word": "murarz",
+        "hint": "Bricklayer / Mason"
+      },
+      {
+        "word": "malarz",
+        "hint": "Painter (decorator)"
+      },
+      {
+        "word": "stolarz",
+        "hint": "Carpenter"
+      },
+      {
+        "word": "tynk",
+        "hint": "Plaster / Render"
+      },
+      {
+        "word": "izolacja",
+        "hint": "Insulation"
+      },
+      {
+        "word": "hełm",
+        "hint": "Hard hat / Helmet"
+      },
+      {
+        "word": "piasek",
+        "hint": "Sand"
+      },
+      {
+        "word": "żwir",
+        "hint": "Gravel"
+      },
+      {
+        "word": "belka",
+        "hint": "Beam / Girder"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Electricity",
+    "description": "Electrical vocabulary in Polish",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "prąd",
+        "hint": "Electricity / Current"
+      },
+      {
+        "word": "gniazdko",
+        "hint": "Socket / Outlet"
+      },
+      {
+        "word": "kabel",
+        "hint": "Cable / Wire"
+      },
+      {
+        "word": "żarówka",
+        "hint": "Light bulb"
+      },
+      {
+        "word": "bezpiecznik",
+        "hint": "Fuse"
+      },
+      {
+        "word": "włącznik",
+        "hint": "Switch"
+      },
+      {
+        "word": "napięcie",
+        "hint": "Voltage"
+      },
+      {
+        "word": "bateria",
+        "hint": "Battery"
+      },
+      {
+        "word": "generator",
+        "hint": "Generator"
+      },
+      {
+        "word": "transformator",
+        "hint": "Transformer"
+      },
+      {
+        "word": "elektryk",
+        "hint": "Electrician"
+      },
+      {
+        "word": "przedłużacz",
+        "hint": "Extension cord"
+      },
+      {
+        "word": "izolacja",
+        "hint": "Insulation (electrical)"
+      },
+      {
+        "word": "obwód",
+        "hint": "Circuit"
+      },
+      {
+        "word": "licznik",
+        "hint": "Meter (electricity)"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Plumbing",
+    "description": "Plumbing vocabulary in Polish",
+    "iconName": "wrench",
+    "color": "#0284c7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "rura",
+        "hint": "Pipe"
+      },
+      {
+        "word": "kran",
+        "hint": "Faucet / Tap"
+      },
+      {
+        "word": "hydraulik",
+        "hint": "Plumber"
+      },
+      {
+        "word": "odpływ",
+        "hint": "Drain"
+      },
+      {
+        "word": "zawór",
+        "hint": "Valve"
+      },
+      {
+        "word": "wyciek",
+        "hint": "Leak"
+      },
+      {
+        "word": "bojler",
+        "hint": "Boiler / Water heater"
+      },
+      {
+        "word": "kanalizacja",
+        "hint": "Sewage / Drainage"
+      },
+      {
+        "word": "pompa",
+        "hint": "Pump"
+      },
+      {
+        "word": "syfon",
+        "hint": "Siphon / Trap"
+      },
+      {
+        "word": "ciśnienie",
+        "hint": "Pressure"
+      },
+      {
+        "word": "zlew",
+        "hint": "Sink (kitchen)"
+      },
+      {
+        "word": "uszczelka",
+        "hint": "Gasket / Seal"
+      },
+      {
+        "word": "spłuczka",
+        "hint": "Flush / Cistern"
+      },
+      {
+        "word": "filtr",
+        "hint": "Filter"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Gardening Tools",
+    "description": "Gardening tools vocabulary in Polish",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "łopata",
+        "hint": "Shovel / Spade"
+      },
+      {
+        "word": "grabie",
+        "hint": "Rake"
+      },
+      {
+        "word": "konewka",
+        "hint": "Watering can"
+      },
+      {
+        "word": "sekator",
+        "hint": "Pruning shears"
+      },
+      {
+        "word": "taczka",
+        "hint": "Wheelbarrow"
+      },
+      {
+        "word": "motyka",
+        "hint": "Hoe"
+      },
+      {
+        "word": "rękawice",
+        "hint": "Gloves"
+      },
+      {
+        "word": "wąż",
+        "hint": "Garden hose"
+      },
+      {
+        "word": "kosiarka",
+        "hint": "Lawn mower"
+      },
+      {
+        "word": "nożyce",
+        "hint": "Shears / Clippers"
+      },
+      {
+        "word": "siewnik",
+        "hint": "Seeder / Spreader"
+      },
+      {
+        "word": "kosz",
+        "hint": "Basket / Bin"
+      },
+      {
+        "word": "szpadel",
+        "hint": "Spade (narrow)"
+      },
+      {
+        "word": "piła",
+        "hint": "Saw"
+      },
+      {
+        "word": "opryskiwacz",
+        "hint": "Sprayer"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medicine",
+    "description": "Medical vocabulary in Polish",
+    "iconName": "stethoscope",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "lekarz",
+        "hint": "Doctor / Physician"
+      },
+      {
+        "word": "szpital",
+        "hint": "Hospital"
+      },
+      {
+        "word": "diagnoza",
+        "hint": "Diagnosis"
+      },
+      {
+        "word": "operacja",
+        "hint": "Surgery / Operation"
+      },
+      {
+        "word": "recepta",
+        "hint": "Prescription"
+      },
+      {
+        "word": "zastrzyk",
+        "hint": "Injection / Shot"
+      },
+      {
+        "word": "badanie",
+        "hint": "Examination / Test"
+      },
+      {
+        "word": "pielęgniarka",
+        "hint": "Nurse"
+      },
+      {
+        "word": "choroba",
+        "hint": "Disease / Illness"
+      },
+      {
+        "word": "leczenie",
+        "hint": "Treatment / Therapy"
+      },
+      {
+        "word": "objaw",
+        "hint": "Symptom"
+      },
+      {
+        "word": "ciśnienie",
+        "hint": "Blood pressure"
+      },
+      {
+        "word": "szczepionka",
+        "hint": "Vaccine"
+      },
+      {
+        "word": "ambulans",
+        "hint": "Ambulance"
+      },
+      {
+        "word": "rentgen",
+        "hint": "X-ray"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Pharmacy",
+    "description": "Pharmacy and medication vocabulary in Polish",
+    "iconName": "pills",
+    "color": "#22c55e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "apteka",
+        "hint": "Pharmacy / Drugstore"
+      },
+      {
+        "word": "tabletka",
+        "hint": "Tablet / Pill"
+      },
+      {
+        "word": "syrop",
+        "hint": "Syrup"
+      },
+      {
+        "word": "maść",
+        "hint": "Ointment / Cream"
+      },
+      {
+        "word": "bandaż",
+        "hint": "Bandage"
+      },
+      {
+        "word": "plaster",
+        "hint": "Band-aid / Plaster"
+      },
+      {
+        "word": "krople",
+        "hint": "Drops (medication)"
+      },
+      {
+        "word": "dawka",
+        "hint": "Dose / Dosage"
+      },
+      {
+        "word": "antybiotyk",
+        "hint": "Antibiotic"
+      },
+      {
+        "word": "witamina",
+        "hint": "Vitamin"
+      },
+      {
+        "word": "aspiryna",
+        "hint": "Aspirin"
+      },
+      {
+        "word": "termometr",
+        "hint": "Thermometer"
+      },
+      {
+        "word": "alergia",
+        "hint": "Allergy"
+      },
+      {
+        "word": "farmaceuta",
+        "hint": "Pharmacist"
+      },
+      {
+        "word": "suplementy",
+        "hint": "Supplements"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Fitness and exercise vocabulary in Polish",
+    "iconName": "figure.run",
+    "color": "#f97316",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "siłownia",
+        "hint": "Gym"
+      },
+      {
+        "word": "ćwiczenie",
+        "hint": "Exercise"
+      },
+      {
+        "word": "trening",
+        "hint": "Training / Workout"
+      },
+      {
+        "word": "rozgrzewka",
+        "hint": "Warm-up"
+      },
+      {
+        "word": "pompki",
+        "hint": "Push-ups"
+      },
+      {
+        "word": "przysiady",
+        "hint": "Squats"
+      },
+      {
+        "word": "bieganie",
+        "hint": "Running / Jogging"
+      },
+      {
+        "word": "hantla",
+        "hint": "Dumbbell"
+      },
+      {
+        "word": "brzuszki",
+        "hint": "Sit-ups / Crunches"
+      },
+      {
+        "word": "trener",
+        "hint": "Trainer / Coach"
+      },
+      {
+        "word": "wytrzymałość",
+        "hint": "Endurance / Stamina"
+      },
+      {
+        "word": "mięśnie",
+        "hint": "Muscles"
+      },
+      {
+        "word": "bieżnia",
+        "hint": "Treadmill"
+      },
+      {
+        "word": "stretching",
+        "hint": "Stretching"
+      },
+      {
+        "word": "kondycja",
+        "hint": "Fitness / Condition"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Yoga & Meditation",
+    "description": "Yoga and meditation vocabulary in Polish",
+    "iconName": "figure.mind.and.body",
+    "color": "#a855f7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "joga",
+        "hint": "Yoga"
+      },
+      {
+        "word": "medytacja",
+        "hint": "Meditation"
+      },
+      {
+        "word": "oddech",
+        "hint": "Breath / Breathing"
+      },
+      {
+        "word": "harmonia",
+        "hint": "Harmony"
+      },
+      {
+        "word": "pozycja",
+        "hint": "Position / Pose"
+      },
+      {
+        "word": "równowaga",
+        "hint": "Balance"
+      },
+      {
+        "word": "relaksacja",
+        "hint": "Relaxation"
+      },
+      {
+        "word": "mantra",
+        "hint": "Mantra"
+      },
+      {
+        "word": "elastyczność",
+        "hint": "Flexibility"
+      },
+      {
+        "word": "świadomość",
+        "hint": "Awareness / Mindfulness"
+      },
+      {
+        "word": "energia",
+        "hint": "Energy"
+      },
+      {
+        "word": "napięcie",
+        "hint": "Tension"
+      },
+      {
+        "word": "cisza",
+        "hint": "Silence / Quiet"
+      },
+      {
+        "word": "spokój",
+        "hint": "Peace / Tranquility"
+      },
+      {
+        "word": "mata",
+        "hint": "Mat (yoga)"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Mental Health",
+    "description": "Mental health vocabulary in Polish",
+    "iconName": "brain.head.profile",
+    "color": "#06b6d4",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "stres",
+        "hint": "Stress"
+      },
+      {
+        "word": "terapia",
+        "hint": "Therapy"
+      },
+      {
+        "word": "psycholog",
+        "hint": "Psychologist"
+      },
+      {
+        "word": "depresja",
+        "hint": "Depression"
+      },
+      {
+        "word": "lęk",
+        "hint": "Anxiety"
+      },
+      {
+        "word": "emocje",
+        "hint": "Emotions"
+      },
+      {
+        "word": "samoocena",
+        "hint": "Self-esteem"
+      },
+      {
+        "word": "wypalenie",
+        "hint": "Burnout"
+      },
+      {
+        "word": "motywacja",
+        "hint": "Motivation"
+      },
+      {
+        "word": "wsparcie",
+        "hint": "Support"
+      },
+      {
+        "word": "trauma",
+        "hint": "Trauma"
+      },
+      {
+        "word": "odporność",
+        "hint": "Resilience"
+      },
+      {
+        "word": "nawyki",
+        "hint": "Habits"
+      },
+      {
+        "word": "kryzys",
+        "hint": "Crisis"
+      },
+      {
+        "word": "psychiatra",
+        "hint": "Psychiatrist"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Vehicles",
+    "description": "Vehicles vocabulary in Polish",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "samochód",
+        "hint": "Car"
+      },
+      {
+        "word": "autobus",
+        "hint": "Bus"
+      },
+      {
+        "word": "ciężarówka",
+        "hint": "Truck / Lorry"
+      },
+      {
+        "word": "motocykl",
+        "hint": "Motorcycle"
+      },
+      {
+        "word": "rower",
+        "hint": "Bicycle"
+      },
+      {
+        "word": "tramwaj",
+        "hint": "Tram / Streetcar"
+      },
+      {
+        "word": "taksówka",
+        "hint": "Taxi / Cab"
+      },
+      {
+        "word": "karetka",
+        "hint": "Ambulance"
+      },
+      {
+        "word": "hulajnoga",
+        "hint": "Scooter"
+      },
+      {
+        "word": "furgonetka",
+        "hint": "Van"
+      },
+      {
+        "word": "kierownica",
+        "hint": "Steering wheel"
+      },
+      {
+        "word": "silnik",
+        "hint": "Engine"
+      },
+      {
+        "word": "hamulec",
+        "hint": "Brake"
+      },
+      {
+        "word": "opona",
+        "hint": "Tire"
+      },
+      {
+        "word": "bagażnik",
+        "hint": "Trunk / Boot"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Aviation",
+    "description": "Aviation vocabulary in Polish",
+    "iconName": "airplane",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "samolot",
+        "hint": "Airplane"
+      },
+      {
+        "word": "lotnisko",
+        "hint": "Airport"
+      },
+      {
+        "word": "pilot",
+        "hint": "Pilot"
+      },
+      {
+        "word": "lądowanie",
+        "hint": "Landing"
+      },
+      {
+        "word": "start",
+        "hint": "Takeoff"
+      },
+      {
+        "word": "stewardessa",
+        "hint": "Flight attendant (f)"
+      },
+      {
+        "word": "turbulencje",
+        "hint": "Turbulence"
+      },
+      {
+        "word": "kokpit",
+        "hint": "Cockpit"
+      },
+      {
+        "word": "skrzydło",
+        "hint": "Wing"
+      },
+      {
+        "word": "odprawa",
+        "hint": "Check-in"
+      },
+      {
+        "word": "pasy",
+        "hint": "Seatbelts"
+      },
+      {
+        "word": "helikopter",
+        "hint": "Helicopter"
+      },
+      {
+        "word": "wieża",
+        "hint": "Control tower"
+      },
+      {
+        "word": "bramka",
+        "hint": "Gate (airport)"
+      },
+      {
+        "word": "bagaż",
+        "hint": "Luggage / Baggage"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Shipping & Maritime",
+    "description": "Shipping and maritime vocabulary in Polish",
+    "iconName": "ferry",
+    "color": "#0077b6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "statek",
+        "hint": "Ship"
+      },
+      {
+        "word": "port",
+        "hint": "Port / Harbor"
+      },
+      {
+        "word": "kapitan",
+        "hint": "Captain"
+      },
+      {
+        "word": "ładunek",
+        "hint": "Cargo / Load"
+      },
+      {
+        "word": "przystań",
+        "hint": "Marina / Dock"
+      },
+      {
+        "word": "żeglarz",
+        "hint": "Sailor"
+      },
+      {
+        "word": "kontener",
+        "hint": "Container"
+      },
+      {
+        "word": "łódź",
+        "hint": "Boat"
+      },
+      {
+        "word": "prom",
+        "hint": "Ferry"
+      },
+      {
+        "word": "nawigacja",
+        "hint": "Navigation"
+      },
+      {
+        "word": "kotwica",
+        "hint": "Anchor"
+      },
+      {
+        "word": "maszt",
+        "hint": "Mast"
+      },
+      {
+        "word": "pokład",
+        "hint": "Deck"
+      },
+      {
+        "word": "fala",
+        "hint": "Wave"
+      },
+      {
+        "word": "rejs",
+        "hint": "Cruise / Voyage"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Cycling",
+    "description": "Cycling vocabulary in Polish",
+    "iconName": "bicycle",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "rower",
+        "hint": "Bicycle / Bike"
+      },
+      {
+        "word": "pedał",
+        "hint": "Pedal"
+      },
+      {
+        "word": "siodełko",
+        "hint": "Saddle / Seat"
+      },
+      {
+        "word": "łańcuch",
+        "hint": "Chain (bike)"
+      },
+      {
+        "word": "kask",
+        "hint": "Helmet"
+      },
+      {
+        "word": "pompka",
+        "hint": "Pump (air)"
+      },
+      {
+        "word": "przerzutka",
+        "hint": "Derailleur / Gear"
+      },
+      {
+        "word": "hamulec",
+        "hint": "Brake"
+      },
+      {
+        "word": "szprycha",
+        "hint": "Spoke"
+      },
+      {
+        "word": "koło",
+        "hint": "Wheel"
+      },
+      {
+        "word": "dętka",
+        "hint": "Inner tube"
+      },
+      {
+        "word": "kierownica",
+        "hint": "Handlebars"
+      },
+      {
+        "word": "światło",
+        "hint": "Light (bike)"
+      },
+      {
+        "word": "dzwonek",
+        "hint": "Bell"
+      },
+      {
+        "word": "błotnik",
+        "hint": "Fender / Mudguard"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Trains & Rail",
+    "description": "Train and railway vocabulary in Polish",
+    "iconName": "tram",
+    "color": "#b91c1c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pociąg",
+        "hint": "Train"
+      },
+      {
+        "word": "dworzec",
+        "hint": "Train station"
+      },
+      {
+        "word": "peron",
+        "hint": "Platform"
+      },
+      {
+        "word": "wagon",
+        "hint": "Carriage / Car"
+      },
+      {
+        "word": "rozkład",
+        "hint": "Timetable / Schedule"
+      },
+      {
+        "word": "bilet",
+        "hint": "Ticket"
+      },
+      {
+        "word": "konduktor",
+        "hint": "Conductor"
+      },
+      {
+        "word": "locomotywa",
+        "hint": "Locomotive"
+      },
+      {
+        "word": "przesiadka",
+        "hint": "Transfer / Connection"
+      },
+      {
+        "word": "kasownik",
+        "hint": "Ticket validator"
+      },
+      {
+        "word": "opóźnienie",
+        "hint": "Delay"
+      },
+      {
+        "word": "przedział",
+        "hint": "Compartment"
+      },
+      {
+        "word": "tory",
+        "hint": "Tracks / Rails"
+      },
+      {
+        "word": "maszynista",
+        "hint": "Train driver"
+      },
+      {
+        "word": "kuszetka",
+        "hint": "Sleeper / Berth"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Mathematics",
+    "description": "Math vocabulary in Polish",
+    "iconName": "x.squareroot",
+    "color": "#4f46e5",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "dodawanie",
+        "hint": "Addition"
+      },
+      {
+        "word": "odejmowanie",
+        "hint": "Subtraction"
+      },
+      {
+        "word": "mnożenie",
+        "hint": "Multiplication"
+      },
+      {
+        "word": "dzielenie",
+        "hint": "Division"
+      },
+      {
+        "word": "ułamek",
+        "hint": "Fraction"
+      },
+      {
+        "word": "procent",
+        "hint": "Percent"
+      },
+      {
+        "word": "równanie",
+        "hint": "Equation"
+      },
+      {
+        "word": "trójkąt",
+        "hint": "Triangle"
+      },
+      {
+        "word": "kwadrat",
+        "hint": "Square"
+      },
+      {
+        "word": "koło",
+        "hint": "Circle"
+      },
+      {
+        "word": "kąt",
+        "hint": "Angle"
+      },
+      {
+        "word": "objętość",
+        "hint": "Volume"
+      },
+      {
+        "word": "średnia",
+        "hint": "Average / Mean"
+      },
+      {
+        "word": "geometria",
+        "hint": "Geometry"
+      },
+      {
+        "word": "algebra",
+        "hint": "Algebra"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Physics",
+    "description": "Physics vocabulary in Polish",
+    "iconName": "atom",
+    "color": "#0891b2",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "fizyka",
+        "hint": "Physics"
+      },
+      {
+        "word": "grawitacja",
+        "hint": "Gravity"
+      },
+      {
+        "word": "energia",
+        "hint": "Energy"
+      },
+      {
+        "word": "siła",
+        "hint": "Force"
+      },
+      {
+        "word": "prędkość",
+        "hint": "Speed / Velocity"
+      },
+      {
+        "word": "masa",
+        "hint": "Mass"
+      },
+      {
+        "word": "ciepło",
+        "hint": "Heat"
+      },
+      {
+        "word": "światło",
+        "hint": "Light"
+      },
+      {
+        "word": "dźwięk",
+        "hint": "Sound"
+      },
+      {
+        "word": "magnes",
+        "hint": "Magnet"
+      },
+      {
+        "word": "elektron",
+        "hint": "Electron"
+      },
+      {
+        "word": "proton",
+        "hint": "Proton"
+      },
+      {
+        "word": "atom",
+        "hint": "Atom"
+      },
+      {
+        "word": "tarcie",
+        "hint": "Friction"
+      },
+      {
+        "word": "ciśnienie",
+        "hint": "Pressure"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemistry",
+    "description": "Chemistry vocabulary in Polish",
+    "iconName": "flask",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "chemia",
+        "hint": "Chemistry"
+      },
+      {
+        "word": "pierwiastek",
+        "hint": "Element (chemical)"
+      },
+      {
+        "word": "cząsteczka",
+        "hint": "Molecule"
+      },
+      {
+        "word": "reakcja",
+        "hint": "Reaction"
+      },
+      {
+        "word": "roztwór",
+        "hint": "Solution"
+      },
+      {
+        "word": "kwas",
+        "hint": "Acid"
+      },
+      {
+        "word": "zasada",
+        "hint": "Base / Alkali"
+      },
+      {
+        "word": "związek",
+        "hint": "Compound"
+      },
+      {
+        "word": "probówka",
+        "hint": "Test tube"
+      },
+      {
+        "word": "laboratorium",
+        "hint": "Laboratory"
+      },
+      {
+        "word": "wodór",
+        "hint": "Hydrogen"
+      },
+      {
+        "word": "tlen",
+        "hint": "Oxygen"
+      },
+      {
+        "word": "węgiel",
+        "hint": "Carbon"
+      },
+      {
+        "word": "mieszanina",
+        "hint": "Mixture"
+      },
+      {
+        "word": "katalizator",
+        "hint": "Catalyst"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biology",
+    "description": "Biology vocabulary in Polish",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "biologia",
+        "hint": "Biology"
+      },
+      {
+        "word": "komórka",
+        "hint": "Cell"
+      },
+      {
+        "word": "organizm",
+        "hint": "Organism"
+      },
+      {
+        "word": "ewolucja",
+        "hint": "Evolution"
+      },
+      {
+        "word": "gatunek",
+        "hint": "Species"
+      },
+      {
+        "word": "ekosystem",
+        "hint": "Ecosystem"
+      },
+      {
+        "word": "bakteria",
+        "hint": "Bacterium"
+      },
+      {
+        "word": "wirus",
+        "hint": "Virus"
+      },
+      {
+        "word": "fotosynteza",
+        "hint": "Photosynthesis"
+      },
+      {
+        "word": "siedlisko",
+        "hint": "Habitat"
+      },
+      {
+        "word": "mikroskop",
+        "hint": "Microscope"
+      },
+      {
+        "word": "genetyka",
+        "hint": "Genetics"
+      },
+      {
+        "word": "oddychanie",
+        "hint": "Respiration"
+      },
+      {
+        "word": "metabolizm",
+        "hint": "Metabolism"
+      },
+      {
+        "word": "tkanki",
+        "hint": "Tissues"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Science",
+    "description": "General science vocabulary in Polish",
+    "iconName": "graduationcap",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "nauka",
+        "hint": "Science"
+      },
+      {
+        "word": "eksperyment",
+        "hint": "Experiment"
+      },
+      {
+        "word": "hipoteza",
+        "hint": "Hypothesis"
+      },
+      {
+        "word": "badanie",
+        "hint": "Research / Study"
+      },
+      {
+        "word": "teoria",
+        "hint": "Theory"
+      },
+      {
+        "word": "odkrycie",
+        "hint": "Discovery"
+      },
+      {
+        "word": "wynalazek",
+        "hint": "Invention"
+      },
+      {
+        "word": "naukowiec",
+        "hint": "Scientist"
+      },
+      {
+        "word": "dowód",
+        "hint": "Evidence / Proof"
+      },
+      {
+        "word": "obserwacja",
+        "hint": "Observation"
+      },
+      {
+        "word": "analiza",
+        "hint": "Analysis"
+      },
+      {
+        "word": "przyroda",
+        "hint": "Natural science"
+      },
+      {
+        "word": "technologia",
+        "hint": "Technology"
+      },
+      {
+        "word": "postęp",
+        "hint": "Progress"
+      },
+      {
+        "word": "innowacja",
+        "hint": "Innovation"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festivals",
+    "description": "Festival vocabulary in Polish",
+    "iconName": "party.popper",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "festiwal",
+        "hint": "Festival"
+      },
+      {
+        "word": "koncert",
+        "hint": "Concert"
+      },
+      {
+        "word": "karnawał",
+        "hint": "Carnival"
+      },
+      {
+        "word": "parada",
+        "hint": "Parade"
+      },
+      {
+        "word": "fajerwerki",
+        "hint": "Fireworks"
+      },
+      {
+        "word": "jarmark",
+        "hint": "Fair / Market"
+      },
+      {
+        "word": "scena",
+        "hint": "Stage"
+      },
+      {
+        "word": "tłum",
+        "hint": "Crowd"
+      },
+      {
+        "word": "występ",
+        "hint": "Performance"
+      },
+      {
+        "word": "zabawa",
+        "hint": "Fun / Party"
+      },
+      {
+        "word": "atrakcja",
+        "hint": "Attraction"
+      },
+      {
+        "word": "dekoracja",
+        "hint": "Decoration"
+      },
+      {
+        "word": "kiermasz",
+        "hint": "Bazaar / Craft fair"
+      },
+      {
+        "word": "impreza",
+        "hint": "Event / Party"
+      },
+      {
+        "word": "bilet",
+        "hint": "Ticket (entry)"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Traditions",
+    "description": "Cultural traditions vocabulary in Polish",
+    "iconName": "sparkles",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "tradycja",
+        "hint": "Tradition"
+      },
+      {
+        "word": "zwyczaj",
+        "hint": "Custom / Habit"
+      },
+      {
+        "word": "obrzęd",
+        "hint": "Ritual / Rite"
+      },
+      {
+        "word": "wigilia",
+        "hint": "Christmas Eve"
+      },
+      {
+        "word": "wielkanoc",
+        "hint": "Easter"
+      },
+      {
+        "word": "opłatek",
+        "hint": "Christmas wafer"
+      },
+      {
+        "word": "kolęda",
+        "hint": "Christmas carol"
+      },
+      {
+        "word": "pisanka",
+        "hint": "Easter egg (decorated)"
+      },
+      {
+        "word": "choinka",
+        "hint": "Christmas tree"
+      },
+      {
+        "word": "dziedzictwo",
+        "hint": "Heritage"
+      },
+      {
+        "word": "folkior",
+        "hint": "Folklore"
+      },
+      {
+        "word": "tłusty",
+        "hint": "Fat (as in Fat Thursday)"
+      },
+      {
+        "word": "dożynki",
+        "hint": "Harvest festival"
+      },
+      {
+        "word": "szopka",
+        "hint": "Nativity scene"
+      },
+      {
+        "word": "gwiazdka",
+        "hint": "Christmas (colloquial)"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Weddings",
+    "description": "Wedding vocabulary in Polish",
+    "iconName": "heart.circle",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "wesele",
+        "hint": "Wedding reception"
+      },
+      {
+        "word": "ślub",
+        "hint": "Wedding ceremony"
+      },
+      {
+        "word": "panna",
+        "hint": "Bride (panna młoda)"
+      },
+      {
+        "word": "pan",
+        "hint": "Groom (pan młody)"
+      },
+      {
+        "word": "obrączka",
+        "hint": "Wedding ring"
+      },
+      {
+        "word": "bukiet",
+        "hint": "Bouquet"
+      },
+      {
+        "word": "suknia",
+        "hint": "Gown / Dress"
+      },
+      {
+        "word": "drużba",
+        "hint": "Best man"
+      },
+      {
+        "word": "druhna",
+        "hint": "Bridesmaid"
+      },
+      {
+        "word": "przysięga",
+        "hint": "Vow / Oath"
+      },
+      {
+        "word": "kościół",
+        "hint": "Church"
+      },
+      {
+        "word": "przyjęcie",
+        "hint": "Reception / Party"
+      },
+      {
+        "word": "tort",
+        "hint": "Cake (wedding)"
+      },
+      {
+        "word": "zaproszenie",
+        "hint": "Invitation"
+      },
+      {
+        "word": "rocznica",
+        "hint": "Anniversary"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Holidays",
+    "description": "Holidays vocabulary in Polish",
+    "iconName": "gift",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "wakacje",
+        "hint": "Vacation / Holidays"
+      },
+      {
+        "word": "święto",
+        "hint": "Holiday / Celebration"
+      },
+      {
+        "word": "urlop",
+        "hint": "Leave / Time off"
+      },
+      {
+        "word": "podróż",
+        "hint": "Trip / Journey"
+      },
+      {
+        "word": "wyjazd",
+        "hint": "Departure / Trip away"
+      },
+      {
+        "word": "odpoczynek",
+        "hint": "Rest / Relaxation"
+      },
+      {
+        "word": "plaża",
+        "hint": "Beach"
+      },
+      {
+        "word": "zwiedzanie",
+        "hint": "Sightseeing"
+      },
+      {
+        "word": "pamiątka",
+        "hint": "Souvenir"
+      },
+      {
+        "word": "walizka",
+        "hint": "Suitcase"
+      },
+      {
+        "word": "hotel",
+        "hint": "Hotel"
+      },
+      {
+        "word": "kemping",
+        "hint": "Campsite"
+      },
+      {
+        "word": "mapa",
+        "hint": "Map"
+      },
+      {
+        "word": "paszport",
+        "hint": "Passport"
+      },
+      {
+        "word": "przewodnik",
+        "hint": "Guide / Guidebook"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Celebrations",
+    "description": "Celebration vocabulary in Polish",
+    "iconName": "balloon.2",
+    "color": "#d946ef",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "urodziny",
+        "hint": "Birthday"
+      },
+      {
+        "word": "prezent",
+        "hint": "Gift / Present"
+      },
+      {
+        "word": "przyjęcie",
+        "hint": "Party / Reception"
+      },
+      {
+        "word": "balon",
+        "hint": "Balloon"
+      },
+      {
+        "word": "świeczka",
+        "hint": "Candle"
+      },
+      {
+        "word": "imieniny",
+        "hint": "Name day"
+      },
+      {
+        "word": "niespodzianka",
+        "hint": "Surprise"
+      },
+      {
+        "word": "życzenia",
+        "hint": "Wishes / Greetings"
+      },
+      {
+        "word": "gratulacje",
+        "hint": "Congratulations"
+      },
+      {
+        "word": "rocznica",
+        "hint": "Anniversary"
+      },
+      {
+        "word": "toast",
+        "hint": "Toast (cheers)"
+      },
+      {
+        "word": "zabawa",
+        "hint": "Fun / Entertainment"
+      },
+      {
+        "word": "gość",
+        "hint": "Guest"
+      },
+      {
+        "word": "konfetti",
+        "hint": "Confetti"
+      },
+      {
+        "word": "muzyka",
+        "hint": "Music"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Fashion",
+    "description": "Fashion vocabulary in Polish",
+    "iconName": "tshirt",
+    "color": "#be185d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "moda",
+        "hint": "Fashion"
+      },
+      {
+        "word": "styl",
+        "hint": "Style"
+      },
+      {
+        "word": "projektant",
+        "hint": "Designer"
+      },
+      {
+        "word": "kolekcja",
+        "hint": "Collection"
+      },
+      {
+        "word": "pokaz",
+        "hint": "Fashion show"
+      },
+      {
+        "word": "wybieg",
+        "hint": "Runway / Catwalk"
+      },
+      {
+        "word": "trendy",
+        "hint": "Trends"
+      },
+      {
+        "word": "elegancja",
+        "hint": "Elegance"
+      },
+      {
+        "word": "garderoba",
+        "hint": "Wardrobe"
+      },
+      {
+        "word": "dodatki",
+        "hint": "Accessories"
+      },
+      {
+        "word": "marynarka",
+        "hint": "Blazer / Jacket"
+      },
+      {
+        "word": "garnitur",
+        "hint": "Suit"
+      },
+      {
+        "word": "sukienka",
+        "hint": "Dress"
+      },
+      {
+        "word": "buty",
+        "hint": "Shoes"
+      },
+      {
+        "word": "torebka",
+        "hint": "Handbag / Purse"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Textiles & Fabrics",
+    "description": "Textile and fabric vocabulary in Polish",
+    "iconName": "rectangle.stack",
+    "color": "#9333ea",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "bawełna",
+        "hint": "Cotton"
+      },
+      {
+        "word": "jedwab",
+        "hint": "Silk"
+      },
+      {
+        "word": "wełna",
+        "hint": "Wool"
+      },
+      {
+        "word": "len",
+        "hint": "Linen"
+      },
+      {
+        "word": "tkanina",
+        "hint": "Fabric / Textile"
+      },
+      {
+        "word": "materiał",
+        "hint": "Material / Fabric"
+      },
+      {
+        "word": "satyna",
+        "hint": "Satin"
+      },
+      {
+        "word": "aksamit",
+        "hint": "Velvet"
+      },
+      {
+        "word": "dżins",
+        "hint": "Denim / Jeans"
+      },
+      {
+        "word": "koronka",
+        "hint": "Lace"
+      },
+      {
+        "word": "polar",
+        "hint": "Fleece"
+      },
+      {
+        "word": "skóra",
+        "hint": "Leather"
+      },
+      {
+        "word": "zamek",
+        "hint": "Zipper"
+      },
+      {
+        "word": "guzik",
+        "hint": "Button"
+      },
+      {
+        "word": "krawiec",
+        "hint": "Tailor"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Jewelry",
+    "description": "Jewelry vocabulary in Polish",
+    "iconName": "diamond",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "pierścionek",
+        "hint": "Ring"
+      },
+      {
+        "word": "naszyjnik",
+        "hint": "Necklace"
+      },
+      {
+        "word": "bransoletka",
+        "hint": "Bracelet"
+      },
+      {
+        "word": "kolczyki",
+        "hint": "Earrings"
+      },
+      {
+        "word": "broszka",
+        "hint": "Brooch"
+      },
+      {
+        "word": "złoto",
+        "hint": "Gold"
+      },
+      {
+        "word": "srebro",
+        "hint": "Silver"
+      },
+      {
+        "word": "diament",
+        "hint": "Diamond"
+      },
+      {
+        "word": "perła",
+        "hint": "Pearl"
+      },
+      {
+        "word": "szmaragd",
+        "hint": "Emerald"
+      },
+      {
+        "word": "rubin",
+        "hint": "Ruby"
+      },
+      {
+        "word": "szafir",
+        "hint": "Sapphire"
+      },
+      {
+        "word": "zegarek",
+        "hint": "Watch / Wristwatch"
+      },
+      {
+        "word": "wisiorek",
+        "hint": "Pendant"
+      },
+      {
+        "word": "jubiler",
+        "hint": "Jeweler"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Cosmetics",
+    "description": "Cosmetics and beauty vocabulary in Polish",
+    "iconName": "sparkle",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "krem",
+        "hint": "Cream / Lotion"
+      },
+      {
+        "word": "szminka",
+        "hint": "Lipstick"
+      },
+      {
+        "word": "puder",
+        "hint": "Powder"
+      },
+      {
+        "word": "tusz",
+        "hint": "Mascara"
+      },
+      {
+        "word": "perfumy",
+        "hint": "Perfume"
+      },
+      {
+        "word": "podkład",
+        "hint": "Foundation (makeup)"
+      },
+      {
+        "word": "odżywka",
+        "hint": "Conditioner"
+      },
+      {
+        "word": "lakier",
+        "hint": "Nail polish / Varnish"
+      },
+      {
+        "word": "pędzle",
+        "hint": "Brushes (makeup)"
+      },
+      {
+        "word": "balsam",
+        "hint": "Balm / Lotion"
+      },
+      {
+        "word": "peeling",
+        "hint": "Scrub / Exfoliant"
+      },
+      {
+        "word": "maseczka",
+        "hint": "Face mask"
+      },
+      {
+        "word": "bronzer",
+        "hint": "Bronzer"
+      },
+      {
+        "word": "błyszczyk",
+        "hint": "Lip gloss"
+      },
+      {
+        "word": "eyeliner",
+        "hint": "Eyeliner"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Hairstyles",
+    "description": "Hairstyle vocabulary in Polish",
+    "iconName": "scissors",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "fryzura",
+        "hint": "Hairstyle"
+      },
+      {
+        "word": "fryzjer",
+        "hint": "Hairdresser / Barber"
+      },
+      {
+        "word": "strzyżenie",
+        "hint": "Haircut"
+      },
+      {
+        "word": "grzywka",
+        "hint": "Bangs / Fringe"
+      },
+      {
+        "word": "warkocz",
+        "hint": "Braid / Plait"
+      },
+      {
+        "word": "kucyk",
+        "hint": "Ponytail"
+      },
+      {
+        "word": "kok",
+        "hint": "Bun (hairstyle)"
+      },
+      {
+        "word": "loki",
+        "hint": "Curls"
+      },
+      {
+        "word": "farbowanie",
+        "hint": "Dyeing / Coloring"
+      },
+      {
+        "word": "prostowanie",
+        "hint": "Straightening"
+      },
+      {
+        "word": "trwała",
+        "hint": "Perm"
+      },
+      {
+        "word": "pasemka",
+        "hint": "Highlights / Streaks"
+      },
+      {
+        "word": "przedziałek",
+        "hint": "Part / Parting"
+      },
+      {
+        "word": "lokówka",
+        "hint": "Curling iron"
+      },
+      {
+        "word": "prostownica",
+        "hint": "Hair straightener"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Environment",
+    "description": "Environmental vocabulary in Polish",
+    "iconName": "leaf.fill",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "środowisko",
+        "hint": "Environment"
+      },
+      {
+        "word": "ekologia",
+        "hint": "Ecology"
+      },
+      {
+        "word": "przyroda",
+        "hint": "Nature / Wildlife"
+      },
+      {
+        "word": "zanieczyszczenie",
+        "hint": "Pollution"
+      },
+      {
+        "word": "ochrona",
+        "hint": "Protection / Conservation"
+      },
+      {
+        "word": "zasoby",
+        "hint": "Resources"
+      },
+      {
+        "word": "ekosystem",
+        "hint": "Ecosystem"
+      },
+      {
+        "word": "siedlisko",
+        "hint": "Habitat"
+      },
+      {
+        "word": "bioróżnorodność",
+        "hint": "Biodiversity"
+      },
+      {
+        "word": "gleba",
+        "hint": "Soil"
+      },
+      {
+        "word": "emisja",
+        "hint": "Emission"
+      },
+      {
+        "word": "odpady",
+        "hint": "Waste"
+      },
+      {
+        "word": "krajobraz",
+        "hint": "Landscape"
+      },
+      {
+        "word": "wylesianie",
+        "hint": "Deforestation"
+      },
+      {
+        "word": "oczyszczalnia",
+        "hint": "Treatment plant"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recycling",
+    "description": "Recycling and waste management vocabulary in Polish",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "recykling",
+        "hint": "Recycling"
+      },
+      {
+        "word": "segregacja",
+        "hint": "Sorting / Segregation"
+      },
+      {
+        "word": "pojemnik",
+        "hint": "Container / Bin"
+      },
+      {
+        "word": "śmietnik",
+        "hint": "Rubbish bin / Dumpster"
+      },
+      {
+        "word": "kompost",
+        "hint": "Compost"
+      },
+      {
+        "word": "butelka",
+        "hint": "Bottle"
+      },
+      {
+        "word": "puszka",
+        "hint": "Can / Tin"
+      },
+      {
+        "word": "karton",
+        "hint": "Cardboard / Carton"
+      },
+      {
+        "word": "makulatura",
+        "hint": "Waste paper"
+      },
+      {
+        "word": "wysypisko",
+        "hint": "Landfill / Dump"
+      },
+      {
+        "word": "surowce",
+        "hint": "Raw materials"
+      },
+      {
+        "word": "przetwarzanie",
+        "hint": "Processing / Reprocessing"
+      },
+      {
+        "word": "torba",
+        "hint": "Bag"
+      },
+      {
+        "word": "opakowanie",
+        "hint": "Packaging"
+      },
+      {
+        "word": "utylizacja",
+        "hint": "Disposal / Utilization"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energy",
+    "description": "Energy and power vocabulary in Polish",
+    "iconName": "bolt.fill",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "energia",
+        "hint": "Energy"
+      },
+      {
+        "word": "elektrownia",
+        "hint": "Power plant"
+      },
+      {
+        "word": "turbina",
+        "hint": "Turbine"
+      },
+      {
+        "word": "generator",
+        "hint": "Generator"
+      },
+      {
+        "word": "ogniwo",
+        "hint": "Cell (battery/solar)"
+      },
+      {
+        "word": "napięcie",
+        "hint": "Voltage"
+      },
+      {
+        "word": "akumulator",
+        "hint": "Accumulator / Battery"
+      },
+      {
+        "word": "reaktor",
+        "hint": "Reactor"
+      },
+      {
+        "word": "paliwo",
+        "hint": "Fuel"
+      },
+      {
+        "word": "węgiel",
+        "hint": "Coal"
+      },
+      {
+        "word": "wiatrak",
+        "hint": "Windmill / Wind turbine"
+      },
+      {
+        "word": "zasilanie",
+        "hint": "Power supply"
+      },
+      {
+        "word": "moc",
+        "hint": "Power / Capacity"
+      },
+      {
+        "word": "wydajność",
+        "hint": "Efficiency / Output"
+      },
+      {
+        "word": "bioenergia",
+        "hint": "Bioenergy"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Climate",
+    "description": "Climate and weather patterns vocabulary in Polish",
+    "iconName": "thermometer.sun",
+    "color": "#f97316",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "klimat",
+        "hint": "Climate"
+      },
+      {
+        "word": "ocieplenie",
+        "hint": "Warming"
+      },
+      {
+        "word": "temperatura",
+        "hint": "Temperature"
+      },
+      {
+        "word": "atmosfera",
+        "hint": "Atmosphere"
+      },
+      {
+        "word": "susza",
+        "hint": "Drought"
+      },
+      {
+        "word": "powódź",
+        "hint": "Flood"
+      },
+      {
+        "word": "topnienie",
+        "hint": "Melting"
+      },
+      {
+        "word": "lodowiec",
+        "hint": "Glacier"
+      },
+      {
+        "word": "monsun",
+        "hint": "Monsoon"
+      },
+      {
+        "word": "huragan",
+        "hint": "Hurricane"
+      },
+      {
+        "word": "ozon",
+        "hint": "Ozone"
+      },
+      {
+        "word": "prognoza",
+        "hint": "Forecast"
+      },
+      {
+        "word": "wilgotność",
+        "hint": "Humidity"
+      },
+      {
+        "word": "ciśnienie",
+        "hint": "Pressure"
+      },
+      {
+        "word": "opady",
+        "hint": "Precipitation / Rainfall"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Sustainability",
+    "description": "Sustainability and green living vocabulary in Polish",
+    "iconName": "globe.americas.fill",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "zrównoważony",
+        "hint": "Sustainable"
+      },
+      {
+        "word": "odnawialne",
+        "hint": "Renewable"
+      },
+      {
+        "word": "oszczędność",
+        "hint": "Savings / Conservation"
+      },
+      {
+        "word": "fotowoltaika",
+        "hint": "Photovoltaics / Solar power"
+      },
+      {
+        "word": "izolacja",
+        "hint": "Insulation"
+      },
+      {
+        "word": "biogazownia",
+        "hint": "Biogas plant"
+      },
+      {
+        "word": "dotacja",
+        "hint": "Subsidy / Grant"
+      },
+      {
+        "word": "certyfikat",
+        "hint": "Certificate"
+      },
+      {
+        "word": "termomodernizacja",
+        "hint": "Thermal renovation"
+      },
+      {
+        "word": "elektromobilność",
+        "hint": "Electromobility"
+      },
+      {
+        "word": "ślad",
+        "hint": "Footprint (carbon)"
+      },
+      {
+        "word": "sprawiedliwość",
+        "hint": "Justice / Fairness"
+      },
+      {
+        "word": "społeczność",
+        "hint": "Community"
+      },
+      {
+        "word": "innowacja",
+        "hint": "Innovation"
+      },
+      {
+        "word": "świadomość",
+        "hint": "Awareness / Consciousness"
+      }
+    ]
+  }
+]

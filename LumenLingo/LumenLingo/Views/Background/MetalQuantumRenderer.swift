@@ -25,6 +25,7 @@ final class MetalQuantumRenderer: NSObject, MTKViewDelegate {
     var intensity: Float = 1.0
     var speed: Float = 1.0
     var isDarkMode: Bool = true
+    var raveMode: Bool = false
     
     // MARK: - Init
     
@@ -95,7 +96,8 @@ final class MetalQuantumRenderer: NSObject, MTKViewDelegate {
             speed: speed,
             resolution: SIMD2<Float>(Float(size.width), Float(size.height)),
             sceneIndex: Int32(sceneIndex),
-            isDarkMode: isDarkMode ? 1 : 0
+            isDarkMode: isDarkMode ? 1 : 0,
+            raveMode: raveMode ? 1 : 0
         )
         
         guard let commandBuffer = commandQueue.makeCommandBuffer() else { return }
@@ -130,6 +132,7 @@ struct QuantumFlowUniforms {
     var resolution: SIMD2<Float>
     var sceneIndex: Int32
     var isDarkMode: Int32
+    var raveMode: Int32
 }
 
 // MARK: - QuantumFlowScene Metal Index

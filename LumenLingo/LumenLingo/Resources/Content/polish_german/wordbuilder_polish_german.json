@@ -1,0 +1,7002 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Owoce",
+    "description": "Popularne owoce po niemiecku",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Apfel",
+        "hint": "Jabłko"
+      },
+      {
+        "word": "Orange",
+        "hint": "Pomarańcza"
+      },
+      {
+        "word": "Banane",
+        "hint": "Banan"
+      },
+      {
+        "word": "Erdbeere",
+        "hint": "Truskawka"
+      },
+      {
+        "word": "Traube",
+        "hint": "Winogrono"
+      },
+      {
+        "word": "Zitrone",
+        "hint": "Cytryna"
+      },
+      {
+        "word": "Kirsche",
+        "hint": "Wiśnia"
+      },
+      {
+        "word": "Birne",
+        "hint": "Gruszka"
+      },
+      {
+        "word": "Pfirsich",
+        "hint": "Brzoskwinia"
+      },
+      {
+        "word": "Ananas",
+        "hint": "Ananas"
+      },
+      {
+        "word": "Pflaume",
+        "hint": "Śliwka"
+      },
+      {
+        "word": "Mango",
+        "hint": "Mango"
+      },
+      {
+        "word": "Melone",
+        "hint": "Melon"
+      },
+      {
+        "word": "Himbeere",
+        "hint": "Malina"
+      },
+      {
+        "word": "Brombeere",
+        "hint": "Jeżyna"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Warzywa",
+    "description": "Popularne warzywa po niemiecku",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Tomate",
+        "hint": "Pomidor"
+      },
+      {
+        "word": "Zwiebel",
+        "hint": "Cebula"
+      },
+      {
+        "word": "Gurke",
+        "hint": "Ogórek"
+      },
+      {
+        "word": "Kartoffel",
+        "hint": "Ziemniak"
+      },
+      {
+        "word": "Karotte",
+        "hint": "Marchewka"
+      },
+      {
+        "word": "Paprika",
+        "hint": "Papryka"
+      },
+      {
+        "word": "Knoblauch",
+        "hint": "Czosnek"
+      },
+      {
+        "word": "Spinat",
+        "hint": "Szpinak"
+      },
+      {
+        "word": "Brokkoli",
+        "hint": "Brokuł"
+      },
+      {
+        "word": "Erbse",
+        "hint": "Groszek"
+      },
+      {
+        "word": "Bohne",
+        "hint": "Fasola"
+      },
+      {
+        "word": "Salat",
+        "hint": "Sałata"
+      },
+      {
+        "word": "Blumenkohl",
+        "hint": "Kalafior"
+      },
+      {
+        "word": "Pilz",
+        "hint": "Grzyb"
+      },
+      {
+        "word": "Sellerie",
+        "hint": "Seler"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Kolory",
+    "description": "Podstawowe kolory po niemiecku",
+    "iconName": "paintpalette",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Schwarz",
+        "hint": "Czarny"
+      },
+      {
+        "word": "Gelb",
+        "hint": "Żółty"
+      },
+      {
+        "word": "Grün",
+        "hint": "Zielony"
+      },
+      {
+        "word": "Blau",
+        "hint": "Niebieski"
+      },
+      {
+        "word": "Braun",
+        "hint": "Brązowy"
+      },
+      {
+        "word": "Weiß",
+        "hint": "Biały"
+      },
+      {
+        "word": "Violett",
+        "hint": "Fioletowy"
+      },
+      {
+        "word": "Silber",
+        "hint": "Srebrny"
+      },
+      {
+        "word": "Golden",
+        "hint": "Złoty"
+      },
+      {
+        "word": "Türkis",
+        "hint": "Turkusowy"
+      },
+      {
+        "word": "Beige",
+        "hint": "Beżowy"
+      },
+      {
+        "word": "Grau",
+        "hint": "Szary"
+      },
+      {
+        "word": "Dunkel",
+        "hint": "Ciemny"
+      },
+      {
+        "word": "Rosa",
+        "hint": "Różowy"
+      },
+      {
+        "word": "Lila",
+        "hint": "Liliowy"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Rodzina",
+    "description": "Członkowie rodziny po niemiecku",
+    "iconName": "person.3",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Mutter",
+        "hint": "Matka"
+      },
+      {
+        "word": "Vater",
+        "hint": "Ojciec"
+      },
+      {
+        "word": "Bruder",
+        "hint": "Brat"
+      },
+      {
+        "word": "Schwester",
+        "hint": "Siostra"
+      },
+      {
+        "word": "Tochter",
+        "hint": "Córka"
+      },
+      {
+        "word": "Sohn",
+        "hint": "Syn"
+      },
+      {
+        "word": "Onkel",
+        "hint": "Wujek"
+      },
+      {
+        "word": "Tante",
+        "hint": "Ciocia"
+      },
+      {
+        "word": "Cousin",
+        "hint": "Kuzyn"
+      },
+      {
+        "word": "Cousine",
+        "hint": "Kuzynka"
+      },
+      {
+        "word": "Enkel",
+        "hint": "Wnuk"
+      },
+      {
+        "word": "Enkelin",
+        "hint": "Wnuczka"
+      },
+      {
+        "word": "Neffe",
+        "hint": "Bratanek"
+      },
+      {
+        "word": "Nichte",
+        "hint": "Bratanica"
+      },
+      {
+        "word": "Ehemann",
+        "hint": "Mąż"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Zwierzęta",
+    "description": "Popularne zwierzęta po niemiecku",
+    "iconName": "hare",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Hund",
+        "hint": "Pies"
+      },
+      {
+        "word": "Katze",
+        "hint": "Kot"
+      },
+      {
+        "word": "Pferd",
+        "hint": "Koń"
+      },
+      {
+        "word": "Vogel",
+        "hint": "Ptak"
+      },
+      {
+        "word": "Fisch",
+        "hint": "Ryba"
+      },
+      {
+        "word": "Kaninchen",
+        "hint": "Królik"
+      },
+      {
+        "word": "Maus",
+        "hint": "Mysz"
+      },
+      {
+        "word": "Elefant",
+        "hint": "Słoń"
+      },
+      {
+        "word": "Löwe",
+        "hint": "Lew"
+      },
+      {
+        "word": "Tiger",
+        "hint": "Tygrys"
+      },
+      {
+        "word": "Schlange",
+        "hint": "Wąż"
+      },
+      {
+        "word": "Frosch",
+        "hint": "Żaba"
+      },
+      {
+        "word": "Schwan",
+        "hint": "Łabędź"
+      },
+      {
+        "word": "Biene",
+        "hint": "Pszczoła"
+      },
+      {
+        "word": "Schmetterling",
+        "hint": "Motyl"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Części ciała",
+    "description": "Części ciała po niemiecku",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Kopf",
+        "hint": "Głowa"
+      },
+      {
+        "word": "Arm",
+        "hint": "Ramię"
+      },
+      {
+        "word": "Bein",
+        "hint": "Noga"
+      },
+      {
+        "word": "Hand",
+        "hint": "Dłoń"
+      },
+      {
+        "word": "Finger",
+        "hint": "Palec"
+      },
+      {
+        "word": "Auge",
+        "hint": "Oko"
+      },
+      {
+        "word": "Nase",
+        "hint": "Nos"
+      },
+      {
+        "word": "Mund",
+        "hint": "Usta"
+      },
+      {
+        "word": "Ohr",
+        "hint": "Ucho"
+      },
+      {
+        "word": "Zahn",
+        "hint": "Ząb"
+      },
+      {
+        "word": "Herz",
+        "hint": "Serce"
+      },
+      {
+        "word": "Knie",
+        "hint": "Kolano"
+      },
+      {
+        "word": "Schulter",
+        "hint": "Ramię/Bark"
+      },
+      {
+        "word": "Rücken",
+        "hint": "Plecy"
+      },
+      {
+        "word": "Hals",
+        "hint": "Szyja"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Liczby",
+    "description": "Liczby po niemiecku",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Eins",
+        "hint": "Jeden"
+      },
+      {
+        "word": "Zwei",
+        "hint": "Dwa"
+      },
+      {
+        "word": "Drei",
+        "hint": "Trzy"
+      },
+      {
+        "word": "Vier",
+        "hint": "Cztery"
+      },
+      {
+        "word": "Fünf",
+        "hint": "Pięć"
+      },
+      {
+        "word": "Sechs",
+        "hint": "Sześć"
+      },
+      {
+        "word": "Sieben",
+        "hint": "Siedem"
+      },
+      {
+        "word": "Acht",
+        "hint": "Osiem"
+      },
+      {
+        "word": "Neun",
+        "hint": "Dziewięć"
+      },
+      {
+        "word": "Zehn",
+        "hint": "Dziesięć"
+      },
+      {
+        "word": "Zwanzig",
+        "hint": "Dwadzieścia"
+      },
+      {
+        "word": "Hundert",
+        "hint": "Sto"
+      },
+      {
+        "word": "Tausend",
+        "hint": "Tysiąc"
+      },
+      {
+        "word": "Zwölf",
+        "hint": "Dwanaście"
+      },
+      {
+        "word": "Dreißig",
+        "hint": "Trzydzieści"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Powitania",
+    "description": "Wyrażenia powitalne po niemiecku",
+    "iconName": "hand.wave",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Hallo",
+        "hint": "Cześć"
+      },
+      {
+        "word": "Morgen",
+        "hint": "Rano/Poranek"
+      },
+      {
+        "word": "Abend",
+        "hint": "Wieczór"
+      },
+      {
+        "word": "Nacht",
+        "hint": "Noc"
+      },
+      {
+        "word": "Danke",
+        "hint": "Dziękuję"
+      },
+      {
+        "word": "Bitte",
+        "hint": "Proszę"
+      },
+      {
+        "word": "Willkommen",
+        "hint": "Witamy"
+      },
+      {
+        "word": "Entschuldigung",
+        "hint": "Przepraszam"
+      },
+      {
+        "word": "Freund",
+        "hint": "Przyjaciel"
+      },
+      {
+        "word": "Hilfe",
+        "hint": "Pomoc"
+      },
+      {
+        "word": "Glück",
+        "hint": "Szczęście"
+      },
+      {
+        "word": "Frieden",
+        "hint": "Pokój"
+      },
+      {
+        "word": "Liebe",
+        "hint": "Miłość"
+      },
+      {
+        "word": "Hoffnung",
+        "hint": "Nadzieja"
+      },
+      {
+        "word": "Freude",
+        "hint": "Radość"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Jedzenie",
+    "description": "Popularne produkty spożywcze po niemiecku",
+    "iconName": "fork.knife",
+    "color": "#d97706",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Brot",
+        "hint": "Chleb"
+      },
+      {
+        "word": "Butter",
+        "hint": "Masło"
+      },
+      {
+        "word": "Käse",
+        "hint": "Ser"
+      },
+      {
+        "word": "Fleisch",
+        "hint": "Mięso"
+      },
+      {
+        "word": "Reis",
+        "hint": "Ryż"
+      },
+      {
+        "word": "Nudel",
+        "hint": "Makaron"
+      },
+      {
+        "word": "Suppe",
+        "hint": "Zupa"
+      },
+      {
+        "word": "Salz",
+        "hint": "Sól"
+      },
+      {
+        "word": "Zucker",
+        "hint": "Cukier"
+      },
+      {
+        "word": "Pfeffer",
+        "hint": "Pieprz"
+      },
+      {
+        "word": "Mehl",
+        "hint": "Mąka"
+      },
+      {
+        "word": "Honig",
+        "hint": "Miód"
+      },
+      {
+        "word": "Wurst",
+        "hint": "Kiełbasa"
+      },
+      {
+        "word": "Schinken",
+        "hint": "Szynka"
+      },
+      {
+        "word": "Brötchen",
+        "hint": "Bułka"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Ubrania",
+    "description": "Części garderoby po niemiecku",
+    "iconName": "tshirt",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Hemd",
+        "hint": "Koszula"
+      },
+      {
+        "word": "Hose",
+        "hint": "Spodnie"
+      },
+      {
+        "word": "Kleid",
+        "hint": "Sukienka"
+      },
+      {
+        "word": "Jacke",
+        "hint": "Kurtka"
+      },
+      {
+        "word": "Mantel",
+        "hint": "Płaszcz"
+      },
+      {
+        "word": "Schuh",
+        "hint": "But"
+      },
+      {
+        "word": "Socke",
+        "hint": "Skarpetka"
+      },
+      {
+        "word": "Mütze",
+        "hint": "Czapka"
+      },
+      {
+        "word": "Schal",
+        "hint": "Szalik"
+      },
+      {
+        "word": "Gürtel",
+        "hint": "Pasek"
+      },
+      {
+        "word": "Rock",
+        "hint": "Spódnica"
+      },
+      {
+        "word": "Pullover",
+        "hint": "Sweter"
+      },
+      {
+        "word": "Stiefel",
+        "hint": "Kozak/But wysoki"
+      },
+      {
+        "word": "Anzug",
+        "hint": "Garnitur"
+      },
+      {
+        "word": "Bluse",
+        "hint": "Bluzka"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "Dom i pokoje",
+    "description": "Pomieszczenia i elementy domu po niemiecku",
+    "iconName": "house",
+    "color": "#78716c",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Küche",
+        "hint": "Kuchnia"
+      },
+      {
+        "word": "Schlafzimmer",
+        "hint": "Sypialnia"
+      },
+      {
+        "word": "Badezimmer",
+        "hint": "Łazienka"
+      },
+      {
+        "word": "Wohnzimmer",
+        "hint": "Salon"
+      },
+      {
+        "word": "Garten",
+        "hint": "Ogród"
+      },
+      {
+        "word": "Keller",
+        "hint": "Piwnica"
+      },
+      {
+        "word": "Dachboden",
+        "hint": "Strych"
+      },
+      {
+        "word": "Flur",
+        "hint": "Korytarz"
+      },
+      {
+        "word": "Treppe",
+        "hint": "Schody"
+      },
+      {
+        "word": "Fenster",
+        "hint": "Okno"
+      },
+      {
+        "word": "Tür",
+        "hint": "Drzwi"
+      },
+      {
+        "word": "Balkon",
+        "hint": "Balkon"
+      },
+      {
+        "word": "Garage",
+        "hint": "Garaż"
+      },
+      {
+        "word": "Terrasse",
+        "hint": "Taras"
+      },
+      {
+        "word": "Dach",
+        "hint": "Dach"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Pogoda",
+    "description": "Zjawiska pogodowe po niemiecku",
+    "iconName": "cloud.sun",
+    "color": "#0ea5e9",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Sonne",
+        "hint": "Słońce"
+      },
+      {
+        "word": "Regen",
+        "hint": "Deszcz"
+      },
+      {
+        "word": "Schnee",
+        "hint": "Śnieg"
+      },
+      {
+        "word": "Wind",
+        "hint": "Wiatr"
+      },
+      {
+        "word": "Wolke",
+        "hint": "Chmura"
+      },
+      {
+        "word": "Sturm",
+        "hint": "Burza"
+      },
+      {
+        "word": "Nebel",
+        "hint": "Mgła"
+      },
+      {
+        "word": "Donner",
+        "hint": "Grzmot"
+      },
+      {
+        "word": "Blitz",
+        "hint": "Błyskawica"
+      },
+      {
+        "word": "Hagel",
+        "hint": "Grad"
+      },
+      {
+        "word": "Frost",
+        "hint": "Mróz"
+      },
+      {
+        "word": "Hitze",
+        "hint": "Upał"
+      },
+      {
+        "word": "Gewitter",
+        "hint": "Burza z piorunami"
+      },
+      {
+        "word": "Regenbogen",
+        "hint": "Tęcza"
+      },
+      {
+        "word": "Tau",
+        "hint": "Rosa (poranna)"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Zawody",
+    "description": "Popularne zawody po niemiecku",
+    "iconName": "briefcase",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Arzt",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "Lehrer",
+        "hint": "Nauczyciel"
+      },
+      {
+        "word": "Ingenieur",
+        "hint": "Inżynier"
+      },
+      {
+        "word": "Anwalt",
+        "hint": "Prawnik"
+      },
+      {
+        "word": "Koch",
+        "hint": "Kucharz"
+      },
+      {
+        "word": "Polizist",
+        "hint": "Policjant"
+      },
+      {
+        "word": "Kellner",
+        "hint": "Kelner"
+      },
+      {
+        "word": "Bäcker",
+        "hint": "Piekarz"
+      },
+      {
+        "word": "Pilot",
+        "hint": "Pilot"
+      },
+      {
+        "word": "Maler",
+        "hint": "Malarz"
+      },
+      {
+        "word": "Friseur",
+        "hint": "Fryzjer"
+      },
+      {
+        "word": "Architekt",
+        "hint": "Architekt"
+      },
+      {
+        "word": "Journalist",
+        "hint": "Dziennikarz"
+      },
+      {
+        "word": "Apotheker",
+        "hint": "Aptekarz"
+      },
+      {
+        "word": "Mechaniker",
+        "hint": "Mechanik"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transport",
+    "description": "Środki transportu po niemiecku",
+    "iconName": "car",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Auto",
+        "hint": "Samochód"
+      },
+      {
+        "word": "Fahrrad",
+        "hint": "Rower"
+      },
+      {
+        "word": "Zug",
+        "hint": "Pociąg"
+      },
+      {
+        "word": "Flugzeug",
+        "hint": "Samolot"
+      },
+      {
+        "word": "Schiff",
+        "hint": "Statek"
+      },
+      {
+        "word": "Straßenbahn",
+        "hint": "Tramwaj"
+      },
+      {
+        "word": "Motorrad",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "Hubschrauber",
+        "hint": "Helikopter"
+      },
+      {
+        "word": "Taxi",
+        "hint": "Taksówka"
+      },
+      {
+        "word": "Roller",
+        "hint": "Hulajnoga"
+      },
+      {
+        "word": "Lastwagen",
+        "hint": "Ciężarówka"
+      },
+      {
+        "word": "Fähre",
+        "hint": "Prom"
+      },
+      {
+        "word": "Kutsche",
+        "hint": "Powóz"
+      },
+      {
+        "word": "Segelboot",
+        "hint": "Żaglówka"
+      },
+      {
+        "word": "Rakete",
+        "hint": "Rakieta"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "Szkoła",
+    "description": "Przybory i pojęcia szkolne po niemiecku",
+    "iconName": "book",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Schule",
+        "hint": "Szkoła"
+      },
+      {
+        "word": "Schüler",
+        "hint": "Uczeń"
+      },
+      {
+        "word": "Tafel",
+        "hint": "Tablica"
+      },
+      {
+        "word": "Kreide",
+        "hint": "Kreda"
+      },
+      {
+        "word": "Heft",
+        "hint": "Zeszyt"
+      },
+      {
+        "word": "Bleistift",
+        "hint": "Ołówek"
+      },
+      {
+        "word": "Radiergummi",
+        "hint": "Gumka"
+      },
+      {
+        "word": "Lineal",
+        "hint": "Linijka"
+      },
+      {
+        "word": "Rucksack",
+        "hint": "Plecak"
+      },
+      {
+        "word": "Prüfung",
+        "hint": "Egzamin"
+      },
+      {
+        "word": "Hausaufgabe",
+        "hint": "Praca domowa"
+      },
+      {
+        "word": "Zeugnis",
+        "hint": "Świadectwo"
+      },
+      {
+        "word": "Schulhof",
+        "hint": "Podwórko szkolne"
+      },
+      {
+        "word": "Klassenzimmer",
+        "hint": "Klasa/Sala lekcyjna"
+      },
+      {
+        "word": "Stundenplan",
+        "hint": "Plan lekcji"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Przybory kuchenne",
+    "description": "Przybory i sprzęty kuchenne po niemiecku",
+    "iconName": "frying.pan",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Messer",
+        "hint": "Nóż"
+      },
+      {
+        "word": "Gabel",
+        "hint": "Widelec"
+      },
+      {
+        "word": "Löffel",
+        "hint": "Łyżka"
+      },
+      {
+        "word": "Teller",
+        "hint": "Talerz"
+      },
+      {
+        "word": "Tasse",
+        "hint": "Filiżanka"
+      },
+      {
+        "word": "Pfanne",
+        "hint": "Patelnia"
+      },
+      {
+        "word": "Topf",
+        "hint": "Garnek"
+      },
+      {
+        "word": "Schneebesen",
+        "hint": "Trzepaczka"
+      },
+      {
+        "word": "Backblech",
+        "hint": "Blacha do pieczenia"
+      },
+      {
+        "word": "Sieb",
+        "hint": "Sitko"
+      },
+      {
+        "word": "Reibe",
+        "hint": "Tarka"
+      },
+      {
+        "word": "Schüssel",
+        "hint": "Miska"
+      },
+      {
+        "word": "Kanne",
+        "hint": "Dzbanek"
+      },
+      {
+        "word": "Schneidebrett",
+        "hint": "Deska do krojenia"
+      },
+      {
+        "word": "Korkenzieher",
+        "hint": "Korkociąg"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Sport",
+    "description": "Dyscypliny sportowe po niemiecku",
+    "iconName": "sportscourt",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Fußball",
+        "hint": "Piłka nożna"
+      },
+      {
+        "word": "Tennis",
+        "hint": "Tenis"
+      },
+      {
+        "word": "Schwimmen",
+        "hint": "Pływanie"
+      },
+      {
+        "word": "Basketball",
+        "hint": "Koszykówka"
+      },
+      {
+        "word": "Volleyball",
+        "hint": "Siatkówka"
+      },
+      {
+        "word": "Handball",
+        "hint": "Piłka ręczna"
+      },
+      {
+        "word": "Eishockey",
+        "hint": "Hokej na lodzie"
+      },
+      {
+        "word": "Reiten",
+        "hint": "Jazda konna"
+      },
+      {
+        "word": "Turnen",
+        "hint": "Gimnastyka"
+      },
+      {
+        "word": "Boxen",
+        "hint": "Boks"
+      },
+      {
+        "word": "Segeln",
+        "hint": "Żeglarstwo"
+      },
+      {
+        "word": "Tischtennis",
+        "hint": "Tenis stołowy"
+      },
+      {
+        "word": "Skifahren",
+        "hint": "Narciarstwo"
+      },
+      {
+        "word": "Radfahren",
+        "hint": "Kolarstwo"
+      },
+      {
+        "word": "Fechten",
+        "hint": "Szermierka"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Instrumenty muzyczne",
+    "description": "Instrumenty muzyczne po niemiecku",
+    "iconName": "music.note",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Klavier",
+        "hint": "Fortepian"
+      },
+      {
+        "word": "Gitarre",
+        "hint": "Gitara"
+      },
+      {
+        "word": "Geige",
+        "hint": "Skrzypce"
+      },
+      {
+        "word": "Trompete",
+        "hint": "Trąbka"
+      },
+      {
+        "word": "Schlagzeug",
+        "hint": "Perkusja"
+      },
+      {
+        "word": "Flöte",
+        "hint": "Flet"
+      },
+      {
+        "word": "Saxophon",
+        "hint": "Saksofon"
+      },
+      {
+        "word": "Harfe",
+        "hint": "Harfa"
+      },
+      {
+        "word": "Klarinette",
+        "hint": "Klarnet"
+      },
+      {
+        "word": "Posaune",
+        "hint": "Puzon"
+      },
+      {
+        "word": "Cello",
+        "hint": "Wiolonczela"
+      },
+      {
+        "word": "Orgel",
+        "hint": "Organy"
+      },
+      {
+        "word": "Kontrabass",
+        "hint": "Kontrabas"
+      },
+      {
+        "word": "Akkordeon",
+        "hint": "Akordeon"
+      },
+      {
+        "word": "Trommel",
+        "hint": "Bęben"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Przyroda",
+    "description": "Elementy przyrody po niemiecku",
+    "iconName": "leaf",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Baum",
+        "hint": "Drzewo"
+      },
+      {
+        "word": "Blume",
+        "hint": "Kwiat"
+      },
+      {
+        "word": "Berg",
+        "hint": "Góra"
+      },
+      {
+        "word": "Fluss",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "See",
+        "hint": "Jezioro"
+      },
+      {
+        "word": "Meer",
+        "hint": "Morze"
+      },
+      {
+        "word": "Wald",
+        "hint": "Las"
+      },
+      {
+        "word": "Wiese",
+        "hint": "Łąka"
+      },
+      {
+        "word": "Stern",
+        "hint": "Gwiazda"
+      },
+      {
+        "word": "Mond",
+        "hint": "Księżyc"
+      },
+      {
+        "word": "Wasserfall",
+        "hint": "Wodospad"
+      },
+      {
+        "word": "Insel",
+        "hint": "Wyspa"
+      },
+      {
+        "word": "Wüste",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "Höhle",
+        "hint": "Jaskinia"
+      },
+      {
+        "word": "Vulkan",
+        "hint": "Wulkan"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Emocje",
+    "description": "Uczucia i emocje po niemiecku",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Begeisterung",
+        "hint": "Entuzjazm"
+      },
+      {
+        "word": "Trauer",
+        "hint": "Smutek"
+      },
+      {
+        "word": "Angst",
+        "hint": "Strach"
+      },
+      {
+        "word": "Wut",
+        "hint": "Gniew"
+      },
+      {
+        "word": "Stolz",
+        "hint": "Duma"
+      },
+      {
+        "word": "Scham",
+        "hint": "Wstyd"
+      },
+      {
+        "word": "Neid",
+        "hint": "Zazdrość"
+      },
+      {
+        "word": "Ekel",
+        "hint": "Obrzydzenie"
+      },
+      {
+        "word": "Erstaunen",
+        "hint": "Zdziwienie"
+      },
+      {
+        "word": "Langeweile",
+        "hint": "Nuda"
+      },
+      {
+        "word": "Zufriedenheit",
+        "hint": "Zadowolenie"
+      },
+      {
+        "word": "Verzweiflung",
+        "hint": "Rozpacz"
+      },
+      {
+        "word": "Dankbarkeit",
+        "hint": "Wdzięczność"
+      },
+      {
+        "word": "Einsamkeit",
+        "hint": "Samotność"
+      },
+      {
+        "word": "Sehnsucht",
+        "hint": "Tęsknota"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technologia",
+    "description": "Słownictwo technologiczne po niemiecku",
+    "iconName": "desktopcomputer",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Computer",
+        "hint": "Komputer"
+      },
+      {
+        "word": "Tastatur",
+        "hint": "Klawiatura"
+      },
+      {
+        "word": "Bildschirm",
+        "hint": "Ekran"
+      },
+      {
+        "word": "Drucker",
+        "hint": "Drukarka"
+      },
+      {
+        "word": "Mikrofon",
+        "hint": "Mikrofon"
+      },
+      {
+        "word": "Festplatte",
+        "hint": "Dysk twardy"
+      },
+      {
+        "word": "Netzwerk",
+        "hint": "Sieć"
+      },
+      {
+        "word": "Datei",
+        "hint": "Plik"
+      },
+      {
+        "word": "Speicher",
+        "hint": "Pamięć"
+      },
+      {
+        "word": "Software",
+        "hint": "Oprogramowanie"
+      },
+      {
+        "word": "Lautsprecher",
+        "hint": "Głośnik"
+      },
+      {
+        "word": "Kopfhörer",
+        "hint": "Słuchawki"
+      },
+      {
+        "word": "Kamera",
+        "hint": "Kamera"
+      },
+      {
+        "word": "Ladegerät",
+        "hint": "Ładowarka"
+      },
+      {
+        "word": "Anwendung",
+        "hint": "Aplikacja"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Biuro",
+    "description": "Wyposażenie biurowe po niemiecku",
+    "iconName": "pencil.and.ruler",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Schreibtisch",
+        "hint": "Biurko"
+      },
+      {
+        "word": "Stuhl",
+        "hint": "Krzesło"
+      },
+      {
+        "word": "Ordner",
+        "hint": "Segregator"
+      },
+      {
+        "word": "Hefter",
+        "hint": "Zszywacz"
+      },
+      {
+        "word": "Schere",
+        "hint": "Nożyczki"
+      },
+      {
+        "word": "Klebstoff",
+        "hint": "Klej"
+      },
+      {
+        "word": "Kalender",
+        "hint": "Kalendarz"
+      },
+      {
+        "word": "Briefumschlag",
+        "hint": "Koperta"
+      },
+      {
+        "word": "Stempel",
+        "hint": "Pieczątka"
+      },
+      {
+        "word": "Notizblock",
+        "hint": "Notatnik"
+      },
+      {
+        "word": "Aktenkoffer",
+        "hint": "Aktówka"
+      },
+      {
+        "word": "Papierkorb",
+        "hint": "Kosz na śmieci"
+      },
+      {
+        "word": "Kugelschreiber",
+        "hint": "Długopis"
+      },
+      {
+        "word": "Büroklammer",
+        "hint": "Spinacz"
+      },
+      {
+        "word": "Textmarker",
+        "hint": "Zakreślacz"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Zdrowie",
+    "description": "Słownictwo medyczne po niemiecku",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Krankenhaus",
+        "hint": "Szpital"
+      },
+      {
+        "word": "Apotheke",
+        "hint": "Apteka"
+      },
+      {
+        "word": "Tablette",
+        "hint": "Tabletka"
+      },
+      {
+        "word": "Spritze",
+        "hint": "Zastrzyk"
+      },
+      {
+        "word": "Verband",
+        "hint": "Bandaż"
+      },
+      {
+        "word": "Fieber",
+        "hint": "Gorączka"
+      },
+      {
+        "word": "Husten",
+        "hint": "Kaszel"
+      },
+      {
+        "word": "Schnupfen",
+        "hint": "Katar"
+      },
+      {
+        "word": "Schmerz",
+        "hint": "Ból"
+      },
+      {
+        "word": "Rezept",
+        "hint": "Recepta"
+      },
+      {
+        "word": "Untersuchung",
+        "hint": "Badanie"
+      },
+      {
+        "word": "Impfung",
+        "hint": "Szczepienie"
+      },
+      {
+        "word": "Allergie",
+        "hint": "Alergia"
+      },
+      {
+        "word": "Heilung",
+        "hint": "Leczenie"
+      },
+      {
+        "word": "Blutdruck",
+        "hint": "Ciśnienie krwi"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Podróże",
+    "description": "Słownictwo podróżnicze po niemiecku",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Koffer",
+        "hint": "Walizka"
+      },
+      {
+        "word": "Reisepass",
+        "hint": "Paszport"
+      },
+      {
+        "word": "Flughafen",
+        "hint": "Lotnisko"
+      },
+      {
+        "word": "Bahnhof",
+        "hint": "Dworzec kolejowy"
+      },
+      {
+        "word": "Hotel",
+        "hint": "Hotel"
+      },
+      {
+        "word": "Buchung",
+        "hint": "Rezerwacja"
+      },
+      {
+        "word": "Landkarte",
+        "hint": "Mapa"
+      },
+      {
+        "word": "Visum",
+        "hint": "Wiza"
+      },
+      {
+        "word": "Ausflug",
+        "hint": "Wycieczka"
+      },
+      {
+        "word": "Strand",
+        "hint": "Plaża"
+      },
+      {
+        "word": "Gepäck",
+        "hint": "Bagaż"
+      },
+      {
+        "word": "Ankunft",
+        "hint": "Przyjazd"
+      },
+      {
+        "word": "Abfahrt",
+        "hint": "Odjazd"
+      },
+      {
+        "word": "Währung",
+        "hint": "Waluta"
+      },
+      {
+        "word": "Unterkunft",
+        "hint": "Zakwaterowanie"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobby",
+    "description": "Hobby i zainteresowania po niemiecku",
+    "iconName": "paintbrush",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Lesen",
+        "hint": "Czytanie"
+      },
+      {
+        "word": "Malen",
+        "hint": "Malowanie"
+      },
+      {
+        "word": "Kochen",
+        "hint": "Gotowanie"
+      },
+      {
+        "word": "Tanzen",
+        "hint": "Taniec"
+      },
+      {
+        "word": "Singen",
+        "hint": "Śpiewanie"
+      },
+      {
+        "word": "Wandern",
+        "hint": "Wędrówki"
+      },
+      {
+        "word": "Angeln",
+        "hint": "Wędkowanie"
+      },
+      {
+        "word": "Gärtnern",
+        "hint": "Ogrodnictwo"
+      },
+      {
+        "word": "Stricken",
+        "hint": "Dzierganie"
+      },
+      {
+        "word": "Basteln",
+        "hint": "Majsterkowanie"
+      },
+      {
+        "word": "Fotografie",
+        "hint": "Fotografia"
+      },
+      {
+        "word": "Schach",
+        "hint": "Szachy"
+      },
+      {
+        "word": "Sammeln",
+        "hint": "Kolekcjonowanie"
+      },
+      {
+        "word": "Tauchen",
+        "hint": "Nurkowanie"
+      },
+      {
+        "word": "Klettern",
+        "hint": "Wspinaczka"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Napoje",
+    "description": "Napoje i płyny po niemiecku",
+    "iconName": "cup.and.saucer",
+    "color": "#0284c7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Kaffee",
+        "hint": "Kawa"
+      },
+      {
+        "word": "Tee",
+        "hint": "Herbata"
+      },
+      {
+        "word": "Wasser",
+        "hint": "Woda"
+      },
+      {
+        "word": "Milch",
+        "hint": "Mleko"
+      },
+      {
+        "word": "Saft",
+        "hint": "Sok"
+      },
+      {
+        "word": "Bier",
+        "hint": "Piwo"
+      },
+      {
+        "word": "Wein",
+        "hint": "Wino"
+      },
+      {
+        "word": "Limonade",
+        "hint": "Lemoniada"
+      },
+      {
+        "word": "Kakao",
+        "hint": "Kakao"
+      },
+      {
+        "word": "Smoothie",
+        "hint": "Koktajl owocowy"
+      },
+      {
+        "word": "Eistee",
+        "hint": "Herbata mrożona"
+      },
+      {
+        "word": "Mineralwasser",
+        "hint": "Woda mineralna"
+      },
+      {
+        "word": "Champagner",
+        "hint": "Szampan"
+      },
+      {
+        "word": "Apfelschorle",
+        "hint": "Sok jabłkowy z wodą gazowaną"
+      },
+      {
+        "word": "Glühwein",
+        "hint": "Grzane wino"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desery i słodycze",
+    "description": "Desery i słodycze po niemiecku",
+    "iconName": "birthday.cake",
+    "color": "#e879f9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Kuchen",
+        "hint": "Ciasto"
+      },
+      {
+        "word": "Torte",
+        "hint": "Tort"
+      },
+      {
+        "word": "Keks",
+        "hint": "Ciastko"
+      },
+      {
+        "word": "Schokolade",
+        "hint": "Czekolada"
+      },
+      {
+        "word": "Bonbon",
+        "hint": "Cukierek"
+      },
+      {
+        "word": "Eis",
+        "hint": "Lody"
+      },
+      {
+        "word": "Pudding",
+        "hint": "Budyń"
+      },
+      {
+        "word": "Marmelade",
+        "hint": "Dżem"
+      },
+      {
+        "word": "Marzipan",
+        "hint": "Marcepan"
+      },
+      {
+        "word": "Lebkuchen",
+        "hint": "Piernik"
+      },
+      {
+        "word": "Strudel",
+        "hint": "Strudel/Sztrucla"
+      },
+      {
+        "word": "Pflaumenkuchen",
+        "hint": "Ciasto ze śliwkami"
+      },
+      {
+        "word": "Streuselkuchen",
+        "hint": "Ciasto z kruszonką"
+      },
+      {
+        "word": "Berliner",
+        "hint": "Pączek"
+      },
+      {
+        "word": "Bienenstich",
+        "hint": "Ciasto pszczółka"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Meble",
+    "description": "Meble domowe po niemiecku",
+    "iconName": "sofa",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Tisch",
+        "hint": "Stół"
+      },
+      {
+        "word": "Bett",
+        "hint": "Łóżko"
+      },
+      {
+        "word": "Sofa",
+        "hint": "Kanapa"
+      },
+      {
+        "word": "Schrank",
+        "hint": "Szafa"
+      },
+      {
+        "word": "Regal",
+        "hint": "Regał/Półka"
+      },
+      {
+        "word": "Kommode",
+        "hint": "Komoda"
+      },
+      {
+        "word": "Spiegel",
+        "hint": "Lustro"
+      },
+      {
+        "word": "Lampe",
+        "hint": "Lampa"
+      },
+      {
+        "word": "Teppich",
+        "hint": "Dywan"
+      },
+      {
+        "word": "Vorhang",
+        "hint": "Zasłona"
+      },
+      {
+        "word": "Nachttisch",
+        "hint": "Stolik nocny"
+      },
+      {
+        "word": "Garderobe",
+        "hint": "Garderoba"
+      },
+      {
+        "word": "Hocker",
+        "hint": "Taboret"
+      },
+      {
+        "word": "Vitrine",
+        "hint": "Witryna"
+      },
+      {
+        "word": "Matratze",
+        "hint": "Materac"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Narzędzia",
+    "description": "Narzędzia i przybory po niemiecku",
+    "iconName": "wrench",
+    "color": "#71717a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Hammer",
+        "hint": "Młotek"
+      },
+      {
+        "word": "Schraubenzieher",
+        "hint": "Śrubokręt"
+      },
+      {
+        "word": "Zange",
+        "hint": "Szczypce"
+      },
+      {
+        "word": "Säge",
+        "hint": "Piła"
+      },
+      {
+        "word": "Bohrmaschine",
+        "hint": "Wiertarka"
+      },
+      {
+        "word": "Nagel",
+        "hint": "Gwóźdź"
+      },
+      {
+        "word": "Schraube",
+        "hint": "Śruba"
+      },
+      {
+        "word": "Leiter",
+        "hint": "Drabina"
+      },
+      {
+        "word": "Pinsel",
+        "hint": "Pędzel"
+      },
+      {
+        "word": "Wasserwaage",
+        "hint": "Poziomica"
+      },
+      {
+        "word": "Maulschlüssel",
+        "hint": "Klucz płaski"
+      },
+      {
+        "word": "Feile",
+        "hint": "Pilnik"
+      },
+      {
+        "word": "Meißel",
+        "hint": "Dłuto"
+      },
+      {
+        "word": "Axt",
+        "hint": "Siekiera"
+      },
+      {
+        "word": "Schraubstock",
+        "hint": "Imadło"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materiały",
+    "description": "Materiały i surowce po niemiecku",
+    "iconName": "square.stack.3d.up",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Holz",
+        "hint": "Drewno"
+      },
+      {
+        "word": "Metall",
+        "hint": "Metal"
+      },
+      {
+        "word": "Glas",
+        "hint": "Szkło"
+      },
+      {
+        "word": "Stein",
+        "hint": "Kamień"
+      },
+      {
+        "word": "Stoff",
+        "hint": "Tkanina"
+      },
+      {
+        "word": "Leder",
+        "hint": "Skóra"
+      },
+      {
+        "word": "Beton",
+        "hint": "Beton"
+      },
+      {
+        "word": "Plastik",
+        "hint": "Plastik"
+      },
+      {
+        "word": "Wolle",
+        "hint": "Wełna"
+      },
+      {
+        "word": "Seide",
+        "hint": "Jedwab"
+      },
+      {
+        "word": "Porzellan",
+        "hint": "Porcelana"
+      },
+      {
+        "word": "Kupfer",
+        "hint": "Miedź"
+      },
+      {
+        "word": "Aluminium",
+        "hint": "Aluminium"
+      },
+      {
+        "word": "Keramik",
+        "hint": "Ceramika"
+      },
+      {
+        "word": "Gummi",
+        "hint": "Guma"
+      }
+    ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Codzienna rutyna",
+    "description": "Słownictwo związane z codziennymi czynnościami",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Frühstück",
+        "hint": "Śniadanie"
+      },
+      {
+        "word": "Mittagessen",
+        "hint": "Obiad"
+      },
+      {
+        "word": "Abendessen",
+        "hint": "Kolacja"
+      },
+      {
+        "word": "Aufstehen",
+        "hint": "Wstawanie"
+      },
+      {
+        "word": "Schlafen",
+        "hint": "Spanie"
+      },
+      {
+        "word": "Duschen",
+        "hint": "Brać prysznic"
+      },
+      {
+        "word": "Anziehen",
+        "hint": "Ubieranie się"
+      },
+      {
+        "word": "Zähneputzen",
+        "hint": "Mycie zębów"
+      },
+      {
+        "word": "Kochen",
+        "hint": "Gotowanie"
+      },
+      {
+        "word": "Einkaufen",
+        "hint": "Zakupy"
+      },
+      {
+        "word": "Arbeiten",
+        "hint": "Pracowanie"
+      },
+      {
+        "word": "Spazieren",
+        "hint": "Spacerowanie"
+      },
+      {
+        "word": "Lesen",
+        "hint": "Czytanie"
+      },
+      {
+        "word": "Waschen",
+        "hint": "Mycie / pranie"
+      },
+      {
+        "word": "Ausruhen",
+        "hint": "Odpoczywanie"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Zakupy",
+    "description": "Słówka przydatne na zakupach",
+    "iconName": "cart",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Laden",
+        "hint": "Sklep"
+      },
+      {
+        "word": "Kasse",
+        "hint": "Kasa"
+      },
+      {
+        "word": "Preis",
+        "hint": "Cena"
+      },
+      {
+        "word": "Rabatt",
+        "hint": "Zniżka / rabat"
+      },
+      {
+        "word": "Rechnung",
+        "hint": "Rachunek"
+      },
+      {
+        "word": "Tasche",
+        "hint": "Torba"
+      },
+      {
+        "word": "Markt",
+        "hint": "Rynek / targ"
+      },
+      {
+        "word": "Angebot",
+        "hint": "Oferta"
+      },
+      {
+        "word": "Geld",
+        "hint": "Pieniądze"
+      },
+      {
+        "word": "Kunde",
+        "hint": "Klient"
+      },
+      {
+        "word": "Verkäufer",
+        "hint": "Sprzedawca"
+      },
+      {
+        "word": "Quittung",
+        "hint": "Paragon"
+      },
+      {
+        "word": "Größe",
+        "hint": "Rozmiar"
+      },
+      {
+        "word": "Umtausch",
+        "hint": "Wymiana / zwrot"
+      },
+      {
+        "word": "Schaufenster",
+        "hint": "Witryna sklepowa"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restauracja",
+    "description": "Słownictwo restauracyjne po niemiecku",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Speisekarte",
+        "hint": "Menu / karta dań"
+      },
+      {
+        "word": "Kellner",
+        "hint": "Kelner"
+      },
+      {
+        "word": "Vorspeise",
+        "hint": "Przystawka"
+      },
+      {
+        "word": "Hauptgericht",
+        "hint": "Danie główne"
+      },
+      {
+        "word": "Nachspeise",
+        "hint": "Deser"
+      },
+      {
+        "word": "Getränk",
+        "hint": "Napój"
+      },
+      {
+        "word": "Bestellung",
+        "hint": "Zamówienie"
+      },
+      {
+        "word": "Tisch",
+        "hint": "Stół / stolik"
+      },
+      {
+        "word": "Trinkgeld",
+        "hint": "Napiwek"
+      },
+      {
+        "word": "Rechnung",
+        "hint": "Rachunek"
+      },
+      {
+        "word": "Reservierung",
+        "hint": "Rezerwacja"
+      },
+      {
+        "word": "Gericht",
+        "hint": "Danie / potrawa"
+      },
+      {
+        "word": "Beilage",
+        "hint": "Dodatek do dania"
+      },
+      {
+        "word": "Teller",
+        "hint": "Talerz"
+      },
+      {
+        "word": "Serviette",
+        "hint": "Serwetka"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Ogród",
+    "description": "Słownictwo ogrodnicze po niemiecku",
+    "iconName": "leaf",
+    "color": "#10b981",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Garten",
+        "hint": "Ogród"
+      },
+      {
+        "word": "Blume",
+        "hint": "Kwiat"
+      },
+      {
+        "word": "Rasen",
+        "hint": "Trawnik"
+      },
+      {
+        "word": "Baum",
+        "hint": "Drzewo"
+      },
+      {
+        "word": "Strauch",
+        "hint": "Krzew"
+      },
+      {
+        "word": "Erde",
+        "hint": "Ziemia"
+      },
+      {
+        "word": "Gießkanne",
+        "hint": "Konewka"
+      },
+      {
+        "word": "Samen",
+        "hint": "Nasiona"
+      },
+      {
+        "word": "Schaufel",
+        "hint": "Łopatka"
+      },
+      {
+        "word": "Beet",
+        "hint": "Grządka"
+      },
+      {
+        "word": "Zaun",
+        "hint": "Płot"
+      },
+      {
+        "word": "Hecke",
+        "hint": "Żywopłot"
+      },
+      {
+        "word": "Ernte",
+        "hint": "Plony / zbiory"
+      },
+      {
+        "word": "Unkraut",
+        "hint": "Chwasty"
+      },
+      {
+        "word": "Teich",
+        "hint": "Staw / oczko wodne"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Łazienka",
+    "description": "Rzeczy i czynności w łazience",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Dusche",
+        "hint": "Prysznic"
+      },
+      {
+        "word": "Badewanne",
+        "hint": "Wanna"
+      },
+      {
+        "word": "Spiegel",
+        "hint": "Lustro"
+      },
+      {
+        "word": "Handtuch",
+        "hint": "Ręcznik"
+      },
+      {
+        "word": "Seife",
+        "hint": "Mydło"
+      },
+      {
+        "word": "Shampoo",
+        "hint": "Szampon"
+      },
+      {
+        "word": "Zahnbürste",
+        "hint": "Szczoteczka do zębów"
+      },
+      {
+        "word": "Zahnpasta",
+        "hint": "Pasta do zębów"
+      },
+      {
+        "word": "Toilette",
+        "hint": "Toaleta"
+      },
+      {
+        "word": "Waschbecken",
+        "hint": "Umywalka"
+      },
+      {
+        "word": "Wasserhahn",
+        "hint": "Kran"
+      },
+      {
+        "word": "Fliese",
+        "hint": "Kafelek / płytka"
+      },
+      {
+        "word": "Kamm",
+        "hint": "Grzebień"
+      },
+      {
+        "word": "Rasierer",
+        "hint": "Maszynka do golenia"
+      },
+      {
+        "word": "Wäschekorb",
+        "hint": "Kosz na bieliznę"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Kino i film",
+    "description": "Słownictwo filmowe i kinowe",
+    "iconName": "film",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Kino",
+        "hint": "Kino"
+      },
+      {
+        "word": "Film",
+        "hint": "Film"
+      },
+      {
+        "word": "Leinwand",
+        "hint": "Ekran kinowy"
+      },
+      {
+        "word": "Regisseur",
+        "hint": "Reżyser"
+      },
+      {
+        "word": "Schauspieler",
+        "hint": "Aktor"
+      },
+      {
+        "word": "Rolle",
+        "hint": "Rola"
+      },
+      {
+        "word": "Szene",
+        "hint": "Scena"
+      },
+      {
+        "word": "Drehbuch",
+        "hint": "Scenariusz"
+      },
+      {
+        "word": "Vorstellung",
+        "hint": "Seans / pokaz"
+      },
+      {
+        "word": "Komödie",
+        "hint": "Komedia"
+      },
+      {
+        "word": "Untertitel",
+        "hint": "Napisy (w filmie)"
+      },
+      {
+        "word": "Kamera",
+        "hint": "Kamera"
+      },
+      {
+        "word": "Trailer",
+        "hint": "Zwiastun"
+      },
+      {
+        "word": "Popcorn",
+        "hint": "Popcorn"
+      },
+      {
+        "word": "Eintrittskarte",
+        "hint": "Bilet wstępu"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Sztuka",
+    "description": "Słownictwo artystyczne po niemiecku",
+    "iconName": "paintbrush",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Kunst",
+        "hint": "Sztuka"
+      },
+      {
+        "word": "Künstler",
+        "hint": "Artysta"
+      },
+      {
+        "word": "Gemälde",
+        "hint": "Obraz / malowidło"
+      },
+      {
+        "word": "Skulptur",
+        "hint": "Rzeźba"
+      },
+      {
+        "word": "Galerie",
+        "hint": "Galeria"
+      },
+      {
+        "word": "Museum",
+        "hint": "Muzeum"
+      },
+      {
+        "word": "Ausstellung",
+        "hint": "Wystawa"
+      },
+      {
+        "word": "Pinsel",
+        "hint": "Pędzel"
+      },
+      {
+        "word": "Leinwand",
+        "hint": "Płótno"
+      },
+      {
+        "word": "Farbe",
+        "hint": "Farba / kolor"
+      },
+      {
+        "word": "Zeichnung",
+        "hint": "Rysunek"
+      },
+      {
+        "word": "Rahmen",
+        "hint": "Rama"
+      },
+      {
+        "word": "Porträt",
+        "hint": "Portret"
+      },
+      {
+        "word": "Keramik",
+        "hint": "Ceramika"
+      },
+      {
+        "word": "Staffelei",
+        "hint": "Sztaluga"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Taniec",
+    "description": "Rodzaje tańca i słownictwo taneczne",
+    "iconName": "figure.dance",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Tanz",
+        "hint": "Taniec"
+      },
+      {
+        "word": "Tänzer",
+        "hint": "Tancerz"
+      },
+      {
+        "word": "Walzer",
+        "hint": "Walc"
+      },
+      {
+        "word": "Ballett",
+        "hint": "Balet"
+      },
+      {
+        "word": "Tanzschule",
+        "hint": "Szkoła tańca"
+      },
+      {
+        "word": "Rhythmus",
+        "hint": "Rytm"
+      },
+      {
+        "word": "Choreografie",
+        "hint": "Choreografia"
+      },
+      {
+        "word": "Tanzfläche",
+        "hint": "Parkiet taneczny"
+      },
+      {
+        "word": "Schritte",
+        "hint": "Kroki"
+      },
+      {
+        "word": "Drehung",
+        "hint": "Obrót / piruet"
+      },
+      {
+        "word": "Partner",
+        "hint": "Partner"
+      },
+      {
+        "word": "Bewegung",
+        "hint": "Ruch"
+      },
+      {
+        "word": "Aufführung",
+        "hint": "Występ / przedstawienie"
+      },
+      {
+        "word": "Kostüm",
+        "hint": "Kostium"
+      },
+      {
+        "word": "Bühne",
+        "hint": "Scena"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Fotografia",
+    "description": "Słownictwo fotograficzne po niemiecku",
+    "iconName": "camera",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Foto",
+        "hint": "Zdjęcie"
+      },
+      {
+        "word": "Kamera",
+        "hint": "Aparat / kamera"
+      },
+      {
+        "word": "Objektiv",
+        "hint": "Obiektyw"
+      },
+      {
+        "word": "Blitz",
+        "hint": "Flesz / błysk"
+      },
+      {
+        "word": "Aufnahme",
+        "hint": "Ujęcie / zdjęcie"
+      },
+      {
+        "word": "Belichtung",
+        "hint": "Naświetlanie"
+      },
+      {
+        "word": "Stativ",
+        "hint": "Statyw"
+      },
+      {
+        "word": "Auflösung",
+        "hint": "Rozdzielczość"
+      },
+      {
+        "word": "Selbstauslöser",
+        "hint": "Samowyzwalacz"
+      },
+      {
+        "word": "Porträt",
+        "hint": "Portret"
+      },
+      {
+        "word": "Landschaft",
+        "hint": "Krajobraz / pejzaż"
+      },
+      {
+        "word": "Perspektive",
+        "hint": "Perspektywa"
+      },
+      {
+        "word": "Fokus",
+        "hint": "Ostrość"
+      },
+      {
+        "word": "Bildbearbeitung",
+        "hint": "Obróbka zdjęć"
+      },
+      {
+        "word": "Fotograf",
+        "hint": "Fotograf"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Rękodzieło",
+    "description": "Rękodzieło i prace ręczne po niemiecku",
+    "iconName": "scissors",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Handwerk",
+        "hint": "Rękodzieło"
+      },
+      {
+        "word": "Stricken",
+        "hint": "Robienie na drutach"
+      },
+      {
+        "word": "Häkeln",
+        "hint": "Szydełkowanie"
+      },
+      {
+        "word": "Nähen",
+        "hint": "Szycie"
+      },
+      {
+        "word": "Stoff",
+        "hint": "Materiał / tkanina"
+      },
+      {
+        "word": "Nadel",
+        "hint": "Igła"
+      },
+      {
+        "word": "Faden",
+        "hint": "Nitka"
+      },
+      {
+        "word": "Schere",
+        "hint": "Nożyczki"
+      },
+      {
+        "word": "Wolle",
+        "hint": "Wełna"
+      },
+      {
+        "word": "Muster",
+        "hint": "Wzór"
+      },
+      {
+        "word": "Perlen",
+        "hint": "Koraliki"
+      },
+      {
+        "word": "Kleber",
+        "hint": "Klej"
+      },
+      {
+        "word": "Papier",
+        "hint": "Papier"
+      },
+      {
+        "word": "Töpfern",
+        "hint": "Garncarstwo"
+      },
+      {
+        "word": "Basteln",
+        "hint": "Majsterkowanie"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geografia",
+    "description": "Pojęcia geograficzne po niemiecku",
+    "iconName": "globe.europe.africa",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Kontinent",
+        "hint": "Kontynent"
+      },
+      {
+        "word": "Insel",
+        "hint": "Wyspa"
+      },
+      {
+        "word": "Halbinsel",
+        "hint": "Półwysep"
+      },
+      {
+        "word": "Wüste",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "Fluss",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "Ozean",
+        "hint": "Ocean"
+      },
+      {
+        "word": "Tal",
+        "hint": "Dolina"
+      },
+      {
+        "word": "Küste",
+        "hint": "Wybrzeże"
+      },
+      {
+        "word": "Vulkan",
+        "hint": "Wulkan"
+      },
+      {
+        "word": "Grenze",
+        "hint": "Granica"
+      },
+      {
+        "word": "Gletscher",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "Erdteil",
+        "hint": "Część świata"
+      },
+      {
+        "word": "Hauptstadt",
+        "hint": "Stolica"
+      },
+      {
+        "word": "Gebirge",
+        "hint": "Góry / pasmo górskie"
+      },
+      {
+        "word": "Landkarte",
+        "hint": "Mapa"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomia",
+    "description": "Słownictwo astronomiczne po niemiecku",
+    "iconName": "star",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Stern",
+        "hint": "Gwiazda"
+      },
+      {
+        "word": "Planet",
+        "hint": "Planeta"
+      },
+      {
+        "word": "Mond",
+        "hint": "Księżyc"
+      },
+      {
+        "word": "Sonne",
+        "hint": "Słońce"
+      },
+      {
+        "word": "Galaxie",
+        "hint": "Galaktyka"
+      },
+      {
+        "word": "Komet",
+        "hint": "Kometa"
+      },
+      {
+        "word": "Teleskop",
+        "hint": "Teleskop"
+      },
+      {
+        "word": "Umlaufbahn",
+        "hint": "Orbita"
+      },
+      {
+        "word": "Weltraum",
+        "hint": "Przestrzeń kosmiczna"
+      },
+      {
+        "word": "Asteroid",
+        "hint": "Asteroida"
+      },
+      {
+        "word": "Rakete",
+        "hint": "Rakieta"
+      },
+      {
+        "word": "Astronaut",
+        "hint": "Astronauta"
+      },
+      {
+        "word": "Sonnensystem",
+        "hint": "Układ słoneczny"
+      },
+      {
+        "word": "Sternbild",
+        "hint": "Gwiazdozbiór"
+      },
+      {
+        "word": "Finsternis",
+        "hint": "Zaćmienie"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean i morze",
+    "description": "Słownictwo morskie po niemiecku",
+    "iconName": "water.waves",
+    "color": "#0077b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Meer",
+        "hint": "Morze"
+      },
+      {
+        "word": "Welle",
+        "hint": "Fala"
+      },
+      {
+        "word": "Strand",
+        "hint": "Plaża"
+      },
+      {
+        "word": "Hafen",
+        "hint": "Port"
+      },
+      {
+        "word": "Schiff",
+        "hint": "Statek"
+      },
+      {
+        "word": "Leuchtturm",
+        "hint": "Latarnia morska"
+      },
+      {
+        "word": "Muschel",
+        "hint": "Muszla"
+      },
+      {
+        "word": "Koralle",
+        "hint": "Koral"
+      },
+      {
+        "word": "Gezeiten",
+        "hint": "Pływy morskie"
+      },
+      {
+        "word": "Tiefe",
+        "hint": "Głębia / głębokość"
+      },
+      {
+        "word": "Anker",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "Segelboot",
+        "hint": "Żaglówka"
+      },
+      {
+        "word": "Tauchen",
+        "hint": "Nurkowanie"
+      },
+      {
+        "word": "Wal",
+        "hint": "Wieloryb"
+      },
+      {
+        "word": "Algen",
+        "hint": "Glony / algi"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Góry",
+    "description": "Słownictwo górskie po niemiecku",
+    "iconName": "mountain.2",
+    "color": "#6b7280",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Berg",
+        "hint": "Góra"
+      },
+      {
+        "word": "Gipfel",
+        "hint": "Szczyt"
+      },
+      {
+        "word": "Hütte",
+        "hint": "Schronisko / chata"
+      },
+      {
+        "word": "Wanderung",
+        "hint": "Wędrówka"
+      },
+      {
+        "word": "Pfad",
+        "hint": "Ścieżka / szlak"
+      },
+      {
+        "word": "Klettern",
+        "hint": "Wspinaczka"
+      },
+      {
+        "word": "Felsen",
+        "hint": "Skała"
+      },
+      {
+        "word": "Schnee",
+        "hint": "Śnieg"
+      },
+      {
+        "word": "Lawine",
+        "hint": "Lawina"
+      },
+      {
+        "word": "Höhle",
+        "hint": "Jaskinia"
+      },
+      {
+        "word": "Wasserfall",
+        "hint": "Wodospad"
+      },
+      {
+        "word": "Rucksack",
+        "hint": "Plecak"
+      },
+      {
+        "word": "Seilbahn",
+        "hint": "Kolejka linowa"
+      },
+      {
+        "word": "Abhang",
+        "hint": "Zbocze / stok"
+      },
+      {
+        "word": "Aussicht",
+        "hint": "Widok / panorama"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Kemping",
+    "description": "Słownictwo kempingowe po niemiecku",
+    "iconName": "tent",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Zelt",
+        "hint": "Namiot"
+      },
+      {
+        "word": "Schlafsack",
+        "hint": "Śpiwór"
+      },
+      {
+        "word": "Lagerfeuer",
+        "hint": "Ognisko"
+      },
+      {
+        "word": "Taschenlampe",
+        "hint": "Latarka"
+      },
+      {
+        "word": "Campingplatz",
+        "hint": "Pole kempingowe"
+      },
+      {
+        "word": "Isomatte",
+        "hint": "Karimata"
+      },
+      {
+        "word": "Kompass",
+        "hint": "Kompas"
+      },
+      {
+        "word": "Messer",
+        "hint": "Nóż"
+      },
+      {
+        "word": "Mückenspray",
+        "hint": "Spray na komary"
+      },
+      {
+        "word": "Wanderstiefel",
+        "hint": "Buty trekkingowe"
+      },
+      {
+        "word": "Kühltasche",
+        "hint": "Torba chłodząca"
+      },
+      {
+        "word": "Grill",
+        "hint": "Grill"
+      },
+      {
+        "word": "Hängematte",
+        "hint": "Hamak"
+      },
+      {
+        "word": "Trinkflasche",
+        "hint": "Bidon / butelka"
+      },
+      {
+        "word": "Thermoskanne",
+        "hint": "Termos"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Prawo",
+    "description": "Słownictwo prawnicze po niemiecku",
+    "iconName": "building.columns",
+    "color": "#78350f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Gesetz",
+        "hint": "Prawo / ustawa"
+      },
+      {
+        "word": "Richter",
+        "hint": "Sędzia"
+      },
+      {
+        "word": "Anwalt",
+        "hint": "Adwokat / prawnik"
+      },
+      {
+        "word": "Gericht",
+        "hint": "Sąd"
+      },
+      {
+        "word": "Urteil",
+        "hint": "Wyrok"
+      },
+      {
+        "word": "Vertrag",
+        "hint": "Umowa"
+      },
+      {
+        "word": "Zeuge",
+        "hint": "Świadek"
+      },
+      {
+        "word": "Strafe",
+        "hint": "Kara"
+      },
+      {
+        "word": "Klage",
+        "hint": "Pozew / skarga"
+      },
+      {
+        "word": "Beweis",
+        "hint": "Dowód"
+      },
+      {
+        "word": "Schuldig",
+        "hint": "Winny"
+      },
+      {
+        "word": "Verbrechen",
+        "hint": "Przestępstwo"
+      },
+      {
+        "word": "Gefängnis",
+        "hint": "Więzienie"
+      },
+      {
+        "word": "Gerechtigkeit",
+        "hint": "Sprawiedliwość"
+      },
+      {
+        "word": "Paragraph",
+        "hint": "Paragraf"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Polityka",
+    "description": "Słownictwo polityczne po niemiecku",
+    "iconName": "person.3",
+    "color": "#1e40af",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Regierung",
+        "hint": "Rząd"
+      },
+      {
+        "word": "Parlament",
+        "hint": "Parlament"
+      },
+      {
+        "word": "Wahl",
+        "hint": "Wybory"
+      },
+      {
+        "word": "Partei",
+        "hint": "Partia polityczna"
+      },
+      {
+        "word": "Demokratie",
+        "hint": "Demokracja"
+      },
+      {
+        "word": "Kanzler",
+        "hint": "Kanclerz"
+      },
+      {
+        "word": "Minister",
+        "hint": "Minister"
+      },
+      {
+        "word": "Abstimmung",
+        "hint": "Głosowanie"
+      },
+      {
+        "word": "Bürger",
+        "hint": "Obywatel"
+      },
+      {
+        "word": "Verfassung",
+        "hint": "Konstytucja"
+      },
+      {
+        "word": "Opposition",
+        "hint": "Opozycja"
+      },
+      {
+        "word": "Debatte",
+        "hint": "Debata"
+      },
+      {
+        "word": "Wahlrecht",
+        "hint": "Prawo wyborcze"
+      },
+      {
+        "word": "Koalition",
+        "hint": "Koalicja"
+      },
+      {
+        "word": "Bundestag",
+        "hint": "Bundestag (parlament)"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Ekonomia",
+    "description": "Pojęcia ekonomiczne po niemiecku",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Wirtschaft",
+        "hint": "Gospodarka"
+      },
+      {
+        "word": "Markt",
+        "hint": "Rynek"
+      },
+      {
+        "word": "Handel",
+        "hint": "Handel"
+      },
+      {
+        "word": "Export",
+        "hint": "Eksport"
+      },
+      {
+        "word": "Import",
+        "hint": "Import"
+      },
+      {
+        "word": "Inflation",
+        "hint": "Inflacja"
+      },
+      {
+        "word": "Steuer",
+        "hint": "Podatek"
+      },
+      {
+        "word": "Umsatz",
+        "hint": "Obrót / przychód"
+      },
+      {
+        "word": "Gewinn",
+        "hint": "Zysk"
+      },
+      {
+        "word": "Verlust",
+        "hint": "Strata"
+      },
+      {
+        "word": "Aktie",
+        "hint": "Akcja (giełdowa)"
+      },
+      {
+        "word": "Investition",
+        "hint": "Inwestycja"
+      },
+      {
+        "word": "Konkurrenz",
+        "hint": "Konkurencja"
+      },
+      {
+        "word": "Unternehmen",
+        "hint": "Przedsiębiorstwo"
+      },
+      {
+        "word": "Wachstum",
+        "hint": "Wzrost (gospodarczy)"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Bankowość",
+    "description": "Pojęcia bankowe po niemiecku",
+    "iconName": "banknote",
+    "color": "#16a34a",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Bank",
+        "hint": "Bank"
+      },
+      {
+        "word": "Konto",
+        "hint": "Konto"
+      },
+      {
+        "word": "Überweisung",
+        "hint": "Przelew"
+      },
+      {
+        "word": "Kredit",
+        "hint": "Kredyt"
+      },
+      {
+        "word": "Zinsen",
+        "hint": "Odsetki"
+      },
+      {
+        "word": "Sparkonto",
+        "hint": "Konto oszczędnościowe"
+      },
+      {
+        "word": "Geldautomat",
+        "hint": "Bankomat"
+      },
+      {
+        "word": "Schulden",
+        "hint": "Długi"
+      },
+      {
+        "word": "Hypothek",
+        "hint": "Hipoteka"
+      },
+      {
+        "word": "Währung",
+        "hint": "Waluta"
+      },
+      {
+        "word": "Girokonto",
+        "hint": "Konto bieżące"
+      },
+      {
+        "word": "Saldo",
+        "hint": "Saldo"
+      },
+      {
+        "word": "Darlehen",
+        "hint": "Pożyczka"
+      },
+      {
+        "word": "Wechselkurs",
+        "hint": "Kurs wymiany walut"
+      },
+      {
+        "word": "Kontoauszug",
+        "hint": "Wyciąg z konta"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Ubezpieczenia",
+    "description": "Słownictwo ubezpieczeniowe po niemiecku",
+    "iconName": "shield",
+    "color": "#0369a1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Versicherung",
+        "hint": "Ubezpieczenie"
+      },
+      {
+        "word": "Police",
+        "hint": "Polisa"
+      },
+      {
+        "word": "Prämie",
+        "hint": "Składka"
+      },
+      {
+        "word": "Schaden",
+        "hint": "Szkoda"
+      },
+      {
+        "word": "Antrag",
+        "hint": "Wniosek"
+      },
+      {
+        "word": "Leistung",
+        "hint": "Świadczenie"
+      },
+      {
+        "word": "Haftpflicht",
+        "hint": "Odpowiedzialność cywilna"
+      },
+      {
+        "word": "Selbstbehalt",
+        "hint": "Udział własny / franszyza"
+      },
+      {
+        "word": "Unfall",
+        "hint": "Wypadek"
+      },
+      {
+        "word": "Deckung",
+        "hint": "Pokrycie / ochrona"
+      },
+      {
+        "word": "Kündigung",
+        "hint": "Wypowiedzenie"
+      },
+      {
+        "word": "Vertragsdauer",
+        "hint": "Okres umowy"
+      },
+      {
+        "word": "Beitrag",
+        "hint": "Składka / wkład"
+      },
+      {
+        "word": "Gutachten",
+        "hint": "Ekspertyza / opinia"
+      },
+      {
+        "word": "Erstattung",
+        "hint": "Zwrot kosztów"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Gotowanie",
+    "description": "Techniki i pojęcia kulinarne po niemiecku",
+    "iconName": "flame",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Kochtopf",
+        "hint": "Garnek"
+      },
+      {
+        "word": "Pfanne",
+        "hint": "Patelnia"
+      },
+      {
+        "word": "Rezept",
+        "hint": "Przepis"
+      },
+      {
+        "word": "Braten",
+        "hint": "Smażenie / pieczenie"
+      },
+      {
+        "word": "Backen",
+        "hint": "Pieczenie (w piekarniku)"
+      },
+      {
+        "word": "Schneiden",
+        "hint": "Krojenie"
+      },
+      {
+        "word": "Rühren",
+        "hint": "Mieszanie"
+      },
+      {
+        "word": "Würzen",
+        "hint": "Przyprawianie"
+      },
+      {
+        "word": "Schälen",
+        "hint": "Obieranie"
+      },
+      {
+        "word": "Dünsten",
+        "hint": "Duszenie"
+      },
+      {
+        "word": "Ofen",
+        "hint": "Piekarnik"
+      },
+      {
+        "word": "Herd",
+        "hint": "Kuchenka"
+      },
+      {
+        "word": "Schneebesen",
+        "hint": "Trzepaczka"
+      },
+      {
+        "word": "Zutat",
+        "hint": "Składnik"
+      },
+      {
+        "word": "Portion",
+        "hint": "Porcja"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Pieczenie",
+    "description": "Słownictwo piekarnicze po niemiecku",
+    "iconName": "birthday.cake",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Kuchen",
+        "hint": "Ciasto"
+      },
+      {
+        "word": "Teig",
+        "hint": "Ciasto (surowe)"
+      },
+      {
+        "word": "Mehl",
+        "hint": "Mąka"
+      },
+      {
+        "word": "Zucker",
+        "hint": "Cukier"
+      },
+      {
+        "word": "Butter",
+        "hint": "Masło"
+      },
+      {
+        "word": "Hefe",
+        "hint": "Drożdże"
+      },
+      {
+        "word": "Backblech",
+        "hint": "Blacha do pieczenia"
+      },
+      {
+        "word": "Backform",
+        "hint": "Forma do pieczenia"
+      },
+      {
+        "word": "Glasur",
+        "hint": "Polewa / lukier"
+      },
+      {
+        "word": "Sahne",
+        "hint": "Śmietana"
+      },
+      {
+        "word": "Vanille",
+        "hint": "Wanilia"
+      },
+      {
+        "word": "Backpulver",
+        "hint": "Proszek do pieczenia"
+      },
+      {
+        "word": "Keks",
+        "hint": "Ciastko / herbatnik"
+      },
+      {
+        "word": "Brösel",
+        "hint": "Bułka tarta / okruszki"
+      },
+      {
+        "word": "Torte",
+        "hint": "Tort"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Przyprawy",
+    "description": "Przyprawy i zioła po niemiecku",
+    "iconName": "leaf.circle",
+    "color": "#b45309",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Salz",
+        "hint": "Sól"
+      },
+      {
+        "word": "Pfeffer",
+        "hint": "Pieprz"
+      },
+      {
+        "word": "Zimt",
+        "hint": "Cynamon"
+      },
+      {
+        "word": "Knoblauch",
+        "hint": "Czosnek"
+      },
+      {
+        "word": "Basilikum",
+        "hint": "Bazylia"
+      },
+      {
+        "word": "Oregano",
+        "hint": "Oregano"
+      },
+      {
+        "word": "Paprika",
+        "hint": "Papryka (przyprawa)"
+      },
+      {
+        "word": "Ingwer",
+        "hint": "Imbir"
+      },
+      {
+        "word": "Petersilie",
+        "hint": "Pietruszka"
+      },
+      {
+        "word": "Thymian",
+        "hint": "Tymianek"
+      },
+      {
+        "word": "Rosmarin",
+        "hint": "Rozmaryn"
+      },
+      {
+        "word": "Muskatnuss",
+        "hint": "Gałka muszkatołowa"
+      },
+      {
+        "word": "Kümmel",
+        "hint": "Kminek"
+      },
+      {
+        "word": "Safran",
+        "hint": "Szafran"
+      },
+      {
+        "word": "Dill",
+        "hint": "Koper"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Nabiał",
+    "description": "Produkty mleczne po niemiecku",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Milch",
+        "hint": "Mleko"
+      },
+      {
+        "word": "Käse",
+        "hint": "Ser"
+      },
+      {
+        "word": "Joghurt",
+        "hint": "Jogurt"
+      },
+      {
+        "word": "Quark",
+        "hint": "Twaróg"
+      },
+      {
+        "word": "Sahne",
+        "hint": "Śmietana"
+      },
+      {
+        "word": "Buttermilch",
+        "hint": "Maślanka"
+      },
+      {
+        "word": "Frischkäse",
+        "hint": "Serek śmietankowy"
+      },
+      {
+        "word": "Schmelzkäse",
+        "hint": "Ser topiony"
+      },
+      {
+        "word": "Molke",
+        "hint": "Serwatka"
+      },
+      {
+        "word": "Vollmilch",
+        "hint": "Mleko pełne"
+      },
+      {
+        "word": "Eiscreme",
+        "hint": "Lody"
+      },
+      {
+        "word": "Mozzarella",
+        "hint": "Mozzarella"
+      },
+      {
+        "word": "Gouda",
+        "hint": "Gouda (ser)"
+      },
+      {
+        "word": "Hüttenkäse",
+        "hint": "Ser wiejski"
+      },
+      {
+        "word": "Pudding",
+        "hint": "Budyń"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Mięso",
+    "description": "Rodzaje mięsa po niemiecku",
+    "iconName": "fork.knife.circle",
+    "color": "#991b1b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Fleisch",
+        "hint": "Mięso"
+      },
+      {
+        "word": "Rindfleisch",
+        "hint": "Wołowina"
+      },
+      {
+        "word": "Schweinefleisch",
+        "hint": "Wieprzowina"
+      },
+      {
+        "word": "Hähnchen",
+        "hint": "Kurczak"
+      },
+      {
+        "word": "Lamm",
+        "hint": "Jagnięcina / baranina"
+      },
+      {
+        "word": "Wurst",
+        "hint": "Kiełbasa"
+      },
+      {
+        "word": "Schinken",
+        "hint": "Szynka"
+      },
+      {
+        "word": "Speck",
+        "hint": "Boczek"
+      },
+      {
+        "word": "Hackfleisch",
+        "hint": "Mięso mielone"
+      },
+      {
+        "word": "Steak",
+        "hint": "Stek"
+      },
+      {
+        "word": "Pute",
+        "hint": "Indyk"
+      },
+      {
+        "word": "Ente",
+        "hint": "Kaczka"
+      },
+      {
+        "word": "Kalbfleisch",
+        "hint": "Cielęcina"
+      },
+      {
+        "word": "Braten",
+        "hint": "Pieczeń"
+      },
+      {
+        "word": "Schnitzel",
+        "hint": "Sznycel / kotlet"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Zwierzęta domowe",
+    "description": "Zwierzęta domowe i opieka nad nimi",
+    "iconName": "pawprint",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Hund",
+        "hint": "Pies"
+      },
+      {
+        "word": "Katze",
+        "hint": "Kot"
+      },
+      {
+        "word": "Hamster",
+        "hint": "Chomik"
+      },
+      {
+        "word": "Kaninchen",
+        "hint": "Królik"
+      },
+      {
+        "word": "Papagei",
+        "hint": "Papuga"
+      },
+      {
+        "word": "Goldfisch",
+        "hint": "Złota rybka"
+      },
+      {
+        "word": "Schildkröte",
+        "hint": "Żółw"
+      },
+      {
+        "word": "Meerschweinchen",
+        "hint": "Świnka morska"
+      },
+      {
+        "word": "Wellensittich",
+        "hint": "Papużka falista"
+      },
+      {
+        "word": "Futter",
+        "hint": "Karma (dla zwierząt)"
+      },
+      {
+        "word": "Leine",
+        "hint": "Smycz"
+      },
+      {
+        "word": "Napf",
+        "hint": "Miska (dla zwierzęcia)"
+      },
+      {
+        "word": "Käfig",
+        "hint": "Klatka"
+      },
+      {
+        "word": "Tierarzt",
+        "hint": "Weterynarz"
+      },
+      {
+        "word": "Aquarium",
+        "hint": "Akwarium"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Ptaki",
+    "description": "Gatunki ptaków po niemiecku",
+    "iconName": "bird",
+    "color": "#14b8a6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Vogel",
+        "hint": "Ptak"
+      },
+      {
+        "word": "Adler",
+        "hint": "Orzeł"
+      },
+      {
+        "word": "Taube",
+        "hint": "Gołąb"
+      },
+      {
+        "word": "Spatz",
+        "hint": "Wróbel"
+      },
+      {
+        "word": "Schwan",
+        "hint": "Łabędź"
+      },
+      {
+        "word": "Storch",
+        "hint": "Bocian"
+      },
+      {
+        "word": "Eule",
+        "hint": "Sowa"
+      },
+      {
+        "word": "Krähe",
+        "hint": "Wrona"
+      },
+      {
+        "word": "Amsel",
+        "hint": "Kos"
+      },
+      {
+        "word": "Falke",
+        "hint": "Sokół"
+      },
+      {
+        "word": "Nachtigall",
+        "hint": "Słowik"
+      },
+      {
+        "word": "Specht",
+        "hint": "Dzięcioł"
+      },
+      {
+        "word": "Möwe",
+        "hint": "Mewa"
+      },
+      {
+        "word": "Pinguin",
+        "hint": "Pingwin"
+      },
+      {
+        "word": "Flamingo",
+        "hint": "Flaming"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Owady",
+    "description": "Owady i robaki po niemiecku",
+    "iconName": "ladybug",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Biene",
+        "hint": "Pszczoła"
+      },
+      {
+        "word": "Schmetterling",
+        "hint": "Motyl"
+      },
+      {
+        "word": "Ameise",
+        "hint": "Mrówka"
+      },
+      {
+        "word": "Fliege",
+        "hint": "Mucha"
+      },
+      {
+        "word": "Mücke",
+        "hint": "Komar"
+      },
+      {
+        "word": "Käfer",
+        "hint": "Chrząszcz / żuk"
+      },
+      {
+        "word": "Spinne",
+        "hint": "Pająk"
+      },
+      {
+        "word": "Wespe",
+        "hint": "Osa"
+      },
+      {
+        "word": "Grille",
+        "hint": "Świerszcz"
+      },
+      {
+        "word": "Marienkäfer",
+        "hint": "Biedronka"
+      },
+      {
+        "word": "Heuschrecke",
+        "hint": "Konik polny / szarańcza"
+      },
+      {
+        "word": "Libelle",
+        "hint": "Ważka"
+      },
+      {
+        "word": "Raupe",
+        "hint": "Gąsienica"
+      },
+      {
+        "word": "Wurm",
+        "hint": "Robak"
+      },
+      {
+        "word": "Hummel",
+        "hint": "Trzmiel"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Życie morskie",
+    "description": "Zwierzęta i organizmy morskie",
+    "iconName": "fish",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Fisch",
+        "hint": "Ryba"
+      },
+      {
+        "word": "Hai",
+        "hint": "Rekin"
+      },
+      {
+        "word": "Delfin",
+        "hint": "Delfin"
+      },
+      {
+        "word": "Qualle",
+        "hint": "Meduza"
+      },
+      {
+        "word": "Seepferdchen",
+        "hint": "Konik morski"
+      },
+      {
+        "word": "Krabbe",
+        "hint": "Krab"
+      },
+      {
+        "word": "Tintenfisch",
+        "hint": "Ośmiornica / kałamarnica"
+      },
+      {
+        "word": "Seestern",
+        "hint": "Rozgwiazda"
+      },
+      {
+        "word": "Rochen",
+        "hint": "Płaszczka"
+      },
+      {
+        "word": "Hummer",
+        "hint": "Homar"
+      },
+      {
+        "word": "Garnele",
+        "hint": "Krewetka"
+      },
+      {
+        "word": "Schildkröte",
+        "hint": "Żółw morski"
+      },
+      {
+        "word": "Robbe",
+        "hint": "Foka"
+      },
+      {
+        "word": "Seeotter",
+        "hint": "Wydra morska"
+      },
+      {
+        "word": "Koralle",
+        "hint": "Koral"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Zwierzęta hodowlane",
+    "description": "Zwierzęta gospodarskie po niemiecku",
+    "iconName": "hare",
+    "color": "#92400e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Kuh",
+        "hint": "Krowa"
+      },
+      {
+        "word": "Schwein",
+        "hint": "Świnia"
+      },
+      {
+        "word": "Pferd",
+        "hint": "Koń"
+      },
+      {
+        "word": "Schaf",
+        "hint": "Owca"
+      },
+      {
+        "word": "Ziege",
+        "hint": "Koza"
+      },
+      {
+        "word": "Huhn",
+        "hint": "Kura"
+      },
+      {
+        "word": "Hahn",
+        "hint": "Kogut"
+      },
+      {
+        "word": "Gans",
+        "hint": "Gęś"
+      },
+      {
+        "word": "Esel",
+        "hint": "Osioł"
+      },
+      {
+        "word": "Truthahn",
+        "hint": "Indyk"
+      },
+      {
+        "word": "Stier",
+        "hint": "Byk"
+      },
+      {
+        "word": "Ferkel",
+        "hint": "Prosię"
+      },
+      {
+        "word": "Fohlen",
+        "hint": "Źrebię"
+      },
+      {
+        "word": "Kalb",
+        "hint": "Cielę"
+      },
+      {
+        "word": "Lamm",
+        "hint": "Jagnię"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Uczucia",
+    "description": "Uczucia i stany emocjonalne po niemiecku",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Freude",
+        "hint": "Radość"
+      },
+      {
+        "word": "Trauer",
+        "hint": "Smutek / żałoba"
+      },
+      {
+        "word": "Angst",
+        "hint": "Strach / lęk"
+      },
+      {
+        "word": "Liebe",
+        "hint": "Miłość"
+      },
+      {
+        "word": "Wut",
+        "hint": "Złość / gniew"
+      },
+      {
+        "word": "Hoffnung",
+        "hint": "Nadzieja"
+      },
+      {
+        "word": "Stolz",
+        "hint": "Duma"
+      },
+      {
+        "word": "Scham",
+        "hint": "Wstyd"
+      },
+      {
+        "word": "Eifersucht",
+        "hint": "Zazdrość"
+      },
+      {
+        "word": "Dankbarkeit",
+        "hint": "Wdzięczność"
+      },
+      {
+        "word": "Neugier",
+        "hint": "Ciekawość"
+      },
+      {
+        "word": "Einsamkeit",
+        "hint": "Samotność"
+      },
+      {
+        "word": "Zufriedenheit",
+        "hint": "Zadowolenie"
+      },
+      {
+        "word": "Sehnsucht",
+        "hint": "Tęsknota"
+      },
+      {
+        "word": "Überraschung",
+        "hint": "Zaskoczenie / niespodzianka"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Osobowość",
+    "description": "Cechy osobowości i charakteru",
+    "iconName": "person.circle",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Ehrlich",
+        "hint": "Uczciwy"
+      },
+      {
+        "word": "Mutig",
+        "hint": "Odważny"
+      },
+      {
+        "word": "Geduldig",
+        "hint": "Cierpliwy"
+      },
+      {
+        "word": "Fleißig",
+        "hint": "Pracowity"
+      },
+      {
+        "word": "Freundlich",
+        "hint": "Przyjazny / miły"
+      },
+      {
+        "word": "Schüchtern",
+        "hint": "Nieśmiały"
+      },
+      {
+        "word": "Neugierig",
+        "hint": "Ciekawy / dociekliwy"
+      },
+      {
+        "word": "Großzügig",
+        "hint": "Hojny"
+      },
+      {
+        "word": "Zuverlässig",
+        "hint": "Niezawodny"
+      },
+      {
+        "word": "Kreativ",
+        "hint": "Kreatywny"
+      },
+      {
+        "word": "Bescheiden",
+        "hint": "Skromny"
+      },
+      {
+        "word": "Stur",
+        "hint": "Uparty"
+      },
+      {
+        "word": "Optimistisch",
+        "hint": "Optymistyczny"
+      },
+      {
+        "word": "Sensibel",
+        "hint": "Wrażliwy"
+      },
+      {
+        "word": "Hilfsbereit",
+        "hint": "Uczynny / pomocny"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relacje",
+    "description": "Słownictwo dotyczące relacji międzyludzkich",
+    "iconName": "heart.circle",
+    "color": "#db2777",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Freundschaft",
+        "hint": "Przyjaźń"
+      },
+      {
+        "word": "Beziehung",
+        "hint": "Związek / relacja"
+      },
+      {
+        "word": "Hochzeit",
+        "hint": "Ślub / wesele"
+      },
+      {
+        "word": "Verlobung",
+        "hint": "Zaręczyny"
+      },
+      {
+        "word": "Scheidung",
+        "hint": "Rozwód"
+      },
+      {
+        "word": "Vertrauen",
+        "hint": "Zaufanie"
+      },
+      {
+        "word": "Streit",
+        "hint": "Kłótnia"
+      },
+      {
+        "word": "Versöhnung",
+        "hint": "Pojednanie"
+      },
+      {
+        "word": "Nachbar",
+        "hint": "Sąsiad"
+      },
+      {
+        "word": "Kollege",
+        "hint": "Kolega z pracy"
+      },
+      {
+        "word": "Paar",
+        "hint": "Para"
+      },
+      {
+        "word": "Trennung",
+        "hint": "Rozstanie"
+      },
+      {
+        "word": "Zusammenleben",
+        "hint": "Wspólne życie"
+      },
+      {
+        "word": "Verständnis",
+        "hint": "Zrozumienie"
+      },
+      {
+        "word": "Respekt",
+        "hint": "Szacunek"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Komunikacja",
+    "description": "Słownictwo związane z komunikacją",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Gespräch",
+        "hint": "Rozmowa"
+      },
+      {
+        "word": "Nachricht",
+        "hint": "Wiadomość"
+      },
+      {
+        "word": "Anruf",
+        "hint": "Telefon / połączenie"
+      },
+      {
+        "word": "Brief",
+        "hint": "List"
+      },
+      {
+        "word": "Sprache",
+        "hint": "Język / mowa"
+      },
+      {
+        "word": "Meinung",
+        "hint": "Opinia / zdanie"
+      },
+      {
+        "word": "Frage",
+        "hint": "Pytanie"
+      },
+      {
+        "word": "Antwort",
+        "hint": "Odpowiedź"
+      },
+      {
+        "word": "Zustimmung",
+        "hint": "Zgoda / aprobata"
+      },
+      {
+        "word": "Ablehnung",
+        "hint": "Odmowa"
+      },
+      {
+        "word": "Diskussion",
+        "hint": "Dyskusja"
+      },
+      {
+        "word": "Erklärung",
+        "hint": "Wyjaśnienie"
+      },
+      {
+        "word": "Beschwerde",
+        "hint": "Reklamacja / skarga"
+      },
+      {
+        "word": "Vorschlag",
+        "hint": "Propozycja"
+      },
+      {
+        "word": "Missverständnis",
+        "hint": "Nieporozumienie"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gesty i mimika",
+    "description": "Gesty i mowa ciała po niemiecku",
+    "iconName": "hand.wave",
+    "color": "#d946ef",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Lächeln",
+        "hint": "Uśmiech"
+      },
+      {
+        "word": "Nicken",
+        "hint": "Kiwanie głową"
+      },
+      {
+        "word": "Winken",
+        "hint": "Machanie (ręką)"
+      },
+      {
+        "word": "Kopfschütteln",
+        "hint": "Kręcenie głową"
+      },
+      {
+        "word": "Umarmen",
+        "hint": "Przytulanie"
+      },
+      {
+        "word": "Händedruck",
+        "hint": "Uścisk dłoni"
+      },
+      {
+        "word": "Zeigen",
+        "hint": "Wskazywanie"
+      },
+      {
+        "word": "Klatschen",
+        "hint": "Klaskanie"
+      },
+      {
+        "word": "Stirnrunzeln",
+        "hint": "Marszczenie brwi"
+      },
+      {
+        "word": "Achselzucken",
+        "hint": "Wzruszenie ramionami"
+      },
+      {
+        "word": "Augenzwinkern",
+        "hint": "Mrugnięcie okiem"
+      },
+      {
+        "word": "Gähnen",
+        "hint": "Ziewanie"
+      },
+      {
+        "word": "Verbeugung",
+        "hint": "Ukłon"
+      },
+      {
+        "word": "Blickkontakt",
+        "hint": "Kontakt wzrokowy"
+      },
+      {
+        "word": "Daumen hoch",
+        "hint": "Kciuk w górę"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architektura",
+    "description": "Pojęcia architektoniczne po niemiecku",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Gebäude",
+        "hint": "Budynek"
+      },
+      {
+        "word": "Fassade",
+        "hint": "Fasada"
+      },
+      {
+        "word": "Fundament",
+        "hint": "Fundament"
+      },
+      {
+        "word": "Säule",
+        "hint": "Kolumna / filar"
+      },
+      {
+        "word": "Kuppel",
+        "hint": "Kopuła"
+      },
+      {
+        "word": "Treppe",
+        "hint": "Schody"
+      },
+      {
+        "word": "Balkon",
+        "hint": "Balkon"
+      },
+      {
+        "word": "Gewölbe",
+        "hint": "Sklepienie"
+      },
+      {
+        "word": "Giebel",
+        "hint": "Szczyt (dachu)"
+      },
+      {
+        "word": "Grundriss",
+        "hint": "Rzut / plan budynku"
+      },
+      {
+        "word": "Dachboden",
+        "hint": "Strych / poddasze"
+      },
+      {
+        "word": "Keller",
+        "hint": "Piwnica"
+      },
+      {
+        "word": "Erker",
+        "hint": "Wykusz"
+      },
+      {
+        "word": "Stockwerk",
+        "hint": "Piętro / kondygnacja"
+      },
+      {
+        "word": "Terrasse",
+        "hint": "Taras"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Budownictwo",
+    "description": "Słownictwo budowlane po niemiecku",
+    "iconName": "hammer",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Baustelle",
+        "hint": "Plac budowy"
+      },
+      {
+        "word": "Beton",
+        "hint": "Beton"
+      },
+      {
+        "word": "Ziegel",
+        "hint": "Cegła"
+      },
+      {
+        "word": "Mörtel",
+        "hint": "Zaprawa murarska"
+      },
+      {
+        "word": "Gerüst",
+        "hint": "Rusztowanie"
+      },
+      {
+        "word": "Kran",
+        "hint": "Dźwig / żuraw"
+      },
+      {
+        "word": "Bagger",
+        "hint": "Koparka"
+      },
+      {
+        "word": "Maurer",
+        "hint": "Murarz"
+      },
+      {
+        "word": "Dach",
+        "hint": "Dach"
+      },
+      {
+        "word": "Wand",
+        "hint": "Ściana"
+      },
+      {
+        "word": "Boden",
+        "hint": "Podłoga"
+      },
+      {
+        "word": "Isolierung",
+        "hint": "Izolacja"
+      },
+      {
+        "word": "Putz",
+        "hint": "Tynk"
+      },
+      {
+        "word": "Nagel",
+        "hint": "Gwóźdź"
+      },
+      {
+        "word": "Schraube",
+        "hint": "Śruba"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Elektryczność",
+    "description": "Pojęcia elektryczne po niemiecku",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Strom",
+        "hint": "Prąd"
+      },
+      {
+        "word": "Steckdose",
+        "hint": "Gniazdko elektryczne"
+      },
+      {
+        "word": "Stecker",
+        "hint": "Wtyczka"
+      },
+      {
+        "word": "Kabel",
+        "hint": "Kabel / przewód"
+      },
+      {
+        "word": "Schalter",
+        "hint": "Wyłącznik / przełącznik"
+      },
+      {
+        "word": "Sicherung",
+        "hint": "Bezpiecznik"
+      },
+      {
+        "word": "Spannung",
+        "hint": "Napięcie"
+      },
+      {
+        "word": "Glühbirne",
+        "hint": "Żarówka"
+      },
+      {
+        "word": "Batterie",
+        "hint": "Bateria"
+      },
+      {
+        "word": "Generator",
+        "hint": "Generator"
+      },
+      {
+        "word": "Leitung",
+        "hint": "Przewód / instalacja"
+      },
+      {
+        "word": "Stromzähler",
+        "hint": "Licznik prądu"
+      },
+      {
+        "word": "Verlängerungskabel",
+        "hint": "Przedłużacz"
+      },
+      {
+        "word": "Elektriker",
+        "hint": "Elektryk"
+      },
+      {
+        "word": "Kurzschluss",
+        "hint": "Zwarcie / spięcie"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Hydraulika",
+    "description": "Instalacje wodno-kanalizacyjne po niemiecku",
+    "iconName": "wrench.and.screwdriver",
+    "color": "#0891b2",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Rohr",
+        "hint": "Rura"
+      },
+      {
+        "word": "Wasserhahn",
+        "hint": "Kran"
+      },
+      {
+        "word": "Abfluss",
+        "hint": "Odpływ"
+      },
+      {
+        "word": "Dichtung",
+        "hint": "Uszczelka"
+      },
+      {
+        "word": "Ventil",
+        "hint": "Zawór"
+      },
+      {
+        "word": "Klempner",
+        "hint": "Hydraulik"
+      },
+      {
+        "word": "Heizung",
+        "hint": "Ogrzewanie"
+      },
+      {
+        "word": "Boiler",
+        "hint": "Bojler"
+      },
+      {
+        "word": "Pumpe",
+        "hint": "Pompa"
+      },
+      {
+        "word": "Verstopfung",
+        "hint": "Zatkanie / zator"
+      },
+      {
+        "word": "Abwasser",
+        "hint": "Ścieki"
+      },
+      {
+        "word": "Rohrzange",
+        "hint": "Klucz do rur"
+      },
+      {
+        "word": "Leck",
+        "hint": "Wyciek"
+      },
+      {
+        "word": "Heizkörper",
+        "hint": "Kaloryfer / grzejnik"
+      },
+      {
+        "word": "Wasserleitung",
+        "hint": "Rura wodociągowa"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Narzędzia ogrodnicze",
+    "description": "Narzędzia do pracy w ogrodzie",
+    "iconName": "leaf.arrow.triangle.circlepath",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Rasenmäher",
+        "hint": "Kosiarka do trawy"
+      },
+      {
+        "word": "Rechen",
+        "hint": "Grabie"
+      },
+      {
+        "word": "Harke",
+        "hint": "Motyka / graca"
+      },
+      {
+        "word": "Schubkarre",
+        "hint": "Taczka"
+      },
+      {
+        "word": "Gartenschlauch",
+        "hint": "Wąż ogrodowy"
+      },
+      {
+        "word": "Baumschere",
+        "hint": "Sekator"
+      },
+      {
+        "word": "Spaten",
+        "hint": "Szpadel"
+      },
+      {
+        "word": "Handschuhe",
+        "hint": "Rękawice"
+      },
+      {
+        "word": "Eimer",
+        "hint": "Wiadro"
+      },
+      {
+        "word": "Dünger",
+        "hint": "Nawóz"
+      },
+      {
+        "word": "Sprinkler",
+        "hint": "Zraszacz"
+      },
+      {
+        "word": "Hacke",
+        "hint": "Motyka / kilof"
+      },
+      {
+        "word": "Astschere",
+        "hint": "Nożyce do gałęzi"
+      },
+      {
+        "word": "Pflanztopf",
+        "hint": "Doniczka"
+      },
+      {
+        "word": "Unkrautjäter",
+        "hint": "Pielnik / wyrywacz chwastów"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medycyna",
+    "description": "Pojęcia medyczne po niemiecku",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Arzt",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "Krankheit",
+        "hint": "Choroba"
+      },
+      {
+        "word": "Diagnose",
+        "hint": "Diagnoza"
+      },
+      {
+        "word": "Therapie",
+        "hint": "Terapia"
+      },
+      {
+        "word": "Operation",
+        "hint": "Operacja"
+      },
+      {
+        "word": "Spritze",
+        "hint": "Zastrzyk / strzykawka"
+      },
+      {
+        "word": "Impfung",
+        "hint": "Szczepienie"
+      },
+      {
+        "word": "Blutdruck",
+        "hint": "Ciśnienie krwi"
+      },
+      {
+        "word": "Röntgen",
+        "hint": "Prześwietlenie / RTG"
+      },
+      {
+        "word": "Chirurg",
+        "hint": "Chirurg"
+      },
+      {
+        "word": "Symptom",
+        "hint": "Objaw"
+      },
+      {
+        "word": "Überweisung",
+        "hint": "Skierowanie (lekarskie)"
+      },
+      {
+        "word": "Krankenhaus",
+        "hint": "Szpital"
+      },
+      {
+        "word": "Notaufnahme",
+        "hint": "Izba przyjęć / SOR"
+      },
+      {
+        "word": "Verband",
+        "hint": "Bandaż / opatrunek"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Apteka",
+    "description": "Słownictwo farmaceutyczne po niemiecku",
+    "iconName": "pills",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Apotheke",
+        "hint": "Apteka"
+      },
+      {
+        "word": "Rezept",
+        "hint": "Recepta"
+      },
+      {
+        "word": "Tablette",
+        "hint": "Tabletka"
+      },
+      {
+        "word": "Salbe",
+        "hint": "Maść"
+      },
+      {
+        "word": "Sirup",
+        "hint": "Syrop"
+      },
+      {
+        "word": "Tropfen",
+        "hint": "Krople"
+      },
+      {
+        "word": "Schmerzmittel",
+        "hint": "Środek przeciwbólowy"
+      },
+      {
+        "word": "Antibiotikum",
+        "hint": "Antybiotyk"
+      },
+      {
+        "word": "Hustensaft",
+        "hint": "Syrop na kaszel"
+      },
+      {
+        "word": "Pflaster",
+        "hint": "Plaster"
+      },
+      {
+        "word": "Nebenwirkung",
+        "hint": "Skutek uboczny"
+      },
+      {
+        "word": "Dosierung",
+        "hint": "Dawkowanie"
+      },
+      {
+        "word": "Wirkstoff",
+        "hint": "Substancja czynna"
+      },
+      {
+        "word": "Beipackzettel",
+        "hint": "Ulotka (leku)"
+      },
+      {
+        "word": "Nahrungsergänzung",
+        "hint": "Suplement diety"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Ćwiczenia i kondycja fizyczna",
+    "iconName": "figure.run",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Training",
+        "hint": "Trening"
+      },
+      {
+        "word": "Ausdauer",
+        "hint": "Wytrzymałość"
+      },
+      {
+        "word": "Muskel",
+        "hint": "Mięsień"
+      },
+      {
+        "word": "Dehnung",
+        "hint": "Rozciąganie"
+      },
+      {
+        "word": "Laufband",
+        "hint": "Bieżnia"
+      },
+      {
+        "word": "Hantel",
+        "hint": "Hantle / ciężarek"
+      },
+      {
+        "word": "Kniebeuge",
+        "hint": "Przysiad"
+      },
+      {
+        "word": "Liegestütz",
+        "hint": "Pompka (ćwiczenie)"
+      },
+      {
+        "word": "Aufwärmen",
+        "hint": "Rozgrzewka"
+      },
+      {
+        "word": "Erholung",
+        "hint": "Regeneracja"
+      },
+      {
+        "word": "Puls",
+        "hint": "Tętno / puls"
+      },
+      {
+        "word": "Sportkleidung",
+        "hint": "Odzież sportowa"
+      },
+      {
+        "word": "Fitnessstudio",
+        "hint": "Siłownia"
+      },
+      {
+        "word": "Wiederholung",
+        "hint": "Powtórzenie (seria)"
+      },
+      {
+        "word": "Gleichgewicht",
+        "hint": "Równowaga"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Joga",
+    "description": "Słownictwo jogi po niemiecku",
+    "iconName": "figure.yoga",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Yoga",
+        "hint": "Joga"
+      },
+      {
+        "word": "Meditation",
+        "hint": "Medytacja"
+      },
+      {
+        "word": "Atmung",
+        "hint": "Oddychanie"
+      },
+      {
+        "word": "Haltung",
+        "hint": "Pozycja / postawa"
+      },
+      {
+        "word": "Yogamatte",
+        "hint": "Mata do jogi"
+      },
+      {
+        "word": "Entspannung",
+        "hint": "Relaksacja"
+      },
+      {
+        "word": "Flexibilität",
+        "hint": "Elastyczność"
+      },
+      {
+        "word": "Achtsamkeit",
+        "hint": "Uważność"
+      },
+      {
+        "word": "Balance",
+        "hint": "Równowaga"
+      },
+      {
+        "word": "Übung",
+        "hint": "Ćwiczenie"
+      },
+      {
+        "word": "Sonnengruß",
+        "hint": "Powitanie słońca"
+      },
+      {
+        "word": "Chakra",
+        "hint": "Czakra"
+      },
+      {
+        "word": "Mantra",
+        "hint": "Mantra"
+      },
+      {
+        "word": "Ruhe",
+        "hint": "Spokój / cisza"
+      },
+      {
+        "word": "Energie",
+        "hint": "Energia"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Zdrowie psychiczne",
+    "description": "Pojęcia dotyczące zdrowia psychicznego",
+    "iconName": "brain.head.profile",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Psychologie",
+        "hint": "Psychologia"
+      },
+      {
+        "word": "Therapeut",
+        "hint": "Terapeuta"
+      },
+      {
+        "word": "Depression",
+        "hint": "Depresja"
+      },
+      {
+        "word": "Burnout",
+        "hint": "Wypalenie zawodowe"
+      },
+      {
+        "word": "Selbstwert",
+        "hint": "Poczucie własnej wartości"
+      },
+      {
+        "word": "Resilienz",
+        "hint": "Odporność psychiczna"
+      },
+      {
+        "word": "Panikattacke",
+        "hint": "Atak paniki"
+      },
+      {
+        "word": "Schlafstörung",
+        "hint": "Zaburzenia snu"
+      },
+      {
+        "word": "Achtsamkeit",
+        "hint": "Uważność / mindfulness"
+      },
+      {
+        "word": "Wohlbefinden",
+        "hint": "Dobrostan / samopoczucie"
+      },
+      {
+        "word": "Bewältigung",
+        "hint": "Radzenie sobie"
+      },
+      {
+        "word": "Selbstfürsorge",
+        "hint": "Samoopieka / troska o siebie"
+      },
+      {
+        "word": "Stressbewältigung",
+        "hint": "Zarządzanie stresem"
+      },
+      {
+        "word": "Entspannung",
+        "hint": "Odprężenie / relaks"
+      },
+      {
+        "word": "Beratung",
+        "hint": "Poradnictwo / konsultacja"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Pojazdy",
+    "description": "Rodzaje pojazdów po niemiecku",
+    "iconName": "car",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Auto",
+        "hint": "Samochód"
+      },
+      {
+        "word": "Motorrad",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "Lastwagen",
+        "hint": "Ciężarówka"
+      },
+      {
+        "word": "Roller",
+        "hint": "Skuter / hulajnoga"
+      },
+      {
+        "word": "Transporter",
+        "hint": "Furgonetka / van"
+      },
+      {
+        "word": "Geländewagen",
+        "hint": "Samochód terenowy"
+      },
+      {
+        "word": "Krankenwagen",
+        "hint": "Karetka pogotowia"
+      },
+      {
+        "word": "Feuerwehr",
+        "hint": "Wóz strażacki"
+      },
+      {
+        "word": "Polizeiauto",
+        "hint": "Radiowóz"
+      },
+      {
+        "word": "Taxi",
+        "hint": "Taksówka"
+      },
+      {
+        "word": "Traktor",
+        "hint": "Traktor"
+      },
+      {
+        "word": "Wohnmobil",
+        "hint": "Kamper"
+      },
+      {
+        "word": "Limousine",
+        "hint": "Limuzyna"
+      },
+      {
+        "word": "Rennwagen",
+        "hint": "Samochód wyścigowy"
+      },
+      {
+        "word": "Anhänger",
+        "hint": "Przyczepa"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Lotnictwo",
+    "description": "Słownictwo lotnicze po niemiecku",
+    "iconName": "airplane",
+    "color": "#0284c7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Flugzeug",
+        "hint": "Samolot"
+      },
+      {
+        "word": "Flughafen",
+        "hint": "Lotnisko"
+      },
+      {
+        "word": "Landung",
+        "hint": "Lądowanie"
+      },
+      {
+        "word": "Start",
+        "hint": "Start / odlot"
+      },
+      {
+        "word": "Pilot",
+        "hint": "Pilot"
+      },
+      {
+        "word": "Passagier",
+        "hint": "Pasażer"
+      },
+      {
+        "word": "Flügel",
+        "hint": "Skrzydło"
+      },
+      {
+        "word": "Turbine",
+        "hint": "Turbina"
+      },
+      {
+        "word": "Cockpit",
+        "hint": "Kokpit"
+      },
+      {
+        "word": "Bordkarte",
+        "hint": "Karta pokładowa"
+      },
+      {
+        "word": "Flug",
+        "hint": "Lot"
+      },
+      {
+        "word": "Sicherheitsgurt",
+        "hint": "Pas bezpieczeństwa"
+      },
+      {
+        "word": "Stewardess",
+        "hint": "Stewardessa"
+      },
+      {
+        "word": "Hubschrauber",
+        "hint": "Helikopter"
+      },
+      {
+        "word": "Terminal",
+        "hint": "Terminal"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Żegluga",
+    "description": "Słownictwo żeglugowe po niemiecku",
+    "iconName": "ferry",
+    "color": "#0e7490",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Schiff",
+        "hint": "Statek"
+      },
+      {
+        "word": "Hafen",
+        "hint": "Port"
+      },
+      {
+        "word": "Kapitän",
+        "hint": "Kapitan"
+      },
+      {
+        "word": "Matrose",
+        "hint": "Marynarz"
+      },
+      {
+        "word": "Anker",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "Segel",
+        "hint": "Żagiel"
+      },
+      {
+        "word": "Deck",
+        "hint": "Pokład"
+      },
+      {
+        "word": "Kabine",
+        "hint": "Kabina / kajuta"
+      },
+      {
+        "word": "Fähre",
+        "hint": "Prom"
+      },
+      {
+        "word": "Kreuzfahrt",
+        "hint": "Rejs wycieczkowy"
+      },
+      {
+        "word": "Rettungsboot",
+        "hint": "Łódź ratunkowa"
+      },
+      {
+        "word": "Kompass",
+        "hint": "Kompas"
+      },
+      {
+        "word": "Ladung",
+        "hint": "Ładunek"
+      },
+      {
+        "word": "Container",
+        "hint": "Kontener"
+      },
+      {
+        "word": "Leuchtturm",
+        "hint": "Latarnia morska"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Jazda na rowerze",
+    "description": "Słownictwo rowerowe po niemiecku",
+    "iconName": "bicycle",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Fahrrad",
+        "hint": "Rower"
+      },
+      {
+        "word": "Helm",
+        "hint": "Kask"
+      },
+      {
+        "word": "Pedal",
+        "hint": "Pedał"
+      },
+      {
+        "word": "Kette",
+        "hint": "Łańcuch"
+      },
+      {
+        "word": "Sattel",
+        "hint": "Siodełko"
+      },
+      {
+        "word": "Lenker",
+        "hint": "Kierownica"
+      },
+      {
+        "word": "Bremse",
+        "hint": "Hamulec"
+      },
+      {
+        "word": "Reifen",
+        "hint": "Opona"
+      },
+      {
+        "word": "Gangschaltung",
+        "hint": "Przerzutka / bieg"
+      },
+      {
+        "word": "Radweg",
+        "hint": "Ścieżka rowerowa"
+      },
+      {
+        "word": "Speiche",
+        "hint": "Szprycha"
+      },
+      {
+        "word": "Luftpumpe",
+        "hint": "Pompka"
+      },
+      {
+        "word": "Fahrradschloss",
+        "hint": "Zamek rowerowy"
+      },
+      {
+        "word": "Dynamo",
+        "hint": "Dynamo"
+      },
+      {
+        "word": "Schutzblech",
+        "hint": "Błotnik"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Kolej",
+    "description": "Słownictwo kolejowe po niemiecku",
+    "iconName": "tram",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Zug",
+        "hint": "Pociąg"
+      },
+      {
+        "word": "Bahnhof",
+        "hint": "Dworzec kolejowy"
+      },
+      {
+        "word": "Gleis",
+        "hint": "Peron / tor"
+      },
+      {
+        "word": "Fahrkarte",
+        "hint": "Bilet"
+      },
+      {
+        "word": "Schaffner",
+        "hint": "Konduktor"
+      },
+      {
+        "word": "Abfahrt",
+        "hint": "Odjazd"
+      },
+      {
+        "word": "Ankunft",
+        "hint": "Przyjazd"
+      },
+      {
+        "word": "Umsteigen",
+        "hint": "Przesiadka"
+      },
+      {
+        "word": "Fahrplan",
+        "hint": "Rozkład jazdy"
+      },
+      {
+        "word": "Abteil",
+        "hint": "Przedział"
+      },
+      {
+        "word": "Verspätung",
+        "hint": "Opóźnienie"
+      },
+      {
+        "word": "Waggon",
+        "hint": "Wagon"
+      },
+      {
+        "word": "Lokomotive",
+        "hint": "Lokomotywa"
+      },
+      {
+        "word": "Straßenbahn",
+        "hint": "Tramwaj"
+      },
+      {
+        "word": "Einzelfahrkarte",
+        "hint": "Bilet jednorazowy"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Matematyka",
+    "description": "Pojęcia matematyczne po niemiecku",
+    "iconName": "x.squareroot",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Gleichung",
+        "hint": "Równanie"
+      },
+      {
+        "word": "Bruch",
+        "hint": "Ułamek"
+      },
+      {
+        "word": "Summe",
+        "hint": "Suma"
+      },
+      {
+        "word": "Differenz",
+        "hint": "Różnica"
+      },
+      {
+        "word": "Produkt",
+        "hint": "Iloczyn"
+      },
+      {
+        "word": "Quotient",
+        "hint": "Iloraz"
+      },
+      {
+        "word": "Prozent",
+        "hint": "Procent"
+      },
+      {
+        "word": "Durchschnitt",
+        "hint": "Średnia"
+      },
+      {
+        "word": "Winkel",
+        "hint": "Kąt"
+      },
+      {
+        "word": "Dreieck",
+        "hint": "Trójkąt"
+      },
+      {
+        "word": "Kreis",
+        "hint": "Koło / okrąg"
+      },
+      {
+        "word": "Radius",
+        "hint": "Promień"
+      },
+      {
+        "word": "Fläche",
+        "hint": "Powierzchnia / pole"
+      },
+      {
+        "word": "Formel",
+        "hint": "Wzór"
+      },
+      {
+        "word": "Geometrie",
+        "hint": "Geometria"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Fizyka",
+    "description": "Pojęcia fizyczne po niemiecku",
+    "iconName": "atom",
+    "color": "#0ea5e9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Kraft",
+        "hint": "Siła"
+      },
+      {
+        "word": "Energie",
+        "hint": "Energia"
+      },
+      {
+        "word": "Geschwindigkeit",
+        "hint": "Prędkość"
+      },
+      {
+        "word": "Masse",
+        "hint": "Masa"
+      },
+      {
+        "word": "Gravitation",
+        "hint": "Grawitacja"
+      },
+      {
+        "word": "Wärme",
+        "hint": "Ciepło"
+      },
+      {
+        "word": "Schwingung",
+        "hint": "Drganie / oscylacja"
+      },
+      {
+        "word": "Magnetismus",
+        "hint": "Magnetyzm"
+      },
+      {
+        "word": "Reibung",
+        "hint": "Tarcie"
+      },
+      {
+        "word": "Druck",
+        "hint": "Ciśnienie"
+      },
+      {
+        "word": "Beschleunigung",
+        "hint": "Przyspieszenie"
+      },
+      {
+        "word": "Optik",
+        "hint": "Optyka"
+      },
+      {
+        "word": "Elektron",
+        "hint": "Elektron"
+      },
+      {
+        "word": "Wellenlänge",
+        "hint": "Długość fali"
+      },
+      {
+        "word": "Experiment",
+        "hint": "Eksperyment"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemia",
+    "description": "Pojęcia chemiczne po niemiecku",
+    "iconName": "flask",
+    "color": "#10b981",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Element",
+        "hint": "Pierwiastek"
+      },
+      {
+        "word": "Atom",
+        "hint": "Atom"
+      },
+      {
+        "word": "Molekül",
+        "hint": "Cząsteczka"
+      },
+      {
+        "word": "Reaktion",
+        "hint": "Reakcja"
+      },
+      {
+        "word": "Lösung",
+        "hint": "Roztwór"
+      },
+      {
+        "word": "Säure",
+        "hint": "Kwas"
+      },
+      {
+        "word": "Base",
+        "hint": "Zasada"
+      },
+      {
+        "word": "Verbindung",
+        "hint": "Związek (chemiczny)"
+      },
+      {
+        "word": "Kristall",
+        "hint": "Kryształ"
+      },
+      {
+        "word": "Katalysator",
+        "hint": "Katalizator"
+      },
+      {
+        "word": "Gemisch",
+        "hint": "Mieszanina"
+      },
+      {
+        "word": "Destillation",
+        "hint": "Destylacja"
+      },
+      {
+        "word": "Periodensystem",
+        "hint": "Układ okresowy"
+      },
+      {
+        "word": "Reagenzglas",
+        "hint": "Probówka"
+      },
+      {
+        "word": "Labor",
+        "hint": "Laboratorium"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biologia",
+    "description": "Pojęcia biologiczne po niemiecku",
+    "iconName": "leaf.fill",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Zelle",
+        "hint": "Komórka"
+      },
+      {
+        "word": "Organismus",
+        "hint": "Organizm"
+      },
+      {
+        "word": "Evolution",
+        "hint": "Ewolucja"
+      },
+      {
+        "word": "Fotosynthese",
+        "hint": "Fotosynteza"
+      },
+      {
+        "word": "Chromosom",
+        "hint": "Chromosom"
+      },
+      {
+        "word": "Bakterie",
+        "hint": "Bakteria"
+      },
+      {
+        "word": "Virus",
+        "hint": "Wirus"
+      },
+      {
+        "word": "Ökosystem",
+        "hint": "Ekosystem"
+      },
+      {
+        "word": "Vererbung",
+        "hint": "Dziedziczność"
+      },
+      {
+        "word": "Gewebe",
+        "hint": "Tkanka"
+      },
+      {
+        "word": "Stoffwechsel",
+        "hint": "Metabolizm"
+      },
+      {
+        "word": "Mikroskop",
+        "hint": "Mikroskop"
+      },
+      {
+        "word": "Artenschutz",
+        "hint": "Ochrona gatunków"
+      },
+      {
+        "word": "Nahrungskette",
+        "hint": "Łańcuch pokarmowy"
+      },
+      {
+        "word": "Biotop",
+        "hint": "Biotop / siedlisko"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Nauka ogólna",
+    "description": "Ogólne pojęcia naukowe po niemiecku",
+    "iconName": "graduationcap",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Forschung",
+        "hint": "Badania naukowe"
+      },
+      {
+        "word": "Entdeckung",
+        "hint": "Odkrycie"
+      },
+      {
+        "word": "Erfindung",
+        "hint": "Wynalazek"
+      },
+      {
+        "word": "Hypothese",
+        "hint": "Hipoteza"
+      },
+      {
+        "word": "Theorie",
+        "hint": "Teoria"
+      },
+      {
+        "word": "Beweis",
+        "hint": "Dowód"
+      },
+      {
+        "word": "Methode",
+        "hint": "Metoda"
+      },
+      {
+        "word": "Ergebnis",
+        "hint": "Wynik"
+      },
+      {
+        "word": "Studie",
+        "hint": "Studium / badanie"
+      },
+      {
+        "word": "Professor",
+        "hint": "Profesor"
+      },
+      {
+        "word": "Universität",
+        "hint": "Uniwersytet"
+      },
+      {
+        "word": "Wissenschaftler",
+        "hint": "Naukowiec"
+      },
+      {
+        "word": "Veröffentlichung",
+        "hint": "Publikacja"
+      },
+      {
+        "word": "Daten",
+        "hint": "Dane"
+      },
+      {
+        "word": "Analyse",
+        "hint": "Analiza"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festiwale",
+    "description": "Festiwale i imprezy kulturalne po niemiecku",
+    "iconName": "sparkles",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Festival",
+        "hint": "Festiwal"
+      },
+      {
+        "word": "Konzert",
+        "hint": "Koncert"
+      },
+      {
+        "word": "Karneval",
+        "hint": "Karnawał"
+      },
+      {
+        "word": "Jahrmarkt",
+        "hint": "Jarmark / kiermasz"
+      },
+      {
+        "word": "Feuerwerk",
+        "hint": "Fajerwerki / sztuczne ognie"
+      },
+      {
+        "word": "Umzug",
+        "hint": "Pochód / parada"
+      },
+      {
+        "word": "Kostüm",
+        "hint": "Kostium / przebranie"
+      },
+      {
+        "word": "Maske",
+        "hint": "Maska"
+      },
+      {
+        "word": "Volksfest",
+        "hint": "Święto ludowe"
+      },
+      {
+        "word": "Bierzelt",
+        "hint": "Namiot piwny"
+      },
+      {
+        "word": "Oktoberfest",
+        "hint": "Oktoberfest"
+      },
+      {
+        "word": "Kirmes",
+        "hint": "Odpust / festyn"
+      },
+      {
+        "word": "Fasnacht",
+        "hint": "Zapusty / ostatki"
+      },
+      {
+        "word": "Marktplatz",
+        "hint": "Plac targowy / rynkowy"
+      },
+      {
+        "word": "Veranstaltung",
+        "hint": "Wydarzenie / impreza"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Tradycje",
+    "description": "Tradycje i obyczaje po niemiecku",
+    "iconName": "book.closed",
+    "color": "#a16207",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Brauch",
+        "hint": "Zwyczaj / obyczaj"
+      },
+      {
+        "word": "Tradition",
+        "hint": "Tradycja"
+      },
+      {
+        "word": "Weihnachten",
+        "hint": "Boże Narodzenie"
+      },
+      {
+        "word": "Ostern",
+        "hint": "Wielkanoc"
+      },
+      {
+        "word": "Silvester",
+        "hint": "Sylwester"
+      },
+      {
+        "word": "Adventskranz",
+        "hint": "Wieniec adwentowy"
+      },
+      {
+        "word": "Christbaum",
+        "hint": "Choinka"
+      },
+      {
+        "word": "Osterhase",
+        "hint": "Zajączek wielkanocny"
+      },
+      {
+        "word": "Nikolaus",
+        "hint": "Mikołaj"
+      },
+      {
+        "word": "Erntedank",
+        "hint": "Dożynki / dziękczynienie"
+      },
+      {
+        "word": "Fastenzeit",
+        "hint": "Post / Wielki Post"
+      },
+      {
+        "word": "Maibaum",
+        "hint": "Drzewko majowe"
+      },
+      {
+        "word": "Tracht",
+        "hint": "Strój ludowy"
+      },
+      {
+        "word": "Folklore",
+        "hint": "Folklor"
+      },
+      {
+        "word": "Aberglaube",
+        "hint": "Przesąd / zabobon"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Ślub i wesele",
+    "description": "Słownictwo ślubne po niemiecku",
+    "iconName": "heart.fill",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Hochzeit",
+        "hint": "Ślub / wesele"
+      },
+      {
+        "word": "Braut",
+        "hint": "Panna młoda"
+      },
+      {
+        "word": "Bräutigam",
+        "hint": "Pan młody"
+      },
+      {
+        "word": "Trauung",
+        "hint": "Ceremonia ślubna"
+      },
+      {
+        "word": "Ehering",
+        "hint": "Obrączka"
+      },
+      {
+        "word": "Standesamt",
+        "hint": "Urząd stanu cywilnego"
+      },
+      {
+        "word": "Brautkleid",
+        "hint": "Suknia ślubna"
+      },
+      {
+        "word": "Schleier",
+        "hint": "Welon"
+      },
+      {
+        "word": "Brautstrauß",
+        "hint": "Bukiet ślubny"
+      },
+      {
+        "word": "Trauzeugen",
+        "hint": "Świadkowie ślubu"
+      },
+      {
+        "word": "Hochzeitstorte",
+        "hint": "Tort weselny"
+      },
+      {
+        "word": "Flitterwochen",
+        "hint": "Miesiąc miodowy"
+      },
+      {
+        "word": "Einladung",
+        "hint": "Zaproszenie"
+      },
+      {
+        "word": "Empfang",
+        "hint": "Przyjęcie"
+      },
+      {
+        "word": "Ehegelübde",
+        "hint": "Przysięga małżeńska"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Święta i urlopy",
+    "description": "Święta i czas wolny po niemiecku",
+    "iconName": "calendar",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Feiertag",
+        "hint": "Dzień świąteczny"
+      },
+      {
+        "word": "Urlaub",
+        "hint": "Urlop"
+      },
+      {
+        "word": "Ferien",
+        "hint": "Wakacje / ferie"
+      },
+      {
+        "word": "Neujahr",
+        "hint": "Nowy Rok"
+      },
+      {
+        "word": "Muttertag",
+        "hint": "Dzień Matki"
+      },
+      {
+        "word": "Vatertag",
+        "hint": "Dzień Ojca"
+      },
+      {
+        "word": "Valentinstag",
+        "hint": "Walentynki"
+      },
+      {
+        "word": "Geburtstag",
+        "hint": "Urodziny"
+      },
+      {
+        "word": "Jubiläum",
+        "hint": "Jubileusz"
+      },
+      {
+        "word": "Namenstag",
+        "hint": "Imieniny"
+      },
+      {
+        "word": "Pfingsten",
+        "hint": "Zielone Świątki"
+      },
+      {
+        "word": "Heiligabend",
+        "hint": "Wigilia"
+      },
+      {
+        "word": "Karfreitag",
+        "hint": "Wielki Piątek"
+      },
+      {
+        "word": "Allerheiligen",
+        "hint": "Wszystkich Świętych"
+      },
+      {
+        "word": "Erholungstag",
+        "hint": "Dzień odpoczynku"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Świętowanie",
+    "description": "Słownictwo imprezowe po niemiecku",
+    "iconName": "party.popper",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "Feier",
+        "hint": "Świętowanie / uroczystość"
+      },
+      {
+        "word": "Geschenk",
+        "hint": "Prezent"
+      },
+      {
+        "word": "Luftballon",
+        "hint": "Balon"
+      },
+      {
+        "word": "Kerze",
+        "hint": "Świeczka"
+      },
+      {
+        "word": "Girlande",
+        "hint": "Girlanda"
+      },
+      {
+        "word": "Konfetti",
+        "hint": "Konfetti"
+      },
+      {
+        "word": "Einladung",
+        "hint": "Zaproszenie"
+      },
+      {
+        "word": "Überraschung",
+        "hint": "Niespodzianka"
+      },
+      {
+        "word": "Dekoration",
+        "hint": "Dekoracja"
+      },
+      {
+        "word": "Gastgeber",
+        "hint": "Gospodarz"
+      },
+      {
+        "word": "Buffet",
+        "hint": "Bufet"
+      },
+      {
+        "word": "Prosit",
+        "hint": "Na zdrowie (toast)"
+      },
+      {
+        "word": "Sektglas",
+        "hint": "Kieliszek do szampana"
+      },
+      {
+        "word": "Glückwunsch",
+        "hint": "Życzenia / gratulacje"
+      },
+      {
+        "word": "Andenken",
+        "hint": "Pamiątka"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Moda",
+    "description": "Słownictwo modowe po niemiecku",
+    "iconName": "tshirt",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Mode",
+        "hint": "Moda"
+      },
+      {
+        "word": "Designer",
+        "hint": "Projektant"
+      },
+      {
+        "word": "Kollektion",
+        "hint": "Kolekcja"
+      },
+      {
+        "word": "Laufsteg",
+        "hint": "Wybieg"
+      },
+      {
+        "word": "Stil",
+        "hint": "Styl"
+      },
+      {
+        "word": "Trend",
+        "hint": "Trend"
+      },
+      {
+        "word": "Marke",
+        "hint": "Marka"
+      },
+      {
+        "word": "Boutique",
+        "hint": "Butik"
+      },
+      {
+        "word": "Modenschau",
+        "hint": "Pokaz mody"
+      },
+      {
+        "word": "Accessoire",
+        "hint": "Akcesorium / dodatek"
+      },
+      {
+        "word": "Schnitt",
+        "hint": "Krój / fason"
+      },
+      {
+        "word": "Kleiderbügel",
+        "hint": "Wieszak na ubrania"
+      },
+      {
+        "word": "Garderobe",
+        "hint": "Szafa / garderoba"
+      },
+      {
+        "word": "Anprobe",
+        "hint": "Przymierzalnia"
+      },
+      {
+        "word": "Eleganz",
+        "hint": "Elegancja"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Tkaniny",
+    "description": "Materiały i tkaniny po niemiecku",
+    "iconName": "square.stack.3d.up",
+    "color": "#78716c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Baumwolle",
+        "hint": "Bawełna"
+      },
+      {
+        "word": "Seide",
+        "hint": "Jedwab"
+      },
+      {
+        "word": "Wolle",
+        "hint": "Wełna"
+      },
+      {
+        "word": "Leinen",
+        "hint": "Len (tkanina)"
+      },
+      {
+        "word": "Polyester",
+        "hint": "Poliester"
+      },
+      {
+        "word": "Samt",
+        "hint": "Aksamit"
+      },
+      {
+        "word": "Denim",
+        "hint": "Dżins / denim"
+      },
+      {
+        "word": "Filz",
+        "hint": "Filc"
+      },
+      {
+        "word": "Spitze",
+        "hint": "Koronka"
+      },
+      {
+        "word": "Satin",
+        "hint": "Satyna"
+      },
+      {
+        "word": "Chiffon",
+        "hint": "Szyfon"
+      },
+      {
+        "word": "Kaschmir",
+        "hint": "Kaszmir"
+      },
+      {
+        "word": "Leder",
+        "hint": "Skóra (materiał)"
+      },
+      {
+        "word": "Pelz",
+        "hint": "Futro"
+      },
+      {
+        "word": "Tweed",
+        "hint": "Tweed"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Biżuteria",
+    "description": "Biżuteria i klejnoty po niemiecku",
+    "iconName": "seal",
+    "color": "#ca8a04",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Schmuck",
+        "hint": "Biżuteria"
+      },
+      {
+        "word": "Ring",
+        "hint": "Pierścionek"
+      },
+      {
+        "word": "Halskette",
+        "hint": "Naszyjnik"
+      },
+      {
+        "word": "Armband",
+        "hint": "Bransoletka"
+      },
+      {
+        "word": "Ohrring",
+        "hint": "Kolczyk"
+      },
+      {
+        "word": "Perle",
+        "hint": "Perła"
+      },
+      {
+        "word": "Diamant",
+        "hint": "Diament"
+      },
+      {
+        "word": "Gold",
+        "hint": "Złoto"
+      },
+      {
+        "word": "Silber",
+        "hint": "Srebro"
+      },
+      {
+        "word": "Edelstein",
+        "hint": "Kamień szlachetny"
+      },
+      {
+        "word": "Brosche",
+        "hint": "Broszka"
+      },
+      {
+        "word": "Anhänger",
+        "hint": "Wisiorek"
+      },
+      {
+        "word": "Juwelier",
+        "hint": "Jubiler"
+      },
+      {
+        "word": "Manschettenknopf",
+        "hint": "Spinka do mankietu"
+      },
+      {
+        "word": "Krone",
+        "hint": "Korona"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Kosmetyki",
+    "description": "Kosmetyki i pielęgnacja po niemiecku",
+    "iconName": "sparkle",
+    "color": "#f472b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Kosmetik",
+        "hint": "Kosmetyki"
+      },
+      {
+        "word": "Lippenstift",
+        "hint": "Szminka"
+      },
+      {
+        "word": "Mascara",
+        "hint": "Tusz do rzęs"
+      },
+      {
+        "word": "Foundation",
+        "hint": "Podkład"
+      },
+      {
+        "word": "Puder",
+        "hint": "Puder"
+      },
+      {
+        "word": "Nagellack",
+        "hint": "Lakier do paznokci"
+      },
+      {
+        "word": "Parfüm",
+        "hint": "Perfumy"
+      },
+      {
+        "word": "Creme",
+        "hint": "Krem"
+      },
+      {
+        "word": "Sonnenschutz",
+        "hint": "Ochrona przeciwsłoneczna"
+      },
+      {
+        "word": "Peeling",
+        "hint": "Peeling"
+      },
+      {
+        "word": "Lidschatten",
+        "hint": "Cień do powiek"
+      },
+      {
+        "word": "Rouge",
+        "hint": "Róż do policzków"
+      },
+      {
+        "word": "Wimpern",
+        "hint": "Rzęsy"
+      },
+      {
+        "word": "Augenbrauen",
+        "hint": "Brwi"
+      },
+      {
+        "word": "Feuchtigkeitscreme",
+        "hint": "Krem nawilżający"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Fryzury",
+    "description": "Fryzury i pielęgnacja włosów",
+    "iconName": "scissors.badge.ellipsis",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Frisur",
+        "hint": "Fryzura"
+      },
+      {
+        "word": "Friseur",
+        "hint": "Fryzjer"
+      },
+      {
+        "word": "Haarschnitt",
+        "hint": "Strzyżenie / obcięcie"
+      },
+      {
+        "word": "Pony",
+        "hint": "Grzywka"
+      },
+      {
+        "word": "Zopf",
+        "hint": "Warkocz"
+      },
+      {
+        "word": "Locken",
+        "hint": "Loki / kręcone włosy"
+      },
+      {
+        "word": "Föhn",
+        "hint": "Suszarka do włosów"
+      },
+      {
+        "word": "Glätteisen",
+        "hint": "Prostownica"
+      },
+      {
+        "word": "Haarfarbe",
+        "hint": "Kolor włosów"
+      },
+      {
+        "word": "Dauerwelle",
+        "hint": "Trwała ondulacja"
+      },
+      {
+        "word": "Haargel",
+        "hint": "Żel do włosów"
+      },
+      {
+        "word": "Spülung",
+        "hint": "Odżywka do włosów"
+      },
+      {
+        "word": "Scheitel",
+        "hint": "Przedziałek"
+      },
+      {
+        "word": "Haarspange",
+        "hint": "Spinka do włosów"
+      },
+      {
+        "word": "Hochsteckfrisur",
+        "hint": "Upięcie / kok"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Środowisko",
+    "description": "Ochrona środowiska po niemiecku",
+    "iconName": "globe.americas",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Umwelt",
+        "hint": "Środowisko"
+      },
+      {
+        "word": "Naturschutz",
+        "hint": "Ochrona przyrody"
+      },
+      {
+        "word": "Verschmutzung",
+        "hint": "Zanieczyszczenie"
+      },
+      {
+        "word": "Abholzung",
+        "hint": "Wylesianie"
+      },
+      {
+        "word": "Artenvielfalt",
+        "hint": "Bioróżnorodność"
+      },
+      {
+        "word": "Treibhauseffekt",
+        "hint": "Efekt cieplarniany"
+      },
+      {
+        "word": "Ozonschicht",
+        "hint": "Warstwa ozonowa"
+      },
+      {
+        "word": "Abgase",
+        "hint": "Spaliny"
+      },
+      {
+        "word": "Grundwasser",
+        "hint": "Wody gruntowe"
+      },
+      {
+        "word": "Regenwald",
+        "hint": "Las deszczowy"
+      },
+      {
+        "word": "Smog",
+        "hint": "Smog"
+      },
+      {
+        "word": "Ökologie",
+        "hint": "Ekologia"
+      },
+      {
+        "word": "Nationalpark",
+        "hint": "Park narodowy"
+      },
+      {
+        "word": "Wildtier",
+        "hint": "Dzikie zwierzę"
+      },
+      {
+        "word": "Lebensraum",
+        "hint": "Środowisko naturalne / habitat"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recykling",
+    "description": "Recykling i gospodarka odpadami",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "Recycling",
+        "hint": "Recykling"
+      },
+      {
+        "word": "Mülltrennung",
+        "hint": "Segregacja odpadów"
+      },
+      {
+        "word": "Mülltonne",
+        "hint": "Kosz na śmieci"
+      },
+      {
+        "word": "Altpapier",
+        "hint": "Makulatura"
+      },
+      {
+        "word": "Verpackung",
+        "hint": "Opakowanie"
+      },
+      {
+        "word": "Kompost",
+        "hint": "Kompost"
+      },
+      {
+        "word": "Pfandflasche",
+        "hint": "Butelka zwrotna"
+      },
+      {
+        "word": "Glascontainer",
+        "hint": "Pojemnik na szkło"
+      },
+      {
+        "word": "Restmüll",
+        "hint": "Odpady zmieszane"
+      },
+      {
+        "word": "Biomüll",
+        "hint": "Odpady bio"
+      },
+      {
+        "word": "Sperrmüll",
+        "hint": "Gabaryty / odpady wielkie"
+      },
+      {
+        "word": "Wertstoff",
+        "hint": "Surowiec wtórny"
+      },
+      {
+        "word": "Einwegflasche",
+        "hint": "Butelka jednorazowa"
+      },
+      {
+        "word": "Abfallentsorgung",
+        "hint": "Utylizacja odpadów"
+      },
+      {
+        "word": "Plastiktüte",
+        "hint": "Torebka plastikowa"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energia",
+    "description": "Źródła i rodzaje energii po niemiecku",
+    "iconName": "bolt.circle",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Energie",
+        "hint": "Energia"
+      },
+      {
+        "word": "Solarenergie",
+        "hint": "Energia słoneczna"
+      },
+      {
+        "word": "Windkraft",
+        "hint": "Energia wiatrowa"
+      },
+      {
+        "word": "Kernenergie",
+        "hint": "Energia jądrowa"
+      },
+      {
+        "word": "Erdgas",
+        "hint": "Gaz ziemny"
+      },
+      {
+        "word": "Kohle",
+        "hint": "Węgiel"
+      },
+      {
+        "word": "Erdöl",
+        "hint": "Ropa naftowa"
+      },
+      {
+        "word": "Stromverbrauch",
+        "hint": "Zużycie prądu"
+      },
+      {
+        "word": "Solarzelle",
+        "hint": "Ogniwo słoneczne"
+      },
+      {
+        "word": "Windrad",
+        "hint": "Turbina wiatrowa"
+      },
+      {
+        "word": "Staudamm",
+        "hint": "Zapora wodna / tama"
+      },
+      {
+        "word": "Kraftwerk",
+        "hint": "Elektrownia"
+      },
+      {
+        "word": "Biogas",
+        "hint": "Biogaz"
+      },
+      {
+        "word": "Energiewende",
+        "hint": "Transformacja energetyczna"
+      },
+      {
+        "word": "Stromnetz",
+        "hint": "Sieć energetyczna"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Klimat",
+    "description": "Zmiany klimatu i pogoda po niemiecku",
+    "iconName": "thermometer.sun",
+    "color": "#f97316",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Klima",
+        "hint": "Klimat"
+      },
+      {
+        "word": "Klimawandel",
+        "hint": "Zmiany klimatyczne"
+      },
+      {
+        "word": "Erwärmung",
+        "hint": "Ocieplenie"
+      },
+      {
+        "word": "Dürre",
+        "hint": "Susza"
+      },
+      {
+        "word": "Überschwemmung",
+        "hint": "Powódź"
+      },
+      {
+        "word": "Meeresspiegel",
+        "hint": "Poziom morza"
+      },
+      {
+        "word": "Eisschmelze",
+        "hint": "Topnienie lodów"
+      },
+      {
+        "word": "Kohlendioxid",
+        "hint": "Dwutlenek węgla"
+      },
+      {
+        "word": "Emissionen",
+        "hint": "Emisje"
+      },
+      {
+        "word": "Temperatur",
+        "hint": "Temperatura"
+      },
+      {
+        "word": "Sonnenstrahlung",
+        "hint": "Promieniowanie słoneczne"
+      },
+      {
+        "word": "Wetterextrem",
+        "hint": "Ekstremalne zjawisko pogodowe"
+      },
+      {
+        "word": "Wirbelsturm",
+        "hint": "Cyklon / huragan"
+      },
+      {
+        "word": "Regenwald",
+        "hint": "Las tropikalny"
+      },
+      {
+        "word": "Anpassung",
+        "hint": "Adaptacja / dostosowanie"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Zrównoważony rozwój",
+    "description": "Ekologia i zrównoważony rozwój",
+    "iconName": "leaf.arrow.triangle.circlepath",
+    "color": "#10b981",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "Nachhaltigkeit",
+        "hint": "Zrównoważony rozwój"
+      },
+      {
+        "word": "Fairtrade",
+        "hint": "Sprawiedliwy handel"
+      },
+      {
+        "word": "Elektroauto",
+        "hint": "Samochód elektryczny"
+      },
+      {
+        "word": "Ökostrom",
+        "hint": "Prąd ekologiczny"
+      },
+      {
+        "word": "Mehrwegbecher",
+        "hint": "Kubek wielorazowy"
+      },
+      {
+        "word": "Sparsamkeit",
+        "hint": "Oszczędność"
+      },
+      {
+        "word": "Nahverkehr",
+        "hint": "Komunikacja lokalna"
+      },
+      {
+        "word": "Bioprodukt",
+        "hint": "Produkt ekologiczny"
+      },
+      {
+        "word": "Regenwasser",
+        "hint": "Woda deszczowa"
+      },
+      {
+        "word": "Aufforstung",
+        "hint": "Zalesianie"
+      },
+      {
+        "word": "Fußabdruck",
+        "hint": "Ślad (węglowy)"
+      },
+      {
+        "word": "Erneuerbar",
+        "hint": "Odnawialny"
+      },
+      {
+        "word": "Plastikfrei",
+        "hint": "Bez plastiku"
+      },
+      {
+        "word": "Umweltbewusst",
+        "hint": "Świadomy ekologicznie"
+      },
+      {
+        "word": "Kreislaufwirtschaft",
+        "hint": "Gospodarka o obiegu zamkniętym"
+      }
+    ]
+  }
+]

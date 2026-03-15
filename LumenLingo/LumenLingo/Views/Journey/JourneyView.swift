@@ -25,18 +25,19 @@ struct JourneyView: View {
     @State private var quoteScale: CGFloat = 1.0
     @State private var quoteGlowIntensity: CGFloat = 0.0
     @State private var quoteIconRotation: Double = 0
+    @State private var showResetAlert = false
 
     var body: some View {
         ScrollView(showsIndicators: false) {
-            VStack(spacing: 24) {
+            VStack(spacing: 20) {
                 // Header
                 journeyHeader
 
+                // Overall stats
+                overallStatsPanel
+
                 // Milestones timeline
                 milestonesSection
-
-                // Overall stats inside GlassPanelWrapper
-                overallStatsPanel
 
                 // Game type breakdown
                 gameTypeBreakdown
@@ -47,6 +48,9 @@ struct JourneyView: View {
                 // Wisdom quote
                 quoteCard
 
+                // Reset progress
+                resetProgressButton
+
                 Spacer(minLength: 80)
             }
             .padding(.horizontal, 16)
@@ -55,14 +59,23 @@ struct JourneyView: View {
         .cosmicBackground()
         .navigationBarTitleDisplayMode(.inline)
         .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
+        .alert(L.areYouSure, isPresented: $showResetAlert) {
+            Button(L.cancel, role: .cancel) {}
+            Button(L.resetProgress, role: .destructive) {
+                let service = ProgressService(modelContext: modelContext)
+                service.resetAllProgress()
+            }
+        } message: {
+            Text(L.resetProgressMessage)
+        }
     }
 
     // MARK: - Header
 
     private var journeyHeader: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 6) {
             Image(systemName: "chart.line.uptrend.xyaxis")
-                .font(.system(size: 40))
+                .font(.system(size: 32))
                 .foregroundStyle(
                     LinearGradient(
                         colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
@@ -72,7 +85,7 @@ struct JourneyView: View {
                 )
 
             Text(L.yourLearningJourney)
-                .font(.title2.bold())
+                .font(.system(size: 18, weight: .bold))
                 .foregroundStyle(
                     LinearGradient(
                         colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
@@ -82,7 +95,7 @@ struct JourneyView: View {
                 )
 
             Text(L.trackYourProgress)
-                .font(.subheadline)
+                .font(.system(size: 12))
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 .multilineTextAlignment(.center)
         }
@@ -98,7 +111,7 @@ struct JourneyView: View {
                     Image(systemName: "flag.checkered")
                         .foregroundStyle(Color(hex: "#667eea"))
                     Text(L.milestones)
-                        .font(.headline)
+                        .font(.system(size: 15, weight: .semibold))
                         .foregroundStyle(
                             LinearGradient(
                                 colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
@@ -107,7 +120,7 @@ struct JourneyView: View {
                             )
                         )
                 }
-                .padding(.bottom, 16)
+                .padding(.bottom, 12)
 
                 ForEach(Array(milestones.enumerated()), id: \.element.title) { index, milestone in
                     milestoneRow(milestone, isLast: index == milestones.count - 1)
@@ -125,12 +138,18 @@ struct JourneyView: View {
 
     private var milestones: [Milestone] {
         [
-            Milestone(title: L.firstSteps, icon: "shoe.fill", color: .green, xpRequired: 0),
-            Milestone(title: L.gettingStarted, icon: "star.fill", color: .cyan, xpRequired: 50),
-            Milestone(title: L.dedicatedLearner, icon: "book.fill", color: Color(hex: "#667eea"), xpRequired: 200),
-            Milestone(title: L.wordWarrior, icon: "shield.fill", color: Color(hex: "#8b5cf6"), xpRequired: 500),
-            Milestone(title: L.languageMaster, icon: "crown.fill", color: .yellow, xpRequired: 1000),
-            Milestone(title: L.polyglotLegend, icon: "globe", color: Color(hex: "#ec4899"), xpRequired: 2500),
+            Milestone(title: L.firstSteps,         icon: "shoe.fill",          color: .green,                xpRequired: 0),
+            Milestone(title: L.gettingStarted,     icon: "star.fill",          color: .cyan,                 xpRequired: 100),
+            Milestone(title: L.dedicatedLearner,   icon: "book.fill",          color: Color(hex: "#667eea"), xpRequired: 500),
+            Milestone(title: L.risingStar,          icon: "sparkles",           color: Color(hex: "#f59e0b"), xpRequired: 1_500),
+            Milestone(title: L.wordWarrior,        icon: "shield.fill",        color: Color(hex: "#8b5cf6"), xpRequired: 3_000),
+            Milestone(title: L.knowledgeSeeker,    icon: "magnifyingglass",    color: Color(hex: "#06b6d4"), xpRequired: 5_000),
+            Milestone(title: L.sentenceCrafter,    icon: "text.quote",         color: Color(hex: "#10b981"), xpRequired: 8_000),
+            Milestone(title: L.grammarGuardian,    icon: "shield.checkerboard", color: Color(hex: "#6366f1"), xpRequired: 12_000),
+            Milestone(title: L.vocabularyVirtuoso, icon: "character.book.closed.fill", color: Color(hex: "#f97316"), xpRequired: 18_000),
+            Milestone(title: L.languageMaster,     icon: "crown.fill",         color: .yellow,               xpRequired: 25_000),
+            Milestone(title: L.fluencyPioneer,     icon: "flag.fill",          color: Color(hex: "#14b8a6"), xpRequired: 35_000),
+            Milestone(title: L.polyglotLegend,     icon: "globe",              color: Color(hex: "#ec4899"), xpRequired: 50_000),
         ]
     }
 
@@ -138,34 +157,34 @@ struct JourneyView: View {
         let currentXP = profile?.totalXP ?? 0
         let isUnlocked = currentXP >= milestone.xpRequired
 
-        return HStack(spacing: 14) {
+        return HStack(spacing: 10) {
             // Timeline column
             VStack(spacing: 0) {
                 Circle()
                     .fill(isUnlocked ? milestone.color : .gray.opacity(0.3))
-                    .frame(width: 32, height: 32)
+                    .frame(width: 26, height: 26)
                     .overlay {
                         Image(systemName: milestone.icon)
-                            .font(.system(size: 13))
+                            .font(.system(size: 11))
                             .foregroundStyle(isUnlocked ? .white : .gray)
                     }
-                    .shadow(color: isUnlocked ? milestone.color.opacity(0.4) : .clear, radius: 6)
+                    .shadow(color: isUnlocked ? milestone.color.opacity(0.4) : .clear, radius: 4)
 
                 if !isLast {
                     Rectangle()
                         .fill(isUnlocked ? milestone.color.opacity(0.3) : .gray.opacity(0.15))
-                        .frame(width: 2, height: 30)
+                        .frame(width: 2, height: 20)
                 }
             }
 
             // Content
-            VStack(alignment: .leading, spacing: 2) {
+            VStack(alignment: .leading, spacing: 1) {
                 Text(milestone.title)
-                    .font(.subheadline.bold())
+                    .font(.system(size: 13, weight: .semibold))
                     .foregroundStyle(isDark ? .white.opacity(isUnlocked ? 1 : 0.4) : (isUnlocked ? .caribbeanInk : .caribbeanMist))
 
-                Text("\(milestone.xpRequired) \(L.xpRequired)")
-                    .font(.caption)
+                Text(formattedXP(milestone.xpRequired) + " " + L.xpRequired)
+                    .font(.system(size: 10))
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
             }
 
@@ -173,70 +192,176 @@ struct JourneyView: View {
 
             if isUnlocked {
                 Image(systemName: "checkmark.circle.fill")
+                    .font(.system(size: 14))
                     .foregroundStyle(.green)
             }
         }
     }
 
+    private func formattedXP(_ xp: Int) -> String {
+        if xp >= 1_000 {
+            let thousands = Double(xp) / 1_000.0
+            if xp % 1_000 == 0 {
+                return "\(Int(thousands))K"
+            }
+            return String(format: "%.1fK", thousands)
+        }
+        return "\(xp)"
+    }
+
     // MARK: - Overall Stats
 
     private var overallStatsPanel: some View {
-        VStack(spacing: 14) {
-            Text(L.overview)
-                .font(.headline)
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-                .frame(maxWidth: .infinity, alignment: .leading)
+        let level = profile?.currentLevel ?? 1
+        let totalXP = profile?.totalXP ?? 0
+        let progress = profile?.levelProgress ?? 0
+        let xpInLevel = profile?.xpInCurrentLevel ?? 0
+        let xpNeeded = profile?.xpForNextLevel ?? 100
 
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
-                journeyStat(title: L.level, value: "\(profile?.currentLevel ?? 1)", icon: "star.fill", color: .yellow)
-                journeyStat(title: L.totalXP, value: "\(profile?.totalXP ?? 0)", icon: "bolt.fill", color: .cyan)
-                journeyStat(title: L.sessions, value: "\(allProgress.count)", icon: "play.circle.fill", color: .green)
-                journeyStat(title: L.streak, value: "\(profile?.streakDays ?? 0) \(L.days)", icon: "flame.fill", color: .orange)
+        return VStack(spacing: 16) {
+            // Hero: Level ring + XP bar
+            HStack(spacing: 16) {
+                // Circular level badge
+                ZStack {
+                    Circle()
+                        .stroke(
+                            LinearGradient(
+                                colors: [Color(hex: "#667eea").opacity(0.15), Color(hex: "#764ba2").opacity(0.15)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 4
+                        )
+                        .frame(width: 64, height: 64)
+
+                    Circle()
+                        .trim(from: 0, to: progress)
+                        .stroke(
+                            LinearGradient(
+                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            style: StrokeStyle(lineWidth: 4, lineCap: .round)
+                        )
+                        .frame(width: 64, height: 64)
+                        .rotationEffect(.degrees(-90))
+
+                    VStack(spacing: 0) {
+                        Text("\(level)")
+                            .font(.system(size: 22, weight: .bold, design: .rounded))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                        Text(L.level.uppercased())
+                            .font(.system(size: 8, weight: .semibold))
+                            .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
+                            .tracking(1)
+                    }
+                }
+
+                // XP info
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(formattedXP(totalXP) + " XP")
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+
+                    // Progress bar
+                    GeometryReader { geo in
+                        ZStack(alignment: .leading) {
+                            Capsule()
+                                .fill(isDark ? .white.opacity(0.08) : .black.opacity(0.06))
+                                .frame(height: 6)
+
+                            Capsule()
+                                .fill(
+                                    LinearGradient(
+                                        colors: [Color(hex: "#667eea"), Color(hex: "#a855f7")],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
+                                .frame(width: max(6, geo.size.width * progress), height: 6)
+                        }
+                    }
+                    .frame(height: 6)
+
+                    Text("\(formattedXP(xpInLevel)) / \(formattedXP(xpNeeded)) " + L.xp.lowercased())
+                        .font(.system(size: 10))
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
+                }
+            }
+
+            // Divider
+            Rectangle()
+                .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
+                .frame(height: 1)
+                .padding(.horizontal, 4)
+
+            // Three stat columns
+            HStack(spacing: 0) {
+                overviewStat(
+                    icon: "bolt.fill",
+                    value: formattedXP(totalXP),
+                    label: L.totalXP,
+                    color: .cyan
+                )
+
+                Rectangle()
+                    .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
+                    .frame(width: 1, height: 32)
+
+                overviewStat(
+                    icon: "play.circle.fill",
+                    value: "\(allProgress.count)",
+                    label: L.sessions,
+                    color: .green
+                )
+
+                Rectangle()
+                    .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
+                    .frame(width: 1, height: 32)
+
+                overviewStat(
+                    icon: "flame.fill",
+                    value: "\(profile?.streakDays ?? 0)",
+                    label: L.streak,
+                    color: .orange
+                )
             }
         }
-        .padding(18)
+        .padding(16)
         .background(GlassCardBackground())
     }
 
-    private func journeyStat(title: String, value: String, icon: String, color: Color) -> some View {
-        VStack(spacing: 8) {
+    private func overviewStat(icon: String, value: String, label: String, color: Color) -> some View {
+        HStack(spacing: 6) {
             Image(systemName: icon)
-                .font(.title2)
+                .font(.system(size: 14))
                 .foregroundStyle(color)
-                .shadow(color: color.opacity(0.4), radius: 8)
 
-            Text(value)
-                .font(.title3.bold())
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
-
-            Text(title)
-                .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+            VStack(alignment: .leading, spacing: 1) {
+                Text(value)
+                    .font(.system(size: 14, weight: .bold, design: .rounded))
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                Text(label)
+                    .font(.system(size: 9))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
+            }
         }
         .frame(maxWidth: .infinity)
-        .padding(12)
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                .fill(color.opacity(0.06))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 16)
-                        .strokeBorder(color.opacity(0.1), lineWidth: 1)
-                )
-        )
     }
 
     // MARK: - Game Type Breakdown
 
     private var gameTypeBreakdown: some View {
-        VStack(spacing: 14) {
+        VStack(spacing: 10) {
             Text(L.gamePerformance)
-                .font(.headline)
+                .font(.system(size: 15, weight: .semibold))
                 .foregroundStyle(
                     LinearGradient(
                         colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
@@ -250,7 +375,7 @@ struct JourneyView: View {
                 gameTypeRow(type)
             }
         }
-        .padding(18)
+        .padding(14)
         .background(GlassCardBackground())
     }
 
@@ -269,38 +394,30 @@ struct JourneyView: View {
             }
         }()
 
-        return HStack(spacing: 14) {
+        return HStack(spacing: 0) {
             ZStack {
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: 8)
                     .fill(
                         LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
                     )
-                    .frame(width: 44, height: 44)
+                    .frame(width: 32, height: 32)
 
                 Image(systemName: gameTypeIcon(type))
-                    .font(.system(size: 18))
+                    .font(.system(size: 14))
                     .foregroundStyle(.white)
             }
+            .padding(.trailing, 8)
 
-            VStack(alignment: .leading, spacing: 4) {
-                Text(type.displayName)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+            Text(type.displayName)
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .frame(width: 80, alignment: .leading)
 
-                HStack(spacing: 8) {
-                    Text("\(records.count) \(L.sessions.lowercased())")
-                    Text("·")
-                    Text("\(totalScore) \(L.xp)")
-                    Text("·")
-                    Text("\(Int(accuracy))% \(L.accuracy.lowercased())")
-                }
-                .font(.caption)
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
-            }
-
-            Spacer()
+            statPill(value: "\(records.count)", label: L.sessions.lowercased())
+            statPill(value: formattedXP(totalScore), label: L.xp)
+            statPill(value: "\(Int(accuracy))%", label: L.accuracy.lowercased())
         }
-        .padding(12)
+        .padding(10)
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
@@ -311,16 +428,28 @@ struct JourneyView: View {
         )
     }
 
+    private func statPill(value: String, label: String) -> some View {
+        VStack(spacing: 1) {
+            Text(value)
+                .font(.system(size: 13, weight: .bold))
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
+            Text(label)
+                .font(.system(size: 9))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
+        }
+        .frame(maxWidth: .infinity)
+    }
+
     // MARK: - Streak Section
 
     private var streakSection: some View {
-        VStack(spacing: 14) {
+        VStack(spacing: 10) {
             HStack(spacing: 8) {
                 Image(systemName: "flame.fill")
                     .foregroundStyle(.orange)
                     .symbolEffect(.pulse, options: .repeating.speed(0.3))
                 Text(L.currentStreak)
-                    .font(.headline)
+                    .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(
                         LinearGradient(
                             colors: [.orange, Color(hex: "#ef4444")],
@@ -333,7 +462,7 @@ struct JourneyView: View {
 
             HStack(spacing: 4) {
                 Text("\(profile?.streakDays ?? 0)")
-                    .font(.system(size: 56, weight: .bold, design: .rounded))
+                    .font(.system(size: 42, weight: .bold, design: .rounded))
                     .foregroundStyle(
                         LinearGradient(
                             colors: [.orange, .yellow],
@@ -342,17 +471,75 @@ struct JourneyView: View {
                         )
                     )
                 Text(L.days)
-                    .font(.title3)
+                    .font(.system(size: 15, weight: .medium))
                     .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
-                    .padding(.top, 16)
+                    .padding(.top, 10)
             }
 
             Text(L.keepLearningEveryDay)
-                .font(.caption)
+                .font(.system(size: 11))
                 .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 .multilineTextAlignment(.center)
         }
-        .padding(18)
+        .padding(14)
+        .background(GlassCardBackground())
+    }
+
+    // MARK: - Reset Progress
+
+    private var resetProgressButton: some View {
+        VStack(spacing: 10) {
+            // Section header
+            HStack(spacing: 8) {
+                Image(systemName: "arrow.triangle.2.circlepath")
+                    .foregroundStyle(.red.opacity(0.8))
+                Text(L.resetProgress)
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.red.opacity(0.9), .red.opacity(0.6)],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            Text(L.startFreshDescription)
+                .font(.system(size: 11))
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            Button {
+                showResetAlert = true
+            } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: "arrow.counterclockwise")
+                        .font(.system(size: 14, weight: .semibold))
+                    Text(L.resetProgress)
+                        .font(.system(size: 14, weight: .semibold))
+                }
+                .foregroundStyle(.white)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
+                .background(
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(
+                            LinearGradient(
+                                colors: [.red.opacity(0.7), .red.opacity(0.5)],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12)
+                                .strokeBorder(.white.opacity(0.15), lineWidth: 1)
+                        )
+                )
+            }
+            .buttonStyle(LumenPressStyle(weight: .soft))
+        }
+        .padding(14)
         .background(GlassCardBackground())
     }
 
@@ -432,9 +619,9 @@ struct JourneyView: View {
         .opacity(quoteOpacity)
         .scaleEffect(quoteScale)
         .frame(maxWidth: .infinity)
-        .frame(height: 220)
-        .padding(.horizontal, 26)
-        .padding(.vertical, 26)
+        .frame(height: 180)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 20)
         .background(
             ZStack {
                 GlassCardBackground()
@@ -479,8 +666,9 @@ struct JourneyView: View {
         let available = allQuotes.indices.filter { !shownQuoteIndices.contains($0) }
         guard let nextIdx = available.randomElement() else { return }
 
-        // Haptic — soft impact for that satisfying feel
-        HapticsService.light()
+        // Haptic + sound — soft impact for that satisfying feel
+        HapticsService.shared.tabSwitch()
+        AudioService.shared.playQuoteShuffle()
 
         // Phase 1: Press in + glow burst + fade out
         withAnimation(.spring(response: 0.18, dampingFraction: 0.6)) {

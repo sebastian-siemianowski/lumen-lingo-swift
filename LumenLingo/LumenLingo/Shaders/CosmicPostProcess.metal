@@ -47,6 +47,7 @@ fragment float4 cosmicPostFragment(
     float2 uv = in.uv;
     float2 centered = uv - 0.5;
     float dist = length(centered);
+    float scaledDist = dist * 1.4;
     
     // Accumulate premultiplied overlay components
     float3 premultRGB = float3(0.0);
@@ -54,11 +55,11 @@ fragment float4 cosmicPostFragment(
     
     // ------ Foundation Void Vignette ------
     float3 voidColor = rgb(2, 1, 6);
-    float vigAmount = smoothstep(0.3, 0.85, dist * 1.4) * 0.6;
+    float vigAmount = smoothstep(0.3, 0.85, scaledDist) * 0.6;
     
     // ------ Edge Vignette ------
     float3 edgeColor = rgb(8, 5, 18);
-    float edgeAmount = smoothstep(0.3, 0.7, dist * 1.4) * 0.35;
+    float edgeAmount = smoothstep(0.3, 0.7, scaledDist) * 0.35;
     
     // Composite vignettes: overlay the stronger darkening on top
     // First layer: void vignette
@@ -75,7 +76,7 @@ fragment float4 cosmicPostFragment(
     alpha = vigAlpha;
     
     // ------ Central Clarity ------
-    float clarity = 1.0 - smoothstep(0.0, 0.35, dist * 1.4);
+    float clarity = 1.0 - smoothstep(0.0, 0.35, scaledDist);
     clarity = clarity * clarity;
     float3 clarityColor = rgb(255, 245, 255);
     // Additive: bake directly into premultiplied RGB (no alpha contribution)
@@ -107,9 +108,10 @@ fragment float4 cosmicPostFragment(
         premultRGB = oceanPremult + premultRGB * (1.0 - oceanFade);
         alpha = oceanFade + alpha * (1.0 - oceanFade);
     } else if (uniforms.presetIndex == 2) {
-        // Solar Aurora: violet top fade darkening
+        // Solar Aurora: vignette handled in main shader, minimal post-process
+        // Just a very subtle top-edge darkening for extra depth
         float topFade = 1.0 - uv.y;
-        float topAmount = topFade * topFade * 0.3;
+        float topAmount = topFade * topFade * 0.1;
         float3 violetTop = rgb(15, 8, 25);
         float3 topPremult = violetTop * topAmount;
         premultRGB = topPremult + premultRGB * (1.0 - topAmount);

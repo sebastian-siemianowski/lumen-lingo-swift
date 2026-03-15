@@ -1,0 +1,7002 @@
+[
+  {
+    "key": "fruits_wb",
+    "name": "Owoce",
+    "description": "Naucz się zapisywać nazwy owoców po japońsku",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "りんご",
+        "hint": "Jabłko"
+      },
+      {
+        "word": "みかん",
+        "hint": "Mandarynka"
+      },
+      {
+        "word": "バナナ",
+        "hint": "Banan"
+      },
+      {
+        "word": "いちご",
+        "hint": "Truskawka"
+      },
+      {
+        "word": "ぶどう",
+        "hint": "Winogrono"
+      },
+      {
+        "word": "レモン",
+        "hint": "Cytryna"
+      },
+      {
+        "word": "すいか",
+        "hint": "Arbuz"
+      },
+      {
+        "word": "もも",
+        "hint": "Brzoskwinia"
+      },
+      {
+        "word": "なし",
+        "hint": "Gruszka"
+      },
+      {
+        "word": "メロン",
+        "hint": "Melon"
+      },
+      {
+        "word": "さくらんぼ",
+        "hint": "Czereśnia"
+      },
+      {
+        "word": "マンゴー",
+        "hint": "Mango"
+      },
+      {
+        "word": "キウイ",
+        "hint": "Kiwi"
+      },
+      {
+        "word": "かき",
+        "hint": "Persymona"
+      },
+      {
+        "word": "パイナップル",
+        "hint": "Ananas"
+      }
+    ]
+  },
+  {
+    "key": "vegetables_wb",
+    "name": "Warzywa",
+    "description": "Naucz się zapisywać nazwy warzyw po japońsku",
+    "iconName": "carrot",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "トマト",
+        "hint": "Pomidor"
+      },
+      {
+        "word": "たまねぎ",
+        "hint": "Cebula"
+      },
+      {
+        "word": "レタス",
+        "hint": "Sałata"
+      },
+      {
+        "word": "にんじん",
+        "hint": "Marchew"
+      },
+      {
+        "word": "じゃがいも",
+        "hint": "Ziemniak"
+      },
+      {
+        "word": "にんにく",
+        "hint": "Czosnek"
+      },
+      {
+        "word": "きゅうり",
+        "hint": "Ogórek"
+      },
+      {
+        "word": "ピーマン",
+        "hint": "Papryka"
+      },
+      {
+        "word": "ほうれんそう",
+        "hint": "Szpinak"
+      },
+      {
+        "word": "ブロッコリー",
+        "hint": "Brokuł"
+      },
+      {
+        "word": "とうもろこし",
+        "hint": "Kukurydza"
+      },
+      {
+        "word": "なす",
+        "hint": "Bakłażan"
+      },
+      {
+        "word": "かぼちゃ",
+        "hint": "Dynia"
+      },
+      {
+        "word": "だいこん",
+        "hint": "Rzodkiew"
+      },
+      {
+        "word": "キャベツ",
+        "hint": "Kapusta"
+      }
+    ]
+  },
+  {
+    "key": "colors_wb",
+    "name": "Kolory",
+    "description": "Naucz się zapisywać nazwy kolorów po japońsku",
+    "iconName": "paintpalette",
+    "color": "#a855f7",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "あか",
+        "hint": "Czerwony"
+      },
+      {
+        "word": "あお",
+        "hint": "Niebieski"
+      },
+      {
+        "word": "みどり",
+        "hint": "Zielony"
+      },
+      {
+        "word": "きいろ",
+        "hint": "Żółty"
+      },
+      {
+        "word": "くろ",
+        "hint": "Czarny"
+      },
+      {
+        "word": "しろ",
+        "hint": "Biały"
+      },
+      {
+        "word": "オレンジ",
+        "hint": "Pomarańczowy"
+      },
+      {
+        "word": "むらさき",
+        "hint": "Fioletowy"
+      },
+      {
+        "word": "ピンク",
+        "hint": "Różowy"
+      },
+      {
+        "word": "ちゃいろ",
+        "hint": "Brązowy"
+      },
+      {
+        "word": "はいいろ",
+        "hint": "Szary"
+      },
+      {
+        "word": "きんいろ",
+        "hint": "Złoty"
+      },
+      {
+        "word": "ぎんいろ",
+        "hint": "Srebrny"
+      },
+      {
+        "word": "みずいろ",
+        "hint": "Jasnoniebiesk"
+      },
+      {
+        "word": "こん",
+        "hint": "Granatowy"
+      }
+    ]
+  },
+  {
+    "key": "family_wb",
+    "name": "Rodzina",
+    "description": "Naucz się zapisywać słowa związane z rodziną po japońsku",
+    "iconName": "person.2",
+    "color": "#ec4899",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "おかあさん",
+        "hint": "Mama"
+      },
+      {
+        "word": "おとうさん",
+        "hint": "Tata"
+      },
+      {
+        "word": "あね",
+        "hint": "Starsza siostra"
+      },
+      {
+        "word": "あに",
+        "hint": "Starszy brat"
+      },
+      {
+        "word": "おばあさん",
+        "hint": "Babcia"
+      },
+      {
+        "word": "おじいさん",
+        "hint": "Dziadek"
+      },
+      {
+        "word": "むすこ",
+        "hint": "Syn"
+      },
+      {
+        "word": "むすめ",
+        "hint": "Córka"
+      },
+      {
+        "word": "いもうと",
+        "hint": "Młodsza siostra"
+      },
+      {
+        "word": "おとうと",
+        "hint": "Młodszy brat"
+      },
+      {
+        "word": "おじさん",
+        "hint": "Wujek"
+      },
+      {
+        "word": "おばさん",
+        "hint": "Ciocia"
+      },
+      {
+        "word": "おっと",
+        "hint": "Mąż"
+      },
+      {
+        "word": "つま",
+        "hint": "Żona"
+      },
+      {
+        "word": "いとこ",
+        "hint": "Kuzyn"
+      }
+    ]
+  },
+  {
+    "key": "animals_wb",
+    "name": "Zwierzęta",
+    "description": "Naucz się zapisywać nazwy zwierząt po japońsku",
+    "iconName": "hare",
+    "color": "#eab308",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "いぬ",
+        "hint": "Pies"
+      },
+      {
+        "word": "ねこ",
+        "hint": "Kot"
+      },
+      {
+        "word": "うま",
+        "hint": "Koń"
+      },
+      {
+        "word": "とり",
+        "hint": "Ptak"
+      },
+      {
+        "word": "さかな",
+        "hint": "Ryba"
+      },
+      {
+        "word": "うし",
+        "hint": "Krowa"
+      },
+      {
+        "word": "ぶた",
+        "hint": "Świnia"
+      },
+      {
+        "word": "うさぎ",
+        "hint": "Królik"
+      },
+      {
+        "word": "かめ",
+        "hint": "Żółw"
+      },
+      {
+        "word": "ちょう",
+        "hint": "Motyl"
+      },
+      {
+        "word": "ライオン",
+        "hint": "Lew"
+      },
+      {
+        "word": "ぞう",
+        "hint": "Słoń"
+      },
+      {
+        "word": "さる",
+        "hint": "Małpa"
+      },
+      {
+        "word": "くま",
+        "hint": "Niedźwiedź"
+      },
+      {
+        "word": "ねずみ",
+        "hint": "Mysz"
+      }
+    ]
+  },
+  {
+    "key": "body_parts_wb",
+    "name": "Części ciała",
+    "description": "Naucz się zapisywać nazwy części ciała po japońsku",
+    "iconName": "figure.stand",
+    "color": "#ef4444",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "あたま",
+        "hint": "Głowa"
+      },
+      {
+        "word": "うで",
+        "hint": "Ramię"
+      },
+      {
+        "word": "あし",
+        "hint": "Noga"
+      },
+      {
+        "word": "て",
+        "hint": "Ręka (dłoń)"
+      },
+      {
+        "word": "め",
+        "hint": "Oko"
+      },
+      {
+        "word": "はな",
+        "hint": "Nos"
+      },
+      {
+        "word": "くち",
+        "hint": "Usta"
+      },
+      {
+        "word": "みみ",
+        "hint": "Ucho"
+      },
+      {
+        "word": "ゆび",
+        "hint": "Palec"
+      },
+      {
+        "word": "せなか",
+        "hint": "Plecy"
+      },
+      {
+        "word": "ひざ",
+        "hint": "Kolano"
+      },
+      {
+        "word": "かた",
+        "hint": "Ramię (bark)"
+      },
+      {
+        "word": "くび",
+        "hint": "Szyja"
+      },
+      {
+        "word": "むね",
+        "hint": "Klatka piersiowa"
+      },
+      {
+        "word": "おなか",
+        "hint": "Brzuch"
+      }
+    ]
+  },
+  {
+    "key": "numbers_wb",
+    "name": "Liczby",
+    "description": "Naucz się zapisywać liczby po japońsku",
+    "iconName": "number",
+    "color": "#3b82f6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "いち",
+        "hint": "Jeden"
+      },
+      {
+        "word": "に",
+        "hint": "Dwa"
+      },
+      {
+        "word": "さん",
+        "hint": "Trzy"
+      },
+      {
+        "word": "よん",
+        "hint": "Cztery"
+      },
+      {
+        "word": "ご",
+        "hint": "Pięć"
+      },
+      {
+        "word": "ろく",
+        "hint": "Sześć"
+      },
+      {
+        "word": "なな",
+        "hint": "Siedem"
+      },
+      {
+        "word": "はち",
+        "hint": "Osiem"
+      },
+      {
+        "word": "きゅう",
+        "hint": "Dziewięć"
+      },
+      {
+        "word": "じゅう",
+        "hint": "Dziesięć"
+      },
+      {
+        "word": "ひゃく",
+        "hint": "Sto"
+      },
+      {
+        "word": "せん",
+        "hint": "Tysiąc"
+      },
+      {
+        "word": "まん",
+        "hint": "Dziesięć tysięcy"
+      },
+      {
+        "word": "ゼロ",
+        "hint": "Zero"
+      },
+      {
+        "word": "にじゅう",
+        "hint": "Dwadzieścia"
+      }
+    ]
+  },
+  {
+    "key": "greetings_wb",
+    "name": "Powitania",
+    "description": "Naucz się zapisywać popularne powitania po japońsku",
+    "iconName": "hand.wave",
+    "color": "#14b8a6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "こんにちは",
+        "hint": "Dzień dobry"
+      },
+      {
+        "word": "おはよう",
+        "hint": "Dzień dobry (rano)"
+      },
+      {
+        "word": "こんばんは",
+        "hint": "Dobry wieczór"
+      },
+      {
+        "word": "さようなら",
+        "hint": "Do widzenia"
+      },
+      {
+        "word": "ありがとう",
+        "hint": "Dziękuję"
+      },
+      {
+        "word": "すみません",
+        "hint": "Przepraszam"
+      },
+      {
+        "word": "おねがいします",
+        "hint": "Proszę"
+      },
+      {
+        "word": "おやすみなさい",
+        "hint": "Dobranoc"
+      },
+      {
+        "word": "はじめまして",
+        "hint": "Miło mi poznać"
+      },
+      {
+        "word": "いただきます",
+        "hint": "Smacznego"
+      },
+      {
+        "word": "ごめんなさい",
+        "hint": "Przepraszam (sorry)"
+      },
+      {
+        "word": "おめでとう",
+        "hint": "Gratulacje"
+      },
+      {
+        "word": "おげんきですか",
+        "hint": "Jak się masz?"
+      },
+      {
+        "word": "またね",
+        "hint": "Do zobaczenia"
+      },
+      {
+        "word": "ただいま",
+        "hint": "Jestem w domu"
+      }
+    ]
+  },
+  {
+    "key": "food_wb",
+    "name": "Jedzenie",
+    "description": "Naucz się zapisywać nazwy potraw po japońsku",
+    "iconName": "fork.knife",
+    "color": "#f59e0b",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "ごはん",
+        "hint": "Ryż (gotowany)"
+      },
+      {
+        "word": "パン",
+        "hint": "Chleb"
+      },
+      {
+        "word": "たまご",
+        "hint": "Jajko"
+      },
+      {
+        "word": "にく",
+        "hint": "Mięso"
+      },
+      {
+        "word": "サラダ",
+        "hint": "Sałatka"
+      },
+      {
+        "word": "スープ",
+        "hint": "Zupa"
+      },
+      {
+        "word": "すし",
+        "hint": "Sushi"
+      },
+      {
+        "word": "ラーメン",
+        "hint": "Ramen"
+      },
+      {
+        "word": "うどん",
+        "hint": "Udon (makaron)"
+      },
+      {
+        "word": "そば",
+        "hint": "Soba (makaron)"
+      },
+      {
+        "word": "てんぷら",
+        "hint": "Tempura"
+      },
+      {
+        "word": "おにぎり",
+        "hint": "Kulka ryżowa"
+      },
+      {
+        "word": "みそしる",
+        "hint": "Zupa miso"
+      },
+      {
+        "word": "カレー",
+        "hint": "Curry"
+      },
+      {
+        "word": "やきとり",
+        "hint": "Szaszłyk z kurczaka"
+      }
+    ]
+  },
+  {
+    "key": "clothing_wb",
+    "name": "Ubrania",
+    "description": "Naucz się zapisywać nazwy ubrań po japońsku",
+    "iconName": "tshirt",
+    "color": "#8b5cf6",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "シャツ",
+        "hint": "Koszula"
+      },
+      {
+        "word": "ズボン",
+        "hint": "Spodnie"
+      },
+      {
+        "word": "くつ",
+        "hint": "Buty"
+      },
+      {
+        "word": "ぼうし",
+        "hint": "Czapka"
+      },
+      {
+        "word": "コート",
+        "hint": "Płaszcz"
+      },
+      {
+        "word": "スカート",
+        "hint": "Spódnica"
+      },
+      {
+        "word": "くつした",
+        "hint": "Skarpetki"
+      },
+      {
+        "word": "セーター",
+        "hint": "Sweter"
+      },
+      {
+        "word": "ジャケット",
+        "hint": "Kurtka"
+      },
+      {
+        "word": "ネクタイ",
+        "hint": "Krawat"
+      },
+      {
+        "word": "ワンピース",
+        "hint": "Sukienka"
+      },
+      {
+        "word": "てぶくろ",
+        "hint": "Rękawiczki"
+      },
+      {
+        "word": "マフラー",
+        "hint": "Szalik"
+      },
+      {
+        "word": "ベルト",
+        "hint": "Pasek"
+      },
+      {
+        "word": "きもの",
+        "hint": "Kimono"
+      }
+    ]
+  },
+  {
+    "key": "house_rooms_wb",
+    "name": "Dom i pokoje",
+    "description": "Naucz się zapisywać nazwy pomieszczeń i elementów domu po japońsku",
+    "iconName": "house",
+    "color": "#6366f1",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "いえ",
+        "hint": "Dom"
+      },
+      {
+        "word": "へや",
+        "hint": "Pokój"
+      },
+      {
+        "word": "だいどころ",
+        "hint": "Kuchnia"
+      },
+      {
+        "word": "トイレ",
+        "hint": "Toaleta"
+      },
+      {
+        "word": "おふろ",
+        "hint": "Łazienka"
+      },
+      {
+        "word": "しんしつ",
+        "hint": "Sypialnia"
+      },
+      {
+        "word": "いま",
+        "hint": "Salon"
+      },
+      {
+        "word": "げんかん",
+        "hint": "Przedpokój"
+      },
+      {
+        "word": "にわ",
+        "hint": "Ogród"
+      },
+      {
+        "word": "まど",
+        "hint": "Okno"
+      },
+      {
+        "word": "ドア",
+        "hint": "Drzwi"
+      },
+      {
+        "word": "かいだん",
+        "hint": "Schody"
+      },
+      {
+        "word": "やね",
+        "hint": "Dach"
+      },
+      {
+        "word": "かべ",
+        "hint": "Ściana"
+      },
+      {
+        "word": "ゆか",
+        "hint": "Podłoga"
+      }
+    ]
+  },
+  {
+    "key": "weather_wb",
+    "name": "Pogoda",
+    "description": "Naucz się zapisywać słowa związane z pogodą po japońsku",
+    "iconName": "cloud.sun",
+    "color": "#06b6d4",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "てんき",
+        "hint": "Pogoda"
+      },
+      {
+        "word": "あめ",
+        "hint": "Deszcz"
+      },
+      {
+        "word": "ゆき",
+        "hint": "Śnieg"
+      },
+      {
+        "word": "かぜ",
+        "hint": "Wiatr"
+      },
+      {
+        "word": "くもり",
+        "hint": "Pochmurno"
+      },
+      {
+        "word": "はれ",
+        "hint": "Słonecznie"
+      },
+      {
+        "word": "たいふう",
+        "hint": "Tajfun"
+      },
+      {
+        "word": "かみなり",
+        "hint": "Piorun"
+      },
+      {
+        "word": "にじ",
+        "hint": "Tęcza"
+      },
+      {
+        "word": "きり",
+        "hint": "Mgła"
+      },
+      {
+        "word": "つゆ",
+        "hint": "Pora deszczowa"
+      },
+      {
+        "word": "あつい",
+        "hint": "Gorąco"
+      },
+      {
+        "word": "さむい",
+        "hint": "Zimno"
+      },
+      {
+        "word": "すずしい",
+        "hint": "Chłodno"
+      },
+      {
+        "word": "あたたかい",
+        "hint": "Ciepło"
+      }
+    ]
+  },
+  {
+    "key": "professions_wb",
+    "name": "Zawody",
+    "description": "Naucz się zapisywać nazwy zawodów po japońsku",
+    "iconName": "briefcase",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "いしゃ",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "せんせい",
+        "hint": "Nauczyciel"
+      },
+      {
+        "word": "けいさつ",
+        "hint": "Policjant"
+      },
+      {
+        "word": "かんごし",
+        "hint": "Pielęgniarka"
+      },
+      {
+        "word": "エンジニア",
+        "hint": "Inżynier"
+      },
+      {
+        "word": "コック",
+        "hint": "Kucharz"
+      },
+      {
+        "word": "うんてんし",
+        "hint": "Kierowca"
+      },
+      {
+        "word": "べんごし",
+        "hint": "Prawnik"
+      },
+      {
+        "word": "かしゅ",
+        "hint": "Piosenkarz"
+      },
+      {
+        "word": "はいゆう",
+        "hint": "Aktor"
+      },
+      {
+        "word": "のうか",
+        "hint": "Rolnik"
+      },
+      {
+        "word": "かいしゃいん",
+        "hint": "Pracownik biurowy"
+      },
+      {
+        "word": "パイロット",
+        "hint": "Pilot"
+      },
+      {
+        "word": "しょうぼうし",
+        "hint": "Strażak"
+      },
+      {
+        "word": "やくざいし",
+        "hint": "Farmaceuta"
+      }
+    ]
+  },
+  {
+    "key": "transport_wb",
+    "name": "Transport",
+    "description": "Naucz się zapisywać nazwy środków transportu po japońsku",
+    "iconName": "car",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "くるま",
+        "hint": "Samochód"
+      },
+      {
+        "word": "でんしゃ",
+        "hint": "Pociąg"
+      },
+      {
+        "word": "バス",
+        "hint": "Autobus"
+      },
+      {
+        "word": "じてんしゃ",
+        "hint": "Rower"
+      },
+      {
+        "word": "ひこうき",
+        "hint": "Samolot"
+      },
+      {
+        "word": "ふね",
+        "hint": "Statek"
+      },
+      {
+        "word": "タクシー",
+        "hint": "Taksówka"
+      },
+      {
+        "word": "ちかてつ",
+        "hint": "Metro"
+      },
+      {
+        "word": "バイク",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "しんかんせん",
+        "hint": "Shinkansen (pociąg)"
+      },
+      {
+        "word": "トラック",
+        "hint": "Ciężarówka"
+      },
+      {
+        "word": "えき",
+        "hint": "Stacja"
+      },
+      {
+        "word": "くうこう",
+        "hint": "Lotnisko"
+      },
+      {
+        "word": "みなと",
+        "hint": "Port"
+      },
+      {
+        "word": "きっぷ",
+        "hint": "Bilet"
+      }
+    ]
+  },
+  {
+    "key": "school_wb",
+    "name": "Szkoła",
+    "description": "Naucz się zapisywać słowa związane ze szkołą po japońsku",
+    "iconName": "book",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "がっこう",
+        "hint": "Szkoła"
+      },
+      {
+        "word": "きょうしつ",
+        "hint": "Klasa (sala)"
+      },
+      {
+        "word": "せいと",
+        "hint": "Uczeń"
+      },
+      {
+        "word": "ほん",
+        "hint": "Książka"
+      },
+      {
+        "word": "えんぴつ",
+        "hint": "Ołówek"
+      },
+      {
+        "word": "ノート",
+        "hint": "Zeszyt"
+      },
+      {
+        "word": "しけん",
+        "hint": "Egzamin"
+      },
+      {
+        "word": "じゅぎょう",
+        "hint": "Lekcja"
+      },
+      {
+        "word": "しゅくだい",
+        "hint": "Praca domowa"
+      },
+      {
+        "word": "こくばん",
+        "hint": "Tablica"
+      },
+      {
+        "word": "つくえ",
+        "hint": "Biurko"
+      },
+      {
+        "word": "いす",
+        "hint": "Krzesło"
+      },
+      {
+        "word": "けしゴム",
+        "hint": "Gumka"
+      },
+      {
+        "word": "じしょ",
+        "hint": "Słownik"
+      },
+      {
+        "word": "としょかん",
+        "hint": "Biblioteka"
+      }
+    ]
+  },
+  {
+    "key": "kitchen_utensils_wb",
+    "name": "Przybory kuchenne",
+    "description": "Naucz się zapisywać nazwy przyborów kuchennych po japońsku",
+    "iconName": "frying.pan",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "おさら",
+        "hint": "Talerz"
+      },
+      {
+        "word": "コップ",
+        "hint": "Szklanka"
+      },
+      {
+        "word": "はし",
+        "hint": "Pałeczki"
+      },
+      {
+        "word": "スプーン",
+        "hint": "Łyżka"
+      },
+      {
+        "word": "フォーク",
+        "hint": "Widelec"
+      },
+      {
+        "word": "ナイフ",
+        "hint": "Nóż"
+      },
+      {
+        "word": "なべ",
+        "hint": "Garnek"
+      },
+      {
+        "word": "フライパン",
+        "hint": "Patelnia"
+      },
+      {
+        "word": "ちゃわん",
+        "hint": "Miseczka"
+      },
+      {
+        "word": "まないた",
+        "hint": "Deska do krojenia"
+      },
+      {
+        "word": "おたま",
+        "hint": "Chochla"
+      },
+      {
+        "word": "やかん",
+        "hint": "Czajnik"
+      },
+      {
+        "word": "れいぞうこ",
+        "hint": "Lodówka"
+      },
+      {
+        "word": "でんしレンジ",
+        "hint": "Mikrofalówka"
+      },
+      {
+        "word": "オーブン",
+        "hint": "Piekarnik"
+      }
+    ]
+  },
+  {
+    "key": "sports_wb",
+    "name": "Sport",
+    "description": "Naucz się zapisywać nazwy dyscyplin sportowych po japońsku",
+    "iconName": "sportscourt",
+    "color": "#22d3ee",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "サッカー",
+        "hint": "Piłka nożna"
+      },
+      {
+        "word": "やきゅう",
+        "hint": "Baseball"
+      },
+      {
+        "word": "テニス",
+        "hint": "Tenis"
+      },
+      {
+        "word": "すいえい",
+        "hint": "Pływanie"
+      },
+      {
+        "word": "バスケ",
+        "hint": "Koszykówka"
+      },
+      {
+        "word": "バレー",
+        "hint": "Siatkówka"
+      },
+      {
+        "word": "じゅうどう",
+        "hint": "Judo"
+      },
+      {
+        "word": "からて",
+        "hint": "Karate"
+      },
+      {
+        "word": "すもう",
+        "hint": "Sumo"
+      },
+      {
+        "word": "スキー",
+        "hint": "Narciarstwo"
+      },
+      {
+        "word": "ゴルフ",
+        "hint": "Golf"
+      },
+      {
+        "word": "マラソン",
+        "hint": "Maraton"
+      },
+      {
+        "word": "たいそう",
+        "hint": "Gimnastyka"
+      },
+      {
+        "word": "ボクシング",
+        "hint": "Boks"
+      },
+      {
+        "word": "サーフィン",
+        "hint": "Surfing"
+      }
+    ]
+  },
+  {
+    "key": "music_instruments_wb",
+    "name": "Instrumenty muzyczne",
+    "description": "Naucz się zapisywać nazwy instrumentów muzycznych po japońsku",
+    "iconName": "music.note",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ピアノ",
+        "hint": "Pianino"
+      },
+      {
+        "word": "ギター",
+        "hint": "Gitara"
+      },
+      {
+        "word": "ドラム",
+        "hint": "Perkusja"
+      },
+      {
+        "word": "バイオリン",
+        "hint": "Skrzypce"
+      },
+      {
+        "word": "フルート",
+        "hint": "Flet"
+      },
+      {
+        "word": "トランペット",
+        "hint": "Trąbka"
+      },
+      {
+        "word": "サックス",
+        "hint": "Saksofon"
+      },
+      {
+        "word": "たいこ",
+        "hint": "Bęben"
+      },
+      {
+        "word": "ハープ",
+        "hint": "Harfa"
+      },
+      {
+        "word": "オルガン",
+        "hint": "Organy"
+      },
+      {
+        "word": "チェロ",
+        "hint": "Wiolonczela"
+      },
+      {
+        "word": "ウクレレ",
+        "hint": "Ukulele"
+      },
+      {
+        "word": "しゃみせん",
+        "hint": "Shamisen"
+      },
+      {
+        "word": "こと",
+        "hint": "Koto (cytra)"
+      },
+      {
+        "word": "ハーモニカ",
+        "hint": "Harmonijka"
+      }
+    ]
+  },
+  {
+    "key": "nature_wb",
+    "name": "Natura",
+    "description": "Naucz się zapisywać słowa związane z naturą po japońsku",
+    "iconName": "leaf.circle",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "やま",
+        "hint": "Góra"
+      },
+      {
+        "word": "かわ",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "うみ",
+        "hint": "Morze"
+      },
+      {
+        "word": "もり",
+        "hint": "Las"
+      },
+      {
+        "word": "さくら",
+        "hint": "Kwiat wiśni"
+      },
+      {
+        "word": "き",
+        "hint": "Drzewo"
+      },
+      {
+        "word": "そら",
+        "hint": "Niebo"
+      },
+      {
+        "word": "ほし",
+        "hint": "Gwiazda"
+      },
+      {
+        "word": "つき",
+        "hint": "Księżyc"
+      },
+      {
+        "word": "たいよう",
+        "hint": "Słońce"
+      },
+      {
+        "word": "いし",
+        "hint": "Kamień"
+      },
+      {
+        "word": "すな",
+        "hint": "Piasek"
+      },
+      {
+        "word": "みずうみ",
+        "hint": "Jezioro"
+      },
+      {
+        "word": "たき",
+        "hint": "Wodospad"
+      },
+      {
+        "word": "しま",
+        "hint": "Wyspa"
+      }
+    ]
+  },
+  {
+    "key": "emotions_wb",
+    "name": "Emocje",
+    "description": "Naucz się zapisywać słowa opisujące emocje po japońsku",
+    "iconName": "heart",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "うれしい",
+        "hint": "Szczęśliwy"
+      },
+      {
+        "word": "かなしい",
+        "hint": "Smutny"
+      },
+      {
+        "word": "おこる",
+        "hint": "Zły (gniew)"
+      },
+      {
+        "word": "こわい",
+        "hint": "Straszny"
+      },
+      {
+        "word": "たのしい",
+        "hint": "Wesoły"
+      },
+      {
+        "word": "さびしい",
+        "hint": "Samotny"
+      },
+      {
+        "word": "はずかしい",
+        "hint": "Zawstydzony"
+      },
+      {
+        "word": "びっくり",
+        "hint": "Zaskoczony"
+      },
+      {
+        "word": "しんぱい",
+        "hint": "Zmartwiony"
+      },
+      {
+        "word": "つかれた",
+        "hint": "Zmęczony"
+      },
+      {
+        "word": "いらいら",
+        "hint": "Zirytowany"
+      },
+      {
+        "word": "わくわく",
+        "hint": "Podekscytowany"
+      },
+      {
+        "word": "どきどき",
+        "hint": "Zdenerwowany"
+      },
+      {
+        "word": "のんびり",
+        "hint": "Zrelaksowany"
+      },
+      {
+        "word": "なつかしい",
+        "hint": "Nostalgiczny"
+      }
+    ]
+  },
+  {
+    "key": "technology_wb",
+    "name": "Technologia",
+    "description": "Naucz się zapisywać słowa związane z technologią po japońsku",
+    "iconName": "desktopcomputer",
+    "color": "#6366f1",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "パソコン",
+        "hint": "Komputer"
+      },
+      {
+        "word": "スマホ",
+        "hint": "Smartfon"
+      },
+      {
+        "word": "インターネット",
+        "hint": "Internet"
+      },
+      {
+        "word": "メール",
+        "hint": "E-mail"
+      },
+      {
+        "word": "カメラ",
+        "hint": "Aparat"
+      },
+      {
+        "word": "テレビ",
+        "hint": "Telewizor"
+      },
+      {
+        "word": "ラジオ",
+        "hint": "Radio"
+      },
+      {
+        "word": "プリンター",
+        "hint": "Drukarka"
+      },
+      {
+        "word": "でんわ",
+        "hint": "Telefon"
+      },
+      {
+        "word": "でんち",
+        "hint": "Bateria"
+      },
+      {
+        "word": "マウス",
+        "hint": "Myszka (komp.)"
+      },
+      {
+        "word": "キーボード",
+        "hint": "Klawiatura"
+      },
+      {
+        "word": "タブレット",
+        "hint": "Tablet"
+      },
+      {
+        "word": "ロボット",
+        "hint": "Robot"
+      },
+      {
+        "word": "アプリ",
+        "hint": "Aplikacja"
+      }
+    ]
+  },
+  {
+    "key": "office_wb",
+    "name": "Biuro",
+    "description": "Naucz się zapisywać słowa związane z biurem po japońsku",
+    "iconName": "building.2",
+    "color": "#475569",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "かいぎ",
+        "hint": "Spotkanie"
+      },
+      {
+        "word": "しごと",
+        "hint": "Praca"
+      },
+      {
+        "word": "しょるい",
+        "hint": "Dokument"
+      },
+      {
+        "word": "でんたく",
+        "hint": "Kalkulator"
+      },
+      {
+        "word": "カレンダー",
+        "hint": "Kalendarz"
+      },
+      {
+        "word": "コピー",
+        "hint": "Kopia"
+      },
+      {
+        "word": "ファイル",
+        "hint": "Plik"
+      },
+      {
+        "word": "ホチキス",
+        "hint": "Zszywacz"
+      },
+      {
+        "word": "ペン",
+        "hint": "Długopis"
+      },
+      {
+        "word": "ふうとう",
+        "hint": "Koperta"
+      },
+      {
+        "word": "はさみ",
+        "hint": "Nożyczki"
+      },
+      {
+        "word": "じょうし",
+        "hint": "Szef"
+      },
+      {
+        "word": "きゅうりょう",
+        "hint": "Pensja"
+      },
+      {
+        "word": "ざんぎょう",
+        "hint": "Nadgodziny"
+      },
+      {
+        "word": "めいし",
+        "hint": "Wizytówka"
+      }
+    ]
+  },
+  {
+    "key": "health_medical_wb",
+    "name": "Zdrowie i medycyna",
+    "description": "Naucz się zapisywać słowa związane ze zdrowiem po japońsku",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "びょういん",
+        "hint": "Szpital"
+      },
+      {
+        "word": "くすり",
+        "hint": "Lekarstwo"
+      },
+      {
+        "word": "ねつ",
+        "hint": "Gorączka"
+      },
+      {
+        "word": "インフルエンザ",
+        "hint": "Grypa"
+      },
+      {
+        "word": "いたい",
+        "hint": "Boli"
+      },
+      {
+        "word": "けが",
+        "hint": "Uraz"
+      },
+      {
+        "word": "アレルギー",
+        "hint": "Alergia"
+      },
+      {
+        "word": "ちゅうしゃ",
+        "hint": "Zastrzyk"
+      },
+      {
+        "word": "しんさつ",
+        "hint": "Badanie lekarskie"
+      },
+      {
+        "word": "けんこう",
+        "hint": "Zdrowie"
+      },
+      {
+        "word": "マスク",
+        "hint": "Maseczka"
+      },
+      {
+        "word": "ばんそうこう",
+        "hint": "Plaster"
+      },
+      {
+        "word": "たいおんけい",
+        "hint": "Termometr"
+      },
+      {
+        "word": "しりょく",
+        "hint": "Wzrok"
+      },
+      {
+        "word": "はいしゃ",
+        "hint": "Dentysta"
+      }
+    ]
+  },
+  {
+    "key": "travel_wb",
+    "name": "Podróże",
+    "description": "Naucz się zapisywać słowa związane z podróżami po japońsku",
+    "iconName": "airplane",
+    "color": "#0891b2",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "りょこう",
+        "hint": "Podróż"
+      },
+      {
+        "word": "ホテル",
+        "hint": "Hotel"
+      },
+      {
+        "word": "パスポート",
+        "hint": "Paszport"
+      },
+      {
+        "word": "スーツケース",
+        "hint": "Walizka"
+      },
+      {
+        "word": "ちず",
+        "hint": "Mapa"
+      },
+      {
+        "word": "かんこう",
+        "hint": "Turystyka"
+      },
+      {
+        "word": "おみやげ",
+        "hint": "Pamiątka"
+      },
+      {
+        "word": "よやく",
+        "hint": "Rezerwacja"
+      },
+      {
+        "word": "ガイド",
+        "hint": "Przewodnik"
+      },
+      {
+        "word": "しゃしん",
+        "hint": "Zdjęcie"
+      },
+      {
+        "word": "おんせん",
+        "hint": "Gorące źródła"
+      },
+      {
+        "word": "じんじゃ",
+        "hint": "Świątynia (shinto)"
+      },
+      {
+        "word": "おてら",
+        "hint": "Świątynia (buddyj.)"
+      },
+      {
+        "word": "りょかん",
+        "hint": "Tradycyjny hotel"
+      },
+      {
+        "word": "きねんひん",
+        "hint": "Suwenir"
+      }
+    ]
+  },
+  {
+    "key": "hobbies_wb",
+    "name": "Hobby",
+    "description": "Naucz się zapisywać nazwy hobby po japońsku",
+    "iconName": "puzzlepiece",
+    "color": "#a3e635",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "どくしょ",
+        "hint": "Czytanie"
+      },
+      {
+        "word": "りょうり",
+        "hint": "Gotowanie"
+      },
+      {
+        "word": "えいが",
+        "hint": "Film"
+      },
+      {
+        "word": "おんがく",
+        "hint": "Muzyka"
+      },
+      {
+        "word": "えをかく",
+        "hint": "Malowanie"
+      },
+      {
+        "word": "サイクリング",
+        "hint": "Kolarstwo"
+      },
+      {
+        "word": "つり",
+        "hint": "Wędkarstwo"
+      },
+      {
+        "word": "ハイキング",
+        "hint": "Wędrówki"
+      },
+      {
+        "word": "ダンス",
+        "hint": "Taniec"
+      },
+      {
+        "word": "ガーデニング",
+        "hint": "Ogrodnictwo"
+      },
+      {
+        "word": "おりがみ",
+        "hint": "Origami"
+      },
+      {
+        "word": "しょどう",
+        "hint": "Kaligrafia"
+      },
+      {
+        "word": "いけばな",
+        "hint": "Ikebana"
+      },
+      {
+        "word": "カラオケ",
+        "hint": "Karaoke"
+      },
+      {
+        "word": "ゲーム",
+        "hint": "Gry"
+      }
+    ]
+  },
+  {
+    "key": "drinks_beverages_wb",
+    "name": "Napoje",
+    "description": "Naucz się zapisywać nazwy napojów po japońsku",
+    "iconName": "cup.and.saucer",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "みず",
+        "hint": "Woda"
+      },
+      {
+        "word": "おちゃ",
+        "hint": "Herbata"
+      },
+      {
+        "word": "コーヒー",
+        "hint": "Kawa"
+      },
+      {
+        "word": "ジュース",
+        "hint": "Sok"
+      },
+      {
+        "word": "ぎゅうにゅう",
+        "hint": "Mleko"
+      },
+      {
+        "word": "ビール",
+        "hint": "Piwo"
+      },
+      {
+        "word": "ワイン",
+        "hint": "Wino"
+      },
+      {
+        "word": "ウイスキー",
+        "hint": "Whisky"
+      },
+      {
+        "word": "さけ",
+        "hint": "Sake"
+      },
+      {
+        "word": "こうちゃ",
+        "hint": "Herbata czarna"
+      },
+      {
+        "word": "まっちゃ",
+        "hint": "Matcha"
+      },
+      {
+        "word": "ソーダ",
+        "hint": "Napój gazowany"
+      },
+      {
+        "word": "ココア",
+        "hint": "Kakao"
+      },
+      {
+        "word": "レモネード",
+        "hint": "Lemoniada"
+      },
+      {
+        "word": "スムージー",
+        "hint": "Smoothie"
+      }
+    ]
+  },
+  {
+    "key": "desserts_sweets_wb",
+    "name": "Desery i słodycze",
+    "description": "Naucz się zapisywać nazwy deserów i słodyczy po japońsku",
+    "iconName": "birthday.cake",
+    "color": "#f472b6",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ケーキ",
+        "hint": "Ciasto"
+      },
+      {
+        "word": "チョコレート",
+        "hint": "Czekolada"
+      },
+      {
+        "word": "アイスクリーム",
+        "hint": "Lody"
+      },
+      {
+        "word": "クッキー",
+        "hint": "Ciasteczko"
+      },
+      {
+        "word": "プリン",
+        "hint": "Pudding"
+      },
+      {
+        "word": "だんご",
+        "hint": "Kulki ryżowe"
+      },
+      {
+        "word": "もち",
+        "hint": "Klejki ryż (mochi)"
+      },
+      {
+        "word": "ようかん",
+        "hint": "Yokan (żelatyna)"
+      },
+      {
+        "word": "たいやき",
+        "hint": "Taiyaki (ciastko)"
+      },
+      {
+        "word": "ドーナツ",
+        "hint": "Pączek"
+      },
+      {
+        "word": "パフェ",
+        "hint": "Parfait"
+      },
+      {
+        "word": "ゼリー",
+        "hint": "Galaretka"
+      },
+      {
+        "word": "クレープ",
+        "hint": "Naleśnik"
+      },
+      {
+        "word": "カステラ",
+        "hint": "Castella (biszkopt)"
+      },
+      {
+        "word": "せんべい",
+        "hint": "Krakersy ryżowe"
+      }
+    ]
+  },
+  {
+    "key": "furniture_wb",
+    "name": "Meble",
+    "description": "Naucz się zapisywać nazwy mebli po japońsku",
+    "iconName": "sofa",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ソファー",
+        "hint": "Kanapa"
+      },
+      {
+        "word": "テーブル",
+        "hint": "Stół"
+      },
+      {
+        "word": "ベッド",
+        "hint": "Łóżko"
+      },
+      {
+        "word": "たんす",
+        "hint": "Komoda"
+      },
+      {
+        "word": "ほんだな",
+        "hint": "Regał na książki"
+      },
+      {
+        "word": "カーテン",
+        "hint": "Zasłona"
+      },
+      {
+        "word": "カーペット",
+        "hint": "Dywan"
+      },
+      {
+        "word": "でんき",
+        "hint": "Lampa"
+      },
+      {
+        "word": "かがみ",
+        "hint": "Lustro"
+      },
+      {
+        "word": "とけい",
+        "hint": "Zegar"
+      },
+      {
+        "word": "たたみ",
+        "hint": "Tatami (mata)"
+      },
+      {
+        "word": "ふとん",
+        "hint": "Futon"
+      },
+      {
+        "word": "ざぶとん",
+        "hint": "Poduszka (do siedzenia)"
+      },
+      {
+        "word": "クローゼット",
+        "hint": "Szafa"
+      },
+      {
+        "word": "エアコン",
+        "hint": "Klimatyzacja"
+      }
+    ]
+  },
+  {
+    "key": "tools_wb",
+    "name": "Narzędzia",
+    "description": "Naucz się zapisywać nazwy narzędzi po japońsku",
+    "iconName": "wrench",
+    "color": "#737373",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ハンマー",
+        "hint": "Młotek"
+      },
+      {
+        "word": "ドライバー",
+        "hint": "Śrubokręt"
+      },
+      {
+        "word": "ペンチ",
+        "hint": "Szczypce"
+      },
+      {
+        "word": "のこぎり",
+        "hint": "Piła"
+      },
+      {
+        "word": "くぎ",
+        "hint": "Gwóźdź"
+      },
+      {
+        "word": "ネジ",
+        "hint": "Śruba"
+      },
+      {
+        "word": "スパナ",
+        "hint": "Klucz płaski"
+      },
+      {
+        "word": "ものさし",
+        "hint": "Linijka"
+      },
+      {
+        "word": "テープ",
+        "hint": "Taśma"
+      },
+      {
+        "word": "のり",
+        "hint": "Klej"
+      },
+      {
+        "word": "ロープ",
+        "hint": "Lina"
+      },
+      {
+        "word": "バケツ",
+        "hint": "Wiadro"
+      },
+      {
+        "word": "ほうき",
+        "hint": "Miotła"
+      },
+      {
+        "word": "ちりとり",
+        "hint": "Szufelka"
+      },
+      {
+        "word": "きんづち",
+        "hint": "Młotek drewniany"
+      }
+    ]
+  },
+  {
+    "key": "materials_wb",
+    "name": "Materiały",
+    "description": "Naucz się zapisywać nazwy materiałów po japońsku",
+    "iconName": "cube",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "きん",
+        "hint": "Złoto"
+      },
+      {
+        "word": "ぎん",
+        "hint": "Srebro"
+      },
+      {
+        "word": "てつ",
+        "hint": "Żelazo"
+      },
+      {
+        "word": "どう",
+        "hint": "Miedź"
+      },
+      {
+        "word": "ガラス",
+        "hint": "Szkło"
+      },
+      {
+        "word": "プラスチック",
+        "hint": "Plastik"
+      },
+      {
+        "word": "ゴム",
+        "hint": "Guma"
+      },
+      {
+        "word": "かみ",
+        "hint": "Papier"
+      },
+      {
+        "word": "ぬの",
+        "hint": "Tkanina"
+      },
+      {
+        "word": "レザー",
+        "hint": "Skóra (materiał)"
+      },
+      {
+        "word": "いと",
+        "hint": "Nić"
+      },
+      {
+        "word": "コンクリート",
+        "hint": "Beton"
+      },
+      {
+        "word": "レンガ",
+        "hint": "Cegła"
+      },
+      {
+        "word": "タイル",
+        "hint": "Kafelek"
+      },
+      {
+        "word": "セメント",
+        "hint": "Cement"
+      }
+    ]
+  },
+  {
+    "key": "daily_routine_wb",
+    "name": "Codzienna rutyna",
+    "description": "Naucz się zapisywać słowa związane z codzienną rutyną po japońsku",
+    "iconName": "sunrise",
+    "color": "#f59e0b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "あさごはん",
+        "hint": "Śniadanie"
+      },
+      {
+        "word": "ひるごはん",
+        "hint": "Obiad"
+      },
+      {
+        "word": "ばんごはん",
+        "hint": "Kolacja"
+      },
+      {
+        "word": "シャワー",
+        "hint": "Prysznic"
+      },
+      {
+        "word": "さんぽ",
+        "hint": "Spacer"
+      },
+      {
+        "word": "しごと",
+        "hint": "Praca"
+      },
+      {
+        "word": "すいみん",
+        "hint": "Sen"
+      },
+      {
+        "word": "うんどう",
+        "hint": "Ćwiczenia"
+      },
+      {
+        "word": "そうじ",
+        "hint": "Sprzątanie"
+      },
+      {
+        "word": "せんたく",
+        "hint": "Pranie"
+      },
+      {
+        "word": "かいもの",
+        "hint": "Zakupy"
+      },
+      {
+        "word": "りょうり",
+        "hint": "Gotowanie"
+      },
+      {
+        "word": "よくそう",
+        "hint": "Kąpiel"
+      },
+      {
+        "word": "しゅくだい",
+        "hint": "Praca domowa"
+      },
+      {
+        "word": "きがえ",
+        "hint": "Przebieranie się"
+      }
+    ]
+  },
+  {
+    "key": "shopping_wb",
+    "name": "Zakupy",
+    "description": "Naucz się zapisywać słowa związane z zakupami po japońsku",
+    "iconName": "cart",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "みせ",
+        "hint": "Sklep"
+      },
+      {
+        "word": "ねだん",
+        "hint": "Cena"
+      },
+      {
+        "word": "おかね",
+        "hint": "Pieniądze"
+      },
+      {
+        "word": "レジ",
+        "hint": "Kasa"
+      },
+      {
+        "word": "ふくろ",
+        "hint": "Torba"
+      },
+      {
+        "word": "セール",
+        "hint": "Wyprzedaż"
+      },
+      {
+        "word": "わりびき",
+        "hint": "Zniżka"
+      },
+      {
+        "word": "レシート",
+        "hint": "Paragon"
+      },
+      {
+        "word": "しなもの",
+        "hint": "Towar"
+      },
+      {
+        "word": "サイズ",
+        "hint": "Rozmiar"
+      },
+      {
+        "word": "いろ",
+        "hint": "Kolor"
+      },
+      {
+        "word": "しはらい",
+        "hint": "Płatność"
+      },
+      {
+        "word": "おつり",
+        "hint": "Reszta (pieniądze)"
+      },
+      {
+        "word": "カード",
+        "hint": "Karta"
+      },
+      {
+        "word": "ポイント",
+        "hint": "Punkty"
+      }
+    ]
+  },
+  {
+    "key": "restaurant_wb",
+    "name": "Restauracja",
+    "description": "Naucz się zapisywać słowa związane z restauracją po japońsku",
+    "iconName": "fork.knife",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "メニュー",
+        "hint": "Menu"
+      },
+      {
+        "word": "ちゅうもん",
+        "hint": "Zamówienie"
+      },
+      {
+        "word": "のみもの",
+        "hint": "Napój"
+      },
+      {
+        "word": "おかんじょう",
+        "hint": "Rachunek"
+      },
+      {
+        "word": "ウエイター",
+        "hint": "Kelner"
+      },
+      {
+        "word": "テーブル",
+        "hint": "Stolik"
+      },
+      {
+        "word": "はし",
+        "hint": "Pałeczki"
+      },
+      {
+        "word": "さら",
+        "hint": "Talerz"
+      },
+      {
+        "word": "コップ",
+        "hint": "Szklanka"
+      },
+      {
+        "word": "デザート",
+        "hint": "Deser"
+      },
+      {
+        "word": "おすすめ",
+        "hint": "Polecenie"
+      },
+      {
+        "word": "りょうり",
+        "hint": "Danie"
+      },
+      {
+        "word": "やきにく",
+        "hint": "Grill koreański"
+      },
+      {
+        "word": "すし",
+        "hint": "Sushi"
+      },
+      {
+        "word": "ラーメン",
+        "hint": "Ramen"
+      }
+    ]
+  },
+  {
+    "key": "garden_wb",
+    "name": "Ogród",
+    "description": "Naucz się zapisywać słowa związane z ogrodem po japońsku",
+    "iconName": "leaf",
+    "color": "#22c55e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "はな",
+        "hint": "Kwiat"
+      },
+      {
+        "word": "き",
+        "hint": "Drzewo"
+      },
+      {
+        "word": "くさ",
+        "hint": "Trawa"
+      },
+      {
+        "word": "たね",
+        "hint": "Nasiono"
+      },
+      {
+        "word": "つち",
+        "hint": "Ziemia"
+      },
+      {
+        "word": "みず",
+        "hint": "Woda"
+      },
+      {
+        "word": "はち",
+        "hint": "Doniczka"
+      },
+      {
+        "word": "にわ",
+        "hint": "Ogród"
+      },
+      {
+        "word": "はたけ",
+        "hint": "Pole uprawne"
+      },
+      {
+        "word": "シャベル",
+        "hint": "Łopata"
+      },
+      {
+        "word": "ホース",
+        "hint": "Wąż ogrodowy"
+      },
+      {
+        "word": "さくら",
+        "hint": "Wiśnia (drzewo)"
+      },
+      {
+        "word": "バラ",
+        "hint": "Róża"
+      },
+      {
+        "word": "まつ",
+        "hint": "Sosna"
+      },
+      {
+        "word": "たけ",
+        "hint": "Bambus"
+      }
+    ]
+  },
+  {
+    "key": "bathroom_wb",
+    "name": "Łazienka",
+    "description": "Naucz się zapisywać słowa związane z łazienką po japońsku",
+    "iconName": "drop",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "タオル",
+        "hint": "Ręcznik"
+      },
+      {
+        "word": "せっけん",
+        "hint": "Mydło"
+      },
+      {
+        "word": "かがみ",
+        "hint": "Lustro"
+      },
+      {
+        "word": "はブラシ",
+        "hint": "Szczoteczka do zębów"
+      },
+      {
+        "word": "はみがき",
+        "hint": "Pasta do zębów"
+      },
+      {
+        "word": "シャンプー",
+        "hint": "Szampon"
+      },
+      {
+        "word": "ドライヤー",
+        "hint": "Suszarka"
+      },
+      {
+        "word": "おふろ",
+        "hint": "Wanna"
+      },
+      {
+        "word": "トイレ",
+        "hint": "Toaleta"
+      },
+      {
+        "word": "せんめんだい",
+        "hint": "Umywalka"
+      },
+      {
+        "word": "くし",
+        "hint": "Grzebień"
+      },
+      {
+        "word": "かみそり",
+        "hint": "Golarka"
+      },
+      {
+        "word": "スポンジ",
+        "hint": "Gąbka"
+      },
+      {
+        "word": "バスマット",
+        "hint": "Mata łazienkowa"
+      },
+      {
+        "word": "せんざい",
+        "hint": "Środek czyszczący"
+      }
+    ]
+  },
+  {
+    "key": "cinema_wb",
+    "name": "Kino",
+    "description": "Naucz się zapisywać słowa związane z kinem po japońsku",
+    "iconName": "film",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "えいが",
+        "hint": "Film"
+      },
+      {
+        "word": "えいがかん",
+        "hint": "Kino"
+      },
+      {
+        "word": "はいゆう",
+        "hint": "Aktor"
+      },
+      {
+        "word": "かんとく",
+        "hint": "Reżyser"
+      },
+      {
+        "word": "チケット",
+        "hint": "Bilet"
+      },
+      {
+        "word": "スクリーン",
+        "hint": "Ekran"
+      },
+      {
+        "word": "ポップコーン",
+        "hint": "Popcorn"
+      },
+      {
+        "word": "アニメ",
+        "hint": "Anime"
+      },
+      {
+        "word": "ドラマ",
+        "hint": "Dramat"
+      },
+      {
+        "word": "コメディ",
+        "hint": "Komedia"
+      },
+      {
+        "word": "ホラー",
+        "hint": "Horror"
+      },
+      {
+        "word": "じまく",
+        "hint": "Napisy"
+      },
+      {
+        "word": "よこく",
+        "hint": "Zwiastun"
+      },
+      {
+        "word": "シーン",
+        "hint": "Scena"
+      },
+      {
+        "word": "おんがく",
+        "hint": "Muzyka filmowa"
+      }
+    ]
+  },
+  {
+    "key": "art_wb",
+    "name": "Sztuka",
+    "description": "Naucz się zapisywać słowa związane ze sztuką po japońsku",
+    "iconName": "paintbrush",
+    "color": "#f43f5e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "えがく",
+        "hint": "Malować"
+      },
+      {
+        "word": "びじゅつ",
+        "hint": "Sztuka"
+      },
+      {
+        "word": "びじゅつかん",
+        "hint": "Muzeum sztuki"
+      },
+      {
+        "word": "てんらんかい",
+        "hint": "Wystawa"
+      },
+      {
+        "word": "ちょうこく",
+        "hint": "Rzeźba"
+      },
+      {
+        "word": "すいさいが",
+        "hint": "Akwarela"
+      },
+      {
+        "word": "えのぐ",
+        "hint": "Farba"
+      },
+      {
+        "word": "キャンバス",
+        "hint": "Płótno"
+      },
+      {
+        "word": "ふで",
+        "hint": "Pędzel"
+      },
+      {
+        "word": "デッサン",
+        "hint": "Rysunek"
+      },
+      {
+        "word": "いろえんぴつ",
+        "hint": "Kredka"
+      },
+      {
+        "word": "がか",
+        "hint": "Malarz"
+      },
+      {
+        "word": "さくひん",
+        "hint": "Dzieło"
+      },
+      {
+        "word": "しょどう",
+        "hint": "Kaligrafia"
+      },
+      {
+        "word": "おりがみ",
+        "hint": "Origami"
+      }
+    ]
+  },
+  {
+    "key": "dance_wb",
+    "name": "Taniec",
+    "description": "Naucz się zapisywać słowa związane z tańcem po japońsku",
+    "iconName": "figure.dance",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "おどり",
+        "hint": "Taniec"
+      },
+      {
+        "word": "おどる",
+        "hint": "Tańczyć"
+      },
+      {
+        "word": "バレエ",
+        "hint": "Balet"
+      },
+      {
+        "word": "ステップ",
+        "hint": "Krok taneczny"
+      },
+      {
+        "word": "リズム",
+        "hint": "Rytm"
+      },
+      {
+        "word": "ステージ",
+        "hint": "Scena"
+      },
+      {
+        "word": "パートナー",
+        "hint": "Partner"
+      },
+      {
+        "word": "ぶよう",
+        "hint": "Taniec japoński"
+      },
+      {
+        "word": "ぼんおどり",
+        "hint": "Taniec festiwalowy"
+      },
+      {
+        "word": "ダンサー",
+        "hint": "Tancerz"
+      },
+      {
+        "word": "ワルツ",
+        "hint": "Walc"
+      },
+      {
+        "word": "タンゴ",
+        "hint": "Tango"
+      },
+      {
+        "word": "サルサ",
+        "hint": "Salsa"
+      },
+      {
+        "word": "しんたい",
+        "hint": "Ciało"
+      },
+      {
+        "word": "れんしゅう",
+        "hint": "Ćwiczenie"
+      }
+    ]
+  },
+  {
+    "key": "photography_wb",
+    "name": "Fotografia",
+    "description": "Naucz się zapisywać słowa związane z fotografią po japońsku",
+    "iconName": "camera",
+    "color": "#64748b",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "カメラ",
+        "hint": "Aparat"
+      },
+      {
+        "word": "しゃしん",
+        "hint": "Zdjęcie"
+      },
+      {
+        "word": "レンズ",
+        "hint": "Obiektyw"
+      },
+      {
+        "word": "フラッシュ",
+        "hint": "Flesz"
+      },
+      {
+        "word": "じどり",
+        "hint": "Selfie"
+      },
+      {
+        "word": "さつえい",
+        "hint": "Fotografowanie"
+      },
+      {
+        "word": "がぞう",
+        "hint": "Obraz"
+      },
+      {
+        "word": "プリント",
+        "hint": "Wydruk"
+      },
+      {
+        "word": "アルバム",
+        "hint": "Album"
+      },
+      {
+        "word": "デジタル",
+        "hint": "Cyfrowy"
+      },
+      {
+        "word": "フィルム",
+        "hint": "Film (klisza)"
+      },
+      {
+        "word": "ズーム",
+        "hint": "Zoom"
+      },
+      {
+        "word": "ピント",
+        "hint": "Ostrość"
+      },
+      {
+        "word": "しぼり",
+        "hint": "Przysłona"
+      },
+      {
+        "word": "ポーズ",
+        "hint": "Poza"
+      }
+    ]
+  },
+  {
+    "key": "crafts_wb",
+    "name": "Rękodzieło",
+    "description": "Naucz się zapisywać słowa związane z rękodzielnictwem po japońsku",
+    "iconName": "scissors",
+    "color": "#a855f7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "てづくり",
+        "hint": "Ręczna robota"
+      },
+      {
+        "word": "あみもの",
+        "hint": "Robótki na drutach"
+      },
+      {
+        "word": "ぬいもの",
+        "hint": "Szycie"
+      },
+      {
+        "word": "とうげい",
+        "hint": "Ceramika"
+      },
+      {
+        "word": "おりもの",
+        "hint": "Tkanie"
+      },
+      {
+        "word": "ししゅう",
+        "hint": "Haft"
+      },
+      {
+        "word": "はり",
+        "hint": "Igła"
+      },
+      {
+        "word": "いと",
+        "hint": "Nić"
+      },
+      {
+        "word": "ぬの",
+        "hint": "Tkanina"
+      },
+      {
+        "word": "はさみ",
+        "hint": "Nożyczki"
+      },
+      {
+        "word": "ボタン",
+        "hint": "Guzik"
+      },
+      {
+        "word": "ミシン",
+        "hint": "Maszyna do szycia"
+      },
+      {
+        "word": "もよう",
+        "hint": "Wzór"
+      },
+      {
+        "word": "ビーズ",
+        "hint": "Koralik"
+      },
+      {
+        "word": "リボン",
+        "hint": "Wstążka"
+      }
+    ]
+  },
+  {
+    "key": "geography_wb",
+    "name": "Geografia",
+    "description": "Naucz się zapisywać słowa związane z geografią po japońsku",
+    "iconName": "globe.asia.australia",
+    "color": "#0ea5e9",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ちず",
+        "hint": "Mapa"
+      },
+      {
+        "word": "たいりく",
+        "hint": "Kontynent"
+      },
+      {
+        "word": "くに",
+        "hint": "Kraj"
+      },
+      {
+        "word": "しま",
+        "hint": "Wyspa"
+      },
+      {
+        "word": "かわ",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "みずうみ",
+        "hint": "Jezioro"
+      },
+      {
+        "word": "さばく",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "へいや",
+        "hint": "Równina"
+      },
+      {
+        "word": "きょうかい",
+        "hint": "Granica"
+      },
+      {
+        "word": "しゅと",
+        "hint": "Stolica"
+      },
+      {
+        "word": "はんとう",
+        "hint": "Półwysep"
+      },
+      {
+        "word": "かいきょう",
+        "hint": "Cieśnina"
+      },
+      {
+        "word": "かざん",
+        "hint": "Wulkan"
+      },
+      {
+        "word": "こうげん",
+        "hint": "Wyżyna"
+      },
+      {
+        "word": "たに",
+        "hint": "Dolina"
+      }
+    ]
+  },
+  {
+    "key": "astronomy_wb",
+    "name": "Astronomia",
+    "description": "Naucz się zapisywać słowa związane z astronomią po japońsku",
+    "iconName": "star",
+    "color": "#1e3a5f",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ほし",
+        "hint": "Gwiazda"
+      },
+      {
+        "word": "つき",
+        "hint": "Księżyc"
+      },
+      {
+        "word": "たいよう",
+        "hint": "Słońce"
+      },
+      {
+        "word": "わくせい",
+        "hint": "Planeta"
+      },
+      {
+        "word": "うちゅう",
+        "hint": "Kosmos"
+      },
+      {
+        "word": "ぎんが",
+        "hint": "Galaktyka"
+      },
+      {
+        "word": "すいせい",
+        "hint": "Kometa"
+      },
+      {
+        "word": "せいざ",
+        "hint": "Gwiazdozbiór"
+      },
+      {
+        "word": "ロケット",
+        "hint": "Rakieta"
+      },
+      {
+        "word": "うちゅうせん",
+        "hint": "Statek kosmiczny"
+      },
+      {
+        "word": "いんせき",
+        "hint": "Meteoryt"
+      },
+      {
+        "word": "にっしょく",
+        "hint": "Zaćmienie Słońca"
+      },
+      {
+        "word": "てんもんだい",
+        "hint": "Obserwatorium"
+      },
+      {
+        "word": "ブラックホール",
+        "hint": "Czarna dziura"
+      },
+      {
+        "word": "じゅうりょく",
+        "hint": "Grawitacja"
+      }
+    ]
+  },
+  {
+    "key": "ocean_wb",
+    "name": "Ocean",
+    "description": "Naucz się zapisywać słowa związane z oceanem po japońsku",
+    "iconName": "water.waves",
+    "color": "#0077b6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "うみ",
+        "hint": "Morze"
+      },
+      {
+        "word": "なみ",
+        "hint": "Fala"
+      },
+      {
+        "word": "すな",
+        "hint": "Piasek"
+      },
+      {
+        "word": "さかな",
+        "hint": "Ryba"
+      },
+      {
+        "word": "かい",
+        "hint": "Muszla"
+      },
+      {
+        "word": "サンゴ",
+        "hint": "Koral"
+      },
+      {
+        "word": "クジラ",
+        "hint": "Wieloryb"
+      },
+      {
+        "word": "イルカ",
+        "hint": "Delfin"
+      },
+      {
+        "word": "たこ",
+        "hint": "Ośmiornica"
+      },
+      {
+        "word": "いか",
+        "hint": "Kałamarnica"
+      },
+      {
+        "word": "カニ",
+        "hint": "Krab"
+      },
+      {
+        "word": "エビ",
+        "hint": "Krewetka"
+      },
+      {
+        "word": "かいそう",
+        "hint": "Wodorosty"
+      },
+      {
+        "word": "しお",
+        "hint": "Sól / przypływ"
+      },
+      {
+        "word": "ふかい",
+        "hint": "Głęboki"
+      }
+    ]
+  },
+  {
+    "key": "mountains_wb",
+    "name": "Góry",
+    "description": "Naucz się zapisywać słowa związane z górami po japońsku",
+    "iconName": "mountain.2",
+    "color": "#6b7280",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "やま",
+        "hint": "Góra"
+      },
+      {
+        "word": "さんちょう",
+        "hint": "Szczyt"
+      },
+      {
+        "word": "とざん",
+        "hint": "Wspinaczka górska"
+      },
+      {
+        "word": "ハイキング",
+        "hint": "Wycieczka piesza"
+      },
+      {
+        "word": "がけ",
+        "hint": "Klif"
+      },
+      {
+        "word": "いわ",
+        "hint": "Skała"
+      },
+      {
+        "word": "たき",
+        "hint": "Wodospad"
+      },
+      {
+        "word": "もり",
+        "hint": "Las"
+      },
+      {
+        "word": "こみち",
+        "hint": "Ścieżka"
+      },
+      {
+        "word": "ゆき",
+        "hint": "Śnieg"
+      },
+      {
+        "word": "きり",
+        "hint": "Mgła"
+      },
+      {
+        "word": "けしき",
+        "hint": "Krajobraz"
+      },
+      {
+        "word": "ふじさん",
+        "hint": "Góra Fudżi"
+      },
+      {
+        "word": "おんせん",
+        "hint": "Gorące źródło"
+      },
+      {
+        "word": "ロープウェイ",
+        "hint": "Kolejka linowa"
+      }
+    ]
+  },
+  {
+    "key": "camping_wb",
+    "name": "Biwak",
+    "description": "Naucz się zapisywać słowa związane z biwakowaniem po japońsku",
+    "iconName": "tent",
+    "color": "#78716c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "テント",
+        "hint": "Namiot"
+      },
+      {
+        "word": "キャンプ",
+        "hint": "Kemping"
+      },
+      {
+        "word": "たきび",
+        "hint": "Ognisko"
+      },
+      {
+        "word": "ねぶくろ",
+        "hint": "Śpiwór"
+      },
+      {
+        "word": "リュック",
+        "hint": "Plecak"
+      },
+      {
+        "word": "ランタン",
+        "hint": "Latarnia"
+      },
+      {
+        "word": "かいちゅうでんとう",
+        "hint": "Latarka"
+      },
+      {
+        "word": "すいとう",
+        "hint": "Bidon"
+      },
+      {
+        "word": "コンパス",
+        "hint": "Kompas"
+      },
+      {
+        "word": "ナイフ",
+        "hint": "Nóż"
+      },
+      {
+        "word": "むし",
+        "hint": "Owad"
+      },
+      {
+        "word": "ほしぞら",
+        "hint": "Gwieździste niebo"
+      },
+      {
+        "word": "つり",
+        "hint": "Wędkowanie"
+      },
+      {
+        "word": "バーベキュー",
+        "hint": "Grill"
+      },
+      {
+        "word": "マッチ",
+        "hint": "Zapałki"
+      }
+    ]
+  },
+  {
+    "key": "law_wb",
+    "name": "Prawo",
+    "description": "Naucz się zapisywać słowa związane z prawem po japońsku",
+    "iconName": "building.columns",
+    "color": "#7c3aed",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ほうりつ",
+        "hint": "Prawo (ustawa)"
+      },
+      {
+        "word": "さいばん",
+        "hint": "Proces sądowy"
+      },
+      {
+        "word": "べんごし",
+        "hint": "Adwokat"
+      },
+      {
+        "word": "さいばんしょ",
+        "hint": "Sąd"
+      },
+      {
+        "word": "はんざい",
+        "hint": "Przestępstwo"
+      },
+      {
+        "word": "けいさつ",
+        "hint": "Policja"
+      },
+      {
+        "word": "しょうこ",
+        "hint": "Dowód"
+      },
+      {
+        "word": "けいやく",
+        "hint": "Umowa"
+      },
+      {
+        "word": "けんり",
+        "hint": "Prawo (uprawnienie)"
+      },
+      {
+        "word": "ぎむ",
+        "hint": "Obowiązek"
+      },
+      {
+        "word": "ばっきん",
+        "hint": "Grzywna"
+      },
+      {
+        "word": "たいほ",
+        "hint": "Aresztowanie"
+      },
+      {
+        "word": "はんけつ",
+        "hint": "Wyrok"
+      },
+      {
+        "word": "きそく",
+        "hint": "Regulamin"
+      },
+      {
+        "word": "しょうにん",
+        "hint": "Świadek"
+      }
+    ]
+  },
+  {
+    "key": "politics_wb",
+    "name": "Polityka",
+    "description": "Naucz się zapisywać słowa związane z polityką po japońsku",
+    "iconName": "person.3",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "せいじ",
+        "hint": "Polityka"
+      },
+      {
+        "word": "せんきょ",
+        "hint": "Wybory"
+      },
+      {
+        "word": "とうひょう",
+        "hint": "Głosowanie"
+      },
+      {
+        "word": "ないかく",
+        "hint": "Rząd (gabinet)"
+      },
+      {
+        "word": "しゅしょう",
+        "hint": "Premier"
+      },
+      {
+        "word": "だいとうりょう",
+        "hint": "Prezydent"
+      },
+      {
+        "word": "こっかい",
+        "hint": "Parlament"
+      },
+      {
+        "word": "せいとう",
+        "hint": "Partia polityczna"
+      },
+      {
+        "word": "みんしゅ",
+        "hint": "Demokracja"
+      },
+      {
+        "word": "がいこう",
+        "hint": "Dyplomacja"
+      },
+      {
+        "word": "けんぽう",
+        "hint": "Konstytucja"
+      },
+      {
+        "word": "へいわ",
+        "hint": "Pokój"
+      },
+      {
+        "word": "せんそう",
+        "hint": "Wojna"
+      },
+      {
+        "word": "じゆう",
+        "hint": "Wolność"
+      },
+      {
+        "word": "びょうどう",
+        "hint": "Równość"
+      }
+    ]
+  },
+  {
+    "key": "economy_wb",
+    "name": "Ekonomia",
+    "description": "Naucz się zapisywać słowa związane z ekonomią po japońsku",
+    "iconName": "chart.line.uptrend.xyaxis",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "けいざい",
+        "hint": "Ekonomia"
+      },
+      {
+        "word": "しじょう",
+        "hint": "Rynek"
+      },
+      {
+        "word": "ぶっか",
+        "hint": "Ceny (ogólne)"
+      },
+      {
+        "word": "きぎょう",
+        "hint": "Przedsiębiorstwo"
+      },
+      {
+        "word": "ゆしゅつ",
+        "hint": "Eksport"
+      },
+      {
+        "word": "ゆにゅう",
+        "hint": "Import"
+      },
+      {
+        "word": "ぼうえき",
+        "hint": "Handel"
+      },
+      {
+        "word": "ぜいきん",
+        "hint": "Podatek"
+      },
+      {
+        "word": "しゅうにゅう",
+        "hint": "Dochód"
+      },
+      {
+        "word": "しょうひ",
+        "hint": "Konsumpcja"
+      },
+      {
+        "word": "とうし",
+        "hint": "Inwestycja"
+      },
+      {
+        "word": "かぶしき",
+        "hint": "Akcje (giełda)"
+      },
+      {
+        "word": "インフレ",
+        "hint": "Inflacja"
+      },
+      {
+        "word": "きんり",
+        "hint": "Stopa procentowa"
+      },
+      {
+        "word": "ふきょう",
+        "hint": "Recesja"
+      }
+    ]
+  },
+  {
+    "key": "banking_wb",
+    "name": "Bankowość",
+    "description": "Naucz się zapisywać słowa związane z bankowością po japońsku",
+    "iconName": "banknote",
+    "color": "#0d9488",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ぎんこう",
+        "hint": "Bank"
+      },
+      {
+        "word": "よきん",
+        "hint": "Depozyt"
+      },
+      {
+        "word": "こうざ",
+        "hint": "Konto"
+      },
+      {
+        "word": "りそく",
+        "hint": "Odsetki"
+      },
+      {
+        "word": "ローン",
+        "hint": "Pożyczka"
+      },
+      {
+        "word": "クレジット",
+        "hint": "Kredyt"
+      },
+      {
+        "word": "ふりこみ",
+        "hint": "Przelew"
+      },
+      {
+        "word": "ひきだし",
+        "hint": "Wypłata"
+      },
+      {
+        "word": "ざんだか",
+        "hint": "Saldo"
+      },
+      {
+        "word": "つうちょう",
+        "hint": "Książeczka bankowa"
+      },
+      {
+        "word": "キャッシュ",
+        "hint": "Gotówka"
+      },
+      {
+        "word": "てすうりょう",
+        "hint": "Opłata"
+      },
+      {
+        "word": "かわせ",
+        "hint": "Kurs wymiany"
+      },
+      {
+        "word": "しょうめい",
+        "hint": "Potwierdzenie"
+      },
+      {
+        "word": "あんしょう",
+        "hint": "Hasło / PIN"
+      }
+    ]
+  },
+  {
+    "key": "insurance_wb",
+    "name": "Ubezpieczenia",
+    "description": "Naucz się zapisywać słowa związane z ubezpieczeniami po japońsku",
+    "iconName": "shield",
+    "color": "#2563eb",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ほけん",
+        "hint": "Ubezpieczenie"
+      },
+      {
+        "word": "せいめい",
+        "hint": "Życie"
+      },
+      {
+        "word": "けんこう",
+        "hint": "Zdrowie"
+      },
+      {
+        "word": "じどうしゃ",
+        "hint": "Samochód"
+      },
+      {
+        "word": "ほしょう",
+        "hint": "Gwarancja"
+      },
+      {
+        "word": "けいやく",
+        "hint": "Umowa"
+      },
+      {
+        "word": "ほけんりょう",
+        "hint": "Składka"
+      },
+      {
+        "word": "ほけんきん",
+        "hint": "Odszkodowanie"
+      },
+      {
+        "word": "じこ",
+        "hint": "Wypadek"
+      },
+      {
+        "word": "さいがい",
+        "hint": "Katastrofa"
+      },
+      {
+        "word": "しんせい",
+        "hint": "Wniosek"
+      },
+      {
+        "word": "ほけんしょう",
+        "hint": "Polisa"
+      },
+      {
+        "word": "かにゅう",
+        "hint": "Przystąpienie"
+      },
+      {
+        "word": "こうしん",
+        "hint": "Odnowienie"
+      },
+      {
+        "word": "かいやく",
+        "hint": "Rozwiązanie umowy"
+      }
+    ]
+  },
+  {
+    "key": "cooking_wb",
+    "name": "Gotowanie",
+    "description": "Naucz się zapisywać słowa związane z gotowaniem po japońsku",
+    "iconName": "flame",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "りょうり",
+        "hint": "Gotowanie"
+      },
+      {
+        "word": "なべ",
+        "hint": "Garnek"
+      },
+      {
+        "word": "フライパン",
+        "hint": "Patelnia"
+      },
+      {
+        "word": "まないた",
+        "hint": "Deska do krojenia"
+      },
+      {
+        "word": "ほうちょう",
+        "hint": "Nóż kuchenny"
+      },
+      {
+        "word": "やく",
+        "hint": "Smażyć / piec"
+      },
+      {
+        "word": "にる",
+        "hint": "Gotować (w wodzie)"
+      },
+      {
+        "word": "むす",
+        "hint": "Gotować na parze"
+      },
+      {
+        "word": "まぜる",
+        "hint": "Mieszać"
+      },
+      {
+        "word": "きる",
+        "hint": "Kroić"
+      },
+      {
+        "word": "あじ",
+        "hint": "Smak"
+      },
+      {
+        "word": "レシピ",
+        "hint": "Przepis"
+      },
+      {
+        "word": "ざいりょう",
+        "hint": "Składniki"
+      },
+      {
+        "word": "かねつ",
+        "hint": "Podgrzewanie"
+      },
+      {
+        "word": "できあがり",
+        "hint": "Gotowe (potrawa)"
+      }
+    ]
+  },
+  {
+    "key": "baking_wb",
+    "name": "Pieczenie",
+    "description": "Naucz się zapisywać słowa związane z pieczeniem po japońsku",
+    "iconName": "birthday.cake",
+    "color": "#d97706",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "パン",
+        "hint": "Chleb"
+      },
+      {
+        "word": "ケーキ",
+        "hint": "Ciasto"
+      },
+      {
+        "word": "クッキー",
+        "hint": "Ciasteczko"
+      },
+      {
+        "word": "こむぎこ",
+        "hint": "Mąka"
+      },
+      {
+        "word": "さとう",
+        "hint": "Cukier"
+      },
+      {
+        "word": "たまご",
+        "hint": "Jajko"
+      },
+      {
+        "word": "バター",
+        "hint": "Masło"
+      },
+      {
+        "word": "オーブン",
+        "hint": "Piekarnik"
+      },
+      {
+        "word": "イースト",
+        "hint": "Drożdże"
+      },
+      {
+        "word": "こねる",
+        "hint": "Wyrabiać (ciasto)"
+      },
+      {
+        "word": "かたち",
+        "hint": "Kształt"
+      },
+      {
+        "word": "やきたて",
+        "hint": "Świeżo upieczone"
+      },
+      {
+        "word": "パイ",
+        "hint": "Placek"
+      },
+      {
+        "word": "クリーム",
+        "hint": "Krem"
+      },
+      {
+        "word": "チョコレート",
+        "hint": "Czekolada"
+      }
+    ]
+  },
+  {
+    "key": "spices_wb",
+    "name": "Przyprawy",
+    "description": "Naucz się zapisywać słowa związane z przyprawami po japońsku",
+    "iconName": "leaf",
+    "color": "#b45309",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "しお",
+        "hint": "Sól"
+      },
+      {
+        "word": "こしょう",
+        "hint": "Pieprz"
+      },
+      {
+        "word": "しょうゆ",
+        "hint": "Sos sojowy"
+      },
+      {
+        "word": "みそ",
+        "hint": "Pasta miso"
+      },
+      {
+        "word": "さとう",
+        "hint": "Cukier"
+      },
+      {
+        "word": "す",
+        "hint": "Ocet"
+      },
+      {
+        "word": "わさび",
+        "hint": "Wasabi"
+      },
+      {
+        "word": "しょうが",
+        "hint": "Imbir"
+      },
+      {
+        "word": "にんにく",
+        "hint": "Czosnek"
+      },
+      {
+        "word": "みりん",
+        "hint": "Mirin (słodkie sake)"
+      },
+      {
+        "word": "カレーこ",
+        "hint": "Curry w proszku"
+      },
+      {
+        "word": "ごま",
+        "hint": "Sezam"
+      },
+      {
+        "word": "とうがらし",
+        "hint": "Papryczka chili"
+      },
+      {
+        "word": "ゆず",
+        "hint": "Yuzu (cytrus)"
+      },
+      {
+        "word": "さんしょう",
+        "hint": "Pieprz sansho"
+      }
+    ]
+  },
+  {
+    "key": "dairy_wb",
+    "name": "Nabiał",
+    "description": "Naucz się zapisywać słowa związane z nabiałem po japońsku",
+    "iconName": "cup.and.saucer",
+    "color": "#fbbf24",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ぎゅうにゅう",
+        "hint": "Mleko"
+      },
+      {
+        "word": "チーズ",
+        "hint": "Ser"
+      },
+      {
+        "word": "ヨーグルト",
+        "hint": "Jogurt"
+      },
+      {
+        "word": "バター",
+        "hint": "Masło"
+      },
+      {
+        "word": "クリーム",
+        "hint": "Śmietana"
+      },
+      {
+        "word": "アイスクリーム",
+        "hint": "Lody"
+      },
+      {
+        "word": "とうふ",
+        "hint": "Tofu"
+      },
+      {
+        "word": "とうにゅう",
+        "hint": "Mleko sojowe"
+      },
+      {
+        "word": "プリン",
+        "hint": "Pudding"
+      },
+      {
+        "word": "ホイップ",
+        "hint": "Bita śmietana"
+      },
+      {
+        "word": "マーガリン",
+        "hint": "Margaryna"
+      },
+      {
+        "word": "れんにゅう",
+        "hint": "Mleko skondensowane"
+      },
+      {
+        "word": "コンデンス",
+        "hint": "Kondensowane"
+      },
+      {
+        "word": "しぼうぶん",
+        "hint": "Tłuszcz"
+      },
+      {
+        "word": "カルシウム",
+        "hint": "Wapń"
+      }
+    ]
+  },
+  {
+    "key": "meat_wb",
+    "name": "Mięso",
+    "description": "Naucz się zapisywać słowa związane z mięsem po japońsku",
+    "iconName": "fork.knife",
+    "color": "#b91c1c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "にく",
+        "hint": "Mięso"
+      },
+      {
+        "word": "ぎゅうにく",
+        "hint": "Wołowina"
+      },
+      {
+        "word": "ぶたにく",
+        "hint": "Wieprzowina"
+      },
+      {
+        "word": "とりにく",
+        "hint": "Kurczak"
+      },
+      {
+        "word": "ひつじにく",
+        "hint": "Baranina"
+      },
+      {
+        "word": "ソーセージ",
+        "hint": "Kiełbasa"
+      },
+      {
+        "word": "ハム",
+        "hint": "Szynka"
+      },
+      {
+        "word": "ベーコン",
+        "hint": "Bekon"
+      },
+      {
+        "word": "ステーキ",
+        "hint": "Stek"
+      },
+      {
+        "word": "ひきにく",
+        "hint": "Mięso mielone"
+      },
+      {
+        "word": "やきとり",
+        "hint": "Szaszłyk z kurczaka"
+      },
+      {
+        "word": "しゃぶしゃぶ",
+        "hint": "Shabu-shabu"
+      },
+      {
+        "word": "すきやき",
+        "hint": "Sukiyaki"
+      },
+      {
+        "word": "とんかつ",
+        "hint": "Kotlet schabowy"
+      },
+      {
+        "word": "からあげ",
+        "hint": "Smażony kurczak"
+      }
+    ]
+  },
+  {
+    "key": "pets_wb",
+    "name": "Zwierzęta domowe",
+    "description": "Naucz się zapisywać nazwy zwierząt domowych po japońsku",
+    "iconName": "pawprint",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "いぬ",
+        "hint": "Pies"
+      },
+      {
+        "word": "ねこ",
+        "hint": "Kot"
+      },
+      {
+        "word": "ハムスター",
+        "hint": "Chomik"
+      },
+      {
+        "word": "うさぎ",
+        "hint": "Królik"
+      },
+      {
+        "word": "きんぎょ",
+        "hint": "Złota rybka"
+      },
+      {
+        "word": "インコ",
+        "hint": "Papuga falista"
+      },
+      {
+        "word": "カメ",
+        "hint": "Żółw"
+      },
+      {
+        "word": "フェレット",
+        "hint": "Fretka"
+      },
+      {
+        "word": "モルモット",
+        "hint": "Świnka morska"
+      },
+      {
+        "word": "こいぬ",
+        "hint": "Szczeniak"
+      },
+      {
+        "word": "こねこ",
+        "hint": "Kociak"
+      },
+      {
+        "word": "えさ",
+        "hint": "Karma"
+      },
+      {
+        "word": "さんぽ",
+        "hint": "Spacer (z psem)"
+      },
+      {
+        "word": "ペットショップ",
+        "hint": "Sklep zoologiczny"
+      },
+      {
+        "word": "じゅうい",
+        "hint": "Weterynarz"
+      }
+    ]
+  },
+  {
+    "key": "birds_wb",
+    "name": "Ptaki",
+    "description": "Naucz się zapisywać nazwy ptaków po japońsku",
+    "iconName": "bird",
+    "color": "#06b6d4",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "とり",
+        "hint": "Ptak"
+      },
+      {
+        "word": "すずめ",
+        "hint": "Wróbel"
+      },
+      {
+        "word": "からす",
+        "hint": "Wrona"
+      },
+      {
+        "word": "はと",
+        "hint": "Gołąb"
+      },
+      {
+        "word": "つばめ",
+        "hint": "Jaskółka"
+      },
+      {
+        "word": "わし",
+        "hint": "Orzeł"
+      },
+      {
+        "word": "たか",
+        "hint": "Jastrząb"
+      },
+      {
+        "word": "ふくろう",
+        "hint": "Sowa"
+      },
+      {
+        "word": "ペンギン",
+        "hint": "Pingwin"
+      },
+      {
+        "word": "オウム",
+        "hint": "Papuga"
+      },
+      {
+        "word": "つる",
+        "hint": "Żuraw"
+      },
+      {
+        "word": "カモメ",
+        "hint": "Mewa"
+      },
+      {
+        "word": "うぐいす",
+        "hint": "Słowik japoński"
+      },
+      {
+        "word": "にわとり",
+        "hint": "Kura"
+      },
+      {
+        "word": "あひる",
+        "hint": "Kaczka"
+      }
+    ]
+  },
+  {
+    "key": "insects_wb",
+    "name": "Owady",
+    "description": "Naucz się zapisywać nazwy owadów po japońsku",
+    "iconName": "ant",
+    "color": "#84cc16",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "むし",
+        "hint": "Owad"
+      },
+      {
+        "word": "ちょう",
+        "hint": "Motyl"
+      },
+      {
+        "word": "あり",
+        "hint": "Mrówka"
+      },
+      {
+        "word": "はち",
+        "hint": "Pszczoła"
+      },
+      {
+        "word": "か",
+        "hint": "Komar"
+      },
+      {
+        "word": "トンボ",
+        "hint": "Ważka"
+      },
+      {
+        "word": "カブトムシ",
+        "hint": "Chrząszcz rogacz"
+      },
+      {
+        "word": "セミ",
+        "hint": "Cykada"
+      },
+      {
+        "word": "クモ",
+        "hint": "Pająk"
+      },
+      {
+        "word": "ホタル",
+        "hint": "Świetlik"
+      },
+      {
+        "word": "てんとうむし",
+        "hint": "Biedronka"
+      },
+      {
+        "word": "バッタ",
+        "hint": "Konik polny"
+      },
+      {
+        "word": "コオロギ",
+        "hint": "Świerszcz"
+      },
+      {
+        "word": "ハエ",
+        "hint": "Mucha"
+      },
+      {
+        "word": "カタツムリ",
+        "hint": "Ślimak"
+      }
+    ]
+  },
+  {
+    "key": "marine_life_wb",
+    "name": "Życie morskie",
+    "description": "Naucz się zapisywać nazwy stworzeń morskich po japońsku",
+    "iconName": "fish",
+    "color": "#0284c7",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "サメ",
+        "hint": "Rekin"
+      },
+      {
+        "word": "マグロ",
+        "hint": "Tuńczyk"
+      },
+      {
+        "word": "サケ",
+        "hint": "Łosoś"
+      },
+      {
+        "word": "タイ",
+        "hint": "Dorada"
+      },
+      {
+        "word": "ウナギ",
+        "hint": "Węgorz"
+      },
+      {
+        "word": "ヒトデ",
+        "hint": "Rozgwiazda"
+      },
+      {
+        "word": "タツノオトシゴ",
+        "hint": "Konik morski"
+      },
+      {
+        "word": "クラゲ",
+        "hint": "Meduza"
+      },
+      {
+        "word": "アザラシ",
+        "hint": "Foka"
+      },
+      {
+        "word": "ペンギン",
+        "hint": "Pingwin"
+      },
+      {
+        "word": "ウミガメ",
+        "hint": "Żółw morski"
+      },
+      {
+        "word": "カキ",
+        "hint": "Ostryga"
+      },
+      {
+        "word": "ホタテ",
+        "hint": "Przegrzebek"
+      },
+      {
+        "word": "フグ",
+        "hint": "Ryba rozdymka"
+      },
+      {
+        "word": "アンコウ",
+        "hint": "Żabnica"
+      }
+    ]
+  },
+  {
+    "key": "farm_animals_wb",
+    "name": "Zwierzęta hodowlane",
+    "description": "Naucz się zapisywać nazwy zwierząt hodowlanych po japońsku",
+    "iconName": "hare",
+    "color": "#65a30d",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "うし",
+        "hint": "Krowa"
+      },
+      {
+        "word": "うま",
+        "hint": "Koń"
+      },
+      {
+        "word": "ぶた",
+        "hint": "Świnia"
+      },
+      {
+        "word": "ひつじ",
+        "hint": "Owca"
+      },
+      {
+        "word": "やぎ",
+        "hint": "Koza"
+      },
+      {
+        "word": "にわとり",
+        "hint": "Kura"
+      },
+      {
+        "word": "あひる",
+        "hint": "Kaczka"
+      },
+      {
+        "word": "ろば",
+        "hint": "Osioł"
+      },
+      {
+        "word": "こうし",
+        "hint": "Cielę"
+      },
+      {
+        "word": "こうま",
+        "hint": "Źrebak"
+      },
+      {
+        "word": "こぶた",
+        "hint": "Prosiak"
+      },
+      {
+        "word": "たまご",
+        "hint": "Jajko"
+      },
+      {
+        "word": "のうじょう",
+        "hint": "Farma"
+      },
+      {
+        "word": "まぐさ",
+        "hint": "Siano"
+      },
+      {
+        "word": "トラクター",
+        "hint": "Traktor"
+      }
+    ]
+  },
+  {
+    "key": "feelings_wb",
+    "name": "Uczucia",
+    "description": "Naucz się zapisywać słowa związane z uczuciami po japońsku",
+    "iconName": "heart",
+    "color": "#ef4444",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "あい",
+        "hint": "Miłość"
+      },
+      {
+        "word": "よろこび",
+        "hint": "Radość"
+      },
+      {
+        "word": "かなしみ",
+        "hint": "Smutek"
+      },
+      {
+        "word": "いかり",
+        "hint": "Gniew"
+      },
+      {
+        "word": "おどろき",
+        "hint": "Zaskoczenie"
+      },
+      {
+        "word": "ふあん",
+        "hint": "Niepokój"
+      },
+      {
+        "word": "きぼう",
+        "hint": "Nadzieja"
+      },
+      {
+        "word": "こうかい",
+        "hint": "Żal"
+      },
+      {
+        "word": "しっと",
+        "hint": "Zazdrość"
+      },
+      {
+        "word": "ほこり",
+        "hint": "Duma"
+      },
+      {
+        "word": "はずかしさ",
+        "hint": "Wstyd"
+      },
+      {
+        "word": "なつかしい",
+        "hint": "Nostalgiczny"
+      },
+      {
+        "word": "さびしい",
+        "hint": "Samotny"
+      },
+      {
+        "word": "たのしい",
+        "hint": "Wesoły"
+      },
+      {
+        "word": "しあわせ",
+        "hint": "Szczęście"
+      }
+    ]
+  },
+  {
+    "key": "personality_wb",
+    "name": "Osobowość",
+    "description": "Naucz się zapisywać cechy osobowości po japońsku",
+    "iconName": "person.circle",
+    "color": "#8b5cf6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "やさしい",
+        "hint": "Miły / łagodny"
+      },
+      {
+        "word": "つよい",
+        "hint": "Silny"
+      },
+      {
+        "word": "まじめ",
+        "hint": "Poważny"
+      },
+      {
+        "word": "おもしろい",
+        "hint": "Zabawny"
+      },
+      {
+        "word": "しんせつ",
+        "hint": "Uprzejmy"
+      },
+      {
+        "word": "ゆうかん",
+        "hint": "Odważny"
+      },
+      {
+        "word": "しずか",
+        "hint": "Cichy / spokojny"
+      },
+      {
+        "word": "げんき",
+        "hint": "Energiczny"
+      },
+      {
+        "word": "がんこ",
+        "hint": "Uparty"
+      },
+      {
+        "word": "しょうじき",
+        "hint": "Uczciwy"
+      },
+      {
+        "word": "なまけもの",
+        "hint": "Leniwy"
+      },
+      {
+        "word": "きちょうめん",
+        "hint": "Staranny"
+      },
+      {
+        "word": "あかるい",
+        "hint": "Pogodny"
+      },
+      {
+        "word": "おとなしい",
+        "hint": "Spokojny / cichy"
+      },
+      {
+        "word": "せっきょくてき",
+        "hint": "Aktywny / proaktywny"
+      }
+    ]
+  },
+  {
+    "key": "relationships_wb",
+    "name": "Relacje",
+    "description": "Naucz się zapisywać słowa związane z relacjami po japońsku",
+    "iconName": "person.2",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ともだち",
+        "hint": "Przyjaciel"
+      },
+      {
+        "word": "こいびと",
+        "hint": "Ukochana osoba"
+      },
+      {
+        "word": "けっこん",
+        "hint": "Małżeństwo"
+      },
+      {
+        "word": "りこん",
+        "hint": "Rozwód"
+      },
+      {
+        "word": "こんやく",
+        "hint": "Zaręczyny"
+      },
+      {
+        "word": "デート",
+        "hint": "Randka"
+      },
+      {
+        "word": "しんらい",
+        "hint": "Zaufanie"
+      },
+      {
+        "word": "そんけい",
+        "hint": "Szacunek"
+      },
+      {
+        "word": "やくそく",
+        "hint": "Obietnica / umowa"
+      },
+      {
+        "word": "なかま",
+        "hint": "Kompan / kolega"
+      },
+      {
+        "word": "となり",
+        "hint": "Sąsiad"
+      },
+      {
+        "word": "せんぱい",
+        "hint": "Starszy kolega"
+      },
+      {
+        "word": "こうはい",
+        "hint": "Młodszy kolega"
+      },
+      {
+        "word": "おたがい",
+        "hint": "Nawzajem"
+      },
+      {
+        "word": "きずな",
+        "hint": "Więź"
+      }
+    ]
+  },
+  {
+    "key": "communication_wb",
+    "name": "Komunikacja",
+    "description": "Naucz się zapisywać słowa związane z komunikacją po japońsku",
+    "iconName": "bubble.left.and.bubble.right",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "はなす",
+        "hint": "Mówić"
+      },
+      {
+        "word": "きく",
+        "hint": "Słuchać"
+      },
+      {
+        "word": "よむ",
+        "hint": "Czytać"
+      },
+      {
+        "word": "かく",
+        "hint": "Pisać"
+      },
+      {
+        "word": "でんわ",
+        "hint": "Telefon"
+      },
+      {
+        "word": "メール",
+        "hint": "E-mail"
+      },
+      {
+        "word": "メッセージ",
+        "hint": "Wiadomość"
+      },
+      {
+        "word": "かいわ",
+        "hint": "Rozmowa"
+      },
+      {
+        "word": "しつもん",
+        "hint": "Pytanie"
+      },
+      {
+        "word": "こたえ",
+        "hint": "Odpowiedź"
+      },
+      {
+        "word": "せつめい",
+        "hint": "Wyjaśnienie"
+      },
+      {
+        "word": "あいさつ",
+        "hint": "Pozdrowienie"
+      },
+      {
+        "word": "はっぴょう",
+        "hint": "Prezentacja"
+      },
+      {
+        "word": "そうだん",
+        "hint": "Konsultacja"
+      },
+      {
+        "word": "れんらく",
+        "hint": "Kontakt"
+      }
+    ]
+  },
+  {
+    "key": "gestures_wb",
+    "name": "Gestykulacja",
+    "description": "Naucz się zapisywać słowa związane z gestami po japońsku",
+    "iconName": "hand.wave",
+    "color": "#f59e0b",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "おじぎ",
+        "hint": "Ukłon"
+      },
+      {
+        "word": "あくしゅ",
+        "hint": "Uścisk dłoni"
+      },
+      {
+        "word": "てをふる",
+        "hint": "Machać ręką"
+      },
+      {
+        "word": "うなずく",
+        "hint": "Kiwnąć głową"
+      },
+      {
+        "word": "ほほえむ",
+        "hint": "Uśmiechać się"
+      },
+      {
+        "word": "てをたたく",
+        "hint": "Klaskać"
+      },
+      {
+        "word": "ゆびさす",
+        "hint": "Wskazywać palcem"
+      },
+      {
+        "word": "しぐさ",
+        "hint": "Gest / maniery"
+      },
+      {
+        "word": "めくばせ",
+        "hint": "Mrugnięcie (porozumienie)"
+      },
+      {
+        "word": "かたをすくめる",
+        "hint": "Wzruszyć ramionami"
+      },
+      {
+        "word": "うでをくむ",
+        "hint": "Skrzyżować ramiona"
+      },
+      {
+        "word": "てをあわせる",
+        "hint": "Złożyć ręce (modlitwa)"
+      },
+      {
+        "word": "しせい",
+        "hint": "Postawa ciała"
+      },
+      {
+        "word": "ひょうじょう",
+        "hint": "Wyraz twarzy"
+      },
+      {
+        "word": "ピース",
+        "hint": "Znak pokoju"
+      }
+    ]
+  },
+  {
+    "key": "architecture_wb",
+    "name": "Architektura",
+    "description": "Naucz się zapisywać słowa związane z architekturą po japońsku",
+    "iconName": "building.2",
+    "color": "#6366f1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "たてもの",
+        "hint": "Budynek"
+      },
+      {
+        "word": "せっけい",
+        "hint": "Projekt (architektoniczny)"
+      },
+      {
+        "word": "はしら",
+        "hint": "Filar / kolumna"
+      },
+      {
+        "word": "やね",
+        "hint": "Dach"
+      },
+      {
+        "word": "かべ",
+        "hint": "Ściana"
+      },
+      {
+        "word": "ゆか",
+        "hint": "Podłoga"
+      },
+      {
+        "word": "かいだん",
+        "hint": "Schody"
+      },
+      {
+        "word": "バルコニー",
+        "hint": "Balkon"
+      },
+      {
+        "word": "げんかん",
+        "hint": "Wejście"
+      },
+      {
+        "word": "にわ",
+        "hint": "Ogród (przy domu)"
+      },
+      {
+        "word": "しろ",
+        "hint": "Zamek"
+      },
+      {
+        "word": "じんじゃ",
+        "hint": "Świątynia shinto"
+      },
+      {
+        "word": "おてら",
+        "hint": "Świątynia buddyjska"
+      },
+      {
+        "word": "とう",
+        "hint": "Wieża"
+      },
+      {
+        "word": "アーチ",
+        "hint": "Łuk"
+      }
+    ]
+  },
+  {
+    "key": "construction_wb",
+    "name": "Budownictwo",
+    "description": "Naucz się zapisywać słowa związane z budownictwem po japońsku",
+    "iconName": "hammer",
+    "color": "#92400e",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "こうじ",
+        "hint": "Budowa"
+      },
+      {
+        "word": "クレーン",
+        "hint": "Dźwig"
+      },
+      {
+        "word": "セメント",
+        "hint": "Cement"
+      },
+      {
+        "word": "レンガ",
+        "hint": "Cegła"
+      },
+      {
+        "word": "コンクリート",
+        "hint": "Beton"
+      },
+      {
+        "word": "てっこつ",
+        "hint": "Konstrukcja stalowa"
+      },
+      {
+        "word": "もくざい",
+        "hint": "Drewno budowlane"
+      },
+      {
+        "word": "くぎ",
+        "hint": "Gwóźdź"
+      },
+      {
+        "word": "ネジ",
+        "hint": "Śruba"
+      },
+      {
+        "word": "ペンキ",
+        "hint": "Farba (ścienna)"
+      },
+      {
+        "word": "ヘルメット",
+        "hint": "Kask"
+      },
+      {
+        "word": "あしば",
+        "hint": "Rusztowanie"
+      },
+      {
+        "word": "きそ",
+        "hint": "Fundament"
+      },
+      {
+        "word": "たいしん",
+        "hint": "Odporność na trzęsienia"
+      },
+      {
+        "word": "けんちくか",
+        "hint": "Architekt"
+      }
+    ]
+  },
+  {
+    "key": "electricity_wb",
+    "name": "Elektryczność",
+    "description": "Naucz się zapisywać słowa związane z elektrycznością po japońsku",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "でんき",
+        "hint": "Elektryczność"
+      },
+      {
+        "word": "コンセント",
+        "hint": "Gniazdko"
+      },
+      {
+        "word": "スイッチ",
+        "hint": "Włącznik"
+      },
+      {
+        "word": "でんち",
+        "hint": "Bateria"
+      },
+      {
+        "word": "でんきゅう",
+        "hint": "Żarówka"
+      },
+      {
+        "word": "でんせん",
+        "hint": "Kabel elektryczny"
+      },
+      {
+        "word": "でんあつ",
+        "hint": "Napięcie"
+      },
+      {
+        "word": "でんりゅう",
+        "hint": "Prąd"
+      },
+      {
+        "word": "ブレーカー",
+        "hint": "Bezpiecznik"
+      },
+      {
+        "word": "はつでん",
+        "hint": "Wytwarzanie prądu"
+      },
+      {
+        "word": "ソーラーパネル",
+        "hint": "Panel słoneczny"
+      },
+      {
+        "word": "じゅうでん",
+        "hint": "Ładowanie"
+      },
+      {
+        "word": "しょうめい",
+        "hint": "Oświetlenie"
+      },
+      {
+        "word": "ていでん",
+        "hint": "Awaria prądu"
+      },
+      {
+        "word": "アダプター",
+        "hint": "Adapter"
+      }
+    ]
+  },
+  {
+    "key": "plumbing_wb",
+    "name": "Hydraulika",
+    "description": "Naucz się zapisywać słowa związane z hydrauliką po japońsku",
+    "iconName": "wrench",
+    "color": "#0891b2",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "すいどう",
+        "hint": "Wodociąg"
+      },
+      {
+        "word": "パイプ",
+        "hint": "Rura"
+      },
+      {
+        "word": "じゃぐち",
+        "hint": "Kran"
+      },
+      {
+        "word": "はいすい",
+        "hint": "Odpływ"
+      },
+      {
+        "word": "ポンプ",
+        "hint": "Pompa"
+      },
+      {
+        "word": "みずもれ",
+        "hint": "Wyciek wody"
+      },
+      {
+        "word": "バルブ",
+        "hint": "Zawór"
+      },
+      {
+        "word": "きゅうとうき",
+        "hint": "Podgrzewacz wody"
+      },
+      {
+        "word": "トイレ",
+        "hint": "Toaleta"
+      },
+      {
+        "word": "せんめんだい",
+        "hint": "Umywalka"
+      },
+      {
+        "word": "ながし",
+        "hint": "Zlew"
+      },
+      {
+        "word": "すいあつ",
+        "hint": "Ciśnienie wody"
+      },
+      {
+        "word": "つまり",
+        "hint": "Zatkanie"
+      },
+      {
+        "word": "スパナ",
+        "hint": "Klucz (narzędzie)"
+      },
+      {
+        "word": "しゅうり",
+        "hint": "Naprawa"
+      }
+    ]
+  },
+  {
+    "key": "gardening_tools_wb",
+    "name": "Narzędzia ogrodnicze",
+    "description": "Naucz się zapisywać nazwy narzędzi ogrodniczych po japońsku",
+    "iconName": "leaf",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "くわ",
+        "hint": "Motyka"
+      },
+      {
+        "word": "スコップ",
+        "hint": "Łopatka"
+      },
+      {
+        "word": "じょうろ",
+        "hint": "Konewka"
+      },
+      {
+        "word": "ホース",
+        "hint": "Wąż ogrodowy"
+      },
+      {
+        "word": "くまで",
+        "hint": "Grabie"
+      },
+      {
+        "word": "はさみ",
+        "hint": "Sekator"
+      },
+      {
+        "word": "てぶくろ",
+        "hint": "Rękawice"
+      },
+      {
+        "word": "ひりょう",
+        "hint": "Nawóz"
+      },
+      {
+        "word": "たね",
+        "hint": "Nasiona"
+      },
+      {
+        "word": "なえ",
+        "hint": "Sadzonka"
+      },
+      {
+        "word": "うえき",
+        "hint": "Roślina doniczkowa"
+      },
+      {
+        "word": "しばかりき",
+        "hint": "Kosiarka"
+      },
+      {
+        "word": "ネット",
+        "hint": "Siatka"
+      },
+      {
+        "word": "ささえ",
+        "hint": "Podpora"
+      },
+      {
+        "word": "マルチ",
+        "hint": "Ściółka"
+      }
+    ]
+  },
+  {
+    "key": "medicine_wb",
+    "name": "Medycyna",
+    "description": "Naucz sie zapisywac terminy medyczne po japonsku",
+    "iconName": "cross.case",
+    "color": "#dc2626",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "くすり",
+        "hint": "Lekarstwo"
+      },
+      {
+        "word": "びょういん",
+        "hint": "Szpital"
+      },
+      {
+        "word": "いしゃ",
+        "hint": "Lekarz"
+      },
+      {
+        "word": "かんごし",
+        "hint": "Pielęgniarka"
+      },
+      {
+        "word": "しんさつ",
+        "hint": "Badanie lekarskie"
+      },
+      {
+        "word": "ちゅうしゃ",
+        "hint": "Zastrzyk"
+      },
+      {
+        "word": "しゅじゅつ",
+        "hint": "Operacja"
+      },
+      {
+        "word": "にゅういん",
+        "hint": "Hospitalizacja"
+      },
+      {
+        "word": "たいいん",
+        "hint": "Wypis ze szpitala"
+      },
+      {
+        "word": "しょほうせん",
+        "hint": "Recepta"
+      },
+      {
+        "word": "けんさ",
+        "hint": "Badanie diagnostyczne"
+      },
+      {
+        "word": "レントゲン",
+        "hint": "Przeswietlenie"
+      },
+      {
+        "word": "ねつ",
+        "hint": "Goraczka"
+      },
+      {
+        "word": "アレルギー",
+        "hint": "Alergia"
+      },
+      {
+        "word": "ワクチン",
+        "hint": "Szczepionka"
+      }
+    ]
+  },
+  {
+    "key": "pharmacy_wb",
+    "name": "Apteka",
+    "description": "Naucz sie zapisywac nazwy produktow aptecznych po japonsku",
+    "iconName": "pills",
+    "color": "#059669",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "やっきょく",
+        "hint": "Apteka"
+      },
+      {
+        "word": "じょうざい",
+        "hint": "Tabletka"
+      },
+      {
+        "word": "カプセル",
+        "hint": "Kapsulka"
+      },
+      {
+        "word": "シロップ",
+        "hint": "Syrop"
+      },
+      {
+        "word": "ぬりぐすり",
+        "hint": "Masc"
+      },
+      {
+        "word": "めぐすり",
+        "hint": "Krople do oczu"
+      },
+      {
+        "word": "ばんそうこう",
+        "hint": "Plaster"
+      },
+      {
+        "word": "ほうたい",
+        "hint": "Bandaz"
+      },
+      {
+        "word": "たいおんけい",
+        "hint": "Termometr"
+      },
+      {
+        "word": "マスク",
+        "hint": "Maseczka"
+      },
+      {
+        "word": "ビタミン",
+        "hint": "Witamina"
+      },
+      {
+        "word": "いたみどめ",
+        "hint": "Srodek przeciwbolowy"
+      },
+      {
+        "word": "かぜぐすり",
+        "hint": "Lekarstwo na przeziebienie"
+      },
+      {
+        "word": "しょうどく",
+        "hint": "Dezynfekcja"
+      },
+      {
+        "word": "サプリ",
+        "hint": "Suplement"
+      }
+    ]
+  },
+  {
+    "key": "fitness_wb",
+    "name": "Fitness",
+    "description": "Naucz sie zapisywac slowa zwiazane z fitnessem po japonsku",
+    "iconName": "figure.run",
+    "color": "#ea580c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "うんどう",
+        "hint": "Cwiczenia"
+      },
+      {
+        "word": "きんトレ",
+        "hint": "Trening silowy"
+      },
+      {
+        "word": "ストレッチ",
+        "hint": "Rozciaganie"
+      },
+      {
+        "word": "ランニング",
+        "hint": "Bieganie"
+      },
+      {
+        "word": "きんにく",
+        "hint": "Miesien"
+      },
+      {
+        "word": "ダンベル",
+        "hint": "Hantle"
+      },
+      {
+        "word": "トレーナー",
+        "hint": "Trener"
+      },
+      {
+        "word": "ジム",
+        "hint": "Silownia"
+      },
+      {
+        "word": "ウォーキング",
+        "hint": "Marsz"
+      },
+      {
+        "word": "たいりょく",
+        "hint": "Kondycja"
+      },
+      {
+        "word": "ふっきん",
+        "hint": "Miesnie brzucha"
+      },
+      {
+        "word": "スクワット",
+        "hint": "Przysiady"
+      },
+      {
+        "word": "プランク",
+        "hint": "Deska"
+      },
+      {
+        "word": "じゅうなん",
+        "hint": "Elastycznosc"
+      },
+      {
+        "word": "クールダウン",
+        "hint": "Rozluznienie"
+      }
+    ]
+  },
+  {
+    "key": "yoga_wb",
+    "name": "Joga",
+    "description": "Naucz sie zapisywac slowa zwiazane z joga po japonsku",
+    "iconName": "figure.mind.and.body",
+    "color": "#7c3aed",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ヨガ",
+        "hint": "Joga"
+      },
+      {
+        "word": "ポーズ",
+        "hint": "Pozycja"
+      },
+      {
+        "word": "こきゅう",
+        "hint": "Oddech"
+      },
+      {
+        "word": "めいそう",
+        "hint": "Medytacja"
+      },
+      {
+        "word": "マット",
+        "hint": "Mata"
+      },
+      {
+        "word": "バランス",
+        "hint": "Rownowaga"
+      },
+      {
+        "word": "リラックス",
+        "hint": "Relaks"
+      },
+      {
+        "word": "ちゅうしん",
+        "hint": "Centrum / Rdzen"
+      },
+      {
+        "word": "しせい",
+        "hint": "Postawa"
+      },
+      {
+        "word": "マントラ",
+        "hint": "Mantra"
+      },
+      {
+        "word": "チャクラ",
+        "hint": "Czakra"
+      },
+      {
+        "word": "せすじ",
+        "hint": "Kregoslup"
+      },
+      {
+        "word": "じょうはんしん",
+        "hint": "Gorna czesc ciala"
+      },
+      {
+        "word": "かはんしん",
+        "hint": "Dolna czesc ciala"
+      },
+      {
+        "word": "おだやか",
+        "hint": "Spokoj"
+      }
+    ]
+  },
+  {
+    "key": "mental_health_wb",
+    "name": "Zdrowie psychiczne",
+    "description": "Naucz sie zapisywac slowa zwiazane ze zdrowiem psychicznym po japonsku",
+    "iconName": "brain.head.profile",
+    "color": "#0891b2",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ストレス",
+        "hint": "Stres"
+      },
+      {
+        "word": "ふあん",
+        "hint": "Niepokoj"
+      },
+      {
+        "word": "うつ",
+        "hint": "Depresja"
+      },
+      {
+        "word": "カウンセリング",
+        "hint": "Poradnictwo"
+      },
+      {
+        "word": "セラピー",
+        "hint": "Terapia"
+      },
+      {
+        "word": "じりつ",
+        "hint": "Samodzielnosc"
+      },
+      {
+        "word": "かいふく",
+        "hint": "Powrot do zdrowia"
+      },
+      {
+        "word": "すいみん",
+        "hint": "Sen"
+      },
+      {
+        "word": "きぶん",
+        "hint": "Nastroj"
+      },
+      {
+        "word": "じしん",
+        "hint": "Pewnosc siebie"
+      },
+      {
+        "word": "いやし",
+        "hint": "Ukojenie"
+      },
+      {
+        "word": "きもち",
+        "hint": "Uczucia"
+      },
+      {
+        "word": "こころ",
+        "hint": "Serce / Umysl"
+      },
+      {
+        "word": "やすらぎ",
+        "hint": "Spokoj ducha"
+      },
+      {
+        "word": "あんしん",
+        "hint": "Poczucie bezpieczenstwa"
+      }
+    ]
+  },
+  {
+    "key": "vehicles_wb",
+    "name": "Pojazdy",
+    "description": "Naucz sie zapisywac nazwy pojazdow po japonsku",
+    "iconName": "car",
+    "color": "#2563eb",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "くるま",
+        "hint": "Samochod"
+      },
+      {
+        "word": "トラック",
+        "hint": "Ciezarowka"
+      },
+      {
+        "word": "バス",
+        "hint": "Autobus"
+      },
+      {
+        "word": "タクシー",
+        "hint": "Taksowka"
+      },
+      {
+        "word": "バイク",
+        "hint": "Motocykl"
+      },
+      {
+        "word": "きゅうきゅうしゃ",
+        "hint": "Karetka"
+      },
+      {
+        "word": "しょうぼうしゃ",
+        "hint": "Woz strazacki"
+      },
+      {
+        "word": "パトカー",
+        "hint": "Radiowoz"
+      },
+      {
+        "word": "ワゴン",
+        "hint": "Kombi"
+      },
+      {
+        "word": "キャンピングカー",
+        "hint": "Kamper"
+      },
+      {
+        "word": "スクーター",
+        "hint": "Skuter"
+      },
+      {
+        "word": "リムジン",
+        "hint": "Limuzyna"
+      },
+      {
+        "word": "トレーラー",
+        "hint": "Przyczepa"
+      },
+      {
+        "word": "ダンプカー",
+        "hint": "Wywrotka"
+      },
+      {
+        "word": "フォークリフト",
+        "hint": "Wozek widlowy"
+      }
+    ]
+  },
+  {
+    "key": "aviation_wb",
+    "name": "Lotnictwo",
+    "description": "Naucz sie zapisywac slowa zwiazane z lotnictwem po japonsku",
+    "iconName": "airplane",
+    "color": "#0284c7",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ひこうき",
+        "hint": "Samolot"
+      },
+      {
+        "word": "くうこう",
+        "hint": "Lotnisko"
+      },
+      {
+        "word": "パイロット",
+        "hint": "Pilot"
+      },
+      {
+        "word": "とうじょう",
+        "hint": "Wejscie na poklad"
+      },
+      {
+        "word": "りりく",
+        "hint": "Start"
+      },
+      {
+        "word": "ちゃくりく",
+        "hint": "Ladowanie"
+      },
+      {
+        "word": "パスポート",
+        "hint": "Paszport"
+      },
+      {
+        "word": "ターミナル",
+        "hint": "Terminal"
+      },
+      {
+        "word": "ゲート",
+        "hint": "Bramka"
+      },
+      {
+        "word": "きない",
+        "hint": "Na pokladzie"
+      },
+      {
+        "word": "ファーストクラス",
+        "hint": "Pierwsza klasa"
+      },
+      {
+        "word": "にもつ",
+        "hint": "Bagaz"
+      },
+      {
+        "word": "ヘリコプター",
+        "hint": "Helikopter"
+      },
+      {
+        "word": "かんせいとう",
+        "hint": "Wieza kontroli lotow"
+      },
+      {
+        "word": "きりゅう",
+        "hint": "Turbulencja"
+      }
+    ]
+  },
+  {
+    "key": "shipping_wb",
+    "name": "Zegluga",
+    "description": "Naucz sie zapisywac slowa zwiazane z zegluga po japonsku",
+    "iconName": "ferry",
+    "color": "#0369a1",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ふね",
+        "hint": "Statek"
+      },
+      {
+        "word": "みなと",
+        "hint": "Port"
+      },
+      {
+        "word": "ヨット",
+        "hint": "Jacht"
+      },
+      {
+        "word": "フェリー",
+        "hint": "Prom"
+      },
+      {
+        "word": "せんちょう",
+        "hint": "Kapitan statku"
+      },
+      {
+        "word": "いかり",
+        "hint": "Kotwica"
+      },
+      {
+        "word": "ほ",
+        "hint": "Zagiel"
+      },
+      {
+        "word": "こうかい",
+        "hint": "Zeglarstwo"
+      },
+      {
+        "word": "かもつ",
+        "hint": "Ladunek"
+      },
+      {
+        "word": "コンテナ",
+        "hint": "Kontener"
+      },
+      {
+        "word": "さんばし",
+        "hint": "Molo"
+      },
+      {
+        "word": "ボート",
+        "hint": "Lodz"
+      },
+      {
+        "word": "カヌー",
+        "hint": "Kajak"
+      },
+      {
+        "word": "そうこ",
+        "hint": "Magazyn portowy"
+      },
+      {
+        "word": "とうだい",
+        "hint": "Latarnia morska"
+      }
+    ]
+  },
+  {
+    "key": "cycling_wb",
+    "name": "Kolarstwo",
+    "description": "Naucz sie zapisywac slowa zwiazane z kolarstwem po japonsku",
+    "iconName": "bicycle",
+    "color": "#65a30d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "じてんしゃ",
+        "hint": "Rower"
+      },
+      {
+        "word": "ペダル",
+        "hint": "Pedal"
+      },
+      {
+        "word": "ハンドル",
+        "hint": "Kierownica"
+      },
+      {
+        "word": "サドル",
+        "hint": "Siodlo"
+      },
+      {
+        "word": "タイヤ",
+        "hint": "Opona"
+      },
+      {
+        "word": "チェーン",
+        "hint": "Lancuch"
+      },
+      {
+        "word": "ブレーキ",
+        "hint": "Hamulec"
+      },
+      {
+        "word": "ヘルメット",
+        "hint": "Kask"
+      },
+      {
+        "word": "ギア",
+        "hint": "Bieg / Przerzutka"
+      },
+      {
+        "word": "ベル",
+        "hint": "Dzwonek"
+      },
+      {
+        "word": "パンク",
+        "hint": "Przebicie opony"
+      },
+      {
+        "word": "ライト",
+        "hint": "Swiatlo"
+      },
+      {
+        "word": "スタンド",
+        "hint": "Nozka"
+      },
+      {
+        "word": "サイクリング",
+        "hint": "Jazda na rowerze"
+      },
+      {
+        "word": "ポンプ",
+        "hint": "Pompka"
+      }
+    ]
+  },
+  {
+    "key": "trains_wb",
+    "name": "Kolej",
+    "description": "Naucz sie zapisywac slowa zwiazane z kolejnictwem po japonsku",
+    "iconName": "tram",
+    "color": "#b91c1c",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "でんしゃ",
+        "hint": "Pociag"
+      },
+      {
+        "word": "えき",
+        "hint": "Stacja"
+      },
+      {
+        "word": "しんかんせん",
+        "hint": "Shinkansen (szybki pociag)"
+      },
+      {
+        "word": "ホーム",
+        "hint": "Peron"
+      },
+      {
+        "word": "きっぷ",
+        "hint": "Bilet"
+      },
+      {
+        "word": "かいさつ",
+        "hint": "Bramka biletowa"
+      },
+      {
+        "word": "じこくひょう",
+        "hint": "Rozklad jazdy"
+      },
+      {
+        "word": "のりかえ",
+        "hint": "Przesiadka"
+      },
+      {
+        "word": "しゃりょう",
+        "hint": "Wagon"
+      },
+      {
+        "word": "せんろ",
+        "hint": "Tory"
+      },
+      {
+        "word": "ちかてつ",
+        "hint": "Metro"
+      },
+      {
+        "word": "しゅうでん",
+        "hint": "Ostatni pociag"
+      },
+      {
+        "word": "しはつ",
+        "hint": "Pierwszy pociag"
+      },
+      {
+        "word": "グリーンしゃ",
+        "hint": "Wagon pierwszej klasy"
+      },
+      {
+        "word": "ていきけん",
+        "hint": "Bilet okresowy"
+      }
+    ]
+  },
+  {
+    "key": "mathematics_wb",
+    "name": "Matematyka",
+    "description": "Naucz sie zapisywac terminy matematyczne po japonsku",
+    "iconName": "function",
+    "color": "#4338ca",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "たしざん",
+        "hint": "Dodawanie"
+      },
+      {
+        "word": "ひきざん",
+        "hint": "Odejmowanie"
+      },
+      {
+        "word": "かけざん",
+        "hint": "Mnozenie"
+      },
+      {
+        "word": "わりざん",
+        "hint": "Dzielenie"
+      },
+      {
+        "word": "すうじ",
+        "hint": "Cyfra"
+      },
+      {
+        "word": "けいさん",
+        "hint": "Obliczenie"
+      },
+      {
+        "word": "ぶんすう",
+        "hint": "Ulamek"
+      },
+      {
+        "word": "わりあい",
+        "hint": "Procent"
+      },
+      {
+        "word": "さんかく",
+        "hint": "Trojkat"
+      },
+      {
+        "word": "えん",
+        "hint": "Kolo"
+      },
+      {
+        "word": "しかく",
+        "hint": "Kwadrat"
+      },
+      {
+        "word": "グラフ",
+        "hint": "Wykres"
+      },
+      {
+        "word": "すうがく",
+        "hint": "Matematyka"
+      },
+      {
+        "word": "こうしき",
+        "hint": "Wzor / Formula"
+      },
+      {
+        "word": "へいきん",
+        "hint": "Srednia"
+      }
+    ]
+  },
+  {
+    "key": "physics_wb",
+    "name": "Fizyka",
+    "description": "Naucz sie zapisywac terminy fizyczne po japonsku",
+    "iconName": "atom",
+    "color": "#6d28d9",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "ぶつりがく",
+        "hint": "Fizyka"
+      },
+      {
+        "word": "ちから",
+        "hint": "Sila"
+      },
+      {
+        "word": "エネルギー",
+        "hint": "Energia"
+      },
+      {
+        "word": "そくど",
+        "hint": "Predkosc"
+      },
+      {
+        "word": "じゅうりょく",
+        "hint": "Grawitacja"
+      },
+      {
+        "word": "おんど",
+        "hint": "Temperatura"
+      },
+      {
+        "word": "でんき",
+        "hint": "Elektrycznosc"
+      },
+      {
+        "word": "じしゃく",
+        "hint": "Magnes"
+      },
+      {
+        "word": "はどう",
+        "hint": "Fala"
+      },
+      {
+        "word": "ひかり",
+        "hint": "Swiatlo"
+      },
+      {
+        "word": "おと",
+        "hint": "Dzwiek"
+      },
+      {
+        "word": "あつりょく",
+        "hint": "Cisnienie"
+      },
+      {
+        "word": "まさつ",
+        "hint": "Tarcie"
+      },
+      {
+        "word": "しんどう",
+        "hint": "Drganie"
+      },
+      {
+        "word": "たいせき",
+        "hint": "Objetosc"
+      }
+    ]
+  },
+  {
+    "key": "chemistry_wb",
+    "name": "Chemia",
+    "description": "Naucz sie zapisywac terminy chemiczne po japonsku",
+    "iconName": "flask",
+    "color": "#0e7490",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "かがく",
+        "hint": "Chemia"
+      },
+      {
+        "word": "げんそ",
+        "hint": "Pierwiastek"
+      },
+      {
+        "word": "ぶんし",
+        "hint": "Czasteczka"
+      },
+      {
+        "word": "げんし",
+        "hint": "Atom"
+      },
+      {
+        "word": "すいそ",
+        "hint": "Wodor"
+      },
+      {
+        "word": "さんそ",
+        "hint": "Tlen"
+      },
+      {
+        "word": "きんぞく",
+        "hint": "Metal"
+      },
+      {
+        "word": "さん",
+        "hint": "Kwas"
+      },
+      {
+        "word": "えき",
+        "hint": "Ciecz"
+      },
+      {
+        "word": "きたい",
+        "hint": "Gaz"
+      },
+      {
+        "word": "こたい",
+        "hint": "Cialo stale"
+      },
+      {
+        "word": "はんのう",
+        "hint": "Reakcja"
+      },
+      {
+        "word": "じっけん",
+        "hint": "Eksperyment"
+      },
+      {
+        "word": "ようえき",
+        "hint": "Roztwor"
+      },
+      {
+        "word": "フラスコ",
+        "hint": "Kolba"
+      }
+    ]
+  },
+  {
+    "key": "biology_wb",
+    "name": "Biologia",
+    "description": "Naucz sie zapisywac terminy biologiczne po japonsku",
+    "iconName": "leaf",
+    "color": "#059669",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "せいぶつ",
+        "hint": "Organizm"
+      },
+      {
+        "word": "さいぼう",
+        "hint": "Komorka"
+      },
+      {
+        "word": "いでんし",
+        "hint": "Gen"
+      },
+      {
+        "word": "しんか",
+        "hint": "Ewolucja"
+      },
+      {
+        "word": "こうごうせい",
+        "hint": "Fotosynteza"
+      },
+      {
+        "word": "きかん",
+        "hint": "Narzad"
+      },
+      {
+        "word": "バクテリア",
+        "hint": "Bakteria"
+      },
+      {
+        "word": "ウイルス",
+        "hint": "Wirus"
+      },
+      {
+        "word": "けつえき",
+        "hint": "Krew"
+      },
+      {
+        "word": "しんぞう",
+        "hint": "Serce"
+      },
+      {
+        "word": "のう",
+        "hint": "Mozg"
+      },
+      {
+        "word": "ほね",
+        "hint": "Kosc"
+      },
+      {
+        "word": "きん",
+        "hint": "Grzyb / Plesn"
+      },
+      {
+        "word": "せいたいけい",
+        "hint": "Ekosystem"
+      },
+      {
+        "word": "たんぱくしつ",
+        "hint": "Bialko"
+      }
+    ]
+  },
+  {
+    "key": "science_wb",
+    "name": "Nauka",
+    "description": "Naucz sie zapisywac ogolne terminy naukowe po japonsku",
+    "iconName": "magnifyingglass",
+    "color": "#3b82f6",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "かがくしゃ",
+        "hint": "Naukowiec"
+      },
+      {
+        "word": "けんきゅう",
+        "hint": "Badania naukowe"
+      },
+      {
+        "word": "はっけん",
+        "hint": "Odkrycie"
+      },
+      {
+        "word": "はつめい",
+        "hint": "Wynalazek"
+      },
+      {
+        "word": "りろん",
+        "hint": "Teoria"
+      },
+      {
+        "word": "かせつ",
+        "hint": "Hipoteza"
+      },
+      {
+        "word": "データ",
+        "hint": "Dane"
+      },
+      {
+        "word": "けんびきょう",
+        "hint": "Mikroskop"
+      },
+      {
+        "word": "ぼうえんきょう",
+        "hint": "Teleskop"
+      },
+      {
+        "word": "けっか",
+        "hint": "Wynik"
+      },
+      {
+        "word": "ろんぶん",
+        "hint": "Praca naukowa"
+      },
+      {
+        "word": "ぶんせき",
+        "hint": "Analiza"
+      },
+      {
+        "word": "しょうめい",
+        "hint": "Dowod"
+      },
+      {
+        "word": "ロボット",
+        "hint": "Robot"
+      },
+      {
+        "word": "うちゅう",
+        "hint": "Kosmos"
+      }
+    ]
+  },
+  {
+    "key": "festivals_wb",
+    "name": "Festiwale",
+    "description": "Naucz sie zapisywac slowa zwiazane z festiwalami po japonsku",
+    "iconName": "sparkles",
+    "color": "#e11d48",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "まつり",
+        "hint": "Festiwal"
+      },
+      {
+        "word": "はなび",
+        "hint": "Fajerwerki"
+      },
+      {
+        "word": "やたい",
+        "hint": "Stoisko z jedzeniem"
+      },
+      {
+        "word": "おみこし",
+        "hint": "Przenoszony oltarz"
+      },
+      {
+        "word": "ゆかた",
+        "hint": "Letnie kimono"
+      },
+      {
+        "word": "おどり",
+        "hint": "Taniec"
+      },
+      {
+        "word": "たいこ",
+        "hint": "Beben"
+      },
+      {
+        "word": "ちょうちん",
+        "hint": "Lampion"
+      },
+      {
+        "word": "パレード",
+        "hint": "Parada"
+      },
+      {
+        "word": "コンサート",
+        "hint": "Koncert"
+      },
+      {
+        "word": "ステージ",
+        "hint": "Scena"
+      },
+      {
+        "word": "かそう",
+        "hint": "Przebranie"
+      },
+      {
+        "word": "マスク",
+        "hint": "Maska"
+      },
+      {
+        "word": "おまつり",
+        "hint": "Swieto ludowe"
+      },
+      {
+        "word": "スピーカー",
+        "hint": "Glosnik"
+      }
+    ]
+  },
+  {
+    "key": "traditions_wb",
+    "name": "Tradycje",
+    "description": "Naucz sie zapisywac slowa zwiazane z tradycjami po japonsku",
+    "iconName": "building.columns",
+    "color": "#92400e",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "でんとう",
+        "hint": "Tradycja"
+      },
+      {
+        "word": "ぶんか",
+        "hint": "Kultura"
+      },
+      {
+        "word": "しゅうかん",
+        "hint": "Zwyczaj"
+      },
+      {
+        "word": "れいぎ",
+        "hint": "Etykieta"
+      },
+      {
+        "word": "おじぎ",
+        "hint": "Uklon"
+      },
+      {
+        "word": "きもの",
+        "hint": "Kimono"
+      },
+      {
+        "word": "さどう",
+        "hint": "Ceremonia herbaciana"
+      },
+      {
+        "word": "いけばな",
+        "hint": "Ukladanie kwiatow"
+      },
+      {
+        "word": "しょどう",
+        "hint": "Kaligrafia"
+      },
+      {
+        "word": "おりがみ",
+        "hint": "Origami"
+      },
+      {
+        "word": "すもう",
+        "hint": "Sumo"
+      },
+      {
+        "word": "じんじゃ",
+        "hint": "Swiatynia shinto"
+      },
+      {
+        "word": "おてら",
+        "hint": "Swiatynia buddyjska"
+      },
+      {
+        "word": "おせち",
+        "hint": "Noworoczne potrawy"
+      },
+      {
+        "word": "おもてなし",
+        "hint": "Goscinnosc"
+      }
+    ]
+  },
+  {
+    "key": "weddings_wb",
+    "name": "Wesela",
+    "description": "Naucz sie zapisywac slowa zwiazane z weselami po japonsku",
+    "iconName": "heart",
+    "color": "#ec4899",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "けっこん",
+        "hint": "Malzenstwo"
+      },
+      {
+        "word": "けっこんしき",
+        "hint": "Ceremonia slubna"
+      },
+      {
+        "word": "はなよめ",
+        "hint": "Panna mloda"
+      },
+      {
+        "word": "はなむこ",
+        "hint": "Pan mlody"
+      },
+      {
+        "word": "ゆびわ",
+        "hint": "Pierscionek"
+      },
+      {
+        "word": "ブーケ",
+        "hint": "Bukiet"
+      },
+      {
+        "word": "ウエディングドレス",
+        "hint": "Suknia slubna"
+      },
+      {
+        "word": "ひろうえん",
+        "hint": "Przyjecie weselne"
+      },
+      {
+        "word": "スピーチ",
+        "hint": "Przemowa"
+      },
+      {
+        "word": "かんぱい",
+        "hint": "Toast"
+      },
+      {
+        "word": "しょうたいじょう",
+        "hint": "Zaproszenie"
+      },
+      {
+        "word": "しゅくふく",
+        "hint": "Blogoslawienstwo"
+      },
+      {
+        "word": "ケーキ",
+        "hint": "Tort"
+      },
+      {
+        "word": "しんろう",
+        "hint": "Oblubieniec"
+      },
+      {
+        "word": "ちかい",
+        "hint": "Przysiega"
+      }
+    ]
+  },
+  {
+    "key": "holidays_wb",
+    "name": "Swieta",
+    "description": "Naucz sie zapisywac nazwy swiat po japonsku",
+    "iconName": "gift",
+    "color": "#f97316",
+    "level": "beginner",
+    "items": [
+      {
+        "word": "クリスマス",
+        "hint": "Boze Narodzenie"
+      },
+      {
+        "word": "おしょうがつ",
+        "hint": "Nowy Rok"
+      },
+      {
+        "word": "たんじょうび",
+        "hint": "Urodziny"
+      },
+      {
+        "word": "バレンタイン",
+        "hint": "Walentynki"
+      },
+      {
+        "word": "ハロウィン",
+        "hint": "Halloween"
+      },
+      {
+        "word": "ひなまつり",
+        "hint": "Dzien dziewczynek"
+      },
+      {
+        "word": "こどものひ",
+        "hint": "Dzien dzieci"
+      },
+      {
+        "word": "たなばた",
+        "hint": "Festiwal gwiazd"
+      },
+      {
+        "word": "おぼん",
+        "hint": "Festiwal Obon"
+      },
+      {
+        "word": "きねんび",
+        "hint": "Rocznica"
+      },
+      {
+        "word": "プレゼント",
+        "hint": "Prezent"
+      },
+      {
+        "word": "イースター",
+        "hint": "Wielkanoc"
+      },
+      {
+        "word": "はははのひ",
+        "hint": "Dzien matki"
+      },
+      {
+        "word": "ちちのひ",
+        "hint": "Dzien ojca"
+      },
+      {
+        "word": "きゅうじつ",
+        "hint": "Dzien wolny"
+      }
+    ]
+  },
+  {
+    "key": "celebrations_wb",
+    "name": "Uroczystosci",
+    "description": "Naucz sie zapisywac slowa zwiazane z uroczystosciami po japonsku",
+    "iconName": "party.popper",
+    "color": "#d946ef",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "おいわい",
+        "hint": "Gratulacje / Swietowanie"
+      },
+      {
+        "word": "パーティー",
+        "hint": "Przyjecie"
+      },
+      {
+        "word": "そつぎょう",
+        "hint": "Ukonczenie szkoly"
+      },
+      {
+        "word": "にゅうがく",
+        "hint": "Wstapienie do szkoly"
+      },
+      {
+        "word": "しちごさん",
+        "hint": "Obrzed 7-5-3"
+      },
+      {
+        "word": "せいじんしき",
+        "hint": "Dzien pelnoletnosci"
+      },
+      {
+        "word": "かんれき",
+        "hint": "60. urodziny"
+      },
+      {
+        "word": "おめでとう",
+        "hint": "Gratulacje!"
+      },
+      {
+        "word": "かんしゃ",
+        "hint": "Wdziecznosc"
+      },
+      {
+        "word": "しゅくじつ",
+        "hint": "Swieto narodowe"
+      },
+      {
+        "word": "きねん",
+        "hint": "Upamietnienie"
+      },
+      {
+        "word": "しきてん",
+        "hint": "Ceremonia"
+      },
+      {
+        "word": "デコレーション",
+        "hint": "Dekoracja"
+      },
+      {
+        "word": "バルーン",
+        "hint": "Balon"
+      },
+      {
+        "word": "カード",
+        "hint": "Kartka okolicznosciowa"
+      }
+    ]
+  },
+  {
+    "key": "fashion_wb",
+    "name": "Moda",
+    "description": "Naucz sie zapisywac slowa zwiazane z moda po japonsku",
+    "iconName": "tshirt",
+    "color": "#be185d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ファッション",
+        "hint": "Moda"
+      },
+      {
+        "word": "デザイナー",
+        "hint": "Projektant"
+      },
+      {
+        "word": "モデル",
+        "hint": "Modelka / Model"
+      },
+      {
+        "word": "トレンド",
+        "hint": "Trend"
+      },
+      {
+        "word": "スタイル",
+        "hint": "Styl"
+      },
+      {
+        "word": "ブランド",
+        "hint": "Marka"
+      },
+      {
+        "word": "コレクション",
+        "hint": "Kolekcja"
+      },
+      {
+        "word": "ドレス",
+        "hint": "Sukienka"
+      },
+      {
+        "word": "スーツ",
+        "hint": "Garnitur"
+      },
+      {
+        "word": "アクセサリー",
+        "hint": "Akcesoria"
+      },
+      {
+        "word": "おしゃれ",
+        "hint": "Elegancki"
+      },
+      {
+        "word": "サイズ",
+        "hint": "Rozmiar"
+      },
+      {
+        "word": "ブティック",
+        "hint": "Butik"
+      },
+      {
+        "word": "カジュアル",
+        "hint": "Casualowy"
+      },
+      {
+        "word": "フォーマル",
+        "hint": "Formalny"
+      }
+    ]
+  },
+  {
+    "key": "textiles_wb",
+    "name": "Tkaniny",
+    "description": "Naucz sie zapisywac nazwy tkanin po japonsku",
+    "iconName": "square.stack",
+    "color": "#a16207",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "きぬ",
+        "hint": "Jedwab"
+      },
+      {
+        "word": "めん",
+        "hint": "Bawelna"
+      },
+      {
+        "word": "ウール",
+        "hint": "Welna"
+      },
+      {
+        "word": "リネン",
+        "hint": "Len"
+      },
+      {
+        "word": "ポリエステル",
+        "hint": "Poliester"
+      },
+      {
+        "word": "デニム",
+        "hint": "Denim / Dzins"
+      },
+      {
+        "word": "レース",
+        "hint": "Koronka"
+      },
+      {
+        "word": "ベルベット",
+        "hint": "Aksamit"
+      },
+      {
+        "word": "ナイロン",
+        "hint": "Nylon"
+      },
+      {
+        "word": "カシミア",
+        "hint": "Kaszmir"
+      },
+      {
+        "word": "ぬの",
+        "hint": "Tkanina"
+      },
+      {
+        "word": "いと",
+        "hint": "Nic"
+      },
+      {
+        "word": "おりもの",
+        "hint": "Tkactwo"
+      },
+      {
+        "word": "そめもの",
+        "hint": "Farbowanie"
+      },
+      {
+        "word": "もよう",
+        "hint": "Wzor / Deseń"
+      }
+    ]
+  },
+  {
+    "key": "jewelry_wb",
+    "name": "Bizuteria",
+    "description": "Naucz sie zapisywac nazwy bizuterii po japonsku",
+    "iconName": "sparkle",
+    "color": "#ca8a04",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "ゆびわ",
+        "hint": "Pierscionek"
+      },
+      {
+        "word": "ネックレス",
+        "hint": "Naszyjnik"
+      },
+      {
+        "word": "イヤリング",
+        "hint": "Kolczyki"
+      },
+      {
+        "word": "ブレスレット",
+        "hint": "Bransoletka"
+      },
+      {
+        "word": "ペンダント",
+        "hint": "Wisiorek"
+      },
+      {
+        "word": "きん",
+        "hint": "Zloto"
+      },
+      {
+        "word": "ぎん",
+        "hint": "Srebro"
+      },
+      {
+        "word": "ダイヤモンド",
+        "hint": "Diament"
+      },
+      {
+        "word": "パール",
+        "hint": "Perla"
+      },
+      {
+        "word": "ルビー",
+        "hint": "Rubin"
+      },
+      {
+        "word": "サファイア",
+        "hint": "Szafir"
+      },
+      {
+        "word": "エメラルド",
+        "hint": "Szmaragd"
+      },
+      {
+        "word": "ブローチ",
+        "hint": "Broszka"
+      },
+      {
+        "word": "うでどけい",
+        "hint": "Zegarek na reke"
+      },
+      {
+        "word": "ティアラ",
+        "hint": "Tiara / Diadem"
+      }
+    ]
+  },
+  {
+    "key": "cosmetics_wb",
+    "name": "Kosmetyki",
+    "description": "Naucz sie zapisywac nazwy kosmetykow po japonsku",
+    "iconName": "paintbrush",
+    "color": "#db2777",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "けしょう",
+        "hint": "Makijaz"
+      },
+      {
+        "word": "くちべに",
+        "hint": "Szminka"
+      },
+      {
+        "word": "ファンデーション",
+        "hint": "Podklad"
+      },
+      {
+        "word": "マスカラ",
+        "hint": "Tusz do rzes"
+      },
+      {
+        "word": "アイシャドウ",
+        "hint": "Cien do powiek"
+      },
+      {
+        "word": "チーク",
+        "hint": "Roz do policzkow"
+      },
+      {
+        "word": "けしょうすい",
+        "hint": "Tonik"
+      },
+      {
+        "word": "にゅうえき",
+        "hint": "Emulsja"
+      },
+      {
+        "word": "クリーム",
+        "hint": "Krem"
+      },
+      {
+        "word": "ひやけどめ",
+        "hint": "Krem z filtrem UV"
+      },
+      {
+        "word": "こうすい",
+        "hint": "Perfumy"
+      },
+      {
+        "word": "ネイル",
+        "hint": "Lakier do paznokci"
+      },
+      {
+        "word": "クレンジング",
+        "hint": "Demakijaz"
+      },
+      {
+        "word": "せっけん",
+        "hint": "Mydlo"
+      },
+      {
+        "word": "パック",
+        "hint": "Maseczka na twarz"
+      }
+    ]
+  },
+  {
+    "key": "hairstyles_wb",
+    "name": "Fryzury",
+    "description": "Naucz sie zapisywac slowa zwiazane z fryzurami po japonsku",
+    "iconName": "scissors",
+    "color": "#9333ea",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "かみがた",
+        "hint": "Fryzura"
+      },
+      {
+        "word": "びよういん",
+        "hint": "Salon fryzjerski"
+      },
+      {
+        "word": "カット",
+        "hint": "Strzyzenie"
+      },
+      {
+        "word": "パーマ",
+        "hint": "Trwala"
+      },
+      {
+        "word": "カラー",
+        "hint": "Koloryzacja"
+      },
+      {
+        "word": "ブラシ",
+        "hint": "Szczotka do wlosow"
+      },
+      {
+        "word": "ドライヤー",
+        "hint": "Suszarka"
+      },
+      {
+        "word": "シャンプー",
+        "hint": "Szampon"
+      },
+      {
+        "word": "コンディショナー",
+        "hint": "Odzywka"
+      },
+      {
+        "word": "まえがみ",
+        "hint": "Grzywka"
+      },
+      {
+        "word": "ポニーテール",
+        "hint": "Kucyk"
+      },
+      {
+        "word": "おだんご",
+        "hint": "Kok"
+      },
+      {
+        "word": "ショートヘア",
+        "hint": "Krotkie wlosy"
+      },
+      {
+        "word": "ロングヘア",
+        "hint": "Dlugie wlosy"
+      },
+      {
+        "word": "ワックス",
+        "hint": "Wosk do wlosow"
+      }
+    ]
+  },
+  {
+    "key": "environment_wb",
+    "name": "Srodowisko",
+    "description": "Naucz sie zapisywac slowa zwiazane ze srodowiskiem po japonsku",
+    "iconName": "globe.americas",
+    "color": "#16a34a",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "かんきょう",
+        "hint": "Srodowisko"
+      },
+      {
+        "word": "しぜん",
+        "hint": "Natura"
+      },
+      {
+        "word": "もり",
+        "hint": "Las"
+      },
+      {
+        "word": "かわ",
+        "hint": "Rzeka"
+      },
+      {
+        "word": "うみ",
+        "hint": "Morze"
+      },
+      {
+        "word": "くうき",
+        "hint": "Powietrze"
+      },
+      {
+        "word": "みず",
+        "hint": "Woda"
+      },
+      {
+        "word": "つち",
+        "hint": "Gleba"
+      },
+      {
+        "word": "おせん",
+        "hint": "Zanieczyszczenie"
+      },
+      {
+        "word": "さばく",
+        "hint": "Pustynia"
+      },
+      {
+        "word": "しつげん",
+        "hint": "Mokradla"
+      },
+      {
+        "word": "せいたい",
+        "hint": "Ekologia"
+      },
+      {
+        "word": "やせい",
+        "hint": "Dzika przyroda"
+      },
+      {
+        "word": "ほご",
+        "hint": "Ochrona"
+      },
+      {
+        "word": "たようせい",
+        "hint": "Bioroznorodnosc"
+      }
+    ]
+  },
+  {
+    "key": "recycling_wb",
+    "name": "Recykling",
+    "description": "Naucz sie zapisywac slowa zwiazane z recyklingiem po japonsku",
+    "iconName": "arrow.3.trianglepath",
+    "color": "#15803d",
+    "level": "intermediate",
+    "items": [
+      {
+        "word": "リサイクル",
+        "hint": "Recykling"
+      },
+      {
+        "word": "ゴミ",
+        "hint": "Smieci"
+      },
+      {
+        "word": "ぶんべつ",
+        "hint": "Segregacja"
+      },
+      {
+        "word": "かん",
+        "hint": "Puszka"
+      },
+      {
+        "word": "びん",
+        "hint": "Butelka szklana"
+      },
+      {
+        "word": "ペットボトル",
+        "hint": "Butelka plastikowa"
+      },
+      {
+        "word": "かみ",
+        "hint": "Papier"
+      },
+      {
+        "word": "ダンボール",
+        "hint": "Karton"
+      },
+      {
+        "word": "プラスチック",
+        "hint": "Plastik"
+      },
+      {
+        "word": "なまゴミ",
+        "hint": "Odpady organiczne"
+      },
+      {
+        "word": "もえるゴミ",
+        "hint": "Smieci palne"
+      },
+      {
+        "word": "もえないゴミ",
+        "hint": "Smieci niepalne"
+      },
+      {
+        "word": "しゅうしゅう",
+        "hint": "Zbiorka odpadow"
+      },
+      {
+        "word": "エコバッグ",
+        "hint": "Torba ekologiczna"
+      },
+      {
+        "word": "さいりよう",
+        "hint": "Ponowne wykorzystanie"
+      }
+    ]
+  },
+  {
+    "key": "energy_wb",
+    "name": "Energia",
+    "description": "Naucz sie zapisywac slowa zwiazane z energia po japonsku",
+    "iconName": "bolt",
+    "color": "#eab308",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "エネルギー",
+        "hint": "Energia"
+      },
+      {
+        "word": "でんりょく",
+        "hint": "Energia elektryczna"
+      },
+      {
+        "word": "たいようこう",
+        "hint": "Energia sloneczna"
+      },
+      {
+        "word": "ふうりょく",
+        "hint": "Energia wiatrowa"
+      },
+      {
+        "word": "すいりょく",
+        "hint": "Energia wodna"
+      },
+      {
+        "word": "げんしりょく",
+        "hint": "Energia jadrowa"
+      },
+      {
+        "word": "ねんりょう",
+        "hint": "Paliwo"
+      },
+      {
+        "word": "せきゆ",
+        "hint": "Ropa naftowa"
+      },
+      {
+        "word": "ガス",
+        "hint": "Gaz ziemny"
+      },
+      {
+        "word": "たんそ",
+        "hint": "Wegiel (pierwiastek)"
+      },
+      {
+        "word": "はつでん",
+        "hint": "Wytwarzanie energii"
+      },
+      {
+        "word": "バッテリー",
+        "hint": "Akumulator"
+      },
+      {
+        "word": "しょうエネ",
+        "hint": "Oszczedzanie energii"
+      },
+      {
+        "word": "ソーラーパネル",
+        "hint": "Panel sloneczny"
+      },
+      {
+        "word": "じぞくかのう",
+        "hint": "Zrownowazony"
+      }
+    ]
+  },
+  {
+    "key": "climate_wb",
+    "name": "Klimat",
+    "description": "Naucz sie zapisywac slowa zwiazane z klimatem po japonsku",
+    "iconName": "thermometer.sun",
+    "color": "#ea580c",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "きこう",
+        "hint": "Klimat"
+      },
+      {
+        "word": "おんだんか",
+        "hint": "Ocieplenie globalne"
+      },
+      {
+        "word": "きおん",
+        "hint": "Temperatura powietrza"
+      },
+      {
+        "word": "こうずい",
+        "hint": "Powodz"
+      },
+      {
+        "word": "かんばつ",
+        "hint": "Susza"
+      },
+      {
+        "word": "たいふう",
+        "hint": "Tajfun"
+      },
+      {
+        "word": "じしん",
+        "hint": "Trzesienie ziemi"
+      },
+      {
+        "word": "つなみ",
+        "hint": "Tsunami"
+      },
+      {
+        "word": "ひょうが",
+        "hint": "Lodowiec"
+      },
+      {
+        "word": "オゾン",
+        "hint": "Ozon"
+      },
+      {
+        "word": "はいしゅつ",
+        "hint": "Emisja"
+      },
+      {
+        "word": "にさんかたんそ",
+        "hint": "Dwutlenek wegla"
+      },
+      {
+        "word": "おんしつ",
+        "hint": "Efekt cieplarniany"
+      },
+      {
+        "word": "いじょうきしょう",
+        "hint": "Anomalia pogodowa"
+      },
+      {
+        "word": "かいめんじょうしょう",
+        "hint": "Podniesienie poziomu morza"
+      }
+    ]
+  },
+  {
+    "key": "sustainability_wb",
+    "name": "Zrownowazone rozwoj",
+    "description": "Naucz sie zapisywac slowa zwiazane ze zrownowazonym rozwojem po japonsku",
+    "iconName": "leaf.arrow.triangle.circlepath",
+    "color": "#047857",
+    "level": "advanced",
+    "items": [
+      {
+        "word": "じぞく",
+        "hint": "Trwalosc"
+      },
+      {
+        "word": "かんきょうほご",
+        "hint": "Ochrona srodowiska"
+      },
+      {
+        "word": "エコ",
+        "hint": "Ekologiczny"
+      },
+      {
+        "word": "しぜんエネルギー",
+        "hint": "Energia odnawialna"
+      },
+      {
+        "word": "せつやく",
+        "hint": "Oszczedzanie"
+      },
+      {
+        "word": "しょくりん",
+        "hint": "Zalesianie"
+      },
+      {
+        "word": "ゆうき",
+        "hint": "Organiczny"
+      },
+      {
+        "word": "ちさんちしょう",
+        "hint": "Lokalna produkcja i konsumpcja"
+      },
+      {
+        "word": "フェアトレード",
+        "hint": "Sprawiedliwy handel"
+      },
+      {
+        "word": "さいせい",
+        "hint": "Regeneracja"
+      },
+      {
+        "word": "はいき",
+        "hint": "Odpady"
+      },
+      {
+        "word": "ゼロウェイスト",
+        "hint": "Zero odpadow"
+      },
+      {
+        "word": "しょうひ",
+        "hint": "Konsumpcja"
+      },
+      {
+        "word": "きょうぞん",
+        "hint": "Wspolistnienie"
+      },
+      {
+        "word": "みらい",
+        "hint": "Przyszlosc"
+      }
+    ]
+  }
+]

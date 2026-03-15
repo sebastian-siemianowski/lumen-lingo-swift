@@ -84,8 +84,8 @@ final class FlashcardsViewModel {
 
     func flipCard() {
         isFlipped.toggle()
-        audioService.playPlink()
-        HapticsService.light()
+        audioService.playCardFlipEnhanced()
+        HapticsService.shared.cardFlip()
     }
 
     func handleAnswer(correct: Bool) {
@@ -106,12 +106,13 @@ final class FlashcardsViewModel {
                 )
             }
 
-            audioService.playWarmPulse()
-            HapticsService.success()
+            audioService.playSwipeRight()
+            HapticsService.shared.correctAnswer()
 
             if currentStreak >= 3 {
                 showParticles = true
                 audioService.playStreakBonus()
+                HapticsService.shared.streakBuilding(count: currentStreak)
                 Task { @MainActor in
                     try? await Task.sleep(for: .seconds(1))
                     showParticles = false
@@ -120,8 +121,8 @@ final class FlashcardsViewModel {
         } else {
             wrongAnswers += 1
             currentStreak = 0
-            audioService.playSoftNudge()
-            HapticsService.error()
+            audioService.playSwipeLeft()
+            HapticsService.shared.wrongAnswer()
         }
 
         // Advance to next card

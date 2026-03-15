@@ -20,6 +20,7 @@ struct FlashCardsView: View {
     private var L: AppStrings { localization.strings }
 
     @Binding var hideTabBar: Bool
+    @Binding var navigationPath: NavigationPath
 
     @Query private var profiles: [UserProfile]
     @Query private var languagePrefs: [LanguagePreference]
@@ -82,6 +83,20 @@ struct FlashCardsView: View {
     @State private var boltScale: CGFloat = 1.0
     @State private var boltRotation: Double = 0
     @State private var boltOpacity: Double = 0.55
+
+    // Next category navigation
+    @State private var nextUnplayedCategoryId: String?
+    @State private var nextUnplayedCategoryName: String?
+
+    private var nextCategoryAction: (() -> Void)? {
+        guard let nextId = nextUnplayedCategoryId else { return nil }
+        return {
+            navigationPath.removeLast(navigationPath.count)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+                navigationPath.append(AppRoute.flashcardsGame(categoryId: nextId))
+            }
+        }
+    }
 
     private var currentWord: FlashcardWord? {
         guard currentIndex < words.count else { return nil }
@@ -618,16 +633,16 @@ struct FlashCardsView: View {
     // MARK: - Action Buttons
 
     private var actionButtons: some View {
-        HStack(spacing: 14) {
+        HStack(spacing: 12) {
             // Still Learning
             Button {
                 handleAnswer(correct: false)
             } label: {
-                HStack(spacing: 10) {
+                HStack(spacing: 8) {
                     Image(systemName: "arrow.counterclockwise")
-                        .font(.system(size: 14, weight: .bold))
+                        .font(.system(size: 12, weight: .bold))
                         .foregroundStyle(.white)
-                        .frame(width: 32, height: 32)
+                        .frame(width: 28, height: 28)
                         .background(
                             Circle()
                                 .fill(.white.opacity(0.20))
@@ -638,12 +653,14 @@ struct FlashCardsView: View {
                         )
 
                     Text(L.stillLearning)
-                        .font(.subheadline.bold())
+                        .font(.system(size: 13, weight: .bold))
                         .foregroundStyle(.white)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.6)
                 }
-                .padding(.horizontal, 20)
-                .padding(.vertical, 14)
-                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 12)
+                .frame(maxWidth: .infinity, minHeight: 48)
                 .background(
                     RoundedRectangle(cornerRadius: 28)
                         .fill(
@@ -676,11 +693,11 @@ struct FlashCardsView: View {
             Button {
                 handleAnswer(correct: true)
             } label: {
-                HStack(spacing: 10) {
+                HStack(spacing: 8) {
                     Image(systemName: "checkmark")
-                        .font(.system(size: 14, weight: .bold))
+                        .font(.system(size: 12, weight: .bold))
                         .foregroundStyle(.white)
-                        .frame(width: 32, height: 32)
+                        .frame(width: 28, height: 28)
                         .background(
                             Circle()
                                 .fill(.white.opacity(0.20))
@@ -691,12 +708,14 @@ struct FlashCardsView: View {
                         )
 
                     Text(L.gotIt)
-                        .font(.subheadline.bold())
+                        .font(.system(size: 13, weight: .bold))
                         .foregroundStyle(.white)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.6)
                 }
-                .padding(.horizontal, 20)
-                .padding(.vertical, 14)
-                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 12)
+                .frame(maxWidth: .infinity, minHeight: 48)
                 .background(
                     RoundedRectangle(cornerRadius: 28)
                         .fill(
@@ -739,6 +758,8 @@ struct FlashCardsView: View {
             gameType: .flashCards,
             categoryName: categoryName,
             onPlayAgain: { resetGame() },
+            onNextCategory: nextCategoryAction,
+            nextCategoryName: nextUnplayedCategoryName,
             onDismiss: { dismiss() }
         )
     }
@@ -779,8 +800,8 @@ struct FlashCardsView: View {
     private func flipCard() {
         guard !isFlipped else { return }
 
-        audioService.playPlink()
-        hapticsService.lightImpact()
+        audioService.playCardFlipEnhanced()
+        HapticsService.shared.cardFlip()
 
         // Gentle press-in
         withAnimation(.easeOut(duration: 0.1)) {
@@ -843,13 +864,12 @@ struct FlashCardsView: View {
             correctCount += 1
             score += 10
             streak += 1
-            audioService.playWarmPulse()
+            audioService.playSwipeRight()
+            HapticsService.shared.correctAnswer()
 
-            // Varied haptics based on streak
-            if streak >= 5 && streak % 5 == 0 {
-                hapticsService.success()
-            } else {
-                hapticsService.lightImpact()
+            // Streak haptics on milestones
+            if streak >= 3 {
+                HapticsService.shared.streakBuilding(count: streak)
             }
 
             // Animate score counter
@@ -894,8 +914,8 @@ struct FlashCardsView: View {
         } else {
             wrongCount += 1
             streak = 0
-            audioService.playSoftNudge()
-            hapticsService.lightImpact()
+            audioService.playSwipeLeft()
+            HapticsService.shared.wrongAnswer()
 
             // Orange glow around the card
             answerGlow = .orange
@@ -1009,10 +1029,41 @@ struct FlashCardsView: View {
         progressService.recordGameSession(result)
 
         audioService.playCelebration()
-        hapticsService.success()
+        HapticsService.shared.celebrate()
+
+        // Find next unplayed category
+        findNextUnplayedCategory(progressService: progressService)
 
         withAnimation(.spring(response: 0.6)) {
             isGameComplete = true
+        }
+    }
+
+    private func findNextUnplayedCategory(progressService: ProgressService) {
+        let langPref = languagePrefs.first
+        let source = langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue
+        let target = langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue
+
+        Task {
+            let categories = await contentLoader.loadFlashcardCategories(source: source, target: target)
+            guard let currentIdx = categories.firstIndex(where: { $0.id == categoryId }) else { return }
+
+            // Search forward from current, then wrap around
+            let ordered = Array(categories[(currentIdx + 1)...]) + Array(categories[..<currentIdx])
+            for cat in ordered {
+                let progress = progressService.categoryProgress(
+                    gameType: .flashCards,
+                    category: cat.id,
+                    totalItems: cat.items.count,
+                    source: source,
+                    target: target
+                )
+                if !progress.isComplete {
+                    nextUnplayedCategoryId = cat.id
+                    nextUnplayedCategoryName = cat.name
+                    return
+                }
+            }
         }
     }
 
@@ -1150,6 +1201,8 @@ struct GameCompleteView: View {
     let gameType: GameType
     let categoryName: String
     let onPlayAgain: () -> Void
+    let onNextCategory: (() -> Void)?
+    let nextCategoryName: String?
     let onDismiss: () -> Void
 
     @Environment(\.colorScheme) private var colorScheme
@@ -1361,6 +1414,55 @@ struct GameCompleteView: View {
 
                 // MARK: — Action Buttons
                 VStack(spacing: 14) {
+                    // Next Category — primary CTA when available
+                    if let onNext = onNextCategory, let nextName = nextCategoryName {
+                        Button {
+                            onNext()
+                        } label: {
+                            HStack(spacing: 10) {
+                                Image(systemName: "arrow.right.circle.fill")
+                                    .font(.system(size: 15, weight: .semibold))
+                                VStack(spacing: 2) {
+                                    Text(L.nextCategory)
+                                        .font(.system(size: 16, weight: .semibold))
+                                    Text(nextName)
+                                        .font(.system(size: 12, weight: .medium))
+                                        .opacity(0.7)
+                                }
+                            }
+                            .foregroundStyle(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 18)
+                            .background {
+                                RoundedRectangle(cornerRadius: 22)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [
+                                                Color(hex: "#10b981").opacity(0.45),
+                                                Color(hex: "#059669").opacity(0.3)
+                                            ],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        )
+                                    )
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 22)
+                                            .strokeBorder(
+                                                LinearGradient(
+                                                    colors: [.white.opacity(0.3), .white.opacity(0.08)],
+                                                    startPoint: .topLeading,
+                                                    endPoint: .bottomTrailing
+                                                ),
+                                                lineWidth: 0.5
+                                            )
+                                    )
+                            }
+                            .shadow(color: Color(hex: "#10b981").opacity(0.25), radius: 20, y: 8)
+                        }
+                        .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#10b981")))
+                    }
+
+                    // Play Again
                     Button {
                         onPlayAgain()
                     } label: {

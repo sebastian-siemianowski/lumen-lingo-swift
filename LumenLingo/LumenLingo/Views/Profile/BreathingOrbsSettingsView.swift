@@ -77,7 +77,15 @@ struct BreathingOrbsSettingsView: View {
             PremiumToggle(
                 isOn: profile?.breathingOrbsEnabled ?? true,
                 onToggle: {
-                    withAnimation { profile?.breathingOrbsEnabled.toggle() }
+                    HapticsService.shared.toggleSwitch()
+                    profile?.breathingOrbsEnabled.toggle()
+                    if profile?.breathingOrbsEnabled == true {
+                        AudioService.shared.playToggleOn()
+                        profile?.quantumFlowEnabled = false
+                        profile?.nebulaDriftEnabled = false
+                    } else {
+                        AudioService.shared.playToggleOff()
+                    }
                 }
             )
         }
@@ -88,15 +96,15 @@ struct BreathingOrbsSettingsView: View {
     private var raveModeToggle: some View {
         HStack(spacing: 12) {
             Image(systemName: "bolt.fill")
-                .font(.system(size: 16))
+                .font(.system(size: 20))
                 .foregroundStyle(.pink)
 
             VStack(alignment: .leading, spacing: 2) {
                 Text(L.raveMode)
-                    .font(.system(size: 15, weight: .medium))
+                    .font(.system(size: 17, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .caribbeanInk)
-                Text(L.rapidColorCycling)
-                    .font(.system(size: 12))
+                Text("Vivid colour cycling across orbs")
+                    .font(.system(size: 13))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
             }
 
@@ -105,11 +113,16 @@ struct BreathingOrbsSettingsView: View {
             PremiumToggle(
                 isOn: profile?.orbRaveMode ?? false,
                 onToggle: {
-                    withAnimation { profile?.orbRaveMode.toggle() }
+                    HapticsService.shared.toggleSwitch()
+                    profile?.orbRaveMode.toggle()
+                    if profile?.orbRaveMode == true {
+                        AudioService.shared.playToggleOn()
+                    } else {
+                        AudioService.shared.playToggleOff()
+                    }
                 }
             )
         }
-        .padding(.horizontal, 4)
     }
 
     // MARK: - Scheme Selector
@@ -135,7 +148,8 @@ struct BreathingOrbsSettingsView: View {
                         description: scheme.description,
                         previewColors: scheme.previewColors,
                         isSelected: profile?.orbScheme == scheme,
-                        previewHeight: 70
+                        previewHeight: 70,
+                        icon: scheme.iconName
                     ) {
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
                             profile?.orbScheme = scheme
@@ -344,9 +358,12 @@ struct FullscreenOrbsPreview: View {
                 .padding(.bottom, 50)
             }
         }
-        .gesture(
+        .simultaneousGesture(
             DragGesture(minimumDistance: 50)
                 .onEnded { gesture in
+                    let horizontal = abs(gesture.translation.width)
+                    let vertical = abs(gesture.translation.height)
+                    guard horizontal > vertical else { return }
                     if gesture.translation.width < -50 && canGoRight {
                         withAnimation(.easeInOut(duration: 0.3)) { currentIndex += 1 }
                     } else if gesture.translation.width > 50 && canGoLeft {

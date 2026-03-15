@@ -257,6 +257,36 @@ final class ProgressService {
         try? modelContext.save()
     }
 
+    // MARK: - Reset Progress
+
+    /// Delete all game records & mastered content, zero out profile stats.
+    /// Preserves appearance / sound preferences and language selection.
+    func resetAllProgress() {
+        // Reset profile stats
+        let profile = getOrCreateProfile()
+        profile.totalXP = 0
+        profile.dailyStreak = 0
+        profile.totalActiveDays = 0
+        profile.lastActivityDate = nil
+
+        // Delete all game progress records
+        if let records = try? modelContext.fetch(FetchDescriptor<GameProgressRecord>()) {
+            for record in records { modelContext.delete(record) }
+        }
+
+        // Delete all mastered content
+        if let mastered = try? modelContext.fetch(FetchDescriptor<MasteredContent>()) {
+            for item in mastered { modelContext.delete(item) }
+        }
+
+        // Delete all favorite categories
+        if let favorites = try? modelContext.fetch(FetchDescriptor<FavoriteCategory>()) {
+            for fav in favorites { modelContext.delete(fav) }
+        }
+
+        try? modelContext.save()
+    }
+
     // MARK: - Game Type Stats
 
     func gameTypeStats() -> [GameTypeStats] {

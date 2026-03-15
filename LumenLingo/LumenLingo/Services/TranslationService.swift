@@ -138,7 +138,6 @@ final class TranslationService {
             // Profile
             "appearance": "Appearance",
             "sound": "Sound",
-            "beta": "Beta",
             "sync": "Sync",
             "signout": "Sign Out",
             "dark_mode": "Dark Mode",
@@ -151,8 +150,6 @@ final class TranslationService {
             "game_sounds": "Game Sounds",
             "ui_sounds": "UI Sounds",
             "achievement_sounds": "Achievement Sounds",
-            "beta_languages": "Beta Languages",
-            "enable_beta": "Enable experimental language pairs",
             "sync_backup": "Sync & Backup",
             "upload_data": "Upload Data",
             "download_data": "Download Data",
@@ -165,8 +162,6 @@ final class TranslationService {
             "i_know": "I know",
             "i_want_to_learn": "I want to learn",
             "start_journey": "Start Journey",
-            "built_in": "Built-in",
-            "beta_pair": "Beta",
 
             // Membership
             "choose_plan": "Choose Your Plan",

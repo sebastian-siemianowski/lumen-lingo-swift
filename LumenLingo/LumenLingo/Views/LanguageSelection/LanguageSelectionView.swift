@@ -172,8 +172,9 @@ struct CountryFlagView: View {
 
 // MARK: - Language Selection View
 
-/// Full-screen language pair picker.
-/// Source language on the left, target on the right, with beta-pair toggle.
+/// Premium language pair picker.
+/// Cinematic hero with animated gradient orb, horizontal source carousel,
+/// rich target cards with dual-label typography, floating glass CTA.
 struct LanguageSelectionView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
@@ -183,319 +184,683 @@ struct LanguageSelectionView: View {
     private var L: AppStrings { localization.strings }
 
     @Query private var languagePrefs: [LanguagePreference]
-    @Query private var betaPairs: [EnabledBetaPair]
 
     @State private var selectedSource: SupportedLanguage = .english
     @State private var selectedTarget: SupportedLanguage = .spanish
-    @State private var showBeta = false
-    @State private var searchText = ""
+    @State private var appeared = false
+    @State private var orbPhase: CGFloat = 0
 
     private var currentPref: LanguagePreference? { languagePrefs.first }
     private var isDark: Bool { colorScheme == .dark }
 
-    /// Only show languages that appear as a source in at least one built-in pair.
     private var availableSources: [SupportedLanguage] {
         SupportedLanguage.allCases.filter { lang in
-            LanguagePair.builtIn.contains { $0.source == lang }
+            LanguagePair.withContent.contains { $0.source == lang }
         }
     }
 
-    // Determine available targets for the selected source
     private var availableTargets: [SupportedLanguage] {
         SupportedLanguage.allCases.filter { target in
             guard target != selectedSource else { return false }
-            let pair = LanguagePair(source: selectedSource, target: target)
-            let pairReverse = LanguagePair(source: target, target: selectedSource)
-            let isBuiltIn = pair.isBuiltIn || pairReverse.isBuiltIn
-            if isBuiltIn { return true }
-            // Beta: only show if content exists on disk (bundle has the JSON)
-            if showBeta {
-                let hasContent = Bundle.main.url(forResource: "flashcards_\(pair.key)", withExtension: "json") != nil
-                    || Bundle.main.url(forResource: "grammar_\(pair.key)", withExtension: "json") != nil
-                    || Bundle.main.url(forResource: "flashcards_\(pair.key)", withExtension: "json", subdirectory: "Content/\(pair.key)") != nil
-                if hasContent { return true }
-            }
-            return betaPairs.contains {
-                $0.sourceLanguage == selectedSource.rawValue && $0.targetLanguage == target.rawValue
-            }
+            return LanguagePair(source: selectedSource, target: target).hasContent
         }
     }
 
-    private var filteredTargets: [SupportedLanguage] {
-        if searchText.isEmpty { return availableTargets }
-        return availableTargets.filter {
-            $0.name(in: selectedSource).localizedCaseInsensitiveContains(searchText)
-            || $0.displayName.localizedCaseInsensitiveContains(searchText)
-            || $0.englishName.localizedCaseInsensitiveContains(searchText)
-        }
+    private var hasChanged: Bool {
+        guard let pref = currentPref else { return true }
+        return pref.sourceLanguageEnum != selectedSource || pref.targetLanguageEnum != selectedTarget
     }
 
     var body: some View {
         NavigationStack {
-            ZStack {
-                // Background
-                Group {
-                    if isDark {
-                        LinearGradient(
-                            colors: [Color(hex: "#0a0a1a"), Color(hex: "#0d1530"), Color(hex: "#0a0a1a")],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                    } else {
-                        LinearGradient(
-                            colors: [Color(hex: "#C494FC"), Color(hex: "#F472B6"), Color(hex: "#FB923C")],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    }
-                }
-                .ignoresSafeArea()
-
-                ScrollView {
-                    VStack(spacing: 28) {
-                        headerSection
-                        sourceLanguageSection
-                        directionArrow
-                        targetLanguageSection
-                        betaToggleSection
-                        confirmButton
-                        Spacer(minLength: 80)
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 0) {
+                    // Close button — inline so content flows below
+                    HStack {
+                        SiriCloseButton(isDark: isDark) {
+                            dismiss()
+                        }
+                        Spacer()
                     }
                     .padding(.horizontal, 16)
-                    .padding(.top, 12)
+                    .padding(.top, 8)
+
+                    heroSection
+                        .padding(.top, 4)
+
+                    sourceSection
+                        .padding(.top, 32)
+
+                    connectionRail
+                        .padding(.vertical, 20)
+
+                    targetSection
+
+                    Spacer(minLength: 120)
                 }
             }
-            .navigationTitle(L.languages)
+            .background(pageBackground)
+            .safeAreaInset(edge: .bottom) { floatingCTA }
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button(L.cancel) { dismiss() }
-                        .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+            .toolbar(.hidden, for: .navigationBar)
+            .onAppear {
+                loadCurrent()
+                withAnimation(.easeOut(duration: 0.7).delay(0.15)) {
+                    appeared = true
+                }
+                withAnimation(.easeInOut(duration: 6).repeatForever(autoreverses: true)) {
+                    orbPhase = 1
                 }
             }
-            .searchable(text: $searchText, prompt: L.searchLanguages)
-            .onAppear { loadCurrent() }
+            .sensoryFeedback(.selection, trigger: selectedSource)
+            .sensoryFeedback(.selection, trigger: selectedTarget)
         }
     }
 
-    // MARK: - Header
+    // MARK: - Page Background
 
-    private var headerSection: some View {
-        VStack(spacing: 8) {
-            Image(systemName: "globe")
-                .font(.system(size: 36))
-                .foregroundStyle(
+    private var pageBackground: some View {
+        ZStack {
+            if isDark {
+                Color(hex: "#09090F")
+            } else {
+                // Caribbean sunset gradient — matches app-wide light-mode palette
+                LinearGradient(
+                    stops: [
+                        .init(color: Color(red: 196/255, green: 148/255, blue: 252/255), location: 0),
+                        .init(color: Color(red: 220/255, green: 131/255, blue: 217/255), location: 0.35),
+                        .init(color: Color(red: 244/255, green: 114/255, blue: 182/255), location: 0.6),
+                        .init(color: Color(red: 251/255, green: 146/255, blue: 60/255), location: 1.0)
+                    ],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+            }
+
+            // Ambient orb — shifts subtly with breathing.
+            // Uses a wide soft gradient instead of .blur() for GPU efficiency.
+            Ellipse()
+                .fill(
+                    RadialGradient(
+                        colors: isDark
+                            ? [Color.indigo.opacity(0.07), Color.indigo.opacity(0.03), .clear]
+                            : [Color.white.opacity(0.15), Color.white.opacity(0.05), .clear],
+                        center: .center,
+                        startRadius: 5,
+                        endRadius: 340
+                    )
+                )
+                .frame(width: 650, height: 520)
+                .offset(x: orbPhase * 30 - 15, y: -80 + orbPhase * 20)
+        }
+        .ignoresSafeArea()
+    }
+
+    // MARK: - Hero Section
+
+    private var heroSection: some View {
+        VStack(spacing: 20) {
+            // Flags with glowing orb connector
+            ZStack {
+                // Glow trail between flags
+                Capsule()
+                    .fill(
+                        LinearGradient(
+                            colors: [
+                                .indigo.opacity(isDark ? 0.2 : 0.1),
+                                .purple.opacity(isDark ? 0.15 : 0.08),
+                                .indigo.opacity(isDark ? 0.2 : 0.1)
+                            ],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(width: 140, height: 4)
+                    .blur(radius: 6)
+
+                HStack(spacing: 0) {
+                    heroFlag(selectedSource.countryCode)
+
+                    Spacer().frame(width: 60)
+
+                    // Animated center orb
+                    ZStack {
+                        Circle()
+                            .fill(isDark ? Color(hex: "#1a1a2e") : Color.white.opacity(0.45))
+                            .frame(width: 36, height: 36)
+                            .overlay(
+                                Circle()
+                                    .strokeBorder(
+                                        LinearGradient(
+                                            colors: [.indigo.opacity(0.3), .purple.opacity(0.2)],
+                                            startPoint: .top, endPoint: .bottom
+                                        ),
+                                        lineWidth: 1
+                                    )
+                            )
+                            .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.1), radius: 8, y: 2)
+                            .scaleEffect(0.9 + orbPhase * 0.2)
+
+                        Image(systemName: "arrow.right")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [.indigo, .purple],
+                                    startPoint: .top, endPoint: .bottom
+                                )
+                            )
+                    }
+
+                    Spacer().frame(width: 60)
+
+                    heroFlag(selectedTarget.countryCode)
+                }
+            }
+            .frame(height: 72)
+
+            // Text label
+            VStack(spacing: 6) {
+                (Text(selectedSource.displayName)
+                    .font(.title3.weight(.bold))
+                    .foregroundColor(isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255)) +
+                Text("  \u{2192}  ")
+                    .font(.title3.weight(.light))
+                    .foregroundColor(isDark ? .secondary : Color(red: 140/255, green: 96/255, blue: 136/255)) +
+                Text(selectedTarget.name(in: selectedSource))
+                    .font(.title3.weight(.bold))
+                    .foregroundColor(isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255)))
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
+                .contentTransition(.interpolate)
+
+                Text("\(availableTargets.count) \(L.languagesAvailable)")
+                    .font(.footnote.weight(.medium))
+                    .foregroundStyle(isDark ? .secondary : Color(red: 100/255, green: 58/255, blue: 100/255))
+                    .contentTransition(.numericText())
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 5)
+                    .background(
+                        Capsule()
+                            .fill(isDark ? .white.opacity(0.06) : .white.opacity(0.3))
+                    )
+            }
+        }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 24)
+        .frame(maxWidth: .infinity)
+        .background(heroBackground)
+        .padding(.horizontal)
+        .opacity(appeared ? 1 : 0)
+        .offset(y: appeared ? 0 : 30)
+        .animation(.spring(response: 0.5, dampingFraction: 0.8), value: selectedSource)
+        .animation(.spring(response: 0.5, dampingFraction: 0.8), value: selectedTarget)
+    }
+
+    private func heroFlag(_ code: String) -> some View {
+        ZStack {
+            // Outer glow
+            Circle()
+                .fill(
+                    RadialGradient(
+                        colors: [.indigo.opacity(isDark ? 0.15 : 0.08), .clear],
+                        center: .center,
+                        startRadius: 20,
+                        endRadius: 40
+                    )
+                )
+                .frame(width: 80, height: 80)
+
+            // Flag circle
+            CountryFlagView(countryCode: code, size: 36)
+                .frame(width: 64, height: 64)
+                .background(
+                    Circle()
+                        .fill(isDark ? Color(hex: "#1a1a2e") : Color.white.opacity(0.5))
+                )
+                .overlay(
+                    Circle()
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    .indigo.opacity(isDark ? 0.6 : 0.3),
+                                    .purple.opacity(isDark ? 0.4 : 0.2),
+                                    .indigo.opacity(isDark ? 0.6 : 0.3)
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 2
+                        )
+                )
+                .shadow(color: .indigo.opacity(isDark ? 0.3 : 0.15), radius: 12, y: 4)
+        }
+    }
+
+    private var heroBackground: some View {
+        RoundedRectangle(cornerRadius: 24)
+            .fill(isDark ? .ultraThinMaterial : .ultraThinMaterial)
+            .overlay(
+                RoundedRectangle(cornerRadius: 24)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: isDark
+                                ? [.white.opacity(0.08), .white.opacity(0.02)]
+                                : [.white.opacity(0.6), .white.opacity(0.2)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 1
+                    )
+            )
+            .shadow(color: isDark ? .indigo.opacity(0.08) : Color(red: 100/255, green: 58/255, blue: 100/255).opacity(0.12), radius: 24, y: 10)
+    }
+
+    // MARK: - Source Section
+
+    private var sourceSection: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            sectionHeader(L.iSpeak, icon: "person.wave.2.fill")
+                .padding(.horizontal, 20)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    ForEach(availableSources, id: \.self) { lang in
+                        sourceCard(lang, index: 0)
+                    }
+                }
+                .scrollTargetLayout()
+                .padding(.horizontal, 20)
+            }
+            .scrollTargetBehavior(.viewAligned)
+        }
+        .opacity(appeared ? 1 : 0)
+        .offset(y: appeared ? 0 : 20)
+    }
+
+    @ViewBuilder
+    private func sourceCard(_ lang: SupportedLanguage, index: Int) -> some View {
+        let isSelected = lang == selectedSource
+
+        Button {
+            AudioService.shared.playLanguageHover()
+            withAnimation(.spring(response: 0.45, dampingFraction: 0.75)) {
+                selectedSource = lang
+                if selectedTarget == lang || !LanguagePair(source: lang, target: selectedTarget).hasContent {
+                    selectedTarget = availableTargetsFor(lang).first ?? .spanish
+                }
+            }
+        } label: {
+            VStack(spacing: 10) {
+                // Flag badge
+                CountryFlagView(countryCode: lang.countryCode, size: 26)
+                    .frame(width: 52, height: 52)
+                    .background(sourceCardCircle(isSelected: isSelected))
+                    .overlay(
+                        Circle()
+                            .strokeBorder(
+                                isSelected
+                                    ? Color.white.opacity(0.3)
+                                    : (isDark ? Color.white.opacity(0.08) : Color.black.opacity(0.06)),
+                                lineWidth: 1.5
+                            )
+                    )
+                    .shadow(
+                        color: isSelected ? .indigo.opacity(0.35) : .black.opacity(isDark ? 0.15 : 0.04),
+                        radius: isSelected ? 10 : 4,
+                        y: isSelected ? 3 : 2
+                    )
+
+                // Name
+                Text(lang.displayName)
+                    .font(.caption2.weight(isSelected ? .bold : .medium))
+                    .foregroundStyle(isSelected
+                                     ? (isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255))
+                                     : (isDark ? .secondary : Color(red: 100/255, green: 58/255, blue: 100/255)))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+            }
+            .frame(width: 72)
+            .padding(.vertical, 8)
+        }
+        .buttonStyle(LumenCardPressStyle(accentColor: isSelected ? .indigo : .clear))
+    }
+
+    @ViewBuilder
+    private func sourceCardCircle(isSelected: Bool) -> some View {
+        if isSelected {
+            Circle()
+                .fill(
                     LinearGradient(
-                        colors: [.cyan, .purple],
+                        colors: [.indigo, .purple],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     )
                 )
-            Text(L.chooseYourLanguages)
-                .font(.title3.bold())
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [Color(hex: "#6366f1"), Color(hex: "#a855f7")],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-            Text(L.selectWhatYouKnow)
-                .font(.subheadline)
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+        } else {
+            Circle()
+                .fill(isDark ? Color.white.opacity(0.06) : Color.white.opacity(0.5))
         }
-        .padding(.top, 8)
     }
 
-    // MARK: - Source Language
+    // MARK: - Connection Rail
 
-    private var sourceLanguageSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Label(L.iSpeak, systemImage: "person.wave.2.fill")
-                .font(.headline)
-                .foregroundStyle(
+    private var connectionRail: some View {
+        HStack(spacing: 8) {
+            Rectangle()
+                .fill(
                     LinearGradient(
-                        colors: [Color(hex: "#6366f1"), Color(hex: "#8b5cf6")],
+                        colors: [.clear, isDark ? .indigo.opacity(0.2) : .indigo.opacity(0.12)],
                         startPoint: .leading,
                         endPoint: .trailing
                     )
                 )
+                .frame(height: 1)
 
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                ForEach(availableSources, id: \.self) { lang in
-                    languageCard(lang, isSelected: lang == selectedSource) {
-                        withAnimation(.spring(response: 0.35)) {
-                            selectedSource = lang
-                            // Reset target if same as source
-                            if selectedTarget == lang {
-                                selectedTarget = SupportedLanguage.allCases.first { $0 != lang } ?? .spanish
-                            }
-                        }
-                    }
-                }
+            ZStack {
+                Circle()
+                    .fill(isDark ? Color(hex: "#1a1a2e") : Color.white.opacity(0.45))
+                    .frame(width: 36, height: 36)
+                    .overlay(
+                        Circle()
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [.indigo.opacity(0.3), .purple.opacity(0.2)],
+                                    startPoint: .top, endPoint: .bottom
+                                ),
+                                lineWidth: 1
+                            )
+                    )
+                    .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.1), radius: 8, y: 2)
+
+                Image(systemName: "arrow.down")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.indigo, .purple],
+                            startPoint: .top, endPoint: .bottom
+                        )
+                    )
             }
-        }
-        .padding(18)
-        .background(glassCard)
-    }
 
-    // MARK: - Arrow
-
-    private var directionArrow: some View {
-        Image(systemName: "arrow.down.circle.fill")
-            .font(.system(size: 32))
-            .foregroundStyle(
-                LinearGradient(
-                    colors: [.cyan, .purple],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-            )
-            .shadow(color: .cyan.opacity(0.3), radius: 8)
-    }
-
-    // MARK: - Target Language
-
-    private var targetLanguageSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Label(L.imLearning, systemImage: "book.fill")
-                .font(.headline)
-                .foregroundStyle(
+            Rectangle()
+                .fill(
                     LinearGradient(
-                        colors: [Color(hex: "#a855f7"), Color(hex: "#d946ef")],
+                        colors: [isDark ? .purple.opacity(0.2) : .purple.opacity(0.12), .clear],
                         startPoint: .leading,
                         endPoint: .trailing
                     )
                 )
+                .frame(height: 1)
+        }
+        .padding(.horizontal, 40)
+        .opacity(appeared ? 1 : 0)
+    }
 
-            if filteredTargets.isEmpty {
-                Text(L.noLanguagesAvailable)
-                    .font(.subheadline)
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .padding(20)
+    // MARK: - Target Section
+
+    private var targetSection: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            sectionHeader(L.imLearning, icon: "book.fill")
+                .padding(.horizontal, 20)
+
+            if availableTargets.isEmpty {
+                VStack(spacing: 12) {
+                    Image(systemName: "globe.desk")
+                        .font(.system(size: 36))
+                        .foregroundStyle(.quaternary)
+                    Text(L.noLanguagesAvailable)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 40)
             } else {
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                    ForEach(filteredTargets, id: \.self) { lang in
-                        languageCard(lang, isSelected: lang == selectedTarget, translatedIn: selectedSource) {
-                            withAnimation(.spring(response: 0.35)) {
+                LazyVGrid(
+                    columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)],
+                    spacing: 10
+                ) {
+                    ForEach(availableTargets, id: \.self) { lang in
+                        TargetCardView(
+                            lang: lang,
+                            selectedSource: selectedSource,
+                            isSelected: lang == selectedTarget,
+                            isDark: isDark
+                        ) {
+                            AudioService.shared.playLanguageHover()
+                            withAnimation(.spring(response: 0.35, dampingFraction: 0.72)) {
                                 selectedTarget = lang
                             }
                         }
                     }
                 }
+                .padding(.horizontal, 16)
             }
         }
-        .padding(18)
-        .background(glassCard)
+        .animation(.spring(response: 0.5, dampingFraction: 0.85), value: selectedSource)
+        .opacity(appeared ? 1 : 0)
+        .offset(y: appeared ? 0 : 15)
     }
 
-    // MARK: - Beta Toggle
+    // MARK: - Floating CTA
 
-    private var betaToggleSection: some View {
-        Toggle(isOn: $showBeta) {
-            HStack(spacing: 8) {
-                Image(systemName: "flask.fill")
-                    .foregroundStyle(.orange)
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(L.betaLanguagePairs)
-                        .font(.subheadline.bold())
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
-                    Text(L.showExperimentalPairs)
-                        .font(.caption2)
-                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                }
-            }
-        }
-        .toggleStyle(SwitchToggleStyle(tint: .cyan))
-        .padding(16)
-        .background(glassCard)
-    }
-
-    // MARK: - Confirm
-
-    private var confirmButton: some View {
+    private var floatingCTA: some View {
         Button {
-            savePair()
+            AudioService.shared.playLanguageConfirmed()
+            HapticsService.shared.correctAnswer()
+            withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                savePair()
+            }
             dismiss()
         } label: {
-            HStack(spacing: 8) {
-                Image(systemName: "checkmark.circle.fill")
-                Text(L.confirm)
-                    .fontWeight(.semibold)
-                CountryFlagView(countryCode: selectedSource.countryCode, size: 16)
-                Image(systemName: "arrow.right")
-                    .font(.caption.bold())
-                CountryFlagView(countryCode: selectedTarget.countryCode, size: 16)
+            HStack(spacing: 12) {
+                // Mini flag pair
+                HStack(spacing: 6) {
+                    CountryFlagView(countryCode: selectedSource.countryCode, size: 16)
+                    Image(systemName: "arrow.right")
+                        .font(.system(size: 9, weight: .heavy))
+                        .foregroundStyle(.white.opacity(0.5))
+                    CountryFlagView(countryCode: selectedTarget.countryCode, size: 16)
+                }
+
+                // Divider pip
+                Circle()
+                    .fill(.white.opacity(0.2))
+                    .frame(width: 4, height: 4)
+
+                Spacer()
+
+                if hasChanged {
+                    if isDark {
+                        TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
+                            let t = context.date.timeIntervalSinceReferenceDate
+                            let phase = CGFloat(t.truncatingRemainder(dividingBy: 3.0) / 3.0)
+
+                            Text(L.startYourAdventure)
+                                .font(.headline.weight(.bold))
+                                .foregroundStyle(Color.white)
+                                .hidden()
+                                .overlay {
+                                    LinearGradient(
+                                        colors: SiriCloseButton.siriColors,
+                                        startPoint: UnitPoint(x: -0.5 + phase * 2, y: 0.5),
+                                        endPoint: UnitPoint(x: 0.5 + phase * 2, y: 0.5)
+                                    )
+                                    .mask {
+                                        Text(L.startYourAdventure)
+                                            .font(.headline.weight(.bold))
+                                    }
+                                }
+                                .shadow(color: Color(hex: "#FF9FF3").opacity(0.3), radius: 4)
+                        }
+                        .transition(.opacity)
+                    } else {
+                        Text(L.startYourAdventure)
+                            .font(.headline.weight(.bold))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [
+                                        Color(red: 255/255, green: 255/255, blue: 240/255), // warm ivory
+                                        .white,
+                                        Color(red: 255/255, green: 200/255, blue: 220/255)  // rose blush
+                                    ],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .shadow(color: .white.opacity(0.5), radius: 4)
+                            .transition(.opacity)
+                    }
+                } else {
+                    Text(L.keepLearning)
+                        .font(.headline.weight(.bold))
+                        .foregroundStyle(.white)
+                        .contentTransition(.interpolate)
+                }
+
+                ZStack {
+                    Circle()
+                        .fill(.white.opacity(0.12))
+                        .frame(width: 36, height: 36)
+                        .overlay(
+                            Circle()
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.35), .white.opacity(0.1)],
+                                        startPoint: .top, endPoint: .bottom
+                                    ),
+                                    lineWidth: 1
+                                )
+                        )
+                        .shadow(color: .black.opacity(0.15), radius: 8, y: 2)
+
+                    Image(systemName: hasChanged ? "chevron.right" : "checkmark")
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.white, .white.opacity(0.7)],
+                                startPoint: .top, endPoint: .bottom
+                            )
+                        )
+                }
+                .contentTransition(.symbolEffect(.replace))
             }
-            .foregroundStyle(.white)
+            .padding(.horizontal, 22)
+            .padding(.vertical, 16)
             .frame(maxWidth: .infinity)
-            .padding(.vertical, 14)
-            .background(
-                Capsule()
+            .background(ctaBackground)
+        }
+        .buttonStyle(LumenPressStyle(weight: .prominent, accentColor: .indigo))
+        .disabled(!hasChanged)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 10)
+        .background(
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .ignoresSafeArea()
+                .opacity(0.98)
+        )
+        .animation(.spring(response: 0.45, dampingFraction: 0.8), value: hasChanged)
+        .animation(.spring(response: 0.45, dampingFraction: 0.8), value: selectedSource)
+        .animation(.spring(response: 0.45, dampingFraction: 0.8), value: selectedTarget)
+    }
+
+    // MARK: - CTA Chevron Circle
+
+    private var ctaBackground: some View {
+        TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
+            let t = context.date.timeIntervalSinceReferenceDate
+            let phase = CGFloat(t.truncatingRemainder(dividingBy: 4.0) / 4.0)
+
+            ZStack {
+                // Main fill
+                RoundedRectangle(cornerRadius: 18)
                     .fill(
                         LinearGradient(
-                            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                            colors: hasChanged
+                                ? (isDark
+                                    ? [Color(hex: "#4F46E5"), Color(hex: "#7C3AED")]
+                                    : [Color(red: 220/255, green: 131/255, blue: 217/255),
+                                       Color(red: 244/255, green: 114/255, blue: 182/255)])
+                                : (isDark
+                                    ? [Color(hex: "#2D1B69"), Color(hex: "#1B2A5C")]
+                                    : [Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.55),
+                                       Color(red: 220/255, green: 131/255, blue: 217/255).opacity(0.55)]),
                             startPoint: .leading,
                             endPoint: .trailing
                         )
                     )
+
+                if hasChanged {
+                    // Diffused rainbow glow — AI bloom
+                    RoundedRectangle(cornerRadius: 18)
+                        .stroke(
+                            AngularGradient(
+                                colors: SiriCloseButton.siriColors,
+                                center: .center,
+                                angle: .degrees(phase * 360)
+                            ),
+                            lineWidth: 4
+                        )
+                        .blur(radius: 8)
+                        .opacity(0.5)
+
+                    // Crisp rainbow border
+                    RoundedRectangle(cornerRadius: 18)
+                        .strokeBorder(
+                            AngularGradient(
+                                colors: SiriCloseButton.siriColors,
+                                center: .center,
+                                angle: .degrees(phase * 360)
+                            ),
+                            lineWidth: 1.5
+                        )
+                } else {
+                    RoundedRectangle(cornerRadius: 18)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: isDark
+                                    ? [.indigo.opacity(0.3), .purple.opacity(0.15)]
+                                    : [.white.opacity(0.5), .white.opacity(0.2)],
+                                startPoint: .top, endPoint: .bottom
+                            ),
+                            lineWidth: 1
+                        )
+                }
+            }
+            .shadow(
+                color: hasChanged
+                    ? (isDark ? Color(hex: "#4F46E5") : Color(red: 244/255, green: 114/255, blue: 182/255)).opacity(0.4)
+                    : (isDark ? Color.indigo.opacity(0.15) : Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.15)),
+                radius: hasChanged ? 20 : 0,
+                y: hasChanged ? 8 : 0
             )
-            .shadow(color: Color(hex: "#764ba2").opacity(0.4), radius: 12, y: 4)
         }
-        .padding(.top, 8)
     }
 
-    // MARK: - Language Card
+    // MARK: - Section Header
 
-    private func languageCard(_ lang: SupportedLanguage, isSelected: Bool, translatedIn contextLang: SupportedLanguage? = nil, action: @escaping () -> Void) -> some View {
-        let label = contextLang.map { lang.name(in: $0) } ?? lang.displayName
-        return Button(action: action) {
-            HStack(spacing: 8) {
-                CountryFlagView(countryCode: lang.countryCode, size: 18)
-                Text(label)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(isSelected ? .white : (colorScheme == .dark ? .white.opacity(0.7) : .caribbeanInk))
-                    .lineLimit(1)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(12)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(isSelected
-                        ? AnyShapeStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea").opacity(0.5), Color(hex: "#764ba2").opacity(0.4)],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        : AnyShapeStyle(.white.opacity(0.06))
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 14)
-                            .strokeBorder(
-                                isSelected ? Color(hex: "#667eea").opacity(0.6) : .white.opacity(0.06),
-                                lineWidth: isSelected ? 1.5 : 1
-                            )
-                    )
-            )
-            .scaleEffect(isSelected ? 1.02 : 1.0)
+    private func sectionHeader(_ title: String, icon: String) -> some View {
+        HStack(spacing: 8) {
+            Image(systemName: icon)
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(
+                    LinearGradient(colors: [.indigo, .purple],
+                                   startPoint: .leading, endPoint: .trailing)
+                )
+
+            Text(title)
+                .font(.title3.weight(.semibold))
+                .foregroundStyle(isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255))
         }
-        .buttonStyle(LumenCardPressStyle(accentColor: isSelected ? .purple : .white))
     }
 
     // MARK: - Helpers
 
-    private var glassCard: some View {
-        RoundedRectangle(cornerRadius: 22)
-            .fill(.ultraThinMaterial)
-            .overlay(
-                RoundedRectangle(cornerRadius: 22)
-                    .strokeBorder(.white.opacity(colorScheme == .dark ? 0.08 : 0.15), lineWidth: 1)
-            )
-            .shadow(color: .black.opacity(0.1), radius: 15, y: 5)
+    private func availableTargetsFor(_ source: SupportedLanguage) -> [SupportedLanguage] {
+        SupportedLanguage.allCases.filter { target in
+            guard target != source else { return false }
+            return LanguagePair(source: source, target: target).hasContent
+        }
     }
 
     private func loadCurrent() {
@@ -513,5 +878,219 @@ struct LanguageSelectionView: View {
             let pref = LanguagePreference(source: selectedSource, target: selectedTarget)
             modelContext.insert(pref)
         }
+    }
+}
+
+// MARK: - Target Card (Extracted for Diffing)
+
+/// Isolated struct so SwiftUI can diff each card independently
+/// without re-evaluating the entire grid body.
+private struct TargetCardView: View {
+    let lang: SupportedLanguage
+    let selectedSource: SupportedLanguage
+    let isSelected: Bool
+    let isDark: Bool
+    let onTap: () -> Void
+
+    var body: some View {
+        Button(action: onTap) {
+            HStack(spacing: 8) {
+                // Flag with selection ring
+                CountryFlagView(countryCode: lang.countryCode, size: 18)
+                    .frame(width: 32, height: 32)
+                    .background(flagCircle)
+                    .overlay(flagRing)
+
+                // Dual-line label
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(lang.name(in: selectedSource))
+                        .font(.footnote.weight(isSelected ? .semibold : .medium))
+                        .foregroundStyle(isSelected
+                                         ? (isDark ? .white : .indigo)
+                                         : (isDark ? .white.opacity(0.85) : Color(red: 45/255, green: 22/255, blue: 62/255)))
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
+
+                    Text(lang.displayName)
+                        .font(.caption2.weight(.medium))
+                        .foregroundStyle(isSelected
+                                         ? .indigo.opacity(0.7)
+                                         : (isDark ? .white.opacity(0.5) : Color(red: 140/255, green: 96/255, blue: 136/255)))
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
+                }
+
+                Spacer(minLength: 0)
+
+                // Checkmark
+                if isSelected {
+                    Image(systemName: "checkmark.circle.fill")
+                        .font(.system(size: 16))
+                        .symbolRenderingMode(.hierarchical)
+                        .foregroundStyle(.indigo)
+                        .symbolEffect(.bounce, value: isSelected)
+                        .transition(.scale.combined(with: .opacity))
+                }
+            }
+            .padding(.leading, 8)
+            .padding(.trailing, 10)
+            .padding(.vertical, 10)
+            .background(cardBackground)
+        }
+        .buttonStyle(LumenCardPressStyle(accentColor: isSelected ? .indigo : .clear))
+    }
+
+    @ViewBuilder
+    private var flagCircle: some View {
+        if isSelected {
+            Circle()
+                .fill(
+                    LinearGradient(
+                        colors: [.indigo.opacity(0.2), .purple.opacity(0.15)],
+                        startPoint: .topLeading, endPoint: .bottomTrailing
+                    )
+                )
+        } else {
+            Circle()
+                .fill(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.4))
+        }
+    }
+
+    @ViewBuilder
+    private var flagRing: some View {
+        if isSelected {
+            Circle()
+                .strokeBorder(
+                    LinearGradient(colors: [.indigo, .purple],
+                                   startPoint: .topLeading, endPoint: .bottomTrailing),
+                    lineWidth: 2
+                )
+        } else {
+            Circle()
+                .strokeBorder(Color.clear, lineWidth: 2)
+        }
+    }
+
+    @ViewBuilder
+    private var cardBackground: some View {
+        if isSelected {
+            RoundedRectangle(cornerRadius: 16)
+                .fill(isDark ? Color.indigo.opacity(0.12) : Color.indigo.opacity(0.06))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [.indigo.opacity(isDark ? 0.4 : 0.25), .purple.opacity(isDark ? 0.25 : 0.15)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 1.5
+                        )
+                )
+                .shadow(color: .indigo.opacity(isDark ? 0.2 : 0.1), radius: 10, y: 3)
+        } else {
+            RoundedRectangle(cornerRadius: 16)
+                .fill(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.35))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .strokeBorder(
+                            isDark ? Color.white.opacity(0.05) : Color.white.opacity(0.3),
+                            lineWidth: 0.5
+                        )
+                )
+                .shadow(color: isDark ? .black.opacity(0.08) : Color(red: 100/255, green: 58/255, blue: 100/255).opacity(0.06), radius: 3, y: 1)
+        }
+    }
+}
+
+// MARK: - Apple Intelligence Style Close Button
+
+/// Apple Intelligence / Siri-style close pill — a thin capsule with a
+/// continuously flowing rainbow border glow and glowing X icon.
+private struct SiriCloseButton: View {
+    let isDark: Bool
+    let action: () -> Void
+
+    @GestureState private var isPressed = false
+
+    // Apple Intelligence pastel rainbow palette — doubled for seamless loop
+    static let siriColors: [Color] = [
+        Color(hex: "#FF6B6B"), // soft coral
+        Color(hex: "#FECA57"), // warm gold
+        Color(hex: "#48DBFB"), // sky cyan
+        Color(hex: "#FF9FF3"), // soft pink
+        Color(hex: "#54A0FF"), // periwinkle
+        Color(hex: "#5F27CD"), // deep violet
+        // repeat for seamless wrap
+        Color(hex: "#FF6B6B"),
+        Color(hex: "#FECA57"),
+        Color(hex: "#48DBFB"),
+        Color(hex: "#FF9FF3"),
+        Color(hex: "#54A0FF"),
+        Color(hex: "#5F27CD"),
+        Color(hex: "#FF6B6B"),
+    ]
+
+    /// Flowing gradient that rotates smoothly — AngularGradient wraps at 360° with zero seam.
+    private static func flowingGradient(phase: Double) -> AngularGradient {
+        AngularGradient(
+            colors: siriColors,
+            center: .center,
+            angle: .degrees(phase * 360)
+        )
+    }
+
+    var body: some View {
+        TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
+            let t = context.date.timeIntervalSinceReferenceDate
+            let phase = t.truncatingRemainder(dividingBy: 4.0) / 4.0
+
+            ZStack {
+                // Outer diffused glow — the signature AI bloom
+                Circle()
+                    .fill(.clear)
+                    .frame(width: 36, height: 36)
+                    .overlay(
+                        Circle()
+                            .stroke(Self.flowingGradient(phase: phase), lineWidth: 4)
+                    )
+                    .blur(radius: 6)
+                    .opacity(0.6)
+
+                // Main circle — frosted glass
+                Circle()
+                    .fill(
+                        (isDark ? Color(hex: "#1a1a2e") : Color.white)
+                            .opacity(isDark ? 0.85 : 0.5)
+                    )
+                    .frame(width: 36, height: 36)
+                    .overlay(
+                        Circle()
+                            .stroke(Self.flowingGradient(phase: phase), lineWidth: 1.5)
+                    )
+
+                // Glowing X icon — rainbow-tinted
+                Image(systemName: "xmark")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Self.flowingGradient(phase: phase))
+                    .shadow(color: Color(hex: "#FF9FF3").opacity(0.4), radius: 4)
+            }
+        }
+        .scaleEffect(isPressed ? 0.9 : 1.0)
+        .brightness(isPressed ? 0.1 : 0)
+        .animation(.spring(response: 0.2, dampingFraction: 0.65), value: isPressed)
+        .gesture(
+            DragGesture(minimumDistance: 0)
+                .updating($isPressed) { _, state, _ in
+                    state = true
+                }
+                .onEnded { value in
+                    let rect = CGRect(x: -10, y: -10, width: 56, height: 56)
+                    if rect.contains(value.location) {
+                        action()
+                    }
+                }
+        )
+        .sensoryFeedback(.impact(flexibility: .soft, intensity: 0.5), trigger: isPressed)
     }
 }

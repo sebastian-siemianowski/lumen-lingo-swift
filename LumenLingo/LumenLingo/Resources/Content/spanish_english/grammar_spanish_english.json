@@ -3955,7 +3955,7 @@
         "explanation": "Después de 'want' usamos infinitivo 'to travel'. Esta es regla consistente con verbos de deseo. El español también usa infinitivo 'viajar'. La palabra 'someday' añade esperanza sobre futuro. Esta construcción expresa sueños y aspiraciones. Viajar por el mundo es meta común que inspira a muchos a trabajar y ahorrar."
       },
       {
-        "id": "ger_inf_5",
+        "id": "ger_inf_x_5",
         "question": "She keeps _____ the same mistake repeatedly.",
         "translation": "Ella sigue cometiendo el mismo error repetidamente.",
         "options": [
@@ -14358,7 +14358,7 @@
     "level": "advanced",
     "items": [
       {
-        "id": "ger_inf_1",
+        "id": "ger_inf_x_1",
         "question": "I enjoy _____ to music in my free time.",
         "translation": "Disfruto escuchar música en mi tiempo libre.",
         "options": [
@@ -14371,7 +14371,7 @@
         "explanation": "Después de 'enjoy' SIEMPRE usamos gerundio (-ing): 'enjoy listening'. Nunca infinitivo con 'to'. En español 'disfruto escuchar' usa infinitivo donde inglés requiere gerundio. Esta diferencia es una de las más difíciles para hispanohablantes porque no hay lógica clara, solo memorización de qué verbos requieren qué forma."
       },
       {
-        "id": "ger_inf_2",
+        "id": "ger_inf_x_2",
         "question": "She decided _____ a new language this year finally.",
         "translation": "Ella decidió aprender un nuevo idioma este año finalmente.",
         "options": [
@@ -14384,7 +14384,7 @@
         "explanation": "Después de 'decide' usamos infinitivo con 'to': 'decided to learn'. Nunca gerundio. En español 'decidió aprender' también usa infinitivo. Los verbos de decisión, planes y deseos típicamente van con infinitivo en inglés. Esta meta de año nuevo de aprender idioma es propósito común que requiere compromiso sostenido."
       },
       {
-        "id": "ger_inf_3",
+        "id": "ger_inf_x_3",
         "question": "He avoided _____ about the embarrassing incident yesterday.",
         "translation": "Él evitó hablar sobre el incidente vergonzoso de ayer.",
         "options": [
@@ -14397,7 +14397,7 @@
         "explanation": "Después de 'avoid' usamos gerundio: 'avoided talking'. Verbos de evasión o escape van con -ing. En español 'evitó hablar' usa infinitivo. Esta decisión de no discutir tema incómodo es táctica de evitación que protege de revivir vergüenza pero quizás impide procesamiento emocional."
       },
       {
-        "id": "ger_inf_4",
+        "id": "ger_inf_x_4",
         "question": "They want _____ the concert next Saturday evening.",
         "translation": "Ellos quieren asistir al concierto el próximo sábado en la tarde.",
         "options": [
@@ -14410,7 +14410,7 @@
         "explanation": "Después de 'want' usamos infinitivo: 'want to attend'. Verbos de deseo van con 'to'. En español 'quieren asistir' también usa infinitivo. Esta expresión de deseo sobre evento musical muestra interés que probablemente resultará en compra de boletos si están disponibles."
       },
       {
-        "id": "ger_inf_5",
+        "id": "ger_inf_x_x_5",
         "question": "I can't stand _____ in long lines at the store.",
         "translation": "No soporto esperar en filas largas en la tienda.",
         "options": [
@@ -14423,7 +14423,7 @@
         "explanation": "Después de 'can't stand' (no soportar) usamos gerundio: 'can't stand waiting'. Expresa algo que nos molesta intensamente. En español 'no soporto esperar' usa infinitivo. Esta frustración universal con filas es común en vida moderna donde valoramos eficiencia y tiempo es escaso."
       },
       {
-        "id": "ger_inf_6",
+        "id": "ger_inf_x_6",
         "question": "She promised _____ me with the project next week.",
         "translation": "Ella prometió ayudarme con el proyecto la próxima semana.",
         "options": [
@@ -14436,7 +14436,7 @@
         "explanation": "Después de 'promise' usamos infinitivo: 'promised to help'. Compromisos y promesas van con 'to'. En español 'prometió ayudarme' también usa infinitivo. Esta promesa de colaboración futura crea expectativa de apoyo que debe cumplirse para mantener confianza."
       },
       {
-        "id": "ger_inf_7",
+        "id": "ger_inf_x_7",
         "question": "We finished _____ the house around midnight last night.",
         "translation": "Terminamos de limpiar la casa alrededor de medianoche anoche.",
         "options": [
@@ -14449,7 +14449,7 @@
         "explanation": "Después de 'finish' usamos gerundio: 'finished cleaning'. Verbos de completitud van con -ing. En español 'terminamos de limpiar' usa preposición más infinitivo. Esta limpieza nocturna tardía sugiere que fue tarea grande o que se pospuso hasta último momento antes de evento."
       },
       {
-        "id": "ger_inf_8",
+        "id": "ger_inf_x_8",
         "question": "He refused _____ their unreasonable offer completely.",
         "translation": "Él se negó a aceptar su oferta poco razonable completamente.",
         "options": [
@@ -14462,7 +14462,7 @@
         "explanation": "Después de 'refuse' usamos infinitivo: 'refused to accept'. Rechazos y negativas van con 'to'. En español 'se negó a aceptar' también usa 'a' más infinitivo. Esta firmeza en rechazar oferta injusta muestra que tiene límites claros sobre qué está dispuesto a tolerar."
       },
       {
-        "id": "ger_inf_9",
+        "id": "ger_inf_x_9",
         "question": "She suggested _____ early to avoid traffic tomorrow morning.",
         "translation": "Ella sugirió salir temprano para evitar tráfico mañana en la mañana.",
         "options": [
@@ -14475,7 +14475,7 @@
         "explanation": "Después de 'suggest' usamos gerundio: 'suggested leaving'. En español 'sugirió salir' usa infinitivo. Esta recomendación práctica sobre timing ayuda a evitar frustración de congestión matutina. Los verbos de sugerencia típicamente van con gerundio en inglés."
       },
       {
-        "id": "ger_inf_10",
+        "id": "ger_inf_x_10",
         "question": "I hope _____ you again soon at another meeting.",
         "translation": "Espero verte de nuevo pronto en otra reunión.",
         "options": [
@@ -14488,7 +14488,7 @@
         "explanation": "Después de 'hope' usamos infinitivo: 'hope to see you'. Esperanzas y deseos futuros van con 'to'. En español 'espero verte' también usa infinitivo. Esta expresión cordial al despedirse muestra que el encuentro fue positivo y hay interés en repetirlo."
       },
       {
-        "id": "ger_inf_11",
+        "id": "ger_inf_x_11",
         "question": "They considered _____ to another city for better jobs.",
         "translation": "Ellos consideraron mudarse a otra ciudad para mejores trabajos.",
         "options": [
@@ -14501,7 +14501,7 @@
         "explanation": "Después de 'consider' usamos gerundio: 'considered moving'. Verbos de contemplación van con -ing. En español 'consideraron mudarse' usa infinitivo reflexivo. Esta deliberación sobre reubicación por oportunidades laborales es decisión importante que requiere balance entre carrera y conexiones personales existentes."
       },
       {
-        "id": "ger_inf_12",
+        "id": "ger_inf_x_12",
         "question": "He agreed _____ us with the heavy furniture tomorrow.",
         "translation": "Él aceptó ayudarnos con los muebles pesados mañana.",
         "options": [
@@ -14514,7 +14514,7 @@
         "explanation": "Después de 'agree' usamos infinitivo: 'agreed to help'. Acuerdos y aceptaciones van con 'to'. En español 'aceptó ayudarnos' también usa infinitivo. Esta aceptación de ayudar con mudanza es favor significativo que requiere tiempo y esfuerzo físico considerable."
       },
       {
-        "id": "ger_inf_13",
+        "id": "ger_inf_x_13",
         "question": "I don't mind _____ for you if you're running late.",
         "translation": "No me importa esperar por ti si vas retrasado.",
         "options": [
@@ -14527,7 +14527,7 @@
         "explanation": "Después de 'mind' (importar) usamos gerundio: 'don't mind waiting'. En español 'no me importa esperar' usa infinitivo. Esta paciencia con tardanza de otros muestra flexibilidad y comprensión de que imprevistos ocurren. Es gesto de amistad verdadera."
       },
       {
-        "id": "ger_inf_14",
+        "id": "ger_inf_x_14",
         "question": "She plans _____ her own business next year ambitiously.",
         "translation": "Ella planea comenzar su propio negocio el próximo año ambiciosamente.",
         "options": [
@@ -14540,7 +14540,7 @@
         "explanation": "Después de 'plan' usamos infinitivo: 'plans to start'. Planes futuros van con 'to'. En español 'planea comenzar' también usa infinitivo. Esta ambición emprendedora de independencia económica requiere planificación cuidadosa y coraje para asumir riesgos de negocio propio."
       },
       {
-        "id": "ger_inf_15",
+        "id": "ger_inf_x_15",
         "question": "We kept _____ even when we were very tired.",
         "translation": "Seguimos trabajando incluso cuando estábamos muy cansados.",
         "options": [
@@ -15178,7 +15178,7 @@
     "level": "intermediate",
     "items": [
       {
-        "id": "prep_time_1",
+        "id": "pre_tim_on_1",
         "question": "I wake up _____ 6 AM every morning without an alarm.",
         "translation": "Me despierto a las 6 AM cada mañana sin alarma.",
         "options": [
@@ -15191,7 +15191,7 @@
         "explanation": "Para HORAS específicas usamos 'at': 'at 6 AM, at noon, at midnight'. Es punto exacto en el tiempo. En español 'a las 6 AM' también usa 'a'. Esta rutina matutina temprana sin alarma sugiere reloj biológico bien entrenado o hábito de sueño muy disciplinado."
       },
       {
-        "id": "prep_time_2",
+        "id": "pre_tim_on_2",
         "question": "She was born _____ May 15th, 1995 in the morning.",
         "translation": "Ella nació el 15 de mayo de 1995 en la mañana.",
         "options": [
@@ -15204,7 +15204,7 @@
         "explanation": "Para FECHAS específicas usamos 'on': 'on May 15th'. Incluye días y fechas completas. En español 'el 15 de mayo' usa artículo. Esta fecha de nacimiento específica es información biográfica básica que define cuándo comenzó su vida y probablemente se celebra anualmente."
       },
       {
-        "id": "prep_time_3",
+        "id": "pre_tim_on_3",
         "question": "We usually go on vacation _____ summer every year.",
         "translation": "Usualmente vamos de vacaciones en verano cada año.",
         "options": [
@@ -15217,7 +15217,7 @@
         "explanation": "Para ESTACIONES del año usamos 'in': 'in summer, in winter'. También para meses e años. En español 'en verano' también usa 'en'. Esta tradición vacacional estival es común porque clima cálido facilita actividades al aire libre y coincide con vacaciones escolares."
       },
       {
-        "id": "prep_time_4",
+        "id": "pre_tim_on_4",
         "question": "The meeting starts _____ Monday morning at the office.",
         "translation": "La reunión comienza el lunes en la mañana en la oficina.",
         "options": [
@@ -15230,7 +15230,7 @@
         "explanation": "Para DÍAS de la semana usamos 'on': 'on Monday, on Friday'. En español 'el lunes' usa artículo. Esta reunión al inicio de semana probablemente establece agenda y prioridades para los próximos días laborales."
       },
       {
-        "id": "prep_time_5",
+        "id": "pre_tim_on_5",
         "question": "I was born _____ 1990 during a very cold winter.",
         "translation": "Nací en 1990 durante un invierno muy frío.",
         "options": [
@@ -15243,7 +15243,7 @@
         "explanation": "Para AÑOS usamos 'in': 'in 1990, in 2020'. También meses y estaciones. En español 'en 1990' también usa 'en'. El detalle del invierno frío añade contexto climático al nacimiento que quizás se menciona en historias familiares sobre ese día."
       },
       {
-        "id": "prep_time_6",
+        "id": "pre_tim_on_6",
         "question": "She arrived _____ night when everyone was sleeping peacefully.",
         "translation": "Ella llegó de noche cuando todos dormían pacíficamente.",
         "options": [
@@ -15256,7 +15256,7 @@
         "explanation": "Para partes del día usamos 'at' con 'night': 'at night, at noon'. Pero 'in the morning/afternoon/evening' usa 'in'. En español 'de noche' o 'en la noche' también marca período nocturno. Esta llegada nocturna silenciosa evitó despertar a otros durmientes."
       },
       {
-        "id": "prep_time_7",
+        "id": "pre_tim_on_7",
         "question": "They're getting married _____ December 25th this year happily.",
         "translation": "Se van a casar el 25 de diciembre este año felizmente.",
         "options": [
@@ -15269,7 +15269,7 @@
         "explanation": "Para fecha específica completa usamos 'on': 'on December 25th'. En español 'el 25 de diciembre' usa artículo. Elegir Navidad como día de boda crea celebración doble y probablemente hace la fecha aún más memorable para la pareja."
       },
       {
-        "id": "prep_time_8",
+        "id": "pre_tim_on_8",
         "question": "I'll finish this work _____ the end of the week.",
         "translation": "Terminaré este trabajo para el final de la semana.",
         "options": [
@@ -15282,7 +15282,7 @@
         "explanation": "Para LÍMITE temporal (no más tarde que) usamos 'by': 'by the end of the week'. Es deadline. En español 'para el final' también marca límite. Esta auto-imposición de deadline de fin de semana crea estructura temporal que ayuda a priorizar y organizar el trabajo pendiente."
       },
       {
-        "id": "prep_time_9",
+        "id": "pre_tim_on_9",
         "question": "He studies best _____ the morning before breakfast time.",
         "translation": "Él estudia mejor en la mañana antes del tiempo de desayuno.",
         "options": [
@@ -15295,7 +15295,7 @@
         "explanation": "Para período general del día (no hora específica) usamos 'in': 'in the morning, in the afternoon'. En español 'en la mañana' también usa 'en'. Esta preferencia por estudio matutino aprovecha cuando mente está más fresca antes de que día traiga distracciones."
       },
       {
-        "id": "prep_time_10",
+        "id": "pre_tim_on_10",
         "question": "The store closes _____ 9 PM on weekdays regularly.",
         "translation": "La tienda cierra a las 9 PM entre semana regularmente.",
         "options": [
@@ -15308,7 +15308,7 @@
         "explanation": "Para HORA de cierre usamos 'at': 'at 9 PM'. Es momento preciso. En español 'a las 9 PM' también marca hora exacta. Este horario de cierre nocturno da tiempo suficiente después del trabajo para compras pero no es demasiado tarde para empleados."
       },
       {
-        "id": "prep_time_11",
+        "id": "pre_tim_on_11",
         "question": "I haven't seen her _____ months now - I miss her.",
         "translation": "No la he visto en meses ya - la extraño.",
         "options": [
@@ -15321,7 +15321,7 @@
         "explanation": "Para expresar 'dentro de' un período usamos 'in': 'haven't seen her in months' (en meses). También podríamos usar 'for months' (por meses). En español 'en meses' también funciona. Esta ausencia prolongada de contacto crea sentimiento de nostalgia y deseo de reconexión."
       },
       {
-        "id": "prep_time_12",
+        "id": "pre_tim_on_12",
         "question": "We'll arrive _____ two hours approximately from now.",
         "translation": "Llegaremos en dos horas aproximadamente desde ahora.",
         "options": [
@@ -15334,7 +15334,7 @@
         "explanation": "Para FUTURO cercano (dentro de) usamos 'in': 'in two hours' significa dos horas desde ahora. En español 'en dos horas' también indica futuro próximo. Esta estimación de tiempo de llegada ayuda a quien espera a planificar y saber cuándo prepararse para recibir."
       },
       {
-        "id": "prep_time_13",
+        "id": "pre_tim_on_13",
         "question": "She usually exercises _____ Mondays and Thursdays consistently.",
         "translation": "Ella usualmente hace ejercicio los lunes y jueves consistentemente.",
         "options": [
@@ -15347,7 +15347,7 @@
         "explanation": "Para días REGULARES de la semana usamos 'on': 'on Mondays' (todos los lunes). En español 'los lunes' usa artículo plural. Esta rutina de ejercicio de dos días por semana muestra compromiso con fitness mientras permite días de recuperación entre sesiones."
       },
       {
-        "id": "prep_time_14",
+        "id": "pre_tim_on_14",
         "question": "I was sleeping _____ midnight when the phone rang loudly.",
         "translation": "Estaba durmiendo a medianoche cuando sonó el teléfono fuertemente.",
         "options": [
@@ -15360,7 +15360,7 @@
         "explanation": "Para MEDIANOCHE o MEDIODÍA usamos 'at': 'at midnight, at noon'. Son puntos específicos. En español 'a medianoche' también usa 'a'. Esta interrupción nocturna del sueño por llamada a hora inapropiada probablemente era emergencia o error de quien llamó sobre zona horaria."
       },
       {
-        "id": "prep_time_15",
+        "id": "pre_tim_on_15",
         "question": "They lived in Paris _____ the 1990s during their youth.",
         "translation": "Ellos vivieron en París en los años 90 durante su juventud.",
         "options": [
@@ -16268,7 +16268,7 @@
         "explanation": "Para COSTO superior usamos 'more expensive than': comparación de precios entre ubicaciones. En español 'más caro que' también compara costos. Esta observación sorpresiva sobre que área no-capital es más cara invierte expectativa usual de que capitales son siempre más costosas."
       },
       {
-        "id": "prob_6",
+        "id": "com_str_6",
         "question": "She speaks English _____ _____ _____ a native speaker would.",
         "translation": "Ella habla inglés tan bien como lo haría un hablante nativo.",
         "options": [
@@ -20508,7 +20508,7 @@
     "level": "intermediate",
     "items": [
       {
-        "id": "so_such_1",
+        "id": "so_suc_int_1",
         "question": "She's _____ talented that everyone admires her skills!",
         "translation": "Ella es tan talentosa que todos admiran sus habilidades.",
         "options": [
@@ -20521,7 +20521,7 @@
         "explanation": "Con ADJETIVOS solos usamos 'so': 'so talented, so beautiful'. Enfatiza intensidad que causa resultado. En español 'tan talentosa que' también usa 'tan'. La estructura 'so...that' conecta intensidad con consecuencia, mostrando que su talento es TAN grande que naturalmente genera admiración universal."
       },
       {
-        "id": "so_such_2",
+        "id": "so_suc_int_2",
         "question": "It was _____ _____ beautiful day that we stayed outside all afternoon.",
         "translation": "Era un día tan hermoso que nos quedamos afuera toda la tarde.",
         "options": [
@@ -20534,7 +20534,7 @@
         "explanation": "Con SUSTANTIVO SINGULAR contable usamos 'such a': 'such a beautiful day'. El adjetivo va entre 'such a' y sustantivo. En español 'un día tan hermoso' pone artículo primero. Este clima excepcional que motiva pasar todo el tiempo al aire libre es bendición que debe aprovecharse."
       },
       {
-        "id": "so_such_3",
+        "id": "so_suc_int_3",
         "question": "He speaks _____ quickly that I can't understand him clearly.",
         "translation": "Él habla tan rápido que no puedo entenderlo claramente.",
         "options": [
@@ -20547,7 +20547,7 @@
         "explanation": "Con ADVERBIOS (quickly, slowly) usamos 'so': 'so quickly'. En español 'tan rápido que' también intensifica adverbio. Esta velocidad del habla excesiva crea barrera de comprensión que hace comunicación efectiva imposible, frustrando a oyente que quiere entender pero no puede procesar palabras."
       },
       {
-        "id": "so_such_4",
+        "id": "so_suc_int_4",
         "question": "They're _____ nice people that everyone wants to be their friend.",
         "translation": "Ellos son gente tan agradable que todos quieren ser su amigo.",
         "options": [
@@ -20560,7 +20560,7 @@
         "explanation": "Con SUSTANTIVO PLURAL usamos 'such' (sin 'a'): 'such nice people'. No va artículo con plurales. En español 'gente tan agradable' usa 'tan'. Esta popularidad basada en amabilidad genuina es resultado natural de tratar bien a otros, creando red social amplia."
       },
       {
-        "id": "so_such_5",
+        "id": "so_suc_int_5",
         "question": "The movie was _____ boring that I fell asleep during it.",
         "translation": "La película era tan aburrida que me quedé dormido durante ella.",
         "options": [
@@ -20573,7 +20573,7 @@
         "explanation": "Con adjetivo solo 'boring' usamos 'so': intensifica al máximo. En español 'tan aburrida que' también intensifica. Esta película tan tediosa que induce sueño es fracaso cinematográfico total donde incluso personas que pagaron por verla no pueden mantener atención hasta el final."
       },
       {
-        "id": "so_such_6",
+        "id": "so_suc_int_6",
         "question": "It's _____ _____ long journey that we need to rest halfway.",
         "translation": "Es un viaje tan largo que necesitamos descansar a mitad de camino.",
         "options": [
@@ -20586,7 +20586,7 @@
         "explanation": "Con sustantivo singular 'journey' usamos 'such a long journey'. En español 'un viaje tan largo' también necesita artículo. Esta distancia que requiere pausa intermedia reconoce límites de resistencia humana y necesidad de descanso para completar travesía de manera segura."
       },
       {
-        "id": "so_such_7",
+        "id": "so_suc_int_7",
         "question": "She has _____ many friends that she can't invite all of them.",
         "translation": "Ella tiene tantos amigos que no puede invitar a todos.",
         "options": [
@@ -20599,7 +20599,7 @@
         "explanation": "Con 'many/much/few/little' usamos SIEMPRE 'so': 'so many friends'. Nunca 'such' con estos cuantificadores. En español 'tantos amigos' también cuantifica. Esta popularidad que excede capacidad de espacio de evento es problema de abundancia que requiere selección difícil de quién invitar."
       },
       {
-        "id": "so_such_8",
+        "id": "so_suc_int_8",
         "question": "They had _____ _____ good time that they didn't want to leave.",
         "translation": "Ellos la pasaron tan bien que no querían irse.",
         "options": [
@@ -20612,7 +20612,7 @@
         "explanation": "La expresión idiomática es 'such a good time': experiencia tan placentera. En español 'la pasaron tan bien' usa 'tan'. Esta experiencia tan positiva que genera resistencia a terminarla indica que evento o lugar superó expectativas, creando memorias que querrán repetir."
       },
       {
-        "id": "so_such_9",
+        "id": "so_suc_int_9",
         "question": "The test was _____ difficult that most students failed it.",
         "translation": "El examen era tan difícil que la mayoría de los estudiantes reprobaron.",
         "options": [
@@ -20625,7 +20625,7 @@
         "explanation": "Con adjetivo 'difficult' solo usamos 'so': intensidad extrema. En español 'tan difícil que' también causa falla. Este nivel de dificultad que resulta en fracaso masivo sugiere que examen fue injustamente difícil o que instrucción previa fue inadecuada para preparar estudiantes."
       },
       {
-        "id": "so_such_10",
+        "id": "so_suc_int_10",
         "question": "It was _____ _____ horrible experience that I never want to repeat it.",
         "translation": "Fue una experiencia tan horrible que nunca quiero repetirla.",
         "options": [
@@ -20638,7 +20638,7 @@
         "explanation": "Con sustantivo singular 'experience' usamos 'such a horrible experience'. En español 'una experiencia tan horrible' también traumatiza. Esta vivencia tan negativa que genera determinación de evitarla para siempre probablemente dejó impacto emocional que durará largo tiempo."
       },
       {
-        "id": "so_such_11",
+        "id": "so_suc_int_11",
         "question": "He's _____ lucky to have such supportive friends around him.",
         "translation": "Él es tan afortunado de tener amigos tan solidarios a su alrededor.",
         "options": [
@@ -20651,7 +20651,7 @@
         "explanation": "Con adjetivo 'lucky' usamos 'so': intensifica fortuna. En español 'tan afortunado' también intensifica. Esta gratitud por red de apoyo reconoce que tener amigos que realmente apoyan es bendición que no todos tienen, siendo recurso valioso en tiempos difíciles."
       },
       {
-        "id": "so_such_12",
+        "id": "so_suc_int_12",
         "question": "There was _____ _____ noise that we couldn't hear ourselves talk.",
         "translation": "Había tanto ruido que no podíamos escucharnos hablar.",
         "options": [
@@ -20664,7 +20664,7 @@
         "explanation": "Con incontable 'noise' usamos 'so much': cantidad excesiva. En español 'tanto ruido que' también excede. Este volumen de sonido que impide comunicación básica es situación extremadamente molesta que requiere mudarse a lugar más tranquilo o pedir reducción de ruido."
       },
       {
-        "id": "so_such_13",
+        "id": "so_suc_int_13",
         "question": "She's _____ _____ kind person that she helps everyone around her.",
         "translation": "Ella es una persona tan amable que ayuda a todos a su alrededor.",
         "options": [
@@ -20677,7 +20677,7 @@
         "explanation": "Con 'person' (sustantivo) usamos 'such a kind person'. En español 'una persona tan amable' también describe. Esta bondad que se extiende universalmente a todos sin distinción es cualidad rara y valiosa que hace a esta persona pilar de su comunidad."
       },
       {
-        "id": "so_such_14",
+        "id": "so_suc_int_14",
         "question": "The food was _____ delicious that we ordered more of it.",
         "translation": "La comida era tan deliciosa que ordenamos más de ella.",
         "options": [
@@ -20690,7 +20690,7 @@
         "explanation": "Con adjetivo 'delicious' usamos 'so': sabor tan bueno motiva repetir. En español 'tan deliciosa que' también motiva. Esta calidad culinaria que genera deseo de continuar comiendo pesar de estar satisfecho es señal de cocina excepcional que vale la pena pagar extra."
       },
       {
-        "id": "so_such_15",
+        "id": "so_suc_int_15",
         "question": "We had _____ _____ problems that we almost gave up completely.",
         "translation": "Tuvimos tantos problemas que casi nos rendimos completamente.",
         "options": [
@@ -21738,7 +21738,7 @@
     "level": "advanced",
     "items": [
       {
-        "id": "emph_1",
+        "id": "emp_do_doe_1",
         "question": "I _____ like your new haircut - it looks great on you!",
         "translation": "Sí me gusta tu nuevo corte de cabello - ¡te queda genial!",
         "options": [
@@ -21751,7 +21751,7 @@
         "explanation": "Para ENFATIZAR afirmación presente añadimos 'do' antes del verbo: 'I do like it!' (énfasis en que SÍ gusta). En español 'sí me gusta' enfatiza con 'sí'. Este énfasis tranquiliza a quien hizo cambio de look y estaba inseguro, confirmando fuertemente que cambio fue positivo."
       },
       {
-        "id": "emph_2",
+        "id": "emp_do_doe_2",
         "question": "She _____ finish her work on time despite the difficulties!",
         "translation": "Ella sí terminó su trabajo a tiempo a pesar de las dificultades.",
         "options": [
@@ -21764,7 +21764,7 @@
         "explanation": "Para ENFATIZAR logro pasado añadimos 'did': 'She did finish!' (énfasis en que SÍ terminó). En español 'sí terminó' usa 'sí'. Este énfasis contradice expectativa de que no podría terminar, celebrando que contra probabilidades logró completar trabajo puntualmente."
       },
       {
-        "id": "emph_3",
+        "id": "emp_do_doe_3",
         "question": "He _____ seem tired today - maybe he didn't sleep well.",
         "translation": "Él sí parece cansado hoy - quizás no durmió bien.",
         "options": [
@@ -21777,7 +21777,7 @@
         "explanation": "Con tercera persona presente añadimos 'does' para énfasis: 'He does seem tired'. En español 'sí parece cansado' confirma observación. Este reconocimiento enfático de fatiga visible valida que apariencia agotada es real y notable, no imaginación."
       },
       {
-        "id": "emph_4",
+        "id": "emp_do_doe_4",
         "question": "We _____ want to help you with this problem - really!",
         "translation": "Sí queremos ayudarte con este problema - ¡de verdad!",
         "options": [
@@ -21790,7 +21790,7 @@
         "explanation": "Para INSISTIR en deseo genuino usamos 'do want': énfasis en sinceridad. En español 'sí queremos' también enfatiza. Esta insistencia múltiple (do + really) probablemente responde a duda expresada sobre si oferta de ayuda es genuina o solo cortesía superficial."
       },
       {
-        "id": "emph_5",
+        "id": "emp_do_doe_5",
         "question": "I _____ enjoy classical music, even though I'm young.",
         "translation": "Sí disfruto la música clásica, aunque soy joven.",
         "options": [
@@ -21803,7 +21803,7 @@
         "explanation": "Para CONTRADECIR estereotipo usamos 'do enjoy': énfasis en gusto inesperado. En español 'sí disfruto' también contradice. Esta afirmación enfática desafía suposición de que jóvenes solo gustan música contemporánea, mostrando que apreciación musical trasciende edad."
       },
       {
-        "id": "emph_6",
+        "id": "emp_do_doe_6",
         "question": "They _____ arrive on time yesterday despite traffic issues!",
         "translation": "Ellos sí llegaron a tiempo ayer a pesar de problemas de tráfico.",
         "options": [
@@ -21816,7 +21816,7 @@
         "explanation": "Para ENFATIZAR logro pasado contra obstáculos usamos 'did arrive': lograron puntualidad. En español 'sí llegaron' también celebra. Este éxito de llegar puntualmente pesar de tráfico muestra planificación inteligente de salir extra temprano para compensar demoras esperadas."
       },
       {
-        "id": "emph_7",
+        "id": "emp_do_doe_7",
         "question": "She _____ understand what you're saying - she's not confused.",
         "translation": "Ella sí entiende lo que estás diciendo - no está confundida.",
         "options": [
@@ -21829,7 +21829,7 @@
         "explanation": "Para CONTRADECIR percepción de confusión usamos 'does understand': énfasis en comprensión. En español 'sí entiende' también aclara. Esta defensa de su comprensión probablemente responde a expresión facial que hizo pensar que no entendía, cuando en realidad sí captó el mensaje."
       },
       {
-        "id": "emph_8",
+        "id": "emp_do_doe_8",
         "question": "I _____ remember you from school - we were classmates!",
         "translation": "Sí te recuerdo de la escuela - ¡éramos compañeros de clase!",
         "options": [
@@ -21842,7 +21842,7 @@
         "explanation": "Para INSISTIR en memoria genuina usamos 'do remember': énfasis en que SÍ recuerdas. En español 'sí te recuerdo' también confirma. Esta afirmación enfática probablemente responde a duda de la otra persona sobre si realmente recuerdas o solo finges reconocimiento por cortesía."
       },
       {
-        "id": "emph_9",
+        "id": "emp_do_doe_9",
         "question": "He _____ play the piano beautifully when he was younger.",
         "translation": "Él sí tocaba el piano hermosamente cuando era más joven.",
         "options": [
@@ -21855,7 +21855,7 @@
         "explanation": "Para ENFATIZAR habilidad pasada usamos 'did play': confirmación de talento previo. En español 'sí tocaba' también confirma. Este reconocimiento de habilidad musical pasada que quizás se perdió por falta de práctica evoca nostalgia por talento que existió pero ya no se cultiva."
       },
       {
-        "id": "emph_10",
+        "id": "emp_do_doe_10",
         "question": "We _____ appreciate your help with this difficult task - thank you!",
         "translation": "Sí apreciamos tu ayuda con esta tarea difícil - ¡gracias!",
         "options": [
@@ -21868,7 +21868,7 @@
         "explanation": "Para GRATITUD enfática usamos 'do appreciate': énfasis en agradecimiento sincero. En español 'sí apreciamos' también intensifica. Esta expresión fuerte de gratitud asegura que ayuda recibida no se toma por garantizada sino que se valora genuinamente."
       },
       {
-        "id": "emph_11",
+        "id": "emp_do_doe_11",
         "question": "She _____ look like her mother - the resemblance is striking!",
         "translation": "Ella sí se parece a su madre - ¡el parecido es impresionante!",
         "options": [
@@ -21881,7 +21881,7 @@
         "explanation": "Para CONFIRMAR parecido obvio usamos 'does look like': énfasis en similitud. En español 'sí se parece' también confirma. Esta observación enfática sobre herencia genética visible probablemente es comentario que ambas (hija y madre) han escuchado repetidamente de extraños."
       },
       {
-        "id": "emph_12",
+        "id": "emp_do_doe_12",
         "question": "I _____ try my best always, even when it's difficult for me.",
         "translation": "Sí intento mi mejor esfuerzo siempre, incluso cuando es difícil para mí.",
         "options": [
@@ -21894,7 +21894,7 @@
         "explanation": "Para DEFENDER esfuerzo personal usamos 'do try': énfasis en que realmente intentas. En español 'sí intento' también defiende. Esta afirmación probablemente responde a crítica de que no estás esforzándote suficiente, insistiendo en que tu dedicación es genuina aunque resultados no siempre lo reflejen."
       },
       {
-        "id": "emph_13",
+        "id": "emp_do_doe_13",
         "question": "They _____ finish the project on time last week successfully!",
         "translation": "¡Ellos sí terminaron el proyecto a tiempo la semana pasada exitosamente!",
         "options": [
@@ -21907,7 +21907,7 @@
         "explanation": "Para CELEBRAR éxito pasado contra dudas usamos 'did finish': énfasis en logro. En español 'sí terminaron' también celebra. Este cumplimiento de deadline que quizás otros dudaban que lograrían es victoria que merece reconocimiento especial por superar expectativas bajas."
       },
       {
-        "id": "emph_14",
+        "id": "emp_do_doe_14",
         "question": "I _____ care about what you think - your opinion matters to me!",
         "translation": "Sí me importa lo que piensas - ¡tu opinión me importa!",
         "options": [
@@ -21920,7 +21920,7 @@
         "explanation": "Para INSISTIR que importa usamos 'do care': énfasis en que SÍ te importa. En español 'sí me importa' también insiste. Esta afirmación probablemente responde a duda de otra persona sobre si realmente valoras su opinión o solo preguntas por cortesía."
       },
       {
-        "id": "emph_15",
+        "id": "emp_do_doe_15",
         "question": "She _____ work hard every single day without exception ever!",
         "translation": "¡Ella sí trabaja duro cada día sin excepción jamás!",
         "options": [

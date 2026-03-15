@@ -37,17 +37,38 @@ final class ProfileViewModel {
 
     var breathingOrbsEnabled: Bool {
         get { userProfile?.breathingOrbsEnabled ?? true }
-        set { userProfile?.breathingOrbsEnabled = newValue; save() }
+        set {
+            userProfile?.breathingOrbsEnabled = newValue
+            if newValue {
+                userProfile?.quantumFlowEnabled = false
+                userProfile?.nebulaDriftEnabled = false
+            }
+            save()
+        }
     }
 
     var quantumFlowEnabled: Bool {
         get { userProfile?.quantumFlowEnabled ?? true }
-        set { userProfile?.quantumFlowEnabled = newValue; save() }
+        set {
+            userProfile?.quantumFlowEnabled = newValue
+            if newValue {
+                userProfile?.breathingOrbsEnabled = false
+                userProfile?.nebulaDriftEnabled = false
+            }
+            save()
+        }
     }
 
     var nebulaDriftEnabled: Bool {
         get { userProfile?.nebulaDriftEnabled ?? true }
-        set { userProfile?.nebulaDriftEnabled = newValue; save() }
+        set {
+            userProfile?.nebulaDriftEnabled = newValue
+            if newValue {
+                userProfile?.breathingOrbsEnabled = false
+                userProfile?.quantumFlowEnabled = false
+            }
+            save()
+        }
     }
 
     var animationIntensity: Double {
@@ -78,7 +99,10 @@ final class ProfileViewModel {
     func loadData() {
         isLoading = true
         userProfile = progressService.getOrCreateProfile()
-        AudioService.shared.isEnabled = userProfile?.soundEnabled ?? true
+        if let p = userProfile {
+            AudioService.shared.syncFromProfile(p)
+            HapticsService.shared.syncFromProfile(p)
+        }
         isLoading = false
     }
 
@@ -97,7 +121,6 @@ final class ProfileViewModel {
 final class LanguageSelectionViewModel {
     var sourceLanguage: SupportedLanguage = .english
     var targetLanguage: SupportedLanguage = .spanish
-    var enabledBetaPairs: Set<String> = []
 
     private let progressService: ProgressService
 
@@ -106,15 +129,7 @@ final class LanguageSelectionViewModel {
     }
 
     var availablePairs: [LanguagePair] {
-        var pairs = LanguagePair.builtIn
-
-        // Add enabled beta pairs
-        let betaPairs = LanguagePair.allAvailable.filter { pair in
-            !pair.isBuiltIn && enabledBetaPairs.contains(pair.key)
-        }
-        pairs.append(contentsOf: betaPairs)
-
-        return pairs
+        LanguagePair.withContent
     }
 
     var isValidPair: Bool {
@@ -125,31 +140,14 @@ final class LanguageSelectionViewModel {
         let pref = progressService.getLanguagePreference()
         sourceLanguage = SupportedLanguage(rawValue: pref.sourceLanguage) ?? .english
         targetLanguage = SupportedLanguage(rawValue: pref.targetLanguage) ?? .spanish
-
-        // Load beta pairs
-        if let data = UserDefaults.standard.data(forKey: "enabled_beta_pairs"),
-           let pairs = try? JSONDecoder().decode(Set<String>.self, from: data) {
-            enabledBetaPairs = pairs
-        }
     }
 
     func selectLanguagePair() {
         guard isValidPair else { return }
         progressService.setLanguagePreference(source: sourceLanguage, target: targetLanguage)
         TranslationService.shared.setLanguage(sourceLanguage.rawValue)
-        HapticsService.success()
-        AudioService.shared.playWhoosh()
-    }
-
-    func toggleBetaPair(_ pair: LanguagePair) {
-        if enabledBetaPairs.contains(pair.key) {
-            enabledBetaPairs.remove(pair.key)
-        } else {
-            enabledBetaPairs.insert(pair.key)
-        }
-        if let data = try? JSONEncoder().encode(enabledBetaPairs) {
-            UserDefaults.standard.set(data, forKey: "enabled_beta_pairs")
-        }
+        HapticsService.shared.correctAnswer()
+        AudioService.shared.playLanguageConfirmed()
     }
 }
 

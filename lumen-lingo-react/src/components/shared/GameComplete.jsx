@@ -186,7 +186,7 @@ export default function GameComplete({
   const mobileScaleMultiplier = 1 + (0.3 * animationIntensity);
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-2 sm:p-6 relative overflow-hidden">
+    <div className="min-h-[100dvh] flex items-center justify-center p-1 sm:p-6 relative overflow-hidden">
       {/* Dark mode background - Layer 1: Base Abyss */}
       <motion.div
         className="absolute inset-0"
@@ -505,7 +505,7 @@ export default function GameComplete({
         className="w-full max-w-3xl z-10 relative"
       >
         <div 
-          className={`relative rounded-3xl sm:rounded-[2.5rem] p-2.5 sm:p-10 shadow-2xl overflow-hidden`}
+          className={`relative rounded-3xl sm:rounded-[2.5rem] p-2 sm:p-10 shadow-2xl overflow-hidden`}
           style={darkMode ? {
             background: 'rgba(255, 255, 255, 0.05)',
             backdropFilter: 'blur(20px)',
@@ -606,7 +606,7 @@ export default function GameComplete({
                 delay: 0.15,
                 ease: [0.34, 1.56, 0.64, 1] // Elastic ease (not bounce)
               }}
-              className="flex justify-center mb-2 sm:mb-8"
+              className="flex justify-center mb-1 sm:mb-8"
             >
               <div className="relative">
                 <motion.div
@@ -716,7 +716,7 @@ export default function GameComplete({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="text-center mb-2 sm:mb-8"
+              className="text-center mb-1 sm:mb-8"
             >
               <motion.h2 
                 className={`text-xl sm:text-6xl font-black mb-1 sm:mb-3 ${
@@ -764,7 +764,7 @@ export default function GameComplete({
 
             {/* Stats Grid - MOBILE OPTIMIZED with staggered fade up */}
             <div
-              className="grid grid-cols-2 sm:grid-cols-4 gap-1.5 sm:gap-4 mb-2 sm:mb-8"
+              className="grid grid-cols-2 sm:grid-cols-4 gap-1 sm:gap-4 mb-1.5 sm:mb-8"
             >
               {/* Score Card */}
               <motion.div
@@ -799,8 +799,8 @@ export default function GameComplete({
                   className="absolute inset-0 bg-gradient-to-br from-yellow-400/15 to-orange-400/10 opacity-60"
                 />
                 
-                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-[50px] sm:min-h-[110px]">
-                  <div className="flex items-center justify-center gap-1 sm:gap-2 mb-1 sm:mb-3">
+                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-[40px] sm:min-h-[110px]">
+                  <div className="flex items-center justify-center gap-1 sm:gap-2 mb-0.5 sm:mb-3">
                     <div className={`p-1 sm:p-2 rounded-lg sm:rounded-xl bg-gradient-to-br from-yellow-400 to-orange-400 shadow-lg`}>
                       <Star className="w-2.5 h-2.5 sm:w-5 sm:h-5 text-white" strokeWidth={2.5} />
                     </div>
@@ -859,8 +859,8 @@ export default function GameComplete({
                   className="absolute inset-0 bg-gradient-to-br from-emerald-400/15 to-green-400/10 opacity-60"
                 />
                 
-                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-[50px] sm:min-h-[110px]">
-                  <div className="flex items-center justify-center gap-1 sm:gap-2 mb-1 sm:mb-3">
+                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-[40px] sm:min-h-[110px]">
+                  <div className="flex items-center justify-center gap-1 sm:gap-2 mb-0.5 sm:mb-3">
                     <div className={`p-1 sm:p-2 rounded-lg sm:rounded-xl bg-gradient-to-br from-emerald-400 to-green-400 shadow-lg`}>
                       <Target className="w-2.5 h-2.5 sm:w-5 sm:h-5 text-white" strokeWidth={2.5} />
                     </div>
@@ -919,8 +919,8 @@ export default function GameComplete({
                   className="absolute inset-0 bg-gradient-to-br from-blue-400/15 to-cyan-400/10 opacity-60"
                 />
                 
-                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-[50px] sm:min-h-[110px]">
-                  <div className="flex items-center justify-center gap-1 sm:gap-2 mb-1 sm:mb-3">
+                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-[40px] sm:min-h-[110px]">
+                  <div className="flex items-center justify-center gap-1 sm:gap-2 mb-0.5 sm:mb-3">
                     <div className={`p-1 sm:p-2 rounded-lg sm:rounded-xl bg-gradient-to-br from-blue-400 to-cyan-400 shadow-lg`}>
                       <TrendingUp className="w-2.5 h-2.5 sm:w-5 sm:h-5 text-white" strokeWidth={2.5} />
                     </div>
@@ -979,8 +979,8 @@ export default function GameComplete({
                   className="absolute inset-0 bg-gradient-to-br from-orange-400/15 to-red-400/10 opacity-60"
                 />
                 
-                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-[50px] sm:min-h-[110px]">
-                  <div className="flex items-center justify-center gap-1 sm:gap-2 mb-1 sm:mb-3">
+                <div className="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-[40px] sm:min-h-[110px]">
+                  <div className="flex items-center justify-center gap-1 sm:gap-2 mb-0.5 sm:mb-3">
                     <div className={`p-1 sm:p-2 rounded-lg sm:rounded-xl bg-gradient-to-br from-orange-400 to-red-400 shadow-lg`}>
                       <Zap className="w-2.5 h-2.5 sm:w-5 sm:h-5 text-white" strokeWidth={2.5} />
                     </div>
@@ -1007,7 +1007,7 @@ export default function GameComplete({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.65, duration: 0.5 }}
-              className="mb-2 sm:mb-6"
+              className="hidden sm:block mb-2 sm:mb-6"
             >
               <WisdomEngine />
             </motion.div>
@@ -1017,7 +1017,7 @@ export default function GameComplete({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.5 }}
-              className="flex flex-col sm:flex-row gap-2 sm:gap-4"
+              className="flex flex-row gap-1.5 sm:gap-4"
             >
               {/* Play Again Button */}
               <motion.button
@@ -1070,15 +1070,15 @@ export default function GameComplete({
                   transition={{ duration: 0.6 }}
                 />
                 
-                <div className="relative px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-center gap-2">
+                <div className="relative px-3 sm:px-6 py-2.5 sm:py-4 flex items-center justify-center gap-1.5 sm:gap-2">
                   <motion.div
                     whileHover={{ y: -1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 20 }}
                   >
-                    <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-white" strokeWidth={2.5} />
+                    <Sparkles className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-white" strokeWidth={2.5} />
                   </motion.div>
                   <motion.span 
-                    className={`text-sm sm:text-lg font-black text-white ${
+                    className={`text-xs sm:text-lg font-black text-white ${
                       !darkMode ? 'light-mode-text' : ''
                     }`}
                     style={{ letterSpacing: '0px' }}
@@ -1092,7 +1092,7 @@ export default function GameComplete({
                     transition={{ type: "spring", stiffness: 400, damping: 20 }}
                   >
                     <ArrowRight 
-                      className="w-4 h-4 sm:w-5 sm:h-5 text-white" 
+                      className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-white" 
                       strokeWidth={2.5}
                     />
                   </motion.div>
@@ -1130,15 +1130,15 @@ export default function GameComplete({
                 }}
                 transition={{ type: "spring", stiffness: 500, damping: 28 }}
               >
-                <div className="relative px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-center gap-2">
+                <div className="relative px-3 sm:px-6 py-2.5 sm:py-4 flex items-center justify-center gap-1.5 sm:gap-2">
                   <motion.div
                     whileHover={{ y: -1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 20 }}
                   >
-                    <Home className="w-4 h-4 sm:w-5 sm:h-5 text-white" strokeWidth={2.5} />
+                    <Home className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-white" strokeWidth={2.5} />
                   </motion.div>
                   <motion.span 
-                    className={`text-sm sm:text-lg font-black text-white ${
+                    className={`text-xs sm:text-lg font-black text-white ${
                       !darkMode ? 'light-mode-text' : ''
                     }`}
                     style={{ letterSpacing: '0px' }}

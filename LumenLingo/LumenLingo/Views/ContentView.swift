@@ -108,20 +108,26 @@ struct ContentView: View {
             setupServices()
             localization.update(from: languagePrefs)
             themeManager.syncFromProfile(profile)
-            if let profile { audioService.syncFromProfile(profile) }
-            // Delay to ensure UITabBar exists in the hierarchy
+            if let profile {
+                audioService.syncFromProfile(profile)
+                hapticsService.syncFromProfile(profile)
+            }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 let wantTransparent = selectedTab == .dashboard && themeManager.isDarkMode
                 applyTabBarAppearance(transparent: wantTransparent)
             }
         }
         .onChange(of: selectedTab) { _, newTab in
+            AudioService.shared.playTabSwitch()
+            HapticsService.shared.tabSwitch()
             let wantTransparent = newTab == .dashboard && themeManager.isDarkMode
             applyTabBarAppearance(transparent: wantTransparent)
         }
         .onChange(of: themeManager.isDarkMode) { _, _ in
             let wantTransparent = selectedTab == .dashboard && themeManager.isDarkMode
-            applyTabBarAppearance(transparent: wantTransparent)
+            UIView.animate(withDuration: 0.55, delay: 0, options: .curveEaseInOut) {
+                applyTabBarAppearance(transparent: wantTransparent)
+            }
         }
         .onChange(of: profile?.soundEnabled) { _, _ in
             if let profile { audioService.syncFromProfile(profile) }
@@ -155,11 +161,11 @@ struct ContentView: View {
         case .wordBuilderCategories:
             CategoriesView(gameType: .wordBuilder, navigationPath: $navigationPath)
         case .flashcardsGame(let categoryId):
-            FlashCardsView(categoryId: categoryId, hideTabBar: $hideTabBar)
+            FlashCardsView(categoryId: categoryId, hideTabBar: $hideTabBar, navigationPath: $navigationPath)
         case .grammarGame(let categoryId):
-            GrammarView(categoryId: categoryId, hideTabBar: $hideTabBar)
+            GrammarView(categoryId: categoryId, hideTabBar: $hideTabBar, navigationPath: $navigationPath)
         case .wordBuilderGame(let categoryId):
-            WordBuilderView(categoryId: categoryId, hideTabBar: $hideTabBar)
+            WordBuilderView(categoryId: categoryId, hideTabBar: $hideTabBar, navigationPath: $navigationPath)
         case .languageSelection:
             LanguageSelectionView()
         }
@@ -372,6 +378,7 @@ struct LumenLingoNavBar: View {
                 .fill(isDark ? .white.opacity(0.06) : Color(red: 0.45, green: 0.22, blue: 0.62).opacity(0.06))
                 .frame(height: 0.5)
         }
+        .animation(.smooth(duration: 0.65), value: isDark)
         .onAppear {
             withAnimation(.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
                 wobble = 5

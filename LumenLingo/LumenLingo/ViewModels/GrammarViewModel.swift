@@ -112,13 +112,13 @@ final class GrammarViewModel {
                 target: targetLanguage
             )
 
-            audioService.playWarmPulse()
-            HapticsService.success()
+            audioService.playGrammarCorrect(consecutiveCount: currentStreak)
+            HapticsService.shared.correctAnswer()
         } else {
             wrong += 1
             currentStreak = 0
-            audioService.playSoftNudge()
-            HapticsService.error()
+            audioService.playGrammarWrong()
+            HapticsService.shared.wrongAnswer()
         }
 
         // Update performance mood
