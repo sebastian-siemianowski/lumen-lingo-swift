@@ -805,7 +805,7 @@
 
 ---
 
-## Epic 10: Royal Trial Lifecycle
+## Epic 10: Royal Trial Lifecycle ✅
 
 ### Story 10.1 — Start Royal Trial
 
@@ -821,15 +821,15 @@
 - Trial can only be started once per user.
 
 **Subtasks:**
-- [ ] 10.1.1 — Add `trialStartDate: Date?` to `UserProfile`.
-- [ ] 10.1.2 — Add `hasUsedTrial: Bool` computed property (`trialStartDate != nil`).
-- [ ] 10.1.3 — On "Start Free Trial" tap: set `trialStartDate = Date.now` and `selectedTierId = "trial"`.
-- [ ] 10.1.4 — If `hasUsedTrial`: hide or disable the Trial card in `MembershipView`.
-- [ ] 10.1.5 — Create `TrialConfirmationView`: celebration animation, feature list, 14-day countdown.
-- [ ] 10.1.6 — Present confirmation as full-screen cover with confetti particles.
-- [ ] 10.1.7 — Add haptic feedback (notification success) on trial activation.
-- [ ] 10.1.8 — Add unit test: start trial → `selectedTierId == "trial"` and `trialStartDate != nil`.
-- [ ] 10.1.9 — Add unit test: trial already used → cannot start again.
+- [x] 10.1.1 — Add `trialStartDate: Date?` to `UserProfile`.
+- [x] 10.1.2 — Add `hasUsedTrial: Bool` computed property (`trialStartDate != nil`).
+- [x] 10.1.3 — On "Start Free Trial" tap: set `trialStartDate = Date.now` and `selectedTierId = "trial"`.
+- [x] 10.1.4 — If `hasUsedTrial`: hide or disable the Trial card in `MembershipView`.
+- [x] 10.1.5 — Create `TrialConfirmationView`: celebration animation, feature list, 14-day countdown.
+- [x] 10.1.6 — Present confirmation as full-screen cover with confetti particles.
+- [x] 10.1.7 — Add haptic feedback (notification success) on trial activation.
+- [x] 10.1.8 — Add unit test: start trial → `selectedTierId == "trial"` and `trialStartDate != nil`.
+- [x] 10.1.9 — Add unit test: trial already used → cannot start again.
 
 ---
 
@@ -847,13 +847,13 @@
 - Banner includes a subtle pulsing animation in the last 3 days.
 
 **Subtasks:**
-- [ ] 10.2.1 — Create `TrialCountdownBanner` view with gradient background and day count.
-- [ ] 10.2.2 — Calculate remaining days: `Calendar.current.dateComponents([.day], from: .now, to: expiryDate).day`.
-- [ ] 10.2.3 — Use trial gradient for >3 days, warning gradient for ≤3 days.
-- [ ] 10.2.4 — Add pulsing animation (opacity 0.8↔1.0, 2-second loop) for ≤3 days.
-- [ ] 10.2.5 — Add tap gesture → navigate to `MembershipView`.
-- [ ] 10.2.6 — Only show banner when `TierManager.currentTierId == "trial"`.
-- [ ] 10.2.7 — Add unit test: 10 days remaining → normal gradient; 2 days → warning gradient.
+- [x] 10.2.1 — Create `TrialCountdownBanner` view with gradient background and day count.
+- [x] 10.2.2 — Calculate remaining days: `Calendar.current.dateComponents([.day], from: .now, to: expiryDate).day`.
+- [x] 10.2.3 — Use trial gradient for >3 days, warning gradient for ≤3 days.
+- [x] 10.2.4 — Add pulsing animation (opacity 0.8↔1.0, 2-second loop) for ≤3 days.
+- [x] 10.2.5 — Add tap gesture → navigate to `MembershipView`.
+- [x] 10.2.6 — Only show banner when `TierManager.currentTierId == "trial"`.
+- [x] 10.2.7 — Add unit test: 10 days remaining → normal gradient; 2 days → warning gradient.
 
 ---
 
@@ -871,16 +871,16 @@
 - User's progress and data from the trial period are preserved.
 
 **Subtasks:**
-- [ ] 10.3.1 — Add `TierManager.checkTrialExpiration()` called on app launch.
-- [ ] 10.3.2 — If `trialStartDate + 14 days < Date.now` and `currentTierId == "trial"`: set to "free".
-- [ ] 10.3.3 — Add `trialExpired: Bool` flag to `UserProfile` (prevents showing screen repeatedly).
-- [ ] 10.3.4 — Create `TrialEndedView`: summary of trial stats (XP earned, sessions played), Free tier features, "Choose a Plan" CTA.
-- [ ] 10.3.5 — Present `TrialEndedView` as a full-screen cover on first post-expiry launch.
-- [ ] 10.3.6 — After dismissing, set `trialExpired = true` so it doesn't show again.
-- [ ] 10.3.7 — All downgrade handlers from Epics 2-8 fire automatically via `TierManager.didSet`.
-- [ ] 10.3.8 — Do NOT delete progress data from trial period.
-- [ ] 10.3.9 — Add unit test: trial started 15 days ago → `checkTrialExpiration()` sets tier to "free".
-- [ ] 10.3.10 — Add unit test: trial started 10 days ago → tier remains "trial".
+- [x] 10.3.1 — Add `TierManager.checkTrialExpiration()` called on app launch.
+- [x] 10.3.2 — If `trialStartDate + 14 days < Date.now` and `currentTierId == "trial"`: set to "free".
+- [x] 10.3.3 — Add `trialExpired: Bool` flag to `UserProfile` (prevents showing screen repeatedly).
+- [x] 10.3.4 — Create `TrialEndedView`: summary of trial stats (XP earned, sessions played), Free tier features, "Choose a Plan" CTA.
+- [x] 10.3.5 — Present `TrialEndedView` as a full-screen cover on first post-expiry launch.
+- [x] 10.3.6 — After dismissing, set `trialExpired = true` so it doesn't show again.
+- [x] 10.3.7 — All downgrade handlers from Epics 2-8 fire automatically via `TierManager.didSet`.
+- [x] 10.3.8 — Do NOT delete progress data from trial period.
+- [x] 10.3.9 — Add unit test: trial started 15 days ago → `checkTrialExpiration()` sets tier to "free".
+- [x] 10.3.10 — Add unit test: trial started 10 days ago → tier remains "trial".
 
 ---
 
@@ -897,16 +897,16 @@
 - If trial is active: card shows "X days remaining" in the badge position.
 
 **Subtasks:**
-- [ ] 10.4.1 — In `MembershipView.tiers`, conditionally modify Trial tier based on `hasUsedTrial`.
-- [ ] 10.4.2 — If used: set `cta` to "Trial Completed", `badgeText` to nil, move to array end.
-- [ ] 10.4.3 — If active: set `badgeText` to "X DAYS LEFT".
-- [ ] 10.4.4 — Apply `.opacity(0.5)` to the entire used-trial card.
-- [ ] 10.4.5 — Disable tap gesture on used-trial CTA.
-- [ ] 10.4.6 — Add snapshot tests for all 3 trial card states (available, active, used).
+- [x] 10.4.1 — In `MembershipView.tiers`, conditionally modify Trial tier based on `hasUsedTrial`.
+- [x] 10.4.2 — If used: set `cta` to "Trial Completed", `badgeText` to nil, move to array end.
+- [x] 10.4.3 — If active: set `badgeText` to "X DAYS LEFT".
+- [x] 10.4.4 — Apply `.opacity(0.5)` to the entire used-trial card.
+- [x] 10.4.5 — Disable tap gesture on used-trial CTA.
+- [x] 10.4.6 — Add snapshot tests for all 3 trial card states (available, active, used).
 
 ---
 
-## Epic 11: Settings & Appearance Gating
+## Epic 11: Settings & Appearance Gating ✅
 
 ### Story 11.1 — Gate Appearance Sub-Tabs by Tier
 
@@ -922,13 +922,13 @@
 - Lock icon color matches the minimum tier's gradient.
 
 **Subtasks:**
-- [ ] 11.1.1 — In `ProfileView` appearance tab picker, append lock icon for locked features.
-- [ ] 11.1.2 — Determine lock state from `TierManager` for each sub-tab: Breathing Orbs (free locked), Quantum Flow (free/pro locked), Nebula Drift (free/pro locked).
-- [ ] 11.1.3 — Lock icon: `Image(systemName: "lock.fill").font(.system(size: 8)).opacity(0.4)`.
-- [ ] 11.1.4 — Color-code lock: `.purple` for Pro features, `.cyan` for Elite features.
-- [ ] 11.1.5 — On sub-tab selection: if locked, show preview+upgrade view; if unlocked, show settings.
-- [ ] 11.1.6 — Add smooth animations for lock icon appear/disappear on tier change.
-- [ ] 11.1.7 — Add unit test: free tier → 3 sub-tabs locked; pro → 2 locked; elite/royal → 0 locked.
+- [x] 11.1.1 — In `ProfileView` appearance tab picker, append lock icon for locked features.
+- [x] 11.1.2 — Determine lock state from `TierManager` for each sub-tab: Breathing Orbs (free locked), Quantum Flow (free/pro locked), Nebula Drift (free/pro locked).
+- [x] 11.1.3 — Lock icon: `Image(systemName: "lock.fill").font(.system(size: 8)).opacity(0.4)`.
+- [x] 11.1.4 — Color-code lock: `.purple` for Pro features, `.cyan` for Elite features.
+- [x] 11.1.5 — On sub-tab selection: if locked, show preview+upgrade view; if unlocked, show settings.
+- [x] 11.1.6 — Add smooth animations for lock icon appear/disappear on tier change.
+- [x] 11.1.7 — Add unit test: free tier → 3 sub-tabs locked; pro → 2 locked; elite/royal → 0 locked.
 
 
 ---
@@ -947,14 +947,14 @@
 - Sound preview (3-second) is available for all tiers on all soundscapes.
 
 **Subtasks:**
-- [ ] 11.3.1 — In `SoundSettingsView`, split into "General" and "Soundscapes" sections.
-- [ ] 11.3.2 — "General" section: haptic toggle + volume — always accessible.
-- [ ] 11.3.3 — "Soundscapes" section: gated by `TierManager.soundscapeAccess`.
-- [ ] 11.3.4 — For Free: show soundscape preview with frosted overlay and "PRO" badge.
-- [ ] 11.3.5 — For Pro: show 1 unlocked soundscape + locked previews for others.
-- [ ] 11.3.6 — Add 3-second preview button for all soundscapes (even locked ones).
-- [ ] 11.3.7 — Preview button uses `AudioService.playPreview()` (no tier check — previews are free).
-- [ ] 11.3.8 — Add unit test: free tier → soundscapes section shows locked state.
+- [x] 11.3.1 — In `SoundSettingsView`, split into "General" and "Soundscapes" sections.
+- [x] 11.3.2 — "General" section: haptic toggle + volume — always accessible.
+- [x] 11.3.3 — "Soundscapes" section: gated by `TierManager.soundscapeAccess`.
+- [x] 11.3.4 — For Free: show soundscape preview with frosted overlay and "PRO" badge.
+- [x] 11.3.5 — For Pro: show 1 unlocked soundscape + locked previews for others.
+- [x] 11.3.6 — Add 3-second preview button for all soundscapes (even locked ones).
+- [x] 11.3.7 — Preview button uses `AudioService.playPreview()` (no tier check — previews are free).
+- [x] 11.3.8 — Add unit test: free tier → soundscapes section shows locked state.
 
 ---
 

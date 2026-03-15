@@ -1417,4 +1417,64 @@ final class TierManagerTests: XCTestCase {
         XCTAssertEqual(profile.totalXP, 500)
         XCTAssertEqual(profile.dailyStreak, 7)
     }
+
+    // MARK: - Epic 11: Settings & Appearance Gating
+
+    func testFreeLocksThreeAppearanceSubTabs() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        let locked: [PremiumFeature] = [.breathingOrbs, .quantumFlow, .nebulaDrift]
+        let lockedCount = locked.filter { !manager.hasAccess(to: $0) }.count
+        XCTAssertEqual(lockedCount, 3, "Free tier should lock all 3 appearance sub-tabs")
+    }
+
+    func testProLocksTwoAppearanceSubTabs() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        let subTabs: [PremiumFeature] = [.breathingOrbs, .quantumFlow, .nebulaDrift]
+        let lockedCount = subTabs.filter { !manager.hasAccess(to: $0) }.count
+        XCTAssertEqual(lockedCount, 2, "Pro tier should lock Quantum Flow and Nebula Drift")
+        XCTAssertTrue(manager.hasAccess(to: .breathingOrbs))
+        XCTAssertFalse(manager.hasAccess(to: .quantumFlow))
+        XCTAssertFalse(manager.hasAccess(to: .nebulaDrift))
+    }
+
+    func testEliteLocksZeroAppearanceSubTabs() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        let subTabs: [PremiumFeature] = [.breathingOrbs, .quantumFlow, .nebulaDrift]
+        let lockedCount = subTabs.filter { !manager.hasAccess(to: $0) }.count
+        XCTAssertEqual(lockedCount, 0, "Elite tier should lock 0 appearance sub-tabs")
+    }
+
+    func testRoyalLocksZeroAppearanceSubTabs() {
+        let manager = TierManager()
+        manager.currentTierId = "royal"
+        let subTabs: [PremiumFeature] = [.breathingOrbs, .quantumFlow, .nebulaDrift]
+        let lockedCount = subTabs.filter { !manager.hasAccess(to: $0) }.count
+        XCTAssertEqual(lockedCount, 0, "Royal tier should lock 0 appearance sub-tabs")
+    }
+
+    func testFreeTierSoundscapesLocked() {
+        let manager = TierManager()
+        manager.currentTierId = "free"
+        XCTAssertFalse(manager.hasAccess(to: .soundscapes), "Free tier should not have soundscape access")
+        XCTAssertEqual(manager.allowedCount(for: .soundscapes), 0)
+        XCTAssertTrue(manager.unlockedSoundscapes().isEmpty, "Free tier should have 0 unlocked soundscapes")
+    }
+
+    func testProTierSoundscapesPartialAccess() {
+        let manager = TierManager()
+        manager.currentTierId = "pro"
+        XCTAssertTrue(manager.hasAccess(to: .soundscapes), "Pro tier should have soundscape access")
+        XCTAssertEqual(manager.allowedCount(for: .soundscapes), 1, "Pro tier gets 1 soundscape")
+        XCTAssertEqual(manager.unlockedSoundscapes().count, 1)
+    }
+
+    func testEliteTierSoundscapesFullAccess() {
+        let manager = TierManager()
+        manager.currentTierId = "elite"
+        XCTAssertTrue(manager.hasAccess(to: .soundscapes))
+        XCTAssertEqual(manager.allowedCount(for: .soundscapes), 8)
+    }
 }
