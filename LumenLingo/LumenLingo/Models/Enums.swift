@@ -671,9 +671,9 @@ enum NebulaPreset: String, CaseIterable, Identifiable {
 
 enum SoundscapeCategory: String, CaseIterable, Identifiable {
     case cozy
+    case travel
     case nature
     case atmospheric
-    case travel
 
     var id: String { rawValue }
 

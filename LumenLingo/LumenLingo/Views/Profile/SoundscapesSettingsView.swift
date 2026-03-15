@@ -135,14 +135,13 @@ struct SoundscapesSettingsView: View {
             handleSoundscapeTap(soundscape)
         } label: {
             VStack(spacing: 0) {
-                // Gradient preview with icon
+                // Gradient preview with icon — fixed height
                 ZStack {
                     LinearGradient(
                         colors: soundscape.previewColors,
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     )
-                    .frame(height: 52)
                     .overlay(
                         LinearGradient(
                             colors: [.white.opacity(0.12), .clear],
@@ -151,34 +150,37 @@ struct SoundscapesSettingsView: View {
                         )
                     )
 
-                    // Icon + playing indicator
-                    HStack {
-                        Spacer()
+                    // Playing indicator badge
+                    if isSelected {
+                        VStack {
+                            HStack {
+                                Spacer()
+                                ZStack {
+                                    Circle()
+                                        .fill(.white.opacity(0.3))
+                                        .frame(width: 22, height: 22)
 
-                        if isSelected {
-                            ZStack {
-                                Circle()
-                                    .fill(.white.opacity(0.25))
-                                    .frame(width: 24, height: 24)
-
-                                Image(systemName: isPlaying ? "waveform" : "checkmark")
-                                    .font(.system(size: 10, weight: .bold))
-                                    .foregroundStyle(.white)
-                                    .symbolEffect(.variableColor.iterative, options: .repeating, isActive: isPlaying)
+                                    Image(systemName: isPlaying ? "waveform" : "checkmark")
+                                        .font(.system(size: 9, weight: .bold))
+                                        .foregroundStyle(.white)
+                                        .symbolEffect(.variableColor.iterative, options: .repeating, isActive: isPlaying)
+                                }
+                                .transition(.scale.combined(with: .opacity))
+                                .padding(5)
                             }
-                            .transition(.scale.combined(with: .opacity))
-                            .padding(6)
+                            Spacer()
                         }
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
 
                     Image(systemName: soundscape.icon)
                         .font(.system(size: 20))
                         .foregroundStyle(.white.opacity(isSelected ? 1.0 : 0.7))
                         .shadow(color: .black.opacity(0.3), radius: 4, y: 2)
                 }
+                .frame(height: 56)
+                .clipped()
 
-                // Info section
+                // Info section — fixed height
                 VStack(spacing: 2) {
                     Text(soundscape.displayName)
                         .font(.system(size: 11, weight: .bold))
@@ -195,18 +197,18 @@ struct SoundscapesSettingsView: View {
                         .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist.opacity(0.8))
                         .lineLimit(2)
                         .multilineTextAlignment(.center)
-                        .minimumScaleFactor(0.8)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 .padding(.horizontal, 6)
-                .padding(.vertical, 8)
-                .frame(maxWidth: .infinity)
+                .padding(.vertical, 6)
+                .frame(width: 130, height: 44)
                 .background(
                     isDark
                         ? Color(red: 25/255, green: 20/255, blue: 45/255).opacity(isSelected ? 0.95 : 0.85)
                         : Color(red: 240/255, green: 238/255, blue: 248/255).opacity(isSelected ? 0.95 : 0.90)
                 )
             }
-            .frame(width: 130)
+            .frame(width: 130, height: 100)
             .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
@@ -214,9 +216,9 @@ struct SoundscapesSettingsView: View {
                         isSelected
                             ? LinearGradient(
                                 colors: [
-                                    .purple.opacity(0.9),
-                                    .indigo.opacity(0.6),
-                                    .purple.opacity(0.4)
+                                    .purple.opacity(0.95),
+                                    .indigo.opacity(0.7),
+                                    .purple.opacity(0.5)
                                 ],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
@@ -229,15 +231,34 @@ struct SoundscapesSettingsView: View {
                                 startPoint: .top,
                                 endPoint: .bottom
                               ),
-                        lineWidth: isSelected ? 2 : 0.5
+                        lineWidth: isSelected ? 2.5 : 0.5
                     )
             )
-            .shadow(
-                color: isSelected ? .purple.opacity(isDark ? 0.4 : 0.2) : .black.opacity(0.05),
-                radius: isSelected ? 10 : 4,
-                y: isSelected ? 3 : 2
+            .overlay(
+                // Outer glow ring for selected state
+                isSelected
+                    ? RoundedRectangle(cornerRadius: 16, style: .continuous)
+                        .stroke(
+                            LinearGradient(
+                                colors: [
+                                    .purple.opacity(0.5),
+                                    .indigo.opacity(0.3)
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 1.5
+                        )
+                        .padding(-2)
+                        .blur(radius: 2)
+                    : nil
             )
-            .scaleEffect(isSelected ? 1.03 : 1.0)
+            .shadow(
+                color: isSelected ? .purple.opacity(isDark ? 0.5 : 0.3) : .black.opacity(0.05),
+                radius: isSelected ? 12 : 4,
+                y: isSelected ? 4 : 2
+            )
+            .scaleEffect(isSelected ? 1.05 : 1.0)
         }
         .buttonStyle(LumenPressStyle(weight: .soft))
     }
