@@ -1159,4 +1159,262 @@ final class TierManagerTests: XCTestCase {
         profile.offlineModeEnabled = true
         XCTAssertTrue(profile.offlineModeEnabled)
     }
+
+    // MARK: - Epic 9: Upgrade Prompt Manager Tests
+
+    func testUpgradePromptManagerShouldShowInitially() {
+        let manager = UpgradePromptManager()
+        XCTAssertTrue(manager.shouldShowPrompt(for: .soundscapes))
+        XCTAssertTrue(manager.shouldShowPrompt(for: .breathingOrbs))
+        XCTAssertTrue(manager.shouldShowPrompt(for: .unlimitedPractice))
+    }
+
+    func testUpgradePromptManagerMarkShownPreventsRepeat() {
+        let manager = UpgradePromptManager()
+        manager.markPromptShown(for: .soundscapes)
+        XCTAssertFalse(manager.shouldShowPrompt(for: .soundscapes))
+        XCTAssertTrue(manager.shouldShowPrompt(for: .breathingOrbs))
+    }
+
+    func testUpgradePromptManagerResetSession() {
+        let manager = UpgradePromptManager()
+        manager.markPromptShown(for: .soundscapes)
+        manager.markPromptShown(for: .breathingOrbs)
+        manager.resetSession()
+        XCTAssertTrue(manager.shouldShowPrompt(for: .soundscapes))
+        XCTAssertTrue(manager.shouldShowPrompt(for: .breathingOrbs))
+    }
+
+    func testUpgradePromptManagerShownPromptsSetTracksAll() {
+        let manager = UpgradePromptManager()
+        manager.markPromptShown(for: .soundscapes)
+        manager.markPromptShown(for: .quantumFlow)
+        manager.markPromptShown(for: .offlineMode)
+        XCTAssertEqual(manager.shownPrompts.count, 3)
+        XCTAssertTrue(manager.shownPrompts.contains(.soundscapes))
+        XCTAssertTrue(manager.shownPrompts.contains(.quantumFlow))
+        XCTAssertTrue(manager.shownPrompts.contains(.offlineMode))
+    }
+
+    func testUpgradePromptManagerNudgeBenefitIndex() {
+        let manager = UpgradePromptManager()
+        XCTAssertEqual(manager.nudgeBenefits.count, 5)
+        // Benefit index cycles through 0-4 based on session count
+        let index = manager.nudgeBenefitIndex
+        XCTAssertTrue(index >= 0 && index < 5)
+    }
+
+    // MARK: - PremiumFeature Properties Tests
+
+    func testPremiumFeatureDisplayNames() {
+        XCTAssertEqual(PremiumFeature.soundscapes.displayName, "Soundscapes")
+        XCTAssertEqual(PremiumFeature.breathingOrbs.displayName, "Breathing Orbs")
+        XCTAssertEqual(PremiumFeature.unlimitedPractice.displayName, "Unlimited Practice")
+        XCTAssertEqual(PremiumFeature.quantumFlow.displayName, "Quantum Flow")
+        XCTAssertEqual(PremiumFeature.nebulaDrift.displayName, "Nebula Drift")
+        XCTAssertEqual(PremiumFeature.offlineMode.displayName, "Offline Mode")
+        XCTAssertEqual(PremiumFeature.languagePairs.displayName, "Language Pairs")
+    }
+
+    func testPremiumFeatureMinimumTiers() {
+        XCTAssertEqual(PremiumFeature.soundscapes.minimumTier, .pro)
+        XCTAssertEqual(PremiumFeature.breathingOrbs.minimumTier, .pro)
+        XCTAssertEqual(PremiumFeature.unlimitedPractice.minimumTier, .pro)
+        XCTAssertEqual(PremiumFeature.offlineMode.minimumTier, .pro)
+        XCTAssertEqual(PremiumFeature.quantumFlow.minimumTier, .elite)
+        XCTAssertEqual(PremiumFeature.nebulaDrift.minimumTier, .elite)
+        XCTAssertEqual(PremiumFeature.languagePairs.minimumTier, .free)
+    }
+
+    func testPremiumFeatureIconNames() {
+        XCTAssertFalse(PremiumFeature.soundscapes.iconName.isEmpty)
+        XCTAssertFalse(PremiumFeature.breathingOrbs.iconName.isEmpty)
+        XCTAssertFalse(PremiumFeature.quantumFlow.iconName.isEmpty)
+        XCTAssertFalse(PremiumFeature.nebulaDrift.iconName.isEmpty)
+        XCTAssertFalse(PremiumFeature.offlineMode.iconName.isEmpty)
+        XCTAssertFalse(PremiumFeature.unlimitedPractice.iconName.isEmpty)
+        XCTAssertFalse(PremiumFeature.languagePairs.iconName.isEmpty)
+    }
+
+    func testPremiumFeatureBenefitTexts() {
+        for feature in PremiumFeature.allCases {
+            XCTAssertFalse(feature.benefitText.isEmpty, "\(feature.displayName) should have benefit text")
+        }
+    }
+
+    func testPremiumFeatureCarouselFeatures() {
+        let carousel = PremiumFeature.carouselFeatures
+        XCTAssertEqual(carousel.count, 3)
+        XCTAssertTrue(carousel.contains(.soundscapes))
+        XCTAssertTrue(carousel.contains(.breathingOrbs))
+        XCTAssertTrue(carousel.contains(.unlimitedPractice))
+    }
+
+    func testPremiumFeatureIsHashable() {
+        var set = Set<PremiumFeature>()
+        set.insert(.soundscapes)
+        set.insert(.soundscapes) // duplicate
+        set.insert(.breathingOrbs)
+        XCTAssertEqual(set.count, 2)
+    }
+
+    func testPremiumFeatureAllCasesCount() {
+        XCTAssertEqual(PremiumFeature.allCases.count, 7)
+    }
+
+    // MARK: - Royal Trial Lifecycle
+
+    func testStartTrialSetsTrialDateAndTier() {
+        let profile = UserProfile()
+        XCTAssertNil(profile.trialStartDate)
+        XCTAssertFalse(profile.hasUsedTrial)
+
+        let tm = TierManager()
+        let started = tm.startTrial(profile: profile)
+
+        XCTAssertTrue(started)
+        XCTAssertNotNil(profile.trialStartDate)
+        XCTAssertTrue(profile.hasUsedTrial)
+        XCTAssertEqual(profile.selectedTierId, "trial")
+        XCTAssertEqual(tm.currentTier, .trial)
+    }
+
+    func testStartTrialRejectsSecondAttempt() {
+        let profile = UserProfile()
+        let tm = TierManager()
+
+        // First start
+        let first = tm.startTrial(profile: profile)
+        XCTAssertTrue(first)
+
+        // Try again
+        let second = tm.startTrial(profile: profile)
+        XCTAssertFalse(second)
+    }
+
+    func testStartTrialReturnsfalseForNilProfile() {
+        let tm = TierManager()
+        let started = tm.startTrial(profile: nil)
+        XCTAssertFalse(started)
+    }
+
+    func testCheckTrialExpirationDowngradesExpiredTrial() {
+        let profile = UserProfile()
+        let tm = TierManager()
+
+        // Set trial started 15 days ago
+        profile.trialStartDate = Calendar.current.date(byAdding: .day, value: -15, to: Date.now)
+        profile.selectedTierId = "trial"
+        tm.currentTierId = "trial"
+
+        let expired = tm.checkTrialExpiration(profile: profile)
+        XCTAssertTrue(expired, "Trial started 15 days ago should be expired")
+        XCTAssertEqual(tm.currentTier, .free)
+        XCTAssertEqual(profile.selectedTierId, "free")
+    }
+
+    func testCheckTrialExpirationKeepsActiveTrial() {
+        let profile = UserProfile()
+        let tm = TierManager()
+
+        // Set trial started 10 days ago (still active)
+        profile.trialStartDate = Calendar.current.date(byAdding: .day, value: -10, to: Date.now)
+        profile.selectedTierId = "trial"
+        tm.currentTierId = "trial"
+
+        let expired = tm.checkTrialExpiration(profile: profile)
+        XCTAssertFalse(expired, "Trial started 10 days ago should still be active")
+        XCTAssertEqual(tm.currentTier, .trial)
+    }
+
+    func testCheckTrialExpirationSkipsIfAlreadyShown() {
+        let profile = UserProfile()
+        let tm = TierManager()
+
+        // Set expired trial but trialExpiredShown = true
+        profile.trialStartDate = Calendar.current.date(byAdding: .day, value: -15, to: Date.now)
+        profile.selectedTierId = "trial"
+        profile.trialExpiredShown = true
+        tm.currentTierId = "trial"
+
+        let expired = tm.checkTrialExpiration(profile: profile)
+        XCTAssertFalse(expired, "Should not fire if trialExpiredShown is already true")
+    }
+
+    func testCheckTrialExpirationSkipsForNonTrialTier() {
+        let profile = UserProfile()
+        let tm = TierManager()
+
+        // Set expired trial date but user is on free tier (already downgraded)
+        profile.trialStartDate = Calendar.current.date(byAdding: .day, value: -15, to: Date.now)
+        profile.selectedTierId = "free"
+        tm.currentTierId = "free"
+
+        let expired = tm.checkTrialExpiration(profile: profile)
+        XCTAssertFalse(expired, "Should not fire for non-trial tier")
+    }
+
+    func testTrialDaysRemaining() {
+        let profile = UserProfile()
+
+        // No trial → nil
+        XCTAssertNil(profile.trialDaysRemaining)
+
+        // Trial started today → 14 days remaining (approximately, ±1 day)
+        profile.trialStartDate = Date.now
+        XCTAssertNotNil(profile.trialDaysRemaining)
+        let daysLeft = profile.trialDaysRemaining!
+        XCTAssertTrue(daysLeft >= 13 && daysLeft <= 14, "Days remaining should be 13-14, got \(daysLeft)")
+
+        // Trial started 15 days ago → 0
+        profile.trialStartDate = Calendar.current.date(byAdding: .day, value: -15, to: Date.now)
+        XCTAssertEqual(profile.trialDaysRemaining, 0)
+    }
+
+    func testTrialTierHasFullRoyalAccess() {
+        // Trial tier should match Royal in feature access
+        for feature in PremiumFeature.allCases {
+            let trialCount = TierManager.allowedCount(for: feature, tier: .trial)
+            let royalCount = TierManager.allowedCount(for: feature, tier: .royal)
+            XCTAssertEqual(trialCount, royalCount, "\(feature) access should match Royal for trial")
+        }
+    }
+
+    func testHasUsedTrialReflectsStartDate() {
+        let profile = UserProfile()
+        XCTAssertFalse(profile.hasUsedTrial)
+
+        profile.trialStartDate = Date.now
+        XCTAssertTrue(profile.hasUsedTrial)
+    }
+
+    func testTrialExpiryDate() {
+        let profile = UserProfile()
+        XCTAssertNil(profile.trialExpiryDate)
+
+        let startDate = Date.now
+        profile.trialStartDate = startDate
+        let expected = Calendar.current.date(byAdding: .day, value: 14, to: startDate)!
+        XCTAssertEqual(
+            Calendar.current.dateComponents([.day], from: profile.trialExpiryDate!, to: expected).day,
+            0
+        )
+    }
+
+    func testTrialProgressPreservedAfterExpiration() {
+        let profile = UserProfile()
+        profile.totalXP = 500
+        profile.dailyStreak = 7
+
+        let tm = TierManager()
+        profile.trialStartDate = Calendar.current.date(byAdding: .day, value: -15, to: Date.now)
+        profile.selectedTierId = "trial"
+        tm.currentTierId = "trial"
+
+        _ = tm.checkTrialExpiration(profile: profile)
+
+        // Progress data preserved
+        XCTAssertEqual(profile.totalXP, 500)
+        XCTAssertEqual(profile.dailyStreak, 7)
+    }
 }

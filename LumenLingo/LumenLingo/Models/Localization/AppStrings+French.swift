@@ -319,6 +319,37 @@ extension AppStrings {
         connectivityRequired: "Le niveau gratuit nécessite une connexion internet pour accéder au contenu",
         offlineModeInfo: "Lorsque le mode hors ligne est activé, le contenu est disponible sans connexion réseau. Les niveaux Pro et supérieurs peuvent apprendre partout.",
         offlineModeDisabled: "Mode hors ligne désactivé",
-        offlineModeDisabledDetail: "Votre niveau n'inclut plus l'accès hors ligne"
+        offlineModeDisabledDetail: "Votre niveau n'inclut plus l'accès hors ligne",
+
+        // MARK: - Upgrade Prompts
+        unlockPremium: "Débloquer Premium",
+        viewPlans: "Voir les offres",
+        maybeLater: "Peut-être plus tard",
+        requires: "Nécessite",
+        learnMore: "En savoir plus",
+        hideForever: "Masquer définitivement",
+        dontShowAgain: "Ne plus afficher",
+
+        // MARK: - Royal Trial
+        trialActivated: "Essai Activé !",
+        trialWelcomeMessage: "Bienvenue pour 14 jours d'accès Royal complet. Toutes les fonctionnalités premium sont à vous.",
+        trialDuration: "14 Jours d'Accès Royal",
+        trialAfterExpiry: "Après 14 jours, vous passerez au niveau Gratuit. Sans frais.",
+        trialStartExploring: "Commencer à Explorer",
+        trialBannerTitle: "Essai Royal",
+        trialExpiringToday: "Expire aujourd'hui",
+        trialOneDayLeft: "1 jour restant",
+        trialDaysLeft: "jours restants",
+        trialEndedTitle: "Votre Essai Est Terminé",
+        trialEndedSubtitle: "Merci d'avoir essayé Royal ! Votre progression est sauvegardée.",
+        trialYourProgress: "Votre Progression d'Essai",
+        trialLevel: "Niveau",
+        trialStreak: "Série",
+        trialYouStillHave: "Vous Avez Encore",
+        trialChoosePlan: "Choisir un Forfait",
+        trialContinueFree: "Continuer en Gratuit",
+        trialCompleted: "Essai Terminé",
+        trialCompletedTagline: "Vous avez découvert Royal",
+        trialStartFree: "Démarrer l'Essai Gratuit"
     )
 }

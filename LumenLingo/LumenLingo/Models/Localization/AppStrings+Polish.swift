@@ -318,6 +318,37 @@ extension AppStrings {
         connectivityRequired: "Plan darmowy wymaga połączenia z internetem, aby uzyskać dostęp do treści",
         offlineModeInfo: "Gdy tryb offline jest włączony, treści są dostępne bez połączenia sieciowego. Plany Pro i wyższe pozwalają uczyć się wszędzie.",
         offlineModeDisabled: "Tryb offline wyłączony",
-        offlineModeDisabledDetail: "Twój plan nie obejmuje już dostępu offline"
+        offlineModeDisabledDetail: "Twój plan nie obejmuje już dostępu offline",
+
+        // MARK: - Upgrade Prompts
+        unlockPremium: "Odblokuj Premium",
+        viewPlans: "Zobacz plany",
+        maybeLater: "Może później",
+        requires: "Wymaga",
+        learnMore: "Dowiedz się więcej",
+        hideForever: "Ukryj na zawsze",
+        dontShowAgain: "Nie pokazuj ponownie",
+
+        // MARK: - Royal Trial
+        trialActivated: "Wersja Próbna Aktywowana!",
+        trialWelcomeMessage: "Witaj w 14 dniach pełnego dostępu Royal. Wszystkie funkcje premium są Twoje.",
+        trialDuration: "14 Dni Dostępu Royal",
+        trialAfterExpiry: "Po 14 dniach przejdziesz na plan Darmowy. Bez opłat.",
+        trialStartExploring: "Zacznij Odkrywać",
+        trialBannerTitle: "Wersja Próbna Royal",
+        trialExpiringToday: "Wygasa dzisiaj",
+        trialOneDayLeft: "Pozostał 1 dzień",
+        trialDaysLeft: "dni pozostało",
+        trialEndedTitle: "Twoja Wersja Próbna Się Skończyła",
+        trialEndedSubtitle: "Dziękujemy za wypróbowanie Royal! Twój postęp jest bezpieczny.",
+        trialYourProgress: "Twój Postęp z Próby",
+        trialLevel: "Poziom",
+        trialStreak: "Seria",
+        trialYouStillHave: "Nadal Masz",
+        trialChoosePlan: "Wybierz Plan",
+        trialContinueFree: "Kontynuuj za Darmo",
+        trialCompleted: "Próba Zakończona",
+        trialCompletedTagline: "Doświadczyłeś Royal",
+        trialStartFree: "Rozpocznij Darmową Próbę"
     )
 }

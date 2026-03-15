@@ -218,11 +218,35 @@ struct MembershipView: View {
         let isCurrent: Bool
         let isHighlighted: Bool
         var badgeText: String? = nil
+        var isDisabled: Bool = false
     }
 
-    private var tiers: [TierData] {
-        [
-            TierData(
+    private var trialCard: TierData {
+        let hasUsed = profile?.hasUsedTrial ?? false
+        let isActive = tierManager.currentTier == .trial
+        let daysLeft = profile?.trialDaysRemaining ?? 0
+
+        if hasUsed && !isActive {
+            // Trial used and expired — show dimmed "Trial Completed" card
+            return TierData(
+                id: "trial", name: "Royal Trial", icon: "gift.fill",
+                gradientColors: [Color(hex: "#94a3b8"), Color(hex: "#64748b")],
+                priceMonthly: 0,
+                tagline: L.trialCompletedTagline,
+                benefits: [
+                    ("Everything in Royal", "ultimate"),
+                    ("All 12 Soundscapes", "ultimate"),
+                    ("All visual themes", "ultimate"),
+                    ("Reverts to Free after 14 days", "limited")
+                ],
+                cta: L.trialCompleted, isCurrent: false, isHighlighted: false,
+                badgeText: nil,
+                isDisabled: true
+            )
+        } else if isActive {
+            // Trial currently active — show days remaining badge
+            let badge = daysLeft == 1 ? "1 DAY LEFT" : "\(daysLeft) DAYS LEFT"
+            return TierData(
                 id: "trial", name: "Royal Trial", icon: "gift.fill",
                 gradientColors: [Color(hex: "#fbbf24"), Color(hex: "#a855f7"), Color(hex: "#ec4899")],
                 priceMonthly: 0,
@@ -233,9 +257,34 @@ struct MembershipView: View {
                     ("All visual themes", "ultimate"),
                     ("Reverts to Free after 14 days", "limited")
                 ],
-                cta: "Start Free Trial", isCurrent: false, isHighlighted: false,
+                cta: L.currentPlan, isCurrent: true, isHighlighted: false,
+                badgeText: badge
+            )
+        } else {
+            // Trial not yet used — available to start
+            return TierData(
+                id: "trial", name: "Royal Trial", icon: "gift.fill",
+                gradientColors: [Color(hex: "#fbbf24"), Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+                priceMonthly: 0,
+                tagline: "2 weeks of Royal, on us",
+                benefits: [
+                    ("Everything in Royal", "ultimate"),
+                    ("All 12 Soundscapes", "ultimate"),
+                    ("All visual themes", "ultimate"),
+                    ("Reverts to Free after 14 days", "limited")
+                ],
+                cta: L.trialStartFree, isCurrent: false, isHighlighted: false,
                 badgeText: "2 WEEKS FREE"
-            ),
+            )
+        }
+    }
+
+    private var tiers: [TierData] {
+        let trial = trialCard
+        // If trial is used and expired, move it to the end
+        let trialUsedAndInactive = (profile?.hasUsedTrial ?? false) && tierManager.currentTier != .trial
+        var list: [TierData] = trialUsedAndInactive ? [] : [trial]
+        list.append(contentsOf: [
             TierData(
                 id: "free", name: L.starter, icon: "globe",
                 gradientColors: [Color(hex: "#94a3b8"), Color(hex: "#64748b")],
@@ -289,7 +338,11 @@ struct MembershipView: View {
                 ],
                 cta: L.ascendToRoyal, isCurrent: selectedTierId == "royal", isHighlighted: false
             )
-        ]
+        ])
+        if trialUsedAndInactive {
+            list.append(trial)
+        }
+        return list
     }
 
     struct ComparisonFeature {
@@ -326,6 +379,7 @@ struct TierCardView: View {
 
     @State private var isHovered = false
     @State private var ctaPressed = false
+    @State private var showTrialConfirmation = false
 
     private var price: Double {
         tier.priceMonthly
@@ -478,7 +532,7 @@ struct TierCardView: View {
                 .animation(.spring(response: 0.25, dampingFraction: 0.55), value: ctaPressed)
                 .contentShape(Capsule())
                 .onTapGesture {
-                    guard !isSelected else { return }
+                    guard !isSelected, !tier.isDisabled else { return }
                     withAnimation(.spring(response: 0.08, dampingFraction: 0.80)) {
                         ctaPressed = true
                     }
@@ -486,12 +540,22 @@ struct TierCardView: View {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
                         withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
                             ctaPressed = false
-                            selectedTierId = tier.id
                         }
-                        tierManager.selectTier(tier.id, profile: profile)
+                        if tier.id == "trial" {
+                            // Start trial and show confirmation
+                            if tierManager.startTrial(profile: profile) {
+                                selectedTierId = "trial"
+                                showTrialConfirmation = true
+                            }
+                        } else {
+                            withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                                selectedTierId = tier.id
+                            }
+                            tierManager.selectTier(tier.id, profile: profile)
+                        }
                     }
                 }
-                .opacity(isSelected ? 0.5 : 1.0)
+                .opacity(isSelected ? 0.5 : (tier.isDisabled ? 0.3 : 1.0))
         }
         .padding(18)
         .background(
@@ -511,6 +575,10 @@ struct TierCardView: View {
                     radius: 20, y: 8
                 )
         )
+        .opacity(tier.isDisabled ? 0.5 : 1.0)
+        .fullScreenCover(isPresented: $showTrialConfirmation) {
+            TrialConfirmationView()
+        }
     }
 
     private func benefitIcon(_ impact: String) -> String {

@@ -319,6 +319,37 @@ extension AppStrings {
         connectivityRequired: "Die kostenlose Stufe erfordert eine Internetverbindung für den Zugriff auf Inhalte",
         offlineModeInfo: "Bei aktiviertem Offline-Modus sind Inhalte ohne Netzwerkverbindung verfügbar. Pro und höhere Stufen können überall lernen.",
         offlineModeDisabled: "Offline-Modus deaktiviert",
-        offlineModeDisabledDetail: "Ihre Stufe beinhaltet keinen Offline-Zugriff mehr"
+        offlineModeDisabledDetail: "Ihre Stufe beinhaltet keinen Offline-Zugriff mehr",
+
+        // MARK: - Upgrade Prompts
+        unlockPremium: "Premium freischalten",
+        viewPlans: "Pläne ansehen",
+        maybeLater: "Vielleicht später",
+        requires: "Erfordert",
+        learnMore: "Mehr erfahren",
+        hideForever: "Für immer ausblenden",
+        dontShowAgain: "Nicht mehr anzeigen",
+
+        // MARK: - Royal Trial
+        trialActivated: "Testversion Aktiviert!",
+        trialWelcomeMessage: "Willkommen zu 14 Tagen vollem Royal-Zugang. Alle Premium-Funktionen gehören Ihnen.",
+        trialDuration: "14 Tage Royal-Zugang",
+        trialAfterExpiry: "Nach 14 Tagen wechseln Sie zur kostenlosen Stufe. Keine Kosten.",
+        trialStartExploring: "Jetzt Entdecken",
+        trialBannerTitle: "Royal-Testversion",
+        trialExpiringToday: "Läuft heute ab",
+        trialOneDayLeft: "1 Tag verbleibend",
+        trialDaysLeft: "Tage verbleibend",
+        trialEndedTitle: "Ihre Testversion Ist Beendet",
+        trialEndedSubtitle: "Danke fürs Ausprobieren von Royal! Ihr Fortschritt ist sicher.",
+        trialYourProgress: "Ihr Testfortschritt",
+        trialLevel: "Stufe",
+        trialStreak: "Serie",
+        trialYouStillHave: "Sie Haben Noch",
+        trialChoosePlan: "Plan Wählen",
+        trialContinueFree: "Kostenlos Fortfahren",
+        trialCompleted: "Testversion Abgeschlossen",
+        trialCompletedTagline: "Sie haben Royal erlebt",
+        trialStartFree: "Kostenlose Testversion Starten"
     )
 }

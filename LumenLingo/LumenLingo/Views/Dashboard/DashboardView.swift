@@ -53,6 +53,9 @@ struct DashboardView: View {
                     // Language selector pill
                     languageSelector
 
+                    // Trial countdown banner (active trial only)
+                    TrialCountdownBanner()
+
                     // Header: Avatar + Greeting + Stats
                     dashboardHeader
 
@@ -69,6 +72,9 @@ struct DashboardView: View {
 
                     // Recent Activity
                     recentActivitySection
+
+                    // Premium feature carousel (Free users only)
+                    PremiumFeatureCarousel()
 
                     Spacer(minLength: 120)
                 }

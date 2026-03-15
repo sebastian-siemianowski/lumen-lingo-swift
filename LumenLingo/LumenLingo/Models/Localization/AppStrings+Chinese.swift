@@ -318,6 +318,37 @@ extension AppStrings {
         connectivityRequired: "免费版需要网络连接才能访问内容",
         offlineModeInfo: "启用离线模式后，无需网络连接即可使用内容。Pro及以上等级可随时随地学习。",
         offlineModeDisabled: "离线模式已禁用",
-        offlineModeDisabledDetail: "您的等级不再包含离线访问"
+        offlineModeDisabledDetail: "您的等级不再包含离线访问",
+
+        // MARK: - Upgrade Prompts
+        unlockPremium: "解锁高级版",
+        viewPlans: "查看方案",
+        maybeLater: "以后再说",
+        requires: "需要",
+        learnMore: "了解更多",
+        hideForever: "永久隐藏",
+        dontShowAgain: "不再显示",
+
+        // MARK: - Royal Trial
+        trialActivated: "试用已激活！",
+        trialWelcomeMessage: "欢迎体验14天完整Royal访问权限。所有高级功能都是您的。",
+        trialDuration: "14天Royal访问",
+        trialAfterExpiry: "14天后，您将转为免费版。不收取任何费用。",
+        trialStartExploring: "开始探索",
+        trialBannerTitle: "Royal试用",
+        trialExpiringToday: "今天到期",
+        trialOneDayLeft: "剩余1天",
+        trialDaysLeft: "天剩余",
+        trialEndedTitle: "您的试用已结束",
+        trialEndedSubtitle: "感谢试用Royal！您的进度已安全保存。",
+        trialYourProgress: "您的试用进度",
+        trialLevel: "等级",
+        trialStreak: "连续",
+        trialYouStillHave: "您仍然拥有",
+        trialChoosePlan: "选择方案",
+        trialContinueFree: "继续免费使用",
+        trialCompleted: "试用已完成",
+        trialCompletedTagline: "您已体验过Royal",
+        trialStartFree: "开始免费试用"
     )
 }

@@ -318,6 +318,37 @@ extension AppStrings {
         connectivityRequired: "無料プランではコンテンツへのアクセスにインターネット接続が必要です",
         offlineModeInfo: "オフラインモードを有効にすると、ネットワーク接続なしでコンテンツが利用可能になります。Pro以上のプランではどこでも学習できます。",
         offlineModeDisabled: "オフラインモードが無効",
-        offlineModeDisabledDetail: "お使いのプランにはオフラインアクセスが含まれなくなりました"
+        offlineModeDisabledDetail: "お使いのプランにはオフラインアクセスが含まれなくなりました",
+
+        // MARK: - Upgrade Prompts
+        unlockPremium: "プレミアムを解除",
+        viewPlans: "プランを見る",
+        maybeLater: "また後で",
+        requires: "必要",
+        learnMore: "詳しく見る",
+        hideForever: "永久に非表示",
+        dontShowAgain: "今後表示しない",
+
+        // MARK: - Royal Trial
+        trialActivated: "トライアル開始！",
+        trialWelcomeMessage: "14日間のRoyalフルアクセスへようこそ。すべてのプレミアム機能をお楽しみください。",
+        trialDuration: "14日間のRoyalアクセス",
+        trialAfterExpiry: "14日後、無料プランに移行します。料金は発生しません。",
+        trialStartExploring: "探索を始める",
+        trialBannerTitle: "Royalトライアル",
+        trialExpiringToday: "本日期限切れ",
+        trialOneDayLeft: "残り1日",
+        trialDaysLeft: "日残り",
+        trialEndedTitle: "トライアルが終了しました",
+        trialEndedSubtitle: "Royalをお試しいただきありがとうございます！進捗は安全に保存されています。",
+        trialYourProgress: "トライアルの進捗",
+        trialLevel: "レベル",
+        trialStreak: "連続",
+        trialYouStillHave: "まだ利用可能",
+        trialChoosePlan: "プランを選ぶ",
+        trialContinueFree: "無料で続ける",
+        trialCompleted: "トライアル完了",
+        trialCompletedTagline: "Royalを体験済み",
+        trialStartFree: "無料トライアルを開始"
     )
 }

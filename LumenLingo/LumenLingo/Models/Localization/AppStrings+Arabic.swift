@@ -316,6 +316,37 @@ extension AppStrings {
         connectivityRequired: "تتطلب الخطة المجانية اتصالاً بالإنترنت للوصول إلى المحتوى",
         offlineModeInfo: "عند تفعيل وضع عدم الاتصال، يكون المحتوى متاحاً بدون اتصال شبكي. يمكن لخطط Pro والأعلى التعلم في أي مكان.",
         offlineModeDisabled: "تم تعطيل وضع عدم الاتصال",
-        offlineModeDisabledDetail: "لم تعد خطتك تتضمن الوصول بدون اتصال"
+        offlineModeDisabledDetail: "لم تعد خطتك تتضمن الوصول بدون اتصال",
+
+        // MARK: - Upgrade Prompts
+        unlockPremium: "فتح Premium",
+        viewPlans: "عرض الخطط",
+        maybeLater: "ربما لاحقاً",
+        requires: "يتطلب",
+        learnMore: "اعرف المزيد",
+        hideForever: "إخفاء للأبد",
+        dontShowAgain: "عدم العرض مجدداً",
+
+        // MARK: - Royal Trial
+        trialActivated: "تم تفعيل النسخة التجريبية!",
+        trialWelcomeMessage: "مرحباً بك في 14 يوماً من الوصول الملكي الكامل. جميع الميزات المميزة لك.",
+        trialDuration: "14 يوماً من الوصول الملكي",
+        trialAfterExpiry: "بعد 14 يوماً، ستنتقل إلى الخطة المجانية. بدون رسوم.",
+        trialStartExploring: "ابدأ الاستكشاف",
+        trialBannerTitle: "النسخة التجريبية الملكية",
+        trialExpiringToday: "تنتهي اليوم",
+        trialOneDayLeft: "يوم واحد متبقي",
+        trialDaysLeft: "أيام متبقية",
+        trialEndedTitle: "انتهت نسختك التجريبية",
+        trialEndedSubtitle: "شكراً لتجربة Royal! تقدمك محفوظ.",
+        trialYourProgress: "تقدمك في الفترة التجريبية",
+        trialLevel: "المستوى",
+        trialStreak: "السلسلة",
+        trialYouStillHave: "لا يزال لديك",
+        trialChoosePlan: "اختر خطة",
+        trialContinueFree: "المتابعة مجاناً",
+        trialCompleted: "اكتملت النسخة التجريبية",
+        trialCompletedTagline: "لقد جربت Royal",
+        trialStartFree: "ابدأ النسخة التجريبية المجانية"
     )
 }

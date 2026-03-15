@@ -1596,6 +1596,9 @@ struct GameCompleteView: View {
                 .opacity(showButtons ? 1 : 0)
                 .offset(y: showButtons ? 0 : 10)
 
+                // Post-session upgrade nudge (Free users, every 3rd session)
+                PostSessionNudge()
+
                 Spacer(minLength: 80)
             }
         }

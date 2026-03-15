@@ -21,6 +21,7 @@ struct ContentView: View {
     @State private var selectedTab: AppTab = .dashboard
     @State private var hideTabBar: Bool = false
     @State private var navigationPath = NavigationPath()
+    @State private var showTrialEnded = false
 
     // Services (shared across all views)
     @State private var progressService: ProgressService?
@@ -115,6 +116,10 @@ struct ContentView: View {
             localization.update(from: languagePrefs)
             themeManager.syncFromProfile(profile)
             tierManager.syncFromProfile(profile)
+            // Check for trial expiration on app launch
+            if tierManager.checkTrialExpiration(profile: profile) {
+                showTrialEnded = true
+            }
             if let profile {
                 audioService.syncFromProfile(profile)
                 hapticsService.syncFromProfile(profile)
@@ -158,6 +163,9 @@ struct ContentView: View {
         .environment(hapticsService)
         .environment(contentLoader)
         .environment(practiceTimeTracker)
+        .fullScreenCover(isPresented: $showTrialEnded) {
+            TrialEndedView()
+        }
     }
 
     // MARK: Route Destination

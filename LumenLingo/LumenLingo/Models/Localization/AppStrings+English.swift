@@ -318,6 +318,37 @@ extension AppStrings {
         connectivityRequired: "Free tier requires an internet connection to access content",
         offlineModeInfo: "When offline mode is enabled, content is available without a network connection. Pro and above tiers can learn anywhere.",
         offlineModeDisabled: "Offline Mode Disabled",
-        offlineModeDisabledDetail: "Your tier no longer includes offline access"
+        offlineModeDisabledDetail: "Your tier no longer includes offline access",
+
+        // MARK: - Upgrade Prompts
+        unlockPremium: "Unlock Premium",
+        viewPlans: "View Plans",
+        maybeLater: "Maybe Later",
+        requires: "Requires",
+        learnMore: "Learn More",
+        hideForever: "Hide Forever",
+        dontShowAgain: "Don't Show Again",
+
+        // MARK: - Royal Trial
+        trialActivated: "Trial Activated!",
+        trialWelcomeMessage: "Welcome to 14 days of full Royal access. Every premium feature is yours to explore.",
+        trialDuration: "14 Days of Royal Access",
+        trialAfterExpiry: "After 14 days, you'll move to Free tier. No charge, ever.",
+        trialStartExploring: "Start Exploring",
+        trialBannerTitle: "Royal Trial",
+        trialExpiringToday: "Expiring today",
+        trialOneDayLeft: "1 day remaining",
+        trialDaysLeft: "days remaining",
+        trialEndedTitle: "Your Trial Has Ended",
+        trialEndedSubtitle: "Thanks for trying Royal! Your progress is safe and sound.",
+        trialYourProgress: "Your Trial Progress",
+        trialLevel: "Level",
+        trialStreak: "Streak",
+        trialYouStillHave: "You Still Have",
+        trialChoosePlan: "Choose a Plan",
+        trialContinueFree: "Continue with Free",
+        trialCompleted: "Trial Completed",
+        trialCompletedTagline: "You've experienced Royal",
+        trialStartFree: "Start Free Trial"
     )
 }

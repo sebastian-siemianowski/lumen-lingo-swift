@@ -327,6 +327,37 @@ struct AppStrings {
     let offlineModeDisabled: String
     let offlineModeDisabledDetail: String
 
+    // MARK: - Upgrade Prompts
+    let unlockPremium: String
+    let viewPlans: String
+    let maybeLater: String
+    let requires: String
+    let learnMore: String
+    let hideForever: String
+    let dontShowAgain: String
+
+    // MARK: - Royal Trial
+    let trialActivated: String
+    let trialWelcomeMessage: String
+    let trialDuration: String
+    let trialAfterExpiry: String
+    let trialStartExploring: String
+    let trialBannerTitle: String
+    let trialExpiringToday: String
+    let trialOneDayLeft: String
+    let trialDaysLeft: String
+    let trialEndedTitle: String
+    let trialEndedSubtitle: String
+    let trialYourProgress: String
+    let trialLevel: String
+    let trialStreak: String
+    let trialYouStillHave: String
+    let trialChoosePlan: String
+    let trialContinueFree: String
+    let trialCompleted: String
+    let trialCompletedTagline: String
+    let trialStartFree: String
+
     // MARK: - Factory
 
     static func forLanguage(_ lang: SupportedLanguage) -> AppStrings {

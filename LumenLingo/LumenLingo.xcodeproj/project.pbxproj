@@ -19,6 +19,7 @@
 		0AE69303D99B0260AF04748A /* grammar_ukrainian_english.json in Resources */ = {isa = PBXBuildFile; fileRef = DD1B56548F0ECE743038D67E /* grammar_ukrainian_english.json */; };
 		0FB9ECCFE323936072D44022 /* LagoonNebulaPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = A46D9B996CC8601EBBCCB4AA /* LagoonNebulaPreset.metal */; };
 		104BAF772F08F7567C8358CE /* flashcards_english_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 2378260414FE146694223E05 /* flashcards_english_spanish.json */; };
+		135AE1BCF8F739B94DE65461 /* TrialConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCAB9270E7EDFE53A120B2 /* TrialConfirmationView.swift */; };
 		158A5B1BCC24775744979354 /* MetalCosmicRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BB8A676728B666DFB159B8 /* MetalCosmicRenderer.swift */; };
 		1AA20069E36472C4917C58FC /* wordbuilder_english_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = EFE521ADD54E6635CA76C3A1 /* wordbuilder_english_spanish.json */; };
 		1AB4077E169FE7D63EE2B94D /* grammar_chinese_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 354EAD059D0A762F62E2B0AF /* grammar_chinese_english.json */; };
@@ -44,6 +45,7 @@
 		3ADCCD186B86AF4E7ED8230B /* QuantumFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EF54CA4B0E1ECB5159EE96 /* QuantumFlowView.swift */; };
 		3C83D6934D1A9F0C1D007D89 /* CosmicPostProcess.metal in Sources */ = {isa = PBXBuildFile; fileRef = C71ECFF5B79F4F2875BBAB02 /* CosmicPostProcess.metal */; };
 		3C903D4D3E0D7E30AF1A0FF2 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6BC346843C39C8CEC01294 /* AudioService.swift */; };
+		3D201170B7B43BACCA089962 /* PremiumFeatureCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05E56A1813CCC4B9C21576A /* PremiumFeatureCarousel.swift */; };
 		3DF00387717559F8D159D354 /* wordbuilder_polish_french.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C1358AD4F62005FA1B3DBF /* wordbuilder_polish_french.json */; };
 		4080213C15C0C4FF8A920663 /* AppStrings+Spanish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1FE9FEB595A6DB1EF724B9 /* AppStrings+Spanish.swift */; };
 		42AB89D16F16B1C1F24BFDCE /* ConnectivitySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69D9C4EC1875372CCD7552 /* ConnectivitySettingsView.swift */; };
@@ -115,6 +117,7 @@
 		98324CC583C1F2E99D1EC600 /* wordbuilder_polish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = A4DD27AFCE378D73D79D9A34 /* wordbuilder_polish_english.json */; };
 		98C810678A94878277E25C89 /* QuantumFlowSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8094790693AC9E42966B5F /* QuantumFlowSettingsView.swift */; };
 		9A088AC44F03937FC1939412 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A2278E3B176354236AF109 /* DashboardView.swift */; };
+		9A0B9633423DAAE2A755A384 /* LockedFeatureIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FCD7819D46F40F48FCD4D /* LockedFeatureIndicator.swift */; };
 		9B62C71FC47783DF6BB80D30 /* MetalCosmicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38147CE75141E1292FF464C1 /* MetalCosmicView.swift */; };
 		9B95136E0053CB309F0470A0 /* WordBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE743C6D3380728D60B135A6 /* WordBuilderView.swift */; };
 		9CCDFCF03D2FAB3AAC1769E5 /* wordbuilder_english_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = B4865403B88C2BF7DFD72D5E /* wordbuilder_english_japanese.json */; };
@@ -170,21 +173,26 @@
 		D944A99D79DAE4DB61D4A0CA /* AndromedaStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = 16CBC7FA67305C12DB95778D /* AndromedaStars.metal */; };
 		DA5D7E3A29DCD0F484920BDA /* SoundMixerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5C299F7CF3AB7152E80AD /* SoundMixerView.swift */; };
 		DA7EACF50CDA6F892FAE9972 /* SchemeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013FEB67D3F0AB101B4EF0A /* SchemeCardView.swift */; };
+		DB64940F1C00BE15D3B0A067 /* PostSessionNudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DCA4D4638FDF2525769692 /* PostSessionNudge.swift */; };
 		DB65812358EE3AD37B86CC9A /* AppStrings+German.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AF276C24F43C677FE4579A /* AppStrings+German.swift */; };
 		DD489C4BF4E066DA2A33B94E /* grammar_ukrainian_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = F0AE02E5AA944BBF9A1E7BB2 /* grammar_ukrainian_polish.json */; };
 		DF2BC01B8E34CB130AB3B7B6 /* MembershipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927863E6ECF97AE41A78326D /* MembershipView.swift */; };
 		E04CF3B9BEE5E6E32567269F /* StarFieldGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A63D5EEB0001AEFA02084A /* StarFieldGenerator.swift */; };
 		E167F25A707E33B4A813EAB2 /* grammar_polish_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = E56328BCC55D6C38A861C0F9 /* grammar_polish_ukrainian.json */; };
+		E374714E6F741D49D839BDB9 /* UpgradePromptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A9F40ACA962BFEDF0C55D /* UpgradePromptManager.swift */; };
 		E5C95676BF77324EABAACEC0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9BA72516085422014F289 /* ProfileView.swift */; };
+		E6EF650284231578942E29AD /* TrialCountdownBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D7C1C1A49A7020F5541B2 /* TrialCountdownBanner.swift */; };
 		E889884403B0D07D45EB31C6 /* Japanese-Bamboo-Forest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B24574C6A55AE978C5AD2FF2 /* Japanese-Bamboo-Forest.m4a */; };
 		E916621019B8B464C76AC77E /* ContentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730CF948B26949986924320A /* ContentModels.swift */; };
 		E993D39C8248CBA2C13DA7E2 /* flashcards_japanese_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 881BEF19BF6BC1C0A955764B /* flashcards_japanese_english.json */; };
 		E9CFDD03F60EEF1F9D3FBBA9 /* BreathingOrbsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC7C7FA534F4ABAF34D181 /* BreathingOrbsView.swift */; };
 		E9E04947EA5B47956AC9B61C /* flashcards_chinese_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 4891182963548D55B27CD859 /* flashcards_chinese_english.json */; };
+		EB14E6E4C10C13B33A501ED1 /* UpgradePromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D758E0FCC818F2BA8CE747E /* UpgradePromptView.swift */; };
 		EB3CBFD5BF6CCC0F3FE21A0C /* LagoonStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4DCFB0CC96C4AA4F7E7FC737 /* LagoonStars.metal */; };
 		ECAF2CF4ED087A2B241998B8 /* flashcards_polish_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = B1CD6316B947998E54ACB4AF /* flashcards_polish_japanese.json */; };
 		ED0AE081A91053C6FBC428A2 /* wordbuilder_chinese_english.json in Resources */ = {isa = PBXBuildFile; fileRef = F32819B82122B08BA2490CB7 /* wordbuilder_chinese_english.json */; };
 		F0A31588D49A21C91000A1A1 /* grammar_english_chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = 39CDFBF6DCB5ECB7689CE6C6 /* grammar_english_chinese.json */; };
+		F15DA9BF1C2DA25798FE4855 /* TrialEndedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14117EBFC8212F28D65628C1 /* TrialEndedView.swift */; };
 		F2179422CEED9CB6181430C3 /* OfflineBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3BC180E8CA6F328FF7C7F /* OfflineBanner.swift */; };
 		F23589F39FA41E6D3F04ED22 /* flashcards_polish_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E8D26ACC3A64927138AB641 /* flashcards_polish_ukrainian.json */; };
 		F5439D82BFE2910F8A446299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D84080B3E5FBF4012D412B /* ContentView.swift */; };
@@ -223,8 +231,10 @@
 		1229A638A337B4432FA3EC1D /* SoundscapesSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapesSettingsView.swift; sourceTree = "<group>"; };
 		12F5A0006F1BE35C07723FF8 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		12F5C299F7CF3AB7152E80AD /* SoundMixerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundMixerView.swift; sourceTree = "<group>"; };
+		14117EBFC8212F28D65628C1 /* TrialEndedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialEndedView.swift; sourceTree = "<group>"; };
 		1529F75859B9520B053C7083 /* grammar_polish_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_german.json; sourceTree = "<group>"; };
 		16CBC7FA67305C12DB95778D /* AndromedaStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = AndromedaStars.metal; sourceTree = "<group>"; };
+		170A9F40ACA962BFEDF0C55D /* UpgradePromptManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradePromptManager.swift; sourceTree = "<group>"; };
 		179F24862354560BCC12AB27 /* flashcards_german_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_german_english.json; sourceTree = "<group>"; };
 		184332E9A816388D71A52CC4 /* flashcards_english_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_polish.json; sourceTree = "<group>"; };
 		19D0AFE49B5144D47E971846 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
@@ -299,6 +309,7 @@
 		7498E6A6E32D2EC5499420EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7798F321317CB763B6FA0DDD /* grammar_polish_chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_chinese.json; sourceTree = "<group>"; };
 		77AF276C24F43C677FE4579A /* AppStrings+German.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+German.swift"; sourceTree = "<group>"; };
+		786D7C1C1A49A7020F5541B2 /* TrialCountdownBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialCountdownBanner.swift; sourceTree = "<group>"; };
 		78D1D407AAD1B931847974B4 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		7AA4C3A2FAD3E75B5E387A20 /* wordbuilder_ukrainian_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_ukrainian_polish.json; sourceTree = "<group>"; };
 		7C9888AA5863A661728358B1 /* flashcards_german_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_german_polish.json; sourceTree = "<group>"; };
@@ -316,6 +327,7 @@
 		8BBC7CB529E2BAA14AC41CCD /* PracticeExpiredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeExpiredView.swift; sourceTree = "<group>"; };
 		8C9082790B59A90F1EFFED6F /* flashcards_polish_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_spanish.json; sourceTree = "<group>"; };
 		8D6FE4BD7584212604B3B839 /* grammar_english_french.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_english_french.json; sourceTree = "<group>"; };
+		8D758E0FCC818F2BA8CE747E /* UpgradePromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradePromptView.swift; sourceTree = "<group>"; };
 		8D7E271F15AB922B3AF19043 /* NebulaDriftSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaDriftSettingsView.swift; sourceTree = "<group>"; };
 		8EE1A87C9FE959A341B5B7EF /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
 		927863E6ECF97AE41A78326D /* MembershipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipView.swift; sourceTree = "<group>"; };
@@ -326,6 +338,7 @@
 		9DD06C49CE0742785FB126D2 /* EdgeOfAndromedaPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = EdgeOfAndromedaPreset.metal; sourceTree = "<group>"; };
 		9DEB257B68C610CCEA553916 /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
 		9E1FE9FEB595A6DB1EF724B9 /* AppStrings+Spanish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Spanish.swift"; sourceTree = "<group>"; };
+		9E8FCD7819D46F40F48FCD4D /* LockedFeatureIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedFeatureIndicator.swift; sourceTree = "<group>"; };
 		9F049FEAB56C3145BCF41D5A /* GrammarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarViewModel.swift; sourceTree = "<group>"; };
 		A02AB5B911E71E7D7B839369 /* grammar_arabic_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_arabic_english.json; sourceTree = "<group>"; };
 		A09DE5B1813E2A548A69FE53 /* flashcards_polish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_english.json; sourceTree = "<group>"; };
@@ -356,6 +369,7 @@
 		B95DDDEEBA8E45BFB1B39434 /* Rainy-Window.m4a */ = {isa = PBXFileReference; path = "Rainy-Window.m4a"; sourceTree = "<group>"; };
 		B976B6034B6375FEF0CFE513 /* AppStrings+Ukrainian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Ukrainian.swift"; sourceTree = "<group>"; };
 		BCFC3AE7BAAD996B05B2D157 /* PracticeTimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimeTracker.swift; sourceTree = "<group>"; };
+		C05E56A1813CCC4B9C21576A /* PremiumFeatureCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumFeatureCarousel.swift; sourceTree = "<group>"; };
 		C0A16D5C93EC371A3F0F50EF /* wordbuilder_english_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_german.json; sourceTree = "<group>"; };
 		C2522C1400407731C720E317 /* grammar_japanese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_japanese_english.json; sourceTree = "<group>"; };
 		C71ECFF5B79F4F2875BBAB02 /* CosmicPostProcess.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CosmicPostProcess.metal; sourceTree = "<group>"; };
@@ -365,6 +379,7 @@
 		CB69D9C4EC1875372CCD7552 /* ConnectivitySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivitySettingsView.swift; sourceTree = "<group>"; };
 		CB8C0791AB4D515F992AC1E7 /* StarburstRingPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = StarburstRingPreset.metal; sourceTree = "<group>"; };
 		CC0A2E51F66FCC679DA2A5D0 /* wordbuilder_polish_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_spanish.json; sourceTree = "<group>"; };
+		D3DCA4D4638FDF2525769692 /* PostSessionNudge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSessionNudge.swift; sourceTree = "<group>"; };
 		D41E1DDF3573205870644CDF /* grammar_spanish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_spanish_english.json; sourceTree = "<group>"; };
 		D508F16BB89B3B9C89C1BCD7 /* grammar_german_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_german_english.json; sourceTree = "<group>"; };
 		D7154BB85000446A6F0B0B28 /* PracticeTimeRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimeRing.swift; sourceTree = "<group>"; };
@@ -373,6 +388,7 @@
 		DB8D135B47E89CA45DF67B97 /* SpiralHaloPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SpiralHaloPreset.metal; sourceTree = "<group>"; };
 		DD1B56548F0ECE743038D67E /* grammar_ukrainian_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_ukrainian_english.json; sourceTree = "<group>"; };
 		DE743C6D3380728D60B135A6 /* WordBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBuilderView.swift; sourceTree = "<group>"; };
+		DFFCAB9270E7EDFE53A120B2 /* TrialConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialConfirmationView.swift; sourceTree = "<group>"; };
 		E4AC7C7FA534F4ABAF34D181 /* BreathingOrbsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingOrbsView.swift; sourceTree = "<group>"; };
 		E56328BCC55D6C38A861C0F9 /* grammar_polish_ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_ukrainian.json; sourceTree = "<group>"; };
 		E5C5362133AE750ACDF5D82D /* Desert-Night-Sky.m4a */ = {isa = PBXFileReference; path = "Desert-Night-Sky.m4a"; sourceTree = "<group>"; };
@@ -513,7 +529,9 @@
 				C7EC466E954463C21BDA8D3C /* GlassDivider.swift */,
 				B70A4CC223AB0F0CBD300360 /* LiquidGlassCard.swift */,
 				6894E9DF06377B29632C3002 /* LiquidGlassPagination.swift */,
+				9E8FCD7819D46F40F48FCD4D /* LockedFeatureIndicator.swift */,
 				53B3BC180E8CA6F328FF7C7F /* OfflineBanner.swift */,
+				D3DCA4D4638FDF2525769692 /* PostSessionNudge.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -598,6 +616,9 @@
 				A9E9C6E57618CAF9511BB3E9 /* PremiumFeatureBadge.swift */,
 				B84D8F4C0D9010A47DE7222A /* SoundscapeUpgradeSheet.swift */,
 				873F283713D80218498D7120 /* TierBadgeView.swift */,
+				DFFCAB9270E7EDFE53A120B2 /* TrialConfirmationView.swift */,
+				14117EBFC8212F28D65628C1 /* TrialEndedView.swift */,
+				8D758E0FCC818F2BA8CE747E /* UpgradePromptView.swift */,
 			);
 			path = Membership;
 			sourceTree = "<group>";
@@ -657,6 +678,8 @@
 			children = (
 				45A2278E3B176354236AF109 /* DashboardView.swift */,
 				D7154BB85000446A6F0B0B28 /* PracticeTimeRing.swift */,
+				C05E56A1813CCC4B9C21576A /* PremiumFeatureCarousel.swift */,
+				786D7C1C1A49A7020F5541B2 /* TrialCountdownBanner.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -807,6 +830,7 @@
 				12F5A0006F1BE35C07723FF8 /* ThemeManager.swift */,
 				EBE04D8108F905F4A7F4E750 /* TierManager.swift */,
 				8EE1A87C9FE959A341B5B7EF /* TranslationService.swift */,
+				170A9F40ACA962BFEDF0C55D /* UpgradePromptManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1215,6 +1239,7 @@
 				03403985A831D6F970331DF5 /* LiquidGlassCard.swift in Sources */,
 				43BC39433248FE27AA9CB536 /* LiquidGlassPagination.swift in Sources */,
 				D6C1FF69FC5BCBFCE19E86D4 /* LocalizationManager.swift in Sources */,
+				9A0B9633423DAAE2A755A384 /* LockedFeatureIndicator.swift in Sources */,
 				B77CAF0468C0B5BE9AE655B5 /* LumenLingoApp.swift in Sources */,
 				DF2BC01B8E34CB130AB3B7B6 /* MembershipView.swift in Sources */,
 				158A5B1BCC24775744979354 /* MetalCosmicRenderer.swift in Sources */,
@@ -1225,11 +1250,13 @@
 				5F8D5BC0E027A8B5E7340923 /* NebulaDriftSettingsView.swift in Sources */,
 				34EFCCB95E24AE39B86CE316 /* NetworkMonitor.swift in Sources */,
 				F2179422CEED9CB6181430C3 /* OfflineBanner.swift in Sources */,
+				DB64940F1C00BE15D3B0A067 /* PostSessionNudge.swift in Sources */,
 				B9313B9CC02F968DC9318B94 /* PracticeExpiredView.swift in Sources */,
 				207C74D6A9B9CC98B4F2E6B4 /* PracticeTimeBanner.swift in Sources */,
 				8A42BEFAEDEA9418A806EFAD /* PracticeTimeRing.swift in Sources */,
 				9DB2831CB810A6AC18B21644 /* PracticeTimeTracker.swift in Sources */,
 				25E93CEE1FC4483A4DEC2CE7 /* PremiumFeatureBadge.swift in Sources */,
+				3D201170B7B43BACCA089962 /* PremiumFeatureCarousel.swift in Sources */,
 				E5C95676BF77324EABAACEC0 /* ProfileView.swift in Sources */,
 				B58EF9602E893600A943B8A6 /* ProfileViewModel.swift in Sources */,
 				343AD391FC75380A01F03858 /* ProgressService.swift in Sources */,
@@ -1260,6 +1287,11 @@
 				51F9957933F8A2A36D03865A /* TierBadgeView.swift in Sources */,
 				9F4FB170007FA4D6C074FB23 /* TierManager.swift in Sources */,
 				BCDD18444DE1C80FEF877D9A /* TranslationService.swift in Sources */,
+				135AE1BCF8F739B94DE65461 /* TrialConfirmationView.swift in Sources */,
+				E6EF650284231578942E29AD /* TrialCountdownBanner.swift in Sources */,
+				F15DA9BF1C2DA25798FE4855 /* TrialEndedView.swift in Sources */,
+				E374714E6F741D49D839BDB9 /* UpgradePromptManager.swift in Sources */,
+				EB14E6E4C10C13B33A501ED1 /* UpgradePromptView.swift in Sources */,
 				9B95136E0053CB309F0470A0 /* WordBuilderView.swift in Sources */,
 				686CCE8D7420E55A83113C58 /* WordBuilderViewModel.swift in Sources */,
 			);

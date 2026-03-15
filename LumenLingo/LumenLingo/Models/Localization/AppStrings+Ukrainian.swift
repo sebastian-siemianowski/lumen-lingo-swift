@@ -318,6 +318,37 @@ extension AppStrings {
         connectivityRequired: "Безкоштовний план потребує підключення до інтернету для доступу до контенту",
         offlineModeInfo: "Коли офлайн-режим увімкнено, контент доступний без мережевого підключення. Плани Pro та вище дозволяють навчатися будь-де.",
         offlineModeDisabled: "Офлайн-режим вимкнено",
-        offlineModeDisabledDetail: "Ваш план більше не включає офлайн-доступ"
+        offlineModeDisabledDetail: "Ваш план більше не включає офлайн-доступ",
+
+        // MARK: - Upgrade Prompts
+        unlockPremium: "Розблокувати Premium",
+        viewPlans: "Переглянути плани",
+        maybeLater: "Може пізніше",
+        requires: "Потребує",
+        learnMore: "Дізнатися більше",
+        hideForever: "Приховати назавжди",
+        dontShowAgain: "Більше не показувати",
+
+        // MARK: - Royal Trial
+        trialActivated: "Пробну Версію Активовано!",
+        trialWelcomeMessage: "Ласкаво просимо до 14 днів повного доступу Royal. Усі преміум-функції ваші.",
+        trialDuration: "14 Днів Доступу Royal",
+        trialAfterExpiry: "Через 14 днів ви перейдете на безкоштовний план. Без оплати.",
+        trialStartExploring: "Почати Дослідження",
+        trialBannerTitle: "Пробна Версія Royal",
+        trialExpiringToday: "Закінчується сьогодні",
+        trialOneDayLeft: "Залишився 1 день",
+        trialDaysLeft: "днів залишилось",
+        trialEndedTitle: "Ваша Пробна Версія Закінчилась",
+        trialEndedSubtitle: "Дякуємо за випробування Royal! Ваш прогрес у безпеці.",
+        trialYourProgress: "Ваш Прогрес за Пробний Період",
+        trialLevel: "Рівень",
+        trialStreak: "Серія",
+        trialYouStillHave: "Ви Все Ще Маєте",
+        trialChoosePlan: "Обрати План",
+        trialContinueFree: "Продовжити Безкоштовно",
+        trialCompleted: "Пробну Версію Завершено",
+        trialCompletedTagline: "Ви спробували Royal",
+        trialStartFree: "Почати Безкоштовну Пробну Версію"
     )
 }

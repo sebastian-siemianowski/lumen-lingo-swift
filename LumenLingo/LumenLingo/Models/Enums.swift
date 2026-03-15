@@ -442,7 +442,7 @@ enum MembershipTier: String, CaseIterable, Identifiable {
 // MARK: - Premium Feature
 
 /// Features that can be gated by tier.
-enum PremiumFeature: Equatable {
+enum PremiumFeature: Equatable, Hashable, CaseIterable {
     case soundscapes
     case languagePairs
     case unlimitedPractice
@@ -450,6 +450,63 @@ enum PremiumFeature: Equatable {
     case quantumFlow
     case nebulaDrift
     case offlineMode
+
+    /// SF Symbol for this feature.
+    var iconName: String {
+        switch self {
+        case .soundscapes:       return "headphones"
+        case .languagePairs:     return "globe"
+        case .unlimitedPractice: return "infinity"
+        case .breathingOrbs:     return "scope"
+        case .quantumFlow:       return "waveform.path.ecg"
+        case .nebulaDrift:       return "cloud.fog.fill"
+        case .offlineMode:       return "wifi.slash"
+        }
+    }
+
+    /// Display name for UI.
+    var displayName: String {
+        switch self {
+        case .soundscapes:       return "Soundscapes"
+        case .languagePairs:     return "Language Pairs"
+        case .unlimitedPractice: return "Unlimited Practice"
+        case .breathingOrbs:     return "Breathing Orbs"
+        case .quantumFlow:       return "Quantum Flow"
+        case .nebulaDrift:       return "Nebula Drift"
+        case .offlineMode:       return "Offline Mode"
+        }
+    }
+
+    /// One-line benefit description for upgrade prompts.
+    var benefitText: String {
+        switch self {
+        case .soundscapes:       return "Immersive ambient soundscapes to deepen focus"
+        case .languagePairs:     return "Learn more languages with expanded pair options"
+        case .unlimitedPractice: return "Practice without daily time limits"
+        case .breathingOrbs:     return "Beautiful breathing animations for mindful learning"
+        case .quantumFlow:       return "Mesmerising quantum particle visualisations"
+        case .nebulaDrift:       return "Stunning nebula backgrounds that evolve as you learn"
+        case .offlineMode:       return "Learn anywhere, even without internet"
+        }
+    }
+
+    /// The minimum tier required to unlock this feature.
+    var minimumTier: MembershipTier {
+        switch self {
+        case .soundscapes:       return .pro
+        case .languagePairs:     return .free  // Free gets 3, Pro gets 7, Elite+ all
+        case .unlimitedPractice: return .pro
+        case .breathingOrbs:     return .pro
+        case .quantumFlow:       return .elite
+        case .nebulaDrift:       return .elite
+        case .offlineMode:       return .pro
+        }
+    }
+
+    /// Features worth showcasing in the carousel (excludes languagePairs since Free gets some).
+    static var carouselFeatures: [PremiumFeature] {
+        [.soundscapes, .breathingOrbs, .unlimitedPractice]
+    }
 }
 
 // MARK: - Breathing Orb Color Scheme

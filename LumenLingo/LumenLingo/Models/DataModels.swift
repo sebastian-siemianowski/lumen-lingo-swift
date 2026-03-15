@@ -57,6 +57,12 @@ final class UserProfile {
     /// Whether offline mode is enabled (Pro+ feature). Free tier always false.
     var offlineModeEnabled: Bool = false
 
+    /// Date when the Royal Trial was started. nil = never used trial.
+    var trialStartDate: Date? = nil
+
+    /// Whether the trial-expired screen has already been shown (prevents repeat).
+    var trialExpiredShown: Bool = false
+
     /// Level scales quadratically: cumulative XP for level L = 50·L·(L−1).
     /// Each level costs 100·L XP, so reaching high levels takes real dedication.
     var currentLevel: Int {
@@ -107,6 +113,28 @@ final class UserProfile {
         set { selectedSoundscape = newValue?.rawValue ?? "" }
     }
 
+    /// Whether a trial has ever been started.
+    var hasUsedTrial: Bool { trialStartDate != nil }
+
+    /// The date the trial expires (14 days after start). nil if never started.
+    var trialExpiryDate: Date? {
+        guard let start = trialStartDate else { return nil }
+        return Calendar.current.date(byAdding: .day, value: 14, to: start)
+    }
+
+    /// Number of days remaining in the trial. nil if not on trial, 0 if expired.
+    var trialDaysRemaining: Int? {
+        guard let expiry = trialExpiryDate else { return nil }
+        let days = Calendar.current.dateComponents([.day], from: Date.now, to: expiry).day ?? 0
+        return max(0, days)
+    }
+
+    /// Whether the trial has expired.
+    var isTrialExpired: Bool {
+        guard let expiry = trialExpiryDate else { return false }
+        return Date.now >= expiry
+    }
+
     init(
         totalXP: Int = 0,
         dailyStreak: Int = 0,
@@ -148,7 +176,9 @@ final class UserProfile {
         achievementSoundsVolume: Float = 1.0,
         ambientVolume: Float = 0.3,
         selectedTierId: String = "free",
-        offlineModeEnabled: Bool = false
+        offlineModeEnabled: Bool = false,
+        trialStartDate: Date? = nil,
+        trialExpiredShown: Bool = false
     ) {
         self.totalXP = totalXP
         self.dailyStreak = dailyStreak
@@ -191,6 +221,8 @@ final class UserProfile {
         self.ambientVolume = ambientVolume
         self.selectedTierId = selectedTierId
         self.offlineModeEnabled = offlineModeEnabled
+        self.trialStartDate = trialStartDate
+        self.trialExpiredShown = trialExpiredShown
     }
 }
 

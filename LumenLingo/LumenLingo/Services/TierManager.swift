@@ -224,6 +224,29 @@ final class TierManager {
         }
     }
 
+    // MARK: - Royal Trial Lifecycle
+
+    /// Start the 14-day Royal Trial. Can only be started once per user.
+    /// Returns `true` if the trial was started, `false` if already used.
+    @discardableResult
+    func startTrial(profile: UserProfile?) -> Bool {
+        guard let profile, !profile.hasUsedTrial else { return false }
+        profile.trialStartDate = Date.now
+        selectTier("trial", profile: profile)
+        return true
+    }
+
+    /// Check if the trial has expired and auto-downgrade to Free.
+    /// Returns `true` if the trial just expired (caller should show TrialEndedView).
+    func checkTrialExpiration(profile: UserProfile?) -> Bool {
+        guard let profile,
+              currentTier == .trial,
+              profile.isTrialExpired,
+              !profile.trialExpiredShown else { return false }
+        selectTier("free", profile: profile)
+        return true
+    }
+
     /// Select a new tier: persists to the user's profile and triggers re-evaluation.
     func selectTier(_ tierId: String, profile: UserProfile?) {
         let newTier = MembershipTier(tierId: tierId)

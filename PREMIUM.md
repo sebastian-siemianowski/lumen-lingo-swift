@@ -702,7 +702,7 @@
 
 ---
 
-## Epic 9: Upgrade Prompts & Soft Gates
+## Epic 9: Upgrade Prompts & Soft Gates ✅
 
 ### Story 9.1 — Contextual Upgrade Prompts at Feature Boundaries
 
@@ -719,14 +719,14 @@
 - Same prompt does not appear more than once per session.
 
 **Subtasks:**
-- [ ] 9.1.1 — Create `UpgradePromptView` component with configurable feature, tier, and description.
-- [ ] 9.1.2 — Add `UpgradePromptManager` to track shown prompts per session (`Set<PremiumFeature>`).
-- [ ] 9.1.3 — `UpgradePromptManager.shouldShow(for feature:) -> Bool` checks session history.
-- [ ] 9.1.4 — After showing, add feature to `shownPrompts` set.
-- [ ] 9.1.5 — Prompt uses adaptive layout: half-sheet on iPhone, popover on iPad.
-- [ ] 9.1.6 — Add spring entrance animation with slight bounce.
-- [ ] 9.1.7 — Add dismiss gesture (swipe down) and explicit close button.
-- [ ] 9.1.8 — Track event: `upgrade_prompt_shown(feature:, tier:, dismissed:)`.
+- [x] 9.1.1 — Create `UpgradePromptView` component with configurable feature, tier, and description.
+- [x] 9.1.2 — Add `UpgradePromptManager` to track shown prompts per session (`Set<PremiumFeature>`).
+- [x] 9.1.3 — `UpgradePromptManager.shouldShow(for feature:) -> Bool` checks session history.
+- [x] 9.1.4 — After showing, add feature to `shownPrompts` set.
+- [x] 9.1.5 — Prompt uses adaptive layout: half-sheet on iPhone, popover on iPad.
+- [x] 9.1.6 — Add spring entrance animation with slight bounce.
+- [x] 9.1.7 — Add dismiss gesture (swipe down) and explicit close button.
+- [x] 9.1.8 — Track event: `upgrade_prompt_shown(feature:, tier:, dismissed:)`.
 
 ---
 
@@ -745,15 +745,15 @@
 - Carousel can be permanently dismissed via "[x] Don't show again" option.
 
 **Subtasks:**
-- [ ] 9.2.1 — Create `PremiumFeatureCarousel` view with horizontal `ScrollView` + paging.
-- [ ] 9.2.2 — Define 3 featured items: Soundscapes, Breathing Orbs, Unlimited Practice.
-- [ ] 9.2.3 — Create `PremiumFeatureCard` view: icon + name + benefit + tier badge.
-- [ ] 9.2.4 — Add auto-scroll timer (5-second interval) with crossfade transition.
-- [ ] 9.2.5 — On card tap: present `UpgradePromptView` for that feature.
-- [ ] 9.2.6 — Add "Don't show again" option that persists to `UserDefaults`.
-- [ ] 9.2.7 — Only render carousel when `TierManager.currentTierId == "free"`.
-- [ ] 9.2.8 — Add appear animation: slide up from bottom with slight delay.
-- [ ] 9.2.9 — Add snapshot tests for carousel in both themes.
+- [x] 9.2.1 — Create `PremiumFeatureCarousel` view with horizontal `ScrollView` + paging.
+- [x] 9.2.2 — Define 3 featured items: Soundscapes, Breathing Orbs, Unlimited Practice.
+- [x] 9.2.3 — Create `PremiumFeatureCard` view: icon + name + benefit + tier badge.
+- [x] 9.2.4 — Add auto-scroll timer (5-second interval) with crossfade transition.
+- [x] 9.2.5 — On card tap: present `UpgradePromptView` for that feature.
+- [x] 9.2.6 — Add "Don't show again" option that persists to `UserDefaults`.
+- [x] 9.2.7 — Only render carousel when `TierManager.currentTierId == "free"`.
+- [x] 9.2.8 — Add appear animation: slide up from bottom with slight delay.
+- [x] 9.2.9 — Add snapshot tests for carousel in both themes.
 
 ---
 
@@ -772,14 +772,14 @@
 - Nudge can be permanently hidden via user preference.
 
 **Subtasks:**
-- [ ] 9.3.1 — Create `PostSessionNudge` view: subtle banner with benefit text and "Learn More" link.
-- [ ] 9.3.2 — Track session count in `UserDefaults`; show nudge when `count % 3 == 0`.
-- [ ] 9.3.3 — Rotate benefits: array of 5 benefit strings, select by `count / 3 % 5`.
-- [ ] 9.3.4 — "Learn More" navigates to `MembershipView`.
-- [ ] 9.3.5 — Add "Hide forever" option, persist to `UserDefaults`.
-- [ ] 9.3.6 — Only show for `TierManager.currentTierId == "free"`.
-- [ ] 9.3.7 — Add subtle fade-in animation with 0.5s delay after session summary loads.
-- [ ] 9.3.8 — Add unit test: nudge shown on 3rd, 6th, 9th sessions; not shown on 1st, 2nd, 4th, 5th.
+- [x] 9.3.1 — Create `PostSessionNudge` view: subtle banner with benefit text and "Learn More" link.
+- [x] 9.3.2 — Track session count in `UserDefaults`; show nudge when `count % 3 == 0`.
+- [x] 9.3.3 — Rotate benefits: array of 5 benefit strings, select by `count / 3 % 5`.
+- [x] 9.3.4 — "Learn More" navigates to `MembershipView`.
+- [x] 9.3.5 — Add "Hide forever" option, persist to `UserDefaults`.
+- [x] 9.3.6 — Only show for `TierManager.currentTierId == "free"`.
+- [x] 9.3.7 — Add subtle fade-in animation with 0.5s delay after session summary loads.
+- [x] 9.3.8 — Add unit test: nudge shown on 3rd, 6th, 9th sessions; not shown on 1st, 2nd, 4th, 5th.
 
 ---
 
@@ -796,12 +796,12 @@
 - Lock icon is purely decorative — navigation is NOT blocked (user can still view locked feature previews).
 
 **Subtasks:**
-- [ ] 9.4.1 — Create `LockedFeatureLabel` modifier that appends a lock icon to any Text.
-- [ ] 9.4.2 — Determine lock color from minimum tier: pro→purple, elite→cyan, royal→gold.
-- [ ] 9.4.3 — Apply to settings items: Breathing Orbs (free), Quantum Flow (free/pro), Nebula Drift (free/pro), Offline (free).
-- [ ] 9.4.4 — On tier change that unlocks a feature: animate lock icon with `.transition(.scale.combined(with: .opacity))`.
-- [ ] 9.4.5 — Ensure VoiceOver reads: "[Feature name], locked, requires [tier] plan".
-- [ ] 9.4.6 — Add snapshot tests for each lock state.
+- [x] 9.4.1 — Create `LockedFeatureLabel` modifier that appends a lock icon to any Text.
+- [x] 9.4.2 — Determine lock color from minimum tier: pro→purple, elite→cyan, royal→gold.
+- [x] 9.4.3 — Apply to settings items: Breathing Orbs (free), Quantum Flow (free/pro), Nebula Drift (free/pro), Offline (free).
+- [x] 9.4.4 — On tier change that unlocks a feature: animate lock icon with `.transition(.scale.combined(with: .opacity))`.
+- [x] 9.4.5 — Ensure VoiceOver reads: "[Feature name], locked, requires [tier] plan".
+- [x] 9.4.6 — Add snapshot tests for each lock state.
 
 ---
 
@@ -977,7 +977,6 @@
 - [ ] 12.1.2 — `TierManager.dashboardWidgets() -> [DashboardWidget]` returns tier-appropriate widgets.
 - [ ] 12.1.3 — In `DashboardView`, iterate over `dashboardWidgets` to render dynamic layout.
 - [ ] 12.1.4 — Create `SoundscapeNowPlaying` widget: mini player with current soundscape name and pause/play.
-- [ ] 12.1.5 — Create `OfflineStatusWidget`: shows downloaded/available content count.
 - [ ] 12.1.9 — On tier change: widgets add/remove with spring transitions.
 - [ ] 12.1.10 — Add snapshot tests for each tier's dashboard layout.
 
@@ -1166,109 +1165,6 @@
 
 ---
 
-## Epic 15: Notification & Communication Gating
-
-### Story 15.1 — Smart Reminder Customization by Tier
-
-**As a** Pro+ user,  
-**I want** more control over my learning reminders,  
-**So that** reminders fit my specific schedule and preferences.
-
-**Acceptance Criteria:**
-- Free tier: one daily reminder at a fixed time (user can set the time).
-- Pro tier: up to 3 daily reminders at custom times.
-- Elite tier: smart reminders that adapt to user's practice patterns (ML-suggested times).
-- Royal tier: Elite + custom reminder messages + streak-at-risk alerts.
-- Locked options show tier badge and upgrade prompt.
-
-**Subtasks:**
-- [ ] 15.1.1 — Create `ReminderConfig` struct with max reminders, smart mode, custom messages.
-- [ ] 15.1.2 — `TierManager.reminderConfig() -> ReminderConfig`.
-- [ ] 15.1.3 — In reminder settings: show "+" button to add reminders, disabled beyond tier limit.
-- [ ] 15.1.4 — Free: 1 time picker. Pro: up to 3 time pickers with add/remove.
-- [ ] 15.1.5 — Elite: add "Smart Reminders" toggle that uses practice history to suggest optimal times.
-- [ ] 15.1.6 — Royal: add custom message text field for each reminder.
-- [ ] 15.1.7 — Royal: add "Streak at Risk" alert toggle — notifies if user hasn't practiced by evening.
-- [ ] 15.1.8 — Schedule notifications using `UNUserNotificationCenter`.
-- [ ] 15.1.9 — On downgrade: remove extra reminders beyond new limit, show notification.
-- [ ] 15.1.10 — Add unit test: free → max 1 reminder; pro → max 3; elite → smart available.
-
----
-
-### Story 15.2 — Streak Protection Features by Tier
-
-**As a** paid tier user,  
-**I want** streak freeze and protection features,  
-**So that** my streak isn't broken by a missed day due to life circumstances.
-
-**Acceptance Criteria:**
-- Free tier: no streak protection.
-- Pro tier: 1 streak freeze per month (automatically applied on a missed day).
-- Elite tier: 2 streak freezes per month + streak recovery (restore broken streak within 24 hours).
-- Royal tier: unlimited streak freezes + automatic streak recovery.
-- Streak freeze count shown in profile/journey view.
-
-**Subtasks:**
-- [ ] 15.2.1 — Add `streakFreezeLimit: Int?` to `TierManager` (free→nil, pro→1, elite→2, royal→nil means unlimited).
-- [ ] 15.2.2 — Add `streakFreezesUsed: Int` and `streakFreezeResetDate: Date` to `UserProfile`.
-- [ ] 15.2.3 — Reset freeze count on the 1st of each month.
-- [ ] 15.2.4 — When streak would break: check if freeze is available → if yes, apply automatically.
-- [ ] 15.2.5 — Show "Streak Freeze Used ❄️" notification when auto-applied.
-- [ ] 15.2.6 — For Elite+: add "Recover Streak" button within 24 hours of break.
-- [ ] 15.2.7 — For Royal: skip freeze counting (always available).
-- [ ] 15.2.8 — In journey/profile: show "X freezes remaining this month" indicator.
-- [ ] 15.2.9 — Locked features show tier badge with "Available on [tier]".
-- [ ] 15.2.10 — Add unit tests: all freeze scenarios per tier.
-
----
-
-## Epic 16: Accessibility & Tier Consistency
-
-### Story 16.1 — VoiceOver Announcements for Locked Features
-
-**As a** VoiceOver user,  
-**I want** locked features to be clearly announced as locked with the required tier,  
-**So that** I can navigate the app efficiently without visual cues.
-
-**Acceptance Criteria:**
-- All locked UI elements have `.accessibilityLabel` including "Locked" and minimum tier name.
-- Lock overlays have `.accessibilityHint`: "Double tap to view upgrade options".
-- Upgrade prompts are fully navigable with VoiceOver.
-- Tier badges announce the tier name and current selection state.
-
-**Subtasks:**
-- [ ] 16.1.1 — Audit all locked feature views for proper `.accessibilityLabel`.
-- [ ] 16.1.2 — Add labels: "[Feature name], locked, requires [tier name] plan".
-- [ ] 16.1.3 — Add hints: "Double tap to view upgrade options" on tappable locked elements.
-- [ ] 16.1.4 — In `TierCardView`: `.accessibilityLabel("[tier name], [price], [selected/not selected]")`.
-- [ ] 16.1.5 — In upgrade prompts: ensure all CTAs are properly labeled.
-- [ ] 16.1.6 — Test with VoiceOver on device: navigate through all locked features.
-- [ ] 16.1.7 — Add automated accessibility audit tests.
-
----
-
-### Story 16.2 — Dynamic Type Support for Gating UI
-
-**As a** user with large dynamic type settings,  
-**I want** tier badges, lock overlays, and upgrade prompts to scale properly,  
-**So that** I can read all tier information at my preferred text size.
-
-**Acceptance Criteria:**
-- Tier badges use Dynamic Type and scale from 9pt to 22pt.
-- Lock overlay icons scale proportionally with text size.
-- Upgrade prompt sheets adapt layout for larger text (stack vertically if needed).
-- No text truncation at any Dynamic Type size up to AX5.
-
-**Subtasks:**
-- [ ] 16.2.1 — Replace fixed font sizes in tier badges with `.caption2` semantic style where possible.
-- [ ] 16.2.2 — Use `@ScaledMetric` for lock icon sizes that need to scale with text.
-- [ ] 16.2.3 — In upgrade prompt sheets: use `ViewThatFits` for adaptive horizontal/vertical layouts.
-- [ ] 16.2.4 — Test all gating UI at Dynamic Type sizes: default, XXXL, AX3, AX5.
-- [ ] 16.2.5 — Fix any truncation or overlap issues found during testing.
-- [ ] 16.2.6 — Add snapshot tests at multiple Dynamic Type sizes.
-
----
-
 ## Epic 17: Tier-Specific Animations & Polish
 
 ### Story 17.1 — Tier Upgrade Celebration Animation
@@ -1294,30 +1190,6 @@
 - [ ] 17.1.8 — Auto-dismiss at 2.5s with fade-out.
 - [ ] 17.1.9 — Only trigger when `newRank > oldRank`.
 - [ ] 17.1.10 — Add unit test: free→pro = celebration; pro→free = no celebration.
-
----
-
-### Story 17.2 — Tier-Specific Loading Screens
-
-**As a** user on a premium tier,  
-**I want** loading screens to match my tier's aesthetic,  
-**So that** even brief waits feel premium and branded.
-
-**Acceptance Criteria:**
-- Free tier: simple spinning indicator on dark/light background.
-- Pro tier: pulsing orb in purple gradient.
-- Elite tier: particle swirl animation in cyan/purple.
-- Royal tier: golden shimmer wave with crown watermark.
-- Loading screens are used for: app launch, content loading, offline sync.
-
-**Subtasks:**
-- [ ] 17.2.1 — Create `TierLoadingView` that renders based on `TierManager.currentTierId`.
-- [ ] 17.2.2 — Free: `ProgressView()` with standard styling.
-- [ ] 17.2.3 — Pro: pulsing circle with `.purple` to `.pink` gradient, scale 0.8↔1.2.
-- [ ] 17.2.4 — Elite: `TimelineView(.animation)` particle swirl using `Canvas`.
-- [ ] 17.2.5 — Royal: `TimelineView(.animation)` golden shimmer wave with subtle crown icon at 10% opacity.
-- [ ] 17.2.6 — Replace all `ProgressView()` instances with `TierLoadingView`.
-- [ ] 17.2.7 — Add snapshot tests for each tier's loading state.
 
 ---
 
@@ -1545,7 +1417,7 @@
 
 ---
 
-## Appendix A: Tier-Feature Matrix (Complete)
+## Appendix A: Tier-Feature Matrix (Complete) - Please do double check and modify as Ive changed and removed some of the stories - this might not be accurate
 
 | Feature | Free | Pro | Elite | Royal | Trial |
 |---|---|---|---|---|---|
@@ -1573,7 +1445,7 @@
 
 ---
 
-## Appendix B: Story Dependency Graph
+## Appendix B: Story Dependency Graph - Please do double check and modify as Ive changed and removed some of the stories - this might not be accurate
 
 ```
 Epic 1 (Tier Persistence)
@@ -1727,21 +1599,21 @@ Epic 20 (Edge Cases) depends on Epic 1, 19
 
 **Acceptance Criteria:**
 - Free tier: 50 flashcards per language pair.
-- Pro tier: 200 flashcards per language pair.
-- Elite tier: 500 flashcards per language pair.
+- Pro tier: 75 flashcards per language pair.
+- Elite tier: 100 flashcards per language pair.
 - Royal / Trial: All available flashcards (no limit).
 - Locked cards are not shown in the deck (not shown with lock overlay — they simply don't appear).
 - ContentLoader respects the tier limit when loading decks.
 
 **Subtasks:**
 - [ ] 22.1.1 — Add `TierManager.flashcardLimit(for pair:) -> Int?` (nil = unlimited).
-- [ ] 22.1.2 — Limits: free→50, pro→200, elite→500, royal/trial→nil.
+- [ ] 22.1.2 — Limits: free→50, pro→75, elite→100, royal/trial→nil.
 - [ ] 22.1.3 — In `ContentLoader.loadFlashcards()`, apply `.prefix(limit)` to loaded array.
 - [ ] 22.1.4 — Flashcard decks sorted by difficulty before applying limit (easiest first for Free users).
-- [ ] 22.1.5 — In deck info view: show "50 of 1,200 cards" for Free, "All 1,200 cards" for Royal.
+- [ ] 22.1.5 — In deck info view: show "50 of 1,200 cards" for Free, "All 1,200 cards" for Royal(or maximum amount).
 - [ ] 22.1.6 — On tier upgrade: reload deck to include newly available cards.
 - [ ] 22.1.7 — On tier downgrade: trim deck after current session ends (don't interrupt mid-session).
-- [ ] 22.1.8 — Add unit test: free tier loads exactly 50 cards from a 1200-card deck.
+- [ ] 22.1.8 — Add unit test: free tier loads exactly 50 cards from a 1200-card deck(or maximum amount).
 - [ ] 22.1.9 — Add unit test: royal tier loads all cards.
 
 ---

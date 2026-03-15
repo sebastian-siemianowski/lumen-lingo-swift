@@ -319,6 +319,37 @@ extension AppStrings {
         connectivityRequired: "El nivel gratuito requiere conexión a internet para acceder al contenido",
         offlineModeInfo: "Cuando el modo sin conexión está activado, el contenido está disponible sin red. Los niveles Pro y superiores pueden aprender en cualquier lugar.",
         offlineModeDisabled: "Modo sin conexión desactivado",
-        offlineModeDisabledDetail: "Tu nivel ya no incluye acceso sin conexión"
+        offlineModeDisabledDetail: "Tu nivel ya no incluye acceso sin conexión",
+
+        // MARK: - Upgrade Prompts
+        unlockPremium: "Desbloquear Premium",
+        viewPlans: "Ver planes",
+        maybeLater: "Quizás después",
+        requires: "Requiere",
+        learnMore: "Más información",
+        hideForever: "Ocultar para siempre",
+        dontShowAgain: "No mostrar de nuevo",
+
+        // MARK: - Royal Trial
+        trialActivated: "¡Prueba Activada!",
+        trialWelcomeMessage: "Bienvenido a 14 días de acceso Royal completo. Todas las funciones premium son tuyas.",
+        trialDuration: "14 Días de Acceso Royal",
+        trialAfterExpiry: "Después de 14 días, pasarás al nivel Gratuito. Sin cargos.",
+        trialStartExploring: "Empezar a Explorar",
+        trialBannerTitle: "Prueba Royal",
+        trialExpiringToday: "Expira hoy",
+        trialOneDayLeft: "1 día restante",
+        trialDaysLeft: "días restantes",
+        trialEndedTitle: "Tu Prueba Ha Terminado",
+        trialEndedSubtitle: "¡Gracias por probar Royal! Tu progreso está a salvo.",
+        trialYourProgress: "Tu Progreso de Prueba",
+        trialLevel: "Nivel",
+        trialStreak: "Racha",
+        trialYouStillHave: "Aún Tienes",
+        trialChoosePlan: "Elegir un Plan",
+        trialContinueFree: "Continuar con Gratuito",
+        trialCompleted: "Prueba Completada",
+        trialCompletedTagline: "Has experimentado Royal",
+        trialStartFree: "Iniciar Prueba Gratuita"
     )
 }

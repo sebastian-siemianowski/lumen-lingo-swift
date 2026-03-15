@@ -383,6 +383,7 @@ struct ProfileView: View {
                             Text(localizedSubTabName(subTab))
                                 .font(.system(size: 11, weight: .medium))
                         }
+                        .modifier(SubTabLockModifier(subTab: subTab))
                         .foregroundStyle(
                             activeAppearanceSubTab == subTab
                                 ? (isDark ? .white : Color(hex: "#4c1d95"))
@@ -439,6 +440,25 @@ struct ProfileView: View {
         case .breathingOrbs: return L.orbs
         case .quantumFlow: return L.quantum
         case .nebulaDrift: return L.nebula
+        }
+    }
+
+    /// Modifier that conditionally applies a lock indicator to premium sub-tabs.
+    /// Dark/Light is always unlocked and gets no lock icon.
+    private struct SubTabLockModifier: ViewModifier {
+        let subTab: AppearanceSubTab
+
+        func body(content: Content) -> some View {
+            switch subTab {
+            case .darkLight:
+                content
+            case .breathingOrbs:
+                content.lockedFeatureIndicator(for: .breathingOrbs)
+            case .quantumFlow:
+                content.lockedFeatureIndicator(for: .quantumFlow)
+            case .nebulaDrift:
+                content.lockedFeatureIndicator(for: .nebulaDrift)
+            }
         }
     }
 
@@ -545,6 +565,7 @@ struct ProfileView: View {
                             Text(soundSubTabName(subTab))
                                 .font(.system(size: 11, weight: .medium))
                         }
+                        .modifier(SoundSubTabLockModifier(subTab: subTab))
                         .foregroundStyle(
                             activeSoundSubTab == subTab
                                 ? (isDark ? .white : Color(hex: "#9d174d"))
@@ -594,6 +615,19 @@ struct ProfileView: View {
         case .controls: return "Controls"
         case .soundscapes: return "Soundscapes"
         case .mixer: return "Mixer"
+        }
+    }
+
+    /// Lock indicator for sound sub-tabs. Only Soundscapes is gated.
+    private struct SoundSubTabLockModifier: ViewModifier {
+        let subTab: SoundSubTab
+
+        func body(content: Content) -> some View {
+            if subTab == .soundscapes {
+                content.lockedFeatureIndicator(for: .soundscapes)
+            } else {
+                content
+            }
         }
     }
 
