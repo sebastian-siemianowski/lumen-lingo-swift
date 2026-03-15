@@ -1,5 +1,6 @@
 import AVFoundation
 import Foundation
+import MediaPlayer
 import UIKit
 
 // MARK: - Audio Service
@@ -142,10 +143,13 @@ final class AudioService {
         guard !isSessionConfigured else { return }
         do {
             try AVAudioSession.sharedInstance().setCategory(
-                .playback, mode: .default, options: [.mixWithOthers]
+                .playback, mode: .default
             )
             try AVAudioSession.sharedInstance().setActive(true)
             isSessionConfigured = true
+            setupRemoteCommandCenter()
+            setupAudioInterruptionHandling()
+            UIApplication.shared.beginReceivingRemoteControlEvents()
         } catch {
             print("⚠️ Audio session config failed: \(error)")
         }
@@ -154,6 +158,196 @@ final class AudioService {
     func deactivateSession() {
         try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
         isSessionConfigured = false
+    }
+
+    // MARK: - Now Playing & Remote Commands
+
+    private var remoteCommandsConfigured = false
+
+    private func setupRemoteCommandCenter() {
+        guard !remoteCommandsConfigured else { return }
+        remoteCommandsConfigured = true
+        let center = MPRemoteCommandCenter.shared()
+
+        // Play
+        center.playCommand.isEnabled = true
+        center.playCommand.addTarget { [weak self] _ in
+            guard let self, let soundscape = self.currentSoundscape else { return .noActionableNowPlayingItem }
+            self.ambientPlayer?.play()
+            self.updateNowPlayingInfo(isPlaying: true)
+            return .success
+        }
+
+        // Pause
+        center.pauseCommand.isEnabled = true
+        center.pauseCommand.addTarget { [weak self] _ in
+            guard let self else { return .commandFailed }
+            self.ambientPlayer?.pause()
+            self.updateNowPlayingInfo(isPlaying: false)
+            return .success
+        }
+
+        // Toggle play/pause (headphone button, etc.)
+        center.togglePlayPauseCommand.isEnabled = true
+        center.togglePlayPauseCommand.addTarget { [weak self] _ in
+            guard let self else { return .commandFailed }
+            if self.ambientPlayer?.isPlaying == true {
+                self.ambientPlayer?.pause()
+                self.updateNowPlayingInfo(isPlaying: false)
+            } else if let soundscape = self.currentSoundscape {
+                self.ambientPlayer?.play()
+                self.updateNowPlayingInfo(isPlaying: true)
+            }
+            return .success
+        }
+
+        // Next track → next soundscape
+        center.nextTrackCommand.isEnabled = true
+        center.nextTrackCommand.addTarget { [weak self] _ in
+            guard let self else { return .commandFailed }
+            self.skipToNextSoundscape()
+            return .success
+        }
+
+        // Previous track → previous soundscape
+        center.previousTrackCommand.isEnabled = true
+        center.previousTrackCommand.addTarget { [weak self] _ in
+            guard let self else { return .commandFailed }
+            self.skipToPreviousSoundscape()
+            return .success
+        }
+    }
+
+    private func skipToNextSoundscape() {
+        guard let current = currentSoundscape else { return }
+        let all = Soundscape.allCases
+        guard let idx = all.firstIndex(of: current) else { return }
+        let nextIdx = all.index(after: idx)
+        let next = nextIdx < all.endIndex ? all[nextIdx] : all[all.startIndex]
+        crossfadeSoundscape(to: next, variantIndex: 0)
+    }
+
+    private func skipToPreviousSoundscape() {
+        guard let current = currentSoundscape else { return }
+        let all = Soundscape.allCases
+        guard let idx = all.firstIndex(of: current) else { return }
+        let prev = idx == all.startIndex ? all[all.index(before: all.endIndex)] : all[all.index(before: idx)]
+        crossfadeSoundscape(to: prev, variantIndex: 0)
+    }
+
+    private func updateNowPlayingInfo(isPlaying: Bool? = nil) {
+        guard let soundscape = currentSoundscape else {
+            MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
+            return
+        }
+
+        let variantIdx = min(currentVariantIndex, soundscape.variants.count - 1)
+        let variant = soundscape.variants[max(0, variantIdx)]
+
+        var info = [String: Any]()
+        info[MPMediaItemPropertyTitle] = soundscape.displayName
+        info[MPMediaItemPropertyArtist] = variant.label
+        info[MPMediaItemPropertyAlbumTitle] = "LumenLingo Soundscapes"
+        info[MPNowPlayingInfoPropertyPlaybackRate] = (isPlaying ?? (ambientPlayer?.isPlaying == true)) ? 1.0 : 0.0
+        info[MPNowPlayingInfoPropertyIsLiveStream] = true
+
+        // Generate artwork from soundscape colors and icon
+        if let artwork = generateNowPlayingArtwork(for: soundscape) {
+            info[MPMediaItemPropertyArtwork] = artwork
+        }
+
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = info
+    }
+
+    private func generateNowPlayingArtwork(for soundscape: Soundscape) -> MPMediaItemArtwork? {
+        let size = CGSize(width: 600, height: 600)
+        let renderer = UIGraphicsImageRenderer(size: size)
+        let image = renderer.image { ctx in
+            let rect = CGRect(origin: .zero, size: size)
+            let colors = soundscape.previewColors
+
+            // Gradient background
+            let cgColors = colors.map { UIColor($0).cgColor }
+            if let gradient = CGGradient(colorsSpace: CGColorSpaceCreateDeviceRGB(),
+                                         colors: cgColors as CFArray,
+                                         locations: [0.0, 0.5, 1.0]) {
+                ctx.cgContext.drawLinearGradient(gradient,
+                                                start: CGPoint(x: 0, y: 0),
+                                                end: CGPoint(x: size.width, y: size.height),
+                                                options: [])
+            }
+
+            // Subtle radial glow in center
+            ctx.cgContext.saveGState()
+            ctx.cgContext.setAlpha(0.3)
+            if let radial = CGGradient(colorsSpace: CGColorSpaceCreateDeviceRGB(),
+                                       colors: [UIColor.white.cgColor, UIColor.clear.cgColor] as CFArray,
+                                       locations: [0.0, 1.0]) {
+                ctx.cgContext.drawRadialGradient(radial,
+                                                startCenter: CGPoint(x: size.width/2, y: size.height/2),
+                                                startRadius: 0,
+                                                endCenter: CGPoint(x: size.width/2, y: size.height/2),
+                                                endRadius: size.width * 0.45,
+                                                options: [])
+            }
+            ctx.cgContext.restoreGState()
+
+            // SF Symbol icon
+            let iconConfig = UIImage.SymbolConfiguration(pointSize: 120, weight: .light)
+            if let icon = UIImage(systemName: soundscape.icon, withConfiguration: iconConfig) {
+                let iconSize = icon.size
+                let iconOrigin = CGPoint(x: (size.width - iconSize.width) / 2,
+                                        y: (size.height - iconSize.height) / 2)
+                icon.withTintColor(.white.withAlphaComponent(0.85), renderingMode: .alwaysOriginal)
+                    .draw(at: iconOrigin)
+            }
+
+            // App name at bottom
+            let nameAttrs: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 28, weight: .medium),
+                .foregroundColor: UIColor.white.withAlphaComponent(0.7)
+            ]
+            let name = "LumenLingo" as NSString
+            let nameSize = name.size(withAttributes: nameAttrs)
+            name.draw(at: CGPoint(x: (size.width - nameSize.width) / 2,
+                                  y: size.height - nameSize.height - 30),
+                      withAttributes: nameAttrs)
+        }
+
+        return MPMediaItemArtwork(boundsSize: size) { _ in image }
+    }
+
+    // MARK: - Audio Interruption Handling
+
+    private func setupAudioInterruptionHandling() {
+        NotificationCenter.default.addObserver(
+            forName: AVAudioSession.interruptionNotification,
+            object: AVAudioSession.sharedInstance(),
+            queue: .main
+        ) { [weak self] notification in
+            self?.handleAudioInterruption(notification)
+        }
+    }
+
+    private func handleAudioInterruption(_ notification: Notification) {
+        guard let userInfo = notification.userInfo,
+              let typeValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt,
+              let type = AVAudioSession.InterruptionType(rawValue: typeValue) else { return }
+
+        switch type {
+        case .began:
+            // Phone call, Siri, etc. — iOS pauses our audio automatically
+            updateNowPlayingInfo(isPlaying: false)
+        case .ended:
+            guard let optionsValue = userInfo[AVAudioSessionInterruptionOptionKey] as? UInt else { return }
+            let options = AVAudioSession.InterruptionOptions(rawValue: optionsValue)
+            if options.contains(.shouldResume) {
+                ambientPlayer?.play()
+                updateNowPlayingInfo(isPlaying: true)
+            }
+        @unknown default:
+            break
+        }
     }
 
     // MARK: - Pre-warming (Story 1.5)
@@ -204,19 +398,23 @@ final class AudioService {
     }
 
     private func handleBackground() {
-        // Keep soundscape playing in the background
-        if ambientPlayer?.isPlaying == true {
+        // Keep soundscape playing in the background with Now Playing controls
+        // Do NOT deactivate the audio session — it must stay active for background playback
+        if ambientPlayer != nil, currentSoundscape != nil {
             wasAmbientPlaying = true
+            updateNowPlayingInfo(isPlaying: ambientPlayer?.isPlaying == true)
         } else {
             wasAmbientPlaying = false
-            deactivateSession()
         }
         playerPool.forEach { $0.stop() }
     }
 
     private func handleForeground() {
         sessionStartTime = Date()
-        if wasAmbientPlaying, let soundscape = currentSoundscape {
+        // Only restart if the player was lost (e.g. system reclaimed resources)
+        if wasAmbientPlaying, let soundscape = currentSoundscape,
+           ambientPlayer?.isPlaying != true {
+            configureSessionIfNeeded()
             startSoundscape(soundscape, variantIndex: currentVariantIndex)
         }
     }
@@ -231,9 +429,7 @@ final class AudioService {
     private func handlePowerStateChange() {
         if ProcessInfo.processInfo.isLowPowerModeEnabled {
             soundCache.removeAll()
-            if ambientPlayer?.isPlaying == true {
-                stopAmbient(fadeDuration: 1.0)
-            }
+            // Keep soundscape playing even in Low Power Mode
         }
     }
 
@@ -1365,6 +1561,7 @@ final class AudioService {
                     self.ambientPlayer = player
                     self.fadeAmbient(to: self.ambientVolume * self.masterVolume * 10,
                                     duration: 3.0)
+                    self.updateNowPlayingInfo(isPlaying: true)
                 } catch {
                     print("⚠️ Soundscape file playback error: \(error)")
                     self.startSoundscapeFallback(soundscape)
@@ -1413,6 +1610,7 @@ final class AudioService {
                     self.ambientPlayer = player
                     self.fadeAmbient(to: self.ambientVolume * self.masterVolume * 10,
                                     duration: 3.0)
+                    self.updateNowPlayingInfo(isPlaying: true)
                 } catch {
                     print("⚠️ Soundscape fallback playback error: \(error)")
                 }
@@ -1436,9 +1634,11 @@ final class AudioService {
     /// Stop ambient with fade
     func stopAmbient(fadeDuration: TimeInterval = 2.0) {
         currentSoundscape = nil
+        updateNowPlayingInfo(isPlaying: false)
         fadeAmbient(to: 0, duration: fadeDuration) { [weak self] in
             self?.ambientPlayer?.stop()
             self?.ambientPlayer = nil
+            MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
         }
     }
 

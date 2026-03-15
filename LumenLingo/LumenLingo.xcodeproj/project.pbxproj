@@ -241,6 +241,7 @@
 		38147CE75141E1292FF464C1 /* MetalCosmicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCosmicView.swift; sourceTree = "<group>"; };
 		3815318D8DCB4AC7CE373CE6 /* flashcards_polish_chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_chinese.json; sourceTree = "<group>"; };
 		39CDFBF6DCB5ECB7689CE6C6 /* grammar_english_chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_english_chinese.json; sourceTree = "<group>"; };
+		3A219C85D0E9B1BFA8C5BD9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3C8D4D41E794AAF840BF37C9 /* flashcards_english_japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_japanese.json; sourceTree = "<group>"; };
 		3F7A93ED414D0470C87039F9 /* AppStrings+Japanese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Japanese.swift"; sourceTree = "<group>"; };
 		3FAA135975F4BAFABE14B7C3 /* CosmicNoise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CosmicNoise.h; sourceTree = "<group>"; };
@@ -376,6 +377,7 @@
 		0017D5437595FBF8754D4373 /* LumenLingo */ = {
 			isa = PBXGroup;
 			children = (
+				3A219C85D0E9B1BFA8C5BD9F /* Info.plist */,
 				E667ED645B5F750955DEA3B5 /* LumenLingoApp.swift */,
 				3240E9048141E87CE98F1922 /* Extensions */,
 				AA5EB74A9C96AEB80BAA2339 /* Models */,
@@ -1324,14 +1326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B6NBRW5HYL;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_GENERATION_MODE = GeneratedFile;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UIBackgroundModes = audio;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1411,14 +1406,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B6NBRW5HYL;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_GENERATION_MODE = GeneratedFile;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UIBackgroundModes = audio;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
