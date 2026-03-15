@@ -306,6 +306,40 @@ final class HapticsService {
         softGenerator.impactOccurred(intensity: 0.5)
     }
 
+    /// Tier upgrade celebration — multi-step haptic pattern
+    func tierUpgrade() {
+        guard isEnabled, canFire("tierUpgrade", cooldown: 2.0) else { return }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+            self?.notificationGenerator.notificationOccurred(.success)
+        }
+        for offset in [0.5, 0.7, 0.9] {
+            DispatchQueue.main.asyncAfter(deadline: .now() + offset) { [weak self] in
+                self?.lightGenerator.impactOccurred(intensity: 0.6)
+            }
+        }
+    }
+
+    /// Tier-aware double-tap pattern for enhanced haptic level
+    func doubleTap() {
+        guard isEnabled, canFire("doubleTap", cooldown: 0.2) else { return }
+        lightGenerator.impactOccurred(intensity: 0.6)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in
+            self?.lightGenerator.impactOccurred(intensity: 0.8)
+        }
+    }
+
+    /// Rich tier streak milestone burst
+    func streakMilestone() {
+        guard isEnabled, canFire("streakMilestone", cooldown: 1.0) else { return }
+        notificationGenerator.notificationOccurred(.success)
+        for i in 0..<3 {
+            let delay = 0.15 + TimeInterval(i) * 0.12
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+                self?.mediumGenerator.impactOccurred(intensity: CGFloat(0.6 + Double(i) * 0.15))
+            }
+        }
+    }
+
     // MARK: - Anti-Spam
 
     private func canFire(_ id: String, cooldown: TimeInterval) -> Bool {

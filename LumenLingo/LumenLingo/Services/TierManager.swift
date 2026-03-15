@@ -25,6 +25,10 @@ final class TierManager {
     /// True during the animated tier-change transition.
     private(set) var isTransitioning: Bool = false
 
+    /// Set when the user upgrades — drives the celebration overlay.
+    var showUpgradeCelebration: Bool = false
+    var upgradedToTier: MembershipTier = .free
+
     // MARK: - Tier Access
 
     /// The string tier ID for interop with MembershipView / UserProfile.
@@ -266,6 +270,31 @@ final class TierManager {
         }
     }
 
+    // MARK: - Haptic Level
+
+    /// Haptic complexity level, gated by tier.
+    enum HapticLevel: String, CaseIterable, Equatable {
+        case basic    // Free — single impact on key actions
+        case enhanced // Pro — double-tap on correct answers
+        case rich     // Elite — enhanced + continuous during swipes
+        case premium  // Royal — custom patterns for 4 distinct events
+    }
+
+    /// Returns the haptic level for the current tier.
+    var hapticLevel: HapticLevel {
+        Self.hapticLevel(for: currentTier)
+    }
+
+    /// Static tier→haptic level mapping for unit testing.
+    static func hapticLevel(for tier: MembershipTier) -> HapticLevel {
+        switch tier {
+        case .free:          return .basic
+        case .pro:           return .enhanced
+        case .elite:         return .rich
+        case .royal, .trial: return .premium
+        }
+    }
+
     // MARK: - Milestone Badge Styles
 
     /// Visual style for milestone badges, varying by tier.
@@ -448,9 +477,17 @@ final class TierManager {
         }
         profile?.selectedTierId = tierId
 
-        // Haptic
-        let feedback = UIImpactFeedbackGenerator(style: wasUpgrade ? .medium : .light)
-        feedback.impactOccurred()
+        // Celebration on upgrade
+        if wasUpgrade {
+            upgradedToTier = newTier
+            HapticsService.shared.tierUpgrade()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { [weak self] in
+                self?.showUpgradeCelebration = true
+            }
+        } else {
+            let feedback = UIImpactFeedbackGenerator(style: .light)
+            feedback.impactOccurred()
+        }
 
         // Graceful feature degradation on downgrade
         if !wasUpgrade {
