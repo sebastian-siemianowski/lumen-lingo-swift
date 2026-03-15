@@ -117,8 +117,14 @@ struct AppStrings {
     let firstSteps: String
     let gettingStarted: String
     let dedicatedLearner: String
+    let risingStar: String
     let wordWarrior: String
+    let knowledgeSeeker: String
+    let sentenceCrafter: String
+    let grammarGuardian: String
+    let vocabularyVirtuoso: String
     let languageMaster: String
+    let fluencyPioneer: String
     let polyglotLegend: String
     let xpRequired: String   // "{n} XP required"
     let overview: String

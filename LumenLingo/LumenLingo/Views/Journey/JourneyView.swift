@@ -29,7 +29,7 @@ struct JourneyView: View {
 
     var body: some View {
         ScrollView(showsIndicators: false) {
-            VStack(spacing: 24) {
+            VStack(spacing: 20) {
                 // Header
                 journeyHeader
 
@@ -73,9 +73,9 @@ struct JourneyView: View {
     // MARK: - Header
 
     private var journeyHeader: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 6) {
             Image(systemName: "chart.line.uptrend.xyaxis")
-                .font(.system(size: 40))
+                .font(.system(size: 32))
                 .foregroundStyle(
                     LinearGradient(
                         colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
@@ -85,7 +85,7 @@ struct JourneyView: View {
                 )
 
             Text(L.yourLearningJourney)
-                .font(.title2.bold())
+                .font(.system(size: 18, weight: .bold))
                 .foregroundStyle(
                     LinearGradient(
                         colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
@@ -95,7 +95,7 @@ struct JourneyView: View {
                 )
 
             Text(L.trackYourProgress)
-                .font(.subheadline)
+                .font(.system(size: 12))
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 .multilineTextAlignment(.center)
         }
@@ -111,7 +111,7 @@ struct JourneyView: View {
                     Image(systemName: "flag.checkered")
                         .foregroundStyle(Color(hex: "#667eea"))
                     Text(L.milestones)
-                        .font(.headline)
+                        .font(.system(size: 15, weight: .semibold))
                         .foregroundStyle(
                             LinearGradient(
                                 colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
@@ -120,7 +120,7 @@ struct JourneyView: View {
                             )
                         )
                 }
-                .padding(.bottom, 16)
+                .padding(.bottom, 12)
 
                 ForEach(Array(milestones.enumerated()), id: \.element.title) { index, milestone in
                     milestoneRow(milestone, isLast: index == milestones.count - 1)
@@ -138,12 +138,18 @@ struct JourneyView: View {
 
     private var milestones: [Milestone] {
         [
-            Milestone(title: L.firstSteps, icon: "shoe.fill", color: .green, xpRequired: 0),
-            Milestone(title: L.gettingStarted, icon: "star.fill", color: .cyan, xpRequired: 50),
-            Milestone(title: L.dedicatedLearner, icon: "book.fill", color: Color(hex: "#667eea"), xpRequired: 200),
-            Milestone(title: L.wordWarrior, icon: "shield.fill", color: Color(hex: "#8b5cf6"), xpRequired: 500),
-            Milestone(title: L.languageMaster, icon: "crown.fill", color: .yellow, xpRequired: 1000),
-            Milestone(title: L.polyglotLegend, icon: "globe", color: Color(hex: "#ec4899"), xpRequired: 2500),
+            Milestone(title: L.firstSteps,         icon: "shoe.fill",          color: .green,                xpRequired: 0),
+            Milestone(title: L.gettingStarted,     icon: "star.fill",          color: .cyan,                 xpRequired: 100),
+            Milestone(title: L.dedicatedLearner,   icon: "book.fill",          color: Color(hex: "#667eea"), xpRequired: 500),
+            Milestone(title: L.risingStar,          icon: "sparkles",           color: Color(hex: "#f59e0b"), xpRequired: 1_500),
+            Milestone(title: L.wordWarrior,        icon: "shield.fill",        color: Color(hex: "#8b5cf6"), xpRequired: 3_000),
+            Milestone(title: L.knowledgeSeeker,    icon: "magnifyingglass",    color: Color(hex: "#06b6d4"), xpRequired: 5_000),
+            Milestone(title: L.sentenceCrafter,    icon: "text.quote",         color: Color(hex: "#10b981"), xpRequired: 8_000),
+            Milestone(title: L.grammarGuardian,    icon: "shield.checkerboard", color: Color(hex: "#6366f1"), xpRequired: 12_000),
+            Milestone(title: L.vocabularyVirtuoso, icon: "character.book.closed.fill", color: Color(hex: "#f97316"), xpRequired: 18_000),
+            Milestone(title: L.languageMaster,     icon: "crown.fill",         color: .yellow,               xpRequired: 25_000),
+            Milestone(title: L.fluencyPioneer,     icon: "flag.fill",          color: Color(hex: "#14b8a6"), xpRequired: 35_000),
+            Milestone(title: L.polyglotLegend,     icon: "globe",              color: Color(hex: "#ec4899"), xpRequired: 50_000),
         ]
     }
 
@@ -151,34 +157,34 @@ struct JourneyView: View {
         let currentXP = profile?.totalXP ?? 0
         let isUnlocked = currentXP >= milestone.xpRequired
 
-        return HStack(spacing: 14) {
+        return HStack(spacing: 10) {
             // Timeline column
             VStack(spacing: 0) {
                 Circle()
                     .fill(isUnlocked ? milestone.color : .gray.opacity(0.3))
-                    .frame(width: 32, height: 32)
+                    .frame(width: 26, height: 26)
                     .overlay {
                         Image(systemName: milestone.icon)
-                            .font(.system(size: 13))
+                            .font(.system(size: 11))
                             .foregroundStyle(isUnlocked ? .white : .gray)
                     }
-                    .shadow(color: isUnlocked ? milestone.color.opacity(0.4) : .clear, radius: 6)
+                    .shadow(color: isUnlocked ? milestone.color.opacity(0.4) : .clear, radius: 4)
 
                 if !isLast {
                     Rectangle()
                         .fill(isUnlocked ? milestone.color.opacity(0.3) : .gray.opacity(0.15))
-                        .frame(width: 2, height: 30)
+                        .frame(width: 2, height: 20)
                 }
             }
 
             // Content
-            VStack(alignment: .leading, spacing: 2) {
+            VStack(alignment: .leading, spacing: 1) {
                 Text(milestone.title)
-                    .font(.subheadline.bold())
+                    .font(.system(size: 13, weight: .semibold))
                     .foregroundStyle(isDark ? .white.opacity(isUnlocked ? 1 : 0.4) : (isUnlocked ? .caribbeanInk : .caribbeanMist))
 
-                Text("\(milestone.xpRequired) \(L.xpRequired)")
-                    .font(.caption)
+                Text(formattedXP(milestone.xpRequired) + " " + L.xpRequired)
+                    .font(.system(size: 10))
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
             }
 
@@ -186,17 +192,29 @@ struct JourneyView: View {
 
             if isUnlocked {
                 Image(systemName: "checkmark.circle.fill")
+                    .font(.system(size: 14))
                     .foregroundStyle(.green)
             }
         }
     }
 
+    private func formattedXP(_ xp: Int) -> String {
+        if xp >= 1_000 {
+            let thousands = Double(xp) / 1_000.0
+            if xp % 1_000 == 0 {
+                return "\(Int(thousands))K"
+            }
+            return String(format: "%.1fK", thousands)
+        }
+        return "\(xp)"
+    }
+
     // MARK: - Overall Stats
 
     private var overallStatsPanel: some View {
-        VStack(spacing: 14) {
+        VStack(spacing: 10) {
             Text(L.overview)
-                .font(.headline)
+                .font(.system(size: 15, weight: .semibold))
                 .foregroundStyle(
                     LinearGradient(
                         colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
@@ -206,39 +224,39 @@ struct JourneyView: View {
                 )
                 .frame(maxWidth: .infinity, alignment: .leading)
 
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
                 journeyStat(title: L.level, value: "\(profile?.currentLevel ?? 1)", icon: "star.fill", color: .yellow)
-                journeyStat(title: L.totalXP, value: "\(profile?.totalXP ?? 0)", icon: "bolt.fill", color: .cyan)
+                journeyStat(title: L.totalXP, value: formattedXP(profile?.totalXP ?? 0), icon: "bolt.fill", color: .cyan)
                 journeyStat(title: L.sessions, value: "\(allProgress.count)", icon: "play.circle.fill", color: .green)
                 journeyStat(title: L.streak, value: "\(profile?.streakDays ?? 0) \(L.days)", icon: "flame.fill", color: .orange)
             }
         }
-        .padding(18)
+        .padding(14)
         .background(GlassCardBackground())
     }
 
     private func journeyStat(title: String, value: String, icon: String, color: Color) -> some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 5) {
             Image(systemName: icon)
-                .font(.title2)
+                .font(.system(size: 18))
                 .foregroundStyle(color)
-                .shadow(color: color.opacity(0.4), radius: 8)
+                .shadow(color: color.opacity(0.4), radius: 6)
 
             Text(value)
-                .font(.title3.bold())
+                .font(.system(size: 16, weight: .bold))
                 .foregroundStyle(isDark ? .white : .caribbeanInk)
 
             Text(title)
-                .font(.caption)
+                .font(.system(size: 10))
                 .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
         }
         .frame(maxWidth: .infinity)
-        .padding(12)
+        .padding(8)
         .background(
-            RoundedRectangle(cornerRadius: 16)
+            RoundedRectangle(cornerRadius: 14)
                 .fill(color.opacity(0.06))
                 .overlay(
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 14)
                         .strokeBorder(color.opacity(0.1), lineWidth: 1)
                 )
         )
@@ -247,9 +265,9 @@ struct JourneyView: View {
     // MARK: - Game Type Breakdown
 
     private var gameTypeBreakdown: some View {
-        VStack(spacing: 14) {
+        VStack(spacing: 10) {
             Text(L.gamePerformance)
-                .font(.headline)
+                .font(.system(size: 15, weight: .semibold))
                 .foregroundStyle(
                     LinearGradient(
                         colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
@@ -263,7 +281,7 @@ struct JourneyView: View {
                 gameTypeRow(type)
             }
         }
-        .padding(18)
+        .padding(14)
         .background(GlassCardBackground())
     }
 
@@ -282,36 +300,34 @@ struct JourneyView: View {
             }
         }()
 
-        return HStack(spacing: 10) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(
-                        LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
-                    )
-                    .frame(width: 38, height: 38)
+        return VStack(spacing: 10) {
+            HStack(spacing: 8) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(
+                            LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
+                        )
+                        .frame(width: 32, height: 32)
 
-                Image(systemName: gameTypeIcon(type))
-                    .font(.system(size: 16))
-                    .foregroundStyle(.white)
-            }
+                    Image(systemName: gameTypeIcon(type))
+                        .font(.system(size: 14))
+                        .foregroundStyle(.white)
+                }
 
-            VStack(alignment: .leading, spacing: 6) {
                 Text(type.displayName)
-                    .font(.subheadline.bold())
+                    .font(.system(size: 13, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .caribbeanInk)
 
-                HStack(spacing: 0) {
-                    statPill(value: "\(records.count)", label: L.sessions.lowercased())
-                    Spacer(minLength: 4)
-                    statPill(value: "\(totalScore)", label: L.xp)
-                    Spacer(minLength: 4)
-                    statPill(value: "\(Int(accuracy))%", label: L.accuracy.lowercased())
-                }
+                Spacer()
             }
 
-            Spacer(minLength: 0)
+            HStack(spacing: 0) {
+                statPill(value: "\(records.count)", label: L.sessions.lowercased())
+                statPill(value: formattedXP(totalScore), label: L.xp)
+                statPill(value: "\(Int(accuracy))%", label: L.accuracy.lowercased())
+            }
         }
-        .padding(12)
+        .padding(10)
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
@@ -337,13 +353,13 @@ struct JourneyView: View {
     // MARK: - Streak Section
 
     private var streakSection: some View {
-        VStack(spacing: 14) {
+        VStack(spacing: 10) {
             HStack(spacing: 8) {
                 Image(systemName: "flame.fill")
                     .foregroundStyle(.orange)
                     .symbolEffect(.pulse, options: .repeating.speed(0.3))
                 Text(L.currentStreak)
-                    .font(.headline)
+                    .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(
                         LinearGradient(
                             colors: [.orange, Color(hex: "#ef4444")],
@@ -356,7 +372,7 @@ struct JourneyView: View {
 
             HStack(spacing: 4) {
                 Text("\(profile?.streakDays ?? 0)")
-                    .font(.system(size: 56, weight: .bold, design: .rounded))
+                    .font(.system(size: 42, weight: .bold, design: .rounded))
                     .foregroundStyle(
                         LinearGradient(
                             colors: [.orange, .yellow],
@@ -365,30 +381,30 @@ struct JourneyView: View {
                         )
                     )
                 Text(L.days)
-                    .font(.title3)
+                    .font(.system(size: 15, weight: .medium))
                     .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
-                    .padding(.top, 16)
+                    .padding(.top, 10)
             }
 
             Text(L.keepLearningEveryDay)
-                .font(.caption)
+                .font(.system(size: 11))
                 .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 .multilineTextAlignment(.center)
         }
-        .padding(18)
+        .padding(14)
         .background(GlassCardBackground())
     }
 
     // MARK: - Reset Progress
 
     private var resetProgressButton: some View {
-        VStack(spacing: 14) {
+        VStack(spacing: 10) {
             // Section header
             HStack(spacing: 8) {
                 Image(systemName: "arrow.triangle.2.circlepath")
                     .foregroundStyle(.red.opacity(0.8))
                 Text(L.resetProgress)
-                    .font(.headline)
+                    .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(
                         LinearGradient(
                             colors: [.red.opacity(0.9), .red.opacity(0.6)],
@@ -400,7 +416,7 @@ struct JourneyView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
 
             Text(L.startFreshDescription)
-                .font(.caption)
+                .font(.system(size: 11))
                 .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -433,7 +449,7 @@ struct JourneyView: View {
             }
             .buttonStyle(LumenPressStyle(weight: .soft))
         }
-        .padding(18)
+        .padding(14)
         .background(GlassCardBackground())
     }
 
@@ -513,9 +529,9 @@ struct JourneyView: View {
         .opacity(quoteOpacity)
         .scaleEffect(quoteScale)
         .frame(maxWidth: .infinity)
-        .frame(height: 220)
-        .padding(.horizontal, 26)
-        .padding(.vertical, 26)
+        .frame(height: 180)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 20)
         .background(
             ZStack {
                 GlassCardBackground()

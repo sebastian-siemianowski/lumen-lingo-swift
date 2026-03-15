@@ -51,20 +51,24 @@ final class UserProfile {
     var achievementSoundsVolume: Float = 1.0
     var ambientVolume: Float = 0.3
 
+    /// Level scales quadratically: cumulative XP for level L = 50·L·(L−1).
+    /// Each level costs 100·L XP, so reaching high levels takes real dedication.
     var currentLevel: Int {
-        (totalXP / 100) + 1
+        max(1, Int((1.0 + (1.0 + 0.08 * Double(totalXP)).squareRoot()) / 2.0))
     }
 
     var xpInCurrentLevel: Int {
-        totalXP % 100
+        totalXP - 50 * currentLevel * (currentLevel - 1)
     }
 
     var xpForNextLevel: Int {
-        currentLevel * 100
+        100 * currentLevel
     }
 
     var levelProgress: Double {
-        Double(xpInCurrentLevel) / 100.0
+        let needed = xpForNextLevel
+        guard needed > 0 else { return 0 }
+        return min(1.0, Double(xpInCurrentLevel) / Double(needed))
     }
 
     /// Alias used by views

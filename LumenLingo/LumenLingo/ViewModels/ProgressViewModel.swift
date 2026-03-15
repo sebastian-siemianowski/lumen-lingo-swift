@@ -22,7 +22,7 @@ final class ProgressViewModel {
     var levelProgress: Double { userProfile?.levelProgress ?? 0 }
     var dailyStreak: Int { userProfile?.dailyStreak ?? 0 }
     var totalActiveDays: Int { userProfile?.totalActiveDays ?? 0 }
-    var xpForNextLevel: Int { currentLevel * 100 }
+    var xpForNextLevel: Int { userProfile?.xpForNextLevel ?? 100 }
 
     var totalGamesPlayed: Int {
         gameTypeStats.reduce(0) { $0 + $1.played }
