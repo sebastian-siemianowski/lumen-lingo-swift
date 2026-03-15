@@ -136,7 +136,7 @@ final class AudioService {
         guard !isSessionConfigured else { return }
         do {
             try AVAudioSession.sharedInstance().setCategory(
-                .ambient, mode: .default, options: [.mixWithOthers]
+                .playback, mode: .default, options: [.mixWithOthers]
             )
             try AVAudioSession.sharedInstance().setActive(true)
             isSessionConfigured = true
@@ -1342,7 +1342,7 @@ final class AudioService {
         let variant = soundscape.variants[max(0, clampedIndex)]
 
         // Try bundled audio file first
-        if let url = Bundle.main.url(forResource: variant.fileName, withExtension: "m4a") {
+        if let url = bundleURL(for: variant.fileName, extension: "m4a") {
             DispatchQueue.main.async { [weak self] in
                 guard let self else { return }
                 do {
@@ -1367,6 +1367,27 @@ final class AudioService {
     }
 
     /// Fallback: generated ambient drone (used when audio file not found)
+    /// Robust bundle file lookup — handles Unicode/accented filenames that
+    /// `Bundle.main.url(forResource:)` can miss on real devices due to
+    /// Unicode normalization differences (NFC vs NFD).
+    private func bundleURL(for name: String, extension ext: String) -> URL? {
+        // Standard lookup first
+        if let url = Bundle.main.url(forResource: name, withExtension: ext) {
+            return url
+        }
+        // Fallback: scan the bundle directory for a matching file
+        guard let bundlePath = Bundle.main.resourcePath else { return nil }
+        let fm = FileManager.default
+        guard let contents = try? fm.contentsOfDirectory(atPath: bundlePath) else { return nil }
+        let target = "\(name).\(ext)"
+        // Compare using precomposedStringWithCanonicalMapping (NFC) for consistency
+        let targetNFC = target.precomposedStringWithCanonicalMapping
+        for file in contents where file.precomposedStringWithCanonicalMapping == targetNFC {
+            return URL(fileURLWithPath: bundlePath).appendingPathComponent(file)
+        }
+        return nil
+    }
+
     private func startSoundscapeFallback(_ soundscape: Soundscape) {
         cacheQueue.async { [weak self] in
             guard let self else { return }
