@@ -18,6 +18,17 @@ protocol CloudKeyValueStore: AnyObject {
 
 extension NSUbiquitousKeyValueStore: CloudKeyValueStore {}
 
+/// Stub store used when iCloud KVS entitlement is not provisioned.
+/// All reads return nil/0; writes are no-ops.
+final class InMemoryCloudKeyValueStore: CloudKeyValueStore {
+    private var store: [String: Any] = [:]
+    func string(forKey key: String) -> String? { store[key] as? String }
+    func double(forKey key: String) -> Double { store[key] as? Double ?? 0 }
+    func set(_ value: Any?, forKey key: String) { store[key] = value }
+    func removeObject(forKey key: String) { store[key] = nil }
+    @discardableResult func synchronize() -> Bool { true }
+}
+
 // MARK: - Notifications
 
 extension Notification.Name {
@@ -908,8 +919,10 @@ final class TierManager {
         static let trialStartDate = "cloud_trialStartDate"
     }
 
-    /// Injectable cloud store — defaults to NSUbiquitousKeyValueStore.default.
-    var cloudStore: CloudKeyValueStore = NSUbiquitousKeyValueStore.default
+    /// Injectable cloud store.
+    /// Defaults to in-memory stub until iCloud KVS entitlement is provisioned.
+    /// Once enabled, set to `NSUbiquitousKeyValueStore.default` (see ICloud-sync.md).
+    var cloudStore: CloudKeyValueStore = InMemoryCloudKeyValueStore()
 
     /// Push the current tier and trial date to iCloud KVS.
     func pushToCloud(profile: UserProfile?) {
@@ -960,7 +973,13 @@ final class TierManager {
     }
 
     /// Register for iCloud KVS external change notifications.
+    /// Only activates when cloudStore is a real NSUbiquitousKeyValueStore
+    /// (requires iCloud KVS entitlement — see ICloud-sync.md).
     func startCloudSync(profile: UserProfile?) {
+        guard cloudStore is NSUbiquitousKeyValueStore else {
+            tierLog.info("iCloud KVS not available — cloud sync disabled")
+            return
+        }
         NotificationCenter.default.addObserver(
             forName: NSUbiquitousKeyValueStore.didChangeExternallyNotification,
             object: NSUbiquitousKeyValueStore.default,
