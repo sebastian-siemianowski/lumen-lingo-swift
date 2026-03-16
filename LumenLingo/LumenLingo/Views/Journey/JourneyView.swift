@@ -256,50 +256,108 @@ struct JourneyView: View {
         isCollapsed: Binding<Bool>,
         @ViewBuilder content: () -> Content
     ) -> some View {
+        let collapsed = isCollapsed.wrappedValue
+
         VStack(spacing: 0) {
             Button {
-                withAnimation(.spring(response: 0.3, dampingFraction: 0.75)) {
+                withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
                     isCollapsed.wrappedValue.toggle()
                 }
             } label: {
-                HStack(spacing: 8) {
-                    Image(systemName: icon)
-                        .font(.system(size: 14))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: colors,
-                                startPoint: .leading,
-                                endPoint: .trailing
+                HStack(spacing: 10) {
+                    // Gradient icon circle
+                    ZStack {
+                        Circle()
+                            .fill(
+                                LinearGradient(
+                                    colors: colors.map { $0.opacity(isDark ? 0.2 : 0.15) },
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
                             )
-                        )
+                            .frame(width: 30, height: 30)
+
+                        Image(systemName: icon)
+                            .font(.system(size: 13, weight: .medium))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: colors,
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                    }
 
                     Text(title)
-                        .font(.system(size: 14, weight: .semibold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: colors,
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
+                        .font(.system(size: 15, weight: .semibold))
+                        .foregroundStyle(isDark ? .white.opacity(0.9) : .caribbeanInk)
 
                     Spacer()
 
-                    Image(systemName: "chevron.down")
-                        .font(.system(size: 11, weight: .semibold))
-                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                        .rotationEffect(.degrees(isCollapsed.wrappedValue ? -90 : 0))
+                    // Pill chevron
+                    ZStack {
+                        Capsule()
+                            .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.04))
+                            .frame(width: 28, height: 20)
+
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 10, weight: .bold))
+                            .foregroundStyle(
+                                collapsed
+                                    ? AnyShapeStyle(LinearGradient(colors: colors, startPoint: .leading, endPoint: .trailing))
+                                    : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
+                            )
+                            .rotationEffect(.degrees(collapsed ? 0 : 90))
+                    }
                 }
                 .padding(.horizontal, 14)
-                .padding(.vertical, 10)
-                .background(
-                    RoundedRectangle(cornerRadius: isCollapsed.wrappedValue ? 14 : 0)
-                        .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
-                )
+                .padding(.vertical, collapsed ? 14 : 10)
+                .background {
+                    if collapsed {
+                        // Glass card for collapsed state
+                        RoundedRectangle(cornerRadius: 18)
+                            .fill(.ultraThinMaterial)
+                            .opacity(isDark ? 1.0 : 0.55)
+                            .overlay(
+                                Group {
+                                    if !isDark {
+                                        RoundedRectangle(cornerRadius: 18)
+                                            .fill(
+                                                LinearGradient(
+                                                    colors: [
+                                                        colors[0].opacity(0.08),
+                                                        colors.last!.opacity(0.05)
+                                                    ],
+                                                    startPoint: .leading,
+                                                    endPoint: .trailing
+                                                )
+                                            )
+                                    }
+                                }
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 18)
+                                    .strokeBorder(
+                                        LinearGradient(
+                                            colors: isDark
+                                                ? [colors[0].opacity(0.25), colors.last!.opacity(0.1)]
+                                                : [colors[0].opacity(0.3), colors.last!.opacity(0.15)],
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        ),
+                                        lineWidth: isDark ? 0.75 : 0.5
+                                    )
+                            )
+                            .shadow(
+                                color: colors[0].opacity(isDark ? 0.12 : 0.08),
+                                radius: 8, y: 4
+                            )
+                    }
+                }
             }
-            .buttonStyle(.plain)
+            .buttonStyle(CollapsibleHeaderButtonStyle())
 
-            if !isCollapsed.wrappedValue {
+            if !collapsed {
                 content()
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
@@ -961,5 +1019,17 @@ struct JourneyView: View {
         case .grammar: "text.book.closed.fill"
         case .wordBuilder: "textformat.abc"
         }
+    }
+}
+
+// MARK: - Collapsible Header Button Style
+
+/// Provides press feedback — subtle scale + opacity shift — for section headers.
+private struct CollapsibleHeaderButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.97 : 1.0)
+            .opacity(configuration.isPressed ? 0.85 : 1.0)
+            .animation(.easeOut(duration: 0.15), value: configuration.isPressed)
     }
 }
