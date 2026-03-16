@@ -12,6 +12,7 @@ struct CategoriesView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     @Environment(ContentLoader.self) private var contentLoader
+    @Environment(TierManager.self) private var tierManager
     @Environment(\.localization) private var localization
 
     private var L: AppStrings { localization.strings }
@@ -32,6 +33,7 @@ struct CategoriesView: View {
     @State private var currentPage: Int = 0
     @State private var emptyPulse: Bool = false
     @State private var pressedCardId: String? = nil
+    @State private var lockedCategoryTapped: CategoryDisplayItem? = nil
 
     // Frozen empty-state content — updated only when transitioning INTO empty
     @State private var frozenEmptyIcon: String = "tray"
@@ -198,6 +200,20 @@ struct CategoriesView: View {
                     }
                 }
         )
+        .alert(
+            lockedCategoryTapped.map { "Unlock \($0.name)" } ?? "",
+            isPresented: Binding(
+                get: { lockedCategoryTapped != nil },
+                set: { if !$0 { lockedCategoryTapped = nil } }
+            )
+        ) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            if let item = lockedCategoryTapped {
+                let tier = TierManager.minimumTierForDifficulty(item.difficulty, gameType: gameType)
+                Text("Upgrade to \(tier.displayName) to access \(item.difficulty.displayName.lowercased())-level \(gameType.displayName) categories.")
+            }
+        }
     }
 
     // MARK: - Header
@@ -340,10 +356,18 @@ struct CategoriesView: View {
         let pct = item.progress.percentage
         let completed = pct >= 100.0
         let accentColor = colors.first ?? .white
+        let locked = !tierManager.isCategoryAccessible(item.difficulty, gameType: gameType)
+        let requiredTier = TierManager.minimumTierForDifficulty(item.difficulty, gameType: gameType)
 
         return ZStack(alignment: .topTrailing) {
             // Main card button — covers entire area, reliable tap in LazyVGrid
             Button {
+                if locked {
+                    lockedCategoryTapped = item
+                    let g = UINotificationFeedbackGenerator()
+                    g.notificationOccurred(.warning)
+                    return
+                }
                 // Phase 1: Seamless handoff — keep card visually pressed
                 // after system isPressed goes false
                 pressedCardId = item.id
@@ -365,103 +389,131 @@ struct CategoriesView: View {
                     navigateToGame(categoryId: item.id)
                 }
             } label: {
-                VStack(alignment: .leading, spacing: isGridView ? 6 : 10) {
-                    // Top row: icon (heart is overlaid separately)
-                    HStack(alignment: .top, spacing: 8) {
-                        LiquidGlassIconContainer(
-                            systemName: categoryIcon(item),
-                            gradient: colors,
-                            size: isGridView ? 34 : 44
-                        )
-                        Spacer()
-                        // Invisible spacer matching overlay size to preserve layout
-                        Color.clear.frame(width: isGridView ? 72 : 44, height: 32)
-                    }
+                ZStack {
+                    VStack(alignment: .leading, spacing: isGridView ? 6 : 10) {
+                        // Top row: icon (heart is overlaid separately)
+                        HStack(alignment: .top, spacing: 8) {
+                            LiquidGlassIconContainer(
+                                systemName: categoryIcon(item),
+                                gradient: locked ? [.gray.opacity(0.5)] : colors,
+                                size: isGridView ? 34 : 44
+                            )
+                            Spacer()
+                            // Invisible spacer matching overlay size to preserve layout
+                            Color.clear.frame(width: isGridView ? 72 : 44, height: 32)
+                        }
 
-                    // Category name
-                    Text(item.name)
-                        .font(isGridView ? .system(size: 13, weight: .bold) : .system(size: 16, weight: .bold))
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
-                        .lineLimit(isGridView ? 2 : 2)
-                        .minimumScaleFactor(0.8)
+                        // Category name
+                        Text(item.name)
+                            .font(isGridView ? .system(size: 13, weight: .bold) : .system(size: 16, weight: .bold))
+                            .foregroundStyle(locked
+                                ? (isDark ? .white.opacity(0.4) : .caribbeanPlum.opacity(0.5))
+                                : (isDark ? .white : .caribbeanInk))
+                            .lineLimit(isGridView ? 2 : 2)
+                            .minimumScaleFactor(0.8)
 
-                    // Description
-                    Text(item.description)
-                        .font(isGridView ? .system(size: 11) : .system(size: 13))
-                        .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
-                        .lineLimit(isGridView ? 2 : 3)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                        // Description
+                        Text(item.description)
+                            .font(isGridView ? .system(size: 11) : .system(size: 13))
+                            .foregroundStyle(isDark ? .white.opacity(locked ? 0.25 : 0.55) : .caribbeanPlum.opacity(locked ? 0.35 : 1))
+                            .lineLimit(isGridView ? 2 : 3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
 
-                    Spacer(minLength: 0)
+                        Spacer(minLength: 0)
 
-                    // Bottom row: difficulty + progress
-                    HStack(alignment: .center, spacing: 8) {
-                        difficultyBadge(item.difficulty)
+                        // Bottom row: difficulty + progress / lock info
+                        HStack(alignment: .center, spacing: 8) {
+                            difficultyBadge(item.difficulty, locked: locked)
 
-                        Spacer()
+                            Spacer()
 
-                        if !isGridView {
-                            VStack(alignment: .trailing, spacing: 3) {
-                                LiquidProgressBar(
-                                    progress: pct,
-                                    height: 5,
-                                    gradient: progressGradient
-                                )
-                                .frame(width: 120)
+                            if locked {
+                                // Tier upgrade pill
+                                tierUpgradePill(tier: requiredTier)
+                            } else if !isGridView {
+                                VStack(alignment: .trailing, spacing: 3) {
+                                    LiquidProgressBar(
+                                        progress: pct,
+                                        height: 5,
+                                        gradient: progressGradient
+                                    )
+                                    .frame(width: 120)
 
-                                progressLabel(pct: pct, mastered: item.progress.mastered, total: item.progress.total, completed: completed)
+                                    progressLabel(pct: pct, mastered: item.progress.mastered, total: item.progress.total, completed: completed)
+                                }
                             }
                         }
                     }
-                }
-                .padding(isGridView ? 12 : 14)
-                .frame(height: isGridView ? 200 : nil)
-                .background(
-                    PremiumTransparentCardBackground(
-                        cornerRadius: 22,
-                        accentColor: colors.first ?? .blue
+                    .padding(isGridView ? 12 : 14)
+                    .frame(height: isGridView ? 200 : nil)
+                    .background(
+                        PremiumTransparentCardBackground(
+                            cornerRadius: 22,
+                            accentColor: locked ? .gray.opacity(0.3) : (colors.first ?? .blue)
+                        )
                     )
-                )
-                .clipShape(RoundedRectangle(cornerRadius: 22))
+                    .clipShape(RoundedRectangle(cornerRadius: 22))
+
+                    // Lock overlay for gated categories
+                    if locked {
+                        RoundedRectangle(cornerRadius: 22)
+                            .fill(isDark ? .black.opacity(0.35) : .white.opacity(0.25))
+                            .overlay(alignment: .center) {
+                                Image(systemName: "lock.fill")
+                                    .font(.system(size: isGridView ? 28 : 22, weight: .light))
+                                    .foregroundStyle(
+                                        LinearGradient(
+                                            colors: requiredTier.gradientColors,
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        )
+                                    )
+                                    .shadow(color: requiredTier.accentColor.opacity(0.4), radius: 8)
+                            }
+                            .allowsHitTesting(false)
+                    }
+                }
             }
             .buttonStyle(LumenCategoryCardStyle(
-                accentColor: accentColor,
+                accentColor: locked ? .gray : accentColor,
                 isExternallyPressed: pressedCardId == item.id
             ))
 
-            // Top-right overlay: progress + heart
-            HStack(spacing: 6) {
-                if isGridView {
-                    circularProgress(pct: pct, completed: completed, colors: colors)
-                }
+            // Top-right overlay: progress + heart (hidden when locked)
+            if !locked {
+                HStack(spacing: 6) {
+                    if isGridView {
+                        circularProgress(pct: pct, completed: completed, colors: colors)
+                    }
 
-                // Heart / favorite button
-                Button {
-                    let wasFavorite = favoriteIds.contains(item.id)
-                    withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
-                        HapticsService.shared.favoriteToggle()
-                        toggleFavorite(item.id)
+                    // Heart / favorite button
+                    Button {
+                        let wasFavorite = favoriteIds.contains(item.id)
+                        withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
+                            HapticsService.shared.favoriteToggle()
+                            toggleFavorite(item.id)
+                        }
+                        if wasFavorite {
+                            AudioService.shared.playFavoriteRemove()
+                        } else {
+                            AudioService.shared.playFavoriteAdd()
+                        }
+                    } label: {
+                        Image(systemName: fav ? "heart.fill" : "heart")
+                            .font(.system(size: 13, weight: .medium))
+                            .foregroundStyle(fav ? .pink : (isDark ? .white.opacity(0.35) : .caribbeanMist))
+                            .scaleEffect(fav ? 1.15 : 1.0)
+                            .frame(width: 30, height: 30)
+                            .contentShape(Circle())
                     }
-                    if wasFavorite {
-                        AudioService.shared.playFavoriteRemove()
-                    } else {
-                        AudioService.shared.playFavoriteAdd()
-                    }
-                } label: {
-                    Image(systemName: fav ? "heart.fill" : "heart")
-                        .font(.system(size: 13, weight: .medium))
-                        .foregroundStyle(fav ? .pink : (isDark ? .white.opacity(0.35) : .caribbeanMist))
-                        .scaleEffect(fav ? 1.15 : 1.0)
-                        .frame(width: 30, height: 30)
-                        .contentShape(Circle())
+                    .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
                 }
-                .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
+                .padding(.top, 8)
+                .padding(.trailing, 8)
             }
-            .padding(.top, 8)
-            .padding(.trailing, 8)
         }
-        .accessibilityLabel("\(item.name), \(item.difficulty.rawValue), \(Int(pct))% \(L.complete.lowercased())")
-        .accessibilityHint(L.doubleTapToStart)
+        .accessibilityLabel("\(item.name), \(item.difficulty.rawValue), \(locked ? "locked" : "\(Int(pct))% \(L.complete.lowercased())")")
+        .accessibilityHint(locked ? "Requires \(requiredTier.displayName) tier" : L.doubleTapToStart)
     }
 
     // MARK: - Circular Progress (Grid Cards)
@@ -536,8 +588,8 @@ struct CategoriesView: View {
         }
     }
 
-    private func difficultyBadge(_ difficulty: Difficulty) -> some View {
-        let gradient = difficulty.gradientColors
+    private func difficultyBadge(_ difficulty: Difficulty, locked: Bool = false) -> some View {
+        let gradient = locked ? [Color.gray.opacity(0.5), Color.gray.opacity(0.3)] : difficulty.gradientColors
         return HStack(spacing: 4) {
             // Difficulty icon
             Image(systemName: difficulty.icon)
@@ -586,7 +638,37 @@ struct CategoriesView: View {
                         .strokeBorder(.white.opacity(0.25), lineWidth: 0.75)
                 )
         )
-        .shadow(color: difficulty.pillShadowColor.opacity(0.40), radius: 8, x: 0, y: 3)
+        .shadow(color: locked ? .clear : difficulty.pillShadowColor.opacity(0.40), radius: 8, x: 0, y: 3)
+    }
+
+    // MARK: - Tier Upgrade Pill
+
+    private func tierUpgradePill(tier: MembershipTier) -> some View {
+        HStack(spacing: 4) {
+            Image(systemName: tier.iconName)
+                .font(.system(size: 9, weight: .bold))
+            Text(tier.displayName)
+                .font(.system(size: 10, weight: .bold, design: .rounded))
+                .lineLimit(1)
+        }
+        .foregroundStyle(.white)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 5)
+        .background(
+            Capsule()
+                .fill(
+                    LinearGradient(
+                        colors: tier.gradientColors,
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .overlay(
+                    Capsule()
+                        .strokeBorder(.white.opacity(0.25), lineWidth: 0.75)
+                )
+        )
+        .shadow(color: tier.accentColor.opacity(0.35), radius: 6, x: 0, y: 2)
     }
 
     // MARK: - Empty State
@@ -709,9 +791,11 @@ struct CategoriesView: View {
             switch gameType {
             case .flashCards:
                 let cats = await contentLoader.loadFlashcardCategories(source: source, target: target)
+                let limit = tierManager.flashcardLimit
                 categories = cats.enumerated().map { index, cat in
+                    let effectiveCount = min(cat.items.count, limit)
                     let progress = progressService.categoryProgress(
-                        gameType: .flashCards, category: cat.id, totalItems: cat.items.count, source: source, target: target
+                        gameType: .flashCards, category: cat.id, totalItems: effectiveCount, source: source, target: target
                     )
                     return CategoryDisplayItem(
                         id: cat.id,
@@ -719,7 +803,7 @@ struct CategoriesView: View {
                         description: cat.description,
                         icon: cat.icon,
                         difficulty: cat.difficulty,
-                        itemCount: cat.items.count,
+                        itemCount: effectiveCount,
                         progress: progress,
                         order: index
                     )

@@ -137,6 +137,25 @@ final class TierManager {
             case .free:  return 0
             case .pro, .elite, .royal, .trial: return 1
             }
+        case .flashcardDeckSize:
+            switch tier {
+            case .free:          return 50
+            case .pro:           return 75
+            case .elite:         return 100
+            case .royal, .trial: return Int.max
+            }
+        case .grammarDifficulty:
+            switch tier {
+            case .free:          return 1   // beginner only
+            case .pro:           return 2   // beginner + intermediate
+            case .elite, .royal, .trial: return 3  // all difficulties
+            }
+        case .wordBuilderDifficulty:
+            switch tier {
+            case .free:          return 1   // beginner only
+            case .pro:           return 2   // beginner + intermediate
+            case .elite, .royal, .trial: return 3  // all difficulties
+            }
         }
     }
 
@@ -470,6 +489,53 @@ final class TierManager {
     /// Whether the current tier can use offline mode (Pro+).
     var offlineModeAvailable: Bool {
         hasAccess(to: .offlineMode)
+    }
+
+    // MARK: - Content Personalization Gating
+
+    /// Maximum number of flashcard items per category for the current tier.
+    /// Returns `Int.max` for unlimited (Royal/Trial).
+    var flashcardLimit: Int {
+        allowedCount(for: .flashcardDeckSize)
+    }
+
+    /// Static version for unit testing.
+    nonisolated static func flashcardLimit(for tier: MembershipTier) -> Int {
+        allowedCount(for: .flashcardDeckSize, tier: tier)
+    }
+
+    /// Maximum difficulty level allowed for grammar/wordbuilder categories.
+    /// Returns the highest `Difficulty.numericLevel` the current tier can access.
+    func maxDifficultyLevel(for gameType: GameType) -> Int {
+        switch gameType {
+        case .grammar:     return allowedCount(for: .grammarDifficulty)
+        case .wordBuilder: return allowedCount(for: .wordBuilderDifficulty)
+        case .flashCards:  return Difficulty.advanced.numericLevel // no difficulty gating for flashcards
+        }
+    }
+
+    /// Static version for unit testing.
+    nonisolated static func maxDifficultyLevel(for gameType: GameType, tier: MembershipTier) -> Int {
+        switch gameType {
+        case .grammar:     return allowedCount(for: .grammarDifficulty, tier: tier)
+        case .wordBuilder: return allowedCount(for: .wordBuilderDifficulty, tier: tier)
+        case .flashCards:  return Difficulty.advanced.numericLevel
+        }
+    }
+
+    /// Whether a category's difficulty is accessible for the current tier.
+    func isCategoryAccessible(_ difficulty: Difficulty, gameType: GameType) -> Bool {
+        difficulty.numericLevel <= maxDifficultyLevel(for: gameType)
+    }
+
+    /// The minimum tier required to unlock a given difficulty level for a game type.
+    nonisolated static func minimumTierForDifficulty(_ difficulty: Difficulty, gameType: GameType) -> MembershipTier {
+        for tier in [MembershipTier.free, .pro, .elite, .royal] {
+            if difficulty.numericLevel <= maxDifficultyLevel(for: gameType, tier: tier) {
+                return tier
+            }
+        }
+        return .royal
     }
 
     // MARK: - Sync

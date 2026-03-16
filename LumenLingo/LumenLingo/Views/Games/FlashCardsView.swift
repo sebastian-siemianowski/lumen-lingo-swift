@@ -865,7 +865,11 @@ struct FlashCardsView: View {
         Task {
             let categories = await contentLoader.loadFlashcardCategories(source: source, target: target)
             if let category = categories.first(where: { $0.id == categoryId }) {
-                self.words = category.items
+                let limit = tierManager.flashcardLimit
+                let sorted = category.items.sorted { a, b in
+                    a.difficultyLevel.numericLevel < b.difficultyLevel.numericLevel
+                }
+                self.words = Array(sorted.prefix(limit))
                 self.categoryName = category.name
             }
             isLoading = false

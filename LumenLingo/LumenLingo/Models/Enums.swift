@@ -54,6 +54,25 @@ enum Difficulty: String, Codable, CaseIterable, Identifiable {
 
     var displayName: String { rawValue.capitalized }
 
+    /// Numeric rank for tier-based difficulty gating (1 = easiest).
+    var numericLevel: Int {
+        switch self {
+        case .beginner:     return 1
+        case .intermediate: return 2
+        case .advanced:     return 3
+        }
+    }
+
+    /// Initialize from a numeric level.
+    init?(level: Int) {
+        switch level {
+        case 1: self = .beginner
+        case 2: self = .intermediate
+        case 3: self = .advanced
+        default: return nil
+        }
+    }
+
     var color: Color {
         switch self {
         case .beginner: return .green
@@ -460,6 +479,9 @@ enum PremiumFeature: Equatable, Hashable, CaseIterable {
     case quantumFlow
     case nebulaDrift
     case offlineMode
+    case flashcardDeckSize
+    case grammarDifficulty
+    case wordBuilderDifficulty
 
     /// SF Symbol for this feature.
     var iconName: String {
@@ -471,6 +493,9 @@ enum PremiumFeature: Equatable, Hashable, CaseIterable {
         case .quantumFlow:       return "waveform.path.ecg"
         case .nebulaDrift:       return "cloud.fog.fill"
         case .offlineMode:       return "wifi.slash"
+        case .flashcardDeckSize:  return "rectangle.stack.fill"
+        case .grammarDifficulty:  return "text.book.closed.fill"
+        case .wordBuilderDifficulty: return "character.textbox"
         }
     }
 
@@ -484,6 +509,9 @@ enum PremiumFeature: Equatable, Hashable, CaseIterable {
         case .quantumFlow:       return "Quantum Flow"
         case .nebulaDrift:       return "Nebula Drift"
         case .offlineMode:       return "Offline Mode"
+        case .flashcardDeckSize: return "Extended Flashcard Decks"
+        case .grammarDifficulty: return "Advanced Grammar"
+        case .wordBuilderDifficulty: return "Advanced Word Builder"
         }
     }
 
@@ -497,6 +525,9 @@ enum PremiumFeature: Equatable, Hashable, CaseIterable {
         case .quantumFlow:       return "Mesmerising quantum particle visualisations"
         case .nebulaDrift:       return "Stunning nebula backgrounds that evolve as you learn"
         case .offlineMode:       return "Learn anywhere, even without internet"
+        case .flashcardDeckSize: return "Unlock larger flashcard decks to learn more vocabulary"
+        case .grammarDifficulty: return "Tackle harder grammar exercises to master the language"
+        case .wordBuilderDifficulty: return "Build longer, more complex words to boost your skills"
         }
     }
 
@@ -510,6 +541,9 @@ enum PremiumFeature: Equatable, Hashable, CaseIterable {
         case .quantumFlow:       return .elite
         case .nebulaDrift:       return .elite
         case .offlineMode:       return .pro
+        case .flashcardDeckSize: return .free  // Free gets 50, Pro 75, Elite 100, Royal all
+        case .grammarDifficulty: return .free  // Free gets beginner, Pro+ unlock more
+        case .wordBuilderDifficulty: return .free
         }
     }
 
@@ -528,6 +562,9 @@ enum PremiumFeature: Equatable, Hashable, CaseIterable {
         case .quantumFlow:       return "quantumFlow"
         case .nebulaDrift:       return "nebulaDrift"
         case .offlineMode:       return "offlineMode"
+        case .flashcardDeckSize: return "flashcardDeckSize"
+        case .grammarDifficulty: return "grammarDifficulty"
+        case .wordBuilderDifficulty: return "wordBuilderDifficulty"
         }
     }
 }

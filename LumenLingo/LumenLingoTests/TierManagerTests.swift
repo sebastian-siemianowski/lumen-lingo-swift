@@ -1260,7 +1260,7 @@ final class TierManagerTests: XCTestCase {
     }
 
     func testPremiumFeatureAllCasesCount() {
-        XCTAssertEqual(PremiumFeature.allCases.count, 7)
+        XCTAssertEqual(PremiumFeature.allCases.count, 10)
     }
 
     // MARK: - Royal Trial Lifecycle
@@ -2864,10 +2864,15 @@ final class TierManagerTests: XCTestCase {
         let tm = TierManager()
         tm.currentTier = .free
         let features = tm.allFeatures()
-        // Free tier: only languagePairs should be enabled
-        let enabled = features.filter(\.enabled)
-        XCTAssertEqual(enabled.count, 1, "Free tier should only enable languagePairs")
-        XCTAssertEqual(enabled.first?.feature, .languagePairs)
+        // Free tier: languagePairs + content-personalization features (flashcardDeckSize, grammarDifficulty, wordBuilderDifficulty)
+        let enabled = Set(features.filter(\.enabled).map(\.feature))
+        XCTAssertTrue(enabled.contains(.languagePairs))
+        XCTAssertTrue(enabled.contains(.flashcardDeckSize))
+        XCTAssertTrue(enabled.contains(.grammarDifficulty))
+        XCTAssertTrue(enabled.contains(.wordBuilderDifficulty))
+        XCTAssertFalse(enabled.contains(.soundscapes))
+        XCTAssertFalse(enabled.contains(.quantumFlow))
+        XCTAssertFalse(enabled.contains(.nebulaDrift))
     }
 
     func testAllFeaturesRoyalHasAllAccess() {
@@ -2884,14 +2889,216 @@ final class TierManagerTests: XCTestCase {
         let features = tm.allFeatures()
         let enabledFeatures = Set(features.filter(\.enabled).map(\.feature))
         // Pro: soundscapes, languagePairs, unlimitedPractice, breathingOrbs, offlineMode = YES
+        // + flashcardDeckSize, grammarDifficulty, wordBuilderDifficulty = YES
         // quantumFlow, nebulaDrift = NO
         XCTAssertTrue(enabledFeatures.contains(.soundscapes))
         XCTAssertTrue(enabledFeatures.contains(.languagePairs))
         XCTAssertTrue(enabledFeatures.contains(.unlimitedPractice))
         XCTAssertTrue(enabledFeatures.contains(.breathingOrbs))
         XCTAssertTrue(enabledFeatures.contains(.offlineMode))
+        XCTAssertTrue(enabledFeatures.contains(.flashcardDeckSize))
+        XCTAssertTrue(enabledFeatures.contains(.grammarDifficulty))
+        XCTAssertTrue(enabledFeatures.contains(.wordBuilderDifficulty))
         XCTAssertFalse(enabledFeatures.contains(.quantumFlow))
         XCTAssertFalse(enabledFeatures.contains(.nebulaDrift))
+    }
+
+    // MARK: - Content Personalization: Flashcard Deck Size
+
+    func testFlashcardLimit_Free50() {
+        XCTAssertEqual(TierManager.flashcardLimit(for: .free), 50)
+    }
+
+    func testFlashcardLimit_Pro75() {
+        XCTAssertEqual(TierManager.flashcardLimit(for: .pro), 75)
+    }
+
+    func testFlashcardLimit_Elite100() {
+        XCTAssertEqual(TierManager.flashcardLimit(for: .elite), 100)
+    }
+
+    func testFlashcardLimit_RoyalUnlimited() {
+        XCTAssertEqual(TierManager.flashcardLimit(for: .royal), Int.max)
+    }
+
+    func testFlashcardLimit_TrialUnlimited() {
+        XCTAssertEqual(TierManager.flashcardLimit(for: .trial), Int.max)
+    }
+
+    func testFlashcardAllowedCount_Free50() {
+        XCTAssertEqual(TierManager.allowedCount(for: .flashcardDeckSize, tier: .free), 50)
+    }
+
+    func testFlashcardAllowedCount_Pro75() {
+        XCTAssertEqual(TierManager.allowedCount(for: .flashcardDeckSize, tier: .pro), 75)
+    }
+
+    func testFlashcardAllowedCount_Elite100() {
+        XCTAssertEqual(TierManager.allowedCount(for: .flashcardDeckSize, tier: .elite), 100)
+    }
+
+    func testFlashcardAllowedCount_RoyalMax() {
+        XCTAssertEqual(TierManager.allowedCount(for: .flashcardDeckSize, tier: .royal), Int.max)
+    }
+
+    func testFlashcardAllowedCount_TrialMax() {
+        XCTAssertEqual(TierManager.allowedCount(for: .flashcardDeckSize, tier: .trial), Int.max)
+    }
+
+    func testFlashcardLimitInstanceMethod() {
+        let tm = TierManager()
+        tm.currentTier = .free
+        XCTAssertEqual(tm.flashcardLimit, 50)
+        tm.currentTier = .pro
+        XCTAssertEqual(tm.flashcardLimit, 75)
+        tm.currentTier = .elite
+        XCTAssertEqual(tm.flashcardLimit, 100)
+        tm.currentTier = .royal
+        XCTAssertEqual(tm.flashcardLimit, Int.max)
+    }
+
+    // MARK: - Content Personalization: Grammar Difficulty
+
+    func testGrammarDifficulty_Free1() {
+        XCTAssertEqual(TierManager.allowedCount(for: .grammarDifficulty, tier: .free), 1)
+    }
+
+    func testGrammarDifficulty_Pro2() {
+        XCTAssertEqual(TierManager.allowedCount(for: .grammarDifficulty, tier: .pro), 2)
+    }
+
+    func testGrammarDifficulty_Elite3() {
+        XCTAssertEqual(TierManager.allowedCount(for: .grammarDifficulty, tier: .elite), 3)
+    }
+
+    func testGrammarDifficulty_Royal3() {
+        XCTAssertEqual(TierManager.allowedCount(for: .grammarDifficulty, tier: .royal), 3)
+    }
+
+    func testGrammarDifficulty_Trial3() {
+        XCTAssertEqual(TierManager.allowedCount(for: .grammarDifficulty, tier: .trial), 3)
+    }
+
+    func testMaxDifficultyLevel_GrammarFree() {
+        XCTAssertEqual(TierManager.maxDifficultyLevel(for: .grammar, tier: .free), 1)
+    }
+
+    func testMaxDifficultyLevel_GrammarPro() {
+        XCTAssertEqual(TierManager.maxDifficultyLevel(for: .grammar, tier: .pro), 2)
+    }
+
+    func testMaxDifficultyLevel_GrammarElite() {
+        XCTAssertEqual(TierManager.maxDifficultyLevel(for: .grammar, tier: .elite), 3)
+    }
+
+    func testMaxDifficultyLevel_GrammarRoyal() {
+        XCTAssertEqual(TierManager.maxDifficultyLevel(for: .grammar, tier: .royal), 3)
+    }
+
+    // MARK: - Content Personalization: Word Builder Difficulty
+
+    func testWordBuilderDifficulty_Free1() {
+        XCTAssertEqual(TierManager.allowedCount(for: .wordBuilderDifficulty, tier: .free), 1)
+    }
+
+    func testWordBuilderDifficulty_Pro2() {
+        XCTAssertEqual(TierManager.allowedCount(for: .wordBuilderDifficulty, tier: .pro), 2)
+    }
+
+    func testWordBuilderDifficulty_Elite3() {
+        XCTAssertEqual(TierManager.allowedCount(for: .wordBuilderDifficulty, tier: .elite), 3)
+    }
+
+    func testWordBuilderDifficulty_Royal3() {
+        XCTAssertEqual(TierManager.allowedCount(for: .wordBuilderDifficulty, tier: .royal), 3)
+    }
+
+    func testMaxDifficultyLevel_WordBuilderFree() {
+        XCTAssertEqual(TierManager.maxDifficultyLevel(for: .wordBuilder, tier: .free), 1)
+    }
+
+    func testMaxDifficultyLevel_WordBuilderPro() {
+        XCTAssertEqual(TierManager.maxDifficultyLevel(for: .wordBuilder, tier: .pro), 2)
+    }
+
+    func testMaxDifficultyLevel_WordBuilderElite() {
+        XCTAssertEqual(TierManager.maxDifficultyLevel(for: .wordBuilder, tier: .elite), 3)
+    }
+
+    // MARK: - Content Personalization: Difficulty Access
+
+    func testIsCategoryAccessible_FreeBeginnerOnly() {
+        let tm = TierManager()
+        tm.currentTier = .free
+        XCTAssertTrue(tm.isCategoryAccessible(.beginner, gameType: .grammar))
+        XCTAssertFalse(tm.isCategoryAccessible(.intermediate, gameType: .grammar))
+        XCTAssertFalse(tm.isCategoryAccessible(.advanced, gameType: .grammar))
+    }
+
+    func testIsCategoryAccessible_ProBeginnerAndIntermediate() {
+        let tm = TierManager()
+        tm.currentTier = .pro
+        XCTAssertTrue(tm.isCategoryAccessible(.beginner, gameType: .grammar))
+        XCTAssertTrue(tm.isCategoryAccessible(.intermediate, gameType: .grammar))
+        XCTAssertFalse(tm.isCategoryAccessible(.advanced, gameType: .grammar))
+    }
+
+    func testIsCategoryAccessible_EliteAllDifficulties() {
+        let tm = TierManager()
+        tm.currentTier = .elite
+        XCTAssertTrue(tm.isCategoryAccessible(.beginner, gameType: .grammar))
+        XCTAssertTrue(tm.isCategoryAccessible(.intermediate, gameType: .grammar))
+        XCTAssertTrue(tm.isCategoryAccessible(.advanced, gameType: .grammar))
+    }
+
+    func testIsCategoryAccessible_RoyalAllDifficulties() {
+        let tm = TierManager()
+        tm.currentTier = .royal
+        XCTAssertTrue(tm.isCategoryAccessible(.beginner, gameType: .wordBuilder))
+        XCTAssertTrue(tm.isCategoryAccessible(.intermediate, gameType: .wordBuilder))
+        XCTAssertTrue(tm.isCategoryAccessible(.advanced, gameType: .wordBuilder))
+    }
+
+    func testIsCategoryAccessible_FlashcardsAlwaysAccessible() {
+        let tm = TierManager()
+        tm.currentTier = .free
+        // Flashcards don't gate by difficulty — only by deck size
+        XCTAssertTrue(tm.isCategoryAccessible(.beginner, gameType: .flashCards))
+        XCTAssertTrue(tm.isCategoryAccessible(.intermediate, gameType: .flashCards))
+        XCTAssertTrue(tm.isCategoryAccessible(.advanced, gameType: .flashCards))
+    }
+
+    // MARK: - Content Personalization: Minimum Tier for Difficulty
+
+    func testMinimumTierForDifficulty_Beginner() {
+        XCTAssertEqual(TierManager.minimumTierForDifficulty(.beginner, gameType: .grammar), .free)
+        XCTAssertEqual(TierManager.minimumTierForDifficulty(.beginner, gameType: .wordBuilder), .free)
+    }
+
+    func testMinimumTierForDifficulty_Intermediate() {
+        XCTAssertEqual(TierManager.minimumTierForDifficulty(.intermediate, gameType: .grammar), .pro)
+        XCTAssertEqual(TierManager.minimumTierForDifficulty(.intermediate, gameType: .wordBuilder), .pro)
+    }
+
+    func testMinimumTierForDifficulty_Advanced() {
+        XCTAssertEqual(TierManager.minimumTierForDifficulty(.advanced, gameType: .grammar), .elite)
+        XCTAssertEqual(TierManager.minimumTierForDifficulty(.advanced, gameType: .wordBuilder), .elite)
+    }
+
+    // MARK: - Difficulty Enum: Numeric Level
+
+    func testDifficultyNumericLevel() {
+        XCTAssertEqual(Difficulty.beginner.numericLevel, 1)
+        XCTAssertEqual(Difficulty.intermediate.numericLevel, 2)
+        XCTAssertEqual(Difficulty.advanced.numericLevel, 3)
+    }
+
+    func testDifficultyInitFromLevel() {
+        XCTAssertEqual(Difficulty(level: 1), .beginner)
+        XCTAssertEqual(Difficulty(level: 2), .intermediate)
+        XCTAssertEqual(Difficulty(level: 3), .advanced)
+        XCTAssertNil(Difficulty(level: 0))
+        XCTAssertNil(Difficulty(level: 4))
     }
 }
 

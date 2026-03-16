@@ -1504,9 +1504,9 @@ Epic 24 (Tier Transitions) depends on Epic 17
 17. Epic 17: Tier-Specific Animations & Polish
 18. Epic 18: Data & Analytics by Tier
 
-### Phase 7 — Future Expansion (Not Started)
-19. Epic 21: Onboarding & First-Run Tier Education
-20. Epic 22: Content Personalization by Tier
+### Phase 7 — Future Expansion
+19. Epic 21: Onboarding & First-Run Tier Education ✅
+20. Epic 22: Content Personalization by Tier ✅
 21. Epic 23: Social & Community Gating
 22. Epic 24: Tier Transition Animations & Micro-interactions
 
@@ -1591,7 +1591,7 @@ Epic 24 (Tier Transitions) depends on Epic 17
 
 ---
 
-## Epic 22: Content Personalization by Tier
+## Epic 22: Content Personalization by Tier ✅ COMPLETED
 
 ### Story 22.1 — Flashcard Deck Size by Tier
 
@@ -1608,15 +1608,15 @@ Epic 24 (Tier Transitions) depends on Epic 17
 - ContentLoader respects the tier limit when loading decks.
 
 **Subtasks:**
-- [ ] 22.1.1 — Add `TierManager.flashcardLimit(for pair:) -> Int?` (nil = unlimited).
-- [ ] 22.1.2 — Limits: free→50, pro→75, elite→100, royal/trial→nil.
-- [ ] 22.1.3 — In `ContentLoader.loadFlashcards()`, apply `.prefix(limit)` to loaded array.
-- [ ] 22.1.4 — Flashcard decks sorted by difficulty before applying limit (easiest first for Free users).
-- [ ] 22.1.5 — In deck info view: show "50 of 1,200 cards" for Free, "All 1,200 cards" for Royal(or maximum amount).
-- [ ] 22.1.6 — On tier upgrade: reload deck to include newly available cards.
-- [ ] 22.1.7 — On tier downgrade: trim deck after current session ends (don't interrupt mid-session).
-- [ ] 22.1.8 — Add unit test: free tier loads exactly 50 cards from a 1200-card deck(or maximum amount).
-- [ ] 22.1.9 — Add unit test: royal tier loads all cards.
+- [x] 22.1.1 — Add `TierManager.flashcardLimit` computed property + `static flashcardLimit(for:)` method.
+- [x] 22.1.2 — Limits: free→50, pro→75, elite→100, royal/trial→Int.max (unlimited).
+- [x] 22.1.3 — In `FlashCardsView.loadContent()`, apply `.prefix(limit)` to loaded array (view-layer filtering preserves ContentLoader cache).
+- [x] 22.1.4 — Flashcard decks sorted by `difficultyLevel.numericLevel` before applying limit (easiest first for Free users).
+- [x] 22.1.5 — CategoriesView shows effective item count `min(cat.items.count, flashcardLimit)` per category.
+- [x] 22.1.6 — On tier upgrade: @Observable TierManager triggers SwiftUI re-render, reloading decks reactively.
+- [x] 22.1.7 — On tier downgrade: same reactive re-render trims deck on next view appearance.
+- [x] 22.1.8 — Add unit tests: flashcard limits per tier (free→50, pro→75, elite→100, royal→Int.max, trial→Int.max).
+- [x] 22.1.9 — Add unit test: royal tier loads all cards (Int.max limit).
 
 ---
 
@@ -1634,18 +1634,21 @@ Epic 24 (Tier Transitions) depends on Epic 17
 - Locked difficulties show "Available on [tier]" in the difficulty selector.
 
 **Subtasks:**
-- [ ] 22.2.1 — Add `TierManager.maxGrammarDifficulty: Int` (free→2, pro→4, elite→6, royal→6).
-- [ ] 22.2.2 — Add `TierManager.hasBonusChallenges: Bool` (royal/trial only).
-- [ ] 22.2.3 — In grammar exercise loader, filter by `difficulty <= maxGrammarDifficulty`.
-- [ ] 22.2.4 — In difficulty picker: show all levels, lock levels beyond tier limit.
-- [ ] 22.2.5 — Locked level shows tier badge and "Upgrade to unlock" on tap.
-- [ ] 22.2.6 — Bonus challenges: additional exercise sets with advanced grammar patterns.
-- [ ] 22.2.7 — On upgrade: new difficulty levels appear with "NEW" badge animation.
-- [ ] 22.2.8 — Add unit test: free tier → only difficulty 1-2 exercises loaded.
+- [x] 22.2.1 — Add `TierManager.maxDifficultyLevel(for: .grammar)` (free→1/beginner, pro→2/intermediate, elite+→3/advanced). Uses Difficulty enum's 3 levels.
+- [ ] 22.2.2 — Add `TierManager.hasBonusChallenges: Bool` (royal/trial only) — deferred, no bonus content exists yet.
+- [x] 22.2.3 — In CategoriesView, `isCategoryAccessible()` gates categories by difficulty vs tier limit.
+- [x] 22.2.4 — CategoriesView shows all categories; locked ones display dimmed card with lock overlay.
+- [x] 22.2.5 — Locked category shows tier gradient lock icon, tier upgrade pill, and alert with "Upgrade to [tier]" on tap.
+- [ ] 22.2.6 — Bonus challenges: deferred, requires bonus content JSON files.
+- [ ] 22.2.7 — On upgrade: NEW badge animation — deferred for future polish pass.
+- [x] 22.2.8 — Add unit tests: grammar difficulty per tier + category accessibility tests.
 
 ### Story 22.3 — Wordbuilder Exercise Complexity by Tier
 **Acceptance Criteria:**
-- Similar to  Story 22.2 
+- [x] Same tier-based difficulty gating as Story 22.2, applied to `.wordBuilder` game type.
+- [x] `TierManager.maxDifficultyLevel(for: .wordBuilder)` mirrors grammar gating (free→1, pro→2, elite+→3).
+- [x] CategoriesView handles wordBuilder categories with same locked overlay UX.
+- [x] Unit tests cover wordBuilder difficulty limits per tier.
 
 ---
 
