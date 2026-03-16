@@ -53,6 +53,7 @@ targets:
         TARGETED_DEVICE_FAMILY: "1,2"
         SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: true
         CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_ENTITLEMENTS: LumenLingo/LumenLingo.entitlements
 
   LumenLingoTests:
     type: bundle.unit-test
