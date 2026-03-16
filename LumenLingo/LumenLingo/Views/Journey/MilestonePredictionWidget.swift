@@ -62,26 +62,6 @@ struct MilestonePredictionWidget: View {
     var body: some View {
         GlassPanelWrapper {
             VStack(alignment: .leading, spacing: 12) {
-                HStack(spacing: 8) {
-                    Image(systemName: "wand.and.stars")
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#f59e0b"), Color(hex: "#ec4899")],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                    Text(L.milestonePredictionsTitle)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#f59e0b"), Color(hex: "#ec4899")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                }
-
                 Text(L.basedOnYourPace)
                     .font(.system(size: 11))
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)

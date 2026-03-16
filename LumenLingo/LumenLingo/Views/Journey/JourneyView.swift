@@ -358,6 +358,20 @@ struct JourneyView: View {
             .buttonStyle(CollapsibleHeaderButtonStyle())
 
             if !collapsed {
+                // Gradient accent line connecting header to content
+                Rectangle()
+                    .fill(
+                        LinearGradient(
+                            colors: [.clear, colors[0].opacity(0.3), colors.last!.opacity(0.2), .clear],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(height: 1)
+                    .padding(.horizontal, 24)
+                    .padding(.top, 2)
+                    .padding(.bottom, 6)
+
                 content()
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
@@ -429,21 +443,6 @@ struct JourneyView: View {
     private var milestonesSection: some View {
         GlassPanelWrapper {
             VStack(alignment: .leading, spacing: 0) {
-                HStack(spacing: 8) {
-                    Image(systemName: "flag.checkered")
-                        .foregroundStyle(Color(hex: "#667eea"))
-                    Text(L.milestones)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                }
-                .padding(.bottom, 12)
-
                 ForEach(Array(milestones.enumerated()), id: \.element.title) { index, milestone in
                     milestoneRow(milestone, isLast: index == milestones.count - 1)
                 }
@@ -679,17 +678,6 @@ struct JourneyView: View {
 
     private var gameTypeBreakdown: some View {
         VStack(spacing: 10) {
-            Text(L.gamePerformance)
-                .font(.system(size: 15, weight: .semibold))
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-                .frame(maxWidth: .infinity, alignment: .leading)
-
             ForEach(GameType.allCases, id: \.self) { type in
                 gameTypeRow(type)
             }
@@ -763,22 +751,6 @@ struct JourneyView: View {
 
     private var streakSection: some View {
         VStack(spacing: 10) {
-            HStack(spacing: 8) {
-                Image(systemName: "flame.fill")
-                    .foregroundStyle(.orange)
-                    .symbolEffect(.pulse, options: .repeating.speed(0.3))
-                Text(L.currentStreak)
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [.orange, Color(hex: "#ef4444")],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-
             HStack(spacing: 4) {
                 Text("\(profile?.streakDays ?? 0)")
                     .font(.system(size: 42, weight: .bold, design: .rounded))
@@ -808,22 +780,6 @@ struct JourneyView: View {
 
     private var resetProgressButton: some View {
         VStack(spacing: 10) {
-            // Section header
-            HStack(spacing: 8) {
-                Image(systemName: "arrow.triangle.2.circlepath")
-                    .foregroundStyle(.red.opacity(0.8))
-                Text(L.resetProgress)
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [.red.opacity(0.9), .red.opacity(0.6)],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-
             Text(L.startFreshDescription)
                 .font(.system(size: 11))
                 .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)

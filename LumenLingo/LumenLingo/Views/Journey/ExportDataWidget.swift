@@ -25,29 +25,11 @@ struct ExportDataWidget: View {
     var body: some View {
         GlassPanelWrapper {
             VStack(alignment: .leading, spacing: 14) {
-                // Header
-                HStack(spacing: 8) {
-                    Image(systemName: "square.and.arrow.up.fill")
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#10b981"), Color(hex: "#059669")],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                    Text(L.exportData)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#10b981"), Color(hex: "#059669")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                    Spacer()
+                HStack {
                     Text("\(allProgress.count) \(L.sessionsLabel)")
                         .font(.system(size: 11, weight: .medium, design: .rounded))
                         .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                    Spacer()
                 }
 
                 if allProgress.isEmpty {

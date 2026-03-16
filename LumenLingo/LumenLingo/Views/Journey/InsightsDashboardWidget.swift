@@ -22,27 +22,6 @@ struct InsightsDashboardWidget: View {
     var body: some View {
         GlassPanelWrapper {
             VStack(alignment: .leading, spacing: 16) {
-                // Header
-                HStack(spacing: 8) {
-                    Image(systemName: "brain.head.profile.fill")
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#f59e0b"), Color(hex: "#ef4444")],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                    Text(L.learningInsights)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#f59e0b"), Color(hex: "#ef4444")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                }
-
                 if allProgress.count < 3 {
                     needMoreDataView
                 } else {

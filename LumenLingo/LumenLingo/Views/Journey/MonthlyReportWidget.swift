@@ -55,26 +55,6 @@ struct MonthlyReportWidget: View {
     var body: some View {
         GlassPanelWrapper {
             VStack(alignment: .leading, spacing: 14) {
-                HStack(spacing: 8) {
-                    Image(systemName: "doc.text.fill")
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#8b5cf6"), Color(hex: "#ec4899")],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                    Text(L.monthlyReport)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#8b5cf6"), Color(hex: "#ec4899")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                }
-
                 Text(L.last30Days)
                     .font(.system(size: 11))
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)

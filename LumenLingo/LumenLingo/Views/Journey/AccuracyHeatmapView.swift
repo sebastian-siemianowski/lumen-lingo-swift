@@ -48,26 +48,6 @@ struct AccuracyHeatmapView: View {
     var body: some View {
         GlassPanelWrapper {
             VStack(alignment: .leading, spacing: 12) {
-                HStack(spacing: 8) {
-                    Image(systemName: "square.grid.3x3.fill")
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#f59e0b"), Color(hex: "#ef4444")],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                    Text(L.accuracyHeatmap)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#f59e0b"), Color(hex: "#ef4444")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                }
-
                 Text(L.accuracyByCategory)
                     .font(.system(size: 11))
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)

@@ -54,24 +54,10 @@ struct WeeklyTrendWidget: View {
     var body: some View {
         GlassPanelWrapper {
             VStack(alignment: .leading, spacing: 12) {
-                HStack(spacing: 8) {
-                    Image(systemName: "chart.xyaxis.line")
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                    Text(L.weeklyTrend)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
+                HStack {
+                    Text(L.thisWeekVsLastWeek)
+                        .font(.system(size: 11))
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
 
                     Spacer()
 
@@ -84,10 +70,6 @@ struct WeeklyTrendWidget: View {
                     }
                     .foregroundStyle(changePercent >= 0 ? .green : .red)
                 }
-
-                Text(L.thisWeekVsLastWeek)
-                    .font(.system(size: 11))
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
 
                 // Dual line chart
                 GeometryReader { geo in

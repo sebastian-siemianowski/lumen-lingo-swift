@@ -35,26 +35,6 @@ struct DailyXPChartView: View {
     var body: some View {
         GlassPanelWrapper {
             VStack(alignment: .leading, spacing: 12) {
-                HStack(spacing: 8) {
-                    Image(systemName: "chart.bar.fill")
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                    Text(L.dailyXPChart)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                }
-
                 Text(L.last7Days)
                     .font(.system(size: 11))
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
