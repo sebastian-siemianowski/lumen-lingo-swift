@@ -43,6 +43,10 @@ final class TierManager {
 
     var currentTier: MembershipTier = .free
 
+    /// The tier the user held before the most recent tier change.
+    /// Used by transition animations to calculate feature diffs.
+    private(set) var previousTier: MembershipTier?
+
     /// True during the animated tier-change transition.
     private(set) var isTransitioning: Bool = false
 
@@ -50,6 +54,15 @@ final class TierManager {
     var showUpgradeCelebration: Bool = false
     var upgradedToTier: MembershipTier = .free
     var isTierUpgrade: Bool = true
+
+    /// Controls the feature transition overlay (unlock ripple / lock dimming).
+    var showFeatureTransition: Bool = false
+
+    /// Features that changed access state during the last tier transition.
+    /// Positive = newly unlocked, reported on upgrade.
+    private(set) var newlyUnlockedFeatures: [PremiumFeature] = []
+    /// Features that lost access during the last tier transition (downgrade).
+    private(set) var newlyLockedFeatures: [PremiumFeature] = []
 
     // MARK: - Tier Access
 
@@ -90,6 +103,26 @@ final class TierManager {
         PremiumFeature.allCases.map { feature in
             (feature: feature, enabled: hasAccess(to: feature))
         }
+    }
+
+    /// Computes which features changed access between two tiers.
+    /// - Returns: (unlocked: features gaining access, locked: features losing access)
+    nonisolated static func featureDiff(
+        from oldTier: MembershipTier,
+        to newTier: MembershipTier
+    ) -> (unlocked: [PremiumFeature], locked: [PremiumFeature]) {
+        var unlocked: [PremiumFeature] = []
+        var locked: [PremiumFeature] = []
+        for feature in PremiumFeature.allCases {
+            let oldAccess = allowedCount(for: feature, tier: oldTier) > 0
+            let newAccess = allowedCount(for: feature, tier: newTier) > 0
+            if !oldAccess && newAccess {
+                unlocked.append(feature)
+            } else if oldAccess && !newAccess {
+                locked.append(feature)
+            }
+        }
+        return (unlocked, locked)
     }
 
     /// Static tier→feature mapping used by both instance and unit tests.
@@ -744,7 +777,14 @@ final class TierManager {
         let newTier = MembershipTier(tierId: tierId)
         guard newTier != currentTier else { return }
 
+        let oldTier = currentTier
         let wasUpgrade = newTier.rank > currentTier.rank
+
+        // Calculate feature diffs before changing tier
+        let diff = Self.featureDiff(from: oldTier, to: newTier)
+        previousTier = oldTier
+        newlyUnlockedFeatures = diff.unlocked
+        newlyLockedFeatures = diff.locked
 
         isTransitioning = true
         withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
@@ -768,6 +808,12 @@ final class TierManager {
         } else {
             let feedback = UIImpactFeedbackGenerator(style: .light)
             feedback.impactOccurred()
+            // Downgrade to free — show lock dimming directly (no celebration)
+            if !newlyLockedFeatures.isEmpty {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+                    self?.showFeatureTransition = true
+                }
+            }
         }
 
         // Restore dormant settings on upgrade

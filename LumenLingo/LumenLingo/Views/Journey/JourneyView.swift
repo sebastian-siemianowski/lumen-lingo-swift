@@ -36,6 +36,21 @@ struct JourneyView: View {
     @State private var quoteIconRotation: Double = 0
     @State private var showResetAlert = false
 
+    // Collapsible section state
+    @State private var isStatsCollapsed = false
+    @State private var isMilestonesCollapsed = false
+    @State private var isGameBreakdownCollapsed = false
+    @State private var isDailyXPCollapsed = false
+    @State private var isWeeklyTrendCollapsed = false
+    @State private var isAccuracyHeatmapCollapsed = false
+    @State private var isMonthlyReportCollapsed = false
+    @State private var isMilestonePredictionsCollapsed = false
+    @State private var isExportDataCollapsed = false
+    @State private var isInsightsCollapsed = false
+    @State private var isStreakCollapsed = false
+    @State private var isQuoteCollapsed = false
+    @State private var isResetCollapsed = true
+
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 20) {
@@ -43,63 +58,154 @@ struct JourneyView: View {
                 journeyHeader
 
                 // Overall stats (always visible — basicStats)
-                overallStatsPanel
+                collapsibleSection(
+                    title: L.totalXP,
+                    icon: "chart.bar.fill",
+                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                    isCollapsed: $isStatsCollapsed
+                ) {
+                    overallStatsPanel
+                }
 
                 // Milestones timeline (always visible, badge style varies by tier)
-                milestonesSection
+                collapsibleSection(
+                    title: L.milestones,
+                    icon: "flag.checkered",
+                    colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
+                    isCollapsed: $isMilestonesCollapsed
+                ) {
+                    milestonesSection
+                }
 
                 // Game type breakdown (Pro+)
-                journeySection(for: .gameBreakdown) {
-                    gameTypeBreakdown
+                collapsibleSection(
+                    title: L.gamePerformance,
+                    icon: "gamecontroller.fill",
+                    colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+                    isCollapsed: $isGameBreakdownCollapsed
+                ) {
+                    journeySection(for: .gameBreakdown) {
+                        gameTypeBreakdown
+                    }
                 }
 
                 // Daily XP Chart (Pro+)
-                journeySection(for: .dailyXPChart) {
-                    DailyXPChartView(allProgress: allProgress)
+                collapsibleSection(
+                    title: L.dailyXPChart,
+                    icon: "chart.bar.xaxis",
+                    colors: [Color(hex: "#f59e0b"), Color(hex: "#ef4444")],
+                    isCollapsed: $isDailyXPCollapsed
+                ) {
+                    journeySection(for: .dailyXPChart) {
+                        DailyXPChartView(allProgress: allProgress)
+                    }
                 }
 
                 // Weekly Trend (Elite+)
-                journeySection(for: .weeklyTrend) {
-                    WeeklyTrendWidget(allProgress: allProgress)
+                collapsibleSection(
+                    title: L.weeklyTrend,
+                    icon: "chart.line.uptrend.xyaxis",
+                    colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
+                    isCollapsed: $isWeeklyTrendCollapsed
+                ) {
+                    journeySection(for: .weeklyTrend) {
+                        WeeklyTrendWidget(allProgress: allProgress)
+                    }
                 }
 
                 // Accuracy Heatmap (Elite+)
-                journeySection(for: .accuracyHeatmap) {
-                    AccuracyHeatmapView(allProgress: allProgress)
+                collapsibleSection(
+                    title: L.accuracyHeatmap,
+                    icon: "square.grid.3x3.fill",
+                    colors: [Color(hex: "#f97316"), Color(hex: "#f59e0b")],
+                    isCollapsed: $isAccuracyHeatmapCollapsed
+                ) {
+                    journeySection(for: .accuracyHeatmap) {
+                        AccuracyHeatmapView(allProgress: allProgress)
+                    }
                 }
 
                 // Monthly Report (Royal)
-                journeySection(for: .monthlyReport) {
-                    MonthlyReportWidget(allProgress: allProgress, profile: profile)
+                collapsibleSection(
+                    title: L.monthlyReport,
+                    icon: "doc.text.fill",
+                    colors: [Color(hex: "#6366f1"), Color(hex: "#8b5cf6")],
+                    isCollapsed: $isMonthlyReportCollapsed
+                ) {
+                    journeySection(for: .monthlyReport) {
+                        MonthlyReportWidget(allProgress: allProgress, profile: profile)
+                    }
                 }
 
                 // Milestone Predictions (Royal)
-                journeySection(for: .milestonePredictions) {
-                    MilestonePredictionWidget(
-                        allProgress: allProgress,
-                        profile: profile,
-                        milestones: milestones.map { JourneyMilestone(title: $0.title, icon: $0.icon, color: $0.color, xpRequired: $0.xpRequired) }
-                    )
+                collapsibleSection(
+                    title: L.milestonePredictionsTitle,
+                    icon: "sparkle.magnifyingglass",
+                    colors: [Color(hex: "#ec4899"), Color(hex: "#f43f5e")],
+                    isCollapsed: $isMilestonePredictionsCollapsed
+                ) {
+                    journeySection(for: .milestonePredictions) {
+                        MilestonePredictionWidget(
+                            allProgress: allProgress,
+                            profile: profile,
+                            milestones: milestones.map { JourneyMilestone(title: $0.title, icon: $0.icon, color: $0.color, xpRequired: $0.xpRequired) }
+                        )
+                    }
                 }
 
                 // Export Data (Elite+)
-                journeySection(for: .exportData) {
-                    ExportDataWidget(allProgress: allProgress)
+                collapsibleSection(
+                    title: L.exportData,
+                    icon: "square.and.arrow.up.fill",
+                    colors: [Color(hex: "#14b8a6"), Color(hex: "#06b6d4")],
+                    isCollapsed: $isExportDataCollapsed
+                ) {
+                    journeySection(for: .exportData) {
+                        ExportDataWidget(allProgress: allProgress)
+                    }
                 }
 
                 // Learning Insights (Royal)
-                journeySection(for: .insights) {
-                    InsightsDashboardWidget(allProgress: allProgress)
+                collapsibleSection(
+                    title: L.learningInsights,
+                    icon: "lightbulb.fill",
+                    colors: [Color(hex: "#f59e0b"), Color(hex: "#fbbf24")],
+                    isCollapsed: $isInsightsCollapsed
+                ) {
+                    journeySection(for: .insights) {
+                        InsightsDashboardWidget(allProgress: allProgress)
+                    }
                 }
 
                 // Streak section (always visible — part of basicStats)
-                streakSection
+                collapsibleSection(
+                    title: L.currentStreak,
+                    icon: "flame.fill",
+                    colors: [.orange, Color(hex: "#ef4444")],
+                    isCollapsed: $isStreakCollapsed
+                ) {
+                    streakSection
+                }
 
                 // Wisdom quote
-                quoteCard
+                collapsibleSection(
+                    title: "Wisdom",
+                    icon: "sparkles",
+                    colors: [Color(hex: "#c084fc"), Color(hex: "#f0abfc")],
+                    isCollapsed: $isQuoteCollapsed
+                ) {
+                    quoteCard
+                }
 
                 // Reset progress
-                resetProgressButton
+                collapsibleSection(
+                    title: L.resetProgress,
+                    icon: "arrow.triangle.2.circlepath",
+                    colors: [.red.opacity(0.9), .red.opacity(0.6)],
+                    isCollapsed: $isResetCollapsed
+                ) {
+                    resetProgressButton
+                }
 
                 Spacer(minLength: 80)
             }
@@ -137,6 +243,66 @@ struct JourneyView: View {
                 featureDescription: sectionDescription(for: section),
                 content: content
             )
+        }
+    }
+
+    // MARK: - Collapsible Section Wrapper
+
+    @ViewBuilder
+    private func collapsibleSection<Content: View>(
+        title: String,
+        icon: String,
+        colors: [Color],
+        isCollapsed: Binding<Bool>,
+        @ViewBuilder content: () -> Content
+    ) -> some View {
+        VStack(spacing: 0) {
+            Button {
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.75)) {
+                    isCollapsed.wrappedValue.toggle()
+                }
+            } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: icon)
+                        .font(.system(size: 14))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: colors,
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+
+                    Text(title)
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: colors,
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+
+                    Spacer()
+
+                    Image(systemName: "chevron.down")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                        .rotationEffect(.degrees(isCollapsed.wrappedValue ? -90 : 0))
+                }
+                .padding(.horizontal, 14)
+                .padding(.vertical, 10)
+                .background(
+                    RoundedRectangle(cornerRadius: isCollapsed.wrappedValue ? 14 : 0)
+                        .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
+                )
+            }
+            .buttonStyle(.plain)
+
+            if !isCollapsed.wrappedValue {
+                content()
+                    .transition(.opacity.combined(with: .move(edge: .top)))
+            }
         }
     }
 

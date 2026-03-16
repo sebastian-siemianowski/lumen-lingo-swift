@@ -35,6 +35,9 @@ struct LumenLingoApp: App {
                         .overlay {
                             TierUpgradeCelebrationView()
                         }
+                        .overlay {
+                            FeatureTransitionOverlay()
+                        }
                 }
             }
             .environment(themeManager)

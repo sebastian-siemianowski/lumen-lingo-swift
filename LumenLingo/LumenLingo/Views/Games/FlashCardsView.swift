@@ -1900,7 +1900,18 @@ struct GameCompleteView: View {
 
     private var shareableCardSection: some View {
         Button {
-            // Share action — placeholder for UIActivityViewController
+            let cardData = ShareableCardRenderer.CardData(
+                score: score,
+                correctAnswers: correctAnswers,
+                totalQuestions: totalQuestions,
+                accuracy: accuracy,
+                gameType: gameType,
+                categoryName: categoryName,
+                tier: tierManager.currentTier,
+                timeSpent: timeSpent,
+                xpMultiplier: xpMultiplier
+            )
+            ShareableCardRenderer.shareCard(data: cardData)
         } label: {
             HStack(spacing: 10) {
                 Image(systemName: "square.and.arrow.up")

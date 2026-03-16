@@ -399,6 +399,8 @@ struct TierCardView: View {
     @State private var isHovered = false
     @State private var ctaPressed = false
     @State private var showTrialConfirmation = false
+    @State private var isCardPressed = false
+    @State private var gradientPulse: Double = 0
 
     private var price: Double {
         tier.priceMonthly
@@ -409,6 +411,24 @@ struct TierCardView: View {
     }
 
     var body: some View {
+        GeometryReader { proxy in
+            let midY = proxy.frame(in: .global).midY
+            let screenMid = UIScreen.main.bounds.height / 2
+            let parallaxOffset = (midY - screenMid) / screenMid * 6
+
+            cardContent(parallaxOffset: parallaxOffset)
+        }
+        .frame(height: cardHeight)
+    }
+
+    /// Estimated card height — let SwiftUI size the content, then use it for GeometryReader.
+    private var cardHeight: CGFloat {
+        // Base: header + price + benefits + CTA + padding
+        let benefitHeight = CGFloat(tier.benefits.count) * 24
+        return 150 + benefitHeight + 40
+    }
+
+    private func cardContent(parallaxOffset: CGFloat) -> some View {
         VStack(alignment: .leading, spacing: 14) {
             // Header
             HStack {
@@ -420,6 +440,7 @@ struct TierCardView: View {
                             startPoint: .topLeading, endPoint: .bottomTrailing
                         )
                     )
+                    .offset(y: parallaxOffset)
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(tier.name)
@@ -520,6 +541,7 @@ struct TierCardView: View {
                 if isSelected {
                     Image(systemName: "checkmark.circle.fill")
                         .font(.caption)
+                        .transition(.scale.combined(with: .opacity))
                 }
                 Text(isSelected ? L.currentPlan : tier.cta)
             }
@@ -580,6 +602,7 @@ struct TierCardView: View {
         .background(
             RoundedRectangle(cornerRadius: 22)
                 .fill(.ultraThinMaterial)
+                .opacity(isSelected ? (0.85 + gradientPulse * 0.15) : 1.0)
                 .overlay(
                     RoundedRectangle(cornerRadius: 22)
                         .strokeBorder(
@@ -591,10 +614,35 @@ struct TierCardView: View {
                 )
                 .shadow(
                     color: (tier.isHighlighted || isSelected) ? tier.gradientColors.first!.opacity(0.2) : .clear,
-                    radius: 20, y: 8
+                    radius: isCardPressed ? 28 : 20, y: isCardPressed ? 3 : 8
                 )
         )
+        .scaleEffect(isCardPressed ? 0.98 : 1.0)
+        .animation(.spring(response: 0.3, dampingFraction: 0.65), value: isCardPressed)
+        .animation(.spring(response: 0.3, dampingFraction: 0.65), value: isSelected)
+        .onLongPressGesture(minimumDuration: .infinity, pressing: { pressing in
+            isCardPressed = pressing
+        }, perform: {})
         .opacity(tier.isDisabled ? 0.5 : 1.0)
+        .onAppear {
+            if isSelected {
+                withAnimation(.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
+                    gradientPulse = 1.0
+                }
+            }
+        }
+        .onChange(of: isSelected) { _, newValue in
+            if newValue {
+                gradientPulse = 0
+                withAnimation(.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
+                    gradientPulse = 1.0
+                }
+            } else {
+                withAnimation(.easeOut(duration: 0.2)) {
+                    gradientPulse = 0
+                }
+            }
+        }
         .fullScreenCover(isPresented: $showTrialConfirmation) {
             TrialConfirmationView()
         }

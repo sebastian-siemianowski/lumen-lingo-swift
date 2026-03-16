@@ -3100,6 +3100,278 @@ final class TierManagerTests: XCTestCase {
         XCTAssertNil(Difficulty(level: 0))
         XCTAssertNil(Difficulty(level: 4))
     }
+
+    // MARK: - Shareable Card Renderer
+
+    private func makeCardData(
+        score: Int = 150,
+        correct: Int = 15,
+        total: Int = 20,
+        gameType: GameType = .flashCards,
+        category: String = "Animals",
+        tier: MembershipTier = .royal,
+        time: Int = 120,
+        xpMultiplier: Double = 1.0
+    ) -> ShareableCardRenderer.CardData {
+        ShareableCardRenderer.CardData(
+            score: score,
+            correctAnswers: correct,
+            totalQuestions: total,
+            accuracy: total > 0 ? Double(correct) / Double(total) * 100 : 0,
+            gameType: gameType,
+            categoryName: category,
+            tier: tier,
+            timeSpent: time,
+            xpMultiplier: xpMultiplier
+        )
+    }
+
+    func testShareableCardRendersNonNilImage() {
+        let data = makeCardData()
+        let image = ShareableCardRenderer.render(data: data)
+        XCTAssertNotNil(image.cgImage, "Rendered card should produce a valid image")
+    }
+
+    func testShareableCardRendersSizeAtRetina() {
+        let data = makeCardData()
+        let image = ShareableCardRenderer.render(data: data)
+        // Card is 390×520 at 3× scale
+        XCTAssertEqual(image.scale, 3.0, accuracy: 0.01)
+        XCTAssertEqual(image.size.width, 390, accuracy: 1)
+        XCTAssertEqual(image.size.height, 520, accuracy: 1)
+    }
+
+    func testShareableCardRendersForAllTiers() {
+        for tier in MembershipTier.allCases {
+            let data = makeCardData(tier: tier)
+            let image = ShareableCardRenderer.render(data: data)
+            XCTAssertNotNil(image.cgImage, "Card should render for \(tier.displayName)")
+        }
+    }
+
+    func testShareableCardRendersForAllGameTypes() {
+        for gameType in GameType.allCases {
+            let data = makeCardData(gameType: gameType)
+            let image = ShareableCardRenderer.render(data: data)
+            XCTAssertNotNil(image.cgImage, "Card should render for \(gameType.displayName)")
+        }
+    }
+
+    func testShareableCardExcellentPerformance() {
+        let data = makeCardData(score: 200, correct: 19, total: 20) // 95% accuracy
+        let image = ShareableCardRenderer.render(data: data)
+        XCTAssertNotNil(image.cgImage)
+    }
+
+    func testShareableCardKeepGoingPerformance() {
+        let data = makeCardData(score: 30, correct: 3, total: 20) // 15% accuracy
+        let image = ShareableCardRenderer.render(data: data)
+        XCTAssertNotNil(image.cgImage)
+    }
+
+    func testShareableCardZeroQuestions() {
+        let data = makeCardData(score: 0, correct: 0, total: 0)
+        let image = ShareableCardRenderer.render(data: data)
+        XCTAssertNotNil(image.cgImage, "Card should not crash with zero questions")
+    }
+
+    func testShareableCardWithXPMultiplier() {
+        let data = makeCardData(score: 100, xpMultiplier: 2.0)
+        let image = ShareableCardRenderer.render(data: data)
+        XCTAssertNotNil(image.cgImage, "Card should render with XP multiplier")
+    }
+
+    func testShareableCardFreeTierNoBadge() {
+        // Free tier should render but skip badge — just verify it renders without crash
+        let data = makeCardData(tier: .free)
+        let image = ShareableCardRenderer.render(data: data)
+        XCTAssertNotNil(image.cgImage)
+    }
+
+    func testShareableCardProTierHasBadge() {
+        // Pro+ should render tier badge — verify stable rendering
+        let data = makeCardData(tier: .pro)
+        let image = ShareableCardRenderer.render(data: data)
+        XCTAssertNotNil(image.cgImage)
+    }
+
+    func testShareableCardLongCategoryName() {
+        let data = makeCardData(category: "Very Long Category Name That Might Overflow")
+        let image = ShareableCardRenderer.render(data: data)
+        XCTAssertNotNil(image.cgImage, "Long category names should not crash rendering")
+    }
+
+    func testShareableCardAvailableOnlyForRoyalAndTrial() {
+        // Verify sessionResultsConfig only includes shareableCard for Royal/Trial
+        for tier in MembershipTier.allCases {
+            let config = TierManager.sessionResultsConfig(for: tier)
+            switch tier {
+            case .royal, .trial:
+                XCTAssertTrue(config.sections.contains(.shareableCard),
+                              "\(tier.displayName) should have shareableCard")
+            default:
+                XCTAssertFalse(config.sections.contains(.shareableCard),
+                               "\(tier.displayName) should NOT have shareableCard")
+            }
+        }
+    }
+
+    func testShareableCardMinimumTierIsRoyal() {
+        XCTAssertEqual(TierManager.minimumTierForSection(.shareableCard), .royal)
+    }
+
+    // MARK: - Feature Diff: Free → Pro Upgrade
+
+    func testFeatureDiffFreeToProUnlocksCorrectFeatures() {
+        let diff = TierManager.featureDiff(from: .free, to: .pro)
+        // Pro unlocks: soundscapes, unlimitedPractice, breathingOrbs, offlineMode
+        let expectedUnlocked: Set<PremiumFeature> = [
+            .soundscapes, .unlimitedPractice, .breathingOrbs, .offlineMode
+        ]
+        XCTAssertEqual(Set(diff.unlocked), expectedUnlocked,
+                       "Free → Pro should unlock exactly: soundscapes, unlimitedPractice, breathingOrbs, offlineMode")
+        XCTAssertTrue(diff.locked.isEmpty,
+                      "Upgrade should not lock any features")
+    }
+
+    func testFeatureDiffFreeToEliteUnlocksAllGatedFeatures() {
+        let diff = TierManager.featureDiff(from: .free, to: .elite)
+        let expectedUnlocked: Set<PremiumFeature> = [
+            .soundscapes, .unlimitedPractice, .breathingOrbs,
+            .quantumFlow, .nebulaDrift, .offlineMode
+        ]
+        XCTAssertEqual(Set(diff.unlocked), expectedUnlocked)
+        XCTAssertTrue(diff.locked.isEmpty)
+    }
+
+    func testFeatureDiffProToEliteUnlocksEliteFeatures() {
+        let diff = TierManager.featureDiff(from: .pro, to: .elite)
+        let expectedUnlocked: Set<PremiumFeature> = [.quantumFlow, .nebulaDrift]
+        XCTAssertEqual(Set(diff.unlocked), expectedUnlocked,
+                       "Pro → Elite should unlock quantumFlow and nebulaDrift")
+        XCTAssertTrue(diff.locked.isEmpty)
+    }
+
+    // MARK: - Feature Diff: Downgrade
+
+    func testFeatureDiffRoyalToFreeLocksAllGatedFeatures() {
+        let diff = TierManager.featureDiff(from: .royal, to: .free)
+        let expectedLocked: Set<PremiumFeature> = [
+            .soundscapes, .unlimitedPractice, .breathingOrbs,
+            .quantumFlow, .nebulaDrift, .offlineMode
+        ]
+        XCTAssertEqual(Set(diff.locked), expectedLocked,
+                       "Royal → Free should lock all gated features")
+        XCTAssertTrue(diff.unlocked.isEmpty,
+                      "Downgrade should not unlock any features")
+    }
+
+    func testFeatureDiffEliteToProLocksEliteFeatures() {
+        let diff = TierManager.featureDiff(from: .elite, to: .pro)
+        let expectedLocked: Set<PremiumFeature> = [.quantumFlow, .nebulaDrift]
+        XCTAssertEqual(Set(diff.locked), expectedLocked,
+                       "Elite → Pro should lock quantumFlow and nebulaDrift")
+        XCTAssertTrue(diff.unlocked.isEmpty)
+    }
+
+    func testFeatureDiffProToFreeLocksProFeatures() {
+        let diff = TierManager.featureDiff(from: .pro, to: .free)
+        let expectedLocked: Set<PremiumFeature> = [
+            .soundscapes, .unlimitedPractice, .breathingOrbs, .offlineMode
+        ]
+        XCTAssertEqual(Set(diff.locked), expectedLocked)
+        XCTAssertTrue(diff.unlocked.isEmpty)
+    }
+
+    // MARK: - Feature Diff: Same Tier
+
+    func testFeatureDiffSameTierNoChanges() {
+        for tier in MembershipTier.allCases {
+            let diff = TierManager.featureDiff(from: tier, to: tier)
+            XCTAssertTrue(diff.unlocked.isEmpty,
+                          "\(tier.displayName) → \(tier.displayName) should not unlock anything")
+            XCTAssertTrue(diff.locked.isEmpty,
+                          "\(tier.displayName) → \(tier.displayName) should not lock anything")
+        }
+    }
+
+    // MARK: - Feature Diff: Quantitative Features
+
+    func testFeatureDiffDoesNotIncludeQuantitativeOnlyChanges() {
+        // Free→Pro: flashcardDeckSize goes 50→75 (both >0), so it should NOT appear in diff
+        let diff = TierManager.featureDiff(from: .free, to: .pro)
+        XCTAssertFalse(diff.unlocked.contains(.flashcardDeckSize),
+                       "flashcardDeckSize has access at Free (50) so should not appear in unlocked")
+        XCTAssertFalse(diff.unlocked.contains(.languagePairs),
+                       "languagePairs has access at Free (3) so should not appear in unlocked")
+        XCTAssertFalse(diff.unlocked.contains(.grammarDifficulty),
+                       "grammarDifficulty has access at Free (1) so should not appear in unlocked")
+        XCTAssertFalse(diff.unlocked.contains(.wordBuilderDifficulty),
+                       "wordBuilderDifficulty has access at Free (1) so should not appear in unlocked")
+    }
+
+    // MARK: - Feature Diff: Trial Access
+
+    func testFeatureDiffFreeToTrialSameAsRoyal() {
+        let diffToTrial = TierManager.featureDiff(from: .free, to: .trial)
+        let diffToRoyal = TierManager.featureDiff(from: .free, to: .royal)
+        XCTAssertEqual(Set(diffToTrial.unlocked), Set(diffToRoyal.unlocked),
+                       "Trial should unlock same features as Royal")
+    }
+
+    // MARK: - Previous Tier Tracking
+
+    func testSelectTierTracksPreviousTier() {
+        let manager = TierManager()
+        manager.cloudStore = MockCloudStore()
+        XCTAssertNil(manager.previousTier, "previousTier should be nil initially")
+
+        manager.selectTier("pro", profile: nil)
+        XCTAssertEqual(manager.previousTier, .free,
+                       "After Free→Pro, previousTier should be .free")
+
+        manager.selectTier("elite", profile: nil)
+        XCTAssertEqual(manager.previousTier, .pro,
+                       "After Pro→Elite, previousTier should be .pro")
+    }
+
+    func testSelectTierPopulatesNewlyUnlockedFeatures() {
+        let manager = TierManager()
+        manager.cloudStore = MockCloudStore()
+
+        manager.selectTier("pro", profile: nil)
+        let expectedUnlocked: Set<PremiumFeature> = [
+            .soundscapes, .unlimitedPractice, .breathingOrbs, .offlineMode
+        ]
+        XCTAssertEqual(Set(manager.newlyUnlockedFeatures), expectedUnlocked)
+        XCTAssertTrue(manager.newlyLockedFeatures.isEmpty)
+    }
+
+    func testSelectTierPopulatesNewlyLockedFeaturesOnDowngrade() {
+        let manager = TierManager()
+        manager.cloudStore = MockCloudStore()
+        manager.currentTier = .royal
+
+        manager.selectTier("free", profile: nil)
+        let expectedLocked: Set<PremiumFeature> = [
+            .soundscapes, .unlimitedPractice, .breathingOrbs,
+            .quantumFlow, .nebulaDrift, .offlineMode
+        ]
+        XCTAssertEqual(Set(manager.newlyLockedFeatures), expectedLocked)
+        XCTAssertTrue(manager.newlyUnlockedFeatures.isEmpty)
+    }
+
+    func testSelectTierShowsFeatureTransitionOnDowngradeToFree() {
+        let manager = TierManager()
+        manager.cloudStore = MockCloudStore()
+        manager.currentTier = .pro
+
+        manager.selectTier("free", profile: nil)
+        // Feature transition should be scheduled (after 0.3s delay)
+        // We can verify the locked features were calculated
+        XCTAssertFalse(manager.newlyLockedFeatures.isEmpty,
+                       "Downgrade Pro→Free should have locked features")
+    }
 }
 
 // MARK: - Mock Cloud Store
