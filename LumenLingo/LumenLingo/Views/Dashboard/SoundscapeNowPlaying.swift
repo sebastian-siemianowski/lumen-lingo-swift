@@ -56,6 +56,7 @@ struct SoundscapeNowPlaying: View {
                     )
             )
             .shadow(color: soundscape.previewColors[0].opacity(isDark ? 0.25 : 0.12), radius: 16, y: 6)
+            .animation(.easeInOut(duration: 0.55), value: soundscape)
             .transition(.asymmetric(
                 insertion: .move(edge: .top).combined(with: .opacity),
                 removal: .opacity
@@ -76,11 +77,13 @@ struct SoundscapeNowPlaying: View {
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(isDark ? .white : .primary)
                     .lineLimit(1)
+                    .contentTransition(.interpolate)
 
                 Text(statusText(soundscape))
                     .font(.system(size: 11, weight: .medium))
                     .foregroundStyle(isDark ? .white.opacity(0.45) : .secondary)
                     .lineLimit(1)
+                    .contentTransition(.interpolate)
             }
 
             Spacer(minLength: 4)
