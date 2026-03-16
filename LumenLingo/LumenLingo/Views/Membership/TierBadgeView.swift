@@ -51,11 +51,14 @@ struct TierBadgeView: View {
                     Capsule()
                         .fill(
                             LinearGradient(
-                                stops: [
-                                    .init(color: .clear, location: max(0, shimmerPhase - 0.15)),
-                                    .init(color: .white.opacity(0.25), location: shimmerPhase),
-                                    .init(color: .clear, location: min(1, shimmerPhase + 0.15)),
-                                ],
+                                stops: {
+                                    let p = min(max(shimmerPhase, 0), 1)
+                                    return [
+                                        .init(color: .clear, location: max(0, p - 0.15)),
+                                        .init(color: .white.opacity(0.25), location: p),
+                                        .init(color: .clear, location: min(1, p + 0.15)),
+                                    ]
+                                }(),
                                 startPoint: .leading,
                                 endPoint: .trailing
                             )
