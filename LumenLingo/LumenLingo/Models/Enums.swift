@@ -1011,25 +1011,27 @@ enum Soundscape: String, CaseIterable, Identifiable {
         let id: Int          // 0-based index
         let fileName: String // e.g. "Paris-Café-1" (no extension)
         let label: String    // e.g. "Variant 1"
+        var loopStart: TimeInterval = 0   // skip initial silence (seconds)
+        var loopEnd: TimeInterval = 300   // crossfade back before end silence
     }
 
     var variants: [Variant] {
         switch self {
-        case .parisCafe:             return [Variant(id: 0, fileName: "Paris-Café-1", label: "Parisian Dawn"),
-                                              Variant(id: 1, fileName: "Paris-Café-2", label: "Evening Terrace")]
-        case .observatoryNight:      return [Variant(id: 0, fileName: "Observatory-Night-1", label: "Stargazer"),
-                                              Variant(id: 1, fileName: "Observatory-Night-2", label: "Deep Sky")]
-        case .dominicanBeach:        return [Variant(id: 0, fileName: "Dominican-Beach-1", label: "Shoreline"),
-                                              Variant(id: 1, fileName: "Dominican-Beach-2", label: "Sunset Cove")]
-        case .midnightJazzPiano:     return [Variant(id: 0, fileName: "Midnight-Jazz-Piano", label: "Late Set")]
-        case .rainyWindow:           return [Variant(id: 0, fileName: "Rainy-Window", label: "Gentle Rain")]
-        case .japaneseBambooForest:  return [Variant(id: 0, fileName: "Japanese-Bamboo-Forest", label: "Zen Garden")]
-        case .amazonRainforest:      return [Variant(id: 0, fileName: "Amazon-Rainforest", label: "Canopy")]
-        case .mountainCampfire:      return [Variant(id: 0, fileName: "Mountain-Campfire", label: "Fireside")]
-        case .desertNightSky:        return [Variant(id: 0, fileName: "Desert-Night-Sky", label: "Starlit Sand")]
+        case .parisCafe:             return [Variant(id: 0, fileName: "Paris-Café-1", label: "Parisian Dawn", loopStart: 4.5, loopEnd: 296),
+                                              Variant(id: 1, fileName: "Paris-Café-2", label: "Evening Terrace", loopStart: 1.5, loopEnd: 291)]
+        case .observatoryNight:      return [Variant(id: 0, fileName: "Observatory-Night-1", label: "Stargazer", loopStart: 1.5, loopEnd: 298),
+                                              Variant(id: 1, fileName: "Observatory-Night-2", label: "Deep Sky", loopStart: 9.5, loopEnd: 300)]
+        case .dominicanBeach:        return [Variant(id: 0, fileName: "Dominican-Beach-1", label: "Shoreline", loopStart: 4.5, loopEnd: 295),
+                                              Variant(id: 1, fileName: "Dominican-Beach-2", label: "Sunset Cove", loopStart: 1.0, loopEnd: 298)]
+        case .midnightJazzPiano:     return [Variant(id: 0, fileName: "Midnight-Jazz-Piano", label: "Late Set", loopStart: 0, loopEnd: 296)]
+        case .rainyWindow:           return [Variant(id: 0, fileName: "Rainy-Window", label: "Gentle Rain", loopStart: 4.0, loopEnd: 295)]
+        case .japaneseBambooForest:  return [Variant(id: 0, fileName: "Japanese-Bamboo-Forest", label: "Zen Garden", loopStart: 8.5, loopEnd: 297)]
+        case .amazonRainforest:      return [Variant(id: 0, fileName: "Amazon-Rainforest", label: "Canopy", loopStart: 5.5, loopEnd: 291)]
+        case .mountainCampfire:      return [Variant(id: 0, fileName: "Mountain-Campfire", label: "Fireside", loopStart: 1.5, loopEnd: 295)]
+        case .desertNightSky:        return [Variant(id: 0, fileName: "Desert-Night-Sky", label: "Starlit Sand", loopStart: 9.5, loopEnd: 256)]
         case .deepSpaceDrift:        return [Variant(id: 0, fileName: "Deep-Space-Drift", label: "Cosmic Float")]
-        case .veniceCanalMorning:    return [Variant(id: 0, fileName: "Venice-Canal-Morning", label: "Canal Bells")]
-        case .tokyoNightStreet:      return [Variant(id: 0, fileName: "Tokyo-Night-Street", label: "Neon Walk")]
+        case .veniceCanalMorning:    return [Variant(id: 0, fileName: "Venice-Canal-Morning", label: "Canal Bells", loopStart: 9.5, loopEnd: 290)]
+        case .tokyoNightStreet:      return [Variant(id: 0, fileName: "Tokyo-Night-Street", label: "Neon Walk", loopStart: 9.5, loopEnd: 294)]
         }
     }
 

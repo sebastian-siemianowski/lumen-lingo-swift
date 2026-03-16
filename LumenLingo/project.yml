@@ -20,6 +20,7 @@ targets:
       - path: LumenLingo
         excludes:
           - "**/.DS_Store"
+          - "*.entitlements"
     resources:
       - path: LumenLingo/Resources/Assets.xcassets
         buildPhase: resources

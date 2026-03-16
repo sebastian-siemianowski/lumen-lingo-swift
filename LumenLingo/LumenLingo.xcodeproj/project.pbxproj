@@ -406,7 +406,6 @@
 		C05E56A1813CCC4B9C21576A /* PremiumFeatureCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumFeatureCarousel.swift; sourceTree = "<group>"; };
 		C0A16D5C93EC371A3F0F50EF /* wordbuilder_english_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_german.json; sourceTree = "<group>"; };
 		C2522C1400407731C720E317 /* grammar_japanese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_japanese_english.json; sourceTree = "<group>"; };
-		C6DF03DCE65C0BCDCC5B81C9 /* LumenLingo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LumenLingo.entitlements; sourceTree = "<group>"; };
 		C71ECFF5B79F4F2875BBAB02 /* CosmicPostProcess.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CosmicPostProcess.metal; sourceTree = "<group>"; };
 		C7A63D5EEB0001AEFA02084A /* StarFieldGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarFieldGenerator.swift; sourceTree = "<group>"; };
 		C7EC466E954463C21BDA8D3C /* GlassDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassDivider.swift; sourceTree = "<group>"; };
@@ -459,7 +458,6 @@
 			isa = PBXGroup;
 			children = (
 				3A219C85D0E9B1BFA8C5BD9F /* Info.plist */,
-				C6DF03DCE65C0BCDCC5B81C9 /* LumenLingo.entitlements */,
 				E667ED645B5F750955DEA3B5 /* LumenLingoApp.swift */,
 				3240E9048141E87CE98F1922 /* Extensions */,
 				AA5EB74A9C96AEB80BAA2339 /* Models */,
