@@ -224,7 +224,7 @@ final class AudioService {
         SoundscapeCategory.allCases.flatMap { $0.soundscapes }
     }
 
-    private func skipToNextSoundscape() {
+    func skipToNextSoundscape() {
         guard let current = currentSoundscape else { return }
         // Try next variant first
         let nextVariant = currentVariantIndex + 1
@@ -240,7 +240,7 @@ final class AudioService {
         quickSkip(to: next, variantIndex: 0)
     }
 
-    private func skipToPreviousSoundscape() {
+    func skipToPreviousSoundscape() {
         guard let current = currentSoundscape else { return }
         // Try previous variant first
         let prevVariant = currentVariantIndex - 1
@@ -1937,6 +1937,11 @@ final class AudioService {
     /// The currently active soundscape
     var activeSoundscape: Soundscape? {
         currentSoundscape
+    }
+
+    /// The currently active variant index
+    var activeVariantIndex: Int {
+        currentVariantIndex
     }
 
     private func fadeAmbient(to volume: Float, duration: TimeInterval,

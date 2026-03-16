@@ -12,6 +12,7 @@ struct SoundscapeNowPlaying: View {
 
     @State private var isExpanded = false
     @State private var barOffsets: [CGFloat] = Array(repeating: 0, count: 9)
+    @State private var playPausePressed = false
 
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
@@ -182,13 +183,21 @@ struct SoundscapeNowPlaying: View {
                 action: { skipToPrevious(from: soundscape) }
             )
 
-            // Play/Pause — larger, gradient
+            // Play/Pause — larger, gradient, delightful press animation
             Button {
                 HapticsService.shared.buttonPress()
+                withAnimation(.spring(response: 0.35, dampingFraction: 0.6)) {
+                    playPausePressed = true
+                }
                 if isPlaying {
                     audio.pauseAmbient()
                 } else {
                     audio.resumeAmbient()
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    withAnimation(.spring(response: 0.3, dampingFraction: 0.5)) {
+                        playPausePressed = false
+                    }
                 }
             } label: {
                 ZStack {
@@ -201,7 +210,7 @@ struct SoundscapeNowPlaying: View {
                             )
                         )
                         .frame(width: 40, height: 40)
-                        .shadow(color: soundscape.previewColors[0].opacity(0.35), radius: 6, y: 2)
+                        .shadow(color: soundscape.previewColors[0].opacity(isPlaying ? 0.35 : 0.15), radius: isPlaying ? 6 : 3, y: 2)
 
                     Image(systemName: isPlaying ? "pause.fill" : "play.fill")
                         .font(.system(size: 15, weight: .bold))
@@ -209,8 +218,10 @@ struct SoundscapeNowPlaying: View {
                         .offset(x: isPlaying ? 0 : 1)
                         .contentTransition(.symbolEffect(.replace))
                 }
+                .scaleEffect(playPausePressed ? 0.85 : 1.0)
             }
             .buttonStyle(.plain)
+            .animation(.easeInOut(duration: 0.2), value: isPlaying)
 
             // Next
             skipButton(
@@ -319,35 +330,28 @@ struct SoundscapeNowPlaying: View {
     // MARK: - Skip Logic
 
     private func skipToNext(from current: Soundscape) {
-        let list = unlockedSoundscapes
-        guard list.count > 1 else { return }
-        guard let idx = list.firstIndex(of: current) else { return }
-        let nextIdx = list.index(after: idx)
-        let next = nextIdx < list.endIndex ? list[nextIdx] : list[list.startIndex]
-        audio.crossfadeSoundscape(to: next, variantIndex: 0)
-        profile?.soundscapeEnum = next
-        profile?.soundscapeVariantIndex = 0
+        audio.skipToNextSoundscape()
+        // Persist whatever AudioService landed on
+        if let s = audio.activeSoundscape {
+            profile?.soundscapeEnum = s
+            profile?.soundscapeVariantIndex = audio.activeVariantIndex
+        }
     }
 
     private func skipToPrevious(from current: Soundscape) {
-        let list = unlockedSoundscapes
-        guard list.count > 1 else { return }
-        guard let idx = list.firstIndex(of: current) else { return }
-        let prev = idx == list.startIndex ? list[list.index(before: list.endIndex)] : list[list.index(before: idx)]
-        audio.crossfadeSoundscape(to: prev, variantIndex: 0)
-        profile?.soundscapeEnum = prev
-        profile?.soundscapeVariantIndex = 0
+        audio.skipToPreviousSoundscape()
+        if let s = audio.activeSoundscape {
+            profile?.soundscapeEnum = s
+            profile?.soundscapeVariantIndex = audio.activeVariantIndex
+        }
     }
 
     // MARK: - Helpers
 
     private func statusText(_ soundscape: Soundscape) -> String {
         guard isPlaying else { return "Paused" }
-        if soundscape.hasMultipleVariants {
-            let idx = profile?.soundscapeVariantIndex ?? 0
-            let variant = soundscape.variants[min(idx, soundscape.variants.count - 1)]
-            return variant.label
-        }
-        return soundscape.subtitle
+        let idx = audio.activeVariantIndex
+        let variant = soundscape.variants[min(idx, soundscape.variants.count - 1)]
+        return soundscape.hasMultipleVariants ? variant.label : soundscape.subtitle
     }
 }
