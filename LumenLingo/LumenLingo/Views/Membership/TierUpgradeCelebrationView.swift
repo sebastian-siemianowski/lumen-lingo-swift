@@ -351,8 +351,8 @@ struct TierUpgradeCelebrationView: View {
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                 tierManager.showUpgradeCelebration = false
-                // Trigger feature unlock/lock overlay if features changed
-                if !tierManager.newlyUnlockedFeatures.isEmpty || !tierManager.newlyLockedFeatures.isEmpty {
+                // Trigger feature overlay: shows diff if available, or all features for the new tier
+                if tierManager.isTierUpgrade || !tierManager.newlyLockedFeatures.isEmpty {
                     tierManager.showFeatureTransition = true
                 }
                 showCard = false
