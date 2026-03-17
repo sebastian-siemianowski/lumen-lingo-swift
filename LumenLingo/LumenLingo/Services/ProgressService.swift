@@ -18,9 +18,15 @@ final class ProgressService {
     func getOrCreateProfile() -> UserProfile {
         let descriptor = FetchDescriptor<UserProfile>()
         if let profile = try? modelContext.fetch(descriptor).first {
+            // Backfill firstName/email for profiles created before these fields existed
+            if profile.firstName.isEmpty {
+                profile.firstName = "Sebastian"
+                profile.email = "rudph2@test.com"
+                try? modelContext.save()
+            }
             return profile
         }
-        let profile = UserProfile()
+        let profile = UserProfile(firstName: "Sebastian", email: "rudph2@test.com")
         modelContext.insert(profile)
         try? modelContext.save()
         return profile

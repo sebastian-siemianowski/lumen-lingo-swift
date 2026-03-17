@@ -230,7 +230,7 @@ struct AppUser: Equatable {
 
     static let mock = AppUser(
         name: "Sebastian",
-        email: "sebastian@test.com",
+        email: "rudph2@test.com",
         avatarURL: nil
     )
 }

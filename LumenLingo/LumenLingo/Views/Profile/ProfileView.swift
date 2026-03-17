@@ -23,7 +23,11 @@ struct ProfileView: View {
     private var allProgress: [GameProgressRecord]
 
     private var profile: UserProfile? { profiles.first }
-    private var user: AppUser { .mock }
+
+    /// Display name from real profile, with graceful fallback.
+    private var displayName: String {
+        profile?.firstName.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+    }
 
     @State private var activeTab: ProfileTab = .appearance
     @State private var activeAppearanceSubTab: AppearanceSubTab = .darkLight
@@ -194,7 +198,7 @@ struct ProfileView: View {
 
                 // Name & level
                 VStack(spacing: 4) {
-                    Text(user.name)
+                    Text(displayName.isEmpty ? "Learner" : displayName)
                         .font(.title2.bold())
                         .foregroundStyle(
                             LinearGradient(

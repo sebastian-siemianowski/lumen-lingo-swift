@@ -16,7 +16,7 @@ final class DashboardViewModel {
         self.progressService = progressService
     }
 
-    func greeting(using strings: AppStrings) -> String {
+    func greeting(for name: String?, using strings: AppStrings) -> String {
         let hour = Calendar.current.component(.hour, from: .now)
         let timeGreeting: String
         switch hour {
@@ -25,7 +25,10 @@ final class DashboardViewModel {
         case 17..<22: timeGreeting = strings.goodEvening
         default: timeGreeting = strings.goodNight
         }
-        return "\(timeGreeting), Sebastian!"
+        if let name, !name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            return "\(timeGreeting), \(name)!"
+        }
+        return "\(timeGreeting)!"
     }
 
     var levelProgress: Double {

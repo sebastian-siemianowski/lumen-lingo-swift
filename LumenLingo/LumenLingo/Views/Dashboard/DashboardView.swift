@@ -30,8 +30,16 @@ struct DashboardView: View {
     @State private var showExpiredSheet = false
 
     private var profile: UserProfile? { profiles.first }
-    private var user: AppUser { .mock }
     private var isDark: Bool { colorScheme == .dark }
+
+    /// User's display name with graceful fallback for empty/nil profiles.
+    private var displayName: String {
+        let name = profile?.firstName.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        return name
+    }
+
+    /// Whether we have a real user name to personalize greetings.
+    private var hasUserName: Bool { !displayName.isEmpty }
 
     private var currentLanguagePair: String {
         guard let pref = languagePrefs.first else { return "English → Spanish" }
@@ -201,7 +209,7 @@ struct DashboardView: View {
 
                 VStack(alignment: .leading, spacing: 2) {
                     HStack(spacing: 4) {
-                        Text("Hello, \(user.firstName)!")
+                        Text(hasUserName ? "Hello, \(displayName)!" : "Welcome back!")
                             .font(.system(size: 18, weight: .bold))
                             .foregroundStyle(
                                 LinearGradient(
@@ -213,7 +221,7 @@ struct DashboardView: View {
                                 )
                             )
                             .lineLimit(1)
-                            .minimumScaleFactor(0.8)
+                            .minimumScaleFactor(0.7)
 
                         if tierManager.currentTier != .free {
                             Image(systemName: tierManager.tierIcon)
@@ -306,11 +314,12 @@ struct DashboardView: View {
             )
 
             statCard(
-                title: "Total XP",
+                title: hasUserName ? "\(displayName)'s XP" : "Total XP",
                 value: "\(profile?.totalXP ?? 0)",
                 icon: "bolt.fill",
                 iconColor: .cyan,
-                gradient: [Color(hex: "#06b6d4"), Color(hex: "#0891b2")]
+                gradient: [Color(hex: "#06b6d4"), Color(hex: "#0891b2")],
+                milestone: currentXPMilestone
             )
 
             statCard(
@@ -323,30 +332,71 @@ struct DashboardView: View {
         }
     }
 
+    // MARK: - XP Milestones
+
+    private static let xpMilestones: [(threshold: Int, icon: String, label: String)] = [
+        (100,   "star.fill", "Rising Star"),
+        (500,   "flame.fill", "On Fire"),
+        (1000,  "diamond.fill", "Legend"),
+        (5000,  "crown.fill", "Master"),
+        (10000, "trophy.fill", "Immortal"),
+    ]
+
+    private var currentXPMilestone: (icon: String, label: String)? {
+        let xp = profile?.totalXP ?? 0
+        return Self.xpMilestones
+            .last { xp >= $0.threshold }
+            .map { ($0.icon, $0.label) }
+    }
+
     private func statCard(
         title: String,
         value: String,
         icon: String,
         iconColor: Color,
         gradient: [Color],
-        progress: Double? = nil
+        progress: Double? = nil,
+        milestone: (icon: String, label: String)? = nil
     ) -> some View {
-        VStack(spacing: 6) {
-            HStack(spacing: 4) {
-                Image(systemName: icon)
-                    .font(.system(size: 12))
-                    .foregroundStyle(iconColor)
-                    .shadow(color: iconColor.opacity(0.5), radius: 4)
-                Text(value)
-                    .font(.system(size: 16, weight: .bold))
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-            }
+        VStack(spacing: 4) {
+            Spacer(minLength: 0)
+
+            Image(systemName: icon)
+                .font(.system(size: 14))
+                .foregroundStyle(iconColor)
+                .shadow(color: iconColor.opacity(0.5), radius: 4)
+
+            Text(value)
+                .font(.system(size: 18, weight: .bold))
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
 
             Text(title)
-                .font(.system(size: 10))
+                .font(.system(size: 9))
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+
+            if let milestone {
+                HStack(spacing: 2) {
+                    Image(systemName: milestone.icon)
+                        .font(.system(size: 7))
+                    Text(milestone.label)
+                        .font(.system(size: 8, weight: .semibold))
+                }
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: gradient,
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .transition(.asymmetric(
+                    insertion: .scale.combined(with: .opacity),
+                    removal: .opacity
+                ))
+            }
 
             if let progress {
                 AnimatedProgressBar(
@@ -355,12 +405,11 @@ struct DashboardView: View {
                     gradient: gradient,
                     showGlow: false
                 )
-            } else {
-                // Invisible spacer matching progress bar height for alignment
-                Color.clear.frame(height: 4)
             }
+
+            Spacer(minLength: 0)
         }
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, minHeight: 80)
         .padding(8)
         .background(
             RoundedRectangle(cornerRadius: 12)

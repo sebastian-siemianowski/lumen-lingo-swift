@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 // MARK: - Sign Out View
 
@@ -9,7 +10,10 @@ struct SignOutView: View {
     @Environment(\.localization) private var localization
     @Environment(NetworkMonitor.self) private var networkMonitor
 
+    @Query private var profiles: [UserProfile]
+
     private var L: AppStrings { localization.strings }
+    private var profile: UserProfile? { profiles.first }
 
     @State private var isLoggingOut = false
     @State private var logoutStep = ""
@@ -76,12 +80,12 @@ struct SignOutView: View {
 
     private var accountInfoSection: some View {
         VStack(spacing: 12) {
-            accountRow(icon: "envelope.fill", color: .cyan, title: L.email, value: AppUser.mock.email)
+            accountRow(icon: "envelope.fill", color: .cyan, title: L.email, value: profile?.email ?? "—")
 
             Divider()
                 .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
 
-            accountRow(icon: "person.fill", color: Color(hex: "#8b5cf6"), title: L.name, value: AppUser.mock.name)
+            accountRow(icon: "person.fill", color: Color(hex: "#8b5cf6"), title: L.name, value: profile?.firstName ?? "—")
 
             Divider()
                 .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))

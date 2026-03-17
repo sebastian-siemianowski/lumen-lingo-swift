@@ -5,6 +5,8 @@ import SwiftData
 
 @Model
 final class UserProfile {
+    var firstName: String = ""
+    var email: String = ""
     var totalXP: Int
     var dailyStreak: Int
     var totalActiveDays: Int
@@ -154,6 +156,8 @@ final class UserProfile {
     }
 
     init(
+        firstName: String = "",
+        email: String = "",
         totalXP: Int = 0,
         dailyStreak: Int = 0,
         totalActiveDays: Int = 0,
@@ -198,6 +202,8 @@ final class UserProfile {
         trialStartDate: Date? = nil,
         trialExpiredShown: Bool = false
     ) {
+        self.firstName = firstName
+        self.email = email
         self.totalXP = totalXP
         self.dailyStreak = dailyStreak
         self.totalActiveDays = totalActiveDays

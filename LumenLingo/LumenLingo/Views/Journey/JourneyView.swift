@@ -20,6 +20,12 @@ struct JourneyView: View {
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
+    /// Display name from real profile for personalization.
+    private var displayName: String {
+        profile?.firstName.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+    }
+    private var hasUserName: Bool { !displayName.isEmpty }
+
     private var statsConfig: TierManager.JourneyStatsConfig {
         tierManager.journeyStatsConfig()
     }
@@ -59,7 +65,7 @@ struct JourneyView: View {
 
                 // Overall stats (always visible — basicStats)
                 collapsibleSection(
-                    title: L.totalXP,
+                    title: hasUserName ? "\(displayName)'s XP" : L.totalXP,
                     icon: "chart.bar.fill",
                     colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
                     isCollapsed: $isStatsCollapsed
@@ -625,7 +631,7 @@ struct JourneyView: View {
                 overviewStat(
                     icon: "bolt.fill",
                     value: formattedXP(totalXP),
-                    label: L.totalXP,
+                    label: hasUserName ? "\(displayName)'s XP" : L.totalXP,
                     color: .cyan
                 )
 
