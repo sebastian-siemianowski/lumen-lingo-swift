@@ -21,6 +21,7 @@ struct ExportDataWidget: View {
     @State private var completedFormat: DataExporter.ExportFormat?
     @State private var showPDFPreview = false
     @State private var previewPDFData: Data?
+    @State private var cachedPDFData: Data?
     @State private var showAchievementShare = false
 
     private var allFormats: [DataExporter.ExportFormat] { DataExporter.ExportFormat.allCases }
@@ -28,10 +29,14 @@ struct ExportDataWidget: View {
         DataExporter.availableFormats(for: tierManager.currentTier)
     }
 
+    private var isPDFAvailable: Bool {
+        availableFormats.contains(.pdf)
+    }
+
     var body: some View {
         GlassPanelWrapper {
             VStack(spacing: 14) {
-                // Session count subtitle
+                // Section header
                 HStack {
                     Text("\(allProgress.count) \(L.sessionsLabel)")
                         .font(.system(size: 11, weight: .medium, design: .rounded))
@@ -42,17 +47,18 @@ struct ExportDataWidget: View {
                 if allProgress.isEmpty {
                     emptyState
                 } else {
-                    // Format cards grid
-                    LazyVGrid(columns: [
-                        GridItem(.flexible(), spacing: 10),
-                        GridItem(.flexible(), spacing: 10)
-                    ], spacing: 10) {
-                        ForEach(allFormats, id: \.rawValue) { format in
-                            exportFormatCard(for: format)
+                    VStack(spacing: 10) {
+                        // Hero: PDF card, full width
+                        pdfHeroCard
+
+                        // Secondary row: CSV + JSON
+                        HStack(spacing: 10) {
+                            exportFormatCard(for: .csv)
+                            exportFormatCard(for: .json)
                         }
 
-                        // Achievement card button
-                        achievementCardButton
+                        // CTA: Achievement card
+                        achievementCardBar
                     }
                 }
             }
@@ -60,10 +66,215 @@ struct ExportDataWidget: View {
         .fullScreenCover(isPresented: $showPDFPreview) {
             PDFPreviewView(
                 pdfData: previewPDFData,
+                tierColors: tierManager.currentTier.gradientColors,
+                tier: tierManager.currentTier,
                 onDismiss: { showPDFPreview = false },
-                onShare: { shareFile(data: previewPDFData ?? Data(), fileName: "lumenlingo_report.pdf") }
+                userName: profile?.firstName ?? "",
+                allProgress: allProgress
             )
         }
+    }
+
+    // MARK: - PDF Hero Card (Story 10)
+
+    private var pdfHeroCard: some View {
+        let isExporting = exportingFormat == .pdf
+        let hasCached = cachedPDFData != nil
+
+        return Button {
+            guard isPDFAvailable, !isExporting else { return }
+            if hasCached {
+                previewPDFData = cachedPDFData
+                showPDFPreview = true
+            } else {
+                startPDFPreview()
+            }
+        } label: {
+            HStack(spacing: 12) {
+                // Thumbnail / placeholder
+                ZStack {
+                    if isExporting {
+                        RoundedRectangle(cornerRadius: 6)
+                            .fill(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.04))
+                            .frame(width: 48, height: 62)
+                            .overlay(
+                                ProgressView()
+                                    .scaleEffect(0.6)
+                                    .tint(Color(hex: "#f97316"))
+                            )
+                    } else if let data = cachedPDFData, let doc = PDFDocument(data: data),
+                              let page = doc.page(at: 0) {
+                        Image(uiImage: page.thumbnail(of: CGSize(width: 96, height: 124), for: .mediaBox))
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 48, height: 62)
+                            .clipShape(RoundedRectangle(cornerRadius: 6))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 6)
+                                    .strokeBorder(isDark ? Color.white.opacity(0.1) : Color.black.opacity(0.06), lineWidth: 0.5)
+                            )
+                    } else {
+                        RoundedRectangle(cornerRadius: 6)
+                            .fill(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.04))
+                            .frame(width: 48, height: 62)
+                            .overlay(
+                                Image(systemName: "doc.richtext")
+                                    .font(.system(size: 20))
+                                    .foregroundStyle(
+                                        LinearGradient(
+                                            colors: [Color(hex: "#fbbf24"), Color(hex: "#f97316")],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        )
+                                    )
+                            )
+                    }
+                }
+
+                VStack(alignment: .leading, spacing: 4) {
+                    HStack(spacing: 5) {
+                        Text("PDF Report")
+                            .font(.system(size: 16, weight: .bold, design: .rounded))
+                            .foregroundStyle(isDark ? .white : .primary)
+
+                        // Inline premium badge
+                        HStack(spacing: 2) {
+                            Image(systemName: "sparkles")
+                                .font(.system(size: 6, weight: .bold))
+                            Text("Premium")
+                                .font(.system(size: 7, weight: .bold))
+                        }
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 5)
+                        .padding(.vertical, 2)
+                        .background(
+                            Capsule()
+                                .fill(LinearGradient(
+                                    colors: [Color(hex: "#fbbf24"), Color(hex: "#f97316")],
+                                    startPoint: .leading, endPoint: .trailing
+                                ))
+                        )
+                    }
+
+                    Text("Branded report with charts, stats & insights")
+                        .font(.system(size: 11))
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                        .lineLimit(2)
+
+                    Spacer().frame(height: 4)
+
+                    // CTA pill
+                    Text(hasCached ? "View Report" : "Generate Report")
+                        .font(.system(size: 13, weight: .semibold, design: .rounded))
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 14)
+                        .padding(.vertical, 6)
+                        .background(
+                            Capsule()
+                                .fill(LinearGradient(
+                                    colors: tierManager.currentTier.gradientColors,
+                                    startPoint: .leading, endPoint: .trailing
+                                ))
+                        )
+                }
+
+                Spacer()
+            }
+            .padding(14)
+            .frame(maxWidth: .infinity, minHeight: 100)
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.02))
+                    .overlay(
+                        // Tier gradient tint
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(
+                                LinearGradient(
+                                    colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.04) },
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 14)
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 1.2
+                            )
+                    )
+            )
+            .overlay {
+                if !isPDFAvailable {
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(isDark ? .black.opacity(0.5) : .white.opacity(0.6))
+                        .overlay {
+                            VStack(spacing: 4) {
+                                Image(systemName: "lock.fill")
+                                    .font(.system(size: 20))
+                                    .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                                Text("Royal")
+                                    .font(.system(size: 9, weight: .bold))
+                                    .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+                            }
+                        }
+                }
+            }
+        }
+        .buttonStyle(LumenPressStyle())
+        .disabled(!isPDFAvailable)
+    }
+
+    // MARK: - Achievement Card Bar (Story 10)
+
+    private var achievementCardBar: some View {
+        Button {
+            shareAchievementCard()
+        } label: {
+            HStack(spacing: 8) {
+                Image(systemName: "camera.filters")
+                    .font(.system(size: 16))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: tierManager.currentTier.gradientColors,
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+
+                Text("Share Achievement Card")
+                    .font(.system(size: 13, weight: .medium))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .primary)
+
+                Spacer()
+
+                Image(systemName: "arrow.right")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
+            }
+            .padding(.horizontal, 14)
+            .frame(maxWidth: .infinity, minHeight: 44)
+            .background(
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.02))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 14)
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: tierManager.currentTier.gradientColors.map { $0.opacity(isDark ? 0.15 : 0.1) },
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 0.8
+                            )
+                    )
+            )
+        }
+        .buttonStyle(LumenPressStyle())
     }
 
     // MARK: - Empty State
@@ -309,6 +520,7 @@ struct ExportDataWidget: View {
 
     private func startPDFPreview() {
         exportingFormat = .pdf
+        showPDFPreview = true
         Task.detached(priority: .userInitiated) {
             let userName = await MainActor.run { profile?.firstName ?? "" }
             let tier = await MainActor.run { tierManager.currentTier }
@@ -322,8 +534,8 @@ struct ExportDataWidget: View {
             )
             await MainActor.run {
                 previewPDFData = data
+                cachedPDFData = data
                 exportingFormat = nil
-                showPDFPreview = true
             }
         }
     }
@@ -421,59 +633,502 @@ struct ExportDataWidget: View {
     }
 }
 
-// MARK: - PDF Preview View (Story 4.3)
+// MARK: - PDF Preview View (Stories 2, 3, 7, 8)
 
-/// Full-screen PDF preview with PDFKit, pinch-to-zoom, and share button.
+/// Luxury full-screen PDF preview with cinematic reveal, floating frost toolbar,
+/// page thumbnails, branded share sheet, theme toggle, direct save, and success celebrations.
 struct PDFPreviewView: View {
     let pdfData: Data?
+    let tierColors: [Color]
+    let tier: MembershipTier
     let onDismiss: () -> Void
-    let onShare: () -> Void
+
+    // For theme toggle regeneration
+    var userName: String = ""
+    var allProgress: [GameProgressRecord] = []
 
     @Environment(\.colorScheme) private var colorScheme
-    private var isDark: Bool { colorScheme == .dark }
+    private var isDark: Bool { previewIsDark ?? (colorScheme == .dark) }
+
+    // MARK: - State
+
+    @State private var document: PDFDocument?
+    @State private var activePDFData: Data?
+
+    // Reveal animation
+    @State private var revealPhase: RevealPhase = .loading
+    @State private var documentScale: CGFloat = 0.92
+    @State private var documentOpacity: CGFloat = 0
+    @State private var glowOpacity: CGFloat = 0
+
+    // Chrome
+    @State private var showToolbar = true
+    @State private var toolbarHideTask: Task<Void, Never>?
+    @State private var showPageIndicator = false
+    @State private var pageIndicatorHideTask: Task<Void, Never>?
+    @State private var currentPageIndex = 0
+    @State private var totalPages = 1
+
+    // Thumbnail rail
+    @State private var showThumbnailRail = false
+
+    // Share
+    @State private var showShareSheet = false
+
+    // Save
+    @State private var showDocumentPicker = false
+
+    // Success overlay
+    @State private var showSuccess = false
+    @State private var successAction: PDFSuccessAction = .saved
+
+    // Theme toggle
+    @State private var previewIsDark: Bool?
+    @State private var isRegenerating = false
+
+    // Page change observation
+    @State private var pdfViewRef: PDFView?
+
+    private var pageCount: Int { document?.pageCount ?? 1 }
+    private var isMultiPage: Bool { pageCount > 1 }
+
+    enum RevealPhase {
+        case loading, revealing, ready
+    }
 
     var body: some View {
-        NavigationStack {
-            ZStack {
-                (isDark ? Color.black : Color(UIColor.systemGroupedBackground))
-                    .ignoresSafeArea()
+        ZStack {
+            // Layer 0: Tier gradient mesh background
+            backgroundLayer
+                .ignoresSafeArea()
 
-                if let data = pdfData, let document = PDFDocument(data: data) {
-                    PDFKitView(document: document)
-                        .ignoresSafeArea(edges: .bottom)
-                } else {
-                    // Loading shimmer
-                    VStack(spacing: 16) {
-                        ProgressView()
-                            .scaleEffect(1.2)
-                            .tint(isDark ? .white : .primary)
-                        Text("Generating your report...")
-                            .font(.system(size: 14, weight: .medium))
-                            .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
-                    }
+            // Layer 1: Content
+            if revealPhase == .loading {
+                PDFGeneratingView(tierColors: tierColors)
+                    .transition(.opacity)
+            } else {
+                documentLayer
+            }
+
+            // Layer 2: Floating toolbar + page indicator
+            if revealPhase == .ready {
+                chromeOverlay
+            }
+
+            // Layer 3: Thumbnail rail
+            if showThumbnailRail, let doc = document {
+                VStack {
+                    Spacer()
+                    PDFThumbnailRailView(
+                        document: doc,
+                        currentPageIndex: currentPageIndex,
+                        tierColors: tierColors,
+                        onPageTap: { index in goToPage(index) },
+                        onDismiss: { withAnimation(.spring(response: 0.3)) { showThumbnailRail = false } }
+                    )
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                    .padding(.bottom, 8)
+                    .padding(.horizontal, 8)
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Cancel") { onDismiss() }
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        onShare()
-                    } label: {
-                        Image(systemName: "square.and.arrow.up")
+
+            // Layer 4: Success overlay
+            if showSuccess {
+                PDFSuccessOverlayView(
+                    action: successAction,
+                    tierColors: tierColors,
+                    onDismiss: {
+                        showSuccess = false
+                        resetToolbarTimer()
                     }
-                    .disabled(pdfData == nil)
+                )
+                .transition(.opacity)
+            }
+        }
+        .statusBarHidden(revealPhase == .ready && !showToolbar)
+        .onAppear { handleDataArrival() }
+        .onChange(of: pdfData) { _, _ in handleDataArrival() }
+        .sheet(isPresented: $showShareSheet) {
+            if let data = activePDFData, let doc = document {
+                PDFShareSheetView(
+                    pdfData: data,
+                    document: doc,
+                    tierColors: tierColors,
+                    onSaveSuccess: { showSuccessOverlay(.saved) },
+                    onPrintSuccess: { showSuccessOverlay(.printed) },
+                    onShareComplete: { showSuccessOverlay(.shared) },
+                    isPresented: $showShareSheet
+                )
+            }
+        }
+        .sheet(isPresented: $showDocumentPicker) {
+            if let data = activePDFData {
+                DocumentExportPicker(pdfData: data) { success in
+                    if success { showSuccessOverlay(.saved) }
                 }
             }
         }
     }
+
+    // MARK: - Background Layer
+
+    private var backgroundLayer: some View {
+        ZStack {
+            (isDark ? Color.black : Color(UIColor.systemGroupedBackground))
+
+            // Tier gradient mesh
+            LinearGradient(
+                colors: tierColors.map { $0.opacity(isDark ? 0.12 : 0.08) },
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+
+            // Radial glow
+            RadialGradient(
+                colors: [tierColors.first?.opacity(isDark ? 0.08 : 0.05) ?? .clear, .clear],
+                center: .center,
+                startRadius: 50,
+                endRadius: 400
+            )
+        }
+    }
+
+    // MARK: - Document Layer
+
+    private var documentLayer: some View {
+        ZStack {
+            if let doc = document {
+                PDFKitView(document: doc, onPageChange: onPageChanged, pdfViewRef: $pdfViewRef)
+                    .padding(16)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .strokeBorder(
+                                LinearGradient(colors: tierColors, startPoint: .topLeading, endPoint: .bottomTrailing),
+                                lineWidth: 1
+                            )
+                            .padding(16)
+                    )
+                    .shadow(color: tierColors.first?.opacity(isDark ? 0.15 : 0.08) ?? .clear, radius: 20, y: 4)
+                    .scaleEffect(documentScale)
+                    .opacity(documentOpacity)
+
+                // Glow pulse on reveal
+                if glowOpacity > 0 {
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(.clear)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(
+                                    LinearGradient(colors: tierColors, startPoint: .topLeading, endPoint: .bottomTrailing),
+                                    lineWidth: 2
+                                )
+                                .blur(radius: 8)
+                        )
+                        .padding(16)
+                        .opacity(glowOpacity)
+                }
+            }
+        }
+        .onTapGesture { toggleToolbar() }
+    }
+
+    // MARK: - Chrome Overlay
+
+    private var chromeOverlay: some View {
+        ZStack {
+            // Top toolbar
+            if showToolbar {
+                VStack {
+                    floatingToolbar
+                        .transition(.move(edge: .top).combined(with: .opacity))
+                    Spacer()
+                }
+            }
+
+            // Bottom page indicator
+            if showPageIndicator && !showThumbnailRail {
+                VStack {
+                    Spacer()
+                    pageIndicatorCapsule
+                        .transition(.opacity)
+                        .padding(.bottom, showThumbnailRail ? 88 : 16)
+                }
+            }
+
+            // Regenerating label
+            if isRegenerating {
+                VStack {
+                    Spacer().frame(height: 72)
+                    Text("Regenerating…")
+                        .font(.system(size: 11, weight: .medium))
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                        .transition(.opacity)
+                    Spacer()
+                }
+            }
+        }
+        .animation(.easeInOut(duration: 0.25), value: showToolbar)
+        .animation(.easeInOut(duration: 0.2), value: showPageIndicator)
+        .animation(.easeInOut(duration: 0.2), value: isRegenerating)
+    }
+
+    // MARK: - Floating Toolbar
+
+    private var floatingToolbar: some View {
+        HStack(spacing: 12) {
+            // Close
+            frostedButton(icon: "xmark") {
+                PDFHapticService.shared.buttonTap()
+                onDismiss()
+            }
+            .accessibilityLabel("Close")
+            .accessibilityHint("Dismiss the preview")
+
+            // Pages (multi-page only)
+            if isMultiPage {
+                frostedButton(icon: "book") {
+                    PDFHapticService.shared.buttonTap()
+                    withAnimation(.spring(response: 0.3)) { showThumbnailRail.toggle() }
+                }
+                .accessibilityLabel("Pages")
+                .accessibilityHint("Show page thumbnails")
+            }
+
+            Spacer()
+
+            // Title
+            Text("Learning Report")
+                .font(.system(size: 13, weight: .semibold, design: .rounded))
+                .tracking(0.5)
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .primary)
+
+            Spacer()
+
+            // Save
+            frostedButton(icon: "arrow.down.to.line") {
+                PDFHapticService.shared.buttonTap()
+                showDocumentPicker = true
+            }
+            .accessibilityLabel("Save")
+            .accessibilityHint("Save report to Files")
+
+            // Theme toggle
+            frostedButton(icon: isDark ? "sun.max" : "moon.fill") {
+                PDFHapticService.shared.buttonTap()
+                toggleTheme()
+            }
+            .disabled(isRegenerating)
+            .opacity(isRegenerating ? 0.5 : 1)
+            .accessibilityLabel(isDark ? "Switch to light mode" : "Switch to dark mode")
+
+            // Share
+            frostedButton(icon: "arrow.up") {
+                PDFHapticService.shared.sheetPresent()
+                showShareSheet = true
+            }
+            .accessibilityLabel("Share")
+            .accessibilityHint("Open share options")
+        }
+        .padding(.horizontal, 16)
+        .padding(.top, 8)
+        .accessibilityElement(children: .contain)
+        .accessibilityLabel("Report Actions")
+    }
+
+    private func frostedButton(icon: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Image(systemName: icon)
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(isDark ? .white : .primary)
+                .frame(width: 32, height: 32)
+                .background(
+                    Circle()
+                        .fill(.ultraThinMaterial)
+                        .shadow(color: .black.opacity(0.1), radius: 4, y: 2)
+                )
+        }
+    }
+
+    // MARK: - Page Indicator
+
+    private var pageIndicatorCapsule: some View {
+        Text("\(currentPageIndex + 1) of \(totalPages)")
+            .font(.system(size: 11, weight: .medium, design: .rounded))
+            .foregroundStyle(isDark ? .white.opacity(0.7) : .secondary)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 5)
+            .background(
+                Capsule().fill(.ultraThinMaterial)
+            )
+            .accessibilityLabel("Page \(currentPageIndex + 1) of \(totalPages)")
+    }
+
+    // MARK: - Data Handling & Reveal
+
+    private func handleDataArrival() {
+        guard let data = pdfData else { return }
+        activePDFData = data
+        guard let doc = PDFDocument(data: data) else { return }
+        document = doc
+        totalPages = doc.pageCount
+
+        PDFHapticService.shared.prepare()
+
+        // Begin reveal
+        if revealPhase == .loading {
+            startRevealAnimation()
+        }
+    }
+
+    private func startRevealAnimation() {
+        let reduceMotion = UIAccessibility.isReduceMotionEnabled
+
+        withAnimation(.easeOut(duration: 0.2)) {
+            revealPhase = .revealing
+        }
+
+        if reduceMotion {
+            documentScale = 1.0
+            documentOpacity = 1.0
+            revealPhase = .ready
+            showToolbar = true
+            resetToolbarTimer()
+            PDFHapticService.shared.documentReveal()
+            return
+        }
+
+        // Phase 1: Fade in + scale up (0.5s)
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
+            documentScale = 1.0
+            documentOpacity = 1.0
+        }
+
+        // Phase 2: Glow pulse (0.3s → 0.6s)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            PDFHapticService.shared.documentReveal()
+            withAnimation(.easeInOut(duration: 0.4)) {
+                glowOpacity = 0.6
+            }
+        }
+
+        // Phase 3: Fade glow + transition to ready
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+            withAnimation(.easeOut(duration: 0.4)) {
+                glowOpacity = 0
+            }
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+            withAnimation(.easeInOut(duration: 0.25)) {
+                revealPhase = .ready
+                showToolbar = true
+            }
+            resetToolbarTimer()
+        }
+    }
+
+    // MARK: - Toolbar Auto-Hide
+
+    private func resetToolbarTimer() {
+        let reduceMotion = UIAccessibility.isReduceMotionEnabled
+        toolbarHideTask?.cancel()
+        guard !reduceMotion else { return } // Keep always visible for Reduce Motion
+
+        toolbarHideTask = Task { @MainActor in
+            try? await Task.sleep(for: .seconds(3))
+            guard !Task.isCancelled else { return }
+            withAnimation(.easeInOut(duration: 0.25)) { showToolbar = false }
+        }
+    }
+
+    private func toggleToolbar() {
+        withAnimation(.easeInOut(duration: 0.25)) { showToolbar.toggle() }
+        if showToolbar { resetToolbarTimer() }
+    }
+
+    // MARK: - Page Changes
+
+    private func onPageChanged(pageIndex: Int) {
+        currentPageIndex = pageIndex
+        PDFHapticService.shared.pageTurn()
+
+        withAnimation { showPageIndicator = true }
+        pageIndicatorHideTask?.cancel()
+        pageIndicatorHideTask = Task { @MainActor in
+            try? await Task.sleep(for: .seconds(2))
+            guard !Task.isCancelled else { return }
+            withAnimation { showPageIndicator = false }
+        }
+    }
+
+    private func goToPage(_ index: Int) {
+        guard let doc = document, let page = doc.page(at: index) else { return }
+        pdfViewRef?.go(to: page)
+        currentPageIndex = index
+    }
+
+    // MARK: - Theme Toggle
+
+    private func toggleTheme() {
+        guard !isRegenerating else { return }
+        let newIsDark = !isDark
+        isRegenerating = true
+
+        // Preserve current page
+        let savedPage = currentPageIndex
+
+        Task.detached(priority: .userInitiated) {
+            let records = await MainActor.run { allProgress }
+            let name = await MainActor.run { userName }
+            let t = await MainActor.run { tier }
+            let data = DataExporter.exportPDF(records: records, userName: name, tier: t, isDarkMode: newIsDark)
+
+            await MainActor.run {
+                previewIsDark = newIsDark
+                activePDFData = data
+                let newDoc = PDFDocument(data: data)
+                withAnimation(.easeInOut(duration: 0.3)) {
+                    document = newDoc
+                    totalPages = newDoc?.pageCount ?? 1
+                }
+                isRegenerating = false
+
+                // Restore page position
+                if let doc = newDoc, savedPage < doc.pageCount {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        goToPage(savedPage)
+                    }
+                }
+            }
+        }
+    }
+
+    // MARK: - Success
+
+    private func showSuccessOverlay(_ action: PDFSuccessAction) {
+        successAction = action
+        withAnimation(.easeOut(duration: 0.2)) {
+            showSuccess = true
+            showToolbar = true
+        }
+    }
 }
 
-/// UIViewRepresentable wrapper for PDFKit.PDFView.
+// MARK: - PDFKitView
+
+/// UIViewRepresentable wrapper for PDFKit.PDFView with page change observation.
 struct PDFKitView: UIViewRepresentable {
     let document: PDFDocument
+    var onPageChange: ((Int) -> Void)?
+    @Binding var pdfViewRef: PDFView?
+
+    init(document: PDFDocument, onPageChange: ((Int) -> Void)? = nil, pdfViewRef: Binding<PDFView?> = .constant(nil)) {
+        self.document = document
+        self.onPageChange = onPageChange
+        self._pdfViewRef = pdfViewRef
+    }
+
+    func makeCoordinator() -> Coordinator { Coordinator(onPageChange: onPageChange) }
 
     func makeUIView(context: Context) -> PDFView {
         let pdfView = PDFView()
@@ -482,12 +1137,43 @@ struct PDFKitView: UIViewRepresentable {
         pdfView.displayMode = .singlePageContinuous
         pdfView.displayDirection = .vertical
         pdfView.backgroundColor = .clear
+
+        context.coordinator.observe(pdfView: pdfView, document: document)
+
+        DispatchQueue.main.async { pdfViewRef = pdfView }
         return pdfView
     }
 
     func updateUIView(_ pdfView: PDFView, context: Context) {
         if pdfView.document !== document {
             pdfView.document = document
+            context.coordinator.observe(pdfView: pdfView, document: document)
+        }
+    }
+
+    final class Coordinator: NSObject {
+        var onPageChange: ((Int) -> Void)?
+        private var observation: NSObjectProtocol?
+
+        init(onPageChange: ((Int) -> Void)?) {
+            self.onPageChange = onPageChange
+        }
+
+        func observe(pdfView: PDFView, document: PDFDocument) {
+            if let old = observation { NotificationCenter.default.removeObserver(old) }
+            observation = NotificationCenter.default.addObserver(
+                forName: .PDFViewPageChanged,
+                object: pdfView,
+                queue: .main
+            ) { [weak self] _ in
+                guard let currentPage = pdfView.currentPage else { return }
+                let index = document.index(for: currentPage)
+                self?.onPageChange?(index)
+            }
+        }
+
+        deinit {
+            if let obs = observation { NotificationCenter.default.removeObserver(obs) }
         }
     }
 }
