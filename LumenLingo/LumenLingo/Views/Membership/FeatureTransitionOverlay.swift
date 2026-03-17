@@ -19,7 +19,18 @@ struct FeatureTransitionOverlay: View {
 
     private var isUpgrade: Bool { tierManager.isTierUpgrade }
     private var features: [PremiumFeature] {
-        isUpgrade ? tierManager.newlyUnlockedFeatures : tierManager.newlyLockedFeatures
+        let diff = isUpgrade ? tierManager.newlyUnlockedFeatures : tierManager.newlyLockedFeatures
+        if diff.isEmpty && isUpgrade {
+            // No binary diff (e.g. Elite→Royal) — show all features the new tier has
+            return PremiumFeature.allCases.filter {
+                TierManager.allowedCount(for: $0, tier: tierManager.currentTier) > 0
+            }
+        }
+        return diff
+    }
+    private var isShowingAllFeatures: Bool {
+        let diff = isUpgrade ? tierManager.newlyUnlockedFeatures : tierManager.newlyLockedFeatures
+        return diff.isEmpty && isUpgrade
     }
 
     var body: some View {
@@ -42,17 +53,32 @@ struct FeatureTransitionOverlay: View {
                     rippleRing(size: geo.size)
                 }
 
-                VStack(spacing: 20) {
+                VStack(spacing: 0) {
+                    ornamentalDivider
+                        .opacity(showTitle ? 1 : 0)
+                        .padding(.top, 24)
+                        .padding(.bottom, 12)
+
                     titleView
 
+                    ornamentalDivider
+                        .opacity(showTitle ? 1 : 0)
+                        .padding(.vertical, 14)
+
                     featureList
+                        .padding(.horizontal, 24)
 
                     if showSummary {
+                        ornamentalDivider
+                            .padding(.top, 14)
+                            .padding(.bottom, 8)
+
                         summaryView
                     }
+
+                    Spacer().frame(height: 24)
                 }
-                .padding(.horizontal, 24)
-                .padding(.vertical, 28)
+                .padding(.vertical, 4)
                 .frame(maxWidth: 320)
                 .tierGlassCard(colors: tierManager.currentTier.gradientColors)
                 .scaleEffect(showCard ? 1.0 : 0.85)
@@ -83,12 +109,16 @@ struct FeatureTransitionOverlay: View {
                 )
                 .symbolEffect(.bounce, value: showTitle)
 
-            Text(isUpgrade ? "Features Unlocked" : "Plan Adjusted")
+            Text(isUpgrade
+                 ? (isShowingAllFeatures ? "Your Features" : "Features Unlocked")
+                 : "Plan Adjusted")
                 .font(.title2.bold())
                 .foregroundStyle(.white)
 
             Text(isUpgrade
-                 ? "\(features.count) feature\(features.count == 1 ? "" : "s") now available"
+                 ? (isShowingAllFeatures
+                    ? "Everything included in \(tierManager.currentTier.displayName)"
+                    : "\(features.count) feature\(features.count == 1 ? "" : "s") now available")
                  : "\(features.count) feature\(features.count == 1 ? "" : "s") adjusted")
                 .font(.subheadline)
                 .foregroundStyle(.white.opacity(0.6))
@@ -157,7 +187,9 @@ struct FeatureTransitionOverlay: View {
                             : (isRevealed ? .white.opacity(0.4) : .white)
                     )
 
-                Text(isUpgrade ? "Now available" : "Requires upgrade")
+                Text(isUpgrade
+                     ? (isShowingAllFeatures ? "Included" : "Now available")
+                     : "Requires upgrade")
                     .font(.caption)
                     .foregroundStyle(
                         isUpgrade
@@ -299,6 +331,38 @@ struct FeatureTransitionOverlay: View {
         dismissing = false
         ripplePhase = 0
         sparkleStates = [:]
+    }
+
+    // MARK: - Ornamental Divider
+
+    private var ornamentalDivider: some View {
+        let colors = tierManager.currentTier.gradientColors
+        return HStack(spacing: 8) {
+            Rectangle()
+                .fill(
+                    LinearGradient(
+                        colors: [.clear, colors.first?.opacity(0.4) ?? .clear],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(height: 0.5)
+
+            Image(systemName: "diamond.fill")
+                .font(.system(size: 5))
+                .foregroundStyle(colors.first?.opacity(0.5) ?? .clear)
+
+            Rectangle()
+                .fill(
+                    LinearGradient(
+                        colors: [colors.last?.opacity(0.4) ?? .clear, .clear],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(height: 0.5)
+        }
+        .padding(.horizontal, 32)
     }
 }
 
