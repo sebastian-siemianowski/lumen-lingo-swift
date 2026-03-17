@@ -590,11 +590,40 @@ struct ExportDataWidget: View {
             tier: tierManager.currentTier
         )
 
-        let renderer = ImageRenderer(content: cardView)
-        renderer.scale = 3 // @3x for high quality
-        guard let image = renderer.uiImage else { return }
-        guard let data = image.pngData() else { return }
-        shareFile(data: data, fileName: "lumenlingo_achievement.png")
+        let cardSize: CGFloat = 360
+
+        // Attach to a temporary off-screen window so SwiftUI fully renders content
+        let hostingController = UIHostingController(rootView: cardView)
+        hostingController.view.frame = CGRect(origin: .zero, size: CGSize(width: cardSize, height: cardSize))
+        hostingController.view.backgroundColor = .black
+        hostingController.overrideUserInterfaceStyle = .dark
+        // Remove safe area insets that cause white strip
+        hostingController.additionalSafeAreaInsets = UIEdgeInsets(top: -hostingController.view.safeAreaInsets.top, left: 0, bottom: -hostingController.view.safeAreaInsets.bottom, right: 0)
+
+        let window = UIWindow(frame: CGRect(origin: .zero, size: CGSize(width: cardSize, height: cardSize)))
+        window.backgroundColor = .black
+        window.overrideUserInterfaceStyle = .dark
+        window.rootViewController = hostingController
+        window.isHidden = false
+        window.layoutIfNeeded()
+
+        let format = UIGraphicsImageRendererFormat()
+        format.scale = 3
+        let imageRenderer = UIGraphicsImageRenderer(
+            size: CGSize(width: cardSize, height: cardSize),
+            format: format
+        )
+        let image = imageRenderer.image { _ in
+            hostingController.view.drawHierarchy(
+                in: CGRect(origin: .zero, size: CGSize(width: cardSize, height: cardSize)),
+                afterScreenUpdates: true
+            )
+        }
+
+        window.isHidden = true
+
+        guard let pngData = image.pngData() else { return }
+        shareFile(data: pngData, fileName: "lumenlingo_achievement.png")
     }
 
     @MainActor
@@ -1180,8 +1209,8 @@ struct PDFKitView: UIViewRepresentable {
 
 // MARK: - Sharable Achievement Card (Story 4.4)
 
-/// 1080×1080 SwiftUI view for social media sharing with tier gradient,
-/// stats, and LumenLingo branding.
+/// 1080×1080 premium achievement card for social sharing.
+/// Deep dark background, tier-colored accents, frosted glass stats.
 struct SharableAchievementCard: View {
     let userName: String
     let totalXP: Int
@@ -1190,130 +1219,250 @@ struct SharableAchievementCard: View {
     let streak: Int
     let tier: MembershipTier
 
-    private let cardSize: CGFloat = 360 // Logical points, rendered @3x = 1080px
+    private let cardSize: CGFloat = 360
 
     var body: some View {
         ZStack {
-            // Tier gradient background
-            LinearGradient(
-                colors: backgroundGradient,
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
+            // Deep cinematic background
+            Color(red: 0.04, green: 0.04, blue: 0.09)
+
+            // Tier-colored radial glow (upper center)
+            RadialGradient(
+                colors: [
+                    tierAccent.opacity(0.18),
+                    tierAccent.opacity(0.06),
+                    .clear
+                ],
+                center: UnitPoint(x: 0.5, y: 0.28),
+                startRadius: 10,
+                endRadius: 180
             )
 
-            // Subtle radial glow
+            // Secondary warm glow (lower)
             RadialGradient(
-                colors: [.white.opacity(0.12), .clear],
-                center: .center,
-                startRadius: 20,
-                endRadius: 200
+                colors: [
+                    tierSecondary.opacity(0.08),
+                    .clear
+                ],
+                center: UnitPoint(x: 0.5, y: 0.85),
+                startRadius: 5,
+                endRadius: 140
             )
 
             // Content
             VStack(spacing: 0) {
-                Spacer().frame(height: 40)
-
-                // Logo
-                Text("LumenLingo")
-                    .font(.system(size: 16, weight: .black, design: .rounded))
-                    .foregroundStyle(.white.opacity(0.7))
-                    .tracking(2)
-
-                Spacer().frame(height: 10)
-
-                // Tier icon
-                Image(systemName: tier.iconName)
-                    .font(.system(size: 48, weight: .bold))
-                    .foregroundStyle(.white)
-                    .shadow(color: .black.opacity(0.3), radius: 10)
-
-                Spacer().frame(height: 8)
-
-                // User name or tier name
-                if !userName.isEmpty {
-                    Text(userName)
-                        .font(.system(size: 22, weight: .bold, design: .rounded))
-                        .foregroundStyle(.white)
-                }
-
-                // Tier badge
-                Text(tier.displayName)
-                    .font(.system(size: 12, weight: .bold, design: .rounded))
-                    .foregroundStyle(.white.opacity(0.8))
-                    .tracking(1.5)
-                    .textCase(.uppercase)
-                    .padding(.top, 2)
-
-                Spacer().frame(height: 24)
-
-                // Stats grid
-                HStack(spacing: 0) {
-                    statPill(value: formatXP(totalXP), label: "Total XP")
-                    divider
-                    statPill(value: "\(sessionCount)", label: "Sessions")
+                // Top branding
+                HStack {
+                    Text("LUMENLINGO")
+                        .font(.system(size: 10, weight: .heavy, design: .rounded))
+                        .foregroundStyle(.white.opacity(0.35))
+                        .tracking(3)
+                    Spacer()
+                    Text("ACHIEVEMENT")
+                        .font(.system(size: 8, weight: .bold, design: .rounded))
+                        .foregroundStyle(tierAccent.opacity(0.5))
+                        .tracking(2)
                 }
                 .padding(.horizontal, 24)
+                .padding(.top, 22)
+
+                // Thin separator
+                Rectangle()
+                    .fill(
+                        LinearGradient(
+                            colors: [.clear, .white.opacity(0.08), tierAccent.opacity(0.15), .white.opacity(0.08), .clear],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(height: 0.5)
+                    .padding(.horizontal, 20)
+                    .padding(.top, 10)
+
+                Spacer().frame(height: 20)
+
+                // Tier icon with glow
+                ZStack {
+                    // Outer glow ring
+                    Circle()
+                        .stroke(tierAccent.opacity(0.12), lineWidth: 1)
+                        .frame(width: 76, height: 76)
+
+                    // Inner frosted circle
+                    Circle()
+                        .fill(.white.opacity(0.05))
+                        .frame(width: 64, height: 64)
+                        .overlay(
+                            Circle()
+                                .stroke(.white.opacity(0.1), lineWidth: 0.5)
+                        )
+
+                    Image(systemName: tier.iconName)
+                        .font(.system(size: 28, weight: .medium))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: tier.gradientColors,
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                        .shadow(color: tierAccent.opacity(0.4), radius: 8)
+                }
 
                 Spacer().frame(height: 12)
 
-                HStack(spacing: 0) {
-                    statPill(value: String(format: "%.0f%%", accuracy), label: "Accuracy")
-                    divider
-                    statPill(value: "\(streak)", label: "Day Streak")
+                // User name
+                if !userName.isEmpty {
+                    Text(userName)
+                        .font(.system(size: 24, weight: .bold, design: .rounded))
+                        .foregroundStyle(.white)
+                        .shadow(color: .black.opacity(0.3), radius: 4)
                 }
-                .padding(.horizontal, 24)
+
+                // Tier badge pill
+                Text(tier.displayName.uppercased())
+                    .font(.system(size: 9, weight: .heavy, design: .rounded))
+                    .foregroundStyle(tierAccent)
+                    .tracking(2)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 4)
+                    .background(
+                        Capsule()
+                            .fill(tierAccent.opacity(0.12))
+                            .overlay(Capsule().stroke(tierAccent.opacity(0.2), lineWidth: 0.5))
+                    )
+                    .padding(.top, 6)
+
+                Spacer().frame(height: 22)
+
+                // Stats grid — frosted glass cards
+                HStack(spacing: 8) {
+                    statCard(value: formatXP(totalXP), label: "TOTAL XP", accent: tierAccent)
+                    statCard(value: "\(sessionCount)", label: "SESSIONS", accent: .white)
+                }
+                .padding(.horizontal, 20)
+
+                Spacer().frame(height: 8)
+
+                HStack(spacing: 8) {
+                    statCard(value: String(format: "%.0f%%", accuracy), label: "ACCURACY", accent: accuracyColor)
+                    statCard(value: "\(streak)🔥", label: "STREAK", accent: .orange)
+                }
+                .padding(.horizontal, 20)
 
                 Spacer()
 
-                // Footer branding
-                HStack(spacing: 4) {
+                // Bottom separator
+                Rectangle()
+                    .fill(
+                        LinearGradient(
+                            colors: [.clear, .white.opacity(0.06), .clear],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(height: 0.5)
+                    .padding(.horizontal, 40)
+
+                // Footer
+                HStack(spacing: 5) {
                     Image(systemName: "globe")
-                        .font(.system(size: 9))
+                        .font(.system(size: 8, weight: .medium))
                     Text("lumenlingo.app")
-                        .font(.system(size: 10, weight: .medium))
+                        .font(.system(size: 10, weight: .semibold, design: .rounded))
                 }
-                .foregroundStyle(.white.opacity(0.4))
-                .padding(.bottom, 28)
+                .foregroundStyle(.white.opacity(0.3))
+                .padding(.top, 8)
+                .padding(.bottom, 18)
             }
+
+            // Subtle corner accent lines (top-right, bottom-left)
+            VStack {
+                HStack {
+                    Spacer()
+                    CornerAccent()
+                        .stroke(tierAccent.opacity(0.12), lineWidth: 0.5)
+                        .frame(width: 40, height: 40)
+                        .padding(.trailing, 12)
+                        .padding(.top, 12)
+                }
+                Spacer()
+                HStack {
+                    CornerAccent()
+                        .stroke(tierAccent.opacity(0.08), lineWidth: 0.5)
+                        .frame(width: 30, height: 30)
+                        .rotationEffect(.degrees(180))
+                        .padding(.leading, 12)
+                        .padding(.bottom, 12)
+                    Spacer()
+                }
+            }
+
+            // Fine border
+            RoundedRectangle(cornerRadius: 0)
+                .stroke(.white.opacity(0.06), lineWidth: 0.5)
         }
         .frame(width: cardSize, height: cardSize)
-        .clipShape(RoundedRectangle(cornerRadius: 0))
+        .clipped()
     }
 
-    private var backgroundGradient: [Color] {
-        let base = tier.gradientColors
-        // Add deeper colors for richer background
-        return [
-            Color.black.opacity(0.3),
-            base.first ?? .purple,
-            base.last ?? .pink,
-            Color.black.opacity(0.4)
-        ]
-    }
+    // MARK: - Components
 
-    private func statPill(value: String, label: String) -> some View {
-        VStack(spacing: 3) {
+    private func statCard(value: String, label: String, accent: Color) -> some View {
+        VStack(spacing: 4) {
             Text(value)
-                .font(.system(size: 28, weight: .bold, design: .rounded))
+                .font(.system(size: 24, weight: .bold, design: .rounded))
                 .foregroundStyle(.white)
                 .minimumScaleFactor(0.6)
+                .lineLimit(1)
             Text(label)
-                .font(.system(size: 10, weight: .medium))
-                .foregroundStyle(.white.opacity(0.6))
-                .textCase(.uppercase)
-                .tracking(0.5)
+                .font(.system(size: 8, weight: .bold, design: .rounded))
+                .foregroundStyle(.white.opacity(0.4))
+                .tracking(1)
         }
         .frame(maxWidth: .infinity)
+        .padding(.vertical, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(.white.opacity(0.04))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 14)
+                        .stroke(.white.opacity(0.07), lineWidth: 0.5)
+                )
+        )
     }
 
-    private var divider: some View {
-        Rectangle()
-            .fill(.white.opacity(0.15))
-            .frame(width: 1, height: 40)
+    // MARK: - Colors
+
+    private var tierAccent: Color {
+        tier.gradientColors.first ?? .purple
+    }
+
+    private var tierSecondary: Color {
+        tier.gradientColors.last ?? .pink
+    }
+
+    private var accuracyColor: Color {
+        if accuracy >= 90 { return .green }
+        if accuracy >= 70 { return .yellow }
+        return .orange
     }
 
     private func formatXP(_ xp: Int) -> String {
-        if xp >= 10000 { return String(format: "%.1fK", Double(xp) / 1000) }
+        if xp >= 100_000 { return String(format: "%.0fK", Double(xp) / 1000) }
+        if xp >= 10_000 { return String(format: "%.1fK", Double(xp) / 1000) }
         return "\(xp)"
+    }
+}
+
+/// Decorative corner accent shape for the achievement card.
+private struct CornerAccent: Shape {
+    func path(in rect: CGRect) -> Path {
+        var p = Path()
+        p.move(to: CGPoint(x: rect.maxX, y: rect.minY))
+        p.addLine(to: CGPoint(x: rect.maxX, y: rect.minY + 12))
+        p.move(to: CGPoint(x: rect.maxX, y: rect.minY))
+        p.addLine(to: CGPoint(x: rect.maxX - 12, y: rect.minY))
+        return p
     }
 }
