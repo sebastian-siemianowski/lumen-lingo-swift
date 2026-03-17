@@ -1346,7 +1346,7 @@ struct SharableAchievementCard: View {
 
                 HStack(spacing: 8) {
                     statCard(value: String(format: "%.0f%%", accuracy), label: "ACCURACY", accent: accuracyColor)
-                    statCard(value: "\(streak)🔥", label: "STREAK", accent: .orange)
+                    statCard(value: "\(streak)", label: "DAY STREAK", accent: .orange)
                 }
                 .padding(.horizontal, 20)
 
