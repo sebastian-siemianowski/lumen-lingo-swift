@@ -626,7 +626,6 @@ struct TierCardView: View {
     @Binding var selectedTierId: String
 
     @State private var isHovered = false
-    @State private var ctaPressed = false
     @State private var showTrialConfirmation = false
     @State private var isCardPressed = false
     @State private var gradientPulse: Double = 0
@@ -823,14 +822,29 @@ struct TierCardView: View {
             }
 
             // CTA button
-            HStack(spacing: 6) {
-                if isActuallyCurrent {
-                    Image(systemName: "checkmark.circle.fill")
-                        .font(.caption)
-                        .transition(.scale.combined(with: .opacity))
+            Button {
+                guard !isActuallyCurrent, !tier.isDisabled else { return }
+                AudioService.shared.playTierSelect()
+                if tier.id == "trial" {
+                    if tierManager.startTrial(profile: profile) {
+                        selectedTierId = "trial"
+                        showTrialConfirmation = true
+                    }
+                } else {
+                    withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                        selectedTierId = tier.id
+                    }
+                    tierManager.selectTier(tier.id, profile: profile)
                 }
-                Text(isActuallyCurrent ? L.currentPlan : tier.cta)
-            }
+            } label: {
+                HStack(spacing: 6) {
+                    if isActuallyCurrent {
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.caption)
+                            .transition(.scale.combined(with: .opacity))
+                    }
+                    Text(isActuallyCurrent ? L.currentPlan : tier.cta)
+                }
                 .font(.subheadline.bold())
                 .foregroundStyle(.white)
                 .frame(maxWidth: .infinity)
@@ -863,41 +877,10 @@ struct TierCardView: View {
                                 )
                         )
                 )
-                .scaleEffect(ctaPressed ? 0.95 : 1.0)
-                .brightness(ctaPressed ? -0.06 : 0)
-                .shadow(
-                    color: (tier.gradientColors.first ?? .purple).opacity(ctaPressed ? 0.60 : 0.30),
-                    radius: ctaPressed ? 20 : 10,
-                    y: ctaPressed ? 2 : 4
-                )
-                .saturation(ctaPressed ? 1.12 : 1.0)
-                .animation(.spring(response: 0.25, dampingFraction: 0.55), value: ctaPressed)
-                .contentShape(Capsule())
-                .onTapGesture {
-                    guard !isActuallyCurrent, !tier.isDisabled else { return }
-                    withAnimation(.spring(response: 0.08, dampingFraction: 0.80)) {
-                        ctaPressed = true
-                    }
-                    AudioService.shared.playTierSelect()
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
-                        withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
-                            ctaPressed = false
-                        }
-                        if tier.id == "trial" {
-                            // Start trial and show confirmation
-                            if tierManager.startTrial(profile: profile) {
-                                selectedTierId = "trial"
-                                showTrialConfirmation = true
-                            }
-                        } else {
-                            withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
-                                selectedTierId = tier.id
-                            }
-                            tierManager.selectTier(tier.id, profile: profile)
-                        }
-                    }
-                }
-                .opacity(isActuallyCurrent ? 0.8 : (tier.isDisabled ? 0.3 : 1.0))
+            }
+            .buttonStyle(PremiumCTAButtonStyle(glowColor: tier.gradientColors.first ?? .purple))
+            .disabled(isActuallyCurrent || tier.isDisabled)
+            .opacity(isActuallyCurrent ? 0.8 : (tier.isDisabled ? 0.3 : 1.0))
         }
         .padding(18)
         .background(

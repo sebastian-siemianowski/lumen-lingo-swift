@@ -13,6 +13,7 @@ struct TrialEndedView: View {
     @Query private var profiles: [UserProfile]
 
     @State private var showContent = false
+    @State private var navigateToMembership = false
 
     private var profile: UserProfile? { profiles.first }
     private var L: AppStrings { localization.strings }
@@ -70,6 +71,9 @@ struct TrialEndedView: View {
                             .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
                     }
                 }
+            }
+            .navigationDestination(isPresented: $navigateToMembership) {
+                MembershipView()
             }
         }
         .onAppear {
@@ -258,26 +262,11 @@ struct TrialEndedView: View {
 
     private var ctaSection: some View {
         VStack(spacing: 14) {
-            NavigationLink {
-                MembershipView()
-            } label: {
-                Text(L.trialChoosePlan)
-                    .font(.headline)
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 16)
-                    .background(
-                        Capsule()
-                            .fill(
-                                LinearGradient(
-                                    colors: [.purple, .pink],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
-                            )
-                            .shadow(color: .purple.opacity(0.3), radius: 12, y: 4)
-                    )
-            }
+            PremiumCTAButton(
+                title: L.trialChoosePlan,
+                tier: .pro,
+                action: { navigateToMembership = true }
+            )
 
             Button {
                 dismissAndMark()

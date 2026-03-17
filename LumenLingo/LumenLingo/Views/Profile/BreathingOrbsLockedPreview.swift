@@ -93,29 +93,14 @@ struct BreathingOrbsLockedPreview: View {
                     .opacity(appeared ? 1.0 : 0)
 
                 // CTA button
-                Button {
-                    HapticsService.shared.buttonPress()
-                    showMembership = true
-                } label: {
-                    HStack(spacing: 8) {
-                        Image(systemName: "lock.open.fill")
-                            .font(.system(size: 14, weight: .semibold))
-                        Text("Unlock with Pro")
-                            .font(.system(size: 16, weight: .bold))
-                    }
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 14)
-                    .background(
-                        LinearGradient(
-                            colors: MembershipTier.pro.gradientColors,
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-                    .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-                    .shadow(color: MembershipTier.pro.accentColor.opacity(0.3), radius: 8, y: 4)
-                }
+                PremiumCTAButton(
+                    title: "Unlock with Pro",
+                    tier: .pro,
+                    action: { showMembership = true },
+                    icon: "lock.open.fill",
+                    shape: .rounded(14),
+                    size: .compact
+                )
                 .padding(.horizontal, 24)
                 .scaleEffect(appeared ? 1.0 : 0.9)
                 .opacity(appeared ? 1.0 : 0)

@@ -51,29 +51,13 @@ struct LanguagePairUpgradeSheet: View {
                     tierRequirementBadge
 
                     // CTA
-                    Button {
-                        HapticsService.shared.buttonPress()
-                        navigateToMembership = true
-                    } label: {
-                        HStack(spacing: 8) {
-                            Image(systemName: minTier.iconName)
-                                .font(.system(size: 15, weight: .semibold))
-                            Text("View Plans")
-                                .font(.system(size: 17, weight: .bold))
-                        }
-                        .foregroundStyle(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 14)
-                        .background(
-                            LinearGradient(
-                                colors: minTier.gradientColors,
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-                        .shadow(color: minTier.accentColor.opacity(0.3), radius: 8, y: 4)
-                    }
+                    PremiumCTAButton(
+                        title: "View Plans",
+                        tier: minTier,
+                        action: { navigateToMembership = true },
+                        icon: minTier.iconName,
+                        shape: .rounded(14)
+                    )
                     .padding(.horizontal, 24)
                     .padding(.top, 4)
 

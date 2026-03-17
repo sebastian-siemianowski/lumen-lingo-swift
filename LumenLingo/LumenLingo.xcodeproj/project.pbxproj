@@ -132,6 +132,7 @@
 		94B616D28FC3A7C26CDA94C5 /* Tokyo-Night-Street.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8A7CB0448DE947B938B41FF7 /* Tokyo-Night-Street.m4a */; };
 		96AB7329C4F494D16175E2C5 /* grammar_japanese_english.json in Resources */ = {isa = PBXBuildFile; fileRef = C2522C1400407731C720E317 /* grammar_japanese_english.json */; };
 		98324CC583C1F2E99D1EC600 /* wordbuilder_polish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = A4DD27AFCE378D73D79D9A34 /* wordbuilder_polish_english.json */; };
+		986D3C34AC49DB0AF388FDBC /* PremiumCTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5881A9A303C2E0066D3F9606 /* PremiumCTAButton.swift */; };
 		98C810678A94878277E25C89 /* QuantumFlowSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8094790693AC9E42966B5F /* QuantumFlowSettingsView.swift */; };
 		9A088AC44F03937FC1939412 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A2278E3B176354236AF109 /* DashboardView.swift */; };
 		9A0B9633423DAAE2A755A384 /* LockedFeatureIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FCD7819D46F40F48FCD4D /* LockedFeatureIndicator.swift */; };
@@ -198,6 +199,7 @@
 		DF2BC01B8E34CB130AB3B7B6 /* MembershipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927863E6ECF97AE41A78326D /* MembershipView.swift */; };
 		E04CF3B9BEE5E6E32567269F /* StarFieldGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A63D5EEB0001AEFA02084A /* StarFieldGenerator.swift */; };
 		E167F25A707E33B4A813EAB2 /* grammar_polish_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = E56328BCC55D6C38A861C0F9 /* grammar_polish_ukrainian.json */; };
+		E36268A61FC90300A7AB119F /* PremiumCTAButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62631C787DB4298AAE4CD46A /* PremiumCTAButtonTests.swift */; };
 		E374714E6F741D49D839BDB9 /* UpgradePromptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A9F40ACA962BFEDF0C55D /* UpgradePromptManager.swift */; };
 		E5C95676BF77324EABAACEC0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9BA72516085422014F289 /* ProfileView.swift */; };
 		E6EF650284231578942E29AD /* TrialCountdownBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D7C1C1A49A7020F5541B2 /* TrialCountdownBanner.swift */; };
@@ -319,6 +321,7 @@
 		5477D11222E706CD9576D790 /* XPMultiplierBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPMultiplierBadge.swift; sourceTree = "<group>"; };
 		55B9BA72516085422014F289 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		57E4B1517FF079FD28CE5508 /* CelestialStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CelestialStars.metal; sourceTree = "<group>"; };
+		5881A9A303C2E0066D3F9606 /* PremiumCTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCTAButton.swift; sourceTree = "<group>"; };
 		59A8193CDA27C5F43BF910C5 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
 		59C0A048BA91DCF01083EFDA /* Observatory-Night-1.m4a */ = {isa = PBXFileReference; path = "Observatory-Night-1.m4a"; sourceTree = "<group>"; };
 		59EF54CA4B0E1ECB5159EE96 /* QuantumFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumFlowView.swift; sourceTree = "<group>"; };
@@ -329,6 +332,7 @@
 		5CE6659F8979C9D0010BE085 /* Venice-Canal-Morning.m4a */ = {isa = PBXFileReference; path = "Venice-Canal-Morning.m4a"; sourceTree = "<group>"; };
 		5D9369578E51867FB1E3FF86 /* LumenLingoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LumenLingoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFC389872A53408E1404066 /* TierGlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierGlassCard.swift; sourceTree = "<group>"; };
+		62631C787DB4298AAE4CD46A /* PremiumCTAButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCTAButtonTests.swift; sourceTree = "<group>"; };
 		62BB8A676728B666DFB159B8 /* MetalCosmicRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCosmicRenderer.swift; sourceTree = "<group>"; };
 		62C3678F93D1D997024205E2 /* ContentLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLoader.swift; sourceTree = "<group>"; };
 		62C61FD456ED0B02634CD315 /* wordbuilder_german_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_german_polish.json; sourceTree = "<group>"; };
@@ -578,6 +582,7 @@
 				9E8FCD7819D46F40F48FCD4D /* LockedFeatureIndicator.swift */,
 				53B3BC180E8CA6F328FF7C7F /* OfflineBanner.swift */,
 				D3DCA4D4638FDF2525769692 /* PostSessionNudge.swift */,
+				5881A9A303C2E0066D3F9606 /* PremiumCTAButton.swift */,
 				5EFC389872A53408E1404066 /* TierGlassCard.swift */,
 			);
 			path = Shared;
@@ -926,6 +931,7 @@
 			isa = PBXGroup;
 			children = (
 				B6B4D440EDEAC300EBDDE943 /* PracticeTimeTrackerTests.swift */,
+				62631C787DB4298AAE4CD46A /* PremiumCTAButtonTests.swift */,
 				5C7EADC31DDB860FC7246935 /* TierManagerTests.swift */,
 			);
 			path = LumenLingoTests;
@@ -1249,6 +1255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C595EFADF175AE74AFFB95A3 /* PracticeTimeTrackerTests.swift in Sources */,
+				E36268A61FC90300A7AB119F /* PremiumCTAButtonTests.swift in Sources */,
 				A6E57ECCE0761DBEDD2075CC /* TierManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1334,6 +1341,7 @@
 				207C74D6A9B9CC98B4F2E6B4 /* PracticeTimeBanner.swift in Sources */,
 				8A42BEFAEDEA9418A806EFAD /* PracticeTimeRing.swift in Sources */,
 				9DB2831CB810A6AC18B21644 /* PracticeTimeTracker.swift in Sources */,
+				986D3C34AC49DB0AF388FDBC /* PremiumCTAButton.swift in Sources */,
 				25E93CEE1FC4483A4DEC2CE7 /* PremiumFeatureBadge.swift in Sources */,
 				3D201170B7B43BACCA089962 /* PremiumFeatureCarousel.swift in Sources */,
 				E5C95676BF77324EABAACEC0 /* ProfileView.swift in Sources */,

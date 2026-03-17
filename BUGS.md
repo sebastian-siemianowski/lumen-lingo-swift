@@ -1189,12 +1189,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: Each onboarding page is wrapped in a `ScrollView(.vertical, showsIndicators: false)` so that all content is accessible via scroll on any screen size.
-- [ ] AC2: On devices where all content fits (iPhone 16 Pro Max and larger), no scroll is needed — the content is vertically centered as before.
-- [ ] AC3: On iPhone SE (375×667pt, smallest screen): all text, icons, feature bullets, and the CTA button are visible either within the viewport or via a short scroll. No content is clipped.
-- [ ] AC4: The page indicators remain pinned to the bottom of the screen (outside the ScrollView) so they're always accessible.
-- [ ] AC5: The "Skip" button remains pinned to the top-right corner (outside the ScrollView) so it's always accessible.
-- [ ] AC6: The ScrollView does NOT interfere with the horizontal swipe gesture for page changes — vertical scroll and horizontal page swipe coexist without conflict.
+- [x] AC1: Each onboarding page is wrapped in a `ScrollView(.vertical, showsIndicators: false)` so that all content is accessible via scroll on any screen size.
+- [x] AC2: On devices where all content fits (iPhone 16 Pro Max and larger), no scroll is needed — the content is vertically centered as before.
+- [x] AC3: On iPhone SE (375×667pt, smallest screen): all text, icons, feature bullets, and the CTA button are visible either within the viewport or via a short scroll. No content is clipped.
+- [x] AC4: The page indicators remain pinned to the bottom of the screen (outside the ScrollView) so they're always accessible.
+- [x] AC5: The "Skip" button remains pinned to the top-right corner (outside the ScrollView) so it's always accessible.
+- [x] AC6: The ScrollView does NOT interfere with the horizontal swipe gesture for page changes — vertical scroll and horizontal page swipe coexist without conflict.
 
 #### Subtasks
 
@@ -1222,11 +1222,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The animated icon area uses a maximum height of 25% of the screen height (via `GeometryReader`), not a fixed point value.
-- [ ] AC2: On iPhone SE: icon area ≈ 167pt. On iPhone 16 Pro Max: icon area ≈ 215pt. On iPad: icon area ≈ 250pt.
-- [ ] AC3: The radial glow effect scales proportionally with the icon — it never extends beyond the icon area's bounds.
-- [ ] AC4: The pulse animation amplitude scales proportionally (smaller screen = subtler pulse) to avoid visual "overflow" on tight layouts.
-- [ ] AC5: Icon rendering quality is crisp at all sizes (SF Symbols auto-scale; custom assets need @2x/@3x variants).
+- [x] AC1: The animated icon area uses a maximum height of 25% of the screen height (via `GeometryReader`), not a fixed point value.
+- [x] AC2: On iPhone SE: icon area ≈ 167pt. On iPhone 16 Pro Max: icon area ≈ 215pt. On iPad: icon area ≈ 250pt.
+- [x] AC3: The radial glow effect scales proportionally with the icon — it never extends beyond the icon area's bounds.
+- [x] AC4: The pulse animation amplitude scales proportionally (smaller screen = subtler pulse) to avoid visual "overflow" on tight layouts.
+- [x] AC5: Icon rendering quality is crisp at all sizes (SF Symbols auto-scale; custom assets need @2x/@3x variants).
 
 #### Subtasks
 
@@ -1252,12 +1252,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: Feature bullets use `.body` font on larger screens and `.callout` on compact screens (adaptive via `@ScaledMetric` or `horizontalSizeClass`).
-- [ ] AC2: Bullet text supports multiline wrapping — `.lineLimit(nil)` with `.fixedSize(horizontal: false, vertical: true)`.
-- [ ] AC3: Each bullet has consistent horizontal padding (16pt) so text doesn't collide with screen edges.
-- [ ] AC4: The icon-to-text spacing within each bullet is consistent (8pt).
-- [ ] AC5: On iPhone SE with Dynamic Type set to "Largest" accessibility size: all bullets are still fully readable (may require scroll, but no truncation).
-- [ ] AC6: The CTA button remains visible below the last bullet with at least 20pt spacing.
+- [x] AC1: Feature bullets use `.body` font on larger screens and `.callout` on compact screens (adaptive via `@ScaledMetric` or `horizontalSizeClass`).
+- [x] AC2: Bullet text supports multiline wrapping — `.lineLimit(nil)` with `.fixedSize(horizontal: false, vertical: true)`.
+- [x] AC3: Each bullet has consistent horizontal padding (16pt) so text doesn't collide with screen edges.
+- [x] AC4: The icon-to-text spacing within each bullet is consistent (8pt).
+- [x] AC5: On iPhone SE with Dynamic Type set to "Largest" accessibility size: all bullets are still fully readable (may require scroll, but no truncation).
+- [x] AC6: The CTA button remains visible below the last bullet with at least 20pt spacing.
 
 #### Subtasks
 
@@ -1285,11 +1285,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: When swiping to a new page, the content elements enter with staggered timing: icon (0s delay), title (0.1s), subtitle (0.15s), bullets (0.2s per bullet), CTA (0.3s after last bullet).
-- [ ] AC2: Entrance animations use `opacity(0→1)` combined with `offset(y: 20→0)` and `spring(duration: 0.5, bounce: 0.2)`.
-- [ ] AC3: The exit animation (swiping away) is a simple fade-out — no stagger on exit.
-- [ ] AC4: Animations only trigger when the page ENTERS the viewport for the first time; re-visiting a page does not re-trigger (use `@State var hasAppeared`).
-- [ ] AC5: The animations do not interfere with the TabView's paging gesture response time — they run concurrently with the page transition.
+- [x] AC1: When swiping to a new page, the content elements enter with staggered timing: icon (0s delay), title (0.1s), subtitle (0.15s), bullets (0.2s per bullet), CTA (0.3s after last bullet).
+- [x] AC2: Entrance animations use `opacity(0→1)` combined with `offset(y: 20→0)` and `spring(duration: 0.5, bounce: 0.2)`.
+- [x] AC3: The exit animation (swiping away) is a simple fade-out — no stagger on exit.
+- [x] AC4: Animations only trigger when the page ENTERS the viewport for the first time; re-visiting a page does not re-trigger (use `@State var hasAppeared`).
+- [x] AC5: The animations do not interfere with the TabView's paging gesture response time — they run concurrently with the page transition.
 
 #### Subtasks
 
@@ -1894,7 +1894,7 @@
 **ID:** BUG-049  
 **Priority:** P0  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** developer,  
 **I want** a complete inventory of every paywall CTA button in the app,  
@@ -1902,9 +1902,9 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: A documented inventory lists every paywall CTA button with: location (file + line), current background treatment (gradient/solid/transparent), text color, and contrast ratio assessment (pass/fail at 4.5:1 WCAG AA).
-- [ ] AC2: The inventory covers: MembershipView tier cards, UpgradePromptView CTAs, PremiumFeatureBadge tappable instances, any inline "Upgrade" buttons in game views, PostSessionNudge buttons, onboarding CTAs.
-- [ ] AC3: Every button is categorized as PASS (opaque, readable) or FAIL (transparent, low contrast, invisible on some backgrounds).
+- [x] AC1: A documented inventory lists every paywall CTA button with: location (file + line), current background treatment (gradient/solid/transparent), text color, and contrast ratio assessment (pass/fail at 4.5:1 WCAG AA).
+- [x] AC2: The inventory covers: MembershipView tier cards, UpgradePromptView CTAs, PremiumFeatureBadge tappable instances, any inline "Upgrade" buttons in game views, PostSessionNudge buttons, onboarding CTAs.
+- [x] AC3: Every button is categorized as PASS (opaque, readable) or FAIL (transparent, low contrast, invisible on some backgrounds).
 
 #### Subtasks
 
@@ -1922,7 +1922,7 @@
 **ID:** BUG-050  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** developer,  
 **I want** a single `PremiumCTAButton` component that all paywall surfaces use,  
@@ -1930,15 +1930,15 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: `PremiumCTAButton` is a reusable SwiftUI view in `Views/Shared/`.
-- [ ] AC2: It accepts: `title: String`, `tier: MembershipTier`, `action: () -> Void`, optional `icon: String?` (SF Symbol).
-- [ ] AC3: Background: always opaque `LinearGradient` using the tier's gradient colors. No `.opacity()` modifiers.
-- [ ] AC4: Text: `.white` with `.semibold` weight, `.body` font size minimum. Never truncated (`.minimumScaleFactor(0.8)`).
-- [ ] AC5: Shadow: `shadow(color: tier.gradientColors.first.opacity(0.4), radius: 10, y: 4)` for depth.
-- [ ] AC6: Press feedback: scale 0.95x + brightness -0.05 via `ButtonStyle`.
-- [ ] AC7: Haptic: `hapticsService.buttonPress()` on tap.
-- [ ] AC8: Full-width by default (`.frame(maxWidth: .infinity, minHeight: 50)`) with 16pt corner radius.
-- [ ] AC9: All existing paywall CTAs in `UpgradePromptView`, `MembershipView`, `PostSessionNudge`, and onboarding are migrated to use this component.
+- [x] AC1: `PremiumCTAButton` is a reusable SwiftUI view in `Views/Shared/`.
+- [x] AC2: It accepts: `title: String`, `tier: MembershipTier`, `action: () -> Void`, optional `icon: String?` (SF Symbol).
+- [x] AC3: Background: always opaque `LinearGradient` using the tier's gradient colors. No `.opacity()` modifiers.
+- [x] AC4: Text: `.white` with `.semibold` weight, `.body` font size minimum. Never truncated (`.minimumScaleFactor(0.8)`).
+- [x] AC5: Shadow: `shadow(color: tier.gradientColors.first.opacity(0.4), radius: 10, y: 4)` for depth.
+- [x] AC6: Press feedback: scale 0.95x + brightness -0.05 via `ButtonStyle`.
+- [x] AC7: Haptic: `hapticsService.buttonPress()` on tap.
+- [x] AC8: Full-width by default (`.frame(maxWidth: .infinity, minHeight: 50)`) with 16pt corner radius.
+- [x] AC9: All existing paywall CTAs in `UpgradePromptView`, `MembershipView`, `PostSessionNudge`, and onboarding are migrated to use this component.
 
 #### Subtasks
 
@@ -1959,7 +1959,7 @@
 **ID:** BUG-051  
 **Priority:** P2  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** developer,  
 **I want** automated visual tests that verify paywall button visibility,  
@@ -1967,10 +1967,10 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: Snapshot tests capture the rendered appearance of every paywall CTA button.
-- [ ] AC2: Tests run in both light and dark color schemes.
-- [ ] AC3: Tests cover all 5 tiers (Free, Pro, Elite, Royal, Trial) to verify tier-specific gradients render correctly.
-- [ ] AC4: A test verifies that the button background alpha channel is ≥ 0.95 at every sampled pixel (no transparency).
+- [x] AC1: Snapshot tests capture the rendered appearance of every paywall CTA button.
+- [x] AC2: Tests run in both light and dark color schemes.
+- [x] AC3: Tests cover all 5 tiers (Free, Pro, Elite, Royal, Trial) to verify tier-specific gradients render correctly.
+- [x] AC4: A test verifies that the button background alpha channel is ≥ 0.95 at every sampled pixel (no transparency).
 - [ ] AC5: Tests fail loudly with visual diff images when a regression is detected.
 
 #### Subtasks
