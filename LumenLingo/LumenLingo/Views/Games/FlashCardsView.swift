@@ -160,9 +160,7 @@ struct FlashCardsView: View {
         .onAppear {
             hideTabBar = true
             loadContent()
-            if practiceTracker.isLimited(for: tierManager.currentTier) {
-                practiceTracker.startSession()
-            }
+            practiceTracker.startSession()
         }
         .onDisappear {
             hideTabBar = false

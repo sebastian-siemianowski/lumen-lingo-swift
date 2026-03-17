@@ -283,117 +283,146 @@ final class PDFReportBuilder {
 
     private func drawHeader(context: UIGraphicsPDFRendererContext, y: CGFloat) -> CGFloat {
         guard let ctx = UIGraphicsGetCurrentContext() else { return y }
-        let cardHeight: CGFloat = 130
+        let cardHeight: CGFloat = 140
         let cardRect = CGRect(x: margin, y: y, width: contentWidth, height: cardHeight)
 
-        // Draw gradient header card
-        drawGradientCard(in: cardRect, context: ctx)
-
-        // Decorative ornamental line at top
-        let ornY = cardRect.minY + 14
+        // Subtle card background (page-colored, not the full gradient blast)
+        let headerBg = isDark
+            ? UIColor(red: 0.06, green: 0.05, blue: 0.12, alpha: 1)
+            : UIColor(red: 0.98, green: 0.97, blue: 1.0, alpha: 1)
+        let path = UIBezierPath(roundedRect: cardRect, cornerRadius: cardCornerRadius)
         ctx.saveGState()
-        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.2).cgColor)
+        ctx.setShadow(offset: CGSize(width: 0, height: 3), blur: 12, color: UIColor.black.withAlphaComponent(isDark ? 0.4 : 0.08).cgColor)
+        ctx.setFillColor(headerBg.cgColor)
+        ctx.addPath(path.cgPath)
+        ctx.fillPath()
+        ctx.restoreGState()
+
+        // Thin tier-gradient accent bar at the very top of the card (3pt tall)
+        let accentBarRect = CGRect(x: cardRect.minX, y: cardRect.minY, width: cardRect.width, height: 3)
+        ctx.saveGState()
+        let accentPath = UIBezierPath(roundedRect: accentBarRect, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: cardCornerRadius, height: cardCornerRadius))
+        ctx.addPath(accentPath.cgPath)
+        ctx.clip()
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        if let gradient = CGGradient(colorsSpace: colorSpace, colors: tierHexColors as CFArray, locations: nil) {
+            ctx.drawLinearGradient(gradient, start: accentBarRect.origin, end: CGPoint(x: accentBarRect.maxX, y: accentBarRect.minY), options: [])
+        }
+        ctx.restoreGState()
+
+        // Subtle gradient wash in the background (very low opacity)
+        ctx.saveGState()
+        ctx.addPath(path.cgPath)
+        ctx.clip()
+        let washRect = CGRect(x: cardRect.minX, y: cardRect.minY, width: cardRect.width, height: cardRect.height * 0.5)
+        let washColor = UIColor(cgColor: tierHexColors[0]).withAlphaComponent(isDark ? 0.06 : 0.04)
+        ctx.setFillColor(washColor.cgColor)
+        ctx.fill(washRect)
+        ctx.restoreGState()
+
+        // Card border
+        ctx.saveGState()
+        let borderColor = isDark
+            ? UIColor.white.withAlphaComponent(0.06)
+            : UIColor(cgColor: tierHexColors[0]).withAlphaComponent(0.12)
+        ctx.setStrokeColor(borderColor.cgColor)
         ctx.setLineWidth(0.5)
-        ctx.move(to: CGPoint(x: cardRect.minX + cardPadding, y: ornY))
-        ctx.addLine(to: CGPoint(x: cardRect.minX + cardPadding + 40, y: ornY))
+        ctx.addPath(path.cgPath)
         ctx.strokePath()
         ctx.restoreGState()
 
-        // Small diamond between ornamental lines
-        let diamondAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 7, weight: .regular),
-            .foregroundColor: UIColor.white.withAlphaComponent(0.35)
-        ]
-        let diamondStr = NSAttributedString(string: "◆", attributes: diamondAttrs)
-        let diamondSize = diamondStr.size()
-        diamondStr.draw(at: CGPoint(x: cardRect.minX + cardPadding + 46, y: ornY - diamondSize.height / 2))
-
-        ctx.saveGState()
-        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.2).cgColor)
-        ctx.setLineWidth(0.5)
-        ctx.move(to: CGPoint(x: cardRect.minX + cardPadding + 58, y: ornY))
-        ctx.addLine(to: CGPoint(x: cardRect.minX + cardPadding + 98, y: ornY))
-        ctx.strokePath()
-        ctx.restoreGState()
-
-        // Logo text — large and bold
+        // Logo — sophisticated typography
         let logoAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 30, weight: .black, width: .expanded),
-            .foregroundColor: UIColor.white
+            .font: UIFont.systemFont(ofSize: 28, weight: .bold),
+            .foregroundColor: primaryText
         ]
-        "LumenLingo".draw(at: CGPoint(x: cardRect.minX + cardPadding, y: cardRect.minY + 22), withAttributes: logoAttrs)
+        "LumenLingo".draw(at: CGPoint(x: cardRect.minX + cardPadding, y: cardRect.minY + 18), withAttributes: logoAttrs)
 
-        // Subtitle with wide letter-spacing
+        // Subtitle — "Learning Report" with tier-gradient colored text
+        let subtitleColor = UIColor(cgColor: tierHexColors[0])
         let subtitleAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 9, weight: .medium),
-            .foregroundColor: UIColor.white.withAlphaComponent(0.5),
-            .kern: 4.0 as NSNumber
+            .font: UIFont.systemFont(ofSize: 10, weight: .semibold),
+            .foregroundColor: subtitleColor.withAlphaComponent(0.8),
+            .kern: 3.0 as NSNumber
         ]
-        "LEARNING REPORT".draw(at: CGPoint(x: cardRect.minX + cardPadding + 2, y: cardRect.minY + 60), withAttributes: subtitleAttrs)
+        "LEARNING REPORT".draw(at: CGPoint(x: cardRect.minX + cardPadding + 2, y: cardRect.minY + 52), withAttributes: subtitleAttrs)
 
-        // Tier badge pill — top-right corner
+        // Tier badge pill — aligned right, vertically centered with logo
         let badgeAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 10, weight: .bold),
+            .font: UIFont.systemFont(ofSize: 9, weight: .bold),
             .foregroundColor: UIColor.white,
-            .kern: 1.0 as NSNumber
+            .kern: 0.8 as NSNumber
         ]
         let badgeStr = NSAttributedString(string: tierLabel.uppercased(), attributes: badgeAttrs)
         let badgeSize = badgeStr.size()
-        let badgePadH: CGFloat = 16
-        let badgePadV: CGFloat = 6
+        let badgePadH: CGFloat = 14
+        let badgePadV: CGFloat = 5
+        let badgeW = badgeSize.width + badgePadH
+        let badgeH = badgeSize.height + badgePadV
         let badgeRect = CGRect(
-            x: cardRect.maxX - cardPadding - badgeSize.width - badgePadH,
-            y: cardRect.minY + 28,
-            width: badgeSize.width + badgePadH,
-            height: badgeSize.height + badgePadV
+            x: cardRect.maxX - cardPadding - badgeW,
+            y: cardRect.minY + 24,
+            width: badgeW,
+            height: badgeH
         )
+        // Badge with tier gradient fill
         ctx.saveGState()
-        ctx.setFillColor(UIColor.white.withAlphaComponent(0.15).cgColor)
-        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.3).cgColor)
-        ctx.setLineWidth(0.5)
-        let badgePath = UIBezierPath(roundedRect: badgeRect, cornerRadius: badgeRect.height / 2)
+        let badgePath = UIBezierPath(roundedRect: badgeRect, cornerRadius: badgeH / 2)
         ctx.addPath(badgePath.cgPath)
-        ctx.drawPath(using: .fillStroke)
+        ctx.clip()
+        if let gradient = CGGradient(colorsSpace: colorSpace, colors: tierHexColors as CFArray, locations: nil) {
+            ctx.drawLinearGradient(gradient, start: badgeRect.origin, end: CGPoint(x: badgeRect.maxX, y: badgeRect.minY), options: [])
+        }
         ctx.restoreGState()
         badgeStr.draw(at: CGPoint(x: badgeRect.minX + badgePadH / 2, y: badgeRect.minY + badgePadV / 2))
 
-        // Thin white divider line
-        let dividerY = cardRect.minY + 82
+        // Thin divider line
+        let dividerY = cardRect.minY + 72
         ctx.saveGState()
-        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.12).cgColor)
+        ctx.setStrokeColor((isDark ? UIColor.white.withAlphaComponent(0.08) : UIColor.black.withAlphaComponent(0.06)).cgColor)
         ctx.setLineWidth(0.5)
         ctx.move(to: CGPoint(x: cardRect.minX + cardPadding, y: dividerY))
         ctx.addLine(to: CGPoint(x: cardRect.maxX - cardPadding, y: dividerY))
         ctx.strokePath()
         ctx.restoreGState()
 
-        // Bottom row: user name on left, date on right
-        let bottomRowY = dividerY + 14
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .long
+        // Bottom section: user name + date, laid out cleanly
+        let bottomY = dividerY + 14
 
         if !userName.isEmpty {
-            let nameLabel: [NSAttributedString.Key: Any] = [
-                .font: UIFont.systemFont(ofSize: 9, weight: .regular),
-                .foregroundColor: UIColor.white.withAlphaComponent(0.45),
+            let labelAttrs: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 8, weight: .medium),
+                .foregroundColor: secondaryText.withAlphaComponent(0.6),
                 .kern: 1.5 as NSNumber
             ]
-            "PREPARED FOR".draw(at: CGPoint(x: cardRect.minX + cardPadding, y: bottomRowY - 1), withAttributes: nameLabel)
+            "PREPARED FOR".draw(at: CGPoint(x: cardRect.minX + cardPadding, y: bottomY), withAttributes: labelAttrs)
 
             let nameAttrs: [NSAttributedString.Key: Any] = [
-                .font: UIFont.systemFont(ofSize: 13, weight: .semibold),
-                .foregroundColor: UIColor.white.withAlphaComponent(0.95)
+                .font: UIFont.systemFont(ofSize: 14, weight: .semibold),
+                .foregroundColor: primaryText
             ]
-            userName.draw(at: CGPoint(x: cardRect.minX + cardPadding + 90, y: bottomRowY - 3), withAttributes: nameAttrs)
+            userName.draw(at: CGPoint(x: cardRect.minX + cardPadding, y: bottomY + 14), withAttributes: nameAttrs)
         }
 
+        // Date — right-aligned
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
         let dateAttrs: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: 10, weight: .regular),
-            .foregroundColor: UIColor.white.withAlphaComponent(0.5)
+            .foregroundColor: secondaryText
         ]
         let dateStr = NSAttributedString(string: dateFormatter.string(from: .now), attributes: dateAttrs)
         let dateSize = dateStr.size()
-        dateStr.draw(at: CGPoint(x: cardRect.maxX - cardPadding - dateSize.width, y: bottomRowY))
+        dateStr.draw(at: CGPoint(x: cardRect.maxX - cardPadding - dateSize.width, y: bottomY + 16))
+
+        // Session count — below date, right-aligned
+        let countAttrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 9, weight: .regular),
+            .foregroundColor: tertiaryText
+        ]
+        let countStr = NSAttributedString(string: "\(records.count) sessions", attributes: countAttrs)
+        let countSize = countStr.size()
+        countStr.draw(at: CGPoint(x: cardRect.maxX - cardPadding - countSize.width, y: bottomY + 2))
 
         return y + cardHeight + 10
     }

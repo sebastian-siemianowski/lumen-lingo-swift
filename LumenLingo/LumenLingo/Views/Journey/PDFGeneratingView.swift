@@ -27,10 +27,10 @@ struct PDFGeneratingView: View {
 
             // Skeleton page — US Letter 8.5:11 aspect ratio
             GeometryReader { geo in
-                let maxW = geo.size.width - 48
-                let maxH = geo.size.height * 0.65
-                let w = min(maxW, maxH * (8.5 / 11))
-                let h = w * (11 / 8.5)
+                let maxW = max(geo.size.width - 48, 1)
+                let maxH = max(geo.size.height * 0.65, 1)
+                let w = max(min(maxW, maxH * (8.5 / 11)), 1)
+                let h = max(w * (11 / 8.5), 1)
 
                 skeletonPage(width: w, height: h)
                     .frame(width: w, height: h)

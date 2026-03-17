@@ -284,6 +284,6 @@ enum PDFFileNamer {
         formatter.locale = Locale(identifier: "en_US")
         formatter.dateFormat = "MMMM yyyy"
         let monthYear = formatter.string(from: date)
-        return "LumenLingo Report — \(monthYear).pdf"
+        return "LumenLingo Report - \(monthYear).pdf"
     }
 }
