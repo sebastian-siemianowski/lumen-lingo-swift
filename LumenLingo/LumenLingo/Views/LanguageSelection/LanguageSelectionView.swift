@@ -690,7 +690,7 @@ struct LanguageSelectionView: View {
     // MARK: - Floating CTA
 
     private var floatingCTA: some View {
-        Button {
+        AdventureCTAButton(isActive: hasChanged, action: {
             if isSelectedPairLocked {
                 HapticsService.shared.warning()
                 lockedPairToShow = LanguagePair(source: selectedSource, target: selectedTarget)
@@ -702,7 +702,7 @@ struct LanguageSelectionView: View {
                 }
                 dismiss()
             }
-        } label: {
+        }) {
             HStack(spacing: 12) {
                 // Mini flag pair
                 HStack(spacing: 6) {
@@ -721,46 +721,11 @@ struct LanguageSelectionView: View {
                 Spacer()
 
                 if hasChanged {
-                    if isDark {
-                        TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
-                            let t = context.date.timeIntervalSinceReferenceDate
-                            let phase = CGFloat(t.truncatingRemainder(dividingBy: 3.0) / 3.0)
-
-                            Text(L.startYourAdventure)
-                                .font(.headline.weight(.bold))
-                                .foregroundStyle(Color.white)
-                                .hidden()
-                                .overlay {
-                                    LinearGradient(
-                                        colors: SiriCloseButton.siriColors,
-                                        startPoint: UnitPoint(x: -0.5 + phase * 2, y: 0.5),
-                                        endPoint: UnitPoint(x: 0.5 + phase * 2, y: 0.5)
-                                    )
-                                    .mask {
-                                        Text(L.startYourAdventure)
-                                            .font(.headline.weight(.bold))
-                                    }
-                                }
-                                .shadow(color: Color(hex: "#FF9FF3").opacity(0.3), radius: 4)
-                        }
+                    Text(L.startYourAdventure)
+                        .font(.headline.weight(.bold))
+                        .foregroundStyle(isDark ? Color(hex: "#F5F0E8") : Color(hex: "#1C1917"))
+                        .shadow(color: isDark ? Color(hex: "#FF9FF3").opacity(0.3) : .clear, radius: 4)
                         .transition(.opacity)
-                    } else {
-                        Text(L.startYourAdventure)
-                            .font(.headline.weight(.bold))
-                            .foregroundStyle(
-                                LinearGradient(
-                                    colors: [
-                                        Color(red: 255/255, green: 255/255, blue: 240/255), // warm ivory
-                                        .white,
-                                        Color(red: 255/255, green: 200/255, blue: 220/255)  // rose blush
-                                    ],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
-                            )
-                            .shadow(color: .white.opacity(0.5), radius: 4)
-                            .transition(.opacity)
-                    }
                 } else {
                     Text(L.keepLearning)
                         .font(.headline.weight(.bold))
@@ -795,97 +760,14 @@ struct LanguageSelectionView: View {
                 }
                 .contentTransition(.symbolEffect(.replace))
             }
-            .padding(.horizontal, 22)
-            .padding(.vertical, 16)
-            .frame(maxWidth: .infinity)
-            .background(ctaBackground)
         }
-        .buttonStyle(LumenPressStyle(weight: .prominent, accentColor: .indigo))
         .disabled(!hasChanged)
         .padding(.horizontal, 20)
         .padding(.vertical, 10)
-        .background(
-            Rectangle()
-                .fill(.ultraThinMaterial)
-                .ignoresSafeArea()
-                .opacity(0.98)
-        )
+        .background(AdventureCTABarBackground())
         .animation(.spring(response: 0.45, dampingFraction: 0.8), value: hasChanged)
         .animation(.spring(response: 0.45, dampingFraction: 0.8), value: selectedSource)
         .animation(.spring(response: 0.45, dampingFraction: 0.8), value: selectedTarget)
-    }
-
-    // MARK: - CTA Chevron Circle
-
-    private var ctaBackground: some View {
-        TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { context in
-            let t = context.date.timeIntervalSinceReferenceDate
-            let phase = CGFloat(t.truncatingRemainder(dividingBy: 4.0) / 4.0)
-
-            ZStack {
-                // Main fill
-                RoundedRectangle(cornerRadius: 18)
-                    .fill(
-                        LinearGradient(
-                            colors: hasChanged
-                                ? (isDark
-                                    ? [Color(hex: "#4F46E5"), Color(hex: "#7C3AED")]
-                                    : [Color(red: 220/255, green: 131/255, blue: 217/255),
-                                       Color(red: 244/255, green: 114/255, blue: 182/255)])
-                                : (isDark
-                                    ? [Color(hex: "#2D1B69"), Color(hex: "#1B2A5C")]
-                                    : [Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.55),
-                                       Color(red: 220/255, green: 131/255, blue: 217/255).opacity(0.55)]),
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-
-                if hasChanged {
-                    // Diffused rainbow glow — AI bloom
-                    RoundedRectangle(cornerRadius: 18)
-                        .stroke(
-                            AngularGradient(
-                                colors: SiriCloseButton.siriColors,
-                                center: .center,
-                                angle: .degrees(phase * 360)
-                            ),
-                            lineWidth: 4
-                        )
-                        .blur(radius: 8)
-                        .opacity(0.5)
-
-                    // Crisp rainbow border
-                    RoundedRectangle(cornerRadius: 18)
-                        .strokeBorder(
-                            AngularGradient(
-                                colors: SiriCloseButton.siriColors,
-                                center: .center,
-                                angle: .degrees(phase * 360)
-                            ),
-                            lineWidth: 1.5
-                        )
-                } else {
-                    RoundedRectangle(cornerRadius: 18)
-                        .strokeBorder(
-                            LinearGradient(
-                                colors: isDark
-                                    ? [.indigo.opacity(0.3), .purple.opacity(0.15)]
-                                    : [.white.opacity(0.5), .white.opacity(0.2)],
-                                startPoint: .top, endPoint: .bottom
-                            ),
-                            lineWidth: 1
-                        )
-                }
-            }
-            .shadow(
-                color: hasChanged
-                    ? (isDark ? Color(hex: "#4F46E5") : Color(red: 244/255, green: 114/255, blue: 182/255)).opacity(0.4)
-                    : (isDark ? Color.indigo.opacity(0.15) : Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.15)),
-                radius: hasChanged ? 20 : 0,
-                y: hasChanged ? 8 : 0
-            )
-        }
     }
 
     // MARK: - Section Header
@@ -1160,23 +1042,8 @@ private struct SiriCloseButton: View {
 
     @GestureState private var isPressed = false
 
-    // Apple Intelligence pastel rainbow palette — doubled for seamless loop
-    static let siriColors: [Color] = [
-        Color(hex: "#FF6B6B"), // soft coral
-        Color(hex: "#FECA57"), // warm gold
-        Color(hex: "#48DBFB"), // sky cyan
-        Color(hex: "#FF9FF3"), // soft pink
-        Color(hex: "#54A0FF"), // periwinkle
-        Color(hex: "#5F27CD"), // deep violet
-        // repeat for seamless wrap
-        Color(hex: "#FF6B6B"),
-        Color(hex: "#FECA57"),
-        Color(hex: "#48DBFB"),
-        Color(hex: "#FF9FF3"),
-        Color(hex: "#54A0FF"),
-        Color(hex: "#5F27CD"),
-        Color(hex: "#FF6B6B"),
-    ]
+    // Apple Intelligence pastel rainbow palette — shared with AdventureCTAButton
+    static let siriColors: [Color] = AdventureCTARainbow.colors
 
     /// Flowing gradient that rotates smoothly — AngularGradient wraps at 360° with zero seam.
     private static func flowingGradient(phase: Double) -> AngularGradient {

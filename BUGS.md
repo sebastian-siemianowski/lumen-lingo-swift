@@ -214,7 +214,7 @@
 **ID:** BUG-005  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** new user in dark mode,  
 **I want** the "Start your adventure" button to have a stable, visually stunning appearance that does not shift color unpredictably,  
@@ -247,7 +247,7 @@
 **ID:** BUG-006  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user in dark mode,  
 **I want** the background behind the "Start your adventure" button to use the app's dark theme palette (deep navy/cosmic tones),  
@@ -278,7 +278,7 @@
 **ID:** BUG-007  
 **Priority:** P2  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** developer,  
 **I want** a reusable `AdventureCTAButton` component that encapsulates the theme-adaptive styling, animated border, and press feedback,  

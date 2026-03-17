@@ -18,6 +18,7 @@
 		05583C201BA78CB88DD84E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7498E6A6E32D2EC5499420EA /* Assets.xcassets */; };
 		078F0B02324FE9D3A556A23A /* SolarAuroraPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A55F4B66ED7EDC12D625C /* SolarAuroraPreset.metal */; };
 		08218D64D6DE01F7EC3D1CF0 /* wordbuilder_polish_german.json in Resources */ = {isa = PBXBuildFile; fileRef = A708414AAB15B2AD16D073EF /* wordbuilder_polish_german.json */; };
+		09D16364DD541FF3FF133D7D /* AdventureCTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0902F86CEF9AE637376DB143 /* AdventureCTAButton.swift */; };
 		0AE69303D99B0260AF04748A /* grammar_ukrainian_english.json in Resources */ = {isa = PBXBuildFile; fileRef = DD1B56548F0ECE743038D67E /* grammar_ukrainian_english.json */; };
 		0FB9ECCFE323936072D44022 /* LagoonNebulaPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = A46D9B996CC8601EBBCCB4AA /* LagoonNebulaPreset.metal */; };
 		104BAF772F08F7567C8358CE /* flashcards_english_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 2378260414FE146694223E05 /* flashcards_english_spanish.json */; };
@@ -242,6 +243,7 @@
 		053CFBAF57D151555C331BB2 /* flashcards_english_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_german.json; sourceTree = "<group>"; };
 		05F3AD887EF40F084F88A511 /* TierHapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierHapticsService.swift; sourceTree = "<group>"; };
 		082370545F169B205DEB7118 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		0902F86CEF9AE637376DB143 /* AdventureCTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureCTAButton.swift; sourceTree = "<group>"; };
 		0B6BC346843C39C8CEC01294 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		0C637EFA05F05EEE861FA130 /* grammar_polish_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_arabic.json; sourceTree = "<group>"; };
 		0C84297D92B80DD22BB1E11C /* BreathingOrbsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingOrbsSettingsView.swift; sourceTree = "<group>"; };
@@ -568,6 +570,7 @@
 		3337E7D7B059275F1924CB29 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0902F86CEF9AE637376DB143 /* AdventureCTAButton.swift */,
 				796514956D77ECBB8603FE69 /* FeatureTooltip.swift */,
 				C7EC466E954463C21BDA8D3C /* GlassDivider.swift */,
 				B70A4CC223AB0F0CBD300360 /* LiquidGlassCard.swift */,
@@ -1255,6 +1258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9CEA1D33EF3254085E2BE83 /* AccuracyHeatmapView.swift in Sources */,
+				09D16364DD541FF3FF133D7D /* AdventureCTAButton.swift in Sources */,
 				D944A99D79DAE4DB61D4A0CA /* AndromedaStars.metal in Sources */,
 				48C3F46354D69FC50A03B221 /* AppStrings+Arabic.swift in Sources */,
 				47DF8C954EF56CC76450F79D /* AppStrings+Chinese.swift in Sources */,
