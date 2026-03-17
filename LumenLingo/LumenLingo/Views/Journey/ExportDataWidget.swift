@@ -1229,8 +1229,8 @@ struct SharableAchievementCard: View {
             // Tier-colored radial glow (upper center)
             RadialGradient(
                 colors: [
-                    tierAccent.opacity(0.18),
-                    tierAccent.opacity(0.06),
+                    glowAccent.opacity(0.18),
+                    glowAccent.opacity(0.06),
                     .clear
                 ],
                 center: UnitPoint(x: 0.5, y: 0.28),
@@ -1241,7 +1241,7 @@ struct SharableAchievementCard: View {
             // Secondary warm glow (lower)
             RadialGradient(
                 colors: [
-                    tierSecondary.opacity(0.08),
+                    glowSecondary.opacity(0.08),
                     .clear
                 ],
                 center: UnitPoint(x: 0.5, y: 0.85),
@@ -1440,6 +1440,16 @@ struct SharableAchievementCard: View {
 
     private var tierSecondary: Color {
         tier.gradientColors.last ?? .pink
+    }
+
+    /// Glow color for the card background — uses a cooler blue-silver for the
+    /// Starter tier so the radial glow is actually visible on the dark canvas.
+    private var glowAccent: Color {
+        tier == .free ? Color(red: 0.45, green: 0.55, blue: 0.75) : tierAccent
+    }
+
+    private var glowSecondary: Color {
+        tier == .free ? Color(red: 0.35, green: 0.42, blue: 0.62) : tierSecondary
     }
 
     private var accuracyColor: Color {
