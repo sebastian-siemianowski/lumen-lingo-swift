@@ -592,13 +592,13 @@ struct ExportDataWidget: View {
 
         let cardSize: CGFloat = 360
 
-        // Attach to a temporary off-screen window so SwiftUI fully renders content
-        let hostingController = UIHostingController(rootView: cardView)
+        // Wrap in ignoresSafeArea to prevent safe area insets from clipping content
+        let wrappedView = cardView.ignoresSafeArea()
+        let hostingController = UIHostingController(rootView: wrappedView)
         hostingController.view.frame = CGRect(origin: .zero, size: CGSize(width: cardSize, height: cardSize))
         hostingController.view.backgroundColor = .black
         hostingController.overrideUserInterfaceStyle = .dark
-        // Remove safe area insets that cause white strip
-        hostingController.additionalSafeAreaInsets = UIEdgeInsets(top: -hostingController.view.safeAreaInsets.top, left: 0, bottom: -hostingController.view.safeAreaInsets.bottom, right: 0)
+        hostingController._disableSafeArea = true
 
         let window = UIWindow(frame: CGRect(origin: .zero, size: CGSize(width: cardSize, height: cardSize)))
         window.backgroundColor = .black
@@ -1264,7 +1264,7 @@ struct SharableAchievementCard: View {
                         .tracking(2)
                 }
                 .padding(.horizontal, 24)
-                .padding(.top, 22)
+                .padding(.top, 16)
 
                 // Thin separator
                 Rectangle()
@@ -1277,9 +1277,9 @@ struct SharableAchievementCard: View {
                     )
                     .frame(height: 0.5)
                     .padding(.horizontal, 20)
-                    .padding(.top, 10)
+                    .padding(.top, 8)
 
-                Spacer().frame(height: 20)
+                Spacer().frame(height: 14)
 
                 // Tier icon with glow
                 ZStack {
@@ -1372,8 +1372,8 @@ struct SharableAchievementCard: View {
                         .font(.system(size: 10, weight: .semibold, design: .rounded))
                 }
                 .foregroundStyle(.white.opacity(0.3))
-                .padding(.top, 8)
-                .padding(.bottom, 18)
+                .padding(.top, 6)
+                .padding(.bottom, 14)
             }
 
             // Subtle corner accent lines (top-right, bottom-left)
