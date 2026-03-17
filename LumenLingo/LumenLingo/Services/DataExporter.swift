@@ -216,20 +216,20 @@ final class PDFReportBuilder {
             y += 14
 
             // Summary stats card
-            y = ensureSpace(needed: 140, y: y, context: context)
+            y = ensureSpace(needed: 130, y: y, context: context)
             y = drawSummaryCard(context: context, y: y)
             y += 14
 
             // Game breakdown card with gradient bars
-            let gameCardHeight = CGFloat(grouped.count) * 36 + 80
-            y = ensureSpace(needed: min(gameCardHeight, 260), y: y, context: context)
+            let gameCardHeight = CGFloat(grouped.count) * 44 + 70
+            y = ensureSpace(needed: min(gameCardHeight, 280), y: y, context: context)
             y = drawGameBreakdownCard(context: context, y: y)
             y += 14
 
             // Accuracy rings card
             let ringsRows = ceil(Double(grouped.count) / 3.0)
-            let ringsCardHeight = ringsRows * 100 + 70
-            y = ensureSpace(needed: min(CGFloat(ringsCardHeight), 300), y: y, context: context)
+            let ringsCardHeight = ringsRows * 108 + 52
+            y = ensureSpace(needed: min(CGFloat(ringsCardHeight), 340), y: y, context: context)
             y = drawAccuracyRingsCard(context: context, y: y)
             y += 14
 
@@ -272,75 +272,91 @@ final class PDFReportBuilder {
 
     private func drawHeader(context: UIGraphicsPDFRendererContext, y: CGFloat) -> CGFloat {
         guard let ctx = UIGraphicsGetCurrentContext() else { return y }
-        let cardHeight: CGFloat = 90
+        let cardHeight: CGFloat = 116
         let cardRect = CGRect(x: margin, y: y, width: contentWidth, height: cardHeight)
 
         // Draw gradient header card
         drawGradientCard(in: cardRect, context: ctx)
 
-        // Logo text
-        let logoAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 22, weight: .black, width: .expanded),
-            .foregroundColor: UIColor.white
-        ]
-        "LumenLingo".draw(at: CGPoint(x: cardRect.minX + cardPadding + 2, y: cardRect.minY + 16), withAttributes: logoAttrs)
-
-        // Subtitle: "Learning Report"
-        let subtitleAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 11, weight: .medium),
-            .foregroundColor: UIColor.white.withAlphaComponent(0.7),
-            .kern: 2.0 as NSNumber
-        ]
-        "LEARNING REPORT".draw(at: CGPoint(x: cardRect.minX + cardPadding + 3, y: cardRect.minY + 44), withAttributes: subtitleAttrs)
-
-        // User name & date on the right
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .long
-
-        if !userName.isEmpty {
-            let nameAttrs: [NSAttributedString.Key: Any] = [
-                .font: UIFont.systemFont(ofSize: 13, weight: .semibold),
-                .foregroundColor: UIColor.white.withAlphaComponent(0.9)
-            ]
-            let nameStr = NSAttributedString(string: userName, attributes: nameAttrs)
-            let nameSize = nameStr.size()
-            nameStr.draw(at: CGPoint(x: cardRect.maxX - cardPadding - nameSize.width, y: cardRect.minY + 18))
-        }
-
-        let dateAttrs: [NSAttributedString.Key: Any] = [
+        // Decorative diamond accent ◆ before logo
+        let diamondAttrs: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: 10, weight: .regular),
             .foregroundColor: UIColor.white.withAlphaComponent(0.6)
         ]
-        let dateStr = NSAttributedString(string: dateFormatter.string(from: .now), attributes: dateAttrs)
-        let dateSize = dateStr.size()
-        dateStr.draw(at: CGPoint(x: cardRect.maxX - cardPadding - dateSize.width, y: cardRect.minY + 38))
+        "◆".draw(at: CGPoint(x: cardRect.minX + cardPadding, y: cardRect.minY + 20), withAttributes: diamondAttrs)
 
-        // Tier badge
+        // Logo text
+        let logoAttrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 26, weight: .black, width: .expanded),
+            .foregroundColor: UIColor.white
+        ]
+        "LumenLingo".draw(at: CGPoint(x: cardRect.minX + cardPadding + 18, y: cardRect.minY + 14), withAttributes: logoAttrs)
+
+        // Tier badge pill — right of logo on same line
         let badgeText = "\(tier.emoji) \(tier.displayName)"
         let badgeAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 10, weight: .bold),
+            .font: UIFont.systemFont(ofSize: 9, weight: .bold),
             .foregroundColor: UIColor.white
         ]
         let badgeStr = NSAttributedString(string: badgeText, attributes: badgeAttrs)
         let badgeSize = badgeStr.size()
         let badgeRect = CGRect(
             x: cardRect.maxX - cardPadding - badgeSize.width - 14,
-            y: cardRect.minY + 58,
+            y: cardRect.minY + 18,
             width: badgeSize.width + 14,
             height: badgeSize.height + 6
         )
-
-        // Badge pill background
         ctx.saveGState()
-        ctx.setFillColor(UIColor.white.withAlphaComponent(0.2).cgColor)
+        ctx.setFillColor(UIColor.white.withAlphaComponent(0.18).cgColor)
+        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.25).cgColor)
+        ctx.setLineWidth(0.5)
         let badgePath = UIBezierPath(roundedRect: badgeRect, cornerRadius: badgeRect.height / 2)
         ctx.addPath(badgePath.cgPath)
-        ctx.fillPath()
+        ctx.drawPath(using: .fillStroke)
         ctx.restoreGState()
-
         badgeStr.draw(at: CGPoint(x: badgeRect.minX + 7, y: badgeRect.minY + 3))
 
-        // Thin gradient line at bottom of header (decorative)
+        // Subtitle with letter-spacing
+        let subtitleAttrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 10, weight: .medium),
+            .foregroundColor: UIColor.white.withAlphaComponent(0.55),
+            .kern: 3.0 as NSNumber
+        ]
+        "LEARNING REPORT".draw(at: CGPoint(x: cardRect.minX + cardPadding + 18, y: cardRect.minY + 48), withAttributes: subtitleAttrs)
+
+        // Thin white divider line
+        let dividerY = cardRect.minY + 66
+        ctx.saveGState()
+        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.15).cgColor)
+        ctx.setLineWidth(0.5)
+        ctx.move(to: CGPoint(x: cardRect.minX + cardPadding, y: dividerY))
+        ctx.addLine(to: CGPoint(x: cardRect.maxX - cardPadding, y: dividerY))
+        ctx.strokePath()
+        ctx.restoreGState()
+
+        // Bottom row: user name on left, date on right
+        let bottomRowY = dividerY + 12
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+
+        if !userName.isEmpty {
+            let nameAttrs: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 12, weight: .semibold),
+                .foregroundColor: UIColor.white.withAlphaComponent(0.9)
+            ]
+            let nameStr = NSAttributedString(string: "Prepared for \(userName)", attributes: nameAttrs)
+            nameStr.draw(at: CGPoint(x: cardRect.minX + cardPadding, y: bottomRowY))
+        }
+
+        let dateAttrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 10, weight: .regular),
+            .foregroundColor: UIColor.white.withAlphaComponent(0.55)
+        ]
+        let dateStr = NSAttributedString(string: dateFormatter.string(from: .now), attributes: dateAttrs)
+        let dateSize = dateStr.size()
+        dateStr.draw(at: CGPoint(x: cardRect.maxX - cardPadding - dateSize.width, y: bottomRowY + 1))
+
+        // Thin gradient line below header
         drawThinGradientLine(at: CGPoint(x: margin + 20, y: y + cardHeight + 5), width: contentWidth - 40, context: ctx)
 
         return y + cardHeight + 12
@@ -350,17 +366,18 @@ final class PDFReportBuilder {
 
     private func drawSummaryCard(context: UIGraphicsPDFRendererContext, y: CGFloat) -> CGFloat {
         guard let ctx = UIGraphicsGetCurrentContext() else { return y }
-        let cardHeight: CGFloat = 120
+        let cardHeight: CGFloat = 110
         let cardRect = CGRect(x: margin, y: y, width: contentWidth, height: cardHeight)
 
         drawCard(in: cardRect, context: ctx)
-        drawCardTitle("Overview", in: cardRect, context: ctx)
+        drawCardTitle("Your Progress at a Glance", in: cardRect, context: ctx)
 
-        // 2x2 grid of stats
-        let gridX = cardRect.minX + cardPadding
+        // 4-column single row — KPI dashboard strip
         let gridY = cardRect.minY + 42
-        let cellW = (contentWidth - cardPadding * 3) / 2
-        let cellH: CGFloat = 32
+        let cellGap: CGFloat = 10
+        let innerWidth = contentWidth - cardPadding * 2
+        let cellW = (innerWidth - cellGap * 3) / 4
+        let cellH: CGFloat = 54
 
         let stats: [(String, String, UIColor)] = [
             ("\(totalXP)", "Total XP", accuracyColor(for: 100)),
@@ -370,24 +387,40 @@ final class PDFReportBuilder {
         ]
 
         for (i, stat) in stats.enumerated() {
-            let col = CGFloat(i % 2)
-            let row = CGFloat(i / 2)
-            let x = gridX + col * (cellW + cardPadding)
-            let sy = gridY + row * (cellH + 12)
+            let x = cardRect.minX + cardPadding + CGFloat(i) * (cellW + cellGap)
 
-            // Stat value
+            // Subtle cell background
+            let cellRect = CGRect(x: x, y: gridY, width: cellW, height: cellH)
+            ctx.saveGState()
+            let cellBg = isDark ? UIColor.white.withAlphaComponent(0.04) : UIColor.black.withAlphaComponent(0.025)
+            ctx.setFillColor(cellBg.cgColor)
+            let cellPath = UIBezierPath(roundedRect: cellRect, cornerRadius: 10)
+            ctx.addPath(cellPath.cgPath)
+            ctx.fillPath()
+            ctx.restoreGState()
+
+            // Top accent line (2px gradient at top of cell)
+            let accentRect = CGRect(x: x + 12, y: gridY, width: cellW - 24, height: 2)
+            drawHorizontalGradient(in: accentRect, colors: [stat.2.cgColor, stat.2.withAlphaComponent(0.3).cgColor], cornerRadius: 1, context: ctx)
+
+            // Stat value — centered in cell
             let valueAttrs: [NSAttributedString.Key: Any] = [
-                .font: UIFont.systemFont(ofSize: 22, weight: .bold),
+                .font: UIFont.systemFont(ofSize: 20, weight: .bold),
                 .foregroundColor: stat.2
             ]
-            stat.0.draw(at: CGPoint(x: x, y: sy), withAttributes: valueAttrs)
+            let valueStr = NSAttributedString(string: stat.0, attributes: valueAttrs)
+            let valueSize = valueStr.size()
+            valueStr.draw(at: CGPoint(x: x + (cellW - valueSize.width) / 2, y: gridY + 10))
 
-            // Stat label
+            // Stat label — centered
             let labelAttrs: [NSAttributedString.Key: Any] = [
-                .font: UIFont.systemFont(ofSize: 10, weight: .medium),
-                .foregroundColor: secondaryText
+                .font: UIFont.systemFont(ofSize: 9, weight: .semibold),
+                .foregroundColor: secondaryText,
+                .kern: 0.5 as NSNumber
             ]
-            stat.1.draw(at: CGPoint(x: x, y: sy + 26), withAttributes: labelAttrs)
+            let labelStr = NSAttributedString(string: stat.1.uppercased(), attributes: labelAttrs)
+            let labelSize = labelStr.size()
+            labelStr.draw(at: CGPoint(x: x + (cellW - labelSize.width) / 2, y: gridY + 34))
         }
 
         return y + cardHeight
@@ -397,16 +430,16 @@ final class PDFReportBuilder {
 
     private func drawGameBreakdownCard(context: UIGraphicsPDFRendererContext, y: CGFloat) -> CGFloat {
         guard let ctx = UIGraphicsGetCurrentContext() else { return y }
-        let barRowH: CGFloat = 36
-        let cardHeight = CGFloat(grouped.count) * barRowH + 60
+        let barRowH: CGFloat = 44
+        let cardHeight = CGFloat(grouped.count) * barRowH + 56
         let cardRect = CGRect(x: margin, y: y, width: contentWidth, height: cardHeight)
 
         drawCard(in: cardRect, context: ctx)
         drawCardTitle("Game Performance", in: cardRect, context: ctx)
 
-        let barStartX = cardRect.minX + cardPadding + 90
-        let barMaxWidth = contentWidth - cardPadding * 2 - 90 - 50
-        let barHeight: CGFloat = 14
+        let barStartX = cardRect.minX + cardPadding + 110
+        let barMaxWidth = contentWidth - cardPadding * 2 - 110 - 54
+        let barHeight: CGFloat = 16
         var rowY = cardRect.minY + 44
 
         for (gameType, gameRecords) in grouped {
@@ -416,15 +449,22 @@ final class PDFReportBuilder {
 
             // Game type label
             let labelAttrs: [NSAttributedString.Key: Any] = [
-                .font: UIFont.systemFont(ofSize: 11, weight: .medium),
+                .font: UIFont.systemFont(ofSize: 12, weight: .semibold),
                 .foregroundColor: primaryText
             ]
-            gameType.capitalized.draw(at: CGPoint(x: cardRect.minX + cardPadding, y: rowY), withAttributes: labelAttrs)
+            gameType.capitalized.draw(at: CGPoint(x: cardRect.minX + cardPadding, y: rowY - 1), withAttributes: labelAttrs)
+
+            // Session count below game name
+            let countAttrs: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 9, weight: .regular),
+                .foregroundColor: tertiaryText
+            ]
+            "\(gameRecords.count) sessions".draw(at: CGPoint(x: cardRect.minX + cardPadding, y: rowY + 14), withAttributes: countAttrs)
 
             // Bar background
-            let barBg = CGRect(x: barStartX, y: rowY + 1, width: barMaxWidth, height: barHeight)
+            let barBg = CGRect(x: barStartX, y: rowY + 3, width: barMaxWidth, height: barHeight)
             ctx.saveGState()
-            ctx.setFillColor((isDark ? UIColor.white.withAlphaComponent(0.06) : UIColor.black.withAlphaComponent(0.05)).cgColor)
+            ctx.setFillColor((isDark ? UIColor.white.withAlphaComponent(0.06) : UIColor.black.withAlphaComponent(0.04)).cgColor)
             let bgPath = UIBezierPath(roundedRect: barBg, cornerRadius: barHeight / 2)
             ctx.addPath(bgPath.cgPath)
             ctx.fillPath()
@@ -433,20 +473,18 @@ final class PDFReportBuilder {
             // Bar fill with game-specific gradient
             let fillWidth = max(0, barMaxWidth * CGFloat(gAcc / 100))
             if fillWidth > 2 {
-                let fillRect = CGRect(x: barStartX, y: rowY + 1, width: fillWidth, height: barHeight)
+                let fillRect = CGRect(x: barStartX, y: rowY + 3, width: fillWidth, height: barHeight)
                 let gameColors = gameGradientColors(for: gameType)
                 drawHorizontalGradient(in: fillRect, colors: gameColors, cornerRadius: barHeight / 2, context: ctx)
             }
 
             // Accuracy percentage
             let pctAttrs: [NSAttributedString.Key: Any] = [
-                .font: UIFont.systemFont(ofSize: 10, weight: .bold),
+                .font: UIFont.systemFont(ofSize: 11, weight: .bold),
                 .foregroundColor: accuracyColor(for: gAcc)
             ]
             let pctStr = String(format: "%.0f%%", gAcc)
-            let pctSize = NSAttributedString(string: pctStr, attributes: pctAttrs).size()
-            pctStr.draw(at: CGPoint(x: barStartX + barMaxWidth + 8, y: rowY + 1), withAttributes: pctAttrs)
-            _ = pctSize // Suppress unused warning
+            pctStr.draw(at: CGPoint(x: barStartX + barMaxWidth + 8, y: rowY + 2), withAttributes: pctAttrs)
 
             rowY += barRowH
 
@@ -465,28 +503,41 @@ final class PDFReportBuilder {
 
     private func drawAccuracyRingsCard(context: UIGraphicsPDFRendererContext, y: CGFloat) -> CGFloat {
         guard let ctx = UIGraphicsGetCurrentContext() else { return y }
+        guard !grouped.isEmpty else { return y }
 
         let ringsPerRow = 3
-        let ringDiameter: CGFloat = 56
-        let cellWidth = (contentWidth - cardPadding * 2) / CGFloat(ringsPerRow)
-        let rowHeight: CGFloat = 100
+        let ringDiameter: CGFloat = 68
+        let cellWidth = (contentWidth - cardPadding * 2) / CGFloat(min(ringsPerRow, grouped.count))
+        let rowHeight: CGFloat = 108
+        let titleAreaH: CGFloat = 44
         let numRows = Int(ceil(Double(grouped.count) / Double(ringsPerRow)))
-        let cardHeight = CGFloat(numRows) * rowHeight + 56
+        let cardHeight = titleAreaH + CGFloat(numRows) * rowHeight + 8
 
         let cardRect = CGRect(x: margin, y: y, width: contentWidth, height: cardHeight)
         drawCard(in: cardRect, context: ctx)
         drawCardTitle("Accuracy by Category", in: cardRect, context: ctx)
 
-        var ringY = cardRect.minY + 46
+        var ringY = cardRect.minY + titleAreaH
 
         for (i, (gameType, gameRecords)) in grouped.enumerated() {
             let col = i % ringsPerRow
             let gc = gameRecords.reduce(0) { $0 + $1.correctAnswers }
             let gq = gameRecords.reduce(0) { $0 + $1.totalQuestions }
             let gAcc = gq > 0 ? Double(gc) / Double(gq) * 100 : 0
+            let rowCellWidth = (contentWidth - cardPadding * 2) / CGFloat(min(ringsPerRow, grouped.count - (i / ringsPerRow) * ringsPerRow))
+            let activeCellWidth = (i / ringsPerRow < numRows - 1) ? cellWidth : rowCellWidth
 
-            let centerX = cardRect.minX + cardPadding + cellWidth * CGFloat(col) + cellWidth / 2
+            let centerX = cardRect.minX + cardPadding + activeCellWidth * CGFloat(col) + activeCellWidth / 2
             let centerY = ringY + ringDiameter / 2
+
+            // Subtle circular glow behind ring
+            let glowColor = accuracyColor(for: gAcc).withAlphaComponent(isDark ? 0.08 : 0.05)
+            ctx.saveGState()
+            ctx.setFillColor(glowColor.cgColor)
+            let glowPath = UIBezierPath(ovalIn: CGRect(x: centerX - ringDiameter / 2 - 6, y: centerY - ringDiameter / 2 - 6, width: ringDiameter + 12, height: ringDiameter + 12))
+            ctx.addPath(glowPath.cgPath)
+            ctx.fillPath()
+            ctx.restoreGState()
 
             // Draw circular progress ring
             drawProgressRing(
@@ -499,7 +550,7 @@ final class PDFReportBuilder {
 
             // Accuracy text inside ring
             let accAttrs: [NSAttributedString.Key: Any] = [
-                .font: UIFont.systemFont(ofSize: 12, weight: .bold),
+                .font: UIFont.systemFont(ofSize: 14, weight: .bold),
                 .foregroundColor: primaryText
             ]
             let accStr = String(format: "%.0f%%", gAcc)
@@ -508,12 +559,21 @@ final class PDFReportBuilder {
 
             // Category label below ring
             let catAttrs: [NSAttributedString.Key: Any] = [
-                .font: UIFont.systemFont(ofSize: 9, weight: .medium),
-                .foregroundColor: secondaryText
+                .font: UIFont.systemFont(ofSize: 10, weight: .semibold),
+                .foregroundColor: primaryText
             ]
             let catStr = gameType.capitalized
             let catSize = NSAttributedString(string: catStr, attributes: catAttrs).size()
-            catStr.draw(at: CGPoint(x: centerX - catSize.width / 2, y: centerY + ringDiameter / 2 + 6), withAttributes: catAttrs)
+            catStr.draw(at: CGPoint(x: centerX - catSize.width / 2, y: centerY + ringDiameter / 2 + 8), withAttributes: catAttrs)
+
+            // Question count below category
+            let qCountAttrs: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 8, weight: .regular),
+                .foregroundColor: tertiaryText
+            ]
+            let qStr = "\(gq) questions"
+            let qSize = NSAttributedString(string: qStr, attributes: qCountAttrs).size()
+            qStr.draw(at: CGPoint(x: centerX - qSize.width / 2, y: centerY + ringDiameter / 2 + 22), withAttributes: qCountAttrs)
 
             // Move to next row
             if col == ringsPerRow - 1 {
@@ -529,10 +589,10 @@ final class PDFReportBuilder {
     private func drawRecentSessionsCard(context: UIGraphicsPDFRendererContext, y: CGFloat) -> CGFloat {
         guard let ctx = UIGraphicsGetCurrentContext() else { return y }
 
-        let recentRecords = records.sorted(by: { $0.createdDate > $1.createdDate }).prefix(15)
-        let rowHeight: CGFloat = 18
-        let headerH: CGFloat = 52
-        let cardHeight = headerH + CGFloat(recentRecords.count) * rowHeight + cardPadding
+        let recentRecords = records.sorted(by: { $0.createdDate > $1.createdDate }).prefix(12)
+        let rowHeight: CGFloat = 22
+        let headerH: CGFloat = 54
+        let cardHeight = headerH + CGFloat(recentRecords.count) * rowHeight + cardPadding + 4
 
         var cardRect = CGRect(x: margin, y: y, width: contentWidth, height: cardHeight)
 
@@ -543,60 +603,73 @@ final class PDFReportBuilder {
         }
 
         drawCard(in: cardRect, context: ctx)
-        drawCardTitle("Recent Sessions", in: cardRect, context: ctx)
+
+        // Title with record count
+        let titleText = records.count > 12 ? "Recent Sessions  ·  showing 12 of \(records.count)" : "Recent Sessions"
+        drawCardTitle(titleText, in: cardRect, context: ctx)
 
         // Table header
         let headerAttrs: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: 9, weight: .bold),
-            .foregroundColor: secondaryText
+            .foregroundColor: secondaryText,
+            .kern: 0.8 as NSNumber
         ]
         let columns: [(String, CGFloat)] = [
             ("DATE", cardRect.minX + cardPadding),
-            ("GAME", cardRect.minX + cardPadding + 120),
-            ("SCORE", cardRect.minX + cardPadding + 230),
-            ("ACCURACY", cardRect.minX + cardPadding + 290),
-            ("TIME", cardRect.minX + cardPadding + 365)
+            ("GAME", cardRect.minX + cardPadding + 115),
+            ("SCORE", cardRect.minX + cardPadding + 228),
+            ("ACCURACY", cardRect.minX + cardPadding + 295),
+            ("TIME", cardRect.minX + cardPadding + 380)
         ]
         let tableHeaderY = cardRect.minY + 40
         for (label, x) in columns {
             label.draw(at: CGPoint(x: x, y: tableHeaderY), withAttributes: headerAttrs)
         }
 
-        // Thin separator line
-        ctx.saveGState()
-        ctx.setStrokeColor(cardBorder.cgColor)
-        ctx.setLineWidth(0.5)
-        ctx.move(to: CGPoint(x: cardRect.minX + cardPadding, y: tableHeaderY + 14))
-        ctx.addLine(to: CGPoint(x: cardRect.maxX - cardPadding, y: tableHeaderY + 14))
-        ctx.strokePath()
-        ctx.restoreGState()
+        // Header separator — gradient
+        drawThinGradientLine(at: CGPoint(x: cardRect.minX + cardPadding, y: tableHeaderY + 15), width: contentWidth - cardPadding * 2, context: ctx)
 
         // Table rows
         let dateF = DateFormatter()
         dateF.dateFormat = "MMM d, yyyy"
         let rowAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.monospacedSystemFont(ofSize: 9, weight: .regular),
+            .font: UIFont.systemFont(ofSize: 10, weight: .regular),
+            .foregroundColor: primaryText
+        ]
+        let scoreAttrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.monospacedDigitSystemFont(ofSize: 10, weight: .medium),
             .foregroundColor: primaryText
         ]
 
-        var rowY = tableHeaderY + 18
-        for record in recentRecords {
-            let values: [(String, CGFloat)] = [
-                (dateF.string(from: record.createdDate), columns[0].1),
-                (record.gameType.capitalized, columns[1].1),
-                ("\(record.score)", columns[2].1),
-                (String(format: "%.0f%%", record.accuracy), columns[3].1),
-                (formatTime(record.timeSpent), columns[4].1)
-            ]
-
-            for (value, x) in values {
-                // Use accuracy color for accuracy column
-                var attrs = rowAttrs
-                if x == columns[3].1 {
-                    attrs[.foregroundColor] = accuracyColor(for: record.accuracy)
-                }
-                value.draw(at: CGPoint(x: x, y: rowY), withAttributes: attrs)
+        var rowY = tableHeaderY + 20
+        for (idx, record) in recentRecords.enumerated() {
+            // Zebra striping
+            if idx % 2 == 0 {
+                let stripeBg = isDark ? UIColor.white.withAlphaComponent(0.025) : UIColor.black.withAlphaComponent(0.018)
+                ctx.saveGState()
+                ctx.setFillColor(stripeBg.cgColor)
+                let stripeRect = CGRect(x: cardRect.minX + cardPadding / 2, y: rowY - 2, width: contentWidth - cardPadding, height: rowHeight)
+                let stripePath = UIBezierPath(roundedRect: stripeRect, cornerRadius: 4)
+                ctx.addPath(stripePath.cgPath)
+                ctx.fillPath()
+                ctx.restoreGState()
             }
+
+            // Date
+            dateF.string(from: record.createdDate).draw(at: CGPoint(x: columns[0].1, y: rowY), withAttributes: rowAttrs)
+            // Game
+            record.gameType.capitalized.draw(at: CGPoint(x: columns[1].1, y: rowY), withAttributes: rowAttrs)
+            // Score
+            "\(record.score)".draw(at: CGPoint(x: columns[2].1, y: rowY), withAttributes: scoreAttrs)
+            // Accuracy — colored
+            let accAttrs: [NSAttributedString.Key: Any] = [
+                .font: UIFont.monospacedDigitSystemFont(ofSize: 10, weight: .semibold),
+                .foregroundColor: accuracyColor(for: record.accuracy)
+            ]
+            String(format: "%.0f%%", record.accuracy).draw(at: CGPoint(x: columns[3].1, y: rowY), withAttributes: accAttrs)
+            // Time
+            formatTime(record.timeSpent).draw(at: CGPoint(x: columns[4].1, y: rowY), withAttributes: rowAttrs)
+
             rowY += rowHeight
         }
 
@@ -612,28 +685,31 @@ final class PDFReportBuilder {
         // Thin gradient line
         drawThinGradientLine(at: CGPoint(x: margin + 20, y: footerY - 8), width: contentWidth - 40, context: ctx)
 
-        // Page number centered
+        // Page number centered in a subtle pill
+        let pageText = "Page \(pageNumber)"
         let pageAttrs: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: 9, weight: .medium),
             .foregroundColor: tertiaryText
         ]
-        let pageStr = NSAttributedString(string: "\(pageNumber)", attributes: pageAttrs)
+        let pageStr = NSAttributedString(string: pageText, attributes: pageAttrs)
         let pageSize = pageStr.size()
         pageStr.draw(at: CGPoint(x: pageWidth / 2 - pageSize.width / 2, y: footerY))
 
-        // Branding on left
+        // Branding on left — slightly larger
         let brandAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 8, weight: .regular),
+            .font: UIFont.systemFont(ofSize: 9, weight: .regular),
             .foregroundColor: tertiaryText
         ]
-        "Generated by LumenLingo".draw(at: CGPoint(x: margin, y: footerY + 1), withAttributes: brandAttrs)
+        "LumenLingo".draw(at: CGPoint(x: margin, y: footerY), withAttributes: brandAttrs)
 
-        // Date on right
-        let dateF = DateFormatter()
-        dateF.dateStyle = .medium
-        let dateStr = NSAttributedString(string: dateF.string(from: .now), attributes: brandAttrs)
-        let dateSize = dateStr.size()
-        dateStr.draw(at: CGPoint(x: pageWidth - margin - dateSize.width, y: footerY + 1))
+        // Tier indicator on right
+        let tierAttrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 9, weight: .medium),
+            .foregroundColor: tertiaryText
+        ]
+        let tierStr = NSAttributedString(string: "\(tier.emoji) \(tier.displayName)", attributes: tierAttrs)
+        let tierSize = tierStr.size()
+        tierStr.draw(at: CGPoint(x: pageWidth - margin - tierSize.width, y: footerY))
     }
 
     // MARK: - Drawing Helpers
@@ -706,42 +782,43 @@ final class PDFReportBuilder {
         context.restoreGState()
     }
 
-    /// Draws a card section title with a small gradient accent dot.
+    /// Draws a card section title with a gradient accent bar.
     private func drawCardTitle(_ title: String, in cardRect: CGRect, context: CGContext) {
-        // Gradient accent dot
-        let dotSize: CGFloat = 6
-        let dotRect = CGRect(
+        // Gradient accent bar (pill shape)
+        let barWidth: CGFloat = 3
+        let barHeight: CGFloat = 16
+        let barRect = CGRect(
             x: cardRect.minX + cardPadding,
-            y: cardRect.minY + cardPadding + 4,
-            width: dotSize,
-            height: dotSize
+            y: cardRect.minY + cardPadding + 1,
+            width: barWidth,
+            height: barHeight
         )
         context.saveGState()
-        let dotPath = UIBezierPath(ovalIn: dotRect)
-        context.addPath(dotPath.cgPath)
+        let barPath = UIBezierPath(roundedRect: barRect, cornerRadius: barWidth / 2)
+        context.addPath(barPath.cgPath)
         context.clip()
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         if let gradient = CGGradient(colorsSpace: colorSpace, colors: tierHexColors as CFArray, locations: nil) {
-            context.drawLinearGradient(gradient, start: dotRect.origin, end: CGPoint(x: dotRect.maxX, y: dotRect.maxY), options: [])
+            context.drawLinearGradient(gradient, start: barRect.origin, end: CGPoint(x: barRect.minX, y: barRect.maxY), options: [])
         }
         context.restoreGState()
 
         // Title text
         let titleAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 13, weight: .bold),
+            .font: UIFont.systemFont(ofSize: 14, weight: .bold),
             .foregroundColor: primaryText
         ]
-        title.draw(at: CGPoint(x: cardRect.minX + cardPadding + dotSize + 8, y: cardRect.minY + cardPadding), withAttributes: titleAttrs)
+        title.draw(at: CGPoint(x: cardRect.minX + cardPadding + barWidth + 10, y: cardRect.minY + cardPadding), withAttributes: titleAttrs)
     }
 
     /// Draws a circular progress ring using Core Graphics arcs.
     private func drawProgressRing(center: CGPoint, radius: CGFloat, progress: Double, color: UIColor, context: CGContext) {
-        let lineWidth: CGFloat = 4
+        let lineWidth: CGFloat = 5
         let r = radius - lineWidth / 2
 
         // Track ring (background)
         context.saveGState()
-        context.setStrokeColor((isDark ? UIColor.white.withAlphaComponent(0.08) : UIColor.black.withAlphaComponent(0.06)).cgColor)
+        context.setStrokeColor((isDark ? UIColor.white.withAlphaComponent(0.1) : UIColor.black.withAlphaComponent(0.07)).cgColor)
         context.setLineWidth(lineWidth)
         context.setLineCap(.round)
         context.addArc(center: center, radius: r, startAngle: 0, endAngle: .pi * 2, clockwise: false)
