@@ -76,11 +76,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The greeting displays the user's actual first name from their profile, not from `AppUser.mock`.
-- [ ] AC2: If the profile first name is empty or nil, fall back to a warm generic greeting (e.g., "Welcome back!") — never show blank or "Hello, !" with a trailing space.
-- [ ] AC3: The name is never truncated — if it's long (e.g., "Bartholomew"), the layout accommodates it gracefully with `minimumScaleFactor` or multiline support.
-- [ ] AC4: The greeting text uses the existing gradient text style and remains visually consistent with the current Dashboard header aesthetic.
-- [ ] AC5: All unit tests covering the dashboard header pass with both real profile names and edge cases (empty, nil, very long, Unicode characters).
+- [x] AC1: The greeting displays the user's actual first name from their profile, not from `AppUser.mock`.
+- [x] AC2: If the profile first name is empty or nil, fall back to a warm generic greeting (e.g., "Welcome back!") — never show blank or "Hello, !" with a trailing space.
+- [x] AC3: The name is never truncated — if it's long (e.g., "Bartholomew"), the layout accommodates it gracefully with `minimumScaleFactor` or multiline support.
+- [x] AC4: The greeting text uses the existing gradient text style and remains visually consistent with the current Dashboard header aesthetic.
+- [x] AC5: All unit tests covering the dashboard header pass with both real profile names and edge cases (empty, nil, very long, Unicode characters).
 
 #### Subtasks
 
@@ -108,11 +108,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The present/gift icon (`gift.fill` or `gift.circle.fill`) renders immediately after the trial countdown text, not before or adjacent to the name.
-- [ ] AC2: The icon uses the trial tier gradient colors (amber/warm tones) and has a subtle pulse animation (2s cycle, scale 1.0→1.1→1.0) to draw attention without being distracting.
-- [ ] AC3: The icon is only visible when `tierManager.currentTier == .trial`. For all other tiers, the icon is hidden.
-- [ ] AC4: The layout does not shift or jump when transitioning between trial and non-trial states.
-- [ ] AC5: VoiceOver accessibility: the icon is labeled "Trial gift" and is grouped with the trial countdown text.
+- [x] AC1: The present/gift icon (`gift.fill` or `gift.circle.fill`) renders immediately after the trial countdown text, not before or adjacent to the name.
+- [x] AC2: The icon uses the trial tier gradient colors (amber/warm tones) and has a subtle pulse animation (2s cycle, scale 1.0→1.1→1.0) to draw attention without being distracting.
+- [x] AC3: The icon is only visible when `tierManager.currentTier == .trial`. For all other tiers, the icon is hidden.
+- [x] AC4: The layout does not shift or jump when transitioning between trial and non-trial states.
+- [x] AC5: VoiceOver accessibility: the icon is labeled "Trial gift" and is grouped with the trial countdown text.
 
 #### Subtasks
 
@@ -139,12 +139,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The Total XP stat card displays the user's first name (e.g., "Sebastian's XP" or "Your Total XP, Sebastian").
-- [ ] AC2: The XP number uses the existing animated counter with the bolt icon.
-- [ ] AC3: When XP exceeds milestone thresholds (100, 500, 1000, 5000, 10000), a subtle celebration badge appears next to the count (e.g., "🌟 Rising Star" at 500, "🔥 On Fire" at 1000, "💎 Legendary" at 10000).
-- [ ] AC4: The milestone badge animates in with a spring entrance (0.5s) when the threshold is first crossed.
-- [ ] AC5: The personalized name follows the same graceful fallback logic as Story 1.1 (empty/nil → generic "Your").
-- [ ] AC6: Dark mode and light mode both render the panel beautifully — no contrast issues, no invisible text.
+- [x] AC1: The Total XP stat card displays the user's first name (e.g., "Sebastian's XP" or "Your Total XP, Sebastian").
+- [x] AC2: The XP number uses the existing animated counter with the bolt icon.
+- [x] AC3: When XP exceeds milestone thresholds (100, 500, 1000, 5000, 10000), a subtle celebration badge appears next to the count (e.g., "🌟 Rising Star" at 500, "🔥 On Fire" at 1000, "💎 Legendary" at 10000).
+- [x] AC4: The milestone badge animates in with a spring entrance (0.5s) when the threshold is first crossed.
+- [x] AC5: The personalized name follows the same graceful fallback logic as Story 1.1 (empty/nil → generic "Your").
+- [x] AC6: Dark mode and light mode both render the panel beautifully — no contrast issues, no invisible text.
 
 #### Subtasks
 
@@ -172,11 +172,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: A codebase-wide search for `AppUser.mock` returns zero results outside of `#if DEBUG`, `PreviewProvider`, and test files.
-- [ ] AC2: Every view that previously used `AppUser.mock.firstName` now uses `profile?.firstName` from the SwiftData `UserProfile` model.
-- [ ] AC3: The `AppUser.mock` static property still exists for previews and tests but is never referenced in production view bodies.
-- [ ] AC4: All views gracefully degrade when `profile` is nil (first launch before profile creation) — showing a loading state or generic greeting.
-- [ ] AC5: No regressions in existing tests. All 463+ tests pass.
+- [x] AC1: A codebase-wide search for `AppUser.mock` returns zero results outside of `#if DEBUG`, `PreviewProvider`, and test files.
+- [x] AC2: Every view that previously used `AppUser.mock.firstName` now uses `profile?.firstName` from the SwiftData `UserProfile` model.
+- [x] AC3: The `AppUser.mock` static property still exists for previews and tests but is never referenced in production view bodies.
+- [x] AC4: All views gracefully degrade when `profile` is nil (first launch before profile creation) — showing a loading state or generic greeting.
+- [x] AC5: No regressions in existing tests. All 463+ tests pass.
 
 #### Subtasks
 
@@ -222,12 +222,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: In dark mode, the button text uses a stable warm white or soft gold color (`#F5F0E8` or `.warmIvory`) — no animated rainbow gradient.
-- [ ] AC2: In light mode, the button text uses a deep, readable color (e.g., `caribbeanInk` or dark charcoal) against the warm background — no washed-out pastel text.
-- [ ] AC3: The animated multicolored outer border REMAINS in both modes — it provides the visual energy without making the text unreadable.
-- [ ] AC4: The button background uses a glassmorphic treatment consistent with the app's design system: `.ultraThinMaterial` with a subtle gradient overlay, not a flat violet fill.
-- [ ] AC5: Press feedback: button scales to 0.97x with 0.85 opacity on press (matching `CollapsibleHeaderButtonStyle` pattern).
-- [ ] AC6: Tested on iPhone SE (dark), iPhone 16 Pro Max (dark), iPad Mini (dark). No visual regressions.
+- [x] AC1: In dark mode, the button text uses a stable warm white or soft gold color (`#F5F0E8` or `.warmIvory`) — no animated rainbow gradient.
+- [x] AC2: In light mode, the button text uses a deep, readable color (e.g., `caribbeanInk` or dark charcoal) against the warm background — no washed-out pastel text.
+- [x] AC3: The animated multicolored outer border REMAINS in both modes — it provides the visual energy without making the text unreadable.
+- [x] AC4: The button background uses a glassmorphic treatment consistent with the app's design system: `.ultraThinMaterial` with a subtle gradient overlay, not a flat violet fill.
+- [x] AC5: Press feedback: button scales to 0.97x with 0.85 opacity on press (matching `CollapsibleHeaderButtonStyle` pattern).
+- [x] AC6: Tested on iPhone SE (dark), iPhone 16 Pro Max (dark), iPad Mini (dark). No visual regressions.
 
 #### Subtasks
 
@@ -255,11 +255,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: In dark mode, the background behind the CTA area uses a deep gradient (e.g., `#0a0a1a` → `#0d1530`) consistent with the app's cosmic design language — no violet or light purple tints.
-- [ ] AC2: In light mode, the background uses a warm, subtle gradient (e.g., very pale lavender → white → pale rose) that complements the button without overpowering it.
-- [ ] AC3: The transition between the CTA area background and the surrounding view background is seamless — no hard edges, no visible seam between gradient stops.
-- [ ] AC4: The background adapts using `@Environment(\.colorScheme)` — no hardcoded colors that ignore the system theme.
-- [ ] AC5: The overall visual weight of the CTA section draws the eye without creating a "floating island" effect.
+- [x] AC1: In dark mode, the background behind the CTA area uses a deep gradient (e.g., `#0a0a1a` → `#0d1530`) consistent with the app's cosmic design language — no violet or light purple tints.
+- [x] AC2: In light mode, the background uses a warm, subtle gradient (e.g., very pale lavender → white → pale rose) that complements the button without overpowering it.
+- [x] AC3: The transition between the CTA area background and the surrounding view background is seamless — no hard edges, no visible seam between gradient stops.
+- [x] AC4: The background adapts using `@Environment(\.colorScheme)` — no hardcoded colors that ignore the system theme.
+- [x] AC5: The overall visual weight of the CTA section draws the eye without creating a "floating island" effect.
 
 #### Subtasks
 
@@ -286,11 +286,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: A new `AdventureCTAButton` view is created in `Views/Shared/` (or `Components/Shared/`).
-- [ ] AC2: It accepts a `title: String`, `action: () -> Void`, and optional `icon: String?` (SF Symbol name).
-- [ ] AC3: It encapsulates: stable text color (theme-adaptive), animated rainbow border, glassmorphic background, press-feedback button style.
-- [ ] AC4: `LanguageSelectionView` uses `AdventureCTAButton` instead of the inline button definition.
-- [ ] AC5: The component is documented with a clear `/// Usage:` header comment.
+- [x] AC1: A new `AdventureCTAButton` view is created in `Views/Shared/` (or `Components/Shared/`).
+- [x] AC2: It accepts a `title: String`, `action: () -> Void`, and optional `icon: String?` (SF Symbol name).
+- [x] AC3: It encapsulates: stable text color (theme-adaptive), animated rainbow border, glassmorphic background, press-feedback button style.
+- [x] AC4: `LanguageSelectionView` uses `AdventureCTAButton` instead of the inline button definition.
+- [x] AC5: The component is documented with a clear `/// Usage:` header comment.
 
 #### Subtasks
 
@@ -329,7 +329,7 @@
 **ID:** BUG-008  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** learner with many mastered categories,  
 **I want** all 100% accuracy categories to be grouped into a single expandable "Mastered" summary row,  
@@ -337,14 +337,14 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: Categories with exactly 100% accuracy are NOT rendered as individual grid cells by default. Instead, a single "Mastered" summary card appears at the top of the heatmap.
-- [ ] AC2: The "Mastered" card displays: a trophy icon (🏆), the count of mastered categories (e.g., "12 Categories Mastered"), and a subtle green-to-gold gradient background.
-- [ ] AC3: Tapping the "Mastered" card expands it to reveal all 100% categories in a compact list (category name + session count), with a smooth spring animation (0.35s, damping 0.8).
-- [ ] AC4: The expanded list uses a condensed single-column layout (not the 2-column grid) since these categories don't need the full heatmap cell treatment.
-- [ ] AC5: When collapsed again, the list contracts with the same spring animation. The collapse state persists within the session but resets between app launches.
-- [ ] AC6: If there are 0 mastered categories, the summary card is not shown.
-- [ ] AC7: If ALL categories are 100%, the summary card is the only element — with a celebratory message: "Perfect Mastery! You've conquered every category."
-- [ ] AC8: Categories with 90-99% accuracy remain as individual grid cells (they are not grouped).
+- [x] AC1: Categories with exactly 100% accuracy are NOT rendered as individual grid cells by default. Instead, a single "Mastered" summary card appears at the top of the heatmap.
+- [x] AC2: The "Mastered" card displays: a trophy icon (🏆), the count of mastered categories (e.g., "12 Categories Mastered"), and a subtle green-to-gold gradient background.
+- [x] AC3: Tapping the "Mastered" card expands it to reveal all 100% categories in a compact list (category name + session count), with a smooth spring animation (0.35s, damping 0.8).
+- [x] AC4: The expanded list uses a condensed single-column layout (not the 2-column grid) since these categories don't need the full heatmap cell treatment.
+- [x] AC5: When collapsed again, the list contracts with the same spring animation. The collapse state persists within the session but resets between app launches.
+- [x] AC6: If there are 0 mastered categories, the summary card is not shown.
+- [x] AC7: If ALL categories are 100%, the summary card is the only element — with a celebratory message: "Perfect Mastery! You've conquered every category."
+- [x] AC8: Categories with 90-99% accuracy remain as individual grid cells (they are not grouped).
 
 #### Subtasks
 
@@ -364,7 +364,7 @@
 **ID:** BUG-009  
 **Priority:** P2  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** learner,  
 **I want** the heatmap cells to be visually rich and satisfying to look at,  
@@ -372,13 +372,13 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: Each cell uses a glassmorphic card treatment: `.ultraThinMaterial` background with a colored gradient overlay matching the accuracy tier (green/cyan/amber/orange/red).
-- [ ] AC2: The accuracy percentage is displayed in a large, bold font (`.title3.bold()`) with a circular progress ring behind it (stroke showing fill level from 0-100%).
-- [ ] AC3: The circular progress ring animates from 0% to the actual accuracy on appear with a 0.8s ease-out animation.
-- [ ] AC4: The category name appears below the ring in `.caption` font with `.lineLimit(2)` and `minimumScaleFactor(0.7)` to handle long names.
-- [ ] AC5: The session count appears as a small badge in the top-right corner of the cell (e.g., "×5").
-- [ ] AC6: Cells have a subtle shadow that varies by accuracy tier: high accuracy = warm glow, low accuracy = no glow (drawing attention to what needs work).
-- [ ] AC7: The color legend is redesigned to use the same circular ring motif.
+- [x] AC1: Each cell uses a glassmorphic card treatment: `.ultraThinMaterial` background with a colored gradient overlay matching the accuracy tier (green/cyan/amber/orange/red).
+- [x] AC2: The accuracy percentage is displayed in a large, bold font (`.title3.bold()`) with a circular progress ring behind it (stroke showing fill level from 0-100%).
+- [x] AC3: The circular progress ring animates from 0% to the actual accuracy on appear with a 0.8s ease-out animation.
+- [x] AC4: The category name appears below the ring in `.caption` font with `.lineLimit(2)` and `minimumScaleFactor(0.7)` to handle long names.
+- [x] AC5: The session count appears as a small badge in the top-right corner of the cell (e.g., "×5").
+- [x] AC6: Cells have a subtle shadow that varies by accuracy tier: high accuracy = warm glow, low accuracy = no glow (drawing attention to what needs work).
+- [x] AC7: The color legend is redesigned to use the same circular ring motif.
 
 #### Subtasks
 
@@ -399,7 +399,7 @@
 **ID:** BUG-010  
 **Priority:** P2  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** user on a larger device,  
 **I want** the heatmap grid to use more columns on wider screens,  
@@ -407,11 +407,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: On iPhone (compact width): 2 columns.
-- [ ] AC2: On iPhone landscape or larger iPhone Pro Max (regular width): 3 columns.
-- [ ] AC3: On iPad: 4 columns.
-- [ ] AC4: Column count is determined by `GeometryReader` or `@Environment(\.horizontalSizeClass)`, not hardcoded.
-- [ ] AC5: The grid adjusts smoothly on device rotation without layout jumps.
+- [x] AC1: On iPhone (compact width): 2 columns.
+- [x] AC2: On iPhone landscape or larger iPhone Pro Max (regular width): 3 columns.
+- [x] AC3: On iPad: 4 columns.
+- [x] AC4: Column count is determined by `GeometryReader` or `@Environment(\.horizontalSizeClass)`, not hardcoded.
+- [x] AC5: The grid adjusts smoothly on device rotation without layout jumps.
 
 #### Subtasks
 
@@ -611,12 +611,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: On iPhone SE (375pt width, smallest supported screen), no tier card overlaps with any other card. Each card has clear visual separation (minimum 12pt gap).
-- [ ] AC2: On iPhone 16 Pro Max, cards have generous spacing (16-20pt) and utilize the wider screen with balanced margins.
-- [ ] AC3: The parallax `GeometryReader` effect is either removed (if it causes layout issues) or constrained to a safe range that doesn't affect card sizing.
-- [ ] AC4: Each card's height is determined by its content (`.fixedSize(horizontal: false, vertical: true)`) — not by a hardcoded frame that causes overflow.
-- [ ] AC5: The VStack of tier cards scrolls smoothly with no jank, even on older devices.
-- [ ] AC6: If parallax is removed, a subtler scroll effect replaces it (e.g., opacity fade-in as cards enter the viewport, or a slight scale effect).
+- [x] AC1: On iPhone SE (375pt width, smallest supported screen), no tier card overlaps with any other card. Each card has clear visual separation (minimum 12pt gap).
+- [x] AC2: On iPhone 16 Pro Max, cards have generous spacing (16-20pt) and utilize the wider screen with balanced margins.
+- [x] AC3: The parallax `GeometryReader` effect is either removed (if it causes layout issues) or constrained to a safe range that doesn't affect card sizing.
+- [x] AC4: Each card's height is determined by its content (`.fixedSize(horizontal: false, vertical: true)`) — not by a hardcoded frame that causes overflow.
+- [x] AC5: The VStack of tier cards scrolls smoothly with no jank, even on older devices.
+- [x] AC6: If parallax is removed, a subtler scroll effect replaces it (e.g., opacity fade-in as cards enter the viewport, or a slight scale effect).
 
 #### Subtasks
 
@@ -644,13 +644,13 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: On iPhone (compact width), the comparison table uses a **card-per-tier layout** instead of a columnar table. Each card shows: tier name, price, and a checklist of included features with checkmarks/crosses.
-- [ ] AC2: On iPad (regular width), the traditional columnar table layout is preserved but with larger font (`.footnote` instead of `.caption2`), better column spacing, and alternating row backgrounds.
-- [ ] AC3: The comparison data is updated to reflect the actual current feature set for each tier (audit against `TierManager.canAccess(feature:)` logic).
-- [ ] AC4: Feature rows use meaningful icons (not just ✓/—) — e.g., a language flag icon for "Language Pairs", a clock for "Practice Time", a game controller for "Game Modes".
-- [ ] AC5: The comparison toggle animation is smooth (spring, 0.35s) and the expanded area doesn't cause the scroll view to jump.
-- [ ] AC6: Each feature row is tappable — tapping expands a brief tooltip explaining what the feature does (single-line description).
-- [ ] AC7: The comparison section has a clear visual boundary (glassmorphic card or elevated panel) separating it from the tier cards.
+- [x] AC1: On iPhone (compact width), the comparison table uses a **card-per-tier layout** instead of a columnar table. Each card shows: tier name, price, and a checklist of included features with checkmarks/crosses.
+- [x] AC2: On iPad (regular width), the traditional columnar table layout is preserved but with larger font (`.footnote` instead of `.caption2`), better column spacing, and alternating row backgrounds.
+- [x] AC3: The comparison data is updated to reflect the actual current feature set for each tier (audit against `TierManager.canAccess(feature:)` logic).
+- [x] AC4: Feature rows use meaningful icons (not just ✓/—) — e.g., a language flag icon for "Language Pairs", a clock for "Practice Time", a game controller for "Game Modes".
+- [x] AC5: The comparison toggle animation is smooth (spring, 0.35s) and the expanded area doesn't cause the scroll view to jump.
+- [x] AC6: Each feature row is tappable — tapping expands a brief tooltip explaining what the feature does (single-line description).
+- [x] AC7: The comparison section has a clear visual boundary (glassmorphic card or elevated panel) separating it from the tier cards.
 
 #### Subtasks
 
@@ -680,12 +680,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: All paywall CTA buttons have a fully opaque background — no transparency whatsoever. The background uses the tier's gradient colors (Royal: gold → orange → rose).
-- [ ] AC2: Button text is white or very light cream with `.semibold` weight and sufficient size (`.body` minimum) for clear readability.
-- [ ] AC3: The button has a visible border or shadow to provide separation from any background, regardless of what's behind it (cosmic, gradient, or flat).
-- [ ] AC4: Press feedback: button depresses with scale (0.95x) and slight brightness reduction on press.
-- [ ] AC5: The fix applies to buttons in: `MembershipView` tier cards, `UpgradePromptView`, any other paywall surface (audit all usages).
-- [ ] AC6: Light mode and dark mode both look premium — no "washed out" appearance in either scheme.
+- [x] AC1: All paywall CTA buttons have a fully opaque background — no transparency whatsoever. The background uses the tier's gradient colors (Royal: gold → orange → rose).
+- [x] AC2: Button text is white or very light cream with `.semibold` weight and sufficient size (`.body` minimum) for clear readability.
+- [x] AC3: The button has a visible border or shadow to provide separation from any background, regardless of what's behind it (cosmic, gradient, or flat).
+- [x] AC4: Press feedback: button depresses with scale (0.95x) and slight brightness reduction on press.
+- [x] AC5: The fix applies to buttons in: `MembershipView` tier cards, `UpgradePromptView`, any other paywall surface (audit all usages).
+- [x] AC6: Light mode and dark mode both look premium — no "washed out" appearance in either scheme.
 
 #### Subtasks
 
@@ -712,12 +712,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: On iPhone (compact width), tier cards are displayed in a horizontal `TabView` with `.page` style (swipeable carousel). One card visible at a time with peek edges showing the next/previous card.
-- [ ] AC2: Page indicators at the bottom show which tier is currently active. Indicators use tier gradient colors.
-- [ ] AC3: On iPad (regular width), the vertical VStack layout is preserved (no carousel).
-- [ ] AC4: The current user's active tier card is auto-scrolled to on appear.
-- [ ] AC5: Swipe gesture is smooth and snappy with paging behavior.
-- [ ] AC6: The order matches the natural tier progression: Free → Pro → Elite → Royal → Trial (or Trial first if active).
+- [x] AC1: On iPhone (compact width), tier cards are displayed in a horizontal `TabView` with `.page` style (swipeable carousel). One card visible at a time with peek edges showing the next/previous card.
+- [x] AC2: Page indicators at the bottom show which tier is currently active. Indicators use tier gradient colors.
+- [x] AC3: On iPad (regular width), the vertical VStack layout is preserved (no carousel).
+- [x] AC4: The current user's active tier card is auto-scrolled to on appear.
+- [x] AC5: Swipe gesture is smooth and snappy with paging behavior.
+- [x] AC6: The order matches the natural tier progression: Free → Pro → Elite → Royal → Trial (or Trial first if active).
 
 #### Subtasks
 
@@ -744,11 +744,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The comparison view highlights features the user would GAIN (green glow + "NEW" badge) if upgrading from current tier.
-- [ ] AC2: If the user is considering a downgrade, features they would LOSE are highlighted (amber glow + "LOSE" badge).
-- [ ] AC3: Highlights are computed dynamically based on `tierManager.currentTier` vs. the tier being viewed.
-- [ ] AC4: The highlight effect uses a subtle pulsing border animation (not intrusive, 3s cycle).
-- [ ] AC5: A "What changes for you" section header appears above the highlighted features.
+- [x] AC1: The comparison view highlights features the user would GAIN (green glow + "NEW" badge) if upgrading from current tier.
+- [x] AC2: If the user is considering a downgrade, features they would LOSE are highlighted (amber glow + "LOSE" badge).
+- [x] AC3: Highlights are computed dynamically based on `tierManager.currentTier` vs. the tier being viewed.
+- [x] AC4: The highlight effect uses a subtle pulsing border animation (not intrusive, 3s cycle).
+- [x] AC5: A "What changes for you" section header appears above the highlighted features.
 
 #### Subtasks
 
@@ -1971,7 +1971,7 @@
 - [x] AC2: Tests run in both light and dark color schemes.
 - [x] AC3: Tests cover all 5 tiers (Free, Pro, Elite, Royal, Trial) to verify tier-specific gradients render correctly.
 - [x] AC4: A test verifies that the button background alpha channel is ≥ 0.95 at every sampled pixel (no transparency).
-- [ ] AC5: Tests fail loudly with visual diff images when a regression is detected.
+- [x] AC5: Tests fail loudly with visual diff images when a regression is detected.
 
 #### Subtasks
 
