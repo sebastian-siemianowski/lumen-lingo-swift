@@ -450,7 +450,7 @@
 **ID:** BUG-011  
 **Priority:** P1  
 **Points:** 8  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** Royal-tier user,  
 **I want** the exported PDF learning report to use beautiful, branded card layouts with gradients and visual hierarchy,  
@@ -458,14 +458,14 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The PDF header includes the LumenLingo logo (or text logo with gradient styling), the user's name, and the report date in an elegant header card.
-- [ ] AC2: Each section (Summary, Game Breakdown, Accuracy, Time Tracking) is rendered as a distinct card with rounded corners, a subtle gradient background matching the user's current tier colors, and proper spacing.
-- [ ] AC3: Stats within cards use the same visual language as the app: large numbers in bold, descriptive labels in caption weight, color-coded indicators (green for good, amber for average, red for needs work).
-- [ ] AC4: The accuracy section uses colored circular progress indicators (matching Story 3.2's ring design) rendered as vector paths, NOT rasterized images.
-- [ ] AC5: The PDF is multi-page if needed — each page has a consistent header/footer with page numbers and the LumenLingo wordmark.
-- [ ] AC6: The color scheme of the PDF matches the user's app theme preference (light or dark).
-- [ ] AC7: File size remains under 2MB for a typical report (no embedded raster images).
-- [ ] AC8: The PDF renders correctly in Apple Preview, Adobe Acrobat, Chrome PDF viewer, and iOS Books.
+- [x] AC1: The PDF header includes the LumenLingo logo (or text logo with gradient styling), the user's name, and the report date in an elegant header card.
+- [x] AC2: Each section (Summary, Game Breakdown, Accuracy, Time Tracking) is rendered as a distinct card with rounded corners, a subtle gradient background matching the user's current tier colors, and proper spacing.
+- [x] AC3: Stats within cards use the same visual language as the app: large numbers in bold, descriptive labels in caption weight, color-coded indicators (green for good, amber for average, red for needs work).
+- [x] AC4: The accuracy section uses colored circular progress indicators (matching Story 3.2's ring design) rendered as vector paths, NOT rasterized images.
+- [x] AC5: The PDF is multi-page if needed — each page has a consistent header/footer with page numbers and the LumenLingo wordmark.
+- [x] AC6: The color scheme of the PDF matches the user's app theme preference (light or dark).
+- [x] AC7: File size remains under 2MB for a typical report (no embedded raster images).
+- [x] AC8: The PDF renders correctly in Apple Preview, Adobe Acrobat, Chrome PDF viewer, and iOS Books.
 
 #### Subtasks
 
@@ -489,7 +489,7 @@
 **ID:** BUG-012  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** Royal-tier user,  
 **I want** the export options panel in the Journey view to look premium and inviting,  
@@ -497,12 +497,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: Each export format (CSV, JSON, PDF) is presented as a distinct card (not a flat button) with: format icon (doc.text for CSV, curly braces for JSON, doc.richtext for PDF), format name, brief description ("Spreadsheet-compatible data" / "Developer-friendly format" / "Beautiful branded report").
-- [ ] AC2: The PDF card is visually emphasized as the "premium" option — larger, with a gold/royal gradient border and a "✨ Premium" badge.
-- [ ] AC3: Locked formats (CSV for Pro, PDF for Royal) show a lock overlay with the required tier badge, and tapping opens MembershipView.
-- [ ] AC4: Export progress shows an inline loading indicator within the card (circular progress ring, not a blocking modal).
-- [ ] AC5: After export completes, the card shows a checkmark animation before the share sheet opens.
-- [ ] AC6: The session count from the old header is preserved as a subtitle on the widget's collapsible section header.
+- [x] AC1: Each export format (CSV, JSON, PDF) is presented as a distinct card (not a flat button) with: format icon (doc.text for CSV, curly braces for JSON, doc.richtext for PDF), format name, brief description ("Spreadsheet-compatible data" / "Developer-friendly format" / "Beautiful branded report").
+- [x] AC2: The PDF card is visually emphasized as the "premium" option — larger, with a gold/royal gradient border and a "✨ Premium" badge.
+- [x] AC3: Locked formats (CSV for Pro, PDF for Royal) show a lock overlay with the required tier badge, and tapping opens MembershipView.
+- [x] AC4: Export progress shows an inline loading indicator within the card (circular progress ring, not a blocking modal).
+- [x] AC5: After export completes, the card shows a checkmark animation before the share sheet opens.
+- [x] AC6: The session count from the old header is preserved as a subtitle on the widget's collapsible section header.
 
 #### Subtasks
 
@@ -522,7 +522,7 @@
 **ID:** BUG-013  
 **Priority:** P2  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** user,  
 **I want** to preview my PDF report before exporting it,  
@@ -530,12 +530,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: Tapping the PDF export card opens a full-screen modal with a rendered preview of the PDF.
-- [ ] AC2: The preview uses `PDFKit.PDFView` to render the generated PDF document inline.
-- [ ] AC3: The modal has a top toolbar with "Cancel" (left) and "Share" (right) buttons.
-- [ ] AC4: The "Share" button opens `UIActivityViewController` with the PDF.
-- [ ] AC5: The preview supports pinch-to-zoom and swipe between pages.
-- [ ] AC6: Loading state: while generating the PDF, show a skeleton/shimmer placeholder with "Generating your report..." text.
+- [x] AC1: Tapping the PDF export card opens a full-screen modal with a rendered preview of the PDF.
+- [x] AC2: The preview uses `PDFKit.PDFView` to render the generated PDF document inline.
+- [x] AC3: The modal has a top toolbar with "Cancel" (left) and "Share" (right) buttons.
+- [x] AC4: The "Share" button opens `UIActivityViewController` with the PDF.
+- [x] AC5: The preview supports pinch-to-zoom and swipe between pages.
+- [x] AC6: Loading state: while generating the PDF, show a skeleton/shimmer placeholder with "Generating your report..." text.
 
 #### Subtasks
 
@@ -554,7 +554,7 @@
 **ID:** BUG-014  
 **Priority:** P2  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** learner,  
 **I want** a beautiful single-card image of my top stats that I can share on social media,  
@@ -562,11 +562,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: A "Share Achievement" button appears alongside export format cards (or in the game completion view).
-- [ ] AC2: Tapping it generates a 1080×1080 PNG image (Instagram-friendly square) with: user name, total XP, streak count, top accuracy, current tier badge, and LumenLingo branding.
-- [ ] AC3: The card uses the user's current tier gradient as the background with the cosmic design language.
-- [ ] AC4: The image is rendered using `ImageRenderer` (SwiftUI) from a dedicated `SharableAchievementCard` SwiftUI view.
-- [ ] AC5: After generation, the share sheet opens with the image pre-loaded.
+- [x] AC1: A "Share Achievement" button appears alongside export format cards (or in the game completion view).
+- [x] AC2: Tapping it generates a 1080×1080 PNG image (Instagram-friendly square) with: user name, total XP, streak count, top accuracy, current tier badge, and LumenLingo branding.
+- [x] AC3: The card uses the user's current tier gradient as the background with the cosmic design language.
+- [x] AC4: The image is rendered using `ImageRenderer` (SwiftUI) from a dedicated `SharableAchievementCard` SwiftUI view.
+- [x] AC5: After generation, the share sheet opens with the image pre-loaded.
 
 #### Subtasks
 

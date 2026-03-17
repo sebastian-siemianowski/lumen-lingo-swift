@@ -167,7 +167,7 @@ struct JourneyView: View {
                     isCollapsed: $isExportDataCollapsed
                 ) {
                     journeySection(for: .exportData) {
-                        ExportDataWidget(allProgress: allProgress)
+                        ExportDataWidget(allProgress: allProgress, profile: profile)
                     }
                 }
 
