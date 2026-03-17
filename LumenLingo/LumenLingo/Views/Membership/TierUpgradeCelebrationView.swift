@@ -157,71 +157,10 @@ struct TierUpgradeCelebrationView: View {
                 .padding(.top, 16)
                 .padding(.bottom, 28)
         }
-        .background(cardBackground)
-        .clipShape(RoundedRectangle(cornerRadius: 24))
-        .overlay(cardBorder)
-        .shadow(color: tier.gradientColors.first?.opacity(0.3) ?? .clear, radius: 30, y: 8)
-        .shadow(color: .black.opacity(0.4), radius: 20, y: 10)
+        .tierGlassCard(colors: tier.gradientColors, borderGlow: borderGlow)
     }
 
-    // MARK: - Card Background
 
-    private var cardBackground: some View {
-        ZStack {
-            // Deep frosted dark base
-            RoundedRectangle(cornerRadius: 24)
-                .fill(.ultraThinMaterial)
-                .environment(\.colorScheme, .dark)
-
-            // Subtle tier-colored tint
-            RoundedRectangle(cornerRadius: 24)
-                .fill(
-                    LinearGradient(
-                        colors: [
-                            tier.gradientColors.first?.opacity(0.08) ?? .clear,
-                            .clear,
-                            tier.gradientColors.last?.opacity(0.05) ?? .clear
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
-
-            // Vignette inner glow at top
-            RoundedRectangle(cornerRadius: 24)
-                .fill(
-                    LinearGradient(
-                        colors: [
-                            .white.opacity(0.04),
-                            .clear,
-                            .clear,
-                            .black.opacity(0.15)
-                        ],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                )
-        }
-    }
-
-    // MARK: - Card Border
-
-    private var cardBorder: some View {
-        RoundedRectangle(cornerRadius: 24)
-            .strokeBorder(
-                LinearGradient(
-                    colors: [
-                        tier.gradientColors.first?.opacity(0.5 + borderGlow * 0.3) ?? .clear,
-                        tier.gradientColors.last?.opacity(0.2 + borderGlow * 0.15) ?? .clear,
-                        .white.opacity(0.08),
-                        tier.gradientColors.first?.opacity(0.3 + borderGlow * 0.2) ?? .clear
-                    ],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                ),
-                lineWidth: 1.5
-            )
-    }
 
     // MARK: - Ornamental Divider
 

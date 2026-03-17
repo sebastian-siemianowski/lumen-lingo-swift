@@ -9,6 +9,7 @@ struct FeatureTransitionOverlay: View {
     @Environment(TierManager.self) private var tierManager
 
     @State private var showBackground = false
+    @State private var showCard = false
     @State private var showTitle = false
     @State private var revealedIndices: Set<Int> = []
     @State private var showSummary = false
@@ -42,8 +43,6 @@ struct FeatureTransitionOverlay: View {
                 }
 
                 VStack(spacing: 20) {
-                    Spacer()
-
                     titleView
 
                     featureList
@@ -51,10 +50,13 @@ struct FeatureTransitionOverlay: View {
                     if showSummary {
                         summaryView
                     }
-
-                    Spacer()
                 }
-                .padding(.horizontal, 32)
+                .padding(.horizontal, 24)
+                .padding(.vertical, 28)
+                .frame(maxWidth: 320)
+                .tierGlassCard(colors: tierManager.currentTier.gradientColors)
+                .scaleEffect(showCard ? 1.0 : 0.85)
+                .opacity(showCard ? 1 : 0)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .opacity(dismissing ? 0 : 1)
@@ -216,6 +218,11 @@ struct FeatureTransitionOverlay: View {
             showBackground = true
         }
 
+        // Card appears
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.75).delay(0.05)) {
+            showCard = true
+        }
+
         // Title
         withAnimation(.spring(response: 0.4, dampingFraction: 0.7).delay(0.15)) {
             showTitle = true
@@ -285,6 +292,7 @@ struct FeatureTransitionOverlay: View {
 
     private func resetState() {
         showBackground = false
+        showCard = false
         showTitle = false
         revealedIndices = []
         showSummary = false
