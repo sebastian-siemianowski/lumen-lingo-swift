@@ -470,8 +470,9 @@ struct MembershipView: View {
         let hasUsed = profile?.hasUsedTrial ?? false
         let isActive = tierManager.currentTier == .trial
         let daysLeft = profile?.trialDaysRemaining ?? 0
+        let isQA = TierManager.isQAUser(profile: profile)
 
-        if hasUsed && !isActive {
+        if hasUsed && !isActive && !isQA {
             // Trial used and expired — show dimmed "Trial Completed" card
             return TierData(
                 id: "trial", name: "Royal Trial", icon: "gift.fill",
@@ -527,7 +528,7 @@ struct MembershipView: View {
     private var tiers: [TierData] {
         let trial = trialCard
         // If trial is used and expired, move it to the end
-        let trialUsedAndInactive = (profile?.hasUsedTrial ?? false) && tierManager.currentTier != .trial
+        let trialUsedAndInactive = (profile?.hasUsedTrial ?? false) && tierManager.currentTier != .trial && !TierManager.isQAUser(profile: profile)
         var list: [TierData] = trialUsedAndInactive ? [] : [trial]
         list.append(contentsOf: [
             TierData(
@@ -628,7 +629,7 @@ struct TierCardView: View {
     @State private var isHovered = false
     @State private var showTrialConfirmation = false
     @State private var isCardPressed = false
-    @State private var gradientPulse: Double = 0
+
 
     private var price: Double {
         tier.priceMonthly
@@ -647,17 +648,8 @@ struct TierCardView: View {
         tier.id == "royal"
     }
 
-    @State private var appeared = false
-
     var body: some View {
         cardContent
-            .scaleEffect(appeared ? 1.0 : 0.95)
-            .opacity(appeared ? 1.0 : 0)
-            .onAppear {
-                withAnimation(.spring(response: 0.5, dampingFraction: 0.75).delay(Double(index) * 0.06)) {
-                    appeared = true
-                }
-            }
     }
 
     private var cardContent: some View {
@@ -899,7 +891,7 @@ struct TierCardView: View {
                 }
                 RoundedRectangle(cornerRadius: 22)
                     .fill(.ultraThinMaterial)
-                    .opacity(isActuallyCurrent ? (0.85 + gradientPulse * 0.15) : 1.0)
+                    .opacity(isActuallyCurrent ? 0.85 : 1.0)
                     .overlay(
                         RoundedRectangle(cornerRadius: 22)
                             .strokeBorder(
@@ -923,11 +915,11 @@ struct TierCardView: View {
                         AngularGradient(
                             stops: [
                                 .init(color: Color(hex: "#fbbf24").opacity(0.0), location: 0.0),
-                                .init(color: Color(hex: "#fbbf24").opacity(0.5), location: 0.15 + gradientPulse * 0.1),
-                                .init(color: Color(hex: "#f97316").opacity(0.3), location: 0.3 + gradientPulse * 0.05),
+                                .init(color: Color(hex: "#fbbf24").opacity(0.5), location: 0.15),
+                                .init(color: Color(hex: "#f97316").opacity(0.3), location: 0.3),
                                 .init(color: Color(hex: "#fbbf24").opacity(0.0), location: 0.5),
-                                .init(color: Color(hex: "#f43f5e").opacity(0.3), location: 0.7 - gradientPulse * 0.05),
-                                .init(color: Color(hex: "#fbbf24").opacity(0.5), location: 0.85 - gradientPulse * 0.1),
+                                .init(color: Color(hex: "#f43f5e").opacity(0.3), location: 0.7),
+                                .init(color: Color(hex: "#fbbf24").opacity(0.5), location: 0.85),
                                 .init(color: Color(hex: "#fbbf24").opacity(0.0), location: 1.0),
                             ],
                             center: .center
@@ -944,25 +936,7 @@ struct TierCardView: View {
             isCardPressed = pressing
         }, perform: {})
         .opacity(tier.isDisabled ? 0.5 : 1.0)
-        .onAppear {
-            if isActuallyCurrent || isRoyal {
-                withAnimation(.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
-                    gradientPulse = 1.0
-                }
-            }
-        }
-        .onChange(of: isActuallyCurrent) { _, newValue in
-            if newValue || isRoyal {
-                gradientPulse = 0
-                withAnimation(.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
-                    gradientPulse = 1.0
-                }
-            } else if !isRoyal {
-                withAnimation(.easeOut(duration: 0.2)) {
-                    gradientPulse = 0
-                }
-            }
-        }
+
         .fullScreenCover(isPresented: $showTrialConfirmation) {
             TrialConfirmationView()
         }

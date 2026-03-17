@@ -8,7 +8,6 @@ struct SoundscapeUpgradeSheet: View {
     let soundscape: Soundscape
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) private var colorScheme
-    @State private var appeared = false
     @State private var navigateToMembership = false
 
     private var isDark: Bool { colorScheme == .dark }
@@ -19,8 +18,6 @@ struct SoundscapeUpgradeSheet: View {
             VStack(spacing: 0) {
                 // Soundscape artwork header
                 artworkHeader
-                    .scaleEffect(appeared ? 1.0 : 0.92)
-                    .opacity(appeared ? 1.0 : 0)
 
                 // Info & CTA
                 VStack(spacing: 20) {
@@ -89,11 +86,6 @@ struct SoundscapeUpgradeSheet: View {
         .presentationDetents([.medium])
         .presentationDragIndicator(.visible)
         .presentationCornerRadius(24)
-        .onAppear {
-            withAnimation(.spring(response: 0.5, dampingFraction: 0.75).delay(0.1)) {
-                appeared = true
-            }
-        }
     }
 
     // MARK: - Artwork

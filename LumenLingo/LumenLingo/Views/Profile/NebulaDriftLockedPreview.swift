@@ -8,7 +8,6 @@ import SwiftUI
 struct NebulaDriftLockedPreview: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
-    @State private var appeared = false
     @State private var showMembership = false
     @State private var kenBurnsScale: CGFloat = 1.0
 
@@ -48,11 +47,6 @@ struct NebulaDriftLockedPreview: View {
                         )
                         .frame(width: 80, height: 80)
                         .blur(radius: 12)
-                        .scaleEffect(appeared ? 1.1 : 0.9)
-                        .animation(
-                            .easeInOut(duration: 3).repeatForever(autoreverses: true),
-                            value: appeared
-                        )
 
                     Image(systemName: "cloud.fog.fill")
                         .font(.system(size: 32, weight: .medium))
@@ -65,14 +59,10 @@ struct NebulaDriftLockedPreview: View {
                         )
                         .shadow(color: .purple.opacity(0.5), radius: 8)
                 }
-                .scaleEffect(appeared ? 1.0 : 0.7)
-                .opacity(appeared ? 1.0 : 0)
-
                 // Title
                 Text(L.nebulaDrift)
                     .font(.system(size: 22, weight: .bold))
                     .foregroundStyle(isDark ? .white : .primary)
-                    .opacity(appeared ? 1.0 : 0)
 
                 // Description
                 Text("Immersive cosmic nebula backgrounds that drift across your screen. Six stunning presets inspired by the wonders of deep space.")
@@ -80,16 +70,12 @@ struct NebulaDriftLockedPreview: View {
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 24)
-                    .opacity(appeared ? 1.0 : 0)
 
                 // ELITE badge
                 PremiumFeatureBadge(tier: .elite, style: .outlined)
-                    .scaleEffect(appeared ? 1.0 : 0.85)
-                    .opacity(appeared ? 1.0 : 0)
 
                 // Preset preview dots
                 presetDots
-                    .opacity(appeared ? 1.0 : 0)
 
                 // CTA button
                 PremiumCTAButton(
@@ -101,8 +87,6 @@ struct NebulaDriftLockedPreview: View {
                     size: .compact
                 )
                 .padding(.horizontal, 24)
-                .scaleEffect(appeared ? 1.0 : 0.9)
-                .opacity(appeared ? 1.0 : 0)
             }
             .padding(.vertical, 28)
         }
@@ -116,9 +100,6 @@ struct NebulaDriftLockedPreview: View {
             NavigationStack { MembershipView(isSheet: true) }
         }
         .onAppear {
-            withAnimation(.spring(response: 0.7, dampingFraction: 0.75).delay(0.15)) {
-                appeared = true
-            }
             // Ken Burns slow zoom loop
             withAnimation(.easeInOut(duration: 8).repeatForever(autoreverses: true)) {
                 kenBurnsScale = 1.08

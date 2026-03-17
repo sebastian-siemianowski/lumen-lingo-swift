@@ -8,9 +8,7 @@ import SwiftUI
 struct BreathingOrbsLockedPreview: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
-    @State private var appeared = false
     @State private var showMembership = false
-    @State private var shimmerPhase: CGFloat = -1
 
     private var L: AppStrings { localization.strings }
     private var isDark: Bool { colorScheme == .dark }
@@ -49,11 +47,6 @@ struct BreathingOrbsLockedPreview: View {
                         )
                         .frame(width: 80, height: 80)
                         .blur(radius: 12)
-                        .scaleEffect(appeared ? 1.1 : 0.9)
-                        .animation(
-                            .easeInOut(duration: 3).repeatForever(autoreverses: true),
-                            value: appeared
-                        )
 
                     Image(systemName: "scope")
                         .font(.system(size: 32, weight: .medium))
@@ -66,14 +59,10 @@ struct BreathingOrbsLockedPreview: View {
                         )
                         .shadow(color: .purple.opacity(0.5), radius: 8)
                 }
-                .scaleEffect(appeared ? 1.0 : 0.7)
-                .opacity(appeared ? 1.0 : 0)
-
                 // Title
                 Text(L.breathingOrbs)
                     .font(.system(size: 22, weight: .bold))
                     .foregroundStyle(isDark ? .white : .primary)
-                    .opacity(appeared ? 1.0 : 0)
 
                 // Description
                 Text("Mesmerising ambient orbs that breathe with gentle colour cycles. Six stunning colour schemes to match your mood.")
@@ -81,16 +70,12 @@ struct BreathingOrbsLockedPreview: View {
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 24)
-                    .opacity(appeared ? 1.0 : 0)
 
                 // PRO badge
                 PremiumFeatureBadge(tier: .pro, style: .outlined)
-                    .scaleEffect(appeared ? 1.0 : 0.85)
-                    .opacity(appeared ? 1.0 : 0)
 
                 // Scheme preview dots
                 schemeDots
-                    .opacity(appeared ? 1.0 : 0)
 
                 // CTA button
                 PremiumCTAButton(
@@ -102,8 +87,6 @@ struct BreathingOrbsLockedPreview: View {
                     size: .compact
                 )
                 .padding(.horizontal, 24)
-                .scaleEffect(appeared ? 1.0 : 0.9)
-                .opacity(appeared ? 1.0 : 0)
             }
             .padding(.vertical, 28)
         }
@@ -115,11 +98,6 @@ struct BreathingOrbsLockedPreview: View {
         )
         .sheet(isPresented: $showMembership) {
             NavigationStack { MembershipView(isSheet: true) }
-        }
-        .onAppear {
-            withAnimation(.spring(response: 0.7, dampingFraction: 0.75).delay(0.15)) {
-                appeared = true
-            }
         }
     }
 

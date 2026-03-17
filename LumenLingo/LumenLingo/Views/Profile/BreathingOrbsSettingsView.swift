@@ -99,7 +99,6 @@ struct BreathingOrbsSettingsView: View {
                 .foregroundStyle(.purple)
                 .scaleEffect(profile?.breathingOrbsEnabled == true ? 1.0 : 0.85)
                 .opacity(profile?.breathingOrbsEnabled == true ? 1.0 : 0.5)
-                .animation(.easeInOut(duration: 2).repeatForever(autoreverses: true), value: profile?.breathingOrbsEnabled)
 
             VStack(alignment: .leading, spacing: 2) {
                 Text(L.breathingOrbs)

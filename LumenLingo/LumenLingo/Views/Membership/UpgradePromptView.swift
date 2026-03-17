@@ -9,7 +9,7 @@ struct UpgradePromptView: View {
     let feature: PremiumFeature
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) private var colorScheme
-    @State private var appeared = false
+
     @State private var navigateToMembership = false
 
     private var isDark: Bool { colorScheme == .dark }
@@ -20,8 +20,7 @@ struct UpgradePromptView: View {
             VStack(spacing: 0) {
                 // Feature icon hero
                 featureHero
-                    .scaleEffect(appeared ? 1.0 : 0.88)
-                    .opacity(appeared ? 1.0 : 0)
+
 
                 // Content
                 VStack(spacing: 20) {
@@ -73,11 +72,7 @@ struct UpgradePromptView: View {
             .navigationDestination(isPresented: $navigateToMembership) {
                 MembershipView()
             }
-            .onAppear {
-                withAnimation(.spring(response: 0.5, dampingFraction: 0.7).delay(0.1)) {
-                    appeared = true
-                }
-            }
+
         }
         .presentationDetents([.medium])
         .presentationDragIndicator(.visible)

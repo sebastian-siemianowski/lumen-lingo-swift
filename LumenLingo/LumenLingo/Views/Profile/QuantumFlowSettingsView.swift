@@ -147,7 +147,6 @@ struct QuantumFlowSettingsView: View {
                 .foregroundStyle(.cyan)
                 .scaleEffect(profile?.quantumFlowEnabled == true ? 1.0 : 0.85)
                 .opacity(profile?.quantumFlowEnabled == true ? 1.0 : 0.5)
-                .animation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true), value: profile?.quantumFlowEnabled)
 
             VStack(alignment: .leading, spacing: 2) {
                 Text(L.quantumFlow)

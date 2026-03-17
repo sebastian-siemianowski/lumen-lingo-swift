@@ -4,7 +4,6 @@ struct LanguagePairUpgradeSheet: View {
     let pair: LanguagePair
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) private var colorScheme
-    @State private var appeared = false
     @State private var navigateToMembership = false
 
     private var isDark: Bool { colorScheme == .dark }
@@ -14,8 +13,6 @@ struct LanguagePairUpgradeSheet: View {
         NavigationStack {
             VStack(spacing: 0) {
                 flagArtworkHeader
-                    .scaleEffect(appeared ? 1.0 : 0.92)
-                    .opacity(appeared ? 1.0 : 0)
 
                 VStack(spacing: 20) {
                     // Lock icon with tier gradient
@@ -81,11 +78,6 @@ struct LanguagePairUpgradeSheet: View {
         .presentationDetents([.medium])
         .presentationDragIndicator(.visible)
         .presentationCornerRadius(24)
-        .onAppear {
-            withAnimation(.spring(response: 0.5, dampingFraction: 0.75).delay(0.1)) {
-                appeared = true
-            }
-        }
     }
 
     // MARK: - Flag Artwork Header

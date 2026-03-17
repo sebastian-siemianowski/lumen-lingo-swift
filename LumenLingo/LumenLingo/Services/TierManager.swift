@@ -760,14 +760,30 @@ final class TierManager {
         }
     }
 
+    // MARK: - QA Users
+
+    /// Emails that bypass trial restrictions for testing.
+    private static let qaEmails: Set<String> = [
+        "rudph2@test.com"
+    ]
+
+    /// Whether the given profile belongs to a QA tester.
+    static func isQAUser(profile: UserProfile?) -> Bool {
+        guard let email = profile?.email, !email.isEmpty else { return false }
+        return qaEmails.contains(email.lowercased())
+    }
+
     // MARK: - Royal Trial Lifecycle
 
     /// Start the 14-day Royal Trial. Can only be started once per user.
+    /// QA users can restart the trial even if previously used.
     /// Returns `true` if the trial was started, `false` if already used.
     @discardableResult
     func startTrial(profile: UserProfile?) -> Bool {
-        guard let profile, !profile.hasUsedTrial else { return false }
+        guard let profile else { return false }
+        if profile.hasUsedTrial && !Self.isQAUser(profile: profile) { return false }
         profile.trialStartDate = Date.now
+        profile.trialExpiredShown = false
         selectTier("trial", profile: profile)
         return true
     }
