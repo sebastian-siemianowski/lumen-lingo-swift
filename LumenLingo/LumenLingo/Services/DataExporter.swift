@@ -180,6 +180,17 @@ final class PDFReportBuilder {
 
     private var pageNumber = 0
 
+    /// PDF-safe tier label (no emoji — Core Graphics can't render emoji in PDFs)
+    private var tierLabel: String {
+        switch tier {
+        case .trial: return "Trial"
+        case .free:  return "Free"
+        case .pro:   return "Pro"
+        case .elite: return "Elite"
+        case .royal: return "Royal"
+        }
+    }
+
     // MARK: - Computed Stats
 
     private lazy var totalXP: Int = records.reduce(0) { $0 + $1.score }
@@ -272,62 +283,84 @@ final class PDFReportBuilder {
 
     private func drawHeader(context: UIGraphicsPDFRendererContext, y: CGFloat) -> CGFloat {
         guard let ctx = UIGraphicsGetCurrentContext() else { return y }
-        let cardHeight: CGFloat = 116
+        let cardHeight: CGFloat = 130
         let cardRect = CGRect(x: margin, y: y, width: contentWidth, height: cardHeight)
 
         // Draw gradient header card
         drawGradientCard(in: cardRect, context: ctx)
 
-        // Decorative diamond accent ◆ before logo
+        // Decorative ornamental line at top
+        let ornY = cardRect.minY + 14
+        ctx.saveGState()
+        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.2).cgColor)
+        ctx.setLineWidth(0.5)
+        ctx.move(to: CGPoint(x: cardRect.minX + cardPadding, y: ornY))
+        ctx.addLine(to: CGPoint(x: cardRect.minX + cardPadding + 40, y: ornY))
+        ctx.strokePath()
+        ctx.restoreGState()
+
+        // Small diamond between ornamental lines
         let diamondAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 10, weight: .regular),
-            .foregroundColor: UIColor.white.withAlphaComponent(0.6)
+            .font: UIFont.systemFont(ofSize: 7, weight: .regular),
+            .foregroundColor: UIColor.white.withAlphaComponent(0.35)
         ]
-        "◆".draw(at: CGPoint(x: cardRect.minX + cardPadding, y: cardRect.minY + 20), withAttributes: diamondAttrs)
+        let diamondStr = NSAttributedString(string: "◆", attributes: diamondAttrs)
+        let diamondSize = diamondStr.size()
+        diamondStr.draw(at: CGPoint(x: cardRect.minX + cardPadding + 46, y: ornY - diamondSize.height / 2))
 
-        // Logo text
+        ctx.saveGState()
+        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.2).cgColor)
+        ctx.setLineWidth(0.5)
+        ctx.move(to: CGPoint(x: cardRect.minX + cardPadding + 58, y: ornY))
+        ctx.addLine(to: CGPoint(x: cardRect.minX + cardPadding + 98, y: ornY))
+        ctx.strokePath()
+        ctx.restoreGState()
+
+        // Logo text — large and bold
         let logoAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 26, weight: .black, width: .expanded),
+            .font: UIFont.systemFont(ofSize: 30, weight: .black, width: .expanded),
             .foregroundColor: UIColor.white
         ]
-        "LumenLingo".draw(at: CGPoint(x: cardRect.minX + cardPadding + 18, y: cardRect.minY + 14), withAttributes: logoAttrs)
+        "LumenLingo".draw(at: CGPoint(x: cardRect.minX + cardPadding, y: cardRect.minY + 22), withAttributes: logoAttrs)
 
-        // Tier badge pill — right of logo on same line
-        let badgeText = "\(tier.emoji) \(tier.displayName)"
-        let badgeAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 9, weight: .bold),
-            .foregroundColor: UIColor.white
+        // Subtitle with wide letter-spacing
+        let subtitleAttrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 9, weight: .medium),
+            .foregroundColor: UIColor.white.withAlphaComponent(0.5),
+            .kern: 4.0 as NSNumber
         ]
-        let badgeStr = NSAttributedString(string: badgeText, attributes: badgeAttrs)
+        "LEARNING REPORT".draw(at: CGPoint(x: cardRect.minX + cardPadding + 2, y: cardRect.minY + 60), withAttributes: subtitleAttrs)
+
+        // Tier badge pill — top-right corner
+        let badgeAttrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 10, weight: .bold),
+            .foregroundColor: UIColor.white,
+            .kern: 1.0 as NSNumber
+        ]
+        let badgeStr = NSAttributedString(string: tierLabel.uppercased(), attributes: badgeAttrs)
         let badgeSize = badgeStr.size()
+        let badgePadH: CGFloat = 16
+        let badgePadV: CGFloat = 6
         let badgeRect = CGRect(
-            x: cardRect.maxX - cardPadding - badgeSize.width - 14,
-            y: cardRect.minY + 18,
-            width: badgeSize.width + 14,
-            height: badgeSize.height + 6
+            x: cardRect.maxX - cardPadding - badgeSize.width - badgePadH,
+            y: cardRect.minY + 28,
+            width: badgeSize.width + badgePadH,
+            height: badgeSize.height + badgePadV
         )
         ctx.saveGState()
-        ctx.setFillColor(UIColor.white.withAlphaComponent(0.18).cgColor)
-        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.25).cgColor)
+        ctx.setFillColor(UIColor.white.withAlphaComponent(0.15).cgColor)
+        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.3).cgColor)
         ctx.setLineWidth(0.5)
         let badgePath = UIBezierPath(roundedRect: badgeRect, cornerRadius: badgeRect.height / 2)
         ctx.addPath(badgePath.cgPath)
         ctx.drawPath(using: .fillStroke)
         ctx.restoreGState()
-        badgeStr.draw(at: CGPoint(x: badgeRect.minX + 7, y: badgeRect.minY + 3))
-
-        // Subtitle with letter-spacing
-        let subtitleAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 10, weight: .medium),
-            .foregroundColor: UIColor.white.withAlphaComponent(0.55),
-            .kern: 3.0 as NSNumber
-        ]
-        "LEARNING REPORT".draw(at: CGPoint(x: cardRect.minX + cardPadding + 18, y: cardRect.minY + 48), withAttributes: subtitleAttrs)
+        badgeStr.draw(at: CGPoint(x: badgeRect.minX + badgePadH / 2, y: badgeRect.minY + badgePadV / 2))
 
         // Thin white divider line
-        let dividerY = cardRect.minY + 66
+        let dividerY = cardRect.minY + 82
         ctx.saveGState()
-        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.15).cgColor)
+        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.12).cgColor)
         ctx.setLineWidth(0.5)
         ctx.move(to: CGPoint(x: cardRect.minX + cardPadding, y: dividerY))
         ctx.addLine(to: CGPoint(x: cardRect.maxX - cardPadding, y: dividerY))
@@ -335,31 +368,34 @@ final class PDFReportBuilder {
         ctx.restoreGState()
 
         // Bottom row: user name on left, date on right
-        let bottomRowY = dividerY + 12
+        let bottomRowY = dividerY + 14
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
 
         if !userName.isEmpty {
-            let nameAttrs: [NSAttributedString.Key: Any] = [
-                .font: UIFont.systemFont(ofSize: 12, weight: .semibold),
-                .foregroundColor: UIColor.white.withAlphaComponent(0.9)
+            let nameLabel: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 9, weight: .regular),
+                .foregroundColor: UIColor.white.withAlphaComponent(0.45),
+                .kern: 1.5 as NSNumber
             ]
-            let nameStr = NSAttributedString(string: "Prepared for \(userName)", attributes: nameAttrs)
-            nameStr.draw(at: CGPoint(x: cardRect.minX + cardPadding, y: bottomRowY))
+            "PREPARED FOR".draw(at: CGPoint(x: cardRect.minX + cardPadding, y: bottomRowY - 1), withAttributes: nameLabel)
+
+            let nameAttrs: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 13, weight: .semibold),
+                .foregroundColor: UIColor.white.withAlphaComponent(0.95)
+            ]
+            userName.draw(at: CGPoint(x: cardRect.minX + cardPadding + 90, y: bottomRowY - 3), withAttributes: nameAttrs)
         }
 
         let dateAttrs: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: 10, weight: .regular),
-            .foregroundColor: UIColor.white.withAlphaComponent(0.55)
+            .foregroundColor: UIColor.white.withAlphaComponent(0.5)
         ]
         let dateStr = NSAttributedString(string: dateFormatter.string(from: .now), attributes: dateAttrs)
         let dateSize = dateStr.size()
-        dateStr.draw(at: CGPoint(x: cardRect.maxX - cardPadding - dateSize.width, y: bottomRowY + 1))
+        dateStr.draw(at: CGPoint(x: cardRect.maxX - cardPadding - dateSize.width, y: bottomRowY))
 
-        // Thin gradient line below header
-        drawThinGradientLine(at: CGPoint(x: margin + 20, y: y + cardHeight + 5), width: contentWidth - 40, context: ctx)
-
-        return y + cardHeight + 12
+        return y + cardHeight + 10
     }
 
     // MARK: - Summary Card
@@ -680,36 +716,18 @@ final class PDFReportBuilder {
 
     private func drawFooter(context: UIGraphicsPDFRendererContext) {
         guard let ctx = UIGraphicsGetCurrentContext() else { return }
-        let footerY = pageHeight - margin - 14
+        let footerY = pageHeight - margin - 6
 
-        // Thin gradient line
-        drawThinGradientLine(at: CGPoint(x: margin + 20, y: footerY - 8), width: contentWidth - 40, context: ctx)
-
-        // Page number centered in a subtle pill
-        let pageText = "Page \(pageNumber)"
-        let pageAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 9, weight: .medium),
-            .foregroundColor: tertiaryText
+        // Subtle centered text only — minimal, no decorative line
+        let footerAttrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 8, weight: .regular),
+            .foregroundColor: tertiaryText,
+            .kern: 0.5 as NSNumber
         ]
-        let pageStr = NSAttributedString(string: pageText, attributes: pageAttrs)
-        let pageSize = pageStr.size()
-        pageStr.draw(at: CGPoint(x: pageWidth / 2 - pageSize.width / 2, y: footerY))
-
-        // Branding on left — slightly larger
-        let brandAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 9, weight: .regular),
-            .foregroundColor: tertiaryText
-        ]
-        "LumenLingo".draw(at: CGPoint(x: margin, y: footerY), withAttributes: brandAttrs)
-
-        // Tier indicator on right
-        let tierAttrs: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 9, weight: .medium),
-            .foregroundColor: tertiaryText
-        ]
-        let tierStr = NSAttributedString(string: "\(tier.emoji) \(tier.displayName)", attributes: tierAttrs)
-        let tierSize = tierStr.size()
-        tierStr.draw(at: CGPoint(x: pageWidth - margin - tierSize.width, y: footerY))
+        let footerText = "LumenLingo  \u{00B7}  \(tierLabel) Membership  \u{00B7}  Page \(pageNumber)"
+        let footerStr = NSAttributedString(string: footerText, attributes: footerAttrs)
+        let footerSize = footerStr.size()
+        footerStr.draw(at: CGPoint(x: pageWidth / 2 - footerSize.width / 2, y: footerY))
     }
 
     // MARK: - Drawing Helpers
