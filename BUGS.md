@@ -603,7 +603,7 @@
 **ID:** BUG-015  
 **Priority:** P0  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** mobile user viewing the Membership page,  
 **I want** each tier card to be fully visible without overlapping adjacent cards,  
@@ -636,7 +636,7 @@
 **ID:** BUG-016  
 **Priority:** P0  
 **Points:** 8  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** mobile user,  
 **I want** the feature comparison table to be readable and usable on my phone screen,  
@@ -672,7 +672,7 @@
 **ID:** BUG-017  
 **Priority:** P0  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user viewing a Royal-tier paywall,  
 **I want** the upgrade buttons to be clearly visible with a solid, opaque background,  
@@ -704,7 +704,7 @@
 **ID:** BUG-018  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** mobile user,  
 **I want** tier cards to use a horizontal swipeable carousel on small screens,  
@@ -736,7 +736,7 @@
 **ID:** BUG-019  
 **Priority:** P2  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user comparing tiers,  
 **I want** the comparison view to highlight what I would gain or lose when switching between tiers,  
