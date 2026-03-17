@@ -28,6 +28,8 @@ struct TierDebugView: View {
 
                 practiceTimeStatus
 
+                onboardingToggle
+
                 trialOverride
 
                 resetSection
@@ -392,6 +394,47 @@ struct TierDebugView: View {
                 .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
         }
         .frame(maxWidth: .infinity)
+    }
+
+    // MARK: - Onboarding Toggle
+
+    private var onboardingToggle: some View {
+        GlassPanelWrapper {
+            VStack(alignment: .leading, spacing: 12) {
+                sectionHeader(icon: "hand.wave.fill", title: "Onboarding", color: .mint)
+
+                let hasSeen = UserDefaults.standard.bool(forKey: "hasSeenTierOnboarding")
+
+                HStack(spacing: 10) {
+                    Circle()
+                        .fill(hasSeen ? .green : .orange)
+                        .frame(width: 8, height: 8)
+
+                    Text(hasSeen ? "Onboarding completed" : "Onboarding will show on next launch")
+                        .font(.system(size: 13, weight: .medium))
+                        .foregroundStyle(isDark ? .white.opacity(0.8) : .primary)
+
+                    Spacer()
+
+                    Toggle("", isOn: Binding(
+                        get: { UserDefaults.standard.bool(forKey: "hasSeenTierOnboarding") },
+                        set: { newValue in
+                            UserDefaults.standard.set(newValue, forKey: "hasSeenTierOnboarding")
+                            refreshToggle.toggle()
+                        }
+                    ))
+                    .labelsHidden()
+                    .tint(.mint)
+                }
+
+                Text(hasSeen
+                     ? "Turn off to re-show tier onboarding on next launch"
+                     : "Turn on to skip onboarding on next launch")
+                    .font(.system(size: 11))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+            }
+            .id(refreshToggle)
+        }
     }
 
     // MARK: - Trial Override

@@ -1181,7 +1181,7 @@
 **ID:** BUG-030  
 **Priority:** P0  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** new user on a smaller phone,  
 **I want** each onboarding page to be fully visible without any content being cut off,  
@@ -1214,7 +1214,7 @@
 **ID:** BUG-031  
 **Priority:** P1  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user on a smaller phone,  
 **I want** the onboarding icons and their glow effects to scale proportionally to my screen size,  
@@ -1244,7 +1244,7 @@
 **ID:** BUG-032  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user on a narrow screen,  
 **I want** the feature bullet points on each onboarding page to be readable without truncation,  
@@ -1277,7 +1277,7 @@
 **ID:** BUG-033  
 **Priority:** P2  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** new user,  
 **I want** each onboarding page to have a polished entrance animation when I swipe to it,  

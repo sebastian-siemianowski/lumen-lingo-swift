@@ -18,9 +18,10 @@ struct TierOnboardingFlow: View {
 
     @State private var currentPage = 0
     @State private var appeared = false
-    @State private var confettiTrigger = false
 
-    private var isDark: Bool { colorScheme == .dark }
+    // Story 9.4 — per-page entrance animation phase (0 = hidden, increments to reveal each element)
+    @State private var pageAnimPhase: [Int] = [0, 0, 0, 0]
+    @State private var pageHasAppeared: [Bool] = [false, false, false, false]
 
     var body: some View {
         ZStack {
@@ -28,7 +29,7 @@ struct TierOnboardingFlow: View {
             backgroundGradient
 
             VStack(spacing: 0) {
-                // Skip button
+                // Skip button — pinned outside scroll (Story 9.1 AC5)
                 HStack {
                     Spacer()
                     Button {
@@ -54,7 +55,7 @@ struct TierOnboardingFlow: View {
                 .tabViewStyle(.page(indexDisplayMode: .never))
                 .animation(.spring(response: 0.4, dampingFraction: 0.85), value: currentPage)
 
-                // Page indicator
+                // Page indicator — pinned outside scroll (Story 9.1 AC4)
                 pageIndicator
                     .padding(.bottom, 32)
             }
@@ -64,8 +65,42 @@ struct TierOnboardingFlow: View {
             withAnimation(.easeOut(duration: 0.5)) {
                 appeared = true
             }
+            // Trigger entrance animation for first page
+            triggerPageAnimation(0)
+        }
+        .onChange(of: currentPage) { _, newPage in
+            triggerPageAnimation(newPage)
         }
         .preferredColorScheme(.dark)
+    }
+
+    // MARK: - Entrance Animation (Story 9.4)
+
+    /// Triggers staggered entrance animation for a page if it hasn't appeared yet.
+    private func triggerPageAnimation(_ page: Int) {
+        guard page >= 0, page < 4, !pageHasAppeared[page] else { return }
+        pageHasAppeared[page] = true
+
+        // Phase 1: icon (0.0s), Phase 2: title (0.1s), Phase 3: subtitle/badge (0.15s),
+        // Phase 4: bullets (0.25s), Phase 5: CTA (0.45s)
+        let delays: [Double] = [0.0, 0.1, 0.15, 0.25, 0.45]
+        for (i, delay) in delays.enumerated() {
+            let phase = i + 1
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                withAnimation(.spring(duration: 0.5, bounce: 0.2)) {
+                    pageAnimPhase[page] = phase
+                }
+            }
+        }
+    }
+
+    /// Returns opacity and offset for a given element phase on a specific page.
+    private func entranceOpacity(page: Int, phase: Int) -> Double {
+        pageAnimPhase[page] >= phase ? 1.0 : 0.0
+    }
+
+    private func entranceOffset(page: Int, phase: Int) -> CGFloat {
+        pageAnimPhase[page] >= phase ? 0 : 20
     }
 
     // MARK: - Background
@@ -112,513 +147,592 @@ struct TierOnboardingFlow: View {
     // MARK: - Page 1: Learn for Free
 
     private var learnForFreePage: some View {
-        VStack(spacing: 28) {
-            Spacer()
+        GeometryReader { geo in
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 28) {
+                    Spacer(minLength: 20)
 
-            // Animated icon
-            ZStack {
-                Circle()
-                    .fill(
-                        RadialGradient(
-                            colors: [
-                                Color(hex: "#667eea").opacity(0.3),
-                                Color(hex: "#764ba2").opacity(0.1),
-                                .clear
-                            ],
-                            center: .center,
-                            startRadius: 20,
-                            endRadius: 80
-                        )
-                    )
-                    .frame(width: 160, height: 160)
-
-                Image(systemName: "globe")
-                    .font(.system(size: 64, weight: .light))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-                    .symbolEffect(.pulse, options: .repeating)
-            }
-
-            VStack(spacing: 12) {
-                Text("Learn for Free")
-                    .font(.system(size: 32, weight: .bold, design: .rounded))
-                    .foregroundStyle(.white)
-
-                Text("Start your language journey today")
-                    .font(.system(size: 17, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.7))
-            }
-
-            // Feature bullets
-            VStack(spacing: 14) {
-                featureBullet(
-                    icon: "gamecontroller.fill",
-                    text: "All 3 game modes",
-                    detail: "Flashcards, Grammar & Word Builder",
-                    colors: [.cyan, .blue]
-                )
-                featureBullet(
-                    icon: "globe",
-                    text: "3 language pairs",
-                    detail: "Spanish, French & German",
-                    colors: [.green, .teal]
-                )
-                featureBullet(
-                    icon: "clock.fill",
-                    text: "30 minutes daily practice",
-                    detail: "Build a consistent learning habit",
-                    colors: [.orange, .yellow]
-                )
-            }
-            .padding(.horizontal, 32)
-
-            Spacer()
-
-            // CTA
-            Button {
-                completeOnboarding(startTrial: false)
-            } label: {
-                Text("Continue with Free")
-                    .font(.system(size: 17, weight: .semibold))
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 16)
-                    .background(
-                        Capsule()
+                    // Animated icon — responsive sizing (Story 9.2)
+                    let iconSize = min(geo.size.height * 0.22, 160.0)
+                    ZStack {
+                        Circle()
                             .fill(
-                                LinearGradient(
-                                    colors: MembershipTier.free.gradientColors,
-                                    startPoint: .leading,
-                                    endPoint: .trailing
+                                RadialGradient(
+                                    colors: [
+                                        Color(hex: "#667eea").opacity(0.3),
+                                        Color(hex: "#764ba2").opacity(0.1),
+                                        .clear
+                                    ],
+                                    center: .center,
+                                    startRadius: iconSize * 0.125,
+                                    endRadius: iconSize * 0.5
                                 )
                             )
-                    )
-            }
-            .padding(.horizontal, 32)
+                            .frame(width: iconSize, height: iconSize)
 
-            // "Or see what's available" link
-            Button {
-                withAnimation { currentPage = 1 }
-            } label: {
-                Text("See what's available →")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.5))
+                        Image(systemName: "globe")
+                            .font(.system(size: iconSize * 0.4, weight: .light))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                            .symbolEffect(.pulse, options: .repeating)
+                    }
+                    .opacity(entranceOpacity(page: 0, phase: 1))
+                    .offset(y: entranceOffset(page: 0, phase: 1))
+
+                    VStack(spacing: 12) {
+                        Text("Learn for Free")
+                            .font(.system(size: 32, weight: .bold, design: .rounded))
+                            .foregroundStyle(.white)
+                            .minimumScaleFactor(0.8)
+
+                        Text("Start your language journey today")
+                            .font(.system(size: 17, weight: .medium))
+                            .foregroundStyle(.white.opacity(0.7))
+                            .multilineTextAlignment(.center)
+                    }
+                    .opacity(entranceOpacity(page: 0, phase: 2))
+                    .offset(y: entranceOffset(page: 0, phase: 2))
+
+                    // Feature bullets (Story 9.3 — adaptive, multiline-safe)
+                    VStack(spacing: 14) {
+                        featureBullet(
+                            icon: "gamecontroller.fill",
+                            text: "All 3 game modes",
+                            detail: "Flashcards, Grammar & Word Builder",
+                            colors: [.cyan, .blue]
+                        )
+                        featureBullet(
+                            icon: "globe",
+                            text: "3 language pairs",
+                            detail: "Spanish, French & German",
+                            colors: [.green, .teal]
+                        )
+                        featureBullet(
+                            icon: "clock.fill",
+                            text: "30 minutes daily practice",
+                            detail: "Build a consistent learning habit",
+                            colors: [.orange, .yellow]
+                        )
+                    }
+                    .padding(.horizontal, 24)
+                    .opacity(entranceOpacity(page: 0, phase: 4))
+                    .offset(y: entranceOffset(page: 0, phase: 4))
+
+                    Spacer(minLength: 20)
+
+                    // CTA
+                    Button {
+                        completeOnboarding(startTrial: false)
+                    } label: {
+                        Text("Continue with Free")
+                            .font(.system(size: 17, weight: .semibold))
+                            .foregroundStyle(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 16)
+                            .background(
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: MembershipTier.free.gradientColors,
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        )
+                                    )
+                            )
+                    }
+                    .buttonStyle(LumenCTAPressStyle(glowColor: MembershipTier.free.gradientColors.first ?? .blue))
+                    .padding(.horizontal, 32)
+                    .opacity(entranceOpacity(page: 0, phase: 5))
+                    .offset(y: entranceOffset(page: 0, phase: 5))
+
+                    // "Or see what's available" link
+                    Button {
+                        withAnimation { currentPage = 1 }
+                    } label: {
+                        Text("See what's available →")
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundStyle(.white.opacity(0.5))
+                    }
+                    .padding(.bottom, 16)
+                    .opacity(entranceOpacity(page: 0, phase: 5))
+                }
+                .frame(minHeight: geo.size.height)
             }
-            .padding(.bottom, 16)
         }
     }
 
     // MARK: - Page 2: Level Up (Pro)
 
     private var levelUpProPage: some View {
-        VStack(spacing: 24) {
-            Spacer()
+        GeometryReader { geo in
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 24) {
+                    Spacer(minLength: 20)
 
-            // Hero — bolt icon with radial glow
-            ZStack {
-                Circle()
-                    .fill(
-                        RadialGradient(
-                            colors: [
-                                Color(hex: "#a855f7").opacity(0.35),
-                                Color(hex: "#ec4899").opacity(0.15),
-                                .clear
-                            ],
-                            center: .center,
-                            startRadius: 15,
-                            endRadius: 80
-                        )
-                    )
-                    .frame(width: 160, height: 160)
-
-                Image(systemName: "bolt.fill")
-                    .font(.system(size: 56, weight: .medium))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-                    .symbolEffect(.bounce, options: .repeating.speed(0.3))
-            }
-
-            VStack(spacing: 8) {
-                Text("Level Up")
-                    .font(.system(size: 32, weight: .bold, design: .rounded))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-
-                Text("Ditch the timer & unlock your first soundscape")
-                    .font(.system(size: 16, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.7))
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 24)
-            }
-
-            // Price badge
-            tierPriceBadge(tier: .pro)
-
-            // Feature bullets
-            VStack(spacing: 14) {
-                featureBullet(
-                    icon: "infinity",
-                    text: "Unlimited Practice",
-                    detail: "No daily time limits — learn at your own pace",
-                    colors: [Color(hex: "#a855f7"), Color(hex: "#d946ef")]
-                )
-                featureBullet(
-                    icon: "headphones",
-                    text: "1 Soundscape",
-                    detail: "Focus-enhancing ambient audio while you learn",
-                    colors: [Color(hex: "#ec4899"), Color(hex: "#f43f5e")]
-                )
-                featureBullet(
-                    icon: "globe",
-                    text: "7 Language Pairs",
-                    detail: "More languages to explore and master",
-                    colors: [.green, .teal]
-                )
-                featureBullet(
-                    icon: "scope",
-                    text: "Breathing Orbs",
-                    detail: "Beautiful mindful learning animations",
-                    colors: [.cyan, .blue]
-                )
-            }
-            .padding(.horizontal, 32)
-
-            Spacer()
-
-            // Next page CTA
-            Button {
-                withAnimation { currentPage = 2 }
-            } label: {
-                Text("See Elite →")
-                    .font(.system(size: 17, weight: .semibold))
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 16)
-                    .background(
-                        Capsule()
+                    // Hero — bolt icon with responsive radial glow
+                    let iconSize = min(geo.size.height * 0.22, 160.0)
+                    ZStack {
+                        Circle()
                             .fill(
+                                RadialGradient(
+                                    colors: [
+                                        Color(hex: "#a855f7").opacity(0.35),
+                                        Color(hex: "#ec4899").opacity(0.15),
+                                        .clear
+                                    ],
+                                    center: .center,
+                                    startRadius: iconSize * 0.1,
+                                    endRadius: iconSize * 0.5
+                                )
+                            )
+                            .frame(width: iconSize, height: iconSize)
+
+                        Image(systemName: "bolt.fill")
+                            .font(.system(size: iconSize * 0.35, weight: .medium))
+                            .foregroundStyle(
                                 LinearGradient(
-                                    colors: MembershipTier.pro.gradientColors,
+                                    colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                            .symbolEffect(.bounce, options: .repeating.speed(0.3))
+                    }
+                    .opacity(entranceOpacity(page: 1, phase: 1))
+                    .offset(y: entranceOffset(page: 1, phase: 1))
+
+                    VStack(spacing: 8) {
+                        Text("Level Up")
+                            .font(.system(size: 32, weight: .bold, design: .rounded))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
                                     startPoint: .leading,
                                     endPoint: .trailing
                                 )
                             )
-                            .shadow(color: Color(hex: "#a855f7").opacity(0.35), radius: 12, y: 4)
-                    )
-            }
-            .padding(.horizontal, 32)
+                            .minimumScaleFactor(0.8)
 
-            // Continue with Free
-            Button {
-                completeOnboarding(startTrial: false)
-            } label: {
-                Text("Continue with Free")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.5))
+                        Text("Ditch the timer & unlock your first soundscape")
+                            .font(.system(size: 16, weight: .medium))
+                            .foregroundStyle(.white.opacity(0.7))
+                            .multilineTextAlignment(.center)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .padding(.horizontal, 24)
+                    }
+                    .opacity(entranceOpacity(page: 1, phase: 2))
+                    .offset(y: entranceOffset(page: 1, phase: 2))
+
+                    // Price badge
+                    tierPriceBadge(tier: .pro)
+                        .opacity(entranceOpacity(page: 1, phase: 3))
+                        .offset(y: entranceOffset(page: 1, phase: 3))
+
+                    // Feature bullets
+                    VStack(spacing: 14) {
+                        featureBullet(
+                            icon: "infinity",
+                            text: "Unlimited Practice",
+                            detail: "No daily time limits — learn at your own pace",
+                            colors: [Color(hex: "#a855f7"), Color(hex: "#d946ef")]
+                        )
+                        featureBullet(
+                            icon: "headphones",
+                            text: "1 Soundscape",
+                            detail: "Focus-enhancing ambient audio while you learn",
+                            colors: [Color(hex: "#ec4899"), Color(hex: "#f43f5e")]
+                        )
+                        featureBullet(
+                            icon: "globe",
+                            text: "7 Language Pairs",
+                            detail: "More languages to explore and master",
+                            colors: [.green, .teal]
+                        )
+                        featureBullet(
+                            icon: "scope",
+                            text: "Breathing Orbs",
+                            detail: "Beautiful mindful learning animations",
+                            colors: [.cyan, .blue]
+                        )
+                    }
+                    .padding(.horizontal, 24)
+                    .opacity(entranceOpacity(page: 1, phase: 4))
+                    .offset(y: entranceOffset(page: 1, phase: 4))
+
+                    Spacer(minLength: 20)
+
+                    // Next page CTA
+                    Button {
+                        withAnimation { currentPage = 2 }
+                    } label: {
+                        Text("See Elite →")
+                            .font(.system(size: 17, weight: .semibold))
+                            .foregroundStyle(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 16)
+                            .background(
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: MembershipTier.pro.gradientColors,
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        )
+                                    )
+                                    .shadow(color: Color(hex: "#a855f7").opacity(0.35), radius: 12, y: 4)
+                            )
+                    }
+                    .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#a855f7")))
+                    .padding(.horizontal, 32)
+                    .opacity(entranceOpacity(page: 1, phase: 5))
+                    .offset(y: entranceOffset(page: 1, phase: 5))
+
+                    // Continue with Free
+                    Button {
+                        completeOnboarding(startTrial: false)
+                    } label: {
+                        Text("Continue with Free")
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundStyle(.white.opacity(0.5))
+                    }
+                    .padding(.bottom, 16)
+                    .opacity(entranceOpacity(page: 1, phase: 5))
+                }
+                .frame(minHeight: geo.size.height)
             }
-            .padding(.bottom, 16)
         }
     }
 
     // MARK: - Page 3: Go Elite
 
     private var goElitePage: some View {
-        VStack(spacing: 24) {
-            Spacer()
+        GeometryReader { geo in
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 24) {
+                    Spacer(minLength: 16)
 
-            // Hero — sparkles icon with radial glow
-            ZStack {
-                Circle()
-                    .fill(
-                        RadialGradient(
-                            colors: [
-                                Color(hex: "#7c3aed").opacity(0.35),
-                                Color(hex: "#06b6d4").opacity(0.15),
-                                .clear
-                            ],
-                            center: .center,
-                            startRadius: 15,
-                            endRadius: 80
-                        )
-                    )
-                    .frame(width: 160, height: 160)
-
-                Image(systemName: "sparkles")
-                    .font(.system(size: 56, weight: .medium))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [Color(hex: "#7c3aed"), Color(hex: "#06b6d4")],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-                    .symbolEffect(.pulse, options: .repeating)
-            }
-
-            VStack(spacing: 8) {
-                HStack(spacing: 6) {
-                    Text("Go")
-                    Text("Elite")
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#7c3aed"), Color(hex: "#06b6d4")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                }
-                .font(.system(size: 32, weight: .bold, design: .rounded))
-                .foregroundStyle(.white)
-
-                Text("Full creative suite — visuals, sounds\n& every language")
-                    .font(.system(size: 16, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.7))
-                    .multilineTextAlignment(.center)
-            }
-
-            // Popular + price badge
-            HStack(spacing: 12) {
-                Text("MOST POPULAR")
-                    .font(.system(size: 11, weight: .heavy, design: .rounded))
-                    .tracking(0.8)
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 6)
-                    .background(
-                        Capsule()
+                    // Hero — sparkles icon with responsive radial glow
+                    let iconSize = min(geo.size.height * 0.22, 160.0)
+                    ZStack {
+                        Circle()
                             .fill(
-                                LinearGradient(
-                                    colors: MembershipTier.elite.gradientColors,
-                                    startPoint: .leading,
-                                    endPoint: .trailing
+                                RadialGradient(
+                                    colors: [
+                                        Color(hex: "#7c3aed").opacity(0.35),
+                                        Color(hex: "#06b6d4").opacity(0.15),
+                                        .clear
+                                    ],
+                                    center: .center,
+                                    startRadius: iconSize * 0.1,
+                                    endRadius: iconSize * 0.5
                                 )
                             )
-                    )
+                            .frame(width: iconSize, height: iconSize)
 
-                tierPriceBadge(tier: .elite)
-            }
-
-            // Feature bullets
-            VStack(spacing: 14) {
-                featureBullet(
-                    icon: "headphones",
-                    text: "8 Soundscapes",
-                    detail: "Complete immersive ambient library",
-                    colors: [Color(hex: "#7c3aed"), Color(hex: "#9333ea")]
-                )
-                featureBullet(
-                    icon: "globe",
-                    text: "25+ Language Pairs",
-                    detail: "Every language pair we offer",
-                    colors: [.green, .teal]
-                )
-                featureBullet(
-                    icon: "waveform.path.ecg",
-                    text: "Quantum Flow",
-                    detail: "Mesmerising particle visualisations",
-                    colors: [.cyan, .blue]
-                )
-                featureBullet(
-                    icon: "cloud.fog.fill",
-                    text: "Nebula Drift",
-                    detail: "Stunning nebula backgrounds that evolve",
-                    colors: [Color(hex: "#8b5cf6"), Color(hex: "#a78bfa")]
-                )
-                featureBullet(
-                    icon: "wifi.slash",
-                    text: "Offline Mode",
-                    detail: "Learn anywhere, even without internet",
-                    colors: [.orange, .yellow]
-                )
-            }
-            .padding(.horizontal, 32)
-
-            Spacer()
-
-            // Next page CTA
-            Button {
-                withAnimation { currentPage = 3 }
-            } label: {
-                HStack(spacing: 8) {
-                    Image(systemName: "crown.fill")
-                        .font(.system(size: 14))
-                    Text("See Royal Trial")
-                        .font(.system(size: 17, weight: .semibold))
-                }
-                .foregroundStyle(.white)
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 16)
-                .background(
-                    Capsule()
-                        .fill(
-                            LinearGradient(
-                                colors: MembershipTier.elite.gradientColors,
-                                startPoint: .leading,
-                                endPoint: .trailing
+                        Image(systemName: "sparkles")
+                            .font(.system(size: iconSize * 0.35, weight: .medium))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [Color(hex: "#7c3aed"), Color(hex: "#06b6d4")],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
                             )
-                        )
-                        .shadow(color: Color(hex: "#7c3aed").opacity(0.35), radius: 12, y: 4)
-                )
-            }
-            .padding(.horizontal, 32)
+                            .symbolEffect(.pulse, options: .repeating)
+                    }
+                    .opacity(entranceOpacity(page: 2, phase: 1))
+                    .offset(y: entranceOffset(page: 2, phase: 1))
 
-            // Continue with Free
-            Button {
-                completeOnboarding(startTrial: false)
-            } label: {
-                Text("Continue with Free")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.5))
+                    VStack(spacing: 8) {
+                        HStack(spacing: 6) {
+                            Text("Go")
+                            Text("Elite")
+                                .foregroundStyle(
+                                    LinearGradient(
+                                        colors: [Color(hex: "#7c3aed"), Color(hex: "#06b6d4")],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
+                        }
+                        .font(.system(size: 32, weight: .bold, design: .rounded))
+                        .foregroundStyle(.white)
+                        .minimumScaleFactor(0.8)
+
+                        Text("Full creative suite — visuals, sounds\n& every language")
+                            .font(.system(size: 16, weight: .medium))
+                            .foregroundStyle(.white.opacity(0.7))
+                            .multilineTextAlignment(.center)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    .opacity(entranceOpacity(page: 2, phase: 2))
+                    .offset(y: entranceOffset(page: 2, phase: 2))
+
+                    // Popular + price badge
+                    HStack(spacing: 12) {
+                        Text("MOST POPULAR")
+                            .font(.system(size: 11, weight: .heavy, design: .rounded))
+                            .tracking(0.8)
+                            .foregroundStyle(.white)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 6)
+                            .background(
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: MembershipTier.elite.gradientColors,
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        )
+                                    )
+                            )
+
+                        tierPriceBadge(tier: .elite)
+                    }
+                    .opacity(entranceOpacity(page: 2, phase: 3))
+                    .offset(y: entranceOffset(page: 2, phase: 3))
+
+                    // Feature bullets
+                    VStack(spacing: 14) {
+                        featureBullet(
+                            icon: "headphones",
+                            text: "8 Soundscapes",
+                            detail: "Complete immersive ambient library",
+                            colors: [Color(hex: "#7c3aed"), Color(hex: "#9333ea")]
+                        )
+                        featureBullet(
+                            icon: "globe",
+                            text: "25+ Language Pairs",
+                            detail: "Every language pair we offer",
+                            colors: [.green, .teal]
+                        )
+                        featureBullet(
+                            icon: "waveform.path.ecg",
+                            text: "Quantum Flow",
+                            detail: "Mesmerising particle visualisations",
+                            colors: [.cyan, .blue]
+                        )
+                        featureBullet(
+                            icon: "cloud.fog.fill",
+                            text: "Nebula Drift",
+                            detail: "Stunning nebula backgrounds that evolve",
+                            colors: [Color(hex: "#8b5cf6"), Color(hex: "#a78bfa")]
+                        )
+                        featureBullet(
+                            icon: "wifi.slash",
+                            text: "Offline Mode",
+                            detail: "Learn anywhere, even without internet",
+                            colors: [.orange, .yellow]
+                        )
+                    }
+                    .padding(.horizontal, 24)
+                    .opacity(entranceOpacity(page: 2, phase: 4))
+                    .offset(y: entranceOffset(page: 2, phase: 4))
+
+                    Spacer(minLength: 20)
+
+                    // Next page CTA
+                    Button {
+                        withAnimation { currentPage = 3 }
+                    } label: {
+                        HStack(spacing: 8) {
+                            Image(systemName: "crown.fill")
+                                .font(.system(size: 14))
+                            Text("See Royal Trial")
+                                .font(.system(size: 17, weight: .semibold))
+                        }
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 16)
+                        .background(
+                            Capsule()
+                                .fill(
+                                    LinearGradient(
+                                        colors: MembershipTier.elite.gradientColors,
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
+                                .shadow(color: Color(hex: "#7c3aed").opacity(0.35), radius: 12, y: 4)
+                        )
+                    }
+                    .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#7c3aed")))
+                    .padding(.horizontal, 32)
+                    .opacity(entranceOpacity(page: 2, phase: 5))
+                    .offset(y: entranceOffset(page: 2, phase: 5))
+
+                    // Continue with Free
+                    Button {
+                        completeOnboarding(startTrial: false)
+                    } label: {
+                        Text("Continue with Free")
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundStyle(.white.opacity(0.5))
+                    }
+                    .padding(.bottom, 16)
+                    .opacity(entranceOpacity(page: 2, phase: 5))
+                }
+                .frame(minHeight: geo.size.height)
             }
-            .padding(.bottom, 16)
         }
     }
 
     // MARK: - Page 4: Try Royal
 
     private var tryRoyalPage: some View {
-        VStack(spacing: 24) {
-            Spacer()
+        GeometryReader { geo in
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 24) {
+                    Spacer(minLength: 16)
 
-            // Crown with glow
-            ZStack {
-                Circle()
-                    .fill(
-                        RadialGradient(
-                            colors: [
-                                Color(hex: "#fbbf24").opacity(0.35),
-                                Color(hex: "#f97316").opacity(0.15),
-                                .clear
-                            ],
-                            center: .center,
-                            startRadius: 15,
-                            endRadius: 80
-                        )
-                    )
-                    .frame(width: 160, height: 160)
+                    // Crown with responsive glow
+                    let iconSize = min(geo.size.height * 0.22, 160.0)
+                    ZStack {
+                        Circle()
+                            .fill(
+                                RadialGradient(
+                                    colors: [
+                                        Color(hex: "#fbbf24").opacity(0.35),
+                                        Color(hex: "#f97316").opacity(0.15),
+                                        .clear
+                                    ],
+                                    center: .center,
+                                    startRadius: iconSize * 0.1,
+                                    endRadius: iconSize * 0.5
+                                )
+                            )
+                            .frame(width: iconSize, height: iconSize)
 
-                Image(systemName: "crown.fill")
-                    .font(.system(size: 56, weight: .medium))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [Color(hex: "#fbbf24"), Color(hex: "#f97316")],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                    )
-                    .symbolEffect(.bounce, options: .repeating.speed(0.3))
-            }
-
-            VStack(spacing: 8) {
-                Text("Try Royal for Free")
-                    .font(.system(size: 32, weight: .bold, design: .rounded))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [Color(hex: "#fbbf24"), Color(hex: "#f97316")],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-
-                Text("14 days of everything, completely free")
-                    .font(.system(size: 16, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.7))
-            }
-
-            // Trial countdown badge
-            HStack(spacing: 8) {
-                Image(systemName: "clock.badge.checkmark.fill")
-                    .font(.system(size: 16))
-                    .foregroundStyle(.orange)
-
-                Text("14 DAY FREE TRIAL")
-                    .font(.system(size: 13, weight: .heavy, design: .rounded))
-                    .tracking(1)
-                    .foregroundStyle(.white.opacity(0.9))
-            }
-            .padding(.horizontal, 20)
-            .padding(.vertical, 10)
-            .background(
-                Capsule()
-                    .fill(.white.opacity(0.1))
-                    .overlay(
-                        Capsule()
-                            .strokeBorder(
+                        Image(systemName: "crown.fill")
+                            .font(.system(size: iconSize * 0.35, weight: .medium))
+                            .foregroundStyle(
                                 LinearGradient(
-                                    colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
+                                    colors: [Color(hex: "#fbbf24"), Color(hex: "#f97316")],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                            .symbolEffect(.bounce, options: .repeating.speed(0.3))
+                    }
+                    .opacity(entranceOpacity(page: 3, phase: 1))
+                    .offset(y: entranceOffset(page: 3, phase: 1))
+
+                    VStack(spacing: 8) {
+                        Text("Try Royal for Free")
+                            .font(.system(size: 32, weight: .bold, design: .rounded))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [Color(hex: "#fbbf24"), Color(hex: "#f97316")],
                                     startPoint: .leading,
                                     endPoint: .trailing
-                                ),
-                                lineWidth: 1
+                                )
+                            )
+                            .minimumScaleFactor(0.8)
+
+                        Text("14 days of everything, completely free")
+                            .font(.system(size: 16, weight: .medium))
+                            .foregroundStyle(.white.opacity(0.7))
+                            .multilineTextAlignment(.center)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    .opacity(entranceOpacity(page: 3, phase: 2))
+                    .offset(y: entranceOffset(page: 3, phase: 2))
+
+                    // Trial countdown badge
+                    HStack(spacing: 8) {
+                        Image(systemName: "clock.badge.checkmark.fill")
+                            .font(.system(size: 16))
+                            .foregroundStyle(.orange)
+
+                        Text("14 DAY FREE TRIAL")
+                            .font(.system(size: 13, weight: .heavy, design: .rounded))
+                            .tracking(1)
+                            .foregroundStyle(.white.opacity(0.9))
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
+                    .background(
+                        Capsule()
+                            .fill(.white.opacity(0.1))
+                            .overlay(
+                                Capsule()
+                                    .strokeBorder(
+                                        LinearGradient(
+                                            colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        ),
+                                        lineWidth: 1
+                                    )
                             )
                     )
-            )
+                    .opacity(entranceOpacity(page: 3, phase: 3))
+                    .offset(y: entranceOffset(page: 3, phase: 3))
 
-            // Royal features list
-            VStack(spacing: 10) {
-                royalFeature(icon: "headphones", text: "All 12 Soundscapes")
-                royalFeature(icon: "globe", text: "25+ Language Pairs")
-                royalFeature(icon: "infinity", text: "Unlimited Practice")
-                royalFeature(icon: "scope", text: "6 Breathing Orb Themes")
-                royalFeature(icon: "waveform.path.ecg", text: "6 Quantum Flow Scenes")
-                royalFeature(icon: "cloud.fog.fill", text: "6 Nebula Drift Presets")
-                royalFeature(icon: "wifi.slash", text: "Offline Mode")
-            }
-            .padding(.horizontal, 40)
+                    // Royal features list
+                    VStack(spacing: 10) {
+                        royalFeature(icon: "headphones", text: "All 12 Soundscapes")
+                        royalFeature(icon: "globe", text: "25+ Language Pairs")
+                        royalFeature(icon: "infinity", text: "Unlimited Practice")
+                        royalFeature(icon: "scope", text: "6 Breathing Orb Themes")
+                        royalFeature(icon: "waveform.path.ecg", text: "6 Quantum Flow Scenes")
+                        royalFeature(icon: "cloud.fog.fill", text: "6 Nebula Drift Presets")
+                        royalFeature(icon: "wifi.slash", text: "Offline Mode")
+                    }
+                    .padding(.horizontal, 32)
+                    .opacity(entranceOpacity(page: 3, phase: 4))
+                    .offset(y: entranceOffset(page: 3, phase: 4))
 
-            Spacer()
+                    Spacer(minLength: 20)
 
-            // Start Trial CTA
-            Button {
-                completeOnboarding(startTrial: true)
-            } label: {
-                HStack(spacing: 8) {
-                    Image(systemName: "crown.fill")
-                        .font(.system(size: 15))
-                    Text("Start Free Trial")
-                        .font(.system(size: 17, weight: .bold))
-                }
-                .foregroundStyle(.white)
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 16)
-                .background(
-                    Capsule()
-                        .fill(
-                            LinearGradient(
-                                colors: MembershipTier.royal.gradientColors,
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
+                    // Start Trial CTA
+                    Button {
+                        completeOnboarding(startTrial: true)
+                    } label: {
+                        HStack(spacing: 8) {
+                            Image(systemName: "crown.fill")
+                                .font(.system(size: 15))
+                            Text("Start Free Trial")
+                                .font(.system(size: 17, weight: .bold))
+                        }
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 16)
+                        .background(
+                            Capsule()
+                                .fill(
+                                    LinearGradient(
+                                        colors: MembershipTier.royal.gradientColors,
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
+                                .shadow(color: Color(hex: "#fbbf24").opacity(0.4), radius: 12, y: 4)
                         )
-                        .shadow(color: Color(hex: "#fbbf24").opacity(0.4), radius: 12, y: 4)
-                )
-            }
-            .padding(.horizontal, 32)
+                    }
+                    .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#fbbf24")))
+                    .padding(.horizontal, 32)
+                    .opacity(entranceOpacity(page: 3, phase: 5))
+                    .offset(y: entranceOffset(page: 3, phase: 5))
 
-            // Continue with Free
-            Button {
-                completeOnboarding(startTrial: false)
-            } label: {
-                Text("Continue with Free")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.5))
+                    // Continue with Free
+                    Button {
+                        completeOnboarding(startTrial: false)
+                    } label: {
+                        Text("Continue with Free")
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundStyle(.white.opacity(0.5))
+                    }
+                    .padding(.bottom, 16)
+                    .opacity(entranceOpacity(page: 3, phase: 5))
+                }
+                .frame(minHeight: geo.size.height)
             }
-            .padding(.bottom, 16)
         }
     }
 
@@ -641,9 +755,11 @@ struct TierOnboardingFlow: View {
                 Text(text)
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(.white)
+                    .fixedSize(horizontal: false, vertical: true)
                 Text(detail)
                     .font(.system(size: 12, weight: .medium))
                     .foregroundStyle(.white.opacity(0.5))
+                    .fixedSize(horizontal: false, vertical: true)
             }
 
             Spacer()
