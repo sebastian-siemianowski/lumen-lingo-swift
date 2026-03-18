@@ -820,28 +820,17 @@ final class TierManager {
         }
         profile?.selectedTierId = tierId
 
-        // Celebration on any non-free tier change
-        if newTier != .free {
-            upgradedToTier = newTier
-            isTierUpgrade = wasUpgrade
-            if wasUpgrade {
-                HapticsService.shared.tierUpgrade()
-            } else {
-                let feedback = UIImpactFeedbackGenerator(style: .medium)
-                feedback.impactOccurred()
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { [weak self] in
-                self?.showUpgradeCelebration = true
-            }
+        // Celebration for ALL tier transitions
+        upgradedToTier = newTier
+        isTierUpgrade = wasUpgrade
+        if wasUpgrade {
+            HapticsService.shared.tierUpgrade()
         } else {
-            let feedback = UIImpactFeedbackGenerator(style: .light)
+            let feedback = UIImpactFeedbackGenerator(style: wasUpgrade ? .heavy : .medium)
             feedback.impactOccurred()
-            // Downgrade to free — show lock dimming directly (no celebration)
-            if !newlyLockedFeatures.isEmpty {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
-                    self?.showFeatureTransition = true
-                }
-            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { [weak self] in
+            self?.showUpgradeCelebration = true
         }
 
         // Restore dormant settings on upgrade

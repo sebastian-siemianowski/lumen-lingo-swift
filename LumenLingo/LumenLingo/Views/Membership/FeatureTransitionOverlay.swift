@@ -3,8 +3,10 @@ import SwiftUI
 // MARK: - Feature Transition Overlay
 
 /// Displays newly unlocked or locked features after a tier change.
-/// Upgrade: features "light up" with staggered sparkle bursts and a ripple effect.
-/// Downgrade: features dim from color to grayscale with lock overlay.
+/// Upgrade: features "light up" with staggered sparkle bursts and a ripple effect
+/// against a cosmic gradient background with drifting particles.
+/// Downgrade: features dim from color to grayscale with lock overlay
+/// as the background slowly desaturates.
 struct FeatureTransitionOverlay: View {
     @Environment(TierManager.self) private var tierManager
 
@@ -16,6 +18,8 @@ struct FeatureTransitionOverlay: View {
     @State private var dismissing = false
     @State private var ripplePhase: CGFloat = 0
     @State private var sparkleStates: [Int: Bool] = [:]
+    @State private var backgroundGlow: CGFloat = 0.2
+    @State private var backgroundSaturation: CGFloat = 1.0
 
     private var isUpgrade: Bool { tierManager.isTierUpgrade }
     private var features: [PremiumFeature] {
@@ -46,10 +50,10 @@ struct FeatureTransitionOverlay: View {
     private var transitionContent: some View {
         GeometryReader { geo in
             ZStack {
-                Color.black.opacity(showBackground ? 0.65 : 0)
-                    .ignoresSafeArea()
+                cosmicBackground(size: geo.size)
 
                 if isUpgrade {
+                    cosmicParticles(size: geo.size)
                     rippleRing(size: geo.size)
                 }
 
@@ -228,6 +232,93 @@ struct FeatureTransitionOverlay: View {
             .transition(.move(edge: .bottom).combined(with: .opacity))
     }
 
+    // MARK: - Cosmic Background
+
+    private func cosmicBackground(size: CGSize) -> some View {
+        let tierColors = tierManager.currentTier.gradientColors
+        let primaryColor = tierColors.first ?? .purple
+
+        return ZStack {
+            // Deep space base
+            Color(hex: "#06061a")
+
+            // Radial glow from center, intensity tied to reveal progress
+            RadialGradient(
+                colors: [
+                    primaryColor.opacity(Double(backgroundGlow)),
+                    primaryColor.opacity(Double(backgroundGlow) * 0.3),
+                    Color(hex: "#0a0a2e").opacity(0.8),
+                    Color(hex: "#06061a")
+                ],
+                center: .center,
+                startRadius: 30,
+                endRadius: max(size.width, size.height) * 0.7
+            )
+
+            // Secondary accent glow for multi-color tiers
+            if tierColors.count > 1 {
+                RadialGradient(
+                    colors: [
+                        tierColors[1].opacity(Double(backgroundGlow) * 0.15),
+                        .clear
+                    ],
+                    center: UnitPoint(x: 0.3, y: 0.7),
+                    startRadius: 20,
+                    endRadius: size.width * 0.5
+                )
+            }
+        }
+        .saturation(Double(backgroundSaturation))
+        .opacity(showBackground ? 1 : 0)
+        .ignoresSafeArea()
+    }
+
+    // MARK: - Cosmic Particles (Upgrade)
+
+    private func cosmicParticles(size: CGSize) -> some View {
+        let tierColors = tierManager.currentTier.gradientColors
+        return TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { timeline in
+            Canvas { context, canvasSize in
+                let t = timeline.date.timeIntervalSinceReferenceDate
+                let particleCount = 24
+
+                for i in 0..<particleCount {
+                    let seed = Double(i) * 137.508
+                    let color = tierColors[i % tierColors.count]
+
+                    // Gentle float-up drift
+                    let baseX = (seed * 7.13).truncatingRemainder(dividingBy: canvasSize.width)
+                    let period = 6.0 + seed.truncatingRemainder(dividingBy: 8.0)
+                    let yOffset = (t * (12.0 + seed.truncatingRemainder(dividingBy: 18.0)))
+                        .truncatingRemainder(dividingBy: canvasSize.height + 40.0)
+                    let y = canvasSize.height + 20.0 - yOffset
+                    let sway = sin(t * 0.8 + seed * 0.3) * 15.0
+                    let x = baseX + sway
+
+                    // Twinkle
+                    let twinkle = sin(t * 2.5 + seed) * 0.3 + 0.5
+                    let dotSize = CGFloat(2.0 + seed.truncatingRemainder(dividingBy: 4.0))
+                    let alpha = twinkle * Double(backgroundGlow) * 2.0
+
+                    let rect = CGRect(
+                        x: x - Double(dotSize) / 2,
+                        y: y - Double(dotSize) / 2,
+                        width: Double(dotSize),
+                        height: Double(dotSize)
+                    )
+                    context.opacity = min(alpha, 0.7)
+                    context.fill(
+                        Circle().path(in: rect),
+                        with: .color(color.opacity(0.8))
+                    )
+                }
+            }
+        }
+        .opacity(showBackground ? 1 : 0)
+        .allowsHitTesting(false)
+        .drawingGroup()
+    }
+
     // MARK: - Ripple Ring (Upgrade only)
 
     private func rippleRing(size: CGSize) -> some View {
@@ -245,8 +336,8 @@ struct FeatureTransitionOverlay: View {
     // MARK: - Animation Sequence
 
     private func startSequence() {
-        // Background fade in
-        withAnimation(.easeOut(duration: 0.3)) {
+        // Background fade in (0.5s smooth)
+        withAnimation(.easeIn(duration: 0.5)) {
             showBackground = true
         }
 
@@ -271,6 +362,22 @@ struct FeatureTransitionOverlay: View {
         let staggerDelay: Double = isUpgrade ? 0.25 : 0.15
         for index in features.indices {
             let delay = 0.5 + Double(index) * staggerDelay
+
+            // Animate background glow brighter as features reveal (upgrade)
+            // or desaturate progressively (downgrade)
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                if isUpgrade {
+                    let progress = CGFloat(index + 1) / CGFloat(max(features.count, 1))
+                    withAnimation(.easeIn(duration: 0.4)) {
+                        backgroundGlow = 0.2 + progress * 0.4
+                    }
+                } else {
+                    let progress = CGFloat(index + 1) / CGFloat(max(features.count, 1))
+                    withAnimation(.easeOut(duration: 0.5)) {
+                        backgroundSaturation = 1.0 - progress * 0.7
+                    }
+                }
+            }
 
             // Reveal the row
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
@@ -331,6 +438,8 @@ struct FeatureTransitionOverlay: View {
         dismissing = false
         ripplePhase = 0
         sparkleStates = [:]
+        backgroundGlow = 0.2
+        backgroundSaturation = 1.0
     }
 
     // MARK: - Ornamental Divider

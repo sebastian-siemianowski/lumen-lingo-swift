@@ -1,5 +1,63 @@
 import SwiftUI
 
+// MARK: - Tier Celebration Theme
+
+/// Per-tier visual theme for the celebration card.
+struct TierCelebrationTheme {
+    let gradient: [Color]
+    let iconName: String
+    let tagline: String
+    let particleColors: [Color]
+
+    static func theme(for tier: MembershipTier, isUpgrade: Bool) -> TierCelebrationTheme {
+        if !isUpgrade {
+            return TierCelebrationTheme(
+                gradient: tier.gradientColors,
+                iconName: tier.iconName,
+                tagline: "Your plan has been adjusted",
+                particleColors: [.gray.opacity(0.5), .white.opacity(0.3)]
+            )
+        }
+        switch tier {
+        case .pro:
+            return TierCelebrationTheme(
+                gradient: [Color(hex: "#6366f1"), Color(hex: "#06b6d4")],
+                iconName: "flame.fill",
+                tagline: "Your journey accelerates!",
+                particleColors: [Color(hex: "#6366f1"), Color(hex: "#06b6d4"), .white]
+            )
+        case .elite:
+            return TierCelebrationTheme(
+                gradient: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+                iconName: "diamond.fill",
+                tagline: "You've joined the elite!",
+                particleColors: [Color(hex: "#a855f7"), Color(hex: "#ec4899"), .white]
+            )
+        case .royal:
+            return TierCelebrationTheme(
+                gradient: [Color(hex: "#fbbf24"), Color(hex: "#f43f5e")],
+                iconName: "crown.fill",
+                tagline: "The kingdom awaits!",
+                particleColors: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), .white]
+            )
+        case .trial:
+            return TierCelebrationTheme(
+                gradient: [Color(hex: "#fbbf24"), Color(hex: "#a855f7")],
+                iconName: "gift.fill",
+                tagline: "14 days of everything — enjoy!",
+                particleColors: [Color(hex: "#fbbf24"), Color(hex: "#a855f7"), Color(hex: "#ec4899")]
+            )
+        case .free:
+            return TierCelebrationTheme(
+                gradient: [Color(hex: "#94a3b8"), Color(hex: "#64748b")],
+                iconName: "globe",
+                tagline: "Welcome back to Starter",
+                particleColors: [.gray.opacity(0.5), .white.opacity(0.3)]
+            )
+        }
+    }
+}
+
 // MARK: - Tier Upgrade Celebration View
 
 /// Full-screen celebration overlay shown when a user upgrades to a higher tier.
@@ -22,6 +80,9 @@ struct TierUpgradeCelebrationView: View {
     @State private var borderGlow: Double = 0
 
     private var tier: MembershipTier { tierManager.upgradedToTier }
+    private var theme: TierCelebrationTheme {
+        TierCelebrationTheme.theme(for: tier, isUpgrade: tierManager.isTierUpgrade)
+    }
     private var L: AppStrings { localization.strings }
 
     private var tierMessage: String {
@@ -54,11 +115,12 @@ struct TierUpgradeCelebrationView: View {
 
                 particleCanvas(size: geo.size)
 
-                // --- Royal Card ---
+                // --- Celebration Card ---
                 cardView
                     .frame(maxWidth: 320)
-                    .scaleEffect(showCard ? 1.0 : 0.85)
+                    .scaleEffect(showCard ? 1.0 : 0.3)
                     .opacity(showCard ? 1 : 0)
+                    .rotationEffect(.degrees(showCard ? 0 : -5))
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .opacity(dismissing ? 0 : 1)
@@ -83,8 +145,8 @@ struct TierUpgradeCelebrationView: View {
                     .fill(
                         RadialGradient(
                             colors: [
-                                tier.gradientColors.first?.opacity(0.35) ?? .clear,
-                                tier.gradientColors.first?.opacity(0.08) ?? .clear,
+                                theme.gradient.first?.opacity(0.35) ?? .clear,
+                                theme.gradient.first?.opacity(0.08) ?? .clear,
                                 .clear
                             ],
                             center: .center,
@@ -96,18 +158,18 @@ struct TierUpgradeCelebrationView: View {
                     .scaleEffect(0.9 + glowPulse * 0.15)
                     .opacity(showIcon ? 0.9 : 0)
 
-                Image(systemName: tier.iconName)
+                Image(systemName: theme.iconName)
                     .font(.system(size: 64, weight: .bold))
                     .foregroundStyle(
                         LinearGradient(
-                            colors: tier.gradientColors,
+                            colors: theme.gradient,
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
                     )
                     .scaleEffect(showIcon ? 1.0 : 0.01)
                     .opacity(showIcon ? 1 : 0)
-                    .shadow(color: tier.gradientColors.first?.opacity(0.6) ?? .clear, radius: 20, y: 2)
+                    .shadow(color: theme.gradient.first?.opacity(0.6) ?? .clear, radius: 20, y: 2)
             }
             .padding(.vertical, 4)
 
@@ -116,7 +178,7 @@ struct TierUpgradeCelebrationView: View {
                 .font(.system(size: 32, weight: .heavy, design: .rounded))
                 .foregroundStyle(
                     LinearGradient(
-                        colors: tier.gradientColors,
+                        colors: theme.gradient,
                         startPoint: .leading,
                         endPoint: .trailing
                     )
@@ -131,7 +193,7 @@ struct TierUpgradeCelebrationView: View {
                 .font(.system(size: 13, weight: .bold, design: .rounded))
                 .tracking(1.5)
                 .textCase(.uppercase)
-                .foregroundStyle(tier.gradientColors.first?.opacity(0.8) ?? .white)
+                .foregroundStyle(theme.gradient.first?.opacity(0.8) ?? .white)
                 .opacity(showName ? 1 : 0)
                 .padding(.top, 4)
 
@@ -139,6 +201,22 @@ struct TierUpgradeCelebrationView: View {
             ornamentalDivider
                 .opacity(showDividers ? 1 : 0)
                 .padding(.vertical, 14)
+
+            // Tier-specific theme tagline
+            Text(theme.tagline)
+                .font(.system(size: 16, weight: .semibold, design: .rounded))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: theme.gradient,
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .multilineTextAlignment(.center)
+                .opacity(showMessage ? 1 : 0)
+                .offset(y: showMessage ? 0 : 6)
+                .padding(.horizontal, 28)
+                .padding(.bottom, 6)
 
             // Tier-specific linguistic message
             Text(tierMessage)
@@ -157,18 +235,18 @@ struct TierUpgradeCelebrationView: View {
                 .padding(.top, 16)
                 .padding(.bottom, 28)
         }
-        .tierGlassCard(colors: tier.gradientColors, borderGlow: borderGlow)
+        .tierGlassCard(colors: theme.gradient, borderGlow: borderGlow)
     }
 
 
 
     // MARK: - Ornamental Divider
 
-    /// A decorative line with a small diamond in the center, tier-colored.
+    /// A decorative line with a small diamond in the center, theme-colored.
     private var ornamentalDivider: some View {
         HStack(spacing: 8) {
             // Left line with fade
-            tier.gradientColors.first.map { color in
+            theme.gradient.first.map { color in
                 Rectangle()
                     .fill(
                         LinearGradient(
@@ -183,10 +261,10 @@ struct TierUpgradeCelebrationView: View {
             // Center diamond
             Image(systemName: "diamond.fill")
                 .font(.system(size: 5))
-                .foregroundStyle(tier.gradientColors.first?.opacity(0.5) ?? .clear)
+                .foregroundStyle(theme.gradient.first?.opacity(0.5) ?? .clear)
 
             // Right line with fade
-            tier.gradientColors.last.map { color in
+            theme.gradient.last.map { color in
                 Rectangle()
                     .fill(
                         LinearGradient(
@@ -209,7 +287,7 @@ struct TierUpgradeCelebrationView: View {
             ForEach(0..<2, id: \.self) { i in
                 Circle()
                     .strokeBorder(
-                        tier.gradientColors.first?.opacity(0.25 - Double(i) * 0.1) ?? .clear,
+                        theme.gradient.first?.opacity(0.25 - Double(i) * 0.1) ?? .clear,
                         lineWidth: 1.5
                     )
                     .frame(width: maxDim * ringExpand, height: maxDim * ringExpand)
@@ -227,12 +305,12 @@ struct TierUpgradeCelebrationView: View {
             let cx = canvasSize.width / 2
             let cy = canvasSize.height / 2
             let phase = Double(particlePhase)
-            let gradientColors = tier.gradientColors
+            let pColors = theme.particleColors
 
             let confettiCount = 50
             for i in 0..<confettiCount {
                 let seed = Double(i) * 137.508
-                let color = gradientColors[i % gradientColors.count]
+                let color = pColors[i % pColors.count]
 
                 let baseW = CGFloat(3.5 + seed.truncatingRemainder(dividingBy: 6))
                 let baseH = baseW * CGFloat(1.2 + (seed * 0.37).truncatingRemainder(dividingBy: 2.0) / 2.0)
@@ -299,8 +377,8 @@ struct TierUpgradeCelebrationView: View {
     // MARK: - Animation Sequence
 
     private func startSequence() {
-        // +0.05s: Card appears with scale spring
-        withAnimation(.spring(response: 0.5, dampingFraction: 0.75).delay(0.05)) {
+        // +0.05s: Card appears with spring entrance (scale 0.3→1, rotation -5°→0°)
+        withAnimation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.05)) {
             showCard = true
         }
 

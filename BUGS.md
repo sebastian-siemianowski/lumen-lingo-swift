@@ -13,20 +13,20 @@
 
 | # | Epic | Priority | Stories | Points |
 |---|------|----------|---------|--------|
-| E1 | [Personalization & Identity](#epic-1-personalization--identity) | P0 | 4 | 21 |
-| E2 | [Dark Mode & Theme Polish](#epic-2-dark-mode--theme-polish) | P1 | 3 | 13 |
-| E3 | [Accuracy Heatmap UX Overhaul](#epic-3-accuracy-heatmap-ux-overhaul) | P1 | 3 | 13 |
-| E4 | [Premium Export Experience](#epic-4-premium-export-experience) | P1 | 4 | 21 |
-| E5 | [Membership & Premium Mobile UX](#epic-5-membership--premium-mobile-ux) | P0 | 5 | 26 |
+| E1 | [Personalization & Identity](#epic-1-personalization--identity) | P0 | 4 | 21 | ✅ Done |
+| E2 | [Dark Mode & Theme Polish](#epic-2-dark-mode--theme-polish) | P1 | 3 | 13 | ✅ Done |
+| E3 | [Accuracy Heatmap UX Overhaul](#epic-3-accuracy-heatmap-ux-overhaul) | P1 | 3 | 13 | ✅ Done |
+| E4 | [Premium Export Experience](#epic-4-premium-export-experience) | P1 | 4 | 21 | ✅ Done |
+| E5 | [Membership & Premium Mobile UX](#epic-5-membership--premium-mobile-ux) | P0 | 5 | 26 | ✅ Done |
 | E6 | [Offline Mode & Debug Infrastructure](#epic-6-offline-mode--debug-infrastructure) | P1 | 4 | 21 | ✅ Done |
-| E7 | [Tier Transition Animation Polish](#epic-7-tier-transition-animation-polish) | P1 | 3 | 13 |
+| E7 | [Tier Transition Animation Polish](#epic-7-tier-transition-animation-polish) | P1 | 3 | 13 | ✅ Done |
 | E8 | [Profile Page UX Refinement](#epic-8-profile-page-ux-refinement) | P2 | 3 | 13 |
-| E9 | [Onboarding Mobile Optimization](#epic-9-onboarding-mobile-optimization) | P0 | 4 | 18 |
+| E9 | [Onboarding Mobile Optimization](#epic-9-onboarding-mobile-optimization) | P0 | 4 | 18 | ✅ Done |
 | E10 | [Game Completion Flow](#epic-10-game-completion-flow) | P1 | 4 | 18 |
 | E11 | [Grammar Challenge UX Overhaul](#epic-11-grammar-challenge-ux-overhaul) | P1 | 5 | 26 |
 | E12 | [Recent Activity Cross-Language Support](#epic-12-recent-activity-cross-language-support) | P1 | 3 | 13 |
 | E13 | [Word Constructor Polish](#epic-13-word-constructor-polish) | P1 | 3 | 13 |
-| E14 | [Royal Paywall Visual Integrity](#epic-14-royal-paywall-visual-integrity) | P0 | 3 | 13 |
+| E14 | [Royal Paywall Visual Integrity](#epic-14-royal-paywall-visual-integrity) | P0 | 3 | 13 | ✅ Done |
 | E15 | [Haptic Feedback Integration](#epic-15-haptic-feedback-integration) | P1 | 4 | 18 |
 | E16 | [Game Header UX Redesign](#epic-16-game-header-ux-redesign) | P2 | 4 | 18 |
 | | **TOTALS** | | **59** | **278** |
@@ -940,7 +940,7 @@
 **ID:** BUG-024  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** user transitioning between membership tiers,  
 **I want** the transition animation to have a rich, cosmic background that matches the app's design language,  
@@ -948,13 +948,13 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The `FeatureTransitionOverlay` background is replaced from flat black opacity to a dynamic cosmic gradient that uses the DESTINATION tier's signature colors.
-- [ ] AC2: The background includes a radial gradient emanating from the center (where the celebration card sits), with the tier's primary color at center fading to deep navy at edges.
-- [ ] AC3: Subtle animated particles (sparkles or stars) drift across the background for upgrades; a gentle dimming wave effect for downgrades.
-- [ ] AC4: The background transition between the previous screen and the overlay is a smooth 0.5s fade-in (not an abrupt cut).
-- [ ] AC5: For upgrades: the background glows brighter as more features are revealed, reaching maximum brilliance when all features are shown.
-- [ ] AC6: For downgrades: the background slowly desaturates as features dim, ending in a muted version of the new (lower) tier's colors.
-- [ ] AC7: The cosmic background does not significantly impact scroll performance or redraw rate (target: 60fps on iPhone SE).
+- [x] AC1: The `FeatureTransitionOverlay` background is replaced from flat black opacity to a dynamic cosmic gradient that uses the DESTINATION tier's signature colors.
+- [x] AC2: The background includes a radial gradient emanating from the center (where the celebration card sits), with the tier's primary color at center fading to deep navy at edges.
+- [x] AC3: Subtle animated particles (sparkles or stars) drift across the background for upgrades; a gentle dimming wave effect for downgrades.
+- [x] AC4: The background transition between the previous screen and the overlay is a smooth 0.5s fade-in (not an abrupt cut).
+- [x] AC5: For upgrades: the background glows brighter as more features are revealed, reaching maximum brilliance when all features are shown.
+- [x] AC6: For downgrades: the background slowly desaturates as features dim, ending in a muted version of the new (lower) tier's colors.
+- [x] AC7: The cosmic background does not significantly impact scroll performance or redraw rate (target: 60fps on iPhone SE).
 
 #### Subtasks
 
@@ -974,7 +974,7 @@
 **ID:** BUG-025  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** user switching between any membership tier (including Free Trial activation),  
 **I want** the special celebration/transition card animation to ALWAYS appear,  
@@ -982,19 +982,19 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The following tier transitions ALL trigger the celebration/transition overlay:
+- [x] AC1: The following tier transitions ALL trigger the celebration/transition overlay:
   - Free → Trial (celebrating trial start)
   - Free → Pro/Elite/Royal (celebrating upgrade)
   - Pro → Elite/Royal (celebrating upgrade)
   - Elite → Royal (celebrating upgrade)
   - Any → lower tier (graceful downgrade transition)
   - Trial → Free (trial expiry)
-- [ ] AC2: Upgrades show `TierUpgradeCelebrationView` with the new tier's card, confetti, and feature unlock list.
-- [ ] AC3: Downgrades show `FeatureTransitionOverlay` with feature dimming and the "Requires upgrade" messaging.
-- [ ] AC4: The Debug Panel tier switch buttons also trigger the celebration/transition flow (same path as production).
-- [ ] AC5: The transition cannot be interrupted or dismissed until the full animation completes (minimum 2s).
-- [ ] AC6: After the transition completes, the user is returned to the screen they were on (not reset to the dashboard).
-- [ ] AC7: Sound effects (if `SoundService` is enabled) play tier-appropriate audio during the transition.
+- [x] AC2: Upgrades show `TierUpgradeCelebrationView` with the new tier's card, confetti, and feature unlock list.
+- [x] AC3: Downgrades show `FeatureTransitionOverlay` with feature dimming and the "Requires upgrade" messaging.
+- [x] AC4: The QA Panel tier switch buttons also trigger the celebration/transition flow (same path as production).
+- [x] AC5: The transition cannot be interrupted or dismissed until the full animation completes (minimum 2s).
+- [x] AC6: After the transition completes, the user is returned to the screen they were on (not reset to the dashboard).
+- [x] AC7: Sound effects (if `SoundService` is enabled) play tier-appropriate audio during the transition.
 
 #### Subtasks
 
@@ -1014,7 +1014,7 @@
 **ID:** BUG-026  
 **Priority:** P2  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** user upgrading to a specific tier,  
 **I want** the celebration card to have a unique design that reflects that tier's personality,  
@@ -1022,12 +1022,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: **Free → Pro:** Card theme is "Ascent". Background: blue-to-cyan gradient. Icon: rocket launching. Tagline: "Your journey accelerates!"
-- [ ] AC2: **→ Elite:** Card theme is "Mastery". Background: purple-to-pink gradient. Icon: diamond or crown. Tagline: "You've joined the elite!"
-- [ ] AC3: **→ Royal:** Card theme is "Coronation". Background: gold-to-rose gradient. Icon: crown with sparkles. Tagline: "The kingdom awaits!"
-- [ ] AC4: **→ Trial:** Card theme is "First Step". Background: amber warmth gradient. Icon: gift box opening. Tagline: "14 days of everything — enjoy!"
-- [ ] AC5: Each card has a unique particle effect matching its theme (rockets emit fire particles, crowns emit gold sparkles, gifts emit confetti).
-- [ ] AC6: Cards animate in with a spring entrance: scale 0.3→1.0, opacity 0→1, rotation -5°→0° over 0.6s.
+- [x] AC1: **Free → Pro:** Card theme is "Ascent". Background: blue-to-cyan gradient. Icon: rocket launching. Tagline: "Your journey accelerates!"
+- [x] AC2: **→ Elite:** Card theme is "Mastery". Background: purple-to-pink gradient. Icon: diamond or crown. Tagline: "You've joined the elite!"
+- [x] AC3: **→ Royal:** Card theme is "Coronation". Background: gold-to-rose gradient. Icon: crown with sparkles. Tagline: "The kingdom awaits!"
+- [x] AC4: **→ Trial:** Card theme is "First Step". Background: amber warmth gradient. Icon: gift box opening. Tagline: "14 days of everything — enjoy!"
+- [x] AC5: Each card has a unique particle effect matching its theme (rockets emit fire particles, crowns emit gold sparkles, gifts emit confetti).
+- [x] AC6: Cards animate in with a spring entrance: scale 0.3→1.0, opacity 0→1, rotation -5°→0° over 0.6s.
 
 #### Subtasks
 
