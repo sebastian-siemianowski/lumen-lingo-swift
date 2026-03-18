@@ -320,6 +320,11 @@ extension AppStrings {
         offlineModeInfo: "Bei aktiviertem Offline-Modus sind Inhalte ohne Netzwerkverbindung verfügbar. Pro und höhere Stufen können überall lernen.",
         offlineModeDisabled: "Offline-Modus deaktiviert",
         offlineModeDisabledDetail: "Ihre Stufe beinhaltet keinen Offline-Zugriff mehr",
+        offlineModeActive: "Offline-Modus aktiv",
+        offlineModeIncluded: "Ihr Abonnement beinhaltet Offline-Zugriff",
+        onlineOnly: "Nur online",
+        offlineModeActivated: "Offline-Modus aktiviert",
+        offlineModeActivatedDetail: "Offline-Zugriff ist jetzt verfügbar",
 
         // MARK: - Upgrade Prompts
         unlockPremium: "Premium freischalten",

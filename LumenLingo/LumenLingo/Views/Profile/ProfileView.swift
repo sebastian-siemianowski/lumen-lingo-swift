@@ -107,7 +107,7 @@ struct ProfileView: View {
                     .padding(.top, 24)
 
                 #if DEBUG
-                debugPanelLink
+                qaPanelLink
                     .padding(.horizontal, 16)
                     .padding(.top, 16)
                 #endif
@@ -730,12 +730,12 @@ struct ProfileView: View {
         }
     }
 
-    // MARK: - Debug Panel (DEBUG only)
+    // MARK: - QA Panel (DEBUG only)
 
     #if DEBUG
-    private var debugPanelLink: some View {
+    private var qaPanelLink: some View {
         NavigationLink {
-            TierDebugView()
+            QAPanelView()
         } label: {
             GlassPanelWrapper {
                 HStack(spacing: 10) {
@@ -743,7 +743,7 @@ struct ProfileView: View {
                         .font(.system(size: 16))
                         .foregroundStyle(.orange)
 
-                    Text("Tier Debug Panel")
+                    Text("QA Panel")
                         .font(.system(size: 14, weight: .semibold))
                         .foregroundStyle(isDark ? .white.opacity(0.7) : .primary)
 

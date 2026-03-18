@@ -319,6 +319,11 @@ extension AppStrings {
         offlineModeInfo: "オフラインモードを有効にすると、ネットワーク接続なしでコンテンツが利用可能になります。Pro以上のプランではどこでも学習できます。",
         offlineModeDisabled: "オフラインモードが無効",
         offlineModeDisabledDetail: "お使いのプランにはオフラインアクセスが含まれなくなりました",
+        offlineModeActive: "オフラインモードが有効",
+        offlineModeIncluded: "サブスクリプションにオフラインアクセスが含まれています",
+        onlineOnly: "オンラインのみ",
+        offlineModeActivated: "オフラインモードが有効化されました",
+        offlineModeActivatedDetail: "オフラインアクセスが利用可能になりました",
 
         // MARK: - Upgrade Prompts
         unlockPremium: "プレミアムを解除",

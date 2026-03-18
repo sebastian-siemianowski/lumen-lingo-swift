@@ -326,6 +326,11 @@ struct AppStrings {
     let offlineModeInfo: String
     let offlineModeDisabled: String
     let offlineModeDisabledDetail: String
+    let offlineModeActive: String
+    let offlineModeIncluded: String
+    let onlineOnly: String
+    let offlineModeActivated: String
+    let offlineModeActivatedDetail: String
 
     // MARK: - Upgrade Prompts
     let unlockPremium: String

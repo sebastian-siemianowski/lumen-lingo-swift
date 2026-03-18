@@ -320,6 +320,11 @@ extension AppStrings {
         offlineModeInfo: "Cuando el modo sin conexión está activado, el contenido está disponible sin red. Los niveles Pro y superiores pueden aprender en cualquier lugar.",
         offlineModeDisabled: "Modo sin conexión desactivado",
         offlineModeDisabledDetail: "Tu nivel ya no incluye acceso sin conexión",
+        offlineModeActive: "Modo sin conexión activo",
+        offlineModeIncluded: "Tu suscripción incluye acceso sin conexión",
+        onlineOnly: "Solo en línea",
+        offlineModeActivated: "Modo sin conexión activado",
+        offlineModeActivatedDetail: "El acceso sin conexión ya está disponible",
 
         // MARK: - Upgrade Prompts
         unlockPremium: "Desbloquear Premium",

@@ -1,20 +1,27 @@
 #if DEBUG
 import SwiftUI
+import SwiftData
 
-// MARK: - Tier Debug Panel
+// MARK: - QA Panel
 
 /// Debug-only panel for switching tiers, toggling feature overrides,
 /// and inspecting practice time state. Accessible from Settings.
-struct TierDebugView: View {
+struct QAPanelView: View {
     @Environment(TierManager.self) private var tierManager
     @Environment(PracticeTimeTracker.self) private var practiceTracker
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
+
+    @Query private var profiles: [UserProfile]
+    @Query private var languagePrefs: [LanguagePreference]
 
     @State private var trialDateOverride: Date = .now
     @State private var showResetConfirmation = false
+    @State private var showClearProgressConfirmation = false
     @State private var refreshToggle = false
 
+    private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
     var body: some View {
@@ -25,6 +32,16 @@ struct TierDebugView: View {
                 tierSwitcher
 
                 featureOverrides
+
+                networkSimulation
+
+                contentSimulation
+
+                languagePairSection
+
+                stateInspector
+
+                performanceSection
 
                 practiceTimeStatus
 
@@ -40,7 +57,7 @@ struct TierDebugView: View {
             .padding(.top, 12)
         }
         .cosmicBackground()
-        .navigationTitle("Tier Debug")
+        .navigationTitle("QA Panel")
         .navigationBarTitleDisplayMode(.inline)
     }
 
@@ -60,7 +77,7 @@ struct TierDebugView: View {
                     )
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Feature Flag Inspector")
+                    Text("QA Panel")
                         .font(.system(size: 16, weight: .bold, design: .rounded))
                         .foregroundStyle(isDark ? .white : .primary)
 
@@ -289,6 +306,76 @@ struct TierDebugView: View {
         switch status {
         case .natural(let enabled):    return enabled ? "ENABLED" : "DISABLED"
         case .overridden(let enabled): return enabled ? "OVERRIDE: ON" : "OVERRIDE: OFF"
+        }
+    }
+
+    // MARK: - Network Simulation
+
+    private var networkSimulation: some View {
+        GlassPanelWrapper {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack {
+                    sectionHeader(icon: "wifi.exclamationmark", title: "Network Simulation", color: .red)
+
+                    Spacer()
+
+                    if DebugNetworkController.shared.isSimulating {
+                        Text(DebugNetworkController.shared.simulationMode.statusLabel)
+                            .font(.system(size: 9, weight: .heavy, design: .rounded))
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 3)
+                            .background(Capsule().fill(.red.opacity(0.2)))
+                            .overlay(Capsule().strokeBorder(.red.opacity(0.4), lineWidth: 1))
+                            .foregroundStyle(.red)
+                    }
+                }
+
+                LazyVGrid(columns: [
+                    GridItem(.flexible()),
+                    GridItem(.flexible()),
+                ], spacing: 8) {
+                    ForEach(NetworkSimulationMode.allCases, id: \.self) { mode in
+                        Button {
+                            withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
+                                DebugNetworkController.shared.simulationMode = mode
+                            }
+                        } label: {
+                            Text(mode.rawValue)
+                                .font(.system(size: 12, weight: .semibold, design: .rounded))
+                                .foregroundStyle(DebugNetworkController.shared.simulationMode == mode
+                                    ? .white
+                                    : (isDark ? .white.opacity(0.6) : .primary))
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 8)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                                        .fill(DebugNetworkController.shared.simulationMode == mode
+                                            ? modeColor(mode).opacity(0.7)
+                                            : (isDark ? .white.opacity(0.06) : .black.opacity(0.04)))
+                                )
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                                        .strokeBorder(DebugNetworkController.shared.simulationMode == mode
+                                            ? modeColor(mode).opacity(0.5)
+                                            : .clear, lineWidth: 1)
+                                )
+                        }
+                    }
+                }
+
+                Text("Affects all network calls. Resets on relaunch.")
+                    .font(.system(size: 10))
+                    .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
+            }
+        }
+    }
+
+    private func modeColor(_ mode: NetworkSimulationMode) -> Color {
+        switch mode {
+        case .normal: return .green
+        case .offline: return .red
+        case .slow: return .yellow
+        case .intermittent: return .orange
         }
     }
 
@@ -525,8 +612,277 @@ struct TierDebugView: View {
                 } message: {
                     Text("All feature overrides will be removed and features will revert to tier defaults.")
                 }
+
+                Button {
+                    showClearProgressConfirmation = true
+                } label: {
+                    debugActionButton(label: "Clear All Progress", color: .red)
+                }
+                .buttonStyle(.plain)
+                .confirmationDialog("Clear All Progress?", isPresented: $showClearProgressConfirmation, titleVisibility: .visible) {
+                    Button("Delete All Records", role: .destructive) {
+                        clearAllProgress()
+                    }
+                    Button("Cancel", role: .cancel) {}
+                } message: {
+                    Text("This will delete all game progress records. This action cannot be undone.")
+                }
+
+                Button {
+                    resetOnboarding()
+                } label: {
+                    debugActionButton(label: "Reset Onboarding", color: .orange)
+                }
+                .buttonStyle(.plain)
+
+                Button {
+                    generateSampleData()
+                } label: {
+                    debugActionButton(label: "Generate Sample Data", color: .blue)
+                }
+                .buttonStyle(.plain)
             }
         }
+    }
+
+    private func clearAllProgress() {
+        do {
+            try modelContext.delete(model: GameProgressRecord.self)
+            if let profile {
+                profile.totalXP = 0
+                profile.dailyStreak = 0
+                profile.totalActiveDays = 0
+                profile.lastActivityDate = nil
+            }
+        } catch {
+            print("Debug: Failed to clear progress: \(error)")
+        }
+    }
+
+    private func resetOnboarding() {
+        UserDefaults.standard.set(false, forKey: "hasSeenTierOnboarding")
+    }
+
+    private func generateSampleData() {
+        let gameTypes: [GameType] = [.flashCards, .grammar, .wordBuilder]
+        let categories = [
+            "greetings_basics", "family_members", "food_and_drinks",
+            "colors_and_shapes", "daily_routines", "travel_essentials"
+        ]
+        let sourceLang = languagePrefs.first?.sourceLanguage ?? "english"
+        let targetLang = languagePrefs.first?.targetLanguage ?? "spanish"
+
+        for i in 0..<50 {
+            let record = GameProgressRecord(
+                gameType: gameTypes[i % gameTypes.count],
+                level: categories[i % categories.count],
+                score: Int.random(in: 400...1000),
+                correctAnswers: Int.random(in: 5...10),
+                totalQuestions: 10,
+                timeSpent: Int.random(in: 60...300),
+                sourceLanguage: sourceLang,
+                targetLanguage: targetLang,
+                createdDate: Date.now.addingTimeInterval(-Double(i) * 86400 * 0.5)
+            )
+            modelContext.insert(record)
+        }
+
+        if let profile {
+            profile.totalXP += 5000
+            profile.totalActiveDays += 25
+            profile.dailyStreak = 7
+            profile.lastActivityDate = Date.now
+        }
+    }
+
+    // MARK: - Content Simulation
+
+    private var contentSimulation: some View {
+        GlassPanelWrapper {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack {
+                    sectionHeader(icon: "doc.text.magnifyingglass", title: "Content Simulation", color: .purple)
+
+                    Spacer()
+
+                    if DebugContentController.shared.isSimulating {
+                        Text("ACTIVE")
+                            .font(.system(size: 8, weight: .heavy, design: .rounded))
+                            .tracking(0.5)
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 3)
+                            .background(Capsule().fill(.purple.opacity(0.2)))
+                            .overlay(Capsule().strokeBorder(.purple.opacity(0.4), lineWidth: 1))
+                            .foregroundStyle(.purple)
+                    }
+                }
+
+                Toggle(isOn: Bindable(DebugContentController.shared).forceEmpty) {
+                    VStack(alignment: .leading, spacing: 1) {
+                        Text("Force Empty Content")
+                            .font(.system(size: 13, weight: .medium))
+                            .foregroundStyle(isDark ? .white : .primary)
+                        Text("ContentLoader returns empty arrays")
+                            .font(.system(size: 10))
+                            .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+                    }
+                }
+                .tint(.purple)
+
+                Toggle(isOn: Bindable(DebugContentController.shared).forceSlowLoad) {
+                    VStack(alignment: .leading, spacing: 1) {
+                        Text("Force Slow Load")
+                            .font(.system(size: 13, weight: .medium))
+                            .foregroundStyle(isDark ? .white : .primary)
+                        Text("3s delay on every content load")
+                            .font(.system(size: 10))
+                            .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+                    }
+                }
+                .tint(.purple)
+            }
+        }
+    }
+
+    // MARK: - Language Pair Section
+
+    private var languagePairSection: some View {
+        GlassPanelWrapper {
+            VStack(alignment: .leading, spacing: 12) {
+                sectionHeader(icon: "globe", title: "Language Pair", color: .blue)
+
+                if let pref = languagePrefs.first {
+                    Text("\(pref.sourceLanguage) → \(pref.targetLanguage)")
+                        .font(.system(size: 12, weight: .medium, design: .monospaced))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
+                }
+
+                let targets = SupportedLanguage.allCases.filter { $0 != .english }
+
+                LazyVGrid(columns: [
+                    GridItem(.flexible()),
+                    GridItem(.flexible()),
+                    GridItem(.flexible()),
+                    GridItem(.flexible()),
+                ], spacing: 8) {
+                    ForEach(targets) { lang in
+                        let isActive = languagePrefs.first?.targetLanguage == lang.rawValue
+                        Button {
+                            switchLanguagePair(to: lang)
+                        } label: {
+                            VStack(spacing: 2) {
+                                Text(lang.flag)
+                                    .font(.system(size: 20))
+                                Text(lang.rawValue.prefix(3).uppercased())
+                                    .font(.system(size: 8, weight: .bold, design: .monospaced))
+                                    .foregroundStyle(isActive ? .white : (isDark ? .white.opacity(0.5) : .secondary))
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 6)
+                            .background(
+                                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                                    .fill(isActive ? .blue.opacity(0.6) : (isDark ? .white.opacity(0.06) : .black.opacity(0.04)))
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                                    .strokeBorder(isActive ? .blue.opacity(0.5) : .clear, lineWidth: 1)
+                            )
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private func switchLanguagePair(to target: SupportedLanguage) {
+        if let pref = languagePrefs.first {
+            pref.sourceLanguage = SupportedLanguage.english.rawValue
+            pref.targetLanguage = target.rawValue
+        } else {
+            let pref = LanguagePreference()
+            pref.sourceLanguage = SupportedLanguage.english.rawValue
+            pref.targetLanguage = target.rawValue
+            modelContext.insert(pref)
+        }
+        ContentLoader.shared.clearCache()
+    }
+
+    // MARK: - State Inspector
+
+    private var stateInspector: some View {
+        GlassPanelWrapper {
+            VStack(alignment: .leading, spacing: 12) {
+                sectionHeader(icon: "magnifyingglass", title: "State Inspector", color: .teal)
+
+                VStack(spacing: 6) {
+                    stateRow("Tier", value: tierManager.currentTier.displayName)
+                    stateRow("XP", value: "\(profile?.totalXP ?? 0)")
+                    stateRow("Streak", value: "\(profile?.dailyStreak ?? 0) days")
+                    stateRow("Active Days", value: "\(profile?.totalActiveDays ?? 0)")
+                    stateRow("Practice Used", value: formatTime(practiceTracker.usedSecondsToday))
+                    stateRow("Practice Remaining", value: practiceTracker.isLimited(for: tierManager.currentTier)
+                        ? formatTime(max(0, PracticeTimeTracker.dailyLimitSeconds - practiceTracker.usedSecondsToday))
+                        : "Unlimited")
+                    stateRow("Offline Mode", value: profile?.offlineModeEnabled == true ? "Enabled" : "Disabled")
+                    stateRow("Breathing Orbs", value: profile?.breathingOrbsEnabled == true ? "On" : "Off")
+                    stateRow("Quantum Flow", value: profile?.quantumFlowEnabled == true ? "On" : "Off")
+                    stateRow("Nebula Drift", value: profile?.nebulaDriftEnabled == true ? "On" : "Off")
+                }
+            }
+        }
+    }
+
+    private func stateRow(_ label: String, value: String) -> some View {
+        HStack {
+            Text(label)
+                .font(.system(size: 12, weight: .medium))
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+            Spacer()
+            Text(value)
+                .font(.system(size: 12, weight: .semibold, design: .monospaced))
+                .foregroundStyle(isDark ? .white.opacity(0.8) : .primary)
+        }
+    }
+
+    // MARK: - Performance
+
+    private var performanceSection: some View {
+        GlassPanelWrapper {
+            VStack(alignment: .leading, spacing: 12) {
+                sectionHeader(icon: "gauge.with.dots.needle.33percent", title: "Performance", color: .green)
+
+                HStack(spacing: 20) {
+                    VStack(spacing: 4) {
+                        Text("\(PerformanceMonitor.shared.fps)")
+                            .font(.system(size: 28, weight: .bold, design: .monospaced))
+                            .foregroundStyle(fpsColor)
+                        Text("FPS")
+                            .font(.system(size: 10, weight: .medium))
+                            .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+                    }
+                    .frame(maxWidth: .infinity)
+
+                    VStack(spacing: 4) {
+                        Text(String(format: "%.0f", PerformanceMonitor.shared.memoryMB))
+                            .font(.system(size: 28, weight: .bold, design: .monospaced))
+                            .foregroundStyle(isDark ? .white : .primary)
+                        Text("MB RAM")
+                            .font(.system(size: 10, weight: .medium))
+                            .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+            }
+        }
+        .onAppear { PerformanceMonitor.shared.start() }
+        .onDisappear { PerformanceMonitor.shared.stop() }
+    }
+
+    private var fpsColor: Color {
+        let fps = PerformanceMonitor.shared.fps
+        if fps >= 55 { return .green }
+        if fps >= 30 { return .yellow }
+        return .red
     }
 
     // MARK: - Helpers

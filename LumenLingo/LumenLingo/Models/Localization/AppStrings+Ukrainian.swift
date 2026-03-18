@@ -319,6 +319,11 @@ extension AppStrings {
         offlineModeInfo: "Коли офлайн-режим увімкнено, контент доступний без мережевого підключення. Плани Pro та вище дозволяють навчатися будь-де.",
         offlineModeDisabled: "Офлайн-режим вимкнено",
         offlineModeDisabledDetail: "Ваш план більше не включає офлайн-доступ",
+        offlineModeActive: "Офлайн-режим активний",
+        offlineModeIncluded: "Ваша підписка включає офлайн-доступ",
+        onlineOnly: "Тільки онлайн",
+        offlineModeActivated: "Офлайн-режим активовано",
+        offlineModeActivatedDetail: "Офлайн-доступ тепер доступний",
 
         // MARK: - Upgrade Prompts
         unlockPremium: "Розблокувати Premium",

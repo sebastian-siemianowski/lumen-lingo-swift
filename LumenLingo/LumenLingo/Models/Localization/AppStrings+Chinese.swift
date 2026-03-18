@@ -319,6 +319,11 @@ extension AppStrings {
         offlineModeInfo: "启用离线模式后，无需网络连接即可使用内容。Pro及以上等级可随时随地学习。",
         offlineModeDisabled: "离线模式已禁用",
         offlineModeDisabledDetail: "您的等级不再包含离线访问",
+        offlineModeActive: "离线模式已激活",
+        offlineModeIncluded: "您的订阅包含离线访问",
+        onlineOnly: "仅在线",
+        offlineModeActivated: "离线模式已启用",
+        offlineModeActivatedDetail: "离线访问现已可用",
 
         // MARK: - Upgrade Prompts
         unlockPremium: "解锁高级版",

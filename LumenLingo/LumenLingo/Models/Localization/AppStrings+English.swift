@@ -319,6 +319,11 @@ extension AppStrings {
         offlineModeInfo: "When offline mode is enabled, content is available without a network connection. Pro and above tiers can learn anywhere.",
         offlineModeDisabled: "Offline Mode Disabled",
         offlineModeDisabledDetail: "Your tier no longer includes offline access",
+        offlineModeActive: "Offline Mode Active",
+        offlineModeIncluded: "Your subscription includes offline access",
+        onlineOnly: "Online Only",
+        offlineModeActivated: "Offline Mode Activated",
+        offlineModeActivatedDetail: "Offline access is now available",
 
         // MARK: - Upgrade Prompts
         unlockPremium: "Unlock Premium",

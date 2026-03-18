@@ -1134,7 +1134,7 @@ final class TierManagerTests: XCTestCase {
         XCTAssertTrue(profile.offlineModeEnabled)
     }
 
-    func testOfflineModeUpgradeDoesNotAutoEnable() {
+    func testOfflineModeUpgradeAutoEnables() {
         let manager = TierManager()
         let profile = UserProfile()
         profile.selectedTierId = "free"
@@ -1143,11 +1143,63 @@ final class TierManagerTests: XCTestCase {
 
         manager.selectTier("pro", profile: profile)
 
-        XCTAssertFalse(profile.offlineModeEnabled)
+        XCTAssertTrue(profile.offlineModeEnabled)
     }
 
     func testOfflineModeNotificationName() {
         XCTAssertEqual(Notification.Name.offlineModeAutoDisabled.rawValue, "offlineModeAutoDisabled")
+    }
+
+    func testOfflineModeAutoEnabledNotificationName() {
+        XCTAssertEqual(Notification.Name.offlineModeAutoEnabled.rawValue, "offlineModeAutoEnabled")
+    }
+
+    func testOfflineModeAutoEnableOnEliteUpgrade() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "free"
+        manager.syncFromProfile(profile)
+        profile.offlineModeEnabled = false
+
+        manager.selectTier("elite", profile: profile)
+
+        XCTAssertTrue(profile.offlineModeEnabled)
+    }
+
+    func testOfflineModeAutoEnableOnRoyalUpgrade() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "free"
+        manager.syncFromProfile(profile)
+        profile.offlineModeEnabled = false
+
+        manager.selectTier("royal", profile: profile)
+
+        XCTAssertTrue(profile.offlineModeEnabled)
+    }
+
+    func testOfflineModeAutoEnableOnTrialUpgrade() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "free"
+        manager.syncFromProfile(profile)
+        profile.offlineModeEnabled = false
+
+        manager.selectTier("trial", profile: profile)
+
+        XCTAssertTrue(profile.offlineModeEnabled)
+    }
+
+    func testOfflineModeStaysEnabledIfAlreadyOn() {
+        let manager = TierManager()
+        let profile = UserProfile()
+        profile.selectedTierId = "pro"
+        manager.syncFromProfile(profile)
+        profile.offlineModeEnabled = true
+
+        manager.selectTier("elite", profile: profile)
+
+        XCTAssertTrue(profile.offlineModeEnabled)
     }
 
     func testOfflineModeDefaultIsFalse() {

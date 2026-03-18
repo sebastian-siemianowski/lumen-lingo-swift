@@ -49,6 +49,8 @@ struct ContentView: View {
                 LumenLingoNavBar()
             }
 
+            networkSimulationBanner
+
             TabView(selection: $selectedTab) {
                 // MARK: Dashboard Tab
                 NavigationStack(path: $navigationPath) {
@@ -357,6 +359,27 @@ struct ContentView: View {
                 ]
             )
         }
+    }
+
+    // MARK: - Network Simulation Banner
+
+    @ViewBuilder
+    private var networkSimulationBanner: some View {
+        #if DEBUG
+        if DebugNetworkController.shared.isSimulating {
+            HStack(spacing: 6) {
+                Image(systemName: "antenna.radiowaves.left.and.right.slash")
+                    .font(.system(size: 10, weight: .bold))
+                Text(DebugNetworkController.shared.simulationMode.bannerLabel)
+                    .font(.system(size: 10, weight: .heavy, design: .monospaced))
+                    .tracking(0.5)
+            }
+            .foregroundStyle(.white)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 4)
+            .background(.red.opacity(0.85))
+        }
+        #endif
     }
 }
 

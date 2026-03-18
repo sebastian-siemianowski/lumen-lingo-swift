@@ -3,9 +3,9 @@ import SwiftData
 
 // MARK: - Connectivity Settings View
 
-/// Offline mode toggle and connectivity status for the Sync tab.
-/// Free tier: toggle visible but disabled with PRO badge + upgrade prompt.
-/// Pro+: toggle enabled to mark the app for offline use.
+/// Offline mode status and connectivity info for the Sync tab.
+/// Pro+ tiers: offline mode is always active — shown as a success status card.
+/// Free tier: informational card with upgrade prompt — no toggle needed.
 struct ConnectivitySettingsView: View {
     @Query private var profiles: [UserProfile]
     @Environment(\.colorScheme) private var colorScheme
@@ -14,6 +14,7 @@ struct ConnectivitySettingsView: View {
     @Environment(NetworkMonitor.self) private var networkMonitor
     @State private var showMembership = false
     @State private var showDowngradeToast = false
+    @State private var showUpgradeToast = false
 
     private var L: AppStrings { localization.strings }
     private var profile: UserProfile? { profiles.first }
@@ -22,18 +23,22 @@ struct ConnectivitySettingsView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack(spacing: 20) {
-                // Connectivity status
                 connectivityBadge
 
-                // Offline mode toggle
-                offlineModeSection
+                offlineStatusCard
+                    .animation(.spring(response: 0.5, dampingFraction: 0.85), value: tierManager.offlineModeAvailable)
 
-                // Info footer
                 infoFooter
             }
 
             if showDowngradeToast {
                 downgradeToast
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                    .padding(.bottom, 16)
+            }
+
+            if showUpgradeToast {
+                upgradeToast
                     .transition(.move(edge: .bottom).combined(with: .opacity))
                     .padding(.bottom, 16)
             }
@@ -45,6 +50,16 @@ struct ConnectivitySettingsView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
                 withAnimation(.easeOut(duration: 0.3)) {
                     showDowngradeToast = false
+                }
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .offlineModeAutoEnabled)) { _ in
+            withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
+                showUpgradeToast = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                withAnimation(.easeOut(duration: 0.3)) {
+                    showUpgradeToast = false
                 }
             }
         }
@@ -87,96 +102,131 @@ struct ConnectivitySettingsView: View {
         )
     }
 
-    // MARK: - Offline Mode Section
+    // MARK: - Offline Status Card
 
-    private var offlineModeSection: some View {
-        VStack(spacing: 16) {
-            HStack(spacing: 12) {
-                Image(systemName: "arrow.down.circle.fill")
+    @ViewBuilder
+    private var offlineStatusCard: some View {
+        if tierManager.offlineModeAvailable {
+            activeStatusCard
+        } else {
+            lockedStatusCard
+        }
+    }
+
+    // MARK: - Active Status Card (Pro+)
+
+    private var activeStatusCard: some View {
+        HStack(spacing: 12) {
+            ZStack {
+                Circle()
+                    .fill(.green.opacity(0.15))
+                    .frame(width: 40, height: 40)
+
+                Image(systemName: "checkmark.shield.fill")
                     .font(.system(size: 20))
                     .foregroundStyle(
                         LinearGradient(
-                            colors: [.teal, .cyan],
+                            colors: [.green, .mint],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
                     )
-                    .frame(width: 24, height: 24)
+            }
 
-                VStack(alignment: .leading, spacing: 2) {
-                    HStack(spacing: 6) {
-                        Text(L.offlineMode)
-                            .font(.system(size: 17, weight: .semibold))
-                            .foregroundStyle(isDark ? .white : .caribbeanInk)
+            VStack(alignment: .leading, spacing: 3) {
+                Text(L.offlineModeActive)
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
 
-                        if !tierManager.offlineModeAvailable {
-                            PremiumFeatureBadge(tier: .pro, style: .outlined)
-                                .scaleEffect(0.75)
-                        }
-                    }
+                Text(L.offlineModeIncluded)
+                    .font(.system(size: 13))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+            }
 
-                    Text(tierManager.offlineModeAvailable
-                         ? L.offlineModeDescription
-                         : L.offlineModeLockedDescription)
+            Spacer()
+        }
+        .padding(16)
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(.green.opacity(isDark ? 0.06 : 0.04))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                        .strokeBorder(.green.opacity(0.2), lineWidth: 0.5)
+                )
+        )
+    }
+
+    // MARK: - Locked Status Card (Free)
+
+    private var lockedStatusCard: some View {
+        VStack(spacing: 14) {
+            HStack(spacing: 12) {
+                ZStack {
+                    Circle()
+                        .fill(.orange.opacity(0.12))
+                        .frame(width: 40, height: 40)
+
+                    Image(systemName: "wifi.exclamationmark")
+                        .font(.system(size: 18))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.orange, .yellow],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                }
+
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(L.onlineOnly)
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+
+                    Text(L.offlineModeLockedDescription)
                         .font(.system(size: 13))
                         .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
-                        .lineLimit(2)
-                        .minimumScaleFactor(0.8)
                 }
 
                 Spacer()
-
-                if tierManager.offlineModeAvailable {
-                    PremiumToggle(
-                        isOn: profile?.offlineModeEnabled ?? false,
-                        enabledColor: .teal,
-                        enabledIcon: "checkmark",
-                        disabledIcon: "xmark"
-                    ) {
-                        guard let profile else { return }
-                        HapticsService.shared.toggleSwitch()
-                        if profile.offlineModeEnabled {
-                            AudioService.shared.playToggleOff()
-                        } else {
-                            AudioService.shared.playToggleOn()
-                        }
-                        withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
-                            profile.offlineModeEnabled.toggle()
-                        }
-                    }
-                } else {
-                    // Locked toggle — tapping opens upgrade prompt
-                    Button {
-                        HapticsService.shared.buttonPress()
-                        AudioService.shared.playButtonTap()
-                        showMembership = true
-                    } label: {
-                        PremiumToggle(
-                            isOn: false,
-                            enabledColor: .teal,
-                            disabledIcon: "lock.fill"
-                        ) { }
-                    }
-                    .disabled(true)
-                    .opacity(0.5)
-                    .overlay {
-                        // Invisible hit area to intercept taps
-                        Color.clear
-                            .contentShape(Rectangle())
-                            .onTapGesture {
-                                HapticsService.shared.buttonPress()
-                                AudioService.shared.playButtonTap()
-                                showMembership = true
-                            }
-                    }
-                }
             }
 
-            // Free tier hint
-            if !tierManager.offlineModeAvailable && !networkMonitor.isConnected {
+            Button {
+                HapticsService.shared.buttonPress()
+                AudioService.shared.playButtonTap()
+                showMembership = true
+            } label: {
+                HStack(spacing: 6) {
+                    Image(systemName: "sparkles")
+                        .font(.system(size: 12, weight: .semibold))
+                    Text(L.viewPlans)
+                        .font(.system(size: 14, weight: .semibold))
+                }
+                .foregroundStyle(.white)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 10)
+                .background(
+                    LinearGradient(
+                        colors: [.teal, .cyan],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+            }
+
+            if !networkMonitor.isConnected {
                 freeOfflineWarning
             }
         }
+        .padding(16)
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(.orange.opacity(isDark ? 0.04 : 0.03))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                        .strokeBorder(.orange.opacity(0.15), lineWidth: 0.5)
+                )
+        )
     }
 
     // MARK: - Free Offline Warning
@@ -247,6 +297,38 @@ struct ConnectivitySettingsView: View {
                 .overlay(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
                         .strokeBorder(.orange.opacity(0.2), lineWidth: 0.5)
+                )
+        )
+        .shadow(color: .black.opacity(0.15), radius: 12, y: 4)
+        .padding(.horizontal)
+    }
+
+    // MARK: - Upgrade Toast
+
+    private var upgradeToast: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "checkmark.circle.fill")
+                .font(.system(size: 16, weight: .semibold))
+                .foregroundStyle(.green)
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text(L.offlineModeActivated)
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+                Text(L.offlineModeActivatedDetail)
+                    .font(.system(size: 12))
+                    .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+            }
+
+            Spacer()
+        }
+        .padding(14)
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(.ultraThinMaterial)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                        .strokeBorder(.green.opacity(0.2), lineWidth: 0.5)
                 )
         )
         .shadow(color: .black.opacity(0.15), radius: 12, y: 4)

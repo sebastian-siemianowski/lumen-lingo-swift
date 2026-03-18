@@ -12,6 +12,12 @@ struct LumenLingoApp: App {
     @State private var networkMonitor = NetworkMonitor()
     @State private var upgradePromptManager = UpgradePromptManager()
 
+    init() {
+        #if DEBUG
+        URLProtocol.registerClass(DebugURLProtocol.self)
+        #endif
+    }
+
     private var debugBackgroundOnly: Bool {
         ProcessInfo.processInfo.environment["LL_DEBUG_BACKGROUND_ONLY"] == "1"
     }

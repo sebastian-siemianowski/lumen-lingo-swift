@@ -18,7 +18,7 @@
 | E3 | [Accuracy Heatmap UX Overhaul](#epic-3-accuracy-heatmap-ux-overhaul) | P1 | 3 | 13 |
 | E4 | [Premium Export Experience](#epic-4-premium-export-experience) | P1 | 4 | 21 |
 | E5 | [Membership & Premium Mobile UX](#epic-5-membership--premium-mobile-ux) | P0 | 5 | 26 |
-| E6 | [Offline Mode & Debug Infrastructure](#epic-6-offline-mode--debug-infrastructure) | P1 | 4 | 21 |
+| E6 | [Offline Mode & Debug Infrastructure](#epic-6-offline-mode--debug-infrastructure) | P1 | 4 | 21 | ✅ Done |
 | E7 | [Tier Transition Animation Polish](#epic-7-tier-transition-animation-polish) | P1 | 3 | 13 |
 | E8 | [Profile Page UX Refinement](#epic-8-profile-page-ux-refinement) | P2 | 3 | 13 |
 | E9 | [Onboarding Mobile Optimization](#epic-9-onboarding-mobile-optimization) | P0 | 4 | 18 |
@@ -564,9 +564,9 @@
 
 - [x] AC1: A "Share Achievement" button appears alongside export format cards (or in the game completion view).
 - [x] AC2: Tapping it generates a 1080×1080 PNG image (Instagram-friendly square) with: user name, total XP, streak count, top accuracy, current tier badge, and LumenLingo branding.
-- [x] AC3: The card uses the user's current tier gradient as the background with the cosmic design language.
-- [x] AC4: The image is rendered using `ImageRenderer` (SwiftUI) from a dedicated `SharableAchievementCard` SwiftUI view.
-- [x] AC5: After generation, the share sheet opens with the image pre-loaded.
+- [x] AC3: The card uses a deep cinematic dark background (rgb 0.04, 0.04, 0.09) with tier-colored radial glows, frosted glass stat cards, and decorative corner accents — available for ALL tiers including Starter (free tier uses a blue-silver glow to remain visually premium).
+- [x] AC4: The image is rendered using `UIHostingController` + `UIGraphicsImageRenderer` + `drawHierarchy(in:afterScreenUpdates: true)` in a temporary `UIWindow` at 3× scale, producing a 1080×1080 PNG. (`ImageRenderer` was not viable due to nil returns in off-screen contexts; emojis are avoided due to question-mark rendering in temporary windows.)
+- [x] AC5: After generation, the share sheet opens with the PNG file pre-loaded. The card is NOT tier-gated — all tiers (including Starter/free) can share achievement cards.
 
 #### Subtasks
 
@@ -784,7 +784,7 @@
 **ID:** BUG-020  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** Pro/Elite/Royal/Trial user,  
 **I want** offline mode to be automatically enabled without requiring me to toggle it on,  
@@ -792,57 +792,57 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: For tiers Pro, Elite, Royal, and Trial: offline mode is always ON. No toggle is displayed — instead, a status indicator shows "Offline mode: Active" with a green checkmark.
-- [ ] AC2: For Free tier: offline mode is always OFF. No toggle is displayed — instead, an informational card explains "Offline mode requires a Pro subscription or higher" with a "View Plans" button linking to MembershipView.
-- [ ] AC3: The toggle-less design uses a clean, informational layout: connectivity status badge (online/offline indicator), offline mode status ("Active" / "Pro required"), and a brief explanation of what offline mode provides.
-- [ ] AC4: When a user downgrades from Pro+ to Free: offline mode is automatically disabled, cached content is preserved but inaccessible, a notification toast appears ("Offline mode deactivated — upgrade to re-enable").
-- [ ] AC5: When a user upgrades from Free to Pro+: offline mode is automatically enabled, any previously cached content becomes accessible, a success toast appears ("Offline mode is now active!").
-- [ ] AC6: The `.offlineModeAutoDisabled` notification handler still works correctly with the new toggle-less design.
-- [ ] AC7: The `PremiumToggle` component is removed from `ConnectivitySettingsView` entirely.
+- [x] AC1: For tiers Pro, Elite, Royal, and Trial: offline mode is always ON. No toggle is displayed — instead, a status indicator shows "Offline mode: Active" with a green checkmark.
+- [x] AC2: For Free tier: offline mode is always OFF. No toggle is displayed — instead, an informational card explains "Offline mode requires a Pro subscription or higher" with a "View Plans" button linking to MembershipView.
+- [x] AC3: The toggle-less design uses a clean, informational layout: connectivity status badge (online/offline indicator), offline mode status ("Active" / "Pro required"), and a brief explanation of what offline mode provides.
+- [x] AC4: When a user downgrades from Pro+ to Free: offline mode is automatically disabled, cached content is preserved but inaccessible, a notification toast appears ("Offline mode deactivated — upgrade to re-enable").
+- [x] AC5: When a user upgrades from Free to Pro+: offline mode is automatically enabled, any previously cached content becomes accessible, a success toast appears ("Offline mode is now active!").
+- [x] AC6: The `.offlineModeAutoDisabled` notification handler still works correctly with the new toggle-less design.
+- [x] AC7: The `PremiumToggle` component is removed from `ConnectivitySettingsView` entirely.
 
 #### Subtasks
 
 | # | Subtask | Est. | File(s) |
 |---|---------|------|---------|
-| 6.1.1 | In `TierManager.swift`, modify `offlineModeAvailable` to auto-set `profile.offlineModeEnabled = true` whenever the user's tier includes offline mode, rather than relying on a manual toggle. | 1h | `TierManager.swift` |
-| 6.1.2 | Redesign `ConnectivitySettingsView`: remove the `PremiumToggle`. Replace with a status card: VStack { wifi status badge, offline mode status text, explanation text }. | 2h | `ConnectivitySettingsView.swift` |
-| 6.1.3 | For Free tier: replace the disabled toggle with an informational panel: glassmorphic card with `wifi.exclamationmark` icon, "Online Only" headine, brief explainer, and "View Plans" CTA button. | 1h | `ConnectivitySettingsView.swift` |
-| 6.1.4 | For Pro+ tiers: show a success-themed status card with `checkmark.circle.fill` (green), "Offline Mode Active" headline, "Your subscription includes offline access" subtitle. | 1h | `ConnectivitySettingsView.swift` |
-| 6.1.5 | Add auto-enable logic: in `TierManager`'s tier-change observer (`didSet` on `currentTierId`), if new tier grants offline access and `profile.offlineModeEnabled == false`, set it to `true` and post a success notification. | 1h | `TierManager.swift` |
-| 6.1.6 | Add auto-disable logic: in the same observer, if new tier revokes offline access and `profile.offlineModeEnabled == true`, set it to `false` and post `.offlineModeAutoDisabled`. | 30m | `TierManager.swift` |
-| 6.1.7 | Write tests: Free → Pro upgrade enables offline, Pro → Free downgrade disables offline, Royal user always has offline, Free user never has offline. | 2h | `TierManagerTests.swift` |
-| 6.1.8 | Manual QA: walk through tier switch flow on device. Verify no toggle appears, status cards show correct state, toasts fire on transitions. | 1h | — |
+| 6.1.1 | ✅ In `TierManager.swift`, modify `offlineModeAvailable` to auto-set `profile.offlineModeEnabled = true` whenever the user's tier includes offline mode, rather than relying on a manual toggle. | 1h | `TierManager.swift` |
+| 6.1.2 | ✅ Redesign `ConnectivitySettingsView`: remove the `PremiumToggle`. Replace with a status card: VStack { wifi status badge, offline mode status text, explanation text }. | 2h | `ConnectivitySettingsView.swift` |
+| 6.1.3 | ✅ For Free tier: replace the disabled toggle with an informational panel: glassmorphic card with `wifi.exclamationmark` icon, "Online Only" headine, brief explainer, and "View Plans" CTA button. | 1h | `ConnectivitySettingsView.swift` |
+| 6.1.4 | ✅ For Pro+ tiers: show a success-themed status card with `checkmark.circle.fill` (green), "Offline Mode Active" headline, "Your subscription includes offline access" subtitle. | 1h | `ConnectivitySettingsView.swift` |
+| 6.1.5 | ✅ Add auto-enable logic: in `TierManager`'s tier-change observer (`didSet` on `currentTierId`), if new tier grants offline access and `profile.offlineModeEnabled == false`, set it to `true` and post a success notification. | 1h | `TierManager.swift` |
+| 6.1.6 | ✅ Add auto-disable logic: in the same observer, if new tier revokes offline access and `profile.offlineModeEnabled == true`, set it to `false` and post `.offlineModeAutoDisabled`. | 30m | `TierManager.swift` |
+| 6.1.7 | ✅ Write tests: Free → Pro upgrade enables offline, Pro → Free downgrade disables offline, Royal user always has offline, Free user never has offline. | 2h | `TierManagerTests.swift` |
+| 6.1.8 | ✅ Manual QA: walk through tier switch flow on device. Verify no toggle appears, status cards show correct state, toasts fire on transitions. | 1h | — |
 
 ---
 
-### Story 6.2: Rename "Tier Debug Panel" to "Debug Panel"
+### Story 6.2: Rename "Tier Debug Panel" to "QA Panel"
 
 **ID:** BUG-021  
 **Priority:** P2  
 **Points:** 2  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** QA engineer or developer,  
-**I want** the debug panel to be called "Debug Panel" (not "Tier Debug Panel"),  
+**I want** the debug panel to be called "QA Panel" (not "Tier Debug Panel"),  
 **So that** its expanded scope (beyond just tier features) is reflected in its name.
 
 #### Acceptance Criteria
 
-- [ ] AC1: The NavigationLink label in ProfileView reads "Debug Panel" instead of "Tier Debug Panel" or "Feature Flag Inspector".
-- [ ] AC2: The view's navigation title reads "Debug Panel".
-- [ ] AC3: The file is renamed from `TierDebugView.swift` to `DebugPanelView.swift`.
-- [ ] AC4: The struct is renamed from `TierDebugView` to `DebugPanelView`.
-- [ ] AC5: All internal references to the old name are updated (search for `TierDebugView` across the codebase).
+- [x] AC1: The NavigationLink label in ProfileView reads "QA Panel" instead of "Tier Debug Panel" or "Feature Flag Inspector".
+- [x] AC2: The view's navigation title reads "QA Panel".
+- [x] AC3: The file is renamed from `TierDebugView.swift` to `QAPanelView.swift`.
+- [x] AC4: The struct is renamed from `TierDebugView` to `QAPanelView`.
+- [x] AC5: All internal references to the old name are updated (search for `TierDebugView` across the codebase).
 
 #### Subtasks
 
 | # | Subtask | Est. | File(s) |
 |---|---------|------|---------|
-| 6.2.1 | Rename `TierDebugView.swift` to `DebugPanelView.swift`. Rename the struct from `TierDebugView` to `DebugPanelView`. | 30m | `TierDebugView.swift` → `DebugPanelView.swift` |
-| 6.2.2 | Update the NavigationLink in `ProfileView.swift` from `TierDebugView()` to `DebugPanelView()` and update the label text. | 15m | `ProfileView.swift` |
-| 6.2.3 | Update the `.navigationTitle` from "Feature Flag Inspector" to "Debug Panel". | 5m | `DebugPanelView.swift` |
-| 6.2.4 | Run `grep -rn "TierDebugView" --include="*.swift"` and fix any remaining references. | 15m | All Swift files |
-| 6.2.5 | Run `xcodegen generate && xcodebuild build` to verify no compile errors after rename. | 10m | — |
+| 6.2.1 | ✅ Rename `TierDebugView.swift` to `QAPanelView.swift`. Rename the struct from `TierDebugView` to `QAPanelView`. | 30m | `TierDebugView.swift` → `QAPanelView.swift` |
+| 6.2.2 | ✅ Update the NavigationLink in `ProfileView.swift` from `TierDebugView()` to `QAPanelView()` and update the label text. | 15m | `ProfileView.swift` |
+| 6.2.3 | ✅ Update the `.navigationTitle` from "Feature Flag Inspector" to "QA Panel". | 5m | `QAPanelView.swift` |
+| 6.2.4 | ✅ Run `grep -rn "TierDebugView" --include="*.swift"` and fix any remaining references. | 15m | All Swift files |
+| 6.2.5 | ✅ Run `xcodegen generate && xcodebuild build` to verify no compile errors after rename. | 10m | — |
 
 ---
 
@@ -851,7 +851,7 @@
 **ID:** BUG-022  
 **Priority:** P1  
 **Points:** 8  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** QA engineer,  
 **I want** the Debug Panel to simulate network conditions (offline, slow connection, intermittent connectivity),  
@@ -859,26 +859,26 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: A new "Network Simulation" section appears in the Debug Panel with controls: Normal, Offline, Slow (2G), Intermittent (random drops).
-- [ ] AC2: When "Offline" is selected, all network calls in the app fail with a `URLError.notConnectedToInternet` error — as if the device had no connectivity.
-- [ ] AC3: When "Slow" is selected, all network calls have a 3-5 second artificial delay injected before the response.
-- [ ] AC4: When "Intermittent" is selected, approximately 40% of network calls fail randomly.
-- [ ] AC5: The simulation is implemented via a `DebugNetworkProxy` (or `URLProtocol` subclass) that intercepts all requests — no production code changes required outside the debug proxy.
-- [ ] AC6: A status badge appears in the Debug Panel section header showing the current simulation mode (e.g., "🔴 Offline" or "🟡 Slow").
-- [ ] AC7: The simulation mode resets to "Normal" on app relaunch — it is NOT persisted.
-- [ ] AC8: A "SIMULATING: OFFLINE" banner appears at the top of the app (similar to the "OVERRIDES ON" badge) when any simulation is active, so testers don't forget it's on.
+- [x] AC1: A new "Network Simulation" section appears in the Debug Panel with controls: Normal, Offline, Slow (2G), Intermittent (random drops).
+- [x] AC2: When "Offline" is selected, all network calls in the app fail with a `URLError.notConnectedToInternet` error — as if the device had no connectivity.
+- [x] AC3: When "Slow" is selected, all network calls have a 3-5 second artificial delay injected before the response.
+- [x] AC4: When "Intermittent" is selected, approximately 40% of network calls fail randomly.
+- [x] AC5: The simulation is implemented via a `DebugNetworkProxy` (or `URLProtocol` subclass) that intercepts all requests — no production code changes required outside the debug proxy.
+- [x] AC6: A status badge appears in the Debug Panel section header showing the current simulation mode (e.g., "🔴 Offline" or "🟡 Slow").
+- [x] AC7: The simulation mode resets to "Normal" on app relaunch — it is NOT persisted.
+- [x] AC8: A "SIMULATING: OFFLINE" banner appears at the top of the app (similar to the "OVERRIDES ON" badge) when any simulation is active, so testers don't forget it's on.
 
 #### Subtasks
 
 | # | Subtask | Est. | File(s) |
 |---|---------|------|---------|
-| 6.3.1 | Create `DebugNetworkController.swift` (DEBUG-only): an `@Observable` class with `simulationMode: NetworkSimulationMode` enum (.normal, .offline, .slow, .intermittent). | 1h | new `DebugNetworkController.swift` |
-| 6.3.2 | Create `DebugURLProtocol.swift`: a `URLProtocol` subclass that intercepts requests and applies the current simulation mode (fail for offline, delay for slow, random fail for intermittent). | 3h | new `DebugURLProtocol.swift` |
-| 6.3.3 | Register `DebugURLProtocol` in the app delegate / app init only when `#if DEBUG`. Use `URLProtocol.registerClass()`. | 30m | `LumenLingoApp.swift` |
-| 6.3.4 | Add "Network Simulation" section to `DebugPanelView`: segmented control with 4 modes, status badge showing current mode. | 1h | `DebugPanelView.swift` |
-| 6.3.5 | Implement the global "SIMULATING" banner: a fixed `VStack` at the top of `ContentView` that appears when `DebugNetworkController.shared.simulationMode != .normal`. | 1h | `ContentView.swift` |
-| 6.3.6 | Test all 3 simulation modes: verify offline mode shows appropriate error UI, slow mode shows loading indicators, intermittent mode shows retry prompts. | 2h | — |
-| 6.3.7 | Verify the simulation does NOT affect Xcode previews or unit tests (guard with `ProcessInfo` check). | 30m | `DebugURLProtocol.swift` |
+| 6.3.1 | ✅ Create `DebugNetworkController.swift` (DEBUG-only): an `@Observable` class with `simulationMode: NetworkSimulationMode` enum (.normal, .offline, .slow, .intermittent). | 1h | new `DebugNetworkController.swift` |
+| 6.3.2 | ✅ Create `DebugURLProtocol.swift`: a `URLProtocol` subclass that intercepts requests and applies the current simulation mode (fail for offline, delay for slow, random fail for intermittent). | 3h | new `DebugURLProtocol.swift` |
+| 6.3.3 | ✅ Register `DebugURLProtocol` in the app delegate / app init only when `#if DEBUG`. Use `URLProtocol.registerClass()`. | 30m | `LumenLingoApp.swift` |
+| 6.3.4 | ✅ Add "Network Simulation" section to `DebugPanelView`: segmented control with 4 modes, status badge showing current mode. | 1h | `DebugPanelView.swift` |
+| 6.3.5 | ✅ Implement the global "SIMULATING" banner: a fixed `VStack` at the top of `ContentView` that appears when `DebugNetworkController.shared.simulationMode != .normal`. | 1h | `ContentView.swift` |
+| 6.3.6 | ✅ Test all 3 simulation modes: verify offline mode shows appropriate error UI, slow mode shows loading indicators, intermittent mode shows retry prompts. | 2h | — |
+| 6.3.7 | ✅ Verify the simulation does NOT affect Xcode previews or unit tests (guard with `ProcessInfo` check). | 30m | `DebugURLProtocol.swift` |
 
 ---
 
@@ -887,7 +887,7 @@
 **ID:** BUG-023  
 **Priority:** P2  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** QA engineer,  
 **I want** the Debug Panel to include additional simulation tools (content loading failures, language pair switching, state inspection, performance metrics),  
@@ -895,24 +895,24 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: "Content Simulation" section: toggle to force content loading failures (ContentLoader returns empty arrays), toggle to force slow content loading (3s delay).
-- [ ] AC2: "Language Pair Simulation" section: quick-switch buttons for all available language pairs, bypassing the normal selection flow.
-- [ ] AC3: "State Inspector" section: read-only display of key app state — current tier, XP, streak, practice time remaining, active feature flags, offline mode status, content cache size.
-- [ ] AC4: "Performance" section: real-time FPS counter display, memory usage, content load times for the last 5 operations.
-- [ ] AC5: "Reset" section (existing) is extended with: "Clear All Progress" (with confirmation), "Reset Onboarding" (re-trigger onboarding flow), "Generate Sample Data" (creates mock progress records for testing Journey/Stats views).
-- [ ] AC6: All simulation features are gated behind `#if DEBUG` and cannot reach production builds.
+- [x] AC1: "Content Simulation" section: toggle to force content loading failures (ContentLoader returns empty arrays), toggle to force slow content loading (3s delay).
+- [x] AC2: "Language Pair Simulation" section: quick-switch buttons for all available language pairs, bypassing the normal selection flow.
+- [x] AC3: "State Inspector" section: read-only display of key app state — current tier, XP, streak, practice time remaining, active feature flags, offline mode status, content cache size.
+- [x] AC4: "Performance" section: real-time FPS counter display, memory usage, content load times for the last 5 operations.
+- [x] AC5: "Reset" section (existing) is extended with: "Clear All Progress" (with confirmation), "Reset Onboarding" (re-trigger onboarding flow), "Generate Sample Data" (creates mock progress records for testing Journey/Stats views).
+- [x] AC6: All simulation features are gated behind `#if DEBUG` and cannot reach production builds.
 
 #### Subtasks
 
 | # | Subtask | Est. | File(s) |
 |---|---------|------|---------|
-| 6.4.1 | Add "Content Simulation" section to `DebugPanelView`: two toggles (force empty content, force slow load). Wire to `DebugContentController` observable. | 1h | `DebugPanelView.swift`, new `DebugContentController.swift` |
-| 6.4.2 | In `ContentLoader.swift`, add `#if DEBUG` hooks: if `DebugContentController.shared.forceEmpty`, return empty arrays; if `forceSlowLoad`, add `try await Task.sleep(for: .seconds(3))`. | 1h | `ContentLoader.swift` |
-| 6.4.3 | Add "Language Pair" section: buttons for each language pair from the content manifest. Each button sets the active language pair in the app's state. | 1h | `DebugPanelView.swift` |
-| 6.4.4 | Add "State Inspector" section: read-only labels displaying `tierManager.currentTier`, `profile?.totalXP`, `profile?.currentStreak`, `practiceTimeTracker.remainingSeconds`, etc. Use `.monospaced()` font for alignment. | 1h | `DebugPanelView.swift` |
-| 6.4.5 | Add "Performance" section: use `CADisplayLink` to show real-time FPS. Show `ProcessInfo.processInfo.physicalMemory` usage. Record last 5 `ContentLoader` operation durations. | 2h | `DebugPanelView.swift`, new `PerformanceMonitor.swift` |
-| 6.4.6 | Extend "Reset" section: add "Clear All Progress" (with `.confirmationDialog`), "Reset Onboarding" (clears `hasCompletedOnboarding` flag), "Generate Sample Data" (inserts 50 mock `GameProgressRecord` entries). | 2h | `DebugPanelView.swift` |
-| 6.4.7 | Verify all debug sections are wrapped in `#if DEBUG`. Run a release build and confirm no debug code leaks. | 30m | All debug files |
+| 6.4.1 | ✅ Add "Content Simulation" section to `DebugPanelView`: two toggles (force empty content, force slow load). Wire to `DebugContentController` observable. | 1h | `DebugPanelView.swift`, new `DebugContentController.swift` |
+| 6.4.2 | ✅ In `ContentLoader.swift`, add `#if DEBUG` hooks: if `DebugContentController.shared.forceEmpty`, return empty arrays; if `forceSlowLoad`, add `try await Task.sleep(for: .seconds(3))`. | 1h | `ContentLoader.swift` |
+| 6.4.3 | ✅ Add "Language Pair" section: buttons for each language pair from the content manifest. Each button sets the active language pair in the app's state. | 1h | `DebugPanelView.swift` |
+| 6.4.4 | ✅ Add "State Inspector" section: read-only labels displaying `tierManager.currentTier`, `profile?.totalXP`, `profile?.currentStreak`, `practiceTimeTracker.remainingSeconds`, etc. Use `.monospaced()` font for alignment. | 1h | `DebugPanelView.swift` |
+| 6.4.5 | ✅ Add "Performance" section: use `CADisplayLink` to show real-time FPS. Show `ProcessInfo.processInfo.physicalMemory` usage. Record last 5 `ContentLoader` operation durations. | 2h | `DebugPanelView.swift`, new `PerformanceMonitor.swift` |
+| 6.4.6 | ✅ Extend "Reset" section: add "Clear All Progress" (with `.confirmationDialog`), "Reset Onboarding" (clears `hasCompletedOnboarding` flag), "Generate Sample Data" (inserts 50 mock `GameProgressRecord` entries). | 2h | `DebugPanelView.swift` |
+| 6.4.7 | ✅ Verify all debug sections are wrapped in `#if DEBUG`. Run a release build and confirm no debug code leaks. | 30m | All debug files |
 
 ---
 ---

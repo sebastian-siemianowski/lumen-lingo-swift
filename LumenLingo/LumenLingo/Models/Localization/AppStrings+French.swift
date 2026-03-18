@@ -320,6 +320,11 @@ extension AppStrings {
         offlineModeInfo: "Lorsque le mode hors ligne est activé, le contenu est disponible sans connexion réseau. Les niveaux Pro et supérieurs peuvent apprendre partout.",
         offlineModeDisabled: "Mode hors ligne désactivé",
         offlineModeDisabledDetail: "Votre niveau n'inclut plus l'accès hors ligne",
+        offlineModeActive: "Mode hors ligne actif",
+        offlineModeIncluded: "Votre abonnement inclut l'accès hors ligne",
+        onlineOnly: "En ligne uniquement",
+        offlineModeActivated: "Mode hors ligne activé",
+        offlineModeActivatedDetail: "L'accès hors ligne est maintenant disponible",
 
         // MARK: - Upgrade Prompts
         unlockPremium: "Débloquer Premium",

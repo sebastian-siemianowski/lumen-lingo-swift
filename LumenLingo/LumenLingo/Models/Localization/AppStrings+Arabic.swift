@@ -317,6 +317,11 @@ extension AppStrings {
         offlineModeInfo: "عند تفعيل وضع عدم الاتصال، يكون المحتوى متاحاً بدون اتصال شبكي. يمكن لخطط Pro والأعلى التعلم في أي مكان.",
         offlineModeDisabled: "تم تعطيل وضع عدم الاتصال",
         offlineModeDisabledDetail: "لم تعد خطتك تتضمن الوصول بدون اتصال",
+        offlineModeActive: "وضع عدم الاتصال نشط",
+        offlineModeIncluded: "اشتراكك يتضمن الوصول بدون اتصال",
+        onlineOnly: "متصل فقط",
+        offlineModeActivated: "تم تفعيل وضع عدم الاتصال",
+        offlineModeActivatedDetail: "الوصول بدون اتصال متاح الآن",
 
         // MARK: - Upgrade Prompts
         unlockPremium: "فتح Premium",

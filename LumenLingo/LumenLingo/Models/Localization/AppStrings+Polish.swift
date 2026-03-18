@@ -319,6 +319,11 @@ extension AppStrings {
         offlineModeInfo: "Gdy tryb offline jest włączony, treści są dostępne bez połączenia sieciowego. Plany Pro i wyższe pozwalają uczyć się wszędzie.",
         offlineModeDisabled: "Tryb offline wyłączony",
         offlineModeDisabledDetail: "Twój plan nie obejmuje już dostępu offline",
+        offlineModeActive: "Tryb offline aktywny",
+        offlineModeIncluded: "Twoja subskrypcja obejmuje dostęp offline",
+        onlineOnly: "Tylko online",
+        offlineModeActivated: "Tryb offline aktywowany",
+        offlineModeActivatedDetail: "Dostęp offline jest teraz dostępny",
 
         // MARK: - Upgrade Prompts
         unlockPremium: "Odblokuj Premium",

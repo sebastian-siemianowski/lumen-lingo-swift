@@ -38,6 +38,7 @@ extension Notification.Name {
     static let quantumFlowAutoAdjusted = Notification.Name("quantumFlowAutoAdjusted")
     static let nebulaDriftAutoAdjusted = Notification.Name("nebulaDriftAutoAdjusted")
     static let offlineModeAutoDisabled = Notification.Name("offlineModeAutoDisabled")
+    static let offlineModeAutoEnabled = Notification.Name("offlineModeAutoEnabled")
     static let settingsRestored = Notification.Name("settingsRestored")
 }
 
@@ -846,6 +847,12 @@ final class TierManager {
         // Restore dormant settings on upgrade
         if wasUpgrade, let profile {
             restoreDormantSettings(profile: profile)
+
+            // Auto-enable offline mode for tiers that include it
+            if offlineModeAvailable, !profile.offlineModeEnabled {
+                profile.offlineModeEnabled = true
+                NotificationCenter.default.post(name: .offlineModeAutoEnabled, object: nil)
+            }
         }
 
         // Graceful feature degradation on downgrade
