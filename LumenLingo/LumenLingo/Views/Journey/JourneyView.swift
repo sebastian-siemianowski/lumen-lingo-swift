@@ -54,6 +54,17 @@ struct JourneyView: View {
         statsConfig.sections.contains(section) ? nil : .icon("lock.fill", .secondary)
     }
 
+    /// Whether a section is tier-locked (Story 4.3.1).
+    private func isSectionLocked(_ section: TierManager.JourneyStatsSection) -> Bool {
+        !statsConfig.sections.contains(section)
+    }
+
+    /// The required tier for a locked section (display name + accent color).
+    private func requiredTierInfo(for section: TierManager.JourneyStatsSection) -> (name: String, color: Color) {
+        let tier = TierManager.minimumTierForJourneySection(section)
+        return (tier.displayName, tier.accentColor)
+    }
+
     @State private var currentQuote: WisdomQuote = WisdomQuote.allQuotes.randomElement() ?? WisdomQuote.allQuotes[0]
     @State private var shownQuoteIndices: Set<Int> = []
     @State private var quoteOpacity: Double = 1.0
@@ -86,8 +97,7 @@ struct JourneyView: View {
                 // Overall stats (always visible — basicStats)
                 CollapsibleSection(
                     title: hasUserName ? "\(displayName)'s XP" : L.totalXP,
-                    icon: "chart.bar.fill",
-                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                    theme: .xpStats,
                     isCollapsed: $isStatsCollapsed,
                     badge: .text(formattedXP(profile?.totalXP ?? 0) + " XP")
                 ) {
@@ -97,21 +107,25 @@ struct JourneyView: View {
                 // Milestones timeline (always visible, badge style varies by tier)
                 CollapsibleSection(
                     title: L.milestones,
-                    icon: "flag.checkered",
-                    colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
+                    theme: .milestones,
                     isCollapsed: $isMilestonesCollapsed,
                     badge: .count(completedMilestoneCount)
                 ) {
                     milestonesSection
                 }
 
+                // ── Analytics group ──────────────────────────
+                Spacer().frame(height: 8)  // 28pt inter-group gap (20 + 8)
+
                 // Game type breakdown (Pro+)
                 CollapsibleSection(
                     title: L.gamePerformance,
-                    icon: "gamecontroller.fill",
-                    colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+                    theme: .gamePerformance,
                     isCollapsed: $isGameBreakdownCollapsed,
-                    badge: tierBadge(for: .gameBreakdown) ?? .progress(overallAccuracy)
+                    badge: tierBadge(for: .gameBreakdown) ?? .progress(overallAccuracy),
+                    isLocked: isSectionLocked(.gameBreakdown),
+                    lockedTierName: requiredTierInfo(for: .gameBreakdown).name,
+                    lockedTierColor: requiredTierInfo(for: .gameBreakdown).color
                 ) {
                     journeySection(for: .gameBreakdown) {
                         gameTypeBreakdown
@@ -121,10 +135,12 @@ struct JourneyView: View {
                 // Daily XP Chart (Pro+)
                 CollapsibleSection(
                     title: L.dailyXPChart,
-                    icon: "chart.bar.xaxis",
-                    colors: [Color(hex: "#f59e0b"), Color(hex: "#ef4444")],
+                    theme: .dailyXP,
                     isCollapsed: $isDailyXPCollapsed,
-                    badge: tierBadge(for: .dailyXPChart)
+                    badge: tierBadge(for: .dailyXPChart),
+                    isLocked: isSectionLocked(.dailyXPChart),
+                    lockedTierName: requiredTierInfo(for: .dailyXPChart).name,
+                    lockedTierColor: requiredTierInfo(for: .dailyXPChart).color
                 ) {
                     journeySection(for: .dailyXPChart) {
                         DailyXPChartView(allProgress: allProgress)
@@ -134,10 +150,12 @@ struct JourneyView: View {
                 // Weekly Trend (Elite+)
                 CollapsibleSection(
                     title: L.weeklyTrend,
-                    icon: "chart.line.uptrend.xyaxis",
-                    colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
+                    theme: .weeklyTrend,
                     isCollapsed: $isWeeklyTrendCollapsed,
-                    badge: tierBadge(for: .weeklyTrend)
+                    badge: tierBadge(for: .weeklyTrend),
+                    isLocked: isSectionLocked(.weeklyTrend),
+                    lockedTierName: requiredTierInfo(for: .weeklyTrend).name,
+                    lockedTierColor: requiredTierInfo(for: .weeklyTrend).color
                 ) {
                     journeySection(for: .weeklyTrend) {
                         WeeklyTrendWidget(allProgress: allProgress)
@@ -147,10 +165,12 @@ struct JourneyView: View {
                 // Accuracy Heatmap (Elite+)
                 CollapsibleSection(
                     title: L.accuracyHeatmap,
-                    icon: "square.grid.3x3.fill",
-                    colors: [Color(hex: "#f97316"), Color(hex: "#f59e0b")],
+                    theme: .accuracyHeatmap,
                     isCollapsed: $isAccuracyHeatmapCollapsed,
-                    badge: tierBadge(for: .accuracyHeatmap)
+                    badge: tierBadge(for: .accuracyHeatmap),
+                    isLocked: isSectionLocked(.accuracyHeatmap),
+                    lockedTierName: requiredTierInfo(for: .accuracyHeatmap).name,
+                    lockedTierColor: requiredTierInfo(for: .accuracyHeatmap).color
                 ) {
                     journeySection(for: .accuracyHeatmap) {
                         AccuracyHeatmapView(allProgress: allProgress)
@@ -160,10 +180,12 @@ struct JourneyView: View {
                 // Monthly Report (Royal)
                 CollapsibleSection(
                     title: L.monthlyReport,
-                    icon: "doc.text.fill",
-                    colors: [Color(hex: "#6366f1"), Color(hex: "#8b5cf6")],
+                    theme: .monthlyReport,
                     isCollapsed: $isMonthlyReportCollapsed,
-                    badge: tierBadge(for: .monthlyReport)
+                    badge: tierBadge(for: .monthlyReport),
+                    isLocked: isSectionLocked(.monthlyReport),
+                    lockedTierName: requiredTierInfo(for: .monthlyReport).name,
+                    lockedTierColor: requiredTierInfo(for: .monthlyReport).color
                 ) {
                     journeySection(for: .monthlyReport) {
                         MonthlyReportWidget(allProgress: allProgress, profile: profile)
@@ -173,10 +195,12 @@ struct JourneyView: View {
                 // Milestone Predictions (Royal)
                 CollapsibleSection(
                     title: L.milestonePredictionsTitle,
-                    icon: "sparkle.magnifyingglass",
-                    colors: [Color(hex: "#ec4899"), Color(hex: "#f43f5e")],
+                    theme: .milestonePredictions,
                     isCollapsed: $isMilestonePredictionsCollapsed,
-                    badge: tierBadge(for: .milestonePredictions)
+                    badge: tierBadge(for: .milestonePredictions),
+                    isLocked: isSectionLocked(.milestonePredictions),
+                    lockedTierName: requiredTierInfo(for: .milestonePredictions).name,
+                    lockedTierColor: requiredTierInfo(for: .milestonePredictions).color
                 ) {
                     journeySection(for: .milestonePredictions) {
                         MilestonePredictionWidget(
@@ -187,58 +211,74 @@ struct JourneyView: View {
                     }
                 }
 
+                // ── Engagement group ─────────────────────────
+                Spacer().frame(height: 8)  // 28pt inter-group gap
+
                 // Export Data (Elite+)
                 CollapsibleSection(
                     title: L.exportData,
-                    icon: "square.and.arrow.up.fill",
-                    colors: [Color(hex: "#14b8a6"), Color(hex: "#06b6d4")],
+                    theme: .exportData,
                     isCollapsed: $isExportDataCollapsed,
-                    badge: tierBadge(for: .exportData)
+                    badge: tierBadge(for: .exportData),
+                    isLocked: isSectionLocked(.exportData),
+                    lockedTierName: requiredTierInfo(for: .exportData).name,
+                    lockedTierColor: requiredTierInfo(for: .exportData).color
                 ) {
                     journeySection(for: .exportData) {
                         ExportDataWidget(allProgress: allProgress, profile: profile)
                     }
                 }
 
+                // ── Analytics (continued) ────────────────────
+                Spacer().frame(height: 8)  // 28pt inter-group gap
+
                 // Learning Insights (Royal)
                 CollapsibleSection(
                     title: L.learningInsights,
-                    icon: "lightbulb.fill",
-                    colors: [Color(hex: "#f59e0b"), Color(hex: "#fbbf24")],
+                    theme: .learningInsights,
                     isCollapsed: $isInsightsCollapsed,
-                    badge: tierBadge(for: .insights)
+                    badge: tierBadge(for: .insights),
+                    isLocked: isSectionLocked(.insights),
+                    lockedTierName: requiredTierInfo(for: .insights).name,
+                    lockedTierColor: requiredTierInfo(for: .insights).color
                 ) {
                     journeySection(for: .insights) {
                         InsightsDashboardWidget(allProgress: allProgress)
                     }
                 }
 
+                // ── Stats (continued) ────────────────────────
+                Spacer().frame(height: 8)  // 28pt inter-group gap
+
                 // Streak section (always visible — part of basicStats)
                 CollapsibleSection(
                     title: L.currentStreak,
-                    icon: "flame.fill",
-                    colors: [.orange, Color(hex: "#ef4444")],
+                    theme: .streak,
                     isCollapsed: $isStreakCollapsed,
                     badge: .count(profile?.streakDays ?? 0)
                 ) {
                     streakSection
                 }
 
+                // ── Engagement group ─────────────────────────
+                Spacer().frame(height: 8)  // 28pt inter-group gap
+
                 // Wisdom quote
                 CollapsibleSection(
                     title: "Wisdom",
-                    icon: "sparkles",
-                    colors: [Color(hex: "#c084fc"), Color(hex: "#f0abfc")],
+                    theme: .wisdom,
                     isCollapsed: $isQuoteCollapsed
                 ) {
                     quoteCard
                 }
 
+                // ── Danger group ─────────────────────────────
+                Spacer().frame(height: 8)  // 28pt inter-group gap
+
                 // Reset progress
                 CollapsibleSection(
                     title: L.resetProgress,
-                    icon: "arrow.triangle.2.circlepath",
-                    colors: [.red.opacity(0.9), .red.opacity(0.6)],
+                    theme: .resetProgress,
                     isCollapsed: $isResetCollapsed
                 ) {
                     resetProgressButton

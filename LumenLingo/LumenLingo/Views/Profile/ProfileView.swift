@@ -76,8 +76,7 @@ struct ProfileView: View {
                 // Profile header — collapsible
                 CollapsibleSection(
                     title: displayName.isEmpty ? "Profile" : displayName,
-                    icon: "person.circle.fill",
-                    colors: tierManager.tierGradientColors,
+                    theme: .profile(tierGradientColors: tierManager.tierGradientColors),
                     isCollapsed: $isHeaderCollapsed,
                     badge: .text(tierManager.tierDisplayName)
                 ) {
@@ -91,8 +90,7 @@ struct ProfileView: View {
                 // My Plan card — collapsible
                 CollapsibleSection(
                     title: "My Plan",
-                    icon: tierManager.tierIcon,
-                    colors: tierManager.tierGradientColors,
+                    theme: .myPlan(tierIcon: tierManager.tierIcon, tierGradientColors: tierManager.tierGradientColors),
                     isCollapsed: $isMyPlanCollapsed,
                     badge: .text(tierManager.tierDisplayName)
                 ) {

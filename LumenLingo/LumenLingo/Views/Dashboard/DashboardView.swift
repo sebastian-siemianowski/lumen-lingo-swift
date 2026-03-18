@@ -198,7 +198,7 @@ struct DashboardView: View {
     private var dashboardHeader: some View {
         CollapsibleSection(
             style: .hero,
-            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+            colors: CollapsibleSectionTheme.xpStats.gradientColors,
             isCollapsed: $isHeaderCollapsed,
             header: {
                 dashboardHeaderContent

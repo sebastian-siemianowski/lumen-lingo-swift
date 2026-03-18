@@ -44,6 +44,7 @@
 		2A87FF2626ED84C5687E1D27 /* MilestonePredictionWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF80C185D1108772AD43DE80 /* MilestonePredictionWidget.swift */; };
 		2B8FCD7F1A048D812A58D29E /* flashcards_english_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 184332E9A816388D71A52CC4 /* flashcards_english_polish.json */; };
 		2D10BFD2A89BA820AEAC4490 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082370545F169B205DEB7118 /* DataModels.swift */; };
+		2D9C5E4E813ED3895FB28EBC /* CollapsibleSectionTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90794C6958EE73CEC20A8F /* CollapsibleSectionTheme.swift */; };
 		2F46AAA7A365380EDAAAA25F /* Midnight-Jazz-Piano.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FA63307B7ED662E74F5272BE /* Midnight-Jazz-Piano.m4a */; };
 		3043011483273E4F8D1F3BC3 /* NebulaDriftLockedPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C273E365C514538CA4F196 /* NebulaDriftLockedPreview.swift */; };
 		30865DEE0594C3D69795C953 /* flashcards_english_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 053CFBAF57D151555C331BB2 /* flashcards_english_german.json */; };
@@ -282,6 +283,7 @@
 		184332E9A816388D71A52CC4 /* flashcards_english_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_polish.json; sourceTree = "<group>"; };
 		19D0AFE49B5144D47E971846 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		1CD9C429C1C49ACDEF66DB34 /* flashcards_german_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_german_spanish.json; sourceTree = "<group>"; };
+		1D90794C6958EE73CEC20A8F /* CollapsibleSectionTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleSectionTheme.swift; sourceTree = "<group>"; };
 		1E1633D0552F820F1DECE14C /* MilestoneBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneBadgeView.swift; sourceTree = "<group>"; };
 		1EF7640DC44203CE5639A144 /* wordbuilder_german_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_german_spanish.json; sourceTree = "<group>"; };
 		1FB2375AD490242C723FC30E /* wordbuilder_polish_ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_ukrainian.json; sourceTree = "<group>"; };
@@ -603,6 +605,7 @@
 			children = (
 				0902F86CEF9AE637376DB143 /* AdventureCTAButton.swift */,
 				CA489005CB604BAA943FEB42 /* CollapsibleSection.swift */,
+				1D90794C6958EE73CEC20A8F /* CollapsibleSectionTheme.swift */,
 				796514956D77ECBB8603FE69 /* FeatureTooltip.swift */,
 				C7EC466E954463C21BDA8D3C /* GlassDivider.swift */,
 				566E812340AC148093E2BF00 /* LanguagePairBadge.swift */,
@@ -1335,6 +1338,7 @@
 				FFEB34E94BF794DB93C7F83E /* CelestialLagoonPreset.metal in Sources */,
 				C63BF657373F805F4F205644 /* CelestialStars.metal in Sources */,
 				E0C7DAFA7664FA3950305C9E /* CollapsibleSection.swift in Sources */,
+				2D9C5E4E813ED3895FB28EBC /* CollapsibleSectionTheme.swift in Sources */,
 				42AB89D16F16B1C1F24BFDCE /* ConnectivitySettingsView.swift in Sources */,
 				6EEA52A2F62B3F2FC4300038 /* ContentLoader.swift in Sources */,
 				E916621019B8B464C76AC77E /* ContentModels.swift in Sources */,

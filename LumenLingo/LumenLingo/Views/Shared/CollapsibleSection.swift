@@ -241,6 +241,10 @@ struct CollapsibleSection<Header: View, Content: View>: View {
     var cornerRadius: CGFloat = 18
     var glassWeight: GlassWeight? = nil
     var badge: CollapsibleBadge? = nil
+    var category: ThemeCategory? = nil
+    var isLocked: Bool = false
+    var lockedTierName: String? = nil
+    var lockedTierColor: Color? = nil
     @ViewBuilder let header: () -> Header
     @ViewBuilder let content: () -> Content
 
@@ -251,6 +255,10 @@ struct CollapsibleSection<Header: View, Content: View>: View {
     @State private var isHeaderPressed = false
     @State private var isLongPressed = false
     @State private var longPressGlow: CGFloat = 0
+    @State private var lockedFlash = false
+    @State private var showLockedToast = false
+    @State private var wasLocked = false
+    @State private var unlockCelebrating = false
     private var isDark: Bool { colorScheme == .dark }
 
     /// Resolved weight: explicit override, depth-forced recessed, or auto-derived from style.
@@ -293,6 +301,65 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                 tipBody
             }
         }
+        // Locked visual treatment (Story 4.3.2, 4.3.6)
+        .saturation(isLocked && !unlockCelebrating ? 0.4 : 1.0)
+        .opacity(isLocked && !unlockCelebrating ? 0.85 : 1.0)
+        .overlay {
+            // Premium veil (Story 4.3.6) — static frosted distinction
+            if isLocked, !unlockCelebrating {
+                RoundedRectangle(cornerRadius: depthCornerRadius)
+                    .fill(isDark ? Color.white.opacity(0.03) : Color.black.opacity(0.02))
+                    .allowsHitTesting(false)
+            }
+        }
+        .overlay {
+            // Locked flash border (Story 4.3.4)
+            if lockedFlash, let tierColor = lockedTierColor {
+                RoundedRectangle(cornerRadius: depthCornerRadius)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [tierColor, tierColor.opacity(0.5)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 2
+                    )
+                    .transition(.opacity)
+            }
+        }
+        // Unlock celebration border flash (Story 4.3.7)
+        .overlay {
+            if unlockCelebrating, let tierColor = lockedTierColor {
+                RoundedRectangle(cornerRadius: depthCornerRadius)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [tierColor, tierColor.opacity(0.6)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 2
+                    )
+                    .transition(.opacity)
+            }
+        }
+        .overlay(alignment: .bottom) {
+            // "Unlock with {TierName}" toast (Story 4.3.4)
+            if showLockedToast, let tierName = lockedTierName, let tierColor = lockedTierColor {
+                Text("Unlock with \(tierName)")
+                    .font(.system(size: 11, weight: .semibold))
+                    .foregroundStyle(tierColor)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(
+                        Capsule().fill(.ultraThinMaterial)
+                    )
+                    .overlay(
+                        Capsule().strokeBorder(tierColor.opacity(0.3), lineWidth: 0.5)
+                    )
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                    .padding(.bottom, 4)
+            }
+        }
         .overlay(alignment: .leading) {
             // Indent guide for nested sections (depth ≥ 1)
             if clampedDepth > 0 {
@@ -302,10 +369,31 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                     .padding(.vertical, 6)
             }
         }
+        .animation(.easeInOut(duration: 0.5), value: isLocked)
+        .animation(.easeInOut(duration: 0.3), value: unlockCelebrating)
+        // Smooth dark↔light mode crossfade for all glass layers (Story 4.4.1)
+        .animation(.easeInOut(duration: 0.4), value: colorScheme)
+        // Unlock detection (Story 4.3.7)
+        .onChange(of: isLocked) { oldVal, newVal in
+            if oldVal == true, newVal == false {
+                // Section just unlocked — celebrate
+                unlockCelebrating = true
+                Task { @MainActor in
+                    try? await Task.sleep(for: .milliseconds(800))
+                    withAnimation(.easeOut(duration: 0.3)) {
+                        unlockCelebrating = false
+                    }
+                }
+            }
+            wasLocked = newVal
+        }
         .environment(\.collapsibleDepth, clampedDepth + 1)
         .accessibilityElement(children: .contain)
-        .accessibilityValue(isCollapsed ? "collapsed" : "expanded")
-        .onAppear { isOnScreen = true }
+        .accessibilityValue(isLocked ? "locked" : (isCollapsed ? "collapsed" : "expanded"))
+        .onAppear {
+            isOnScreen = true
+            wasLocked = isLocked
+        }
         .onDisappear { isOnScreen = false }
     }
 
@@ -314,10 +402,25 @@ struct CollapsibleSection<Header: View, Content: View>: View {
 
     /// Asymmetric toggle: expand breathes open with overshoot; collapse snaps shut.
     /// Ignores rapid re-toggles within 200ms to prevent overlapping animations.
+    /// When locked (Story 4.3.4), flashes the tier border and shows a toast instead of toggling.
     func toggle() {
         let now = Date()
         guard now.timeIntervalSince(lastToggleTime) >= CollapsibleAnimationTokens.debounceInterval else { return }
         lastToggleTime = now
+
+        if isLocked {
+            // Flash border + show toast (Story 4.3.4)
+            withAnimation(.easeInOut(duration: 0.15)) { lockedFlash = true }
+            withAnimation(.easeInOut(duration: 0.2)) { showLockedToast = true }
+            HapticsService.shared.warning()
+            Task { @MainActor in
+                try? await Task.sleep(for: .milliseconds(600))
+                withAnimation(.easeOut(duration: 0.3)) { lockedFlash = false }
+                try? await Task.sleep(for: .milliseconds(800))
+                withAnimation(.easeOut(duration: 0.25)) { showLockedToast = false }
+            }
+            return
+        }
 
         let expanding = isCollapsed
         let spring = expanding ? CollapsibleAnimationTokens.expandSpring : CollapsibleAnimationTokens.collapseSpring
@@ -340,8 +443,23 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                     isCollapsed ? AnyView(breathingGlassBackground) : AnyView(Color.clear)
                 )
 
+            // Category accent divider between header and content (Story 4.2.2)
+            if !isCollapsed, let cat = category {
+                categoryAccentDivider(cat)
+            }
+
             MeasuredContentReveal(isExpanded: !isCollapsed) {
                 content()
+            }
+        }
+        // Left edge indicator rail — category color at 0.10 opacity (Story 4.2.3)
+        .overlay(alignment: .leading) {
+            if let cat = category {
+                let accentColor = categoryAccentColor(cat)
+                RoundedRectangle(cornerRadius: 1)
+                    .fill(accentColor.opacity(isDark ? 0.10 : 0.08))
+                    .frame(width: 2)
+                    .padding(.vertical, 4)
             }
         }
         .task(id: isHeaderPressed) {
@@ -363,6 +481,43 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                     longPressGlow = 0
                 }
             }
+        }
+    }
+
+    // MARK: - Category Accent Helpers (Story 4.2)
+
+    /// Resolves the accent color for a category — danger/utility use red, others use the section gradient.
+    private func categoryAccentColor(_ cat: ThemeCategory) -> Color {
+        switch cat {
+        case .danger:  return .red
+        case .utility: return colors.first ?? .secondary
+        default:       return colors.first ?? .purple
+        }
+    }
+
+    /// Subtle accent divider between header and expanded content.
+    /// Line style varies by category: solid for stats, dashed for analytics,
+    /// dotted for engagement, red-tinted solid for danger/utility.
+    @ViewBuilder
+    private func categoryAccentDivider(_ cat: ThemeCategory) -> some View {
+        let accent = categoryAccentColor(cat)
+        let lineOpacity: CGFloat = (cat == .danger || cat == .utility) ? 0.35 : 0.18
+        let gradient = LinearGradient(
+            colors: [accent.opacity(0), accent.opacity(lineOpacity), accent.opacity(0)],
+            startPoint: .leading,
+            endPoint: .trailing
+        )
+
+        if let dash = cat.dashPattern {
+            HorizontalLine()
+                .stroke(gradient, style: StrokeStyle(lineWidth: 0.5, dash: dash))
+                .frame(height: 0.5)
+                .padding(.horizontal, 16)
+        } else {
+            Rectangle()
+                .fill(gradient)
+                .frame(height: 0.5)
+                .padding(.horizontal, 16)
         }
     }
 
@@ -677,6 +832,9 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         badge: CollapsibleBadge? = nil,
         cornerRadius: CGFloat = 18,
         glassWeight: GlassWeight? = nil,
+        isLocked: Bool = false,
+        lockedTierName: String? = nil,
+        lockedTierColor: Color? = nil,
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.style = .standard
@@ -685,6 +843,9 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         self.cornerRadius = cornerRadius
         self.glassWeight = glassWeight
         self.badge = badge
+        self.isLocked = isLocked
+        self.lockedTierName = lockedTierName
+        self.lockedTierColor = lockedTierColor
         let capturedBinding = isCollapsed
         let capturedSubtitle = subtitle
         let capturedBadge = badge
@@ -696,10 +857,44 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
                 isCollapsed: capturedBinding.wrappedValue,
                 subtitle: capturedSubtitle,
                 badge: capturedBadge,
-                cornerRadius: cornerRadius
+                cornerRadius: cornerRadius,
+                isLocked: isLocked,
+                lockedTierColor: lockedTierColor
             )
         }
         self.content = content
+    }
+
+    /// Theme-based init — icon and colors sourced from the centralized theme registry.
+    /// Eliminates inline color/icon specifications at each call site.
+    init(
+        title: String,
+        theme: CollapsibleSectionTheme,
+        isCollapsed: Binding<Bool>,
+        subtitle: String? = nil,
+        badge: CollapsibleBadge? = nil,
+        cornerRadius: CGFloat = 18,
+        glassWeight: GlassWeight? = nil,
+        isLocked: Bool = false,
+        lockedTierName: String? = nil,
+        lockedTierColor: Color? = nil,
+        @ViewBuilder content: @escaping () -> Content
+    ) {
+        self.init(
+            title: title,
+            icon: theme.icon,
+            colors: theme.gradientColors,
+            isCollapsed: isCollapsed,
+            subtitle: subtitle,
+            badge: badge,
+            cornerRadius: cornerRadius,
+            glassWeight: glassWeight,
+            isLocked: isLocked,
+            lockedTierName: lockedTierName,
+            lockedTierColor: lockedTierColor,
+            content: content
+        )
+        self.category = theme.category
     }
 }
 
@@ -716,6 +911,8 @@ struct DefaultCollapsibleHeader: View {
     let subtitle: String?
     let badge: CollapsibleBadge?
     let cornerRadius: CGFloat
+    var isLocked: Bool = false
+    var lockedTierColor: Color? = nil
 
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.collapsibleDepth) private var depth
@@ -752,27 +949,37 @@ struct DefaultCollapsibleHeader: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack(spacing: 10) {
-                // Gradient icon circle
-                ZStack {
-                    Circle()
-                        .fill(
-                            LinearGradient(
-                                colors: colors.map { $0.opacity(isDark ? 0.2 : 0.15) },
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
+                // Gradient icon circle with optional lock overlay (Story 4.3.2)
+                ZStack(alignment: .bottomTrailing) {
+                    ZStack {
+                        Circle()
+                            .fill(
+                                LinearGradient(
+                                    colors: colors.map { $0.opacity(isDark ? 0.2 : 0.15) },
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
                             )
-                        )
-                        .frame(width: iconCircleSize, height: iconCircleSize)
+                            .frame(width: iconCircleSize, height: iconCircleSize)
 
-                    Image(systemName: icon)
-                        .font(.system(size: iconCircleSize * 0.43, weight: .medium))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: colors,
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
+                        Image(systemName: icon)
+                            .font(.system(size: iconCircleSize * 0.43, weight: .medium))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: colors,
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
                             )
-                        )
+                    }
+
+                    // Mini lock overlay at bottom-right of icon
+                    if isLocked {
+                        Image(systemName: "lock.fill")
+                            .font(.system(size: 8, weight: .bold))
+                            .foregroundStyle(lockedTierColor ?? .secondary)
+                            .offset(x: 2, y: 2)
+                    }
                 }
 
                 Text(title)
@@ -789,33 +996,47 @@ struct DefaultCollapsibleHeader: View {
 
                 Spacer()
 
-                // Badge at trailing position (collapsed)
-                if let badge, isCollapsed {
-                    CollapsibleBadgeView(badge: badge, colors: colors, isSubtitle: false)
-                        .matchedGeometryEffect(id: "badge", in: badgeNS)
-                        .transition(.opacity.combined(with: .scale(scale: 0.8)))
-                        .accessibilityLabel(badge.accessibilityLabel)
+                // Badge at trailing position (collapsed) — lock overrides data badge (Story 4.3.5)
+                if isCollapsed {
+                    if isLocked, let tierColor = lockedTierColor {
+                        CollapsibleBadgeView(badge: .icon("lock.fill", tierColor), colors: colors, isSubtitle: false)
+                            .matchedGeometryEffect(id: "badge", in: badgeNS)
+                            .transition(.opacity.combined(with: .scale(scale: 0.8)))
+                            .accessibilityLabel("locked")
+                    } else if let badge {
+                        CollapsibleBadgeView(badge: badge, colors: colors, isSubtitle: false)
+                            .matchedGeometryEffect(id: "badge", in: badgeNS)
+                            .transition(.opacity.combined(with: .scale(scale: 0.8)))
+                            .accessibilityLabel(badge.accessibilityLabel)
+                    }
                 }
 
-                // Pill chevron
+                // Pill chevron / lock indicator (Story 4.3.3)
                 ZStack {
                     Capsule()
                         .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.04))
                         .frame(width: 28, height: 20)
 
-                    Image(systemName: "chevron.right")
-                        .font(.system(size: 10, weight: .bold))
-                        .foregroundStyle(
-                            isCollapsed
-                                ? AnyShapeStyle(LinearGradient(colors: colors, startPoint: .leading, endPoint: .trailing))
-                                : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
-                        )
-                        .rotationEffect(.degrees(isCollapsed ? 0 : 90))
+                    if isLocked {
+                        Image(systemName: "lock.fill")
+                            .font(.system(size: 9, weight: .bold))
+                            .foregroundStyle(lockedTierColor ?? .secondary)
+                    } else {
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 10, weight: .bold))
+                            .foregroundStyle(
+                                isCollapsed
+                                    ? AnyShapeStyle(LinearGradient(colors: colors, startPoint: .leading, endPoint: .trailing))
+                                    : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
+                            )
+                            .rotationEffect(.degrees(isCollapsed ? 0 : 90))
+                    }
                 }
             }
 
             // Badge at subtitle position (expanded) — morphs from trailing via matchedGeometryEffect
-            if let badge, !isCollapsed {
+            // Locked sections stay collapsed, so this only shows for unlocked expanded sections
+            if let badge, !isCollapsed, !isLocked {
                 CollapsibleBadgeView(badge: badge, colors: colors, isSubtitle: true)
                     .matchedGeometryEffect(id: "badge", in: badgeNS)
                     .padding(.leading, iconCircleSize + 10)
@@ -1021,6 +1242,18 @@ private struct MeasuredContentReveal<C: View>: View {
             guard !isExpanded else { return }
             hasExpanded = false
             measuredHeight = 0
+        }
+    }
+}
+
+// MARK: - Horizontal Line Shape
+
+/// A simple horizontal line from leading to trailing edge, used for dashed accent dividers.
+private struct HorizontalLine: Shape {
+    func path(in rect: CGRect) -> Path {
+        Path { p in
+            p.move(to: CGPoint(x: rect.minX, y: rect.midY))
+            p.addLine(to: CGPoint(x: rect.maxX, y: rect.midY))
         }
     }
 }

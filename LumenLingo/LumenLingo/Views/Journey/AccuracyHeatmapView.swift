@@ -123,7 +123,7 @@ struct AccuracyHeatmapView: View {
     private var masteredSummaryCard: some View {
         CollapsibleSection(
             style: .standard,
-            colors: [Color(hex: "#10b981"), Color(hex: "#f59e0b")],
+            colors: CollapsibleSectionTheme.masteredSummary.gradientColors,
             isCollapsed: $isMasteredCollapsed,
             cornerRadius: 14,
             header: {

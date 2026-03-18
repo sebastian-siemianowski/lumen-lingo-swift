@@ -658,7 +658,7 @@ struct GrammarView: View {
     private func explanationPanel(text: String) -> some View {
         CollapsibleSection(
             style: .tip,
-            colors: [Color(hex: "#3b82f6"), Color(hex: "#60a5fa")],
+            colors: CollapsibleSectionTheme.grammarTip.gradientColors,
             isCollapsed: Binding(
                 get: { !showExplanation },
                 set: { isCollapsed in

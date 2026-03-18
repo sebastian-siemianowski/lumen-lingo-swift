@@ -524,8 +524,8 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **4.1.1** — Create `CollapsibleSectionTheme` struct with properties: `icon: String`, `gradientColors: [Color]`, `accentColor: Color` (derived from `gradientColors[0]`), `category: ThemeCategory` (enum: `.stats`, `.analytics`, `.engagement`, `.utility`, `.danger`)
-- **4.1.2** — Create static theme definitions matching current JourneyView usage:
+- [x] **4.1.1** — Create `CollapsibleSectionTheme` struct with properties: `icon: String`, `gradientColors: [Color]`, `accentColor: Color` (derived from `gradientColors[0]`), `category: ThemeCategory` (enum: `.stats`, `.analytics`, `.engagement`, `.utility`, `.danger`)
+- [x] **4.1.2** — Create static theme definitions matching current JourneyView usage:
   - `.xpStats` → chart.bar.fill, #667eea → #764ba2
   - `.milestones` → flag.checkered, #667eea → #06b6d4
   - `.gamePerformance` → gamecontroller.fill, #a855f7 → #ec4899
@@ -544,18 +544,18 @@ Before defining the future, we must understand the present. The app contains **2
   - `.featureComparison` → list.bullet.rectangle.fill, #667eea → #764ba2
   - `.grammarTip` → lightbulb.max.fill, #3b82f6 → #06b6d4
   - `.soundscape` → waveform.circle.fill, (dynamic from soundscape)
-- **4.1.3** — Update `CollapsibleSection` to accept `theme: CollapsibleSectionTheme` as an alternative to individual `icon:`/`colors:` parameters — similar to how `GameHeader` accepts `theme: GameHeaderTheme`
-- **4.1.4** — Migrate all 20 call sites to use theme references instead of inline color/icon specifications
-- **4.1.5** — For dynamic themes (profile, myPlan, soundscape): define factory methods that accept the dynamic data and return a `CollapsibleSectionTheme`
+- [x] **4.1.3** — Update `CollapsibleSection` to accept `theme: CollapsibleSectionTheme` as an alternative to individual `icon:`/`colors:` parameters — similar to how `GameHeader` accepts `theme: GameHeaderTheme`
+- [x] **4.1.4** — Migrate all 20 call sites to use theme references instead of inline color/icon specifications
+- [x] **4.1.5** — For dynamic themes (profile, myPlan, soundscape): define factory methods that accept the dynamic data and return a `CollapsibleSectionTheme`
 
 #### Acceptance Criteria
 
-- [ ] `CollapsibleSectionTheme` struct exists with `icon`, `gradientColors`, `accentColor`, `category` properties
-- [ ] 18 static theme definitions cover all current `CollapsibleSection` usage
-- [ ] 3 dynamic theme factory methods handle tier-dependent and soundscape-dependent themes
-- [ ] `CollapsibleSection` accepts `theme:` parameter alongside or instead of `icon:`/`colors:`
-- [ ] All 20 call sites use theme references — zero inline color/icon specifications remain
-- [ ] Changing a theme definition in one place updates every instance across the app
+- [x] `CollapsibleSectionTheme` struct exists with `icon`, `gradientColors`, `accentColor`, `category` properties
+- [x] 18 static theme definitions cover all current `CollapsibleSection` usage
+- [x] 3 dynamic theme factory methods handle tier-dependent and soundscape-dependent themes
+- [x] `CollapsibleSection` accepts `theme:` parameter alongside or instead of `icon:`/`colors:`
+- [x] All 20 call sites use theme references — zero inline color/icon specifications remain
+- [x] Changing a theme definition in one place updates every instance across the app
 
 ---
 
@@ -569,27 +569,27 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **4.2.1** — Define category accent patterns per `ThemeCategory`:
+- [x] **4.2.1** — Define category accent patterns per `ThemeCategory`:
   - `.stats` (XP, Milestones, Streak): solid gradient accent line (current behavior)
   - `.analytics` (Game Performance, Daily XP, Weekly Trend, Accuracy, Monthly Report, Predictions, Insights): dashed accent line pattern (2px dash, 4px gap) — distinguishing analytical sections from primary stats
   - `.engagement` (Wisdom, Export): dotted accent line pattern (1px dot, 3px gap) — lighter feel for optional engagement content
   - `.utility` (Reset): accent line in `.red.opacity(0.5)` — clear danger signal
   - `.danger` (unused currently, reserved for future destructive actions): red gradient accent line with higher opacity
-- **4.2.2** — Update the inner divider (Story 1.3.3) to use the category accent pattern — the divider between header and content reinforces the section's category
-- **4.2.3** — Add very subtle category-colored left edge indicator: a vertical 2px × full-height bar at the leading edge with category accent color at 0.10 opacity — providing a visual "rail" that groups same-category sections when scanning
-- **4.2.4** — Group separators in JourneyView: between groups (e.g., last `.stats` section and first `.analytics` section), use a **28pt spacer** instead of the standard 20pt — creating wider inter-group gaps while keeping standard 20pt spacing within groups. This creates visible "paragraphs" of related sections without explicit dividers
-- **4.2.5** — Document category assignments in code comments and ensure new sections get categorized at creation time
+- [x] **4.2.2** — Update the inner divider (Story 1.3.3) to use the category accent pattern — the divider between header and content reinforces the section's category
+- [x] **4.2.3** — Add very subtle category-colored left edge indicator: a vertical 2px × full-height bar at the leading edge with category accent color at 0.10 opacity — providing a visual "rail" that groups same-category sections when scanning
+- [x] **4.2.4** — Group separators in JourneyView: between groups (e.g., last `.stats` section and first `.analytics` section), use a **28pt spacer** instead of the standard 20pt — creating wider inter-group gaps while keeping standard 20pt spacing within groups. This creates visible "paragraphs" of related sections without explicit dividers
+- [x] **4.2.5** — Document category assignments in code comments and ensure new sections get categorized at creation time
 
 #### Acceptance Criteria
 
-- [ ] Stats sections use solid accent lines
-- [ ] Analytics sections use dashed accent lines
-- [ ] Engagement sections use dotted accent lines
-- [ ] Utility/danger sections use red-tinted accent lines
-- [ ] Left edge indicator renders at 2px × full-height with category color at 0.10 opacity
-- [ ] JourneyView uses 28pt spacing between category groups and standard 20pt within groups
-- [ ] Category patterns are subtle enough not to distract but visible enough to aid scanning
-- [ ] All 13 JourneyView sections are correctly categorized
+- [x] Stats sections use solid accent lines
+- [x] Analytics sections use dashed accent lines
+- [x] Engagement sections use dotted accent lines
+- [x] Utility/danger sections use red-tinted accent lines
+- [x] Left edge indicator renders at 2px × full-height with category color at 0.10 opacity
+- [x] JourneyView uses 28pt spacing between category groups and standard 20pt within groups
+- [x] Category patterns are subtle enough not to distract but visible enough to aid scanning
+- [x] All 13 JourneyView sections are correctly categorized
 
 ---
 
@@ -603,25 +603,25 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **4.3.1** — Add `isLocked: Bool` parameter to `CollapsibleSection` (default `false`), driven by `tierManager.hasAccess(to:)` at each call site
-- **4.3.2** — When locked: reduce glass material opacity to 0.6× standard, apply a desaturation filter (`.saturation(0.4)`) to the gradient colors, and show a miniature lock icon (`lock.fill`, 8pt) overlaying the section icon at bottom-right
-- **4.3.3** — When locked: the chevron should render as `lock.fill` instead of `chevron.right` — immediately communicating "this won't open" without the user needing to tap
-- **4.3.4** — When locked and tapped: instead of expanding content, briefly flash the border with the tier color required for access (`tierManager.requiredTier(for:)`) and show a toast: "Unlock with {TierName}" — anchored to the tapped section
-- **4.3.5** — When locked: the badge (Story 2.4) should show `.icon("lock.fill", tierColor)` regardless of any data badge — the lock takes priority
-- **4.3.6** — Subtle "premium veil": locked sections render with a faint frosted veil overlay (white 0.03 dark / black 0.02 light) to distinguish them from unlocked sections at a glance. This is static, not animated — the desaturation + veil communicates "premium but locked" more elegantly than a shimmer animation, which risks feeling gamified rather than luxury
-- **4.3.7** — When the user upgrades tier and a section unlocks, play an "unlock" animation: desaturation lifts, lock morphs into chevron, border flashes with tier gradient, glass opacity rises to full — celebrating the unlock moment
+- [x] **4.3.1** — Add `isLocked: Bool` parameter to `CollapsibleSection` (default `false`), driven by `tierManager.hasAccess(to:)` at each call site
+- [x] **4.3.2** — When locked: reduce glass material opacity to 0.6× standard, apply a desaturation filter (`.saturation(0.4)`) to the gradient colors, and show a miniature lock icon (`lock.fill`, 8pt) overlaying the section icon at bottom-right
+- [x] **4.3.3** — When locked: the chevron should render as `lock.fill` instead of `chevron.right` — immediately communicating "this won't open" without the user needing to tap
+- [x] **4.3.4** — When locked and tapped: instead of expanding content, briefly flash the border with the tier color required for access (`tierManager.requiredTier(for:)`) and show a toast: "Unlock with {TierName}" — anchored to the tapped section
+- [x] **4.3.5** — When locked: the badge (Story 2.4) should show `.icon("lock.fill", tierColor)` regardless of any data badge — the lock takes priority
+- [x] **4.3.6** — Subtle "premium veil": locked sections render with a faint frosted veil overlay (white 0.03 dark / black 0.02 light) to distinguish them from unlocked sections at a glance. This is static, not animated — the desaturation + veil communicates "premium but locked" more elegantly than a shimmer animation, which risks feeling gamified rather than luxury
+- [x] **4.3.7** — When the user upgrades tier and a section unlocks, play an "unlock" animation: desaturation lifts, lock morphs into chevron, border flashes with tier gradient, glass opacity rises to full — celebrating the unlock moment
 
 #### Acceptance Criteria
 
-- [ ] `CollapsibleSection` accepts `isLocked: Bool` parameter
-- [ ] Locked sections show desaturated glass, reduced material opacity, lock overlay on icon
-- [ ] Chevron is replaced with `lock.fill` when section is locked
-- [ ] Tapping a locked section shows tier-colored flash + "Unlock with {TierName}" toast
-- [ ] Badge displays lock icon in tier color when section is locked
-- [ ] Frosted veil overlay distinguishes locked sections from unlocked at a glance
-- [ ] Unlock animation celebrates tier upgrade with morph + flash + opacity rise
-- [ ] All 8 tier-gated JourneyView sections correctly reflect their lock state
-- [ ] Lock treatment doesn't cause layout shift — section size is identical locked vs. unlocked
+- [x] `CollapsibleSection` accepts `isLocked: Bool` parameter
+- [x] Locked sections show desaturated glass, reduced material opacity, lock overlay on icon
+- [x] Chevron is replaced with `lock.fill` when section is locked
+- [x] Tapping a locked section shows tier-colored flash + "Unlock with {TierName}" toast
+- [x] Badge displays lock icon in tier color when section is locked
+- [x] Frosted veil overlay distinguishes locked sections from unlocked at a glance
+- [x] Unlock animation celebrates tier upgrade with morph + flash + opacity rise
+- [x] All 8 tier-gated JourneyView sections correctly reflect their lock state
+- [x] Lock treatment doesn't cause layout shift — section size is identical locked vs. unlocked
 
 ---
 
@@ -635,22 +635,22 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **4.4.1** — Add `.animation(.easeInOut(duration: 0.4), value: colorScheme)` to the `CollapsibleSection` body — ensuring all glass layers (material, tint, highlight, stroke, shadow) animate during mode change
-- **4.4.2** — Verify that the Caribbean tint gradient fades in when switching to light mode and fades out when switching to dark mode — not a hard swap
-- **4.4.3** — Stroke border color should crossfade between dark (white-based) and light (lavender-based) palettes
-- **4.4.4** — Shadow color should crossfade between dark (black-based) and light (lavender-based) tints
-- **4.4.5** — Test on JourneyView with all 13 sections visible — verify that all sections transition simultaneously and uniformly (no staggered/delayed transitions between sections)
-- **4.4.6** — Test with the system appearance toggle in Control Center (live transition) and via Settings → Display (app restart) — both paths should look correct
+- [x] **4.4.1** — Add `.animation(.easeInOut(duration: 0.4), value: colorScheme)` to the `CollapsibleSection` body — ensuring all glass layers (material, tint, highlight, stroke, shadow) animate during mode change
+- [x] **4.4.2** — Verify that the Caribbean tint gradient fades in when switching to light mode and fades out when switching to dark mode — not a hard swap
+- [x] **4.4.3** — Stroke border color should crossfade between dark (white-based) and light (lavender-based) palettes
+- [x] **4.4.4** — Shadow color should crossfade between dark (black-based) and light (lavender-based) tints
+- [x] **4.4.5** — Test on JourneyView with all 13 sections visible — verify that all sections transition simultaneously and uniformly (no staggered/delayed transitions between sections)
+- [x] **4.4.6** — Test with the system appearance toggle in Control Center (live transition) and via Settings → Display (app restart) — both paths should look correct
 
 #### Acceptance Criteria
 
-- [ ] All glass layers animate smoothly during dark↔light mode transition
-- [ ] Caribbean tint fades in/out smoothly (not a hard swap)
-- [ ] Stroke border crossfades between dark and light color palettes
-- [ ] Shadows crossfade between dark (black) and light (lavender) tints
-- [ ] All visible sections on a screen transition simultaneously — no visible desync
-- [ ] Transition duration is 0.4s (matching system convention)
-- [ ] Both live toggle and app-restart mode changes render correctly
+- [x] All glass layers animate smoothly during dark↔light mode transition
+- [x] Caribbean tint fades in/out smoothly (not a hard swap)
+- [x] Stroke border crossfades between dark and light color palettes
+- [x] Shadows crossfade between dark (black) and light (lavender) tints
+- [x] All visible sections on a screen transition simultaneously — no visible desync
+- [x] Transition duration is 0.4s (matching system convention)
+- [x] Both live toggle and app-restart mode changes render correctly
 
 ---
 

@@ -35,7 +35,7 @@ struct SoundscapeNowPlaying: View {
         if isVisible, let soundscape = audio.activeSoundscape {
             CollapsibleSection(
                 style: .miniPlayer,
-                colors: Array(soundscape.previewColors.prefix(2)),
+                colors: CollapsibleSectionTheme.soundscape(previewColors: soundscape.previewColors).gradientColors,
                 isCollapsed: $isCollapsed,
                 cornerRadius: 18,
                 header: {

@@ -193,7 +193,7 @@ struct MembershipView: View {
     private var comparisonSection: some View {
         CollapsibleSection(
             style: .inline,
-            colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+            colors: CollapsibleSectionTheme.featureComparison.gradientColors,
             isCollapsed: $isComparisonCollapsed,
             header: {
                 HStack {
