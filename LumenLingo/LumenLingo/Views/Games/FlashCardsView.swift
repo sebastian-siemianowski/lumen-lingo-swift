@@ -47,7 +47,6 @@ struct FlashCardsView: View {
 
     // Dopamine particles
     @State private var luminousMotes: [LuminousMote] = []
-    @State private var streakPulse: CGFloat = 1.0
     @State private var borderBreathPhase: CGFloat = 0
     @State private var displayedScore: Int = 0
 
@@ -229,7 +228,18 @@ struct FlashCardsView: View {
         ZStack {
             VStack(spacing: 0) {
                 // Exercise header
-                exerciseHeader
+                GameHeader(
+                    categoryName: categoryName,
+                    score: displayedScore,
+                    correctCount: correctCount,
+                    wrongCount: wrongCount,
+                    streakCount: streak,
+                    currentQuestion: currentIndex + 1,
+                    totalQuestions: words.count,
+                    progressFraction: progress,
+                    theme: .flashcards,
+                    onBack: { dismiss() }
+                )
 
                 Spacer()
 
@@ -290,100 +300,7 @@ struct FlashCardsView: View {
 
     // (Success/wrong overlays removed — replaced with card-centric glow)
 
-    // MARK: - Exercise Header
-
-    private var exerciseHeader: some View {
-        VStack(spacing: 12) {
-            HStack {
-                Button {
-                    HapticsService.shared.navTransition()
-                    dismiss()
-                } label: {
-                    HStack(spacing: 6) {
-                        Image(systemName: "chevron.left")
-                        Text(L.back)
-                    }
-                    .font(.subheadline)
-                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-                }
-
-                Spacer()
-
-                Text(categoryName)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-
-                Spacer()
-
-                // Score badge
-                HStack(spacing: 4) {
-                    Image(systemName: "bolt.fill")
-                        .foregroundStyle(.yellow)
-                    Text("\(displayedScore)")
-                        .font(.subheadline.bold())
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
-                        .contentTransition(.numericText())
-                }
-                .padding(.horizontal, 10)
-                .padding(.vertical, 5)
-                .glassEffect(.regular.tint(.yellow.opacity(0.1)), in: .capsule)
-            }
-
-            // Progress bar
-            AnimatedProgressBar(
-                progress: progress * 100,
-                height: 4,
-                gradient: [Color(hex: "#667eea"), Color(hex: "#06b6d4"), Color(hex: "#0d9488")]
-            )
-
-            // Stats badges
-            HStack(spacing: 16) {
-                statPill(icon: "checkmark", value: "\(correctCount)", color: .green)
-                statPill(icon: "xmark", value: "\(wrongCount)", color: .orange)
-                if streak > 0 {
-                    HStack(spacing: 3) {
-                        Image(systemName: "flame.fill")
-                            .font(.system(size: 10, weight: .bold))
-                            .foregroundStyle(
-                                streak >= 5 ? .red :
-                                streak >= 3 ? .orange : .yellow
-                            )
-                        Text("\(streak)")
-                            .font(.caption2.bold())
-                            .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
-                    }
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 3)
-                    .glassEffect(
-                        .regular.tint(
-                            (streak >= 5 ? Color.red : streak >= 3 ? .orange : .yellow).opacity(0.2)
-                        ),
-                        in: .capsule
-                    )
-                    .scaleEffect(streakPulse)
-                }
-                Spacer()
-                Text("\(currentIndex + 1)/\(words.count)")
-                    .font(.caption)
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-            }
-        }
-        .padding(.top, 8)
-    }
-
-    private func statPill(icon: String, value: String, color: Color) -> some View {
-        HStack(spacing: 3) {
-            Image(systemName: icon)
-                .font(.system(size: 10, weight: .bold))
-                .foregroundStyle(color)
-            Text(value)
-                .font(.caption2.bold())
-                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
-        }
-        .padding(.horizontal, 8)
-        .padding(.vertical, 3)
-        .glassEffect(.regular.tint(color.opacity(0.2)), in: .capsule)
-    }
+    // MARK: - Exercise Header (now uses shared GameHeader component)
 
     // MARK: - Flashcard
 
@@ -957,18 +874,6 @@ struct FlashCardsView: View {
 
             // Animate score counter
             animateScoreUp(by: 10)
-
-            // Streak pulse — gentle glow on milestones
-            if streak >= 3 {
-                withAnimation(.easeOut(duration: 0.2)) {
-                    streakPulse = 1.15
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                    withAnimation(.easeOut(duration: 0.6)) {
-                        streakPulse = 1.0
-                    }
-                }
-            }
 
             // Green glow around the card
             answerGlow = .green

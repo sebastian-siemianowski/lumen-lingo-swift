@@ -201,7 +201,18 @@ struct GrammarView: View {
     private func gameplayView(question: GrammarQuestion) -> some View {
         ScrollView {
             VStack(spacing: 20) {
-                exerciseHeader
+                GameHeader(
+                    categoryName: categoryName,
+                    score: score,
+                    correctCount: correctCount,
+                    wrongCount: wrongCount,
+                    streakCount: streak,
+                    currentQuestion: currentIndex + 1,
+                    totalQuestions: questions.count,
+                    progressFraction: progress,
+                    theme: .grammar,
+                    onBack: { dismiss() }
+                )
 
                 // Question card
                 questionCard(question: question)
@@ -223,74 +234,7 @@ struct GrammarView: View {
         .onDisappear { idleTimer?.invalidate() }
     }
 
-    // MARK: - Exercise Header
-
-    private var exerciseHeader: some View {
-        VStack(spacing: 12) {
-            HStack {
-                Button { HapticsService.shared.navTransition(); dismiss() } label: {
-                    HStack(spacing: 6) {
-                        Image(systemName: "chevron.left")
-                        Text(L.back)
-                    }
-                    .font(.subheadline)
-                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-                }
-
-                Spacer()
-
-                Text(categoryName)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-
-                Spacer()
-
-                HStack(spacing: 4) {
-                    Image(systemName: "bolt.fill")
-                        .foregroundStyle(.yellow)
-                    Text("\(score)")
-                        .font(.subheadline.bold())
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
-                }
-                .padding(.horizontal, 10)
-                .padding(.vertical, 5)
-                .background(Capsule().fill(.white.opacity(0.1)))
-            }
-
-            // Progress bar
-            AnimatedProgressBar(
-                progress: progress * 100,
-                height: 4,
-                gradient: [Color(hex: "#f093fb"), Color(hex: "#f5576c"), Color(hex: "#e11d48")]
-            )
-
-            HStack(spacing: 16) {
-                statPill(icon: "checkmark", value: "\(correctCount)", color: .green)
-                statPill(icon: "xmark", value: "\(wrongCount)", color: .orange)
-                if streak > 0 {
-                    statPill(icon: "flame.fill", value: "\(streak)", color: .yellow)
-                }
-                Spacer()
-                Text("\(currentIndex + 1)/\(questions.count)")
-                    .font(.caption)
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-            }
-        }
-    }
-
-    private func statPill(icon: String, value: String, color: Color) -> some View {
-        HStack(spacing: 3) {
-            Image(systemName: icon)
-                .font(.system(size: sizeClass == .compact ? 10 : 12, weight: .bold))
-                .foregroundStyle(color)
-            Text(value)
-                .font(sizeClass == .compact ? .caption2.bold() : .caption.bold())
-                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
-        }
-        .padding(.horizontal, sizeClass == .compact ? 8 : 10)
-        .padding(.vertical, 3)
-        .background(Capsule().fill(color.opacity(0.15)))
-    }
+    // MARK: - Exercise Header (now uses shared GameHeader component)
 
     // MARK: - Question Card
 

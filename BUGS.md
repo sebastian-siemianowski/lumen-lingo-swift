@@ -28,7 +28,7 @@
 | E13 | [Word Constructor Polish](#epic-13-word-constructor-polish) | P1 | 3 | 13 | ✅ Done |
 | E14 | [Royal Paywall Visual Integrity](#epic-14-royal-paywall-visual-integrity) | P0 | 3 | 13 | ✅ Done |
 | E15 | [Haptic Feedback Integration](#epic-15-haptic-feedback-integration) | P1 | 4 | 18 | ✅ Done |
-| E16 | [Game Header UX Redesign](#epic-16-game-header-ux-redesign) | P2 | 4 | 18 |
+| E16 | [Game Header UX Redesign](#epic-16-game-header-ux-redesign) | P2 | 4 | 18 | ✅ Done |
 | | **TOTALS** | | **59** | **278** |
 
 ---
@@ -2172,7 +2172,7 @@
 **ID:** BUG-056  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** developer,  
 **I want** a single, shared `GameHeader` component used by all 3 games,  
@@ -2180,12 +2180,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: A `GameHeader.swift` file is created in `Views/Games/Shared/` (or `Views/Shared/`).
-- [ ] AC2: The component accepts: `categoryName: String`, `score: Int`, `correctCount: Int`, `wrongCount: Int`, `streakCount: Int`, `currentQuestion: Int`, `totalQuestions: Int`, `progressFraction: Double`, `gradientColors: [Color]`, `onBack: () -> Void`.
-- [ ] AC3: All three games (`FlashCardsView`, `GrammarView`, `WordBuilderView`) use `GameHeader(...)` instead of their local `exerciseHeader`.
-- [ ] AC4: Stat pills use a consistent treatment across all games — either all `.glassEffect` (if iOS 26+ only) or all `.ultraThinMaterial` with colored tint.
-- [ ] AC5: No visual regressions in any game after the extraction.
-- [ ] AC6: Each game still passes its unique gradient colors to maintain game identity (blue for flashcards, pink for grammar, gold for word builder).
+- [x] AC1: A `GameHeader.swift` file is created in `Views/Games/Shared/` (or `Views/Shared/`).
+- [x] AC2: The component accepts: `categoryName: String`, `score: Int`, `correctCount: Int`, `wrongCount: Int`, `streakCount: Int`, `currentQuestion: Int`, `totalQuestions: Int`, `progressFraction: Double`, `gradientColors: [Color]`, `onBack: () -> Void`.
+- [x] AC3: All three games (`FlashCardsView`, `GrammarView`, `WordBuilderView`) use `GameHeader(...)` instead of their local `exerciseHeader`.
+- [x] AC4: Stat pills use a consistent treatment across all games — either all `.glassEffect` (if iOS 26+ only) or all `.ultraThinMaterial` with colored tint.
+- [x] AC5: No visual regressions in any game after the extraction.
+- [x] AC6: Each game still passes its unique gradient colors to maintain game identity (blue for flashcards, pink for grammar, gold for word builder).
 
 #### Subtasks
 
@@ -2206,7 +2206,7 @@
 **ID:** BUG-057  
 **Priority:** P2  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user playing any game,  
 **I want** the header to be visually stunning — a premium bar that feels like part of the game's identity,  
@@ -2214,14 +2214,14 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The header uses a glassmorphic background: `RoundedRectangle(cornerRadius: 20).fill(.ultraThinMaterial)` with a subtle gradient border using the game's colors.
-- [ ] AC2: The back button is a compact icon-only button (chevron.left in a circle) — no "Back" text, to save horizontal space.
-- [ ] AC3: The category name uses `.headline` font with the game's gradient as foreground style.
-- [ ] AC4: The score badge uses a larger, more prominent treatment: the score number in `.title3.bold()` with the bolt icon in the game's accent color, inside a glassmorphic capsule.
-- [ ] AC5: The progress bar has a glow effect — a subtle shadow behind the filled portion that uses the game's gradient color at 40% opacity.
-- [ ] AC6: Stat pills have icons before their text: `checkmark.circle.fill` for correct, `xmark.circle.fill` for wrong, `flame.fill` for streak, `number.circle.fill` for question count.
-- [ ] AC7: The header float above the content with a subtle shadow (`y: 2, radius: 4, opacity: 0.15`), not flush against the content below.
-- [ ] AC8: The header is responsive: on iPhone SE, it uses `.caption` fonts and tighter spacing; on larger screens, `.footnote` or `.body`.
+- [x] AC1: The header uses a glassmorphic background: `RoundedRectangle(cornerRadius: 20).fill(.ultraThinMaterial)` with a subtle gradient border using the game's colors.
+- [x] AC2: The back button is a compact icon-only button (chevron.left in a circle) — no "Back" text, to save horizontal space.
+- [x] AC3: The category name uses `.headline` font with the game's gradient as foreground style.
+- [x] AC4: The score badge uses a larger, more prominent treatment: the score number in `.title3.bold()` with the bolt icon in the game's accent color, inside a glassmorphic capsule.
+- [x] AC5: The progress bar has a glow effect — a subtle shadow behind the filled portion that uses the game's gradient color at 40% opacity.
+- [x] AC6: Stat pills have icons before their text: `checkmark.circle.fill` for correct, `xmark.circle.fill` for wrong, `flame.fill` for streak, `number.circle.fill` for question count.
+- [x] AC7: The header float above the content with a subtle shadow (`y: 2, radius: 4, opacity: 0.15`), not flush against the content below.
+- [x] AC8: The header is responsive: on iPhone SE, it uses `.caption` fonts and tighter spacing; on larger screens, `.footnote` or `.body`.
 
 #### Subtasks
 
@@ -2243,7 +2243,7 @@
 **ID:** BUG-058  
 **Priority:** P2  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user playing a game,  
 **I want** the header stats (correct, wrong, streak, score) to animate when they change,  
@@ -2251,12 +2251,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: When the correct count increments: the correct pill briefly scales up (1.2x) and glows green for 0.3s.
-- [ ] AC2: When the wrong count increments: the wrong pill briefly shakes (3 times, 2pt amplitude) and glows orange for 0.3s.
-- [ ] AC3: When the streak count increments: the flame icon gets a brief "fire" animation (scale 1.3x + color intensity increase) for 0.4s.
-- [ ] AC4: When the score changes: the number uses a rolling counter animation (digits spin), similar to the game completion score counter.
-- [ ] AC5: The progress bar fills smoothly (0.5s ease-out animation) when advancing to the next question — not a discrete jump.
-- [ ] AC6: Animations don't interfere with each other — multiple stats can animate simultaneously (e.g., correct count + streak + score all update at once).
+- [x] AC1: When the correct count increments: the correct pill briefly scales up (1.2x) and glows green for 0.3s.
+- [x] AC2: When the wrong count increments: the wrong pill briefly shakes (3 times, 2pt amplitude) and glows orange for 0.3s.
+- [x] AC3: When the streak count increments: the flame icon gets a brief "fire" animation (scale 1.3x + color intensity increase) for 0.4s.
+- [x] AC4: When the score changes: the number uses a rolling counter animation (digits spin), similar to the game completion score counter.
+- [x] AC5: The progress bar fills smoothly (0.5s ease-out animation) when advancing to the next question — not a discrete jump.
+- [x] AC6: Animations don't interfere with each other — multiple stats can animate simultaneously (e.g., correct count + streak + score all update at once).
 
 #### Subtasks
 
@@ -2277,7 +2277,7 @@
 **ID:** BUG-059  
 **Priority:** P3  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user,  
 **I want** each game to have a distinct visual identity in its header,  
@@ -2285,11 +2285,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: **Flashcards:** Header gradient is blue → cyan → teal. Score badge has a `bolt.circle.fill` icon. Progress bar has a "flowing water" effect (animated gradient position).
-- [ ] AC2: **Grammar:** Header gradient is pink → rose → crimson. Score badge has a `brain.fill` icon. Progress bar has a "heartbeat" effect (subtle pulse at the fill edge).
-- [ ] AC3: **Word Builder:** Header gradient is gold → orange → amber. Score badge has a `star.circle.fill` icon. Progress bar has a "fire trail" effect (warm glow at the fill edge).
-- [ ] AC4: Each game's `GameHeader` call passes a `theme: GameHeaderTheme` that encapsulates colors, icons, and the progress bar effect.
-- [ ] AC5: The themes are defined as static properties on `GameHeaderTheme` for easy reference: `.flashcards`, `.grammar`, `.wordBuilder`.
+- [x] AC1: **Flashcards:** Header gradient is blue → cyan → teal. Score badge has a `bolt.circle.fill` icon. Progress bar has a "flowing water" effect (animated gradient position).
+- [x] AC2: **Grammar:** Header gradient is pink → rose → crimson. Score badge has a `brain.fill` icon. Progress bar has a "heartbeat" effect (subtle pulse at the fill edge).
+- [x] AC3: **Word Builder:** Header gradient is gold → orange → amber. Score badge has a `star.circle.fill` icon. Progress bar has a "fire trail" effect (warm glow at the fill edge).
+- [x] AC4: Each game's `GameHeader` call passes a `theme: GameHeaderTheme` that encapsulates colors, icons, and the progress bar effect.
+- [x] AC5: The themes are defined as static properties on `GameHeaderTheme` for easy reference: `.flashcards`, `.grammar`, `.wordBuilder`.
 
 #### Subtasks
 
