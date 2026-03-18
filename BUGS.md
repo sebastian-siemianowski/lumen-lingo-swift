@@ -23,7 +23,7 @@
 | E8 | [Profile Page UX Refinement](#epic-8-profile-page-ux-refinement) | P2 | 3 | 13 |
 | E9 | [Onboarding Mobile Optimization](#epic-9-onboarding-mobile-optimization) | P0 | 4 | 18 | ✅ Done |
 | E10 | [Game Completion Flow](#epic-10-game-completion-flow) | P1 | 4 | 18 | ✅ Done |
-| E11 | [Grammar Challenge UX Overhaul](#epic-11-grammar-challenge-ux-overhaul) | P1 | 5 | 26 |
+| E11 | [Grammar Challenge UX Overhaul](#epic-11-grammar-challenge-ux-overhaul) | P1 | 5 | 26 | ✅ Done |
 | E12 | [Recent Activity Cross-Language Support](#epic-12-recent-activity-cross-language-support) | P1 | 3 | 13 |
 | E13 | [Word Constructor Polish](#epic-13-word-constructor-polish) | P1 | 3 | 13 |
 | E14 | [Royal Paywall Visual Integrity](#epic-14-royal-paywall-visual-integrity) | P0 | 3 | 13 | ✅ Done |
@@ -1482,32 +1482,32 @@
 **ID:** BUG-038  
 **Priority:** P0  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
-**As a** user playing the Grammar Challenge,  
-**I want** every answer option to be fully readable without any text being cut off,  
+**As a** user playing the Grammar Challenge,
+**I want** every answer option to be fully readable without any text being cut off,
 **So that** I can make an informed choice among the options.
 
 #### Acceptance Criteria
 
-- [ ] AC1: On iPhone (compact width): answer options use a **single-column layout** (full-width cards) instead of a 2-column grid. Each option occupies the full width of the card.
-- [ ] AC2: On iPad (regular width): answer options use a 2-column layout with enough width per column for even the longest answer options.
-- [ ] AC3: Option text uses `.body` font (not `.caption2` or `.footnote`) with `.lineLimit(nil)` — text wraps to as many lines as needed.
-- [ ] AC4: Each option card has minimum height of 48pt (tappable area) but grows vertically to accommodate wrapped text.
-- [ ] AC5: The letter badge (A/B/C/D) remains fixed-size and aligned to the top-left of its option card, even when text wraps.
-- [ ] AC6: Option cards maintain 8pt spacing between them.
-- [ ] AC7: All languages (including those with longer word structures like German compounds or Japanese phrases) display without truncation. Test with the longest known answer option in the content.
+- [x] AC1: On iPhone (compact width): answer options use a **single-column layout** (full-width cards) instead of a 2-column grid. Each option occupies the full width of the card.
+- [x] AC2: On iPad (regular width): answer options use a 2-column layout with enough width per column for even the longest answer options.
+- [x] AC3: Option text uses `.body` font (not `.caption2` or `.footnote`) with `.lineLimit(nil)` — text wraps to as many lines as needed.
+- [x] AC4: Each option card has minimum height of 48pt (tappable area) but grows vertically to accommodate wrapped text.
+- [x] AC5: The letter badge (A/B/C/D) remains fixed-size and aligned to the top-left of its option card, even when text wraps.
+- [x] AC6: Option cards maintain 8pt spacing between them.
+- [x] AC7: All languages (including those with longer word structures like German compounds or Japanese phrases) display without truncation. Test with the longest known answer option in the content.
 
 #### Subtasks
 
 | # | Subtask | Est. | File(s) |
 |---|---------|------|---------|
-| 11.1.1 | In `GrammarView.swift`, locate the `LazyVGrid` for answer options. Identify the column definition and cell content view. | 30m | `GrammarView.swift` |
-| 11.1.2 | Replace the `LazyVGrid` with a conditional layout: `if horizontalSizeClass == .compact { VStack(spacing: 8) { ForEach(options) { OptionCard(option:) } } } else { LazyVGrid(columns: [.flexible(), .flexible()], spacing: 8) { ... } }`. | 1h | `GrammarView.swift` |
-| 11.1.3 | Create `GrammarOptionCard` view: `HStack(alignment: .top, spacing: 12) { letterBadge(A/B/C/D, 32pt circle) VStack(alignment: .leading) { Text(option.text).font(.body).lineLimit(nil) } Spacer() resultIcon }`. Minimum card height: 48pt. | 2h | `GrammarView.swift` |
-| 11.1.4 | Apply glassmorphic card background to each option: `.ultraThinMaterial` in a `RoundedRectangle(cornerRadius: 12)` with a colored border when selected (green for correct, red for wrong, neutral for unselected). | 1h | `GrammarView.swift` |
-| 11.1.5 | Test with the longest answer option in the content files. Also test with German (compound words like "Donaudampfschifffahrtsgesellschaftskapitän") and Japanese. | 1h | — |
-| 11.1.6 | Verify the idle hint glow still works correctly on the single-column layout. | 30m | `GrammarView.swift` |
+| 11.1.1 | ✅ In `GrammarView.swift`, locate the `LazyVGrid` for answer options. Identify the column definition and cell content view. | 30m | `GrammarView.swift` |
+| 11.1.2 | ✅ Replace the `LazyVGrid` with a conditional layout: `if horizontalSizeClass == .compact { VStack(spacing: 8) { ForEach(options) { OptionCard(option:) } } } else { LazyVGrid(columns: [.flexible(), .flexible()], spacing: 8) { ... } }`. | 1h | `GrammarView.swift` |
+| 11.1.3 | ✅ Create `GrammarOptionCard` view: `HStack(alignment: .top, spacing: 12) { letterBadge(A/B/C/D, 32pt circle) VStack(alignment: .leading) { Text(option.text).font(.body).lineLimit(nil) } Spacer() resultIcon }`. Minimum card height: 48pt. | 2h | `GrammarView.swift` |
+| 11.1.4 | ✅ Apply glassmorphic card background to each option: `.ultraThinMaterial` in a `RoundedRectangle(cornerRadius: 12)` with a colored border when selected (green for correct, red for wrong, neutral for unselected). | 1h | `GrammarView.swift` |
+| 11.1.5 | ✅ Test with the longest answer option in the content files. Also test with German (compound words like "Donaudampfschifffahrtsgesellschaftskapitän") and Japanese. | 1h | — |
+| 11.1.6 | ✅ Verify the idle hint glow still works correctly on the single-column layout. | 30m | `GrammarView.swift` |
 
 ---
 
@@ -1516,30 +1516,30 @@
 **ID:** BUG-039  
 **Priority:** P1  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
-**As a** user who prefers grammar tips collapsed,  
-**I want** my collapse preference to be remembered between app sessions,  
+**As a** user who prefers grammar tips collapsed,
+**I want** my collapse preference to be remembered between app sessions,
 **So that** I don't have to re-collapse the tips panel every time I play.
 
 #### Acceptance Criteria
 
-- [ ] AC1: The grammar tip collapse/expand state is persisted using `@AppStorage("grammarTipsCollapsed")`.
-- [ ] AC2: On first launch (no persisted value), the default is EXPANDED (showing tips).
-- [ ] AC3: When the user collapses the tip, the preference is saved immediately.
-- [ ] AC4: On app relaunch, the tip starts in the user's last-chosen state.
-- [ ] AC5: The tip can still be manually expanded/collapsed at any time during gameplay — the toggling is not disabled by the persisted default.
-- [ ] AC6: If the user answers a question and the tip auto-reveals: it respects the persisted preference. If the user prefers collapsed, the tip does NOT auto-expand on answer. The correct/wrong indicator still shows, but the detailed explanation stays collapsed.
+- [x] AC1: The grammar tip collapse/expand state is persisted using `@AppStorage("grammarTipsCollapsed")`.
+- [x] AC2: On first launch (no persisted value), the default is EXPANDED (showing tips).
+- [x] AC3: When the user collapses the tip, the preference is saved immediately.
+- [x] AC4: On app relaunch, the tip starts in the user's last-chosen state.
+- [x] AC5: The tip can still be manually expanded/collapsed at any time during gameplay — the toggling is not disabled by the persisted default.
+- [x] AC6: If the user answers a question and the tip auto-reveals: it respects the persisted preference. If the user prefers collapsed, the tip does NOT auto-expand on answer. The correct/wrong indicator still shows, but the detailed explanation stays collapsed.
 
 #### Subtasks
 
 | # | Subtask | Est. | File(s) |
 |---|---------|------|---------|
-| 11.2.1 | Replace `@State private var showExplanation = false` with `@AppStorage("grammarTipsCollapsed") private var tipsCollapsed = false`. | 15m | `GrammarView.swift` |
-| 11.2.2 | Update the `DisclosureGroup` binding: `isExpanded: Binding(get: { !tipsCollapsed }, set: { tipsCollapsed = !$0 })`. | 30m | `GrammarView.swift` |
-| 11.2.3 | Modify the auto-reveal after answering: `if !tipsCollapsed { withAnimation { showExplanation = true } }` — only auto-expand if the user hasn't set collapsed preference. | 30m | `GrammarView.swift` |
-| 11.2.4 | Add a subtle indicator when tips are collapsed: a small lightbulb badge on the question card saying "Tip available" that pulses once, reminding the user they can expand. | 30m | `GrammarView.swift` |
-| 11.2.5 | Test persistence: collapse tips → force-quit app → relaunch → start grammar game → verify tips start collapsed. Also test the reverse (expand → quit → relaunch → expanded). | 30m | — |
+| 11.2.1 | ✅ Replace `@State private var showExplanation = false` with `@AppStorage("grammarTipsCollapsed") private var tipsCollapsed = false`. | 15m | `GrammarView.swift` |
+| 11.2.2 | ✅ Update the `DisclosureGroup` binding: `isExpanded: Binding(get: { !tipsCollapsed }, set: { tipsCollapsed = !$0 })`. | 30m | `GrammarView.swift` |
+| 11.2.3 | ✅ Modify the auto-reveal after answering: `if !tipsCollapsed { withAnimation { showExplanation = true } }` — only auto-expand if the user hasn't set collapsed preference. | 30m | `GrammarView.swift` |
+| 11.2.4 | ✅ Add a subtle indicator when tips are collapsed: a small lightbulb badge on the question card saying "Tip available" that pulses once, reminding the user they can expand. | 30m | `GrammarView.swift` |
+| 11.2.5 | ✅ Test persistence: collapse tips → force-quit app → relaunch → start grammar game → verify tips start collapsed. Also test the reverse (expand → quit → relaunch → expanded). | 30m | — |
 
 ---
 
@@ -1548,32 +1548,28 @@
 **ID:** BUG-040  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
-
-**As a** user,  
-**I want** the grammar question card to be visually polished and engaging,  
-**So that** the Grammar Challenge feels as premium as the Flashcard and Word Builder games.
+**Status:** ✅ Done
 
 #### Acceptance Criteria
 
-- [ ] AC1: The question text panel uses a deeper, richer gradient (dark purple → indigo → deep blue) with subtle noise texture overlay for visual depth.
-- [ ] AC2: The question text is `.title3.bold()` with `.foregroundColor(.white)` and `.shadow(radius: 1)` for crisp visibility against the gradient.
-- [ ] AC3: When the user answers correctly: the question panel transitions to a celebratory state with a green-to-emerald gradient and the correct answer highlighted with a glow effect.
-- [ ] AC4: When the user answers incorrectly: the panel shows the correct answer in green and the selected wrong answer in red, with a brief shake animation on the wrong answer.
-- [ ] AC5: The sentence context (the full sentence with the answer blank) is always visible — the blank is indicated by an underlined space or a glowing placeholder that the answer will fill.
-- [ ] AC6: The card has a generous inner padding (20pt) and a visible border using the game's signature gradient (pink-rose).
+- [x] AC1: The question text panel uses a deeper, richer gradient (dark purple → indigo → deep blue) with subtle noise texture overlay for visual depth.
+- [x] AC2: The question text is `.title3.bold()` with `.foregroundColor(.white)` and `.shadow(radius: 1)` for crisp visibility against the gradient.
+- [x] AC3: When the user answers correctly: the question panel transitions to a celebratory state with a green-to-emerald gradient and the correct answer highlighted with a glow effect.
+- [x] AC4: When the user answers incorrectly: the panel shows the correct answer in green and the selected wrong answer in red, with a brief shake animation on the wrong answer.
+- [x] AC5: The sentence context (the full sentence with the answer blank) is always visible — the blank is indicated by an underlined space or a glowing placeholder that the answer will fill.
+- [x] AC6: The card has a generous inner padding (20pt) and a visible border using the game's signature gradient (pink-rose).
 
 #### Subtasks
 
 | # | Subtask | Est. | File(s) |
 |---|---------|------|---------|
-| 11.3.1 | Update the question panel gradient: `LinearGradient(colors: [Color(hex: "#2E1065"), Color(hex: "#312E81"), Color(hex: "#1E3A5F")], startPoint: .topLeading, endPoint: .bottomTrailing)`. | 30m | `GrammarView.swift` |
-| 11.3.2 | Add noise texture overlay: `Image("noise")` or generated noise using `Canvas` at 3% opacity over the gradient. | 30m | `GrammarView.swift` |
-| 11.3.3 | Implement correct-answer state: animate gradient transition to green-emerald using `withAnimation(.easeInOut(duration: 0.4))` when the answer is revealed. | 1h | `GrammarView.swift` |
-| 11.3.4 | Implement wrong-answer shake: `.modifier(ShakeEffect(shakes: 3, offset: 6))` on the selected wrong answer card, triggered on incorrect selection. | 1h | `GrammarView.swift` |
-| 11.3.5 | Style the answer blank in the sentence: underlined space with a subtle pulse glow animation, filled with the answer text (green for correct, red for wrong) after selection. | 1h | `GrammarView.swift` |
-| 11.3.6 | Add gradient border to the overall question card: `RoundedRectangle(cornerRadius: 20).stroke(LinearGradient(colors: [.pink, .rose, .purple], ...), lineWidth: 1.5)`. | 30m | `GrammarView.swift` |
-| 11.3.7 | Test the full question→answer→reveal→next flow. Verify animations are smooth, colors transition correctly, and the shake effect doesn't feel janky. | 1h | — |
+| 11.3.1 | ✅ Update the question panel gradient: `LinearGradient(colors: [Color(hex: "#2E1065"), Color(hex: "#312E81"), Color(hex: "#1E3A5F")], startPoint: .topLeading, endPoint: .bottomTrailing)`. | 30m | `GrammarView.swift` |
+| 11.3.2 | ✅ Add noise texture overlay: `Image("noise")` or generated noise using `Canvas` at 3% opacity over the gradient. | 30m | `GrammarView.swift` |
+| 11.3.3 | ✅ Implement correct-answer state: animate gradient transition to green-emerald using `withAnimation(.easeInOut(duration: 0.4))` when the answer is revealed. | 1h | `GrammarView.swift` |
+| 11.3.4 | ✅ Implement wrong-answer shake: `.modifier(ShakeEffect(shakes: 3, offset: 6))` on the selected wrong answer card, triggered on incorrect selection. | 1h | `GrammarView.swift` |
+| 11.3.5 | ✅ Style the answer blank in the sentence: underlined space with a subtle pulse glow animation, filled with the answer text (green for correct, red for wrong) after selection. | 1h | `GrammarView.swift` |
+| 11.3.6 | ✅ Add gradient border to the overall question card: `RoundedRectangle(cornerRadius: 20).stroke(LinearGradient(colors: [.pink, .rose, .purple], ...), lineWidth: 1.5)`. | 30m | `GrammarView.swift` |
+| 11.3.7 | ✅ Test the full question→answer→reveal→next flow. Verify animations are smooth, colors transition correctly, and the shake effect doesn't feel janky. | 1h | — |
 
 ---
 
@@ -1582,7 +1578,7 @@
 **ID:** BUG-041  
 **Priority:** P2  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** user,  
 **I want** the "Next" button in the Grammar Challenge to be prominent and satisfying to press,  
@@ -1590,21 +1586,21 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The "Next" button is full-width (matching the question card width) with generous height (52pt).
-- [ ] AC2: The button uses the grammar game's signature gradient (pink → rose → purple) as its background.
-- [ ] AC3: The button has an arrow-right icon after the "Next" text: `Label("Next", systemImage: "arrow.right")`.
-- [ ] AC4: Press feedback: scale (0.97x) + brightness reduction (0.9x) + haptic (`hapticsService.buttonPress()`).
-- [ ] AC5: The button only appears after the user has answered — it slides up (offset 40→0) with a spring animation (0.3s).
-- [ ] AC6: After the last question, the button text changes to "See Results" with a `checkmark.circle` icon.
+- [x] AC1: The "Next" button is full-width (matching the question card width) with generous height (52pt).
+- [x] AC2: The button uses the grammar game's signature gradient (pink → rose → purple) as its background.
+- [x] AC3: The button has an arrow-right icon after the "Next" text: `Label("Next", systemImage: "arrow.right")`.
+- [x] AC4: Press feedback: scale (0.97x) + brightness reduction (0.9x) + haptic (`hapticsService.buttonPress()`).
+- [x] AC5: The button only appears after the user has answered — it slides up (offset 40→0) with a spring animation (0.3s).
+- [x] AC6: After the last question, the button text changes to "See Results" with a `checkmark.circle` icon.
 
 #### Subtasks
 
 | # | Subtask | Est. | File(s) |
 |---|---------|------|---------|
-| 11.4.1 | Resize the next button: `.frame(maxWidth: .infinity, minHeight: 52)` with `.clipShape(RoundedRectangle(cornerRadius: 16))`. | 30m | `GrammarView.swift` |
-| 11.4.2 | Add the arrow icon: change label to `Label(isLastQuestion ? "See Results" : "Next", systemImage: isLastQuestion ? "checkmark.circle" : "arrow.right")`. | 30m | `GrammarView.swift` |
-| 11.4.3 | Add slide-up entrance: `.offset(y: showNextButton ? 0 : 40)` with `.animation(.spring(duration: 0.3), value: showNextButton)`. Set `showNextButton = true` when the answer is selected. | 30m | `GrammarView.swift` |
-| 11.4.4 | Add press feedback via `ButtonStyle`: `configuration.label.scaleEffect(configuration.isPressed ? 0.97 : 1.0).brightness(configuration.isPressed ? -0.1 : 0)` with haptic call. | 30m | `GrammarView.swift` |
+| 11.4.1 | ✅ Resize the next button: `.frame(maxWidth: .infinity, minHeight: 52)` with `.clipShape(RoundedRectangle(cornerRadius: 16))`. | 30m | `GrammarView.swift` |
+| 11.4.2 | ✅ Add the arrow icon: change label to `Label(isLastQuestion ? "See Results" : "Next", systemImage: isLastQuestion ? "checkmark.circle" : "arrow.right")`. | 30m | `GrammarView.swift` |
+| 11.4.3 | ✅ Add slide-up entrance: `.offset(y: showNextButton ? 0 : 40)` with `.animation(.spring(duration: 0.3), value: showNextButton)`. Set `showNextButton = true` when the answer is selected. | 30m | `GrammarView.swift` |
+| 11.4.4 | ✅ Add press feedback via `ButtonStyle`: `configuration.label.scaleEffect(configuration.isPressed ? 0.97 : 1.0).brightness(configuration.isPressed ? -0.1 : 0)` with haptic call. | 30m | `GrammarView.swift` |
 
 ---
 
@@ -1613,7 +1609,7 @@
 **ID:** BUG-042  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** ✅ Done
 
 **As a** mobile user,  
 **I want** the Grammar Challenge to be optimized for phone screens,  
@@ -1621,25 +1617,25 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The exercise header uses the same responsive pattern as the other games — adapts padding, font sizes, and stats pill layout for compact width.
-- [ ] AC2: The question card, answer options, grammar tip, and next button are all wrapped in a `ScrollView` so nothing is ever cropped, even with Dynamic Type enabled.
-- [ ] AC3: Horizontal padding is consistent at 16pt on both sides for all elements.
-- [ ] AC4: The answer option cards have a minimum tap target of 44×44pt (Apple HIG).
-- [ ] AC5: The grammar tip `DisclosureGroup` has sufficient padding and does not collide with the answer options above or the next button below.
-- [ ] AC6: The Stats pills (correct, wrong, streak) use adaptive sizing — `.caption` on small screens, `.footnote` on larger screens.
-- [ ] AC7: No element has hardcoded `frame(width:)` or `frame(height:)` values that cause cropping on smaller screens. All use `.frame(maxWidth: .infinity)` or flexible sizing.
+- [x] AC1: The exercise header uses the same responsive pattern as the other games — adapts padding, font sizes, and stats pill layout for compact width.
+- [x] AC2: The question card, answer options, grammar tip, and next button are all wrapped in a `ScrollView` so nothing is ever cropped, even with Dynamic Type enabled.
+- [x] AC3: Horizontal padding is consistent at 16pt on both sides for all elements.
+- [x] AC4: The answer option cards have a minimum tap target of 44×44pt (Apple HIG).
+- [x] AC5: The grammar tip `DisclosureGroup` has sufficient padding and does not collide with the answer options above or the next button below.
+- [x] AC6: The Stats pills (correct, wrong, streak) use adaptive sizing — `.caption` on small screens, `.footnote` on larger screens.
+- [x] AC7: No element has hardcoded `frame(width:)` or `frame(height:)` values that cause cropping on smaller screens. All use `.frame(maxWidth: .infinity)` or flexible sizing.
 
 #### Subtasks
 
 | # | Subtask | Est. | File(s) |
 |---|---------|------|---------|
-| 11.5.1 | Audit all hardcoded `frame(width:)` and `frame(height:)` in `GrammarView.swift`. Replace with flexible equivalents (`.frame(maxWidth: .infinity)`, `.fixedSize(horizontal: false, vertical: true)`). | 1h | `GrammarView.swift` |
-| 11.5.2 | Ensure the entire game content (below the header) is in a `ScrollView` with `.scrollDismissesKeyboard(.interactively)`. | 30m | `GrammarView.swift` |
-| 11.5.3 | Set consistent padding: `.padding(.horizontal, 16)` on the main content stack. Remove any per-element horizontal padding that creates asymmetry. | 30m | `GrammarView.swift` |
-| 11.5.4 | Add minimum tap targets: `.frame(minHeight: 44)` on all interactive elements (answer cards, next button, tip disclosure). | 30m | `GrammarView.swift` |
-| 11.5.5 | Make stats pills adaptive: `@Environment(\.horizontalSizeClass)` → compact uses `.caption2`, regular uses `.caption`. | 30m | `GrammarView.swift` |
-| 11.5.6 | Test with Dynamic Type at AX3 (large accessibility size) on iPhone SE. Verify all text wraps, no cropping, scroll works. | 1h | — |
-| 11.5.7 | Test with all available language pairs — ensure grammar options in every language render without truncation. | 1h | — |
+| 11.5.1 | ✅ Audit all hardcoded `frame(width:)` and `frame(height:)` in `GrammarView.swift`. Replace with flexible equivalents (`.frame(maxWidth: .infinity)`, `.fixedSize(horizontal: false, vertical: true)`). | 1h | `GrammarView.swift` |
+| 11.5.2 | ✅ Ensure the entire game content (below the header) is in a `ScrollView` with `.scrollDismissesKeyboard(.interactively)`. | 30m | `GrammarView.swift` |
+| 11.5.3 | ✅ Set consistent padding: `.padding(.horizontal, 16)` on the main content stack. Remove any per-element horizontal padding that creates asymmetry. | 30m | `GrammarView.swift` |
+| 11.5.4 | ✅ Add minimum tap targets: `.frame(minHeight: 44)` on all interactive elements (answer cards, next button, tip disclosure). | 30m | `GrammarView.swift` |
+| 11.5.5 | ✅ Make stats pills adaptive: `@Environment(\.horizontalSizeClass)` → compact uses `.caption2`, regular uses `.caption`. | 30m | `GrammarView.swift` |
+| 11.5.6 | ✅ Test with Dynamic Type at AX3 (large accessibility size) on iPhone SE. Verify all text wraps, no cropping, scroll works. | 1h | — |
+| 11.5.7 | ✅ Test with all available language pairs — ensure grammar options in every language render without truncation. | 1h | — |
 
 ---
 ---
