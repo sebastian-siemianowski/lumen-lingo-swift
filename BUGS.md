@@ -22,7 +22,7 @@
 | E7 | [Tier Transition Animation Polish](#epic-7-tier-transition-animation-polish) | P1 | 3 | 13 | ✅ Done |
 | E8 | [Profile Page UX Refinement](#epic-8-profile-page-ux-refinement) | P2 | 3 | 13 |
 | E9 | [Onboarding Mobile Optimization](#epic-9-onboarding-mobile-optimization) | P0 | 4 | 18 | ✅ Done |
-| E10 | [Game Completion Flow](#epic-10-game-completion-flow) | P1 | 4 | 18 |
+| E10 | [Game Completion Flow](#epic-10-game-completion-flow) | P1 | 4 | 18 | ✅ Done |
 | E11 | [Grammar Challenge UX Overhaul](#epic-11-grammar-challenge-ux-overhaul) | P1 | 5 | 26 |
 | E12 | [Recent Activity Cross-Language Support](#epic-12-recent-activity-cross-language-support) | P1 | 3 | 13 |
 | E13 | [Word Constructor Polish](#epic-13-word-constructor-polish) | P1 | 3 | 13 |
@@ -1333,7 +1333,7 @@
 **ID:** BUG-034  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user who just completed a game,  
 **I want** to see the action buttons (Next Category, Play Again, Back to Categories, Share) immediately without scrolling,  
@@ -1341,12 +1341,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: Action buttons are pinned to the bottom of the screen, outside the ScrollView, in a fixed-position bar (similar to a toolbar or bottom sheet).
-- [ ] AC2: The pinned button bar has a glassmorphic background (`.ultraThinMaterial`) with a gradient top border that fades into the scroll content above it.
-- [ ] AC3: The button bar contains: primary CTA ("Next Category" or "Play Again" — whichever is most relevant), secondary CTA (the other one), tertiary "Back to Categories" as a text-only button, and a share icon button.
-- [ ] AC4: The `ScrollView` content padding at the bottom accounts for the pinned button bar height (so the last content item doesn't hide behind the bar).
-- [ ] AC5: On iPad (where space is abundant), the buttons remain in the scroll content at the bottom (no pinned bar needed).
-- [ ] AC6: The pinned bar slides up with a spring animation (0.4s) when the completion view appears.
+- [x] AC1: Action buttons are pinned to the bottom of the screen, outside the ScrollView, in a fixed-position bar (similar to a toolbar or bottom sheet).
+- [x] AC2: The pinned button bar has a glassmorphic background (`.ultraThinMaterial`) with a gradient top border that fades into the scroll content above it.
+- [x] AC3: The button bar contains: primary CTA ("Next Category" or "Play Again" — whichever is most relevant), secondary CTA (the other one), tertiary "Back to Categories" as a text-only button, and a share icon button.
+- [x] AC4: The `ScrollView` content padding at the bottom accounts for the pinned button bar height (so the last content item doesn't hide behind the bar).
+- [x] AC5: On iPad (where space is abundant), the buttons remain in the scroll content at the bottom (no pinned bar needed).
+- [x] AC6: The pinned bar slides up with a spring animation (0.4s) when the completion view appears.
 
 #### Subtasks
 
@@ -1367,7 +1367,7 @@
 **ID:** BUG-035  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user on a smaller phone,  
 **I want** the game completion hero section (icon, score, stats) to be more compact,  
@@ -1375,12 +1375,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The hero icon area is reduced from ~240pt to ~140pt on compact screens (35% reduction). The icon scales to fit within the smaller frame.
-- [ ] AC2: The score and title are horizontally arranged (icon left, score + title right) on compact screens, instead of stacked vertically. This saves ~80pt of vertical space.
-- [ ] AC3: On iPad/larger screens, the existing vertical layout is preserved.
-- [ ] AC4: The orbital ring animation scales proportionally with the reduced icon size.
-- [ ] AC5: The radial glow effect is reduced in radius (not overflowing the compact frame).
-- [ ] AC6: The animated counter for the score still plays its full animation — the compaction doesn't skip any visual feedback.
+- [x] AC1: The hero icon area is reduced from ~240pt to ~140pt on compact screens (35% reduction). The icon scales to fit within the smaller frame.
+- [x] AC2: The score and title are horizontally arranged (icon left, score + title right) on compact screens, instead of stacked vertically. This saves ~80pt of vertical space.
+- [x] AC3: On iPad/larger screens, the existing vertical layout is preserved.
+- [x] AC4: The orbital ring animation scales proportionally with the reduced icon size.
+- [x] AC5: The radial glow effect is reduced in radius (not overflowing the compact frame).
+- [x] AC6: The animated counter for the score still plays its full animation — the compaction doesn't skip any visual feedback.
 
 #### Subtasks
 
@@ -1399,7 +1399,7 @@
 **ID:** BUG-036  
 **Priority:** P2  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** learner who just completed a game,  
 **I want** to share a beautifully designed result card on social media,  
@@ -1407,12 +1407,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The "Share Result" action generates a 1080×1080 PNG card with: game type icon, category name, score, accuracy %, correct/total, streak count, user's tier badge, and LumenLingo branding.
-- [ ] AC2: The card background uses the performance tier's gradient (Perfect = gold, Great = green, Good = blue, Needs Work = amber).
-- [ ] AC3: The card is rendered from a dedicated `GameResultShareCard` SwiftUI view using `ImageRenderer`.
-- [ ] AC4: The share sheet (`UIActivityViewController`) opens with the image and a pre-filled text: "I just scored X on [Category] in LumenLingo! 🎯"
-- [ ] AC5: The share feature is available on all tiers (not tier-gated).
-- [ ] AC6: A "Share" button with `.share` SF Symbol appears in the pinned bottom bar (Story 10.1).
+- [x] AC1: The "Share Result" action generates a 1080×1080 PNG card with: game type icon, category name, score, accuracy %, correct/total, streak count, user's tier badge, and LumenLingo branding.
+- [x] AC2: The card background uses the performance tier's gradient (Perfect = gold, Great = green, Good = blue, Needs Work = amber).
+- [x] AC3: The card is rendered from a dedicated `GameResultShareCard` SwiftUI view using `ImageRenderer`.
+- [x] AC4: The share sheet (`UIActivityViewController`) opens with the image and a pre-filled text: "I just scored X on [Category] in LumenLingo! 🎯"
+- [x] AC5: The share feature is available on all tiers (not tier-gated).
+- [x] AC6: A "Share" button with `.share` SF Symbol appears in the pinned bottom bar (Story 10.1).
 
 #### Subtasks
 
@@ -1430,7 +1430,7 @@
 **ID:** BUG-037  
 **Priority:** P2  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user finishing a game,  
 **I want** the transition from the last question to the completion screen to feel smooth and celebratory,  
@@ -1438,11 +1438,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The last question card fades out (0.3s) while the completion hero icon fades in with a scale-up effect (0.5→1.0, 0.5s spring).
-- [ ] AC2: The score counter starts its animation immediately as the hero section appears — no delay between screen transition and score reveal.
-- [ ] AC3: A subtle haptic pattern plays at the moment of transition: `UINotificationFeedbackGenerator.notificationOccurred(.success)` for pass, `.warning` for fail.
-- [ ] AC4: The stats row slides up from below (offset 40→0, 0.6s spring) with a 0.3s delay after the score appears.
-- [ ] AC5: If the user achieved a perfect score, an additional confetti/sparkle effect bursts from the hero icon (using existing `SparkleUnlockEffect` or equivalent).
+- [x] AC1: The last question card fades out (0.3s) while the completion hero icon fades in with a scale-up effect (0.5→1.0, 0.5s spring).
+- [x] AC2: The score counter starts its animation immediately as the hero section appears — no delay between screen transition and score reveal.
+- [x] AC3: A subtle haptic pattern plays at the moment of transition: `UINotificationFeedbackGenerator.notificationOccurred(.success)` for pass, `.warning` for fail.
+- [x] AC4: The stats row slides up from below (offset 40→0, 0.6s spring) with a 0.3s delay after the score appears.
+- [x] AC5: If the user achieved a perfect score, an additional confetti/sparkle effect bursts from the hero icon (using existing `SparkleUnlockEffect` or equivalent).
 
 #### Subtasks
 

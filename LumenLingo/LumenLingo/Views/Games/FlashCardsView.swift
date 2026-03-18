@@ -1275,6 +1275,7 @@ struct FlashCardsView: View {
 
 /// Shared completion screen used by all three game types.
 /// Shows performance tier, animated stats, and action buttons.
+/// On compact screens, action buttons are pinned to a bottom bar.
 struct GameCompleteView: View {
     let score: Int
     let correctAnswers: Int
@@ -1292,6 +1293,7 @@ struct GameCompleteView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
     @Environment(TierManager.self) private var tierManager
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
 
     private var L: AppStrings { localization.strings }
 
@@ -1301,12 +1303,16 @@ struct GameCompleteView: View {
     @State private var showStats = false
     @State private var showExtras = false
     @State private var showButtons = false
+    @State private var showBar = false
+    @State private var showConfetti = false
     @State private var glowBreath: CGFloat = 0
     @State private var ringRotation: Double = 0
     @State private var displayedScore: Int = 0
     @State private var displayedAccuracy: Int = 0
+    @State private var confettiParticles: [GameCompleteConfettiParticle] = []
 
     private var isDark: Bool { colorScheme == .dark }
+    private var isCompact: Bool { horizontalSizeClass == .compact }
 
     private var accuracy: Double {
         guard totalQuestions > 0 else { return 0 }
@@ -1321,112 +1327,160 @@ struct GameCompleteView: View {
     }
 
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack(spacing: 0) {
-                Spacer(minLength: 60)
+        VStack(spacing: 0) {
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 0) {
+                    Spacer(minLength: isCompact ? 28 : 60)
 
-                // MARK: — Hero Icon
-                ZStack {
-                    // Soft radial aura
-                    Circle()
-                        .fill(
-                            RadialGradient(
-                                colors: [
-                                    performanceTier.color.opacity(0.15),
-                                    performanceTier.color.opacity(0.04),
-                                    .clear
-                                ],
-                                center: .center,
-                                startRadius: 30,
-                                endRadius: 120
-                            )
-                        )
-                        .frame(width: 240, height: 240)
-                        .blur(radius: 20)
-                        .opacity(0.6 + 0.4 * Foundation.sin(Double(glowBreath)))
+                    // MARK: — Hero Section
+                    if isCompact {
+                        compactHeroSection
+                    } else {
+                        regularHeroSection
+                    }
 
-                    // Orbital ring
-                    Circle()
-                        .strokeBorder(
-                            AngularGradient(
-                                colors: [
-                                    performanceTier.color.opacity(0.4),
-                                    .clear,
-                                    performanceTier.color.opacity(0.2),
-                                    .clear,
-                                    performanceTier.color.opacity(0.3),
-                                    .clear,
-                                ],
-                                center: .center
-                            ),
-                            lineWidth: 1
-                        )
-                        .frame(width: 130, height: 130)
-                        .rotationEffect(.degrees(ringRotation))
+                    // MARK: — Stats Row
+                    statsRow
+                        .padding(.horizontal, 28)
+                        .opacity(showStats ? 1 : 0)
+                        .offset(y: showStats ? 0 : 40)
 
-                    // Glass icon container
-                    Circle()
-                        .fill(.ultraThinMaterial)
-                        .opacity(0.2)
-                        .frame(width: 100, height: 100)
-                        .overlay(
-                            Circle()
-                                .strokeBorder(
-                                    LinearGradient(
-                                        colors: [
-                                            .white.opacity(0.35),
-                                            performanceTier.color.opacity(0.25),
-                                            .white.opacity(0.15)
-                                        ],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    ),
-                                    lineWidth: 1
-                                )
-                        )
+                    // MARK: — XP Breakdown (multiplier > 1.0)
+                    if xpMultiplier > 1.0 {
+                        xpBreakdownSection
+                            .padding(.horizontal, 28)
+                            .padding(.bottom, 28)
+                            .opacity(showExtras ? 1 : 0)
+                            .offset(y: showExtras ? 0 : 12)
+                    }
 
-                    Image(systemName: performanceTier.icon)
-                        .font(.system(size: 40, weight: .light))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [performanceTier.color, performanceTier.color.opacity(0.7)],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            )
-                        )
-                        .shadow(color: performanceTier.color.opacity(0.4), radius: 12)
+                    // MARK: — Tier-Specific Result Sections
+                    tierSpecificSections
+                        .padding(.horizontal, 28)
+                        .padding(.bottom, 20)
+                        .opacity(showExtras ? 1 : 0)
+                        .offset(y: showExtras ? 0 : 12)
+
+                    // On iPad: keep action buttons inside scroll content
+                    if !isCompact {
+                        actionButtonsStack
+                            .padding(.horizontal, 28)
+                            .opacity(showButtons ? 1 : 0)
+                            .offset(y: showButtons ? 0 : 10)
+                    }
+
+                    // Post-session upgrade nudge (Free users, every 3rd session)
+                    PostSessionNudge()
+
+                    Spacer(minLength: isCompact ? 200 : 80)
                 }
-                .scaleEffect(showIcon ? 1 : 0.6)
-                .opacity(showIcon ? 1 : 0)
-                .padding(.bottom, 32)
+            }
 
-                // MARK: — Title & Subtitle
-                VStack(spacing: 10) {
-                    Text(performanceTier.title(L))
-                        .font(.system(size: 32, weight: .bold, design: .rounded))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [performanceTier.color, performanceTier.color.opacity(0.7)],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
+            // On compact (phones): pinned bottom action bar
+            if isCompact {
+                pinnedBottomBar
+            }
+        }
+        .overlay {
+            if showConfetti {
+                confettiOverlay
+            }
+        }
+        .onAppear { startEntranceSequence() }
+    }
+
+    // MARK: — Compact Hero (Story 10.2)
+
+    private var compactHeroSection: some View {
+        HStack(alignment: .center, spacing: 20) {
+            // Compact icon
+            ZStack {
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [
+                                performanceTier.color.opacity(0.15),
+                                performanceTier.color.opacity(0.04),
+                                .clear
+                            ],
+                            center: .center,
+                            startRadius: 15,
+                            endRadius: 60
                         )
-                        .shadow(color: isDark ? .black.opacity(0.3) : .clear, radius: 4, y: 2)
+                    )
+                    .frame(width: 120, height: 120)
+                    .blur(radius: 12)
+                    .opacity(0.6 + 0.4 * Foundation.sin(Double(glowBreath)))
 
-                    Text(performanceTier.subtitle(L))
-                        .font(.subheadline)
-                        .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 40)
-                }
-                .scaleEffect(showTitle ? 1 : 0.95)
-                .opacity(showTitle ? 1 : 0)
-                .padding(.bottom, 36)
+                Circle()
+                    .strokeBorder(
+                        AngularGradient(
+                            colors: [
+                                performanceTier.color.opacity(0.4),
+                                .clear,
+                                performanceTier.color.opacity(0.2),
+                                .clear,
+                                performanceTier.color.opacity(0.3),
+                                .clear,
+                            ],
+                            center: .center
+                        ),
+                        lineWidth: 0.8
+                    )
+                    .frame(width: 72, height: 72)
+                    .rotationEffect(.degrees(ringRotation))
 
-                // MARK: — Score Highlight
-                VStack(spacing: 6) {
+                Circle()
+                    .fill(.ultraThinMaterial)
+                    .opacity(0.2)
+                    .frame(width: 56, height: 56)
+                    .overlay(
+                        Circle()
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [
+                                        .white.opacity(0.35),
+                                        performanceTier.color.opacity(0.25),
+                                        .white.opacity(0.15)
+                                    ],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 0.8
+                            )
+                    )
+
+                Image(systemName: performanceTier.icon)
+                    .font(.system(size: 24, weight: .light))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [performanceTier.color, performanceTier.color.opacity(0.7)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+                    .shadow(color: performanceTier.color.opacity(0.4), radius: 8)
+            }
+            .frame(width: 120, height: 120)
+            .scaleEffect(showIcon ? 1 : 0.5)
+            .opacity(showIcon ? 1 : 0)
+
+            // Score + title on the right
+            VStack(alignment: .leading, spacing: 6) {
+                Text(performanceTier.title(L))
+                    .font(.system(size: 24, weight: .bold, design: .rounded))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [performanceTier.color, performanceTier.color.opacity(0.7)],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .shadow(color: isDark ? .black.opacity(0.3) : .clear, radius: 4, y: 2)
+
+                HStack(alignment: .firstTextBaseline, spacing: 6) {
                     Text("\(displayedScore)")
-                        .font(.system(size: 56, weight: .bold, design: .rounded))
+                        .font(.system(size: 44, weight: .bold, design: .rounded))
                         .foregroundStyle(
                             LinearGradient(
                                 colors: [performanceTier.color, performanceTier.color.opacity(0.6)],
@@ -1435,7 +1489,7 @@ struct GameCompleteView: View {
                             )
                         )
                         .contentTransition(.numericText())
-                        .shadow(color: performanceTier.color.opacity(0.3), radius: 16)
+                        .shadow(color: performanceTier.color.opacity(0.3), radius: 12)
 
                     Text(L.points)
                         .font(.caption.weight(.medium))
@@ -1443,100 +1497,235 @@ struct GameCompleteView: View {
                         .textCase(.uppercase)
                         .tracking(2)
                 }
-                .opacity(showStats ? 1 : 0)
-                .padding(.bottom, 28)
 
-                // MARK: — Stats Row
-                HStack(spacing: 0) {
-                    statColumn(
-                        value: "\(displayedAccuracy)%",
-                        label: L.accuracy,
-                        color: performanceTier.color
-                    )
+                Text(performanceTier.subtitle(L))
+                    .font(.system(size: 13))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                    .lineLimit(2)
+            }
+            .scaleEffect(showTitle ? 1 : 0.95)
+            .opacity(showTitle ? 1 : 0)
 
-                    // Divider
-                    Capsule()
-                        .fill(.white.opacity(0.1))
-                        .frame(width: 1, height: 36)
+            Spacer(minLength: 0)
+        }
+        .padding(.horizontal, 24)
+        .padding(.bottom, 24)
+    }
 
-                    statColumn(
-                        value: "\(correctAnswers)",
-                        label: L.correct,
-                        color: .green
-                    )
+    // MARK: — Regular Hero (iPad)
 
-                    Capsule()
-                        .fill(.white.opacity(0.1))
-                        .frame(width: 1, height: 36)
-
-                    statColumn(
-                        value: "\(wrongAnswers)",
-                        label: L.toReview,
-                        color: .orange
-                    )
-                }
-                .padding(.vertical, 20)
-                .padding(.horizontal, 8)
-                .background {
-                    RoundedRectangle(cornerRadius: 24)
-                        .fill(.ultraThinMaterial)
-                        .opacity(0.15)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 24)
-                                .strokeBorder(
-                                    LinearGradient(
-                                        colors: [.white.opacity(0.2), .white.opacity(0.05)],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    ),
-                                    lineWidth: 0.5
-                                )
+    private var regularHeroSection: some View {
+        VStack(spacing: 0) {
+            // Hero Icon
+            ZStack {
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [
+                                performanceTier.color.opacity(0.15),
+                                performanceTier.color.opacity(0.04),
+                                .clear
+                            ],
+                            center: .center,
+                            startRadius: 30,
+                            endRadius: 120
                         )
-                }
-                .padding(.horizontal, 28)
-                .opacity(showStats ? 1 : 0)
-                .offset(y: showStats ? 0 : 12)
-                .padding(.bottom, 28)
+                    )
+                    .frame(width: 240, height: 240)
+                    .blur(radius: 20)
+                    .opacity(0.6 + 0.4 * Foundation.sin(Double(glowBreath)))
 
-                // MARK: — XP Breakdown (multiplier > 1.0)
-                if xpMultiplier > 1.0 {
-                    xpBreakdownSection
-                        .padding(.horizontal, 28)
-                        .padding(.bottom, 28)
-                        .opacity(showExtras ? 1 : 0)
-                        .offset(y: showExtras ? 0 : 12)
-                }
+                Circle()
+                    .strokeBorder(
+                        AngularGradient(
+                            colors: [
+                                performanceTier.color.opacity(0.4),
+                                .clear,
+                                performanceTier.color.opacity(0.2),
+                                .clear,
+                                performanceTier.color.opacity(0.3),
+                                .clear,
+                            ],
+                            center: .center
+                        ),
+                        lineWidth: 1
+                    )
+                    .frame(width: 130, height: 130)
+                    .rotationEffect(.degrees(ringRotation))
 
-                // MARK: — Tier-Specific Result Sections
-                tierSpecificSections
-                    .padding(.horizontal, 28)
-                    .padding(.bottom, 20)
-                    .opacity(showExtras ? 1 : 0)
-                    .offset(y: showExtras ? 0 : 12)
+                Circle()
+                    .fill(.ultraThinMaterial)
+                    .opacity(0.2)
+                    .frame(width: 100, height: 100)
+                    .overlay(
+                        Circle()
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [
+                                        .white.opacity(0.35),
+                                        performanceTier.color.opacity(0.25),
+                                        .white.opacity(0.15)
+                                    ],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 1
+                            )
+                    )
 
-                // MARK: — Action Buttons
-                VStack(spacing: 14) {
-                    // Next Category — primary CTA when available
+                Image(systemName: performanceTier.icon)
+                    .font(.system(size: 40, weight: .light))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [performanceTier.color, performanceTier.color.opacity(0.7)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+                    .shadow(color: performanceTier.color.opacity(0.4), radius: 12)
+            }
+            .scaleEffect(showIcon ? 1 : 0.6)
+            .opacity(showIcon ? 1 : 0)
+            .padding(.bottom, 32)
+
+            // Title & Subtitle
+            VStack(spacing: 10) {
+                Text(performanceTier.title(L))
+                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [performanceTier.color, performanceTier.color.opacity(0.7)],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .shadow(color: isDark ? .black.opacity(0.3) : .clear, radius: 4, y: 2)
+
+                Text(performanceTier.subtitle(L))
+                    .font(.subheadline)
+                    .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 40)
+            }
+            .scaleEffect(showTitle ? 1 : 0.95)
+            .opacity(showTitle ? 1 : 0)
+            .padding(.bottom, 36)
+
+            // Score Highlight
+            VStack(spacing: 6) {
+                Text("\(displayedScore)")
+                    .font(.system(size: 56, weight: .bold, design: .rounded))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [performanceTier.color, performanceTier.color.opacity(0.6)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+                    .contentTransition(.numericText())
+                    .shadow(color: performanceTier.color.opacity(0.3), radius: 16)
+
+                Text(L.points)
+                    .font(.caption.weight(.medium))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    .textCase(.uppercase)
+                    .tracking(2)
+            }
+            .opacity(showStats ? 1 : 0)
+            .padding(.bottom, 28)
+        }
+    }
+
+    // MARK: — Stats Row
+
+    private var statsRow: some View {
+        HStack(spacing: 0) {
+            statColumn(
+                value: "\(displayedAccuracy)%",
+                label: L.accuracy,
+                color: performanceTier.color
+            )
+
+            Capsule()
+                .fill(.white.opacity(0.1))
+                .frame(width: 1, height: 36)
+
+            statColumn(
+                value: "\(correctAnswers)",
+                label: L.correct,
+                color: .green
+            )
+
+            Capsule()
+                .fill(.white.opacity(0.1))
+                .frame(width: 1, height: 36)
+
+            statColumn(
+                value: "\(wrongAnswers)",
+                label: L.toReview,
+                color: .orange
+            )
+        }
+        .padding(.vertical, 20)
+        .padding(.horizontal, 8)
+        .background {
+            RoundedRectangle(cornerRadius: 24)
+                .fill(.ultraThinMaterial)
+                .opacity(0.15)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 24)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [.white.opacity(0.2), .white.opacity(0.05)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 0.5
+                        )
+                )
+        }
+        .padding(.bottom, 28)
+    }
+
+    // MARK: — Pinned Bottom Bar (Story 10.1)
+
+    private var pinnedBottomBar: some View {
+        VStack(spacing: 0) {
+            // Gradient fade border at top
+            LinearGradient(
+                colors: [
+                    (isDark ? Color.black : Color.white).opacity(0),
+                    (isDark ? Color.black : Color.white).opacity(0.3)
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .frame(height: 20)
+
+            VStack(spacing: 10) {
+                // Primary + Share row
+                HStack(spacing: 10) {
+                    // Primary CTA
                     if let onNext = onNextCategory, let nextName = nextCategoryName {
                         Button {
                             onNext()
                         } label: {
-                            HStack(spacing: 10) {
+                            HStack(spacing: 8) {
                                 Image(systemName: "arrow.right.circle.fill")
-                                    .font(.system(size: 15, weight: .semibold))
-                                VStack(spacing: 2) {
+                                    .font(.system(size: 14, weight: .semibold))
+                                VStack(spacing: 1) {
                                     Text(L.nextCategory)
-                                        .font(.system(size: 16, weight: .semibold))
+                                        .font(.system(size: 15, weight: .semibold))
                                     Text(nextName)
-                                        .font(.system(size: 12, weight: .medium))
+                                        .font(.system(size: 11, weight: .medium))
                                         .opacity(0.7)
                                 }
                             }
                             .foregroundStyle(.white)
                             .frame(maxWidth: .infinity)
-                            .padding(.vertical, 18)
+                            .padding(.vertical, 16)
                             .background {
-                                RoundedRectangle(cornerRadius: 22)
+                                RoundedRectangle(cornerRadius: 20)
                                     .fill(
                                         LinearGradient(
                                             colors: [
@@ -1548,7 +1737,7 @@ struct GameCompleteView: View {
                                         )
                                     )
                                     .overlay(
-                                        RoundedRectangle(cornerRadius: 22)
+                                        RoundedRectangle(cornerRadius: 20)
                                             .strokeBorder(
                                                 LinearGradient(
                                                     colors: [.white.opacity(0.3), .white.opacity(0.08)],
@@ -1559,78 +1748,363 @@ struct GameCompleteView: View {
                                             )
                                     )
                             }
-                            .shadow(color: Color(hex: "#10b981").opacity(0.25), radius: 20, y: 8)
+                            .shadow(color: Color(hex: "#10b981").opacity(0.2), radius: 16, y: 6)
                         }
                         .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#10b981")))
-                    }
-
-                    // Play Again
-                    Button {
-                        onPlayAgain()
-                    } label: {
-                        HStack(spacing: 10) {
-                            Image(systemName: "arrow.counterclockwise")
-                                .font(.system(size: 15, weight: .semibold))
-                            Text(L.playAgain)
-                                .font(.system(size: 16, weight: .semibold))
-                        }
-                        .foregroundStyle(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 18)
-                        .background {
-                            RoundedRectangle(cornerRadius: 22)
-                                .fill(
-                                    LinearGradient(
-                                        colors: [
-                                            Color(hex: "#667eea").opacity(0.4),
-                                            Color(hex: "#764ba2").opacity(0.25)
-                                        ],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    )
-                                )
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 22)
-                                        .strokeBorder(
-                                            LinearGradient(
-                                                colors: [.white.opacity(0.3), .white.opacity(0.08)],
-                                                startPoint: .topLeading,
-                                                endPoint: .bottomTrailing
-                                            ),
-                                            lineWidth: 0.5
+                    } else {
+                        // No next category — Play Again is primary
+                        Button {
+                            onPlayAgain()
+                        } label: {
+                            HStack(spacing: 8) {
+                                Image(systemName: "arrow.counterclockwise")
+                                    .font(.system(size: 14, weight: .semibold))
+                                Text(L.playAgain)
+                                    .font(.system(size: 15, weight: .semibold))
+                            }
+                            .foregroundStyle(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 16)
+                            .background {
+                                RoundedRectangle(cornerRadius: 20)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [
+                                                Color(hex: "#667eea").opacity(0.4),
+                                                Color(hex: "#764ba2").opacity(0.25)
+                                            ],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
                                         )
-                                )
+                                    )
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .strokeBorder(
+                                                LinearGradient(
+                                                    colors: [.white.opacity(0.3), .white.opacity(0.08)],
+                                                    startPoint: .topLeading,
+                                                    endPoint: .bottomTrailing
+                                                ),
+                                                lineWidth: 0.5
+                                            )
+                                    )
+                            }
+                            .shadow(color: Color(hex: "#667eea").opacity(0.2), radius: 16, y: 6)
                         }
-                        .shadow(color: Color(hex: "#667eea").opacity(0.2), radius: 20, y: 8)
+                        .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#667eea")))
                     }
-                    .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#667eea")))
 
+                    // Share button
                     Button {
-                        onDismiss()
+                        shareResult()
                     } label: {
-                        HStack(spacing: 8) {
-                            Image(systemName: "chevron.left")
-                                .font(.system(size: 13, weight: .medium))
-                            Text(L.backToCategories)
-                                .font(.system(size: 15, weight: .medium))
-                        }
-                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 16)
+                        Image(systemName: "square.and.arrow.up")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                            .frame(width: 52, height: 52)
+                            .background {
+                                RoundedRectangle(cornerRadius: 16)
+                                    .fill(.ultraThinMaterial)
+                                    .opacity(0.2)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 16)
+                                            .strokeBorder(
+                                                LinearGradient(
+                                                    colors: [.white.opacity(0.2), .white.opacity(0.06)],
+                                                    startPoint: .topLeading,
+                                                    endPoint: .bottomTrailing
+                                                ),
+                                                lineWidth: 0.5
+                                            )
+                                    )
+                            }
                     }
                     .buttonStyle(LumenPressStyle(weight: .medium))
                 }
-                .padding(.horizontal, 28)
-                .opacity(showButtons ? 1 : 0)
-                .offset(y: showButtons ? 0 : 10)
 
-                // Post-session upgrade nudge (Free users, every 3rd session)
-                PostSessionNudge()
+                // Secondary row
+                HStack(spacing: 10) {
+                    if onNextCategory != nil {
+                        // Play Again as secondary
+                        Button {
+                            onPlayAgain()
+                        } label: {
+                            HStack(spacing: 6) {
+                                Image(systemName: "arrow.counterclockwise")
+                                    .font(.system(size: 12, weight: .medium))
+                                Text(L.playAgain)
+                                    .font(.system(size: 14, weight: .medium))
+                            }
+                            .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 12)
+                            .background {
+                                RoundedRectangle(cornerRadius: 16)
+                                    .fill(.ultraThinMaterial)
+                                    .opacity(0.1)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 16)
+                                            .strokeBorder(.white.opacity(0.1), lineWidth: 0.5)
+                                    )
+                            }
+                        }
+                        .buttonStyle(LumenPressStyle(weight: .medium))
+                    }
 
-                Spacer(minLength: 80)
+                    // Back to Categories
+                    Button {
+                        onDismiss()
+                    } label: {
+                        HStack(spacing: 6) {
+                            Image(systemName: "chevron.left")
+                                .font(.system(size: 11, weight: .medium))
+                            Text(L.backToCategories)
+                                .font(.system(size: 14, weight: .medium))
+                        }
+                        .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum.opacity(0.7))
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 12)
+                    }
+                    .buttonStyle(LumenPressStyle(weight: .medium))
+                }
+            }
+            .padding(.horizontal, 20)
+            .padding(.top, 12)
+            .padding(.bottom, 8)
+            .background {
+                Rectangle()
+                    .fill(.ultraThinMaterial)
+                    .opacity(isDark ? 0.85 : 0.9)
+                    .overlay(alignment: .top) {
+                        LinearGradient(
+                            colors: tierManager.tierGradientColors.map { $0.opacity(0.3) },
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                        .frame(height: 0.5)
+                    }
             }
         }
-        .onAppear { startEntranceSequence() }
+        .offset(y: showBar ? 0 : 200)
+        .animation(.spring(duration: 0.4, bounce: 0.15), value: showBar)
+    }
+
+    // MARK: — Action Buttons Stack (iPad / Regular)
+
+    private var actionButtonsStack: some View {
+        VStack(spacing: 14) {
+            if let onNext = onNextCategory, let nextName = nextCategoryName {
+                Button {
+                    onNext()
+                } label: {
+                    HStack(spacing: 10) {
+                        Image(systemName: "arrow.right.circle.fill")
+                            .font(.system(size: 15, weight: .semibold))
+                        VStack(spacing: 2) {
+                            Text(L.nextCategory)
+                                .font(.system(size: 16, weight: .semibold))
+                            Text(nextName)
+                                .font(.system(size: 12, weight: .medium))
+                                .opacity(0.7)
+                        }
+                    }
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 18)
+                    .background {
+                        RoundedRectangle(cornerRadius: 22)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color(hex: "#10b981").opacity(0.45),
+                                        Color(hex: "#059669").opacity(0.3)
+                                    ],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 22)
+                                    .strokeBorder(
+                                        LinearGradient(
+                                            colors: [.white.opacity(0.3), .white.opacity(0.08)],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        ),
+                                        lineWidth: 0.5
+                                    )
+                            )
+                    }
+                    .shadow(color: Color(hex: "#10b981").opacity(0.25), radius: 20, y: 8)
+                }
+                .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#10b981")))
+            }
+
+            Button {
+                onPlayAgain()
+            } label: {
+                HStack(spacing: 10) {
+                    Image(systemName: "arrow.counterclockwise")
+                        .font(.system(size: 15, weight: .semibold))
+                    Text(L.playAgain)
+                        .font(.system(size: 16, weight: .semibold))
+                }
+                .foregroundStyle(.white)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 18)
+                .background {
+                    RoundedRectangle(cornerRadius: 22)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(hex: "#667eea").opacity(0.4),
+                                    Color(hex: "#764ba2").opacity(0.25)
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 22)
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.3), .white.opacity(0.08)],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    ),
+                                    lineWidth: 0.5
+                                )
+                        )
+                }
+                .shadow(color: Color(hex: "#667eea").opacity(0.2), radius: 20, y: 8)
+            }
+            .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#667eea")))
+
+            // Share button (iPad)
+            Button {
+                shareResult()
+            } label: {
+                HStack(spacing: 10) {
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.system(size: 14, weight: .semibold))
+                    Text(L.shareResult)
+                        .font(.system(size: 15, weight: .semibold))
+                }
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: tierManager.tierGradientColors,
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 14)
+                .background {
+                    glassCard
+                }
+            }
+            .buttonStyle(.plain)
+
+            Button {
+                onDismiss()
+            } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: "chevron.left")
+                        .font(.system(size: 13, weight: .medium))
+                    Text(L.backToCategories)
+                        .font(.system(size: 15, weight: .medium))
+                }
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 16)
+            }
+            .buttonStyle(LumenPressStyle(weight: .medium))
+        }
+    }
+
+    // MARK: — Share (Story 10.3)
+
+    private func shareResult() {
+        let cardData = ShareableCardRenderer.CardData(
+            score: score,
+            correctAnswers: correctAnswers,
+            totalQuestions: totalQuestions,
+            accuracy: accuracy,
+            gameType: gameType,
+            categoryName: categoryName,
+            tier: tierManager.currentTier,
+            timeSpent: timeSpent,
+            xpMultiplier: xpMultiplier
+        )
+        ShareableCardRenderer.shareCard(data: cardData)
+    }
+
+    // MARK: — Confetti Overlay (Story 10.4)
+
+    private var confettiOverlay: some View {
+        GeometryReader { geo in
+            ZStack {
+                ForEach(confettiParticles) { particle in
+                    Circle()
+                        .fill(particle.color)
+                        .frame(width: particle.size, height: particle.size)
+                        .position(x: particle.x, y: particle.y)
+                        .opacity(particle.opacity)
+                        .blur(radius: particle.size > 6 ? 0.5 : 0)
+                }
+            }
+            .allowsHitTesting(false)
+            .onAppear {
+                launchConfetti(in: geo.size)
+            }
+        }
+        .ignoresSafeArea()
+    }
+
+    private func launchConfetti(in size: CGSize) {
+        let colors: [Color] = [.yellow, .orange, .green, .cyan, .pink, .purple, .mint]
+        let centerX = size.width / 2
+        let centerY = isCompact ? size.height * 0.2 : size.height * 0.25
+
+        // Create particles at hero center
+        var particles: [GameCompleteConfettiParticle] = []
+        for i in 0..<40 {
+            let angle = Double(i) / 40.0 * .pi * 2 + Double.random(in: -0.2...0.2)
+            particles.append(GameCompleteConfettiParticle(
+                x: centerX,
+                y: centerY,
+                size: CGFloat.random(in: 3...8),
+                opacity: 1.0,
+                color: colors[i % colors.count],
+                targetX: centerX + cos(angle) * CGFloat.random(in: 60...180),
+                targetY: centerY + sin(angle) * CGFloat.random(in: 60...200) - CGFloat.random(in: 20...80)
+            ))
+        }
+        confettiParticles = particles
+
+        // Burst outward
+        withAnimation(.spring(duration: 0.6, bounce: 0.3)) {
+            for i in confettiParticles.indices {
+                confettiParticles[i].x = confettiParticles[i].targetX
+                confettiParticles[i].y = confettiParticles[i].targetY
+            }
+        }
+
+        // Fade and fall
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            withAnimation(.easeIn(duration: 1.0)) {
+                for i in confettiParticles.indices {
+                    confettiParticles[i].opacity = 0
+                    confettiParticles[i].y += CGFloat.random(in: 40...120)
+                }
+            }
+        }
+
+        // Clean up
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            showConfetti = false
+            confettiParticles = []
+        }
     }
 
     // MARK: — XP Breakdown
@@ -1730,13 +2204,6 @@ struct GameCompleteView: View {
         // Weak areas placeholder (Elite+)
         if config.sections.contains(.weakAreas) {
             weakAreasSection
-        }
-
-        // Shareable card placeholder (Royal)
-        if config.sections.contains(.shareableCard) {
-            shareableCardSection
-        } else if tierManager.currentTier == .elite {
-            lockedSectionHint(for: .shareableCard)
         }
     }
 
@@ -1894,46 +2361,6 @@ struct GameCompleteView: View {
         .padding(.bottom, 10)
     }
 
-    // MARK: Shareable Card Section
-
-    private var shareableCardSection: some View {
-        Button {
-            let cardData = ShareableCardRenderer.CardData(
-                score: score,
-                correctAnswers: correctAnswers,
-                totalQuestions: totalQuestions,
-                accuracy: accuracy,
-                gameType: gameType,
-                categoryName: categoryName,
-                tier: tierManager.currentTier,
-                timeSpent: timeSpent,
-                xpMultiplier: xpMultiplier
-            )
-            ShareableCardRenderer.shareCard(data: cardData)
-        } label: {
-            HStack(spacing: 10) {
-                Image(systemName: "square.and.arrow.up")
-                    .font(.system(size: 16, weight: .semibold))
-                Text(L.shareResult)
-                    .font(.system(size: 14, weight: .semibold))
-            }
-            .foregroundStyle(
-                LinearGradient(
-                    colors: tierManager.tierGradientColors,
-                    startPoint: .leading,
-                    endPoint: .trailing
-                )
-            )
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 14)
-            .background {
-                glassCard
-            }
-        }
-        .buttonStyle(.plain)
-        .padding(.bottom, 10)
-    }
-
     // MARK: Locked Section Hint
 
     private func lockedSectionHint(for section: TierManager.SessionResultsSection) -> some View {
@@ -2006,50 +2433,77 @@ struct GameCompleteView: View {
         .frame(maxWidth: .infinity)
     }
 
-    // MARK: — Entrance Sequence
+    // MARK: — Entrance Sequence (Story 10.4)
 
     private func startEntranceSequence() {
-        // Staggered reveals
-        withAnimation(.easeOut(duration: 0.8)) {
+        // Haptic at transition moment
+        if accuracy >= 90 {
+            HapticsService.shared.perfectScore()
+        } else if accuracy >= 60 {
+            HapticsService.shared.celebrate()
+        } else {
+            HapticsService.shared.wrongAnswer()
+        }
+
+        // Hero icon scales from 0.5→1.0 with spring
+        withAnimation(.spring(duration: 0.5, bounce: 0.2)) {
             showIcon = true
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            withAnimation(.easeOut(duration: 0.7)) {
+        // Title appears quickly after icon
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            withAnimation(.spring(duration: 0.5, bounce: 0.15)) {
                 showTitle = true
             }
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-            withAnimation(.easeOut(duration: 0.7)) {
-                showStats = true
-            }
-        }
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
-            withAnimation(.easeOut(duration: 0.7)) {
-                showExtras = true
-            }
-        }
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
-            withAnimation(.easeOut(duration: 0.6)) {
-                showButtons = true
-            }
-        }
-
-        // Animate score counting up
+        // Score counter starts immediately with hero
         let scoreTarget = score
         let accuracyTarget = Int(accuracy)
         let steps = 20
         for i in 1...steps {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6 + Double(i) * 0.04) {
-                displayedScore = scoreTarget * i / steps
-                displayedAccuracy = accuracyTarget * i / steps
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(i) * 0.04) {
+                withAnimation(.default) {
+                    displayedScore = scoreTarget * i / steps
+                    displayedAccuracy = accuracyTarget * i / steps
+                }
             }
         }
 
-        // Start ambient animations
+        // Stats row slides up from offset 40→0 with 0.3s delay
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            withAnimation(.spring(duration: 0.6, bounce: 0.15)) {
+                showStats = true
+            }
+        }
+
+        // Extras appear with slight delay
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+            withAnimation(.easeOut(duration: 0.5)) {
+                showExtras = true
+            }
+        }
+
+        // Buttons (for iPad) and bottom bar (for phones)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            withAnimation(.easeOut(duration: 0.5)) {
+                showButtons = true
+            }
+        }
+
+        // Pinned bottom bar slides up
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            showBar = true
+        }
+
+        // Perfect score confetti burst
+        if accuracy >= 100 {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                showConfetti = true
+            }
+        }
+
+        // Ambient animations
         withAnimation(.easeInOut(duration: 3).repeatForever(autoreverses: true)) {
             glowBreath = .pi * 2
         }
@@ -2110,4 +2564,17 @@ struct LuminousMote: Identifiable {
     var size: CGFloat
     var opacity: Double
     var color: Color
+}
+
+// MARK: - Game Complete Confetti Particle
+
+struct GameCompleteConfettiParticle: Identifiable {
+    let id = UUID()
+    var x: CGFloat
+    var y: CGFloat
+    var size: CGFloat
+    var opacity: Double
+    var color: Color
+    var targetX: CGFloat
+    var targetY: CGFloat
 }
