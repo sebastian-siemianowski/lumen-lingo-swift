@@ -593,19 +593,19 @@ struct QAPanelView: View {
                     Button {
                         haptics.correctAnswer()
                     } label: {
-                        debugActionButton(label: "✅ Correct", color: .green)
+                        debugActionButton(icon: "checkmark.circle.fill", label: "Correct", color: .green)
                     }
 
                     Button {
                         haptics.wrongAnswer()
                     } label: {
-                        debugActionButton(label: "❌ Wrong", color: .red)
+                        debugActionButton(icon: "xmark.circle.fill", label: "Wrong", color: .red)
                     }
 
                     Button {
                         haptics.celebrate()
                     } label: {
-                        debugActionButton(label: "🎉 Celebrate", color: .purple)
+                        debugActionButton(icon: "party.popper.fill", label: "Celebrate", color: .purple)
                     }
                 }
 
@@ -613,19 +613,19 @@ struct QAPanelView: View {
                     Button {
                         haptics.buttonPress()
                     } label: {
-                        debugActionButton(label: "👆 Button", color: .cyan)
+                        debugActionButton(icon: "hand.tap.fill", label: "Button", color: .cyan)
                     }
 
                     Button {
                         haptics.tilePick()
                     } label: {
-                        debugActionButton(label: "🧩 Tile", color: .orange)
+                        debugActionButton(icon: "square.grid.2x2.fill", label: "Tile", color: .orange)
                     }
 
                     Button {
                         haptics.perfectScore()
                     } label: {
-                        debugActionButton(label: "⭐ Perfect", color: .yellow)
+                        debugActionButton(icon: "star.fill", label: "Perfect", color: .yellow)
                     }
                 }
             }
@@ -956,9 +956,15 @@ struct QAPanelView: View {
         }
     }
 
-    private func debugActionButton(label: String, color: Color) -> some View {
-        Text(label)
-            .font(.system(size: 11, weight: .semibold, design: .rounded))
+    private func debugActionButton(icon: String? = nil, label: String, color: Color) -> some View {
+        VStack(spacing: icon != nil ? 2 : 0) {
+            if let icon {
+                Image(systemName: icon)
+                    .font(.system(size: 13, weight: .semibold))
+            }
+            Text(label)
+                .font(.system(size: icon != nil ? 10 : 11, weight: .semibold, design: .rounded))
+        }
             .foregroundStyle(color)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 8)
