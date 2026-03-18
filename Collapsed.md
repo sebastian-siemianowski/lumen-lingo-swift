@@ -246,22 +246,22 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **2.1.1** — Define `GlassWeight` enum within `CollapsibleSection`: `.primary`, `.standard`, `.recessed`
-- **2.1.2** — `.primary` weight: material at full opacity, Caribbean tint at 1.2× standard intensity, stroke lineWidth 1.5, shadow at `GlassCardBackground` level — used for `.hero` and `.miniPlayer` styles
-- **2.1.3** — `.standard` weight: material at current opacity, Caribbean tint at 1.0×, stroke lineWidth 0.75, dual shadow at standard level — used for `.standard` and `.tip` styles
-- **2.1.4** — `.recessed` weight: material at 0.7× opacity, Caribbean tint at 0.6×, stroke lineWidth 0.5 and 0.5× opacity, shadow at 0.5× standard — used for secondary/nested panels and inline toggles
-- **2.1.5** — Auto-assign `GlassWeight` from `style`: `.hero`/`.miniPlayer` → `.primary`, `.standard`/`.tip` → `.standard`, `.inline` → `.recessed` — but allow manual override via optional `glassWeight` parameter
-- **2.1.6** — Verify the 3 weights are visually distinct on JourneyView (which has all standard weight) and ProfileView (which has primary + standard)
+- [x] **2.1.1** — Define `GlassWeight` enum within `CollapsibleSection`: `.primary`, `.standard`, `.recessed`
+- [x] **2.1.2** — `.primary` weight: material at full opacity, Caribbean tint at 1.2× standard intensity, stroke lineWidth 1.5, shadow at `GlassCardBackground` level — used for `.hero` and `.miniPlayer` styles
+- [x] **2.1.3** — `.standard` weight: material at current opacity, Caribbean tint at 1.0×, stroke lineWidth 0.75, dual shadow at standard level — used for `.standard` and `.tip` styles
+- [x] **2.1.4** — `.recessed` weight: material at 0.7× opacity, Caribbean tint at 0.6×, stroke lineWidth 0.5 and 0.5× opacity, shadow at 0.5× standard — used for secondary/nested panels and inline toggles
+- [x] **2.1.5** — Auto-assign `GlassWeight` from `style`: `.hero`/`.miniPlayer` → `.primary`, `.standard`/`.tip` → `.standard`, `.inline` → `.recessed` — but allow manual override via optional `glassWeight` parameter
+- [x] **2.1.6** — Verify the 3 weights are visually distinct on JourneyView (which has all standard weight) and ProfileView (which has primary + standard)
 
 #### Acceptance Criteria
 
-- [ ] `CollapsibleSection` has a `glassWeight` parameter with `.primary`, `.standard`, `.recessed` options
-- [ ] Each weight produces visually distinct material opacity, tint intensity, stroke weight, and shadow depth
-- [ ] `.primary` panels feel noticeably heavier and more prominent than `.standard`
-- [ ] `.recessed` panels feel subtly lighter — visually subordinate without looking broken
-- [ ] Default weight assignment from style is correct: hero/miniPlayer → primary, standard/tip → standard, inline → recessed
-- [ ] Manual `glassWeight` override works: e.g. `CollapsibleSection(style: .standard, glassWeight: .primary, ...)`
-- [ ] All 20 panel instances render with appropriate weight for their context
+- [x] `CollapsibleSection` has a `glassWeight` parameter with `.primary`, `.standard`, `.recessed` options
+- [x] Each weight produces visually distinct material opacity, tint intensity, stroke weight, and shadow depth
+- [x] `.primary` panels feel noticeably heavier and more prominent than `.standard`
+- [x] `.recessed` panels feel subtly lighter — visually subordinate without looking broken
+- [x] Default weight assignment from style is correct: hero/miniPlayer → primary, standard/tip → standard, inline → recessed
+- [x] Manual `glassWeight` override works: e.g. `CollapsibleSection(style: .standard, glassWeight: .primary, ...)`
+- [x] All 20 panel instances render with appropriate weight for their context
 
 ---
 
@@ -275,20 +275,20 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **2.2.1** — `.primary` glass weight: 4-stop gradient border using section accent colors + white highlight, lineWidth 1.5 dark / 1.0 light, opacity 0.35→0.15 dark / 0.40→0.20 light
-- **2.2.2** — `.standard` glass weight: current 2-stop gradient border, lineWidth 0.75 dark / 0.5 light (unchanged from today)
-- **2.2.3** — `.recessed` glass weight: solid color border (not gradient) using `accentColor.opacity(0.08)`, lineWidth 0.5 — barely visible, just enough to define the edge
-- **2.2.4** — During expand transition: border should animate from collapsed intensity to expanded intensity (slightly reduced — 0.85× collapsed values) to subtly indicate the panel is "open" and less interactive
-- **2.2.5** — Verify border rendering on OLED (pure blacks) and LCD simulator — gradient borders can wash out on low-contrast displays
+- [x] **2.2.1** — `.primary` glass weight: 4-stop gradient border using section accent colors + white highlight, lineWidth 1.5 dark / 1.0 light, opacity 0.35→0.15 dark / 0.40→0.20 light
+- [x] **2.2.2** — `.standard` glass weight: current 2-stop gradient border, lineWidth 0.75 dark / 0.5 light (unchanged from today)
+- [x] **2.2.3** — `.recessed` glass weight: solid color border (not gradient) using `accentColor.opacity(0.08)`, lineWidth 0.5 — barely visible, just enough to define the edge
+- [x] **2.2.4** — During expand transition: border should animate from collapsed intensity to expanded intensity (slightly reduced — 0.85× collapsed values) to subtly indicate the panel is "open" and less interactive
+- [x] **2.2.5** — Verify border rendering on OLED (pure blacks) and LCD simulator — gradient borders can wash out on low-contrast displays
 
 #### Acceptance Criteria
 
-- [ ] `.primary` sections have a 4-stop gradient border at 1.5× current intensity
-- [ ] `.standard` sections retain current border treatment (no visual regression)
-- [ ] `.recessed` sections have a barely-visible solid border
-- [ ] Border intensity reduces by 15% when panel is expanded
-- [ ] Border transitions animate with the same spring as expand/collapse
-- [ ] Borders render correctly on both OLED-black and lighter backgrounds
+- [x] `.primary` sections have a 4-stop gradient border at 1.5× current intensity
+- [x] `.standard` sections retain current border treatment (no visual regression)
+- [x] `.recessed` sections have a barely-visible solid border
+- [x] Border intensity reduces by 15% when panel is expanded
+- [x] Border transitions animate with the same spring as expand/collapse
+- [x] Borders render correctly on both OLED-black and lighter backgrounds
 
 ---
 
@@ -302,23 +302,23 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **2.3.1** — Add a `depth` environment value to `CollapsibleSection`: 0 = root (default), 1 = one level nested, 2+ = deeply nested
-- **2.3.2** — Each depth level automatically applies: `.recessed` glass weight, reduced `cornerRadius` (18 → 14 → 12), reduced horizontal padding (16 → 12 → 10), smaller header typography (15pt → 13pt → 12pt)
-- **2.3.3** — Nested `CollapsibleSection` auto-increments `depth` from its parent — no manual tracking required
-- **2.3.4** — Maximum supported nesting depth: 2 (3 levels). At depth 3+, assert in DEBUG and clamp to depth 2 visuals
-- **2.3.5** — Add indent guide: a 2px vertical accent-colored line at the leading edge of nested panels, opacity scaled by depth (0.20 at depth 1, 0.12 at depth 2) — matching code-editor indent guide conventions
-- **2.3.6** — Test nested configuration: JourneyView Game Performance → per-game sub-sections (Flashcards / Grammar / WordBuilder breakdowns)
+- [x] **2.3.1** — Add a `depth` environment value to `CollapsibleSection`: 0 = root (default), 1 = one level nested, 2+ = deeply nested
+- [x] **2.3.2** — Each depth level automatically applies: `.recessed` glass weight, reduced `cornerRadius` (18 → 14 → 12), reduced horizontal padding (16 → 12 → 10), smaller header typography (15pt → 13pt → 12pt)
+- [x] **2.3.3** — Nested `CollapsibleSection` auto-increments `depth` from its parent — no manual tracking required
+- [x] **2.3.4** — Maximum supported nesting depth: 2 (3 levels). At depth 3+, assert in DEBUG and clamp to depth 2 visuals
+- [x] **2.3.5** — Add indent guide: a 2px vertical accent-colored line at the leading edge of nested panels, opacity scaled by depth (0.20 at depth 1, 0.12 at depth 2) — matching code-editor indent guide conventions
+- [x] **2.3.6** — Test nested configuration: JourneyView Game Performance → per-game sub-sections (Flashcards / Grammar / WordBuilder breakdowns)
 
 #### Acceptance Criteria
 
-- [ ] `CollapsibleSection` reads and propagates `depth` environment value
-- [ ] Depth 0: standard appearance (current visuals)
-- [ ] Depth 1: recessed glass, `cornerRadius: 14`, 13pt header, 12px padding
-- [ ] Depth 2: deeper recess, `cornerRadius: 12`, 12pt header, 10px padding
-- [ ] Depth increments automatically for nested sections
-- [ ] Indent guide renders at 2px width with section accent color at depth ≥ 1
-- [ ] DEBUG assertion fires at depth 3+ (no crash in RELEASE)
-- [ ] Nested sections are visually distinguishable at a glance — inner panels clearly recede
+- [x] `CollapsibleSection` reads and propagates `depth` environment value
+- [x] Depth 0: standard appearance (current visuals)
+- [x] Depth 1: recessed glass, `cornerRadius: 14`, 13pt header, 12px padding
+- [x] Depth 2: deeper recess, `cornerRadius: 12`, 12pt header, 10px padding
+- [x] Depth increments automatically for nested sections
+- [x] Indent guide renders at 2px width with section accent color at depth ≥ 1
+- [x] DEBUG assertion fires at depth 3+ (no crash in RELEASE)
+- [x] Nested sections are visually distinguishable at a glance — inner panels clearly recede
 
 ---
 

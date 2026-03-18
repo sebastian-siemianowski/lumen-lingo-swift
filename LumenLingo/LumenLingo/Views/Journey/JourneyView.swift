@@ -34,6 +34,26 @@ struct JourneyView: View {
         tierManager.milestoneBadgeStyle
     }
 
+    // MARK: - Badge Data
+
+    /// Number of milestones the user has unlocked.
+    private var completedMilestoneCount: Int {
+        let xp = profile?.totalXP ?? 0
+        return milestones.filter { xp >= $0.xpRequired }.count
+    }
+
+    /// Overall accuracy across all game types (0.0–1.0).
+    private var overallAccuracy: Double {
+        let totalCorrect = allProgress.reduce(0) { $0 + $1.correctAnswers }
+        let totalQuestions = allProgress.reduce(0) { $0 + $1.totalQuestions }
+        return totalQuestions > 0 ? Double(totalCorrect) / Double(totalQuestions) : 0
+    }
+
+    /// Badge for a tier-gated section: lock icon if locked, nil if unlocked.
+    private func tierBadge(for section: TierManager.JourneyStatsSection) -> CollapsibleBadge? {
+        statsConfig.sections.contains(section) ? nil : .icon("lock.fill", .secondary)
+    }
+
     @State private var currentQuote: WisdomQuote = WisdomQuote.allQuotes.randomElement() ?? WisdomQuote.allQuotes[0]
     @State private var shownQuoteIndices: Set<Int> = []
     @State private var quoteOpacity: Double = 1.0
