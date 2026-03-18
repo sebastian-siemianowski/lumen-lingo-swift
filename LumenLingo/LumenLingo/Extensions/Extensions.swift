@@ -318,6 +318,30 @@ extension Color {
     }
 }
 
+// MARK: - Caribbean Layout Tokens (Story 2.5)
+
+enum CaribbeanRadius {
+    /// 8pt — Small badges, tags, status indicators
+    static let small: CGFloat = 8
+    /// 14pt — Answer options, tiles, small cards
+    static let medium: CGFloat = 14
+    /// 20pt — Content cards, glass panels, main containers
+    static let large: CGFloat = 20
+    /// 28pt — Hero cards, featured content, modals
+    static let xLarge: CGFloat = 28
+}
+
+enum CaribbeanSpacing {
+    /// 6pt — Within compact elements (badge content, pill text)
+    static let tight: CGFloat = 6
+    /// 12pt — Default content padding, between related items
+    static let base: CGFloat = 12
+    /// 18pt — Between card sections, paragraph spacing
+    static let relaxed: CGFloat = 18
+    /// 24pt — Card-to-card spacing, section separators
+    static let generous: CGFloat = 24
+}
+
 // MARK: - View Extensions
 
 extension View {

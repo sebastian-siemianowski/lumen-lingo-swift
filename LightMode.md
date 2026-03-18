@@ -522,14 +522,14 @@ Layer 6: Shadow stack:
 ```
 
 **Acceptance Criteria:**
-- [ ] `GlassCardBackground` in light mode renders with visible internal warmth
-- [ ] Card is clearly distinguishable from the canvas background at a glance
-- [ ] Top edge has a bright highlight that creates a "caught the light" effect
-- [ ] Bottom edge has a subtle warm tint that connects to the sunset background
-- [ ] Border is visible but delicate — never harsh or heavy
-- [ ] Card feels "floating" due to colored shadow, not "sitting" flat
-- [ ] Material layer allows background gradient to show through subtly
-- [ ] Dark mode is completely unaffected — all changes gated behind `isDark` check
+- [x] `GlassCardBackground` in light mode renders with visible internal warmth
+- [x] Card is clearly distinguishable from the canvas background at a glance
+- [x] Top edge has a bright highlight that creates a "caught the light" effect
+- [x] Bottom edge has a subtle warm tint that connects to the sunset background
+- [x] Border is visible but delicate — never harsh or heavy
+- [x] Card feels "floating" due to colored shadow, not "sitting" flat
+- [x] Material layer allows background gradient to show through subtly
+- [x] Dark mode is completely unaffected — all changes gated behind `isDark` check
 - [ ] Tested on all screen sizes: iPhone SE, iPhone 15, iPhone 15 Pro Max, iPad
 
 #### Subtask 2.1.2: Add Ambient Glow Effect for Light Mode Cards
@@ -557,11 +557,11 @@ Introduce a subtle outer glow that makes cards feel luminous:
 ```
 
 **Acceptance Criteria:**
-- [ ] Cards in light mode have a soft, diffuse glow extending 4-8 points beyond their bounds
-- [ ] Glow color is warm lavender, never grey
-- [ ] Glow is subtle — visible on inspection, not overwhelming
-- [ ] Glow doesn't interfere with adjacent card spacing (no visual collision)
-- [ ] Performance: glow renders as a single blurred shape, not per-frame computation
+- [x] Cards in light mode have a soft, diffuse glow extending 4-8 points beyond their bounds
+- [x] Glow color is warm lavender, never grey
+- [x] Glow is subtle — visible on inspection, not overwhelming
+- [x] Glow doesn't interfere with adjacent card spacing (no visual collision)
+- [x] Performance: glow renders as a single blurred shape, not per-frame computation
 
 #### Subtask 2.1.3: Implement Light Mode Shimmer Accent (Optional Premium Touch)
 
@@ -597,9 +597,9 @@ The current `liquidGlassCard` (used in FlashCardsView) has these dark-mode-only 
 None of these adapt for light mode.
 
 **Acceptance Criteria:**
-- [ ] Complete audit of `LiquidGlassCardModifier` and `PremiumTransparentCardBackground` documenting every opacity value
-- [ ] List of exactly which values need light mode adaptation
-- [ ] Prioritized by visual impact (most visible issues first)
+- [x] Complete audit of `LiquidGlassCardModifier` and `PremiumTransparentCardBackground` documenting every opacity value
+- [x] List of exactly which values need light mode adaptation
+- [x] Prioritized by visual impact (most visible issues first)
 
 #### Subtask 2.2.2: Implement Light Mode LiquidGlassCard Stack
 
@@ -621,13 +621,13 @@ Layer 6: Shadows:
 ```
 
 **Acceptance Criteria:**
-- [ ] LiquidGlassCard in light mode shows prismatic edge effect (rainbow subtle shimmer)
-- [ ] Card is clearly a "premium" tier above regular `GlassCardBackground`
-- [ ] FlashCard front shows the card clearly against the Caribbean sunset background
-- [ ] FlashCard back (revealed translation) is equally readable and premium
-- [ ] Card flip animation maintains premium feel — no frame where it looks flat/broken
-- [ ] Text gradients on card front/back remain well-contrasted against the new card surface
-- [ ] Game-specific accent colors (different per game) integrate cleanly with light card
+- [x] LiquidGlassCard in light mode shows prismatic edge effect (rainbow subtle shimmer)
+- [x] Card is clearly a "premium" tier above regular `GlassCardBackground`
+- [x] FlashCard front shows the card clearly against the Caribbean sunset background
+- [x] FlashCard back (revealed translation) is equally readable and premium
+- [x] Card flip animation maintains premium feel — no frame where it looks flat/broken
+- [x] Text gradients on card front/back remain well-contrasted against the new card surface
+- [x] Game-specific accent colors (different per game) integrate cleanly with light card
 
 #### Subtask 2.2.3: Adapt FlashCard Content Colors for Light Mode Cards
 
@@ -645,11 +645,11 @@ With the new card surface, verify and adjust content colors:
 | Capsule divider | `.white.opacity(0.45)` → **fix** | `caribbeanMist.opacity(0.3)` | Currently invisible |
 
 **Acceptance Criteria:**
-- [ ] All FlashCard content elements visible and well-contrasted in light mode
-- [ ] Footer pill containing word pairs is clearly visible and reads as a distinct UI element
-- [ ] Capsule divider separating sections on card back is visible
+- [x] All FlashCard content elements visible and well-contrasted in light mode
+- [x] Footer pill containing word pairs is clearly visible and reads as a distinct UI element
+- [x] Capsule divider separating sections on card back is visible
 - [ ] Screenshot comparison: dark mode FlashCard vs light mode FlashCard — both feel premium
-- [ ] No color clashes between card surface and text gradients (test with varied color combos)
+- [x] No color clashes between card surface and text gradients (test with varied color combos)
 
 ---
 
@@ -676,11 +676,11 @@ Inner vignette: caribbeanMist @ 0.02 around edges (new — adds depth)
 ```
 
 **Acceptance Criteria:**
-- [ ] `GlassPanelWrapper` in light mode has visible but subtle decorative layers
-- [ ] Top edge has a bright highlight (simulates overhead light)
-- [ ] Panel has a gentle outer glow that creates depth separation from canvas
-- [ ] Decorative layers don't compete with content for attention
-- [ ] Panel reads as a distinct elevated surface, not just a bordered rectangle
+- [x] `GlassPanelWrapper` in light mode has visible but subtle decorative layers
+- [x] Top edge has a bright highlight (simulates overhead light)
+- [x] Panel has a gentle outer glow that creates depth separation from canvas
+- [x] Decorative layers don't compete with content for attention
+- [x] Panel reads as a distinct elevated surface, not just a bordered rectangle
 - [ ] Verified on JourneyView, ProfileView, and any other panel consumers
 
 #### Subtask 2.3.2: Enhance Panel Header Styling for Light Mode
@@ -721,14 +721,14 @@ Shadow: caribbeanShadowSubtle
 ```
 
 **Acceptance Criteria:**
-- [ ] Grammar answer options are clearly defined rectangles with visible borders
-- [ ] Each answer option is visually distinct — not blending into the background
-- [ ] Letter badge (A, B, C, D) is clearly visible with contrasting background
-- [ ] Pressed state provides immediate tactile visual feedback
-- [ ] Correct answer green glow is warm and celebratory
-- [ ] Wrong answer red is firm but not harsh — enough to communicate without punishing
-- [ ] Transition from default → selected → revealed is smooth (0.25s animation)
-- [ ] All answer options maintain consistent sizing and spacing
+- [x] Grammar answer options are clearly defined rectangles with visible borders
+- [x] Each answer option is visually distinct — not blending into the background
+- [x] Letter badge (A, B, C, D) is clearly visible with contrasting background
+- [x] Pressed state provides immediate tactile visual feedback
+- [x] Correct answer green glow is warm and celebratory
+- [x] Wrong answer red is firm but not harsh — enough to communicate without punishing
+- [x] Transition from default → selected → revealed is smooth (0.25s animation)
+- [x] All answer options maintain consistent sizing and spacing
 
 #### Subtask 2.4.2: Design WordBuilder Letter Tile for Light Mode
 
@@ -761,13 +761,13 @@ Text: caribbeanInk
 ```
 
 **Acceptance Criteria:**
-- [ ] Letter tiles look like physical tiles — elevated, tactile, tappable
-- [ ] Empty answer slots look like "drop zones" — recessed, inviting, clearly distinct from filled
-- [ ] Filled answer slots show the letter clearly with a "placed" color state
-- [ ] The letter bank area has a visible container boundary
-- [ ] Hint tiles have a warm pulsing glow that draws the eye
-- [ ] Tile spacing creates a comfortable touch target (≥ 44pt)
-- [ ] Animation from tile pick-up to placement is smooth and satisfying
+- [x] Letter tiles look like physical tiles — elevated, tactile, tappable
+- [x] Empty answer slots look like "drop zones" — recessed, inviting, clearly distinct from filled
+- [x] Filled answer slots show the letter clearly with a "placed" color state
+- [x] The letter bank area has a visible container boundary
+- [x] Hint tiles have a warm pulsing glow that draws the eye
+- [x] Tile spacing creates a comfortable touch target (≥ 44pt)
+- [x] Animation from tile pick-up to placement is smooth and satisfying
 
 #### Subtask 2.4.3: Design Grammar Question Panel for Light Mode
 
@@ -786,12 +786,12 @@ Shadow: inset caribbeanShadowSubtle (frame inverts — pushes panel IN)
 ```
 
 **Acceptance Criteria:**
-- [ ] Question panel reads as a "recessed" area within the card (depth illusion)
-- [ ] Question text is the highest-contrast element in the card (immediately draws eye)
-- [ ] Translation text is clearly secondary (lower contrast, lighter weight)
-- [ ] Panel has a gentle top-edge highlight that integrates with the parent card's glass
-- [ ] No dark purple / dark blue visible in light mode — all warm, light tones
-- [ ] Panel corners are smooth and match the parent card's radius proportionally
+- [x] Question panel reads as a "recessed" area within the card (depth illusion)
+- [x] Question text is the highest-contrast element in the card (immediately draws eye)
+- [x] Translation text is clearly secondary (lower contrast, lighter weight)
+- [x] Panel has a gentle top-edge highlight that integrates with the parent card's glass
+- [x] No dark purple / dark blue visible in light mode — all warm, light tones
+- [x] Panel corners are smooth and match the parent card's radius proportionally
 
 ---
 
@@ -814,9 +814,9 @@ Shadow: inset caribbeanShadowSubtle (frame inverts — pushes panel IN)
 | `caribbeanRadiusXLarge` | 28pt | Hero cards, featured content, modals |
 
 **Acceptance Criteria:**
-- [ ] All cards and containers in the app use one of the 4 token values
+- [x] All cards and containers in the app use one of the 4 token values
 - [ ] No hardcoded corner radius values remain in light-mode-visible code
-- [ ] Nested cards have proportionally smaller radius than parents (visual nesting)
+- [x] Nested cards have proportionally smaller radius than parents (visual nesting)
 - [ ] Test: all cards at each radius look correct (no content clipping, no excessive rounding)
 
 #### Subtask 2.5.2: Define Spacing Tokens for Card Content
@@ -829,11 +829,11 @@ Shadow: inset caribbeanShadowSubtle (frame inverts — pushes panel IN)
 | `caribbeanSpacingGenerous` | 24pt | Card-to-card spacing, section separators |
 
 **Acceptance Criteria:**
-- [ ] Consistent spacing between all card content elements
-- [ ] Cards have generous internal padding (≥ `caribbeanSpacingBase`)
-- [ ] Cards have comfortable external spacing (≥ `caribbeanSpacingGenerous`)
-- [ ] Content doesn't feel cramped or crowded in any card
-- [ ] Touch targets within cards maintain ≥ 44pt minimum with spacing
+- [x] Consistent spacing between all card content elements
+- [x] Cards have generous internal padding (≥ `caribbeanSpacingBase`)
+- [x] Cards have comfortable external spacing (≥ `caribbeanSpacingGenerous`)
+- [x] Content doesn't feel cramped or crowded in any card
+- [x] Touch targets within cards maintain ≥ 44pt minimum with spacing
 
 ---
 

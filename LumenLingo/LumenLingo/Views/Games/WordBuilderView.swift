@@ -364,7 +364,9 @@ struct WordBuilderView: View {
                     .fill(
                         letter != nil
                             ? AnyShapeStyle(LinearGradient(
-                                colors: [Color(hex: "#06b6d4").opacity(0.15), Color(hex: "#0891b2").opacity(0.1)],
+                                colors: isDark
+                                    ? [Color(hex: "#06b6d4").opacity(0.15), Color(hex: "#0891b2").opacity(0.1)]
+                                    : [Color.caribbeanSelected.opacity(0.6), Color.caribbeanOcean.opacity(0.08)],
                                 startPoint: .top, endPoint: .bottom
                             ))
                             : AnyShapeStyle(isDark ? .white.opacity(0.06) : Color.caribbeanRecessed)

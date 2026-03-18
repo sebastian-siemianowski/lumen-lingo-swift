@@ -176,9 +176,8 @@ struct LiquidCardButtonStyle: ButtonStyle {
 
 // MARK: - Premium Transparent Card Background
 
-/// A 10-layer transparent crystal card — iridescent border, prismatic inner glow,
-/// glass-curvature highlights, accent bloom, and quad shadow depth.
-/// Designed to feel like a physical collectible holographic card.
+/// A 10-layer transparent crystal card — dark mode: iridescent holographic;
+/// light mode: Caribbean sea-glass with prismatic ocean edges and warm depth.
 struct PremiumTransparentCardBackground: View {
     @Environment(\.colorScheme) private var colorScheme
 
@@ -189,10 +188,17 @@ struct PremiumTransparentCardBackground: View {
 
     var body: some View {
         ZStack {
-            // Layer 1: Crystal substrate — ultra-thin material, very transparent
+            // Layer 1: Crystal substrate
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(.ultraThinMaterial)
-                .opacity(isDark ? 0.18 : 0.40)
+                .opacity(isDark ? 0.18 : 0.38)
+
+            // Layer 1b (light only): Warm elevated base beneath material
+            if !isDark {
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(Color.caribbeanElevated)
+                    .opacity(0.6)
+            }
 
             // Layer 2: Glass curvature highlight band — convex lens refraction at top
             VStack(spacing: 0) {
@@ -201,7 +207,7 @@ struct PremiumTransparentCardBackground: View {
                         LinearGradient(
                             colors: isDark
                                 ? [.white.opacity(0.14), .white.opacity(0.04), .clear]
-                                : [.white.opacity(0.40), .white.opacity(0.10), .clear],
+                                : [.white.opacity(0.45), .white.opacity(0.12), .clear],
                             startPoint: .top,
                             endPoint: .center
                         )
@@ -224,11 +230,11 @@ struct PremiumTransparentCardBackground: View {
                                 Color.white.opacity(0.03),
                               ]
                             : [
-                                Color(hex: "#C494FC").opacity(0.10),
+                                Color.caribbeanOcean.opacity(0.06),
                                 Color.clear,
-                                Color(hex: "#F472B6").opacity(0.06),
+                                Color.caribbeanLagoon.opacity(0.04),
                                 Color.clear,
-                                Color(hex: "#FB923C").opacity(0.05),
+                                Color.caribbeanReef.opacity(0.03),
                               ],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
@@ -267,15 +273,15 @@ struct PremiumTransparentCardBackground: View {
                                 .init(color: Color.white.opacity(0.45), location: 1.00),
                               ]
                             : [
-                                .init(color: Color.white.opacity(0.75), location: 0.00),
-                                .init(color: Color(hex: "#C494FC").opacity(0.60), location: 0.10),
-                                .init(color: Color(hex: "#818cf8").opacity(0.50), location: 0.25),
-                                .init(color: Color(hex: "#F472B6").opacity(0.45), location: 0.38),
-                                .init(color: Color.white.opacity(0.80), location: 0.50),
-                                .init(color: Color(hex: "#FB923C").opacity(0.40), location: 0.62),
-                                .init(color: Color(hex: "#6ee7b7").opacity(0.45), location: 0.75),
-                                .init(color: Color(hex: "#c084fc").opacity(0.50), location: 0.88),
-                                .init(color: Color.white.opacity(0.75), location: 1.00),
+                                .init(color: Color.caribbeanOcean.opacity(0.30), location: 0.00),
+                                .init(color: Color(hex: "#a5f3fc").opacity(0.45), location: 0.10),
+                                .init(color: Color(hex: "#818cf8").opacity(0.35), location: 0.25),
+                                .init(color: Color.caribbeanCoral.opacity(0.25), location: 0.38),
+                                .init(color: Color.white.opacity(0.55), location: 0.50),
+                                .init(color: Color.caribbeanSand.opacity(0.30), location: 0.62),
+                                .init(color: Color.caribbeanReef.opacity(0.35), location: 0.75),
+                                .init(color: Color.caribbeanLagoon.opacity(0.30), location: 0.88),
+                                .init(color: Color.caribbeanOcean.opacity(0.30), location: 1.00),
                               ],
                         center: .center
                     ),
@@ -288,7 +294,7 @@ struct PremiumTransparentCardBackground: View {
                 .strokeBorder(
                     isDark
                         ? Color.white.opacity(0.06)
-                        : Color.white.opacity(0.25),
+                        : Color.white.opacity(0.40),
                     lineWidth: 0.5
                 )
                 .padding(1)
@@ -310,7 +316,7 @@ struct PremiumTransparentCardBackground: View {
                 Spacer()
             }
 
-            // Layer 8: Bottom grounding shadow-fade
+            // Layer 8: Bottom grounding — warm sand glow in light, shadow in dark
             VStack {
                 Spacer()
                 RoundedRectangle(cornerRadius: cornerRadius)
@@ -318,7 +324,7 @@ struct PremiumTransparentCardBackground: View {
                         LinearGradient(
                             colors: isDark
                                 ? [.clear, .black.opacity(0.06)]
-                                : [.clear, Color(hex: "#2D163E").opacity(0.04)],
+                                : [.clear, Color.caribbeanSand.opacity(0.05)],
                             startPoint: .center,
                             endPoint: .bottom
                         )
@@ -342,10 +348,10 @@ struct PremiumTransparentCardBackground: View {
                     .padding(.horizontal, 32)
             }
         }
-        // Quad shadow stack — deep ambient, accent bloom, coloured lift, rim light
-        .shadow(color: isDark ? .black.opacity(0.22) : Color(hex: "#2D163E").opacity(0.12), radius: 28, x: 0, y: 14)
+        // Quad shadow stack
+        .shadow(color: isDark ? .black.opacity(0.22) : Color.caribbeanOcean.opacity(0.10), radius: 28, x: 0, y: 14)
         .shadow(color: accentColor.opacity(isDark ? 0.06 : 0.10), radius: 24, x: 0, y: 8)
-        .shadow(color: isDark ? .clear : Color(hex: "#F472B6").opacity(0.06), radius: 16, x: 0, y: 4)
+        .shadow(color: isDark ? .clear : Color.caribbeanSand.opacity(0.04), radius: 16, x: 0, y: 4)
         .shadow(color: Color.white.opacity(isDark ? 0.02 : 0.05), radius: 1, x: 0, y: -1)
     }
 }

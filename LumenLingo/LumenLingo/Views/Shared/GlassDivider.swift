@@ -595,8 +595,8 @@ extension View {
 
 // MARK: - Glass Card Background
 
-/// Reusable glassmorphic card background matching the React frosted-glass design.
-/// `rgba(255,255,255,0.18)` background + `blur(34px)` + multi-layer shadows.
+/// Reusable glassmorphic card background — dark mode: frosted cosmic glass;
+/// light mode: polished Caribbean sea-glass with warm internal glow.
 struct GlassCardBackground: View {
     @Environment(\.colorScheme) private var colorScheme
     var cornerRadius: CGFloat = 22
@@ -606,66 +606,145 @@ struct GlassCardBackground: View {
 
     private var isDark: Bool { colorScheme == .dark }
 
-    // Caribbean warm tint for light mode panels
-    private let caribbeanWarm = Color(red: 140/255, green: 80/255, blue: 180/255) // warm purple
-
     var body: some View {
+        ZStack {
+            if isDark {
+                darkBody
+            } else {
+                lightBody
+            }
+        }
+    }
+
+    // MARK: Dark mode — original frosted cosmic glass
+    private var darkBody: some View {
         RoundedRectangle(cornerRadius: cornerRadius)
             .fill(.ultraThinMaterial)
-            .opacity(isDark ? 1.0 : 0.55)
             .overlay(
-                // Light mode: warm Caribbean tint to reduce harshness
-                Group {
-                    if !isDark {
-                        RoundedRectangle(cornerRadius: cornerRadius)
-                            .fill(
-                                LinearGradient(
-                                    colors: [
-                                        Color(hex: "#C494FC").opacity(0.18), // lavender
-                                        Color(hex: "#F472B6").opacity(0.12), // pink
-                                        Color(hex: "#FB923C").opacity(0.10)  // warm orange
-                                    ],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
-                    }
-                }
-            )
-            .overlay(
-                // Frosted glass inner highlight — subtler in light mode
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(
                         LinearGradient(
-                            colors: isDark
-                                ? [.white.opacity(0.12), .clear, .white.opacity(0.04)]
-                                : [.white.opacity(0.25), .clear, .white.opacity(0.06)],
+                            colors: [.white.opacity(0.12), .clear, .white.opacity(0.04)],
                             startPoint: .top,
                             endPoint: .bottom
                         )
                     )
             )
             .overlay(
-                // Color tint if provided
                 Group {
                     if let tintColor {
                         RoundedRectangle(cornerRadius: cornerRadius)
-                            .fill(tintColor.opacity(isDark ? 0.06 : 0.10))
+                            .fill(tintColor.opacity(0.06))
                     }
                 }
             )
             .overlay(
-                // Border — warm-tinted in light mode
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .strokeBorder(
-                        isDark
-                            ? borderColor.opacity(borderOpacity ?? 0.1)
-                            : Color(hex: "#C494FC").opacity(borderOpacity ?? 0.25),
-                        lineWidth: isDark ? 1 : 0.5
+                        borderColor.opacity(borderOpacity ?? 0.1),
+                        lineWidth: 1
                     )
             )
-            .shadow(color: isDark ? .black.opacity(0.08) : Color(hex: "#C494FC").opacity(0.12), radius: 20, y: 8)
-            .shadow(color: isDark ? .black.opacity(0.04) : Color(hex: "#F472B6").opacity(0.06), radius: 6, y: 3)
+            .shadow(color: .black.opacity(0.08), radius: 20, y: 8)
+            .shadow(color: .black.opacity(0.04), radius: 6, y: 3)
+    }
+
+    // MARK: Light mode — Caribbean sea-glass
+    private var lightBody: some View {
+        ZStack {
+            // Layer 0: Warm elevated base
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .fill(Color.caribbeanElevated)
+
+            // Layer 1: Subtle material blur for translucency
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .fill(.thinMaterial)
+                .opacity(0.35)
+
+            // Layer 2: Sea-glass wash — subtle turquoise tint from center
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .fill(
+                    RadialGradient(
+                        colors: [
+                            Color.caribbeanLagoon.opacity(0.04),
+                            Color.caribbeanOcean.opacity(0.025),
+                            Color.clear
+                        ],
+                        center: .center,
+                        startRadius: 0,
+                        endRadius: 280
+                    )
+                )
+
+            // Layer 3: Top-edge luminance band — sun catching sea glass
+            VStack(spacing: 0) {
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(
+                        LinearGradient(
+                            colors: [.white.opacity(0.45), .white.opacity(0.08), .clear],
+                            startPoint: .top,
+                            endPoint: .center
+                        )
+                    )
+                    .frame(height: 50)
+                Spacer()
+            }
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+
+            // Layer 4: Bottom-edge warmth band — warm sand glow from below
+            VStack(spacing: 0) {
+                Spacer()
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(
+                        LinearGradient(
+                            colors: [.clear, Color.caribbeanSand.opacity(0.04)],
+                            startPoint: .center,
+                            endPoint: .bottom
+                        )
+                    )
+                    .frame(height: 40)
+            }
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+
+            // Color tint if provided
+            if let tintColor {
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(tintColor.opacity(0.10))
+            }
+
+            // Layer 5a: Inner border — crisp light catch
+            RoundedRectangle(cornerRadius: cornerRadius - 0.5)
+                .strokeBorder(.white.opacity(0.50), lineWidth: 0.5)
+                .padding(0.5)
+
+            // Layer 5b: Outer border — turquoise definition
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .strokeBorder(
+                    Color.caribbeanOcean.opacity(borderOpacity ?? 0.12),
+                    lineWidth: 0.5
+                )
+        }
+        // Ambient glow — soft diffuse ocean radiance extending beyond card bounds
+        .background(
+            RoundedRectangle(cornerRadius: cornerRadius + 2)
+                .fill(
+                    RadialGradient(
+                        colors: [
+                            Color.caribbeanOcean.opacity(0.07),
+                            Color.caribbeanLagoon.opacity(0.03),
+                            Color.clear
+                        ],
+                        center: .center,
+                        startRadius: 0,
+                        endRadius: 200
+                    )
+                )
+                .blur(radius: 8)
+                .offset(y: 2)
+        )
+        // Layer 6: Shadow stack — ocean shadow + warm sand reflection
+        .shadow(color: Color.caribbeanOcean.opacity(0.08), radius: 16, y: 4)
+        .shadow(color: Color.caribbeanSand.opacity(0.03), radius: 6, y: 2)
     }
 }
 
@@ -694,10 +773,16 @@ struct GlassPanelWrapper<Content: View>: View {
                 .opacity(isDark ? 1 : 0)
                 .allowsHitTesting(false)
 
+            // Light-only decorative layers — Caribbean warmth and glow
+            if !isDark {
+                lightDecoration
+                    .allowsHitTesting(false)
+            }
+
             // BASE: Frosted glass material
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(.ultraThinMaterial)
-                .opacity(isDark ? 0.55 : 1.0)
+                .opacity(isDark ? 0.55 : 0.85)
 
             // Dark tint overlay
             RoundedRectangle(cornerRadius: cornerRadius)
@@ -707,27 +792,36 @@ struct GlassPanelWrapper<Content: View>: View {
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(
                     LinearGradient(
-                        colors: [
-                            .white.opacity(isDark ? 0.15 : 0.10),
-                            .clear,
-                            .white.opacity(isDark ? 0.06 : 0.08)
-                        ],
+                        colors: isDark
+                            ? [.white.opacity(0.15), .clear, .white.opacity(0.06)]
+                            : [.white.opacity(0.35), .clear, .white.opacity(0.04)],
                         startPoint: .top,
                         endPoint: .bottom
                     )
                 )
 
-            // Border
+            // Border — turquoise-tinted in light mode
             RoundedRectangle(cornerRadius: cornerRadius)
                 .strokeBorder(
-                    .white.opacity(isDark ? 0.10 : 0.18),
-                    lineWidth: 1
+                    isDark
+                        ? .white.opacity(0.10)
+                        : Color.caribbeanOcean.opacity(0.12),
+                    lineWidth: isDark ? 1 : 0.5
                 )
 
-            // Light mode: top wash
+            // Light mode: inner white border for crisp light catch
+            if !isDark {
+                RoundedRectangle(cornerRadius: cornerRadius - 0.5)
+                    .strokeBorder(.white.opacity(0.45), lineWidth: 0.5)
+                    .padding(0.5)
+            }
+
+            // Light mode: top wash — enhanced luminance band
             VStack {
                 LinearGradient(
-                    colors: [.white.opacity(0.10), .clear],
+                    colors: isDark
+                        ? [.white.opacity(0.0), .clear]
+                        : [.white.opacity(0.30), .clear],
                     startPoint: .top,
                     endPoint: .bottom
                 )
@@ -742,10 +836,82 @@ struct GlassPanelWrapper<Content: View>: View {
             content()
                 .padding(20)
         }
-        .shadow(color: .black.opacity(isDark ? 0.06 : 0.08), radius: 20, y: 8)
-        .shadow(color: .black.opacity(0.04), radius: 6, y: 3)
+        .shadow(
+            color: isDark ? .black.opacity(0.06) : Color.caribbeanOcean.opacity(0.07),
+            radius: 20, y: 8
+        )
+        .shadow(
+            color: isDark ? .black.opacity(0.04) : Color.caribbeanSand.opacity(0.03),
+            radius: 6, y: 3
+        )
         .animation(.smooth(duration: 0.65), value: isDark)
     }
+
+    // MARK: - Light Mode Decorative Layers
+
+    private var lightDecoration: some View {
+        ZStack {
+            // Aura — soft turquoise outer glow
+            RoundedRectangle(cornerRadius: cornerRadius + 8)
+                .fill(
+                    RadialGradient(
+                        colors: [
+                            Color.caribbeanOcean.opacity(0.05),
+                            Color.caribbeanLagoon.opacity(0.02),
+                            .clear
+                        ],
+                        center: .center,
+                        startRadius: 0,
+                        endRadius: 200
+                    )
+                )
+                .blur(radius: 12)
+                .padding(-10)
+
+            // Edge highlight — warm ocean-tinted border glow
+            RoundedRectangle(cornerRadius: cornerRadius + 1)
+                .strokeBorder(
+                    LinearGradient(
+                        colors: [
+                            Color.caribbeanOcean.opacity(0.12),
+                            Color.caribbeanLagoon.opacity(0.06),
+                            Color.caribbeanReef.opacity(0.04),
+                            Color.caribbeanLagoon.opacity(0.06),
+                            Color.caribbeanOcean.opacity(0.10)
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    ),
+                    lineWidth: 1
+                )
+                .padding(-1)
+
+            // Bottom warmth band — warm sand reflection
+            VStack {
+                Spacer()
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(
+                        LinearGradient(
+                            colors: [.clear, Color.caribbeanSand.opacity(0.04)],
+                            startPoint: .center,
+                            endPoint: .bottom
+                        )
+                    )
+                    .frame(height: 30)
+            }
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+
+            // Mist — subtle radial white from top leading (sea mist)
+            Ellipse()
+                .fill(Color.white.opacity(0.06))
+                .frame(width: 200, height: 100)
+                .blur(radius: 20)
+                .offset(x: -60, y: -40)
+                .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+        }
+        .compositingGroup()
+    }
+
     private var darkDecoration: some View {
         ZStack {
             // Foggy aura

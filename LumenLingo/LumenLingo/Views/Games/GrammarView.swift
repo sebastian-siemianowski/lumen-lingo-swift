@@ -293,11 +293,13 @@ struct GrammarView: View {
             RoundedRectangle(cornerRadius: 28)
                 .strokeBorder(
                     LinearGradient(
-                        colors: [Color(hex: "#f093fb").opacity(0.4), Color(hex: "#f5576c").opacity(0.3), Color(hex: "#a855f7").opacity(0.4)],
+                        colors: isDark
+                            ? [Color(hex: "#f093fb").opacity(0.4), Color(hex: "#f5576c").opacity(0.3), Color(hex: "#a855f7").opacity(0.4)]
+                            : [Color.caribbeanOcean.opacity(0.20), Color.caribbeanCoral.opacity(0.12), Color.caribbeanLagoon.opacity(0.18)],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     ),
-                    lineWidth: 1.5
+                    lineWidth: isDark ? 1.5 : 1
                 )
         )
         .shadow(color: moodColor.opacity(0.08), radius: 25, y: 10)
@@ -367,7 +369,9 @@ struct GrammarView: View {
                         LinearGradient(
                             colors: isCorrectAnswer
                                 ? [Color(hex: "#34d399").opacity(0.4), Color(hex: "#059669").opacity(0.25)]
-                                : [Color(hex: "#f093fb").opacity(0.2), Color(hex: "#a855f7").opacity(0.2)],
+                                : isDark
+                                    ? [Color(hex: "#f093fb").opacity(0.2), Color(hex: "#a855f7").opacity(0.2)]
+                                    : [Color.caribbeanOcean.opacity(0.12), Color.caribbeanLagoon.opacity(0.10)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ),
