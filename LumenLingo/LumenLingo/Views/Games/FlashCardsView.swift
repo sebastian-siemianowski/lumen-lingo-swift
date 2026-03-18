@@ -1304,6 +1304,12 @@ struct GameCompleteView: View {
     @State private var showExtras = false
     @State private var showButtons = false
     @State private var showBar = false
+    @State private var showBarBg = false
+    @State private var showBarPrimary = false
+    @State private var showBarShare = false
+    @State private var showBarSecondary = false
+    @State private var shareBreath: CGFloat = 0
+    @State private var shareCompleted = false
     @State private var showConfetti = false
     @State private var glowBreath: CGFloat = 0
     @State private var ringRotation: Double = 0
@@ -1691,22 +1697,37 @@ struct GameCompleteView: View {
 
     private var pinnedBottomBar: some View {
         VStack(spacing: 0) {
-            // Atmospheric top fade — blends bar into content
-            LinearGradient(
-                colors: [
-                    .clear,
-                    (isDark ? Color.black : Color.white).opacity(0.2),
-                    (isDark ? Color.black : Color.white).opacity(0.55)
-                ],
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .frame(height: 36)
+            // S6: 48px atmospheric fade with 5-stop gradient + performance-tier tint
+            ZStack {
+                LinearGradient(
+                    stops: [
+                        .init(color: .clear, location: 0.0),
+                        .init(color: (isDark ? Color.black : Color.white).opacity(0.03), location: 0.2),
+                        .init(color: (isDark ? Color.black : Color.white).opacity(0.15), location: 0.5),
+                        .init(color: (isDark ? Color.black : Color.white).opacity(0.40), location: 0.8),
+                        .init(color: (isDark ? Color.black : Color.white).opacity(0.65), location: 1.0)
+                    ],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
 
-            VStack(spacing: 12) {
-                // Primary CTA + Share
+                // S6.2: Performance-tier tinted fade
+                LinearGradient(
+                    stops: [
+                        .init(color: .clear, location: 0.0),
+                        .init(color: performanceTier.color.opacity(0.03), location: 0.5),
+                        .init(color: .clear, location: 1.0)
+                    ],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+            }
+            .frame(height: 48)
+
+            VStack(spacing: 14) {
+                // Primary CTA + Share row
                 HStack(spacing: 12) {
-                    // Primary Action Button
+                    // S3: Hero Button — Primary CTA
                     if let onNext = onNextCategory, let nextName = nextCategoryName {
                         Button {
                             onNext()
@@ -1727,6 +1748,14 @@ struct GameCompleteView: View {
                             .padding(.vertical, 17)
                             .background {
                                 ZStack {
+                                    // S3.2: Ambient glow pulse behind button
+                                    RoundedRectangle(cornerRadius: 24)
+                                        .fill(Color(hex: "#10b981"))
+                                        .opacity(0.06 + 0.10 * Foundation.sin(Double(glowBreath) * 0.5))
+                                        .blur(radius: 2)
+                                        .padding(-4)
+
+                                    // Base gradient — rich 3-stop
                                     RoundedRectangle(cornerRadius: 22)
                                         .fill(
                                             LinearGradient(
@@ -1739,19 +1768,22 @@ struct GameCompleteView: View {
                                                 endPoint: .bottomTrailing
                                             )
                                         )
-                                    // Inner highlight
+
+                                    // S3.1: Inner light highlight (top 50%)
                                     RoundedRectangle(cornerRadius: 22)
                                         .fill(
                                             LinearGradient(
-                                                colors: [.white.opacity(0.15), .clear],
+                                                colors: [.white.opacity(0.18), .clear],
                                                 startPoint: .top,
                                                 endPoint: .center
                                             )
                                         )
+
+                                    // S3.1: Edge specular — stronger contrast
                                     RoundedRectangle(cornerRadius: 22)
                                         .strokeBorder(
                                             LinearGradient(
-                                                colors: [.white.opacity(0.35), .white.opacity(0.05)],
+                                                colors: [.white.opacity(0.45), .white.opacity(0.03)],
                                                 startPoint: .topLeading,
                                                 endPoint: .bottomTrailing
                                             ),
@@ -1759,11 +1791,15 @@ struct GameCompleteView: View {
                                         )
                                 }
                             }
-                            .shadow(color: Color(hex: "#10b981").opacity(0.35), radius: 20, y: 8)
-                            .shadow(color: Color(hex: "#10b981").opacity(0.15), radius: 8, y: 3)
+                            // S3.1: Dual shadow — far + near
+                            .shadow(color: Color(hex: "#10b981").opacity(0.3), radius: 24, y: 10)
+                            .shadow(color: Color(hex: "#10b981").opacity(0.25), radius: 6, y: 2)
                         }
                         .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#10b981")))
+                        .opacity(showBarPrimary ? 1 : 0)
+                        .offset(y: showBarPrimary ? 0 : 30)
                     } else {
+                        // S3.3: Play Again as primary — performance-adaptive color
                         Button {
                             onPlayAgain()
                         } label: {
@@ -1778,6 +1814,13 @@ struct GameCompleteView: View {
                             .padding(.vertical, 17)
                             .background {
                                 ZStack {
+                                    // S3.2: Ambient glow pulse
+                                    RoundedRectangle(cornerRadius: 24)
+                                        .fill(Color(hex: "#667eea"))
+                                        .opacity(0.06 + 0.10 * Foundation.sin(Double(glowBreath) * 0.5))
+                                        .blur(radius: 2)
+                                        .padding(-4)
+
                                     RoundedRectangle(cornerRadius: 22)
                                         .fill(
                                             LinearGradient(
@@ -1789,18 +1832,34 @@ struct GameCompleteView: View {
                                                 endPoint: .bottomTrailing
                                             )
                                         )
+
+                                    // S3.3: Performance-adaptive color accent
+                                    RoundedRectangle(cornerRadius: 22)
+                                        .fill(
+                                            RadialGradient(
+                                                colors: [
+                                                    performanceTier.color.opacity(0.12),
+                                                    .clear
+                                                ],
+                                                center: .topTrailing,
+                                                startRadius: 0,
+                                                endRadius: 140
+                                            )
+                                        )
+
                                     RoundedRectangle(cornerRadius: 22)
                                         .fill(
                                             LinearGradient(
-                                                colors: [.white.opacity(0.15), .clear],
+                                                colors: [.white.opacity(0.18), .clear],
                                                 startPoint: .top,
                                                 endPoint: .center
                                             )
                                         )
+
                                     RoundedRectangle(cornerRadius: 22)
                                         .strokeBorder(
                                             LinearGradient(
-                                                colors: [.white.opacity(0.35), .white.opacity(0.05)],
+                                                colors: [.white.opacity(0.45), .white.opacity(0.03)],
                                                 startPoint: .topLeading,
                                                 endPoint: .bottomTrailing
                                             ),
@@ -1808,54 +1867,80 @@ struct GameCompleteView: View {
                                         )
                                 }
                             }
-                            .shadow(color: Color(hex: "#667eea").opacity(0.35), radius: 20, y: 8)
-                            .shadow(color: Color(hex: "#667eea").opacity(0.15), radius: 8, y: 3)
+                            .shadow(color: Color(hex: "#667eea").opacity(0.3), radius: 24, y: 10)
+                            .shadow(color: Color(hex: "#667eea").opacity(0.25), radius: 6, y: 2)
                         }
                         .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#667eea")))
+                        .opacity(showBarPrimary ? 1 : 0)
+                        .offset(y: showBarPrimary ? 0 : 30)
                     }
 
-                    // Share button — glass pill
+                    // S4: Share button — capsule pill with tier shimmer
                     Button {
                         shareResult()
+                        withAnimation(.spring(duration: 0.3)) {
+                            shareCompleted = true
+                        }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                            withAnimation(.spring(duration: 0.3)) {
+                                shareCompleted = false
+                            }
+                        }
                     } label: {
-                        VStack(spacing: 3) {
-                            Image(systemName: "square.and.arrow.up")
-                                .font(.system(size: 16, weight: .semibold))
-                            Text("Share")
-                                .font(.system(size: 9, weight: .semibold))
+                        HStack(spacing: 6) {
+                            Image(systemName: shareCompleted ? "checkmark.circle.fill" : "square.and.arrow.up")
+                                .font(.system(size: 15, weight: .semibold))
+                                .contentTransition(.symbolEffect(.replace))
+                            Text(L.shareResult)
+                                .font(.system(size: 11, weight: .semibold))
                         }
                         .foregroundStyle(
                             LinearGradient(
                                 colors: tierManager.tierGradientColors.isEmpty
-                                    ? [.white.opacity(0.7), .white.opacity(0.5)]
+                                    ? [.white.opacity(0.75), .white.opacity(0.55)]
                                     : tierManager.tierGradientColors.map { $0.opacity(0.9) },
                                 startPoint: .top,
                                 endPoint: .bottom
                             )
                         )
-                        .frame(width: 56, height: 56)
+                        .frame(minWidth: 68)
+                        .padding(.horizontal, 14)
+                        .padding(.vertical, 17)
                         .background {
                             ZStack {
-                                RoundedRectangle(cornerRadius: 18)
-                                    .fill(.white.opacity(isDark ? 0.06 : 0.12))
-                                RoundedRectangle(cornerRadius: 18)
+                                Capsule()
+                                    .fill(.white.opacity(isDark ? 0.06 : 0.1))
+
+                                // S4.2: Tier-gradient shimmer — jewelry-like glint
+                                Capsule()
                                     .strokeBorder(
-                                        LinearGradient(
-                                            colors: [.white.opacity(0.25), .white.opacity(0.06)],
-                                            startPoint: .topLeading,
-                                            endPoint: .bottomTrailing
+                                        AngularGradient(
+                                            gradient: Gradient(stops: [
+                                                .init(color: (tierManager.tierGradientColors.first ?? .white).opacity(0.12), location: 0.0),
+                                                .init(color: (tierManager.tierGradientColors.last ?? .white).opacity(0.22), location: 0.25),
+                                                .init(color: .white.opacity(0.35), location: 0.33),
+                                                .init(color: (tierManager.tierGradientColors.first ?? .white).opacity(0.12), location: 0.45),
+                                                .init(color: (tierManager.tierGradientColors.last ?? .white).opacity(0.06), location: 0.75),
+                                                .init(color: (tierManager.tierGradientColors.first ?? .white).opacity(0.12), location: 1.0),
+                                            ]),
+                                            center: .center,
+                                            angle: .degrees(ringRotation)
                                         ),
-                                        lineWidth: 0.5
+                                        lineWidth: 0.8
                                     )
                             }
                         }
+                        // S4.3: Subtle attention pulse — one gentle pulse per 4s
+                        .scaleEffect(1.0 + 0.02 * Foundation.sin(Double(shareBreath) * 0.25))
                     }
                     .buttonStyle(LumenPressStyle(weight: .medium))
+                    .opacity(showBarShare ? 1 : 0)
                 }
 
-                // Secondary row
+                // S5: Secondary row — clear hierarchy
                 HStack(spacing: 10) {
                     if onNextCategory != nil {
+                        // S5.1: Play Again as distinct secondary
                         Button {
                             onPlayAgain()
                         } label: {
@@ -1863,23 +1948,24 @@ struct GameCompleteView: View {
                                 Image(systemName: "arrow.counterclockwise")
                                     .font(.system(size: 12, weight: .semibold))
                                 Text(L.playAgain)
-                                    .font(.system(size: 14, weight: .semibold))
+                                    .font(.system(size: 13, weight: .semibold))
                             }
-                            .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum.opacity(0.8))
+                            .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum.opacity(0.8))
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 13)
                             .background {
                                 RoundedRectangle(cornerRadius: 16)
-                                    .fill(.white.opacity(isDark ? 0.04 : 0.08))
+                                    .fill(.white.opacity(isDark ? 0.06 : 0.1))
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 16)
-                                            .strokeBorder(.white.opacity(0.08), lineWidth: 0.5)
+                                            .strokeBorder(.white.opacity(0.12), lineWidth: 0.5)
                                     )
                             }
                         }
                         .buttonStyle(LumenPressStyle(weight: .medium))
                     }
 
+                    // S5.2: Back to Categories as tertiary
                     Button {
                         onDismiss()
                     } label: {
@@ -1887,46 +1973,82 @@ struct GameCompleteView: View {
                             Image(systemName: "chevron.left")
                                 .font(.system(size: 11, weight: .medium))
                             Text(L.backToCategories)
-                                .font(.system(size: 14, weight: .medium))
+                                .font(.system(size: 13, weight: .medium))
                         }
-                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum.opacity(0.6))
+                        .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum.opacity(0.55))
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 13)
                     }
                     .buttonStyle(LumenPressStyle(weight: .medium))
                 }
+                .opacity(showBarSecondary ? 1 : 0)
             }
             .padding(.horizontal, 20)
-            .padding(.top, 14)
-            .padding(.bottom, 10)
+            .padding(.top, 16)
+            .padding(.bottom, 12)
             .background {
                 ZStack {
-                    // Deep glass background
+                    // S1.1 Layer 1: Base material glass — reduced opacity for bleed-through
                     Rectangle()
                         .fill(.ultraThinMaterial)
-                        .opacity(isDark ? 0.92 : 0.94)
+                        .opacity(isDark ? 0.7 : 0.75)
 
-                    // Tier accent glow at top edge
-                    VStack {
-                        LinearGradient(
-                            colors: tierManager.tierGradientColors.map { $0.opacity(0.25) },
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                        .frame(height: 1)
-                        .blur(radius: 2)
+                    // S1.2: Performance-tier color wash — radial from top-center
+                    RadialGradient(
+                        colors: [
+                            performanceTier.color.opacity(isDark ? 0.06 : 0.04),
+                            performanceTier.color.opacity(isDark ? 0.02 : 0.01),
+                            .clear
+                        ],
+                        center: UnitPoint(x: 0.5, y: 0),
+                        startRadius: 20,
+                        endRadius: 300
+                    )
 
-                        LinearGradient(
-                            colors: tierManager.tierGradientColors.map { $0.opacity(0.06) },
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                        .frame(height: 16)
-                        .blur(radius: 8)
+                    // S1.1 Layer 3: Surface reflection — simulates top curvature
+                    LinearGradient(
+                        colors: [
+                            .white.opacity(isDark ? 0.04 : 0.06),
+                            .clear
+                        ],
+                        startPoint: .top,
+                        endPoint: .center
+                    )
+
+                    // S1.3: Edge lighting — sharp 1px line + 24px soft bloom
+                    VStack(spacing: 0) {
+                        VStack(spacing: 0) {
+                            LinearGradient(
+                                colors: tierManager.tierGradientColors.map { $0.opacity(0.35) },
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                            .frame(height: 1)
+
+                            LinearGradient(
+                                colors: tierManager.tierGradientColors.map { $0.opacity(0.12) },
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                            .frame(height: 24)
+                            .blur(radius: 12)
+                        }
+                        // Edge breathes subtly — the surface feels alive
+                        .opacity(0.85 + 0.15 * Foundation.sin(Double(glowBreath) * 0.5))
 
                         Spacer()
+
+                        // S1.3: Bottom inner shadow for depth
+                        LinearGradient(
+                            colors: [.clear, .black.opacity(0.03)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                        .frame(height: 8)
                     }
                 }
+                .opacity(showBarBg ? 1 : 0)
+                .ignoresSafeArea(.container, edges: .bottom)
             }
         }
         .offset(y: showBar ? 0 : 200)
@@ -1946,40 +2068,50 @@ struct GameCompleteView: View {
                             .font(.system(size: 15, weight: .semibold))
                         VStack(spacing: 2) {
                             Text(L.nextCategory)
-                                .font(.system(size: 16, weight: .semibold))
+                                .font(.system(size: 16, weight: .bold, design: .rounded))
                             Text(nextName)
                                 .font(.system(size: 12, weight: .medium))
-                                .opacity(0.7)
+                                .opacity(0.6)
                         }
                     }
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 18)
                     .background {
-                        RoundedRectangle(cornerRadius: 22)
-                            .fill(
-                                LinearGradient(
-                                    colors: [
-                                        Color(hex: "#10b981").opacity(0.45),
-                                        Color(hex: "#059669").opacity(0.3)
-                                    ],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 22)
-                                    .strokeBorder(
-                                        LinearGradient(
-                                            colors: [.white.opacity(0.3), .white.opacity(0.08)],
-                                            startPoint: .topLeading,
-                                            endPoint: .bottomTrailing
-                                        ),
-                                        lineWidth: 0.5
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 22)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [
+                                            Color(hex: "#10b981"),
+                                            Color(hex: "#059669"),
+                                            Color(hex: "#047857")
+                                        ],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
                                     )
-                            )
+                                )
+                            RoundedRectangle(cornerRadius: 22)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.18), .clear],
+                                        startPoint: .top,
+                                        endPoint: .center
+                                    )
+                                )
+                            RoundedRectangle(cornerRadius: 22)
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.45), .white.opacity(0.03)],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    ),
+                                    lineWidth: 0.5
+                                )
+                        }
                     }
-                    .shadow(color: Color(hex: "#10b981").opacity(0.25), radius: 20, y: 8)
+                    .shadow(color: Color(hex: "#10b981").opacity(0.3), radius: 24, y: 10)
+                    .shadow(color: Color(hex: "#10b981").opacity(0.25), radius: 6, y: 2)
                 }
                 .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#10b981")))
             }
@@ -1991,52 +2123,72 @@ struct GameCompleteView: View {
                     Image(systemName: "arrow.counterclockwise")
                         .font(.system(size: 15, weight: .semibold))
                     Text(L.playAgain)
-                        .font(.system(size: 16, weight: .semibold))
+                        .font(.system(size: 16, weight: .bold, design: .rounded))
                 }
                 .foregroundStyle(.white)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 18)
                 .background {
-                    RoundedRectangle(cornerRadius: 22)
-                        .fill(
-                            LinearGradient(
-                                colors: [
-                                    Color(hex: "#667eea").opacity(0.4),
-                                    Color(hex: "#764ba2").opacity(0.25)
-                                ],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 22)
-                                .strokeBorder(
-                                    LinearGradient(
-                                        colors: [.white.opacity(0.3), .white.opacity(0.08)],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    ),
-                                    lineWidth: 0.5
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 22)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color(hex: "#667eea"),
+                                        Color(hex: "#764ba2")
+                                    ],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
                                 )
-                        )
+                            )
+                        RoundedRectangle(cornerRadius: 22)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.18), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                        RoundedRectangle(cornerRadius: 22)
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.45), .white.opacity(0.03)],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 0.5
+                            )
+                    }
                 }
-                .shadow(color: Color(hex: "#667eea").opacity(0.2), radius: 20, y: 8)
+                .shadow(color: Color(hex: "#667eea").opacity(0.3), radius: 24, y: 10)
+                .shadow(color: Color(hex: "#667eea").opacity(0.25), radius: 6, y: 2)
             }
             .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#667eea")))
 
-            // Share button (iPad)
+            // Share button (iPad) — with tier shimmer border
             Button {
                 shareResult()
+                withAnimation(.spring(duration: 0.3)) {
+                    shareCompleted = true
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                    withAnimation(.spring(duration: 0.3)) {
+                        shareCompleted = false
+                    }
+                }
             } label: {
                 HStack(spacing: 10) {
-                    Image(systemName: "square.and.arrow.up")
+                    Image(systemName: shareCompleted ? "checkmark.circle.fill" : "square.and.arrow.up")
                         .font(.system(size: 14, weight: .semibold))
+                        .contentTransition(.symbolEffect(.replace))
                     Text(L.shareResult)
                         .font(.system(size: 15, weight: .semibold))
                 }
                 .foregroundStyle(
                     LinearGradient(
-                        colors: tierManager.tierGradientColors,
+                        colors: tierManager.tierGradientColors.isEmpty
+                            ? [.white.opacity(0.75), .white.opacity(0.55)]
+                            : tierManager.tierGradientColors.map { $0.opacity(0.9) },
                         startPoint: .leading,
                         endPoint: .trailing
                     )
@@ -2044,7 +2196,25 @@ struct GameCompleteView: View {
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 14)
                 .background {
-                    glassCard
+                    ZStack {
+                        glassCard
+                        RoundedRectangle(cornerRadius: 18)
+                            .strokeBorder(
+                                AngularGradient(
+                                    gradient: Gradient(stops: [
+                                        .init(color: (tierManager.tierGradientColors.first ?? .white).opacity(0.12), location: 0.0),
+                                        .init(color: (tierManager.tierGradientColors.last ?? .white).opacity(0.22), location: 0.25),
+                                        .init(color: .white.opacity(0.35), location: 0.33),
+                                        .init(color: (tierManager.tierGradientColors.first ?? .white).opacity(0.12), location: 0.45),
+                                        .init(color: (tierManager.tierGradientColors.last ?? .white).opacity(0.06), location: 0.75),
+                                        .init(color: (tierManager.tierGradientColors.first ?? .white).opacity(0.12), location: 1.0),
+                                    ]),
+                                    center: .center,
+                                    angle: .degrees(ringRotation)
+                                ),
+                                lineWidth: 0.8
+                            )
+                    }
                 }
             }
             .buttonStyle(.plain)
@@ -2058,7 +2228,7 @@ struct GameCompleteView: View {
                     Text(L.backToCategories)
                         .font(.system(size: 15, weight: .medium))
                 }
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum.opacity(0.55))
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 16)
             }
@@ -2535,9 +2705,35 @@ struct GameCompleteView: View {
             }
         }
 
-        // Pinned bottom bar slides up
+        // S2: Staggered bottom bar entrance
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             showBar = true
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.55) {
+            withAnimation(.easeOut(duration: 0.3)) {
+                showBarBg = true
+            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.65) {
+            withAnimation(.spring(duration: 0.35, bounce: 0.12)) {
+                showBarPrimary = true
+            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+            withAnimation(.easeOut(duration: 0.3)) {
+                showBarShare = true
+            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            withAnimation(.easeOut(duration: 0.3)) {
+                showBarSecondary = true
+            }
+        }
+        // S4.3: Share attention pulse starts 2s after bar appears
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            withAnimation(.easeInOut(duration: 2).repeatForever(autoreverses: true)) {
+                shareBreath = .pi * 2
+            }
         }
 
         // Perfect score confetti burst
