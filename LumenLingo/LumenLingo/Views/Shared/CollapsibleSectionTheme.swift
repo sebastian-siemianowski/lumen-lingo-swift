@@ -84,7 +84,7 @@ extension CollapsibleSectionTheme {
     )
 
     static let accuracyHeatmap = CollapsibleSectionTheme(
-        icon: "square.grid.3x3.fill",
+        icon: "tablecells.fill",
         gradientColors: [Color(hex: "#f97316"), Color(hex: "#f59e0b")],
         category: .analytics
     )

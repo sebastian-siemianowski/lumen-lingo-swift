@@ -114,9 +114,6 @@ struct JourneyView: View {
                     milestonesSection
                 }
 
-                // ── Analytics group ──────────────────────────
-                Spacer().frame(height: 8)  // 28pt inter-group gap (20 + 8)
-
                 // Game type breakdown (Pro+)
                 CollapsibleSection(
                     title: L.gamePerformance,
@@ -211,9 +208,6 @@ struct JourneyView: View {
                     }
                 }
 
-                // ── Engagement group ─────────────────────────
-                Spacer().frame(height: 8)  // 28pt inter-group gap
-
                 // Export Data (Elite+)
                 CollapsibleSection(
                     title: L.exportData,
@@ -228,9 +222,6 @@ struct JourneyView: View {
                         ExportDataWidget(allProgress: allProgress, profile: profile)
                     }
                 }
-
-                // ── Analytics (continued) ────────────────────
-                Spacer().frame(height: 8)  // 28pt inter-group gap
 
                 // Learning Insights (Royal)
                 CollapsibleSection(
@@ -247,9 +238,6 @@ struct JourneyView: View {
                     }
                 }
 
-                // ── Stats (continued) ────────────────────────
-                Spacer().frame(height: 8)  // 28pt inter-group gap
-
                 // Streak section (always visible — part of basicStats)
                 CollapsibleSection(
                     title: L.currentStreak,
@@ -260,9 +248,6 @@ struct JourneyView: View {
                     streakSection
                 }
 
-                // ── Engagement group ─────────────────────────
-                Spacer().frame(height: 8)  // 28pt inter-group gap
-
                 // Wisdom quote
                 CollapsibleSection(
                     title: "Wisdom",
@@ -271,9 +256,6 @@ struct JourneyView: View {
                 ) {
                     quoteCard
                 }
-
-                // ── Danger group ─────────────────────────────
-                Spacer().frame(height: 8)  // 28pt inter-group gap
 
                 // Reset progress
                 CollapsibleSection(

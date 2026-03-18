@@ -103,6 +103,7 @@ struct ProfileView: View {
 
                 // Top-level settings tabs
                 settingsTabBar
+                    .padding(.horizontal, 16)
                     .padding(.top, 20)
                     .opacity(headerAppeared ? 1 : 0)
 

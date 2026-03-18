@@ -29,8 +29,10 @@ struct AccuracyHeatmapView: View {
     }
 
     private var categories: [CategoryAccuracy] {
-        let grouped = Dictionary(grouping: allProgress) { $0.categoryKey }
-        return grouped.map { key, records in
+        let grouped = Dictionary(grouping: allProgress.filter { !$0.categoryKey.isEmpty }) { $0.categoryKey }
+        return grouped.compactMap { key, records -> CategoryAccuracy? in
+            // Skip entries with non-meaningful keys (e.g. single punctuation chars)
+            guard key.count > 1 || key.first?.isLetter == true else { return nil }
             let totalCorrect = records.reduce(0) { $0 + $1.correctAnswers }
             let totalQuestions = records.reduce(0) { $0 + $1.totalQuestions }
             let accuracy = totalQuestions > 0 ? Double(totalCorrect) / Double(totalQuestions) * 100 : 0
