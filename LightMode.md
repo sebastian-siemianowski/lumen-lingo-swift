@@ -1168,13 +1168,13 @@ Spacing:
 ```
 
 **Acceptance Criteria:**
-- [ ] User's name renders in Caribbean sunset gradient text (warm, premium)
-- [ ] Gradient text has a subtle warm shadow that makes letters glow
-- [ ] Greeting line adapts correctly for morning/afternoon/evening
-- [ ] Subtitle shows streak count or motivational text in warm italic
-- [ ] Typography hierarchy is clear: greeting (medium), name (large/bold), subtitle (small/calm)
-- [ ] Layout has generous vertical spacing — nothing feels cramped
-- [ ] Works with long names (15+ characters) without truncation breaking the layout
+- [x] User's name renders in Caribbean sunset gradient text (warm, premium)
+- [x] Gradient text has a subtle warm shadow that makes letters glow
+- [x] Greeting line adapts correctly for morning/afternoon/evening
+- [x] Subtitle shows streak count or motivational text in warm italic
+- [x] Typography hierarchy is clear: greeting (medium), name (large/bold), subtitle (small/calm)
+- [x] Layout has generous vertical spacing — nothing feels cramped
+- [x] Works with long names (15+ characters) without truncation breaking the layout
 
 #### Subtask 4.1.2: Add Time-of-Day Ambient Accent
 
@@ -1200,11 +1200,11 @@ Night (9pm-5am):
 ```
 
 **Acceptance Criteria:**
-- [ ] Ambient accent changes based on time of day — providing visual variety
-- [ ] Accent is extremely subtle — a background warmth, not a visible circle
-- [ ] Users who open the app at different times perceive slight visual freshness
-- [ ] Accent doesn't interfere with text readability
-- [ ] Graceful transition if user keeps app open across time boundaries (e.g., 4:59 → 5:00 PM)
+- [x] Ambient accent changes based on time of day — providing visual variety
+- [x] Accent is extremely subtle — a background warmth, not a visible circle
+- [x] Users who open the app at different times perceive slight visual freshness
+- [x] Accent doesn't interfere with text readability
+- [x] Graceful transition if user keeps app open across time boundaries (e.g., 4:59 → 5:00 PM)
 
 ---
 
@@ -1243,14 +1243,14 @@ Shadow: stat-accent @ 0.08, radius 8, y: 3
 ```
 
 **Acceptance Criteria:**
-- [ ] Each stat card has a unique, warm color tint that gives it personality
-- [ ] Cards are visually distinct from each other (golden streak ≠ violet knowledge ≠ green accuracy)
-- [ ] Top-edge highlight creates a "caught the light" premium signal on each card
-- [ ] Icons sit in a tinted circle that echoes the card's accent color
-- [ ] Stat values are large, bold, and immediately readable (`caribbeanInk`)
-- [ ] Labels are clearly secondary (`caribbeanPlum`)
-- [ ] Cards have individual warm-colored shadows (not generic grey)
-- [ ] Grid of 4 stat cards creates a harmonious "gem collection" visual
+- [x] Each stat card has a unique, warm color tint that gives it personality
+- [x] Cards are visually distinct from each other (golden streak ≠ violet knowledge ≠ green accuracy)
+- [x] Top-edge highlight creates a "caught the light" premium signal on each card
+- [x] Icons sit in a tinted circle that echoes the card's accent color
+- [x] Stat values are large, bold, and immediately readable (`caribbeanInk`)
+- [x] Labels are clearly secondary (`caribbeanPlum`)
+- [x] Cards have individual warm-colored shadows (not generic grey)
+- [x] Grid of 4 stat cards creates a harmonious "gem collection" visual
 
 #### Subtask 4.2.2: Add Stat Value Animation
 
@@ -1269,12 +1269,12 @@ First appearance:
 ```
 
 **Acceptance Criteria:**
-- [ ] Stat values count up smoothly when dashboard first loads
-- [ ] Stagger animation creates a satisfying "cascade" effect
-- [ ] Number formatting is correct during animation (no floating point artifacts)
-- [ ] Animation respects `reduceMotion` accessibility setting (jump to final value instead)
-- [ ] Values that haven't changed since last visit still animate on fresh load (user delight)
-- [ ] Performance: animation is smooth 60fps with no frame drops
+- [x] Stat values count up smoothly when dashboard first loads
+- [x] Stagger animation creates a satisfying "cascade" effect
+- [x] Number formatting is correct during animation (no floating point artifacts)
+- [x] Animation respects `reduceMotion` accessibility setting (jump to final value instead)
+- [x] Values that haven't changed since last visit still animate on fresh load (user delight)
+- [x] Performance: animation is smooth 60fps with no frame drops
 
 #### Subtask 4.2.3: Design Compact Stat Badge for Collapsed State
 
@@ -1297,11 +1297,11 @@ Spacing: 4pt between icon and value, 8pt horizontal padding
 ```
 
 **Acceptance Criteria:**
-- [ ] Compact badges are small but legible and premium-looking
-- [ ] Each badge retains its stat-specific accent color
-- [ ] Badges are arranged in a horizontal flow with reasonable spacing
-- [ ] The collapse/expand transition animates smoothly (0.35s spring)
-- [ ] Expanded → collapsed doesn't feel like "losing quality" — badge form is still premium
+- [x] Compact badges are small but legible and premium-looking
+- [x] Each badge retains its stat-specific accent color
+- [x] Badges are arranged in a horizontal flow with reasonable spacing
+- [x] The collapse/expand transition animates smoothly (0.35s spring)
+- [x] Expanded → collapsed doesn't feel like "losing quality" — badge form is still premium
 
 ---
 
@@ -1339,14 +1339,14 @@ Shadow: game gradient color @ 0.10, radius 14, y: 4
 ```
 
 **Acceptance Criteria:**
-- [ ] Each game card has a unique, warm color identity (purple FlashCards, green Grammar, pink-orange WordBuilder)
-- [ ] Game icon sits in a glowing gradient circle — premium, eye-catching
-- [ ] Game title is bold and immediately readable in `caribbeanInk`
-- [ ] Game description is secondary in `caribbeanPlum`
-- [ ] Card surface has visible depth (not flat) — top highlight + shadow create dimension
-- [ ] Cards feel "tappable" — the design invites interaction
-- [ ] Game-specific gradients are harmonious when viewed side by side
-- [ ] Card hover/pressed state darkens slightly (caribbeanHover) with scale 0.98
+- [x] Each game card has a unique, warm color identity (purple FlashCards, green Grammar, pink-orange WordBuilder)
+- [x] Game icon sits in a glowing gradient circle — premium, eye-catching
+- [x] Game title is bold and immediately readable in `caribbeanInk`
+- [x] Game description is secondary in `caribbeanPlum`
+- [x] Card surface has visible depth (not flat) — top highlight + shadow create dimension
+- [x] Cards feel "tappable" — the design invites interaction
+- [x] Game-specific gradients are harmonious when viewed side by side
+- [x] Card hover/pressed state darkens slightly (caribbeanHover) with scale 0.98
 
 #### Subtask 4.3.2: Add Game Card Progress Indicator
 
@@ -1365,12 +1365,12 @@ Below ring (or alongside):
 ```
 
 **Acceptance Criteria:**
-- [ ] Each game card shows a mini progress ring with today's progress
-- [ ] Progress ring uses the game's signature color gradient
-- [ ] Ring animation: fills clockwise from 0% to current over 0.8s on appear
-- [ ] Progress text is small but readable
-- [ ] Ring doesn't dominate the card — it's a secondary accent
-- [ ] Cards with no progress today show an empty ring (0%) with a motivational micro-copy
+- [x] Each game card shows a mini progress ring with today's progress
+- [x] Progress ring uses the game's signature color gradient
+- [x] Ring animation: fills clockwise from 0% to current over 0.8s on appear
+- [x] Progress text is small but readable
+- [x] Ring doesn't dominate the card — it's a secondary accent
+- [x] Cards with no progress today show an empty ring (0%) with a motivational micro-copy
 
 #### Subtask 4.3.3: Design "New" / "Recommended" Badge for Game Cards
 
@@ -1387,12 +1387,12 @@ Badge style:
 ```
 
 **Acceptance Criteria:**
-- [ ] Badge is visually prominent without being obnoxious
-- [ ] Warm gradient fill makes badge feel celebratory
-- [ ] Badge text is crisp and readable at .caption2 size
-- [ ] Badge has a soft shadow to float above the card surface
-- [ ] Multiple badges can exist side by side if needed
-- [ ] Badge appears with a scale-up spring animation on first load
+- [x] Badge is visually prominent without being obnoxious
+- [x] Warm gradient fill makes badge feel celebratory
+- [x] Badge text is crisp and readable at .caption2 size
+- [x] Badge has a soft shadow to float above the card surface
+- [x] Multiple badges can exist side by side if needed
+- [x] Badge appears with a scale-up spring animation on first load
 
 ---
 
@@ -1442,13 +1442,13 @@ Row background:
 ```
 
 **Acceptance Criteria:**
-- [ ] Each activity row has a game-colored icon that provides instant visual identification
-- [ ] Activity rows feel like "journal entries" — warm, personal, meaningful
-- [ ] Score badges use warm tints that feel celebratory even for average scores
-- [ ] Timestamp is gentle and unobtrusive
-- [ ] Separators are warm lavender (not harsh grey lines)
-- [ ] Pressed state provides subtle feedback
-- [ ] Row spacing is generous (≥ 56pt height) for comfortable reading
+- [x] Each activity row has a game-colored icon that provides instant visual identification
+- [x] Activity rows feel like "journal entries" — warm, personal, meaningful
+- [x] Score badges use warm tints that feel celebratory even for average scores
+- [x] Timestamp is gentle and unobtrusive
+- [x] Separators are warm lavender (not harsh grey lines)
+- [x] Pressed state provides subtle feedback
+- [x] Row spacing is generous (≥ 56pt height) for comfortable reading
 
 #### Subtask 4.4.2: Redesign Empty State for Activities
 
@@ -1475,12 +1475,12 @@ CTA: "Start Learning" button
 ```
 
 **Acceptance Criteria:**
-- [ ] Empty state icon is visible and warm (NOT white opacity on white)
-- [ ] Icon has a gentle breathing animation that draws the eye
-- [ ] Copy is motivational and warm — not clinical or placeholder-feeling
-- [ ] CTA button is the clear focal point with gradient and glow
-- [ ] Empty state looks intentionally designed, not like a missing-data fallback
-- [ ] Layout is centered with generous spacing
+- [x] Empty state icon is visible and warm (NOT white opacity on white)
+- [x] Icon has a gentle breathing animation that draws the eye
+- [x] Copy is motivational and warm — not clinical or placeholder-feeling
+- [x] CTA button is the clear focal point with gradient and glow
+- [x] Empty state looks intentionally designed, not like a missing-data fallback
+- [x] Layout is centered with generous spacing
 
 ---
 
@@ -1504,11 +1504,11 @@ Spacing: 24pt above header, 12pt below
 ```
 
 **Acceptance Criteria:**
-- [ ] Section headers have a small gradient accent marker for visual interest
-- [ ] Headers clearly delineate sections without heavy divider lines
-- [ ] Typography is bold enough to serve as a landmark while scrolling
-- [ ] Spacing above headers is generous (section breathing room)
-- [ ] Headers animate in when scrolling (fade up from 0.5 opacity, 8pt offset)
+- [x] Section headers have a small gradient accent marker for visual interest
+- [x] Headers clearly delineate sections without heavy divider lines
+- [x] Typography is bold enough to serve as a landmark while scrolling
+- [x] Spacing above headers is generous (section breathing room)
+- [x] Headers animate in when scrolling (fade up from 0.5 opacity, 8pt offset)
 
 #### Subtask 4.5.2: Add Parallax Depth to Dashboard Background
 
@@ -1523,11 +1523,11 @@ Parallax layers:
 ```
 
 **Acceptance Criteria:**
-- [ ] Background gradient shifts subtly as user scrolls — creating depth
-- [ ] Effect is very subtle — perceptible subconsciously, not consciously distracting
-- [ ] Parallax doesn't affect scroll performance (< 1ms per frame additional work)
-- [ ] Parallax disabled when `reduceMotion` is enabled
-- [ ] Pull-to-refresh interaction works correctly with parallax layers
+- [x] Background gradient shifts subtly as user scrolls — creating depth
+- [x] Effect is very subtle — perceptible subconsciously, not consciously distracting
+- [x] Parallax doesn't affect scroll performance (< 1ms per frame additional work)
+- [x] Parallax disabled when `reduceMotion` is enabled
+- [x] Pull-to-refresh interaction works correctly with parallax layers
 
 ---
 

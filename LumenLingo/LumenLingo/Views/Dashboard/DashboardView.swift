@@ -30,6 +30,9 @@ struct DashboardView: View {
     @State private var showExpiredSheet = false
     @State private var showAllLanguages = false
     @State private var crossLanguageRecord: GameProgressRecord?
+    @State private var statsAppeared = false
+    @State private var emptyStatePulse: CGFloat = 0
+    @State private var scrollOffset: CGFloat = 0
 
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
@@ -66,8 +69,79 @@ struct DashboardView: View {
         languagePrefs.first?.targetLanguage ?? "spanish"
     }
 
+    // MARK: - Time of Day
+
+    private enum TimeOfDay {
+        case morning, afternoon, evening, night
+
+        var greeting: String {
+            switch self {
+            case .morning: "Good morning"
+            case .afternoon: "Good afternoon"
+            case .evening: "Good evening"
+            case .night: "Good evening"
+            }
+        }
+
+        /// Subtle ambient radial accent behind the greeting — barely perceptible warmth
+        var ambientColors: [Color] {
+            switch self {
+            case .morning:
+                [Color(hex: "0EA5E9").opacity(0.06), Color(hex: "06B6D4").opacity(0.02), .clear]
+            case .afternoon:
+                [Color(hex: "FDE68A").opacity(0.05), Color(hex: "F59E0B").opacity(0.02), .clear]
+            case .evening:
+                [Color(hex: "FB923C").opacity(0.07), Color(hex: "FB7185").opacity(0.03), .clear]
+            case .night:
+                [Color(hex: "0EA5E9").opacity(0.04), Color(hex: "06B6D4").opacity(0.015), .clear]
+            }
+        }
+
+        var ambientCenter: UnitPoint {
+            switch self {
+            case .morning: .top
+            case .afternoon: .topTrailing
+            case .evening: .bottomTrailing
+            case .night: .center
+            }
+        }
+
+        var ambientRadius: CGFloat {
+            switch self {
+            case .morning: 100
+            case .afternoon: 100
+            case .evening: 120
+            case .night: 90
+            }
+        }
+    }
+
+    private var currentTimeOfDay: TimeOfDay {
+        let hour = Calendar.current.component(.hour, from: Date())
+        switch hour {
+        case 5..<12: return .morning
+        case 12..<17: return .afternoon
+        case 17..<21: return .evening
+        default: return .night
+        }
+    }
+
     var body: some View {
         ZStack(alignment: .bottom) {
+            // Parallax ambient glow layer (light mode only)
+            if !isDark {
+                let reduceMotion = UIAccessibility.isReduceMotionEnabled
+                RadialGradient(
+                    colors: currentTimeOfDay.ambientColors,
+                    center: .top,
+                    startRadius: 0,
+                    endRadius: 300
+                )
+                .offset(y: reduceMotion ? 0 : scrollOffset * 0.3)
+                .ignoresSafeArea()
+                .allowsHitTesting(false)
+            }
+
             ScrollView {
                 VStack(spacing: 20) {
                     // Language selector pill
@@ -83,14 +157,14 @@ struct DashboardView: View {
                     SoundscapeNowPlaying()
 
                     // Divider
-                    GlassDivider(color: .white, opacity: 0.08)
+                    GlassDivider(color: isDark ? .white : .caribbeanLagoon, opacity: isDark ? 0.08 : 0.15)
                         .padding(.horizontal, 4)
 
                     // Games Section
                     gamesSection
 
                     // Divider
-                    GlassDivider(color: .white, opacity: 0.08)
+                    GlassDivider(color: isDark ? .white : .caribbeanLagoon, opacity: isDark ? 0.08 : 0.15)
                         .padding(.horizontal, 4)
 
                     // Recent Activity
@@ -103,6 +177,18 @@ struct DashboardView: View {
                 }
                 .padding(.horizontal, 16)
                 .padding(.top, 8)
+                .background(
+                    GeometryReader { proxy in
+                        Color.clear.preference(
+                            key: ScrollOffsetPreferenceKey.self,
+                            value: proxy.frame(in: .named("dashboardScroll")).minY
+                        )
+                    }
+                )
+            }
+            .coordinateSpace(name: "dashboardScroll")
+            .onPreferenceChange(ScrollOffsetPreferenceKey.self) { value in
+                scrollOffset = value
             }
 
             // Bottom fog overlay
@@ -219,56 +305,76 @@ struct DashboardView: View {
     private var dashboardHeaderContent: some View {
         VStack(spacing: 16) {
             // Avatar + Greeting row
-            HStack(spacing: 10) {
-                // Gradient avatar
+            HStack(spacing: 12) {
+                // Gradient avatar — turquoise ocean in light, purple in dark
                 ZStack {
                     RoundedRectangle(cornerRadius: 14)
                         .fill(
                             LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                colors: isDark
+                                    ? [Color(hex: "#667eea"), Color(hex: "#764ba2")]
+                                    : [Color(hex: "#0EA5E9"), Color(hex: "#06B6D4")],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                             )
                         )
-                        .frame(width: 44, height: 44)
-                        .shadow(color: Color(hex: "#764ba2").opacity(0.4), radius: 12)
+                        .frame(width: 46, height: 46)
+                        .shadow(color: isDark
+                            ? Color(hex: "#764ba2").opacity(0.4)
+                            : Color(hex: "#0EA5E9").opacity(0.25),
+                            radius: 12)
 
                     Image(systemName: "person.fill")
                         .font(.system(size: 18))
                         .foregroundStyle(.white)
                 }
 
-                VStack(alignment: .leading, spacing: 2) {
+                VStack(alignment: .leading, spacing: 4) {
+                    // Time-of-day greeting — calm and warm
+                    if !isDark {
+                        Text(currentTimeOfDay.greeting)
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundStyle(Color.caribbeanPlum)
+                            .tracking(0.3)
+                    }
+
+                    // User name — hero text with gradient
                     HStack(spacing: 4) {
-                        Text(hasUserName ? "Hello, \(displayName)!" : "Welcome back!")
-                            .font(.system(size: 18, weight: .bold))
+                        Text(hasUserName ? (isDark ? "Hello, \(displayName)!" : displayName) : "Welcome back!")
+                            .font(.system(size: isDark ? 18 : 22, weight: .bold))
                             .foregroundStyle(
-                                LinearGradient(
-                                    colors: tierManager.currentTier == .free
-                                        ? [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#d946ef")]
-                                        : tierManager.tierGradientColors,
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
+                                isDark
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: tierManager.currentTier == .free
+                                            ? [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#d946ef")]
+                                            : tierManager.tierGradientColors,
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    ))
+                                    : AnyShapeStyle(LinearGradient.caribbeanGradientSunset)
                             )
                             .lineLimit(1)
                             .minimumScaleFactor(0.7)
+                            .shadow(color: isDark ? .clear : Color.caribbeanPlum.opacity(0.08), radius: 4)
 
                         if tierManager.currentTier != .free {
                             Image(systemName: tierManager.tierIcon)
-                                .font(.system(size: 14, weight: .semibold))
+                                .font(.system(size: isDark ? 14 : 16, weight: .semibold))
                                 .foregroundStyle(
-                                    LinearGradient(
-                                        colors: tierManager.tierGradientColors,
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    )
+                                    isDark
+                                        ? AnyShapeStyle(LinearGradient(
+                                            colors: tierManager.tierGradientColors,
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        ))
+                                        : AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
                                 )
                                 .scaleEffect(tierIconAppeared ? 1 : 0)
                                 .opacity(tierIconAppeared ? 1 : 0)
                         }
                     }
 
+                    // Subtitle — trial info or motivational
                     if tierManager.currentTier == .trial,
                        let days = profile?.trialDaysRemaining, days > 0 {
                         Text("\(days) days left in your trial")
@@ -282,8 +388,9 @@ struct DashboardView: View {
                             )
                     } else {
                         Text("Ready for a new adventure?")
-                            .font(.system(size: 13))
-                            .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                            .font(.system(size: 13, weight: isDark ? .regular : .regular))
+                            .italic(!isDark)
+                            .foregroundStyle(isDark ? .white.opacity(0.7) : Color.caribbeanPlum)
                     }
                 }
 
@@ -327,7 +434,9 @@ struct DashboardView: View {
                 icon: "star.fill",
                 iconColor: .yellow,
                 gradient: [Color(hex: "#f59e0b"), Color(hex: "#d97706")],
-                progress: profile?.levelProgress
+                progress: profile?.levelProgress,
+                accentTint: Color(hex: "#FDE68A"),
+                index: 0
             )
 
             statCard(
@@ -336,7 +445,9 @@ struct DashboardView: View {
                 icon: "bolt.fill",
                 iconColor: .cyan,
                 gradient: [Color(hex: "#06b6d4"), Color(hex: "#0891b2")],
-                milestone: currentXPMilestone
+                milestone: currentXPMilestone,
+                accentTint: Color(hex: "#0EA5E9"),
+                index: 1
             )
 
             statCard(
@@ -344,8 +455,15 @@ struct DashboardView: View {
                 value: "\(profile?.streakDays ?? 0)",
                 icon: "trophy.fill",
                 iconColor: .orange,
-                gradient: [Color(hex: "#f97316"), Color(hex: "#ea580c")]
+                gradient: [Color(hex: "#f97316"), Color(hex: "#ea580c")],
+                accentTint: Color(hex: "#FB7185"),
+                index: 2
             )
+        }
+        .onAppear {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.75).delay(0.15)) {
+                statsAppeared = true
+            }
         }
     }
 
@@ -373,25 +491,46 @@ struct DashboardView: View {
         iconColor: Color,
         gradient: [Color],
         progress: Double? = nil,
-        milestone: (icon: String, label: String)? = nil
+        milestone: (icon: String, label: String)? = nil,
+        accentTint: Color = .clear,
+        index: Int = 0
     ) -> some View {
-        VStack(spacing: 4) {
+        let staggerDelay = Double(index) * 0.08
+        return VStack(spacing: 4) {
             Spacer(minLength: 0)
 
-            Image(systemName: icon)
-                .font(.system(size: 14))
-                .foregroundStyle(iconColor)
-                .shadow(color: iconColor.opacity(0.5), radius: 4)
+            // Icon — in light mode sits in a tinted circle
+            if isDark {
+                Image(systemName: icon)
+                    .font(.system(size: 14))
+                    .foregroundStyle(iconColor)
+                    .shadow(color: iconColor.opacity(0.5), radius: 4)
+            } else {
+                ZStack {
+                    Circle()
+                        .fill(accentTint.opacity(0.12))
+                        .frame(width: 28, height: 28)
+                    Image(systemName: icon)
+                        .font(.system(size: 13))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: gradient,
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                }
+            }
 
             Text(value)
                 .font(.system(size: 18, weight: .bold))
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .foregroundStyle(isDark ? .white : Color.caribbeanInk)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
 
             Text(title)
                 .font(.system(size: 9))
-                .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+                .foregroundStyle(isDark ? .white.opacity(0.6) : Color.caribbeanPlum)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
 
@@ -430,11 +569,52 @@ struct DashboardView: View {
         .padding(8)
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(isDark ? .white.opacity(0.06) : .white.opacity(0.45))
+                .fill(isDark ? .white.opacity(0.06) : .white.opacity(0.72))
+                .overlay(
+                    Group {
+                        if !isDark {
+                            // Subtle per-card accent — the "gem" tint
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(accentTint.opacity(0.05))
+                        }
+                    }
+                )
+                .overlay(
+                    Group {
+                        if !isDark {
+                            // Top-edge light catch — premium "caught the sun" highlight
+                            VStack(spacing: 0) {
+                                UnevenRoundedRectangle(topLeadingRadius: 12, topTrailingRadius: 12)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [.white.opacity(0.5), .clear],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        )
+                                    )
+                                    .frame(height: 3)
+                                Spacer()
+                            }
+                        }
+                    }
+                )
                 .overlay(
                     RoundedRectangle(cornerRadius: 12)
-                        .strokeBorder(isDark ? .white.opacity(0.08) : Color.caribbeanMist.opacity(0.15), lineWidth: 1)
+                        .strokeBorder(
+                            isDark ? .white.opacity(0.08) : accentTint.opacity(0.18),
+                            lineWidth: 0.5
+                        )
                 )
+        )
+        .shadow(
+            color: isDark ? .clear : accentTint.opacity(0.08),
+            radius: 8, y: 3
+        )
+        .scaleEffect(statsAppeared ? 1 : 0.92)
+        .opacity(statsAppeared ? 1 : 0)
+        .animation(
+            .spring(response: 0.45, dampingFraction: 0.75).delay(staggerDelay),
+            value: statsAppeared
         )
     }
 
@@ -450,53 +630,60 @@ struct DashboardView: View {
         HStack(spacing: 4) {
             Image(systemName: icon)
                 .font(.system(size: 11))
-                .foregroundStyle(color)
+                .foregroundStyle(isDark ? color : color)
             Text(value)
                 .font(.caption.bold())
-                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
+                .foregroundStyle(isDark ? .white.opacity(0.8) : Color.caribbeanInk)
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 4)
-        .background(Capsule().fill(isDark ? .white.opacity(0.08) : Color.caribbeanMist.opacity(0.1)))
+        .background(
+            Capsule()
+                .fill(isDark ? .white.opacity(0.08) : .white.opacity(0.72))
+                .overlay(
+                    Capsule()
+                        .strokeBorder(isDark ? .clear : color.opacity(0.15), lineWidth: 0.5)
+                )
+        )
+        .shadow(color: isDark ? .clear : color.opacity(0.04), radius: 3, y: 1)
     }
 
     // MARK: - Games Section
 
     private var gamesSection: some View {
         VStack(spacing: 16) {
-            // Section header with premium icon
+            // Section header
             HStack(spacing: 14) {
                 ZStack {
-                    // Pulsing glow background orbs
-                    Circle()
-                        .fill(Color(hex: "#d946ef").opacity(0.15))
-                        .frame(width: 56, height: 56)
-                        .scaleEffect(1.0 + adventureIconPulse * 0.15)
-                        .blur(radius: 8)
+                    if isDark {
+                        // Dark mode pulsing glow orbs (original)
+                        Circle()
+                            .fill(Color(hex: "#d946ef").opacity(0.15))
+                            .frame(width: 56, height: 56)
+                            .scaleEffect(1.0 + adventureIconPulse * 0.15)
+                            .blur(radius: 8)
 
-                    Circle()
-                        .fill(Color(hex: "#8b5cf6").opacity(0.1))
-                        .frame(width: 48, height: 48)
-                        .scaleEffect(1.0 + adventureIconPulse * 0.1)
-                        .blur(radius: 6)
-                        .offset(x: 4, y: 4)
+                        Circle()
+                            .fill(Color(hex: "#8b5cf6").opacity(0.1))
+                            .frame(width: 48, height: 48)
+                            .scaleEffect(1.0 + adventureIconPulse * 0.1)
+                            .blur(radius: 6)
+                            .offset(x: 4, y: 4)
+                    }
 
                     // Icon container
                     RoundedRectangle(cornerRadius: 14)
                         .fill(
-                            LinearGradient(
-                                colors: [
-                                    Color(hex: "#8b5cf6"),
-                                    Color(hex: "#d946ef"),
-                                    Color(hex: "#7c3aed")
-                                ],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
+                            isDark
+                                ? LinearGradient(
+                                    colors: [Color(hex: "#8b5cf6"), Color(hex: "#d946ef"), Color(hex: "#7c3aed")],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                                : LinearGradient.caribbeanGradientOcean
                         )
                         .frame(width: 48, height: 48)
                         .overlay(
-                            // Inner glow highlight
                             RoundedRectangle(cornerRadius: 14)
                                 .fill(
                                     LinearGradient(
@@ -510,9 +697,11 @@ struct DashboardView: View {
                             RoundedRectangle(cornerRadius: 14)
                                 .strokeBorder(.white.opacity(0.2), lineWidth: 1)
                         )
-                        .shadow(color: Color(hex: "#d946ef").opacity(0.4 + adventureIconPulse * 0.2), radius: 12)
+                        .shadow(color: isDark
+                            ? Color(hex: "#d946ef").opacity(0.4 + adventureIconPulse * 0.2)
+                            : Color.caribbeanOcean.opacity(0.25),
+                            radius: 12)
 
-                    // Icon symbol
                     Image(systemName: "wand.and.stars")
                         .font(.system(size: 22, weight: .medium))
                         .foregroundStyle(.white)
@@ -524,20 +713,30 @@ struct DashboardView: View {
                     }
                 }
 
-                VStack(alignment: .leading, spacing: 2) {
+                VStack(alignment: .leading, spacing: 3) {
+                    // Turquoise accent bar before title in light mode
+                    if !isDark {
+                        RoundedRectangle(cornerRadius: 1.5)
+                            .fill(LinearGradient.caribbeanGradientOcean)
+                            .frame(width: 28, height: 3)
+                    }
+
                     Text("Choose Your Adventure")
                         .font(.system(size: 19, weight: .bold))
+                        .tracking(isDark ? 0 : 0.2)
                         .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#8b5cf6"), Color(hex: "#d946ef")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
+                            isDark
+                                ? AnyShapeStyle(LinearGradient(
+                                    colors: [Color(hex: "#8b5cf6"), Color(hex: "#d946ef")],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                ))
+                                : AnyShapeStyle(Color.caribbeanInk)
                         )
 
                     Text("Start a game to boost your skills")
                         .font(.system(size: 13))
-                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : Color.caribbeanPlum)
                 }
 
                 Spacer()
@@ -603,15 +802,24 @@ struct DashboardView: View {
         }
 
         return VStack(spacing: 12) {
-            HStack {
+            HStack(spacing: 8) {
+                // Turquoise accent bar in light mode
+                if !isDark {
+                    RoundedRectangle(cornerRadius: 1.5)
+                        .fill(LinearGradient.caribbeanGradientOcean)
+                        .frame(width: 3, height: 16)
+                }
                 Text("Recent Activity")
                     .font(.system(size: 16, weight: .bold))
+                    .tracking(isDark ? 0 : 0.2)
                     .foregroundStyle(
-                        LinearGradient(
-                            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
+                        isDark
+                            ? AnyShapeStyle(LinearGradient(
+                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            ))
+                            : AnyShapeStyle(Color.caribbeanInk)
                     )
                 Spacer()
             }
@@ -688,23 +896,41 @@ struct DashboardView: View {
 
     private var recentActivityEmptyState: some View {
         VStack(spacing: 16) {
-            HStack(spacing: 6) {
-                CountryFlagView(countryCode: currentSourceCode, size: 20)
-                Image(systemName: "arrow.right")
-                    .font(.system(size: 11, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.4))
-                CountryFlagView(countryCode: currentTargetCode, size: 20)
+            if isDark {
+                // Dark mode — original flag pair
+                HStack(spacing: 6) {
+                    CountryFlagView(countryCode: currentSourceCode, size: 20)
+                    Image(systemName: "arrow.right")
+                        .font(.system(size: 11, weight: .medium))
+                        .foregroundStyle(.white.opacity(0.4))
+                    CountryFlagView(countryCode: currentTargetCode, size: 20)
+                }
+                .padding(.top, 4)
+            } else {
+                // Light mode — sparkles icon with warm gradient and gentle pulse
+                Image(systemName: "sparkles")
+                    .font(.system(size: 42, weight: .thin))
+                    .foregroundStyle(LinearGradient.caribbeanGradientSunset)
+                    .scaleEffect(1.0 + emptyStatePulse * 0.06)
+                    .opacity(0.8 + emptyStatePulse * 0.2)
+                    .padding(.top, 8)
+                    .onAppear {
+                        withAnimation(.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
+                            emptyStatePulse = 1.0
+                        }
+                    }
             }
-            .padding(.top, 4)
 
             VStack(spacing: 6) {
-                Text("No activity yet")
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk)
+                Text(isDark ? "No activity yet" : "Your Journey Begins Here")
+                    .font(.system(size: isDark ? 14 : 17, weight: isDark ? .semibold : .bold))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : Color.caribbeanInk)
 
-                Text("Start a game in \(currentLanguagePair) to see your progress here!")
-                    .font(.system(size: 12))
-                    .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum)
+                Text(isDark
+                    ? "Start a game in \(currentLanguagePair) to see your progress here!"
+                    : "Start a practice session and watch your progress unfold")
+                    .font(.system(size: isDark ? 12 : 13))
+                    .foregroundStyle(isDark ? .white.opacity(0.45) : Color.caribbeanPlum)
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
             }
@@ -720,28 +946,35 @@ struct DashboardView: View {
         let colors = GameCardColorScheme.forType(type)
 
         return HStack(spacing: 10) {
-            // Game type icon
+            // Game type icon — light mode gets a warm tinted circle
             ZStack {
                 Circle()
                     .fill(
-                        LinearGradient(
-                            colors: [colors.primary.opacity(0.3), colors.secondary.opacity(0.2)],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
+                        isDark
+                            ? LinearGradient(
+                                colors: [colors.primary.opacity(0.3), colors.secondary.opacity(0.2)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                            : LinearGradient(
+                                colors: [colors.caribbeanTint.first?.opacity(0.12) ?? colors.primary.opacity(0.12),
+                                         colors.caribbeanTint.last?.opacity(0.08) ?? colors.secondary.opacity(0.08)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
                     )
                     .frame(width: 34, height: 34)
 
                 Image(systemName: gameTypeIcon(type))
                     .font(.system(size: 14))
-                    .foregroundStyle(colors.primary)
+                    .foregroundStyle(isDark ? colors.primary : colors.caribbeanTint.first ?? colors.primary)
             }
 
             VStack(alignment: .leading, spacing: 2) {
                 HStack(spacing: 4) {
                     Text("\(type.displayName) · \(record.categoryName)")
                         .font(.system(size: 13, weight: .semibold))
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .foregroundStyle(isDark ? .white : Color.caribbeanInk)
                         .lineLimit(1)
 
                     if showBadge {
@@ -760,7 +993,7 @@ struct DashboardView: View {
                     Text(record.completedAt.timeAgoDisplay)
                 }
                 .font(.system(size: 11))
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                .foregroundStyle(isDark ? .white.opacity(0.5) : Color.caribbeanPlum)
                 .lineLimit(1)
                 .minimumScaleFactor(0.8)
             }
@@ -769,7 +1002,7 @@ struct DashboardView: View {
 
             Image(systemName: "chevron.right")
                 .font(.system(size: 10))
-                .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanMist)
+                .foregroundStyle(isDark ? .white.opacity(0.3) : Color.caribbeanMist)
         }
         .padding(.vertical, 5)
     }
@@ -864,32 +1097,37 @@ struct GameCardColorScheme {
     let gradient: [Color]
     let tintColor: Color
     let topBarGradient: [Color]
+    /// Caribbean island-themed tint colors for light mode
+    let caribbeanTint: [Color]
 
     static let flashCards = GameCardColorScheme(
-        primary: Color(hex: "#3b82f6"),     // blue-500
-        secondary: Color(hex: "#6366f1"),   // indigo-500
-        tertiary: Color(hex: "#0d9488"),    // teal-600
+        primary: Color(hex: "#3b82f6"),
+        secondary: Color(hex: "#6366f1"),
+        tertiary: Color(hex: "#0d9488"),
         gradient: [Color(hex: "#3b82f6"), Color(hex: "#06b6d4"), Color(hex: "#14b8a6")],
         tintColor: Color(hex: "#22d3ee"),
-        topBarGradient: [Color(hex: "#3b82f6"), Color(hex: "#06b6d4"), Color(hex: "#14b8a6")]
+        topBarGradient: [Color(hex: "#3b82f6"), Color(hex: "#06b6d4"), Color(hex: "#14b8a6")],
+        caribbeanTint: [Color(hex: "#0EA5E9"), Color(hex: "#06B6D4")]
     )
 
     static let grammar = GameCardColorScheme(
-        primary: Color(hex: "#d946ef"),     // fuchsia-500
-        secondary: Color(hex: "#ec4899"),   // pink-500
-        tertiary: Color(hex: "#f43f5e"),    // rose-500
+        primary: Color(hex: "#d946ef"),
+        secondary: Color(hex: "#ec4899"),
+        tertiary: Color(hex: "#f43f5e"),
         gradient: [Color(hex: "#a855f7"), Color(hex: "#ec4899"), Color(hex: "#f43f5e")],
         tintColor: Color(hex: "#ec4899"),
-        topBarGradient: [Color(hex: "#a855f7"), Color(hex: "#ec4899"), Color(hex: "#f43f5e")]
+        topBarGradient: [Color(hex: "#a855f7"), Color(hex: "#ec4899"), Color(hex: "#f43f5e")],
+        caribbeanTint: [Color(hex: "#34D399"), Color(hex: "#10B981")]
     )
 
     static let wordBuilder = GameCardColorScheme(
-        primary: Color(hex: "#f97316"),     // orange-500
-        secondary: Color(hex: "#ef4444"),   // red-500
-        tertiary: Color(hex: "#ef4444"),    // red-500
+        primary: Color(hex: "#f97316"),
+        secondary: Color(hex: "#ef4444"),
+        tertiary: Color(hex: "#ef4444"),
         gradient: [Color(hex: "#f59e0b"), Color(hex: "#f97316"), Color(hex: "#ef4444")],
         tintColor: Color(hex: "#fb923c"),
-        topBarGradient: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#ef4444")]
+        topBarGradient: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#ef4444")],
+        caribbeanTint: [Color(hex: "#FB7185"), Color(hex: "#FDE68A")]
     )
 
     static func forType(_ type: GameType) -> GameCardColorScheme {
@@ -928,33 +1166,33 @@ struct DashboardGameCard: View {
 
     var body: some View {
         ZStack(alignment: .top) {
-            // Top highlight bar — 5pt gradient at top
+            // Top highlight bar
             topHighlightBar
 
             // Card content
             VStack(alignment: .leading, spacing: 0) {
                 // Icon + Title + Description
                 HStack(alignment: .top, spacing: 14) {
-                    // Gradient icon container with pulsing glow
                     iconView
 
-                    // Title + Description + Time Badge
                     VStack(alignment: .leading, spacing: 4) {
                         HStack(spacing: 6) {
                             Text(title)
                                 .font(.system(size: 16, weight: .bold))
                                 .foregroundStyle(
-                                    LinearGradient(
-                                        colors: [colorScheme.primary, colorScheme.secondary],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
+                                    isDark
+                                        ? AnyShapeStyle(LinearGradient(
+                                            colors: [colorScheme.primary, colorScheme.secondary],
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        ))
+                                        : AnyShapeStyle(Color.caribbeanInk)
                                 )
 
                             if let badge = isExpired ? resetTime : timeBadge {
                                 Text(badge)
                                     .font(.system(size: 10, weight: .bold))
-                                    .foregroundStyle(isExpired ? .orange : colorScheme.primary)
+                                    .foregroundStyle(isExpired ? .orange : (isDark ? colorScheme.primary : colorScheme.caribbeanTint.first ?? colorScheme.primary))
                                     .padding(.horizontal, 7)
                                     .padding(.vertical, 3)
                                     .background(
@@ -962,7 +1200,7 @@ struct DashboardGameCard: View {
                                             .fill(
                                                 isExpired
                                                     ? Color.orange.opacity(isDark ? 0.15 : 0.1)
-                                                    : colorScheme.primary.opacity(isDark ? 0.15 : 0.1)
+                                                    : (isDark ? colorScheme.primary : colorScheme.caribbeanTint.first ?? colorScheme.primary).opacity(isDark ? 0.15 : 0.08)
                                             )
                                     )
                             }
@@ -970,7 +1208,7 @@ struct DashboardGameCard: View {
 
                         Text(description)
                             .font(.system(size: 12, weight: .medium))
-                            .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                            .foregroundStyle(isDark ? .white.opacity(0.7) : Color.caribbeanPlum)
                             .lineLimit(2)
                             .fixedSize(horizontal: false, vertical: true)
                     }
@@ -978,7 +1216,7 @@ struct DashboardGameCard: View {
                 .padding(.top, 20)
                 .padding(.horizontal, 16)
 
-                // CTA row — premium gradient capsule
+                // CTA row
                 HStack {
                     Spacer()
                     HStack(spacing: 6) {
@@ -993,11 +1231,17 @@ struct DashboardGameCard: View {
                     .background(
                         Capsule()
                             .fill(
-                                LinearGradient(
-                                    colors: colorScheme.gradient,
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
+                                isDark
+                                    ? LinearGradient(
+                                        colors: colorScheme.gradient,
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                    : LinearGradient(
+                                        colors: colorScheme.caribbeanTint,
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
                             )
                             .overlay(
                                 Capsule()
@@ -1014,7 +1258,10 @@ struct DashboardGameCard: View {
                                     .strokeBorder(.white.opacity(0.25), lineWidth: 1)
                             )
                     )
-                    .shadow(color: colorScheme.primary.opacity(0.35), radius: 10, y: 3)
+                    .shadow(color: isDark
+                        ? colorScheme.primary.opacity(0.35)
+                        : (colorScheme.caribbeanTint.first ?? colorScheme.primary).opacity(0.25),
+                        radius: 10, y: 3)
                 }
                 .padding(.top, 10)
                 .padding(.trailing, 16)
@@ -1022,13 +1269,19 @@ struct DashboardGameCard: View {
             }
         }
         .background(
-            // Glass card with color tint
-            GlassCardBackground(
-                cornerRadius: 22,
-                borderColor: colorScheme.primary,
-                borderOpacity: 0.15,
-                tintColor: colorScheme.tintColor
-            )
+            isDark
+                ? AnyView(GlassCardBackground(
+                    cornerRadius: 22,
+                    borderColor: colorScheme.primary,
+                    borderOpacity: 0.15,
+                    tintColor: colorScheme.tintColor
+                ))
+                : AnyView(GlassCardBackground(
+                    cornerRadius: 22,
+                    borderColor: colorScheme.caribbeanTint.first ?? colorScheme.primary,
+                    borderOpacity: 0.12,
+                    tintColor: colorScheme.caribbeanTint.first ?? colorScheme.tintColor
+                ))
         )
         .clipShape(RoundedRectangle(cornerRadius: 22))
         .contentShape(RoundedRectangle(cornerRadius: 22))
@@ -1056,46 +1309,50 @@ struct DashboardGameCard: View {
         RoundedRectangle(cornerRadius: 3)
             .fill(
                 LinearGradient(
-                    colors: colorScheme.topBarGradient,
+                    colors: isDark ? colorScheme.topBarGradient : colorScheme.caribbeanTint,
                     startPoint: .leading,
                     endPoint: .trailing
                 )
             )
-            .frame(height: 5)
+            .frame(height: isDark ? 5 : 3)
             .padding(.horizontal, 24)
-            .shadow(color: colorScheme.primary.opacity(0.5), radius: 8, y: 2)
-            .blur(radius: 1.5)
-            .opacity(0.85)
+            .shadow(color: isDark
+                ? colorScheme.primary.opacity(0.5)
+                : (colorScheme.caribbeanTint.first ?? colorScheme.primary).opacity(0.2),
+                radius: isDark ? 8 : 4, y: 2)
+            .blur(radius: isDark ? 1.5 : 0.5)
+            .opacity(isDark ? 0.85 : 0.7)
     }
 
     private var iconView: some View {
         ZStack {
-            // Pulsing glow background orbs
-            Circle()
-                .fill(colorScheme.primary.opacity(0.15))
-                .frame(width: 48, height: 48)
-                .scaleEffect(1.0 + iconPulse * 0.15)
-                .blur(radius: 8)
+            if isDark {
+                // Dark mode pulsing glow orbs
+                Circle()
+                    .fill(colorScheme.primary.opacity(0.15))
+                    .frame(width: 48, height: 48)
+                    .scaleEffect(1.0 + iconPulse * 0.15)
+                    .blur(radius: 8)
 
-            Circle()
-                .fill(colorScheme.secondary.opacity(0.1))
-                .frame(width: 40, height: 40)
-                .scaleEffect(1.0 + iconPulse * 0.1)
-                .blur(radius: 6)
-                .offset(x: 4, y: 4)
+                Circle()
+                    .fill(colorScheme.secondary.opacity(0.1))
+                    .frame(width: 40, height: 40)
+                    .scaleEffect(1.0 + iconPulse * 0.1)
+                    .blur(radius: 6)
+                    .offset(x: 4, y: 4)
+            }
 
             // Icon container
             RoundedRectangle(cornerRadius: 12)
                 .fill(
                     LinearGradient(
-                        colors: colorScheme.gradient,
+                        colors: isDark ? colorScheme.gradient : colorScheme.caribbeanTint,
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     )
                 )
                 .frame(width: 40, height: 40)
                 .overlay(
-                    // Inner glow highlight
                     RoundedRectangle(cornerRadius: 12)
                         .fill(
                             LinearGradient(
@@ -1109,7 +1366,10 @@ struct DashboardGameCard: View {
                     RoundedRectangle(cornerRadius: 12)
                         .strokeBorder(.white.opacity(0.2), lineWidth: 1)
                 )
-                .shadow(color: colorScheme.primary.opacity(0.4 + iconPulse * 0.2), radius: 12)
+                .shadow(color: isDark
+                    ? colorScheme.primary.opacity(0.4 + iconPulse * 0.2)
+                    : (colorScheme.caribbeanTint.first ?? colorScheme.primary).opacity(0.2),
+                    radius: isDark ? 12 : 8)
 
             // Icon symbol
             Image(systemName: icon)
@@ -1117,6 +1377,15 @@ struct DashboardGameCard: View {
                 .foregroundStyle(.white)
                 .shadow(color: .white.opacity(0.3), radius: 2)
         }
+    }
+}
+
+// MARK: - Scroll Offset Tracking
+
+private struct ScrollOffsetPreferenceKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
     }
 }
 
