@@ -3178,21 +3178,24 @@ final class TierManagerTests: XCTestCase {
         )
     }
 
+    @MainActor
     func testShareableCardRendersNonNilImage() {
         let data = makeCardData()
         let image = ShareableCardRenderer.render(data: data)
         XCTAssertNotNil(image.cgImage, "Rendered card should produce a valid image")
     }
 
+    @MainActor
     func testShareableCardRendersSizeAtRetina() {
         let data = makeCardData()
         let image = ShareableCardRenderer.render(data: data)
-        // Card is 390×520 at 3× scale
-        XCTAssertEqual(image.scale, 3.0, accuracy: 0.01)
-        XCTAssertEqual(image.size.width, 390, accuracy: 1)
-        XCTAssertEqual(image.size.height, 520, accuracy: 1)
+        // Card is 540×540 at 2× scale = 1080×1080 px
+        XCTAssertEqual(image.scale, 2.0, accuracy: 0.01)
+        XCTAssertEqual(image.size.width, 540, accuracy: 1)
+        XCTAssertEqual(image.size.height, 540, accuracy: 1)
     }
 
+    @MainActor
     func testShareableCardRendersForAllTiers() {
         for tier in MembershipTier.allCases {
             let data = makeCardData(tier: tier)
@@ -3201,6 +3204,7 @@ final class TierManagerTests: XCTestCase {
         }
     }
 
+    @MainActor
     func testShareableCardRendersForAllGameTypes() {
         for gameType in GameType.allCases {
             let data = makeCardData(gameType: gameType)
@@ -3209,30 +3213,35 @@ final class TierManagerTests: XCTestCase {
         }
     }
 
+    @MainActor
     func testShareableCardExcellentPerformance() {
         let data = makeCardData(score: 200, correct: 19, total: 20) // 95% accuracy
         let image = ShareableCardRenderer.render(data: data)
         XCTAssertNotNil(image.cgImage)
     }
 
+    @MainActor
     func testShareableCardKeepGoingPerformance() {
         let data = makeCardData(score: 30, correct: 3, total: 20) // 15% accuracy
         let image = ShareableCardRenderer.render(data: data)
         XCTAssertNotNil(image.cgImage)
     }
 
+    @MainActor
     func testShareableCardZeroQuestions() {
         let data = makeCardData(score: 0, correct: 0, total: 0)
         let image = ShareableCardRenderer.render(data: data)
         XCTAssertNotNil(image.cgImage, "Card should not crash with zero questions")
     }
 
+    @MainActor
     func testShareableCardWithXPMultiplier() {
         let data = makeCardData(score: 100, xpMultiplier: 2.0)
         let image = ShareableCardRenderer.render(data: data)
         XCTAssertNotNil(image.cgImage, "Card should render with XP multiplier")
     }
 
+    @MainActor
     func testShareableCardFreeTierNoBadge() {
         // Free tier should render but skip badge — just verify it renders without crash
         let data = makeCardData(tier: .free)
@@ -3240,6 +3249,7 @@ final class TierManagerTests: XCTestCase {
         XCTAssertNotNil(image.cgImage)
     }
 
+    @MainActor
     func testShareableCardProTierHasBadge() {
         // Pro+ should render tier badge — verify stable rendering
         let data = makeCardData(tier: .pro)
@@ -3247,6 +3257,7 @@ final class TierManagerTests: XCTestCase {
         XCTAssertNotNil(image.cgImage)
     }
 
+    @MainActor
     func testShareableCardLongCategoryName() {
         let data = makeCardData(category: "Very Long Category Name That Might Overflow")
         let image = ShareableCardRenderer.render(data: data)

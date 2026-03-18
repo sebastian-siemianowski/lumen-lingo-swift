@@ -1,8 +1,8 @@
 import UIKit
 import SwiftUI
 
-/// Renders a beautiful shareable achievement card as a UIImage.
-/// The card displays session results with a premium feel and an optional tier badge.
+/// Renders a beautiful shareable achievement card as a UIImage using SwiftUI ImageRenderer.
+/// Produces a 1080×1080 social-ready card with premium visual design.
 struct ShareableCardRenderer {
 
     // MARK: - Card Data
@@ -21,422 +21,12 @@ struct ShareableCardRenderer {
 
     // MARK: - Constants
 
-    private static let cardWidth: CGFloat = 390
-    private static let cardHeight: CGFloat = 520
-    private static let cornerRadius: CGFloat = 28
-    private static let scale: CGFloat = 3 // Retina quality
+    private static let cardSize: CGFloat = 540 // Points; rendered at 2× = 1080px
+    private static let renderScale: CGFloat = 2
 
-    // MARK: - Render
+    // MARK: - Performance Tier
 
-    /// Renders the shareable card image at 3× scale.
-    static func render(data: CardData) -> UIImage {
-        let size = CGSize(width: cardWidth, height: cardHeight)
-        let renderer = UIGraphicsImageRenderer(
-            size: size,
-            format: {
-                let f = UIGraphicsImageRendererFormat()
-                f.scale = scale
-                return f
-            }()
-        )
-
-        return renderer.image { ctx in
-            let rect = CGRect(origin: .zero, size: size)
-            let gc = ctx.cgContext
-
-            // MARK: Background
-            drawBackground(in: rect, ctx: gc, tier: data.tier)
-
-            // MARK: App Branding (top-left)
-            drawBranding(in: rect, ctx: gc)
-
-            // MARK: Performance Icon
-            let perfTier = performanceTier(for: data.accuracy)
-            drawPerformanceHero(in: rect, ctx: gc, perf: perfTier)
-
-            // MARK: Title
-            drawTitle(in: rect, ctx: gc, perf: perfTier)
-
-            // MARK: Score Highlight
-            drawScore(in: rect, ctx: gc, score: data.score, xpMultiplier: data.xpMultiplier, perf: perfTier)
-
-            // MARK: Stats Row
-            drawStatsRow(in: rect, ctx: gc, data: data, perf: perfTier)
-
-            // MARK: Category & Game Type
-            drawCategoryBar(in: rect, ctx: gc, data: data)
-
-            // MARK: Tier Badge (Pro+ only)
-            if data.tier != .free {
-                drawTierBadge(in: rect, ctx: gc, tier: data.tier)
-            }
-        }
-    }
-
-    // MARK: - Share
-
-    /// Renders the card and presents a share sheet.
-    @MainActor
-    static func shareCard(data: CardData) {
-        let image = render(data: data)
-
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-              let rootVC = windowScene.windows.first?.rootViewController else { return }
-
-        var topVC = rootVC
-        while let presented = topVC.presentedViewController {
-            topVC = presented
-        }
-
-        let activityVC = UIActivityViewController(
-            activityItems: [image],
-            applicationActivities: nil
-        )
-
-        if let popover = activityVC.popoverPresentationController {
-            popover.sourceView = topVC.view
-            popover.sourceRect = CGRect(
-                x: topVC.view.bounds.midX,
-                y: topVC.view.bounds.midY,
-                width: 0,
-                height: 0
-            )
-            popover.permittedArrowDirections = []
-        }
-
-        topVC.present(activityVC, animated: true)
-    }
-
-    // MARK: - Drawing Helpers
-
-    private static func drawBackground(in rect: CGRect, ctx: CGContext, tier: MembershipTier) {
-        // Deep dark gradient background
-        let path = UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius)
-        ctx.saveGState()
-        path.addClip()
-
-        let colorSpace = CGColorSpaceCreateDeviceRGB()
-        let topColor = UIColor(red: 0.06, green: 0.06, blue: 0.12, alpha: 1.0).cgColor
-        let bottomColor = UIColor(red: 0.03, green: 0.03, blue: 0.08, alpha: 1.0).cgColor
-
-        if let gradient = CGGradient(colorsSpace: colorSpace, colors: [topColor, bottomColor] as CFArray, locations: [0, 1]) {
-            ctx.drawLinearGradient(gradient, start: .zero, end: CGPoint(x: 0, y: rect.height), options: [])
-        }
-
-        // Subtle radial glow at center-top using tier accent
-        let tierColors = tier.gradientColors
-        if let first = tierColors.first {
-            let uiColor = UIColor(first)
-            var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-            uiColor.getRed(&r, green: &g, blue: &b, alpha: &a)
-            let glowCenter = UIColor(red: r, green: g, blue: b, alpha: 0.08).cgColor
-            let glowEdge = UIColor(red: r, green: g, blue: b, alpha: 0.0).cgColor
-            if let radial = CGGradient(colorsSpace: colorSpace, colors: [glowCenter, glowEdge] as CFArray, locations: [0, 1]) {
-                ctx.drawRadialGradient(
-                    radial,
-                    startCenter: CGPoint(x: rect.midX, y: rect.height * 0.35),
-                    startRadius: 0,
-                    endCenter: CGPoint(x: rect.midX, y: rect.height * 0.35),
-                    endRadius: rect.width * 0.6,
-                    options: []
-                )
-            }
-        }
-
-        // Thin border
-        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.12).cgColor)
-        ctx.setLineWidth(1.0)
-        UIBezierPath(roundedRect: rect.insetBy(dx: 0.5, dy: 0.5), cornerRadius: cornerRadius).stroke()
-
-        ctx.restoreGState()
-    }
-
-    private static func drawBranding(in rect: CGRect, ctx: CGContext) {
-        // App name top-left
-        let brandFont = UIFont.systemFont(ofSize: 13, weight: .semibold)
-        let brandAttrs: [NSAttributedString.Key: Any] = [
-            .font: brandFont,
-            .foregroundColor: UIColor.white.withAlphaComponent(0.35),
-        ]
-        let brandText = "LumenLingo" as NSString
-        brandText.draw(at: CGPoint(x: 24, y: 22), withAttributes: brandAttrs)
-    }
-
-    private static func drawPerformanceHero(in rect: CGRect, ctx: CGContext, perf: PerfTier) {
-        // Circle aura
-        let centerX = rect.midX
-        let centerY: CGFloat = 130
-        let auraRect = CGRect(x: centerX - 50, y: centerY - 50, width: 100, height: 100)
-
-        ctx.saveGState()
-        let colorSpace = CGColorSpaceCreateDeviceRGB()
-        let perfUIColor = UIColor(perf.color)
-        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-        perfUIColor.getRed(&r, green: &g, blue: &b, alpha: &a)
-
-        let innerGlow = UIColor(red: r, green: g, blue: b, alpha: 0.2).cgColor
-        let outerGlow = UIColor(red: r, green: g, blue: b, alpha: 0.0).cgColor
-        if let radial = CGGradient(colorsSpace: colorSpace, colors: [innerGlow, outerGlow] as CFArray, locations: [0, 1]) {
-            ctx.drawRadialGradient(radial, startCenter: CGPoint(x: centerX, y: centerY), startRadius: 0,
-                                   endCenter: CGPoint(x: centerX, y: centerY), endRadius: 70, options: [])
-        }
-
-        // Glass circle
-        let circlePath = UIBezierPath(ovalIn: auraRect.insetBy(dx: 10, dy: 10))
-        ctx.setFillColor(UIColor.white.withAlphaComponent(0.06).cgColor)
-        circlePath.fill()
-        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.15).cgColor)
-        ctx.setLineWidth(0.5)
-        circlePath.stroke()
-
-        // SF Symbol icon
-        let config = UIImage.SymbolConfiguration(pointSize: 32, weight: .light)
-        if let symbol = UIImage(systemName: perf.icon, withConfiguration: config) {
-            let tinted = symbol.withTintColor(perfUIColor, renderingMode: .alwaysOriginal)
-            let iconSize = tinted.size
-            let iconRect = CGRect(
-                x: centerX - iconSize.width / 2,
-                y: centerY - iconSize.height / 2,
-                width: iconSize.width,
-                height: iconSize.height
-            )
-            tinted.draw(in: iconRect)
-        }
-
-        ctx.restoreGState()
-    }
-
-    private static func drawTitle(in rect: CGRect, ctx: CGContext, perf: PerfTier) {
-        let perfUIColor = UIColor(perf.color)
-        let titleFont = UIFont.systemFont(ofSize: 28, weight: .bold).rounded()
-        let titleAttrs: [NSAttributedString.Key: Any] = [
-            .font: titleFont,
-            .foregroundColor: perfUIColor,
-        ]
-        let titleText = perf.title as NSString
-        let titleSize = titleText.size(withAttributes: titleAttrs)
-        titleText.draw(
-            at: CGPoint(x: rect.midX - titleSize.width / 2, y: 195),
-            withAttributes: titleAttrs
-        )
-    }
-
-    private static func drawScore(in rect: CGRect, ctx: CGContext, score: Int, xpMultiplier: Double, perf: PerfTier) {
-        let perfUIColor = UIColor(perf.color)
-        let finalXP = xpMultiplier > 1.0 ? Int(Double(score) * xpMultiplier) : score
-        let displayScore = xpMultiplier > 1.0 ? finalXP : score
-
-        // Big score number
-        let scoreFont = UIFont.systemFont(ofSize: 48, weight: .bold).rounded()
-        let scoreAttrs: [NSAttributedString.Key: Any] = [
-            .font: scoreFont,
-            .foregroundColor: perfUIColor,
-        ]
-        let scoreText = "\(displayScore)" as NSString
-        let scoreSize = scoreText.size(withAttributes: scoreAttrs)
-        scoreText.draw(
-            at: CGPoint(x: rect.midX - scoreSize.width / 2, y: 240),
-            withAttributes: scoreAttrs
-        )
-
-        // "points" label
-        let labelFont = UIFont.systemFont(ofSize: 11, weight: .medium)
-        let labelAttrs: [NSAttributedString.Key: Any] = [
-            .font: labelFont,
-            .foregroundColor: UIColor.white.withAlphaComponent(0.35),
-        ]
-        let label = (xpMultiplier > 1.0 ? "XP" : "POINTS") as NSString
-        let labelSize = label.size(withAttributes: labelAttrs)
-        label.draw(
-            at: CGPoint(x: rect.midX - labelSize.width / 2, y: 296),
-            withAttributes: labelAttrs
-        )
-    }
-
-    private static func drawStatsRow(in rect: CGRect, ctx: CGContext, data: CardData, perf: PerfTier) {
-        // Glass card background for stats
-        let statsY: CGFloat = 330
-        let statsHeight: CGFloat = 72
-        let statsRect = CGRect(x: 28, y: statsY, width: rect.width - 56, height: statsHeight)
-        let statsPath = UIBezierPath(roundedRect: statsRect, cornerRadius: 18)
-
-        ctx.setFillColor(UIColor.white.withAlphaComponent(0.06).cgColor)
-        statsPath.fill()
-        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.1).cgColor)
-        ctx.setLineWidth(0.5)
-        statsPath.stroke()
-
-        let colWidth = statsRect.width / 3
-        let perfUIColor = UIColor(perf.color)
-
-        // Accuracy
-        drawStatColumn(
-            in: CGRect(x: statsRect.minX, y: statsY, width: colWidth, height: statsHeight),
-            value: "\(Int(data.accuracy))%",
-            label: "ACCURACY",
-            color: perfUIColor
-        )
-
-        // Divider
-        let divX1 = statsRect.minX + colWidth
-        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.08).cgColor)
-        ctx.setLineWidth(1)
-        ctx.move(to: CGPoint(x: divX1, y: statsY + 18))
-        ctx.addLine(to: CGPoint(x: divX1, y: statsY + statsHeight - 18))
-        ctx.strokePath()
-
-        // Correct
-        drawStatColumn(
-            in: CGRect(x: statsRect.minX + colWidth, y: statsY, width: colWidth, height: statsHeight),
-            value: "\(data.correctAnswers)",
-            label: "CORRECT",
-            color: UIColor.systemGreen
-        )
-
-        // Divider
-        let divX2 = statsRect.minX + colWidth * 2
-        ctx.move(to: CGPoint(x: divX2, y: statsY + 18))
-        ctx.addLine(to: CGPoint(x: divX2, y: statsY + statsHeight - 18))
-        ctx.strokePath()
-
-        // To Review
-        drawStatColumn(
-            in: CGRect(x: statsRect.minX + colWidth * 2, y: statsY, width: colWidth, height: statsHeight),
-            value: "\(data.totalQuestions - data.correctAnswers)",
-            label: "TO REVIEW",
-            color: UIColor.systemOrange
-        )
-    }
-
-    private static func drawStatColumn(in rect: CGRect, value: String, label: String, color: UIColor) {
-        let valueFont = UIFont.systemFont(ofSize: 20, weight: .bold).rounded()
-        let valueAttrs: [NSAttributedString.Key: Any] = [
-            .font: valueFont,
-            .foregroundColor: UIColor.white,
-        ]
-        let valueText = value as NSString
-        let valueSize = valueText.size(withAttributes: valueAttrs)
-        valueText.draw(
-            at: CGPoint(x: rect.midX - valueSize.width / 2, y: rect.minY + 14),
-            withAttributes: valueAttrs
-        )
-
-        let labelFont = UIFont.systemFont(ofSize: 9, weight: .semibold)
-        let labelAttrs: [NSAttributedString.Key: Any] = [
-            .font: labelFont,
-            .foregroundColor: UIColor.white.withAlphaComponent(0.35),
-        ]
-        let labelText = label as NSString
-        let labelSize = labelText.size(withAttributes: labelAttrs)
-        labelText.draw(
-            at: CGPoint(x: rect.midX - labelSize.width / 2, y: rect.minY + 44),
-            withAttributes: labelAttrs
-        )
-    }
-
-    private static func drawCategoryBar(in rect: CGRect, ctx: CGContext, data: CardData) {
-        let barY: CGFloat = 425
-        // Game type icon + category name
-        let config = UIImage.SymbolConfiguration(pointSize: 14, weight: .medium)
-        let gameUIColor = UIColor(data.gameType.gradientColors.first ?? .white)
-        if let symbol = UIImage(systemName: data.gameType.iconName, withConfiguration: config) {
-            let tinted = symbol.withTintColor(gameUIColor.withAlphaComponent(0.6), renderingMode: .alwaysOriginal)
-            tinted.draw(at: CGPoint(x: 30, y: barY))
-        }
-
-        let catFont = UIFont.systemFont(ofSize: 13, weight: .semibold)
-        let catAttrs: [NSAttributedString.Key: Any] = [
-            .font: catFont,
-            .foregroundColor: UIColor.white.withAlphaComponent(0.55),
-        ]
-        let catText = "\(data.gameType.displayName) · \(data.categoryName)" as NSString
-        catText.draw(at: CGPoint(x: 52, y: barY + 1), withAttributes: catAttrs)
-
-        // Time spent
-        let timeFont = UIFont.systemFont(ofSize: 12, weight: .medium)
-        let timeAttrs: [NSAttributedString.Key: Any] = [
-            .font: timeFont,
-            .foregroundColor: UIColor.white.withAlphaComponent(0.35),
-        ]
-        let mins = data.timeSpent / 60
-        let secs = data.timeSpent % 60
-        let timeStr = mins > 0 ? "\(mins)m \(secs)s" : "\(secs)s"
-        let timeText = timeStr as NSString
-        let timeSize = timeText.size(withAttributes: timeAttrs)
-        timeText.draw(
-            at: CGPoint(x: rect.width - 28 - timeSize.width, y: barY + 2),
-            withAttributes: timeAttrs
-        )
-    }
-
-    private static func drawTierBadge(in rect: CGRect, ctx: CGContext, tier: MembershipTier) {
-        let badgePadding: CGFloat = 8
-        let badgeHeight: CGFloat = 26
-        let iconSize: CGFloat = 12
-        let fontSize: CGFloat = 11
-
-        // Measure text
-        let nameFont = UIFont.systemFont(ofSize: fontSize, weight: .bold)
-        let nameAttrs: [NSAttributedString.Key: Any] = [
-            .font: nameFont,
-            .foregroundColor: UIColor.white,
-        ]
-        let nameText = tier.displayName as NSString
-        let nameSize = nameText.size(withAttributes: nameAttrs)
-
-        let badgeWidth = 10 + iconSize + 5 + nameSize.width + 10
-
-        let badgeX = rect.width - badgePadding - badgeWidth
-        let badgeY = rect.height - badgePadding - badgeHeight - 24 // above bottom with category bar spacing
-        let badgeRect = CGRect(x: badgeX, y: badgeY, width: badgeWidth, height: badgeHeight)
-        let badgePath = UIBezierPath(roundedRect: badgeRect, cornerRadius: badgeHeight / 2)
-
-        ctx.saveGState()
-
-        // Gradient fill
-        badgePath.addClip()
-        let colors = tier.gradientColors.map { UIColor($0).cgColor }
-        let colorSpace = CGColorSpaceCreateDeviceRGB()
-        let locs: [CGFloat] = colors.count == 2 ? [0, 1] : [0, 0.5, 1]
-        if let gradient = CGGradient(colorsSpace: colorSpace, colors: colors as CFArray, locations: locs) {
-            ctx.drawLinearGradient(gradient, start: CGPoint(x: badgeRect.minX, y: badgeRect.midY),
-                                   end: CGPoint(x: badgeRect.maxX, y: badgeRect.midY), options: [])
-        }
-
-        // White border
-        ctx.setStrokeColor(UIColor.white.withAlphaComponent(0.2).cgColor)
-        ctx.setLineWidth(0.5)
-        badgePath.stroke()
-
-        ctx.restoreGState()
-
-        // Tier icon
-        let symbolConfig = UIImage.SymbolConfiguration(pointSize: iconSize, weight: .bold)
-        if let symbol = UIImage(systemName: tier.iconName, withConfiguration: symbolConfig) {
-            let tinted = symbol.withTintColor(.white, renderingMode: .alwaysOriginal)
-            let symSize = tinted.size
-            tinted.draw(at: CGPoint(
-                x: badgeRect.minX + 10,
-                y: badgeRect.midY - symSize.height / 2
-            ))
-        }
-
-        // Tier name
-        nameText.draw(
-            at: CGPoint(
-                x: badgeRect.minX + 10 + iconSize + 5,
-                y: badgeRect.midY - nameSize.height / 2
-            ),
-            withAttributes: nameAttrs
-        )
-
-        // Shadow effect (draw behind by rendering badge area)
-        // Shadow is handled by the gradient glow in the background
-    }
-
-    // MARK: - Performance Tier Mapping
-
-    private enum PerfTier {
+    fileprivate enum PerfTier {
         case excellent, great, good, keepGoing
 
         var title: String {
@@ -445,6 +35,15 @@ struct ShareableCardRenderer {
             case .great: "Great Job!"
             case .good: "Good Work"
             case .keepGoing: "Keep Going"
+            }
+        }
+
+        var subtitle: String {
+            switch self {
+            case .excellent: "Outstanding performance"
+            case .great: "Really impressive"
+            case .good: "Solid progress"
+            case .keepGoing: "Every step counts"
             }
         }
 
@@ -465,14 +64,483 @@ struct ShareableCardRenderer {
             case .keepGoing: .orange
             }
         }
+
+        var gradientColors: [Color] {
+            switch self {
+            case .excellent: [Color(hex: "#f59e0b"), Color(hex: "#d97706"), Color(hex: "#b45309")]
+            case .great: [Color(hex: "#10b981"), Color(hex: "#059669"), Color(hex: "#047857")]
+            case .good: [Color(hex: "#06b6d4"), Color(hex: "#0891b2"), Color(hex: "#0e7490")]
+            case .keepGoing: [Color(hex: "#f97316"), Color(hex: "#ea580c"), Color(hex: "#c2410c")]
+            }
+        }
     }
 
-    private static func performanceTier(for accuracy: Double) -> PerfTier {
+    fileprivate static func performanceTier(for accuracy: Double) -> PerfTier {
         if accuracy >= 90 { return .excellent }
         if accuracy >= 75 { return .great }
         if accuracy >= 60 { return .good }
         return .keepGoing
     }
+
+    // MARK: - Render
+
+    /// Renders the shareable card image using SwiftUI ImageRenderer.
+    @MainActor
+    static func render(data: CardData) -> UIImage {
+        let perf = performanceTier(for: data.accuracy)
+        let cardView = ShareCardView(data: data, perf: perf)
+
+        let renderer = ImageRenderer(content: cardView.frame(width: cardSize, height: cardSize))
+        renderer.scale = renderScale
+        renderer.isOpaque = true
+
+        if let cgImage = renderer.cgImage {
+            return UIImage(cgImage: cgImage, scale: renderScale, orientation: .up)
+        }
+        // Fallback: return a 1×1 pixel image so callers never crash
+        return UIImage()
+    }
+
+    // MARK: - Share
+
+    /// Renders the card and presents a share sheet with image and text.
+    @MainActor
+    static func shareCard(data: CardData) {
+        let image = render(data: data)
+
+        let shareText = "I just scored \(data.score) on \(data.categoryName) in LumenLingo! 🎯"
+
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let rootVC = windowScene.windows.first?.rootViewController else { return }
+
+        var topVC = rootVC
+        while let presented = topVC.presentedViewController {
+            topVC = presented
+        }
+
+        let activityVC = UIActivityViewController(
+            activityItems: [image, shareText],
+            applicationActivities: nil
+        )
+
+        if let popover = activityVC.popoverPresentationController {
+            popover.sourceView = topVC.view
+            popover.sourceRect = CGRect(
+                x: topVC.view.bounds.midX,
+                y: topVC.view.bounds.midY,
+                width: 0,
+                height: 0
+            )
+            popover.permittedArrowDirections = []
+        }
+
+        topVC.present(activityVC, animated: true)
+    }
+}
+
+// MARK: - Share Card SwiftUI View
+
+/// A self-contained 1080×1080 share card rendered entirely in SwiftUI.
+private struct ShareCardView: View {
+    let data: ShareableCardRenderer.CardData
+    let perf: ShareableCardRenderer.PerfTier
+
+    private var finalXP: Int {
+        data.xpMultiplier > 1.0 ? Int(Double(data.score) * data.xpMultiplier) : data.score
+    }
+
+    private var displayScore: Int {
+        data.xpMultiplier > 1.0 ? finalXP : data.score
+    }
+
+    private func formatTime(_ seconds: Int) -> String {
+        let mins = seconds / 60
+        let secs = seconds % 60
+        return mins > 0 ? "\(mins)m \(secs)s" : "\(secs)s"
+    }
+
+    var body: some View {
+        ZStack {
+            // Deep cosmic background
+            background
+
+            // Content
+            VStack(spacing: 0) {
+                // Top bar: branding + tier badge
+                topBar
+                    .padding(.top, 32)
+                    .padding(.horizontal, 36)
+
+                Spacer(minLength: 20)
+
+                // Hero performance section
+                heroSection
+
+                Spacer(minLength: 16)
+
+                // Score
+                scoreSection
+
+                Spacer(minLength: 20)
+
+                // Stats row
+                statsRow
+                    .padding(.horizontal, 36)
+
+                Spacer(minLength: 20)
+
+                // Category & game info
+                categoryBar
+                    .padding(.horizontal, 36)
+
+                Spacer(minLength: 24)
+
+                // Footer branding
+                footerBar
+                    .padding(.horizontal, 36)
+                    .padding(.bottom, 28)
+            }
+        }
+        .frame(width: 540, height: 540)
+        .environment(\.colorScheme, .dark)
+    }
+
+    // MARK: - Background
+
+    private var background: some View {
+        ZStack {
+            // Base gradient
+            LinearGradient(
+                colors: [
+                    Color(red: 0.05, green: 0.05, blue: 0.12),
+                    Color(red: 0.02, green: 0.02, blue: 0.08)
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+
+            // Performance tier radial glow
+            RadialGradient(
+                colors: [
+                    perf.color.opacity(0.12),
+                    perf.color.opacity(0.04),
+                    .clear
+                ],
+                center: .center,
+                startRadius: 20,
+                endRadius: 280
+            )
+
+            // Tier accent glow top-right
+            RadialGradient(
+                colors: [
+                    (data.tier.gradientColors.first ?? .purple).opacity(0.08),
+                    .clear
+                ],
+                center: UnitPoint(x: 0.85, y: 0.1),
+                startRadius: 10,
+                endRadius: 180
+            )
+
+            // Subtle noise-like texture via overlapping gradients
+            LinearGradient(
+                colors: [.white.opacity(0.015), .clear, .white.opacity(0.01)],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+
+            // Border
+            RoundedRectangle(cornerRadius: 32)
+                .strokeBorder(
+                    LinearGradient(
+                        colors: [
+                            .white.opacity(0.15),
+                            perf.color.opacity(0.2),
+                            .white.opacity(0.05)
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 1
+                )
+        }
+        .clipShape(RoundedRectangle(cornerRadius: 32))
+    }
+
+    // MARK: - Top Bar
+
+    private var topBar: some View {
+        HStack {
+            // App branding
+            HStack(spacing: 6) {
+                Image(systemName: "sparkle")
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.purple, .cyan],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                Text("LumenLingo")
+                    .font(.system(size: 14, weight: .semibold, design: .rounded))
+                    .foregroundStyle(.white.opacity(0.5))
+            }
+
+            Spacer()
+
+            // Tier badge
+            if data.tier != .free {
+                HStack(spacing: 5) {
+                    Image(systemName: data.tier.iconName)
+                        .font(.system(size: 10, weight: .bold))
+                    Text(data.tier.displayName)
+                        .font(.system(size: 11, weight: .bold))
+                }
+                .foregroundStyle(.white)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .background {
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: data.tier.gradientColors,
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .overlay(
+                            Capsule()
+                                .strokeBorder(.white.opacity(0.2), lineWidth: 0.5)
+                        )
+                }
+            }
+        }
+    }
+
+    // MARK: - Hero Section
+
+    private var heroSection: some View {
+        ZStack {
+            // Radial glow behind icon
+            Circle()
+                .fill(
+                    RadialGradient(
+                        colors: [
+                            perf.color.opacity(0.2),
+                            perf.color.opacity(0.05),
+                            .clear
+                        ],
+                        center: .center,
+                        startRadius: 10,
+                        endRadius: 80
+                    )
+                )
+                .frame(width: 160, height: 160)
+
+            // Orbital ring
+            Circle()
+                .strokeBorder(
+                    AngularGradient(
+                        colors: [
+                            perf.color.opacity(0.4),
+                            .clear,
+                            perf.color.opacity(0.2),
+                            .clear,
+                            perf.color.opacity(0.3),
+                            .clear,
+                        ],
+                        center: .center
+                    ),
+                    lineWidth: 1
+                )
+                .frame(width: 90, height: 90)
+
+            // Glass circle
+            Circle()
+                .fill(.white.opacity(0.06))
+                .frame(width: 64, height: 64)
+                .overlay(
+                    Circle()
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    .white.opacity(0.3),
+                                    perf.color.opacity(0.2),
+                                    .white.opacity(0.1)
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 0.8
+                        )
+                )
+
+            // Icon
+            Image(systemName: perf.icon)
+                .font(.system(size: 28, weight: .light))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [perf.color, perf.color.opacity(0.7)],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
+        }
+    }
+
+    // MARK: - Score Section
+
+    private var scoreSection: some View {
+        VStack(spacing: 6) {
+            Text(perf.title)
+                .font(.system(size: 28, weight: .bold, design: .rounded))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: perf.gradientColors,
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+
+            HStack(alignment: .firstTextBaseline, spacing: 6) {
+                Text("\(displayScore)")
+                    .font(.system(size: 52, weight: .bold, design: .rounded))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [perf.color, perf.color.opacity(0.6)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+
+                Text(data.xpMultiplier > 1.0 ? "XP" : "POINTS")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(.white.opacity(0.35))
+                    .textCase(.uppercase)
+                    .tracking(2)
+            }
+
+            Text(perf.subtitle)
+                .font(.system(size: 14))
+                .foregroundStyle(.white.opacity(0.4))
+        }
+    }
+
+    // MARK: - Stats Row
+
+    private var statsRow: some View {
+        HStack(spacing: 0) {
+            shareStatColumn(value: "\(Int(data.accuracy))%", label: "ACCURACY", color: perf.color)
+
+            Capsule()
+                .fill(.white.opacity(0.08))
+                .frame(width: 1, height: 32)
+
+            shareStatColumn(value: "\(data.correctAnswers)", label: "CORRECT", color: .green)
+
+            Capsule()
+                .fill(.white.opacity(0.08))
+                .frame(width: 1, height: 32)
+
+            shareStatColumn(
+                value: "\(data.totalQuestions - data.correctAnswers)",
+                label: "TO REVIEW",
+                color: .orange
+            )
+        }
+        .padding(.vertical, 18)
+        .padding(.horizontal, 8)
+        .background {
+            RoundedRectangle(cornerRadius: 20)
+                .fill(.white.opacity(0.04))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [.white.opacity(0.12), .white.opacity(0.04)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 0.5
+                        )
+                )
+        }
+    }
+
+    private func shareStatColumn(value: String, label: String, color: Color) -> some View {
+        VStack(spacing: 4) {
+            Text(value)
+                .font(.system(size: 22, weight: .bold, design: .rounded))
+                .foregroundStyle(.white)
+            Text(label)
+                .font(.system(size: 9, weight: .semibold))
+                .foregroundStyle(.white.opacity(0.35))
+                .tracking(0.8)
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    // MARK: - Category Bar
+
+    private var categoryBar: some View {
+        HStack(spacing: 8) {
+            Image(systemName: data.gameType.iconName)
+                .font(.system(size: 13, weight: .medium))
+                .foregroundStyle(data.gameType.gradientColors.first?.opacity(0.6) ?? .white.opacity(0.4))
+
+            Text("\(data.gameType.displayName) · \(data.categoryName)")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(.white.opacity(0.45))
+                .lineLimit(1)
+
+            Spacer()
+
+            Text(formatTime(data.timeSpent))
+                .font(.system(size: 12, weight: .medium))
+                .foregroundStyle(.white.opacity(0.3))
+        }
+    }
+
+    // MARK: - Footer
+
+    private var footerBar: some View {
+        HStack {
+            // XP multiplier indicator
+            if data.xpMultiplier > 1.0 {
+                HStack(spacing: 4) {
+                    Image(systemName: "bolt.fill")
+                        .font(.system(size: 10, weight: .semibold))
+                    Text("\(String(format: "%.1f", data.xpMultiplier))× XP")
+                        .font(.system(size: 11, weight: .semibold))
+                }
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: data.tier.gradientColors,
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+            }
+
+            Spacer()
+
+            // Decorative accent dots
+            HStack(spacing: 3) {
+                ForEach(0..<3, id: \.self) { i in
+                    Circle()
+                        .fill(perf.gradientColors[i % perf.gradientColors.count].opacity(0.4))
+                        .frame(width: 4, height: 4)
+                }
+            }
+        }
+    }
+}
+
+// MARK: - MembershipTier helpers used by renderer
+
+private extension ShareableCardRenderer.PerfTier {
+    // Allows ShareCardView to access PerfTier properties
 }
 
 // MARK: - UIFont Rounded Helper

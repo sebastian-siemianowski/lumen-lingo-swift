@@ -1691,133 +1691,164 @@ struct GameCompleteView: View {
 
     private var pinnedBottomBar: some View {
         VStack(spacing: 0) {
-            // Gradient fade border at top
+            // Atmospheric top fade — blends bar into content
             LinearGradient(
                 colors: [
-                    (isDark ? Color.black : Color.white).opacity(0),
-                    (isDark ? Color.black : Color.white).opacity(0.3)
+                    .clear,
+                    (isDark ? Color.black : Color.white).opacity(0.2),
+                    (isDark ? Color.black : Color.white).opacity(0.55)
                 ],
                 startPoint: .top,
                 endPoint: .bottom
             )
-            .frame(height: 20)
+            .frame(height: 36)
 
-            VStack(spacing: 10) {
-                // Primary + Share row
-                HStack(spacing: 10) {
-                    // Primary CTA
+            VStack(spacing: 12) {
+                // Primary CTA + Share
+                HStack(spacing: 12) {
+                    // Primary Action Button
                     if let onNext = onNextCategory, let nextName = nextCategoryName {
                         Button {
                             onNext()
                         } label: {
-                            HStack(spacing: 8) {
+                            HStack(spacing: 10) {
                                 Image(systemName: "arrow.right.circle.fill")
-                                    .font(.system(size: 14, weight: .semibold))
-                                VStack(spacing: 1) {
+                                    .font(.system(size: 16, weight: .semibold))
+                                VStack(alignment: .leading, spacing: 1) {
                                     Text(L.nextCategory)
-                                        .font(.system(size: 15, weight: .semibold))
+                                        .font(.system(size: 15, weight: .bold, design: .rounded))
                                     Text(nextName)
                                         .font(.system(size: 11, weight: .medium))
-                                        .opacity(0.7)
+                                        .opacity(0.6)
                                 }
                             }
                             .foregroundStyle(.white)
                             .frame(maxWidth: .infinity)
-                            .padding(.vertical, 16)
+                            .padding(.vertical, 17)
                             .background {
-                                RoundedRectangle(cornerRadius: 20)
-                                    .fill(
-                                        LinearGradient(
-                                            colors: [
-                                                Color(hex: "#10b981").opacity(0.45),
-                                                Color(hex: "#059669").opacity(0.3)
-                                            ],
-                                            startPoint: .topLeading,
-                                            endPoint: .bottomTrailing
-                                        )
-                                    )
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 20)
-                                            .strokeBorder(
-                                                LinearGradient(
-                                                    colors: [.white.opacity(0.3), .white.opacity(0.08)],
-                                                    startPoint: .topLeading,
-                                                    endPoint: .bottomTrailing
-                                                ),
-                                                lineWidth: 0.5
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 22)
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [
+                                                    Color(hex: "#10b981"),
+                                                    Color(hex: "#059669"),
+                                                    Color(hex: "#047857")
+                                                ],
+                                                startPoint: .topLeading,
+                                                endPoint: .bottomTrailing
                                             )
-                                    )
+                                        )
+                                    // Inner highlight
+                                    RoundedRectangle(cornerRadius: 22)
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [.white.opacity(0.15), .clear],
+                                                startPoint: .top,
+                                                endPoint: .center
+                                            )
+                                        )
+                                    RoundedRectangle(cornerRadius: 22)
+                                        .strokeBorder(
+                                            LinearGradient(
+                                                colors: [.white.opacity(0.35), .white.opacity(0.05)],
+                                                startPoint: .topLeading,
+                                                endPoint: .bottomTrailing
+                                            ),
+                                            lineWidth: 0.5
+                                        )
+                                }
                             }
-                            .shadow(color: Color(hex: "#10b981").opacity(0.2), radius: 16, y: 6)
+                            .shadow(color: Color(hex: "#10b981").opacity(0.35), radius: 20, y: 8)
+                            .shadow(color: Color(hex: "#10b981").opacity(0.15), radius: 8, y: 3)
                         }
                         .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#10b981")))
                     } else {
-                        // No next category — Play Again is primary
                         Button {
                             onPlayAgain()
                         } label: {
-                            HStack(spacing: 8) {
+                            HStack(spacing: 10) {
                                 Image(systemName: "arrow.counterclockwise")
-                                    .font(.system(size: 14, weight: .semibold))
+                                    .font(.system(size: 16, weight: .semibold))
                                 Text(L.playAgain)
-                                    .font(.system(size: 15, weight: .semibold))
+                                    .font(.system(size: 15, weight: .bold, design: .rounded))
                             }
                             .foregroundStyle(.white)
                             .frame(maxWidth: .infinity)
-                            .padding(.vertical, 16)
+                            .padding(.vertical, 17)
                             .background {
-                                RoundedRectangle(cornerRadius: 20)
-                                    .fill(
-                                        LinearGradient(
-                                            colors: [
-                                                Color(hex: "#667eea").opacity(0.4),
-                                                Color(hex: "#764ba2").opacity(0.25)
-                                            ],
-                                            startPoint: .topLeading,
-                                            endPoint: .bottomTrailing
-                                        )
-                                    )
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 20)
-                                            .strokeBorder(
-                                                LinearGradient(
-                                                    colors: [.white.opacity(0.3), .white.opacity(0.08)],
-                                                    startPoint: .topLeading,
-                                                    endPoint: .bottomTrailing
-                                                ),
-                                                lineWidth: 0.5
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 22)
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [
+                                                    Color(hex: "#667eea"),
+                                                    Color(hex: "#764ba2")
+                                                ],
+                                                startPoint: .topLeading,
+                                                endPoint: .bottomTrailing
                                             )
-                                    )
+                                        )
+                                    RoundedRectangle(cornerRadius: 22)
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [.white.opacity(0.15), .clear],
+                                                startPoint: .top,
+                                                endPoint: .center
+                                            )
+                                        )
+                                    RoundedRectangle(cornerRadius: 22)
+                                        .strokeBorder(
+                                            LinearGradient(
+                                                colors: [.white.opacity(0.35), .white.opacity(0.05)],
+                                                startPoint: .topLeading,
+                                                endPoint: .bottomTrailing
+                                            ),
+                                            lineWidth: 0.5
+                                        )
+                                }
                             }
-                            .shadow(color: Color(hex: "#667eea").opacity(0.2), radius: 16, y: 6)
+                            .shadow(color: Color(hex: "#667eea").opacity(0.35), radius: 20, y: 8)
+                            .shadow(color: Color(hex: "#667eea").opacity(0.15), radius: 8, y: 3)
                         }
                         .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#667eea")))
                     }
 
-                    // Share button
+                    // Share button — glass pill
                     Button {
                         shareResult()
                     } label: {
-                        Image(systemName: "square.and.arrow.up")
-                            .font(.system(size: 16, weight: .semibold))
-                            .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-                            .frame(width: 52, height: 52)
-                            .background {
-                                RoundedRectangle(cornerRadius: 16)
-                                    .fill(.ultraThinMaterial)
-                                    .opacity(0.2)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 16)
-                                            .strokeBorder(
-                                                LinearGradient(
-                                                    colors: [.white.opacity(0.2), .white.opacity(0.06)],
-                                                    startPoint: .topLeading,
-                                                    endPoint: .bottomTrailing
-                                                ),
-                                                lineWidth: 0.5
-                                            )
+                        VStack(spacing: 3) {
+                            Image(systemName: "square.and.arrow.up")
+                                .font(.system(size: 16, weight: .semibold))
+                            Text("Share")
+                                .font(.system(size: 9, weight: .semibold))
+                        }
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: tierManager.tierGradientColors.isEmpty
+                                    ? [.white.opacity(0.7), .white.opacity(0.5)]
+                                    : tierManager.tierGradientColors.map { $0.opacity(0.9) },
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .frame(width: 56, height: 56)
+                        .background {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 18)
+                                    .fill(.white.opacity(isDark ? 0.06 : 0.12))
+                                RoundedRectangle(cornerRadius: 18)
+                                    .strokeBorder(
+                                        LinearGradient(
+                                            colors: [.white.opacity(0.25), .white.opacity(0.06)],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        ),
+                                        lineWidth: 0.5
                                     )
                             }
+                        }
                     }
                     .buttonStyle(LumenPressStyle(weight: .medium))
                 }
@@ -1825,33 +1856,30 @@ struct GameCompleteView: View {
                 // Secondary row
                 HStack(spacing: 10) {
                     if onNextCategory != nil {
-                        // Play Again as secondary
                         Button {
                             onPlayAgain()
                         } label: {
                             HStack(spacing: 6) {
                                 Image(systemName: "arrow.counterclockwise")
-                                    .font(.system(size: 12, weight: .medium))
+                                    .font(.system(size: 12, weight: .semibold))
                                 Text(L.playAgain)
-                                    .font(.system(size: 14, weight: .medium))
+                                    .font(.system(size: 14, weight: .semibold))
                             }
-                            .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+                            .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum.opacity(0.8))
                             .frame(maxWidth: .infinity)
-                            .padding(.vertical, 12)
+                            .padding(.vertical, 13)
                             .background {
                                 RoundedRectangle(cornerRadius: 16)
-                                    .fill(.ultraThinMaterial)
-                                    .opacity(0.1)
+                                    .fill(.white.opacity(isDark ? 0.04 : 0.08))
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 16)
-                                            .strokeBorder(.white.opacity(0.1), lineWidth: 0.5)
+                                            .strokeBorder(.white.opacity(0.08), lineWidth: 0.5)
                                     )
                             }
                         }
                         .buttonStyle(LumenPressStyle(weight: .medium))
                     }
 
-                    // Back to Categories
                     Button {
                         onDismiss()
                     } label: {
@@ -1861,28 +1889,44 @@ struct GameCompleteView: View {
                             Text(L.backToCategories)
                                 .font(.system(size: 14, weight: .medium))
                         }
-                        .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum.opacity(0.7))
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum.opacity(0.6))
                         .frame(maxWidth: .infinity)
-                        .padding(.vertical, 12)
+                        .padding(.vertical, 13)
                     }
                     .buttonStyle(LumenPressStyle(weight: .medium))
                 }
             }
             .padding(.horizontal, 20)
-            .padding(.top, 12)
-            .padding(.bottom, 8)
+            .padding(.top, 14)
+            .padding(.bottom, 10)
             .background {
-                Rectangle()
-                    .fill(.ultraThinMaterial)
-                    .opacity(isDark ? 0.85 : 0.9)
-                    .overlay(alignment: .top) {
+                ZStack {
+                    // Deep glass background
+                    Rectangle()
+                        .fill(.ultraThinMaterial)
+                        .opacity(isDark ? 0.92 : 0.94)
+
+                    // Tier accent glow at top edge
+                    VStack {
                         LinearGradient(
-                            colors: tierManager.tierGradientColors.map { $0.opacity(0.3) },
+                            colors: tierManager.tierGradientColors.map { $0.opacity(0.25) },
                             startPoint: .leading,
                             endPoint: .trailing
                         )
-                        .frame(height: 0.5)
+                        .frame(height: 1)
+                        .blur(radius: 2)
+
+                        LinearGradient(
+                            colors: tierManager.tierGradientColors.map { $0.opacity(0.06) },
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                        .frame(height: 16)
+                        .blur(radius: 8)
+
+                        Spacer()
                     }
+                }
             }
         }
         .offset(y: showBar ? 0 : 200)
