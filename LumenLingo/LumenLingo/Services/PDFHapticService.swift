@@ -5,6 +5,7 @@ import UIKit
 /// Centralized haptic feedback for the PDF preview & export flow.
 /// Calibrated intensities: light for navigation, medium for actions, success for completions.
 /// Lazy singleton — zero cost until first use. Respects user's hapticsEnabled preference.
+@MainActor
 final class PDFHapticService {
     static let shared = PDFHapticService()
 

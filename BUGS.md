@@ -27,7 +27,7 @@
 | E12 | [Recent Activity Cross-Language Support](#epic-12-recent-activity-cross-language-support) | P1 | 3 | 13 | ✅ Done |
 | E13 | [Word Constructor Polish](#epic-13-word-constructor-polish) | P1 | 3 | 13 | ✅ Done |
 | E14 | [Royal Paywall Visual Integrity](#epic-14-royal-paywall-visual-integrity) | P0 | 3 | 13 | ✅ Done |
-| E15 | [Haptic Feedback Integration](#epic-15-haptic-feedback-integration) | P1 | 4 | 18 |
+| E15 | [Haptic Feedback Integration](#epic-15-haptic-feedback-integration) | P1 | 4 | 18 | ✅ Done |
 | E16 | [Game Header UX Redesign](#epic-16-game-header-ux-redesign) | P2 | 4 | 18 |
 | | **TOTALS** | | **59** | **278** |
 
@@ -2007,7 +2007,7 @@
 **ID:** BUG-052  
 **Priority:** P0  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** developer,  
 **I want** to identify the root cause of why haptic feedback is not felt on device,  
@@ -2015,17 +2015,17 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: A diagnostic checklist is completed:
-  - [ ] Is `UserProfile.hapticsEnabled` defaulting to `true`? (Check the model's default value)
-  - [ ] Is `HapticsService.isEnabled` being set correctly from the profile on launch?
-  - [ ] Are haptic calls happening on the main thread? (UIFeedbackGenerators require main thread)
-  - [ ] Is `canFire(action:)` blocking too many calls? (Check cooldown intervals)
-  - [ ] Are the `UIImpactFeedbackGenerator`s being prepared (`prepare()`) before firing?
-  - [ ] Is the simulator filtering haptics? (Haptics don't work on simulator — must test on device)
-  - [ ] Does `CHHapticEngine.capabilitiesForHardware().supportsHaptics` return true on the test device?
-- [ ] AC2: Debug logging is added to `HapticsService`: each haptic method logs `[Haptics] buttonPress: enabled=\(isEnabled), canFire=\(canFire("buttonPress"))` to console.
-- [ ] AC3: A quick verification button is added to the Debug Panel: "Test Haptics" that fires `hapticsService.correctAnswer()` directly — if the user feels it, the service works; if not, it's a hardware/configuration issue.
-- [ ] AC4: Root cause is identified and documented.
+- [x] AC1: A diagnostic checklist is completed:
+  - [x] Is `UserProfile.hapticsEnabled` defaulting to `true`? (Check the model's default value)
+  - [x] Is `HapticsService.isEnabled` being set correctly from the profile on launch?
+  - [x] Are haptic calls happening on the main thread? (UIFeedbackGenerators require main thread)
+  - [x] Is `canFire(action:)` blocking too many calls? (Check cooldown intervals)
+  - [x] Are the `UIImpactFeedbackGenerator`s being prepared (`prepare()`) before firing?
+  - [x] Is the simulator filtering haptics? (Haptics don't work on simulator — must test on device)
+  - [x] Does `CHHapticEngine.capabilitiesForHardware().supportsHaptics` return true on the test device?
+- [x] AC2: Debug logging is added to `HapticsService`: each haptic method logs `[Haptics] buttonPress: enabled=\(isEnabled), canFire=\(canFire("buttonPress"))` to console.
+- [x] AC3: A quick verification button is added to the Debug Panel: "Test Haptics" that fires `hapticsService.correctAnswer()` directly — if the user feels it, the service works; if not, it's a hardware/configuration issue.
+- [x] AC4: Root cause is identified and documented.
 
 #### Subtasks
 
@@ -2045,7 +2045,7 @@
 **ID:** BUG-053  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user,  
 **I want** to feel haptic feedback on every meaningful interaction in the app,  
@@ -2053,7 +2053,7 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The following interactions produce haptic feedback:
+- [x] AC1: The following interactions produce haptic feedback:
   - Tab bar switches → `tabSwitch()` (light selection feedback)
   - Button presses (all CTA buttons, game buttons) → `buttonPress()` (medium impact)
   - Toggle switches → `toggleSwitch()` (selection feedback)
@@ -2068,9 +2068,9 @@
   - Collapsible section toggle → `toggleSwitch()` (selection feedback)
   - Word builder tile pick → `tilePick()` (soft impact)
   - Word builder tile snap → `tileSnap()` (rigid impact)
-- [ ] AC2: Each haptic call is wrapped in `@MainActor` context to ensure it executes on the main thread.
-- [ ] AC3: No duplicate haptics fire for a single interaction (the anti-spam cooldown handles this, but verify).
-- [ ] AC4: The haptic intensity is appropriate: subtle for frequent actions (tab switches), stronger for achievements (correct answer), strongest for celebrations (perfect score).
+- [x] AC2: Each haptic call is wrapped in `@MainActor` context to ensure it executes on the main thread.
+- [x] AC3: No duplicate haptics fire for a single interaction (the anti-spam cooldown handles this, but verify).
+- [x] AC4: The haptic intensity is appropriate: subtle for frequent actions (tab switches), stronger for achievements (correct answer), strongest for celebrations (perfect score).
 
 #### Subtasks
 
@@ -2088,7 +2088,7 @@
 **ID:** BUG-054  
 **Priority:** P1  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user,  
 **I want** haptic feedback to fire every time I perform an action (not silently blocked by cooldowns),  
@@ -2096,10 +2096,10 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The default cooldown interval for all haptic actions is ≤ 100ms (10 per second). Currently, if cooldowns are longer (e.g., 500ms), they would suppress rapid interactions like fast tile picks in Word Builder.
-- [ ] AC2: Exception: `celebrate()` and `perfectScore()` can have longer cooldowns (500ms) since they're one-time events.
-- [ ] AC3: Cooldown values are configurable per action (not a single global value).
-- [ ] AC4: The `canFire(action:)` method is reviewed and verified to use the correct cooldown per action.
+- [x] AC1: The default cooldown interval for all haptic actions is ≤ 100ms (10 per second). Currently, if cooldowns are longer (e.g., 500ms), they would suppress rapid interactions like fast tile picks in Word Builder.
+- [x] AC2: Exception: `celebrate()` and `perfectScore()` can have longer cooldowns (500ms) since they're one-time events.
+- [x] AC3: Cooldown values are configurable per action (not a single global value).
+- [x] AC4: The `canFire(action:)` method is reviewed and verified to use the correct cooldown per action.
 
 #### Subtasks
 
@@ -2117,7 +2117,7 @@
 **ID:** BUG-055  
 **Priority:** P2  
 **Points:** 2  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user,  
 **I want** the haptics setting to be easily discoverable in the Profile/Settings page,  
@@ -2125,11 +2125,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: A "Haptic Feedback" toggle is visible in the Sound settings section of the Profile page (it logically groups with sensory settings).
-- [ ] AC2: The toggle label includes a brief description: "Feel vibrations when interacting with the app".
-- [ ] AC3: Toggling the switch produces an immediate haptic sample (if enabling) so the user confirms it works.
-- [ ] AC4: If the device doesn't support haptics (`CHHapticEngine.capabilitiesForHardware().supportsHaptics == false`), the toggle is hidden and a note reads "Haptic feedback is not available on this device."
-- [ ] AC5: The toggle state is persisted via `UserProfile.hapticsEnabled`.
+- [x] AC1: A "Haptic Feedback" toggle is visible in the Sound settings section of the Profile page (it logically groups with sensory settings).
+- [x] AC2: The toggle label includes a brief description: "Feel vibrations when interacting with the app".
+- [x] AC3: Toggling the switch produces an immediate haptic sample (if enabling) so the user confirms it works.
+- [x] AC4: If the device doesn't support haptics (`CHHapticEngine.capabilitiesForHardware().supportsHaptics == false`), the toggle is hidden and a note reads "Haptic feedback is not available on this device."
+- [x] AC5: The toggle state is persisted via `UserProfile.hapticsEnabled`.
 
 #### Subtasks
 

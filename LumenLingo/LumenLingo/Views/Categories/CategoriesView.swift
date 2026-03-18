@@ -221,7 +221,7 @@ struct CategoriesView: View {
     private var categoryHeader: some View {
         VStack(spacing: 12) {
             HStack {
-                Button { dismiss() } label: {
+                Button { HapticsService.shared.navTransition(); dismiss() } label: {
                     HStack(spacing: 6) {
                         Image(systemName: "chevron.left")
                         Text(L.back)
@@ -250,6 +250,7 @@ struct CategoriesView: View {
 
                 // Grid/List toggle
                 Button {
+                    HapticsService.shared.toggleSwitch()
                     withAnimation(.spring(response: 0.3)) {
                         isGridView.toggle()
                     }
@@ -283,6 +284,7 @@ struct CategoriesView: View {
 
                 // Filter: favorites only
                 Button {
+                    HapticsService.shared.toggleSwitch()
                     withAnimation(.smooth(duration: 0.35)) {
                         showFavoritesOnly.toggle()
                     }
@@ -296,6 +298,7 @@ struct CategoriesView: View {
 
                 // Filter completed toggle
                 Button {
+                    HapticsService.shared.toggleSwitch()
                     withAnimation(.smooth(duration: 0.35)) {
                         showCompletedFilter.toggle()
                     }
@@ -364,8 +367,7 @@ struct CategoriesView: View {
             Button {
                 if locked {
                     lockedCategoryTapped = item
-                    let g = UINotificationFeedbackGenerator()
-                    g.notificationOccurred(.warning)
+                    HapticsService.shared.warning()
                     return
                 }
                 // Phase 1: Seamless handoff — keep card visually pressed
@@ -373,8 +375,7 @@ struct CategoriesView: View {
                 pressedCardId = item.id
 
                 // Haptic + sound — soft, premium feel
-                let g = UIImpactFeedbackGenerator(style: .soft)
-                g.impactOccurred(intensity: 0.7)
+                HapticsService.shared.buttonPress()
                 AudioService.shared.playCategoryTap()
 
                 // Phase 2: Bouncy spring-back after held 140ms

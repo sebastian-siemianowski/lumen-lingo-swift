@@ -49,6 +49,8 @@ struct QAPanelView: View {
 
                 trialOverride
 
+                hapticsTest
+
                 resetSection
 
                 Spacer(minLength: 40)
@@ -570,6 +572,62 @@ struct QAPanelView: View {
                 Text("Note: Apply via UserProfile.trialStartDate in code")
                     .font(.system(size: 9))
                     .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
+            }
+        }
+    }
+
+    // MARK: - Haptics Test
+
+    private var hapticsTest: some View {
+        GlassPanelWrapper {
+            VStack(spacing: 12) {
+                sectionHeader(icon: "iphone.radiowaves.left.and.right", title: "Haptics Test", color: .pink)
+
+                let haptics = HapticsService.shared
+                Text("enabled: \(haptics.isEnabled ? "YES" : "NO")")
+                    .font(.system(size: 11, design: .monospaced))
+                    .foregroundStyle(haptics.isEnabled ? .green : .red)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                HStack(spacing: 8) {
+                    Button {
+                        haptics.correctAnswer()
+                    } label: {
+                        debugActionButton(label: "✅ Correct", color: .green)
+                    }
+
+                    Button {
+                        haptics.wrongAnswer()
+                    } label: {
+                        debugActionButton(label: "❌ Wrong", color: .red)
+                    }
+
+                    Button {
+                        haptics.celebrate()
+                    } label: {
+                        debugActionButton(label: "🎉 Celebrate", color: .purple)
+                    }
+                }
+
+                HStack(spacing: 8) {
+                    Button {
+                        haptics.buttonPress()
+                    } label: {
+                        debugActionButton(label: "👆 Button", color: .cyan)
+                    }
+
+                    Button {
+                        haptics.tilePick()
+                    } label: {
+                        debugActionButton(label: "🧩 Tile", color: .orange)
+                    }
+
+                    Button {
+                        haptics.perfectScore()
+                    } label: {
+                        debugActionButton(label: "⭐ Perfect", color: .yellow)
+                    }
+                }
             }
         }
     }

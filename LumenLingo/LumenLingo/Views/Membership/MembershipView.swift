@@ -60,6 +60,7 @@ struct MembershipView: View {
             if isSheet {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
+                        HapticsService.shared.navTransition()
                         dismiss()
                     } label: {
                         Image(systemName: "xmark.circle.fill")
@@ -816,6 +817,7 @@ struct TierCardView: View {
             // CTA button
             Button {
                 guard !isActuallyCurrent, !tier.isDisabled else { return }
+                HapticsService.shared.buttonPress()
                 AudioService.shared.playTierSelect()
                 if tier.id == "trial" {
                     if tierManager.startTrial(profile: profile) {

@@ -388,8 +388,7 @@ struct SoundscapesSettingsView: View {
     }
 
     private func handleLockedSoundscapeTap(_ soundscape: Soundscape) {
-        let feedback = UINotificationFeedbackGenerator()
-        feedback.notificationOccurred(.warning)
+        HapticsService.shared.warning()
 
         // Play 3-second preview if not already previewed this session
         if !tierManager.hasPreviewedSoundscape(soundscape) {

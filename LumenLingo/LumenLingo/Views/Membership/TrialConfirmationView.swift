@@ -285,8 +285,7 @@ struct TrialConfirmationView: View {
     // MARK: - Haptic
 
     private func triggerHaptic() {
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.success)
+        HapticsService.shared.celebrate()
     }
 }
 

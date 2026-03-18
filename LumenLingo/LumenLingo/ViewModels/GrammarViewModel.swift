@@ -4,6 +4,7 @@ import SwiftData
 // MARK: - Grammar ViewModel
 
 /// Port of useGrammarGame.jsx — manages grammar quiz state, scoring, performance mood.
+@MainActor
 @Observable
 final class GrammarViewModel {
     // Game state

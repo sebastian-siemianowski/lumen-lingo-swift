@@ -379,8 +379,7 @@ struct FeatureTransitionOverlay: View {
 
                 // Haptic per feature on upgrade, single at end on downgrade
                 if isUpgrade {
-                    let feedback = UIImpactFeedbackGenerator(style: .light)
-                    feedback.impactOccurred()
+                    HapticsService.shared.lightTap(intensity: 0.5)
                 }
             }
         }
@@ -390,8 +389,7 @@ struct FeatureTransitionOverlay: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + totalRevealTime) {
             // One gentle haptic at end for downgrade
             if !isUpgrade {
-                let feedback = UIImpactFeedbackGenerator(style: .light)
-                feedback.impactOccurred()
+                HapticsService.shared.lightTap(intensity: 0.5)
             }
             withAnimation(.easeOut(duration: 0.5)) {
                 showSummary = true

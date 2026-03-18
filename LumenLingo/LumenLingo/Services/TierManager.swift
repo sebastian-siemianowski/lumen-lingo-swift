@@ -826,8 +826,7 @@ final class TierManager {
         if wasUpgrade {
             HapticsService.shared.tierUpgrade()
         } else {
-            let feedback = UIImpactFeedbackGenerator(style: wasUpgrade ? .heavy : .medium)
-            feedback.impactOccurred()
+            HapticsService.shared.tierDowngrade()
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { [weak self] in
             self?.showUpgradeCelebration = true

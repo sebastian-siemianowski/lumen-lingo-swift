@@ -3,6 +3,7 @@ import SwiftData
 
 // MARK: - Profile ViewModel
 
+@MainActor
 @Observable
 final class ProfileViewModel {
     var userProfile: UserProfile?
@@ -117,6 +118,7 @@ final class ProfileViewModel {
 
 // MARK: - Language Selection ViewModel
 
+@MainActor
 @Observable
 final class LanguageSelectionViewModel {
     var sourceLanguage: SupportedLanguage = .english

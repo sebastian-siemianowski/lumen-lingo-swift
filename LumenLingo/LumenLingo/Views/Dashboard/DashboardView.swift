@@ -276,6 +276,7 @@ struct DashboardView: View {
                         withAnimation(.spring(response: 0.4)) {
                             isHeaderCollapsed.toggle()
                         }
+                        HapticsService.shared.toggleSwitch()
                     } label: {
                         Image(systemName: "chevron.up")
                             .font(.caption.bold())
@@ -305,6 +306,7 @@ struct DashboardView: View {
         }
         .onTapGesture {
             if isHeaderCollapsed {
+                HapticsService.shared.toggleSwitch()
                 withAnimation(.spring(response: 0.4)) {
                     isHeaderCollapsed = false
                 }

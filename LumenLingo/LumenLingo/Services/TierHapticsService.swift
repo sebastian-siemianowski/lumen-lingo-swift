@@ -5,6 +5,7 @@ import Foundation
 /// Wraps `HapticsService` to provide tier-scaled haptic feedback.
 /// Free gets basic impacts; Pro gets double-tap; Elite gets richer patterns;
 /// Royal/Trial gets full custom patterns for every event.
+@MainActor
 @Observable
 final class TierHapticsService {
 

@@ -133,6 +133,9 @@ struct WordBuilderView: View {
             hideTabBar = true
             loadContent()
             practiceTracker.startSession()
+            HapticsService.shared.gameStart()
+            HapticsService.shared.gameStart()
+            HapticsService.shared.gameStart()
         }
         .onDisappear {
             hideTabBar = false
@@ -140,8 +143,7 @@ struct WordBuilderView: View {
         }
         .onReceive(NotificationCenter.default.publisher(for: .practiceTimeFiveMinuteWarning)) { _ in
             guard practiceTracker.isLimited(for: tierManager.currentTier) else { return }
-            let feedback = UINotificationFeedbackGenerator()
-            feedback.notificationOccurred(.warning)
+            HapticsService.shared.warning()
             withAnimation(.spring(response: 0.4)) {
                 showTimeBanner = true
             }
@@ -236,7 +238,7 @@ struct WordBuilderView: View {
     private var exerciseHeader: some View {
         VStack(spacing: 12) {
             HStack {
-                Button { dismiss() } label: {
+                Button { HapticsService.shared.navTransition(); dismiss() } label: {
                     HStack(spacing: 6) {
                         Image(systemName: "chevron.left")
                         Text(L.back)
@@ -720,7 +722,7 @@ struct WordBuilderView: View {
             Text(L.noWordsAvailable)
                 .font(.headline)
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-            Button(L.goBack) { dismiss() }
+            Button(L.goBack) { HapticsService.shared.navTransition(); dismiss() }
                 .buttonStyle(.bordered)
                 .tint(isDark ? .white : .caribbeanInk)
         }

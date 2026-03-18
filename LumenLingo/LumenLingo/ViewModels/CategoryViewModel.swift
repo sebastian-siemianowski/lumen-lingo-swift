@@ -5,6 +5,7 @@ import SwiftData
 
 /// Shared category selection logic for all 3 game types.
 /// Port of useCategoryData.jsx.
+@MainActor
 @Observable
 final class CategoryViewModel {
     var categories: [CategoryDisplayItem] = []

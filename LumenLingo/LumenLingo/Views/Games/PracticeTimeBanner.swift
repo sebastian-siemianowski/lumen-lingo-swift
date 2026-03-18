@@ -66,8 +66,7 @@ struct PracticeTimeBanner: View {
 
             // "Go Unlimited" CTA
             Button {
-                let feedback = UIImpactFeedbackGenerator(style: .light)
-                feedback.impactOccurred()
+                HapticsService.shared.buttonPress()
                 onUpgradeTap()
             } label: {
                 Text("Go Unlimited")

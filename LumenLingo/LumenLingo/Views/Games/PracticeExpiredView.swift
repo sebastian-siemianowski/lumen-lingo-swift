@@ -263,8 +263,7 @@ struct PracticeExpiredView: View {
 
     private var upgradeCTA: some View {
         Button {
-            let feedback = UIImpactFeedbackGenerator(style: .medium)
-            feedback.impactOccurred()
+            HapticsService.shared.buttonPress()
             onUpgradeTap()
         } label: {
             HStack(spacing: 10) {
