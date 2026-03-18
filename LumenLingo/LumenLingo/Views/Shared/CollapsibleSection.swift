@@ -452,16 +452,6 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                 content()
             }
         }
-        // Left edge indicator rail — category color at 0.10 opacity (Story 4.2.3)
-        .overlay(alignment: .leading) {
-            if let cat = category {
-                let accentColor = categoryAccentColor(cat)
-                RoundedRectangle(cornerRadius: 1)
-                    .fill(accentColor.opacity(isDark ? 0.10 : 0.08))
-                    .frame(width: 2)
-                    .padding(.vertical, 4)
-            }
-        }
         .task(id: isHeaderPressed) {
             guard isHeaderPressed else { return }
             try? await Task.sleep(for: .milliseconds(300))

@@ -829,8 +829,7 @@ struct QAPanelView: View {
                             switchLanguagePair(to: lang)
                         } label: {
                             VStack(spacing: 2) {
-                                Text(lang.flag)
-                                    .font(.system(size: 20))
+                                CountryFlagView(countryCode: lang.countryCode, size: 16)
                                 Text(lang.rawValue.prefix(3).uppercased())
                                     .font(.system(size: 8, weight: .bold, design: .monospaced))
                                     .foregroundStyle(isActive ? .white : (isDark ? .white.opacity(0.5) : .secondary))
