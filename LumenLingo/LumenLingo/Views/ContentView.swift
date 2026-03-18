@@ -38,7 +38,7 @@ struct ContentView: View {
         } else if themeManager.isDarkMode {
             return Color(red: 6/255, green: 5/255, blue: 20/255)
         } else {
-            return Color(red: 248/255, green: 245/255, blue: 253/255)
+            return .caribbeanCanvas
         }
     }
 
@@ -103,7 +103,10 @@ struct ContentView: View {
                 .tag(AppTab.profile)
             }
             .tint(Color(hex: themeManager.isDarkMode ? "#a855f7" : "#7c3aed"))
-            .toolbar(hideTabBar ? .hidden : .visible, for: .tabBar)
+            .toolbar(
+                (hideTabBar || !themeManager.isDarkMode) ? .hidden : .visible,
+                for: .tabBar
+            )
             .toolbarBackground(.visible, for: .tabBar)
             .toolbarBackground(
                 themeManager.isDarkMode
@@ -112,6 +115,11 @@ struct ContentView: View {
                 for: .tabBar
             )
             .toolbarColorScheme(themeManager.isDarkMode ? .dark : .light, for: .tabBar)
+
+            // Premium Caribbean tab bar (light mode only)
+            if !hideTabBar && !themeManager.isDarkMode {
+                CaribbeanTabBar(selectedTab: $selectedTab)
+            }
         }
         .background(vstackBackground)
         .onAppear {
@@ -383,6 +391,140 @@ struct ContentView: View {
     }
 }
 
+// MARK: - Caribbean Tab Bar (Light Mode)
+
+/// Premium custom tab bar for light mode with Caribbean ocean styling.
+/// Features gradient icons, underline glow capsule with matchedGeometryEffect,
+/// and warm turquoise aesthetics — frosted glass shelf the icons sit on.
+struct CaribbeanTabBar: View {
+    @Binding var selectedTab: AppTab
+    @Namespace private var tabNamespace
+    @Environment(\.localization) private var localization
+
+    private var L: AppStrings { localization.strings }
+
+    private var tabs: [(tab: AppTab, icon: String, label: String)] {
+        [
+            (.dashboard, "house.fill", L.tabHome),
+            (.journey, "chart.line.uptrend.xyaxis", L.tabStats),
+            (.membership, "crown.fill", L.tabPremium),
+            (.profile, "person.fill", L.tabProfile),
+        ]
+    }
+
+    var body: some View {
+        VStack(spacing: 0) {
+            // Layer 2: Top-edge luminance line — crisp light catch simulating glass edge
+            Rectangle()
+                .fill(Color.white.opacity(0.45))
+                .frame(height: 0.5)
+
+            // Layer 3: Inner top glow — soft light bleeding down from the edge
+            Rectangle()
+                .fill(
+                    LinearGradient(
+                        colors: [Color.white.opacity(0.15), Color.clear],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
+                .frame(height: 8)
+
+            // Tab buttons row
+            HStack(spacing: 0) {
+                ForEach(tabs, id: \.tab) { item in
+                    caribbeanTabButton(tab: item.tab, icon: item.icon, label: item.label)
+                }
+            }
+            .padding(.top, 2)
+            .padding(.bottom, 6)
+        }
+        .padding(.bottom, bottomSafeArea)
+        .background {
+            ZStack {
+                // Layer 0: Warm sand-white base (nav/tab bar surface)
+                Color.caribbeanSurface
+
+                // Layer 1: Caribbean ocean tint — subtle turquoise undertone
+                LinearGradient(
+                    stops: [
+                        .init(color: Color(hex: "0EA5E9").opacity(0.04), location: 0),
+                        .init(color: Color(hex: "06B6D4").opacity(0.03), location: 0.5),
+                        .init(color: Color(hex: "14B8A6").opacity(0.04), location: 1),
+                    ],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            }
+        }
+        // Shadow goes UP — bar is bottom-anchored
+        .shadow(color: Color(hex: "0EA5E9").opacity(0.08), radius: 12, y: -4)
+        .shadow(color: Color(hex: "06B6D4").opacity(0.03), radius: 4, y: -2)
+        .animation(.spring(response: 0.35, dampingFraction: 0.7), value: selectedTab)
+    }
+
+    @ViewBuilder
+    private func caribbeanTabButton(tab: AppTab, icon: String, label: String) -> some View {
+        let isSelected = selectedTab == tab
+
+        Button {
+            selectedTab = tab
+        } label: {
+            VStack(spacing: 3) {
+                // Icon with ocean shimmer glow
+                ZStack {
+                    if isSelected {
+                        Circle()
+                            .fill(LinearGradient.caribbeanGradientOcean)
+                            .opacity(0.12)
+                            .blur(radius: 4)
+                            .frame(width: 32, height: 32)
+                    }
+
+                    Image(systemName: icon)
+                        .font(.system(size: 20, weight: isSelected ? .semibold : .regular))
+                        .foregroundStyle(
+                            isSelected
+                                ? AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
+                                : AnyShapeStyle(Color.caribbeanMist)
+                        )
+                }
+                .frame(height: 28)
+
+                // Label
+                Text(label)
+                    .font(.system(size: 10, weight: isSelected ? .medium : .regular))
+                    .tracking(isSelected ? 0.3 : 0)
+                    .foregroundStyle(isSelected ? Color.caribbeanInk : Color.caribbeanMist)
+
+                // Underline glow capsule — slides between tabs
+                if isSelected {
+                    Capsule()
+                        .fill(LinearGradient.caribbeanGradientOcean)
+                        .frame(width: 28, height: 3)
+                        .shadow(color: Color(hex: "0EA5E9").opacity(0.35), radius: 6, y: 1)
+                        .matchedGeometryEffect(id: "caribbeanActiveTab", in: tabNamespace)
+                } else {
+                    Color.clear
+                        .frame(width: 28, height: 3)
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(label)
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
+    }
+
+    private var bottomSafeArea: CGFloat {
+        guard let windowScene = UIApplication.shared.connectedScenes
+            .first as? UIWindowScene,
+            let window = windowScene.windows.first else { return 0 }
+        return window.safeAreaInsets.bottom
+    }
+}
+
 // MARK: - Branded Navigation Bar
 
 /// Top navigation bar with app branding, matching React's LayoutNavbar.
@@ -435,6 +577,10 @@ struct LumenLingoNavBar: View {
                             endPoint: .trailing
                         )
                     )
+                    .shadow(
+                        color: isDark ? .clear : Color.caribbeanPlum.opacity(0.10),
+                        radius: 8
+                    )
 
                 Text(L.languageMasteryEngine)
                     .font(.system(size: 10, weight: .medium))
@@ -448,16 +594,43 @@ struct LumenLingoNavBar: View {
         .background(
             isDark
                 ? AnyShapeStyle(Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.9))
-                : AnyShapeStyle(Color(red: 248/255, green: 245/255, blue: 253/255))
+                : AnyShapeStyle(Color.caribbeanSurface)
         )
         .overlay(
-            Rectangle()
-                .fill(isDark ? .white.opacity(0.05) : Color(red: 0.45, green: 0.22, blue: 0.62).opacity(0.02))
+            isDark
+                ? AnyView(
+                    Rectangle()
+                        .fill(.white.opacity(0.05))
+                )
+                : AnyView(
+                    // Caribbean ocean tint — subtle turquoise wash
+                    LinearGradient(
+                        stops: [
+                            .init(color: Color(hex: "0EA5E9").opacity(0.03), location: 0),
+                            .init(color: Color(hex: "06B6D4").opacity(0.02), location: 1),
+                        ],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
         )
         .overlay(alignment: .bottom) {
-            Rectangle()
-                .fill(isDark ? .white.opacity(0.06) : Color(red: 0.45, green: 0.22, blue: 0.62).opacity(0.06))
-                .frame(height: 0.5)
+            if isDark {
+                Rectangle()
+                    .fill(.white.opacity(0.06))
+                    .frame(height: 0.5)
+            } else {
+                // Turquoise gradient horizon line + glow
+                VStack(spacing: 0) {
+                    Rectangle()
+                        .fill(LinearGradient.caribbeanGradientOcean.opacity(0.15))
+                        .frame(height: 1)
+                    Rectangle()
+                        .fill(LinearGradient.caribbeanGradientOcean.opacity(0.06))
+                        .frame(height: 4)
+                        .blur(radius: 4)
+                }
+            }
         }
         .animation(.smooth(duration: 0.65), value: isDark)
         .onAppear {

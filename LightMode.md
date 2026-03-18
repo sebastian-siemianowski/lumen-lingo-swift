@@ -885,14 +885,14 @@ Shadow: #0EA5E9 @ 0.08, radius 12, y: -4 (shadow goes UP — bar is bottom-ancho
 ```
 
 **Acceptance Criteria:**
-- [ ] Tab bar shows hint of the Caribbean sunset gradient through the material
-- [ ] Top edge has a bright, crisp line that defines the bar boundary
+- [x] Tab bar shows hint of the Caribbean sunset gradient through the material
+- [x] Top edge has a bright, crisp line that defines the bar boundary
 - [ ] Background is not pure opaque — some transparency reveals depth
-- [ ] Tab bar feels like a frosted glass shelf the icons sit on
-- [ ] Shadow is upward-facing (warm lavender), creating depth against the content above
-- [ ] On the Dashboard tab (which has the full sunset background), the bar picks up warm tones
-- [ ] On other tabs (which have the pale lavender background), the bar is subtler but still warm
-- [ ] No visual jumping when switching between tabs with different background types
+- [x] Tab bar feels like a frosted glass shelf the icons sit on
+- [x] Shadow is upward-facing (warm lavender), creating depth against the content above
+- [x] On the Dashboard tab (which has the full sunset background), the bar picks up warm tones
+- [x] On other tabs (which have the pale lavender background), the bar is subtler but still warm
+- [x] No visual jumping when switching between tabs with different background types
 
 #### Subtask 3.1.2: Redesign Tab Bar Icon States
 
@@ -916,14 +916,14 @@ Transition: 0.3s spring animation for color, scale (1.0 → 1.08 → 1.0 bounce 
 ```
 
 **Acceptance Criteria:**
-- [ ] Selected tab is immediately identifiable at a glance
-- [ ] The gradient fill on selected icon creates a premium, "lit up" effect
-- [ ] Dot indicator below selected icon provides secondary positional cue
-- [ ] Unselected icons are clearly deemphasized but not invisible
-- [ ] Selection animation has a playful bounce that feels alive
-- [ ] Transition between tabs is smooth — no flicker or harsh switch
-- [ ] All 4 tabs (Dashboard, Journey, Membership, Profile) tested with correct icon rendering
-- [ ] Icons maintain crisp rendering at all animation states (no anti-aliasing artifacts)
+- [x] Selected tab is immediately identifiable at a glance
+- [x] The gradient fill on selected icon creates a premium, "lit up" effect
+- [x] Dot indicator below selected icon provides secondary positional cue
+- [x] Unselected icons are clearly deemphasized but not invisible
+- [x] Selection animation has a playful bounce that feels alive
+- [x] Transition between tabs is smooth — no flicker or harsh switch
+- [x] All 4 tabs (Dashboard, Journey, Membership, Profile) tested with correct icon rendering
+- [x] Icons maintain crisp rendering at all animation states (no anti-aliasing artifacts)
 
 #### Subtask 3.1.3: Add Active Tab Underline Glow
 
@@ -940,12 +940,12 @@ Capsule()
 ```
 
 **Acceptance Criteria:**
-- [ ] Glowing capsule moves smoothly between tabs using `matchedGeometryEffect`
-- [ ] Capsule has a gradient fill (turquoise → teal — ocean signature)
-- [ ] Shadow creates a glow effect below the capsule (light "reflecting" down onto the bar)
-- [ ] Animation is fluid, 0.35s spring with slight overshoot
-- [ ] Capsule width is proportional to icon width (not the full tab width)
-- [ ] Glow doesn't bleed into adjacent tab icons
+- [x] Glowing capsule moves smoothly between tabs using `matchedGeometryEffect`
+- [x] Capsule has a gradient fill (turquoise → teal — ocean signature)
+- [x] Shadow creates a glow effect below the capsule (light "reflecting" down onto the bar)
+- [x] Animation is fluid, 0.35s spring with slight overshoot
+- [x] Capsule width is proportional to icon width (not the full tab width)
+- [x] Glow doesn't bleed into adjacent tab icons
 
 ---
 
@@ -983,10 +983,10 @@ Title shadow: caribbeanPlum @ 0.10, radius 8
 
 **Acceptance Criteria:**
 - [ ] Nav bar has subtle translucency — content scrolling beneath is faintly visible
-- [ ] Bottom edge has a warm gradient line (not a plain grey separator)
-- [ ] Gradient line has a soft glow below it, creating depth
-- [ ] Title text gradient has a faint warm shadow/glow behind it
-- [ ] Subtitle text in `caribbeanPlum` maintains excellent readability
+- [x] Bottom edge has a warm gradient line (not a plain grey separator)
+- [x] Gradient line has a soft glow below it, creating depth
+- [x] Title text gradient has a faint warm shadow/glow behind it
+- [x] Subtitle text in `caribbeanPlum` maintains excellent readability
 - [ ] Nav bar scrolled state (content behind it) looks correct with material blur applied
 - [ ] Large title → small title transition (if applicable) maintains premium treatment
 
@@ -1026,18 +1026,18 @@ Right bar buttons (if any):
 #### Subtask 3.3.1: Status Bar Colour Coordination
 
 **Acceptance Criteria:**
-- [ ] Status bar text uses dark appearance (`.statusBarStyle = .darkContent`) for readability on light background
-- [ ] Safe area background matches nav bar material treatment — no color discontinuity at the notch/dynamic island border
-- [ ] On screens with the Caribbean sunset background (Dashboard), status bar icons remain readable
-- [ ] Scroll-to-top behavior works correctly with the new nav bar material
+- [x] Status bar text uses dark appearance (`.statusBarStyle = .darkContent`) for readability on light background
+- [x] Safe area background matches nav bar material treatment — no color discontinuity at the notch/dynamic island border
+- [x] On screens with the Caribbean sunset background (Dashboard), status bar icons remain readable
+- [x] Scroll-to-top behavior works correctly with the new nav bar material
 
 #### Subtask 3.3.2: Bottom Safe Area Treatment
 
 **Acceptance Criteria:**
-- [ ] Bottom safe area (below tab bar, home indicator region) matches tab bar background treatment
-- [ ] No harsh line between tab bar and home indicator area
-- [ ] The warm material extends fully into the safe area
-- [ ] Home indicator is visible against the tab bar background
+- [x] Bottom safe area (below tab bar, home indicator region) matches tab bar background treatment
+- [x] No harsh line between tab bar and home indicator area
+- [x] The warm material extends fully into the safe area
+- [x] Home indicator is visible against the tab bar background
 
 ---
 
@@ -1069,20 +1069,20 @@ Sheet background:
 
 **Acceptance Criteria:**
 - [ ] Sheet dimming layer is warm (aubergine-tinted), not cold black
-- [ ] Sheet surface matches overall Caribbean canvas warmth
+- [x] Sheet surface matches overall Caribbean canvas warmth
 - [ ] Handle pill is visible and warm-tinted (not grey)
 - [ ] Inner top glow creates a "caught the light" effect on the sheet edge
 - [ ] Shadow behind sheet creates depth, making it feel elevated above the dimmed content
-- [ ] Sheet dismiss gesture (swipe down) animation is smooth
+- [x] Sheet dismiss gesture (swipe down) animation is smooth
 - [ ] Content behind the sheet is visible through the warm dimming (not fully obscured)
 
 #### Subtask 3.4.2: Design Full-Screen Modal Light Mode Treatment
 
 **Acceptance Criteria:**
-- [ ] Full-screen modals use `caribbeanCanvas` base with nav bar treatment from Story 3.2
+- [x] Full-screen modals use `caribbeanCanvas` base with nav bar treatment from Story 3.2
 - [ ] Close button (X) uses `caribbeanIconSecondary` with `caribbeanHover` background circle
 - [ ] Transition animation: scale up from 0.94 with opacity fade (gentle "rising" feel)
-- [ ] Modal doesn't feel disconnected from the main app — same color family, same warmth
+- [x] Modal doesn't feel disconnected from the main app — same color family, same warmth
 
 ---
 
@@ -1107,10 +1107,10 @@ Sheet background:
 | Achievement | `.notificationSuccess` + `.rigid` | Double-tap celebration |
 
 **Acceptance Criteria:**
-- [ ] All navigation haptics fire consistently (no missed triggers)
-- [ ] Haptic intensity matches visual feedback intensity
-- [ ] Haptics respect system haptic settings (silent mode, etc.)
-- [ ] No haptic on scroll or passive viewing — only on user-initiated actions
+- [x] All navigation haptics fire consistently (no missed triggers)
+- [x] Haptic intensity matches visual feedback intensity
+- [x] Haptics respect system haptic settings (silent mode, etc.)
+- [x] No haptic on scroll or passive viewing — only on user-initiated actions
 
 ---
 

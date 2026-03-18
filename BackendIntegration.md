@@ -52,16 +52,19 @@ The backend serves three distinct roles:
 │  │ (JWT verify) │  │  Resolver    │  │  (RevenueCat webhooks)   │ │
 │  └─────────────┘  └──────────────┘  └──────────────────────────┘ │
 │  ┌─────────────┐  ┌──────────────┐  ┌──────────────────────────┐ │
-│  │ Feature Flags│  │ Admin API    │  │  Background Jobs         │ │
-│  │ Engine       │  │ (React SPA)  │  │  (Sidekiq + Redis)       │ │
+│  │ Feature Flags│  │ Public API   │  │  Background Jobs         │ │
+│  │ Engine       │  │ + Admin API  │  │  (Sidekiq + Redis)       │ │
 │  └─────────────┘  └──────────────┘  └──────────────────────────┘ │
-└──────────────────────────┬───────────────────────────────────────┘
-                           │
-              ┌────────────▼────────────┐
-              │   PostgreSQL + Redis     │
-              │   (Source of Truth)      │
-              └─────────────────────────┘
+└─────────┬────────────────┬──────────────────┬────────────────────┘
+          │                │                  │
+┌─────────▼────────┐ ┌────▼───────────┐ ┌────▼────────────────────┐
+│  PostgreSQL      │ │ lumen-lingo-   │ │ lumen-lingo-admin-      │
+│  + Redis         │ │ frontend       │ │ frontend                │
+│ (Source of Truth)│ │ (Customer Web) │ │ (Admin Dashboard)       │
+└──────────────────┘ └────────────────┘ └─────────────────────────┘
 ```
+
+> **Four applications, one backend:** The iOS app, customer frontend (`lumen-lingo-frontend`), and admin frontend (`lumen-lingo-admin-frontend`) all communicate with the same `lumen-lingo-backend` Rails API. All four applications target the same five environments (dev, qa, uat, pre-prod, prod) with consistent naming and URL conventions.
 
 ### 0.4 Technology Decisions
 
@@ -75,7 +78,8 @@ The backend serves three distinct roles:
 | Orchestration | Kubernetes | 1.30+ | Horizontal scaling, rolling deployments, health checks, secrets management |
 | Auth Provider | Firebase Authentication | Latest | Apple Sign-In, Google, social login — pre-built identity without building auth infra |
 | Subscription Provider | RevenueCat | Latest | Handles App Store receipt validation, subscription lifecycle, cross-platform entitlements |
-| Admin Frontend | React 19 + Tailwind CSS 4 | Latest | Component-driven SPA, utility-first styling, fast iteration |
+| Admin Frontend | React 19 + Tailwind CSS 4 | Latest | Component-driven SPA (`lumen-lingo-admin-frontend`), utility-first styling, fast iteration |
+| Customer Frontend | React 19 + Tailwind CSS 4 | Latest | Product website SPA (`lumen-lingo-frontend`), marketing, pricing, download links |
 | API Documentation | OpenAPI 3.1 | — | Machine-readable contracts, client codegen, request validation |
 
 ---
@@ -85,10 +89,10 @@ The backend serves three distinct roles:
 ### EPIC: Repository Foundation & Developer Experience
 
 **Goal:**
-Establish a monorepo structure that houses the Rails API, admin frontend, infrastructure-as-code, and shared tooling under a single repository with clear boundaries, enforced code ownership, and Makefile-driven developer workflows that eliminate onboarding friction.
+Establish a monorepo structure that houses the Rails API, customer frontend (`lumen-lingo-frontend`), admin frontend (`lumen-lingo-admin-frontend`), infrastructure-as-code, and shared tooling under a single repository with clear boundaries, enforced code ownership, and Makefile-driven developer workflows that eliminate onboarding friction.
 
 **Rationale:**
-A monorepo ensures atomic commits across API + admin frontend, shared CI/CD pipelines, and unified versioning. Separate repos for a team this size would introduce coordination overhead without proportional benefit. The Makefile abstraction means engineers never need to remember Docker Compose flags, migration commands, or test invocations — every action is a single `make` target.
+A monorepo ensures atomic commits across API + both frontends, shared CI/CD pipelines, and unified versioning. Separate repos for a team this size would introduce coordination overhead without proportional benefit. The two frontend applications serve distinct audiences — `lumen-lingo-frontend` is the public customer-facing product website (marketing, feature showcase, download links, pricing), while `lumen-lingo-admin-frontend` is the internal admin dashboard for user management, entitlement overrides, and system configuration. Despite their different purposes, they share the same backend and benefit from monorepo co-location. The Makefile abstraction means engineers never need to remember Docker Compose flags, migration commands, or test invocations — every action is a single `make` target.
 
 **Success Metrics:**
 - New engineer from clone to running test suite: < 10 minutes
@@ -101,26 +105,30 @@ A monorepo ensures atomic commits across API + admin frontend, shared CI/CD pipe
 Create the canonical directory structure for the lumen-lingo-backend monorepo. Every directory must have a clear owner and purpose. No orphan files at root level except dotfiles and the Makefile.
 
 **Acceptance Criteria:**
-- [ ] Repository root contains exactly: `api/`, `admin/`, `infra/`, `docs/`, `scripts/`, `.github/`, `Makefile`, `docker-compose.yml`, `docker-compose.override.yml`, `.env.example`, `.gitignore`, `README.md`
+- [ ] Repository root contains exactly: `api/`, `frontend/`, `admin/`, `infra/`, `docs/`, `scripts/`, `.github/`, `Makefile`, `docker-compose.yml`, `docker-compose.override.yml`, `.env.example`, `.gitignore`, `README.md`
 - [ ] `api/` contains a Rails 8.0+ API-only application with standard Rails directory structure
-- [ ] `admin/` contains a Vite-based React 19 + Tailwind CSS 4 application
+- [ ] `frontend/` contains a Vite-based React 19 + Tailwind CSS 4 application — the **customer-facing product website** (`lumen-lingo-frontend`): marketing pages, feature showcase, pricing, download links, blog
+- [ ] `admin/` contains a Vite-based React 19 + Tailwind CSS 4 application — the **internal admin dashboard** (`lumen-lingo-admin-frontend`): user management, entitlement overrides, feature flags, system config
 - [ ] `infra/` contains `k8s/`, `terraform/`, and `docker/` subdirectories
 - [ ] `docs/` contains `openapi/`, `architecture/`, and `runbooks/` subdirectories
 - [ ] `scripts/` contains developer utility scripts (seed, migrate, deploy helpers)
 - [ ] `.github/` contains CI workflows, PR templates, and CODEOWNERS
-- [ ] CODEOWNERS file maps `api/**` to `@backend-team`, `admin/**` to `@frontend-team`, `infra/**` to `@platform-team`
+- [ ] CODEOWNERS file maps `api/**` to `@backend-team`, `frontend/**` to `@frontend-team`, `admin/**` to `@frontend-team`, `infra/**` to `@platform-team`
 
 **Technical Notes:**
 - Rails app generated with `rails new api --api --database=postgresql --skip-javascript --skip-asset-pipeline --skip-action-mailer --skip-action-mailbox --skip-action-text --skip-active-storage`
-- Admin app generated with `npm create vite@latest admin -- --template react`
-- Docker Compose defines services: `api`, `admin`, `postgres`, `redis`, `sidekiq`
+- Customer frontend generated with `npm create vite@latest frontend -- --template react` (app name: `lumen-lingo-frontend`)
+- Admin frontend generated with `npm create vite@latest admin -- --template react` (app name: `lumen-lingo-admin-frontend`)
+- Docker Compose defines services: `api`, `frontend`, `admin`, `postgres`, `redis`, `sidekiq`
 
 **Subtasks:**
 - Generate Rails API-only application in `api/`
-- Generate React + Vite application in `admin/`
+- Generate React + Vite customer frontend in `frontend/` (`lumen-lingo-frontend`)
+- Generate React + Vite admin frontend in `admin/` (`lumen-lingo-admin-frontend`)
 - Create `infra/docker/Dockerfile.api` (multi-stage: build + runtime)
+- Create `infra/docker/Dockerfile.frontend` (multi-stage: build + nginx)
 - Create `infra/docker/Dockerfile.admin` (multi-stage: build + nginx)
-- Create `docker-compose.yml` with all five services
+- Create `docker-compose.yml` with all six services
 - Create `docker-compose.override.yml` for local volume mounts and debug ports
 - Create `.env.example` with all required environment variables (values as `CHANGE_ME`)
 - Create CODEOWNERS file
@@ -135,8 +143,9 @@ Create a Makefile that abstracts every developer action into memorable, discover
 - [ ] `make up` — starts all services in foreground with log tailing
 - [ ] `make down` — stops all services, preserves volumes
 - [ ] `make test` — runs full API test suite (RSpec) inside container
+- [ ] `make test-frontend` — runs customer frontend tests (Vitest) inside container
 - [ ] `make test-admin` — runs admin frontend tests (Vitest) inside container
-- [ ] `make lint` — runs Rubocop + ESLint + Prettier across both apps
+- [ ] `make lint` — runs Rubocop + ESLint + Prettier across all three apps (api, frontend, admin)
 - [ ] `make console` — opens Rails console inside running API container
 - [ ] `make db-migrate` — runs pending migrations
 - [ ] `make db-rollback` — rolls back last migration
@@ -230,10 +239,39 @@ Create a production-grade Docker image for the Rails API that uses multi-stage b
 - Add `/health` endpoint that checks DB + Redis connectivity
 - Verify image builds and passes health check locally
 
-#### Story: Build Admin Frontend Docker Image
+#### Story: Build Customer Frontend Docker Image (`lumen-lingo-frontend`)
 
 **Description:**
-Create a Docker image for the React admin panel that builds the SPA and serves it via Nginx with security headers.
+Create a Docker image for the customer-facing product website that builds the SPA and serves it via Nginx with security headers. This is the public website (`lumen-lingo-frontend`) that showcases the product, pricing, download links, and marketing content.
+
+**Acceptance Criteria:**
+- [ ] `infra/docker/Dockerfile.frontend` uses multi-stage: `builder` (Node 22) compiles assets, `runtime` (nginx:alpine) serves static files
+- [ ] Nginx config includes security headers: `X-Frame-Options: SAMEORIGIN`, `X-Content-Type-Options: nosniff`, `Content-Security-Policy` (allows images, fonts, analytics), `Strict-Transport-Security`
+- [ ] All routes fallback to `index.html` (SPA routing)
+- [ ] Image size < 50MB
+- [ ] Gzip compression enabled for JS, CSS, SVG, JSON, images
+- [ ] API proxy from `/api/*` to backend service (configurable via env) — for pricing/subscription status checks
+- [ ] Non-root Nginx process (user `nginx`, UID 101)
+- [ ] SEO: pre-rendered meta tags injected at build time for key marketing pages
+
+**Technical Notes:**
+- Vite build output goes to `/usr/share/nginx/html`
+- Nginx config injected from `infra/docker/nginx/frontend.conf`
+- Use `envsubst` at container start to template `API_BASE_URL` into Nginx config
+- Cache busting via Vite's content-hashed filenames
+- CSP is more permissive than admin (allows analytics scripts, external images, fonts)
+
+**Subtasks:**
+- Create `infra/docker/Dockerfile.frontend`
+- Create `infra/docker/nginx/frontend.conf` with security headers and SPA fallback
+- Create `frontend/.dockerignore`
+- Add entrypoint script for environment variable substitution
+- Verify static assets served correctly with security headers
+
+#### Story: Build Admin Frontend Docker Image (`lumen-lingo-admin-frontend`)
+
+**Description:**
+Create a Docker image for the React admin panel (`lumen-lingo-admin-frontend`) that builds the SPA and serves it via Nginx with security headers.
 
 **Acceptance Criteria:**
 - [ ] `infra/docker/Dockerfile.admin` uses multi-stage: `builder` (Node 22) compiles assets, `runtime` (nginx:alpine) serves static files
@@ -260,19 +298,20 @@ Create a Docker image for the React admin panel that builds the SPA and serves i
 #### Story: Define Docker Compose Development Environment
 
 **Description:**
-Create a Docker Compose configuration that spins up the complete development stack with hot-reload for both API and admin, persistent database volumes, and correct networking.
+Create a Docker Compose configuration that spins up the complete development stack with hot-reload for API, customer frontend, and admin frontend, persistent database volumes, and correct networking.
 
 **Acceptance Criteria:**
-- [ ] `docker-compose.yml` defines services: `api`, `admin`, `postgres`, `redis`, `sidekiq`
+- [ ] `docker-compose.yml` defines services: `api`, `frontend`, `admin`, `postgres`, `redis`, `sidekiq`
 - [ ] `api` service mounts `./api` as volume for hot-reload (no rebuild on code change)
-- [ ] `admin` service mounts `./admin/src` as volume for Vite HMR
+- [ ] `frontend` service mounts `./frontend/src` as volume for Vite HMR (`lumen-lingo-frontend`)
+- [ ] `admin` service mounts `./admin/src` as volume for Vite HMR (`lumen-lingo-admin-frontend`)
 - [ ] `postgres` uses named volume `ll_pgdata` for persistence across restarts
 - [ ] `redis` uses named volume `ll_redis_data` for persistence
 - [ ] `sidekiq` shares the same image as `api` but runs `bundle exec sidekiq`
 - [ ] All services on shared network `ll_network`
 - [ ] Health checks defined for `postgres` (pg_isready) and `redis` (redis-cli ping)
 - [ ] `api` and `sidekiq` depend on `postgres` and `redis` with `condition: service_healthy`
-- [ ] Port mappings: api→3000, admin→5173, postgres→5432, redis→6379
+- [ ] Port mappings: api→3000, frontend→5173, admin→5174, postgres→5432, redis→6379
 
 **Technical Notes:**
 - `docker-compose.override.yml` adds debug ports and verbose logging (not committed to CI)
@@ -283,19 +322,20 @@ Create a Docker Compose configuration that spins up the complete development sta
 - Create `docker-compose.yml` with all services
 - Create `docker-compose.override.yml` for local development overrides
 - Verify `make up` brings all services to healthy state
-- Verify hot-reload works for both API and admin
+- Verify hot-reload works for API, customer frontend, and admin frontend
 - Document port mappings in README
 
 #### Story: Define Kubernetes Manifests for Production
 
 **Description:**
-Create Kubernetes manifests that deploy the API, admin, Sidekiq workers, and configure ingress, autoscaling, and resource limits. Manifests are templated with environment-specific values injected at deploy time.
+Create Kubernetes manifests that deploy the API, customer frontend, admin frontend, Sidekiq workers, and configure ingress, autoscaling, and resource limits. Manifests are templated with environment-specific values injected at deploy time.
 
 **Acceptance Criteria:**
-- [ ] `infra/k8s/base/` contains: `api-deployment.yml`, `api-service.yml`, `admin-deployment.yml`, `admin-service.yml`, `sidekiq-deployment.yml`, `ingress.yml`, `hpa.yml`
+- [ ] `infra/k8s/base/` contains: `api-deployment.yml`, `api-service.yml`, `frontend-deployment.yml`, `frontend-service.yml`, `admin-deployment.yml`, `admin-service.yml`, `sidekiq-deployment.yml`, `ingress.yml`, `hpa.yml`
 - [ ] API deployment: 2 replicas minimum, 8 maximum, resource requests `256Mi/250m`, limits `512Mi/500m`
 - [ ] Sidekiq deployment: 2 replicas minimum, 4 maximum, resource requests `512Mi/250m`, limits `1Gi/500m`
-- [ ] Admin deployment: 2 replicas minimum, 4 maximum, resource requests `64Mi/50m`, limits `128Mi/100m`
+- [ ] Frontend deployment (`lumen-lingo-frontend`): 2 replicas minimum, 6 maximum, resource requests `64Mi/50m`, limits `128Mi/100m`
+- [ ] Admin deployment (`lumen-lingo-admin-frontend`): 2 replicas minimum, 4 maximum, resource requests `64Mi/50m`, limits `128Mi/100m`
 - [ ] HPA scales API on CPU > 70% average
 - [ ] Readiness probe: `GET /health` every 10s, failure threshold 3
 - [ ] Liveness probe: `GET /health` every 30s, failure threshold 5
@@ -305,7 +345,7 @@ Create Kubernetes manifests that deploy the API, admin, Sidekiq workers, and con
 
 **Technical Notes:**
 - Use Kustomize for environment overlays (not Helm — reduces templating complexity)
-- Each overlay patches: replica count, resource limits, ingress hostname, image tag
+- Each overlay patches: replica count, resource limits, ingress hostnames (api, frontend, admin), image tags
 - Secrets reference external secrets operator (placeholder for Vault/AWS Secrets Manager)
 - Pod disruption budget: `minAvailable: 1` for API in production
 
@@ -340,6 +380,80 @@ Define the complete environment isolation model. Each environment must be fully 
 - Create per-environment config files
 - Create `docs/secrets/` with example files for each environment
 - Document environment isolation model in `docs/architecture/environments.md`
+
+#### Story: Cross-Application Environment Consistency Matrix
+
+**Description:**
+Define and enforce a unified environment model across all four applications in the Lumen Lingo ecosystem: `lumen-lingo-backend` (Rails API), `lumen-lingo-frontend` (customer website), `lumen-lingo-admin-frontend` (admin dashboard), and the iOS app (`LumenLingo`). Every application must target the same five environments (dev, qa, uat, pre-prod, prod) with consistent naming, URLs, and infrastructure isolation.
+
+**Rationale:**
+Environment inconsistency is the root cause of silent cross-application bugs — where the frontend talks to a different backend environment than intended, or the iOS app is built against the wrong API URL. By establishing a single canonical environment matrix and validation checks, we ensure that all four applications always align on their target environment.
+
+**Acceptance Criteria:**
+- [ ] All four applications share the same five environment names: `dev`, `qa`, `uat`, `pre-prod`, `prod`
+- [ ] Canonical DNS hostnames per environment:
+
+| Environment | Backend API | Customer Frontend | Admin Frontend | iOS API Base URL |
+|-------------|-------------|-------------------|----------------|------------------|
+| `dev` | `localhost:3000` | `localhost:5173` | `localhost:5174` | `localhost:3000` (simulator) |
+| `qa` | `api.qa.lumenlingo.com` | `qa.lumenlingo.com` | `admin.qa.lumenlingo.com` | `api.qa.lumenlingo.com` |
+| `uat` | `api.uat.lumenlingo.com` | `uat.lumenlingo.com` | `admin.uat.lumenlingo.com` | `api.uat.lumenlingo.com` |
+| `pre-prod` | `api.pre-prod.lumenlingo.com` | `pre-prod.lumenlingo.com` | `admin.pre-prod.lumenlingo.com` | `api.pre-prod.lumenlingo.com` |
+| `prod` | `api.lumenlingo.com` | `lumenlingo.com` | `admin.lumenlingo.com` | `api.lumenlingo.com` |
+
+- [ ] Environment selection mechanism per application:
+  - **Backend (`lumen-lingo-backend`):** `LUMEN_ENV` environment variable — drives DB, Redis, Firebase project, RevenueCat keys
+  - **Customer Frontend (`lumen-lingo-frontend`):** `VITE_LUMEN_ENV` build-time variable → selects API base URL, Firebase config, analytics ID
+  - **Admin Frontend (`lumen-lingo-admin-frontend`):** `VITE_LUMEN_ENV` build-time variable → selects admin API base URL, Firebase config
+  - **iOS (`LumenLingo`):** `APIEnvironment` Swift enum (`.development`, `.qa`, `.uat`, `.preProd`, `.production`) — selected via `.xcconfig` file per build scheme
+
+- [ ] Each environment has a dedicated Firebase project — shared across all four applications targeting that environment:
+  - `lumen-lingo-dev` (Firebase project for dev)
+  - `lumen-lingo-qa` (Firebase project for qa)
+  - `lumen-lingo-uat` (Firebase project for uat)
+  - `lumen-lingo-pre-prod` (Firebase project for pre-prod)
+  - `lumen-lingo-prod` (Firebase project for prod)
+
+- [ ] Each environment has a dedicated RevenueCat app — iOS app and backend share the same RevenueCat app per environment
+
+- [ ] CI/CD enforces environment alignment:
+  - Customer frontend and admin frontend Docker images are built with `VITE_LUMEN_ENV` matching the target Kubernetes namespace
+  - iOS builds use scheme-specific `.xcconfig` files that set `API_BASE_URL` and `FIREBASE_PROJECT_ID`
+  - Backend deployment reads `LUMEN_ENV` from Kubernetes namespace ConfigMap
+
+- [ ] Validation check: `scripts/validate-env-alignment.sh` — verifies that frontend `.env` files, backend credentials, K8s overlays, and iOS `.xcconfig` files all reference the same Firebase project ID and API URLs for each environment
+
+**Technical Notes:**
+- `VITE_LUMEN_ENV` prefix is required for Vite to expose the variable to client-side code (Vite only exposes `VITE_` prefixed env vars)
+- iOS `.xcconfig` files: `LumenLingo/Config/Dev.xcconfig`, `LumenLingo/Config/QA.xcconfig`, etc. — referenced by Xcode build scheme
+- iOS `APIEnvironment.swift` maps each case to its base URL:
+```swift
+enum APIEnvironment {
+    case development, qa, uat, preProd, production
+
+    var baseURL: URL {
+        switch self {
+        case .development: URL(string: "http://localhost:3000")!
+        case .qa:          URL(string: "https://api.qa.lumenlingo.com")!
+        case .uat:         URL(string: "https://api.uat.lumenlingo.com")!
+        case .preProd:     URL(string: "https://api.pre-prod.lumenlingo.com")!
+        case .production:  URL(string: "https://api.lumenlingo.com")!
+        }
+    }
+}
+```
+- Frontend environment config files: `frontend/.env.dev`, `frontend/.env.qa`, `frontend/.env.uat`, `frontend/.env.pre-prod`, `frontend/.env.prod` — Vite loads the appropriate file via `--mode` flag
+- Admin environment config files: `admin/.env.dev`, `admin/.env.qa`, `admin/.env.uat`, `admin/.env.pre-prod`, `admin/.env.prod`
+- Each frontend `.env.<env>` file contains: `VITE_LUMEN_ENV`, `VITE_API_URL`, `VITE_FIREBASE_PROJECT_ID`, `VITE_FIREBASE_API_KEY`, `VITE_FIREBASE_AUTH_DOMAIN`
+
+**Subtasks:**
+- Create `docs/architecture/environment-matrix.md` with the canonical hostname table
+- Create frontend `.env.<env>` template files for all five environments
+- Create admin `.env.<env>` template files for all five environments
+- Create iOS `.xcconfig` files for all five environments
+- Create `scripts/validate-env-alignment.sh` validation script
+- Document environment selection mechanisms in each application's README
+- Add CI step to run `scripts/validate-env-alignment.sh` on every PR
 
 ---
 
@@ -1220,7 +1334,9 @@ Define the API contract for syncing practice session data between iOS and the ba
 
 ---
 
-## 9. Frontend Admin (React + Tailwind)
+## 9. Admin Frontend — `lumen-lingo-admin-frontend` (React + Tailwind)
+
+> **Note:** This section covers the **admin dashboard** (`lumen-lingo-admin-frontend`). The customer-facing product website (`lumen-lingo-frontend`) is a separate application in the `frontend/` directory — its content (marketing pages, pricing, download links) is defined outside this backend specification. Both frontends share the same five environments (dev, qa, uat, pre-prod, prod) and the same backend API.
 
 ### EPIC: Admin Dashboard — User Operations & System Visibility
 
@@ -1239,7 +1355,7 @@ An admin panel is the operational backbone of any subscription-based product. Wi
 #### Story: Set Up Admin Application Architecture
 
 **Description:**
-Scaffold the React admin application with a clean component architecture, routing, authentication, and API client. The admin app is a standalone SPA served via its own Docker container (Nginx), communicating with the backend via the admin API.
+Scaffold the React admin application (`lumen-lingo-admin-frontend`) with a clean component architecture, routing, authentication, and API client. The admin app is a standalone SPA served via its own Docker container (Nginx), communicating with the backend via the admin API.
 
 **Acceptance Criteria:**
 - [ ] Vite + React 19 project in `admin/` directory
@@ -1264,7 +1380,7 @@ Scaffold the React admin application with a clean component architecture, routin
 **Technical Notes:**
 - Admin JWT is a separate token from Firebase JWT — issued via passwordless flow: `POST /admin/api/v1/auth/request-otp` (sends 6-digit OTP to admin email) → `POST /admin/api/v1/auth/verify-otp` (validates OTP, returns JWT). No passwords anywhere in the system
 - JWT stored in httpOnly secure cookie — immune to XSS extraction
-- API base URL from `VITE_ADMIN_API_URL` environment variable (injected at build time)
+- API base URL from `VITE_ADMIN_API_URL` environment variable (injected at build time per environment via `admin/.env.<LUMEN_ENV>`)
 - Component library: headless UI (Radix primitives or similar) + custom Tailwind styling — no heavy component framework
 - State management: React Query (TanStack Query) for server state, React context for UI state
 
@@ -1487,7 +1603,7 @@ Define the secrets management approach for all environments. Development uses `.
 - [ ] **CI**: secrets set in GitHub Actions repository secrets, injected as environment variables in workflow steps
 - [ ] **Kubernetes (qa through prod)**: secrets stored in Kubernetes Secrets objects, mounted as environment variables in pod specs
 - [ ] Pre-commit hook: `scripts/check-secrets.sh` scans staged files for patterns matching API keys, tokens, credentials (regex-based, runs in < 1s)
-- [ ] CI step: `bundler-audit` checks for vulnerable gem versions, `npm audit` checks admin frontend
+- [ ] CI step: `bundler-audit` checks for vulnerable gem versions, `npm audit` checks both customer frontend and admin frontend
 - [ ] Secret rotation procedure documented: `docs/runbooks/secret-rotation.md` with step-by-step for each secret type (Firebase service account, RevenueCat keys, DB credentials, Redis credentials, admin JWT signing key, OTP HMAC secret)
 - [ ] Secrets inventory: `docs/secrets/inventory.md` lists every secret, which environments use it, rotation frequency, and owner
 
@@ -1630,7 +1746,7 @@ Deploy rate limiting at multiple levels: global (infrastructure), per-IP, and pe
 #### Story: Implement Secure HTTP Headers & CORS Policy
 
 **Description:**
-Configure all HTTP responses with security headers that prevent XSS, clickjacking, MIME sniffing, and other client-side attacks. Define CORS policy that allows only the admin SPA to make cross-origin requests; iOS native requests do not require CORS.
+Configure all HTTP responses with security headers that prevent XSS, clickjacking, MIME sniffing, and other client-side attacks. Define CORS policy that allows the customer frontend (`lumen-lingo-frontend`) and admin frontend (`lumen-lingo-admin-frontend`) to make cross-origin requests; iOS native requests do not require CORS.
 
 **Acceptance Criteria:**
 - [ ] All API responses include:
@@ -1642,7 +1758,7 @@ Configure all HTTP responses with security headers that prevent XSS, clickjackin
   - `Referrer-Policy: strict-origin-when-cross-origin` — limits referrer information leakage
   - `Permissions-Policy: camera=(), microphone=(), geolocation=()` — disables browser features
   - `Cache-Control: no-store` — on authenticated responses (prevents caching of user data)
-- [ ] CORS policy: `Access-Control-Allow-Origin` set to admin panel domain only (e.g., `https://admin.lumenlingo.com`)
+- [ ] CORS policy: `Access-Control-Allow-Origin` set to allowed frontend domains only — `https://lumenlingo.com` (customer frontend) and `https://admin.lumenlingo.com` (admin frontend). Per-environment origin allowlist; never wildcard.
 - [ ] CORS credentials: `Access-Control-Allow-Credentials: true` (for httpOnly cookie auth)
 - [ ] CORS allowed methods: `GET, POST, PATCH, DELETE, OPTIONS`
 - [ ] CORS allowed headers: `Content-Type, Authorization, X-Request-Id, X-Client-Version, X-Platform, If-None-Match`
@@ -1651,7 +1767,7 @@ Configure all HTTP responses with security headers that prevent XSS, clickjackin
 
 **Technical Notes:**
 - Headers applied via Rails middleware: `config/initializers/security_headers.rb`
-- CORS via `rack-cors` gem: configured per-environment (dev allows `localhost:5173`, prod allows only admin domain)
+- CORS via `rack-cors` gem: configured per-environment (dev allows `localhost:5173` for customer frontend + `localhost:5174` for admin frontend, prod allows only `lumenlingo.com` + `admin.lumenlingo.com`)
 - `Cache-Control: no-store` on user-specific endpoints prevents CDN/proxy caching of authenticated data
 - `HSTS preload` requires domain submission to hstspreload.org — add to deployment checklist
 
@@ -2240,20 +2356,25 @@ Set up the CI pipeline that runs on every push and pull request. The pipeline va
   - `rubocop --parallel` (Ruby style + security cops)
   - `brakeman --no-pager` (Rails security static analysis)
   - `bundler-audit check` (vulnerable gem detection)
-  - `eslint` on admin frontend (JS/TS linting)
+  - `eslint` on customer frontend `frontend/` (JS/TS linting)
+  - `eslint` on admin frontend `admin/` (JS/TS linting)
+  - `npm audit --production` on customer frontend (vulnerable npm packages)
   - `npm audit --production` on admin frontend (vulnerable npm packages)
 - [ ] **Test step** (parallel, depends on lint):
   - `rspec --format progress --format RspecJunitFormatter --out test-results/rspec.xml`
-  - Parallelised across 3 CI nodes using `parallel_tests`
+  - `vitest run` on customer frontend (component and integration tests)
+  - `vitest run` on admin frontend (component and integration tests)
+  - Parallelised across 3 CI nodes using `parallel_tests` (backend)
   - PostgreSQL 16 and Redis 7 service containers
-  - Coverage report uploaded as CI artifact
-  - Minimum coverage threshold: 90% (fails if below)
+  - Coverage report uploaded as CI artifact (backend ≥ 90%, each frontend ≥ 80%)
+  - Minimum coverage threshold: fails if below
 - [ ] **Build step** (depends on test):
   - Docker multi-stage build for API image
-  - Docker build for admin frontend image (Nginx + static assets)
+  - Docker build for customer frontend image (`lumen-lingo-frontend` — Nginx + static assets)
+  - Docker build for admin frontend image (`lumen-lingo-admin-frontend` — Nginx + static assets)
   - Images tagged: `<sha>`, `latest`, `<branch-name>`
   - Images pushed to container registry (GitHub Container Registry or AWS ECR)
-  - Image vulnerability scan: `trivy image scan` — fails on critical/high CVEs
+  - Image vulnerability scan: `trivy image scan` — fails on critical/high CVEs (all three images)
 - [ ] **PR status checks**: all steps required for merge (branch protection rule)
 - [ ] **Caching**: Ruby gem cache, Node modules cache, Docker layer cache (BuildKit)
 - [ ] CI duration target: < 8 minutes total
@@ -2267,9 +2388,9 @@ Set up the CI pipeline that runs on every push and pull request. The pipeline va
 
 **Subtasks:**
 - Create `.github/workflows/ci.yml` with all steps
-- Configure lint jobs (rubocop, brakeman, bundler-audit, eslint, npm audit)
-- Configure test jobs with service containers and parallelisation
-- Configure Docker build and push steps
+- Configure lint jobs (rubocop, brakeman, bundler-audit, eslint for both frontends, npm audit for both frontends)
+- Configure test jobs with service containers and parallelisation (backend + both frontend Vitest suites)
+- Configure Docker build and push steps (3 images: api, frontend, admin)
 - Add Trivy vulnerability scanning
 - Configure caching (gems, node_modules, Docker layers)
 - Set up branch protection rules requiring CI pass
@@ -2284,7 +2405,7 @@ Create the deployment pipeline that promotes a validated build through environme
 - [ ] `.github/workflows/deploy.yml` triggered on: push to `main` (after CI passes)
 - [ ] **Deploy to dev** (automatic):
   - `kustomize build infra/k8s/overlays/dev | kubectl apply`
-  - Wait for rollout: `kubectl rollout status deployment/lumen-api --timeout=120s`
+  - Wait for rollout: `kubectl rollout status deployment/lumen-api --timeout=120s`, `kubectl rollout status deployment/lumen-frontend --timeout=60s`, `kubectl rollout status deployment/lumen-admin --timeout=60s`
   - Run smoke tests: `scripts/smoke-test.sh dev` (health check, auth endpoint, entitlements endpoint)
   - On failure: rollback (`kubectl rollout undo`) + Slack alert
 - [ ] **Deploy to qa** (automatic, after dev smoke passes):
@@ -2593,7 +2714,18 @@ Design a plugin architecture that allows new feature modules (content types, pra
 | `PAGERDUTY_API_KEY` | No | Prod | PagerDuty alert integration |
 | `AI_SERVICE_URL` | No | All | AI microservice base URL |
 | `AI_SERVICE_API_KEY` | No | All | AI service authentication key |
-| `VITE_ADMIN_API_URL` | Yes (admin) | All | Admin SPA API base URL |
+| | | | **Customer Frontend (`lumen-lingo-frontend`)** |
+| `VITE_LUMEN_ENV` | Yes (frontend) | All | Environment name — drives API URL, Firebase config selection |
+| `VITE_API_URL` | Yes (frontend) | All | Customer frontend → backend API base URL |
+| `VITE_FIREBASE_PROJECT_ID` | Yes (frontend) | All | Firebase project ID for customer auth |
+| `VITE_FIREBASE_API_KEY` | Yes (frontend) | All | Firebase web API key |
+| `VITE_FIREBASE_AUTH_DOMAIN` | Yes (frontend) | All | Firebase auth domain |
+| | | | **Admin Frontend (`lumen-lingo-admin-frontend`)** |
+| `VITE_LUMEN_ENV` | Yes (admin) | All | Environment name — drives admin API URL, Firebase config selection |
+| `VITE_ADMIN_API_URL` | Yes (admin) | All | Admin SPA → backend admin API base URL |
+| `VITE_FIREBASE_PROJECT_ID` | Yes (admin) | All | Firebase project ID for admin auth |
+| `VITE_FIREBASE_API_KEY` | Yes (admin) | All | Firebase web API key |
+| `VITE_FIREBASE_AUTH_DOMAIN` | Yes (admin) | All | Firebase auth domain |
 
 ---
 
