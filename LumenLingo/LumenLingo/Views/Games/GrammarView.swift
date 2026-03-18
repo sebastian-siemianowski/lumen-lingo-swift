@@ -277,7 +277,7 @@ struct GrammarView: View {
                     RoundedRectangle(cornerRadius: 28)
                         .fill(
                             LinearGradient(
-                                colors: [.white.opacity(0.10), .clear],
+                                colors: [isDark ? .white.opacity(0.10) : Color.caribbeanOcean.opacity(0.04), .clear],
                                 startPoint: .top,
                                 endPoint: .center
                             )
@@ -353,7 +353,7 @@ struct GrammarView: View {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
-                                colors: [.white.opacity(0.10), .clear],
+                                colors: [isDark ? .white.opacity(0.10) : Color.caribbeanOcean.opacity(0.05), .clear],
                                 startPoint: .top,
                                 endPoint: .center
                             )
@@ -604,7 +604,7 @@ struct GrammarView: View {
                         RoundedRectangle(cornerRadius: 16)
                             .fill(
                                 LinearGradient(
-                                    colors: [.white.opacity(0.08), .clear],
+                                    colors: [isDark ? .white.opacity(0.08) : Color.caribbeanOcean.opacity(0.03), .clear],
                                     startPoint: .top,
                                     endPoint: .center
                                 )
@@ -731,6 +731,18 @@ struct GrammarView: View {
                     Spacer()
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 16))
+
+                // Light-mode turquoise accent line — editorial "helpful info" signal
+                if !isDark {
+                    HStack {
+                        RoundedRectangle(cornerRadius: 2)
+                            .fill(Color.caribbeanLagoon.opacity(0.35))
+                            .frame(width: 3)
+                            .padding(.vertical, 10)
+                        Spacer()
+                    }
+                    .padding(.leading, 4)
+                }
             }
             .overlay(
                 RoundedRectangle(cornerRadius: 16)

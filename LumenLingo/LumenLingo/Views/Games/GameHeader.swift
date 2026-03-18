@@ -239,6 +239,7 @@ struct GameHeader: View {
                     .frame(width: fillWidth)
                     .overlay(progressEffectOverlay(fillWidth: fillWidth, totalWidth: geo.size.width))
                     .clipShape(Capsule())
+                    .shadow(color: isDark ? .clear : (theme.gradientColors.first ?? .blue).opacity(0.20), radius: 3, x: 0, y: 1)
             }
         }
         .frame(height: barHeight)
@@ -274,7 +275,9 @@ struct GameHeader: View {
             Capsule()
                 .fill(
                     LinearGradient(
-                        colors: [.clear, .white.opacity(0.3), .clear],
+                        colors: isDark
+                            ? [.clear, .white.opacity(0.3), .clear]
+                            : [.clear, (theme.gradientColors.first ?? .blue).opacity(0.15), .clear],
                         startPoint: UnitPoint(x: -0.3 + Double(effectPhase) * 1.3, y: 0),
                         endPoint: UnitPoint(x: 0.0 + Double(effectPhase) * 1.3, y: 0)
                     )
@@ -307,7 +310,11 @@ struct GameHeader: View {
                     Circle()
                         .fill(
                             RadialGradient(
-                                colors: [.white.opacity(0.6), (theme.gradientColors.first ?? .orange).opacity(0.3), .clear],
+                                colors: [
+                                    isDark ? .white.opacity(0.6) : (theme.gradientColors.first ?? .orange).opacity(0.5),
+                                    (theme.gradientColors.first ?? .orange).opacity(0.3),
+                                    .clear
+                                ],
                                 center: .center,
                                 startRadius: 0,
                                 endRadius: 8

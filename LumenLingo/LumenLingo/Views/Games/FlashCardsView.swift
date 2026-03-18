@@ -215,7 +215,7 @@ struct FlashCardsView: View {
         VStack(spacing: 20) {
             ProgressView()
                 .scaleEffect(1.5)
-                .tint(.white)
+                .tint(isDark ? .white : .caribbeanPlum)
             Text(L.loadingCards)
                 .font(.headline)
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
@@ -313,6 +313,7 @@ struct FlashCardsView: View {
     @State private var microScale: CGFloat = 1.0
     @State private var borderGlowColor: Color = .clear
     @State private var borderGlowOpacity: Double = 0
+    @State private var flipEdgeGlowOpacity: Double = 0
 
     private func flashcard(word: FlashcardWord) -> some View {
         ZStack {
@@ -368,6 +369,25 @@ struct FlashCardsView: View {
                 .strokeBorder(borderGlowColor, lineWidth: 1)
                 .opacity(borderGlowOpacity * 0.6)
                 .allowsHitTesting(false)
+
+            // Light-mode flip edge glow — ocean-to-lavender shimmer during flip
+            if !isDark {
+                RoundedRectangle(cornerRadius: 32)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [
+                                Color.caribbeanOcean.opacity(0.5),
+                                Color(hex: "#a855f7").opacity(0.3),
+                                Color.caribbeanLagoon.opacity(0.4)
+                            ],
+                            startPoint: .topLeading, endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 1.5
+                    )
+                    .opacity(flipEdgeGlowOpacity)
+                    .blur(radius: 3)
+                    .allowsHitTesting(false)
+            }
         }
         .frame(maxWidth: 500)
         .frame(height: 360)
@@ -437,14 +457,28 @@ struct FlashCardsView: View {
                     .shadow(color: isDark ? .black.opacity(0.5) : .clear, radius: 3, x: 0, y: 1)
                     .italic()
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 32)
+                    .padding(.horizontal, isDark ? 32 : 16)
+                    .padding(.vertical, isDark ? 0 : 8)
+                    .padding(.top, isDark ? 14 : 6)
+                    .background {
+                        if !isDark {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color.caribbeanRecessed.opacity(0.6))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .strokeBorder(Color.caribbeanBorderSubtle, lineWidth: 0.5)
+                                )
+                        }
+                    }
+                    .padding(.horizontal, isDark ? 0 : 24)
                     .padding(.top, 14)
             }
 
             Spacer()
 
             HStack(spacing: 6) {
-                Image(systemName: "arrow.counterclockwise")
+                Image(systemName: "hand.tap")
+                    .symbolEffect(.pulse.byLayer, options: isDark ? .default : .repeating)
                 Text(L.tapToReveal)
             }
             .font(.caption.weight(.medium))
@@ -483,12 +517,12 @@ struct FlashCardsView: View {
                     LinearGradient(
                         colors: isDark
                             ? [.clear, .white.opacity(0.45), .clear]
-                            : [.clear, Color.caribbeanOcean.opacity(0.35), .clear],
+                            : [.clear, Color.caribbeanMist.opacity(0.35), .clear],
                         startPoint: .leading, endPoint: .trailing
                     )
                 )
                 .frame(width: 80, height: 1)
-                .shadow(color: isDark ? .white.opacity(0.3) : Color.caribbeanOcean.opacity(0.2), radius: 4)
+                .shadow(color: isDark ? .white.opacity(0.3) : Color.caribbeanOcean.opacity(0.15), radius: 4)
                 .padding(.top, 18)
 
             if let example = word.example, !example.isEmpty {
@@ -498,7 +532,20 @@ struct FlashCardsView: View {
                     .shadow(color: isDark ? .black.opacity(0.5) : .clear, radius: 3, x: 0, y: 1)
                     .italic()
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 32)
+                    .padding(.horizontal, isDark ? 32 : 16)
+                    .padding(.vertical, isDark ? 0 : 8)
+                    .padding(.top, isDark ? 14 : 6)
+                    .background {
+                        if !isDark {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color.caribbeanRecessed.opacity(0.6))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .strokeBorder(Color.caribbeanBorderSubtle, lineWidth: 0.5)
+                                )
+                        }
+                    }
+                    .padding(.horizontal, isDark ? 0 : 24)
                     .padding(.top, 14)
             }
 
@@ -838,6 +885,14 @@ struct FlashCardsView: View {
 
         // Single animation drives both rotation + content swap
         isFlipped = true
+
+        // Light-mode flip edge glow
+        if !isDark {
+            withAnimation(.easeIn(duration: 0.15)) { flipEdgeGlowOpacity = 1.0 }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+                withAnimation(.easeOut(duration: 0.25)) { flipEdgeGlowOpacity = 0 }
+            }
+        }
 
         // Trigger ripple
         showRipple = true

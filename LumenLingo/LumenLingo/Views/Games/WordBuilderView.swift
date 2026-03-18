@@ -297,7 +297,7 @@ struct WordBuilderView: View {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
-                                colors: [.white.opacity(0.10), .clear],
+                                colors: [isDark ? .white.opacity(0.10) : .white.opacity(0.40), .clear],
                                 startPoint: .top,
                                 endPoint: .center
                             )
@@ -380,6 +380,15 @@ struct WordBuilderView: View {
                                 lineWidth: isActive ? 2 : 1
                             )
                     )
+                    .overlay {
+                        if letter == nil && !isActive && !isDark {
+                            RoundedRectangle(cornerRadius: 12)
+                                .strokeBorder(
+                                    Color.caribbeanMist.opacity(0.25),
+                                    style: StrokeStyle(lineWidth: 1, dash: [4, 3])
+                                )
+                        }
+                    }
 
                 if let letter {
                     Text(String(letter.character).uppercased())
@@ -454,7 +463,7 @@ struct WordBuilderView: View {
                         RoundedRectangle(cornerRadius: 12)
                             .fill(
                                 LinearGradient(
-                                    colors: [isDark ? .white.opacity(0.12) : .white.opacity(0.40), .clear],
+                                    colors: [isDark ? .white.opacity(0.12) : Color.caribbeanOcean.opacity(0.06), .clear],
                                     startPoint: .top,
                                     endPoint: .center
                                 )
@@ -475,8 +484,10 @@ struct WordBuilderView: View {
             }
             .frame(height: 50)
             .shadow(
-                color: isHinted ? Color(hex: "#fbbf24").opacity(hintGlowOpacity * 0.5) : Color(hex: "#fb923c").opacity(0.15),
-                radius: isHinted ? 12 : 6
+                color: isHinted ? Color(hex: "#fbbf24").opacity(hintGlowOpacity * 0.5) : isDark ? Color(hex: "#fb923c").opacity(0.15) : Color(hex: "#0EA5E9").opacity(0.08),
+                radius: isHinted ? 12 : 6,
+                x: 0,
+                y: isDark ? 0 : 3
             )
         }
         .buttonStyle(LumenPressStyle(weight: .medium, accentColor: Color(hex: "#fb923c")))
@@ -581,6 +592,11 @@ struct WordBuilderView: View {
             } label: {
                 HStack(spacing: 4) {
                     Image(systemName: "lightbulb.fill")
+                        .foregroundStyle(
+                            isDark
+                                ? AnyShapeStyle(Color.white.opacity(0.85))
+                                : AnyShapeStyle(LinearGradient(colors: [Color(hex: "#D97706"), Color(hex: "#F59E0B")], startPoint: .top, endPoint: .bottom))
+                        )
                     Text(L.hint)
                 }
                 .font(.system(size: 13, weight: .semibold))
@@ -589,17 +605,25 @@ struct WordBuilderView: View {
                 .foregroundStyle(isDark ? .white.opacity(0.85) : .caribbeanPlum)
                 .padding(.horizontal, 10)
                 .frame(minHeight: 44)
-                .background(
-                    GlassCardBackground(
-                        cornerRadius: 14,
-                        borderColor: .purple,
-                        borderOpacity: 0.2,
-                        tintColor: .purple
-                    )
-                )
+                .background {
+                    if isDark {
+                        GlassCardBackground(
+                            cornerRadius: 14,
+                            borderColor: .purple,
+                            borderOpacity: 0.2,
+                            tintColor: .purple
+                        )
+                    } else {
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(Color.caribbeanElevated)
+                            .overlay(RoundedRectangle(cornerRadius: 14).fill(Color(hex: "#FDE68A").opacity(0.06)))
+                            .overlay(RoundedRectangle(cornerRadius: 14).strokeBorder(Color(hex: "#FDE68A").opacity(0.25), lineWidth: 0.75))
+                    }
+                }
                 .clipShape(RoundedRectangle(cornerRadius: 14))
+                .shadow(color: isDark ? .clear : Color(hex: "#FDE68A").opacity(0.12), radius: 6, x: 0, y: 2)
             }
-            .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .purple))
+            .buttonStyle(LumenPressStyle(weight: .soft, accentColor: isDark ? .purple : Color(hex: "#D97706")))
             .disabled(!hasAvailableLetters || isChecking || isCorrect != nil)
             .opacity(!hasAvailableLetters ? 0.4 : 1.0)
 
@@ -614,7 +638,7 @@ struct WordBuilderView: View {
                 .font(.system(size: 13, weight: .semibold))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-                .foregroundStyle(.white)
+                .foregroundStyle(allSlotsFilled ? .white : isDark ? .white.opacity(0.5) : .caribbeanMist)
                 .padding(.horizontal, 14)
                 .frame(minHeight: 44)
                 .background(
@@ -625,12 +649,12 @@ struct WordBuilderView: View {
                                     colors: [Color(hex: "#10b981"), Color(hex: "#059669")],
                                     startPoint: .leading, endPoint: .trailing
                                 ))
-                                : AnyShapeStyle(.white.opacity(0.08))
+                                : AnyShapeStyle(isDark ? .white.opacity(0.08) : Color.caribbeanRecessed)
                         )
                         .overlay(
                             RoundedRectangle(cornerRadius: 14)
                                 .strokeBorder(
-                                    allSlotsFilled ? Color(hex: "#10b981").opacity(0.3) : .white.opacity(0.06),
+                                    allSlotsFilled ? Color(hex: "#10b981").opacity(0.3) : isDark ? .white.opacity(0.06) : Color.caribbeanBorderSubtle,
                                     lineWidth: 1
                                 )
                         )

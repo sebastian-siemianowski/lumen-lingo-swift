@@ -1533,507 +1533,375 @@ Parallax layers:
 
 ## Epic 5: Practice Screens — FlashCards, WordBuilder, Grammar
 
-**Epic Owner:** Game Design Lead
-**Priority:** P0 — Practice screens are the core product; this is where users spend 80% of their time
-**Goal:** Make every practice session in light mode feel like a warm, focused, luxurious learning experience where game elements are crystal-clear, feedback is instant and beautiful, and the user is in a state of pleasant flow.
+**Epic Owner:** Senior UX Design Lead
+**Priority:** P0 — Practice screens are where users spend 80% of their time. If these don't feel premium, nothing else matters.
+**Goal:** Transform every practice session in light mode from "functional but flat" into an experience that feels like playing a beautifully crafted card game on a sunlit table at a Caribbean resort — where every surface has warmth, every interaction has weight, and every moment of feedback makes the user smile.
 
-### The Core Problem
+### Design Philosophy for Practice Screens
 
-Practice screens have the worst light mode issues. FlashCards have invisible loading spinners and ghost footer pills. WordBuilder has invisible letter tiles, slots, and clue text. Grammar has dark purple panels bruising light backgrounds. These aren't cosmetic issues — they're usability failures that make the app feel broken.
+#### What "Premium" Actually Means Here
 
-### The Target
+Premium doesn't mean "more effects." It means:
 
-Each practice screen should feel like a premium card game on a sunlit table. Cards, tiles, and options are tactile and clear. Feedback (correct/wrong) is warm and encouraging. Progress is always visible. The user never squints, never wonders what to tap, never loses their place.
+1. **Zero ghost elements.** Nothing should be invisible, ghostly, or ambiguous. If a user squints or hesitates, we've failed.
+2. **Warm material honesty.** Every surface should feel like a real material under warm sunlight — polished sea glass for cards, smooth driftwood for containers, shallow tide pools for recessed areas. Not plastic, not paper, not "white rectangle."
+3. **Confident restraint.** The Caribbean sun provides the energy. Our job is to shape it — not compete with it. Subtle tinted shadows, soft ocean-tinted edges, warm depth cues. Nothing garish.
+4. **Emotional feedback loops.** Correct answers feel like the warm satisfaction of finding a perfect seashell. Wrong answers feel like a gentle wave washing over — acknowledged, not punished. Every state transition should carry emotional meaning.
+
+#### The Light Mode Surface Stack (For All Practice Screens)
+
+Every practice screen in light mode uses this hierarchy of surfaces, from back to front:
+
+```
+L0  Background          — App canvas with Caribbean subtle warmth (caribbeanCanvas)
+L1  GameHeader          — .ultraThinMaterial with game-colored gradient stroke
+L2  Container panels    — GlassCardBackground with game-specific warm tint
+L3  Recessed wells      — caribbeanRecessed — seafoam-sage, "where content lives"
+L4  Interactive items   — caribbeanElevated on .thinMaterial — the things you tap
+L5  Focused/selected    — caribbeanSelected with ocean border — "this is active"
+L6  Feedback overlays   — caribbeanSuccessSoft / caribbeanErrorSoft — ephemeral signals
+```
+
+This stack means the user always has clear visual hierarchy. Interactive elements (L4) float above containers (L2-L3). Feedback (L6) is the loudest thing on screen — briefly.
+
+#### What's Already Working Well (Don't Break These)
+
+After Epics 1-4, the practice screens already have strong Caribbean foundations:
+- **Text colors** — All three tiers (`caribbeanInk`, `caribbeanPlum`, `caribbeanMist`) consistently applied
+- **FlashCard liquidGlassCard** — The iridescent AngularGradient border already has beautiful light-mode colors (ocean, lagoon, cyan tints). The prismatic inner glow uses `caribbeanOcean`/`caribbeanLagoon`. The specular highlights use ocean tints. This is excellent.
+- **WordBuilder slot fills/borders** — Already conditional with `caribbeanRecessed`, `caribbeanSelected`, `caribbeanBorder`
+- **Grammar answer badges and borders** — Already use `caribbeanSelected`, `caribbeanBorder`, `caribbeanInk`
+- **GameHeader** — Score display, stat pills, gradient strokes, category name — all properly adapted
+
+The remaining problems are specific, surgical — not wholesale redesigns. Below, each story addresses the exact elements that still undermine the premium feel, organized by the emotional journey of each game mode.
 
 ---
 
-### Story 5.1: FlashCards — Complete Light Mode Redesign
+### Story 5.1: FlashCards — "A Warm Card in Your Hands"
+
+**Emotional Target:** The user holds a beautifully crafted card. The word floats in the center like a message in a bottle. Flipping it is a moment of revelation — light catches the edge, the answer appears. Tapping "Got It" feels like pocketing a seashell you'll keep.
 
 **As a** user practicing vocabulary with flashcards in light mode,
-**I want** every card state, animation, and feedback element to be beautiful and clear,
-**So that** the flashcard experience is just as premium as dark mode.
+**I want** the few remaining ghost elements fixed and the card's micro-details to carry warm Caribbean signals,
+**So that** every card flip feels like a tiny luxury moment.
 
-**Story Points:** 13
+**Story Points:** 5
 **Priority:** P0
 
-#### Subtask 5.1.1: Fix Critical Visibility Bugs
+#### Subtask 5.1.1: Fix the Three Remaining Visibility Bugs
 
-Immediate fixes for broken elements:
+These are the only elements in FlashCardsView that are still broken in light mode:
 
-| Element | Bug | Fix |
-|---|---|---|
-| Loading ProgressView | `.tint(.white)` — invisible | `.tint(isDark ? .white : .caribbeanPlum)` |
-| Footer pill background | `.white.opacity(0.12)` — invisible | `isDark ? .white.opacity(0.12) : Color.caribbeanRecessed` |
-| Footer pill border | `.white.opacity(0.20)` — invisible | `isDark ? .white.opacity(0.20) : Color.caribbeanBorder` |
-| Capsule divider | `.white.opacity(0.45)` — faint | `isDark ? .white.opacity(0.45) : Color.caribbeanMist.opacity(0.35)` |
+| # | Element | Location | Current Bug | Fix |
+|---|---|---|---|---|
+| 1 | **Loading spinner** | `loadingView` (~line 218) | `.tint(.white)` — completely invisible on light backgrounds | `.tint(isDark ? .white : .caribbeanPlum)` |
+| 2 | **Footer pill bg** | `backContent` (~line 530) | `.white.opacity(0.12)` — invisible ghost | `isDark ? .white.opacity(0.12) : Color.caribbeanRecessed` |
+| 3 | **Footer pill border** | `backContent` (~line 531) | `.white.opacity(0.20)` — invisible | `isDark ? .white.opacity(0.20) : Color.caribbeanBorder` |
 
-**Acceptance Criteria:**
-- [ ] Loading spinner is visually prominent in light mode — user knows content is loading
-- [ ] Footer pill showing word pairs is clearly visible with border definition
-- [ ] Capsule divider between card sections is visible as a warm separator
-- [ ] All fixes are conditional on `isDark` — dark mode remains untouched
-- [ ] Each fix verified with screenshot on device (not just preview)
-
-#### Subtask 5.1.2: Redesign FlashCard Front Face for Light Mode
-
-**Proposed light mode card front:**
-```
-Card surface: Premium LiquidGlassCard treatment (from Story 2.2)
-
-Word display:
-  - Font: .largeTitle weight .bold
-  - Color: gradient [#6366f1, #a855f7, #ec4899] (keep — excellent)
-  - Shadow: #a855f7 @ 0.18, radius 6 (slightly stronger for light surface)
-  - Letter spacing: 0.5pt (airy, premium)
-
-Example sentence:
-  - Font: .body weight .regular, italic
-  - Color: caribbeanPlum
-  - Container: caribbeanRecessed pill with caribbeanBorderSubtle
-  - Padding: 10pt horizontal, 6pt vertical
-
-"Tap to reveal" hint:
-  - Font: .caption weight .medium
-  - Color: caribbeanMist
-  - Icon: hand.tap SF Symbol, caribbeanMist
-  - Gentle pulse animation (opacity 0.5 → 1.0, 2s cycle)
-
-Card decoration:
-  - Subtle watermark pattern: small dots in caribbeanMist @ 0.03
-    arranged in a geometric pattern (Mediterranean tile reference)
-  - Only visible at close inspection — subliminal premium signal
-```
+**Why only these three?** The rest of the FlashCard view was comprehensively light-mode adapted in Epics 1-4. The front face word gradient, example sentence color, "Tap to Reveal" hint, back face translation gradient, divider capsule, example/translation text colors, liquidGlassCard's iridescent border, inner glow, specular highlights, shadow system — all already have proper `isDark` conditionals using Caribbean tokens. These three are the only survivors.
 
 **Acceptance Criteria:**
-- [ ] Word text is the clear hero — large, gradient, glowing
-- [ ] Example sentence is contained in a recessed pill (visually distinct from card surface)
-- [ ] "Tap to reveal" hint has a gentle pulse animation drawing attention
-- [ ] Card front has subtle decorative detail that rewards close inspection
-- [ ] Overall composition has generous white space — content is not cramped
-- [ ] Card feels "ready to flip" — the design invites the tap gesture
+- [x] Loading spinner visible in light mode with `caribbeanPlum` tint — user immediately sees loading state
+- [x] Footer pill on card back has a defined, tangible surface — `caribbeanRecessed` fill gives it the "shallow tide pool" feel *(already fixed in prior epics)*
+- [x] Footer pill border is visible — `caribbeanBorder` gives it just enough ocean-tinted definition *(already fixed in prior epics)*
+- [x] Dark mode completely unchanged — all three fixes use `isDark ? darkValue : lightValue` pattern
+- [x] Verified on device: no remaining `.white.opacity()` patterns that aren't wrapped in isDark conditionals
 
-#### Subtask 5.1.3: Redesign FlashCard Back Face for Light Mode
+#### Subtask 5.1.2: Elevate Front Face Micro-Details
 
-**Proposed light mode card back:**
+The front face content is functionally correct but has two details that separate "good" from "premium":
+
+**A. "Tap to Reveal" icon upgrade:**
+The current `arrow.counterclockwise` icon is a generic "retry" symbol. Replace with `hand.tap` — a direct, intuitive signal that says "touch me." In light mode, add a gentle `.symbolEffect(.pulse.byLayer, options: .repeating)` that creates a living, breathing invitation without being distracting.
+
+**B. Example sentence containment:**
+The example sentence currently floats as plain italic text against the card surface. In light mode, the lack of a container makes it feel like an afterthought. Wrap it in a subtle recessed pill:
+```swift
+// Light mode only — dark mode keeps the floating text which works on dark glass
+.background {
+    if !isDark {
+        RoundedRectangle(cornerRadius: 10)
+            .fill(Color.caribbeanRecessed.opacity(0.6))
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .strokeBorder(Color.caribbeanBorderSubtle, lineWidth: 0.5)
+            )
+    }
+}
 ```
-Card surface: Premium LiquidGlassCard (same as front — consistency)
-
-Translation word:
-  - Font: .largeTitle weight .bold
-  - Color: gradient [#059669, #0891b2, #7c3aed] (keep — complementary to front)
-  - Shadow: #0891b2 @ 0.18, radius 6
-
-Source → Target reference:
-  - Container: horizontal pill layout
-  - Source word: caribbeanPlum, weight .medium
-  - Arrow: caribbeanMist, SF Symbol "arrow.right"
-  - Target word: caribbeanInk, weight .semibold
-  - Pill background: caribbeanRecessed
-  - Pill border: caribbeanBorderSubtle
-
-Example sentence:
-  - Same treatment as front — caribbeanPlum, recessed pill
-
-Difficulty rating area:
-  - Centered at card bottom
-  - 4 buttons: "Easy" "Good" "Hard" "Again"
-  - Each button: caribbeanElevated surface, caribbeanBorder
-  - Active/selected: button-specific accent color fill at 0.15
-  - Easy: emerald tint, Good: blue tint, Hard: amber tint, Again: rose tint
-```
+This gives the example text visual containment — like a note etched into the card — without changing dark mode's elegant floating treatment.
 
 **Acceptance Criteria:**
-- [ ] Translation reveals with a satisfying visual difference from front (green vs purple gradient)
-- [ ] Source → Target word pair is in a clearly defined pill container
-- [ ] Arrow icon visually connects the two words
-- [ ] Difficulty rating buttons are distinct, tappable, and color-coded
-- [ ] Button pressed states provide immediate visual feedback
-- [ ] The "reveal" feeling is preserved — back face should feel like a reward
+- [x] `hand.tap` icon communicates "tap this card" more clearly than the old retry arrow
+- [x] Pulse animation is subtle — perceptible on direct look, not distracting during reading
+- [x] Example sentence pill in light mode creates a gentle visual container without dominating
+- [x] Dark mode front face completely unchanged
+- [x] The overall front face reads as: big word (hero) → context (recessed note) → invitation (pulsing hand)
 
-#### Subtask 5.1.4: Design FlashCard Flip Animation for Light Mode
+#### Subtask 5.1.3: Elevate Back Face and Card Divider
 
-**Acceptance Criteria:**
-- [ ] Card flip is a 3D Y-axis rotation (0° → 90° → 0°, with surface swap at 90°)
-- [ ] During flip, card edge catches light — thin white edge glow visible at 90° angle
-- [ ] Flip duration: 0.5s with ease-in-out-back curve (slight overshoot at end)
-- [ ] Shadow adjusts during flip — compresses at 90° (card perpendicular), expands after
-- [ ] No frame during the flip where the card looks flat/broken/glitchy
-- [ ] Performance: flip animation is GPU-accelerated, no frame drops on older devices
+Two back-face refinements:
 
-#### Subtask 5.1.5: Design FlashCard Progress Bar and Score Display
+**A. Capsule divider warmth:**
+The thin divider between the translation word and example text currently uses `Color.caribbeanOcean.opacity(0.35)` in light mode — too saturated and "digital" for the warm card surface. Soften to `Color.caribbeanMist.opacity(0.35)` with `Color.caribbeanOcean.opacity(0.15)` shadow. This reads as a gentle graphite line that's been warmed by the sun, not a colored UI element.
 
-**Proposed progress indicators:**
-```
-Progress bar (top of screen):
-  - Track: caribbeanRecessed (seafoam-sage), height 4pt, full width
-  - Fill: caribbeanGradientOcean (turquoise → teal — like water filling a tide pool)
-  - Shadow on fill: caribbeanOcean @ 0.20, radius 3, y: 1
-  - Glow effect: turquoise @ 0.08 extends 2pt above and below
-
-Score display (in GameHeader):
-  - Score value: caribbeanInk, weight .bold
-  - Score label: caribbeanMist, weight .regular
-  - Streak fire emoji: rendered at 1.2x size with warm glow behind
-  - Card counter: "12/30" in caribbeanMist capsule with caribbeanBorderSubtle
-```
+**B. Example sentence containment (back face):**
+Apply the same recessed pill treatment as 5.1.2 to the back face's example sentence — visual consistency across both card faces. Same logic: `!isDark` only.
 
 **Acceptance Criteria:**
-- [ ] Progress bar shows clear advancement with gradient fill
-- [ ] Progress bar has a subtle glow that makes it feel alive
-- [ ] Score display is immediately readable at a glance
-- [ ] Streak counter has an extra touch of warmth (glow behind the emoji)
-- [ ] Card counter clearly shows position in the deck
-- [ ] Progress bar fill animation is smooth and satisfying
+- [x] Capsule divider in light mode feels organic, not digital — warm mist color, not bright ocean
+- [x] Back face example sentence has matching pill treatment to front face
+- [x] Card back and front feel like two sides of the same premium object — consistent material language
+- [x] Dark mode completely unchanged
+
+#### Subtask 5.1.4: Add Light-Mode Flip Edge Glow
+
+During the 3D flip animation, the card edge becomes visible at ~90°. In dark mode, the iridescent border catches light naturally against the dark background. In light mode, this midpoint of the flip feels flat — the card briefly looks like a white rectangle turning.
+
+Add a temporary edge glow during the flip — visible only in light mode:
+```swift
+@State private var flipEdgeGlowOpacity: Double = 0
+
+// In flashcard ZStack, after the existing border glow overlays:
+if !isDark {
+    RoundedRectangle(cornerRadius: 32)
+        .strokeBorder(
+            LinearGradient(
+                colors: [
+                    Color.caribbeanOcean.opacity(0.5),
+                    Color(hex: "#a855f7").opacity(0.3),
+                    Color.caribbeanLagoon.opacity(0.4)
+                ],
+                startPoint: .topLeading, endPoint: .bottomTrailing
+            ),
+            lineWidth: 1.5
+        )
+        .opacity(flipEdgeGlowOpacity)
+        .blur(radius: 3)
+        .allowsHitTesting(false)
+}
+```
+In `flipCard()`, flash the glow on and off:
+```swift
+if !isDark {
+    withAnimation(.easeIn(duration: 0.15)) { flipEdgeGlowOpacity = 1.0 }
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+        withAnimation(.easeOut(duration: 0.25)) { flipEdgeGlowOpacity = 0 }
+    }
+}
+```
+This creates a brief ocean-to-lavender light catch at the critical moment of the flip — the card "shimmers" as it reveals the answer. Subtle, ephemeral, and premium.
+
+**Acceptance Criteria:**
+- [x] During flip, a brief ocean-tinted glow appears along the card edge (light mode only)
+- [x] Glow peaks at the flip midpoint (~0.15s in) and fades completely by the time the back face settles
+- [x] The effect is subtle — enhances the existing flip, doesn't dominate it
+- [x] Zero visual change in dark mode (dark mode's iridescent border already handles this naturally)
+- [x] No performance impact — it's a single strokeBorder with opacity animation, not a new render pass
+
+#### Subtask 5.1.5: GameHeader Progress Bar Refinement
+
+The GameHeader's progress bar has one remaining issue: the flowing shimmer effect uses `.white.opacity(0.3)` unconditionally — this creates a harsh white streak moving across the colored fill bar in light mode.
+
+**Fix:** Make the shimmer isDark-conditional:
+```swift
+// In progressEffectOverlay, case .flowing:
+colors: isDark
+    ? [.clear, .white.opacity(0.3), .clear]
+    : [.clear, (theme.gradientColors.first ?? .blue).opacity(0.15), .clear]
+```
+In light mode, the shimmer uses the theme's own gradient color at low opacity — a self-colored ripple that feels like light reflecting off the surface of a tide pool, not a white streak.
+
+Additionally, add a subtle shadow beneath the progress fill capsule in light mode:
+```swift
+.shadow(color: isDark ? .clear : (theme.gradientColors.first ?? .blue).opacity(0.20), radius: 3, x: 0, y: 1)
+```
+This gives the colored fill a gentle "floating above the track" feel, consistent with the L4 interactive surface being above the L3 recessed track.
+
+**Acceptance Criteria:**
+- [x] Progress bar shimmer in light mode uses a theme-colored ripple, not a white streak
+- [x] Progress fill has a subtle warm shadow underneath in light mode (floats above track)
+- [x] Dark mode shimmer unchanged (`.white.opacity(0.3)` still works beautifully on dark fills)
+- [x] The progress bar reads as "living, advancing water filling a tide pool"
 
 ---
 
-### Story 5.2: WordBuilder — Complete Light Mode Redesign
+### Story 5.2: WordBuilder — "Scrabble Tiles on Warm Driftwood"
+
+**Emotional Target:** Letter tiles feel like carved wooden pieces catching sunlight. Placing them into slots feels satisfying — like fitting a puzzle piece into a mosaic. The hint button glows like buried gold. Getting the word right lights up the whole board.
 
 **As a** user building words from letter tiles in light mode,
-**I want** every tile, slot, and interaction to be crystal clear and satisfying,
-**So that** the word-building experience is fun and tactile.
+**I want** the remaining ghost elements fixed and the tactile quality of tiles and slots elevated,
+**So that** building words feels physically satisfying and visually clear.
 
-**Story Points:** 13
+**Story Points:** 5
 **Priority:** P0
 
-#### Subtask 5.2.1: Fix Critical Visibility Bugs
+#### Subtask 5.2.1: Fix Remaining Visibility Bugs
 
-| Element | Bug | Fix |
-|---|---|---|
-| Clue gradient | `.white` in middle of gradient | `isDark ? .white : caribbeanInk.opacity(0.7)` |
-| Empty slot background | `.white.opacity(0.04)` | `isDark ? ... : caribbeanRecessed` |
-| Slot border inactive | `.white.opacity(0.08)` | `isDark ? ... : caribbeanBorderSubtle` |
-| Letter bank background | `.white.opacity(0.04)` | `isDark ? ... : caribbeanRecessed.opacity(0.5)` |
-| Letter bank stroke | `.white.opacity(0.06)` | `isDark ? ... : caribbeanBorderSubtle` |
-| Placeholder tiles | `.white.opacity(0.03)` fill | `isDark ? ... : caribbeanRecessed.opacity(0.35)` |
-| Tile overlay | `.white.opacity(0.15)` | `isDark ? ... : caribbeanBorder` |
-| Top reflection band | `.white.opacity(0.10)` | `isDark ? ... : white.opacity(0.35)` |
+After Epics 1-4, most of WordBuilder's light mode is solid. These specific elements still have issues:
 
-**Acceptance Criteria:**
-- [ ] All 8 visibility bugs fixed with conditional light mode values
-- [ ] Every element visible against the Caribbean background
-- [ ] Empty slots clearly read as "place letter here" containers
-- [ ] Letter bank is a defined area with visible boundaries
-- [ ] No white-on-white issues remaining in the entire WordBuilder view
-- [ ] Dark mode completely unchanged
+| # | Element | Location | Bug | Fix |
+|---|---|---|---|---|
+| 1 | **Clue section top reflection** | `clueSection` (~line 281-285) | `.white.opacity(0.10)` — not isDark conditional. Creates an invisible white bar on light backgrounds. | `isDark ? .white.opacity(0.10) : .white.opacity(0.40)` — in light mode, a stronger white creates a visible "caught the light" gloss on the warm GlassCardBackground |
+| 2 | **Letter tile inner glow** | `letterTile` (~line 436) | Light branch uses `.white.opacity(0.40)` — white-on-white, invisible | `isDark ? .white.opacity(0.12) : Color.caribbeanOcean.opacity(0.06)` — a whisper of ocean tint at the top edge, like the tile caught a reflection from nearby water |
+| 3 | **Check button unfilled state** | `actionButtons` (~line 611) | `.foregroundStyle(.white)` and background `.white.opacity(0.08)` — both invisible in light mode | Text: `allSlotsFilled ? .white : isDark ? .white.opacity(0.5) : .caribbeanMist`. Background: `isDark ? .white.opacity(0.08) : Color.caribbeanRecessed`. Border: `isDark ? .white.opacity(0.06) : Color.caribbeanBorderSubtle` |
 
-#### Subtask 5.2.2: Redesign Letter Tile for Light Mode
-
-**Proposed premium light mode letter tile:**
-```
-Resting state:
-  - Base: caribbeanElevated fill, cornerRadius 10
-  - Material: .thinMaterial @ 0.25
-  - Top highlight: white @ 0.45 → 0.0 (height 2pt) — "caught the light" edge
-  - Border: caribbeanBorder (lavender @ 0.20)
-  - Text: caribbeanInk, .title3 weight .bold
-  - Shadow: #0EA5E9 @ 0.08, radius 6, y: 3
-
-Pressed state:
-  - Scale: 0.93
-  - Background: caribbeanHover
-  - Shadow: compressed — radius 3, y: 1
-  - Border: caribbeanBorderFocus
-  - Haptic: .light
-
-Placed state (in answer slot):
-  - Background: caribbeanSelected (#0EA5E9 @ 0.12)
-  - Border: caribbeanBorderFocus (#A855F7 @ 0.45)
-  - Text: caribbeanInk, weight .bold
-  - No shadow (tile is "embedded" in slot)
-
-Hint state:
-  - Background: caribbeanWarningSoft (#D97706 @ 0.10) — warm golden glow
-  - Border: #FDE68A @ 0.40
-  - Pulsing glow: #FDE68A @ 0.12, radius 8 (2s cycle breathing)
-  - Text: caribbeanInk
-
-Disabled state:
-  - Background: caribbeanDisabled
-  - Border: caribbeanBorderSubtle
-  - Text: caribbeanMist
-  - Opacity: 0.6
-```
+**Why only three?** The clue text gradient, empty slot fills, slot borders, letter bank background, letter bank stroke, placeholder tiles, tile border overlays — all already have proper isDark conditionals from prior epics. These three are the only remaining ghost elements.
 
 **Acceptance Criteria:**
-- [ ] Resting tiles look like physical, tactile objects that invite tapping
-- [ ] Pressed state provides immediate, satisfying visual and haptic feedback
-- [ ] Placed tiles look embedded in their slots, distinctly different from resting tiles
-- [ ] Hint tiles draw the eye with warm golden pulsing glow
-- [ ] Disabled tiles clearly communicate "not available" without being ugly
-- [ ] All 5 states have smooth transitions between them (0.2s spring)
-- [ ] Tiles are large enough for comfortable tapping (≥ 44pt by 44pt)
+- [x] Clue section top reflection creates a visible light-catching gloss in light mode
+- [x] Letter tiles have a subtle ocean-tinted top highlight instead of invisible white-on-white
+- [x] Check button in unfilled state is clearly visible as a disabled/inactive button (recessed background, mist text)
+- [x] When all slots filled, Check button activates with its existing green gradient (this part already works)
+- [x] Dark mode completely unchanged
 
-#### Subtask 5.2.3: Redesign Answer Slot Area
+#### Subtask 5.2.2: Add Dashed Borders to Empty Answer Slots
 
-**Proposed premium light mode answer slots:**
+Empty answer slots currently show a solid `caribbeanBorderSubtle` border — functional but doesn't communicate "this is where you place a letter." Add a dashed border treatment that communicates "drop zone":
+
+```swift
+// In slotTile, after the existing solid border overlay:
+.overlay {
+    if letter == nil && !isActive && !isDark {
+        RoundedRectangle(cornerRadius: 12)
+            .strokeBorder(
+                Color.caribbeanMist.opacity(0.25),
+                style: StrokeStyle(lineWidth: 1, dash: [4, 3])
+            )
+    }
+}
 ```
-Container:
-  - Background: caribbeanRecessed.opacity(0.5) fill, cornerRadius 16
-  - Border: caribbeanBorderSubtle, lineWidth 0.5
-  - Internal padding: 8pt
 
-Empty slot:
-  - Background: caribbeanRecessed (#E8F0EE) — seafoam-sage, like shallow water over sand
-  - Border: caribbeanBorderSubtle, dashed (3pt dash, 3pt gap)
-  - Size: matched to tile dimensions
-  - Center content: slot number, caribbeanMist, .caption2
+This is a universal visual language for "place something here" (think drag-and-drop interfaces, design tools, file upload zones). In dark mode, the glass material and glow effects already communicate this. In light mode, the dashed border adds clarity.
 
-Filled slot:
-  - Background: caribbeanSelected
-  - Border: caribbeanBorder, solid
-  - Tile letter: caribbeanInk, .title3 weight .bold
-  - Tappable (to remove tile back to bank)
+**Acceptance Criteria:**
+- [x] Empty slots in light mode have a subtle dashed border — clear "drop zone" affordance
+- [x] Dashed border disappears when slot is active (cursor position) or filled
+- [x] Dark mode unchanged — dashed border is light-mode only enhancement
+- [x] The dashes are gentle (`caribbeanMist.opacity(0.25)`) — visible but not dominant
 
-Correct completion:
-  - All slots: caribbeanSuccessSoft background
-  - Border: caribbeanSuccess, lineWidth 1.5
-  - Confetti burst animation from center (warm colors: gold, rose, lavender)
-  - Scale pulse: 1.0 → 1.03 → 1.0
+#### Subtask 5.2.3: Elevate Letter Tile Shadows and Hint Button
 
-Wrong completion:
-  - Shake animation (horizontal, 3 cycles, 8pt amplitude)
-  - Brief caribbeanErrorSoft flash (0.3s)
-  - Return to normal state
+Two refinements that add tactile depth:
+
+**A. Ocean-tinted tile shadows in light mode:**
+Letter tiles currently have a uniform `Color(hex: "#fb923c").opacity(0.15)` shadow. In light mode, replace with a directional, ocean-tinted shadow:
+```swift
+.shadow(
+    color: isHinted
+        ? Color(hex: "#fbbf24").opacity(hintGlowOpacity * 0.5)
+        : isDark ? Color(hex: "#fb923c").opacity(0.15) : Color(hex: "#0EA5E9").opacity(0.08),
+    radius: isHinted ? 12 : 6,
+    x: 0,
+    y: isDark ? 0 : 3  // Directional shadow in light mode — "sunlight from above"
+)
+```
+The `y: 3` creates a directional shadow — the tile is lit from above, casting a tiny ocean-tinted shadow below. This is how physical objects look on a sunlit table.
+
+**B. Hint button warm golden treatment:**
+The hint button currently uses a purple GlassCardBackground in both modes. In light mode, replace with a warm golden treatment that says "here's help — it's inviting, not scary":
+```swift
+.background {
+    if isDark {
+        GlassCardBackground(cornerRadius: 14, borderColor: .purple, borderOpacity: 0.2, tintColor: .purple)
+    } else {
+        RoundedRectangle(cornerRadius: 14)
+            .fill(Color.caribbeanElevated)
+            .overlay(RoundedRectangle(cornerRadius: 14).fill(Color(hex: "#FDE68A").opacity(0.06)))
+            .overlay(RoundedRectangle(cornerRadius: 14).strokeBorder(Color(hex: "#FDE68A").opacity(0.25), lineWidth: 0.75))
+    }
+}
+.shadow(color: isDark ? .clear : Color(hex: "#FDE68A").opacity(0.12), radius: 6, x: 0, y: 2)
+```
+And give the lightbulb icon a warm gradient fill in light mode:
+```swift
+Image(systemName: "lightbulb.fill")
+    .foregroundStyle(
+        isDark
+            ? AnyShapeStyle(Color.white.opacity(0.85))
+            : AnyShapeStyle(LinearGradient(colors: [Color(hex: "#D97706"), Color(hex: "#F59E0B")], startPoint: .top, endPoint: .bottom))
+    )
 ```
 
 **Acceptance Criteria:**
-- [ ] Answer area is a clearly defined container distinct from the letter bank
-- [ ] Empty slots have dashed borders that communicate "drop zone"
-- [ ] Filled slots show letters clearly with a "placed" visual state
-- [ ] Correct completion celebration is warm, brief, and satisfying
-- [ ] Wrong completion gives clear feedback without being punishing
-- [ ] Slot layout adapts cleanly to different word lengths (4-12 letters)
-
-#### Subtask 5.2.4: Redesign Clue Section for Light Mode
-
-**Proposed premium light mode clue:**
-```
-Container: GlassCardBackground with game accent color (#FB923C)
-  - Caribbean treatment (from Epic 2)
-
-Clue text:
-  - Font: .title2 weight .semibold
-  - Color: caribbeanInk (not a gradient — legibility first)
-  - Shadow: #FB923C @ 0.08, radius 4 (warm amber glow)
-
-Hint text:
-  - Font: .callout weight .regular
-  - Color: caribbeanPlum
-
-Category badge:
-  - Capsule background: game accent @ 0.12
-  - Text: game accent color, .caption weight .semibold
-  - Border: game accent @ 0.20, lineWidth 0.5
-```
-
-**Acceptance Criteria:**
-- [ ] Clue text is immediately readable — no invisible white in gradients
-- [ ] Clue container has warm amber accent tint from game color
-- [ ] Hint text provides gentle secondary guidance
-- [ ] Category badge gives context without dominating
-- [ ] Overall clue section feels like a "mission briefing" — clear, inviting, warm
-
-#### Subtask 5.2.5: Design Action Buttons (Undo, Clear, Hint) for Light Mode
-
-**Proposed light mode action buttons:**
-```
-Undo button:
-  - Icon: caribbeanPlum, "arrow.uturn.backward"
-  - Background: caribbeanElevated
-  - Border: caribbeanBorder
-  - Pressed: caribbeanHover, scale 0.95
-
-Clear button:
-  - Icon: caribbeanPlum, "xmark.circle"
-  - Background: caribbeanElevated
-  - Border: caribbeanBorder
-  - Pressed: caribbeanErrorSoft tint, scale 0.95
-
-Hint button:
-  - Icon: caribbeanGradientWarm gradient fill, "lightbulb.fill"
-  - Background: caribbeanElevated with #FDE68A @ 0.06 tint
-  - Border: #FDE68A @ 0.25
-  - Pressed: golden glow expands, scale 0.95
-  - Shadow: #FDE68A @ 0.10, radius 6
-
-All buttons:
-  - Corner radius: caribbeanRadiusMedium (14pt)
-  - Size: 44pt minimum touch target
-  - Label: caribbeanPlum, .caption weight .medium
-```
-
-**Acceptance Criteria:**
-- [ ] All three action buttons are clearly visible and distinct
-- [ ] Hint button has extra visual emphasis (golden tint, warm glow) — it's assistive and should feel inviting
-- [ ] Clear button pressed state has a red warning tint — destructive action signal
-- [ ] Undo button is neutral — routine action, no special treatment needed
-- [ ] Button labels below icons are readable
-- [ ] Buttons have consistent sizing and spacing in their row/stack
+- [x] Letter tiles in light mode cast subtle directional shadows — tangible, physical, "on a table"
+- [x] Hint button in light mode has a warm golden tint — feels inviting, not clinical
+- [x] Lightbulb icon has a warm amber→gold gradient — like actual warm light
+- [x] Shadow warmth is `#FDE68A` (sand gold), not grey — consistent with "Caribbean sunlight"
+- [x] Hint glow animation (existing pulsing) works correctly with the new golden border
+- [x] Dark mode completely unchanged for both tile shadows and hint button
 
 ---
 
-### Story 5.3: Grammar Practice — Complete Light Mode Redesign
+### Story 5.3: Grammar — "An Elegant Quiz at a Beach Café"
+
+**Emotional Target:** The question panel feels like a prompt card placed on a warm wooden table. Answer options feel like polished tiles you slide forward to choose. Getting it right brings a quiet green warmth. The explanation unfolds like opening a beautiful notebook — turquoise accent line, generous spacing, inviting text.
 
 **As a** user practicing grammar in light mode,
-**I want** questions, answers, and explanations to be clearly presented and beautifully designed,
-**So that** learning grammar feels elegant rather than clinical.
+**I want** the glass-on-glass gloss bugs fixed and the explanation panel to carry warm Caribbean identity,
+**So that** grammar practice feels elegant and the explanations feel like a gift, not a punishment.
 
-**Story Points:** 13
+**Story Points:** 5
 **Priority:** P0
 
-#### Subtask 5.3.1: Fix Critical Visibility Bugs
+#### Subtask 5.3.1: Fix Three Glass-on-Glass Gloss Bugs
 
-| Element | Bug | Fix |
-|---|---|---|
-| Question panel bg | Hardcoded dark purple `#2E1065` | Light mode: caribbeanRecessed with gradient tint |
-| Question text | Hardcoded `.white` | Light mode: caribbeanInk |
-| Translation text | `.white.opacity(0.65)` | Light mode: caribbeanPlum |
-| Answer button bg | `.white.opacity(0.06)` | Light mode: caribbeanElevated |
-| Answer button border | `.white.opacity(0.15)` | Light mode: caribbeanBorder |
-| Letter badge bg | `.white.opacity(0.12)` | Light mode: caribbeanSelected |
-| Letter badge border | `.white.opacity(0.20)` | Light mode: caribbeanBorder |
-| Explanation container bg | `.white.opacity(0.04)` | Light mode: caribbeanRecessed |
-| Explanation border | `.white.opacity(0.12)` | Light mode: caribbeanBorderSubtle |
-| Explanation gloss | `.white.opacity(0.06)` | Light mode: white.opacity(0.35) |
+GrammarView has a pattern of `.white.opacity(0.08-0.10)` top gloss highlights that work beautifully in dark mode (catching light on dark glass) but are invisible or mildly strange in light mode. These need to be made isDark-conditional:
+
+| # | Element | Location | Current | Fix |
+|---|---|---|---|---|
+| 1 | **Outer card glass curvature** | `questionCard` bg ZStack (~line 249-255) | `.white.opacity(0.10)` — unconditional | `isDark ? .white.opacity(0.10) : Color.caribbeanOcean.opacity(0.04)` — in light mode, a whisper of turquoise instead of invisible white. The card subtly announces "Caribbean" |
+| 2 | **Question panel top gloss** | `questionTextPanel` bg ZStack (~line 351-361) | `.white.opacity(0.10)` — unconditional | `isDark ? .white.opacity(0.10) : Color.caribbeanOcean.opacity(0.05)` — matching turquoise tint, slightly stronger because the panel is recessed |
+| 3 | **Answer button top gloss** | `answerButton` bg ZStack (~line 592-598) | `.white.opacity(0.08)` — unconditional | `isDark ? .white.opacity(0.08) : Color.caribbeanOcean.opacity(0.03)` — barely-there ocean tint that subtly ties each answer option to the Caribbean system |
+
+**Design rationale:** In dark mode, white gloss catches light on dark glass — it's a real-world material behavior. In light mode, the same white gloss is invisible (white on white). Instead, we use a near-invisible turquoise tint — this serves the same function (subtle depth/curvature hint) while also carrying the Caribbean color signature. The user doesn't consciously see it, but subconsciously everything feels "cohesive and warm" instead of "flat and generic."
 
 **Acceptance Criteria:**
-- [ ] All 10 visibility issues resolved
-- [ ] Question panel uses warm recessed background, not dark purple in light mode
-- [ ] All answer buttons clearly visible with defined borders
-- [ ] Letter badges (A, B, C, D) have contrasting backgrounds
-- [ ] Explanation container has warm, readable background
-- [ ] Dark mode completely unchanged — all changes conditional
+- [x] All three gloss highlights render as subtle turquoise tints in light mode
+- [x] The turquoise is barely perceptible — it's subliminal, not decorative
+- [x] Each gloss level is slightly different (0.04, 0.05, 0.03) creating micro-hierarchy
+- [x] Dark mode completely unchanged — existing white gloss behavior preserved
+- [x] Combined effect: the entire grammar card has a cohesive "warm ocean glass" feel in light mode
 
-#### Subtask 5.3.2: Redesign Grammar Question Panel for Light Mode
+#### Subtask 5.3.2: Add Turquoise Accent Line to Explanation Panel
 
-**Proposed premium light mode question panel:**
+The explanation panel (powered by `CollapsibleSection`) already has proper light mode styling — `caribbeanRecessed` background, `caribbeanBorder` stroke, properly conditional gloss. But it lacks the one detail that elevates it from "functional" to "beautiful": a turquoise identity accent.
+
+Add a thin vertical accent line on the left edge in light mode:
+```swift
+// In explanationPanel .background ZStack, after the fill:
+if !isDark {
+    HStack {
+        RoundedRectangle(cornerRadius: 2)
+            .fill(Color.caribbeanLagoon.opacity(0.35))
+            .frame(width: 3)
+            .padding(.vertical, 10)
+        Spacer()
+    }
+    .padding(.leading, 4)
+}
 ```
-Container:
-  - Background: caribbeanRecessed
-  - Gradient overlay: #0EA5E9 @ 0.05 (top) → #06B6D4 @ 0.03 (bottom) — turquoise ocean overlay
-    (very subtle purple tint — distinguishes it from plain recessed)
-  - Top highlight: white @ 0.45 → 0.0 (height 2pt)
-  - Border: caribbeanBorder, lineWidth 0.75
-  - Corner radius: parentRadius - 8 (nested card feel)
-  - Inset shadow: caribbeanMist @ 0.04, radius 4 (pushed IN effect)
 
-Question text:
-  - Font: .title3 weight .semibold
-  - Color: caribbeanInk
-  - Line height: 1.4x (generous for readability)
-
-Translation/hint:
-  - Font: .callout weight .regular, italic
-  - Color: caribbeanPlum
-  - Separator above: caribbeanBorderSubtle horizontal line
-```
+This is a classic editorial design pattern — a colored accent bar that says "this is supplementary, educational content." The turquoise color connects it to the app's Caribbean identity while the thin proportions keep it refined.
 
 **Acceptance Criteria:**
-- [ ] Question panel feels "recessed" within the parent card — pushed in, not floating
-- [ ] Inset shadow creates depth — panel is a "well" within the card
-- [ ] Question text is the most prominent element — high contrast, generous size
-- [ ] Translation text is clearly secondary — lower emphasis, italic
-- [ ] Warm purple tint overlay connects panel to the Caribbean palette
-- [ ] Panel corners are smooth and proportional to parent
+- [x] Explanation panel in light mode has a thin turquoise accent line on its left edge
+- [x] Accent line is `caribbeanLagoon.opacity(0.35)` — visible but not loud
+- [x] Line is 3pt wide with 10pt vertical padding — proportional and elegant
+- [x] Dark mode explanation panel is completely unchanged
+- [x] The accent line immediately signals "this is helpful information" — editorial warmth, not clinical coldness
 
-#### Subtask 5.3.3: Redesign Grammar Answer Options for Light Mode
+#### Subtask 5.3.3: GameHeader Progress Bar Shimmer Fix (Shared)
 
-**Proposed premium light mode answer options:**
-```
-Default state:
-  - Background: caribbeanElevated
-  - Border: caribbeanBorder, lineWidth 1
-  - Corner radius: caribbeanRadiusMedium (14pt)
-  - Letter badge:
-    - Circle, 28pt diameter
-    - Fill: caribbeanSelected (#0EA5E9 @ 0.12)
-    - Text: caribbeanInk, weight .bold
-    - Border: caribbeanBorder
-  - Answer text: caribbeanInk, .body weight .regular
-  - Shadow: caribbeanShadowSubtle
+The same progress bar shimmer bug from Story 5.1.5 affects Grammar mode (which uses the `.heartbeat` effect — a pulsing dot at the fill edge). The heartbeat dot uses colors from `theme.gradientColors` which are already properly defined, but the `.fireTrail` effect (used by WordBuilder) has `.white.opacity(0.6)` in its RadialGradient center — this creates a harsh white spot on the colored fill bar in light mode.
 
-Pressed state:
-  - Background: caribbeanHover
-  - Scale: 0.98
-  - Shadow: compressed
-  - Border: caribbeanBorderFocus
-
-Selected — Correct:
-  - Background: caribbeanSuccessSoft (#059669 @ 0.12)
-  - Border: caribbeanSuccess (#059669), lineWidth 1.5
-  - Letter badge: caribbeanSuccess fill, white text
-  - Answer text: caribbeanSuccess
-  - Checkmark icon appears (right side), caribbeanSuccess
-  - Shadow: #059669 @ 0.10, radius 8 (green glow)
-  - Scale: 1.01 (slight expansion — "chosen" feeling)
-
-Selected — Wrong:
-  - Background: caribbeanErrorSoft (#DC2626 @ 0.10)
-  - Border: caribbeanError (#DC2626), lineWidth 1.5
-  - Letter badge: caribbeanError fill, white text
-  - Answer text: caribbeanError
-  - X icon appears (right side), caribbeanError
-  - Shake animation: 3 cycles, 6pt horizontal
-  - Then fade to 0.5 opacity (de-emphasized)
-
-Revealed correct (when user selected wrong):
-  - Same as "Selected — Correct" but with a pulsing green glow
-  - Draws eye to the correct answer after processing the wrong one
-```
+This is technically in GameHeader.swift (shared), so the fix from Story 5.1.5 covers all three game modes. Listing it here for completeness — the Grammar view's progress bar benefits from the same fix.
 
 **Acceptance Criteria:**
-- [ ] Default answer options are clearly defined, tappable rectangles
-- [ ] Letter badges (A, B, C, D) are prominent and help with quick identification
-- [ ] Pressed state gives immediate feedback (within 1 frame)
-- [ ] Correct selection triggers a warm green celebration that feels rewarding
-- [ ] Wrong selection triggers red with a shake — firm but not punishing
-- [ ] The correct answer is revealed clearly after a wrong selection
-- [ ] Transition animations between states are smooth (0.25-0.35s)
-- [ ] All answer options maintain alignment during state transitions
-
-#### Subtask 5.3.4: Redesign Grammar Explanation Panel for Light Mode
-
-**Proposed premium explanation panel:**
-```
-Appears after answering — slides up from below answer options:
-
-Container:
-  - Background: caribbeanRecessed.opacity(0.7)
-  - Top border: caribbeanGradientOcean fill, height 2pt (turquoise accent line — like a horizon)
-  - Corner radius: caribbeanRadiusMedium
-  - Inner padding: caribbeanSpacingBase (12pt)
-
-Icon (leading):
-  - "info.circle.fill" in caribbeanInfo (#7C3AED)
-  - 24pt, weight .semibold
-
-Title:
-  - "Explanation" — caribbeanInk, .callout weight .bold
-
-Body:
-  - Explanation text — caribbeanPlum, .body weight .regular
-  - Line height: 1.5x (generous for reading comprehension)
-
-Optional tip callout:
-  - Background: caribbeanInfoSoft (#7C3AED @ 0.10)
-  - Border left: caribbeanInfo, lineWidth 2
-  - Text: caribbeanInk, .callout, italic
-  - Prefix: "💡 Tip: "
-
-Disclosure chevron:
-  - caribbeanMist
-  - Rotates 180° on expand/collapse
-```
-
-**Acceptance Criteria:**
-- [ ] Explanation panel appears with a smooth slide-up animation
-- [ ] Top gradient accent line connects it to the app's Caribbean identity
-- [ ] Info icon clearly marks this as explanatory content
-- [ ] Text is readable with generous line height — grammar explanations need breathing room
-- [ ] Tip callout (if present) is visually distinct from main explanation
-- [ ] Panel is collapsible with smooth chevron rotation
-- [ ] Panel doesn't push content off screen — scrolls if needed
+- [x] Grammar progress bar heartbeat effect looks correct in light mode (themed colors, no white artifacts)
+- [x] WordBuilder fire trail effect uses themed center instead of `.white.opacity(0.6)` in light mode
+- [x] All three game modes benefit from the shared GameHeader shimmer fix
 
 ---
 
