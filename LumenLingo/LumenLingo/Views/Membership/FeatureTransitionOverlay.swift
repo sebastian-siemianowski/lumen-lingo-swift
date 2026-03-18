@@ -17,7 +17,6 @@ struct FeatureTransitionOverlay: View {
     @State private var showSummary = false
     @State private var dismissing = false
     @State private var ripplePhase: CGFloat = 0
-    @State private var sparkleStates: [Int: Bool] = [:]
     @State private var backgroundGlow: CGFloat = 0.2
     @State private var backgroundSaturation: CGFloat = 1.0
 
@@ -143,7 +142,6 @@ struct FeatureTransitionOverlay: View {
 
     private func featureRow(feature: PremiumFeature, index: Int) -> some View {
         let isRevealed = revealedIndices.contains(index)
-        let hasSparkle = sparkleStates[index] == true
 
         return HStack(spacing: 14) {
             ZStack {
@@ -164,12 +162,6 @@ struct FeatureTransitionOverlay: View {
                                     startPoint: .topLeading, endPoint: .bottomTrailing)))
                     )
                     .saturation(isUpgrade ? (isRevealed ? 1.0 : 0.0) : (isRevealed ? 0.2 : 1.0))
-
-                // Sparkle burst (upgrade only)
-                if isUpgrade && hasSparkle {
-                    SparkleUnlockEffect()
-                        .transition(.opacity)
-                }
 
                 // Lock overlay (downgrade only)
                 if !isUpgrade && isRevealed {
@@ -390,16 +382,6 @@ struct FeatureTransitionOverlay: View {
                     let feedback = UIImpactFeedbackGenerator(style: .light)
                     feedback.impactOccurred()
                 }
-
-                // Sparkle burst (upgrade only)
-                if isUpgrade {
-                    withAnimation(.easeOut(duration: 0.4)) {
-                        sparkleStates[index] = true
-                    }
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        sparkleStates[index] = false
-                    }
-                }
             }
         }
 
@@ -437,7 +419,6 @@ struct FeatureTransitionOverlay: View {
         showSummary = false
         dismissing = false
         ripplePhase = 0
-        sparkleStates = [:]
         backgroundGlow = 0.2
         backgroundSaturation = 1.0
     }
@@ -472,44 +453,5 @@ struct FeatureTransitionOverlay: View {
                 .frame(height: 0.5)
         }
         .padding(.horizontal, 32)
-    }
-}
-
-// MARK: - Sparkle Unlock Effect
-
-/// 12-particle burst that emanates outward and fades over 0.5s.
-struct SparkleUnlockEffect: View {
-    @State private var phase: CGFloat = 0
-
-    var body: some View {
-        Canvas { context, size in
-            let center = CGPoint(x: size.width / 2, y: size.height / 2)
-            let particleCount = 12
-
-            for i in 0..<particleCount {
-                let angle = (Double(i) / Double(particleCount)) * .pi * 2
-                let distance: CGFloat = 6 + phase * 18
-                let x = center.x + cos(angle) * distance
-                let y = center.y + sin(angle) * distance
-                let opacity = max(0, 1.0 - phase * 1.5)
-                let radius: CGFloat = 1.5 * (1.0 - phase * 0.6)
-
-                context.opacity = opacity
-                let rect = CGRect(
-                    x: x - radius, y: y - radius,
-                    width: radius * 2, height: radius * 2
-                )
-                context.fill(
-                    Path(ellipseIn: rect),
-                    with: .color(.white)
-                )
-            }
-        }
-        .frame(width: 44, height: 44)
-        .onAppear {
-            withAnimation(.easeOut(duration: 0.5)) {
-                phase = 1.0
-            }
-        }
     }
 }
