@@ -96,24 +96,24 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **1.1.1** — Refactor `DashboardView` header to use `CollapsibleSection` with a new `style: .hero` variant (retaining `GlassCardBackground` visual treatment internally)
-- **1.1.2** — Refactor `SoundscapeNowPlaying` to use `CollapsibleSection` with a new `style: .miniPlayer` variant that preserves the soundscape-colored background and compact layout
-- **1.1.3** — Replace `MyPlanCard`'s bespoke expand/collapse with a `CollapsibleSection` nested content pattern — eliminate the double-collapse anti-pattern by making the feature list always visible when the parent section is expanded
-- **1.1.4** — Replace `MembershipView`'s feature comparison toggle with `CollapsibleSection` using `style: .inline` (capsule-free, text-link chevron)
-- **1.1.5** — Replace `GrammarView`'s `DisclosureGroup` with `CollapsibleSection` using `style: .tip` — preserving the lightbulb pulse animation and blue glow treatment
-- **1.1.6** — Verify all 20 collapse instances now route through `CollapsibleSection` — zero bespoke implementations remain
-- **1.1.7** — Add snapshot tests for each style variant (`.standard`, `.hero`, `.miniPlayer`, `.inline`, `.tip`) in both collapsed and expanded states, light and dark mode
+- [x] **1.1.1** — Refactor `DashboardView` header to use `CollapsibleSection` with a new `style: .hero` variant (retaining `GlassCardBackground` visual treatment internally)
+- [x] **1.1.2** — Refactor `SoundscapeNowPlaying` to use `CollapsibleSection` with a new `style: .miniPlayer` variant that preserves the soundscape-colored background and compact layout
+- [x] **1.1.3** — Replace `MyPlanCard`'s bespoke expand/collapse with a `CollapsibleSection` nested content pattern — eliminate the double-collapse anti-pattern by making the feature list always visible when the parent section is expanded
+- [x] **1.1.4** — Replace `MembershipView`'s feature comparison toggle with `CollapsibleSection` using `style: .inline` (capsule-free, text-link chevron)
+- [x] **1.1.5** — Replace `GrammarView`'s `DisclosureGroup` with `CollapsibleSection` using `style: .tip` — preserving the lightbulb pulse animation and blue glow treatment
+- [x] **1.1.6** — Verify all 20 collapse instances now route through `CollapsibleSection` — zero bespoke implementations remain
+- [ ] **1.1.7** — Add snapshot tests for each style variant (`.standard`, `.hero`, `.miniPlayer`, `.inline`, `.tip`) in both collapsed and expanded states, light and dark mode
 
 #### Acceptance Criteria
 
-- [ ] `CollapsibleSection` supports a `style` parameter with cases: `.standard` (current default), `.hero`, `.miniPlayer`, `.inline`, `.tip`
-- [ ] Dashboard header collapse uses `CollapsibleSection(style: .hero, ...)` and is visually identical to the current bespoke implementation
-- [ ] SoundscapeNowPlaying uses `CollapsibleSection(style: .miniPlayer, ...)` and retains soundscape-colored background/border
-- [ ] MyPlanCard no longer has its own `isExpanded` state — the feature list is always shown when the parent `CollapsibleSection` is expanded
-- [ ] MembershipView feature comparison uses `CollapsibleSection(style: .inline, ...)`
-- [ ] GrammarView tip uses `CollapsibleSection(style: .tip, ...)` with preserved lightbulb `symbolEffect(.pulse)`
-- [ ] Zero instances of bespoke collapse logic remain in the codebase (verified by searching for independent `isExpanded` / `isCollapsed` toggle patterns)
-- [ ] All 20 collapse instances compile and function identically to their pre-refactor behavior
+- [x] `CollapsibleSection` supports a `style` parameter with cases: `.standard` (current default), `.hero`, `.miniPlayer`, `.inline`, `.tip`
+- [x] Dashboard header collapse uses `CollapsibleSection(style: .hero, ...)` and is visually identical to the current bespoke implementation
+- [x] SoundscapeNowPlaying uses `CollapsibleSection(style: .miniPlayer, ...)` and retains soundscape-colored background/border
+- [x] MyPlanCard no longer has its own `isExpanded` state — the feature list is always shown when the parent `CollapsibleSection` is expanded
+- [x] MembershipView feature comparison uses `CollapsibleSection(style: .inline, ...)`
+- [x] GrammarView tip uses `CollapsibleSection(style: .tip, ...)` with preserved lightbulb `symbolEffect(.pulse)`
+- [x] Zero instances of bespoke collapse logic remain in the codebase (verified by searching for independent `isExpanded` / `isCollapsed` toggle patterns)
+- [x] All 20 collapse instances compile and function identically to their pre-refactor behavior
 - [ ] 10 snapshot tests pass (5 styles × 2 color schemes)
 
 ---

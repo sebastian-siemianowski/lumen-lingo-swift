@@ -53,7 +53,7 @@ struct AccuracyHeatmapView: View {
     }
 
     // Story 3.1 – expand/collapse (session-only, resets on relaunch)
-    @State private var isMasteredExpanded = false
+    @State private var isMasteredCollapsed = true
 
     // MARK: - Colors
 
@@ -121,12 +121,12 @@ struct AccuracyHeatmapView: View {
     // MARK: - Story 3.1: Mastered Summary Card
 
     private var masteredSummaryCard: some View {
-        VStack(spacing: 0) {
-            Button {
-                withAnimation(.spring(duration: 0.35, bounce: 0.2)) {
-                    isMasteredExpanded.toggle()
-                }
-            } label: {
+        CollapsibleSection(
+            style: .standard,
+            colors: [Color(hex: "#10b981"), Color(hex: "#f59e0b")],
+            isCollapsed: $isMasteredCollapsed,
+            cornerRadius: 14,
+            header: {
                 HStack(spacing: 10) {
                     Text("🏆")
                         .font(.system(size: 22))
@@ -152,7 +152,8 @@ struct AccuracyHeatmapView: View {
                     Image(systemName: "chevron.right")
                         .font(.system(size: 11, weight: .bold))
                         .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                        .rotationEffect(.degrees(isMasteredExpanded ? 90 : 0))
+                        .rotationEffect(.degrees(isMasteredCollapsed ? 0 : 90))
+                        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: isMasteredCollapsed)
                 }
                 .padding(12)
                 .background(
@@ -178,11 +179,8 @@ struct AccuracyHeatmapView: View {
                                 )
                         )
                 )
-            }
-            .buttonStyle(.plain)
-
-            // Expanded list
-            if isMasteredExpanded {
+            },
+            content: {
                 VStack(spacing: 0) {
                     ForEach(masteredCategories) { cat in
                         HStack(spacing: 8) {
@@ -202,12 +200,8 @@ struct AccuracyHeatmapView: View {
                     }
                 }
                 .padding(.top, 4)
-                .transition(.asymmetric(
-                    insertion: .move(edge: .top).combined(with: .opacity),
-                    removal: .opacity
-                ))
             }
-        }
+        )
         .padding(.bottom, inProgressCategories.isEmpty ? 0 : 4)
     }
 

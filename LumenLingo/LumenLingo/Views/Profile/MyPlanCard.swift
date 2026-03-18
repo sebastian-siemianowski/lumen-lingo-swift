@@ -8,7 +8,6 @@ struct MyPlanCard: View {
     @Environment(TierManager.self) private var tierManager
     @Environment(\.colorScheme) private var colorScheme
 
-    @State private var isExpanded = false
     @State private var appeared = false
 
     private var isDark: Bool { colorScheme == .dark }
@@ -20,28 +19,13 @@ struct MyPlanCard: View {
             headerRow
                 .padding(.bottom, 14)
 
-            // Top 3 features
-            topFeatures
-                .padding(.bottom, 12)
+            // Full feature list (always visible — parent CollapsibleSection manages expand/collapse)
+            allFeaturesSection
 
-            // Expand/collapse toggle
-            if !isExpanded {
-                expandButton
-            }
-
-            // Full feature list (expandable)
-            if isExpanded {
-                allFeaturesSection
-                    .padding(.top, 4)
-
-                // Upgrade link (only if not Royal)
-                if tier != .royal && tier != .trial {
-                    upgradeLink
-                        .padding(.top, 14)
-                }
-
-                collapseButton
-                    .padding(.top, 8)
+            // Upgrade link (only if not Royal)
+            if tier != .royal && tier != .trial {
+                upgradeLink
+                    .padding(.top, 14)
             }
         }
         .padding(16)
@@ -132,24 +116,6 @@ struct MyPlanCard: View {
         )
     }
 
-    // MARK: - Top Features
-
-    private var topFeatures: some View {
-        let features = tierManager.allFeatures()
-        let top3 = Array(features.filter(\.enabled).prefix(3))
-
-        return VStack(spacing: 8) {
-            ForEach(top3, id: \.feature) { item in
-                featureRow(
-                    icon: item.feature.iconName,
-                    name: item.feature.displayName,
-                    enabled: true,
-                    count: tierManager.allowedCount(for: item.feature)
-                )
-            }
-        }
-    }
-
     // MARK: - Full Feature List
 
     private var allFeaturesSection: some View {
@@ -204,42 +170,6 @@ struct MyPlanCard: View {
             }
         }
         .padding(.vertical, 4)
-    }
-
-    // MARK: - Expand / Collapse Buttons
-
-    private var expandButton: some View {
-        Button {
-            withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
-                isExpanded = true
-            }
-        } label: {
-            HStack(spacing: 4) {
-                Text("See all features")
-                    .font(.system(size: 12, weight: .medium))
-                Image(systemName: "chevron.down")
-                    .font(.system(size: 10, weight: .semibold))
-            }
-            .foregroundStyle(isDark ? .white.opacity(0.45) : .secondary)
-        }
-        .buttonStyle(.plain)
-    }
-
-    private var collapseButton: some View {
-        Button {
-            withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
-                isExpanded = false
-            }
-        } label: {
-            HStack(spacing: 4) {
-                Text("Show less")
-                    .font(.system(size: 12, weight: .medium))
-                Image(systemName: "chevron.up")
-                    .font(.system(size: 10, weight: .semibold))
-            }
-            .foregroundStyle(isDark ? .white.opacity(0.45) : .secondary)
-        }
-        .buttonStyle(.plain)
     }
 
     // MARK: - Upgrade Link

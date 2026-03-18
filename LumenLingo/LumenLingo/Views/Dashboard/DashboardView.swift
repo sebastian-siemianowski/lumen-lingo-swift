@@ -196,6 +196,27 @@ struct DashboardView: View {
     // MARK: - Dashboard Header
 
     private var dashboardHeader: some View {
+        CollapsibleSection(
+            style: .hero,
+            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+            isCollapsed: $isHeaderCollapsed,
+            header: {
+                dashboardHeaderContent
+            },
+            content: {
+                statsRow
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 16)
+            }
+        )
+        .onAppear {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.3)) {
+                tierIconAppeared = true
+            }
+        }
+    }
+
+    private var dashboardHeaderContent: some View {
         VStack(spacing: 16) {
             // Avatar + Greeting row
             HStack(spacing: 10) {
@@ -273,7 +294,7 @@ struct DashboardView: View {
 
                 if !isHeaderCollapsed {
                     Button {
-                        withAnimation(.spring(response: 0.4)) {
+                        withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
                             isHeaderCollapsed.toggle()
                         }
                         HapticsService.shared.toggleSwitch()
@@ -288,30 +309,13 @@ struct DashboardView: View {
                 }
             }
 
-            // Stats row (collapsible)
-            if !isHeaderCollapsed {
-                statsRow
-                    .transition(.move(edge: .top).combined(with: .opacity))
-            } else {
+            // Compact stat badges when collapsed
+            if isHeaderCollapsed {
                 compactStatBadges
                     .transition(.opacity)
             }
         }
         .padding(16)
-        .background(GlassCardBackground())
-        .onAppear {
-            withAnimation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.3)) {
-                tierIconAppeared = true
-            }
-        }
-        .onTapGesture {
-            if isHeaderCollapsed {
-                HapticsService.shared.toggleSwitch()
-                withAnimation(.spring(response: 0.4)) {
-                    isHeaderCollapsed = false
-                }
-            }
-        }
     }
 
     private var statsRow: some View {

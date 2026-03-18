@@ -13,7 +13,7 @@ struct MembershipView: View {
     @Environment(TierManager.self) private var tierManager
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
-    @State private var showComparison = false
+    @State private var isComparisonCollapsed = true
     @State private var selectedTierId: String = "free"
 
     /// When true, shows a close button in the toolbar (for sheet presentations).
@@ -28,8 +28,7 @@ struct MembershipView: View {
                 heroSection
                 tiersSection
 
-                comparisonToggle
-                if showComparison { comparisonTable }
+                comparisonSection
 
                 Spacer(minLength: 80)
             }
@@ -189,29 +188,40 @@ struct MembershipView: View {
         }
     }
 
-    // MARK: - Comparison Toggle
+    // MARK: - Comparison Section
 
-    private var comparisonToggle: some View {
-        Button {
-            AudioService.shared.playPanelExpand()
-            HapticsService.shared.buttonPress()
-            withAnimation(.spring(response: 0.4)) { showComparison.toggle() }
-        } label: {
-            HStack {
-                Text(L.featureComparison)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk)
-                Image(systemName: showComparison ? "chevron.up" : "chevron.down")
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+    private var comparisonSection: some View {
+        CollapsibleSection(
+            style: .inline,
+            colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+            isCollapsed: $isComparisonCollapsed,
+            header: {
+                HStack {
+                    Text(L.featureComparison)
+                        .font(.subheadline.bold())
+                        .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk)
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                        .rotationEffect(.degrees(isComparisonCollapsed ? 0 : 90))
+                        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: isComparisonCollapsed)
+                }
+                .padding(.vertical, 10)
+                .padding(.horizontal, 20)
+                .background(
+                    Capsule().fill(.white.opacity(0.06))
+                        .overlay(Capsule().strokeBorder(.white.opacity(0.06), lineWidth: 1))
+                )
+            },
+            content: {
+                comparisonTable
             }
-            .padding(.vertical, 10)
-            .padding(.horizontal, 20)
-            .background(
-                Capsule().fill(.white.opacity(0.06))
-                    .overlay(Capsule().strokeBorder(.white.opacity(0.06), lineWidth: 1))
-            )
+        )
+        .onChange(of: isComparisonCollapsed) { _, newValue in
+            if !newValue {
+                AudioService.shared.playPanelExpand()
+            }
         }
-        .buttonStyle(LumenPressStyle(weight: .medium))
     }
 
     // MARK: - Comparison Table

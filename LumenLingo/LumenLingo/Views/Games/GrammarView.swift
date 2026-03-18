@@ -656,39 +656,51 @@ struct GrammarView: View {
     // MARK: - Explanation
 
     private func explanationPanel(text: String) -> some View {
-        DisclosureGroup(isExpanded: Binding(
-            get: { showExplanation },
-            set: { newValue in
-                showExplanation = newValue
-                // Persist the user's expand/collapse preference
-                tipsExpanded = newValue
-                tipAvailablePulse = false
-                HapticsService.shared.toggleSwitch()
-            }
-        )) {
-            Text(text)
-                .font(.subheadline)
-                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanPlum)
-                .padding(.top, 8)
-        } label: {
-            HStack(spacing: 8) {
-                Image(systemName: "lightbulb.fill")
-                    .foregroundStyle(.yellow)
-                    .symbolEffect(.pulse, options: .repeating.speed(0.6), value: tipAvailablePulse && !showExplanation)
-                Text(L.grammarTip)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-
-                if !showExplanation && tipAvailablePulse {
-                    Text("Tap to read")
-                        .font(.caption2)
-                        .foregroundStyle(Color(hex: "#3b82f6").opacity(0.7))
-                        .transition(.opacity.combined(with: .scale(scale: 0.8)))
+        CollapsibleSection(
+            style: .tip,
+            colors: [Color(hex: "#3b82f6"), Color(hex: "#60a5fa")],
+            isCollapsed: Binding(
+                get: { !showExplanation },
+                set: { isCollapsed in
+                    showExplanation = !isCollapsed
+                    tipsExpanded = !isCollapsed
+                    tipAvailablePulse = false
                 }
+            ),
+            cornerRadius: 16,
+            header: {
+                HStack(spacing: 8) {
+                    Image(systemName: "lightbulb.fill")
+                        .foregroundStyle(.yellow)
+                        .symbolEffect(.pulse, options: .repeating.speed(0.6), value: tipAvailablePulse && !showExplanation)
+                    Text(L.grammarTip)
+                        .font(.subheadline.bold())
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+
+                    if !showExplanation && tipAvailablePulse {
+                        Text("Tap to read")
+                            .font(.caption2)
+                            .foregroundStyle(Color(hex: "#3b82f6").opacity(0.7))
+                            .transition(.opacity.combined(with: .scale(scale: 0.8)))
+                    }
+
+                    Spacer()
+
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanMist)
+                        .rotationEffect(.degrees(showExplanation ? 90 : 0))
+                }
+                .padding(14)
+            },
+            content: {
+                Text(text)
+                    .font(.subheadline)
+                    .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanPlum)
+                    .padding(.horizontal, 14)
+                    .padding(.bottom, 14)
             }
-        }
-        .tint(isDark ? .white.opacity(0.6) : .caribbeanMist)
-        .padding(14)
+        )
         .background(
             ZStack {
                 RoundedRectangle(cornerRadius: 16)

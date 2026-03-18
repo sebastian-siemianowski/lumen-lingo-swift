@@ -10,7 +10,7 @@ struct SoundscapeNowPlaying: View {
     @Environment(TierManager.self) private var tierManager
     @Query private var profiles: [UserProfile]
 
-    @State private var isExpanded = false
+    @State private var isCollapsed = true
     @State private var barOffsets: [CGFloat] = Array(repeating: 0, count: 9)
     @State private var playPausePressed = false
 
@@ -33,16 +33,19 @@ struct SoundscapeNowPlaying: View {
 
     var body: some View {
         if isVisible, let soundscape = audio.activeSoundscape {
-            VStack(spacing: 0) {
-                // Main player controls
-                mainRow(soundscape)
-
-                // Expanded volume + close
-                if isExpanded {
+            CollapsibleSection(
+                style: .miniPlayer,
+                colors: Array(soundscape.previewColors.prefix(2)),
+                isCollapsed: $isCollapsed,
+                cornerRadius: 18,
+                header: {
+                    mainRow(soundscape)
+                },
+                content: {
                     expandedControls(soundscape)
                         .transition(.opacity.combined(with: .move(edge: .top)))
                 }
-            }
+            )
             .background(playerBackground(soundscape))
             .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
             .overlay(
@@ -95,12 +98,6 @@ struct SoundscapeNowPlaying: View {
         .padding(.horizontal, 14)
         .padding(.vertical, 12)
         .contentShape(Rectangle())
-        .onTapGesture {
-            withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
-                isExpanded.toggle()
-            }
-            HapticsService.shared.buttonPress()
-        }
     }
 
     // MARK: - Artwork with Waveform Overlay
@@ -284,7 +281,7 @@ struct SoundscapeNowPlaying: View {
             Button {
                 HapticsService.shared.buttonPress()
                 withAnimation(.easeOut(duration: 0.25)) {
-                    isExpanded = false
+                    isCollapsed = true
                 }
                 audio.stopAmbient()
             } label: {
