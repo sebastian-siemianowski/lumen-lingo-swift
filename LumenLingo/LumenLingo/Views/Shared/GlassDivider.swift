@@ -206,14 +206,6 @@ struct LumenPressStyle: ButtonStyle {
         }
     }
 
-    private var hapticStyle: UIImpactFeedbackGenerator.FeedbackStyle {
-        switch weight {
-        case .soft:       .soft
-        case .medium:     .light
-        case .prominent:  .medium
-        }
-    }
-
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             // 1. Depth scale — simulate physical depression
@@ -238,8 +230,11 @@ struct LumenPressStyle: ButtonStyle {
             // 6. Haptic punctuation — immediate tactile acknowledgment
             .onChange(of: configuration.isPressed) { _, isPressed in
                 if isPressed {
-                    let generator = UIImpactFeedbackGenerator(style: hapticStyle)
-                    generator.impactOccurred()
+                    switch weight {
+                    case .soft:       HapticsService.shared.softTap(intensity: 0.5)
+                    case .medium:     HapticsService.shared.lightTap(intensity: 0.5)
+                    case .prominent:  HapticsService.shared.mediumTap()
+                    }
                 }
             }
     }
@@ -286,8 +281,7 @@ struct LumenCardPressStyle: ButtonStyle {
             // Soft haptic on touch-down
             .onChange(of: pressed) { _, isDown in
                 if isDown {
-                    let g = UIImpactFeedbackGenerator(style: .soft)
-                    g.impactOccurred(intensity: 0.6)
+                    HapticsService.shared.softTap(intensity: 0.6)
                 }
             }
     }
@@ -327,8 +321,7 @@ struct LumenCTAPressStyle: ButtonStyle {
             // Medium haptic — assertive acknowledgment
             .onChange(of: pressed) { _, isDown in
                 if isDown {
-                    let g = UIImpactFeedbackGenerator(style: .medium)
-                    g.impactOccurred()
+                    HapticsService.shared.mediumTap()
                 }
             }
     }
@@ -421,8 +414,7 @@ struct LumenNavigationPressModifier: ViewModifier {
                 withAnimation(.spring(response: 0.08, dampingFraction: 0.80)) {
                     isPressed = true
                 }
-                let g = UIImpactFeedbackGenerator(style: .soft)
-                g.impactOccurred(intensity: 0.7)
+                HapticsService.shared.softTap(intensity: 0.7)
                 AudioService.shared.playGameCardTap()
 
                 // 2) Bouncy spring-back after brief hold

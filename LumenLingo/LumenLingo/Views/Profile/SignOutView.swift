@@ -1,5 +1,5 @@
 import SwiftUI
-import Network
+import SwiftData
 
 // MARK: - Sign Out View
 
@@ -8,18 +8,19 @@ import Network
 struct SignOutView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(NetworkMonitor.self) private var networkMonitor
+
+    @Query private var profiles: [UserProfile]
 
     private var L: AppStrings { localization.strings }
+    private var profile: UserProfile? { profiles.first }
 
-    @State private var isOnline = true
     @State private var isLoggingOut = false
     @State private var logoutStep = ""
     @State private var showConfirmation = false
 
-    // Network monitor
-    @State private var networkMonitor: NWPathMonitor?
-
     private var isDark: Bool { colorScheme == .dark }
+    private var isOnline: Bool { networkMonitor.isConnected }
 
     var body: some View {
         VStack(spacing: 20) {
@@ -42,8 +43,6 @@ struct SignOutView: View {
                 logoutProgressView
             }
         }
-        .onAppear { startNetworkMonitoring() }
-        .onDisappear { stopNetworkMonitoring() }
     }
 
     // MARK: - Network Status
@@ -81,12 +80,12 @@ struct SignOutView: View {
 
     private var accountInfoSection: some View {
         VStack(spacing: 12) {
-            accountRow(icon: "envelope.fill", color: .cyan, title: L.email, value: AppUser.mock.email)
+            accountRow(icon: "envelope.fill", color: .cyan, title: L.email, value: profile?.email ?? "—")
 
             Divider()
                 .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
 
-            accountRow(icon: "person.fill", color: Color(hex: "#8b5cf6"), title: L.name, value: AppUser.mock.name)
+            accountRow(icon: "person.fill", color: Color(hex: "#8b5cf6"), title: L.name, value: profile?.firstName ?? "—")
 
             Divider()
                 .overlay(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.06))
@@ -257,23 +256,5 @@ struct SignOutView: View {
                 // via the AuthService. For mock, we simply reset.
             }
         }
-    }
-
-    // MARK: - Network Monitoring
-
-    private func startNetworkMonitoring() {
-        let monitor = NWPathMonitor()
-        monitor.pathUpdateHandler = { path in
-            DispatchQueue.main.async {
-                isOnline = (path.status == .satisfied)
-            }
-        }
-        monitor.start(queue: DispatchQueue(label: "NetworkMonitor"))
-        networkMonitor = monitor
-    }
-
-    private func stopNetworkMonitoring() {
-        networkMonitor?.cancel()
-        networkMonitor = nil
     }
 }

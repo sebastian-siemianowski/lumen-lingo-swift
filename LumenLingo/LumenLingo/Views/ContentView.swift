@@ -9,6 +9,8 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(ThemeManager.self) private var themeManager
+    @Environment(TierManager.self) private var tierManager
+    @Environment(PracticeTimeTracker.self) private var practiceTimeTracker
     @Environment(\.localization) private var localization
 
     @Query private var profiles: [UserProfile]
@@ -19,6 +21,8 @@ struct ContentView: View {
     @State private var selectedTab: AppTab = .dashboard
     @State private var hideTabBar: Bool = false
     @State private var navigationPath = NavigationPath()
+    @State private var showTrialEnded = false
+    @State private var showTierOnboarding = false
 
     // Services (shared across all views)
     @State private var progressService: ProgressService?
@@ -45,13 +49,19 @@ struct ContentView: View {
                 LumenLingoNavBar()
             }
 
+            networkSimulationBanner
+
             TabView(selection: $selectedTab) {
                 // MARK: Dashboard Tab
                 NavigationStack(path: $navigationPath) {
-                    DashboardView(
-                        hideTabBar: $hideTabBar,
-                        navigationPath: $navigationPath
-                    )
+                    VStack(spacing: 0) {
+                        OfflineBanner()
+
+                        DashboardView(
+                            hideTabBar: $hideTabBar,
+                            navigationPath: $navigationPath
+                        )
+                    }
                     .navigationDestination(for: AppRoute.self) { route in
                         routeDestination(for: route)
                     }
@@ -108,6 +118,18 @@ struct ContentView: View {
             setupServices()
             localization.update(from: languagePrefs)
             themeManager.syncFromProfile(profile)
+            tierManager.syncFromProfile(profile)
+            tierManager.validateState(profile: profile)
+            tierManager.pullFromCloud(profile: profile)
+            tierManager.startCloudSync(profile: profile)
+            // Check for trial expiration on app launch
+            if tierManager.checkTrialExpiration(profile: profile) {
+                showTrialEnded = true
+            }
+            // Show tier onboarding on first launch
+            if !UserDefaults.standard.bool(forKey: "hasSeenTierOnboarding") {
+                showTierOnboarding = true
+            }
             if let profile {
                 audioService.syncFromProfile(profile)
                 hapticsService.syncFromProfile(profile)
@@ -144,9 +166,19 @@ struct ContentView: View {
         .onChange(of: languagePrefs.first?.sourceLanguage) { _, _ in
             localization.update(from: languagePrefs)
         }
+        .onChange(of: tierManager.currentTier) { _, _ in
+            validateActiveLanguagePair()
+        }
         .environment(audioService)
         .environment(hapticsService)
         .environment(contentLoader)
+        .environment(practiceTimeTracker)
+        .fullScreenCover(isPresented: $showTrialEnded) {
+            TrialEndedView()
+        }
+        .fullScreenCover(isPresented: $showTierOnboarding) {
+            TierOnboardingFlow()
+        }
     }
 
     // MARK: Route Destination
@@ -299,6 +331,55 @@ struct ContentView: View {
             if let found = findTabBar(in: subview) { return found }
         }
         return nil
+    }
+
+    // MARK: - Language Pair Validation
+
+    /// When the tier changes (downgrade), validate that the active language pair
+    /// is still unlocked. If not, switch to the first unlocked pair.
+    private func validateActiveLanguagePair() {
+        guard let pref = languagePrefs.first else { return }
+        let currentPair = LanguagePair(
+            source: pref.sourceLanguageEnum,
+            target: pref.targetLanguageEnum
+        )
+        guard !tierManager.isLanguagePairUnlocked(currentPair) else { return }
+
+        // Switch to the first unlocked pair
+        if let fallback = tierManager.unlockedLanguagePairs().first {
+            pref.sourceLanguage = fallback.source.rawValue
+            pref.targetLanguage = fallback.target.rawValue
+            NotificationCenter.default.post(
+                name: .languagePairAutoSwitched,
+                object: nil,
+                userInfo: [
+                    "oldPair": currentPair.displayName,
+                    "newPair": fallback.displayName,
+                    "requiredTier": currentPair.minimumTier.displayName,
+                ]
+            )
+        }
+    }
+
+    // MARK: - Network Simulation Banner
+
+    @ViewBuilder
+    private var networkSimulationBanner: some View {
+        #if DEBUG
+        if DebugNetworkController.shared.isSimulating {
+            HStack(spacing: 6) {
+                Image(systemName: "antenna.radiowaves.left.and.right.slash")
+                    .font(.system(size: 10, weight: .bold))
+                Text(DebugNetworkController.shared.simulationMode.bannerLabel)
+                    .font(.system(size: 10, weight: .heavy, design: .monospaced))
+                    .tracking(0.5)
+            }
+            .foregroundStyle(.white)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 4)
+            .background(.red.opacity(0.85))
+        }
+        #endif
     }
 }
 

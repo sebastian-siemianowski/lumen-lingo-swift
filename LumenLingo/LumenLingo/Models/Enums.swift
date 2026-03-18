@@ -54,6 +54,25 @@ enum Difficulty: String, Codable, CaseIterable, Identifiable {
 
     var displayName: String { rawValue.capitalized }
 
+    /// Numeric rank for tier-based difficulty gating (1 = easiest).
+    var numericLevel: Int {
+        switch self {
+        case .beginner:     return 1
+        case .intermediate: return 2
+        case .advanced:     return 3
+        }
+    }
+
+    /// Initialize from a numeric level.
+    init?(level: Int) {
+        switch level {
+        case 1: self = .beginner
+        case 2: self = .intermediate
+        case 3: self = .advanced
+        default: return nil
+        }
+    }
+
     var color: Color {
         switch self {
         case .beginner: return .green
@@ -289,10 +308,11 @@ enum SupportedLanguage: String, Codable, CaseIterable, Identifiable {
 
 // MARK: - Language Pair
 
-struct LanguagePair: Equatable, Hashable, Codable {
+struct LanguagePair: Equatable, Hashable, Codable, Identifiable {
     let source: SupportedLanguage
     let target: SupportedLanguage
 
+    var id: String { key }
     var key: String { "\(source.rawValue)_\(target.rawValue)" }
 
     var displayName: String {
@@ -306,34 +326,52 @@ struct LanguagePair: Equatable, Hashable, Codable {
         }
     }
 
-    /// All language pairs that have bundled content (flashcards, grammar, wordbuilder)
+    /// All language pairs that have bundled content, sorted by popularity (priority order).
+    /// Position in this array determines unlock priority: Free gets first 3, Pro first 7, Elite+ all 25.
     static let withContent: [LanguagePair] = [
-        .init(source: .arabic, target: .english),
-        .init(source: .chinese, target: .english),
-        .init(source: .english, target: .arabic),
-        .init(source: .english, target: .chinese),
-        .init(source: .english, target: .french),
-        .init(source: .english, target: .german),
-        .init(source: .english, target: .japanese),
-        .init(source: .english, target: .polish),
-        .init(source: .english, target: .spanish),
-        .init(source: .french, target: .english),
-        .init(source: .german, target: .english),
-        .init(source: .german, target: .polish),
-        .init(source: .german, target: .spanish),
-        .init(source: .japanese, target: .english),
-        .init(source: .polish, target: .arabic),
-        .init(source: .polish, target: .chinese),
-        .init(source: .polish, target: .english),
-        .init(source: .polish, target: .french),
-        .init(source: .polish, target: .german),
-        .init(source: .polish, target: .japanese),
-        .init(source: .polish, target: .spanish),
-        .init(source: .polish, target: .ukrainian),
-        .init(source: .spanish, target: .english),
-        .init(source: .ukrainian, target: .english),
-        .init(source: .ukrainian, target: .polish),
+        // Free tier (0-2): Most popular globally
+        .init(source: .english, target: .spanish),      // 0
+        .init(source: .english, target: .french),        // 1
+        .init(source: .english, target: .german),        // 2
+        // Pro tier (3-6): Extended English pairs
+        .init(source: .english, target: .japanese),      // 3
+        .init(source: .english, target: .chinese),       // 4
+        .init(source: .english, target: .arabic),        // 5
+        .init(source: .english, target: .polish),        // 6
+        // Elite+ (7-24): Reverse pairs & regional combos
+        .init(source: .spanish, target: .english),       // 7
+        .init(source: .french, target: .english),        // 8
+        .init(source: .german, target: .english),        // 9
+        .init(source: .japanese, target: .english),      // 10
+        .init(source: .chinese, target: .english),       // 11
+        .init(source: .arabic, target: .english),        // 12
+        .init(source: .ukrainian, target: .english),     // 13
+        .init(source: .polish, target: .english),        // 14
+        .init(source: .polish, target: .spanish),        // 15
+        .init(source: .polish, target: .german),         // 16
+        .init(source: .polish, target: .french),         // 17
+        .init(source: .polish, target: .japanese),       // 18
+        .init(source: .polish, target: .chinese),        // 19
+        .init(source: .polish, target: .arabic),         // 20
+        .init(source: .polish, target: .ukrainian),      // 21
+        .init(source: .german, target: .spanish),        // 22
+        .init(source: .german, target: .polish),         // 23
+        .init(source: .ukrainian, target: .polish),      // 24
     ]
+
+    /// Zero-based position in the unlock priority list (lower = unlocked earlier).
+    /// Returns `nil` for pairs without bundled content.
+    var priorityOrder: Int? {
+        Self.withContent.firstIndex(of: self)
+    }
+
+    /// The minimum membership tier required to unlock this pair.
+    var minimumTier: MembershipTier {
+        guard let order = priorityOrder else { return .elite }
+        if order < 3  { return .free }   // First 3 are free
+        if order < 7  { return .pro }    // Next 4 unlock at Pro
+        return .elite                     // Remaining unlock at Elite
+    }
 
     /// Check if a pair has bundled content
     var hasContent: Bool {
@@ -344,39 +382,189 @@ struct LanguagePair: Equatable, Hashable, Codable {
 // MARK: - Membership Tier
 
 enum MembershipTier: String, CaseIterable, Identifiable {
-    case starter
+    case trial
+    case free
     case pro
     case elite
     case royal
 
     var id: String { rawValue }
 
-    var displayName: String { rawValue.capitalized }
+    /// Numeric rank for comparison: higher = more premium.
+    var rank: Int {
+        switch self {
+        case .free:  return 0
+        case .pro:   return 1
+        case .elite: return 2
+        case .royal: return 3
+        case .trial: return 3  // Trial = Royal-level access
+        }
+    }
+
+    var displayName: String {
+        switch self {
+        case .trial: return "Royal Trial"
+        case .free:  return "Starter"
+        case .pro:   return "Pro"
+        case .elite: return "Elite"
+        case .royal: return "Royal"
+        }
+    }
 
     var monthlyPrice: Decimal {
         switch self {
-        case .starter: return 0
-        case .pro: return 9.99
-        case .elite: return 19.99
-        case .royal: return 99.99
+        case .trial:   return 0
+        case .free:    return 0
+        case .pro:     return 9.99
+        case .elite:   return 19.99
+        case .royal:   return 99.99
         }
     }
 
     var iconName: String {
         switch self {
-        case .starter: return "star"
-        case .pro: return "star.fill"
-        case .elite: return "crown"
+        case .trial: return "gift.fill"
+        case .free:  return "globe"
+        case .pro:   return "bolt.fill"
+        case .elite: return "sparkles"
         case .royal: return "crown.fill"
+        }
+    }
+
+    var gradientColors: [Color] {
+        switch self {
+        case .trial: return [Color(hex: "#fbbf24"), Color(hex: "#a855f7"), Color(hex: "#ec4899")]
+        case .free:  return [Color(hex: "#94a3b8"), Color(hex: "#64748b")]
+        case .pro:   return [Color(hex: "#a855f7"), Color(hex: "#d946ef"), Color(hex: "#ec4899")]
+        case .elite: return [Color(hex: "#7c3aed"), Color(hex: "#9333ea"), Color(hex: "#a21caf")]
+        case .royal: return [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#f43f5e")]
         }
     }
 
     var accentColor: Color {
         switch self {
-        case .starter: return .gray
-        case .pro: return .blue
-        case .elite: return .purple
+        case .trial: return .orange
+        case .free:  return .gray
+        case .pro:   return .purple
+        case .elite: return .cyan
         case .royal: return .yellow
+        }
+    }
+
+    var emoji: String {
+        switch self {
+        case .trial: return "🎁"
+        case .free:  return ""
+        case .pro:   return "⚡"
+        case .elite: return "✨"
+        case .royal: return "👑"
+        }
+    }
+
+    /// Initialise from a tier ID string (e.g. from MembershipView or UserProfile).
+    /// Falls back to `.free` for unknown values.
+    init(tierId: String) {
+        self = MembershipTier(rawValue: tierId) ?? .free
+    }
+}
+
+// MARK: - Premium Feature
+
+/// Features that can be gated by tier.
+enum PremiumFeature: Equatable, Hashable, CaseIterable {
+    case soundscapes
+    case languagePairs
+    case unlimitedPractice
+    case breathingOrbs
+    case quantumFlow
+    case nebulaDrift
+    case offlineMode
+    case flashcardDeckSize
+    case grammarDifficulty
+    case wordBuilderDifficulty
+
+    /// SF Symbol for this feature.
+    var iconName: String {
+        switch self {
+        case .soundscapes:       return "headphones"
+        case .languagePairs:     return "globe"
+        case .unlimitedPractice: return "infinity"
+        case .breathingOrbs:     return "scope"
+        case .quantumFlow:       return "waveform.path.ecg"
+        case .nebulaDrift:       return "cloud.fog.fill"
+        case .offlineMode:       return "wifi.slash"
+        case .flashcardDeckSize:  return "rectangle.stack.fill"
+        case .grammarDifficulty:  return "text.book.closed.fill"
+        case .wordBuilderDifficulty: return "character.textbox"
+        }
+    }
+
+    /// Display name for UI.
+    var displayName: String {
+        switch self {
+        case .soundscapes:       return "Soundscapes"
+        case .languagePairs:     return "Language Pairs"
+        case .unlimitedPractice: return "Unlimited Practice"
+        case .breathingOrbs:     return "Breathing Orbs"
+        case .quantumFlow:       return "Quantum Flow"
+        case .nebulaDrift:       return "Nebula Drift"
+        case .offlineMode:       return "Offline Mode"
+        case .flashcardDeckSize: return "Extended Flashcard Decks"
+        case .grammarDifficulty: return "Advanced Grammar"
+        case .wordBuilderDifficulty: return "Advanced Word Builder"
+        }
+    }
+
+    /// One-line benefit description for upgrade prompts.
+    var benefitText: String {
+        switch self {
+        case .soundscapes:       return "Immersive ambient soundscapes to deepen focus"
+        case .languagePairs:     return "Learn more languages with expanded pair options"
+        case .unlimitedPractice: return "Practice without daily time limits"
+        case .breathingOrbs:     return "Beautiful breathing animations for mindful learning"
+        case .quantumFlow:       return "Mesmerising quantum particle visualisations"
+        case .nebulaDrift:       return "Stunning nebula backgrounds that evolve as you learn"
+        case .offlineMode:       return "Learn anywhere, even without internet"
+        case .flashcardDeckSize: return "Unlock larger flashcard decks to learn more vocabulary"
+        case .grammarDifficulty: return "Tackle harder grammar exercises to master the language"
+        case .wordBuilderDifficulty: return "Build longer, more complex words to boost your skills"
+        }
+    }
+
+    /// The minimum tier required to unlock this feature.
+    var minimumTier: MembershipTier {
+        switch self {
+        case .soundscapes:       return .pro
+        case .languagePairs:     return .free  // Free gets 3, Pro gets 7, Elite+ all
+        case .unlimitedPractice: return .pro
+        case .breathingOrbs:     return .pro
+        case .quantumFlow:       return .elite
+        case .nebulaDrift:       return .elite
+        case .offlineMode:       return .pro
+        case .flashcardDeckSize: return .free  // Free gets 50, Pro 75, Elite 100, Royal all
+        case .grammarDifficulty: return .free  // Free gets beginner, Pro+ unlock more
+        case .wordBuilderDifficulty: return .free
+        }
+    }
+
+    /// Features worth showcasing in the carousel (excludes languagePairs since Free gets some).
+    static var carouselFeatures: [PremiumFeature] {
+        [.soundscapes, .breathingOrbs, .unlimitedPractice]
+    }
+
+    /// Key for storing debug overrides in UserDefaults.
+    var overrideKey: String {
+        switch self {
+        case .soundscapes:       return "soundscapes"
+        case .languagePairs:     return "languagePairs"
+        case .unlimitedPractice: return "unlimitedPractice"
+        case .breathingOrbs:     return "breathingOrbs"
+        case .quantumFlow:       return "quantumFlow"
+        case .nebulaDrift:       return "nebulaDrift"
+        case .offlineMode:       return "offlineMode"
+        case .flashcardDeckSize: return "flashcardDeckSize"
+        case .grammarDifficulty: return "grammarDifficulty"
+        case .wordBuilderDifficulty: return "wordBuilderDifficulty"
         }
     }
 }
@@ -625,6 +813,25 @@ enum QuantumFlowScene: String, CaseIterable, Identifiable {
         }
     }
 
+    /// Deterministic unlock priority. Lower = unlocked first.
+    /// Elite (4 scenes) gets sortOrder 0–3; Royal/Trial get all 6.
+    var sortOrder: Int {
+        switch self {
+        case .dubaiCelestialMirage:      return 0
+        case .kyotoSacredTwilight:       return 1
+        case .buenosAiresTangoFlame:     return 2
+        case .hongKongHarbourDreams:     return 3   // Elite cap
+        case .marrakechSpiceReverie:     return 4
+        case .viennaImperialWaltz:       return 5
+        }
+    }
+
+    /// The minimum membership tier required to unlock this scene.
+    var minimumTier: MembershipTier {
+        if sortOrder < 4 { return .elite }
+        return .royal
+    }
+
     /// 3-color preview gradient for scheme cards
     var previewColors: [Color] {
         return [colors[0], colors[1], colors[2]]
@@ -674,6 +881,25 @@ enum NebulaPreset: String, CaseIterable, Identifiable {
         case .edgeOfAndromeda: return "star.fill"
         case .starburstRing: return "rays"
         }
+    }
+
+    /// Deterministic unlock priority. Lower = unlocked first.
+    /// Elite (4 presets) gets sortOrder 0–3; Royal/Trial get all 6.
+    var sortOrder: Int {
+        switch self {
+        case .lagoonNebula:      return 0
+        case .celestialLagoon:   return 1
+        case .edgeOfAndromeda:   return 2
+        case .solarAurora:       return 3   // Elite cap
+        case .spiralHaloGalaxy:  return 4
+        case .starburstRing:     return 5
+        }
+    }
+
+    /// The minimum membership tier required to unlock this preset.
+    var minimumTier: MembershipTier {
+        if sortOrder < 4 { return .elite }
+        return .royal
     }
 
     /// 3-color preview gradient for preset cards
@@ -737,6 +963,25 @@ enum Soundscape: String, CaseIterable, Identifiable {
     case tokyoNightStreet
 
     var id: String { rawValue }
+
+    /// Deterministic unlock priority. Lower = unlocked first.
+    /// Pro (1 soundscape) gets sortOrder 0; Elite (8) gets 0–7; Royal/Trial get all 12.
+    var sortOrder: Int {
+        switch self {
+        case .parisCafe:             return 0   // Pro's single soundscape
+        case .rainyWindow:           return 1
+        case .dominicanBeach:        return 2
+        case .mountainCampfire:      return 3
+        case .midnightJazzPiano:     return 4
+        case .japaneseBambooForest:  return 5
+        case .observatoryNight:      return 6
+        case .tokyoNightStreet:      return 7   // Elite cap
+        case .amazonRainforest:      return 8
+        case .desertNightSky:        return 9
+        case .veniceCanalMorning:    return 10
+        case .deepSpaceDrift:        return 11
+        }
+    }
 
     var category: SoundscapeCategory {
         switch self {
@@ -803,29 +1048,40 @@ enum Soundscape: String, CaseIterable, Identifiable {
         let id: Int          // 0-based index
         let fileName: String // e.g. "Paris-Café-1" (no extension)
         let label: String    // e.g. "Variant 1"
+        var loopStart: TimeInterval = 0   // skip initial silence (seconds)
+        var loopEnd: TimeInterval = 300   // crossfade back before end silence
     }
 
     var variants: [Variant] {
         switch self {
-        case .parisCafe:             return [Variant(id: 0, fileName: "Paris-Café-1", label: "Parisian Dawn"),
-                                              Variant(id: 1, fileName: "Paris-Café-2", label: "Evening Terrace")]
-        case .observatoryNight:      return [Variant(id: 0, fileName: "Observatory-Night-1", label: "Stargazer"),
-                                              Variant(id: 1, fileName: "Observatory-Night-2", label: "Deep Sky")]
-        case .dominicanBeach:        return [Variant(id: 0, fileName: "Dominican-Beach-1", label: "Shoreline"),
-                                              Variant(id: 1, fileName: "Dominican-Beach-2", label: "Sunset Cove")]
-        case .midnightJazzPiano:     return [Variant(id: 0, fileName: "Midnight-Jazz-Piano", label: "Late Set")]
-        case .rainyWindow:           return [Variant(id: 0, fileName: "Rainy-Window", label: "Gentle Rain")]
-        case .japaneseBambooForest:  return [Variant(id: 0, fileName: "Japanese-Bamboo-Forest", label: "Zen Garden")]
-        case .amazonRainforest:      return [Variant(id: 0, fileName: "Amazon-Rainforest", label: "Canopy")]
-        case .mountainCampfire:      return [Variant(id: 0, fileName: "Mountain-Campfire", label: "Fireside")]
-        case .desertNightSky:        return [Variant(id: 0, fileName: "Desert-Night-Sky", label: "Starlit Sand")]
+        case .parisCafe:             return [Variant(id: 0, fileName: "Paris-Café-1", label: "Parisian Dawn", loopStart: 4.5, loopEnd: 296),
+                                              Variant(id: 1, fileName: "Paris-Café-2", label: "Evening Terrace", loopStart: 1.5, loopEnd: 291)]
+        case .observatoryNight:      return [Variant(id: 0, fileName: "Observatory-Night-1", label: "Stargazer", loopStart: 1.5, loopEnd: 298),
+                                              Variant(id: 1, fileName: "Observatory-Night-2", label: "Deep Sky", loopStart: 9.5, loopEnd: 300)]
+        case .dominicanBeach:        return [Variant(id: 0, fileName: "Dominican-Beach-1", label: "Shoreline", loopStart: 4.5, loopEnd: 295),
+                                              Variant(id: 1, fileName: "Dominican-Beach-2", label: "Sunset Cove", loopStart: 1.0, loopEnd: 298)]
+        case .midnightJazzPiano:     return [Variant(id: 0, fileName: "Midnight-Jazz-Piano", label: "Late Set", loopStart: 0, loopEnd: 296)]
+        case .rainyWindow:           return [Variant(id: 0, fileName: "Rainy-Window", label: "Gentle Rain", loopStart: 4.0, loopEnd: 295)]
+        case .japaneseBambooForest:  return [Variant(id: 0, fileName: "Japanese-Bamboo-Forest", label: "Zen Garden", loopStart: 8.5, loopEnd: 297)]
+        case .amazonRainforest:      return [Variant(id: 0, fileName: "Amazon-Rainforest", label: "Canopy", loopStart: 5.5, loopEnd: 291)]
+        case .mountainCampfire:      return [Variant(id: 0, fileName: "Mountain-Campfire", label: "Fireside", loopStart: 1.5, loopEnd: 295)]
+        case .desertNightSky:        return [Variant(id: 0, fileName: "Desert-Night-Sky", label: "Starlit Sand", loopStart: 9.5, loopEnd: 256)]
         case .deepSpaceDrift:        return [Variant(id: 0, fileName: "Deep-Space-Drift", label: "Cosmic Float")]
-        case .veniceCanalMorning:    return [Variant(id: 0, fileName: "Venice-Canal-Morning", label: "Canal Bells")]
-        case .tokyoNightStreet:      return [Variant(id: 0, fileName: "Tokyo-Night-Street", label: "Neon Walk")]
+        case .veniceCanalMorning:    return [Variant(id: 0, fileName: "Venice-Canal-Morning", label: "Canal Bells", loopStart: 9.5, loopEnd: 290)]
+        case .tokyoNightStreet:      return [Variant(id: 0, fileName: "Tokyo-Night-Street", label: "Neon Walk", loopStart: 9.5, loopEnd: 294)]
         }
     }
 
     var hasMultipleVariants: Bool { variants.count > 1 }
+
+    /// The minimum tier required to unlock this soundscape.
+    var minimumTier: MembershipTier {
+        switch sortOrder {
+        case 0:      return .pro    // Pro gets 1
+        case 1...7:  return .elite  // Elite gets 8
+        default:     return .royal  // Royal gets all 12
+        }
+    }
 
     var previewColors: [Color] {
         switch self {

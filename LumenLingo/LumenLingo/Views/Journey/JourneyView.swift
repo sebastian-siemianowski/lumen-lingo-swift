@@ -9,6 +9,7 @@ struct JourneyView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(TierManager.self) private var tierManager
 
     private var L: AppStrings { localization.strings }
 
@@ -19,6 +20,51 @@ struct JourneyView: View {
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
+    /// Display name from real profile for personalization.
+    private var displayName: String {
+        profile?.firstName.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+    }
+    private var hasUserName: Bool { !displayName.isEmpty }
+
+    private var statsConfig: TierManager.JourneyStatsConfig {
+        tierManager.journeyStatsConfig()
+    }
+
+    private var badgeStyle: TierManager.MilestoneBadgeStyle {
+        tierManager.milestoneBadgeStyle
+    }
+
+    // MARK: - Badge Data
+
+    /// Number of milestones the user has unlocked.
+    private var completedMilestoneCount: Int {
+        let xp = profile?.totalXP ?? 0
+        return milestones.filter { xp >= $0.xpRequired }.count
+    }
+
+    /// Overall accuracy across all game types (0.0–1.0).
+    private var overallAccuracy: Double {
+        let totalCorrect = allProgress.reduce(0) { $0 + $1.correctAnswers }
+        let totalQuestions = allProgress.reduce(0) { $0 + $1.totalQuestions }
+        return totalQuestions > 0 ? Double(totalCorrect) / Double(totalQuestions) : 0
+    }
+
+    /// Badge for a tier-gated section: lock icon if locked, nil if unlocked.
+    private func tierBadge(for section: TierManager.JourneyStatsSection) -> CollapsibleBadge? {
+        statsConfig.sections.contains(section) ? nil : .icon("lock.fill", .secondary)
+    }
+
+    /// Whether a section is tier-locked (Story 4.3.1).
+    private func isSectionLocked(_ section: TierManager.JourneyStatsSection) -> Bool {
+        !statsConfig.sections.contains(section)
+    }
+
+    /// The required tier for a locked section (display name + accent color).
+    private func requiredTierInfo(for section: TierManager.JourneyStatsSection) -> (name: String, color: Color) {
+        let tier = TierManager.minimumTierForJourneySection(section)
+        return (tier.displayName, tier.accentColor)
+    }
+
     @State private var currentQuote: WisdomQuote = WisdomQuote.allQuotes.randomElement() ?? WisdomQuote.allQuotes[0]
     @State private var shownQuoteIndices: Set<Int> = []
     @State private var quoteOpacity: Double = 1.0
@@ -27,29 +73,198 @@ struct JourneyView: View {
     @State private var quoteIconRotation: Double = 0
     @State private var showResetAlert = false
 
+    // Collapsible section state
+    @State private var isStatsCollapsed = false
+    @State private var isMilestonesCollapsed = false
+    @State private var isGameBreakdownCollapsed = false
+    @State private var isDailyXPCollapsed = false
+    @State private var isWeeklyTrendCollapsed = false
+    @State private var isAccuracyHeatmapCollapsed = false
+    @State private var isMonthlyReportCollapsed = false
+    @State private var isMilestonePredictionsCollapsed = false
+    @State private var isExportDataCollapsed = false
+    @State private var isInsightsCollapsed = false
+    @State private var isStreakCollapsed = false
+    @State private var isQuoteCollapsed = false
+    @State private var isResetCollapsed = true
+
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 20) {
                 // Header
                 journeyHeader
 
-                // Overall stats
-                overallStatsPanel
+                // Overall stats (always visible — basicStats)
+                CollapsibleSection(
+                    title: hasUserName ? "\(displayName)'s XP" : L.totalXP,
+                    theme: .xpStats,
+                    isCollapsed: $isStatsCollapsed,
+                    badge: .text(formattedXP(profile?.totalXP ?? 0) + " XP")
+                ) {
+                    overallStatsPanel
+                }
 
-                // Milestones timeline
-                milestonesSection
+                // Milestones timeline (always visible, badge style varies by tier)
+                CollapsibleSection(
+                    title: L.milestones,
+                    theme: .milestones,
+                    isCollapsed: $isMilestonesCollapsed,
+                    badge: .count(completedMilestoneCount)
+                ) {
+                    milestonesSection
+                }
 
-                // Game type breakdown
-                gameTypeBreakdown
+                // Game type breakdown (Pro+)
+                CollapsibleSection(
+                    title: L.gamePerformance,
+                    theme: .gamePerformance,
+                    isCollapsed: $isGameBreakdownCollapsed,
+                    badge: tierBadge(for: .gameBreakdown) ?? .progress(overallAccuracy),
+                    isLocked: isSectionLocked(.gameBreakdown),
+                    lockedTierName: requiredTierInfo(for: .gameBreakdown).name,
+                    lockedTierColor: requiredTierInfo(for: .gameBreakdown).color
+                ) {
+                    journeySection(for: .gameBreakdown) {
+                        gameTypeBreakdown
+                    }
+                }
 
-                // Streak section
-                streakSection
+                // Daily XP Chart (Pro+)
+                CollapsibleSection(
+                    title: L.dailyXPChart,
+                    theme: .dailyXP,
+                    isCollapsed: $isDailyXPCollapsed,
+                    badge: tierBadge(for: .dailyXPChart),
+                    isLocked: isSectionLocked(.dailyXPChart),
+                    lockedTierName: requiredTierInfo(for: .dailyXPChart).name,
+                    lockedTierColor: requiredTierInfo(for: .dailyXPChart).color
+                ) {
+                    journeySection(for: .dailyXPChart) {
+                        DailyXPChartView(allProgress: allProgress)
+                    }
+                }
+
+                // Weekly Trend (Elite+)
+                CollapsibleSection(
+                    title: L.weeklyTrend,
+                    theme: .weeklyTrend,
+                    isCollapsed: $isWeeklyTrendCollapsed,
+                    badge: tierBadge(for: .weeklyTrend),
+                    isLocked: isSectionLocked(.weeklyTrend),
+                    lockedTierName: requiredTierInfo(for: .weeklyTrend).name,
+                    lockedTierColor: requiredTierInfo(for: .weeklyTrend).color
+                ) {
+                    journeySection(for: .weeklyTrend) {
+                        WeeklyTrendWidget(allProgress: allProgress)
+                    }
+                }
+
+                // Accuracy Heatmap (Elite+)
+                CollapsibleSection(
+                    title: L.accuracyHeatmap,
+                    theme: .accuracyHeatmap,
+                    isCollapsed: $isAccuracyHeatmapCollapsed,
+                    badge: tierBadge(for: .accuracyHeatmap),
+                    isLocked: isSectionLocked(.accuracyHeatmap),
+                    lockedTierName: requiredTierInfo(for: .accuracyHeatmap).name,
+                    lockedTierColor: requiredTierInfo(for: .accuracyHeatmap).color
+                ) {
+                    journeySection(for: .accuracyHeatmap) {
+                        AccuracyHeatmapView(allProgress: allProgress)
+                    }
+                }
+
+                // Monthly Report (Royal)
+                CollapsibleSection(
+                    title: L.monthlyReport,
+                    theme: .monthlyReport,
+                    isCollapsed: $isMonthlyReportCollapsed,
+                    badge: tierBadge(for: .monthlyReport),
+                    isLocked: isSectionLocked(.monthlyReport),
+                    lockedTierName: requiredTierInfo(for: .monthlyReport).name,
+                    lockedTierColor: requiredTierInfo(for: .monthlyReport).color
+                ) {
+                    journeySection(for: .monthlyReport) {
+                        MonthlyReportWidget(allProgress: allProgress, profile: profile)
+                    }
+                }
+
+                // Milestone Predictions (Royal)
+                CollapsibleSection(
+                    title: L.milestonePredictionsTitle,
+                    theme: .milestonePredictions,
+                    isCollapsed: $isMilestonePredictionsCollapsed,
+                    badge: tierBadge(for: .milestonePredictions),
+                    isLocked: isSectionLocked(.milestonePredictions),
+                    lockedTierName: requiredTierInfo(for: .milestonePredictions).name,
+                    lockedTierColor: requiredTierInfo(for: .milestonePredictions).color
+                ) {
+                    journeySection(for: .milestonePredictions) {
+                        MilestonePredictionWidget(
+                            allProgress: allProgress,
+                            profile: profile,
+                            milestones: milestones.map { JourneyMilestone(title: $0.title, icon: $0.icon, color: $0.color, xpRequired: $0.xpRequired) }
+                        )
+                    }
+                }
+
+                // Export Data (Elite+)
+                CollapsibleSection(
+                    title: L.exportData,
+                    theme: .exportData,
+                    isCollapsed: $isExportDataCollapsed,
+                    badge: tierBadge(for: .exportData),
+                    isLocked: isSectionLocked(.exportData),
+                    lockedTierName: requiredTierInfo(for: .exportData).name,
+                    lockedTierColor: requiredTierInfo(for: .exportData).color
+                ) {
+                    journeySection(for: .exportData) {
+                        ExportDataWidget(allProgress: allProgress, profile: profile)
+                    }
+                }
+
+                // Learning Insights (Royal)
+                CollapsibleSection(
+                    title: L.learningInsights,
+                    theme: .learningInsights,
+                    isCollapsed: $isInsightsCollapsed,
+                    badge: tierBadge(for: .insights),
+                    isLocked: isSectionLocked(.insights),
+                    lockedTierName: requiredTierInfo(for: .insights).name,
+                    lockedTierColor: requiredTierInfo(for: .insights).color
+                ) {
+                    journeySection(for: .insights) {
+                        InsightsDashboardWidget(allProgress: allProgress)
+                    }
+                }
+
+                // Streak section (always visible — part of basicStats)
+                CollapsibleSection(
+                    title: L.currentStreak,
+                    theme: .streak,
+                    isCollapsed: $isStreakCollapsed,
+                    badge: .count(profile?.streakDays ?? 0)
+                ) {
+                    streakSection
+                }
 
                 // Wisdom quote
-                quoteCard
+                CollapsibleSection(
+                    title: "Wisdom",
+                    theme: .wisdom,
+                    isCollapsed: $isQuoteCollapsed
+                ) {
+                    quoteCard
+                }
 
                 // Reset progress
-                resetProgressButton
+                CollapsibleSection(
+                    title: L.resetProgress,
+                    theme: .resetProgress,
+                    isCollapsed: $isResetCollapsed
+                ) {
+                    resetProgressButton
+                }
 
                 Spacer(minLength: 80)
             }
@@ -67,6 +282,57 @@ struct JourneyView: View {
             }
         } message: {
             Text(L.resetProgressMessage)
+        }
+    }
+
+    // MARK: - Tier-Gated Section Helper
+
+    /// Shows the content if the section is unlocked, or a blurred locked overlay if not.
+    @ViewBuilder
+    private func journeySection<Content: View>(
+        for section: TierManager.JourneyStatsSection,
+        @ViewBuilder content: () -> Content
+    ) -> some View {
+        if statsConfig.sections.contains(section) {
+            content()
+        } else {
+            LockedJourneySectionOverlay(
+                requiredTier: TierManager.minimumTierForJourneySection(section),
+                featureTitle: sectionTitle(for: section),
+                featureDescription: sectionDescription(for: section),
+                content: content
+            )
+        }
+    }
+
+    // MARK: - Collapsible Section Wrapper
+    // Uses shared CollapsibleSection from Views/Shared/CollapsibleSection.swift
+
+    private func sectionTitle(for section: TierManager.JourneyStatsSection) -> String {
+        switch section {
+        case .basicStats:           return L.yourLearningJourney
+        case .gameBreakdown:        return L.gamePerformance
+        case .dailyXPChart:         return L.dailyXPChart
+        case .weeklyTrend:          return L.weeklyTrend
+        case .accuracyHeatmap:      return L.accuracyHeatmap
+        case .monthlyReport:        return L.monthlyReport
+        case .milestonePredictions: return L.milestonePredictionsTitle
+        case .exportData:           return L.exportData
+        case .insights:             return L.learningInsights
+        }
+    }
+
+    private func sectionDescription(for section: TierManager.JourneyStatsSection) -> String {
+        switch section {
+        case .basicStats:           return ""
+        case .gameBreakdown:        return L.gameBreakdownDesc
+        case .dailyXPChart:         return L.dailyXPChartDesc
+        case .weeklyTrend:          return L.weeklyTrendDesc
+        case .accuracyHeatmap:      return L.accuracyHeatmapDesc
+        case .monthlyReport:        return L.monthlyReportDesc
+        case .milestonePredictions: return L.milestonePredictionsDesc
+        case .exportData:           return L.exportDataDesc
+        case .insights:             return L.insightsDesc
         }
     }
 
@@ -107,23 +373,9 @@ struct JourneyView: View {
     private var milestonesSection: some View {
         GlassPanelWrapper {
             VStack(alignment: .leading, spacing: 0) {
-                HStack(spacing: 8) {
-                    Image(systemName: "flag.checkered")
-                        .foregroundStyle(Color(hex: "#667eea"))
-                    Text(L.milestones)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                }
-                .padding(.bottom, 12)
-
                 ForEach(Array(milestones.enumerated()), id: \.element.title) { index, milestone in
                     milestoneRow(milestone, isLast: index == milestones.count - 1)
+                        .staggeredReveal(index: index)
                 }
             }
         }
@@ -156,19 +408,16 @@ struct JourneyView: View {
     private func milestoneRow(_ milestone: Milestone, isLast: Bool) -> some View {
         let currentXP = profile?.totalXP ?? 0
         let isUnlocked = currentXP >= milestone.xpRequired
+        let journeyMilestone = JourneyMilestone(title: milestone.title, icon: milestone.icon, color: milestone.color, xpRequired: milestone.xpRequired)
 
         return HStack(spacing: 10) {
             // Timeline column
             VStack(spacing: 0) {
-                Circle()
-                    .fill(isUnlocked ? milestone.color : .gray.opacity(0.3))
-                    .frame(width: 26, height: 26)
-                    .overlay {
-                        Image(systemName: milestone.icon)
-                            .font(.system(size: 11))
-                            .foregroundStyle(isUnlocked ? .white : .gray)
-                    }
-                    .shadow(color: isUnlocked ? milestone.color.opacity(0.4) : .clear, radius: 4)
+                MilestoneBadgeView(
+                    milestone: journeyMilestone,
+                    isUnlocked: isUnlocked,
+                    style: badgeStyle
+                )
 
                 if !isLast {
                     Rectangle()
@@ -295,19 +544,21 @@ struct JourneyView: View {
                         .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
                 }
             }
+            .staggeredReveal(index: 0)
 
             // Divider
             Rectangle()
                 .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
                 .frame(height: 1)
                 .padding(.horizontal, 4)
+                .staggeredReveal(index: 1)
 
             // Three stat columns
             HStack(spacing: 0) {
                 overviewStat(
                     icon: "bolt.fill",
                     value: formattedXP(totalXP),
-                    label: L.totalXP,
+                    label: hasUserName ? "\(displayName)'s XP" : L.totalXP,
                     color: .cyan
                 )
 
@@ -333,6 +584,7 @@ struct JourneyView: View {
                     color: .orange
                 )
             }
+            .staggeredReveal(index: 2)
         }
         .padding(16)
         .background(GlassCardBackground())
@@ -360,19 +612,9 @@ struct JourneyView: View {
 
     private var gameTypeBreakdown: some View {
         VStack(spacing: 10) {
-            Text(L.gamePerformance)
-                .font(.system(size: 15, weight: .semibold))
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-                .frame(maxWidth: .infinity, alignment: .leading)
-
-            ForEach(GameType.allCases, id: \.self) { type in
+            ForEach(Array(GameType.allCases.enumerated()), id: \.element) { index, type in
                 gameTypeRow(type)
+                    .staggeredReveal(index: index)
             }
         }
         .padding(14)
@@ -444,22 +686,6 @@ struct JourneyView: View {
 
     private var streakSection: some View {
         VStack(spacing: 10) {
-            HStack(spacing: 8) {
-                Image(systemName: "flame.fill")
-                    .foregroundStyle(.orange)
-                    .symbolEffect(.pulse, options: .repeating.speed(0.3))
-                Text(L.currentStreak)
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [.orange, Color(hex: "#ef4444")],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-
             HStack(spacing: 4) {
                 Text("\(profile?.streakDays ?? 0)")
                     .font(.system(size: 42, weight: .bold, design: .rounded))
@@ -475,11 +701,13 @@ struct JourneyView: View {
                     .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                     .padding(.top, 10)
             }
+            .staggeredReveal(index: 0)
 
             Text(L.keepLearningEveryDay)
                 .font(.system(size: 11))
                 .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 .multilineTextAlignment(.center)
+                .staggeredReveal(index: 1)
         }
         .padding(14)
         .background(GlassCardBackground())
@@ -489,26 +717,15 @@ struct JourneyView: View {
 
     private var resetProgressButton: some View {
         VStack(spacing: 10) {
-            // Section header
-            HStack(spacing: 8) {
-                Image(systemName: "arrow.triangle.2.circlepath")
-                    .foregroundStyle(.red.opacity(0.8))
-                Text(L.resetProgress)
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [.red.opacity(0.9), .red.opacity(0.6)],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
+            HStack(spacing: 6) {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .font(.system(size: 10, weight: .medium))
+                    .foregroundStyle(.red.opacity(0.6))
+                Text(L.startFreshDescription)
+                    .font(.system(size: 11))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-
-            Text(L.startFreshDescription)
-                .font(.system(size: 11))
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-                .frame(maxWidth: .infinity, alignment: .leading)
 
             Button {
                 showResetAlert = true
@@ -702,3 +919,6 @@ struct JourneyView: View {
         }
     }
 }
+
+// MARK: - Collapsible Header Button Style
+// Now shared via Views/Shared/CollapsibleSection.swift

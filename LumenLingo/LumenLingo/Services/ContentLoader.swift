@@ -65,6 +65,15 @@ final class ContentLoader {
     // MARK: - Private
 
     private func loadFromBundle<T: Codable>(languagePair: String, fileName: String) -> [ContentCategory<T>] {
+        #if DEBUG
+        if DebugContentController.forceEmptyFlag {
+            return []
+        }
+        if DebugContentController.forceSlowFlag {
+            Thread.sleep(forTimeInterval: 3.0)
+        }
+        #endif
+
         // Primary: flat file named <type>_<source>_<target>.json (e.g. flashcards_english_spanish.json)
         let flatName = "\(fileName)_\(languagePair)"
         let url: URL? =

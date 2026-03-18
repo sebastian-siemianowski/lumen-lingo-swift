@@ -10,10 +10,13 @@ struct GrammarView: View {
 
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.horizontalSizeClass) private var sizeClass
     @Environment(\.dismiss) private var dismiss
     @Environment(AudioService.self) private var audioService
     @Environment(HapticsService.self) private var hapticsService
     @Environment(ContentLoader.self) private var contentLoader
+    @Environment(TierManager.self) private var tierManager
+    @Environment(PracticeTimeTracker.self) private var practiceTracker
     @Environment(\.localization) private var localization
 
     private var L: AppStrings { localization.strings }
@@ -33,6 +36,9 @@ struct GrammarView: View {
     @State private var isAnswered: Bool = false
     @State private var isGameComplete: Bool = false
     @State private var showExplanation: Bool = false
+    @AppStorage("grammarTipsExpanded") private var tipsExpanded: Bool = true
+    @State private var tipAvailablePulse: Bool = false
+    @State private var wrongShakeAmount: CGFloat = 0
     @State private var questionTransitionId: UUID = UUID()
     @State private var isLoading: Bool = true
     @State private var categoryName: String = ""
@@ -40,6 +46,13 @@ struct GrammarView: View {
     // Next category navigation
     @State private var nextUnplayedCategoryId: String?
     @State private var nextUnplayedCategoryName: String?
+
+    // Practice time gating
+    @State private var showTimeBanner: Bool = false
+    @State private var showTimeExpired: Bool = false
+    @State private var bannerDismissed: Bool = false
+    @State private var showMembershipFromExpired: Bool = false
+    @State private var lastTimeSpent: Int = 0
 
     private var nextCategoryAction: (() -> Void)? {
         guard let nextId = nextUnplayedCategoryId else { return nil }
@@ -63,6 +76,8 @@ struct GrammarView: View {
 
     private var isDark: Bool { colorScheme == .dark }
 
+    private var isLastQuestion: Bool { currentIndex + 1 >= questions.count }
+
     private var progress: Double {
         guard !questions.isEmpty else { return 0 }
         return Double(currentIndex) / Double(questions.count)
@@ -81,12 +96,34 @@ struct GrammarView: View {
 
     var body: some View {
         ZStack {
-            if isLoading {
+            if showTimeExpired {
+                PracticeExpiredView(
+                    score: score,
+                    correctAnswers: correctCount,
+                    totalAnswered: correctCount + wrongCount,
+                    onUpgradeTap: { showMembershipFromExpired = true },
+                    onDismiss: {
+                        navigationPath.removeLast(navigationPath.count)
+                    }
+                )
+            } else if isLoading {
                 loadingView
             } else if isGameComplete {
                 gameCompleteView
             } else if let question = currentQuestion {
-                gameplayView(question: question)
+                ZStack(alignment: .top) {
+                    gameplayView(question: question)
+
+                    if showTimeBanner && !bannerDismissed {
+                        PracticeTimeBanner(
+                            remainingSeconds: practiceTracker.remainingSeconds(for: tierManager.currentTier) ?? 0,
+                            onUpgradeTap: { showMembershipFromExpired = true },
+                            onDismiss: { bannerDismissed = true }
+                        )
+                        .padding(.top, 8)
+                        .zIndex(10)
+                    }
+                }
             } else {
                 emptyStateView
             }
@@ -97,10 +134,53 @@ struct GrammarView: View {
         .onAppear {
             hideTabBar = true
             loadContent()
+            practiceTracker.startSession()
+            HapticsService.shared.gameStart()
+            HapticsService.shared.gameStart()
+            HapticsService.shared.gameStart()
         }
         .onDisappear {
             hideTabBar = false
+            practiceTracker.endSession()
         }
+        .onReceive(NotificationCenter.default.publisher(for: .practiceTimeFiveMinuteWarning)) { _ in
+            guard practiceTracker.isLimited(for: tierManager.currentTier) else { return }
+            HapticsService.shared.warning()
+            withAnimation(.spring(response: 0.4)) {
+                showTimeBanner = true
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .practiceTimeExpired)) { _ in
+            guard practiceTracker.isLimited(for: tierManager.currentTier) else { return }
+            saveProgressBeforeExpiry()
+            withAnimation(.spring(response: 0.5)) {
+                showTimeExpired = true
+            }
+        }
+        .sheet(isPresented: $showMembershipFromExpired) {
+            NavigationStack { MembershipView(isSheet: true) }
+        }
+    }
+
+    /// Save current game progress when time expires mid-session.
+    private func saveProgressBeforeExpiry() {
+        let timeSpent = practiceTracker.endSession()
+        guard correctCount + wrongCount > 0 else { return }
+        let progressService = ProgressService(modelContext: modelContext)
+        let langPref = languagePrefs.first
+        let result = GameSessionResult(
+            gameType: .grammar,
+            categoryId: categoryId,
+            categoryName: categoryName,
+            score: score,
+            correctAnswers: correctCount,
+            totalQuestions: correctCount + wrongCount,
+            timeSpent: timeSpent,
+            sourceLanguage: langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue,
+            targetLanguage: langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue,
+            xpMultiplier: tierManager.xpMultiplier
+        )
+        progressService.recordGameSession(result)
     }
 
     // MARK: - Loading
@@ -121,7 +201,18 @@ struct GrammarView: View {
     private func gameplayView(question: GrammarQuestion) -> some View {
         ScrollView {
             VStack(spacing: 20) {
-                exerciseHeader
+                GameHeader(
+                    categoryName: categoryName,
+                    score: score,
+                    correctCount: correctCount,
+                    wrongCount: wrongCount,
+                    streakCount: streak,
+                    currentQuestion: currentIndex + 1,
+                    totalQuestions: questions.count,
+                    progressFraction: progress,
+                    theme: .grammar,
+                    onBack: { dismiss() }
+                )
 
                 // Question card
                 questionCard(question: question)
@@ -137,79 +228,13 @@ struct GrammarView: View {
             .padding(.horizontal, 20)
             .padding(.top, 8)
         }
+        .scrollDismissesKeyboard(.interactively)
         .onAppear { resetGrammarIdleTimer() }
         .onChange(of: questionTransitionId) { resetGrammarIdleTimer() }
         .onDisappear { idleTimer?.invalidate() }
     }
 
-    // MARK: - Exercise Header
-
-    private var exerciseHeader: some View {
-        VStack(spacing: 12) {
-            HStack {
-                Button { dismiss() } label: {
-                    HStack(spacing: 6) {
-                        Image(systemName: "chevron.left")
-                        Text(L.back)
-                    }
-                    .font(.subheadline)
-                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-                }
-
-                Spacer()
-
-                Text(categoryName)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-
-                Spacer()
-
-                HStack(spacing: 4) {
-                    Image(systemName: "bolt.fill")
-                        .foregroundStyle(.yellow)
-                    Text("\(score)")
-                        .font(.subheadline.bold())
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
-                }
-                .padding(.horizontal, 10)
-                .padding(.vertical, 5)
-                .background(Capsule().fill(.white.opacity(0.1)))
-            }
-
-            // Progress bar
-            AnimatedProgressBar(
-                progress: progress * 100,
-                height: 4,
-                gradient: [Color(hex: "#f093fb"), Color(hex: "#f5576c"), Color(hex: "#e11d48")]
-            )
-
-            HStack(spacing: 16) {
-                statPill(icon: "checkmark", value: "\(correctCount)", color: .green)
-                statPill(icon: "xmark", value: "\(wrongCount)", color: .orange)
-                if streak > 0 {
-                    statPill(icon: "flame.fill", value: "\(streak)", color: .yellow)
-                }
-                Spacer()
-                Text("\(currentIndex + 1)/\(questions.count)")
-                    .font(.caption)
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-            }
-        }
-    }
-
-    private func statPill(icon: String, value: String, color: Color) -> some View {
-        HStack(spacing: 3) {
-            Image(systemName: icon)
-                .font(.system(size: 10, weight: .bold))
-                .foregroundStyle(color)
-            Text(value)
-                .font(.caption2.bold())
-                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
-        }
-        .padding(.horizontal, 8)
-        .padding(.vertical, 3)
-        .background(Capsule().fill(color.opacity(0.15)))
-    }
+    // MARK: - Exercise Header (now uses shared GameHeader component)
 
     // MARK: - Question Card
 
@@ -230,7 +255,11 @@ struct GrammarView: View {
             // Next button (after answering)
             if isAnswered {
                 nextButton
-                    .transition(.scale.combined(with: .opacity))
+                    .transition(.asymmetric(
+                        insertion: .offset(y: 40).combined(with: .opacity),
+                        removal: .opacity
+                    ))
+                    .animation(.spring(duration: 0.3), value: isAnswered)
             }
         }
         .padding(20)
@@ -260,6 +289,17 @@ struct GrammarView: View {
             }
         )
         .clipShape(RoundedRectangle(cornerRadius: 28))
+        .overlay(
+            RoundedRectangle(cornerRadius: 28)
+                .strokeBorder(
+                    LinearGradient(
+                        colors: [Color(hex: "#f093fb").opacity(0.4), Color(hex: "#f5576c").opacity(0.3), Color(hex: "#a855f7").opacity(0.4)],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 1.5
+                )
+        )
         .shadow(color: moodColor.opacity(0.08), radius: 25, y: 10)
     }
 
@@ -272,84 +312,154 @@ struct GrammarView: View {
     }
 
     private func questionTextPanel(question: GrammarQuestion) -> some View {
-        VStack(spacing: 12) {
+        let isCorrectAnswer = isAnswered && selectedAnswer == question.correctAnswer
+
+        return VStack(spacing: 12) {
             if isAnswered {
-                // Show question with glowing green answer filled in
                 filledQuestionText(question)
             } else {
-                Text(question.question)
-                    .font(.title3.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-                    .multilineTextAlignment(.center)
+                blankQuestionText(question)
             }
 
             if let translation = question.translation, !translation.isEmpty {
                 Text(translation)
                     .font(.subheadline)
-                    .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum)
+                    .foregroundStyle(.white.opacity(0.65))
                     .italic()
             }
         }
-        .padding(16)
+        .padding(20)
         .frame(maxWidth: .infinity)
         .background(
-            RoundedRectangle(cornerRadius: 20)
-                .fill(
-                    LinearGradient(
-                        colors: isAnswered
-                            ? [Color(hex: "#10b981").opacity(0.12), Color(hex: "#0d9488").opacity(0.06)]
-                            : [Color(hex: "#764ba2").opacity(0.12), Color(hex: "#667eea").opacity(0.06)],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
-                .overlay(
-                    RoundedRectangle(cornerRadius: 20)
-                        .strokeBorder(
-                            isAnswered ? Color(hex: "#10b981").opacity(0.15) : .white.opacity(0.06),
-                            lineWidth: 1
+            ZStack {
+                // Semi-transparent gradient that integrates with the glass card
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(
+                        LinearGradient(
+                            colors: isCorrectAnswer
+                                ? [Color(hex: "#065f46").opacity(0.65), Color(hex: "#047857").opacity(0.45)]
+                                : [Color(hex: "#2E1065").opacity(0.55), Color(hex: "#1E3A5F").opacity(0.35)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
                         )
-                )
+                    )
+
+                // Top gloss highlight for depth
+                VStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(
+                            LinearGradient(
+                                colors: [.white.opacity(0.10), .clear],
+                                startPoint: .top,
+                                endPoint: .center
+                            )
+                        )
+                        .frame(height: 30)
+                    Spacer()
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+            }
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: isCorrectAnswer
+                                ? [Color(hex: "#34d399").opacity(0.4), Color(hex: "#059669").opacity(0.25)]
+                                : [Color(hex: "#f093fb").opacity(0.2), Color(hex: "#a855f7").opacity(0.2)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 1
+                    )
+            )
         )
+        .animation(.easeInOut(duration: 0.4), value: isAnswered)
     }
 
-    /// Renders the question with the correct answer highlighted in glowing green
-    /// instead of plain brackets. Handles multiple blanks and various separators.
+    /// Renders the question with styled underlined blank placeholders before answering.
     @ViewBuilder
-    private func filledQuestionText(_ question: GrammarQuestion) -> some View {
-        let correct = question.correctAnswer
+    private func blankQuestionText(_ question: GrammarQuestion) -> some View {
         let text = question.question
-
-        // Split the question on any run of underscores (3+)
         let segments = Self.splitOnBlanks(text)
         let blankCount = segments.count - 1
 
         if blankCount > 0 {
-            // Determine answer parts for each blank
-            let answerParts = Self.splitAnswer(correct, into: blankCount)
-
-            // Build attributed text: segment0 + answer0 + segment1 + answer1 + ...
             let composed = segments.enumerated().reduce(Text("")) { result, pair in
                 let (i, segment) = pair
                 var built = result + Text(segment)
                     .font(.title3.bold())
-                    .foregroundColor(isDark ? .white : .caribbeanInk)
-                if i < answerParts.count {
-                    built = built + Text(answerParts[i])
+                    .foregroundColor(.white)
+                if i < blankCount {
+                    built = built + Text("  ____  ")
                         .font(.title3.bold())
-                        .foregroundColor(Color(hex: "#10b981"))
+                        .foregroundColor(Color(hex: "#c4b5fd"))
+                        .underline(color: Color(hex: "#c4b5fd").opacity(0.4))
                 }
                 return built
             }
 
             composed
                 .multilineTextAlignment(.center)
-                .shadow(color: Color(hex: "#10b981").opacity(0.4), radius: 8)
+                .shadow(color: .black.opacity(0.3), radius: 1)
         } else {
             Text(text)
                 .font(.title3.bold())
-                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .foregroundColor(.white)
                 .multilineTextAlignment(.center)
+                .shadow(color: .black.opacity(0.3), radius: 1)
+        }
+    }
+
+    /// Renders the question with the answer filled in after selection.
+    /// Correct answer: green glow. Wrong answer: red strikethrough + green correction.
+    @ViewBuilder
+    private func filledQuestionText(_ question: GrammarQuestion) -> some View {
+        let correct = question.correctAnswer
+        let text = question.question
+        let isCorrectAnswer = selectedAnswer == correct
+        let displayAnswer = selectedAnswer ?? correct
+
+        let segments = Self.splitOnBlanks(text)
+        let blankCount = segments.count - 1
+
+        if blankCount > 0 {
+            let displayParts = Self.splitAnswer(displayAnswer, into: blankCount)
+            let correctParts = Self.splitAnswer(correct, into: blankCount)
+
+            let composed = segments.enumerated().reduce(Text("")) { result, pair in
+                let (i, segment) = pair
+                var built = result + Text(segment)
+                    .font(.title3.bold())
+                    .foregroundColor(.white)
+                if i < displayParts.count {
+                    if isCorrectAnswer {
+                        built = built + Text(displayParts[i])
+                            .font(.title3.bold())
+                            .foregroundColor(Color(hex: "#34d399"))
+                    } else {
+                        built = built + Text(displayParts[i])
+                            .font(.title3.bold())
+                            .foregroundColor(Color(hex: "#fb7185"))
+                            .strikethrough(color: Color(hex: "#fb7185").opacity(0.4))
+                        + Text("  ")
+                        + Text(correctParts[i])
+                            .font(.title3.bold())
+                            .foregroundColor(Color(hex: "#34d399"))
+                            .underline(color: Color(hex: "#34d399").opacity(0.3))
+                    }
+                }
+                return built
+            }
+
+            composed
+                .multilineTextAlignment(.center)
+                .shadow(color: isCorrectAnswer ? Color(hex: "#34d399").opacity(0.4) : Color(hex: "#fb7185").opacity(0.2), radius: 8)
+        } else {
+            Text(text)
+                .font(.title3.bold())
+                .foregroundColor(.white)
+                .multilineTextAlignment(.center)
+                .shadow(color: .black.opacity(0.3), radius: 1)
         }
     }
 
@@ -397,14 +507,32 @@ struct GrammarView: View {
     // MARK: - Answer Grid
 
     private func answerGrid(question: GrammarQuestion) -> some View {
-        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
-            ForEach(Array(question.options.enumerated()), id: \.offset) { index, option in
-                answerButton(
-                    option: option,
-                    label: index < answerLabels.count ? answerLabels[index] : "",
-                    isCorrect: option == question.correctAnswer,
-                    question: question
-                )
+        let options = Array(question.options.enumerated())
+        return Group {
+            if sizeClass == .compact {
+                // Single-column for phones — full-width cards, no truncation
+                VStack(spacing: 8) {
+                    ForEach(options, id: \.offset) { index, option in
+                        answerButton(
+                            option: option,
+                            label: index < answerLabels.count ? answerLabels[index] : "",
+                            isCorrect: option == question.correctAnswer,
+                            question: question
+                        )
+                    }
+                }
+            } else {
+                // 2-column grid for iPad — enough width per column
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
+                    ForEach(options, id: \.offset) { index, option in
+                        answerButton(
+                            option: option,
+                            label: index < answerLabels.count ? answerLabels[index] : "",
+                            isCorrect: option == question.correctAnswer,
+                            question: question
+                        )
+                    }
+                }
             }
         }
     }
@@ -424,57 +552,84 @@ struct GrammarView: View {
             clearGrammarIdleHint()
             selectAnswer(option, isCorrect: isCorrect)
         } label: {
-            HStack(spacing: 10) {
-                // Letter badge
+            HStack(alignment: .top, spacing: 12) {
+                // Letter badge — glass circle, top-aligned
                 Text(label)
                     .font(.caption.bold())
-                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanMist)
-                    .frame(width: 28, height: 28)
+                    .foregroundStyle(.white.opacity(0.85))
+                    .frame(width: 30, height: 30)
                     .background(
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(.white.opacity(0.1))
+                        Circle()
+                            .fill(.white.opacity(0.12))
+                            .overlay(Circle().strokeBorder(.white.opacity(0.20), lineWidth: 0.75))
                     )
 
                 Text(option)
-                    .font(.subheadline.bold())
+                    .font(.body.bold())
                     .foregroundStyle(isDark ? .white : .caribbeanInk)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.7)
+                    .lineLimit(nil)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .multilineTextAlignment(.leading)
 
-                Spacer()
+                Spacer(minLength: 4)
 
                 // Result icon
                 if showResult && isSelected {
                     Image(systemName: isCorrect ? "checkmark.circle.fill" : "xmark.circle.fill")
-                        .foregroundStyle(isCorrect ? .green : .orange)
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundStyle(isCorrect ? Color(hex: "#34d399") : Color(hex: "#fb7185"))
                         .transition(.scale.combined(with: .opacity))
                 } else if showResult && isCorrect {
                     Image(systemName: "checkmark.circle.fill")
-                        .foregroundStyle(.green.opacity(0.6))
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundStyle(Color(hex: "#34d399").opacity(0.6))
                         .transition(.scale.combined(with: .opacity))
                 }
             }
             .padding(14)
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
             .background(
-                RoundedRectangle(cornerRadius: 16)
-                    .fill(answerBackground(isSelected: isSelected, isCorrect: isCorrect, showResult: showResult))
-                    .overlay(
+                ZStack {
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(answerBackground(isSelected: isSelected, isCorrect: isCorrect, showResult: showResult))
+
+                    // Top gloss highlight
+                    VStack {
                         RoundedRectangle(cornerRadius: 16)
-                            .strokeBorder(
-                                answerBorder(isSelected: isSelected, isCorrect: isCorrect, showResult: showResult),
-                                lineWidth: 1
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.08), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
                             )
-                    )
+                            .frame(height: 22)
+                        Spacer()
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+
+                    RoundedRectangle(cornerRadius: 16)
+                        .strokeBorder(
+                            answerBorder(isSelected: isSelected, isCorrect: isCorrect, showResult: showResult),
+                            lineWidth: showResult && (isSelected || isCorrect) ? 1.5 : 1
+                        )
+                }
             )
-            .scaleEffect(showResult && isSelected && !isCorrect ? 1.0 : (showResult && !isSelected && !isCorrect ? 0.98 : 1.0))
-            .opacity(showResult && !isSelected && !isCorrect ? 0.5 : 1.0)
+            .shadow(
+                color: showResult && isSelected && isCorrect
+                    ? Color(hex: "#34d399").opacity(0.3)
+                    : (showResult && isCorrect ? Color(hex: "#34d399").opacity(0.15) : .clear),
+                radius: showResult && isCorrect ? 10 : 0
+            )
+            .scaleEffect(showResult && isSelected && !isCorrect ? 1.0 : (showResult && !isSelected && !isCorrect ? 0.97 : 1.0))
+            .opacity(showResult && !isSelected && !isCorrect ? 0.55 : 1.0)
             .shadow(color: isHinted ? Color(hex: "#a78bfa").opacity(hintGlowOpacity * 0.4) : .clear, radius: isHinted ? 12 : 0)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
                     .strokeBorder(Color(hex: "#a78bfa").opacity(isHinted ? hintGlowOpacity * 0.5 : 0), lineWidth: 2)
             )
-            .animation(.spring(response: 0.3), value: isAnswered)
+            .modifier(ShakeEffect(animatableData: (showResult && isSelected && !isCorrect) ? wrongShakeAmount : 0))
+            .animation(.spring(response: 0.3, dampingFraction: 0.7), value: isAnswered)
         }
         .buttonStyle(LumenPressStyle(weight: .medium, accentColor: Color(hex: "#a78bfa")))
         .disabled(isAnswered)
@@ -482,79 +637,151 @@ struct GrammarView: View {
 
     private func answerBackground(isSelected: Bool, isCorrect: Bool, showResult: Bool) -> some ShapeStyle {
         if showResult && isSelected && isCorrect {
-            return AnyShapeStyle(LinearGradient(colors: [.green.opacity(0.2), .green.opacity(0.1)], startPoint: .leading, endPoint: .trailing))
+            return AnyShapeStyle(LinearGradient(colors: [Color(hex: "#10b981").opacity(0.20), Color(hex: "#059669").opacity(0.10)], startPoint: .leading, endPoint: .trailing))
         } else if showResult && isSelected && !isCorrect {
-            return AnyShapeStyle(LinearGradient(colors: [.orange.opacity(0.2), .orange.opacity(0.1)], startPoint: .leading, endPoint: .trailing))
+            return AnyShapeStyle(LinearGradient(colors: [Color(hex: "#fb7185").opacity(0.18), Color(hex: "#f43f5e").opacity(0.08)], startPoint: .leading, endPoint: .trailing))
         } else if showResult && isCorrect {
-            return AnyShapeStyle(LinearGradient(colors: [.green.opacity(0.08), .green.opacity(0.04)], startPoint: .leading, endPoint: .trailing))
+            return AnyShapeStyle(LinearGradient(colors: [Color(hex: "#10b981").opacity(0.10), Color(hex: "#059669").opacity(0.05)], startPoint: .leading, endPoint: .trailing))
         }
         return AnyShapeStyle(.white.opacity(0.06))
     }
 
     private func answerBorder(isSelected: Bool, isCorrect: Bool, showResult: Bool) -> some ShapeStyle {
-        if showResult && isSelected && isCorrect { return AnyShapeStyle(.green.opacity(0.4)) }
-        if showResult && isSelected && !isCorrect { return AnyShapeStyle(.orange.opacity(0.4)) }
-        if showResult && isCorrect { return AnyShapeStyle(.green.opacity(0.2)) }
-        return AnyShapeStyle(.white.opacity(0.08))
+        if showResult && isSelected && isCorrect { return AnyShapeStyle(Color(hex: "#10b981").opacity(0.5)) }
+        if showResult && isSelected && !isCorrect { return AnyShapeStyle(Color(hex: "#fb7185").opacity(0.5)) }
+        if showResult && isCorrect { return AnyShapeStyle(Color(hex: "#10b981").opacity(0.25)) }
+        return AnyShapeStyle(.white.opacity(0.15))
     }
 
     // MARK: - Explanation
 
     private func explanationPanel(text: String) -> some View {
-        DisclosureGroup(isExpanded: $showExplanation) {
-            Text(text)
-                .font(.subheadline)
-                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanPlum)
-                .padding(.top, 8)
-        } label: {
-            HStack(spacing: 8) {
-                Image(systemName: "lightbulb.fill")
-                    .foregroundStyle(.yellow)
-                Text(L.grammarTip)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+        CollapsibleSection(
+            style: .tip,
+            colors: CollapsibleSectionTheme.grammarTip.gradientColors,
+            isCollapsed: Binding(
+                get: { !showExplanation },
+                set: { isCollapsed in
+                    showExplanation = !isCollapsed
+                    tipsExpanded = !isCollapsed
+                    tipAvailablePulse = false
+                }
+            ),
+            cornerRadius: 16,
+            header: {
+                HStack(spacing: 8) {
+                    Image(systemName: "lightbulb.fill")
+                        .foregroundStyle(.yellow)
+                        .symbolEffect(.pulse, options: .repeating.speed(0.6), value: tipAvailablePulse && !showExplanation)
+                    Text(L.grammarTip)
+                        .font(.subheadline.bold())
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+
+                    if !showExplanation && tipAvailablePulse {
+                        Text("Tap to read")
+                            .font(.caption2)
+                            .foregroundStyle(Color(hex: "#3b82f6").opacity(0.7))
+                            .transition(.opacity.combined(with: .scale(scale: 0.8)))
+                    }
+
+                    Spacer()
+
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundStyle(
+                            !showExplanation
+                                ? AnyShapeStyle(LinearGradient(colors: [Color(hex: "#3b82f6"), Color(hex: "#60a5fa")], startPoint: .leading, endPoint: .trailing))
+                                : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
+                        )
+                        .rotationEffect(.degrees(showExplanation ? 90 : 0))
+                        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: showExplanation)
+                }
+                .padding(14)
+            },
+            content: {
+                Text(text)
+                    .font(.subheadline)
+                    .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanPlum)
+                    .padding(.horizontal, 14)
+                    .padding(.bottom, 14)
             }
-        }
-        .tint(isDark ? .white.opacity(0.6) : .caribbeanMist)
-        .padding(14)
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                .fill(Color(hex: "#3b82f6").opacity(0.08))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 16)
-                        .strokeBorder(Color(hex: "#3b82f6").opacity(0.15), lineWidth: 1)
-                )
         )
+        .background(
+            ZStack {
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(.white.opacity(0.04))
+
+                // Top gloss highlight
+                VStack {
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(
+                            LinearGradient(
+                                colors: [.white.opacity(0.06), .clear],
+                                startPoint: .top,
+                                endPoint: .center
+                            )
+                        )
+                        .frame(height: 20)
+                    Spacer()
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+            }
+            .overlay(
+                RoundedRectangle(cornerRadius: 16)
+                    .strokeBorder(
+                        (tipAvailablePulse && !showExplanation)
+                            ? Color(hex: "#3b82f6").opacity(0.35)
+                            : .white.opacity(0.12),
+                        lineWidth: (tipAvailablePulse && !showExplanation) ? 1.5 : 1
+                    )
+            )
+        )
+        .animation(.easeInOut(duration: 0.3), value: showExplanation)
+        .animation(.easeInOut(duration: 0.5), value: tipAvailablePulse)
     }
 
     // MARK: - Next Button
 
     private var nextButton: some View {
         Button {
+            hapticsService.buttonPress()
             advanceQuestion()
         } label: {
             HStack(spacing: 8) {
-                Text(L.next)
+                Text(isLastQuestion ? "See Results" : L.next)
                     .font(.headline)
-                Image(systemName: "arrow.right")
+                Image(systemName: isLastQuestion ? "checkmark.circle" : "arrow.right")
             }
             .foregroundStyle(.white)
-            .padding(.horizontal, 32)
-            .padding(.vertical, 14)
+            .frame(maxWidth: .infinity, minHeight: 52)
             .background(
-                Capsule()
+                RoundedRectangle(cornerRadius: 16)
                     .fill(
                         LinearGradient(
-                            colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+                            colors: [Color(hex: "#ec4899"), Color(hex: "#f5576c"), Color(hex: "#a855f7")],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
                     )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.25), .clear],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .strokeBorder(.white.opacity(0.25), lineWidth: 0.75)
+                    )
             )
-            .shadow(color: Color(hex: "#a855f7").opacity(0.4), radius: 15)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+            .shadow(color: Color(hex: "#a855f7").opacity(0.35), radius: 12, y: 4)
         }
         .buttonStyle(LumenCTAPressStyle(glowColor: Color(hex: "#a855f7")))
-        .frame(maxWidth: .infinity, alignment: selectedAnswer == currentQuestion?.correctAnswer ? .trailing : .center)
     }
 
     // MARK: - Game Complete / Empty
@@ -567,6 +794,8 @@ struct GrammarView: View {
             totalQuestions: questions.count,
             gameType: .grammar,
             categoryName: categoryName,
+            xpMultiplier: tierManager.xpMultiplier,
+            timeSpent: lastTimeSpent,
             onPlayAgain: { resetGame() },
             onNextCategory: nextCategoryAction,
             nextCategoryName: nextUnplayedCategoryName,
@@ -582,7 +811,7 @@ struct GrammarView: View {
             Text(L.noQuestionsAvailable)
                 .font(.headline)
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-            Button(L.goBack) { dismiss() }
+            Button(L.goBack) { HapticsService.shared.navTransition(); dismiss() }
                 .buttonStyle(.bordered)
                 .tint(isDark ? .white : .caribbeanInk)
         }
@@ -608,30 +837,45 @@ struct GrammarView: View {
     private func selectAnswer(_ answer: String, isCorrect: Bool) {
         selectedAnswer = answer
         isAnswered = true
-        showExplanation = true
+        // Respect the user's persisted preference for tip expand/collapse
+        showExplanation = tipsExpanded
+        // If tips are collapsed, pulse the "Tip available" indicator once
+        if !tipsExpanded {
+            tipAvailablePulse = false
+            withAnimation(.easeInOut(duration: 0.6).delay(0.3)) {
+                tipAvailablePulse = true
+            }
+        }
 
         if isCorrect {
             correctCount += 1
             score += 10
             streak += 1
             audioService.playGrammarCorrect(consecutiveCount: streak)
-            HapticsService.shared.correctAnswer()
+            TierHapticsService.shared.correctAnswer(level: tierManager.hapticLevel)
             if streak >= 3 {
-                HapticsService.shared.streakBuilding(count: streak)
+                TierHapticsService.shared.streakMilestone(level: tierManager.hapticLevel, count: streak)
             }
         } else {
             wrongCount += 1
             streak = 0
             audioService.playGrammarWrong()
-            HapticsService.shared.wrongAnswer()
+            TierHapticsService.shared.wrongAnswer(level: tierManager.hapticLevel)
+            // Trigger shake animation on wrong answer
+            wrongShakeAmount = 0
+            withAnimation(.easeOut(duration: 0.5)) {
+                wrongShakeAmount = 1
+            }
         }
     }
 
     private func advanceQuestion() {
+        wrongShakeAmount = 0
         withAnimation(.spring(response: 0.5)) {
             selectedAnswer = nil
             isAnswered = false
             showExplanation = false
+            tipAvailablePulse = false
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
@@ -647,7 +891,10 @@ struct GrammarView: View {
     }
 
     private func completeGame() {
+        let timeSpent = practiceTracker.endSession()
+        lastTimeSpent = timeSpent
         let progressService = ProgressService(modelContext: modelContext)
+        let langPref = languagePrefs.first
         let result = GameSessionResult(
             gameType: .grammar,
             categoryId: categoryId,
@@ -655,7 +902,10 @@ struct GrammarView: View {
             score: score,
             correctAnswers: correctCount,
             totalQuestions: questions.count,
-            timeSpent: 0
+            timeSpent: timeSpent,
+            sourceLanguage: langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue,
+            targetLanguage: langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue,
+            xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
         audioService.playCelebration()
@@ -705,6 +955,8 @@ struct GrammarView: View {
         selectedAnswer = nil
         isAnswered = false
         showExplanation = false
+        tipAvailablePulse = false
+        wrongShakeAmount = 0
         isGameComplete = false
         questionTransitionId = UUID()
     }
@@ -732,5 +984,22 @@ struct GrammarView: View {
     private func clearGrammarIdleHint() {
         hintGlowAnswer = nil
         hintGlowOpacity = 0
+    }
+}
+
+// MARK: - Shake Effect
+
+struct ShakeEffect: GeometryEffect {
+    var amount: CGFloat = 6
+    var shakes: Int = 3
+    var animatableData: CGFloat
+
+    func effectValue(size: CGSize) -> ProjectionTransform {
+        // Decaying amplitude for natural deceleration
+        let decay = max(0, 1.0 - animatableData * 0.6)
+        let translation = amount * sin(animatableData * .pi * CGFloat(shakes) * 2) * decay
+        return ProjectionTransform(
+            CGAffineTransform(translationX: translation, y: 0)
+        )
     }
 }

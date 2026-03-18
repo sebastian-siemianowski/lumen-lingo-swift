@@ -10,6 +10,7 @@ struct ProfileView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
     @Environment(ThemeManager.self) private var themeManager
+    @Environment(TierManager.self) private var tierManager
     @Environment(\.localization) private var localization
 
     private var L: AppStrings { localization.strings }
@@ -20,7 +21,11 @@ struct ProfileView: View {
     private var allProgress: [GameProgressRecord]
 
     private var profile: UserProfile? { profiles.first }
-    private var user: AppUser { .mock }
+
+    /// Display name from real profile, with graceful fallback.
+    private var displayName: String {
+        profile?.firstName.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+    }
 
     @State private var activeTab: ProfileTab = .appearance
     @State private var activeAppearanceSubTab: AppearanceSubTab = .darkLight
@@ -35,6 +40,8 @@ struct ProfileView: View {
 
     // Entry animation state
     @State private var headerAppeared = false
+    @State private var isHeaderCollapsed = false
+    @State private var isMyPlanCollapsed = false
     // Tab transition direction
     @State private var tabDirection: Int = 0
     @State private var subTabDirection: Int = 0
@@ -66,15 +73,37 @@ struct ProfileView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 0) {
-                // Profile header inside GlassPanelWrapper
-                profileHeader
+                // Profile header — collapsible
+                CollapsibleSection(
+                    title: displayName.isEmpty ? "Profile" : displayName,
+                    theme: .profile(tierGradientColors: tierManager.tierGradientColors),
+                    isCollapsed: $isHeaderCollapsed,
+                    badge: .text(tierManager.tierDisplayName)
+                ) {
+                    profileHeader
+                }
                     .padding(.horizontal, 16)
                     .padding(.top, 12)
                     .opacity(headerAppeared ? 1 : 0)
                     .offset(y: headerAppeared ? 0 : 20)
 
+                // My Plan card — collapsible
+                CollapsibleSection(
+                    title: "My Plan",
+                    theme: .myPlan(tierIcon: tierManager.tierIcon, tierGradientColors: tierManager.tierGradientColors),
+                    isCollapsed: $isMyPlanCollapsed,
+                    badge: .text(tierManager.tierDisplayName)
+                ) {
+                    MyPlanCard()
+                }
+                    .padding(.horizontal, 16)
+                    .padding(.top, 14)
+                    .opacity(headerAppeared ? 1 : 0)
+                    .offset(y: headerAppeared ? 0 : 15)
+
                 // Top-level settings tabs
                 settingsTabBar
+                    .padding(.horizontal, 16)
                     .padding(.top, 20)
                     .opacity(headerAppeared ? 1 : 0)
 
@@ -91,6 +120,12 @@ struct ProfileView: View {
                 // App footer
                 appInfoSection
                     .padding(.top, 24)
+
+                #if DEBUG
+                qaPanelLink
+                    .padding(.horizontal, 16)
+                    .padding(.top, 16)
+                #endif
 
                 Spacer(minLength: 100)
             }
@@ -175,10 +210,11 @@ struct ProfileView: View {
                         .clipShape(Circle())
                 }
                 .shadow(color: Color(hex: "#764ba2").opacity(0.3), radius: 12, y: 2)
+                .staggeredReveal(index: 0)
 
                 // Name & level
                 VStack(spacing: 4) {
-                    Text(user.name)
+                    Text(displayName.isEmpty ? "Learner" : displayName)
                         .font(.title2.bold())
                         .foregroundStyle(
                             LinearGradient(
@@ -197,6 +233,16 @@ struct ProfileView: View {
                             .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                     }
                 }
+                .staggeredReveal(index: 1)
+
+                // Tier badge — tapping navigates to Membership
+                NavigationLink {
+                    MembershipView()
+                } label: {
+                    TierBadgeView()
+                }
+                .buttonStyle(.plain)
+                .staggeredReveal(index: 2)
 
                 // Quick stats row
                 HStack(spacing: 0) {
@@ -207,6 +253,7 @@ struct ProfileView: View {
                     quickStat(value: "\(allProgress.count)", label: L.sessions, icon: "play.circle.fill", color: .green)
                 }
                 .padding(.top, 4)
+                .staggeredReveal(index: 3)
             }
         }
     }
@@ -340,6 +387,7 @@ struct ProfileView: View {
                         darkLightSettings
                     case .breathingOrbs:
                         BreathingOrbsSettingsView()
+                            .featureTooltip(key: TooltipKey.breathingOrbs)
                     case .quantumFlow:
                         QuantumFlowSettingsView()
                     case .nebulaDrift:
@@ -375,6 +423,7 @@ struct ProfileView: View {
                             Text(localizedSubTabName(subTab))
                                 .font(.system(size: 11, weight: .medium))
                         }
+                        .modifier(SubTabLockModifier(subTab: subTab))
                         .foregroundStyle(
                             activeAppearanceSubTab == subTab
                                 ? (isDark ? .white : Color(hex: "#4c1d95"))
@@ -431,6 +480,25 @@ struct ProfileView: View {
         case .breathingOrbs: return L.orbs
         case .quantumFlow: return L.quantum
         case .nebulaDrift: return L.nebula
+        }
+    }
+
+    /// Modifier that conditionally applies a lock indicator to premium sub-tabs.
+    /// Dark/Light is always unlocked and gets no lock icon.
+    private struct SubTabLockModifier: ViewModifier {
+        let subTab: AppearanceSubTab
+
+        func body(content: Content) -> some View {
+            switch subTab {
+            case .darkLight:
+                content
+            case .breathingOrbs:
+                content.lockedFeatureIndicator(for: .breathingOrbs)
+            case .quantumFlow:
+                content.lockedFeatureIndicator(for: .quantumFlow)
+            case .nebulaDrift:
+                content.lockedFeatureIndicator(for: .nebulaDrift)
+            }
         }
     }
 
@@ -504,6 +572,7 @@ struct ProfileView: View {
                         SoundControlsView()
                     case .soundscapes:
                         SoundscapesSettingsView()
+                            .featureTooltip(key: TooltipKey.soundscapes)
                     case .mixer:
                         SoundMixerView()
                     }
@@ -537,6 +606,7 @@ struct ProfileView: View {
                             Text(soundSubTabName(subTab))
                                 .font(.system(size: 11, weight: .medium))
                         }
+                        .modifier(SoundSubTabLockModifier(subTab: subTab))
                         .foregroundStyle(
                             activeSoundSubTab == subTab
                                 ? (isDark ? .white : Color(hex: "#9d174d"))
@@ -589,6 +659,19 @@ struct ProfileView: View {
         }
     }
 
+    /// Lock indicator for sound sub-tabs. Only Soundscapes is gated.
+    private struct SoundSubTabLockModifier: ViewModifier {
+        let subTab: SoundSubTab
+
+        func body(content: Content) -> some View {
+            if subTab == .soundscapes {
+                content.lockedFeatureIndicator(for: .soundscapes)
+            } else {
+                content
+            }
+        }
+    }
+
     private var soundSubTabTint: Color {
         switch activeSoundSubTab {
         case .controls: return Color(hex: "#ec4899")
@@ -600,8 +683,14 @@ struct ProfileView: View {
     // MARK: - Sync Tab (Delegated)
 
     private var syncTab: some View {
-        settingsCard(tint: .teal) {
-            SyncStatusView()
+        VStack(spacing: 16) {
+            settingsCard(tint: .teal) {
+                ConnectivitySettingsView()
+            }
+
+            settingsCard(tint: .teal) {
+                SyncStatusView()
+            }
         }
     }
 
@@ -659,4 +748,43 @@ struct ProfileView: View {
             content()
         }
     }
+
+    // MARK: - QA Panel (DEBUG only)
+
+    #if DEBUG
+    private var qaPanelLink: some View {
+        NavigationLink {
+            QAPanelView()
+        } label: {
+            GlassPanelWrapper {
+                HStack(spacing: 10) {
+                    Image(systemName: "ladybug.fill")
+                        .font(.system(size: 16))
+                        .foregroundStyle(.orange)
+
+                    Text("QA Panel")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundStyle(isDark ? .white.opacity(0.7) : .primary)
+
+                    Spacer()
+
+                    if tierManager.hasActiveOverrides {
+                        Text("ACTIVE")
+                            .font(.system(size: 8, weight: .heavy, design: .rounded))
+                            .tracking(0.5)
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 2)
+                            .background(Capsule().fill(.orange.opacity(0.2)))
+                            .foregroundStyle(.orange)
+                    }
+
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
+                }
+            }
+        }
+        .buttonStyle(.plain)
+    }
+    #endif
 }

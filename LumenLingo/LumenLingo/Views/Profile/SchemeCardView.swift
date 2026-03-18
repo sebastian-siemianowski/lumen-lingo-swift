@@ -257,8 +257,7 @@ private struct SchemeCardButtonStyle: ButtonStyle {
             .animation(.spring(response: 0.25, dampingFraction: 0.65), value: configuration.isPressed)
             .onChange(of: configuration.isPressed) { _, pressed in
                 if pressed {
-                    let g = UIImpactFeedbackGenerator(style: .soft)
-                    g.impactOccurred(intensity: 0.5)
+                    HapticsService.shared.softTap(intensity: 0.5)
                 }
             }
     }

@@ -9,13 +9,51 @@ struct BreathingOrbsSettingsView: View {
     @Query private var profiles: [UserProfile]
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(TierManager.self) private var tierManager
     @State private var previewingScheme: BreathingOrbScheme? = nil
+    @State private var showDowngradeToast = false
 
     private var L: AppStrings { localization.strings }
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
     var body: some View {
+        ZStack(alignment: .bottom) {
+            if tierManager.breathingOrbsAccessible {
+                unlockedContent
+            } else {
+                lockedContent
+            }
+
+            if showDowngradeToast {
+                downgradeToast
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                    .padding(.bottom, 16)
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .breathingOrbsAutoDisabled)) { _ in
+            withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
+                showDowngradeToast = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                withAnimation(.easeOut(duration: 0.3)) {
+                    showDowngradeToast = false
+                }
+            }
+        }
+    }
+
+    // MARK: - Locked (Free Tier)
+
+    private var lockedContent: some View {
+        VStack(spacing: 20) {
+            BreathingOrbsLockedPreview()
+        }
+    }
+
+    // MARK: - Unlocked (Pro+)
+
+    private var unlockedContent: some View {
         VStack(spacing: 20) {
             // Header with toggle
             headerRow
@@ -61,7 +99,6 @@ struct BreathingOrbsSettingsView: View {
                 .foregroundStyle(.purple)
                 .scaleEffect(profile?.breathingOrbsEnabled == true ? 1.0 : 0.85)
                 .opacity(profile?.breathingOrbsEnabled == true ? 1.0 : 0.5)
-                .animation(.easeInOut(duration: 2).repeatForever(autoreverses: true), value: profile?.breathingOrbsEnabled)
 
             VStack(alignment: .leading, spacing: 2) {
                 Text(L.breathingOrbs)
@@ -237,6 +274,55 @@ struct BreathingOrbsSettingsView: View {
                         .strokeBorder(.white.opacity(isDark ? 0.06 : 0.12), lineWidth: 0.5)
                 )
         )
+    }
+
+    // MARK: - Downgrade Toast
+
+    private var downgradeToast: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "scope")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(.white.opacity(0.9))
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Breathing Orbs paused")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(.white)
+                Text("Upgrade to resume")
+                    .font(.system(size: 11))
+                    .foregroundStyle(.white.opacity(0.7))
+            }
+
+            Spacer()
+
+            Button {
+                withAnimation {
+                    showDowngradeToast = false
+                }
+            } label: {
+                Image(systemName: "xmark")
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundStyle(.white.opacity(0.6))
+                    .padding(6)
+            }
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 10)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(.ultraThinMaterial)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(
+                            LinearGradient(
+                                colors: [.purple.opacity(0.7), .blue.opacity(0.5)],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                )
+        )
+        .padding(.horizontal, 16)
     }
 }
 

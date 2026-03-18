@@ -4,6 +4,7 @@ import SwiftData
 // MARK: - Flashcards ViewModel
 
 /// Port of useFlashcardsGame.jsx — manages flashcard game state, scoring, mastery.
+@MainActor
 @Observable
 final class FlashcardsViewModel {
     // Game state

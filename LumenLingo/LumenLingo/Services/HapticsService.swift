@@ -11,6 +11,7 @@ import SwiftUI
 /// - **Semantic Methods**: Game-specific haptics (cardFlip, tileSnap, streakPulse, etc.)
 /// - **Compound Patterns**: Multi-step haptic sequences for celebrations and milestones
 /// - **Anti-Spam**: Cooldown-based throttling for rapid interactions
+@MainActor
 @Observable
 final class HapticsService {
     static let shared = HapticsService()
@@ -46,6 +47,12 @@ final class HapticsService {
         notificationGenerator.prepare()
         selectionGenerator.prepare()
     }
+
+    #if DEBUG
+    private func debugLog(_ action: String, fired: Bool) {
+        print("[Haptics] \(action): enabled=\(isEnabled), fired=\(fired)")
+    }
+    #endif
 
     // MARK: - Core Haptics
 
@@ -110,7 +117,7 @@ final class HapticsService {
 
     /// Card flip — light with medium follow-through
     func cardFlip() {
-        guard isEnabled, canFire("cardFlip", cooldown: 0.08) else { return }
+        guard isEnabled, canFire("cardFlip", cooldown: 0.10) else { return }
         lightGenerator.impactOccurred()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.06) { [weak self] in
             self?.mediumGenerator.impactOccurred(intensity: 0.4)
@@ -119,13 +126,13 @@ final class HapticsService {
 
     /// Tile picked up — soft lift
     func tilePick() {
-        guard isEnabled, canFire("tilePick", cooldown: 0.04) else { return }
+        guard isEnabled, canFire("tilePick", cooldown: 0.05) else { return }
         softGenerator.impactOccurred(intensity: 0.6)
     }
 
     /// Tile snapped into place — rigid lock
     func tileSnap() {
-        guard isEnabled, canFire("tileSnap", cooldown: 0.04) else { return }
+        guard isEnabled, canFire("tileSnap", cooldown: 0.05) else { return }
         rigidGenerator.impactOccurred(intensity: 0.7)
     }
 
@@ -162,13 +169,13 @@ final class HapticsService {
 
     /// Correct answer — success with light sparkle
     func correctAnswer() {
-        guard isEnabled, canFire("correct", cooldown: 0.1) else { return }
+        guard isEnabled, canFire("correct", cooldown: 0.2) else { return }
         notificationGenerator.notificationOccurred(.success)
     }
 
     /// Wrong answer — error buzz
     func wrongAnswer() {
-        guard isEnabled, canFire("wrong", cooldown: 0.1) else { return }
+        guard isEnabled, canFire("wrong", cooldown: 0.2) else { return }
         notificationGenerator.notificationOccurred(.error)
     }
 
@@ -186,7 +193,7 @@ final class HapticsService {
 
     /// Perfect score celebration
     func perfectScore() {
-        guard isEnabled, canFire("perfectScore", cooldown: 1.0) else { return }
+        guard isEnabled, canFire("perfectScore", cooldown: 0.5) else { return }
         for i in 0..<4 {
             let delay = TimeInterval(i) * 0.1
             let intensity = CGFloat(0.4 + Double(i) * 0.2)
@@ -246,7 +253,7 @@ final class HapticsService {
 
     /// Tab switch
     func tabSwitch() {
-        guard isEnabled, canFire("tabSwitch", cooldown: 0.12) else { return }
+        guard isEnabled, canFire("tabSwitch", cooldown: 0.15) else { return }
         selectionGenerator.selectionChanged()
     }
 
@@ -304,6 +311,64 @@ final class HapticsService {
     func hintReveal() {
         guard isEnabled, canFire("hintReveal", cooldown: 0.1) else { return }
         softGenerator.impactOccurred(intensity: 0.5)
+    }
+
+    /// Tier upgrade celebration — multi-step haptic pattern
+    func tierUpgrade() {
+        guard isEnabled, canFire("tierUpgrade", cooldown: 2.0) else { return }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+            self?.notificationGenerator.notificationOccurred(.success)
+        }
+        for offset in [0.5, 0.7, 0.9] {
+            DispatchQueue.main.asyncAfter(deadline: .now() + offset) { [weak self] in
+                self?.lightGenerator.impactOccurred(intensity: 0.6)
+            }
+        }
+    }
+
+    /// Enhanced double-tap pattern for higher tier haptic levels
+    func enhancedDoubleTap() {
+        guard isEnabled, canFire("enhancedDoubleTap", cooldown: 0.2) else { return }
+        lightGenerator.impactOccurred(intensity: 0.6)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in
+            self?.lightGenerator.impactOccurred(intensity: 0.8)
+        }
+    }
+
+    /// Rich tier streak milestone burst
+    func streakMilestone() {
+        guard isEnabled, canFire("streakMilestone", cooldown: 1.0) else { return }
+        notificationGenerator.notificationOccurred(.success)
+        for i in 0..<3 {
+            let delay = 0.15 + TimeInterval(i) * 0.12
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+                self?.mediumGenerator.impactOccurred(intensity: CGFloat(0.6 + Double(i) * 0.15))
+            }
+        }
+    }
+
+    /// Tier downgrade — single medium tap acknowledgment
+    func tierDowngrade() {
+        guard isEnabled, canFire("tierDowngrade", cooldown: 2.0) else { return }
+        mediumGenerator.impactOccurred()
+    }
+
+    /// Light tap — for button-style press feedback (used by LumenPressStyle etc.)
+    func lightTap(intensity: CGFloat = 0.6) {
+        guard isEnabled else { return }
+        lightGenerator.impactOccurred(intensity: intensity)
+    }
+
+    /// Soft tap — gentle press feedback (used by LumenCardPressStyle etc.)
+    func softTap(intensity: CGFloat = 0.6) {
+        guard isEnabled else { return }
+        softGenerator.impactOccurred(intensity: intensity)
+    }
+
+    /// Medium tap — assertive press feedback (used by LumenCTAPressStyle)
+    func mediumTap() {
+        guard isEnabled else { return }
+        mediumGenerator.impactOccurred()
     }
 
     // MARK: - Anti-Spam

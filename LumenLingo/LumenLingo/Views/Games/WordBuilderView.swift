@@ -14,6 +14,8 @@ struct WordBuilderView: View {
     @Environment(AudioService.self) private var audioService
     @Environment(HapticsService.self) private var hapticsService
     @Environment(ContentLoader.self) private var contentLoader
+    @Environment(TierManager.self) private var tierManager
+    @Environment(PracticeTimeTracker.self) private var practiceTracker
     @Environment(\.localization) private var localization
 
     private var L: AppStrings { localization.strings }
@@ -37,6 +39,13 @@ struct WordBuilderView: View {
     // Next category navigation
     @State private var nextUnplayedCategoryId: String?
     @State private var nextUnplayedCategoryName: String?
+
+    // Practice time gating
+    @State private var showTimeBanner: Bool = false
+    @State private var showTimeExpired: Bool = false
+    @State private var bannerDismissed: Bool = false
+    @State private var showMembershipFromExpired: Bool = false
+    @State private var lastTimeSpent: Int = 0
 
     private var nextCategoryAction: (() -> Void)? {
         guard let nextId = nextUnplayedCategoryId else { return nil }
@@ -85,12 +94,34 @@ struct WordBuilderView: View {
 
     var body: some View {
         ZStack {
-            if isLoading {
+            if showTimeExpired {
+                PracticeExpiredView(
+                    score: score,
+                    correctAnswers: correctCount,
+                    totalAnswered: correctCount + wrongCount,
+                    onUpgradeTap: { showMembershipFromExpired = true },
+                    onDismiss: {
+                        navigationPath.removeLast(navigationPath.count)
+                    }
+                )
+            } else if isLoading {
                 loadingView
             } else if isGameComplete {
                 gameCompleteView
             } else if let word = currentWord {
-                gameplayView(word: word)
+                ZStack(alignment: .top) {
+                    gameplayView(word: word)
+
+                    if showTimeBanner && !bannerDismissed {
+                        PracticeTimeBanner(
+                            remainingSeconds: practiceTracker.remainingSeconds(for: tierManager.currentTier) ?? 0,
+                            onUpgradeTap: { showMembershipFromExpired = true },
+                            onDismiss: { bannerDismissed = true }
+                        )
+                        .padding(.top, 8)
+                        .zIndex(10)
+                    }
+                }
             } else {
                 emptyStateView
             }
@@ -101,10 +132,53 @@ struct WordBuilderView: View {
         .onAppear {
             hideTabBar = true
             loadContent()
+            practiceTracker.startSession()
+            HapticsService.shared.gameStart()
+            HapticsService.shared.gameStart()
+            HapticsService.shared.gameStart()
         }
         .onDisappear {
             hideTabBar = false
+            practiceTracker.endSession()
         }
+        .onReceive(NotificationCenter.default.publisher(for: .practiceTimeFiveMinuteWarning)) { _ in
+            guard practiceTracker.isLimited(for: tierManager.currentTier) else { return }
+            HapticsService.shared.warning()
+            withAnimation(.spring(response: 0.4)) {
+                showTimeBanner = true
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .practiceTimeExpired)) { _ in
+            guard practiceTracker.isLimited(for: tierManager.currentTier) else { return }
+            saveProgressBeforeExpiry()
+            withAnimation(.spring(response: 0.5)) {
+                showTimeExpired = true
+            }
+        }
+        .sheet(isPresented: $showMembershipFromExpired) {
+            NavigationStack { MembershipView(isSheet: true) }
+        }
+    }
+
+    /// Save current game progress when time expires mid-session.
+    private func saveProgressBeforeExpiry() {
+        let timeSpent = practiceTracker.endSession()
+        guard correctCount + wrongCount > 0 else { return }
+        let progressService = ProgressService(modelContext: modelContext)
+        let langPref = languagePrefs.first
+        let result = GameSessionResult(
+            gameType: .wordBuilder,
+            categoryId: categoryId,
+            categoryName: categoryName,
+            score: score,
+            correctAnswers: correctCount,
+            totalQuestions: correctCount + wrongCount,
+            timeSpent: timeSpent,
+            sourceLanguage: langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue,
+            targetLanguage: langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue,
+            xpMultiplier: tierManager.xpMultiplier
+        )
+        progressService.recordGameSession(result)
     }
 
     // MARK: - Loading
@@ -124,7 +198,18 @@ struct WordBuilderView: View {
 
     private func gameplayView(word: WordBuilderWord) -> some View {
         VStack(spacing: 0) {
-            exerciseHeader
+            GameHeader(
+                categoryName: categoryName,
+                score: score,
+                correctCount: correctCount,
+                wrongCount: wrongCount,
+                streakCount: streak,
+                currentQuestion: currentIndex + 1,
+                totalQuestions: words.count,
+                progressFraction: progress,
+                theme: .wordBuilder,
+                onBack: { dismiss() }
+            )
 
             ScrollView {
                 VStack(spacing: 24) {
@@ -159,100 +244,14 @@ struct WordBuilderView: View {
         .onDisappear { idleTimer?.invalidate() }
     }
 
-    // MARK: - Exercise Header
-
-    private var exerciseHeader: some View {
-        VStack(spacing: 12) {
-            HStack {
-                Button { dismiss() } label: {
-                    HStack(spacing: 6) {
-                        Image(systemName: "chevron.left")
-                        Text(L.back)
-                    }
-                    .font(.subheadline)
-                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-                }
-
-                Spacer()
-
-                Text(categoryName)
-                    .font(.subheadline.bold())
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-
-                Spacer()
-
-                HStack(spacing: 4) {
-                    Image(systemName: "bolt.fill")
-                        .foregroundStyle(.yellow)
-                    Text("\(score)")
-                        .font(.subheadline.bold())
-                        .foregroundStyle(isDark ? .white : .caribbeanInk)
-                }
-                .padding(.horizontal, 10)
-                .padding(.vertical, 5)
-                .background(Capsule().fill(.white.opacity(0.1)))
-            }
-
-            AnimatedProgressBar(
-                progress: progress * 100,
-                height: 4,
-                gradient: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#ef4444")]
-            )
-
-            HStack(spacing: 16) {
-                statPill(icon: "checkmark", value: "\(correctCount)", color: .green)
-                statPill(icon: "xmark", value: "\(wrongCount)", color: .orange)
-                if streak > 0 {
-                    statPill(icon: "flame.fill", value: "\(streak)", color: .yellow)
-                }
-                Spacer()
-                Text("\(currentIndex + 1)/\(words.count)")
-                    .font(.caption)
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-            }
-        }
-        .padding(.horizontal, 20)
-        .padding(.top, 8)
-    }
-
-    private func statPill(icon: String, value: String, color: Color) -> some View {
-        HStack(spacing: 3) {
-            Image(systemName: icon)
-                .font(.system(size: 10, weight: .bold))
-                .foregroundStyle(color)
-            Text(value)
-                .font(.caption2.bold())
-                .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
-        }
-        .padding(.horizontal, 8)
-        .padding(.vertical, 3)
-        .background(Capsule().fill(color.opacity(0.15)))
-    }
+    // MARK: - Exercise Header (now uses shared GameHeader component)
 
     // MARK: - Clue Section
 
     private func clueSection(word: WordBuilderWord) -> some View {
-        VStack(spacing: 10) {
-            // Decorative top icon
-            Image(systemName: "textformat.abc")
-                .font(.system(size: 16))
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [Color(hex: "#fb923c"), Color(hex: "#f59e0b")],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-                .symbolEffect(.pulse, options: .repeating.speed(0.3))
-
-            Text(L.buildTheWord)
-                .font(.caption.bold())
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-                .textCase(.uppercase)
-                .tracking(1.5)
-
+        ZStack(alignment: .topTrailing) {
             Text(word.hint)
-                .font(.title2.bold())
+                .font(.title3.bold())
                 .foregroundStyle(
                     LinearGradient(
                         colors: [Color(hex: "#fbbf24"), .white, Color(hex: "#fb923c")],
@@ -262,21 +261,38 @@ struct WordBuilderView: View {
                 )
                 .multilineTextAlignment(.center)
                 .shadow(color: Color(hex: "#f59e0b").opacity(0.4), radius: 12)
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 20)
+
+            Image(systemName: "lightbulb.fill")
+                .font(.caption2)
+                .foregroundStyle(.secondary.opacity(0.5))
+                .padding(10)
         }
-        .padding(20)
-        .frame(maxWidth: .infinity)
         .background(
             ZStack {
                 GlassCardBackground(
-                    cornerRadius: 24,
+                    cornerRadius: 20,
                     borderColor: Color(hex: "#fb923c"),
-                    borderOpacity: 0.12,
+                    borderOpacity: 0.15,
                     tintColor: Color(hex: "#fb923c")
                 )
 
+                // Warm gradient border accent
+                RoundedRectangle(cornerRadius: 20)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [Color(hex: "#fbbf24").opacity(0.25), Color(hex: "#fb923c").opacity(0.15)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 1
+                    )
+
                 // Top reflection band
                 VStack {
-                    RoundedRectangle(cornerRadius: 24)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [.white.opacity(0.10), .clear],
@@ -287,10 +303,11 @@ struct WordBuilderView: View {
                         .frame(height: 40)
                     Spacer()
                 }
-                .clipShape(RoundedRectangle(cornerRadius: 24))
+                .clipShape(RoundedRectangle(cornerRadius: 20))
             }
         )
-        .clipShape(RoundedRectangle(cornerRadius: 24))
+        .clipShape(RoundedRectangle(cornerRadius: 20))
+        .transition(.opacity)
     }
 
     // MARK: - Answer Slots
@@ -509,10 +526,10 @@ struct WordBuilderView: View {
                 }
                 .font(.system(size: 13, weight: .semibold))
                 .lineLimit(1)
-                .minimumScaleFactor(0.75)
+                .minimumScaleFactor(0.7)
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 .padding(.horizontal, 10)
-                .padding(.vertical, 10)
+                .frame(minHeight: 44)
                 .background(
                     GlassCardBackground(
                         cornerRadius: 14,
@@ -537,10 +554,10 @@ struct WordBuilderView: View {
                 }
                 .font(.system(size: 13, weight: .semibold))
                 .lineLimit(1)
-                .minimumScaleFactor(0.75)
+                .minimumScaleFactor(0.7)
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 .padding(.horizontal, 10)
-                .padding(.vertical, 10)
+                .frame(minHeight: 44)
                 .background(
                     GlassCardBackground(
                         cornerRadius: 14,
@@ -564,10 +581,10 @@ struct WordBuilderView: View {
                 }
                 .font(.system(size: 13, weight: .semibold))
                 .lineLimit(1)
-                .minimumScaleFactor(0.75)
+                .minimumScaleFactor(0.7)
                 .foregroundStyle(isDark ? .white.opacity(0.85) : .caribbeanPlum)
                 .padding(.horizontal, 10)
-                .padding(.vertical, 10)
+                .frame(minHeight: 44)
                 .background(
                     GlassCardBackground(
                         cornerRadius: 14,
@@ -582,8 +599,6 @@ struct WordBuilderView: View {
             .disabled(!hasAvailableLetters || isChecking || isCorrect != nil)
             .opacity(!hasAvailableLetters ? 0.4 : 1.0)
 
-            Spacer()
-
             // Check button
             Button {
                 checkAnswer()
@@ -594,10 +609,10 @@ struct WordBuilderView: View {
                 }
                 .font(.system(size: 13, weight: .semibold))
                 .lineLimit(1)
-                .minimumScaleFactor(0.75)
+                .minimumScaleFactor(0.7)
                 .foregroundStyle(.white)
                 .padding(.horizontal, 14)
-                .padding(.vertical, 10)
+                .frame(minHeight: 44)
                 .background(
                     RoundedRectangle(cornerRadius: 14)
                         .fill(
@@ -633,6 +648,8 @@ struct WordBuilderView: View {
             totalQuestions: words.count,
             gameType: .wordBuilder,
             categoryName: categoryName,
+            xpMultiplier: tierManager.xpMultiplier,
+            timeSpent: lastTimeSpent,
             onPlayAgain: { resetGame() },
             onNextCategory: nextCategoryAction,
             nextCategoryName: nextUnplayedCategoryName,
@@ -648,7 +665,7 @@ struct WordBuilderView: View {
             Text(L.noWordsAvailable)
                 .font(.headline)
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
-            Button(L.goBack) { dismiss() }
+            Button(L.goBack) { HapticsService.shared.navTransition(); dismiss() }
                 .buttonStyle(.bordered)
                 .tint(isDark ? .white : .caribbeanInk)
         }
@@ -775,11 +792,11 @@ struct WordBuilderView: View {
 
             if streak >= 3 {
                 audioService.playStreakBonus()
-                HapticsService.shared.streakBuilding(count: streak)
+                TierHapticsService.shared.streakMilestone(level: tierManager.hapticLevel, count: streak)
             } else {
                 audioService.playWordCorrect()
             }
-            HapticsService.shared.correctAnswer()
+            TierHapticsService.shared.correctAnswer(level: tierManager.hapticLevel)
 
             // Mark mastered
             let progressService = ProgressService(modelContext: modelContext)
@@ -800,7 +817,7 @@ struct WordBuilderView: View {
             wrongCount += 1
             streak = 0
             audioService.playLetterWrong()
-            HapticsService.shared.wrongAnswer()
+            TierHapticsService.shared.wrongAnswer(level: tierManager.hapticLevel)
 
             // Shake animation
             withAnimation(.spring(response: 0.1, dampingFraction: 0.2)) {
@@ -845,7 +862,10 @@ struct WordBuilderView: View {
     }
 
     private func completeGame() {
+        let timeSpent = practiceTracker.endSession()
+        lastTimeSpent = timeSpent
         let progressService = ProgressService(modelContext: modelContext)
+        let langPref = languagePrefs.first
         let result = GameSessionResult(
             gameType: .wordBuilder,
             categoryId: categoryId,
@@ -853,7 +873,10 @@ struct WordBuilderView: View {
             score: score,
             correctAnswers: correctCount,
             totalQuestions: words.count,
-            timeSpent: 0
+            timeSpent: timeSpent,
+            sourceLanguage: langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue,
+            targetLanguage: langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue,
+            xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
         audioService.playCelebration()

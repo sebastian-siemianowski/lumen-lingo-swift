@@ -3,6 +3,7 @@ import SwiftData
 
 // MARK: - Profile ViewModel
 
+@MainActor
 @Observable
 final class ProfileViewModel {
     var userProfile: UserProfile?
@@ -117,6 +118,7 @@ final class ProfileViewModel {
 
 // MARK: - Language Selection ViewModel
 
+@MainActor
 @Observable
 final class LanguageSelectionViewModel {
     var sourceLanguage: SupportedLanguage = .english
@@ -155,13 +157,13 @@ final class LanguageSelectionViewModel {
 
 @Observable
 final class MembershipViewModel {
-    var selectedTier: MembershipTier = .starter
+    var selectedTier: MembershipTier = .free
     var isYearly: Bool = false
 
     var yearlyDiscount: Double { 0.20 } // 20% savings
 
     func priceForTier(_ tier: MembershipTier) -> String {
-        if tier == .starter { return "Free" }
+        if tier == .free { return "Free" }
         let monthly = tier.monthlyPrice
         if isYearly {
             let yearly = monthly * 12 * Decimal(1 - yearlyDiscount)

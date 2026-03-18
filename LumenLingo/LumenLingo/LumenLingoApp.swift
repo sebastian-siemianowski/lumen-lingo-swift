@@ -7,6 +7,16 @@ import SwiftData
 struct LumenLingoApp: App {
     @State private var themeManager = ThemeManager()
     @State private var localizationManager = LocalizationManager()
+    @State private var tierManager = TierManager()
+    @State private var practiceTimeTracker = PracticeTimeTracker()
+    @State private var networkMonitor = NetworkMonitor()
+    @State private var upgradePromptManager = UpgradePromptManager()
+
+    init() {
+        #if DEBUG
+        URLProtocol.registerClass(DebugURLProtocol.self)
+        #endif
+    }
 
     private var debugBackgroundOnly: Bool {
         ProcessInfo.processInfo.environment["LL_DEBUG_BACKGROUND_ONLY"] == "1"
@@ -28,9 +38,19 @@ struct LumenLingoApp: App {
                         .cosmicBackground(preset: debugForcedNebula)
                 } else {
                     ContentView()
+                        .overlay {
+                            TierUpgradeCelebrationView()
+                        }
+                        .overlay {
+                            FeatureTransitionOverlay()
+                        }
                 }
             }
             .environment(themeManager)
+            .environment(tierManager)
+            .environment(practiceTimeTracker)
+            .environment(networkMonitor)
+            .environment(upgradePromptManager)
             .environment(\.localization, localizationManager)
             .preferredColorScheme(themeManager.colorScheme)
         }

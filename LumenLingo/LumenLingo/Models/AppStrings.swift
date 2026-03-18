@@ -280,6 +280,7 @@ struct AppStrings {
     let unlockFullPotential: String
     let ultimateExperience: String
     let currentPlan: String
+    let getStarted: String
     let startPro: String
     let upgradeToElite: String
     let ascendToRoyal: String
@@ -315,6 +316,134 @@ struct AppStrings {
     let presets3: String           // "3 presets"
     let allPresets: String         // "All presets"
     let min15: String              // "15 min"
+
+    // MARK: - Offline Mode / Connectivity
+    let offlineMode: String
+    let offlineModeDescription: String
+    let offlineModeLockedDescription: String
+    let connectToUse: String
+    let connectivityRequired: String
+    let offlineModeInfo: String
+    let offlineModeDisabled: String
+    let offlineModeDisabledDetail: String
+    let offlineModeActive: String
+    let offlineModeIncluded: String
+    let onlineOnly: String
+    let offlineModeActivated: String
+    let offlineModeActivatedDetail: String
+
+    // MARK: - Upgrade Prompts
+    let unlockPremium: String
+    let viewPlans: String
+    let maybeLater: String
+    let requires: String
+    let learnMore: String
+    let hideForever: String
+    let dontShowAgain: String
+
+    // MARK: - Royal Trial
+    let trialActivated: String
+    let trialWelcomeMessage: String
+    let trialDuration: String
+    let trialAfterExpiry: String
+    let trialStartExploring: String
+    let trialBannerTitle: String
+    let trialExpiringToday: String
+    let trialOneDayLeft: String
+    let trialDaysLeft: String
+    let trialEndedTitle: String
+    let trialEndedSubtitle: String
+    let trialYourProgress: String
+    let trialLevel: String
+    let trialStreak: String
+    let trialYouStillHave: String
+    let trialChoosePlan: String
+    let trialContinueFree: String
+    let trialCompleted: String
+    let trialCompletedTagline: String
+    let trialStartFree: String
+
+    // MARK: - Dashboard Feature Visibility
+    let welcomeName: (String) -> String   // "Welcome, {name}!"
+    let daysLeftInTrial: (Int) -> String   // "{n} days left in your trial"
+    let thirtyMinPerDay: String            // "30 min/day"
+    // unlimited — reused from Membership section
+    let resetsIn: (String) -> String       // "Resets in {time}"
+    let nowPlaying: String                 // "Playing"
+    let paused: String                     // "Paused"
+
+    // MARK: - Game Session Results
+    let xpBonus: String                    // "XP Bonus"
+    let timeSpentLabel: String             // "Time"
+    let streakActive: String               // "Active"
+    let streakLabel: String                // "Streak"
+    let vsPreviousSession: String          // "vs Previous Session"
+    let keepImproving: String              // "Keep improving every session!"
+    let recentPerformance: String          // "Recent Performance"
+    let last7Sessions: String              // "Last 7 sessions"
+    let areasToImprove: String             // "Areas to Improve"
+    let reviewIncorrect: (Int) -> String   // "Review {n} incorrect answers"
+    let shareResult: String                // "Share Result"
+    let availableOn: (String) -> String    // "Available on {tier}"
+
+    // MARK: - Journey Progress Gating
+    let dailyXPChart: String               // "Daily XP"
+    let last7Days: String                  // "Last 7 days"
+    let weeklyTrend: String                // "Weekly Trend"
+    let thisWeekVsLastWeek: String         // "This week vs last week"
+    let thisWeekLabel: String              // "This week"
+    let lastWeekLabel: String              // "Last week"
+    let totalThisWeek: String              // "Total this week"
+    let accuracyHeatmap: String            // "Accuracy Heatmap"
+    let accuracyByCategory: String         // "Accuracy by category"
+    let playSessionsToSeeData: String      // "Play sessions to see data"
+    let monthlyReport: String              // "Monthly Report"
+    let last30Days: String                 // "Last 30 days"
+    let activeDaysLabel: String            // "Active Days"
+    let milestonePredictionsTitle: String   // "Milestone Predictions"
+    let basedOnYourPace: String            // "Based on your current pace"
+    let allMilestonesReached: String       // "All milestones reached!"
+    let tapToUpgrade: String               // "Tap to upgrade"
+    let unlockFeature: String               // "Unlock this feature"
+    let gameBreakdownDesc: String           // feature sell description
+    let dailyXPChartDesc: String            // feature sell description
+    let weeklyTrendDesc: String             // feature sell description
+    let accuracyHeatmapDesc: String         // feature sell description
+    let monthlyReportDesc: String           // feature sell description
+    let milestonePredictionsDesc: String    // feature sell description
+
+    // MARK: - Data Export & Insights (Epic 18)
+    let exportData: String                   // "Export Data"
+    let exportDataDesc: String               // feature sell description
+    let exportAsCSV: String                  // "Export as CSV"
+    let exportAsJSON: String                 // "Export as JSON"
+    let exportAsPDF: String                  // "Export as PDF"
+    let exportReady: String                  // "Your data is ready to share"
+    let noDataToExport: String               // "No data to export yet"
+    let sessionsLabel: String                // "Sessions"
+    let learningInsights: String             // "Learning Insights"
+    let insightsDesc: String                 // feature sell description
+    let optimalPracticeTimes: String         // "Optimal Practice Times"
+    let bestTimeToLearn: String              // "Your best time to learn"
+    let categoryMastery: String              // "Category Mastery"
+    let masteryByCategory: String            // "Mastery by category"
+    let retentionCurve: String               // "Retention Curve"
+    let retentionOverTime: String            // "Retention over time"
+    let fluencyTimeline: String              // "Fluency Timeline"
+    let predictedMilestones: String          // "Predicted milestones"
+    let morning: String                      // "Morning"
+    let afternoon: String                    // "Afternoon"
+    let evening: String                      // "Evening"
+    let night: String                        // "Night"
+    let needMoreData: String                 // "Play more sessions for insights"
+
+    // MARK: - Tier Upgrade Celebration
+    let upgradedExclamation: String         // "Upgraded!"
+    let tierChangedExclamation: String      // "Tier Changed!"
+    let upgradeMessagePro: String           // tier-specific linguistic celebration
+    let upgradeMessageElite: String         // tier-specific linguistic celebration
+    let upgradeMessageRoyal: String         // tier-specific linguistic celebration
+    let upgradeMessageTrial: String         // tier-specific linguistic celebration
 
     // MARK: - Factory
 

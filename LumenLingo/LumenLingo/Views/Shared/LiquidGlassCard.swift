@@ -168,8 +168,7 @@ struct LiquidCardButtonStyle: ButtonStyle {
             // Soft haptic on touch-down
             .onChange(of: pressed) { _, isDown in
                 if isDown {
-                    let g = UIImpactFeedbackGenerator(style: .soft)
-                    g.impactOccurred(intensity: 0.6)
+                    HapticsService.shared.softTap(intensity: 0.6)
                 }
             }
     }

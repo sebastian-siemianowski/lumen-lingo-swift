@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftData
+import CoreHaptics
 
 // MARK: - Sound Settings
 
@@ -64,15 +65,30 @@ struct SoundSettingsView: View {
                 .padding(.horizontal, 8)
 
             // Haptics toggle
-            standaloneSoundToggle(
-                icon: "iphone.radiowaves.left.and.right",
-                color: .pink,
-                title: "Haptic Feedback",
-                subtitle: "Vibrations & tactile response",
-                isOn: profile?.hapticsEnabled ?? true
-            ) {
-                profile?.hapticsEnabled.toggle()
-                HapticsService.shared.syncFromProfile(profile!)
+            if CHHapticEngine.capabilitiesForHardware().supportsHaptics {
+                standaloneSoundToggle(
+                    icon: "iphone.radiowaves.left.and.right",
+                    color: .pink,
+                    title: "Haptic Feedback",
+                    subtitle: "Feel vibrations when interacting with the app",
+                    isOn: profile?.hapticsEnabled ?? true
+                ) {
+                    profile?.hapticsEnabled.toggle()
+                    HapticsService.shared.syncFromProfile(profile!)
+                    if profile?.hapticsEnabled == true {
+                        HapticsService.shared.buttonPress()
+                    }
+                }
+            } else {
+                HStack(spacing: 12) {
+                    Image(systemName: "iphone.slash")
+                        .font(.system(size: 18))
+                        .foregroundStyle(.secondary)
+                    Text("Haptic feedback is not available on this device.")
+                        .font(.system(size: 13))
+                        .foregroundStyle(.secondary)
+                }
+                .padding(.horizontal, 8)
             }
 
             // Adaptive audio toggle

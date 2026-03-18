@@ -5,6 +5,8 @@ import SwiftData
 
 @Model
 final class UserProfile {
+    var firstName: String = ""
+    var email: String = ""
     var totalXP: Int
     var dailyStreak: Int
     var totalActiveDays: Int
@@ -50,6 +52,22 @@ final class UserProfile {
     var uiSoundsVolume: Float = 1.0
     var achievementSoundsVolume: Float = 1.0
     var ambientVolume: Float = 0.3
+
+    /// Selected membership tier (persisted across launches). Defaults to "free".
+    var selectedTierId: String = "free"
+
+    /// Whether offline mode is enabled (Pro+ feature). Free tier always false.
+    var offlineModeEnabled: Bool = false
+
+    /// Date when the Royal Trial was started. nil = never used trial.
+    var trialStartDate: Date? = nil
+
+    /// Whether the trial-expired screen has already been shown (prevents repeat).
+    var trialExpiredShown: Bool = false
+
+    /// Dormant settings captured on tier downgrade, restored on re-upgrade.
+    /// JSON-encoded dictionary of feature settings preserved across tier changes.
+    var dormantSettingsData: Data? = nil
 
     /// Level scales quadratically: cumulative XP for level L = 50·L·(L−1).
     /// Each level costs 100·L XP, so reaching high levels takes real dedication.
@@ -101,7 +119,45 @@ final class UserProfile {
         set { selectedSoundscape = newValue?.rawValue ?? "" }
     }
 
+    /// Whether a trial has ever been started.
+    var hasUsedTrial: Bool { trialStartDate != nil }
+
+    /// The date the trial expires (14 days after start). nil if never started.
+    var trialExpiryDate: Date? {
+        guard let start = trialStartDate else { return nil }
+        return Calendar.current.date(byAdding: .day, value: 14, to: start)
+    }
+
+    /// Number of days remaining in the trial. nil if not on trial, 0 if expired.
+    var trialDaysRemaining: Int? {
+        guard let expiry = trialExpiryDate else { return nil }
+        let days = Calendar.current.dateComponents([.day], from: Date.now, to: expiry).day ?? 0
+        return max(0, days)
+    }
+
+    /// Whether the trial has expired.
+    var isTrialExpired: Bool {
+        guard let expiry = trialExpiryDate else { return false }
+        return Date.now >= expiry
+    }
+
+    /// Decoded dormant settings dictionary. Returns empty dict if no data.
+    var dormantSettings: [String: String] {
+        get {
+            guard let data = dormantSettingsData,
+                  let dict = try? JSONDecoder().decode([String: String].self, from: data) else {
+                return [:]
+            }
+            return dict
+        }
+        set {
+            dormantSettingsData = try? JSONEncoder().encode(newValue)
+        }
+    }
+
     init(
+        firstName: String = "",
+        email: String = "",
         totalXP: Int = 0,
         dailyStreak: Int = 0,
         totalActiveDays: Int = 0,
@@ -140,8 +196,14 @@ final class UserProfile {
         gameSoundsVolume: Float = 1.0,
         uiSoundsVolume: Float = 1.0,
         achievementSoundsVolume: Float = 1.0,
-        ambientVolume: Float = 0.3
+        ambientVolume: Float = 0.3,
+        selectedTierId: String = "free",
+        offlineModeEnabled: Bool = false,
+        trialStartDate: Date? = nil,
+        trialExpiredShown: Bool = false
     ) {
+        self.firstName = firstName
+        self.email = email
         self.totalXP = totalXP
         self.dailyStreak = dailyStreak
         self.totalActiveDays = totalActiveDays
@@ -181,6 +243,10 @@ final class UserProfile {
         self.uiSoundsVolume = uiSoundsVolume
         self.achievementSoundsVolume = achievementSoundsVolume
         self.ambientVolume = ambientVolume
+        self.selectedTierId = selectedTierId
+        self.offlineModeEnabled = offlineModeEnabled
+        self.trialStartDate = trialStartDate
+        self.trialExpiredShown = trialExpiredShown
     }
 }
 

@@ -20,6 +20,7 @@ targets:
       - path: LumenLingo
         excludes:
           - "**/.DS_Store"
+          - "*.entitlements"
     resources:
       - path: LumenLingo/Resources/Assets.xcassets
         buildPhase: resources
@@ -53,6 +54,8 @@ targets:
         TARGETED_DEVICE_FAMILY: "1,2"
         SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: true
         CODE_SIGN_STYLE: Automatic
+        # TODO: Re-enable once iCloud entitlement is provisioned (see ICloud-sync.md)
+        # CODE_SIGN_ENTITLEMENTS: LumenLingo/LumenLingo.entitlements
 
   LumenLingoTests:
     type: bundle.unit-test

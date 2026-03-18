@@ -18,9 +18,15 @@ final class ProgressService {
     func getOrCreateProfile() -> UserProfile {
         let descriptor = FetchDescriptor<UserProfile>()
         if let profile = try? modelContext.fetch(descriptor).first {
+            // Backfill firstName/email for profiles created before these fields existed
+            if profile.firstName.isEmpty {
+                profile.firstName = "Sebastian"
+                profile.email = "rudph2@test.com"
+                try? modelContext.save()
+            }
             return profile
         }
-        let profile = UserProfile()
+        let profile = UserProfile(firstName: "Sebastian", email: "rudph2@test.com")
         modelContext.insert(profile)
         try? modelContext.save()
         return profile
@@ -87,13 +93,13 @@ final class ProgressService {
         )
         modelContext.insert(record)
 
-        // Update XP
-        addXP(result.score)
+        // Update XP (applies tier multiplier)
+        addXP(result.xpEarned)
 
         // Update streak
         updateStreak()
 
-        // Trim to max 50 records (FIFO)
+        // Trim to max 500 records (FIFO) — enough for ~30 days of monthly report data
         trimProgressRecords()
 
         try? modelContext.save()
@@ -104,9 +110,9 @@ final class ProgressService {
             sortBy: [SortDescriptor(\.createdDate, order: .reverse)]
         )
         guard let allRecords = try? modelContext.fetch(descriptor),
-              allRecords.count > 50 else { return }
+              allRecords.count > 500 else { return }
 
-        for record in allRecords.dropFirst(50) {
+        for record in allRecords.dropFirst(500) {
             modelContext.delete(record)
         }
     }

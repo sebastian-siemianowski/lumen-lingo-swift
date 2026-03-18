@@ -10,6 +10,8 @@ import SwiftData
 struct DashboardView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(TierManager.self) private var tierManager
+    @Environment(PracticeTimeTracker.self) private var practiceTracker
 
     @Query private var profiles: [UserProfile]
     @Query private var languagePrefs: [LanguagePreference]
@@ -21,12 +23,25 @@ struct DashboardView: View {
 
     @State private var isHeaderCollapsed = false
     @State private var showLanguageSheet = false
+    @State private var showMembershipSheet = false
     @State private var fogBreath: CGFloat = 0
     @State private var adventureIconPulse: CGFloat = 0
+    @State private var tierIconAppeared = false
+    @State private var showExpiredSheet = false
+    @State private var showAllLanguages = false
+    @State private var crossLanguageRecord: GameProgressRecord?
 
     private var profile: UserProfile? { profiles.first }
-    private var user: AppUser { .mock }
     private var isDark: Bool { colorScheme == .dark }
+
+    /// User's display name with graceful fallback for empty/nil profiles.
+    private var displayName: String {
+        let name = profile?.firstName.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        return name
+    }
+
+    /// Whether we have a real user name to personalize greetings.
+    private var hasUserName: Bool { !displayName.isEmpty }
 
     private var currentLanguagePair: String {
         guard let pref = languagePrefs.first else { return "English → Spanish" }
@@ -43,6 +58,14 @@ struct DashboardView: View {
         languagePrefs.first.flatMap { SupportedLanguage(rawValue: $0.targetLanguage) }?.countryCode ?? "ES"
     }
 
+    private var currentSourceRaw: String {
+        languagePrefs.first?.sourceLanguage ?? "english"
+    }
+
+    private var currentTargetRaw: String {
+        languagePrefs.first?.targetLanguage ?? "spanish"
+    }
+
     var body: some View {
         ZStack(alignment: .bottom) {
             ScrollView {
@@ -50,8 +73,14 @@ struct DashboardView: View {
                     // Language selector pill
                     languageSelector
 
+                    // Trial countdown banner (active trial only)
+                    TrialCountdownBanner()
+
                     // Header: Avatar + Greeting + Stats
                     dashboardHeader
+
+                    // Soundscape now-playing widget (Pro+ with active soundscape)
+                    SoundscapeNowPlaying()
 
                     // Divider
                     GlassDivider(color: .white, opacity: 0.08)
@@ -67,6 +96,9 @@ struct DashboardView: View {
                     // Recent Activity
                     recentActivitySection
 
+                    // Premium feature carousel (Free users only)
+                    PremiumFeatureCarousel()
+
                     Spacer(minLength: 120)
                 }
                 .padding(.horizontal, 16)
@@ -81,6 +113,45 @@ struct DashboardView: View {
         .toolbar(.hidden, for: .navigationBar)
         .sheet(isPresented: $showLanguageSheet) {
             LanguageSelectionView()
+        }
+        .sheet(isPresented: $showMembershipSheet) {
+            NavigationStack { MembershipView(isSheet: true) }
+        }
+        .sheet(isPresented: $showExpiredSheet) {
+            PracticeExpiredView(
+                score: 0,
+                correctAnswers: 0,
+                totalAnswered: 0,
+                onUpgradeTap: { showMembershipSheet = true },
+                onDismiss: { showExpiredSheet = false }
+            )
+        }
+    }
+
+    /// Whether practice time has expired and games should show a disabled state.
+    private var isPracticeExpired: Bool {
+        practiceTracker.isLimited(for: tierManager.currentTier) && practiceTracker.isExpired
+    }
+
+    /// Time badge text for game cards: "30 min/day" for free, "Unlimited" for paid, nil for trial/royal.
+    private var gameTimeBadge: String? {
+        if practiceTracker.isLimited(for: tierManager.currentTier) {
+            return "30 min/day"
+        } else {
+            return "Unlimited"
+        }
+    }
+
+    /// Formatted reset time string when practice time has expired.
+    private var practiceResetTime: String? {
+        guard isPracticeExpired else { return nil }
+        let total = practiceTracker.secondsUntilReset
+        let hours = total / 3600
+        let minutes = (total % 3600) / 60
+        if hours > 0 {
+            return "Resets in \(hours)h \(minutes)m"
+        } else {
+            return "Resets in \(minutes)m"
         }
     }
 
@@ -125,6 +196,27 @@ struct DashboardView: View {
     // MARK: - Dashboard Header
 
     private var dashboardHeader: some View {
+        CollapsibleSection(
+            style: .hero,
+            colors: CollapsibleSectionTheme.xpStats.gradientColors,
+            isCollapsed: $isHeaderCollapsed,
+            header: {
+                dashboardHeaderContent
+            },
+            content: {
+                statsRow
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 16)
+            }
+        )
+        .onAppear {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.3)) {
+                tierIconAppeared = true
+            }
+        }
+    }
+
+    private var dashboardHeaderContent: some View {
         VStack(spacing: 16) {
             // Avatar + Greeting row
             HStack(spacing: 10) {
@@ -147,59 +239,84 @@ struct DashboardView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Hello, \(user.firstName)!")
-                        .font(.system(size: 18, weight: .bold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#d946ef")],
-                                startPoint: .leading,
-                                endPoint: .trailing
+                    HStack(spacing: 4) {
+                        Text(hasUserName ? "Hello, \(displayName)!" : "Welcome back!")
+                            .font(.system(size: 18, weight: .bold))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: tierManager.currentTier == .free
+                                        ? [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#d946ef")]
+                                        : tierManager.tierGradientColors,
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
                             )
-                        )
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.8)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.7)
 
-                    Text("Ready for a new adventure?")
-                        .font(.system(size: 13))
-                        .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                        if tierManager.currentTier != .free {
+                            Image(systemName: tierManager.tierIcon)
+                                .font(.system(size: 14, weight: .semibold))
+                                .foregroundStyle(
+                                    LinearGradient(
+                                        colors: tierManager.tierGradientColors,
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
+                                .scaleEffect(tierIconAppeared ? 1 : 0)
+                                .opacity(tierIconAppeared ? 1 : 0)
+                        }
+                    }
+
+                    if tierManager.currentTier == .trial,
+                       let days = profile?.trialDaysRemaining, days > 0 {
+                        Text("\(days) days left in your trial")
+                            .font(.system(size: 11, weight: .medium))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: tierManager.tierGradientColors,
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                    } else {
+                        Text("Ready for a new adventure?")
+                            .font(.system(size: 13))
+                            .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
+                    }
                 }
 
                 Spacer()
 
-                if !isHeaderCollapsed {
-                    Button {
-                        withAnimation(.spring(response: 0.4)) {
-                            isHeaderCollapsed.toggle()
-                        }
-                    } label: {
-                        Image(systemName: "chevron.up")
-                            .font(.caption.bold())
-                            .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-                            .padding(8)
-                            .background(Circle().fill(isDark ? .white.opacity(0.1) : Color.caribbeanMist.opacity(0.12)))
+                // Practice time ring
+                PracticeTimeRing()
+
+                Button {
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+                        isHeaderCollapsed.toggle()
                     }
-                    .buttonStyle(LumenPressStyle(weight: .soft))
+                    HapticsService.shared.toggleSwitch()
+                } label: {
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                        .rotationEffect(.degrees(isHeaderCollapsed ? 0 : 90))
+                        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: isHeaderCollapsed)
+                        .padding(8)
+                        .background(Circle().fill(isDark ? .white.opacity(0.1) : Color.caribbeanMist.opacity(0.12)))
                 }
+                .buttonStyle(LumenPressStyle(weight: .soft))
+                .accessibilityLabel(isHeaderCollapsed ? "Expand dashboard" : "Collapse dashboard")
             }
 
-            // Stats row (collapsible)
-            if !isHeaderCollapsed {
-                statsRow
-                    .transition(.move(edge: .top).combined(with: .opacity))
-            } else {
+            // Compact stat badges when collapsed
+            if isHeaderCollapsed {
                 compactStatBadges
                     .transition(.opacity)
             }
         }
         .padding(16)
-        .background(GlassCardBackground())
-        .onTapGesture {
-            if isHeaderCollapsed {
-                withAnimation(.spring(response: 0.4)) {
-                    isHeaderCollapsed = false
-                }
-            }
-        }
     }
 
     private var statsRow: some View {
@@ -214,11 +331,12 @@ struct DashboardView: View {
             )
 
             statCard(
-                title: "Total XP",
+                title: hasUserName ? "\(displayName)'s XP" : "Total XP",
                 value: "\(profile?.totalXP ?? 0)",
                 icon: "bolt.fill",
                 iconColor: .cyan,
-                gradient: [Color(hex: "#06b6d4"), Color(hex: "#0891b2")]
+                gradient: [Color(hex: "#06b6d4"), Color(hex: "#0891b2")],
+                milestone: currentXPMilestone
             )
 
             statCard(
@@ -231,30 +349,71 @@ struct DashboardView: View {
         }
     }
 
+    // MARK: - XP Milestones
+
+    private static let xpMilestones: [(threshold: Int, icon: String, label: String)] = [
+        (100,   "star.fill", "Rising Star"),
+        (500,   "flame.fill", "On Fire"),
+        (1000,  "diamond.fill", "Legend"),
+        (5000,  "crown.fill", "Master"),
+        (10000, "trophy.fill", "Immortal"),
+    ]
+
+    private var currentXPMilestone: (icon: String, label: String)? {
+        let xp = profile?.totalXP ?? 0
+        return Self.xpMilestones
+            .last { xp >= $0.threshold }
+            .map { ($0.icon, $0.label) }
+    }
+
     private func statCard(
         title: String,
         value: String,
         icon: String,
         iconColor: Color,
         gradient: [Color],
-        progress: Double? = nil
+        progress: Double? = nil,
+        milestone: (icon: String, label: String)? = nil
     ) -> some View {
-        VStack(spacing: 6) {
-            HStack(spacing: 4) {
-                Image(systemName: icon)
-                    .font(.system(size: 12))
-                    .foregroundStyle(iconColor)
-                    .shadow(color: iconColor.opacity(0.5), radius: 4)
-                Text(value)
-                    .font(.system(size: 16, weight: .bold))
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-            }
+        VStack(spacing: 4) {
+            Spacer(minLength: 0)
+
+            Image(systemName: icon)
+                .font(.system(size: 14))
+                .foregroundStyle(iconColor)
+                .shadow(color: iconColor.opacity(0.5), radius: 4)
+
+            Text(value)
+                .font(.system(size: 18, weight: .bold))
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
 
             Text(title)
-                .font(.system(size: 10))
+                .font(.system(size: 9))
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+
+            if let milestone {
+                HStack(spacing: 2) {
+                    Image(systemName: milestone.icon)
+                        .font(.system(size: 7))
+                    Text(milestone.label)
+                        .font(.system(size: 8, weight: .semibold))
+                }
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: gradient,
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .transition(.asymmetric(
+                    insertion: .scale.combined(with: .opacity),
+                    removal: .opacity
+                ))
+            }
 
             if let progress {
                 AnimatedProgressBar(
@@ -263,12 +422,11 @@ struct DashboardView: View {
                     gradient: gradient,
                     showGlow: false
                 )
-            } else {
-                // Invisible spacer matching progress bar height for alignment
-                Color.clear.frame(height: 4)
             }
+
+            Spacer(minLength: 0)
         }
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, minHeight: 80)
         .padding(8)
         .background(
             RoundedRectangle(cornerRadius: 12)
@@ -395,6 +553,10 @@ struct DashboardView: View {
                     cta: "Master New Words",
                     colorScheme: .flashCards,
                     route: .flashcardsCategories,
+                    timeBadge: gameTimeBadge,
+                    isExpired: isPracticeExpired,
+                    resetTime: practiceResetTime,
+                    onExpiredTap: { showExpiredSheet = true },
                     navigationPath: $navigationPath
                 )
 
@@ -405,6 +567,10 @@ struct DashboardView: View {
                     cta: "Test Your Skills",
                     colorScheme: .grammar,
                     route: .grammarCategories,
+                    timeBadge: gameTimeBadge,
+                    isExpired: isPracticeExpired,
+                    resetTime: practiceResetTime,
+                    onExpiredTap: { showExpiredSheet = true },
                     navigationPath: $navigationPath
                 )
 
@@ -415,6 +581,10 @@ struct DashboardView: View {
                     cta: "Craft & Discover",
                     colorScheme: .wordBuilder,
                     route: .wordBuilderCategories,
+                    timeBadge: gameTimeBadge,
+                    isExpired: isPracticeExpired,
+                    resetTime: practiceResetTime,
+                    onExpiredTap: { showExpiredSheet = true },
                     navigationPath: $navigationPath
                 )
             }
@@ -424,44 +594,128 @@ struct DashboardView: View {
     // MARK: - Recent Activity
 
     private var recentActivitySection: some View {
-        let activities = Array(recentProgress.prefix(5))
+        let filtered: [GameProgressRecord] = if showAllLanguages {
+            Array(recentProgress.prefix(10))
+        } else {
+            Array(recentProgress.filter {
+                $0.sourceLanguage == currentSourceRaw && $0.targetLanguage == currentTargetRaw
+            }.prefix(5))
+        }
 
-        return Group {
-            if !activities.isEmpty {
-                VStack(spacing: 12) {
-                    HStack {
-                        Text("Recent Activity")
-                            .font(.system(size: 16, weight: .bold))
-                            .foregroundStyle(
-                                LinearGradient(
-                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
-                            )
-                        Spacer()
-                    }
+        return VStack(spacing: 12) {
+            HStack {
+                Text("Recent Activity")
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                Spacer()
+            }
 
-                    VStack(spacing: 8) {
-                        ForEach(activities) { activity in
-                            activityRow(activity)
-                                .contentShape(Rectangle())
-                                .dashboardPress(
-                                    accentColor: GameCardColorScheme.forType(activity.gameTypeEnum ?? .flashCards).primary,
-                                    scale: 0.965
-                                ) {
+            Picker("", selection: $showAllLanguages) {
+                Text("This Language").tag(false)
+                Text("All Languages").tag(true)
+            }
+            .pickerStyle(.segmented)
+
+            if filtered.isEmpty {
+                recentActivityEmptyState
+            } else {
+                VStack(spacing: 8) {
+                    ForEach(filtered) { activity in
+                        activityRow(activity, showBadge: showAllLanguages)
+                            .contentShape(Rectangle())
+                            .dashboardPress(
+                                accentColor: GameCardColorScheme.forType(activity.gameTypeEnum ?? .flashCards).primary,
+                                scale: 0.965
+                            ) {
+                                if showAllLanguages && isCrossLanguage(activity) {
+                                    crossLanguageRecord = activity
+                                } else {
                                     navigateToGame(for: activity)
                                 }
-                        }
+                            }
                     }
-                    .padding(16)
-                    .background(GlassCardBackground())
+                }
+                .padding(16)
+                .background(GlassCardBackground())
+            }
+        }
+        .confirmationDialog(
+            crossLanguageDialogTitle,
+            isPresented: .init(
+                get: { crossLanguageRecord != nil },
+                set: { if !$0 { crossLanguageRecord = nil } }
+            ),
+            titleVisibility: .visible
+        ) {
+            if let record = crossLanguageRecord {
+                Button("Switch & Play") {
+                    switchLanguageAndNavigate(record)
+                }
+                Button("Cancel", role: .cancel) {
+                    crossLanguageRecord = nil
                 }
             }
         }
     }
 
-    private func activityRow(_ record: GameProgressRecord) -> some View {
+    private var crossLanguageDialogTitle: String {
+        guard let record = crossLanguageRecord,
+              let src = SupportedLanguage(rawValue: record.sourceLanguage),
+              let tgt = SupportedLanguage(rawValue: record.targetLanguage) else {
+            return "Switch language pair?"
+        }
+        return "This game was in \(src.englishName) → \(tgt.englishName). Switch to it and play?"
+    }
+
+    private func isCrossLanguage(_ record: GameProgressRecord) -> Bool {
+        record.sourceLanguage != currentSourceRaw || record.targetLanguage != currentTargetRaw
+    }
+
+    private func switchLanguageAndNavigate(_ record: GameProgressRecord) {
+        if let pref = languagePrefs.first {
+            pref.sourceLanguage = record.sourceLanguage
+            pref.targetLanguage = record.targetLanguage
+        }
+        crossLanguageRecord = nil
+        navigateToGame(for: record)
+    }
+
+    private var recentActivityEmptyState: some View {
+        VStack(spacing: 16) {
+            HStack(spacing: 6) {
+                CountryFlagView(countryCode: currentSourceCode, size: 20)
+                Image(systemName: "arrow.right")
+                    .font(.system(size: 11, weight: .medium))
+                    .foregroundStyle(.white.opacity(0.4))
+                CountryFlagView(countryCode: currentTargetCode, size: 20)
+            }
+            .padding(.top, 4)
+
+            VStack(spacing: 6) {
+                Text("No activity yet")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk)
+
+                Text("Start a game in \(currentLanguagePair) to see your progress here!")
+                    .font(.system(size: 12))
+                    .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 24)
+        .padding(.horizontal, 16)
+        .background(GlassCardBackground())
+    }
+
+    private func activityRow(_ record: GameProgressRecord, showBadge: Bool = false) -> some View {
         let type = record.gameTypeEnum ?? .flashCards
         let colors = GameCardColorScheme.forType(type)
 
@@ -484,10 +738,19 @@ struct DashboardView: View {
             }
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("\(type.displayName) · \(record.categoryName)")
-                    .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-                    .lineLimit(1)
+                HStack(spacing: 4) {
+                    Text("\(type.displayName) · \(record.categoryName)")
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .lineLimit(1)
+
+                    if showBadge {
+                        LanguagePairBadge(
+                            sourceLanguage: record.sourceLanguage,
+                            targetLanguage: record.targetLanguage
+                        )
+                    }
+                }
 
                 HStack(spacing: 4) {
                     Text("+\(record.score) XP")
@@ -650,6 +913,10 @@ struct DashboardGameCard: View {
     let cta: String
     let colorScheme: GameCardColorScheme
     let route: AppRoute
+    var timeBadge: String? = nil
+    var isExpired: Bool = false
+    var resetTime: String? = nil
+    var onExpiredTap: (() -> Void)? = nil
     @Binding var navigationPath: NavigationPath
 
     @Environment(\.self) private var env
@@ -671,17 +938,35 @@ struct DashboardGameCard: View {
                     // Gradient icon container with pulsing glow
                     iconView
 
-                    // Title + Description
+                    // Title + Description + Time Badge
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(title)
-                            .font(.system(size: 16, weight: .bold))
-                            .foregroundStyle(
-                                LinearGradient(
-                                    colors: [colorScheme.primary, colorScheme.secondary],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
+                        HStack(spacing: 6) {
+                            Text(title)
+                                .font(.system(size: 16, weight: .bold))
+                                .foregroundStyle(
+                                    LinearGradient(
+                                        colors: [colorScheme.primary, colorScheme.secondary],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
                                 )
-                            )
+
+                            if let badge = isExpired ? resetTime : timeBadge {
+                                Text(badge)
+                                    .font(.system(size: 10, weight: .bold))
+                                    .foregroundStyle(isExpired ? .orange : colorScheme.primary)
+                                    .padding(.horizontal, 7)
+                                    .padding(.vertical, 3)
+                                    .background(
+                                        Capsule()
+                                            .fill(
+                                                isExpired
+                                                    ? Color.orange.opacity(isDark ? 0.15 : 0.1)
+                                                    : colorScheme.primary.opacity(isDark ? 0.15 : 0.1)
+                                            )
+                                    )
+                            }
+                        }
 
                         Text(description)
                             .font(.system(size: 12, weight: .medium))
@@ -748,10 +1033,15 @@ struct DashboardGameCard: View {
         .clipShape(RoundedRectangle(cornerRadius: 22))
         .contentShape(RoundedRectangle(cornerRadius: 22))
         .dashboardPress(accentColor: colorScheme.primary, scale: 0.955) {
-            navigationPath.append(route)
+            if isExpired {
+                onExpiredTap?()
+            } else {
+                navigationPath.append(route)
+            }
         }
-        .opacity(appeared ? 1 : 0)
+        .opacity(isExpired ? 0.5 : (appeared ? 1 : 0))
         .offset(y: appeared ? 0 : 20)
+        .animation(.easeInOut(duration: 0.3), value: isExpired)
         .onAppear {
             withAnimation(.spring(response: 0.5, dampingFraction: 0.8).delay(0.1)) {
                 appeared = true

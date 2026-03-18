@@ -4,6 +4,7 @@ import SwiftData
 // MARK: - Word Builder ViewModel
 
 /// Port of useWordBuilderGame.jsx — manages word building game state.
+@MainActor
 @Observable
 final class WordBuilderViewModel {
     // Game state
