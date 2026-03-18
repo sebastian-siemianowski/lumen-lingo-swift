@@ -304,27 +304,9 @@ struct WordBuilderView: View {
     // MARK: - Clue Section
 
     private func clueSection(word: WordBuilderWord) -> some View {
-        VStack(spacing: 10) {
-            // Decorative top icon
-            Image(systemName: "textformat.abc")
-                .font(.system(size: 16))
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [Color(hex: "#fb923c"), Color(hex: "#f59e0b")],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
-                .symbolEffect(.pulse, options: .repeating.speed(0.3))
-
-            Text(L.buildTheWord)
-                .font(.caption.bold())
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-                .textCase(.uppercase)
-                .tracking(1.5)
-
+        ZStack(alignment: .topTrailing) {
             Text(word.hint)
-                .font(.title2.bold())
+                .font(.title3.bold())
                 .foregroundStyle(
                     LinearGradient(
                         colors: [Color(hex: "#fbbf24"), .white, Color(hex: "#fb923c")],
@@ -334,21 +316,38 @@ struct WordBuilderView: View {
                 )
                 .multilineTextAlignment(.center)
                 .shadow(color: Color(hex: "#f59e0b").opacity(0.4), radius: 12)
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 20)
+
+            Image(systemName: "lightbulb.fill")
+                .font(.caption2)
+                .foregroundStyle(.secondary.opacity(0.5))
+                .padding(10)
         }
-        .padding(20)
-        .frame(maxWidth: .infinity)
         .background(
             ZStack {
                 GlassCardBackground(
-                    cornerRadius: 24,
+                    cornerRadius: 20,
                     borderColor: Color(hex: "#fb923c"),
-                    borderOpacity: 0.12,
+                    borderOpacity: 0.15,
                     tintColor: Color(hex: "#fb923c")
                 )
 
+                // Warm gradient border accent
+                RoundedRectangle(cornerRadius: 20)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [Color(hex: "#fbbf24").opacity(0.25), Color(hex: "#fb923c").opacity(0.15)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 1
+                    )
+
                 // Top reflection band
                 VStack {
-                    RoundedRectangle(cornerRadius: 24)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [.white.opacity(0.10), .clear],
@@ -359,10 +358,11 @@ struct WordBuilderView: View {
                         .frame(height: 40)
                     Spacer()
                 }
-                .clipShape(RoundedRectangle(cornerRadius: 24))
+                .clipShape(RoundedRectangle(cornerRadius: 20))
             }
         )
-        .clipShape(RoundedRectangle(cornerRadius: 24))
+        .clipShape(RoundedRectangle(cornerRadius: 20))
+        .transition(.opacity)
     }
 
     // MARK: - Answer Slots
@@ -581,10 +581,10 @@ struct WordBuilderView: View {
                 }
                 .font(.system(size: 13, weight: .semibold))
                 .lineLimit(1)
-                .minimumScaleFactor(0.75)
+                .minimumScaleFactor(0.7)
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 .padding(.horizontal, 10)
-                .padding(.vertical, 10)
+                .frame(minHeight: 44)
                 .background(
                     GlassCardBackground(
                         cornerRadius: 14,
@@ -609,10 +609,10 @@ struct WordBuilderView: View {
                 }
                 .font(.system(size: 13, weight: .semibold))
                 .lineLimit(1)
-                .minimumScaleFactor(0.75)
+                .minimumScaleFactor(0.7)
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum)
                 .padding(.horizontal, 10)
-                .padding(.vertical, 10)
+                .frame(minHeight: 44)
                 .background(
                     GlassCardBackground(
                         cornerRadius: 14,
@@ -636,10 +636,10 @@ struct WordBuilderView: View {
                 }
                 .font(.system(size: 13, weight: .semibold))
                 .lineLimit(1)
-                .minimumScaleFactor(0.75)
+                .minimumScaleFactor(0.7)
                 .foregroundStyle(isDark ? .white.opacity(0.85) : .caribbeanPlum)
                 .padding(.horizontal, 10)
-                .padding(.vertical, 10)
+                .frame(minHeight: 44)
                 .background(
                     GlassCardBackground(
                         cornerRadius: 14,
@@ -654,8 +654,6 @@ struct WordBuilderView: View {
             .disabled(!hasAvailableLetters || isChecking || isCorrect != nil)
             .opacity(!hasAvailableLetters ? 0.4 : 1.0)
 
-            Spacer()
-
             // Check button
             Button {
                 checkAnswer()
@@ -666,10 +664,10 @@ struct WordBuilderView: View {
                 }
                 .font(.system(size: 13, weight: .semibold))
                 .lineLimit(1)
-                .minimumScaleFactor(0.75)
+                .minimumScaleFactor(0.7)
                 .foregroundStyle(.white)
                 .padding(.horizontal, 14)
-                .padding(.vertical, 10)
+                .frame(minHeight: 44)
                 .background(
                     RoundedRectangle(cornerRadius: 14)
                         .fill(

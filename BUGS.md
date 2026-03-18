@@ -25,7 +25,7 @@
 | E10 | [Game Completion Flow](#epic-10-game-completion-flow) | P1 | 4 | 18 | ✅ Done |
 | E11 | [Grammar Challenge UX Overhaul](#epic-11-grammar-challenge-ux-overhaul) | P1 | 5 | 26 | ✅ Done |
 | E12 | [Recent Activity Cross-Language Support](#epic-12-recent-activity-cross-language-support) | P1 | 3 | 13 | ✅ Done |
-| E13 | [Word Constructor Polish](#epic-13-word-constructor-polish) | P1 | 3 | 13 |
+| E13 | [Word Constructor Polish](#epic-13-word-constructor-polish) | P1 | 3 | 13 | ✅ Done |
 | E14 | [Royal Paywall Visual Integrity](#epic-14-royal-paywall-visual-integrity) | P0 | 3 | 13 | ✅ Done |
 | E15 | [Haptic Feedback Integration](#epic-15-haptic-feedback-integration) | P1 | 4 | 18 |
 | E16 | [Game Header UX Redesign](#epic-16-game-header-ux-redesign) | P2 | 4 | 18 |
@@ -1778,7 +1778,7 @@
 **ID:** BUG-046  
 **Priority:** P1  
 **Points:** 2  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user playing Word Constructor,  
 **I want** the "BUILD THE WORD" label and any spurious "ABS" text to be removed from the clue section,  
@@ -1786,12 +1786,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The `textformat.abc` icon is removed from the clue section entirely.
-- [ ] AC2: The `L.buildTheWord` ("BUILD THE WORD") text label is removed.
-- [ ] AC3: The clue section shows ONLY: the hint text (the word definition or clue) in `.title3.bold()` font with the warm gold gradient, centered.
-- [ ] AC4: The hint text has sufficient padding (16pt horizontal) and proper line wrapping for long hints.
-- [ ] AC5: No residual "ABS" text appears anywhere in the Word Builder game.
-- [ ] AC6: The visual hierarchy is clear: hint text is the primary element in the clue section, styled as a featured card.
+- [x] AC1: The `textformat.abc` icon is removed from the clue section entirely.
+- [x] AC2: The `L.buildTheWord` ("BUILD THE WORD") text label is removed.
+- [x] AC3: The clue section shows ONLY: the hint text (the word definition or clue) in `.title3.bold()` font with the warm gold gradient, centered.
+- [x] AC4: The hint text has sufficient padding (16pt horizontal) and proper line wrapping for long hints.
+- [x] AC5: No residual "ABS" text appears anywhere in the Word Builder game.
+- [x] AC6: The visual hierarchy is clear: hint text is the primary element in the clue section, styled as a featured card.
 
 #### Subtasks
 
@@ -1810,7 +1810,7 @@
 **ID:** BUG-047  
 **Priority:** P0  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user in any language,  
 **I want** all button labels in the Word Constructor to be fully visible without text being cut off,  
@@ -1818,12 +1818,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The "Check" button label is fully visible in all supported languages (English, Spanish, German, French, Japanese, etc.). Test with the longest known translation.
-- [ ] AC2: All buttons use `minimumScaleFactor(0.7)` to scale text down on narrow screens rather than truncating.
-- [ ] AC3: Buttons use `.lineLimit(1)` WITH `minimumScaleFactor` — allowing text to shrink but never wrap or truncate.
-- [ ] AC4: The minimum recommended tap target size (44×44pt per Apple HIG) is maintained for all buttons, even after text scaling.
-- [ ] AC5: This fix applies to ALL interactive buttons in the Word Constructor: Check, Hint, Clear, Shuffle, Skip, and any other game-state buttons.
-- [ ] AC6: Button text remains centered and visually balanced at all scale factors.
+- [x] AC1: The "Check" button label is fully visible in all supported languages (English, Spanish, German, French, Japanese, etc.). Test with the longest known translation.
+- [x] AC2: All buttons use `minimumScaleFactor(0.7)` to scale text down on narrow screens rather than truncating.
+- [x] AC3: Buttons use `.lineLimit(1)` WITH `minimumScaleFactor` — allowing text to shrink but never wrap or truncate.
+- [x] AC4: The minimum recommended tap target size (44×44pt per Apple HIG) is maintained for all buttons, even after text scaling.
+- [x] AC5: This fix applies to ALL interactive buttons in the Word Constructor: Check, Hint, Clear, Shuffle, Skip, and any other game-state buttons.
+- [x] AC6: Button text remains centered and visually balanced at all scale factors.
 
 #### Subtasks
 
@@ -1843,7 +1843,7 @@
 **ID:** BUG-048  
 **Priority:** P2  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user,  
 **I want** the clue/hint card in Word Constructor to be visually polished,  
@@ -1851,12 +1851,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The clue text is presented inside a glassmorphic card with a warm gradient border (gold → orange, matching the game's color scheme).
-- [ ] AC2: The card has inner padding of 20pt and uses `.ultraThinMaterial` background.
-- [ ] AC3: The hint text uses `.title3.bold()` with the warm gold `foregroundStyle` gradient.
-- [ ] AC4: A subtle "lightbulb.fill" icon appears in the top-right corner of the card (small, 12pt, at 50% opacity) as a hint indicator.
-- [ ] AC5: The card enters with a fade-in animation when a new word is presented.
-- [ ] AC6: On both light and dark mode, the card is readable and beautiful.
+- [x] AC1: The clue text is presented inside a glassmorphic card with a warm gradient border (gold → orange, matching the game's color scheme).
+- [x] AC2: The card has inner padding of 20pt and uses `.ultraThinMaterial` background.
+- [x] AC3: The hint text uses `.title3.bold()` with the warm gold `foregroundStyle` gradient.
+- [x] AC4: A subtle "lightbulb.fill" icon appears in the top-right corner of the card (small, 12pt, at 50% opacity) as a hint indicator.
+- [x] AC5: The card enters with a fade-in animation when a new word is presented.
+- [x] AC6: On both light and dark mode, the card is readable and beautiful.
 
 #### Subtasks
 
