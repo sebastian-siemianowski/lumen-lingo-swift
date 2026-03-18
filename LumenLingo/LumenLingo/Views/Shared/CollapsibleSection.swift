@@ -367,7 +367,7 @@ struct CollapsibleSection<Header: View, Content: View>: View {
     }
 
     /// Glass background for `.standard` style collapsed state — premium glass pill.
-    /// Layers match GlassCardBackground: material → Caribbean tint → frosted highlight → section accent → stroke → dual shadow.
+    /// Layers match GlassCardBackground: material → cosmic tint → frosted highlight → luminous glow → section accent → top frost → stroke → dual shadow.
     /// All intensity values are parameterized by `resolvedWeight`.
     /// Breathing parameters drive subtle highlight shift and stroke rotation (Story 3.3).
     /// Press parameters compress shadows, dim highlight, and boost stroke (Story 3.4).
@@ -387,8 +387,8 @@ struct CollapsibleSection<Header: View, Content: View>: View {
 
         return RoundedRectangle(cornerRadius: cr)
             .fill(.ultraThinMaterial)
-            .opacity(isDark ? w.materialOpacity.dark : w.materialOpacity.light)
-            // Caribbean tint layer — intensity scaled by weight
+            .opacity(isDark ? w.materialOpacity.dark * 0.85 : w.materialOpacity.light)
+            // Cosmic / Caribbean tint layer — intensity scaled by weight
             .overlay(
                 Group {
                     if !isDark {
@@ -405,13 +405,14 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                                 )
                             )
                     } else {
-                        // Dark mode: deep cosmic tint for frosted depth
+                        // Dark mode: cosmic tint blended with section color for personality
                         RoundedRectangle(cornerRadius: cr)
                             .fill(
                                 LinearGradient(
                                     colors: [
-                                        Color(red: 0.08, green: 0.05, blue: 0.15).opacity(0.40 * tint),
-                                        Color(red: 0.05, green: 0.03, blue: 0.12).opacity(0.30 * tint)
+                                        Color(red: 0.08, green: 0.055, blue: 0.15).opacity(0.50 * tint),
+                                        colors[0].opacity(0.07 * tint),
+                                        Color(red: 0.05, green: 0.035, blue: 0.12).opacity(0.40 * tint)
                                     ],
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
@@ -426,12 +427,32 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                     .fill(
                         LinearGradient(
                             colors: isDark
-                                ? [.white.opacity(0.14 * tint * highlightDim), .clear, .white.opacity(0.05 * tint * highlightDim)]
+                                ? [.white.opacity(0.16 * tint * highlightDim), .white.opacity(0.02 * tint * highlightDim), .white.opacity(0.06 * tint * highlightDim)]
                                 : [.white.opacity(0.20 * tint * highlightDim), .clear, .white.opacity(0.05 * tint * highlightDim)],
                             startPoint: UnitPoint(x: 0.5, y: highlightShift),
                             endPoint: UnitPoint(x: 0.5, y: 1 + highlightShift)
                         )
                     )
+            )
+            // Dark mode luminous inner glow — section color radiates softly from center
+            .overlay(
+                Group {
+                    if isDark {
+                        RoundedRectangle(cornerRadius: cr)
+                            .fill(
+                                .radialGradient(
+                                    colors: [
+                                        colors[0].opacity(0.10 * tint * highlightDim),
+                                        colors.last!.opacity(0.04 * tint * highlightDim),
+                                        .clear
+                                    ],
+                                    center: UnitPoint(x: 0.3, y: 0.3 + highlightShift),
+                                    startRadius: 0,
+                                    endRadius: 120
+                                )
+                            )
+                    }
+                }
             )
             // Section accent tint — preserves per-section color identity
             .overlay(
@@ -440,8 +461,8 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                         LinearGradient(
                             colors: isDark
                                 ? [
-                                    colors[0].opacity(0.06 * tint),
-                                    colors.last!.opacity(0.03 * tint)
+                                    colors[0].opacity(0.08 * tint),
+                                    colors.last!.opacity(0.04 * tint)
                                 ]
                                 : [
                                     colors[0].opacity(0.08 * tint),
@@ -452,19 +473,41 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                         )
                     )
             )
+            // Dark mode top frost band — mimics light catching the top edge of frosted glass
+            .overlay(
+                Group {
+                    if isDark {
+                        VStack(spacing: 0) {
+                            LinearGradient(
+                                colors: [
+                                    .white.opacity(0.10 * tint * highlightDim),
+                                    .white.opacity(0.03 * tint * highlightDim),
+                                    .clear
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                            .frame(height: 18)
+                            Spacer(minLength: 0)
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: cr))
+                    }
+                }
+            )
             // Stroke border — breathes ±5° angle; intensifies 1.3× on press
             .overlay(strokeBorderOverlay(strokeAngle: strokeAngle, pressMultiplier: isPressed ? 1.3 : 1.0))
             // Dual shadow — compressed on press (card presses into surface)
+            // Dark mode: ambient colored glow for depth; light mode: Caribbean shadows
             .shadow(
                 color: isDark
-                    ? colors[0].opacity(0.10 * lift.opacityMultiplier)
+                    ? colors[0].opacity(0.14 * lift.opacityMultiplier)
                     : Color(hex: "#C494FC").opacity(0.10 * lift.opacityMultiplier),
                 radius: liftRadius,
                 y: liftY
             )
             .shadow(
                 color: isDark
-                    ? .black.opacity(0.04 * ground.opacityMultiplier)
+                    ? colors.last!.opacity(0.06 * ground.opacityMultiplier)
                     : Color(hex: "#F472B6").opacity(0.04 * ground.opacityMultiplier),
                 radius: groundRadius,
                 y: groundY
