@@ -20,7 +20,7 @@
 | E5 | [Membership & Premium Mobile UX](#epic-5-membership--premium-mobile-ux) | P0 | 5 | 26 | ✅ Done |
 | E6 | [Offline Mode & Debug Infrastructure](#epic-6-offline-mode--debug-infrastructure) | P1 | 4 | 21 | ✅ Done |
 | E7 | [Tier Transition Animation Polish](#epic-7-tier-transition-animation-polish) | P1 | 3 | 13 | ✅ Done |
-| E8 | [Profile Page UX Refinement](#epic-8-profile-page-ux-refinement) | P2 | 3 | 13 |
+| E8 | [Profile Page UX Refinement](#epic-8-profile-page-ux-refinement) | P2 | 3 | 13 | ✅ Done |
 | E9 | [Onboarding Mobile Optimization](#epic-9-onboarding-mobile-optimization) | P0 | 4 | 18 | ✅ Done |
 | E10 | [Game Completion Flow](#epic-10-game-completion-flow) | P1 | 4 | 18 | ✅ Done |
 | E11 | [Grammar Challenge UX Overhaul](#epic-11-grammar-challenge-ux-overhaul) | P1 | 5 | 26 | ✅ Done |
@@ -1063,7 +1063,7 @@
 **ID:** BUG-027  
 **Priority:** P2  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user on the Profile page,  
 **I want** to collapse the profile header (avatar, name, level, stats) into a compact bar,  
@@ -1071,12 +1071,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The profile header is wrapped in a collapsible section using the same `collapsibleSection` pattern from JourneyView (glassmorphic collapsed pill, gradient icon circle, animated chevron).
-- [ ] AC2: When collapsed: shows a compact pill with the user's avatar (small, 32pt), name, and tier badge in a single horizontal line. Level and stats are hidden.
-- [ ] AC3: When expanded: shows the full profile header as it currently appears (avatar, name, level, tier badge, quick stats row).
-- [ ] AC4: The collapse animation uses the established spring timing (0.35s, damping 0.8).
-- [ ] AC5: The collapse state defaults to EXPANDED on first visit. State persists within the session but resets on app relaunch.
-- [ ] AC6: The collapsed pill has the same interaction feedback as JourneyView's collapsible headers (0.97x scale + 0.85 opacity on press).
+- [x] AC1: The profile header is wrapped in a collapsible section using the same `collapsibleSection` pattern from JourneyView (glassmorphic collapsed pill, gradient icon circle, animated chevron).
+- [x] AC2: When collapsed: shows a compact pill with the user's avatar (small, 32pt), name, and tier badge in a single horizontal line. Level and stats are hidden.
+- [x] AC3: When expanded: shows the full profile header as it currently appears (avatar, name, level, tier badge, quick stats row).
+- [x] AC4: The collapse animation uses the established spring timing (0.35s, damping 0.8).
+- [x] AC5: The collapse state defaults to EXPANDED on first visit. State persists within the session but resets on app relaunch.
+- [x] AC6: The collapsed pill has the same interaction feedback as JourneyView's collapsible headers (0.97x scale + 0.85 opacity on press).
 
 #### Subtasks
 
@@ -1095,7 +1095,7 @@
 **ID:** BUG-028  
 **Priority:** P2  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user who knows their current plan,  
 **I want** to collapse the entire "My Plan" card on the Profile page,  
@@ -1103,12 +1103,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The My Plan card is wrapped in a collapsible section using the shared `collapsibleSection` helper.
-- [ ] AC2: When collapsed: shows a compact pill with the tier icon, "My Plan", and the tier name (e.g., "Royal").
-- [ ] AC3: When expanded: shows the full `MyPlanCard` as it currently appears (tier info, features, upgrade link).
-- [ ] AC4: The internal expand/collapse within MyPlanCard (feature list toggle) still works independently when the card is expanded.
-- [ ] AC5: Collapse animation matches the Profile Header (Story 8.1) and JourneyView patterns.
-- [ ] AC6: Default state: expanded.
+- [x] AC1: The My Plan card is wrapped in a collapsible section using the shared `collapsibleSection` helper.
+- [x] AC2: When collapsed: shows a compact pill with the tier icon, "My Plan", and the tier name (e.g., "Royal").
+- [x] AC3: When expanded: shows the full `MyPlanCard` as it currently appears (tier info, features, upgrade link).
+- [x] AC4: The internal expand/collapse within MyPlanCard (feature list toggle) still works independently when the card is expanded.
+- [x] AC5: Collapse animation matches the Profile Header (Story 8.1) and JourneyView patterns.
+- [x] AC6: Default state: expanded.
 
 #### Subtasks
 
@@ -1126,7 +1126,7 @@
 **ID:** BUG-029  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** developer,  
 **I want** the `collapsibleSection` helper and `CollapsibleHeaderButtonStyle` to be extracted into a shared, reusable component,  
@@ -1134,13 +1134,13 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: A new file `Views/Shared/CollapsibleSection.swift` contains the `collapsibleSection` view builder function and `CollapsibleHeaderButtonStyle`.
-- [ ] AC2: `JourneyView.swift` imports and uses the shared component, removing its local copy.
-- [ ] AC3: `ProfileView.swift` imports and uses the same shared component for header and My Plan collapsibles.
-- [ ] AC4: The component supports an optional `subtitle` parameter (e.g., for showing session count or tier name in the collapsed pill).
-- [ ] AC5: The component's visual parameters (corner radius, gradient intensity, shadow) are configurable with sensible defaults matching the current JourneyView implementation.
-- [ ] AC6: No visual regressions in JourneyView's collapsible sections after extraction.
-- [ ] AC7: All existing tests pass.
+- [x] AC1: A new file `Views/Shared/CollapsibleSection.swift` contains the `collapsibleSection` view builder function and `CollapsibleHeaderButtonStyle`.
+- [x] AC2: `JourneyView.swift` imports and uses the shared component, removing its local copy.
+- [x] AC3: `ProfileView.swift` imports and uses the same shared component for header and My Plan collapsibles.
+- [x] AC4: The component supports an optional `subtitle` parameter (e.g., for showing session count or tier name in the collapsed pill).
+- [x] AC5: The component's visual parameters (corner radius, gradient intensity, shadow) are configurable with sensible defaults matching the current JourneyView implementation.
+- [x] AC6: No visual regressions in JourneyView's collapsible sections after extraction.
+- [x] AC7: All existing tests pass.
 
 #### Subtasks
 

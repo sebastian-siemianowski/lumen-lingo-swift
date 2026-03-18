@@ -64,7 +64,7 @@ struct JourneyView: View {
                 journeyHeader
 
                 // Overall stats (always visible — basicStats)
-                collapsibleSection(
+                CollapsibleSection(
                     title: hasUserName ? "\(displayName)'s XP" : L.totalXP,
                     icon: "chart.bar.fill",
                     colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
@@ -74,7 +74,7 @@ struct JourneyView: View {
                 }
 
                 // Milestones timeline (always visible, badge style varies by tier)
-                collapsibleSection(
+                CollapsibleSection(
                     title: L.milestones,
                     icon: "flag.checkered",
                     colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
@@ -84,7 +84,7 @@ struct JourneyView: View {
                 }
 
                 // Game type breakdown (Pro+)
-                collapsibleSection(
+                CollapsibleSection(
                     title: L.gamePerformance,
                     icon: "gamecontroller.fill",
                     colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
@@ -96,7 +96,7 @@ struct JourneyView: View {
                 }
 
                 // Daily XP Chart (Pro+)
-                collapsibleSection(
+                CollapsibleSection(
                     title: L.dailyXPChart,
                     icon: "chart.bar.xaxis",
                     colors: [Color(hex: "#f59e0b"), Color(hex: "#ef4444")],
@@ -108,7 +108,7 @@ struct JourneyView: View {
                 }
 
                 // Weekly Trend (Elite+)
-                collapsibleSection(
+                CollapsibleSection(
                     title: L.weeklyTrend,
                     icon: "chart.line.uptrend.xyaxis",
                     colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
@@ -120,7 +120,7 @@ struct JourneyView: View {
                 }
 
                 // Accuracy Heatmap (Elite+)
-                collapsibleSection(
+                CollapsibleSection(
                     title: L.accuracyHeatmap,
                     icon: "square.grid.3x3.fill",
                     colors: [Color(hex: "#f97316"), Color(hex: "#f59e0b")],
@@ -132,7 +132,7 @@ struct JourneyView: View {
                 }
 
                 // Monthly Report (Royal)
-                collapsibleSection(
+                CollapsibleSection(
                     title: L.monthlyReport,
                     icon: "doc.text.fill",
                     colors: [Color(hex: "#6366f1"), Color(hex: "#8b5cf6")],
@@ -144,7 +144,7 @@ struct JourneyView: View {
                 }
 
                 // Milestone Predictions (Royal)
-                collapsibleSection(
+                CollapsibleSection(
                     title: L.milestonePredictionsTitle,
                     icon: "sparkle.magnifyingglass",
                     colors: [Color(hex: "#ec4899"), Color(hex: "#f43f5e")],
@@ -160,7 +160,7 @@ struct JourneyView: View {
                 }
 
                 // Export Data (Elite+)
-                collapsibleSection(
+                CollapsibleSection(
                     title: L.exportData,
                     icon: "square.and.arrow.up.fill",
                     colors: [Color(hex: "#14b8a6"), Color(hex: "#06b6d4")],
@@ -172,7 +172,7 @@ struct JourneyView: View {
                 }
 
                 // Learning Insights (Royal)
-                collapsibleSection(
+                CollapsibleSection(
                     title: L.learningInsights,
                     icon: "lightbulb.fill",
                     colors: [Color(hex: "#f59e0b"), Color(hex: "#fbbf24")],
@@ -184,7 +184,7 @@ struct JourneyView: View {
                 }
 
                 // Streak section (always visible — part of basicStats)
-                collapsibleSection(
+                CollapsibleSection(
                     title: L.currentStreak,
                     icon: "flame.fill",
                     colors: [.orange, Color(hex: "#ef4444")],
@@ -194,7 +194,7 @@ struct JourneyView: View {
                 }
 
                 // Wisdom quote
-                collapsibleSection(
+                CollapsibleSection(
                     title: "Wisdom",
                     icon: "sparkles",
                     colors: [Color(hex: "#c084fc"), Color(hex: "#f0abfc")],
@@ -204,7 +204,7 @@ struct JourneyView: View {
                 }
 
                 // Reset progress
-                collapsibleSection(
+                CollapsibleSection(
                     title: L.resetProgress,
                     icon: "arrow.triangle.2.circlepath",
                     colors: [.red.opacity(0.9), .red.opacity(0.6)],
@@ -253,136 +253,7 @@ struct JourneyView: View {
     }
 
     // MARK: - Collapsible Section Wrapper
-
-    @ViewBuilder
-    private func collapsibleSection<Content: View>(
-        title: String,
-        icon: String,
-        colors: [Color],
-        isCollapsed: Binding<Bool>,
-        @ViewBuilder content: () -> Content
-    ) -> some View {
-        let collapsed = isCollapsed.wrappedValue
-
-        VStack(spacing: 0) {
-            Button {
-                withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
-                    isCollapsed.wrappedValue.toggle()
-                }
-            } label: {
-                HStack(spacing: 10) {
-                    // Gradient icon circle
-                    ZStack {
-                        Circle()
-                            .fill(
-                                LinearGradient(
-                                    colors: colors.map { $0.opacity(isDark ? 0.2 : 0.15) },
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
-                            .frame(width: 30, height: 30)
-
-                        Image(systemName: icon)
-                            .font(.system(size: 13, weight: .medium))
-                            .foregroundStyle(
-                                LinearGradient(
-                                    colors: colors,
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
-                    }
-
-                    Text(title)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(isDark ? .white.opacity(0.9) : .caribbeanInk)
-
-                    Spacer()
-
-                    // Pill chevron
-                    ZStack {
-                        Capsule()
-                            .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.04))
-                            .frame(width: 28, height: 20)
-
-                        Image(systemName: "chevron.right")
-                            .font(.system(size: 10, weight: .bold))
-                            .foregroundStyle(
-                                collapsed
-                                    ? AnyShapeStyle(LinearGradient(colors: colors, startPoint: .leading, endPoint: .trailing))
-                                    : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
-                            )
-                            .rotationEffect(.degrees(collapsed ? 0 : 90))
-                    }
-                }
-                .padding(.horizontal, 14)
-                .padding(.vertical, collapsed ? 14 : 10)
-                .background {
-                    if collapsed {
-                        // Glass card for collapsed state
-                        RoundedRectangle(cornerRadius: 18)
-                            .fill(.ultraThinMaterial)
-                            .opacity(isDark ? 1.0 : 0.55)
-                            .overlay(
-                                Group {
-                                    if !isDark {
-                                        RoundedRectangle(cornerRadius: 18)
-                                            .fill(
-                                                LinearGradient(
-                                                    colors: [
-                                                        colors[0].opacity(0.08),
-                                                        colors.last!.opacity(0.05)
-                                                    ],
-                                                    startPoint: .leading,
-                                                    endPoint: .trailing
-                                                )
-                                            )
-                                    }
-                                }
-                            )
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 18)
-                                    .strokeBorder(
-                                        LinearGradient(
-                                            colors: isDark
-                                                ? [colors[0].opacity(0.25), colors.last!.opacity(0.1)]
-                                                : [colors[0].opacity(0.3), colors.last!.opacity(0.15)],
-                                            startPoint: .leading,
-                                            endPoint: .trailing
-                                        ),
-                                        lineWidth: isDark ? 0.75 : 0.5
-                                    )
-                            )
-                            .shadow(
-                                color: colors[0].opacity(isDark ? 0.12 : 0.08),
-                                radius: 8, y: 4
-                            )
-                    }
-                }
-            }
-            .buttonStyle(CollapsibleHeaderButtonStyle())
-
-            if !collapsed {
-                // Gradient accent line connecting header to content
-                Rectangle()
-                    .fill(
-                        LinearGradient(
-                            colors: [.clear, colors[0].opacity(0.3), colors.last!.opacity(0.2), .clear],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-                    .frame(height: 1)
-                    .padding(.horizontal, 24)
-                    .padding(.top, 2)
-                    .padding(.bottom, 6)
-
-                content()
-                    .transition(.opacity.combined(with: .move(edge: .top)))
-            }
-        }
-    }
+    // Uses shared CollapsibleSection from Views/Shared/CollapsibleSection.swift
 
     private func sectionTitle(for section: TierManager.JourneyStatsSection) -> String {
         switch section {
@@ -985,13 +856,4 @@ struct JourneyView: View {
 }
 
 // MARK: - Collapsible Header Button Style
-
-/// Provides press feedback — subtle scale + opacity shift — for section headers.
-private struct CollapsibleHeaderButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .scaleEffect(configuration.isPressed ? 0.97 : 1.0)
-            .opacity(configuration.isPressed ? 0.85 : 1.0)
-            .animation(.easeOut(duration: 0.15), value: configuration.isPressed)
-    }
-}
+// Now shared via Views/Shared/CollapsibleSection.swift

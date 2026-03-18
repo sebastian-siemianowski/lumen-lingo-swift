@@ -207,6 +207,7 @@
 		DD489C4BF4E066DA2A33B94E /* grammar_ukrainian_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = F0AE02E5AA944BBF9A1E7BB2 /* grammar_ukrainian_polish.json */; };
 		DF2BC01B8E34CB130AB3B7B6 /* MembershipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927863E6ECF97AE41A78326D /* MembershipView.swift */; };
 		E04CF3B9BEE5E6E32567269F /* StarFieldGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A63D5EEB0001AEFA02084A /* StarFieldGenerator.swift */; };
+		E0C7DAFA7664FA3950305C9E /* CollapsibleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA489005CB604BAA943FEB42 /* CollapsibleSection.swift */; };
 		E167F25A707E33B4A813EAB2 /* grammar_polish_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = E56328BCC55D6C38A861C0F9 /* grammar_polish_ukrainian.json */; };
 		E36268A61FC90300A7AB119F /* PremiumCTAButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62631C787DB4298AAE4CD46A /* PremiumCTAButtonTests.swift */; };
 		E374714E6F741D49D839BDB9 /* UpgradePromptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A9F40ACA962BFEDF0C55D /* UpgradePromptManager.swift */; };
@@ -442,6 +443,7 @@
 		C7A63D5EEB0001AEFA02084A /* StarFieldGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarFieldGenerator.swift; sourceTree = "<group>"; };
 		C7EC466E954463C21BDA8D3C /* GlassDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassDivider.swift; sourceTree = "<group>"; };
 		C9D2B89837318B6C8338C74C /* TierOnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierOnboardingFlow.swift; sourceTree = "<group>"; };
+		CA489005CB604BAA943FEB42 /* CollapsibleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleSection.swift; sourceTree = "<group>"; };
 		CA4D04FA3A066C26F1C83DBB /* LanguagePairUpgradeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePairUpgradeSheet.swift; sourceTree = "<group>"; };
 		CB69D9C4EC1875372CCD7552 /* ConnectivitySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivitySettingsView.swift; sourceTree = "<group>"; };
 		CB8C0791AB4D515F992AC1E7 /* StarburstRingPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = StarburstRingPreset.metal; sourceTree = "<group>"; };
@@ -598,6 +600,7 @@
 			isa = PBXGroup;
 			children = (
 				0902F86CEF9AE637376DB143 /* AdventureCTAButton.swift */,
+				CA489005CB604BAA943FEB42 /* CollapsibleSection.swift */,
 				796514956D77ECBB8603FE69 /* FeatureTooltip.swift */,
 				C7EC466E954463C21BDA8D3C /* GlassDivider.swift */,
 				566E812340AC148093E2BF00 /* LanguagePairBadge.swift */,
@@ -1328,6 +1331,7 @@
 				B08B367E63734C6253D76A0D /* CategoryViewModel.swift in Sources */,
 				FFEB34E94BF794DB93C7F83E /* CelestialLagoonPreset.metal in Sources */,
 				C63BF657373F805F4F205644 /* CelestialStars.metal in Sources */,
+				E0C7DAFA7664FA3950305C9E /* CollapsibleSection.swift in Sources */,
 				42AB89D16F16B1C1F24BFDCE /* ConnectivitySettingsView.swift in Sources */,
 				6EEA52A2F62B3F2FC4300038 /* ContentLoader.swift in Sources */,
 				E916621019B8B464C76AC77E /* ContentModels.swift in Sources */,

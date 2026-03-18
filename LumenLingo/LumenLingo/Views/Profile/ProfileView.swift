@@ -10,10 +10,8 @@ struct ProfileView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
     @Environment(ThemeManager.self) private var themeManager
-    @Environment(\.localization) private var localization
-    #if DEBUG
     @Environment(TierManager.self) private var tierManager
-    #endif
+    @Environment(\.localization) private var localization
 
     private var L: AppStrings { localization.strings }
 
@@ -42,6 +40,8 @@ struct ProfileView: View {
 
     // Entry animation state
     @State private var headerAppeared = false
+    @State private var isHeaderCollapsed = false
+    @State private var isMyPlanCollapsed = false
     // Tab transition direction
     @State private var tabDirection: Int = 0
     @State private var subTabDirection: Int = 0
@@ -73,15 +73,31 @@ struct ProfileView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 0) {
-                // Profile header inside GlassPanelWrapper
-                profileHeader
+                // Profile header — collapsible
+                CollapsibleSection(
+                    title: displayName.isEmpty ? "Profile" : displayName,
+                    icon: "person.circle.fill",
+                    colors: tierManager.tierGradientColors,
+                    isCollapsed: $isHeaderCollapsed,
+                    subtitle: tierManager.tierDisplayName
+                ) {
+                    profileHeader
+                }
                     .padding(.horizontal, 16)
                     .padding(.top, 12)
                     .opacity(headerAppeared ? 1 : 0)
                     .offset(y: headerAppeared ? 0 : 20)
 
-                // My Plan card
-                MyPlanCard()
+                // My Plan card — collapsible
+                CollapsibleSection(
+                    title: "My Plan",
+                    icon: tierManager.tierIcon,
+                    colors: tierManager.tierGradientColors,
+                    isCollapsed: $isMyPlanCollapsed,
+                    subtitle: tierManager.tierDisplayName
+                ) {
+                    MyPlanCard()
+                }
                     .padding(.horizontal, 16)
                     .padding(.top, 14)
                     .opacity(headerAppeared ? 1 : 0)
