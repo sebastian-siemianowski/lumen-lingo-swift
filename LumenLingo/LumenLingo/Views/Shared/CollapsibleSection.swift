@@ -1,5 +1,20 @@
 import SwiftUI
 
+// MARK: - Animation Tokens
+
+/// Centralized spring constants and timing for all CollapsibleSection animations.
+/// Expand feels "breathe open" with ~2% overshoot; collapse feels "snap shut" — crisp and decisive.
+enum CollapsibleAnimationTokens {
+    /// Expand: slower response with noticeable overshoot.
+    static let expandSpring: Animation = .spring(response: 0.40, dampingFraction: 0.72, blendDuration: 0.1)
+    /// Collapse: faster, crisper, minimal overshoot.
+    static let collapseSpring: Animation = .spring(response: 0.30, dampingFraction: 0.88)
+    /// Content opacity lags height animation by 30ms to avoid empty-card flash.
+    static let revealDelay: Double = 0.03
+    /// Rapid toggle debounce — ignore re-toggle within this interval.
+    static let debounceInterval: TimeInterval = 0.2
+}
+
 // MARK: - Collapsible Depth Environment
 
 /// Environment key for tracking nesting depth of collapsible sections.
@@ -231,6 +246,11 @@ struct CollapsibleSection<Header: View, Content: View>: View {
 
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.collapsibleDepth) private var depth
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var isOnScreen = true
+    @State private var isHeaderPressed = false
+    @State private var isLongPressed = false
+    @State private var longPressGlow: CGFloat = 0
     private var isDark: Bool { colorScheme == .dark }
 
     /// Resolved weight: explicit override, depth-forced recessed, or auto-derived from style.
@@ -285,11 +305,23 @@ struct CollapsibleSection<Header: View, Content: View>: View {
         .environment(\.collapsibleDepth, clampedDepth + 1)
         .accessibilityElement(children: .contain)
         .accessibilityValue(isCollapsed ? "collapsed" : "expanded")
+        .onAppear { isOnScreen = true }
+        .onDisappear { isOnScreen = false }
     }
 
-    /// Unified toggle with standard spring animation and haptic.
+    /// Tracks the last toggle time for rapid-toggle debounce.
+    @State private var lastToggleTime: Date = .distantPast
+
+    /// Asymmetric toggle: expand breathes open with overshoot; collapse snaps shut.
+    /// Ignores rapid re-toggles within 200ms to prevent overlapping animations.
     func toggle() {
-        withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+        let now = Date()
+        guard now.timeIntervalSince(lastToggleTime) >= CollapsibleAnimationTokens.debounceInterval else { return }
+        lastToggleTime = now
+
+        let expanding = isCollapsed
+        let spring = expanding ? CollapsibleAnimationTokens.expandSpring : CollapsibleAnimationTokens.collapseSpring
+        withAnimation(spring) {
             isCollapsed.toggle()
         }
         HapticsService.shared.toggleSwitch()
@@ -301,13 +333,35 @@ struct CollapsibleSection<Header: View, Content: View>: View {
         VStack(spacing: 0) {
             Button { toggle() } label: { header() }
                 .buttonStyle(CollapsibleHeaderButtonStyle())
+                .onPreferenceChange(HeaderPressedKey.self) { pressed in
+                    isHeaderPressed = pressed
+                }
                 .background(
-                    isCollapsed ? AnyView(standardGlassBackground) : AnyView(Color.clear)
+                    isCollapsed ? AnyView(breathingGlassBackground) : AnyView(Color.clear)
                 )
 
-            if !isCollapsed {
+            MeasuredContentReveal(isExpanded: !isCollapsed) {
                 content()
-                    .transition(.opacity.combined(with: .move(edge: .top)))
+            }
+        }
+        .task(id: isHeaderPressed) {
+            guard isHeaderPressed else { return }
+            try? await Task.sleep(for: .milliseconds(300))
+            guard !Task.isCancelled, isHeaderPressed else { return }
+            isLongPressed = true
+        }
+        .onChange(of: isHeaderPressed) { _, pressed in
+            if !pressed { isLongPressed = false }
+        }
+        .onChange(of: isLongPressed) { _, longPressed in
+            if longPressed {
+                withAnimation(.easeInOut(duration: 0.6).repeatForever(autoreverses: true)) {
+                    longPressGlow = 1
+                }
+            } else {
+                withAnimation(.easeOut(duration: 0.2)) {
+                    longPressGlow = 0
+                }
             }
         }
     }
@@ -315,17 +369,26 @@ struct CollapsibleSection<Header: View, Content: View>: View {
     /// Glass background for `.standard` style collapsed state — premium glass pill.
     /// Layers match GlassCardBackground: material → Caribbean tint → frosted highlight → section accent → stroke → dual shadow.
     /// All intensity values are parameterized by `resolvedWeight`.
-    private var standardGlassBackground: some View {
+    /// Breathing parameters drive subtle highlight shift and stroke rotation (Story 3.3).
+    /// Press parameters compress shadows, dim highlight, and boost stroke (Story 3.4).
+    private func standardGlassBackground(highlightShift: CGFloat = 0, strokeAngle: CGFloat = 0, isPressed: Bool = false) -> some View {
         let w = resolvedWeight
         let tint = w.tintMultiplier
         let lift = w.liftShadow
         let ground = w.groundingShadow
         let cr = depthCornerRadius
+        // Press compression: shadows shrink toward surface, highlight dims
+        let pressLerp: CGFloat = isPressed ? 1.0 : 0.0
+        let highlightDim: CGFloat = isPressed ? 0.7 : 1.0
+        let liftRadius = lift.radius - pressLerp * (lift.radius - 8)
+        let liftY = lift.y - pressLerp * (lift.y - 2)
+        let groundRadius = ground.radius - pressLerp * (ground.radius - 3)
+        let groundY = ground.y - pressLerp * (ground.y - 1)
 
         return RoundedRectangle(cornerRadius: cr)
             .fill(.ultraThinMaterial)
             .opacity(isDark ? w.materialOpacity.dark : w.materialOpacity.light)
-            // Caribbean tint layer (light mode only) — intensity scaled by weight
+            // Caribbean tint layer — intensity scaled by weight
             .overlay(
                 Group {
                     if !isDark {
@@ -341,57 +404,96 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                                     endPoint: .bottomTrailing
                                 )
                             )
-                    }
-                }
-            )
-            // Frosted inner highlight — matching GlassCardBackground
-            .overlay(
-                RoundedRectangle(cornerRadius: cr)
-                    .fill(
-                        LinearGradient(
-                            colors: isDark
-                                ? [.white.opacity(0.10 * tint), .clear, .white.opacity(0.03 * tint)]
-                                : [.white.opacity(0.20 * tint), .clear, .white.opacity(0.05 * tint)],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                    )
-            )
-            // Section accent tint — preserves per-section color identity
-            .overlay(
-                Group {
-                    if !isDark {
+                    } else {
+                        // Dark mode: deep cosmic tint for frosted depth
                         RoundedRectangle(cornerRadius: cr)
                             .fill(
                                 LinearGradient(
                                     colors: [
-                                        colors[0].opacity(0.08 * tint),
-                                        colors.last!.opacity(0.05 * tint)
+                                        Color(red: 0.08, green: 0.05, blue: 0.15).opacity(0.40 * tint),
+                                        Color(red: 0.05, green: 0.03, blue: 0.12).opacity(0.30 * tint)
                                     ],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
                                 )
                             )
                     }
                 }
             )
-            // Stroke border — treatment varies by glass weight
-            .overlay(strokeBorderOverlay)
-            // Dual shadow: lift + grounding — depth from weight
+            // Frosted inner highlight — breathes ±3% vertically; dims 30% on press
+            .overlay(
+                RoundedRectangle(cornerRadius: cr)
+                    .fill(
+                        LinearGradient(
+                            colors: isDark
+                                ? [.white.opacity(0.14 * tint * highlightDim), .clear, .white.opacity(0.05 * tint * highlightDim)]
+                                : [.white.opacity(0.20 * tint * highlightDim), .clear, .white.opacity(0.05 * tint * highlightDim)],
+                            startPoint: UnitPoint(x: 0.5, y: highlightShift),
+                            endPoint: UnitPoint(x: 0.5, y: 1 + highlightShift)
+                        )
+                    )
+            )
+            // Section accent tint — preserves per-section color identity
+            .overlay(
+                RoundedRectangle(cornerRadius: cr)
+                    .fill(
+                        LinearGradient(
+                            colors: isDark
+                                ? [
+                                    colors[0].opacity(0.06 * tint),
+                                    colors.last!.opacity(0.03 * tint)
+                                ]
+                                : [
+                                    colors[0].opacity(0.08 * tint),
+                                    colors.last!.opacity(0.05 * tint)
+                                ],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+            )
+            // Stroke border — breathes ±5° angle; intensifies 1.3× on press
+            .overlay(strokeBorderOverlay(strokeAngle: strokeAngle, pressMultiplier: isPressed ? 1.3 : 1.0))
+            // Dual shadow — compressed on press (card presses into surface)
             .shadow(
                 color: isDark
                     ? colors[0].opacity(0.10 * lift.opacityMultiplier)
                     : Color(hex: "#C494FC").opacity(0.10 * lift.opacityMultiplier),
-                radius: lift.radius,
-                y: lift.y
+                radius: liftRadius,
+                y: liftY
             )
             .shadow(
                 color: isDark
                     ? .black.opacity(0.04 * ground.opacityMultiplier)
                     : Color(hex: "#F472B6").opacity(0.04 * ground.opacityMultiplier),
-                radius: ground.radius,
-                y: ground.y
+                radius: groundRadius,
+                y: groundY
             )
+    }
+
+    /// Breathing glass background — drives subtle highlight + stroke shimmer via TimelineView at 15fps.
+    /// Also responds to press state: shadow compression, stroke boost, highlight dim (Story 3.4).
+    /// Long press glow overlays a pulsing border when held >300ms.
+    @ViewBuilder
+    private var breathingGlassBackground: some View {
+        Group {
+            if reduceMotion || !isOnScreen {
+                standardGlassBackground(isPressed: isHeaderPressed)
+            } else {
+                TimelineView(.animation(minimumInterval: 1.0 / 15.0)) { context in
+                    let t = context.date.timeIntervalSince1970
+                    let hShift = sin(t * .pi * 2.0 / 6.0) * 0.03
+                    let sAngle = sin(t * .pi * 2.0 / 8.0) * 5.0
+                    standardGlassBackground(highlightShift: hShift, strokeAngle: sAngle, isPressed: isHeaderPressed)
+                }
+            }
+        }
+        .animation(.spring(response: 0.25, dampingFraction: 0.7), value: isHeaderPressed)
+        .overlay(
+            RoundedRectangle(cornerRadius: depthCornerRadius)
+                .strokeBorder(colors[0].opacity(0.05 * longPressGlow), lineWidth: 2)
+                .allowsHitTesting(false)
+        )
     }
 
     /// Weight-specific stroke border overlay.
@@ -399,56 +501,59 @@ struct CollapsibleSection<Header: View, Content: View>: View {
     /// - `.standard`: 2-stop gradient (current treatment, unchanged)
     /// - `.recessed`: barely-visible solid accent border
     /// Border intensity reduces by 15% when expanded.
+    /// `strokeAngle` (degrees) applies breathing rotation to gradient direction.
+    /// `pressMultiplier` boosts opacity on press (1.3× per spec).
     @ViewBuilder
-    private var strokeBorderOverlay: some View {
+    private func strokeBorderOverlay(strokeAngle: CGFloat = 0, pressMultiplier: CGFloat = 1.0) -> some View {
         let w = resolvedWeight
         let expandMul = isCollapsed ? 1.0 : 0.85
+        let mul = expandMul * pressMultiplier
         let cr = depthCornerRadius
 
         switch w {
         case .primary:
-            // 4-stop gradient: accent → white highlight → accent end → white edge
+            let rad = (45.0 + strokeAngle) * .pi / 180.0
+            let r: CGFloat = 0.707
             RoundedRectangle(cornerRadius: cr)
                 .strokeBorder(
                     LinearGradient(
                         colors: isDark
                             ? [
-                                colors[0].opacity(0.35 * expandMul),
-                                Color.white.opacity(0.12 * expandMul),
-                                colors.last!.opacity(0.15 * expandMul),
-                                Color.white.opacity(0.08 * expandMul)
+                                colors[0].opacity(0.35 * mul),
+                                Color.white.opacity(0.12 * mul),
+                                colors.last!.opacity(0.15 * mul),
+                                Color.white.opacity(0.08 * mul)
                               ]
                             : [
-                                colors[0].opacity(0.40 * expandMul),
-                                Color.white.opacity(0.18 * expandMul),
-                                colors.last!.opacity(0.20 * expandMul),
-                                Color.white.opacity(0.10 * expandMul)
+                                colors[0].opacity(0.40 * mul),
+                                Color.white.opacity(0.18 * mul),
+                                colors.last!.opacity(0.20 * mul),
+                                Color.white.opacity(0.10 * mul)
                               ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
+                        startPoint: UnitPoint(x: 0.5 - r * cos(rad), y: 0.5 - r * sin(rad)),
+                        endPoint: UnitPoint(x: 0.5 + r * cos(rad), y: 0.5 + r * sin(rad))
                     ),
                     lineWidth: isDark ? 1.5 : 1.0
                 )
 
         case .standard:
-            // 2-stop gradient — unchanged from original design
+            let rad = strokeAngle * .pi / 180.0
             RoundedRectangle(cornerRadius: cr)
                 .strokeBorder(
                     LinearGradient(
                         colors: isDark
-                            ? [colors[0].opacity(0.25 * expandMul), colors.last!.opacity(0.10 * expandMul)]
-                            : [colors[0].opacity(0.30 * expandMul), colors.last!.opacity(0.15 * expandMul)],
-                        startPoint: .leading,
-                        endPoint: .trailing
+                            ? [colors[0].opacity(0.25 * mul), colors.last!.opacity(0.10 * mul)]
+                            : [colors[0].opacity(0.30 * mul), colors.last!.opacity(0.15 * mul)],
+                        startPoint: UnitPoint(x: 0.5 - 0.5 * cos(rad), y: 0.5 - 0.5 * sin(rad)),
+                        endPoint: UnitPoint(x: 0.5 + 0.5 * cos(rad), y: 0.5 + 0.5 * sin(rad))
                     ),
                     lineWidth: isDark ? 0.75 : 0.5
                 )
 
         case .recessed:
-            // Solid accent border — barely visible edge definition
             RoundedRectangle(cornerRadius: cr)
                 .strokeBorder(
-                    colors[0].opacity(0.08 * expandMul),
+                    colors[0].opacity(0.08 * mul),
                     lineWidth: 0.5
                 )
         }
@@ -460,9 +565,8 @@ struct CollapsibleSection<Header: View, Content: View>: View {
         VStack(spacing: 0) {
             header()
 
-            if !isCollapsed {
+            MeasuredContentReveal(isExpanded: !isCollapsed) {
                 content()
-                    .transition(.move(edge: .top).combined(with: .opacity))
             }
         }
         .background(GlassCardBackground(cornerRadius: cornerRadius))
@@ -479,9 +583,8 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                 .contentShape(Rectangle())
                 .onTapGesture { toggle() }
 
-            if !isCollapsed {
+            MeasuredContentReveal(isExpanded: !isCollapsed) {
                 content()
-                    .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
         .modifier(DualShadowModifier(colors: colors, isCollapsed: isCollapsed, weight: resolvedWeight))
@@ -494,9 +597,8 @@ struct CollapsibleSection<Header: View, Content: View>: View {
             Button { toggle() } label: { header() }
                 .buttonStyle(LumenPressStyle(weight: .medium))
 
-            if !isCollapsed {
+            MeasuredContentReveal(isExpanded: !isCollapsed) {
                 content()
-                    .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
         .modifier(DualShadowModifier(colors: colors, isCollapsed: isCollapsed, weight: resolvedWeight))
@@ -509,9 +611,8 @@ struct CollapsibleSection<Header: View, Content: View>: View {
             Button { toggle() } label: { header() }
                 .buttonStyle(CollapsibleHeaderButtonStyle())
 
-            if !isCollapsed {
+            MeasuredContentReveal(isExpanded: !isCollapsed) {
                 content()
-                    .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
         .modifier(DualShadowModifier(colors: colors, isCollapsed: isCollapsed, weight: resolvedWeight))
@@ -687,13 +788,22 @@ struct DefaultCollapsibleHeader: View {
 
 // MARK: - Collapsible Header Button Style
 
-/// Provides press feedback — subtle scale + opacity shift — for section headers.
+/// Key for propagating press state from CollapsibleHeaderButtonStyle to parent views.
+private struct HeaderPressedKey: PreferenceKey {
+    static var defaultValue = false
+    static func reduce(value: inout Bool, nextValue: () -> Bool) {
+        value = value || nextValue()
+    }
+}
+
+/// Provides press feedback for section headers — subtle scale with spring rebound, no opacity change.
+/// Emits press state via `HeaderPressedKey` so the glass background can respond.
 struct CollapsibleHeaderButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .scaleEffect(configuration.isPressed ? 0.97 : 1.0)
-            .opacity(configuration.isPressed ? 0.85 : 1.0)
-            .animation(.easeOut(duration: 0.15), value: configuration.isPressed)
+            .scaleEffect(configuration.isPressed ? 0.98 : 1.0)
+            .animation(.spring(response: 0.25, dampingFraction: 0.7), value: configuration.isPressed)
+            .preference(key: HeaderPressedKey.self, value: configuration.isPressed)
     }
 }
 
@@ -733,5 +843,141 @@ private struct DualShadowModifier: ViewModifier {
                 radius: ground.radius + (isCollapsed ? 0 : 1),
                 y: ground.y + (isCollapsed ? 0 : 1)
             )
+    }
+}
+
+// MARK: - Staggered Content Reveal
+
+/// Animates content in with a cascading stagger effect when appearing.
+/// Each item fades, slides, and scales into place with a spring animation
+/// delayed by `index * delay`. Collapse is handled by the parent — no reverse stagger.
+///
+/// Usage:  `myView.staggeredReveal(index: 0)`
+struct StaggeredRevealModifier: ViewModifier {
+    let index: Int
+    let delay: TimeInterval
+    let maxStagger: Int
+
+    @State private var isRevealed = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    private var effectiveDelay: TimeInterval {
+        Double(min(index, maxStagger - 1)) * delay
+    }
+
+    func body(content: Content) -> some View {
+        content
+            .opacity(isRevealed ? 1 : 0)
+            .offset(y: isRevealed ? 0 : 8)
+            .scaleEffect(isRevealed ? 1.0 : 0.97)
+            .onAppear {
+                guard !isRevealed else { return }
+                if reduceMotion {
+                    isRevealed = true
+                } else {
+                    withAnimation(
+                        .spring(response: 0.35, dampingFraction: 0.85)
+                        .delay(effectiveDelay)
+                    ) {
+                        isRevealed = true
+                    }
+                }
+            }
+    }
+}
+
+extension View {
+    /// Applies a staggered reveal animation based on the item's index.
+    /// Items animate in with opacity, vertical offset, and scale transitions.
+    /// - Parameters:
+    ///   - index: Position in the stagger sequence (0 = first, appears immediately).
+    ///   - delay: Delay between each item (default 40ms).
+    ///   - maxStagger: Maximum items that stagger independently; beyond this, items appear with the last group.
+    func staggeredReveal(index: Int, delay: TimeInterval = 0.04, maxStagger: Int = 8) -> some View {
+        modifier(StaggeredRevealModifier(index: index, delay: delay, maxStagger: maxStagger))
+    }
+}
+
+// MARK: - Measured Content Reveal
+
+/// PreferenceKey for propagating measured content height up the view hierarchy.
+private struct CollapsibleContentHeightKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = max(value, nextValue())
+    }
+}
+
+/// Reveals content with smooth height animation — pre-measures natural height,
+/// animates a clipping frame from 0 to the measured value, and pins content to top.
+/// Removes content from hierarchy after collapse to reclaim layout resources.
+private struct MeasuredContentReveal<C: View>: View {
+    let isExpanded: Bool
+    @ViewBuilder let content: () -> C
+
+    @State private var measuredHeight: CGFloat = 0
+    @State private var hasExpanded: Bool
+    @State private var contentOpacity: Double
+
+    init(isExpanded: Bool, @ViewBuilder content: @escaping () -> C) {
+        self.isExpanded = isExpanded
+        self.content = content
+        // Initialize state to match initial expansion so already-expanded sections show content immediately
+        self._hasExpanded = State(initialValue: isExpanded)
+        self._contentOpacity = State(initialValue: isExpanded ? 1 : 0)
+    }
+
+    var body: some View {
+        Group {
+            if hasExpanded || isExpanded {
+                content()
+                    .fixedSize(horizontal: false, vertical: true)
+                    .opacity(contentOpacity)
+                    .background(
+                        GeometryReader { geo in
+                            Color.clear
+                                .preference(key: CollapsibleContentHeightKey.self, value: geo.size.height)
+                        }
+                    )
+                    .onPreferenceChange(CollapsibleContentHeightKey.self) { height in
+                        guard height > 0 else { return }
+                        if abs(height - measuredHeight) > 1 {
+                            if measuredHeight == 0 && isExpanded {
+                                // First measurement for initially-expanded section — set without animation
+                                measuredHeight = height
+                            } else {
+                                withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+                                    measuredHeight = height
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+        .frame(height: isExpanded ? (measuredHeight > 0 ? measuredHeight : nil) : 0, alignment: .top)
+        .clipped()
+        .allowsHitTesting(isExpanded)
+        .onChange(of: isExpanded) { _, expanded in
+            if expanded {
+                hasExpanded = true
+                // Content opacity lags height by 30ms to avoid empty-card flash
+                withAnimation(
+                    CollapsibleAnimationTokens.expandSpring.delay(CollapsibleAnimationTokens.revealDelay)
+                ) {
+                    contentOpacity = 1
+                }
+            } else {
+                withAnimation(CollapsibleAnimationTokens.collapseSpring) {
+                    contentOpacity = 0
+                }
+            }
+        }
+        .task(id: isExpanded) {
+            guard !isExpanded, hasExpanded else { return }
+            try? await Task.sleep(for: .milliseconds(450))
+            guard !isExpanded else { return }
+            hasExpanded = false
+            measuredHeight = 0
+        }
     }
 }

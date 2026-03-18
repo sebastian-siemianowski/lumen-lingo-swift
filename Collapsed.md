@@ -46,9 +46,9 @@
 
 | Epic | Title | Stories | Status |
 |------|-------|---------|--------|
-| **E1** | [Unified Collapsible Foundation](#e1-unified-collapsible-foundation) | 1.1 – 1.5 | ⬜ |
-| **E2** | [Glass Hierarchy & Depth System](#e2-glass-hierarchy--depth-system) | 2.1 – 2.4 | ⬜ |
-| **E3** | [Micro-Interaction & Animation Polish](#e3-micro-interaction--animation-polish) | 3.1 – 3.5 | ⬜ |
+| **E1** | [Unified Collapsible Foundation](#e1-unified-collapsible-foundation) | 1.1 – 1.5 | ✅ |
+| **E2** | [Glass Hierarchy & Depth System](#e2-glass-hierarchy--depth-system) | 2.1 – 2.4 | ✅ |
+| **E3** | [Micro-Interaction & Animation Polish](#e3-micro-interaction--animation-polish) | 3.1 – 3.5 | ✅ |
 | **E4** | [Contextual Theming & Identity](#e4-contextual-theming--identity) | 4.1 – 4.4 | ⬜ |
 | **E5** | [Haptic & Audio Choreography](#e5-haptic--audio-choreography) | 5.1 – 5.3 | ⬜ |
 | **E6** | [Accessibility, Performance & Edge Cases](#e6-accessibility-performance--edge-cases) | 6.1 – 6.9 | ⬜ |
@@ -369,24 +369,24 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **3.1.1** — Add a `StaggeredRevealModifier` that wraps content children and animates them in sequentially with a configurable delay (default 40ms per item)
-- **3.1.2** — Each child item in the reveal should animate with: opacity 0→1, translateY 8→0, scale 0.97→1.0, using `.spring(response: 0.35, dampingFraction: 0.85)`
-- **3.1.3** — Maximum stagger count: 8 items. Beyond 8, remaining items appear simultaneously with the 8th item to prevent the reveal from feeling slow
-- **3.1.4** — Collapse animation should be instant (no reverse stagger) — the entire content disappears at once with `.opacity` to maintain snappiness on close
-- **3.1.5** — Apply stagger to JourneyView's overallStatsPanel (3 stat cards stagger in), milestonesSection (milestone badges stagger), and streakSection (calendar grid rows stagger)
-- **3.1.6** — Apply stagger to ProfileView's profileHeader content (avatar, name/XP row, action buttons stagger in)
-- **3.1.7** — Respect `UIAccessibility.isReduceMotionEnabled` — when enabled, all content appears simultaneously (no stagger)
+- [x] **3.1.1** — Add a `StaggeredRevealModifier` that wraps content children and animates them in sequentially with a configurable delay (default 40ms per item)
+- [x] **3.1.2** — Each child item in the reveal should animate with: opacity 0→1, translateY 8→0, scale 0.97→1.0, using `.spring(response: 0.35, dampingFraction: 0.85)`
+- [x] **3.1.3** — Maximum stagger count: 8 items. Beyond 8, remaining items appear simultaneously with the 8th item to prevent the reveal from feeling slow
+- [x] **3.1.4** — Collapse animation should be instant (no reverse stagger) — the entire content disappears at once with `.opacity` to maintain snappiness on close
+- [x] **3.1.5** — Apply stagger to JourneyView's overallStatsPanel (3 stat cards stagger in), milestonesSection (milestone badges stagger), and streakSection (calendar grid rows stagger)
+- [x] **3.1.6** — Apply stagger to ProfileView's profileHeader content (avatar, name/XP row, action buttons stagger in)
+- [x] **3.1.7** — Respect `UIAccessibility.isReduceMotionEnabled` — when enabled, all content appears simultaneously (no stagger)
 
 #### Acceptance Criteria
 
-- [ ] `StaggeredRevealModifier` is a reusable `ViewModifier` accessible via `.staggeredReveal(delay:)`
-- [ ] Content children appear in sequence with configurable delay (default 40ms)
-- [ ] Each child animates: opacity 0→1, translateY 8→0, scale 0.97→1.0, spring-based
-- [ ] Maximum of 8 staggered items — additional items appear with the last group
-- [ ] Collapse is instant (no reverse stagger) — content disappears as one unit
-- [ ] At least 5 `CollapsibleSection` instances use staggered reveal
-- [ ] Reduce Motion setting disables stagger — content appears simultaneously
-- [ ] Stagger feels natural at 60fps — no frame drops during the cascade
+- [x] `StaggeredRevealModifier` is a reusable `ViewModifier` accessible via `.staggeredReveal(delay:)`
+- [x] Content children appear in sequence with configurable delay (default 40ms)
+- [x] Each child animates: opacity 0→1, translateY 8→0, scale 0.97→1.0, spring-based
+- [x] Maximum of 8 staggered items — additional items appear with the last group
+- [x] Collapse is instant (no reverse stagger) — content disappears as one unit
+- [x] At least 5 `CollapsibleSection` instances use staggered reveal
+- [x] Reduce Motion setting disables stagger — content appears simultaneously
+- [x] Stagger feels natural at 60fps — no frame drops during the cascade
 
 ---
 
@@ -400,23 +400,23 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **3.2.1** — Add invisible `GeometryReader` overlay on content to measure expanded height before the reveal begins
-- **3.2.2** — Animate container height from 0 to measured height using the shared `.spring(response: 0.35, dampingFraction: 0.8)` — content clips to the animating frame via `.clipped()`
-- **3.2.3** — During height animation, keep content pinned to the top of the growing frame (content doesn't "slide up from bottom")
-- **3.2.4** — Handle dynamic content height changes while expanded: if content height changes (e.g., a sub-view loads data), smoothly animate to new height rather than jumping
-- **3.2.5** — On collapse: animate height to 0 (clipped) then remove content from hierarchy to reclaim layout — ensuring the `ScrollView` doesn't hold phantom space
-- **3.2.6** — Test critical scenario: JourneyView, expand "Monthly Report" section (near list middle), verify the sections below slide down without any jitter or scroll position jump
+- [x] **3.2.1** — Add invisible `GeometryReader` overlay on content to measure expanded height before the reveal begins
+- [x] **3.2.2** — Animate container height from 0 to measured height using the shared `.spring(response: 0.35, dampingFraction: 0.8)` — content clips to the animating frame via `.clipped()`
+- [x] **3.2.3** — During height animation, keep content pinned to the top of the growing frame (content doesn't "slide up from bottom")
+- [x] **3.2.4** — Handle dynamic content height changes while expanded: if content height changes (e.g., a sub-view loads data), smoothly animate to new height rather than jumping
+- [x] **3.2.5** — On collapse: animate height to 0 (clipped) then remove content from hierarchy to reclaim layout — ensuring the `ScrollView` doesn't hold phantom space
+- [x] **3.2.6** — Test critical scenario: JourneyView, expand "Monthly Report" section (near list middle), verify the sections below slide down without any jitter or scroll position jump
 
 #### Acceptance Criteria
 
-- [ ] Container height is pre-measured before content reveal begins
-- [ ] Height animates smoothly from 0 to measured value on expand
-- [ ] Content is clipped during height transition — no overflow visible
-- [ ] Content anchors to top of frame during expansion — no upward float
-- [ ] Dynamic content height changes while expanded animate smoothly, not jump
-- [ ] Collapse animates height to 0 before content removal
-- [ ] JourneyView scroll position remains stable when expanding sections in the middle of the list
-- [ ] No layout warnings or constraint conflicts in Console during expand/collapse
+- [x] Container height is pre-measured before content reveal begins
+- [x] Height animates smoothly from 0 to measured value on expand
+- [x] Content is clipped during height transition — no overflow visible
+- [x] Content anchors to top of frame during expansion — no upward float
+- [x] Dynamic content height changes while expanded animate smoothly, not jump
+- [x] Collapse animates height to 0 before content removal
+- [x] JourneyView scroll position remains stable when expanding sections in the middle of the list
+- [x] No layout warnings or constraint conflicts in Console during expand/collapse
 
 ---
 
@@ -430,23 +430,23 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **3.3.1** — Add a slow, continuous animation to the frosted inner highlight layer: the white gradient highlight position shifts vertically by ±3% over a 6-second cycle using `sin(time)` — creating a barely perceptible "light catching" effect
-- **3.3.2** — The stroke border gradient should slowly rotate its angle by ±5° over an 8-second cycle — creating a subtle shimmer on the edges
-- **3.3.3** — Both effects should be synchronized across all visible `CollapsibleSection` instances using a shared `TimelineView(.animation(minimumInterval: 1/15))` — 15fps is sufficient for such subtle effects
-- **3.3.4** — Effects should only run when the section is visible on screen (`.onAppear` / `.onDisappear` lifecycle)
-- **3.3.5** — Respect `UIAccessibility.isReduceMotionEnabled` — disable all breathing effects when enabled
-- **3.3.6** — Performance budget: breathing effects must add zero measurable frame time (<0.1ms per section). Use simple `sin(time)` math only — no shader involvement
+- [x] **3.3.1** — Add a slow, continuous animation to the frosted inner highlight layer: the white gradient highlight position shifts vertically by ±3% over a 6-second cycle using `sin(time)` — creating a barely perceptible "light catching" effect
+- [x] **3.3.2** — The stroke border gradient should slowly rotate its angle by ±5° over an 8-second cycle — creating a subtle shimmer on the edges
+- [x] **3.3.3** — Both effects should be synchronized across all visible `CollapsibleSection` instances using a shared `TimelineView(.animation(minimumInterval: 1/15))` — 15fps is sufficient for such subtle effects
+- [x] **3.3.4** — Effects should only run when the section is visible on screen (`.onAppear` / `.onDisappear` lifecycle)
+- [x] **3.3.5** — Respect `UIAccessibility.isReduceMotionEnabled` — disable all breathing effects when enabled
+- [x] **3.3.6** — Performance budget: breathing effects must add zero measurable frame time (<0.1ms per section). Use simple `sin(time)` math only — no shader involvement
 
 #### Acceptance Criteria
 
-- [ ] Frosted highlight position shifts ±3% vertically over 6-second cycle
-- [ ] Stroke border gradient angle oscillates ±5° over 8-second cycle
-- [ ] Effects are synchronized across all visible sections (shared timeline)
-- [ ] Effects pause when section scrolls off-screen
-- [ ] Reduce Motion disables all breathing effects
-- [ ] CPU/GPU impact is unmeasurable: <0.1ms per section per frame
-- [ ] Effects are perceptible only on close inspection — not distracting at conversational viewing distance
-- [ ] 60fps maintained on iPhone 15 standard with 13 visible JourneyView sections
+- [x] Frosted highlight position shifts ±3% vertically over 6-second cycle
+- [x] Stroke border gradient angle oscillates ±5° over 8-second cycle
+- [x] Effects are synchronized across all visible sections (shared timeline)
+- [x] Effects pause when section scrolls off-screen
+- [x] Reduce Motion disables all breathing effects
+- [x] CPU/GPU impact is unmeasurable: <0.1ms per section per frame
+- [x] Effects are perceptible only on close inspection — not distracting at conversational viewing distance
+- [x] 60fps maintained on iPhone 15 standard with 13 visible JourneyView sections
 
 ---
 
@@ -460,23 +460,23 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **3.4.1** — On press: scale 0.98× (slightly less squish than current 0.97 — more subtle), opacity unchanged (remove the 0.85 dim — glass doesn't lose opacity when pressed)
-- **3.4.2** — On press: reduce shadow elevation (lift shadow Y: 6→2, radius: 16→8; grounding shadow Y: 2→1, radius: 5→3) — the card appears to press into the surface
-- **3.4.3** — On press: increase stroke border opacity by 1.3× — the edges "tighten" under pressure
-- **3.4.4** — On press: frosted inner highlight intensity reduces by 30% — the glass "flattens" under pressure
-- **3.4.5** — On release: all properties spring back with `.spring(response: 0.25, dampingFraction: 0.7)` — slightly bouncier than the expand spring for a satisfying rebound
-- **3.4.6** — If the user holds for >300ms without releasing (`LongPressGesture`), add a very subtle pulse glow on the border (amplitude: 0.05× opacity) to indicate "still holding, will activate on release" — then cancel if drag exceeds 20pt (standard iOS cancellation)
+- [x] **3.4.1** — On press: scale 0.98× (slightly less squish than current 0.97 — more subtle), opacity unchanged (remove the 0.85 dim — glass doesn't lose opacity when pressed)
+- [x] **3.4.2** — On press: reduce shadow elevation (lift shadow Y: 6→2, radius: 16→8; grounding shadow Y: 2→1, radius: 5→3) — the card appears to press into the surface
+- [x] **3.4.3** — On press: increase stroke border opacity by 1.3× — the edges "tighten" under pressure
+- [x] **3.4.4** — On press: frosted inner highlight intensity reduces by 30% — the glass "flattens" under pressure
+- [x] **3.4.5** — On release: all properties spring back with `.spring(response: 0.25, dampingFraction: 0.7)` — slightly bouncier than the expand spring for a satisfying rebound
+- [x] **3.4.6** — If the user holds for >300ms without releasing (`LongPressGesture`), add a very subtle pulse glow on the border (amplitude: 0.05× opacity) to indicate "still holding, will activate on release" — then cancel if drag exceeds 20pt (standard iOS cancellation)
 
 #### Acceptance Criteria
 
-- [ ] Press scales to 0.98× (not 0.97×) — no opacity change
-- [ ] Shadows compress on press: lift shadow reduces to near-zero
-- [ ] Stroke border intensifies by 30% on press
-- [ ] Frosted highlight dims by 30% on press
-- [ ] Release springs back with `.spring(0.25, 0.7)` — visibly bouncier rebound
-- [ ] Long press (>300ms) triggers subtle border pulse glow
-- [ ] Drag >20pt cancels the interaction (standard iOS behavior)
-- [ ] Press effect renders at 60fps — no frame stutter on interaction start
+- [x] Press scales to 0.98× (not 0.97×) — no opacity change
+- [x] Shadows compress on press: lift shadow reduces to near-zero
+- [x] Stroke border intensifies by 30% on press
+- [x] Frosted highlight dims by 30% on press
+- [x] Release springs back with `.spring(0.25, 0.7)` — visibly bouncier rebound
+- [x] Long press (>300ms) triggers subtle border pulse glow
+- [x] Drag >20pt cancels the interaction (standard iOS behavior)
+- [x] Press effect renders at 60fps — no frame stutter on interaction start
 
 ---
 
@@ -490,23 +490,23 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **3.5.1** — **Expand spring**: `.spring(response: 0.40, dampingFraction: 0.72, blendDuration: 0.1)` — slightly slower response with more noticeable overshoot (panel "breathes open" past its resting size by ~2% before settling)
-- **3.5.2** — **Collapse spring**: `.spring(response: 0.30, dampingFraction: 0.88)` — faster, crisper, minimal overshoot — collapsing should feel decisive and snappy
-- **3.5.3** — **Chevron rotation**: use the expand spring for rotation-to-90° and the collapse spring for rotation-to-0° — the chevron and panel move as one physical system
-- **3.5.4** — **Content reveal**: offset the content opacity animation start by 30ms from the height animation (not 50ms — longer gaps create a visible "empty glass card" frame that feels broken). Height begins first, content fades in as the space opens — the 30ms offset prevents content from appearing before there's room while avoiding an empty-card flash
-- **3.5.5** — **Rapid toggle protection**: if user toggles twice within 200ms, debounce to the final state — don't play two overlapping animations
-- **3.5.6** — Define these spring constants in a shared `CollapsibleAnimationTokens` enum: `.expandSpring`, `.collapseSpring`, `.revealDelay`, `.debounceInterval` — ensuring every animation parameter is centralized
+- [x] **3.5.1** — **Expand spring**: `.spring(response: 0.40, dampingFraction: 0.72, blendDuration: 0.1)` — slightly slower response with more noticeable overshoot (panel "breathes open" past its resting size by ~2% before settling)
+- [x] **3.5.2** — **Collapse spring**: `.spring(response: 0.30, dampingFraction: 0.88)` — faster, crisper, minimal overshoot — collapsing should feel decisive and snappy
+- [x] **3.5.3** — **Chevron rotation**: use the expand spring for rotation-to-90° and the collapse spring for rotation-to-0° — the chevron and panel move as one physical system
+- [x] **3.5.4** — **Content reveal**: offset the content opacity animation start by 30ms from the height animation (not 50ms — longer gaps create a visible "empty glass card" frame that feels broken). Height begins first, content fades in as the space opens — the 30ms offset prevents content from appearing before there's room while avoiding an empty-card flash
+- [x] **3.5.5** — **Rapid toggle protection**: if user toggles twice within 200ms, debounce to the final state — don't play two overlapping animations
+- [x] **3.5.6** — Define these spring constants in a shared `CollapsibleAnimationTokens` enum: `.expandSpring`, `.collapseSpring`, `.revealDelay`, `.debounceInterval` — ensuring every animation parameter is centralized
 
 #### Acceptance Criteria
 
-- [ ] Expand animation has perceptible overshoot (~2% past resting size) before settling
-- [ ] Collapse animation is noticeably faster and crisper than expand — no overshoot
-- [ ] Chevron rotation uses expand spring when opening, collapse spring when closing
-- [ ] Content fade-in is offset 30ms after height animation begins
-- [ ] Rapid double-toggle within 200ms results in only the final state — no overlapping animations
-- [ ] Animation tokens are centralized in `CollapsibleAnimationTokens` enum
-- [ ] Expand feels "breathe open"; collapse feels "snap shut" — distinct emotional characters
-- [ ] All 20 panel instances use the centralized animation tokens
+- [x] Expand animation has perceptible overshoot (~2% past resting size) before settling
+- [x] Collapse animation is noticeably faster and crisper than expand — no overshoot
+- [x] Chevron rotation uses expand spring when opening, collapse spring when closing
+- [x] Content fade-in is offset 30ms after height animation begins
+- [x] Rapid double-toggle within 200ms results in only the final state — no overlapping animations
+- [x] Animation tokens are centralized in `CollapsibleAnimationTokens` enum
+- [x] Expand feels "breathe open"; collapse feels "snap shut" — distinct emotional characters
+- [x] All 20 panel instances use the centralized animation tokens
 
 ---
 

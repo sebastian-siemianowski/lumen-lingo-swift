@@ -211,6 +211,7 @@ struct ProfileView: View {
                         .clipShape(Circle())
                 }
                 .shadow(color: Color(hex: "#764ba2").opacity(0.3), radius: 12, y: 2)
+                .staggeredReveal(index: 0)
 
                 // Name & level
                 VStack(spacing: 4) {
@@ -233,6 +234,7 @@ struct ProfileView: View {
                             .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                     }
                 }
+                .staggeredReveal(index: 1)
 
                 // Tier badge — tapping navigates to Membership
                 NavigationLink {
@@ -241,6 +243,7 @@ struct ProfileView: View {
                     TierBadgeView()
                 }
                 .buttonStyle(.plain)
+                .staggeredReveal(index: 2)
 
                 // Quick stats row
                 HStack(spacing: 0) {
@@ -251,6 +254,7 @@ struct ProfileView: View {
                     quickStat(value: "\(allProgress.count)", label: L.sessions, icon: "play.circle.fill", color: .green)
                 }
                 .padding(.top, 4)
+                .staggeredReveal(index: 3)
             }
         }
     }

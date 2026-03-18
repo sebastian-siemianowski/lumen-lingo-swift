@@ -219,7 +219,7 @@ struct JourneyView: View {
                     icon: "flame.fill",
                     colors: [.orange, Color(hex: "#ef4444")],
                     isCollapsed: $isStreakCollapsed,
-                    badge: .text("🔥 \(profile?.streakDays ?? 0)")
+                    badge: .count(profile?.streakDays ?? 0)
                 ) {
                     streakSection
                 }
@@ -239,8 +239,7 @@ struct JourneyView: View {
                     title: L.resetProgress,
                     icon: "arrow.triangle.2.circlepath",
                     colors: [.red.opacity(0.9), .red.opacity(0.6)],
-                    isCollapsed: $isResetCollapsed,
-                    badge: .icon("exclamationmark.triangle.fill", .red.opacity(0.6))
+                    isCollapsed: $isResetCollapsed
                 ) {
                     resetProgressButton
                 }
@@ -354,6 +353,7 @@ struct JourneyView: View {
             VStack(alignment: .leading, spacing: 0) {
                 ForEach(Array(milestones.enumerated()), id: \.element.title) { index, milestone in
                     milestoneRow(milestone, isLast: index == milestones.count - 1)
+                        .staggeredReveal(index: index)
                 }
             }
         }
@@ -522,12 +522,14 @@ struct JourneyView: View {
                         .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
                 }
             }
+            .staggeredReveal(index: 0)
 
             // Divider
             Rectangle()
                 .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
                 .frame(height: 1)
                 .padding(.horizontal, 4)
+                .staggeredReveal(index: 1)
 
             // Three stat columns
             HStack(spacing: 0) {
@@ -560,6 +562,7 @@ struct JourneyView: View {
                     color: .orange
                 )
             }
+            .staggeredReveal(index: 2)
         }
         .padding(16)
         .background(GlassCardBackground())
@@ -587,8 +590,9 @@ struct JourneyView: View {
 
     private var gameTypeBreakdown: some View {
         VStack(spacing: 10) {
-            ForEach(GameType.allCases, id: \.self) { type in
+            ForEach(Array(GameType.allCases.enumerated()), id: \.element) { index, type in
                 gameTypeRow(type)
+                    .staggeredReveal(index: index)
             }
         }
         .padding(14)
@@ -675,11 +679,13 @@ struct JourneyView: View {
                     .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                     .padding(.top, 10)
             }
+            .staggeredReveal(index: 0)
 
             Text(L.keepLearningEveryDay)
                 .font(.system(size: 11))
                 .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
                 .multilineTextAlignment(.center)
+                .staggeredReveal(index: 1)
         }
         .padding(14)
         .background(GlassCardBackground())
@@ -689,10 +695,15 @@ struct JourneyView: View {
 
     private var resetProgressButton: some View {
         VStack(spacing: 10) {
-            Text(L.startFreshDescription)
-                .font(.system(size: 11))
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-                .frame(maxWidth: .infinity, alignment: .leading)
+            HStack(spacing: 6) {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .font(.system(size: 10, weight: .medium))
+                    .foregroundStyle(.red.opacity(0.6))
+                Text(L.startFreshDescription)
+                    .font(.system(size: 11))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
 
             Button {
                 showResetAlert = true
