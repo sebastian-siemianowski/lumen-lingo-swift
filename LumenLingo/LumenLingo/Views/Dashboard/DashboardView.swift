@@ -292,21 +292,22 @@ struct DashboardView: View {
                 // Practice time ring
                 PracticeTimeRing()
 
-                if !isHeaderCollapsed {
-                    Button {
-                        withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
-                            isHeaderCollapsed.toggle()
-                        }
-                        HapticsService.shared.toggleSwitch()
-                    } label: {
-                        Image(systemName: "chevron.up")
-                            .font(.caption.bold())
-                            .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
-                            .padding(8)
-                            .background(Circle().fill(isDark ? .white.opacity(0.1) : Color.caribbeanMist.opacity(0.12)))
+                Button {
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+                        isHeaderCollapsed.toggle()
                     }
-                    .buttonStyle(LumenPressStyle(weight: .soft))
+                    HapticsService.shared.toggleSwitch()
+                } label: {
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                        .rotationEffect(.degrees(isHeaderCollapsed ? 0 : 90))
+                        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: isHeaderCollapsed)
+                        .padding(8)
+                        .background(Circle().fill(isDark ? .white.opacity(0.1) : Color.caribbeanMist.opacity(0.12)))
                 }
+                .buttonStyle(LumenPressStyle(weight: .soft))
+                .accessibilityLabel(isHeaderCollapsed ? "Expand dashboard" : "Collapse dashboard")
             }
 
             // Compact stat badges when collapsed

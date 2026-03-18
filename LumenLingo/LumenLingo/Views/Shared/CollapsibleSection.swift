@@ -49,6 +49,8 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                 tipBody
             }
         }
+        .accessibilityElement(children: .contain)
+        .accessibilityValue(isCollapsed ? "collapsed" : "expanded")
     }
 
     /// Unified toggle with standard spring animation and haptic.
@@ -65,13 +67,102 @@ struct CollapsibleSection<Header: View, Content: View>: View {
         VStack(spacing: 0) {
             Button { toggle() } label: { header() }
                 .buttonStyle(CollapsibleHeaderButtonStyle())
+                .background(
+                    isCollapsed ? AnyView(standardGlassBackground) : AnyView(Color.clear)
+                )
 
             if !isCollapsed {
-                accentDivider
                 content()
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
+    }
+
+    /// Glass background for `.standard` style collapsed state — premium glass pill.
+    /// Layers match GlassCardBackground: material → Caribbean tint → frosted highlight → section accent → stroke → dual shadow.
+    private var standardGlassBackground: some View {
+        RoundedRectangle(cornerRadius: cornerRadius)
+            .fill(.ultraThinMaterial)
+            .opacity(isDark ? 1.0 : 0.55)
+            // Caribbean tint layer (light mode only) — matching GlassCardBackground
+            .overlay(
+                Group {
+                    if !isDark {
+                        RoundedRectangle(cornerRadius: cornerRadius)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color(hex: "#C494FC").opacity(0.12),
+                                        Color(hex: "#F472B6").opacity(0.08),
+                                        Color(hex: "#FB923C").opacity(0.06)
+                                    ],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                    }
+                }
+            )
+            // Frosted inner highlight — matching GlassCardBackground
+            .overlay(
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(
+                        LinearGradient(
+                            colors: isDark
+                                ? [.white.opacity(0.10), .clear, .white.opacity(0.03)]
+                                : [.white.opacity(0.20), .clear, .white.opacity(0.05)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+            )
+            // Section accent tint — preserves per-section color identity
+            .overlay(
+                Group {
+                    if !isDark {
+                        RoundedRectangle(cornerRadius: cornerRadius)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        colors[0].opacity(0.08),
+                                        colors.last!.opacity(0.05)
+                                    ],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                    }
+                }
+            )
+            // Gradient stroke border
+            .overlay(
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: isDark
+                                ? [colors[0].opacity(0.25), colors.last!.opacity(0.1)]
+                                : [colors[0].opacity(0.3), colors.last!.opacity(0.15)],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        ),
+                        lineWidth: isDark ? 0.75 : 0.5
+                    )
+            )
+            // Dual shadow: lift + grounding
+            .shadow(
+                color: isDark
+                    ? colors[0].opacity(0.10)
+                    : Color(hex: "#C494FC").opacity(0.10),
+                radius: 16,
+                y: 6
+            )
+            .shadow(
+                color: isDark
+                    ? .black.opacity(0.04)
+                    : Color(hex: "#F472B6").opacity(0.04),
+                radius: 5,
+                y: 2
+            )
     }
 
     // MARK: - Hero Layout
@@ -104,6 +195,7 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
+        .modifier(DualShadowModifier(colors: colors, isCollapsed: isCollapsed))
     }
 
     // MARK: - Inline Layout
@@ -118,6 +210,7 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
+        .modifier(DualShadowModifier(colors: colors, isCollapsed: isCollapsed))
     }
 
     // MARK: - Tip Layout
@@ -132,24 +225,9 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
+        .modifier(DualShadowModifier(colors: colors, isCollapsed: isCollapsed))
     }
 
-    // MARK: - Accent Divider
-
-    private var accentDivider: some View {
-        Rectangle()
-            .fill(
-                LinearGradient(
-                    colors: [.clear, colors[0].opacity(0.3), colors.last!.opacity(0.2), .clear],
-                    startPoint: .leading,
-                    endPoint: .trailing
-                )
-            )
-            .frame(height: 1)
-            .padding(.horizontal, 24)
-            .padding(.top, 2)
-            .padding(.bottom, 6)
-    }
 }
 
 // MARK: - Standard Convenience Init (Backward-Compatible)
@@ -164,7 +242,6 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         isCollapsed: Binding<Bool>,
         subtitle: String? = nil,
         cornerRadius: CGFloat = 18,
-        shadowRadius: CGFloat = 8,
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.style = .standard
@@ -173,7 +250,6 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         self.cornerRadius = cornerRadius
         let capturedBinding = isCollapsed
         let capturedSubtitle = subtitle
-        let capturedShadowRadius = shadowRadius
         self.header = {
             DefaultCollapsibleHeader(
                 title: title,
@@ -181,8 +257,7 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
                 colors: colors,
                 isCollapsed: capturedBinding.wrappedValue,
                 subtitle: capturedSubtitle,
-                cornerRadius: cornerRadius,
-                shadowRadius: capturedShadowRadius
+                cornerRadius: cornerRadius
             )
         }
         self.content = content
@@ -200,7 +275,6 @@ struct DefaultCollapsibleHeader: View {
     let isCollapsed: Bool
     let subtitle: String?
     let cornerRadius: CGFloat
-    let shadowRadius: CGFloat
 
     @Environment(\.colorScheme) private var colorScheme
     private var isDark: Bool { colorScheme == .dark }
@@ -261,48 +335,7 @@ struct DefaultCollapsibleHeader: View {
             }
         }
         .padding(.horizontal, 14)
-        .padding(.vertical, isCollapsed ? 14 : 10)
-        .background {
-            if isCollapsed {
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .fill(.ultraThinMaterial)
-                    .opacity(isDark ? 1.0 : 0.55)
-                    .overlay(
-                        Group {
-                            if !isDark {
-                                RoundedRectangle(cornerRadius: cornerRadius)
-                                    .fill(
-                                        LinearGradient(
-                                            colors: [
-                                                colors[0].opacity(0.08),
-                                                colors.last!.opacity(0.05)
-                                            ],
-                                            startPoint: .leading,
-                                            endPoint: .trailing
-                                        )
-                                    )
-                            }
-                        }
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: cornerRadius)
-                            .strokeBorder(
-                                LinearGradient(
-                                    colors: isDark
-                                        ? [colors[0].opacity(0.25), colors.last!.opacity(0.1)]
-                                        : [colors[0].opacity(0.3), colors.last!.opacity(0.15)],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                ),
-                                lineWidth: isDark ? 0.75 : 0.5
-                            )
-                    )
-                    .shadow(
-                        color: colors[0].opacity(isDark ? 0.12 : 0.08),
-                        radius: shadowRadius, y: 4
-                    )
-            }
-        }
+        .padding(.vertical, 14)
     }
 }
 
@@ -315,5 +348,35 @@ struct CollapsibleHeaderButtonStyle: ButtonStyle {
             .scaleEffect(configuration.isPressed ? 0.97 : 1.0)
             .opacity(configuration.isPressed ? 0.85 : 1.0)
             .animation(.easeOut(duration: 0.15), value: configuration.isPressed)
+    }
+}
+
+// MARK: - Dual Shadow Elevation
+
+/// Dual shadow matching GlassCardBackground: colored lift shadow + tight grounding shadow.
+/// Light mode uses Caribbean lavender #C494FC for lift.
+private struct DualShadowModifier: ViewModifier {
+    let colors: [Color]
+    let isCollapsed: Bool
+
+    @Environment(\.colorScheme) private var colorScheme
+    private var isDark: Bool { colorScheme == .dark }
+
+    func body(content: Content) -> some View {
+        content
+            .shadow(
+                color: isDark
+                    ? colors[0].opacity(isCollapsed ? 0.10 : 0.12)
+                    : Color(hex: "#C494FC").opacity(isCollapsed ? 0.10 : 0.12),
+                radius: isCollapsed ? 16 : 20,
+                y: isCollapsed ? 6 : 8
+            )
+            .shadow(
+                color: isDark
+                    ? .black.opacity(isCollapsed ? 0.04 : 0.05)
+                    : Color(hex: "#F472B6").opacity(isCollapsed ? 0.04 : 0.06),
+                radius: isCollapsed ? 5 : 6,
+                y: isCollapsed ? 2 : 3
+            )
     }
 }

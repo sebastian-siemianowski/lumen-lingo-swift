@@ -688,8 +688,13 @@ struct GrammarView: View {
 
                     Image(systemName: "chevron.right")
                         .font(.system(size: 10, weight: .bold))
-                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanMist)
+                        .foregroundStyle(
+                            !showExplanation
+                                ? AnyShapeStyle(LinearGradient(colors: [Color(hex: "#3b82f6"), Color(hex: "#60a5fa")], startPoint: .leading, endPoint: .trailing))
+                                : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
+                        )
                         .rotationEffect(.degrees(showExplanation ? 90 : 0))
+                        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: showExplanation)
                 }
                 .padding(14)
             },

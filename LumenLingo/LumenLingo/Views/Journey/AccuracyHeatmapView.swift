@@ -150,8 +150,12 @@ struct AccuracyHeatmapView: View {
                     Spacer()
 
                     Image(systemName: "chevron.right")
-                        .font(.system(size: 11, weight: .bold))
-                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundStyle(
+                            isMasteredCollapsed
+                                ? AnyShapeStyle(LinearGradient(colors: [Color(hex: "#10b981"), Color(hex: "#f59e0b")], startPoint: .leading, endPoint: .trailing))
+                                : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
+                        )
                         .rotationEffect(.degrees(isMasteredCollapsed ? 0 : 90))
                         .animation(.spring(response: 0.35, dampingFraction: 0.8), value: isMasteredCollapsed)
                 }

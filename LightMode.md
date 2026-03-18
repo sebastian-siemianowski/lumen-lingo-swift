@@ -2725,3 +2725,1134 @@ Connection rail:
 - [ ] Connection rail between source and target language is warm and visible
 - [ ] "Start Adventure" CTA is the clear focal point with warm glow
 - [ ] Overall onboarding screen matches the premium quality of the rest of the app
+
+---
+
+## Epic 8: Background System, Depth & Atmospheric Effects
+
+**Epic Owner:** Visual Design Systems Lead
+**Priority:** P0 — The background is the canvas on which everything else sits; it defines the entire mood
+**Goal:** Create a luminous, breathing Caribbean background system that feels like golden hour on a tropical beach — warm light filtering through palm trees, soft lens flares, and a gently shifting sky that makes every screen feel alive with warmth and possibility.
+
+### The Design Vision
+
+Dark mode has the cosmic nebula — a rich, animated Metal shader background with stars, depth, and drama. Light mode needs an equally stunning counterpart, but through the lens of warm, natural light. Think: golden hour photography, Caribbean sunrises, watercolor washes, and the way light dances on ocean surfaces.
+
+---
+
+### Story 8.1: Redesign Layout Background for Premium Light Mode
+
+**As a** user experiencing the app in light mode,
+**I want** the background to be a living, breathing canvas of warm light,
+**So that** the entire app feels premium, alive, and emotionally warm.
+
+**Story Points:** 13
+**Priority:** P0
+
+#### Subtask 8.1.1: Redesign Dashboard Background Layers
+
+**Current LayoutBackgroundView light mode layers (7-layer composited):**
+```
+Layer 1: Lavender-rose gradient
+Layer 2: Hot pink radial pulse
+Layer 3: Warm orange radial pulse
+Layer 4: Lavender mist float
+Layer 5: Rose-gold accent
+Layer 6: Caribbean crystal overlay
+Layer 7: Soft veil (caribbeanInk @ 0.03)
+```
+
+**Proposed premium light mode background layers:**
+```
+Base layer (static):
+  - Gradient: caribbeanCanvas → caribbeanElevated (slightly warm off-white)
+  - Direction: top (warm) → bottom (cool) — natural sky lighting model
+
+Layer 1 — Warm Sky Wash:
+  - Radial gradient: center-top anchored
+  - Color: #FFF7ED (cream) → transparent
+  - Size: 140% of screen width
+  - Purpose: Simulates warm light coming from above
+  - Animated: center position drifts ±5% over 20s (slow breathing)
+
+Layer 2 — Lavender Atmosphere:
+  - Radial gradient: offset 30% right, 70% down
+  - Color: #C494FC @ 0.06 → transparent
+  - Size: 90% of screen width
+  - Purpose: Caribbean lavender identity — brand signature
+  - Animated: opacity breathes 0.04-0.08 over 12s
+
+Layer 3 — Rose Gold Accent Pool:
+  - Radial gradient: offset 20% left, 40% down
+  - Color: #F472B6 @ 0.05 → transparent
+  - Size: 60% of screen width
+  - Purpose: Warmth accent — like rose-gold jewelry catching light
+  - Animated: position drifts ±8% in both axes over 16s
+
+Layer 4 — Amber Highlight (Golden Hour):
+  - Radial gradient: offset 50% right, 20% down
+  - Color: #FB923C @ 0.04 → transparent
+  - Size: 50% of screen width
+  - Purpose: Sunset warmth, creates depth variety
+  - Animated: opacity pulses 0.02-0.06 over 18s
+
+Layer 5 — Crystalline Shimmer:
+  - Noise texture overlay: very subtle, caribbeanInk @ 0.012
+  - Purpose: Prevents banding in gradients, adds "texture"
+  - Static (no animation)
+
+Atmospheric veil:
+  - caribbeanInk @ 0.015 overlay (barely visible)
+  - Purpose: Prevents background from washing out text
+
+TOTAL: 5 visual layers + 1 noise layer + 1 veil
+PERFORMANCE: Only Layers 1-4 animate (slow sine-wave position/opacity changes)
+POWER: Much cheaper than Metal shaders — all SwiftUI/Core Animation
+```
+
+**Acceptance Criteria:**
+- [ ] Background feels warm, luminous, and alive — like sitting in warm sunlight
+- [ ] No single color dominates — the blend of lavender, rose, and amber creates richness
+- [ ] Background works on all screen sizes (iPhone SE through iPad Pro)
+- [ ] Background doesn't distract from content — all layers stay below 0.08 opacity
+- [ ] No gradient banding visible — noise texture layer eliminates bands
+- [ ] Performance: no dropped frames — animations use slow sine waves, minimal GPU
+- [ ] Atmospheric veil ensures text contrast remains excellent (WCAG 4.5:1 min)
+- [ ] Background gracefully crossfades during dark ↔ light mode transition
+- [ ] Background continues animating subtly when the user scrolls
+
+#### Subtask 8.1.2: Redesign Non-Dashboard Tab Backgrounds
+
+**Current non-dashboard background:** Solid `rgb(248, 245, 253)` — pale lavender white (adequate but lifeless).
+
+**Proposed premium non-dashboard backgrounds:**
+```
+Categories tab background:
+  - Base: caribbeanCanvas
+  - Single ambient wash: lavender @ 0.03, radial, center-top
+  - Subtle: enough warmth to not feel like "empty screen"
+
+Journey tab background:
+  - Base: caribbeanCanvas
+  - Ambient wash: rose-gold @ 0.03, radial, 60% down (warms the timeline)
+  - Subtle: milestone cards still pop against the slightly warm canvas
+
+Profile tab background:
+  - Base: caribbeanCanvas
+  - Ambient wash: warm cream (#FFF7ED) @ 0.06, radial, top
+  - Slightly warmer: profile is personal, should feel warm
+
+Practice screens:
+  - Uses game-specific accent color @ 0.02 ambient wash
+  - FlashCards: caribbeanGradientPrimary values
+  - WordBuilder: emerald values
+  - Grammar: amber values
+
+Consistent elements across all tabs:
+  - Noise texture overlay (same as dashboard — brand consistency)
+  - caribbeanInk @ 0.015 atmospheric veil
+```
+
+**Acceptance Criteria:**
+- [ ] Non-dashboard tabs feel warm and branded (not flat, clinical white)
+- [ ] Each tab has a signature ambient color — subtle but identifiable
+- [ ] Ambient washes are extremely subtle (≤ 0.06 opacity) so content stays prominent
+- [ ] Consistency: all tabs share noise texture and atmospheric veil
+- [ ] Scroll performance is unaffected
+- [ ] Background doesn't shift when navigating between tabs (ambient wash is per-tab, positioned identically)
+
+#### Subtask 8.1.3: Define Parallax Scrolling Integration
+
+**Current dashboard has parallax scrolling activated.**
+
+**Proposed light mode parallax behavior:**
+```
+Scroll events:
+  - Background layers scroll at 0.15× the content speed (parallax factor)
+  - Layer 1 (sky wash): 0.10× (most distant — moves least)
+  - Layer 3 (rose pool): 0.15× (mid-distance)
+  - Layer 4 (amber): 0.20× (closest — moves most)
+  - Layer 2 (lavender): 0.12× (atmospheric — stays mostly still)
+
+Pull-to-refresh overshoot:
+  - Background layers shift down at 0.3×
+  - Warm light wash intensifies slightly (opacity +0.02)
+  - Creates "sun breaking through" feeling on over-pull
+
+Scroll-to-top acceleration:
+  - Background layers smoothly snap back to resting position
+  - Spring animation: response 0.6, dampingFraction 0.7
+
+Reduced motion fallback:
+  - All layers at static positions (no parallax)
+  - Background still shows the same warm, layered composition — just no movement
+```
+
+**Acceptance Criteria:**
+- [ ] Parallax creates depth — the background feels like it's behind the content
+- [ ] Different parallax speeds for each layer sell the depth illusion
+- [ ] Pull-to-refresh has a warm, "sun intensifies" moment
+- [ ] Snap-back uses spring physics (not linear)
+- [ ] Parallax is disabled when `reduceMotion` is active
+- [ ] No jittering or jank in scroll — all layers move smoothly
+- [ ] Parallax doesn't cause layout shifts or content jumpiness
+
+---
+
+### Story 8.2: Adapt Breathing Orbs for Light Mode
+
+**As a** user who enjoys the breathing orbs feature,
+**I want** the orbs to feel warm and luminous in light mode,
+**So that** the meditative quality is preserved but with a Caribbean warmth.
+
+**Story Points:** 5
+**Priority:** P1
+
+#### Subtask 8.2.1: Define Light Mode Orb Color Palette
+
+**Current BreathingOrbsView:** Uses cosmic colors (purple, blue, cyan) — appropriate for dark mode but wrong for light.
+
+**Proposed Caribbean orb palette:**
+```
+Light mode orb colors:
+  Orb 1: caribbeanGradientPrimary (#C494FC → #F472B6) — lavender → rose
+  Orb 2: caribbeanGradientWarm (#F472B6 → #FB923C) — rose → amber
+  Orb 3: caribbeanGradientSecondary (#C494FC → #8B5CF6) — lavender → violet
+  Orb 4: caribbeanGradientSunset (#FFF7ED → #F472B6 → #C494FC) — cream → rose → lavender
+
+Orb opacity: 0.08 - 0.15 (more transparent than dark mode)
+Orb blur: 20 - 40pt (softer than dark mode — dreamy quality)
+Orb size: same as dark mode
+
+Background interaction:
+  - Orbs blend with the background gradient layers
+  - Overlapping orbs create warmer pockets
+  - Maximum combined opacity in any area: 0.30
+
+Glow effect:
+  - Outer glow: orb gradient @ 0.04, blur 15
+  - Much softer than dark mode glow (dark mode glow is dramatic; light mode is gentle)
+```
+
+**Acceptance Criteria:**
+- [ ] Orbs use warm Caribbean palette (not cosmic purple/blue)
+- [ ] Orbs are more transparent and softer than dark mode counterparts
+- [ ] Overlapping orbs create warm pockets without opaque masses
+- [ ] Orb breathing animation continues at the same pace as dark mode
+- [ ] Orbs don't overpower the content layer
+- [ ] Color transition when switching dark ↔ light mode is smooth (crossfade)
+
+#### Subtask 8.2.2: Adapt Orb Interaction for Light Mode
+
+**Light mode orb behavior adjustments:**
+```
+Breathing cycle:
+  - Same timing as dark mode (continuity)
+  - But: lighter, softer scale range
+  - Scale: 0.95 to 1.05 (vs 0.85 to 1.15 in dark mode — tighter range)
+  - Reason: big scale changes on light bg feel "bouncy" not "breathing"
+
+Drift:
+  - Same drift pattern as dark mode
+  - Speed: 0.8× dark mode speed (slightly slower — more languid)
+  - Reason: light mode is "daytime" — calmer energy
+
+Touch interaction (if enabled):
+  - Tap orb: warm ripple, caribbeanGradientWarm expanding circle
+  - Press: orb brightens to 0.25 opacity, glow intensifies
+  - Release: spring back to normal opacity
+```
+
+**Acceptance Criteria:**
+- [ ] Breathing is subtler in light mode (tighter scale range)
+- [ ] Drift is slightly slower — "afternoon" energy
+- [ ] Touch interactions produce warm, Caribbean-colored responses
+- [ ] Orbs feel like warm light objects, not cosmic entities
+- [ ] Combined orb + background layer composition stays under budget (total overdraw < 3×)
+
+---
+
+### Story 8.3: Define Light Mode Fog, Mist & Atmospheric Effects
+
+**As a** user experiencing the app in light mode,
+**I want** subtle atmospheric effects that add depth and warmth,
+**So that** the app feels like a living environment, not a flat interface.
+
+**Story Points:** 8
+**Priority:** P2
+
+#### Subtask 8.3.1: Design Caribbean Mist Effect
+
+**Proposed light mode atmospheric mist:**
+```
+Mist layer (optional premium effect):
+  - Position: bottom 20% of screen
+  - Gradient: caribbeanCanvas → transparent (bottom → up)
+  - Opacity: 0.30 → 0.00
+  - Animated: slow horizontal drift (40s full cycle)
+  - Gives content a "rising from mist" feeling at the bottom
+
+Purpose:
+  - Replaces the harsh bottom edge where content ends and background starts
+  - Creates the illusion that content continues "below the mist"
+  - Adds depth layering: content → mist → background
+
+Implementation:
+  - Simple gradient overlay (not a texture/image)
+  - Masked to avoid covering interactive elements
+  - Fades out when user is scrolled to bottom of content
+```
+
+**Acceptance Criteria:**
+- [ ] Mist creates a soft bottom edge — content doesn't just "end"
+- [ ] Mist animation is extremely subtle — user shouldn't consciously notice it
+- [ ] Mist doesn't cover interactive elements (buttons, tabs)
+- [ ] Mist fades when user reaches end of scrollable content
+- [ ] No performance impact — single gradient layer with alpha animation
+- [ ] Mist is elegant, not cheesy — think "morning fog," not "smoke machine"
+
+#### Subtask 8.3.2: Design Light Lens Flare & Bokeh Accents
+
+**Proposed premium light accents (stretch goal):**
+```
+Lens flare (dashboard only):
+  - Single soft hexagonal flare in top-right area
+  - Color: warm cream → transparent (#FFF7ED)
+  - Size: 30px, opacity 0.12
+  - Animated: slow fade in/out (6s cycle)
+  - Purpose: "camera pointed at sunlight" — photographic warmth
+
+Bokeh circles (dashboard + journey):
+  - 5-8 soft circles scattered across background
+  - Colors: mix of caribbeanGradientPrimary values @ 0.03
+  - Sizes: 20-60px, blur 10-20
+  - Animated: very slow drift (20-30s cycles)
+  - Purpose: "out-of-focus light" — depth-of-field effect from photography
+
+Implementation:
+  - Both effects are purely cosmetic layers behind content
+  - Both respect reduceMotion (static when enabled)
+  - Both are behind the atmospheric veil layer
+```
+
+**Acceptance Criteria:**
+- [ ] Lens flare adds warmth without being distracting (barely noticeable)
+- [ ] Bokeh circles create depth — "this is a living space" feeling
+- [ ] Effects are invisible when `reduceMotion` is enabled (or static)
+- [ ] Performance: < 1ms per frame for these effects
+- [ ] Effects don't compete with breathing orbs (different layer, different behavior)
+- [ ] Effects are tasteful — premium app, not a photo filter app
+
+---
+
+## Epic 9: Animation, Motion & Micro-Interactions
+
+**Epic Owner:** Motion Design Lead
+**Priority:** P1 — Motion is the soul of a premium experience; it's what makes the app feel alive versus static
+**Goal:** Define a cohesive Caribbean light mode motion language that is warm, fluid, and confident — like the gentle sway of a hammock in a tropical breeze. Every animation should serve purpose: guide attention, confirm actions, or create ambient warmth.
+
+### Motion Design Principles for Caribbean Light Mode
+
+1. **Warm, not electric.** Dark mode animations can be sharp and cosmic. Light mode animations should be fluid, gentle, and organic — like water, light, and breeze.
+2. **Confident, not bouncy.** Spring animations use higher damping (0.7-0.85) and moderate response (0.35-0.5s). Nothing should feel rubbery or toy-like.
+3. **Purposeful, not decorative.** Every animation answers the question: what is this teaching the user? Where should they look? What just happened?
+4. **Layered, not simultaneous.** Complex transitions stagger elements by 50-80ms, creating a "ripple" effect rather than everything appearing at once.
+
+---
+
+### Story 9.1: Define Core Light Mode Animation Curves & Timings
+
+**As a** developer implementing Caribbean light mode animations,
+**I want** a consistent animation system with defined curves and timings,
+**So that** all motion feels cohesive, premium, and intentional across the app.
+
+**Story Points:** 5
+**Priority:** P0
+
+#### Subtask 9.1.1: Define Animation Token Library
+
+**Caribbean Light Mode Animation Tokens:**
+```swift
+// MARK: — Spring Animations (primary motion system)
+
+/// Standard interaction response (button presses, card taps)
+static let caribbeanSpringStandard = Animation.spring(
+    response: 0.4, dampingFraction: 0.78, blendDuration: 0.1
+)
+
+/// Quick micro-feedback (toggles, checkmarks, small state changes)
+static let caribbeanSpringQuick = Animation.spring(
+    response: 0.25, dampingFraction: 0.82, blendDuration: 0.05
+)
+
+/// Dramatic entrance (cards appearing, modals presenting, celebrations)
+static let caribbeanSpringDramatic = Animation.spring(
+    response: 0.55, dampingFraction: 0.72, blendDuration: 0.15
+)
+
+/// Ambient breathing (background layers, orbs, subtle pulsing)
+static let caribbeanSpringBreathing = Animation.spring(
+    response: 1.2, dampingFraction: 0.95, blendDuration: 0.3
+)
+
+// MARK: — Easing Curves (for non-spring animations)
+
+/// Smooth entrance (elements sliding in)
+static let caribbeanEaseOut = Animation.easeOut(duration: 0.35)
+
+/// Smooth exit (elements sliding out — slightly faster than entrance)
+static let caribbeanEaseIn = Animation.easeIn(duration: 0.25)
+
+/// Content fade (text, icons changing content)
+static let caribbeanFade = Animation.easeInOut(duration: 0.2)
+
+/// Long ambient cycle (gradient shifts, glow pulses)
+static let caribbeanAmbient = Animation.easeInOut(duration: 3.0)
+    .repeatForever(autoreverses: true)
+
+// MARK: — Stagger Delays
+
+/// Sequential item delay (list items, grid items)
+static let caribbeanStaggerDelay: TimeInterval = 0.06
+
+/// Group stagger (sections appearing)
+static let caribbeanGroupStagger: TimeInterval = 0.12
+```
+
+**Acceptance Criteria:**
+- [ ] All animation tokens are defined in a central extension (e.g., `Animation+Caribbean.swift`)
+- [ ] Spring damping values are all ≥ 0.70 (no bouncy/toy-like feel)
+- [ ] Quick feedback is ≤ 0.25s response (instant feel)
+- [ ] Dramatic entrances are ≤ 0.55s response (impressive but not slow)
+- [ ] Ambient animations use high damping (≥ 0.95) for smooth, slow movement
+- [ ] Stagger delays are consistent across all list/grid animations
+- [ ] Every animation in the app references a token — no inline hardcoded values
+
+#### Subtask 9.1.2: Define Transition Patterns Between Views
+
+**View transition patterns for light mode:**
+```
+Tab switching:
+  - Content crossfade: 0.2s easeInOut
+  - Background ambient layer: no transition (stays persistent)
+  - Tab bar indicator: spring slide (caribbeanSpringQuick)
+
+Navigation push:
+  - Standard iOS push with custom duration: 0.35s
+  - Entering view: slide from right + fade in (offset 30pt → 0)
+  - Exiting view: slide left + slight fade out (offset 0 → -15pt)
+  - Background: stays static (no movement — grounds the transition)
+
+Modal presentation:
+  - Sheet presentation: standard iOS sheet with custom detents (no changes needed)
+  - Full-screen modal: crossfade from bottom
+    - Entering: y offset 20pt → 0, opacity 0 → 1, caribbeanSpringDramatic
+    - Background: dims with caribbeanInk @ 0.25
+
+Pop-in animations (lists, grids):
+  - Each item: y offset 12 → 0, opacity 0 → 1
+  - Stagger: caribbeanStaggerDelay between items
+  - Spring: caribbeanSpringStandard
+  - Max stagger items: 8 (items beyond 8 appear without stagger to prevent slow loading)
+```
+
+**Acceptance Criteria:**
+- [ ] Tab switching feels instant — content appears within 200ms
+- [ ] Navigation push feels smooth and grounded (not floaty)
+- [ ] Modal presentation has gentle upward movement
+- [ ] List items stagger in sequence, creating a pleasant "waterfall" effect
+- [ ] Stagger is capped at 8 items to prevent perceived slowness
+- [ ] All transitions respect `reduceMotion` (instant, no animation)
+- [ ] Transition timings are consistent regardless of device performance
+
+---
+
+### Story 9.2: Define Micro-Interaction Animations
+
+**As a** user interacting with the app,
+**I want** every tap, swipe, and state change to have a satisfying physical response,
+**So that** the app feels responsive, alive, and rewarding to use.
+
+**Story Points:** 8
+**Priority:** P1
+
+#### Subtask 9.2.1: Button & Card Press Animations
+
+**Standardized press feedback for light mode:**
+```
+Primary CTA button (gradient fill):
+  Press: scale 0.97, caribbeanSpringQuick
+  Shadow: reduce from caribbeanShadowMedium → caribbeanShadowSubtle
+  Brightness: -0.03 (slightly darker — "pushed in")
+  Release: scale 1.0, caribbeanSpringStandard, shadow restores
+  Haptic: .light impact on press
+
+Secondary button (outline):
+  Press: background → caribbeanHover, scale 0.98
+  Border color: caribbeanBorderFocus (emphasis on press)
+  Release: background → transparent, scale 1.0
+  Haptic: none (secondary — less emphasis)
+
+Card press (GlassCardBackground, PremiumTransparentCardBackground):
+  Press: scale 0.985 (barely perceptible — cards are larger so less scale)
+  Shadow: caribbeanShadowMedium → caribbeanShadowSubtle (card descends)
+  Background: caribbeanHover tint overlay
+  Release: spring back, caribbeanSpringStandard
+  Haptic: .soft impact
+
+Toggle press:
+  Tap: caribbeanSpringQuick for thumb position
+  Track color: smooth transition 0.2s easeInOut
+  Haptic: .rigid impact (satisfying "clack")
+
+Destructive action:
+  Press: scale 0.97
+  Color: background flashes caribbeanError @ 0.08
+  Release: normal
+  Haptic: .notificationWarning
+```
+
+**Acceptance Criteria:**
+- [ ] All pressable elements have consistent, categorized press responses
+- [ ] Scale factors are subtle (0.97-0.985) — premium, not cartoon
+- [ ] Shadow changes create "depth" — pressed elements feel like they descend
+- [ ] Haptic feedback matches the importance of the action
+- [ ] Release animations use spring physics (always spring, never linear)
+- [ ] Press feedback is immediate — no perceivable delay between touch and visual response
+
+#### Subtask 9.2.2: State Change Micro-Animations
+
+**Animated state transitions for light mode:**
+```
+Checkbox / task completion:
+  - Unchecked → Checked:
+    - Circle: caribbeanBorderSubtle stroke → caribbeanSuccess fill
+    - Checkmark: draws in with stroke animation (0.25s, easeOut)
+    - Scale bounce: 0 → 1.15 → 1.0, caribbeanSpringQuick
+    - Celebration: single tiny burst of 4-6 particles, caribbeanSuccess color, 0.3s
+  - Checked → Unchecked:
+    - Reverse checkmark draw (0.15s, faster than draw-in)
+    - Fill: caribbeanSuccess → caribbeanBorderSubtle stroke
+    - No particle burst (removing isn't celebrated)
+
+Progress bar increment:
+  - Width: animates from current → new width, caribbeanSpringStandard
+  - Color: if crossing a threshold (25%, 50%, 75%, 100%):
+    - Gradient shifts to warmer tones
+    - Single flash pulse on the leading edge (0.3s)
+  - 100%: full gradient sweep + gold shimmer overlay (0.5s, once)
+
+Counter increment (XP, word count, streak):
+  - Outgoing number: fade out + y offset -8, 0.15s
+  - Incoming number: fade in + y offset +8 → 0, caribbeanSpringQuick
+  - Content size change: animate with caribbeanSpringQuick
+  - Milestone number (every 100, 500, 1000): gold flash, scale 1.1, haptic .success
+
+Skeleton loading → content:
+  - Skeleton: caribbeanRecessed with caribbeanElevated shimmer
+    - Shimmer: horizontal gradient sweep, 1.5s cycle, smooth
+  - Content reveal: crossfade, 0.2s easeInOut
+  - Individual items: stagger by caribbeanStaggerDelay
+```
+
+**Acceptance Criteria:**
+- [ ] Checkbox completion feels celebratory — the checkmark draws in with life
+- [ ] Progress bar changes are smooth and satisfying to watch
+- [ ] Counter animations prevent numbers from just "jumping" — they flow
+- [ ] Skeleton loading shimmer is warm (Caribbean-tinted, not grey)
+- [ ] State changes are clear — the user always knows what changed
+- [ ] Particle effects on completion are restrained (4-6 particles, not an explosion)
+- [ ] All state change animations have fallback for `reduceMotion` (instant, no animation)
+
+#### Subtask 9.2.3: Swipe Gesture Animations
+
+**Practice screen swipe animations for light mode:**
+```
+FlashCard swipe (correct/incorrect):
+  Correct (swipe right):
+    - Card: slides right with rotation (8° clockwise)
+    - Trail: caribbeanSuccess gradient streak behind card (0.3s, fades)
+    - Stamp: "✓" caribbeanSuccess, large, stamped onto card at swipe start
+    - Background: brief green flash pulse (caribbeanSuccess @ 0.06, 0.2s)
+    - Haptic: .success notification
+
+  Incorrect (swipe left):
+    - Card: slides left with rotation (8° counter-clockwise)
+    - Trail: caribbeanError gradient streak (0.3s, fades)
+    - Stamp: "✗" caribbeanError, large
+    - Background: brief warm-red flash (caribbeanError @ 0.04, 0.2s)
+    - Haptic: .error notification
+
+  Card entrance (next card):
+    - From bottom: y offset 40 → 0, opacity 0 → 1
+    - Spring: caribbeanSpringDramatic
+    - Delay: 0.1s after previous card exit
+    - Slight scale: 0.95 → 1.0
+
+WordBuilder tile drag:
+  Pick up: scale 1.08, caribbeanShadowMedium shadow appears
+  Dragging: follows finger with 2-frame lag (organic feel)
+  Over valid slot: slot border → caribbeanBorderFocus, glow
+  Over invalid slot: slot border → caribbeanError @ 0.20, no glow
+  Drop valid: scale 1.08 → 1.0, caribbeanSpringQuick, haptic .light
+  Drop invalid: spring back to origin, caribbeanSpringStandard, haptic .warning
+  Snap-to-grid: caribbeanSpringQuick (fast — should feel magnetically attracted)
+```
+
+**Acceptance Criteria:**
+- [ ] Flashcard swipe feels physical — rotation, trail, and stamp make it real
+- [ ] Correct/incorrect swipes are visually and haptically distinct
+- [ ] New card entrance has a satisfying "next challenge awaits" spring
+- [ ] WordBuilder tile pickup feels like "grabbing" (scale + shadow)
+- [ ] Tile dragging feels smooth with slight lag (organic, not locked to finger)
+- [ ] Valid/invalid drop targets provide clear visual signaling during the drag
+- [ ] Snap-to-grid is fast enough to feel magnetic
+- [ ] All gestures respect `reduceMotion` (reduced animation, still functional)
+
+---
+
+### Story 9.3: Dark ↔ Light Mode Transition Choreography
+
+**As a** user switching between dark and light mode,
+**I want** the transition to be a choreographed moment of delight,
+**So that** switching modes feels intentional and magical, not jarring.
+
+**Story Points:** 5
+**Priority:** P1
+
+#### Subtask 9.3.1: Design the Mode Switch Transition Sequence
+
+**Choreographed transition (dark → light):**
+```
+Phase 1 (0.0s - 0.15s): Toggle Responds
+  - Toggle pill slides to sun position
+  - Sun icon begins to glow warm
+
+Phase 2 (0.1s - 0.5s): Warm Wash Expands
+  - Radial gradient expands from the toggle position
+  - Color: caribbeanGradientSunset → transparent
+  - Expansion: 0 → screen diagonal, easeOut
+  - Behind the wash: light mode colors are already set
+
+Phase 3 (0.15s - 0.55s): UI Elements Crossfade
+  - All UI colors crossfade from dark → light values
+  - Timing: 0.4s easeInOut
+  - Elements are individually animated (not a single snapshot)
+  - Glass cards: blur and tint shift simultaneously
+
+Phase 4 (0.3s - 0.8s): Background Awakens
+  - Background layers: dark cosmic → warm Caribbean
+  - Stars: fade out
+  - Warm sky wash: fades in
+  - Breathing orbs: color crossfade (cosmic → Caribbean)
+
+Phase 5 (0.5s - 1.0s): Settle
+  - Warm wash gradient fades to 0 (reveals the fully light UI)
+  - All ambient animations resume at their normal pace
+  - Status bar text: animates from white to black
+
+Total duration: ~1.0s (feels instantaneous but choreographed)
+```
+
+**Choreographed transition (light → dark):**
+```
+Same phasing but reversed:
+  - Moon icon glows cosmic purple
+  - Cosmic wash expands from toggle (dark purple → transparent)
+  - UI elements crossfade to dark values
+  - Background: warm → cosmic, stars fade in
+  - Settle: cosmic wash fades, dark mode is fully active
+```
+
+**Acceptance Criteria:**
+- [ ] Mode switch feels like a "moment" — not a jarring flash
+- [ ] Warm/cosmic wash creates the illusion of light spreading across the screen
+- [ ] No flickering or partial states visible during transition
+- [ ] UI elements don't flash to system colors at any point
+- [ ] Total transition is ≤ 1.0s (impressive but not slow)
+- [ ] `reduceMotion`: instant crossfade (0.2s, no wash effect)
+- [ ] Status bar text color transitions smoothly (no sharp black↔white flash)
+- [ ] Transition works correctly regardless of which screen the user is on
+
+---
+
+## Epic 10: Accessibility, Polish & Quality Assurance
+
+**Epic Owner:** Quality & Accessibility Lead
+**Priority:** P0 — Accessibility is not a feature; it is a requirement. Polish is not optional; it is what separates good from premium.
+**Goal:** Ensure the Caribbean light mode is accessible to all users, performs flawlessly across all devices, and withstands rigorous quality testing. A premium experience must be premium for everyone.
+
+### Non-Negotiable Standards
+
+- WCAG 2.1 AA compliance minimum across all light mode screens
+- VoiceOver full support with meaningful, contextual labels
+- Dynamic Type respect (all text scales correctly)
+- Reduce Motion respect (all animations have static fallback)
+- Color blindness safe (no information conveyed by color alone)
+- Performance budget: 60fps minimum on all supported devices
+
+---
+
+### Story 10.1: WCAG Compliance & Color Contrast Validation
+
+**As a** user with visual needs (reduced sight, color blindness, or bright-light sensitivity),
+**I want** the Caribbean light mode to be fully accessible,
+**So that** I can enjoy the premium experience regardless of my visual capabilities.
+
+**Story Points:** 8
+**Priority:** P0
+
+#### Subtask 10.1.1: Validate All Text Contrast Ratios
+
+**WCAG 2.1 AA minimum contrast requirements:**
+```
+Normal text (< 18pt or < 14pt bold): 4.5:1 minimum
+Large text (≥ 18pt or ≥ 14pt bold): 3:1 minimum
+UI components and graphical objects: 3:1 minimum
+```
+
+**Validation matrix for Caribbean tokens:**
+
+| Token Pair                         | Usage                  | Target Ratio | Notes                          |
+|------------------------------------|------------------------|-------------|--------------------------------|
+| caribbeanInk on caribbeanCanvas    | Primary text on bg     | ≥ 7:1       | Must be excellent, not just AA |
+| caribbeanInk on caribbeanElevated  | Primary text on cards  | ≥ 7:1       | Cards are primary reading area |
+| caribbeanPlum on caribbeanCanvas   | Secondary text on bg   | ≥ 4.5:1     | Must pass AA                   |
+| caribbeanPlum on caribbeanElevated | Secondary text on card | ≥ 4.5:1     | Common combination             |
+| caribbeanMist on caribbeanCanvas   | Tertiary/hint text     | ≥ 3:1       | Large text only, or non-text   |
+| caribbeanMist on caribbeanElevated | Hint text on card      | ≥ 3:1       | Large text or UI component     |
+| White on caribbeanGradientPrimary  | Button text on CTA     | ≥ 4.5:1     | Buttons must be fully readable |
+| caribbeanInk on caribbeanRecessed  | Input text on tracks   | ≥ 4.5:1     | Progress bars, form fields     |
+
+**Action items if any pair fails:**
+```
+1. Adjust the lighter color to be darker (increase caribbeanPlum richness)
+2. OR adjust the background to be lighter
+3. NEVER reduce contrast to achieve "aesthetics"
+4. All adjustments must be reviewed with the full token system
+5. Document the adjustment and its ripple effects
+```
+
+**Acceptance Criteria:**
+- [ ] All text-on-background combinations meet WCAG 2.1 AA (4.5:1 minimum)
+- [ ] Large text (18pt+) meets 3:1 minimum on all surfaces
+- [ ] CTA button text (white on gradients) meets 4.5:1 across the full gradient range
+- [ ] Primary text (caribbeanInk) achieves 7:1+ on all surfaces (AAA standard)
+- [ ] Tested with Xcode Accessibility Inspector color contrast tool
+- [ ] Tested on an actual device in bright sunlight (real-world validation)
+- [ ] No text contrast is "borderline" — all comfortably exceed minimums
+
+#### Subtask 10.1.2: Color Blindness Safe Design Validation
+
+**Color blindness types to validate against:**
+```
+Protanopia (red-blind, ~1.3% of males):
+  - Risk: caribbeanError red may be indistinguishable from caribbeanSuccess green
+  - Solution: Always pair color with icon (✓ for success, ✗ for error)
+  - Test: Apply protanopia filter and verify all states are distinguishable
+
+Deuteranopia (green-blind, ~5.9% of males):
+  - Risk: Same as protanopia — red/green confusion
+  - Solution: Same icon-pairing requirement
+  - Test: Apply deuteranopia filter and verify
+
+Tritanopia (blue-blind, ~0.02% of population):
+  - Risk: caribbeanGradientPrimary lavender may lose distinction
+  - Solution: Ensure gradient endpoints have sufficient lightness contrast
+  - Test: Apply tritanopia filter and verify key UI is distinguishable
+
+Achromatopsia (complete color blindness, ~0.003%):
+  - Risk: Most Caribbean palette becomes similar grey tones
+  - Solution: Ensure sufficient lightness variety in all states
+  - Test: Desaturate UI completely and verify all states are distinguishable
+```
+
+**Acceptance Criteria:**
+- [ ] No information is conveyed by color alone — always pair with icon, text, or pattern
+- [ ] FlashCard correct/incorrect: icon + color + haptic (triple-coded)
+- [ ] Progress indicators: color + position + text label (triple-coded)
+- [ ] Status badges: color + icon + text (triple-coded)
+- [ ] App tested with all four CVD simulation filters in Xcode
+- [ ] App is fully usable in "Greyscale" accessibility mode
+
+#### Subtask 10.1.3: Dynamic Type & Text Scaling Support
+
+**Dynamic Type requirements:**
+```
+All text in the app must scale correctly with Dynamic Type preference:
+
+Size categories to test:
+  - xSmall through AX5 (Accessibility sizes)
+  - Focus: Large, Extra Large, AX1, AX3
+
+Layout adaptations:
+  - Text truncation: use .lineLimit(nil) where content must be fully readable
+  - Card heights: must grow with text size
+  - Grid layouts: switch from 2-column to 1-column at AX1+
+  - Button heights: minimum 44pt hit target, grows with text
+  - Navigation bar: title truncates at AX3+ (not wraps)
+
+Font usage:
+  - All text uses .font(.headline), .font(.body), etc. — never hardcoded sizes
+  - If a custom size is needed: @ScaledMetric for dynamic scaling
+```
+
+**Acceptance Criteria:**
+- [ ] All text in the app responds to Dynamic Type settings
+- [ ] At AX3 (Accessibility Extra Extra Extra Large), all text is readable
+- [ ] No text is clipped or truncated at any Dynamic Type size (unless explicitly designed)
+- [ ] Cards/containers grow to accommodate larger text
+- [ ] Grid layouts adapt (2 → 1 column) at larger type sizes
+- [ ] Button hit targets remain ≥ 44pt at all type sizes
+- [ ] App tested at xSmall, Large, AX1, AX3, AX5 sizes
+
+---
+
+### Story 10.2: VoiceOver & Assistive Technology Support
+
+**As a** VoiceOver user,
+**I want** the Caribbean light mode to provide meaningful, contextual accessibility labels,
+**So that** I can navigate and use the app efficiently with assistive technology.
+
+**Story Points:** 5
+**Priority:** P0
+
+#### Subtask 10.2.1: Audit VoiceOver Labels for Light Mode Elements
+
+**Key areas to audit:**
+```
+Dashboard:
+  - Stat cards: "Words learned, 1,247" (value + label, not just "1247")
+  - Game cards: "FlashCards practice, 85% accuracy, continue practicing" (contextual)
+  - Activity feed: "Today, FlashCards, 15 minutes, 92% accuracy"
+
+Practice screens:
+  - FlashCard: "Word card showing [word]. Double tap to flip."
+  - WordBuilder: "Letter tile, [letter]. Double tap to place in slot [number]."
+  - Grammar: "Question [number] of [total]. [question text]."
+
+Navigation:
+  - Tab bar: "Dashboard tab, selected", "Categories tab"
+  - Back button: "Go back to [previous screen name]"
+
+Membership:
+  - Tier card: "Pro membership, $9.99 per month, includes [feature list]"
+  - CTA: "Upgrade to Pro, $9.99 per month"
+
+Celebrations:
+  - "Congratulations! Category [name] completed. [stats]. Dismiss."
+```
+
+**Acceptance Criteria:**
+- [ ] Every interactive element has a meaningful accessibility label
+- [ ] Labels include context — not just the visible text but the meaning
+- [ ] Value + label pairs are read correctly (not just numbers)
+- [ ] Button actions are announced ("Double tap to..." where non-obvious)
+- [ ] Celebration overlays are announced and dismissible
+- [ ] VoiceOver rotor headings work for section navigation
+- [ ] No "Button" or "Image" labels without descriptive context
+
+#### Subtask 10.2.2: Ensure Accessibility Trait Correctness
+
+**Traits to validate:**
+```
+.isButton: All tappable elements that trigger actions
+.isHeader: Section headers in scrollable views
+.isSelected: Active tab, active filter, selected option
+.isImage: Decorative images (marked .accessibilityHidden)
+.updatesFrequently: Live counters, timers, progress bars
+.playsSound: Sound-producing interactions (with audio description)
+.allowsDirectInteraction: Drag-and-drop tiles (WordBuilder)
+```
+
+**Acceptance Criteria:**
+- [ ] All buttons are marked `.isButton`
+- [ ] Section headers support VoiceOver rotor navigation
+- [ ] Selected states are announced (tabs, filters, options)
+- [ ] Decorative imagery is hidden from VoiceOver
+- [ ] Live regions update VoiceOver when values change (timers, XP)
+- [ ] Drag-and-drop has alternative VoiceOver interaction
+- [ ] Full app traversal with VoiceOver completes without dead-ends or traps
+
+---
+
+### Story 10.3: Performance & Device Compatibility Testing
+
+**As a** user on any supported device,
+**I want** the Caribbean light mode to perform flawlessly,
+**So that** the premium experience is consistent regardless of my hardware.
+
+**Story Points:** 8
+**Priority:** P0
+
+#### Subtask 10.3.1: Define Performance Budgets
+
+**Performance budget for Caribbean light mode:**
+```
+Rendering:
+  - Frame rate: 60fps minimum on all screens (30fps acceptable during transitions)
+  - Frame drops: ≤ 2 dropped frames per 10-second window
+  - GPU utilization: ≤ 40% during ambient animation (background layers, orbs)
+  - GPU utilization: ≤ 70% during transitions (mode switch, celebrations)
+
+Memory:
+  - Additional memory for light mode tokens: ≤ 2MB over dark mode baseline
+  - Background layer textures: ≤ 8MB total
+  - No memory leaks during repeated dark ↔ light mode switching (100+ cycles)
+
+Battery:
+  - Background animation power draw: ≤ 5% per hour (screen-on, idle)
+  - Total app power draw in light mode: within 10% of dark mode draw
+  - OLED note: light mode inherently uses more power on OLED; no target differential
+
+Launch:
+  - Additional startup time for light mode initialization: ≤ 50ms
+  - First frame render: light mode assets must be available by first frame
+
+Storage:
+  - Light mode specific assets: ≤ 1MB additional (most is code, not assets)
+```
+
+**Acceptance Criteria:**
+- [ ] 60fps maintained on iPhone 12 (minimum target device) across all screens
+- [ ] No frame drops during parallax scrolling, swipe gestures, or tab switching
+- [ ] GPU utilization measured and under budget on low-end target device
+- [ ] 100 dark↔light switches produce no memory leaks (Instruments validation)
+- [ ] App launch time is not meaningfully impacted by light mode support
+- [ ] Battery drain is within 10% of dark mode for comparable usage patterns
+- [ ] All measurements captured in Instruments and documented
+
+#### Subtask 10.3.2: Device Compatibility Matrix
+
+**Full device compatibility testing:**
+```
+Screen sizes:
+  - iPhone SE (3rd gen) — smallest screen, 4.7"
+  - iPhone 15 — standard, 6.1"
+  - iPhone 15 Pro Max — largest phone, 6.7"
+  - iPad mini (6th gen) — compact tablet
+  - iPad Air (5th gen) — standard tablet
+  - iPad Pro 12.9" — largest supported device
+
+iOS versions:
+  - Current iOS (17.x) — primary target
+  - Previous iOS (16.x) — secondary target (if supported)
+
+Special modes:
+  - Split View (iPad)
+  - Slide Over (iPad)
+  - Stage Manager (iPad, macOS)
+
+Environmental:
+  - Bright sunlight (display at max brightness)
+  - Night (display at minimum brightness)
+  - True Tone on/off
+  - Night Shift on/off
+  - Color Filters accessibility (increased contrast, color tints)
+```
+
+**Acceptance Criteria:**
+- [ ] All phones render correctly without overflow, clipping, or misalignment
+- [ ] iPad layouts use available space effectively (not just phone-sized content centered)
+- [ ] Split View maintains usable layout at all split ratios
+- [ ] App is visible and usable in direct sunlight (max brightness, outdoor)
+- [ ] App is comfortable to use in darkness (min brightness, no harsh elements)
+- [ ] True Tone and Night Shift don't cause unintended color shifts
+- [ ] All accessibility color filters produce usable (if not ideal) experiences
+
+---
+
+### Story 10.4: Visual Regression Testing Framework
+
+**As a** developer working on light mode,
+**I want** automated visual regression testing,
+**So that** changes don't accidentally break previously-fixed screens.
+
+**Story Points:** 8
+**Priority:** P1
+
+#### Subtask 10.4.1: Define Snapshot Test Suite
+
+**Screens to capture for visual regression baseline:**
+```
+Critical (must pass before merge):
+  - Dashboard (light mode)
+  - FlashCards game in-progress (light mode)
+  - WordBuilder game in-progress (light mode)
+  - Grammar game in-progress (light mode)
+  - Categories grid (light mode)
+  - Journey timeline (light mode)
+  - Profile overview (light mode)
+  - Membership tiers (light mode)
+  - Language selection (light mode)
+
+States within screens:
+  - Dashboard: with data / empty state / loading skeleton
+  - FlashCards: front of card / back of card / swipe mid-gesture
+  - WordBuilder: tiles scattered / word partially built / word complete
+  - Categories: all unlocked / mixed / filter active
+  - Membership: each tier expanded / comparison table open
+
+Device configurations per snapshot:
+  - iPhone SE (smallest)
+  - iPhone 15 (standard)
+  - Dynamic Type: default + AX1
+  - Light mode only (dark is separate test suite)
+
+Total estimated snapshots: ~60 unique configurations
+```
+
+**Acceptance Criteria:**
+- [ ] Baseline snapshots captured for all critical screens
+- [ ] Snapshot diff tolerance set to 0.1% (catches real changes, ignores anti-aliasing)
+- [ ] CI/CD pipeline runs snapshot tests on every PR touching light mode files
+- [ ] Failed snapshot tests block merge until reviewed and approved
+- [ ] Snapshot test suite runs in < 3 minutes (parallel execution)
+- [ ] Baseline snapshots are version-controlled and reviewable
+
+#### Subtask 10.4.2: Define Manual QA Test Plan
+
+**Manual QA checklist for each release that touches light mode:**
+```
+Visual check (per screen):
+  □ All text is readable with good contrast
+  □ All interactive elements have visible boundaries
+  □ Glass cards have visible structure (border, shadow, or tint)
+  □ Gradients are smooth (no banding)
+  □ Animations are smooth (no jank or stuttering)
+  □ Dark ↔ light switch transitions smoothly
+  □ No hardcoded dark-mode-only colors visible
+
+Interaction check:
+  □ All buttons provide press feedback
+  □ All swipe gestures work correctly
+  □ All toggles animate smoothly
+  □ Tab switching is responsive
+  □ Navigation push/pop works correctly
+  □ Modals present and dismiss correctly
+
+Accessibility check:
+  □ VoiceOver can navigate all screens without getting stuck
+  □ Dynamic Type Large renders correctly
+  □ Dynamic Type AX3 renders correctly (no clipping)
+  □ Reduce Motion provides static alternatives to all animations
+  □ Bold Text setting changes font weights appropriately
+
+Performance check:
+  □ No visible frame drops during scrolling
+  □ Background animations are smooth
+  □ Mode switch doesn't stutter
+  □ Memory usage stable after 5 minutes of mixed use
+```
+
+**Acceptance Criteria:**
+- [ ] Manual QA checklist is documented and versioned
+- [ ] QA team signs off before each release
+- [ ] Regression issues found in QA are added to the checklist
+- [ ] Checklist covers visual, interaction, accessibility, and performance
+- [ ] Average time to complete checklist: < 45 minutes per tester
+
+---
+
+## Appendix A: Implementation Priority Matrix
+
+### Phase 1: Foundation (Weeks 1-2)
+| Epic | Story | Priority | Effort | Impact | Dependencies |
+|------|-------|----------|--------|--------|-------------|
+| 1    | 1.1-1.5 | P0    | L      | Critical | None — all else depends on this |
+| 10   | 10.1  | P0       | M      | Critical | Epic 1 (validates tokens) |
+
+### Phase 2: Core Fixes (Weeks 3-5)
+| Epic | Story | Priority | Effort | Impact | Dependencies |
+|------|-------|----------|--------|--------|-------------|
+| 2    | 2.1-2.4 | P0    | L      | High   | Epic 1 |
+| 3    | 3.1-3.3 | P0    | M      | High   | Epics 1, 2 |
+| 5    | 5.1-5.3 | P0    | XL     | Critical | Epics 1, 2 (fixes invisible elements) |
+
+### Phase 3: Polish & Elevation (Weeks 6-8)
+| Epic | Story | Priority | Effort | Impact | Dependencies |
+|------|-------|----------|--------|--------|-------------|
+| 4    | 4.1-4.5 | P1    | L      | High   | Epics 1, 2, 3 |
+| 6    | 6.1-6.3 | P1    | M      | Medium | Epics 1, 2 |
+| 7    | 7.1-7.4 | P1    | L      | High   | Epics 1, 2 (revenue impact) |
+
+### Phase 4: Premium Experience (Weeks 9-12)
+| Epic | Story | Priority | Effort | Impact | Dependencies |
+|------|-------|----------|--------|--------|-------------|
+| 8    | 8.1-8.3 | P1    | XL     | High   | Epics 1, 4 |
+| 9    | 9.1-9.3 | P1    | L      | High   | Epics 1-8 |
+| 10   | 10.2-10.4 | P0  | L      | Critical | All epics |
+
+### Effort Legend
+- **S** = 1-2 days (1 developer)
+- **M** = 3-5 days (1 developer)
+- **L** = 1-2 weeks (1 developer)
+- **XL** = 2-3 weeks (1-2 developers)
+
+---
+
+## Appendix B: Success Metrics
+
+### Quantitative Metrics
+| Metric | Current (est.) | Target | Measurement |
+|--------|---------------|--------|-------------|
+| Light mode daily active % | ~15% | 35%+ | Analytics: mode preference |
+| Light mode retention (D7) | Unknown | Within 5% of dark mode | Cohort analysis |
+| Membership upgrade rate (light mode users) | Unknown | Within 10% of dark mode | Funnel analytics |
+| App Store reviews mentioning "light mode" negatively | Unknown | 0 per quarter | Review monitoring |
+| Accessibility audit pass rate | Unknown | 100% WCAG AA | Automated + manual |
+| Frame rate (light mode average) | Unknown | ≥ 58fps | Instruments profiling |
+
+### Qualitative Metrics
+| Metric | Method | Frequency |
+|--------|--------|-----------|
+| User satisfaction with light mode | In-app survey (1-5 stars) | Monthly |
+| "Premium feel" perception | A/B test: before/after | One-time post-launch |
+| Design consistency rating | Internal design review | Per epic completion |
+| Accessibility feedback | User support tickets | Ongoing |
+
+---
+
+## Appendix C: Risk Register
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|-----------|--------|------------|
+| Token refactoring breaks dark mode | Medium | Critical | All changes gated by `!isDark` check; shared tokens work in both modes |
+| Performance regression from background layers | Low | High | Performance budget defined; Instruments profiling on every PR |
+| WCAG contrast failures after token adjustment | Low | Critical | Automated contrast testing in CI; manual sunlight testing |
+| Dynamic Type breaks layouts | Medium | High | Snapshot tests at AX1 and AX3 sizes; manual QA checklist |
+| Mode switch transition janks on older devices | Medium | Medium | Respect reduceMotion; test on iPhone 12 (baseline device) |
+| Caribbean palette feels too "different" from dark mode | Low | Medium | User testing; consistent brand elements (logo, icons, layout) bridge the gap |
+| Membership conversion drops | Low | Critical | A/B test light mode membership redesign; monitor funnel closely |
+
+---
+
+## Appendix D: File Reference — Key Files to Modify
+
+| File | Epic | Changes |
+|------|------|---------|
+| `Extensions.swift` | 1 | Add ~40 new Caribbean tokens (surfaces, shadows, borders, gradients) |
+| `ThemeManager.swift` | 1, 9 | Add theme transition choreography support |
+| `GlassDivider.swift` | 2 | Adapt GlassCardBackground, GlassPanelWrapper, AnimatedProgressBar |
+| `LiquidGlassCard.swift` | 2 | Adapt PremiumTransparentCardBackground for light mode |
+| `TierGlassCard.swift` | 2, 7 | Remove forced dark mode; add light mode glass treatment |
+| `ContentView.swift` | 3 | Tab bar and nav bar light enhancements |
+| `DashboardView.swift` | 4 | Stat cards, game cards, activity feed, empty states |
+| `FlashCardsView.swift` | 5 | Fix invisible elements, adapt card flip, swipe trails |
+| `WordBuilderView.swift` | 5 | Fix invisible tiles/slots, adapt color gradients |
+| `GrammarView.swift` | 5 | Fix hardcoded dark panels, adapt question cards |
+| `JourneyView.swift` | 6 | Enhance timeline, milestone cards, level display |
+| `CategoriesView.swift` | 6 | Category cards, search bar, filter pills |
+| `ProfileView.swift` | 7 | Header, calendar, settings panels |
+| `MembershipView.swift` | 7 | Fix comparison toggle, redesign tier cards |
+| `LanguageSelectionView.swift` | 7 | Replace inline RGB with tokens |
+| `LayoutBackgroundView.swift` | 8 | Complete background layer redesign |
+| `BreathingOrbsView.swift` | 8 | Caribbean orb colors and behavior |
+| New: `Animation+Caribbean.swift` | 9 | Animation token library |
+
+---
+
+*Document version: 1.0*
+*Author: Senior Staff UX Designer / Product Owner*
+*Created: comprehensive Caribbean light mode revamp specification*
+*Total stories: 35 | Total subtasks: 65+ | Total acceptance criteria: 250+*

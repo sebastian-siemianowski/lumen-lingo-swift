@@ -128,50 +128,52 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **1.2.1** — Standardize on `chevron.right` with rotation animation as the universal collapse indicator (0° = collapsed, 90° = expanded) — this is Apple's convention in Settings.app and aligns with our existing `CollapsibleSection`
-- **1.2.2** — For `.miniPlayer` style: add a subtle chevron indicator (8pt, low opacity) at the trailing edge of the main row to signal tappability without cluttering the compact layout
-- **1.2.3** — For `.inline` style: use a smaller chevron (8pt) inline with the trigger text, rotating on expand
-- **1.2.4** — For `.tip` style: position chevron inside the glass card header, left of the lightbulb icon area
-- **1.2.5** — Chevron must use the section's accent gradient as `foregroundStyle` when collapsed, and a muted `.secondary` tone when expanded (maintaining the current CollapsibleSection convention)
-- **1.2.6** — Verify chevron rotation animation uses consistent `.spring(response: 0.35, dampingFraction: 0.8)` across all variants
+- [x] **1.2.1** — Standardize on `chevron.right` with rotation animation as the universal collapse indicator (0° = collapsed, 90° = expanded) — this is Apple's convention in Settings.app and aligns with our existing `CollapsibleSection`
+- [x] **1.2.2** — For `.miniPlayer` style: add a subtle chevron indicator (8pt, low opacity) at the trailing edge of the main row to signal tappability without cluttering the compact layout
+- [x] **1.2.3** — For `.inline` style: use a smaller chevron (8pt) inline with the trigger text, rotating on expand
+- [x] **1.2.4** — For `.tip` style: position chevron inside the glass card header, left of the lightbulb icon area
+- [x] **1.2.5** — Chevron must use the section's accent gradient as `foregroundStyle` when collapsed, and a muted `.secondary` tone when expanded (maintaining the current CollapsibleSection convention)
+- [x] **1.2.6** — Verify chevron rotation animation uses consistent `.spring(response: 0.35, dampingFraction: 0.8)` across all variants
 
 #### Acceptance Criteria
 
-- [ ] All 20 collapsible instances use `chevron.right` with rotation
-- [ ] Chevron size scales appropriately per style: 10pt for `.standard`, 12pt for `.hero`, 8pt for `.miniPlayer` and `.inline`, 10pt for `.tip`
-- [ ] Collapsed chevron uses section gradient colors; expanded chevron uses muted color
-- [ ] Rotation animation timing is `.spring(response: 0.35, dampingFraction: 0.8)` everywhere
-- [ ] VoiceOver announces "collapsed" / "expanded" state for every chevron
-- [ ] No instances of `chevron.up` or `chevron.down` remain in collapse contexts
+- [x] All 20 collapsible instances use `chevron.right` with rotation
+- [x] Chevron size scales appropriately per style: 10pt for `.standard`, 12pt for `.hero`, 8pt for `.miniPlayer` and `.inline`, 10pt for `.tip`
+- [x] Collapsed chevron uses section gradient colors; expanded chevron uses muted color
+- [x] Rotation animation timing is `.spring(response: 0.35, dampingFraction: 0.8)` everywhere
+- [x] VoiceOver announces "collapsed" / "expanded" state for every chevron
+- [x] No instances of `chevron.up` or `chevron.down` remain in collapse contexts
 
 ---
 
-### Story 1.3 — Persistent Glass Background Across States
+### Story 1.3 — Collapsed-Only Glass Pill with Seamless Expansion
 
 **As a** user expanding a collapsible section,  
-**I want** the panel to maintain its premium glass background in both states,  
-**So that** the header never looks detached or floating when content appears below.
+**I want** the collapsed header to be a beautiful standalone glass pill, and the expanded state to let the content shine without a double-card wrapper,  
+**So that** the header never looks like a separate card sitting awkwardly on top of the content.
 
-**Context:** Today, `CollapsibleSection` strips its `.ultraThinMaterial` background when expanded — the header row renders without any card backing, relying only on the accent line below for visual separation. This creates a jarring loss of depth: the collapsed state looks like a premium glass card, but expanding it makes the header look naked. Meanwhile, `DashboardView`'s bespoke header keeps its `GlassCardBackground` in both states — proving the pattern works and looks better.
+**Context:** The original approach wrapped header + content in one unified glass card. However, content views (e.g., `overallStatsPanel`, `milestonesSection`, `gameTypeBreakdown`) already provide their own `GlassCardBackground`. Wrapping everything in a second outer glass card created a "double-glass" layered look with a visible divider line between header and content — making the header look like a separate panel sitting on top. The corrected approach: glass background lives only on the collapsed pill (where it looks premium and cohesive), and is removed when expanded so the header becomes a clean section title row that flows naturally above the content's own glass cards. No divider between header and content.
+
+**UX Feedback Applied:** "Panels look like they have a separate header in uncollapsed mode — it looks ugly." The fix removes the outer glass wrapper and divider from the expanded state entirely.
 
 #### Subtasks
 
-- **1.3.1** — Modify `CollapsibleSection` to retain `.ultraThinMaterial` background + gradient stroke in expanded state (not just collapsed)
-- **1.3.2** — When expanded, the glass background should grow to encompass the header + content as one unified card (corner radius remains consistent)
-- **1.3.3** — Add a subtle inner separator between header and content: a 1px horizontal `GlassDivider` with the section's accent gradient at 0.15–0.25 opacity
-- **1.3.4** — The accent line below the header (current "separator" visual) should only appear in expanded state and morph into the inner divider — preserving visual continuity
-- **1.3.5** — Shadow should persist in expanded state but grow slightly (radius: 8 → 12, y: 4 → 6) to reflect the larger card surface
-- **1.3.6** — Test across all 13 JourneyView sections to ensure the unified card doesn't cause visual crowding in the scrolling stack
+- [x] **1.3.1** — Glass background (`.ultraThinMaterial` + Caribbean tint + frosted highlight + section accent + stroke) applies only in collapsed state — wrapping the header as a standalone glass pill
+- [x] **1.3.2** — When expanded, the glass background is removed — the header row renders as a clean, unadorned section title that visually belongs to the content below
+- [x] **1.3.3** — No divider between header and content — the accent divider created a "separate header" feel and is removed entirely
+- [x] **1.3.4** — Header padding is consistent (`14pt` vertical) in both collapsed and expanded states — no padding jump during transitions
+- [x] **1.3.5** — Dual shadows apply only to the collapsed glass pill — no shadow on expanded header (the content views provide their own shadows)
+- [x] **1.3.6** — Test across all 13 JourneyView sections to ensure no double-glass-card layering or visual crowding
 
 #### Acceptance Criteria
 
-- [ ] `CollapsibleSection` shows `.ultraThinMaterial` background in both collapsed and expanded states
-- [ ] Expanded card wraps header + content as one unified glass surface
-- [ ] 1px gradient divider separates header from content inside the card
-- [ ] Shadow grows from `radius: 8, y: 4` (collapsed) to `radius: 12, y: 6` (expanded)
-- [ ] Stroke border persists and wraps the full card in both states
-- [ ] JourneyView's 13 stacked sections have adequate `spacing: 20` between cards — no visual overlap or crowding
-- [ ] Transition between collapsed and expanded is one continuous animation — no flash or jump as background appears
+- [x] `CollapsibleSection` shows glass background ONLY in collapsed state (not expanded)
+- [x] Expanded header is a clean title row — no glass card, no divider, no outer wrapper
+- [x] No "double glass card" layering when content provides its own `GlassCardBackground`
+- [x] Header padding is constant (14pt vertical) — no size jump on expand/collapse
+- [x] Dual shadows only on collapsed pill — vanish smoothly on expand
+- [x] JourneyView's 13 stacked sections have clean visual hierarchy — header row flows into content card below
+- [x] Transition between collapsed glass pill and expanded title row is smooth — no flash or jump
 
 ---
 
@@ -181,52 +183,52 @@ Before defining the future, we must understand the present. The app contains **2
 **I want** collapsed panels to share the same dual-shadow elevation as the rest of the app's glass cards,  
 **So that** they feel like they belong to the same premium material system rather than being visually cheaper.
 
-**Context:** `GlassCardBackground` uses a dual-shadow system: a broad color-tinted lift shadow (`radius: 20, y: 8`) plus a tight grounding shadow (`radius: 6, y: 3`). This is the signature LumenLingo depth feel. But `CollapsibleSection` uses only a single shadow (`radius: 8, y: 4`) — making every collapsible panel feel visually cheaper and flatter than the glass cards around it on the same screen.
+**Context:** `GlassCardBackground` uses a dual-shadow system: a broad color-tinted lift shadow (`radius: 20, y: 8`) plus a tight grounding shadow (`radius: 6, y: 3`). This is the signature LumenLingo depth feel. `CollapsibleSection`'s collapsed glass pill should match this depth system. For `.standard` style, shadows only appear on the collapsed glass pill (expanded state has no outer glass — content provides its own shadows). For other styles (`.miniPlayer`, `.inline`, `.tip`), dual shadows apply in both states via `DualShadowModifier`.
 
 #### Subtasks
 
-- **1.4.1** — Add dual shadow to `CollapsibleSection` matching the `GlassCardBackground` convention: primary lift shadow (`accentColor.opacity(0.10), radius: 16, y: 6`) + grounding shadow (`.black.opacity(0.04), radius: 5, y: 2`)
-- **1.4.2** — In expanded state, increase primary shadow: `radius: 20, y: 8` (matching `GlassCardBackground` exactly)
-- **1.4.3** — For `.miniPlayer` style: use soundscape accent color for the colored shadow component
-- **1.4.4** — For `.hero` style (Dashboard header): match existing `GlassCardBackground` dual shadows exactly
-- **1.4.5** — Light mode shadows: use Caribbean lavender `#C494FC` tint for the lift shadow instead of pure black (matching `GlassCardBackground` light mode convention)
-- **1.4.6** — Verify shadows animate smoothly during expand/collapse transitions — no shadow pop or flicker
+- [x] **1.4.1** — Add dual shadow to `.standard` collapsed glass pill: primary lift shadow (`accentColor.opacity(0.10), radius: 16, y: 6`) + grounding shadow (`.black.opacity(0.04), radius: 5, y: 2`)
+- [x] **1.4.2** — Shadows on `.standard` style are collapsed-only — they vanish with the glass background on expand (content views provide their own)
+- [x] **1.4.3** — For `.miniPlayer` style: use soundscape accent color for the colored shadow component (via `DualShadowModifier`)
+- [x] **1.4.4** — For `.hero` style (Dashboard header): match existing `GlassCardBackground` dual shadows exactly
+- [x] **1.4.5** — Light mode shadows: use Caribbean lavender `#C494FC` tint for the lift shadow instead of pure black (matching `GlassCardBackground` light mode convention)
+- [x] **1.4.6** — Verify shadows animate smoothly during expand/collapse transitions — no shadow pop or flicker
 
 #### Acceptance Criteria
 
-- [ ] All `CollapsibleSection` styles render dual shadows: lift + grounding
-- [ ] Collapsed dual shadow: `accentColor.opacity(0.10), radius: 16, y: 6` + `.black.opacity(0.04), radius: 5, y: 2`
-- [ ] Expanded dual shadow: `accentColor.opacity(0.12), radius: 20, y: 8` + `.black.opacity(0.05), radius: 6, y: 3`
-- [ ] Light mode lift shadow uses `#C494FC` lavender tint
-- [ ] Shadow depth animates with the same spring as the expand/collapse transition
-- [ ] Visual parity with `GlassCardBackground` dual shadow system when viewed side-by-side on Dashboard
+- [x] `.standard` style collapsed glass pill renders dual shadows: lift + grounding
+- [x] `.standard` expanded state has no outer shadows (content provides its own)
+- [x] Collapsed dual shadow: `accentColor.opacity(0.10), radius: 16, y: 6` + `.black.opacity(0.04), radius: 5, y: 2`
+- [x] Light mode lift shadow uses `#C494FC` lavender tint
+- [x] Shadow depth animates with the same spring as the expand/collapse transition
+- [x] Visual parity with `GlassCardBackground` dual shadow system when viewed side-by-side on Dashboard
 
 ---
 
 ### Story 1.5 — Frosted Inner Highlight & Caribbean Tint Layer
 
 **As a** user viewing collapsible panels,  
-**I want** the glass surface to have the same frosted highlight and Caribbean color tinting as the app's other glass cards,  
+**I want** the collapsed glass pill to have the same frosted highlight and Caribbean color tinting as the app's other glass cards,  
 **So that** the panels feel crafted from the same premium material.
 
-**Context:** `GlassCardBackground` has three layers above its `.ultraThinMaterial` base: (1) a Caribbean tint gradient (`#C494FC` lavender → `#F472B6` pink → `#FB923C` warm orange at 0.10–0.18 opacity, light mode only), (2) a frosted inner highlight (white gradient top → clear → subtle bottom, both modes), and (3) an optional `tintColor` overlay. `CollapsibleSection` has none of these — just raw `.ultraThinMaterial` with a color overlay from the section gradient at 0.08 opacity. The difference is immediately visible.
+**Context:** `GlassCardBackground` has three layers above its `.ultraThinMaterial` base: (1) a Caribbean tint gradient (`#C494FC` lavender → `#F472B6` pink → `#FB923C` warm orange at 0.10–0.18 opacity, light mode only), (2) a frosted inner highlight (white gradient top → clear → subtle bottom, both modes), and (3) an optional `tintColor` overlay. The collapsed glass pill replicates these layers so it matches `GlassCardBackground` visually. These layers only appear in the collapsed state — the expanded header has no glass backing.
 
 #### Subtasks
 
-- **1.5.1** — Add frosted inner highlight layer to `CollapsibleSection`: `LinearGradient` from white 0.10 → clear → white 0.03 (dark mode) or white 0.20 → clear → white 0.05 (light mode), top → bottom
-- **1.5.2** — Add Caribbean tint layer in light mode only: `LinearGradient` from `#C494FC` at 0.12 → `#F472B6` at 0.08 → `#FB923C` at 0.06, `topLeading → bottomTrailing` — bringing CollapsibleSection in line with `GlassCardBackground`
-- **1.5.3** — Retain the existing section-colored overlay (`colors[0].opacity(0.08)` in light mode) as an accent tint on top of the Caribbean base — this keeps each section's color identity
-- **1.5.4** — Ensure all glass layers animate synchronously with the expand/collapse transition — no layering pop or opacity flash
-- **1.5.5** — Verify visual coherence across JourneyView's 13 sections (each has different accent colors — test that Caribbean base + section accent tints don't clash)
+- [x] **1.5.1** — Add frosted inner highlight layer to collapsed glass pill: `LinearGradient` from white 0.10 → clear → white 0.03 (dark mode) or white 0.20 → clear → white 0.05 (light mode), top → bottom
+- [x] **1.5.2** — Add Caribbean tint layer in light mode only: `LinearGradient` from `#C494FC` at 0.12 → `#F472B6` at 0.08 → `#FB923C` at 0.06, `topLeading → bottomTrailing`
+- [x] **1.5.3** — Retain the existing section-colored overlay (`colors[0].opacity(0.08)` in light mode) as an accent tint on top of the Caribbean base — this keeps each section's color identity
+- [x] **1.5.4** — All glass layers appear only on the collapsed state and smoothly animate away on expand
+- [x] **1.5.5** — Verify visual coherence across JourneyView's 13 sections (each has different accent colors — test that Caribbean base + section accent tints don't clash)
 
 #### Acceptance Criteria
 
-- [ ] Frosted inner highlight renders identically to `GlassCardBackground`'s highlight layer
-- [ ] Caribbean tint gradient appears in light mode across all `CollapsibleSection` instances
-- [ ] Section accent color overlay still distinguishes sections from one another
-- [ ] Glass layers composite correctly in both dark and light mode
-- [ ] No opacity flash or layer pop during expand/collapse animations
-- [ ] Visual A/B comparison between `CollapsibleSection` and `GlassCardBackground` shows matched material quality
+- [x] Frosted inner highlight renders on collapsed pill identically to `GlassCardBackground`'s highlight layer
+- [x] Caribbean tint gradient appears in light mode on collapsed pill
+- [x] Section accent color overlay still distinguishes sections from one another
+- [x] Glass layers appear only in collapsed state — no double-stacking with content's own glass
+- [x] No opacity flash or layer pop during expand/collapse animations
+- [x] Visual A/B comparison between collapsed `CollapsibleSection` pill and `GlassCardBackground` shows matched material quality
 
 ---
 

@@ -201,8 +201,12 @@ struct MembershipView: View {
                         .font(.subheadline.bold())
                         .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk)
                     Image(systemName: "chevron.right")
-                        .font(.system(size: 10, weight: .bold))
-                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                        .font(.system(size: 8, weight: .bold))
+                        .foregroundStyle(
+                            isComparisonCollapsed
+                                ? AnyShapeStyle(LinearGradient(colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")], startPoint: .leading, endPoint: .trailing))
+                                : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
+                        )
                         .rotationEffect(.degrees(isComparisonCollapsed ? 0 : 90))
                         .animation(.spring(response: 0.35, dampingFraction: 0.8), value: isComparisonCollapsed)
                 }

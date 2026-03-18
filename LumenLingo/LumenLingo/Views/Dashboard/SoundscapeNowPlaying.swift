@@ -94,6 +94,17 @@ struct SoundscapeNowPlaying: View {
 
             // Transport controls
             transportControls(soundscape)
+
+            // Subtle collapse/expand chevron
+            Image(systemName: "chevron.right")
+                .font(.system(size: 8, weight: .bold))
+                .foregroundStyle(
+                    isCollapsed
+                        ? AnyShapeStyle(LinearGradient(colors: Array(soundscape.previewColors.prefix(2)), startPoint: .top, endPoint: .bottom))
+                        : AnyShapeStyle(Color.white.opacity(0.2))
+                )
+                .rotationEffect(.degrees(isCollapsed ? 0 : 90))
+                .animation(.spring(response: 0.35, dampingFraction: 0.8), value: isCollapsed)
         }
         .padding(.horizontal, 14)
         .padding(.vertical, 12)
