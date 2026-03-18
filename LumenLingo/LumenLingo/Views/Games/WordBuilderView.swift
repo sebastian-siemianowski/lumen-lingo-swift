@@ -163,6 +163,7 @@ struct WordBuilderView: View {
         let timeSpent = practiceTracker.endSession()
         guard correctCount + wrongCount > 0 else { return }
         let progressService = ProgressService(modelContext: modelContext)
+        let langPref = languagePrefs.first
         let result = GameSessionResult(
             gameType: .wordBuilder,
             categoryId: categoryId,
@@ -171,6 +172,8 @@ struct WordBuilderView: View {
             correctAnswers: correctCount,
             totalQuestions: correctCount + wrongCount,
             timeSpent: timeSpent,
+            sourceLanguage: langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue,
+            targetLanguage: langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue,
             xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
@@ -919,6 +922,7 @@ struct WordBuilderView: View {
         let timeSpent = practiceTracker.endSession()
         lastTimeSpent = timeSpent
         let progressService = ProgressService(modelContext: modelContext)
+        let langPref = languagePrefs.first
         let result = GameSessionResult(
             gameType: .wordBuilder,
             categoryId: categoryId,
@@ -927,6 +931,8 @@ struct WordBuilderView: View {
             correctAnswers: correctCount,
             totalQuestions: words.count,
             timeSpent: timeSpent,
+            sourceLanguage: langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue,
+            targetLanguage: langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue,
             xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)

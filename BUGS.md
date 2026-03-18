@@ -24,7 +24,7 @@
 | E9 | [Onboarding Mobile Optimization](#epic-9-onboarding-mobile-optimization) | P0 | 4 | 18 | ✅ Done |
 | E10 | [Game Completion Flow](#epic-10-game-completion-flow) | P1 | 4 | 18 | ✅ Done |
 | E11 | [Grammar Challenge UX Overhaul](#epic-11-grammar-challenge-ux-overhaul) | P1 | 5 | 26 | ✅ Done |
-| E12 | [Recent Activity Cross-Language Support](#epic-12-recent-activity-cross-language-support) | P1 | 3 | 13 |
+| E12 | [Recent Activity Cross-Language Support](#epic-12-recent-activity-cross-language-support) | P1 | 3 | 13 | ✅ Done |
 | E13 | [Word Constructor Polish](#epic-13-word-constructor-polish) | P1 | 3 | 13 |
 | E14 | [Royal Paywall Visual Integrity](#epic-14-royal-paywall-visual-integrity) | P0 | 3 | 13 | ✅ Done |
 | E15 | [Haptic Feedback Integration](#epic-15-haptic-feedback-integration) | P1 | 4 | 18 |
@@ -1664,7 +1664,7 @@
 **ID:** BUG-043  
 **Priority:** P1  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** user with activity across multiple language pairs,  
 **I want** the Recent Activity section to show records from my currently active language pair,  
@@ -1672,12 +1672,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: The Recent Activity query filters `GameProgressRecord` by the currently active language pair (e.g., `sourceLanguage == "english" && targetLanguage == "spanish"`).
-- [ ] AC2: If `GameProgressRecord` doesn't have language pair fields, those fields are added to the model with a migration plan for existing data.
-- [ ] AC3: When switching language pairs, the activity section updates immediately to show records from the new pair.
-- [ ] AC4: If the active language pair has no activity records, show a friendly empty state: "No activity yet for [Language] → [Language]. Start a game to see your progress here!" with a play button CTA.
-- [ ] AC5: The query still limits to the most recent 5 records after filtering.
-- [ ] AC6: No existing records are lost during the migration — records without language pair data are treated as belonging to the previous default pair (English → Spanish).
+- [x] AC1: The Recent Activity query filters `GameProgressRecord` by the currently active language pair (e.g., `sourceLanguage == "english" && targetLanguage == "spanish"`). — Client-side filter on `recentProgress` using `currentSourceRaw`/`currentTargetRaw`.
+- [x] AC2: If `GameProgressRecord` doesn't have language pair fields, those fields are added to the model with a migration plan for existing data. — Fields already existed; no migration needed.
+- [x] AC3: When switching language pairs, the activity section updates immediately to show records from the new pair. — `@Query` reactivity + client-side filter updates automatically.
+- [x] AC4: If the active language pair has no activity records, show a friendly empty state: "No activity yet for [Language] → [Language]. Start a game to see your progress here!" with a play button CTA. — `recentActivityEmptyState` with flag icons and encouraging text.
+- [x] AC5: The query still limits to the most recent 5 records after filtering. — `.prefix(5)` after language filter.
+- [x] AC6: No existing records are lost during the migration — records without language pair data are treated as belonging to the previous default pair (English → Spanish). — Fields already existed with defaults.
 
 #### Subtasks
 
@@ -1697,7 +1697,7 @@
 **ID:** BUG-044  
 **Priority:** P2  
 **Points:** 5  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** multilingual learner,  
 **I want** an option to view Recent Activity across ALL language pairs at once,  
@@ -1705,12 +1705,12 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: A segmented control or toggle appears above the Recent Activity section: "This Language" (default) | "All Languages".
-- [ ] AC2: "This Language" shows filtered results (Story 12.1 behavior).
-- [ ] AC3: "All Languages" shows the most recent 10 records across all language pairs, with a language pair badge on each row (e.g., "EN→ES" or flag icons).
-- [ ] AC4: The toggle state persists within the session but resets to "This Language" on app relaunch.
-- [ ] AC5: The language pair badge uses the same flag/label convention as the language selection view.
-- [ ] AC6: Tapping a record from a different language pair shows a confirmation: "This game was in [Language Pair]. Switch to it and play?" — with options to switch or cancel.
+- [x] AC1: A segmented control or toggle appears above the Recent Activity section: "This Language" (default) | "All Languages". — `Picker` with `.segmented` style bound to `showAllLanguages`.
+- [x] AC2: "This Language" shows filtered results (Story 12.1 behavior). — Uses language pair filter from Story 12.1.
+- [x] AC3: "All Languages" shows the most recent 10 records across all language pairs, with a language pair badge on each row (e.g., "EN→ES" or flag icons). — `recentProgress.prefix(10)` with `LanguagePairBadge` on each row.
+- [x] AC4: The toggle state persists within the session but resets to "This Language" on app relaunch. — `@State` property, not persisted.
+- [x] AC5: The language pair badge uses the same flag/label convention as the language selection view. — `LanguagePairBadge` uses `SupportedLanguage.flag` (same as `CountryFlagView`).
+- [x] AC6: Tapping a record from a different language pair shows a confirmation: "This game was in [Language Pair]. Switch to it and play?" — with options to switch or cancel. — `.confirmationDialog` with `switchLanguageAndNavigate`.
 
 #### Subtasks
 
@@ -1729,7 +1729,7 @@
 **ID:** BUG-045  
 **Priority:** P2  
 **Points:** 3  
-**Status:** 🔴 Open
+**Status:** � Done
 
 **As a** developer,  
 **I want** a reusable `LanguagePairBadge` component,  
@@ -1737,11 +1737,11 @@
 
 #### Acceptance Criteria
 
-- [ ] AC1: A `LanguagePairBadge` view accepts `sourceLanguage: String` and `targetLanguage: String`.
-- [ ] AC2: It displays either flag emojis (🇬🇧→🇪🇸) or short codes ("EN→ES") based on a preference/space constraint.
-- [ ] AC3: It uses a compact capsule layout with `.ultraThinMaterial` background and tier-colored border.
-- [ ] AC4: It has a `.compact` and `.full` display mode: compact shows "EN→ES", full shows "English → Spanish".
-- [ ] AC5: The badge is accessible: VoiceOver reads "English to Spanish" regardless of display mode.
+- [x] AC1: A `LanguagePairBadge` view accepts `sourceLanguage: String` and `targetLanguage: String`. — `LanguagePairBadge.swift` in `Views/Shared/`.
+- [x] AC2: It displays either flag emojis (🇬🇧→🇪🇸) or short codes ("EN→ES") based on a preference/space constraint. — Compact mode shows flag emojis with arrow; falls back to country codes.
+- [x] AC3: It uses a compact capsule layout with `.ultraThinMaterial` background and tier-colored border. — `Capsule().fill(.ultraThinMaterial)` with padding.
+- [x] AC4: It has a `.compact` and `.full` display mode: compact shows "EN→ES", full shows "English → Spanish". — `DisplayMode` enum with `.compact` and `.full` cases.
+- [x] AC5: The badge is accessible: VoiceOver reads "English to Spanish" regardless of display mode. — `.accessibilityLabel` set with English names.
 
 #### Subtasks
 

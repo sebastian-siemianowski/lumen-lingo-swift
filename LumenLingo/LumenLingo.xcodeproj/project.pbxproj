@@ -130,6 +130,7 @@
 		8FEBFEC7B5CC7FC50DC881CB /* SoundControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B566D3C1FF38C5EE6E7F5DE0 /* SoundControlsView.swift */; };
 		901656D652B1ADE4FE9C3CC9 /* Amazon-Rainforest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2B970F6867A17435C10D64B2 /* Amazon-Rainforest.m4a */; };
 		907E42B652EA987ACCC8A127 /* InsightsDashboardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B838FDC1EFCA200B83B73377 /* InsightsDashboardWidget.swift */; };
+		91B58356CEBA96D16A113AF0 /* LanguagePairBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566E812340AC148093E2BF00 /* LanguagePairBadge.swift */; };
 		91C07042588BEC4D17477119 /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA8FA91B2C310EC779DC40 /* PerformanceMonitor.swift */; };
 		943EECD12689FFF2888436EA /* SpiralHaloPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = DB8D135B47E89CA45DF67B97 /* SpiralHaloPreset.metal */; };
 		94B616D28FC3A7C26CDA94C5 /* Tokyo-Night-Street.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8A7CB0448DE947B938B41FF7 /* Tokyo-Night-Street.m4a */; };
@@ -209,6 +210,7 @@
 		E167F25A707E33B4A813EAB2 /* grammar_polish_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = E56328BCC55D6C38A861C0F9 /* grammar_polish_ukrainian.json */; };
 		E36268A61FC90300A7AB119F /* PremiumCTAButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62631C787DB4298AAE4CD46A /* PremiumCTAButtonTests.swift */; };
 		E374714E6F741D49D839BDB9 /* UpgradePromptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A9F40ACA962BFEDF0C55D /* UpgradePromptManager.swift */; };
+		E3EB5B87F5A1AF7284DE0270 /* LumenLingoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6B49807212013A7E3480A /* LumenLingoIcon.png */; };
 		E4512FE2996AF9231CC0892B /* PDFSuccessOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCDEC29F8529A0609045459 /* PDFSuccessOverlayView.swift */; };
 		E5C95676BF77324EABAACEC0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9BA72516085422014F289 /* ProfileView.swift */; };
 		E6EF650284231578942E29AD /* TrialCountdownBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D7C1C1A49A7020F5541B2 /* TrialCountdownBanner.swift */; };
@@ -259,6 +261,7 @@
 		0B6BC346843C39C8CEC01294 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		0C637EFA05F05EEE861FA130 /* grammar_polish_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_arabic.json; sourceTree = "<group>"; };
 		0C84297D92B80DD22BB1E11C /* BreathingOrbsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingOrbsSettingsView.swift; sourceTree = "<group>"; };
+		0DE6B49807212013A7E3480A /* LumenLingoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LumenLingoIcon.png; sourceTree = "<group>"; };
 		0E8D26ACC3A64927138AB641 /* flashcards_polish_ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_ukrainian.json; sourceTree = "<group>"; };
 		0EC2B96594BDF217EB44C9F8 /* wordbuilder_arabic_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_arabic_english.json; sourceTree = "<group>"; };
 		0F07D558A1E5F26403A7997C /* flashcards_ukrainian_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_ukrainian_english.json; sourceTree = "<group>"; };
@@ -334,6 +337,7 @@
 		53B3BC180E8CA6F328FF7C7F /* OfflineBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineBanner.swift; sourceTree = "<group>"; };
 		5477D11222E706CD9576D790 /* XPMultiplierBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPMultiplierBadge.swift; sourceTree = "<group>"; };
 		55B9BA72516085422014F289 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		566E812340AC148093E2BF00 /* LanguagePairBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePairBadge.swift; sourceTree = "<group>"; };
 		57E4B1517FF079FD28CE5508 /* CelestialStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CelestialStars.metal; sourceTree = "<group>"; };
 		5881A9A303C2E0066D3F9606 /* PremiumCTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumCTAButton.swift; sourceTree = "<group>"; };
 		59A8193CDA27C5F43BF910C5 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
@@ -490,6 +494,7 @@
 				3A219C85D0E9B1BFA8C5BD9F /* Info.plist */,
 				E667ED645B5F750955DEA3B5 /* LumenLingoApp.swift */,
 				3240E9048141E87CE98F1922 /* Extensions */,
+				43B760BAFFED48686DECB1B5 /* Images */,
 				AA5EB74A9C96AEB80BAA2339 /* Models */,
 				C8656804D7A531036C5B7D17 /* Resources */,
 				A9A9657C641B743EC1A26DE4 /* Services */,
@@ -595,6 +600,7 @@
 				0902F86CEF9AE637376DB143 /* AdventureCTAButton.swift */,
 				796514956D77ECBB8603FE69 /* FeatureTooltip.swift */,
 				C7EC466E954463C21BDA8D3C /* GlassDivider.swift */,
+				566E812340AC148093E2BF00 /* LanguagePairBadge.swift */,
 				B70A4CC223AB0F0CBD300360 /* LiquidGlassCard.swift */,
 				6894E9DF06377B29632C3002 /* LiquidGlassPagination.swift */,
 				9E8FCD7819D46F40F48FCD4D /* LockedFeatureIndicator.swift */,
@@ -695,6 +701,14 @@
 				8D758E0FCC818F2BA8CE747E /* UpgradePromptView.swift */,
 			);
 			path = Membership;
+			sourceTree = "<group>";
+		};
+		43B760BAFFED48686DECB1B5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6B49807212013A7E3480A /* LumenLingoIcon.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		45D5CA36E1AA924A54E564D1 /* german_spanish */ = {
@@ -1188,6 +1202,7 @@
 				B5F52197E16F76AF71336B1B /* Dominican-Beach-1.m4a in Resources */,
 				9CFD3E256C48BC1F33EB0641 /* Dominican-Beach-2.m4a in Resources */,
 				E889884403B0D07D45EB31C6 /* Japanese-Bamboo-Forest.m4a in Resources */,
+				E3EB5B87F5A1AF7284DE0270 /* LumenLingoIcon.png in Resources */,
 				2F46AAA7A365380EDAAAA25F /* Midnight-Jazz-Piano.m4a in Resources */,
 				43F804CCAE58040657DB23B1 /* Mountain-Campfire.m4a in Resources */,
 				6D41BF4356271CBF59F05DCF /* Observatory-Night-1.m4a in Resources */,
@@ -1344,6 +1359,7 @@
 				D00AB6E60F7E92B4B1868126 /* JourneyView.swift in Sources */,
 				0FB9ECCFE323936072D44022 /* LagoonNebulaPreset.metal in Sources */,
 				EB3CBFD5BF6CCC0F3FE21A0C /* LagoonStars.metal in Sources */,
+				91B58356CEBA96D16A113AF0 /* LanguagePairBadge.swift in Sources */,
 				4956F06FBFC99E1E72B80A06 /* LanguagePairUpgradeSheet.swift in Sources */,
 				661A719FB70972A35AD6E977 /* LanguageSelectionView.swift in Sources */,
 				74435F6A6EC5F4E3D5C6EA1C /* LayoutBackgroundView.swift in Sources */,

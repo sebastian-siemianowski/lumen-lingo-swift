@@ -28,6 +28,8 @@ struct DashboardView: View {
     @State private var adventureIconPulse: CGFloat = 0
     @State private var tierIconAppeared = false
     @State private var showExpiredSheet = false
+    @State private var showAllLanguages = false
+    @State private var crossLanguageRecord: GameProgressRecord?
 
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
@@ -54,6 +56,14 @@ struct DashboardView: View {
 
     private var currentTargetCode: String {
         languagePrefs.first.flatMap { SupportedLanguage(rawValue: $0.targetLanguage) }?.countryCode ?? "ES"
+    }
+
+    private var currentSourceRaw: String {
+        languagePrefs.first?.sourceLanguage ?? "english"
+    }
+
+    private var currentTargetRaw: String {
+        languagePrefs.first?.targetLanguage ?? "spanish"
     }
 
     var body: some View {
@@ -577,44 +587,128 @@ struct DashboardView: View {
     // MARK: - Recent Activity
 
     private var recentActivitySection: some View {
-        let activities = Array(recentProgress.prefix(5))
+        let filtered: [GameProgressRecord] = if showAllLanguages {
+            Array(recentProgress.prefix(10))
+        } else {
+            Array(recentProgress.filter {
+                $0.sourceLanguage == currentSourceRaw && $0.targetLanguage == currentTargetRaw
+            }.prefix(5))
+        }
 
-        return Group {
-            if !activities.isEmpty {
-                VStack(spacing: 12) {
-                    HStack {
-                        Text("Recent Activity")
-                            .font(.system(size: 16, weight: .bold))
-                            .foregroundStyle(
-                                LinearGradient(
-                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
-                            )
-                        Spacer()
-                    }
+        return VStack(spacing: 12) {
+            HStack {
+                Text("Recent Activity")
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                Spacer()
+            }
 
-                    VStack(spacing: 8) {
-                        ForEach(activities) { activity in
-                            activityRow(activity)
-                                .contentShape(Rectangle())
-                                .dashboardPress(
-                                    accentColor: GameCardColorScheme.forType(activity.gameTypeEnum ?? .flashCards).primary,
-                                    scale: 0.965
-                                ) {
+            Picker("", selection: $showAllLanguages) {
+                Text("This Language").tag(false)
+                Text("All Languages").tag(true)
+            }
+            .pickerStyle(.segmented)
+
+            if filtered.isEmpty {
+                recentActivityEmptyState
+            } else {
+                VStack(spacing: 8) {
+                    ForEach(filtered) { activity in
+                        activityRow(activity, showBadge: showAllLanguages)
+                            .contentShape(Rectangle())
+                            .dashboardPress(
+                                accentColor: GameCardColorScheme.forType(activity.gameTypeEnum ?? .flashCards).primary,
+                                scale: 0.965
+                            ) {
+                                if showAllLanguages && isCrossLanguage(activity) {
+                                    crossLanguageRecord = activity
+                                } else {
                                     navigateToGame(for: activity)
                                 }
-                        }
+                            }
                     }
-                    .padding(16)
-                    .background(GlassCardBackground())
+                }
+                .padding(16)
+                .background(GlassCardBackground())
+            }
+        }
+        .confirmationDialog(
+            crossLanguageDialogTitle,
+            isPresented: .init(
+                get: { crossLanguageRecord != nil },
+                set: { if !$0 { crossLanguageRecord = nil } }
+            ),
+            titleVisibility: .visible
+        ) {
+            if let record = crossLanguageRecord {
+                Button("Switch & Play") {
+                    switchLanguageAndNavigate(record)
+                }
+                Button("Cancel", role: .cancel) {
+                    crossLanguageRecord = nil
                 }
             }
         }
     }
 
-    private func activityRow(_ record: GameProgressRecord) -> some View {
+    private var crossLanguageDialogTitle: String {
+        guard let record = crossLanguageRecord,
+              let src = SupportedLanguage(rawValue: record.sourceLanguage),
+              let tgt = SupportedLanguage(rawValue: record.targetLanguage) else {
+            return "Switch language pair?"
+        }
+        return "This game was in \(src.englishName) → \(tgt.englishName). Switch to it and play?"
+    }
+
+    private func isCrossLanguage(_ record: GameProgressRecord) -> Bool {
+        record.sourceLanguage != currentSourceRaw || record.targetLanguage != currentTargetRaw
+    }
+
+    private func switchLanguageAndNavigate(_ record: GameProgressRecord) {
+        if let pref = languagePrefs.first {
+            pref.sourceLanguage = record.sourceLanguage
+            pref.targetLanguage = record.targetLanguage
+        }
+        crossLanguageRecord = nil
+        navigateToGame(for: record)
+    }
+
+    private var recentActivityEmptyState: some View {
+        VStack(spacing: 16) {
+            HStack(spacing: 6) {
+                CountryFlagView(countryCode: currentSourceCode, size: 20)
+                Image(systemName: "arrow.right")
+                    .font(.system(size: 11, weight: .medium))
+                    .foregroundStyle(.white.opacity(0.4))
+                CountryFlagView(countryCode: currentTargetCode, size: 20)
+            }
+            .padding(.top, 4)
+
+            VStack(spacing: 6) {
+                Text("No activity yet")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk)
+
+                Text("Start a game in \(currentLanguagePair) to see your progress here!")
+                    .font(.system(size: 12))
+                    .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 24)
+        .padding(.horizontal, 16)
+        .background(GlassCardBackground())
+    }
+
+    private func activityRow(_ record: GameProgressRecord, showBadge: Bool = false) -> some View {
         let type = record.gameTypeEnum ?? .flashCards
         let colors = GameCardColorScheme.forType(type)
 
@@ -637,10 +731,19 @@ struct DashboardView: View {
             }
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("\(type.displayName) · \(record.categoryName)")
-                    .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
-                    .lineLimit(1)
+                HStack(spacing: 4) {
+                    Text("\(type.displayName) · \(record.categoryName)")
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundStyle(isDark ? .white : .caribbeanInk)
+                        .lineLimit(1)
+
+                    if showBadge {
+                        LanguagePairBadge(
+                            sourceLanguage: record.sourceLanguage,
+                            targetLanguage: record.targetLanguage
+                        )
+                    }
+                }
 
                 HStack(spacing: 4) {
                     Text("+\(record.score) XP")

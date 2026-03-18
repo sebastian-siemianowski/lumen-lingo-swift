@@ -192,6 +192,7 @@ struct FlashCardsView: View {
         let timeSpent = practiceTracker.endSession()
         guard correctCount + wrongCount > 0 else { return }
         let progressService = ProgressService(modelContext: modelContext)
+        let langPref = languagePrefs.first
         let result = GameSessionResult(
             gameType: .flashCards,
             categoryId: categoryId,
@@ -200,6 +201,8 @@ struct FlashCardsView: View {
             correctAnswers: correctCount,
             totalQuestions: correctCount + wrongCount,
             timeSpent: timeSpent,
+            sourceLanguage: langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue,
+            targetLanguage: langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue,
             xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
@@ -1098,6 +1101,7 @@ struct FlashCardsView: View {
 
         // Save progress
         let progressService = ProgressService(modelContext: modelContext)
+        let langPref = languagePrefs.first
         let result = GameSessionResult(
             gameType: .flashCards,
             categoryId: categoryId,
@@ -1106,6 +1110,8 @@ struct FlashCardsView: View {
             correctAnswers: correctCount,
             totalQuestions: words.count,
             timeSpent: timeSpent,
+            sourceLanguage: langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue,
+            targetLanguage: langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue,
             xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
