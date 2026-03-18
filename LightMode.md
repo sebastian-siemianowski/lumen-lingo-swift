@@ -30,23 +30,37 @@
 
 LumenLingo's dark mode (Cosmic) is deeply premium — a rich universe of purples, deep voids, and ethereal glass morphism that makes users feel they're learning inside a galaxy. The Caribbean light mode, by contrast, feels like an afterthought: a bright lavender wash with inconsistent opacity values, invisible UI elements (white-on-white), and missing atmospheric depth. Users who prefer light mode deserve the same emotional response — that feeling of luxury, warmth, and delight.
 
-### The Vision: "Golden Hour on a Caribbean Shore"
+### The Vision: "A Dominican Republic Morning — Barefoot on Warm Sand, Turquoise Water at Your Feet"
 
-Imagine the 20 minutes before sunset on a Caribbean island. The sky shifts from deep cerulean through rose gold to warm amber. The light is impossibly soft, casting everything in a luminous glow. The water catches light like liquid pearl. Every surface shimmers with warmth.
+Close your eyes. You're on Playa Bávaro at 9 AM. The sand beneath your feet is warm, not hot — a creamy gold that holds the sun's memory. The water is that impossible Caribbean turquoise — not blue, not green, but that luminous aqua that only exists where the Atlantic meets coral reefs. Palm fronds sway lazily overhead, casting dappled shadows of tropical green across the sand. Bougainvillea climbs a nearby railing in vivid coral-pink. The sky is a soft, endless azure. Everything feels alive, warm, and saturated with color.
 
-**This is our target emotional space.**
+**This — not a white screen with a lavender tint — is our target emotional space.**
+
+Light mode does NOT mean "everything is white." The Dominican Republic is bursting with color: the turquoise of Samaná Bay, the warm gold of Punta Cana sand, the lush green of El Yunque rainforest, the coral-pink of tropical flowers, the amber glow of afternoon light on colonial buildings. Our light mode should feel like being INSIDE that world — surrounded by warm, living color, not staring at a bleached-out interface.
 
 The revamped Caribbean light mode will be:
 
-- **Luminous, not flat** — Surfaces glow with internal warmth, not just sit there
-- **Layered, not washed out** — Multiple depth levels create richness and dimension
-- **Warm, not sterile** — Every element carries the Caribbean sunset warmth
-- **Refined, not busy** — Restraint in decoration, generosity in spacing and breathing room
-- **Consistent, not patchy** — Every single element adapts gracefully, no white-on-white ghosts
+- **Tropical, not sterile** — Backgrounds carry the warmth of sand, the coolness of ocean water, the vibrancy of island life. White space is "beach white" — warm, creamy, sun-kissed — never cold, clinical, or flat
+- **Ocean-infused** — Turquoise and teal are our signature. They appear in accents, gradients, progress indicators, and subtle background washes. Users should subconsciously feel "Caribbean water" throughout
+- **Lush and layered** — Multiple depth levels create richness: warm sand surfaces, frosted sea-glass cards, turquoise accent lines, coral highlights. The eye has TEXTURE and COLOR to rest on, not flat white emptiness
+- **Sun-drenched, not washed out** — Surfaces glow with warm light, as if the Caribbean sun is illuminating the interface from behind. Shadows are warm amber and soft teal, never cold grey
+- **Vibrant yet refined** — The palette is rich (turquoise, coral, gold, palm green, warm sand) but expressed with restraint. Think luxury Caribbean resort, not theme park
+- **Consistent and immersive** — Every element, from the tiniest divider to the largest background, carries the island warmth. No white-on-white ghosts, no cold sterile panels, no "forgot to design this" moments
+
+### The Five Senses of Caribbean Light Mode
+
+| Sense | Dark Mode (Cosmic) | Light Mode (Caribbean) |
+|-------|-------------------|----------------------|
+| **Sight** | Deep void, nebula glow, starlight | Turquoise water, warm sand, tropical foliage, golden sunlight |
+| **Touch** | Smooth obsidian, cool metal | Warm sand, polished sea glass, driftwood, coral |
+| **Temperature** | Cool, expansive, night air | Warm, enveloping, tropical morning |
+| **Mood** | Awe, mystery, cosmic wonder | Joy, warmth, island paradise, relaxation |
+| **Aspiration** | "I'm exploring the universe" | "I'm learning on a tropical island" |
 
 ### Success Metric
 
-> "I actually prefer light mode now." — Target user sentiment
+> "I actually prefer light mode — it feels like a Caribbean vacation." — Target user sentiment
+> "The light mode isn't just 'not dark' — it has its own beautiful identity." — Design review sentiment
 
 ---
 
@@ -78,20 +92,26 @@ The root cause is systematic: components built for dark mode using `.white.opaci
 
 ## Design Principles
 
-### 1. "Warm Glass, Not Cold Plastic"
-Every surface in light mode should feel like light passing through warm-tinted glass — translucent, layered, alive. Never flat, never opaque, never sterile. The glass should carry the Caribbean sunset within it.
+### 1. "Sea Glass, Not Flat Glass"
+Every surface in light mode should feel like light passing through warm Caribbean sea glass — translucent, textured, carrying the memory of turquoise water and golden sand. Cards are frosted with an aqua-warm undertone. Panels feel like polished driftwood and smoothed coral. Never flat, never opaque, never cold white plastic.
 
-### 2. "Depth Through Light, Not Shadow"
-In dark mode, depth comes from darkness (voids, deep shadows). In light mode, depth comes from luminosity gradients — brighter surfaces are "closer," subtly tinted surfaces are "further." Shadows exist but are soft, warm, and colored (lavender/rose), never harsh grey or black.
+### 2. "Ocean Depth, Not Shadow Depth"
+In dark mode, depth comes from cosmic darkness. In light mode, depth comes from the Caribbean ocean: the way shallow turquoise water transitions into deeper teal, the way sand meets sea in a luminous gradient. Brighter surfaces are "shallow water" (warm, sunlit), tinted surfaces are "deeper water" (cooler, richer). Shadows are soft teal and warm amber, never harsh grey.
 
-### 3. "One Palette, Infinite Harmonics"
-The Caribbean palette has three anchor points: lavender (`#C494FC`), rose (`#F472B6`), and amber (`#FB923C`). Every UI element should derive its light-mode identity from these three, creating visual harmony without monotony.
+### 3. "Five Colors of the Island"
+The Caribbean palette has FIVE anchor points — not just three. These are the defining colors of the Dominican Republic:
+- **Turquoise** (`#0EA5E9` → `#06B6D4`) — The ocean. The signature. The soul.
+- **Warm Sand** (`#FDE68A` → `#F59E0B`) — Beach gold, warm underfoot, sun-kissed surfaces
+- **Coral Pink** (`#FB7185` → `#F472B6`) — Bougainvillea, tropical flowers, sunset warmth
+- **Palm Green** (`#34D399` → `#10B981`) — Lush tropical foliage, growth, freshness
+- **Sunset Lavender** (`#C494FC` → `#A78BFA`) — The magic hour sky, brand signature
+Every UI element should derive its identity from these five, creating a rich tropical visual story — not a monotone lavender wash.
 
 ### 4. "Invisible is Unacceptable"
-If a user can't see an element, we've failed. Every interactive element must have sufficient contrast. Every decorative element must be intentionally visible or intentionally absent — never accidentally invisible.
+If a user can't see an element, we've failed. Every interactive element must have sufficient contrast. Every decorative element must be intentionally visible or intentionally absent — never accidentally invisible. Light mode backgrounds should carry enough warm COLOR that elements have something to sit on, not float over white emptiness.
 
-### 5. "Earned Richness"
-Premium doesn't mean more stuff. It means every detail has been considered. Generous white space, precise alignment, intentional color choices, and purposeful animation — that's what creates the feeling of luxury.
+### 5. "Luxury Resort, Not Beach Shack"
+The island feel should be "Four Seasons Bávaro" not "spring break." Rich tropical colors expressed with restraint and sophistication. Generous spacing that feels like an open-air lobby, not a cluttered market. Precise alignment, intentional color choices, and purposeful animation. Premium means every detail serves the tropical narrative — nothing is accidental, nothing is garish.
 
 ---
 
@@ -121,31 +141,34 @@ Create the following semantic surface tokens in `Extensions.swift`:
 
 | Token Name | Value | Role | Contrast Notes |
 |---|---|---|---|
-| `caribbeanCanvas` | `rgb(252, 249, 255)` `#FCF9FF` | App-level page background | Warmest near-white, barely-there lavender |
-| `caribbeanSurface` | `rgb(248, 245, 253)` `#F8F5FD` | Nav/tab bar, secondary backgrounds | Current `F8F5FD`, proven to work |
-| `caribbeanElevated` | `rgb(255, 255, 255, 0.72)` | Cards, panels on top of canvas | Pure white at 72% lets canvas warmth bleed through |
-| `caribbeanRecessed` | `rgb(237, 228, 248)` `#EDE4F8` | Input fields, empty slots, wells | Deeper lavender signals "container awaiting content" |
-| `caribbeanOverlay` | `rgb(255, 255, 255, 0.85)` | Modals, sheets, alerts over content | High opacity for readability, warm tint from below |
+| `caribbeanCanvas` | `rgb(255, 252, 245)` `#FFFCF5` | App-level page background | Warm sand-white — like sun-bleached linen on a beach cabana. NOT cold/blue white |
+| `caribbeanSurface` | `rgb(253, 249, 240)` `#FDF9F0` | Nav/tab bar, secondary backgrounds | Warm cream — like the dry sand above the tide line |
+| `caribbeanElevated` | `rgb(255, 255, 255, 0.80)` | Cards, panels floating above canvas | Sea-glass clarity — white but carries warmth from the canvas beneath |
+| `caribbeanRecessed` | `rgb(232, 240, 238)` `#E8F0EE` | Input fields, empty slots, wells | Cool seafoam-sage — like a shallow tide pool, signals "container awaiting content" |
+| `caribbeanOverlay` | `rgb(255, 253, 248, 0.90)` | Modals, sheets, alerts over content | Warm sand-white with high opacity for readability |
+
+**Why sand-warm and NOT lavender-white:** The Dominican Republic's defining visual baseline is warm sand and sunlight, not cool lavender. Lavender appears in ACCENTS, not in every background. When users look at the app, they should subconsciously feel "warm beach" not "slightly tinted hospital."
 
 **Acceptance Criteria:**
 - [ ] All 5 surface tokens defined as `static var` on `Color` extension
-- [ ] Each token has an inline comment documenting its role (e.g., `/// App-level page background — warmest near-white`)
+- [ ] Each token has an inline comment documenting its role and tropical reference (e.g., `/// App-level page background — warm sand-white, beach cabana linen`)
 - [ ] Tokens use `Color(red:green:blue:opacity:)` initializer for precision
-- [ ] Visual test: screenshot each surface token rendered as a full-screen rectangle — confirm warm undertone visible, not cold grey
+- [ ] Visual test: screenshot each surface token rendered as a full-screen rectangle — confirm WARM (yellowish/cream) undertone, not cool grey or cold lavender
 - [ ] Each surface token meets WCAG 2.1 AA contrast ratio (≥ 4.5:1) with `caribbeanInk` text
+- [ ] Side-by-side comparison: pure `#FFFFFF` next to `caribbeanCanvas` — the warmth difference should be visible
 
 #### Subtask 1.1.2: Define Interactive Surface Tokens
 
 | Token Name | Value | Role |
 |---|---|---|
-| `caribbeanHover` | `rgb(243, 235, 253)` `#F3EBFD` | Button/card hover/pressed state |
-| `caribbeanSelected` | `rgb(196, 148, 252, 0.18)` | Active/selected item background |
-| `caribbeanDisabled` | `rgb(237, 228, 248, 0.55)` | Disabled controls background |
+| `caribbeanHover` | `rgb(240, 248, 246)` `#F0F8F6` | Button/card hover/pressed — light seafoam wash |
+| `caribbeanSelected` | `rgb(14, 165, 233, 0.12)` | Active/selected item — turquoise ocean tint |
+| `caribbeanDisabled` | `rgb(232, 240, 238, 0.55)` | Disabled controls — muted tide-pool |
 
 **Acceptance Criteria:**
 - [ ] 3 interactive surface tokens defined
-- [ ] `caribbeanHover` is visibly distinct from `caribbeanCanvas` at a glance (not requiring careful examination)
-- [ ] `caribbeanSelected` creates a clear "this is active" signal — test by placing 5 items in a row with 1 selected
+- [ ] `caribbeanHover` has a subtle OCEAN coolness — distinguishes it from the warm canvas
+- [ ] `caribbeanSelected` uses **turquoise** tint (ocean signature) — clearly marks "this is active" with the app's defining color
 - [ ] `caribbeanDisabled` reads as "unavailable" without being ugly or jarring
 
 #### Subtask 1.1.3: Define Depth Shadow Token System
@@ -154,17 +177,17 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 
 | Token Name | Color | Radius | Y-Offset | Role |
 |---|---|---|---|---|
-| `caribbeanShadowSubtle` | `#C494FC` @ 0.06 | 4 | 2 | Cards, small containers |
-| `caribbeanShadowMedium` | `#C494FC` @ 0.10 | 12 | 4 | Elevated panels, modals |
-| `caribbeanShadowDeep` | `#C494FC` @ 0.14 + `#F472B6` @ 0.04 | 20 + 8 | 6 + 2 | Floating elements, dropdown menus |
-| `caribbeanShadowGlow` | `#F472B6` @ 0.08 | 16 | 0 | Interactive highlights, CTA glow |
+| `caribbeanShadowSubtle` | `#0EA5E9` @ 0.05 + `#F59E0B` @ 0.03 | 4 | 2 | Cards, small containers — ocean + sand hint |
+| `caribbeanShadowMedium` | `#0EA5E9` @ 0.08 + `#C494FC` @ 0.04 | 12 | 4 | Elevated panels, modals — deeper ocean |
+| `caribbeanShadowDeep` | `#0EA5E9` @ 0.10 + `#FB7185` @ 0.04 | 20 + 8 | 6 + 2 | Floating elements — ocean depth + coral |
+| `caribbeanShadowGlow` | `#06B6D4` @ 0.10 | 16 | 0 | Interactive highlights, CTA glow — turquoise aura |
 
 **Acceptance Criteria:**
 - [ ] Shadow tokens implemented as `ViewModifier` structs (e.g., `.caribbeanShadow(.subtle)`)
-- [ ] Each shadow uses **colored** shadows (lavender/rose), never grey or black
+- [ ] Each shadow uses **colored** shadows — teal/turquoise tones (primary) with warm sand or coral accents, never grey or black
 - [ ] Shadow intensity scales with element elevation — higher elements cast deeper, more diffuse shadows
-- [ ] Shadows are warm-tinted, not cool/neutral
-- [ ] On white backgrounds, shadows create a gentle "floating" effect, not a hard edge
+- [ ] Shadows evoke the way objects cast colored shadows on a bright Caribbean beach
+- [ ] On the warm sand canvas, shadows create a gentle "floating above the beach" effect, not a hard edge
 
 ---
 
@@ -181,18 +204,24 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 
 | Token | Colors | Direction | Usage |
 |---|---|---|---|
-| `caribbeanGradientPrimary` | `#C494FC` → `#F472B6` | leading → trailing | Primary CTA, active tab indicator |
-| `caribbeanGradientSecondary` | `#F472B6` → `#FB923C` | top → bottom | Secondary buttons, badges |
-| `caribbeanGradientWarm` | `#FDE68A` → `#FB923C` → `#F472B6` | topLeading → bottomTrailing | Achievement, celebration, reward |
-| `caribbeanGradientCool` | `#A78BFA` → `#6366F1` | top → bottom | Informational, neutral emphasis |
-| `caribbeanGradientSunset` | `#C494FC` → `#F472B6` → `#FB923C` | topLeading → bottomTrailing | Hero sections, premium features |
+| `caribbeanGradientOcean` | `#0EA5E9` → `#06B6D4` → `#14B8A6` | leading → trailing | **PRIMARY — the signature.** Tab indicators, progress bars, primary accents. This IS the Caribbean. |
+| `caribbeanGradientSunset` | `#C494FC` → `#F472B6` → `#FB923C` | topLeading → bottomTrailing | Hero sections, premium features, sunset moments |
+| `caribbeanGradientCoral` | `#FB7185` → `#F472B6` | leading → trailing | Secondary CTA, badges, coral reef warmth |
+| `caribbeanGradientSand` | `#FDE68A` → `#F59E0B` → `#FB923C` | top → bottom | Achievement, celebration, reward — warm sand-gold |
+| `caribbeanGradientPalm` | `#34D399` → `#10B981` → `#059669` | top → bottom | Success states, growth indicators, tropical foliage |
+| `caribbeanGradientLagoon` | `#06B6D4` → `#0EA5E9` → `#C494FC` | topLeading → bottomTrailing | Special feature gradients — where ocean meets sky |
+| `caribbeanGradientTropical` | `#0EA5E9` → `#FB7185` → `#FDE68A` | leading → trailing | Vibrant island energy — ocean to coral to sand |
+
+**CRITICAL DESIGN NOTE:** `caribbeanGradientOcean` is the PRIMARY gradient — it replaces the old lavender→rose primary. The turquoise-to-teal gradient IS the visual identity of the Dominican Republic Caribbean. Lavender→rose gradients become SECONDARY (sunset, premium accents). A user should see turquoise/teal as the dominant accent color, with lavender/rose/amber as supporting warmth.
 
 **Acceptance Criteria:**
-- [ ] All 5 gradient tokens defined as static properties returning `LinearGradient`
+- [ ] All 7 gradient tokens defined as static properties returning `LinearGradient`
+- [ ] `caribbeanGradientOcean` is used in MORE places than any other gradient — it's the signature
 - [ ] Each gradient has start/end points documented
-- [ ] Gradients tested against both `caribbeanCanvas` and `caribbeanElevated` backgrounds
+- [ ] Gradients tested against both `caribbeanCanvas` (warm sand white) and `caribbeanElevated` backgrounds
 - [ ] No gradient contains pure white (kills contrast on light backgrounds)
 - [ ] Each gradient is visually distinct from the others at thumbnail size
+- [ ] The overall gradient family clearly says "Caribbean island" not "generic pastel"
 
 #### Subtask 1.2.2: Define Semantic Feedback Colors
 
@@ -218,10 +247,10 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 
 | Token | Value | Usage |
 |---|---|---|
-| `caribbeanBorder` | `#C494FC` @ 0.20 | Card borders, input field outlines |
-| `caribbeanBorderSubtle` | `#C494FC` @ 0.10 | Dividers, subtle section separators |
-| `caribbeanBorderFocus` | `#A855F7` @ 0.45 | Focused input, active card selection ring |
-| `caribbeanBorderAccent` | `caribbeanGradientPrimary` | Premium feature borders, hero cards |
+| `caribbeanBorder` | `#0EA5E9` @ 0.15 | Card borders, input field outlines |
+| `caribbeanBorderSubtle` | `#0EA5E9` @ 0.07 | Dividers, subtle section separators |
+| `caribbeanBorderFocus` | `#0EA5E9` @ 0.45 | Focused input, active card selection ring |
+| `caribbeanBorderAccent` | `caribbeanGradientOcean` | Premium feature borders, hero cards — turquoise ocean edge |
 
 **Acceptance Criteria:**
 - [ ] All 4 border tokens defined
@@ -229,7 +258,34 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 - [ ] `caribbeanBorderSubtle` creates a "just barely there" line — visible on close inspection, not distracting
 - [ ] `caribbeanBorderFocus` stands out clearly for accessibility (visible from arm's length)
 - [ ] `caribbeanBorderAccent` gradient renders cleanly on rounded rectangles (no clipping artifacts)
-- [ ] All borders use **lavender or rose tint**, never raw grey or black
+- [ ] All borders use **turquoise/ocean tint** (primary) or **warm lavender tint** (secondary), never raw grey or black
+
+#### Subtask 1.2.4: Define Caribbean Island Color Tokens (NEW — CRITICAL)
+
+These are the tropical-specific colors that make this feel like the Dominican Republic, not "generic pastel app":
+
+| Token | Value | Tropical Reference | Usage |
+|---|---|---|---|
+| `caribbeanOcean` | `#0EA5E9` (sky-500) | Punta Cana turquoise water | Primary accent color, progress fills, active indicators |
+| `caribbeanLagoon` | `#06B6D4` (cyan-500) | Samaná Bay shallow water | Secondary ocean accent, hover states, links |
+| `caribbeanReef` | `#14B8A6` (teal-500) | Coral reef water, deeper turquoise | Teal accent, informational states |
+| `caribbeanCoral` | `#FB7185` (rose-400) | Coral reef, bougainvillea petals | Warm accent, notifications, feminine touch |
+| `caribbeanSand` | `#FDE68A` (amber-200) | Bávaro beach sand, golden hour | Warm highlights, celebration, warmth fills |
+| `caribbeanDriftwood` | `#D4A373` | Weathered beach driftwood | Tertiary warm accent, organic feel elements |
+| `caribbeanPalm` | `#10B981` (emerald-500) | El Yunque forest palm fronds | Growth indicators, success accents, nature |
+| `caribbeanSunrise` | `#F59E0B` (amber-500) | Caribbean sunrise gold | Award badges, premium glow, warm energy |
+| `caribbeanShallows` | `#CCFBF1` (teal-100) | Shallow water near shore | Light tint backgrounds, selected state underlay |
+| `caribbeanFoam` | `#E0F7FA` | Sea foam on beach | Ultra-light accent backgrounds, subtle wash |
+
+**Why these matter:** Without these tokens, the app defaults to lavender-everything — which reads "purple theme" not "Caribbean island." These colors are what makes someone look at the screen and FEEL the tropics. The turquoise is not optional — it's the single most recognizable color of the Caribbean.
+
+**Acceptance Criteria:**
+- [ ] All 10 tropical tokens defined as `static var` on `Color` extension
+- [ ] `caribbeanOcean` and `caribbeanLagoon` are the MOST USED accent colors in the light mode — they appear on every screen
+- [ ] Each token has a documented tropical reference (e.g., `/// Punta Cana turquoise water — primary accent`)
+- [ ] Tokens create a cohesive "island palette" when viewed together in a swatch grid
+- [ ] No two tokens are confusably similar — each has a distinct role and visual identity
+- [ ] Turquoise/teal family (Ocean, Lagoon, Reef, Shallows, Foam) provides a full range from subtle bg tint to bold accent
 
 ---
 
@@ -396,7 +452,7 @@ extension View {
 | `caribbeanIconPrimary` | `caribbeanInk` | Active/interactive icons |
 | `caribbeanIconSecondary` | `caribbeanPlum` | Decorative/informational icons |
 | `caribbeanIconTertiary` | `caribbeanMist` | Disabled/placeholder icons |
-| `caribbeanIconAccent` | `caribbeanGradientPrimary` | Featured/premium icons (gradient fill) |
+| `caribbeanIconAccent` | `caribbeanGradientOcean` | Featured/premium icons (turquoise gradient fill) |
 
 **Acceptance Criteria:**
 - [ ] Icon tokens defined and documented
@@ -411,7 +467,7 @@ extension View {
 
 **Epic Owner:** UI Engineering Lead
 **Priority:** P0 — Cards are the primary content vessel; broken cards = broken experience
-**Goal:** Transform the Caribbean light mode glass morphism from "faded dark mode" into a warm, luminous, layered system where every card feels like sunlight through rose-tinted glass.
+**Goal:** Transform the Caribbean light mode glass morphism from "faded dark mode" into a warm, luminous, layered system where every card feels like pieces of smooth sea glass found on a Dominican Republic beach — warm, translucent, carrying the colors of the ocean within.
 
 ### The Current Problem
 
@@ -419,7 +475,7 @@ Dark mode glass cards use `.ultraThinMaterial` with white inner highlights and w
 
 ### The Target
 
-Light mode cards should feel like **frosted pearl** — a warm, semi-translucent surface with subtle internal color that catches the ambient gradient. The card should glow gently from within, with edges defined by soft lavender borders rather than harsh lines. Shadows should be tinted and diffuse, creating a sense of the card floating above a warm ocean of light.
+Light mode cards should feel like **polished Caribbean sea glass** — a warm, semi-translucent surface with the faintest hint of turquoise and sand within, as if the glass spent years being tumbled in tropical waters. The card should glow gently from within, with edges defined by soft ocean-tinted borders rather than harsh lines. Shadows should be tinted with turquoise and warm amber, creating a sense of the card floating above sun-warmed sand. Users should feel like they're interacting with beautiful natural objects, not flat UI rectangles.
 
 ---
 
@@ -441,27 +497,27 @@ Replace the current `0.55 opacity` material with a richer, more layered approach
 .ultraThinMaterial @ 0.55 opacity
 → Caribbean gradient tint @ [0.18, 0.12, 0.10]
 → White inner highlight [0.25 → 0.06]
-→ Border: #C494FC @ 0.25, lineWidth 0.5
-→ Shadow: #C494FC @ 0.12 r:20
+→ Border: #0EA5E9 @ 0.20, lineWidth 0.5
+→ Shadow: #0EA5E9 @ 0.10 r:20
 ```
 
 **Proposed premium light mode material stack:**
 ```
-Layer 0: caribbeanElevated base (white @ 0.72)
+Layer 0: caribbeanElevated base (white @ 0.80 on warm canvas)
 Layer 1: .thinMaterial @ 0.35 opacity (subtler blur, more translucency)
-Layer 2: Caribbean warm wash — radialGradient from center:
-         #C494FC @ 0.06 → #F472B6 @ 0.04 → transparent
-         (creates internal warmth radiating from center)
-Layer 3: Top-edge luminance band: white @ 0.35 → white @ 0.0
-         (simulates light catching the top edge — key premium signal)
-Layer 4: Bottom-edge warmth band: #FB923C @ 0.03 → transparent
-         (catches the "sunset below" from the background gradient)
+Layer 2: Caribbean sea-glass wash — radialGradient from center:
+         #06B6D4 @ 0.03 → #0EA5E9 @ 0.02 → transparent
+         (creates a subtle turquoise sea-glass tint radiating from center)
+Layer 3: Top-edge luminance band: white @ 0.40 → white @ 0.0
+         (simulates light catching the top edge — like sun hitting sea glass)
+Layer 4: Bottom-edge warmth band: #FDE68A @ 0.04 → transparent
+         (warm sand glow from below — card sits on "warm beach")
 Layer 5: Border — 2-layer:
          Inner: white @ 0.50, lineWidth 0.5 (crisp light catch)
-         Outer: #C494FC @ 0.18, lineWidth 0.5, offset 0.5 (lavender definition)
+         Outer: #0EA5E9 @ 0.12, lineWidth 0.5, offset 0.5 (turquoise definition)
 Layer 6: Shadow stack:
-         Primary: #C494FC @ 0.10, radius 16, y:4
-         Secondary: #F472B6 @ 0.04, radius 6, y:2
+         Primary: #0EA5E9 @ 0.08, radius 16, y:4 (ocean shadow)
+         Secondary: #FDE68A @ 0.03, radius 6, y:2 (warm sand reflection)
          Ambient: white @ 0.25 (inset, simulates internal glow)
 ```
 
@@ -487,7 +543,7 @@ Introduce a subtle outer glow that makes cards feel luminous:
         .fill(
             RadialGradient(
                 colors: [
-                    Color(hex: "#C494FC").opacity(0.08),
+                    Color(hex: "#0EA5E9").opacity(0.08),
                     Color.clear
                 ],
                 center: .center,
@@ -552,16 +608,16 @@ None of these adapt for light mode.
 Layer 0: caribbeanElevated base fill
 Layer 1: .thinMaterial @ 0.25 (lighter than dark, more translucent)
 Layer 2: Accent tint @ 0.28 (current isDark logic already handles this — verify)
-Layer 3: Caribbean prismatic wash:
-         AngularGradient [#C494FC, #F472B6, #FB923C, #C494FC]
-         @ 0.06 opacity (gives prismatic rainbow edge in light)
+Layer 3: Caribbean ocean prismatic wash:
+         AngularGradient [#0EA5E9, #06B6D4, #14B8A6, #0EA5E9]
+         @ 0.06 opacity (gives prismatic ocean edge in light)
 Layer 4: Inner highlight: white @ 0.40 top-edge → 0.0 (stronger than GlassCard)
 Layer 5: Border:
-         AngularGradient [#C494FC @ 0.25, white @ 0.45, #F472B6 @ 0.25]
+         AngularGradient [#0EA5E9 @ 0.25, white @ 0.45, #06B6D4 @ 0.25]
          lineWidth 1.0 (prismatic border catches light at different angles)
 Layer 6: Shadows:
          Primary: accent @ 0.12, radius 20, y:6
-         Ambient: #C494FC @ 0.06, radius 8
+         Ambient: #0EA5E9 @ 0.06, radius 8
 ```
 
 **Acceptance Criteria:**
@@ -612,7 +668,7 @@ Currently, `GlassPanelWrapper` disables all decorative layers in light mode (aur
 
 **Proposed light mode decorative layers:**
 ```
-Aura (outer glow): #C494FC @ 0.05, blur 12 (was 0 in light)
+Aura (outer glow): #0EA5E9 @ 0.05, blur 12 (was 0 in light)
 Edge highlight top: white @ 0.4 → 0.0 vertical (was 0 in light)
 Edge highlight bottom: #FB923C @ 0.03 → 0.0 vertical (new — warm ground reflection)
 Mist: radial white @ 0.06 from topLeading (was 0 in light)
@@ -634,7 +690,7 @@ Glass panels with section headers should have enhanced header treatment:
 **Acceptance Criteria:**
 - [ ] Section header text uses `caribbeanInk` with increased font weight in light mode
 - [ ] Header area has a subtle bottom-edge separator (not a harsh line — a gradient fade)
-- [ ] Header icon use `caribbeanGradientPrimary` fill (gradient icon) instead of flat color
+- [ ] Header icon use `caribbeanGradientOcean` fill (turquoise gradient icon) instead of flat color
 - [ ] Expand/collapse chevron has a `caribbeanHover` background pill on tap
 - [ ] Header area feels like a "title bar" on a glass panel — clearly delineated from content
 
@@ -656,8 +712,8 @@ Current issue: Grammar answer buttons use `.white.opacity(0.06)` background and 
 **Proposed light mode grammar answer card:**
 ```
 Background: caribbeanElevated (white @ 0.72)
-Border: caribbeanBorder (#C494FC @ 0.20), lineWidth 1, cornerRadius 14
-Letter badge: caribbeanSelected (#C494FC @ 0.18) fill, caribbeanInk text
+Border: caribbeanBorder (#0EA5E9 @ 0.15), lineWidth 1, cornerRadius 14
+Letter badge: caribbeanSelected (#0EA5E9 @ 0.12) fill, caribbeanInk text
 Hover/Pressed: caribbeanHover (#F3EBFD)
 Selected (correct): caribbeanSuccessSoft bg, caribbeanSuccess border, lineWidth 1.5
 Selected (wrong): caribbeanErrorSoft bg, caribbeanError border, lineWidth 1.5
@@ -692,14 +748,14 @@ Hint glow: caribbeanGradientWarm @ 0.15 overlay (pulsing)
 
 **Answer slot (empty):**
 ```
-Background: caribbeanRecessed (#EDE4F8)
+Background: caribbeanRecessed (#E8F0EE) — seafoam-sage, like wet sand
 Border: caribbeanBorderSubtle, dashed (- - -)
 Text: caribbeanMist (placeholder text)
 ```
 
 **Answer slot (filled):**
 ```
-Background: caribbeanSelected (#C494FC @ 0.18)
+Background: caribbeanSelected (#0EA5E9 @ 0.12)
 Border: caribbeanBorder, solid
 Text: caribbeanInk
 ```
@@ -720,8 +776,8 @@ Current issue: Question panel uses hardcoded dark purple background — appears 
 **Proposed light mode question panel:**
 ```
 Background: caribbeanRecessed with a subtle gradient:
-    top: caribbeanRecessed (#EDE4F8)
-    bottom: caribbeanRecessed mixed with #C494FC @ 0.08
+    top: caribbeanRecessed (#E8F0EE) — seafoam-sage
+    bottom: caribbeanRecessed mixed with #06B6D4 @ 0.06 — deeper lagoon tint
 Border: caribbeanBorder, lineWidth 0.75
 Inner top highlight: white @ 0.50 → 0.0 (bright top edge)
 Text: caribbeanInk (question), caribbeanPlum (translation)
@@ -815,17 +871,17 @@ Unselected: rgba(100, 59, 161, 0.50)
 **Proposed premium light mode tab bar:**
 ```
 Layer 0: .regularMaterial @ 0.82 (allows background gradient to peek through)
-Layer 1: Caribbean warm tint: linear horizontal
-         #C494FC @ 0.04 (left) → #F472B6 @ 0.03 (center) → #FB923C @ 0.04 (right)
-         (subtle rainbow undertone across the bar)
+Layer 1: Caribbean ocean tint: linear horizontal
+         #0EA5E9 @ 0.04 (left) → #06B6D4 @ 0.03 (center) → #14B8A6 @ 0.04 (right)
+         (subtle turquoise ocean undertone across the bar)
 Layer 2: Top-edge luminance line:
          Rectangle height 0.5, white @ 0.45
          (crisp light catch simulating glass edge)
 Layer 3: Inner top glow:
          white @ 0.15 → 0.0 (height 8pt, downward gradient)
          (soft light bleeding down from the edge)
-Shadow: #C494FC @ 0.08, radius 12, y: -4 (shadow goes UP — bar is bottom-anchored)
-         #F472B6 @ 0.03, radius 4, y: -2 (secondary warm shadow)
+Shadow: #0EA5E9 @ 0.08, radius 12, y: -4 (shadow goes UP — bar is bottom-anchored)
+         #06B6D4 @ 0.03, radius 4, y: -2 (secondary warm shadow)
 ```
 
 **Acceptance Criteria:**
@@ -843,11 +899,11 @@ Shadow: #C494FC @ 0.08, radius 12, y: -4 (shadow goes UP — bar is bottom-ancho
 **Proposed icon states:**
 ```
 Selected:
-  - Icon fill: caribbeanGradientPrimary (lavender → rose gradient)
+  - Icon fill: caribbeanGradientOcean (turquoise → teal gradient) — like glowing ocean water
   - Icon weight: .semibold
-  - Below icon: dot indicator, 4pt circle, caribbeanGradientPrimary fill
+  - Below icon: dot indicator, 4pt circle, caribbeanGradientOcean fill
   - Label: caribbeanInk, weight .medium, tracking 0.3
-  - Subtle glow: caribbeanGradientPrimary @ 0.12 behind icon, blur 4
+  - Subtle glow: caribbeanGradientOcean @ 0.12 behind icon, blur 4 — ocean shimmer
 
 Unselected:
   - Icon fill: caribbeanMist (dusty orchid)
@@ -876,16 +932,16 @@ Add a glowing underline beneath the active tab for premium emphasis:
 ```swift
 // Beneath the selected tab icon
 Capsule()
-    .fill(caribbeanGradientPrimary)
+    .fill(caribbeanGradientOcean)
     .frame(width: 28, height: 3)
-    .shadow(color: Color(hex: "#C494FC").opacity(0.35), radius: 6, y: 1)
+    .shadow(color: Color(hex: "#0EA5E9").opacity(0.35), radius: 6, y: 1)
     .offset(y: 2)
     .matchedGeometryEffect(id: "activeTab", in: tabNamespace)
 ```
 
 **Acceptance Criteria:**
 - [ ] Glowing capsule moves smoothly between tabs using `matchedGeometryEffect`
-- [ ] Capsule has a gradient fill (lavender → rose)
+- [ ] Capsule has a gradient fill (turquoise → teal — ocean signature)
 - [ ] Shadow creates a glow effect below the capsule (light "reflecting" down onto the bar)
 - [ ] Animation is fluid, 0.35s spring with slight overshoot
 - [ ] Capsule width is proportional to icon width (not the full tab width)
@@ -915,12 +971,12 @@ Bottom separator: caribbeanInk @ 0.06
 **Proposed premium light mode nav bar:**
 ```
 Background: .regularMaterial @ 0.75 (translucent)
-Caribbean tint: horizontal gradient #C494FC @ 0.03 → #F472B6 @ 0.02
+Caribbean tint: horizontal gradient #0EA5E9 @ 0.03 → #06B6D4 @ 0.02 — subtle turquoise ocean wash
 Bottom edge:
-  - Gradient line (height 1): caribbeanGradientPrimary @ 0.15
-    (replaces the plain separator with a warm gradient stroke)
-  - Below the line: caribbeanGradientPrimary @ 0.06, blur 4, height 4
-    (soft glow below the line, simulating light bleeding down)
+  - Gradient line (height 1): caribbeanGradientOcean @ 0.15
+    (replaces the plain separator with a turquoise gradient stroke — like a horizon line)
+  - Below the line: caribbeanGradientOcean @ 0.06, blur 4, height 4
+    (soft turquoise glow below the line, simulating ocean light bleeding down)
 Title shadow: caribbeanPlum @ 0.10, radius 8
   (gives the gradient title a warm backlight effect)
 ```
@@ -1008,7 +1064,7 @@ Sheet background:
   - Top edge: handle pill in caribbeanMist @ 0.40
   - Top corner radius: 20pt
   - Inner top glow: white → transparent (height 8pt)
-  - Shadow (behind sheet): #C494FC @ 0.15, radius 24, y: -8
+  - Shadow (behind sheet): #0EA5E9 @ 0.12, radius 24, y: -8
 ```
 
 **Acceptance Criteria:**
@@ -1062,11 +1118,11 @@ Sheet background:
 
 **Epic Owner:** Product Design Lead
 **Priority:** P0 — The dashboard is the first screen users see; it defines their emotional benchmark
-**Goal:** Transform the Caribbean light mode dashboard from a competent stats display into a breathtaking "golden hour" experience that makes users pause and admire before they start learning.
+**Goal:** Transform the Caribbean light mode dashboard from a competent stats display into a breathtaking tropical island experience. When users open the app, they should feel like checking their phone on a beautiful Caribbean morning — warm sand underfoot, turquoise water sparkling, palm trees swaying. Stats float on sea-glass cards. The greeting feels like stepping outside into paradise.
 
 ### The Emotional Target
 
-When a user opens the app in light mode, they should feel like stepping onto a sun-warmed terrace overlooking the Caribbean Sea. The background breathes with warm gradients. Stats float on pearlescent cards. The greeting feels personal. Every element has been placed with the care of a luxury resort designer.
+When a user opens the app in light mode, they should feel like waking up in a beachfront bungalow in Punta Cana. The background breathes with turquoise-to-sand gradients. Stats float on translucent sea-glass cards. Turquoise accent lines gleam like shallow water catching sunlight. The greeting feels personal and warm — like an island concierge welcoming you to another beautiful day. Every element has been placed with the care of a luxury resort designer.
 
 ---
 
@@ -1126,20 +1182,21 @@ Enhance the greeting area with a subtle time-of-day visual accent:
 
 ```
 Morning (5am-12pm):
-  - Accent orb: radialGradient #FDE68A → #FB923C @ 0.06
-    (warm golden sun reference, top-right corner, radius 80)
+  - Accent orb: radialGradient #0EA5E9 → #06B6D4 @ 0.06
+    (turquoise morning ocean — like opening curtains to see the Caribbean Sea)
+    center-top, radius 100
 
 Afternoon (12pm-5pm):
-  - Accent orb: radialGradient #F472B6 → #C494FC @ 0.05
-    (full Caribbean warmth, center-right, radius 100)
+  - Accent orb: radialGradient #FDE68A → #F59E0B @ 0.05
+    (golden sand, hot tropical sun overhead, center-right, radius 100)
 
 Evening (5pm-9pm):
-  - Accent orb: radialGradient #FB923C → #F472B6 → #C494FC @ 0.07
-    (sunset glow, bottom-right, radius 120)
+  - Accent orb: radialGradient #FB923C → #FB7185 → #0EA5E9 @ 0.07
+    (Dominican sunset — amber to rose to lavender, bottom-right, radius 120)
 
 Night (9pm-5am):
-  - Accent orb: radialGradient #C494FC → #A78BFA @ 0.04
-    (twilight lavender, center, radius 90)
+  - Accent orb: radialGradient #0EA5E9 → #06B6D4 @ 0.04
+    (soft tropical twilight, warm island night, center, radius 90)
 ```
 
 **Acceptance Criteria:**
@@ -1174,11 +1231,11 @@ Text: caribbeanInk (value), caribbeanPlum (label)
 ```
 Layer 0: Base — caribbeanElevated (white @ 0.72)
 Layer 1: .thinMaterial @ 0.30 (subtle frosted glass)
-Layer 2: Stat-specific accent tint — each stat gets its own warm accent:
-         Streak: #FDE68A @ 0.06 (golden — streaks are precious)
-         Words Learned: #A78BFA @ 0.06 (violet — knowledge is deep)
-         Accuracy: #34D399 @ 0.06 (emerald — correctness is fresh)
-         Time: #F472B6 @ 0.06 (rose — time is romantic)
+Layer 2: Stat-specific accent tint — each stat reflects a Caribbean element:
+         Streak: #FDE68A @ 0.08 (golden sand — streaks are sun-kissed gold)
+         Words Learned: #0EA5E9 @ 0.06 (turquoise ocean — knowledge is deep water)
+         Accuracy: #34D399 @ 0.06 (palm green — correctness is fresh tropical growth)
+         Time: #FB7185 @ 0.06 (coral pink — time is precious as island coral)
 Layer 3: Top-edge highlight: white @ 0.40 → 0.0 (height 3pt)
 Layer 4: Stat icon area — small circle with stat-accent gradient @ 0.15
 Border: stat-accent @ 0.18, lineWidth 0.5
@@ -1263,11 +1320,14 @@ Spacing: 4pt between icon and value, 8pt horizontal padding
 ```
 Layer 0: caribbeanElevated (white @ 0.72)
 Layer 1: .thinMaterial @ 0.25
-Layer 2: Game-specific gradient tint:
-         FlashCards: [#A78BFA → #C494FC] @ 0.08 topLeading → bottomTrailing
-         Grammar: [#34D399 → #059669] @ 0.08
-         WordBuilder: [#F472B6 → #FB923C] @ 0.08
-         (each game has a signature color palette)
+Layer 2: Game-specific gradient tint — each game evokes an island element:
+         FlashCards: [#0EA5E9 → #06B6D4] @ 0.08 topLeading → bottomTrailing
+           (turquoise ocean — knowledge flows like water)
+         Grammar: [#34D399 → #10B981] @ 0.08
+           (palm green — grammar is the structure of thought, like tree roots)
+         WordBuilder: [#FB7185 → #FDE68A] @ 0.08
+           (coral to sand — building words is like finding treasures on the beach)
+         (each game has a signature island color palette)
 Layer 3: Top highlight band: white @ 0.35 → 0.0 (3pt)
 Layer 4: Game icon area — left side, 48pt gradient circle:
          Fill: game-specific gradient
@@ -1408,7 +1468,7 @@ Subtitle: "Start a practice session and watch your progress unfold"
   - caribbeanPlum, .callout weight .regular
 
 CTA: "Start Learning" button
-  - caribbeanGradientPrimary fill
+  - caribbeanGradientOcean fill — turquoise "dive in" invitation turquoise CTA like a "dive in" invitation
   - White text, weight .semibold
   - caribbeanShadowGlow
   - Scale press effect
@@ -1438,7 +1498,7 @@ CTA: "Start Learning" button
 **Proposed section header style:**
 ```
 Title: caribbeanInk, .headline weight .bold, tracking 0.2
-Accent: 3pt line before title (leading edge), caribbeanGradientPrimary, height 16pt
+Accent: 3pt line before title (leading edge), caribbeanGradientOcean, height 16pt — turquoise accent bar
 Subtitle (if any): caribbeanPlum, .subheadline weight .regular
 Spacing: 24pt above header, 12pt below
 ```
@@ -1605,10 +1665,10 @@ Difficulty rating area:
 **Proposed progress indicators:**
 ```
 Progress bar (top of screen):
-  - Track: caribbeanRecessed, height 4pt, full width
-  - Fill: caribbeanGradientPrimary, rounded caps
-  - Shadow on fill: caribbeanGradientPrimary color @ 0.20, radius 3, y: 1
-  - Glow effect: fill color @ 0.08 extends 2pt above and below
+  - Track: caribbeanRecessed (seafoam-sage), height 4pt, full width
+  - Fill: caribbeanGradientOcean (turquoise → teal — like water filling a tide pool)
+  - Shadow on fill: caribbeanOcean @ 0.20, radius 3, y: 1
+  - Glow effect: turquoise @ 0.08 extends 2pt above and below
 
 Score display (in GameHeader):
   - Score value: caribbeanInk, weight .bold
@@ -1667,7 +1727,7 @@ Resting state:
   - Top highlight: white @ 0.45 → 0.0 (height 2pt) — "caught the light" edge
   - Border: caribbeanBorder (lavender @ 0.20)
   - Text: caribbeanInk, .title3 weight .bold
-  - Shadow: #C494FC @ 0.08, radius 6, y: 3
+  - Shadow: #0EA5E9 @ 0.08, radius 6, y: 3
 
 Pressed state:
   - Scale: 0.93
@@ -1677,7 +1737,7 @@ Pressed state:
   - Haptic: .light
 
 Placed state (in answer slot):
-  - Background: caribbeanSelected (#C494FC @ 0.18)
+  - Background: caribbeanSelected (#0EA5E9 @ 0.12)
   - Border: caribbeanBorderFocus (#A855F7 @ 0.45)
   - Text: caribbeanInk, weight .bold
   - No shadow (tile is "embedded" in slot)
@@ -1714,7 +1774,7 @@ Container:
   - Internal padding: 8pt
 
 Empty slot:
-  - Background: caribbeanRecessed (#EDE4F8)
+  - Background: caribbeanRecessed (#E8F0EE) — seafoam-sage, like shallow water over sand
   - Border: caribbeanBorderSubtle, dashed (3pt dash, 3pt gap)
   - Size: matched to tile dimensions
   - Center content: slot number, caribbeanMist, .caption2
@@ -1851,7 +1911,7 @@ All buttons:
 ```
 Container:
   - Background: caribbeanRecessed
-  - Gradient overlay: #C494FC @ 0.05 (top) → #A78BFA @ 0.03 (bottom)
+  - Gradient overlay: #0EA5E9 @ 0.05 (top) → #06B6D4 @ 0.03 (bottom) — turquoise ocean overlay
     (very subtle purple tint — distinguishes it from plain recessed)
   - Top highlight: white @ 0.45 → 0.0 (height 2pt)
   - Border: caribbeanBorder, lineWidth 0.75
@@ -1887,7 +1947,7 @@ Default state:
   - Corner radius: caribbeanRadiusMedium (14pt)
   - Letter badge:
     - Circle, 28pt diameter
-    - Fill: caribbeanSelected (#C494FC @ 0.18)
+    - Fill: caribbeanSelected (#0EA5E9 @ 0.12)
     - Text: caribbeanInk, weight .bold
     - Border: caribbeanBorder
   - Answer text: caribbeanInk, .body weight .regular
@@ -1940,7 +2000,7 @@ Appears after answering — slides up from below answer options:
 
 Container:
   - Background: caribbeanRecessed.opacity(0.7)
-  - Top border: caribbeanGradientPrimary fill, height 2pt (accent line)
+  - Top border: caribbeanGradientOcean fill, height 2pt (turquoise accent line — like a horizon)
   - Corner radius: caribbeanRadiusMedium
   - Inner padding: caribbeanSpacingBase (12pt)
 
@@ -1981,11 +2041,11 @@ Disclosure chevron:
 
 **Epic Owner:** Growth Design Lead
 **Priority:** P1 — These screens drive retention; premium feel reinforces habit formation
-**Goal:** Transform Journey and Categories from functional progress displays into luxurious visual narratives of the user's learning story, where every milestone and category feels like a treasure discovered on a Caribbean voyage.
+**Goal:** Transform Journey and Categories from functional progress displays into luxurious visual narratives of the user's learning story, where every milestone feels like discovering a new island cove and every category is a treasure chest from the Caribbean seafloor.
 
 ### The Opportunity
 
-JourneyView and CategoriesView are already reasonably well-adapted for light mode. JourneyView uses GlassPanelWrapper correctly, and CategoriesView has excellent lavender-tinted backgrounds. This epic takes "working" to "stunning" — adding warmth, personality, and delight to the progress visualization layer.
+JourneyView and CategoriesView are already reasonably well-adapted for light mode. JourneyView uses GlassPanelWrapper correctly, and CategoriesView has good tinted backgrounds. This epic takes "working" to "stunning" — adding warmth, tropical personality, and delight to the progress visualization layer. The journey timeline should feel like navigating between Caribbean islands. Categories should feel like collections of seashells and coral — each one unique and beautiful.
 
 ---
 
@@ -2010,10 +2070,10 @@ Locked: grey @ 0.15 (dashed or thin)
 ```
 Unlocked connector:
   - Width: 3pt (upgraded from thin line)
-  - Fill: caribbeanGradientPrimary (lavender → rose)
-  - Glow: caribbeanGradientPrimary @ 0.08, blur 4 (soft halo around line)
-  - Animated: gradient position shifts slowly (4s cycle, moves like flowing liquid)
-  - Junction dots: 6pt circles at each milestone, filled with gradient
+  - Fill: caribbeanGradientOcean (turquoise → teal — like a flowing river connecting islands)
+  - Glow: caribbeanOcean @ 0.08, blur 4 (soft turquoise halo — like light through shallow water)
+  - Animated: gradient position shifts slowly (4s cycle, moves like flowing water)
+  - Junction dots: 6pt circles at each milestone, filled with turquoise gradient
 
 Locked connector:
   - Width: 2pt
@@ -2080,18 +2140,18 @@ Upcoming (next to unlock):
 ```
 Level badge:
   - Circle, 56pt diameter
-  - Fill: caribbeanGradientPrimary
+  - Fill: caribbeanGradientOcean (turquoise → teal)
   - Level number: white, .title2 weight .bold
   - Shadow: caribbeanShadowMedium + caribbeanShadowGlow
   - Rotating ring: thin (2pt) ring around the circle
-    - Gradient: caribbeanGradientSunset
-    - Rotation: 360° over 20s (slow, ambient, premium)
-    - Opacity: 0.4 (subtle — premium doesn't shout)
+    - Gradient: caribbeanGradientTropical (ocean → coral → sand)
+    - Rotation: 360° over 20s (slow, ambient, like a compass on a ship)
+    - Opacity: 0.4 (subtle — luxury resort, not theme park)
 
 XP progress:
   - Linear progress bar below the badge
   - Track: caribbeanRecessed, height 6pt, rounded
-  - Fill: caribbeanGradientPrimary, animated
+  - Fill: caribbeanGradientOcean, animated — like the tide filling in
   - Text: "2,450 / 5,000 XP" — caribbeanPlum, .caption
 
 Level title:
@@ -2181,9 +2241,9 @@ Idle state:
 
 Focused state:
   - Border: caribbeanBorderFocus (#A855F7 @ 0.45) — stronger emphasis
-  - Shadow: caribbeanShadowGlow — soft rose glow beneath
+  - Shadow: caribbeanShadowGlow — soft turquoise glow beneath
   - Background: caribbeanElevated (slightly brighter than idle)
-  - Icon color: caribbeanGradientPrimary (animated gradient on focus)
+  - Icon color: caribbeanGradientOcean (animated turquoise gradient on focus)
 
 Active (typing):
   - Clear button: caribbeanMist circle with "×"
@@ -2210,7 +2270,7 @@ Inactive:
   - Corner radius: full capsule
 
 Active:
-  - Background: caribbeanGradientPrimary
+  - Background: caribbeanGradientOcean — turquoise ocean
   - Border: none (gradient fill provides definition)
   - Text: white, .caption weight .semibold
   - Shadow: caribbeanShadowGlow
@@ -2250,8 +2310,8 @@ Celebration overlay:
   - Warm dimming layer: caribbeanInk @ 0.30
   - Central card: GlassCardBackground (large, centered)
   - Content:
-    - Confetti burst: warm Caribbean colors (gold, rose, lavender, amber)
-      - 40 particles, 1.5s animation, gravity-affected fall
+    - Confetti burst: Caribbean island colors (turquoise, coral pink, sand gold, palm green, sunset lavender)
+      - 40 particles, 1.5s animation, gravity-affected fall — like tropical flower petals in the breeze
     - Trophy/star icon: caribbeanGradientWarm, 64pt, with rotating glow ring
     - Title: "Category Complete!" — caribbeanInk, .title weight .bold
     - Category name: caribbeanGradientSunset text, .title2
@@ -2260,14 +2320,14 @@ Celebration overlay:
       - "92% accuracy" — caribbeanPlum
       - "Best streak: 12" — caribbeanPlum
     - XP earned badge: caribbeanGradientWarm capsule, "+250 XP"
-    - "Continue" button: caribbeanGradientPrimary fill, white text
+    - "Continue" button: caribbeanGradientOcean fill, white text
 
 Auto-dismiss: after 5s if un-interacted (fades out)
 ```
 
 **Acceptance Criteria:**
 - [ ] Celebration triggers immediately and unmistakably on category completion
-- [ ] Confetti uses Caribbean warm colors (no primary RGB — only palette colors)
+- [ ] Confetti uses Caribbean ISLAND colors (turquoise, coral, sand gold, palm green, lavender — NOT primary RGB, NOT all-purple)
 - [ ] Trophy icon feels genuinely rewarding — warm glow, gradient fill
 - [ ] Stats summary celebrates the achievement with specific numbers
 - [ ] XP earned is prominently displayed as a tangible reward
@@ -2289,10 +2349,10 @@ Full-screen celebration:
   - Motivational message: caribbeanPlum, .body, italic
     e.g., "You've mastered 200 words. That's the vocabulary of a confident traveler."
   - Share button: outline style, caribbeanBorder, caribbeanPlum text
-  - Continue button: caribbeanGradientPrimary
+  - Continue button: caribbeanGradientOcean — turquoise "dive back in"
 
 Background particles:
-  - 20 floating orbs in Caribbean palette colors
+  - 20 floating orbs in Caribbean island palette colors (turquoise, coral, sand, palm green)
   - Slow drift animation (8-12s cycle)
   - Blur and size vary for depth illusion
 ```
@@ -2313,11 +2373,11 @@ Background particles:
 
 **Epic Owner:** Premium Experience Lead
 **Priority:** P1 — Profile and Membership drive upgrade conversion; premium feel directly impacts revenue
-**Goal:** Transform the Profile and Membership screens from functional settings panels into aspirational, luxurious spaces that make users feel valued and make the premium tiers feel irresistible.
+**Goal:** Transform the Profile and Membership screens from functional settings panels into aspirational, luxurious spaces that feel like the VIP lounge of a Caribbean resort — warm, inviting, exclusive, and aspirational. When users see the membership tiers, they should feel the same desire as seeing the penthouse suite at a Dominican Republic beachfront hotel.
 
 ### The Strategic Importance
 
-Profile is where users see their identity within the app. Membership is where they decide whether to invest. In light mode, these screens need to feel like visiting a luxury boutique — warm, inviting, exclusive, and aspirational. Every element should whisper "you deserve the best experience."
+Profile is where users see their identity within the app. Membership is where they decide whether to invest. In light mode, these screens need to feel like visiting a luxury beach boutique — warm teak wood, turquoise accents, sand-stone surfaces, and that intoxicating ocean breeze feeling. Every element should whisper "you deserve the island experience."
 
 ---
 
@@ -2346,8 +2406,8 @@ Avatar area:
   - User initials in a 72pt circle
   - Fill: caribbeanGradientSunset (lavender → rose → amber)
   - Border: white @ 0.60, lineWidth 2 (bright ring — like a pearl setting)
-  - Shadow: #C494FC @ 0.15, radius 12 + #F472B6 @ 0.06, radius 4
-  - Rotating ambient ring: thin (1.5pt), caribbeanGradientPrimary @ 0.30
+  - Shadow: #0EA5E9 @ 0.12, radius 12 + #06B6D4 @ 0.06, radius 4 — turquoise ocean glow
+  - Rotating ambient ring: thin (1.5pt), caribbeanGradientOcean @ 0.30
     360° rotation over 30s (very slow, luxurious)
 
 Name:
@@ -2383,13 +2443,13 @@ Quick stats row:
 ```
 Calendar grid (last 30 days):
   - Each day: 14pt circle
-  - Active day (practiced): caribbeanGradientPrimary fill
+  - Active day (practiced): caribbeanGradientOcean fill — turquoise ocean accent
   - Inactive day (missed): caribbeanRecessed fill, caribbeanBorderSubtle stroke
   - Today: caribbeanGradientWarm fill + pulsing glow ring
   - Future: caribbeanDisabled (lighter than inactive)
 
 Streak highlight:
-  - Consecutive days connected with a thin caribbeanGradientPrimary line
+  - Consecutive days connected with a thin caribbeanGradientOcean line — turquoise thread
   - Current streak days have slightly larger circles (16pt)
   - Streak label: "🔥 12-day streak" — caribbeanGradientWarm text
 
@@ -2435,9 +2495,9 @@ Tab bar container:
   - Inner padding: 3pt
 
 Active tab:
-  - Background: caribbeanGradientPrimary fill (gradient capsule)
+  - Background: caribbeanGradientOcean fill (turquoise gradient capsule)
   - Text: white, weight .semibold
-  - Shadow: caribbeanShadowGlow (rose glow beneath active pill)
+  - Shadow: caribbeanShadowGlow (turquoise ocean glow beneath active pill)
   - Transition: matchedGeometryEffect for sliding active indicator
 
 Inactive tab:
@@ -2466,7 +2526,7 @@ Toggle row:
     Light mode: ☀️ with warm golden rays (animated, subtle rotation)
     Dark mode: 🌙 with cosmic purple glow
   - Title: "Appearance" — caribbeanInk, weight .semibold
-  - Subtitle: "Caribbean Sunrise" or "Cosmic Night" — caribbeanPlum
+  - Subtitle: "Tropical Island" or "Cosmic Night" — caribbeanPlum
   - Toggle: PremiumToggle component with warm tint
 
 Toggle animation (dark → light):
@@ -2482,9 +2542,9 @@ Toggle animation (light → dark):
 ```
 
 **Acceptance Criteria:**
-- [ ] Toggle label changes contextually: "Caribbean Sunrise" in light, "Cosmic Night" in dark
+- [ ] Toggle label changes contextually: "Tropical Island" in light, "Cosmic Night" in dark
 - [ ] Toggle animation is smooth and delightful — the moment of switching should spark joy
-- [ ] Warm wash effect rippling from the toggle creates a "the world is changing" moment
+- [ ] Warm wash effect rippling from the toggle creates a "the world is transforming" moment — from cosmic void to tropical paradise
 - [ ] All visible UI elements transition smoothly (no flash, no jarring color jumps)
 - [ ] Toggle is accessible with VoiceOver (announces current mode and action)
 - [ ] Animation respects `reduceMotion` (instant switch, no ripple)
@@ -2507,7 +2567,7 @@ Section header:
 
 Toggle control (PremiumToggle):
   - Track off: caribbeanRecessed fill
-  - Track on: caribbeanGradientPrimary
+  - Track on: caribbeanGradientOcean — turquoise ocean
   - Thumb: white with caribbeanShadowSubtle
   - Thumb on: white with caribbeanShadowGlow
 
@@ -2596,8 +2656,8 @@ Feature list:
 
 CTA button:
   - Current tier: outlined, caribbeanBorder, "Current Plan"
-  - Upgrade target: caribbeanGradientPrimary fill, white text, .semibold
-  - Shadow: caribbeanShadowGlow — rose glow on upgrade CTA
+  - Upgrade target: caribbeanGradientOcean fill, white text, .semibold
+  - Shadow: caribbeanShadowGlow — turquoise ocean glow on upgrade CTA
   - Pulsing glow animation on recommended tier (2s cycle)
 
 Recommended badge:
@@ -2710,7 +2770,7 @@ Language card:
 
 Connection rail:
   - Replace .white.opacity(0.45) circle with caribbeanElevated
-  - Connection line: caribbeanGradientPrimary @ 0.30
+  - Connection line: caribbeanGradientOcean @ 0.30
 
 "Start Adventure" button:
   - Keep caribbeanInk text (works well)
@@ -2732,11 +2792,13 @@ Connection rail:
 
 **Epic Owner:** Visual Design Systems Lead
 **Priority:** P0 — The background is the canvas on which everything else sits; it defines the entire mood
-**Goal:** Create a luminous, breathing Caribbean background system that feels like golden hour on a tropical beach — warm light filtering through palm trees, soft lens flares, and a gently shifting sky that makes every screen feel alive with warmth and possibility.
+**Goal:** Create a luminous, breathing Caribbean background system that feels like standing on a Dominican Republic beach — warm sand underfoot, turquoise water stretching to the horizon, palm shadows dancing, golden sunlight filtering through everything. The background should make users feel physically WARMER when they switch to light mode. This is not a white screen. This is a tropical island.
 
 ### The Design Vision
 
-Dark mode has the cosmic nebula — a rich, animated Metal shader background with stars, depth, and drama. Light mode needs an equally stunning counterpart, but through the lens of warm, natural light. Think: golden hour photography, Caribbean sunrises, watercolor washes, and the way light dances on ocean surfaces.
+Dark mode has the cosmic nebula — a rich, animated Metal shader background with stars, depth, and drama. Light mode needs an equally stunning counterpart, but through the lens of tropical island life. Think: the world's most beautiful beach at mid-morning. Turquoise water so clear you can see the bottom. Sand so warm it glows golden. Palm trees creating dappled shadows. The horizon where ocean meets sky in a soft blur. That impossible Caribbean light that makes everything look like a painting.
+
+**THIS is what the background needs to evoke.** Not a white screen with lavender tints. A tropical paradise.
 
 ---
 
@@ -2765,61 +2827,72 @@ Layer 7: Soft veil (caribbeanInk @ 0.03)
 **Proposed premium light mode background layers:**
 ```
 Base layer (static):
-  - Gradient: caribbeanCanvas → caribbeanElevated (slightly warm off-white)
-  - Direction: top (warm) → bottom (cool) — natural sky lighting model
+  - Gradient: caribbeanCanvas (#FFFCF5) → caribbeanSurface (#FDF9F0)
+  - Direction: bottom (warm sand) → top (warm sky)
+  - Purpose: Warm sand-white foundation — NOT cold white
 
-Layer 1 — Warm Sky Wash:
-  - Radial gradient: center-top anchored
-  - Color: #FFF7ED (cream) → transparent
-  - Size: 140% of screen width
-  - Purpose: Simulates warm light coming from above
-  - Animated: center position drifts ±5% over 20s (slow breathing)
+Layer 1 — Turquoise Ocean Wash (THE SIGNATURE LAYER):
+  - Radial gradient: anchored top-center (where the "ocean horizon" would be)
+  - Color: #0EA5E9 @ 0.06 → #06B6D4 @ 0.03 → transparent
+  - Size: 160% of screen width
+  - Purpose: **This is the layer that makes it Caribbean.** Subtle turquoise
+    wash across the top of the screen, like looking out over turquoise water.
+    This single layer is the difference between "generic warm app" and
+    "Caribbean island app."
+  - Animated: center position drifts ±3% over 25s (like ocean swells)
 
-Layer 2 — Lavender Atmosphere:
-  - Radial gradient: offset 30% right, 70% down
-  - Color: #C494FC @ 0.06 → transparent
-  - Size: 90% of screen width
-  - Purpose: Caribbean lavender identity — brand signature
-  - Animated: opacity breathes 0.04-0.08 over 12s
+Layer 2 — Warm Sand Glow:
+  - Radial gradient: anchored bottom-center
+  - Color: #FDE68A @ 0.05 → #F59E0B @ 0.02 → transparent
+  - Size: 120% of screen width
+  - Purpose: Warm golden-sand glow from below — content sits "on the beach"
+  - Animated: opacity breathes 0.03-0.06 over 15s
 
-Layer 3 — Rose Gold Accent Pool:
-  - Radial gradient: offset 20% left, 40% down
-  - Color: #F472B6 @ 0.05 → transparent
-  - Size: 60% of screen width
-  - Purpose: Warmth accent — like rose-gold jewelry catching light
-  - Animated: position drifts ±8% in both axes over 16s
-
-Layer 4 — Amber Highlight (Golden Hour):
-  - Radial gradient: offset 50% right, 20% down
-  - Color: #FB923C @ 0.04 → transparent
+Layer 3 — Coral Accent Pool:
+  - Radial gradient: offset 30% right, 50% down
+  - Color: #FB7185 @ 0.04 → transparent
   - Size: 50% of screen width
-  - Purpose: Sunset warmth, creates depth variety
-  - Animated: opacity pulses 0.02-0.06 over 18s
+  - Purpose: Splash of coral pink — like a bougainvillea bush in peripheral vision
+  - Animated: position drifts ±6% in both axes over 18s
+
+Layer 4 — Palm Shadow Dapple:
+  - Radial gradient: offset 40% left, 30% down
+  - Color: #10B981 @ 0.02 → transparent
+  - Size: 40% of screen width
+  - Purpose: Barely-there tropical green — like dappled palm tree shadow
+  - Animated: opacity varies 0.01-0.03 over 20s (leaves moving in breeze)
 
 Layer 5 — Crystalline Shimmer:
-  - Noise texture overlay: very subtle, caribbeanInk @ 0.012
-  - Purpose: Prevents banding in gradients, adds "texture"
+  - Noise texture overlay: very subtle, caribbeanInk @ 0.010
+  - Purpose: Prevents banding in gradients, adds "sand grain" texture
   - Static (no animation)
 
 Atmospheric veil:
-  - caribbeanInk @ 0.015 overlay (barely visible)
-  - Purpose: Prevents background from washing out text
+  - caribbeanInk @ 0.012 overlay (barely visible)
+  - Purpose: Ensures text contrast stays excellent
 
-TOTAL: 5 visual layers + 1 noise layer + 1 veil
+TOTAL: 4 visual layers (ocean, sand, coral, palm) + 1 noise layer + 1 veil
+COLOR STORY: Ocean turquoise at top → coral/green mid → warm sand at bottom
+             This is literally the view FROM the beach — sky/water, foliage, sand
 PERFORMANCE: Only Layers 1-4 animate (slow sine-wave position/opacity changes)
 POWER: Much cheaper than Metal shaders — all SwiftUI/Core Animation
 ```
 
+**CRITICAL DESIGN NOTE:** Layer 1 (Turquoise Ocean Wash) is NON-NEGOTIABLE. Without it, the background is just "warm white" — which every app has. The turquoise is what makes your eye say "Caribbean." It should be subtle enough to not interfere with content, but present enough that if you removed it, you'd feel something was missing.
+
 **Acceptance Criteria:**
-- [ ] Background feels warm, luminous, and alive — like sitting in warm sunlight
-- [ ] No single color dominates — the blend of lavender, rose, and amber creates richness
+- [ ] Background feels TROPICAL and ALIVE — like sitting on a warm beach
+- [ ] The turquoise ocean wash is visible (subtly) — if you squint, you can see the aqua tint in the top portion
+- [ ] Warm sand glow at the bottom creates "standing on the beach" warmth
+- [ ] The coral and palm layers add unexpected depth and organic variety
+- [ ] Background is NOT white, NOT flat, NOT "just a tinted screen" — it has LAYERS and LIFE
 - [ ] Background works on all screen sizes (iPhone SE through iPad Pro)
-- [ ] Background doesn't distract from content — all layers stay below 0.08 opacity
+- [ ] Background doesn't distract from content — all layers stay below 0.06 opacity
 - [ ] No gradient banding visible — noise texture layer eliminates bands
 - [ ] Performance: no dropped frames — animations use slow sine waves, minimal GPU
 - [ ] Atmospheric veil ensures text contrast remains excellent (WCAG 4.5:1 min)
 - [ ] Background gracefully crossfades during dark ↔ light mode transition
-- [ ] Background continues animating subtly when the user scrolls
+- [ ] When someone sees this background for the first time, their reaction should be "ooh" not "it's light"
 
 #### Subtask 8.1.2: Redesign Non-Dashboard Tab Backgrounds
 
@@ -2828,29 +2901,30 @@ POWER: Much cheaper than Metal shaders — all SwiftUI/Core Animation
 **Proposed premium non-dashboard backgrounds:**
 ```
 Categories tab background:
-  - Base: caribbeanCanvas
-  - Single ambient wash: lavender @ 0.03, radial, center-top
-  - Subtle: enough warmth to not feel like "empty screen"
+  - Base: caribbeanCanvas (warm sand-white)
+  - Single ambient wash: caribbeanOcean (#0EA5E9) @ 0.03, radial, center-top
+  - Purpose: ocean whisper — "you're still on the island"
 
 Journey tab background:
   - Base: caribbeanCanvas
-  - Ambient wash: rose-gold @ 0.03, radial, 60% down (warms the timeline)
-  - Subtle: milestone cards still pop against the slightly warm canvas
+  - Ambient wash: caribbeanSand (#FDE68A) @ 0.03, radial, 60% down
+  - Purpose: warm sand beneath the timeline path
 
 Profile tab background:
   - Base: caribbeanCanvas
-  - Ambient wash: warm cream (#FFF7ED) @ 0.06, radial, top
-  - Slightly warmer: profile is personal, should feel warm
+  - Ambient wash: caribbeanLagoon (#06B6D4) @ 0.03, radial, top
+  - Purpose: calm lagoon feel — profile is personal, reflective like still water
 
 Practice screens:
-  - Uses game-specific accent color @ 0.02 ambient wash
-  - FlashCards: caribbeanGradientPrimary values
-  - WordBuilder: emerald values
-  - Grammar: amber values
+  - Uses game-specific island color @ 0.02 ambient wash
+  - FlashCards: caribbeanOcean (turquoise) — knowledge flows like water
+  - WordBuilder: caribbeanCoral (#FB7185) — building is like crafting coral jewelry
+  - Grammar: caribbeanPalm (#10B981) — structure like tropical tree roots
 
 Consistent elements across all tabs:
   - Noise texture overlay (same as dashboard — brand consistency)
-  - caribbeanInk @ 0.015 atmospheric veil
+  - caribbeanInk @ 0.012 atmospheric veil
+  - The warm sand-white canvas ensures NO tab ever feels like "cold flat white"
 ```
 
 **Acceptance Criteria:**
@@ -2915,23 +2989,25 @@ Reduced motion fallback:
 **Proposed Caribbean orb palette:**
 ```
 Light mode orb colors:
-  Orb 1: caribbeanGradientPrimary (#C494FC → #F472B6) — lavender → rose
-  Orb 2: caribbeanGradientWarm (#F472B6 → #FB923C) — rose → amber
-  Orb 3: caribbeanGradientSecondary (#C494FC → #8B5CF6) — lavender → violet
-  Orb 4: caribbeanGradientSunset (#FFF7ED → #F472B6 → #C494FC) — cream → rose → lavender
+  Orb 1: caribbeanGradientOcean (#0EA5E9 → #06B6D4) — turquoise water shimmer
+  Orb 2: caribbeanGradientSand (#FDE68A → #F59E0B) — warm sand glow
+  Orb 3: caribbeanGradientCoral (#FB7185 → #F472B6) — coral reef warmth
+  Orb 4: caribbeanGradientLagoon (#06B6D4 → #0EA5E9 → #C494FC) — lagoon meeting sky
 
-Orb opacity: 0.08 - 0.15 (more transparent than dark mode)
-Orb blur: 20 - 40pt (softer than dark mode — dreamy quality)
+Orb opacity: 0.06 - 0.12 (more transparent than dark mode)
+Orb blur: 25 - 45pt (softer than dark mode — dreamy tropical haze quality)
 Orb size: same as dark mode
 
 Background interaction:
   - Orbs blend with the background gradient layers
-  - Overlapping orbs create warmer pockets
-  - Maximum combined opacity in any area: 0.30
+  - Turquoise orb near top creates "more ocean" feeling
+  - Sand orb near bottom creates "more beach" feeling
+  - Overlapping orbs create warmer pockets (like sun through water)
+  - Maximum combined opacity in any area: 0.25
 
 Glow effect:
-  - Outer glow: orb gradient @ 0.04, blur 15
-  - Much softer than dark mode glow (dark mode glow is dramatic; light mode is gentle)
+  - Outer glow: orb gradient @ 0.03, blur 15
+  - Much softer than dark mode glow — like sunspot reflections on water
 ```
 
 **Acceptance Criteria:**
@@ -2975,8 +3051,8 @@ Touch interaction (if enabled):
 ### Story 8.3: Define Light Mode Fog, Mist & Atmospheric Effects
 
 **As a** user experiencing the app in light mode,
-**I want** subtle atmospheric effects that add depth and warmth,
-**So that** the app feels like a living environment, not a flat interface.
+**I want** subtle atmospheric effects that add depth and tropical warmth,
+**So that** the app feels like a living Caribbean environment, not a flat interface.
 
 **Story Points:** 8
 **Priority:** P2
@@ -2988,14 +3064,16 @@ Touch interaction (if enabled):
 Mist layer (optional premium effect):
   - Position: bottom 20% of screen
   - Gradient: caribbeanCanvas → transparent (bottom → up)
+  - Tint: caribbeanShallows (#CCFBF1) @ 0.08 — NOT pure white mist
   - Opacity: 0.30 → 0.00
   - Animated: slow horizontal drift (40s full cycle)
-  - Gives content a "rising from mist" feeling at the bottom
+  - Gives content a "morning sea-mist rising off the shore" feeling
 
 Purpose:
   - Replaces the harsh bottom edge where content ends and background starts
   - Creates the illusion that content continues "below the mist"
   - Adds depth layering: content → mist → background
+  - The seafoam tint ensures mist feels tropical, not hospital-white
 
 Implementation:
   - Simple gradient overlay (not a texture/image)
@@ -3005,11 +3083,12 @@ Implementation:
 
 **Acceptance Criteria:**
 - [ ] Mist creates a soft bottom edge — content doesn't just "end"
+- [ ] Mist has a subtle seafoam/turquoise warmth — NOT pure white or grey
 - [ ] Mist animation is extremely subtle — user shouldn't consciously notice it
 - [ ] Mist doesn't cover interactive elements (buttons, tabs)
 - [ ] Mist fades when user reaches end of scrollable content
 - [ ] No performance impact — single gradient layer with alpha animation
-- [ ] Mist is elegant, not cheesy — think "morning fog," not "smoke machine"
+- [ ] Mist is elegant, not cheesy — think "Dominican Republic morning sea mist," not "smoke machine"
 
 #### Subtask 8.3.2: Design Light Lens Flare & Bokeh Accents
 
@@ -3017,17 +3096,19 @@ Implementation:
 ```
 Lens flare (dashboard only):
   - Single soft hexagonal flare in top-right area
-  - Color: warm cream → transparent (#FFF7ED)
+  - Color: warm sand → transparent (#FDE68A @ 0.12)
   - Size: 30px, opacity 0.12
   - Animated: slow fade in/out (6s cycle)
-  - Purpose: "camera pointed at sunlight" — photographic warmth
+  - Purpose: "camera pointed at Caribbean sunlight" — photographic warmth
 
 Bokeh circles (dashboard + journey):
   - 5-8 soft circles scattered across background
-  - Colors: mix of caribbeanGradientPrimary values @ 0.03
+  - Colors: mix of caribbeanOcean (#0EA5E9), caribbeanSand (#FDE68A),
+            caribbeanCoral (#FB7185) @ 0.03 each
   - Sizes: 20-60px, blur 10-20
   - Animated: very slow drift (20-30s cycles)
-  - Purpose: "out-of-focus light" — depth-of-field effect from photography
+  - Purpose: "sunlight filtering through palm leaves onto water" — 
+    that dappled tropical light effect from Caribbean beach photography
 
 Implementation:
   - Both effects are purely cosmetic layers behind content
@@ -3036,12 +3117,12 @@ Implementation:
 ```
 
 **Acceptance Criteria:**
-- [ ] Lens flare adds warmth without being distracting (barely noticeable)
-- [ ] Bokeh circles create depth — "this is a living space" feeling
+- [ ] Lens flare adds tropical warmth without being distracting (barely noticeable)
+- [ ] Bokeh circles create depth with island colors — turquoise, sand, coral
 - [ ] Effects are invisible when `reduceMotion` is enabled (or static)
 - [ ] Performance: < 1ms per frame for these effects
 - [ ] Effects don't compete with breathing orbs (different layer, different behavior)
-- [ ] Effects are tasteful — premium app, not a photo filter app
+- [ ] Effects are tasteful — luxury island resort app, not a photo filter app
 
 ---
 
@@ -3049,14 +3130,14 @@ Implementation:
 
 **Epic Owner:** Motion Design Lead
 **Priority:** P1 — Motion is the soul of a premium experience; it's what makes the app feel alive versus static
-**Goal:** Define a cohesive Caribbean light mode motion language that is warm, fluid, and confident — like the gentle sway of a hammock in a tropical breeze. Every animation should serve purpose: guide attention, confirm actions, or create ambient warmth.
+**Goal:** Define a cohesive Caribbean light mode motion language that is warm, fluid, and organic — like ocean waves lapping at the shore, palm fronds swaying in the trade winds, and sunlight rippling across turquoise water. Every animation should serve purpose: guide attention, confirm actions, or create ambient tropical warmth.
 
 ### Motion Design Principles for Caribbean Light Mode
 
-1. **Warm, not electric.** Dark mode animations can be sharp and cosmic. Light mode animations should be fluid, gentle, and organic — like water, light, and breeze.
-2. **Confident, not bouncy.** Spring animations use higher damping (0.7-0.85) and moderate response (0.35-0.5s). Nothing should feel rubbery or toy-like.
+1. **Ocean, not electric.** Dark mode animations can be sharp and cosmic. Light mode animations should be fluid, gentle, and organic — like water, waves, and tropical breeze. Think: watching the tide, not watching a laser show.
+2. **Confident, not bouncy.** Spring animations use higher damping (0.7-0.85) and moderate response (0.35-0.5s). Nothing should feel rubbery or toy-like. Think: a sailboat gliding into harbor, not a beach ball.
 3. **Purposeful, not decorative.** Every animation answers the question: what is this teaching the user? Where should they look? What just happened?
-4. **Layered, not simultaneous.** Complex transitions stagger elements by 50-80ms, creating a "ripple" effect rather than everything appearing at once.
+4. **Layered, not simultaneous.** Complex transitions stagger elements by 50-80ms, creating a "ripple" effect — like waves arriving at shore one after another, rather than everything appearing at once.
 
 ---
 
@@ -3328,11 +3409,13 @@ Phase 1 (0.0s - 0.15s): Toggle Responds
   - Toggle pill slides to sun position
   - Sun icon begins to glow warm
 
-Phase 2 (0.1s - 0.5s): Warm Wash Expands
+Phase 2 (0.1s - 0.5s): Turquoise Ocean Wash Expands
   - Radial gradient expands from the toggle position
-  - Color: caribbeanGradientSunset → transparent
+  - Color: caribbeanGradientOcean (turquoise → teal) → warm sand → transparent
   - Expansion: 0 → screen diagonal, easeOut
   - Behind the wash: light mode colors are already set
+  - Purpose: cosmic void gives way to OCEAN — it should feel like sunrise
+    breaking over the Caribbean Sea, turquoise light flooding the screen
 
 Phase 3 (0.15s - 0.55s): UI Elements Crossfade
   - All UI colors crossfade from dark → light values
@@ -3341,13 +3424,14 @@ Phase 3 (0.15s - 0.55s): UI Elements Crossfade
   - Glass cards: blur and tint shift simultaneously
 
 Phase 4 (0.3s - 0.8s): Background Awakens
-  - Background layers: dark cosmic → warm Caribbean
-  - Stars: fade out
-  - Warm sky wash: fades in
-  - Breathing orbs: color crossfade (cosmic → Caribbean)
+  - Background layers: dark cosmic → tropical Caribbean island
+  - Stars: fade out (night is ending)
+  - Turquoise ocean wash: fades in (the sea appears)
+  - Sand glow: fades in (the beach materializes)
+  - Breathing orbs: color crossfade (cosmic → tropical island colors)
 
 Phase 5 (0.5s - 1.0s): Settle
-  - Warm wash gradient fades to 0 (reveals the fully light UI)
+  - Turquoise ocean wash gradient fades to 0 (reveals the fully light tropical UI)
   - All ambient animations resume at their normal pace
   - Status bar text: animates from white to black
 
@@ -3365,8 +3449,8 @@ Same phasing but reversed:
 ```
 
 **Acceptance Criteria:**
-- [ ] Mode switch feels like a "moment" — not a jarring flash
-- [ ] Warm/cosmic wash creates the illusion of light spreading across the screen
+- [ ] Mode switch feels like a "moment" — sunrise over the Caribbean, not a jarring flash
+- [ ] Turquoise ocean wash creates the illusion of tropical light spreading across the screen
 - [ ] No flickering or partial states visible during transition
 - [ ] UI elements don't flash to system colors at any point
 - [ ] Total transition is ≤ 1.0s (impressive but not slow)
@@ -3421,7 +3505,7 @@ UI components and graphical objects: 3:1 minimum
 | caribbeanPlum on caribbeanElevated | Secondary text on card | ≥ 4.5:1     | Common combination             |
 | caribbeanMist on caribbeanCanvas   | Tertiary/hint text     | ≥ 3:1       | Large text only, or non-text   |
 | caribbeanMist on caribbeanElevated | Hint text on card      | ≥ 3:1       | Large text or UI component     |
-| White on caribbeanGradientPrimary  | Button text on CTA     | ≥ 4.5:1     | Buttons must be fully readable |
+| White on caribbeanGradientOcean  | Button text on CTA     | ≥ 4.5:1     | Buttons must be fully readable |
 | caribbeanInk on caribbeanRecessed  | Input text on tracks   | ≥ 4.5:1     | Progress bars, form fields     |
 
 **Action items if any pair fails:**
@@ -3457,7 +3541,7 @@ Deuteranopia (green-blind, ~5.9% of males):
   - Test: Apply deuteranopia filter and verify
 
 Tritanopia (blue-blind, ~0.02% of population):
-  - Risk: caribbeanGradientPrimary lavender may lose distinction
+  - Risk: caribbeanGradientOcean turquoise may appear similar to caribbeanGradientLagoon
   - Solution: Ensure gradient endpoints have sufficient lightness contrast
   - Test: Apply tritanopia filter and verify key UI is distinguishable
 
@@ -3852,7 +3936,9 @@ Performance check:
 
 ---
 
-*Document version: 1.0*
+*Document version: 2.0 — Caribbean Tropical Island Overhaul*
 *Author: Senior Staff UX Designer / Product Owner*
 *Created: comprehensive Caribbean light mode revamp specification*
+*Revised: Senior UX review — Dominican Republic tropical island identity (turquoise ocean, warm sand, coral, palm green)*
+*Design identity: "A Dominican Republic Morning — Barefoot on Warm Sand, Turquoise Water at Your Feet"*
 *Total stories: 35 | Total subtasks: 65+ | Total acceptance criteria: 250+*

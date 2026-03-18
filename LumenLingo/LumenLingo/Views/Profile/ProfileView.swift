@@ -79,7 +79,7 @@ struct ProfileView: View {
                     icon: "person.circle.fill",
                     colors: tierManager.tierGradientColors,
                     isCollapsed: $isHeaderCollapsed,
-                    subtitle: tierManager.tierDisplayName
+                    badge: .text(tierManager.tierDisplayName)
                 ) {
                     profileHeader
                 }
@@ -94,7 +94,7 @@ struct ProfileView: View {
                     icon: tierManager.tierIcon,
                     colors: tierManager.tierGradientColors,
                     isCollapsed: $isMyPlanCollapsed,
-                    subtitle: tierManager.tierDisplayName
+                    badge: .text(tierManager.tierDisplayName)
                 ) {
                     MyPlanCard()
                 }

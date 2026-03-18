@@ -332,26 +332,26 @@ Before defining the future, we must understand the present. The app contains **2
 
 #### Subtasks
 
-- **2.4.1** — Add optional `badge` parameter to `CollapsibleSection`: `CollapsibleBadge` struct with cases `.count(Int)`, `.text(String)`, `.icon(String, Color)`, `.progress(Double)` — rendered at trailing edge of header row, before the chevron
-- **2.4.2** — `.count` badge: renders as a pill with the number (e.g., "3") in the section's accent gradient, 11pt semibold, glass capsule background
-- **2.4.3** — `.text` badge: renders a short string (max 12 chars, truncated) as a subtle text label, 11pt, `.secondary` weight
-- **2.4.4** — `.icon` badge: renders a single SF Symbol in the specified color inside a 22×22 circle — for status indicators like ✓ (complete), ⚠ (attention), 🔒 (locked)
-- **2.4.5** — `.progress` badge: renders a 40×4pt mini progress bar with the section's accent gradient fill — for sections like "Daily XP: 75%"
-- **2.4.6** — Badge animates on state transition: when expanding, the badge morphs from its trailing-edge position to a compact subtitle position below the title text (preserving summary info while expanded); on collapse, it morphs back to the trailing badge position. Use `.matchedGeometryEffect` for a seamless migration rather than disappearing entirely — never discard useful information on expand
-- **2.4.7** — Wire badges to real data: JourneyView milestones → `.count(completedCount)`, streak → `.text("🔥 \(days)")`, accuracy → `.progress(avgAccuracy)`, tier-locked sections → `.icon("lock.fill", .secondary)`
-- **2.4.8** — For ProfileView: "My Plan" section → `.text(tierDisplayName)` badge (replacing current subtitle usage)
+- [x] **2.4.1** — Add optional `badge` parameter to `CollapsibleSection`: `CollapsibleBadge` struct with cases `.count(Int)`, `.text(String)`, `.icon(String, Color)`, `.progress(Double)` — rendered at trailing edge of header row, before the chevron
+- [x] **2.4.2** — `.count` badge: renders as a pill with the number (e.g., "3") in the section's accent gradient, 11pt semibold, glass capsule background
+- [x] **2.4.3** — `.text` badge: renders a short string (max 12 chars, truncated) as a subtle text label, 11pt, `.secondary` weight
+- [x] **2.4.4** — `.icon` badge: renders a single SF Symbol in the specified color inside a 22×22 circle — for status indicators like ✓ (complete), ⚠ (attention), 🔒 (locked)
+- [x] **2.4.5** — `.progress` badge: renders a 40×4pt mini progress bar with the section's accent gradient fill — for sections like "Daily XP: 75%"
+- [x] **2.4.6** — Badge animates on state transition: when expanding, the badge morphs from its trailing-edge position to a compact subtitle position below the title text (preserving summary info while expanded); on collapse, it morphs back to the trailing badge position. Use `.matchedGeometryEffect` for a seamless migration rather than disappearing entirely — never discard useful information on expand
+- [x] **2.4.7** — Wire badges to real data: JourneyView milestones → `.count(completedCount)`, streak → `.text("🔥 \(days)")`, accuracy → `.progress(avgAccuracy)`, tier-locked sections → `.icon("lock.fill", .secondary)`
+- [x] **2.4.8** — For ProfileView: "My Plan" section → `.text(tierDisplayName)` badge (replacing current subtitle usage)
 
 #### Acceptance Criteria
 
-- [ ] `CollapsibleSection` accepts an optional `badge: CollapsibleBadge?` parameter
-- [ ] `.count` badge renders a glass pill with number in accent gradient
-- [ ] `.text` badge renders a subtle trailing text, truncated at 12 chars
-- [ ] `.icon` badge renders a colored SF Symbol in a circle
-- [ ] `.progress` badge renders a 40×4pt mini gradient progress bar
-- [ ] Badges migrate from trailing-edge position (collapsed) to subtitle position (expanded) via `matchedGeometryEffect` — information is never lost
-- [ ] At least 8 of the 15 CollapsibleSection instances have meaningful badges wired to real data
-- [ ] Badge layout doesn't overflow or clip on small devices (iPhone SE screen width)
-- [ ] VoiceOver reads badge content as part of the collapsed section announcement
+- [x] `CollapsibleSection` accepts an optional `badge: CollapsibleBadge?` parameter
+- [x] `.count` badge renders a glass pill with number in accent gradient
+- [x] `.text` badge renders a subtle trailing text, truncated at 12 chars
+- [x] `.icon` badge renders a colored SF Symbol in a circle
+- [x] `.progress` badge renders a 40×4pt mini gradient progress bar
+- [x] Badges migrate from trailing-edge position (collapsed) to subtitle position (expanded) via `matchedGeometryEffect` — information is never lost
+- [x] At least 8 of the 15 CollapsibleSection instances have meaningful badges wired to real data
+- [x] Badge layout doesn't overflow or clip on small devices (iPhone SE screen width)
+- [x] VoiceOver reads badge content as part of the collapsed section announcement
 
 ---
 

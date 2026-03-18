@@ -88,7 +88,8 @@ struct JourneyView: View {
                     title: hasUserName ? "\(displayName)'s XP" : L.totalXP,
                     icon: "chart.bar.fill",
                     colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                    isCollapsed: $isStatsCollapsed
+                    isCollapsed: $isStatsCollapsed,
+                    badge: .text(formattedXP(profile?.totalXP ?? 0) + " XP")
                 ) {
                     overallStatsPanel
                 }
@@ -98,7 +99,8 @@ struct JourneyView: View {
                     title: L.milestones,
                     icon: "flag.checkered",
                     colors: [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
-                    isCollapsed: $isMilestonesCollapsed
+                    isCollapsed: $isMilestonesCollapsed,
+                    badge: .count(completedMilestoneCount)
                 ) {
                     milestonesSection
                 }
@@ -108,7 +110,8 @@ struct JourneyView: View {
                     title: L.gamePerformance,
                     icon: "gamecontroller.fill",
                     colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
-                    isCollapsed: $isGameBreakdownCollapsed
+                    isCollapsed: $isGameBreakdownCollapsed,
+                    badge: tierBadge(for: .gameBreakdown) ?? .progress(overallAccuracy)
                 ) {
                     journeySection(for: .gameBreakdown) {
                         gameTypeBreakdown
@@ -120,7 +123,8 @@ struct JourneyView: View {
                     title: L.dailyXPChart,
                     icon: "chart.bar.xaxis",
                     colors: [Color(hex: "#f59e0b"), Color(hex: "#ef4444")],
-                    isCollapsed: $isDailyXPCollapsed
+                    isCollapsed: $isDailyXPCollapsed,
+                    badge: tierBadge(for: .dailyXPChart)
                 ) {
                     journeySection(for: .dailyXPChart) {
                         DailyXPChartView(allProgress: allProgress)
@@ -132,7 +136,8 @@ struct JourneyView: View {
                     title: L.weeklyTrend,
                     icon: "chart.line.uptrend.xyaxis",
                     colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
-                    isCollapsed: $isWeeklyTrendCollapsed
+                    isCollapsed: $isWeeklyTrendCollapsed,
+                    badge: tierBadge(for: .weeklyTrend)
                 ) {
                     journeySection(for: .weeklyTrend) {
                         WeeklyTrendWidget(allProgress: allProgress)
@@ -144,7 +149,8 @@ struct JourneyView: View {
                     title: L.accuracyHeatmap,
                     icon: "square.grid.3x3.fill",
                     colors: [Color(hex: "#f97316"), Color(hex: "#f59e0b")],
-                    isCollapsed: $isAccuracyHeatmapCollapsed
+                    isCollapsed: $isAccuracyHeatmapCollapsed,
+                    badge: tierBadge(for: .accuracyHeatmap)
                 ) {
                     journeySection(for: .accuracyHeatmap) {
                         AccuracyHeatmapView(allProgress: allProgress)
@@ -156,7 +162,8 @@ struct JourneyView: View {
                     title: L.monthlyReport,
                     icon: "doc.text.fill",
                     colors: [Color(hex: "#6366f1"), Color(hex: "#8b5cf6")],
-                    isCollapsed: $isMonthlyReportCollapsed
+                    isCollapsed: $isMonthlyReportCollapsed,
+                    badge: tierBadge(for: .monthlyReport)
                 ) {
                     journeySection(for: .monthlyReport) {
                         MonthlyReportWidget(allProgress: allProgress, profile: profile)
@@ -168,7 +175,8 @@ struct JourneyView: View {
                     title: L.milestonePredictionsTitle,
                     icon: "sparkle.magnifyingglass",
                     colors: [Color(hex: "#ec4899"), Color(hex: "#f43f5e")],
-                    isCollapsed: $isMilestonePredictionsCollapsed
+                    isCollapsed: $isMilestonePredictionsCollapsed,
+                    badge: tierBadge(for: .milestonePredictions)
                 ) {
                     journeySection(for: .milestonePredictions) {
                         MilestonePredictionWidget(
@@ -184,7 +192,8 @@ struct JourneyView: View {
                     title: L.exportData,
                     icon: "square.and.arrow.up.fill",
                     colors: [Color(hex: "#14b8a6"), Color(hex: "#06b6d4")],
-                    isCollapsed: $isExportDataCollapsed
+                    isCollapsed: $isExportDataCollapsed,
+                    badge: tierBadge(for: .exportData)
                 ) {
                     journeySection(for: .exportData) {
                         ExportDataWidget(allProgress: allProgress, profile: profile)
@@ -196,7 +205,8 @@ struct JourneyView: View {
                     title: L.learningInsights,
                     icon: "lightbulb.fill",
                     colors: [Color(hex: "#f59e0b"), Color(hex: "#fbbf24")],
-                    isCollapsed: $isInsightsCollapsed
+                    isCollapsed: $isInsightsCollapsed,
+                    badge: tierBadge(for: .insights)
                 ) {
                     journeySection(for: .insights) {
                         InsightsDashboardWidget(allProgress: allProgress)
@@ -208,7 +218,8 @@ struct JourneyView: View {
                     title: L.currentStreak,
                     icon: "flame.fill",
                     colors: [.orange, Color(hex: "#ef4444")],
-                    isCollapsed: $isStreakCollapsed
+                    isCollapsed: $isStreakCollapsed,
+                    badge: .text("🔥 \(profile?.streakDays ?? 0)")
                 ) {
                     streakSection
                 }
@@ -228,7 +239,8 @@ struct JourneyView: View {
                     title: L.resetProgress,
                     icon: "arrow.triangle.2.circlepath",
                     colors: [.red.opacity(0.9), .red.opacity(0.6)],
-                    isCollapsed: $isResetCollapsed
+                    isCollapsed: $isResetCollapsed,
+                    badge: .icon("exclamationmark.triangle.fill", .red.opacity(0.6))
                 ) {
                     resetProgressButton
                 }
