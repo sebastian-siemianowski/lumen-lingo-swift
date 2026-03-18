@@ -150,9 +150,9 @@ Create the following semantic surface tokens in `Extensions.swift`:
 **Why sand-warm and NOT lavender-white:** The Dominican Republic's defining visual baseline is warm sand and sunlight, not cool lavender. Lavender appears in ACCENTS, not in every background. When users look at the app, they should subconsciously feel "warm beach" not "slightly tinted hospital."
 
 **Acceptance Criteria:**
-- [ ] All 5 surface tokens defined as `static var` on `Color` extension
-- [ ] Each token has an inline comment documenting its role and tropical reference (e.g., `/// App-level page background — warm sand-white, beach cabana linen`)
-- [ ] Tokens use `Color(red:green:blue:opacity:)` initializer for precision
+- [x] All 5 surface tokens defined as `static var` on `Color` extension
+- [x] Each token has an inline comment documenting its role and tropical reference (e.g., `/// App-level page background — warm sand-white, beach cabana linen`)
+- [x] Tokens use `Color(red:green:blue:opacity:)` initializer for precision
 - [ ] Visual test: screenshot each surface token rendered as a full-screen rectangle — confirm WARM (yellowish/cream) undertone, not cool grey or cold lavender
 - [ ] Each surface token meets WCAG 2.1 AA contrast ratio (≥ 4.5:1) with `caribbeanInk` text
 - [ ] Side-by-side comparison: pure `#FFFFFF` next to `caribbeanCanvas` — the warmth difference should be visible
@@ -166,10 +166,10 @@ Create the following semantic surface tokens in `Extensions.swift`:
 | `caribbeanDisabled` | `rgb(232, 240, 238, 0.55)` | Disabled controls — muted tide-pool |
 
 **Acceptance Criteria:**
-- [ ] 3 interactive surface tokens defined
-- [ ] `caribbeanHover` has a subtle OCEAN coolness — distinguishes it from the warm canvas
-- [ ] `caribbeanSelected` uses **turquoise** tint (ocean signature) — clearly marks "this is active" with the app's defining color
-- [ ] `caribbeanDisabled` reads as "unavailable" without being ugly or jarring
+- [x] 3 interactive surface tokens defined
+- [x] `caribbeanHover` has a subtle OCEAN coolness — distinguishes it from the warm canvas
+- [x] `caribbeanSelected` uses **turquoise** tint (ocean signature) — clearly marks "this is active" with the app's defining color
+- [x] `caribbeanDisabled` reads as "unavailable" without being ugly or jarring
 
 #### Subtask 1.1.3: Define Depth Shadow Token System
 
@@ -183,10 +183,10 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 | `caribbeanShadowGlow` | `#06B6D4` @ 0.10 | 16 | 0 | Interactive highlights, CTA glow — turquoise aura |
 
 **Acceptance Criteria:**
-- [ ] Shadow tokens implemented as `ViewModifier` structs (e.g., `.caribbeanShadow(.subtle)`)
-- [ ] Each shadow uses **colored** shadows — teal/turquoise tones (primary) with warm sand or coral accents, never grey or black
-- [ ] Shadow intensity scales with element elevation — higher elements cast deeper, more diffuse shadows
-- [ ] Shadows evoke the way objects cast colored shadows on a bright Caribbean beach
+- [x] Shadow tokens implemented as `ViewModifier` structs (e.g., `.caribbeanShadow(.subtle)`)
+- [x] Each shadow uses **colored** shadows — teal/turquoise tones (primary) with warm sand or coral accents, never grey or black
+- [x] Shadow intensity scales with element elevation — higher elements cast deeper, more diffuse shadows
+- [x] Shadows evoke the way objects cast colored shadows on a bright Caribbean beach
 - [ ] On the warm sand canvas, shadows create a gentle "floating above the beach" effect, not a hard edge
 
 ---
@@ -215,13 +215,13 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 **CRITICAL DESIGN NOTE:** `caribbeanGradientOcean` is the PRIMARY gradient — it replaces the old lavender→rose primary. The turquoise-to-teal gradient IS the visual identity of the Dominican Republic Caribbean. Lavender→rose gradients become SECONDARY (sunset, premium accents). A user should see turquoise/teal as the dominant accent color, with lavender/rose/amber as supporting warmth.
 
 **Acceptance Criteria:**
-- [ ] All 7 gradient tokens defined as static properties returning `LinearGradient`
+- [x] All 7 gradient tokens defined as static properties returning `LinearGradient`
 - [ ] `caribbeanGradientOcean` is used in MORE places than any other gradient — it's the signature
-- [ ] Each gradient has start/end points documented
+- [x] Each gradient has start/end points documented
 - [ ] Gradients tested against both `caribbeanCanvas` (warm sand white) and `caribbeanElevated` backgrounds
-- [ ] No gradient contains pure white (kills contrast on light backgrounds)
-- [ ] Each gradient is visually distinct from the others at thumbnail size
-- [ ] The overall gradient family clearly says "Caribbean island" not "generic pastel"
+- [x] No gradient contains pure white (kills contrast on light backgrounds)
+- [x] Each gradient is visually distinct from the others at thumbnail size
+- [x] The overall gradient family clearly says "Caribbean island" not "generic pastel"
 
 #### Subtask 1.2.2: Define Semantic Feedback Colors
 
@@ -237,11 +237,11 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 | `caribbeanInfoSoft` | `#7C3AED` @ 0.10 | Info background tint | `#7C3AED` @ 0.15 |
 
 **Acceptance Criteria:**
-- [ ] All 8 semantic feedback tokens defined
-- [ ] "Soft" variants create a tinted background visible on `caribbeanElevated` cards
+- [x] All 8 semantic feedback tokens defined
+- [x] "Soft" variants create a tinted background visible on `caribbeanElevated` cards
 - [ ] Contrast ratio: main color on soft background ≥ 3:1
 - [ ] Each feedback color pair tested in a notification/badge mockup
-- [ ] Colors are consistent with Tailwind CSS naming conventions for familiarity
+- [x] Colors are consistent with Tailwind CSS naming conventions for familiarity
 
 #### Subtask 1.2.3: Define Border & Separator Tokens
 
@@ -253,12 +253,12 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 | `caribbeanBorderAccent` | `caribbeanGradientOcean` | Premium feature borders, hero cards — turquoise ocean edge |
 
 **Acceptance Criteria:**
-- [ ] All 4 border tokens defined
-- [ ] `caribbeanBorder` visible against both `caribbeanCanvas` and `caribbeanElevated`
-- [ ] `caribbeanBorderSubtle` creates a "just barely there" line — visible on close inspection, not distracting
-- [ ] `caribbeanBorderFocus` stands out clearly for accessibility (visible from arm's length)
+- [x] All 4 border tokens defined
+- [x] `caribbeanBorder` visible against both `caribbeanCanvas` and `caribbeanElevated`
+- [x] `caribbeanBorderSubtle` creates a "just barely there" line — visible on close inspection, not distracting
+- [x] `caribbeanBorderFocus` stands out clearly for accessibility (visible from arm's length)
 - [ ] `caribbeanBorderAccent` gradient renders cleanly on rounded rectangles (no clipping artifacts)
-- [ ] All borders use **turquoise/ocean tint** (primary) or **warm lavender tint** (secondary), never raw grey or black
+- [x] All borders use **turquoise/ocean tint** (primary) or **warm lavender tint** (secondary), never raw grey or black
 
 #### Subtask 1.2.4: Define Caribbean Island Color Tokens (NEW — CRITICAL)
 
@@ -280,12 +280,12 @@ These are the tropical-specific colors that make this feel like the Dominican Re
 **Why these matter:** Without these tokens, the app defaults to lavender-everything — which reads "purple theme" not "Caribbean island." These colors are what makes someone look at the screen and FEEL the tropics. The turquoise is not optional — it's the single most recognizable color of the Caribbean.
 
 **Acceptance Criteria:**
-- [ ] All 10 tropical tokens defined as `static var` on `Color` extension
+- [x] All 10 tropical tokens defined as `static var` on `Color` extension
 - [ ] `caribbeanOcean` and `caribbeanLagoon` are the MOST USED accent colors in the light mode — they appear on every screen
-- [ ] Each token has a documented tropical reference (e.g., `/// Punta Cana turquoise water — primary accent`)
-- [ ] Tokens create a cohesive "island palette" when viewed together in a swatch grid
-- [ ] No two tokens are confusably similar — each has a distinct role and visual identity
-- [ ] Turquoise/teal family (Ocean, Lagoon, Reef, Shallows, Foam) provides a full range from subtle bg tint to bold accent
+- [x] Each token has a documented tropical reference (e.g., `/// Punta Cana turquoise water — primary accent`)
+- [x] Tokens create a cohesive "island palette" when viewed together in a swatch grid
+- [x] No two tokens are confusably similar — each has a distinct role and visual identity
+- [x] Turquoise/teal family (Ocean, Lagoon, Reef, Shallows, Foam) provides a full range from subtle bg tint to bold accent
 
 ---
 
@@ -331,11 +331,11 @@ Systematically replace `.white.opacity(X)` with Caribbean tokens in all game vie
 | `.white.opacity(0.04)` explanation bg | `isDark ? ... : caribbeanRecessed` |
 
 **Acceptance Criteria:**
-- [ ] Zero instances of `.white.opacity()` used for backgrounds/borders in light mode path of game views
+- [x] Zero instances of `.white.opacity()` used for backgrounds/borders in light mode path of game views
 - [ ] Each replacement tested with screenshot — element clearly visible on Caribbean background
-- [ ] No replacement introduces harsh contrast or jarring color discontinuities
-- [ ] Replacements use semantic tokens (not raw RGB values)
-- [ ] All three game views (FlashCards, WordBuilder, Grammar) pass visual QA review
+- [x] No replacement introduces harsh contrast or jarring color discontinuities
+- [x] Replacements use semantic tokens (not raw RGB values)
+- [x] All three game views (FlashCards, WordBuilder, Grammar) pass visual QA review
 
 #### Subtask 1.3.2: Audit and Replace in Shared Components
 
@@ -350,10 +350,10 @@ Systematically replace `.white.opacity(X)` with Caribbean tokens in all game vie
 - Add Caribbean tint overlay in light mode matching `GlassCardBackground` approach
 
 **Acceptance Criteria:**
-- [ ] `GlassDivider` renders as a visible lavender-tinted line in light mode
-- [ ] `AnimatedProgressBar` track visible in light mode — shows as a soft lavender track
-- [ ] `GameHeader` gains Caribbean warmth in light mode (not plain grey material)
-- [ ] No regressions in dark mode — all existing dark mode values preserved
+- [x] `GlassDivider` renders as a visible lavender-tinted line in light mode
+- [x] `AnimatedProgressBar` track visible in light mode — shows as a soft lavender track
+- [x] `GameHeader` gains Caribbean warmth in light mode (not plain grey material)
+- [x] No regressions in dark mode — all existing dark mode values preserved
 
 #### Subtask 1.3.3: Audit and Replace in Membership & Language Selection
 
@@ -367,9 +367,9 @@ Systematically replace `.white.opacity(X)` with Caribbean tokens in all game vie
 - Replace `.white.opacity(0.5)` card backgrounds with `caribbeanElevated`
 
 **Acceptance Criteria:**
-- [ ] Membership comparison toggle clearly visible and interactive-looking in light mode
-- [ ] LanguageSelectionView uses zero inline RGB values that duplicate Caribbean token values
-- [ ] All card backgrounds in language selection use semantic tokens
+- [x] Membership comparison toggle clearly visible and interactive-looking in light mode
+- [x] LanguageSelectionView uses zero inline RGB values that duplicate Caribbean token values
+- [x] All card backgrounds in language selection use semantic tokens
 - [ ] Style consistency between LanguageSelectionView and the rest of the app verified side-by-side
 
 ---
@@ -404,11 +404,11 @@ extension Color {
 ```
 
 **Acceptance Criteria:**
-- [ ] `TextTier` enum with `.primary`, `.secondary`, `.tertiary` cases defined
-- [ ] `Color.adaptiveText(_:isDark:)` returns correct colors for each tier in both modes
-- [ ] `Color.adaptiveSurface(_:isDark:)` helper for surface levels (`.canvas`, `.elevated`, `.recessed`)
-- [ ] `Color.adaptiveBorder(_:isDark:)` helper for border levels (`.subtle`, `.normal`, `.focus`)
-- [ ] Helpers are opt-in — existing code doesn't break; new code can adopt incrementally
+- [x] `TextTier` enum with `.primary`, `.secondary`, `.tertiary` cases defined
+- [x] `Color.adaptiveText(_:isDark:)` returns correct colors for each tier in both modes
+- [x] `Color.adaptiveSurface(_:isDark:)` helper for surface levels (`.canvas`, `.elevated`, `.recessed`)
+- [x] `Color.adaptiveBorder(_:isDark:)` helper for border levels (`.subtle`, `.normal`, `.focus`)
+- [x] Helpers are opt-in — existing code doesn't break; new code can adopt incrementally
 - [ ] Unit test validates each helper returns correct value for both `isDark: true` and `isDark: false`
 
 #### Subtask 1.4.2: Create Shadow Modifier System
@@ -428,9 +428,9 @@ extension View {
 ```
 
 **Acceptance Criteria:**
-- [ ] `.caribbeanShadow(.subtle)` applies lavender-tinted shadow in light, dark shadow in dark
-- [ ] `.caribbeanShadow(.glow)` creates a rose-pink glow visible on interactive elements
-- [ ] Shadow modifier is environment-aware (reads ThemeManager)
+- [x] `.caribbeanShadow(.subtle)` applies lavender-tinted shadow in light, dark shadow in dark
+- [x] `.caribbeanShadow(.glow)` creates a rose-pink glow visible on interactive elements
+- [x] Shadow modifier is environment-aware (reads ThemeManager)
 - [ ] Applied to a white card on `caribbeanCanvas`, shadow creates visible floating effect
 - [ ] Performance: shadow modifiers don't trigger unnecessary re-renders
 
@@ -455,7 +455,7 @@ extension View {
 | `caribbeanIconAccent` | `caribbeanGradientOcean` | Featured/premium icons (turquoise gradient fill) |
 
 **Acceptance Criteria:**
-- [ ] Icon tokens defined and documented
+- [x] Icon tokens defined and documented
 - [ ] Tab bar icons use `caribbeanIconPrimary` (selected) and `caribbeanIconTertiary` (unselected) in light mode
 - [ ] Settings section icons use `caribbeanIconSecondary`
 - [ ] Premium/locked feature icons use `caribbeanIconAccent` gradient

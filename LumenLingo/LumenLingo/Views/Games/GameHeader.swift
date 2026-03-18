@@ -232,7 +232,7 @@ struct GameHeader: View {
             let fillWidth = max(0, geo.size.width * min(progressFraction, 1.0))
             ZStack(alignment: .leading) {
                 Capsule()
-                    .fill(.white.opacity(0.08))
+                    .fill(isDark ? .white.opacity(0.08) : Color.caribbeanRecessed)
 
                 Capsule()
                     .fill(progressFill(width: fillWidth))

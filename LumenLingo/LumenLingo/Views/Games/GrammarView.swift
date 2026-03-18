@@ -324,7 +324,7 @@ struct GrammarView: View {
             if let translation = question.translation, !translation.isEmpty {
                 Text(translation)
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.65))
+                    .foregroundStyle(isDark ? .white.opacity(0.65) : .caribbeanPlum)
                     .italic()
             }
         }
@@ -338,7 +338,9 @@ struct GrammarView: View {
                         LinearGradient(
                             colors: isCorrectAnswer
                                 ? [Color(hex: "#065f46").opacity(0.65), Color(hex: "#047857").opacity(0.45)]
-                                : [Color(hex: "#2E1065").opacity(0.55), Color(hex: "#1E3A5F").opacity(0.35)],
+                                : isDark
+                                    ? [Color(hex: "#2E1065").opacity(0.55), Color(hex: "#1E3A5F").opacity(0.35)]
+                                    : [Color.caribbeanRecessed, Color.caribbeanRecessed.opacity(0.85)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -388,25 +390,25 @@ struct GrammarView: View {
                 let (i, segment) = pair
                 var built = result + Text(segment)
                     .font(.title3.bold())
-                    .foregroundColor(.white)
+                    .foregroundColor(isDark ? .white : .caribbeanInk)
                 if i < blankCount {
                     built = built + Text("  ____  ")
                         .font(.title3.bold())
-                        .foregroundColor(Color(hex: "#c4b5fd"))
-                        .underline(color: Color(hex: "#c4b5fd").opacity(0.4))
+                        .foregroundColor(isDark ? Color(hex: "#c4b5fd") : .caribbeanOcean)
+                        .underline(color: (isDark ? Color(hex: "#c4b5fd") : .caribbeanOcean).opacity(0.4))
                 }
                 return built
             }
 
             composed
                 .multilineTextAlignment(.center)
-                .shadow(color: .black.opacity(0.3), radius: 1)
+                .shadow(color: .black.opacity(isDark ? 0.3 : 0.05), radius: 1)
         } else {
             Text(text)
                 .font(.title3.bold())
-                .foregroundColor(.white)
+                .foregroundColor(isDark ? .white : .caribbeanInk)
                 .multilineTextAlignment(.center)
-                .shadow(color: .black.opacity(0.3), radius: 1)
+                .shadow(color: .black.opacity(isDark ? 0.3 : 0.05), radius: 1)
         }
     }
 
@@ -430,7 +432,7 @@ struct GrammarView: View {
                 let (i, segment) = pair
                 var built = result + Text(segment)
                     .font(.title3.bold())
-                    .foregroundColor(.white)
+                    .foregroundColor(isDark ? .white : .caribbeanInk)
                 if i < displayParts.count {
                     if isCorrectAnswer {
                         built = built + Text(displayParts[i])
@@ -457,9 +459,9 @@ struct GrammarView: View {
         } else {
             Text(text)
                 .font(.title3.bold())
-                .foregroundColor(.white)
+                .foregroundColor(isDark ? .white : .caribbeanInk)
                 .multilineTextAlignment(.center)
-                .shadow(color: .black.opacity(0.3), radius: 1)
+                .shadow(color: .black.opacity(isDark ? 0.3 : 0.05), radius: 1)
         }
     }
 
@@ -556,12 +558,12 @@ struct GrammarView: View {
                 // Letter badge — glass circle, top-aligned
                 Text(label)
                     .font(.caption.bold())
-                    .foregroundStyle(.white.opacity(0.85))
+                    .foregroundStyle(isDark ? .white.opacity(0.85) : .caribbeanInk)
                     .frame(width: 30, height: 30)
                     .background(
                         Circle()
-                            .fill(.white.opacity(0.12))
-                            .overlay(Circle().strokeBorder(.white.opacity(0.20), lineWidth: 0.75))
+                            .fill(isDark ? .white.opacity(0.12) : Color.caribbeanSelected)
+                            .overlay(Circle().strokeBorder(isDark ? .white.opacity(0.20) : Color.caribbeanBorder, lineWidth: 0.75))
                     )
 
                 Text(option)
@@ -643,14 +645,14 @@ struct GrammarView: View {
         } else if showResult && isCorrect {
             return AnyShapeStyle(LinearGradient(colors: [Color(hex: "#10b981").opacity(0.10), Color(hex: "#059669").opacity(0.05)], startPoint: .leading, endPoint: .trailing))
         }
-        return AnyShapeStyle(.white.opacity(0.06))
+        return AnyShapeStyle(isDark ? .white.opacity(0.06) : Color.caribbeanElevated)
     }
 
     private func answerBorder(isSelected: Bool, isCorrect: Bool, showResult: Bool) -> some ShapeStyle {
         if showResult && isSelected && isCorrect { return AnyShapeStyle(Color(hex: "#10b981").opacity(0.5)) }
         if showResult && isSelected && !isCorrect { return AnyShapeStyle(Color(hex: "#fb7185").opacity(0.5)) }
         if showResult && isCorrect { return AnyShapeStyle(Color(hex: "#10b981").opacity(0.25)) }
-        return AnyShapeStyle(.white.opacity(0.15))
+        return AnyShapeStyle(isDark ? .white.opacity(0.15) : Color.caribbeanBorder)
     }
 
     // MARK: - Explanation
@@ -709,14 +711,14 @@ struct GrammarView: View {
         .background(
             ZStack {
                 RoundedRectangle(cornerRadius: 16)
-                    .fill(.white.opacity(0.04))
+                    .fill(isDark ? .white.opacity(0.04) : Color.caribbeanRecessed.opacity(0.5))
 
                 // Top gloss highlight
                 VStack {
                     RoundedRectangle(cornerRadius: 16)
                         .fill(
                             LinearGradient(
-                                colors: [.white.opacity(0.06), .clear],
+                                colors: [isDark ? .white.opacity(0.06) : .white.opacity(0.40), .clear],
                                 startPoint: .top,
                                 endPoint: .center
                             )
@@ -731,7 +733,7 @@ struct GrammarView: View {
                     .strokeBorder(
                         (tipAvailablePulse && !showExplanation)
                             ? Color(hex: "#3b82f6").opacity(0.35)
-                            : .white.opacity(0.12),
+                            : isDark ? .white.opacity(0.12) : Color.caribbeanBorder,
                         lineWidth: (tipAvailablePulse && !showExplanation) ? 1.5 : 1
                     )
             )

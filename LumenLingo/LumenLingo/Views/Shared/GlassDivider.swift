@@ -6,28 +6,34 @@ import Foundation
 /// A subtle glassmorphic divider matching the React GlassDivider component.
 /// Renders as a thin gradient line with soft glow for visual section separation.
 struct GlassDivider: View {
-    var color: Color = .white
+    var color: Color? = nil
     var opacity: Double = 0.12
     var height: CGFloat = 1
     var glowRadius: CGFloat = 4
+    @Environment(\.colorScheme) private var colorScheme
+
+    private var resolvedColor: Color {
+        if let color { return color }
+        return colorScheme == .dark ? .white : .caribbeanMist
+    }
 
     var body: some View {
         Rectangle()
             .fill(
                 LinearGradient(
                     colors: [
-                        color.opacity(0),
-                        color.opacity(opacity),
-                        color.opacity(opacity * 1.5),
-                        color.opacity(opacity),
-                        color.opacity(0)
+                        resolvedColor.opacity(0),
+                        resolvedColor.opacity(opacity),
+                        resolvedColor.opacity(opacity * 1.5),
+                        resolvedColor.opacity(opacity),
+                        resolvedColor.opacity(0)
                     ],
                     startPoint: .leading,
                     endPoint: .trailing
                 )
             )
             .frame(height: height)
-            .shadow(color: color.opacity(opacity * 0.5), radius: glowRadius, y: 0)
+            .shadow(color: resolvedColor.opacity(opacity * 0.5), radius: glowRadius, y: 0)
     }
 }
 
@@ -42,13 +48,14 @@ struct AnimatedProgressBar: View {
     var showGlow: Bool = true
 
     @State private var breathePhase: CGFloat = 0
+    @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
         GeometryReader { geo in
             ZStack(alignment: .leading) {
                 // Track
                 Capsule()
-                    .fill(.white.opacity(0.08))
+                    .fill(Color.adaptiveSurface(.recessed, isDark: colorScheme == .dark))
 
                 // Fill
                 Capsule()

@@ -213,8 +213,8 @@ struct MembershipView: View {
                 .padding(.vertical, 10)
                 .padding(.horizontal, 20)
                 .background(
-                    Capsule().fill(.white.opacity(0.06))
-                        .overlay(Capsule().strokeBorder(.white.opacity(0.06), lineWidth: 1))
+                    Capsule().fill(isDark ? .white.opacity(0.06) : Color.caribbeanRecessed.opacity(0.5))
+                        .overlay(Capsule().strokeBorder(isDark ? .white.opacity(0.06) : Color.caribbeanBorderSubtle, lineWidth: 1))
                 )
             },
             content: {
@@ -368,7 +368,7 @@ struct MembershipView: View {
                                             endPoint: .bottomTrailing
                                           )
                                         : LinearGradient(
-                                            colors: [.white.opacity(0.08)],
+                                            colors: [isDark ? .white.opacity(0.08) : Color.caribbeanBorderSubtle.opacity(0.5)],
                                             startPoint: .top,
                                             endPoint: .bottom
                                           ),
@@ -404,7 +404,7 @@ struct MembershipView: View {
             .padding(.horizontal, 14)
             .padding(.vertical, 12)
 
-            Divider().background(.white.opacity(0.08))
+            Divider().background(isDark ? .white.opacity(0.08) : Color.caribbeanBorderSubtle)
 
             ForEach(Array(Self.comparisonFeatures.enumerated()), id: \.offset) { idx, feature in
                 HStack(spacing: 0) {

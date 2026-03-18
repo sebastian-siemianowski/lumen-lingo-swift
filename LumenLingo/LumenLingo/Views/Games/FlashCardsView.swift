@@ -481,12 +481,14 @@ struct FlashCardsView: View {
             Capsule()
                 .fill(
                     LinearGradient(
-                        colors: [.clear, .white.opacity(0.45), .clear],
+                        colors: isDark
+                            ? [.clear, .white.opacity(0.45), .clear]
+                            : [.clear, Color.caribbeanOcean.opacity(0.35), .clear],
                         startPoint: .leading, endPoint: .trailing
                     )
                 )
                 .frame(width: 80, height: 1)
-                .shadow(color: .white.opacity(0.3), radius: 4)
+                .shadow(color: isDark ? .white.opacity(0.3) : Color.caribbeanOcean.opacity(0.2), radius: 4)
                 .padding(.top, 18)
 
             if let example = word.example, !example.isEmpty {
@@ -525,8 +527,8 @@ struct FlashCardsView: View {
             .shadow(color: isDark ? .black.opacity(0.4) : .clear, radius: 3, x: 0, y: 1)
             .padding(.horizontal, 14)
             .padding(.vertical, 7)
-            .background(Capsule().fill(.white.opacity(0.12)))
-            .overlay(Capsule().strokeBorder(.white.opacity(0.20), lineWidth: 0.5))
+            .background(Capsule().fill(isDark ? .white.opacity(0.12) : Color.caribbeanElevated))
+            .overlay(Capsule().strokeBorder(isDark ? .white.opacity(0.20) : Color.caribbeanBorder, lineWidth: 0.5))
             .padding(.bottom, 24)
         }
         .onAppear { startBackAnimations() }
@@ -549,11 +551,17 @@ struct FlashCardsView: View {
                     RoundedRectangle(cornerRadius: 32)
                         .fill(
                             LinearGradient(
-                                colors: [
-                                    Color.white.opacity(0.06),
-                                    Color.clear,
-                                    Color.white.opacity(0.03),
-                                ],
+                                colors: isDark
+                                    ? [
+                                        Color.white.opacity(0.06),
+                                        Color.clear,
+                                        Color.white.opacity(0.03),
+                                    ]
+                                    : [
+                                        Color.caribbeanOcean.opacity(0.06),
+                                        Color.clear,
+                                        Color.caribbeanLagoon.opacity(0.03),
+                                    ],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                             )
@@ -563,16 +571,27 @@ struct FlashCardsView: View {
                     RoundedRectangle(cornerRadius: 32)
                         .strokeBorder(
                             AngularGradient(
-                                stops: [
-                                    .init(color: Color.white.opacity(0.55), location: 0.00),
-                                    .init(color: Color(hex: "#a5f3fc").opacity(0.45), location: 0.12),
-                                    .init(color: Color(hex: "#818cf8").opacity(0.50), location: 0.28),
-                                    .init(color: Color(hex: "#f9a8d4").opacity(0.40), location: 0.42),
-                                    .init(color: Color.white.opacity(0.60), location: 0.55),
-                                    .init(color: Color(hex: "#fde68a").opacity(0.40), location: 0.68),
-                                    .init(color: Color(hex: "#6ee7b7").opacity(0.45), location: 0.82),
-                                    .init(color: Color.white.opacity(0.55), location: 1.00),
-                                ],
+                                stops: isDark
+                                    ? [
+                                        .init(color: Color.white.opacity(0.55), location: 0.00),
+                                        .init(color: Color(hex: "#a5f3fc").opacity(0.45), location: 0.12),
+                                        .init(color: Color(hex: "#818cf8").opacity(0.50), location: 0.28),
+                                        .init(color: Color(hex: "#f9a8d4").opacity(0.40), location: 0.42),
+                                        .init(color: Color.white.opacity(0.60), location: 0.55),
+                                        .init(color: Color(hex: "#fde68a").opacity(0.40), location: 0.68),
+                                        .init(color: Color(hex: "#6ee7b7").opacity(0.45), location: 0.82),
+                                        .init(color: Color.white.opacity(0.55), location: 1.00),
+                                    ]
+                                    : [
+                                        .init(color: Color.caribbeanOcean.opacity(0.40), location: 0.00),
+                                        .init(color: Color(hex: "#a5f3fc").opacity(0.50), location: 0.12),
+                                        .init(color: Color(hex: "#818cf8").opacity(0.45), location: 0.28),
+                                        .init(color: Color(hex: "#f9a8d4").opacity(0.35), location: 0.42),
+                                        .init(color: Color.caribbeanLagoon.opacity(0.45), location: 0.55),
+                                        .init(color: Color(hex: "#fde68a").opacity(0.45), location: 0.68),
+                                        .init(color: Color(hex: "#6ee7b7").opacity(0.50), location: 0.82),
+                                        .init(color: Color.caribbeanOcean.opacity(0.40), location: 1.00),
+                                    ],
                                 center: .center
                             ),
                             lineWidth: 1.0 + 0.3 * Foundation.sin(Double(borderBreathPhase))
@@ -582,7 +601,7 @@ struct FlashCardsView: View {
                     // Secondary inner border for depth
                     RoundedRectangle(cornerRadius: 31)
                         .strokeBorder(
-                            Color.white.opacity(0.08),
+                            isDark ? Color.white.opacity(0.08) : Color.caribbeanBorderSubtle,
                             lineWidth: 0.5
                         )
                         .padding(1)
@@ -592,7 +611,9 @@ struct FlashCardsView: View {
                         Capsule()
                             .fill(
                                 LinearGradient(
-                                    colors: [.clear, .white.opacity(0.55), .white.opacity(0.55), .clear],
+                                    colors: isDark
+                                        ? [.clear, .white.opacity(0.55), .white.opacity(0.55), .clear]
+                                        : [.clear, Color.caribbeanOcean.opacity(0.25), Color.caribbeanOcean.opacity(0.25), .clear],
                                     startPoint: .leading,
                                     endPoint: .trailing
                                 )
@@ -608,7 +629,9 @@ struct FlashCardsView: View {
                         Capsule()
                             .fill(
                                 LinearGradient(
-                                    colors: [.clear, .white.opacity(0.12), .clear],
+                                    colors: isDark
+                                        ? [.clear, .white.opacity(0.12), .clear]
+                                        : [.clear, Color.caribbeanOcean.opacity(0.08), .clear],
                                     startPoint: .leading,
                                     endPoint: .trailing
                                 )
@@ -619,9 +642,9 @@ struct FlashCardsView: View {
                 }
             }
             .clipShape(RoundedRectangle(cornerRadius: 32))
-            .shadow(color: .black.opacity(0.25), radius: 35, x: 0, y: 16)
-            .shadow(color: Color(hex: "#818cf8").opacity(0.12), radius: 30, x: 0, y: 8)
-            .shadow(color: Color.white.opacity(0.04), radius: 1, x: 0, y: -1)
+            .shadow(color: .black.opacity(isDark ? 0.25 : 0.08), radius: 35, x: 0, y: 16)
+            .shadow(color: Color(hex: "#818cf8").opacity(isDark ? 0.12 : 0.06), radius: 30, x: 0, y: 8)
+            .shadow(color: isDark ? Color.white.opacity(0.04) : Color.caribbeanOcean.opacity(0.06), radius: 1, x: 0, y: -1)
     }
 
     // MARK: - Action Buttons
@@ -1481,11 +1504,17 @@ struct GameCompleteView: View {
                         Circle()
                             .strokeBorder(
                                 LinearGradient(
-                                    colors: [
-                                        .white.opacity(0.35),
-                                        performanceTier.color.opacity(0.25),
-                                        .white.opacity(0.15)
-                                    ],
+                                    colors: isDark
+                                        ? [
+                                            .white.opacity(0.35),
+                                            performanceTier.color.opacity(0.25),
+                                            .white.opacity(0.15)
+                                        ]
+                                        : [
+                                            Color.caribbeanBorder,
+                                            performanceTier.color.opacity(0.30),
+                                            Color.caribbeanBorderSubtle
+                                        ],
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
                                 ),
@@ -1567,7 +1596,7 @@ struct GameCompleteView: View {
             )
 
             Capsule()
-                .fill(.white.opacity(0.1))
+                .fill(isDark ? .white.opacity(0.1) : Color.caribbeanBorderSubtle)
                 .frame(width: 1, height: 36)
 
             statColumn(
@@ -1577,7 +1606,7 @@ struct GameCompleteView: View {
             )
 
             Capsule()
-                .fill(.white.opacity(0.1))
+                .fill(isDark ? .white.opacity(0.1) : Color.caribbeanBorderSubtle)
                 .frame(width: 1, height: 36)
 
             statColumn(
@@ -1596,7 +1625,9 @@ struct GameCompleteView: View {
                     RoundedRectangle(cornerRadius: 24)
                         .strokeBorder(
                             LinearGradient(
-                                colors: [.white.opacity(0.2), .white.opacity(0.05)],
+                                colors: isDark
+                                    ? [.white.opacity(0.2), .white.opacity(0.05)]
+                                    : [Color.caribbeanBorder, Color.caribbeanBorderSubtle],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                             ),
@@ -1872,7 +1903,7 @@ struct GameCompleteView: View {
                                     .fill(.white.opacity(isDark ? 0.06 : 0.1))
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 16)
-                                            .strokeBorder(.white.opacity(0.12), lineWidth: 0.5)
+                                            .strokeBorder(isDark ? .white.opacity(0.12) : Color.caribbeanBorderSubtle, lineWidth: 0.5)
                                     )
                             }
                         }
@@ -2355,7 +2386,7 @@ struct GameCompleteView: View {
             .frame(maxWidth: .infinity)
 
             Capsule()
-                .fill(.white.opacity(0.1))
+                .fill(isDark ? .white.opacity(0.1) : Color.caribbeanBorderSubtle)
                 .frame(width: 1, height: 30)
 
             VStack(spacing: 4) {
@@ -2437,7 +2468,9 @@ struct GameCompleteView: View {
                             LinearGradient(
                                 colors: i == 6
                                     ? [performanceTier.color, performanceTier.color.opacity(0.5)]
-                                    : [.white.opacity(0.15), .white.opacity(0.08)],
+                                    : isDark
+                                        ? [.white.opacity(0.15), .white.opacity(0.08)]
+                                        : [Color.caribbeanOcean.opacity(0.20), Color.caribbeanOcean.opacity(0.10)],
                                 startPoint: .top,
                                 endPoint: .bottom
                             )
@@ -2520,12 +2553,14 @@ struct GameCompleteView: View {
     private var glassCard: some View {
         RoundedRectangle(cornerRadius: 18)
             .fill(.ultraThinMaterial)
-            .opacity(0.12)
+            .opacity(isDark ? 0.12 : 0.20)
             .overlay(
                 RoundedRectangle(cornerRadius: 18)
                     .strokeBorder(
                         LinearGradient(
-                            colors: [.white.opacity(0.15), .white.opacity(0.04)],
+                            colors: isDark
+                                ? [.white.opacity(0.15), .white.opacity(0.04)]
+                                : [Color.caribbeanBorder, Color.caribbeanBorderSubtle],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ),

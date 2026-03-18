@@ -254,13 +254,15 @@ struct WordBuilderView: View {
                 .font(.title3.bold())
                 .foregroundStyle(
                     LinearGradient(
-                        colors: [Color(hex: "#fbbf24"), .white, Color(hex: "#fb923c")],
+                        colors: isDark
+                            ? [Color(hex: "#fbbf24"), .white, Color(hex: "#fb923c")]
+                            : [Color(hex: "#D97706"), Color(hex: "#EA580C"), Color(hex: "#F59E0B")],
                         startPoint: .leading,
                         endPoint: .trailing
                     )
                 )
                 .multilineTextAlignment(.center)
-                .shadow(color: Color(hex: "#f59e0b").opacity(0.4), radius: 12)
+                .shadow(color: Color(hex: "#f59e0b").opacity(isDark ? 0.4 : 0.2), radius: 12)
                 .frame(maxWidth: .infinity)
                 .padding(.horizontal, 16)
                 .padding(.vertical, 20)
@@ -331,7 +333,7 @@ struct WordBuilderView: View {
                         ? .green.opacity(0.08)
                         : isCorrect == false
                             ? .orange.opacity(0.08)
-                            : .white.opacity(0.04)
+                            : isDark ? .white.opacity(0.04) : Color.caribbeanRecessed.opacity(0.5)
                 )
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
@@ -340,7 +342,7 @@ struct WordBuilderView: View {
                                 ? .green.opacity(0.2)
                                 : isCorrect == false
                                     ? .orange.opacity(0.2)
-                                    : .white.opacity(0.06),
+                                    : isDark ? .white.opacity(0.06) : Color.caribbeanBorderSubtle,
                             lineWidth: 1
                         )
                 )
@@ -365,14 +367,14 @@ struct WordBuilderView: View {
                                 colors: [Color(hex: "#06b6d4").opacity(0.15), Color(hex: "#0891b2").opacity(0.1)],
                                 startPoint: .top, endPoint: .bottom
                             ))
-                            : AnyShapeStyle(.white.opacity(0.06))
+                            : AnyShapeStyle(isDark ? .white.opacity(0.06) : Color.caribbeanRecessed)
                     )
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
                             .strokeBorder(
                                 isActive
                                     ? Color(hex: "#52bdff").opacity(0.5)
-                                    : .white.opacity(letter != nil ? 0.15 : 0.08),
+                                    : isDark ? .white.opacity(letter != nil ? 0.15 : 0.08) : (letter != nil ? Color.caribbeanBorder : Color.caribbeanBorderSubtle),
                                 lineWidth: isActive ? 2 : 1
                             )
                     )
@@ -413,11 +415,11 @@ struct WordBuilderView: View {
                     if letter.isPlaced {
                         // Placeholder for placed letters
                         RoundedRectangle(cornerRadius: 12)
-                            .fill(.white.opacity(0.03))
+                            .fill(isDark ? .white.opacity(0.03) : Color.caribbeanRecessed.opacity(0.3))
                             .frame(height: 50)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 12)
-                                    .strokeBorder(.white.opacity(0.04), lineWidth: 1)
+                                    .strokeBorder(isDark ? .white.opacity(0.04) : Color.caribbeanBorderSubtle, lineWidth: 1)
                             )
                     } else {
                         letterTile(letter)
@@ -428,10 +430,10 @@ struct WordBuilderView: View {
         .padding(16)
         .background(
             RoundedRectangle(cornerRadius: 20)
-                .fill(.white.opacity(0.04))
+                .fill(isDark ? .white.opacity(0.04) : Color.caribbeanRecessed.opacity(0.4))
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .strokeBorder(.white.opacity(0.06), lineWidth: 1)
+                        .strokeBorder(isDark ? .white.opacity(0.06) : Color.caribbeanBorderSubtle, lineWidth: 1)
                 )
         )
     }
@@ -450,7 +452,7 @@ struct WordBuilderView: View {
                         RoundedRectangle(cornerRadius: 12)
                             .fill(
                                 LinearGradient(
-                                    colors: [.white.opacity(0.12), .clear],
+                                    colors: [isDark ? .white.opacity(0.12) : .white.opacity(0.40), .clear],
                                     startPoint: .top,
                                     endPoint: .center
                                 )
@@ -459,7 +461,7 @@ struct WordBuilderView: View {
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
                             .strokeBorder(
-                                isHinted ? Color(hex: "#fbbf24").opacity(hintGlowOpacity) : .white.opacity(0.15),
+                                isHinted ? Color(hex: "#fbbf24").opacity(hintGlowOpacity) : isDark ? .white.opacity(0.15) : Color.caribbeanBorder,
                                 lineWidth: isHinted ? 2 : 1
                             )
                     )

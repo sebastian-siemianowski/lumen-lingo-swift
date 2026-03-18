@@ -394,26 +394,26 @@ struct LanguageSelectionView: View {
             VStack(spacing: 6) {
                 (Text(selectedSource.displayName)
                     .font(.title3.weight(.bold))
-                    .foregroundColor(isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255)) +
+                    .foregroundColor(isDark ? .white : .caribbeanInk) +
                 Text("  \u{2192}  ")
                     .font(.title3.weight(.light))
-                    .foregroundColor(isDark ? .secondary : Color(red: 140/255, green: 96/255, blue: 136/255)) +
+                    .foregroundColor(isDark ? .secondary : .caribbeanMist) +
                 Text(selectedTarget.name(in: selectedSource))
                     .font(.title3.weight(.bold))
-                    .foregroundColor(isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255)))
+                    .foregroundColor(isDark ? .white : .caribbeanInk))
                 .lineLimit(1)
                 .minimumScaleFactor(0.75)
                 .contentTransition(.interpolate)
 
                 Text("\(availableTargets.count) \(L.languagesAvailable)")
                     .font(.footnote.weight(.medium))
-                    .foregroundStyle(isDark ? .secondary : Color(red: 100/255, green: 58/255, blue: 100/255))
+                    .foregroundStyle(isDark ? .secondary : Color.caribbeanPlum)
                     .contentTransition(.numericText())
                     .padding(.horizontal, 14)
                     .padding(.vertical, 5)
                     .background(
                         Capsule()
-                            .fill(isDark ? .white.opacity(0.06) : .white.opacity(0.3))
+                            .fill(isDark ? .white.opacity(0.06) : Color.caribbeanRecessed.opacity(0.5))
                     )
             }
         }
@@ -484,7 +484,7 @@ struct LanguageSelectionView: View {
                         lineWidth: 1
                     )
             )
-            .shadow(color: isDark ? .indigo.opacity(0.08) : Color(red: 100/255, green: 58/255, blue: 100/255).opacity(0.12), radius: 24, y: 10)
+            .shadow(color: isDark ? .indigo.opacity(0.08) : Color.caribbeanOcean.opacity(0.08), radius: 24, y: 10)
     }
 
     // MARK: - Source Section
@@ -551,8 +551,8 @@ struct LanguageSelectionView: View {
                 Text(lang.displayName)
                     .font(.caption2.weight(isSelected ? .bold : .medium))
                     .foregroundStyle(isSelected
-                                     ? (isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255))
-                                     : (isDark ? .secondary : Color(red: 100/255, green: 58/255, blue: 100/255)))
+                                     ? (isDark ? .white : .caribbeanInk)
+                                     : (isDark ? .secondary : .caribbeanPlum))
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
             }
@@ -575,7 +575,7 @@ struct LanguageSelectionView: View {
                 )
         } else {
             Circle()
-                .fill(isDark ? Color.white.opacity(0.06) : Color.white.opacity(0.5))
+                        .fill(isDark ? Color.white.opacity(0.06) : Color.caribbeanRecessed.opacity(0.5))
         }
     }
 
