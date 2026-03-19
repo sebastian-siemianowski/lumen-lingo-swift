@@ -85,6 +85,17 @@ struct FlashCardsView: View {
     @State private var boltRotation: Double = 0
     @State private var boltOpacity: Double = 0.55
 
+    // Best streak in current round (Story 6.3.1)
+    @State private var maxStreak: Int = 0
+
+    // Category completion & milestone celebration (Story 6.3)
+    @State private var showCategoryCelebration: Bool = false
+    @State private var categoryCelebrationProgress: CategoryProgress = .zero
+    @State private var showMilestoneCelebration: Bool = false
+    @State private var celebrationMilestoneName: String = ""
+    @State private var celebrationMilestoneIcon: String = ""
+    @State private var celebrationMilestoneColor: Color = .yellow
+
     // Next category navigation
     @State private var nextUnplayedCategoryId: String?
     @State private var nextUnplayedCategoryName: String?
@@ -154,6 +165,43 @@ struct FlashCardsView: View {
             }
         }
         .cosmicBackground()
+        // Story 6.3.1 — Category completion celebration overlay
+        .overlay {
+            if showCategoryCelebration {
+                CategoryCompletionCelebrationView(
+                    categoryName: categoryName,
+                    masteredCount: categoryCelebrationProgress.mastered,
+                    totalCount: categoryCelebrationProgress.total,
+                    accuracy: Double(correctCount) / Double(max(words.count, 1)) * 100,
+                    bestStreak: maxStreak,
+                    xpEarned: Int(Double(score) * tierManager.xpMultiplier),
+                    onDismiss: {
+                        showCategoryCelebration = false
+                        // Show milestone celebration next if also earned
+                        if !celebrationMilestoneName.isEmpty {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                                showMilestoneCelebration = true
+                            }
+                        }
+                    }
+                )
+                .transition(.opacity)
+            }
+        }
+        // Story 6.3.2 — Milestone achievement celebration overlay
+        .overlay {
+            if showMilestoneCelebration {
+                MilestoneAchievementCelebrationView(
+                    milestoneName: celebrationMilestoneName,
+                    milestoneIcon: celebrationMilestoneIcon,
+                    milestoneColor: celebrationMilestoneColor,
+                    motivationalMessage: MilestoneMessages.message(for: celebrationMilestoneName),
+                    onDismiss: { showMilestoneCelebration = false },
+                    onShare: { showMilestoneCelebration = false }
+                )
+                .transition(.opacity)
+            }
+        }
         .navigationBarBackButtonHidden()
         .toolbar(.hidden, for: .navigationBar)
         .onAppear {
@@ -942,6 +990,7 @@ struct FlashCardsView: View {
             correctCount += 1
             score += 10
             streak += 1
+            maxStreak = max(maxStreak, streak)
             audioService.playSwipeRight()
             TierHapticsService.shared.correctAnswer(level: tierManager.hapticLevel)
 
@@ -1088,6 +1137,12 @@ struct FlashCardsView: View {
         // Save progress
         let progressService = ProgressService(modelContext: modelContext)
         let langPref = languagePrefs.first
+        let source = langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue
+        let target = langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue
+
+        // Capture XP before recording for milestone detection (Story 6.3.2)
+        let xpBefore = progressService.getOrCreateProfile().totalXP
+
         let result = GameSessionResult(
             gameType: .flashCards,
             categoryId: categoryId,
@@ -1096,8 +1151,8 @@ struct FlashCardsView: View {
             correctAnswers: correctCount,
             totalQuestions: words.count,
             timeSpent: timeSpent,
-            sourceLanguage: langPref?.sourceLanguage ?? SupportedLanguage.english.rawValue,
-            targetLanguage: langPref?.targetLanguage ?? SupportedLanguage.spanish.rawValue,
+            sourceLanguage: source,
+            targetLanguage: target,
             xpMultiplier: tierManager.xpMultiplier
         )
         progressService.recordGameSession(result)
@@ -1105,11 +1160,59 @@ struct FlashCardsView: View {
         audioService.playCelebration()
         HapticsService.shared.celebrate()
 
+        // Story 6.3.1 — Check if category is now fully complete
+        let catProgress = progressService.categoryProgress(
+            gameType: .flashCards,
+            category: categoryId,
+            totalItems: words.count,
+            source: source,
+            target: target
+        )
+        if catProgress.isComplete {
+            categoryCelebrationProgress = catProgress
+        }
+
+        // Story 6.3.2 — Check if XP crossed a milestone threshold
+        let xpAfter = progressService.getOrCreateProfile().totalXP
+        let milestoneData: [(name: String, icon: String, color: Color, xp: Int)] = [
+            ("Getting Started", "star.fill", .cyan, 100),
+            ("Dedicated Learner", "book.fill", Color(hex: "#667eea"), 500),
+            ("Rising Star", "sparkles", Color(hex: "#f59e0b"), 1_500),
+            ("Word Warrior", "shield.fill", Color(hex: "#8b5cf6"), 3_000),
+            ("Knowledge Seeker", "magnifyingglass", Color(hex: "#06b6d4"), 5_000),
+            ("Sentence Crafter", "text.quote", Color(hex: "#10b981"), 8_000),
+            ("Grammar Guardian", "shield.checkerboard", Color(hex: "#6366f1"), 12_000),
+            ("Vocabulary Virtuoso", "character.book.closed.fill", Color(hex: "#f97316"), 18_000),
+            ("Language Master", "crown.fill", .yellow, 25_000),
+            ("Fluency Pioneer", "flag.fill", Color(hex: "#14b8a6"), 35_000),
+            ("Polyglot Legend", "globe", Color(hex: "#ec4899"), 50_000),
+        ]
+        // Find the highest milestone just crossed
+        for milestone in milestoneData.reversed() {
+            if xpBefore < milestone.xp && xpAfter >= milestone.xp {
+                celebrationMilestoneName = milestone.name
+                celebrationMilestoneIcon = milestone.icon
+                celebrationMilestoneColor = milestone.color
+                break
+            }
+        }
+
         // Find next unplayed category
         findNextUnplayedCategory(progressService: progressService)
 
         withAnimation(.spring(response: 0.6)) {
             isGameComplete = true
+        }
+
+        // Show celebrations with a delay so GameCompleteView appears first
+        if catProgress.isComplete {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                showCategoryCelebration = true
+            }
+        } else if !celebrationMilestoneName.isEmpty {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                showMilestoneCelebration = true
+            }
         }
     }
 
@@ -1147,9 +1250,13 @@ struct FlashCardsView: View {
         correctCount = 0
         wrongCount = 0
         streak = 0
+        maxStreak = 0
         isFlipped = false
         showButtons = false
         isGameComplete = false
+        showCategoryCelebration = false
+        showMilestoneCelebration = false
+        celebrationMilestoneName = ""
         cardTransitionId = UUID()
     }
 

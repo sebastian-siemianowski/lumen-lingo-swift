@@ -1957,13 +1957,13 @@ Current position indicator:
 ```
 
 **Acceptance Criteria:**
-- [ ] Unlocked path feels alive — the gradient flow animation suggests forward movement
-- [ ] Locked path is clearly different: lighter, dashed, "future" feel
-- [ ] Current position is unmistakable — glowing, pulsing, "here I am"
-- [ ] Junction dots create visual rhythm along the timeline
-- [ ] Timeline works vertically (phone) and potentially horizontally (iPad landscape)
-- [ ] Gradient animation is GPU-efficient and respects `reduceMotion` setting
-- [ ] Timeline renders correctly for users with 0 milestones through 50+ milestones
+- [x] Unlocked path feels alive — the gradient flow animation suggests forward movement
+- [x] Locked path is clearly different: lighter, dashed, "future" feel
+- [x] Current position is unmistakable — glowing, pulsing, "here I am"
+- [x] Junction dots create visual rhythm along the timeline
+- [x] Timeline works vertically (phone) and potentially horizontally (iPad landscape)
+- [x] Gradient animation is GPU-efficient and respects `reduceMotion` setting
+- [x] Timeline renders correctly for users with 0 milestones through 50+ milestones
 
 #### Subtask 6.1.2: Redesign Milestone Cards for Light Mode
 
@@ -1995,12 +1995,12 @@ Upcoming (next to unlock):
 ```
 
 **Acceptance Criteria:**
-- [ ] Unlocked milestones feel like achievements — warm, celebratory, substantial
-- [ ] Locked milestones create curiosity — "what will I unlock?"
-- [ ] Next-to-unlock milestone has special emphasis that creates goal tension
-- [ ] Achievement badges use warm gold tones that feel genuinely rewarding
-- [ ] Milestone cards have consistent sizing and don't vary wildly in height
-- [ ] Progress bar on upcoming milestone is accurate and visually connected to the timeline
+- [x] Unlocked milestones feel like achievements — warm, celebratory, substantial
+- [x] Locked milestones create curiosity — "what will I unlock?"
+- [x] Next-to-unlock milestone has special emphasis that creates goal tension
+- [x] Achievement badges use warm gold tones that feel genuinely rewarding
+- [x] Milestone cards have consistent sizing and don't vary wildly in height
+- [x] Progress bar on upcoming milestone is accurate and visually connected to the timeline
 
 #### Subtask 6.1.3: Add Level Progress Header Enhancement
 
@@ -2028,12 +2028,12 @@ Level title:
 ```
 
 **Acceptance Criteria:**
-- [ ] Level badge is a premium focal point at the top of the Journey view
-- [ ] Rotating ring creates a subtle "alive" quality (like a compass needle)
-- [ ] XP progress bar shows clear advancement toward next level
-- [ ] Level title adds personality and aspiration
-- [ ] All values (level, XP) update correctly from user data
-- [ ] Ring rotation respects `reduceMotion` (stops when enabled)
+- [x] Level badge is a premium focal point at the top of the Journey view
+- [x] Rotating ring creates a subtle "alive" quality (like a compass needle)
+- [x] XP progress bar shows clear advancement toward next level
+- [x] Level title adds personality and aspiration
+- [x] All values (level, XP) update correctly from user data
+- [x] Ring rotation respects `reduceMotion` (stops when enabled)
 
 ---
 
@@ -2087,13 +2087,13 @@ Locked overlay:
 ```
 
 **Acceptance Criteria:**
-- [ ] Each category card has its own accent color — creating visual variety in the grid
-- [ ] Category icons are vibrant and immediately communicative
-- [ ] Progress rings show accurate completion data
-- [ ] Completed categories have a satisfying "done" badge
-- [ ] Locked categories are obviously locked but still appealing (not greyed-out dead)
-- [ ] Grid layout creates a "collection" feel — browsing category cards feels like browsing treasures
-- [ ] Card press state: scale 0.97 with caribbeanHover background, spring animation
+- [x] Each category card has its own accent color — creating visual variety in the grid
+- [x] Category icons are vibrant and immediately communicative
+- [x] Progress rings show accurate completion data
+- [x] Completed categories have a satisfying "done" badge
+- [x] Locked categories are obviously locked but still appealing (not greyed-out dead)
+- [x] Grid layout creates a "collection" feel — browsing category cards feels like browsing treasures
+- [x] Card press state: scale 0.97 with caribbeanHover background, spring animation
 
 #### Subtask 6.2.2: Enhance Search Bar for Light Mode
 
@@ -2120,12 +2120,12 @@ Active (typing):
 ```
 
 **Acceptance Criteria:**
-- [ ] Search bar idle state has rotating placeholder suggestions
-- [ ] Focus state clearly signals "active" with brighter border and glow
-- [ ] Typing immediately filters categories with smooth transitions
-- [ ] Clear button is visible and easy to tap
-- [ ] No-results state is warm and helpful (suggest similar categories)
-- [ ] Placeholder animation respects `reduceMotion`
+- [x] Search bar idle state has rotating placeholder suggestions
+- [x] Focus state clearly signals "active" with brighter border and glow
+- [x] Typing immediately filters categories with smooth transitions
+- [x] Clear button is visible and easy to tap
+- [x] No-results state is warm and helpful (suggest similar categories)
+- [x] Placeholder animation respects `reduceMotion`
 
 #### Subtask 6.2.3: Redesign Filter Pills / Chips for Light Mode
 
@@ -2152,12 +2152,12 @@ Count badge (on filter):
 ```
 
 **Acceptance Criteria:**
-- [ ] Active filter is unmistakable — gradient fill stands out clearly
-- [ ] Inactive filters are visible but clearly deemphasized
-- [ ] Count badges show how many categories match each filter
-- [ ] Transition between active/inactive is smooth (0.25s)
-- [ ] Multiple active filters can coexist without visual confusion
-- [ ] Pills scroll horizontally if too many to fit, with fade-out edges
+- [x] Active filter is unmistakable — gradient fill stands out clearly
+- [x] Inactive filters are visible but clearly deemphasized
+- [x] Count badges show how many categories match each filter
+- [x] Transition between active/inactive is smooth (0.25s)
+- [x] Multiple active filters can coexist without visual confusion
+- [x] Pills scroll horizontally if too many to fit, with fade-out edges
 
 ---
 
@@ -2194,14 +2194,14 @@ Auto-dismiss: after 5s if un-interacted (fades out)
 ```
 
 **Acceptance Criteria:**
-- [ ] Celebration triggers immediately and unmistakably on category completion
-- [ ] Confetti uses Caribbean ISLAND colors (turquoise, coral, sand gold, palm green, lavender — NOT primary RGB, NOT all-purple)
-- [ ] Trophy icon feels genuinely rewarding — warm glow, gradient fill
-- [ ] Stats summary celebrates the achievement with specific numbers
-- [ ] XP earned is prominently displayed as a tangible reward
-- [ ] "Continue" button gracefully returns to the categories view
-- [ ] Celebration is skippable by tapping anywhere outside the card
-- [ ] Haptic feedback: `.notificationSuccess` + `.rigid` (celebratory double-tap)
+- [x] Celebration triggers immediately and unmistakably on category completion
+- [x] Confetti uses Caribbean ISLAND colors (turquoise, coral, sand gold, palm green, lavender — NOT primary RGB, NOT all-purple)
+- [x] Trophy icon feels genuinely rewarding — warm glow, gradient fill
+- [x] Stats summary celebrates the achievement with specific numbers
+- [x] XP earned is prominently displayed as a tangible reward
+- [x] "Continue" button gracefully returns to the categories view
+- [x] Celebration is skippable by tapping anywhere outside the card
+- [x] Haptic feedback: `.notificationSuccess` + `.rigid` (celebratory double-tap)
 
 #### Subtask 6.3.2: Design Milestone Achievement Celebration
 
@@ -2226,14 +2226,14 @@ Background particles:
 ```
 
 **Acceptance Criteria:**
-- [ ] Full-screen celebration feels like a genuine moment — not a popup
-- [ ] Background gradient animation creates a "golden hour" atmosphere
-- [ ] Badge arrival animation has weight and impact (spring, not linear)
-- [ ] Motivational message is specific to the milestone (not generic)
-- [ ] Share button allows user to capture/share the achievement
-- [ ] Floating particles create ambient warmth and motion
-- [ ] Performance: celebration renders at 60fps even with particles
-- [ ] Celebration respects `reduceMotion` (static badge, no particles)
+- [x] Full-screen celebration feels like a genuine moment — not a popup
+- [x] Background gradient animation creates a "golden hour" atmosphere
+- [x] Badge arrival animation has weight and impact (spring, not linear)
+- [x] Motivational message is specific to the milestone (not generic)
+- [x] Share button allows user to capture/share the achievement
+- [x] Floating particles create ambient warmth and motion
+- [x] Performance: celebration renders at 60fps even with particles
+- [x] Celebration respects `reduceMotion` (static badge, no particles)
 
 ---
 

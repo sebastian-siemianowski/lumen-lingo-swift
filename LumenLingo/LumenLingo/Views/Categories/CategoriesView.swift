@@ -35,6 +35,15 @@ struct CategoriesView: View {
     @State private var pressedCardId: String? = nil
     @State private var lockedCategoryTapped: CategoryDisplayItem? = nil
 
+    // Story 6.2.2 — rotating placeholder suggestions
+    @State private var placeholderIndex: Int = 0
+    @State private var isSearchFocused: Bool = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    private var placeholderSuggestions: [String] {
+        [L.searchCategories, "Try 'food'...", "Find 'travel'..."]
+    }
+
     // Frozen empty-state content — updated only when transitioning INTO empty
     @State private var frozenEmptyIcon: String = "tray"
     @State private var frozenEmptyTitle: String = "No Categories"
@@ -262,19 +271,29 @@ struct CategoriesView: View {
                 .buttonStyle(LumenPressStyle(weight: .soft))
             }
 
-            // Search bar
+            // Search bar (Story 6.2.2 — enhanced with rotating placeholders + focus glow)
             HStack(spacing: 10) {
                 Image(systemName: "magnifyingglass")
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    .foregroundStyle(
+                        isDark
+                            ? AnyShapeStyle(Color.white.opacity(0.4))
+                            : (isSearchFocused
+                                ? AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
+                                : AnyShapeStyle(Color.caribbeanMist))
+                    )
 
-                TextField(L.searchCategories, text: $searchText)
+                TextField(placeholderSuggestions[placeholderIndex], text: $searchText)
                     .font(.subheadline)
                     .foregroundStyle(isDark ? .white : .caribbeanInk)
                     .autocorrectionDisabled()
+                    .onChange(of: searchText) { _, newValue in
+                        isSearchFocused = !newValue.isEmpty
+                    }
 
                 if !searchText.isEmpty {
                     Button {
                         searchText = ""
+                        isSearchFocused = false
                     } label: {
                         Image(systemName: "xmark.circle.fill")
                             .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
@@ -282,7 +301,7 @@ struct CategoriesView: View {
                     .buttonStyle(LumenPressStyle(weight: .soft))
                 }
 
-                // Filter: favorites only
+                // Filter: favorites only (Story 6.2.3 — enhanced pill styling)
                 Button {
                     HapticsService.shared.toggleSwitch()
                     withAnimation(.smooth(duration: 0.35)) {
@@ -291,12 +310,34 @@ struct CategoriesView: View {
                 } label: {
                     Image(systemName: showFavoritesOnly ? "heart.fill" : "heart")
                         .font(.subheadline)
-                        .foregroundStyle(showFavoritesOnly ? .pink : (isDark ? .white.opacity(0.4) : .caribbeanMist))
+                        .foregroundStyle(
+                            showFavoritesOnly
+                                ? (isDark ? .pink : .white)
+                                : (isDark ? .white.opacity(0.4) : .caribbeanMist)
+                        )
                         .contentTransition(.symbolEffect(.replace))
+                        .padding(6)
+                        .background(
+                            Group {
+                                if showFavoritesOnly && !isDark {
+                                    Capsule()
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [Color(hex: "FB7185"), Color(hex: "F472B6")],
+                                                startPoint: .leading,
+                                                endPoint: .trailing
+                                            )
+                                        )
+                                        .shadow(color: Color(hex: "FB7185").opacity(0.2), radius: 4)
+                                }
+                            }
+                        )
                 }
                 .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .pink))
+                .scaleEffect(showFavoritesOnly && !isDark ? 1.02 : 1.0)
+                .animation(.spring(response: 0.25, dampingFraction: 0.7), value: showFavoritesOnly)
 
-                // Filter completed toggle
+                // Filter completed toggle (Story 6.2.3 — enhanced pill styling)
                 Button {
                     HapticsService.shared.toggleSwitch()
                     withAnimation(.smooth(duration: 0.35)) {
@@ -305,20 +346,72 @@ struct CategoriesView: View {
                 } label: {
                     Image(systemName: showCompletedFilter ? "eye.slash.fill" : "eye.fill")
                         .font(.subheadline)
-                        .foregroundStyle(showCompletedFilter ? .yellow : (isDark ? .white.opacity(0.4) : .caribbeanMist))
+                        .foregroundStyle(
+                            showCompletedFilter
+                                ? (isDark ? .yellow : .white)
+                                : (isDark ? .white.opacity(0.4) : .caribbeanMist)
+                        )
                         .contentTransition(.symbolEffect(.replace))
+                        .padding(6)
+                        .background(
+                            Group {
+                                if showCompletedFilter && !isDark {
+                                    Capsule()
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [Color(hex: "F59E0B"), Color(hex: "FB923C")],
+                                                startPoint: .leading,
+                                                endPoint: .trailing
+                                            )
+                                        )
+                                        .shadow(color: Color(hex: "F59E0B").opacity(0.2), radius: 4)
+                                }
+                            }
+                        )
                 }
                 .buttonStyle(LumenPressStyle(weight: .soft, accentColor: .yellow))
+                .scaleEffect(showCompletedFilter && !isDark ? 1.02 : 1.0)
+                .animation(.spring(response: 0.25, dampingFraction: 0.7), value: showCompletedFilter)
             }
             .padding(12)
             .background(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(isDark ? .white.opacity(0.06) : Color(hex: "#C494FC").opacity(0.12))
+                    .fill(
+                        isDark
+                            ? .white.opacity(0.06)
+                            : (isSearchFocused
+                                ? Color.caribbeanElevated
+                                : Color(hex: "#C494FC").opacity(0.12))
+                    )
                     .overlay(
                         RoundedRectangle(cornerRadius: 14)
-                            .strokeBorder(isDark ? .white.opacity(0.06) : Color(hex: "#C494FC").opacity(0.18), lineWidth: 0.5)
+                            .strokeBorder(
+                                isDark
+                                    ? .white.opacity(0.06)
+                                    : (isSearchFocused
+                                        ? Color.caribbeanBorderFocus
+                                        : Color(hex: "#C494FC").opacity(0.18)),
+                                lineWidth: isSearchFocused && !isDark ? 1 : 0.5
+                            )
+                    )
+                    .shadow(
+                        color: isSearchFocused && !isDark ? Color.caribbeanOcean.opacity(0.10) : .clear,
+                        radius: 8,
+                        y: 2
                     )
             )
+            .animation(.easeInOut(duration: 0.2), value: isSearchFocused)
+            .onAppear {
+                guard !reduceMotion else { return }
+                // Rotate placeholder suggestions every 3 seconds
+                Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { _ in
+                    if searchText.isEmpty {
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            placeholderIndex = (placeholderIndex + 1) % placeholderSuggestions.count
+                        }
+                    }
+                }
+            }
         }
         .padding(.horizontal, 16)
         .padding(.top, 8)
@@ -524,9 +617,14 @@ struct CategoriesView: View {
             ? [isDark ? Color.green : Color(hex: "#059669"), isDark ? Color.green : Color(hex: "#059669")]
             : colors
         return ZStack {
-            // Track ring
+            // Track ring (Story 6.2.1 — category accent tint for light mode)
             Circle()
-                .stroke(isDark ? .white.opacity(0.08) : Color(hex: "#C494FC").opacity(0.15), lineWidth: 3)
+                .stroke(
+                    isDark
+                        ? .white.opacity(0.08)
+                        : (colors.first ?? Color(hex: "#C494FC")).opacity(0.12),
+                    lineWidth: 3
+                )
             // Progress arc
             Circle()
                 .trim(from: 0, to: min(pct / 100.0, 1.0))
@@ -875,10 +973,35 @@ struct CategoriesView: View {
     }
 
     private func categoryGradient(_ item: CategoryDisplayItem) -> [Color] {
+        // Story 6.2.1 — category-specific accent color variation in light mode
+        // Each difficulty level gets a different accent to create visual variety in the grid
+        if !isDark {
+            switch item.difficulty {
+            case .beginner:
+                switch gameType {
+                case .flashCards: return [Color(hex: "0EA5E9"), Color(hex: "06B6D4")]
+                case .grammar: return [Color(hex: "F472B6"), Color(hex: "FB7185")]
+                case .wordBuilder: return [Color(hex: "F59E0B"), Color(hex: "FB923C")]
+                }
+            case .intermediate:
+                switch gameType {
+                case .flashCards: return [Color(hex: "667eea"), Color(hex: "8b5cf6")]
+                case .grammar: return [Color(hex: "f093fb"), Color(hex: "C494FC")]
+                case .wordBuilder: return [Color(hex: "fbbf24"), Color(hex: "f97316")]
+                }
+            case .advanced:
+                switch gameType {
+                case .flashCards: return [Color(hex: "06B6D4"), Color(hex: "14B8A6")]
+                case .grammar: return [Color(hex: "f5576c"), Color(hex: "e11d48")]
+                case .wordBuilder: return [Color(hex: "ea580c"), Color(hex: "dc2626")]
+                }
+            }
+        }
+        // Dark mode — unchanged original game-type gradients
         switch gameType {
-        case .flashCards: [Color(hex: "#667eea"), Color(hex: "#06b6d4")]
-        case .grammar: [Color(hex: "#f093fb"), Color(hex: "#f5576c")]
-        case .wordBuilder: [Color(hex: "#fbbf24"), Color(hex: "#f97316")]
+        case .flashCards: return [Color(hex: "#667eea"), Color(hex: "#06b6d4")]
+        case .grammar: return [Color(hex: "#f093fb"), Color(hex: "#f5576c")]
+        case .wordBuilder: return [Color(hex: "#fbbf24"), Color(hex: "#f97316")]
         }
     }
 

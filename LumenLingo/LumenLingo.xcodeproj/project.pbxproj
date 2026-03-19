@@ -81,6 +81,7 @@
 		556088FCAAB11559220BFA41 /* flashcards_english_french.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6C857CACD14B5F9D11A9BE /* flashcards_english_french.json */; };
 		572A2C73F39ADFE7E1AD1583 /* flashcards_german_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CD9C429C1C49ACDEF66DB34 /* flashcards_german_spanish.json */; };
 		572BB4F60AFAF80471033286 /* grammar_german_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DF4AC8CA444C17E9975F76B /* grammar_german_spanish.json */; };
+		5765D16EDA45281EE2C5F76F /* ProgressCelebrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7502A660C79553EC0C2165 /* ProgressCelebrationView.swift */; };
 		5DC776954B7538B3745A70EA /* HapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894DD05B6C1F9A54FFFA697A /* HapticsService.swift */; };
 		5E2440DE8DE657DD58820192 /* AppStrings+English.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1043A7A28122A7496303992 /* AppStrings+English.swift */; };
 		5F8D5BC0E027A8B5E7340923 /* NebulaDriftSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E271F15AB922B3AF19043 /* NebulaDriftSettingsView.swift */; };
@@ -453,6 +454,7 @@
 		CB8C0791AB4D515F992AC1E7 /* StarburstRingPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = StarburstRingPreset.metal; sourceTree = "<group>"; };
 		CC0A2E51F66FCC679DA2A5D0 /* wordbuilder_polish_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_spanish.json; sourceTree = "<group>"; };
 		CD2F384266BDC87729E97BA3 /* DebugContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugContentController.swift; sourceTree = "<group>"; };
+		CD7502A660C79553EC0C2165 /* ProgressCelebrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCelebrationView.swift; sourceTree = "<group>"; };
 		CFCDEC29F8529A0609045459 /* PDFSuccessOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSuccessOverlayView.swift; sourceTree = "<group>"; };
 		D3DCA4D4638FDF2525769692 /* PostSessionNudge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSessionNudge.swift; sourceTree = "<group>"; };
 		D41E1DDF3573205870644CDF /* grammar_spanish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_spanish_english.json; sourceTree = "<group>"; };
@@ -615,6 +617,7 @@
 				53B3BC180E8CA6F328FF7C7F /* OfflineBanner.swift */,
 				D3DCA4D4638FDF2525769692 /* PostSessionNudge.swift */,
 				5881A9A303C2E0066D3F9606 /* PremiumCTAButton.swift */,
+				CD7502A660C79553EC0C2165 /* ProgressCelebrationView.swift */,
 				5EFC389872A53408E1404066 /* TierGlassCard.swift */,
 			);
 			path = Shared;
@@ -1410,6 +1413,7 @@
 				3D201170B7B43BACCA089962 /* PremiumFeatureCarousel.swift in Sources */,
 				E5C95676BF77324EABAACEC0 /* ProfileView.swift in Sources */,
 				B58EF9602E893600A943B8A6 /* ProfileViewModel.swift in Sources */,
+				5765D16EDA45281EE2C5F76F /* ProgressCelebrationView.swift in Sources */,
 				343AD391FC75380A01F03858 /* ProgressService.swift in Sources */,
 				BBB021509E641F28D020C46E /* ProgressViewModel.swift in Sources */,
 				BCD7C091DEFE190310358407 /* QAPanelView.swift in Sources */,
