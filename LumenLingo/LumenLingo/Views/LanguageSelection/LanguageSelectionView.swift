@@ -783,7 +783,7 @@ struct LanguageSelectionView: View {
 
             Text(title)
                 .font(.title3.weight(.semibold))
-                .foregroundStyle(isDark ? .white : Color(red: 45/255, green: 22/255, blue: 62/255))
+                .foregroundStyle(isDark ? .white : .caribbeanInk)
         }
     }
 
@@ -957,7 +957,7 @@ private struct TargetCardView: View {
         }
         return isSelected
             ? (isDark ? .white : .indigo)
-            : (isDark ? .white.opacity(0.85) : Color(red: 45/255, green: 22/255, blue: 62/255))
+            : (isDark ? .white.opacity(0.85) : .caribbeanInk)
     }
 
     private var labelSecondary: Color {
@@ -966,7 +966,7 @@ private struct TargetCardView: View {
         }
         return isSelected
             ? .indigo.opacity(0.7)
-            : (isDark ? .white.opacity(0.5) : Color(red: 140/255, green: 96/255, blue: 136/255))
+            : (isDark ? .white.opacity(0.5) : .caribbeanPlum)
     }
 
     @ViewBuilder
@@ -981,7 +981,7 @@ private struct TargetCardView: View {
                 )
         } else {
             Circle()
-                .fill(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.4))
+                .fill(isDark ? Color.white.opacity(0.04) : Color.caribbeanElevated)
         }
     }
 
@@ -1019,15 +1019,15 @@ private struct TargetCardView: View {
                 .shadow(color: .indigo.opacity(isDark ? 0.2 : 0.1), radius: 10, y: 3)
         } else {
             RoundedRectangle(cornerRadius: 16)
-                .fill(isDark ? Color.white.opacity(0.04) : Color.white.opacity(0.35))
+                .fill(isDark ? Color.white.opacity(0.04) : Color.caribbeanElevated)
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
                         .strokeBorder(
-                            isDark ? Color.white.opacity(0.05) : Color.white.opacity(0.3),
+                            isDark ? Color.white.opacity(0.05) : Color.caribbeanBorderSubtle,
                             lineWidth: 0.5
                         )
                 )
-                .shadow(color: isDark ? .black.opacity(0.08) : Color(red: 100/255, green: 58/255, blue: 100/255).opacity(0.06), radius: 3, y: 1)
+                .shadow(color: isDark ? .black.opacity(0.08) : Color.caribbeanPlum.opacity(0.06), radius: 3, y: 1)
         }
     }
 }

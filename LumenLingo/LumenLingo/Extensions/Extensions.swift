@@ -215,6 +215,13 @@ extension LinearGradient {
         startPoint: .leading,
         endPoint: .trailing
     )
+
+    /// Warm accent — golden amber for "today" highlights and streak labels
+    static let caribbeanGradientWarm = LinearGradient(
+        colors: [Color(hex: "FB923C"), Color(hex: "F59E0B"), Color(hex: "FDE68A")],
+        startPoint: .topLeading,
+        endPoint: .bottomTrailing
+    )
 }
 
 // MARK: - Caribbean Shadow System (Story 1.1.3)

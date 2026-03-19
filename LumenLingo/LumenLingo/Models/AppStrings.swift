@@ -146,6 +146,9 @@ struct AppStrings {
     let nebula: String
     let learner: String     // "Learner"
     let xp: String
+    let words: String          // "Words"
+    let activityCalendar: String // "Activity Calendar"
+    let dayStreak: String      // "day streak"
     let darkMode: String
     let cosmicDarkTheme: String
     let lightModeActive: String

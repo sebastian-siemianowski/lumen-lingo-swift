@@ -45,7 +45,7 @@ struct MembershipView: View {
                     )
                 } else {
                     LinearGradient(
-                        colors: [Color(hex: "#C494FC"), Color(hex: "#F472B6"), Color(hex: "#FB923C")],
+                        colors: [Color(hex: "#E8D5F5"), Color(hex: "#F5D0E0"), Color(hex: "#FCE4C8")],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     )
@@ -80,36 +80,52 @@ struct MembershipView: View {
 
     private var heroSection: some View {
         VStack(spacing: 12) {
+            // Crown icon with glow
+            ZStack {
+                if !isDark {
+                    Circle()
+                        .fill(LinearGradient.caribbeanGradientWarm)
+                        .frame(width: 70, height: 70)
+                        .blur(radius: 20)
+                        .opacity(0.4)
+                }
+                Image(systemName: "crown.fill")
+                    .font(.system(size: 40))
+                    .foregroundStyle(
+                        isDark
+                            ? AnyShapeStyle(LinearGradient(colors: [.purple, .pink], startPoint: .leading, endPoint: .trailing))
+                            : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
+                    )
+            }
+            .padding(.bottom, 4)
+
             Text(L.plansAndPricing)
                 .font(.caption.bold())
                 .tracking(1.5)
                 .textCase(.uppercase)
-                .foregroundStyle(.purple.opacity(0.8))
+                .foregroundStyle(isDark ? .purple.opacity(0.8) : .caribbeanPlum)
                 .padding(.horizontal, 12)
                 .padding(.vertical, 6)
                 .background(
                     Capsule()
-                        .fill(.purple.opacity(0.12))
-                        .overlay(Capsule().strokeBorder(.purple.opacity(0.25), lineWidth: 1))
+                        .fill(isDark ? .purple.opacity(0.12) : Color.caribbeanSelected)
+                        .overlay(Capsule().strokeBorder(isDark ? .purple.opacity(0.25) : Color.caribbeanBorderSubtle, lineWidth: isDark ? 1 : 0.5))
                 )
 
             VStack(spacing: 4) {
                 Text(L.investInYour)
                     .font(.system(size: 36, weight: .black))
                     .foregroundStyle(
-                        LinearGradient(
-                            colors: [.purple, .pink],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
+                        isDark
+                            ? AnyShapeStyle(LinearGradient(colors: [.purple, .pink], startPoint: .leading, endPoint: .trailing))
+                            : AnyShapeStyle(LinearGradient.caribbeanGradientSunset)
                     )
                 Text(L.languageMastery)
                     .font(.system(size: 36, weight: .black))
                     .foregroundStyle(
-                        LinearGradient(
-                            colors: [.purple, .pink, .orange],
-                            startPoint: .leading, endPoint: .trailing
-                        )
+                        isDark
+                            ? AnyShapeStyle(LinearGradient(colors: [.purple, .pink, .orange], startPoint: .leading, endPoint: .trailing))
+                            : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
                     )
             }
 
@@ -213,9 +229,10 @@ struct MembershipView: View {
                 .padding(.vertical, 10)
                 .padding(.horizontal, 20)
                 .background(
-                    Capsule().fill(isDark ? .white.opacity(0.06) : Color.caribbeanRecessed.opacity(0.5))
-                        .overlay(Capsule().strokeBorder(isDark ? .white.opacity(0.06) : Color.caribbeanBorderSubtle, lineWidth: 1))
+                    Capsule().fill(isDark ? .white.opacity(0.06) : Color.caribbeanElevated)
+                        .overlay(Capsule().strokeBorder(isDark ? .white.opacity(0.06) : Color.caribbeanBorderSubtle, lineWidth: isDark ? 1 : 0.5))
                 )
+                .caribbeanShadow(isDark ? .subtle : .medium)
             },
             content: {
                 comparisonTable
@@ -449,7 +466,7 @@ struct MembershipView: View {
                 .fill(.ultraThinMaterial)
                 .overlay(
                     RoundedRectangle(cornerRadius: 18)
-                        .strokeBorder(.white.opacity(0.06), lineWidth: 1)
+                        .strokeBorder(isDark ? .white.opacity(0.06) : Color.caribbeanBorderSubtle, lineWidth: isDark ? 1 : 0.5)
                 )
         )
     }
@@ -913,8 +930,8 @@ struct TierCardView: View {
                             .strokeBorder(
                                 (tier.isHighlighted || isActuallyCurrent || isRoyal)
                                     ? LinearGradient(colors: tier.gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing)
-                                    : LinearGradient(colors: [.white.opacity(0.06)], startPoint: .top, endPoint: .bottom),
-                                lineWidth: (tier.isHighlighted || isActuallyCurrent || isRoyal) ? 1.5 : 1
+                                    : LinearGradient(colors: [isDark ? .white.opacity(0.06) : Color.caribbeanBorderSubtle], startPoint: .top, endPoint: .bottom),
+                                lineWidth: (tier.isHighlighted || isActuallyCurrent || isRoyal) ? 1.5 : (isDark ? 1 : 0.5)
                             )
                     )
             }
@@ -978,9 +995,9 @@ struct TierCardView: View {
         case "premium": .purple
         case "delight": .pink
         case "exclusive": .cyan
-        case "inherit": .white.opacity(0.4)
+        case "inherit": isDark ? .white.opacity(0.4) : .caribbeanMist
         case "ultimate": .orange
-        default: .white.opacity(0.5)
+        default: isDark ? .white.opacity(0.5) : .caribbeanPlum
         }
     }
 }

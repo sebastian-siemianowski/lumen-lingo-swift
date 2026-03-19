@@ -2297,13 +2297,13 @@ Quick stats row:
 ```
 
 **Acceptance Criteria:**
-- [ ] Profile avatar is a warm, glowing circle with the user's initials
-- [ ] Rotating ambient ring creates a subtle "alive" premium quality
-- [ ] Name uses the full Caribbean sunset gradient (warmer than current)
-- [ ] Tier badge is prominently displayed next to level text
-- [ ] Quick stat values are large and immediately readable
-- [ ] Three-column stat layout is balanced and proportional
-- [ ] Avatar glow doesn't interfere with name text readability
+- [x] Profile avatar is a warm, glowing circle with the user's initials
+- [x] Rotating ambient ring creates a subtle "alive" premium quality
+- [x] Name uses the full Caribbean sunset gradient (warmer than current)
+- [x] Tier badge is prominently displayed next to level text
+- [x] Quick stat values are large and immediately readable
+- [x] Three-column stat layout is balanced and proportional
+- [x] Avatar glow doesn't interfere with name text readability
 
 #### Subtask 7.1.2: Add Profile Streak Calendar Visualization
 
@@ -2327,12 +2327,12 @@ Container: GlassCardBackground
 ```
 
 **Acceptance Criteria:**
-- [ ] Calendar clearly shows active vs inactive days with warm/cool contrast
-- [ ] Today's circle is the most prominent (golden glow)
-- [ ] Streak connections create a visual "chain" that users want to maintain
-- [ ] Calendar fits cleanly within the profile section
+- [x] Calendar clearly shows active vs inactive days with warm/cool contrast
+- [x] Today's circle is the most prominent (golden glow)
+- [x] Streak connections create a visual "chain" that users want to maintain
+- [x] Calendar fits cleanly within the profile section
 - [ ] Tapping a day could show a breakdown (stretch goal)
-- [ ] Calendar updates correctly when the user practices
+- [x] Calendar updates correctly when the user practices
 
 ---
 
@@ -2375,11 +2375,11 @@ Inactive tab:
 ```
 
 **Acceptance Criteria:**
-- [ ] Active tab is unmistakable with gradient fill — premium pill indicator
-- [ ] Active pill slides smoothly between tabs using `matchedGeometryEffect`
-- [ ] Inactive tabs are clearly tappable but secondary
-- [ ] Tab bar feels like a premium segmented control, not basic iOS style
-- [ ] All tabs (Appearance, Sounds, Nebula Drift — where applicable) work correctly
+- [x] Active tab is unmistakable with gradient fill — premium pill indicator
+- [x] Active pill slides smoothly between tabs using `matchedGeometryEffect`
+- [x] Inactive tabs are clearly tappable but secondary
+- [x] Tab bar feels like a premium segmented control, not basic iOS style
+- [x] All tabs (Appearance, Sounds, Nebula Drift — where applicable) work correctly
 
 #### Subtask 7.2.2: Redesign Dark/Light Mode Toggle
 
@@ -2410,12 +2410,12 @@ Toggle animation (light → dark):
 ```
 
 **Acceptance Criteria:**
-- [ ] Toggle label changes contextually: "Tropical Island" in light, "Cosmic Night" in dark
-- [ ] Toggle animation is smooth and delightful — the moment of switching should spark joy
+- [x] Toggle label changes contextually: "Tropical Island" in light, "Cosmic Night" in dark
+- [x] Toggle animation is smooth and delightful — the moment of switching should spark joy
 - [ ] Warm wash effect rippling from the toggle creates a "the world is transforming" moment — from cosmic void to tropical paradise
-- [ ] All visible UI elements transition smoothly (no flash, no jarring color jumps)
-- [ ] Toggle is accessible with VoiceOver (announces current mode and action)
-- [ ] Animation respects `reduceMotion` (instant switch, no ripple)
+- [x] All visible UI elements transition smoothly (no flash, no jarring color jumps)
+- [x] Toggle is accessible with VoiceOver (announces current mode and action)
+- [x] Animation respects `reduceMotion` (instant switch, no ripple)
 
 #### Subtask 7.2.3: Redesign Settings Rows & Controls
 
@@ -2448,13 +2448,13 @@ Chevron:
 ```
 
 **Acceptance Criteria:**
-- [ ] Settings rows feel warm and organized, not clinical
-- [ ] Leading icons provide color variety and visual interest
-- [ ] Section headers clearly delineate settings groups
-- [ ] Toggle animations are smooth and satisfying
-- [ ] Value displays are readable and appropriately emphasized
-- [ ] Row press state shows caribbeanHover background
-- [ ] All settings rows maintain consistent height and alignment
+- [x] Settings rows feel warm and organized, not clinical
+- [x] Leading icons provide color variety and visual interest
+- [x] Section headers clearly delineate settings groups
+- [x] Toggle animations are smooth and satisfying
+- [x] Value displays are readable and appropriately emphasized
+- [x] Row press state shows caribbeanHover background
+- [x] All settings rows maintain consistent height and alignment
 
 ---
 
@@ -2488,12 +2488,12 @@ Hero content:
 ```
 
 **Acceptance Criteria:**
-- [ ] Membership hero creates immediate aspiration — "I want this"
-- [ ] Animated gradient background creates premium atmosphere
-- [ ] Crown icon has presence and warmth — it glows and shimmers
-- [ ] Title is powerful and motivational
+- [x] Membership hero creates immediate aspiration — "I want this"
+- [x] Animated gradient background creates premium atmosphere
+- [x] Crown icon has presence and warmth — it glows and shimmers
+- [x] Title is powerful and motivational
 - [ ] Social proof adds credibility without being salesy
-- [ ] Overall hero section is not too tall — content below is visible
+- [x] Overall hero section is not too tall — content below is visible
 
 #### Subtask 7.3.2: Redesign Tier Cards for Light Mode
 
@@ -2536,15 +2536,15 @@ Recommended badge:
 ```
 
 **Acceptance Criteria:**
-- [ ] Tier cards in light mode DO NOT force dark color scheme (current behavior)
-- [ ] Each tier has a distinct visual identity through its gradient accent
-- [ ] Price is the most prominent element in each card
-- [ ] Feature available/unavailable is immediately clear through icon and color
+- [x] Tier cards in light mode DO NOT force dark color scheme (current behavior)
+- [x] Each tier has a distinct visual identity through its gradient accent
+- [x] Price is the most prominent element in each card
+- [x] Feature available/unavailable is immediately clear through icon and color
 - [ ] Premium features have special emphasis (star, gradient text)
-- [ ] Upgrade CTA button has a warm glow that draws the eye
-- [ ] Recommended tier has a prominent ribbon badge
-- [ ] Cards feel aspirational — each tier upgrade feels like a meaningful step up
-- [ ] Scrolling through tiers feels like browsing luxury options
+- [x] Upgrade CTA button has a warm glow that draws the eye
+- [x] Recommended tier has a prominent ribbon badge
+- [x] Cards feel aspirational — each tier upgrade feels like a meaningful step up
+- [x] Scrolling through tiers feels like browsing luxury options
 
 #### Subtask 7.3.3: Fix Membership Comparison Toggle Visibility
 
@@ -2561,11 +2561,11 @@ Light mode comparison toggle:
 ```
 
 **Acceptance Criteria:**
-- [ ] Comparison toggle is clearly visible against the gradient background
-- [ ] Toggle text is readable and the chevron indicates expandability
-- [ ] Pressed state provides feedback
-- [ ] Expanded state shows the full comparison table with correct light mode styling
-- [ ] Comparison table alternating rows use caribbeanRecessed / transparent alternation
+- [x] Comparison toggle is clearly visible against the gradient background
+- [x] Toggle text is readable and the chevron indicates expandability
+- [x] Pressed state provides feedback
+- [x] Expanded state shows the full comparison table with correct light mode styling
+- [x] Comparison table alternating rows use caribbeanRecessed / transparent alternation
 
 #### Subtask 7.3.4: Redesign Feature Comparison Table
 
@@ -2592,12 +2592,12 @@ Table border:
 ```
 
 **Acceptance Criteria:**
-- [ ] Comparison table is easy to scan — users can quickly see what each tier offers
-- [ ] Row banding creates readable horizontal rhythm
-- [ ] Available checks are warm green, unavailable dashes are muted
-- [ ] Table fits within the screen width without horizontal scrolling
-- [ ] Column widths are proportional and balanced
-- [ ] Scrolling within the table is smooth if it exceeds viewport height
+- [x] Comparison table is easy to scan — users can quickly see what each tier offers
+- [x] Row banding creates readable horizontal rhythm
+- [x] Available checks are warm green, unavailable dashes are muted
+- [x] Table fits within the screen width without horizontal scrolling
+- [x] Column widths are proportional and balanced
+- [x] Scrolling within the table is smooth if it exceeds viewport height
 
 ---
 
@@ -2620,10 +2620,10 @@ Table border:
 - `Color(red: 100/255, green: 58/255, blue: 100/255)` → `.caribbeanPlum`
 
 **Acceptance Criteria:**
-- [ ] Zero inline RGB values that duplicate Caribbean token values
-- [ ] All text and icon colors use semantic tokens
-- [ ] No visual change — tokens have identical values to the raw RGB
-- [ ] Future token color changes will automatically propagate
+- [x] Zero inline RGB values that duplicate Caribbean token values
+- [x] All text and icon colors use semantic tokens
+- [x] No visual change — tokens have identical values to the raw RGB
+- [x] Future token color changes will automatically propagate
 
 #### Subtask 7.4.2: Enhance Language Card Light Mode Treatment
 
@@ -2648,11 +2648,11 @@ Connection rail:
 ```
 
 **Acceptance Criteria:**
-- [ ] Language cards use consistent Caribbean token styling
-- [ ] Selected language card is clearly distinguished from unselected
-- [ ] Connection rail between source and target language is warm and visible
-- [ ] "Start Adventure" CTA is the clear focal point with warm glow
-- [ ] Overall onboarding screen matches the premium quality of the rest of the app
+- [x] Language cards use consistent Caribbean token styling
+- [x] Selected language card is clearly distinguished from unselected
+- [x] Connection rail between source and target language is warm and visible
+- [x] "Start Adventure" CTA is the clear focal point with warm glow
+- [x] Overall onboarding screen matches the premium quality of the rest of the app
 
 ---
 

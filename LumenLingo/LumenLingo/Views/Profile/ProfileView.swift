@@ -145,71 +145,142 @@ struct ProfileView: View {
 
     // MARK: - Profile Header
 
+    /// Rotation angle for the ambient ring animation (light mode)
+    @State private var ambientRingRotation: Double = 0
+
     private var profileHeader: some View {
         GlassPanelWrapper {
             VStack(spacing: 16) {
                 // Avatar with glow rings
                 ZStack {
-                    // Outer ambient glow
-                    Circle()
-                        .fill(
-                            RadialGradient(
-                                colors: [
-                                    Color(hex: "#667eea").opacity(0.25),
-                                    Color(hex: "#764ba2").opacity(0.10),
-                                    .clear
-                                ],
-                                center: .center,
-                                startRadius: 28,
-                                endRadius: 65
+                    if isDark {
+                        // Dark mode: original ambient glow
+                        Circle()
+                            .fill(
+                                RadialGradient(
+                                    colors: [
+                                        Color(hex: "#667eea").opacity(0.25),
+                                        Color(hex: "#764ba2").opacity(0.10),
+                                        .clear
+                                    ],
+                                    center: .center,
+                                    startRadius: 28,
+                                    endRadius: 65
+                                )
                             )
-                        )
-                        .frame(width: 120, height: 120)
+                            .frame(width: 120, height: 120)
+                    } else {
+                        // Light mode: turquoise ocean glow
+                        Circle()
+                            .fill(
+                                RadialGradient(
+                                    colors: [
+                                        Color(hex: "#0EA5E9").opacity(0.12),
+                                        Color(hex: "#06B6D4").opacity(0.06),
+                                        .clear
+                                    ],
+                                    center: .center,
+                                    startRadius: 28,
+                                    endRadius: 65
+                                )
+                            )
+                            .frame(width: 120, height: 120)
+                    }
 
-                    // Gradient border ring
-                    Circle()
-                        .strokeBorder(
-                            LinearGradient(
-                                colors: [
-                                    Color(hex: "#667eea").opacity(0.6),
-                                    Color(hex: "#764ba2").opacity(0.3),
-                                    Color(hex: "#667eea").opacity(0.15)
-                                ],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 2.5
-                        )
-                        .frame(width: 86, height: 86)
+                    // Rotating ambient ring (light mode only)
+                    if !isDark {
+                        Circle()
+                            .strokeBorder(
+                                LinearGradient.caribbeanGradientOcean,
+                                lineWidth: 1.5
+                            )
+                            .opacity(0.30)
+                            .frame(width: 96, height: 96)
+                            .rotationEffect(.degrees(ambientRingRotation))
+                            .onAppear {
+                                withAnimation(.linear(duration: 30).repeatForever(autoreverses: false)) {
+                                    ambientRingRotation = 360
+                                }
+                            }
+                    }
+
+                    if isDark {
+                        // Dark mode: original gradient border ring
+                        Circle()
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [
+                                        Color(hex: "#667eea").opacity(0.6),
+                                        Color(hex: "#764ba2").opacity(0.3),
+                                        Color(hex: "#667eea").opacity(0.15)
+                                    ],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 2.5
+                            )
+                            .frame(width: 86, height: 86)
+                    } else {
+                        // Light mode: pearl-white border ring
+                        Circle()
+                            .strokeBorder(
+                                Color.white.opacity(0.60),
+                                lineWidth: 2
+                            )
+                            .frame(width: 86, height: 86)
+                    }
 
                     // Main avatar circle
                     Circle()
                         .fill(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
+                            isDark
+                                ? AnyShapeStyle(LinearGradient(
+                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ))
+                                : AnyShapeStyle(LinearGradient.caribbeanGradientSunset)
                         )
                         .frame(width: 80, height: 80)
-                        .shadow(color: Color(hex: "#764ba2").opacity(0.4), radius: 16, y: 4)
+                        .shadow(
+                            color: isDark
+                                ? Color(hex: "#764ba2").opacity(0.4)
+                                : Color(hex: "#0EA5E9").opacity(0.12),
+                            radius: isDark ? 16 : 12,
+                            y: 4
+                        )
 
-                    // Person icon — clipped to circle to avoid bust rectangle
-                    Image(systemName: "person.crop.circle.fill")
-                        .font(.system(size: 72, weight: .thin))
-                        .symbolRenderingMode(.palette)
-                        .foregroundStyle(
-                            .white,
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
+                    // User initials or person icon
+                    if !isDark, let initials = userInitials, !initials.isEmpty {
+                        Text(initials)
+                            .font(.system(size: 28, weight: .bold, design: .rounded))
+                            .foregroundStyle(.white)
+                            .frame(width: 80, height: 80)
+                    } else {
+                        Image(systemName: "person.crop.circle.fill")
+                            .font(.system(size: 72, weight: .thin))
+                            .symbolRenderingMode(.palette)
+                            .foregroundStyle(
+                                .white,
+                                isDark
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    ))
+                                    : AnyShapeStyle(LinearGradient.caribbeanGradientSunset)
                             )
-                        )
-                        .frame(width: 80, height: 80)
-                        .clipShape(Circle())
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
+                    }
                 }
-                .shadow(color: Color(hex: "#764ba2").opacity(0.3), radius: 12, y: 2)
+                .shadow(
+                    color: isDark
+                        ? Color(hex: "#764ba2").opacity(0.3)
+                        : Color(hex: "#06B6D4").opacity(0.06),
+                    radius: isDark ? 12 : 4,
+                    y: 2
+                )
                 .staggeredReveal(index: 0)
 
                 // Name & level
@@ -217,13 +288,20 @@ struct ProfileView: View {
                     Text(displayName.isEmpty ? "Learner" : displayName)
                         .font(.title2.bold())
                         .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
+                            isDark
+                                ? AnyShapeStyle(LinearGradient(
+                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                ))
+                                : AnyShapeStyle(LinearGradient.caribbeanGradientSunset)
+                        )
+                        .shadow(
+                            color: isDark ? .clear : .caribbeanPlum.opacity(0.06),
+                            radius: isDark ? 0 : 4
                         )
 
+                    // Level + tier badge inline
                     HStack(spacing: 6) {
                         Image(systemName: "star.fill")
                             .font(.caption2)
@@ -231,40 +309,82 @@ struct ProfileView: View {
                         Text("\(L.level) \(profile?.currentLevel ?? 1) \(L.learner)")
                             .font(.subheadline)
                             .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+
+                        NavigationLink {
+                            MembershipView()
+                        } label: {
+                            TierBadgeView()
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
                 .staggeredReveal(index: 1)
 
-                // Tier badge — tapping navigates to Membership
-                NavigationLink {
-                    MembershipView()
-                } label: {
-                    TierBadgeView()
-                }
-                .buttonStyle(.plain)
-                .staggeredReveal(index: 2)
-
                 // Quick stats row
                 HStack(spacing: 0) {
-                    quickStat(value: "\(profile?.totalXP ?? 0)", label: L.xp, icon: "bolt.fill", color: .cyan)
+                    quickStat(
+                        value: "\(totalWordsLearned)",
+                        label: L.words,
+                        icon: "textformat.abc",
+                        color: isDark ? .cyan : .caribbeanPlum
+                    )
                     quickStatDivider
-                    quickStat(value: "\(profile?.streakDays ?? 0)", label: L.streak, icon: "flame.fill", color: .orange)
+                    quickStat(
+                        value: "\(profile?.streakDays ?? 0)",
+                        label: L.streak,
+                        icon: "flame.fill",
+                        color: isDark ? .orange : .caribbeanPlum
+                    )
                     quickStatDivider
-                    quickStat(value: "\(allProgress.count)", label: L.sessions, icon: "play.circle.fill", color: .green)
+                    quickStat(
+                        value: formattedAccuracy,
+                        label: L.accuracy,
+                        icon: "target",
+                        color: isDark ? .green : .caribbeanPlum
+                    )
                 }
                 .padding(.top, 4)
-                .staggeredReveal(index: 3)
+                .staggeredReveal(index: 2)
+
+                // Streak calendar (light mode: premium Caribbean style)
+                streakCalendar
+                    .staggeredReveal(index: 3)
             }
         }
+    }
+
+    /// User initials derived from displayName (for light mode avatar)
+    private var userInitials: String? {
+        let name = displayName
+        guard !name.isEmpty else { return nil }
+        let parts = name.split(separator: " ")
+        if parts.count >= 2 {
+            return "\(parts[0].prefix(1))\(parts[1].prefix(1))".uppercased()
+        }
+        return String(name.prefix(2)).uppercased()
+    }
+
+    /// Total unique words the user has answered correctly
+    private var totalWordsLearned: Int {
+        allProgress.reduce(0) { $0 + $1.correctAnswers }
+    }
+
+    /// Formatted accuracy percentage from all sessions
+    private var formattedAccuracy: String {
+        let totalCorrect = allProgress.reduce(0) { $0 + $1.correctAnswers }
+        let totalQuestions = allProgress.reduce(0) { $0 + $1.totalQuestions }
+        guard totalQuestions > 0 else { return "—" }
+        let pct = Int(round(Double(totalCorrect) / Double(totalQuestions) * 100))
+        return "\(pct)%"
     }
 
     private func quickStat(value: String, label: String, icon: String, color: Color) -> some View {
         VStack(spacing: 4) {
             Image(systemName: icon)
-                .font(.system(size: 14))
+                .font(.system(size: 12))
                 .foregroundStyle(color)
             Text(value)
-                .font(.system(size: 16, weight: .bold, design: .rounded))
+                .font(.system(size: 20, weight: .bold, design: .rounded))
                 .foregroundStyle(isDark ? .white : .caribbeanInk)
             Text(label)
                 .font(.caption2)
@@ -275,8 +395,210 @@ struct ProfileView: View {
 
     private var quickStatDivider: some View {
         Rectangle()
-            .fill(isDark ? .white.opacity(0.08) : .black.opacity(0.06))
+            .fill(isDark ? .white.opacity(0.08) : Color.caribbeanBorderSubtle)
             .frame(width: 1, height: 40)
+    }
+
+    // MARK: - Streak Calendar
+
+    /// Pulse animation for "Today" circle
+    @State private var todayPulse = false
+
+    private var streakCalendar: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            // Header
+            HStack {
+                Text(L.activityCalendar)
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+
+                Spacer()
+
+                Text(calendarMonthYear)
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+            }
+
+            // Day-of-week labels
+            let dayLabels = calendarDayLabels
+            HStack(spacing: 0) {
+                ForEach(dayLabels, id: \.self) { label in
+                    Text(label)
+                        .font(.system(size: 9, weight: .medium))
+                        .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanPlum.opacity(0.6))
+                        .frame(maxWidth: .infinity)
+                }
+            }
+
+            // Calendar grid - last 30 days
+            let days = calendarDays
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 4), count: 7), spacing: 6) {
+                // Leading spacers for alignment to day-of-week
+                ForEach(0..<leadingSpacerCount(for: days), id: \.self) { _ in
+                    Color.clear.frame(width: 14, height: 14)
+                }
+
+                ForEach(days, id: \.date) { day in
+                    calendarDayCircle(day)
+                }
+            }
+
+            // Streak label
+            if let streakCount = profile?.streakDays, streakCount > 0 {
+                HStack(spacing: 4) {
+                    Image(systemName: "flame.fill")
+                        .font(.system(size: 11))
+                    Text("\(streakCount)-\(L.dayStreak)")
+                        .font(.system(size: 12, weight: .semibold))
+                }
+                .foregroundStyle(
+                    isDark
+                        ? AnyShapeStyle(Color.orange)
+                        : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
+                )
+                .padding(.top, 2)
+            }
+        }
+        .padding(14)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(isDark ? .white.opacity(0.03) : .caribbeanRecessed.opacity(0.5))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 14)
+                        .strokeBorder(
+                            isDark ? .white.opacity(0.06) : Color.caribbeanBorderSubtle,
+                            lineWidth: 0.5
+                        )
+                )
+        )
+        .onAppear {
+            withAnimation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true)) {
+                todayPulse = true
+            }
+        }
+    }
+
+    /// A single day in the calendar grid
+    @ViewBuilder
+    private func calendarDayCircle(_ day: CalendarDay) -> some View {
+        let isInStreak = day.isActive && isPartOfCurrentStreak(day.date)
+        let size: CGFloat = isInStreak ? 16 : 14
+
+        Circle()
+            .fill(calendarDayFill(day))
+            .frame(width: size, height: size)
+            .overlay {
+                if !isDark && day.isToday {
+                    // Pulsing glow ring for today
+                    Circle()
+                        .strokeBorder(
+                            LinearGradient.caribbeanGradientWarm.opacity(0.5),
+                            lineWidth: 1.5
+                        )
+                        .frame(width: size + 4, height: size + 4)
+                        .scaleEffect(todayPulse ? 1.15 : 1.0)
+                        .opacity(todayPulse ? 0.4 : 0.8)
+                }
+            }
+            .overlay {
+                if !day.isFuture && !day.isToday {
+                    // Day number for non-future days
+                    Text("\(Calendar.current.component(.day, from: day.date))")
+                        .font(.system(size: 7, weight: .medium, design: .rounded))
+                        .foregroundStyle(day.isActive
+                            ? .white.opacity(0.9)
+                            : (isDark ? .white.opacity(0.25) : .caribbeanPlum.opacity(0.4)))
+                }
+            }
+    }
+
+    private func calendarDayFill(_ day: CalendarDay) -> some ShapeStyle {
+        if day.isFuture {
+            return AnyShapeStyle(isDark ? Color.white.opacity(0.02) : Color.caribbeanDisabled)
+        }
+        if day.isToday {
+            return isDark
+                ? AnyShapeStyle(Color.orange)
+                : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
+        }
+        if day.isActive {
+            return isDark
+                ? AnyShapeStyle(Color.cyan.opacity(0.7))
+                : AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
+        }
+        // Inactive past day
+        return AnyShapeStyle(isDark ? Color.white.opacity(0.05) : Color.caribbeanRecessed)
+    }
+
+    // MARK: - Calendar Data
+
+    struct CalendarDay {
+        let date: Date
+        let isActive: Bool
+        let isToday: Bool
+        let isFuture: Bool
+    }
+
+    /// Localized short day labels (M T W T F S S)
+    private var calendarDayLabels: [String] {
+        let formatter = DateFormatter()
+        formatter.locale = Locale.current
+        let symbols = formatter.veryShortWeekdaySymbols ?? ["S", "M", "T", "W", "T", "F", "S"]
+        // Calendar's firstWeekday is 1-based (1=Sunday)
+        let first = Calendar.current.firstWeekday - 1
+        return Array(symbols[first...]) + Array(symbols[..<first])
+    }
+
+    /// Month/year string for the header
+    private var calendarMonthYear: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM yyyy"
+        return formatter.string(from: Date())
+    }
+
+    /// Generate the last 30 days of calendar data
+    private var calendarDays: [CalendarDay] {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        let activeDates = Set(allProgress.map { calendar.startOfDay(for: $0.createdDate) })
+
+        return (0..<30).reversed().map { offset in
+            let date = calendar.date(byAdding: .day, value: -offset, to: today)!
+            let dayStart = calendar.startOfDay(for: date)
+            return CalendarDay(
+                date: dayStart,
+                isActive: activeDates.contains(dayStart),
+                isToday: dayStart == today,
+                isFuture: dayStart > today
+            )
+        }
+    }
+
+    /// Number of empty leading cells to align the first day to its weekday column
+    private func leadingSpacerCount(for days: [CalendarDay]) -> Int {
+        guard let firstDate = days.first?.date else { return 0 }
+        let weekday = Calendar.current.component(.weekday, from: firstDate)
+        let firstWeekday = Calendar.current.firstWeekday
+        return (weekday - firstWeekday + 7) % 7
+    }
+
+    /// Check if a date falls within the current contiguous streak from today
+    private func isPartOfCurrentStreak(_ date: Date) -> Bool {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        let activeDates = Set(allProgress.map { calendar.startOfDay(for: $0.createdDate) })
+
+        // Walk backwards from today to find streak start
+        var streakStart = today
+        var checkDate = today
+        while activeDates.contains(checkDate) {
+            streakStart = checkDate
+            guard let prev = calendar.date(byAdding: .day, value: -1, to: checkDate) else { break }
+            checkDate = prev
+        }
+
+        let dayStart = calendar.startOfDay(for: date)
+        return dayStart >= streakStart && dayStart <= today
     }
 
     // MARK: - Settings Tab Bar
@@ -299,14 +621,14 @@ struct ProfileView: View {
                             Image(systemName: tabIcon(for: tab))
                                 .font(.system(size: 11))
                             Text(localizedTabName(tab))
-                                .font(.system(size: 12, weight: .semibold))
+                                .font(.system(size: 12, weight: activeTab == tab ? .semibold : .medium))
                         }
                         .foregroundStyle(
                             activeTab == tab
-                                ? (isDark ? .white : Color(hex: "#3730a3"))
-                                : (isDark ? .white.opacity(0.45) : .caribbeanInk.opacity(0.7))
+                                ? (isDark ? .white : Color.white)
+                                : (isDark ? .white.opacity(0.45) : .caribbeanPlum)
                         )
-                        .padding(.horizontal, 10)
+                        .padding(.horizontal, 12)
                         .padding(.vertical, 8)
                         .background {
                             if activeTab == tab {
@@ -318,10 +640,18 @@ struct ProfileView: View {
                                                 startPoint: .leading,
                                                 endPoint: .trailing
                                             ))
-                                            : AnyShapeStyle(Color(hex: "#4338ca").opacity(0.15))
+                                            : AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
                                     )
                                     .overlay(
-                                        Capsule().strokeBorder(isDark ? .white.opacity(0.12) : Color(hex: "#4338ca").opacity(0.30), lineWidth: 1)
+                                        Capsule().strokeBorder(
+                                            isDark ? .white.opacity(0.12) : .white.opacity(0.25),
+                                            lineWidth: isDark ? 1 : 0.5
+                                        )
+                                    )
+                                    .shadow(
+                                        color: isDark ? .clear : Color(hex: "#0EA5E9").opacity(0.20),
+                                        radius: isDark ? 0 : 6,
+                                        y: isDark ? 0 : 2
                                     )
                                     .matchedGeometryEffect(id: "tabIndicator", in: tabIndicator)
                             }
@@ -333,7 +663,10 @@ struct ProfileView: View {
             .padding(4)
             .background(
                 Capsule()
-                    .fill(isDark ? .white.opacity(0.06) : Color(hex: "#4338ca").opacity(0.08))
+                    .fill(isDark ? .white.opacity(0.06) : Color.caribbeanElevated)
+                    .overlay(
+                        isDark ? nil : Capsule().strokeBorder(Color.caribbeanBorderSubtle, lineWidth: 0.5)
+                    )
             )
         }
     }
@@ -426,8 +759,8 @@ struct ProfileView: View {
                         .modifier(SubTabLockModifier(subTab: subTab))
                         .foregroundStyle(
                             activeAppearanceSubTab == subTab
-                                ? (isDark ? .white : Color(hex: "#4c1d95"))
-                                : (isDark ? .white.opacity(0.4) : .caribbeanInk.opacity(0.65))
+                                ? (isDark ? .white : Color.caribbeanInk)
+                                : (isDark ? .white.opacity(0.4) : .caribbeanPlum)
                         )
                         .padding(.horizontal, 10)
                         .padding(.vertical, 6)
@@ -437,12 +770,12 @@ struct ProfileView: View {
                                     .fill(
                                         isDark
                                             ? AnyShapeStyle(Color(hex: "#8b5cf6").opacity(0.15))
-                                            : AnyShapeStyle(Color(hex: "#6d28d9").opacity(0.14))
+                                            : AnyShapeStyle(Color.caribbeanSelected)
                                     )
                                     .overlay(
                                         Capsule().strokeBorder(
-                                            isDark ? Color(hex: "#8b5cf6").opacity(0.25) : Color(hex: "#6d28d9").opacity(0.30),
-                                            lineWidth: 1
+                                            isDark ? Color(hex: "#8b5cf6").opacity(0.25) : Color.caribbeanBorderSubtle,
+                                            lineWidth: isDark ? 1 : 0.5
                                         )
                                     )
                                     .matchedGeometryEffect(id: "subTabIndicator", in: subTabIndicator)
@@ -455,7 +788,10 @@ struct ProfileView: View {
             .padding(3)
             .background(
                 Capsule()
-                    .fill(isDark ? .white.opacity(0.04) : Color(hex: "#6d28d9").opacity(0.07))
+                    .fill(isDark ? .white.opacity(0.04) : Color.caribbeanElevated)
+                    .overlay(
+                        isDark ? nil : Capsule().strokeBorder(Color.caribbeanBorderSubtle, lineWidth: 0.5)
+                    )
             )
         }
         .onChange(of: isDark) { _, newIsDark in
@@ -518,11 +854,25 @@ struct ProfileView: View {
         VStack(spacing: 16) {
             // Dark mode toggle
             HStack(spacing: 12) {
-                Image(systemName: isDark ? "moon.fill" : "sun.max.fill")
-                    .font(.system(size: 20))
-                    .foregroundStyle(Color(hex: "#8b5cf6"))
-                    .contentTransition(.symbolEffect(.replace))
-                    .frame(width: 24, height: 24)
+                // Animated icon in a gradient circle
+                ZStack {
+                    Circle()
+                        .fill(
+                            isDark
+                                ? AnyShapeStyle(Color(hex: "#8b5cf6").opacity(0.15))
+                                : AnyShapeStyle(LinearGradient.caribbeanGradientWarm.opacity(0.15))
+                        )
+                        .frame(width: 36, height: 36)
+
+                    Image(systemName: isDark ? "moon.fill" : "sun.max.fill")
+                        .font(.system(size: 18))
+                        .foregroundStyle(
+                            isDark
+                                ? AnyShapeStyle(Color(hex: "#8b5cf6"))
+                                : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
+                        )
+                        .contentTransition(.symbolEffect(.replace))
+                }
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(L.darkMode)
@@ -540,7 +890,7 @@ struct ProfileView: View {
 
                 PremiumToggle(
                     isOn: themeManager.isDarkMode,
-                    enabledColor: Color(hex: "#8b5cf6"),
+                    enabledColor: isDark ? Color(hex: "#8b5cf6") : Color(hex: "#0EA5E9"),
                     enabledIcon: "moon.fill",
                     disabledIcon: "sun.max.fill"
                 ) {
@@ -609,8 +959,8 @@ struct ProfileView: View {
                         .modifier(SoundSubTabLockModifier(subTab: subTab))
                         .foregroundStyle(
                             activeSoundSubTab == subTab
-                                ? (isDark ? .white : Color(hex: "#9d174d"))
-                                : (isDark ? .white.opacity(0.4) : .caribbeanInk.opacity(0.65))
+                                ? (isDark ? .white : Color.caribbeanInk)
+                                : (isDark ? .white.opacity(0.4) : .caribbeanPlum)
                         )
                         .padding(.horizontal, 10)
                         .padding(.vertical, 6)
@@ -620,12 +970,12 @@ struct ProfileView: View {
                                     .fill(
                                         isDark
                                             ? AnyShapeStyle(Color(hex: "#ec4899").opacity(0.15))
-                                            : AnyShapeStyle(Color(hex: "#be185d").opacity(0.14))
+                                            : AnyShapeStyle(Color.caribbeanSelected)
                                     )
                                     .overlay(
                                         Capsule().strokeBorder(
-                                            isDark ? Color(hex: "#ec4899").opacity(0.25) : Color(hex: "#be185d").opacity(0.30),
-                                            lineWidth: 1
+                                            isDark ? Color(hex: "#ec4899").opacity(0.25) : Color.caribbeanBorderSubtle,
+                                            lineWidth: isDark ? 1 : 0.5
                                         )
                                     )
                                     .matchedGeometryEffect(id: "soundSubTabIndicator", in: soundSubTabIndicator)
@@ -638,7 +988,10 @@ struct ProfileView: View {
             .padding(3)
             .background(
                 Capsule()
-                    .fill(isDark ? .white.opacity(0.04) : Color(hex: "#be185d").opacity(0.07))
+                    .fill(isDark ? .white.opacity(0.04) : Color.caribbeanElevated)
+                    .overlay(
+                        isDark ? nil : Capsule().strokeBorder(Color.caribbeanBorderSubtle, lineWidth: 0.5)
+                    )
             )
         }
     }
