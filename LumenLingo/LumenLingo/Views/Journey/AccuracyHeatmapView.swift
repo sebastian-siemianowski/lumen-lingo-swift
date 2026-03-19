@@ -31,8 +31,8 @@ struct AccuracyHeatmapView: View {
     private var categories: [CategoryAccuracy] {
         let grouped = Dictionary(grouping: allProgress.filter { !$0.categoryKey.isEmpty }) { $0.categoryKey }
         return grouped.compactMap { key, records -> CategoryAccuracy? in
-            // Skip entries with non-meaningful keys (e.g. single punctuation chars)
-            guard key.count > 1 || key.first?.isLetter == true else { return nil }
+            // Skip entries with non-meaningful keys (e.g. punctuation-only strings like "?")
+            guard key.contains(where: \.isLetter) else { return nil }
             let totalCorrect = records.reduce(0) { $0 + $1.correctAnswers }
             let totalQuestions = records.reduce(0) { $0 + $1.totalQuestions }
             let accuracy = totalQuestions > 0 ? Double(totalCorrect) / Double(totalQuestions) * 100 : 0
@@ -130,8 +130,11 @@ struct AccuracyHeatmapView: View {
             cornerRadius: 14,
             header: {
                 HStack(spacing: 10) {
-                    Text("🏆")
-                        .font(.system(size: 22))
+                    Image(systemName: "trophy.fill")
+                        .font(.system(size: 20))
+                        .foregroundStyle(
+                            LinearGradient(colors: [Color(hex: "#f59e0b"), Color(hex: "#f97316")], startPoint: .top, endPoint: .bottom)
+                        )
 
                     VStack(alignment: .leading, spacing: 2) {
                         if inProgressCategories.isEmpty {
@@ -208,6 +211,7 @@ struct AccuracyHeatmapView: View {
                 .padding(.top, 4)
             }
         )
+        .environment(\.collapsibleDepth, 0)
         .padding(.bottom, inProgressCategories.isEmpty ? 0 : 4)
     }
 
