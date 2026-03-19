@@ -2656,7 +2656,7 @@ Connection rail:
 
 ---
 
-## Epic 8: Background System, Depth & Atmospheric Effects
+## Epic 8: Background System, Depth & Atmospheric Effects (SKIP ENTIRELY this EPIC has to be redone)
 
 **Epic Owner:** Visual Design Systems Lead
 **Priority:** P0 — The background is the canvas on which everything else sits; it defines the entire mood
