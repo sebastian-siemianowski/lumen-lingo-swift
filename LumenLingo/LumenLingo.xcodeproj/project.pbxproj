@@ -70,6 +70,7 @@
 		48C3F46354D69FC50A03B221 /* AppStrings+Arabic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489FCF457D3A3F60F75B983 /* AppStrings+Arabic.swift */; };
 		4956F06FBFC99E1E72B80A06 /* LanguagePairUpgradeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D04FA3A066C26F1C83DBB /* LanguagePairUpgradeSheet.swift */; };
 		4BE7B3BEC3A8F44C9926CC3A /* grammar_english_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 8260535396006EA63405CA68 /* grammar_english_spanish.json */; };
+		4CF20B89F995C923BC307873 /* LightModeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B480A37B462531D7540D1B /* LightModeBackground.png */; };
 		4DEBDE799DFF66C3AF2E75A8 /* AppStrings+Polish.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9411DB022EF3C046C2B75 /* AppStrings+Polish.swift */; };
 		4ED6EDA846EB2DC1FC902B42 /* flashcards_english_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D4D41E794AAF840BF37C9 /* flashcards_english_japanese.json */; };
 		4F2F8873556D56DC57B10789 /* MetalQuantumRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1077027B7A356931601F0248 /* MetalQuantumRenderer.swift */; };
@@ -385,6 +386,7 @@
 		86217728B7FFADD692A67832 /* grammar_polish_japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_japanese.json; sourceTree = "<group>"; };
 		869CE2159CF9460A51BA2008 /* AppStrings+French.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+French.swift"; sourceTree = "<group>"; };
 		873F283713D80218498D7120 /* TierBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierBadgeView.swift; sourceTree = "<group>"; };
+		87B480A37B462531D7540D1B /* LightModeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightModeBackground.png; sourceTree = "<group>"; };
 		881BEF19BF6BC1C0A955764B /* flashcards_japanese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_japanese_english.json; sourceTree = "<group>"; };
 		88C273E365C514538CA4F196 /* NebulaDriftLockedPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaDriftLockedPreview.swift; sourceTree = "<group>"; };
 		894DD05B6C1F9A54FFFA697A /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
@@ -718,6 +720,7 @@
 		43B760BAFFED48686DECB1B5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				87B480A37B462531D7540D1B /* LightModeBackground.png */,
 				0DE6B49807212013A7E3480A /* LumenLingoIcon.png */,
 			);
 			path = Images;
@@ -1214,6 +1217,7 @@
 				B5F52197E16F76AF71336B1B /* Dominican-Beach-1.m4a in Resources */,
 				9CFD3E256C48BC1F33EB0641 /* Dominican-Beach-2.m4a in Resources */,
 				E889884403B0D07D45EB31C6 /* Japanese-Bamboo-Forest.m4a in Resources */,
+				4CF20B89F995C923BC307873 /* LightModeBackground.png in Resources */,
 				E3EB5B87F5A1AF7284DE0270 /* LumenLingoIcon.png in Resources */,
 				2F46AAA7A365380EDAAAA25F /* Midnight-Jazz-Piano.m4a in Resources */,
 				43F804CCAE58040657DB23B1 /* Mountain-Campfire.m4a in Resources */,

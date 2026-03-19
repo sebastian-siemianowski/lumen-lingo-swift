@@ -2803,7 +2803,7 @@ Consistent elements across all tabs:
 - [ ] Scroll performance is unaffected
 - [ ] Background doesn't shift when navigating between tabs (ambient wash is per-tab, positioned identically)
 
-#### Subtask 8.1.3: Define Parallax Scrolling Integration
+#### Subtask 8.1.3: Define Parallax Scrolling Integration (DONT IMPLEMENT - SKIP)
 
 **Current dashboard has parallax scrolling activated.**
 
@@ -2841,7 +2841,7 @@ Reduced motion fallback:
 
 ---
 
-### Story 8.2: Adapt Breathing Orbs for Light Mode
+### Story 8.2: Adapt Breathing Orbs for Light Mode (DONT IMPLEMENT - SKIP)
 
 **As a** user who enjoys the breathing orbs feature,
 **I want** the orbs to feel warm and luminous in light mode,
@@ -2994,337 +2994,7 @@ Implementation:
 
 ---
 
-## Epic 9: Animation, Motion & Micro-Interactions
-
-**Epic Owner:** Motion Design Lead
-**Priority:** P1 — Motion is the soul of a premium experience; it's what makes the app feel alive versus static
-**Goal:** Define a cohesive Caribbean light mode motion language that is warm, fluid, and organic — like ocean waves lapping at the shore, palm fronds swaying in the trade winds, and sunlight rippling across turquoise water. Every animation should serve purpose: guide attention, confirm actions, or create ambient tropical warmth.
-
-### Motion Design Principles for Caribbean Light Mode
-
-1. **Ocean, not electric.** Dark mode animations can be sharp and cosmic. Light mode animations should be fluid, gentle, and organic — like water, waves, and tropical breeze. Think: watching the tide, not watching a laser show.
-2. **Confident, not bouncy.** Spring animations use higher damping (0.7-0.85) and moderate response (0.35-0.5s). Nothing should feel rubbery or toy-like. Think: a sailboat gliding into harbor, not a beach ball.
-3. **Purposeful, not decorative.** Every animation answers the question: what is this teaching the user? Where should they look? What just happened?
-4. **Layered, not simultaneous.** Complex transitions stagger elements by 50-80ms, creating a "ripple" effect — like waves arriving at shore one after another, rather than everything appearing at once.
-
----
-
-### Story 9.1: Define Core Light Mode Animation Curves & Timings
-
-**As a** developer implementing Caribbean light mode animations,
-**I want** a consistent animation system with defined curves and timings,
-**So that** all motion feels cohesive, premium, and intentional across the app.
-
-**Story Points:** 5
-**Priority:** P0
-
-#### Subtask 9.1.1: Define Animation Token Library
-
-**Caribbean Light Mode Animation Tokens:**
-```swift
-// MARK: — Spring Animations (primary motion system)
-
-/// Standard interaction response (button presses, card taps)
-static let caribbeanSpringStandard = Animation.spring(
-    response: 0.4, dampingFraction: 0.78, blendDuration: 0.1
-)
-
-/// Quick micro-feedback (toggles, checkmarks, small state changes)
-static let caribbeanSpringQuick = Animation.spring(
-    response: 0.25, dampingFraction: 0.82, blendDuration: 0.05
-)
-
-/// Dramatic entrance (cards appearing, modals presenting, celebrations)
-static let caribbeanSpringDramatic = Animation.spring(
-    response: 0.55, dampingFraction: 0.72, blendDuration: 0.15
-)
-
-/// Ambient breathing (background layers, orbs, subtle pulsing)
-static let caribbeanSpringBreathing = Animation.spring(
-    response: 1.2, dampingFraction: 0.95, blendDuration: 0.3
-)
-
-// MARK: — Easing Curves (for non-spring animations)
-
-/// Smooth entrance (elements sliding in)
-static let caribbeanEaseOut = Animation.easeOut(duration: 0.35)
-
-/// Smooth exit (elements sliding out — slightly faster than entrance)
-static let caribbeanEaseIn = Animation.easeIn(duration: 0.25)
-
-/// Content fade (text, icons changing content)
-static let caribbeanFade = Animation.easeInOut(duration: 0.2)
-
-/// Long ambient cycle (gradient shifts, glow pulses)
-static let caribbeanAmbient = Animation.easeInOut(duration: 3.0)
-    .repeatForever(autoreverses: true)
-
-// MARK: — Stagger Delays
-
-/// Sequential item delay (list items, grid items)
-static let caribbeanStaggerDelay: TimeInterval = 0.06
-
-/// Group stagger (sections appearing)
-static let caribbeanGroupStagger: TimeInterval = 0.12
-```
-
-**Acceptance Criteria:**
-- [ ] All animation tokens are defined in a central extension (e.g., `Animation+Caribbean.swift`)
-- [ ] Spring damping values are all ≥ 0.70 (no bouncy/toy-like feel)
-- [ ] Quick feedback is ≤ 0.25s response (instant feel)
-- [ ] Dramatic entrances are ≤ 0.55s response (impressive but not slow)
-- [ ] Ambient animations use high damping (≥ 0.95) for smooth, slow movement
-- [ ] Stagger delays are consistent across all list/grid animations
-- [ ] Every animation in the app references a token — no inline hardcoded values
-
-#### Subtask 9.1.2: Define Transition Patterns Between Views
-
-**View transition patterns for light mode:**
-```
-Tab switching:
-  - Content crossfade: 0.2s easeInOut
-  - Background ambient layer: no transition (stays persistent)
-  - Tab bar indicator: spring slide (caribbeanSpringQuick)
-
-Navigation push:
-  - Standard iOS push with custom duration: 0.35s
-  - Entering view: slide from right + fade in (offset 30pt → 0)
-  - Exiting view: slide left + slight fade out (offset 0 → -15pt)
-  - Background: stays static (no movement — grounds the transition)
-
-Modal presentation:
-  - Sheet presentation: standard iOS sheet with custom detents (no changes needed)
-  - Full-screen modal: crossfade from bottom
-    - Entering: y offset 20pt → 0, opacity 0 → 1, caribbeanSpringDramatic
-    - Background: dims with caribbeanInk @ 0.25
-
-Pop-in animations (lists, grids):
-  - Each item: y offset 12 → 0, opacity 0 → 1
-  - Stagger: caribbeanStaggerDelay between items
-  - Spring: caribbeanSpringStandard
-  - Max stagger items: 8 (items beyond 8 appear without stagger to prevent slow loading)
-```
-
-**Acceptance Criteria:**
-- [ ] Tab switching feels instant — content appears within 200ms
-- [ ] Navigation push feels smooth and grounded (not floaty)
-- [ ] Modal presentation has gentle upward movement
-- [ ] List items stagger in sequence, creating a pleasant "waterfall" effect
-- [ ] Stagger is capped at 8 items to prevent perceived slowness
-- [ ] All transitions respect `reduceMotion` (instant, no animation)
-- [ ] Transition timings are consistent regardless of device performance
-
----
-
-### Story 9.2: Define Micro-Interaction Animations
-
-**As a** user interacting with the app,
-**I want** every tap, swipe, and state change to have a satisfying physical response,
-**So that** the app feels responsive, alive, and rewarding to use.
-
-**Story Points:** 8
-**Priority:** P1
-
-#### Subtask 9.2.1: Button & Card Press Animations
-
-**Standardized press feedback for light mode:**
-```
-Primary CTA button (gradient fill):
-  Press: scale 0.97, caribbeanSpringQuick
-  Shadow: reduce from caribbeanShadowMedium → caribbeanShadowSubtle
-  Brightness: -0.03 (slightly darker — "pushed in")
-  Release: scale 1.0, caribbeanSpringStandard, shadow restores
-  Haptic: .light impact on press
-
-Secondary button (outline):
-  Press: background → caribbeanHover, scale 0.98
-  Border color: caribbeanBorderFocus (emphasis on press)
-  Release: background → transparent, scale 1.0
-  Haptic: none (secondary — less emphasis)
-
-Card press (GlassCardBackground, PremiumTransparentCardBackground):
-  Press: scale 0.985 (barely perceptible — cards are larger so less scale)
-  Shadow: caribbeanShadowMedium → caribbeanShadowSubtle (card descends)
-  Background: caribbeanHover tint overlay
-  Release: spring back, caribbeanSpringStandard
-  Haptic: .soft impact
-
-Toggle press:
-  Tap: caribbeanSpringQuick for thumb position
-  Track color: smooth transition 0.2s easeInOut
-  Haptic: .rigid impact (satisfying "clack")
-
-Destructive action:
-  Press: scale 0.97
-  Color: background flashes caribbeanError @ 0.08
-  Release: normal
-  Haptic: .notificationWarning
-```
-
-**Acceptance Criteria:**
-- [ ] All pressable elements have consistent, categorized press responses
-- [ ] Scale factors are subtle (0.97-0.985) — premium, not cartoon
-- [ ] Shadow changes create "depth" — pressed elements feel like they descend
-- [ ] Haptic feedback matches the importance of the action
-- [ ] Release animations use spring physics (always spring, never linear)
-- [ ] Press feedback is immediate — no perceivable delay between touch and visual response
-
-#### Subtask 9.2.2: State Change Micro-Animations
-
-**Animated state transitions for light mode:**
-```
-Checkbox / task completion:
-  - Unchecked → Checked:
-    - Circle: caribbeanBorderSubtle stroke → caribbeanSuccess fill
-    - Checkmark: draws in with stroke animation (0.25s, easeOut)
-    - Scale bounce: 0 → 1.15 → 1.0, caribbeanSpringQuick
-    - Celebration: single tiny burst of 4-6 particles, caribbeanSuccess color, 0.3s
-  - Checked → Unchecked:
-    - Reverse checkmark draw (0.15s, faster than draw-in)
-    - Fill: caribbeanSuccess → caribbeanBorderSubtle stroke
-    - No particle burst (removing isn't celebrated)
-
-Progress bar increment:
-  - Width: animates from current → new width, caribbeanSpringStandard
-  - Color: if crossing a threshold (25%, 50%, 75%, 100%):
-    - Gradient shifts to warmer tones
-    - Single flash pulse on the leading edge (0.3s)
-  - 100%: full gradient sweep + gold shimmer overlay (0.5s, once)
-
-Counter increment (XP, word count, streak):
-  - Outgoing number: fade out + y offset -8, 0.15s
-  - Incoming number: fade in + y offset +8 → 0, caribbeanSpringQuick
-  - Content size change: animate with caribbeanSpringQuick
-  - Milestone number (every 100, 500, 1000): gold flash, scale 1.1, haptic .success
-
-Skeleton loading → content:
-  - Skeleton: caribbeanRecessed with caribbeanElevated shimmer
-    - Shimmer: horizontal gradient sweep, 1.5s cycle, smooth
-  - Content reveal: crossfade, 0.2s easeInOut
-  - Individual items: stagger by caribbeanStaggerDelay
-```
-
-**Acceptance Criteria:**
-- [ ] Checkbox completion feels celebratory — the checkmark draws in with life
-- [ ] Progress bar changes are smooth and satisfying to watch
-- [ ] Counter animations prevent numbers from just "jumping" — they flow
-- [ ] Skeleton loading shimmer is warm (Caribbean-tinted, not grey)
-- [ ] State changes are clear — the user always knows what changed
-- [ ] Particle effects on completion are restrained (4-6 particles, not an explosion)
-- [ ] All state change animations have fallback for `reduceMotion` (instant, no animation)
-
-#### Subtask 9.2.3: Swipe Gesture Animations
-
-**Practice screen swipe animations for light mode:**
-```
-FlashCard swipe (correct/incorrect):
-  Correct (swipe right):
-    - Card: slides right with rotation (8° clockwise)
-    - Trail: caribbeanSuccess gradient streak behind card (0.3s, fades)
-    - Stamp: "✓" caribbeanSuccess, large, stamped onto card at swipe start
-    - Background: brief green flash pulse (caribbeanSuccess @ 0.06, 0.2s)
-    - Haptic: .success notification
-
-  Incorrect (swipe left):
-    - Card: slides left with rotation (8° counter-clockwise)
-    - Trail: caribbeanError gradient streak (0.3s, fades)
-    - Stamp: "✗" caribbeanError, large
-    - Background: brief warm-red flash (caribbeanError @ 0.04, 0.2s)
-    - Haptic: .error notification
-
-  Card entrance (next card):
-    - From bottom: y offset 40 → 0, opacity 0 → 1
-    - Spring: caribbeanSpringDramatic
-    - Delay: 0.1s after previous card exit
-    - Slight scale: 0.95 → 1.0
-
-WordBuilder tile drag:
-  Pick up: scale 1.08, caribbeanShadowMedium shadow appears
-  Dragging: follows finger with 2-frame lag (organic feel)
-  Over valid slot: slot border → caribbeanBorderFocus, glow
-  Over invalid slot: slot border → caribbeanError @ 0.20, no glow
-  Drop valid: scale 1.08 → 1.0, caribbeanSpringQuick, haptic .light
-  Drop invalid: spring back to origin, caribbeanSpringStandard, haptic .warning
-  Snap-to-grid: caribbeanSpringQuick (fast — should feel magnetically attracted)
-```
-
-**Acceptance Criteria:**
-- [ ] Flashcard swipe feels physical — rotation, trail, and stamp make it real
-- [ ] Correct/incorrect swipes are visually and haptically distinct
-- [ ] New card entrance has a satisfying "next challenge awaits" spring
-- [ ] WordBuilder tile pickup feels like "grabbing" (scale + shadow)
-- [ ] Tile dragging feels smooth with slight lag (organic, not locked to finger)
-- [ ] Valid/invalid drop targets provide clear visual signaling during the drag
-- [ ] Snap-to-grid is fast enough to feel magnetic
-- [ ] All gestures respect `reduceMotion` (reduced animation, still functional)
-
----
-
-### Story 9.3: Dark ↔ Light Mode Transition Choreography
-
-**As a** user switching between dark and light mode,
-**I want** the transition to be a choreographed moment of delight,
-**So that** switching modes feels intentional and magical, not jarring.
-
-**Story Points:** 5
-**Priority:** P1
-
-#### Subtask 9.3.1: Design the Mode Switch Transition Sequence
-
-**Choreographed transition (dark → light):**
-```
-Phase 1 (0.0s - 0.15s): Toggle Responds
-  - Toggle pill slides to sun position
-  - Sun icon begins to glow warm
-
-Phase 2 (0.1s - 0.5s): Turquoise Ocean Wash Expands
-  - Radial gradient expands from the toggle position
-  - Color: caribbeanGradientOcean (turquoise → teal) → warm sand → transparent
-  - Expansion: 0 → screen diagonal, easeOut
-  - Behind the wash: light mode colors are already set
-  - Purpose: cosmic void gives way to OCEAN — it should feel like sunrise
-    breaking over the Caribbean Sea, turquoise light flooding the screen
-
-Phase 3 (0.15s - 0.55s): UI Elements Crossfade
-  - All UI colors crossfade from dark → light values
-  - Timing: 0.4s easeInOut
-  - Elements are individually animated (not a single snapshot)
-  - Glass cards: blur and tint shift simultaneously
-
-Phase 4 (0.3s - 0.8s): Background Awakens
-  - Background layers: dark cosmic → tropical Caribbean island
-  - Stars: fade out (night is ending)
-  - Turquoise ocean wash: fades in (the sea appears)
-  - Sand glow: fades in (the beach materializes)
-  - Breathing orbs: color crossfade (cosmic → tropical island colors)
-
-Phase 5 (0.5s - 1.0s): Settle
-  - Turquoise ocean wash gradient fades to 0 (reveals the fully light tropical UI)
-  - All ambient animations resume at their normal pace
-  - Status bar text: animates from white to black
-
-Total duration: ~1.0s (feels instantaneous but choreographed)
-```
-
-**Choreographed transition (light → dark):**
-```
-Same phasing but reversed:
-  - Moon icon glows cosmic purple
-  - Cosmic wash expands from toggle (dark purple → transparent)
-  - UI elements crossfade to dark values
-  - Background: warm → cosmic, stars fade in
-  - Settle: cosmic wash fades, dark mode is fully active
-```
-
-**Acceptance Criteria:**
-- [ ] Mode switch feels like a "moment" — sunrise over the Caribbean, not a jarring flash
-- [ ] Turquoise ocean wash creates the illusion of tropical light spreading across the screen
-- [ ] No flickering or partial states visible during transition
-- [ ] UI elements don't flash to system colors at any point
-- [ ] Total transition is ≤ 1.0s (impressive but not slow)
-- [ ] `reduceMotion`: instant crossfade (0.2s, no wash effect)
-- [ ] Status bar text color transitions smoothly (no sharp black↔white flash)
-- [ ] Transition works correctly regardless of which screen the user is on
+## ~~Epic 9: Animation, Motion & Micro-Interactions~~ REMOVED
 
 ---
 
@@ -3345,7 +3015,7 @@ Same phasing but reversed:
 
 ---
 
-### Story 10.1: WCAG Compliance & Color Contrast Validation
+### Story 10.1: WCAG Compliance & Color Contrast Validation (DONT IMPLEMENT - SKIP)
 
 **As a** user with visual needs (reduced sight, color blindness, or bright-light sensitivity),
 **I want** the Caribbean light mode to be fully accessible,
@@ -3394,7 +3064,7 @@ UI components and graphical objects: 3:1 minimum
 - [ ] Tested on an actual device in bright sunlight (real-world validation)
 - [ ] No text contrast is "borderline" — all comfortably exceed minimums
 
-#### Subtask 10.1.2: Color Blindness Safe Design Validation
+#### Subtask 10.1.2: Color Blindness Safe Design Validation (DONT IMPLEMENT - SKIP)
 
 **Color blindness types to validate against:**
 ```
@@ -3460,7 +3130,7 @@ Font usage:
 
 ---
 
-### Story 10.2: VoiceOver & Assistive Technology Support
+### Story 10.2: VoiceOver & Assistive Technology Support (DONT IMPLEMENT - SKIP)
 
 **As a** VoiceOver user,
 **I want** the Caribbean light mode to provide meaningful, contextual accessibility labels,

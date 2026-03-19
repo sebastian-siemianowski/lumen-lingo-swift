@@ -89,15 +89,21 @@ struct LayoutBackgroundView: View {
         let isDark = colorScheme == .dark
         GeometryReader { geometry in
             ZStack {
-                // Layer 0: Base gradient
-                baseGradient
-                    .animation(.smooth(duration: 0.65), value: isDark)
-
-                // Light-mode accent overlays (single compositing group)
-                lightAccentOverlays
-                    .opacity(isDark ? 0 : 1)
-                    .animation(.smooth(duration: 0.65), value: isDark)
-                    .allowsHitTesting(false)
+                if isDark {
+                    // Layer 0: Base gradient (dark mode)
+                    baseGradient
+                        .animation(.smooth(duration: 0.65), value: isDark)
+                } else {
+                    // Layer 0: Light mode background image
+                    if let img = UIImage(named: "LightModeBackground") {
+                        Image(uiImage: img)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .ignoresSafeArea()
+                    } else {
+                        baseGradient
+                    }
+                }
 
                 // Layer 1: Breathing orbs (respects user toggle + active state)
                 if showOrbs && isActive {
