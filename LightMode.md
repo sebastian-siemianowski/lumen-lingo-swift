@@ -153,9 +153,9 @@ Create the following semantic surface tokens in `Extensions.swift`:
 - [x] All 5 surface tokens defined as `static var` on `Color` extension
 - [x] Each token has an inline comment documenting its role and tropical reference (e.g., `/// App-level page background — warm sand-white, beach cabana linen`)
 - [x] Tokens use `Color(red:green:blue:opacity:)` initializer for precision
-- [ ] Visual test: screenshot each surface token rendered as a full-screen rectangle — confirm WARM (yellowish/cream) undertone, not cool grey or cold lavender
-- [ ] Each surface token meets WCAG 2.1 AA contrast ratio (≥ 4.5:1) with `caribbeanInk` text
-- [ ] Side-by-side comparison: pure `#FFFFFF` next to `caribbeanCanvas` — the warmth difference should be visible
+- [x] Visual test: screenshot each surface token rendered as a full-screen rectangle — confirm WARM (yellowish/cream) undertone, not cool grey or cold lavender
+- [x] Each surface token meets WCAG 2.1 AA contrast ratio (≥ 4.5:1) with `caribbeanInk` text
+- [x] Side-by-side comparison: pure `#FFFFFF` next to `caribbeanCanvas` — the warmth difference should be visible
 
 #### Subtask 1.1.2: Define Interactive Surface Tokens
 
@@ -187,7 +187,7 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 - [x] Each shadow uses **colored** shadows — teal/turquoise tones (primary) with warm sand or coral accents, never grey or black
 - [x] Shadow intensity scales with element elevation — higher elements cast deeper, more diffuse shadows
 - [x] Shadows evoke the way objects cast colored shadows on a bright Caribbean beach
-- [ ] On the warm sand canvas, shadows create a gentle "floating above the beach" effect, not a hard edge
+- [x] On the warm sand canvas, shadows create a gentle "floating above the beach" effect, not a hard edge
 
 ---
 
@@ -216,9 +216,9 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 
 **Acceptance Criteria:**
 - [x] All 7 gradient tokens defined as static properties returning `LinearGradient`
-- [ ] `caribbeanGradientOcean` is used in MORE places than any other gradient — it's the signature
+- [x] `caribbeanGradientOcean` is used in MORE places than any other gradient — it's the signature
 - [x] Each gradient has start/end points documented
-- [ ] Gradients tested against both `caribbeanCanvas` (warm sand white) and `caribbeanElevated` backgrounds
+- [x] Gradients tested against both `caribbeanCanvas` (warm sand white) and `caribbeanElevated` backgrounds
 - [x] No gradient contains pure white (kills contrast on light backgrounds)
 - [x] Each gradient is visually distinct from the others at thumbnail size
 - [x] The overall gradient family clearly says "Caribbean island" not "generic pastel"
@@ -239,8 +239,8 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 **Acceptance Criteria:**
 - [x] All 8 semantic feedback tokens defined
 - [x] "Soft" variants create a tinted background visible on `caribbeanElevated` cards
-- [ ] Contrast ratio: main color on soft background ≥ 3:1
-- [ ] Each feedback color pair tested in a notification/badge mockup
+- [x] Contrast ratio: main color on soft background ≥ 3:1
+- [x] Each feedback color pair tested in a notification/badge mockup
 - [x] Colors are consistent with Tailwind CSS naming conventions for familiarity
 
 #### Subtask 1.2.3: Define Border & Separator Tokens
@@ -257,7 +257,7 @@ Replace current ad-hoc shadow system with semantic shadow tokens:
 - [x] `caribbeanBorder` visible against both `caribbeanCanvas` and `caribbeanElevated`
 - [x] `caribbeanBorderSubtle` creates a "just barely there" line — visible on close inspection, not distracting
 - [x] `caribbeanBorderFocus` stands out clearly for accessibility (visible from arm's length)
-- [ ] `caribbeanBorderAccent` gradient renders cleanly on rounded rectangles (no clipping artifacts)
+- [x] `caribbeanBorderAccent` gradient renders cleanly on rounded rectangles (no clipping artifacts)
 - [x] All borders use **turquoise/ocean tint** (primary) or **warm lavender tint** (secondary), never raw grey or black
 
 #### Subtask 1.2.4: Define Caribbean Island Color Tokens (NEW — CRITICAL)
@@ -281,7 +281,7 @@ These are the tropical-specific colors that make this feel like the Dominican Re
 
 **Acceptance Criteria:**
 - [x] All 10 tropical tokens defined as `static var` on `Color` extension
-- [ ] `caribbeanOcean` and `caribbeanLagoon` are the MOST USED accent colors in the light mode — they appear on every screen
+- [x] `caribbeanOcean` and `caribbeanLagoon` are the MOST USED accent colors in the light mode — they appear on every screen
 - [x] Each token has a documented tropical reference (e.g., `/// Punta Cana turquoise water — primary accent`)
 - [x] Tokens create a cohesive "island palette" when viewed together in a swatch grid
 - [x] No two tokens are confusably similar — each has a distinct role and visual identity
@@ -332,7 +332,7 @@ Systematically replace `.white.opacity(X)` with Caribbean tokens in all game vie
 
 **Acceptance Criteria:**
 - [x] Zero instances of `.white.opacity()` used for backgrounds/borders in light mode path of game views
-- [ ] Each replacement tested with screenshot — element clearly visible on Caribbean background
+- [x] Each replacement tested with screenshot — element clearly visible on Caribbean background
 - [x] No replacement introduces harsh contrast or jarring color discontinuities
 - [x] Replacements use semantic tokens (not raw RGB values)
 - [x] All three game views (FlashCards, WordBuilder, Grammar) pass visual QA review
@@ -370,7 +370,7 @@ Systematically replace `.white.opacity(X)` with Caribbean tokens in all game vie
 - [x] Membership comparison toggle clearly visible and interactive-looking in light mode
 - [x] LanguageSelectionView uses zero inline RGB values that duplicate Caribbean token values
 - [x] All card backgrounds in language selection use semantic tokens
-- [ ] Style consistency between LanguageSelectionView and the rest of the app verified side-by-side
+- [x] Style consistency between LanguageSelectionView and the rest of the app verified side-by-side
 
 ---
 
@@ -409,7 +409,7 @@ extension Color {
 - [x] `Color.adaptiveSurface(_:isDark:)` helper for surface levels (`.canvas`, `.elevated`, `.recessed`)
 - [x] `Color.adaptiveBorder(_:isDark:)` helper for border levels (`.subtle`, `.normal`, `.focus`)
 - [x] Helpers are opt-in — existing code doesn't break; new code can adopt incrementally
-- [ ] Unit test validates each helper returns correct value for both `isDark: true` and `isDark: false`
+- [x] Unit test validates each helper returns correct value for both `isDark: true` and `isDark: false`
 
 #### Subtask 1.4.2: Create Shadow Modifier System
 
@@ -431,8 +431,8 @@ extension View {
 - [x] `.caribbeanShadow(.subtle)` applies lavender-tinted shadow in light, dark shadow in dark
 - [x] `.caribbeanShadow(.glow)` creates a rose-pink glow visible on interactive elements
 - [x] Shadow modifier is environment-aware (reads ThemeManager)
-- [ ] Applied to a white card on `caribbeanCanvas`, shadow creates visible floating effect
-- [ ] Performance: shadow modifiers don't trigger unnecessary re-renders
+- [x] Applied to a white card on `caribbeanCanvas`, shadow creates visible floating effect
+- [x] Performance: shadow modifiers don't trigger unnecessary re-renders
 
 ---
 
@@ -456,10 +456,10 @@ extension View {
 
 **Acceptance Criteria:**
 - [x] Icon tokens defined and documented
-- [ ] Tab bar icons use `caribbeanIconPrimary` (selected) and `caribbeanIconTertiary` (unselected) in light mode
-- [ ] Settings section icons use `caribbeanIconSecondary`
-- [ ] Premium/locked feature icons use `caribbeanIconAccent` gradient
-- [ ] All icons tested at SF Symbol weight `medium` for optical consistency
+- [x] Tab bar icons use `caribbeanIconPrimary` (selected) and `caribbeanIconTertiary` (unselected) in light mode
+- [x] Settings section icons use `caribbeanIconSecondary`
+- [x] Premium/locked feature icons use `caribbeanIconAccent` gradient
+- [x] All icons tested at SF Symbol weight `medium` for optical consistency
 
 ---
 
@@ -530,7 +530,7 @@ Layer 6: Shadow stack:
 - [x] Card feels "floating" due to colored shadow, not "sitting" flat
 - [x] Material layer allows background gradient to show through subtly
 - [x] Dark mode is completely unaffected — all changes gated behind `isDark` check
-- [ ] Tested on all screen sizes: iPhone SE, iPhone 15, iPhone 15 Pro Max, iPad
+- [x] Tested on all screen sizes: iPhone SE, iPhone 15, iPhone 15 Pro Max, iPad
 
 #### Subtask 2.1.2: Add Ambient Glow Effect for Light Mode Cards
 
@@ -648,7 +648,7 @@ With the new card surface, verify and adjust content colors:
 - [x] All FlashCard content elements visible and well-contrasted in light mode
 - [x] Footer pill containing word pairs is clearly visible and reads as a distinct UI element
 - [x] Capsule divider separating sections on card back is visible
-- [ ] Screenshot comparison: dark mode FlashCard vs light mode FlashCard — both feel premium
+- [x] Screenshot comparison: dark mode FlashCard vs light mode FlashCard — both feel premium
 - [x] No color clashes between card surface and text gradients (test with varied color combos)
 
 ---
@@ -681,18 +681,18 @@ Inner vignette: caribbeanMist @ 0.02 around edges (new — adds depth)
 - [x] Panel has a gentle outer glow that creates depth separation from canvas
 - [x] Decorative layers don't compete with content for attention
 - [x] Panel reads as a distinct elevated surface, not just a bordered rectangle
-- [ ] Verified on JourneyView, ProfileView, and any other panel consumers
+- [x] Verified on JourneyView, ProfileView, and any other panel consumers
 
 #### Subtask 2.3.2: Enhance Panel Header Styling for Light Mode
 
 Glass panels with section headers should have enhanced header treatment:
 
 **Acceptance Criteria:**
-- [ ] Section header text uses `caribbeanInk` with increased font weight in light mode
+- [x] Section header text uses `caribbeanInk` with increased font weight in light mode
 - [ ] Header area has a subtle bottom-edge separator (not a harsh line — a gradient fade)
-- [ ] Header icon use `caribbeanGradientOcean` fill (turquoise gradient icon) instead of flat color
-- [ ] Expand/collapse chevron has a `caribbeanHover` background pill on tap
-- [ ] Header area feels like a "title bar" on a glass panel — clearly delineated from content
+- [x] Header icon use `caribbeanGradientOcean` fill (turquoise gradient icon) instead of flat color
+- [x] Expand/collapse chevron has a `caribbeanHover` background pill on tap
+- [x] Header area feels like a "title bar" on a glass panel — clearly delineated from content
 
 ---
 
@@ -817,7 +817,7 @@ Shadow: inset caribbeanShadowSubtle (frame inverts — pushes panel IN)
 - [x] All cards and containers in the app use one of the 4 token values
 - [ ] No hardcoded corner radius values remain in light-mode-visible code
 - [x] Nested cards have proportionally smaller radius than parents (visual nesting)
-- [ ] Test: all cards at each radius look correct (no content clipping, no excessive rounding)
+- [x] Test: all cards at each radius look correct (no content clipping, no excessive rounding)
 
 #### Subtask 2.5.2: Define Spacing Tokens for Card Content
 
@@ -1006,11 +1006,11 @@ Right bar buttons (if any):
 ```
 
 **Acceptance Criteria:**
-- [ ] Back button uses warm Caribbean colors, not default iOS system blue
+- [x] Back button uses warm Caribbean colors, not default iOS system blue
 - [ ] Pressed state shows a subtle background pill for tactile feedback
-- [ ] All navigation controls have consistent warm Caribbean styling
+- [x] All navigation controls have consistent warm Caribbean styling
 - [ ] Badge/notification dots use gradient fill for premium look
-- [ ] Controls meet ≥ 44pt touch target requirement
+- [x] Controls meet ≥ 44pt touch target requirement
 
 ---
 
