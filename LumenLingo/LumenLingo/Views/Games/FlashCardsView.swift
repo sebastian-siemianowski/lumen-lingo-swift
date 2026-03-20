@@ -375,19 +375,30 @@ struct FlashCardsView: View {
 
     private var frostLuminanceBreath: Double {
         guard !isDark, !reduceMotion else { return 1.0 }
-        return min(1.0, 0.92 + Foundation.sin(Double(borderBreathPhase)) * 0.08 + Double(frostLuminanceSpike))
+        // borderBreathPhase: 0→2π over 3s, reverse 2π→0 over 3s = 6s full cycle.
+        // Normalizing the phase gives a smooth 0→1→0 triangle wave (easeInOut-shaped)
+        // instead of sin() which would oscillate multiple times within one phase sweep.
+        let breath = Double(borderBreathPhase) / (.pi * 2.0)
+        return min(1.0, 0.92 + breath * 0.08 + Double(frostLuminanceSpike))
     }
 
     private var frostBloomCenter: UnitPoint {
         guard !isDark, !reduceMotion else { return .center }
-        let x = 0.50 + Foundation.sin(Double(floatPhase) * 0.8) * 0.04
-        let y = 0.50 + Foundation.cos(Double(floatPhase) * 0.8) * 0.03
+        // Lissajous drift: X uses floatPhase (8s full cycle), Y uses borderBreathPhase (6s full cycle).
+        // Different periods create an organic, never-exactly-repeating drift pattern.
+        let nx = Double(floatPhase) / (.pi * 2.0)            // 0→1→0 over 8s
+        let ny = Double(borderBreathPhase) / (.pi * 2.0)      // 0→1→0 over 6s
+        let x = 0.50 + (nx * 2.0 - 1.0) * 0.04               // ±4% horizontal
+        let y = 0.50 + (ny * 2.0 - 1.0) * 0.03               // ±3% vertical
         return UnitPoint(x: x, y: y)
     }
 
     private var frostShimmerOpacity: Double {
         guard !isDark, !reduceMotion else { return 0.55 }
-        return 0.50 + Foundation.sin(Double(borderBreathPhase) * 1.17) * 0.05
+        // floatPhase: 0→2π over 4s, reverse over 4s = 8s full cycle.
+        // Out of phase with luminance breathing (6s) → organic polyrhythm.
+        let shimmer = Double(floatPhase) / (.pi * 2.0)
+        return 0.50 + shimmer * 0.10
     }
 
     private func flashcard(word: FlashcardWord) -> some View {
@@ -970,7 +981,7 @@ struct FlashCardsView: View {
                     : Self.frostShadowColor.opacity(0.08), // Shadow 1 — Ambient Fog
                 radius: isDark ? 35 : 40 * flipShadowExpansion,
                 x: 0,
-                y: isDark ? 16 : CGFloat(20.0 * (1.0 + Foundation.sin(Double(floatPhase)) * 0.08))
+                y: isDark ? 16 : CGFloat(20.0 * Double(flipShadowExpansion) * (1.0 + Foundation.sin(Double(floatPhase)) * 0.08))
             )
             .shadow(
                 color: isDark
@@ -978,7 +989,7 @@ struct FlashCardsView: View {
                     : Self.frostShadowColor.opacity(0.12), // Shadow 2 — Contact Shadow
                 radius: isDark ? 30 : 16 * flipShadowExpansion,
                 x: 0,
-                y: isDark ? 8 : CGFloat(8.0 * (1.0 + Foundation.sin(Double(floatPhase)) * 0.08))
+                y: isDark ? 8 : CGFloat(8.0 * Double(flipShadowExpansion) * (1.0 + Foundation.sin(Double(floatPhase)) * 0.08))
             )
             .shadow(
                 color: isDark
@@ -986,7 +997,7 @@ struct FlashCardsView: View {
                     : Self.frostShadowColor.opacity(0.04), // Shadow 3 — Edge Crispness
                 radius: isDark ? 1 : 4 * flipShadowExpansion,
                 x: 0,
-                y: isDark ? -1 : CGFloat(2.0 * (1.0 + Foundation.sin(Double(floatPhase)) * 0.08))
+                y: isDark ? -1 : CGFloat(2.0 * Double(flipShadowExpansion) * (1.0 + Foundation.sin(Double(floatPhase)) * 0.08))
             )
     }
 
@@ -1071,7 +1082,7 @@ struct FlashCardsView: View {
                 .shadow(
                     color: isDark
                         ? Color(hex: "#f43f5e").opacity(0.35)
-                        : Self.frostShadowColor.opacity(0.08),
+                        : Color(red: 0.72, green: 0.52, blue: 0.50).opacity(0.10),
                     radius: 12, x: 0, y: 4
                 )
             }
@@ -1154,7 +1165,7 @@ struct FlashCardsView: View {
                 .shadow(
                     color: isDark
                         ? Color(hex: "#10b981").opacity(0.35)
-                        : Self.frostShadowColor.opacity(0.08),
+                        : Color(red: 0.40, green: 0.55, blue: 0.62).opacity(0.10),
                     radius: 12, x: 0, y: 4
                 )
             }
