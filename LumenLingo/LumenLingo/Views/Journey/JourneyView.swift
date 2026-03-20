@@ -345,7 +345,7 @@ struct JourneyView: View {
     // MARK: - Header
 
     private var journeyHeader: some View {
-        VStack(spacing: 6) {
+        VStack(spacing: 8) {
             Image(systemName: "chart.line.uptrend.xyaxis")
                 .font(.system(size: 32))
                 .foregroundStyle(
@@ -357,6 +357,23 @@ struct JourneyView: View {
                         ))
                         : AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
                 )
+                // Light mode: tinted icon circle
+                .padding(isDark ? 0 : 14)
+                .background {
+                    if !isDark {
+                        Circle()
+                            .fill(Color(hex: "0EA5E9").opacity(0.08))
+                        Circle()
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [Color.white.opacity(0.60), Color.white.opacity(0.25)],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                ),
+                                lineWidth: 0.5
+                            )
+                    }
+                }
 
             Text(L.yourLearningJourney)
                 .font(.system(size: 18, weight: .bold))
@@ -374,6 +391,42 @@ struct JourneyView: View {
                 .font(.system(size: 12))
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 .multilineTextAlignment(.center)
+        }
+        .padding(.vertical, isDark ? 0 : 16)
+        .padding(.horizontal, isDark ? 0 : 20)
+        .frame(maxWidth: isDark ? nil : .infinity)
+        .background {
+            if !isDark {
+                ZStack {
+                    // Frost material base
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.thinMaterial)
+                    // Clean white wash
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color.white.opacity(0.25))
+                }
+                // Glass border with diagonal luminance
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    Color.white.opacity(0.70),
+                                    Color.white.opacity(0.40),
+                                    Color.white.opacity(0.60)
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 0.75
+                        )
+                )
+                .shadow(
+                    color: Color(red: 0.55, green: 0.50, blue: 0.68).opacity(0.10),
+                    radius: 6,
+                    y: 3
+                )
+            }
         }
         .padding(.top, 10)
     }
@@ -986,44 +1039,117 @@ struct JourneyView: View {
             }
         }()
 
+        let accentColor = colors.first ?? .purple
+
         return HStack(spacing: 0) {
             ZStack {
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(
-                        LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
-                    )
-                    .frame(width: 32, height: 32)
+                if !isDark {
+                    // Light mode: rounded-square icon with shadow
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(
+                            LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
+                        )
+                        .frame(width: 36, height: 36)
+                        .shadow(color: accentColor.opacity(0.20), radius: 6, y: 2)
+                } else {
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(
+                            LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
+                        )
+                        .frame(width: 32, height: 32)
+                }
 
                 Image(systemName: gameTypeIcon(type))
-                    .font(.system(size: 14))
+                    .font(.system(size: isDark ? 14 : 15))
                     .foregroundStyle(.white)
             }
-            .padding(.trailing, 8)
+            .padding(.trailing, isDark ? 8 : 10)
 
             Text(type.displayName)
                 .font(.system(size: 13, weight: .semibold))
                 .foregroundStyle(isDark ? .white : .caribbeanInk)
                 .frame(width: 80, alignment: .leading)
 
-            statPill(value: "\(records.count)", label: L.sessions.lowercased())
-            statPill(value: formattedXP(totalScore), label: L.xp)
-            statPill(value: "\(Int(accuracy))%", label: L.accuracy.lowercased())
+            statPill(value: "\(records.count)", label: L.sessions.lowercased(), accent: accentColor)
+            statPill(value: formattedXP(totalScore), label: L.xp, accent: accentColor)
+            statPill(value: "\(Int(accuracy))%", label: L.accuracy.lowercased(), accent: accentColor)
         }
-        .padding(10)
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
-                .overlay(
+        .padding(isDark ? 10 : 12)
+        .background {
+            if isDark {
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(.white.opacity(0.04))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .strokeBorder(.white.opacity(0.06), lineWidth: 1)
+                    )
+            } else {
+                // Frost trough — recessed glass card with accent tint
+                ZStack {
+                    // Recessed frost base
                     RoundedRectangle(cornerRadius: 16)
-                        .strokeBorder(isDark ? .white.opacity(0.06) : .black.opacity(0.06), lineWidth: 1)
+                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    // Subtle game-specific accent tint
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(accentColor.opacity(0.04))
+                    // Inner shadow for depth
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
+                                    Color.clear,
+                                    Color.white.opacity(0.15)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    // Glass rim border
+                    RoundedRectangle(cornerRadius: 16)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    Color.white.opacity(0.65),
+                                    Color.white.opacity(0.30),
+                                    Color.white.opacity(0.45)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                    // White surface highlight — top band
+                    VStack {
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color.white.opacity(0.45),
+                                        Color.white.opacity(0.10),
+                                        Color.clear
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                            .frame(height: 18)
+                        Spacer()
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                }
+                .shadow(
+                    color: accentColor.opacity(0.06),
+                    radius: 4, y: 2
                 )
-        )
+            }
+        }
     }
 
-    private func statPill(value: String, label: String) -> some View {
-        VStack(spacing: 1) {
+    private func statPill(value: String, label: String, accent: Color = .clear) -> some View {
+        VStack(spacing: 2) {
             Text(value)
-                .font(.system(size: 13, weight: .bold))
+                .font(.system(size: 13, weight: .bold, design: .rounded))
                 .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
             Text(label)
                 .font(.system(size: 9))
@@ -1066,11 +1192,29 @@ struct JourneyView: View {
     // MARK: - Reset Progress
 
     private var resetProgressButton: some View {
-        VStack(spacing: 10) {
+        VStack(spacing: isDark ? 10 : 12) {
             HStack(spacing: 6) {
-                Image(systemName: "exclamationmark.triangle.fill")
-                    .font(.system(size: 10, weight: .medium))
-                    .foregroundStyle(.red.opacity(0.6))
+                if !isDark {
+                    // Frost warning icon circle
+                    ZStack {
+                        Circle()
+                            .fill(Color.red.opacity(0.06))
+                            .frame(width: 24, height: 24)
+                        Image(systemName: "exclamationmark.triangle.fill")
+                            .font(.system(size: 10, weight: .medium))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [.red.opacity(0.65), .orange.opacity(0.55)],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                    }
+                } else {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .font(.system(size: 10, weight: .medium))
+                        .foregroundStyle(.red.opacity(0.6))
+                }
                 Text(L.startFreshDescription)
                     .font(.system(size: 11))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
@@ -1093,14 +1237,23 @@ struct JourneyView: View {
                     RoundedRectangle(cornerRadius: 12)
                         .fill(
                             LinearGradient(
-                                colors: [.red.opacity(0.7), .red.opacity(0.5)],
+                                colors: isDark
+                                    ? [.red.opacity(0.7), .red.opacity(0.5)]
+                                    : [.red.opacity(0.65), .red.opacity(0.45)],
                                 startPoint: .leading,
                                 endPoint: .trailing
                             )
                         )
                         .overlay(
                             RoundedRectangle(cornerRadius: 12)
-                                .strokeBorder(.white.opacity(0.15), lineWidth: 1)
+                                .strokeBorder(
+                                    isDark ? .white.opacity(0.15) : .white.opacity(0.25),
+                                    lineWidth: isDark ? 1 : 0.75
+                                )
+                        )
+                        .shadow(
+                            color: isDark ? .clear : .red.opacity(0.12),
+                            radius: 6, y: 2
                         )
                 )
             }
