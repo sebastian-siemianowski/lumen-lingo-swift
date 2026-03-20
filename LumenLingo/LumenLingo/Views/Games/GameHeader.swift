@@ -327,6 +327,16 @@ struct GameHeader: View {
     }
 
     private func progressFill(width: CGFloat) -> some ShapeStyle {
+        if !isDark {
+            // Light mode: clean static gradient — the frost trough + highlight do the visual work
+            return AnyShapeStyle(
+                LinearGradient(
+                    colors: theme.gradientColors,
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+        }
         switch theme.progressEffect {
         case .flowing:
             // Animated gradient position for flowing water effect
@@ -350,6 +360,10 @@ struct GameHeader: View {
 
     @ViewBuilder
     private func progressEffectOverlay(fillWidth: CGFloat, totalWidth: CGFloat) -> some View {
+        if !isDark {
+            // Light mode: no animated overlays — the static frost highlight is enough
+            EmptyView()
+        } else {
         switch theme.progressEffect {
         case .flowing:
             // Inner highlight shimmer
@@ -407,6 +421,7 @@ struct GameHeader: View {
                 .frame(width: fillWidth)
             }
         }
+        } // else (dark mode)
     }
 
     // MARK: - Stat Pill
