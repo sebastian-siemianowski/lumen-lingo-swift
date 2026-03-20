@@ -102,24 +102,9 @@ struct ContentView: View {
                 }
                 .tag(AppTab.profile)
             }
-            .tint(Color(hex: themeManager.isDarkMode ? "#a855f7" : "#7c3aed"))
-            .toolbar(
-                (hideTabBar || !themeManager.isDarkMode) ? .hidden : .visible,
-                for: .tabBar
-            )
-            .toolbarBackground(.visible, for: .tabBar)
-            .toolbarBackground(
-                themeManager.isDarkMode
-                    ? Color(red: 10/255, green: 8/255, blue: 20/255).opacity(0.95)
-                    : Color(red: 248/255, green: 245/255, blue: 253/255),
-                for: .tabBar
-            )
+            .tint(Color(hex: themeManager.isDarkMode ? "#a855f7" : "#0EA5E9"))
+            .toolbar(hideTabBar ? .hidden : .visible, for: .tabBar)
             .toolbarColorScheme(themeManager.isDarkMode ? .dark : .light, for: .tabBar)
-
-            // Premium Caribbean tab bar (light mode only)
-            if !hideTabBar && !themeManager.isDarkMode {
-                CaribbeanTabBar(selectedTab: $selectedTab)
-            }
         }
         .background(vstackBackground)
         .onAppear {
@@ -232,7 +217,8 @@ struct ContentView: View {
     private func applyTabBarAppearance(transparent: Bool) {
         let appearance = UITabBarAppearance()
 
-        if transparent {
+        if transparent || !themeManager.isDarkMode {
+            // Transparent in dark-mode dashboard; native liquid glass in light mode
             appearance.configureWithTransparentBackground()
             appearance.backgroundColor = .clear
             appearance.shadowColor = .clear
@@ -240,15 +226,8 @@ struct ContentView: View {
             appearance.backgroundImage = nil
         } else {
             appearance.configureWithDefaultBackground()
-            if themeManager.isDarkMode {
-                appearance.backgroundColor = UIColor(Color(red: 10/255, green: 8/255, blue: 20/255).opacity(0.95))
-                appearance.shadowColor = UIColor(white: 1.0, alpha: 0.06)
-            } else {
-                // Light mode: lavender-frost white — harmonises with Caribbean gradient,
-                // fully opaque so no warm bleed-through that reads as "brownish"
-                appearance.backgroundColor = UIColor(Color(red: 248/255, green: 245/255, blue: 253/255))
-                appearance.shadowColor = UIColor(red: 0.45, green: 0.22, blue: 0.62, alpha: 0.08)
-            }
+            appearance.backgroundColor = UIColor(Color(red: 10/255, green: 8/255, blue: 20/255).opacity(0.95))
+            appearance.shadowColor = UIColor(white: 1.0, alpha: 0.06)
         }
 
         // Icon / text colors (shared)
@@ -259,9 +238,9 @@ struct ContentView: View {
             normalColor = UIColor(white: 0.45, alpha: 1)
             selectedColor = UIColor(Color(hex: "#a855f7"))
         } else {
-            // Light mode: rich purple for selected tab
-            normalColor = UIColor(white: 0.0, alpha: 0.45)
-            selectedColor = UIColor(Color(hex: "#7c3aed"))
+            // Light mode: ocean-turquoise tint matching Caribbean icon design
+            normalColor = UIColor(Color(red: 140/255, green: 96/255, blue: 136/255))
+            selectedColor = UIColor(Color(hex: "#0EA5E9"))
         }
 
         appearance.stackedLayoutAppearance.normal.iconColor = normalColor
@@ -284,6 +263,8 @@ struct ContentView: View {
 
         // Apply to the actual UITabBar instance (not the proxy)
         if let tabBar = Self.findTabBar() {
+            tabBar.isHidden = false
+
             tabBar.standardAppearance = appearance
             tabBar.scrollEdgeAppearance = appearance
             // Force unselected/selected tint directly on the instance
@@ -388,140 +369,6 @@ struct ContentView: View {
             .background(.red.opacity(0.85))
         }
         #endif
-    }
-}
-
-// MARK: - Caribbean Tab Bar (Light Mode)
-
-/// Premium custom tab bar for light mode with Caribbean ocean styling.
-/// Features gradient icons, underline glow capsule with matchedGeometryEffect,
-/// and warm turquoise aesthetics — frosted glass shelf the icons sit on.
-struct CaribbeanTabBar: View {
-    @Binding var selectedTab: AppTab
-    @Namespace private var tabNamespace
-    @Environment(\.localization) private var localization
-
-    private var L: AppStrings { localization.strings }
-
-    private var tabs: [(tab: AppTab, icon: String, label: String)] {
-        [
-            (.dashboard, "house.fill", L.tabHome),
-            (.journey, "chart.line.uptrend.xyaxis", L.tabStats),
-            (.membership, "crown.fill", L.tabPremium),
-            (.profile, "person.fill", L.tabProfile),
-        ]
-    }
-
-    var body: some View {
-        VStack(spacing: 0) {
-            // Layer 2: Top-edge luminance line — crisp light catch simulating glass edge
-            Rectangle()
-                .fill(Color.white.opacity(0.45))
-                .frame(height: 0.5)
-
-            // Layer 3: Inner top glow — soft light bleeding down from the edge
-            Rectangle()
-                .fill(
-                    LinearGradient(
-                        colors: [Color.white.opacity(0.15), Color.clear],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                )
-                .frame(height: 8)
-
-            // Tab buttons row
-            HStack(spacing: 0) {
-                ForEach(tabs, id: \.tab) { item in
-                    caribbeanTabButton(tab: item.tab, icon: item.icon, label: item.label)
-                }
-            }
-            .padding(.top, 2)
-            .padding(.bottom, 6)
-        }
-        .padding(.bottom, bottomSafeArea)
-        .background {
-            ZStack {
-                // Layer 0: Warm sand-white base (nav/tab bar surface)
-                Color.caribbeanSurface
-
-                // Layer 1: Caribbean ocean tint — subtle turquoise undertone
-                LinearGradient(
-                    stops: [
-                        .init(color: Color(hex: "0EA5E9").opacity(0.04), location: 0),
-                        .init(color: Color(hex: "06B6D4").opacity(0.03), location: 0.5),
-                        .init(color: Color(hex: "14B8A6").opacity(0.04), location: 1),
-                    ],
-                    startPoint: .leading,
-                    endPoint: .trailing
-                )
-            }
-        }
-        // Shadow goes UP — bar is bottom-anchored
-        .shadow(color: Color(hex: "0EA5E9").opacity(0.08), radius: 12, y: -4)
-        .shadow(color: Color(hex: "06B6D4").opacity(0.03), radius: 4, y: -2)
-        .animation(.spring(response: 0.35, dampingFraction: 0.7), value: selectedTab)
-    }
-
-    @ViewBuilder
-    private func caribbeanTabButton(tab: AppTab, icon: String, label: String) -> some View {
-        let isSelected = selectedTab == tab
-
-        Button {
-            selectedTab = tab
-        } label: {
-            VStack(spacing: 3) {
-                // Icon with ocean shimmer glow
-                ZStack {
-                    if isSelected {
-                        Circle()
-                            .fill(LinearGradient.caribbeanGradientOcean)
-                            .opacity(0.12)
-                            .blur(radius: 4)
-                            .frame(width: 32, height: 32)
-                    }
-
-                    Image(systemName: icon)
-                        .font(.system(size: 20, weight: isSelected ? .semibold : .regular))
-                        .foregroundStyle(
-                            isSelected
-                                ? AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
-                                : AnyShapeStyle(Color.caribbeanMist)
-                        )
-                }
-                .frame(height: 28)
-
-                // Label
-                Text(label)
-                    .font(.system(size: 10, weight: isSelected ? .medium : .regular))
-                    .tracking(isSelected ? 0.3 : 0)
-                    .foregroundStyle(isSelected ? Color.caribbeanInk : Color.caribbeanMist)
-
-                // Underline glow capsule — slides between tabs
-                if isSelected {
-                    Capsule()
-                        .fill(LinearGradient.caribbeanGradientOcean)
-                        .frame(width: 28, height: 3)
-                        .shadow(color: Color(hex: "0EA5E9").opacity(0.35), radius: 6, y: 1)
-                        .matchedGeometryEffect(id: "caribbeanActiveTab", in: tabNamespace)
-                } else {
-                    Color.clear
-                        .frame(width: 28, height: 3)
-                }
-            }
-            .frame(maxWidth: .infinity)
-            .contentShape(Rectangle())
-        }
-        .buttonStyle(.plain)
-        .accessibilityLabel(label)
-        .accessibilityAddTraits(isSelected ? .isSelected : [])
-    }
-
-    private var bottomSafeArea: CGFloat {
-        guard let windowScene = UIApplication.shared.connectedScenes
-            .first as? UIWindowScene,
-            let window = windowScene.windows.first else { return 0 }
-        return window.safeAreaInsets.bottom
     }
 }
 
