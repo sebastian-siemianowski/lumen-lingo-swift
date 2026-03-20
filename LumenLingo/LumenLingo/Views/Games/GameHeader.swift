@@ -158,15 +158,46 @@ struct GameHeader: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .background(
-            RoundedRectangle(cornerRadius: 20)
-                .fill(.ultraThinMaterial)
+        .background {
+            if isDark {
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(.ultraThinMaterial)
+            } else {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.thinMaterial)
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color.white.opacity(0.25))
+                }
+            }
+        }
+        .overlay {
+            if isDark {
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(gameGradient, lineWidth: 0.5)
+            } else {
+                RoundedRectangle(cornerRadius: 20)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [
+                                Color.white.opacity(0.70),
+                                Color.white.opacity(0.40),
+                                Color.white.opacity(0.60)
+                            ],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 0.75
+                    )
+            }
+        }
+        .shadow(
+            color: isDark
+                ? .black.opacity(0.15)
+                : Color(red: 0.55, green: 0.50, blue: 0.68).opacity(0.10),
+            radius: isDark ? 4 : 6,
+            y: isDark ? 2 : 3
         )
-        .overlay(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(gameGradient, lineWidth: 0.5)
-        )
-        .shadow(color: .black.opacity(0.15), radius: 4, y: 2)
         .padding(.horizontal, 4)
         .padding(.bottom, 8)
         .onAppear {
@@ -227,19 +258,69 @@ struct GameHeader: View {
 
     @ViewBuilder
     private var themedProgressBar: some View {
-        let barHeight: CGFloat = 5
+        let barHeight: CGFloat = isDark ? 5 : 6
         GeometryReader { geo in
             let fillWidth = max(0, geo.size.width * min(progressFraction, 1.0))
             ZStack(alignment: .leading) {
-                Capsule()
-                    .fill(isDark ? .white.opacity(0.08) : Color.caribbeanRecessed)
+                // Track
+                if isDark {
+                    Capsule()
+                        .fill(.white.opacity(0.08))
+                } else {
+                    // Frost trough — recessed glass channel with inner shadow depth
+                    ZStack {
+                        Capsule()
+                            .fill(Color(red: 0.88, green: 0.91, blue: 0.94))
+                        // Inner shadow — top-dark to bottom-light for carved depth
+                        Capsule()
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color.black.opacity(0.05),
+                                        Color.clear,
+                                        Color.white.opacity(0.25)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                        // Glass rim — catches light at the trough edge
+                        Capsule()
+                            .strokeBorder(Color.white.opacity(0.65), lineWidth: 0.5)
+                    }
+                }
 
+                // Fill
                 Capsule()
                     .fill(progressFill(width: fillWidth))
                     .frame(width: fillWidth)
+                    .overlay {
+                        // Frost highlight — light catching the liquid surface
+                        if !isDark {
+                            VStack(spacing: 0) {
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [Color.white.opacity(0.50), Color.white.opacity(0.05)],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        )
+                                    )
+                                    .frame(height: barHeight * 0.38)
+                                    .padding(.horizontal, 1.5)
+                                    .padding(.top, 0.5)
+                                Spacer(minLength: 0)
+                            }
+                        }
+                    }
                     .overlay(progressEffectOverlay(fillWidth: fillWidth, totalWidth: geo.size.width))
                     .clipShape(Capsule())
-                    .shadow(color: isDark ? .clear : (theme.gradientColors.first ?? .blue).opacity(0.20), radius: 3, x: 0, y: 1)
+                    .shadow(
+                        color: isDark
+                            ? .clear
+                            : (theme.gradientColors.first ?? .blue).opacity(0.30),
+                        radius: 4, x: 0, y: 1.5
+                    )
             }
         }
         .frame(height: barHeight)
