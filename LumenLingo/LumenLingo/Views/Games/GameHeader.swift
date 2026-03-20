@@ -10,23 +10,27 @@ enum ProgressBarEffect {
 
 struct GameHeaderTheme {
     let gradientColors: [Color]
+    let lightProgressColors: [Color]
     let scoreIcon: String
     let progressEffect: ProgressBarEffect
 
     static let flashcards = GameHeaderTheme(
         gradientColors: [Color(hex: "#667eea"), Color(hex: "#06b6d4"), Color(hex: "#0d9488")],
+        lightProgressColors: [Color(hex: "#4F8EFF"), Color(hex: "#00D4FF"), Color(hex: "#00E5A0")],
         scoreIcon: "bolt.circle.fill",
         progressEffect: .flowing
     )
 
     static let grammar = GameHeaderTheme(
         gradientColors: [Color(hex: "#f093fb"), Color(hex: "#f5576c"), Color(hex: "#e11d48")],
+        lightProgressColors: [Color(hex: "#C084FC"), Color(hex: "#F472B6"), Color(hex: "#FB7185")],
         scoreIcon: "brain.fill",
         progressEffect: .heartbeat
     )
 
     static let wordBuilder = GameHeaderTheme(
         gradientColors: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#ef4444")],
+        lightProgressColors: [Color(hex: "#FBBF24"), Color(hex: "#FB923C"), Color(hex: "#F472B6")],
         scoreIcon: "star.circle.fill",
         progressEffect: .fireTrail
     )
@@ -328,10 +332,10 @@ struct GameHeader: View {
 
     private func progressFill(width: CGFloat) -> some ShapeStyle {
         if !isDark {
-            // Light mode: clean static gradient — the frost trough + highlight do the visual work
+            // Light mode: vibrant uplifting gradient in the frost trough
             return AnyShapeStyle(
                 LinearGradient(
-                    colors: theme.gradientColors,
+                    colors: theme.lightProgressColors,
                     startPoint: .leading,
                     endPoint: .trailing
                 )
