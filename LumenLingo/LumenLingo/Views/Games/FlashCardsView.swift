@@ -479,10 +479,33 @@ struct FlashCardsView: View {
     // MARK: - Card Front Content (text only, no glass)
 
     // Typography Color Constants (Light Mode)
-    private static let frostIndigo = Color(red: 0.24, green: 0.20, blue: 0.50) // Rich indigo for source word
-    private static let frostTeal = Color(red: 0.02, green: 0.40, blue: 0.42) // Rich teal for target word
-    private static let frostPlumGrey = Color(red: 0.38, green: 0.32, blue: 0.42) // Plum-grey for secondary text
-    private static let frostLavenderGrey = Color(red: 0.72, green: 0.70, blue: 0.78) // Neutral lavender-grey for divider
+    // Front — Caribbean Sunset gradient (violet → hot rose → warm coral)
+    private static let frostSunsetGradient = LinearGradient(
+        colors: [
+            Color(red: 0.49, green: 0.23, blue: 0.93),  // vivid violet  (#7C3AED)
+            Color(red: 0.86, green: 0.15, blue: 0.47),  // hot rose      (#DB2777)
+            Color(red: 0.92, green: 0.35, blue: 0.05)   // sunset coral  (#EA5A0D)
+        ],
+        startPoint: .leading, endPoint: .trailing
+    )
+    private static let frostSunsetShadow = Color(red: 0.86, green: 0.15, blue: 0.47) // rose tint for shadow
+
+    // Back — Caribbean Ocean gradient (ocean blue → turquoise → reef teal)
+    private static let frostOceanGradient = LinearGradient(
+        colors: [
+            Color(red: 0.05, green: 0.52, blue: 0.85),  // bright ocean  (#0D85D9)
+            Color(red: 0.02, green: 0.62, blue: 0.76),  // vivid cyan    (#059EC2)
+            Color(red: 0.08, green: 0.62, blue: 0.53)   // reef teal     (#149E87)
+        ],
+        startPoint: .leading, endPoint: .trailing
+    )
+    private static let frostOceanShadow = Color(red: 0.02, green: 0.58, blue: 0.76) // cyan tint for shadow
+    private static let frostOceanAccent = Color(red: 0.03, green: 0.55, blue: 0.78) // bright ocean for small text
+
+    private static let frostPlumGrey = Color(red: 0.38, green: 0.30, blue: 0.52) // Plum-grey for secondary text
+    private static let frostWhisper = Color(red: 0.55, green: 0.50, blue: 0.62) // Whisper-grey for tertiary text
+    private static let frostDivider = Color(red: 0.75, green: 0.72, blue: 0.80) // Neutral lavender-grey for divider
+    private static let frostPillBorder = Color(red: 0.75, green: 0.78, blue: 0.82) // Footer pill border
 
     private func frontContent(word: FlashcardWord) -> some View {
         VStack(spacing: 0) {
@@ -497,9 +520,9 @@ struct FlashCardsView: View {
                             startPoint: .leading,
                             endPoint: .trailing
                         ))
-                        : AnyShapeStyle(Self.frostIndigo)
+                        : AnyShapeStyle(Self.frostSunsetGradient)
                 )
-                .shadow(color: isDark ? .black.opacity(0.6) : Self.frostIndigo.opacity(0.06), radius: isDark ? 4 : 8, x: 0, y: 2)
+                .shadow(color: isDark ? .black.opacity(0.6) : Self.frostSunsetShadow.opacity(0.06), radius: isDark ? 4 : 8, x: 0, y: isDark ? 2 : 3)
                 .shadow(color: isDark ? .black.opacity(0.3) : .clear, radius: 12, x: 0, y: 4)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
@@ -516,10 +539,10 @@ struct FlashCardsView: View {
                     .padding(.top, isDark ? 14 : 10)
                     .overlay(alignment: .bottom) {
                         if !isDark {
-                            // Subtle underline replacing heavy pill background
+                            // Subtle underline — plum-grey at 12% opacity, 1pt
                             Capsule()
-                                .fill(Self.frostLavenderGrey.opacity(0.30))
-                                .frame(height: 0.5)
+                                .fill(Self.frostPlumGrey.opacity(0.12))
+                                .frame(height: 1)
                                 .padding(.horizontal, 8)
                         }
                     }
@@ -535,7 +558,7 @@ struct FlashCardsView: View {
                 Text(L.tapToReveal)
             }
             .font(.caption.weight(.medium))
-            .foregroundStyle(isDark ? .white.opacity(0.55) : Self.frostLavenderGrey)
+            .foregroundStyle(isDark ? .white.opacity(0.55) : Self.frostWhisper.opacity(0.70))
             .shadow(color: isDark ? .black.opacity(0.4) : .clear, radius: 3, x: 0, y: 1)
             .padding(.bottom, 28)
         }
@@ -557,9 +580,9 @@ struct FlashCardsView: View {
                             startPoint: .leading,
                             endPoint: .trailing
                         ))
-                        : AnyShapeStyle(Self.frostTeal)
+                        : AnyShapeStyle(Self.frostOceanGradient)
                 )
-                .shadow(color: isDark ? .black.opacity(0.6) : Self.frostTeal.opacity(0.06), radius: isDark ? 4 : 8, x: 0, y: 2)
+                .shadow(color: isDark ? .black.opacity(0.6) : Self.frostOceanShadow.opacity(0.06), radius: isDark ? 4 : 8, x: 0, y: isDark ? 2 : 3)
                 .shadow(color: isDark ? .black.opacity(0.3) : .clear, radius: 12, x: 0, y: 4)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
@@ -570,12 +593,12 @@ struct FlashCardsView: View {
                     LinearGradient(
                         colors: isDark
                             ? [.clear, .white.opacity(0.45), .clear]
-                            : [.clear, Self.frostLavenderGrey.opacity(0.40), .clear],
+                            : [.clear, Self.frostDivider.opacity(0.30), .clear],
                         startPoint: .leading, endPoint: .trailing
                     )
                 )
                 .frame(width: isDark ? 80 : 100, height: 1)
-                .shadow(color: isDark ? .white.opacity(0.3) : Self.frostLavenderGrey.opacity(0.10), radius: 4)
+                .shadow(color: isDark ? .white.opacity(0.3) : Self.frostDivider.opacity(0.10), radius: 4)
                 .padding(.top, 18)
 
             if let example = word.example, !example.isEmpty {
@@ -590,10 +613,10 @@ struct FlashCardsView: View {
                     .padding(.top, isDark ? 14 : 10)
                     .overlay(alignment: .bottom) {
                         if !isDark {
-                            // Subtle underline replacing heavy pill background
+                            // Subtle underline — plum-grey at 12% opacity, 1pt
                             Capsule()
-                                .fill(Self.frostLavenderGrey.opacity(0.30))
-                                .frame(height: 0.5)
+                                .fill(Self.frostPlumGrey.opacity(0.12))
+                                .frame(height: 1)
                                 .padding(.horizontal, 8)
                         }
                     }
@@ -604,7 +627,7 @@ struct FlashCardsView: View {
             if let translation = word.exampleTranslation, !translation.isEmpty {
                 Text(translation)
                     .font(.caption.weight(.medium))
-                    .foregroundStyle(isDark ? .white.opacity(0.55) : Self.frostLavenderGrey)
+                    .foregroundStyle(isDark ? .white.opacity(0.55) : Self.frostWhisper)
                     .shadow(color: isDark ? .black.opacity(0.4) : .clear, radius: 3, x: 0, y: 1)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 32)
@@ -618,9 +641,9 @@ struct FlashCardsView: View {
                 Text(word.front)
                     .foregroundStyle(isDark ? .white.opacity(0.65) : Self.frostPlumGrey)
                 Image(systemName: "arrow.right")
-                    .foregroundStyle(isDark ? .white.opacity(0.40) : Self.frostLavenderGrey)
+                    .foregroundStyle(isDark ? .white.opacity(0.40) : Self.frostWhisper.opacity(0.40))
                 Text(word.back)
-                    .foregroundStyle(isDark ? .white.opacity(0.90) : Self.frostIndigo)
+                    .foregroundStyle(isDark ? .white.opacity(0.90) : Self.frostOceanAccent)
             }
             .font(.caption.weight(.medium))
             .shadow(color: isDark ? .black.opacity(0.4) : Self.frostPlumGrey.opacity(0.04), radius: isDark ? 3 : 6, x: 0, y: 1)
@@ -631,7 +654,7 @@ struct FlashCardsView: View {
             )
             .overlay(
                 Capsule().strokeBorder(
-                    isDark ? .white.opacity(0.20) : Self.frostOuterEdge.opacity(0.20),
+                    isDark ? .white.opacity(0.20) : Self.frostPillBorder.opacity(0.15),
                     lineWidth: 0.5
                 )
             )

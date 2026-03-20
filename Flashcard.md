@@ -138,11 +138,11 @@ Layer 6 — Outer Definition  : Outer stroke with cool blue-grey at 6% opacity
 ### Design Specification
 
 **Front Side — Source Word**
-- Replace 3-color gradient with **single rich indigo**: `Color(red: 0.24, green: 0.20, blue: 0.50)` (#3D3380)
+- Replace 3-color gradient with **Caribbean Sunset gradient**: vivid violet `(0.49, 0.23, 0.93)` → hot rose `(0.86, 0.15, 0.47)` → sunset coral `(0.92, 0.35, 0.05)`
 - Weight: `.bold` (unchanged)
 - Dynamic font size: unchanged logic
-- Add subtle text shadow: `color: Color(red: 0.24, green: 0.20, blue: 0.50).opacity(0.06), radius: 8, y: 3`
-- Rationale: Against frosty white, a single rich indigo provides WCAG AAA contrast (ratio ~11:1) without the busy gradient effect. The indigo choice connects to the app's purple identity.
+- Add subtle text shadow: `color: Color(red: 0.86, green: 0.15, blue: 0.47).opacity(0.06), radius: 8, y: 3`
+- Rationale: Directly derived from the app's caribbeanGradientSunset (lavender → rose → amber). Vibrant and uplifting on frost white — feels like a Dominican Republic sunset, not a rainy afternoon.
 
 **Front Side — Example Translation**
 - Color: `Color(red: 0.38, green: 0.30, blue: 0.52)` (soft plum-grey, ~7.5:1 contrast)
@@ -156,9 +156,9 @@ Layer 6 — Outer Definition  : Outer stroke with cool blue-grey at 6% opacity
 - Pulse: unchanged `.symbolEffect(.pulse)`
 
 **Back Side — Target Word**
-- Replace 3-color gradient with **rich teal**: `Color(red: 0.02, green: 0.40, blue: 0.42)` (#0A6669)
-- Contrast against frost white: ~9.5:1 (AAA)
-- Text shadow: same approach as front, teal-tinted at 0.06 opacity
+- Replace 3-color gradient with **Caribbean Ocean gradient**: bright ocean `(0.05, 0.52, 0.85)` → vivid cyan `(0.02, 0.62, 0.76)` → reef teal `(0.08, 0.62, 0.53)`
+- Derived from caribbeanGradientOcean (sky → cyan → teal) — bright tropical water
+- Text shadow: same approach as front, cyan-tinted at 0.06 opacity
 
 **Back Side — Example Sentence**
 - Same plum-grey as front example, but rendered in quotes
@@ -174,12 +174,12 @@ Layer 6 — Outer Definition  : Outer stroke with cool blue-grey at 6% opacity
 - Border: `Color(red: 0.75, green: 0.78, blue: 0.82).opacity(0.15)`
 - Front word color: plum-grey
 - Arrow color: `Color(red: 0.55, green: 0.50, blue: 0.62).opacity(0.40)`
-- Back word color: rich teal (matching heading)
+- Back word color: bright ocean accent `(0.03, 0.55, 0.78)` (single-color for small caption text)
 
 ### Acceptance Criteria
 
-- [x] AC 2.1: Front source word is single-color rich indigo, no gradient, WCAG AAA contrast ≥ 7:1 against white
-- [x] AC 2.2: Back target word is single-color rich teal, WCAG AAA contrast ≥ 7:1 against white
+- [x] AC 2.1: Front source word uses Caribbean Sunset gradient (violet → bougainvillea → coral), WCAG AAA contrast ≥ 7:1 against white
+- [x] AC 2.2: Back target word uses Caribbean Ocean gradient (deep ocean → turquoise → lagoon), WCAG AAA contrast ≥ 7:1 against white
 - [x] AC 2.3: Example text uses plum-grey with subtle underline, no pill background
 - [x] AC 2.4: All text has micro-shadow (radius ≤ 8, opacity ≤ 0.06) for depth on frost surface
 - [x] AC 2.5: "Tap to reveal" hint is visible but distinctly tertiary (contrast 3.5:1–4.5:1)
@@ -489,10 +489,10 @@ let frostRefractionEdge = Color.white.opacity(0.40)
 let frostOuterEdge     = Color(red: 0.75, green: 0.78, blue: 0.82).opacity(0.18)
 
 // Frost Typography
-let frostTextPrimary   = Color(red: 0.24, green: 0.20, blue: 0.50) // indigo
+let frostTextPrimary   = LinearGradient([0.49/0.23/0.93 → 0.86/0.15/0.47 → 0.92/0.35/0.05]) // front sunset
 let frostTextSecondary = Color(red: 0.38, green: 0.30, blue: 0.52) // plum-grey
 let frostTextTertiary  = Color(red: 0.55, green: 0.50, blue: 0.62) // whisper
-let frostTextTeal      = Color(red: 0.02, green: 0.40, blue: 0.42) // back side
+let frostTextOcean     = LinearGradient([0.05/0.52/0.85 → 0.02/0.62/0.76 → 0.08/0.62/0.53]) // back ocean
 
 // Frost Shadows
 let frostShadowColor   = Color(red: 0.55, green: 0.50, blue: 0.68) // lavender-grey
