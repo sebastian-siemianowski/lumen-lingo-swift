@@ -311,13 +311,13 @@ Replace the current dual shadow with a **3-layer shadow system** tuned for light
 
 ### Acceptance Criteria
 
-- [ ] AC 5.1: Frost luminance subtly breathes on a 6-second cycle (visible only when consciously watched)
-- [ ] AC 5.2: Warmth bloom center slowly drifts (10s and 8s Lissajous curve)
-- [ ] AC 5.3: Inner refraction edge shimmers on a 7s cycle, out of phase with luminance
-- [ ] AC 5.4: On tap press-down, luminance spikes briefly (250ms) then returns
-- [ ] AC 5.5: All micro-animations honor `accessibilityReduceMotion`
-- [ ] AC 5.6: Combined CPU/GPU cost of frost animations is negligible (no additional render passes — all driven by existing `TimelineView` or `sin()` in modifiers)
-- [ ] AC 5.7: Dark mode animations are completely unaffected
+- [x] AC 5.1: Frost luminance subtly breathes on a 6-second cycle (visible only when consciously watched)
+- [x] AC 5.2: Warmth bloom center slowly drifts (10s and 8s Lissajous curve)
+- [x] AC 5.3: Inner refraction edge shimmers on a 7s cycle, out of phase with luminance
+- [x] AC 5.4: On tap press-down, luminance spikes briefly (250ms) then returns
+- [x] AC 5.5: All micro-animations honor `accessibilityReduceMotion`
+- [x] AC 5.6: Combined CPU/GPU cost of frost animations is negligible (no additional render passes — all driven by existing `TimelineView` or `sin()` in modifiers)
+- [x] AC 5.7: Dark mode animations are completely unaffected
 
 ---
 
@@ -351,13 +351,13 @@ Replace the current `borderGlowColor`/`borderGlowOpacity` system with **frost di
 
 ### Acceptance Criteria
 
-- [ ] AC 6.1: Correct answer makes the frost card glow mint green from within (internal light, not border stroke)
-- [ ] AC 6.2: Wrong answer suffuses the frost with warm amber briefly
-- [ ] AC 6.3: Green glow persists ~1s total, amber glow ~700ms (correct celebration lasts longer)
-- [ ] AC 6.4: Refraction edge follows the glow color during feedback
-- [ ] AC 6.5: Existing luminous motes and card-area radial glow still render on top
-- [ ] AC 6.6: Dark mode answer feedback is completely unaffected
-- [ ] AC 6.7: Transitions between neutral frost → colored frost → neutral frost are smooth (no pops)
+- [x] AC 6.1: Correct answer makes the frost card glow mint green from within (internal light, not border stroke)
+- [x] AC 6.2: Wrong answer suffuses the frost with warm amber briefly
+- [x] AC 6.3: Green glow persists ~1s total, amber glow ~700ms (correct celebration lasts longer)
+- [x] AC 6.4: Refraction edge follows the glow color during feedback
+- [x] AC 6.5: Existing luminous motes and card-area radial glow still render on top
+- [x] AC 6.6: Dark mode answer feedback is completely unaffected
+- [x] AC 6.7: Transitions between neutral frost → colored frost → neutral frost are smooth (no pops)
 
 ---
 
@@ -399,14 +399,14 @@ Replace the current `borderGlowColor`/`borderGlowOpacity` system with **frost di
 
 ### Acceptance Criteria
 
-- [ ] AC 7.1: Both action buttons use frost-white glass base (matching card material family)
-- [ ] AC 7.2: "Still Learning" is differentiated by amber text/icon/border accents
-- [ ] AC 7.3: "Got It" is differentiated by teal text/icon/border accents
-- [ ] AC 7.4: Button text contrast against frost base ≥ 4.5:1 (WCAG AA for interactive elements)
-- [ ] AC 7.5: Icon circles maintain semantic color coding (amber = retry, teal = success)
-- [ ] AC 7.6: Press animation (scale/brightness) preserved from `LumenPressStyle`
-- [ ] AC 7.7: Dark mode action buttons are completely unaffected
-- [ ] AC 7.8: Buttons' frost matches card's frost (same white opacity, same material)
+- [x] AC 7.1: Both action buttons use frost-white glass base (matching card material family)
+- [x] AC 7.2: "Still Learning" is differentiated by amber text/icon/border accents
+- [x] AC 7.3: "Got It" is differentiated by teal text/icon/border accents
+- [x] AC 7.4: Button text contrast against frost base ≥ 4.5:1 (WCAG AA for interactive elements)
+- [x] AC 7.5: Icon circles maintain semantic color coding (amber = retry, teal = success)
+- [x] AC 7.6: Press animation (scale/brightness) preserved from `LumenPressStyle`
+- [x] AC 7.7: Dark mode action buttons are completely unaffected
+- [x] AC 7.8: Buttons' frost matches card's frost (same white opacity, same material)
 
 ---
 
@@ -439,13 +439,13 @@ Replace the current `borderGlowColor`/`borderGlowOpacity` system with **frost di
 
 ### Acceptance Criteria
 
-- [ ] AC 8.1: During flip, the card edge glows white (like glass catching light while rotating)
-- [ ] AC 8.2: Edge glow peaks at rotation midpoint (~150ms into flip)
-- [ ] AC 8.3: Shadow subtly expands during mid-flip (card lifts slightly during rotation)
-- [ ] AC 8.4: Ripple effect on flip uses frost-appropriate colors (white/lavender, not purple)
-- [ ] AC 8.5: Content crossfade at midpoint is instant (no visible frame where both sides show)
-- [ ] AC 8.6: Dark mode flip behavior is completely unaffected
-- [ ] AC 8.7: Flip animation duration remains `0.55s` easeInOut (unchanged timing)
+- [x] AC 8.1: During flip, the card edge glows white (like glass catching light while rotating)
+- [x] AC 8.2: Edge glow peaks at rotation midpoint (~150ms into flip)
+- [x] AC 8.3: Shadow subtly expands during mid-flip (card lifts slightly during rotation)
+- [x] AC 8.4: Ripple effect on flip uses frost-appropriate colors (white/lavender, not purple)
+- [x] AC 8.5: Content crossfade at midpoint is instant (no visible frame where both sides show)
+- [x] AC 8.6: Dark mode flip behavior is completely unaffected
+- [x] AC 8.7: Flip animation duration remains `0.55s` easeInOut (unchanged timing)
 
 ---
 

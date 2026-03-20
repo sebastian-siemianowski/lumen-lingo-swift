@@ -18,6 +18,7 @@ struct FlashCardsView: View {
     @Environment(TierManager.self) private var tierManager
     @Environment(PracticeTimeTracker.self) private var practiceTracker
     @Environment(\.localization) private var localization
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     private var L: AppStrings { localization.strings }
 
@@ -362,18 +363,50 @@ struct FlashCardsView: View {
     @State private var borderGlowColor: Color = .clear
     @State private var borderGlowOpacity: Double = 0
     @State private var flipEdgeGlowOpacity: Double = 0
+    @State private var frostLuminanceSpike: CGFloat = 0
+    @State private var frostDiffusionColor: Color = .clear
+    @State private var frostDiffusionOpacity: Double = 0
+    @State private var frostEdgeFeedbackOpacity: Double = 0
+    @State private var flipShadowExpansion: CGFloat = 1.0
+
+    // MARK: - Frost Breathing (Story 5)
+    // Derived from existing floatPhase (4s) and borderBreathPhase (3s)
+    // Different multipliers create organic polyrhythm — no new animation drivers needed.
+
+    private var frostLuminanceBreath: Double {
+        guard !isDark, !reduceMotion else { return 1.0 }
+        return min(1.0, 0.92 + Foundation.sin(Double(borderBreathPhase)) * 0.08 + Double(frostLuminanceSpike))
+    }
+
+    private var frostBloomCenter: UnitPoint {
+        guard !isDark, !reduceMotion else { return .center }
+        let x = 0.50 + Foundation.sin(Double(floatPhase) * 0.8) * 0.04
+        let y = 0.50 + Foundation.cos(Double(floatPhase) * 0.8) * 0.03
+        return UnitPoint(x: x, y: y)
+    }
+
+    private var frostShimmerOpacity: Double {
+        guard !isDark, !reduceMotion else { return 0.55 }
+        return 0.50 + Foundation.sin(Double(borderBreathPhase) * 1.17) * 0.05
+    }
 
     private func flashcard(word: FlashcardWord) -> some View {
         ZStack {
-            // Ripple effect on flip — always present, driven by opacity
+            // Ripple effect on flip — frost-appropriate in light mode
             Circle()
                 .fill(
                     RadialGradient(
-                        colors: [
-                            Color(hex: "#c084fc").opacity(0.4),
-                            Color(hex: "#8b5cf6").opacity(0.2),
-                            .clear
-                        ],
+                        colors: isDark
+                            ? [
+                                Color(hex: "#c084fc").opacity(0.4),
+                                Color(hex: "#8b5cf6").opacity(0.2),
+                                .clear
+                            ]
+                            : [
+                                Color.white.opacity(0.30),
+                                Color(red: 0.75, green: 0.72, blue: 0.80).opacity(0.12),
+                                .clear
+                            ],
                         center: .center,
                         startRadius: 0,
                         endRadius: 175
@@ -418,20 +451,10 @@ struct FlashCardsView: View {
                 .opacity(borderGlowOpacity * 0.6)
                 .allowsHitTesting(false)
 
-            // Flip edge glow — frost refraction shimmer during flip
+            // Flip edge glow — pure white light catch during rotation
             if !isDark {
                 RoundedRectangle(cornerRadius: 32)
-                    .strokeBorder(
-                        LinearGradient(
-                            colors: [
-                                Color.white.opacity(0.65),
-                                Self.frostCoolEdge.opacity(0.40),
-                                Color.white.opacity(0.55)
-                            ],
-                            startPoint: .topLeading, endPoint: .bottomTrailing
-                        ),
-                        lineWidth: 1.5
-                    )
+                    .strokeBorder(Color.white.opacity(0.65), lineWidth: 1.0)
                     .opacity(flipEdgeGlowOpacity)
                     .blur(radius: 2)
                     .allowsHitTesting(false)
@@ -457,10 +480,10 @@ struct FlashCardsView: View {
                         let tapX = value.location.x
                         let mid = cardWidth / 2
                         if tapX > mid {
-                            triggerMicroFeedback(color: .green)
+                            triggerMicroFeedback(color: isDark ? .green : Self.frostGreenGlow)
                             handleAnswer(correct: true)
                         } else {
-                            triggerMicroFeedback(color: .orange)
+                            triggerMicroFeedback(color: isDark ? .orange : Self.frostAmberGlow)
                             handleAnswer(correct: false)
                         }
                     }
@@ -672,6 +695,16 @@ struct FlashCardsView: View {
     // Frost Shadows
     private static let frostShadowColor = Color(red: 0.55, green: 0.50, blue: 0.68) // lavender-grey
 
+    // Frost Feedback (Story 6)
+    private static let frostGreenGlow = Color(red: 0.30, green: 0.85, blue: 0.55) // correct — mint green
+    private static let frostAmberGlow = Color(red: 0.95, green: 0.65, blue: 0.25) // wrong — warm amber
+
+    // Frost Button Accents (Story 7)
+    private static let frostAmberAccent = Color(red: 0.92, green: 0.58, blue: 0.12)
+    private static let frostAmberText = Color(red: 0.75, green: 0.42, blue: 0.08)
+    private static let frostTealAccent = Color(red: 0.06, green: 0.70, blue: 0.50)
+    private static let frostTealText = Color(red: 0.03, green: 0.52, blue: 0.38)
+
     // MARK: - Transparent Glass Card
 
     private func liquidGlassCard<Content: View>(@ViewBuilder content: () -> Content) -> some View {
@@ -775,7 +808,7 @@ struct FlashCardsView: View {
 
                         // Layer 2 — Warmth Bloom: Warm ivory pooling in the center,
                         // mimics warm ambient light refracting through frosted glass.
-                        // Stronger opacity so the warmth is actually perceivable.
+                        // Center drifts slowly (Lissajous curve) for living-material feel.
                         RoundedRectangle(cornerRadius: 32)
                             .fill(
                                 RadialGradient(
@@ -784,11 +817,28 @@ struct FlashCardsView: View {
                                         Self.frostWarmth.opacity(0.12),
                                         Color.clear
                                     ],
-                                    center: .center,
+                                    center: frostBloomCenter,
                                     startRadius: 0,
                                     endRadius: 250
                                 )
                             )
+
+                        // Frost Diffusion Feedback — answer glow materializes
+                        // within the frost material itself, not around it.
+                        RoundedRectangle(cornerRadius: 32)
+                            .fill(
+                                RadialGradient(
+                                    colors: [
+                                        frostDiffusionColor,
+                                        frostDiffusionColor.opacity(0.4),
+                                        Color.clear
+                                    ],
+                                    center: .center,
+                                    startRadius: 0,
+                                    endRadius: 220
+                                )
+                            )
+                            .opacity(frostDiffusionOpacity)
 
                         // Layer 3 — Cool-to-Warm Refraction: Real frosted glass
                         // shows subtle color shift — cooler at edges (blue scatter),
@@ -828,8 +878,8 @@ struct FlashCardsView: View {
                             )
 
                         // Layer 5 — Inner Luminance: Light catching the top surface.
-                        // Stronger gradient with a slight warm tint — this is what
-                        // establishes the 3D curvature of the glass.
+                        // Breathes on a ~6s cycle (0.84–1.0 opacity) for living frost.
+                        // Spikes briefly on tap for tactile light feedback.
                         VStack(spacing: 0) {
                             RoundedRectangle(cornerRadius: 32)
                                 .fill(
@@ -846,6 +896,7 @@ struct FlashCardsView: View {
                                 .frame(height: 140) // ~39% of card — concentrated highlight
                             Spacer(minLength: 0)
                         }
+                        .opacity(frostLuminanceBreath)
 
                         // Layer 6 — Edge Refraction Glow: Frosted glass catches light
                         // along its edges. This subtle blue-white border gives the
@@ -866,11 +917,18 @@ struct FlashCardsView: View {
                                 lineWidth: 1.0
                             )
 
-                        // Layer 7 — Inner Refraction Line: The bright inner edge
-                        // that real frosted glass refracts from the interior surface.
+                        // Layer 7 — Inner Refraction Line: Shimmers on a ~7s cycle
+                        // (0.45–0.55 opacity), out of phase with luminance breathing
+                        // for organic polyrhythm.
                         RoundedRectangle(cornerRadius: 31)
-                            .strokeBorder(Color.white.opacity(0.55), lineWidth: 0.5)
+                            .strokeBorder(Color.white.opacity(frostShimmerOpacity), lineWidth: 0.5)
                             .padding(1)
+
+                        // Edge Feedback — refraction line glows with diffusion color
+                        RoundedRectangle(cornerRadius: 31)
+                            .strokeBorder(frostDiffusionColor, lineWidth: 0.75)
+                            .padding(1)
+                            .opacity(frostEdgeFeedbackOpacity)
 
                         // Top Specular Rim — directional light hitting the top edge
                         VStack {
@@ -910,7 +968,7 @@ struct FlashCardsView: View {
                 color: isDark
                     ? .black.opacity(0.25)
                     : Self.frostShadowColor.opacity(0.08), // Shadow 1 — Ambient Fog
-                radius: isDark ? 35 : 40,
+                radius: isDark ? 35 : 40 * flipShadowExpansion,
                 x: 0,
                 y: isDark ? 16 : CGFloat(20.0 * (1.0 + Foundation.sin(Double(floatPhase)) * 0.08))
             )
@@ -918,7 +976,7 @@ struct FlashCardsView: View {
                 color: isDark
                     ? Color(hex: "#818cf8").opacity(0.12)
                     : Self.frostShadowColor.opacity(0.12), // Shadow 2 — Contact Shadow
-                radius: isDark ? 30 : 16,
+                radius: isDark ? 30 : 16 * flipShadowExpansion,
                 x: 0,
                 y: isDark ? 8 : CGFloat(8.0 * (1.0 + Foundation.sin(Double(floatPhase)) * 0.08))
             )
@@ -926,7 +984,7 @@ struct FlashCardsView: View {
                 color: isDark
                     ? Color.white.opacity(0.04)
                     : Self.frostShadowColor.opacity(0.04), // Shadow 3 — Edge Crispness
-                radius: isDark ? 1 : 4,
+                radius: isDark ? 1 : 4 * flipShadowExpansion,
                 x: 0,
                 y: isDark ? -1 : CGFloat(2.0 * (1.0 + Foundation.sin(Double(floatPhase)) * 0.08))
             )
@@ -943,53 +1001,81 @@ struct FlashCardsView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "arrow.counterclockwise")
                         .font(.system(size: 12, weight: .bold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : Self.frostAmberAccent)
                         .frame(width: 28, height: 28)
                         .background(
                             Circle()
-                                .fill(.white.opacity(0.20))
+                                .fill(
+                                    isDark
+                                        ? .white.opacity(0.20)
+                                        : Self.frostAmberAccent.opacity(0.15)
+                                )
                                 .overlay(
                                     Circle()
-                                        .strokeBorder(.white.opacity(0.30), lineWidth: 0.75)
+                                        .strokeBorder(
+                                            isDark
+                                                ? .white.opacity(0.30)
+                                                : Self.frostAmberAccent.opacity(0.25),
+                                            lineWidth: 0.75
+                                        )
                                 )
                         )
 
                     Text(L.stillLearning)
                         .font(.system(size: 13, weight: .bold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : Self.frostAmberText)
                         .lineLimit(1)
                         .minimumScaleFactor(0.6)
                 }
                 .padding(.horizontal, 12)
                 .padding(.vertical, 12)
                 .frame(maxWidth: .infinity, minHeight: 48)
-                .background(
-                    RoundedRectangle(cornerRadius: 28)
-                        .fill(
-                            LinearGradient(
-                                colors: [Color(hex: "#f59e0b"), Color(hex: "#f43f5e")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .overlay(
+                .background {
+                    ZStack {
+                        if isDark {
                             RoundedRectangle(cornerRadius: 28)
                                 .fill(
                                     LinearGradient(
-                                        colors: [.white.opacity(0.25), .clear],
-                                        startPoint: .top,
-                                        endPoint: .bottom
+                                        colors: [Color(hex: "#f59e0b"), Color(hex: "#f43f5e")],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
                                     )
                                 )
-                        )
-                        .overlay(
+                        } else {
+                            // Frost glass button base
                             RoundedRectangle(cornerRadius: 28)
-                                .strokeBorder(.white.opacity(0.25), lineWidth: 0.75)
-                        )
+                                .fill(.ultraThinMaterial)
+                                .opacity(0.30)
+                            RoundedRectangle(cornerRadius: 28)
+                                .fill(Color.white.opacity(0.80))
+                        }
+                        // Inner highlight (shared)
+                        RoundedRectangle(cornerRadius: 28)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.25), .clear],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                        // Border
+                        RoundedRectangle(cornerRadius: 28)
+                            .strokeBorder(
+                                isDark
+                                    ? .white.opacity(0.25)
+                                    : Self.frostAmberAccent.opacity(0.20),
+                                lineWidth: isDark ? 0.75 : 0.5
+                            )
+                    }
+                }
+                .shadow(
+                    color: isDark
+                        ? Color(hex: "#f43f5e").opacity(0.35)
+                        : Self.frostShadowColor.opacity(0.08),
+                    radius: 12, x: 0, y: 4
                 )
-                .shadow(color: Color(hex: "#f43f5e").opacity(0.35), radius: 12, x: 0, y: 4)
             }
-            .buttonStyle(LumenPressStyle(weight: .medium, accentColor: Color(hex: "#f43f5e")))
+            .buttonStyle(LumenPressStyle(weight: .medium, accentColor: isDark ? Color(hex: "#f43f5e") : Self.frostAmberAccent))
 
             // Got It
             Button {
@@ -998,53 +1084,81 @@ struct FlashCardsView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "checkmark")
                         .font(.system(size: 12, weight: .bold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : Self.frostTealAccent)
                         .frame(width: 28, height: 28)
                         .background(
                             Circle()
-                                .fill(.white.opacity(0.20))
+                                .fill(
+                                    isDark
+                                        ? .white.opacity(0.20)
+                                        : Self.frostTealAccent.opacity(0.15)
+                                )
                                 .overlay(
                                     Circle()
-                                        .strokeBorder(.white.opacity(0.30), lineWidth: 0.75)
+                                        .strokeBorder(
+                                            isDark
+                                                ? .white.opacity(0.30)
+                                                : Self.frostTealAccent.opacity(0.25),
+                                            lineWidth: 0.75
+                                        )
                                 )
                         )
 
                     Text(L.gotIt)
                         .font(.system(size: 13, weight: .bold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(isDark ? .white : Self.frostTealText)
                         .lineLimit(1)
                         .minimumScaleFactor(0.6)
                 }
                 .padding(.horizontal, 12)
                 .padding(.vertical, 12)
                 .frame(maxWidth: .infinity, minHeight: 48)
-                .background(
-                    RoundedRectangle(cornerRadius: 28)
-                        .fill(
-                            LinearGradient(
-                                colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .overlay(
+                .background {
+                    ZStack {
+                        if isDark {
                             RoundedRectangle(cornerRadius: 28)
                                 .fill(
                                     LinearGradient(
-                                        colors: [.white.opacity(0.25), .clear],
-                                        startPoint: .top,
-                                        endPoint: .bottom
+                                        colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
                                     )
                                 )
-                        )
-                        .overlay(
+                        } else {
+                            // Frost glass button base
                             RoundedRectangle(cornerRadius: 28)
-                                .strokeBorder(.white.opacity(0.25), lineWidth: 0.75)
-                        )
+                                .fill(.ultraThinMaterial)
+                                .opacity(0.30)
+                            RoundedRectangle(cornerRadius: 28)
+                                .fill(Color.white.opacity(0.80))
+                        }
+                        // Inner highlight (shared)
+                        RoundedRectangle(cornerRadius: 28)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.25), .clear],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                        // Border
+                        RoundedRectangle(cornerRadius: 28)
+                            .strokeBorder(
+                                isDark
+                                    ? .white.opacity(0.25)
+                                    : Self.frostTealAccent.opacity(0.20),
+                                lineWidth: isDark ? 0.75 : 0.5
+                            )
+                    }
+                }
+                .shadow(
+                    color: isDark
+                        ? Color(hex: "#10b981").opacity(0.35)
+                        : Self.frostShadowColor.opacity(0.08),
+                    radius: 12, x: 0, y: 4
                 )
-                .shadow(color: Color(hex: "#10b981").opacity(0.35), radius: 12, x: 0, y: 4)
             }
-            .buttonStyle(LumenPressStyle(weight: .medium, accentColor: Color(hex: "#10b981")))
+            .buttonStyle(LumenPressStyle(weight: .medium, accentColor: isDark ? Color(hex: "#10b981") : Self.frostTealAccent))
         }
         .padding(.top, 20)
     }
@@ -1124,11 +1238,23 @@ struct FlashCardsView: View {
         // Single animation drives both rotation + content swap
         isFlipped = true
 
+        // Light-mode frost luminance spike — pressing the card pushes it into light
+        if !isDark && !reduceMotion {
+            frostLuminanceSpike = 0.15
+            withAnimation(.easeOut(duration: 0.25)) { frostLuminanceSpike = 0 }
+        }
+
         // Light-mode flip edge glow
         if !isDark {
             withAnimation(.easeIn(duration: 0.15)) { flipEdgeGlowOpacity = 1.0 }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
                 withAnimation(.easeOut(duration: 0.25)) { flipEdgeGlowOpacity = 0 }
+            }
+
+            // Shadow expands during mid-flip — card lifts away from surface
+            withAnimation(.easeIn(duration: 0.15)) { flipShadowExpansion = 1.30 }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                withAnimation(.easeOut(duration: 0.40)) { flipShadowExpansion = 1.0 }
             }
         }
 
@@ -1193,7 +1319,7 @@ struct FlashCardsView: View {
             animateScoreUp(by: 10)
 
             // Green glow around the card
-            answerGlow = .green
+            answerGlow = isDark ? .green : Self.frostGreenGlow
             answerGlowOpacity = 1.0
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                 withAnimation(.easeOut(duration: 0.4)) {
@@ -1201,8 +1327,21 @@ struct FlashCardsView: View {
                 }
             }
 
+            // Frost diffusion — mint green glow from within the material
+            if !isDark {
+                frostDiffusionColor = Self.frostGreenGlow
+                withAnimation(.easeIn(duration: 0.4)) { frostDiffusionOpacity = 0.20 }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                    withAnimation(.easeOut(duration: 0.6)) { frostDiffusionOpacity = 0 }
+                }
+                withAnimation(.easeIn(duration: 0.15)) { frostEdgeFeedbackOpacity = 0.50 }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    withAnimation(.easeOut(duration: 0.3)) { frostEdgeFeedbackOpacity = 0 }
+                }
+            }
+
             // Spawn luminous motes
-            spawnMotes(count: streak >= 5 ? 6 : streak >= 3 ? 4 : 3, color: .green)
+            spawnMotes(count: streak >= 5 ? 6 : streak >= 3 ? 4 : 3, color: isDark ? .green : Self.frostGreenGlow)
 
             // Mark mastered
             if let word = currentWord {
@@ -1222,12 +1361,25 @@ struct FlashCardsView: View {
             audioService.playSwipeLeft()
             TierHapticsService.shared.wrongAnswer(level: tierManager.hapticLevel)
 
-            // Orange glow around the card
-            answerGlow = .orange
+            // Amber glow around the card
+            answerGlow = isDark ? .orange : Self.frostAmberGlow
             answerGlowOpacity = 1.0
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 withAnimation(.easeOut(duration: 0.3)) {
                     answerGlowOpacity = 0
+                }
+            }
+
+            // Frost diffusion — warm amber absorbed into frost (shorter, no outer glow)
+            if !isDark {
+                frostDiffusionColor = Self.frostAmberGlow
+                withAnimation(.easeIn(duration: 0.3)) { frostDiffusionOpacity = 0.18 }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    withAnimation(.easeOut(duration: 0.4)) { frostDiffusionOpacity = 0 }
+                }
+                withAnimation(.easeIn(duration: 0.15)) { frostEdgeFeedbackOpacity = 0.45 }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                    withAnimation(.easeOut(duration: 0.25)) { frostEdgeFeedbackOpacity = 0 }
                 }
             }
         }
