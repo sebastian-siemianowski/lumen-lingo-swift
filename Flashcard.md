@@ -138,14 +138,14 @@ Layer 6 — Outer Definition  : Outer stroke with cool blue-grey at 6% opacity
 ### Design Specification
 
 **Front Side — Source Word**
-- Replace 3-color gradient with **Caribbean Sunset gradient**: vivid violet `(0.49, 0.23, 0.93)` → hot rose `(0.86, 0.15, 0.47)` → sunset coral `(0.92, 0.35, 0.05)`
+- Replace 3-color gradient with **Caribbean Sunset gradient**: electric purple `(0.60, 0.10, 0.92)` → hot pink `(0.96, 0.16, 0.46)` → golden orange `(0.98, 0.55, 0.05)`
 - Weight: `.bold` (unchanged)
 - Dynamic font size: unchanged logic
-- Add subtle text shadow: `color: Color(red: 0.86, green: 0.15, blue: 0.47).opacity(0.06), radius: 8, y: 3`
-- Rationale: Directly derived from the app's caribbeanGradientSunset (lavender → rose → amber). Vibrant and uplifting on frost white — feels like a Dominican Republic sunset, not a rainy afternoon.
+- Add subtle text shadow: `color: Color(red: 0.96, green: 0.16, blue: 0.46).opacity(0.06), radius: 8, y: 3`
+- Rationale: Full-vibrancy Caribbean sunset — electric purple through hot pink to golden orange. Maximally uplifting and joyful on frost white.
 
 **Front Side — Example Translation**
-- Color: `Color(red: 0.38, green: 0.30, blue: 0.52)` (soft plum-grey, ~7.5:1 contrast)
+- Color: `Color(red: 0.25, green: 0.25, blue: 0.27)` (neutral dark grey, ~10:1 contrast)
 - Remove the `.caribbeanRecessed` pill background
 - Replace with: subtle bottom border line (1pt, `Color(red: 0.38, green: 0.30, blue: 0.52).opacity(0.12)`)
 - Rationale: the recessed pill competes with the frosty card surface. A line is more refined.
@@ -156,8 +156,8 @@ Layer 6 — Outer Definition  : Outer stroke with cool blue-grey at 6% opacity
 - Pulse: unchanged `.symbolEffect(.pulse)`
 
 **Back Side — Target Word**
-- Replace 3-color gradient with **Caribbean Ocean gradient**: bright ocean `(0.05, 0.52, 0.85)` → vivid cyan `(0.02, 0.62, 0.76)` → reef teal `(0.08, 0.62, 0.53)`
-- Derived from caribbeanGradientOcean (sky → cyan → teal) — bright tropical water
+- Replace 3-color gradient with **Caribbean Ocean gradient**: electric blue `(0.04, 0.46, 0.96)` → bright cyan `(0.00, 0.72, 0.84)` → caribbean jade `(0.04, 0.78, 0.52)`
+- Derived from caribbeanGradientOcean but cranked to full vibrancy — electric tropical water
 - Text shadow: same approach as front, cyan-tinted at 0.06 opacity
 
 **Back Side — Example Sentence**
@@ -489,10 +489,10 @@ let frostRefractionEdge = Color.white.opacity(0.40)
 let frostOuterEdge     = Color(red: 0.75, green: 0.78, blue: 0.82).opacity(0.18)
 
 // Frost Typography
-let frostTextPrimary   = LinearGradient([0.49/0.23/0.93 → 0.86/0.15/0.47 → 0.92/0.35/0.05]) // front sunset
-let frostTextSecondary = Color(red: 0.38, green: 0.30, blue: 0.52) // plum-grey
-let frostTextTertiary  = Color(red: 0.55, green: 0.50, blue: 0.62) // whisper
-let frostTextOcean     = LinearGradient([0.05/0.52/0.85 → 0.02/0.62/0.76 → 0.08/0.62/0.53]) // back ocean
+let frostTextPrimary   = LinearGradient([0.60/0.10/0.92 → 0.96/0.16/0.46 → 0.98/0.55/0.05]) // front sunset
+let frostTextSecondary = Color(red: 0.25, green: 0.25, blue: 0.27) // neutral dark grey
+let frostTextTertiary  = Color(red: 0.45, green: 0.45, blue: 0.47) // medium grey
+let frostTextOcean     = LinearGradient([0.04/0.46/0.96 → 0.00/0.72/0.84 → 0.04/0.78/0.52]) // back ocean
 
 // Frost Shadows
 let frostShadowColor   = Color(red: 0.55, green: 0.50, blue: 0.68) // lavender-grey

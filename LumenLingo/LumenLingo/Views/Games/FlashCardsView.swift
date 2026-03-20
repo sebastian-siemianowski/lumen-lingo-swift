@@ -479,31 +479,31 @@ struct FlashCardsView: View {
     // MARK: - Card Front Content (text only, no glass)
 
     // Typography Color Constants (Light Mode)
-    // Front — Caribbean Sunset gradient (violet → hot rose → warm coral)
+    // Front — Caribbean Sunset gradient (magenta → hot pink → golden orange)
     private static let frostSunsetGradient = LinearGradient(
         colors: [
-            Color(red: 0.49, green: 0.23, blue: 0.93),  // vivid violet  (#7C3AED)
-            Color(red: 0.86, green: 0.15, blue: 0.47),  // hot rose      (#DB2777)
-            Color(red: 0.92, green: 0.35, blue: 0.05)   // sunset coral  (#EA5A0D)
+            Color(red: 0.60, green: 0.10, blue: 0.92),  // electric purple (#9A1AEB)
+            Color(red: 0.96, green: 0.16, blue: 0.46),  // hot pink       (#F52975)
+            Color(red: 0.98, green: 0.55, blue: 0.05)   // golden orange   (#FA8C0D)
         ],
         startPoint: .leading, endPoint: .trailing
     )
-    private static let frostSunsetShadow = Color(red: 0.86, green: 0.15, blue: 0.47) // rose tint for shadow
+    private static let frostSunsetShadow = Color(red: 0.96, green: 0.16, blue: 0.46) // hot pink for shadow
 
-    // Back — Caribbean Ocean gradient (ocean blue → turquoise → reef teal)
+    // Back — Caribbean Ocean gradient (electric blue → bright cyan → emerald)
     private static let frostOceanGradient = LinearGradient(
         colors: [
-            Color(red: 0.05, green: 0.52, blue: 0.85),  // bright ocean  (#0D85D9)
-            Color(red: 0.02, green: 0.62, blue: 0.76),  // vivid cyan    (#059EC2)
-            Color(red: 0.08, green: 0.62, blue: 0.53)   // reef teal     (#149E87)
+            Color(red: 0.04, green: 0.46, blue: 0.96),  // electric blue  (#0B75F5)
+            Color(red: 0.00, green: 0.72, blue: 0.84),  // bright cyan    (#00B8D6)
+            Color(red: 0.04, green: 0.78, blue: 0.52)   // caribbean jade (#0AC785)
         ],
         startPoint: .leading, endPoint: .trailing
     )
-    private static let frostOceanShadow = Color(red: 0.02, green: 0.58, blue: 0.76) // cyan tint for shadow
-    private static let frostOceanAccent = Color(red: 0.03, green: 0.55, blue: 0.78) // bright ocean for small text
+    private static let frostOceanShadow = Color(red: 0.00, green: 0.72, blue: 0.84) // cyan for shadow
+    private static let frostOceanAccent = Color(red: 0.04, green: 0.50, blue: 0.90) // electric blue for small text
 
-    private static let frostPlumGrey = Color(red: 0.38, green: 0.30, blue: 0.52) // Plum-grey for secondary text
-    private static let frostWhisper = Color(red: 0.55, green: 0.50, blue: 0.62) // Whisper-grey for tertiary text
+    private static let frostPlumGrey = Color(red: 0.25, green: 0.25, blue: 0.27) // Neutral dark grey for secondary text
+    private static let frostWhisper = Color(red: 0.45, green: 0.45, blue: 0.47) // Medium grey for tertiary text
     private static let frostDivider = Color(red: 0.75, green: 0.72, blue: 0.80) // Neutral lavender-grey for divider
     private static let frostPillBorder = Color(red: 0.75, green: 0.78, blue: 0.82) // Footer pill border
 
