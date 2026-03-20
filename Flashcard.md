@@ -117,15 +117,15 @@ Layer 6 — Outer Definition  : Outer stroke with cool blue-grey at 6% opacity
 
 ### Acceptance Criteria
 
-- [ ] AC 1.1: In light mode, the flashcard has visible material body — not transparent
-- [ ] AC 1.2: Background image/color bleeds softly through the card edges (frosted glass effect)
-- [ ] AC 1.3: Card center is microscopically warmer than card edges (warmth bloom visible in side-by-side comparison with flat white)
-- [ ] AC 1.4: Top surface has a visible but gentle luminance band (light catching the glass)
-- [ ] AC 1.5: Two distinct border lines visible: inner bright refraction + outer cool definition
-- [ ] AC 1.6: Card corner radius remains `32`pt (unchanged)
-- [ ] AC 1.7: Card height remains `360`pt, max width `500`pt (unchanged)
-- [ ] AC 1.8: Dark mode card is completely unaffected — all changes gated behind `!isDark`
-- [ ] AC 1.9: `.clipShape(RoundedRectangle(cornerRadius: 32))` preserves all layering within card bounds
+- [x] AC 1.1: In light mode, the flashcard has visible material body — not transparent
+- [x] AC 1.2: Background image/color bleeds softly through the card edges (frosted glass effect)
+- [x] AC 1.3: Card center is microscopically warmer than card edges (warmth bloom visible in side-by-side comparison with flat white)
+- [x] AC 1.4: Top surface has a visible but gentle luminance band (light catching the glass)
+- [x] AC 1.5: Two distinct border lines visible: inner bright refraction + outer cool definition
+- [x] AC 1.6: Card corner radius remains `32`pt (unchanged)
+- [x] AC 1.7: Card height remains `360`pt, max width `500`pt (unchanged)
+- [x] AC 1.8: Dark mode card is completely unaffected — all changes gated behind `!isDark`
+- [x] AC 1.9: `.clipShape(RoundedRectangle(cornerRadius: 32))` preserves all layering within card bounds
 
 ---
 
@@ -178,14 +178,14 @@ Layer 6 — Outer Definition  : Outer stroke with cool blue-grey at 6% opacity
 
 ### Acceptance Criteria
 
-- [ ] AC 2.1: Front source word is single-color rich indigo, no gradient, WCAG AAA contrast ≥ 7:1 against white
-- [ ] AC 2.2: Back target word is single-color rich teal, WCAG AAA contrast ≥ 7:1 against white
-- [ ] AC 2.3: Example text uses plum-grey with subtle underline, no pill background
-- [ ] AC 2.4: All text has micro-shadow (radius ≤ 8, opacity ≤ 0.06) for depth on frost surface
-- [ ] AC 2.5: "Tap to reveal" hint is visible but distinctly tertiary (contrast 3.5:1–4.5:1)
-- [ ] AC 2.6: Back-side word pair footer pill uses frost-on-frost layering (white on white with subtle distinction)
-- [ ] AC 2.7: Divider capsule is wider (100pt) and uses neutral lavender-grey
-- [ ] AC 2.8: Dark mode typography is completely unaffected
+- [x] AC 2.1: Front source word is single-color rich indigo, no gradient, WCAG AAA contrast ≥ 7:1 against white
+- [x] AC 2.2: Back target word is single-color rich teal, WCAG AAA contrast ≥ 7:1 against white
+- [x] AC 2.3: Example text uses plum-grey with subtle underline, no pill background
+- [x] AC 2.4: All text has micro-shadow (radius ≤ 8, opacity ≤ 0.06) for depth on frost surface
+- [x] AC 2.5: "Tap to reveal" hint is visible but distinctly tertiary (contrast 3.5:1–4.5:1)
+- [x] AC 2.6: Back-side word pair footer pill uses frost-on-frost layering (white on white with subtle distinction)
+- [x] AC 2.7: Divider capsule is wider (100pt) and uses neutral lavender-grey
+- [x] AC 2.8: Dark mode typography is completely unaffected
 
 ---
 
@@ -222,12 +222,12 @@ Replace the current AngularGradient iridescent border (light mode path) with a *
 
 ### Acceptance Criteria
 
-- [ ] AC 3.1: Top specular rim is a clear white highlight catching directional light
-- [ ] AC 3.2: Bottom specular rim is present but ~4× dimmer than top (ambient bounce)
-- [ ] AC 3.3: Side edges have marginally more definition than top/bottom (perpendicular light catch)
-- [ ] AC 3.4: No iridescent/rainbow border in light mode — replaced by frost-appropriate edges
-- [ ] AC 3.5: Dark mode iridescent border is completely unaffected
-- [ ] AC 3.6: Border system renders at ≤ 1pt line width (frost glass is refined, not chunky)
+- [x] AC 3.1: Top specular rim is a clear white highlight catching directional light
+- [x] AC 3.2: Bottom specular rim is present but ~4× dimmer than top (ambient bounce)
+- [x] AC 3.3: Side edges have marginally more definition than top/bottom (perpendicular light catch)
+- [x] AC 3.4: No iridescent/rainbow border in light mode — replaced by frost-appropriate edges
+- [x] AC 3.5: Dark mode iridescent border is completely unaffected
+- [x] AC 3.6: Border system renders at ≤ 1pt line width (frost glass is refined, not chunky)
 
 ---
 
@@ -267,12 +267,12 @@ Replace the current dual shadow with a **3-layer shadow system** tuned for light
 
 ### Acceptance Criteria
 
-- [ ] AC 4.1: Card casts a 3-layer shadow in light mode: ambient fog + contact + edge crispness
-- [ ] AC 4.2: All shadow colors are lavender-grey, not black
-- [ ] AC 4.3: Shadow depth subtly shifts in sync with the floating animation
-- [ ] AC 4.4: Card appears to hover 4–6pt above the surface (perceptual test)
-- [ ] AC 4.5: Dark mode shadow system is completely unaffected
-- [ ] AC 4.6: Shadows do not extend beyond ~60pt from card edge (avoid bleeding into adjacent UI)
+- [x] AC 4.1: Card casts a 3-layer shadow in light mode: ambient fog + contact + edge crispness
+- [x] AC 4.2: All shadow colors are lavender-grey, not black
+- [x] AC 4.3: Shadow depth subtly shifts in sync with the floating animation
+- [x] AC 4.4: Card appears to hover 4–6pt above the surface (perceptual test)
+- [x] AC 4.5: Dark mode shadow system is completely unaffected
+- [x] AC 4.6: Shadows do not extend beyond ~60pt from card edge (avoid bleeding into adjacent UI)
 
 ---
 
