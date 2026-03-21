@@ -541,18 +541,18 @@ struct ProfileView: View {
 
                     VStack(alignment: .leading, spacing: 2) {
                         Text("\(streakCount)-\(L.dayStreak)")
-                            .font(.system(size: 15, weight: .bold, design: .rounded))
+                            .font(.system(size: 16, weight: .heavy, design: .rounded))
                             .foregroundStyle(
-                                isDark
-                                    ? AnyShapeStyle(LinearGradient(
-                                        colors: [Color(hex: "FF8C00"), Color(hex: "FFD700")],
-                                        startPoint: .leading, endPoint: .trailing
-                                      ))
-                                    : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
+                                LinearGradient(
+                                    colors: isDark
+                                        ? [Color(hex: "FF6B35"), Color(hex: "FF9F1C"), Color(hex: "FFBF69")]
+                                        : [Color(hex: "DC2626"), Color(hex: "EA580C"), Color(hex: "F59E0B")],
+                                    startPoint: .leading, endPoint: .trailing
+                                )
                             )
                         Text("Keep going!")
                             .font(.system(size: 11, weight: .semibold))
-                            .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum.opacity(0.8))
+                            .foregroundStyle(isDark ? .white.opacity(0.75) : Color(hex: "9A3412").opacity(0.85))
                     }
 
                     Spacer()
