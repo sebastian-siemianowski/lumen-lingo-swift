@@ -497,37 +497,43 @@ struct ProfileView: View {
                 HStack(spacing: 10) {
                     // Streak icon with Caribbean sunset glow
                     ZStack {
-                        // Outer radial glow — tropical lagoon
-                        Circle()
-                            .fill(
-                                RadialGradient(
-                                    colors: isDark
-                                        ? [Color(hex: "E879F9").opacity(flamePulse ? 0.35 : 0.18), Color(hex: "38BDF8").opacity(0.1), .clear]
-                                        : [Color(hex: "F472B6").opacity(flamePulse ? 0.55 : 0.35), Color(hex: "FB923C").opacity(0.25), .clear],
-                                    center: .center,
-                                    startRadius: 2,
-                                    endRadius: 22
+                        if isDark {
+                            // Dark mode: radial glow behind icon
+                            Circle()
+                                .fill(
+                                    RadialGradient(
+                                        colors: [Color(hex: "E879F9").opacity(flamePulse ? 0.35 : 0.18), Color(hex: "38BDF8").opacity(0.1), .clear],
+                                        center: .center,
+                                        startRadius: 2,
+                                        endRadius: 22
+                                    )
                                 )
-                            )
-                            .frame(width: 44, height: 44)
+                                .frame(width: 44, height: 44)
+                        } else {
+                            // Light mode: white circle backdrop
+                            Circle()
+                                .fill(.white)
+                                .frame(width: 38, height: 38)
+                                .shadow(color: Color(hex: "F472B6").opacity(0.25), radius: 6, y: 2)
+                        }
 
-                        // Soft bloom layer
-                        Image(systemName: "sparkles")
-                            .font(.system(size: 22, weight: .semibold))
-                            .foregroundStyle(
-                                LinearGradient(
-                                    colors: isDark
-                                        ? [Color(hex: "38BDF8"), Color(hex: "E879F9"), Color(hex: "FBBF24")]
-                                        : [Color(hex: "C494FC"), Color(hex: "F472B6"), Color(hex: "FB923C")],
-                                    startPoint: .bottomLeading, endPoint: .topTrailing
+                        if isDark {
+                            // Soft bloom layer (dark only)
+                            Image(systemName: "sparkles")
+                                .font(.system(size: 22, weight: .semibold))
+                                .foregroundStyle(
+                                    LinearGradient(
+                                        colors: [Color(hex: "38BDF8"), Color(hex: "E879F9"), Color(hex: "FBBF24")],
+                                        startPoint: .bottomLeading, endPoint: .topTrailing
+                                    )
                                 )
-                            )
-                            .blur(radius: 6)
-                            .opacity(flamePulse ? 0.85 : 0.65)
+                                .blur(radius: 6)
+                                .opacity(flamePulse ? 0.85 : 0.65)
+                        }
 
                         // Sharp icon on top
                         Image(systemName: "sparkles")
-                            .font(.system(size: 22, weight: .semibold))
+                            .font(.system(size: isDark ? 22 : 18, weight: .semibold))
                             .foregroundStyle(
                                 LinearGradient(
                                     stops: isDark
@@ -546,7 +552,7 @@ struct ProfileView: View {
                                     startPoint: .bottomLeading, endPoint: .topTrailing
                                 )
                             )
-                            .shadow(color: isDark ? Color(hex: "A78BFA").opacity(0.5) : Color(hex: "F472B6").opacity(0.55), radius: 4, y: 1)
+                            .shadow(color: isDark ? Color(hex: "A78BFA").opacity(0.5) : Color(hex: "F472B6").opacity(0.55), radius: isDark ? 4 : 2, y: 1)
                             .scaleEffect(flamePulse ? 1.08 : 1.0)
                     }
 
