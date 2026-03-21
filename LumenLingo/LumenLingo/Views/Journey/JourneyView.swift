@@ -580,22 +580,23 @@ struct JourneyView: View {
                                             endPoint: UnitPoint(x: 0.5, y: 1 - timelineFlowPhase)
                                         )
                                     )
-                                    .frame(width: 2.5, height: 24)
+                                    .frame(width: 2.5)
                                     .shadow(color: milestone.color.opacity(0.2), radius: 4)
                             } else if isUnlocked && !nextUnlocked {
                                 // Transitional connector — solid fading to dashed
                                 VStack(spacing: 0) {
                                     RoundedRectangle(cornerRadius: 1)
                                         .fill(milestone.color.opacity(0.4))
-                                        .frame(width: 2.5, height: 12)
+                                        .frame(width: 2.5)
                                     Rectangle()
                                         .fill(.white.opacity(0.08))
-                                        .frame(width: 2, height: 12)
+                                        .frame(width: 2)
                                         .mask(
                                             VStack(spacing: 5) {
-                                                ForEach(0..<2, id: \.self) { _ in
+                                                ForEach(0..<3, id: \.self) { _ in
                                                     Rectangle().frame(height: 3)
                                                 }
+                                                Spacer(minLength: 0)
                                             }
                                         )
                                 }
@@ -603,16 +604,18 @@ struct JourneyView: View {
                                 // Locked — dashed
                                 Rectangle()
                                     .fill(.white.opacity(0.06))
-                                    .frame(width: 2, height: 24)
+                                    .frame(width: 2)
                                     .mask(
                                         VStack(spacing: 5) {
-                                            ForEach(0..<3, id: \.self) { _ in
+                                            ForEach(0..<4, id: \.self) { _ in
                                                 Rectangle().frame(height: 3)
                                             }
+                                            Spacer(minLength: 0)
                                         }
                                     )
                             }
                         }
+                        .frame(maxHeight: .infinity)
                     } else {
                         // Check if the next milestone is also unlocked for the connector
                         let nextUnlocked = (index + 1 < milestones.count) && (currentXP >= milestones[index + 1].xpRequired)
@@ -967,7 +970,7 @@ struct JourneyView: View {
                 }
             }
         }
-        .padding(.vertical, isDark && isUpcoming ? 5 : 3)
+        .padding(.vertical, 3)
     }
 
     private func formattedXP(_ xp: Int) -> String {
