@@ -104,8 +104,7 @@ struct JourneyView: View {
                 CollapsibleSection(
                     title: hasUserName ? "\(displayName)'s XP" : L.totalXP,
                     theme: .xpStats,
-                    isCollapsed: $isStatsCollapsed,
-                    badge: .text(formattedXP(profile?.totalXP ?? 0) + " XP")
+                    isCollapsed: $isStatsCollapsed
                 ) {
                     overallStatsPanel
                 }
@@ -114,8 +113,7 @@ struct JourneyView: View {
                 CollapsibleSection(
                     title: L.milestones,
                     theme: .milestones,
-                    isCollapsed: $isMilestonesCollapsed,
-                    badge: .count(completedMilestoneCount)
+                    isCollapsed: $isMilestonesCollapsed
                 ) {
                     milestonesSection
                 }
@@ -125,7 +123,7 @@ struct JourneyView: View {
                     title: L.gamePerformance,
                     theme: .gamePerformance,
                     isCollapsed: $isGameBreakdownCollapsed,
-                    badge: tierBadge(for: .gameBreakdown) ?? .progress(overallAccuracy),
+                    badge: tierBadge(for: .gameBreakdown),
                     isLocked: isSectionLocked(.gameBreakdown),
                     lockedTierName: requiredTierInfo(for: .gameBreakdown).name,
                     lockedTierColor: requiredTierInfo(for: .gameBreakdown).color
