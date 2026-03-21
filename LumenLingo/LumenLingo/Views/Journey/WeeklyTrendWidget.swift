@@ -72,51 +72,6 @@ struct WeeklyTrendWidget: View {
 
                 // Dual line chart
                 ZStack {
-                    // Light mode frost trough chart background
-                    if !isDark {
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(Color(red: 0.93, green: 0.94, blue: 0.96))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .fill(
-                                        LinearGradient(
-                                            colors: [
-                                                Color(red: 0.78, green: 0.80, blue: 0.85).opacity(0.25),
-                                                Color.clear,
-                                                Color.white.opacity(0.15)
-                                            ],
-                                            startPoint: .top,
-                                            endPoint: .bottom
-                                        )
-                                    )
-                            )
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .strokeBorder(
-                                        LinearGradient(
-                                            colors: [.white.opacity(0.65), .white.opacity(0.25), .white.opacity(0.45)],
-                                            startPoint: .top,
-                                            endPoint: .bottom
-                                        ),
-                                        lineWidth: 0.5
-                                    )
-                            )
-                            // Surface highlight band
-                            .overlay(alignment: .top) {
-                                Rectangle()
-                                    .fill(
-                                        LinearGradient(
-                                            colors: [.white.opacity(0.50), .white.opacity(0.12), .clear],
-                                            startPoint: .top,
-                                            endPoint: .bottom
-                                        )
-                                    )
-                                    .frame(height: 14)
-                                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                            }
-                            .shadow(color: Color(hex: "#10b981").opacity(0.08), radius: 4, y: 2)
-                    }
-
                     GeometryReader { geo in
                         let w = geo.size.width
                         let h = geo.size.height
@@ -150,9 +105,8 @@ struct WeeklyTrendWidget: View {
                                 .position(x: x, y: y)
                         }
                     }
-                    .padding(isDark ? 0 : 8)
                 }
-                .frame(height: isDark ? 80 : 96)
+                .frame(height: 80)
                 .padding(.top, 4)
 
                 // Legend
