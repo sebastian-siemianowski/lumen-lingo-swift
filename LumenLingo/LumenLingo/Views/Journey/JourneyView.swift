@@ -343,46 +343,51 @@ struct JourneyView: View {
     // MARK: - Header
 
     private var journeyHeader: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 10) {
+            // Icon in tinted glass circle
             Image(systemName: "chart.line.uptrend.xyaxis")
-                .font(.system(size: 32))
+                .font(.system(size: 30, weight: .medium))
                 .foregroundStyle(
-                    isDark
-                        ? AnyShapeStyle(LinearGradient(
-                            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        ))
-                        : AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
+                    LinearGradient(
+                        colors: isDark
+                            ? [Color(hex: "#667eea"), Color(hex: "#764ba2")]
+                            : [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
                 )
-                // Light mode: tinted icon circle
-                .padding(isDark ? 0 : 14)
+                .padding(14)
                 .background {
-                    if !isDark {
-                        Circle()
-                            .fill(Color(hex: "0EA5E9").opacity(0.08))
-                        Circle()
-                            .strokeBorder(
-                                LinearGradient(
-                                    colors: [Color.white.opacity(0.60), Color.white.opacity(0.25)],
-                                    startPoint: .top,
-                                    endPoint: .bottom
-                                ),
-                                lineWidth: 0.5
-                            )
-                    }
+                    Circle()
+                        .fill(
+                            isDark
+                                ? Color(hex: "#667eea").opacity(0.10)
+                                : Color(hex: "#667eea").opacity(0.07)
+                        )
+                    Circle()
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    .white.opacity(isDark ? 0.15 : 0.55),
+                                    .white.opacity(isDark ? 0.05 : 0.20)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
                 }
 
             Text(L.yourLearningJourney)
                 .font(.system(size: 18, weight: .bold))
                 .foregroundStyle(
-                    isDark
-                        ? AnyShapeStyle(LinearGradient(
-                            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        ))
-                        : AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
+                    LinearGradient(
+                        colors: isDark
+                            ? [Color(hex: "#667eea"), Color(hex: "#764ba2")]
+                            : [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
                 )
 
             Text(L.trackYourProgress)
@@ -390,42 +395,15 @@ struct JourneyView: View {
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 .multilineTextAlignment(.center)
         }
-        .padding(.vertical, isDark ? 0 : 16)
-        .padding(.horizontal, isDark ? 0 : 20)
-        .frame(maxWidth: isDark ? nil : .infinity)
-        .background {
-            if !isDark {
-                ZStack {
-                    // Frost material base
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(.thinMaterial)
-                    // Clean white wash
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.white.opacity(0.25))
-                }
-                // Glass border with diagonal luminance
-                .overlay(
-                    RoundedRectangle(cornerRadius: 20)
-                        .strokeBorder(
-                            LinearGradient(
-                                colors: [
-                                    Color.white.opacity(0.70),
-                                    Color.white.opacity(0.40),
-                                    Color.white.opacity(0.60)
-                                ],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 0.75
-                        )
-                )
-                .shadow(
-                    color: Color(red: 0.55, green: 0.50, blue: 0.68).opacity(0.10),
-                    radius: 6,
-                    y: 3
-                )
-            }
-        }
+        .padding(.vertical, 16)
+        .padding(.horizontal, 20)
+        .frame(maxWidth: .infinity)
+        .background(
+            GlassCardBackground(
+                cornerRadius: 24,
+                tintColor: Color(hex: "#667eea")
+            )
+        )
         .padding(.top, 10)
     }
 
