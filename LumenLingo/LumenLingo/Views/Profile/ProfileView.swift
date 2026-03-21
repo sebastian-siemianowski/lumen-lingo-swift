@@ -557,8 +557,8 @@ struct ProfileView: View {
 
                     Spacer()
 
-                    // Streak progress dots — larger with glow
-                    HStack(spacing: 4) {
+                    // Streak progress dots
+                    HStack(spacing: 5) {
                         ForEach(0..<7, id: \.self) { i in
                             let filled = i < (streakCount % 7 == 0 ? 7 : streakCount % 7)
                             Circle()
@@ -569,15 +569,27 @@ struct ProfileView: View {
                                                 colors: [Color(hex: "FF8C00"), Color(hex: "FFD700")],
                                                 startPoint: .bottom, endPoint: .top
                                               ))
-                                            : AnyShapeStyle(LinearGradient.caribbeanGradientWarm))
-                                        : AnyShapeStyle(isDark ? Color.white.opacity(0.1) : Color.caribbeanRecessed)
+                                            : AnyShapeStyle(LinearGradient(
+                                                colors: [Color(hex: "F97316"), Color(hex: "FBBF24")],
+                                                startPoint: .bottom, endPoint: .top
+                                              )))
+                                        : AnyShapeStyle(isDark ? Color.white.opacity(0.2) : Color.caribbeanPlum.opacity(0.2))
                                 )
-                                .frame(width: 6, height: 6)
+                                .frame(width: 8, height: 8)
+                                .overlay(
+                                    Circle()
+                                        .strokeBorder(
+                                            filled
+                                                ? (isDark ? Color.orange.opacity(0.6) : Color(hex: "F97316").opacity(0.5))
+                                                : (isDark ? Color.white.opacity(0.12) : Color.caribbeanPlum.opacity(0.12)),
+                                            lineWidth: 0.75
+                                        )
+                                )
                                 .shadow(
                                     color: filled
-                                        ? (isDark ? Color.orange.opacity(0.5) : Color(hex: "FB923C").opacity(0.3))
+                                        ? (isDark ? Color.orange.opacity(0.6) : Color(hex: "F97316").opacity(0.4))
                                         : .clear,
-                                    radius: 3
+                                    radius: 4
                                 )
                         }
                     }
