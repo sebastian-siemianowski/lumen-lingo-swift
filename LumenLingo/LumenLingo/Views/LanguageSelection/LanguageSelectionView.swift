@@ -730,8 +730,8 @@ struct LanguageSelectionView: View {
                 if hasChanged {
                     Text(L.startYourAdventure)
                         .font(.headline.weight(.bold))
-                        .foregroundStyle(isDark ? Color(hex: "#F5F0E8") : Color(hex: "#1C1917"))
-                        .shadow(color: isDark ? Color(hex: "#FF9FF3").opacity(0.3) : .clear, radius: 4)
+                        .foregroundStyle(.white)
+                        .shadow(color: isDark ? Color(hex: "#FF9FF3").opacity(0.3) : Color.caribbeanOcean.opacity(0.4), radius: 6)
                         .transition(.opacity)
                 } else {
                     Text(L.keepLearning)

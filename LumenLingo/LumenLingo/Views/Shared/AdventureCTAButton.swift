@@ -79,12 +79,11 @@ struct AdventureCTAButton<Label: View>: View {
                             colors: isActive
                                 ? (isDark
                                     ? [Color(hex: "#4F46E5"), Color(hex: "#7C3AED")]
-                                    : [Color(red: 220/255, green: 131/255, blue: 217/255),
-                                       Color(red: 244/255, green: 114/255, blue: 182/255)])
+                                    : [Color(hex: "#0EA5E9"), Color(hex: "#06B6D4")])
                                 : (isDark
                                     ? [Color(hex: "#2D1B69"), Color(hex: "#1B2A5C")]
-                                    : [Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.55),
-                                       Color(red: 220/255, green: 131/255, blue: 217/255).opacity(0.55)]),
+                                    : [Color(hex: "#0EA5E9").opacity(0.55),
+                                       Color(hex: "#06B6D4").opacity(0.55)]),
                             startPoint: .leading,
                             endPoint: .trailing
                         )
@@ -129,8 +128,8 @@ struct AdventureCTAButton<Label: View>: View {
             }
             .shadow(
                 color: isActive
-                    ? (isDark ? Color(hex: "#4F46E5") : Color(red: 244/255, green: 114/255, blue: 182/255)).opacity(0.4)
-                    : (isDark ? Color.indigo.opacity(0.15) : Color(red: 168/255, green: 85/255, blue: 247/255).opacity(0.15)),
+                    ? (isDark ? Color(hex: "#4F46E5") : Color(hex: "#0EA5E9")).opacity(0.4)
+                    : (isDark ? Color.indigo.opacity(0.15) : Color(hex: "#0EA5E9").opacity(0.15)),
                 radius: isActive ? 20 : 0,
                 y: isActive ? 8 : 0
             )
@@ -151,7 +150,7 @@ struct AdventureCTADefaultLabel: View {
 
     /// Stable, readable text color: warm ivory on dark, deep charcoal on light.
     private var textColor: Color {
-        isDark ? Color(hex: "#F5F0E8") : Color(hex: "#1C1917")
+        isDark ? Color(hex: "#F5F0E8") : .white
     }
 
     var body: some View {
