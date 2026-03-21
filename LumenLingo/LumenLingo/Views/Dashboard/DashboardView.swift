@@ -21,6 +21,8 @@ struct DashboardView: View {
     @Binding var hideTabBar: Bool
     @Binding var navigationPath: NavigationPath
 
+    @Environment(SessionEngine.self) private var sessionEngine
+
     @State private var isHeaderCollapsed = false
     @State private var showLanguageSheet = false
     @State private var showMembershipSheet = false
@@ -30,6 +32,7 @@ struct DashboardView: View {
     @State private var crossLanguageRecord: GameProgressRecord?
     @State private var statsAppeared = false
     @State private var scrollOffset: CGFloat = 0
+    @AppStorage("dashboard_exploreMore_collapsed") private var exploreMoreCollapsed = true
 
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
@@ -157,8 +160,15 @@ struct DashboardView: View {
                     dashboardDivider
                         .padding(.horizontal, 4)
 
-                    // Games Section
-                    gamesSection
+                    // Smart Session Hero Card
+                    todaySessionCardSection
+
+                    // Divider
+                    dashboardDivider
+                        .padding(.horizontal, 4)
+
+                    // Explore More (collapsible game cards)
+                    exploreMoreSection
 
                     // Divider
                     dashboardDivider
@@ -795,7 +805,153 @@ struct DashboardView: View {
         }
     }
 
-    // MARK: - Games Section
+    // MARK: - Today Session Card Section
+
+    private var todaySessionCardSection: some View {
+        TodaySessionCard(
+            recommendation: sessionEngine.currentRecommendation,
+            roundsCompleted: sessionEngine.roundsCompletedToday,
+            dailyGoal: sessionEngine.dailyGoal,
+            dailyProgress: sessionEngine.dailyProgress,
+            isDailyGoalComplete: sessionEngine.isDailyGoalComplete,
+            isPracticeExpired: isPracticeExpired,
+            resetTime: practiceResetTime,
+            onStart: {
+                guard let rec = sessionEngine.currentRecommendation else { return }
+                sessionEngine.recordRoundCompleted()
+                let route: AppRoute = switch rec.gameType {
+                case .flashCards: .flashcardsGame(categoryId: rec.categoryKey)
+                case .grammar: .grammarGame(categoryId: rec.categoryKey)
+                case .wordBuilder: .wordBuilderGame(categoryId: rec.categoryKey)
+                }
+                navigationPath.append(route)
+            },
+            onExpiredTap: { showExpiredSheet = true }
+        )
+        .task(id: "\(currentSourceRaw)_\(currentTargetRaw)_\(recentProgress.count)") {
+            let progressService = ProgressService(modelContext: modelContext)
+            await sessionEngine.refreshRecommendation(
+                source: currentSourceRaw,
+                target: currentTargetRaw,
+                progressService: progressService,
+                tierManager: tierManager
+            )
+        }
+    }
+
+    // MARK: - Explore More Section (Collapsible)
+
+    private var exploreMoreSection: some View {
+        VStack(spacing: 16) {
+            // Section header with toggle
+            Button {
+                withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
+                    exploreMoreCollapsed.toggle()
+                }
+            } label: {
+                HStack(spacing: 14) {
+                    AnimatedSectionIcon(
+                        isDark: isDark,
+                        systemName: "square.grid.2x2.fill",
+                        iconSize: 20,
+                        containerSize: 48,
+                        containerRadius: 14,
+                        darkGradient: [Color(hex: "#6366f1"), Color(hex: "#8b5cf6"), Color(hex: "#a78bfa")],
+                        lightGradient: nil,
+                        glowColor1: Color(hex: "#8b5cf6"),
+                        glowColor2: Color(hex: "#6366f1"),
+                        glowSize1: 56,
+                        glowSize2: 48,
+                        shadowColor: isDark ? Color(hex: "#8b5cf6") : Color.caribbeanOcean,
+                        shadowBaseOpacity: isDark ? 0.3 : 0.2
+                    )
+
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("Explore More")
+                            .font(.system(size: 19, weight: .bold))
+                            .tracking(isDark ? 0 : 0.2)
+                            .foregroundStyle(
+                                isDark
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: [Color(hex: "#6366f1"), Color(hex: "#a78bfa")],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    ))
+                                    : AnyShapeStyle(Color.caribbeanInk)
+                            )
+
+                        Text("Pick a specific game to play")
+                            .font(.system(size: 13))
+                            .foregroundStyle(isDark ? .white.opacity(0.6) : Color.caribbeanPlum)
+                    }
+
+                    Spacer()
+
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 13, weight: .bold))
+                        .foregroundStyle(isDark ? .white.opacity(0.3) : Color.caribbeanPlum.opacity(0.4))
+                        .rotationEffect(.degrees(exploreMoreCollapsed ? 0 : 90))
+                        .animation(.spring(response: 0.3, dampingFraction: 0.8), value: exploreMoreCollapsed)
+                }
+                .padding(.bottom, 4)
+            }
+            .buttonStyle(.plain)
+
+            if !exploreMoreCollapsed {
+                gameCardsContent
+                    .transition(.opacity.combined(with: .move(edge: .top)))
+            }
+        }
+    }
+
+    /// The three game cards, extracted so they can be shown inside the collapsible section.
+    private var gameCardsContent: some View {
+        VStack(spacing: 16) {
+            DashboardGameCard(
+                title: "Flash Cards",
+                description: "Master new vocabulary with interactive flip cards and spaced repetition",
+                icon: "rectangle.on.rectangle.angled",
+                cta: "Master New Words",
+                colorScheme: .flashCards,
+                route: .flashcardsCategories,
+                timeBadge: gameTimeBadge,
+                isExpired: isPracticeExpired,
+                resetTime: practiceResetTime,
+                onExpiredTap: { showExpiredSheet = true },
+                navigationPath: $navigationPath
+            )
+
+            DashboardGameCard(
+                title: "Grammar Challenge",
+                description: "Test your knowledge with challenging questions and grammar rules",
+                icon: "text.book.closed.fill",
+                cta: "Test Your Skills",
+                colorScheme: .grammar,
+                route: .grammarCategories,
+                timeBadge: gameTimeBadge,
+                isExpired: isPracticeExpired,
+                resetTime: practiceResetTime,
+                onExpiredTap: { showExpiredSheet = true },
+                navigationPath: $navigationPath
+            )
+
+            DashboardGameCard(
+                title: "Word Constructor",
+                description: "Construct words letter by letter from scrambled clues and hints",
+                icon: "textformat.abc",
+                cta: "Craft & Discover",
+                colorScheme: .wordBuilder,
+                route: .wordBuilderCategories,
+                timeBadge: gameTimeBadge,
+                isExpired: isPracticeExpired,
+                resetTime: practiceResetTime,
+                onExpiredTap: { showExpiredSheet = true },
+                navigationPath: $navigationPath
+            )
+        }
+    }
+
+    // MARK: - Games Section (Legacy — replaced by exploreMoreSection)
 
     private var gamesSection: some View {
         VStack(spacing: 16) {

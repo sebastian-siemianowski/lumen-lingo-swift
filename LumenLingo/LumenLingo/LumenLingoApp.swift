@@ -11,6 +11,7 @@ struct LumenLingoApp: App {
     @State private var practiceTimeTracker = PracticeTimeTracker()
     @State private var networkMonitor = NetworkMonitor()
     @State private var upgradePromptManager = UpgradePromptManager()
+    @State private var sessionEngine = SessionEngine()
 
     init() {
         #if DEBUG
@@ -51,6 +52,7 @@ struct LumenLingoApp: App {
             .environment(practiceTimeTracker)
             .environment(networkMonitor)
             .environment(upgradePromptManager)
+            .environment(sessionEngine)
             .environment(\.localization, localizationManager)
             .preferredColorScheme(themeManager.colorScheme)
         }

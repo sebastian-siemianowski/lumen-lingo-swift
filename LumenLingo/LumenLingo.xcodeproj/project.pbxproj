@@ -125,9 +125,11 @@
 		86AE2EA2C07C7B04D3C1AF95 /* flashcards_ukrainian_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = A55C2F133F96E1EF1211904B /* flashcards_ukrainian_polish.json */; };
 		89075F39060121315E6E3CEB /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D0AFE49B5144D47E971846 /* CategoriesView.swift */; };
 		8A42BEFAEDEA9418A806EFAD /* PracticeTimeRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7154BB85000446A6F0B0B28 /* PracticeTimeRing.swift */; };
+		8B9D30E04526B62612E7F623 /* SessionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FCD1AFF7B3A31B781C8AA1 /* SessionEngine.swift */; };
 		8E550F02E987B6C8C684D34D /* Venice-Canal-Morning.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5CE6659F8979C9D0010BE085 /* Venice-Canal-Morning.m4a */; };
 		8EDBE1142ECA02BB7746D49D /* SettingsSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5378AC5EFC25C439C4A702 /* SettingsSliderView.swift */; };
 		8EE163C95C8B895DCFC5E71F /* Rainy-Window.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B95DDDEEBA8E45BFB1B39434 /* Rainy-Window.m4a */; };
+		8F76EC816AD4F23ED464A483 /* TodaySessionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04721D2034939B56D31CCBAB /* TodaySessionCard.swift */; };
 		8FA5A1C308600D44BCD5CE50 /* MyPlanCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000531057A8B8405A32AD610 /* MyPlanCard.swift */; };
 		8FD42E0FBEF65F2708A0E743 /* wordbuilder_ukrainian_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4C3A2FAD3E75B5E387A20 /* wordbuilder_ukrainian_polish.json */; };
 		8FEBFEC7B5CC7FC50DC881CB /* SoundControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B566D3C1FF38C5EE6E7F5DE0 /* SoundControlsView.swift */; };
@@ -258,6 +260,7 @@
 		000531057A8B8405A32AD610 /* MyPlanCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlanCard.swift; sourceTree = "<group>"; };
 		00238DB4631FF527FE002203 /* JourneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyView.swift; sourceTree = "<group>"; };
 		00AC10073EF860BE9CC25D85 /* SoundSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSettingsView.swift; sourceTree = "<group>"; };
+		04721D2034939B56D31CCBAB /* TodaySessionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySessionCard.swift; sourceTree = "<group>"; };
 		053CFBAF57D151555C331BB2 /* flashcards_english_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_german.json; sourceTree = "<group>"; };
 		05F3AD887EF40F084F88A511 /* TierHapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierHapticsService.swift; sourceTree = "<group>"; };
 		080E5F13C59DFA837F0D324B /* QAPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAPanelView.swift; sourceTree = "<group>"; };
@@ -469,6 +472,7 @@
 		DE743C6D3380728D60B135A6 /* WordBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBuilderView.swift; sourceTree = "<group>"; };
 		DF80C185D1108772AD43DE80 /* MilestonePredictionWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestonePredictionWidget.swift; sourceTree = "<group>"; };
 		DFFCAB9270E7EDFE53A120B2 /* TrialConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialConfirmationView.swift; sourceTree = "<group>"; };
+		E3FCD1AFF7B3A31B781C8AA1 /* SessionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionEngine.swift; sourceTree = "<group>"; };
 		E4AC7C7FA534F4ABAF34D181 /* BreathingOrbsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingOrbsView.swift; sourceTree = "<group>"; };
 		E56328BCC55D6C38A861C0F9 /* grammar_polish_ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_ukrainian.json; sourceTree = "<group>"; };
 		E5C5362133AE750ACDF5D82D /* Desert-Night-Sky.m4a */ = {isa = PBXFileReference; path = "Desert-Night-Sky.m4a"; sourceTree = "<group>"; };
@@ -783,6 +787,7 @@
 				D7154BB85000446A6F0B0B28 /* PracticeTimeRing.swift */,
 				C05E56A1813CCC4B9C21576A /* PremiumFeatureCarousel.swift */,
 				A6FABAF4877C72BE148A277B /* SoundscapeNowPlaying.swift */,
+				04721D2034939B56D31CCBAB /* TodaySessionCard.swift */,
 				786D7C1C1A49A7020F5541B2 /* TrialCountdownBanner.swift */,
 			);
 			path = Dashboard;
@@ -936,6 +941,7 @@
 				20DA8FA91B2C310EC779DC40 /* PerformanceMonitor.swift */,
 				BCFC3AE7BAAD996B05B2D157 /* PracticeTimeTracker.swift */,
 				310DB5BD274A6F504FBCFFC1 /* ProgressService.swift */,
+				E3FCD1AFF7B3A31B781C8AA1 /* SessionEngine.swift */,
 				33F6AFAACA05ACDF737328C2 /* ShareableCardRenderer.swift */,
 				4DFF01D34AAF3901078DA05B /* SyncService.swift */,
 				12F5A0006F1BE35C07723FF8 /* ThemeManager.swift */,
@@ -1426,6 +1432,7 @@
 				98C810678A94878277E25C89 /* QuantumFlowSettingsView.swift in Sources */,
 				3ADCCD186B86AF4E7ED8230B /* QuantumFlowView.swift in Sources */,
 				DA7EACF50CDA6F892FAE9972 /* SchemeCardView.swift in Sources */,
+				8B9D30E04526B62612E7F623 /* SessionEngine.swift in Sources */,
 				8EDBE1142ECA02BB7746D49D /* SettingsSliderView.swift in Sources */,
 				1925497ACD434C20F1F46516 /* ShareableCardRenderer.swift in Sources */,
 				C0996CF3C7F52457D0FC851C /* SignOutView.swift in Sources */,
@@ -1452,6 +1459,7 @@
 				9F4FB170007FA4D6C074FB23 /* TierManager.swift in Sources */,
 				1ABB6C7745E790C07ADF389F /* TierOnboardingFlow.swift in Sources */,
 				F221D575468FBB991514F654 /* TierUpgradeCelebrationView.swift in Sources */,
+				8F76EC816AD4F23ED464A483 /* TodaySessionCard.swift in Sources */,
 				BCDD18444DE1C80FEF877D9A /* TranslationService.swift in Sources */,
 				135AE1BCF8F739B94DE65461 /* TrialConfirmationView.swift in Sources */,
 				E6EF650284231578942E29AD /* TrialCountdownBanner.swift in Sources */,
