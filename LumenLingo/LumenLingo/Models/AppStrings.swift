@@ -9,6 +9,7 @@ struct AppStrings {
     let tabHome: String
     let tabStats: String
     let tabPremium: String
+    let tabSettings: String
     let tabProfile: String
 
     // MARK: - Dashboard

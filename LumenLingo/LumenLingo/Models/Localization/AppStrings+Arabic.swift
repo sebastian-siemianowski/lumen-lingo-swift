@@ -6,6 +6,7 @@ extension AppStrings {
         tabHome: "الرئيسية",
         tabStats: "الإحصائيات",
         tabPremium: "المميّز",
+        tabSettings: "الإعدادات",
         tabProfile: "الملف الشخصي",
 
         // Dashboard

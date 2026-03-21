@@ -240,6 +240,7 @@
 		F5439D82BFE2910F8A446299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D84080B3E5FBF4012D412B /* ContentView.swift */; };
 		F5B050BBD9675556C37EF44F /* grammar_french_english.json in Resources */ = {isa = PBXBuildFile; fileRef = EE209D9EF404AA5D75D6D840 /* grammar_french_english.json */; };
 		F6F7A30CD0594D8726E59FA2 /* MetalQuantumFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D714A552DAA2C0B4C1F0B8 /* MetalQuantumFlowView.swift */; };
+		F7A415EA51E56EA8A80006E4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA37A22083A72444CE3F5374 /* SettingsView.swift */; };
 		F9CEA1D33EF3254085E2BE83 /* AccuracyHeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B39BE55826C6132EE40D6 /* AccuracyHeatmapView.swift */; };
 		FC1203F47C411DF45D54CA27 /* wordbuilder_english_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 2516A4527A7F21A7FD49DA48 /* wordbuilder_english_polish.json */; };
 		FED1EF451B08FBEF1081AC4D /* grammar_polish_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 1529F75859B9520B053C7083 /* grammar_polish_german.json */; };
@@ -445,6 +446,7 @@
 		B84D8F4C0D9010A47DE7222A /* SoundscapeUpgradeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapeUpgradeSheet.swift; sourceTree = "<group>"; };
 		B95DDDEEBA8E45BFB1B39434 /* Rainy-Window.m4a */ = {isa = PBXFileReference; path = "Rainy-Window.m4a"; sourceTree = "<group>"; };
 		B976B6034B6375FEF0CFE513 /* AppStrings+Ukrainian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Ukrainian.swift"; sourceTree = "<group>"; };
+		BA37A22083A72444CE3F5374 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BB2840ADB0364513E767513F /* GameHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHeader.swift; sourceTree = "<group>"; };
 		BCFC3AE7BAAD996B05B2D157 /* PracticeTimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimeTracker.swift; sourceTree = "<group>"; };
 		C05E56A1813CCC4B9C21576A /* PremiumFeatureCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumFeatureCarousel.swift; sourceTree = "<group>"; };
@@ -862,9 +864,18 @@
 				F869F08A3475BC68AA02A06F /* LanguageSelection */,
 				42913C29432EC47AF7259020 /* Membership */,
 				DF6DC824DA54ACE428184342 /* Profile */,
+				7776D3562E12D4607E0C963C /* Settings */,
 				3337E7D7B059275F1924CB29 /* Shared */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7776D3562E12D4607E0C963C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BA37A22083A72444CE3F5374 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		7AD6AE0C9693137EE2F96844 /* polish_french */ = {
@@ -1438,6 +1449,7 @@
 				DA7EACF50CDA6F892FAE9972 /* SchemeCardView.swift in Sources */,
 				8B9D30E04526B62612E7F623 /* SessionEngine.swift in Sources */,
 				8EDBE1142ECA02BB7746D49D /* SettingsSliderView.swift in Sources */,
+				F7A415EA51E56EA8A80006E4 /* SettingsView.swift in Sources */,
 				1925497ACD434C20F1F46516 /* ShareableCardRenderer.swift in Sources */,
 				C0996CF3C7F52457D0FC851C /* SignOutView.swift in Sources */,
 				078F0B02324FE9D3A556A23A /* SolarAuroraPreset.metal in Sources */,

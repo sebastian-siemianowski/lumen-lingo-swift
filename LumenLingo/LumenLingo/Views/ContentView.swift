@@ -92,6 +92,16 @@ struct ContentView: View {
                 }
                 .tag(AppTab.membership)
 
+                // MARK: Settings Tab
+                NavigationStack {
+                    SettingsView()
+                }
+                .environment(\.backgroundActive, selectedTab == .settings)
+                .tabItem {
+                    Label(L.tabSettings, systemImage: "gearshape.fill")
+                }
+                .tag(AppTab.settings)
+
                 // MARK: Profile Tab
                 NavigationStack {
                     ProfileView()
@@ -494,6 +504,7 @@ enum AppTab: Hashable {
     case dashboard
     case journey
     case membership
+    case settings
     case profile
 }
 

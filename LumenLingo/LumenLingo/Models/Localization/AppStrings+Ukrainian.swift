@@ -6,6 +6,7 @@ extension AppStrings {
         tabHome: "Головна",
         tabStats: "Статистика",
         tabPremium: "Преміум",
+        tabSettings: "Налаштування",
         tabProfile: "Профіль",
 
         // Dashboard

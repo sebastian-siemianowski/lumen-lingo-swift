@@ -6,6 +6,7 @@ extension AppStrings {
         tabHome: "首页",
         tabStats: "统计",
         tabPremium: "高级版",
+        tabSettings: "设置",
         tabProfile: "个人资料",
 
         // Dashboard

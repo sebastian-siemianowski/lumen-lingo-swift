@@ -6,6 +6,7 @@ extension AppStrings {
         tabHome: "Startseite",
         tabStats: "Statistiken",
         tabPremium: "Premium",
+        tabSettings: "Einstellungen",
         tabProfile: "Profil",
 
         // Dashboard
