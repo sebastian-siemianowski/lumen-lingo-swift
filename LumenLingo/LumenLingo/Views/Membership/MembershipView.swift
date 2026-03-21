@@ -44,11 +44,17 @@ struct MembershipView: View {
                         endPoint: .bottom
                     )
                 } else {
-                    LinearGradient(
-                        colors: [Color(hex: "#E8D5F5"), Color(hex: "#F5D0E0"), Color(hex: "#FCE4C8")],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
+                    if let img = UIImage(named: "LightModeBackground") {
+                        Image(uiImage: img)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    } else {
+                        LinearGradient(
+                            colors: [Color(hex: "#E8D5F5"), Color(hex: "#F5D0E0"), Color(hex: "#FCE4C8")],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    }
                 }
             }
             .ignoresSafeArea()

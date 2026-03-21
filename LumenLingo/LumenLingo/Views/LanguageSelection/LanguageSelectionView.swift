@@ -296,17 +296,24 @@ struct LanguageSelectionView: View {
             if isDark {
                 Color(hex: "#09090F")
             } else {
-                // Caribbean sunset gradient — matches app-wide light-mode palette
-                LinearGradient(
-                    stops: [
-                        .init(color: Color(red: 196/255, green: 148/255, blue: 252/255), location: 0),
-                        .init(color: Color(red: 220/255, green: 131/255, blue: 217/255), location: 0.35),
-                        .init(color: Color(red: 244/255, green: 114/255, blue: 182/255), location: 0.6),
-                        .init(color: Color(red: 251/255, green: 146/255, blue: 60/255), location: 1.0)
-                    ],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
+                // Caribbean background image — matches main app LayoutBackgroundView
+                if let img = UIImage(named: "LightModeBackground") {
+                    Image(uiImage: img)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } else {
+                    // Fallback gradient if image is missing
+                    LinearGradient(
+                        stops: [
+                            .init(color: Color(red: 196/255, green: 148/255, blue: 252/255), location: 0),
+                            .init(color: Color(red: 220/255, green: 131/255, blue: 217/255), location: 0.35),
+                            .init(color: Color(red: 244/255, green: 114/255, blue: 182/255), location: 0.6),
+                            .init(color: Color(red: 251/255, green: 146/255, blue: 60/255), location: 1.0)
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                }
             }
 
             // Ambient orb — shifts subtly with breathing.
