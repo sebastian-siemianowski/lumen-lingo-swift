@@ -40,7 +40,6 @@ struct ProfileView: View {
 
     // Entry animation state
     @State private var headerAppeared = false
-    @State private var isHeaderCollapsed = false
     @State private var isMyPlanCollapsed = false
     // Tab transition direction
     @State private var tabDirection: Int = 0
@@ -73,19 +72,21 @@ struct ProfileView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 0) {
-                // Profile header — collapsible
-                CollapsibleSection(
-                    title: displayName.isEmpty ? "Profile" : displayName,
-                    theme: .profile(tierGradientColors: tierManager.tierGradientColors),
-                    isCollapsed: $isHeaderCollapsed,
-                    badge: .text(tierManager.tierDisplayName)
-                ) {
-                    profileHeader
-                }
+                // Profile header (avatar, name, stats)
+                profileHeader
                     .padding(.horizontal, 16)
                     .padding(.top, 12)
                     .opacity(headerAppeared ? 1 : 0)
                     .offset(y: headerAppeared ? 0 : 20)
+
+                // Activity calendar — separate panel
+                GlassPanelWrapper {
+                    streakCalendar
+                }
+                    .padding(.horizontal, 16)
+                    .padding(.top, 14)
+                    .opacity(headerAppeared ? 1 : 0)
+                    .offset(y: headerAppeared ? 0 : 15)
 
                 // My Plan card — collapsible
                 CollapsibleSection(
@@ -346,9 +347,6 @@ struct ProfileView: View {
                 .padding(.top, 4)
                 .staggeredReveal(index: 2)
 
-                // Streak calendar (light mode: premium Caribbean style)
-                streakCalendar
-                    .staggeredReveal(index: 3)
             }
         }
     }
