@@ -18,6 +18,7 @@ struct CountryFlagView: View {
                 RoundedRectangle(cornerRadius: size * 0.15)
                     .strokeBorder(.white.opacity(0.2), lineWidth: 0.5)
             )
+            .drawingGroup(opaque: false)  // rasterize complex Path/GeometryReader to Metal texture
     }
 
     @ViewBuilder
@@ -364,8 +365,6 @@ struct LanguageSelectionView: View {
         .padding(.horizontal)
         .opacity(appeared ? 1 : 0)
         .offset(y: appeared ? 0 : 30)
-        .animation(.spring(response: 0.5, dampingFraction: 0.8), value: selectedSource)
-        .animation(.spring(response: 0.5, dampingFraction: 0.8), value: selectedTarget)
     }
 
     private var heroBackground: some View {
@@ -426,7 +425,7 @@ struct LanguageSelectionView: View {
         let isSelected = lang == selectedSource
 
         Button {
-            AudioService.shared.playLanguageHover()
+            Task.detached(priority: .utility) { await AudioService.shared.playLanguageHover() }
             withAnimation(.spring(response: 0.45, dampingFraction: 0.75)) {
                 selectedSource = lang
                 if selectedTarget == lang || !LanguagePair(source: lang, target: selectedTarget).hasContent {
@@ -583,7 +582,7 @@ struct LanguageSelectionView: View {
                                 HapticsService.shared.warning()
                                 lockedPairToShow = pair
                             } else {
-                                AudioService.shared.playLanguageHover()
+                                Task.detached(priority: .utility) { await AudioService.shared.playLanguageHover() }
                                 withAnimation(.spring(response: 0.35, dampingFraction: 0.72)) {
                                     selectedTarget = lang
                                 }
@@ -594,7 +593,6 @@ struct LanguageSelectionView: View {
                 .padding(.horizontal, 16)
             }
         }
-        .animation(.spring(response: 0.5, dampingFraction: 0.85), value: selectedSource)
         .opacity(appeared ? 1 : 0)
         .offset(y: appeared ? 0 : 15)
     }
@@ -678,8 +676,6 @@ struct LanguageSelectionView: View {
         .padding(.vertical, 10)
         .background(AdventureCTABarBackground())
         .animation(.spring(response: 0.45, dampingFraction: 0.8), value: hasChanged)
-        .animation(.spring(response: 0.45, dampingFraction: 0.8), value: selectedSource)
-        .animation(.spring(response: 0.45, dampingFraction: 0.8), value: selectedTarget)
     }
 
     // MARK: - Section Header
