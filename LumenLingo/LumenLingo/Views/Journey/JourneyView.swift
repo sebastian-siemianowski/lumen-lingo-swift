@@ -399,10 +399,16 @@ struct JourneyView: View {
         .padding(.horizontal, 20)
         .frame(maxWidth: .infinity)
         .background(
-            GlassCardBackground(
-                cornerRadius: 24,
-                tintColor: Color(hex: "#667eea")
-            )
+            ZStack {
+                GlassCardBackground(
+                    cornerRadius: 24,
+                    tintColor: Color(hex: "#667eea")
+                )
+                if !isDark {
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(Color.white.opacity(0.25))
+                }
+            }
         )
         .padding(.top, 10)
     }
