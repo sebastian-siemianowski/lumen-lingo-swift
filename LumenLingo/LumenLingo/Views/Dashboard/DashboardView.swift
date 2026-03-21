@@ -250,31 +250,130 @@ struct DashboardView: View {
             HapticsService.shared.buttonPress()
             showLanguageSheet = true
         } label: {
-            HStack(spacing: 8) {
+            HStack(spacing: 10) {
+                // Stacked flag icons in a glowing circle
                 ZStack {
-                    CountryFlagView(countryCode: currentTargetCode, size: 14)
-                        .offset(x: 4, y: 3)
+                    // Ambient glow behind flags
+                    Circle()
+                        .fill(
+                            RadialGradient(
+                                colors: isDark
+                                    ? [Color(hex: "#667eea").opacity(0.35), .clear]
+                                    : [Color.caribbeanOcean.opacity(0.20), .clear],
+                                center: .center,
+                                startRadius: 0,
+                                endRadius: 18
+                            )
+                        )
+                        .frame(width: 36, height: 36)
 
-                    CountryFlagView(countryCode: currentSourceCode, size: 14)
-                        .shadow(color: .black.opacity(0.15), radius: 1, y: 1)
+                    // Glass circle behind flags
+                    Circle()
+                        .fill(isDark ? .white.opacity(0.08) : .white.opacity(0.65))
+                        .frame(width: 30, height: 30)
+                        .overlay(
+                            Circle()
+                                .strokeBorder(
+                                    isDark
+                                        ? .white.opacity(0.15)
+                                        : Color.caribbeanOcean.opacity(0.20),
+                                    lineWidth: 0.5
+                                )
+                        )
+
+                    CountryFlagView(countryCode: currentTargetCode, size: 15)
+                        .offset(x: 5, y: 4)
+                        .opacity(0.85)
+
+                    CountryFlagView(countryCode: currentSourceCode, size: 15)
+                        .shadow(color: .black.opacity(0.2), radius: 2, y: 1)
                 }
-                .frame(width: 26, height: 20)
+                .frame(width: 30, height: 30)
 
+                // Language pair text
                 Text(currentLanguagePair)
-                    .font(.subheadline.weight(.medium))
-                    .foregroundStyle(isDark ? .white.opacity(0.9) : .primary)
+                    .font(.system(size: 14, weight: .semibold, design: .rounded))
+                    .foregroundStyle(
+                        isDark
+                            ? .white.opacity(0.92)
+                            : Color.caribbeanInk
+                    )
 
-                Image(systemName: "chevron.down")
-                    .font(.system(size: 10, weight: .semibold))
-                    .foregroundStyle(isDark ? .white.opacity(0.35) : .secondary)
+                Spacer(minLength: 0)
+
+                // Chevron in a small circle
+                ZStack {
+                    Circle()
+                        .fill(isDark ? .white.opacity(0.06) : Color.caribbeanOcean.opacity(0.08))
+                        .frame(width: 22, height: 22)
+
+                    Image(systemName: "chevron.down")
+                        .font(.system(size: 9, weight: .bold))
+                        .foregroundStyle(
+                            isDark
+                                ? .white.opacity(0.45)
+                                : Color.caribbeanOcean.opacity(0.65)
+                        )
+                }
             }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 7)
-            .background(
-                Capsule()
-                    .fill(.ultraThinMaterial)
-                    .shadow(color: .black.opacity(isDark ? 0.15 : 0.08), radius: 6, y: 2)
-            )
+            .padding(.leading, 8)
+            .padding(.trailing, 10)
+            .padding(.vertical, 8)
+            .background {
+                ZStack {
+                    // Base glass fill
+                    Capsule()
+                        .fill(isDark ? .ultraThinMaterial : .thinMaterial)
+
+                    // Light mode: warm white wash for Caribbean sea-glass look
+                    if !isDark {
+                        Capsule()
+                            .fill(Color.white.opacity(0.55))
+                    }
+
+                    // Subtle top-edge luminance band
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    .white.opacity(isDark ? 0.10 : 0.50),
+                                    .clear
+                                ],
+                                startPoint: .top,
+                                endPoint: .center
+                            )
+                        )
+
+                    // Inner highlight border
+                    Capsule()
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: isDark
+                                    ? [.white.opacity(0.18), .white.opacity(0.05)]
+                                    : [.white.opacity(0.80), Color.caribbeanOcean.opacity(0.10)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 0.5
+                        )
+
+                    // Outer accent border
+                    Capsule()
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: isDark
+                                    ? [Color(hex: "#667eea").opacity(0.20), Color(hex: "#764ba2").opacity(0.12)]
+                                    : [Color.caribbeanOcean.opacity(0.15), Color.caribbeanLagoon.opacity(0.08)],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            ),
+                            lineWidth: 1
+                        )
+                        .padding(0.5)
+                }
+            }
+            .shadow(color: isDark ? Color(hex: "#667eea").opacity(0.12) : Color.caribbeanOcean.opacity(0.10), radius: 8, y: 3)
+            .shadow(color: .black.opacity(isDark ? 0.10 : 0.04), radius: 3, y: 1)
         }
         .buttonStyle(LumenPressStyle(weight: .medium))
         .frame(maxWidth: .infinity, alignment: .leading)
