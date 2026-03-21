@@ -181,130 +181,121 @@ struct AccuracyHeatmapView: View {
     // MARK: - Story 3.1: Mastered Summary Card
 
     private var masteredSummaryCard: some View {
-        CollapsibleSection(
-            style: .standard,
-            colors: CollapsibleSectionTheme.masteredSummary.gradientColors,
-            isCollapsed: $isMasteredCollapsed,
-            cornerRadius: 14,
-            header: {
+        VStack(spacing: 0) {
+            // Header — tappable emerald/gold banner
+            Button {
+                withAnimation(.spring(response: 0.4, dampingFraction: 0.82)) {
+                    isMasteredCollapsed.toggle()
+                }
+            } label: {
                 HStack(spacing: 10) {
-                    Image(systemName: "trophy.fill")
-                        .font(.system(size: 20))
-                        .foregroundStyle(
-                            LinearGradient(colors: [Color(hex: "#f59e0b"), Color(hex: "#f97316")], startPoint: .top, endPoint: .bottom)
-                        )
+                    // Trophy with warm radial glow
+                    ZStack {
+                        Circle()
+                            .fill(
+                                RadialGradient(
+                                    colors: [
+                                        Color(hex: "#f59e0b").opacity(isDark ? 0.18 : 0.10),
+                                        Color(hex: "#10b981").opacity(isDark ? 0.08 : 0.04),
+                                        .clear
+                                    ],
+                                    center: .center,
+                                    startRadius: 0,
+                                    endRadius: 20
+                                )
+                            )
+                            .frame(width: 34, height: 34)
+
+                        Image(systemName: "trophy.fill")
+                            .font(.system(size: 16))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [Color(hex: "#f59e0b"), Color(hex: "#f97316")],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                            .shadow(color: Color(hex: "#f59e0b").opacity(isDark ? 0.30 : 0.18), radius: 4, y: 1)
+                    }
 
                     VStack(alignment: .leading, spacing: 2) {
                         if inProgressCategories.isEmpty {
-                            // ALL mastered – celebratory
                             Text("Perfect Mastery!")
                                 .font(.system(size: 14, weight: .bold, design: .rounded))
-                                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                                .foregroundStyle(
+                                    isDark ? AnyShapeStyle(Color.white) :
+                                    AnyShapeStyle(
+                                        LinearGradient(
+                                            colors: [Color(hex: "#065f46"), Color(hex: "#92400e")],
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        )
+                                    )
+                                )
                             Text("You've conquered every category.")
                                 .font(.system(size: 11))
                                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanMist)
                         } else {
                             Text("\(masteredCategories.count) " + (masteredCategories.count == 1 ? "Category" : "Categories") + " Mastered")
                                 .font(.system(size: 14, weight: .bold, design: .rounded))
-                                .foregroundStyle(isDark ? .white : .caribbeanInk)
+                                .foregroundStyle(
+                                    isDark ? AnyShapeStyle(Color.white) :
+                                    AnyShapeStyle(
+                                        LinearGradient(
+                                            colors: [Color(hex: "#065f46"), Color(hex: "#92400e")],
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        )
+                                    )
+                                )
                         }
                     }
 
                     Spacer()
 
-                    Image(systemName: "chevron.right")
-                        .font(.system(size: 10, weight: .bold))
-                        .foregroundStyle(
-                            isMasteredCollapsed
-                                ? AnyShapeStyle(LinearGradient(colors: [Color(hex: "#10b981"), Color(hex: "#f59e0b")], startPoint: .leading, endPoint: .trailing))
-                                : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
-                        )
-                        .rotationEffect(.degrees(isMasteredCollapsed ? 0 : 90))
-                        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: isMasteredCollapsed)
-                }
-                .padding(12)
-                .background {
-                    if isDark {
-                        RoundedRectangle(cornerRadius: 14)
-                            .fill(
-                                LinearGradient(
-                                    colors: [Color(hex: "#10b981").opacity(0.15), Color(hex: "#f59e0b").opacity(0.10)],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
+                    // Pill chevron
+                    ZStack {
+                        Capsule()
+                            .fill(isDark ? Color.white.opacity(0.06) : Color(hex: "#10b981").opacity(0.08))
+                            .frame(width: 26, height: 18)
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 9, weight: .bold))
+                            .foregroundStyle(
+                                isMasteredCollapsed
+                                    ? AnyShapeStyle(LinearGradient(colors: [Color(hex: "#10b981"), Color(hex: "#f59e0b")], startPoint: .leading, endPoint: .trailing))
+                                    : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
                             )
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 14)
-                                    .strokeBorder(
-                                        LinearGradient(
-                                            colors: [Color(hex: "#10b981").opacity(0.3), Color(hex: "#f59e0b").opacity(0.2)],
-                                            startPoint: .leading,
-                                            endPoint: .trailing
-                                        ),
-                                        lineWidth: 1
-                                    )
-                            )
-                    } else {
-                        // Frost trough — 3D mastered card
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 14)
-                                .fill(Color(red: 0.93, green: 0.94, blue: 0.96))
-                            RoundedRectangle(cornerRadius: 14)
-                                .fill(
-                                    LinearGradient(
-                                        colors: [Color(hex: "#10b981").opacity(0.12), Color(hex: "#f59e0b").opacity(0.08)],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
-                            RoundedRectangle(cornerRadius: 14)
-                                .fill(
-                                    LinearGradient(
-                                        colors: [
-                                            Color(red: 0.78, green: 0.80, blue: 0.85).opacity(0.25),
-                                            Color.clear,
-                                            Color.white.opacity(0.16)
-                                        ],
-                                        startPoint: .top,
-                                        endPoint: .bottom
-                                    )
-                                )
-                            RoundedRectangle(cornerRadius: 14)
-                                .strokeBorder(
-                                    LinearGradient(
-                                        colors: [
-                                            Color.white.opacity(0.68),
-                                            Color.white.opacity(0.28),
-                                            Color.white.opacity(0.48)
-                                        ],
-                                        startPoint: .top,
-                                        endPoint: .bottom
-                                    ),
-                                    lineWidth: 0.5
-                                )
-                            VStack {
-                                RoundedRectangle(cornerRadius: 14)
-                                    .fill(
-                                        LinearGradient(
-                                            colors: [.white.opacity(0.52), .white.opacity(0.14), .clear],
-                                            startPoint: .top,
-                                            endPoint: .center
-                                        )
-                                    )
-                                    .frame(height: 14)
-                                Spacer()
-                            }
-                        }
-                        .clipShape(RoundedRectangle(cornerRadius: 14))
-                        .shadow(color: Color(hex: "#10b981").opacity(0.10), radius: 5, y: 2)
+                            .rotationEffect(.degrees(isMasteredCollapsed ? 0 : 90))
                     }
                 }
-            },
-            content: {
+                .padding(.horizontal, 14)
+                .padding(.vertical, 11)
+            }
+            .buttonStyle(.plain)
+
+            // Expanded category rows
+            if !isMasteredCollapsed {
+                // Luminous emerald/gold divider
+                Rectangle()
+                    .fill(
+                        LinearGradient(
+                            colors: [
+                                .clear,
+                                Color(hex: "#10b981").opacity(isDark ? 0.20 : 0.18),
+                                Color(hex: "#f59e0b").opacity(isDark ? 0.15 : 0.12),
+                                Color(hex: "#10b981").opacity(isDark ? 0.20 : 0.18),
+                                .clear
+                            ],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(height: 0.5)
+                    .padding(.horizontal, 14)
+
                 VStack(spacing: 0) {
                     ForEach(Array(masteredCategories.enumerated()), id: \.element.id) { index, cat in
                         HStack(spacing: 10) {
-                            // Mini completion ring with checkmark
                             ZStack {
                                 Circle()
                                     .stroke(Color(hex: "#10b981").opacity(isDark ? 0.3 : 0.15), lineWidth: 2.5)
@@ -352,9 +343,89 @@ struct AccuracyHeatmapView: View {
                     }
                 }
                 .padding(.top, 4)
+                .padding(.bottom, 6)
+                .transition(.opacity.combined(with: .move(edge: .top)))
             }
-        )
-        .environment(\.collapsibleDepth, 0)
+        }
+        .background {
+            if isDark {
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(
+                        LinearGradient(
+                            colors: [Color(hex: "#10b981").opacity(0.15), Color(hex: "#f59e0b").opacity(0.10)],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 14)
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [Color(hex: "#10b981").opacity(0.3), Color(hex: "#f59e0b").opacity(0.2)],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                ),
+                                lineWidth: 1
+                            )
+                    )
+            } else {
+                // Frost trough — emerald-gold mastered card
+                ZStack {
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color(red: 0.93, green: 0.95, blue: 0.94))
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(
+                            LinearGradient(
+                                colors: [Color(hex: "#10b981").opacity(0.10), Color(hex: "#f59e0b").opacity(0.06)],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                    // Inset shadow band
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.78, green: 0.82, blue: 0.80).opacity(0.22),
+                                    Color.clear,
+                                    Color.white.opacity(0.14)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    // Crisp inner border
+                    RoundedRectangle(cornerRadius: 14)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    Color.white.opacity(0.65),
+                                    Color.white.opacity(0.25),
+                                    Color.white.opacity(0.45)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                    // Top frost highlight
+                    VStack {
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.50), .white.opacity(0.12), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                            .frame(height: 14)
+                        Spacer()
+                    }
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 14))
+                .shadow(color: Color(hex: "#10b981").opacity(0.10), radius: 5, y: 2)
+            }
+        }
         .padding(.bottom, inProgressCategories.isEmpty ? 0 : 4)
     }
 
