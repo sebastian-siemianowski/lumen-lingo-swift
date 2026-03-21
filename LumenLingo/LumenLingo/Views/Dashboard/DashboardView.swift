@@ -39,9 +39,8 @@ struct DashboardView: View {
     @State private var exploreContentHeight: CGFloat = 0
     @State private var exploreHasExpanded: Bool = false
     @State private var exploreContentOpacity: Double = 0
-    @State private var exploreUnfurlOffset: CGFloat = -14
-    @State private var exploreUnfurlScale: CGFloat = 0.95
-    @State private var exploreGlow: CGFloat = 0
+    @State private var exploreUnfurlOffset: CGFloat = -10
+    @State private var exploreUnfurlScale: CGFloat = 0.96
     @State private var exploreBreathe: CGFloat = 1.0
     @State private var exploreIconKick: CGFloat = 0
     @State private var exploreCard0Visible: Bool = false
@@ -871,76 +870,71 @@ struct DashboardView: View {
     private func toggleExploreMore() {
         let expanding = exploreMoreCollapsed
 
-        // Card breathe: puff out on expand, tuck on collapse
-        withAnimation(.spring(response: 0.25, dampingFraction: 0.6)) {
-            exploreBreathe = expanding ? 1.008 : 0.994
+        // Card breathe: gentle puff out then settle
+        withAnimation(.spring(response: 0.3, dampingFraction: 0.55)) {
+            exploreBreathe = expanding ? 1.01 : 0.993
         }
-        withAnimation(.spring(response: 0.5, dampingFraction: 0.7).delay(0.15)) {
+        withAnimation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.18)) {
             exploreBreathe = 1.0
         }
 
-        // Border glow pulse
-        withAnimation(.easeOut(duration: 0.15)) {
-            exploreGlow = 1.0
+        // Icon rotation flourish
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.45)) {
+            exploreIconKick = expanding ? 18 : -12
         }
-        withAnimation(.easeOut(duration: 0.55).delay(0.15)) {
-            exploreGlow = 0
-        }
-
-        // Icon rotation kick
-        withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
-            exploreIconKick = expanding ? 15 : -10
-        }
-        withAnimation(.spring(response: 0.4, dampingFraction: 0.65).delay(0.12)) {
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.15)) {
             exploreIconKick = 0
         }
 
-        // Main collapse toggle — use asymmetric springs
+        // Main collapse toggle — luxurious asymmetric springs
+        // Expand: bouncy, playful  |  Collapse: slow silk glide
         let spring: Animation = expanding
-            ? .spring(response: 0.45, dampingFraction: 0.68, blendDuration: 0.12)
-            : .spring(response: 0.32, dampingFraction: 0.88)
+            ? .spring(response: 0.5, dampingFraction: 0.72, blendDuration: 0.12)
+            : .spring(response: 0.65, dampingFraction: 0.82, blendDuration: 0.08)
 
         withAnimation(spring) {
             exploreMoreCollapsed.toggle()
         }
 
         if expanding {
-            // Content unfurl
+            // Content unfurl with a gentle lead-in
             exploreHasExpanded = true
-            withAnimation(spring.delay(0.03)) {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.72).delay(0.04)) {
                 exploreContentOpacity = 1
                 exploreUnfurlOffset = 0
                 exploreUnfurlScale = 1.0
             }
-            // Stagger the 3 game cards with cascading delays
-            withAnimation(.spring(response: 0.45, dampingFraction: 0.7).delay(0.06)) {
+            // Staggered card cascade — wide 80ms gaps for a waterfall feel
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.68).delay(0.06)) {
                 exploreCard0Visible = true
             }
-            withAnimation(.spring(response: 0.45, dampingFraction: 0.7).delay(0.12)) {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.68).delay(0.14)) {
                 exploreCard1Visible = true
             }
-            withAnimation(.spring(response: 0.45, dampingFraction: 0.7).delay(0.18)) {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.68).delay(0.22)) {
                 exploreCard2Visible = true
             }
         } else {
-            // Tuck away — reverse stagger (last card hides first)
-            withAnimation(.spring(response: 0.25, dampingFraction: 0.88)) {
+            // Silky collapse — reverse stagger, cards glide away softly
+            // Each card gets its own gentle curve with generous spacing
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.78)) {
                 exploreCard2Visible = false
             }
-            withAnimation(.spring(response: 0.25, dampingFraction: 0.88).delay(0.04)) {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.78).delay(0.08)) {
                 exploreCard1Visible = false
             }
-            withAnimation(.spring(response: 0.25, dampingFraction: 0.88).delay(0.08)) {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.78).delay(0.16)) {
                 exploreCard0Visible = false
             }
-            withAnimation(spring) {
+            // Content wraps up gently — slightly slower than the height spring
+            withAnimation(.spring(response: 0.6, dampingFraction: 0.82).delay(0.06)) {
                 exploreContentOpacity = 0
-                exploreUnfurlOffset = -14
-                exploreUnfurlScale = 0.95
+                exploreUnfurlOffset = -10
+                exploreUnfurlScale = 0.96
             }
-            // Remove content from hierarchy after animation settles
+            // Remove content from hierarchy well after animation settles
             Task {
-                try? await Task.sleep(for: .milliseconds(450))
+                try? await Task.sleep(for: .milliseconds(850))
                 guard exploreMoreCollapsed else { return }
                 exploreHasExpanded = false
                 exploreContentHeight = 0
@@ -974,7 +968,7 @@ struct DashboardView: View {
                     )
                     .rotationEffect(.degrees(exploreIconKick))
                     .scaleEffect(exploreMoreCollapsed ? 1.0 : 1.06)
-                    .animation(.spring(response: 0.4, dampingFraction: 0.6), value: exploreMoreCollapsed)
+                    .animation(.spring(response: 0.5, dampingFraction: 0.65), value: exploreMoreCollapsed)
 
                     VStack(alignment: .leading, spacing: 3) {
                         Text("Explore More")
@@ -1015,8 +1009,8 @@ struct DashboardView: View {
                                     : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
                             )
                             .rotationEffect(.degrees(exploreMoreCollapsed ? 0 : 90))
-                            .scaleEffect(exploreMoreCollapsed ? 1.0 : 1.15)
-                            .animation(.spring(response: 0.35, dampingFraction: 0.55), value: exploreMoreCollapsed)
+                            .scaleEffect(exploreMoreCollapsed ? 1.0 : 1.12)
+                            .animation(.spring(response: 0.5, dampingFraction: 0.6), value: exploreMoreCollapsed)
                     }
                 }
                 .padding(.bottom, 4)
@@ -1043,7 +1037,7 @@ struct DashboardView: View {
                                 if exploreContentHeight == 0 && !exploreMoreCollapsed {
                                     exploreContentHeight = height
                                 } else {
-                                    withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+                                    withAnimation(.spring(response: 0.5, dampingFraction: 0.82)) {
                                         exploreContentHeight = height
                                     }
                                 }
@@ -1087,8 +1081,8 @@ struct DashboardView: View {
                 navigationPath: $navigationPath
             )
             .opacity(exploreCard0Visible ? 1 : 0)
-            .offset(y: exploreCard0Visible ? 0 : 10)
-            .scaleEffect(exploreCard0Visible ? 1 : 0.96)
+            .offset(y: exploreCard0Visible ? 0 : 16)
+            .scaleEffect(exploreCard0Visible ? 1 : 0.94)
 
             DashboardGameCard(
                 title: "Grammar Challenge",
@@ -1104,8 +1098,8 @@ struct DashboardView: View {
                 navigationPath: $navigationPath
             )
             .opacity(exploreCard1Visible ? 1 : 0)
-            .offset(y: exploreCard1Visible ? 0 : 10)
-            .scaleEffect(exploreCard1Visible ? 1 : 0.96)
+            .offset(y: exploreCard1Visible ? 0 : 20)
+            .scaleEffect(exploreCard1Visible ? 1 : 0.93)
 
             DashboardGameCard(
                 title: "Word Constructor",
@@ -1121,8 +1115,8 @@ struct DashboardView: View {
                 navigationPath: $navigationPath
             )
             .opacity(exploreCard2Visible ? 1 : 0)
-            .offset(y: exploreCard2Visible ? 0 : 10)
-            .scaleEffect(exploreCard2Visible ? 1 : 0.96)
+            .offset(y: exploreCard2Visible ? 0 : 24)
+            .scaleEffect(exploreCard2Visible ? 1 : 0.92)
         }
         .padding(.top, 12)
     }
