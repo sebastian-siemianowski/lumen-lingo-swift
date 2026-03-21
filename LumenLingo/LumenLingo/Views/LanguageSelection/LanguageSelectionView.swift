@@ -341,21 +341,36 @@ struct LanguageSelectionView: View {
         VStack(spacing: 20) {
             // Flags with glowing orb connector
             ZStack {
-                // Glow trail between flags
-                Capsule()
-                    .fill(
-                        LinearGradient(
-                            colors: [
-                                .indigo.opacity(isDark ? 0.2 : 0.1),
-                                .purple.opacity(isDark ? 0.15 : 0.08),
-                                .indigo.opacity(isDark ? 0.2 : 0.1)
-                            ],
-                            startPoint: .leading,
-                            endPoint: .trailing
+                // Animated energy beam — light flows between languages
+                ZStack {
+                    // Persistent soft glow track
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: isDark
+                                    ? [.indigo.opacity(0.06), .purple.opacity(0.1), .indigo.opacity(0.06)]
+                                    : [Color(hex: "#0EA5E9").opacity(0.08), Color(hex: "#A78BFA").opacity(0.12), Color(hex: "#F472B6").opacity(0.08)],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
                         )
-                    )
-                    .frame(width: 140, height: 4)
-                    .blur(radius: 6)
+                        .frame(width: 140, height: 6)
+
+                    // Scanning bright pulse that flows source → target
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                stops: [
+                                    .init(color: .clear, location: max(0, orbPhase - 0.25)),
+                                    .init(color: (isDark ? Color.white.opacity(0.35) : Color(hex: "#22D3EE").opacity(0.5)), location: orbPhase),
+                                    .init(color: .clear, location: min(1, orbPhase + 0.25))
+                                ],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(width: 140, height: 3)
+                }
 
                 HStack(spacing: 0) {
                     heroFlag(selectedSource.countryCode)
@@ -449,6 +464,23 @@ struct LanguageSelectionView: View {
                 )
                 .frame(width: 80, height: 80)
 
+            // Breathing holographic halo ring
+            Circle()
+                .strokeBorder(
+                    AngularGradient(
+                        colors: isDark
+                            ? [.indigo.opacity(0.3), .purple.opacity(0.15), .indigo.opacity(0.3)]
+                            : [Color(hex: "#0EA5E9").opacity(0.25), Color(hex: "#A78BFA").opacity(0.2),
+                               Color(hex: "#F472B6").opacity(0.2), Color(hex: "#0EA5E9").opacity(0.25)],
+                        center: .center,
+                        angle: .degrees(orbPhase * 60)
+                    ),
+                    lineWidth: 1.5
+                )
+                .frame(width: 72, height: 72)
+                .scaleEffect(0.95 + orbPhase * 0.08)
+                .opacity(0.5 + orbPhase * 0.5)
+
             // Flag circle
             CountryFlagView(countryCode: code, size: 36)
                 .frame(width: 64, height: 64)
@@ -476,22 +508,34 @@ struct LanguageSelectionView: View {
     }
 
     private var heroBackground: some View {
-        RoundedRectangle(cornerRadius: 24)
-            .fill(isDark ? .ultraThinMaterial : .ultraThinMaterial)
-            .overlay(
-                RoundedRectangle(cornerRadius: 24)
-                    .strokeBorder(
-                        LinearGradient(
-                            colors: isDark
-                                ? [.white.opacity(0.08), .white.opacity(0.02)]
-                                : [.white.opacity(0.6), .white.opacity(0.2)],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        ),
-                        lineWidth: 1
+        ZStack {
+            RoundedRectangle(cornerRadius: 24)
+                .fill(isDark ? .ultraThinMaterial : .ultraThinMaterial)
+
+            // Top-edge frost luminance — creates convincing glass depth
+            RoundedRectangle(cornerRadius: 24)
+                .fill(
+                    LinearGradient(
+                        colors: [.white.opacity(isDark ? 0.04 : 0.35), .clear],
+                        startPoint: .top,
+                        endPoint: .init(x: 0.5, y: 0.35)
                     )
-            )
-            .shadow(color: isDark ? .indigo.opacity(0.08) : Color.caribbeanOcean.opacity(0.08), radius: 24, y: 10)
+                )
+        }
+        .overlay(
+            RoundedRectangle(cornerRadius: 24)
+                .strokeBorder(
+                    LinearGradient(
+                        colors: isDark
+                            ? [.white.opacity(0.08), .white.opacity(0.02)]
+                            : [.white.opacity(0.7), Color(hex: "#A78BFA").opacity(0.15), .white.opacity(0.2)],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 1
+                )
+        )
+        .shadow(color: isDark ? .indigo.opacity(0.08) : Color(hex: "#A78BFA").opacity(0.1), radius: 24, y: 10)
     }
 
     // MARK: - Source Section
@@ -780,18 +824,44 @@ struct LanguageSelectionView: View {
     // MARK: - Section Header
 
     private func sectionHeader(_ title: String, icon: String) -> some View {
-        HStack(spacing: 8) {
+        HStack(spacing: 10) {
+            // Icon in gradient circle badge
             Image(systemName: icon)
-                .font(.system(size: 15, weight: .semibold))
-                .foregroundStyle(
-                    LinearGradient(colors: [.indigo, .purple],
-                                   startPoint: .leading, endPoint: .trailing)
+                .font(.system(size: 12, weight: .semibold))
+                .foregroundStyle(.white)
+                .frame(width: 28, height: 28)
+                .background(
+                    Circle()
+                        .fill(
+                            LinearGradient(colors: [.indigo, .purple],
+                                           startPoint: .topLeading, endPoint: .bottomTrailing)
+                        )
                 )
+                .shadow(color: .indigo.opacity(0.25), radius: 4, y: 2)
 
             Text(title)
                 .font(.title3.weight(.semibold))
                 .foregroundStyle(isDark ? .white : .caribbeanInk)
         }
+        .padding(.leading, 6)
+        .padding(.trailing, 16)
+        .padding(.vertical, 8)
+        .background(
+            Capsule()
+                .fill(isDark ? Color.white.opacity(0.05) : Color.white.opacity(0.45))
+                .overlay(
+                    Capsule()
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: isDark
+                                    ? [.white.opacity(0.1), .white.opacity(0.03)]
+                                    : [.white.opacity(0.7), .white.opacity(0.2)],
+                                startPoint: .top, endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                )
+        )
     }
 
     // MARK: - Helpers
@@ -1010,20 +1080,35 @@ private struct TargetCardView: View {
     @ViewBuilder
     private var cardBackground: some View {
         if isSelected {
-            RoundedRectangle(cornerRadius: 16)
-                .fill(isDark ? Color.indigo.opacity(0.12) : Color.indigo.opacity(0.06))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 16)
-                        .strokeBorder(
-                            LinearGradient(
-                                colors: [.indigo.opacity(isDark ? 0.4 : 0.25), .purple.opacity(isDark ? 0.25 : 0.15)],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 1.5
+            ZStack {
+                // Base frosted fill
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(isDark ? Color.indigo.opacity(0.12) : Color.white.opacity(0.55))
+
+                // Top-edge luminance highlight — glass depth effect
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(
+                        LinearGradient(
+                            colors: [.white.opacity(isDark ? 0.05 : 0.45), .clear],
+                            startPoint: .top,
+                            endPoint: .init(x: 0.5, y: 0.4)
                         )
-                )
-                .shadow(color: .indigo.opacity(isDark ? 0.2 : 0.1), radius: 10, y: 3)
+                    )
+
+                // Holographic border
+                RoundedRectangle(cornerRadius: 16)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: isDark
+                                ? [.indigo.opacity(0.5), .purple.opacity(0.3), .indigo.opacity(0.15)]
+                                : [.white.opacity(0.8), Color(hex: "#A78BFA").opacity(0.3), Color(hex: "#0EA5E9").opacity(0.2)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 1.5
+                    )
+            }
+            .shadow(color: isDark ? .indigo.opacity(0.25) : Color(hex: "#A78BFA").opacity(0.15), radius: 14, y: 5)
         } else {
             RoundedRectangle(cornerRadius: 16)
                 .fill(isDark ? Color.white.opacity(0.04) : Color.caribbeanElevated)
