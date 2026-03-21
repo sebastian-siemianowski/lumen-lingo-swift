@@ -33,6 +33,11 @@ struct ProfileView: View {
     @State private var headerAppeared = false
     @PersistedState("profile_myPlan_collapsed") private var isMyPlanCollapsed = false
 
+    // Cached calendar data — avoids recomputing Set/streak on every cell
+    @State private var cachedCalendarDays: [CalendarDay] = []
+    @State private var cachedStreakStart: Date = .distantPast
+    @State private var cachedActiveDatesSet: Set<Date> = []
+
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 0) {
@@ -73,6 +78,7 @@ struct ProfileView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbarColorScheme(isDark ? .dark : .light, for: .navigationBar)
         .onAppear {
+            rebuildCalendarCache()
             withAnimation(.easeOut(duration: 0.6).delay(0.15)) {
                 headerAppeared = true
             }
@@ -348,7 +354,7 @@ struct ProfileView: View {
     /// Extracted to let the compiler handle local bindings in a @ViewBuilder
     @ViewBuilder
     private var calendarContent: some View {
-        let days = calendarDays
+        let days = cachedCalendarDays
         let streakCount = profile?.streakDays ?? 0
         let activeDayCount = days.filter(\.isActive).count
 
@@ -417,15 +423,11 @@ struct ProfileView: View {
 
                 ForEach(Array(days.enumerated()), id: \.element.date) { index, day in
                     calendarDayCell(day, index: index)
-                        .opacity(calendarRevealed ? 1 : 0)
-                        .scaleEffect(calendarRevealed ? 1 : 0.5)
-                        .animation(
-                            .spring(response: 0.35, dampingFraction: 0.7)
-                                .delay(Double(index) * 0.012),
-                            value: calendarRevealed
-                        )
                 }
             }
+            .opacity(calendarRevealed ? 1 : 0)
+            .animation(.easeOut(duration: 0.4), value: calendarRevealed)
+            .drawingGroup()
 
             // ── Streak banner ──
             if streakCount > 0 {
@@ -437,7 +439,7 @@ struct ProfileView: View {
                             Circle()
                                 .fill(
                                     RadialGradient(
-                                        colors: [Color(hex: "E879F9").opacity(flamePulse ? 0.35 : 0.18), Color(hex: "38BDF8").opacity(0.1), .clear],
+                                        colors: [Color(hex: "E879F9").opacity(0.25), Color(hex: "38BDF8").opacity(0.1), .clear],
                                         center: .center,
                                         startRadius: 2,
                                         endRadius: 22
@@ -463,7 +465,7 @@ struct ProfileView: View {
                                     )
                                 )
                                 .blur(radius: 6)
-                                .opacity(flamePulse ? 0.85 : 0.65)
+                                .opacity(0.75)
                         }
 
                         // Sharp icon on top
@@ -598,7 +600,7 @@ struct ProfileView: View {
     /// A single day cell — rounded square with rich visual treatment
     @ViewBuilder
     private func calendarDayCell(_ day: CalendarDay, index: Int) -> some View {
-        let isInStreak = day.isActive && isPartOfCurrentStreak(day.date)
+        let isInStreak = day.isActive && isPartOfCurrentStreakCached(day.date)
         let dayNumber = Calendar.current.component(.day, from: day.date)
 
         ZStack {
@@ -610,14 +612,14 @@ struct ProfileView: View {
                     RoundedRectangle(cornerRadius: 8, style: .continuous)
                         .strokeBorder(calendarCellBorder(day, isInStreak: isInStreak), lineWidth: 0.5)
                 )
-                // Today: breathing glow shadow
+                // Today: static glow shadow (no animated radius for perf)
                 .shadow(
                     color: day.isToday
-                        ? (isDark ? Color.orange.opacity(0.4) : Color(hex: "FB923C").opacity(0.25))
+                        ? (isDark ? Color.orange.opacity(0.35) : Color(hex: "FB923C").opacity(0.22))
                         : (day.isActive && !day.isFuture
-                            ? (isDark ? Color.cyan.opacity(0.25) : Color.caribbeanOcean.opacity(0.12))
+                            ? (isDark ? Color.cyan.opacity(0.2) : Color.caribbeanOcean.opacity(0.10))
                             : .clear),
-                    radius: day.isToday ? (todayPulse ? 10 : 5) : 5,
+                    radius: day.isToday ? 8 : 4,
                     y: 1
                 )
 
@@ -657,7 +659,7 @@ struct ProfileView: View {
     }
 
     /// Cell background fill based on day state
-    private func calendarCellBackground(_ day: CalendarDay, isInStreak: Bool) -> some ShapeStyle {
+    private func calendarCellBackground(_ day: CalendarDay, isInStreak: Bool) -> AnyShapeStyle {
         if day.isFuture {
             return AnyShapeStyle(isDark ? Color.white.opacity(0.015) : Color.caribbeanRecessed.opacity(0.5))
         }
@@ -695,7 +697,7 @@ struct ProfileView: View {
     }
 
     /// Subtle border treatment per cell state
-    private func calendarCellBorder(_ day: CalendarDay, isInStreak: Bool) -> some ShapeStyle {
+    private func calendarCellBorder(_ day: CalendarDay, isInStreak: Bool) -> AnyShapeStyle {
         if day.isToday {
             return AnyShapeStyle(isDark ? Color.orange.opacity(0.5) : Color(hex: "FB923C").opacity(0.3))
         }
@@ -715,38 +717,25 @@ struct ProfileView: View {
     }
 
     /// Localized short day labels (M T W T F S S)
-    private var calendarDayLabels: [String] {
+    private static let cachedDayLabels: [String] = {
         let formatter = DateFormatter()
         formatter.locale = Locale.current
         let symbols = formatter.veryShortWeekdaySymbols ?? ["S", "M", "T", "W", "T", "F", "S"]
-        // Calendar's firstWeekday is 1-based (1=Sunday)
         let first = Calendar.current.firstWeekday - 1
         return Array(symbols[first...]) + Array(symbols[..<first])
-    }
+    }()
 
-    /// Month/year string for the header
+    private var calendarDayLabels: [String] { Self.cachedDayLabels }
+
+    /// Month/year string for the header (cached formatter)
+    private static let monthYearFormatter: DateFormatter = {
+        let f = DateFormatter()
+        f.dateFormat = "MMMM yyyy"
+        return f
+    }()
+
     private var calendarMonthYear: String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMMM yyyy"
-        return formatter.string(from: Date())
-    }
-
-    /// Generate the last 30 days of calendar data
-    private var calendarDays: [CalendarDay] {
-        let calendar = Calendar.current
-        let today = calendar.startOfDay(for: Date())
-        let activeDates = Set(allProgress.map { calendar.startOfDay(for: $0.createdDate) })
-
-        return (0..<30).reversed().map { offset in
-            let date = calendar.date(byAdding: .day, value: -offset, to: today)!
-            let dayStart = calendar.startOfDay(for: date)
-            return CalendarDay(
-                date: dayStart,
-                isActive: activeDates.contains(dayStart),
-                isToday: dayStart == today,
-                isFuture: dayStart > today
-            )
-        }
+        Self.monthYearFormatter.string(from: Date())
     }
 
     /// Number of empty leading cells to align the first day to its weekday column
@@ -757,11 +746,23 @@ struct ProfileView: View {
         return (weekday - firstWeekday + 7) % 7
     }
 
-    /// Check if a date falls within the current contiguous streak from today
-    private func isPartOfCurrentStreak(_ date: Date) -> Bool {
+    /// Rebuild cached calendar data — call once on appear, not per-cell.
+    private func rebuildCalendarCache() {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: Date())
         let activeDates = Set(allProgress.map { calendar.startOfDay(for: $0.createdDate) })
+
+        // Build days array
+        let days: [CalendarDay] = (0..<30).reversed().map { offset in
+            let date = calendar.date(byAdding: .day, value: -offset, to: today)!
+            let dayStart = calendar.startOfDay(for: date)
+            return CalendarDay(
+                date: dayStart,
+                isActive: activeDates.contains(dayStart),
+                isToday: dayStart == today,
+                isFuture: dayStart > today
+            )
+        }
 
         // Walk backwards from today to find streak start
         var streakStart = today
@@ -772,7 +773,15 @@ struct ProfileView: View {
             checkDate = prev
         }
 
-        let dayStart = calendar.startOfDay(for: date)
-        return dayStart >= streakStart && dayStart <= today
+        cachedCalendarDays = days
+        cachedStreakStart = streakStart
+        cachedActiveDatesSet = activeDates
+    }
+
+    /// O(1) streak check using pre-computed range
+    private func isPartOfCurrentStreakCached(_ date: Date) -> Bool {
+        let dayStart = Calendar.current.startOfDay(for: date)
+        let today = Calendar.current.startOfDay(for: Date())
+        return dayStart >= cachedStreakStart && dayStart <= today
     }
 }
