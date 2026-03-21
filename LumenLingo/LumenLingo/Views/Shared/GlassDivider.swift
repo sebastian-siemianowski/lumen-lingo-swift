@@ -788,7 +788,7 @@ struct GlassPanelWrapper<Content: View>: View {
             // BASE: Frosted glass material
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(isDark ? AnyShapeStyle(.ultraThinMaterial) : AnyShapeStyle(.thinMaterial))
-                .opacity(isDark ? 0.55 : 0.35)
+                .opacity(isDark ? 0.55 : 0.22)
 
             // Dark tint overlay
             RoundedRectangle(cornerRadius: cornerRadius)
@@ -800,7 +800,7 @@ struct GlassPanelWrapper<Content: View>: View {
                     LinearGradient(
                         colors: isDark
                             ? [.white.opacity(0.15), .clear, .white.opacity(0.06)]
-                            : [.white.opacity(0.35), .clear, .white.opacity(0.04)],
+                            : [.white.opacity(0.18), .clear, .white.opacity(0.02)],
                         startPoint: .top,
                         endPoint: .bottom
                     )
@@ -818,16 +818,16 @@ struct GlassPanelWrapper<Content: View>: View {
             // Light mode: inner white border for crisp light catch
             if !isDark {
                 RoundedRectangle(cornerRadius: cornerRadius - 0.5)
-                    .strokeBorder(.white.opacity(0.45), lineWidth: 0.5)
+                    .strokeBorder(.white.opacity(0.30), lineWidth: 0.5)
                     .padding(0.5)
             }
 
-            // Light mode: top wash — enhanced luminance band
+            // Light mode: top wash — subtle luminance band
             VStack(spacing: 0) {
                 LinearGradient(
                     colors: isDark
                         ? [.white.opacity(0.0), .clear]
-                        : [.white.opacity(0.30), .clear],
+                        : [.white.opacity(0.15), .clear],
                     startPoint: .top,
                     endPoint: .bottom
                 )

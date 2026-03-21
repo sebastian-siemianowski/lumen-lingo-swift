@@ -401,6 +401,8 @@ struct ProfileView: View {
 
     /// Pulse animation for "Today" indicator
     @State private var todayPulse = false
+    /// Breathing glow for streak flame
+    @State private var flamePulse = false
     /// Staggered cell reveal
     @State private var calendarRevealed = false
 
@@ -433,7 +435,7 @@ struct ProfileView: View {
                     }
                     Text(calendarMonthYear)
                         .font(.system(size: 11, weight: .medium))
-                        .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum.opacity(0.7))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum.opacity(0.85))
                 }
 
                 Spacer()
@@ -451,10 +453,10 @@ struct ProfileView: View {
                     .padding(.vertical, 5)
                     .background(
                         Capsule()
-                            .fill(isDark ? Color.cyan.opacity(0.12) : Color.caribbeanOcean.opacity(0.08))
+                            .fill(isDark ? Color.cyan.opacity(0.12) : Color.caribbeanOcean.opacity(0.14))
                             .overlay(
                                 Capsule()
-                                    .strokeBorder(isDark ? Color.cyan.opacity(0.2) : Color.caribbeanOcean.opacity(0.15), lineWidth: 0.5)
+                                    .strokeBorder(isDark ? Color.cyan.opacity(0.2) : Color.caribbeanOcean.opacity(0.25), lineWidth: 0.5)
                             )
                     )
                 }
@@ -466,7 +468,7 @@ struct ProfileView: View {
                 ForEach(dayLabels, id: \.self) { label in
                     Text(label)
                         .font(.system(size: 10, weight: .semibold, design: .rounded))
-                        .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanPlum.opacity(0.5))
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum.opacity(0.7))
                         .frame(maxWidth: .infinity)
                 }
             }
@@ -492,83 +494,135 @@ struct ProfileView: View {
 
             // ── Streak banner ──
             if streakCount > 0 {
-                HStack(spacing: 8) {
-                    // Flame icon with glow
+                HStack(spacing: 10) {
+                    // Flame icon with layered glow
                     ZStack {
-                        Image(systemName: "flame.fill")
-                            .font(.system(size: 16))
-                            .foregroundStyle(
-                                isDark
-                                    ? AnyShapeStyle(Color.orange)
-                                    : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
+                        // Outer radial glow
+                        Circle()
+                            .fill(
+                                RadialGradient(
+                                    colors: isDark
+                                        ? [Color.orange.opacity(flamePulse ? 0.35 : 0.2), .clear]
+                                        : [Color(hex: "FB923C").opacity(flamePulse ? 0.4 : 0.22), .clear],
+                                    center: .center,
+                                    startRadius: 2,
+                                    endRadius: 20
+                                )
                             )
-                            .blur(radius: 4)
-                            .opacity(0.5)
+                            .frame(width: 40, height: 40)
 
+                        // Soft bloom
                         Image(systemName: "flame.fill")
-                            .font(.system(size: 16))
+                            .font(.system(size: 20))
                             .foregroundStyle(
                                 isDark
-                                    ? AnyShapeStyle(Color.orange)
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: [Color(hex: "FF6B00"), Color(hex: "FFB800")],
+                                        startPoint: .bottom, endPoint: .top
+                                      ))
                                     : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
                             )
+                            .blur(radius: 6)
+                            .opacity(flamePulse ? 0.7 : 0.45)
+
+                        // Sharp flame
+                        Image(systemName: "flame.fill")
+                            .font(.system(size: 20))
+                            .foregroundStyle(
+                                isDark
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: [Color(hex: "FF6B00"), Color(hex: "FFCC00")],
+                                        startPoint: .bottom, endPoint: .top
+                                      ))
+                                    : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
+                            )
+                            .scaleEffect(flamePulse ? 1.08 : 1.0)
                     }
 
-                    VStack(alignment: .leading, spacing: 1) {
+                    VStack(alignment: .leading, spacing: 2) {
                         Text("\(streakCount)-\(L.dayStreak)")
-                            .font(.system(size: 14, weight: .bold, design: .rounded))
+                            .font(.system(size: 15, weight: .bold, design: .rounded))
                             .foregroundStyle(
                                 isDark
-                                    ? AnyShapeStyle(Color.orange)
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: [Color(hex: "FF8C00"), Color(hex: "FFD700")],
+                                        startPoint: .leading, endPoint: .trailing
+                                      ))
                                     : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
                             )
                         Text("Keep going!")
-                            .font(.system(size: 10, weight: .medium))
-                            .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanPlum.opacity(0.5))
+                            .font(.system(size: 11, weight: .semibold))
+                            .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanPlum.opacity(0.8))
                     }
 
                     Spacer()
 
-                    // Streak progress dots
-                    HStack(spacing: 3) {
+                    // Streak progress dots — larger with glow
+                    HStack(spacing: 4) {
                         ForEach(0..<7, id: \.self) { i in
+                            let filled = i < (streakCount % 7 == 0 ? 7 : streakCount % 7)
                             Circle()
                                 .fill(
-                                    i < (streakCount % 7 == 0 ? 7 : streakCount % 7)
+                                    filled
                                         ? (isDark
-                                            ? AnyShapeStyle(Color.orange.opacity(0.8))
+                                            ? AnyShapeStyle(LinearGradient(
+                                                colors: [Color(hex: "FF8C00"), Color(hex: "FFD700")],
+                                                startPoint: .bottom, endPoint: .top
+                                              ))
                                             : AnyShapeStyle(LinearGradient.caribbeanGradientWarm))
-                                        : AnyShapeStyle(isDark ? Color.white.opacity(0.08) : Color.caribbeanRecessed)
+                                        : AnyShapeStyle(isDark ? Color.white.opacity(0.1) : Color.caribbeanRecessed)
                                 )
-                                .frame(width: 5, height: 5)
+                                .frame(width: 6, height: 6)
+                                .shadow(
+                                    color: filled
+                                        ? (isDark ? Color.orange.opacity(0.5) : Color(hex: "FB923C").opacity(0.3))
+                                        : .clear,
+                                    radius: 3
+                                )
                         }
                     }
                 }
-                .padding(.horizontal, 12)
-                .padding(.vertical, 10)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 12)
                 .background(
-                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
                         .fill(
                             isDark
-                                ? AnyShapeStyle(Color.orange.opacity(0.06))
+                                ? AnyShapeStyle(LinearGradient(
+                                    colors: [Color.orange.opacity(0.14), Color(hex: "FF6B00").opacity(0.08)],
+                                    startPoint: .leading, endPoint: .trailing
+                                  ))
                                 : AnyShapeStyle(LinearGradient(
-                                    colors: [Color(hex: "FB923C").opacity(0.06), Color(hex: "FDE68A").opacity(0.08)],
+                                    colors: [Color(hex: "FB923C").opacity(0.18), Color(hex: "FDE68A").opacity(0.22)],
                                     startPoint: .leading, endPoint: .trailing
                                   ))
                         )
                         .overlay(
-                            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
                                 .strokeBorder(
-                                    isDark ? Color.orange.opacity(0.15) : Color(hex: "FB923C").opacity(0.12),
-                                    lineWidth: 0.5
+                                    LinearGradient(
+                                        colors: isDark
+                                            ? [Color.orange.opacity(0.4), Color(hex: "FFD700").opacity(0.15)]
+                                            : [Color(hex: "FB923C").opacity(0.35), Color(hex: "FDE68A").opacity(0.2)],
+                                        startPoint: .topLeading, endPoint: .bottomTrailing
+                                    ),
+                                    lineWidth: 0.75
                                 )
                         )
+                )
+                .shadow(
+                    color: isDark ? Color.orange.opacity(0.12) : Color(hex: "FB923C").opacity(0.15),
+                    radius: 8,
+                    y: 2
                 )
             }
         }
         .onAppear {
             withAnimation(.easeInOut(duration: 1.8).repeatForever(autoreverses: true)) {
                 todayPulse = true
+            }
+            withAnimation(.easeInOut(duration: 2.2).repeatForever(autoreverses: true)) {
+                flamePulse = true
             }
             // Trigger staggered cell reveal
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
@@ -595,11 +649,11 @@ struct ProfileView: View {
                 // Today: breathing glow shadow
                 .shadow(
                     color: day.isToday
-                        ? (isDark ? Color.orange.opacity(0.3) : Color(hex: "FB923C").opacity(0.2))
+                        ? (isDark ? Color.orange.opacity(0.4) : Color(hex: "FB923C").opacity(0.25))
                         : (day.isActive && !day.isFuture
-                            ? (isDark ? Color.cyan.opacity(0.15) : Color.caribbeanOcean.opacity(0.08))
+                            ? (isDark ? Color.cyan.opacity(0.25) : Color.caribbeanOcean.opacity(0.12))
                             : .clear),
-                    radius: day.isToday ? (todayPulse ? 8 : 4) : 4,
+                    radius: day.isToday ? (todayPulse ? 10 : 5) : 5,
                     y: 1
                 )
 
@@ -618,7 +672,7 @@ struct ProfileView: View {
                 } else if day.isFuture {
                     Text("\(dayNumber)")
                         .font(.system(size: 11, weight: .regular, design: .rounded))
-                        .foregroundStyle(isDark ? .white.opacity(0.12) : .caribbeanPlum.opacity(0.2))
+                        .foregroundStyle(isDark ? .white.opacity(0.22) : .caribbeanPlum.opacity(0.35))
                 } else if day.isActive {
                     Text("\(dayNumber)")
                         .font(.system(size: 12, weight: .semibold, design: .rounded))
@@ -632,7 +686,7 @@ struct ProfileView: View {
                     // Inactive past day
                     Text("\(dayNumber)")
                         .font(.system(size: 11, weight: .medium, design: .rounded))
-                        .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanPlum.opacity(0.35))
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum.opacity(0.55))
                 }
             }
         }
@@ -641,7 +695,7 @@ struct ProfileView: View {
     /// Cell background fill based on day state
     private func calendarCellBackground(_ day: CalendarDay, isInStreak: Bool) -> some ShapeStyle {
         if day.isFuture {
-            return AnyShapeStyle(isDark ? Color.white.opacity(0.015) : Color.caribbeanRecessed.opacity(0.35))
+            return AnyShapeStyle(isDark ? Color.white.opacity(0.015) : Color.caribbeanRecessed.opacity(0.5))
         }
         if day.isToday {
             return isDark
@@ -652,25 +706,28 @@ struct ProfileView: View {
                 : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
         }
         if day.isActive {
-            // Streak days get a slightly different shade
+            // Streak days — vibrant gradient
             if isInStreak {
                 return isDark
                     ? AnyShapeStyle(LinearGradient(
-                        colors: [Color.cyan.opacity(0.65), Color(hex: "06B6D4").opacity(0.55)],
+                        colors: [Color(hex: "06B6D4").opacity(0.85), Color(hex: "0EA5E9").opacity(0.75)],
                         startPoint: .topLeading, endPoint: .bottomTrailing
                     ))
                     : AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
             }
-            // Active but not in current streak
+            // Active but not in current streak — still solid
             return isDark
-                ? AnyShapeStyle(Color.cyan.opacity(0.35))
+                ? AnyShapeStyle(LinearGradient(
+                    colors: [Color.cyan.opacity(0.55), Color(hex: "06B6D4").opacity(0.45)],
+                    startPoint: .topLeading, endPoint: .bottomTrailing
+                  ))
                 : AnyShapeStyle(LinearGradient(
-                    colors: [Color.caribbeanLagoon.opacity(0.6), Color.caribbeanReef.opacity(0.5)],
+                    colors: [Color.caribbeanLagoon.opacity(0.7), Color.caribbeanReef.opacity(0.6)],
                     startPoint: .topLeading, endPoint: .bottomTrailing
                 ))
         }
         // Inactive past day
-        return AnyShapeStyle(isDark ? Color.white.opacity(0.03) : Color.caribbeanRecessed.opacity(0.4))
+        return AnyShapeStyle(isDark ? Color.white.opacity(0.03) : Color.caribbeanRecessed.opacity(0.55))
     }
 
     /// Subtle border treatment per cell state
@@ -679,7 +736,7 @@ struct ProfileView: View {
             return AnyShapeStyle(isDark ? Color.orange.opacity(0.5) : Color(hex: "FB923C").opacity(0.3))
         }
         if day.isActive && !day.isFuture {
-            return AnyShapeStyle(isDark ? Color.cyan.opacity(0.2) : Color.caribbeanOcean.opacity(0.15))
+            return AnyShapeStyle(isDark ? Color.cyan.opacity(0.35) : Color.caribbeanOcean.opacity(0.2))
         }
         return AnyShapeStyle(isDark ? Color.white.opacity(0.04) : Color.caribbeanBorderSubtle.opacity(0.5))
     }
