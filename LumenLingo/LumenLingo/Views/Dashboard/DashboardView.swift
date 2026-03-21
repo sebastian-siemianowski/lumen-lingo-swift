@@ -26,6 +26,7 @@ struct DashboardView: View {
     @State private var showMembershipSheet = false
     @State private var fogBreath: CGFloat = 0
     @State private var adventureIconPulse: CGFloat = 0
+    @State private var activityIconPulse: CGFloat = 0
     @State private var tierIconAppeared = false
     @State private var showExpiredSheet = false
     @State private var showAllLanguages = false
@@ -584,7 +585,7 @@ struct DashboardView: View {
                         if !isDark {
                             // Top-edge light catch — premium "caught the sun" highlight
                             VStack(spacing: 0) {
-                                UnevenRoundedRectangle(topLeadingRadius: 20, topTrailingRadius: 20)
+                                Rectangle()
                                     .fill(
                                         LinearGradient(
                                             colors: [.white.opacity(0.5), .clear],
@@ -595,6 +596,7 @@ struct DashboardView: View {
                                     .frame(height: 3)
                                 Spacer()
                             }
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
                         }
                     }
                 )
@@ -714,13 +716,6 @@ struct DashboardView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 3) {
-                    // Turquoise accent bar before title in light mode
-                    if !isDark {
-                        RoundedRectangle(cornerRadius: 1.5)
-                            .fill(LinearGradient.caribbeanGradientOcean)
-                            .frame(width: 28, height: 3)
-                    }
-
                     Text("Choose Your Adventure")
                         .font(.system(size: 19, weight: .bold))
                         .tracking(isDark ? 0 : 0.2)
@@ -802,25 +797,83 @@ struct DashboardView: View {
         }
 
         return VStack(spacing: 12) {
-            HStack(spacing: 8) {
-                // Turquoise accent bar in light mode
-                if !isDark {
-                    RoundedRectangle(cornerRadius: 1.5)
-                        .fill(LinearGradient.caribbeanGradientOcean)
-                        .frame(width: 3, height: 16)
+            HStack(spacing: 14) {
+                ZStack {
+                    if isDark {
+                        Circle()
+                            .fill(Color(hex: "#667eea").opacity(0.15))
+                            .frame(width: 48, height: 48)
+                            .scaleEffect(1.0 + activityIconPulse * 0.15)
+                            .blur(radius: 8)
+
+                        Circle()
+                            .fill(Color(hex: "#764ba2").opacity(0.1))
+                            .frame(width: 40, height: 40)
+                            .scaleEffect(1.0 + activityIconPulse * 0.1)
+                            .blur(radius: 6)
+                            .offset(x: 4, y: 4)
+                    }
+
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(
+                            isDark
+                                ? LinearGradient(
+                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#5b4fcf")],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                                : LinearGradient.caribbeanGradientOcean
+                        )
+                        .frame(width: 40, height: 40)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.25), .clear],
+                                        startPoint: .top,
+                                        endPoint: .center
+                                    )
+                                )
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12)
+                                .strokeBorder(.white.opacity(0.2), lineWidth: 1)
+                        )
+                        .shadow(color: isDark
+                            ? Color(hex: "#667eea").opacity(0.35 + activityIconPulse * 0.15)
+                            : Color.caribbeanOcean.opacity(0.2),
+                            radius: 10)
+
+                    Image(systemName: "clock.arrow.trianglehead.counterclockwise.rotate.90")
+                        .font(.system(size: 18, weight: .medium))
+                        .foregroundStyle(.white)
+                        .shadow(color: .white.opacity(0.3), radius: 2)
                 }
-                Text("Recent Activity")
-                    .font(.system(size: 16, weight: .bold))
-                    .tracking(isDark ? 0 : 0.2)
-                    .foregroundStyle(
-                        isDark
-                            ? AnyShapeStyle(LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            ))
-                            : AnyShapeStyle(Color.caribbeanInk)
-                    )
+                .onAppear {
+                    withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
+                        activityIconPulse = 1
+                    }
+                }
+
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("Recent Activity")
+                        .font(.system(size: 16, weight: .bold))
+                        .tracking(isDark ? 0 : 0.2)
+                        .foregroundStyle(
+                            isDark
+                                ? AnyShapeStyle(LinearGradient(
+                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                ))
+                                : AnyShapeStyle(Color.caribbeanInk)
+                        )
+
+                    Text("Your learning journey")
+                        .font(.system(size: 13))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : Color.caribbeanPlum)
+                }
+
                 Spacer()
             }
 
