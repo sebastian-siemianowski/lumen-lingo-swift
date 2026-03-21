@@ -73,6 +73,10 @@ final class SessionEngine {
     /// The current recommendation (recomputed after each session)
     private(set) var currentRecommendation: SessionRecommendation?
 
+    /// All ranked alternatives (for shuffle)
+    private var rankedAlternatives: [SessionRecommendation] = []
+    private var currentAlternativeIndex: Int = 0
+
     /// Whether the engine has loaded its first recommendation
     private(set) var isLoaded: Bool = false
 
@@ -107,6 +111,13 @@ final class SessionEngine {
     func resetDailyGoal() {
         roundsCompletedToday = 0
         saveDailyState()
+    }
+
+    /// Cycle to the next ranked recommendation.
+    func shuffleRecommendation() {
+        guard rankedAlternatives.count > 1 else { return }
+        currentAlternativeIndex = (currentAlternativeIndex + 1) % rankedAlternatives.count
+        currentRecommendation = rankedAlternatives[currentAlternativeIndex]
     }
 
     /// Compute the next recommendation. Call from main actor context.
@@ -271,12 +282,23 @@ final class SessionEngine {
         // Sort by score descending
         scored.sort { $0.1 > $1.1 }
 
+        // Build the full ranked list for shuffle support (top 6)
+        let topCandidates = scored.prefix(6)
+        rankedAlternatives = topCandidates.map { (cat, _, reason) in
+            makeRecommendation(from: cat, reason: reason, streakDays: streakDays)
+        }
+        currentAlternativeIndex = 0
+
         guard let (winner, _, reason) = scored.first else {
             // Fallback: pick first available new category
             if let first = candidates.first(where: { $0.progress.mastered == 0 }) {
-                return makeRecommendation(from: first, reason: .firstSession, streakDays: streakDays)
+                let fallback = makeRecommendation(from: first, reason: .firstSession, streakDays: streakDays)
+                rankedAlternatives = [fallback]
+                return fallback
             }
-            return candidates.first.map { makeRecommendation(from: $0, reason: .spacedReview, streakDays: streakDays) }
+            let fallback = candidates.first.map { makeRecommendation(from: $0, reason: .spacedReview, streakDays: streakDays) }
+            if let fb = fallback { rankedAlternatives = [fb] }
+            return fallback
         }
 
         // Track this game type for variety

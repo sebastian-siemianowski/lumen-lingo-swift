@@ -15,12 +15,16 @@ struct TodaySessionCard: View {
     let resetTime: String?
     let onStart: () -> Void
     let onExpiredTap: () -> Void
+    var onShuffle: (() -> Void)? = nil
 
     @Environment(\.colorScheme) private var colorScheme
     @State private var appeared = false
     @State private var ringAnimated = false
     @State private var pulseGlow = false
     @State private var shimmerPhase: CGFloat = 0
+    @State private var shuffleRotation: Double = 0
+    @State private var shuffleScale: CGFloat = 1.0
+    @State private var shuffleBounce: Bool = false
 
     private var isDark: Bool { colorScheme == .dark }
 
@@ -60,7 +64,7 @@ struct TodaySessionCard: View {
 
     private func recommendationContent(_ rec: SessionRecommendation) -> some View {
         VStack(alignment: .leading, spacing: 0) {
-            // Top: Daily progress + round counter
+            // Top: Daily progress + round counter + shuffle
             HStack(spacing: 14) {
                 dailyProgressRing
 
@@ -85,6 +89,10 @@ struct TodaySessionCard: View {
                 }
 
                 Spacer()
+
+                if onShuffle != nil {
+                    shuffleButton(rec)
+                }
             }
             .padding(.top, 22)
             .padding(.horizontal, 20)
@@ -120,14 +128,6 @@ struct TodaySessionCard: View {
             }
             .padding(.top, 18)
             .padding(.horizontal, 20)
-
-            // Motivational text
-            Text(rec.motivationalText)
-                .font(.system(size: 14, weight: .medium))
-                .italic()
-                .foregroundStyle(isDark ? .white.opacity(0.55) : Color.caribbeanPlum.opacity(0.75))
-                .padding(.top, 10)
-                .padding(.horizontal, 20)
 
             // CTA Button
             ctaButton(rec)
@@ -346,6 +346,85 @@ struct TodaySessionCard: View {
                 .shadow(color: .black.opacity(0.2), radius: 2, y: 1)
         }
         .shadow(color: (isDark ? colors.primary : colors.caribbeanTint.first ?? colors.primary).opacity(0.3), radius: 8, y: 3)
+    }
+
+    private func shuffleButton(_ rec: SessionRecommendation) -> some View {
+        let accentColors = rec.reason.accentColors
+        let baseColor = isDark
+            ? (accentColors.first ?? .purple)
+            : Color.caribbeanOcean
+
+        return Button {
+            // Tactile animation cascade
+            withAnimation(.spring(response: 0.25, dampingFraction: 0.5)) {
+                shuffleScale = 0.8
+                shuffleBounce = true
+            }
+            withAnimation(.interpolatingSpring(stiffness: 300, damping: 12).delay(0.08)) {
+                shuffleRotation += 360
+                shuffleScale = 1.15
+            }
+            withAnimation(.spring(response: 0.3, dampingFraction: 0.65).delay(0.22)) {
+                shuffleScale = 1.0
+                shuffleBounce = false
+            }
+
+            onShuffle?()
+        } label: {
+            ZStack {
+                // Outer glow ring
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [
+                                baseColor.opacity(shuffleBounce ? 0.25 : 0.08),
+                                baseColor.opacity(0)
+                            ],
+                            center: .center, startRadius: 0, endRadius: 26
+                        )
+                    )
+                    .frame(width: 52, height: 52)
+
+                // Glass circle
+                Circle()
+                    .fill(
+                        isDark
+                        ? .ultraThinMaterial
+                        : .thinMaterial
+                    )
+                    .frame(width: 40, height: 40)
+                    .overlay(
+                        Circle()
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: isDark
+                                        ? [.white.opacity(0.25), .white.opacity(0.06)]
+                                        : [baseColor.opacity(0.3), baseColor.opacity(0.08)],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 1
+                            )
+                    )
+
+                // Icon with rotation
+                Image(systemName: "shuffle")
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundStyle(
+                        isDark
+                        ? AnyShapeStyle(LinearGradient(
+                            colors: accentColors,
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ))
+                        : AnyShapeStyle(baseColor)
+                    )
+                    .rotationEffect(.degrees(shuffleRotation))
+            }
+            .scaleEffect(shuffleScale)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Shuffle recommendation")
     }
 
     private func categoryProgressBar(_ rec: SessionRecommendation) -> some View {

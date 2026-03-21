@@ -827,7 +827,10 @@ struct DashboardView: View {
                 }
                 navigationPath.append(route)
             },
-            onExpiredTap: { showExpiredSheet = true }
+            onExpiredTap: { showExpiredSheet = true },
+            onShuffle: {
+                sessionEngine.shuffleRecommendation()
+            }
         )
         .task(id: "\(currentSourceRaw)_\(currentTargetRaw)_\(recentProgress.count)") {
             // Record a round only when coming back from a game that added a new session
