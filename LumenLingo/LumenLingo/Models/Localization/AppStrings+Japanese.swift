@@ -9,6 +9,10 @@ extension AppStrings {
         tabSettings: "設定",
         tabProfile: "プロフィール",
 
+        // Settings Header
+        settingsHeaderTitle: "環境設定",
+        settingsHeaderSubtitle: "自分好みにカスタマイズ",
+
         // Dashboard
         greeting: { "こんにちは、\($0)さん！" },
         goodMorning: "おはようございます",

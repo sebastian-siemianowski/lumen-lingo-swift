@@ -31,6 +31,8 @@ struct SettingsView: View {
 
     // Entry animation
     @State private var contentAppeared = false
+    @State private var gearRotation: Double = 0
+    @State private var glowPulse: CGFloat = 0.4
 
     private var availableAppearanceSubTabs: [AppearanceSubTab] {
         AppearanceSubTab.allCases.filter { isDark || $0 != .nebulaDrift }
@@ -59,6 +61,13 @@ struct SettingsView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 0) {
+                // Settings hero header
+                settingsHeader
+                    .padding(.horizontal, 16)
+                    .padding(.top, 10)
+                    .opacity(contentAppeared ? 1 : 0)
+                    .offset(y: contentAppeared ? 0 : 20)
+
                 // Top-level settings tabs
                 settingsTabBar
                     .padding(.horizontal, 16)
@@ -95,7 +104,153 @@ struct SettingsView: View {
             withAnimation(.easeOut(duration: 0.6).delay(0.15)) {
                 contentAppeared = true
             }
+            // Slow continuous gear rotation
+            withAnimation(.linear(duration: 30).repeatForever(autoreverses: false)) {
+                gearRotation = 360
+            }
+            // Pulsing glow
+            withAnimation(.easeInOut(duration: 3).repeatForever(autoreverses: true)) {
+                glowPulse = 0.8
+            }
         }
+    }
+
+    // MARK: - Settings Header
+
+    /// Gorgeous glassmorphic hero banner with animated gear icon,
+    /// gradient typography, and tier-tinted ambient glow.
+    private var settingsHeader: some View {
+        let accentColors: [Color] = isDark
+            ? [Color(hex: "#a78bfa"), Color(hex: "#7c3aed"), Color(hex: "#6d28d9")]
+            : [Color(hex: "#7c3aed"), Color(hex: "#8b5cf6"), Color(hex: "#a78bfa")]
+
+        return VStack(spacing: 12) {
+            // Animated gear icon with concentric rings
+            ZStack {
+                // Outer glow ring — breathing pulse
+                Circle()
+                    .stroke(
+                        AngularGradient(
+                            colors: accentColors + [accentColors[0]],
+                            center: .center
+                        ),
+                        lineWidth: 1.5
+                    )
+                    .frame(width: 72, height: 72)
+                    .opacity(Double(glowPulse) * 0.35)
+                    .blur(radius: 4)
+                    .rotationEffect(.degrees(-gearRotation * 0.5))
+
+                // Middle halo ring
+                Circle()
+                    .stroke(
+                        LinearGradient(
+                            colors: [
+                                accentColors[0].opacity(0.25),
+                                accentColors[1].opacity(0.08),
+                                accentColors[2].opacity(0.20)
+                            ],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 1
+                    )
+                    .frame(width: 60, height: 60)
+                    .rotationEffect(.degrees(gearRotation * 0.3))
+
+                // Inner tinted glass circle
+                Circle()
+                    .fill(
+                        isDark
+                            ? Color(hex: "#7c3aed").opacity(0.12)
+                            : Color(hex: "#7c3aed").opacity(0.07)
+                    )
+                    .frame(width: 52, height: 52)
+                Circle()
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [
+                                .white.opacity(isDark ? 0.20 : 0.60),
+                                .white.opacity(isDark ? 0.05 : 0.18)
+                            ],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        ),
+                        lineWidth: 0.5
+                    )
+                    .frame(width: 52, height: 52)
+
+                // Gear icon — slowly rotating
+                Image(systemName: "gearshape.2.fill")
+                    .font(.system(size: 24, weight: .medium))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: accentColors,
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .rotationEffect(.degrees(gearRotation))
+            }
+
+            // Title with gradient
+            Text(L.settingsHeaderTitle)
+                .font(.system(size: 20, weight: .bold, design: .rounded))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: accentColors,
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+
+            // Subtitle
+            Text(L.settingsHeaderSubtitle)
+                .font(.system(size: 13, weight: .medium))
+                .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanPlum.opacity(0.7))
+                .multilineTextAlignment(.center)
+
+            // Tier accent bar — a thin luminous separator
+            Capsule()
+                .fill(
+                    LinearGradient(
+                        colors: accentColors.map { $0.opacity(Double(glowPulse)) },
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(width: 48, height: 2.5)
+                .shadow(color: accentColors[0].opacity(Double(glowPulse) * 0.4), radius: 6, y: 0)
+        }
+        .padding(.vertical, 20)
+        .padding(.horizontal, 24)
+        .frame(maxWidth: .infinity)
+        .background(
+            ZStack {
+                GlassCardBackground(
+                    cornerRadius: 24,
+                    tintColor: Color(hex: "#7c3aed")
+                )
+                if !isDark {
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(Color.white.opacity(0.25))
+                }
+
+                // Ambient radial glow behind — subtle brand tint
+                RoundedRectangle(cornerRadius: 24)
+                    .fill(
+                        RadialGradient(
+                            colors: [
+                                accentColors[1].opacity(isDark ? 0.06 : 0.03),
+                                Color.clear
+                            ],
+                            center: .top,
+                            startRadius: 10,
+                            endRadius: 200
+                        )
+                    )
+            }
+        )
     }
 
     // MARK: - Settings Tab Bar

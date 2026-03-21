@@ -12,6 +12,10 @@ struct AppStrings {
     let tabSettings: String
     let tabProfile: String
 
+    // MARK: - Settings Header
+    let settingsHeaderTitle: String
+    let settingsHeaderSubtitle: String
+
     // MARK: - Dashboard
     let greeting: (String) -> String   // "Hello, {name}!"
     let goodMorning: String

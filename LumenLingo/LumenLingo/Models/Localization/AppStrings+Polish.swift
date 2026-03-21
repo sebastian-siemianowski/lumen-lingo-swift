@@ -9,6 +9,10 @@ extension AppStrings {
         tabSettings: "Ustawienia",
         tabProfile: "Profil",
 
+        // Settings Header
+        settingsHeaderTitle: "Preferencje",
+        settingsHeaderSubtitle: "Spersonalizuj swoje wrażenia",
+
         // Dashboard
         greeting: { "Cześć, \($0)!" },
         goodMorning: "Dzień dobry",
