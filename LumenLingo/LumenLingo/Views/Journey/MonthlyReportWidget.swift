@@ -120,20 +120,20 @@ struct MonthlyReportWidget: View {
         .padding(10)
         .background {
             if isDark {
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: 20)
                     .fill(color.opacity(0.08))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 12)
+                        RoundedRectangle(cornerRadius: 20)
                             .strokeBorder(color.opacity(0.15), lineWidth: 1)
                     )
             } else {
                 // Frost trough — recessed glass card with accent tint
                 ZStack {
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(color.opacity(0.05))
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [
@@ -145,7 +145,7 @@ struct MonthlyReportWidget: View {
                                 endPoint: .bottom
                             )
                         )
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(
                             LinearGradient(
                                 colors: [
@@ -170,7 +170,7 @@ struct MonthlyReportWidget: View {
                             .frame(height: 14)
                         Spacer(minLength: 0)
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                 }
                 .shadow(color: color.opacity(0.08), radius: 4, y: 2)
             }

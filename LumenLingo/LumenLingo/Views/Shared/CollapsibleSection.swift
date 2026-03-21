@@ -238,7 +238,7 @@ struct CollapsibleSection<Header: View, Content: View>: View {
     let style: CollapsibleStyle
     let colors: [Color]
     @Binding var isCollapsed: Bool
-    var cornerRadius: CGFloat = 18
+    var cornerRadius: CGFloat = 22
     var glassWeight: GlassWeight? = nil
     var badge: CollapsibleBadge? = nil
     var category: ThemeCategory? = nil
@@ -267,13 +267,13 @@ struct CollapsibleSection<Header: View, Content: View>: View {
         return glassWeight ?? GlassWeight.defaultWeight(for: style)
     }
 
-    /// Depth-adjusted corner radius: 18 → 14 → 12.
+    /// Depth-adjusted corner radius: 22 → 20 → 18.
     private var depthCornerRadius: CGFloat {
         let clampedDepth = min(depth, 2)
         switch clampedDepth {
         case 0: return cornerRadius
-        case 1: return 14
-        default: return 12
+        case 1: return 20
+        default: return 18
         }
     }
 
@@ -846,7 +846,7 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         isCollapsed: Binding<Bool>,
         subtitle: String? = nil,
         badge: CollapsibleBadge? = nil,
-        cornerRadius: CGFloat = 18,
+        cornerRadius: CGFloat = 22,
         glassWeight: GlassWeight? = nil,
         isLocked: Bool = false,
         lockedTierName: String? = nil,
@@ -889,7 +889,7 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         isCollapsed: Binding<Bool>,
         subtitle: String? = nil,
         badge: CollapsibleBadge? = nil,
-        cornerRadius: CGFloat = 18,
+        cornerRadius: CGFloat = 22,
         glassWeight: GlassWeight? = nil,
         isLocked: Bool = false,
         lockedTierName: String? = nil,

@@ -409,21 +409,21 @@ struct CategoriesView: View {
                 Group {
                     if isDark {
                         // Dark mode: unchanged
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(.white.opacity(0.06))
                             .overlay(
-                                RoundedRectangle(cornerRadius: 14)
+                                RoundedRectangle(cornerRadius: 20)
                                     .strokeBorder(.white.opacity(0.06), lineWidth: 0.5)
                             )
                     } else {
                         // Light mode: frost trough — recessed glass channel
                         ZStack {
                             // Recessed frost base
-                            RoundedRectangle(cornerRadius: 14)
+                            RoundedRectangle(cornerRadius: 20)
                                 .fill(Color(red: 0.92, green: 0.94, blue: 0.97))
 
                             // Inner shadow for depth (top-dark, bottom-light)
-                            RoundedRectangle(cornerRadius: 14)
+                            RoundedRectangle(cornerRadius: 20)
                                 .fill(
                                     LinearGradient(
                                         colors: [
@@ -437,7 +437,7 @@ struct CategoriesView: View {
                                 )
 
                             // Glass rim border
-                            RoundedRectangle(cornerRadius: 14)
+                            RoundedRectangle(cornerRadius: 20)
                                 .strokeBorder(
                                     LinearGradient(
                                         colors: [
@@ -468,11 +468,11 @@ struct CategoriesView: View {
                                     .frame(height: 22)
                                 Spacer(minLength: 0)
                             }
-                            .clipShape(RoundedRectangle(cornerRadius: 14))
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
 
                             // Focus glow ring
                             if isSearchFocused {
-                                RoundedRectangle(cornerRadius: 14)
+                                RoundedRectangle(cornerRadius: 20)
                                     .strokeBorder(
                                         categoryTitleGradient,
                                         lineWidth: 1.0

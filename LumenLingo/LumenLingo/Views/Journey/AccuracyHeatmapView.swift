@@ -349,7 +349,7 @@ struct AccuracyHeatmapView: View {
         }
         .background {
             if isDark {
-                RoundedRectangle(cornerRadius: 14)
+                RoundedRectangle(cornerRadius: 20)
                     .fill(
                         LinearGradient(
                             colors: [Color(hex: "#10b981").opacity(0.15), Color(hex: "#f59e0b").opacity(0.10)],
@@ -358,7 +358,7 @@ struct AccuracyHeatmapView: View {
                         )
                     )
                     .overlay(
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .strokeBorder(
                                 LinearGradient(
                                     colors: [Color(hex: "#10b981").opacity(0.3), Color(hex: "#f59e0b").opacity(0.2)],
@@ -371,9 +371,9 @@ struct AccuracyHeatmapView: View {
             } else {
                 // Frost trough — emerald-gold mastered card
                 ZStack {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(red: 0.93, green: 0.95, blue: 0.94))
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [Color(hex: "#10b981").opacity(0.10), Color(hex: "#f59e0b").opacity(0.06)],
@@ -382,7 +382,7 @@ struct AccuracyHeatmapView: View {
                             )
                         )
                     // Inset shadow band
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [
@@ -395,7 +395,7 @@ struct AccuracyHeatmapView: View {
                             )
                         )
                     // Crisp inner border
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(
                             LinearGradient(
                                 colors: [
@@ -422,7 +422,7 @@ struct AccuracyHeatmapView: View {
                         Spacer(minLength: 0)
                     }
                 }
-                .clipShape(RoundedRectangle(cornerRadius: 14))
+                .clipShape(RoundedRectangle(cornerRadius: 20))
                 .shadow(color: Color(hex: "#10b981").opacity(0.10), radius: 5, y: 2)
             }
         }
@@ -556,17 +556,17 @@ private struct HeatmapCell: View {
         .padding(.horizontal, 8)
         .background {
             if isDark {
-                RoundedRectangle(cornerRadius: 16)
+                RoundedRectangle(cornerRadius: 20)
                     .fill(.ultraThinMaterial)
                     .opacity(0.6)
             } else {
                 // Frost trough — recessed glass cell
                 ZStack {
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(red: 0.93, green: 0.94, blue: 0.96))
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(accuracyColor.opacity(0.10))
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [
@@ -578,7 +578,7 @@ private struct HeatmapCell: View {
                                 endPoint: .bottom
                             )
                         )
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(
                             LinearGradient(
                                 colors: [
@@ -603,14 +603,14 @@ private struct HeatmapCell: View {
                             .frame(height: 16)
                         Spacer(minLength: 0)
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                 }
                 .shadow(color: accuracyColor.opacity(0.12), radius: 5, y: 2)
             }
         }
-        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .clipShape(RoundedRectangle(cornerRadius: 20))
         .overlay(
-            RoundedRectangle(cornerRadius: 16)
+            RoundedRectangle(cornerRadius: 20)
                 .strokeBorder(
                     isDark
                         ? AnyShapeStyle(accuracyColor.opacity(0.2))

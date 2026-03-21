@@ -753,10 +753,10 @@ struct JourneyView: View {
                     if isDark {
                         Group {
                             if isUpcoming {
-                                RoundedRectangle(cornerRadius: 12)
+                                RoundedRectangle(cornerRadius: 20)
                                     .fill(Color(hex: "F59E0B").opacity(0.04))
                                     .overlay(
-                                        RoundedRectangle(cornerRadius: 12)
+                                        RoundedRectangle(cornerRadius: 20)
                                             .strokeBorder(
                                                 LinearGradient(
                                                     colors: [Color(hex: "F59E0B").opacity(0.20), Color(hex: "FB923C").opacity(0.12)],
@@ -767,14 +767,14 @@ struct JourneyView: View {
                                             )
                                     )
                             } else if isUnlocked {
-                                RoundedRectangle(cornerRadius: 12)
+                                RoundedRectangle(cornerRadius: 20)
                                     .fill(milestone.color.opacity(0.04))
                                     .overlay(
-                                        RoundedRectangle(cornerRadius: 12)
+                                        RoundedRectangle(cornerRadius: 20)
                                             .strokeBorder(milestone.color.opacity(0.10), lineWidth: 0.5)
                                     )
                             } else {
-                                RoundedRectangle(cornerRadius: 12)
+                                RoundedRectangle(cornerRadius: 20)
                                     .fill(Color.caribbeanDisabled.opacity(0.3))
                             }
                         }
@@ -783,11 +783,11 @@ struct JourneyView: View {
                         let accentColor: Color = isUpcoming ? Color(hex: "F59E0B") : (isUnlocked ? milestone.color : Color.gray)
                         let accentOpacity: Double = isUpcoming ? 0.12 : (isUnlocked ? 0.08 : 0.03)
                         ZStack {
-                            RoundedRectangle(cornerRadius: 12)
+                            RoundedRectangle(cornerRadius: 20)
                                 .fill(Color(red: 0.93, green: 0.94, blue: 0.96))
-                            RoundedRectangle(cornerRadius: 12)
+                            RoundedRectangle(cornerRadius: 20)
                                 .fill(accentColor.opacity(accentOpacity))
-                            RoundedRectangle(cornerRadius: 12)
+                            RoundedRectangle(cornerRadius: 20)
                                 .fill(
                                     LinearGradient(
                                         colors: [
@@ -799,7 +799,7 @@ struct JourneyView: View {
                                         endPoint: .bottom
                                     )
                                 )
-                            RoundedRectangle(cornerRadius: 12)
+                            RoundedRectangle(cornerRadius: 20)
                                 .strokeBorder(
                                     LinearGradient(
                                         colors: [
@@ -824,7 +824,7 @@ struct JourneyView: View {
                                     .frame(height: 12)
                                 Spacer(minLength: 0)
                             }
-                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
                         }
                         .shadow(color: accentColor.opacity(isUnlocked ? 0.12 : 0.04), radius: 5, y: 2)
                     }
@@ -1119,23 +1119,23 @@ struct JourneyView: View {
         .padding(isDark ? 10 : 12)
         .background {
             if isDark {
-                RoundedRectangle(cornerRadius: 16)
+                RoundedRectangle(cornerRadius: 20)
                     .fill(.white.opacity(0.04))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 16)
+                        RoundedRectangle(cornerRadius: 20)
                             .strokeBorder(.white.opacity(0.06), lineWidth: 1)
                     )
             } else {
                 // Frost trough — recessed glass card with accent tint
                 ZStack {
                     // Recessed frost base
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
                     // Subtle game-specific accent tint
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(accentColor.opacity(0.04))
                     // Inner shadow for depth
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [
@@ -1148,7 +1148,7 @@ struct JourneyView: View {
                             )
                         )
                     // Glass rim border
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(
                             LinearGradient(
                                 colors: [
@@ -1178,7 +1178,7 @@ struct JourneyView: View {
                             .frame(height: 18)
                         Spacer(minLength: 0)
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                 }
                 .shadow(
                     color: accentColor.opacity(0.06),

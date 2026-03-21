@@ -74,10 +74,10 @@ struct WeeklyTrendWidget: View {
                 ZStack {
                     // Light mode frost trough chart background
                     if !isDark {
-                        RoundedRectangle(cornerRadius: 10)
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(Color(red: 0.93, green: 0.94, blue: 0.96))
                             .overlay(
-                                RoundedRectangle(cornerRadius: 10)
+                                RoundedRectangle(cornerRadius: 20)
                                     .fill(
                                         LinearGradient(
                                             colors: [
@@ -91,7 +91,7 @@ struct WeeklyTrendWidget: View {
                                     )
                             )
                             .overlay(
-                                RoundedRectangle(cornerRadius: 10)
+                                RoundedRectangle(cornerRadius: 20)
                                     .strokeBorder(
                                         LinearGradient(
                                             colors: [.white.opacity(0.65), .white.opacity(0.25), .white.opacity(0.45)],
@@ -112,7 +112,7 @@ struct WeeklyTrendWidget: View {
                                         )
                                     )
                                     .frame(height: 14)
-                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                                    .clipShape(RoundedRectangle(cornerRadius: 20))
                             }
                             .shadow(color: Color(hex: "#10b981").opacity(0.08), radius: 4, y: 2)
                     }

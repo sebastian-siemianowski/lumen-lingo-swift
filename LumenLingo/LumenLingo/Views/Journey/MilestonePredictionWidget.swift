@@ -135,20 +135,20 @@ struct MilestonePredictionWidget: View {
         .padding(10)
         .background {
             if isDark {
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: 20)
                     .fill(pred.color.opacity(0.06))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 12)
+                        RoundedRectangle(cornerRadius: 20)
                             .strokeBorder(pred.color.opacity(0.12), lineWidth: 1)
                     )
             } else {
                 // Frost trough — recessed glass card with milestone color tint
                 ZStack {
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(pred.color.opacity(0.04))
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [
@@ -160,7 +160,7 @@ struct MilestonePredictionWidget: View {
                                 endPoint: .bottom
                             )
                         )
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(
                             LinearGradient(
                                 colors: [
@@ -185,7 +185,7 @@ struct MilestonePredictionWidget: View {
                             .frame(height: 14)
                         Spacer(minLength: 0)
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                 }
                 .shadow(color: pred.color.opacity(0.06), radius: 4, y: 2)
             }

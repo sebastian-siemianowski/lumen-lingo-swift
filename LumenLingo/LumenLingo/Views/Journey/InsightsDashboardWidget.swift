@@ -70,11 +70,11 @@ struct InsightsDashboardWidget: View {
         .background {
             if !isDark {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(hex: "#8b5cf6").opacity(0.03))
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [
@@ -86,7 +86,7 @@ struct InsightsDashboardWidget: View {
                                 endPoint: .bottom
                             )
                         )
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(
                             LinearGradient(
                                 colors: [.white.opacity(0.60), .white.opacity(0.25), .white.opacity(0.40)],
@@ -107,7 +107,7 @@ struct InsightsDashboardWidget: View {
                             .frame(height: 16)
                         Spacer(minLength: 0)
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                 }
                 .shadow(color: Color(hex: "#8b5cf6").opacity(0.06), radius: 4, y: 2)
             }
@@ -266,11 +266,11 @@ struct InsightsDashboardWidget: View {
         .background {
             if !isDark {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(hex: "#06b6d4").opacity(0.03))
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [
@@ -282,7 +282,7 @@ struct InsightsDashboardWidget: View {
                                 endPoint: .bottom
                             )
                         )
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(
                             LinearGradient(
                                 colors: [.white.opacity(0.60), .white.opacity(0.25), .white.opacity(0.40)],
@@ -303,7 +303,7 @@ struct InsightsDashboardWidget: View {
                             .frame(height: 16)
                         Spacer(minLength: 0)
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                 }
                 .shadow(color: Color(hex: "#06b6d4").opacity(0.06), radius: 4, y: 2)
             }
@@ -406,11 +406,11 @@ struct InsightsDashboardWidget: View {
         .background {
             if !isDark {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(hex: "#10b981").opacity(0.03))
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [
@@ -422,7 +422,7 @@ struct InsightsDashboardWidget: View {
                                 endPoint: .bottom
                             )
                         )
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(
                             LinearGradient(
                                 colors: [.white.opacity(0.60), .white.opacity(0.25), .white.opacity(0.40)],
@@ -443,7 +443,7 @@ struct InsightsDashboardWidget: View {
                             .frame(height: 16)
                         Spacer(minLength: 0)
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                 }
                 .shadow(color: Color(hex: "#10b981").opacity(0.06), radius: 4, y: 2)
             }
@@ -579,11 +579,11 @@ struct InsightsDashboardWidget: View {
         .background {
             if !isDark {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(Color(hex: "#ec4899").opacity(0.03))
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(
                             LinearGradient(
                                 colors: [
@@ -595,7 +595,7 @@ struct InsightsDashboardWidget: View {
                                 endPoint: .bottom
                             )
                         )
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(
                             LinearGradient(
                                 colors: [.white.opacity(0.60), .white.opacity(0.25), .white.opacity(0.40)],
@@ -616,7 +616,7 @@ struct InsightsDashboardWidget: View {
                             .frame(height: 16)
                         Spacer(minLength: 0)
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                 }
                 .shadow(color: Color(hex: "#ec4899").opacity(0.06), radius: 4, y: 2)
             }

@@ -182,10 +182,10 @@ struct ExportDataWidget: View {
             .frame(maxWidth: .infinity, minHeight: 100)
             .background {
                 if isDark {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(.white.opacity(0.04))
                         .overlay(
-                            RoundedRectangle(cornerRadius: 14)
+                            RoundedRectangle(cornerRadius: 20)
                                 .fill(
                                     LinearGradient(
                                         colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.04) },
@@ -195,7 +195,7 @@ struct ExportDataWidget: View {
                                 )
                         )
                         .overlay(
-                            RoundedRectangle(cornerRadius: 14)
+                            RoundedRectangle(cornerRadius: 20)
                                 .strokeBorder(
                                     LinearGradient(
                                         colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
@@ -208,9 +208,9 @@ struct ExportDataWidget: View {
                 } else {
                     // Frost trough — premium recessed PDF card
                     ZStack {
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(
                                 LinearGradient(
                                     colors: [Color(hex: "#fbbf24").opacity(0.14), Color(hex: "#f97316").opacity(0.10)],
@@ -218,7 +218,7 @@ struct ExportDataWidget: View {
                                     endPoint: .bottomTrailing
                                 )
                             )
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(
                                 LinearGradient(
                                     colors: [
@@ -230,7 +230,7 @@ struct ExportDataWidget: View {
                                     endPoint: .bottom
                                 )
                             )
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .strokeBorder(
                                 LinearGradient(
                                     colors: [
@@ -255,14 +255,14 @@ struct ExportDataWidget: View {
                                 .frame(height: 18)
                             Spacer(minLength: 0)
                         }
-                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
                     }
                     .shadow(color: Color(hex: "#f97316").opacity(0.14), radius: 6, y: 3)
                 }
             }
             .overlay {
                 if !isPDFAvailable {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(isDark ? .black.opacity(0.5) : .white.opacity(0.6))
                         .overlay {
                             VStack(spacing: 4) {
@@ -312,10 +312,10 @@ struct ExportDataWidget: View {
             .frame(maxWidth: .infinity, minHeight: 44)
             .background {
                 if isDark {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(.white.opacity(0.04))
                         .overlay(
-                            RoundedRectangle(cornerRadius: 14)
+                            RoundedRectangle(cornerRadius: 20)
                                 .strokeBorder(
                                     LinearGradient(
                                         colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.15) },
@@ -328,9 +328,9 @@ struct ExportDataWidget: View {
                 } else {
                     // Frost trough — recessed achievement bar
                     ZStack {
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(
                                 LinearGradient(
                                     colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.10) },
@@ -338,7 +338,7 @@ struct ExportDataWidget: View {
                                     endPoint: .bottomTrailing
                                 )
                             )
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(
                                 LinearGradient(
                                     colors: [
@@ -350,7 +350,7 @@ struct ExportDataWidget: View {
                                     endPoint: .bottom
                                 )
                             )
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .strokeBorder(
                                 LinearGradient(
                                     colors: [
@@ -444,10 +444,10 @@ struct ExportDataWidget: View {
             .padding(.horizontal, 8)
             .background {
                 if isDark {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(.white.opacity(0.04))
                         .overlay(
-                            RoundedRectangle(cornerRadius: 14)
+                            RoundedRectangle(cornerRadius: 20)
                                 .strokeBorder(
                                     format == .pdf
                                         ? LinearGradient(
@@ -466,11 +466,11 @@ struct ExportDataWidget: View {
                 } else {
                     // Frost trough — recessed format card
                     ZStack {
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(cardColor(for: format).opacity(0.12))
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(
                                 LinearGradient(
                                     colors: [
@@ -482,7 +482,7 @@ struct ExportDataWidget: View {
                                     endPoint: .bottom
                                 )
                             )
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
                             .strokeBorder(
                                 LinearGradient(
                                     colors: [
@@ -507,7 +507,7 @@ struct ExportDataWidget: View {
                                 .frame(height: 14)
                             Spacer(minLength: 0)
                         }
-                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
                     }
                     .shadow(color: cardColor(for: format).opacity(0.12), radius: 5, y: 2)
                 }
@@ -540,7 +540,7 @@ struct ExportDataWidget: View {
             .overlay {
                 // Lock overlay for tier-gated formats
                 if !isAvailable {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(isDark ? .black.opacity(0.5) : .white.opacity(0.6))
                         .overlay {
                             VStack(spacing: 4) {

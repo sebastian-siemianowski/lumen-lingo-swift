@@ -568,13 +568,13 @@ struct DashboardView: View {
         .frame(maxWidth: .infinity, minHeight: 80)
         .padding(8)
         .background(
-            RoundedRectangle(cornerRadius: 12)
+            RoundedRectangle(cornerRadius: 20)
                 .fill(isDark ? .white.opacity(0.06) : .white.opacity(0.72))
                 .overlay(
                     Group {
                         if !isDark {
                             // Subtle per-card accent — the "gem" tint
-                            RoundedRectangle(cornerRadius: 12)
+                            RoundedRectangle(cornerRadius: 20)
                                 .fill(accentTint.opacity(0.05))
                         }
                     }
@@ -584,7 +584,7 @@ struct DashboardView: View {
                         if !isDark {
                             // Top-edge light catch — premium "caught the sun" highlight
                             VStack(spacing: 0) {
-                                UnevenRoundedRectangle(topLeadingRadius: 12, topTrailingRadius: 12)
+                                UnevenRoundedRectangle(topLeadingRadius: 20, topTrailingRadius: 20)
                                     .fill(
                                         LinearGradient(
                                             colors: [.white.opacity(0.5), .clear],
@@ -599,7 +599,7 @@ struct DashboardView: View {
                     }
                 )
                 .overlay(
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(
                             isDark ? .white.opacity(0.08) : accentTint.opacity(0.18),
                             lineWidth: 0.5

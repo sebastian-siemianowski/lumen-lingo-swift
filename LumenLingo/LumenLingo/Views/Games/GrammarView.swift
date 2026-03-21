@@ -596,7 +596,7 @@ struct GrammarView: View {
             .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
             .background(
                 ZStack {
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(answerBackground(isSelected: isSelected, isCorrect: isCorrect, showResult: showResult))
 
                     // Top gloss highlight
@@ -612,9 +612,9 @@ struct GrammarView: View {
                             .frame(height: 22)
                         Spacer(minLength: 0)
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
 
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(
                             answerBorder(isSelected: isSelected, isCorrect: isCorrect, showResult: showResult),
                             lineWidth: showResult && (isSelected || isCorrect) ? 1.5 : 1
@@ -631,7 +631,7 @@ struct GrammarView: View {
             .opacity(showResult && !isSelected && !isCorrect ? 0.55 : 1.0)
             .shadow(color: isHinted ? Color(hex: "#a78bfa").opacity(hintGlowOpacity * 0.4) : .clear, radius: isHinted ? 12 : 0)
             .overlay(
-                RoundedRectangle(cornerRadius: 16)
+                RoundedRectangle(cornerRadius: 20)
                     .strokeBorder(Color(hex: "#a78bfa").opacity(isHinted ? hintGlowOpacity * 0.5 : 0), lineWidth: 2)
             )
             .modifier(ShakeEffect(animatableData: (showResult && isSelected && !isCorrect) ? wrongShakeAmount : 0))
@@ -673,7 +673,7 @@ struct GrammarView: View {
                     tipAvailablePulse = false
                 }
             ),
-            cornerRadius: 16,
+            cornerRadius: 20,
             header: {
                 HStack(spacing: 8) {
                     Image(systemName: "lightbulb.fill")
@@ -714,7 +714,7 @@ struct GrammarView: View {
         )
         .background(
             ZStack {
-                RoundedRectangle(cornerRadius: 16)
+                RoundedRectangle(cornerRadius: 20)
                     .fill(isDark ? .white.opacity(0.04) : Color.caribbeanRecessed.opacity(0.5))
 
                 // Top gloss highlight
@@ -730,7 +730,7 @@ struct GrammarView: View {
                         .frame(height: 20)
                     Spacer(minLength: 0)
                 }
-                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .clipShape(RoundedRectangle(cornerRadius: 20))
 
                 // Light-mode turquoise accent line — editorial "helpful info" signal
                 if !isDark {
@@ -745,7 +745,7 @@ struct GrammarView: View {
                 }
             }
             .overlay(
-                RoundedRectangle(cornerRadius: 16)
+                RoundedRectangle(cornerRadius: 20)
                     .strokeBorder(
                         (tipAvailablePulse && !showExplanation)
                             ? Color(hex: "#3b82f6").opacity(0.35)
