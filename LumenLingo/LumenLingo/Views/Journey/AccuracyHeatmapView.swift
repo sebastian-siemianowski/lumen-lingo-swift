@@ -83,8 +83,7 @@ struct AccuracyHeatmapView: View {
     // MARK: - Body
 
     var body: some View {
-        GlassPanelWrapper {
-            VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 12) {
                 HStack(spacing: 8) {
                     Image(systemName: "square.grid.3x3.fill")
                         .font(.system(size: 16))
@@ -176,7 +175,6 @@ struct AccuracyHeatmapView: View {
                 legendBar
                     .padding(.top, 4)
             }
-        }
         .animation(.spring(duration: 0.3), value: columnCount)
     }
 

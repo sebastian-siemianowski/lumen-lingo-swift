@@ -53,8 +53,7 @@ struct MonthlyReportWidget: View {
     }
 
     var body: some View {
-        GlassPanelWrapper {
-            VStack(alignment: .leading, spacing: 14) {
+        VStack(alignment: .leading, spacing: 14) {
                 Text(L.last30Days)
                     .font(.system(size: 11))
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
@@ -90,7 +89,6 @@ struct MonthlyReportWidget: View {
                     )
                 }
             }
-        }
     }
 
     private func metricCard(icon: String, value: String, label: String, change: Int, color: Color) -> some View {

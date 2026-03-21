@@ -439,19 +439,45 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                 .onPreferenceChange(HeaderPressedKey.self) { pressed in
                     isHeaderPressed = pressed
                 }
-                .background(
-                    isCollapsed ? AnyView(breathingGlassBackground) : AnyView(Color.clear)
-                )
 
-            // Category accent divider between header and content (Story 4.2.2)
-            if !isCollapsed, let cat = category {
-                categoryAccentDivider(cat)
+            // Luminous divider between header and content (integrated card layout)
+            if !isCollapsed {
+                if let cat = category {
+                    categoryAccentDivider(cat)
+                } else {
+                    // Default pearlescent divider for sections without a theme category
+                    Rectangle()
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    .clear,
+                                    isDark ? Color.white.opacity(0.08) : (colors.first ?? .gray).opacity(0.12),
+                                    isDark ? Color.white.opacity(0.12) : (colors.first ?? .gray).opacity(0.18),
+                                    isDark ? Color.white.opacity(0.08) : (colors.first ?? .gray).opacity(0.12),
+                                    .clear
+                                ],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(height: 0.5)
+                        .padding(.horizontal, 16)
+                }
             }
 
             MeasuredContentReveal(isExpanded: !isCollapsed) {
                 content()
+                    .padding(EdgeInsets(top: 4, leading: 20, bottom: 20, trailing: 20))
             }
         }
+        .background(
+            GlassCardBackground(cornerRadius: 24)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 24)
+                .strokeBorder(colors[0].opacity(0.05 * longPressGlow), lineWidth: 2)
+                .allowsHitTesting(false)
+        )
         .task(id: isHeaderPressed) {
             guard isHeaderPressed else { return }
             try? await Task.sleep(for: .milliseconds(300))

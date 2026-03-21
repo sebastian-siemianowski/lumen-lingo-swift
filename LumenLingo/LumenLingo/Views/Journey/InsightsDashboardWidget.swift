@@ -20,8 +20,7 @@ struct InsightsDashboardWidget: View {
     }
 
     var body: some View {
-        GlassPanelWrapper {
-            VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 16) {
                 if allProgress.count < 3 {
                     needMoreDataView
                 } else {
@@ -31,7 +30,6 @@ struct InsightsDashboardWidget: View {
                     fluencyTimelineSection
                 }
             }
-        }
     }
 
     // MARK: - Need More Data

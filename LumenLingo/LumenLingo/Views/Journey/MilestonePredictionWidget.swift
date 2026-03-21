@@ -60,8 +60,7 @@ struct MilestonePredictionWidget: View {
     }
 
     var body: some View {
-        GlassPanelWrapper {
-            VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 12) {
                 Text(L.basedOnYourPace)
                     .font(.system(size: 11))
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
@@ -93,7 +92,6 @@ struct MilestonePredictionWidget: View {
                     }
                 }
             }
-        }
     }
 
     private func predictionRow(_ pred: PredictedMilestone) -> some View {

@@ -52,8 +52,7 @@ struct WeeklyTrendWidget: View {
     }
 
     var body: some View {
-        GlassPanelWrapper {
-            VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 12) {
                 HStack {
                     Text(L.thisWeekVsLastWeek)
                         .font(.system(size: 11))
@@ -173,7 +172,6 @@ struct WeeklyTrendWidget: View {
                     }
                 }
             }
-        }
     }
 
     private func linePath(data: [Int], width: CGFloat, height: CGFloat) -> Path {

@@ -34,8 +34,7 @@ struct ExportDataWidget: View {
     }
 
     var body: some View {
-        GlassPanelWrapper {
-            VStack(spacing: 14) {
+        VStack(spacing: 14) {
                 // Section header
                 HStack {
                     Text("\(allProgress.count) \(L.sessionsLabel)")
@@ -62,7 +61,6 @@ struct ExportDataWidget: View {
                     }
                 }
             }
-        }
         .fullScreenCover(isPresented: $showPDFPreview) {
             PDFPreviewView(
                 pdfData: previewPDFData,

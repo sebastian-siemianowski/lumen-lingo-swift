@@ -33,8 +33,7 @@ struct DailyXPChartView: View {
     private var maxXP: Int { max(dailyData.map(\.xp).max() ?? 1, 1) }
 
     var body: some View {
-        GlassPanelWrapper {
-            VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 12) {
                 Text(L.last7Days)
                     .font(.system(size: 11))
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
@@ -111,6 +110,5 @@ struct DailyXPChartView: View {
                 .frame(height: 140)
                 .padding(.top, 4)
             }
-        }
     }
 }

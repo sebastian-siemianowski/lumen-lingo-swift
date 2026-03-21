@@ -440,14 +440,12 @@ struct JourneyView: View {
     }
 
     private var milestonesSection: some View {
-        GlassPanelWrapper {
-            VStack(alignment: .leading, spacing: 0) {
+        VStack(alignment: .leading, spacing: 0) {
                 ForEach(Array(milestones.enumerated()), id: \.element.title) { index, milestone in
                     milestoneRow(milestone, index: index, isLast: index == milestones.count - 1)
                         .staggeredReveal(index: index)
                 }
             }
-        }
         .onAppear {
             guard !reduceMotion else { return }
             // Flowing water animation for timeline connectors (Story 6.1.1)
@@ -1037,8 +1035,6 @@ struct JourneyView: View {
             }
             .staggeredReveal(index: 2)
         }
-        .padding(16)
-        .background(GlassCardBackground())
     }
 
     private func overviewStat(icon: String, value: String, label: String, color: Color) -> some View {
@@ -1068,8 +1064,6 @@ struct JourneyView: View {
                     .staggeredReveal(index: index)
             }
         }
-        .padding(14)
-        .background(GlassCardBackground())
     }
 
     private func gameTypeRow(_ type: GameType) -> some View {
@@ -1209,8 +1203,7 @@ struct JourneyView: View {
     // MARK: - Streak Section
 
     private var streakSection: some View {
-        GlassPanelWrapper {
-            VStack(spacing: 10) {
+        VStack(spacing: 10) {
                 HStack(spacing: 4) {
                     Text("\(profile?.streakDays ?? 0)")
                         .font(.system(size: 42, weight: .bold, design: .rounded))
@@ -1235,7 +1228,6 @@ struct JourneyView: View {
                     .staggeredReveal(index: 1)
             }
             .frame(maxWidth: .infinity)
-        }
     }
 
     // MARK: - Reset Progress
@@ -1346,63 +1338,6 @@ struct JourneyView: View {
             }
             .buttonStyle(LumenPressStyle(weight: .soft))
         }
-        .padding(isDark ? 14 : 16)
-        .background {
-            if isDark {
-                GlassCardBackground()
-            } else {
-                // Frost trough — recessed reset card
-                ZStack {
-                    RoundedRectangle(cornerRadius: 24)
-                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
-                    RoundedRectangle(cornerRadius: 24)
-                        .fill(Color.red.opacity(0.03))
-                    RoundedRectangle(cornerRadius: 24)
-                        .fill(
-                            LinearGradient(
-                                colors: [
-                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
-                                    Color.clear,
-                                    Color.white.opacity(0.15)
-                                ],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            )
-                        )
-                    RoundedRectangle(cornerRadius: 24)
-                        .strokeBorder(
-                            LinearGradient(
-                                colors: [
-                                    Color.white.opacity(0.65),
-                                    Color.white.opacity(0.30),
-                                    Color.white.opacity(0.45)
-                                ],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            ),
-                            lineWidth: 0.5
-                        )
-                    VStack {
-                        RoundedRectangle(cornerRadius: 24)
-                            .fill(
-                                LinearGradient(
-                                    colors: [
-                                        Color.white.opacity(0.45),
-                                        Color.white.opacity(0.10),
-                                        Color.clear
-                                    ],
-                                    startPoint: .top,
-                                    endPoint: .center
-                                )
-                            )
-                            .frame(height: 18)
-                        Spacer()
-                    }
-                    .clipShape(RoundedRectangle(cornerRadius: 24))
-                }
-                .shadow(color: Color.red.opacity(0.06), radius: 4, y: 2)
-            }
-        }
     }
 
     // MARK: - Wisdom Quote
@@ -1482,27 +1417,21 @@ struct JourneyView: View {
         .scaleEffect(quoteScale)
         .frame(maxWidth: .infinity)
         .frame(height: 180)
-        .padding(.horizontal, 20)
-        .padding(.vertical, 20)
-        .background(
-            ZStack {
-                GlassCardBackground()
-
-                // Glow pulse on tap
-                RoundedRectangle(cornerRadius: 22)
-                    .fill(
-                        RadialGradient(
-                            colors: [
-                                Color(hex: "#c084fc").opacity(quoteGlowIntensity * 0.15),
-                                Color(hex: "#f0abfc").opacity(quoteGlowIntensity * 0.06),
-                                .clear
-                            ],
-                            center: .center,
-                            startRadius: 0,
-                            endRadius: 200
-                        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 22)
+                .fill(
+                    RadialGradient(
+                        colors: [
+                            Color(hex: "#c084fc").opacity(quoteGlowIntensity * 0.15),
+                            Color(hex: "#f0abfc").opacity(quoteGlowIntensity * 0.06),
+                            .clear
+                        ],
+                        center: .center,
+                        startRadius: 0,
+                        endRadius: 200
                     )
-            }
+                )
+                .allowsHitTesting(false)
         )
         .onTapGesture { cycleQuote() }
     }
