@@ -76,15 +76,15 @@ struct WeeklyTrendWidget: View {
                     // Light mode frost trough chart background
                     if !isDark {
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                            .fill(Color(red: 0.93, green: 0.94, blue: 0.96))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 10)
                                     .fill(
                                         LinearGradient(
                                             colors: [
-                                                Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.15),
+                                                Color(red: 0.78, green: 0.80, blue: 0.85).opacity(0.25),
                                                 Color.clear,
-                                                Color.white.opacity(0.10)
+                                                Color.white.opacity(0.15)
                                             ],
                                             startPoint: .top,
                                             endPoint: .bottom
@@ -95,13 +95,27 @@ struct WeeklyTrendWidget: View {
                                 RoundedRectangle(cornerRadius: 10)
                                     .strokeBorder(
                                         LinearGradient(
-                                            colors: [.white.opacity(0.55), .white.opacity(0.25), .white.opacity(0.40)],
+                                            colors: [.white.opacity(0.65), .white.opacity(0.25), .white.opacity(0.45)],
                                             startPoint: .top,
                                             endPoint: .bottom
                                         ),
                                         lineWidth: 0.5
                                     )
                             )
+                            // Surface highlight band
+                            .overlay(alignment: .top) {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [.white.opacity(0.50), .white.opacity(0.12), .clear],
+                                            startPoint: .top,
+                                            endPoint: .center
+                                        )
+                                    )
+                                    .frame(height: 14)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                            }
+                            .shadow(color: Color(hex: "#10b981").opacity(0.08), radius: 4, y: 2)
                     }
 
                     GeometryReader { geo in

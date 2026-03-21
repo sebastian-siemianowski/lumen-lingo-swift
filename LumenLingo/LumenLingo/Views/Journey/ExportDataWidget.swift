@@ -215,7 +215,7 @@ struct ExportDataWidget: View {
                         RoundedRectangle(cornerRadius: 14)
                             .fill(
                                 LinearGradient(
-                                    colors: [Color(hex: "#fbbf24").opacity(0.06), Color(hex: "#f97316").opacity(0.04)],
+                                    colors: [Color(hex: "#fbbf24").opacity(0.14), Color(hex: "#f97316").opacity(0.10)],
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
                                 )
@@ -259,7 +259,7 @@ struct ExportDataWidget: View {
                         }
                         .clipShape(RoundedRectangle(cornerRadius: 14))
                     }
-                    .shadow(color: Color(hex: "#f97316").opacity(0.08), radius: 4, y: 2)
+                    .shadow(color: Color(hex: "#f97316").opacity(0.14), radius: 6, y: 3)
                 }
             }
             .overlay {
@@ -335,7 +335,7 @@ struct ExportDataWidget: View {
                         RoundedRectangle(cornerRadius: 14)
                             .fill(
                                 LinearGradient(
-                                    colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.04) },
+                                    colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.10) },
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
                                 )
@@ -366,7 +366,7 @@ struct ExportDataWidget: View {
                                 lineWidth: 0.5
                             )
                     }
-                    .shadow(color: tierManager.currentTier.gradientColors.first?.opacity(0.06) ?? .clear, radius: 3, y: 1)
+                    .shadow(color: tierManager.currentTier.gradientColors.first?.opacity(0.12) ?? .clear, radius: 5, y: 2)
                 }
             }
         }
@@ -471,7 +471,7 @@ struct ExportDataWidget: View {
                         RoundedRectangle(cornerRadius: 14)
                             .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
                         RoundedRectangle(cornerRadius: 14)
-                            .fill(cardColor(for: format).opacity(0.04))
+                            .fill(cardColor(for: format).opacity(0.12))
                         RoundedRectangle(cornerRadius: 14)
                             .fill(
                                 LinearGradient(
@@ -511,7 +511,7 @@ struct ExportDataWidget: View {
                         }
                         .clipShape(RoundedRectangle(cornerRadius: 14))
                     }
-                    .shadow(color: cardColor(for: format).opacity(0.06), radius: 4, y: 2)
+                    .shadow(color: cardColor(for: format).opacity(0.12), radius: 5, y: 2)
                 }
             }
             .overlay(alignment: .topTrailing) {

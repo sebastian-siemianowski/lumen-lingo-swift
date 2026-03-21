@@ -51,14 +51,15 @@ struct DailyXPChartView: View {
                                 // Track trough — frost recessed base
                                 if !isDark {
                                     RoundedRectangle(cornerRadius: 4)
-                                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                                        .fill(Color(red: 0.92, green: 0.93, blue: 0.95))
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 4)
                                                 .fill(
                                                     LinearGradient(
                                                         colors: [
-                                                            Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.18),
-                                                            Color.clear
+                                                            Color(red: 0.78, green: 0.80, blue: 0.85).opacity(0.25),
+                                                            Color.clear,
+                                                            Color.white.opacity(0.10)
                                                         ],
                                                         startPoint: .top,
                                                         endPoint: .bottom
@@ -67,7 +68,7 @@ struct DailyXPChartView: View {
                                         )
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 4)
-                                                .strokeBorder(.white.opacity(0.45), lineWidth: 0.5)
+                                                .strokeBorder(.white.opacity(0.50), lineWidth: 0.5)
                                         )
                                 }
 
@@ -97,7 +98,7 @@ struct DailyXPChartView: View {
                                         }
                                         .clipShape(RoundedRectangle(cornerRadius: 4))
                                     )
-                                    .shadow(color: isDark ? .clear : Color(hex: "#667eea").opacity(0.20), radius: 4, y: 2)
+                                    .shadow(color: isDark ? .clear : Color(hex: "#667eea").opacity(0.28), radius: 5, y: 2)
                             }
 
                             Text(day.label)

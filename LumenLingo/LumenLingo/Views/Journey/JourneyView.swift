@@ -751,38 +751,86 @@ struct JourneyView: View {
                 .padding(.vertical, 8)
                 .padding(.horizontal, 10)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(
-                    Group {
-                        if isUpcoming {
-                            // Golden shimmer card for upcoming milestone
-                            RoundedRectangle(cornerRadius: 12)
-                                .fill(Color(hex: "F59E0B").opacity(0.04))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .strokeBorder(
-                                            LinearGradient(
-                                                colors: [Color(hex: "F59E0B").opacity(0.20), Color(hex: "FB923C").opacity(0.12)],
-                                                startPoint: .topLeading,
-                                                endPoint: .bottomTrailing
-                                            ),
-                                            lineWidth: 1
-                                        )
-                                )
-                        } else if isUnlocked {
-                            // Warm unlocked card
-                            RoundedRectangle(cornerRadius: 12)
-                                .fill(milestone.color.opacity(0.04))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .strokeBorder(milestone.color.opacity(0.10), lineWidth: 0.5)
-                                )
-                        } else {
-                            // Locked card — disabled surface
-                            RoundedRectangle(cornerRadius: 12)
-                                .fill(Color.caribbeanDisabled.opacity(0.3))
+                .background {
+                    if isDark {
+                        Group {
+                            if isUpcoming {
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(Color(hex: "F59E0B").opacity(0.04))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 12)
+                                            .strokeBorder(
+                                                LinearGradient(
+                                                    colors: [Color(hex: "F59E0B").opacity(0.20), Color(hex: "FB923C").opacity(0.12)],
+                                                    startPoint: .topLeading,
+                                                    endPoint: .bottomTrailing
+                                                ),
+                                                lineWidth: 1
+                                            )
+                                    )
+                            } else if isUnlocked {
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(milestone.color.opacity(0.04))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 12)
+                                            .strokeBorder(milestone.color.opacity(0.10), lineWidth: 0.5)
+                                    )
+                            } else {
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(Color.caribbeanDisabled.opacity(0.3))
+                            }
                         }
+                    } else {
+                        // Frost trough — 3D recessed milestone card
+                        let accentColor: Color = isUpcoming ? Color(hex: "F59E0B") : (isUnlocked ? milestone.color : Color.gray)
+                        let accentOpacity: Double = isUpcoming ? 0.12 : (isUnlocked ? 0.08 : 0.03)
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(Color(red: 0.93, green: 0.94, blue: 0.96))
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(accentColor.opacity(accentOpacity))
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [
+                                            Color(red: 0.78, green: 0.80, blue: 0.85).opacity(0.25),
+                                            Color.clear,
+                                            Color.white.opacity(0.16)
+                                        ],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    )
+                                )
+                            RoundedRectangle(cornerRadius: 12)
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [
+                                            Color.white.opacity(0.68),
+                                            Color.white.opacity(0.28),
+                                            Color.white.opacity(0.48)
+                                        ],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    ),
+                                    lineWidth: 0.5
+                                )
+                            VStack {
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [.white.opacity(0.50), .white.opacity(0.12), .clear],
+                                            startPoint: .top,
+                                            endPoint: .center
+                                        )
+                                    )
+                                    .frame(height: 12)
+                                Spacer()
+                            }
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                        }
+                        .shadow(color: accentColor.opacity(isUnlocked ? 0.12 : 0.04), radius: 5, y: 2)
                     }
-                )
+                }
             }
         }
         .padding(.vertical, isDark ? 0 : 3)
@@ -1235,27 +1283,65 @@ struct JourneyView: View {
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 12)
                 .background(
-                    RoundedRectangle(cornerRadius: 12)
-                        .fill(
-                            LinearGradient(
-                                colors: isDark
-                                    ? [.red.opacity(0.7), .red.opacity(0.5)]
-                                    : [.red.opacity(0.65), .red.opacity(0.45)],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .strokeBorder(
-                                    isDark ? .white.opacity(0.15) : .white.opacity(0.25),
-                                    lineWidth: isDark ? 1 : 0.75
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(
+                                LinearGradient(
+                                    colors: isDark
+                                        ? [.red.opacity(0.7), .red.opacity(0.5)]
+                                        : [Color(red: 0.88, green: 0.22, blue: 0.22), Color(red: 0.78, green: 0.18, blue: 0.18)],
+                                    startPoint: .top,
+                                    endPoint: .bottom
                                 )
-                        )
-                        .shadow(
-                            color: isDark ? .clear : .red.opacity(0.12),
-                            radius: 6, y: 2
-                        )
+                            )
+                        // 3D top highlight band
+                        if !isDark {
+                            VStack {
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [.white.opacity(0.38), .white.opacity(0.08), .clear],
+                                            startPoint: .top,
+                                            endPoint: .center
+                                        )
+                                    )
+                                    .frame(height: 16)
+                                Spacer()
+                            }
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                        }
+                        // Inner bottom shadow for inset feel
+                        if !isDark {
+                            VStack {
+                                Spacer()
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [.clear, .black.opacity(0.12)],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        )
+                                    )
+                                    .frame(height: 10)
+                            }
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                        }
+                        RoundedRectangle(cornerRadius: 12)
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: isDark
+                                        ? [.white.opacity(0.15), .white.opacity(0.15)]
+                                        : [.white.opacity(0.40), .white.opacity(0.10), .white.opacity(0.05)],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                ),
+                                lineWidth: isDark ? 1 : 0.75
+                            )
+                    }
+                    .shadow(
+                        color: isDark ? .clear : Color(red: 0.7, green: 0.1, blue: 0.1).opacity(0.25),
+                        radius: 8, y: 3
+                    )
                 )
             }
             .buttonStyle(LumenPressStyle(weight: .soft))
