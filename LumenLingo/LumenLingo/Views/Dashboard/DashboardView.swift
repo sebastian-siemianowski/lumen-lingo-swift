@@ -24,15 +24,11 @@ struct DashboardView: View {
     @State private var isHeaderCollapsed = false
     @State private var showLanguageSheet = false
     @State private var showMembershipSheet = false
-    @State private var fogBreath: CGFloat = 0
-    @State private var adventureIconPulse: CGFloat = 0
-    @State private var activityIconPulse: CGFloat = 0
     @State private var tierIconAppeared = false
     @State private var showExpiredSheet = false
     @State private var showAllLanguages = false
     @State private var crossLanguageRecord: GameProgressRecord?
     @State private var statsAppeared = false
-    @State private var emptyStatePulse: CGFloat = 0
     @State private var scrollOffset: CGFloat = 0
 
     private var profile: UserProfile? { profiles.first }
@@ -246,7 +242,7 @@ struct DashboardView: View {
 
     private var languageSelector: some View {
         Button {
-            AudioService.shared.playLanguageHover()
+            Task.detached(priority: .utility) { await AudioService.shared.playLanguageHover() }
             HapticsService.shared.buttonPress()
             showLanguageSheet = true
         } label: {
@@ -805,64 +801,21 @@ struct DashboardView: View {
         VStack(spacing: 16) {
             // Section header
             HStack(spacing: 14) {
-                ZStack {
-                    if isDark {
-                        // Dark mode pulsing glow orbs (original)
-                        Circle()
-                            .fill(Color(hex: "#d946ef").opacity(0.15))
-                            .frame(width: 56, height: 56)
-                            .scaleEffect(1.0 + adventureIconPulse * 0.15)
-                            .blur(radius: 8)
-
-                        Circle()
-                            .fill(Color(hex: "#8b5cf6").opacity(0.1))
-                            .frame(width: 48, height: 48)
-                            .scaleEffect(1.0 + adventureIconPulse * 0.1)
-                            .blur(radius: 6)
-                            .offset(x: 4, y: 4)
-                    }
-
-                    // Icon container
-                    RoundedRectangle(cornerRadius: 14)
-                        .fill(
-                            isDark
-                                ? LinearGradient(
-                                    colors: [Color(hex: "#8b5cf6"), Color(hex: "#d946ef"), Color(hex: "#7c3aed")],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                                : LinearGradient.caribbeanGradientOcean
-                        )
-                        .frame(width: 48, height: 48)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 14)
-                                .fill(
-                                    LinearGradient(
-                                        colors: [.white.opacity(0.25), .clear],
-                                        startPoint: .top,
-                                        endPoint: .center
-                                    )
-                                )
-                        )
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 14)
-                                .strokeBorder(.white.opacity(0.2), lineWidth: 1)
-                        )
-                        .shadow(color: isDark
-                            ? Color(hex: "#d946ef").opacity(0.4 + adventureIconPulse * 0.2)
-                            : Color.caribbeanOcean.opacity(0.25),
-                            radius: 12)
-
-                    Image(systemName: "wand.and.stars")
-                        .font(.system(size: 22, weight: .medium))
-                        .foregroundStyle(.white)
-                        .shadow(color: .white.opacity(0.3), radius: 2)
-                }
-                .onAppear {
-                    withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
-                        adventureIconPulse = 1
-                    }
-                }
+                AnimatedSectionIcon(
+                    isDark: isDark,
+                    systemName: "wand.and.stars",
+                    iconSize: 22,
+                    containerSize: 48,
+                    containerRadius: 14,
+                    darkGradient: [Color(hex: "#8b5cf6"), Color(hex: "#d946ef"), Color(hex: "#7c3aed")],
+                    lightGradient: nil,
+                    glowColor1: Color(hex: "#d946ef"),
+                    glowColor2: Color(hex: "#8b5cf6"),
+                    glowSize1: 56,
+                    glowSize2: 48,
+                    shadowColor: isDark ? Color(hex: "#d946ef") : Color.caribbeanOcean,
+                    shadowBaseOpacity: isDark ? 0.4 : 0.25
+                )
 
                 VStack(alignment: .leading, spacing: 3) {
                     Text("Choose Your Adventure")
@@ -947,62 +900,21 @@ struct DashboardView: View {
 
         return VStack(spacing: 12) {
             HStack(spacing: 14) {
-                ZStack {
-                    if isDark {
-                        Circle()
-                            .fill(Color(hex: "#667eea").opacity(0.15))
-                            .frame(width: 48, height: 48)
-                            .scaleEffect(1.0 + activityIconPulse * 0.15)
-                            .blur(radius: 8)
-
-                        Circle()
-                            .fill(Color(hex: "#764ba2").opacity(0.1))
-                            .frame(width: 40, height: 40)
-                            .scaleEffect(1.0 + activityIconPulse * 0.1)
-                            .blur(radius: 6)
-                            .offset(x: 4, y: 4)
-                    }
-
-                    RoundedRectangle(cornerRadius: 12)
-                        .fill(
-                            isDark
-                                ? LinearGradient(
-                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#5b4fcf")],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                                : LinearGradient.caribbeanGradientOcean
-                        )
-                        .frame(width: 40, height: 40)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .fill(
-                                    LinearGradient(
-                                        colors: [.white.opacity(0.25), .clear],
-                                        startPoint: .top,
-                                        endPoint: .center
-                                    )
-                                )
-                        )
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .strokeBorder(.white.opacity(0.2), lineWidth: 1)
-                        )
-                        .shadow(color: isDark
-                            ? Color(hex: "#667eea").opacity(0.35 + activityIconPulse * 0.15)
-                            : Color.caribbeanOcean.opacity(0.2),
-                            radius: 10)
-
-                    Image(systemName: "clock.arrow.trianglehead.counterclockwise.rotate.90")
-                        .font(.system(size: 18, weight: .medium))
-                        .foregroundStyle(.white)
-                        .shadow(color: .white.opacity(0.3), radius: 2)
-                }
-                .onAppear {
-                    withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
-                        activityIconPulse = 1
-                    }
-                }
+                AnimatedSectionIcon(
+                    isDark: isDark,
+                    systemName: "clock.arrow.trianglehead.counterclockwise.rotate.90",
+                    iconSize: 18,
+                    containerSize: 40,
+                    containerRadius: 12,
+                    darkGradient: [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#5b4fcf")],
+                    lightGradient: nil,
+                    glowColor1: Color(hex: "#667eea"),
+                    glowColor2: Color(hex: "#764ba2"),
+                    glowSize1: 48,
+                    glowSize2: 40,
+                    shadowColor: isDark ? Color(hex: "#667eea") : Color.caribbeanOcean,
+                    shadowBaseOpacity: isDark ? 0.35 : 0.2
+                )
 
                 VStack(alignment: .leading, spacing: 3) {
                     Text("Recent Activity")
@@ -1110,17 +1022,7 @@ struct DashboardView: View {
                 .padding(.top, 4)
             } else {
                 // Light mode — sparkles icon with warm gradient and gentle pulse
-                Image(systemName: "sparkles")
-                    .font(.system(size: 42, weight: .thin))
-                    .foregroundStyle(LinearGradient.caribbeanGradientSunset)
-                    .scaleEffect(1.0 + emptyStatePulse * 0.06)
-                    .opacity(0.8 + emptyStatePulse * 0.2)
-                    .padding(.top, 8)
-                    .onAppear {
-                        withAnimation(.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
-                            emptyStatePulse = 1.0
-                        }
-                    }
+                AnimatedEmptyStateSparkle()
             }
 
             VStack(spacing: 6) {
@@ -1209,61 +1111,10 @@ struct DashboardView: View {
         .padding(.vertical, 5)
     }
 
-    // MARK: - Fog Overlay
+    // MARK: - Fog Overlay (isolated to prevent parent re-renders)
 
     private var fogOverlay: some View {
-        VStack {
-            // Top fog overlay (radial glow from header)
-            if isDark {
-                ZStack {
-                    RadialGradient(
-                        colors: [
-                            Color(hex: "#667eea").opacity(0.08 + 0.04 * Double(fogBreath)),
-                            Color(hex: "#764ba2").opacity(0.04),
-                            .clear
-                        ],
-                        center: .top,
-                        startRadius: 0,
-                        endRadius: 250
-                    )
-                    .frame(height: 120)
-                    .allowsHitTesting(false)
-                }
-            }
-
-            Spacer()
-
-            // Bottom fog overlay (animated breathing)
-            ZStack {
-                if isDark {
-                    LinearGradient(
-                        colors: [
-                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0),
-                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.5 + 0.15 * Double(fogBreath)),
-                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.9 + 0.05 * Double(fogBreath))
-                        ],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                    .frame(height: 90)
-                }
-
-                // Subtle fog wisps
-                if isDark {
-                    Ellipse()
-                        .fill(Color(hex: "#667eea").opacity(0.04 + 0.02 * Double(fogBreath)))
-                        .frame(width: 200, height: 40)
-                        .blur(radius: 20)
-                        .offset(x: -40, y: -20)
-                }
-            }
-            .allowsHitTesting(false)
-        }
-        .onAppear {
-            withAnimation(.easeInOut(duration: 4.0).repeatForever(autoreverses: true)) {
-                fogBreath = 1.0
-            }
-        }
+        AnimatedFogOverlay(isDark: isDark)
     }
 
     // MARK: - Helpers
@@ -1362,7 +1213,6 @@ struct DashboardGameCard: View {
     @Environment(\.self) private var env
     @Environment(\.colorScheme) private var sysColorScheme
     @State private var appeared = false
-    @State private var iconPulse: CGFloat = 0
 
     private var isDark: Bool { sysColorScheme == .dark }
 
@@ -1375,7 +1225,7 @@ struct DashboardGameCard: View {
             VStack(alignment: .leading, spacing: 0) {
                 // Icon + Title + Description
                 HStack(alignment: .top, spacing: 14) {
-                    iconView
+                    AnimatedGameCardIcon(isDark: isDark, colorScheme: colorScheme, icon: icon)
 
                     VStack(alignment: .leading, spacing: 4) {
                         HStack(spacing: 6) {
@@ -1501,9 +1351,6 @@ struct DashboardGameCard: View {
             withAnimation(.spring(response: 0.5, dampingFraction: 0.8).delay(0.1)) {
                 appeared = true
             }
-            withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
-                iconPulse = 1
-            }
         }
     }
 
@@ -1526,10 +1373,189 @@ struct DashboardGameCard: View {
             .opacity(isDark ? 0.85 : 0.7)
     }
 
-    private var iconView: some View {
+}
+
+// MARK: - Scroll Offset Tracking
+
+private struct ScrollOffsetPreferenceKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
+
+// MARK: - Dashboard Press (uses shared LumenNavigationPressModifier)
+
+extension View {
+    /// Dashboard convenience alias for lumenNavigationPress.
+    func dashboardPress(accentColor: Color = .white, scale: CGFloat = 0.955, action: @escaping () -> Void) -> some View {
+        lumenNavigationPress(accentColor: accentColor, scale: scale, action: action)
+    }
+}
+
+// MARK: - Isolated Animation Subviews (prevent parent re-renders)
+
+/// Fog overlay with its own breathing animation state — prevents
+/// the forever-looping fogBreath from dirtying the entire DashboardView body.
+private struct AnimatedFogOverlay: View {
+    let isDark: Bool
+    @State private var fogBreath: CGFloat = 0
+
+    var body: some View {
+        VStack {
+            if isDark {
+                ZStack {
+                    RadialGradient(
+                        colors: [
+                            Color(hex: "#667eea").opacity(0.08 + 0.04 * Double(fogBreath)),
+                            Color(hex: "#764ba2").opacity(0.04),
+                            .clear
+                        ],
+                        center: .top,
+                        startRadius: 0,
+                        endRadius: 250
+                    )
+                    .frame(height: 120)
+                    .allowsHitTesting(false)
+                }
+            }
+
+            Spacer()
+
+            ZStack {
+                if isDark {
+                    LinearGradient(
+                        colors: [
+                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0),
+                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.5 + 0.15 * Double(fogBreath)),
+                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.9 + 0.05 * Double(fogBreath))
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                    .frame(height: 90)
+                }
+
+                if isDark {
+                    Ellipse()
+                        .fill(Color(hex: "#667eea").opacity(0.04 + 0.02 * Double(fogBreath)))
+                        .frame(width: 200, height: 40)
+                        .blur(radius: 20)
+                        .offset(x: -40, y: -20)
+                }
+            }
+            .allowsHitTesting(false)
+        }
+        .onAppear {
+            guard isDark else { return }
+            withAnimation(.easeInOut(duration: 4.0).repeatForever(autoreverses: true)) {
+                fogBreath = 1.0
+            }
+        }
+    }
+}
+
+/// Pulsing section header icon — owns its own pulse @State
+/// so the forever animation only re-renders this tiny leaf view.
+private struct AnimatedSectionIcon: View {
+    let isDark: Bool
+    let systemName: String
+    var iconSize: CGFloat = 18
+    var containerSize: CGFloat = 40
+    var containerRadius: CGFloat = 12
+    var darkGradient: [Color]
+    var lightGradient: [Color]?
+    var glowColor1: Color
+    var glowColor2: Color
+    var glowSize1: CGFloat = 48
+    var glowSize2: CGFloat = 40
+    var shadowColor: Color
+    var shadowBaseOpacity: Double = 0.35
+
+    @State private var pulse: CGFloat = 0
+
+    var body: some View {
         ZStack {
             if isDark {
-                // Dark mode pulsing glow orbs
+                Circle()
+                    .fill(glowColor1.opacity(0.15))
+                    .frame(width: glowSize1, height: glowSize1)
+                    .scaleEffect(1.0 + pulse * 0.15)
+                    .blur(radius: 8)
+
+                Circle()
+                    .fill(glowColor2.opacity(0.1))
+                    .frame(width: glowSize2, height: glowSize2)
+                    .scaleEffect(1.0 + pulse * 0.1)
+                    .blur(radius: 6)
+                    .offset(x: 4, y: 4)
+            }
+
+            RoundedRectangle(cornerRadius: containerRadius)
+                .fill(
+                    isDark
+                        ? LinearGradient(colors: darkGradient, startPoint: .topLeading, endPoint: .bottomTrailing)
+                        : (lightGradient.map { LinearGradient(colors: $0, startPoint: .topLeading, endPoint: .bottomTrailing) } ?? LinearGradient.caribbeanGradientOcean)
+                )
+                .frame(width: containerSize, height: containerSize)
+                .overlay(
+                    RoundedRectangle(cornerRadius: containerRadius)
+                        .fill(LinearGradient(colors: [.white.opacity(0.25), .clear], startPoint: .top, endPoint: .center))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: containerRadius)
+                        .strokeBorder(.white.opacity(0.2), lineWidth: 1)
+                )
+                .shadow(
+                    color: shadowColor.opacity(isDark ? shadowBaseOpacity + pulse * 0.2 : shadowBaseOpacity),
+                    radius: isDark ? 12 : 10
+                )
+
+            Image(systemName: systemName)
+                .font(.system(size: iconSize, weight: .medium))
+                .foregroundStyle(.white)
+                .shadow(color: .white.opacity(0.3), radius: 2)
+        }
+        .onAppear {
+            guard isDark else { return }
+            withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
+                pulse = 1
+            }
+        }
+    }
+}
+
+/// Sparkle icon with gentle pulse for the empty-state — isolated animation.
+private struct AnimatedEmptyStateSparkle: View {
+    @State private var pulse: CGFloat = 0
+
+    var body: some View {
+        Image(systemName: "sparkles")
+            .font(.system(size: 42, weight: .thin))
+            .foregroundStyle(LinearGradient.caribbeanGradientSunset)
+            .scaleEffect(1.0 + pulse * 0.06)
+            .opacity(0.8 + pulse * 0.2)
+            .padding(.top, 8)
+            .onAppear {
+                withAnimation(.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
+                    pulse = 1.0
+                }
+            }
+    }
+}
+
+/// Game card icon with pulsing glow — isolated so the forever animation
+/// doesn't cause the entire DashboardGameCard body to re-evaluate.
+private struct AnimatedGameCardIcon: View {
+    let isDark: Bool
+    let colorScheme: GameCardColorScheme
+    let icon: String
+
+    @State private var iconPulse: CGFloat = 0
+
+    var body: some View {
+        ZStack {
+            if isDark {
                 Circle()
                     .fill(colorScheme.primary.opacity(0.15))
                     .frame(width: 48, height: 48)
@@ -1544,7 +1570,6 @@ struct DashboardGameCard: View {
                     .offset(x: 4, y: 4)
             }
 
-            // Icon container
             RoundedRectangle(cornerRadius: 12)
                 .fill(
                     LinearGradient(
@@ -1573,30 +1598,17 @@ struct DashboardGameCard: View {
                     : (colorScheme.caribbeanTint.first ?? colorScheme.primary).opacity(0.2),
                     radius: isDark ? 12 : 8)
 
-            // Icon symbol
             Image(systemName: icon)
                 .font(.system(size: 18, weight: .medium))
                 .foregroundStyle(.white)
                 .shadow(color: .white.opacity(0.3), radius: 2)
         }
-    }
-}
-
-// MARK: - Scroll Offset Tracking
-
-private struct ScrollOffsetPreferenceKey: PreferenceKey {
-    static var defaultValue: CGFloat = 0
-    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
-        value = nextValue()
-    }
-}
-
-// MARK: - Dashboard Press (uses shared LumenNavigationPressModifier)
-
-extension View {
-    /// Dashboard convenience alias for lumenNavigationPress.
-    func dashboardPress(accentColor: Color = .white, scale: CGFloat = 0.955, action: @escaping () -> Void) -> some View {
-        lumenNavigationPress(accentColor: accentColor, scale: scale, action: action)
+        .onAppear {
+            guard isDark else { return }
+            withAnimation(.easeInOut(duration: 2.5).repeatForever(autoreverses: true)) {
+                iconPulse = 1
+            }
+        }
     }
 }
 
