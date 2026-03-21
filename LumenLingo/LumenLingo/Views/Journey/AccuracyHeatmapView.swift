@@ -369,61 +369,25 @@ struct AccuracyHeatmapView: View {
                             )
                     )
             } else {
-                // Frost trough — emerald-gold mastered card
-                ZStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color(red: 0.93, green: 0.95, blue: 0.94))
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(
-                            LinearGradient(
-                                colors: [Color(hex: "#10b981").opacity(0.10), Color(hex: "#f59e0b").opacity(0.06)],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(
+                        LinearGradient(
+                            colors: [Color(hex: "#10b981").opacity(0.10), Color(hex: "#f59e0b").opacity(0.06)],
+                            startPoint: .leading,
+                            endPoint: .trailing
                         )
-                    // Inset shadow band
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(
-                            LinearGradient(
-                                colors: [
-                                    Color(red: 0.78, green: 0.82, blue: 0.80).opacity(0.22),
-                                    Color.clear,
-                                    Color.white.opacity(0.14)
-                                ],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            )
-                        )
-                    // Crisp inner border
-                    RoundedRectangle(cornerRadius: 20)
-                        .strokeBorder(
-                            LinearGradient(
-                                colors: [
-                                    Color.white.opacity(0.65),
-                                    Color.white.opacity(0.25),
-                                    Color.white.opacity(0.45)
-                                ],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            ),
-                            lineWidth: 0.5
-                        )
-                    // Top frost highlight
-                    VStack(spacing: 0) {
-                        Rectangle()
-                            .fill(
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .strokeBorder(
                                 LinearGradient(
-                                    colors: [.white.opacity(0.50), .white.opacity(0.12), .clear],
-                                    startPoint: .top,
-                                    endPoint: .bottom
-                                )
+                                    colors: [Color(hex: "#10b981").opacity(0.2), Color(hex: "#f59e0b").opacity(0.12)],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                ),
+                                lineWidth: 0.5
                             )
-                            .frame(height: 14)
-                        Spacer(minLength: 0)
-                    }
-                }
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-                .shadow(color: Color(hex: "#10b981").opacity(0.10), radius: 5, y: 2)
+                    )
             }
         }
         .padding(.bottom, inProgressCategories.isEmpty ? 0 : 4)
@@ -560,52 +524,8 @@ private struct HeatmapCell: View {
                     .fill(.ultraThinMaterial)
                     .opacity(0.6)
             } else {
-                // Frost trough — recessed glass cell
-                ZStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color(red: 0.93, green: 0.94, blue: 0.96))
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(accuracyColor.opacity(0.10))
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(
-                            LinearGradient(
-                                colors: [
-                                    Color(red: 0.78, green: 0.80, blue: 0.85).opacity(0.28),
-                                    Color.clear,
-                                    Color.white.opacity(0.18)
-                                ],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            )
-                        )
-                    RoundedRectangle(cornerRadius: 20)
-                        .strokeBorder(
-                            LinearGradient(
-                                colors: [
-                                    Color.white.opacity(0.70),
-                                    Color.white.opacity(0.30),
-                                    Color.white.opacity(0.50)
-                                ],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            ),
-                            lineWidth: 0.5
-                        )
-                    VStack(spacing: 0) {
-                        Rectangle()
-                            .fill(
-                                LinearGradient(
-                                    colors: [.white.opacity(0.55), .white.opacity(0.15), .clear],
-                                    startPoint: .top,
-                                    endPoint: .bottom
-                                )
-                            )
-                            .frame(height: 16)
-                        Spacer(minLength: 0)
-                    }
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                }
-                .shadow(color: accuracyColor.opacity(0.12), radius: 5, y: 2)
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(accuracyColor.opacity(0.08))
             }
         }
         .clipShape(RoundedRectangle(cornerRadius: 20))

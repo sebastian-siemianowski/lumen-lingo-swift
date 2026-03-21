@@ -249,7 +249,7 @@ struct JourneyView: View {
                     title: L.currentStreak,
                     theme: .streak,
                     isCollapsed: $isStreakCollapsed,
-                    badge: .count(profile?.streakDays ?? 0)
+                    showsDivider: false
                 ) {
                     streakSection
                 }

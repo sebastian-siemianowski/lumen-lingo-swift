@@ -245,6 +245,7 @@ struct CollapsibleSection<Header: View, Content: View>: View {
     var isLocked: Bool = false
     var lockedTierName: String? = nil
     var lockedTierColor: Color? = nil
+    var showsDivider: Bool = true
     @ViewBuilder let header: () -> Header
     @ViewBuilder let content: () -> Content
 
@@ -441,7 +442,7 @@ struct CollapsibleSection<Header: View, Content: View>: View {
                 }
 
             // Luminous divider between header and content (integrated card layout)
-            if !isCollapsed {
+            if !isCollapsed, showsDivider {
                 if let cat = category {
                     categoryAccentDivider(cat)
                 } else {
@@ -851,6 +852,7 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         isLocked: Bool = false,
         lockedTierName: String? = nil,
         lockedTierColor: Color? = nil,
+        showsDivider: Bool = true,
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.style = .standard
@@ -862,6 +864,7 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         self.isLocked = isLocked
         self.lockedTierName = lockedTierName
         self.lockedTierColor = lockedTierColor
+        self.showsDivider = showsDivider
         let capturedBinding = isCollapsed
         let capturedSubtitle = subtitle
         let capturedBadge = badge
@@ -894,6 +897,7 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         isLocked: Bool = false,
         lockedTierName: String? = nil,
         lockedTierColor: Color? = nil,
+        showsDivider: Bool = true,
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.init(
@@ -908,6 +912,7 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
             isLocked: isLocked,
             lockedTierName: lockedTierName,
             lockedTierColor: lockedTierColor,
+            showsDivider: showsDivider,
             content: content
         )
         self.category = theme.category
