@@ -52,14 +52,14 @@ struct SoundscapeNowPlaying: View {
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
                     .strokeBorder(
                         LinearGradient(
-                            colors: soundscape.previewColors.map { $0.opacity(isDark ? 0.35 : 0.25) },
+                            colors: soundscape.previewColors.map { $0.opacity(isDark ? 0.35 : 0.30) },
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ),
-                        lineWidth: 0.5
+                        lineWidth: isDark ? 0.5 : 1.0
                     )
             )
-            .shadow(color: soundscape.previewColors[0].opacity(isDark ? 0.25 : 0.12), radius: 16, y: 6)
+            .shadow(color: soundscape.previewColors[0].opacity(isDark ? 0.25 : 0.18), radius: isDark ? 16 : 12, y: isDark ? 6 : 4)
             .animation(.easeInOut(duration: 0.55), value: soundscape)
             .transition(.asymmetric(
                 insertion: .move(edge: .top).combined(with: .opacity),
@@ -79,13 +79,13 @@ struct SoundscapeNowPlaying: View {
             VStack(alignment: .leading, spacing: 3) {
                 Text(soundscape.displayName)
                     .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                     .lineLimit(1)
                     .contentTransition(.interpolate)
 
                 Text(statusText(soundscape))
                     .font(.system(size: 11, weight: .medium))
-                    .foregroundStyle(isDark ? .white.opacity(0.45) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum)
                     .lineLimit(1)
                     .contentTransition(.interpolate)
             }
@@ -246,7 +246,7 @@ struct SoundscapeNowPlaying: View {
         } label: {
             Image(systemName: icon)
                 .font(.system(size: 13, weight: .semibold))
-                .foregroundStyle(isDark ? .white.opacity(0.7) : .primary.opacity(0.55))
+                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk.opacity(0.6))
                 .frame(width: 34, height: 34)
                 .contentShape(Circle())
         }
@@ -284,7 +284,7 @@ struct SoundscapeNowPlaying: View {
 
                 Text("\(Int((profile?.ambientVolume ?? 0.3) * 100))%")
                     .font(.system(size: 11, weight: .medium).monospacedDigit())
-                    .foregroundStyle(isDark ? .white.opacity(0.45) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum)
                     .frame(width: 32, alignment: .trailing)
             }
 
@@ -302,7 +302,7 @@ struct SoundscapeNowPlaying: View {
                     Text("Stop Soundscape")
                         .font(.system(size: 12, weight: .semibold))
                 }
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 6)
                 .background(
@@ -324,11 +324,11 @@ struct SoundscapeNowPlaying: View {
             if isDark {
                 Color(red: 20/255, green: 16/255, blue: 38/255).opacity(0.85)
             } else {
-                Color(red: 248/255, green: 246/255, blue: 252/255).opacity(0.92)
+                Color.white
             }
 
             LinearGradient(
-                colors: soundscape.previewColors.map { $0.opacity(isDark ? 0.08 : 0.06) },
+                colors: soundscape.previewColors.map { $0.opacity(isDark ? 0.08 : 0.12) },
                 startPoint: .leading,
                 endPoint: .trailing
             )

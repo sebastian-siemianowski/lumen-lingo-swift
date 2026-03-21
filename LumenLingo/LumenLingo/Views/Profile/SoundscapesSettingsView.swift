@@ -138,7 +138,7 @@ struct SoundscapesSettingsView: View {
                     .foregroundStyle(categoryColor(category))
                 Text(category.displayName)
                     .font(.system(size: 14, weight: .semibold))
-                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanMist)
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk.opacity(0.8))
             }
             .padding(.leading, 4)
 
@@ -190,7 +190,7 @@ struct SoundscapesSettingsView: View {
         .frame(width: 130)
         .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
         .overlay(soundscapeBorder(isSelected: isSelected))
-        .opacity(isLocked ? 0.72 : (anySelected && !isSelected ? 0.55 : 1.0))
+        .opacity(isLocked ? (isDark ? 0.72 : 0.82) : (anySelected && !isSelected ? (isDark ? 0.55 : 0.78) : 1.0))
     }
 
     private func soundscapePreview(_ soundscape: Soundscape, isSelected: Bool, isPlaying: Bool, isLocked: Bool) -> some View {
@@ -281,7 +281,7 @@ struct SoundscapesSettingsView: View {
 
             Text(soundscape.subtitle)
                 .font(.system(size: 9))
-                .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanMist)
+                .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum)
                 .lineLimit(2)
                 .multilineTextAlignment(.center)
         }
@@ -291,7 +291,7 @@ struct SoundscapesSettingsView: View {
         .background(
             isDark
                 ? Color(red: 25/255, green: 20/255, blue: 45/255).opacity(0.9)
-                : Color(red: 240/255, green: 238/255, blue: 248/255).opacity(0.92)
+                : Color.white
         )
     }
 
@@ -305,14 +305,19 @@ struct SoundscapesSettingsView: View {
                         endPoint: .bottomTrailing
                       )
                     : LinearGradient(
-                        colors: [
-                            Color.white.opacity(isDark ? 0.10 : 0.25),
-                            Color.white.opacity(isDark ? 0.04 : 0.12)
-                        ],
+                        colors: isDark
+                            ? [
+                                Color.white.opacity(0.10),
+                                Color.white.opacity(0.04)
+                              ]
+                            : [
+                                Color(hex: "#8B5CF6").opacity(0.18),
+                                Color(hex: "#C4B5FD").opacity(0.12)
+                              ],
                         startPoint: .top,
                         endPoint: .bottom
                       ),
-                lineWidth: isSelected ? 1.5 : 0.5
+                lineWidth: isSelected ? 1.5 : (isDark ? 0.5 : 1.0)
             )
     }
 
