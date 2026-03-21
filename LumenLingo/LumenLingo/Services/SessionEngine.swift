@@ -103,6 +103,12 @@ final class SessionEngine {
         saveDailyState()
     }
 
+    /// Reset the daily goal counter back to zero (for QA/debug).
+    func resetDailyGoal() {
+        roundsCompletedToday = 0
+        saveDailyState()
+    }
+
     /// Compute the next recommendation. Call from main actor context.
     @MainActor
     func refreshRecommendation(

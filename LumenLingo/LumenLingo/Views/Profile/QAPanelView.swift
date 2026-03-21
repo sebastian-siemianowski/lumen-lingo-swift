@@ -9,6 +9,7 @@ import SwiftData
 struct QAPanelView: View {
     @Environment(TierManager.self) private var tierManager
     @Environment(PracticeTimeTracker.self) private var practiceTracker
+    @Environment(SessionEngine.self) private var sessionEngine
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
@@ -697,6 +698,14 @@ struct QAPanelView: View {
                     generateSampleData()
                 } label: {
                     debugActionButton(label: "Generate Sample Data", color: .blue)
+                }
+                .buttonStyle(.plain)
+
+                Button {
+                    sessionEngine.resetDailyGoal()
+                    refreshToggle.toggle()
+                } label: {
+                    debugActionButton(label: "Reset Daily Goal (\(sessionEngine.roundsCompletedToday)/\(sessionEngine.dailyGoal))", color: .mint)
                 }
                 .buttonStyle(.plain)
             }
