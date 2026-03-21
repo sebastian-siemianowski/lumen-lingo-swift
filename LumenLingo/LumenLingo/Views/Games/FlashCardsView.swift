@@ -573,11 +573,42 @@ struct FlashCardsView: View {
                     .padding(.top, isDark ? 14 : 10)
                     .overlay(alignment: .bottom) {
                         if !isDark {
-                            // Subtle underline — plum-grey at 12% opacity, 1pt
-                            Capsule()
-                                .fill(Self.frostPlumGrey.opacity(0.12))
-                                .frame(height: 1)
-                                .padding(.horizontal, 8)
+                            // Frosted glow underline (dashboard style)
+                            ZStack {
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [
+                                                .clear,
+                                                Color.white.opacity(0.5),
+                                                Color.white.opacity(0.7),
+                                                Color.white.opacity(0.5),
+                                                .clear
+                                            ],
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        )
+                                    )
+                                    .frame(height: 4)
+                                    .blur(radius: 3)
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [
+                                                .clear,
+                                                Color.white.opacity(0.6),
+                                                Color.white.opacity(0.9),
+                                                Color.white.opacity(0.6),
+                                                .clear
+                                            ],
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        )
+                                    )
+                                    .frame(height: 1)
+                            }
+                            .frame(height: 4)
+                            .padding(.horizontal, 8)
                         }
                     }
                     .padding(.horizontal, isDark ? 0 : 16)
@@ -621,19 +652,58 @@ struct FlashCardsView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
 
-            // Thin glowing divider
-            Capsule()
-                .fill(
-                    LinearGradient(
-                        colors: isDark
-                            ? [.clear, .white.opacity(0.45), .clear]
-                            : [.clear, Self.frostDivider.opacity(0.30), .clear],
-                        startPoint: .leading, endPoint: .trailing
-                    )
-                )
-                .frame(width: isDark ? 80 : 100, height: 1)
-                .shadow(color: isDark ? .white.opacity(0.3) : Self.frostDivider.opacity(0.10), radius: 4)
-                .padding(.top, 18)
+            // Glowing divider (matches dashboard style)
+            ZStack {
+                if isDark {
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [.clear, .white.opacity(0.45), .clear],
+                                startPoint: .leading, endPoint: .trailing
+                            )
+                        )
+                        .frame(width: 80, height: 1)
+                        .shadow(color: .white.opacity(0.3), radius: 4)
+                } else {
+                    // Warm glow halo
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    .clear,
+                                    Color.white.opacity(0.5),
+                                    Color.white.opacity(0.7),
+                                    Color.white.opacity(0.5),
+                                    .clear
+                                ],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(width: 120, height: 4)
+                        .blur(radius: 3)
+
+                    // Core white line
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    .clear,
+                                    Color.white.opacity(0.6),
+                                    Color.white.opacity(0.9),
+                                    Color.white.opacity(0.9),
+                                    Color.white.opacity(0.6),
+                                    .clear
+                                ],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(width: 120, height: 1)
+                }
+            }
+            .frame(height: 4)
+            .padding(.top, 18)
 
             if let example = word.example, !example.isEmpty {
                 Text("\"\(example)\"")
@@ -647,11 +717,42 @@ struct FlashCardsView: View {
                     .padding(.top, isDark ? 14 : 10)
                     .overlay(alignment: .bottom) {
                         if !isDark {
-                            // Subtle underline — plum-grey at 12% opacity, 1pt
-                            Capsule()
-                                .fill(Self.frostPlumGrey.opacity(0.12))
-                                .frame(height: 1)
-                                .padding(.horizontal, 8)
+                            // Frosted glow underline (dashboard style)
+                            ZStack {
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [
+                                                .clear,
+                                                Color.white.opacity(0.5),
+                                                Color.white.opacity(0.7),
+                                                Color.white.opacity(0.5),
+                                                .clear
+                                            ],
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        )
+                                    )
+                                    .frame(height: 4)
+                                    .blur(radius: 3)
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [
+                                                .clear,
+                                                Color.white.opacity(0.6),
+                                                Color.white.opacity(0.9),
+                                                Color.white.opacity(0.6),
+                                                .clear
+                                            ],
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        )
+                                    )
+                                    .frame(height: 1)
+                            }
+                            .frame(height: 4)
+                            .padding(.horizontal, 8)
                         }
                     }
                     .padding(.horizontal, isDark ? 0 : 16)
@@ -2110,9 +2211,31 @@ struct GameCompleteView: View {
                 color: performanceTier.color
             )
 
-            Capsule()
-                .fill(isDark ? .white.opacity(0.1) : Color.caribbeanBorderSubtle)
-                .frame(width: 1, height: 36)
+            ZStack {
+                if isDark {
+                    Capsule()
+                        .fill(.white.opacity(0.1))
+                        .frame(width: 1, height: 36)
+                } else {
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [.clear, Color.white.opacity(0.7), .clear],
+                                startPoint: .top, endPoint: .bottom
+                            )
+                        )
+                        .frame(width: 4, height: 36)
+                        .blur(radius: 2)
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [.clear, Color.white.opacity(0.9), .clear],
+                                startPoint: .top, endPoint: .bottom
+                            )
+                        )
+                        .frame(width: 1, height: 36)
+                }
+            }
 
             statColumn(
                 value: "\(correctAnswers)",
@@ -2120,9 +2243,31 @@ struct GameCompleteView: View {
                 color: .green
             )
 
-            Capsule()
-                .fill(isDark ? .white.opacity(0.1) : Color.caribbeanBorderSubtle)
-                .frame(width: 1, height: 36)
+            ZStack {
+                if isDark {
+                    Capsule()
+                        .fill(.white.opacity(0.1))
+                        .frame(width: 1, height: 36)
+                } else {
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [.clear, Color.white.opacity(0.7), .clear],
+                                startPoint: .top, endPoint: .bottom
+                            )
+                        )
+                        .frame(width: 4, height: 36)
+                        .blur(radius: 2)
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [.clear, Color.white.opacity(0.9), .clear],
+                                startPoint: .top, endPoint: .bottom
+                            )
+                        )
+                        .frame(width: 1, height: 36)
+                }
+            }
 
             statColumn(
                 value: "\(wrongAnswers)",
@@ -2900,9 +3045,31 @@ struct GameCompleteView: View {
             }
             .frame(maxWidth: .infinity)
 
-            Capsule()
-                .fill(isDark ? .white.opacity(0.1) : Color.caribbeanBorderSubtle)
-                .frame(width: 1, height: 30)
+            ZStack {
+                if isDark {
+                    Capsule()
+                        .fill(.white.opacity(0.1))
+                        .frame(width: 1, height: 30)
+                } else {
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [.clear, Color.white.opacity(0.7), .clear],
+                                startPoint: .top, endPoint: .bottom
+                            )
+                        )
+                        .frame(width: 4, height: 30)
+                        .blur(radius: 2)
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [.clear, Color.white.opacity(0.9), .clear],
+                                startPoint: .top, endPoint: .bottom
+                            )
+                        )
+                        .frame(width: 1, height: 30)
+                }
+            }
 
             VStack(spacing: 4) {
                 Image(systemName: "flame.fill")
