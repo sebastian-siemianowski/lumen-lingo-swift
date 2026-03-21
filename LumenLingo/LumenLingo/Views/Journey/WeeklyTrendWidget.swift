@@ -72,39 +72,74 @@ struct WeeklyTrendWidget: View {
                 }
 
                 // Dual line chart
-                GeometryReader { geo in
-                    let w = geo.size.width
-                    let h = geo.size.height
-
-                    // Last week (dimmed)
-                    linePath(data: lastWeek.days, width: w, height: h)
-                        .stroke(
-                            isDark ? Color.white.opacity(0.15) : Color.black.opacity(0.1),
-                            style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round, dash: [4, 4])
-                        )
-
-                    // This week (vivid)
-                    linePath(data: thisWeek.days, width: w, height: h)
-                        .stroke(
-                            LinearGradient(
-                                colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            ),
-                            style: StrokeStyle(lineWidth: 2.5, lineCap: .round, lineJoin: .round)
-                        )
-
-                    // Dots for this week
-                    ForEach(0..<7, id: \.self) { i in
-                        let x = w * CGFloat(i) / 6
-                        let y = h - (CGFloat(thisWeek.days[i]) / CGFloat(maxVal) * h)
-                        Circle()
-                            .fill(Color(hex: "#10b981"))
-                            .frame(width: 6, height: 6)
-                            .position(x: x, y: y)
+                ZStack {
+                    // Light mode frost trough chart background
+                    if !isDark {
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [
+                                                Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.15),
+                                                Color.clear,
+                                                Color.white.opacity(0.10)
+                                            ],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        )
+                                    )
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .strokeBorder(
+                                        LinearGradient(
+                                            colors: [.white.opacity(0.55), .white.opacity(0.25), .white.opacity(0.40)],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        ),
+                                        lineWidth: 0.5
+                                    )
+                            )
                     }
+
+                    GeometryReader { geo in
+                        let w = geo.size.width
+                        let h = geo.size.height
+
+                        // Last week (dimmed)
+                        linePath(data: lastWeek.days, width: w, height: h)
+                            .stroke(
+                                isDark ? Color.white.opacity(0.15) : Color.black.opacity(0.1),
+                                style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round, dash: [4, 4])
+                            )
+
+                        // This week (vivid)
+                        linePath(data: thisWeek.days, width: w, height: h)
+                            .stroke(
+                                LinearGradient(
+                                    colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                ),
+                                style: StrokeStyle(lineWidth: 2.5, lineCap: .round, lineJoin: .round)
+                            )
+
+                        // Dots for this week
+                        ForEach(0..<7, id: \.self) { i in
+                            let x = w * CGFloat(i) / 6
+                            let y = h - (CGFloat(thisWeek.days[i]) / CGFloat(maxVal) * h)
+                            Circle()
+                                .fill(Color(hex: "#10b981"))
+                                .frame(width: 6, height: 6)
+                                .shadow(color: isDark ? .clear : Color(hex: "#10b981").opacity(0.30), radius: 3, y: 1)
+                                .position(x: x, y: y)
+                        }
+                    }
+                    .padding(isDark ? 0 : 8)
                 }
-                .frame(height: 80)
+                .frame(height: isDark ? 80 : 96)
                 .padding(.top, 4)
 
                 // Legend

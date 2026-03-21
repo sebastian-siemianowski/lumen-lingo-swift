@@ -120,13 +120,62 @@ struct MonthlyReportWidget: View {
                 .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
         }
         .padding(10)
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(color.opacity(isDark ? 0.08 : 0.06))
-                .overlay(
+        .background {
+            if isDark {
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(color.opacity(0.08))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .strokeBorder(color.opacity(0.15), lineWidth: 1)
+                    )
+            } else {
+                // Frost trough — recessed glass card with accent tint
+                ZStack {
                     RoundedRectangle(cornerRadius: 12)
-                        .strokeBorder(color.opacity(0.15), lineWidth: 1)
-                )
-        )
+                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(color.opacity(0.05))
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
+                                    Color.clear,
+                                    Color.white.opacity(0.15)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    RoundedRectangle(cornerRadius: 12)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    Color.white.opacity(0.65),
+                                    Color.white.opacity(0.30),
+                                    Color.white.opacity(0.45)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                    VStack {
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.45), .white.opacity(0.10), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                            .frame(height: 14)
+                        Spacer()
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                }
+                .shadow(color: color.opacity(0.08), radius: 4, y: 2)
+            }
+        }
     }
 }

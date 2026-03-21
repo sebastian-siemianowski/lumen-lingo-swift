@@ -68,6 +68,52 @@ struct InsightsDashboardWidget: View {
                 }
             }
         }
+        .padding(12)
+        .background {
+            if !isDark {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color(hex: "#8b5cf6").opacity(0.03))
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.18),
+                                    Color.clear,
+                                    Color.white.opacity(0.12)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    RoundedRectangle(cornerRadius: 14)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [.white.opacity(0.60), .white.opacity(0.25), .white.opacity(0.40)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                    VStack {
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.40), .white.opacity(0.08), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                            .frame(height: 16)
+                        Spacer()
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                }
+                .shadow(color: Color(hex: "#8b5cf6").opacity(0.06), radius: 4, y: 2)
+            }
+        }
     }
 
     private func timeSlotCard(item: LearningInsights.TimeSlotPerformance) -> some View {
@@ -93,17 +139,97 @@ struct InsightsDashboardWidget: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 8)
-        .background(
-            RoundedRectangle(cornerRadius: 10)
-                .fill(isBest ? Color(hex: "#8b5cf6").opacity(isDark ? 0.15 : 0.08) : .clear)
-                .overlay(
+        .background {
+            if isDark {
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(isBest ? Color(hex: "#8b5cf6").opacity(0.15) : .clear)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .strokeBorder(
+                                isBest ? Color(hex: "#8b5cf6").opacity(0.3) : .white.opacity(0.06),
+                                lineWidth: 1
+                            )
+                    )
+            } else if isBest {
+                // Frost trough — highlighted best time slot
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color(hex: "#8b5cf6").opacity(0.06))
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
+                                    Color.clear,
+                                    Color.white.opacity(0.15)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
                     RoundedRectangle(cornerRadius: 10)
                         .strokeBorder(
-                            isBest ? Color(hex: "#8b5cf6").opacity(0.3) : (isDark ? .white.opacity(0.06) : .black.opacity(0.04)),
-                            lineWidth: 1
+                            LinearGradient(
+                                colors: [
+                                    Color.white.opacity(0.65),
+                                    Color.white.opacity(0.30),
+                                    Color.white.opacity(0.45)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
                         )
-                )
-        )
+                    VStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.45), .white.opacity(0.10), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                            .frame(height: 10)
+                        Spacer()
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                }
+                .shadow(color: Color(hex: "#8b5cf6").opacity(0.08), radius: 4, y: 2)
+            } else {
+                // Frost trough — subtle recessed card
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color(red: 0.95, green: 0.96, blue: 0.97))
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.82, green: 0.84, blue: 0.88).opacity(0.15),
+                                    Color.clear,
+                                    Color.white.opacity(0.10)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    RoundedRectangle(cornerRadius: 10)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    Color.white.opacity(0.55),
+                                    Color.white.opacity(0.25),
+                                    Color.white.opacity(0.35)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                }
+            }
+        }
     }
 
     private func timeSlotName(_ slot: LearningInsights.TimeSlot) -> String {
@@ -138,6 +264,52 @@ struct InsightsDashboardWidget: View {
                 }
             }
         }
+        .padding(12)
+        .background {
+            if !isDark {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color(hex: "#06b6d4").opacity(0.03))
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.18),
+                                    Color.clear,
+                                    Color.white.opacity(0.12)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    RoundedRectangle(cornerRadius: 14)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [.white.opacity(0.60), .white.opacity(0.25), .white.opacity(0.40)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                    VStack {
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.40), .white.opacity(0.08), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                            .frame(height: 16)
+                        Spacer()
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                }
+                .shadow(color: Color(hex: "#06b6d4").opacity(0.06), radius: 4, y: 2)
+            }
+        }
     }
 
     private func masteryBar(name: String, accuracy: Double) -> some View {
@@ -151,11 +323,48 @@ struct InsightsDashboardWidget: View {
             GeometryReader { geo in
                 ZStack(alignment: .leading) {
                     RoundedRectangle(cornerRadius: 4)
-                        .fill(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.04))
+                        .fill(isDark ? Color.white.opacity(0.06) : Color(red: 0.91, green: 0.92, blue: 0.94))
+                        .overlay(
+                            Group {
+                                if !isDark {
+                                    RoundedRectangle(cornerRadius: 4)
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [
+                                                    Color(red: 0.82, green: 0.84, blue: 0.88).opacity(0.20),
+                                                    Color.clear
+                                                ],
+                                                startPoint: .top,
+                                                endPoint: .bottom
+                                            )
+                                        )
+                                }
+                            }
+                        )
 
                     RoundedRectangle(cornerRadius: 4)
                         .fill(masteryColor(accuracy))
                         .frame(width: max(0, geo.size.width * CGFloat(accuracy / 100)))
+                        .overlay(
+                            Group {
+                                if !isDark {
+                                    VStack {
+                                        RoundedRectangle(cornerRadius: 4)
+                                            .fill(
+                                                LinearGradient(
+                                                    colors: [.white.opacity(0.35), .clear],
+                                                    startPoint: .top,
+                                                    endPoint: .bottom
+                                                )
+                                            )
+                                            .frame(height: 4)
+                                        Spacer()
+                                    }
+                                    .clipShape(RoundedRectangle(cornerRadius: 4))
+                                }
+                            }
+                        )
+                        .shadow(color: isDark ? .clear : masteryColor(accuracy).opacity(0.20), radius: 3, y: 1)
                 }
             }
             .frame(height: 10)
@@ -193,6 +402,52 @@ struct InsightsDashboardWidget: View {
             } else {
                 retentionChart(points: points)
                     .frame(height: 80)
+            }
+        }
+        .padding(12)
+        .background {
+            if !isDark {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color(hex: "#10b981").opacity(0.03))
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.18),
+                                    Color.clear,
+                                    Color.white.opacity(0.12)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    RoundedRectangle(cornerRadius: 14)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [.white.opacity(0.60), .white.opacity(0.25), .white.opacity(0.40)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                    VStack {
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.40), .white.opacity(0.08), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                            .frame(height: 16)
+                        Spacer()
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                }
+                .shadow(color: Color(hex: "#10b981").opacity(0.06), radius: 4, y: 2)
             }
         }
     }
@@ -293,7 +548,7 @@ struct InsightsDashboardWidget: View {
                                     .frame(width: 10, height: 10)
                                 if i < milestones.count - 1 {
                                     Rectangle()
-                                        .fill(isDark ? Color.white.opacity(0.08) : Color.black.opacity(0.06))
+                                        .fill(isDark ? Color.white.opacity(0.08) : Color(red: 0.88, green: 0.89, blue: 0.92))
                                         .frame(width: 2, height: 24)
                                 }
                             }
@@ -320,6 +575,52 @@ struct InsightsDashboardWidget: View {
                         }
                     }
                 }
+            }
+        }
+        .padding(12)
+        .background {
+            if !isDark {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color(hex: "#ec4899").opacity(0.03))
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.18),
+                                    Color.clear,
+                                    Color.white.opacity(0.12)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    RoundedRectangle(cornerRadius: 14)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [.white.opacity(0.60), .white.opacity(0.25), .white.opacity(0.40)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                    VStack {
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.40), .white.opacity(0.08), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                            .frame(height: 16)
+                        Spacer()
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                }
+                .shadow(color: Color(hex: "#ec4899").opacity(0.06), radius: 4, y: 2)
             }
         }
     }

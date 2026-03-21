@@ -1260,8 +1260,63 @@ struct JourneyView: View {
             }
             .buttonStyle(LumenPressStyle(weight: .soft))
         }
-        .padding(14)
-        .background(GlassCardBackground())
+        .padding(isDark ? 14 : 16)
+        .background {
+            if isDark {
+                GlassCardBackground()
+            } else {
+                // Frost trough — recessed reset card
+                ZStack {
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(Color.red.opacity(0.03))
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
+                                    Color.clear,
+                                    Color.white.opacity(0.15)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    RoundedRectangle(cornerRadius: 24)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    Color.white.opacity(0.65),
+                                    Color.white.opacity(0.30),
+                                    Color.white.opacity(0.45)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                    VStack {
+                        RoundedRectangle(cornerRadius: 24)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color.white.opacity(0.45),
+                                        Color.white.opacity(0.10),
+                                        Color.clear
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                            .frame(height: 18)
+                        Spacer()
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 24))
+                }
+                .shadow(color: Color.red.opacity(0.06), radius: 4, y: 2)
+            }
+        }
     }
 
     // MARK: - Wisdom Quote

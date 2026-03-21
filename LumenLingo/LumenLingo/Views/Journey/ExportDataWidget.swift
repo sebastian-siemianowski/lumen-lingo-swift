@@ -182,32 +182,86 @@ struct ExportDataWidget: View {
             }
             .padding(14)
             .frame(maxWidth: .infinity, minHeight: 100)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.02))
-                    .overlay(
-                        // Tier gradient tint
+            .background {
+                if isDark {
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(.white.opacity(0.04))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 14)
+                                .fill(
+                                    LinearGradient(
+                                        colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.04) },
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 14)
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    ),
+                                    lineWidth: 1.2
+                                )
+                        )
+                } else {
+                    // Frost trough — premium recessed PDF card
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
                         RoundedRectangle(cornerRadius: 14)
                             .fill(
                                 LinearGradient(
-                                    colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.04) },
+                                    colors: [Color(hex: "#fbbf24").opacity(0.06), Color(hex: "#f97316").opacity(0.04)],
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
                                 )
                             )
-                    )
-                    .overlay(
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
+                                        Color.clear,
+                                        Color.white.opacity(0.15)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
                         RoundedRectangle(cornerRadius: 14)
                             .strokeBorder(
                                 LinearGradient(
-                                    colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
+                                    colors: [
+                                        Color.white.opacity(0.65),
+                                        Color.white.opacity(0.30),
+                                        Color.white.opacity(0.45)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
                                 ),
-                                lineWidth: 1.2
+                                lineWidth: 0.5
                             )
-                    )
-            )
+                        VStack {
+                            RoundedRectangle(cornerRadius: 14)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.45), .white.opacity(0.10), .clear],
+                                        startPoint: .top,
+                                        endPoint: .center
+                                    )
+                                )
+                                .frame(height: 18)
+                            Spacer()
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                    }
+                    .shadow(color: Color(hex: "#f97316").opacity(0.08), radius: 4, y: 2)
+                }
+            }
             .overlay {
                 if !isPDFAvailable {
                     RoundedRectangle(cornerRadius: 14)
@@ -258,21 +312,63 @@ struct ExportDataWidget: View {
             }
             .padding(.horizontal, 14)
             .frame(maxWidth: .infinity, minHeight: 44)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.02))
-                    .overlay(
+            .background {
+                if isDark {
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(.white.opacity(0.04))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 14)
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.15) },
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    ),
+                                    lineWidth: 0.8
+                                )
+                        )
+                } else {
+                    // Frost trough — recessed achievement bar
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(
+                                LinearGradient(
+                                    colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.04) },
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.18),
+                                        Color.clear,
+                                        Color.white.opacity(0.12)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
                         RoundedRectangle(cornerRadius: 14)
                             .strokeBorder(
                                 LinearGradient(
-                                    colors: tierManager.currentTier.gradientColors.map { $0.opacity(isDark ? 0.15 : 0.1) },
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
+                                    colors: [
+                                        Color.white.opacity(0.60),
+                                        Color.white.opacity(0.25),
+                                        Color.white.opacity(0.40)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
                                 ),
-                                lineWidth: 0.8
+                                lineWidth: 0.5
                             )
-                    )
-            )
+                    }
+                    .shadow(color: tierManager.currentTier.gradientColors.first?.opacity(0.06) ?? .clear, radius: 3, y: 1)
+                }
+            }
         }
         .buttonStyle(LumenPressStyle())
     }
@@ -348,27 +444,76 @@ struct ExportDataWidget: View {
             .frame(maxWidth: .infinity)
             .padding(.vertical, 14)
             .padding(.horizontal, 8)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.02))
-                    .overlay(
+            .background {
+                if isDark {
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(.white.opacity(0.04))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 14)
+                                .strokeBorder(
+                                    format == .pdf
+                                        ? LinearGradient(
+                                            colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        )
+                                        : LinearGradient(
+                                            colors: [cardColor(for: format).opacity(0.2), cardColor(for: format).opacity(0.08)],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        ),
+                                    lineWidth: format == .pdf ? 1.2 : 0.8
+                                )
+                        )
+                } else {
+                    // Frost trough — recessed format card
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(cardColor(for: format).opacity(0.04))
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
+                                        Color.clear,
+                                        Color.white.opacity(0.15)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
                         RoundedRectangle(cornerRadius: 14)
                             .strokeBorder(
-                                format == .pdf
-                                    ? LinearGradient(
-                                        colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    )
-                                    : LinearGradient(
-                                        colors: [cardColor(for: format).opacity(isDark ? 0.2 : 0.15), cardColor(for: format).opacity(0.08)],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    ),
-                                lineWidth: format == .pdf ? 1.2 : 0.8
+                                LinearGradient(
+                                    colors: [
+                                        Color.white.opacity(0.65),
+                                        Color.white.opacity(0.30),
+                                        Color.white.opacity(0.45)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                ),
+                                lineWidth: 0.5
                             )
-                    )
-            )
+                        VStack {
+                            RoundedRectangle(cornerRadius: 14)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.45), .white.opacity(0.10), .clear],
+                                        startPoint: .top,
+                                        endPoint: .center
+                                    )
+                                )
+                                .frame(height: 14)
+                            Spacer()
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                    }
+                    .shadow(color: cardColor(for: format).opacity(0.06), radius: 4, y: 2)
+                }
+            }
             .overlay(alignment: .topTrailing) {
                 // Premium badge for PDF
                 if format == .pdf {

@@ -289,11 +289,59 @@ private struct HeatmapCell: View {
         .frame(maxWidth: .infinity)
         .padding(.vertical, 10)
         .padding(.horizontal, 6)
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                .fill(.ultraThinMaterial)
-                .opacity(isDark ? 0.6 : 1.0)
-        )
+        .background {
+            if isDark {
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(.ultraThinMaterial)
+                    .opacity(0.6)
+            } else {
+                // Frost trough — recessed glass cell
+                ZStack {
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(accuracyColor.opacity(0.04))
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
+                                    Color.clear,
+                                    Color.white.opacity(0.15)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    RoundedRectangle(cornerRadius: 16)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    Color.white.opacity(0.65),
+                                    Color.white.opacity(0.30),
+                                    Color.white.opacity(0.45)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                    VStack {
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.45), .white.opacity(0.10), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                            .frame(height: 14)
+                        Spacer()
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                }
+            }
+        }
         .overlay(
             RoundedRectangle(cornerRadius: 16)
                 .fill(accuracyColor.opacity(isDark ? 0.08 : 0.05))

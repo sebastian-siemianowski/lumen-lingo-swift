@@ -135,14 +135,63 @@ struct MilestonePredictionWidget: View {
             }
         }
         .padding(10)
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(pred.color.opacity(isDark ? 0.06 : 0.04))
-                .overlay(
+        .background {
+            if isDark {
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(pred.color.opacity(0.06))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .strokeBorder(pred.color.opacity(0.12), lineWidth: 1)
+                    )
+            } else {
+                // Frost trough — recessed glass card with milestone color tint
+                ZStack {
                     RoundedRectangle(cornerRadius: 12)
-                        .strokeBorder(pred.color.opacity(0.12), lineWidth: 1)
-                )
-        )
+                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(pred.color.opacity(0.04))
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
+                                    Color.clear,
+                                    Color.white.opacity(0.15)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    RoundedRectangle(cornerRadius: 12)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    Color.white.opacity(0.65),
+                                    Color.white.opacity(0.30),
+                                    Color.white.opacity(0.45)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                    VStack {
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.45), .white.opacity(0.10), .clear],
+                                    startPoint: .top,
+                                    endPoint: .center
+                                )
+                            )
+                            .frame(height: 14)
+                        Spacer()
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                }
+                .shadow(color: pred.color.opacity(0.06), radius: 4, y: 2)
+            }
+        }
     }
 }
 

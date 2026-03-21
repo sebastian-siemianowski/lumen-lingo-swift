@@ -47,15 +47,58 @@ struct DailyXPChartView: View {
                                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                                 .frame(height: 14)
 
-                            RoundedRectangle(cornerRadius: 4)
-                                .fill(
-                                    LinearGradient(
-                                        colors: [Color(hex: "#667eea"), Color(hex: "#a855f7")],
-                                        startPoint: .bottom,
-                                        endPoint: .top
+                            ZStack(alignment: .bottom) {
+                                // Track trough — frost recessed base
+                                if !isDark {
+                                    RoundedRectangle(cornerRadius: 4)
+                                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 4)
+                                                .fill(
+                                                    LinearGradient(
+                                                        colors: [
+                                                            Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.18),
+                                                            Color.clear
+                                                        ],
+                                                        startPoint: .top,
+                                                        endPoint: .bottom
+                                                    )
+                                                )
+                                        )
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 4)
+                                                .strokeBorder(.white.opacity(0.45), lineWidth: 0.5)
+                                        )
+                                }
+
+                                // Bar fill
+                                RoundedRectangle(cornerRadius: 4)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [Color(hex: "#667eea"), Color(hex: "#a855f7")],
+                                            startPoint: .bottom,
+                                            endPoint: .top
+                                        )
                                     )
-                                )
-                                .frame(height: max(4, CGFloat(day.xp) / CGFloat(maxXP) * 100))
+                                    .frame(height: max(4, CGFloat(day.xp) / CGFloat(maxXP) * 100))
+                                    .overlay(
+                                        // Top highlight band for 3D pop
+                                        VStack {
+                                            RoundedRectangle(cornerRadius: 4)
+                                                .fill(
+                                                    LinearGradient(
+                                                        colors: [.white.opacity(isDark ? 0 : 0.35), .clear],
+                                                        startPoint: .top,
+                                                        endPoint: .center
+                                                    )
+                                                )
+                                                .frame(height: 6)
+                                            Spacer()
+                                        }
+                                        .clipShape(RoundedRectangle(cornerRadius: 4))
+                                    )
+                                    .shadow(color: isDark ? .clear : Color(hex: "#667eea").opacity(0.20), radius: 4, y: 2)
+                            }
 
                             Text(day.label)
                                 .font(.system(size: 9, weight: .medium))
