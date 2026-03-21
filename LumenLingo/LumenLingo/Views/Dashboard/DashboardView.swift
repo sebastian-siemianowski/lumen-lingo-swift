@@ -35,6 +35,19 @@ struct DashboardView: View {
     @PersistedState("dashboard_exploreMore_collapsed") private var exploreMoreCollapsed = true
     @State private var progressCountBeforeGame: Int?
 
+    // Explore More animation state
+    @State private var exploreContentHeight: CGFloat = 0
+    @State private var exploreHasExpanded: Bool = false
+    @State private var exploreContentOpacity: Double = 0
+    @State private var exploreUnfurlOffset: CGFloat = -14
+    @State private var exploreUnfurlScale: CGFloat = 0.95
+    @State private var exploreGlow: CGFloat = 0
+    @State private var exploreBreathe: CGFloat = 1.0
+    @State private var exploreIconKick: CGFloat = 0
+    @State private var exploreCard0Visible: Bool = false
+    @State private var exploreCard1Visible: Bool = false
+    @State private var exploreCard2Visible: Bool = false
+
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
@@ -850,13 +863,98 @@ struct DashboardView: View {
 
     // MARK: - Explore More Section (Collapsible)
 
+    /// Explore More accent colors for glow and gradient effects.
+    private var exploreAccent: [Color] {
+        [Color(hex: "#6366f1"), Color(hex: "#8b5cf6"), Color(hex: "#a78bfa")]
+    }
+
+    private func toggleExploreMore() {
+        let expanding = exploreMoreCollapsed
+
+        // Card breathe: puff out on expand, tuck on collapse
+        withAnimation(.spring(response: 0.25, dampingFraction: 0.6)) {
+            exploreBreathe = expanding ? 1.008 : 0.994
+        }
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.7).delay(0.15)) {
+            exploreBreathe = 1.0
+        }
+
+        // Border glow pulse
+        withAnimation(.easeOut(duration: 0.15)) {
+            exploreGlow = 1.0
+        }
+        withAnimation(.easeOut(duration: 0.55).delay(0.15)) {
+            exploreGlow = 0
+        }
+
+        // Icon rotation kick
+        withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
+            exploreIconKick = expanding ? 15 : -10
+        }
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.65).delay(0.12)) {
+            exploreIconKick = 0
+        }
+
+        // Main collapse toggle — use asymmetric springs
+        let spring: Animation = expanding
+            ? .spring(response: 0.45, dampingFraction: 0.68, blendDuration: 0.12)
+            : .spring(response: 0.32, dampingFraction: 0.88)
+
+        withAnimation(spring) {
+            exploreMoreCollapsed.toggle()
+        }
+
+        if expanding {
+            // Content unfurl
+            exploreHasExpanded = true
+            withAnimation(spring.delay(0.03)) {
+                exploreContentOpacity = 1
+                exploreUnfurlOffset = 0
+                exploreUnfurlScale = 1.0
+            }
+            // Stagger the 3 game cards with cascading delays
+            withAnimation(.spring(response: 0.45, dampingFraction: 0.7).delay(0.06)) {
+                exploreCard0Visible = true
+            }
+            withAnimation(.spring(response: 0.45, dampingFraction: 0.7).delay(0.12)) {
+                exploreCard1Visible = true
+            }
+            withAnimation(.spring(response: 0.45, dampingFraction: 0.7).delay(0.18)) {
+                exploreCard2Visible = true
+            }
+        } else {
+            // Tuck away — reverse stagger (last card hides first)
+            withAnimation(.spring(response: 0.25, dampingFraction: 0.88)) {
+                exploreCard2Visible = false
+            }
+            withAnimation(.spring(response: 0.25, dampingFraction: 0.88).delay(0.04)) {
+                exploreCard1Visible = false
+            }
+            withAnimation(.spring(response: 0.25, dampingFraction: 0.88).delay(0.08)) {
+                exploreCard0Visible = false
+            }
+            withAnimation(spring) {
+                exploreContentOpacity = 0
+                exploreUnfurlOffset = -14
+                exploreUnfurlScale = 0.95
+            }
+            // Remove content from hierarchy after animation settles
+            Task {
+                try? await Task.sleep(for: .milliseconds(450))
+                guard exploreMoreCollapsed else { return }
+                exploreHasExpanded = false
+                exploreContentHeight = 0
+            }
+        }
+
+        HapticsService.shared.toggleSwitch()
+    }
+
     private var exploreMoreSection: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: 0) {
             // Section header with toggle
             Button {
-                withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
-                    exploreMoreCollapsed.toggle()
-                }
+                toggleExploreMore()
             } label: {
                 HStack(spacing: 14) {
                     AnimatedSectionIcon(
@@ -874,6 +972,9 @@ struct DashboardView: View {
                         shadowColor: isDark ? Color(hex: "#8b5cf6") : Color.caribbeanOcean,
                         shadowBaseOpacity: isDark ? 0.3 : 0.2
                     )
+                    .rotationEffect(.degrees(exploreIconKick))
+                    .scaleEffect(exploreMoreCollapsed ? 1.0 : 1.06)
+                    .animation(.spring(response: 0.4, dampingFraction: 0.6), value: exploreMoreCollapsed)
 
                     VStack(alignment: .leading, spacing: 3) {
                         Text("Explore More")
@@ -896,24 +997,96 @@ struct DashboardView: View {
 
                     Spacer()
 
-                    Image(systemName: "chevron.right")
-                        .font(.system(size: 13, weight: .bold))
-                        .foregroundStyle(isDark ? .white.opacity(0.3) : Color.caribbeanPlum.opacity(0.4))
-                        .rotationEffect(.degrees(exploreMoreCollapsed ? 0 : 90))
-                        .animation(.spring(response: 0.3, dampingFraction: 0.8), value: exploreMoreCollapsed)
+                    // Chevron with bouncy rotation + scale pop + color morph
+                    ZStack {
+                        Capsule()
+                            .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.04))
+                            .frame(width: 30, height: 22)
+
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 11, weight: .bold))
+                            .foregroundStyle(
+                                exploreMoreCollapsed
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: [Color(hex: "#6366f1"), Color(hex: "#a78bfa")],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    ))
+                                    : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
+                            )
+                            .rotationEffect(.degrees(exploreMoreCollapsed ? 0 : 90))
+                            .scaleEffect(exploreMoreCollapsed ? 1.0 : 1.15)
+                            .animation(.spring(response: 0.35, dampingFraction: 0.55), value: exploreMoreCollapsed)
+                    }
                 }
                 .padding(.bottom, 4)
             }
-            .buttonStyle(.plain)
+            .buttonStyle(ExploreMorePressStyle())
 
+            // Height-clipped content reveal — no jarring layout jumps
+            Group {
+                if exploreHasExpanded || !exploreMoreCollapsed {
+                    gameCardsContent
+                        .fixedSize(horizontal: false, vertical: true)
+                        .opacity(exploreContentOpacity)
+                        .offset(y: exploreUnfurlOffset)
+                        .scaleEffect(y: exploreUnfurlScale, anchor: .top)
+                        .background(
+                            GeometryReader { geo in
+                                Color.clear
+                                    .preference(key: ExploreContentHeightKey.self, value: geo.size.height)
+                            }
+                        )
+                        .onPreferenceChange(ExploreContentHeightKey.self) { height in
+                            guard height > 0 else { return }
+                            if abs(height - exploreContentHeight) > 1 {
+                                if exploreContentHeight == 0 && !exploreMoreCollapsed {
+                                    exploreContentHeight = height
+                                } else {
+                                    withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+                                        exploreContentHeight = height
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+            .frame(height: exploreMoreCollapsed ? 0 : (exploreContentHeight > 0 ? exploreContentHeight : nil), alignment: .top)
+            .clipped()
+            .allowsHitTesting(!exploreMoreCollapsed)
+        }
+        .scaleEffect(exploreBreathe)
+        // Glow pulse overlay
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .strokeBorder(
+                    LinearGradient(
+                        colors: [
+                            Color(hex: "#6366f1").opacity(0.45 * exploreGlow),
+                            Color(hex: "#a78bfa").opacity(0.3 * exploreGlow)
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 1.5
+                )
+                .allowsHitTesting(false)
+        )
+        .onAppear {
+            // Initialize stagger card state for initially-expanded
             if !exploreMoreCollapsed {
-                gameCardsContent
-                    .transition(.opacity.combined(with: .move(edge: .top)))
+                exploreHasExpanded = true
+                exploreContentOpacity = 1
+                exploreUnfurlOffset = 0
+                exploreUnfurlScale = 1.0
+                exploreCard0Visible = true
+                exploreCard1Visible = true
+                exploreCard2Visible = true
             }
         }
     }
 
-    /// The three game cards, extracted so they can be shown inside the collapsible section.
+    /// The three game cards with staggered reveal animations.
     private var gameCardsContent: some View {
         VStack(spacing: 16) {
             DashboardGameCard(
@@ -929,6 +1102,9 @@ struct DashboardView: View {
                 onExpiredTap: { showExpiredSheet = true },
                 navigationPath: $navigationPath
             )
+            .opacity(exploreCard0Visible ? 1 : 0)
+            .offset(y: exploreCard0Visible ? 0 : 10)
+            .scaleEffect(exploreCard0Visible ? 1 : 0.96)
 
             DashboardGameCard(
                 title: "Grammar Challenge",
@@ -943,6 +1119,9 @@ struct DashboardView: View {
                 onExpiredTap: { showExpiredSheet = true },
                 navigationPath: $navigationPath
             )
+            .opacity(exploreCard1Visible ? 1 : 0)
+            .offset(y: exploreCard1Visible ? 0 : 10)
+            .scaleEffect(exploreCard1Visible ? 1 : 0.96)
 
             DashboardGameCard(
                 title: "Word Constructor",
@@ -957,7 +1136,11 @@ struct DashboardView: View {
                 onExpiredTap: { showExpiredSheet = true },
                 navigationPath: $navigationPath
             )
+            .opacity(exploreCard2Visible ? 1 : 0)
+            .offset(y: exploreCard2Visible ? 0 : 10)
+            .scaleEffect(exploreCard2Visible ? 1 : 0.96)
         }
+        .padding(.top, 12)
     }
 
     // MARK: - Games Section (Legacy — replaced by exploreMoreSection)
@@ -1538,6 +1721,27 @@ struct DashboardGameCard: View {
             .opacity(isDark ? 0.85 : 0.7)
     }
 
+}
+
+// MARK: - Explore Content Height Key
+
+private struct ExploreContentHeightKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = max(value, nextValue())
+    }
+}
+
+// MARK: - Explore More Press Style
+
+/// Subtle press feedback for the Explore More header — matches CollapsibleHeaderButtonStyle.
+private struct ExploreMorePressStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.98 : 1.0)
+            .opacity(configuration.isPressed ? 0.85 : 1.0)
+            .animation(.spring(response: 0.2, dampingFraction: 0.7), value: configuration.isPressed)
+    }
 }
 
 // MARK: - Scroll Offset Tracking
