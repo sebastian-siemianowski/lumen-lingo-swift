@@ -85,10 +85,10 @@ struct AdventureCTAButton<Label: View>: View {
                                        Color(hex: "#F472B6")]) // warm rose
                                 : (isDark
                                     ? [Color(hex: "#2D1B69"), Color(hex: "#1B2A5C")]
-                                    : [Color(hex: "#0EA5E9").opacity(0.4),
-                                       Color(hex: "#22D3EE").opacity(0.4),
-                                       Color(hex: "#A78BFA").opacity(0.35),
-                                       Color(hex: "#F472B6").opacity(0.35)]),
+                                    : [Color(hex: "#0EA5E9").opacity(0.7),
+                                       Color(hex: "#22D3EE").opacity(0.65),
+                                       Color(hex: "#A78BFA").opacity(0.6),
+                                       Color(hex: "#F472B6").opacity(0.6)]),
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
