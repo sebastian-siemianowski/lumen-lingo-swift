@@ -399,133 +399,289 @@ struct ProfileView: View {
 
     // MARK: - Streak Calendar
 
-    /// Pulse animation for "Today" circle
+    /// Pulse animation for "Today" indicator
     @State private var todayPulse = false
+    /// Staggered cell reveal
+    @State private var calendarRevealed = false
 
     private var streakCalendar: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            // Header
-            HStack {
-                Text(L.activityCalendar)
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .caribbeanInk)
+        calendarContent
+    }
+
+    /// Extracted to let the compiler handle local bindings in a @ViewBuilder
+    @ViewBuilder
+    private var calendarContent: some View {
+        let days = calendarDays
+        let streakCount = profile?.streakDays ?? 0
+        let activeDayCount = days.filter(\.isActive).count
+
+        VStack(alignment: .leading, spacing: 16) {
+            // ── Header row ──
+            HStack(alignment: .center, spacing: 0) {
+                VStack(alignment: .leading, spacing: 2) {
+                    HStack(spacing: 6) {
+                        Image(systemName: "calendar.badge.checkmark")
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundStyle(
+                                isDark
+                                    ? AnyShapeStyle(Color.cyan)
+                                    : AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
+                            )
+                        Text(L.activityCalendar)
+                            .font(.system(size: 16, weight: .bold, design: .rounded))
+                            .foregroundStyle(isDark ? .white : .caribbeanInk)
+                    }
+                    Text(calendarMonthYear)
+                        .font(.system(size: 11, weight: .medium))
+                        .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum.opacity(0.7))
+                }
 
                 Spacer()
 
-                Text(calendarMonthYear)
-                    .font(.system(size: 12, weight: .medium))
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                // Active days mini-badge
+                if activeDayCount > 0 {
+                    HStack(spacing: 3) {
+                        Text("\(activeDayCount)")
+                            .font(.system(size: 13, weight: .bold, design: .rounded))
+                        Text("days")
+                            .font(.system(size: 10, weight: .medium))
+                    }
+                    .foregroundStyle(isDark ? .cyan : .caribbeanOcean)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 5)
+                    .background(
+                        Capsule()
+                            .fill(isDark ? Color.cyan.opacity(0.12) : Color.caribbeanOcean.opacity(0.08))
+                            .overlay(
+                                Capsule()
+                                    .strokeBorder(isDark ? Color.cyan.opacity(0.2) : Color.caribbeanOcean.opacity(0.15), lineWidth: 0.5)
+                            )
+                    )
+                }
             }
 
-            // Day-of-week labels
+            // ── Day-of-week labels ──
             let dayLabels = calendarDayLabels
             HStack(spacing: 0) {
                 ForEach(dayLabels, id: \.self) { label in
                     Text(label)
-                        .font(.system(size: 9, weight: .medium))
-                        .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanPlum.opacity(0.6))
+                        .font(.system(size: 10, weight: .semibold, design: .rounded))
+                        .foregroundStyle(isDark ? .white.opacity(0.3) : .caribbeanPlum.opacity(0.5))
                         .frame(maxWidth: .infinity)
                 }
             }
+            .padding(.bottom, -4)
 
-            // Calendar grid - last 30 days
-            let days = calendarDays
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 4), count: 7), spacing: 6) {
-                // Leading spacers for alignment to day-of-week
+            // ── Calendar grid ──
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 5), count: 7), spacing: 5) {
                 ForEach(0..<leadingSpacerCount(for: days), id: \.self) { _ in
-                    Color.clear.frame(width: 14, height: 14)
+                    Color.clear.frame(height: 36)
                 }
 
-                ForEach(days, id: \.date) { day in
-                    calendarDayCircle(day)
+                ForEach(Array(days.enumerated()), id: \.element.date) { index, day in
+                    calendarDayCell(day, index: index)
+                        .opacity(calendarRevealed ? 1 : 0)
+                        .scaleEffect(calendarRevealed ? 1 : 0.5)
+                        .animation(
+                            .spring(response: 0.35, dampingFraction: 0.7)
+                                .delay(Double(index) * 0.012),
+                            value: calendarRevealed
+                        )
                 }
             }
 
-            // Streak label
-            if let streakCount = profile?.streakDays, streakCount > 0 {
-                HStack(spacing: 4) {
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 11))
-                    Text("\(streakCount)-\(L.dayStreak)")
-                        .font(.system(size: 12, weight: .semibold))
+            // ── Streak banner ──
+            if streakCount > 0 {
+                HStack(spacing: 8) {
+                    // Flame icon with glow
+                    ZStack {
+                        Image(systemName: "flame.fill")
+                            .font(.system(size: 16))
+                            .foregroundStyle(
+                                isDark
+                                    ? AnyShapeStyle(Color.orange)
+                                    : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
+                            )
+                            .blur(radius: 4)
+                            .opacity(0.5)
+
+                        Image(systemName: "flame.fill")
+                            .font(.system(size: 16))
+                            .foregroundStyle(
+                                isDark
+                                    ? AnyShapeStyle(Color.orange)
+                                    : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
+                            )
+                    }
+
+                    VStack(alignment: .leading, spacing: 1) {
+                        Text("\(streakCount)-\(L.dayStreak)")
+                            .font(.system(size: 14, weight: .bold, design: .rounded))
+                            .foregroundStyle(
+                                isDark
+                                    ? AnyShapeStyle(Color.orange)
+                                    : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
+                            )
+                        Text("Keep going!")
+                            .font(.system(size: 10, weight: .medium))
+                            .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanPlum.opacity(0.5))
+                    }
+
+                    Spacer()
+
+                    // Streak progress dots
+                    HStack(spacing: 3) {
+                        ForEach(0..<7, id: \.self) { i in
+                            Circle()
+                                .fill(
+                                    i < (streakCount % 7 == 0 ? 7 : streakCount % 7)
+                                        ? (isDark
+                                            ? AnyShapeStyle(Color.orange.opacity(0.8))
+                                            : AnyShapeStyle(LinearGradient.caribbeanGradientWarm))
+                                        : AnyShapeStyle(isDark ? Color.white.opacity(0.08) : Color.caribbeanRecessed)
+                                )
+                                .frame(width: 5, height: 5)
+                        }
+                    }
                 }
-                .foregroundStyle(
-                    isDark
-                        ? AnyShapeStyle(Color.orange)
-                        : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
-                )
-                .padding(.top, 2)
-            }
-        }
-        .padding(14)
-        .background(
-            RoundedRectangle(cornerRadius: 14)
-                .fill(isDark ? .white.opacity(0.03) : .caribbeanRecessed.opacity(0.5))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 14)
-                        .strokeBorder(
-                            isDark ? .white.opacity(0.06) : Color.caribbeanBorderSubtle,
-                            lineWidth: 0.5
+                .padding(.horizontal, 12)
+                .padding(.vertical, 10)
+                .background(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(
+                            isDark
+                                ? AnyShapeStyle(Color.orange.opacity(0.06))
+                                : AnyShapeStyle(LinearGradient(
+                                    colors: [Color(hex: "FB923C").opacity(0.06), Color(hex: "FDE68A").opacity(0.08)],
+                                    startPoint: .leading, endPoint: .trailing
+                                  ))
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                                .strokeBorder(
+                                    isDark ? Color.orange.opacity(0.15) : Color(hex: "FB923C").opacity(0.12),
+                                    lineWidth: 0.5
+                                )
                         )
                 )
-        )
+            }
+        }
         .onAppear {
-            withAnimation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true)) {
+            withAnimation(.easeInOut(duration: 1.8).repeatForever(autoreverses: true)) {
                 todayPulse = true
             }
+            // Trigger staggered cell reveal
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                calendarRevealed = true
+            }
         }
     }
 
-    /// A single day in the calendar grid
+    /// A single day cell — rounded square with rich visual treatment
     @ViewBuilder
-    private func calendarDayCircle(_ day: CalendarDay) -> some View {
+    private func calendarDayCell(_ day: CalendarDay, index: Int) -> some View {
         let isInStreak = day.isActive && isPartOfCurrentStreak(day.date)
-        let size: CGFloat = isInStreak ? 16 : 14
+        let dayNumber = Calendar.current.component(.day, from: day.date)
 
-        Circle()
-            .fill(calendarDayFill(day))
-            .frame(width: size, height: size)
-            .overlay {
-                if !isDark && day.isToday {
-                    // Pulsing glow ring for today
+        ZStack {
+            // Cell background
+            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                .fill(calendarCellBackground(day, isInStreak: isInStreak))
+                .frame(height: 36)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .strokeBorder(calendarCellBorder(day, isInStreak: isInStreak), lineWidth: 0.5)
+                )
+                // Today: breathing glow shadow
+                .shadow(
+                    color: day.isToday
+                        ? (isDark ? Color.orange.opacity(0.3) : Color(hex: "FB923C").opacity(0.2))
+                        : (day.isActive && !day.isFuture
+                            ? (isDark ? Color.cyan.opacity(0.15) : Color.caribbeanOcean.opacity(0.08))
+                            : .clear),
+                    radius: day.isToday ? (todayPulse ? 8 : 4) : 4,
+                    y: 1
+                )
+
+            // Content
+            VStack(spacing: 1) {
+                if day.isToday {
+                    // Today: bold number + dot indicator
+                    Text("\(dayNumber)")
+                        .font(.system(size: 13, weight: .bold, design: .rounded))
+                        .foregroundStyle(isDark ? .white : .white)
+
                     Circle()
-                        .strokeBorder(
-                            LinearGradient.caribbeanGradientWarm.opacity(0.5),
-                            lineWidth: 1.5
-                        )
-                        .frame(width: size + 4, height: size + 4)
-                        .scaleEffect(todayPulse ? 1.15 : 1.0)
-                        .opacity(todayPulse ? 0.4 : 0.8)
+                        .fill(.white.opacity(0.9))
+                        .frame(width: 3, height: 3)
+                        .scaleEffect(todayPulse ? 1.3 : 1.0)
+                } else if day.isFuture {
+                    Text("\(dayNumber)")
+                        .font(.system(size: 11, weight: .regular, design: .rounded))
+                        .foregroundStyle(isDark ? .white.opacity(0.12) : .caribbeanPlum.opacity(0.2))
+                } else if day.isActive {
+                    Text("\(dayNumber)")
+                        .font(.system(size: 12, weight: .semibold, design: .rounded))
+                        .foregroundStyle(.white.opacity(0.95))
+
+                    // Tiny checkmark for active days
+                    Image(systemName: "checkmark")
+                        .font(.system(size: 6, weight: .bold))
+                        .foregroundStyle(.white.opacity(0.7))
+                } else {
+                    // Inactive past day
+                    Text("\(dayNumber)")
+                        .font(.system(size: 11, weight: .medium, design: .rounded))
+                        .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanPlum.opacity(0.35))
                 }
             }
-            .overlay {
-                if !day.isFuture && !day.isToday {
-                    // Day number for non-future days
-                    Text("\(Calendar.current.component(.day, from: day.date))")
-                        .font(.system(size: 7, weight: .medium, design: .rounded))
-                        .foregroundStyle(day.isActive
-                            ? .white.opacity(0.9)
-                            : (isDark ? .white.opacity(0.25) : .caribbeanPlum.opacity(0.4)))
-                }
-            }
+        }
     }
 
-    private func calendarDayFill(_ day: CalendarDay) -> some ShapeStyle {
+    /// Cell background fill based on day state
+    private func calendarCellBackground(_ day: CalendarDay, isInStreak: Bool) -> some ShapeStyle {
         if day.isFuture {
-            return AnyShapeStyle(isDark ? Color.white.opacity(0.02) : Color.caribbeanDisabled)
+            return AnyShapeStyle(isDark ? Color.white.opacity(0.015) : Color.caribbeanRecessed.opacity(0.35))
         }
         if day.isToday {
             return isDark
-                ? AnyShapeStyle(Color.orange)
+                ? AnyShapeStyle(LinearGradient(
+                    colors: [Color.orange, Color(hex: "F59E0B")],
+                    startPoint: .topLeading, endPoint: .bottomTrailing
+                ))
                 : AnyShapeStyle(LinearGradient.caribbeanGradientWarm)
         }
         if day.isActive {
+            // Streak days get a slightly different shade
+            if isInStreak {
+                return isDark
+                    ? AnyShapeStyle(LinearGradient(
+                        colors: [Color.cyan.opacity(0.65), Color(hex: "06B6D4").opacity(0.55)],
+                        startPoint: .topLeading, endPoint: .bottomTrailing
+                    ))
+                    : AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
+            }
+            // Active but not in current streak
             return isDark
-                ? AnyShapeStyle(Color.cyan.opacity(0.7))
-                : AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
+                ? AnyShapeStyle(Color.cyan.opacity(0.35))
+                : AnyShapeStyle(LinearGradient(
+                    colors: [Color.caribbeanLagoon.opacity(0.6), Color.caribbeanReef.opacity(0.5)],
+                    startPoint: .topLeading, endPoint: .bottomTrailing
+                ))
         }
         // Inactive past day
-        return AnyShapeStyle(isDark ? Color.white.opacity(0.05) : Color.caribbeanRecessed)
+        return AnyShapeStyle(isDark ? Color.white.opacity(0.03) : Color.caribbeanRecessed.opacity(0.4))
+    }
+
+    /// Subtle border treatment per cell state
+    private func calendarCellBorder(_ day: CalendarDay, isInStreak: Bool) -> some ShapeStyle {
+        if day.isToday {
+            return AnyShapeStyle(isDark ? Color.orange.opacity(0.5) : Color(hex: "FB923C").opacity(0.3))
+        }
+        if day.isActive && !day.isFuture {
+            return AnyShapeStyle(isDark ? Color.cyan.opacity(0.2) : Color.caribbeanOcean.opacity(0.15))
+        }
+        return AnyShapeStyle(isDark ? Color.white.opacity(0.04) : Color.caribbeanBorderSubtle.opacity(0.5))
     }
 
     // MARK: - Calendar Data
