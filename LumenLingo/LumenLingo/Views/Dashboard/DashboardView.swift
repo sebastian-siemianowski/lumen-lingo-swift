@@ -33,6 +33,7 @@ struct DashboardView: View {
     @State private var statsAppeared = false
     @State private var scrollOffset: CGFloat = 0
     @AppStorage("dashboard_exploreMore_collapsed") private var exploreMoreCollapsed = true
+    @State private var progressCountBeforeGame: Int?
 
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
@@ -818,7 +819,7 @@ struct DashboardView: View {
             resetTime: practiceResetTime,
             onStart: {
                 guard let rec = sessionEngine.currentRecommendation else { return }
-                sessionEngine.recordRoundCompleted()
+                progressCountBeforeGame = recentProgress.count
                 let route: AppRoute = switch rec.gameType {
                 case .flashCards: .flashcardsGame(categoryId: rec.categoryKey)
                 case .grammar: .grammarGame(categoryId: rec.categoryKey)
@@ -829,6 +830,11 @@ struct DashboardView: View {
             onExpiredTap: { showExpiredSheet = true }
         )
         .task(id: "\(currentSourceRaw)_\(currentTargetRaw)_\(recentProgress.count)") {
+            // Record a round only when coming back from a game that added a new session
+            if let before = progressCountBeforeGame, recentProgress.count > before {
+                sessionEngine.recordRoundCompleted()
+                progressCountBeforeGame = nil
+            }
             let progressService = ProgressService(modelContext: modelContext)
             await sessionEngine.refreshRecommendation(
                 source: currentSourceRaw,
