@@ -1056,22 +1056,6 @@ struct DashboardView: View {
             .allowsHitTesting(!exploreMoreCollapsed)
         }
         .scaleEffect(exploreBreathe)
-        // Glow pulse overlay
-        .overlay(
-            RoundedRectangle(cornerRadius: 16)
-                .strokeBorder(
-                    LinearGradient(
-                        colors: [
-                            Color(hex: "#6366f1").opacity(0.45 * exploreGlow),
-                            Color(hex: "#a78bfa").opacity(0.3 * exploreGlow)
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    ),
-                    lineWidth: 1.5
-                )
-                .allowsHitTesting(false)
-        )
         .onAppear {
             // Initialize stagger card state for initially-expanded
             if !exploreMoreCollapsed {
