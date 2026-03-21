@@ -158,14 +158,14 @@ struct DashboardView: View {
                     SoundscapeNowPlaying()
 
                     // Divider
-                    GlassDivider(color: isDark ? .white : .caribbeanLagoon, opacity: isDark ? 0.08 : 0.15)
+                    dashboardDivider
                         .padding(.horizontal, 4)
 
                     // Games Section
                     gamesSection
 
                     // Divider
-                    GlassDivider(color: isDark ? .white : .caribbeanLagoon, opacity: isDark ? 0.08 : 0.15)
+                    dashboardDivider
                         .padding(.horizontal, 4)
 
                     // Recent Activity
@@ -648,6 +648,56 @@ struct DashboardView: View {
                 )
         )
         .shadow(color: isDark ? .clear : color.opacity(0.04), radius: 3, y: 1)
+    }
+
+    // MARK: - Dashboard Divider
+
+    private var dashboardDivider: some View {
+        Group {
+            if isDark {
+                GlassDivider(color: .white, opacity: 0.08)
+            } else {
+                // Frosted white divider with soft glow
+                ZStack {
+                    // Warm glow halo
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    .clear,
+                                    Color.white.opacity(0.5),
+                                    Color.white.opacity(0.7),
+                                    Color.white.opacity(0.5),
+                                    .clear
+                                ],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(height: 4)
+                        .blur(radius: 3)
+
+                    // Core white line
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    .clear,
+                                    Color.white.opacity(0.6),
+                                    Color.white.opacity(0.9),
+                                    Color.white.opacity(0.9),
+                                    Color.white.opacity(0.6),
+                                    .clear
+                                ],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(height: 1)
+                }
+                .frame(height: 4)
+            }
+        }
     }
 
     // MARK: - Games Section
