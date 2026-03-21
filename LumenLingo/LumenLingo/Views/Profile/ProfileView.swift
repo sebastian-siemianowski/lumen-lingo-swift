@@ -495,15 +495,15 @@ struct ProfileView: View {
             // ── Streak banner ──
             if streakCount > 0 {
                 HStack(spacing: 10) {
-                    // Flame icon with layered glow
+                    // Streak icon with Caribbean sunset glow
                     ZStack {
-                        // Outer radial glow
+                        // Outer radial glow — tropical lagoon
                         Circle()
                             .fill(
                                 RadialGradient(
                                     colors: isDark
-                                        ? [Color(hex: "FF6B00").opacity(flamePulse ? 0.4 : 0.22), Color(hex: "FF3D00").opacity(0.08), .clear]
-                                        : [Color(hex: "FF8A65").opacity(flamePulse ? 0.5 : 0.28), Color(hex: "FFCC80").opacity(0.12), .clear],
+                                        ? [Color(hex: "E879F9").opacity(flamePulse ? 0.35 : 0.18), Color(hex: "38BDF8").opacity(0.1), .clear]
+                                        : [Color(hex: "F0ABFC").opacity(flamePulse ? 0.4 : 0.22), Color(hex: "67E8F9").opacity(0.12), .clear],
                                     center: .center,
                                     startRadius: 2,
                                     endRadius: 22
@@ -512,41 +512,41 @@ struct ProfileView: View {
                             .frame(width: 44, height: 44)
 
                         // Soft bloom layer
-                        Image(systemName: "flame.fill")
-                            .font(.system(size: 22))
+                        Image(systemName: "sparkles")
+                            .font(.system(size: 22, weight: .semibold))
                             .foregroundStyle(
                                 LinearGradient(
                                     colors: isDark
-                                        ? [Color(hex: "FF6347"), Color(hex: "FF9F43"), Color(hex: "FFD700")]
-                                        : [Color(hex: "FF6B6B"), Color(hex: "FF8A65"), Color(hex: "FFD93D")],
-                                    startPoint: .bottom, endPoint: .top
+                                        ? [Color(hex: "38BDF8"), Color(hex: "E879F9"), Color(hex: "FBBF24")]
+                                        : [Color(hex: "06B6D4"), Color(hex: "EC4899"), Color(hex: "F59E0B")],
+                                    startPoint: .bottomLeading, endPoint: .topTrailing
                                 )
                             )
                             .blur(radius: 7)
                             .opacity(flamePulse ? 0.75 : 0.5)
 
-                        // Sharp flame on top
-                        Image(systemName: "flame.fill")
-                            .font(.system(size: 22))
+                        // Sharp icon on top
+                        Image(systemName: "sparkles")
+                            .font(.system(size: 22, weight: .semibold))
                             .foregroundStyle(
                                 LinearGradient(
                                     stops: isDark
                                         ? [
-                                            .init(color: Color(hex: "FF6347"), location: 0.0),
-                                            .init(color: Color(hex: "FF9F43"), location: 0.35),
-                                            .init(color: Color(hex: "FFD700"), location: 0.7),
-                                            .init(color: Color(hex: "FFF8DC"), location: 1.0)
+                                            .init(color: Color(hex: "22D3EE"), location: 0.0),
+                                            .init(color: Color(hex: "A78BFA"), location: 0.35),
+                                            .init(color: Color(hex: "F472B6"), location: 0.65),
+                                            .init(color: Color(hex: "FBBF24"), location: 1.0)
                                           ]
                                         : [
-                                            .init(color: Color(hex: "FF6B6B"), location: 0.0),
-                                            .init(color: Color(hex: "FF8A65"), location: 0.30),
-                                            .init(color: Color(hex: "FFB347"), location: 0.65),
-                                            .init(color: Color(hex: "FFD93D"), location: 1.0)
+                                            .init(color: Color(hex: "0891B2"), location: 0.0),
+                                            .init(color: Color(hex: "7C3AED"), location: 0.30),
+                                            .init(color: Color(hex: "EC4899"), location: 0.65),
+                                            .init(color: Color(hex: "F59E0B"), location: 1.0)
                                           ],
-                                    startPoint: .bottom, endPoint: .top
+                                    startPoint: .bottomLeading, endPoint: .topTrailing
                                 )
                             )
-                            .shadow(color: isDark ? Color(hex: "FF6B00").opacity(0.5) : Color(hex: "FF8A65").opacity(0.45), radius: 3, y: 1)
+                            .shadow(color: isDark ? Color(hex: "A78BFA").opacity(0.5) : Color(hex: "EC4899").opacity(0.35), radius: 3, y: 1)
                             .scaleEffect(flamePulse ? 1.08 : 1.0)
                     }
 
@@ -556,14 +556,14 @@ struct ProfileView: View {
                             .foregroundStyle(
                                 LinearGradient(
                                     colors: isDark
-                                        ? [Color(hex: "FF6B35"), Color(hex: "FF9F1C"), Color(hex: "FFBF69")]
-                                        : [Color(hex: "FF6B6B"), Color(hex: "FF8A65"), Color(hex: "FFB347")],
+                                        ? [Color(hex: "22D3EE"), Color(hex: "C084FC"), Color(hex: "FBBF24")]
+                                        : [Color(hex: "0891B2"), Color(hex: "A855F7"), Color(hex: "F59E0B")],
                                     startPoint: .leading, endPoint: .trailing
                                 )
                             )
                         Text("Keep going!")
                             .font(.system(size: 11, weight: .semibold))
-                            .foregroundStyle(isDark ? .white.opacity(0.75) : Color(hex: "0D9488").opacity(0.85))
+                            .foregroundStyle(isDark ? .white.opacity(0.75) : Color(hex: "7C3AED").opacity(0.8))
                     }
 
                     Spacer()
@@ -577,11 +577,11 @@ struct ProfileView: View {
                                     filled
                                         ? (isDark
                                             ? AnyShapeStyle(LinearGradient(
-                                                colors: [Color(hex: "FF8C00"), Color(hex: "FFD700")],
+                                                colors: [Color(hex: "38BDF8"), Color(hex: "E879F9")],
                                                 startPoint: .bottom, endPoint: .top
                                               ))
                                             : AnyShapeStyle(LinearGradient(
-                                                colors: [Color(hex: "FF8A65"), Color(hex: "FFD93D")],
+                                                colors: [Color(hex: "06B6D4"), Color(hex: "A855F7")],
                                                 startPoint: .bottom, endPoint: .top
                                               )))
                                         : AnyShapeStyle(isDark ? Color.white.opacity(0.2) : Color.caribbeanPlum.opacity(0.2))
@@ -591,14 +591,14 @@ struct ProfileView: View {
                                     Circle()
                                         .strokeBorder(
                                             filled
-                                                ? (isDark ? Color.orange.opacity(0.6) : Color(hex: "FF8A65").opacity(0.5))
+                                                ? (isDark ? Color(hex: "A78BFA").opacity(0.6) : Color(hex: "A855F7").opacity(0.5))
                                                 : (isDark ? Color.white.opacity(0.12) : Color.caribbeanPlum.opacity(0.12)),
                                             lineWidth: 0.75
                                         )
                                 )
                                 .shadow(
                                     color: filled
-                                        ? (isDark ? Color.orange.opacity(0.6) : Color(hex: "FF8A65").opacity(0.4))
+                                        ? (isDark ? Color(hex: "A78BFA").opacity(0.6) : Color(hex: "A855F7").opacity(0.35))
                                         : .clear,
                                     radius: 4
                                 )
@@ -612,11 +612,11 @@ struct ProfileView: View {
                         .fill(
                             isDark
                                 ? AnyShapeStyle(LinearGradient(
-                                    colors: [Color.orange.opacity(0.14), Color(hex: "FF6B00").opacity(0.08)],
+                                    colors: [Color(hex: "7C3AED").opacity(0.12), Color(hex: "22D3EE").opacity(0.08)],
                                     startPoint: .leading, endPoint: .trailing
                                   ))
                                 : AnyShapeStyle(LinearGradient(
-                                    colors: [Color(hex: "FF8A65").opacity(0.15), Color(hex: "FFD93D").opacity(0.18)],
+                                    colors: [Color(hex: "06B6D4").opacity(0.1), Color(hex: "A855F7").opacity(0.1), Color(hex: "F59E0B").opacity(0.08)],
                                     startPoint: .leading, endPoint: .trailing
                                   ))
                         )
@@ -625,8 +625,8 @@ struct ProfileView: View {
                                 .strokeBorder(
                                     LinearGradient(
                                         colors: isDark
-                                            ? [Color.orange.opacity(0.4), Color(hex: "FFD700").opacity(0.15)]
-                                            : [Color(hex: "FB923C").opacity(0.35), Color(hex: "FDE68A").opacity(0.2)],
+                                            ? [Color(hex: "A78BFA").opacity(0.35), Color(hex: "22D3EE").opacity(0.15)]
+                                            : [Color(hex: "06B6D4").opacity(0.25), Color(hex: "A855F7").opacity(0.15)],
                                         startPoint: .topLeading, endPoint: .bottomTrailing
                                     ),
                                     lineWidth: 0.75
@@ -634,7 +634,7 @@ struct ProfileView: View {
                         )
                 )
                 .shadow(
-                    color: isDark ? Color.orange.opacity(0.12) : Color(hex: "FB923C").opacity(0.15),
+                    color: isDark ? Color(hex: "7C3AED").opacity(0.12) : Color(hex: "A855F7").opacity(0.1),
                     radius: 8,
                     y: 2
                 )
