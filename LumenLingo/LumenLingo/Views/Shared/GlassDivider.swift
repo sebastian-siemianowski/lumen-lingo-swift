@@ -779,10 +779,16 @@ struct GlassPanelWrapper<Content: View>: View {
                     .allowsHitTesting(false)
             }
 
+            // Light mode: warm elevated base — matches GlassCardBackground whiteness
+            if !isDark {
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(Color.caribbeanElevated)
+            }
+
             // BASE: Frosted glass material
             RoundedRectangle(cornerRadius: cornerRadius)
-                .fill(.ultraThinMaterial)
-                .opacity(isDark ? 0.55 : 0.85)
+                .fill(isDark ? AnyShapeStyle(.ultraThinMaterial) : AnyShapeStyle(.thinMaterial))
+                .opacity(isDark ? 0.55 : 0.35)
 
             // Dark tint overlay
             RoundedRectangle(cornerRadius: cornerRadius)

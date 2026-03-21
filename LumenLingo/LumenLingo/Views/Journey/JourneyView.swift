@@ -1161,32 +1161,33 @@ struct JourneyView: View {
     // MARK: - Streak Section
 
     private var streakSection: some View {
-        VStack(spacing: 10) {
-            HStack(spacing: 4) {
-                Text("\(profile?.streakDays ?? 0)")
-                    .font(.system(size: 42, weight: .bold, design: .rounded))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [.orange, .yellow],
-                            startPoint: .top,
-                            endPoint: .bottom
+        GlassPanelWrapper {
+            VStack(spacing: 10) {
+                HStack(spacing: 4) {
+                    Text("\(profile?.streakDays ?? 0)")
+                        .font(.system(size: 42, weight: .bold, design: .rounded))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.orange, .yellow],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
                         )
-                    )
-                Text(L.days)
-                    .font(.system(size: 15, weight: .medium))
-                    .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
-                    .padding(.top, 10)
-            }
-            .staggeredReveal(index: 0)
+                    Text(L.days)
+                        .font(.system(size: 15, weight: .medium))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+                        .padding(.top, 10)
+                }
+                .staggeredReveal(index: 0)
 
-            Text(L.keepLearningEveryDay)
-                .font(.system(size: 11))
-                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                .multilineTextAlignment(.center)
-                .staggeredReveal(index: 1)
+                Text(L.keepLearningEveryDay)
+                    .font(.system(size: 11))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    .multilineTextAlignment(.center)
+                    .staggeredReveal(index: 1)
+            }
+            .frame(maxWidth: .infinity)
         }
-        .padding(14)
-        .background(GlassCardBackground())
     }
 
     // MARK: - Reset Progress
