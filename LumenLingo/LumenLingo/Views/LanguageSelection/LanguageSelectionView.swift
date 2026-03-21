@@ -189,7 +189,6 @@ struct LanguageSelectionView: View {
     @State private var selectedSource: SupportedLanguage = .english
     @State private var selectedTarget: SupportedLanguage = .spanish
     @State private var appeared = false
-    @State private var orbPhase: CGFloat = 0
     @State private var lockedPairToShow: LanguagePair?
     @State private var showAutoSwitchToast = false
     @State private var autoSwitchMessage = ""
@@ -257,9 +256,6 @@ struct LanguageSelectionView: View {
                 withAnimation(.easeOut(duration: 0.7).delay(0.15)) {
                     appeared = true
                 }
-                withAnimation(.easeInOut(duration: 6).repeatForever(autoreverses: true)) {
-                    orbPhase = 1
-                }
             }
             .sensoryFeedback(.selection, trigger: selectedSource)
             .sensoryFeedback(.selection, trigger: selectedTarget)
@@ -316,21 +312,8 @@ struct LanguageSelectionView: View {
                 }
             }
 
-            // Ambient orb — shifts subtly with breathing.
-            // Uses a wide soft gradient instead of .blur() for GPU efficiency.
-            Ellipse()
-                .fill(
-                    RadialGradient(
-                        colors: isDark
-                            ? [Color.indigo.opacity(0.07), Color.indigo.opacity(0.03), .clear]
-                            : [Color.white.opacity(0.15), Color.white.opacity(0.05), .clear],
-                        center: .center,
-                        startRadius: 5,
-                        endRadius: 340
-                    )
-                )
-                .frame(width: 650, height: 520)
-                .offset(x: orbPhase * 30 - 15, y: -80 + orbPhase * 20)
+            // Ambient orb — isolated view so breathing doesn't re-render page.
+            AnimatedAmbientOrb(isDark: isDark)
         }
         .ignoresSafeArea()
     }
@@ -339,77 +322,12 @@ struct LanguageSelectionView: View {
 
     private var heroSection: some View {
         VStack(spacing: 20) {
-            // Flags with glowing orb connector
-            ZStack {
-                // Animated energy beam — light flows between languages
-                ZStack {
-                    // Persistent soft glow track
-                    Capsule()
-                        .fill(
-                            LinearGradient(
-                                colors: isDark
-                                    ? [.indigo.opacity(0.06), .purple.opacity(0.1), .indigo.opacity(0.06)]
-                                    : [Color(hex: "#0EA5E9").opacity(0.08), Color(hex: "#A78BFA").opacity(0.12), Color(hex: "#F472B6").opacity(0.08)],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .frame(width: 140, height: 6)
-
-                    // Scanning bright pulse that flows source → target
-                    Capsule()
-                        .fill(
-                            LinearGradient(
-                                stops: [
-                                    .init(color: .clear, location: max(0, orbPhase - 0.25)),
-                                    .init(color: (isDark ? Color.white.opacity(0.35) : Color(hex: "#22D3EE").opacity(0.5)), location: orbPhase),
-                                    .init(color: .clear, location: min(1, orbPhase + 0.25))
-                                ],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .frame(width: 140, height: 3)
-                }
-
-                HStack(spacing: 0) {
-                    heroFlag(selectedSource.countryCode)
-
-                    Spacer().frame(width: 60)
-
-                    // Animated center orb
-                    ZStack {
-                        Circle()
-                            .fill(isDark ? Color(hex: "#1a1a2e") : Color.white.opacity(0.45))
-                            .frame(width: 36, height: 36)
-                            .overlay(
-                                Circle()
-                                    .strokeBorder(
-                                        LinearGradient(
-                                            colors: [.indigo.opacity(0.3), .purple.opacity(0.2)],
-                                            startPoint: .top, endPoint: .bottom
-                                        ),
-                                        lineWidth: 1
-                                    )
-                            )
-                            .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.1), radius: 8, y: 2)
-                            .scaleEffect(0.9 + orbPhase * 0.2)
-
-                        Image(systemName: "arrow.right")
-                            .font(.system(size: 13, weight: .semibold))
-                            .foregroundStyle(
-                                LinearGradient(
-                                    colors: [.indigo, .purple],
-                                    startPoint: .top, endPoint: .bottom
-                                )
-                            )
-                    }
-
-                    Spacer().frame(width: 60)
-
-                    heroFlag(selectedTarget.countryCode)
-                }
-            }
+            // Flags + beam — isolated view so orbPhase doesn't re-render page
+            AnimatedHeroFlags(
+                sourceCode: selectedSource.countryCode,
+                targetCode: selectedTarget.countryCode,
+                isDark: isDark
+            )
             .frame(height: 72)
 
             // Text label
@@ -448,63 +366,6 @@ struct LanguageSelectionView: View {
         .offset(y: appeared ? 0 : 30)
         .animation(.spring(response: 0.5, dampingFraction: 0.8), value: selectedSource)
         .animation(.spring(response: 0.5, dampingFraction: 0.8), value: selectedTarget)
-    }
-
-    private func heroFlag(_ code: String) -> some View {
-        ZStack {
-            // Outer glow
-            Circle()
-                .fill(
-                    RadialGradient(
-                        colors: [.indigo.opacity(isDark ? 0.15 : 0.08), .clear],
-                        center: .center,
-                        startRadius: 20,
-                        endRadius: 40
-                    )
-                )
-                .frame(width: 80, height: 80)
-
-            // Breathing holographic halo ring
-            Circle()
-                .strokeBorder(
-                    AngularGradient(
-                        colors: isDark
-                            ? [.indigo.opacity(0.3), .purple.opacity(0.15), .indigo.opacity(0.3)]
-                            : [Color(hex: "#0EA5E9").opacity(0.25), Color(hex: "#A78BFA").opacity(0.2),
-                               Color(hex: "#F472B6").opacity(0.2), Color(hex: "#0EA5E9").opacity(0.25)],
-                        center: .center,
-                        angle: .degrees(orbPhase * 60)
-                    ),
-                    lineWidth: 1.5
-                )
-                .frame(width: 72, height: 72)
-                .scaleEffect(0.95 + orbPhase * 0.08)
-                .opacity(0.5 + orbPhase * 0.5)
-
-            // Flag circle
-            CountryFlagView(countryCode: code, size: 36)
-                .frame(width: 64, height: 64)
-                .background(
-                    Circle()
-                        .fill(isDark ? Color(hex: "#1a1a2e") : Color.white.opacity(0.5))
-                )
-                .overlay(
-                    Circle()
-                        .strokeBorder(
-                            LinearGradient(
-                                colors: [
-                                    .indigo.opacity(isDark ? 0.6 : 0.3),
-                                    .purple.opacity(isDark ? 0.4 : 0.2),
-                                    .indigo.opacity(isDark ? 0.6 : 0.3)
-                                ],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 2
-                        )
-                )
-                .shadow(color: .indigo.opacity(isDark ? 0.3 : 0.15), radius: 12, y: 4)
-        }
     }
 
     private var heroBackground: some View {
@@ -923,6 +784,175 @@ struct LanguageSelectionView: View {
                 .shadow(color: .black.opacity(0.15), radius: 8, y: 4)
         )
         .padding(.horizontal, 20)
+    }
+}
+
+// MARK: - Animated Subviews (isolated so orbPhase doesn't invalidate entire tree)
+
+/// Ambient background orb — owns its own animation phase so the
+/// 6-second breathing cycle doesn't force the page to re-render.
+private struct AnimatedAmbientOrb: View {
+    let isDark: Bool
+    @State private var phase: CGFloat = 0
+
+    var body: some View {
+        Ellipse()
+            .fill(
+                RadialGradient(
+                    colors: isDark
+                        ? [Color.indigo.opacity(0.07), Color.indigo.opacity(0.03), .clear]
+                        : [Color.white.opacity(0.15), Color.white.opacity(0.05), .clear],
+                    center: .center,
+                    startRadius: 5,
+                    endRadius: 340
+                )
+            )
+            .frame(width: 650, height: 520)
+            .offset(x: phase * 30 - 15, y: -80 + phase * 20)
+            .onAppear {
+                withAnimation(.easeInOut(duration: 6).repeatForever(autoreverses: true)) {
+                    phase = 1
+                }
+            }
+    }
+}
+
+/// Hero flags + energy beam + center orb — owns its own animation phase
+/// so the continuous pulse doesn't re-diff the source carousel or target grid.
+private struct AnimatedHeroFlags: View {
+    let sourceCode: String
+    let targetCode: String
+    let isDark: Bool
+    @State private var phase: CGFloat = 0
+
+    var body: some View {
+        ZStack {
+            // Animated energy beam
+            ZStack {
+                Capsule()
+                    .fill(
+                        LinearGradient(
+                            colors: isDark
+                                ? [.indigo.opacity(0.06), .purple.opacity(0.1), .indigo.opacity(0.06)]
+                                : [Color(hex: "#0EA5E9").opacity(0.08), Color(hex: "#A78BFA").opacity(0.12), Color(hex: "#F472B6").opacity(0.08)],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(width: 140, height: 6)
+
+                Capsule()
+                    .fill(
+                        LinearGradient(
+                            stops: [
+                                .init(color: .clear, location: max(0, phase - 0.25)),
+                                .init(color: (isDark ? Color.white.opacity(0.35) : Color(hex: "#22D3EE").opacity(0.5)), location: phase),
+                                .init(color: .clear, location: min(1, phase + 0.25))
+                            ],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(width: 140, height: 3)
+            }
+
+            HStack(spacing: 0) {
+                heroFlag(sourceCode)
+
+                Spacer().frame(width: 60)
+
+                // Center orb
+                ZStack {
+                    Circle()
+                        .fill(isDark ? Color(hex: "#1a1a2e") : Color.white.opacity(0.45))
+                        .frame(width: 36, height: 36)
+                        .overlay(
+                            Circle()
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [.indigo.opacity(0.3), .purple.opacity(0.2)],
+                                        startPoint: .top, endPoint: .bottom
+                                    ),
+                                    lineWidth: 1
+                                )
+                        )
+                        .shadow(color: .indigo.opacity(isDark ? 0.15 : 0.1), radius: 8, y: 2)
+                        .scaleEffect(0.9 + phase * 0.2)
+
+                    Image(systemName: "arrow.right")
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.indigo, .purple],
+                                startPoint: .top, endPoint: .bottom
+                            )
+                        )
+                }
+
+                Spacer().frame(width: 60)
+
+                heroFlag(targetCode)
+            }
+        }
+        .onAppear {
+            withAnimation(.easeInOut(duration: 6).repeatForever(autoreverses: true)) {
+                phase = 1
+            }
+        }
+    }
+
+    private func heroFlag(_ code: String) -> some View {
+        ZStack {
+            Circle()
+                .fill(
+                    RadialGradient(
+                        colors: [.indigo.opacity(isDark ? 0.15 : 0.08), .clear],
+                        center: .center,
+                        startRadius: 20,
+                        endRadius: 40
+                    )
+                )
+                .frame(width: 80, height: 80)
+
+            Circle()
+                .strokeBorder(
+                    AngularGradient(
+                        colors: isDark
+                            ? [.indigo.opacity(0.3), .purple.opacity(0.15), .indigo.opacity(0.3)]
+                            : [Color(hex: "#0EA5E9").opacity(0.25), Color(hex: "#A78BFA").opacity(0.2),
+                               Color(hex: "#F472B6").opacity(0.2), Color(hex: "#0EA5E9").opacity(0.25)],
+                        center: .center,
+                        angle: .degrees(phase * 60)
+                    ),
+                    lineWidth: 1.5
+                )
+                .frame(width: 72, height: 72)
+                .scaleEffect(0.95 + phase * 0.08)
+                .opacity(0.5 + phase * 0.5)
+
+            CountryFlagView(countryCode: code, size: 36)
+                .frame(width: 64, height: 64)
+                .background(
+                    Circle()
+                        .fill(isDark ? Color(hex: "#1a1a2e") : Color.white.opacity(0.5))
+                )
+                .overlay(
+                    Circle()
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    .indigo.opacity(isDark ? 0.6 : 0.3),
+                                    .purple.opacity(isDark ? 0.4 : 0.2),
+                                    .indigo.opacity(isDark ? 0.6 : 0.3)
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 2
+                        )
+                )
+                .shadow(color: .indigo.opacity(isDark ? 0.3 : 0.15), radius: 12, y: 4)
+        }
     }
 }
 
