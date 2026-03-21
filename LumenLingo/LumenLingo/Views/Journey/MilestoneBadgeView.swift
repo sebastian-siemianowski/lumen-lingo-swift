@@ -34,57 +34,153 @@ struct MilestoneBadgeView: View {
     // MARK: - Basic (Free)
 
     private var basicBadge: some View {
-        Circle()
-            .fill(isUnlocked ? milestone.color : .gray.opacity(0.3))
-            .frame(width: 32, height: 32)
-            .overlay {
-                Image(systemName: milestone.icon)
-                    .font(.system(size: 13))
-                    .foregroundStyle(isUnlocked ? .white : .gray)
+        ZStack {
+            // Outer glow ring for unlocked
+            if isUnlocked {
+                Circle()
+                    .fill(milestone.color.opacity(0.15))
+                    .frame(width: 40, height: 40)
+                    .blur(radius: 6)
             }
+
+            Circle()
+                .fill(
+                    isUnlocked
+                        ? LinearGradient(
+                            colors: [milestone.color, milestone.color.opacity(0.7)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                        : LinearGradient(
+                            colors: [.white.opacity(0.06), .white.opacity(0.03)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                )
+                .frame(width: 34, height: 34)
+                .overlay {
+                    if !isUnlocked {
+                        Circle()
+                            .strokeBorder(.white.opacity(0.06), lineWidth: 0.5)
+                    }
+                }
+
+            Image(systemName: isUnlocked ? milestone.icon : "lock.fill")
+                .font(.system(size: isUnlocked ? 14 : 11, weight: .medium))
+                .foregroundStyle(isUnlocked ? .white : .white.opacity(0.2))
+        }
+        .frame(width: 40)
     }
 
     // MARK: - Gradient (Pro)
 
     private var gradientBadge: some View {
-        Circle()
-            .fill(
-                isUnlocked
-                    ? LinearGradient(
-                        colors: [milestone.color, milestone.color.opacity(0.6)],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                    : LinearGradient(colors: [.gray.opacity(0.3), .gray.opacity(0.2)], startPoint: .top, endPoint: .bottom)
-            )
-            .frame(width: 32, height: 32)
-            .overlay {
-                Image(systemName: milestone.icon)
-                    .font(.system(size: 13))
-                    .foregroundStyle(isUnlocked ? .white : .gray)
+        ZStack {
+            // Ambient glow
+            if isUnlocked {
+                Circle()
+                    .fill(milestone.color.opacity(0.2))
+                    .frame(width: 42, height: 42)
+                    .blur(radius: 8)
             }
-            .shadow(color: isUnlocked ? milestone.color.opacity(0.3) : .clear, radius: 4)
+
+            Circle()
+                .fill(
+                    isUnlocked
+                        ? LinearGradient(
+                            colors: [milestone.color, milestone.color.opacity(0.5)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                        : LinearGradient(colors: [.white.opacity(0.06), .white.opacity(0.03)], startPoint: .top, endPoint: .bottom)
+                )
+                .frame(width: 34, height: 34)
+                .overlay {
+                    if isUnlocked {
+                        Circle()
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.3), .clear],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 0.5
+                            )
+                    } else {
+                        Circle()
+                            .strokeBorder(.white.opacity(0.06), lineWidth: 0.5)
+                    }
+                }
+
+            Image(systemName: isUnlocked ? milestone.icon : "lock.fill")
+                .font(.system(size: isUnlocked ? 14 : 11, weight: .medium))
+                .foregroundStyle(isUnlocked ? .white : .white.opacity(0.2))
+        }
+        .shadow(color: isUnlocked ? milestone.color.opacity(0.3) : .clear, radius: 6)
+        .frame(width: 40)
     }
 
     // MARK: - Sparkle (Elite)
 
     private var sparkleBadge: some View {
         ZStack {
-            gradientBadge
+            // Outer glow pulse
+            if isUnlocked {
+                Circle()
+                    .fill(milestone.color.opacity(0.15))
+                    .frame(width: 44, height: 44)
+                    .blur(radius: 8)
+            }
+
+            // Core badge
+            Circle()
+                .fill(
+                    isUnlocked
+                        ? LinearGradient(
+                            colors: [milestone.color, milestone.color.opacity(0.5)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                        : LinearGradient(colors: [.white.opacity(0.06), .white.opacity(0.03)], startPoint: .top, endPoint: .bottom)
+                )
+                .frame(width: 34, height: 34)
+                .overlay {
+                    if isUnlocked {
+                        Circle()
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [.white.opacity(0.35), .clear, .white.opacity(0.15)],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 0.5
+                            )
+                    } else {
+                        Circle()
+                            .strokeBorder(.white.opacity(0.06), lineWidth: 0.5)
+                    }
+                }
+
+            Image(systemName: isUnlocked ? milestone.icon : "lock.fill")
+                .font(.system(size: isUnlocked ? 14 : 11, weight: .medium))
+                .foregroundStyle(isUnlocked ? .white : .white.opacity(0.2))
 
             if isUnlocked {
-                // Particle sparkle ring
+                // Orbiting sparkle particles
                 ForEach(0..<6, id: \.self) { i in
                     let angle = CGFloat(i) * .pi / 3 + sparklePhase
-                    let alphaOscillation = 0.4 + 0.6 * sin(sparklePhase * 2 + CGFloat(i))
+                    let alphaOscillation = 0.5 + 0.5 * sin(sparklePhase * 2 + CGFloat(i))
                     Circle()
-                        .fill(.white.opacity(0.8))
-                        .frame(width: 3, height: 3)
-                        .offset(x: 18 * cos(angle), y: 18 * sin(angle))
+                        .fill(.white.opacity(0.9))
+                        .frame(width: 2.5, height: 2.5)
+                        .offset(x: 20 * cos(angle), y: 20 * sin(angle))
                         .opacity(alphaOscillation)
+                        .blur(radius: 0.5)
                 }
             }
         }
+        .shadow(color: isUnlocked ? milestone.color.opacity(0.3) : .clear, radius: 6)
+        .frame(width: 44)
         .onAppear {
             if isUnlocked {
                 withAnimation(.linear(duration: 4).repeatForever(autoreverses: false)) {
@@ -98,7 +194,7 @@ struct MilestoneBadgeView: View {
 
     private var holographicBadge: some View {
         ZStack {
-            // Rainbow gradient sweep
+            // Rainbow glow aura
             if isUnlocked {
                 Circle()
                     .fill(
@@ -107,13 +203,28 @@ struct MilestoneBadgeView: View {
                             center: .center
                         )
                     )
-                    .frame(width: 34, height: 34)
+                    .frame(width: 42, height: 42)
+                    .rotationEffect(.degrees(Double(holoPhase) * 360))
+                    .blur(radius: 4)
+                    .opacity(0.5)
+            }
+
+            // Rainbow outer ring
+            if isUnlocked {
+                Circle()
+                    .fill(
+                        AngularGradient(
+                            colors: [.red, .orange, .yellow, .green, .cyan, .blue, .purple, .red],
+                            center: .center
+                        )
+                    )
+                    .frame(width: 38, height: 38)
                     .rotationEffect(.degrees(Double(holoPhase) * 360))
                     .blur(radius: 1)
             } else {
                 Circle()
-                    .fill(Color.gray.opacity(0.3))
-                    .frame(width: 34, height: 34)
+                    .fill(.white.opacity(0.04))
+                    .frame(width: 38, height: 38)
             }
 
             // Inner circle
@@ -121,45 +232,47 @@ struct MilestoneBadgeView: View {
                 .fill(
                     isUnlocked
                         ? LinearGradient(
-                            colors: [milestone.color.opacity(0.9), milestone.color.opacity(0.5)],
+                            colors: [milestone.color.opacity(0.9), milestone.color.opacity(0.4)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
-                        : LinearGradient(colors: [.gray.opacity(0.3), .gray.opacity(0.2)], startPoint: .top, endPoint: .bottom)
+                        : LinearGradient(colors: [.white.opacity(0.06), .white.opacity(0.03)], startPoint: .top, endPoint: .bottom)
                 )
-                .frame(width: 28, height: 28)
+                .frame(width: 30, height: 30)
 
-            Image(systemName: milestone.icon)
-                .font(.system(size: 12, weight: .semibold))
-                .foregroundStyle(isUnlocked ? .white : .gray)
+            Image(systemName: isUnlocked ? milestone.icon : "lock.fill")
+                .font(.system(size: isUnlocked ? 13 : 11, weight: .semibold))
+                .foregroundStyle(isUnlocked ? .white : .white.opacity(0.2))
 
-            // Shimmer overlay
+            // Shimmer sweep
             if isUnlocked {
                 Circle()
                     .fill(
                         LinearGradient(
-                            colors: [.clear, .white.opacity(0.3), .clear],
+                            colors: [.clear, .white.opacity(0.35), .clear],
                             startPoint: UnitPoint(x: holoPhase - 0.3, y: 0),
                             endPoint: UnitPoint(x: holoPhase + 0.3, y: 1)
                         )
                     )
-                    .frame(width: 32, height: 32)
+                    .frame(width: 34, height: 34)
                     .blendMode(.overlay)
             }
 
-            // Mini confetti particles
+            // Orbiting confetti
             if isUnlocked && showConfetti {
                 ForEach(0..<8, id: \.self) { i in
                     let angle = CGFloat(i) * .pi / 4 + holoPhase * 3
-                    let alpha = 0.3 + 0.5 * sin(holoPhase * 4 + CGFloat(i))
+                    let alpha = 0.4 + 0.5 * sin(holoPhase * 4 + CGFloat(i))
                     Circle()
                         .fill(confettiColor(i))
                         .frame(width: 2.5, height: 2.5)
-                        .offset(x: 22 * cos(angle), y: 22 * sin(angle))
+                        .offset(x: 24 * cos(angle), y: 24 * sin(angle))
                         .opacity(alpha)
+                        .blur(radius: 0.3)
                 }
             }
         }
+        .frame(width: 46)
         .onAppear {
             if isUnlocked {
                 withAnimation(.linear(duration: 6).repeatForever(autoreverses: false)) {

@@ -568,9 +568,51 @@ struct JourneyView: View {
                 // Connector line (Story 6.1.1)
                 if !isLast {
                     if isDark {
-                        Rectangle()
-                            .fill(isUnlocked ? milestone.color.opacity(0.3) : .gray.opacity(0.15))
-                            .frame(width: 2, height: 20)
+                        let nextUnlocked = (index + 1 < milestones.count) && (currentXP >= milestones[index + 1].xpRequired)
+                        ZStack {
+                            if isUnlocked && nextUnlocked {
+                                // Flowing gradient connector
+                                RoundedRectangle(cornerRadius: 1.5)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [milestone.color.opacity(0.6), milestones[min(index + 1, milestones.count - 1)].color.opacity(0.6)],
+                                            startPoint: UnitPoint(x: 0.5, y: -timelineFlowPhase),
+                                            endPoint: UnitPoint(x: 0.5, y: 1 - timelineFlowPhase)
+                                        )
+                                    )
+                                    .frame(width: 2.5, height: 24)
+                                    .shadow(color: milestone.color.opacity(0.2), radius: 4)
+                            } else if isUnlocked && !nextUnlocked {
+                                // Transitional connector — solid fading to dashed
+                                VStack(spacing: 0) {
+                                    RoundedRectangle(cornerRadius: 1)
+                                        .fill(milestone.color.opacity(0.4))
+                                        .frame(width: 2.5, height: 12)
+                                    Rectangle()
+                                        .fill(.white.opacity(0.08))
+                                        .frame(width: 2, height: 12)
+                                        .mask(
+                                            VStack(spacing: 5) {
+                                                ForEach(0..<2, id: \.self) { _ in
+                                                    Rectangle().frame(height: 3)
+                                                }
+                                            }
+                                        )
+                                }
+                            } else {
+                                // Locked — dashed
+                                Rectangle()
+                                    .fill(.white.opacity(0.06))
+                                    .frame(width: 2, height: 24)
+                                    .mask(
+                                        VStack(spacing: 5) {
+                                            ForEach(0..<3, id: \.self) { _ in
+                                                Rectangle().frame(height: 3)
+                                            }
+                                        }
+                                    )
+                            }
+                        }
                     } else {
                         // Check if the next milestone is also unlocked for the connector
                         let nextUnlocked = (index + 1 < milestones.count) && (currentXP >= milestones[index + 1].xpRequired)
@@ -625,24 +667,166 @@ struct JourneyView: View {
 
             // Content card (Story 6.1.2)
             if isDark {
-                // Dark mode — unchanged
-                VStack(alignment: .leading, spacing: 1) {
-                    Text(milestone.title)
-                        .font(.system(size: 13, weight: .semibold))
-                        .foregroundStyle(.white.opacity(isUnlocked ? 1 : 0.4))
+                // Dark mode — premium milestone cards
+                VStack(alignment: .leading, spacing: 6) {
+                    HStack {
+                        Text(milestone.title)
+                            .font(.system(size: 14, weight: .bold, design: .rounded))
+                            .foregroundStyle(
+                                isUnlocked
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: [.white, .white.opacity(0.85)],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    ))
+                                    : (isUpcoming
+                                        ? AnyShapeStyle(Color.white.opacity(0.7))
+                                        : AnyShapeStyle(Color.white.opacity(0.3)))
+                            )
 
-                    Text(formattedXP(milestone.xpRequired) + " " + L.xpRequired)
-                        .font(.system(size: 10))
-                        .foregroundStyle(.white.opacity(0.4))
+                        Spacer()
+
+                        if isUnlocked {
+                            // Glowing achievement capsule
+                            HStack(spacing: 4) {
+                                Image(systemName: "checkmark.seal.fill")
+                                    .font(.system(size: 10))
+                                Text(formattedXP(milestone.xpRequired) + " XP")
+                                    .font(.system(size: 10, weight: .bold, design: .rounded))
+                            }
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [milestone.color, milestone.color.opacity(0.7)],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 3)
+                            .background(
+                                Capsule()
+                                    .fill(milestone.color.opacity(0.12))
+                                    .overlay(
+                                        Capsule()
+                                            .strokeBorder(milestone.color.opacity(0.2), lineWidth: 0.5)
+                                    )
+                            )
+                        } else if isUpcoming {
+                            // Pulsing "Next up" badge
+                            Text("Next up")
+                                .font(.system(size: 9, weight: .heavy, design: .rounded))
+                                .tracking(0.5)
+                                .foregroundStyle(Color(hex: "fbbf24"))
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 3)
+                                .background(
+                                    Capsule()
+                                        .fill(Color(hex: "fbbf24").opacity(0.1))
+                                        .overlay(
+                                            Capsule()
+                                                .strokeBorder(Color(hex: "fbbf24").opacity(0.2), lineWidth: 0.5)
+                                        )
+                                )
+                                .opacity(0.7 + 0.3 * currentPositionPulse)
+                        }
+                    }
+
+                    if isUnlocked {
+                        Text(formattedXP(milestone.xpRequired) + " " + L.xpRequired)
+                            .font(.system(size: 11, weight: .medium))
+                            .foregroundStyle(.white.opacity(0.35))
+                    } else if isUpcoming {
+                        // Progress bar toward this milestone
+                        let xpNeeded = milestone.xpRequired
+                        let progress = xpNeeded > 0 ? min(Double(currentXP) / Double(xpNeeded), 1.0) : 0
+
+                        VStack(alignment: .leading, spacing: 4) {
+                            GeometryReader { geo in
+                                ZStack(alignment: .leading) {
+                                    Capsule()
+                                        .fill(.white.opacity(0.06))
+                                        .frame(height: 5)
+                                    Capsule()
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [Color(hex: "fbbf24"), Color(hex: "f59e0b")],
+                                                startPoint: .leading,
+                                                endPoint: .trailing
+                                            )
+                                        )
+                                        .frame(width: max(5, geo.size.width * progress), height: 5)
+                                        .shadow(color: Color(hex: "fbbf24").opacity(0.3), radius: 4, y: 0)
+                                }
+                            }
+                            .frame(height: 5)
+
+                            Text("\(formattedXP(currentXP)) / \(formattedXP(xpNeeded)) XP")
+                                .font(.system(size: 10, weight: .medium))
+                                .foregroundStyle(.white.opacity(0.35))
+                        }
+                    } else {
+                        // Locked — XP hint
+                        HStack(spacing: 4) {
+                            Image(systemName: "lock.fill")
+                                .font(.system(size: 8))
+                            Text("\(formattedXP(milestone.xpRequired)) XP to unlock")
+                                .font(.system(size: 10, weight: .medium))
+                        }
+                        .foregroundStyle(.white.opacity(0.2))
+                    }
                 }
-
-                Spacer()
-
-                if isUnlocked {
-                    Image(systemName: "checkmark.circle.fill")
-                        .font(.system(size: 14))
-                        .foregroundStyle(.green)
+                .padding(.vertical, 10)
+                .padding(.horizontal, 12)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background {
+                    ZStack {
+                        if isUpcoming {
+                            // Golden glow card
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .fill(Color(hex: "fbbf24").opacity(0.04))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                        .strokeBorder(
+                                            LinearGradient(
+                                                colors: [Color(hex: "fbbf24").opacity(0.20), Color(hex: "f59e0b").opacity(0.10)],
+                                                startPoint: .topLeading,
+                                                endPoint: .bottomTrailing
+                                            ),
+                                            lineWidth: 0.5
+                                        )
+                                )
+                        } else if isUnlocked {
+                            // Unlocked card with milestone color accent
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [milestone.color.opacity(0.06), milestone.color.opacity(0.02)],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                        .strokeBorder(milestone.color.opacity(0.12), lineWidth: 0.5)
+                                )
+                        } else {
+                            // Locked card — very subtle
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .fill(.white.opacity(0.02))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                        .strokeBorder(.white.opacity(0.04), lineWidth: 0.5)
+                                )
+                        }
+                    }
                 }
+                .shadow(
+                    color: isUnlocked
+                        ? milestone.color.opacity(0.12)
+                        : (isUpcoming ? Color(hex: "fbbf24").opacity(0.08) : .clear),
+                    radius: 6,
+                    y: 2
+                )
             } else {
                 // Light mode — premium milestone cards
                 VStack(alignment: .leading, spacing: 4) {
@@ -732,35 +916,6 @@ struct JourneyView: View {
                 .padding(.horizontal, 10)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background {
-                    if isDark {
-                        Group {
-                            if isUpcoming {
-                                RoundedRectangle(cornerRadius: 20)
-                                    .fill(Color(hex: "F59E0B").opacity(0.04))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 20)
-                                            .strokeBorder(
-                                                LinearGradient(
-                                                    colors: [Color(hex: "F59E0B").opacity(0.20), Color(hex: "FB923C").opacity(0.12)],
-                                                    startPoint: .topLeading,
-                                                    endPoint: .bottomTrailing
-                                                ),
-                                                lineWidth: 1
-                                            )
-                                    )
-                            } else if isUnlocked {
-                                RoundedRectangle(cornerRadius: 20)
-                                    .fill(milestone.color.opacity(0.04))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 20)
-                                            .strokeBorder(milestone.color.opacity(0.10), lineWidth: 0.5)
-                                    )
-                            } else {
-                                RoundedRectangle(cornerRadius: 20)
-                                    .fill(Color.caribbeanDisabled.opacity(0.3))
-                            }
-                        }
-                    } else {
                         // Frost trough — 3D recessed milestone card
                         let accentColor: Color = isUpcoming ? Color(hex: "F59E0B") : (isUnlocked ? milestone.color : Color.gray)
                         let accentOpacity: Double = isUpcoming ? 0.12 : (isUnlocked ? 0.08 : 0.03)
@@ -809,7 +964,6 @@ struct JourneyView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 20))
                         }
                         .shadow(color: accentColor.opacity(isUnlocked ? 0.12 : 0.04), radius: 5, y: 2)
-                    }
                 }
             }
         }
