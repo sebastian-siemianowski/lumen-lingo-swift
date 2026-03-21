@@ -92,16 +92,6 @@ struct ContentView: View {
                 }
                 .tag(AppTab.membership)
 
-                // MARK: Settings Tab
-                NavigationStack {
-                    SettingsView()
-                }
-                .environment(\.backgroundActive, selectedTab == .settings)
-                .tabItem {
-                    Label(L.tabSettings, systemImage: "gearshape.fill")
-                }
-                .tag(AppTab.settings)
-
                 // MARK: Profile Tab
                 NavigationStack {
                     ProfileView()
@@ -111,6 +101,16 @@ struct ContentView: View {
                     Label(L.tabProfile, systemImage: "person.fill")
                 }
                 .tag(AppTab.profile)
+
+                // MARK: Settings Tab
+                NavigationStack {
+                    SettingsView()
+                }
+                .environment(\.backgroundActive, selectedTab == .settings)
+                .tabItem {
+                    Label(L.tabSettings, systemImage: "gearshape.fill")
+                }
+                .tag(AppTab.settings)
             }
             .tint(Color(hex: themeManager.isDarkMode ? "#a855f7" : "#0EA5E9"))
             .toolbar(hideTabBar ? .hidden : .visible, for: .tabBar)
