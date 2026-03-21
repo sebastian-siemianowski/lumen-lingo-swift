@@ -179,6 +179,7 @@
 		B77CAF0468C0B5BE9AE655B5 /* LumenLingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667ED645B5F750955DEA3B5 /* LumenLingoApp.swift */; };
 		B824CDE12BF216774CCD4C02 /* flashcards_english_arabic.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A2C56C7AF40780974F08272 /* flashcards_english_arabic.json */; };
 		B867C37A62E184BD32312922 /* SyncStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1079AD7C7C0B803C74DDCC7 /* SyncStatusView.swift */; };
+		B8B293695C6D49A6F85B7C5C /* PersistedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D74CF5ED2E94E03BAD339 /* PersistedState.swift */; };
 		B9313B9CC02F968DC9318B94 /* PracticeExpiredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC7CB529E2BAA14AC41CCD /* PracticeExpiredView.swift */; };
 		B948B4AB826E5B38E0B044BE /* wordbuilder_polish_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FB2375AD490242C723FC30E /* wordbuilder_polish_ukrainian.json */; };
 		BA5B8481D3BD9E9C73C52CC8 /* FlashcardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A5EB7427BAE3106C94D4ED /* FlashcardsViewModel.swift */; };
@@ -479,6 +480,7 @@
 		E667ED645B5F750955DEA3B5 /* LumenLingoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumenLingoApp.swift; sourceTree = "<group>"; };
 		E78D46284A32A5BAEDE26A2A /* SpiralHaloStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SpiralHaloStars.metal; sourceTree = "<group>"; };
 		E7FDE95E978430CB78BE2508 /* wordbuilder_french_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_french_english.json; sourceTree = "<group>"; };
+		E81D74CF5ED2E94E03BAD339 /* PersistedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistedState.swift; sourceTree = "<group>"; };
 		E8D714A552DAA2C0B4C1F0B8 /* MetalQuantumFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalQuantumFlowView.swift; sourceTree = "<group>"; };
 		E92B42CA6AE8D2A591A3D217 /* flashcards_spanish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_spanish_english.json; sourceTree = "<group>"; };
 		E9695959319EDA311AB53C48 /* wordbuilder_polish_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_arabic.json; sourceTree = "<group>"; };
@@ -604,6 +606,7 @@
 			isa = PBXGroup;
 			children = (
 				11F2243A3F5171B5E1D1731A /* Extensions.swift */,
+				E81D74CF5ED2E94E03BAD339 /* PersistedState.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1413,6 +1416,7 @@
 				E4512FE2996AF9231CC0892B /* PDFSuccessOverlayView.swift in Sources */,
 				9C5DA80690D3E20EAAABFFCC /* PDFThumbnailRailView.swift in Sources */,
 				91C07042588BEC4D17477119 /* PerformanceMonitor.swift in Sources */,
+				B8B293695C6D49A6F85B7C5C /* PersistedState.swift in Sources */,
 				DB64940F1C00BE15D3B0A067 /* PostSessionNudge.swift in Sources */,
 				B9313B9CC02F968DC9318B94 /* PracticeExpiredView.swift in Sources */,
 				207C74D6A9B9CC98B4F2E6B4 /* PracticeTimeBanner.swift in Sources */,

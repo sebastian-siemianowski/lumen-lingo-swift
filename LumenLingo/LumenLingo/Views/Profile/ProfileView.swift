@@ -40,7 +40,7 @@ struct ProfileView: View {
 
     // Entry animation state
     @State private var headerAppeared = false
-    @State private var isMyPlanCollapsed = false
+    @PersistedState("profile_myPlan_collapsed") private var isMyPlanCollapsed = false
     // Tab transition direction
     @State private var tabDirection: Int = 0
     @State private var subTabDirection: Int = 0

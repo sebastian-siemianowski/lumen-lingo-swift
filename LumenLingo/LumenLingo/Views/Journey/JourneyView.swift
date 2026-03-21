@@ -79,20 +79,20 @@ struct JourneyView: View {
     @State private var levelRingRotation: Double = 0
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
-    // Collapsible section state
-    @State private var isStatsCollapsed = false
-    @State private var isMilestonesCollapsed = false
-    @State private var isGameBreakdownCollapsed = false
-    @State private var isDailyXPCollapsed = false
-    @State private var isWeeklyTrendCollapsed = false
-    @State private var isAccuracyHeatmapCollapsed = false
-    @State private var isMonthlyReportCollapsed = false
-    @State private var isMilestonePredictionsCollapsed = false
-    @State private var isExportDataCollapsed = false
-    @State private var isInsightsCollapsed = false
-    @State private var isStreakCollapsed = false
-    @State private var isQuoteCollapsed = false
-    @State private var isResetCollapsed = true
+    // Collapsible section state (persisted to UserDefaults, driven by @State for animations)
+    @PersistedState("journey_stats_collapsed") private var isStatsCollapsed = false
+    @PersistedState("journey_milestones_collapsed") private var isMilestonesCollapsed = false
+    @PersistedState("journey_gameBreakdown_collapsed") private var isGameBreakdownCollapsed = false
+    @PersistedState("journey_dailyXP_collapsed") private var isDailyXPCollapsed = false
+    @PersistedState("journey_weeklyTrend_collapsed") private var isWeeklyTrendCollapsed = false
+    @PersistedState("journey_accuracyHeatmap_collapsed") private var isAccuracyHeatmapCollapsed = false
+    @PersistedState("journey_monthlyReport_collapsed") private var isMonthlyReportCollapsed = false
+    @PersistedState("journey_milestonePredictions_collapsed") private var isMilestonePredictionsCollapsed = false
+    @PersistedState("journey_exportData_collapsed") private var isExportDataCollapsed = false
+    @PersistedState("journey_insights_collapsed") private var isInsightsCollapsed = false
+    @PersistedState("journey_streak_collapsed") private var isStreakCollapsed = false
+    @PersistedState("journey_quote_collapsed") private var isQuoteCollapsed = false
+    @PersistedState("journey_reset_collapsed") private var isResetCollapsed = true
 
     var body: some View {
         ScrollView(showsIndicators: false) {

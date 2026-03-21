@@ -13,7 +13,7 @@ struct MembershipView: View {
     @Environment(TierManager.self) private var tierManager
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
-    @State private var isComparisonCollapsed = true
+    @PersistedState("membership_comparison_collapsed") private var isComparisonCollapsed = true
     @State private var selectedTierId: String = "free"
 
     /// When true, shows a close button in the toolbar (for sheet presentations).

@@ -59,8 +59,8 @@ struct AccuracyHeatmapView: View {
         return categories.reduce(0) { $0 + $1.accuracy } / Double(categories.count)
     }
 
-    // Story 3.1 – expand/collapse (session-only, resets on relaunch)
-    @State private var isMasteredCollapsed = true
+    // Story 3.1 – expand/collapse (persisted across launches)
+    @PersistedState("journey_mastered_collapsed") private var isMasteredCollapsed = true
 
     // MARK: - Colors
 

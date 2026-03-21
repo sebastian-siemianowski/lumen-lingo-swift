@@ -10,7 +10,7 @@ struct SoundscapeNowPlaying: View {
     @Environment(TierManager.self) private var tierManager
     @Query private var profiles: [UserProfile]
 
-    @State private var isCollapsed = true
+    @PersistedState("dashboard_soundscape_collapsed") private var isCollapsed = true
     @State private var barOffsets: [CGFloat] = Array(repeating: 0, count: 9)
     @State private var playPausePressed = false
 

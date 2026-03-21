@@ -23,7 +23,7 @@ struct DashboardView: View {
 
     @Environment(SessionEngine.self) private var sessionEngine
 
-    @State private var isHeaderCollapsed = false
+    @PersistedState("dashboard_header_collapsed") private var isHeaderCollapsed = false
     @State private var showLanguageSheet = false
     @State private var showMembershipSheet = false
     @State private var tierIconAppeared = false
@@ -32,7 +32,7 @@ struct DashboardView: View {
     @State private var crossLanguageRecord: GameProgressRecord?
     @State private var statsAppeared = false
     @State private var scrollOffset: CGFloat = 0
-    @AppStorage("dashboard_exploreMore_collapsed") private var exploreMoreCollapsed = true
+    @PersistedState("dashboard_exploreMore_collapsed") private var exploreMoreCollapsed = true
     @State private var progressCountBeforeGame: Int?
 
     private var profile: UserProfile? { profiles.first }
