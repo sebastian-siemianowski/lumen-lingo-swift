@@ -967,8 +967,7 @@ struct JourneyView: View {
                 }
             }
         }
-        .padding(.vertical, 3)
-        .padding(.bottom, isUpcoming ? 4 : 0)
+        .padding(.vertical, isDark && isUpcoming ? 5 : 3)
     }
 
     private func formattedXP(_ xp: Int) -> String {
