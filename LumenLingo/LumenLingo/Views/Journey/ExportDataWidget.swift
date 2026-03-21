@@ -243,17 +243,17 @@ struct ExportDataWidget: View {
                                 ),
                                 lineWidth: 0.5
                             )
-                        VStack {
-                            RoundedRectangle(cornerRadius: 14)
+                        VStack(spacing: 0) {
+                            Rectangle()
                                 .fill(
                                     LinearGradient(
                                         colors: [.white.opacity(0.45), .white.opacity(0.10), .clear],
                                         startPoint: .top,
-                                        endPoint: .center
+                                        endPoint: .bottom
                                     )
                                 )
                                 .frame(height: 18)
-                            Spacer()
+                            Spacer(minLength: 0)
                         }
                         .clipShape(RoundedRectangle(cornerRadius: 14))
                     }
@@ -495,17 +495,17 @@ struct ExportDataWidget: View {
                                 ),
                                 lineWidth: 0.5
                             )
-                        VStack {
-                            RoundedRectangle(cornerRadius: 14)
+                        VStack(spacing: 0) {
+                            Rectangle()
                                 .fill(
                                     LinearGradient(
                                         colors: [.white.opacity(0.45), .white.opacity(0.10), .clear],
                                         startPoint: .top,
-                                        endPoint: .center
+                                        endPoint: .bottom
                                     )
                                 )
                                 .frame(height: 14)
-                            Spacer()
+                            Spacer(minLength: 0)
                         }
                         .clipShape(RoundedRectangle(cornerRadius: 14))
                     }

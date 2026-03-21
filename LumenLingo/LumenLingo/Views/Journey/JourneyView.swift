@@ -812,17 +812,17 @@ struct JourneyView: View {
                                     ),
                                     lineWidth: 0.5
                                 )
-                            VStack {
-                                RoundedRectangle(cornerRadius: 12)
+                            VStack(spacing: 0) {
+                                Rectangle()
                                     .fill(
                                         LinearGradient(
                                             colors: [.white.opacity(0.50), .white.opacity(0.12), .clear],
                                             startPoint: .top,
-                                            endPoint: .center
+                                            endPoint: .bottom
                                         )
                                     )
                                     .frame(height: 12)
-                                Spacer()
+                                Spacer(minLength: 0)
                             }
                             .clipShape(RoundedRectangle(cornerRadius: 12))
                         }
@@ -1162,8 +1162,8 @@ struct JourneyView: View {
                             lineWidth: 0.5
                         )
                     // White surface highlight — top band
-                    VStack {
-                        RoundedRectangle(cornerRadius: 16)
+                    VStack(spacing: 0) {
+                        Rectangle()
                             .fill(
                                 LinearGradient(
                                     colors: [
@@ -1172,11 +1172,11 @@ struct JourneyView: View {
                                         Color.clear
                                     ],
                                     startPoint: .top,
-                                    endPoint: .center
+                                    endPoint: .bottom
                                 )
                             )
                             .frame(height: 18)
-                        Spacer()
+                        Spacer(minLength: 0)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 16))
                 }
@@ -1288,25 +1288,25 @@ struct JourneyView: View {
                             )
                         // 3D top highlight band
                         if !isDark {
-                            VStack {
-                                RoundedRectangle(cornerRadius: 12)
+                            VStack(spacing: 0) {
+                                Rectangle()
                                     .fill(
                                         LinearGradient(
                                             colors: [.white.opacity(0.38), .white.opacity(0.08), .clear],
                                             startPoint: .top,
-                                            endPoint: .center
+                                            endPoint: .bottom
                                         )
                                     )
                                     .frame(height: 16)
-                                Spacer()
+                                Spacer(minLength: 0)
                             }
                             .clipShape(RoundedRectangle(cornerRadius: 12))
                         }
                         // Inner bottom shadow for inset feel
                         if !isDark {
-                            VStack {
-                                Spacer()
-                                RoundedRectangle(cornerRadius: 12)
+                            VStack(spacing: 0) {
+                                Spacer(minLength: 0)
+                                Rectangle()
                                     .fill(
                                         LinearGradient(
                                             colors: [.clear, .black.opacity(0.12)],

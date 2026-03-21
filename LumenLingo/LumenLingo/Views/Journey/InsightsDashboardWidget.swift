@@ -95,17 +95,17 @@ struct InsightsDashboardWidget: View {
                             ),
                             lineWidth: 0.5
                         )
-                    VStack {
-                        RoundedRectangle(cornerRadius: 14)
+                    VStack(spacing: 0) {
+                        Rectangle()
                             .fill(
                                 LinearGradient(
                                     colors: [.white.opacity(0.40), .white.opacity(0.08), .clear],
                                     startPoint: .top,
-                                    endPoint: .center
+                                    endPoint: .bottom
                                 )
                             )
                             .frame(height: 16)
-                        Spacer()
+                        Spacer(minLength: 0)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 14))
                 }
@@ -180,17 +180,17 @@ struct InsightsDashboardWidget: View {
                             ),
                             lineWidth: 0.5
                         )
-                    VStack {
-                        RoundedRectangle(cornerRadius: 10)
+                    VStack(spacing: 0) {
+                        Rectangle()
                             .fill(
                                 LinearGradient(
                                     colors: [.white.opacity(0.45), .white.opacity(0.10), .clear],
                                     startPoint: .top,
-                                    endPoint: .center
+                                    endPoint: .bottom
                                 )
                             )
                             .frame(height: 10)
-                        Spacer()
+                        Spacer(minLength: 0)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
@@ -291,17 +291,17 @@ struct InsightsDashboardWidget: View {
                             ),
                             lineWidth: 0.5
                         )
-                    VStack {
-                        RoundedRectangle(cornerRadius: 14)
+                    VStack(spacing: 0) {
+                        Rectangle()
                             .fill(
                                 LinearGradient(
                                     colors: [.white.opacity(0.40), .white.opacity(0.08), .clear],
                                     startPoint: .top,
-                                    endPoint: .center
+                                    endPoint: .bottom
                                 )
                             )
                             .frame(height: 16)
-                        Spacer()
+                        Spacer(minLength: 0)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 14))
                 }
@@ -346,8 +346,8 @@ struct InsightsDashboardWidget: View {
                         .overlay(
                             Group {
                                 if !isDark {
-                                    VStack {
-                                        RoundedRectangle(cornerRadius: 4)
+                                    VStack(spacing: 0) {
+                                        Rectangle()
                                             .fill(
                                                 LinearGradient(
                                                     colors: [.white.opacity(0.35), .clear],
@@ -356,7 +356,7 @@ struct InsightsDashboardWidget: View {
                                                 )
                                             )
                                             .frame(height: 4)
-                                        Spacer()
+                                        Spacer(minLength: 0)
                                     }
                                     .clipShape(RoundedRectangle(cornerRadius: 4))
                                 }
@@ -431,17 +431,17 @@ struct InsightsDashboardWidget: View {
                             ),
                             lineWidth: 0.5
                         )
-                    VStack {
-                        RoundedRectangle(cornerRadius: 14)
+                    VStack(spacing: 0) {
+                        Rectangle()
                             .fill(
                                 LinearGradient(
                                     colors: [.white.opacity(0.40), .white.opacity(0.08), .clear],
                                     startPoint: .top,
-                                    endPoint: .center
+                                    endPoint: .bottom
                                 )
                             )
                             .frame(height: 16)
-                        Spacer()
+                        Spacer(minLength: 0)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 14))
                 }
@@ -604,17 +604,17 @@ struct InsightsDashboardWidget: View {
                             ),
                             lineWidth: 0.5
                         )
-                    VStack {
-                        RoundedRectangle(cornerRadius: 14)
+                    VStack(spacing: 0) {
+                        Rectangle()
                             .fill(
                                 LinearGradient(
                                     colors: [.white.opacity(0.40), .white.opacity(0.08), .clear],
                                     startPoint: .top,
-                                    endPoint: .center
+                                    endPoint: .bottom
                                 )
                             )
                             .frame(height: 16)
-                        Spacer()
+                        Spacer(minLength: 0)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 14))
                 }

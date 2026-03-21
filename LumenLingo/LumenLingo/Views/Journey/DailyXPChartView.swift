@@ -83,17 +83,17 @@ struct DailyXPChartView: View {
                                     .frame(height: max(4, CGFloat(day.xp) / CGFloat(maxXP) * 100))
                                     .overlay(
                                         // Top highlight band for 3D pop
-                                        VStack {
-                                            RoundedRectangle(cornerRadius: 4)
+                                        VStack(spacing: 0) {
+                                            Rectangle()
                                                 .fill(
                                                     LinearGradient(
                                                         colors: [.white.opacity(isDark ? 0 : 0.35), .clear],
                                                         startPoint: .top,
-                                                        endPoint: .center
+                                                        endPoint: .bottom
                                                     )
                                                 )
                                                 .frame(height: 6)
-                                            Spacer()
+                                            Spacer(minLength: 0)
                                         }
                                         .clipShape(RoundedRectangle(cornerRadius: 4))
                                     )

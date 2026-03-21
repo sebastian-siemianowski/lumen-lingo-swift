@@ -409,17 +409,17 @@ struct AccuracyHeatmapView: View {
                             lineWidth: 0.5
                         )
                     // Top frost highlight
-                    VStack {
-                        RoundedRectangle(cornerRadius: 14)
+                    VStack(spacing: 0) {
+                        Rectangle()
                             .fill(
                                 LinearGradient(
                                     colors: [.white.opacity(0.50), .white.opacity(0.12), .clear],
                                     startPoint: .top,
-                                    endPoint: .center
+                                    endPoint: .bottom
                                 )
                             )
                             .frame(height: 14)
-                        Spacer()
+                        Spacer(minLength: 0)
                     }
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 14))
@@ -591,17 +591,17 @@ private struct HeatmapCell: View {
                             ),
                             lineWidth: 0.5
                         )
-                    VStack {
-                        RoundedRectangle(cornerRadius: 16)
+                    VStack(spacing: 0) {
+                        Rectangle()
                             .fill(
                                 LinearGradient(
                                     colors: [.white.opacity(0.55), .white.opacity(0.15), .clear],
                                     startPoint: .top,
-                                    endPoint: .center
+                                    endPoint: .bottom
                                 )
                             )
                             .frame(height: 16)
-                        Spacer()
+                        Spacer(minLength: 0)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 16))
                 }

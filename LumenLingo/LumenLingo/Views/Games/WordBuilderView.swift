@@ -293,17 +293,17 @@ struct WordBuilderView: View {
                     )
 
                 // Top reflection band
-                VStack {
-                    RoundedRectangle(cornerRadius: 20)
+                VStack(spacing: 0) {
+                    Rectangle()
                         .fill(
                             LinearGradient(
                                 colors: [isDark ? .white.opacity(0.10) : .white.opacity(0.40), .clear],
                                 startPoint: .top,
-                                endPoint: .center
+                                endPoint: .bottom
                             )
                         )
                         .frame(height: 40)
-                    Spacer()
+                    Spacer(minLength: 0)
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 20))
             }

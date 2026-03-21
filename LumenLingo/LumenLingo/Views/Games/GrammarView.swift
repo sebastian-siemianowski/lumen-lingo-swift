@@ -273,17 +273,17 @@ struct GrammarView: View {
                 )
 
                 // Glass curvature highlight at top
-                VStack {
-                    RoundedRectangle(cornerRadius: 28)
+                VStack(spacing: 0) {
+                    Rectangle()
                         .fill(
                             LinearGradient(
                                 colors: [isDark ? .white.opacity(0.10) : Color.caribbeanOcean.opacity(0.04), .clear],
                                 startPoint: .top,
-                                endPoint: .center
+                                endPoint: .bottom
                             )
                         )
                         .frame(height: 50)
-                    Spacer()
+                    Spacer(minLength: 0)
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 28))
             }
@@ -349,17 +349,17 @@ struct GrammarView: View {
                     )
 
                 // Top gloss highlight for depth
-                VStack {
-                    RoundedRectangle(cornerRadius: 20)
+                VStack(spacing: 0) {
+                    Rectangle()
                         .fill(
                             LinearGradient(
                                 colors: [isDark ? .white.opacity(0.10) : Color.caribbeanOcean.opacity(0.05), .clear],
                                 startPoint: .top,
-                                endPoint: .center
+                                endPoint: .bottom
                             )
                         )
                         .frame(height: 30)
-                    Spacer()
+                    Spacer(minLength: 0)
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 20))
             }
@@ -600,17 +600,17 @@ struct GrammarView: View {
                         .fill(answerBackground(isSelected: isSelected, isCorrect: isCorrect, showResult: showResult))
 
                     // Top gloss highlight
-                    VStack {
-                        RoundedRectangle(cornerRadius: 16)
+                    VStack(spacing: 0) {
+                        Rectangle()
                             .fill(
                                 LinearGradient(
                                     colors: [isDark ? .white.opacity(0.08) : Color.caribbeanOcean.opacity(0.03), .clear],
                                     startPoint: .top,
-                                    endPoint: .center
+                                    endPoint: .bottom
                                 )
                             )
                             .frame(height: 22)
-                        Spacer()
+                        Spacer(minLength: 0)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 16))
 
@@ -718,17 +718,17 @@ struct GrammarView: View {
                     .fill(isDark ? .white.opacity(0.04) : Color.caribbeanRecessed.opacity(0.5))
 
                 // Top gloss highlight
-                VStack {
-                    RoundedRectangle(cornerRadius: 16)
+                VStack(spacing: 0) {
+                    Rectangle()
                         .fill(
                             LinearGradient(
                                 colors: [isDark ? .white.opacity(0.06) : .white.opacity(0.40), .clear],
                                 startPoint: .top,
-                                endPoint: .center
+                                endPoint: .bottom
                             )
                         )
                         .frame(height: 20)
-                    Spacer()
+                    Spacer(minLength: 0)
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 16))
 

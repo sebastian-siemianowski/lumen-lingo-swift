@@ -678,31 +678,31 @@ struct GlassCardBackground: View {
 
             // Layer 3: Top-edge luminance band — sun catching sea glass
             VStack(spacing: 0) {
-                RoundedRectangle(cornerRadius: cornerRadius)
+                Rectangle()
                     .fill(
                         LinearGradient(
                             colors: [.white.opacity(0.45), .white.opacity(0.08), .clear],
                             startPoint: .top,
-                            endPoint: .center
+                            endPoint: .bottom
                         )
                     )
-                    .frame(height: 50)
-                Spacer()
+                    .frame(height: 36)
+                Spacer(minLength: 0)
             }
             .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
 
             // Layer 4: Bottom-edge warmth band — warm sand glow from below
             VStack(spacing: 0) {
-                Spacer()
-                RoundedRectangle(cornerRadius: cornerRadius)
+                Spacer(minLength: 0)
+                Rectangle()
                     .fill(
                         LinearGradient(
                             colors: [.clear, Color.caribbeanSand.opacity(0.04)],
-                            startPoint: .center,
+                            startPoint: .top,
                             endPoint: .bottom
                         )
                     )
-                    .frame(height: 40)
+                    .frame(height: 28)
             }
             .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
 
@@ -823,7 +823,7 @@ struct GlassPanelWrapper<Content: View>: View {
             }
 
             // Light mode: top wash — enhanced luminance band
-            VStack {
+            VStack(spacing: 0) {
                 LinearGradient(
                     colors: isDark
                         ? [.white.opacity(0.0), .clear]
@@ -831,8 +831,8 @@ struct GlassPanelWrapper<Content: View>: View {
                     startPoint: .top,
                     endPoint: .bottom
                 )
-                .frame(height: 50)
-                Spacer()
+                .frame(height: 36)
+                Spacer(minLength: 0)
             }
             .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
             .opacity(isDark ? 0 : 1)

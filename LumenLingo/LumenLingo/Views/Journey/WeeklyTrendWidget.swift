@@ -103,12 +103,12 @@ struct WeeklyTrendWidget: View {
                             )
                             // Surface highlight band
                             .overlay(alignment: .top) {
-                                RoundedRectangle(cornerRadius: 10)
+                                Rectangle()
                                     .fill(
                                         LinearGradient(
                                             colors: [.white.opacity(0.50), .white.opacity(0.12), .clear],
                                             startPoint: .top,
-                                            endPoint: .center
+                                            endPoint: .bottom
                                         )
                                     )
                                     .frame(height: 14)

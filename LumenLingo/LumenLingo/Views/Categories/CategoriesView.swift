@@ -452,8 +452,8 @@ struct CategoriesView: View {
                                 )
 
                             // White surface highlight — top 40%
-                            VStack {
-                                RoundedRectangle(cornerRadius: 14)
+                            VStack(spacing: 0) {
+                                Rectangle()
                                     .fill(
                                         LinearGradient(
                                             colors: [
@@ -462,11 +462,11 @@ struct CategoriesView: View {
                                                 Color.clear
                                             ],
                                             startPoint: .top,
-                                            endPoint: .center
+                                            endPoint: .bottom
                                         )
                                     )
                                     .frame(height: 22)
-                                Spacer()
+                                Spacer(minLength: 0)
                             }
                             .clipShape(RoundedRectangle(cornerRadius: 14))
 
