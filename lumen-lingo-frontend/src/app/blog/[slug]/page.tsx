@@ -15,6 +15,7 @@ import { ShareButtons } from '@/components/blog/share-buttons';
 import { PageTransition } from '@/components/layout';
 import { JsonLd, BreadcrumbJsonLd } from '@/components/home';
 import { ScrollDepthTracker } from '@/components/analytics';
+import { BlogNewsletterCTA } from '@/components/newsletter';
 
 // ─── Static params for SSG ─────────────────────────────────────────
 export function generateStaticParams() {
@@ -179,6 +180,7 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
           <div className="relative xl:grid xl:grid-cols-[1fr_220px] xl:gap-12">
             <div className="prose-lumenlingo mx-auto max-w-[720px]">
               <MDXContent source={content} />
+              <BlogNewsletterCTA />
               <ScrollDepthTracker slug={slug} title={frontmatter.title} />
             </div>
             <aside className="hidden xl:block">

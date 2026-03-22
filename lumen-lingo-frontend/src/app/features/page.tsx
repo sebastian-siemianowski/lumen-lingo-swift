@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { FeaturesHero, FeaturesContent } from '@/components/features';
+import { FeaturesHero, FeaturesContent, FeatureWalkthroughs, LanguagePairGrid } from '@/components/features';
 import { CTABanner, JsonLd, BreadcrumbJsonLd, softwareApplicationLd } from '@/components/home';
 import { PageTransition } from '@/components/layout';
 
@@ -42,6 +42,8 @@ export default function FeaturesPage() {
       <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Features', href: '/features' }]} />
       <FeaturesHero />
       <FeaturesContent />
+      <FeatureWalkthroughs />
+      <LanguagePairGrid />
       <CTABanner />
     </PageTransition>
   );

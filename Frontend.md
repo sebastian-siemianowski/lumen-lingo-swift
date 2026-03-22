@@ -1197,32 +1197,32 @@
 
 ### Acceptance Criteria
 
-- [ ] Newsletter signup form appears in two locations:
+- [x] Newsletter signup form appears in two locations:
   - Embedded in the footer across all pages
   - Inline CTA within blog post content (after the 3rd paragraph)
-- [ ] Form fields: email address only (single-field for maximum conversion)
-- [ ] Submit button text: "Subscribe" with violet glow styling
-- [ ] Form validation: email format validation on client-side with clear error messaging
-- [ ] Success state: "Welcome to the LumenShore community! Check your inbox." with checkmark animation
-- [ ] Error state: "Something went wrong. Please try again." with retry option
-- [ ] Integration with email service provider (Resend, ConvertKit, or Mailchimp) via API route
-- [ ] API route at `app/api/newsletter/route.ts` handles subscription server-side
-- [ ] Rate limiting on API route to prevent abuse (max 5 requests per IP per minute)
+- [x] Form fields: email address only (single-field for maximum conversion)
+- [x] Submit button text: "Subscribe" with violet glow styling
+- [x] Form validation: email format validation on client-side with clear error messaging
+- [x] Success state: "Welcome to the LumenShore community! Check your inbox." with checkmark animation
+- [x] Error state: "Something went wrong. Please try again." with retry option
+- [x] Integration with email service provider (Resend, ConvertKit, or Mailchimp) via API route
+- [x] API route at `app/api/newsletter/route.ts` handles subscription server-side
+- [x] Rate limiting on API route to prevent abuse (max 5 requests per IP per minute)
 - [ ] Double opt-in flow: confirmation email sent before adding to active list
-- [ ] GDPR-compliant: small text below form — "We respect your privacy. Unsubscribe anytime."
+- [x] GDPR-compliant: small text below form — "We respect your privacy. Unsubscribe anytime."
 
 ### Subtasks
 
-- [ ] 9.1.1 — Create `<NewsletterForm>` component with email input, submit button, and states (idle, loading, success, error)
-- [ ] 9.1.2 — Create `app/api/newsletter/route.ts` with email validation, rate limiting, and ESP integration
-- [ ] 9.1.3 — Integrate with chosen email service provider (Resend recommended for developer experience)
-- [ ] 9.1.4 — Add `<NewsletterForm>` to the `<Footer>` component
-- [ ] 9.1.5 — Create `<BlogNewsletterCTA>` variant for inline blog post placement
-- [ ] 9.1.6 — Add success/error state animations using Framer Motion
-- [ ] 9.1.7 — Add rate limiting middleware (IP-based, 5 requests/minute)
+- [x] 9.1.1 — Create `<NewsletterForm>` component with email input, submit button, and states (idle, loading, success, error)
+- [x] 9.1.2 — Create `app/api/newsletter/route.ts` with email validation, rate limiting, and ESP integration
+- [x] 9.1.3 — Integrate with chosen email service provider (Resend recommended for developer experience)
+- [x] 9.1.4 — Add `<NewsletterForm>` to the `<Footer>` component
+- [x] 9.1.5 — Create `<BlogNewsletterCTA>` variant for inline blog post placement
+- [x] 9.1.6 — Add success/error state animations using Framer Motion
+- [x] 9.1.7 — Add rate limiting middleware (IP-based, 5 requests/minute)
 - [ ] 9.1.8 — Configure double opt-in email template in the ESP
-- [ ] 9.1.9 — Add `newsletter_signup` analytics event on successful submission
-- [ ] 9.1.10 — Test form: valid/invalid emails, duplicate subscriptions, rate limit behaviour
+- [x] 9.1.9 — Add `newsletter_signup` analytics event on successful submission
+- [x] 9.1.10 — Test form: valid/invalid emails, duplicate subscriptions, rate limit behaviour
 
 ---
 
@@ -1234,26 +1234,26 @@
 
 ### Acceptance Criteria
 
-- [ ] Route: `/early-access` (can be activated/deactivated via environment variable)
-- [ ] Headline: "Be Among the First" with cosmic ambient background
-- [ ] Subheadline: "LumenLingo is expanding. Join the list to get early access and exclusive launch offers."
-- [ ] Form fields: email + preferred language (dropdown)
-- [ ] Social proof: counter showing "X learners already waiting"
-- [ ] Success state: confetti or particle burst animation with "You're on the list!" confirmation
-- [ ] Unique referral link generated for each signup to encourage sharing
-- [ ] Share buttons: "Tell a friend" with pre-filled Twitter/WhatsApp/email share text
-- [ ] Data stored via API route; no third-party dependencies for the waitlist itself
+- [x] Route: `/early-access` (can be activated/deactivated via environment variable)
+- [x] Headline: "Be Among the First" with cosmic ambient background
+- [x] Subheadline: "LumenLingo is expanding. Join the list to get early access and exclusive launch offers."
+- [x] Form fields: email + preferred language (dropdown)
+- [x] Social proof: counter showing "X learners already waiting"
+- [x] Success state: confetti or particle burst animation with "You're on the list!" confirmation
+- [x] Unique referral link generated for each signup to encourage sharing
+- [x] Share buttons: "Tell a friend" with pre-filled Twitter/WhatsApp/email share text
+- [x] Data stored via API route; no third-party dependencies for the waitlist itself
 
 ### Subtasks
 
-- [ ] 9.2.1 — Create `app/early-access/page.tsx` with hero, form, and social proof
-- [ ] 9.2.2 — Create `<WaitlistForm>` component with email + language dropdown
-- [ ] 9.2.3 — Create `app/api/waitlist/route.ts` — stores signups and generates referral codes
-- [ ] 9.2.4 — Create `<ReferralShare>` component with unique link and social sharing buttons
-- [ ] 9.2.5 — Add confetti/particle success animation on form submission
-- [ ] 9.2.6 — Implement waitlist counter (count of signups displayed publicly)
+- [x] 9.2.1 — Create `app/early-access/page.tsx` with hero, form, and social proof
+- [x] 9.2.2 — Create `<WaitlistForm>` component with email + language dropdown
+- [x] 9.2.3 — Create `app/api/waitlist/route.ts` — stores signups and generates referral codes
+- [x] 9.2.4 — Create `<ReferralShare>` component with unique link and social sharing buttons
+- [x] 9.2.5 — Add confetti/particle success animation on form submission
+- [x] 9.2.6 — Implement waitlist counter (count of signups displayed publicly)
 - [ ] 9.2.7 — Add environment variable toggle to show/hide the early access page
-- [ ] 9.2.8 — Configure SEO metadata for the early access page
+- [x] 9.2.8 — Configure SEO metadata for the early access page
 
 ---
 
@@ -1270,30 +1270,30 @@
 
 ### Acceptance Criteria
 
-- [ ] Route: `/demo` or embedded section on the features page
-- [ ] Interactive flashcard component that shows a word in the source language
-- [ ] User can tap/click to flip the card and reveal the translation
-- [ ] Swipe right (correct) or left (incorrect) gesture/button interaction
-- [ ] 5 demo flashcards cycling through common words (e.g., "Hello", "Thank you", "Goodbye", "Please", "Yes")
-- [ ] Glass morphism card styling matching the real app's aesthetic
-- [ ] Flip animation: smooth 3D card rotation with back-face rendering
-- [ ] Progress indicator: "Card 1 of 5" with a progress bar
-- [ ] After completing 5 cards: "Love it? The real experience is even better." + App Store CTA
-- [ ] Touch gestures work on mobile; keyboard (arrow keys) works on desktop
-- [ ] Sound effect on correct/incorrect (optional, with mute toggle)
+- [x] Route: `/demo` or embedded section on the features page
+- [x] Interactive flashcard component that shows a word in the source language
+- [x] User can tap/click to flip the card and reveal the translation
+- [x] Swipe right (correct) or left (incorrect) gesture/button interaction
+- [x] 5 demo flashcards cycling through common words (e.g., "Hello", "Thank you", "Goodbye", "Please", "Yes")
+- [x] Glass morphism card styling matching the real app's aesthetic
+- [x] Flip animation: smooth 3D card rotation with back-face rendering
+- [x] Progress indicator: "Card 1 of 5" with a progress bar
+- [x] After completing 5 cards: "Love it? The real experience is even better." + App Store CTA
+- [x] Touch gestures work on mobile; keyboard (arrow keys) works on desktop
+- [x] Sound effect on correct/incorrect (optional, with mute toggle)
 
 ### Subtasks
 
-- [ ] 10.1.1 — Create `<FlashcardDemo>` component with card state management (deck, current index, flipped)
-- [ ] 10.1.2 — Implement 3D flip animation using CSS `transform: rotateY()` and `backface-visibility`
-- [ ] 10.1.3 — Implement swipe gesture detection using `onPointerDown/Move/Up` or Framer Motion drag
-- [ ] 10.1.4 — Create swipe-right (correct) and swipe-left (incorrect) animations with card exit
-- [ ] 10.1.5 — Add progress bar and "Card X of 5" indicator
-- [ ] 10.1.6 — Create completion screen with stats summary and App Store CTA
-- [ ] 10.1.7 — Add keyboard navigation: ArrowLeft (incorrect), ArrowRight (correct), Space (flip)
-- [ ] 10.1.8 — Style cards with glass morphism matching the LumenLingo app aesthetic
-- [ ] 10.1.9 — Add optional sound effects with mute toggle using Web Audio API
-- [ ] 10.1.10 — Track `demo_started`, `demo_completed`, and `demo_cta_click` analytics events
+- [x] 10.1.1 — Create `<FlashcardDemo>` component with card state management (deck, current index, flipped)
+- [x] 10.1.2 — Implement 3D flip animation using CSS `transform: rotateY()` and `backface-visibility`
+- [x] 10.1.3 — Implement swipe gesture detection using `onPointerDown/Move/Up` or Framer Motion drag
+- [x] 10.1.4 — Create swipe-right (correct) and swipe-left (incorrect) animations with card exit
+- [x] 10.1.5 — Add progress bar and "Card X of 5" indicator
+- [x] 10.1.6 — Create completion screen with stats summary and App Store CTA
+- [x] 10.1.7 — Add keyboard navigation: ArrowLeft (incorrect), ArrowRight (correct), Space (flip)
+- [x] 10.1.8 — Style cards with glass morphism matching the LumenLingo app aesthetic
+- [x] 10.1.9 — Add optional sound effects with mute toggle using Web Audio API
+- [x] 10.1.10 — Track `demo_started`, `demo_completed`, and `demo_cta_click` analytics events
 
 ---
 
@@ -1305,25 +1305,25 @@
 
 ### Acceptance Criteria
 
-- [ ] 3 animated walkthroughs embedded on the features page:
+- [x] 3 animated walkthroughs embedded on the features page:
   1. **Flashcard Flow** — shows card appearance → flip → swipe right → next card
   2. **Word Builder** — shows letter tile selection, word construction, and completion animation
   3. **Soundscape Selection** — shows browsing soundscapes and toggling ambient audio
-- [ ] Each walkthrough is a looping animation (8–12 seconds per loop)
-- [ ] Animations are rendered as CSS/SVG animations or Lottie files (not video for performance)
-- [ ] Animations play only when in viewport (Intersection Observer triggered)
-- [ ] On reduced-motion preference, animations show a static screenshot instead
-- [ ] Each walkthrough has a caption explaining the feature
+- [x] Each walkthrough is a looping animation (8–12 seconds per loop)
+- [x] Animations are rendered as CSS/SVG animations or Lottie files (not video for performance)
+- [x] Animations play only when in viewport (Intersection Observer triggered)
+- [x] On reduced-motion preference, animations show a static screenshot instead
+- [x] Each walkthrough has a caption explaining the feature
 
 ### Subtasks
 
-- [ ] 10.2.1 — Design animation storyboards for all 3 walkthroughs
-- [ ] 10.2.2 — Create Flashcard Flow animation (CSS transforms + opacity transitions)
-- [ ] 10.2.3 — Create Word Builder animation (letter selection, word assembly, completion glow)
-- [ ] 10.2.4 — Create Soundscape Selection animation (carousel browse, audio visualiser pulse)
-- [ ] 10.2.5 — Implement Intersection Observer play/pause control
-- [ ] 10.2.6 — Add reduced-motion fallback with static screenshot
-- [ ] 10.2.7 — Add captions and contextual CTAs below each walkthrough
+- [x] 10.2.1 — Design animation storyboards for all 3 walkthroughs
+- [x] 10.2.2 — Create Flashcard Flow animation (CSS transforms + opacity transitions)
+- [x] 10.2.3 — Create Word Builder animation (letter selection, word assembly, completion glow)
+- [x] 10.2.4 — Create Soundscape Selection animation (carousel browse, audio visualiser pulse)
+- [x] 10.2.5 — Implement Intersection Observer play/pause control
+- [x] 10.2.6 — Add reduced-motion fallback with static screenshot
+- [x] 10.2.7 — Add captions and contextual CTAs below each walkthrough
 
 ---
 
@@ -1335,26 +1335,26 @@
 
 ### Acceptance Criteria
 
-- [ ] Section on the features page or standalone at `/languages`
-- [ ] Grid of supported language pairs displayed as glass cards with:
+- [x] Section on the features page or standalone at `/languages`
+- [x] Grid of supported language pairs displayed as glass cards with:
   - Source language flag emoji
   - Target language flag emoji
   - Language pair name (e.g., "English → Spanish")
   - Flashcard count (e.g., "2,500+ flashcards")
   - Tier access badge: Free, Pro, or Elite (indicates which membership tier unlocks the pair)
-- [ ] Cards animate in with staggered fade-up on scroll
-- [ ] Hovering a card shows a sample word with translation (mini preview)
-- [ ] "More languages coming soon" card at the end with newsletter signup prompt
-- [ ] Responsive grid: 4 columns (desktop), 3 (tablet), 2 (mobile)
+- [x] Cards animate in with staggered fade-up on scroll
+- [x] Hovering a card shows a sample word with translation (mini preview)
+- [x] "More languages coming soon" card at the end with newsletter signup prompt
+- [x] Responsive grid: 4 columns (desktop), 3 (tablet), 2 (mobile)
 
 ### Subtasks
 
-- [ ] 10.3.1 — Create `<LanguagePairGrid>` section component
-- [ ] 10.3.2 — Create `<LanguagePairCard>` with flags, name, count, tier access badge, and hover preview
-- [ ] 10.3.3 — Source accurate flashcard counts per language pair from content data
-- [ ] 10.3.4 — Add "Coming Soon" card with newsletter CTA
-- [ ] 10.3.5 — Add staggered entrance animation
-- [ ] 10.3.6 — Configure SEO: if standalone page, add metadata and `ItemList` structured data
+- [x] 10.3.1 — Create `<LanguagePairGrid>` section component
+- [x] 10.3.2 — Create `<LanguagePairCard>` with flags, name, count, tier access badge, and hover preview
+- [x] 10.3.3 — Source accurate flashcard counts per language pair from content data
+- [x] 10.3.4 — Add "Coming Soon" card with newsletter CTA
+- [x] 10.3.5 — Add staggered entrance animation
+- [x] 10.3.6 — Configure SEO: if standalone page, add metadata and `ItemList` structured data
 
 ---
 

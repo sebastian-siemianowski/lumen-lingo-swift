@@ -9,6 +9,7 @@ import {
   VideoEmbed,
   CodeBlock,
 } from './mdx-components';
+import { BlogNewsletterCTA } from '@/components/newsletter';
 
 const components = {
   Callout,
@@ -16,6 +17,7 @@ const components = {
   AppScreenshot,
   VideoEmbed,
   CodeBlock,
+  BlogNewsletterCTA,
 };
 
 interface MDXContentProps {

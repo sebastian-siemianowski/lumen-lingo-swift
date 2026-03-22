@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Container } from '@/components/ui';
 import { getAppStoreUrl } from '@/lib/appStoreUrl';
+import { NewsletterForm } from '@/components/newsletter';
 
 const footerLinks = {
   Product: [
@@ -86,6 +87,15 @@ export function Footer() {
               <p className="mt-4 max-w-sm text-sm leading-relaxed text-foreground-muted">
                 Master a new language through multi-sensory immersion. Beautiful flashcards, ambient soundscapes, and adaptive practice that fits your life.
               </p>
+
+              {/* Newsletter signup */}
+              <div className="mt-6">
+                <h3 className="text-sm font-semibold text-foreground">Stay in the loop</h3>
+                <p className="mt-1 text-xs text-foreground-muted">Learning tips, app updates & community highlights.</p>
+                <div className="mt-3 max-w-sm">
+                  <NewsletterForm source="footer" compact />
+                </div>
+              </div>
 
               {/* App Store badge */}
               <a
