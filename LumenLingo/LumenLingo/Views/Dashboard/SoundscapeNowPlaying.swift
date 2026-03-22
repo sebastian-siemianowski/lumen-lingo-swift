@@ -14,6 +14,20 @@ struct SoundscapeNowPlaying: View {
     @State private var barOffsets: [CGFloat] = Array(repeating: 0, count: 9)
     @State private var playPausePressed = false
 
+    // Skip animation state
+    @State private var isSkipping = false
+    @State private var skipDirection: CGFloat = 0
+    @State private var artworkFloat: CGFloat = 0
+    @State private var artworkTilt: Double = 0
+    @State private var artworkGlow: CGFloat = 0
+    @State private var cardBreath: CGFloat = 1.0
+    @State private var auroraOffset: CGFloat = -0.3
+    @State private var auroraOpacity: CGFloat = 0
+    @State private var prevBtnScale: CGFloat = 1.0
+    @State private var nextBtnScale: CGFloat = 1.0
+    @State private var skipRingExpand: CGFloat = 0.3
+    @State private var skipRingFade: CGFloat = 0
+
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
     private let audio = AudioService.shared
@@ -60,6 +74,8 @@ struct SoundscapeNowPlaying: View {
                     )
             )
             .shadow(color: soundscape.previewColors[0].opacity(isDark ? 0.25 : 0.18), radius: isDark ? 16 : 12, y: isDark ? 6 : 4)
+            .overlay(skipAuroraOverlay(soundscape))
+            .scaleEffect(cardBreath)
             .animation(.easeInOut(duration: 0.55), value: soundscape)
             .transition(.asymmetric(
                 insertion: .move(edge: .top).combined(with: .opacity),
@@ -146,6 +162,10 @@ struct SoundscapeNowPlaying: View {
                     .shadow(color: .black.opacity(0.25), radius: 3, y: 1)
             }
         }
+        // Tranquil float & tilt during skip
+        .shadow(color: soundscape.previewColors[0].opacity(artworkGlow), radius: 12, y: 0)
+        .offset(y: artworkFloat)
+        .rotation3DEffect(.degrees(artworkTilt), axis: (x: 0.1, y: 1, z: 0), perspective: 0.5)
     }
 
     // MARK: - Live Waveform (Professional Animated Bars)
@@ -186,9 +206,10 @@ struct SoundscapeNowPlaying: View {
     private func transportControls(_ soundscape: Soundscape) -> some View {
         HStack(spacing: 4) {
             // Previous
-            skipButton(
+            skipControlButton(
                 icon: "backward.fill",
-                action: { skipToPrevious(from: soundscape) }
+                direction: -1,
+                soundscape: soundscape
             )
 
             // Play/Pause — larger, gradient, delightful press animation
@@ -232,23 +253,48 @@ struct SoundscapeNowPlaying: View {
             .animation(.easeInOut(duration: 0.2), value: isPlaying)
 
             // Next
-            skipButton(
+            skipControlButton(
                 icon: "forward.fill",
-                action: { skipToNext(from: soundscape) }
+                direction: 1,
+                soundscape: soundscape
             )
         }
     }
 
-    private func skipButton(icon: String, action: @escaping () -> Void) -> some View {
-        Button {
-            HapticsService.shared.buttonPress()
-            action()
+    private func skipControlButton(icon: String, direction: CGFloat, soundscape: Soundscape) -> some View {
+        let isNext = direction > 0
+        let btnScale = isNext ? nextBtnScale : prevBtnScale
+        let isActiveDir = (isNext && skipDirection > 0) || (!isNext && skipDirection < 0)
+
+        return Button {
+            performSkip(direction: direction, from: soundscape)
         } label: {
-            Image(systemName: icon)
-                .font(.system(size: 13, weight: .semibold))
-                .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk.opacity(0.6))
-                .frame(width: 34, height: 34)
-                .contentShape(Circle())
+            ZStack {
+                // Expanding glow ring on skip
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [
+                                soundscape.previewColors[0].opacity(0.5),
+                                soundscape.previewColors[0].opacity(0.1),
+                                .clear
+                            ],
+                            center: .center,
+                            startRadius: 0,
+                            endRadius: 22
+                        )
+                    )
+                    .frame(width: 48, height: 48)
+                    .scaleEffect(isActiveDir ? skipRingExpand : 0.3)
+                    .opacity(isActiveDir ? skipRingFade : 0)
+
+                Image(systemName: icon)
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk.opacity(0.6))
+                    .frame(width: 34, height: 34)
+            }
+            .scaleEffect(btnScale)
+            .contentShape(Circle())
         }
         .buttonStyle(.plain)
     }
@@ -332,6 +378,121 @@ struct SoundscapeNowPlaying: View {
                 startPoint: .leading,
                 endPoint: .trailing
             )
+        }
+    }
+
+    // MARK: - Aurora Shimmer Overlay
+
+    private func skipAuroraOverlay(_ soundscape: Soundscape) -> some View {
+        RoundedRectangle(cornerRadius: 18, style: .continuous)
+            .fill(
+                LinearGradient(
+                    stops: [
+                        .init(color: .clear, location: max(0, min(1, auroraOffset - 0.25))),
+                        .init(color: soundscape.previewColors[0].opacity(0.08), location: max(0, min(1, auroraOffset - 0.1))),
+                        .init(color: soundscape.previewColors.count > 1
+                              ? soundscape.previewColors[1].opacity(0.18)
+                              : soundscape.previewColors[0].opacity(0.18),
+                              location: max(0, min(1, auroraOffset))),
+                        .init(color: soundscape.previewColors[0].opacity(0.08), location: max(0, min(1, auroraOffset + 0.1))),
+                        .init(color: .clear, location: max(0, min(1, auroraOffset + 0.25)))
+                    ],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+            .opacity(auroraOpacity)
+            .allowsHitTesting(false)
+    }
+
+    // MARK: - Skip Choreography
+
+    private func performSkip(direction: CGFloat, from soundscape: Soundscape) {
+        guard !isSkipping else { return }
+        isSkipping = true
+        skipDirection = direction
+        let isNext = direction > 0
+
+        // 1. Soft haptic
+        HapticsService.shared.buttonPress()
+
+        // 2. Button gentle press
+        withAnimation(.easeOut(duration: 0.12)) {
+            if isNext { nextBtnScale = 0.72 } else { prevBtnScale = 0.72 }
+        }
+
+        // 3. Expanding glow ring from button
+        skipRingExpand = 0.3
+        skipRingFade = 0.8
+        withAnimation(.easeOut(duration: 0.6)) {
+            skipRingExpand = 2.2
+            skipRingFade = 0
+        }
+
+        // 4. Card breathes — gentle lift
+        withAnimation(.easeInOut(duration: 0.45)) {
+            cardBreath = 1.018
+        }
+
+        // 5. Artwork floats up and tilts toward skip direction
+        withAnimation(.easeOut(duration: 0.3)) {
+            artworkFloat = -4
+            artworkTilt = direction * 18
+            artworkGlow = 0.6
+        }
+
+        // 6. Aurora sweep begins
+        auroraOffset = direction > 0 ? -0.3 : 1.3
+        auroraOpacity = 1.0
+        withAnimation(.easeInOut(duration: 0.65)) {
+            auroraOffset = direction > 0 ? 1.3 : -0.3
+        }
+
+        // 7. Fire the actual skip after brief anticipation
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.12) {
+            if isNext {
+                self.skipToNext(from: soundscape)
+            } else {
+                self.skipToPrevious(from: soundscape)
+            }
+        }
+
+        // 8. Artwork drifts back — tranquil settling
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            withAnimation(.spring(response: 0.7, dampingFraction: 0.65)) {
+                artworkFloat = 0
+                artworkTilt = 0
+            }
+            withAnimation(.easeOut(duration: 0.5)) {
+                artworkGlow = 0
+            }
+        }
+
+        // 9. Button floats back
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.18) {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.55)) {
+                if isNext { nextBtnScale = 1.0 } else { prevBtnScale = 1.0 }
+            }
+        }
+
+        // 10. Card exhales — settles back
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            withAnimation(.easeInOut(duration: 0.55)) {
+                cardBreath = 1.0
+            }
+        }
+
+        // 11. Aurora fades out gracefully
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.55) {
+            withAnimation(.easeOut(duration: 0.3)) {
+                auroraOpacity = 0
+            }
+        }
+
+        // 12. Reset state
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.85) {
+            isSkipping = false
+            skipDirection = 0
         }
     }
 
