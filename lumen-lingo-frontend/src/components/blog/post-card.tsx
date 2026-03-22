@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useLocale } from 'next-intl';
 import { cn } from '@/lib/utils';
 import { formatDate, type BlogPost } from '@/lib/blog-utils';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
@@ -25,6 +26,7 @@ const categoryColors: Record<string, string> = {
 
 export function PostCard({ post, index = 0, featured = false, priority = false }: PostCardProps) {
   const prefersReduced = useReducedMotion();
+  const locale = useLocale();
   const [imgLoaded, setImgLoaded] = useState(false);
   const { frontmatter, slug } = post;
 
@@ -155,7 +157,7 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
             </div>
             <span aria-hidden="true">·</span>
             <time dateTime={frontmatter.publishedAt}>
-              {formatDate(frontmatter.publishedAt)}
+              {formatDate(frontmatter.publishedAt, locale)}
             </time>
             <span aria-hidden="true">·</span>
             <span>{frontmatter.readingTime}</span>

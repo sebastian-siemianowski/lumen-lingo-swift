@@ -164,7 +164,7 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
             </div>
             <span aria-hidden="true">·</span>
             <time dateTime={frontmatter.publishedAt}>
-              {formatDate(frontmatter.publishedAt)}
+              {formatDate(frontmatter.publishedAt, locale)}
             </time>
             <span aria-hidden="true">·</span>
             <span>{frontmatter.readingTime}</span>

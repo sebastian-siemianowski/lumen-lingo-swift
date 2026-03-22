@@ -1818,26 +1818,26 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] `fr.json` contains professional-quality French translations for all 21 namespaces (171+ leaf keys)
-- [ ] `ja.json` contains professional-quality Japanese translations for all 21 namespaces (171+ leaf keys)
-- [ ] `de.json` contains professional-quality German translations for all 21 namespaces (171+ leaf keys)
-- [ ] `pt.json` contains professional-quality Portuguese (Brazilian) translations for all 21 namespaces (171+ leaf keys)
-- [ ] No English fallback text is visible on any page when browsing in FR, JA, DE, or PT
-- [ ] Namespace coverage verified: `Metadata`, `Nav`, `LanguageSwitcher`, `Hero`, `FeatureShowcase`, `ScreenshotGallery`, `Differentiators`, `CTA`, `Features`, `Pricing`, `About`, `Contact`, `Demo`, `Download`, `EarlyAccess`, `Error`, `Footer`, `NetworkStatus`, `Newsletter`, `NotFound`, `Offline`
-- [ ] Date and number formatting uses locale conventions (e.g. `22 mars 2026` for FR, `2026年3月22日` for JA)
-- [ ] Pluralisation rules are correct per locale (French: singular/plural; Japanese: no plural; German: singular/plural)
-- [ ] OG metadata (`title`, `description`) uses locale-specific translations for social sharing
+- [x] `fr.json` contains professional-quality French translations for all 21 namespaces (171+ leaf keys)
+- [x] `ja.json` contains professional-quality Japanese translations for all 21 namespaces (171+ leaf keys)
+- [x] `de.json` contains professional-quality German translations for all 21 namespaces (171+ leaf keys)
+- [x] `pt.json` contains professional-quality Portuguese (Brazilian) translations for all 21 namespaces (171+ leaf keys)
+- [x] No English fallback text is visible on any page when browsing in FR, JA, DE, or PT
+- [x] Namespace coverage verified: `Metadata`, `Nav`, `LanguageSwitcher`, `Hero`, `FeatureShowcase`, `ScreenshotGallery`, `Differentiators`, `CTA`, `Features`, `Pricing`, `About`, `Contact`, `Demo`, `Download`, `EarlyAccess`, `Error`, `Footer`, `NetworkStatus`, `Newsletter`, `NotFound`, `Offline`
+- [x] Date and number formatting uses locale conventions (e.g. `22 mars 2026` for FR, `2026年3月22日` for JA)
+- [x] Pluralisation rules are correct per locale (French: singular/plural; Japanese: no plural; German: singular/plural)
+- [x] OG metadata (`title`, `description`) uses locale-specific translations for social sharing
 - [ ] All 4 locales pass a visual diff test — no layout overflow caused by longer translated strings (e.g. DE noun compounds)
 
 ### Subtasks
 
-- [ ] 15.1.1 — Audit `en.json` and produce a canonical key inventory spreadsheet (namespace, key, EN value, max char hint)
-- [ ] 15.1.2 — Translate all 171+ keys in `fr.json`; replace every remaining English value
-- [ ] 15.1.3 — Translate all 171+ keys in `ja.json`; replace every remaining English value
-- [ ] 15.1.4 — Translate all 171+ keys in `de.json`; replace every remaining English value
-- [ ] 15.1.5 — Translate all 171+ keys in `pt.json`; replace every remaining English value
-- [ ] 15.1.6 — Add locale-aware date/number formatting using `next-intl`'s `useFormatter()` where dates and numbers appear
-- [ ] 15.1.7 — Configure ICU plural rules for each locale in message files where counts are displayed
+- [x] 15.1.1 — Audit `en.json` and produce a canonical key inventory spreadsheet (namespace, key, EN value, max char hint)
+- [x] 15.1.2 — Translate all 171+ keys in `fr.json`; replace every remaining English value
+- [x] 15.1.3 — Translate all 171+ keys in `ja.json`; replace every remaining English value
+- [x] 15.1.4 — Translate all 171+ keys in `de.json`; replace every remaining English value
+- [x] 15.1.5 — Translate all 171+ keys in `pt.json`; replace every remaining English value
+- [x] 15.1.6 — Add locale-aware date/number formatting using `next-intl`'s `useFormatter()` where dates and numbers appear
+- [x] 15.1.7 — Configure ICU plural rules for each locale in message files where counts are displayed
 - [ ] 15.1.8 — Run visual regression test (Playwright screenshot comparison) for FR, JA, DE, PT on Homepage, Features, Pricing, Blog pages — flag any text overflow or truncation
 - [ ] 15.1.9 — Fix all layout issues found in visual regression (e.g. button width, card height, heading wrap)
 
