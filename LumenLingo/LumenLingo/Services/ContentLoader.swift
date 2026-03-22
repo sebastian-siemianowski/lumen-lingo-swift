@@ -5,7 +5,7 @@ import Foundation
 /// Loads game content from bundled JSON files, with in-memory caching.
 /// Equivalent to React's contentLoader.jsx.
 @Observable
-final class ContentLoader {
+final class ContentLoader: @unchecked Sendable {
     static let shared = ContentLoader()
 
     private let cache = NSCache<NSString, AnyObject>()

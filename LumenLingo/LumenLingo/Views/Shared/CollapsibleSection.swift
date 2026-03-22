@@ -1141,7 +1141,7 @@ struct DefaultCollapsibleHeader: View {
 
 /// Key for propagating press state from CollapsibleHeaderButtonStyle to parent views.
 private struct HeaderPressedKey: PreferenceKey {
-    static var defaultValue = false
+    nonisolated(unsafe) static var defaultValue = false
     static func reduce(value: inout Bool, nextValue: () -> Bool) {
         value = value || nextValue()
     }
@@ -1253,7 +1253,7 @@ extension View {
 
 /// PreferenceKey for propagating measured content height up the view hierarchy.
 private struct CollapsibleContentHeightKey: PreferenceKey {
-    static var defaultValue: CGFloat = 0
+    nonisolated(unsafe) static var defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
         value = max(value, nextValue())
     }

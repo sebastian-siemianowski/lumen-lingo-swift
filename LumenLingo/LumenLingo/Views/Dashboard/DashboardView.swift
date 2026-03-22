@@ -1978,7 +1978,7 @@ struct DashboardGameCard: View {
 // MARK: - Explore Content Height Key
 
 private struct ExploreContentHeightKey: PreferenceKey {
-    static var defaultValue: CGFloat = 0
+    nonisolated(unsafe) static var defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
         value = max(value, nextValue())
     }
@@ -1987,7 +1987,7 @@ private struct ExploreContentHeightKey: PreferenceKey {
 // MARK: - Recent Activity Content Height Key
 
 private struct RecentActivityContentHeightKey: PreferenceKey {
-    static var defaultValue: CGFloat = 0
+    nonisolated(unsafe) static var defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
         value = max(value, nextValue())
     }
@@ -2008,7 +2008,7 @@ private struct ExploreMorePressStyle: ButtonStyle {
 // MARK: - Scroll Offset Tracking
 
 private struct ScrollOffsetPreferenceKey: PreferenceKey {
-    static var defaultValue: CGFloat = 0
+    nonisolated(unsafe) static var defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
         value = nextValue()
     }

@@ -17,7 +17,7 @@ import UIKit
 ///
 /// WAV is generated in-memory (16-bit mono PCM, 44100Hz) via phase accumulation.
 @Observable
-final class AudioService {
+final class AudioService: @unchecked Sendable {
     static let shared = AudioService()
 
     // MARK: - Public Configuration

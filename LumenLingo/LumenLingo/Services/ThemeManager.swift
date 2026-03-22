@@ -7,7 +7,7 @@ import SwiftData
 /// Persists preference to UserProfile's `darkMode` field and provides
 /// a reactive binding for `.preferredColorScheme()`.
 @Observable
-final class ThemeManager {
+final class ThemeManager: @unchecked Sendable {
     var isDarkMode: Bool = true
     var isTransitioning: Bool = false
 

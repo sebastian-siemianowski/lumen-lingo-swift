@@ -664,29 +664,27 @@ struct ExportDataWidget: View {
     private func startPDFPreview() {
         exportingFormat = .pdf
         showPDFPreview = true
-        Task.detached(priority: .userInitiated) {
-            let userName = await MainActor.run { profile?.firstName ?? "" }
-            let tier = await MainActor.run { tierManager.currentTier }
-            let isDark = await MainActor.run { self.isDark }
-            let records = await MainActor.run { allProgress }
+        Task {
+            let userName = profile?.firstName ?? ""
+            let tier = tierManager.currentTier
+            let isDark = self.isDark
+            let records = allProgress
             let data = DataExporter.exportPDF(
                 records: records,
                 userName: userName,
                 tier: tier,
                 isDarkMode: isDark
             )
-            await MainActor.run {
-                previewPDFData = data
-                cachedPDFData = data
-                exportingFormat = nil
-            }
+            previewPDFData = data
+            cachedPDFData = data
+            exportingFormat = nil
         }
     }
 
     private func exportData(format: DataExporter.ExportFormat) {
         exportingFormat = format
-        Task.detached(priority: .userInitiated) {
-            let records = await MainActor.run { allProgress }
+        Task {
+            let records = allProgress
             let data: Data
             let fileName: String
 
@@ -698,22 +696,20 @@ struct ExportDataWidget: View {
                 data = DataExporter.exportJSON(records: records)
                 fileName = "lumenlingo_progress.json"
             case .pdf:
-                let userName = await MainActor.run { profile?.firstName ?? "" }
-                let tier = await MainActor.run { tierManager.currentTier }
-                let isDark = await MainActor.run { self.isDark }
+                let userName = profile?.firstName ?? ""
+                let tier = tierManager.currentTier
+                let isDark = self.isDark
                 data = DataExporter.exportPDF(records: records, userName: userName, tier: tier, isDarkMode: isDark)
                 fileName = "lumenlingo_report.pdf"
             }
 
-            await MainActor.run {
-                exportingFormat = nil
-                completedFormat = format
-                shareFile(data: data, fileName: fileName)
+            exportingFormat = nil
+            completedFormat = format
+            shareFile(data: data, fileName: fileName)
 
-                // Reset checkmark after delay
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    withAnimation { completedFormat = nil }
-                }
+            // Reset checkmark after delay
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                withAnimation { completedFormat = nil }
             }
         }
     }
@@ -1249,27 +1245,25 @@ struct PDFPreviewView: View {
         // Preserve current page
         let savedPage = currentPageIndex
 
-        Task.detached(priority: .userInitiated) {
-            let records = await MainActor.run { allProgress }
-            let name = await MainActor.run { userName }
-            let t = await MainActor.run { tier }
+        Task {
+            let records = allProgress
+            let name = userName
+            let t = tier
             let data = DataExporter.exportPDF(records: records, userName: name, tier: t, isDarkMode: newIsDark)
 
-            await MainActor.run {
-                previewIsDark = newIsDark
-                activePDFData = data
-                let newDoc = PDFDocument(data: data)
-                withAnimation(.easeInOut(duration: 0.3)) {
-                    document = newDoc
-                    totalPages = newDoc?.pageCount ?? 1
-                }
-                isRegenerating = false
+            previewIsDark = newIsDark
+            activePDFData = data
+            let newDoc = PDFDocument(data: data)
+            withAnimation(.easeInOut(duration: 0.3)) {
+                document = newDoc
+                totalPages = newDoc?.pageCount ?? 1
+            }
+            isRegenerating = false
 
-                // Restore page position
-                if let doc = newDoc, savedPage < doc.pageCount {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                        goToPage(savedPage)
-                    }
+            // Restore page position
+            if let doc = newDoc, savedPage < doc.pageCount {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    goToPage(savedPage)
                 }
             }
         }

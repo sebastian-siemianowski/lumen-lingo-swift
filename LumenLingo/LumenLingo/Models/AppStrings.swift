@@ -3,7 +3,7 @@ import Foundation
 // MARK: - App-wide UI Strings Localization
 // Provides translations for all user-facing strings based on the user's source (known) language.
 
-struct AppStrings {
+struct AppStrings: Sendable {
 
     // MARK: - Tabs
     let tabHome: String
@@ -17,7 +17,7 @@ struct AppStrings {
     let settingsHeaderSubtitle: String
 
     // MARK: - Dashboard
-    let greeting: (String) -> String   // "Hello, {name}!"
+    let greeting: @Sendable (String) -> String   // "Hello, {name}!"
     let goodMorning: String
     let goodAfternoon: String
     let goodEvening: String
@@ -372,11 +372,11 @@ struct AppStrings {
     let trialStartFree: String
 
     // MARK: - Dashboard Feature Visibility
-    let welcomeName: (String) -> String   // "Welcome, {name}!"
-    let daysLeftInTrial: (Int) -> String   // "{n} days left in your trial"
+    let welcomeName: @Sendable (String) -> String   // "Welcome, {name}!"
+    let daysLeftInTrial: @Sendable (Int) -> String   // "{n} days left in your trial"
     let thirtyMinPerDay: String            // "30 min/day"
     // unlimited — reused from Membership section
-    let resetsIn: (String) -> String       // "Resets in {time}"
+    let resetsIn: @Sendable (String) -> String       // "Resets in {time}"
     let nowPlaying: String                 // "Playing"
     let paused: String                     // "Paused"
 
@@ -390,9 +390,9 @@ struct AppStrings {
     let recentPerformance: String          // "Recent Performance"
     let last7Sessions: String              // "Last 7 sessions"
     let areasToImprove: String             // "Areas to Improve"
-    let reviewIncorrect: (Int) -> String   // "Review {n} incorrect answers"
+    let reviewIncorrect: @Sendable (Int) -> String   // "Review {n} incorrect answers"
     let shareResult: String                // "Share Result"
-    let availableOn: (String) -> String    // "Available on {tier}"
+    let availableOn: @Sendable (String) -> String    // "Available on {tier}"
 
     // MARK: - Journey Progress Gating
     let dailyXPChart: String               // "Daily XP"

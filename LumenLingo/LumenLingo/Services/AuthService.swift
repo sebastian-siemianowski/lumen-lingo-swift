@@ -4,7 +4,7 @@ import Foundation
 
 /// Protocol for authentication service. Designed for easy swap from mock to
 /// Firebase Auth, Sign in with Apple, or any other provider.
-protocol AuthServiceProtocol: Observable {
+protocol AuthServiceProtocol: Observable, Sendable {
     var currentUser: AppUser? { get }
     var isAuthenticated: Bool { get }
     var isLoading: Bool { get }
@@ -20,7 +20,7 @@ protocol AuthServiceProtocol: Observable {
 /// Swap this for a real implementation (Firebase, Sign in with Apple, etc.)
 /// by conforming to `AuthServiceProtocol`.
 @Observable
-final class MockAuthService: AuthServiceProtocol {
+final class MockAuthService: AuthServiceProtocol, @unchecked Sendable {
     private(set) var currentUser: AppUser? = .mock
     private(set) var isAuthenticated: Bool = true
     private(set) var isLoading: Bool = false

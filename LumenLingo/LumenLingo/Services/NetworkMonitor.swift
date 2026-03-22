@@ -4,7 +4,7 @@ import Network
 /// Shared connectivity monitor using NWPathMonitor.
 /// Injected via `.environment(networkMonitor)` and read with `@Environment(NetworkMonitor.self)`.
 @Observable
-final class NetworkMonitor {
+final class NetworkMonitor: @unchecked Sendable {
 
     // MARK: - Published State
 
