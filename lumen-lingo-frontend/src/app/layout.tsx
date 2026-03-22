@@ -5,6 +5,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { RouteProgress } from '@/components/layout/route-progress';
+import { NetworkStatus } from '@/components/layout/network-status';
+import { ServiceWorkerRegistration } from '@/components/layout/service-worker-registration';
 import { UtmCapture } from '@/components/analytics';
 import { APP_STORE_ID } from '@/lib/appStoreConfig';
 import './globals.css';
@@ -50,6 +52,8 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
         <UtmCapture />
+        <NetworkStatus />
+        <ServiceWorkerRegistration />
       </body>
     </html>
   );

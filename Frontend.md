@@ -1469,24 +1469,24 @@
 
 ### Acceptance Criteria
 
-- [ ] Custom `app/not-found.tsx` replaces the default Next.js 404
-- [ ] Headline: "Lost in the Cosmos" with a floating astronaut or planet illustration
-- [ ] Subheadline: "The page you're looking for has drifted away. Let us help you find your way."
-- [ ] Search bar: lets user search blog posts or site content
-- [ ] Quick links: "Go Home", "Browse Features", "Read the Blog", "Contact Us"
-- [ ] Background: subtle star field animation consistent with cosmic theme
-- [ ] The page is lightweight and loads instantly (no heavy dependencies)
-- [ ] Google Analytics tracks 404 page views with the attempted URL
+- [x] Custom `app/not-found.tsx` replaces the default Next.js 404
+- [x] Headline: "Lost in the Cosmos" with a floating astronaut or planet illustration
+- [x] Subheadline: "The page you're looking for has drifted away. Let us help you find your way."
+- [x] Search bar: lets user search blog posts or site content
+- [x] Quick links: "Go Home", "Browse Features", "Read the Blog", "Contact Us"
+- [x] Background: subtle star field animation consistent with cosmic theme
+- [x] The page is lightweight and loads instantly (no heavy dependencies)
+- [x] Google Analytics tracks 404 page views with the attempted URL
 
 ### Subtasks
 
-- [ ] 12.1.1 — Create `app/not-found.tsx` with cosmic-themed 404 design
-- [ ] 12.1.2 — Add floating illustration or SVG animation (astronaut, planet, or nebula)
-- [ ] 12.1.3 — Add search bar component for site-wide content search
-- [ ] 12.1.4 — Add quick-link buttons to key pages
-- [ ] 12.1.5 — Add star field background animation
-- [ ] 12.1.6 — Track 404 events with the missed URL in analytics
-- [ ] 12.1.7 — Test: verify custom 404 renders for non-existent routes and redirects
+- [x] 12.1.1 — Create `app/not-found.tsx` with cosmic-themed 404 design
+- [x] 12.1.2 — Add floating illustration or SVG animation (astronaut, planet, or nebula)
+- [x] 12.1.3 — Add search bar component for site-wide content search
+- [x] 12.1.4 — Add quick-link buttons to key pages
+- [x] 12.1.5 — Add star field background animation
+- [x] 12.1.6 — Track 404 events with the missed URL in analytics
+- [x] 12.1.7 — Test: verify custom 404 renders for non-existent routes and redirects
 
 ---
 
@@ -1498,23 +1498,23 @@
 
 ### Acceptance Criteria
 
-- [ ] Global `app/error.tsx` catches client-side runtime errors
-- [ ] Global `app/global-error.tsx` catches root layout errors
-- [ ] Error page displays: "Something Unexpected Happened" with a calming illustration
-- [ ] "Try Again" button attempts to re-render the failed component
-- [ ] "Go Home" button navigates to the homepage
-- [ ] Error details are logged to an error reporting service (Sentry or Vercel) but NOT shown to the user
-- [ ] Error page matches the dark theme and glass morphism aesthetic
-- [ ] No sensitive technical details (stack traces, internal paths) are exposed
+- [x] Global `app/error.tsx` catches client-side runtime errors
+- [x] Global `app/global-error.tsx` catches root layout errors
+- [x] Error page displays: "Something Unexpected Happened" with a calming illustration
+- [x] "Try Again" button attempts to re-render the failed component
+- [x] "Go Home" button navigates to the homepage
+- [x] Error details are logged to an error reporting service (Sentry or Vercel) but NOT shown to the user
+- [x] Error page matches the dark theme and glass morphism aesthetic
+- [x] No sensitive technical details (stack traces, internal paths) are exposed
 
 ### Subtasks
 
-- [ ] 12.2.1 — Create `app/error.tsx` client error boundary with retry and home navigation
-- [ ] 12.2.2 — Create `app/global-error.tsx` for root layout errors
-- [ ] 12.2.3 — Style error pages with dark theme, illustration, and glass buttons
-- [ ] 12.2.4 — Integrate error reporting (Sentry `captureException` or Vercel error logging)
-- [ ] 12.2.5 — Test error boundary by intentionally throwing in a component
-- [ ] 12.2.6 — Verify no stack traces or internal paths leak to the client
+- [x] 12.2.1 — Create `app/error.tsx` client error boundary with retry and home navigation
+- [x] 12.2.2 — Create `app/global-error.tsx` for root layout errors
+- [x] 12.2.3 — Style error pages with dark theme, illustration, and glass buttons
+- [x] 12.2.4 — Integrate error reporting (Sentry `captureException` or Vercel error logging)
+- [x] 12.2.5 — Test error boundary by intentionally throwing in a component
+- [x] 12.2.6 — Verify no stack traces or internal paths leak to the client
 
 ---
 
@@ -1526,23 +1526,23 @@
 
 ### Acceptance Criteria
 
-- [ ] Service worker registers a cache-first strategy for static assets (fonts, CSS, JS)
-- [ ] Previously visited pages are available offline from the service worker cache
-- [ ] Offline fallback page: "You're Offline — But LumenLingo Works Offline Too!" with:
+- [x] Service worker registers a cache-first strategy for static assets (fonts, CSS, JS)
+- [x] Previously visited pages are available offline from the service worker cache
+- [x] Offline fallback page: "You're Offline — But LumenLingo Works Offline Too!" with:
   - Cached homepage content if available
   - Download reminder: "The LumenLingo app works beautifully offline with a Pro subscription or higher"
   - "Retry" button to check connection
-- [ ] Slow connection: images have blur placeholders; content text loads first
-- [ ] Network status indicator fades in when connection is lost
+- [x] Slow connection: images have blur placeholders; content text loads first
+- [x] Network status indicator fades in when connection is lost
 
 ### Subtasks
 
-- [ ] 12.3.1 — Configure Next.js PWA or `next-pwa` for service worker generation
-- [ ] 12.3.2 — Create offline fallback page at `app/offline/page.tsx`
-- [ ] 12.3.3 — Define caching strategy: static assets (cache-first), HTML (network-first with cache fallback)
-- [ ] 12.3.4 — Add `<NetworkStatus>` component that detects offline state and shows indicator
-- [ ] 12.3.5 — Test offline flow: load page → go offline → navigate → verify fallback
-- [ ] 12.3.6 — Verify service worker doesn't interfere with Vercel preview deployments
+- [x] 12.3.1 — Configure Next.js PWA or `next-pwa` for service worker generation
+- [x] 12.3.2 — Create offline fallback page at `app/offline/page.tsx`
+- [x] 12.3.3 — Define caching strategy: static assets (cache-first), HTML (network-first with cache fallback)
+- [x] 12.3.4 — Add `<NetworkStatus>` component that detects offline state and shows indicator
+- [x] 12.3.5 — Test offline flow: load page → go offline → navigate → verify fallback
+- [x] 12.3.6 — Verify service worker doesn't interfere with Vercel preview deployments
 
 ---
 
