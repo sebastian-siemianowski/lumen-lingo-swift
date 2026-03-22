@@ -70,7 +70,7 @@ Each environment must produce a **separately installable** app on the same devic
 
 | Setting | Dev | QA | UAT | PreProd | Prod |
 |---------|-----|----|-----|---------|------|
-| `PRODUCT_BUNDLE_IDENTIFIER` | `com.lumenlingo.dev` | `com.lumenlingo.qa` | `com.lumenlingo.uat` | `com.lumenlingo.preprod` | `com.lumenlingo.app` |
+| `PRODUCT_BUNDLE_IDENTIFIER` | `com.lumenlingo.app.dev` | `com.lumenlingo.app.qa` | `com.lumenlingo.app.uat` | `com.lumenlingo.app.preprod` | `com.lumenlingo.app` |
 | `PRODUCT_NAME` | `LL Dev` | `LL QA` | `LL UAT` | `LL PreProd` | `LumenLingo` |
 | `ASSETCATALOG_COMPILER_APPICON_NAME` | `AppIcon-Dev` | `AppIcon-QA` | `AppIcon-UAT` | `AppIcon-PreProd` | `AppIcon` |
 | `LL_ENVIRONMENT` | `dev` | `qa` | `uat` | `preprod` | `prod` |
@@ -366,7 +366,7 @@ Each environment must produce a **separately installable** app on the same devic
 | `LL_ENVIRONMENT` | String | `dev` | Runtime environment identifier |
 | `LL_API_BASE_URL` | URL String | `https://api-dev.lumenlingo.com` | Backend API root |
 | `LL_LOG_LEVEL` | String | `verbose` | Minimum log level for this build |
-| `PRODUCT_BUNDLE_IDENTIFIER` | String | `com.lumenlingo.dev` | Unique per-environment bundle ID |
+| `PRODUCT_BUNDLE_IDENTIFIER` | String | `com.lumenlingo.app.dev` | Unique per-environment bundle ID |
 | `PRODUCT_NAME` | String | `LL Dev` | Display name on home screen |
 | `ASSETCATALOG_COMPILER_APPICON_NAME` | String | `AppIcon-Dev` | Icon set name in asset catalogue |
 
