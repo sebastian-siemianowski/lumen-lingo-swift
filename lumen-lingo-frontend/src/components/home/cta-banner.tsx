@@ -33,6 +33,7 @@ function FloatingOrbs() {
 }
 
 function QRPlaceholder() {
+  const t = useTranslations('CTA');
   return (
     <div className="hidden flex-col items-center gap-3 lg:flex">
       {/* QR code placeholder — a structured pattern */}

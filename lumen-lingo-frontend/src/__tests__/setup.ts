@@ -9,3 +9,18 @@ class MockIntersectionObserver {
 
 globalThis.IntersectionObserver =
   globalThis.IntersectionObserver ?? (MockIntersectionObserver as unknown as typeof IntersectionObserver);
+
+// Polyfill window.matchMedia for useReducedMotion / useMediaQuery hooks
+if (typeof window !== 'undefined' && !window.matchMedia) {
+  window.matchMedia = (query: string) =>
+    ({
+      matches: false,
+      media: query,
+      onchange: null,
+      addListener: () => {},
+      removeListener: () => {},
+      addEventListener: () => {},
+      removeEventListener: () => {},
+      dispatchEvent: () => false,
+    }) as MediaQueryList;
+}
