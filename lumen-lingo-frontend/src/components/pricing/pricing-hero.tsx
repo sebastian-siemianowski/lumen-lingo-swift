@@ -3,11 +3,15 @@
 import { motion } from 'framer-motion';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { StaggerChildren, StaggerItem } from '@/components/motion';
+import { StarField } from '@/components/background';
 
 export function PricingHero() {
   return (
     <Section className="relative overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-20">
-      {/* Background gradients */}
+      {/* Star field background */}
+      <StarField />
+
+      {/* Colour accent gradients layered on top of stars */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute top-0 left-1/2 h-[600px] w-[800px] -translate-x-1/2 rounded-full bg-violet/8 blur-[120px]" />
         <div className="absolute top-1/3 right-0 h-[400px] w-[500px] rounded-full bg-cyan/6 blur-[100px]" />

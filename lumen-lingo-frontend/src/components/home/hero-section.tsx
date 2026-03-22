@@ -2,7 +2,7 @@
 
 import { Container, Heading, Text, Button } from '@/components/ui';
 import { FadeIn, StaggerChildren, StaggerItem } from '@/components/motion';
-import { GradientMesh } from './gradient-mesh';
+import { CosmicGradient } from '@/components/background';
 import { IPhoneMockup } from './iphone-mockup';
 import { AppStoreBadge } from './app-store-badge';
 
@@ -16,8 +16,8 @@ const trustStats = [
 export function HeroSection() {
   return (
     <section className="relative flex min-h-screen min-h-[100dvh] items-center overflow-hidden pt-20 pb-16 lg:pt-24">
-      {/* Animated gradient mesh background */}
-      <GradientMesh />
+      {/* Animated cosmic gradient background */}
+      <CosmicGradient />
 
       <Container className="relative">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">

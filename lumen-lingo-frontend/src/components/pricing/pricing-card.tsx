@@ -133,7 +133,7 @@ export function PricingCard({
       {/* Popular badge */}
       {popular && (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-          <div className="rounded-full bg-gradient-to-r from-cyan to-violet px-4 py-1 text-xs font-semibold text-white shadow-lg">
+          <div className="animate-badge-pulse rounded-full bg-gradient-to-r from-cyan to-violet px-4 py-1 text-xs font-semibold text-white shadow-lg">
             Most Popular
           </div>
         </div>

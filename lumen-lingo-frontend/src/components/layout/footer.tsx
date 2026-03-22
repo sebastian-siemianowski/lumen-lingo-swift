@@ -67,6 +67,16 @@ export function Footer() {
 
   return (
     <footer role="contentinfo" className="relative border-t border-glass-border">
+      {/* Subtle upward radial glow — fades into the void background */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        aria-hidden="true"
+        style={{
+          background:
+            'radial-gradient(ellipse 80% 60% at 50% 100%, rgba(139,92,246,0.04) 0%, transparent 70%)',
+        }}
+      />
+
       {/* Glow line at top */}
       <div className="absolute top-0 right-0 left-0 h-px bg-gradient-to-r from-transparent via-violet/40 to-transparent" />
 

@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import {
   getAllPosts,
@@ -13,6 +12,7 @@ import { PostCard } from '@/components/blog/post-card';
 import { TableOfContents } from '@/components/blog/table-of-contents';
 import { ShareButtons } from '@/components/blog/share-buttons';
 import { PageTransition } from '@/components/layout';
+import { BlurImage } from '@/components/ui/blur-image';
 import { JsonLd, BreadcrumbJsonLd } from '@/components/home';
 import { ScrollDepthTracker } from '@/components/analytics';
 import { BlogNewsletterCTA } from '@/components/newsletter';
@@ -105,7 +105,7 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
           {/* Cover image or gradient */}
           <div className="relative h-[40vh] min-h-[320px]">
             {frontmatter.image ? (
-              <Image
+              <BlurImage
                 src={frontmatter.image}
                 alt={frontmatter.title}
                 fill

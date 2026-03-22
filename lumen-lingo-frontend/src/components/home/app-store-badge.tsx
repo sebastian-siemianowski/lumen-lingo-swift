@@ -25,7 +25,7 @@ export function AppStoreBadge({ className, size = 'md', location = 'unknown' }: 
       rel="noopener noreferrer"
       onClick={() => trackEvent('app_store_click', { location })}
       className={cn(
-        'inline-flex items-center gap-2.5 rounded-[--radius-button] border border-white/20 bg-black px-5 py-2.5 transition-all hover:border-white/30 hover:bg-white/5 focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none',
+        'inline-flex items-center gap-2.5 rounded-[--radius-button] border border-white/20 bg-black px-5 py-2.5 transition-all duration-300 hover:border-white/30 hover:bg-white/5 hover:shadow-[0_0_24px_rgba(139,92,246,0.15)] hover:scale-[1.02] active:scale-100 focus-visible:ring-2 focus-visible:ring-violet focus-visible:shadow-[0_0_24px_rgba(139,92,246,0.15)] focus-visible:outline-none',
         sizes[size],
         className,
       )}

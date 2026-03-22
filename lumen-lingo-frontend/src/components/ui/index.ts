@@ -5,3 +5,4 @@ export { Container } from './container';
 export { Section, type SectionProps } from './section';
 export { Heading, type HeadingProps } from './heading';
 export { Text, type TextProps } from './text';
+export { Skeleton } from './skeleton';

@@ -27,7 +27,7 @@ const GlassCard = forwardRef<HTMLDivElement, GlassCardProps>(
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
         className={cn(
           'glass-card rounded-[--radius-card] p-6 shadow-card transition-all duration-300',
-          hover && 'glass-card-hover',
+          hover && 'glass-card-hover hover:shadow-[0_8px_32px_rgba(0,0,0,0.5),0_0_0_1px_rgba(255,255,255,0.1)]',
           tintStyles[tint],
           className,
         )}

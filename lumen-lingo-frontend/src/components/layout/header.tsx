@@ -114,9 +114,11 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="relative rounded-[--radius-sm] px-4 py-2 text-sm font-medium text-foreground-secondary transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none"
+                  className="group relative rounded-[--radius-sm] px-4 py-2 text-sm font-medium text-foreground-secondary transition-colors hover:text-foreground focus-visible:text-foreground focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none"
                 >
                   {link.label}
+                  {/* Slide-in underline */}
+                  <span className="absolute bottom-0.5 left-4 right-4 h-[2px] origin-left scale-x-0 rounded-full bg-violet transition-transform duration-300 ease-out group-hover:scale-x-100 group-focus-visible:scale-x-100" />
                 </Link>
               ))}
             </div>

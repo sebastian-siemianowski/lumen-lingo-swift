@@ -174,7 +174,7 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* ── Gradient mesh animations ── */
+/* ── Gradient mesh animations (legacy) ── */
 @keyframes drift-slow {
   0%, 100% { transform: translate(0, 0) scale(1); }
   25% { transform: translate(30px, -20px) scale(1.05); }
@@ -204,6 +204,74 @@ body {
 
 .animate-pulse-slow {
   animation: pulse-slow 8s ease-in-out infinite;
+}
+
+/* ── Cosmic background animations ── */
+@keyframes cosmic-drift-1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  20%  { transform: translate(25px, -18px) scale(1.04); }
+  45%  { transform: translate(-15px, 28px) scale(0.96); }
+  70%  { transform: translate(18px, 12px) scale(1.03); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes cosmic-drift-2 {
+  0%   { transform: translate(0, 0) scale(1); }
+  25%  { transform: translate(-22px, 20px) scale(1.05); }
+  50%  { transform: translate(18px, -22px) scale(0.97); }
+  75%  { transform: translate(-10px, -12px) scale(1.02); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes cosmic-drift-3 {
+  0%   { transform: translate(0, 0) scale(1); }
+  30%  { transform: translate(-20px, -15px) scale(1.03); }
+  60%  { transform: translate(15px, 20px) scale(0.98); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes cosmic-pulse {
+  0%, 100% { opacity: 0.04; transform: translate(-50%, -50%) scale(1); }
+  40%      { opacity: 0.09; transform: translate(-50%, -50%) scale(1.12); }
+  70%      { opacity: 0.06; transform: translate(-50%, -50%) scale(1.05); }
+}
+
+.animate-cosmic-drift-1 { animation: cosmic-drift-1 40s ease-in-out infinite; }
+.animate-cosmic-drift-2 { animation: cosmic-drift-2 50s ease-in-out infinite; }
+.animate-cosmic-drift-3 { animation: cosmic-drift-3 55s ease-in-out infinite; }
+.animate-cosmic-pulse   { animation: cosmic-pulse 45s ease-in-out infinite; }
+
+/* ── Star-field twinkle ── */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.6; }
+  50%      { opacity: 1; }
+}
+
+.animate-twinkle-slow { animation: twinkle 6s ease-in-out infinite; }
+.animate-twinkle-mid  { animation: twinkle 4s ease-in-out infinite 1s; }
+.animate-twinkle-fast { animation: twinkle 3s ease-in-out infinite 0.5s; }
+
+/* ── "Most Popular" badge pulse ── */
+@keyframes badge-pulse {
+  0%, 100% { box-shadow: 0 4px 12px rgba(139,92,246,0.25); }
+  50%      { box-shadow: 0 4px 20px rgba(139,92,246,0.45), 0 0 8px rgba(6,182,212,0.2); }
+}
+.animate-badge-pulse { animation: badge-pulse 2.5s ease-in-out infinite; }
+
+/* ── Skeleton shimmer ── */
+@keyframes skeleton-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.animate-skeleton {
+  background-image: linear-gradient(
+    90deg,
+    rgba(139,92,246,0.03) 0%,
+    rgba(139,92,246,0.08) 40%,
+    rgba(139,92,246,0.03) 80%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 2s ease-in-out infinite;
 }
 
 /* ── iPhone mockup carousel ── */

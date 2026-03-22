@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import { RouteProgress } from '@/components/layout/route-progress';
 import { UtmCapture } from '@/components/analytics';
 import { APP_STORE_ID } from '@/lib/appStoreConfig';
 import './globals.css';
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}>
       <body className="min-h-full bg-background text-foreground">
+        <RouteProgress />
         <Header />
         <main id="main-content">{children}</main>
         <Footer />

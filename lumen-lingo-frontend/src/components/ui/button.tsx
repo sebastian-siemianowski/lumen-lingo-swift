@@ -18,9 +18,9 @@ interface ButtonProps
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    'bg-violet text-white hover:bg-violet-hover active:bg-violet-active glow-violet hover:shadow-[0_0_40px_rgba(139,92,246,0.4)]',
+    'bg-violet text-white shadow-[0_0_20px_rgba(139,92,246,0.25)] hover:bg-violet-hover active:bg-violet-active hover:shadow-[0_0_48px_rgba(139,92,246,0.5)] focus-visible:shadow-[0_0_48px_rgba(139,92,246,0.5)]',
   secondary:
-    'glass-card text-foreground hover:bg-glass-hover border border-glass-border',
+    'glass-card text-foreground hover:bg-glass-hover border border-glass-border hover:shadow-[0_0_24px_rgba(255,255,255,0.04)] focus-visible:shadow-[0_0_24px_rgba(255,255,255,0.04)]',
   ghost:
     'bg-transparent text-foreground-secondary hover:text-foreground hover:bg-white/5',
   link: 'bg-transparent text-violet hover:text-violet-hover underline-offset-4 hover:underline p-0',

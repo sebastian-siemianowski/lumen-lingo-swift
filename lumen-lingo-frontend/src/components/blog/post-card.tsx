@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -24,6 +25,7 @@ const categoryColors: Record<string, string> = {
 
 export function PostCard({ post, index = 0, featured = false, priority = false }: PostCardProps) {
   const prefersReduced = useReducedMotion();
+  const [imgLoaded, setImgLoaded] = useState(false);
   const { frontmatter, slug } = post;
 
   return (
@@ -55,14 +57,27 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
           )}
         >
           {frontmatter.image ? (
-            <Image
-              src={frontmatter.image}
-              alt={frontmatter.title}
-              fill
-              priority={priority}
-              sizes={featured ? '(max-width: 768px) 100vw, 50vw' : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'}
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-            />
+            <>
+              {/* Blur placeholder shown until image loads */}
+              <div
+                className={cn(
+                  'absolute inset-0 bg-gradient-to-br from-[--color-violet]/10 via-[--color-surface-card] to-[--color-cyan]/10 transition-opacity duration-500',
+                  imgLoaded ? 'opacity-0' : 'opacity-100',
+                )}
+              />
+              <Image
+                src={frontmatter.image}
+                alt={frontmatter.title}
+                fill
+                priority={priority}
+                sizes={featured ? '(max-width: 768px) 100vw, 50vw' : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'}
+                className={cn(
+                  'object-cover transition-all duration-500 group-hover:scale-105',
+                  imgLoaded ? 'opacity-100' : 'opacity-0',
+                )}
+                onLoad={() => setImgLoaded(true)}
+              />
+            </>
           ) : (
             <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[--color-violet]/20 via-[--color-surface-card] to-[--color-cyan]/20">
               <svg
@@ -116,6 +131,14 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
 
           {/* Meta row */}
           <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[--color-foreground-muted]">
+            {/* "Read →" reveal on hover */}
+            <span className="ml-auto translate-x-2 text-xs font-semibold text-[--color-violet] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              Read&nbsp;&rarr;
+            </span>
+          </div>
+
+          {/* Author & date row */}
+          <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[--color-foreground-muted]">
             <div className="flex items-center gap-2">
               <span
                 className="flex h-6 w-6 items-center justify-center rounded-full bg-[--color-violet]/20 text-[10px] font-bold text-[--color-violet]"

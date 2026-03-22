@@ -1371,25 +1371,25 @@
 
 ### Acceptance Criteria
 
-- [ ] Homepage hero section has an animated cosmic gradient mesh background:
+- [x] Homepage hero section has an animated cosmic gradient mesh background:
   - 3–4 colour blobs (violet, cyan, deep blue) that drift slowly (0.5–1px/second)
   - Blobs use CSS `filter: blur(100px)` for smooth gradients
   - Animation loops seamlessly over 30–60 seconds
-- [ ] Pricing page has a subtle star field background (CSS dots or canvas particles)
-- [ ] Blog pages have a minimal dark gradient (no distracting backgrounds during reading)
-- [ ] Footer has a subtle upward radial gradient that fades into the void background
-- [ ] All backgrounds are GPU-composited for smooth performance (`will-change: transform`)
-- [ ] Backgrounds are removed/simplified on reduced-motion preference
-- [ ] Backgrounds don't increase page load time (no image resources — pure CSS/canvas)
+- [x] Pricing page has a subtle star field background (CSS dots or canvas particles)
+- [x] Blog pages have a minimal dark gradient (no distracting backgrounds during reading)
+- [x] Footer has a subtle upward radial gradient that fades into the void background
+- [x] All backgrounds are GPU-composited for smooth performance (`will-change: transform`)
+- [x] Backgrounds are removed/simplified on reduced-motion preference
+- [x] Backgrounds don't increase page load time (no image resources — pure CSS/canvas)
 
 ### Subtasks
 
-- [ ] 11.1.1 — Create `<CosmicGradient>` component with drifting colour blobs (CSS `@keyframes`)
-- [ ] 11.1.2 — Create `<StarField>` component with CSS dot particles or lightweight canvas
-- [ ] 11.1.3 — Add footer radial gradient with smooth blending into page background
-- [ ] 11.1.4 — Implement reduced-motion fallback (static gradient snapshot)
-- [ ] 11.1.5 — Profile GPU usage and ensure backgrounds don't cause frame drops
-- [ ] 11.1.6 — Test on low-end devices (iPhone SE, entry-level Android) for acceptable performance
+- [x] 11.1.1 — Create `<CosmicGradient>` component with drifting colour blobs (CSS `@keyframes`)
+- [x] 11.1.2 — Create `<StarField>` component with CSS dot particles or lightweight canvas
+- [x] 11.1.3 — Add footer radial gradient with smooth blending into page background
+- [x] 11.1.4 — Implement reduced-motion fallback (static gradient snapshot)
+- [x] 11.1.5 — Profile GPU usage and ensure backgrounds don't cause frame drops
+- [x] 11.1.6 — Test on low-end devices (iPhone SE, entry-level Android) for acceptable performance
 
 ---
 
@@ -1401,29 +1401,29 @@
 
 ### Acceptance Criteria
 
-- [ ] Buttons: hover glow intensification (box-shadow spread increase), press scale (0.97), release spring-back
-- [ ] Glass cards: hover lifts card 4 px + increases border luminance + subtle shadow expansion
-- [ ] Navigation links: hover underline slides in from left with violet colour
-- [ ] App Store badges: hover pulse glow effect (scale 1.02 → 1.0 breathing)
-- [ ] Pricing card "Most Popular" badge: continuous subtle pulse animation
-- [ ] Blog post cards: hover reveals a "Read →" indicator sliding in from right
-- [ ] FAQ accordion: chevron rotates smoothly on expand/collapse
-- [ ] Form inputs: focus border transitions from grey to violet with glow
-- [ ] All micro-interactions use CSS transitions (not JS) where possible for maximum performance
-- [ ] All hover states have keyboard-equivalent `:focus-visible` styles
+- [x] Buttons: hover glow intensification (box-shadow spread increase), press scale (0.97), release spring-back
+- [x] Glass cards: hover lifts card 4 px + increases border luminance + subtle shadow expansion
+- [x] Navigation links: hover underline slides in from left with violet colour
+- [x] App Store badges: hover pulse glow effect (scale 1.02 → 1.0 breathing)
+- [x] Pricing card "Most Popular" badge: continuous subtle pulse animation
+- [x] Blog post cards: hover reveals a "Read →" indicator sliding in from right
+- [x] FAQ accordion: chevron rotates smoothly on expand/collapse
+- [x] Form inputs: focus border transitions from grey to violet with glow
+- [x] All micro-interactions use CSS transitions (not JS) where possible for maximum performance
+- [x] All hover states have keyboard-equivalent `:focus-visible` styles
 
 ### Subtasks
 
-- [ ] 11.2.1 — Refine `<Button>` hover/press animations across all variants
-- [ ] 11.2.2 — Add hover lift + glow to all `<GlassCard>` instances
-- [ ] 11.2.3 — Implement navigation link slide-in underline animation
-- [ ] 11.2.4 — Add App Store badge hover pulse effect
-- [ ] 11.2.5 — Add continuous pulse to "Most Popular" pricing badge
-- [ ] 11.2.6 — Add "Read →" slide-in reveal on blog post card hover
-- [ ] 11.2.7 — Polish FAQ chevron rotation animation
-- [ ] 11.2.8 — Refine form input focus transitions
-- [ ] 11.2.9 — Ensure all hover states have matching `:focus-visible` counterparts
-- [ ] 11.2.10 — Test all micro-interactions on touch devices (no hover stuck states)
+- [x] 11.2.1 — Refine `<Button>` hover/press animations across all variants
+- [x] 11.2.2 — Add hover lift + glow to all `<GlassCard>` instances
+- [x] 11.2.3 — Implement navigation link slide-in underline animation
+- [x] 11.2.4 — Add App Store badge hover pulse effect
+- [x] 11.2.5 — Add continuous pulse to "Most Popular" pricing badge
+- [x] 11.2.6 — Add "Read →" slide-in reveal on blog post card hover
+- [x] 11.2.7 — Polish FAQ chevron rotation animation
+- [x] 11.2.8 — Refine form input focus transitions
+- [x] 11.2.9 — Ensure all hover states have matching `:focus-visible` counterparts
+- [x] 11.2.10 — Test all micro-interactions on touch devices (no hover stuck states)
 
 ---
 
@@ -1435,24 +1435,24 @@
 
 ### Acceptance Criteria
 
-- [ ] Skeleton loading screens for all async content:
+- [x] Skeleton loading screens for all async content:
   - Blog post cards: glass-tinted pulsing rectangles matching card dimensions
   - Blog post body: pulsing text-line placeholders with realistic line widths
   - Images: blur placeholder that crossfades to loaded image
-- [ ] Global page loading indicator: thin violet progress bar at the top (like NProgress)
-- [ ] Navigation route change: subtle fade transition (not a flash of white)
-- [ ] Skeleton pulse animation uses a violet-tinted shimmer (not grey)
-- [ ] Loading states match the surrounding glass morphism aesthetic
-- [ ] No content layout shift when real content replaces skeleton (matched dimensions)
+- [x] Global page loading indicator: thin violet progress bar at the top (like NProgress)
+- [x] Navigation route change: subtle fade transition (not a flash of white)
+- [x] Skeleton pulse animation uses a violet-tinted shimmer (not grey)
+- [x] Loading states match the surrounding glass morphism aesthetic
+- [x] No content layout shift when real content replaces skeleton (matched dimensions)
 
 ### Subtasks
 
-- [ ] 11.3.1 — Create `<Skeleton>` base component with violet-tinted shimmer animation
-- [ ] 11.3.2 — Create `<PostCardSkeleton>` matching `<PostCard>` dimensions
-- [ ] 11.3.3 — Create `<PostBodySkeleton>` matching blog prose layout
-- [ ] 11.3.4 — Integrate blur → loaded crossfade on all `<Image>` components
-- [ ] 11.3.5 — Add top-of-page progress bar for route transitions
-- [ ] 11.3.6 — Test CLS: verify skeletons prevent layout shift by matching real content dimensions
+- [x] 11.3.1 — Create `<Skeleton>` base component with violet-tinted shimmer animation
+- [x] 11.3.2 — Create `<PostCardSkeleton>` matching `<PostCard>` dimensions
+- [x] 11.3.3 — Create `<PostBodySkeleton>` matching blog prose layout
+- [x] 11.3.4 — Integrate blur → loaded crossfade on all `<Image>` components
+- [x] 11.3.5 — Add top-of-page progress bar for route transitions
+- [x] 11.3.6 — Test CLS: verify skeletons prevent layout shift by matching real content dimensions
 
 ---
 
