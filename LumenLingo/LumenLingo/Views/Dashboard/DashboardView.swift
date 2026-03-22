@@ -2051,30 +2051,6 @@ private struct AnimatedFogOverlay: View {
             }
 
             Spacer()
-
-            ZStack {
-                if isDark {
-                    LinearGradient(
-                        colors: [
-                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0),
-                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.5 + 0.15 * Double(fogBreath)),
-                            Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.9 + 0.05 * Double(fogBreath))
-                        ],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                    .frame(height: 90)
-                }
-
-                if isDark {
-                    Ellipse()
-                        .fill(Color(hex: "#667eea").opacity(0.04 + 0.02 * Double(fogBreath)))
-                        .frame(width: 200, height: 40)
-                        .blur(radius: 20)
-                        .offset(x: -40, y: -20)
-                }
-            }
-            .allowsHitTesting(false)
         }
         .onAppear {
             guard isDark else { return }

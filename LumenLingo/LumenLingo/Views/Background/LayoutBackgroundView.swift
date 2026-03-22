@@ -169,16 +169,7 @@ struct LayoutBackgroundView: View {
                 .blendMode(.overlay)
                 .opacity(colorScheme == .dark ? 1 : 0)
 
-            // Bottom safe area fade
-            LinearGradient(
-                stops: [
-                    .init(color: .clear, location: 0.85),
-                    .init(color: Color(red: 2/255, green: 1/255, blue: 6/255).opacity(0.3), location: 1.0),
-                ],
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .opacity(colorScheme == .dark ? 1 : 0)
+
         }
     }
 
