@@ -1559,18 +1559,18 @@
 
 ### Acceptance Criteria
 
-- [ ] Next.js Middleware-based i18n routing with URL prefix strategy (`/es/`, `/fr/`, `/ja/`)
-- [ ] Default locale: `en` (no prefix for English)
-- [ ] Supported locales (initial): `en`, `es`, `fr`, `ja`, `de`, `pt`
-- [ ] Translation files stored in `src/messages/{locale}.json` using nested key structure
-- [ ] `next-intl` or similar library integrated for:
+- [x] Next.js Middleware-based i18n routing with URL prefix strategy (`/es/`, `/fr/`, `/ja/`)
+- [x] Default locale: `en` (no prefix for English)
+- [x] Supported locales (initial): `en`, `es`, `fr`, `ja`, `de`, `pt`
+- [x] Translation files stored in `src/messages/{locale}.json` using nested key structure
+- [x] `next-intl` or similar library integrated for:
   - Server component translations (`useTranslations`)
   - Client component translations
   - Formatted dates, numbers, and relative times
-- [ ] Language switcher dropdown in the header with flag icons and language names
-- [ ] `hreflang` link tags automatically generated for all translated pages
-- [ ] `<html lang="...">` attribute dynamically set based on current locale
-- [ ] Blog posts support per-locale variants (same slug, different language directories)
+- [x] Language switcher dropdown in the header with flag icons and language names
+- [x] `hreflang` link tags automatically generated for all translated pages
+- [x] `<html lang="...">` attribute dynamically set based on current locale
+- [x] Blog posts support per-locale variants (same slug, different language directories)
 
 ### Subtasks
 
@@ -1627,43 +1627,43 @@
 
 ### Acceptance Criteria
 
-- [ ] Unit tests with Vitest for:
+- [x] Unit tests with Vitest for:
   - Blog utility functions (`getAllPosts`, `getPostBySlug`, reading time calculation)
   - Analytics event helpers
   - App Store URL generator with campaign tokens
   - Email validation logic
   - Newsletter API route handler
-- [ ] Component tests with React Testing Library for:
+- [x] Component tests with React Testing Library for:
   - `<Button>` — renders all variants, handles click events
   - `<GlassCard>` — renders children, applies className
   - `<NewsletterForm>` — validates input, shows success/error states
   - `<PricingCard>` — renders tier information, CTA links correctly
   - `<FAQ>` — expands/collapses, keyboard navigation works
-- [ ] End-to-end tests with Playwright for:
+- [x] End-to-end tests with Playwright for:
   - Homepage load and navigation to all major pages
   - Blog post listing and individual post rendering
   - Pricing page tier cards and CTA clicks
   - Newsletter signup submission flow
   - Mobile hamburger menu open/close and navigation
   - 404 page renders for non-existent routes
-- [ ] Test coverage threshold: 80% for utility functions, 60% for components
-- [ ] Tests run in CI on every pull request
+- [x] Test coverage threshold: 80% for utility functions, 60% for components
+- [x] Tests run in CI on every pull request
 
 ### Subtasks
 
-- [ ] 14.1.1 — Install and configure Vitest with React Testing Library
-- [ ] 14.1.2 — Install and configure Playwright for E2E tests
-- [ ] 14.1.3 — Write unit tests for blog utilities (5+ test cases)
-- [ ] 14.1.4 — Write unit tests for analytics helpers (3+ test cases)
-- [ ] 14.1.5 — Write unit tests for App Store URL generator (5+ test cases covering all campaign tokens)
-- [ ] 14.1.6 — Write component tests for `<Button>`, `<GlassCard>`, `<NewsletterForm>` (10+ assertions)
-- [ ] 14.1.7 — Write component tests for `<PricingCard>`, `<FAQ>` (8+ assertions)
-- [ ] 14.1.8 — Write E2E tests for homepage navigation flow
-- [ ] 14.1.9 — Write E2E tests for blog browsing and post rendering
-- [ ] 14.1.10 — Write E2E tests for pricing page interactions
-- [ ] 14.1.11 — Write E2E tests for newsletter signup flow
-- [ ] 14.1.12 — Write E2E tests for mobile navigation
-- [ ] 14.1.13 — Configure CI to run all tests on PR and block merge on failure
+- [x] 14.1.1 — Install and configure Vitest with React Testing Library
+- [x] 14.1.2 — Install and configure Playwright for E2E tests
+- [x] 14.1.3 — Write unit tests for blog utilities (5+ test cases)
+- [x] 14.1.4 — Write unit tests for analytics helpers (3+ test cases)
+- [x] 14.1.5 — Write unit tests for App Store URL generator (5+ test cases covering all campaign tokens)
+- [x] 14.1.6 — Write component tests for `<Button>`, `<GlassCard>`, `<NewsletterForm>` (10+ assertions)
+- [x] 14.1.7 — Write component tests for `<PricingCard>`, `<FAQ>` (8+ assertions)
+- [x] 14.1.8 — Write E2E tests for homepage navigation flow
+- [x] 14.1.9 — Write E2E tests for blog browsing and post rendering
+- [x] 14.1.10 — Write E2E tests for pricing page interactions
+- [x] 14.1.11 — Write E2E tests for newsletter signup flow
+- [x] 14.1.12 — Write E2E tests for mobile navigation
+- [x] 14.1.13 — Configure CI to run all tests on PR and block merge on failure
 
 ---
 
@@ -1760,12 +1760,471 @@
 
 ---
 
-# Epic 15 — Post-Launch Iteration & Growth
+# Epic 15 — Full Content Internationalisation Across All LumenLingo Languages
+
+> Deliver a fully internationalised website experience in every language the
+> LumenLingo app supports, so that users in any target market can discover,
+> evaluate, and convert in their native language — from hero headline to legal
+> fine print.
+
+**Context & Rationale**
+
+Epic 13 established the i18n architecture (next-intl, middleware routing, message
+file structure, language switcher) and completed Spanish translations. However,
+the four remaining frontend locales (French, Japanese, German, Portuguese) are
+still ~82 % untranslated English, and four languages supported by the iOS app
+(Polish, Arabic, Chinese, Ukrainian) have no frontend locale at all. Blog
+content exists only in English (14 posts) and Spanish (3 posts). Legal pages
+(Privacy Policy, Terms of Service) are hardcoded English JSX with no localisation
+path. This epic closes every one of those gaps.
+
+**Scope**
+
+| Dimension | Current State | Target State |
+|-----------|---------------|--------------|
+| UI string locales | 6 (en, es, fr ⁱ, ja ⁱ, de ⁱ, pt ⁱ) | 10 (en, es, fr, ja, de, pt, pl, ar, zh, uk) |
+| UI string coverage | es ≈ 100 %; fr/ja/de/pt ≈ 18 % | 100 % for all 10 locales |
+| Blog posts (EN) | 14 | 14 |
+| Blog posts (localised) | 3 (ES only) | 14 × 9 non-EN locales = 126 translated posts |
+| Legal pages | EN-only hardcoded JSX | Fully localised in all 10 locales |
+| RTL support | None | Full RTL for Arabic (`ar`) |
+| Translation QA workflow | Ad-hoc | Repeatable glossary + review pipeline |
+
+ⁱ = partially translated (~18 % of strings)
+
+**iOS ↔ Frontend Language Matrix**
+
+| Language | ISO | iOS App | Frontend (current) | Frontend (target) |
+|----------|-----|---------|-------------------|-------------------|
+| English | en | ✅ | ✅ (default) | ✅ |
+| Spanish | es | ✅ | ✅ | ✅ |
+| French | fr | ✅ | ⚠️ 18 % | ✅ |
+| German | de | ✅ | ⚠️ 18 % | ✅ |
+| Japanese | ja | ✅ | ⚠️ 18 % | ✅ |
+| Portuguese | pt | — | ⚠️ 18 % | ✅ |
+| Polish | pl | ✅ | ❌ | ✅ |
+| Arabic | ar | ✅ | ❌ | ✅ (RTL) |
+| Chinese | zh | ✅ | ❌ | ✅ |
+| Ukrainian | uk | ✅ | ❌ | ✅ |
+
+---
+
+## Story 15.1 — Complete UI String Translations for Existing Locales
+
+**As a** French / Japanese / German / Portuguese-speaking visitor,
+**I want** the entire website UI rendered in my native language,
+**So that** I can understand every element of the site — from navigation to
+error messages — without falling back to English.
+
+### Acceptance Criteria
+
+- [ ] `fr.json` contains professional-quality French translations for all 21 namespaces (171+ leaf keys)
+- [ ] `ja.json` contains professional-quality Japanese translations for all 21 namespaces (171+ leaf keys)
+- [ ] `de.json` contains professional-quality German translations for all 21 namespaces (171+ leaf keys)
+- [ ] `pt.json` contains professional-quality Portuguese (Brazilian) translations for all 21 namespaces (171+ leaf keys)
+- [ ] No English fallback text is visible on any page when browsing in FR, JA, DE, or PT
+- [ ] Namespace coverage verified: `Metadata`, `Nav`, `LanguageSwitcher`, `Hero`, `FeatureShowcase`, `ScreenshotGallery`, `Differentiators`, `CTA`, `Features`, `Pricing`, `About`, `Contact`, `Demo`, `Download`, `EarlyAccess`, `Error`, `Footer`, `NetworkStatus`, `Newsletter`, `NotFound`, `Offline`
+- [ ] Date and number formatting uses locale conventions (e.g. `22 mars 2026` for FR, `2026年3月22日` for JA)
+- [ ] Pluralisation rules are correct per locale (French: singular/plural; Japanese: no plural; German: singular/plural)
+- [ ] OG metadata (`title`, `description`) uses locale-specific translations for social sharing
+- [ ] All 4 locales pass a visual diff test — no layout overflow caused by longer translated strings (e.g. DE noun compounds)
+
+### Subtasks
+
+- [ ] 15.1.1 — Audit `en.json` and produce a canonical key inventory spreadsheet (namespace, key, EN value, max char hint)
+- [ ] 15.1.2 — Translate all 171+ keys in `fr.json`; replace every remaining English value
+- [ ] 15.1.3 — Translate all 171+ keys in `ja.json`; replace every remaining English value
+- [ ] 15.1.4 — Translate all 171+ keys in `de.json`; replace every remaining English value
+- [ ] 15.1.5 — Translate all 171+ keys in `pt.json`; replace every remaining English value
+- [ ] 15.1.6 — Add locale-aware date/number formatting using `next-intl`'s `useFormatter()` where dates and numbers appear
+- [ ] 15.1.7 — Configure ICU plural rules for each locale in message files where counts are displayed
+- [ ] 15.1.8 — Run visual regression test (Playwright screenshot comparison) for FR, JA, DE, PT on Homepage, Features, Pricing, Blog pages — flag any text overflow or truncation
+- [ ] 15.1.9 — Fix all layout issues found in visual regression (e.g. button width, card height, heading wrap)
+
+---
+
+## Story 15.2 — Add New Locale Support for iOS-Aligned Languages (PL, AR, ZH, UK)
+
+**As a** Polish / Arabic / Chinese / Ukrainian-speaking user who discovers LumenLingo,
+**I want** to browse the marketing website in my native language,
+**So that** I can understand the product value proposition before downloading.
+
+### Acceptance Criteria
+
+- [ ] `pl.json`, `ar.json`, `zh.json`, `uk.json` message files created with all 21 namespaces fully translated
+- [ ] Locale routing extended: `routing.ts` supports `['en','es','fr','ja','de','pt','pl','ar','zh','uk']`
+- [ ] URL prefixes work: `/pl/`, `/ar/`, `/zh/`, `/uk/` serve correct locale content
+- [ ] `<LanguageSwitcher>` dropdown lists all 10 languages with correct native-script labels (e.g. `العربية`, `中文`, `Українська`, `Polski`)
+- [ ] `hreflang` link tags generated for all 10 locales on every page
+- [ ] Sitemap includes all locale-prefixed URLs
+- [ ] Default locale (`en`) still has no URL prefix
+- [ ] `<html lang="..." dir="...">` correctly set (including `dir="rtl"` for Arabic)
+
+### Subtasks
+
+- [ ] 15.2.1 — Add `'pl','ar','zh','uk'` to the locale array in `src/i18n/routing.ts`
+- [ ] 15.2.2 — Create `messages/pl.json` with full Polish translations for all 21 namespaces
+- [ ] 15.2.3 — Create `messages/ar.json` with full Arabic translations for all 21 namespaces
+- [ ] 15.2.4 — Create `messages/zh.json` with full Simplified Chinese translations for all 21 namespaces
+- [ ] 15.2.5 — Create `messages/uk.json` with full Ukrainian translations for all 21 namespaces
+- [ ] 15.2.6 — Update `<LanguageSwitcher>` to display all 10 locales with native-script display names and appropriate flag icons
+- [ ] 15.2.7 — Verify `hreflang` tags are emitted for all 10 locales in `generateMetadata`
+- [ ] 15.2.8 — Verify sitemap generation includes all new locale-prefixed routes
+- [ ] 15.2.9 — Visual regression test for PL, AR, ZH, UK across key pages (Homepage, Features, Pricing)
+- [ ] 15.2.10 — Fix any layout, font rendering, or overflow issues found in new locales
+
+---
+
+## Story 15.3 — Arabic Right-to-Left (RTL) Layout Support
+
+**As an** Arabic-speaking visitor,
+**I want** the website layout to be fully mirrored for right-to-left reading,
+**So that** the experience feels native and professional, not like a broken left-to-right page.
+
+### Acceptance Criteria
+
+- [ ] `<html dir="rtl">` set when locale is `ar`
+- [ ] Tailwind CSS RTL utilities enabled (`rtl:` variant) or logical properties (`ms-`, `me-`, `ps-`, `pe-`) used throughout
+- [ ] All components render correctly in RTL:
+  - [ ] Header: logo on the right, navigation on the left, language switcher on the left
+  - [ ] Hero section: text right-aligned, CTA buttons in correct order
+  - [ ] Feature cards: icon/text direction reversed
+  - [ ] Pricing cards: layout mirrored
+  - [ ] Blog post prose: right-aligned text, correct list marker placement
+  - [ ] Footer: columns flow right-to-left
+  - [ ] Forms: labels and inputs right-aligned, validation messages on correct side
+- [ ] Arrows, chevrons, and directional icons flip for RTL (e.g. "next" arrow points left)
+- [ ] No horizontal scrollbar on any page in RTL mode
+- [ ] Blog post images remain correctly positioned (images are not mirrored)
+- [ ] Language switcher remains functional and accessible in RTL layout
+
+### Subtasks
+
+- [ ] 15.3.1 — Enable Tailwind CSS RTL support: configure `rtl:` variant or switch to CSS logical properties project-wide
+- [ ] 15.3.2 — Update root layout to dynamically set `dir="rtl"` based on locale
+- [ ] 15.3.3 — Audit and fix Header, Footer, and MobileMenu for RTL layout
+- [ ] 15.3.4 — Audit and fix HeroSection, FeatureShowcase, DifferentiatorSection, CTABanner for RTL
+- [ ] 15.3.5 — Audit and fix PricingCard, FeatureComparisonTable, PricingFAQ for RTL
+- [ ] 15.3.6 — Audit and fix blog components (PostCard, PostGrid, PostHeader, MDXProse, TableOfContents) for RTL
+- [ ] 15.3.7 — Audit and fix form components (NewsletterForm, Contact form, EarlyAccess form) for RTL
+- [ ] 15.3.8 — Replace directional icons (arrows, chevrons) with locale-aware variants that auto-flip
+- [ ] 15.3.9 — Full visual QA pass on all Arabic pages — screenshot comparison against LTR English equivalents
+- [ ] 15.3.10 — Fix all RTL-specific bugs found during QA
+
+---
+
+## Story 15.4 — CJK Typography & Font Support (Japanese, Chinese)
+
+**As a** Japanese or Chinese-speaking visitor,
+**I want** the website to use proper CJK font stacks and typographic conventions,
+**So that** the text is beautiful, legible, and culturally appropriate.
+
+### Acceptance Criteria
+
+- [ ] CJK-optimised font stack configured: `Noto Sans JP` (Japanese), `Noto Sans SC` (Simplified Chinese) loaded via `next/font` or Google Fonts with subset preloading
+- [ ] Display headings use a CJK-appropriate typeface (not Latin-only Cabinet Grotesk / Satoshi)
+- [ ] Body text renders at an appropriate size: CJK characters are comfortable at 16–18 px (not smaller)
+- [ ] Line height adjusted for CJK: 1.8–2.0 (vs 1.5–1.6 for Latin scripts)
+- [ ] Word-break behaviour is correct: `word-break: break-all` or `overflow-wrap: anywhere` for CJK contexts where no spaces exist
+- [ ] No mojibake (garbled characters) on any page
+- [ ] Font files are subset-loaded to keep page weight manageable (< 200 KB per locale)
+- [ ] Fallback fonts are specified so content is readable before web fonts load
+
+### Subtasks
+
+- [ ] 15.4.1 — Select and configure `Noto Sans JP` for Japanese via `next/font/google` with Unicode range subsetting
+- [ ] 15.4.2 — Select and configure `Noto Sans SC` for Simplified Chinese via `next/font/google` with Unicode range subsetting
+- [ ] 15.4.3 — Create a locale-aware font utility in `src/lib/fonts.ts` that returns the correct font class per locale
+- [ ] 15.4.4 — Update root layout to apply locale-specific font classes to `<body>`
+- [ ] 15.4.5 — Adjust line-height and word-break CSS for CJK locales via Tailwind custom utilities or `[locale]` layout
+- [ ] 15.4.6 — Verify heading and body rendering on JA and ZH pages — no clipping, no overflow, no mojibake
+- [ ] 15.4.7 — Measure font payload per locale with Lighthouse; ensure < 200 KB incremental per CJK font
+
+---
+
+## Story 15.5 — Blog Content Translation — Tier 1 (ES, FR, DE)
+
+**As a** Spanish / French / German-speaking reader,
+**I want** to read all LumenLingo blog posts in my native language,
+**So that** I can learn about the app and language learning techniques without a language barrier.
+
+### Acceptance Criteria
+
+- [ ] All 14 English blog posts translated to Spanish (11 new, completing the existing 3)
+- [ ] All 14 English blog posts translated to French (14 new)
+- [ ] All 14 English blog posts translated to German (14 new)
+- [ ] Translated posts placed in `src/content/blog/{locale}/` subdirectories matching the English slug
+- [ ] Frontmatter (`title`, `description`) fully translated per locale
+- [ ] `tags` translated to locale-appropriate terms or kept as English where the tag is a proper noun / brand name
+- [ ] `category` values remain in English (used programmatically) but category display names are translated via message files
+- [ ] SEO metadata for each translated post uses native-language title and description
+- [ ] Internal links within posts point to the correct locale-prefixed blog URLs
+- [ ] Related posts (`getRelatedPosts`) return posts from the same locale
+- [ ] `feed.xml` (RSS) includes separate feeds or locale-filtered entries for ES, FR, DE
+
+### Subtasks
+
+- [ ] 15.5.1 — Create `src/content/blog/es/` — translate remaining 11 English posts to Spanish
+- [ ] 15.5.2 — Create `src/content/blog/fr/` — translate all 14 English posts to French
+- [ ] 15.5.3 — Create `src/content/blog/de/` — translate all 14 English posts to German
+- [ ] 15.5.4 — Translate frontmatter (`title`, `description`) for all ES, FR, DE posts
+- [ ] 15.5.5 — Update internal links in translated posts to use locale-prefixed URLs
+- [ ] 15.5.6 — Verify `getAllPosts(locale)` returns correct translated posts for ES, FR, DE
+- [ ] 15.5.7 — Verify blog index, category, and tag pages render correctly for each locale
+- [ ] 15.5.8 — Configure RSS feed to serve locale-specific entries (e.g. `/es/blog/feed.xml`)
+- [ ] 15.5.9 — Add translated blog category display names to ES, FR, DE message files
+
+---
+
+## Story 15.6 — Blog Content Translation — Tier 2 (JA, PT, ZH)
+
+**As a** Japanese / Portuguese / Chinese-speaking reader,
+**I want** to read all LumenLingo blog posts in my native language,
+**So that** I benefit from the same content as English-speaking users.
+
+### Acceptance Criteria
+
+- [ ] All 14 English blog posts translated to Japanese (14 new)
+- [ ] All 14 English blog posts translated to Portuguese (14 new)
+- [ ] All 14 English blog posts translated to Chinese — Simplified (14 new)
+- [ ] Translated posts placed in `src/content/blog/{locale}/` following the same structure as Tier 1
+- [ ] Frontmatter translated; same rules as Story 15.5
+- [ ] CJK blog posts render correctly with proper typography (Story 15.4 dependency)
+- [ ] Blog search/filter works correctly with CJK characters
+- [ ] Reading time calculation accounts for CJK character density (~500 chars/min vs ~200 words/min for Latin)
+
+### Subtasks
+
+- [ ] 15.6.1 — Create `src/content/blog/ja/` — translate all 14 English posts to Japanese
+- [ ] 15.6.2 — Create `src/content/blog/pt/` — translate all 14 English posts to Portuguese
+- [ ] 15.6.3 — Create `src/content/blog/zh/` — translate all 14 English posts to Chinese (Simplified)
+- [ ] 15.6.4 — Translate frontmatter (`title`, `description`) for all JA, PT, ZH posts
+- [ ] 15.6.5 — Update `readingTime` calculation in `src/lib/blog.ts` to use CJK character count for JA and ZH locales
+- [ ] 15.6.6 — Verify blog index, category, tag, and individual post pages render correctly for JA, PT, ZH
+- [ ] 15.6.7 — Add translated blog category display names to JA, PT, ZH message files
+
+---
+
+## Story 15.7 — Blog Content Translation — Tier 3 (PL, AR, UK)
+
+**As a** Polish / Arabic / Ukrainian-speaking reader,
+**I want** to read all LumenLingo blog posts in my native language,
+**So that** I have full access to LumenLingo's educational content.
+
+### Acceptance Criteria
+
+- [ ] All 14 English blog posts translated to Polish (14 new)
+- [ ] All 14 English blog posts translated to Arabic (14 new)
+- [ ] All 14 English blog posts translated to Ukrainian (14 new)
+- [ ] Arabic blog posts render correctly in RTL layout (Story 15.3 dependency)
+- [ ] Ukrainian blog posts use correct Cyrillic rendering
+- [ ] Translated posts placed in `src/content/blog/{locale}/` following established structure
+- [ ] Frontmatter translated; same rules as Story 15.5
+- [ ] All locale-specific blog RSS feeds are valid for PL, AR, UK
+
+### Subtasks
+
+- [ ] 15.7.1 — Create `src/content/blog/pl/` — translate all 14 English posts to Polish
+- [ ] 15.7.2 — Create `src/content/blog/ar/` — translate all 14 English posts to Arabic
+- [ ] 15.7.3 — Create `src/content/blog/uk/` — translate all 14 English posts to Ukrainian
+- [ ] 15.7.4 — Translate frontmatter (`title`, `description`) for all PL, AR, UK posts
+- [ ] 15.7.5 — Verify Arabic blog posts render correctly in RTL (prose direction, image placement, list markers)
+- [ ] 15.7.6 — Verify Ukrainian posts render correctly with Cyrillic font stack
+- [ ] 15.7.7 — Validate all locale RSS feeds pass W3C Feed Validator
+
+---
+
+## Story 15.8 — Legal Page Localisation (Privacy Policy & Terms of Service)
+
+**As a** non-English-speaking visitor,
+**I want** to read the Privacy Policy and Terms of Service in my language,
+**So that** I understand the legal terms before using the product — and LumenLingo complies with local consumer-protection and data-privacy laws.
+
+### Acceptance Criteria
+
+- [ ] Privacy Policy content extracted from hardcoded JSX into locale-addressable structured content (message file keys or MDX per locale)
+- [ ] Terms of Service content extracted from hardcoded JSX into locale-addressable structured content
+- [ ] Both pages translated into all 9 non-English locales: ES, FR, JA, DE, PT, PL, AR, ZH, UK
+- [ ] Legal pages render correctly for RTL (Arabic) and CJK (Japanese, Chinese) layouts
+- [ ] `LegalTOC` component supports translated section headings and anchor links
+- [ ] `<DownloadPDFButton>` works for all locales (PDF generation or pre-rendered per locale)
+- [ ] `BreadcrumbJsonLd` structured data uses translated breadcrumb names
+- [ ] EU locales (FR, DE, ES, PT, PL) include GDPR-specific clause translations
+- [ ] Legal translations reviewed by a qualified translator with legal knowledge (not machine-only)
+- [ ] Last-updated date shown on each localised page
+
+### Subtasks
+
+- [ ] 15.8.1 — Extract Privacy Policy content from `privacy/page.tsx` inline JSX into a structured format (one key per section in message files, or MDX per locale)
+- [ ] 15.8.2 — Extract Terms of Service content from `terms/page.tsx` inline JSX into a structured format
+- [ ] 15.8.3 — Refactor `privacy/page.tsx` and `terms/page.tsx` to render content from the structured source using `useTranslations()`
+- [ ] 15.8.4 — Translate Privacy Policy into ES, FR, DE, PT, PL (EU locales first — GDPR compliance)
+- [ ] 15.8.5 — Translate Privacy Policy into JA, ZH, AR, UK
+- [ ] 15.8.6 — Translate Terms of Service into ES, FR, DE, PT, PL
+- [ ] 15.8.7 — Translate Terms of Service into JA, ZH, AR, UK
+- [ ] 15.8.8 — Update `LegalTOC` to use translated section headings from message files
+- [ ] 15.8.9 — Verify `DownloadPDFButton` generates correct localised PDF for each locale
+- [ ] 15.8.10 — Verify RTL legal page layout for Arabic locale
+- [ ] 15.8.11 — Commission legal-quality review of translated Privacy Policy and Terms for all locales
+
+---
+
+## Story 15.9 — Locale-Specific SEO & Metadata Optimisation
+
+**As a** product owner focused on international organic traffic,
+**I want** each localised page to have fully optimised SEO metadata,
+**So that** search engines index and rank our pages correctly for each language market.
+
+### Acceptance Criteria
+
+- [ ] Every page has locale-specific `<title>` and `<meta name="description">` via `generateMetadata`
+- [ ] Open Graph tags (`og:title`, `og:description`, `og:locale`, `og:locale:alternate`) set per locale
+- [ ] `og:locale` uses correct IETF format (e.g. `fr_FR`, `ja_JP`, `de_DE`, `pt_BR`, `pl_PL`, `ar_SA`, `zh_CN`, `uk_UA`)
+- [ ] `hreflang` tags include `x-default` pointing to English
+- [ ] Sitemap includes all localised URLs with `<xhtml:link rel="alternate" hreflang="...">` annotations
+- [ ] Localised canonical URLs set correctly (each locale's page is self-canonical)
+- [ ] Google Search Console verified for all locale subpaths
+- [ ] Structured data (`BreadcrumbJsonLd`, `WebSiteJsonLd`, `ArticleJsonLd`) uses translated strings where applicable
+- [ ] No duplicate content warnings in Search Console between locale variants
+- [ ] Blog post `ArticleJsonLd` uses translated `headline` and `description` per locale
+
+### Subtasks
+
+- [ ] 15.9.1 — Audit all `generateMetadata` functions to ensure they read locale-specific translations for `title` and `description`
+- [ ] 15.9.2 — Add `og:locale` and `og:locale:alternate` tags to all pages
+- [ ] 15.9.3 — Add `x-default` hreflang tag pointing to the English version on all pages
+- [ ] 15.9.4 — Update `sitemap.ts` to generate `<xhtml:link>` alternate annotations for all locale variants
+- [ ] 15.9.5 — Verify canonical URLs: each localised page self-references as canonical (not pointing to EN)
+- [ ] 15.9.6 — Update structured data (`JsonLd` components) to use translated strings
+- [ ] 15.9.7 — Submit all new locale subpaths to Google Search Console
+- [ ] 15.9.8 — Validate OG previews for 3 sample pages per locale using Facebook/Twitter sharing debuggers
+- [ ] 15.9.9 — Run Screaming Frog (or equivalent) crawl to verify no orphan pages, missing hreflang, or duplicate content
+
+---
+
+## Story 15.10 — Translation Glossary, Style Guide & Quality Assurance Workflow
+
+**As a** content lead managing translations across 10 languages,
+**I want** a repeatable QA workflow with a brand glossary and style guide,
+**So that** every translation is consistent, on-brand, and high quality — and new languages or content can be added efficiently.
+
+### Acceptance Criteria
+
+- [ ] Brand glossary document created with approved translations for key terms across all 10 locales:
+  - Product name: "LumenLingo" (never translated)
+  - Company name: "LumenShore" (never translated)
+  - Feature names: "Flashcards", "Soundscapes", "Breathing Orbs", "Quantum Flow", "Nebula Drift"
+  - Tier names: "Free", "Pro", "Elite", "Royal"
+  - UI terms: "Download", "Get Started", "Language Pair", "Practice Session"
+- [ ] Translation style guide per language covering:
+  - Formal vs informal tone (e.g. French `vous` vs `tu`, German `Sie` vs `du`, Spanish `usted` vs `tú`)
+  - Date format conventions
+  - Number formatting (decimal separator, thousands separator)
+  - Currency display preferences
+  - Honourifics and politeness conventions (particularly JA, ZH, AR)
+- [ ] Automated translation key completeness check: CI script that verifies every key in `en.json` exists in all other locale `.json` files
+- [ ] Manual review checklist template for native-speaker reviewers
+- [ ] At least one native-speaker review completed for each of the 9 non-English locales
+- [ ] All review feedback incorporated and verified
+
+### Subtasks
+
+- [ ] 15.10.1 — Create `TRANSLATION_GLOSSARY.md` with brand terms and their approved translations (or non-translation) in all 10 locales
+- [ ] 15.10.2 — Create `TRANSLATION_STYLE_GUIDE.md` with per-language tone, formatting, and cultural guidelines
+- [ ] 15.10.3 — Write CI script (`scripts/check-translations.ts`) that compares all locale JSON files against `en.json` and fails if any keys are missing
+- [ ] 15.10.4 — Add CI script to the PR check pipeline
+- [ ] 15.10.5 — Create native-speaker review checklist template (Google Doc or Markdown)
+- [ ] 15.10.6 — Commission and complete native-speaker review for FR, DE, ES, PT
+- [ ] 15.10.7 — Commission and complete native-speaker review for JA, ZH
+- [ ] 15.10.8 — Commission and complete native-speaker review for PL, AR, UK
+- [ ] 15.10.9 — Incorporate all reviewer feedback into locale files and blog posts
+- [ ] 15.10.10 — Final automated completeness check — all 10 locales pass with 0 missing keys
+
+---
+
+## Story 15.11 — Locale-Aware Content Adaptation & Cultural Nuance
+
+**As a** visitor from any supported locale,
+**I want** content that feels culturally adapted — not just mechanically translated,
+**So that** the website resonates with me as if it were designed for my market.
+
+### Acceptance Criteria
+
+- [ ] Pricing page displays locale-appropriate currency symbols or conventions:
+  - USD for en, es (LATAM default), pt
+  - EUR for fr, de
+  - JPY for ja
+  - CNY for zh
+  - PLN for pl
+  - UAH for uk
+  - Currency display is informational context only (actual purchase via App Store which handles local currency)
+- [ ] Trust statistics on homepage adapted where appropriate (e.g. "Trusted by learners in 50+ countries" has locale-specific phrasing)
+- [ ] Blog post examples and cultural references adapted per locale:
+  - Spanish learning tips reference relatable scenarios for each source-language audience
+  - Japanese learning posts reference culturally specific motivations (anime, business, travel)
+- [ ] Download page CTA language matches locale conventions (e.g. Japanese: polite/formal request form)
+- [ ] Contact page includes locale-relevant support language information
+- [ ] Feature names that are puns or wordplay in English are adapted (not literally translated) for each locale
+
+### Subtasks
+
+- [ ] 15.11.1 — Add locale-aware currency display helper to `src/lib/locale.ts`
+- [ ] 15.11.2 — Update Pricing page to show locale-appropriate currency context
+- [ ] 15.11.3 — Review and adapt homepage trust stats and social proof for each locale
+- [ ] 15.11.4 — Review blog posts for culturally insensitive or irrelevant examples per locale; adapt as needed
+- [ ] 15.11.5 — Adapt Download page CTA copy to match locale-specific tone and conventions
+- [ ] 15.11.6 — Add locale-relevant support language info to Contact page message files
+- [ ] 15.11.7 — Review all feature name translations for natural fluency (avoid literal translations of creative names)
+
+---
+
+## Story 15.12 — End-to-End Internationalisation Acceptance Testing
+
+**As a** QA engineer verifying the i18n rollout,
+**I want** comprehensive automated and manual tests covering every localised surface,
+**So that** we can confidently release knowing that no locale has broken layouts, missing text, or degraded functionality.
+
+### Acceptance Criteria
+
+- [ ] Playwright E2E test suite covers all 10 locales for:
+  - [ ] Homepage loads with correct locale content (hero heading, description, CTA text)
+  - [ ] Navigation labels match locale
+  - [ ] Language switcher cycles through all 10 locales correctly
+  - [ ] Features page renders locale content without English fallback
+  - [ ] Pricing page renders locale content with correct currency context
+  - [ ] Blog index shows locale-appropriate posts
+  - [ ] Individual blog post renders in the correct language
+  - [ ] Privacy and Terms pages render locale content
+  - [ ] 404 page shows locale-appropriate message
+  - [ ] Arabic pages render in RTL layout (`dir="rtl"` on `<html>`)
+- [ ] Visual regression tests (Playwright screenshots) for all 10 locales × 5 key pages = 50 baseline screenshots
+- [ ] No console errors or warnings on any localised page
+- [ ] Performance budget maintained: LCP ≤ 2.5 s for all locales (CJK fonts do not regress performance)
+- [ ] All automated tests pass in CI before merge
+
+### Subtasks
+
+- [ ] 15.12.1 — Create Playwright test helper that parameterises tests across all 10 locales
+- [ ] 15.12.2 — Write E2E test: homepage content verification per locale
+- [ ] 15.12.3 — Write E2E test: navigation and language switcher per locale
+- [ ] 15.12.4 — Write E2E test: features page content per locale
+- [ ] 15.12.5 — Write E2E test: pricing page content and currency per locale
+- [ ] 15.12.6 — Write E2E test: blog index and post rendering per locale
+- [ ] 15.12.7 — Write E2E test: legal pages per locale
+- [ ] 15.12.8 — Write E2E test: 404 page per locale
+- [ ] 15.12.9 — Write E2E test: Arabic RTL layout assertions (element positioning, `dir` attribute)
+- [ ] 15.12.10 — Generate visual regression baselines for all 10 locales × 5 pages
+- [ ] 15.12.11 — Run Lighthouse performance audit per locale; verify LCP ≤ 2.5 s
+- [ ] 15.12.12 — Integrate locale E2E tests into CI pipeline; block merge on failure
+
+---
+
+# Epic 16 — Post-Launch Iteration & Growth
 
 > Continue improving the website after launch based on real user data,
 > content performance, and conversion analytics.
 
-## Story 15.1 — A/B Testing Infrastructure
+## Story 16.1 — A/B Testing Infrastructure
 
 **As a** product owner,
 **I want** the ability to run A/B tests on key conversion elements,
@@ -1783,17 +2242,17 @@
 
 ### Subtasks
 
-- [ ] 15.1.1 — Evaluate and select A/B testing platform (Vercel Edge Config recommended for Vercel hosting)
-- [ ] 15.1.2 — Integrate A/B testing SDK into the Next.js middleware or layout
-- [ ] 15.1.3 — Create `@/lib/experiments.ts` with typed experiment definitions
-- [ ] 15.1.4 — Set up hero headline experiment with 3 variants
-- [ ] 15.1.5 — Set up CTA button colour experiment with 3 variants
-- [ ] 15.1.6 — Connect experiment events to analytics for conversion tracking
-- [ ] 15.1.7 — Create internal dashboard or use platform dashboard for experiment monitoring
+- [ ] 16.1.1 — Evaluate and select A/B testing platform (Vercel Edge Config recommended for Vercel hosting)
+- [ ] 16.1.2 — Integrate A/B testing SDK into the Next.js middleware or layout
+- [ ] 16.1.3 — Create `@/lib/experiments.ts` with typed experiment definitions
+- [ ] 16.1.4 — Set up hero headline experiment with 3 variants
+- [ ] 16.1.5 — Set up CTA button colour experiment with 3 variants
+- [ ] 16.1.6 — Connect experiment events to analytics for conversion tracking
+- [ ] 16.1.7 — Create internal dashboard or use platform dashboard for experiment monitoring
 
 ---
 
-## Story 15.2 — Content Calendar & Blog Growth
+## Story 16.2 — Content Calendar & Blog Growth
 
 **As a** content strategist,
 **I want** a sustainable content publishing cadence,
@@ -1815,18 +2274,18 @@
 
 ### Subtasks
 
-- [ ] 15.2.1 — Research and document 12-week content calendar with titles, keywords, and categories
-- [ ] 15.2.2 — Create content brief template for each post (title, keyword, outline, target word count, CTAs)
-- [ ] 15.2.3 — Write and publish weeks 1–4 blog posts
-- [ ] 15.2.4 — Write and publish weeks 5–8 blog posts
-- [ ] 15.2.5 — Write and publish weeks 9–12 blog posts
-- [ ] 15.2.6 — Add internal links from new posts to existing content
-- [ ] 15.2.7 — Create social sharing templates (Twitter, Instagram, LinkedIn) for each post
-- [ ] 15.2.8 — Schedule quarterly content refresh: update top 5 posts with fresh data
+- [ ] 16.2.1 — Research and document 12-week content calendar with titles, keywords, and categories
+- [ ] 16.2.2 — Create content brief template for each post (title, keyword, outline, target word count, CTAs)
+- [ ] 16.2.3 — Write and publish weeks 1–4 blog posts
+- [ ] 16.2.4 — Write and publish weeks 5–8 blog posts
+- [ ] 16.2.5 — Write and publish weeks 9–12 blog posts
+- [ ] 16.2.6 — Add internal links from new posts to existing content
+- [ ] 16.2.7 — Create social sharing templates (Twitter, Instagram, LinkedIn) for each post
+- [ ] 16.2.8 — Schedule quarterly content refresh: update top 5 posts with fresh data
 
 ---
 
-## Story 15.3 — Conversion Funnel Optimisation
+## Story 16.3 — Conversion Funnel Optimisation
 
 **As a** growth engineer,
 **I want** to instrument and optimise the visitor → download conversion funnel,
@@ -1848,13 +2307,13 @@
 
 ### Subtasks
 
-- [ ] 15.3.1 — Define and implement funnel stage tracking events in analytics
-- [ ] 15.3.2 — Configure funnel visualisation in analytics dashboard
-- [ ] 15.3.3 — Enable heatmap tracking on homepage
-- [ ] 15.3.4 — Create `<ExitIntentPopup>` component with session-scoped display logic
-- [ ] 15.3.5 — Create `<MobileDownloadBar>` sticky component with dismiss and don't-show-again logic
-- [ ] 15.3.6 — Establish conversion rate baselines after 30 days of data
-- [ ] 15.3.7 — Document funnel metrics and optimisation opportunities in a monthly report
+- [ ] 16.3.1 — Define and implement funnel stage tracking events in analytics
+- [ ] 16.3.2 — Configure funnel visualisation in analytics dashboard
+- [ ] 16.3.3 — Enable heatmap tracking on homepage
+- [ ] 16.3.4 — Create `<ExitIntentPopup>` component with session-scoped display logic
+- [ ] 16.3.5 — Create `<MobileDownloadBar>` sticky component with dismiss and don't-show-again logic
+- [ ] 16.3.6 — Establish conversion rate baselines after 30 days of data
+- [ ] 16.3.7 — Document funnel metrics and optimisation opportunities in a monthly report
 
 ---
 
@@ -2023,7 +2482,7 @@ Epic 1 (Foundation)
   │     └── Epic 11 (Visual Polish)
   ├── Epic 3 (Features & Pricing)
   ├── Epic 4 (Blog Engine)
-  │     └── Epic 15.2 (Blog Growth)
+  │     └── Epic 16.2 (Blog Growth)
   ├── Epic 5 (FAQ & Legal)
   ├── Epic 6 (SEO & Performance)
   ├── Epic 7 (Responsive & Accessibility)
@@ -2032,8 +2491,11 @@ Epic 1 (Foundation)
   ├── Epic 10 (Interactive Demos)
   ├── Epic 12 (Error Handling)
   ├── Epic 13 (i18n)
-  └── Epic 14 (Testing & Launch)
-        └── Epic 15 (Post-Launch Growth)
+  ├── Epic 14 (Testing & Launch)
+  │     └── Epic 16 (Post-Launch Growth)
+  └── Epic 15 (Full Content i18n)
+        ├── depends on: Epic 13 (i18n Architecture)
+        └── depends on: Epic 4 (Blog Engine)
 ```
 
 **Recommended build order:**
@@ -2052,7 +2514,8 @@ Epic 1 (Foundation)
 12. **Epic 7** — Responsive & Accessibility (QA pass)
 13. **Epic 14** — Testing & Launch
 14. **Epic 13** — i18n (post-launch or v1.1)
-15. **Epic 15** — Post-Launch Growth (ongoing)
+15. **Epic 15** — Full Content i18n (after Epic 13)
+16. **Epic 16** — Post-Launch Growth (ongoing)
 
 ---
 
