@@ -995,28 +995,28 @@
 
 ### Acceptance Criteria
 
-- [ ] All pages tested at breakpoints: 320 px, 375 px, 414 px, 768 px, 1024 px, 1280 px, 1536 px, 1920 px
-- [ ] No horizontal overflow or content cutoff at any breakpoint
-- [ ] Touch targets are minimum 44 × 44 px on mobile
-- [ ] Text remains readable without zooming at all breakpoints (min 16 px body on mobile)
-- [ ] Navigation hamburger menu is accessible and fully functional on mobile
+- [x] All pages tested at breakpoints: 320 px, 375 px, 414 px, 768 px, 1024 px, 1280 px, 1536 px, 1920 px
+- [x] No horizontal overflow or content cutoff at any breakpoint
+- [x] Touch targets are minimum 44 × 44 px on mobile
+- [x] Text remains readable without zooming at all breakpoints (min 16 px body on mobile)
+- [x] Navigation hamburger menu is accessible and fully functional on mobile
 - [ ] Screenshot gallery/carousel is touch-friendly with proper swipe physics
-- [ ] Pricing cards stack gracefully on mobile without losing visual hierarchy
-- [ ] Blog post grid adapts from 3 columns → 2 → 1 with consistent card proportions
-- [ ] Footer link columns stack into an accordion on mobile
-- [ ] All glass morphism effects degrade gracefully (no backdrop-filter issues on older browsers)
-- [ ] Fixed header doesn't obscure content on scroll (proper `scroll-padding-top`)
+- [x] Pricing cards stack gracefully on mobile without losing visual hierarchy
+- [x] Blog post grid adapts from 3 columns → 2 → 1 with consistent card proportions
+- [x] Footer link columns stack into an accordion on mobile
+- [x] All glass morphism effects degrade gracefully (no backdrop-filter issues on older browsers)
+- [x] Fixed header doesn't obscure content on scroll (proper `scroll-padding-top`)
 
 ### Subtasks
 
-- [ ] 7.1.1 — Audit homepage at all 8 breakpoints; document and fix layout issues
-- [ ] 7.1.2 — Audit features page at all breakpoints; test alternating section layouts
-- [ ] 7.1.3 — Audit pricing page at all breakpoints; test card stacking and responsiveness
-- [ ] 7.1.4 — Audit blog index and post pages at all breakpoints
-- [ ] 7.1.5 — Audit support, about, privacy, and terms pages
-- [ ] 7.1.6 — Test header mobile menu: open/close, link activation, scroll lock, focus trap
-- [ ] 7.1.7 — Test footer accordion behaviour on mobile
-- [ ] 7.1.8 — Verify `scroll-padding-top` accounts for fixed header height on anchor link navigation
+- [x] 7.1.1 — Audit homepage at all 8 breakpoints; document and fix layout issues
+- [x] 7.1.2 — Audit features page at all breakpoints; test alternating section layouts
+- [x] 7.1.3 — Audit pricing page at all breakpoints; test card stacking and responsiveness
+- [x] 7.1.4 — Audit blog index and post pages at all breakpoints
+- [x] 7.1.5 — Audit support, about, privacy, and terms pages
+- [x] 7.1.6 — Test header mobile menu: open/close, link activation, scroll lock, focus trap
+- [x] 7.1.7 — Test footer accordion behaviour on mobile
+- [x] 7.1.8 — Verify `scroll-padding-top` accounts for fixed header height on anchor link navigation
 - [ ] 7.1.9 — Test on physical iPhone (Safari), iPad, and Android (Chrome) devices
 
 ---

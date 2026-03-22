@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
@@ -17,6 +17,13 @@ const navLinks = [
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const hamburgerRef = useRef<HTMLButtonElement>(null);
+
+  const closeMobile = useCallback(() => {
+    setMobileOpen(false);
+    hamburgerRef.current?.focus();
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -29,6 +36,45 @@ export function Header() {
     document.body.style.overflow = mobileOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [mobileOpen]);
+
+  // Escape key to close & focus trap
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        closeMobile();
+        return;
+      }
+
+      if (e.key === 'Tab' && mobileMenuRef.current) {
+        const focusable = mobileMenuRef.current.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    };
+
+    document.addEventListener('keydown', onKeyDown);
+
+    // Auto-focus first link in menu
+    requestAnimationFrame(() => {
+      const firstLink = mobileMenuRef.current?.querySelector<HTMLElement>('a[href]');
+      firstLink?.focus();
+    });
+
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [mobileOpen, closeMobile]);
 
   return (
     <>
@@ -51,7 +97,7 @@ export function Header() {
         <Container>
           <nav className="flex h-16 items-center justify-between sm:h-20" aria-label="Main navigation">
             {/* Logo */}
-            <Link href="/" className="group flex items-center gap-2.5" aria-label="LumenLingo home">
+            <Link href="/" className="group flex items-center gap-2.5 rounded-[--radius-sm] focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none" aria-label="LumenLingo home">
               <div className="relative flex h-9 w-9 items-center justify-center">
                 <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-violet to-cyan opacity-80 transition-opacity group-hover:opacity-100" />
                 <span className="relative text-lg font-bold text-white">L</span>
@@ -67,7 +113,7 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="relative rounded-[--radius-sm] px-4 py-2 text-sm font-medium text-foreground-secondary transition-colors hover:text-foreground"
+                  className="relative rounded-[--radius-sm] px-4 py-2 text-sm font-medium text-foreground-secondary transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none"
                 >
                   {link.label}
                 </Link>
@@ -86,8 +132,9 @@ export function Header() {
 
             {/* Mobile hamburger */}
             <button
+              ref={hamburgerRef}
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="relative z-50 flex h-10 w-10 items-center justify-center rounded-[--radius-sm] transition-colors hover:bg-white/5 md:hidden"
+              className="relative z-50 flex h-11 w-11 items-center justify-center rounded-[--radius-sm] transition-colors hover:bg-white/5 md:hidden"
               aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={mobileOpen}
             >
@@ -124,12 +171,16 @@ export function Header() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
               className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm md:hidden"
-              onClick={() => setMobileOpen(false)}
+              onClick={closeMobile}
               aria-hidden
             />
 
             {/* Panel */}
             <motion.div
+              ref={mobileMenuRef}
+              role="dialog"
+              aria-modal="true"
+              aria-label="Mobile navigation"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
@@ -147,7 +198,7 @@ export function Header() {
                     >
                       <Link
                         href={link.href}
-                        onClick={() => setMobileOpen(false)}
+                        onClick={closeMobile}
                         className="block rounded-[--radius-button] px-4 py-3 text-lg font-medium text-foreground-secondary transition-all hover:bg-white/5 hover:text-foreground"
                       >
                         {link.label}

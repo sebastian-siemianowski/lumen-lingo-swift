@@ -15,7 +15,7 @@
   /* ── Foreground text ── */
   --color-foreground: #f4f4f5;
   --color-foreground-secondary: #a1a1aa;
-  --color-foreground-muted: #71717a;
+  --color-foreground-muted: #8b8b94;
 
   /* ── Accent: Violet (Primary CTA) ── */
   --color-violet: #8b5cf6;
@@ -49,7 +49,7 @@
   --radius-sm: 8px;
 
   /* ── Spacing (8px base grid) ── */
-  --spacing-section-y: 120px;
+  --spacing-section-y: 80px;
   --spacing-card-gap: 24px;
   --spacing-container-px: 24px;
 
@@ -69,10 +69,18 @@
   --glass-border: rgba(255, 255, 255, 0.08);
 }
 
+/* Responsive section spacing — override theme default for larger screens */
+@media (min-width: 768px) {
+  :root {
+    --spacing-section-y: 120px;
+  }
+}
+
 /* ── Base styles ── */
 html {
   color-scheme: dark;
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -81,6 +89,7 @@ body {
   font-family: var(--font-inter), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
 }
 
 /* ── Glass morphism utilities ── */

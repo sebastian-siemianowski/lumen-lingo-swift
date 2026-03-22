@@ -47,7 +47,7 @@ export function Pagination({
       {currentPage > 1 ? (
         <Link
           href={buildHref(currentPage - 1)}
-          className="flex items-center gap-1 rounded-[--radius-button] border border-[--color-glass-border] bg-[--color-glass] px-4 py-2 text-sm text-[--color-foreground-secondary] transition-colors hover:border-[--color-violet]/30 hover:text-[--color-foreground]"
+          className="flex items-center gap-1 rounded-[--radius-button] border border-[--color-glass-border] bg-[--color-glass] px-4 py-2.5 text-sm text-[--color-foreground-secondary] transition-colors hover:border-[--color-violet]/30 hover:text-[--color-foreground]"
         >
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -55,7 +55,7 @@ export function Pagination({
           Previous
         </Link>
       ) : (
-        <span className="flex items-center gap-1 rounded-[--radius-button] border border-[--color-glass-border]/50 px-4 py-2 text-sm text-[--color-foreground-muted]/50">
+        <span className="flex items-center gap-1 rounded-[--radius-button] border border-[--color-glass-border]/50 px-4 py-2.5 text-sm text-[--color-foreground-muted]/50">
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
@@ -74,7 +74,7 @@ export function Pagination({
             key={p}
             href={buildHref(p)}
             className={cn(
-              'flex h-10 w-10 items-center justify-center rounded-[--radius-button] text-sm font-medium transition-all',
+              'flex h-11 w-11 items-center justify-center rounded-[--radius-button] text-sm font-medium transition-all',
               p === currentPage
                 ? 'bg-[--color-violet] text-white shadow-[0_0_16px_rgba(139,92,246,0.3)]'
                 : 'border border-[--color-glass-border] bg-[--color-glass] text-[--color-foreground-secondary] hover:border-[--color-violet]/30 hover:text-[--color-foreground]',
@@ -90,7 +90,7 @@ export function Pagination({
       {currentPage < totalPages ? (
         <Link
           href={buildHref(currentPage + 1)}
-          className="flex items-center gap-1 rounded-[--radius-button] border border-[--color-glass-border] bg-[--color-glass] px-4 py-2 text-sm text-[--color-foreground-secondary] transition-colors hover:border-[--color-violet]/30 hover:text-[--color-foreground]"
+          className="flex items-center gap-1 rounded-[--radius-button] border border-[--color-glass-border] bg-[--color-glass] px-4 py-2.5 text-sm text-[--color-foreground-secondary] transition-colors hover:border-[--color-violet]/30 hover:text-[--color-foreground]"
         >
           Next
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -98,7 +98,7 @@ export function Pagination({
           </svg>
         </Link>
       ) : (
-        <span className="flex items-center gap-1 rounded-[--radius-button] border border-[--color-glass-border]/50 px-4 py-2 text-sm text-[--color-foreground-muted]/50">
+        <span className="flex items-center gap-1 rounded-[--radius-button] border border-[--color-glass-border]/50 px-4 py-2.5 text-sm text-[--color-foreground-muted]/50">
           Next
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

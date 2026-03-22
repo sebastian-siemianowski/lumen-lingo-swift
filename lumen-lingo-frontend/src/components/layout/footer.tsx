@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import { Container } from '@/components/ui';
 
@@ -53,8 +56,14 @@ const socialLinks = [
 ];
 
 export function Footer() {
+  const [openSection, setOpenSection] = useState<string | null>(null);
+
+  function toggleSection(heading: string) {
+    setOpenSection((prev) => (prev === heading ? null : heading));
+  }
+
   return (
-    <footer className="relative border-t border-glass-border">
+    <footer role="contentinfo" className="relative border-t border-glass-border">
       {/* Glow line at top */}
       <div className="absolute top-0 right-0 left-0 h-px bg-gradient-to-r from-transparent via-violet/40 to-transparent" />
 
@@ -93,7 +102,7 @@ export function Footer() {
                   <a
                     key={social.label}
                     href={social.href}
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-glass-border text-foreground-muted transition-all hover:border-violet/30 hover:text-violet hover:shadow-[0_0_12px_rgba(139,92,246,0.15)]"
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-glass-border text-foreground-muted transition-all hover:border-violet/30 hover:text-violet hover:shadow-[0_0_12px_rgba(139,92,246,0.15)] focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none"
                     aria-label={social.label}
                   >
                     {social.icon}
@@ -102,24 +111,59 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Link columns */}
-            {Object.entries(footerLinks).map(([heading, links]) => (
-              <div key={heading}>
-                <h3 className="text-sm font-semibold tracking-wide text-foreground">{heading}</h3>
-                <ul className="mt-4 space-y-3">
-                  {links.map((link) => (
-                    <li key={link.href}>
-                      <Link
-                        href={link.href}
-                        className="text-sm text-foreground-muted transition-colors hover:text-foreground"
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            {/* Link columns — accordion on mobile, columns on sm+ */}
+            {Object.entries(footerLinks).map(([heading, links]) => {
+              const isOpen = openSection === heading;
+              return (
+                <div key={heading}>
+                  {/* Desktop heading (hidden on mobile) */}
+                  <h3 className="hidden text-sm font-semibold tracking-wide text-foreground sm:block">
+                    {heading}
+                  </h3>
+
+                  {/* Mobile accordion trigger */}
+                  <button
+                    type="button"
+                    onClick={() => toggleSection(heading)}
+                    className="flex w-full items-center justify-between py-2 text-sm font-semibold tracking-wide text-foreground sm:hidden"
+                    aria-expanded={isOpen}
+                    aria-controls={`footer-${heading}`}
+                  >
+                    {heading}
+                    <svg
+                      className={`h-4 w-4 text-foreground-muted transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+
+                  {/* Links — always visible on sm+, toggled on mobile */}
+                  <ul
+                    id={`footer-${heading}`}
+                    role="region"
+                    className={`mt-4 space-y-3 sm:block ${isOpen ? 'block' : 'hidden'}`}
+                  >
+                    {links.map((link) => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="inline-block rounded py-1 text-sm text-foreground-muted transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none"
+                        >
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Divider on mobile between sections */}
+                  <div className="mt-3 border-b border-glass-border sm:hidden" />
+                </div>
+              );
+            })}
           </div>
 
           {/* Bottom bar */}

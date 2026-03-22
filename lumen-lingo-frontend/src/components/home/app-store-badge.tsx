@@ -22,7 +22,7 @@ export function AppStoreBadge({ className, size = 'md', location = 'unknown' }: 
       href="#"
       onClick={() => trackEvent('app_store_click', { location })}
       className={cn(
-        'inline-flex items-center gap-2.5 rounded-[--radius-button] border border-white/20 bg-black px-5 py-2.5 transition-all hover:border-white/30 hover:bg-white/5',
+        'inline-flex items-center gap-2.5 rounded-[--radius-button] border border-white/20 bg-black px-5 py-2.5 transition-all hover:border-white/30 hover:bg-white/5 focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none',
         sizes[size],
         className,
       )}

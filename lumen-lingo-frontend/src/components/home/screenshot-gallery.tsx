@@ -231,20 +231,27 @@ export function ScreenshotGallery() {
           onDragEnd={handleDragEnd}
         >
           {screenshots.map((screenshot, i) => (
-            <DeviceFrame
+            <div
               key={screenshot.id}
-              screenshot={screenshot}
-              isActive={i === activeIndex}
-            />
+              role="group"
+              aria-roledescription="slide"
+              aria-label={`${i + 1} of ${screenshots.length}: ${screenshot.title}`}
+            >
+              <DeviceFrame
+                screenshot={screenshot}
+                isActive={i === activeIndex}
+              />
+            </div>
           ))}
         </motion.div>
       </div>
 
       {/* Navigation dots */}
-      <div className="mt-8 flex justify-center gap-2">
+      <div className="mt-8 flex justify-center gap-2" role="tablist" aria-label="Screenshot navigation">
         {screenshots.map((_, i) => (
           <button
             key={i}
+            role="tab"
             onClick={() => snapTo(i)}
             className={`h-2 rounded-full transition-all duration-300 ${
               i === activeIndex
@@ -252,8 +259,14 @@ export function ScreenshotGallery() {
                 : 'w-2 bg-foreground-muted/30 hover:bg-foreground-muted/50'
             }`}
             aria-label={`Go to screenshot ${i + 1}: ${screenshots[i]?.title}`}
+            aria-selected={i === activeIndex}
           />
         ))}
+      </div>
+
+      {/* Live region for screen readers */}
+      <div className="sr-only" aria-live="polite" aria-atomic="true">
+        Screenshot {activeIndex + 1} of {screenshots.length}: {screenshots[activeIndex]?.title}
       </div>
     </Section>
   );
