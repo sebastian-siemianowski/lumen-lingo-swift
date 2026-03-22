@@ -52,13 +52,13 @@ struct LayoutBackgroundView: View {
         previewQuantumScene ?? profile?.quantumScene ?? .dubaiCelestialMirage
     }
     private var showOrbs: Bool {
-        debugIsolateCosmic ? false : (profile?.breathingOrbsEnabled ?? true)
+        debugIsolateCosmic ? false : (profile?.breathingOrbsEnabled ?? false)
     }
     private var showQuantumFlow: Bool {
-        debugIsolateCosmic ? false : (profile?.quantumFlowEnabled ?? true)
+        debugIsolateCosmic ? false : (profile?.quantumFlowEnabled ?? false)
     }
     private var showCosmic: Bool {
-        debugIsolateCosmic ? true : (profile?.nebulaDriftEnabled ?? true)
+        debugIsolateCosmic ? true : (profile?.nebulaDriftEnabled ?? false)
     }
     private var orbIntensity: Double {
         profile?.orbIntensity ?? 1.0

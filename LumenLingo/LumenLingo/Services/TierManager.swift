@@ -598,6 +598,30 @@ final class TierManager {
             profile.soundscapeEnum = nil
             profile.soundscapeVariantIndex = 0
         }
+
+        // Enforce tier limits on background features — disable any the current tier cannot access
+        if !hasAccess(to: .breathingOrbs) && profile.breathingOrbsEnabled {
+            profile.breathingOrbsEnabled = false
+        }
+        if !hasAccess(to: .quantumFlow) && profile.quantumFlowEnabled {
+            profile.quantumFlowEnabled = false
+        }
+        if !hasAccess(to: .nebulaDrift) && profile.nebulaDriftEnabled {
+            profile.nebulaDriftEnabled = false
+        }
+
+        // Enforce mutual exclusivity — at most one background system may be active
+        let enabledCount = [profile.breathingOrbsEnabled, profile.quantumFlowEnabled, profile.nebulaDriftEnabled]
+            .filter { $0 }.count
+        if enabledCount > 1 {
+            // Keep the highest-tier feature, disable the rest
+            if profile.nebulaDriftEnabled {
+                profile.breathingOrbsEnabled = false
+                profile.quantumFlowEnabled = false
+            } else if profile.quantumFlowEnabled {
+                profile.breathingOrbsEnabled = false
+            }
+        }
     }
 
     // MARK: - Dormant Settings
