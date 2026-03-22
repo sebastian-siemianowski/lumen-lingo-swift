@@ -47,6 +47,12 @@ struct DashboardView: View {
     @State private var exploreCard1Visible: Bool = false
     @State private var exploreCard2Visible: Bool = false
 
+    // Header collapse animation state
+    @State private var headerBadge0Visible: Bool = false
+    @State private var headerBadge1Visible: Bool = false
+    @State private var headerBadge2Visible: Bool = false
+    @State private var headerChevronKick: CGFloat = 0
+
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
@@ -418,6 +424,12 @@ struct DashboardView: View {
             withAnimation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.3)) {
                 tierIconAppeared = true
             }
+            // Initialize badge visibility for initially-collapsed state
+            if isHeaderCollapsed {
+                headerBadge0Visible = true
+                headerBadge1Visible = true
+                headerBadge2Visible = true
+            }
         }
     }
 
@@ -519,16 +531,21 @@ struct DashboardView: View {
                 PracticeTimeRing()
 
                 Button {
-                    withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
-                        isHeaderCollapsed.toggle()
-                    }
-                    HapticsService.shared.toggleSwitch()
+                    toggleHeader()
                 } label: {
                     Image(systemName: "chevron.right")
                         .font(.system(size: 12, weight: .bold))
-                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                        .foregroundStyle(
+                            isHeaderCollapsed
+                                ? AnyShapeStyle(isDark
+                                    ? LinearGradient(colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")], startPoint: .leading, endPoint: .trailing)
+                                    : LinearGradient(colors: [Color(hex: "#0EA5E9"), Color(hex: "#06B6D4")], startPoint: .leading, endPoint: .trailing))
+                                : AnyShapeStyle(isDark ? Color.white.opacity(0.35) : Color.caribbeanMist)
+                        )
                         .rotationEffect(.degrees(isHeaderCollapsed ? 0 : 90))
-                        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: isHeaderCollapsed)
+                        .scaleEffect(isHeaderCollapsed ? 1.0 : 1.1)
+                        .animation(.spring(response: 0.5, dampingFraction: 0.6), value: isHeaderCollapsed)
+                        .rotationEffect(.degrees(headerChevronKick))
                         .padding(8)
                         .background(Circle().fill(isDark ? .white.opacity(0.1) : Color.caribbeanMist.opacity(0.12)))
                 }
@@ -536,10 +553,25 @@ struct DashboardView: View {
                 .accessibilityLabel(isHeaderCollapsed ? "Expand dashboard" : "Collapse dashboard")
             }
 
-            // Compact stat badges when collapsed
+            // Compact stat badges when collapsed — staggered cascade
             if isHeaderCollapsed {
-                compactStatBadges
-                    .transition(.opacity)
+                HStack(spacing: 16) {
+                    statBadge(icon: "star.fill", value: "\(profile?.currentLevel ?? 1)", color: .yellow)
+                        .opacity(headerBadge0Visible ? 1 : 0)
+                        .offset(y: headerBadge0Visible ? 0 : 8)
+                        .scaleEffect(headerBadge0Visible ? 1 : 0.85)
+
+                    statBadge(icon: "bolt.fill", value: "\(profile?.totalXP ?? 0)", color: .cyan)
+                        .opacity(headerBadge1Visible ? 1 : 0)
+                        .offset(y: headerBadge1Visible ? 0 : 10)
+                        .scaleEffect(headerBadge1Visible ? 1 : 0.85)
+
+                    statBadge(icon: "trophy.fill", value: "\(profile?.streakDays ?? 0)", color: .orange)
+                        .opacity(headerBadge2Visible ? 1 : 0)
+                        .offset(y: headerBadge2Visible ? 0 : 12)
+                        .scaleEffect(headerBadge2Visible ? 1 : 0.85)
+                }
+                .transition(.opacity)
             }
         }
         .padding(16)
@@ -865,6 +897,55 @@ struct DashboardView: View {
     /// Explore More accent colors for glow and gradient effects.
     private var exploreAccent: [Color] {
         [Color(hex: "#6366f1"), Color(hex: "#8b5cf6"), Color(hex: "#a78bfa")]
+    }
+
+    // MARK: - Header Toggle Animation
+
+    private func toggleHeader() {
+        let collapsing = !isHeaderCollapsed // current is expanded → will collapse
+
+        // Chevron flourish — little rotation kick with bounce
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.45)) {
+            headerChevronKick = collapsing ? -10 : 12
+        }
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.15)) {
+            headerChevronKick = 0
+        }
+
+        // Main toggle with luxurious spring
+        let spring: Animation = collapsing
+            ? .spring(response: 0.6, dampingFraction: 0.82, blendDuration: 0.08)
+            : .spring(response: 0.5, dampingFraction: 0.72, blendDuration: 0.12)
+
+        withAnimation(spring) {
+            isHeaderCollapsed.toggle()
+        }
+
+        if collapsing {
+            // Stagger the compact stat badges in with a cascade
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.68).delay(0.10)) {
+                headerBadge0Visible = true
+            }
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.68).delay(0.18)) {
+                headerBadge1Visible = true
+            }
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.68).delay(0.26)) {
+                headerBadge2Visible = true
+            }
+        } else {
+            // Reverse stagger — badges glide away
+            withAnimation(.spring(response: 0.45, dampingFraction: 0.78)) {
+                headerBadge2Visible = false
+            }
+            withAnimation(.spring(response: 0.45, dampingFraction: 0.78).delay(0.06)) {
+                headerBadge1Visible = false
+            }
+            withAnimation(.spring(response: 0.45, dampingFraction: 0.78).delay(0.12)) {
+                headerBadge0Visible = false
+            }
+        }
+
+        HapticsService.shared.toggleSwitch()
     }
 
     private func toggleExploreMore() {

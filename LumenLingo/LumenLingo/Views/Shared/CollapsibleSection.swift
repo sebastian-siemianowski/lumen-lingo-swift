@@ -3,14 +3,14 @@ import SwiftUI
 // MARK: - Animation Tokens
 
 /// Centralized spring constants and timing for all CollapsibleSection animations.
-/// Expand feels "breathe open" with ~2% overshoot; collapse feels "snap shut" — crisp and decisive.
+/// Expand feels "breathe open" with gentle overshoot; collapse glides shut like silk.
 enum CollapsibleAnimationTokens {
-    /// Expand: slower response with noticeable overshoot.
-    static let expandSpring: Animation = .spring(response: 0.45, dampingFraction: 0.68, blendDuration: 0.12)
-    /// Collapse: faster, crisper, minimal overshoot.
-    static let collapseSpring: Animation = .spring(response: 0.30, dampingFraction: 0.88)
-    /// Content opacity lags height animation by 30ms to avoid empty-card flash.
-    static let revealDelay: Double = 0.03
+    /// Expand: bouncy with playful overshoot.
+    static let expandSpring: Animation = .spring(response: 0.5, dampingFraction: 0.72, blendDuration: 0.12)
+    /// Collapse: slow silk glide — luxurious deceleration.
+    static let collapseSpring: Animation = .spring(response: 0.6, dampingFraction: 0.82, blendDuration: 0.08)
+    /// Content opacity lags height animation by 40ms for a staged reveal.
+    static let revealDelay: Double = 0.04
     /// Rapid toggle debounce — ignore re-toggle within this interval.
     static let debounceInterval: TimeInterval = 0.2
 }
@@ -441,28 +441,27 @@ struct CollapsibleSection<Header: View, Content: View>: View {
         let expanding = isCollapsed
         let spring = expanding ? CollapsibleAnimationTokens.expandSpring : CollapsibleAnimationTokens.collapseSpring
 
-        // Card breathe: expand puffs out, collapse tucks in
-        withAnimation(.spring(response: 0.25, dampingFraction: 0.6)) {
-            cardBreathe = expanding ? 1.008 : 0.995
+        // Card breathe: gentle puff out then settle
+        withAnimation(.spring(response: 0.3, dampingFraction: 0.55)) {
+            cardBreathe = expanding ? 1.01 : 0.993
         }
-        // Settle back to 1.0
-        withAnimation(.spring(response: 0.5, dampingFraction: 0.7).delay(0.15)) {
+        withAnimation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.18)) {
             cardBreathe = 1.0
         }
 
-        // Border glow pulse
-        withAnimation(.easeOut(duration: 0.15)) {
+        // Border glow pulse — soft bloom
+        withAnimation(.easeOut(duration: 0.18)) {
             toggleGlow = 1.0
         }
-        withAnimation(.easeOut(duration: 0.5).delay(0.15)) {
+        withAnimation(.easeOut(duration: 0.6).delay(0.18)) {
             toggleGlow = 0
         }
 
-        // Icon flourish — little rotation kick
-        withAnimation(.spring(response: 0.35, dampingFraction: 0.5)) {
-            iconKick = expanding ? 12 : -8
+        // Icon flourish — rotation kick with bounce
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.45)) {
+            iconKick = expanding ? 15 : -10
         }
-        withAnimation(.spring(response: 0.4, dampingFraction: 0.65).delay(0.12)) {
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.15)) {
             iconKick = 0
         }
 
@@ -1330,17 +1329,17 @@ private struct MeasuredContentReveal<C: View>: View {
                     unfurlScale = 1
                 }
             } else {
-                // Tuck away: content slides up & shrinks to top
-                withAnimation(CollapsibleAnimationTokens.collapseSpring) {
+                // Silk tuck: content glides up gently with its own slower spring
+                withAnimation(.spring(response: 0.55, dampingFraction: 0.82).delay(0.04)) {
                     contentOpacity = 0
-                    unfurlOffset = -12
+                    unfurlOffset = -10
                     unfurlScale = 0.96
                 }
             }
         }
         .task(id: isExpanded) {
             guard !isExpanded, hasExpanded else { return }
-            try? await Task.sleep(for: .milliseconds(450))
+            try? await Task.sleep(for: .milliseconds(800))
             guard !isExpanded else { return }
             hasExpanded = false
             measuredHeight = 0
