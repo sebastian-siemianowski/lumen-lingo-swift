@@ -471,13 +471,13 @@
 - [ ] Route: `/pricing` with page title "Pricing — LumenLingo"
 - [ ] Hero section with headline: "Choose Your Learning Journey" and subline about free tier availability
 - [ ] 4 pricing cards displayed side-by-side (desktop) or stacked (mobile):
-  - **Free** — $0/month
+  - **Free** — £0/month
     - 3 language pairs (English↔Spanish, French, German)
     - All 3 practice modes at Beginner difficulty
     - 30 minutes daily practice limit
     - 50-card flashcard decks
     - Lagoon Nebula background
-  - **Pro** — $9.99/month (or $79.99/year)
+  - **Pro** — £9.99/month
     - All Free features plus:
     - 7 language pairs (adds Japanese, Chinese, Arabic, Polish)
     - Beginner + Intermediate difficulty levels
@@ -487,7 +487,7 @@
     - 1 soundscape
     - Offline mode
     - 1.25× XP multiplier
-  - **Elite** — $19.99/month (or $149.99/year)
+  - **Elite** — £19.99/month
     - All Pro features plus:
     - All 25+ language pairs
     - All 3 difficulty levels (Beginner, Intermediate, Advanced)
@@ -497,7 +497,7 @@
     - Nebula Drift backgrounds (4 presets)
     - Advanced analytics & data export
     - 1.5× XP multiplier
-  - **Royal** — $99.99/month
+  - **Royal** — £99.99/month
     - Everything in Elite plus:
     - Unlimited flashcard deck size
     - All 12 soundscapes
@@ -513,7 +513,6 @@
   - Pro: violet glow
   - Elite: cyan-to-violet gradient glow with stronger luminescence
   - Royal: amber-gold glow with premium shimmer effect
-- [ ] Annual billing toggle with "Save 33%" badge
 - [ ] CTA on each card: "Get Started Free" / "Upgrade to Pro" / "Go Elite" / "Go Royal"
 - [ ] CTAs link to the App Store (subscription handled in-app)
 - [ ] Feature comparison table below the cards with checkmarks, counts, and tier columns
@@ -524,7 +523,7 @@
 
 - [ ] 3.2.1 — Create `app/pricing/page.tsx` with metadata and page structure
 - [ ] 3.2.2 — Create `<PricingCard>` component with tier-specific styling, feature list, CTA (4 tiers: Free, Pro, Elite, Royal)
-- [ ] 3.2.3 — Create `<BillingToggle>` component for monthly/annual switch with "Save 33%" badge
+- [ ] 3.2.3 — Style pricing cards with tier-specific accent colours and glass morphism
 - [ ] 3.2.4 — Create `<FeatureComparisonTable>` with checkmarks, dashes, and tier column headers
 - [ ] 3.2.5 — Create `<PricingFAQ>` accordion component with 8–10 questions
 - [ ] 3.2.6 — Write pricing copy: card descriptions, FAQ answers, comparison table entries
@@ -546,7 +545,7 @@
 - [ ] Questions cover:
   1. "Is LumenLingo really free to start?"
   2. "What's included in the free tier?"
-  3. "Can I switch between monthly and annual billing?"
+  3. "How does monthly billing work?"
   4. "How do I upgrade or downgrade my tier?"
   5. "Is there a free trial?"
   6. "What payment methods are accepted?"
@@ -1012,7 +1011,7 @@
 
 - [ ] 7.1.1 — Audit homepage at all 8 breakpoints; document and fix layout issues
 - [ ] 7.1.2 — Audit features page at all breakpoints; test alternating section layouts
-- [ ] 7.1.3 — Audit pricing page at all breakpoints; test card stacking and billing toggle
+- [ ] 7.1.3 — Audit pricing page at all breakpoints; test card stacking and responsiveness
 - [ ] 7.1.4 — Audit blog index and post pages at all breakpoints
 - [ ] 7.1.5 — Audit support, about, privacy, and terms pages
 - [ ] 7.1.6 — Test header mobile menu: open/close, link activation, scroll lock, focus trap
@@ -1643,7 +1642,7 @@
 - [ ] End-to-end tests with Playwright for:
   - Homepage load and navigation to all major pages
   - Blog post listing and individual post rendering
-  - Pricing page billing toggle and CTA clicks
+  - Pricing page tier cards and CTA clicks
   - Newsletter signup submission flow
   - Mobile hamburger menu open/close and navigation
   - 404 page renders for non-existent routes
@@ -1953,7 +1952,6 @@ lumen-lingo-frontend/
 │   │   │   └── AnimatedWalkthrough.tsx
 │   │   ├── pricing/
 │   │   │   ├── PricingCard.tsx
-│   │   │   ├── BillingToggle.tsx
 │   │   │   ├── FeatureComparisonTable.tsx
 │   │   │   └── PricingFAQ.tsx
 │   │   ├── blog/
