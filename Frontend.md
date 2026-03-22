@@ -425,15 +425,15 @@
 
 ### Acceptance Criteria
 
-- [ ] Route: `/features` with page title "Features — LumenLingo"
-- [ ] Hero section with headline: "Crafted for Serious Learners" and a sweeping app UI illustration
-- [ ] 6–8 feature sections, each with:
+- [x] Route: `/features` with page title "Features — LumenLingo"
+- [x] Hero section with headline: "Crafted for Serious Learners" and a sweeping app UI illustration
+- [x] 6–8 feature sections, each with:
   - Full-width alternating layout (image left/text right, then text left/image right)
   - Feature title with icon
   - 3–4 paragraph explanation of the feature's value
   - Supporting screenshot in a device mockup or animated GIF/video
   - Bullet list of specific capabilities within the feature
-- [ ] Features covered:
+- [x] Features covered:
   1. Immersive Flashcards — gestures, card styles (Glass, Petal, Crystal), instant feedback
   2. Smart Spaced Repetition — recommendation engine, mastery levels, category-based smart scheduling
   3. Practice Modes — flashcard drilling, grammar quizzes, word builder letter-construction challenges
@@ -442,21 +442,21 @@
   6. Progress & Analytics — XP system, streaks, per-game stats, accuracy tracking, daily goals
   7. Language Pairs — 9 languages, 25+ pairs, tier-gated access, bidirectional learning
   8. Membership Tiers — brief tier comparison (links to /pricing)
-- [ ] Sticky table of contents sidebar on desktop for quick navigation between features
-- [ ] Each section has a scroll-triggered entrance animation
-- [ ] Bottom CTA: "Ready to Start? Download LumenLingo" with App Store button
+- [x] Sticky table of contents sidebar on desktop for quick navigation between features
+- [x] Each section has a scroll-triggered entrance animation
+- [x] Bottom CTA: "Ready to Start? Download LumenLingo" with App Store button
 
 ### Subtasks
 
-- [ ] 3.1.1 — Create `app/features/page.tsx` with metadata and feature sections
-- [ ] 3.1.2 — Create `<FeatureSection>` component with alternating image/text layout
-- [ ] 3.1.3 — Create `<TableOfContents>` sticky sidebar component with scroll-spy active states
-- [ ] 3.1.4 — Write detailed copy for all 8 feature sections (benefit-oriented, not technical)
-- [ ] 3.1.5 — Source or create supporting visuals (screenshots, animated GIFs, illustrations)
-- [ ] 3.1.6 — Add scroll-triggered animations for each section entrance
-- [ ] 3.1.7 — Add bottom CTA banner (reuse `<CTABanner>` from homepage)
-- [ ] 3.1.8 — Configure SEO metadata: title, description, OG image, structured data
-- [ ] 3.1.9 — Test page performance: all images lazy-loaded, LCP under 2.5 s
+- [x] 3.1.1 — Create `app/features/page.tsx` with metadata and feature sections
+- [x] 3.1.2 — Create `<FeatureSection>` component with alternating image/text layout
+- [x] 3.1.3 — Create `<TableOfContents>` sticky sidebar component with scroll-spy active states
+- [x] 3.1.4 — Write detailed copy for all 8 feature sections (benefit-oriented, not technical)
+- [x] 3.1.5 — Source or create supporting visuals (screenshots, animated GIFs, illustrations)
+- [x] 3.1.6 — Add scroll-triggered animations for each section entrance
+- [x] 3.1.7 — Add bottom CTA banner (reuse `<CTABanner>` from homepage)
+- [x] 3.1.8 — Configure SEO metadata: title, description, OG image, structured data
+- [x] 3.1.9 — Test page performance: all images lazy-loaded, LCP under 2.5 s
 
 ---
 
@@ -468,9 +468,9 @@
 
 ### Acceptance Criteria
 
-- [ ] Route: `/pricing` with page title "Pricing — LumenLingo"
-- [ ] Hero section with headline: "Choose Your Learning Journey" and subline about free tier availability
-- [ ] 4 pricing cards displayed side-by-side (desktop) or stacked (mobile):
+- [x] Route: `/pricing` with page title "Pricing — LumenLingo"
+- [x] Hero section with headline: "Choose Your Learning Journey" and subline about free tier availability
+- [x] 4 pricing cards displayed side-by-side (desktop) or stacked (mobile):
   - **Free** — £0/month
     - 3 language pairs (English↔Spanish, French, German)
     - All 3 practice modes at Beginner difficulty
@@ -507,29 +507,29 @@
     - Shareable result cards
     - Deep analytics dashboard with monthly reports
     - 2× XP multiplier
-- [ ] "Most Popular" badge on the Elite tier card
-- [ ] Each card is a glass morphism surface with tier-specific accent colour:
+- [x] "Most Popular" badge on the Elite tier card
+- [x] Each card is a glass morphism surface with tier-specific accent colour:
   - Free: zinc/grey
   - Pro: violet glow
   - Elite: cyan-to-violet gradient glow with stronger luminescence
   - Royal: amber-gold glow with premium shimmer effect
-- [ ] CTA on each card: "Get Started Free" / "Upgrade to Pro" / "Go Elite" / "Go Royal"
-- [ ] CTAs link to the App Store (subscription handled in-app)
-- [ ] Feature comparison table below the cards with checkmarks, counts, and tier columns
-- [ ] Note about 14-day free trial: "Try Royal-level access free for 14 days"
-- [ ] FAQ accordion below the comparison table
+- [x] CTA on each card: "Get Started Free" / "Upgrade to Pro" / "Go Elite" / "Go Royal"
+- [x] CTAs link to the App Store (subscription handled in-app)
+- [x] Feature comparison table below the cards with checkmarks, counts, and tier columns
+- [x] Note about 14-day free trial: "Try Royal-level access free for 14 days"
+- [x] FAQ accordion below the comparison table
 
 ### Subtasks
 
-- [ ] 3.2.1 — Create `app/pricing/page.tsx` with metadata and page structure
-- [ ] 3.2.2 — Create `<PricingCard>` component with tier-specific styling, feature list, CTA (4 tiers: Free, Pro, Elite, Royal)
-- [ ] 3.2.3 — Style pricing cards with tier-specific accent colours and glass morphism
-- [ ] 3.2.4 — Create `<FeatureComparisonTable>` with checkmarks, dashes, and tier column headers
-- [ ] 3.2.5 — Create `<PricingFAQ>` accordion component with 8–10 questions
-- [ ] 3.2.6 — Write pricing copy: card descriptions, FAQ answers, comparison table entries
-- [ ] 3.2.7 — Add scroll-reveal animations for cards (staggered scale-in)
-- [ ] 3.2.8 — Configure SEO metadata: title, description, `Product` structured data with pricing
-- [ ] 3.2.9 — Test responsiveness: cards stack gracefully, table scrolls horizontally on mobile
+- [x] 3.2.1 — Create `app/pricing/page.tsx` with metadata and page structure
+- [x] 3.2.2 — Create `<PricingCard>` component with tier-specific styling, feature list, CTA (4 tiers: Free, Pro, Elite, Royal)
+- [x] 3.2.3 — Style pricing cards with tier-specific accent colours and glass morphism
+- [x] 3.2.4 — Create `<FeatureComparisonTable>` with checkmarks, dashes, and tier column headers
+- [x] 3.2.5 — Create `<PricingFAQ>` accordion component with 8–10 questions
+- [x] 3.2.6 — Write pricing copy: card descriptions, FAQ answers, comparison table entries
+- [x] 3.2.7 — Add scroll-reveal animations for cards (staggered scale-in)
+- [x] 3.2.8 — Configure SEO metadata: title, description, `Product` structured data with pricing
+- [x] 3.2.9 — Test responsiveness: cards stack gracefully, table scrolls horizontally on mobile
 
 ---
 
@@ -541,8 +541,8 @@
 
 ### Acceptance Criteria
 
-- [ ] Accordion-style FAQ with 10 questions, each expandable with smooth height animation
-- [ ] Questions cover:
+- [x] Accordion-style FAQ with 10 questions, each expandable with smooth height animation
+- [x] Questions cover:
   1. "Is LumenLingo really free to start?"
   2. "What's included in the free tier?"
   3. "How does monthly billing work?"
@@ -553,18 +553,18 @@
   8. "Do I lose my progress if I downgrade?"
   9. "Are there family or student discounts?"
   10. "How does offline mode work?"
-- [ ] Only one question is expanded at a time (accordion behaviour)
-- [ ] Each answer is 2–4 sentences, warm and reassuring in tone
-- [ ] Glass card styling for each FAQ item with subtle hover effect
-- [ ] `FAQ` JSON-LD structured data for rich snippet eligibility
+- [x] Only one question is expanded at a time (accordion behaviour)
+- [x] Each answer is 2–4 sentences, warm and reassuring in tone
+- [x] Glass card styling for each FAQ item with subtle hover effect
+- [x] `FAQ` JSON-LD structured data for rich snippet eligibility
 
 ### Subtasks
 
-- [ ] 3.3.1 — Create `<FAQ>` component with accordion behaviour and smooth height animation
-- [ ] 3.3.2 — Write all 10 FAQ answers with warm, transparent tone
-- [ ] 3.3.3 — Add `FAQPage` JSON-LD structured data for Google rich snippets
-- [ ] 3.3.4 — Style accordion items with glass morphism surface and chevron rotation animation
-- [ ] 3.3.5 — Test keyboard navigation: Enter/Space toggles, arrow keys navigate between items
+- [x] 3.3.1 — Create `<FAQ>` component with accordion behaviour and smooth height animation
+- [x] 3.3.2 — Write all 10 FAQ answers with warm, transparent tone
+- [x] 3.3.3 — Add `FAQPage` JSON-LD structured data for Google rich snippets
+- [x] 3.3.4 — Style accordion items with glass morphism surface and chevron rotation animation
+- [x] 3.3.5 — Test keyboard navigation: Enter/Space toggles, arrow keys navigate between items
 
 ---
 
