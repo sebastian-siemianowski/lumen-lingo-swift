@@ -734,11 +734,11 @@
 
 ### Acceptance Criteria
 
-- [ ] Route: `/contact` with page title "Help & Contact — LumenLingo"
-- [ ] Clean layout with two sections:
+- [x] Route: `/contact` with page title "Help & Contact — LumenLingo"
+- [x] Clean layout with two sections:
   1. **Frequently Asked Questions** — 10–15 accordion-style FAQ items covering basic topics
   2. **Contact Us** — simple email contact section
-- [ ] FAQ topics include:
+- [x] FAQ topics include:
   - How do I get started with LumenLingo?
   - What languages are available?
   - How do membership tiers work?
@@ -749,18 +749,18 @@
   - How do I cancel my subscription?
   - Is my data synced across devices?
   - How do I delete my account?
-- [ ] Contact section: "Have a question?" with email link (hello@lumenshore.com) and expected response time ("We usually respond within 48 hours")
-- [ ] Glass morphism styling consistent with the rest of the site
-- [ ] No search bar, no category cards — keep it minimal for launch
+- [x] Contact section: "Have a question?" with email link (hello@lumenshore.com) and expected response time ("We usually respond within 48 hours")
+- [x] Glass morphism styling consistent with the rest of the site
+- [x] No search bar, no category cards — keep it minimal for launch
 
 ### Subtasks
 
-- [ ] 5.1.1 — Create `app/contact/page.tsx` with metadata and page structure
-- [ ] 5.1.2 — Create `<FAQAccordion>` component with expandable items and smooth animation
-- [ ] 5.1.3 — Write 10–15 FAQ entries covering the topics above
-- [ ] 5.1.4 — Create `<ContactSection>` with email link and response time badge
-- [ ] 5.1.5 — Add `FAQPage` JSON-LD structured data for FAQ entries
-- [ ] 5.1.6 — Test keyboard navigation: Enter/Space toggles, arrow keys navigate between items
+- [x] 5.1.1 — Create `app/contact/page.tsx` with metadata and page structure
+- [x] 5.1.2 — Create `<FAQAccordion>` component with expandable items and smooth animation
+- [x] 5.1.3 — Write 10–15 FAQ entries covering the topics above
+- [x] 5.1.4 — Create `<ContactSection>` with email link and response time badge
+- [x] 5.1.5 — Add `FAQPage` JSON-LD structured data for FAQ entries
+- [x] 5.1.6 — Test keyboard navigation: Enter/Space toggles, arrow keys navigate between items
 
 ---
 
@@ -772,9 +772,9 @@
 
 ### Acceptance Criteria
 
-- [ ] Route: `/privacy` with page title "Privacy Policy — LumenLingo"
-- [ ] Clean, readable layout with proper heading hierarchy and generous spacing
-- [ ] Sections cover:
+- [x] Route: `/privacy` with page title "Privacy Policy — LumenLingo"
+- [x] Clean, readable layout with proper heading hierarchy and generous spacing
+- [x] Sections cover:
   - Information we collect (and what we don't)
   - How we use your information
   - Data storage and security (iCloud sync, on-device processing)
@@ -783,19 +783,19 @@
   - Data retention and deletion
   - Your rights (GDPR, CCPA compliance)
   - Policy updates and contact information
-- [ ] "Last updated" date prominently displayed
-- [ ] Table of contents sidebar for quick navigation
-- [ ] Language is plain English, not dense legalese — approachable and transparent
-- [ ] "Download as PDF" option for users who want offline access
+- [x] "Last updated" date prominently displayed
+- [x] Table of contents sidebar for quick navigation
+- [x] Language is plain English, not dense legalese — approachable and transparent
+- [x] "Download as PDF" option for users who want offline access
 
 ### Subtasks
 
-- [ ] 5.2.1 — Create `app/privacy/page.tsx` with metadata and prose rendering
-- [ ] 5.2.2 — Write privacy policy content in plain, approachable English
-- [ ] 5.2.3 — Add table of contents sidebar with heading anchor links
-- [ ] 5.2.4 — Style prose content with the blog-quality typography system
-- [ ] 5.2.5 — Add "Last updated: [date]" header with formatted date
-- [ ] 5.2.6 — Add "Download as PDF" button (client-side `window.print()` with print styles)
+- [x] 5.2.1 — Create `app/privacy/page.tsx` with metadata and prose rendering
+- [x] 5.2.2 — Write privacy policy content in plain, approachable English
+- [x] 5.2.3 — Add table of contents sidebar with heading anchor links
+- [x] 5.2.4 — Style prose content with the blog-quality typography system
+- [x] 5.2.5 — Add "Last updated: [date]" header with formatted date
+- [x] 5.2.6 — Add "Download as PDF" button (client-side `window.print()` with print styles)
 
 ---
 
@@ -807,9 +807,9 @@
 
 ### Acceptance Criteria
 
-- [ ] Route: `/terms` with page title "Terms of Service — LumenLingo"
-- [ ] Clean prose layout matching the privacy policy page style
-- [ ] Sections cover:
+- [x] Route: `/terms` with page title "Terms of Service — LumenLingo"
+- [x] Clean prose layout matching the privacy policy page style
+- [x] Sections cover:
   - Acceptance of terms
   - Account registration and responsibilities
   - Subscription terms and billing (App Store subscription)
@@ -819,17 +819,17 @@
   - Termination
   - Governing law
   - Contact information
-- [ ] "Last updated" date prominently displayed
-- [ ] Table of contents sidebar for quick navigation
-- [ ] Plain English writing style
+- [x] "Last updated" date prominently displayed
+- [x] Table of contents sidebar for quick navigation
+- [x] Plain English writing style
 
 ### Subtasks
 
-- [ ] 5.3.1 — Create `app/terms/page.tsx` with metadata and prose rendering
-- [ ] 5.3.2 — Write terms of service content
-- [ ] 5.3.3 — Add table of contents sidebar
-- [ ] 5.3.4 — Style with shared legal page layout component
-- [ ] 5.3.5 — Verify all legal links in footer point to correct pages
+- [x] 5.3.1 — Create `app/terms/page.tsx` with metadata and prose rendering
+- [x] 5.3.2 — Write terms of service content
+- [x] 5.3.3 — Add table of contents sidebar
+- [x] 5.3.4 — Style with shared legal page layout component
+- [x] 5.3.5 — Verify all legal links in footer point to correct pages
 
 ---
 
@@ -841,27 +841,27 @@
 
 ### Acceptance Criteria
 
-- [ ] Route: `/about` with page title "About — LumenShore"
-- [ ] Hero section: "We Believe Learning Should Be Beautiful" with ambient background
-- [ ] Mission statement section: 3–4 paragraphs on why LumenShore exists and the vision for LumenLingo
-- [ ] Values section: 3–4 core values displayed as glass cards with icons:
+- [x] Route: `/about` with page title "About — LumenShore"
+- [x] Hero section: "We Believe Learning Should Be Beautiful" with ambient background
+- [x] Mission statement section: 3–4 paragraphs on why LumenShore exists and the vision for LumenLingo
+- [x] Values section: 3–4 core values displayed as glass cards with icons:
   - **Beauty in Everything** — "We craft every pixel with care"
   - **Science-Backed Learning** — "Every feature is grounded in cognitive research"
   - **Privacy First** — "Your data stays yours. Always."
   - **Accessible to All** — "Premium quality shouldn't mean exclusion"
-- [ ] Timeline section: key milestones (founding, first beta, App Store launch, milestones)
-- [ ] Team section (optional): founder photo/bio or abstract "small team, big ambitions" narrative
-- [ ] CTA at bottom: "Join the LumenShore Community" with App Store download button
+- [x] Timeline section: key milestones (founding, first beta, App Store launch, milestones)
+- [x] Team section (optional): founder photo/bio or abstract "small team, big ambitions" narrative
+- [x] CTA at bottom: "Join the LumenShore Community" with App Store download button
 
 ### Subtasks
 
-- [ ] 5.4.1 — Create `app/about/page.tsx` with metadata and sections
-- [ ] 5.4.2 — Write mission statement copy (authentic, passionate, not corporate)
-- [ ] 5.4.3 — Create `<ValueCard>` component with icon, title, and description
-- [ ] 5.4.4 — Create `<Timeline>` component with milestone entries and connecting line
-- [ ] 5.4.5 — Add ambient background animation to the hero section
-- [ ] 5.4.6 — Add CTA banner at bottom (reuse `<CTABanner>`)
-- [ ] 5.4.7 — Configure SEO metadata and `Organization` JSON-LD
+- [x] 5.4.1 — Create `app/about/page.tsx` with metadata and sections
+- [x] 5.4.2 — Write mission statement copy (authentic, passionate, not corporate)
+- [x] 5.4.3 — Create `<ValueCard>` component with icon, title, and description
+- [x] 5.4.4 — Create `<Timeline>` component with milestone entries and connecting line
+- [x] 5.4.5 — Add ambient background animation to the hero section
+- [x] 5.4.6 — Add CTA banner at bottom (reuse `<CTABanner>`)
+- [x] 5.4.7 — Configure SEO metadata and `Organization` JSON-LD
 
 ---
 
