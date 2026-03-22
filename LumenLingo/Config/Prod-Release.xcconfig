@@ -1,0 +1,20 @@
+// Prod-Release.xcconfig
+#include "Base.xcconfig"
+
+// ─── Identity ─────────────────────────────────────────────────
+PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.app
+PRODUCT_NAME = LumenLingo
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+
+// ─── Environment ──────────────────────────────────────────────
+LL_ENVIRONMENT = prod
+LL_API_BASE_URL = https:/$()/api.lumenlingo.com
+LL_LOG_LEVEL = error
+
+// ─── Release Settings ─────────────────────────────────────────
+SWIFT_OPTIMIZATION_LEVEL = -O
+SWIFT_COMPILATION_MODE = wholemodule
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+VALIDATE_PRODUCT = YES
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD
+ENABLE_TESTABILITY = NO

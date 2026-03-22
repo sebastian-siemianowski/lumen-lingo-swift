@@ -1,16 +1,46 @@
 name: LumenLingo
 options:
-  bundleIdPrefix: com.sebastiansiemianowski
+  bundleIdPrefix: com.lumenlingo
   deploymentTarget:
     iOS: "26.0"
   xcodeVersion: "26.0"
   createIntermediateGroups: true
 
+# ─── Build Configurations (10 total: 5 envs × Debug/Release) ──
+configs:
+  Dev-Debug: debug
+  Dev-Release: release
+  QA-Debug: debug
+  QA-Release: release
+  UAT-Debug: debug
+  UAT-Release: release
+  PreProd-Debug: debug
+  PreProd-Release: release
+  Prod-Debug: debug
+  Prod-Release: release
+
 settings:
-  base:
-    SWIFT_VERSION: "5.9"
-    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
-    DEVELOPMENT_TEAM: ""
+  configs:
+    Dev-Debug:
+      xcconfig: Config/Dev-Debug.xcconfig
+    Dev-Release:
+      xcconfig: Config/Dev-Release.xcconfig
+    QA-Debug:
+      xcconfig: Config/QA-Debug.xcconfig
+    QA-Release:
+      xcconfig: Config/QA-Release.xcconfig
+    UAT-Debug:
+      xcconfig: Config/UAT-Debug.xcconfig
+    UAT-Release:
+      xcconfig: Config/UAT-Release.xcconfig
+    PreProd-Debug:
+      xcconfig: Config/PreProd-Debug.xcconfig
+    PreProd-Release:
+      xcconfig: Config/PreProd-Release.xcconfig
+    Prod-Debug:
+      xcconfig: Config/Prod-Debug.xcconfig
+    Prod-Release:
+      xcconfig: Config/Prod-Release.xcconfig
 
 targets:
   LumenLingo:
@@ -44,17 +74,12 @@ targets:
           - UIInterfaceOrientationPortrait
           - UIInterfaceOrientationLandscapeLeft
           - UIInterfaceOrientationLandscapeRight
+        LLEnvironment: $(LL_ENVIRONMENT)
+        LLApiBaseURL: $(LL_API_BASE_URL)
+        LLLogLevel: $(LL_LOG_LEVEL)
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.sebastiansiemianowski.lumenlingo
-        PRODUCT_NAME: LumenLingo
-        MARKETING_VERSION: "1.0.0"
-        CURRENT_PROJECT_VERSION: "1"
-        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        TARGETED_DEVICE_FAMILY: "1,2"
-        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: true
-        CODE_SIGN_STYLE: Automatic
+        # Bundle ID and product name come from xcconfig per-environment
         # TODO: Re-enable once iCloud entitlement is provisioned (see ICloud-sync.md)
         # CODE_SIGN_ENTITLEMENTS: LumenLingo/LumenLingo.entitlements
 
@@ -67,20 +92,119 @@ targets:
       - target: LumenLingo
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.sebastiansiemianowski.lumenlingo.tests
+        PRODUCT_BUNDLE_IDENTIFIER: $(PRODUCT_BUNDLE_IDENTIFIER).tests
         GENERATE_INFOPLIST_FILE: true
-        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LumenLingo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LumenLingo"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/$(PRODUCT_NAME).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/$(PRODUCT_NAME)"
         BUNDLE_LOADER: "$(TEST_HOST)"
 
+# ─── Schemes (one per environment) ────────────────────────────
 schemes:
-  LumenLingo:
+  LumenLingo-Dev:
     build:
       targets:
         LumenLingo: all
         LumenLingoTests: [test]
     run:
-      config: Debug
+      config: Dev-Debug
+      environmentVariables:
+        - variable: LL_ENVIRONMENT
+          value: dev
+          isEnabled: true
     test:
-      config: Debug
+      config: Dev-Debug
       targets:
         - LumenLingoTests
+    profile:
+      config: Dev-Release
+    analyze:
+      config: Dev-Debug
+    archive:
+      config: Dev-Release
+
+  LumenLingo-QA:
+    build:
+      targets:
+        LumenLingo: all
+        LumenLingoTests: [test]
+    run:
+      config: QA-Debug
+      environmentVariables:
+        - variable: LL_ENVIRONMENT
+          value: qa
+          isEnabled: true
+    test:
+      config: QA-Debug
+      targets:
+        - LumenLingoTests
+    profile:
+      config: QA-Release
+    analyze:
+      config: QA-Debug
+    archive:
+      config: QA-Release
+
+  LumenLingo-UAT:
+    build:
+      targets:
+        LumenLingo: all
+        LumenLingoTests: [test]
+    run:
+      config: UAT-Debug
+      environmentVariables:
+        - variable: LL_ENVIRONMENT
+          value: uat
+          isEnabled: true
+    test:
+      config: UAT-Debug
+      targets:
+        - LumenLingoTests
+    profile:
+      config: UAT-Release
+    analyze:
+      config: UAT-Debug
+    archive:
+      config: UAT-Release
+
+  LumenLingo-PreProd:
+    build:
+      targets:
+        LumenLingo: all
+        LumenLingoTests: [test]
+    run:
+      config: PreProd-Debug
+      environmentVariables:
+        - variable: LL_ENVIRONMENT
+          value: preprod
+          isEnabled: true
+    test:
+      config: PreProd-Debug
+      targets:
+        - LumenLingoTests
+    profile:
+      config: PreProd-Release
+    analyze:
+      config: PreProd-Debug
+    archive:
+      config: PreProd-Release
+
+  LumenLingo-Prod:
+    build:
+      targets:
+        LumenLingo: all
+        LumenLingoTests: [test]
+    run:
+      config: Prod-Debug
+      environmentVariables:
+        - variable: LL_ENVIRONMENT
+          value: prod
+          isEnabled: true
+    test:
+      config: Prod-Debug
+      targets:
+        - LumenLingoTests
+    profile:
+      config: Prod-Release
+    analyze:
+      config: Prod-Debug
+    archive:
+      config: Prod-Release

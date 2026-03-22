@@ -1,0 +1,18 @@
+// UAT-Debug.xcconfig
+#include "Base.xcconfig"
+
+// ─── Identity ─────────────────────────────────────────────────
+PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.uat
+PRODUCT_NAME = LL UAT
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-UAT
+
+// ─── Environment ──────────────────────────────────────────────
+LL_ENVIRONMENT = uat
+LL_API_BASE_URL = https:/$()/api-uat.lumenlingo.com
+LL_LOG_LEVEL = info
+
+// ─── Debug Settings ───────────────────────────────────────────
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+DEBUG_INFORMATION_FORMAT = dwarf
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG UAT
+ENABLE_TESTABILITY = YES

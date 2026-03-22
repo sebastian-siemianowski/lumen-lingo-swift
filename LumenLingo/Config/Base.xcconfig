@@ -1,0 +1,22 @@
+// Base.xcconfig
+// Shared build settings for all environments and build types.
+// Environment-specific configs #include this file and override what differs.
+
+// ─── Versioning ───────────────────────────────────────────────
+MARKETING_VERSION = 1.0.0
+CURRENT_PROJECT_VERSION = 1
+
+// ─── Deployment ───────────────────────────────────────────────
+IPHONEOS_DEPLOYMENT_TARGET = 26.0
+TARGETED_DEVICE_FAMILY = 1,2
+SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES
+
+// ─── Swift ────────────────────────────────────────────────────
+SWIFT_VERSION = 6.0
+
+// ─── Code Signing ─────────────────────────────────────────────
+CODE_SIGN_STYLE = Automatic
+DEVELOPMENT_TEAM =
+
+// ─── Assets ───────────────────────────────────────────────────
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor
