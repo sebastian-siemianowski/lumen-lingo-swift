@@ -581,29 +581,29 @@
 
 ### Acceptance Criteria
 
-- [ ] Blog posts are authored as `.mdx` files in `src/content/blog/`
-- [ ] Each MDX file has frontmatter: `title`, `description`, `publishedAt`, `updatedAt`, `author`, `image`, `tags`, `category`, `readingTime`
-- [ ] `readingTime` is auto-calculated from word count if not explicitly set
-- [ ] Custom MDX components available in posts: `<Callout>`, `<FeatureHighlight>`, `<AppScreenshot>`, `<VideoEmbed>`, `<CodeBlock>`
-- [ ] Blog index page at `/blog` with paginated post list (12 per page)
-- [ ] Individual post pages at `/blog/[slug]` with full MDX rendering
-- [ ] Category pages at `/blog/category/[category]` filtering posts by category
-- [ ] Tag pages at `/blog/tag/[tag]` filtering posts by tag
-- [ ] RSS feed at `/blog/feed.xml` generated at build time
-- [ ] Sitemap includes all blog posts with `lastmod` dates
+- [x] Blog posts are authored as `.mdx` files in `src/content/blog/`
+- [x] Each MDX file has frontmatter: `title`, `description`, `publishedAt`, `updatedAt`, `author`, `image`, `tags`, `category`, `readingTime`
+- [x] `readingTime` is auto-calculated from word count if not explicitly set
+- [x] Custom MDX components available in posts: `<Callout>`, `<FeatureHighlight>`, `<AppScreenshot>`, `<VideoEmbed>`, `<CodeBlock>`
+- [x] Blog index page at `/blog` with paginated post list (12 per page)
+- [x] Individual post pages at `/blog/[slug]` with full MDX rendering
+- [x] Category pages at `/blog/category/[category]` filtering posts by category
+- [x] Tag pages at `/blog/tag/[tag]` filtering posts by tag
+- [x] RSS feed at `/blog/feed.xml` generated at build time
+- [x] Sitemap includes all blog posts with `lastmod` dates
 
 ### Subtasks
 
-- [ ] 4.1.1 — Install and configure `@next/mdx` or `contentlayer` for MDX processing
-- [ ] 4.1.2 — Define MDX frontmatter TypeScript schema with Zod validation
-- [ ] 4.1.3 — Create `src/lib/blog.ts` with functions: `getAllPosts()`, `getPostBySlug()`, `getPostsByCategory()`, `getPostsByTag()`
-- [ ] 4.1.4 — Create custom MDX components: `<Callout>`, `<FeatureHighlight>`, `<AppScreenshot>`, `<VideoEmbed>`
-- [ ] 4.1.5 — Create `app/blog/page.tsx` — paginated blog index
-- [ ] 4.1.6 — Create `app/blog/[slug]/page.tsx` — individual post rendering with `generateStaticParams`
-- [ ] 4.1.7 — Create `app/blog/category/[category]/page.tsx` — category filter page
-- [ ] 4.1.8 — Create `app/blog/tag/[tag]/page.tsx` — tag filter page
-- [ ] 4.1.9 — Create `app/blog/feed.xml/route.ts` — RSS feed generation
-- [ ] 4.1.10 — Add blog posts to sitemap generation in `app/sitemap.ts`
+- [x] 4.1.1 — Install and configure `@next/mdx` or `contentlayer` for MDX processing
+- [x] 4.1.2 — Define MDX frontmatter TypeScript schema with Zod validation
+- [x] 4.1.3 — Create `src/lib/blog.ts` with functions: `getAllPosts()`, `getPostBySlug()`, `getPostsByCategory()`, `getPostsByTag()`
+- [x] 4.1.4 — Create custom MDX components: `<Callout>`, `<FeatureHighlight>`, `<AppScreenshot>`, `<VideoEmbed>`
+- [x] 4.1.5 — Create `app/blog/page.tsx` — paginated blog index
+- [x] 4.1.6 — Create `app/blog/[slug]/page.tsx` — individual post rendering with `generateStaticParams`
+- [x] 4.1.7 — Create `app/blog/category/[category]/page.tsx` — category filter page
+- [x] 4.1.8 — Create `app/blog/tag/[tag]/page.tsx` — tag filter page
+- [x] 4.1.9 — Create `app/blog/feed.xml/route.ts` — RSS feed generation
+- [x] 4.1.10 — Add blog posts to sitemap generation in `app/sitemap.ts`
 
 ---
 
@@ -615,12 +615,12 @@
 
 ### Acceptance Criteria
 
-- [ ] Route: `/blog` with page title "Blog — LumenLingo"
-- [ ] Hero section with headline: "The LumenLingo Journal" and subline: "Tips, guides, and insights for language learners"
-- [ ] Featured post at the top: large hero card with image, title, excerpt, author, date, reading time
-- [ ] Category filter bar: "All", "Language Tips", "App Updates", "Learning Science", "Culture", "Guides"
-- [ ] Post grid below: 3-column (desktop), 2-column (tablet), 1-column (mobile)
-- [ ] Each post card contains:
+- [x] Route: `/blog` with page title "Blog — LumenLingo"
+- [x] Hero section with headline: "The LumenLingo Journal" and subline: "Tips, guides, and insights for language learners"
+- [x] Featured post at the top: large hero card with image, title, excerpt, author, date, reading time
+- [x] Category filter bar: "All", "Language Tips", "App Updates", "Learning Science", "Culture", "Guides"
+- [x] Post grid below: 3-column (desktop), 2-column (tablet), 1-column (mobile)
+- [x] Each post card contains:
   - Cover image with lazy loading and blur placeholder
   - Category badge
   - Title (truncated to 2 lines)
@@ -628,19 +628,19 @@
   - Author avatar + name
   - Date and reading time
   - Glass card styling with hover lift
-- [ ] Pagination at bottom: "← Previous" / "Next →" with page numbers
-- [ ] Empty state: "No posts found" message when category filter yields no results
+- [x] Pagination at bottom: "← Previous" / "Next →" with page numbers
+- [x] Empty state: "No posts found" message when category filter yields no results
 
 ### Subtasks
 
-- [ ] 4.2.1 — Create `<BlogHero>` with featured post highlight card
-- [ ] 4.2.2 — Create `<CategoryFilter>` horizontal scrolling filter bar with active state
-- [ ] 4.2.3 — Create `<PostCard>` component with image, metadata, excerpt, and glass styling
-- [ ] 4.2.4 — Create `<PostGrid>` responsive grid layout with staggered fade-in
-- [ ] 4.2.5 — Create `<Pagination>` component with page numbers and previous/next controls
-- [ ] 4.2.6 — Implement category filtering with URL search params (shallow routing)
-- [ ] 4.2.7 — Optimise cover images: WebP, `srcSet`, blur placeholder via `next/image`
-- [ ] 4.2.8 — Configure SEO metadata for blog index page
+- [x] 4.2.1 — Create `<BlogHero>` with featured post highlight card
+- [x] 4.2.2 — Create `<CategoryFilter>` horizontal scrolling filter bar with active state
+- [x] 4.2.3 — Create `<PostCard>` component with image, metadata, excerpt, and glass styling
+- [x] 4.2.4 — Create `<PostGrid>` responsive grid layout with staggered fade-in
+- [x] 4.2.5 — Create `<Pagination>` component with page numbers and previous/next controls
+- [x] 4.2.6 — Implement category filtering with URL search params (shallow routing)
+- [x] 4.2.7 — Optimise cover images: WebP, `srcSet`, blur placeholder via `next/image`
+- [x] 4.2.8 — Configure SEO metadata for blog index page
 
 ---
 
@@ -652,34 +652,34 @@
 
 ### Acceptance Criteria
 
-- [ ] Route: `/blog/[slug]` with dynamic title from frontmatter
-- [ ] Post header: cover image (full-width, 40 vh), title overlay at bottom with gradient fade
-- [ ] Author bar: avatar, name, publish date, reading time, and share buttons
-- [ ] Article body: max-width 720 px, optimal reading line length (60–80 characters)
-- [ ] Typography: `Inter` body at 18 px/1.75 line-height, `Cabinet Grotesk` for headings
-- [ ] MDX prose styling:
+- [x] Route: `/blog/[slug]` with dynamic title from frontmatter
+- [x] Post header: cover image (full-width, 40 vh), title overlay at bottom with gradient fade
+- [x] Author bar: avatar, name, publish date, reading time, and share buttons
+- [x] Article body: max-width 720 px, optimal reading line length (60–80 characters)
+- [x] Typography: `Inter` body at 18 px/1.75 line-height, `Cabinet Grotesk` for headings
+- [x] MDX prose styling:
   - Headings with left-border accent (`border-l-2 border-violet-500`)
   - Block quotes with glass background and left border
   - Code blocks with syntax highlighting (dark theme) and copy button
   - Images with rounded corners, hover zoom, and lightbox
   - Tables with glass header row and zebra striping
   - Links with violet underline and hover glow
-- [ ] Table of contents sidebar on desktop (scrollspy-linked)
-- [ ] "Related Posts" section at bottom with 3 recommended articles
-- [ ] Share buttons: Twitter, Facebook, LinkedIn, Copy Link — with copy confirmation toast
-- [ ] `Article` JSON-LD structured data with author, datePublished, image
+- [x] Table of contents sidebar on desktop (scrollspy-linked)
+- [x] "Related Posts" section at bottom with 3 recommended articles
+- [x] Share buttons: Twitter, Facebook, LinkedIn, Copy Link — with copy confirmation toast
+- [x] `Article` JSON-LD structured data with author, datePublished, image
 
 ### Subtasks
 
-- [ ] 4.3.1 — Create `app/blog/[slug]/page.tsx` with `generateStaticParams` and `generateMetadata`
-- [ ] 4.3.2 — Create `<PostHeader>` with cover image, gradient overlay, title, and author bar
-- [ ] 4.3.3 — Create `<MDXProse>` wrapper with comprehensive Tailwind typography styling
-- [ ] 4.3.4 — Create `<TableOfContents>` sidebar with scrollspy-linked heading list
-- [ ] 4.3.5 — Create `<ShareButtons>` component with social sharing + copy link + toast
-- [ ] 4.3.6 — Create `<RelatedPosts>` section using tag/category matching algorithm
-- [ ] 4.3.7 — Add `Article` JSON-LD structured data
-- [ ] 4.3.8 — Add OG image generation using `next/og` (dynamic image with post title and branding)
-- [ ] 4.3.9 — Test prose rendering with all MDX component types in a test post
+- [x] 4.3.1 — Create `app/blog/[slug]/page.tsx` with `generateStaticParams` and `generateMetadata`
+- [x] 4.3.2 — Create `<PostHeader>` with cover image, gradient overlay, title, and author bar
+- [x] 4.3.3 — Create `<MDXProse>` wrapper with comprehensive Tailwind typography styling
+- [x] 4.3.4 — Create `<TableOfContents>` sidebar with scrollspy-linked heading list
+- [x] 4.3.5 — Create `<ShareButtons>` component with social sharing + copy link + toast
+- [x] 4.3.6 — Create `<RelatedPosts>` section using tag/category matching algorithm
+- [x] 4.3.7 — Add `Article` JSON-LD structured data
+- [x] 4.3.8 — Add OG image generation using `next/og` (dynamic image with post title and branding)
+- [x] 4.3.9 — Test prose rendering with all MDX component types in a test post
 
 ---
 
@@ -691,7 +691,7 @@
 
 ### Acceptance Criteria
 
-- [ ] 10 blog posts authored and published at launch, covering the content pillars:
+- [x] 10 blog posts authored and published at launch, covering the content pillars:
   1. **"Why Immersive Learning Works: The Science Behind LumenLingo"** — Learning science, spaced repetition
   2. **"5 Essential Tips for Learning Spanish as an English Speaker"** — Practical tips, target keyword
   3. **"How Ambient Soundscapes Enhance Language Retention"** — Soundscapes feature, cognitive science
@@ -702,22 +702,22 @@
   8. **"Top 10 Japanese Phrases Every Beginner Should Know"** — Listicle, Japanese learner keyword
   9. **"Introducing LumenLingo: A New Era of Language Learning"** — Launch announcement, product overview
   10. **"The Art of Mindful Language Learning: How Breathing Exercises Help"** — Wellness angle, orbs feature
-- [ ] Each post is 1,200–2,000 words targeting a specific keyword cluster
-- [ ] Each post has a unique cover image consistent with the dark premium brand
-- [ ] Internal linking between posts where topically relevant
-- [ ] All posts pass Yoast-style SEO checklist: keyword in title, meta description, H1, first paragraph, image alt
+- [x] Each post is 1,200–2,000 words targeting a specific keyword cluster
+- [x] Each post has a unique cover image consistent with the dark premium brand
+- [x] Internal linking between posts where topically relevant
+- [x] All posts pass Yoast-style SEO checklist: keyword in title, meta description, H1, first paragraph, image alt
 
 ### Subtasks
 
-- [ ] 4.4.1 — Research and finalise target keywords for each post using search intent mapping
-- [ ] 4.4.2 — Write posts 1–3: science-focused content (learning, soundscapes, spaced repetition)
-- [ ] 4.4.3 — Write posts 4–6: practical guides (spaced repetition guide, comparison, habit building)
-- [ ] 4.4.4 — Write posts 7–9: design/product content (psychology, Japanese phrases, launch announcement)
-- [ ] 4.4.5 — Write post 10: wellness/mindfulness angle
-- [ ] 4.4.6 — Create cover images for all 10 posts (dark theme, consistent brand style)
-- [ ] 4.4.7 — Add internal links between related posts
-- [ ] 4.4.8 — Review all posts for SEO: keywords, meta descriptions, heading structure, alt text
-- [ ] 4.4.9 — Peer review all posts for accuracy, tone, and brand consistency
+- [x] 4.4.1 — Research and finalise target keywords for each post using search intent mapping
+- [x] 4.4.2 — Write posts 1–3: science-focused content (learning, soundscapes, spaced repetition)
+- [x] 4.4.3 — Write posts 4–6: practical guides (spaced repetition guide, comparison, habit building)
+- [x] 4.4.4 — Write posts 7–9: design/product content (psychology, Japanese phrases, launch announcement)
+- [x] 4.4.5 — Write post 10: wellness/mindfulness angle
+- [x] 4.4.6 — Create cover images for all 10 posts (dark theme, consistent brand style)
+- [x] 4.4.7 — Add internal links between related posts
+- [x] 4.4.8 — Review all posts for SEO: keywords, meta descriptions, heading structure, alt text
+- [x] 4.4.9 — Peer review all posts for accuracy, tone, and brand consistency
 
 ---
 
