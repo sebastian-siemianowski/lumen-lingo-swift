@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://lumenlingo.com'),
   other: {
     'apple-itunes-app': `app-id=${APP_STORE_ID}`,
+    'theme-color': '#0a0a0f',
   },
 };
 

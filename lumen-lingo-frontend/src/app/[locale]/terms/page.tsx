@@ -5,6 +5,7 @@ import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { LegalTOC, DownloadPDFButton } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
+import { Link } from '@/i18n/navigation';
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
@@ -171,7 +172,7 @@ export default async function TermsPage({
                     Your learning data (progress, preferences, practice history) is stored on your device and in your personal iCloud account. LumenShore does not claim ownership of your personal learning data.
                   </p>
                   <p>
-                    For more details on how we handle data, please review our <a href="/privacy">Privacy Policy</a>.
+                    For more details on how we handle data, please review our <Link href="/privacy" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">Privacy Policy</Link>.
                   </p>
                 </section>
 

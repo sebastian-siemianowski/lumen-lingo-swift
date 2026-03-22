@@ -1,6 +1,10 @@
 import { getAllPosts } from '@/lib/blog';
 
-export function GET() {
+export function GET(
+  _request: Request,
+  { params }: { params: { locale: string } },
+) {
+  const { locale } = params;
   const posts = getAllPosts();
   const siteUrl = 'https://lumenlingo.com';
 
@@ -25,8 +29,8 @@ export function GET() {
     <title>LumenLingo Blog</title>
     <description>Tips, guides, and insights for language learners from LumenLingo.</description>
     <link>${siteUrl}/blog</link>
-    <atom:link href="${siteUrl}/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <language>en</language>
+    <atom:link href="${siteUrl}/${locale}/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>${locale}</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <managingEditor>hello@lumenshore.com (LumenShore Team)</managingEditor>
     <webMaster>hello@lumenshore.com (LumenShore Team)</webMaster>

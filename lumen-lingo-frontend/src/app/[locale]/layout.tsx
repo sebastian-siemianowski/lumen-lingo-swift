@@ -35,13 +35,16 @@ export async function generateMetadata({
 
   return {
     alternates: {
-      languages: alternateLanguages,
-    },
-    other: {
-      // Google also likes x-default
-      ...(locale === routing.defaultLocale
-        ? {}
-        : {}),
+      canonical: locale === routing.defaultLocale
+        ? 'https://lumenlingo.com'
+        : `https://lumenlingo.com/${locale}`,
+      languages: {
+        ...alternateLanguages,
+        'x-default': 'https://lumenlingo.com',
+      },
+      types: {
+        'application/rss+xml': `https://lumenlingo.com/${locale}/blog/feed.xml`,
+      },
     },
   };
 }

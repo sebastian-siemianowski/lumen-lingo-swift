@@ -33,6 +33,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/terms', changeFrequency: 'yearly' as const, priority: 0.3 },
     { path: '/accessibility', changeFrequency: 'yearly' as const, priority: 0.3 },
     { path: '/download', changeFrequency: 'monthly' as const, priority: 0.9 },
+    { path: '/languages', changeFrequency: 'monthly' as const, priority: 0.7 },
+    { path: '/early-access', changeFrequency: 'monthly' as const, priority: 0.6 },
+    { path: '/demo', changeFrequency: 'monthly' as const, priority: 0.7 },
   ];
 
   const staticPages: MetadataRoute.Sitemap = staticPaths.map(({ path, changeFrequency, priority }) => ({

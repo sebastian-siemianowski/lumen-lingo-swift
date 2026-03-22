@@ -137,7 +137,8 @@ function SiteSearch() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search pages…"
-          className="w-full rounded-xl border border-glass-border bg-surface/60 py-3 pl-10 pr-4 text-sm text-foreground placeholder:text-foreground-muted backdrop-blur-sm transition-shadow focus:shadow-[0_0_24px_rgba(139,92,246,0.15)] focus:outline-none focus:ring-1 focus:ring-violet/40"
+          aria-label="Search pages"
+          className="w-full rounded-xl border border-glass-border bg-surface/60 py-3 pl-10 pr-4 text-sm text-foreground placeholder:text-foreground-muted backdrop-blur-sm transition-shadow focus:shadow-[0_0_24px_rgba(139,92,246,0.15)] focus-visible:outline-none focus:ring-1 focus:ring-violet/40"
         />
       </div>
 

@@ -4,6 +4,7 @@ import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { BreadcrumbJsonLd } from '@/components/home';
+import { Link } from '@/i18n/navigation';
 
 export const metadata: Metadata = {
   title: 'Accessibility Statement',
@@ -214,7 +215,7 @@ export default async function AccessibilityPage({
                   </li>
                   <li>
                     <strong>General contact:</strong>{' '}
-                    <a href="/contact">Contact page</a>
+                    <Link href="/contact" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">Contact page</Link>
                   </li>
                 </ul>
                 <p>

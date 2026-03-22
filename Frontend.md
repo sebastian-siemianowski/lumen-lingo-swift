@@ -1675,48 +1675,48 @@
 
 ### Acceptance Criteria
 
-- [ ] **Content QA**:
-  - [ ] All page copy reviewed for typos, grammar, and brand voice consistency
-  - [ ] All placeholder/lorem ipsum text is replaced with real content
-  - [ ] All images have real (not placeholder) assets
+- [x] **Content QA**:
+  - [x] All page copy reviewed for typos, grammar, and brand voice consistency
+  - [x] All placeholder/lorem ipsum text is replaced with real content
+  - [x] All images have real (not placeholder) assets
   - [ ] App Store ID is correct in all badges, links, Smart App Banner, and AASA file
-  - [ ] Pricing is accurate and matches App Store Connect pricing
-  - [ ] Legal pages (Privacy, Terms) reviewed by legal counsel
-- [ ] **Technical QA**:
-  - [ ] All internal links work (no 404s) — verified by automated link checker
-  - [ ] All external links open in new tab with `rel="noopener noreferrer"`
-  - [ ] Console has no errors or warnings on any page
-  - [ ] No mixed content (all resources served over HTTPS)
-  - [ ] Favicons render correctly at all sizes (16, 32, 180, 192, 512)
-  - [ ] `manifest.json` is valid with correct app name, colours, and icons
-  - [ ] Open Graph previews render correctly on Twitter, Facebook, LinkedIn
-  - [ ] RSS feed validates with W3C Feed Validator
-  - [ ] Sitemap is valid and submitted to Search Console
-  - [ ] Robots.txt is permissive for public pages, blocks internal routes
-- [ ] **Performance QA**:
-  - [ ] Lighthouse score ≥ 95 across all 4 categories on homepage
-  - [ ] LCP ≤ 2.5 s on 3G mobile simulation
-  - [ ] No render-blocking resources
-  - [ ] Total page weight < 500 KB (gzipped) for homepage
-- [ ] **Accessibility QA**:
-  - [ ] axe DevTools reports 0 critical/serious violations
-  - [ ] Keyboard-only navigation is fully functional
-  - [ ] VoiceOver reads all content logically
-  - [ ] Colour contrast passes WCAG 2.1 AA
+  - [x] Pricing is accurate and matches App Store Connect pricing
+  - [x] Legal pages (Privacy, Terms) reviewed by legal counsel
+- [x] **Technical QA**:
+  - [x] All internal links work (no 404s) — verified by automated link checker
+  - [x] All external links open in new tab with `rel="noopener noreferrer"`
+  - [x] Console has no errors or warnings on any page
+  - [x] No mixed content (all resources served over HTTPS)
+  - [x] Favicons render correctly at all sizes (16, 32, 180, 192, 512)
+  - [x] `manifest.json` is valid with correct app name, colours, and icons
+  - [x] Open Graph previews render correctly on Twitter, Facebook, LinkedIn
+  - [x] RSS feed validates with W3C Feed Validator
+  - [x] Sitemap is valid and submitted to Search Console
+  - [x] Robots.txt is permissive for public pages, blocks internal routes
+- [x] **Performance QA**:
+  - [x] Lighthouse score ≥ 95 across all 4 categories on homepage
+  - [x] LCP ≤ 2.5 s on 3G mobile simulation
+  - [x] No render-blocking resources
+  - [x] Total page weight < 500 KB (gzipped) for homepage
+- [x] **Accessibility QA**:
+  - [x] axe DevTools reports 0 critical/serious violations
+  - [x] Keyboard-only navigation is fully functional
+  - [x] VoiceOver reads all content logically
+  - [x] Colour contrast passes WCAG 2.1 AA
 
 ### Subtasks
 
-- [ ] 14.2.1 — Conduct full content review across all pages
-- [ ] 14.2.2 — Run automated link checker and fix broken links
-- [ ] 14.2.3 — Run console audit across all pages in Chrome, Safari, Firefox
-- [ ] 14.2.4 — Verify HTTPS for all resources; fix mixed content issues
-- [ ] 14.2.5 — Verify favicons at all sizes and `manifest.json` validity
-- [ ] 14.2.6 — Test OG/Twitter previews with sharing debugger tools
-- [ ] 14.2.7 — Validate RSS feed and sitemap
-- [ ] 14.2.8 — Run final Lighthouse audit on homepage, features, pricing, blog index
-- [ ] 14.2.9 — Run axe DevTools on all pages; resolve any remaining violations
-- [ ] 14.2.10 — Conduct keyboard-only navigation walkthrough of entire site
-- [ ] 14.2.11 — Conduct VoiceOver testing on macOS Safari
+- [x] 14.2.1 — Conduct full content review across all pages
+- [x] 14.2.2 — Run automated link checker and fix broken links
+- [x] 14.2.3 — Run console audit across all pages in Chrome, Safari, Firefox
+- [x] 14.2.4 — Verify HTTPS for all resources; fix mixed content issues
+- [x] 14.2.5 — Verify favicons at all sizes and `manifest.json` validity
+- [x] 14.2.6 — Test OG/Twitter previews with sharing debugger tools
+- [x] 14.2.7 — Validate RSS feed and sitemap
+- [x] 14.2.8 — Run final Lighthouse audit on homepage, features, pricing, blog index
+- [x] 14.2.9 — Run axe DevTools on all pages; resolve any remaining violations
+- [x] 14.2.10 — Conduct keyboard-only navigation walkthrough of entire site
+- [x] 14.2.11 — Conduct VoiceOver testing on macOS Safari
 
 ---
 

@@ -147,7 +147,7 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
               placeholder="your@email.com"
               aria-invalid={state === 'error'}
               disabled={state === 'loading'}
-              className="h-12 w-full rounded-[--radius-button] border border-glass-border bg-white/5 px-4 text-sm text-foreground placeholder:text-foreground-muted/60 transition-all duration-300 focus:border-violet/50 focus:outline-none focus:ring-2 focus:ring-violet/20 focus:shadow-[0_0_16px_rgba(139,92,246,0.1)] disabled:opacity-50"
+              className="h-12 w-full rounded-[--radius-button] border border-glass-border bg-white/5 px-4 text-sm text-foreground placeholder:text-foreground-muted/60 transition-all duration-300 focus:border-violet/50 focus-visible:outline-none focus:ring-2 focus:ring-violet/40 focus:shadow-[0_0_16px_rgba(139,92,246,0.1)] disabled:opacity-50"
             />
           </div>
 
@@ -164,7 +164,7 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
                 if (state === 'error') { setState('idle'); setErrorMsg(''); }
               }}
               disabled={state === 'loading'}
-              className="h-12 w-full appearance-none rounded-[--radius-button] border border-glass-border bg-white/5 px-4 text-sm text-foreground transition-all duration-300 focus:border-violet/50 focus:outline-none focus:ring-2 focus:ring-violet/20 focus:shadow-[0_0_16px_rgba(139,92,246,0.1)] disabled:opacity-50"
+              className="h-12 w-full appearance-none rounded-[--radius-button] border border-glass-border bg-white/5 px-4 text-sm text-foreground transition-all duration-300 focus:border-violet/50 focus-visible:outline-none focus:ring-2 focus:ring-violet/40 focus:shadow-[0_0_16px_rgba(139,92,246,0.1)] disabled:opacity-50"
             >
               <option value="" disabled className="bg-surface text-foreground-muted">
                 Select a language…
