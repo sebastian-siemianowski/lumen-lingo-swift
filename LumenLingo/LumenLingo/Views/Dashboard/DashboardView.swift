@@ -53,6 +53,17 @@ struct DashboardView: View {
     @State private var headerBadge2Visible: Bool = false
     @State private var headerChevronKick: CGFloat = 0
 
+    // Recent Activity collapse animation state
+    @PersistedState("dashboard_recentActivity_collapsed") private var recentActivityCollapsed = false
+    @State private var recentContentHeight: CGFloat = 0
+    @State private var recentHasExpanded: Bool = false
+    @State private var recentContentOpacity: Double = 0
+    @State private var recentUnfurlOffset: CGFloat = -10
+    @State private var recentUnfurlScale: CGFloat = 0.96
+    @State private var recentBreathe: CGFloat = 1.0
+    @State private var recentIconKick: CGFloat = 0
+    @State private var recentRowsVisible: [Bool] = Array(repeating: false, count: 10)
+
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
 
@@ -948,6 +959,78 @@ struct DashboardView: View {
         HapticsService.shared.toggleSwitch()
     }
 
+    // MARK: - Recent Activity Toggle Animation
+
+    private func toggleRecentActivity() {
+        let expanding = recentActivityCollapsed
+        let rowCount = recentActivityRowCount
+
+        // Card breathe: gentle puff out then settle
+        withAnimation(.spring(response: 0.3, dampingFraction: 0.55)) {
+            recentBreathe = expanding ? 1.01 : 0.993
+        }
+        withAnimation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.18)) {
+            recentBreathe = 1.0
+        }
+
+        // Icon rotation flourish
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.45)) {
+            recentIconKick = expanding ? 18 : -12
+        }
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.15)) {
+            recentIconKick = 0
+        }
+
+        // Main collapse toggle — luxurious asymmetric springs
+        let spring: Animation = expanding
+            ? .spring(response: 0.5, dampingFraction: 0.72, blendDuration: 0.12)
+            : .spring(response: 0.65, dampingFraction: 0.82, blendDuration: 0.08)
+
+        withAnimation(spring) {
+            recentActivityCollapsed.toggle()
+        }
+
+        if expanding {
+            // Content unfurl with a gentle lead-in
+            recentHasExpanded = true
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.72).delay(0.04)) {
+                recentContentOpacity = 1
+                recentUnfurlOffset = 0
+                recentUnfurlScale = 1.0
+            }
+            // Staggered row cascade — waterfall reveal
+            for i in 0..<min(rowCount, 10) {
+                let delay = 0.06 + Double(i) * 0.06
+                withAnimation(.spring(response: 0.5, dampingFraction: 0.68).delay(delay)) {
+                    recentRowsVisible[i] = true
+                }
+            }
+        } else {
+            // Silky collapse — reverse stagger, rows glide away
+            for i in stride(from: min(rowCount, 10) - 1, through: 0, by: -1) {
+                let delay = Double(min(rowCount, 10) - 1 - i) * 0.04
+                withAnimation(.spring(response: 0.5, dampingFraction: 0.78).delay(delay)) {
+                    recentRowsVisible[i] = false
+                }
+            }
+            // Content wraps up gently
+            withAnimation(.spring(response: 0.6, dampingFraction: 0.82).delay(0.06)) {
+                recentContentOpacity = 0
+                recentUnfurlOffset = -10
+                recentUnfurlScale = 0.96
+            }
+            // Remove content from hierarchy after animation settles
+            Task {
+                try? await Task.sleep(for: .milliseconds(850))
+                guard recentActivityCollapsed else { return }
+                recentHasExpanded = false
+                recentContentHeight = 0
+            }
+        }
+
+        HapticsService.shared.toggleSwitch()
+    }
+
     private func toggleExploreMore() {
         let expanding = exploreMoreCollapsed
 
@@ -1296,6 +1379,18 @@ struct DashboardView: View {
 
     // MARK: - Recent Activity
 
+    /// Number of activity rows for current filter (used by stagger animation).
+    private var recentActivityRowCount: Int {
+        let filtered: [GameProgressRecord] = if showAllLanguages {
+            Array(recentProgress.prefix(10))
+        } else {
+            Array(recentProgress.filter {
+                $0.sourceLanguage == currentSourceRaw && $0.targetLanguage == currentTargetRaw
+            }.prefix(5))
+        }
+        return filtered.count
+    }
+
     private var recentActivitySection: some View {
         let filtered: [GameProgressRecord] = if showAllLanguages {
             Array(recentProgress.prefix(10))
@@ -1305,75 +1400,125 @@ struct DashboardView: View {
             }.prefix(5))
         }
 
-        return VStack(spacing: 12) {
-            HStack(spacing: 14) {
-                AnimatedSectionIcon(
-                    isDark: isDark,
-                    systemName: "clock.arrow.trianglehead.counterclockwise.rotate.90",
-                    iconSize: 18,
-                    containerSize: 40,
-                    containerRadius: 12,
-                    darkGradient: [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#5b4fcf")],
-                    lightGradient: nil,
-                    glowColor1: Color(hex: "#667eea"),
-                    glowColor2: Color(hex: "#764ba2"),
-                    glowSize1: 48,
-                    glowSize2: 40,
-                    shadowColor: isDark ? Color(hex: "#667eea") : Color.caribbeanOcean,
-                    shadowBaseOpacity: isDark ? 0.35 : 0.2
-                )
+        return VStack(spacing: 0) {
+            // Section header with collapse toggle
+            Button {
+                toggleRecentActivity()
+            } label: {
+                HStack(spacing: 14) {
+                    AnimatedSectionIcon(
+                        isDark: isDark,
+                        systemName: "clock.arrow.trianglehead.counterclockwise.rotate.90",
+                        iconSize: 18,
+                        containerSize: 40,
+                        containerRadius: 12,
+                        darkGradient: [Color(hex: "#667eea"), Color(hex: "#764ba2"), Color(hex: "#5b4fcf")],
+                        lightGradient: nil,
+                        glowColor1: Color(hex: "#667eea"),
+                        glowColor2: Color(hex: "#764ba2"),
+                        glowSize1: 48,
+                        glowSize2: 40,
+                        shadowColor: isDark ? Color(hex: "#667eea") : Color.caribbeanOcean,
+                        shadowBaseOpacity: isDark ? 0.35 : 0.2
+                    )
+                    .rotationEffect(.degrees(recentIconKick))
+                    .scaleEffect(recentActivityCollapsed ? 1.0 : 1.06)
+                    .animation(.spring(response: 0.5, dampingFraction: 0.65), value: recentActivityCollapsed)
 
-                VStack(alignment: .leading, spacing: 3) {
-                    Text("Recent Activity")
-                        .font(.system(size: 16, weight: .bold))
-                        .tracking(isDark ? 0 : 0.2)
-                        .foregroundStyle(
-                            isDark
-                                ? AnyShapeStyle(LinearGradient(
-                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                ))
-                                : AnyShapeStyle(Color.caribbeanInk)
-                        )
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("Recent Activity")
+                            .font(.system(size: 16, weight: .bold))
+                            .tracking(isDark ? 0 : 0.2)
+                            .foregroundStyle(
+                                isDark
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    ))
+                                    : AnyShapeStyle(Color.caribbeanInk)
+                            )
 
-                    Text("Your learning journey")
-                        .font(.system(size: 13))
-                        .foregroundStyle(isDark ? .white.opacity(0.6) : Color.caribbeanPlum)
-                }
+                        Text("Your learning journey")
+                            .font(.system(size: 13))
+                            .foregroundStyle(isDark ? .white.opacity(0.6) : Color.caribbeanPlum)
+                    }
 
-                Spacer()
-            }
+                    Spacer()
 
-            Picker("", selection: $showAllLanguages) {
-                Text("This Language").tag(false)
-                Text("All Languages").tag(true)
-            }
-            .pickerStyle(.segmented)
+                    // Activity count badge when collapsed
+                    if recentActivityCollapsed && !filtered.isEmpty {
+                        Text("\(filtered.count)")
+                            .font(.system(size: 12, weight: .bold, design: .rounded))
+                            .foregroundStyle(isDark ? .white.opacity(0.7) : Color.caribbeanOcean)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 3)
+                            .background(
+                                Capsule()
+                                    .fill(isDark ? Color(hex: "#667eea").opacity(0.2) : Color.caribbeanOcean.opacity(0.1))
+                            )
+                            .transition(.scale.combined(with: .opacity))
+                    }
 
-            if filtered.isEmpty {
-                recentActivityEmptyState
-            } else {
-                VStack(spacing: 8) {
-                    ForEach(filtered) { activity in
-                        activityRow(activity, showBadge: showAllLanguages)
-                            .contentShape(Rectangle())
-                            .dashboardPress(
-                                accentColor: GameCardColorScheme.forType(activity.gameTypeEnum ?? .flashCards).primary,
-                                scale: 0.965
-                            ) {
-                                if showAllLanguages && isCrossLanguage(activity) {
-                                    crossLanguageRecord = activity
-                                } else {
-                                    navigateToGame(for: activity)
-                                }
-                            }
+                    // Chevron with bouncy rotation + scale pop + color morph
+                    ZStack {
+                        Capsule()
+                            .fill(isDark ? .white.opacity(0.06) : .black.opacity(0.04))
+                            .frame(width: 30, height: 22)
+
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 11, weight: .bold))
+                            .foregroundStyle(
+                                recentActivityCollapsed
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    ))
+                                    : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
+                            )
+                            .rotationEffect(.degrees(recentActivityCollapsed ? 0 : 90))
+                            .scaleEffect(recentActivityCollapsed ? 1.0 : 1.12)
+                            .animation(.spring(response: 0.5, dampingFraction: 0.6), value: recentActivityCollapsed)
                     }
                 }
-                .padding(16)
-                .background(GlassCardBackground())
+                .padding(.bottom, 4)
             }
+            .buttonStyle(ExploreMorePressStyle())
+
+            // Height-clipped content reveal
+            Group {
+                if recentHasExpanded || !recentActivityCollapsed {
+                    recentActivityContent(filtered: filtered)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .opacity(recentContentOpacity)
+                        .offset(y: recentUnfurlOffset)
+                        .scaleEffect(y: recentUnfurlScale, anchor: .top)
+                        .background(
+                            GeometryReader { geo in
+                                Color.clear
+                                    .preference(key: RecentActivityContentHeightKey.self, value: geo.size.height)
+                            }
+                        )
+                        .onPreferenceChange(RecentActivityContentHeightKey.self) { height in
+                            guard height > 0 else { return }
+                            if abs(height - recentContentHeight) > 1 {
+                                if recentContentHeight == 0 && !recentActivityCollapsed {
+                                    recentContentHeight = height
+                                } else {
+                                    withAnimation(.spring(response: 0.5, dampingFraction: 0.82)) {
+                                        recentContentHeight = height
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+            .frame(height: recentActivityCollapsed ? 0 : (recentContentHeight > 0 ? recentContentHeight : nil), alignment: .top)
+            .clipped()
+            .allowsHitTesting(!recentActivityCollapsed)
         }
+        .scaleEffect(recentBreathe)
         .confirmationDialog(
             crossLanguageDialogTitle,
             isPresented: .init(
@@ -1389,6 +1534,54 @@ struct DashboardView: View {
                 Button("Cancel", role: .cancel) {
                     crossLanguageRecord = nil
                 }
+            }
+        }
+        .onAppear {
+            // Initialize state for initially-expanded
+            if !recentActivityCollapsed {
+                recentHasExpanded = true
+                recentContentOpacity = 1
+                recentUnfurlOffset = 0
+                recentUnfurlScale = 1.0
+                for i in 0..<10 { recentRowsVisible[i] = true }
+            }
+        }
+    }
+
+    /// Inner content of Recent Activity — shown inside the height-clipped reveal.
+    private func recentActivityContent(filtered: [GameProgressRecord]) -> some View {
+        VStack(spacing: 12) {
+            Picker("", selection: $showAllLanguages) {
+                Text("This Language").tag(false)
+                Text("All Languages").tag(true)
+            }
+            .pickerStyle(.segmented)
+            .padding(.top, 4)
+
+            if filtered.isEmpty {
+                recentActivityEmptyState
+            } else {
+                VStack(spacing: 8) {
+                    ForEach(Array(filtered.enumerated()), id: \.element.id) { index, activity in
+                        activityRow(activity, showBadge: showAllLanguages)
+                            .opacity(index < recentRowsVisible.count && recentRowsVisible[index] ? 1 : 0)
+                            .offset(y: index < recentRowsVisible.count && recentRowsVisible[index] ? 0 : CGFloat(12 + index * 2))
+                            .scaleEffect(index < recentRowsVisible.count && recentRowsVisible[index] ? 1 : 0.94)
+                            .contentShape(Rectangle())
+                            .dashboardPress(
+                                accentColor: GameCardColorScheme.forType(activity.gameTypeEnum ?? .flashCards).primary,
+                                scale: 0.965
+                            ) {
+                                if showAllLanguages && isCrossLanguage(activity) {
+                                    crossLanguageRecord = activity
+                                } else {
+                                    navigateToGame(for: activity)
+                                }
+                            }
+                    }
+                }
+                .padding(16)
+                .background(GlassCardBackground())
             }
         }
     }
@@ -1785,6 +1978,15 @@ struct DashboardGameCard: View {
 // MARK: - Explore Content Height Key
 
 private struct ExploreContentHeightKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = max(value, nextValue())
+    }
+}
+
+// MARK: - Recent Activity Content Height Key
+
+private struct RecentActivityContentHeightKey: PreferenceKey {
     static var defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
         value = max(value, nextValue())
