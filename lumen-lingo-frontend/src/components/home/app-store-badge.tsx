@@ -2,12 +2,13 @@
 
 import { cn } from '@/lib/utils';
 import { trackEvent } from '@/lib/analytics';
+import { getAppStoreUrl, type CampaignToken } from '@/lib/appStoreUrl';
 
 interface AppStoreBadgeProps {
   className?: string;
   size?: 'sm' | 'md' | 'lg';
-  /** Where in the page the badge is rendered — forwarded to analytics. */
-  location?: string;
+  /** Campaign token for App Store attribution. */
+  location?: CampaignToken | string;
 }
 
 const sizes = {
@@ -19,7 +20,9 @@ const sizes = {
 export function AppStoreBadge({ className, size = 'md', location = 'unknown' }: AppStoreBadgeProps) {
   return (
     <a
-      href="#"
+      href={getAppStoreUrl(location)}
+      target="_blank"
+      rel="noopener noreferrer"
       onClick={() => trackEvent('app_store_click', { location })}
       className={cn(
         'inline-flex items-center gap-2.5 rounded-[--radius-button] border border-white/20 bg-black px-5 py-2.5 transition-all hover:border-white/30 hover:bg-white/5 focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none',

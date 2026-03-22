@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Container } from '@/components/ui';
+import { getAppStoreUrl } from '@/lib/appStoreUrl';
 
 const footerLinks = {
   Product: [
@@ -22,6 +23,7 @@ const footerLinks = {
     { href: '/contact', label: 'Contact' },
     { href: '/privacy', label: 'Privacy Policy' },
     { href: '/terms', label: 'Terms of Service' },
+    { href: '/accessibility', label: 'Accessibility' },
   ],
 };
 
@@ -87,7 +89,9 @@ export function Footer() {
 
               {/* App Store badge */}
               <a
-                href="#"
+                href={getAppStoreUrl('footer')}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-6 inline-flex items-center gap-2 rounded-[--radius-button] border border-glass-border bg-white/5 px-4 py-2.5 text-sm font-medium text-foreground transition-all hover:bg-white/10"
               >
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>

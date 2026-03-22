@@ -121,7 +121,7 @@ export function IPhoneMockup() {
               className={`h-1.5 rounded-full transition-all duration-300 ${
                 i === active
                   ? 'w-6 bg-violet'
-                  : 'w-1.5 bg-foreground-muted/30 hover:bg-foreground-muted/50'
+                  : 'w-1.5 bg-foreground-muted/40 hover:bg-foreground-muted/60'
               }`}
               aria-label={`View screenshot ${i + 1}`}
             />

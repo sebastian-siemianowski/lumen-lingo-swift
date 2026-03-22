@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "XXXXXXXXXX.com.lumenshore.lumenlingo",
+        "paths": [
+          "/open",
+          "/open/*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "XXXXXXXXXX.com.lumenshore.lumenlingo"
+    ]
+  }
+}

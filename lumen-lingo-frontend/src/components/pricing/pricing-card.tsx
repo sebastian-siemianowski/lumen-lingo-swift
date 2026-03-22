@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { trackEvent } from '@/lib/analytics';
+import { getAppStoreUrl } from '@/lib/appStoreUrl';
 
 /* ─── Types ─── */
 export type Tier = 'free' | 'pro' | 'elite' | 'royal';
@@ -171,7 +172,7 @@ export function PricingCard({
 
       {/* CTA */}
       <motion.a
-        href="https://apps.apple.com/app/lumenlingo"
+        href={getAppStoreUrl(`pricing_${tier}`)}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => {

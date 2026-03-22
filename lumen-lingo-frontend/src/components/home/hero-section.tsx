@@ -15,7 +15,7 @@ const trustStats = [
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-[100dvh] items-center overflow-hidden pt-20 pb-16 lg:pt-24">
+    <section className="relative flex min-h-screen min-h-[100dvh] items-center overflow-hidden pt-20 pb-16 lg:pt-24">
       {/* Animated gradient mesh background */}
       <GradientMesh />
 
@@ -54,7 +54,7 @@ export function HeroSection() {
 
             {/* CTA group */}
             <StaggerItem className="mt-8 flex flex-wrap items-center gap-4">
-              <AppStoreBadge location="hero" />
+              <AppStoreBadge location="homepage_hero" />
               <Button variant="ghost" size="lg" className="gap-2">
                 <svg
                   className="h-5 w-5"
@@ -84,7 +84,7 @@ export function HeroSection() {
                 {trustStats.map((stat, i) => (
                   <span key={stat} className="flex items-center gap-2">
                     {i > 0 && (
-                      <span className="hidden text-foreground-muted/30 sm:inline">·</span>
+                      <span className="hidden text-foreground-muted/30 sm:inline" aria-hidden="true">·</span>
                     )}
                     {stat}
                   </span>

@@ -124,7 +124,7 @@ function DeviceFrame({
       {/* Caption */}
       <p
         className={`mt-4 text-center text-sm transition-colors duration-300 ${
-          isActive ? 'text-foreground-secondary' : 'text-foreground-muted/50'
+          isActive ? 'text-foreground-secondary' : 'text-foreground-muted'
         }`}
       >
         {screenshot.caption}
@@ -256,7 +256,7 @@ export function ScreenshotGallery() {
             className={`h-2 rounded-full transition-all duration-300 ${
               i === activeIndex
                 ? 'w-8 bg-violet'
-                : 'w-2 bg-foreground-muted/30 hover:bg-foreground-muted/50'
+                : 'w-2 bg-foreground-muted/40 hover:bg-foreground-muted/60'
             }`}
             aria-label={`Go to screenshot ${i + 1}: ${screenshots[i]?.title}`}
             aria-selected={i === activeIndex}

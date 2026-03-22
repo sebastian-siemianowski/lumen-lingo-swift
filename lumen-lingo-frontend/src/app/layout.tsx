@@ -5,6 +5,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { UtmCapture } from '@/components/analytics';
+import { APP_STORE_ID } from '@/lib/appStoreConfig';
 import './globals.css';
 
 const inter = Inter({
@@ -28,6 +29,9 @@ export const metadata: Metadata = {
   description:
     'Download LumenLingo, the premium language learning app for iPhone. Beautiful flashcards, adaptive practice, ambient soundscapes, and more. Free on the App Store.',
   metadataBase: new URL('https://lumenlingo.com'),
+  other: {
+    'apple-itunes-app': `app-id=${APP_STORE_ID}`,
+  },
 };
 
 export default function RootLayout({

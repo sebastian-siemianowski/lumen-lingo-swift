@@ -130,7 +130,7 @@ export function CTABanner() {
             </Text>
 
             <div className="mt-8">
-              <AppStoreBadge size="lg" location="cta_banner" />
+              <AppStoreBadge size="lg" location="homepage_cta_banner" />
             </div>
           </FadeIn>
 

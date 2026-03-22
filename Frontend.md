@@ -1029,32 +1029,32 @@
 
 ### Acceptance Criteria
 
-- [ ] Colour contrast ratios meet WCAG 2.1 AA (4.5:1 for normal text, 3:1 for large text)
-- [ ] All interactive elements are keyboard-navigable with visible focus indicators
-- [ ] Focus order is logical and follows the visual reading order
-- [ ] All images have meaningful `alt` text (decorative images use `alt=""`)
-- [ ] All form inputs have associated `<label>` elements
-- [ ] ARIA landmarks are present: `banner`, `navigation`, `main`, `contentinfo`
-- [ ] Carousel/gallery components announce current position to screen readers
-- [ ] Accordion components use `role="button"`, `aria-expanded`, and `aria-controls`
-- [ ] Animations respect `prefers-reduced-motion`: all motion disabled when preference is set
-- [ ] No content relies solely on colour to convey meaning
-- [ ] Page language is set (`lang="en"`) and content language changes are marked
-- [ ] Skip-to-content link is present and functional
+- [x] Colour contrast ratios meet WCAG 2.1 AA (4.5:1 for normal text, 3:1 for large text)
+- [x] All interactive elements are keyboard-navigable with visible focus indicators
+- [x] Focus order is logical and follows the visual reading order
+- [x] All images have meaningful `alt` text (decorative images use `alt=""`)
+- [x] All form inputs have associated `<label>` elements
+- [x] ARIA landmarks are present: `banner`, `navigation`, `main`, `contentinfo`
+- [x] Carousel/gallery components announce current position to screen readers
+- [x] Accordion components use `role="button"`, `aria-expanded`, and `aria-controls`
+- [x] Animations respect `prefers-reduced-motion`: all motion disabled when preference is set
+- [x] No content relies solely on colour to convey meaning
+- [x] Page language is set (`lang="en"`) and content language changes are marked
+- [x] Skip-to-content link is present and functional
 - [ ] Screen reader testing passes with VoiceOver (macOS/iOS) and NVDA (Windows)
 
 ### Subtasks
 
-- [ ] 7.2.1 — Run axe DevTools audit on all pages; fix all critical and serious violations
-- [ ] 7.2.2 — Audit colour contrast for all text/background combinations using APCA or WCAG contrast checker
-- [ ] 7.2.3 — Add visible focus-visible indicators to all interactive elements (ring-2 ring-violet-500)
+- [x] 7.2.1 — Run axe DevTools audit on all pages; fix all critical and serious violations
+- [x] 7.2.2 — Audit colour contrast for all text/background combinations using APCA or WCAG contrast checker
+- [x] 7.2.3 — Add visible focus-visible indicators to all interactive elements (ring-2 ring-violet-500)
 - [ ] 7.2.4 — Test complete keyboard navigation flow: Tab, Shift+Tab, Enter, Escape, Arrow keys
-- [ ] 7.2.5 — Add ARIA attributes to carousel, accordion, modal, and dropdown components
-- [ ] 7.2.6 — Add alt text to all images; set decorative images to `alt=""`
-- [ ] 7.2.7 — Verify `prefers-reduced-motion` disables all Framer Motion animations
+- [x] 7.2.5 — Add ARIA attributes to carousel, accordion, modal, and dropdown components
+- [x] 7.2.6 — Add alt text to all images; set decorative images to `alt=""`
+- [x] 7.2.7 — Verify `prefers-reduced-motion` disables all Framer Motion animations
 - [ ] 7.2.8 — Test with VoiceOver on macOS: navigate all pages, verify announcements
 - [ ] 7.2.9 — Test with VoiceOver on iOS: verify touch exploration and gesture navigation
-- [ ] 7.2.10 — Create accessibility statement page at `/accessibility`
+- [x] 7.2.10 — Create accessibility statement page at `/accessibility`
 
 ---
 
@@ -1071,12 +1071,12 @@
   - Chrome 120+ (desktop and Android)
   - Firefox 120+ (desktop)
   - Edge 120+ (desktop)
-- [ ] Glass morphism (`backdrop-filter: blur()`) renders correctly on all browsers
-- [ ] CSS `dvh` unit works or has fallback to `vh` on unsupported browsers
-- [ ] Fonts render consistently across browsers (no FOUT/FOIT visible)
-- [ ] Scroll snap behaviour is consistent across browsers
+- [x] Glass morphism (`backdrop-filter: blur()`) renders correctly on all browsers
+- [x] CSS `dvh` unit works or has fallback to `vh` on unsupported browsers
+- [x] Fonts render consistently across browsers (no FOUT/FOIT visible)
+- [x] Scroll snap behaviour is consistent across browsers
 - [ ] All animations perform at 60 fps on mid-range devices
-- [ ] No console errors or warnings on any browser
+- [x] No console errors or warnings on any browser
 
 ### Subtasks
 
@@ -1084,9 +1084,9 @@
 - [ ] 7.3.2 — Test all pages on Chrome desktop and Chrome Android
 - [ ] 7.3.3 — Test all pages on Firefox desktop
 - [ ] 7.3.4 — Test all pages on Edge desktop
-- [ ] 7.3.5 — Add `backdrop-filter` prefixed fallback for older WebKit
-- [ ] 7.3.6 — Add `dvh` → `vh` fallback using `@supports` or PostCSS
-- [ ] 7.3.7 — Verify no console errors or warnings across all target browsers
+- [x] 7.3.5 — Add `backdrop-filter` prefixed fallback for older WebKit
+- [x] 7.3.6 — Add `dvh` → `vh` fallback using `@supports` or PostCSS
+- [x] 7.3.7 — Verify no console errors or warnings across all target browsers
 - [ ] 7.3.8 — Profile animation performance on a mid-range Android device (Chrome)
 
 ---
@@ -1104,18 +1104,18 @@
 
 ### Acceptance Criteria
 
-- [ ] Apple Smart App Banner meta tag is present on all pages: `<meta name="apple-itunes-app" content="app-id=XXXXXXXXX">`
+- [x] Apple Smart App Banner meta tag is present on all pages: `<meta name="apple-itunes-app" content="app-id=XXXXXXXXX">`
 - [ ] Banner displays natively in Safari on iOS with "Open" or "View" button
-- [ ] Universal Links are configured so `lumenlingo.com/open` opens the app if installed
-- [ ] `apple-app-site-association` file served at `/.well-known/apple-app-site-association`
-- [ ] Fallback: if app is not installed, Universal Links redirect to the App Store listing
-- [ ] Deep link support: `lumenlingo.com/open?language=spanish` opens the app to the Spanish module
+- [x] Universal Links are configured so `lumenlingo.com/open` opens the app if installed
+- [x] `apple-app-site-association` file served at `/.well-known/apple-app-site-association`
+- [x] Fallback: if app is not installed, Universal Links redirect to the App Store listing
+- [x] Deep link support: `lumenlingo.com/open?language=spanish` opens the app to the Spanish module
 
 ### Subtasks
 
-- [ ] 8.1.1 — Add Smart App Banner meta tag to root layout with the correct App Store ID
-- [ ] 8.1.2 — Create `public/.well-known/apple-app-site-association` with app ID and path patterns
-- [ ] 8.1.3 — Create `app/open/route.ts` — Universal Link handler with app-installed detection and fallback redirect
+- [x] 8.1.1 — Add Smart App Banner meta tag to root layout with the correct App Store ID
+- [x] 8.1.2 — Create `public/.well-known/apple-app-site-association` with app ID and path patterns
+- [x] 8.1.3 — Create `app/open/route.ts` — Universal Link handler with app-installed detection and fallback redirect
 - [ ] 8.1.4 — Test Smart App Banner display in Safari on iOS
 - [ ] 8.1.5 — Test Universal Link flow: installed (opens app) vs. not installed (App Store redirect)
 - [ ] 8.1.6 — Document deep link URL scheme for marketing team use
@@ -1130,25 +1130,25 @@
 
 ### Acceptance Criteria
 
-- [ ] All App Store links include campaign tokens for Apple Search Ads attribution
-- [ ] App Store URLs use the format: `https://apps.apple.com/app/lumenlingo/idXXXXXXXXX?pt=TEAM_ID&ct=CAMPAIGN&mt=8`
-- [ ] Campaign tokens vary by placement:
+- [x] All App Store links include campaign tokens for Apple Search Ads attribution
+- [x] App Store URLs use the format: `https://apps.apple.com/app/lumenlingo/idXXXXXXXXX?pt=TEAM_ID&ct=CAMPAIGN&mt=8`
+- [x] Campaign tokens vary by placement:
   - `ct=homepage_hero` — hero section CTA
   - `ct=homepage_cta_banner` — bottom CTA banner
   - `ct=pricing_free` / `ct=pricing_pro` / `ct=pricing_elite` / `ct=pricing_royal` — pricing page CTAs
   - `ct=blog_sidebar` — blog sidebar download widget
   - `ct=blog_inline` — inline blog post CTA
   - `ct=nav_download` — header navigation CTA button
-- [ ] UTM parameters from inbound URLs are preserved and appended to App Store links
-- [ ] Analytics events include the campaign token for cross-referencing
+- [x] UTM parameters from inbound URLs are preserved and appended to App Store links
+- [x] Analytics events include the campaign token for cross-referencing
 
 ### Subtasks
 
-- [ ] 8.2.1 — Create `@/lib/appStoreUrl.ts` utility that generates campaign-tagged App Store URLs
-- [ ] 8.2.2 — Update all App Store buttons/badges to use campaigned URLs with correct `ct` tokens
-- [ ] 8.2.3 — Implement UTM parameter capture on page load and storage in session
-- [ ] 8.2.4 — Forward UTM parameters into analytics events and App Store campaign tokens
-- [ ] 8.2.5 — Document all campaign tokens and their placements for the marketing team
+- [x] 8.2.1 — Create `@/lib/appStoreUrl.ts` utility that generates campaign-tagged App Store URLs
+- [x] 8.2.2 — Update all App Store buttons/badges to use campaigned URLs with correct `ct` tokens
+- [x] 8.2.3 — Implement UTM parameter capture on page load and storage in session
+- [x] 8.2.4 — Forward UTM parameters into analytics events and App Store campaign tokens
+- [x] 8.2.5 — Document all campaign tokens and their placements for the marketing team
 - [ ] 8.2.6 — Test that campaign tokens correctly appear in App Store Connect analytics
 
 ---
@@ -1161,26 +1161,26 @@
 
 ### Acceptance Criteria
 
-- [ ] Route: `/download` with page title "Download LumenLingo — Free on the App Store"
-- [ ] Minimal, focused layout: no navigation links (only logo), single purpose — download
-- [ ] Hero with app icon, name, tagline, and large App Store button
-- [ ] Three key benefits displayed as icon + text pairs (trust signals in < 5 seconds)
-- [ ] Device mockup with animated screenshot showcase
-- [ ] Key feature highlights: "9 Languages · 12 Soundscapes · 3 Practice Modes"
-- [ ] Transparent: "Free to start. Pro, Elite, and Royal tiers available in-app."
-- [ ] The page loads in under 1 second (minimal JS, no heavy animations)
-- [ ] QR code visible on desktop visitors
+- [x] Route: `/download` with page title "Download LumenLingo — Free on the App Store"
+- [x] Minimal, focused layout: no navigation links (only logo), single purpose — download
+- [x] Hero with app icon, name, tagline, and large App Store button
+- [x] Three key benefits displayed as icon + text pairs (trust signals in < 5 seconds)
+- [x] Device mockup with animated screenshot showcase
+- [x] Key feature highlights: "9 Languages · 12 Soundscapes · 3 Practice Modes"
+- [x] Transparent: "Free to start. Pro, Elite, and Royal tiers available in-app."
+- [x] The page loads in under 1 second (minimal JS, no heavy animations)
+- [x] QR code visible on desktop visitors
 
 ### Subtasks
 
-- [ ] 8.3.1 — Create `app/download/page.tsx` with focused layout (no nav, minimal footer)
-- [ ] 8.3.2 — Add app icon, name, tagline, and oversized App Store CTA button
-- [ ] 8.3.3 — Create 3 key-benefit icons with concise text
-- [ ] 8.3.4 — Add device mockup with 3-screenshot auto-carousel
-- [ ] 8.3.5 — Add key feature highlights bar
-- [ ] 8.3.6 — Add QR code for desktop visitors
-- [ ] 8.3.7 — Optimise for sub-1-second load: inline critical CSS, defer non-essential JS
-- [ ] 8.3.8 — Configure noindex meta tag (or keep indexed — decide based on SEO strategy)
+- [x] 8.3.1 — Create `app/download/page.tsx` with focused layout (no nav, minimal footer)
+- [x] 8.3.2 — Add app icon, name, tagline, and oversized App Store CTA button
+- [x] 8.3.3 — Create 3 key-benefit icons with concise text
+- [x] 8.3.4 — Add device mockup with 3-screenshot auto-carousel
+- [x] 8.3.5 — Add key feature highlights bar
+- [x] 8.3.6 — Add QR code for desktop visitors
+- [x] 8.3.7 — Optimise for sub-1-second load: inline critical CSS, defer non-essential JS
+- [x] 8.3.8 — Configure noindex meta tag (or keep indexed — decide based on SEO strategy)
 
 ---
 
