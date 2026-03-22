@@ -26,6 +26,13 @@ struct TodaySessionCard: View {
     @State private var shuffleScale: CGFloat = 1.0
     @State private var shuffleBounce: Bool = false
 
+    // Shuffle content transition
+    @State private var displayedRec: SessionRecommendation?
+    @State private var isShuffling: Bool = false
+    @State private var cardBounce: CGFloat = 1.0
+    @State private var cardTilt: Double = 0
+    @State private var shimmerX: CGFloat = -0.5
+
     private var isDark: Bool { colorScheme == .dark }
 
     var body: some View {
@@ -34,20 +41,34 @@ struct TodaySessionCard: View {
                 goalCompleteContent
             } else if isPracticeExpired {
                 expiredContent
-            } else if let rec = recommendation {
+            } else if let rec = displayedRec ?? recommendation {
                 recommendationContent(rec)
+                    .id("\(rec.gameType)\(rec.categoryKey)")
+                    .transition(.asymmetric(
+                        insertion: .offset(x: 60)
+                            .combined(with: .opacity)
+                            .combined(with: .scale(scale: 0.92, anchor: .trailing)),
+                        removal: .offset(x: -60)
+                            .combined(with: .opacity)
+                            .combined(with: .scale(scale: 0.92, anchor: .leading))
+                    ))
             } else {
                 loadingContent
             }
         }
+        .clipped()
         .background(cardBackground)
         .clipShape(RoundedRectangle(cornerRadius: 26))
+        .overlay(shuffleShimmer)
         .overlay(borderOverlay)
         .shadow(color: shadowColor, radius: isDark ? 30 : 20, y: isDark ? 12 : 8)
         .shadow(color: secondaryShadow, radius: 8, y: 4)
+        .scaleEffect(cardBounce)
+        .rotation3DEffect(.degrees(cardTilt), axis: (x: 0, y: 1, z: 0), perspective: 0.4)
         .opacity(appeared ? 1 : 0)
         .offset(y: appeared ? 0 : 30)
         .onAppear {
+            displayedRec = recommendation
             withAnimation(.spring(response: 0.7, dampingFraction: 0.75).delay(0.05)) {
                 appeared = true
             }
@@ -58,6 +79,40 @@ struct TodaySessionCard: View {
                 pulseGlow = true
             }
         }
+        .onChange(of: recommendation) { _, newRec in
+            guard isShuffling else {
+                displayedRec = newRec
+                return
+            }
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.72)) {
+                displayedRec = newRec
+            }
+        }
+    }
+
+    // MARK: - Shuffle Shimmer
+
+    private var shuffleShimmer: some View {
+        GeometryReader { geo in
+            let shimmerWidth = geo.size.width * 0.45
+            LinearGradient(
+                stops: [
+                    .init(color: .clear, location: 0),
+                    .init(color: .white.opacity(isDark ? 0.10 : 0.18), location: 0.3),
+                    .init(color: .white.opacity(isDark ? 0.16 : 0.28), location: 0.5),
+                    .init(color: .white.opacity(isDark ? 0.10 : 0.18), location: 0.7),
+                    .init(color: .clear, location: 1),
+                ],
+                startPoint: .leading,
+                endPoint: .trailing
+            )
+            .frame(width: shimmerWidth)
+            .offset(x: shimmerX * (geo.size.width + shimmerWidth) - shimmerWidth * 0.25)
+            .blur(radius: 8)
+        }
+        .clipShape(RoundedRectangle(cornerRadius: 26))
+        .allowsHitTesting(false)
+        .opacity(isShuffling ? 1 : 0)
     }
 
     // MARK: - Recommendation Content
@@ -355,21 +410,52 @@ struct TodaySessionCard: View {
             : Color.caribbeanOcean
 
         return Button {
-            // Tactile animation cascade
-            withAnimation(.spring(response: 0.25, dampingFraction: 0.5)) {
-                shuffleScale = 0.8
+            isShuffling = true
+
+            // 1. Card squeeze + 3D tilt — feels physical
+            withAnimation(.spring(response: 0.18, dampingFraction: 0.55)) {
+                cardBounce = 0.965
+                cardTilt = 5
+            }
+
+            // 2. Shuffle button squish
+            withAnimation(.spring(response: 0.2, dampingFraction: 0.45)) {
+                shuffleScale = 0.65
                 shuffleBounce = true
             }
-            withAnimation(.interpolatingSpring(stiffness: 300, damping: 12).delay(0.08)) {
+
+            // 3. Button spin + spring expand
+            withAnimation(.interpolatingSpring(stiffness: 280, damping: 10).delay(0.06)) {
                 shuffleRotation += 360
-                shuffleScale = 1.15
+                shuffleScale = 1.25
             }
-            withAnimation(.spring(response: 0.3, dampingFraction: 0.65).delay(0.22)) {
+
+            // 4. Shimmer light sweep across card
+            shimmerX = -0.1
+            withAnimation(.easeInOut(duration: 0.5).delay(0.04)) {
+                shimmerX = 1.1
+            }
+
+            // 5. Content swap — fires onChange which drives the .transition()
+            onShuffle?()
+
+            // 6. Card elastic bounce-back with overshoot
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.45).delay(0.1)) {
+                cardBounce = 1.0
+                cardTilt = 0
+            }
+
+            // 7. Button settle
+            withAnimation(.spring(response: 0.35, dampingFraction: 0.55).delay(0.2)) {
                 shuffleScale = 1.0
                 shuffleBounce = false
             }
 
-            onShuffle?()
+            // 8. Reset shimmer after sweep completes
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
+                isShuffling = false
+                shimmerX = -0.5
+            }
         } label: {
             ZStack {
                 // Outer glow ring
