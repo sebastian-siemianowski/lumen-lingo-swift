@@ -3,6 +3,7 @@
 import { cn } from '@/lib/utils';
 import { GlassCard, Heading, Text, Container, Section } from '@/components/ui';
 import { StaggerChildren, StaggerItem, FadeIn } from '@/components/motion';
+import { useTranslations } from 'next-intl';
 
 interface Feature {
   icon: React.ReactNode;
@@ -137,6 +138,7 @@ function FeatureCard({ icon, title, description, tint }: Feature) {
 }
 
 export function FeatureShowcase() {
+  const t = useTranslations('FeatureShowcase');
   return (
     <Section
       id="features"
@@ -148,10 +150,10 @@ export function FeatureShowcase() {
         {/* Section header */}
         <FadeIn className="mx-auto mb-16 max-w-2xl text-center">
           <Heading as="h2" gradient>
-            Everything You Need to Master a New Language
+            {t('heading')}
           </Heading>
           <Text size="lg" colour="secondary" className="mt-4">
-            Six powerful pillars designed to transform how you learn, practice, and retain new languages.
+            {t('description')}
           </Text>
         </FadeIn>
 

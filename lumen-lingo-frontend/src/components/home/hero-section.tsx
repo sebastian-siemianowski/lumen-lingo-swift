@@ -5,15 +5,10 @@ import { FadeIn, StaggerChildren, StaggerItem } from '@/components/motion';
 import { CosmicGradient } from '@/components/background';
 import { IPhoneMockup } from './iphone-mockup';
 import { AppStoreBadge } from './app-store-badge';
-
-const trustStats = [
-  '9 Languages',
-  '25+ Language Pairs',
-  '12 Ambient Soundscapes',
-  'Free to Start',
-];
+import { useTranslations } from 'next-intl';
 
 export function HeroSection() {
+  const t = useTranslations('Hero');
   return (
     <section className="relative flex min-h-screen min-h-[100dvh] items-center overflow-hidden pt-20 pb-16 lg:pt-24">
       {/* Animated cosmic gradient background */}
@@ -37,18 +32,16 @@ export function HeroSection() {
             {/* Headline */}
             <StaggerItem className="mt-6">
               <Heading as="h1" className="!leading-[1.05]">
-                Master Languages{' '}
-                <span className="text-gradient">Through Immersive</span>{' '}
-                Experiences
+                {t.rich('headline', {
+                  gradient: (chunks) => <span className="text-gradient">{chunks}</span>,
+                })}
               </Heading>
             </StaggerItem>
 
             {/* Subheadline */}
             <StaggerItem className="mt-6">
               <Text size="lg" colour="secondary" className="max-w-md">
-                A visual journey through language learning. Beautiful flashcards,
-                ambient soundscapes, and breathing exercises — designed to make
-                every session feel like a meditation.
+                {t('subheadline')}
               </Text>
             </StaggerItem>
 
@@ -81,12 +74,12 @@ export function HeroSection() {
             {/* Trust bar */}
             <StaggerItem className="mt-10">
               <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-foreground-muted">
-                {trustStats.map((stat, i) => (
-                  <span key={stat} className="flex items-center gap-2">
+                {(['languages', 'pairs', 'soundscapes', 'freeToStart'] as const).map((key, i) => (
+                  <span key={key} className="flex items-center gap-2">
                     {i > 0 && (
                       <span className="hidden text-foreground-muted/30 sm:inline" aria-hidden="true">·</span>
                     )}
-                    {stat}
+                    {t(`trust.${key}`)}
                   </span>
                 ))}
               </div>

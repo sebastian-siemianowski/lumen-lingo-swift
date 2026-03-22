@@ -1,0 +1,330 @@
+{
+  "Metadata": {
+    "title": "LumenLingo — Domina Idiomas a Través de Experiencias Inmersivas",
+    "titleTemplate": "{title} — LumenLingo",
+    "description": "Descarga LumenLingo, la app premium para aprender idiomas en iPhone. Tarjetas didácticas hermosas, práctica adaptativa, paisajes sonoros ambientales y mucho más. Gratis en la App Store."
+  },
+  "Nav": {
+    "features": "Funciones",
+    "pricing": "Precios",
+    "blog": "Blog",
+    "about": "Nosotros",
+    "download": "Descargar",
+    "downloadFree": "Descarga Gratis",
+    "skipToContent": "Ir al contenido",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "mobileNav": "Navegación móvil"
+  },
+  "LanguageSwitcher": {
+    "label": "Idioma",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "ja": "日本語",
+    "de": "Deutsch",
+    "pt": "Português"
+  },
+  "Hero": {
+    "badge": "Ya disponible en iOS",
+    "headline": "Domina Idiomas <gradient>Con Experiencias</gradient> Inmersivas",
+    "subheadline": "Un viaje visual a través del aprendizaje de idiomas. Tarjetas didácticas hermosas, paisajes sonoros ambientales y ejercicios de respiración — diseñado para que cada sesión se sienta como una meditación.",
+    "watchDemo": "Ver Demo",
+    "trust": {
+      "languages": "9 Idiomas",
+      "pairs": "25+ Pares de Idiomas",
+      "soundscapes": "12 Paisajes Sonoros",
+      "freeToStart": "Empieza Gratis"
+    }
+  },
+  "FeatureShowcase": {
+    "heading": "Todo Lo Que Necesitas Para Dominar un Nuevo Idioma",
+    "description": "Seis pilares poderosos diseñados para transformar cómo aprendes, practicas y retienes nuevos idiomas.",
+    "immersiveFlashcards": "Tarjetas Inmersivas",
+    "immersiveFlashcardsDesc": "Tarjetas bellamente diseñadas con repetición espaciada, gestos de deslizamiento y retroalimentación visual que hace que memorizar sea natural.",
+    "smartPractice": "Práctica Inteligente",
+    "smartPracticeDesc": "Tres modos distintos — opción múltiple, constructor de palabras y cuestionarios de gramática — que se adaptan a tu nivel y te mantienen motivado.",
+    "richSoundscapes": "Paisajes Sonoros Envolventes",
+    "richSoundscapesDesc": "12 ambientes sonoros — desde lluvia tropical hasta el espacio profundo — que reducen la ansiedad y aumentan la concentración durante tus sesiones de estudio.",
+    "breathingOrbs": "Orbes de Respiración",
+    "breathingOrbsDesc": "Ejercicios de respiración guiados con orbes visuales hipnóticos que calman la mente antes o entre sesiones de práctica.",
+    "languagePairs": "25+ Pares de Idiomas",
+    "languagePairsDesc": "Aprende en cualquier dirección entre 9 idiomas. Estudia español desde inglés, japonés desde alemán, o cualquier combinación.",
+    "progressTracking": "Seguimiento del Progreso",
+    "progressTrackingDesc": "Analíticas detalladas, rachas diarias, hitos de XP e indicadores de dominio que muestran exactamente cuánto has avanzado."
+  },
+  "ScreenshotGallery": {
+    "heading": "Diseñado Para Inspirar",
+    "description": "Cada pantalla creada con intención. Desliza y descubre la atención al detalle que hace único a LumenLingo."
+  },
+  "Differentiators": {
+    "heading": "¿Por Qué LumenLingo?",
+    "description": "Más que una app de idiomas — es una experiencia de aprendizaje consciente diseñada para ser tan hermosa como efectiva.",
+    "design": "Diseño Impresionante",
+    "designDesc": "Cada píxel creado con esmero. Modo oscuro primero, animaciones fluidas como la seda y una estética cósmica que hace que aprender se sienta premium.",
+    "environments": "Entornos Inmersivos",
+    "environmentsDesc": "12 paisajes sonoros únicos y fondos animados transforman tu sesión de estudio en un retiro meditativo.",
+    "practiceModes": "3 Modos de Práctica Distintos",
+    "practiceModesDesc": "Tarjetas, cuestionarios de gramática y constructor de palabras — cada uno con mecánicas únicas, retroalimentación visual y dificultad adaptativa.",
+    "mindfulness": "Mindfulness Visual",
+    "mindfulnessDesc": "Orbes de respiración, sonidos ambientales y visuales relajantes reducen la ansiedad y crean el espacio mental perfecto para aprender.",
+    "fact1": "9 Idiomas",
+    "fact2": "25+ Pares de Idiomas",
+    "fact3": "12 Paisajes Sonoros",
+    "fact4": "3 Modos de Práctica"
+  },
+  "CTA": {
+    "heading": "Comienza Tu Viaje Lingüístico <gradient>Hoy</gradient>",
+    "description": "Descarga LumenLingo gratis en la App Store. Niveles premium disponibles para quienes buscan más.",
+    "scanToDownload": "Escanea para descargar"
+  },
+  "Pricing": {
+    "badge": "Precios Simples y Transparentes",
+    "heading": "Elige Tu Camino de Aprendizaje",
+    "description": "Empieza gratis, mejora cuando estés listo. Cada nivel se construye sobre el anterior, así que nunca pierdes acceso a las funciones principales.",
+    "trialBadge": "Prueba el acceso Royal gratis durante 14 días",
+    "perMonth": "/mes",
+    "free": "Gratis",
+    "getStarted": "Empieza Gratis",
+    "startTrial": "Prueba Gratuita",
+    "upgrade": "Mejorar Ahora",
+    "currentPlan": "Plan Actual",
+    "popular": "Popular",
+    "tier": {
+      "free": {
+        "name": "Gratis",
+        "price": "£0",
+        "features": ["3 pares de idiomas", "Todos los modos de práctica (Principiante)", "Mazos de 50 tarjetas", "30 min de práctica diaria", "Seguimiento básico del progreso"]
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "£9,99",
+        "features": ["10 pares de idiomas", "Todas las dificultades desbloqueadas", "Mazos de tarjetas ilimitados", "3 paisajes sonoros", "Modo sin conexión", "Analíticas detalladas"]
+      },
+      "elite": {
+        "name": "Élite",
+        "price": "£19,99",
+        "features": ["Todos los pares de idiomas", "Los 12 paisajes sonoros", "Orbes de Respiración", "Fondos nebulosa", "Soporte prioritario", "Multiplicador 2× XP"]
+      },
+      "royal": {
+        "name": "Royal",
+        "price": "£99,99",
+        "features": ["Todo en Élite", "Fondo Quantum Flow", "Insignia Royal exclusiva", "Acceso anticipado a nuevas funciones", "Precio bloqueado de por vida", "Soporte directo del fundador"]
+      }
+    },
+    "comparison": {
+      "heading": "Comparar Todas las Funciones",
+      "description": "Cada nivel se construye sobre el anterior. Los niveles superiores incluyen todas las funciones de los niveles inferiores."
+    },
+    "faq": {
+      "heading": "Preguntas Frecuentes",
+      "description": "Todo lo que necesitas saber sobre los precios y suscripciones de LumenLingo."
+    }
+  },
+  "Features": {
+    "badge": "En Profundidad",
+    "heading": "Creado Para Estudiantes Comprometidos",
+    "description": "Cada función de LumenLingo está diseñada con la ciencia cognitiva en mente. Desde la repetición espaciada hasta la inmersión ambiental, descubre qué hace diferente aprender con nosotros.",
+    "badges": ["Nativo iOS", "Interfaz Artesanal", "Base Científica"],
+    "walkthroughs": {
+      "heading": "Míralo en acción",
+      "subheading": "Cómo se siente aprender",
+      "description": "Tres experiencias principales que definen el viaje con LumenLingo."
+    },
+    "languagePairs": {
+      "heading": "Pares de Idiomas",
+      "subheading": "9 idiomas, 25+ combinaciones",
+      "description": "Aprende en cualquier dirección. Pasa el cursor sobre cualquier tarjeta para ver un ejemplo.",
+      "comingSoon": "Próximamente",
+      "comingSoonDesc": "Más idiomas y pares están en camino. Únete al acceso anticipado para ser el primero en saberlo."
+    }
+  },
+  "About": {
+    "heading": "Sobre LumenShore",
+    "description": "La historia detrás de la app, qué nos impulsa y hacia dónde vamos.",
+    "values": {
+      "beauty": "Belleza en Todo",
+      "beautyDesc": "Creemos que las herramientas para la mente deben ser hermosas. Cada píxel, cada animación, cada interacción está diseñada para deleitar.",
+      "science": "Aprendizaje con Base Científica",
+      "scienceDesc": "Repetición espaciada, recuerdo activo e intercalado — fundamentados en décadas de investigación en ciencia cognitiva.",
+      "privacy": "Privacidad Primero",
+      "privacyDesc": "Tus datos se quedan en tu dispositivo y en tu iCloud. No vendemos datos, no rastreamos comportamiento ni mostramos anuncios.",
+      "accessible": "Accesible Para Todos",
+      "accessibleDesc": "Soporte completo para VoiceOver, Dynamic Type y Reducir Movimiento. El aprendizaje de idiomas debería ser para todos."
+    },
+    "timeline": {
+      "spark": "La Chispa",
+      "sparkDesc": "LumenShore fue fundada con una creencia simple: las apps para aprender idiomas pueden ser hermosas, conscientes y efectivas — todo a la vez.",
+      "beta": "Primera Beta",
+      "betaDesc": "La primera versión de LumenLingo se envió a los probadores beta. Las tarjetas, los paisajes sonoros y el ciclo de aprendizaje principal tomaron forma.",
+      "launch": "Lanzamiento en App Store",
+      "launchDesc": "LumenLingo se lanzó mundialmente en la App Store con 9 idiomas, 25+ pares y un modelo de membresía de cinco niveles.",
+      "growing": "Creciendo y Evolucionando",
+      "growingDesc": "Nuevos idiomas, nuevas funciones y una comunidad creciente de estudiantes que descubren una forma más bella de aprender."
+    }
+  },
+  "Contact": {
+    "heading": "¿Tienes una pregunta?",
+    "description": "¿No encuentras lo que buscas en las preguntas frecuentes? Nos encantaría escucharte.",
+    "email": "hello@lumenshore.com",
+    "responseTime": "Generalmente respondemos en 48 horas",
+    "faqHeading": "Preguntas Frecuentes",
+    "faqDescription": "Respuestas rápidas a las preguntas más comunes sobre LumenLingo."
+  },
+  "Download": {
+    "heading": "LumenLingo",
+    "description": "Domina idiomas a través de experiencias inmersivas. Hermoso, consciente, efectivo.",
+    "meta": "Empieza gratis · Sin cuenta necesaria · iPhone y iPad",
+    "benefits": {
+      "flashcards": "Tarjetas Hermosas",
+      "flashcardsDesc": "Tarjetas deslizables con visuales impresionantes y repetición espaciada incorporada.",
+      "practice": "Práctica Adaptativa",
+      "practiceDesc": "Tres modos que se ajustan a tu nivel — desde principiante hasta avanzado.",
+      "soundscapes": "Paisajes Sonoros Ambientales",
+      "soundscapesDesc": "12 entornos inmersivos que transforman tus sesiones de estudio."
+    },
+    "stats": {
+      "languages": "9 Idiomas",
+      "soundscapes": "12 Paisajes Sonoros",
+      "practiceModes": "3 Modos de Práctica",
+      "flashcards": "∞ Tarjetas"
+    },
+    "upgradeNote": "Empieza gratis. Niveles Pro, Élite y Royal disponibles dentro de la app.",
+    "qr": {
+      "heading": "Escanea para descargar",
+      "description": "Apunta la cámara de tu iPhone al código QR para descargar LumenLingo de la App Store.",
+      "fallback": "O visita lumenlingo.com/open en tu teléfono"
+    },
+    "showcase": {
+      "heading": "Diseñado para deleitar",
+      "description": "Cada interacción está creada con esmero. Animaciones fluidas como la seda, hápticas cuidadosas y una interfaz que parece cobrar vida."
+    }
+  },
+  "Newsletter": {
+    "label": "Correo electrónico",
+    "placeholder": "tu@email.com",
+    "subscribe": "Suscribirse",
+    "subscribing": "Suscribiendo…",
+    "success": "¡Bienvenido a la comunidad LumenShore! Revisa tu bandeja de entrada.",
+    "errorInvalid": "Por favor, ingresa un correo electrónico válido.",
+    "errorGeneric": "Algo salió mal. Por favor, intenta de nuevo.",
+    "gdpr": "Respetamos tu privacidad. Cancela la suscripción en cualquier momento.",
+    "blogCTA": {
+      "heading": "¿Disfrutando este artículo?",
+      "description": "Recibe consejos de aprendizaje de idiomas, actualizaciones de la app y tips de estudio en tu bandeja de entrada."
+    }
+  },
+  "EarlyAccess": {
+    "badge": "Acceso Anticipado",
+    "heading": "Sé de los Primeros",
+    "description": "LumenLingo está creciendo. Únete a la lista para tener acceso anticipado y ofertas exclusivas de lanzamiento.",
+    "socialProof": "{count, plural, one {# estudiante ya esperando} other {# estudiantes ya esperando}}",
+    "noCreditCard": "Sin tarjeta de crédito",
+    "privacyProtected": "Privacidad protegida",
+    "freeToJoin": "Gratis para unirse",
+    "form": {
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "languageLabel": "¿Qué idioma quieres aprender?",
+      "languagePlaceholder": "Selecciona un idioma…",
+      "submit": "Unirse a la Lista de Espera",
+      "privacy": "Sin spam. Respetamos tu privacidad.",
+      "errorEmail": "Por favor, ingresa un correo electrónico válido.",
+      "errorLanguage": "Por favor, selecciona tu idioma preferido.",
+      "errorGeneric": "Algo salió mal. Por favor, intenta de nuevo.",
+      "successHeading": "¡Estás en la lista!",
+      "successDescription": "Te avisaremos cuando se abra el acceso anticipado."
+    },
+    "languages": ["Español", "Francés", "Alemán", "Italiano", "Portugués", "Japonés", "Coreano", "Chino Mandarín", "Otro"],
+    "referral": {
+      "position": "#{position} de {total} estudiantes",
+      "shareHeading": "Comparte y sube en la lista",
+      "copy": "Copiar",
+      "copied": "¡Copiado!",
+      "tellFriend": "Cuéntale a un amigo:",
+      "shareText": "¡Me acabo de unir a la lista de acceso anticipado de LumenLingo! Domina un nuevo idioma a través de inmersión multisensorial. Únete: {url}",
+      "emailSubject": "Únete al Acceso Anticipado de LumenLingo",
+      "twitter": "X (Twitter)",
+      "whatsapp": "WhatsApp",
+      "email": "Correo"
+    }
+  },
+  "Demo": {
+    "region": "Demo interactiva de tarjetas",
+    "progress": "Tarjeta {current} de {total}",
+    "gotIt": "LO SÉ ✓",
+    "skip": "SALTAR ✗",
+    "tapToReveal": "Toca para revelar",
+    "english": "Inglés",
+    "swipeToContinue": "Desliza para continuar",
+    "keySkip": "← Saltar",
+    "keyFlip": "Espacio Voltear",
+    "keyGotIt": "→ Lo sé",
+    "completion": {
+      "amazing": "🎉 ¡Increíble!",
+      "greatEffort": "👏 ¡Gran esfuerzo!",
+      "keepGoing": "💪 ¡Sigue así!",
+      "description": "¿Te gustó? La experiencia real es aún mejor — con 9 idiomas, aprendizaje adaptativo, paisajes sonoros ambientales y miles de tarjetas.",
+      "downloadFree": "Descarga Gratis",
+      "tryAgain": "Intentar de Nuevo"
+    }
+  },
+  "NotFound": {
+    "number": "404",
+    "heading": "Perdido en el Cosmos",
+    "description": "La página que buscas se ha desvanecido. Déjanos ayudarte a encontrar tu camino.",
+    "searchPlaceholder": "Buscar páginas…",
+    "goHome": "Ir al Inicio",
+    "browseFeatures": "Explorar Funciones",
+    "readBlog": "Leer el Blog",
+    "contactUs": "Contáctanos"
+  },
+  "Error": {
+    "heading": "Algo Inesperado Ocurrió",
+    "description": "No te preocupes — el cosmos es vasto y las pequeñas disrupciones suceden. Vamos a ponerte de vuelta en el camino.",
+    "tryAgain": "Intentar de Nuevo",
+    "goHome": "Ir al Inicio"
+  },
+  "Offline": {
+    "heading": "Estás Sin Conexión",
+    "subheading": "¡Pero LumenLingo También Funciona Sin Conexión!",
+    "description": "La app LumenLingo funciona perfectamente sin conexión con una suscripción Pro o superior. Descárgala y nunca pierdas una sesión de práctica.",
+    "retry": "Reintentar Conexión",
+    "retrying": "Reconectando…",
+    "goHome": "Ir al Inicio"
+  },
+  "Footer": {
+    "brand": "LumenLingo",
+    "tagline": "Domina un nuevo idioma a través de inmersión multisensorial. Tarjetas hermosas, paisajes sonoros ambientales y práctica adaptativa que se adapta a tu vida.",
+    "sections": {
+      "Product": "Producto",
+      "Company": "Empresa",
+      "Support": "Soporte"
+    },
+    "links": {
+      "features": "Funciones",
+      "pricing": "Precios",
+      "howItWorks": "Cómo Funciona",
+      "reviews": "Reseñas",
+      "about": "Nosotros",
+      "blog": "Blog",
+      "careers": "Empleo",
+      "pressKit": "Kit de Prensa",
+      "helpCentre": "Centro de Ayuda",
+      "contact": "Contacto",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "accessibility": "Accesibilidad"
+    },
+    "newsletter": {
+      "heading": "Mantente al día",
+      "subheading": "Consejos de aprendizaje, actualizaciones de la app y novedades de la comunidad."
+    },
+    "downloadAppStore": "Descargar en la App Store",
+    "copyright": "LumenShore Ltd. Todos los derechos reservados.",
+    "madeIn": "Hecho con cariño en el Reino Unido"
+  },
+  "NetworkStatus": {
+    "offline": "Estás sin conexión — algunas funciones pueden no estar disponibles"
+  }
+}

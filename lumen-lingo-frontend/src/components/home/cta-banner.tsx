@@ -4,6 +4,7 @@ import { Container, Heading, Text, Section } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { AppStoreBadge } from './app-store-badge';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { useTranslations } from 'next-intl';
 
 function FloatingOrbs() {
   const prefersReduced = useReducedMotion();
@@ -90,13 +91,14 @@ function QRPlaceholder() {
         </svg>
       </div>
       <Text size="sm" colour="muted">
-        Scan to download
+        {t('scanToDownload')}
       </Text>
     </div>
   );
 }
 
 export function CTABanner() {
+  const t = useTranslations('CTA');
   return (
     <section className="relative overflow-hidden">
       {/* Gradient background */}
@@ -120,13 +122,13 @@ export function CTABanner() {
               as="h2"
               className="text-shadow-glow"
             >
-              Start Your Language Journey{' '}
-              <span className="text-gradient">Today</span>
+              {t.rich('heading', {
+                gradient: (chunks) => <span className="text-gradient">{chunks}</span>,
+              })}
             </Heading>
 
             <Text size="lg" colour="secondary" className="mt-4">
-              Download LumenLingo free on the App Store. Premium tiers available
-              for serious learners.
+              {t('description')}
             </Text>
 
             <div className="mt-8">

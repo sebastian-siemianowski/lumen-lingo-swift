@@ -3,6 +3,7 @@
 import { cn } from '@/lib/utils';
 import { GlassCard, Heading, Text, Container, Section } from '@/components/ui';
 import { StaggerChildren, StaggerItem, FadeIn, CountUp } from '@/components/motion';
+import { useTranslations } from 'next-intl';
 
 interface Differentiator {
   icon: React.ReactNode;
@@ -115,6 +116,7 @@ function DifferentiatorCard({ icon, title, description, tint }: Differentiator) 
 }
 
 export function DifferentiatorSection() {
+  const t = useTranslations('Differentiators');
   return (
     <Section
       id="why-lumenlingo"
@@ -126,11 +128,10 @@ export function DifferentiatorSection() {
         {/* Section header */}
         <FadeIn className="mx-auto mb-16 max-w-2xl text-center">
           <Heading as="h2" gradient>
-            Why LumenLingo?
+            {t('heading')}
           </Heading>
           <Text size="lg" colour="secondary" className="mt-4">
-            More than a language app — it&apos;s a mindful learning experience
-            designed to be as beautiful as it is effective.
+            {t('description')}
           </Text>
         </FadeIn>
 

@@ -2,31 +2,41 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { Container } from '@/components/ui';
 import { getAppStoreUrl } from '@/lib/appStoreUrl';
 import { NewsletterForm } from '@/components/newsletter';
 
-const footerLinks = {
-  Product: [
-    { href: '/features', label: 'Features' },
-    { href: '/pricing', label: 'Pricing' },
-    { href: '/#how-it-works', label: 'How It Works' },
-    { href: '/#testimonials', label: 'Reviews' },
-  ],
-  Company: [
-    { href: '/about', label: 'About' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/careers', label: 'Careers' },
-    { href: '/press', label: 'Press Kit' },
-  ],
-  Support: [
-    { href: '/help', label: 'Help Centre' },
-    { href: '/contact', label: 'Contact' },
-    { href: '/privacy', label: 'Privacy Policy' },
-    { href: '/terms', label: 'Terms of Service' },
-    { href: '/accessibility', label: 'Accessibility' },
-  ],
-};
+const footerSections = [
+  {
+    key: 'Product' as const,
+    links: [
+      { href: '/features', key: 'features' },
+      { href: '/pricing', key: 'pricing' },
+      { href: '/#how-it-works', key: 'howItWorks' },
+      { href: '/#testimonials', key: 'reviews' },
+    ],
+  },
+  {
+    key: 'Company' as const,
+    links: [
+      { href: '/about', key: 'about' },
+      { href: '/blog', key: 'blog' },
+      { href: '/careers', key: 'careers' },
+      { href: '/press', key: 'pressKit' },
+    ],
+  },
+  {
+    key: 'Support' as const,
+    links: [
+      { href: '/help', key: 'helpCentre' },
+      { href: '/contact', key: 'contact' },
+      { href: '/privacy', key: 'privacy' },
+      { href: '/terms', key: 'terms' },
+      { href: '/accessibility', key: 'accessibility' },
+    ],
+  },
+];
 
 const socialLinks = [
   {
@@ -59,6 +69,7 @@ const socialLinks = [
 ];
 
 export function Footer() {
+  const t = useTranslations('Footer');
   const [openSection, setOpenSection] = useState<string | null>(null);
 
   function toggleSection(heading: string) {
@@ -95,13 +106,13 @@ export function Footer() {
               </div>
 
               <p className="mt-4 max-w-sm text-sm leading-relaxed text-foreground-muted">
-                Master a new language through multi-sensory immersion. Beautiful flashcards, ambient soundscapes, and adaptive practice that fits your life.
+                {t('tagline')}
               </p>
 
               {/* Newsletter signup */}
               <div className="mt-6">
-                <h3 className="text-sm font-semibold text-foreground">Stay in the loop</h3>
-                <p className="mt-1 text-xs text-foreground-muted">Learning tips, app updates & community highlights.</p>
+                <h3 className="text-sm font-semibold text-foreground">{t('newsletter.heading')}</h3>
+                <p className="mt-1 text-xs text-foreground-muted">{t('newsletter.subheading')}</p>
                 <div className="mt-3 max-w-sm">
                   <NewsletterForm source="footer" compact />
                 </div>
@@ -117,7 +128,7 @@ export function Footer() {
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                 </svg>
-                Download on the App Store
+                {t('downloadAppStore')}
               </a>
 
               {/* Social links */}
@@ -136,10 +147,11 @@ export function Footer() {
             </div>
 
             {/* Link columns — accordion on mobile, columns on sm+ */}
-            {Object.entries(footerLinks).map(([heading, links]) => {
-              const isOpen = openSection === heading;
+            {footerSections.map(({ key: sectionKey, links }) => {
+              const isOpen = openSection === sectionKey;
+              const heading = t(`sections.${sectionKey}`);
               return (
-                <div key={heading}>
+                <div key={sectionKey}>
                   {/* Desktop heading (hidden on mobile) */}
                   <h3 className="hidden text-sm font-semibold tracking-wide text-foreground sm:block">
                     {heading}
@@ -148,10 +160,10 @@ export function Footer() {
                   {/* Mobile accordion trigger */}
                   <button
                     type="button"
-                    onClick={() => toggleSection(heading)}
+                    onClick={() => toggleSection(sectionKey)}
                     className="flex w-full items-center justify-between py-2 text-sm font-semibold tracking-wide text-foreground sm:hidden"
                     aria-expanded={isOpen}
-                    aria-controls={`footer-${heading}`}
+                    aria-controls={`footer-${sectionKey}`}
                   >
                     {heading}
                     <svg
@@ -167,7 +179,7 @@ export function Footer() {
 
                   {/* Links — always visible on sm+, toggled on mobile */}
                   <ul
-                    id={`footer-${heading}`}
+                    id={`footer-${sectionKey}`}
                     role="region"
                     className={`mt-4 space-y-3 sm:block ${isOpen ? 'block' : 'hidden'}`}
                   >
@@ -177,7 +189,7 @@ export function Footer() {
                           href={link.href}
                           className="inline-block rounded py-1 text-sm text-foreground-muted transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none"
                         >
-                          {link.label}
+                          {t(`links.${link.key}`)}
                         </Link>
                       </li>
                     ))}
@@ -193,10 +205,10 @@ export function Footer() {
           {/* Bottom bar */}
           <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-glass-border pt-8 sm:flex-row">
             <p className="text-xs text-foreground-muted">
-              &copy; {new Date().getFullYear()} LumenShore Ltd. All rights reserved.
+              &copy; {new Date().getFullYear()} {t('copyright')}
             </p>
             <p className="text-xs text-foreground-muted">
-              Made with care in the United Kingdom
+              {t('madeIn')}
             </p>
           </div>
         </div>

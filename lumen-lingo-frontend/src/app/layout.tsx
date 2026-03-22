@@ -2,12 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Header } from '@/components/layout/header';
-import { Footer } from '@/components/layout/footer';
-import { RouteProgress } from '@/components/layout/route-progress';
-import { NetworkStatus } from '@/components/layout/network-status';
-import { ServiceWorkerRegistration } from '@/components/layout/service-worker-registration';
-import { UtmCapture } from '@/components/analytics';
+import { getLocale } from 'next-intl/server';
 import { APP_STORE_ID } from '@/lib/appStoreConfig';
 import './globals.css';
 
@@ -37,23 +32,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}>
+    <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}>
       <body className="min-h-full bg-background text-foreground">
-        <RouteProgress />
-        <Header />
-        <main id="main-content">{children}</main>
-        <Footer />
+        {children}
         <Analytics />
         <SpeedInsights />
-        <UtmCapture />
-        <NetworkStatus />
-        <ServiceWorkerRegistration />
       </body>
     </html>
   );

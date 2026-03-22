@@ -5,6 +5,7 @@ import { motion, useMotionValue, useSpring, type PanInfo } from 'framer-motion';
 import { Container, Heading, Text, Section } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { useTranslations } from 'next-intl';
 
 interface Screenshot {
   id: string;
@@ -134,6 +135,7 @@ function DeviceFrame({
 }
 
 export function ScreenshotGallery() {
+  const t = useTranslations('ScreenshotGallery');
   const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const x = useMotionValue(0);
@@ -193,11 +195,10 @@ export function ScreenshotGallery() {
       <Container>
         <FadeIn className="mx-auto mb-16 max-w-2xl text-center">
           <Heading as="h2" gradient>
-            Designed to Inspire
+            {t('heading')}
           </Heading>
           <Text size="lg" colour="secondary" className="mt-4">
-            Every screen crafted with intention. Swipe through and see the
-            attention to detail that makes LumenLingo unique.
+            {t('description')}
           </Text>
         </FadeIn>
       </Container>

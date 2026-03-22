@@ -1574,15 +1574,15 @@
 
 ### Subtasks
 
-- [ ] 13.1.1 — Install and configure `next-intl` with middleware routing
-- [ ] 13.1.2 — Create `src/messages/en.json` with all UI strings extracted from components
-- [ ] 13.1.3 — Create translation files for initial locales: `es.json`, `fr.json` (placeholder content)
-- [ ] 13.1.4 — Refactor all hardcoded UI strings in components to use `useTranslations()`
-- [ ] 13.1.5 — Create `<LanguageSwitcher>` dropdown component with flag icons
-- [ ] 13.1.6 — Add `hreflang` meta tags via `generateMetadata` for all pages
-- [ ] 13.1.7 — Set `<html lang="...">` dynamically in root layout
-- [ ] 13.1.8 — Configure blog MDX to support per-locale content directories
-- [ ] 13.1.9 — Test locale switching: URL updates, content changes, language picker reflects state
+- [x] 13.1.1 — Install and configure `next-intl` with middleware routing
+- [x] 13.1.2 — Create `src/messages/en.json` with all UI strings extracted from components
+- [x] 13.1.3 — Create translation files for initial locales: `es.json`, `fr.json` (placeholder content)
+- [x] 13.1.4 — Refactor all hardcoded UI strings in components to use `useTranslations()`
+- [x] 13.1.5 — Create `<LanguageSwitcher>` dropdown component with flag icons
+- [x] 13.1.6 — Add `hreflang` meta tags via `generateMetadata` for all pages
+- [x] 13.1.7 — Set `<html lang="...">` dynamically in root layout
+- [x] 13.1.8 — Configure blog MDX to support per-locale content directories
+- [x] 13.1.9 — Test locale switching: URL updates, content changes, language picker reflects state
 
 ---
 
@@ -1594,23 +1594,23 @@
 
 ### Acceptance Criteria
 
-- [ ] All UI strings translated to Spanish (navigation, CTAs, form labels, error messages)
-- [ ] Homepage hero, features, and CTA sections have Spanish translations
-- [ ] Pricing page has Spanish translations with localised currency display (if applicable)
-- [ ] At least 3 blog posts translated to Spanish
-- [ ] Spanish pages accessible at `/es/`, `/es/features`, `/es/pricing`, `/es/blog`
+- [x] All UI strings translated to Spanish (navigation, CTAs, form labels, error messages)
+- [x] Homepage hero, features, and CTA sections have Spanish translations
+- [x] Pricing page has Spanish translations with localised currency display (if applicable)
+- [x] At least 3 blog posts translated to Spanish
+- [x] Spanish pages accessible at `/es/`, `/es/features`, `/es/pricing`, `/es/blog`
 - [ ] Translation quality reviewed by a native Spanish speaker
-- [ ] OG tags and metadata use Spanish text for Spanish locale pages
+- [x] OG tags and metadata use Spanish text for Spanish locale pages
 
 ### Subtasks
 
-- [ ] 13.2.1 — Translate `en.json` UI strings to `es.json` (professional or native-speaker review)
-- [ ] 13.2.2 — Translate homepage hero, features, and CTA copy
-- [ ] 13.2.3 — Translate pricing page copy including FAQ answers
-- [ ] 13.2.4 — Translate 3 blog posts (prioritise highest-traffic articles)
+- [x] 13.2.1 — Translate `en.json` UI strings to `es.json` (professional or native-speaker review)
+- [x] 13.2.2 — Translate homepage hero, features, and CTA copy
+- [x] 13.2.3 — Translate pricing page copy including FAQ answers
+- [x] 13.2.4 — Translate 3 blog posts (prioritise highest-traffic articles)
 - [ ] 13.2.5 — Review all Spanish translations with a native speaker
-- [ ] 13.2.6 — Configure Spanish-specific OG metadata
-- [ ] 13.2.7 — Test complete Spanish user journey: homepage → features → pricing → blog → download
+- [x] 13.2.6 — Configure Spanish-specific OG metadata
+- [x] 13.2.7 — Test complete Spanish user journey: homepage → features → pricing → blog → download
 
 ---
 

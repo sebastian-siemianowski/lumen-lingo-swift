@@ -2,20 +2,23 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { getAppStoreUrl } from '@/lib/appStoreUrl';
 import { trackEvent } from '@/lib/analytics';
 import { Container } from '@/components/ui';
+import { LanguageSwitcher } from './language-switcher';
 
 const navLinks = [
-  { href: '/features', label: 'Features' },
-  { href: '/pricing', label: 'Pricing' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/about', label: 'About' },
-];
+  { href: '/features', key: 'features' },
+  { href: '/pricing', key: 'pricing' },
+  { href: '/blog', key: 'blog' },
+  { href: '/about', key: 'about' },
+] as const;
 
 export function Header() {
+  const t = useTranslations('Nav');
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
@@ -84,7 +87,7 @@ export function Header() {
         href="#main-content"
         className="fixed top-2 left-2 z-[100] -translate-y-full rounded-[--radius-button] bg-violet px-4 py-2 text-sm font-medium text-white transition-transform focus:translate-y-0"
       >
-        Skip to content
+        {t('skipToContent')}
       </a>
 
       <header
@@ -116,7 +119,7 @@ export function Header() {
                   href={link.href}
                   className="group relative rounded-[--radius-sm] px-4 py-2 text-sm font-medium text-foreground-secondary transition-colors hover:text-foreground focus-visible:text-foreground focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none"
                 >
-                  {link.label}
+                  {t(link.key)}
                   {/* Slide-in underline */}
                   <span className="absolute bottom-0.5 left-4 right-4 h-[2px] origin-left scale-x-0 rounded-full bg-violet transition-transform duration-300 ease-out group-hover:scale-x-100 group-focus-visible:scale-x-100" />
                 </Link>
@@ -135,8 +138,13 @@ export function Header() {
                 <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                 </svg>
-                Download
+                {t('download')}
               </a>
+            </div>
+
+            {/* Language switcher (desktop) */}
+            <div className="hidden md:flex">
+              <LanguageSwitcher />
             </div>
 
             {/* Mobile hamburger */}
@@ -144,7 +152,7 @@ export function Header() {
               ref={hamburgerRef}
               onClick={() => setMobileOpen(!mobileOpen)}
               className="relative z-50 flex h-11 w-11 items-center justify-center rounded-[--radius-sm] transition-colors hover:bg-white/5 md:hidden"
-              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+              aria-label={mobileOpen ? t('closeMenu') : t('openMenu')}
               aria-expanded={mobileOpen}
             >
               <div className="flex w-5 flex-col gap-[5px]">
@@ -189,7 +197,7 @@ export function Header() {
               ref={mobileMenuRef}
               role="dialog"
               aria-modal="true"
-              aria-label="Mobile navigation"
+              aria-label={t('mobileNav')}
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
@@ -210,7 +218,7 @@ export function Header() {
                         onClick={closeMobile}
                         className="block rounded-[--radius-button] px-4 py-3 text-lg font-medium text-foreground-secondary transition-all hover:bg-white/5 hover:text-foreground"
                       >
-                        {link.label}
+                        {t(link.key)}
                       </Link>
                     </motion.div>
                   ))}
@@ -234,7 +242,7 @@ export function Header() {
                     <svg className="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                       <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                     </svg>
-                    Download Free
+                    {t('downloadFree')}
                   </a>
                 </motion.div>
               </div>
