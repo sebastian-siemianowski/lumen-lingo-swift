@@ -123,6 +123,8 @@ export function AppScreenshot({ src, alt, caption }: AppScreenshotProps) {
             <img
               src={src}
               alt={alt}
+              width={390}
+              height={693}
               className="h-auto w-full"
               loading="lazy"
             />

@@ -1,8 +1,13 @@
+'use client';
+
 import { cn } from '@/lib/utils';
+import { trackEvent } from '@/lib/analytics';
 
 interface AppStoreBadgeProps {
   className?: string;
   size?: 'sm' | 'md' | 'lg';
+  /** Where in the page the badge is rendered — forwarded to analytics. */
+  location?: string;
 }
 
 const sizes = {
@@ -11,10 +16,11 @@ const sizes = {
   lg: 'h-14',
 };
 
-export function AppStoreBadge({ className, size = 'md' }: AppStoreBadgeProps) {
+export function AppStoreBadge({ className, size = 'md', location = 'unknown' }: AppStoreBadgeProps) {
   return (
     <a
       href="#"
+      onClick={() => trackEvent('app_store_click', { location })}
       className={cn(
         'inline-flex items-center gap-2.5 rounded-[--radius-button] border border-white/20 bg-black px-5 py-2.5 transition-all hover:border-white/30 hover:bg-white/5',
         sizes[size],

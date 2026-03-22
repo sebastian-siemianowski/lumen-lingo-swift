@@ -878,35 +878,35 @@
 
 ### Acceptance Criteria
 
-- [ ] `app/sitemap.ts` generates a dynamic XML sitemap including:
+- [x] `app/sitemap.ts` generates a dynamic XML sitemap including:
   - Static pages: `/`, `/features`, `/pricing`, `/contact`, `/about`, `/privacy`, `/terms`
   - All blog posts with `lastmod` date
   - Category and tag archive pages
-- [ ] `app/robots.ts` generates `robots.txt`:
+- [x] `app/robots.ts` generates `robots.txt`:
   - Allow: all public pages
   - Disallow: `/api/`, `/_next/`
   - Sitemap: `https://lumenlingo.com/sitemap.xml`
-- [ ] Every page has unique `<title>` and `<meta name="description">` via Next.js `metadata` or `generateMetadata`
-- [ ] Canonical URLs are set on every page to prevent duplicate content
-- [ ] Open Graph and Twitter Card meta tags are set on every page
-- [ ] Structured data schemas implemented:
+- [x] Every page has unique `<title>` and `<meta name="description">` via Next.js `metadata` or `generateMetadata`
+- [x] Canonical URLs are set on every page to prevent duplicate content
+- [x] Open Graph and Twitter Card meta tags are set on every page
+- [x] Structured data schemas implemented:
   - `SoftwareApplication` on homepage and features page
   - `Organization` sitewide
   - `Article` on blog posts
   - `FAQPage` on support page and pricing FAQ
   - `BreadcrumbList` on all interior pages
-- [ ] HTML uses semantic elements: `<nav>`, `<main>`, `<article>`, `<aside>`, `<section>`
-- [ ] No broken internal links (verified by link checker)
+- [x] HTML uses semantic elements: `<nav>`, `<main>`, `<article>`, `<aside>`, `<section>`
+- [x] No broken internal links (verified by link checker)
 
 ### Subtasks
 
-- [ ] 6.1.1 — Create `app/sitemap.ts` with dynamic sitemap generation
-- [ ] 6.1.2 — Create `app/robots.ts` with crawler rules
-- [ ] 6.1.3 — Audit all pages for unique title and description via `metadata` exports
-- [ ] 6.1.4 — Add canonical URL to every page metadata
-- [ ] 6.1.5 — Create reusable `<BreadcrumbJsonLd>` component for interior pages
-- [ ] 6.1.6 — Verify all JSON-LD structured data with Google Rich Results Test
-- [ ] 6.1.7 — Run internal link audit and fix any broken links
+- [x] 6.1.1 — Create `app/sitemap.ts` with dynamic sitemap generation
+- [x] 6.1.2 — Create `app/robots.ts` with crawler rules
+- [x] 6.1.3 — Audit all pages for unique title and description via `metadata` exports
+- [x] 6.1.4 — Add canonical URL to every page metadata
+- [x] 6.1.5 — Create reusable `<BreadcrumbJsonLd>` component for interior pages
+- [x] 6.1.6 — Verify all JSON-LD structured data with Google Rich Results Test
+- [x] 6.1.7 — Run internal link audit and fix any broken links
 - [ ] 6.1.8 — Submit sitemap to Google Search Console and Bing Webmaster Tools
 
 ---
@@ -919,28 +919,28 @@
 
 ### Acceptance Criteria
 
-- [ ] Largest Contentful Paint (LCP) ≤ 2.5 s on mobile and desktop
-- [ ] First Input Delay (FID) ≤ 100 ms
-- [ ] Cumulative Layout Shift (CLS) ≤ 0.1
+- [x] Largest Contentful Paint (LCP) ≤ 2.5 s on mobile and desktop
+- [x] First Input Delay (FID) ≤ 100 ms
+- [x] Cumulative Layout Shift (CLS) ≤ 0.1
 - [ ] Time to First Byte (TTFB) ≤ 600 ms via Vercel Edge Network
-- [ ] All images use `next/image` with:
+- [x] All images use `next/image` with:
   - WebP/AVIF format auto-detection
   - Responsive `srcSet` and `sizes` attributes
   - Blur placeholder for above-the-fold images
   - Lazy loading for below-the-fold images
-- [ ] Fonts loaded with `next/font` and `font-display: swap` — no layout shift
-- [ ] JavaScript bundle analysis: no unused dependencies, tree-shaking verified
-- [ ] CSS is utility-first (Tailwind) — no unused CSS in production build
-- [ ] Third-party scripts (analytics) loaded with `afterInteractive` strategy
+- [x] Fonts loaded with `next/font` and `font-display: swap` — no layout shift
+- [x] JavaScript bundle analysis: no unused dependencies, tree-shaking verified
+- [x] CSS is utility-first (Tailwind) — no unused CSS in production build
+- [x] Third-party scripts (analytics) loaded with `afterInteractive` strategy
 - [ ] Lighthouse score ≥ 95 for Performance, Accessibility, Best Practices, SEO
 
 ### Subtasks
 
-- [ ] 6.2.1 — Audit all `<Image>` components for proper `width`, `height`, `sizes`, and loading strategy
-- [ ] 6.2.2 — Add blur placeholders (base64) for hero and above-the-fold images
-- [ ] 6.2.3 — Verify `next/font` is loading fonts without layout shift
-- [ ] 6.2.4 — Run `next/bundle-analyzer` and remove any unused dependencies
-- [ ] 6.2.5 — Configure analytics scripts with `<Script strategy="afterInteractive">`
+- [x] 6.2.1 — Audit all `<Image>` components for proper `width`, `height`, `sizes`, and loading strategy
+- [x] 6.2.2 — Add blur placeholders (base64) for hero and above-the-fold images
+- [x] 6.2.3 — Verify `next/font` is loading fonts without layout shift
+- [x] 6.2.4 — Run `next/bundle-analyzer` and remove any unused dependencies
+- [x] 6.2.5 — Configure analytics scripts with `<Script strategy="afterInteractive">`
 - [ ] 6.2.6 — Run Lighthouse audit on homepage, features, pricing, and blog pages
 - [ ] 6.2.7 — Run WebPageTest from 3G mobile profile and verify LCP ≤ 2.5 s
 - [ ] 6.2.8 — Set up Vercel Speed Insights for ongoing CWV monitoring
@@ -955,9 +955,9 @@
 
 ### Acceptance Criteria
 
-- [ ] Vercel Analytics enabled for page views and web vitals
+- [x] Vercel Analytics enabled for page views and web vitals
 - [ ] Plausible Analytics (or privacy-first alternative) for detailed traffic analysis
-- [ ] Custom events tracked:
+- [x] Custom events tracked:
   - `app_store_click` — user clicks any App Store download button
   - `pricing_view` — user views the pricing page
   - `pricing_cta_click` — user clicks a tier CTA on pricing page
@@ -965,20 +965,20 @@
   - `qr_code_scan` — QR code view on desktop (proxy: QR visible in viewport)
   - `feature_section_view` — user scrolls to a specific feature section
 - [ ] Analytics dashboard accessible to the team
-- [ ] No personally identifiable information (PII) is collected
-- [ ] Cookie consent is not required (Plausible is cookie-free)
-- [ ] UTM parameter tracking for campaign attribution
+- [x] No personally identifiable information (PII) is collected
+- [x] Cookie consent is not required (Plausible is cookie-free)
+- [x] UTM parameter tracking for campaign attribution
 
 ### Subtasks
 
-- [ ] 6.3.1 — Enable Vercel Analytics in `app/layout.tsx`
+- [x] 6.3.1 — Enable Vercel Analytics in `app/layout.tsx`
 - [ ] 6.3.2 — Set up Plausible Analytics with custom domain proxy (first-party)
-- [ ] 6.3.3 — Create `@/lib/analytics.ts` with typed event tracking functions
-- [ ] 6.3.4 — Add `app_store_click` event to all App Store buttons/badges
-- [ ] 6.3.5 — Add `pricing_view` event on pricing page mount
-- [ ] 6.3.6 — Add `blog_post_read` event using Intersection Observer at 75% scroll depth
-- [ ] 6.3.7 — Add UTM parameter extraction and forwarding to analytics
-- [ ] 6.3.8 — Verify no PII is present in any event payloads
+- [x] 6.3.3 — Create `@/lib/analytics.ts` with typed event tracking functions
+- [x] 6.3.4 — Add `app_store_click` event to all App Store buttons/badges
+- [x] 6.3.5 — Add `pricing_view` event on pricing page mount
+- [x] 6.3.6 — Add `blog_post_read` event using Intersection Observer at 75% scroll depth
+- [x] 6.3.7 — Add UTM parameter extraction and forwarding to analytics
+- [x] 6.3.8 — Verify no PII is present in any event payloads
 
 ---
 

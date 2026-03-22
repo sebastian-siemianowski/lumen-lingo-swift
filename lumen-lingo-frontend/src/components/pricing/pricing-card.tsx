@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { trackEvent } from '@/lib/analytics';
 
 /* ─── Types ─── */
 export type Tier = 'free' | 'pro' | 'elite' | 'royal';
@@ -173,6 +174,10 @@ export function PricingCard({
         href="https://apps.apple.com/app/lumenlingo"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => {
+          trackEvent('app_store_click', { location: `pricing_${tier}` });
+          trackEvent('pricing_cta_click', { tier });
+        }}
         className={cn(
           'block rounded-xl px-6 py-3 text-center text-sm font-semibold transition-colors',
           style.cta,

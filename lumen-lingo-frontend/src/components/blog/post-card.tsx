@@ -11,6 +11,7 @@ interface PostCardProps {
   post: BlogPost;
   index?: number;
   featured?: boolean;
+  priority?: boolean;
 }
 
 const categoryColors: Record<string, string> = {
@@ -21,7 +22,7 @@ const categoryColors: Record<string, string> = {
   Guides: 'bg-[--color-violet]/15 text-[--color-violet]',
 };
 
-export function PostCard({ post, index = 0, featured = false }: PostCardProps) {
+export function PostCard({ post, index = 0, featured = false, priority = false }: PostCardProps) {
   const prefersReduced = useReducedMotion();
   const { frontmatter, slug } = post;
 
@@ -58,6 +59,7 @@ export function PostCard({ post, index = 0, featured = false }: PostCardProps) {
               src={frontmatter.image}
               alt={frontmatter.title}
               fill
+              priority={priority}
               sizes={featured ? '(max-width: 768px) 100vw, 50vw' : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'}
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />

@@ -11,6 +11,31 @@ export function JsonLd({ data }: JsonLdProps) {
   );
 }
 
+interface BreadcrumbItem {
+  name: string;
+  href: string;
+}
+
+export function BreadcrumbJsonLd({ items }: { items: BreadcrumbItem[] }) {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      item: `https://lumenlingo.com${item.href}`,
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
 export const softwareApplicationLd = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',

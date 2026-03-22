@@ -3,6 +3,7 @@ import { Suspense } from 'react';
 import { getAllPosts, getPostsByCategory, getFeaturedPost, paginatePosts } from '@/lib/blog';
 import { BlogHero, PostCard, CategoryFilter, Pagination } from '@/components/blog';
 import { PageTransition } from '@/components/layout';
+import { BreadcrumbJsonLd } from '@/components/home';
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -50,6 +51,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 
   return (
     <PageTransition>
+      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }]} />
       <BlogHero />
 
       <section className="relative mx-auto max-w-7xl px-6 pb-24 sm:px-8 lg:px-12">
@@ -60,7 +62,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         {/* Featured post */}
         {featured && page === 1 && !category && (
           <div className="mb-12">
-            <PostCard post={featured} featured />
+            <PostCard post={featured} featured priority />
           </div>
         )}
 

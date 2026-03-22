@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { PricingHero, PricingGrid, FeatureComparisonTable, PricingFAQ, faqItems } from '@/components/pricing';
-import { CTABanner, JsonLd } from '@/components/home';
+import { CTABanner, JsonLd, BreadcrumbJsonLd } from '@/components/home';
 import { PageTransition } from '@/components/layout';
+import { PageViewTracker } from '@/components/analytics';
 
 export const metadata: Metadata = {
   title: 'Pricing',
@@ -107,8 +108,10 @@ const faqLd = {
 export default function PricingPage() {
   return (
     <PageTransition>
+      <PageViewTracker event="pricing_view" />
       <JsonLd data={productLd} />
       <JsonLd data={faqLd} />
+      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Pricing', href: '/pricing' }]} />
       <PricingHero />
       <PricingGrid />
       <FeatureComparisonTable />

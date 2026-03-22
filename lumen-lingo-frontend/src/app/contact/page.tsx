@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { FAQAccordion, ContactSection, contactFaqItems } from '@/components/contact';
-import { JsonLd } from '@/components/home';
+import { JsonLd, BreadcrumbJsonLd } from '@/components/home';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
@@ -54,6 +54,7 @@ export default function ContactPage() {
   return (
     <PageTransition>
       <JsonLd data={faqLd} />
+      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Help & Contact', href: '/contact' }]} />
 
       {/* Hero */}
       <Section className="pt-32 pb-8 sm:pt-40 sm:pb-12">

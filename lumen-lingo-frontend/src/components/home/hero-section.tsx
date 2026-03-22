@@ -54,7 +54,7 @@ export function HeroSection() {
 
             {/* CTA group */}
             <StaggerItem className="mt-8 flex flex-wrap items-center gap-4">
-              <AppStoreBadge />
+              <AppStoreBadge location="hero" />
               <Button variant="ghost" size="lg" className="gap-2">
                 <svg
                   className="h-5 w-5"

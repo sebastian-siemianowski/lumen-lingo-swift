@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   getAllPosts,
@@ -12,7 +13,8 @@ import { PostCard } from '@/components/blog/post-card';
 import { TableOfContents } from '@/components/blog/table-of-contents';
 import { ShareButtons } from '@/components/blog/share-buttons';
 import { PageTransition } from '@/components/layout';
-import { JsonLd } from '@/components/home';
+import { JsonLd, BreadcrumbJsonLd } from '@/components/home';
+import { ScrollDepthTracker } from '@/components/analytics';
 
 // ─── Static params for SSG ─────────────────────────────────────────
 export function generateStaticParams() {
@@ -94,6 +96,7 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
   return (
     <PageTransition>
       <JsonLd data={articleLd} />
+      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }, { name: frontmatter.title, href: `/blog/${slug}` }]} />
 
       <article>
         {/* Header */}
@@ -101,10 +104,13 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
           {/* Cover image or gradient */}
           <div className="relative h-[40vh] min-h-[320px]">
             {frontmatter.image ? (
-              <img
+              <Image
                 src={frontmatter.image}
                 alt={frontmatter.title}
-                className="h-full w-full object-cover"
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover"
               />
             ) : (
               <div className="h-full w-full bg-gradient-to-br from-[--color-violet]/20 via-[--color-surface] to-[--color-cyan]/20" />
@@ -173,6 +179,7 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
           <div className="relative xl:grid xl:grid-cols-[1fr_220px] xl:gap-12">
             <div className="prose-lumenlingo mx-auto max-w-[720px]">
               <MDXContent source={content} />
+              <ScrollDepthTracker slug={slug} title={frontmatter.title} />
             </div>
             <aside className="hidden xl:block">
               <TableOfContents content={content} />

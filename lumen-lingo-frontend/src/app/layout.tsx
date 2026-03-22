@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import { UtmCapture } from '@/components/analytics';
 import './globals.css';
 
 const inter = Inter({
@@ -38,6 +41,9 @@ export default function RootLayout({
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
+        <UtmCapture />
       </body>
     </html>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getAllCategories, getPostsByCategory, paginatePosts } from '@/lib/blog';
 import { PostCard, Pagination } from '@/components/blog';
 import { PageTransition } from '@/components/layout';
+import { BreadcrumbJsonLd } from '@/components/home';
 import Link from 'next/link';
 
 export function generateStaticParams() {
@@ -24,6 +25,20 @@ export async function generateMetadata({
     alternates: {
       canonical: `https://lumenlingo.com/blog/category/${category}`,
     },
+    openGraph: {
+      title: `${decoded} — LumenLingo Blog`,
+      description: `Browse LumenLingo blog posts in the ${decoded} category.`,
+      url: `https://lumenlingo.com/blog/category/${category}`,
+      siteName: 'LumenLingo',
+      type: 'website',
+      images: [{ url: '/og-image.png', width: 1200, height: 630, alt: `${decoded} — LumenLingo Blog` }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${decoded} — LumenLingo Blog`,
+      description: `Browse LumenLingo blog posts in the ${decoded} category.`,
+      images: ['/og-image.png'],
+    },
   };
 }
 
@@ -37,6 +52,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
 
   return (
     <PageTransition>
+      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }, { name: decoded, href: `/blog/category/${category}` }]} />
       <section className="relative pt-32 pb-20 sm:pt-40">
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           {/* Breadcrumb */}

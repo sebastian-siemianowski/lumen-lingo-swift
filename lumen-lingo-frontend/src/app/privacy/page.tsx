@@ -3,6 +3,7 @@ import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { LegalTOC, DownloadPDFButton } from '@/components/legal';
+import { BreadcrumbJsonLd } from '@/components/home';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
@@ -44,6 +45,8 @@ const tocItems = [
 export default function PrivacyPage() {
   return (
     <PageTransition>
+      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Privacy Policy', href: '/privacy' }]} />
+
       {/* Hero */}
       <Section className="pt-32 pb-8 sm:pt-40 sm:pb-12">
         <Container className="max-w-4xl">

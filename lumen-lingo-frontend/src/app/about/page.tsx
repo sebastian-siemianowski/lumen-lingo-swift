@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
-import { CTABanner, JsonLd, organizationLd } from '@/components/home';
+import { CTABanner, JsonLd, BreadcrumbJsonLd, organizationLd } from '@/components/home';
 import { ValueCards } from '@/components/about/value-cards';
 import { Timeline } from '@/components/about/timeline';
 
@@ -33,6 +33,7 @@ export default function AboutPage() {
   return (
     <PageTransition>
       <JsonLd data={organizationLd} />
+      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'About', href: '/about' }]} />
 
       {/* Hero */}
       <Section className="relative overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-20">

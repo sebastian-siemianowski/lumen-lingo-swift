@@ -3,6 +3,7 @@ import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { LegalTOC, DownloadPDFButton } from '@/components/legal';
+import { BreadcrumbJsonLd } from '@/components/home';
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
@@ -46,6 +47,8 @@ const tocItems = [
 export default function TermsPage() {
   return (
     <PageTransition>
+      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Terms of Service', href: '/terms' }]} />
+
       {/* Hero */}
       <Section className="pt-32 pb-8 sm:pt-40 sm:pb-12">
         <Container className="max-w-4xl">
