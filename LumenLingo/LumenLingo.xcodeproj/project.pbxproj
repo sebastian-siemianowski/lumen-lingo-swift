@@ -298,6 +298,7 @@
 		1FB2375AD490242C723FC30E /* wordbuilder_polish_ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_ukrainian.json; sourceTree = "<group>"; };
 		1FC0C0DB194CFC6D81344A4F /* grammar_polish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_english.json; sourceTree = "<group>"; };
 		20DA8FA91B2C310EC779DC40 /* PerformanceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
+		214C76E03A5E16042A59E9DD /* Dev-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dev-Release.xcconfig"; sourceTree = "<group>"; };
 		21F05258ABE2A1A6CEA8E742 /* wordbuilder_spanish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_spanish_english.json; sourceTree = "<group>"; };
 		2378260414FE146694223E05 /* flashcards_english_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_spanish.json; sourceTree = "<group>"; };
 		2426F02F8E3AB9B6634761D6 /* flashcards_polish_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_arabic.json; sourceTree = "<group>"; };
@@ -348,6 +349,7 @@
 		533FA37F2ECDF2DAF07D198E /* wordbuilder_english_chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_chinese.json; sourceTree = "<group>"; };
 		534F80BB19C4E83CA6907874 /* LumenLingo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LumenLingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B3BC180E8CA6F328FF7C7F /* OfflineBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineBanner.swift; sourceTree = "<group>"; };
+		53F63F2A2B70237F8063C172 /* Prod-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Prod-Release.xcconfig"; sourceTree = "<group>"; };
 		5477D11222E706CD9576D790 /* XPMultiplierBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPMultiplierBadge.swift; sourceTree = "<group>"; };
 		55B9BA72516085422014F289 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		566E812340AC148093E2BF00 /* LanguagePairBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePairBadge.swift; sourceTree = "<group>"; };
@@ -405,17 +407,22 @@
 		8D758E0FCC818F2BA8CE747E /* UpgradePromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradePromptView.swift; sourceTree = "<group>"; };
 		8D7E271F15AB922B3AF19043 /* NebulaDriftSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaDriftSettingsView.swift; sourceTree = "<group>"; };
 		8EE1A87C9FE959A341B5B7EF /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		8FC4317264EB1927EAB72088 /* UAT-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "UAT-Debug.xcconfig"; sourceTree = "<group>"; };
+		9137F31FD8583C6952CF681B /* PreProd-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "PreProd-Debug.xcconfig"; sourceTree = "<group>"; };
 		927863E6ECF97AE41A78326D /* MembershipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipView.swift; sourceTree = "<group>"; };
 		934EFECE842530C820F715B2 /* grammar_english_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_english_german.json; sourceTree = "<group>"; };
 		95F5473D12BA0C8348F8BD61 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		95FCC09C61438703625C0B4F /* QA-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "QA-Release.xcconfig"; sourceTree = "<group>"; };
 		97E0E826DB4B9AC7450DB492 /* SolarAuroraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarAuroraView.swift; sourceTree = "<group>"; };
 		9ABE46716764CD468292614F /* CosmicStarTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CosmicStarTypes.h; sourceTree = "<group>"; };
 		9B08B450C156D682E189D898 /* wordbuilder_english_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_arabic.json; sourceTree = "<group>"; };
+		9C594EE9EEEAEFE3C38B510F /* UAT-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "UAT-Release.xcconfig"; sourceTree = "<group>"; };
 		9DD06C49CE0742785FB126D2 /* EdgeOfAndromedaPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = EdgeOfAndromedaPreset.metal; sourceTree = "<group>"; };
 		9DEB257B68C610CCEA553916 /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
 		9E1FE9FEB595A6DB1EF724B9 /* AppStrings+Spanish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Spanish.swift"; sourceTree = "<group>"; };
 		9E8FCD7819D46F40F48FCD4D /* LockedFeatureIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedFeatureIndicator.swift; sourceTree = "<group>"; };
 		9F049FEAB56C3145BCF41D5A /* GrammarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarViewModel.swift; sourceTree = "<group>"; };
+		A027C75AA8DF08D073972178 /* Prod-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Prod-Debug.xcconfig"; sourceTree = "<group>"; };
 		A02AB5B911E71E7D7B839369 /* grammar_arabic_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_arabic_english.json; sourceTree = "<group>"; };
 		A04E6F0294D1C986283316B3 /* TierUpgradeCelebrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierUpgradeCelebrationView.swift; sourceTree = "<group>"; };
 		A09DE5B1813E2A548A69FE53 /* flashcards_polish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_english.json; sourceTree = "<group>"; };
@@ -423,6 +430,7 @@
 		A1043A7A28122A7496303992 /* AppStrings+English.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+English.swift"; sourceTree = "<group>"; };
 		A258E34605BA4E0F602DFD6A /* CosmicStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CosmicStars.metal; sourceTree = "<group>"; };
 		A46D9B996CC8601EBBCCB4AA /* LagoonNebulaPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LagoonNebulaPreset.metal; sourceTree = "<group>"; };
+		A4BF9E8AEC26B2E8CE19CF09 /* PreProd-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "PreProd-Release.xcconfig"; sourceTree = "<group>"; };
 		A4DD27AFCE378D73D79D9A34 /* wordbuilder_polish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_english.json; sourceTree = "<group>"; };
 		A55C2F133F96E1EF1211904B /* flashcards_ukrainian_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_ukrainian_polish.json; sourceTree = "<group>"; };
 		A6FABAF4877C72BE148A277B /* SoundscapeNowPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapeNowPlaying.swift; sourceTree = "<group>"; };
@@ -455,12 +463,14 @@
 		C05E56A1813CCC4B9C21576A /* PremiumFeatureCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumFeatureCarousel.swift; sourceTree = "<group>"; };
 		C0A16D5C93EC371A3F0F50EF /* wordbuilder_english_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_german.json; sourceTree = "<group>"; };
 		C2522C1400407731C720E317 /* grammar_japanese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_japanese_english.json; sourceTree = "<group>"; };
+		C2D5B3F0150DC2B392ACFC14 /* Dev-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dev-Debug.xcconfig"; sourceTree = "<group>"; };
 		C71ECFF5B79F4F2875BBAB02 /* CosmicPostProcess.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CosmicPostProcess.metal; sourceTree = "<group>"; };
 		C7A63D5EEB0001AEFA02084A /* StarFieldGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarFieldGenerator.swift; sourceTree = "<group>"; };
 		C7EC466E954463C21BDA8D3C /* GlassDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassDivider.swift; sourceTree = "<group>"; };
 		C9D2B89837318B6C8338C74C /* TierOnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierOnboardingFlow.swift; sourceTree = "<group>"; };
 		CA489005CB604BAA943FEB42 /* CollapsibleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleSection.swift; sourceTree = "<group>"; };
 		CA4D04FA3A066C26F1C83DBB /* LanguagePairUpgradeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePairUpgradeSheet.swift; sourceTree = "<group>"; };
+		CB63DC3B2913D4BB5CC6C141 /* QA-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "QA-Debug.xcconfig"; sourceTree = "<group>"; };
 		CB69D9C4EC1875372CCD7552 /* ConnectivitySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivitySettingsView.swift; sourceTree = "<group>"; };
 		CB8C0791AB4D515F992AC1E7 /* StarburstRingPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = StarburstRingPreset.metal; sourceTree = "<group>"; };
 		CC0A2E51F66FCC679DA2A5D0 /* wordbuilder_polish_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_spanish.json; sourceTree = "<group>"; };
@@ -577,6 +587,23 @@
 				2A37D0B6CA9D686E2F337F28 /* StarburstStars.metal */,
 			);
 			path = Shaders;
+			sourceTree = "<group>";
+		};
+		1EAA6F617D6AFBC35B997E39 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C2D5B3F0150DC2B392ACFC14 /* Dev-Debug.xcconfig */,
+				214C76E03A5E16042A59E9DD /* Dev-Release.xcconfig */,
+				9137F31FD8583C6952CF681B /* PreProd-Debug.xcconfig */,
+				A4BF9E8AEC26B2E8CE19CF09 /* PreProd-Release.xcconfig */,
+				A027C75AA8DF08D073972178 /* Prod-Debug.xcconfig */,
+				53F63F2A2B70237F8063C172 /* Prod-Release.xcconfig */,
+				CB63DC3B2913D4BB5CC6C141 /* QA-Debug.xcconfig */,
+				95FCC09C61438703625C0B4F /* QA-Release.xcconfig */,
+				8FC4317264EB1927EAB72088 /* UAT-Debug.xcconfig */,
+				9C594EE9EEEAEFE3C38B510F /* UAT-Release.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		23C5E8B666CA26CE2109C8B4 /* english_japanese */ = {
@@ -697,6 +724,7 @@
 		3E59382009EA29707A881979 = {
 			isa = PBXGroup;
 			children = (
+				1EAA6F617D6AFBC35B997E39 /* Config */,
 				0017D5437595FBF8754D4373 /* LumenLingo */,
 				B672693BE6F49635E9CD57D3 /* LumenLingoTests */,
 				2615A92C2CF694FD9BCC87CC /* Products */,
@@ -1202,6 +1230,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					E5866F4B11D47F4E9F81CE4F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 0F102B70FBE84AB1DCC9FB7E /* Build configuration list for PBXProject "LumenLingo" */;
@@ -1554,7 +1586,6 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				xcconfig = "Config/Prod-Release.xcconfig";
 			};
 			name = "Prod-Release";
 		};
@@ -1577,17 +1608,15 @@
 		};
 		2EF96D7E0F50FF22EE311C54 /* PreProd-Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9137F31FD8583C6952CF681B /* PreProd-Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.LumenLingo;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "PreProd-Debug";
 		};
@@ -1610,17 +1639,15 @@
 		};
 		36677EB684B62306569BE7FC /* Prod-Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A027C75AA8DF08D073972178 /* Prod-Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.LumenLingo;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Prod-Debug";
 		};
@@ -1684,7 +1711,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				xcconfig = "Config/PreProd-Debug.xcconfig";
 			};
 			name = "PreProd-Debug";
 		};
@@ -1741,17 +1767,15 @@
 		};
 		5F01CBDF738729103B3986F3 /* Prod-Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F63F2A2B70237F8063C172 /* Prod-Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.LumenLingo;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Prod-Release";
 		};
@@ -1815,7 +1839,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				xcconfig = "Config/QA-Debug.xcconfig";
 			};
 			name = "QA-Debug";
 		};
@@ -1889,23 +1912,20 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				xcconfig = "Config/QA-Release.xcconfig";
 			};
 			name = "QA-Release";
 		};
 		95D0BBCD3370A486DB06DAEE /* UAT-Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC4317264EB1927EAB72088 /* UAT-Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.LumenLingo;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "UAT-Debug";
 		};
@@ -1969,7 +1989,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				xcconfig = "Config/Dev-Debug.xcconfig";
 			};
 			name = "Dev-Debug";
 		};
@@ -2026,23 +2045,20 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				xcconfig = "Config/UAT-Release.xcconfig";
 			};
 			name = "UAT-Release";
 		};
 		A210AD92FAB2FF9007EBDD83 /* Dev-Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 214C76E03A5E16042A59E9DD /* Dev-Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.LumenLingo;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Dev-Release";
 		};
@@ -2099,39 +2115,34 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				xcconfig = "Config/Dev-Release.xcconfig";
 			};
 			name = "Dev-Release";
 		};
 		AEDE06D7F8CF495D0B967743 /* Dev-Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D5B3F0150DC2B392ACFC14 /* Dev-Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.LumenLingo;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Dev-Debug";
 		};
 		B313285E6055CD3FDA79D7DE /* QA-Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB63DC3B2913D4BB5CC6C141 /* QA-Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.LumenLingo;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "QA-Debug";
 		};
@@ -2205,7 +2216,6 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				xcconfig = "Config/PreProd-Release.xcconfig";
 			};
 			name = "PreProd-Release";
 		};
@@ -2269,23 +2279,20 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				xcconfig = "Config/Prod-Debug.xcconfig";
 			};
 			name = "Prod-Debug";
 		};
 		D7FC5D7B2306B2235352808B /* UAT-Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C594EE9EEEAEFE3C38B510F /* UAT-Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.LumenLingo;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "UAT-Release";
 		};
@@ -2308,17 +2315,15 @@
 		};
 		E16F8C451E094CA96ED29E88 /* PreProd-Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4BF9E8AEC26B2E8CE19CF09 /* PreProd-Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.LumenLingo;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "PreProd-Release";
 		};
@@ -2358,17 +2363,15 @@
 		};
 		F490246010FB6CBED2E571DF /* QA-Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95FCC09C61438703625C0B4F /* QA-Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.LumenLingo;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "QA-Release";
 		};
@@ -2432,7 +2435,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				xcconfig = "Config/UAT-Debug.xcconfig";
 			};
 			name = "UAT-Debug";
 		};

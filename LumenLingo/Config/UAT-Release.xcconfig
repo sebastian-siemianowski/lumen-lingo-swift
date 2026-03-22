@@ -4,7 +4,7 @@
 // ─── Identity ─────────────────────────────────────────────────
 PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.app.uat
 PRODUCT_NAME = LL UAT
-ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-UAT
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
 
 // ─── Environment ──────────────────────────────────────────────
 LL_ENVIRONMENT = uat

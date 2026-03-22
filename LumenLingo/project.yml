@@ -1,6 +1,5 @@
 name: LumenLingo
 options:
-  bundleIdPrefix: com.lumenlingo
   deploymentTarget:
     iOS: "26.0"
   xcodeVersion: "26.0"
@@ -18,29 +17,6 @@ configs:
   PreProd-Release: release
   Prod-Debug: debug
   Prod-Release: release
-
-settings:
-  configs:
-    Dev-Debug:
-      xcconfig: Config/Dev-Debug.xcconfig
-    Dev-Release:
-      xcconfig: Config/Dev-Release.xcconfig
-    QA-Debug:
-      xcconfig: Config/QA-Debug.xcconfig
-    QA-Release:
-      xcconfig: Config/QA-Release.xcconfig
-    UAT-Debug:
-      xcconfig: Config/UAT-Debug.xcconfig
-    UAT-Release:
-      xcconfig: Config/UAT-Release.xcconfig
-    PreProd-Debug:
-      xcconfig: Config/PreProd-Debug.xcconfig
-    PreProd-Release:
-      xcconfig: Config/PreProd-Release.xcconfig
-    Prod-Debug:
-      xcconfig: Config/Prod-Debug.xcconfig
-    Prod-Release:
-      xcconfig: Config/Prod-Release.xcconfig
 
 targets:
   LumenLingo:
@@ -78,10 +54,20 @@ targets:
         LLApiBaseURL: $(LL_API_BASE_URL)
         LLLogLevel: $(LL_LOG_LEVEL)
     settings:
-      base:
-        # Bundle ID and product name come from xcconfig per-environment
+      base: {}
         # TODO: Re-enable once iCloud entitlement is provisioned (see ICloud-sync.md)
         # CODE_SIGN_ENTITLEMENTS: LumenLingo/LumenLingo.entitlements
+    configFiles:
+      Dev-Debug: Config/Dev-Debug.xcconfig
+      Dev-Release: Config/Dev-Release.xcconfig
+      QA-Debug: Config/QA-Debug.xcconfig
+      QA-Release: Config/QA-Release.xcconfig
+      UAT-Debug: Config/UAT-Debug.xcconfig
+      UAT-Release: Config/UAT-Release.xcconfig
+      PreProd-Debug: Config/PreProd-Debug.xcconfig
+      PreProd-Release: Config/PreProd-Release.xcconfig
+      Prod-Debug: Config/Prod-Debug.xcconfig
+      Prod-Release: Config/Prod-Release.xcconfig
 
   LumenLingoTests:
     type: bundle.unit-test

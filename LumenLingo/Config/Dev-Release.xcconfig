@@ -4,7 +4,7 @@
 // ─── Identity ─────────────────────────────────────────────────
 PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.app.dev
 PRODUCT_NAME = LL Dev
-ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-Dev
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
 
 // ─── Environment ──────────────────────────────────────────────
 LL_ENVIRONMENT = dev

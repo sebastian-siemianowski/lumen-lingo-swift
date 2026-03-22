@@ -4,7 +4,7 @@
 // ─── Identity ─────────────────────────────────────────────────
 PRODUCT_BUNDLE_IDENTIFIER = com.lumenlingo.app.preprod
 PRODUCT_NAME = LL PreProd
-ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-PreProd
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
 
 // ─── Environment ──────────────────────────────────────────────
 LL_ENVIRONMENT = preprod
