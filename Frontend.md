@@ -50,22 +50,22 @@
 
 ### Acceptance Criteria
 
-- [ ] Repository `lumen-lingo-frontend` is created with a clean `main` branch and branch protection rules
-- [ ] `npx create-next-app@latest` with App Router, TypeScript, Tailwind CSS, ESLint, and `src/` directory
-- [ ] `tsconfig.json` has `"strict": true`, `"noUncheckedIndexedAccess": true`
-- [ ] Tailwind config extends the LumenShore design tokens (colours, fonts, spacing, border-radius)
-- [ ] ESLint + Prettier configured with consistent formatting rules
-- [ ] `.nvmrc` pins Node.js 22 LTS
-- [ ] `README.md` documents local setup, environment variables, and project structure
+- [x] Repository `lumen-lingo-frontend` is created with a clean `main` branch and branch protection rules
+- [x] `npx create-next-app@latest` with App Router, TypeScript, Tailwind CSS, ESLint, and `src/` directory
+- [x] `tsconfig.json` has `"strict": true`, `"noUncheckedIndexedAccess": true`
+- [x] Tailwind config extends the LumenShore design tokens (colours, fonts, spacing, border-radius)
+- [x] ESLint + Prettier configured with consistent formatting rules
+- [x] `.nvmrc` pins Node.js 22 LTS
+- [x] `README.md` documents local setup, environment variables, and project structure
 
 ### Subtasks
 
-- [ ] 1.1.1 — Run `create-next-app` with App Router + TypeScript + Tailwind CSS + ESLint + `src/` directory
-- [ ] 1.1.2 — Configure `tsconfig.json` with strict settings and path aliases (`@/components`, `@/lib`, etc.)
-- [ ] 1.1.3 — Install and configure Prettier with Tailwind CSS class sorting plugin
-- [ ] 1.1.4 — Add `.nvmrc` (Node 22), `.editorconfig`, and `.gitignore` refinements
-- [ ] 1.1.5 — Create `README.md` with setup instructions, scripts, and architecture overview
-- [ ] 1.1.6 — Verify `npm run dev`, `npm run build`, and `npm run lint` all pass cleanly
+- [x] 1.1.1 — Run `create-next-app` with App Router + TypeScript + Tailwind CSS + ESLint + `src/` directory
+- [x] 1.1.2 — Configure `tsconfig.json` with strict settings and path aliases (`@/components`, `@/lib`, etc.)
+- [x] 1.1.3 — Install and configure Prettier with Tailwind CSS class sorting plugin
+- [x] 1.1.4 — Add `.nvmrc` (Node 22), `.editorconfig`, and `.gitignore` refinements
+- [x] 1.1.5 — Create `README.md` with setup instructions, scripts, and architecture overview
+- [x] 1.1.6 — Verify `npm run dev`, `npm run build`, and `npm run lint` all pass cleanly
 
 ---
 
@@ -103,29 +103,29 @@
 
 ### Acceptance Criteria
 
-- [ ] `tailwind.config.ts` defines the complete LumenShore colour palette:
+- [x] `tailwind.config.ts` defines the complete LumenShore colour palette:
   - `background`: `#0a0a0f` (deep void), `#111118` (elevated surface), `#1a1a24` (card surface)
   - `foreground`: `#f4f4f5` (primary text), `#a1a1aa` (secondary text), `#71717a` (muted text)
   - `accent-violet`: `#8b5cf6` (primary CTA), `#7c3aed` (hover), `#6d28d9` (active)
   - `accent-cyan`: `#06b6d4` (secondary accent), `#0891b2` (hover)
   - `accent-amber`: `#f59e0b` (rating stars, premium badge)
   - `glass`: `rgba(255, 255, 255, 0.04)` (glass fill), `rgba(255, 255, 255, 0.08)` (glass border)
-- [ ] Typography scale uses `Inter` for body and `Cabinet Grotesk` (or Satoshi) for display
-- [ ] Custom Tailwind utilities: `glass-card`, `glow-violet`, `glow-cyan`, `text-gradient`
-- [ ] Spacing follows an 8 px base grid with named tokens: `section-y` (120 px), `card-gap` (24 px)
-- [ ] Border radius tokens: `card` (16 px), `button` (12 px), `pill` (9999 px)
-- [ ] All tokens are documented in a `DESIGN_TOKENS.md` file
+- [x] Typography scale uses `Inter` for body and `Cabinet Grotesk` (or Satoshi) for display
+- [x] Custom Tailwind utilities: `glass-card`, `glow-violet`, `glow-cyan`, `text-gradient`
+- [x] Spacing follows an 8 px base grid with named tokens: `section-y` (120 px), `card-gap` (24 px)
+- [x] Border radius tokens: `card` (16 px), `button` (12 px), `pill` (9999 px)
+- [x] All tokens are documented in a `DESIGN_TOKENS.md` file
 
 ### Subtasks
 
-- [ ] 1.3.1 — Define colour palette in `tailwind.config.ts` under `theme.extend.colors`
-- [ ] 1.3.2 — Add `Inter` and `Cabinet Grotesk` via `next/font` with font-display swap
-- [ ] 1.3.3 — Create custom Tailwind plugin for glass morphism utilities (`glass-card`, `glass-border`)
-- [ ] 1.3.4 — Create custom Tailwind plugin for glow effects (`glow-violet`, `glow-cyan`, `glow-amber`)
-- [ ] 1.3.5 — Create `text-gradient` utility for gradient text headings
-- [ ] 1.3.6 — Define spacing, border-radius, and shadow tokens
-- [ ] 1.3.7 — Write `DESIGN_TOKENS.md` documenting every token with visual examples
-- [ ] 1.3.8 — Add `globals.css` with CSS custom properties mirroring Tailwind tokens for runtime access
+- [x] 1.3.1 — Define colour palette in `tailwind.config.ts` under `theme.extend.colors`
+- [x] 1.3.2 — Add `Inter` and `Cabinet Grotesk` via `next/font` with font-display swap
+- [x] 1.3.3 — Create custom Tailwind plugin for glass morphism utilities (`glass-card`, `glass-border`)
+- [x] 1.3.4 — Create custom Tailwind plugin for glow effects (`glow-violet`, `glow-cyan`, `glow-amber`)
+- [x] 1.3.5 — Create `text-gradient` utility for gradient text headings
+- [x] 1.3.6 — Define spacing, border-radius, and shadow tokens
+- [x] 1.3.7 — Write `DESIGN_TOKENS.md` documenting every token with visual examples
+- [x] 1.3.8 — Add `globals.css` with CSS custom properties mirroring Tailwind tokens for runtime access
 
 ---
 
@@ -137,26 +137,26 @@
 
 ### Acceptance Criteria
 
-- [ ] `<Button>` component supports variants: `primary` (violet glow), `secondary` (glass), `ghost`, `link`
-- [ ] `<Button>` supports sizes: `sm`, `md`, `lg`, `xl` with appropriate padding and font scaling
-- [ ] `<Button>` includes hover glow animation, press scale (0.97), and focus-visible ring
-- [ ] `<GlassCard>` component renders a frosted glass surface with configurable tint colour, border glow, and hover lift
-- [ ] `<Badge>` component supports `tier` (Pro/Elite/Royal colour), `status`, and `tag` variants
-- [ ] `<Container>` component constrains content to `max-w-7xl` with responsive horizontal padding
-- [ ] `<Section>` component provides vertical rhythm (120 px padding) and optional background pattern
-- [ ] All components forward refs, accept `className` prop, and are compatible with `asChild` composition
-- [ ] All components have TypeScript interfaces with JSDoc comments
+- [x] `<Button>` component supports variants: `primary` (violet glow), `secondary` (glass), `ghost`, `link`
+- [x] `<Button>` supports sizes: `sm`, `md`, `lg`, `xl` with appropriate padding and font scaling
+- [x] `<Button>` includes hover glow animation, press scale (0.97), and focus-visible ring
+- [x] `<GlassCard>` component renders a frosted glass surface with configurable tint colour, border glow, and hover lift
+- [x] `<Badge>` component supports `tier` (Pro/Elite/Royal colour), `status`, and `tag` variants
+- [x] `<Container>` component constrains content to `max-w-7xl` with responsive horizontal padding
+- [x] `<Section>` component provides vertical rhythm (120 px padding) and optional background pattern
+- [x] All components forward refs, accept `className` prop, and are compatible with `asChild` composition
+- [x] All components have TypeScript interfaces with JSDoc comments
 
 ### Subtasks
 
-- [ ] 1.4.1 — Create `<Button>` with variant/size matrix, Framer Motion press/hover animations
-- [ ] 1.4.2 — Create `<GlassCard>` with glass morphism background, border glow, and hover lift effect
-- [ ] 1.4.3 — Create `<Badge>` with tier-coloured, status, and tag variants
-- [ ] 1.4.4 — Create `<Container>` with responsive max-width and padding
-- [ ] 1.4.5 — Create `<Section>` with vertical spacing, optional ID for anchor links, and background slot
-- [ ] 1.4.6 — Create `<Heading>` component with gradient text option and size variants (h1–h4)
-- [ ] 1.4.7 — Create `<Text>` component with colour and size variants for body copy
-- [ ] 1.4.8 — Export all primitives from `@/components/ui/index.ts` barrel file
+- [x] 1.4.1 — Create `<Button>` with variant/size matrix, Framer Motion press/hover animations
+- [x] 1.4.2 — Create `<GlassCard>` with glass morphism background, border glow, and hover lift effect
+- [x] 1.4.3 — Create `<Badge>` with tier-coloured, status, and tag variants
+- [x] 1.4.4 — Create `<Container>` with responsive max-width and padding
+- [x] 1.4.5 — Create `<Section>` with vertical spacing, optional ID for anchor links, and background slot
+- [x] 1.4.6 — Create `<Heading>` component with gradient text option and size variants (h1–h4)
+- [x] 1.4.7 — Create `<Text>` component with colour and size variants for body copy
+- [x] 1.4.8 — Export all primitives from `@/components/ui/index.ts` barrel file
 
 ---
 
@@ -168,23 +168,23 @@
 
 ### Acceptance Criteria
 
-- [ ] `<FadeIn>` component animates children from opacity 0 → 1 with configurable delay and direction
-- [ ] `<StaggerChildren>` component staggers child animations with configurable interval (default 0.1 s)
-- [ ] `<ParallaxLayer>` component shifts content on scroll at a configurable speed factor
-- [ ] `<CountUp>` component animates a number from 0 to a target value on scroll intersection
-- [ ] All motion components check `prefers-reduced-motion` and disable animation accordingly
-- [ ] Shared animation variants are defined in `@/lib/motion.ts` for reuse across the codebase
-- [ ] Scroll-triggered animations use Intersection Observer (not scroll event listeners) for performance
+- [x] `<FadeIn>` component animates children from opacity 0 → 1 with configurable delay and direction
+- [x] `<StaggerChildren>` component staggers child animations with configurable interval (default 0.1 s)
+- [x] `<ParallaxLayer>` component shifts content on scroll at a configurable speed factor
+- [x] `<CountUp>` component animates a number from 0 to a target value on scroll intersection
+- [x] All motion components check `prefers-reduced-motion` and disable animation accordingly
+- [x] Shared animation variants are defined in `@/lib/motion.ts` for reuse across the codebase
+- [x] Scroll-triggered animations use Intersection Observer (not scroll event listeners) for performance
 
 ### Subtasks
 
-- [ ] 1.5.1 — Create `@/lib/motion.ts` with shared animation variants: `fadeUp`, `fadeDown`, `fadeLeft`, `fadeRight`, `scaleIn`, `blur`
-- [ ] 1.5.2 — Create `<FadeIn>` wrapper using `motion.div` with `whileInView` and viewport `once: true`
-- [ ] 1.5.3 — Create `<StaggerChildren>` using `staggerChildren` in parent variant
-- [ ] 1.5.4 — Create `<ParallaxLayer>` using `useScroll` + `useTransform` for vertical parallax
-- [ ] 1.5.5 — Create `<CountUp>` using `useInView` + `useMotionValue` + `useTransform` for animated counters
-- [ ] 1.5.6 — Create `useReducedMotion` hook wrapping `window.matchMedia('(prefers-reduced-motion: reduce)')`
-- [ ] 1.5.7 — Integrate reduced-motion check into all motion components
+- [x] 1.5.1 — Create `@/lib/motion.ts` with shared animation variants: `fadeUp`, `fadeDown`, `fadeLeft`, `fadeRight`, `scaleIn`, `blur`
+- [x] 1.5.2 — Create `<FadeIn>` wrapper using `motion.div` with `whileInView` and viewport `once: true`
+- [x] 1.5.3 — Create `<StaggerChildren>` using `staggerChildren` in parent variant
+- [x] 1.5.4 — Create `<ParallaxLayer>` using `useScroll` + `useTransform` for vertical parallax
+- [x] 1.5.5 — Create `<CountUp>` using `useInView` + `useMotionValue` + `useTransform` for animated counters
+- [x] 1.5.6 — Create `useReducedMotion` hook wrapping `window.matchMedia('(prefers-reduced-motion: reduce)')`
+- [x] 1.5.7 — Integrate reduced-motion check into all motion components
 
 ---
 
@@ -196,24 +196,24 @@
 
 ### Acceptance Criteria
 
-- [ ] Root layout (`app/layout.tsx`) sets dark theme, loads fonts, injects analytics, and wraps children in `<Container>`
-- [ ] `<Header>` is fixed, transparent on scroll-top, and gains a glass backdrop on scroll
-- [ ] `<Header>` contains: LumenShore logo, nav links (Features, Pricing, Blog, About), CTA "Download" button
-- [ ] `<Header>` is fully responsive: hamburger menu on mobile with slide-in glass panel
-- [ ] `<Footer>` contains: logo, link columns (Product, Company, Resources, Legal), App Store badge, social links
-- [ ] `<Footer>` has a subtle top border glow separating it from page content
-- [ ] Page transitions use a fade + slight vertical shift between routes
-- [ ] Skip-to-content link is present for keyboard navigation
+- [x] Root layout (`app/layout.tsx`) sets dark theme, loads fonts, injects analytics, and wraps children in `<Container>`
+- [x] `<Header>` is fixed, transparent on scroll-top, and gains a glass backdrop on scroll
+- [x] `<Header>` contains: LumenShore logo, nav links (Features, Pricing, Blog, About), CTA "Download" button
+- [x] `<Header>` is fully responsive: hamburger menu on mobile with slide-in glass panel
+- [x] `<Footer>` contains: logo, link columns (Product, Company, Resources, Legal), App Store badge, social links
+- [x] `<Footer>` has a subtle top border glow separating it from page content
+- [x] Page transitions use a fade + slight vertical shift between routes
+- [x] Skip-to-content link is present for keyboard navigation
 
 ### Subtasks
 
-- [ ] 1.6.1 — Create `app/layout.tsx` with font loading, theme class, metadata defaults, and analytics script
-- [ ] 1.6.2 — Create `<Header>` with logo, desktop navigation, and scroll-based glass backdrop transition
-- [ ] 1.6.3 — Create mobile hamburger menu with slide-in glass panel and staggered link animation
-- [ ] 1.6.4 — Create `<Footer>` with link columns, App Store badge, social icons, and glow border
-- [ ] 1.6.5 — Add `<PageTransition>` wrapper with Framer Motion `AnimatePresence` and route-keyed animation
-- [ ] 1.6.6 — Add skip-to-content link with focus-visible styling
-- [ ] 1.6.7 — Test header/footer responsiveness across mobile, tablet, and desktop breakpoints
+- [x] 1.6.1 — Create `app/layout.tsx` with font loading, theme class, metadata defaults, and analytics script
+- [x] 1.6.2 — Create `<Header>` with logo, desktop navigation, and scroll-based glass backdrop transition
+- [x] 1.6.3 — Create mobile hamburger menu with slide-in glass panel and staggered link animation
+- [x] 1.6.4 — Create `<Footer>` with link columns, App Store badge, social icons, and glow border
+- [x] 1.6.5 — Add `<PageTransition>` wrapper with Framer Motion `AnimatePresence` and route-keyed animation
+- [x] 1.6.6 — Add skip-to-content link with focus-visible styling
+- [x] 1.6.7 — Test header/footer responsiveness across mobile, tablet, and desktop breakpoints
 
 ---
 
@@ -230,27 +230,27 @@
 
 ### Acceptance Criteria
 
-- [ ] Hero occupies the full viewport height (100 dvh) with a centred content layout
-- [ ] Headline uses gradient text: "Master Languages Through Immersive Experiences"
-- [ ] Subheadline communicates the core value: "LumenLingo transforms language learning into a breathtaking visual journey — flashcards, soundscapes, and adaptive practice wrapped in a stunning, handcrafted interface."
-- [ ] Primary CTA: "Download on the App Store" button with violet glow and App Store icon
-- [ ] Secondary CTA: "Watch Demo" ghost button that scrolls to a video section or opens a modal
-- [ ] Floating iPhone mockup displays animated app screenshots (auto-cycling with crossfade)
-- [ ] Background features a subtle cosmic particle field or animated gradient mesh matching the app's nebula aesthetic
-- [ ] Trust bar below CTAs: "9 Languages · 25+ Language Pairs · 12 Ambient Soundscapes · Free to Start"
-- [ ] All elements animate in with staggered fade-up on page load
-- [ ] On mobile, the iPhone mockup stacks below the text content
+- [x] Hero occupies the full viewport height (100 dvh) with a centred content layout
+- [x] Headline uses gradient text: "Master Languages Through Immersive Experiences"
+- [x] Subheadline communicates the core value: "LumenLingo transforms language learning into a breathtaking visual journey — flashcards, soundscapes, and adaptive practice wrapped in a stunning, handcrafted interface."
+- [x] Primary CTA: "Download on the App Store" button with violet glow and App Store icon
+- [x] Secondary CTA: "Watch Demo" ghost button that scrolls to a video section or opens a modal
+- [x] Floating iPhone mockup displays animated app screenshots (auto-cycling with crossfade)
+- [x] Background features a subtle cosmic particle field or animated gradient mesh matching the app's nebula aesthetic
+- [x] Trust bar below CTAs: "9 Languages · 25+ Language Pairs · 12 Ambient Soundscapes · Free to Start"
+- [x] All elements animate in with staggered fade-up on page load
+- [x] On mobile, the iPhone mockup stacks below the text content
 
 ### Subtasks
 
-- [ ] 2.1.1 — Create `<HeroSection>` component with responsive two-column (desktop) / stacked (mobile) layout
-- [ ] 2.1.2 — Build animated gradient mesh background using CSS `@keyframes` or canvas
-- [ ] 2.1.3 — Create `<IPhoneMockup>` component with device frame and screenshot carousel (auto-cycle every 4 s)
-- [ ] 2.1.4 — Implement staggered entrance animation for headline → subheadline → CTAs → trust bar
-- [ ] 2.1.5 — Create `<AppStoreBadge>` component with Apple-compliant App Store download badge
-- [ ] 2.1.6 — Add trust bar with key stats: language count, soundscape count, and free-to-start messaging
-- [ ] 2.1.7 — Ensure hero renders correctly on viewports from 320 px to 2560 px wide
-- [ ] 2.1.8 — Optimise background animation for 60 fps; disable on reduced-motion preference
+- [x] 2.1.1 — Create `<HeroSection>` component with responsive two-column (desktop) / stacked (mobile) layout
+- [x] 2.1.2 — Build animated gradient mesh background using CSS `@keyframes` or canvas
+- [x] 2.1.3 — Create `<IPhoneMockup>` component with device frame and screenshot carousel (auto-cycle every 4 s)
+- [x] 2.1.4 — Implement staggered entrance animation for headline → subheadline → CTAs → trust bar
+- [x] 2.1.5 — Create `<AppStoreBadge>` component with Apple-compliant App Store download badge
+- [x] 2.1.6 — Add trust bar with key stats: language count, soundscape count, and free-to-start messaging
+- [x] 2.1.7 — Ensure hero renders correctly on viewports from 320 px to 2560 px wide
+- [x] 2.1.8 — Optimise background animation for 60 fps; disable on reduced-motion preference
 
 ---
 
@@ -262,32 +262,32 @@
 
 ### Acceptance Criteria
 
-- [ ] Section title: "Everything You Need to Master a New Language" with gradient accent
-- [ ] 6 feature cards arranged in a responsive grid (3 × 2 desktop, 2 × 3 tablet, 1 × 6 mobile)
-- [ ] Each card is a glass morphism surface with:
+- [x] Section title: "Everything You Need to Master a New Language" with gradient accent
+- [x] 6 feature cards arranged in a responsive grid (3 × 2 desktop, 2 × 3 tablet, 1 × 6 mobile)
+- [x] Each card is a glass morphism surface with:
   - Icon or mini-illustration (SVG or Lottie)
   - Feature title (e.g., "Immersive Flashcards", "Smart Practice", "Soundscapes")
   - 2–3 sentence description
   - Hover: subtle lift + border glow intensification
-- [ ] Features to showcase:
+- [x] Features to showcase:
   1. **Immersive Flashcards** — "Beautiful glass-morphic cards with smooth gestures and instant feedback"
   2. **Smart Practice** — "Spaced repetition recommendations that adapt to your learning pace"
   3. **Rich Soundscapes** — "Ambient audio environments that enhance focus and retention"
   4. **Breathing Orbs** — "Calming visual backgrounds that reduce learning anxiety"
   5. **25+ Language Pairs** — "9 languages including Spanish, French, Japanese, German, Arabic, Chinese, and more"
   6. **Progress Tracking** — "Comprehensive statistics, streaks, and mastery indicators"
-- [ ] Cards animate in with staggered fade-up on scroll intersection
-- [ ] Section background has a subtle radial gradient emanating from the centre
+- [x] Cards animate in with staggered fade-up on scroll intersection
+- [x] Section background has a subtle radial gradient emanating from the centre
 
 ### Subtasks
 
-- [ ] 2.2.1 — Create `<FeatureShowcase>` section component with responsive grid layout
-- [ ] 2.2.2 — Create `<FeatureCard>` component with icon, title, description, glass styling, and hover animation
-- [ ] 2.2.3 — Source or create 6 feature icons/illustrations (SVG preferred for performance)
-- [ ] 2.2.4 — Write feature copy for all 6 cards (concise, benefit-oriented)
-- [ ] 2.2.5 — Add staggered scroll-reveal animation using `<StaggerChildren>` and `<FadeIn>`
-- [ ] 2.2.6 — Add subtle radial gradient background to the section
-- [ ] 2.2.7 — Test grid responsiveness across all breakpoints
+- [x] 2.2.1 — Create `<FeatureShowcase>` section component with responsive grid layout
+- [x] 2.2.2 — Create `<FeatureCard>` component with icon, title, description, glass styling, and hover animation
+- [x] 2.2.3 — Source or create 6 feature icons/illustrations (SVG preferred for performance)
+- [x] 2.2.4 — Write feature copy for all 6 cards (concise, benefit-oriented)
+- [x] 2.2.5 — Add staggered scroll-reveal animation using `<StaggerChildren>` and `<FadeIn>`
+- [x] 2.2.6 — Add subtle radial gradient background to the section
+- [x] 2.2.7 — Test grid responsiveness across all breakpoints
 
 ---
 
@@ -299,24 +299,24 @@
 
 ### Acceptance Criteria
 
-- [ ] Section title: "Designed to Inspire" with a secondary line: "Every screen crafted with intention"
-- [ ] Horizontal scrolling gallery of 5–8 iPhone screenshots in device frames
-- [ ] Screenshots showcase: Flashcard view, Practice mode, Soundscapes screen, Settings/Orbs, Progress dashboard, Membership tiers
-- [ ] Gallery supports touch/mouse drag scrolling with momentum
-- [ ] Active (centred) screenshot is scaled up (1.1×) with a violet glow; others are dimmed (0.7 opacity)
-- [ ] Navigation dots below the gallery indicate current position
-- [ ] Each screenshot has a caption describing the screen
-- [ ] On desktop, the gallery shows 3 screenshots visible at once; on mobile, 1 with peek of adjacent
+- [x] Section title: "Designed to Inspire" with a secondary line: "Every screen crafted with intention"
+- [x] Horizontal scrolling gallery of 5–8 iPhone screenshots in device frames
+- [x] Screenshots showcase: Flashcard view, Practice mode, Soundscapes screen, Settings/Orbs, Progress dashboard, Membership tiers
+- [x] Gallery supports touch/mouse drag scrolling with momentum
+- [x] Active (centred) screenshot is scaled up (1.1×) with a violet glow; others are dimmed (0.7 opacity)
+- [x] Navigation dots below the gallery indicate current position
+- [x] Each screenshot has a caption describing the screen
+- [x] On desktop, the gallery shows 3 screenshots visible at once; on mobile, 1 with peek of adjacent
 
 ### Subtasks
 
-- [ ] 2.3.1 — Create `<ScreenshotGallery>` component with horizontal scroll and snap behaviour
-- [ ] 2.3.2 — Create `<DeviceFrame>` component with iPhone 16 Pro bezel wrapping screenshot images
-- [ ] 2.3.3 — Implement active-item scaling and glow effect using scroll position calculation
-- [ ] 2.3.4 — Add touch/mouse drag scrolling with `overscroll-behavior` and momentum
-- [ ] 2.3.5 — Add navigation dots with active state synchronised to scroll position
-- [ ] 2.3.6 — Optimise screenshot images: WebP format, responsive `srcSet`, lazy loading
-- [ ] 2.3.7 — Add captions below each device frame with screen name
+- [x] 2.3.1 — Create `<ScreenshotGallery>` component with horizontal scroll and snap behaviour
+- [x] 2.3.2 — Create `<DeviceFrame>` component with iPhone 16 Pro bezel wrapping screenshot images
+- [x] 2.3.3 — Implement active-item scaling and glow effect using scroll position calculation
+- [x] 2.3.4 — Add touch/mouse drag scrolling with `overscroll-behavior` and momentum
+- [x] 2.3.5 — Add navigation dots with active state synchronised to scroll position
+- [x] 2.3.6 — Optimise screenshot images: WebP format, responsive `srcSet`, lazy loading
+- [x] 2.3.7 — Add captions below each device frame with screen name
 
 ---
 
@@ -328,32 +328,32 @@
 
 ### Acceptance Criteria
 
-- [ ] Section title: "Why LumenLingo?" with gradient accent
-- [ ] 4 differentiator cards displayed in a responsive grid:
+- [x] Section title: "Why LumenLingo?" with gradient accent
+- [x] 4 differentiator cards displayed in a responsive grid:
   1. **Breathtaking Design** — "Every screen is handcrafted with glass morphism, cosmic backgrounds, and smooth animations — learning has never looked this good."
   2. **Immersive Environments** — "12 ambient soundscapes from Paris cafés to deep space — create the perfect atmosphere for focused learning."
   3. **3 Distinct Practice Modes** — "Flashcards, grammar quizzes, and word builder challenges across 25+ language pairs — variety that keeps you engaged."
   4. **Visual Mindfulness** — "Breathing orbs, quantum flow scenes, and nebula drift backgrounds — reduce learning anxiety with calming visual experiences."
-- [ ] Each card is a glass morphism surface with:
+- [x] Each card is a glass morphism surface with:
   - Icon or mini-illustration (SVG or Lottie)
   - Differentiator title
   - 2–3 sentence description
   - Hover: subtle lift + border glow intensification
-- [ ] Key facts bar below cards:
+- [x] Key facts bar below cards:
   - "9 Languages" · "25+ Language Pairs" · "12 Soundscapes" · "3 Practice Modes"
-- [ ] Facts animate with `<CountUp>` on scroll intersection
-- [ ] Cards animate in with staggered fade-up on scroll intersection
-- [ ] Section background has a subtle radial gradient emanating from the centre
+- [x] Facts animate with `<CountUp>` on scroll intersection
+- [x] Cards animate in with staggered fade-up on scroll intersection
+- [x] Section background has a subtle radial gradient emanating from the centre
 
 ### Subtasks
 
-- [ ] 2.4.1 — Create `<DifferentiatorSection>` component with responsive grid layout
-- [ ] 2.4.2 — Create `<DifferentiatorCard>` component with icon, title, description, glass styling, and hover animation
-- [ ] 2.4.3 — Create `<KeyFactsBar>` with 4 stat items and `<CountUp>` animation
-- [ ] 2.4.4 — Source or create 4 differentiator icons/illustrations (SVG preferred)
-- [ ] 2.4.5 — Write differentiator copy for all 4 cards (benefit-oriented, factual)
-- [ ] 2.4.6 — Add staggered scroll-reveal animation
-- [ ] 2.4.7 — Test accessibility: cards have proper ARIA roles, `prefers-reduced-motion` respected
+- [x] 2.4.1 — Create `<DifferentiatorSection>` component with responsive grid layout
+- [x] 2.4.2 — Create `<DifferentiatorCard>` component with icon, title, description, glass styling, and hover animation
+- [x] 2.4.3 — Create `<KeyFactsBar>` with 4 stat items and `<CountUp>` animation
+- [x] 2.4.4 — Source or create 4 differentiator icons/illustrations (SVG preferred)
+- [x] 2.4.5 — Write differentiator copy for all 4 cards (benefit-oriented, factual)
+- [x] 2.4.6 — Add staggered scroll-reveal animation
+- [x] 2.4.7 — Test accessibility: cards have proper ARIA roles, `prefers-reduced-motion` respected
 
 ---
 
@@ -365,21 +365,21 @@
 
 ### Acceptance Criteria
 
-- [ ] Full-width CTA banner with a gradient background (violet → deep blue) and glass overlay
-- [ ] Headline: "Start Your Language Journey Today" with glow text effect
-- [ ] Subtext: "Download LumenLingo free on the App Store. Premium tiers available for serious learners."
-- [ ] Primary CTA: Large "Download on the App Store" button with App Store icon and violet glow
-- [ ] QR code displayed on desktop that links directly to the App Store listing
-- [ ] Floating particle or orb animation in the background for visual depth
-- [ ] Banner spans full viewport width with inner content constrained to `max-w-5xl`
+- [x] Full-width CTA banner with a gradient background (violet → deep blue) and glass overlay
+- [x] Headline: "Start Your Language Journey Today" with glow text effect
+- [x] Subtext: "Download LumenLingo free on the App Store. Premium tiers available for serious learners."
+- [x] Primary CTA: Large "Download on the App Store" button with App Store icon and violet glow
+- [x] QR code displayed on desktop that links directly to the App Store listing
+- [x] Floating particle or orb animation in the background for visual depth
+- [x] Banner spans full viewport width with inner content constrained to `max-w-5xl`
 
 ### Subtasks
 
-- [ ] 2.5.1 — Create `<CTABanner>` component with gradient background and glass overlay
-- [ ] 2.5.2 — Add glow text effect to headline using CSS `text-shadow` and gradient
-- [ ] 2.5.3 — Create `<QRCode>` component that generates an App Store link QR (client-side)
-- [ ] 2.5.4 — Add floating particle animation in the background layer
-- [ ] 2.5.5 — Test CTA banner responsiveness (QR hidden on mobile, full-width on all screens)
+- [x] 2.5.1 — Create `<CTABanner>` component with gradient background and glass overlay
+- [x] 2.5.2 — Add glow text effect to headline using CSS `text-shadow` and gradient
+- [x] 2.5.3 — Create `<QRCode>` component that generates an App Store link QR (client-side)
+- [x] 2.5.4 — Add floating particle animation in the background layer
+- [x] 2.5.5 — Test CTA banner responsiveness (QR hidden on mobile, full-width on all screens)
 
 ---
 
@@ -391,24 +391,24 @@
 
 ### Acceptance Criteria
 
-- [ ] Page title: "LumenLingo — Master Languages Through Immersive Experiences"
-- [ ] Meta description: "Download LumenLingo, the premium language learning app for iPhone. Beautiful flashcards, adaptive practice, ambient soundscapes, and more. Free on the App Store."
-- [ ] Open Graph tags with hero image, title, description, and site name
-- [ ] Twitter Card tags with `summary_large_image` type
-- [ ] JSON-LD structured data: `SoftwareApplication` schema with rating, price, and operating system
-- [ ] JSON-LD `Organization` schema for LumenShore with logo and social links
-- [ ] Canonical URL set to `https://lumenlingo.com`
-- [ ] All images have descriptive `alt` text
-- [ ] Semantic HTML: `<header>`, `<main>`, `<section>`, `<footer>`, proper heading hierarchy
+- [x] Page title: "LumenLingo — Master Languages Through Immersive Experiences"
+- [x] Meta description: "Download LumenLingo, the premium language learning app for iPhone. Beautiful flashcards, adaptive practice, ambient soundscapes, and more. Free on the App Store."
+- [x] Open Graph tags with hero image, title, description, and site name
+- [x] Twitter Card tags with `summary_large_image` type
+- [x] JSON-LD structured data: `SoftwareApplication` schema with rating, price, and operating system
+- [x] JSON-LD `Organization` schema for LumenShore with logo and social links
+- [x] Canonical URL set to `https://lumenlingo.com`
+- [x] All images have descriptive `alt` text
+- [x] Semantic HTML: `<header>`, `<main>`, `<section>`, `<footer>`, proper heading hierarchy
 
 ### Subtasks
 
-- [ ] 2.6.1 — Configure `metadata` export in `app/page.tsx` with title, description, OG, and Twitter tags
-- [ ] 2.6.2 — Create `<JsonLd>` component for `SoftwareApplication` structured data
-- [ ] 2.6.3 — Create `<JsonLd>` component for `Organization` structured data
-- [ ] 2.6.4 — Audit all homepage images for `alt` text completeness
-- [ ] 2.6.5 — Verify semantic HTML structure with heading hierarchy (single `<h1>`, logical `<h2>`/`<h3>`)
-- [ ] 2.6.6 — Test OG/Twitter cards with Facebook Sharing Debugger and Twitter Card Validator
+- [x] 2.6.1 — Configure `metadata` export in `app/page.tsx` with title, description, OG, and Twitter tags
+- [x] 2.6.2 — Create `<JsonLd>` component for `SoftwareApplication` structured data
+- [x] 2.6.3 — Create `<JsonLd>` component for `Organization` structured data
+- [x] 2.6.4 — Audit all homepage images for `alt` text completeness
+- [x] 2.6.5 — Verify semantic HTML structure with heading hierarchy (single `<h1>`, logical `<h2>`/`<h3>`)
+- [x] 2.6.6 — Test OG/Twitter cards with Facebook Sharing Debugger and Twitter Card Validator
 
 ---
 
