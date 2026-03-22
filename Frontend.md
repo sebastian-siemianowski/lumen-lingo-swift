@@ -1731,11 +1731,11 @@
 - [ ] Custom domain `lumenlingo.com` is live with SSL and `www` → `lumenlingo.com` redirect
 - [ ] DNS configured with Vercel's recommended CNAME and A records
 - [ ] Environment variables set for production: analytics IDs, API keys, feature flags
-- [ ] Vercel Analytics and Speed Insights enabled for production
-- [ ] Error monitoring (Sentry or equivalent) configured for production with source maps
+- [x] Vercel Analytics and Speed Insights enabled for production
+- [x] Error monitoring (Sentry or equivalent) configured for production with source maps
 - [ ] Uptime monitoring configured (Vercel, Pingdom, or UptimeRobot) with email/Slack alerts
-- [ ] Cache-Control headers verified: static assets have long TTL, HTML has short TTL
-- [ ] Security headers configured:
+- [x] Cache-Control headers verified: static assets have long TTL, HTML has short TTL
+- [x] Security headers configured:
   - `Strict-Transport-Security` (HSTS)
   - `X-Content-Type-Options: nosniff`
   - `X-Frame-Options: DENY`
@@ -1743,20 +1743,20 @@
   - `Content-Security-Policy` (restrictive policy allowing only necessary sources)
 - [ ] Google Search Console verified and sitemap submitted
 - [ ] Bing Webmaster Tools verified
-- [ ] Google Analytics / Tag Manager excluded from development environments
+- [x] Google Analytics / Tag Manager excluded from development environments
 
 ### Subtasks
 
 - [ ] 14.3.1 — Configure DNS records for `lumenlingo.com` on Vercel
 - [ ] 14.3.2 — Verify SSL certificate is active and auto-renewing
 - [ ] 14.3.3 — Set all production environment variables in Vercel dashboard
-- [ ] 14.3.4 — Enable Vercel Analytics and Speed Insights for production project
-- [ ] 14.3.5 — Configure Sentry for error monitoring with source map uploads
+- [x] 14.3.4 — Enable Vercel Analytics and Speed Insights for production project
+- [x] 14.3.5 — Configure Sentry for error monitoring with source map uploads
 - [ ] 14.3.6 — Set up uptime monitoring with alert notifications
-- [ ] 14.3.7 — Configure security headers in `next.config.ts` or `vercel.json`
+- [x] 14.3.7 — Configure security headers in `next.config.ts` or `vercel.json`
 - [ ] 14.3.8 — Verify and submit sitemap to Google Search Console
 - [ ] 14.3.9 — Verify and submit sitemap to Bing Webmaster Tools
-- [ ] 14.3.10 — Run final production smoke test: visit all pages, verify analytics fire, confirm error reporting works
+- [x] 14.3.10 — Run final production smoke test: visit all pages, verify analytics fire, confirm error reporting works
 
 ---
 

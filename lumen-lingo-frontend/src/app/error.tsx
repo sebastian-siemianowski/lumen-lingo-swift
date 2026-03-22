@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import * as Sentry from '@sentry/nextjs';
 import { StarField } from '@/components/background';
 import { trackEvent } from '@/lib/analytics';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
@@ -94,11 +95,11 @@ export default function Error({
   const prefersReduced = useReducedMotion();
 
   useEffect(() => {
-    // Log to analytics — no sensitive details exposed
+    Sentry.captureException(error);
     trackEvent('error_page_view', {
       message: error.digest ?? 'client-error',
     });
-  }, [error.digest]);
+  }, [error]);
 
   return (
     <div className="relative flex min-h-[80dvh] flex-col items-center justify-center overflow-hidden px-4">

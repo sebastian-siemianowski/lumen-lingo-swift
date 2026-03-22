@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import * as Sentry from '@sentry/nextjs';
 
 /**
  * Root layout error boundary — renders when the root layout itself throws.
@@ -15,18 +16,8 @@ export default function GlobalError({
   reset: () => void;
 }) {
   useEffect(() => {
-    // Best-effort error tracking — analytics may not be loaded
-    try {
-      if (typeof window !== 'undefined' && 'va' in window) {
-        (window as Record<string, unknown>).va?.('event', {
-          name: 'global_error',
-          data: { digest: error.digest ?? 'unknown' },
-        });
-      }
-    } catch {
-      // silently ignore — analytics unavailable
-    }
-  }, [error.digest]);
+    Sentry.captureException(error);
+  }, [error]);
 
   return (
     <html lang="en">
