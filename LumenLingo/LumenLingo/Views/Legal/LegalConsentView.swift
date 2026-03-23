@@ -7,6 +7,10 @@ import SwiftData
 /// Displays Privacy Policy and Terms of Service in a tabbed glass card with staggered entrance
 /// animations. Declining shows a confirmation alert; accepting records version + date on UserProfile.
 struct LegalConsentView: View {
+    /// VERSIONING CONVENTION: Always use minor increments (2.0 → 2.1 → 2.2), never major jumps.
+    /// Bumping this re-prompts ALL users to re-accept. Keep in sync with:
+    ///   - lumen-lingo-frontend/messages/en.json  (Legal.version)
+    ///   - All AppStrings+*.swift locale files    (legalVersion)
     static let currentVersion = "2.0"
 
     @Environment(\.dismiss) private var dismiss

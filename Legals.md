@@ -1,5 +1,14 @@
 # LEGALS.md — Legal Compliance Epics & Stories
 
+> **⚠️ LEGAL VERSION CONVENTION**: When updating legal documents (Privacy Policy, Terms of Service),
+> always increment with **minor versions** (2.0 → 2.1 → 2.2), never major jumps (2.0 → 3.0).
+> Bumping the version re-prompts every iOS user to re-accept policies via `LegalConsentView`.
+> Update ALL of these in lockstep:
+> 1. `LegalConsentView.swift` → `currentVersion`
+> 2. `lumen-lingo-frontend/messages/en.json` → `Legal.version`
+> 3. All `AppStrings+*.swift` locale files → `legalVersion`
+> 4. All non-English `messages/*.json` locale files → `Legal.version`
+
 > **Product**: LumenLingo (iOS App) + LumenLingo Website (lumen-lingo-frontend)
 > **Company**: Lumenshore Limited (trading as LumenShore)
 > **Company Number**: 09607326 (England and Wales)
