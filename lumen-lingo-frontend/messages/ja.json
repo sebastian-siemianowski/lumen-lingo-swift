@@ -407,7 +407,9 @@
       "contact": "お問い合わせ",
       "privacy": "プライバシーポリシー",
       "terms": "利用規約",
-      "accessibility": "アクセシビリティ"
+      "accessibility": "アクセシビリティ",
+      "cookiePolicy": "Cookieポリシー",
+      "cookieSettings": "Cookie設定"
     },
     "newsletter": {
       "heading": "最新情報をお届け",
@@ -840,6 +842,156 @@
       "description": "LumenLingoの全ての言語ペアを探索。スペイン語、フランス語、ドイツ語、日本語、中国語、アラビア語、イタリア語、ポーランド語などを美しいフラッシュカードで学べます。",
       "ogTitle": "対応言語 — LumenLingo",
       "ogDescription": "9言語、25以上の双方向ペア。厳選された語彙とアダプティブ練習であらゆる方向から学べます。"
+    }
+  },
+  "CookieConsent": {
+    "bannerTitle": "プライバシーを大切にしています",
+    "bannerDescription": "Cookieおよび類似技術を使用して、体験の向上、エラーの監視、サイト利用状況の把握を行っています。ご自身で快適な設定をお選びください。",
+    "learnMore": "詳しく見る",
+    "acceptAll": "すべて受け入れる",
+    "rejectAll": "すべて拒否する",
+    "managePreferences": "設定を管理",
+    "preferencesTitle": "Cookie設定",
+    "preferencesDescription": "許可するCookieカテゴリを選択してください。必須Cookieはサイトの動作に必要なため、常に有効です。",
+    "savePreferences": "設定を保存",
+    "close": "閉じる",
+    "categories": {
+      "essential": {
+        "label": "必須",
+        "description": "ウェブサイトの動作に必要です。言語設定や同意状態が含まれます。無効にできません。"
+      },
+      "analytics": {
+        "label": "アナリティクス",
+        "description": "Vercel Analyticsによる匿名のCookieフリーなページビュー分析。どのページが最も役立つかを理解するのに役立ちます。"
+      },
+      "errorMonitoring": {
+        "label": "エラー監視",
+        "description": "Sentryを通じたエラー報告により、問題を迅速に修正できます。個人データは取得しません。"
+      },
+      "sessionReplay": {
+        "label": "セッションリプレイ",
+        "description": "エラー発生時に匿名化されたブラウジングセッションを記録し、バグの再現と修正に役立てます。すべてのテキストとメディアはマスクされます。"
+      }
+    }
+  },
+  "CookiePage": {
+    "meta": {
+      "title": "Cookieポリシー — LumenLingo",
+      "description": "LumenLingoがCookie、localStorage、類似技術をどのように使用しているかをご覧ください。",
+      "ogTitle": "Cookieポリシー — LumenLingo",
+      "ogDescription": "LumenLingoが使用するCookieとローカルストレージに関する完全な透明性。いつでも設定を管理できます。"
+    },
+    "breadcrumb": "Cookieポリシー",
+    "hero": {
+      "heading": "Cookieポリシー",
+      "subtitle": "完全な透明性を信じています。当サイトがお使いのデバイスに保存するデータとその理由をご説明します。"
+    },
+    "overview": {
+      "heading": "概要",
+      "p1": "LumenLingoはサイトの円滑な動作のために最小限のクライアント側ストレージを使用しています。従来のトラッキングCookieは使用していません。",
+      "p2": "フッターのCookie設定ボタンからいつでも設定を管理できます。"
+    },
+    "localStorage": {
+      "heading": "ローカルストレージ",
+      "intro": "localStorageはデバイス上にデータを永続的に保存します。以下のキーを使用しています：",
+      "consentKey": {
+        "heading": "ll_cookie_consent",
+        "category": "必須",
+        "purpose": "Cookie同意設定を保存します。",
+        "duration": "最後の同意決定から13ヶ月。",
+        "data": "ブール値フラグ、ISOタイムスタンプ、同意バージョンを含むJSONオブジェクト。個人データなし。"
+      },
+      "localeKey": {
+        "heading": "NEXT_LOCALE",
+        "category": "必須",
+        "purpose": "表示言語の設定を記憶します。",
+        "duration": "削除されるまで永続。",
+        "data": "2文字のロケールコード。個人データなし。"
+      }
+    },
+    "sessionStorage": {
+      "heading": "セッションストレージ",
+      "intro": "sessionStorageは現在のブラウザタブでのみ保持されます。タブを閉じると自動的に削除されます。",
+      "utmKey": {
+        "heading": "ll_utm",
+        "category": "アナリティクス",
+        "purpose": "セッション内のページナビゲーション間でUTMキャンペーンパラメータを保持します。",
+        "duration": "現在のブラウザセッションのみ。",
+        "data": "最大5つのキャンペーンパラメータを含むJSONオブジェクト。個人データなし。"
+      },
+      "sentryKey": {
+        "heading": "Sentry Session Replay",
+        "category": "セッションリプレイ（同意が必要）",
+        "purpose": "セッションリプレイに同意した場合、Sentryが内部セッション状態をsessionStorageに保存します。",
+        "duration": "現在のブラウザセッションのみ。",
+        "data": "内部Sentryセッション識別子。すべてのインタラクションは匿名化されます。"
+      }
+    },
+    "serviceWorker": {
+      "heading": "Service Workerキャッシュ",
+      "intro": "パフォーマンス向上とオフラインアクセスのためにService Workerを使用しています。",
+      "cacheName": "キャッシュ名：lumenlingo-v1",
+      "strategies": {
+        "heading": "キャッシュ戦略",
+        "static": "<b>静的アセット</b>（JS、CSS、フォント、画像）— キャッシュ優先。",
+        "pages": "<b>HTMLページ</b> — ネットワーク優先。常にサーバーから最新版を取得。",
+        "offline": "<b>オフラインフォールバック</b> — 専用のオフラインページを表示。"
+      },
+      "p1": "Service Workerキャッシュは完全にデバイスローカルです。",
+      "p2": "キャッシュには個人データは保存されません。"
+    },
+    "cookies": {
+      "heading": "Cookie",
+      "intro": "LumenLingo自体のコードはHTTP Cookieを設定しません。ただし、インフラストラクチャにより以下のCookieが設定される場合があります：",
+      "locale": {
+        "heading": "言語設定",
+        "category": "必須",
+        "purpose": "next-intl国際化ライブラリが言語設定Cookieを設定する場合があります。",
+        "duration": "削除されるまで永続。",
+        "data": "2文字のロケールコード。ファーストパーティ。"
+      },
+      "p1": "広告Cookie、ソーシャルメディアトラッキングピクセル、サードパーティCookieは使用していません。"
+    },
+    "thirdParty": {
+      "heading": "サードパーティサービス",
+      "intro": "以下のサードパーティサービスがアクセスデータを処理する場合があります：",
+      "vercel": {
+        "heading": "Vercel Analytics",
+        "description": "プライバシー重視のウェブ分析。<b>Cookieフリー</b>。カスタムtrack()イベントは同意時のみ送信。",
+        "link": "Vercelプライバシーポリシー"
+      },
+      "sentry": {
+        "heading": "Sentry",
+        "description": "エラー監視とセッションリプレイ。<b>エラー報告</b>は同意時に送信。<b>セッションリプレイ</b>は明示的な同意時のみ記録。",
+        "link": "Sentryプライバシーポリシー"
+      }
+    },
+    "manage": {
+      "heading": "設定の管理",
+      "p1": "フッターの「Cookie設定」ボタンからいつでも同意設定を変更できます。",
+      "p2": "すべての保存データを削除するには、ブラウザの設定からサイトデータをクリアしてください。",
+      "p3": "同意設定はデバイスにローカルに保存されます。サーバーには送信されません。"
+    },
+    "updates": {
+      "heading": "ポリシーの更新",
+      "p1": "新しいストレージメカニズムを追加した場合、このCookieポリシーを更新することがあります。",
+      "version": "<b>現在の同意バージョン：</b> 1.0",
+      "versionHistory": "バージョン履歴",
+      "v1": "<b>v1.0</b>（2025年7月）— Cookieポリシー初版公開。"
+    },
+    "contact": {
+      "heading": "お問い合わせ",
+      "intro": "このCookieポリシーについてご質問がある場合：",
+      "email": "<b>メール：</b> <emailLink>hello@lumenshore.com</emailLink>",
+      "company": "<b>会社：</b> LumenShore Ltd（Company No. 09607326）",
+      "responseTime": "通常48時間以内に回答いたします。"
+    },
+    "table": {
+      "key": "ストレージキー",
+      "type": "タイプ",
+      "category": "カテゴリ",
+      "purpose": "目的",
+      "duration": "期間"
     }
   }
 }

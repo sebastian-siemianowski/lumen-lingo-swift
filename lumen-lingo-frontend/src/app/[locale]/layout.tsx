@@ -8,6 +8,7 @@ import { RouteProgress } from '@/components/layout/route-progress';
 import { NetworkStatus } from '@/components/layout/network-status';
 import { ServiceWorkerRegistration } from '@/components/layout/service-worker-registration';
 import { UtmCapture } from '@/components/analytics';
+import { CookieConsentBanner } from '@/components/cookie-consent';
 
 type Props = {
   children: React.ReactNode;
@@ -35,6 +36,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <Header />
       <main id="main-content">{children}</main>
       <Footer />
+      <CookieConsentBanner />
       <UtmCapture />
       <NetworkStatus />
       <ServiceWorkerRegistration />

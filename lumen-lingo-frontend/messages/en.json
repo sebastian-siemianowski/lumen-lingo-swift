@@ -407,6 +407,8 @@
       "contact": "Contact",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
+      "cookiePolicy": "Cookie Policy",
+      "cookieSettings": "Cookie Settings",
       "accessibility": "Accessibility"
     },
     "newsletter": {
@@ -840,6 +842,156 @@
       "description": "Explore all language pairs supported by LumenLingo. Learn Spanish, French, German, Japanese, Chinese, Arabic, Italian, Polish and more with beautiful flashcards.",
       "ogTitle": "Supported Languages — LumenLingo",
       "ogDescription": "9 languages, 25+ bidirectional pairs. Learn in any direction with curated vocabulary and adaptive practice."
+    }
+  },
+  "CookieConsent": {
+    "bannerTitle": "We value your privacy",
+    "bannerDescription": "We use cookies and similar technologies to improve your experience, monitor errors, and understand site usage. You choose what you're comfortable with.",
+    "learnMore": "Learn more",
+    "acceptAll": "Accept All",
+    "rejectAll": "Reject All",
+    "managePreferences": "Manage Preferences",
+    "preferencesTitle": "Cookie Preferences",
+    "preferencesDescription": "Choose which categories of cookies you'd like to allow. Essential cookies are always active as they're needed for the site to work properly.",
+    "savePreferences": "Save Preferences",
+    "close": "Close",
+    "categories": {
+      "essential": {
+        "label": "Essential",
+        "description": "Required for the website to function. Includes language preferences and consent state. Cannot be disabled."
+      },
+      "analytics": {
+        "label": "Analytics",
+        "description": "Anonymous, cookie-free page view analytics via Vercel Analytics. Helps us understand which pages are most useful."
+      },
+      "errorMonitoring": {
+        "label": "Error Monitoring",
+        "description": "Error reporting via Sentry so we can fix issues quickly. No personal data is captured."
+      },
+      "sessionReplay": {
+        "label": "Session Replay",
+        "description": "Records anonymised browsing sessions when errors occur to help us reproduce and fix bugs. All text and media are masked."
+      }
+    }
+  },
+  "CookiePage": {
+    "meta": {
+      "title": "Cookie Policy — LumenLingo",
+      "description": "Learn how LumenLingo uses cookies, localStorage, and similar technologies. Review storage mechanisms, durations, and manage your preferences.",
+      "ogTitle": "Cookie Policy — LumenLingo",
+      "ogDescription": "Full transparency on cookies, local storage, and caching used by LumenLingo. Manage your preferences at any time."
+    },
+    "breadcrumb": "Cookie Policy",
+    "hero": {
+      "heading": "Cookie Policy",
+      "subtitle": "We believe in full transparency. Here's exactly what data our website stores on your device and why."
+    },
+    "overview": {
+      "heading": "Overview",
+      "p1": "LumenLingo uses minimal client-side storage to keep the site working smoothly. We do not use traditional tracking cookies. Instead, we rely on localStorage, sessionStorage, and a Service Worker cache — each serving a specific, documented purpose.",
+      "p2": "You can manage your preferences at any time using the Cookie Settings button in the footer, or by clearing your browser's site data."
+    },
+    "localStorage": {
+      "heading": "Local Storage",
+      "intro": "localStorage persists data on your device until explicitly cleared. We use the following keys:",
+      "consentKey": {
+        "heading": "ll_cookie_consent",
+        "category": "Essential",
+        "purpose": "Stores your cookie consent preferences — which categories you've accepted or rejected, the consent version, and a timestamp.",
+        "duration": "13 months from the date of your last consent decision, per GDPR guidance.",
+        "data": "JSON object containing boolean flags (analytics, errorMonitoring, sessionReplay), ISO timestamp, consent version string, and expiry timestamp. No personal data."
+      },
+      "localeKey": {
+        "heading": "NEXT_LOCALE",
+        "category": "Essential",
+        "purpose": "Remembers your preferred display language so the site loads in the right locale on your next visit.",
+        "duration": "Persistent until cleared.",
+        "data": "A two-letter locale code (e.g. \"en\", \"fr\", \"de\"). No personal data."
+      }
+    },
+    "sessionStorage": {
+      "heading": "Session Storage",
+      "intro": "sessionStorage persists only for the current browser tab. When you close the tab, this data is automatically deleted.",
+      "utmKey": {
+        "heading": "ll_utm",
+        "category": "Analytics",
+        "purpose": "Preserves UTM campaign parameters (utm_source, utm_medium, utm_campaign, utm_term, utm_content) across page navigations within a single session. This helps us understand which marketing channels bring visitors to the site.",
+        "duration": "Current browser session only — deleted when the tab is closed.",
+        "data": "JSON object with up to five string fields representing campaign parameters. No personal data."
+      },
+      "sentryKey": {
+        "heading": "Sentry Session Replay",
+        "category": "Session Replay (consent required)",
+        "purpose": "If you consent to Session Replay, Sentry stores internal session state in sessionStorage to manage the replay recording lifecycle.",
+        "duration": "Current browser session only.",
+        "data": "Internal Sentry session identifiers and replay state. All captured interactions are anonymised — text is masked and media is blocked."
+      }
+    },
+    "serviceWorker": {
+      "heading": "Service Worker Cache",
+      "intro": "We use a Service Worker to improve performance and enable offline access.",
+      "cacheName": "Cache name: lumenlingo-v1",
+      "strategies": {
+        "heading": "Caching Strategies",
+        "static": "<b>Static assets</b> (JS, CSS, fonts, images) — Cache-first. Assets are served from the local cache for speed, and updated in the background when a new version is available.",
+        "pages": "<b>HTML pages</b> — Network-first. The latest version is always fetched from the server. If you're offline, a previously cached version is served.",
+        "offline": "<b>Offline fallback</b> — If the network is unavailable and no cached version exists, a dedicated offline page is displayed."
+      },
+      "p1": "The Service Worker cache is entirely device-local. No cached data is sent to our servers. You can clear it at any time via your browser's DevTools (Application → Storage → Clear site data).",
+      "p2": "The cache stores no personal data — only public website assets and page content."
+    },
+    "cookies": {
+      "heading": "Cookies",
+      "intro": "LumenLingo's own code does not set any HTTP cookies. However the following cookies may be set by our infrastructure:",
+      "locale": {
+        "heading": "Locale preference",
+        "category": "Essential",
+        "purpose": "The next-intl internationalisation library may set a locale preference cookie to remember your chosen language across visits.",
+        "duration": "Persistent until cleared.",
+        "data": "Two-letter locale code. First-party, not shared with any third party."
+      },
+      "p1": "We do not use advertising cookies, social media tracking pixels, or any third-party cookies."
+    },
+    "thirdParty": {
+      "heading": "Third-Party Services",
+      "intro": "The following third-party services may process data from your visit. Each service's storage behaviour is governed by their own privacy policy:",
+      "vercel": {
+        "heading": "Vercel Analytics",
+        "description": "Privacy-focused web analytics. <b>Cookie-free</b> — no cookies or persistent identifiers are stored on your device. Vercel collects anonymous page view data aggregated at the edge. Custom track() events (e.g. button clicks, demo interactions) are only sent if you consent to the Analytics category.",
+        "link": "Vercel Privacy Policy"
+      },
+      "sentry": {
+        "heading": "Sentry",
+        "description": "Error monitoring and session replay. <b>Error reports</b> are sent if you consent to Error Monitoring. <b>Session replays</b> are recorded only if you explicitly consent to the Session Replay category. All text is masked and all media is blocked in replays.",
+        "link": "Sentry Privacy Policy"
+      }
+    },
+    "manage": {
+      "heading": "Managing Your Preferences",
+      "p1": "You can change your consent choices at any time by clicking the \"Cookie Settings\" button in the footer of any page. This will re-open the consent banner where you can update your preferences.",
+      "p2": "To remove all stored data, you can clear your browser's site data through your browser settings or DevTools. This will reset your consent preferences and you'll see the consent banner again on your next visit.",
+      "p3": "Your consent preferences are stored locally on your device — they are never transmitted to our servers."
+    },
+    "updates": {
+      "heading": "Policy Updates",
+      "p1": "We may update this Cookie Policy when we add new storage mechanisms or change our data practices. If we make significant changes to the categories of data we collect, we'll increment the consent version number, which will automatically prompt you to review and update your preferences.",
+      "version": "<b>Current consent version:</b> 1.0",
+      "versionHistory": "Version History",
+      "v1": "<b>v1.0</b> (July 2025) — Initial Cookie Policy published."
+    },
+    "contact": {
+      "heading": "Contact Us",
+      "intro": "If you have questions about this Cookie Policy or how we use data on your device:",
+      "email": "<b>Email:</b> <emailLink>hello@lumenshore.com</emailLink>",
+      "company": "<b>Company:</b> LumenShore Ltd (Company No. 09607326)",
+      "responseTime": "We typically respond within 48 hours."
+    },
+    "table": {
+      "key": "Storage Key",
+      "type": "Type",
+      "category": "Category",
+      "purpose": "Purpose",
+      "duration": "Duration"
     }
   }
 }

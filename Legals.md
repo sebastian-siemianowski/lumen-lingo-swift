@@ -212,16 +212,16 @@
 **So that** my privacy choices are respected
 
 #### Subtasks:
-- [ ] 2.1.1 — Design cookie consent banner matching LumenLingo dark/glass UI aesthetic
-- [ ] 2.1.2 — Implement consent categories: Essential (always on), Analytics (Vercel), Error Monitoring (Sentry), Session Replay (Sentry replay)
-- [ ] 2.1.3 — Store consent preferences in `localStorage` with expiry (13 months per GDPR guidance)
-- [ ] 2.1.4 — Do NOT load Sentry session replay until user consents to "Session Replay" category
-- [ ] 2.1.5 — Do NOT fire Vercel analytics `track()` events until user consents to "Analytics" category (note: basic Vercel Analytics is cookie-free and may not require consent — document decision)
-- [ ] 2.1.6 — Show banner on first visit; allow re-access from footer "Cookie Settings" link
-- [ ] 2.1.7 — Implement "Accept All", "Reject All", and "Manage Preferences" buttons
-- [ ] 2.1.8 — Ensure banner is accessible (keyboard navigable, screen reader compatible, WCAG 2.1 AA)
-- [ ] 2.1.9 — Ensure banner renders correctly in all 10 supported locales
-- [ ] 2.1.10 — Ensure consent state is checked before initializing Sentry in `sentry.client.config.ts`
+- [x] 2.1.1 — Design cookie consent banner matching LumenLingo dark/glass UI aesthetic
+- [x] 2.1.2 — Implement consent categories: Essential (always on), Analytics (Vercel), Error Monitoring (Sentry), Session Replay (Sentry replay)
+- [x] 2.1.3 — Store consent preferences in `localStorage` with expiry (13 months per GDPR guidance)
+- [x] 2.1.4 — Do NOT load Sentry session replay until user consents to "Session Replay" category
+- [x] 2.1.5 — Do NOT fire Vercel analytics `track()` events until user consents to "Analytics" category (note: basic Vercel Analytics is cookie-free and may not require consent — document decision)
+- [x] 2.1.6 — Show banner on first visit; allow re-access from footer "Cookie Settings" link
+- [x] 2.1.7 — Implement "Accept All", "Reject All", and "Manage Preferences" buttons
+- [x] 2.1.8 — Ensure banner is accessible (keyboard navigable, screen reader compatible, WCAG 2.1 AA)
+- [x] 2.1.9 — Ensure banner renders correctly in all 10 supported locales
+- [x] 2.1.10 — Ensure consent state is checked before initializing Sentry in `sentry.client.config.ts`
 
 **Acceptance Criteria**:
 - Banner appears on first visit
@@ -237,15 +237,15 @@
 **So that** I understand exactly what cookies and storage mechanisms are used
 
 #### Subtasks:
-- [ ] 2.2.1 — Create `/cookies` route in `src/app/[locale]/cookies/page.tsx`
-- [ ] 2.2.2 — Document all cookies, localStorage keys, sessionStorage keys, and Service Worker caching
-- [ ] 2.2.3 — For each: name, purpose, duration, type (essential/analytics/functional), first-party vs third-party
-- [ ] 2.2.4 — Include Sentry cookies/storage if any
-- [ ] 2.2.5 — Include Service Worker cache details (what URLs are cached, cache duration)
-- [ ] 2.2.6 — Include sessionStorage UTM parameter tracking
-- [ ] 2.2.7 — Add link to Cookie Policy from cookie consent banner and from footer
-- [ ] 2.2.8 — Add "Download PDF" button matching existing Privacy/Terms pattern
-- [ ] 2.2.9 — Add to sitemap
+- [x] 2.2.1 — Create `/cookies` route in `src/app/[locale]/cookies/page.tsx`
+- [x] 2.2.2 — Document all cookies, localStorage keys, sessionStorage keys, and Service Worker caching
+- [x] 2.2.3 — For each: name, purpose, duration, type (essential/analytics/functional), first-party vs third-party
+- [x] 2.2.4 — Include Sentry cookies/storage if any
+- [x] 2.2.5 — Include Service Worker cache details (what URLs are cached, cache duration)
+- [x] 2.2.6 — Include sessionStorage UTM parameter tracking
+- [x] 2.2.7 — Add link to Cookie Policy from cookie consent banner and from footer
+- [x] 2.2.8 — Add "Download PDF" button matching existing Privacy/Terms pattern
+- [x] 2.2.9 — Add to sitemap
 
 **Acceptance Criteria**:
 - Every storage mechanism documented
@@ -260,13 +260,13 @@
 **So that** my browsing behavior is not captured without my knowledge
 
 #### Subtasks:
-- [ ] 2.3.1 — Audit current Sentry config in `sentry.client.config.ts` for replay settings
-- [ ] 2.3.2 — Modify Sentry initialization to conditionally enable `replaysSessionSampleRate` and `replaysOnErrorSampleRate` based on consent
-- [ ] 2.3.3 — If consent not given: set both replay rates to 0
-- [ ] 2.3.4 — If consent given: restore 0.1% session / 100% error rates
-- [ ] 2.3.5 — Configure Sentry replay to mask all text inputs and personal data (`maskAllText: true`, `blockAllMedia: true` as defaults)
-- [ ] 2.3.6 — Add data-sentry-mask attributes to any forms collecting PII (newsletter, waitlist, contact)
-- [ ] 2.3.7 — Test that no replay data is sent before consent
+- [x] 2.3.1 — Audit current Sentry config in `sentry.client.config.ts` for replay settings
+- [x] 2.3.2 — Modify Sentry initialization to conditionally enable `replaysSessionSampleRate` and `replaysOnErrorSampleRate` based on consent
+- [x] 2.3.3 — If consent not given: set both replay rates to 0
+- [x] 2.3.4 — If consent given: restore 0.1% session / 100% error rates
+- [x] 2.3.5 — Configure Sentry replay to mask all text inputs and personal data (`maskAllText: true`, `blockAllMedia: true` as defaults)
+- [x] 2.3.6 — Add data-sentry-mask attributes to any forms collecting PII (newsletter, waitlist, contact)
+- [x] 2.3.7 — Test that no replay data is sent before consent
 
 **Acceptance Criteria**:
 - Zero session replay data sent without explicit consent

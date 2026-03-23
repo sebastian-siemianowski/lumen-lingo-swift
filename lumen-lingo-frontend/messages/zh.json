@@ -407,7 +407,9 @@
       "contact": "联系我们",
       "privacy": "隐私政策",
       "terms": "服务条款",
-      "accessibility": "无障碍"
+      "accessibility": "无障碍",
+      "cookiePolicy": "Cookie政策",
+      "cookieSettings": "Cookie设置"
     },
     "newsletter": {
       "heading": "保持关注",
@@ -840,6 +842,156 @@
       "description": "探索LumenLingo的所有语言对。用精美闪卡学习西班牙语、法语、德语、日语、中文、阿拉伯语、意大利语、波兰语等。",
       "ogTitle": "支持的语言 — LumenLingo",
       "ogDescription": "9种语言，25+双向语言对。通过精选词汇和自适应练习从任何方向学习。"
+    }
+  },
+  "CookieConsent": {
+    "bannerTitle": "我们重视您的隐私",
+    "bannerDescription": "我们使用Cookie和类似技术来改善您的体验、监控错误并了解网站使用情况。您可以选择自己觉得舒适的设置。",
+    "learnMore": "了解更多",
+    "acceptAll": "全部接受",
+    "rejectAll": "全部拒绝",
+    "managePreferences": "管理偏好设置",
+    "preferencesTitle": "Cookie偏好设置",
+    "preferencesDescription": "选择您希望允许的Cookie类别。必要Cookie始终处于活动状态，因为网站正常运行需要它们。",
+    "savePreferences": "保存偏好设置",
+    "close": "关闭",
+    "categories": {
+      "essential": {
+        "label": "必要",
+        "description": "网站正常运行所必需。包括语言偏好和同意状态。不能禁用。"
+      },
+      "analytics": {
+        "label": "分析",
+        "description": "通过Vercel Analytics进行的匿名、无Cookie页面浏览分析。帮助我们了解哪些页面最有用。"
+      },
+      "errorMonitoring": {
+        "label": "错误监控",
+        "description": "通过Sentry进行错误报告，以便我们快速修复问题。不会捕获个人数据。"
+      },
+      "sessionReplay": {
+        "label": "会话回放",
+        "description": "在发生错误时记录匿名化的浏览会话，以帮助我们重现和修复Bug。所有文本和媒体均已屏蔽。"
+      }
+    }
+  },
+  "CookiePage": {
+    "meta": {
+      "title": "Cookie政策 — LumenLingo",
+      "description": "了解LumenLingo如何使用Cookie、localStorage和类似技术。",
+      "ogTitle": "Cookie政策 — LumenLingo",
+      "ogDescription": "LumenLingo使用的Cookie和本地存储的完全透明度。随时管理您的偏好设置。"
+    },
+    "breadcrumb": "Cookie政策",
+    "hero": {
+      "heading": "Cookie政策",
+      "subtitle": "我们相信完全透明。以下是我们网站在您设备上存储的数据及其原因。"
+    },
+    "overview": {
+      "heading": "概述",
+      "p1": "LumenLingo使用最少的客户端存储来保持网站正常运行。我们不使用传统的跟踪Cookie。",
+      "p2": "您可以随时通过页脚的Cookie设置按钮管理您的偏好设置。"
+    },
+    "localStorage": {
+      "heading": "本地存储",
+      "intro": "localStorage将数据持久存储在您的设备上，直到明确清除。我们使用以下键：",
+      "consentKey": {
+        "heading": "ll_cookie_consent",
+        "category": "必要",
+        "purpose": "存储您的Cookie同意偏好。",
+        "duration": "自您最后一次同意决定起13个月。",
+        "data": "包含布尔标志、ISO时间戳和同意版本的JSON对象。无个人数据。"
+      },
+      "localeKey": {
+        "heading": "NEXT_LOCALE",
+        "category": "必要",
+        "purpose": "记住您的首选显示语言。",
+        "duration": "持久直到清除。",
+        "data": "两个字母的区域代码。无个人数据。"
+      }
+    },
+    "sessionStorage": {
+      "heading": "会话存储",
+      "intro": "sessionStorage仅在当前浏览器标签页中持续存在。关闭标签页时数据自动删除。",
+      "utmKey": {
+        "heading": "ll_utm",
+        "category": "分析",
+        "purpose": "在单个会话的页面导航之间保留UTM活动参数。",
+        "duration": "仅当前浏览器会话。",
+        "data": "包含最多五个活动参数字段的JSON对象。无个人数据。"
+      },
+      "sentryKey": {
+        "heading": "Sentry会话回放",
+        "category": "会话回放（需要同意）",
+        "purpose": "如果您同意会话回放，Sentry会在sessionStorage中存储内部会话状态。",
+        "duration": "仅当前浏览器会话。",
+        "data": "内部Sentry会话标识符。所有交互均匿名化。"
+      }
+    },
+    "serviceWorker": {
+      "heading": "Service Worker缓存",
+      "intro": "我们使用Service Worker来提高性能并启用离线访问。",
+      "cacheName": "缓存名称：lumenlingo-v1",
+      "strategies": {
+        "heading": "缓存策略",
+        "static": "<b>静态资源</b>（JS、CSS、字体、图片）— 缓存优先。",
+        "pages": "<b>HTML页面</b> — 网络优先。始终从服务器获取最新版本。",
+        "offline": "<b>离线回退</b> — 显示专用的离线页面。"
+      },
+      "p1": "Service Worker缓存完全存储在设备本地。",
+      "p2": "缓存不存储任何个人数据。"
+    },
+    "cookies": {
+      "heading": "Cookie",
+      "intro": "LumenLingo自身的代码不设置任何HTTP Cookie。但以下Cookie可能由我们的基础设施设置：",
+      "locale": {
+        "heading": "语言偏好",
+        "category": "必要",
+        "purpose": "next-intl国际化库可能设置语言偏好Cookie。",
+        "duration": "持久直到清除。",
+        "data": "两个字母的区域代码。第一方，不与第三方共享。"
+      },
+      "p1": "我们不使用广告Cookie、社交媒体跟踪像素或任何第三方Cookie。"
+    },
+    "thirdParty": {
+      "heading": "第三方服务",
+      "intro": "以下第三方服务可能处理您访问的数据：",
+      "vercel": {
+        "heading": "Vercel Analytics",
+        "description": "注重隐私的网站分析。<b>无Cookie</b>。自定义track()事件仅在同意时发送。",
+        "link": "Vercel隐私政策"
+      },
+      "sentry": {
+        "heading": "Sentry",
+        "description": "错误监控和会话回放。<b>错误报告</b>在同意时发送。<b>会话回放</b>仅在明确同意时记录。",
+        "link": "Sentry隐私政策"
+      }
+    },
+    "manage": {
+      "heading": "管理您的偏好设置",
+      "p1": "您可以随时通过页脚的\"Cookie设置\"按钮更改同意选择。",
+      "p2": "要删除所有存储的数据，请通过浏览器设置清除网站数据。",
+      "p3": "您的同意偏好存储在设备本地——永远不会传输到我们的服务器。"
+    },
+    "updates": {
+      "heading": "政策更新",
+      "p1": "当我们添加新的存储机制时，可能会更新此Cookie政策。",
+      "version": "<b>当前同意版本：</b> 1.0",
+      "versionHistory": "版本历史",
+      "v1": "<b>v1.0</b>（2025年7月）— 初始Cookie政策发布。"
+    },
+    "contact": {
+      "heading": "联系我们",
+      "intro": "如果您对此Cookie政策有疑问：",
+      "email": "<b>邮箱：</b> <emailLink>hello@lumenshore.com</emailLink>",
+      "company": "<b>公司：</b> LumenShore Ltd（Company No. 09607326）",
+      "responseTime": "我们通常在48小时内回复。"
+    },
+    "table": {
+      "key": "存储键",
+      "type": "类型",
+      "category": "类别",
+      "purpose": "目的",
+      "duration": "期限"
     }
   }
 }

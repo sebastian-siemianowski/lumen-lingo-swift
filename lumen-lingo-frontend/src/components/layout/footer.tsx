@@ -33,6 +33,7 @@ const footerSections = [
       { href: '/contact', key: 'contact' },
       { href: '/privacy', key: 'privacy' },
       { href: '/terms', key: 'terms' },
+      { href: '/cookies', key: 'cookiePolicy' },
       { href: '/accessibility', key: 'accessibility' },
     ],
   },
@@ -207,9 +208,18 @@ export function Footer() {
             <p className="text-xs text-foreground-muted">
               &copy; {new Date().getFullYear()} {t('copyright')}
             </p>
-            <p className="text-xs text-foreground-muted">
-              {t('madeIn')}
-            </p>
+            <div className="flex items-center gap-4">
+              <button
+                type="button"
+                onClick={() => window.dispatchEvent(new CustomEvent('open-cookie-settings'))}
+                className="text-xs text-foreground-muted transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none rounded py-1"
+              >
+                {t('links.cookieSettings')}
+              </button>
+              <p className="text-xs text-foreground-muted">
+                {t('madeIn')}
+              </p>
+            </div>
           </div>
         </div>
       </Container>

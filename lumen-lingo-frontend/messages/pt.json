@@ -407,7 +407,9 @@
       "contact": "Contato",
       "privacy": "Política de Privacidade",
       "terms": "Termos de Uso",
-      "accessibility": "Acessibilidade"
+      "accessibility": "Acessibilidade",
+      "cookiePolicy": "Política de Cookies",
+      "cookieSettings": "Definições de Cookies"
     },
     "newsletter": {
       "heading": "Fique por dentro",
@@ -840,6 +842,156 @@
       "description": "Explore todos os pares de idiomas do LumenLingo. Aprenda espanhol, francês, alemão, japonês, chinês, árabe, italiano, polonês e mais com cartões bonitos.",
       "ogTitle": "Idiomas suportados — LumenLingo",
       "ogDescription": "9 idiomas, 25+ pares bidirecionais. Aprenda em qualquer direção com vocabulário curado e prática adaptativa."
+    }
+  },
+  "CookieConsent": {
+    "bannerTitle": "Valorizamos a sua privacidade",
+    "bannerDescription": "Utilizamos cookies e tecnologias semelhantes para melhorar a sua experiência, monitorizar erros e compreender a utilização do site. Você escolhe o que lhe é confortável.",
+    "learnMore": "Saiba mais",
+    "acceptAll": "Aceitar tudo",
+    "rejectAll": "Rejeitar tudo",
+    "managePreferences": "Gerir preferências",
+    "preferencesTitle": "Preferências de cookies",
+    "preferencesDescription": "Escolha quais categorias de cookies deseja permitir. Os cookies essenciais estão sempre ativos pois são necessários para o funcionamento do site.",
+    "savePreferences": "Guardar preferências",
+    "close": "Fechar",
+    "categories": {
+      "essential": {
+        "label": "Essenciais",
+        "description": "Necessários para o funcionamento do website. Inclui preferências de idioma e estado de consentimento. Não podem ser desativados."
+      },
+      "analytics": {
+        "label": "Analítica",
+        "description": "Análises anónimas de visualizações de páginas sem cookies através do Vercel Analytics. Ajuda-nos a compreender quais páginas são mais úteis."
+      },
+      "errorMonitoring": {
+        "label": "Monitorização de erros",
+        "description": "Relatórios de erros através do Sentry para que possamos corrigir problemas rapidamente. Nenhum dado pessoal é capturado."
+      },
+      "sessionReplay": {
+        "label": "Replay de sessão",
+        "description": "Grava sessões de navegação anonimizadas quando ocorrem erros para nos ajudar a reproduzir e corrigir bugs. Todo o texto e média são mascarados."
+      }
+    }
+  },
+  "CookiePage": {
+    "meta": {
+      "title": "Política de Cookies — LumenLingo",
+      "description": "Saiba como o LumenLingo utiliza cookies, localStorage e tecnologias semelhantes.",
+      "ogTitle": "Política de Cookies — LumenLingo",
+      "ogDescription": "Transparência total sobre cookies e armazenamento local utilizados pelo LumenLingo."
+    },
+    "breadcrumb": "Política de Cookies",
+    "hero": {
+      "heading": "Política de Cookies",
+      "subtitle": "Acreditamos em transparência total. Aqui está exatamente o que o nosso site armazena no seu dispositivo e porquê."
+    },
+    "overview": {
+      "heading": "Visão Geral",
+      "p1": "O LumenLingo utiliza armazenamento mínimo do lado do cliente para manter o site a funcionar corretamente. Não utilizamos cookies de rastreamento tradicionais.",
+      "p2": "Pode gerir as suas preferências a qualquer momento através do botão Definições de Cookies no rodapé."
+    },
+    "localStorage": {
+      "heading": "Armazenamento Local",
+      "intro": "O localStorage persiste dados no seu dispositivo até serem explicitamente apagados. Utilizamos as seguintes chaves:",
+      "consentKey": {
+        "heading": "ll_cookie_consent",
+        "category": "Essencial",
+        "purpose": "Armazena as suas preferências de consentimento de cookies.",
+        "duration": "13 meses a partir da data da sua última decisão de consentimento.",
+        "data": "Objeto JSON com flags booleanas, timestamp ISO e versão do consentimento. Sem dados pessoais."
+      },
+      "localeKey": {
+        "heading": "NEXT_LOCALE",
+        "category": "Essencial",
+        "purpose": "Memoriza o seu idioma de exibição preferido.",
+        "duration": "Persistente até ser apagado.",
+        "data": "Código de locale de duas letras. Sem dados pessoais."
+      }
+    },
+    "sessionStorage": {
+      "heading": "Armazenamento de Sessão",
+      "intro": "O sessionStorage persiste apenas para o separador atual do navegador. Ao fechar o separador, os dados são automaticamente eliminados.",
+      "utmKey": {
+        "heading": "ll_utm",
+        "category": "Analítica",
+        "purpose": "Preserva parâmetros de campanha UTM entre navegações de página numa sessão.",
+        "duration": "Apenas a sessão atual do navegador.",
+        "data": "Objeto JSON com até cinco campos de parâmetros de campanha. Sem dados pessoais."
+      },
+      "sentryKey": {
+        "heading": "Sentry Session Replay",
+        "category": "Replay de sessão (requer consentimento)",
+        "purpose": "Se consentir o Replay de Sessão, o Sentry armazena estado de sessão interno no sessionStorage.",
+        "duration": "Apenas a sessão atual do navegador.",
+        "data": "Identificadores de sessão internos do Sentry. Todas as interações são anonimizadas."
+      }
+    },
+    "serviceWorker": {
+      "heading": "Cache do Service Worker",
+      "intro": "Utilizamos um Service Worker para melhorar o desempenho e permitir acesso offline.",
+      "cacheName": "Nome do cache: lumenlingo-v1",
+      "strategies": {
+        "heading": "Estratégias de Cache",
+        "static": "<b>Recursos estáticos</b> (JS, CSS, fontes, imagens) — cache primeiro.",
+        "pages": "<b>Páginas HTML</b> — rede primeiro. A versão mais recente é sempre obtida do servidor.",
+        "offline": "<b>Fallback offline</b> — é exibida uma página offline dedicada."
+      },
+      "p1": "O cache do Service Worker é completamente local no dispositivo.",
+      "p2": "O cache não armazena dados pessoais."
+    },
+    "cookies": {
+      "heading": "Cookies",
+      "intro": "O código próprio do LumenLingo não define cookies HTTP. No entanto, os seguintes cookies podem ser definidos pela nossa infraestrutura:",
+      "locale": {
+        "heading": "Preferência de idioma",
+        "category": "Essencial",
+        "purpose": "A biblioteca next-intl pode definir um cookie de preferência de idioma.",
+        "duration": "Persistente até ser apagado.",
+        "data": "Código de locale de duas letras. Primeira parte, não partilhado."
+      },
+      "p1": "Não utilizamos cookies publicitários, pixels de rastreamento de redes sociais ou cookies de terceiros."
+    },
+    "thirdParty": {
+      "heading": "Serviços de Terceiros",
+      "intro": "Os seguintes serviços de terceiros podem processar dados da sua visita:",
+      "vercel": {
+        "heading": "Vercel Analytics",
+        "description": "Analítica web focada na privacidade. <b>Sem cookies</b>. Eventos track() personalizados são enviados apenas com consentimento.",
+        "link": "Política de Privacidade da Vercel"
+      },
+      "sentry": {
+        "heading": "Sentry",
+        "description": "Monitorização de erros e replay de sessão. <b>Relatórios de erros</b> enviados com consentimento. <b>Replays de sessão</b> gravados apenas com consentimento explícito.",
+        "link": "Política de Privacidade do Sentry"
+      }
+    },
+    "manage": {
+      "heading": "Gerir as Suas Preferências",
+      "p1": "Pode alterar as suas escolhas de consentimento a qualquer momento clicando no botão \"Definições de Cookies\" no rodapé.",
+      "p2": "Para remover todos os dados armazenados, limpe os dados do site através das definições do navegador.",
+      "p3": "As suas preferências de consentimento são armazenadas localmente no seu dispositivo — nunca são transmitidas para os nossos servidores."
+    },
+    "updates": {
+      "heading": "Atualizações da Política",
+      "p1": "Podemos atualizar esta Política de Cookies quando adicionarmos novos mecanismos de armazenamento.",
+      "version": "<b>Versão atual do consentimento:</b> 1.0",
+      "versionHistory": "Histórico de Versões",
+      "v1": "<b>v1.0</b> (julho 2025) — Publicação inicial da Política de Cookies."
+    },
+    "contact": {
+      "heading": "Contacte-nos",
+      "intro": "Se tiver questões sobre esta Política de Cookies:",
+      "email": "<b>Email:</b> <emailLink>hello@lumenshore.com</emailLink>",
+      "company": "<b>Empresa:</b> LumenShore Ltd (Company No. 09607326)",
+      "responseTime": "Normalmente respondemos dentro de 48 horas."
+    },
+    "table": {
+      "key": "Chave de Armazenamento",
+      "type": "Tipo",
+      "category": "Categoria",
+      "purpose": "Finalidade",
+      "duration": "Duração"
     }
   }
 }
