@@ -2715,12 +2715,68 @@
 
 | Metric | Count |
 |---|---|
-| **Epics** | 16 |
-| **Stories** | 49 |
-| **Subtasks** | ~250 |
-| **P0 (Critical)** | 6 epics |
-| **P1 (High)** | 7 epics |
-| **P2 (Medium)** | 3 epics |
+| **Epics** | 24 |
+| **Stories** | 79 |
+| **Subtasks** | 441 |
+| **P0 (Critical)** | 10 epics |
+| **P1 (High)** | 10 epics |
+| **P2 (Medium)** | 4 epics |
+
+---
+
+## Company Reference Card
+
+| Field | Value |
+|---|---|
+| **Legal name** | Lumenshore Limited |
+| **Trading as** | LumenShore / LumenLingo |
+| **Company number** | 09607326 |
+| **Jurisdiction** | England and Wales |
+| **Registered office** | Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA |
+| **Incorporated** | 26 May 2015 |
+| **VAT number** | GB 270411929 |
+| **Contact email** | hello@lumenshore.com |
+| **Bundle ID** | com.sebastiansiemianowski.lumenlingo |
+| **Website** | lumenlingo.com |
+
+---
+
+## Language Pairs & Target Markets Reference
+
+### iOS App Language Pairs (25 pairs, 9 languages)
+
+| Source | Target | Tier | Primary Market |
+|---|---|---|---|
+| English | Spanish | Free | UK/US/AU → Spain/LatAm |
+| English | French | Free | UK/US/AU → France/Canada |
+| English | German | Free | UK/US/AU → Germany/Austria/CH |
+| English | Japanese | Pro | UK/US/AU → Japan |
+| English | Chinese | Pro | UK/US/AU → China |
+| English | Arabic | Pro | UK/US/AU → Middle East |
+| English | Polish | Pro | UK/US/AU → Poland |
+| Spanish | English | Elite | Spain/LatAm → UK/US/AU |
+| French | English | Elite | France → UK/US/AU |
+| German | English | Elite | Germany → UK/US/AU |
+| Japanese | English | Elite | Japan → UK/US/AU |
+| Chinese | English | Elite | China → UK/US/AU |
+| Arabic | English | Elite | Middle East → UK/US/AU |
+| Ukrainian | English | Elite | Ukraine → UK/US/AU |
+| Polish | English | Elite | Poland → UK/US/AU |
+| Polish | Spanish | Elite | Poland → Spain/LatAm |
+| Polish | German | Elite | Poland → Germany |
+| Polish | French | Elite | Poland → France |
+| Polish | Japanese | Elite | Poland → Japan |
+| Polish | Chinese | Elite | Poland → China |
+| Polish | Arabic | Elite | Poland → Middle East |
+| Polish | Ukrainian | Elite | Poland → Ukraine |
+| German | Spanish | Elite | Germany → Spain/LatAm |
+| German | Polish | Elite | Germany → Poland |
+| Ukrainian | Polish | Elite | Ukraine → Poland |
+
+### Website Locales (10)
+en, es, fr, de, ja, zh, ar, pl, uk, pt
+
+**Note**: Portuguese (pt) is a website locale but has no iOS app language pairs yet.
 
 ---
 
@@ -2728,22 +2784,47 @@
 
 | Jurisdiction | Regulation | Covered In |
 |---|---|---|
-| **EU** | GDPR | Epics 1, 4, 7 |
+| **EU** | GDPR | Epics 1, 4, 7, 18 |
 | **EU** | ePrivacy Directive | Epic 2 |
 | **EU** | Consumer Rights Directive | Epic 9 |
 | **EU** | Digital Services Act | Epic 7 |
+| **EU** | European Accessibility Act | Epic 22 |
+| **EU** | EU AI Act | Epic 23 |
+| **EU** | EU VAT (OSS) | Epic 20 |
+| **EU** | EU Omnibus Directive (pricing) | Epic 20 |
 | **UK** | UK GDPR / DPA 2018 | Epics 4, 6 |
 | **UK** | PECR | Epics 2, 6, 13 |
 | **UK** | Consumer Rights Act 2015 | Epic 6 |
 | **UK** | Consumer Contracts Regs 2013 | Epic 9 |
 | **UK** | Equality Act 2010 | Epic 6 |
+| **UK** | Companies Act 2006 | Epics 17, 24 |
+| **UK** | VAT Act 1994 / MTD | Epic 20 |
+| **UK** | Children's Code (ICO) | Epic 19 |
+| **UK** | Sanctions Act 2018 | Epic 21 |
 | **US** | CCPA / CPRA (California) | Epic 5 |
 | **US** | COPPA (Children) | Epic 5 |
 | **US** | CAN-SPAM Act | Epic 13 |
 | **US** | State privacy laws (VA, CO, CT+) | Epic 5 |
+| **US** | ADA (Accessibility) | Epic 22 |
+| **US** | EAR (Encryption) | Epic 21 |
+| **US** | OFAC Sanctions | Epic 21 |
+| **Japan** | APPI | Epic 18 |
+| **Japan** | JCT (Consumption Tax) | Epic 20 |
+| **China** | PIPL | Epic 18 |
+| **Brazil** | LGPD | Epic 18 |
+| **Germany** | BDSG / TTDSG | Epic 18 |
+| **Germany** | Impressum (TMG §5) | Epic 18 |
+| **France** | CNIL Guidelines | Epic 18 |
+| **France** | LCEN (Mentions Légales) | Epic 18 |
+| **France** | Loi Toubon | Epic 18 |
+| **Poland** | PUODO / Polish Consumer Law | Epic 18 |
+| **Ukraine** | Law on Protection of Personal Data | Epic 18 |
+| **Spain** | LOPDGDD | Epic 18 |
+| **UAE** | Federal Decree-Law No. 45/2021 | Epic 18 |
+| **Saudi Arabia** | PDPL | Epic 18 |
 | **Canada** | CASL | Epic 13 |
-| **Australia** | Spam Act 2003 | Epic 13 |
+| **Australia** | Spam Act 2003 / Privacy Act 1988 | Epics 13, 20 |
 | **Apple** | App Store Review Guidelines | Epics 3, 9, 11 |
-| **Apple** | HIG / Accessibility | Epic 6 |
-| **Global** | WCAG 2.1 AA | Epic 6 |
+| **Apple** | HIG / Accessibility | Epics 6, 22 |
+| **Global** | WCAG 2.1 AA / EN 301 549 | Epic 22 |
 | **Global** | DMCA / Copyright | Epic 8 |
