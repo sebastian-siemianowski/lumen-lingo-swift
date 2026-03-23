@@ -92,6 +92,22 @@ body {
   overflow-x: clip;
 }
 
+/* ── CJK Typography — Japanese ── */
+:root[lang="ja"] body {
+  font-family: var(--font-inter), var(--font-cjk-jp), 'Hiragino Kaku Gothic ProN', 'Yu Gothic', system-ui, sans-serif;
+  line-height: 1.8;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+/* ── CJK Typography — Chinese (Simplified) ── */
+:root[lang="zh"] body {
+  font-family: var(--font-inter), var(--font-cjk-sc), 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  line-height: 1.8;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
 /* ── Glass morphism utilities ── */
 .glass-card {
   background: rgba(255, 255, 255, 0.04);
@@ -560,4 +576,33 @@ body {
   .legal-prose ul li::before {
     background: #666;
   }
+}
+
+/* ── CJK Blog & Legal Prose Overrides ── */
+:root[lang="ja"] .prose-lumenlingo,
+:root[lang="zh"] .prose-lumenlingo {
+  line-height: 1.9;
+}
+
+:root[lang="ja"] .prose-lumenlingo h1,
+:root[lang="ja"] .prose-lumenlingo h2,
+:root[lang="ja"] .prose-lumenlingo h3,
+:root[lang="ja"] .prose-lumenlingo h4,
+:root[lang="ja"] .legal-prose h2,
+:root[lang="ja"] .legal-prose h3 {
+  font-family: var(--font-cjk-jp), var(--font-cabinet), var(--font-inter), system-ui, sans-serif;
+}
+
+:root[lang="zh"] .prose-lumenlingo h1,
+:root[lang="zh"] .prose-lumenlingo h2,
+:root[lang="zh"] .prose-lumenlingo h3,
+:root[lang="zh"] .prose-lumenlingo h4,
+:root[lang="zh"] .legal-prose h2,
+:root[lang="zh"] .legal-prose h3 {
+  font-family: var(--font-cjk-sc), var(--font-cabinet), var(--font-inter), system-ui, sans-serif;
+}
+
+:root[lang="ja"] .legal-prose,
+:root[lang="zh"] .legal-prose {
+  line-height: 1.9;
 }

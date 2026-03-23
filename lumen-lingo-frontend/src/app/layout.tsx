@@ -1,23 +1,10 @@
 import type { Metadata } from 'next';
-import { Inter, Space_Grotesk } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { getLocale } from 'next-intl/server';
 import { APP_STORE_ID } from '@/lib/appStoreConfig';
+import { getFontVariableClasses } from '@/lib/fonts';
 import './globals.css';
-
-const inter = Inter({
-  subsets: ['latin', 'latin-ext', 'cyrillic'],
-  variable: '--font-inter',
-  display: 'swap',
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-cabinet',
-  weight: ['500', '700'],
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: {
@@ -41,7 +28,7 @@ export default async function RootLayout({
   const locale = await getLocale();
 
   return (
-    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className={`${getFontVariableClasses(locale)} h-full antialiased`}>
       <body className="min-h-full bg-background text-foreground">
         {children}
         <Analytics />

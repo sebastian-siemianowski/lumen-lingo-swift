@@ -1921,24 +1921,24 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] CJK-optimised font stack configured: `Noto Sans JP` (Japanese), `Noto Sans SC` (Simplified Chinese) loaded via `next/font` or Google Fonts with subset preloading
-- [ ] Display headings use a CJK-appropriate typeface (not Latin-only Cabinet Grotesk / Satoshi)
-- [ ] Body text renders at an appropriate size: CJK characters are comfortable at 16–18 px (not smaller)
-- [ ] Line height adjusted for CJK: 1.8–2.0 (vs 1.5–1.6 for Latin scripts)
-- [ ] Word-break behaviour is correct: `word-break: break-all` or `overflow-wrap: anywhere` for CJK contexts where no spaces exist
-- [ ] No mojibake (garbled characters) on any page
-- [ ] Font files are subset-loaded to keep page weight manageable (< 200 KB per locale)
-- [ ] Fallback fonts are specified so content is readable before web fonts load
+- [x] CJK-optimised font stack configured: `Noto Sans JP` (Japanese), `Noto Sans SC` (Simplified Chinese) loaded via `next/font` or Google Fonts with subset preloading
+- [x] Display headings use a CJK-appropriate typeface (not Latin-only Cabinet Grotesk / Satoshi)
+- [x] Body text renders at an appropriate size: CJK characters are comfortable at 16–18 px (not smaller)
+- [x] Line height adjusted for CJK: 1.8–2.0 (vs 1.5–1.6 for Latin scripts)
+- [x] Word-break behaviour is correct: `word-break: break-all` or `overflow-wrap: anywhere` for CJK contexts where no spaces exist
+- [x] No mojibake (garbled characters) on any page
+- [x] Font files are subset-loaded to keep page weight manageable (< 200 KB per locale)
+- [x] Fallback fonts are specified so content is readable before web fonts load
 
 ### Subtasks
 
-- [ ] 15.4.1 — Select and configure `Noto Sans JP` for Japanese via `next/font/google` with Unicode range subsetting
-- [ ] 15.4.2 — Select and configure `Noto Sans SC` for Simplified Chinese via `next/font/google` with Unicode range subsetting
-- [ ] 15.4.3 — Create a locale-aware font utility in `src/lib/fonts.ts` that returns the correct font class per locale
-- [ ] 15.4.4 — Update root layout to apply locale-specific font classes to `<body>`
-- [ ] 15.4.5 — Adjust line-height and word-break CSS for CJK locales via Tailwind custom utilities or `[locale]` layout
-- [ ] 15.4.6 — Verify heading and body rendering on JA and ZH pages — no clipping, no overflow, no mojibake
-- [ ] 15.4.7 — Measure font payload per locale with Lighthouse; ensure < 200 KB incremental per CJK font
+- [x] 15.4.1 — Select and configure `Noto Sans JP` for Japanese via `next/font/google` with Unicode range subsetting
+- [x] 15.4.2 — Select and configure `Noto Sans SC` for Simplified Chinese via `next/font/google` with Unicode range subsetting
+- [x] 15.4.3 — Create a locale-aware font utility in `src/lib/fonts.ts` that returns the correct font class per locale
+- [x] 15.4.4 — Update root layout to apply locale-specific font classes to `<body>`
+- [x] 15.4.5 — Adjust line-height and word-break CSS for CJK locales via Tailwind custom utilities or `[locale]` layout
+- [x] 15.4.6 — Verify heading and body rendering on JA and ZH pages — no clipping, no overflow, no mojibake
+- [x] 15.4.7 — Measure font payload per locale with Lighthouse; ensure < 200 KB incremental per CJK font
 
 ---
 
@@ -2224,7 +2224,7 @@ error messages — without falling back to English.
 > Continue improving the website after launch based on real user data,
 > content performance, and conversion analytics.
 
-## Story 16.1 — A/B Testing Infrastructure
+## Story 16.1 — A/B Testing Infrastructure (SKIP THIS STORY - WE DONT NEED A/B TESTING)
 
 **As a** product owner,
 **I want** the ability to run A/B tests on key conversion elements,
