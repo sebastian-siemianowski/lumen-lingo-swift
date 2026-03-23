@@ -28,6 +28,9 @@ struct MembershipView: View {
                 heroSection
                 tiersSection
 
+                // Apple-required subscription disclosure (Guideline 3.1.2)
+                SubscriptionDisclosureView()
+
                 comparisonSection
 
                 Spacer(minLength: 80)

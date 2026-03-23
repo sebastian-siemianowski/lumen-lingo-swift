@@ -443,6 +443,8 @@ export default async function PrivacyPage({
                   </ul>
                   <p>{t('contactUs.responseTime')}</p>
                 </section>
+
+                <p className="mt-12 text-xs text-white/30">{t('trademarkAttribution')}</p>
               </div>
             </FadeIn>
 

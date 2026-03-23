@@ -468,6 +468,32 @@ extension AppStrings {
         legalDeclineMessage: "You must accept our Privacy Policy and Terms of Service to use LumenLingo.",
         legalDeclineConfirm: "Decline & Exit",
         legalReadFull: "Read Full Policy",
-        legalScrollToAccept: "Scroll to review"
+        legalScrollToAccept: "Scroll to review",
+
+        // MARK: - EULA
+        eulaTitle: "End-User Licence Agreement",
+        eulaSummary: "This licence agreement governs your use of the LumenLingo app, distributed through the Apple App Store by LumenShore Ltd.",
+        eulaHighlight1: "Non-exclusive, revocable licence for personal language learning",
+        eulaHighlight2: "Tier-based access — Free, Pro, Elite, and Royal memberships",
+        eulaHighlight3: "You own your learning data; we own the app content",
+        eulaHighlight4: "Apple-specific terms included per App Store requirements",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "Subscriptions auto-renew monthly unless cancelled at least 24 hours before the current period ends.",
+        subscriptionPaymentNotice: "Payment is charged to your Apple ID at confirmation of purchase.",
+        subscriptionManageCancel: "Manage or cancel in Settings → Apple ID → Subscriptions.",
+        subscriptionTrialNotice: "14-day Royal trial at no charge. Downgrades to Free after trial ends.",
+        restorePurchases: "Restore Purchases",
+        subscriptionLegalPrefix: "By subscribing, you agree to our",
+        subscriptionLegalAnd: "and",
+
+        // MARK: - Account Deletion
+        deleteAccount: "Delete Account",
+        deleteAccountWarning: "This will permanently delete all your learning data, progress, streaks, and preferences. This action cannot be undone.",
+        deleteAccountConfirm: "Delete Everything",
+        deletingAccount: "Deleting account…",
+        clearingUserData: "Clearing user data",
+        accountDeleted: "Account deleted",
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
     )
 }

@@ -19,7 +19,7 @@ struct LegalConsentView: View {
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
 
-    // Active tab: 0 = Privacy, 1 = Terms
+    // Active tab: 0 = Privacy, 1 = Terms, 2 = EULA
     @State private var activeTab = 0
 
     // Entrance animation
@@ -184,6 +184,7 @@ struct LegalConsentView: View {
         HStack(spacing: 0) {
             tabButton(title: strings.privacyPolicyTitle, icon: "lock.shield.fill", index: 0)
             tabButton(title: strings.termsOfServiceTitle, icon: "doc.text.fill", index: 1)
+            tabButton(title: strings.eulaTitle, icon: "doc.badge.gearshape.fill", index: 2)
         }
         .padding(4)
         .background(
@@ -209,14 +210,14 @@ struct LegalConsentView: View {
         } label: {
             HStack(spacing: 6) {
                 Image(systemName: icon)
-                    .font(.system(size: 12, weight: .semibold))
+                    .font(.system(size: 11, weight: .semibold))
                 Text(title)
-                    .font(.system(size: 13, weight: .semibold))
+                    .font(.system(size: 11, weight: .semibold))
                     .lineLimit(1)
-                    .minimumScaleFactor(0.75)
+                    .minimumScaleFactor(0.65)
             }
             .foregroundStyle(activeTab == index ? .white : .white.opacity(0.4))
-            .padding(.horizontal, 14)
+            .padding(.horizontal, 10)
             .padding(.vertical, 10)
             .frame(maxWidth: .infinity)
             .background(
@@ -248,8 +249,10 @@ struct LegalConsentView: View {
                 VStack(spacing: 16) {
                     if activeTab == 0 {
                         privacySection
-                    } else {
+                    } else if activeTab == 1 {
                         termsSection
+                    } else {
+                        eulaSection
                     }
 
                     Color.clear.frame(height: 1).id("bottom")
@@ -338,6 +341,42 @@ struct LegalConsentView: View {
 
             // Full terms link
             Link(destination: URL(string: "https://lumenlingo.com/en/terms")!) {
+                HStack(spacing: 6) {
+                    Image(systemName: "arrow.up.right.square")
+                        .font(.system(size: 13))
+                    Text(strings.legalReadFull)
+                        .font(.system(size: 13, weight: .medium))
+                }
+                .foregroundStyle(Color(red: 100/255, green: 126/255, blue: 234/255))
+            }
+        }
+        .transition(.asymmetric(
+            insertion: .move(edge: .trailing).combined(with: .opacity),
+            removal: .move(edge: .leading).combined(with: .opacity)
+        ))
+    }
+
+    // MARK: - EULA Section
+
+    private var eulaSection: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text(strings.eulaSummary)
+                .font(.system(size: 14, weight: .regular))
+                .foregroundStyle(.white.opacity(0.75))
+                .fixedSize(horizontal: false, vertical: true)
+
+            Divider().background(.white.opacity(0.1))
+
+            VStack(alignment: .leading, spacing: 12) {
+                highlightRow(icon: "key.fill", text: strings.eulaHighlight1, color: .cyan)
+                highlightRow(icon: "crown.fill", text: strings.eulaHighlight2, color: .purple)
+                highlightRow(icon: "person.fill.checkmark", text: strings.eulaHighlight3, color: .green)
+                highlightRow(icon: "apple.logo", text: strings.eulaHighlight4, color: .blue)
+            }
+
+            Divider().background(.white.opacity(0.1))
+
+            Link(destination: URL(string: "https://lumenlingo.com/en/eula")!) {
                 HStack(spacing: 6) {
                     Image(systemName: "arrow.up.right.square")
                         .font(.system(size: 13))

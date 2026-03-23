@@ -461,6 +461,33 @@ extension AppStrings {
         legalDeclineMessage: "يجب قبول سياسة الخصوصية وشروط الخدمة لاستخدام LumenLingo.",
         legalDeclineConfirm: "رفض والخروج",
         legalReadFull: "اقرأ السياسة كاملة",
-        legalScrollToAccept: "مرر للمراجعة"
+        legalScrollToAccept: "مرر للمراجعة",
+
+        // MARK: - EULA
+        eulaTitle: "اتفاقية ترخيص المستخدم النهائي",
+        eulaSummary: "تحكم اتفاقية الترخيص هذه استخدامك لتطبيق LumenLingo، الموزع عبر متجر Apple App Store بواسطة LumenShore Ltd.",
+        eulaHighlight1: "ترخيص غير حصري وقابل للإلغاء لتعلم اللغات الشخصي",
+        eulaHighlight2: "وصول متدرج — عضويات مجانية، Pro، Elite و Royal",
+        eulaHighlight3: "بيانات التعلم ملكك، محتوى التطبيق ملكنا",
+        eulaHighlight4: "شروط خاصة بـ Apple مضمنة وفقًا لمتطلبات App Store",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "تتجدد الاشتراكات شهريًا تلقائيًا ما لم يتم الإلغاء قبل 24 ساعة على الأقل من نهاية الفترة الحالية.",
+        subscriptionPaymentNotice: "سيتم خصم المبلغ من حساب Apple ID الخاص بك عند تأكيد الشراء.",
+        subscriptionManageCancel: "إدارة أو إلغاء في الإعدادات ← Apple ID ← الاشتراكات.",
+        subscriptionTrialNotice: "تجربة Royal مجانية لمدة 14 يومًا. ينتقل إلى المستوى المجاني بعد انتهاء التجربة.",
+        restorePurchases: "استعادة المشتريات",
+        subscriptionLegalPrefix: "بالاشتراك، فإنك توافق على",
+        subscriptionLegalAnd: "و"
+,
+
+        // MARK: - Account Deletion
+        deleteAccount: "حذف الحساب",
+        deleteAccountWarning: "سيؤدي هذا إلى حذف جميع بيانات التعلم والتقدم والسلاسل والتفضيلات نهائيًا. لا يمكن التراجع عن هذا الإجراء.",
+        deleteAccountConfirm: "حذف كل شيء",
+        deletingAccount: "جارٍ حذف الحساب…",
+        clearingUserData: "جارٍ مسح بيانات المستخدم",
+        accountDeleted: "تم حذف الحساب",
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
     )
 }

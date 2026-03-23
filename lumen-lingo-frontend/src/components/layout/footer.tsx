@@ -33,6 +33,7 @@ const footerSections = [
       { href: '/contact', key: 'contact' },
       { href: '/privacy', key: 'privacy' },
       { href: '/terms', key: 'terms' },
+      { href: '/eula', key: 'eula' },
       { href: '/cookies', key: 'cookiePolicy' },
       { href: '/accessibility', key: 'accessibility' },
     ],
@@ -221,6 +222,11 @@ export function Footer() {
               </p>
             </div>
           </div>
+
+          {/* Apple trademark attribution */}
+          <p className="mt-4 text-center text-[10px] text-foreground-muted/50">
+            {t('trademarkAttribution')}
+          </p>
         </div>
       </Container>
     </footer>

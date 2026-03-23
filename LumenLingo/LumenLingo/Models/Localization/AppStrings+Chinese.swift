@@ -463,6 +463,33 @@ extension AppStrings {
         legalDeclineMessage: "您必须接受我们的隐私政策和服务条款才能使用 LumenLingo。",
         legalDeclineConfirm: "拒绝并退出",
         legalReadFull: "阅读完整政策",
-        legalScrollToAccept: "滚动查看"
+        legalScrollToAccept: "滚动查看",
+
+        // MARK: - EULA
+        eulaTitle: "最终用户许可协议",
+        eulaSummary: "本许可协议管理您对 LumenLingo 应用程序的使用，该应用由 LumenShore Ltd 通过 Apple App Store 分发。",
+        eulaHighlight1: "用于个人语言学习的非独占性、可撤销许可",
+        eulaHighlight2: "分级访问 — 免费、Pro、Elite 和 Royal 会员",
+        eulaHighlight3: "您拥有您的学习数据；我们拥有应用内容",
+        eulaHighlight4: "包含符合 App Store 要求的 Apple 特定条款",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "订阅每月自动续订，除非在当前期间结束前至少24小时取消。",
+        subscriptionPaymentNotice: "确认购买时，费用将从您的 Apple ID 账户扣除。",
+        subscriptionManageCancel: "在「设置」→ Apple ID →「订阅」中管理或取消。",
+        subscriptionTrialNotice: "14天Royal免费试用。试用结束后将降级为免费版。",
+        restorePurchases: "恢复购买",
+        subscriptionLegalPrefix: "订阅即表示您同意我们的",
+        subscriptionLegalAnd: "和"
+,
+
+        // MARK: - Account Deletion
+        deleteAccount: "删除账户",
+        deleteAccountWarning: "这将永久删除所有学习数据、进度、连续记录和偏好设置。此操作无法撤销。",
+        deleteAccountConfirm: "删除所有内容",
+        deletingAccount: "正在删除账户…",
+        clearingUserData: "正在清除用户数据",
+        accountDeleted: "账户已删除",
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
     )
 }

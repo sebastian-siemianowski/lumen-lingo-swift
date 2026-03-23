@@ -463,6 +463,33 @@ extension AppStrings {
         legalDeclineMessage: "Musisz zaakceptować naszą Politykę Prywatności i Regulamin, aby korzystać z LumenLingo.",
         legalDeclineConfirm: "Odrzuć i wyjdź",
         legalReadFull: "Przeczytaj pełną politykę",
-        legalScrollToAccept: "Przewiń, aby przejrzeć"
+        legalScrollToAccept: "Przewiń, aby przejrzeć",
+
+        // MARK: - EULA
+        eulaTitle: "Umowa Licencyjna Użytkownika Końcowego",
+        eulaSummary: "Niniejsza umowa licencyjna reguluje korzystanie z aplikacji LumenLingo, dystrybuowanej przez LumenShore Ltd za pośrednictwem Apple App Store.",
+        eulaHighlight1: "Niewyłączna, odwołalna licencja na osobistą naukę języków",
+        eulaHighlight2: "Dostęp warstwowy — członkostwo Darmowe, Pro, Elite i Royal",
+        eulaHighlight3: "Twoje dane nauki należą do Ciebie; treść aplikacji należy do nas",
+        eulaHighlight4: "Warunki specyficzne dla Apple zgodnie z wymaganiami App Store",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "Subskrypcje odnawiają się automatycznie co miesiąc, chyba że zostaną anulowane co najmniej 24 godziny przed końcem bieżącego okresu.",
+        subscriptionPaymentNotice: "Płatność zostanie pobrana z konta Apple ID po potwierdzeniu zakupu.",
+        subscriptionManageCancel: "Zarządzaj lub anuluj w Ustawienia → Apple ID → Subskrypcje.",
+        subscriptionTrialNotice: "14-dniowy bezpłatny okres próbny Royal. Po zakończeniu przechodzi na plan Darmowy.",
+        restorePurchases: "Przywróć zakupy",
+        subscriptionLegalPrefix: "Subskrybując, akceptujesz nasze",
+        subscriptionLegalAnd: "i"
+,
+
+        // MARK: - Account Deletion
+        deleteAccount: "Usuń konto",
+        deleteAccountWarning: "Spowoduje to trwałe usunięcie wszystkich danych nauki, postępów, serii i preferencji. Tej czynności nie można cofnąć.",
+        deleteAccountConfirm: "Usuń wszystko",
+        deletingAccount: "Usuwanie konta…",
+        clearingUserData: "Usuwanie danych użytkownika",
+        accountDeleted: "Konto usunięte",
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
     )
 }

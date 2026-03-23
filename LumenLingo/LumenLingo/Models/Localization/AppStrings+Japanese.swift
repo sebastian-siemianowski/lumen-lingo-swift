@@ -463,6 +463,33 @@ extension AppStrings {
         legalDeclineMessage: "LumenLingoをご利用いただくには、プライバシーポリシーと利用規約に同意していただく必要があります。",
         legalDeclineConfirm: "拒否して終了",
         legalReadFull: "ポリシー全文を読む",
-        legalScrollToAccept: "スクロールして確認"
+        legalScrollToAccept: "スクロールして確認",
+
+        // MARK: - EULA
+        eulaTitle: "エンドユーザーライセンス契約",
+        eulaSummary: "本ライセンス契約は、LumenShore Ltdが Apple App Store を通じて配布する LumenLingo アプリの利用を規定するものです。",
+        eulaHighlight1: "個人の語学学習のための非独占的で取り消し可能なライセンス",
+        eulaHighlight2: "ティア別のアクセス — 無料、Pro、Elite、Royal会員",
+        eulaHighlight3: "学習データはお客様のもの、アプリコンテンツは当社のもの",
+        eulaHighlight4: "App Storeの要件に基づくApple固有の条件を含む",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "サブスクリプションは、現在の期間終了の24時間前までにキャンセルしない限り、毎月自動更新されます。",
+        subscriptionPaymentNotice: "購入確認時にApple IDアカウントに請求されます。",
+        subscriptionManageCancel: "設定 → Apple ID → サブスクリプションで管理またはキャンセルできます。",
+        subscriptionTrialNotice: "14日間のRoyalトライアル（無料）。トライアル終了後、無料プランに移行します。",
+        restorePurchases: "購入を復元",
+        subscriptionLegalPrefix: "サブスクリプションの登録により、当社の",
+        subscriptionLegalAnd: "および"
+,
+
+        // MARK: - Account Deletion
+        deleteAccount: "アカウントを削除",
+        deleteAccountWarning: "すべての学習データ、進捗、連続記録、設定が完全に削除されます。この操作は取り消せません。",
+        deleteAccountConfirm: "すべて削除",
+        deletingAccount: "アカウントを削除中…",
+        clearingUserData: "ユーザーデータを消去中",
+        accountDeleted: "アカウント削除完了",
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
     )
 }

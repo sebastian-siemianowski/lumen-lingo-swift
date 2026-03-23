@@ -463,6 +463,33 @@ extension AppStrings {
         legalDeclineMessage: "Для використання LumenLingo необхідно прийняти нашу Політику конфіденційності та Умови використання.",
         legalDeclineConfirm: "Відхилити та вийти",
         legalReadFull: "Читати повну політику",
-        legalScrollToAccept: "Прокрутіть для перегляду"
+        legalScrollToAccept: "Прокрутіть для перегляду",
+
+        // MARK: - EULA
+        eulaTitle: "Ліцензійна угода кінцевого користувача",
+        eulaSummary: "Ця ліцензійна угода регулює використання вами додатку LumenLingo, який розповсюджується через Apple App Store компанією LumenShore Ltd.",
+        eulaHighlight1: "Невиключна, відкликна ліцензія для особистого вивчення мов",
+        eulaHighlight2: "Рівневий доступ — безкоштовне, Pro, Elite та Royal членство",
+        eulaHighlight3: "Ваші дані навчання належать вам; контент додатку належить нам",
+        eulaHighlight4: "Умови, специфічні для Apple, включені відповідно до вимог App Store",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "Підписки автоматично поновлюються щомісяця, якщо не скасовані щонайменше за 24 години до закінчення поточного періоду.",
+        subscriptionPaymentNotice: "Оплата буде списана з вашого облікового запису Apple ID при підтвердженні покупки.",
+        subscriptionManageCancel: "Керуйте або скасовуйте в Налаштування → Apple ID → Підписки.",
+        subscriptionTrialNotice: "14-денна безкоштовна пробна версія Royal. Після пробного періоду переходить на безкоштовний план.",
+        restorePurchases: "Відновити покупки",
+        subscriptionLegalPrefix: "Підписуючись, ви погоджуєтесь з нашими",
+        subscriptionLegalAnd: "та"
+,
+
+        // MARK: - Account Deletion
+        deleteAccount: "Видалити обліковий запис",
+        deleteAccountWarning: "Це назавжди видалить усі ваші дані навчання, прогрес, серії та налаштування. Цю дію не можна скасувати.",
+        deleteAccountConfirm: "Видалити все",
+        deletingAccount: "Видалення облікового запису…",
+        clearingUserData: "Очищення даних користувача",
+        accountDeleted: "Обліковий запис видалено",
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
     )
 }

@@ -478,6 +478,34 @@ struct AppStrings: Sendable {
     let legalReadFull: String                // "Read Full Policy"
     let legalScrollToAccept: String          // "Scroll to review"
 
+    // MARK: - EULA
+    let eulaTitle: String                    // "End-User Licence Agreement"
+    let eulaSummary: String                  // Summary paragraph
+    let eulaHighlight1: String               // key point
+    let eulaHighlight2: String               // key point
+    let eulaHighlight3: String               // key point
+    let eulaHighlight4: String               // key point
+
+    // MARK: - Subscription Disclosure
+    let subscriptionAutoRenew: String        // Auto-renewal notice
+    let subscriptionPaymentNotice: String    // Payment charged to Apple ID
+    let subscriptionManageCancel: String     // How to manage/cancel
+    let subscriptionTrialNotice: String      // 14-day trial disclosure
+    let restorePurchases: String             // "Restore Purchases" button
+    let subscriptionLegalPrefix: String      // "By subscribing, you agree to our"
+    let subscriptionLegalAnd: String         // "and"
+
+    // MARK: - Account Deletion
+    let deleteAccount: String                // "Delete Account"
+    let deleteAccountWarning: String         // Warning message about data loss
+    let deleteAccountConfirm: String         // "Delete Everything"
+    let deletingAccount: String              // "Deleting account…"
+    let clearingUserData: String             // Progress step
+    let accountDeleted: String               // "Account deleted"
+
+    // MARK: - Trademark Attribution
+    let trademarkAttribution: String         // Apple trademark attribution line
+
     // MARK: - Factory
 
     static func forLanguage(_ lang: SupportedLanguage) -> AppStrings {

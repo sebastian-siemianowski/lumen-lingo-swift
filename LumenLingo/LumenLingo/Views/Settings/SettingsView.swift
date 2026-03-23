@@ -84,6 +84,11 @@ struct SettingsView: View {
                     ))
                     .id(activeTab)
 
+                // Legal links
+                legalLinksSection
+                    .padding(.horizontal, 16)
+                    .padding(.top, 16)
+
                 // App footer
                 appInfoSection
                     .padding(.top, 24)
@@ -697,6 +702,69 @@ struct SettingsView: View {
     }
 
     // MARK: - App Info Footer
+
+    // MARK: - Legal Links
+
+    private var legalLinksSection: some View {
+        VStack(spacing: 8) {
+            settingsCard {
+                VStack(spacing: 0) {
+                    legalLink(
+                        title: L.privacyPolicyTitle,
+                        icon: "lock.shield.fill",
+                        color: .cyan,
+                        url: "https://lumenlingo.com/en/privacy"
+                    )
+                    Divider().padding(.leading, 44).background(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
+                    legalLink(
+                        title: L.termsOfServiceTitle,
+                        icon: "doc.text.fill",
+                        color: .purple,
+                        url: "https://lumenlingo.com/en/terms"
+                    )
+                    Divider().padding(.leading, 44).background(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
+                    legalLink(
+                        title: L.eulaTitle,
+                        icon: "doc.badge.gearshape.fill",
+                        color: .blue,
+                        url: "https://lumenlingo.com/en/eula"
+                    )
+                }
+            }
+
+            Text(L.trademarkAttribution)
+                .font(.system(size: 9))
+                .foregroundStyle(isDark ? .white.opacity(0.2) : .secondary.opacity(0.5))
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 16)
+        }
+    }
+
+    private func legalLink(title: String, icon: String, color: Color, url: String) -> some View {
+        Link(destination: URL(string: url)!) {
+            HStack(spacing: 12) {
+                Image(systemName: icon)
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(color)
+                    .frame(width: 28)
+
+                Text(title)
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundStyle(isDark ? .white.opacity(0.8) : .primary)
+
+                Spacer()
+
+                Image(systemName: "arrow.up.right")
+                    .font(.system(size: 11, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 14)
+        }
+        .buttonStyle(.plain)
+    }
+
+    // MARK: - App Info
 
     private var appInfoSection: some View {
         VStack(spacing: 6) {

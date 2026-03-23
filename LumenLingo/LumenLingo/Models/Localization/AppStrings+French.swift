@@ -464,6 +464,33 @@ extension AppStrings {
         legalDeclineMessage: "Vous devez accepter notre Politique de Confidentialité et nos Conditions d'utilisation pour utiliser LumenLingo.",
         legalDeclineConfirm: "Refuser et quitter",
         legalReadFull: "Lire la politique complète",
-        legalScrollToAccept: "Faites défiler pour consulter"
+        legalScrollToAccept: "Faites défiler pour consulter",
+
+        // MARK: - EULA
+        eulaTitle: "Contrat de Licence Utilisateur Final",
+        eulaSummary: "Ce contrat de licence régit votre utilisation de l'application LumenLingo, distribuée via l'App Store d'Apple par LumenShore Ltd.",
+        eulaHighlight1: "Licence non exclusive et révocable pour l'apprentissage personnel des langues",
+        eulaHighlight2: "Accès par niveaux — abonnements Gratuit, Pro, Élite et Royal",
+        eulaHighlight3: "Vos données d'apprentissage vous appartiennent ; le contenu de l'app nous appartient",
+        eulaHighlight4: "Conditions spécifiques à Apple incluses conformément aux exigences de l'App Store",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "Les abonnements se renouvellent automatiquement chaque mois, sauf annulation au moins 24 heures avant la fin de la période en cours.",
+        subscriptionPaymentNotice: "Le paiement sera débité de votre compte Apple ID lors de la confirmation de l'achat.",
+        subscriptionManageCancel: "Gérez ou annulez dans Réglages → Apple ID → Abonnements.",
+        subscriptionTrialNotice: "Essai Royal de 14 jours sans frais. Passage au niveau Gratuit après l'essai.",
+        restorePurchases: "Restaurer les achats",
+        subscriptionLegalPrefix: "En vous abonnant, vous acceptez nos",
+        subscriptionLegalAnd: "et"
+,
+
+        // MARK: - Account Deletion
+        deleteAccount: "Supprimer le compte",
+        deleteAccountWarning: "Ceci supprimera définitivement toutes vos données d'apprentissage, votre progression, vos séries et vos préférences. Cette action est irréversible.",
+        deleteAccountConfirm: "Tout supprimer",
+        deletingAccount: "Suppression du compte…",
+        clearingUserData: "Effacement des données utilisateur",
+        accountDeleted: "Compte supprimé",
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
     )
 }

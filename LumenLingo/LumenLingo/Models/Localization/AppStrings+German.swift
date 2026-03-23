@@ -464,6 +464,33 @@ extension AppStrings {
         legalDeclineMessage: "Du musst unsere Datenschutzrichtlinie und Nutzungsbedingungen akzeptieren, um LumenLingo zu nutzen.",
         legalDeclineConfirm: "Ablehnen & Beenden",
         legalReadFull: "Vollständige Richtlinie lesen",
-        legalScrollToAccept: "Zum Überprüfen scrollen"
+        legalScrollToAccept: "Zum Überprüfen scrollen",
+
+        // MARK: - EULA
+        eulaTitle: "Endbenutzer-Lizenzvertrag",
+        eulaSummary: "Dieser Lizenzvertrag regelt Ihre Nutzung der LumenLingo-App, die von LumenShore Ltd über den Apple App Store vertrieben wird.",
+        eulaHighlight1: "Nicht-exklusive, widerrufliche Lizenz zum persönlichen Sprachenlernen",
+        eulaHighlight2: "Stufenbasierter Zugang — Gratis, Pro, Elite und Royal Mitgliedschaften",
+        eulaHighlight3: "Ihre Lerndaten gehören Ihnen; die App-Inhalte gehören uns",
+        eulaHighlight4: "Apple-spezifische Bedingungen gemäß App Store-Anforderungen enthalten",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "Abonnements verlängern sich monatlich automatisch, sofern nicht mindestens 24 Stunden vor Ablauf des aktuellen Zeitraums gekündigt wird.",
+        subscriptionPaymentNotice: "Die Zahlung wird bei Kaufbestätigung Ihrem Apple-ID-Konto belastet.",
+        subscriptionManageCancel: "Verwalten oder kündigen Sie unter Einstellungen → Apple-ID → Abonnements.",
+        subscriptionTrialNotice: "14-tägige Royal-Testphase kostenlos. Nach Ablauf wechselt der Tarif auf Gratis.",
+        restorePurchases: "Käufe wiederherstellen",
+        subscriptionLegalPrefix: "Mit dem Abonnement stimmen Sie unseren",
+        subscriptionLegalAnd: "und"
+,
+
+        // MARK: - Account Deletion
+        deleteAccount: "Konto löschen",
+        deleteAccountWarning: "Dies löscht dauerhaft alle Ihre Lerndaten, Fortschritte, Streaks und Einstellungen. Diese Aktion kann nicht rückgängig gemacht werden.",
+        deleteAccountConfirm: "Alles löschen",
+        deletingAccount: "Konto wird gelöscht…",
+        clearingUserData: "Benutzerdaten werden gelöscht",
+        accountDeleted: "Konto gelöscht",
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
     )
 }

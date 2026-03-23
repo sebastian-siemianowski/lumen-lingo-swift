@@ -409,7 +409,8 @@
       "terms": "服务条款",
       "accessibility": "无障碍",
       "cookiePolicy": "Cookie政策",
-      "cookieSettings": "Cookie设置"
+      "cookieSettings": "Cookie设置",
+      "eula": "EULA"
     },
     "newsletter": {
       "heading": "保持关注",
@@ -417,7 +418,8 @@
     },
     "downloadAppStore": "从 App Store 下载",
     "copyright": "LumenShore Ltd. 保留所有权利。",
-    "madeIn": "用心打造于英国"
+    "madeIn": "用心打造于英国",
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
   },
   "NetworkStatus": {
     "offline": "你已离线——部分功能可能不可用"
@@ -578,7 +580,7 @@
       "websiteLi3": "<b>Sentry session replays</b> — retained by Sentry for 90 days, then automatically deleted.",
       "websiteLi4": "<b>Vercel Analytics</b> — retention per Vercel’s data retention policy (aggregated, no PII).",
       "appHeading": "iOS App Data",
-      "appLi1": "<b>Reset progress</b> — use the in-app Settings → Reset Progress option to clear all learning data.",
+      "appLi1": "<b>Delete account</b> — use the in-app Settings → Sign Out → Delete Account to permanently erase all learning data, progress, preferences, and iCloud sync data. This action cannot be undone.",
       "appLi2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
       "appLi3": "<b>iCloud data</b> — you can manage iCloud storage through your device’s Settings → Apple ID → iCloud → Manage Storage.",
       "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation."
@@ -589,14 +591,14 @@
       "gdprHeading": "Under GDPR (European Economic Area & UK)",
       "gdprLi1": "Right to access your data — app data is on your device and iCloud; for website data, contact us.",
       "gdprLi2": "Right to rectification — edit app preferences directly; for website data, contact us.",
-      "gdprLi3": "Right to erasure — reset app progress, delete the app, or contact us to remove your email from our lists.",
+      "gdprLi3": "Right to erasure — use the in-app Delete Account feature, delete the app, or contact us to remove your email from our lists.",
       "gdprLi4": "Right to data portability — your app data is stored in standard formats in iCloud. Contact us for website data export.",
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
       "ccpaHeading": "Under CCPA (California)",
       "ccpaLi1": "Right to know what data is collected — detailed above.",
-      "ccpaLi2": "Right to delete — reset app progress, delete the app, or contact us to remove website data.",
+      "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
       "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
       "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
       "exerciseRights": "To exercise any of these rights, email us at hello@lumenshore.com. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
@@ -708,7 +710,8 @@
         "p2": "No individual user can be identified from any published aggregate data."
       },
       "survival": "Our right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data that was derived from your use of the Service."
-    }
+    },
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
   },
   "Terms": {
     "meta": {
@@ -826,7 +829,8 @@
       "p3": "Examples of Aggregate Data include: total number of users per language pair, average learning session duration, most commonly studied vocabulary, error rates per difficulty level, and feature usage statistics.",
       "p4": "LumenShore may use Aggregate Data for product improvement, research, analytics, marketing, benchmarking, investor reporting, blog posts, case studies, and public reports.",
       "survival": "LumenShore’s right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data derived from your use of the Service."
-    }
+    },
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
   },
   "Blog": {
     "meta": {
@@ -993,5 +997,117 @@
       "purpose": "目的",
       "duration": "期限"
     }
-  }
+  },
+  "Eula": {
+    "meta": {
+      "title": "最终用户许可协议",
+      "description": "LumenLingo最终用户许可协议（EULA）。了解使用LumenLingo语言学习应用程序的许可条款。",
+      "ogTitle": "最终用户许可协议 — LumenLingo"
+    },
+    "breadcrumb": "EULA",
+    "hero": {
+      "heading": "最终用户许可协议",
+      "subtitle": "您使用LumenLingo的许可证 — 保护您和我们双方的简明条款。"
+    },
+    "introduction": {
+      "heading": "简介",
+      "p1": "This End-User Licence Agreement (\"EULA\") is a binding legal agreement between you (\"User\", \"you\") and LumenShore Ltd, a company registered in England and Wales (Company No. 09607326), with its registered office at Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA (\"LumenShore\", \"we\", \"us\").",
+      "p2": "This EULA governs your use of the LumenLingo mobile application (\"App\") available through the Apple App Store. By downloading, installing, or using the App, you agree to be bound by the terms of this EULA. If you do not agree, do not download, install, or use the App."
+    },
+    "licenceGrant": {
+      "heading": "许可授予",
+      "intro": "Subject to the terms of this EULA, LumenShore grants you a limited, non-exclusive, non-transferable, revocable licence to:",
+      "li1": "Download and install the App on Apple-branded devices that you own or control.",
+      "li2": "Use the App for your personal, non-commercial language-learning purposes.",
+      "li3": "Access features and content according to your membership tier (Free, Pro, Elite, or Royal).",
+      "p1": "This licence does not allow you to use the App on any device that you do not own or control, and you may not distribute or make the App available over a network where it could be used by multiple devices at the same time."
+    },
+    "tierAccess": {
+      "heading": "会员等级与功能访问",
+      "intro": "LumenLingo offers multiple membership tiers, each providing different levels of access:",
+      "li1": "<b>Free tier</b> — core language-learning features with limited language pairs and daily practice time.",
+      "li2": "<b>Pro tier</b> — additional language pairs, unlimited practice time, and soundscapes.",
+      "li3": "<b>Elite tier</b> — all Pro features plus breathing orbs, quantum flow, and advanced analytics.",
+      "li4": "<b>Royal tier</b> — the complete LumenLingo experience with all features unlocked, including nebula drift and offline mode.",
+      "p1": "Your access to tier-specific features is conditional upon maintaining an active subscription. If your subscription lapses, access to premium features will revert to the Free tier."
+    },
+    "contentOwnership": {
+      "heading": "内容所有权",
+      "p1": "All content within the App — including but not limited to flashcard content, grammar explanations, vocabulary databases, game mechanics, animations, soundscapes, visual effects, and user interface designs — is the intellectual property of LumenShore Ltd or its licensors and is protected by copyright, trademark, and other intellectual property laws.",
+      "p2": "You retain ownership of your personal learning data, including progress records, preferences, and practice history. This data is stored locally on your device and is not transmitted to LumenShore servers."
+    },
+    "restrictions": {
+      "heading": "限制条款",
+      "intro": "You agree not to, and you will not permit others to:",
+      "li1": "Copy, modify, or create derivative works based on the App or its content.",
+      "li2": "Reverse engineer, disassemble, decompile, decode, or otherwise attempt to derive the source code of the App.",
+      "li3": "Distribute, sublicence, lease, lend, rent, or otherwise transfer the App or any rights therein to any third party.",
+      "li4": "Remove, alter, or obscure any proprietary notices, labels, or marks on the App.",
+      "li5": "Use the App for any commercial purpose, in competing products, or to develop similar software.",
+      "li6": "Use automated scripts, bots, scraping tools, or data-mining techniques to extract content from the App.",
+      "li7": "Attempt to circumvent subscription tier restrictions or any technical protection measures."
+    },
+    "termination": {
+      "heading": "终止",
+      "p1": "This EULA is effective from when you first download or use the App and continues until terminated. You may terminate it at any time by deleting the App and all copies from your devices.",
+      "p2": "LumenShore may terminate this EULA immediately, without prior notice, if you breach any of its terms. Upon termination:",
+      "li1": "All rights and licences granted to you under this EULA will cease immediately.",
+      "li2": "You must stop all use of the App and delete all copies from your devices.",
+      "li3": "Any accrued rights or obligations (including limitation of liability) shall survive termination.",
+      "li4": "No refund will be provided for any prepaid subscription period remaining at the time of termination for cause."
+    },
+    "warranties": {
+      "heading": "免责声明",
+      "p1": "The App is provided on an \"AS IS\" and \"AS AVAILABLE\" basis, without warranties of any kind, either express or implied. To the maximum extent permitted by applicable law, LumenShore disclaims all warranties, including but not limited to:",
+      "li1": "Merchantability, fitness for a particular purpose, and non-infringement.",
+      "li2": "That the App will be uninterrupted, error-free, secure, or free of viruses or harmful components.",
+      "li3": "That the language content, translations, or educational material will be completely accurate or current.",
+      "li4": "That learning outcomes or proficiency improvements will be achieved.",
+      "p2": "You acknowledge that language learning is a complex process and results may vary. LumenLingo is a supplementary learning tool and is not a substitute for formal language instruction."
+    },
+    "liability": {
+      "heading": "责任限制",
+      "p1": "To the maximum extent permitted by applicable law, in no event shall LumenShore, its directors, employees, partners, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation:",
+      "li1": "Loss of profits, data, use, goodwill, or other intangible losses.",
+      "li2": "The cost of procurement of substitute goods or services.",
+      "li3": "Any damage resulting from unauthorised access to or alteration of your data.",
+      "li4": "Any other matter relating to the App.",
+      "cap": "LumenShore's total aggregate liability for all claims arising out of or relating to this EULA or your use of the App shall not exceed: (a) for Free tier users — zero pounds sterling (£0.00); (b) for paid subscribers — the total subscription fees paid by you in the twelve (12) months preceding the claim."
+    },
+    "assumptionOfRisk": {
+      "heading": "风险承担",
+      "p1": "You expressly acknowledge and agree that your use of the App is at your sole risk. You are responsible for ensuring that the App is suitable for your language-learning needs.",
+      "p2": "LumenShore shall not be liable for any data loss that may occur as a result of device failure, operating system updates, App deletion, or any other circumstances beyond our reasonable control. You are encouraged to regularly back up your device."
+    },
+    "governingLaw": {
+      "heading": "适用法律",
+      "p1": "This EULA shall be governed by and construed in accordance with the laws of England and Wales, without regard to its conflict-of-law provisions.",
+      "p2": "Any disputes arising out of or in connection with this EULA shall be subject to the exclusive jurisdiction of the courts of England and Wales. Nothing in this EULA limits your statutory rights as a consumer under the laws of your country of residence."
+    },
+    "appleTerms": {
+      "heading": "Apple特定条款",
+      "intro": "The following terms apply to your use of the App obtained through the Apple App Store:",
+      "li1": "This EULA is between you and LumenShore only, and not with Apple Inc. (\"Apple\"). Apple is not a party to this EULA.",
+      "li2": "Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App.",
+      "li3": "In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the App (if any) to you. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App.",
+      "li4": "Apple is not responsible for addressing any claims by you or any third party relating to the App or your possession and/or use of the App, including but not limited to: (a) product liability claims; (b) any claim that the App fails to conform to any applicable legal or regulatory requirement; and (c) claims arising under consumer protection, privacy, or similar legislation.",
+      "li5": "In the event of any third-party claim that the App or your possession and use of the App infringes that third party's intellectual property rights, Apple shall not be responsible for the investigation, defence, settlement, or discharge of any such intellectual property infringement claim.",
+      "li6": "Apple and its subsidiaries are third-party beneficiaries of this EULA, and upon your acceptance of the terms and conditions of this EULA, Apple will have the right (and will be deemed to have accepted the right) to enforce this EULA against you as a third-party beneficiary thereof."
+    },
+    "changes": {
+      "heading": "本EULA的变更",
+      "p1": "LumenShore reserves the right to modify this EULA at any time. If we make material changes, we will notify you through the App or by updating the \"Last updated\" date at the top of this page.",
+      "p2": "Your continued use of the App after changes are posted constitutes your acceptance of the revised EULA. If you do not agree to the changes, you must stop using the App and delete it from your devices."
+    },
+    "contact": {
+      "heading": "联系我们",
+      "intro": "如果您对本EULA有任何疑问，请联系我们：",
+      "email": "<b>Email:</b> <emailLink>hello@lumenshore.com</emailLink>",
+      "company": "<b>Company:</b> LumenShore Ltd (Company No. 09607326)",
+      "address": "<b>Address:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom",
+      "responseTime": "我们通常在48小时内回复。"
+    },
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+  },
+  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
 }
