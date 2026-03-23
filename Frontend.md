@@ -1950,29 +1950,29 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] All 14 English blog posts translated to Spanish (11 new, completing the existing 3)
-- [ ] All 14 English blog posts translated to French (14 new)
-- [ ] All 14 English blog posts translated to German (14 new)
-- [ ] Translated posts placed in `src/content/blog/{locale}/` subdirectories matching the English slug
-- [ ] Frontmatter (`title`, `description`) fully translated per locale
-- [ ] `tags` translated to locale-appropriate terms or kept as English where the tag is a proper noun / brand name
-- [ ] `category` values remain in English (used programmatically) but category display names are translated via message files
-- [ ] SEO metadata for each translated post uses native-language title and description
-- [ ] Internal links within posts point to the correct locale-prefixed blog URLs
-- [ ] Related posts (`getRelatedPosts`) return posts from the same locale
-- [ ] `feed.xml` (RSS) includes separate feeds or locale-filtered entries for ES, FR, DE
+- [x] All 14 English blog posts translated to Spanish (11 new, completing the existing 3)
+- [x] All 14 English blog posts translated to French (14 new)
+- [x] All 14 English blog posts translated to German (14 new)
+- [x] Translated posts placed in `src/content/blog/{locale}/` subdirectories matching the English slug
+- [x] Frontmatter (`title`, `description`) fully translated per locale
+- [x] `tags` translated to locale-appropriate terms or kept as English where the tag is a proper noun / brand name
+- [x] `category` values remain in English (used programmatically) but category display names are translated via message files
+- [x] SEO metadata for each translated post uses native-language title and description
+- [x] Internal links within posts point to the correct locale-prefixed blog URLs
+- [x] Related posts (`getRelatedPosts`) return posts from the same locale
+- [x] `feed.xml` (RSS) includes separate feeds or locale-filtered entries for ES, FR, DE
 
 ### Subtasks
 
-- [ ] 15.5.1 — Create `src/content/blog/es/` — translate remaining 11 English posts to Spanish
-- [ ] 15.5.2 — Create `src/content/blog/fr/` — translate all 14 English posts to French
-- [ ] 15.5.3 — Create `src/content/blog/de/` — translate all 14 English posts to German
-- [ ] 15.5.4 — Translate frontmatter (`title`, `description`) for all ES, FR, DE posts
-- [ ] 15.5.5 — Update internal links in translated posts to use locale-prefixed URLs
-- [ ] 15.5.6 — Verify `getAllPosts(locale)` returns correct translated posts for ES, FR, DE
-- [ ] 15.5.7 — Verify blog index, category, and tag pages render correctly for each locale
-- [ ] 15.5.8 — Configure RSS feed to serve locale-specific entries (e.g. `/es/blog/feed.xml`)
-- [ ] 15.5.9 — Add translated blog category display names to ES, FR, DE message files
+- [x] 15.5.1 — Create `src/content/blog/es/` — translate remaining 11 English posts to Spanish
+- [x] 15.5.2 — Create `src/content/blog/fr/` — translate all 14 English posts to French
+- [x] 15.5.3 — Create `src/content/blog/de/` — translate all 14 English posts to German
+- [x] 15.5.4 — Translate frontmatter (`title`, `description`) for all ES, FR, DE posts
+- [x] 15.5.5 — Update internal links in translated posts to use locale-prefixed URLs
+- [x] 15.5.6 — Verify `getAllPosts(locale)` returns correct translated posts for ES, FR, DE
+- [x] 15.5.7 — Verify blog index, category, and tag pages render correctly for each locale
+- [x] 15.5.8 — Configure RSS feed to serve locale-specific entries (e.g. `/es/blog/feed.xml`)
+- [x] 15.5.9 — Add translated blog category display names to ES, FR, DE message files
 
 ---
 
