@@ -59,6 +59,7 @@ export default async function EulaPage({
     { id: 'termination', text: t('termination.heading'), level: 2 },
     { id: 'warranties', text: t('warranties.heading'), level: 2 },
     { id: 'liability', text: t('liability.heading'), level: 2 },
+    { id: 'consumer-rights', text: t('consumerRights.heading'), level: 2 },
     { id: 'assumption-of-risk', text: t('assumptionOfRisk.heading'), level: 2 },
     { id: 'governing-law', text: t('governingLaw.heading'), level: 2 },
     { id: 'apple-terms', text: t('appleTerms.heading'), level: 2 },
@@ -183,6 +184,38 @@ export default async function EulaPage({
                     <li>{t('liability.li4')}</li>
                   </ul>
                   <p>{t('liability.cap')}</p>
+                </section>
+
+                {/* ── Consumer Rights (UK CRA 2015) ── */}
+                <section id="consumer-rights">
+                  <h2>{t('consumerRights.heading')}</h2>
+                  <p>{t.rich('consumerRights.intro', richTags)}</p>
+
+                  <h3>{t('consumerRights.qualityHeading')}</h3>
+                  <p>{t('consumerRights.qualityP1')}</p>
+                  <ul>
+                    <li>{t.rich('consumerRights.qualityLi1', richTags)}</li>
+                    <li>{t.rich('consumerRights.qualityLi2', richTags)}</li>
+                    <li>{t.rich('consumerRights.qualityLi3', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('consumerRights.remediesHeading')}</h3>
+                  <p>{t('consumerRights.remediesP1')}</p>
+                  <ul>
+                    <li>{t.rich('consumerRights.remediesLi1', richTags)}</li>
+                    <li>{t.rich('consumerRights.remediesLi2', richTags)}</li>
+                    <li>{t.rich('consumerRights.remediesLi3', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('consumerRights.coolingOffHeading')}</h3>
+                  <p>{t.rich('consumerRights.coolingOffP1', richTags)}</p>
+                  <p>{t('consumerRights.coolingOffP2')}</p>
+
+                  <h3>{t('consumerRights.refundsHeading')}</h3>
+                  <p>{t.rich('consumerRights.refundsP1', richTags)}</p>
+                  <p>{t('consumerRights.refundsP2')}</p>
+
+                  <p>{t.rich('consumerRights.statutory', richTags)}</p>
                 </section>
 
                 <section id="assumption-of-risk">

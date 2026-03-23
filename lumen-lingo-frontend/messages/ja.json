@@ -276,7 +276,7 @@
     "success": "LumenShoreコミュニティへようこそ！受信トレイをご確認ください。",
     "errorInvalid": "有効なメールアドレスを入力してください。",
     "errorGeneric": "エラーが発生しました。もう一度お試しください。",
-    "gdpr": "プライバシーを尊重いたします。いつでも配信停止できます。",
+    "gdpr": "登録すると、LumenShore Ltdから製品アップデート、語学学習のヒント、および時折のオファーを受け取ることに同意したことになります。各メールのリンクからいつでも配信停止できます。",
     "blogCTA": {
       "heading": "この記事はいかがですか？",
       "description": "言語学習のコツ、アプリの更新情報、学習テクニックをメールでお届けします。"
@@ -611,7 +611,7 @@
       "gdprLi4": "データポータビリティの権利 — iOSアプリの「設定」→「データをエクスポート」から、すべての個人データを無料でJSONファイルとしてダウンロードできます。データは常に標準形式で保存されています。ウェブサイトデータのエクスポートについてはお問い合わせください。",
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
-      "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
+      "gdprLi7": "苦情申立権 — <icoLink>情報コミッショナー事務局（ICO）</icoLink>またはお住まいの地域の監督機関に苦情を申し立てることができます。",
       "ccpaHeading": "CCPA/CPRAに基づく権利（カリフォルニア州）",
       "ccpaLi1": "<b>知る権利</b> — 当社が収集した個人情報のカテゴリーおよび具体的な項目の開示を要求できます。上記の収集時通知セクションをご覧ください。",
       "ccpaLi2": "<b>削除の権利</b> — 個人情報の削除を要求できます。アプリ内のアカウント削除機能を使用するか、アプリを削除するか、ウェブサイトデータの削除についてお問い合わせください。",
@@ -833,6 +833,56 @@
       "p2": "カリフォルニア州プライバシー権利法（CPRA）の下では、GPCは個人情報の販売または共有の有効なオプトアウトとなります。コロラド州プライバシー法およびコネチカット州データプライバシー法の下では、GPCを含むユニバーサルオプトアウトメカニズムを尊重する義務があります。",
       "p3": "GPC信号が検出されると、アナリティクスイベントやセッションリプレイを含むすべての必須でないトラッキングが自動的に拑否されます。これは以前のCookie設定に関係なく適用されます。",
       "p4": "当社はDo Not Track（DNT）ブラウザ信号も尊重します。DNTはW3Cにより廃止されましたが、一貫性のため、またプライバシーへの取り組みを示すために、GPCと同様に取り扱います。"
+    },
+    "ukDataProtection": {
+      "heading": "英国データ保護",
+      "intro": "LumenShore Limitedは、イングランドおよびウェールズに登記された会社です（会社番号 09607326）。英国を拠点とするデータ管理者として、当社は英国一般データ保護規則（UK GDPR）— 2018年欧州連合（離脱）法によりEU法から継承 — および2018年データ保護法（DPA 2018）を遵守しています。これらの法律は、当社がお客様の個人データを収集、使用、保存、保護する方法を規定しています。",
+      "controllerHeading": "データ管理者",
+      "controllerP1": "お客様の個人データの管理者は次のとおりです：",
+      "controllerLi1": "<b>会社名</b>：LumenShore Ltd",
+      "controllerLi2": "<b>登記住所</b>：Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "controllerLi3": "<b>会社番号</b>：09607326（イングランドおよびウェールズ）",
+      "controllerLi4": "<b>VAT番号</b>：GB 270411929",
+      "dplHeading": "データ保護責任者",
+      "dplP1": "LumenShoreは、UK GDPR第37条に基づくデータ保護責任者（DPO）の任命義務はありません（当社は公的機関ではなく、大規模な監視を行っておらず、特別カテゴリーのデータを大規模に処理していません）が、コンプライアンスを監督するデータ保護責任者を指名しています：",
+      "dplP2": "<b>データ保護責任者</b>：Sebastian Siemianowski、ディレクター",
+      "dplP3": "個人データの取り扱いに関するご質問、権利の行使、またはデータ保護に関する懸念は、<emailLink>hello@lumenshore.com</emailLink>までお問い合わせください。",
+      "icoHeading": "ICO登録",
+      "icoP1": "2018年データ保護法第25条の要件に従い、LumenShore Ltdは英国の独立したデータ保護監督機関である<icoLink>情報コミッショナー事務局（ICO）</icoLink>に年間データ保護料を納付しています。",
+      "icoP2": "ICOは料金納付者の公開登録簿を維持しています。当社の登録状況はICOのウェブサイトで確認できます。",
+      "adequacyHeading": "国際データ移転の十分性認定",
+      "adequacyP1": "英国と欧州経済領域（EEA）間で個人データが移転される場合、UK GDPR第45条に基づく英国–EU十分性認定によって保護されます。欧州委員会は2021年6月に英国に十分性を付与し、英国のデータ保護法がEU GDPRと本質的に同等の保護レベルを提供することを認めました。",
+      "adequacyP2": "米国への移転については、EU-USデータプライバシーフレームワーク（DPF）およびその英国拡張により認定されたサービスプロバイダーを利用しています。英国政府はこれを適切な保護措置として認めています。サブプロセッサーDPF認定を受けていない場合、ICOが承認した標準契約条項（SCC）を確保しています。",
+      "adequacyP3": "国際移転と当社が使用する具体的な保護措置の詳細については、本ポリシーの<transfersLink>国際データ移転</transfersLink>セクションをご覧ください。",
+      "specialCategoryHeading": "特別カテゴリーのデータ",
+      "specialCategoryP1": "LumenLingoは、UK GDPR第9条およびDPA 2018第10条で定義される特別カテゴリーのデータを収集・処理しません。これには、人種または民族的出自、政治的意見、宗教的または哲学的信条、労働組合への加入、遺伝データ、生体認証データ、健康データ、性生活または性的指向、および犯罪有罪判決データが含まれます。",
+      "specialCategoryP2": "将来、当社のデータ処理活動が変更され、特別カテゴリーのデータが含まれるようになった場合、本ポリシーを更新し、データ保護影響評価（DPIA）を実施し、必要に応じて明示的な同意を取得します。",
+      "complaintHeading": "ICOへの苦情申立権",
+      "complaintP1": "当社の個人データの取り扱いにご不満がある場合、情報コミッショナー事務局（ICO）に苦情を申し立てる権利があります。まずは<emailLink>hello@lumenshore.com</emailLink>までご連絡いただければ、問題解決に全力を尽くします。",
+      "complaintP2": "当社の対応にご納得いただけない場合、ICOに連絡できます：",
+      "complaintLi1": "<b>ウェブサイト</b>：<icoComplaintLink>ico.org.uk/make-a-complaint</icoComplaintLink>",
+      "complaintLi2": "<b>電話</b>：0303 123 1113",
+      "complaintLi3": "<b>郵便</b>：Information Commissioner’s Office, Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF"
+    },
+    "electronicComms": {
+      "heading": "電子通信（英国 PECR）",
+      "intro": "2003年プライバシー及び電子通信規則（PECR）は、電子マーケティングとCookieおよび同様の技術の使用に関する特定の規則を定めています。英国企業として、LumenShore Ltdは英国GDPRと併せてPECRを遵守しています。",
+      "cookieHeading": "Cookieおよび同様の技術（規則 6）",
+      "cookieP1": "PECR規則 6は、お客様が要求したサービスを提供するために厳密に必要な場合を除き、お客様のデバイスに情報を保存またはアクセスする前に同意を得ることを要求しています。当社のアプローチ：",
+      "cookieLi1": "<b>厳密に必要なストレージ</b>—同意設定と言語設定—は、お客様が要求した通りにウェブサイトが機能するために不可欠であるため、同意なしに設定されます。",
+      "cookieLi2": "<b>非必須のストレージ</b>—アナリティクストラッキング、エラー監視、セッションリプレイ—は、Cookieバナーを通じて明示的な同意をいただいた後にのみ有効化されます。",
+      "cookieLi3": "ウェブサイトフッターの「Cookie設定」リンクを使用して、いつでも設定を変更できます。",
+      "cookieLi4": "ブラウザが<b>Global Privacy Control (GPC)</b>または<b>Do Not Track (DNT)</b>シグナルを送信する場合、すべての非必須ストレージは自動的に抑制されます。",
+      "cookieP2": "当社が保存する内容とその理由の詳細については、<cookiePolicyLink>Cookieポリシー</cookiePolicyLink>をご覧ください。",
+      "newsletterHeading": "マーケティング通信（規則 22）",
+      "newsletterP1": "当社は、ニュースレターに登録することで明示的かつ自由な同意を与えた方にのみマーケティングメールを送信します。事前にチェックされたボックスは使用せず、マーケティングの同意を他の合意と束ねることはありません。",
+      "newsletterP2": "当社が送信する各マーケティングメールは：",
+      "newsletterLi1": "送信者を<b>LumenShore Ltd</b>として識別します",
+      "newsletterLi2": "機能する<b>配信停止リンク</b>を含みます",
+      "newsletterLi3": "受け取るコンテンツの種類を説明します（製品アップデート、語学学習のヒント、および時折のオファー）",
+      "newsletterP3": "当社は、お客様の同意（表示された同意テキストのバージョン、タイムスタンプ、およびハッシュ化された識別子を含む）を説明責任記録のために記録します。",
+      "softOptInHeading": "ソフトオプトイン",
+      "softOptInP1": "PECR規則 22(3)は、データ収集時およびその後の各メッセージでオプトアウトの機会が提供されている場合、既存顧客に対して同様の製品について明示的な同意なくマーケティングを送信することを許可しています（「ソフトオプトイン」）。LumenShoreは現在、ソフトオプトインの例外に依拠して<b>いません</b>—すべてのマーケティングには明示的な同意が必要です。"
     }
   },
   "Terms": {
@@ -952,7 +1002,28 @@
       "p4": "LumenShore may use Aggregate Data for product improvement, research, analytics, marketing, benchmarking, investor reporting, blog posts, case studies, and public reports.",
       "survival": "LumenShore’s right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data derived from your use of the Service."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "consumerRights": {
+      "heading": "消費者としての権利",
+      "intro": "英国の消費者である場合、<b>2015年消費者権利法</b>および<b>2013年消費者契約（情報、キャンセルおよび追加料金）規則</b>に基づく法的権利を有しています。本利用規約のいかなる条項も、これらの権利を排除または制限するものではありません。",
+      "qualityHeading": "デジタルコンテンツの基準",
+      "qualityP1": "2015年消費者権利法に基づき、LumenLingoが提供するデジタルコンテンツは以下の基準を満たす必要があります：",
+      "qualityLi1": "<b>満足のいく品質</b> — 説明、価格、その他すべての関連する状況を考慮し、欠陥がなく、安全で耐久性があること",
+      "qualityLi2": "<b>特定の目的への適合性</b> — 購入前または購入時にお客様が当社に伝えた目的に適していること",
+      "qualityLi3": "<b>説明との一致</b> — 当社のウェブサイトおよびApp Storeに掲載された機能を含む、当社が提供した説明と一致すること",
+      "remediesHeading": "お客様の救済手段",
+      "remediesP1": "当社のデジタルコンテンツがこれらの基準を満たさない場合、お客様は以下の救済手段を受ける権利があります：",
+      "remediesLi1": "<b>修理または交換</b> — 合理的な期間内に、重大な不便をおかけすることなく、無償で不具合の修正または代替品の提供を行います",
+      "remediesLi2": "<b>価格の引き下げ</b> — 修理または交換が不可能な場合、または合理的な期間内に行われない場合、（全額までの）価格引き下げを受ける権利が生じる場合があります",
+      "remediesLi3": "<b>返金を受ける権利</b> — 供給時に欠陥があったコンテンツについては、全額または一部の返金を受ける権利が生じる場合があります",
+      "coolingOffHeading": "14日間のクーリングオフ期間",
+      "coolingOffP1": "2013年消費者契約規則に基づき、購入日から<b>14日間のクーリングオフ期間</b>があり、この期間中はオンラインサブスクリプションをキャンセルし、理由を問わず全額返金を受けることができます。",
+      "coolingOffP2": "LumenLingoのサブスクリプションはAppleのApp Storeを通じて購入されるため、クーリングオフ期間はAppleの返金ポリシーに従ってAppleが管理します。この権利を行使する場合は、Appleを通じて返金をリクエストしてください。",
+      "refundsHeading": "Apple経由の返金",
+      "refundsP1": "LumenLingoのすべてのアプリ内購入およびサブスクリプションは、決済プロバイダーである<b>Apple</b>によって処理されます。返金リクエストはAppleのポリシーに従ってAppleが処理します。",
+      "refundsP2": "返金をリクエストするには、reportaproblem.apple.comにアクセスするか、Appleサポートにお問い合わせください。LumenShore Ltdはこのプロセスを全面的にサポートし、返金に関するお問い合わせについてAppleに協力します。",
+      "statutory": "<b>本利用規約のいかなる条項も、消費者としてのお客様の法的権利に影響を与えるものではありません。</b>本利用規約とお客様の法的権利の間に矛盾がある場合は、お客様の法的権利が優先されます。"
+    }
   },
   "Blog": {
     "meta": {
@@ -1126,6 +1197,14 @@
       "p1": "当社は、カリフォルニア州プライバシー権利法（CPRA）、コロラド州プライバシー法（CPA）、コネチカット州データプライバシー法（CTDPA）の要件に従い、Global Privacy Control（GPC）ブラウザ信号を尊重します。ブラウザがGPC信号を送信すると、アナリティクスやセッションリプレイを含むすべての必須でないトラッキングが自動的に無効化されます。",
       "p2": "当社はDo Not Track（DNT）ブラウザ信号も尊重します。DNTはW3CによるWeb標準としては維持されていませんが、ベストプラクティスとしてGPCと同様に取り扱います。",
       "p3": "ブラウザでGPCまたはDNTを無効にした場合、ページフッターの「Cookie設定」ボタンでCookieの設定を更新できます。"
+    },
+    "pecrCompliance": {
+      "heading": "英国 PECR コンプライアンス",
+      "p1": "英国GDPRに加えて、当社のCookieおよび同様のストレージ技術の使用は、2003年プライバシー及び電子通信規則（PECR）、特に規則 6に準拠しています。",
+      "p2": "PECRに基づき、非必須のCookieを設置したり、お客様のデバイス上の非必須の情報にアクセスしたりする前に、お客様の同意を得ることが義務付けられています。そのため、初回訪問時にCookieバナーを表示しています。",
+      "p3": "<b>厳密に必要な項目</b>（同意状態、言語設定、Service Workerキャッシュ）は、お客様が明示的に要求したサービスの提供に不可欠であるため、同意要件から免除されます。",
+      "p4": "<b>非必須の項目</b>（アナリティクス、エラー監視、セッションリプレイ）は、お客様が肯定的な同意を与えた後にのみ有効化されます。拒否された場合、これらのカテゴリーは完全に無効のままになります。",
+      "p5": "当社の同意メカニズムはICOのガイダンスに準拠するよう設計されています：事前チェックのボックスなし、「Cookieウォール」なし、いつでも簡単に撤回でき、各カテゴリーについて明確な情報が提供されます。"
     }
   },
   "Eula": {
@@ -1237,7 +1316,28 @@
       "address": "<b>Address:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom",
       "responseTime": "通常48時間以内にご返信いたします。"
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "consumerRights": {
+      "heading": "消費者としての権利",
+      "intro": "英国の消費者である場合、<b>2015年消費者権利法</b>および<b>2013年消費者契約（情報、キャンセルおよび追加料金）規則</b>に基づく法的権利を有しています。本ライセンス契約のいかなる条項も、これらの権利を排除または制限するものではありません。",
+      "qualityHeading": "デジタルコンテンツの基準",
+      "qualityP1": "2015年消費者権利法に基づき、LumenLingoが提供するデジタルコンテンツは以下の基準を満たす必要があります：",
+      "qualityLi1": "<b>満足のいく品質</b> — 説明、価格、その他すべての関連する状況を考慮し、欠陥がなく、安全で耐久性があること",
+      "qualityLi2": "<b>特定の目的への適合性</b> — 購入前または購入時にお客様が当社に伝えた目的に適していること",
+      "qualityLi3": "<b>説明との一致</b> — 当社のウェブサイトおよびApp Storeに掲載された機能を含む、当社が提供した説明と一致すること",
+      "remediesHeading": "お客様の救済手段",
+      "remediesP1": "当社のデジタルコンテンツがこれらの基準を満たさない場合、お客様は以下の救済手段を受ける権利があります：",
+      "remediesLi1": "<b>修理または交換</b> — 合理的な期間内に、重大な不便をおかけすることなく、無償で不具合の修正または代替品の提供を行います",
+      "remediesLi2": "<b>価格の引き下げ</b> — 修理または交換が不可能な場合、または合理的な期間内に行われない場合、（全額までの）価格引き下げを受ける権利が生じる場合があります",
+      "remediesLi3": "<b>返金を受ける権利</b> — 供給時に欠陥があったコンテンツについては、全額または一部の返金を受ける権利が生じる場合があります",
+      "coolingOffHeading": "14日間のクーリングオフ期間",
+      "coolingOffP1": "2013年消費者契約規則に基づき、購入日から<b>14日間のクーリングオフ期間</b>があり、この期間中はキャンセルし、理由を問わず全額返金を受けることができます。",
+      "coolingOffP2": "LumenLingoはAppleのApp Storeを通じて配信されるため、クーリングオフ期間はAppleの返金ポリシーに従ってAppleが管理します。この権利を行使する場合は、Appleを通じて返金をリクエストしてください。",
+      "refundsHeading": "Apple経由の返金",
+      "refundsP1": "LumenLingoのすべてのアプリ内購入およびサブスクリプションは、決済プロバイダーである<b>Apple</b>によって処理されます。返金リクエストはAppleのポリシーに従ってAppleが処理します。",
+      "refundsP2": "返金をリクエストするには、reportaproblem.apple.comにアクセスするか、Appleサポートにお問い合わせください。LumenShore Ltdはこのプロセスを全面的にサポートし、返金に関するお問い合わせについてAppleに協力します。",
+      "statutory": "<b>本ライセンス契約のいかなる条項も、消費者としてのお客様の法的権利に影響を与えるものではありません。</b>本契約とお客様の法的権利の間に矛盾がある場合は、お客様の法的権利が優先されます。"
+    }
   },
   "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
   "DataRequest": {

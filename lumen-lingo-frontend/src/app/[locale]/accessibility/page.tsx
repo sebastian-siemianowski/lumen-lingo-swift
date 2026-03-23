@@ -180,8 +180,10 @@ export default async function AccessibilityPage({
               <section id="known-limitations">
                 <h2>Known Limitations</h2>
                 <p>
-                  Despite our best efforts, some areas may have limitations:
+                  Despite our best efforts, some areas have limitations we are
+                  actively working to address:
                 </p>
+                <h3>Website (lumenlingo.com)</h3>
                 <ul>
                   <li>
                     <strong>Screenshot carousel:</strong> Drag-to-swipe
@@ -193,10 +195,90 @@ export default async function AccessibilityPage({
                     backdrop-blur visual effects may not render on all browsers.
                     Content remains fully readable regardless.
                   </li>
+                  <li>
+                    <strong>Accessibility page translation:</strong> This
+                    accessibility statement is currently available in English
+                    only. We plan to translate it into all supported languages.
+                  </li>
+                </ul>
+                <h3>iOS Application</h3>
+                <ul>
+                  <li>
+                    <strong>VoiceOver labels:</strong> Key interactive elements
+                    (categories, flashcards, membership badges, PDF export
+                    toolbar) include VoiceOver labels and hints. Some
+                    secondary views rely on SwiftUI&apos;s default accessibility
+                    rather than explicit labels. We are progressively adding
+                    full VoiceOver coverage.
+                  </li>
+                  <li>
+                    <strong>Dynamic Type:</strong> The iOS app does not yet
+                    fully support Dynamic Type. Most text uses fixed sizes
+                    optimised for the glass-morphism design. Users who rely on
+                    larger text sizes may not see all text scale. A migration to
+                    scalable text styles is planned.
+                  </li>
+                  <li>
+                    <strong>Reduce Motion:</strong> All animation-heavy views
+                    (flashcard flips, parallax effects, particle celebrations,
+                    expand/collapse sections) respect the system Reduce Motion
+                    preference.
+                  </li>
                 </ul>
                 <p>
-                  We are actively working to identify and resolve any
-                  accessibility gaps.
+                  We are actively working to identify and resolve accessibility
+                  gaps. Our roadmap includes quarterly accessibility audits
+                  (see below).
+                </p>
+              </section>
+
+              <section id="alternatives">
+                <h2>Alternative Ways to Access Content</h2>
+                <p>
+                  If you have difficulty using any part of LumenLingo, the
+                  following alternatives are available:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Email support:</strong> Contact us at{' '}
+                    <a href="mailto:accessibility@lumenshore.com">
+                      accessibility@lumenshore.com
+                    </a>{' '}
+                    and we will provide the content you need in an accessible
+                    format (plain text, audio description, or alternative layout).
+                  </li>
+                  <li>
+                    <strong>Keyboard navigation:</strong> All website content
+                    and interactions can be accessed using keyboard alone
+                    (Tab, Shift+Tab, Enter, Escape, arrow keys).
+                  </li>
+                  <li>
+                    <strong>Screen reader:</strong> The website is tested with
+                    VoiceOver. If you encounter issues with any assistive
+                    technology, please let us know.
+                  </li>
+                  <li>
+                    <strong>Browser adjustments:</strong> The website supports
+                    zoom up to 200%, high-contrast mode, and inverted colours.
+                  </li>
+                </ul>
+              </section>
+
+              <section id="audit-schedule">
+                <h2>Accessibility Audit Schedule</h2>
+                <p>
+                  We conduct regular accessibility audits to maintain and
+                  improve compliance:
+                </p>
+                <ul>
+                  <li><strong>Q1 (January–March):</strong> Website WCAG 2.1 AA full audit (automated and manual testing)</li>
+                  <li><strong>Q2 (April–June):</strong> iOS app VoiceOver and Dynamic Type audit</li>
+                  <li><strong>Q3 (July–September):</strong> Cross-platform screen reader testing</li>
+                  <li><strong>Q4 (October–December):</strong> Annual comprehensive review and remediation planning</li>
+                </ul>
+                <p>
+                  Findings from each audit are published in an updated version of
+                  this statement.
                 </p>
               </section>
 

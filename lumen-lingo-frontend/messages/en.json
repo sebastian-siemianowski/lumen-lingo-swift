@@ -276,7 +276,7 @@
     "success": "Welcome to the LumenShore community! Check your inbox.",
     "errorInvalid": "Please enter a valid email address.",
     "errorGeneric": "Something went wrong. Please try again.",
-    "gdpr": "We respect your privacy. Unsubscribe anytime.",
+    "gdpr": "By subscribing, you agree to receive product updates, language learning tips, and occasional offers from LumenShore Ltd. Unsubscribe anytime via the link in every email.",
     "blogCTA": {
       "heading": "Enjoying this article?",
       "description": "Get language learning insights, app updates, and study tips delivered to your inbox."
@@ -686,7 +686,7 @@
       "gdprLi4": "Right to data portability — export all your personal data as a free JSON download from Settings → Export My Data in the iOS app. Your data is always stored in standard formats. Contact us for website data export.",
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
-      "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
+      "gdprLi7": "Right to lodge a complaint — you can complain to the <icoLink>Information Commissioner’s Office (ICO)</icoLink> or your local supervisory authority.",
       "ccpaHeading": "Under CCPA/CPRA (California)",
       "ccpaLi1": "<b>Right to know</b> — you may request that we disclose the categories and specific pieces of personal information we have collected about you. See the Notice at Collection section above.",
       "ccpaLi2": "<b>Right to delete</b> — you may request deletion of your personal information. Use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
@@ -833,6 +833,56 @@
       "p2": "Under the California Privacy Rights Act (CPRA), GPC constitutes a valid opt-out of the sale or sharing of personal information. Under the Colorado Privacy Act and Connecticut Data Privacy Act, we are required to honour universal opt-out mechanisms including GPC.",
       "p3": "When a GPC signal is detected, we automatically suppress all non-essential tracking on our website — including analytics events and session replay — regardless of any prior cookie consent preferences.",
       "p4": "We also honour the Do Not Track (DNT) browser signal. Although DNT has been deprecated by the W3C, we treat it identically to GPC for consistency and as a demonstration of our commitment to privacy."
+    },
+    "ukDataProtection": {
+      "heading": "UK Data Protection",
+      "intro": "LumenShore Limited is a company incorporated in England and Wales (Company No. 09607326). As a UK-based data controller, we comply with the UK General Data Protection Regulation (UK GDPR) — retained from EU law via the European Union (Withdrawal) Act 2018 — and the Data Protection Act 2018 (DPA 2018). These laws govern how we collect, use, store, and protect your personal data.",
+      "controllerHeading": "Data Controller",
+      "controllerP1": "The data controller responsible for your personal data is:",
+      "controllerLi1": "<b>Company</b>: LumenShore Ltd",
+      "controllerLi2": "<b>Registered Address</b>: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "controllerLi3": "<b>Company Number</b>: 09607326 (England and Wales)",
+      "controllerLi4": "<b>VAT Number</b>: GB 270411929",
+      "dplHeading": "Data Protection Lead",
+      "dplP1": "Although LumenShore is not required to appoint a Data Protection Officer (DPO) under Article 37 UK GDPR (we are not a public authority, do not carry out large-scale monitoring, and do not process special category data at scale), we have designated a data protection lead to oversee compliance:",
+      "dplP2": "<b>Data Protection Lead</b>: Sebastian Siemianowski, Director",
+      "dplP3": "You can contact our data protection lead at <emailLink>hello@lumenshore.com</emailLink> for any questions about how we handle your personal data, to exercise your data rights, or to raise a data protection concern.",
+      "icoHeading": "ICO Registration",
+      "icoP1": "As required by section 25 of the Data Protection Act 2018, LumenShore Ltd pays the annual data protection fee to the <icoLink>Information Commissioner’s Office (ICO)</icoLink>, the UK’s independent supervisory authority for data protection.",
+      "icoP2": "The ICO maintains a public register of fee payers. You can verify our registration status on the ICO’s website.",
+      "adequacyHeading": "International Data Transfer Adequacy",
+      "adequacyP1": "When personal data is transferred between the UK and the European Economic Area (EEA), it is protected by the UK–EU adequacy decision made under Article 45 UK GDPR. The European Commission granted adequacy to the UK in June 2021, recognising that UK data protection law provides an essentially equivalent level of protection to the EU GDPR.",
+      "adequacyP2": "For transfers to the United States, we rely on service providers certified under the EU–US Data Privacy Framework (DPF) and its UK Extension, which the UK government has recognised as providing adequate safeguards. Where a sub-processor is not DPF-certified, we ensure Standard Contractual Clauses (SCCs) approved by the ICO are in place.",
+      "adequacyP3": "For further details on international transfers and the specific safeguards we use, see the <transfersLink>International Data Transfers</transfersLink> section of this policy.",
+      "specialCategoryHeading": "Special Category Data",
+      "specialCategoryP1": "LumenLingo does not collect or process any special category data as defined by Article 9 UK GDPR and section 10 of the DPA 2018. This includes: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, health data, sex life or sexual orientation, and criminal conviction data.",
+      "specialCategoryP2": "If our data processing activities change in the future to include any special category data, we will update this policy, conduct a Data Protection Impact Assessment (DPIA), and obtain explicit consent where required.",
+      "complaintHeading": "Your Right to Complain to the ICO",
+      "complaintP1": "If you are unhappy with how we have handled your personal data, you have the right to lodge a complaint with the Information Commissioner’s Office (ICO). We would appreciate the opportunity to address your concerns first — please contact us at <emailLink>hello@lumenshore.com</emailLink> and we will do our best to resolve the issue.",
+      "complaintP2": "If you are not satisfied with our response, you can contact the ICO:",
+      "complaintLi1": "<b>Website</b>: <icoComplaintLink>ico.org.uk/make-a-complaint</icoComplaintLink>",
+      "complaintLi2": "<b>Telephone</b>: 0303 123 1113",
+      "complaintLi3": "<b>Post</b>: Information Commissioner’s Office, Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF"
+    },
+    "electronicComms": {
+      "heading": "Electronic Communications (UK PECR)",
+      "intro": "The Privacy and Electronic Communications Regulations 2003 (PECR) set specific rules for electronic marketing and the use of cookies and similar technologies. As a UK company, LumenShore Ltd complies with PECR alongside the UK GDPR.",
+      "cookieHeading": "Cookies & Similar Technologies (Regulation 6)",
+      "cookieP1": "PECR Regulation 6 requires your consent before we store or access information on your device, except where it is strictly necessary to provide a service you have requested. Our approach:",
+      "cookieLi1": "<b>Strictly necessary storage</b> — consent preferences and language settings — is set without consent because it is essential for the website to function as you have requested.",
+      "cookieLi2": "<b>Non-essential storage</b> — analytics tracking, error monitoring, and session replay — is only activated after you give explicit consent via our cookie banner.",
+      "cookieLi3": "You can change your preferences at any time using the “Cookie Settings” link in the website footer.",
+      "cookieLi4": "If your browser sends a <b>Global Privacy Control (GPC)</b> or <b>Do Not Track (DNT)</b> signal, all non-essential storage is automatically suppressed.",
+      "cookieP2": "For full details of what we store and why, see our <cookiePolicyLink>Cookie Policy</cookiePolicyLink>.",
+      "newsletterHeading": "Marketing Communications (Regulation 22)",
+      "newsletterP1": "We only send marketing emails to people who have given explicit, freely given consent by subscribing to our newsletter. We do not use pre-ticked boxes or bundle marketing consent with other agreements.",
+      "newsletterP2": "Every marketing email we send:",
+      "newsletterLi1": "Identifies the sender as <b>LumenShore Ltd</b>",
+      "newsletterLi2": "Includes a working <b>unsubscribe link</b>",
+      "newsletterLi3": "Describes the types of content you will receive (product updates, language learning tips, and occasional offers)",
+      "newsletterP3": "We record your consent (including the version of the consent text shown, a timestamp, and a hashed identifier) for our accountability records.",
+      "softOptInHeading": "Soft Opt-In",
+      "softOptInP1": "PECR Regulation 22(3) allows businesses to send marketing to existing customers for similar products without explicit consent (“soft opt-in”), provided an opt-out was offered at point of collection and in every subsequent message. LumenShore does <b>not</b> currently rely on the soft opt-in exception — all marketing requires explicit consent."
     }
   },
   "Terms": {
@@ -952,7 +1002,28 @@
       "p4": "LumenShore may use Aggregate Data for product improvement, research, analytics, marketing, benchmarking, investor reporting, blog posts, case studies, and public reports.",
       "survival": "LumenShore’s right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data derived from your use of the Service."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "consumerRights": {
+      "heading": "Your Consumer Rights",
+      "intro": "If you are a consumer in the United Kingdom, you have statutory rights under the <b>Consumer Rights Act 2015</b> and the <b>Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013</b>. Nothing in these Terms excludes or limits those rights.",
+      "qualityHeading": "Digital Content Standards",
+      "qualityP1": "Under the Consumer Rights Act 2015, digital content supplied by LumenLingo must be:",
+      "qualityLi1": "<b>Of satisfactory quality</b> — free from defects, safe, and durable, taking into account any description, the price, and all other relevant circumstances",
+      "qualityLi2": "<b>Fit for a particular purpose</b> — suitable for any purpose you made known to us before or at the time of purchase",
+      "qualityLi3": "<b>As described</b> — matching any description we provided to you, including features listed on our website and the App Store",
+      "remediesHeading": "Your Remedies",
+      "remediesP1": "If our digital content does not meet these standards, you are entitled to the following remedies:",
+      "remediesLi1": "<b>Repair or replacement</b> — we will fix the fault or provide a replacement at no cost to you, within a reasonable time and without significant inconvenience",
+      "remediesLi2": "<b>Price reduction</b> — if repair or replacement is not possible, or not carried out within a reasonable time, you may be entitled to a price reduction (up to the full amount)",
+      "remediesLi3": "<b>Right to a refund</b> — for content that was faulty at the time of supply, you may be entitled to a full or partial refund",
+      "coolingOffHeading": "14-Day Cooling-Off Period",
+      "coolingOffP1": "Under the Consumer Contracts Regulations 2013, you have a <b>14-day cooling-off period</b> from the date of purchase in which you may cancel an online subscription and receive a full refund, without giving any reason.",
+      "coolingOffP2": "Because LumenLingo subscriptions are purchased through Apple’s App Store, the cooling-off period is managed by Apple in accordance with their refund policies. If you wish to exercise this right, please request a refund through Apple.",
+      "refundsHeading": "Refunds via Apple",
+      "refundsP1": "All LumenLingo in-app purchases and subscriptions are processed by <b>Apple</b> as the payment provider. Refund requests are handled by Apple in accordance with their policies.",
+      "refundsP2": "To request a refund, visit reportaproblem.apple.com or contact Apple Support. LumenShore Ltd fully supports this process and will cooperate with Apple on any refund enquiry.",
+      "statutory": "<b>Nothing in these Terms affects your statutory rights as a consumer.</b> If there is any conflict between these Terms and your statutory rights, your statutory rights will prevail."
+    }
   },
   "Blog": {
     "meta": {
@@ -1126,6 +1197,14 @@
       "p1": "We honour the Global Privacy Control (GPC) browser signal as required by the California Privacy Rights Act (CPRA), Colorado Privacy Act (CPA), and Connecticut Data Privacy Act (CTDPA). When your browser sends a GPC signal, we automatically disable all non-essential tracking — including analytics and session replay — regardless of any prior cookie consent preferences.",
       "p2": "We also honour the Do Not Track (DNT) browser signal. Although DNT is no longer maintained as a web standard by the W3C, we treat it identically to GPC as a matter of good practice.",
       "p3": "If you disable GPC or DNT in your browser, you can update your cookie preferences using the “Cookie Settings” button in the footer of any page."
+    },
+    "pecrCompliance": {
+      "heading": "UK PECR Compliance",
+      "p1": "In addition to the UK GDPR, our use of cookies and similar storage technologies complies with the Privacy and Electronic Communications Regulations 2003 (PECR), specifically Regulation 6.",
+      "p2": "Under PECR, we are required to obtain your consent before placing non-essential cookies or accessing non-essential information on your device. This is why we show a cookie banner on your first visit.",
+      "p3": "<b>Strictly necessary items</b> (consent state, language preference, Service Worker cache) are exempt from the consent requirement because they are essential to providing a service you have explicitly requested.",
+      "p4": "<b>Non-essential items</b> (analytics, error monitoring, session replay) are only activated after you give affirmative consent. If you decline, these categories remain fully disabled.",
+      "p5": "Our consent mechanism is designed to meet ICO guidance: no pre-ticked boxes, no “cookie walls,” easy withdrawal at any time, and clear information about each category."
     }
   },
   "Eula": {
@@ -1237,7 +1316,28 @@
       "address": "<b>Address:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom",
       "responseTime": "We typically respond within 48 hours."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "consumerRights": {
+      "heading": "Your Consumer Rights",
+      "intro": "If you are a consumer in the United Kingdom, you have statutory rights under the <b>Consumer Rights Act 2015</b> and the <b>Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013</b>. Nothing in this Licence Agreement excludes or limits those rights.",
+      "qualityHeading": "Digital Content Standards",
+      "qualityP1": "Under the Consumer Rights Act 2015, digital content supplied by LumenLingo must be:",
+      "qualityLi1": "<b>Of satisfactory quality</b> — free from defects, safe, and durable, taking into account any description, the price, and all other relevant circumstances",
+      "qualityLi2": "<b>Fit for a particular purpose</b> — suitable for any purpose you made known to us before or at the time of purchase",
+      "qualityLi3": "<b>As described</b> — matching any description we provided to you, including features listed on our website and the App Store",
+      "remediesHeading": "Your Remedies",
+      "remediesP1": "If our digital content does not meet these standards, you are entitled to the following remedies:",
+      "remediesLi1": "<b>Repair or replacement</b> — we will fix the fault or provide a replacement at no cost to you, within a reasonable time and without significant inconvenience",
+      "remediesLi2": "<b>Price reduction</b> — if repair or replacement is not possible, or not carried out within a reasonable time, you may be entitled to a price reduction (up to the full amount)",
+      "remediesLi3": "<b>Right to a refund</b> — for content that was faulty at the time of supply, you may be entitled to a full or partial refund",
+      "coolingOffHeading": "14-Day Cooling-Off Period",
+      "coolingOffP1": "Under the Consumer Contracts Regulations 2013, you have a <b>14-day cooling-off period</b> from the date of purchase in which you may cancel and receive a full refund, without giving any reason.",
+      "coolingOffP2": "Because LumenLingo is distributed through Apple’s App Store, the cooling-off period is managed by Apple in accordance with their refund policies. If you wish to exercise this right, please request a refund through Apple.",
+      "refundsHeading": "Refunds via Apple",
+      "refundsP1": "All LumenLingo in-app purchases and subscriptions are processed by <b>Apple</b> as the payment provider. Refund requests are handled by Apple in accordance with their policies.",
+      "refundsP2": "To request a refund, visit reportaproblem.apple.com or contact Apple Support. LumenShore Ltd fully supports this process and will cooperate with Apple on any refund enquiry.",
+      "statutory": "<b>Nothing in this Licence Agreement affects your statutory rights as a consumer.</b> If there is any conflict between this Agreement and your statutory rights, your statutory rights will prevail."
+    }
   },
   "DataRequest": {
     "meta": {

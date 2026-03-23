@@ -276,7 +276,7 @@
     "success": "欢迎加入 LumenShore 社区！请查看收件箱。",
     "errorInvalid": "请输入有效的电子邮箱地址。",
     "errorGeneric": "出了点问题。请重试。",
-    "gdpr": "我们尊重你的隐私。随时可以取消订阅。",
+    "gdpr": "订阅即表示您同意接收LumenShore Ltd的产品更新、语言学习提示和不定期优惠。您可以随时通过每封电子邮件中的链接取消订阅。",
     "blogCTA": {
       "heading": "喜欢这篇文章？",
       "description": "获取语言学习洞见、应用更新和学习技巧，直接发送到你的邮箱。"
@@ -611,7 +611,7 @@
       "gdprLi4": "数据可携带权——在iOS应用的「设置」→「导出我的数据」中免费下载所有个人数据的JSON文件。您的数据始终以标准格式存储。如需导出网站数据，请联系我们。",
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
-      "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
+      "gdprLi7": "投诉权 —— 您可以向<icoLink>信息专员办公室（ICO）</icoLink>或您当地的监督机构提出投诉。",
       "ccpaHeading": "根据CCPA/CPRA（加州）",
       "ccpaLi1": "<b>知情权</b>——您可以要求我们披露我们收集的关于您的个人信息的类别和具体内容。请参阅上述收集通知部分。",
       "ccpaLi2": "<b>删除权</b>——您可以要求删除您的个人信息。使用应用内的删除账户功能、删除应用或联系我们删除网站数据。",
@@ -833,6 +833,56 @@
       "p2": "根据加利福尼亚州隐私权利法（CPRA），GPC构成选择退出个人信息销售或共享的有效请求。根据科罗拉多州隐私法和康涅狄格州数据隐私法，我们有义务尊重包括GPC在内的通用选择退出机制。",
       "p3": "当检测到GPC信号时，我们会自动拑绝网站上所有非必要的跟踪——包括分析事件和会话重放——无论之前的Cookie偏好设置如何。",
       "p4": "我们也尊重禁止跟踪（DNT）浏览器信号。虽然DNT已被W3C弃用，但我们仍将其与GPC同等对待，以保持一致性并展示我们对隐私的承诺。"
+    },
+    "ukDataProtection": {
+      "heading": "英国数据保护",
+      "intro": "LumenShore Limited 是一家在英格兰和威尔士注册的公司（公司编号 09607326）。作为总部位于英国的数据控制者，我们遵守英国《通用数据保护条例》（UK GDPR）—— 通过 2018 年《欧洲联盟（退出）法》从欧盟法律中保留 —— 以及 2018 年《数据保护法》（DPA 2018）。这些法律规定了我们如何收集、使用、存储和保护您的个人数据。",
+      "controllerHeading": "数据控制者",
+      "controllerP1": "负责您个人数据的数据控制者是：",
+      "controllerLi1": "<b>公司</b>：LumenShore Ltd",
+      "controllerLi2": "<b>注册地址</b>：Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "controllerLi3": "<b>公司编号</b>：09607326（英格兰和威尔士）",
+      "controllerLi4": "<b>VAT 编号</b>：GB 270411929",
+      "dplHeading": "数据保护负责人",
+      "dplP1": "尽管 LumenShore 无需根据 UK GDPR 第 37 条任命数据保护官（DPO）（我们不是公共机构，不进行大规模监控，也不大规模处理特殊类别数据），但我们已指定一名数据保护负责人来监督合规工作：",
+      "dplP2": "<b>数据保护负责人</b>：Sebastian Siemianowski，董事",
+      "dplP3": "您可以通过 <emailLink>hello@lumenshore.com</emailLink> 联系我们的数据保护负责人，咨询有关个人数据处理的任何问题、行使您的数据权利或提出数据保护相关的关切。",
+      "icoHeading": "ICO 注册",
+      "icoP1": "根据 2018 年《数据保护法》第 25 条的要求，LumenShore Ltd 向英国独立的数据保护监督机构 <icoLink>信息专员办公室（ICO）</icoLink>缴纳年度数据保护费。",
+      "icoP2": "ICO 维护一个缴费者公开登记册。您可以在 ICO 网站上验证我们的注册状态。",
+      "adequacyHeading": "国际数据传输充分性认定",
+      "adequacyP1": "当个人数据在英国和欧洲经济区（EEA）之间传输时，受 UK GDPR 第 45 条下英国–欧盟充分性认定的保护。欧盟委员会于 2021 年 6 月向英国授予充分性认定，认可英国数据保护法提供了与欧盟 GDPR 实质上等同的保护水平。",
+      "adequacyP2": "对于向美国的数据传输，我们依赖在欧盟–美国数据隐私框架（DPF）及其英国扩展下认证的服务提供商，英国政府已认可其提供了充分的保障。当子处理器未获得 DPF 认证时，我们确保由 ICO 批准的标准合同条款（SCC）已到位。",
+      "adequacyP3": "有关国际传输和我们使用的具体保障措施的更多详情，请参阅本政策的<transfersLink>国际数据传输</transfersLink>部分。",
+      "specialCategoryHeading": "特殊类别数据",
+      "specialCategoryP1": "LumenLingo 不收集或处理 UK GDPR 第 9 条和 DPA 2018 第 10 条定义的任何特殊类别数据。这包括：种族或民族出身、政治观点、宗教或哲学信仰、工会会员资格、基因数据、生物识别数据、健康数据、性生活或性取向以及刑事定罪数据。",
+      "specialCategoryP2": "如果我们未来的数据处理活动发生变化，包含任何特殊类别数据，我们将更新本政策，进行数据保护影响评估（DPIA），并在需要时获得明确同意。",
+      "complaintHeading": "您向 ICO 投诉的权利",
+      "complaintP1": "如果您对我们处理您个人数据的方式不满，您有权向信息专员办公室（ICO）提出投诉。我们希望能先有机会解决您的问题 —— 请通过 <emailLink>hello@lumenshore.com</emailLink> 联系我们，我们将尽最大努力解决问题。",
+      "complaintP2": "如果您对我们的回复不满意，可以联系 ICO：",
+      "complaintLi1": "<b>网站</b>：<icoComplaintLink>ico.org.uk/make-a-complaint</icoComplaintLink>",
+      "complaintLi2": "<b>电话</b>：0303 123 1113",
+      "complaintLi3": "<b>邮寄地址</b>：Information Commissioner’s Office, Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF"
+    },
+    "electronicComms": {
+      "heading": "电子通信（英国 PECR）",
+      "intro": "2003年《隐私和电子通信法规》（PECR）为电子营销以及Cookie和类似技术的使用制定了具体规则。作为英国公司，LumenShore Ltd在遵守英国GDPR的同时也遵守PECR。",
+      "cookieHeading": "Cookie和类似技术（法规 6）",
+      "cookieP1": "PECR法规 6要求在您的设备上存储或访问信息之前获得您的同意，除非这对于提供您请求的服务是严格必要的。我们的方法：",
+      "cookieLi1": "<b>严格必要的存储</b>——同意设置和语言设置——无需同意即可设置，因为它对于网站按您的要求运行是必不可少的。",
+      "cookieLi2": "<b>非必要的存储</b>——分析跟踪、错误监控和会话回放——只有在您通过我们的Cookie横幅给予明确同意后才会激活。",
+      "cookieLi3": "您可以随时使用网站页脚中的“Cookie设置”链接更改您的偏好设置。",
+      "cookieLi4": "如果您的浏览器发送<b>全局隐私控制（GPC）</b>或<b>请勿跟踪（DNT）</b>信号，所有非必要的存储将被自动抑制。",
+      "cookieP2": "有关我们存储的内容和原因的完整详情，请参阅我们的<cookiePolicyLink>Cookie政策</cookiePolicyLink>。",
+      "newsletterHeading": "营销通信（法规 22）",
+      "newsletterP1": "我们只向通过订阅我们的新闻通讯给予明确、自由同意的人发送营销电子邮件。我们不使用预勾选的复选框，也不将营销同意与其他协议捆绑。",
+      "newsletterP2": "我们发送的每封营销电子邮件：",
+      "newsletterLi1": "将发件人识别为<b>LumenShore Ltd</b>",
+      "newsletterLi2": "包含有效的<b>取消订阅链接</b>",
+      "newsletterLi3": "描述您将收到的内容类型（产品更新、语言学习提示以及不定期优惠）",
+      "newsletterP3": "我们记录您的同意（包括显示的同意文本版本、时间戳和哈希标识符）以侜我们的问责记录。",
+      "softOptInHeading": "软性选择加入",
+      "softOptInP1": "PECR法规 22(3)允许企业在数据收集时和每次后续消息中提供了退出机会的前提下，无需明确同意即可向现有客户发送类似产品的营销（“软性选择加入”）。LumenShore目前<b>不</b>依赖软性选择加入例外——所有营销都需要明确同意。"
     }
   },
   "Terms": {
@@ -952,7 +1002,28 @@
       "p4": "LumenShore may use Aggregate Data for product improvement, research, analytics, marketing, benchmarking, investor reporting, blog posts, case studies, and public reports.",
       "survival": "LumenShore’s right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data derived from your use of the Service."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "consumerRights": {
+      "heading": "您的消费者权利",
+      "intro": "如果您是英国的消费者，您根据<b>2015年消费者权利法</b>和<b>2013年消费者合同（信息、取消和额外费用）条例</b>享有法定权利。本条款不排除或限制这些权利。",
+      "qualityHeading": "数字内容标准",
+      "qualityP1": "根据2015年消费者权利法，LumenLingo提供的数字内容必须：",
+      "qualityLi1": "<b>质量令人满意</b> — 无缺陷、安全且耐用，考虑到任何描述、价格及所有其他相关情况",
+      "qualityLi2": "<b>适合特定用途</b> — 适合您在购买前或购买时告知我们的任何用途",
+      "qualityLi3": "<b>与描述相符</b> — 与我们向您提供的任何描述相符，包括我们网站和App Store上列出的功能",
+      "remediesHeading": "您的补救措施",
+      "remediesP1": "如果我们的数字内容未达到这些标准，您有权获得以下补救措施：",
+      "remediesLi1": "<b>修复或更换</b> — 我们将免费为您修复缺陷或提供替代品，在合理时间内且不造成重大不便",
+      "remediesLi2": "<b>降价</b> — 如果无法修复或更换，或未在合理时间内完成，您可能有权获得降价（最高至全额）",
+      "remediesLi3": "<b>退款权</b> — 对于供应时存在缺陷的内容，您可能有权获得全额或部分退款",
+      "coolingOffHeading": "14天冷静期",
+      "coolingOffP1": "根据2013年消费者合同条例，自购买之日起您享有<b>14天冷静期</b>，在此期间您可以取消在线订阅并获得全额退款，无需给出任何理由。",
+      "coolingOffP2": "由于LumenLingo订阅通过Apple的App Store购买，冷静期由Apple根据其退款政策管理。如果您希望行使此权利，请通过Apple申请退款。",
+      "refundsHeading": "通过Apple退款",
+      "refundsP1": "LumenLingo的所有应用内购买和订阅均由<b>Apple</b>作为支付提供商处理。退款请求由Apple根据其政策处理。",
+      "refundsP2": "要申请退款，请访问reportaproblem.apple.com或联系Apple支持。LumenShore Ltd完全支持此流程，并将就任何退款查询与Apple合作。",
+      "statutory": "<b>本条款不影响您作为消费者的法定权利。</b>如果本条款与您的法定权利之间存在任何冲突，以您的法定权利为准。"
+    }
   },
   "Blog": {
     "meta": {
@@ -1126,6 +1197,14 @@
       "p1": "我们根据加利福尼亚州隐私权利法（CPRA）、科罗拉多州隐私法（CPA）和康涅狄格州数据隐私法（CTDPA）的要求，尊重全球隐私控制（GPC）浏览器信号。当您的浏览器发送GPC信号时，我们会自动禁用所有非必要的跟踪——包括分析和会话重放——无论之前的Cookie偏好设置如何。",
       "p2": "我们也尊重禁止跟踪（DNT）浏览器信号。虽然DNT已不再作为W3C维护的Web标准，但我们仍将其与GPC同等对待，作为良好实践。",
       "p3": "如果您在浏览器中禁用了GPC或DNT，可以使用页面底部的“Cookie设置”按钮更新Cookie偏好。"
+    },
+    "pecrCompliance": {
+      "heading": "英国 PECR 合规",
+      "p1": "除英国GDPR外，我们对Cookie和类似存储技术的使用符合2003年《隐私和电子通信法规》（PECR），特别是法规 6。",
+      "p2": "根据PECR，我们有义务在放置非必要的Cookie或访问您设备上的非必要信息之前获得您的同意。这就是我们在您首次访问时显示Cookie横幅的原因。",
+      "p3": "<b>严格必要的项目</b>（同意状态、语言偏好、Service Worker缓存）免于同意要求，因为它们对于提供您明确请求的服务是必不可少的。",
+      "p4": "<b>非必要的项目</b>（分析、错误监控、会话回放）只有在您给予肯定同意后才会激活。如果您拒绝，这些类别将完全保持禁用状态。",
+      "p5": "我们的同意机制旨在符合ICO指南：没有预勾选的复选框，没有“Cookie墙”，可随时轻松撤回，并提供每个类别的明确信息。"
     }
   },
   "Eula": {
@@ -1237,7 +1316,28 @@
       "address": "<b>Address:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom",
       "responseTime": "我们通常在48小时内回复。"
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "consumerRights": {
+      "heading": "您的消费者权利",
+      "intro": "如果您是英国的消费者，您根据<b>2015年消费者权利法</b>和<b>2013年消费者合同（信息、取消和额外费用）条例</b>享有法定权利。本许可协议不排除或限制这些权利。",
+      "qualityHeading": "数字内容标准",
+      "qualityP1": "根据2015年消费者权利法，LumenLingo提供的数字内容必须：",
+      "qualityLi1": "<b>质量令人满意</b> — 无缺陷、安全且耐用，考虑到任何描述、价格及所有其他相关情况",
+      "qualityLi2": "<b>适合特定用途</b> — 适合您在购买前或购买时告知我们的任何用途",
+      "qualityLi3": "<b>与描述相符</b> — 与我们向您提供的任何描述相符，包括我们网站和App Store上列出的功能",
+      "remediesHeading": "您的补救措施",
+      "remediesP1": "如果我们的数字内容未达到这些标准，您有权获得以下补救措施：",
+      "remediesLi1": "<b>修复或更换</b> — 我们将免费为您修复缺陷或提供替代品，在合理时间内且不造成重大不便",
+      "remediesLi2": "<b>降价</b> — 如果无法修复或更换，或未在合理时间内完成，您可能有权获得降价（最高至全额）",
+      "remediesLi3": "<b>退款权</b> — 对于供应时存在缺陷的内容，您可能有权获得全额或部分退款",
+      "coolingOffHeading": "14天冷静期",
+      "coolingOffP1": "根据2013年消费者合同条例，自购买之日起您享有<b>14天冷静期</b>，在此期间您可以取消并获得全额退款，无需给出任何理由。",
+      "coolingOffP2": "由于LumenLingo通过Apple的App Store分发，冷静期由Apple根据其退款政策管理。如果您希望行使此权利，请通过Apple申请退款。",
+      "refundsHeading": "通过Apple退款",
+      "refundsP1": "LumenLingo的所有应用内购买和订阅均由<b>Apple</b>作为支付提供商处理。退款请求由Apple根据其政策处理。",
+      "refundsP2": "要申请退款，请访问reportaproblem.apple.com或联系Apple支持。LumenShore Ltd完全支持此流程，并将就任何退款查询与Apple合作。",
+      "statutory": "<b>本许可协议不影响您作为消费者的法定权利。</b>如果本协议与您的法定权利之间存在任何冲突，以您的法定权利为准。"
+    }
   },
   "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
   "DataRequest": {

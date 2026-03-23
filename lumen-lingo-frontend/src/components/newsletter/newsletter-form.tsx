@@ -215,10 +215,10 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
         )}
       </AnimatePresence>
 
-      {/* GDPR consent notice — must match NEWSLETTER_CONSENT_TEXT in consent-log.ts */}
+      {/* PECR / GDPR consent notice — must match NEWSLETTER_CONSENT_TEXT in consent-log.ts */}
       {state !== 'success' && (
         <p className="mt-2.5 text-[11px] leading-relaxed text-foreground-muted/70">
-          By subscribing, you agree to receive product updates and language learning tips. Unsubscribe anytime via the link in every email.
+          By subscribing, you agree to receive product updates, language learning tips, and occasional offers from LumenShore Ltd. Unsubscribe anytime via the link in every email.
         </p>
       )}
     </div>

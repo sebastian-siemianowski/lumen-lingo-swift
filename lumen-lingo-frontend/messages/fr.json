@@ -276,7 +276,7 @@
     "success": "Bienvenue dans la communauté LumenShore ! Vérifiez votre boîte de réception.",
     "errorInvalid": "Veuillez saisir une adresse e-mail valide.",
     "errorGeneric": "Une erreur s'est produite. Veuillez réessayer.",
-    "gdpr": "Nous respectons votre vie privée. Désabonnez-vous à tout moment.",
+    "gdpr": "En vous inscrivant, vous acceptez de recevoir des mises à jour produit, des conseils d’apprentissage des langues et des offres occasionnelles de LumenShore Ltd. Désinscrivez-vous à tout moment via le lien dans chaque e-mail.",
     "blogCTA": {
       "heading": "Cet article vous plaît ?",
       "description": "Recevez des conseils d'apprentissage, les mises à jour de l'app et des astuces d'étude dans votre boîte de réception."
@@ -611,7 +611,7 @@
       "gdprLi4": "Droit à la portabilité des données — exportez toutes vos données personnelles en téléchargement JSON gratuit depuis Réglages → Exporter mes données dans l’app iOS. Vos données sont toujours stockées dans des formats standard. Contactez-nous pour l’export des données du site web.",
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
-      "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
+      "gdprLi7": "Droit de déposer une réclamation — vous pouvez réclamer auprès de l’<icoLink>Information Commissioner’s Office (ICO)</icoLink> ou de votre autorité de contrôle locale.",
       "ccpaHeading": "En vertu de la CCPA/CPRA (Californie)",
       "ccpaLi1": "<b>Droit de savoir</b> — vous pouvez demander la divulgation des catégories et éléments spécifiques d’informations personnelles que nous avons collectés à votre sujet. Consultez la section Avis de collecte ci-dessus.",
       "ccpaLi2": "<b>Droit de suppression</b> — vous pouvez demander la suppression de vos informations personnelles. Utilisez la fonctionnalité Supprimer le compte dans l’app, supprimez l’app ou contactez-nous pour effacer les données du site web.",
@@ -833,6 +833,56 @@
       "p2": "En vertu de la California Privacy Rights Act (CPRA), le GPC constitue une désinscription valide de la vente ou du partage d’informations personnelles. En vertu de la Colorado Privacy Act et de la Connecticut Data Privacy Act, nous sommes tenus de respecter les mécanismes universels de désinscription, y compris le GPC.",
       "p3": "Lorsqu’un signal GPC est détecté, nous supprimons automatiquement tout suivi non essentiel sur notre site web — y compris les événements d’analyse et la relecture de sessions — indépendamment de toute préférence de cookies antérieure.",
       "p4": "Nous respectons également le signal Do Not Track (DNT) du navigateur. Bien que DNT ait été abandonné par le W3C, nous le traitons de manière identique au GPC par souci de cohérence et pour démontrer notre engagement en faveur de la confidentialité."
+    },
+    "ukDataProtection": {
+      "heading": "Protection des données au Royaume-Uni",
+      "intro": "LumenShore Limited est une société constituée en Angleterre et au pays de Galles (Nº d’entreprise 09607326). En tant que responsable du traitement des données basé au Royaume-Uni, nous nous conformons au Règlement général sur la protection des données du Royaume-Uni (UK GDPR) — intégré à partir du droit de l’UE via la loi de 2018 sur le retrait de l’Union européenne — et à la loi de 2018 sur la protection des données (DPA 2018). Ces lois régissent la manière dont nous collectons, utilisons, stockons et protégeons vos données personnelles.",
+      "controllerHeading": "Responsable du traitement",
+      "controllerP1": "Le responsable du traitement de vos données personnelles est :",
+      "controllerLi1": "<b>Société</b> : LumenShore Ltd",
+      "controllerLi2": "<b>Siège social</b> : Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, Angleterre, LE4 9HA",
+      "controllerLi3": "<b>Nº d’entreprise</b> : 09607326 (Angleterre et pays de Galles)",
+      "controllerLi4": "<b>Nº de TVA</b> : GB 270411929",
+      "dplHeading": "Responsable de la protection des données",
+      "dplP1": "Bien que LumenShore ne soit pas tenue de désigner un Délégué à la Protection des Données (DPD) en vertu de l’article 37 du UK GDPR (nous ne sommes pas une autorité publique, nous n’effectuons pas de suivi à grande échelle et nous ne traitons pas de données sensibles à grande échelle), nous avons désigné un responsable de la protection des données pour superviser la conformité :",
+      "dplP2": "<b>Responsable de la protection des données</b> : Sebastian Siemianowski, Directeur",
+      "dplP3": "Vous pouvez contacter notre responsable de la protection des données à <emailLink>hello@lumenshore.com</emailLink> pour toute question sur le traitement de vos données personnelles, pour exercer vos droits ou pour signaler une préoccupation relative à la protection des données.",
+      "icoHeading": "Inscription à l’ICO",
+      "icoP1": "Conformément à la section 25 de la loi de 2018 sur la protection des données, LumenShore Ltd paie la redevance annuelle de protection des données à l’<icoLink>Information Commissioner’s Office (ICO)</icoLink>, l’autorité de contrôle indépendante du Royaume-Uni en matière de protection des données.",
+      "icoP2": "L’ICO tient un registre public des cotisants. Vous pouvez vérifier notre statut d’inscription sur le site web de l’ICO.",
+      "adequacyHeading": "Décisions d’adéquation pour les transferts internationaux",
+      "adequacyP1": "Lorsque des données personnelles sont transférées entre le Royaume-Uni et l’Espace économique européen (EEE), elles sont protégées par la décision d’adéquation Royaume-Uni–UE prise en vertu de l’article 45 du UK GDPR. La Commission européenne a accordé l’adéquation au Royaume-Uni en juin 2021, reconnaissant que la législation britannique sur la protection des données offre un niveau de protection essentiellement équivalent au RGPD de l’UE.",
+      "adequacyP2": "Pour les transferts vers les États-Unis, nous nous appuyons sur des fournisseurs de services certifiés dans le cadre du Data Privacy Framework UE–États-Unis (DPF) et de son extension britannique, que le gouvernement du Royaume-Uni a reconnus comme offrant des garanties adéquates. Lorsqu’un sous-traitant n’est pas certifié DPF, nous veillons à ce que des clauses contractuelles types (CCT) approuvées par l’ICO soient en place.",
+      "adequacyP3": "Pour plus de détails sur les transferts internationaux et les garanties spécifiques que nous utilisons, consultez la section <transfersLink>Transferts internationaux de données</transfersLink> de cette politique.",
+      "specialCategoryHeading": "Données de catégories spéciales",
+      "specialCategoryP1": "LumenLingo ne collecte ni ne traite aucune donnée de catégories spéciales au sens de l’article 9 du UK GDPR et de la section 10 de la DPA 2018. Cela comprend : l’origine raciale ou ethnique, les opinions politiques, les convictions religieuses ou philosophiques, l’appartenance syndicale, les données génétiques, les données biométriques, les données de santé, la vie sexuelle ou l’orientation sexuelle, et les données relatives aux condamnations pénales.",
+      "specialCategoryP2": "Si nos activités de traitement des données changent à l’avenir pour inclure des données de catégories spéciales, nous mettrons à jour cette politique, réaliserons une analyse d’impact relative à la protection des données (AIPD) et obtiendrons le consentement explicite si nécessaire.",
+      "complaintHeading": "Votre droit de réclamer auprès de l’ICO",
+      "complaintP1": "Si vous n’êtes pas satisfait de la manière dont nous avons traité vos données personnelles, vous avez le droit de déposer une réclamation auprès de l’Information Commissioner’s Office (ICO). Nous apprécierions l’opportunité de répondre à vos préoccupations d’abord — contactez-nous à <emailLink>hello@lumenshore.com</emailLink> et nous ferons de notre mieux pour résoudre le problème.",
+      "complaintP2": "Si vous n’êtes pas satisfait de notre réponse, vous pouvez contacter l’ICO :",
+      "complaintLi1": "<b>Site web</b> : <icoComplaintLink>ico.org.uk/make-a-complaint</icoComplaintLink>",
+      "complaintLi2": "<b>Téléphone</b> : 0303 123 1113",
+      "complaintLi3": "<b>Adresse postale</b> : Information Commissioner’s Office, Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF"
+    },
+    "electronicComms": {
+      "heading": "Communications électroniques (PECR du Royaume-Uni)",
+      "intro": "Les Règlements sur la vie privée et les communications électroniques de 2003 (PECR) établissent des règles spécifiques pour le marketing électronique et l’utilisation de cookies et technologies similaires. En tant qu’entreprise britannique, LumenShore Ltd respecte les PECR en plus du RGPD britannique.",
+      "cookieHeading": "Cookies et technologies similaires (Règlement 6)",
+      "cookieP1": "Le Règlement 6 des PECR exige votre consentement avant de stocker ou d’accéder à des informations sur votre appareil, sauf lorsque cela est strictement nécessaire pour fournir un service que vous avez demandé. Notre approche :",
+      "cookieLi1": "<b>Le stockage strictement nécessaire</b> — préférences de consentement et paramètres de langue — est défini sans consentement car il est essentiel au fonctionnement du site web tel que vous l’avez demandé.",
+      "cookieLi2": "<b>Le stockage non essentiel</b> — suivi analytique, surveillance des erreurs et replay de session — n’est activé qu’après votre consentement explicite via notre bannière de cookies.",
+      "cookieLi3": "Vous pouvez modifier vos préférences à tout moment en utilisant le lien « Paramètres des cookies » dans le pied de page du site.",
+      "cookieLi4": "Si votre navigateur envoie un signal <b>Global Privacy Control (GPC)</b> ou <b>Do Not Track (DNT)</b>, tout stockage non essentiel est automatiquement supprimé.",
+      "cookieP2": "Pour plus de détails sur ce que nous stockons et pourquoi, consultez notre <cookiePolicyLink>Politique de cookies</cookiePolicyLink>.",
+      "newsletterHeading": "Communications marketing (Règlement 22)",
+      "newsletterP1": "Nous n’envoyons des e-mails marketing qu’aux personnes ayant donné leur consentement explicite et librement en s’inscrivant à notre newsletter. Nous n’utilisons pas de cases pré-cochées et ne regroupons pas le consentement marketing avec d’autres accords.",
+      "newsletterP2": "Chaque e-mail marketing que nous envoyons :",
+      "newsletterLi1": "Identifie l’expéditeur comme étant <b>LumenShore Ltd</b>",
+      "newsletterLi2": "Inclut un <b>lien de désinscription</b> fonctionnel",
+      "newsletterLi3": "Décrit les types de contenu que vous recevrez (mises à jour produit, conseils d’apprentissage des langues et offres occasionnelles)",
+      "newsletterP3": "Nous enregistrons votre consentement (y compris la version du texte de consentement affiché, un horodatage et un identifiant haché) dans nos registres de responsabilité.",
+      "softOptInHeading": "Consentement implicite (Soft Opt-In)",
+      "softOptInP1": "Le Règlement 22(3) des PECR permet aux entreprises d’envoyer du marketing à des clients existants pour des produits similaires sans consentement explicite (« soft opt-in »), à condition qu’une option de désinscription ait été proposée au moment de la collecte et dans chaque message ultérieur. LumenShore ne s’appuie <b>pas</b> actuellement sur l’exception du soft opt-in — tout marketing nécessite un consentement explicite."
     }
   },
   "Terms": {
@@ -952,7 +1002,28 @@
       "p4": "LumenShore may use Aggregate Data for product improvement, research, analytics, marketing, benchmarking, investor reporting, blog posts, case studies, and public reports.",
       "survival": "LumenShore’s right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data derived from your use of the Service."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "consumerRights": {
+      "heading": "Vos Droits de Consommateur",
+      "intro": "Si vous êtes un consommateur au Royaume-Uni, vous bénéficiez de droits légaux en vertu de la <b>Loi sur les Droits des Consommateurs de 2015</b> et des <b>Règlements sur les Contrats de Consommation (Information, Annulation et Frais Supplémentaires) de 2013</b>. Rien dans les présentes Conditions n’exclut ni ne limite ces droits.",
+      "qualityHeading": "Normes de Contenu Numérique",
+      "qualityP1": "Conformément à la Loi sur les Droits des Consommateurs de 2015, le contenu numérique fourni par LumenLingo doit être :",
+      "qualityLi1": "<b>De qualité satisfaisante</b> — exempt de défauts, sûr et durable, compte tenu de toute description, du prix et de toutes les autres circonstances pertinentes",
+      "qualityLi2": "<b>Apte à un usage particulier</b> — adapté à tout usage que vous nous avez communiqué avant ou au moment de l’achat",
+      "qualityLi3": "<b>Conforme à la description</b> — correspondant à toute description que nous vous avons fournie, y compris les fonctionnalités indiquées sur notre site web et l’App Store",
+      "remediesHeading": "Vos Recours",
+      "remediesP1": "Si notre contenu numérique ne répond pas à ces normes, vous avez droit aux recours suivants :",
+      "remediesLi1": "<b>Réparation ou remplacement</b> — nous corrigerons le défaut ou fournirons un remplacement sans frais pour vous, dans un délai raisonnable et sans inconvénient majeur",
+      "remediesLi2": "<b>Réduction de prix</b> — si la réparation ou le remplacement n’est pas possible, ou n’est pas effectué dans un délai raisonnable, vous pouvez avoir droit à une réduction de prix (jusqu’au montant total)",
+      "remediesLi3": "<b>Droit au remboursement</b> — pour un contenu défectueux au moment de la fourniture, vous pouvez avoir droit à un remboursement total ou partiel",
+      "coolingOffHeading": "Délai de Rétractation de 14 Jours",
+      "coolingOffP1": "En vertu des Règlements sur les Contrats de Consommation de 2013, vous disposez d’un <b>délai de rétractation de 14 jours</b> à compter de la date d’achat pendant lequel vous pouvez annuler un abonnement en ligne et recevoir un remboursement intégral, sans avoir à donner de motif.",
+      "coolingOffP2": "Les abonnements LumenLingo étant achetés via l’App Store d’Apple, le délai de rétractation est géré par Apple conformément à ses politiques de remboursement. Si vous souhaitez exercer ce droit, veuillez demander un remboursement auprès d’Apple.",
+      "refundsHeading": "Remboursements via Apple",
+      "refundsP1": "Tous les achats intégrés et abonnements LumenLingo sont traités par <b>Apple</b> en tant que prestataire de paiement. Les demandes de remboursement sont gérées par Apple conformément à ses politiques.",
+      "refundsP2": "Pour demander un remboursement, rendez-vous sur reportaproblem.apple.com ou contactez l’assistance Apple. LumenShore Ltd soutient pleinement ce processus et coopérera avec Apple pour toute demande de remboursement.",
+      "statutory": "<b>Rien dans les présentes Conditions n’affecte vos droits légaux en tant que consommateur.</b> En cas de conflit entre les présentes Conditions et vos droits légaux, vos droits légaux prévaudront."
+    }
   },
   "Blog": {
     "meta": {
@@ -1126,6 +1197,14 @@
       "p1": "Nous respectons le signal Global Privacy Control (GPC) du navigateur conformément à la California Privacy Rights Act (CPRA), la Colorado Privacy Act (CPA) et la Connecticut Data Privacy Act (CTDPA). Lorsque votre navigateur envoie un signal GPC, nous désactivons automatiquement tout suivi non essentiel — y compris les analyses et la relecture de sessions — indépendamment de toute préférence de cookies antérieure.",
       "p2": "Nous respectons également le signal Do Not Track (DNT) du navigateur. Bien que DNT ne soit plus maintenu comme standard web par le W3C, nous le traitons de manière identique au GPC par bonne pratique.",
       "p3": "Si vous désactivez le GPC ou DNT dans votre navigateur, vous pouvez mettre à jour vos préférences de cookies en utilisant le bouton « Paramètres des cookies » en bas de page."
+    },
+    "pecrCompliance": {
+      "heading": "Conformité aux PECR du Royaume-Uni",
+      "p1": "En plus du RGPD britannique, notre utilisation de cookies et de technologies de stockage similaires est conforme aux Règlements sur la vie privée et les communications électroniques de 2003 (PECR), spécifiquement le Règlement 6.",
+      "p2": "En vertu des PECR, nous sommes tenus d’obtenir votre consentement avant de placer des cookies non essentiels ou d’accéder à des informations non essentielles sur votre appareil. C’est pourquoi nous affichons une bannière de cookies lors de votre première visite.",
+      "p3": "Les <b>éléments strictement nécessaires</b> (état du consentement, préférence linguistique, cache du Service Worker) sont exemptés de l’exigence de consentement car ils sont essentiels pour fournir un service que vous avez explicitement demandé.",
+      "p4": "Les <b>éléments non essentiels</b> (analytique, surveillance des erreurs, replay de session) ne sont activés qu’après votre consentement affirmatif. Si vous refusez, ces catégories restent entièrement désactivées.",
+      "p5": "Notre mécanisme de consentement est conçu pour respecter les directives de l’ICO : pas de cases pré-cochées, pas de « murs de cookies », révocation facile à tout moment et informations claires sur chaque catégorie."
     }
   },
   "Eula": {
@@ -1237,7 +1316,28 @@
       "address": "<b>Address:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom",
       "responseTime": "Nous répondons généralement sous 48 heures."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "consumerRights": {
+      "heading": "Vos Droits de Consommateur",
+      "intro": "Si vous êtes un consommateur au Royaume-Uni, vous bénéficiez de droits légaux en vertu de la <b>Loi sur les Droits des Consommateurs de 2015</b> et des <b>Règlements sur les Contrats de Consommation (Information, Annulation et Frais Supplémentaires) de 2013</b>. Rien dans le présent Accord de Licence n’exclut ni ne limite ces droits.",
+      "qualityHeading": "Normes de Contenu Numérique",
+      "qualityP1": "Conformément à la Loi sur les Droits des Consommateurs de 2015, le contenu numérique fourni par LumenLingo doit être :",
+      "qualityLi1": "<b>De qualité satisfaisante</b> — exempt de défauts, sûr et durable, compte tenu de toute description, du prix et de toutes les autres circonstances pertinentes",
+      "qualityLi2": "<b>Apte à un usage particulier</b> — adapté à tout usage que vous nous avez communiqué avant ou au moment de l’achat",
+      "qualityLi3": "<b>Conforme à la description</b> — correspondant à toute description que nous vous avons fournie, y compris les fonctionnalités indiquées sur notre site web et l’App Store",
+      "remediesHeading": "Vos Recours",
+      "remediesP1": "Si notre contenu numérique ne répond pas à ces normes, vous avez droit aux recours suivants :",
+      "remediesLi1": "<b>Réparation ou remplacement</b> — nous corrigerons le défaut ou fournirons un remplacement sans frais pour vous, dans un délai raisonnable et sans inconvénient majeur",
+      "remediesLi2": "<b>Réduction de prix</b> — si la réparation ou le remplacement n’est pas possible, ou n’est pas effectué dans un délai raisonnable, vous pouvez avoir droit à une réduction de prix (jusqu’au montant total)",
+      "remediesLi3": "<b>Droit au remboursement</b> — pour un contenu défectueux au moment de la fourniture, vous pouvez avoir droit à un remboursement total ou partiel",
+      "coolingOffHeading": "Délai de Rétractation de 14 Jours",
+      "coolingOffP1": "En vertu des Règlements sur les Contrats de Consommation de 2013, vous disposez d’un <b>délai de rétractation de 14 jours</b> à compter de la date d’achat pendant lequel vous pouvez annuler et recevoir un remboursement intégral, sans avoir à donner de motif.",
+      "coolingOffP2": "LumenLingo étant distribué via l’App Store d’Apple, le délai de rétractation est géré par Apple conformément à ses politiques de remboursement. Si vous souhaitez exercer ce droit, veuillez demander un remboursement auprès d’Apple.",
+      "refundsHeading": "Remboursements via Apple",
+      "refundsP1": "Tous les achats intégrés et abonnements LumenLingo sont traités par <b>Apple</b> en tant que prestataire de paiement. Les demandes de remboursement sont gérées par Apple conformément à ses politiques.",
+      "refundsP2": "Pour demander un remboursement, rendez-vous sur reportaproblem.apple.com ou contactez l’assistance Apple. LumenShore Ltd soutient pleinement ce processus et coopérera avec Apple pour toute demande de remboursement.",
+      "statutory": "<b>Rien dans le présent Accord de Licence n’affecte vos droits légaux en tant que consommateur.</b> En cas de conflit entre le présent Accord et vos droits légaux, vos droits légaux prévaudront."
+    }
   },
   "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
   "DataRequest": {

@@ -60,6 +60,8 @@ export default async function PrivacyPage({
     { id: 'app-data', text: t('appData.heading'), level: 2 },
     { id: 'what-we-dont-collect', text: t('whatWeDontCollect.heading'), level: 2 },
     { id: 'legal-basis', text: t('legalBasis.heading'), level: 2 },
+    { id: 'uk-data-protection', text: t('ukDataProtection.heading'), level: 2 },
+    { id: 'electronic-communications', text: t('electronicComms.heading'), level: 2 },
     { id: 'data-flow', text: t('dataFlow.heading'), level: 2 },
     { id: 'how-we-use', text: t('howWeUse.heading'), level: 2 },
     { id: 'data-storage', text: t('dataStorage.heading'), level: 2 },
@@ -72,6 +74,7 @@ export default async function PrivacyPage({
     { id: 'ccpa-notice', text: t('ccpaNotice.heading'), level: 2 },
     { id: 'your-rights', text: t('yourRights.heading'), level: 2 },
     { id: 'california-rights', text: t('yourRights.californiaHeading'), level: 2 },
+    { id: 'gpc-signals', text: t('gpcSignals.heading'), level: 2 },
     { id: 'policy-updates', text: t('policyUpdates.heading'), level: 2 },
     { id: 'contact-us', text: t('contactUs.heading'), level: 2 },
   ];
@@ -226,6 +229,77 @@ export default async function PrivacyPage({
                     <li>{t.rich('legalBasis.contractLi2', richTags)}</li>
                     <li>{t.rich('legalBasis.contractLi3', richTags)}</li>
                   </ul>
+                </section>
+
+                {/* ── UK Data Protection ── */}
+                <section id="uk-data-protection">
+                  <h2>{t('ukDataProtection.heading')}</h2>
+                  <p>{t('ukDataProtection.intro')}</p>
+
+                  <h3>{t('ukDataProtection.controllerHeading')}</h3>
+                  <p>{t('ukDataProtection.controllerP1')}</p>
+                  <ul>
+                    <li>{t.rich('ukDataProtection.controllerLi1', richTags)}</li>
+                    <li>{t.rich('ukDataProtection.controllerLi2', richTags)}</li>
+                    <li>{t.rich('ukDataProtection.controllerLi3', richTags)}</li>
+                    <li>{t.rich('ukDataProtection.controllerLi4', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('ukDataProtection.dplHeading')}</h3>
+                  <p>{t('ukDataProtection.dplP1')}</p>
+                  <p>{t.rich('ukDataProtection.dplP2', richTags)}</p>
+                  <p>{t.rich('ukDataProtection.dplP3', { emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com">{chunks}</a> })}</p>
+
+                  <h3>{t('ukDataProtection.icoHeading')}</h3>
+                  <p>{t.rich('ukDataProtection.icoP1', { icoLink: (chunks: React.ReactNode) => <a href="https://ico.org.uk/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</p>
+                  <p>{t('ukDataProtection.icoP2')}</p>
+
+                  <h3>{t('ukDataProtection.adequacyHeading')}</h3>
+                  <p>{t('ukDataProtection.adequacyP1')}</p>
+                  <p>{t('ukDataProtection.adequacyP2')}</p>
+                  <p>{t.rich('ukDataProtection.adequacyP3', { transfersLink: (chunks: React.ReactNode) => <a href="#international-transfers">{chunks}</a> })}</p>
+
+                  <h3>{t('ukDataProtection.specialCategoryHeading')}</h3>
+                  <p>{t('ukDataProtection.specialCategoryP1')}</p>
+                  <p>{t('ukDataProtection.specialCategoryP2')}</p>
+
+                  <h3>{t('ukDataProtection.complaintHeading')}</h3>
+                  <p>{t.rich('ukDataProtection.complaintP1', { emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com">{chunks}</a> })}</p>
+                  <p>{t('ukDataProtection.complaintP2')}</p>
+                  <ul>
+                    <li>{t.rich('ukDataProtection.complaintLi1', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, icoComplaintLink: (chunks: React.ReactNode) => <a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
+                    <li>{t.rich('ukDataProtection.complaintLi2', richTags)}</li>
+                    <li>{t.rich('ukDataProtection.complaintLi3', richTags)}</li>
+                  </ul>
+                </section>
+
+                {/* ── Electronic Communications (UK PECR) ── */}
+                <section id="electronic-communications">
+                  <h2>{t('electronicComms.heading')}</h2>
+                  <p>{t('electronicComms.intro')}</p>
+
+                  <h3>{t('electronicComms.cookieHeading')}</h3>
+                  <p>{t('electronicComms.cookieP1')}</p>
+                  <ul>
+                    <li>{t.rich('electronicComms.cookieLi1', richTags)}</li>
+                    <li>{t.rich('electronicComms.cookieLi2', richTags)}</li>
+                    <li>{t('electronicComms.cookieLi3')}</li>
+                    <li>{t.rich('electronicComms.cookieLi4', richTags)}</li>
+                  </ul>
+                  <p>{t.rich('electronicComms.cookieP2', { cookiePolicyLink: (chunks: React.ReactNode) => <a href={`/${locale}/cookies`}>{chunks}</a> })}</p>
+
+                  <h3>{t('electronicComms.newsletterHeading')}</h3>
+                  <p>{t('electronicComms.newsletterP1')}</p>
+                  <p>{t('electronicComms.newsletterP2')}</p>
+                  <ul>
+                    <li>{t.rich('electronicComms.newsletterLi1', richTags)}</li>
+                    <li>{t.rich('electronicComms.newsletterLi2', richTags)}</li>
+                    <li>{t('electronicComms.newsletterLi3')}</li>
+                  </ul>
+                  <p>{t('electronicComms.newsletterP3')}</p>
+
+                  <h3>{t('electronicComms.softOptInHeading')}</h3>
+                  <p>{t.rich('electronicComms.softOptInP1', richTags)}</p>
                 </section>
 
                 {/* ── Where Your Data Goes ── */}
@@ -464,7 +538,7 @@ export default async function PrivacyPage({
                     <li>{t('yourRights.gdprLi4')}</li>
                     <li>{t('yourRights.gdprLi5')}</li>
                     <li>{t('yourRights.gdprLi6')}</li>
-                    <li>{t('yourRights.gdprLi7')}</li>
+                    <li>{t.rich('yourRights.gdprLi7', { icoLink: (chunks: React.ReactNode) => <a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
                   </ul>
                   <h3>{t('yourRights.ccpaHeading')}</h3>
                   <ul>

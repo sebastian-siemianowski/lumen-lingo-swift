@@ -61,6 +61,7 @@ export default async function TermsPage({
     { id: 'user-content', text: t('userContent.heading'), level: 2 },
     { id: 'disclaimers', text: t('disclaimers.heading'), level: 2 },
     { id: 'limitation-of-liability', text: t('limitationOfLiability.heading'), level: 2 },
+    { id: 'consumer-rights', text: t('consumerRights.heading'), level: 2 },
     { id: 'aggregate-data', text: t('aggregateData.heading'), level: 2 },
     { id: 'termination', text: t('termination.heading'), level: 2 },
     { id: 'governing-law', text: t('governingLaw.heading'), level: 2 },
@@ -195,6 +196,38 @@ export default async function TermsPage({
                     <li>{t('limitationOfLiability.li4')}</li>
                   </ul>
                   <p>{t('limitationOfLiability.cap')}</p>
+                </section>
+
+                {/* ── Consumer Rights (UK CRA 2015) ── */}
+                <section id="consumer-rights">
+                  <h2>{t('consumerRights.heading')}</h2>
+                  <p>{t.rich('consumerRights.intro', richTags)}</p>
+
+                  <h3>{t('consumerRights.qualityHeading')}</h3>
+                  <p>{t('consumerRights.qualityP1')}</p>
+                  <ul>
+                    <li>{t.rich('consumerRights.qualityLi1', richTags)}</li>
+                    <li>{t.rich('consumerRights.qualityLi2', richTags)}</li>
+                    <li>{t.rich('consumerRights.qualityLi3', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('consumerRights.remediesHeading')}</h3>
+                  <p>{t('consumerRights.remediesP1')}</p>
+                  <ul>
+                    <li>{t.rich('consumerRights.remediesLi1', richTags)}</li>
+                    <li>{t.rich('consumerRights.remediesLi2', richTags)}</li>
+                    <li>{t.rich('consumerRights.remediesLi3', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('consumerRights.coolingOffHeading')}</h3>
+                  <p>{t.rich('consumerRights.coolingOffP1', richTags)}</p>
+                  <p>{t('consumerRights.coolingOffP2')}</p>
+
+                  <h3>{t('consumerRights.refundsHeading')}</h3>
+                  <p>{t.rich('consumerRights.refundsP1', richTags)}</p>
+                  <p>{t('consumerRights.refundsP2')}</p>
+
+                  <p>{t.rich('consumerRights.statutory', richTags)}</p>
                 </section>
 
                 {/* ── Aggregate Data ── */}

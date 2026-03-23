@@ -58,6 +58,8 @@ export default async function CookiePolicyPage({
     { id: 'cookies', text: t('cookies.heading'), level: 2 },
     { id: 'third-party', text: t('thirdParty.heading'), level: 2 },
     { id: 'manage', text: t('manage.heading'), level: 2 },
+    { id: 'gpc', text: t('gpc.heading'), level: 2 },
+    { id: 'pecr-compliance', text: t('pecrCompliance.heading'), level: 2 },
     { id: 'updates', text: t('updates.heading'), level: 2 },
     { id: 'contact', text: t('contact.heading'), level: 2 },
   ];
@@ -254,6 +256,16 @@ export default async function CookiePolicyPage({
                   <p>{t('gpc.p1')}</p>
                   <p>{t('gpc.p2')}</p>
                   <p>{t('gpc.p3')}</p>
+                </section>
+
+                {/* UK PECR Compliance */}
+                <section id="pecr-compliance">
+                  <h2>{t('pecrCompliance.heading')}</h2>
+                  <p>{t('pecrCompliance.p1')}</p>
+                  <p>{t('pecrCompliance.p2')}</p>
+                  <p>{t.rich('pecrCompliance.p3', richTags)}</p>
+                  <p>{t.rich('pecrCompliance.p4', richTags)}</p>
+                  <p>{t('pecrCompliance.p5')}</p>
                 </section>
 
                 {/* Updates */}
