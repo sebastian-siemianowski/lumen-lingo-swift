@@ -4107,7 +4107,7 @@
 | **P0** | Epic 20: VAT, Tax & Financial Compliance | Not Started | Large |
 | **P1** | Epic 5: CCPA / US Privacy Laws | Not Started | Medium |
 | **P1** | Epic 6: UK-Specific Compliance | Not Started | Medium |
-| **P1** | Epic 8: IP & Content Protection | Not Started | Small |
+| **P1** | Epic 8: IP & Content Protection | Not Started | Medium |
 | **P1** | Epic 10: Legal Page Internationalization | Not Started | Large |
 | **P1** | Epic 12: Security & Breach Preparedness | Not Started | Medium |
 | **P1** | Epic 13: Email Marketing Compliance | Not Started (blocked by ESP) | Small |
@@ -4127,8 +4127,8 @@
 | Metric | Count |
 |---|---|
 | **Epics** | 24 |
-| **Stories** | 108 |
-| **Subtasks** | 609 |
+| **Stories** | 114 |
+| **Subtasks** | 648 |
 | **P0 (Critical)** | 10 epics |
 | **P1 (High)** | 11 epics |
 | **P2 (Medium)** | 3 epics |
@@ -4147,7 +4147,7 @@
 | **Incorporated** | 26 May 2015 |
 | **VAT number** | GB 270411929 |
 | **Contact email** | hello@lumenshore.com |
-| **Bundle ID** | com.sebastiansiemianowski.lumenlingo |
+| **Bundle ID** | com.lumenlingo.app |
 | **Website** | lumenlingo.com |
 
 ---
@@ -4247,8 +4247,20 @@ en, es, fr, de, ja, zh, ar, pl, uk, pt
 | **Apple** | HIG / Accessibility | Epics 6, 22 |
 | **Global** | WCAG 2.1 AA / EN 301 549 | Epic 22 |
 | **Global** | DMCA / Copyright | Epic 8 |
+| **Global** | Anti-Piracy & Competitive Use | Epic 8 |
 | **Global** | GDPR Art. 25 (Privacy by Design) | Epic 4 |
 | **Global** | GDPR Art. 28 (Sub-Processor DPAs) | Epic 12 |
-| **Global** | Arbitration / Class Action Waiver | Epic 14 |
+| **Global** | Arbitration / Class Action Waiver (US) | Epic 14 |
+| **Global** | Class / Collective Action Waiver (Non-US) | Epic 14 |
 | **Global** | Limitation of Liability | Epic 14 |
 | **Global** | Refund & Cancellation | Epic 14 |
+| **Global** | Service Discontinuation & Business Transfer | Epic 14 |
+| **Global** | Regulatory Change Liability Shield | Epic 14 |
+| **Global** | Account Security & Single-User License | Epic 14 |
+| **Global** | Aggregate & De-identified Data Rights | Epic 1 |
+| **UK** | Contracts (Rights of Third Parties) Act 1999 | Epic 14 |
+| **UK** | Computer Misuse Act 1990 | Epic 8 |
+| **UK** | Copyright, Designs and Patents Act 1988 | Epic 8 |
+| **UK** | Insolvency Act 1986 | Epic 14 |
+| **UK** | Group Litigation Orders (CPR 19.III) | Epic 14 |
+| **EU** | Representative Actions Directive (2020/1828) | Epic 14 |

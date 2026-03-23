@@ -6,7 +6,7 @@
 
 **LumenLingo** is a language-learning iOS app (iPad + iPhone) ported from a React/Vite web app. It features three game modes—Flashcards, Grammar, and Word Builder—with stunning full-quality cosmic backgrounds, breathing orb animations, and quantum-flow aurora effects.
 
-- **Bundle ID**: `com.sebastiansiemianowski.lumenlingo`
+- **Bundle ID**: `com.lumenlingo.app`
 - **Min deployment**: iOS 17.0
 - **Architecture**: MVVM with SwiftUI + `@Observable` macro
 - **Persistence**: SwiftData

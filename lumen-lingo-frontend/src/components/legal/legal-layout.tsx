@@ -14,7 +14,7 @@ interface LegalTOCProps {
   items: TOCItem[];
 }
 
-export function LegalTOC({ items }: LegalTOCProps) {
+export function LegalTOC({ items, label }: LegalTOCProps & { label?: string }) {
   const [activeId, setActiveId] = useState<string>('');
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export function LegalTOC({ items }: LegalTOCProps) {
     <nav aria-label="Table of contents" className="hidden xl:block">
       <div className="sticky top-28">
         <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/30">
-          On this page
+          {label ?? 'On this page'}
         </p>
         <ul className="space-y-1 border-s border-white/[0.06]">
           {items.map((item) => (
@@ -77,7 +77,7 @@ export function LegalTOC({ items }: LegalTOCProps) {
   );
 }
 
-export function DownloadPDFButton() {
+export function DownloadPDFButton({ label }: { label?: string }) {
   return (
     <button
       onClick={() => window.print()}
@@ -86,7 +86,7 @@ export function DownloadPDFButton() {
       <svg viewBox="0 0 16 16" fill="none" className="h-3.5 w-3.5" aria-hidden>
         <path d="M2 10v3a1 1 0 001 1h10a1 1 0 001-1v-3M8 2v8m0 0l-3-3m3 3l3-3" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
-      Download as PDF
+      {label ?? 'Download as PDF'}
     </button>
   );
 }
