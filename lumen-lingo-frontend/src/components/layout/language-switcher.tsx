@@ -14,6 +14,10 @@ const localeFlags: Record<Locale, string> = {
   ja: '🇯🇵',
   de: '🇩🇪',
   pt: '🇧🇷',
+  pl: '🇵🇱',
+  ar: '🇸🇦',
+  zh: '🇨🇳',
+  uk: '🇺🇦',
 };
 
 export function LanguageSwitcher() {

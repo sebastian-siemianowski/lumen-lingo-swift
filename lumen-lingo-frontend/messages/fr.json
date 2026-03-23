@@ -23,7 +23,11 @@
     "fr": "Français",
     "ja": "日本語",
     "de": "Deutsch",
-    "pt": "Português"
+    "pt": "Português",
+    "pl": "Polski",
+    "ar": "العربية",
+    "zh": "中文",
+    "uk": "Українська"
   },
   "Hero": {
     "badge": "Disponible sur iOS",

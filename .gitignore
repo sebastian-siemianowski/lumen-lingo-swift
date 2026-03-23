@@ -183,3 +183,5 @@ htmlcov/
 /test_unified_pit_baseline.json
 /src/data/calibration_records/
 
+/lumen-lingo-frontend/test-results/
+/lumen-lingo-frontend/e2e/screenshots/

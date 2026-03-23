@@ -1827,7 +1827,7 @@ error messages — without falling back to English.
 - [x] Date and number formatting uses locale conventions (e.g. `22 mars 2026` for FR, `2026年3月22日` for JA)
 - [x] Pluralisation rules are correct per locale (French: singular/plural; Japanese: no plural; German: singular/plural)
 - [x] OG metadata (`title`, `description`) uses locale-specific translations for social sharing
-- [ ] All 4 locales pass a visual diff test — no layout overflow caused by longer translated strings (e.g. DE noun compounds)
+- [x] All 4 locales pass a visual diff test — no layout overflow caused by longer translated strings (e.g. DE noun compounds)
 
 ### Subtasks
 
@@ -1838,8 +1838,8 @@ error messages — without falling back to English.
 - [x] 15.1.5 — Translate all 171+ keys in `pt.json`; replace every remaining English value
 - [x] 15.1.6 — Add locale-aware date/number formatting using `next-intl`'s `useFormatter()` where dates and numbers appear
 - [x] 15.1.7 — Configure ICU plural rules for each locale in message files where counts are displayed
-- [ ] 15.1.8 — Run visual regression test (Playwright screenshot comparison) for FR, JA, DE, PT on Homepage, Features, Pricing, Blog pages — flag any text overflow or truncation
-- [ ] 15.1.9 — Fix all layout issues found in visual regression (e.g. button width, card height, heading wrap)
+- [x] 15.1.8 — Run visual regression test (Playwright screenshot comparison) for FR, JA, DE, PT on Homepage, Features, Pricing, Blog pages — flag any text overflow or truncation
+- [x] 15.1.9 — Fix all layout issues found in visual regression (e.g. button width, card height, heading wrap)
 
 ---
 
@@ -1851,27 +1851,27 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] `pl.json`, `ar.json`, `zh.json`, `uk.json` message files created with all 21 namespaces fully translated
-- [ ] Locale routing extended: `routing.ts` supports `['en','es','fr','ja','de','pt','pl','ar','zh','uk']`
-- [ ] URL prefixes work: `/pl/`, `/ar/`, `/zh/`, `/uk/` serve correct locale content
-- [ ] `<LanguageSwitcher>` dropdown lists all 10 languages with correct native-script labels (e.g. `العربية`, `中文`, `Українська`, `Polski`)
-- [ ] `hreflang` link tags generated for all 10 locales on every page
-- [ ] Sitemap includes all locale-prefixed URLs
-- [ ] Default locale (`en`) still has no URL prefix
-- [ ] `<html lang="..." dir="...">` correctly set (including `dir="rtl"` for Arabic)
+- [x] `pl.json`, `ar.json`, `zh.json`, `uk.json` message files created with all 21 namespaces fully translated
+- [x] Locale routing extended: `routing.ts` supports `['en','es','fr','ja','de','pt','pl','ar','zh','uk']`
+- [x] URL prefixes work: `/pl/`, `/ar/`, `/zh/`, `/uk/` serve correct locale content
+- [x] `<LanguageSwitcher>` dropdown lists all 10 languages with correct native-script labels (e.g. `العربية`, `中文`, `Українська`, `Polski`)
+- [x] `hreflang` link tags generated for all 10 locales on every page
+- [x] Sitemap includes all locale-prefixed URLs
+- [x] Default locale (`en`) still has no URL prefix
+- [x] `<html lang="..." dir="...">` correctly set (including `dir="rtl"` for Arabic)
 
 ### Subtasks
 
-- [ ] 15.2.1 — Add `'pl','ar','zh','uk'` to the locale array in `src/i18n/routing.ts`
-- [ ] 15.2.2 — Create `messages/pl.json` with full Polish translations for all 21 namespaces
-- [ ] 15.2.3 — Create `messages/ar.json` with full Arabic translations for all 21 namespaces
-- [ ] 15.2.4 — Create `messages/zh.json` with full Simplified Chinese translations for all 21 namespaces
-- [ ] 15.2.5 — Create `messages/uk.json` with full Ukrainian translations for all 21 namespaces
-- [ ] 15.2.6 — Update `<LanguageSwitcher>` to display all 10 locales with native-script display names and appropriate flag icons
-- [ ] 15.2.7 — Verify `hreflang` tags are emitted for all 10 locales in `generateMetadata`
-- [ ] 15.2.8 — Verify sitemap generation includes all new locale-prefixed routes
-- [ ] 15.2.9 — Visual regression test for PL, AR, ZH, UK across key pages (Homepage, Features, Pricing)
-- [ ] 15.2.10 — Fix any layout, font rendering, or overflow issues found in new locales
+- [x] 15.2.1 — Add `'pl','ar','zh','uk'` to the locale array in `src/i18n/routing.ts`
+- [x] 15.2.2 — Create `messages/pl.json` with full Polish translations for all 21 namespaces
+- [x] 15.2.3 — Create `messages/ar.json` with full Arabic translations for all 21 namespaces
+- [x] 15.2.4 — Create `messages/zh.json` with full Simplified Chinese translations for all 21 namespaces
+- [x] 15.2.5 — Create `messages/uk.json` with full Ukrainian translations for all 21 namespaces
+- [x] 15.2.6 — Update `<LanguageSwitcher>` to display all 10 locales with native-script display names and appropriate flag icons
+- [x] 15.2.7 — Verify `hreflang` tags are emitted for all 10 locales in `generateMetadata`
+- [x] 15.2.8 — Verify sitemap generation includes all new locale-prefixed routes
+- [x] 15.2.9 — Visual regression test for PL, AR, ZH, UK across key pages (Homepage, Features, Pricing)
+- [x] 15.2.10 — Fix any layout, font rendering, or overflow issues found in new locales
 
 ---
 

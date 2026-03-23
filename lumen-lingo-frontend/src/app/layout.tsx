@@ -7,7 +7,7 @@ import { APP_STORE_ID } from '@/lib/appStoreConfig';
 import './globals.css';
 
 const inter = Inter({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext', 'cyrillic'],
   variable: '--font-inter',
   display: 'swap',
 });
@@ -41,7 +41,7 @@ export default async function RootLayout({
   const locale = await getLocale();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}>
       <body className="min-h-full bg-background text-foreground">
         {children}
         <Analytics />

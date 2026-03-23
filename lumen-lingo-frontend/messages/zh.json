@@ -1,0 +1,375 @@
+{
+  "Metadata": {
+    "title": "LumenLingo — 通过沉浸式体验掌握语言",
+    "titleTemplate": "{title} — LumenLingo",
+    "description": "下载 LumenLingo，iPhone 上的高端语言学习应用。精美闪卡、自适应练习、环境音效等。App Store 免费下载。"
+  },
+  "Nav": {
+    "features": "功能",
+    "pricing": "定价",
+    "blog": "博客",
+    "about": "关于",
+    "download": "下载",
+    "downloadFree": "免费下载",
+    "skipToContent": "跳转到内容",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "mobileNav": "移动端导航"
+  },
+  "LanguageSwitcher": {
+    "label": "语言",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "ja": "日本語",
+    "de": "Deutsch",
+    "pt": "Português",
+    "pl": "Polski",
+    "ar": "العربية",
+    "zh": "中文",
+    "uk": "Українська"
+  },
+  "Hero": {
+    "badge": "iOS 现已上线",
+    "headline": "通过沉浸式体验<gradient>掌握语言</gradient>",
+    "subheadline": "语言学习的视觉之旅。精美闪卡、环境音效和呼吸练习——让每一次学习都如同冥想般宁静。",
+    "watchDemo": "观看演示",
+    "trust": {
+      "languages": "9 种语言",
+      "pairs": "25+ 语言对",
+      "soundscapes": "12 个环境音景",
+      "freeToStart": "免费开始"
+    }
+  },
+  "FeatureShowcase": {
+    "heading": "掌握新语言所需的一切",
+    "description": "六大强力支柱，旨在彻底改变你学习、练习和记忆新语言的方式。",
+    "immersiveFlashcards": "沉浸式闪卡",
+    "immersiveFlashcardsDesc": "精心设计的卡片，配合间隔重复、滑动手势和视觉反馈，让记忆变得毫不费力。",
+    "smartPractice": "智能练习",
+    "smartPracticeDesc": "三种独特模式——选择题、单词构建和语法测验——根据你的水平自适应调整，保持学习动力。",
+    "richSoundscapes": "丰富音景",
+    "richSoundscapesDesc": "12 种环境音效——从热带雨林到深邃太空——减少焦虑，提升学习专注力。",
+    "breathingOrbs": "呼吸光球",
+    "breathingOrbsDesc": "引导式呼吸练习，配合迷人的视觉光球，在练习前后平静心灵。",
+    "languagePairs": "25+ 语言对",
+    "languagePairsDesc": "跨 9 种语言任意方向学习。从英语学西班牙语，从德语学日语，或任何组合。",
+    "progressTracking": "进度追踪",
+    "progressTrackingDesc": "详细分析、每日连续记录、经验值里程碑和掌握指标，精确展示你的学习进展。"
+  },
+  "ScreenshotGallery": {
+    "heading": "为灵感而设计",
+    "description": "每个界面都经过精心打造。滑动浏览，感受让 LumenLingo 与众不同的细节之美。"
+  },
+  "Differentiators": {
+    "heading": "为什么选择 LumenLingo？",
+    "description": "不仅是语言应用——更是一种正念学习体验，设计精美且高效。",
+    "design": "令人惊叹的设计",
+    "designDesc": "每个像素都精心雕琢。深色模式优先、丝滑动画和宇宙美学，让学习体验更高端。",
+    "environments": "沉浸式环境",
+    "environmentsDesc": "12 个独特音景和动态背景，将你的学习时光变为冥想级体验。",
+    "practiceModes": "3 种独特练习模式",
+    "practiceModesDesc": "闪卡、语法测验和单词构建——每种都有独特机制、视觉反馈和自适应难度。",
+    "mindfulness": "视觉正念",
+    "mindfulnessDesc": "呼吸光球、环境音效和宁静视觉效果，减少焦虑，营造最佳学习心境。",
+    "fact1": "9 种语言",
+    "fact2": "25+ 语言对",
+    "fact3": "12 个音景",
+    "fact4": "3 种练习模式"
+  },
+  "CTA": {
+    "heading": "开始你的语言之旅 <gradient>今天</gradient>",
+    "description": "从 App Store 免费下载 LumenLingo。为认真学习者提供高级订阅方案。",
+    "scanToDownload": "扫码下载"
+  },
+  "Pricing": {
+    "badge": "简洁透明的定价",
+    "heading": "选择你的学习之路",
+    "description": "免费开始，准备好了再升级。每个方案都建立在上一个之上，核心功能永不丢失。",
+    "trialBadge": "免费试用 Royal 级权限 14 天",
+    "perMonth": "/月",
+    "free": "免费",
+    "getStarted": "免费开始",
+    "startTrial": "开始免费试用",
+    "upgrade": "立即升级",
+    "currentPlan": "当前方案",
+    "popular": "热门",
+    "tier": {
+      "free": {
+        "name": "Free",
+        "price": "¥0",
+        "features": [
+          "3 个语言对",
+          "所有练习模式（初级）",
+          "50 张闪卡套组",
+          "每日 30 分钟练习",
+          "基础进度追踪"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "¥68",
+        "features": [
+          "10 个语言对",
+          "解锁所有难度",
+          "无限闪卡套组",
+          "3 个音景",
+          "离线模式",
+          "详细分析"
+        ]
+      },
+      "elite": {
+        "name": "Elite",
+        "price": "¥128",
+        "features": [
+          "所有语言对",
+          "全部 12 个音景",
+          "呼吸光球",
+          "星云背景",
+          "优先支持",
+          "2 倍经验加成"
+        ]
+      },
+      "royal": {
+        "name": "Royal",
+        "price": "¥648",
+        "features": [
+          "Elite 全部功能",
+          "Quantum Flow 背景",
+          "专属 Royal 徽章",
+          "新功能抢先体验",
+          "终身价格锁定",
+          "创始人直接支持"
+        ]
+      }
+    },
+    "comparison": {
+      "heading": "对比所有功能",
+      "description": "每个方案都建立在前一个之上。更高方案包含所有低级方案的功能。"
+    },
+    "faq": {
+      "heading": "常见问题",
+      "description": "关于 LumenLingo 定价和订阅的一切须知。"
+    }
+  },
+  "Features": {
+    "badge": "深度探索",
+    "heading": "为认真学习者打造",
+    "description": "LumenLingo 的每项功能都基于认知科学设计。从间隔重复到沉浸式环境，探索我们的与众不同。",
+    "badges": [
+      "iOS 原生",
+      "手工打造 UI",
+      "科学支撑"
+    ],
+    "walkthroughs": {
+      "heading": "实际体验",
+      "subheading": "学习的感觉",
+      "description": "定义 LumenLingo 之旅的三大核心体验。"
+    },
+    "languagePairs": {
+      "heading": "语言对",
+      "subheading": "9 种语言，25+ 种组合",
+      "description": "任意方向学习。悬停卡片查看示例闪卡。",
+      "comingSoon": "即将推出",
+      "comingSoonDesc": "更多语言和语言对即将上线。加入抢先体验，第一时间获知。"
+    }
+  },
+  "About": {
+    "heading": "关于 LumenShore",
+    "description": "应用背后的故事，我们的驱动力，以及我们的前进方向。",
+    "values": {
+      "beauty": "万物之美",
+      "beautyDesc": "我们相信心灵工具应当是美的。每个像素、每段动画、每次交互都为愉悦而设计。",
+      "science": "科学支撑的学习",
+      "scienceDesc": "间隔重复、主动回忆和交错学习——植根于数十年认知科学研究。",
+      "privacy": "隐私至上",
+      "privacyDesc": "你的数据留在你的设备和 iCloud 中。我们不出售数据、不追踪行为、不投放广告。",
+      "accessible": "人人可及",
+      "accessibleDesc": "完整支持 VoiceOver、Dynamic Type 和 Reduce Motion。语言学习应该面向所有人。"
+    },
+    "timeline": {
+      "spark": "火花",
+      "sparkDesc": "LumenShore 因一个简单信念而生：语言学习应用可以同时做到美丽、正念和高效。",
+      "beta": "首次内测",
+      "betaDesc": "LumenLingo 首版发送给内测用户。闪卡、音景和核心学习循环初具雏形。",
+      "launch": "App Store 上线",
+      "launchDesc": "LumenLingo 在 App Store 全球上线，提供 9 种语言、25+ 语言对和五级会员模型。",
+      "growing": "成长与进化",
+      "growingDesc": "新语言、新功能，以及越来越多的学习者发现更美的学习方式。"
+    }
+  },
+  "Contact": {
+    "heading": "有疑问？",
+    "description": "在常见问题中找不到答案？我们很乐意听到你的声音。",
+    "email": "hello@lumenshore.com",
+    "responseTime": "我们通常在 48 小时内回复",
+    "faqHeading": "常见问题",
+    "faqDescription": "关于 LumenLingo 最常见问题的快速解答。"
+  },
+  "Download": {
+    "heading": "LumenLingo",
+    "description": "通过沉浸式体验掌握语言。精美、正念、高效。",
+    "meta": "免费开始 · 无需注册 · iPhone 和 iPad",
+    "benefits": {
+      "flashcards": "精美闪卡",
+      "flashcardsDesc": "滑动式卡片，华丽视觉效果，内置间隔重复。",
+      "practice": "自适应练习",
+      "practiceDesc": "三种模式根据你的水平自动调整——从入门到高级。",
+      "soundscapes": "环境音效",
+      "soundscapesDesc": "12 种沉浸式环境，重新定义你的学习体验。"
+    },
+    "stats": {
+      "languages": "9 种语言",
+      "soundscapes": "12 个音景",
+      "practiceModes": "3 种练习模式",
+      "flashcards": "∞ 闪卡"
+    },
+    "upgradeNote": "免费开始。Pro、Elite 和 Royal 方案可在应用内升级。",
+    "qr": {
+      "heading": "扫码下载",
+      "description": "用 iPhone 摄像头扫描二维码，从 App Store 下载 LumenLingo。",
+      "fallback": "或在手机上访问 lumenlingo.com/open"
+    },
+    "showcase": {
+      "heading": "为愉悦而设计",
+      "description": "每个交互都精心打造。丝滑动画、精妙触感反馈和充满生命力的界面。"
+    }
+  },
+  "Newsletter": {
+    "label": "电子邮箱",
+    "placeholder": "your@email.com",
+    "subscribe": "订阅",
+    "subscribing": "订阅中…",
+    "success": "欢迎加入 LumenShore 社区！请查看收件箱。",
+    "errorInvalid": "请输入有效的电子邮箱地址。",
+    "errorGeneric": "出了点问题。请重试。",
+    "gdpr": "我们尊重你的隐私。随时可以取消订阅。",
+    "blogCTA": {
+      "heading": "喜欢这篇文章？",
+      "description": "获取语言学习洞见、应用更新和学习技巧，直接发送到你的邮箱。"
+    }
+  },
+  "EarlyAccess": {
+    "badge": "抢先体验",
+    "heading": "成为最早的用户",
+    "description": "LumenLingo 正在扩展。加入列表获取抢先体验和独家发布优惠。",
+    "socialProof": "{count, plural, other {# 位学习者已在等待}}",
+    "noCreditCard": "无需信用卡",
+    "privacyProtected": "隐私受保护",
+    "freeToJoin": "免费加入",
+    "form": {
+      "emailLabel": "电子邮箱",
+      "emailPlaceholder": "your@email.com",
+      "languageLabel": "你想学什么语言？",
+      "languagePlaceholder": "选择语言…",
+      "submit": "加入等待列表",
+      "privacy": "无垃圾邮件。我们尊重你的隐私。",
+      "errorEmail": "请输入有效的电子邮箱地址。",
+      "errorLanguage": "请选择你想学的语言。",
+      "errorGeneric": "出了点问题。请重试。",
+      "successHeading": "你已加入列表！",
+      "successDescription": "抢先体验开放时我们会通知你。"
+    },
+    "languages": [
+      "西班牙语",
+      "法语",
+      "德语",
+      "意大利语",
+      "葡萄牙语",
+      "日语",
+      "韩语",
+      "普通话",
+      "其他"
+    ],
+    "referral": {
+      "position": "第 {position} 位，共 {total} 位学习者",
+      "shareHeading": "分享并提升排名",
+      "copy": "复制",
+      "copied": "已复制！",
+      "tellFriend": "告诉朋友：",
+      "shareText": "我刚加入了 LumenLingo 抢先体验列表！通过多感官沉浸掌握新语言。加入我：{url}",
+      "emailSubject": "加入 LumenLingo 抢先体验",
+      "twitter": "X（推特）",
+      "whatsapp": "WhatsApp",
+      "email": "邮件"
+    }
+  },
+  "Demo": {
+    "region": "互动闪卡演示",
+    "progress": "第 {current} 张，共 {total} 张",
+    "gotIt": "掌握了 ✓",
+    "skip": "跳过 ✗",
+    "tapToReveal": "点击翻转",
+    "english": "英语",
+    "swipeToContinue": "滑动继续",
+    "keySkip": "← 跳过",
+    "keyFlip": "空格翻转",
+    "keyGotIt": "→ 掌握了",
+    "completion": {
+      "amazing": "🎉 太棒了！",
+      "greatEffort": "👏 做得好！",
+      "keepGoing": "💪 继续加油！",
+      "description": "喜欢吗？真实体验更加出色——9 种语言、自适应学习、环境音效和数千张闪卡。",
+      "downloadFree": "免费下载",
+      "tryAgain": "再试一次"
+    }
+  },
+  "NotFound": {
+    "number": "404",
+    "heading": "迷失在宇宙中",
+    "description": "你要找的页面已飘向远方。让我们帮你找到方向。",
+    "searchPlaceholder": "搜索页面…",
+    "goHome": "返回首页",
+    "browseFeatures": "浏览功能",
+    "readBlog": "阅读博客",
+    "contactUs": "联系我们"
+  },
+  "Error": {
+    "heading": "发生了意外",
+    "description": "别担心——宇宙浩瀚，小波澜在所难免。让我们帮你回到正轨。",
+    "tryAgain": "重试",
+    "goHome": "返回首页"
+  },
+  "Offline": {
+    "heading": "你已离线",
+    "subheading": "但 LumenLingo 也支持离线使用！",
+    "description": "LumenLingo 应用在 Pro 及以上订阅下可以完美离线运行。下载它，永不错过练习机会。",
+    "retry": "重试连接",
+    "retrying": "重新连接中…",
+    "goHome": "返回首页"
+  },
+  "Footer": {
+    "brand": "LumenLingo",
+    "tagline": "通过多感官沉浸掌握新语言。精美闪卡、环境音效和适应你生活节奏的自适应练习。",
+    "sections": {
+      "Product": "产品",
+      "Company": "公司",
+      "Support": "支持"
+    },
+    "links": {
+      "features": "功能",
+      "pricing": "定价",
+      "howItWorks": "使用方法",
+      "reviews": "评价",
+      "about": "关于",
+      "blog": "博客",
+      "careers": "招聘",
+      "pressKit": "媒体资料",
+      "helpCentre": "帮助中心",
+      "contact": "联系我们",
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "accessibility": "无障碍"
+    },
+    "newsletter": {
+      "heading": "保持关注",
+      "subheading": "学习技巧、应用更新和社区亮点。"
+    },
+    "downloadAppStore": "从 App Store 下载",
+    "copyright": "LumenShore Ltd. 保留所有权利。",
+    "madeIn": "用心打造于英国"
+  },
+  "NetworkStatus": {
+    "offline": "你已离线——部分功能可能不可用"
+  }
+}
