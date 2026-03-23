@@ -376,6 +376,10 @@
 - [ ] 3.5.12 — Verify marketing URL works
 - [ ] 3.5.13 — Prepare App Review notes explaining any demo/test content
 - [ ] 3.5.14 — Ensure prod build has no debug UI, no mock auth (switch to real auth or remove mock data)
+- [ ] 3.5.15 — Verify PrivacyInfo.xcprivacy present and complete (Story 3.6) — hard rejection without it
+- [ ] 3.5.16 — Verify Apple trademark usage compliance (Story 3.8)
+- [ ] 3.5.17 — If SIWA implemented: verify Guideline 4.8 compliance (Story 11.4)
+- [ ] 3.5.18 — Run Xcode Privacy Report (Product → Generate Privacy Report) — resolve any warnings
 
 **Acceptance Criteria**:
 - Checklist completed with pass/fail for each item
@@ -3620,8 +3624,8 @@
 | Metric | Count |
 |---|---|
 | **Epics** | 24 |
-| **Stories** | 97 |
-| **Subtasks** | 537 |
+| **Stories** | 103 |
+| **Subtasks** | 577 |
 | **P0 (Critical)** | 10 epics |
 | **P1 (High)** | 11 epics |
 | **P2 (Medium)** | 3 epics |
