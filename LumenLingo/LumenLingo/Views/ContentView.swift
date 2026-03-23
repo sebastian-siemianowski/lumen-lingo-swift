@@ -23,6 +23,7 @@ struct ContentView: View {
     @State private var navigationPath = NavigationPath()
     @State private var showTrialEnded = false
     @State private var showTierOnboarding = false
+    @State private var showLegalConsent = false
 
     // Services (shared across all views)
     @State private var progressService: ProgressService?
@@ -125,6 +126,10 @@ struct ContentView: View {
             tierManager.validateState(profile: profile)
             tierManager.pullFromCloud(profile: profile)
             tierManager.startCloudSync(profile: profile)
+            // Check for legal consent — must accept current version before using the app
+            if profile?.legalConsentVersion != LegalConsentView.currentVersion {
+                showLegalConsent = true
+            }
             // Check for trial expiration on app launch
             if tierManager.checkTrialExpiration(profile: profile) {
                 showTrialEnded = true
@@ -176,6 +181,9 @@ struct ContentView: View {
         .environment(hapticsService)
         .environment(contentLoader)
         .environment(practiceTimeTracker)
+        .fullScreenCover(isPresented: $showLegalConsent) {
+            LegalConsentView()
+        }
         .fullScreenCover(isPresented: $showTrialEnded) {
             TrialEndedView()
         }

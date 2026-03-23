@@ -437,6 +437,30 @@ extension AppStrings {
         upgradeMessagePro: "أنت تتحدث لغة التقدم — كل درس يشكّل صوتك في العالم.",
         upgradeMessageElite: "كلماتك تحمل ثقل التفاني — التميّز يصبح لغتك الأم.",
         upgradeMessageRoyal: "توّجت رحلتك بالكلمات — لغة الأساطير ملكك.",
-        upgradeMessageTrial: "يبدأ فصل ملكي — القصة الكاملة لإمكاناتك اللغوية بانتظارك."
+        upgradeMessageTrial: "يبدأ فصل ملكي — القصة الكاملة لإمكاناتك اللغوية بانتظارك.",
+        // MARK: - Legal Consent
+        legalConsentTitle: "قبل أن نبدأ",
+        legalConsentSubtitle: "يرجى مراجعة سياساتنا لمتابعة استخدام LumenLingo",
+        privacyPolicyTitle: "سياسة الخصوصية",
+        termsOfServiceTitle: "شروط الخدمة",
+        legalVersion: "الإصدار 2.0",
+        legalLastUpdated: "آخر تحديث: ٢٣ مارس ٢٠٢٦",
+        legalPrivacySummary: "يتم تشغيل LumenLingo بواسطة LumenShore Ltd. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. تغطي هذه السياسة موقعنا الإلكتروني وتطبيق iOS.",
+        legalTermsSummary: "تحكم شروط الخدمة هذه استخدامك لتطبيق LumenLingo المحمول الذي تديره LumenShore Ltd. باستخدام LumenLingo، فإنك توافق على هذه الشروط.",
+        legalPrivacyHighlight1: "تبقى بيانات التعلم على جهازك وحساب iCloud الشخصي",
+        legalPrivacyHighlight2: "نستخدم Vercel Analytics بدون ملفات تعريف الارتباط",
+        legalPrivacyHighlight3: "يساعدنا Sentry في إصلاح الأخطاء (إعادة تشغيل الجلسة تتطلب موافقة)",
+        legalPrivacyHighlight4: "لا نبيع بياناتك الشخصية أبدًا لأطراف ثالثة",
+        legalTermsHighlight1: "مستويات مجانية ومميزة متاحة — الاشتراكات تُدار عبر Apple",
+        legalTermsHighlight2: "محتواك وتقدمك في التعلم ملك لك",
+        legalTermsHighlight3: "قد نستخدم بيانات مجمعة ومجهولة لتحسين المنتج",
+        legalTermsHighlight4: "يخضع لقوانين إنجلترا وويلز",
+        legalAcceptAll: "أوافق",
+        legalDecline: "رفض",
+        legalDeclineTitle: "هل أنت متأكد؟",
+        legalDeclineMessage: "يجب قبول سياسة الخصوصية وشروط الخدمة لاستخدام LumenLingo.",
+        legalDeclineConfirm: "رفض والخروج",
+        legalReadFull: "اقرأ السياسة كاملة",
+        legalScrollToAccept: "مرر للمراجعة"
     )
 }

@@ -96,8 +96,8 @@
 **So that** I understand exactly what data is collected across all touchpoints
 
 #### Subtasks:
-- [ ] 1.1.1 — Restructure `/privacy` page with two clear sections: "Website" and "iOS App"
-- [ ] 1.1.2 — Add Website Data Collection section covering:
+- [x] 1.1.1 — Restructure `/privacy` page with two clear sections: "Website" and "iOS App"
+- [x] 1.1.2 — Add Website Data Collection section covering:
   - Email addresses (newsletter signup, waitlist signup)
   - Language preferences (waitlist form)
   - UTM parameters (sessionStorage, campaign attribution)
@@ -105,14 +105,14 @@
   - Anonymous performance metrics (Vercel Speed Insights)
   - Error data and session replays (Sentry)
   - IP addresses (rate limiting on API routes)
-- [ ] 1.1.3 — Add explicit Sentry session replay disclosure: what is captured, sampling rates (0.1% normal, 100% on error), what data is sent to Sentry servers
-- [ ] 1.1.4 — Add Vercel Analytics disclosure (cookie-free, anonymous, what is tracked)
-- [ ] 1.1.5 — Add Service Worker / offline caching disclosure (what is cached locally)
-- [ ] 1.1.6 — List all custom analytics events tracked via Vercel `track()`: `app_store_click`, `pricing_view`, `pricing_cta_click`, `blog_post_read`, `feature_section_view`, `newsletter_signup`, `demo_started`, `demo_completed`, `demo_cta_click`, `page_not_found`, `error_page_view`
-- [ ] 1.1.7 — Update "Data We Do Not Collect" section to remove false claim about "no email addresses" (website does collect them)
-- [ ] 1.1.8 — Add legal basis for processing under GDPR for each data type (consent, legitimate interest, contractual necessity)
-- [ ] 1.1.9 — Add data flow diagram or plain-English explanation of where data goes (Vercel servers, Sentry servers, user device)
-- [ ] 1.1.10 — Update "Last Updated" date and add version history
+- [x] 1.1.3 — Add explicit Sentry session replay disclosure: what is captured, sampling rates (0.1% normal, 100% on error), what data is sent to Sentry servers
+- [x] 1.1.4 — Add Vercel Analytics disclosure (cookie-free, anonymous, what is tracked)
+- [x] 1.1.5 — Add Service Worker / offline caching disclosure (what is cached locally)
+- [x] 1.1.6 — List all custom analytics events tracked via Vercel `track()`: `app_store_click`, `pricing_view`, `pricing_cta_click`, `blog_post_read`, `feature_section_view`, `newsletter_signup`, `demo_started`, `demo_completed`, `demo_cta_click`, `page_not_found`, `error_page_view`
+- [x] 1.1.7 — Update "Data We Do Not Collect" section to remove false claim about "no email addresses" (website does collect them)
+- [x] 1.1.8 — Add legal basis for processing under GDPR for each data type (consent, legitimate interest, contractual necessity)
+- [x] 1.1.9 — Add data flow diagram or plain-English explanation of where data goes (Vercel servers, Sentry servers, user device)
+- [x] 1.1.10 — Update "Last Updated" date and add version history
 
 **Acceptance Criteria**:
 - Privacy policy covers 100% of data collected by both website and iOS app
@@ -127,10 +127,10 @@
 **So that** I can make informed decisions about using LumenLingo
 
 #### Subtasks:
-- [ ] 1.2.1 — Create sub-processor table in Privacy Policy with: service name, purpose, data processed, location, privacy policy link
-- [ ] 1.2.2 — Include: Apple (iCloud, App Store), Vercel (hosting, analytics, speed insights), Sentry (error monitoring), any future ESP (email service provider)
-- [ ] 1.2.3 — Add statement about DPA (Data Processing Agreement) status with each sub-processor
-- [ ] 1.2.4 — Add notification mechanism for sub-processor changes (email or changelog)
+- [x] 1.2.1 — Create sub-processor table in Privacy Policy with: service name, purpose, data processed, location, privacy policy link
+- [x] 1.2.2 — Include: Apple (iCloud, App Store), Vercel (hosting, analytics, speed insights), Sentry (error monitoring), any future ESP (email service provider)
+- [x] 1.2.3 — Add statement about DPA (Data Processing Agreement) status with each sub-processor
+- [x] 1.2.4 — Add notification mechanism for sub-processor changes (email or changelog)
 
 **Acceptance Criteria**:
 - All sub-processors listed with data they access
@@ -144,10 +144,10 @@
 **So that** I understand the safeguards in place
 
 #### Subtasks:
-- [ ] 1.3.1 — Document where each sub-processor stores data (Vercel: US edge + EU regions, Sentry: US, Apple: global)
-- [ ] 1.3.2 — State transfer mechanisms used (Standard Contractual Clauses, EU-US Data Privacy Framework, adequacy decisions)
-- [ ] 1.3.3 — Add section to privacy policy: "International Data Transfers"
-- [ ] 1.3.4 — Reference Vercel's GDPR DPA and Sentry's SCCs
+- [x] 1.3.1 — Document where each sub-processor stores data (Vercel: US edge + EU regions, Sentry: US, Apple: global)
+- [x] 1.3.2 — State transfer mechanisms used (Standard Contractual Clauses, EU-US Data Privacy Framework, adequacy decisions)
+- [x] 1.3.3 — Add section to privacy policy: "International Data Transfers"
+- [x] 1.3.4 — Reference Vercel's GDPR DPA and Sentry's SCCs
 
 **Acceptance Criteria**:
 - Every cross-border data transfer documented
@@ -161,23 +161,23 @@
 **So that** the company can publish usage insights, improve the product, and create marketing content without privacy risk
 
 #### Subtasks:
-- [ ] 1.4.1 — Privacy Policy: add "Aggregated and De-identified Data" section:
+- [x] 1.4.1 — Privacy Policy: add "Aggregated and De-identified Data" section:
   - "We may collect, aggregate, and de-identify personal data so that it can no longer reasonably identify any individual"
   - "Once de-identified, such data is no longer personal data under GDPR, UK GDPR, CCPA, or any applicable data protection law"
   - "We may use, disclose, and publish de-identified and aggregated data for any purpose, including but not limited to: product improvement, research, analytics, marketing, benchmarking, and public reports"
-- [ ] 1.4.2 — Terms of Service: add data rights clause:
+- [x] 1.4.2 — Terms of Service: add data rights clause:
   - "By using the Service, you acknowledge that Lumenshore may derive aggregated, anonymised, and statistical data from your use of the Service ('Aggregate Data')"
   - "Aggregate Data does not identify you personally and may be used by Lumenshore for any lawful business purpose without restriction, compensation, or attribution"
   - "Examples of Aggregate Data: total number of users per language pair, average learning session duration, most commonly studied vocabulary, error rates per difficulty level"
-- [ ] 1.4.3 — Ensure de-identification process is genuine:
+- [x] 1.4.3 — Ensure de-identification process is genuine:
   - Must meet GDPR Recital 26 standard (data cannot be singled out, linked, or inferred to identify an individual)
   - For CCPA: no re-identification commitment (Cal. Civ. Code §1798.140(m))
   - Document de-identification methodology internally
-- [ ] 1.4.4 — Right to publish anonymised insights:
+- [x] 1.4.4 — Right to publish anonymised insights:
   - Blog posts, case studies, and marketing materials using aggregate usage data
   - Investor reporting using aggregate metrics
   - No individual user identifiable from published data
-- [ ] 1.4.5 — Survive termination:
+- [x] 1.4.5 — Survive termination:
   - Lumenshore's right to retain and use Aggregate Data survives account deletion and service termination
   - "After you delete your account, we may retain Aggregate Data derived from your use of the Service"
 
@@ -466,11 +466,12 @@
 **So that** Lumenshore's developer account is not terminated for DPLA violation
 
 #### Subtasks:
-- [ ] 3.7.1 — DPLA Section 3.3.2 compliance (Data Collection & Storage):
+- [x] 3.7.1 — DPLA Section 3.3.2 compliance (Data Collection & Storage):
   - "You and Your Application may not collect, use, or disclose user or device data without prior user consent"
   - Verify all data collection has clear, upfront consent (Privacy Policy + in-app notice)
   - Ensure no data collection before user has had opportunity to review privacy policy
   - Never send device-derived data to third parties without user consent
+  - **DONE**: `LegalConsentView.swift` gates the entire app behind a mandatory Privacy Policy & Terms of Service acceptance flow. New users must explicitly tap "I Agree" before accessing any app functionality. Version-tracked on `UserProfile.legalConsentVersion` — re-prompts when legal docs are updated. Declining blocks app usage. Localized into all 9 languages. Links to full policies on lumenlingo.com.
 - [ ] 3.7.2 — DPLA Schedule 2 compliance (Licensed Application EULA):
   - All 6 Apple Minimum Terms present in EULA (verified in Story 3.2.3)
   - EULA scope must not exceed what Apple permits for licensed applications

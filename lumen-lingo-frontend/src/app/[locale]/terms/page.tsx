@@ -61,6 +61,7 @@ export default async function TermsPage({
     { id: 'user-content', text: t('userContent.heading'), level: 2 },
     { id: 'disclaimers', text: t('disclaimers.heading'), level: 2 },
     { id: 'limitation-of-liability', text: t('limitationOfLiability.heading'), level: 2 },
+    { id: 'aggregate-data', text: t('aggregateData.heading'), level: 2 },
     { id: 'termination', text: t('termination.heading'), level: 2 },
     { id: 'governing-law', text: t('governingLaw.heading'), level: 2 },
     { id: 'changes', text: t('changes.heading'), level: 2 },
@@ -194,6 +195,16 @@ export default async function TermsPage({
                     <li>{t('limitationOfLiability.li4')}</li>
                   </ul>
                   <p>{t('limitationOfLiability.cap')}</p>
+                </section>
+
+                {/* ── Aggregate Data ── */}
+                <section id="aggregate-data">
+                  <h2>{t('aggregateData.heading')}</h2>
+                  <p>{t('aggregateData.p1')}</p>
+                  <p>{t('aggregateData.p2')}</p>
+                  <p>{t('aggregateData.p3')}</p>
+                  <p>{t('aggregateData.p4')}</p>
+                  <p>{t('aggregateData.survival')}</p>
                 </section>
 
                 <section id="termination">

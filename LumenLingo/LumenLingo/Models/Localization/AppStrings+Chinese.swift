@@ -439,6 +439,30 @@ extension AppStrings {
         upgradeMessagePro: "你说着进步的语言——每一课都在塑造你在世界上的声音。",
         upgradeMessageElite: "你的文字承载着奉献的力量——卓越正成为你的母语。",
         upgradeMessageRoyal: "你用文字为旅程加冕——传奇的语言由你掌控。",
-        upgradeMessageTrial: "皇家篇章开启——你语言潜能的完整故事正等待着你。"
+        upgradeMessageTrial: "皇家篇章开启——你语言潜能的完整故事正等待着你。",
+        // MARK: - Legal Consent
+        legalConsentTitle: "开始之前",
+        legalConsentSubtitle: "请查看我们的政策以继续使用 LumenLingo",
+        privacyPolicyTitle: "隐私政策",
+        termsOfServiceTitle: "服务条款",
+        legalVersion: "版本 2.0",
+        legalLastUpdated: "最后更新：2026年3月23日",
+        legalPrivacySummary: "LumenLingo 由 LumenShore Ltd 运营。我们尊重您的隐私并致力于保护您的个人数据。本政策涵盖我们的网站和 iOS 应用程序。",
+        legalTermsSummary: "本服务条款管辖您对 LumenShore Ltd 运营的 LumenLingo 移动应用程序的使用。使用 LumenLingo 即表示您同意这些条款。",
+        legalPrivacyHighlight1: "您的学习数据保存在您的设备和个人 iCloud 账户中",
+        legalPrivacyHighlight2: "我们使用无 Cookie 的 Vercel Analytics — 网站上没有跟踪 Cookie",
+        legalPrivacyHighlight3: "Sentry 帮助我们修复错误（会话回放需要同意）",
+        legalPrivacyHighlight4: "我们从不向第三方出售您的个人数据",
+        legalTermsHighlight1: "提供免费和高级层级 — 订阅通过 Apple 管理",
+        legalTermsHighlight2: "您的内容和学习进度属于您",
+        legalTermsHighlight3: "我们可能使用聚合的匿名数据来改进产品",
+        legalTermsHighlight4: "受英格兰和威尔士法律管辖",
+        legalAcceptAll: "我同意",
+        legalDecline: "拒绝",
+        legalDeclineTitle: "确定吗？",
+        legalDeclineMessage: "您必须接受我们的隐私政策和服务条款才能使用 LumenLingo。",
+        legalDeclineConfirm: "拒绝并退出",
+        legalReadFull: "阅读完整政策",
+        legalScrollToAccept: "滚动查看"
     )
 }

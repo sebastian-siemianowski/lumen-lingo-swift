@@ -453,6 +453,31 @@ struct AppStrings: Sendable {
     let upgradeMessageRoyal: String         // tier-specific linguistic celebration
     let upgradeMessageTrial: String         // tier-specific linguistic celebration
 
+    // MARK: - Legal Consent
+    let legalConsentTitle: String            // "Before We Begin"
+    let legalConsentSubtitle: String         // "Please review and accept..."
+    let privacyPolicyTitle: String           // "Privacy Policy"
+    let termsOfServiceTitle: String          // "Terms of Service"
+    let legalVersion: String                 // "Version 2.0"
+    let legalLastUpdated: String             // "Last updated: 23 March 2026"
+    let legalPrivacySummary: String          // Summary paragraph
+    let legalTermsSummary: String            // Summary paragraph
+    let legalPrivacyHighlight1: String       // key point
+    let legalPrivacyHighlight2: String       // key point
+    let legalPrivacyHighlight3: String       // key point
+    let legalPrivacyHighlight4: String       // key point
+    let legalTermsHighlight1: String         // key point
+    let legalTermsHighlight2: String         // key point
+    let legalTermsHighlight3: String         // key point
+    let legalTermsHighlight4: String         // key point
+    let legalAcceptAll: String               // "I Agree"
+    let legalDecline: String                 // "Decline"
+    let legalDeclineTitle: String            // "Are you sure?"
+    let legalDeclineMessage: String          // "You must accept to use LumenLingo."
+    let legalDeclineConfirm: String          // "Decline & Exit"
+    let legalReadFull: String                // "Read Full Policy"
+    let legalScrollToAccept: String          // "Scroll to review"
+
     // MARK: - Factory
 
     static func forLanguage(_ lang: SupportedLanguage) -> AppStrings {

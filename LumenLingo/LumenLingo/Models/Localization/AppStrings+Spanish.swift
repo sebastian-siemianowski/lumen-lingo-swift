@@ -440,6 +440,30 @@ extension AppStrings {
         upgradeMessagePro: "Hablas el idioma del progreso — cada lección da forma a tu voz en el mundo.",
         upgradeMessageElite: "Tus palabras llevan el peso de la dedicación — la excelencia se convierte en tu lengua materna.",
         upgradeMessageRoyal: "Has coronado tu viaje con palabras — el lenguaje de las leyendas es tuyo.",
-        upgradeMessageTrial: "Un capítulo real comienza — la historia completa de tu potencial lingüístico te espera."
+        upgradeMessageTrial: "Un capítulo real comienza — la historia completa de tu potencial lingüístico te espera.",
+        // MARK: - Legal Consent
+        legalConsentTitle: "Antes de comenzar",
+        legalConsentSubtitle: "Revisa nuestras políticas para continuar usando LumenLingo",
+        privacyPolicyTitle: "Política de privacidad",
+        termsOfServiceTitle: "Términos de servicio",
+        legalVersion: "Versión 2.0",
+        legalLastUpdated: "Última actualización: 23 de marzo de 2026",
+        legalPrivacySummary: "LumenLingo es operado por LumenShore Ltd. Respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta política cubre tanto nuestro sitio web como la app iOS.",
+        legalTermsSummary: "Estos Términos de Servicio rigen el uso de la aplicación móvil LumenLingo operada por LumenShore Ltd. Al usar LumenLingo, aceptas estos Términos.",
+        legalPrivacyHighlight1: "Tus datos de aprendizaje permanecen en tu dispositivo y tu cuenta personal de iCloud",
+        legalPrivacyHighlight2: "Usamos Vercel Analytics sin cookies — sin cookies de rastreo en nuestro sitio web",
+        legalPrivacyHighlight3: "Sentry nos ayuda a corregir errores (la grabación de sesión requiere consentimiento)",
+        legalPrivacyHighlight4: "Nunca vendemos tus datos personales a terceros",
+        legalTermsHighlight1: "Niveles gratuitos y premium disponibles — suscripciones gestionadas a través de Apple",
+        legalTermsHighlight2: "Tu contenido y progreso de aprendizaje te pertenecen",
+        legalTermsHighlight3: "Podemos usar datos agregados y anónimos para mejorar el producto",
+        legalTermsHighlight4: "Regido por las leyes de Inglaterra y Gales",
+        legalAcceptAll: "Acepto",
+        legalDecline: "Rechazar",
+        legalDeclineTitle: "¿Estás seguro?",
+        legalDeclineMessage: "Debes aceptar nuestra Política de Privacidad y Términos de Servicio para usar LumenLingo.",
+        legalDeclineConfirm: "Rechazar y salir",
+        legalReadFull: "Leer política completa",
+        legalScrollToAccept: "Desplázate para revisar"
     )
 }

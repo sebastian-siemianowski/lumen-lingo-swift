@@ -69,6 +69,12 @@ final class UserProfile {
     /// JSON-encoded dictionary of feature settings preserved across tier changes.
     var dormantSettingsData: Data? = nil
 
+    /// Version of legal policies the user has accepted (e.g. "2.0"). Empty = never accepted.
+    var legalConsentVersion: String = ""
+
+    /// Date when the user accepted the current legal policies. nil = never accepted.
+    var legalConsentDate: Date? = nil
+
     /// Level scales quadratically: cumulative XP for level L = 50·L·(L−1).
     /// Each level costs 100·L XP, so reaching high levels takes real dedication.
     var currentLevel: Int {
@@ -200,7 +206,9 @@ final class UserProfile {
         selectedTierId: String = "free",
         offlineModeEnabled: Bool = false,
         trialStartDate: Date? = nil,
-        trialExpiredShown: Bool = false
+        trialExpiredShown: Bool = false,
+        legalConsentVersion: String = "",
+        legalConsentDate: Date? = nil
     ) {
         self.firstName = firstName
         self.email = email
@@ -247,6 +255,8 @@ final class UserProfile {
         self.offlineModeEnabled = offlineModeEnabled
         self.trialStartDate = trialStartDate
         self.trialExpiredShown = trialExpiredShown
+        self.legalConsentVersion = legalConsentVersion
+        self.legalConsentDate = legalConsentDate
     }
 }
 

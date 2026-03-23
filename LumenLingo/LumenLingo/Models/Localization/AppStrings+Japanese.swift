@@ -439,6 +439,30 @@ extension AppStrings {
         upgradeMessagePro: "あなたは進歩の言葉を話しています——すべてのレッスンが世界でのあなたの声を形作ります。",
         upgradeMessageElite: "あなたの言葉には献身の重みがあります——卓越があなたの母語になりつつあります。",
         upgradeMessageRoyal: "言葉であなたの旅に冠を——伝説の言語はあなたのものです。",
-        upgradeMessageTrial: "ロイヤルな章が始まります——あなたの言語的可能性の全物語が待っています。"
+        upgradeMessageTrial: "ロイヤルな章が始まります——あなたの言語的可能性の全物語が待っています。",
+        // MARK: - Legal Consent
+        legalConsentTitle: "始める前に",
+        legalConsentSubtitle: "LumenLingoを引き続きご利用いただくため、ポリシーをご確認ください",
+        privacyPolicyTitle: "プライバシーポリシー",
+        termsOfServiceTitle: "利用規約",
+        legalVersion: "バージョン 2.0",
+        legalLastUpdated: "最終更新日：2026年3月23日",
+        legalPrivacySummary: "LumenLingoはLumenShore Ltdが運営しています。私たちはあなたのプライバシーを尊重し、個人データの保護に努めています。このポリシーはウェブサイトとiOSアプリの両方に適用されます。",
+        legalTermsSummary: "この利用規約は、LumenShore Ltdが運営するLumenLingoモバイルアプリケーションの使用を規定します。LumenLingoを使用することにより、これらの規約に同意したことになります。",
+        legalPrivacyHighlight1: "学習データはお使いのデバイスと個人のiCloudアカウントに保存されます",
+        legalPrivacyHighlight2: "Cookieフリーの Vercel Analytics を使用 — ウェブサイトにトラッキングCookieなし",
+        legalPrivacyHighlight3: "Sentryがバグ修正を支援（セッションリプレイには同意が必要）",
+        legalPrivacyHighlight4: "個人データを第三者に販売することは一切ありません",
+        legalTermsHighlight1: "無料プランとプレミアムプランを提供 — サブスクリプションはApple経由で管理",
+        legalTermsHighlight2: "コンテンツと学習の進捗はあなたのものです",
+        legalTermsHighlight3: "製品改善のために集約された匿名データを使用することがあります",
+        legalTermsHighlight4: "イングランドおよびウェールズの法律に準拠",
+        legalAcceptAll: "同意する",
+        legalDecline: "拒否",
+        legalDeclineTitle: "よろしいですか？",
+        legalDeclineMessage: "LumenLingoをご利用いただくには、プライバシーポリシーと利用規約に同意していただく必要があります。",
+        legalDeclineConfirm: "拒否して終了",
+        legalReadFull: "ポリシー全文を読む",
+        legalScrollToAccept: "スクロールして確認"
     )
 }

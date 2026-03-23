@@ -423,41 +423,116 @@
   "Legal": {
     "tocLabel": "On this page",
     "downloadPdf": "Download as PDF",
-    "lastUpdated": "Last updated: 22 March 2026"
+    "lastUpdated": "Last updated: 23 March 2026",
+    "version": "Version 2.0"
   },
   "Privacy": {
     "meta": {
       "title": "Privacy Policy",
-      "description": "Read how LumenShore handles your data with care. Learn about our privacy-first approach, on-device processing, iCloud sync, and your rights under GDPR and CCPA.",
+      "description": "Read how LumenShore handles your data with care across the LumenLingo iOS app and lumenlingo.com website. Privacy-first approach, on-device processing, GDPR, CCPA and your rights.",
       "ogTitle": "Privacy Policy — LumenLingo"
     },
     "breadcrumb": "Privacy Policy",
     "hero": {
       "heading": "Privacy Policy",
-      "subtitle": "Your privacy matters deeply to us. Here's exactly how we handle your data — in plain English, not legal jargon."
+      "subtitle": "Your privacy matters deeply to us. Here’s exactly how we handle your data across the LumenLingo app and website — in plain English, not legal jargon."
     },
     "overview": {
       "heading": "Overview",
-      "p1": "LumenShore Ltd (“LumenShore”, “we”, “us”, or “our”) operates the LumenLingo mobile application (“the App”). This Privacy Policy explains how we collect, use, store, and protect information when you use LumenLingo.",
-      "p2": "We built LumenLingo with a privacy-first architecture. Your learning data is processed and stored on your device and in your personal iCloud account — not on our servers. We believe your data is yours, and it should stay that way."
+      "p1": "LumenShore Ltd (“LumenShore”, “we”, “us”, or “our”), company number 09607326, registered at Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA, operates the LumenLingo mobile application (the “App”) and the lumenlingo.com website (the “Website”). This Privacy Policy explains how we collect, use, store, and protect information when you use either platform.",
+      "p2": "We built LumenLingo with a privacy-first architecture. On the iOS app, your learning data is processed and stored on your device and in your personal iCloud account — not on our servers. On the website, we collect minimal data necessary to operate the service and improve your experience. We believe your data is yours, and it should stay that way.",
+      "p3": "This policy is organised into two sections — Website and iOS App — so you can quickly find the information relevant to you."
     },
-    "informationWeCollect": {
-      "heading": "Information We Collect",
-      "intro": "LumenLingo collects minimal data necessary to provide a great learning experience:",
+    "websiteData": {
+      "heading": "Website Data Collection",
+      "intro": "When you visit lumenlingo.com, we may collect the following data:",
+      "li1": "<b>Email address</b> — if you sign up for our newsletter or join the waitlist. We collect your email solely to send you product updates and launch notifications. You can unsubscribe at any time.",
+      "li2": "<b>Language preference</b> — if you join the waitlist, we record which language you’re interested in to tailor future communications.",
+      "li3": "<b>Campaign attribution (UTM parameters)</b> — we capture UTM parameters (source, medium, campaign) from URLs in your browser’s sessionStorage to understand which marketing channels are effective. This data is not tied to your identity and is cleared when you close your browser tab.",
+      "li4": "<b>Anonymous page views</b> — we use Vercel Analytics, a cookie-free, privacy-respecting analytics service, to count page visits. No personal data is collected, no cookies are set, and no individual users are identified.",
+      "li5": "<b>Anonymous performance metrics</b> — we use Vercel Speed Insights to measure page load times and core web vitals. This data is fully anonymous and helps us keep the website fast.",
+      "li6": "<b>Error data and session replays</b> — we use Sentry for error monitoring. With your consent, Sentry may record session replays to help us diagnose and fix bugs. See the ‘Sentry Session Replay’ section below for full details.",
+      "li7": "<b>IP addresses</b> — your IP address is processed transiently by our API routes for rate limiting (to prevent abuse). IP addresses are not stored or logged by us."
+    },
+    "sentryReplay": {
+      "heading": "Sentry Session Replay",
+      "p1": "We use Sentry (operated by Functional Software, Inc.) for error monitoring on our website. Sentry’s session replay feature records page interactions (clicks, scrolls, navigation) to help us reproduce and fix bugs.",
+      "p2": "<b>Sampling rates:</b> Session replays are captured for approximately 0.1% of normal browsing sessions. When an error occurs, the replay capture rate increases to 100% for that session only — this helps us understand exactly what led to the bug.",
+      "p3": "<b>What is captured:</b> Page navigation, clicks, scrolls, and screen content. All text inputs in forms (such as newsletter and waitlist fields) are masked to protect your privacy. Media content is blocked from capture.",
+      "p4": "<b>What is sent:</b> Replay data is transmitted to Sentry’s servers in the United States. It is retained according to Sentry’s data retention policy (typically 90 days).",
+      "p5": "<b>Your control:</b> Session replays are only active if you have given consent via our cookie consent banner. You can change your preference at any time."
+    },
+    "vercelAnalytics": {
+      "heading": "Vercel Analytics & Speed Insights",
+      "p1": "We use Vercel Analytics and Vercel Speed Insights on our website. These services are privacy-focused by design:",
+      "li1": "<b>No cookies</b> — Vercel Analytics does not set any cookies on your device.",
+      "li2": "<b>No personal data</b> — no IP addresses, device fingerprints, or user identifiers are collected.",
+      "li3": "<b>Aggregate only</b> — we see total page view counts and performance metrics, but we cannot identify individual visitors.",
+      "p2": "Both services are operated by Vercel Inc. Data is processed on Vercel’s infrastructure. See <vercelPrivacy>Vercel’s Privacy Policy</vercelPrivacy> for more details."
+    },
+    "customEvents": {
+      "heading": "Custom Analytics Events",
+      "intro": "In addition to page views, we track the following anonymised events through Vercel Analytics to understand how visitors use our website. No personal data is attached to these events:",
+      "li1": "<b>app_store_click</b> — when a visitor clicks an App Store download link (records link location on the page)",
+      "li2": "<b>pricing_view</b> — when a visitor views the pricing page",
+      "li3": "<b>pricing_cta_click</b> — when a visitor clicks a pricing call-to-action button (records which tier)",
+      "li4": "<b>blog_post_read</b> — when a visitor reads most of a blog post (records the post slug and title)",
+      "li5": "<b>feature_section_view</b> — when a visitor views a feature section on the homepage",
+      "li6": "<b>newsletter_signup</b> — when a visitor signs up for the newsletter (records the page location, not the email)",
+      "li7": "<b>demo_started</b> — when a visitor starts the interactive flashcard demo",
+      "li8": "<b>demo_completed</b> — when a visitor completes the demo (records correct/total scores)",
+      "li9": "<b>demo_cta_click</b> — when a visitor clicks a call-to-action after completing the demo",
+      "li10": "<b>page_not_found</b> — when a visitor lands on a 404 page (records the path)",
+      "li11": "<b>error_page_view</b> — when a visitor sees an error page (records the error message)"
+    },
+    "serviceWorker": {
+      "heading": "Offline Caching (Service Worker)",
+      "p1": "Our website uses a Service Worker to cache static assets (HTML pages, CSS stylesheets, JavaScript bundles, images, and fonts) on your device. This enables faster page loads on repeat visits and limited offline access.",
+      "p2": "The Service Worker cache is stored entirely on your device and contains no personal data. You can clear it at any time through your browser’s settings (Clear site data). No cached data is sent back to our servers."
+    },
+    "appData": {
+      "heading": "iOS App Data Collection",
+      "intro": "The LumenLingo iOS app collects minimal data necessary to provide a great learning experience:",
       "li1": "<b>Learning progress data</b> — flashcard mastery levels, practice scores, streaks, XP, and session history. This data is stored locally on your device and synced via iCloud.",
       "li2": "<b>App preferences</b> — your selected language pairs, soundscape preferences, visual background choices, and tier selection. Stored on-device and synced via iCloud.",
       "li3": "<b>Subscription status</b> — your membership tier, managed entirely by Apple through the App Store. We receive a subscription status from Apple but do not process payment information.",
       "li4": "<b>Anonymous analytics</b> — we may collect aggregated, non-identifiable usage metrics (such as which features are most popular) to improve the app. No personal data is included."
     },
     "whatWeDontCollect": {
-      "heading": "What We Don't Collect",
-      "intro": "We want to be clear about what we <b>never</b> collect:",
-      "li1": "No email addresses, names, or personal identifiers (the app doesn't require account registration)",
-      "li2": "No location data or GPS coordinates",
-      "li3": "No contacts, photos, or access to other apps on your device",
-      "li4": "No payment or credit card information (Apple handles all billing)",
-      "li5": "No advertising identifiers or tracking pixels",
-      "li6": "No data sold or shared with third-party advertisers — ever"
+      "heading": "What We Don’t Collect",
+      "intro": "Across both our app and website, we want to be clear about what we <b>never</b> collect or do:",
+      "li1": "No location data or GPS coordinates",
+      "li2": "No contacts, photos, or access to other apps on your device",
+      "li3": "No payment or credit card information (Apple handles all app billing)",
+      "li4": "No advertising identifiers or tracking pixels",
+      "li5": "No data sold or shared with third-party advertisers — ever",
+      "li6": "No personal data shared with AI model training services"
+    },
+    "legalBasis": {
+      "heading": "Legal Basis for Processing",
+      "intro": "Under GDPR and UK GDPR, we process personal data only when we have a lawful basis. Here is the legal basis for each type of data we handle:",
+      "consentHeading": "Consent (GDPR Art. 6(1)(a))",
+      "consentLi1": "<b>Newsletter signup</b> — you actively provide your email and opt in to receive updates",
+      "consentLi2": "<b>Waitlist signup</b> — you actively provide your email and language preference",
+      "consentLi3": "<b>Sentry session replay</b> — replays are only captured after you give explicit consent via our cookie banner",
+      "legitimateHeading": "Legitimate Interest (GDPR Art. 6(1)(f))",
+      "legitimateLi1": "<b>Vercel Analytics</b> — anonymous, cookie-free page view counting to improve our website. Our interest in understanding site usage is balanced against minimal privacy impact (no PII collected)",
+      "legitimateLi2": "<b>Sentry error monitoring</b> — collecting error diagnostics to maintain service reliability. No user behaviour is captured without consent; only crash and error data is collected under this basis",
+      "legitimateLi3": "<b>Rate limiting (IP address processing)</b> — preventing abuse of our API endpoints. IP addresses are processed transiently and not stored",
+      "contractHeading": "Contract Performance (GDPR Art. 6(1)(b))",
+      "contractLi1": "<b>iOS app learning data</b> — processing your learning progress is necessary to deliver the language-learning service you use",
+      "contractLi2": "<b>iCloud sync</b> — syncing your progress across devices is a core part of the service",
+      "contractLi3": "<b>Subscription management</b> — verifying your tier to provide the appropriate features"
+    },
+    "dataFlow": {
+      "heading": "Where Your Data Goes",
+      "intro": "Here is a plain-English summary of where your data is stored and processed:",
+      "li1": "<b>Your device</b> — all iOS app learning data, preferences, and progress are stored locally on your iPhone or iPad using Apple’s SwiftData framework",
+      "li2": "<b>Your iCloud account</b> — learning data syncs across your Apple devices via your personal iCloud account, encrypted by Apple. We have no access to this data",
+      "li3": "<b>Vercel (website hosting)</b> — our website is hosted on Vercel’s global edge network. Anonymous analytics data is processed by Vercel. Vercel’s servers are primarily located in the United States with edge nodes worldwide",
+      "li4": "<b>Sentry (error monitoring)</b> — error logs and (with your consent) session replay data are sent to Sentry’s servers in the United States. Sentry processes this data under their DPA with Standard Contractual Clauses",
+      "li5": "<b>Apple (App Store & iCloud)</b> — subscription management and iCloud sync are handled by Apple’s global infrastructure",
+      "noOtherParties": "Your data is not sent to any other third parties. We do not use Google Analytics, Facebook SDK, or any advertising networks."
     },
     "howWeUse": {
       "heading": "How We Use Your Information",
@@ -465,63 +540,172 @@
       "li1": "<b>Personalise your learning</b> — spaced repetition scheduling, difficulty adaptation, and progress tracking depend on your learning history.",
       "li2": "<b>Sync your progress</b> — iCloud sync ensures your data follows you across all your Apple devices.",
       "li3": "<b>Manage your subscription</b> — we verify your membership tier to unlock the appropriate features.",
-      "li4": "<b>Improve the app</b> — anonymous aggregate data helps us understand which features are valuable and where to focus development."
+      "li4": "<b>Improve the app and website</b> — anonymous aggregate data helps us understand which features are valuable and where to focus development.",
+      "li5": "<b>Communicate with you</b> — if you signed up for our newsletter or waitlist, we use your email to send product updates. You can unsubscribe at any time.",
+      "li6": "<b>Diagnose and fix bugs</b> — Sentry error data (and session replays with your consent) help us identify and resolve issues quickly."
     },
     "dataStorage": {
       "heading": "Data Storage & Security",
       "intro": "LumenLingo uses a privacy-first, on-device architecture:",
-      "li1": "<b>On-device storage</b> — all learning data is stored locally using Apple's SwiftData framework, protected by your device's built-in encryption.",
+      "li1": "<b>On-device storage</b> — all learning data is stored locally using Apple’s SwiftData framework, protected by your device’s built-in encryption.",
       "li2": "<b>iCloud sync</b> — data syncs between your devices via your personal iCloud account, encrypted end-to-end by Apple. We do not have access to your iCloud data.",
-      "li3": "<b>No external servers</b> — LumenLingo does not maintain servers that store your personal data. There is no cloud database for us to secure (or breach).",
-      "li4": "<b>App Store security</b> — subscription management is handled by Apple's secure infrastructure."
+      "li3": "<b>No external servers</b> — LumenLingo does not maintain servers that store your personal data from the iOS app. There is no cloud database for us to secure (or breach).",
+      "li4": "<b>App Store security</b> — subscription management is handled by Apple’s secure infrastructure.",
+      "li5": "<b>Website security</b> — lumenlingo.com uses HTTPS encryption, strict Content Security Policy headers, and rate-limited API endpoints to protect your data."
     },
     "thirdParty": {
       "heading": "Third-Party Services",
       "intro": "LumenLingo integrates with a limited number of third-party services:",
-      "li1": "<b>Apple App Store</b> — for app distribution, subscription management, and payment processing. Subject to <applePrivacy>Apple's Privacy Policy</applePrivacy>.",
-      "li2": "<b>Apple iCloud</b> — for data synchronisation across devices. Subject to Apple's iCloud terms.",
-      "li3": "<b>Privacy-respecting analytics</b> — if we use analytics, we use cookie-free, GDPR-compliant tools that collect no personally identifiable information.",
+      "li1": "<b>Apple App Store & iCloud</b> — for app distribution, subscription management, payment processing, and data synchronisation. Subject to <applePrivacy>Apple’s Privacy Policy</applePrivacy>.",
+      "li2": "<b>Vercel</b> — for website hosting, anonymous analytics, and performance monitoring. Cookie-free, GDPR-compliant. Subject to <vercelPrivacy>Vercel’s Privacy Policy</vercelPrivacy>.",
+      "li3": "<b>Sentry</b> — for website error monitoring and (with consent) session replay. Subject to <sentryPrivacy>Sentry’s Privacy Policy</sentryPrivacy>.",
       "noAdNetworks": "We do not use Google Analytics, Facebook SDK, or any advertising networks."
     },
     "childrensPrivacy": {
-      "heading": "Children's Privacy",
-      "p1": "LumenLingo is designed for users of all ages and does not knowingly collect personal information from children under 13 (or the applicable age in your jurisdiction). Since the app does not require account registration and stores data locally, no personal information is transmitted to us from any user, including children.",
-      "p2": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management."
+      "heading": "Children’s Privacy",
+      "p1": "LumenLingo is designed for users aged 13 and older. We do not knowingly collect personal information from children under 13 (or the applicable minimum age in your jurisdiction, which may be higher — for example, 16 in Germany and the Netherlands).",
+      "p2": "The iOS app does not require account registration and stores data locally, so no personal information is transmitted to us from app users of any age. On the website, we do not knowingly accept newsletter or waitlist signups from anyone under 13.",
+      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at hello@lumenshore.com and we will delete it promptly."
     },
     "dataRetention": {
       "heading": "Data Retention & Deletion",
-      "intro": "Since your data lives on your device and in your iCloud account, you have complete control over it:",
-      "li1": "<b>Reset progress</b> — use the in-app Settings → Reset Progress option to clear all learning data.",
-      "li2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
-      "li3": "<b>iCloud data</b> — you can manage iCloud storage through your device's Settings → Apple ID → iCloud → Manage Storage.",
-      "li4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation."
+      "intro": "We only keep your data for as long as necessary:",
+      "websiteHeading": "Website Data",
+      "websiteLi1": "<b>Newsletter/waitlist emails</b> — retained until you unsubscribe, plus up to 30 days to process your removal.",
+      "websiteLi2": "<b>Sentry error logs</b> — retained by Sentry for 90 days, then automatically deleted.",
+      "websiteLi3": "<b>Sentry session replays</b> — retained by Sentry for 90 days, then automatically deleted.",
+      "websiteLi4": "<b>Vercel Analytics</b> — retention per Vercel’s data retention policy (aggregated, no PII).",
+      "appHeading": "iOS App Data",
+      "appLi1": "<b>Reset progress</b> — use the in-app Settings → Reset Progress option to clear all learning data.",
+      "appLi2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
+      "appLi3": "<b>iCloud data</b> — you can manage iCloud storage through your device’s Settings → Apple ID → iCloud → Manage Storage.",
+      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation."
     },
     "yourRights": {
       "heading": "Your Rights",
       "intro": "Depending on your location, you may have additional rights regarding your data:",
       "gdprHeading": "Under GDPR (European Economic Area & UK)",
-      "gdprLi1": "Right to access your data — your data is already on your device and iCloud.",
-      "gdprLi2": "Right to rectification — you can edit your preferences directly in the app.",
-      "gdprLi3": "Right to erasure — reset progress or delete the app to remove all data.",
-      "gdprLi4": "Right to data portability — your data is stored in standard formats in iCloud.",
-      "gdprLi5": "Right to object — contact us to opt out of anonymous analytics.",
+      "gdprLi1": "Right to access your data — app data is on your device and iCloud; for website data, contact us.",
+      "gdprLi2": "Right to rectification — edit app preferences directly; for website data, contact us.",
+      "gdprLi3": "Right to erasure — reset app progress, delete the app, or contact us to remove your email from our lists.",
+      "gdprLi4": "Right to data portability — your app data is stored in standard formats in iCloud. Contact us for website data export.",
+      "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
+      "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
+      "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
       "ccpaHeading": "Under CCPA (California)",
-      "ccpaLi1": "Right to know what data is collected — detailed above; we collect minimal data.",
-      "ccpaLi2": "Right to delete — reset progress or delete the app.",
-      "ccpaLi3": "Right to opt out — we do not sell personal information to anyone.",
-      "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights."
+      "ccpaLi1": "Right to know what data is collected — detailed above.",
+      "ccpaLi2": "Right to delete — reset app progress, delete the app, or contact us to remove website data.",
+      "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
+      "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
+      "exerciseRights": "To exercise any of these rights, email us at hello@lumenshore.com. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
     },
     "policyUpdates": {
       "heading": "Policy Updates",
-      "p1": "We may update this Privacy Policy from time to time, typically to reflect changes in the app's features or legal requirements. When we make significant changes, we'll update the “Last updated” date at the top of this page.",
-      "p2": "We encourage you to review this page periodically. Continued use of LumenLingo after changes constitutes acceptance of the updated policy."
+      "p1": "We may update this Privacy Policy from time to time, typically to reflect changes in our services or legal requirements. When we make significant changes, we’ll update the “Last updated” date and version number at the top of this page.",
+      "p2": "We encourage you to review this page periodically. Continued use of LumenLingo after changes constitutes acceptance of the updated policy.",
+      "versionHistory": "Version History",
+      "v2": "<b>v2.0</b> (23 March 2026) — Extended policy to cover lumenlingo.com website data collection, added Sentry session replay disclosure, Vercel Analytics disclosure, legal basis for processing, data flow section, and service worker caching details.",
+      "v1": "<b>v1.0</b> (22 March 2026) — Initial privacy policy covering the LumenLingo iOS app."
     },
     "contactUs": {
       "heading": "Contact Us",
       "intro": "If you have questions about this Privacy Policy, your data, or want to exercise your rights, please reach out:",
       "email": "<b>Email</b>: <emailLink>hello@lumenshore.com</emailLink>",
-      "company": "<b>Company</b>: LumenShore Ltd, United Kingdom",
-      "responseTime": "We typically respond within 48 hours."
+      "company": "<b>Company</b>: LumenShore Ltd, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "companyNumber": "<b>Company Number</b>: 09607326 (England and Wales)",
+      "vatNumber": "<b>VAT Number</b>: GB 270411929",
+      "responseTime": "We typically respond within 48 hours and within 30 days for formal data rights requests."
+    },
+    "subProcessors": {
+      "heading": "Sub-Processors",
+      "intro": "The following third-party services process data on our behalf. Each sub-processor has been assessed for data protection compliance:",
+      "tableHeaders": {
+        "service": "Service",
+        "purpose": "Purpose",
+        "dataProcessed": "Data Processed",
+        "location": "Server Location",
+        "privacyPolicy": "Privacy Policy"
+      },
+      "processors": {
+        "apple": {
+          "service": "Apple (App Store & iCloud)",
+          "purpose": "App distribution, subscription billing, data sync",
+          "dataProcessed": "Subscription status, learning data (via iCloud)",
+          "location": "Global (Apple data centres)",
+          "privacyUrl": "https://www.apple.com/legal/privacy/",
+          "privacyLabel": "Apple Privacy"
+        },
+        "vercel": {
+          "service": "Vercel",
+          "purpose": "Website hosting, anonymous analytics, speed insights",
+          "dataProcessed": "Anonymous page views, performance metrics",
+          "location": "United States (with global edge nodes)",
+          "privacyUrl": "https://vercel.com/legal/privacy-policy",
+          "privacyLabel": "Vercel Privacy"
+        },
+        "sentry": {
+          "service": "Sentry (Functional Software, Inc.)",
+          "purpose": "Error monitoring, session replay (with consent)",
+          "dataProcessed": "Error logs, stack traces, session replays (with consent)",
+          "location": "United States",
+          "privacyUrl": "https://sentry.io/privacy/",
+          "privacyLabel": "Sentry Privacy"
+        }
+      },
+      "dpaStatus": {
+        "heading": "Data Processing Agreements",
+        "p1": "We maintain Data Processing Agreements (DPAs) or equivalent contractual protections with all sub-processors that handle personal data:",
+        "li1": "<b>Apple</b> — covered by Apple's standard DPA for developers, incorporating Standard Contractual Clauses for international transfers.",
+        "li2": "<b>Vercel</b> — covered by Vercel's DPA, available at vercel.com/legal/dpa. Vercel Analytics is cookie-free and processes no personal data.",
+        "li3": "<b>Sentry</b> — covered by Sentry's DPA with Standard Contractual Clauses (SCCs) for EU-US data transfers."
+      },
+      "changes": {
+        "heading": "Sub-Processor Changes",
+        "p1": "If we add or change a sub-processor that handles personal data, we will update this page and note the change in the Version History section of this Privacy Policy. For material changes, we will provide at least 30 days' notice before the new sub-processor begins processing data."
+      }
+    },
+    "internationalTransfers": {
+      "heading": "International Data Transfers",
+      "intro": "LumenShore Ltd is based in the United Kingdom. Some of your data may be transferred to and processed in countries outside the UK and the European Economic Area (EEA). Here is where each service processes data and the legal mechanism that protects the transfer:",
+      "li1": "<b>Apple (United States & global)</b> — iCloud data and App Store subscription data may be processed in Apple’s global data centres, including in the United States. Apple participates in transfers under Standard Contractual Clauses (SCCs) and the EU-US Data Privacy Framework.",
+      "li2": "<b>Vercel (United States & global edge)</b> — our website is served from Vercel’s edge network, with primary servers in the United States. Vercel Analytics processes no personal data. Website hosting data is protected under Vercel’s GDPR DPA with Standard Contractual Clauses.",
+      "li3": "<b>Sentry (United States)</b> — error logs and session replay data (with your consent) are transmitted to Sentry’s servers in the United States. These transfers are protected by Sentry’s DPA incorporating Standard Contractual Clauses (SCCs).",
+      "safeguards": {
+        "heading": "Transfer Safeguards",
+        "intro": "For all international data transfers, we ensure at least one of the following safeguards is in place:",
+        "li1": "<b>Standard Contractual Clauses (SCCs)</b> — EU Commission-approved contractual clauses that bind the data importer to protect your data to GDPR standards.",
+        "li2": "<b>EU-US Data Privacy Framework</b> — where the recipient is certified under the framework, providing an adequacy basis for transfers to the US.",
+        "li3": "<b>UK International Data Transfer Agreement (IDTA)</b> — the UK equivalent of SCCs, approved by the ICO for transfers from the UK.",
+        "li4": "<b>Adequacy decisions</b> — where the European Commission or UK Government has determined that the destination country provides adequate data protection."
+      },
+      "p1": "You may request a copy of the relevant transfer safeguards by contacting us at hello@lumenshore.com."
+    },
+    "aggregateData": {
+      "heading": "Aggregated and De-identified Data",
+      "p1": "We may collect, aggregate, and de-identify personal data so that it can no longer reasonably identify any individual. Once de-identified, such data is no longer personal data under GDPR, UK GDPR, CCPA, or any applicable data protection law.",
+      "p2": "We may use, disclose, and publish de-identified and aggregated data for any purpose, including but not limited to:",
+      "li1": "Product improvement and feature development",
+      "li2": "Research and analytics",
+      "li3": "Marketing materials and case studies",
+      "li4": "Benchmarking and public reports",
+      "li5": "Investor and stakeholder reporting",
+      "deIdentification": {
+        "heading": "De-identification Standards",
+        "p1": "Our de-identification process meets the following legal standards:",
+        "li1": "<b>GDPR Recital 26</b> — data cannot be singled out, linked, or inferred to identify any individual, taking into account all means reasonably likely to be used.",
+        "li2": "<b>CCPA § 1798.140(m)</b> — information that cannot reasonably be used to infer information about, or otherwise be linked to, a particular consumer or household. We maintain a commitment not to attempt to re-identify de-identified data."
+      },
+      "examples": {
+        "heading": "Examples of Aggregate Data",
+        "p1": "Examples of the types of aggregate data we may derive and publish include:",
+        "li1": "Total number of users per language pair",
+        "li2": "Average learning session duration",
+        "li3": "Most commonly studied vocabulary",
+        "li4": "Error rates per difficulty level",
+        "li5": "Feature usage statistics across membership tiers",
+        "p2": "No individual user can be identified from any published aggregate data."
+      },
+      "survival": "Our right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data that was derived from your use of the Service."
     }
   },
   "Terms": {
@@ -632,6 +816,14 @@
       "email": "<b>Email</b>: <emailLink>hello@lumenshore.com</emailLink>",
       "company": "<b>Company</b>: LumenShore Ltd, United Kingdom",
       "responseTime": "We typically respond within 48 hours."
+    },
+    "aggregateData": {
+      "heading": "Aggregate Data",
+      "p1": "By using the Service, you acknowledge that LumenShore may derive aggregated, anonymised, and statistical data from your use of the Service (“Aggregate Data”).",
+      "p2": "Aggregate Data does not identify you personally and may be used by LumenShore for any lawful business purpose without restriction, compensation, or attribution.",
+      "p3": "Examples of Aggregate Data include: total number of users per language pair, average learning session duration, most commonly studied vocabulary, error rates per difficulty level, and feature usage statistics.",
+      "p4": "LumenShore may use Aggregate Data for product improvement, research, analytics, marketing, benchmarking, investor reporting, blog posts, case studies, and public reports.",
+      "survival": "LumenShore’s right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data derived from your use of the Service."
     }
   },
   "Blog": {
