@@ -1,10 +1,18 @@
 # LEGALS.md — Legal Compliance Epics & Stories
 
 > **Product**: LumenLingo (iOS App) + LumenLingo Website (lumen-lingo-frontend)
-> **Company**: LumenShore Ltd, United Kingdom
+> **Company**: Lumenshore Limited (trading as LumenShore)
+> **Company Number**: 09607326 (England and Wales)
+> **Registered Office**: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA
+> **Incorporated**: 26 May 2015
+> **VAT Number**: GB 270411929
 > **Contact**: hello@lumenshore.com
 > **Governing Law**: England and Wales
 > **Last Updated**: 23 March 2026
+>
+> **App Languages**: 9 languages, 25 language pairs (English, Spanish, French, German, Japanese, Chinese, Arabic, Polish, Ukrainian)
+> **Website Locales**: 10 (en, es, fr, de, ja, zh, ar, pl, uk, pt)
+> **Target Markets**: UK, EU (all member states), US, Japan, China, Middle East, Brazil/Portugal, Ukraine, Poland, Australia, Canada
 
 ---
 
@@ -33,6 +41,19 @@
 - ❌ No DSAR (Data Subject Access Request) formal process
 - ❌ No DPA (Data Processing Agreement) documentation for sub-processors
 - ❌ No age verification gate (Terms say 13+ but no enforcement)
+- ❌ Company number/registered address not displayed on website (UK Companies Act 2006 requirement)
+- ❌ VAT number not displayed on website (VAT Act 1994 requirement for VAT-registered businesses)
+- ❌ No compliance with Japan APPI (app has Japanese language pairs, ja locale)
+- ❌ No compliance with China PIPL (app has Chinese language pairs, zh locale)
+- ❌ No compliance with Brazil LGPD (website has pt locale)
+- ❌ No compliance with Germany TTDSG / BDSG (app has German pairs, de locale)
+- ❌ No compliance with France CNIL guidelines (app has French pairs, fr locale)
+- ❌ No compliance with Poland PUODO requirements (8 Polish language pairs, pl locale)
+- ❌ No compliance with Ukraine data protection law (app has Ukrainian pairs, uk locale)
+- ❌ No compliance with Middle East data protection laws (app has Arabic pairs, ar locale)
+- ❌ No EU VAT OSS registration assessment for digital services B2C
+- ❌ No age of digital consent mapping per jurisdiction (varies: 13 US, 16 Germany/Netherlands, 14 Spain/Italy, 15 France, 13 UK)
+- ❌ Privacy Policy falsely claims "no email addresses" collected — website collects emails
 
 ---
 
@@ -630,10 +651,11 @@
 **So that** LumenShore avoids ICO enforcement action
 
 #### Subtasks:
-- [ ] 6.1.1 — Register with ICO (Information Commissioner's Office) if required:
-  - Data protection fee registration (£40/year for micro-organizations)
-  - Check exemptions: sole trader vs limited company
-  - LumenShore Ltd → likely needs to register
+- [ ] 6.1.1 — Register with ICO (Information Commissioner's Office):
+  - Data protection fee registration (£40/year for micro-organizations, £60/year for small organizations)
+  - Lumenshore Limited (Company No. 09607326) → limited company, likely needs to register
+  - Registered address for ICO: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA
+  - Check if already registered and renewal date
 - [ ] 6.1.2 — Appoint a data protection lead (even if not legally required to have a DPO):
   - Document who is responsible for data protection
   - Add contact to Privacy Policy
@@ -795,7 +817,7 @@
 **So that** LumenLingo's intellectual property is protected
 
 #### Subtasks:
-- [ ] 8.1.1 — Add copyright notice to website footer: "© 2024-2026 LumenShore Ltd. All rights reserved."
+- [ ] 8.1.1 — Add copyright notice to website footer: "© 2015-2026 Lumenshore Limited. All rights reserved."
 - [ ] 8.1.2 — Add copyright notice to iOS app Settings/About screen
 - [ ] 8.1.3 — Verify Terms of Service IP section covers:
   - All content (flashcards, grammar rules, phrases, example sentences, audio recordings) is owned by LumenShore Ltd
@@ -983,10 +1005,18 @@
   - Never hardcode prices — they differ by country and change with tax rates
 - [ ] 9.4.3 — Add pricing disclaimer to website:
   - "Prices shown in GBP include UK VAT. Actual price charged may vary based on your location and local taxes. All purchases are processed by Apple."
-- [ ] 9.4.4 — VAT registration assessment:
-  - Check if LumenShore Ltd needs VAT registration (threshold: £90,000 UK turnover)
-  - Digital services to EU consumers: may need to register for EU OSS (One Stop Shop) or rely on Apple's marketplace regime
-  - Document Apple's role as "merchant of record" handling VAT on iOS IAP
+- [ ] 9.4.4 — VAT compliance (Lumenshore Limited IS VAT-registered: GB 270411929):
+  - **VAT on digital services to UK consumers**: 20% VAT must be charged
+  - **Apple's role**: Apple acts as agent/merchant of record for iOS IAP — Apple remits VAT to HMRC for UK iOS transactions
+  - **Website direct sales** (if any future non-IAP revenue): must charge and remit VAT
+  - **EU VAT OSS (One Stop Shop)**: for B2C digital services to EU consumers, register for EU VAT OSS to simplify multi-country VAT returns (instead of registering in each EU member state)
+  - **EU VAT rates by country**: vary from 17% (Luxembourg) to 27% (Hungary) for digital services
+  - **Apple handles EU VAT** for IAP — but if selling directly on website to EU consumers, must register for OSS or use Apple's marketplace regime
+  - **Display VAT number on website**: required by VAT Act 1994 and EU VAT Directive
+  - **VAT invoicing**: ensure VAT invoices available if requested (B2B customers)
+  - **Japan Consumption Tax (JCT)**: 10% on digital services — Apple handles for IAP; assess if direct sales to Japan require JCT registration
+  - **US sales tax**: varies by state; Apple handles for IAP; no direct website sales currently
+  - **Annual VAT return and Making Tax Digital (MTD)** compliance with HMRC
 
 **Acceptance Criteria**:
 - Prices displayed with tax/VAT included (B2C)
@@ -1399,6 +1429,7 @@
   - Limitation of consequential/indirect damages
   - Cap on aggregate liability (fees paid in trailing 12 months or £100, whichever greater)
   - Exclusions: cannot exclude liability for death/personal injury (UK law), fraud, statutory rights
+  - Reference Lumenshore Limited (Company No. 09607326) as the contracting entity
 - [ ] 14.2.2 — Add educational content disclaimer:
   - "LumenLingo is a language learning aid, not a certified educational institution"
   - "We do not guarantee fluency or any specific level of proficiency"
@@ -1642,10 +1673,13 @@
   - Cookie Policy (add when created)
   - Accessibility Statement (add link)
   - Cookie Settings (add when consent banner created — allows re-opening preferences)
-- [ ] 16.3.2 — Add copyright notice to footer: "© 2024-2026 LumenShore Ltd. All rights reserved."
-- [ ] 16.3.3 — Add company registration info (optional but professional):
-  - "LumenShore Ltd, registered in England and Wales"
-  - Company number (when registered)
+- [ ] 16.3.2 — Add company legal disclosures to footer (UK Companies Act 2006 s.82 + Business Names requirements):
+  - "Lumenshore Limited"
+  - "Company No. 09607326"
+  - "Registered in England and Wales"
+  - "Registered Office: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA"
+  - "VAT No. GB 270411929"
+- [ ] 16.3.3 — Add copyright notice to footer: "© 2015–2026 Lumenshore Limited. All rights reserved."
 - [ ] 16.3.4 — Verify footer renders correctly in all 10 locales including RTL (Arabic)
 
 **Acceptance Criteria**:
@@ -1656,7 +1690,1005 @@
 
 ---
 
+## Epic 17: UK Companies Act & Business Disclosure Requirements
+
+**Priority**: P0 — Critical
+**Scope**: lumen-lingo-frontend + iOS app + all business communications
+**Rationale**: UK Companies Act 2006 (s.82), Company, Limited Liability Partnership and Business (Names and Trading Disclosures) Regulations 2015, and VAT Act 1994 require specific information to be displayed on websites, emails, and business documents of registered companies. Non-compliance is a criminal offence carrying fines.
+
+### Story 17.1: Website Statutory Disclosures
+
+**As a** UK limited company operating a commercial website
+**I want** all legally required business information displayed on the website
+**So that** Lumenshore Limited complies with Companies Act 2006 s.82 and avoids criminal penalties
+
+#### Subtasks:
+- [ ] 17.1.1 — Display on every page (footer recommended):
+  - Full company name: "Lumenshore Limited"
+  - Company registration number: 09607326
+  - Place of registration: England and Wales
+  - Registered office address: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA
+  - VAT registration number: GB 270411929
+- [ ] 17.1.2 — Add to all electronic business communications (emails):
+  - Company name, registration number, place of registration, registered office
+  - VAT number on all invoices and correspondence about supplies
+- [ ] 17.1.3 — Ensure all email templates (newsletter, waitlist confirmation, transactional) include company legal details in footer
+- [ ] 17.1.4 — If using a trading name different from registered name ("LumenShore" vs "Lumenshore Limited"), display registered name alongside
+- [ ] 17.1.5 — Add company information to iOS app About/Settings screen:
+  - "Made by Lumenshore Limited"
+  - Company number and registered address accessible from Settings > Legal
+
+**Acceptance Criteria**:
+- All Companies Act 2006 s.82 requirements met on website and emails
+- VAT number displayed where legally required
+- All email templates include company footer
+- iOS app shows company information
+
+### Story 17.2: Business Letters and Order Documentation
+
+**As a** VAT-registered UK limited company
+**I want** all business documents to include required legal information
+**So that** Lumenshore Limited meets Companies Act and VAT Act requirements
+
+#### Subtasks:
+- [ ] 17.2.1 — Create standard business document template including:
+  - Company name, number, registered office
+  - VAT number
+  - Directors' names (if any shown on correspondence — note: not required unless ALL directors are named)
+- [ ] 17.2.2 — Ensure all invoices (if issuing directly) include:
+  - VAT number (GB 270411929)
+  - Invoice date, sequential invoice number
+  - Description of supply, taxable amount, VAT rate, VAT amount, total
+  - Company name and address
+- [ ] 17.2.3 — Configure email service provider templates with mandatory footer
+- [ ] 17.2.4 — App Store / Apple invoicing: document that Apple handles consumer invoicing for IAP; Lumenshore receives agency settlement statements from Apple
+
+**Acceptance Criteria**:
+- All business documents compliant
+- Invoice template ready for direct sales
+- Apple's invoicing role documented
+- Email templates verified
+
+---
+
+## Epic 18: Country-Specific Privacy Law Compliance
+
+**Priority**: P0 — Critical
+**Scope**: All platforms
+**Rationale**: LumenLingo has 25 language pairs targeting speakers of 9 languages, plus a Portuguese website locale. Each target market has its own data protection legislation. As a UK company actively marketing to these jurisdictions (via localized content and translated website), Lumenshore Limited must comply with local privacy laws.
+
+### Story 18.1: Japan — Act on the Protection of Personal Information (APPI)
+
+**As a** service targeting Japanese users (ja locale, EN↔JP + PL→JP language pairs)
+**I want** compliance with Japan's APPI
+**So that** Japanese users' data rights are respected and Lumenshore avoids penalties
+
+#### Subtasks:
+- [ ] 18.1.1 — Assess APPI applicability:
+  - APPI applies if handling personal information of Japanese residents
+  - Japanese website locale + Japanese language pairs = deliberate targeting
+  - Threshold: any business handling personal data of Japanese individuals
+- [ ] 18.1.2 — APPI privacy policy requirements:
+  - Specify purpose of use for all personal data ("utilization purpose")
+  - Name/business name of the handler (Lumenshore Limited)
+  - Procedures for data access, correction, deletion, and cessation of use
+  - Contact point for inquiries and complaints
+  - If transferring to third party: specify the third party, data types, and means of transfer
+- [ ] 18.1.3 — Cross-border transfer rules (APPI Art. 28):
+  - Japan requires informed consent OR equivalent data protection in recipient country for cross-border transfers
+  - UK has Japan adequacy (both recognized under mutual arrangements)
+  - Vercel (US) and Sentry (US) — must disclose US data transfer with safeguards
+  - Add Japan-specific cross-border transfer disclosure to privacy policy
+- [ ] 18.1.4 — APPI rights for data subjects:
+  - Right to request disclosure of retained personal data
+  - Right to correction/addition/deletion
+  - Right to cessation/erasure of use
+  - Right to request cessation of provision to third parties
+  - Response required "without delay"
+- [ ] 18.1.5 — Add Japanese-language privacy policy section covering APPI-specific disclosures
+- [ ] 18.1.6 — Appoint authorized representative in Japan (optional but recommended for complaint handling)
+- [ ] 18.1.7 — Monitor PPC (Personal Information Protection Commission) guidance updates
+
+**Acceptance Criteria**:
+- Privacy policy includes APPI-compliant disclosures
+- Cross-border transfer justified and disclosed
+- Japanese users can exercise APPI rights
+- Japanese-language privacy content available (ja locale)
+
+### Story 18.2: China — Personal Information Protection Law (PIPL)
+
+**As a** service targeting Chinese users (zh locale, EN↔CN + PL→CN language pairs)
+**I want** compliance with China's PIPL
+**So that** Lumenshore avoids severe penalties (up to 5% annual revenue) and service disruption
+
+#### Subtasks:
+- [ ] 18.2.1 — Assess PIPL applicability:
+  - PIPL applies to processing personal information of individuals in China, even by overseas entities
+  - Chinese website locale + Chinese language pairs = deliberate targeting of Chinese users
+  - CRITICAL: PIPL is one of the world's strictest data protection laws
+- [ ] 18.2.2 — PIPL consent requirements:
+  - Separate consent required for: sensitive personal information, cross-border transfers, providing data to third parties
+  - Consent must be informed, voluntary, and explicit
+  - Separate consent for each purpose (not bundled)
+- [ ] 18.2.3 — Cross-border transfer compliance (PIPL Art. 38-39):
+  - Options: (a) Pass security assessment by CAC, (b) Obtain certification by recognized body, (c) Enter into standard contracts with overseas recipients, (d) Comply with other CAC provisions
+  - For small-scale processing: Standard Contract route most practical
+  - Must conduct Personal Information Protection Impact Assessment (PIPIA) before cross-border transfer
+  - Inform individuals and obtain separate consent for cross-border transfer
+- [ ] 18.2.4 — Appoint PIPL representative in China (PIPL Art. 53):
+  - Required for overseas entities processing Chinese residents' data
+  - Representative handles compliance matters
+  - Report representative details to competent authority
+- [ ] 18.2.5 — PIPL data subject rights:
+  - Right to know, right to decide, right to restrict/refuse processing
+  - Right to access and copy personal information
+  - Right to portability, correction, deletion
+  - Right to request explanation of processing rules
+  - Right of deceased person's next of kin to exercise rights
+- [ ] 18.2.6 — Data localization assessment:
+  - PIPL may require data localization for certain data types/volumes
+  - Assess whether current data volumes trigger localization requirements
+  - Document decision and rationale
+- [ ] 18.2.7 — Add Chinese-language privacy disclosures meeting PIPL requirements to zh locale
+- [ ] 18.2.8 — **Risk assessment**: Consider whether to limit Chinese user data processing until full PIPL compliance is achieved
+
+**Acceptance Criteria**:
+- PIPL applicability assessed and documented
+- Cross-border transfer mechanism chosen and implemented
+- Chinese representative appointed or exemption documented
+- Chinese-language PIPL-compliant privacy disclosures available
+- PIPIA completed for cross-border transfers
+
+### Story 18.3: Brazil — Lei Geral de Proteção de Dados (LGPD)
+
+**As a** service with Portuguese locale (pt) targeting Brazilian/Portuguese users
+**I want** compliance with Brazil's LGPD
+**So that** Brazilian users' data rights are respected
+
+#### Subtasks:
+- [ ] 18.3.1 — Assess LGPD applicability:
+  - LGPD applies if: processing data of individuals in Brazil, OR processing performed in Brazil, OR data collected in Brazil
+  - Portuguese website locale = targeting Portuguese-speaking users (Brazil is largest pt market)
+  - Newsletter/waitlist signups from Brazil = collecting data of Brazilian individuals
+- [ ] 18.3.2 — LGPD legal bases (similar to GDPR but with 10 bases):
+  - Consent, legitimate interest, contractual necessity, regulatory compliance, research, exercise of rights, health protection, life protection, credit protection, public policy
+  - Map each processing activity to appropriate LGPD basis
+- [ ] 18.3.3 — LGPD privacy policy requirements:
+  - Purpose of processing
+  - Duration and form of processing
+  - Controller identity and contact (Lumenshore Limited)
+  - Information on shared use of data
+  - Responsibilities of processing agents
+  - Rights of data subjects
+- [ ] 18.3.4 — LGPD data subject rights:
+  - Confirmation of processing existence
+  - Access to data
+  - Correction of incomplete/inaccurate data
+  - Anonymization, blocking, or deletion of unnecessary data
+  - Data portability
+  - Deletion of data processed with consent
+  - Information about shared data with public/private entities
+  - Information about possibility and consequences of denying consent
+  - Revocation of consent
+- [ ] 18.3.5 — Appoint Data Protection Officer for LGPD purposes (can be same person as UK DPO/lead)
+- [ ] 18.3.6 — International data transfer compliance:
+  - LGPD requires adequate protection in recipient country or standard contractual clauses
+  - ANPD (National Data Protection Authority) adequacy determinations
+  - Document transfer mechanism (UK-Brazil)
+- [ ] 18.3.7 — Add Portuguese-language LGPD-specific privacy disclosures to pt locale
+- [ ] 18.3.8 — Monitor ANPD enforcement and guidance (LGPD enforcement is maturing rapidly)
+
+**Acceptance Criteria**:
+- LGPD applicability documented
+- Privacy policy includes LGPD-specific disclosures in Portuguese
+- Data subject rights process covers LGPD requirements
+- Cross-border transfer mechanism documented
+
+### Story 18.4: Germany — Bundesdatenschutzgesetz (BDSG) & Telekommunikation-Telemedien-Datenschutz-Gesetz (TTDSG)
+
+**As a** service targeting German-speaking users (de locale, EN↔DE + PL→DE + DE→ES + DE→PL pairs)
+**I want** compliance with Germany's strict data protection implementation
+**So that** Lumenshore meets Germany's rigorous standards
+
+#### Subtasks:
+- [ ] 18.4.1 — TTDSG cookie/tracking compliance (Germany's implementation of ePrivacy):
+  - TTDSG §25 requires consent for storing/accessing information on end-user devices (stricter than GDPR alone)
+  - Explicit consent before Sentry tracking, session replay, non-essential storage
+  - German courts interpret "consent" very strictly (no nudging, no dark patterns, no cookie walls)
+- [ ] 18.4.2 — Impressum (Imprint) requirement:
+  - **MANDATORY**: German Telemediengesetz (TMG) §5 requires "Impressum" (legal imprint) on ALL commercial websites accessible in Germany
+  - Must include: full company name, registered address, contact (email + phone/fax), company registration details, VAT ID
+  - Add `/impressum` or `/imprint` page to website
+  - Must be accessible within 2 clicks from any page
+  - Failure to display = regulatory fine + competitive unfair advertising claims
+- [ ] 18.4.3 — German-language privacy policy requirements:
+  - German DPAs expect privacy policies to be available in German if targeting German users
+  - Must meet GDPR standards plus BDSG-specific provisions
+  - Clear, precise language (German courts scrutinize wording heavily)
+- [ ] 18.4.4 — BDSG §26 — Employee data protection (relevant if German contractors/employees)
+- [ ] 18.4.5 — Data Protection Officer assessment:
+  - BDSG §38: DPO required if 20+ persons regularly processing personal data
+  - Currently likely below threshold, but document assessment
+- [ ] 18.4.6 — German age of digital consent: 16 years (GDPR Art. 8 — Germany chose maximum)
+  - Current 13+ age gate insufficient for Germany
+  - Must require parental consent for users aged 13-15 if processing based on consent
+
+**Acceptance Criteria**:
+- Impressum page created and accessible
+- TTDSG-compliant consent mechanism
+- German-language privacy policy available
+- Age of consent (16) handled for German users
+- BDSG requirements assessed
+
+### Story 18.5: France — CNIL Guidelines & French Law
+
+**As a** service targeting French-speaking users (fr locale, EN↔FR + PL→FR language pairs)
+**I want** compliance with France's CNIL guidance and local data protection law
+**So that** French users are properly protected
+
+#### Subtasks:
+- [ ] 18.5.1 — CNIL cookie consent guidelines:
+  - France has the strictest cookie consent enforcement in the EU (CNIL fined Google €150M, Facebook €60M)
+  - "Continue browsing" does NOT count as consent
+  - Must offer equal prominence to "Accept All" and "Refuse All" buttons
+  - No cookie walls (cannot condition access on accepting cookies)
+  - Consent must be specific per purpose (not bundled)
+  - Consent records must be kept for proof
+- [ ] 18.5.2 — Mentions Légales (Legal Notices) requirement:
+  - French LCEN (Loi pour la Confiance dans l'Économie Numérique) Article 6:
+  - Must display: company name, registered address, company number, VAT number, publication director, hosting provider name/address
+  - Add `/mentions-legales` page or include in `/imprint`
+- [ ] 18.5.3 — French language requirements:
+  - Loi Toubon (1994): consumer information must be available in French for products/services offered in France
+  - Privacy policy, terms of service, cookie policy must be available in French
+  - App Store listing in French if specifically targeting France
+- [ ] 18.5.4 — French age of digital consent: 15 years
+  - For consent-based processing of minors: verify age 15+ or obtain parental consent
+- [ ] 18.5.5 — CNIL-specific rights:
+  - Right to define post-mortem instructions for personal data (unique to French law)
+  - Include in French privacy policy
+- [ ] 18.5.6 — French consumer protection:
+  - Code de la consommation Arts. L221-1 to L221-18: pre-contractual information requirements
+  - 14-day withdrawal right for distance contracts
+
+**Acceptance Criteria**:
+- CNIL cookie guidelines implemented
+- Mentions Légales page created
+- French-language legal documents available
+- Post-mortem data instructions addressed
+- Age of consent (15) handled for French users
+
+### Story 18.6: Poland — PUODO & Polish Regulatory Requirements
+
+**As a** service with strong Polish user focus (8 Polish language pairs, pl locale)
+**I want** compliance with Polish data protection and consumer law
+**So that** Polish users are properly protected
+
+#### Subtasks:
+- [ ] 18.6.1 — PUODO (Polish DPA) compliance:
+  - Poland applies GDPR via national implementing legislation
+  - PUODO is an active enforcer — issued significant fines
+  - Ensure ROPA covers Polish users explicitly
+- [ ] 18.6.2 — Polish language requirements:
+  - Polish Consumer Rights Act (Ustawa o prawach konsumenta): pre-contractual information must be in Polish
+  - Privacy policy, terms, cookie policy must be available in Polish
+  - Subscription disclosures must be in Polish for Polish consumers
+- [ ] 18.6.3 — Polish age of digital consent: 16 years
+  - Same as Germany — parental consent needed for 13-15 year olds
+- [ ] 18.6.4 — Polish e-commerce requirements:
+  - Ustawa o świadczeniu usług drogą elektroniczną (Act on Providing Services by Electronic Means)
+  - Must provide clear service provider identification
+  - Must allow complaints via electronic means
+  - Must have complaint handling procedure
+- [ ] 18.6.5 — Polish telecommunications law:
+  - Prawo telekomunikacyjne Art. 173: consent required for storing data on end-user devices (similar to ePrivacy/PECR)
+- [ ] 18.6.6 — UOKiK (Polish Office of Competition and Consumer Protection):
+  - Monitors unfair contract terms and misleading practices
+  - Subscription auto-renewal and cancellation terms must be clear and fair in Polish
+
+**Acceptance Criteria**:
+- Polish-language legal documents available
+- PUODO compliance verified
+- Polish consumer protection requirements met
+- Age of consent (16) handled for Polish users
+
+### Story 18.7: Ukraine — Law on Protection of Personal Data
+
+**As a** service targeting Ukrainian users (uk locale, UA↔EN + UA↔PL + PL→UA language pairs)
+**I want** compliance with Ukrainian data protection law
+**So that** Ukrainian users' rights are respected
+
+#### Subtasks:
+- [ ] 18.7.1 — Assess applicability of Ukrainian Law on Protection of Personal Data (Law No. 2297-VI):
+  - Applies to processing personal data of Ukrainian citizens
+  - Ukrainian language pairs + uk locale = deliberate targeting
+- [ ] 18.7.2 — Ukrainian data protection requirements:
+  - Must notify the Ukrainian Commissioner for Human Rights (Ombudsman) about personal data processing databases
+  - Consent required for processing (similar to GDPR but with local nuances)
+  - Data subjects have right to access, correction, and destruction of personal data
+- [ ] 18.7.3 — Cross-border data transfer from Ukraine:
+  - Transfers allowed to countries with adequate protection
+  - UK may or may not be on Ukraine's adequacy list — verify current status
+  - If not adequate: consent of data subject required
+- [ ] 18.7.4 — Ukrainian language privacy policy:
+  - Add Ukrainian-language privacy disclosures to uk locale
+- [ ] 18.7.5 — **Sanctions considerations**:
+  - Verify no issues with UK/EU sanctions affecting service provision to Ukraine (currently no restrictions on consumer services to Ukraine)
+  - Ensure payment processing works for Ukrainian users (Apple handles IAP)
+- [ ] 18.7.6 — Monitor Ukrainian regulatory developments (Ukraine is aligning data protection law with GDPR as part of EU accession process)
+
+**Acceptance Criteria**:
+- Ukrainian data protection law compliance assessed
+- Cross-border transfer mechanism documented
+- Ukrainian-language privacy disclosures available
+- Sanctions compliance verified
+
+### Story 18.8: Middle East — UAE & Saudi Arabia Data Protection
+
+**As a** service targeting Arabic-speaking users (ar locale, EN↔AR + PL→AR language pairs)
+**I want** compliance with Middle Eastern data protection laws
+**So that** Arabic-speaking users in the UAE and Saudi Arabia are properly protected
+
+#### Subtasks:
+- [ ] 18.8.1 — UAE Federal Decree-Law No. 45 of 2021 (Personal Data Protection Law):
+  - Effective since January 2022 (regulations issued 2023)
+  - Applies to processing personal data of UAE residents
+  - Requirements: consent, purpose limitation, data minimization, transparency
+  - Cross-border transfers: allowed to countries with adequate protection or with appropriate safeguards
+  - Data subject rights: access, rectification, erasure, restriction, portability, objection
+  - Must have privacy policy disclosing processing details
+- [ ] 18.8.2 — Saudi Arabia Personal Data Protection Law (PDPL):
+  - Effective since September 2023
+  - Applies to processing personal data of Saudi residents
+  - Explicit consent required for processing (limited exceptions)
+  - Cross-border transfers: only to countries on approved list or with adequate safeguards
+  - Mandatory appointment of representative in Saudi Arabia for overseas processors
+  - Data localization: certain categories may need to remain in Saudi Arabia
+- [ ] 18.8.3 — Bahrain — Personal Data Protection Law (PDPL, Law No. 30 of 2018):
+  - Applies if Bahraini users access the service
+  - Similar GDPR-like framework
+- [ ] 18.8.4 — Arabic-language privacy policy:
+  - Must be available in Arabic for ar locale users
+  - RTL layout verification for legal content
+- [ ] 18.8.5 — Content sensitivity review:
+  - Ensure flashcard/learning content is culturally appropriate for Middle Eastern users
+  - No content that could be considered offensive under local laws
+  - Review example sentences and cultural references
+- [ ] 18.8.6 — Document compliance approach per country:
+  - Tier 1: UAE and Saudi Arabia (largest Arabic-speaking markets)
+  - Tier 2: Bahrain, Qatar, Kuwait, Oman, Jordan, Egypt (monitor)
+
+**Acceptance Criteria**:
+- UAE PDPL compliance assessed and documented
+- Saudi Arabia PDPL compliance assessed
+- Arabic-language privacy policy available
+- Content cultural review completed
+- Cross-border transfer mechanisms documented
+
+### Story 18.9: Spain & Latin America — LOPDGDD & Regional Laws
+
+**As a** service targeting Spanish-speaking users (es locale, EN↔ES + PL→ES + DE→ES pairs)
+**I want** compliance with Spanish and Latin American data protection laws
+**So that** Spanish-speaking users across multiple jurisdictions are protected
+
+#### Subtasks:
+- [ ] 18.9.1 — Spain LOPDGDD (Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales):
+  - Spain's GDPR implementation with additional digital rights
+  - Right to digital disconnect for employees
+  - Right to digital education
+  - Right to rectification on the internet
+  - Digital testament — right to manage deceased person's digital presence
+  - Spanish age of digital consent: 14 years
+- [ ] 18.9.2 — Argentina — Ley de Protección de Datos Personales (25.326):
+  - Argentina has EU adequacy decision
+  - Similar framework to GDPR
+  - If significant Argentine user base develops, assess compliance
+- [ ] 18.9.3 — Mexico — Ley Federal de Protección de Datos Personales:
+  - Requires privacy notice (Aviso de Privacidad) before collecting personal data
+  - Must include: controller identity, purposes, data transfers, rights mechanisms
+  - If targeting Mexican market specifically
+- [ ] 18.9.4 — Colombia — Ley 1581 de 2012:
+  - Prior authorization (consent) required for data processing
+  - Registry of databases with SIC (Superintendencia de Industria y Comercio)
+- [ ] 18.9.5 — Spanish-language privacy policy:
+  - Must cover LOPDGDD-specific rights if targeting Spain
+  - Include AEPD (Agencia Española de Protección de Datos) complaint information
+- [ ] 18.9.6 — Document compliance hierarchy:
+  - Tier 1: Spain (EU/GDPR + LOPDGDD)
+  - Tier 2: Mexico, Argentina (if significant user base)
+  - Tier 3: Other LatAm countries (monitor)
+
+**Acceptance Criteria**:
+- Spain LOPDGDD-specific requirements addressed
+- Spanish-language privacy policy includes digital rights
+- LatAm data protection landscape assessed
+- Compliance tiers documented
+
+---
+
+## Epic 19: Age of Digital Consent — Multi-Jurisdiction Compliance
+
+**Priority**: P0 — Critical
+**Scope**: lumen-lingo-frontend + LumenLingo iOS App
+**Rationale**: The age at which a minor can give valid consent for data processing varies significantly by country. An educational/language learning app is likely to attract users under 18. Current blanket "13+" policy is insufficient for Germany (16), Netherlands (16), France (15), Italy (14), Spain (14), Poland (16), and many other jurisdictions.
+
+### Story 19.1: Age of Consent Mapping & Implementation
+
+**As a** service operating across multiple jurisdictions
+**I want** age verification that respects each country's digital consent age
+**So that** minor users' data is processed lawfully
+
+#### Subtasks:
+- [ ] 19.1.1 — Create age of digital consent mapping table:
+
+  | Country | Age | Regulation |
+  |---|---|---|
+  | UK | 13 | UK GDPR / ICO guidance |
+  | USA | 13 | COPPA |
+  | Spain | 14 | LOPDGDD |
+  | Italy | 14 | D.Lgs 101/2018 |
+  | France | 15 | Loi Informatique et Libertés |
+  | Japan | 16* | APPI (parental consent for under-18 in practice) |
+  | Germany | 16 | BDSG |
+  | Netherlands | 16 | UAVG |
+  | Poland | 16 | GDPR national implementation |
+  | Ireland | 16 | Data Protection Act 2018 |
+  | China | 14 | PIPL Art. 31 (under-14 classified as sensitive data) |
+  | Brazil | 12/18† | LGPD Art. 14 (children under 12: parental consent; 12-17: best interest) |
+  | UAE | 18 | UAE PDPL (minors need guardian consent) |
+  | Saudi Arabia | 18 | PDPL (minors need guardian consent) |
+  | Australia | No specific age | Privacy Act 1988 (capacity-based approach) |
+
+  *Japan: no fixed digital consent age; APPI uses case-by-case assessment for minors
+  †Brazil: "children" are under 12 (ECA), "adolescents" are 12-17
+
+- [ ] 19.1.2 — Implement locale-aware age verification:
+  - Detect user's locale/region from app locale or website locale setting
+  - Apply the correct minimum age for that jurisdiction
+  - For unclear cases, default to 16 (highest common EU age)
+- [ ] 19.1.3 — Implement parental consent flow for underage users:
+  - For users between the youngest threshold (13) and their jurisdiction's consent age:
+  - Display age-appropriate notice explaining data collection
+  - Request verifiable parental consent (email to parent, parent account linkage, etc.)
+  - Block consent-based processing until parental consent obtained
+  - Essential processing (contract performance for app functionality) may proceed without parental consent
+- [ ] 19.1.4 — Add age verification to website newsletter/waitlist signup:
+  - Cannot collect email from underage user without parental consent
+  - Add age gate or declaration before form submission
+- [ ] 19.1.5 — Document minimum viable approach:
+  - **Recommended**: Set minimum age to 16 globally (simplest compliance)
+  - **Alternative**: Locale-based dynamic age gating (more complex, better UX for younger users in lower-threshold countries)
+- [ ] 19.1.6 — CHINA SPECIAL: PIPL classifies under-14 data as "sensitive personal information":
+  - Requires separate consent from parent/guardian
+  - Must conduct Personal Information Protection Impact Assessment
+  - Stricter than most other jurisdictions
+
+**Acceptance Criteria**:
+- Age consent mapping documented for all target jurisdictions
+- Age verification mechanism implemented (locale-aware or global minimum)
+- Parental consent flow designed for underage users
+- Under-14 processing treated as sensitive data for Chinese users
+- Website forms gated appropriately
+
+### Story 19.2: Children's Privacy Enhanced Protections
+
+**As a** service likely used by minors for language learning
+**I want** enhanced privacy protections for young users
+**So that** Lumenshore demonstrates best-practice child safety
+
+#### Subtasks:
+- [ ] 19.2.1 — Data minimization for minors:
+  - Collect only data strictly necessary for service delivery
+  - No marketing communications to verified minors
+  - No session replay for verified minor users
+  - No analytics tracking beyond essential error monitoring
+- [ ] 19.2.2 — Parental controls:
+  - If parent/guardian consent provided: give parent ability to review child's data
+  - Allow parent to revoke consent at any time
+  - Delete minor's data upon parental request
+- [ ] 19.2.3 — Age-appropriate privacy notices:
+  - Simplified privacy explanation for young users (13-17)
+  - Visual/accessible format rather than dense legal text
+- [ ] 19.2.4 — UK Children's Code (Age Appropriate Design Code) compliance:
+  - ICO's Age Appropriate Design Code applies to online services likely to be accessed by children
+  - 15 standards including: best interest, data minimization, default settings (high privacy), transparency, nudge techniques prohibited
+  - Language learning app = likely accessed by children under 18
+  - **Critical**: default settings must be high-privacy for all users to comply
+- [ ] 19.2.5 — Apple App Store age rating:
+  - Set appropriate age rating in App Store Connect
+  - Content rating: 4+ (educational content)
+  - Account requirements: 13+ (or jurisdiction-appropriate with parental consent)
+
+**Acceptance Criteria**:
+- Data minimization for minors implemented
+- Parental controls designed
+- Age-appropriate privacy notices created
+- UK Children's Code assessed and compliance planned
+- App Store age rating accurate
+
+---
+
+## Epic 20: VAT, Tax & Financial Compliance
+
+**Priority**: P0 — Critical
+**Scope**: All platforms + business operations
+**Rationale**: Lumenshore Limited is VAT-registered (GB 270411929). Digital services supplied B2C (business-to-consumer) to EU/UK consumers have specific VAT obligations. Apple handles IAP VAT as merchant of record, but website-based revenue, if any, requires direct VAT compliance. Tax compliance failures result in HMRC penalties plus interest.
+
+### Story 20.1: UK VAT Compliance
+
+**As a** UK VAT-registered business
+**I want** full UK VAT compliance
+**So that** Lumenshore meets HMRC requirements and avoids penalties
+
+#### Subtasks:
+- [ ] 20.1.1 — Ensure VAT number displayed:
+  - Website footer: "VAT No. GB 270411929"
+  - All invoices and business correspondence
+  - App Store Connect developer information (if required)
+- [ ] 20.1.2 — VAT on direct sales (website, if any):
+  - Any digital service sold directly to UK consumers: 20% standard rate VAT
+  - Any digital service sold directly to UK businesses: 20% VAT (unless reverse charge applies for overseas B2B)
+  - Ensure pricing pages show VAT-inclusive prices for B2C (Price Marking Order 2004)
+- [ ] 20.1.3 — Apple IAP VAT handling:
+  - Apple collects and remits VAT for iOS in-app purchases as "marketplace operator"
+  - Since UK Finance Act 2021: Apple is deemed the supplier for VAT purposes
+  - Lumenshore receives net payment (minus Apple commission and VAT)
+  - Keep Apple settlement statements as VAT records
+  - Ensure proper accounting treatment: revenue is net amount received from Apple
+- [ ] 20.1.4 — Making Tax Digital (MTD) for VAT:
+  - Mandatory for all VAT-registered businesses
+  - Must keep digital records
+  - Must file VAT returns via MTD-compatible software (Xero, QuickBooks, FreeAgent, etc.)
+  - Quarterly VAT returns
+- [ ] 20.1.5 — VAT records retention:
+  - Retain all VAT records for 6 years (HMRC requirement)
+  - Include: sales invoices, purchase invoices, Apple settlement reports, VAT returns
+- [ ] 20.1.6 — Annual accounting scheme assessment:
+  - If turnover under £1.35M: may use annual accounting scheme (one annual return + interim payments)
+  - Or standard quarterly returns
+  - Choose appropriate scheme for current business size
+
+**Acceptance Criteria**:
+- VAT number displayed per legal requirements
+- Apple IAP VAT treatment correctly documented and accounted for
+- MTD compliance in place
+- Records retention policy established
+- Pricing pages show VAT-inclusive prices
+
+### Story 20.2: EU VAT on Digital Services (OSS)
+
+**As a** UK business supplying digital services to EU consumers
+**I want** correct EU VAT treatment
+**So that** Lumenshore complies with EU VAT obligations for cross-border digital services
+
+#### Subtasks:
+- [ ] 20.2.1 — EU VAT for digital services — the rules:
+  - B2C digital services to EU consumers are taxed in the consumer's country
+  - This means VAT at the rate of the consumer's EU member state (not UK rate)
+  - Examples: Germany 19%, France 20%, Spain 21%, Poland 23%, Ireland 23%, Italy 22%
+- [ ] 20.2.2 — Apple as marketplace operator (EU):
+  - Under EU DAC7 and marketplace rules: Apple is deemed the supplier for VAT purposes
+  - Apple collects and remits EU VAT for all iOS IAP
+  - Lumenshore's obligation limited to proper revenue recognition of net amounts
+  - Document this arrangement formally
+- [ ] 20.2.3 — Non-IAP EU revenue (website direct sales, if any):
+  - If Lumenshore sells digital services directly to EU consumers (not through Apple):
+  - Must register for UK VAT OSS (One Stop Shop) with HMRC — this is the post-Brexit Non-Union OSS
+  - OR register for VAT in each EU member state individually (impractical)
+  - OSS allows single quarterly return covering all EU member states
+  - Apply each member state's VAT rate to sales in that country
+- [ ] 20.2.4 — EU OSS registration (if needed):
+  - Register via HMRC's Non-Union OSS portal
+  - File quarterly OSS returns (by end of month following each quarter)
+  - Pay EU VAT collected to HMRC, who distributes to EU member states
+  - Keep detailed records of supplies to each EU member state for 10 years
+- [ ] 20.2.5 — B2B digital services to EU businesses:
+  - Reverse charge mechanism applies — Lumenshore does not charge VAT
+  - Customer self-accounts for VAT in their country
+  - Verify customer's EU VAT number via VIES system
+  - Zero-rate the invoice
+- [ ] 20.2.6 — Evidence of customer location (EU two-piece-of-evidence rule):
+  - Must have two pieces of non-contradictory evidence of customer location: IP address, billing address, bank details, SIM card country, etc.
+  - Apple provides this for IAP (handled automatically)
+  - For website direct sales: use IP geolocation + billing address
+
+**Acceptance Criteria**:
+- Apple's EU VAT role documented and accounted for
+- OSS registration assessed and completed if required
+- B2B reverse charge process documented
+- Customer location evidence process in place
+- EU VAT rates correctly applied to any direct sales
+
+### Story 20.3: International Tax Obligations
+
+**As a** global service provider
+**I want** awareness of international tax obligations
+**So that** Lumenshore doesn't inadvertently create tax liabilities abroad
+
+#### Subtasks:
+- [ ] 20.3.1 — Japan Consumption Tax (JCT):
+  - JCT rate: 10% on digital services
+  - Apple handles JCT for IAP as registered foreign business
+  - If direct sales to Japanese consumers: may need JCT registration (threshold: ¥10M annual revenue from Japan)
+  - Document Apple's JCT handling
+- [ ] 20.3.2 — US Sales Tax:
+  - No federal digital services tax
+  - State-level sales tax varies (not all states tax digital services)
+  - Apple handles sales tax collection for IAP in all US states
+  - If direct website sales to US: assess economic nexus thresholds per state
+- [ ] 20.3.3 — Australian GST on digital services:
+  - 10% GST on supplies of digital products to Australian consumers
+  - Apple handles GST for IAP
+  - If direct sales > AUD 75,000 annually: must register for GST
+- [ ] 20.3.4 — India GST on digital services:
+  - 18% GST on online information and database access services
+  - Apple handles for IAP
+  - Non-resident providers may need GST registration for direct sales
+- [ ] 20.3.5 — OECD BEPS Pillar One / Pillar Two:
+  - Global minimum tax (15%) — currently applies to large MNEs (€750M+ revenue)
+  - Not currently applicable to Lumenshore but monitor for threshold changes
+- [ ] 20.3.6 — Corporation Tax:
+  - Lumenshore pays UK Corporation Tax on worldwide profits (currently 25% for profits over £250K, 19% small profits rate)
+  - Assess eligibility for R&D Tax Credits (software development qualifying)
+  - Assess Creative Industry Tax Relief (video games tax relief — possible application for educational software)
+- [ ] 20.3.7 — Transfer pricing:
+  - If any intercompany transactions (unlikely as sole company, but document for future)
+
+**Acceptance Criteria**:
+- International tax exposure mapped per jurisdiction
+- Apple's tax handling role documented for each market
+- UK Corporation Tax obligations current
+- R&D tax credit eligibility assessed
+- No unintended permanent establishments abroad
+
+### Story 20.4: Pricing Display Compliance
+
+**As a** consumer in any jurisdiction
+**I want** clear, honest pricing
+**So that** I know exactly what I'll pay
+
+#### Subtasks:
+- [ ] 20.4.1 — UK Price Marking Order 2004:
+  - All prices displayed to UK consumers must include VAT
+  - Must show total price (no hidden charges)
+  - If display is "from £X" — must be the lowest available price
+- [ ] 20.4.2 — EU Consumer Rights Directive pricing:
+  - Prices must be displayed in a clear and comprehensible manner
+  - Total price including all taxes and charges
+  - If price cannot be calculated in advance: how price is calculated
+  - Additional delivery/postal charges disclosed before purchase
+- [ ] 20.4.3 — EU Omnibus Directive (Price Indication Directive 98/6/EC as amended):
+  - If showing "reduced price" / "sale price": must show previous lowest price in last 30 days
+  - Applies to any discount displays on pricing page
+- [ ] 20.4.4 — iOS App pricing:
+  - Use StoreKit-provided localized prices (includes local tax automatically)
+  - Never show prices different from what Apple will charge
+  - Regional pricing must match App Store Connect tier configuration
+- [ ] 20.4.5 — Website pricing page compliance:
+  - Add currency selector or locale-based pricing
+  - Show "Prices include VAT" for UK/EU visitors
+  - Add "Price charged via Apple's App Store. Final price may vary by location."
+  - No misleading discount claims
+
+**Acceptance Criteria**:
+- UK pricing rules followed (VAT-inclusive)
+- EU pricing transparency requirements met
+- No misleading price displays
+- StoreKit dynamic pricing in app
+- Pricing disclaimers present on website
+
+---
+
+## Epic 21: Export Controls, Sanctions & Trade Compliance
+
+**Priority**: P1 — High
+**Scope**: All platforms
+**Rationale**: Software distribution across jurisdictions requires awareness of export control regulations and sanctions compliance. Lumenshore distributes an app globally and has language pairs involving sanctioned or restricted regions.
+
+### Story 21.1: Sanctions Compliance
+
+**As a** UK company distributing software globally
+**I want** compliance with UK, EU, and US sanctions regimes
+**So that** Lumenshore doesn't violate any trade sanctions
+
+#### Subtasks:
+- [ ] 21.1.1 — UK sanctions compliance (Sanctions and Anti-Money Laundering Act 2018):
+  - Review OFSI (Office of Financial Sanctions Implementation) sanctions lists
+  - Ensure no services provided to sanctioned individuals or entities
+  - Consumer language learning app = generally exempt from most sanctions as non-strategic software
+  - But must still screen for sanctioned persons if implementing real payments/accounts
+- [ ] 21.1.2 — US OFAC sanctions (relevant because Apple App Store distributes from US):
+  - Apple already restricts App Store access in sanctioned countries (Cuba, Iran, North Korea, Syria, Crimea/DNR/LNR)
+  - Lumenshore should not independently distribute to sanctioned territories
+  - Terms of Service should describe geographic restrictions
+- [ ] 21.1.3 — EU sanctions:
+  - Similar framework — Apple handles distribution restrictions
+  - Monitor EU sanctions lists for changes affecting Arabic-speaking or Ukrainian regions
+- [ ] 21.1.4 — Ukraine considerations:
+  - Ukraine is NOT sanctioned — services to Ukraine are legal and encouraged
+  - However: Crimea, Donetsk, Luhansk regions have restricted status
+  - Apple restricts App Store in these regions already
+  - Document compliance approach
+- [ ] 21.1.5 — Terms of Service geographic restrictions clause:
+  - Add: "The Service is not available in jurisdictions where prohibited by law"
+  - Note: do not provide services to sanctioned countries
+  - Apple's App Store Terms already handle this for iOS
+
+**Acceptance Criteria**:
+- Sanctions compliance reviewed for UK, EU, US
+- Geographic restrictions documented in Terms
+- Screening process in place for account-bearing users
+- Ukraine/Arabic region compliance documented
+
+### Story 21.2: Encryption Export Controls
+
+**As a** developer distributing software containing encryption
+**I want** compliance with encryption export regulations
+**So that** Lumenshore's app distribution is lawful
+
+#### Subtasks:
+- [ ] 21.2.1 — US Export Administration Regulations (EAR) — encryption:
+  - iOS apps distributed via US App Store must comply with EAR
+  - App uses HTTPS (TLS), iCloud encryption, SwiftData encryption at rest
+  - These are standard encryption — generally exempt under EAR License Exception ENC
+  - Self-classify encryption use in App Store Connect's export compliance section
+- [ ] 21.2.2 — App Store Connect export compliance:
+  - Answer Apple's export compliance questions accurately:
+  - "Does your app use encryption?" → YES (HTTPS, iCloud)
+  - "Does your app qualify for any exemptions?" → YES (standard HTTPS/TLS)
+  - If using only system-provided encryption (iOS encryption, HTTPS): typically exempt
+- [ ] 21.2.3 — French import controls (historically strict on encryption):
+  - France requires declaration for import of encryption software
+  - Apps using standard HTTPS generally exempt
+  - Document assessment
+- [ ] 21.2.4 — Document encryption audit:
+  - List all encryption used: HTTPS/TLS, iCloud encryption, SwiftData file protection, Keychain
+  - All Apple-system-provided → standard exemptions apply
+
+**Acceptance Criteria**:
+- Encryption use documented
+- App Store Connect export compliance answered correctly
+- EAR exemption justified
+- French declaration assessed
+
+---
+
+## Epic 22: Accessibility Compliance — Multi-Jurisdiction
+
+**Priority**: P1 — High
+**Scope**: lumen-lingo-frontend + LumenLingo iOS App
+**Rationale**: Multiple jurisdictions now have enforceable digital accessibility laws. The European Accessibility Act (EAA) comes into full force in June 2025, applying to digital services offered in the EU. Failure to meet accessibility standards creates both legal liability and excludes users with disabilities.
+
+### Story 22.1: European Accessibility Act (EAA) Compliance
+
+**As a** service offered to EU consumers
+**I want** compliance with the European Accessibility Act (Directive 2019/882)
+**So that** EU consumers with disabilities can use LumenLingo
+
+#### Subtasks:
+- [ ] 22.1.1 — EAA scope assessment:
+  - EAA applies to e-commerce services and associated websites/apps from 28 June 2025
+  - LumenLingo sells digital subscriptions to EU consumers = in scope
+  - Must meet EN 301 549 standard (which references WCAG 2.1 AA)
+- [ ] 22.1.2 — Website WCAG 2.1 AA audit:
+  - Full audit of all pages including: homepage, pricing, blog, legal pages, newsletter form
+  - Test with screen readers (NVDA, VoiceOver, JAWS)
+  - Keyboard navigation for all interactive elements
+  - Color contrast ratios (4.5:1 minimum for normal text)
+  - Focus indicators visible
+  - Form labels and error messages accessible
+  - RTL layout accessibility (Arabic locale)
+- [ ] 22.1.3 — iOS app accessibility audit against EN 301 549 / WCAG:
+  - VoiceOver support for all views
+  - Dynamic Type support
+  - Reduced Motion support
+  - Color contrast compliance
+  - Accessibility labels for all game elements (flashcards, tiles, buttons)
+  - Haptic feedback as accessibility enhancement
+- [ ] 22.1.4 — Accessibility statement per EAA:
+  - Must declare conformity level
+  - Must list known non-conformities with timeline for correction
+  - Must provide feedback mechanism for accessibility issues
+  - Must be updated annually
+- [ ] 22.1.5 — Disproportionate burden assessment:
+  - EAA allows exemption where compliance would cause "disproportionate burden" on micro-enterprises
+  - Assess: is Lumenshore Limited a micro-enterprise? (< 10 employees, < €2M turnover)
+  - If yes: document assessment but still comply with reasonable measures
+
+**Acceptance Criteria**:
+- EAA scope confirmed
+- Website and app accessibility audited
+- EN 301 549 / WCAG 2.1 AA conformance targeted
+- Accessibility statement compliant
+- Disproportionate burden assessed if applicable
+
+### Story 22.2: US ADA & Section 508 Digital Accessibility
+
+**As a** service accessible to US users
+**I want** awareness of US digital accessibility requirements
+**So that** Lumenshore avoids ADA litigation risk
+
+#### Subtasks:
+- [ ] 22.2.1 — ADA Title III applicability:
+  - US courts increasingly apply ADA to websites/apps
+  - No formal web accessibility standard mandated by ADA, but WCAG 2.1 AA is the de facto standard
+  - Focus on: alt text, keyboard navigation, form labels, color contrast
+- [ ] 22.2.2 — Section 508 (if applicable):
+  - Applies to federal agencies and their contractors — likely N/A for Lumenshore
+  - But sets precedent for WCAG 2.0 AA compliance
+- [ ] 22.2.3 — ADA demand letter preparedness:
+  - ADA web accessibility lawsuits are common in the US (10,000+ per year)
+  - Have VPAT (Voluntary Product Accessibility Template) ready documenting conformance
+  - Respond promptly to any accessibility complaints
+- [ ] 22.2.4 — Create VPAT (Voluntary Product Accessibility Template):
+  - Document WCAG 2.1 conformance level for both website and iOS app
+  - Publish on website or provide on request
+
+**Acceptance Criteria**:
+- ADA applicability assessed
+- VPAT created and available
+- WCAG 2.1 AA compliance targeted
+- Demand letter response process in place
+
+---
+
+## Epic 23: AI & Algorithmic Transparency (Future-Proofing)
+
+**Priority**: P2 — Medium
+**Scope**: All platforms
+**Rationale**: If LumenLingo implements AI-driven features (spaced repetition algorithms, personalized learning paths, AI-generated content), multiple regulations apply: EU AI Act, UK AI framework, GDPR automated decision-making rules.
+
+### Story 23.1: EU AI Act Preparedness
+
+**As a** service that may implement AI features
+**I want** awareness of EU AI Act requirements
+**So that** future AI features comply from inception
+
+#### Subtasks:
+- [ ] 23.1.1 — EU AI Act classification:
+  - Educational AI tools: generally "limited risk" or "minimal risk" category
+  - Spaced repetition algorithm: likely "minimal risk" (no human rights impact)
+  - Learning path personalization: likely "limited risk" (transparency obligation)
+  - AI-generated content: transparency obligation (must disclose AI-generated content)
+- [ ] 23.1.2 — Transparency obligations (even for minimal/limited risk):
+  - Must inform users when they are interacting with an AI system
+  - Must inform users of AI-generated content
+  - Must provide information about the AI system's capabilities and limitations
+- [ ] 23.1.3 — GDPR Article 22 — Automated decision-making:
+  - If algorithms make decisions with legal or significant effects on users → right to human intervention
+  - Subscription tier recommendations, content difficulty adjustment = likely below threshold
+  - But document assessment for each AI feature
+- [ ] 23.1.4 — UK AI framework:
+  - UK follows principles-based approach (not the EU's risk-based approach)
+  - Pro-innovation Regulation of AI White Paper principles: safety, transparency, fairness, accountability, contestability
+  - Document how each AI feature meets these principles
+- [ ] 23.1.5 — Create AI feature legal checklist:
+  - Does the feature make automated decisions about users?
+  - Does it use personal data for training?
+  - Does it generate content users might mistake for human-created?
+  - Does it profile users?
+
+**Acceptance Criteria**:
+- EU AI Act risk classification documented for planned features
+- Transparency obligations identified
+- GDPR Art. 22 assessment template ready
+- UK AI framework principles documented
+- AI legal checklist created for development workflow
+
+---
+
+## Epic 24: Insurance, Corporate Governance & Director Duties
+
+**Priority**: P1 — High
+**Scope**: Business operations
+**Rationale**: As a UK limited company (Lumenshore Limited, incorporated 26 May 2015, Company No. 09607326), ongoing corporate governance duties apply under the Companies Act 2006. Director duties, filing obligations, and insurance protect the company and its officers.
+
+### Story 24.1: Companies Act 2006 Ongoing Obligations
+
+**As a** director of Lumenshore Limited
+**I want** to meet all Companies Act filing and governance obligations
+**So that** the company remains in good standing and avoids penalties
+
+#### Subtasks:
+- [ ] 24.1.1 — Annual filing obligations:
+  - Confirmation Statement (previously Annual Return) filed with Companies House annually
+  - Annual Accounts filed with Companies House within required deadline
+  - Corporation Tax return filed with HMRC (12 months after accounting period end)
+- [ ] 24.1.2 — Director duties (Companies Act 2006 ss.171-177):
+  - Duty to act within powers
+  - Duty to promote the success of the company
+  - Duty to exercise independent judgment
+  - Duty to exercise reasonable care, skill and diligence
+  - Duty to avoid conflicts of interest
+  - Duty not to accept benefits from third parties
+  - Duty to declare interest in proposed transactions
+- [ ] 24.1.3 — Registered office maintenance:
+  - Ensure registered office address (Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA) is kept current with Companies House
+  - Maintain statutory register at registered office or single alternative inspection location (SAIL)
+- [ ] 24.1.4 — PSC register (Persons with Significant Control):
+  - Maintain accurate PSC register
+  - File changes with Companies House within 14 days
+  - Confirm via Confirmation Statement annually
+- [ ] 24.1.5 — Statutory books and registers:
+  - Register of members, register of directors, register of secretary (if any), register of charges
+  - Can be maintained at Companies House using Central Registry option
+
+**Acceptance Criteria**:
+- All filing obligations current and calendar-tracked
+- Director duties documented and understood
+- Registered office details current
+- PSC register maintained
+- Statutory registers in order
+
+### Story 24.2: Insurance Coverage
+
+**As a** company and its directors
+**I want** appropriate insurance coverage
+**So that** Lumenshore and its officers are protected
+
+#### Subtasks:
+- [ ] 24.2.1 — Cyber liability insurance:
+  - Coverage for data breach response costs (IT forensics, legal fees, notification costs)
+  - Coverage for regulatory investigations and fines (where insurable — ICO fines may not be insurable)
+  - Coverage for business interruption from cyber incidents
+  - Coverage for third-party claims arising from data breaches
+  - Target coverage: minimum £500K (review based on risk assessment)
+- [ ] 24.2.2 — Professional indemnity insurance:
+  - Coverage for claims of negligence or inadequate service
+  - Relevant if users claim app gave incorrect translations or educational content was wrong
+  - Target coverage: minimum £250K
+- [ ] 24.2.3 — Directors & Officers (D&O) liability insurance:
+  - Protects directors from personal liability for company decisions
+  - Covers legal defense costs
+  - Particularly important for data protection compliance (directors can be personally liable)
+- [ ] 24.2.4 — Product liability insurance:
+  - May apply to digital products in some jurisdictions
+  - EU Product Liability Directive revision may include digital products
+  - Assess need based on risk profile
+- [ ] 24.2.5 — Employers' liability insurance:
+  - Compulsory in UK if employing staff (Employers' Liability (Compulsory Insurance) Act 1969)
+  - Not required for directors with no employment contract, but needed for any employees
+- [ ] 24.2.6 — Annual insurance review:
+  - Review coverage annually aligned with business growth
+  - Increase limits as user base and revenue grow
+  - Document coverage and renewal dates
+
+**Acceptance Criteria**:
+- All necessary insurance categories assessed
+- Key policies obtained (cyber liability, PI, D&O)
+- Coverage amounts appropriate for current risk profile
+- Annual review scheduled
+
+---
+
 ## Implementation Priority Matrix
+
+| Priority | Epic | Status | Effort |
+|---|---|---|---|
+| **P0** | Epic 1: Website Privacy Policy Overhaul | Not Started | Medium |
+| **P0** | Epic 2: Cookie & Tracking Consent | Not Started | Medium |
+| **P0** | Epic 3: App Store Compliance | Not Started | Large |
+| **P0** | Epic 4: GDPR Full Compliance | Not Started | Large |
+| **P0** | Epic 9: Subscription Compliance | Not Started (blocked by IAP impl) | Medium |
+| **P0** | Epic 11: iOS In-App Legal | Not Started | Medium |
+| **P0** | Epic 17: UK Companies Act Disclosures | Not Started | Small |
+| **P0** | Epic 18: Country-Specific Privacy Laws | Not Started | XL |
+| **P0** | Epic 19: Age of Digital Consent | Not Started | Large |
+| **P0** | Epic 20: VAT, Tax & Financial Compliance | Not Started | Large |
+| **P1** | Epic 5: CCPA / US Privacy Laws | Not Started | Medium |
+| **P1** | Epic 6: UK-Specific Compliance | Not Started | Medium |
+| **P1** | Epic 8: IP & Content Protection | Not Started | Small |
+| **P1** | Epic 10: Legal Page Internationalization | Not Started | Large |
+| **P1** | Epic 13: Email Marketing Compliance | Not Started (blocked by ESP) | Small |
+| **P1** | Epic 14: Dispute Resolution & Liability | Not Started | Medium |
+| **P1** | Epic 16: Website Legal Infrastructure | Not Started | Small |
+| **P1** | Epic 21: Export Controls & Sanctions | Not Started | Small |
+| **P1** | Epic 22: Accessibility Multi-Jurisdiction | Not Started | Large |
+| **P1** | Epic 24: Insurance & Corporate Governance | Not Started | Medium |
+| **P2** | Epic 7: EU DSA/DMA Compliance | Not Started | Small |
+| **P2** | Epic 12: Security & Breach Preparedness | Not Started | Medium |
+| **P2** | Epic 15: Ongoing Compliance & Governance | Not Started | Medium |
+| **P2** | Epic 23: AI & Algorithmic Transparency | Not Started | Small |
 
 | Priority | Epic | Status | Effort |
 |---|---|---|---|
