@@ -371,5 +371,219 @@
   },
   "NetworkStatus": {
     "offline": "Jesteś offline — niektóre funkcje mogą być niedostępne"
+  },
+  "Legal": {
+    "tocLabel": "Na tej stronie",
+    "downloadPdf": "Pobierz jako PDF",
+    "lastUpdated": "Ostatnia aktualizacja: 22 marca 2026"
+  },
+  "Privacy": {
+    "meta": {
+      "title": "Polityka Prywatności",
+      "description": "Dowiedz się, jak LumenShore dba o Twoje dane. Poznaj nasze podejście oparte na prywatności, przetwarzanie na urządzeniu, synchronizację iCloud oraz Twoje prawa wynikające z RODO i CCPA.",
+      "ogTitle": "Polityka Prywatności — LumenLingo"
+    },
+    "breadcrumb": "Polityka Prywatności",
+    "hero": {
+      "heading": "Polityka Prywatności",
+      "subtitle": "Twoja prywatność jest dla nas bardzo ważna. Oto dokładnie jak obchodzimy się z Twoimi danymi — prostym językiem, nie żargonem prawniczym."
+    },
+    "overview": {
+      "heading": "Przegląd",
+      "p1": "LumenShore Ltd („LumenShore”, „my” lub „nasz”) jest operatorem aplikacji mobilnej LumenLingo („Aplikacja”). Niniejsza Polityka Prywatności wyjaśnia, w jaki sposób zbieramy, wykorzystujemy, przechowujemy i chronimy informacje podczas korzystania z LumenLingo.",
+      "p2": "Zbudowaliśmy LumenLingo z architekturą stawiającą prywatność na pierwszym miejscu. Twoje dane edukacyjne są przetwarzane i przechowywane na Twoim urządzeniu i na Twoim osobistym koncie iCloud — nie na naszych serwerach. Wierzymy, że Twoje dane należą do Ciebie i tak powinno pozostać."
+    },
+    "informationWeCollect": {
+      "heading": "Informacje, które zbieramy",
+      "intro": "LumenLingo zbiera minimalne dane niezbędne do zapewnienia świetnego doświadczenia nauki:",
+      "li1": "<b>Dane postępów w nauce</b> — poziomy opanowania fiszek, wyniki ćwiczeń, serie, XP i historia sesji. Dane te są przechowywane lokalnie na Twoim urządzeniu i synchronizowane przez iCloud.",
+      "li2": "<b>Preferencje aplikacji</b> — wybrane pary językowe, preferencje krajobrazów dźwiękowych, wybór tła wizualnego i wybór poziomu. Przechowywane na urządzeniu i synchronizowane przez iCloud.",
+      "li3": "<b>Status subskrypcji</b> — Twój poziom członkostwa, zarządzany w całości przez Apple za pośrednictwem App Store. Otrzymujemy status subskrypcji od Apple, ale nie przetwarzamy informacji o płatnościach.",
+      "li4": "<b>Anonimowa analityka</b> — możemy zbierać zagregowane, nieidentyfikowalne metryki użytkowania (np. które funkcje są najpopularniejsze) w celu ulepszenia aplikacji. Dane osobowe nie są uwzględniane."
+    },
+    "whatWeDontCollect": {
+      "heading": "Czego nie zbieramy",
+      "intro": "Chcemy jasno określić, czego <b>nigdy</b> nie zbieramy:",
+      "li1": "Żadnych adresów e-mail, imion ani identyfikatorów osobistych (aplikacja nie wymaga rejestracji konta)",
+      "li2": "Żadnych danych lokalizacyjnych ani współrzędnych GPS",
+      "li3": "Żadnego dostępu do kontaktów, zdjęć ani innych aplikacji na Twoim urządzeniu",
+      "li4": "Żadnych informacji o płatnościach ani kart kredytowych (Apple obsługuje całą fakturowanie)",
+      "li5": "Żadnych identyfikatorów reklamowych ani pikseli śledzących",
+      "li6": "Żadne dane nie są sprzedawane ani udostępniane reklamodawcom — nigdy"
+    },
+    "howWeUse": {
+      "heading": "Jak wykorzystujemy Twoje informacje",
+      "intro": "Ograniczone dane, które przetwarzamy, są wykorzystywane wyłącznie do:",
+      "li1": "<b>Personalizacji nauki</b> — planowanie powtórek rozstawionych w czasie, dostosowanie trudności i śledzenie postępów zależą od Twojej historii nauki.",
+      "li2": "<b>Synchronizacji postępów</b> — synchronizacja iCloud zapewnia, że Twoje dane podążają za Tobą na wszystkich urządzeniach Apple.",
+      "li3": "<b>Zarządzania subskrypcją</b> — weryfikujemy Twój poziom członkostwa, aby odblokować odpowiednie funkcje.",
+      "li4": "<b>Ulepszania aplikacji</b> — anonimowe zagregowane dane pomagają nam zrozumieć, które funkcje są wartościowe i na czym skupić rozwój."
+    },
+    "dataStorage": {
+      "heading": "Przechowywanie i bezpieczeństwo danych",
+      "intro": "LumenLingo wykorzystuje architekturę prywatności opartą na urządzeniu:",
+      "li1": "<b>Przechowywanie na urządzeniu</b> — wszystkie dane edukacyjne są przechowywane lokalnie z użyciem frameworka SwiftData firmy Apple, chronione wbudowanym szyfrowaniem urządzenia.",
+      "li2": "<b>Synchronizacja iCloud</b> — dane synchronizują się między urządzeniami za pośrednictwem osobistego konta iCloud, szyfrowane od końca do końca przez Apple. Nie mamy dostępu do Twoich danych iCloud.",
+      "li3": "<b>Brak zewnętrznych serwerów</b> — LumenLingo nie utrzymuje serwerów przechowujących Twoje dane osobowe. Nie ma bazy danych w chmurze do zabezpieczenia (lub naruszenia).",
+      "li4": "<b>Bezpieczeństwo App Store</b> — zarządzanie subskrypcjami jest obsługiwane przez bezpieczną infrastrukturę Apple."
+    },
+    "thirdParty": {
+      "heading": "Usługi zewnętrzne",
+      "intro": "LumenLingo integruje się z ograniczoną liczbą usług zewnętrznych:",
+      "li1": "<b>Apple App Store</b> — do dystrybucji aplikacji, zarządzania subskrypcjami i przetwarzania płatności. Podlega <applePrivacy>Polityce Prywatności Apple</applePrivacy>.",
+      "li2": "<b>Apple iCloud</b> — do synchronizacji danych między urządzeniami. Podlega warunkom iCloud firmy Apple.",
+      "li3": "<b>Analityka szanująca prywatność</b> — jeśli korzystamy z analityki, używamy narzędzi bez plików cookie, zgodnych z RODO, które nie zbierają danych umożliwiających identyfikację.",
+      "noAdNetworks": "Nie korzystamy z Google Analytics, Facebook SDK ani żadnych sieci reklamowych."
+    },
+    "childrensPrivacy": {
+      "heading": "Prywatność dzieci",
+      "p1": "LumenLingo jest zaprojektowane dla użytkowników w każdym wieku i nie zbiera świadomie danych osobowych od dzieci poniżej 13 roku życia (lub odpowiedniego wieku w Twojej jurysdykcji). Ponieważ aplikacja nie wymaga rejestracji konta i przechowuje dane lokalnie, żadne dane osobowe nie są przekazywane nam od żadnego użytkownika, w tym dzieci.",
+      "p2": "Rodzice i opiekunowie mogą zarządzać aplikacją i jej danymi lub je usunąć w dowolnym momencie za pomocą standardowego zarządzania urządzeniami iOS."
+    },
+    "dataRetention": {
+      "heading": "Przechowywanie i usuwanie danych",
+      "intro": "Ponieważ Twoje dane znajdują się na Twoim urządzeniu i koncie iCloud, masz pełną kontrolę nad nimi:",
+      "li1": "<b>Zresetuj postępy</b> — użyj opcji Ustawienia → Zresetuj postępy w aplikacji, aby usunąć wszystkie dane edukacyjne.",
+      "li2": "<b>Usuń aplikację</b> — odinstalowanie LumenLingo usuwa wszystkie dane przechowywane lokalnie.",
+      "li3": "<b>Dane iCloud</b> — możesz zarządzać przechowywaniem iCloud przez Ustawienia → Apple ID → iCloud → Zarządzaj przechowywaniem na swoim urządzeniu.",
+      "li4": "<b>Subskrypcja</b> — anuluj subskrypcję przez Ustawienia → Apple ID → Subskrypcje. Po anulowaniu nie przechowujemy żadnych danych."
+    },
+    "yourRights": {
+      "heading": "Twoje prawa",
+      "intro": "W zależności od Twojej lokalizacji możesz mieć dodatkowe prawa dotyczące Twoich danych:",
+      "gdprHeading": "Na mocy RODO (Europejski Obszar Gospodarczy i Wielka Brytania)",
+      "gdprLi1": "Prawo dostępu do danych — Twoje dane są już na Twoim urządzeniu i w iCloud.",
+      "gdprLi2": "Prawo do sprostowania — możesz edytować swoje preferencje bezpośrednio w aplikacji.",
+      "gdprLi3": "Prawo do usunięcia — zresetuj postępy lub usuń aplikację, aby usunąć wszystkie dane.",
+      "gdprLi4": "Prawo do przenoszenia danych — Twoje dane są przechowywane w standardowych formatach w iCloud.",
+      "gdprLi5": "Prawo do sprzeciwu — skontaktuj się z nami, aby zrezygnować z anonimowej analityki.",
+      "ccpaHeading": "Na mocy CCPA (Kalifornia)",
+      "ccpaLi1": "Prawo do informacji o zbieranych danych — szczegółowo opisano powyżej; zbieramy minimalne dane.",
+      "ccpaLi2": "Prawo do usunięcia — zresetuj postępy lub usuń aplikację.",
+      "ccpaLi3": "Prawo do rezygnacji — nie sprzedajemy danych osobowych nikomu.",
+      "ccpaLi4": "Zakaz dyskryminacji — nie będziesz traktowany inaczej za korzystanie ze swoich praw."
+    },
+    "policyUpdates": {
+      "heading": "Aktualizacje polityki",
+      "p1": "Możemy aktualizować niniejszą Politykę Prywatności od czasu do czasu, zazwyczaj w celu odzwierciedlenia zmian w funkcjach aplikacji lub wymogach prawnych. Gdy dokonamy istotnych zmian, zaktualizujemy datę „Ostatnia aktualizacja” na górze tej strony.",
+      "p2": "Zachęcamy do okresowego przeglądania tej strony. Dalsze korzystanie z LumenLingo po zmianach stanowi akceptację zaktualizowanej polityki."
+    },
+    "contactUs": {
+      "heading": "Kontakt",
+      "intro": "Jeśli masz pytania dotyczące niniejszej Polityki Prywatności, Twoich danych lub chcesz skorzystać ze swoich praw, skontaktuj się z nami:",
+      "email": "<b>E-mail</b>: <emailLink>hello@lumenshore.com</emailLink>",
+      "company": "<b>Firma</b>: LumenShore Ltd, Wielka Brytania",
+      "responseTime": "Zazwyczaj odpowiadamy w ciągu 48 godzin."
+    }
+  },
+  "Terms": {
+    "meta": {
+      "title": "Regulamin",
+      "description": "Regulamin LumenLingo. Poznaj swoje prawa i obowiązki podczas korzystania z naszej aplikacji do nauki języków — napisany prostym językiem.",
+      "ogTitle": "Regulamin — LumenLingo"
+    },
+    "breadcrumb": "Regulamin",
+    "hero": {
+      "heading": "Regulamin",
+      "subtitle": "Zasady korzystania z LumenLingo — napisane prosto, bo dokumenty prawne nie powinny wymagać słownika."
+    },
+    "introduction": {
+      "heading": "Wprowadzenie",
+      "p1": "Witamy w LumenLingo. Niniejszy Regulamin („Regulamin”) reguluje korzystanie z aplikacji mobilnej LumenLingo („Aplikacja”) obsługiwanej przez LumenShore Ltd („LumenShore”, „my” lub „nasz”).",
+      "p2": "Pobierając, instalując lub korzystając z LumenLingo, zgadzasz się na przestrzeganie niniejszego Regulaminu. Jeśli nie zgadzasz się z którąkolwiek częścią Regulaminu, prosimy o niekorzystanie z Aplikacji."
+    },
+    "acceptance": {
+      "heading": "Akceptacja Regulaminu",
+      "intro": "Uzyskując dostęp do LumenLingo lub korzystając z niego, potwierdzasz, że:",
+      "li1": "Masz co najmniej 13 lat (lub minimalny wiek wymagany w Twojej jurysdykcji).",
+      "li2": "Jeśli masz mniej niż 18 lat, uzyskałeś zgodę rodzica lub opiekuna prawnego.",
+      "li3": "Masz zdolność prawną do zawarcia wiążącej umowy.",
+      "li4": "Będziesz przestrzegać niniejszego Regulaminu i wszystkich obowiązujących przepisów."
+    },
+    "yourAccount": {
+      "heading": "Twoje konto",
+      "intro": "LumenLingo nie wymaga tradycyjnej rejestracji konta. Twoja tożsamość w Aplikacji jest powiązana z Twoim Apple ID i urządzeniem. Jesteś odpowiedzialny za:",
+      "li1": "Utrzymanie bezpieczeństwa Apple ID i dostępu do urządzenia.",
+      "li2": "Wszelką aktywność wynikającą z korzystania z Aplikacji.",
+      "li3": "Aktualizowanie systemu operacyjnego urządzenia dla najlepszego doświadczenia i bezpieczeństwa."
+    },
+    "subscriptions": {
+      "heading": "Subskrypcje i rozliczenia",
+      "intro": "LumenLingo oferuje bezpłatne i premium poziomy członkostwa. Funkcje premium wymagają płatnej subskrypcji.",
+      "li1": "<b>Rozliczenia</b> — wszystkie subskrypcje są przetwarzane i zarządzane przez Apple za pośrednictwem App Store. Nie obsługujemy płatności bezpośrednio.",
+      "li2": "<b>Poziom bezpłatny</b> — zapewnia dostęp do podstawowych funkcji nauki z ograniczonymi parami językowymi i trybami ćwiczeń.",
+      "li3": "<b>Poziomy premium</b> — odblokowują dodatkowe pary językowe, nieograniczone ćwiczenia, krajobrazy dźwiękowe, kule oddechowe i inne funkcje premium opisane w Aplikacji.",
+      "li4": "<b>Automatyczne odnawianie</b> — subskrypcje odnawiają się automatycznie, chyba że zostaną anulowane co najmniej 24 godziny przed końcem bieżącego okresu rozliczeniowego.",
+      "li5": "<b>Anulowanie</b> — możesz anulować subskrypcję w dowolnym momencie przez Ustawienia Apple ID → Subskrypcje. Anulowanie wchodzi w życie na koniec bieżącego okresu rozliczeniowego.",
+      "li6": "<b>Zwroty</b> — wnioski o zwrot są obsługiwane przez Apple zgodnie z ich zasadami zwrotów. Skontaktuj się z Pomocą Apple w sprawie zwrotów.",
+      "li7": "<b>Zmiany cen</b> — możemy dostosować ceny subskrypcji. Zostaniesz powiadomiony z wyprzedzeniem, a zmiany będą obowiązywać dopiero od następnego okresu odnowienia."
+    },
+    "acceptableUse": {
+      "heading": "Dopuszczalne użytkowanie",
+      "intro": "Zgadzasz się korzystać z LumenLingo wyłącznie w celach zgodnych z prawem i niniejszym Regulaminem. Nie wolno Ci:",
+      "li1": "Dokonywać inżynierii wstecznej, dekompilować ani dezasemblować żadnej części Aplikacji.",
+      "li2": "Próbować uzyskiwać dostępu, manipulować ani używać niepublicznych obszarów Aplikacji lub jej systemów.",
+      "li3": "Kopiować, modyfikować, rozpowszechniać ani tworzyć dzieł pochodnych na podstawie Aplikacji.",
+      "li4": "Używać Aplikacji w sposób, który mógłby ją uszkodzić, wyłączyć, przeciążyć lub zakłócić jej działanie.",
+      "li5": "Używać automatycznych skryptów, botów lub innych narzędzi do interakcji z Aplikacją.",
+      "li6": "Próbować obchodzić ograniczenia subskrypcji lub poziomu."
+    },
+    "intellectualProperty": {
+      "heading": "Własność intelektualna",
+      "p1": "Cała zawartość LumenLingo — w tym między innymi treści fiszek, tłumaczenia, audio, krajobrazy dźwiękowe, projekty wizualne, efekty shaderów, animacje, nazwa LumenLingo i marka LumenShore — jest własnością intelektualną LumenShore Ltd i jest chroniona prawem autorskim, znakami towarowymi i innymi prawami własności intelektualnej.",
+      "p2": "Twoja subskrypcja przyznaje Ci ograniczoną, niewyłączną, niezbywalna, odwoływalną licencję na korzystanie z Aplikacji w celach osobistych, niekomercyjnych do nauki języków. Licencja ta nie obejmuje prawa do:",
+      "li1": "Reprodukowania, rozpowszechniania lub publicznego wyświetlania jakiejkolwiek zawartości Aplikacji.",
+      "li2": "Używania jakiejkolwiek zawartości w celach komercyjnych lub w produktach konkurencyjnych.",
+      "li3": "Usuwania lub zmieniania jakichkolwiek informacji o własności lub etykiet."
+    },
+    "userContent": {
+      "heading": "Treści i dane użytkownika",
+      "p1": "Twoje dane edukacyjne (postępy, preferencje, historia ćwiczeń) są przechowywane na Twoim urządzeniu i na osobistym koncie iCloud. LumenShore nie rości sobie praw do własności Twoich osobistych danych edukacyjnych.",
+      "p2": "Więcej szczegółów o tym, jak obchodzimy się z danymi, znajdziesz w naszej <privacyLink>Polityce Prywatności</privacyLink>."
+    },
+    "disclaimers": {
+      "heading": "Zastrzeżenia",
+      "intro": "LumenLingo jest udostępniane „tak jak jest” i „w miarę dostępności”. Chociaż dążymy do dokładności i jakości, nie udzielamy żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących:",
+      "li1": "Dokładności lub kompletności jakichkolwiek treści językowych lub tłumaczeń.",
+      "li2": "Nieprzerwanego lub wolnego od błędów działania Aplikacji.",
+      "li3": "Wyników, które możesz osiągnąć korzystając z Aplikacji.",
+      "li4": "Dostępności określonych funkcji w danym momencie.",
+      "supplement": "LumenLingo jest uzupełniającym narzędziem do nauki. Nie zastępuje profesjonalnej nauki języków, certyfikowanych usług tłumaczeniowych ani kursów akademickich."
+    },
+    "limitationOfLiability": {
+      "heading": "Ograniczenie odpowiedzialności",
+      "intro": "W najszerszym zakresie dozwolonym przez obowiązujące prawo, LumenShore Ltd nie ponosi odpowiedzialności za szkody pośrednie, przypadkowe, szczególne, wynikowe lub karne, ani za utratę zysków, danych lub wartości firmy wynikające z:",
+      "li1": "Korzystania (lub niemożności korzystania) z Aplikacji.",
+      "li2": "Jakichkolwiek błędów, pominięć lub niedokładności w treści.",
+      "li3": "Nieautoryzowanego dostępu do Twojego urządzenia lub danych (niespowodowanego naszym zaniedbaniem).",
+      "li4": "Jakiejkolwiek przerwy lub zaprzestania świadczenia usługi.",
+      "cap": "Nasza całkowita odpowiedzialność za jakiekolwiek roszczenie wynikające z niniejszego Regulaminu lub korzystania z LumenLingo nie przekroczy kwoty zapłaconej za Aplikację w ciągu 12 miesięcy poprzedzających roszczenie."
+    },
+    "termination": {
+      "heading": "Rozwiązanie",
+      "p1": "Możesz przestać korzystać z LumenLingo w dowolnym momencie, usuwając Aplikację. Twoja subskrypcja, jeśli jest aktywna, powinna zostać anulowana oddzielnie przez zarządzanie subskrypcjami Apple.",
+      "p2": "Zastrzegamy sobie prawo do zawieszenia lub rozwiązania dostępu do Aplikacji, jeśli uzasadnione uznamy, że naruszyłeś niniejszy Regulamin. W przypadku rozwiązania:",
+      "li1": "Twoja licencja na korzystanie z Aplikacji zostaje natychmiast cofnięta.",
+      "li2": "Twoje lokalne dane pozostają na Twoim urządzeniu do momentu ich usunięcia.",
+      "li3": "Aktywne subskrypcje powinny zostać anulowane przez Apple.",
+      "li4": "Postanowienia, które ze swej natury powinny przetrwać rozwiązanie, pozostają w mocy."
+    },
+    "governingLaw": {
+      "heading": "Prawo właściwe",
+      "p1": "Niniejszy Regulamin podlega prawu Anglii i Walii i jest zgodnie z nim interpretowany, bez uwzględnienia zasad kolizji praw.",
+      "p2": "Wszelkie spory wynikające z niniejszego Regulaminu podlegają wyłącznej jurysdykcji sądów Anglii i Walii. Nie wpływa to jednak na Twoje ustawowe prawa konsumenta w kraju zamieszkania."
+    },
+    "changes": {
+      "heading": "Zmiany Regulaminu",
+      "p1": "Możemy aktualizować niniejszy Regulamin od czasu do czasu. Gdy dokonamy istotnych zmian, zaktualizujemy datę „Ostatnia aktualizacja” na górze strony i możemy powiadomić Cię przez Aplikację.",
+      "p2": "Dalsze korzystanie z LumenLingo po opublikowaniu zmian stanowi akceptację zmienionego Regulaminu. Jeśli nie zgadzasz się ze zmianami, zaprzestaj korzystania z Aplikacji i anuluj aktywne subskrypcje."
+    },
+    "contactUs": {
+      "heading": "Kontakt",
+      "intro": "Jeśli masz pytania dotyczące niniejszego Regulaminu lub chcesz zgłosić problem, skontaktuj się z nami:",
+      "email": "<b>E-mail</b>: <emailLink>hello@lumenshore.com</emailLink>",
+      "company": "<b>Firma</b>: LumenShore Ltd, Wielka Brytania",
+      "responseTime": "Zazwyczaj odpowiadamy w ciągu 48 godzin."
+    }
   }
 }
