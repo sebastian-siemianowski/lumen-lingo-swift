@@ -98,7 +98,7 @@ export function LanguageSwitcher() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -4, scale: 0.97 }}
             transition={{ duration: 0.15, ease: [0.23, 1, 0.32, 1] }}
-            className="absolute right-0 mt-2 w-48 origin-top-right overflow-hidden rounded-[--radius-button] border border-glass-border bg-surface/95 shadow-xl backdrop-blur-xl"
+            className="absolute end-0 mt-2 w-48 origin-top overflow-hidden rounded-[--radius-button] border border-glass-border bg-surface/95 shadow-xl backdrop-blur-xl"
             role="listbox"
             aria-label={t('label')}
           >
@@ -118,7 +118,7 @@ export function LanguageSwitcher() {
                   )}
                 >
                   <span className="text-base leading-none">{localeFlags[loc]}</span>
-                  <span className="flex-1 text-left">{t(loc)}</span>
+                  <span className="flex-1 text-start">{t(loc)}</span>
                   {isActive && (
                     <motion.svg
                       layoutId="locale-check"

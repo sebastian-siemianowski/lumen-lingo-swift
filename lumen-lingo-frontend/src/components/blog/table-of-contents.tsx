@@ -62,7 +62,7 @@ export function TableOfContents({ content }: { content: string }) {
       <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[--color-foreground-muted]">
         On this page
       </p>
-      <ul className="space-y-1 border-l border-[--color-glass-border]">
+      <ul className="space-y-1 border-s border-[--color-glass-border]">
         {headings.map((heading) => (
           <li key={heading.id}>
             <a
@@ -74,8 +74,8 @@ export function TableOfContents({ content }: { content: string }) {
                   block: 'start',
                 });
               }}
-              className={`block border-l-2 py-1 text-sm transition-colors ${
-                heading.level === 3 ? 'pl-6' : heading.level === 4 ? 'pl-9' : 'pl-3'
+              className={`block border-s-2 py-1 text-sm transition-colors ${
+                heading.level === 3 ? 'ps-6' : heading.level === 4 ? 'ps-9' : 'ps-3'
               } ${
                 activeId === heading.id
                   ? 'border-[--color-violet] text-[--color-violet]'

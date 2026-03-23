@@ -312,8 +312,8 @@ body {
   font-size: 1.5rem;
   line-height: 1.3;
   margin-top: 2.5em;
-  padding-left: 1rem;
-  border-left: 2px solid #8b5cf6;
+  padding-inline-start: 1rem;
+  border-inline-start: 2px solid #8b5cf6;
 }
 .prose-lumenlingo h3 { font-size: 1.25rem; line-height: 1.4; margin-top: 2em; }
 .prose-lumenlingo h4 { font-size: 1.125rem; line-height: 1.4; margin-top: 1.75em; }
@@ -347,10 +347,13 @@ body {
 }
 
 .prose-lumenlingo blockquote {
-  border-left: 2px solid rgba(255, 255, 255, 0.08);
+  border-inline-start: 2px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.03);
   padding: 1rem 1.5rem;
-  border-radius: 0 12px 12px 0;
+  border-start-start-radius: 0;
+  border-start-end-radius: 12px;
+  border-end-end-radius: 12px;
+  border-end-start-radius: 0;
   font-style: italic;
   color: #a1a1aa;
 }
@@ -360,14 +363,14 @@ body {
 
 .prose-lumenlingo ul {
   list-style: disc;
-  padding-left: 1.5em;
+  padding-inline-start: 1.5em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
 }
 
 .prose-lumenlingo ol {
   list-style: decimal;
-  padding-left: 1.5em;
+  padding-inline-start: 1.5em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
 }
@@ -375,7 +378,7 @@ body {
 .prose-lumenlingo li {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  padding-left: 0.25em;
+  padding-inline-start: 0.25em;
 }
 
 .prose-lumenlingo li > ul,
@@ -430,7 +433,7 @@ body {
   font-weight: 600;
   color: #f4f4f5;
   padding: 0.75rem 1rem;
-  text-align: left;
+  text-align: start;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -502,14 +505,14 @@ body {
 
 .legal-prose ul li {
   position: relative;
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
   margin-bottom: 0.6rem;
 }
 
 .legal-prose ul li::before {
   content: '';
   position: absolute;
-  left: 0;
+  inset-inline-start: 0;
   top: 0.6em;
   width: 5px;
   height: 5px;

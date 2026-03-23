@@ -43,7 +43,7 @@ export function LegalTOC({ items }: LegalTOCProps) {
         <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/30">
           On this page
         </p>
-        <ul className="space-y-1 border-l border-white/[0.06]">
+        <ul className="space-y-1 border-s border-white/[0.06]">
           {items.map((item) => (
             <li key={item.id}>
               <a
@@ -53,8 +53,8 @@ export function LegalTOC({ items }: LegalTOCProps) {
                   document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className={cn(
-                  'relative block py-1.5 pl-4 text-[13px] leading-snug transition-all duration-200',
-                  item.level > 2 && 'pl-7',
+                  'relative block py-1.5 ps-4 text-[13px] leading-snug transition-all duration-200',
+                  item.level > 2 && 'ps-7',
                   activeId === item.id
                     ? 'text-violet font-medium'
                     : 'text-white/35 hover:text-white/60',
@@ -63,7 +63,7 @@ export function LegalTOC({ items }: LegalTOCProps) {
                 {activeId === item.id && (
                   <motion.div
                     layoutId="toc-indicator"
-                    className="absolute left-0 top-0 bottom-0 w-px bg-violet"
+                    className="absolute start-0 top-0 bottom-0 w-px bg-violet"
                     transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                   />
                 )}

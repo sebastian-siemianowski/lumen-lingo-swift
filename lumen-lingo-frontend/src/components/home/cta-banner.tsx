@@ -118,7 +118,7 @@ export function CTABanner() {
       <div className="relative py-20 sm:py-28">
         <Container className="flex flex-col items-center gap-10 lg:flex-row lg:justify-between">
           {/* Text + CTA */}
-          <FadeIn className="flex max-w-xl flex-col items-center text-center lg:items-start lg:text-left">
+          <FadeIn className="flex max-w-xl flex-col items-center text-center lg:items-start lg:text-start">
             <Heading
               as="h2"
               className="text-shadow-glow"

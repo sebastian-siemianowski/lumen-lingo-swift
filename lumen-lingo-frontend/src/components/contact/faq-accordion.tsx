@@ -68,7 +68,7 @@ export function FAQAccordion({ items, className }: FAQAccordionProps) {
                   id={triggerId}
                   onClick={() => toggle(index)}
                   onKeyDown={(e) => handleKeyDown(e, index)}
-                  className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left sm:px-6 sm:py-5"
+                  className="flex w-full items-center justify-between gap-4 px-5 py-4 text-start sm:px-6 sm:py-5"
                   aria-expanded={isOpen}
                   aria-controls={panelId}
                 >

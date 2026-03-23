@@ -89,7 +89,7 @@ export function Footer() {
       />
 
       {/* Glow line at top */}
-      <div className="absolute top-0 right-0 left-0 h-px bg-gradient-to-r from-transparent via-violet/40 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet/40 to-transparent" />
 
       <Container>
         <div className="py-16 sm:py-20">

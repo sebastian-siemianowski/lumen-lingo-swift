@@ -40,7 +40,7 @@ export function Timeline() {
     <div className="relative">
       {/* Connecting line */}
       <div
-        className="absolute left-[19px] top-3 bottom-3 w-px bg-gradient-to-b from-violet/40 via-cyan/20 to-transparent sm:left-1/2 sm:-translate-x-px"
+        className="absolute start-[19px] top-3 bottom-3 w-px bg-gradient-to-b from-violet/40 via-cyan/20 to-transparent sm:start-1/2 sm:-translate-x-px"
         aria-hidden
       />
 
@@ -54,7 +54,7 @@ export function Timeline() {
               className="relative grid grid-cols-[40px_1fr] gap-4 sm:grid-cols-2 sm:gap-12"
             >
               {/* Dot */}
-              <div className="absolute left-[14px] top-1.5 z-10 sm:left-1/2 sm:-translate-x-1/2">
+              <div className="absolute start-[14px] top-1.5 z-10 sm:start-1/2 sm:-translate-x-1/2">
                 <div className="h-[11px] w-[11px] rounded-full border-2 border-violet/60 bg-background" />
               </div>
 
@@ -62,7 +62,7 @@ export function Timeline() {
               {/* Desktop: alternate left/right */}
               {isLeft ? (
                 <>
-                  <div className="hidden text-right sm:block">
+                  <div className="hidden text-end sm:block">
                     <span className="inline-block rounded-full border border-glass-border bg-white/[0.04] px-3 py-1 font-[family-name:var(--font-cabinet)] text-xs font-medium text-violet">
                       {m.year}
                     </span>

@@ -1883,33 +1883,33 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] `<html dir="rtl">` set when locale is `ar`
-- [ ] Tailwind CSS RTL utilities enabled (`rtl:` variant) or logical properties (`ms-`, `me-`, `ps-`, `pe-`) used throughout
-- [ ] All components render correctly in RTL:
-  - [ ] Header: logo on the right, navigation on the left, language switcher on the left
-  - [ ] Hero section: text right-aligned, CTA buttons in correct order
-  - [ ] Feature cards: icon/text direction reversed
-  - [ ] Pricing cards: layout mirrored
-  - [ ] Blog post prose: right-aligned text, correct list marker placement
-  - [ ] Footer: columns flow right-to-left
-  - [ ] Forms: labels and inputs right-aligned, validation messages on correct side
-- [ ] Arrows, chevrons, and directional icons flip for RTL (e.g. "next" arrow points left)
-- [ ] No horizontal scrollbar on any page in RTL mode
-- [ ] Blog post images remain correctly positioned (images are not mirrored)
-- [ ] Language switcher remains functional and accessible in RTL layout
+- [x] `<html dir="rtl">` set when locale is `ar`
+- [x] Tailwind CSS RTL utilities enabled (`rtl:` variant) or logical properties (`ms-`, `me-`, `ps-`, `pe-`) used throughout
+- [x] All components render correctly in RTL:
+  - [x] Header: logo on the right, navigation on the left, language switcher on the left
+  - [x] Hero section: text right-aligned, CTA buttons in correct order
+  - [x] Feature cards: icon/text direction reversed
+  - [x] Pricing cards: layout mirrored
+  - [x] Blog post prose: right-aligned text, correct list marker placement
+  - [x] Footer: columns flow right-to-left
+  - [x] Forms: labels and inputs right-aligned, validation messages on correct side
+- [x] Arrows, chevrons, and directional icons flip for RTL (e.g. "next" arrow points left)
+- [x] No horizontal scrollbar on any page in RTL mode
+- [x] Blog post images remain correctly positioned (images are not mirrored)
+- [x] Language switcher remains functional and accessible in RTL layout
 
 ### Subtasks
 
-- [ ] 15.3.1 — Enable Tailwind CSS RTL support: configure `rtl:` variant or switch to CSS logical properties project-wide
-- [ ] 15.3.2 — Update root layout to dynamically set `dir="rtl"` based on locale
-- [ ] 15.3.3 — Audit and fix Header, Footer, and MobileMenu for RTL layout
-- [ ] 15.3.4 — Audit and fix HeroSection, FeatureShowcase, DifferentiatorSection, CTABanner for RTL
-- [ ] 15.3.5 — Audit and fix PricingCard, FeatureComparisonTable, PricingFAQ for RTL
-- [ ] 15.3.6 — Audit and fix blog components (PostCard, PostGrid, PostHeader, MDXProse, TableOfContents) for RTL
-- [ ] 15.3.7 — Audit and fix form components (NewsletterForm, Contact form, EarlyAccess form) for RTL
-- [ ] 15.3.8 — Replace directional icons (arrows, chevrons) with locale-aware variants that auto-flip
-- [ ] 15.3.9 — Full visual QA pass on all Arabic pages — screenshot comparison against LTR English equivalents
-- [ ] 15.3.10 — Fix all RTL-specific bugs found during QA
+- [x] 15.3.1 — Enable Tailwind CSS RTL support: configure `rtl:` variant or switch to CSS logical properties project-wide
+- [x] 15.3.2 — Update root layout to dynamically set `dir="rtl"` based on locale
+- [x] 15.3.3 — Audit and fix Header, Footer, and MobileMenu for RTL layout
+- [x] 15.3.4 — Audit and fix HeroSection, FeatureShowcase, DifferentiatorSection, CTABanner for RTL
+- [x] 15.3.5 — Audit and fix PricingCard, FeatureComparisonTable, PricingFAQ for RTL
+- [x] 15.3.6 — Audit and fix blog components (PostCard, PostGrid, PostHeader, MDXProse, TableOfContents) for RTL
+- [x] 15.3.7 — Audit and fix form components (NewsletterForm, Contact form, EarlyAccess form) for RTL
+- [x] 15.3.8 — Replace directional icons (arrows, chevrons) with locale-aware variants that auto-flip
+- [x] 15.3.9 — Full visual QA pass on all Arabic pages — screenshot comparison against LTR English equivalents
+- [x] 15.3.10 — Fix all RTL-specific bugs found during QA
 
 ---
 

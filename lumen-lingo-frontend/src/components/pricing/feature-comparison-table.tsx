@@ -173,7 +173,7 @@ export function FeatureComparisonTable() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <table className="w-full min-w-[640px] text-left">
+            <table className="w-full min-w-[640px] text-start">
               {/* Header */}
               <thead>
                 <tr className="border-b border-glass-border">

@@ -168,7 +168,7 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
             </time>
             <span aria-hidden="true">·</span>
             <span>{frontmatter.readingTime}</span>
-            <div className="ml-auto">
+            <div className="ms-auto">
               <ShareButtons
                 title={frontmatter.title}
                 url={`https://lumenlingo.com/blog/${slug}`}

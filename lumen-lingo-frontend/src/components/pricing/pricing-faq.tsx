@@ -77,7 +77,7 @@ export function PricingFAQ() {
                       id={triggerId}
                       onClick={() => toggle(index)}
                       onKeyDown={(e) => handleKeyDown(e, index)}
-                      className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left sm:px-6"
+                      className="flex w-full items-center justify-between gap-4 px-5 py-4 text-start sm:px-6"
                       aria-expanded={openIndex === index}
                       aria-controls={panelId}
                     >

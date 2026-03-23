@@ -136,7 +136,7 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
                 <motion.div
                   initial={{ opacity: 0, x: 4 }}
                   animate={{ opacity: 1, x: 0 }}
-                  className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2"
+                  className="pointer-events-none absolute end-3 top-1/2 -translate-y-1/2"
                 >
                   <svg className="h-4 w-4 text-red-400" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />

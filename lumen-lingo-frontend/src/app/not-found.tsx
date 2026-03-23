@@ -123,7 +123,7 @@ function SiteSearch() {
     <div className="relative mx-auto w-full max-w-md">
       <div className="relative">
         <svg
-          className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-foreground-muted"
+          className="absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-foreground-muted"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -138,7 +138,7 @@ function SiteSearch() {
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search pages…"
           aria-label="Search pages"
-          className="w-full rounded-xl border border-glass-border bg-surface/60 py-3 pl-10 pr-4 text-sm text-foreground placeholder:text-foreground-muted backdrop-blur-sm transition-shadow focus:shadow-[0_0_24px_rgba(139,92,246,0.15)] focus-visible:outline-none focus:ring-1 focus:ring-violet/40"
+          className="w-full rounded-xl border border-glass-border bg-surface/60 py-3 ps-10 pe-4 text-sm text-foreground placeholder:text-foreground-muted backdrop-blur-sm transition-shadow focus:shadow-[0_0_24px_rgba(139,92,246,0.15)] focus-visible:outline-none focus:ring-1 focus:ring-violet/40"
         />
       </div>
 

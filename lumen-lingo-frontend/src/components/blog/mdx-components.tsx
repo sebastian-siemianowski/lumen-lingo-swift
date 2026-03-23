@@ -12,31 +12,31 @@ const calloutStyles: Record<
 > = {
   info: {
     icon: '💡',
-    border: 'border-l-[--color-cyan]',
+    border: 'border-s-[--color-cyan]',
     bg: 'bg-[--color-cyan]/5',
     title: 'Did You Know?',
   },
   tip: {
     icon: '✨',
-    border: 'border-l-[--color-violet]',
+    border: 'border-s-[--color-violet]',
     bg: 'bg-[--color-violet]/5',
     title: 'Pro Tip',
   },
   warning: {
     icon: '⚠️',
-    border: 'border-l-[--color-amber]',
+    border: 'border-s-[--color-amber]',
     bg: 'bg-[--color-amber]/5',
     title: 'Important',
   },
   science: {
     icon: '🔬',
-    border: 'border-l-[--color-cyan]',
+    border: 'border-s-[--color-cyan]',
     bg: 'bg-[--color-cyan]/5',
     title: 'The Science',
   },
   check: {
     icon: '✅',
-    border: 'border-l-emerald-500',
+    border: 'border-s-emerald-500',
     bg: 'bg-emerald-500/5',
     title: 'Key Finding',
   },
@@ -53,7 +53,7 @@ export function Callout({ variant = 'info', title, children }: CalloutProps) {
   return (
     <aside
       className={cn(
-        'my-8 rounded-[--radius-card] border-l-4 p-6',
+        'my-8 rounded-[--radius-card] border-s-4 p-6',
         style.border,
         style.bg,
       )}
@@ -227,7 +227,7 @@ function CopyButton({ target }: { target: string }) {
   return (
     <button
       onClick={handleCopy}
-      className="absolute right-3 top-3 z-10 rounded-[--radius-sm] bg-white/5 px-2 py-1 font-mono text-[10px] text-[--color-foreground-muted] opacity-0 transition-opacity hover:bg-white/10 hover:text-[--color-foreground] group-hover/code:opacity-100"
+      className="absolute end-3 top-3 z-10 rounded-[--radius-sm] bg-white/5 px-2 py-1 font-mono text-[10px] text-[--color-foreground-muted] opacity-0 transition-opacity hover:bg-white/10 hover:text-[--color-foreground] group-hover/code:opacity-100"
       aria-label="Copy code"
     >
       Copy

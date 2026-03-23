@@ -98,7 +98,7 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
             </div>
           )}
           {/* Category badge */}
-          <div className="absolute left-4 top-4">
+          <div className="absolute start-4 top-4">
             <span
               className={cn(
                 'inline-flex rounded-[--radius-pill] px-3 py-1 text-xs font-semibold backdrop-blur-md',
@@ -134,7 +134,7 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
           {/* Meta row */}
           <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[--color-foreground-muted]">
             {/* "Read →" reveal on hover */}
-            <span className="ml-auto translate-x-2 text-xs font-semibold text-[--color-violet] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+            <span className="ms-auto translate-x-2 text-xs font-semibold text-[--color-violet] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 rtl:-translate-x-2 rtl:group-hover:translate-x-0">
               Read&nbsp;&rarr;
             </span>
           </div>

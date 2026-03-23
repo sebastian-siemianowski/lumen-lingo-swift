@@ -109,7 +109,7 @@ export function DownloadShowcase() {
         </div>
 
         {/* Captions */}
-        <div className="flex flex-col gap-6 text-center lg:text-left">
+        <div className="flex flex-col gap-6 text-center lg:text-start">
           <h2 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
             Designed to delight
           </h2>
