@@ -410,7 +410,8 @@
       "eula": "EULA",
       "cookiePolicy": "Cookie Policy",
       "cookieSettings": "Cookie Settings",
-      "accessibility": "Accessibility"
+      "accessibility": "Accessibility",
+      "dataRequest": "Data Request"
     },
     "newsletter": {
       "heading": "Stay in the loop",
@@ -601,7 +602,7 @@
       "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
       "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
       "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
-      "exerciseRights": "To exercise any of these rights, email us at hello@lumenshore.com. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
+      "exerciseRights": "To exercise any of these rights, email us at hello@lumenshore.com or submit a request through our <dataRequestLink>Data Request</dataRequestLink> page. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -1108,6 +1109,74 @@
       "responseTime": "We typically respond within 48 hours."
     },
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+  },
+  "DataRequest": {
+    "meta": {
+      "title": "Data Request — LumenLingo",
+      "description": "Submit a data subject access request (DSAR) to exercise your privacy rights under GDPR, UK GDPR, or CCPA.",
+      "ogTitle": "Data Request — LumenLingo",
+      "ogDescription": "Exercise your privacy rights. Request access to, correction of, or deletion of your personal data."
+    },
+    "heading": "Data Request",
+    "subtitle": "Exercise your privacy rights by submitting a data subject access request (DSAR). We take your rights seriously and will respond within 30 days.",
+    "overview": {
+      "heading": "Your Rights",
+      "p1": "Under GDPR, UK GDPR, and US state privacy laws (CCPA/CPRA), you have the right to:",
+      "li1": "<b>Access</b> — receive a copy of personal data we hold about you",
+      "li2": "<b>Rectification</b> — correct inaccurate personal data",
+      "li3": "<b>Erasure</b> — request deletion of your personal data",
+      "li4": "<b>Portability</b> — receive your data in a machine-readable format",
+      "li5": "<b>Restriction</b> — limit how we process your data",
+      "li6": "<b>Objection</b> — object to processing based on legitimate interest"
+    },
+    "iosNote": {
+      "heading": "iOS App Users",
+      "p1": "Your LumenLingo app data is stored entirely on your device and in your personal iCloud account. You have direct access to all your data through the app. You can also export your data as JSON from Settings.",
+      "p2": "The form below is primarily for website data (newsletter, waitlist, analytics) or if you need assistance with your iOS data."
+    },
+    "form": {
+      "heading": "Submit a Request",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "The email address associated with your data",
+      "requestTypeLabel": "Request Type",
+      "requestTypePlaceholder": "Select your request type",
+      "typeAccess": "Access — copy of my data",
+      "typeRectification": "Rectification — correct my data",
+      "typeErasure": "Erasure — delete my data",
+      "typePortability": "Portability — export my data",
+      "typeRestriction": "Restriction — limit processing",
+      "typeObjection": "Objection — stop processing",
+      "detailsLabel": "Details",
+      "detailsPlaceholder": "Please describe your request in detail. Include any specific data or accounts you are referring to.",
+      "submitButton": "Submit Request",
+      "submitting": "Submitting…",
+      "requiredField": "This field is required",
+      "invalidEmail": "Please enter a valid email address"
+    },
+    "success": {
+      "heading": "Request Submitted",
+      "p1": "Thank you. Your data request has been received. We will acknowledge your request within 72 hours and aim to respond fully within 30 calendar days.",
+      "p2": "If we need to verify your identity before processing your request, we will contact you at the email address provided.",
+      "reference": "Please keep this page open or note the date of your submission for your records."
+    },
+    "process": {
+      "heading": "What Happens Next",
+      "step1Title": "Acknowledgement",
+      "step1Desc": "We acknowledge your request within 72 hours.",
+      "step2Title": "Verification",
+      "step2Desc": "We may verify your identity to protect your privacy.",
+      "step3Title": "Processing",
+      "step3Desc": "We process your request within 30 calendar days.",
+      "step4Title": "Response",
+      "step4Desc": "We respond with the result and any data requested."
+    },
+    "contact": {
+      "heading": "Prefer Email?",
+      "p1": "You can also exercise your rights by emailing us directly at <emailLink>hello@lumenshore.com</emailLink>. Please include your name, email address associated with your data, and the type of request.",
+      "responseTime": "We typically respond within 48 hours."
+    }
   },
   "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
 }

@@ -346,6 +346,7 @@
   - **DONE**: All 6 Apple Minimum Terms clauses included in `appleTerms` section of EULA (li1-li6). Apple third-party beneficiary clause, no maintenance obligation, warranty refund limit, no claims responsibility, no IP defence responsibility.
 - [ ] 3.2.4 — Upload custom EULA to App Store Connect (per-app or per-territory)
   - **NOTE**: Manual App Store Connect action — EULA text ready in `messages/en.json` Eula namespace. Upload via App Store Connect > App Information > License Agreement when submitting.
+  - **DEFERRED**: Requires manual action in App Store Connect UI — cannot be automated. Ready to upload when submitting next app update.
 - [x] 3.2.5 — Add EULA link to app settings screen
   - **DONE**: Added Legal section to `SettingsView.swift` with Privacy Policy, Terms of Service, and EULA links. Added EULA as 3rd tab in `LegalConsentView.swift` with summary, 4 highlight rows, and link to full EULA. Added `eulaTitle`, `eulaSummary`, `eulaHighlight1-4` strings to `AppStrings.swift` and all 9 locale files.
 - [x] 3.2.6 — Host EULA on website at `/eula` for reference
@@ -547,7 +548,7 @@
 **So that** we comply with GDPR Article 6 and can demonstrate accountability
 
 #### Subtasks:
-- [ ] 4.1.1 — Create internal "Record of Processing Activities" (ROPA) document per GDPR Article 30:
+- [x] 4.1.1 — Create internal "Record of Processing Activities" (ROPA) document per GDPR Article 30:
   - Processing activity name
   - Purpose of processing
   - Categories of data subjects
@@ -556,7 +557,8 @@
   - Transfers to third countries
   - Retention periods
   - Technical and organizational security measures
-- [ ] 4.1.2 — Map lawful basis for each processing activity:
+  - **DONE**: Created `compliance/ROPA.md` with 10 processing activities covering all website and iOS app data processing: Newsletter, Waitlist, Vercel Analytics, Sentry Error Monitoring, Sentry Session Replay, iOS Learning Data (all 5 SwiftData models), iCloud Sync, Subscription Management, UTM Parameters, and Legal Consent Records. Each entry documents all 8 GDPR Art. 30 fields.
+- [x] 4.1.2 — Map lawful basis for each processing activity:
   - Newsletter signup → Consent (GDPR Art. 6(1)(a))
   - Waitlist signup → Consent (GDPR Art. 6(1)(a))
   - Vercel Analytics → Legitimate Interest (GDPR Art. 6(1)(f)) — cookie-free, anonymous
@@ -565,8 +567,11 @@
   - iOS app learning data → Contract performance (GDPR Art. 6(1)(b)) — necessary to deliver service
   - iCloud sync → Contract performance (GDPR Art. 6(1)(b))
   - Subscription management → Contract performance (GDPR Art. 6(1)(b))
-- [ ] 4.1.3 — Document legitimate interest assessments (LIA) for Vercel Analytics and Sentry error monitoring
-- [ ] 4.1.4 — Store ROPA and LIA documents in internal compliance folder (not public-facing)
+  - **DONE**: Lawful basis summary table included in `compliance/ROPA.md`. Also added UTM Parameters (Legitimate Interest) and Legal Consent Records (Legal Obligation — Art. 6(1)(c)).
+- [x] 4.1.3 — Document legitimate interest assessments (LIA) for Vercel Analytics and Sentry error monitoring
+  - **DONE**: Created `compliance/LIA.md` with three full LIAs: LIA-001 (Vercel Analytics), LIA-002 (Sentry Error Monitoring), LIA-003 (UTM Parameters). Each includes Purpose Test, Necessity Test (with alternatives considered), and Balancing Test (with safeguards). Cross-referenced from ROPA entries.
+- [x] 4.1.4 — Store ROPA and LIA documents in internal compliance folder (not public-facing)
+  - **DONE**: Documents stored in `compliance/` directory at project root. Not served by any web server or included in app bundle — internal compliance artefacts only.
 
 **Acceptance Criteria**:
 - ROPA covers all processing activities across website and iOS app

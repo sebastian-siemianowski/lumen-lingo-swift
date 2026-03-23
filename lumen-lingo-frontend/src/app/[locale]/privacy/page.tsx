@@ -418,7 +418,7 @@ export default async function PrivacyPage({
                     <li>{t('yourRights.ccpaLi3')}</li>
                     <li>{t('yourRights.ccpaLi4')}</li>
                   </ul>
-                  <p>{t('yourRights.exerciseRights')}</p>
+                  <p>{t.rich('yourRights.exerciseRights', { dataRequestLink: (chunks: React.ReactNode) => <a href={`/${locale}/data-request`}>{chunks}</a> })}</p>
                 </section>
 
                 <section id="policy-updates">

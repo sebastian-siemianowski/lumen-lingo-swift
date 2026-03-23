@@ -36,6 +36,7 @@ const footerSections = [
       { href: '/eula', key: 'eula' },
       { href: '/cookies', key: 'cookiePolicy' },
       { href: '/accessibility', key: 'accessibility' },
+      { href: '/data-request', key: 'dataRequest' },
     ],
   },
 ];
