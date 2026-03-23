@@ -5,7 +5,7 @@ export function GET(
   { params }: { params: { locale: string } },
 ) {
   const { locale } = params;
-  const posts = getAllPosts();
+  const posts = getAllPosts(locale);
   const siteUrl = 'https://lumenlingo.com';
 
   const items = posts
@@ -14,8 +14,8 @@ export function GET(
     <item>
       <title><![CDATA[${post.frontmatter.title}]]></title>
       <description><![CDATA[${post.frontmatter.description}]]></description>
-      <link>${siteUrl}/blog/${post.slug}</link>
-      <guid isPermaLink="true">${siteUrl}/blog/${post.slug}</guid>
+      <link>${siteUrl}/${locale}/blog/${post.slug}</link>
+      <guid isPermaLink="true">${siteUrl}/${locale}/blog/${post.slug}</guid>
       <pubDate>${new Date(post.frontmatter.publishedAt).toUTCString()}</pubDate>
       <author>${post.frontmatter.author}</author>
       <category>${post.frontmatter.category}</category>

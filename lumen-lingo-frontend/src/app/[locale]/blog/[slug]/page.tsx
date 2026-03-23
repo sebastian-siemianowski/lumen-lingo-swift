@@ -20,7 +20,10 @@ import { BlogNewsletterCTA } from '@/components/newsletter';
 
 // ─── Static params for SSG ─────────────────────────────────────────
 export function generateStaticParams() {
-  return getAllPosts().map((post) => ({ slug: post.slug }));
+  const locales = ['en', 'es', 'fr', 'de', 'pt', 'pl', 'ja', 'zh', 'ar', 'uk'];
+  return locales.flatMap((locale) =>
+    getAllPosts(locale).map((post) => ({ locale, slug: post.slug })),
+  );
 }
 
 // ─── Dynamic metadata ──────────────────────────────────────────────
@@ -31,8 +34,8 @@ interface SlugPageProps {
 export async function generateMetadata({
   params,
 }: SlugPageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const { locale, slug } = await params;
+  const post = getPostBySlug(slug, locale);
   if (!post) return { title: 'Post Not Found' };
 
   const { frontmatter } = post;
@@ -43,12 +46,12 @@ export async function generateMetadata({
     title: frontmatter.title,
     description: frontmatter.description,
     alternates: {
-      canonical: `https://lumenlingo.com/blog/${slug}`,
+      canonical: `https://lumenlingo.com/${locale}/blog/${slug}`,
     },
     openGraph: {
       title: `${frontmatter.title} — LumenLingo`,
       description: frontmatter.description,
-      url: `https://lumenlingo.com/blog/${slug}`,
+      url: `https://lumenlingo.com/${locale}/blog/${slug}`,
       siteName: 'LumenLingo',
       type: 'article',
       publishedTime: frontmatter.publishedAt,

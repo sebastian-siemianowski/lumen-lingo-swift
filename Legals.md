@@ -1474,6 +1474,287 @@
 - Coverage documented
 - Annual review scheduled
 
+### Story 14.4: US Arbitration Agreement & Class Action Waiver
+
+**As a** business with US users
+**I want** a binding arbitration agreement with class action waiver in Terms of Service
+**So that** Lumenshore is protected from US class action lawsuits (single biggest US liability exposure)
+
+#### Subtasks:
+- [ ] 14.4.1 — Draft binding individual arbitration clause for US users:
+  - All disputes resolved by binding individual arbitration (not court)
+  - Arbitration administered by AAA (American Arbitration Association) or JAMS under Consumer Arbitration Rules
+  - Arbitration seated in London, England OR option for remote/written proceedings
+  - Each party bears own attorneys' fees unless arbitrator awards otherwise
+  - Arbitrator's decision is final and binding, enforceable in any court
+  - Governing law: England and Wales (with Federal Arbitration Act for enforceability in US)
+- [ ] 14.4.2 — Draft class action and collective proceedings waiver:
+  - "YOU AND LUMENSHORE AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS, CONSOLIDATED, OR REPRESENTATIVE ACTION"
+  - Waiver of jury trial for any disputes not subject to arbitration
+  - No consolidation of multiple users' claims
+- [ ] 14.4.3 — 30-day opt-out right:
+  - Users must be able to opt out of arbitration within 30 days of first accepting Terms
+  - Opt-out via written notice to hello@lumenshore.com
+  - User who opts out retains all other rights under Terms
+  - This makes the clause more enforceable under US law
+- [ ] 14.4.4 — Small claims court exception:
+  - Either party may bring individual claims in small claims court if claims qualify
+  - Ensures fairness for low-value disputes
+- [ ] 14.4.5 — Exceptions to arbitration:
+  - IP infringement claims (either party may seek injunctive relief in court)
+  - Claims for injunctive or equitable relief
+  - Individual claims in small claims court
+- [ ] 14.4.6 — Severability for arbitration clause:
+  - If class action waiver is found unenforceable → entire arbitration agreement void (prevents forced class arbitration which is worse than court)
+  - All other provisions severable
+
+**Acceptance Criteria**:
+- Binding individual arbitration clause in Terms
+- Class action waiver enforceable under US law
+- 30-day opt-out mechanism available
+- Small claims and IP exceptions carved out
+- Clause reviewed for enforceability in US, UK, EU courts
+
+### Story 14.5: Comprehensive Liability Caps & Exclusions
+
+**As a** business owner
+**I want** the strongest possible limitation of liability in Terms of Service
+**So that** Lumenshore's financial exposure is capped to the absolute minimum in every jurisdiction
+
+#### Subtasks:
+- [ ] 14.5.1 — Tiered liability caps by user type:
+  - **Free tier users**: Lumenshore's total aggregate liability = £0 (or £1 nominal if £0 is unenforceable, up to maximum of £10)
+  - **Paid tier users**: Lumenshore's total aggregate liability = amount user has actually paid Lumenshore in the 12 months immediately preceding the claim
+  - **Note**: for IAP through Apple, "amount paid to Lumenshore" = net revenue received after Apple's commission — document this
+- [ ] 14.5.2 — Exclusion of consequential, indirect, and special damages:
+  - IN NO EVENT SHALL LUMENSHORE BE LIABLE FOR: loss of data, lost profits, lost revenue, lost savings, loss of goodwill, business interruption, cost of substitute services, incidental damages, consequential damages, special damages, exemplary damages, punitive damages
+  - Even if Lumenshore has been advised of the possibility of such damages
+  - Even if a limited remedy fails of its essential purpose
+- [ ] 14.5.3 — Per-jurisdiction enforceability notes:
+  - **UK**: Cannot exclude liability for death/personal injury from negligence, fraud, or fraudulent misrepresentation. Consumer Rights Act 2015 prevents "unfair" terms. Liability cap must be "reasonable" under UCTA 1977 (Unfair Contract Terms Act)
+  - **EU**: Consumer protection directives prohibit unfair terms. Total exclusion of liability for digital content may be void. Cap must be proportionate.
+  - **US**: Varies by state. California unconscionability doctrine. Always preserving small claims court access helps enforceability.
+  - **Germany**: Cannot exclude liability for intentional acts or gross negligence. BGB §309 No.7 prohibits excluding liability for personal injury.
+  - Add: "To the maximum extent permitted by applicable law" qualifier to all liability limitations
+- [ ] 14.5.4 — "AS IS" and "AS AVAILABLE" warranty disclaimer:
+  - THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED
+  - Disclaim: merchantability, fitness for a particular purpose, non-infringement, accuracy, completeness, reliability, availability, timeliness, security
+  - Disclaim: that the service will be uninterrupted, error-free, virus-free, or that defects will be corrected
+  - **UK carve-out**: "Nothing in these Terms affects your statutory rights under the Consumer Rights Act 2015" (required)
+- [ ] 14.5.5 — Educational content accuracy disclaimer:
+  - "LumenLingo provides language learning content for general educational purposes only"
+  - "We do not guarantee the accuracy, completeness, or reliability of any translations, grammar explanations, or linguistic content"
+  - "Content should not be relied upon for professional, commercial, medical, legal, or safety-critical translation or interpretation"
+  - "We are not a certified educational institution and do not award recognized qualifications"
+- [ ] 14.5.6 — No liability for user reliance:
+  - "Lumenshore is not liable for any decisions made or actions taken by users in reliance on the content provided through the Service"
+  - "Users are solely responsible for verifying the accuracy of any translation or linguistic information before relying on it for any purpose"
+- [ ] 14.5.7 — No liability for third-party services:
+  - "Lumenshore is not liable for the acts or omissions of third-party services including Apple, Vercel, Sentry, or any payment processor"
+  - "Apple is the merchant of record for all iOS in-app purchases; billing disputes should be directed to Apple"
+- [ ] 14.5.8 — Service availability disclaimer:
+  - No guarantee of uptime or availability
+  - May perform maintenance with or without notice
+  - May experience interruptions due to third-party providers
+  - No SLA unless separately agreed in writing
+
+**Acceptance Criteria**:
+- Tiered liability caps (free=zero, paid=amounts paid)
+- All consequential/indirect damages excluded
+- Per-jurisdiction enforceability documented
+- Warranty disclaimer comprehensive
+- Educational accuracy disclaimer prominent
+- Statutory consumer rights preserved (UK CRA 2015, EU CRD)
+- Legal counsel review recommended before deployment
+
+### Story 14.6: Terms of Service Protective Boilerplate
+
+**As a** business
+**I want** essential protective boilerplate clauses in Terms of Service
+**So that** standard legal protections are in place
+
+#### Subtasks:
+- [ ] 14.6.1 — **Entire Agreement clause**:
+  - Terms + Privacy Policy + EULA + Cookie Policy = entire agreement between parties
+  - Supersedes all prior agreements, representations, and understandings
+  - No oral modifications
+- [ ] 14.6.2 — **Severability clause**:
+  - If any provision held invalid or unenforceable → severed without affecting remaining provisions
+  - Court/arbitrator may reform unenforceable provision to minimum extent necessary
+- [ ] 14.6.3 — **Assignment clause**:
+  - Lumenshore may assign Terms to any successor, affiliate, or acquirer without user consent
+  - User may NOT assign or transfer their rights under Terms
+- [ ] 14.6.4 — **Waiver clause**:
+  - Failure to enforce any right or provision does NOT constitute waiver
+  - Waiver of one breach does not waive subsequent breaches
+  - No waiver unless in writing signed by authorized representative
+- [ ] 14.6.5 — **No partnership/agency/employment disclaimer**:
+  - Terms do not create agency, partnership, joint venture, or employment relationship
+  - Neither party has authority to bind the other
+- [ ] 14.6.6 — **Electronic communications agreement**:
+  - User agrees that electronic communications (email, in-app notices, website postings) satisfy legal requirements for "writing"
+  - Consent to receive communications electronically
+- [ ] 14.6.7 — **Headings clause**:
+  - Section headings are for convenience only and have no legal effect
+- [ ] 14.6.8 — **Survival clause**:
+  - Provisions that by their nature should survive termination shall survive: limitation of liability, indemnification, IP ownership, dispute resolution, confidentiality, and any other provisions
+
+**Acceptance Criteria**:
+- All standard boilerplate clauses present
+- Each clause enforceable under England & Wales law
+- Cover potential assignment to acquirer
+
+### Story 14.7: User Representations, Warranties & Obligations
+
+**As a** business
+**I want** users to make specific representations and warranties when accepting Terms
+**So that** users share responsibility and Lumenshore has contractual recourse
+
+#### Subtasks:
+- [ ] 14.7.1 — Users represent and warrant that:
+  - They are of legal age in their jurisdiction to form a binding contract (or have parental consent)
+  - They have legal capacity and authority to agree to Terms
+  - All information provided is accurate, current, and complete
+  - They will maintain the accuracy of their information
+  - They will not use the Service for any unlawful purpose
+  - They have not been previously suspended or removed from the Service
+- [ ] 14.7.2 — User obligations:
+  - Comply with all applicable local, state, national, and international laws
+  - Not attempt to reverse-engineer, decompile, or disassemble the app
+  - Not scrape, copy, or redistribute Service content
+  - Not interfere with or disrupt the Service or servers
+  - Not use automated means to access the Service (bots, scrapers)
+  - Not create multiple accounts for fraudulent purposes
+  - Not impersonate any person or entity
+  - Responsible for maintaining confidentiality of their account
+- [ ] 14.7.3 — User indemnification (enhanced from 14.2.4):
+  - User agrees to indemnify, defend, and hold harmless Lumenshore Limited, its directors, officers, employees, and agents from any claims, damages, costs (including reasonable legal fees) arising from:
+    - User's breach of Terms
+    - User's violation of any law or third-party rights
+    - User's use of the Service
+    - Any content user submits to the Service
+  - Lumenshore has right to assume exclusive defense of any indemnified claim
+  - User will cooperate with Lumenshore's defense
+- [ ] 14.7.4 — Consequences of breach:
+  - Lumenshore may suspend or terminate access for breach of Terms
+  - No refund for termination due to user breach
+  - Lumenshore may seek injunctive relief for IP infringement or Terms violation
+
+**Acceptance Criteria**:
+- User representations and warranties documented
+- Obligations comprehensive
+- Indemnification clause protects Lumenshore
+- Breach consequences defined
+
+### Story 14.8: Right to Modify, Suspend & Terminate Service
+
+**As a** business
+**I want** clear contractual rights to change, suspend, or discontinue the Service
+**So that** Lumenshore is protected when features change, maintenance occurs, or the service evolves
+
+#### Subtasks:
+- [ ] 14.8.1 — Right to modify Service:
+  - "Lumenshore reserves the right to modify, update, or discontinue any feature or content at any time without prior notice"
+  - "Addition or removal of language pairs, tiers, features, or content does not constitute breach of these Terms"
+  - "We may change pricing for future subscription periods with reasonable notice"
+- [ ] 14.8.2 — Right to suspend Service:
+  - "We may suspend the Service temporarily for maintenance, security incidents, or operational needs"
+  - "Scheduled maintenance will be communicated when reasonably practicable"
+  - "We are not liable for any loss or damage arising from temporary suspension"
+- [ ] 14.8.3 — Right to terminate:
+  - Lumenshore may terminate user access for: breach of Terms, fraudulent activity, inactivity (after notice), at Lumenshore's sole discretion with reasonable notice
+  - User may terminate at any time by deleting account and unsubscribing
+  - Upon termination: license to use Service revoked, user data deleted per retention policy
+- [ ] 14.8.4 — Right to modify Terms:
+  - "We may modify these Terms at any time by posting updated Terms on the website"
+  - "Material changes will be communicated via email (to subscribed users) or in-app notification"
+  - "Continued use after notification constitutes acceptance of modified Terms"
+  - "If you do not agree to modified Terms, you must stop using the Service and cancel your subscription"
+  - "Non-material updates (e.g., typos, clarifications) may be made without notice"
+- [ ] 14.8.5 — Effect of termination:
+  - Accrued rights and obligations survive
+  - No refund for unused subscription periods upon user-initiated termination (except as required by consumer protection law or Apple's refund policy)
+  - Lumenshore-initiated termination without cause: pro-rata refund for unused subscription period
+  - Data deletion per Privacy Policy retention schedule
+
+**Acceptance Criteria**:
+- Service modification rights clearly reserved
+- Suspension rights documented
+- Termination grounds and process defined
+- Terms modification mechanism enforceable
+- Fair treatment on termination (pro-rata refunds where Lumenshore terminates without cause)
+
+### Story 14.9: Limitation Period for Claims
+
+**As a** business
+**I want** a contractual limitation on the time period within which claims can be brought
+**So that** Lumenshore's exposure to historic claims is minimized
+
+#### Subtasks:
+- [ ] 14.9.1 — Contractual limitation period:
+  - "Any claim arising out of or relating to these Terms or the Service must be commenced within ONE (1) YEAR after the claim arose"
+  - "Failure to bring a claim within this period constitutes a permanent waiver of that claim"
+  - This is enforceable in most US states (default is 2-6 years depending on state)
+  - Shorter than default limitation in England & Wales (6 years for contract, Limitation Act 1980)
+- [ ] 14.9.2 — Per-jurisdiction enforceability:
+  - **England & Wales**: Contractual shortening allowed but must be reasonable; courts may refuse to enforce if unfair under UCTA
+  - **EU**: Consumer protection may override shortened limitation periods
+  - **US**: Generally enforceable if conspicuous and reasonable (1 year is common in tech ToS)
+  - **Fallback**: "To the extent this limitation period is unenforceable, the shortest limitation period permitted by applicable law shall apply"
+- [ ] 14.9.3 — Exception: personal injury and fraud claims are NOT subject to contractual limitation (cannot legally shorten these)
+- [ ] 14.9.4 — Discovery rule carve-out:
+  - "The limitation period begins when the claimant knew or should have known of the claim, but in no event more than TWO (2) YEARS after the act giving rise to the claim"
+
+**Acceptance Criteria**:
+- 1-year limitation period in Terms
+- Enforceability reviewed per jurisdiction
+- PI / fraud exceptions carved out
+- Discovery rule carve-out prevents unfairness
+- Fallback to statutory minimum where contractually shortened period is void
+
+### Story 14.10: Refund & Cancellation Policy
+
+**As a** subscriber
+**I want** clear refund and cancellation terms
+**So that** I understand my options and Lumenshore's obligations are defined
+
+#### Subtasks:
+- [ ] 14.10.1 — iOS App (Apple IAP) refund policy:
+  - "All subscription purchases are processed and managed by Apple"
+  - "Refund requests must be directed to Apple: reportaproblem.apple.com"
+  - "Lumenshore does not process payments or issue refunds for App Store purchases"
+  - "Apple's refund policy governs all iOS subscription refunds"
+- [ ] 14.10.2 — Cancellation process:
+  - "You may cancel your subscription at any time via iOS Settings > Apple ID > Subscriptions"
+  - "Cancellation takes effect at the end of the current billing period"
+  - "You will retain access to paid features until the end of your current billing period"
+  - "After the billing period ends, your account will revert to the Free tier"
+  - "Cancellation does not entitle you to a refund for the current period"
+- [ ] 14.10.3 — Free trial terms:
+  - "14-day Royal tier trial is free of charge"
+  - "No payment information is charged during the trial period"
+  - "Trial converts to a paid subscription at the published rate unless cancelled before trial ends"
+  - "You will receive a reminder before your trial ends" (best practice, not legally required)
+- [ ] 14.10.4 — EU/UK cooling-off period:
+  - Consumer Contracts Regs 2013 / EU CRD: 14-day withdrawal right for distance contracts
+  - Digital content exception: right to withdraw may be waived if consumer:
+    (a) Consents to immediate performance, AND
+    (b) Acknowledges loss of withdrawal right
+  - Implement explicit consent tick/button: "I agree to immediate access and acknowledge I lose my withdrawal right"
+  - If consent NOT obtained: 14-day refund right exists regardless of use
+- [ ] 14.10.5 — Publish refund policy on:
+  - Terms of Service page
+  - Website pricing page (summary)
+  - iOS app paywall screen (link)
+  - iOS app Settings > Legal (link)
+
+**Acceptance Criteria**:
+- Apple's refund role clearly stated
+- Cancellation process documented
+- Free trial terms transparent
+- EU/UK withdrawal right properly handled (with waiver mechanism)
+- Refund policy accessible from all purchase touchpoints
+
 ---
 
 ## Epic 15: Ongoing Compliance & Governance
@@ -2104,6 +2385,142 @@
 - LatAm data protection landscape assessed
 - Compliance tiers documented
 
+### Story 18.10: Canada — Personal Information Protection and Electronic Documents Act (PIPEDA)
+
+**As a** service accessible to Canadian users (EN↔FR language pairs serve Canadian francophones)
+**I want** compliance with Canada's PIPEDA
+**So that** Canadian users' privacy rights are respected and Lumenshore avoids complaints to the OPC
+
+#### Subtasks:
+- [ ] 18.10.1 — PIPEDA applicability assessment:
+  - PIPEDA applies to private-sector organizations that collect, use, or disclose personal information in the course of commercial activity
+  - English and French language pairs serve Canadian English and French speakers
+  - Website available in en and fr locales = targeting Canadian users
+  - Newsletter/waitlist signups from Canada = collecting PI of Canadians
+- [ ] 18.10.2 — PIPEDA 10 Fair Information Principles:
+  - Accountability: organization responsible for PI under its control
+  - Identifying Purposes: purposes identified at or before time of collection
+  - Consent: knowledge and consent required for collection, use, disclosure
+  - Limiting Collection: limited to what is necessary
+  - Limiting Use/Disclosure/Retention: used only for identified purposes; retained only as long as necessary
+  - Accuracy: keep PI accurate, complete, and up-to-date
+  - Safeguards: security appropriate to sensitivity
+  - Openness: privacy policies readily available
+  - Individual Access: right to access and challenge accuracy
+  - Challenging Compliance: ability to challenge compliance to privacy officer
+- [ ] 18.10.3 — Breach notification (mandatory since Nov 2018):
+  - Report breaches creating "real risk of significant harm" to OPC (Office of the Privacy Commissioner)
+  - Notify affected individuals
+  - Keep records of all breaches for 2 years
+- [ ] 18.10.4 — Quebec Law 25 (if applicable):
+  - Quebec's Law 25 (modernizing PIPEDA for Quebec) added GDPR-like requirements
+  - If targeting Quebec French speakers specifically — requires Privacy Impact Assessment, consent granularity, and data residency considerations
+- [ ] 18.10.5 — Add Canadian-specific privacy disclosures (in English and French)
+
+**Acceptance Criteria**:
+- PIPEDA applicability assessed
+- 10 Fair Information Principles mapped to current practices
+- Breach notification process covers Canada
+- Quebec Law 25 assessed if targeting Quebec
+- Canadian privacy disclosures available in en and fr
+
+### Story 18.11: South Korea — Personal Information Protection Act (PIPA)
+
+**As a** service potentially accessible to South Korean users
+**I want** awareness of South Korea's PIPA requirements
+**So that** Lumenshore can assess compliance if Korean users emerge
+
+#### Subtasks:
+- [ ] 18.11.1 — PIPA applicability assessment:
+  - South Korea has one of the world's strictest data protection regimes
+  - PIPA applies to "personal information handlers" processing PI of Korean residents
+  - Currently no ko locale or Korean language pairs — lower risk
+  - But if Korean users sign up via English locale — PIPA may still apply
+- [ ] 18.11.2 — Key PIPA requirements (assess if Korean user base grows):
+  - Consent for collection must be specific per purpose (not bundled)
+  - Cross-border transfer: requires separate consent or equivalent protection
+  - Mandatory appointment of Privacy Officer (CPO)
+  - Data breach notification to PIPC and affected individuals "without delay"
+  - Right to access, correction, deletion, suspension of processing
+  - Annual privacy impact assessment for large-scale processors
+- [ ] 18.11.3 — Document decision: monitor Korean user metrics; if material Korean user base develops, full PIPA compliance review required
+- [ ] 18.11.4 — Korea Communications Commission (KCC) requirements for online service providers if any content is served from Korean infrastructure
+
+**Acceptance Criteria**:
+- PIPA awareness documented
+- Monitoring threshold set for Korean user base
+- Decision documented on current compliance posture
+
+### Story 18.12: Australia — Privacy Act 1988 & Australian Consumer Law
+
+**As a** service accessible to Australian users (EN language pairs serve Australian English speakers)
+**I want** compliance with Australia's Privacy Act and consumer protection laws
+**So that** Australian users are protected and Lumenshore avoids OAIC enforcement
+
+#### Subtasks:
+- [ ] 18.12.1 — Privacy Act 1988 applicability:
+  - Australian Privacy Principles (APPs) apply to organizations with annual turnover > AUD 3M, or those trading in personal information, or providing health services, or small businesses that have opted in
+  - Assess whether Lumenshore exceeds AUD 3M threshold or otherwise triggers APPs
+  - Even below threshold: good practice to comply as Australian users expect APP-level protection
+- [ ] 18.12.2 — Key APP requirements:
+  - APP 1: Open and transparent management of personal information
+  - APP 5: Notification of collection of personal information
+  - APP 6: Use or disclosure only for purpose of collection (or related purpose the individual would reasonably expect)
+  - APP 8: Cross-border disclosure — must take reasonable steps to ensure overseas recipient doesn't breach APPs, or obtain consent
+  - APP 11: Security of personal information
+  - APP 12: Access to personal information
+  - APP 13: Correction of personal information
+- [ ] 18.12.3 — Notifiable Data Breaches (NDB) scheme:
+  - Mandatory notification to OAIC and affected individuals for eligible data breaches
+  - "Eligible breach": unauthorized access/disclosure likely to result in serious harm
+  - Assess within 30 days of becoming aware of potential breach
+- [ ] 18.12.4 — Australian Consumer Law (ACL):
+  - Consumer guarantees for digital products apply
+  - Services must be provided with due care and skill
+  - Cannot exclude consumer guarantees via contract terms
+  - ACL supersedes any ToS limitation of liability for guaranteed rights
+- [ ] 18.12.5 — Privacy policy must be available and accessible per APP 1
+
+**Acceptance Criteria**:
+- Privacy Act/APP applicability assessed
+- Cross-border transfer mechanism documented (APP 8)
+- NDB scheme integrated into breach response plan
+- Australian Consumer Law guarantees cannot be excluded — carve-out in ToS
+- Privacy policy accessible per APP 1
+
+### Story 18.13: India — Digital Personal Data Protection Act (DPDPA) 2023
+
+**As a** service potentially accessible to Indian users
+**I want** awareness of India's DPDPA requirements
+**So that** Lumenshore can assess compliance as Indian user base develops
+
+#### Subtasks:
+- [ ] 18.13.1 — DPDPA applicability:
+  - Applies to processing of digital personal data of individuals in India
+  - No hi locale or Hindi language pairs currently — but English locale serves Indian English speakers
+  - If significant Indian user base develops via English language pairs → compliance required
+- [ ] 18.13.2 — Key DPDPA requirements:
+  - Consent must be free, specific, informed, unconditional, and unambiguous
+  - Purpose limitation: personal data used only for consented purpose
+  - Data Principal (data subject) rights: access, correction, erasure, grievance redressal, nomination
+  - Data Fiduciary (controller) obligations: accuracy, security, breach notification, data protection impact assessment
+  - Significant Data Fiduciary: additional obligations (DPO, periodic audits) if notified by government — unlikely for Lumenshore at current scale
+- [ ] 18.13.3 — Cross-border transfers:
+  - DPDPA allows transfers to all countries EXCEPT those specifically blacklisted by Indian government
+  - No blanket data localization requirement (unlike PIPL)
+  - Monitor blacklist updates
+- [ ] 18.13.4 — Children's data (under 18 in India):
+  - Verifiable parental consent required for processing children's data
+  - Cannot track, behaviorally monitor, or target advertising at children
+  - Age of digital consent in India: 18 years
+- [ ] 18.13.5 — Document decision: monitor Indian user metrics; full compliance review if material Indian user base develops
+
+**Acceptance Criteria**:
+- DPDPA applicability assessed
+- Monitoring threshold set for Indian user base
+- Children's data age threshold (18) noted
+- Cross-border transfer mechanism confirmed (not blacklisted)
+
 ---
 
 ## Epic 19: Age of Digital Consent — Multi-Jurisdiction Compliance
@@ -2138,6 +2555,9 @@
   | UAE | 18 | UAE PDPL (minors need guardian consent) |
   | Saudi Arabia | 18 | PDPL (minors need guardian consent) |
   | Australia | No specific age | Privacy Act 1988 (capacity-based approach) |
+  | India | 18 | DPDPA 2023 (children = under 18; verifiable parental consent required) |
+  | South Korea | 14 | PIPA (parental consent for under-14) |
+  | Canada | 13 (varies) | PIPEDA / provincial laws (Quebec: 14) |
 
   *Japan: no fixed digital consent age; APPI uses case-by-case assessment for minors
   †Brazil: "children" are under 12 (ECA), "adolescents" are 12-17
@@ -2679,35 +3099,16 @@
 | **P1** | Epic 6: UK-Specific Compliance | Not Started | Medium |
 | **P1** | Epic 8: IP & Content Protection | Not Started | Small |
 | **P1** | Epic 10: Legal Page Internationalization | Not Started | Large |
+| **P1** | Epic 12: Security & Breach Preparedness | Not Started | Medium |
 | **P1** | Epic 13: Email Marketing Compliance | Not Started (blocked by ESP) | Small |
-| **P1** | Epic 14: Dispute Resolution & Liability | Not Started | Medium |
+| **P1** | Epic 14: Dispute Resolution & Liability | Not Started | Large |
 | **P1** | Epic 16: Website Legal Infrastructure | Not Started | Small |
 | **P1** | Epic 21: Export Controls & Sanctions | Not Started | Small |
 | **P1** | Epic 22: Accessibility Multi-Jurisdiction | Not Started | Large |
 | **P1** | Epic 24: Insurance & Corporate Governance | Not Started | Medium |
 | **P2** | Epic 7: EU DSA/DMA Compliance | Not Started | Small |
-| **P2** | Epic 12: Security & Breach Preparedness | Not Started | Medium |
 | **P2** | Epic 15: Ongoing Compliance & Governance | Not Started | Medium |
 | **P2** | Epic 23: AI & Algorithmic Transparency | Not Started | Small |
-
-| Priority | Epic | Status | Effort |
-|---|---|---|---|
-| **P0** | Epic 1: Website Privacy Policy Overhaul | Not Started | Medium |
-| **P0** | Epic 2: Cookie & Tracking Consent | Not Started | Medium |
-| **P0** | Epic 3: App Store Compliance | Not Started | Large |
-| **P0** | Epic 4: GDPR Full Compliance | Not Started | Large |
-| **P0** | Epic 9: Subscription Compliance | Not Started (blocked by IAP impl) | Medium |
-| **P0** | Epic 11: iOS In-App Legal | Not Started | Medium |
-| **P1** | Epic 5: CCPA / US Privacy Laws | Not Started | Medium |
-| **P1** | Epic 6: UK-Specific Compliance | Not Started | Medium |
-| **P1** | Epic 8: IP & Content Protection | Not Started | Small |
-| **P1** | Epic 10: Legal Page Internationalization | Not Started | Large |
-| **P1** | Epic 13: Email Marketing Compliance | Not Started (blocked by ESP) | Small |
-| **P1** | Epic 14: Dispute Resolution & Liability | Not Started | Medium |
-| **P1** | Epic 16: Website Legal Infrastructure | Not Started | Small |
-| **P2** | Epic 7: EU DSA/DMA Compliance | Not Started | Small |
-| **P2** | Epic 12: Security & Breach Preparedness | Not Started | Medium |
-| **P2** | Epic 15: Ongoing Compliance & Governance | Not Started | Medium |
 
 ---
 
@@ -2716,11 +3117,11 @@
 | Metric | Count |
 |---|---|
 | **Epics** | 24 |
-| **Stories** | 79 |
-| **Subtasks** | 441 |
+| **Stories** | 90 |
+| **Subtasks** | 500 |
 | **P0 (Critical)** | 10 epics |
-| **P1 (High)** | 10 epics |
-| **P2 (Medium)** | 4 epics |
+| **P1 (High)** | 11 epics |
+| **P2 (Medium)** | 3 epics |
 
 ---
 
@@ -2823,8 +3224,16 @@ en, es, fr, de, ja, zh, ar, pl, uk, pt
 | **UAE** | Federal Decree-Law No. 45/2021 | Epic 18 |
 | **Saudi Arabia** | PDPL | Epic 18 |
 | **Canada** | CASL | Epic 13 |
-| **Australia** | Spam Act 2003 / Privacy Act 1988 | Epics 13, 20 |
+| **Canada** | PIPEDA | Epic 18 |
+| **Canada** | Quebec Law 25 | Epic 18 |
+| **Australia** | Spam Act 2003 / Privacy Act 1988 | Epics 13, 18, 20 |
+| **Australia** | Australian Consumer Law | Epic 18 |
+| **India** | DPDPA 2023 | Epic 18 |
+| **South Korea** | PIPA | Epic 18 |
 | **Apple** | App Store Review Guidelines | Epics 3, 9, 11 |
 | **Apple** | HIG / Accessibility | Epics 6, 22 |
 | **Global** | WCAG 2.1 AA / EN 301 549 | Epic 22 |
 | **Global** | DMCA / Copyright | Epic 8 |
+| **Global** | Arbitration / Class Action Waiver | Epic 14 |
+| **Global** | Limitation of Liability | Epic 14 |
+| **Global** | Refund & Cancellation | Epic 14 |
