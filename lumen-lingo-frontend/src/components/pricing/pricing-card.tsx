@@ -149,7 +149,7 @@ export function PricingCard({
         <span className={cn('text-4xl font-bold font-display sm:text-5xl', style.accent)}>
           {price}
         </span>
-        {period && price !== '£0' && (
+        {period && tier !== 'free' && (
           <span className="text-sm text-white/40">{period}</span>
         )}
       </div>

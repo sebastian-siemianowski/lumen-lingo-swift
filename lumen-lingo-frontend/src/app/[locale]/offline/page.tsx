@@ -1,11 +1,20 @@
 import type { Metadata } from 'next';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { OfflineContent } from './offline-content';
 
-export const metadata: Metadata = {
-  title: "You're Offline",
-  robots: { index: false },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Offline.meta' });
+
+  return {
+    title: t('title'),
+    robots: { index: false },
+  };
+}
 
 export default async function OfflinePage({
   params,

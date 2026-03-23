@@ -97,18 +97,20 @@
     "tier": {
       "free": {
         "name": "Gratis",
-        "price": "£0",
+        "price": "$0",
         "features": [
           "3 pares de idiomas",
           "Todos los modos de práctica (Principiante)",
           "Mazos de 50 tarjetas",
           "30 min de práctica diaria",
           "Seguimiento básico del progreso"
-        ]
+        ],
+        "description": "Perfecto para empezar. Explora las funciones principales y descubre por qué los estudiantes aman LumenLingo.",
+        "cta": "Empezar Gratis"
       },
       "pro": {
         "name": "Pro",
-        "price": "£9,99",
+        "price": "$9,99",
         "features": [
           "10 pares de idiomas",
           "Todas las dificultades desbloqueadas",
@@ -116,11 +118,13 @@
           "3 paisajes sonoros",
           "Modo sin conexión",
           "Analíticas detalladas"
-        ]
+        ],
+        "description": "Para estudiantes comprometidos que quieren más idiomas, práctica ilimitada y experiencias más ricas.",
+        "cta": "Mejorar a Pro"
       },
       "elite": {
         "name": "Élite",
-        "price": "£19,99",
+        "price": "$19,99",
         "features": [
           "Todos los pares de idiomas",
           "Los 12 paisajes sonoros",
@@ -128,11 +132,13 @@
           "Fondos nebulosa",
           "Soporte prioritario",
           "Multiplicador 2× XP"
-        ]
+        ],
+        "description": "Desbloquea la experiencia completa de LumenLingo con todos los idiomas, modos avanzados y visuales impresionantes.",
+        "cta": "Ir a Élite"
       },
       "royal": {
         "name": "Royal",
-        "price": "£99,99",
+        "price": "$99,99",
         "features": [
           "Todo en Élite",
           "Fondo Quantum Flow",
@@ -140,7 +146,9 @@
           "Acceso anticipado a nuevas funciones",
           "Precio bloqueado de por vida",
           "Soporte directo del fundador"
-        ]
+        ],
+        "description": "El nivel definitivo para maestros de idiomas. Todas las funciones, sin límites, extras exclusivos.",
+        "cta": "Ir a Royal"
       }
     },
     "comparison": {
@@ -150,6 +158,12 @@
     "faq": {
       "heading": "Preguntas Frecuentes",
       "description": "Todo lo que necesitas saber sobre los precios y suscripciones de LumenLingo."
+    },
+    "meta": {
+      "title": "Precios",
+      "description": "Elige el nivel de membresía perfecto de LumenLingo. Comienza gratis o desbloquea Pro, Elite o Royal para más idiomas, paisajes sonoros, fondos visuales y funciones premium.",
+      "ogTitle": "Precios — LumenLingo",
+      "ogDescription": "Compara los niveles Free, Pro, Elite y Royal. Comienza gratis, mejora cuando estés listo."
     }
   },
   "Features": {
@@ -172,6 +186,12 @@
       "description": "Aprende en cualquier dirección. Pasa el cursor sobre cualquier tarjeta para ver un ejemplo.",
       "comingSoon": "Próximamente",
       "comingSoonDesc": "Más idiomas y pares están en camino. Únete al acceso anticipado para ser el primero en saberlo."
+    },
+    "meta": {
+      "title": "Funciones",
+      "description": "Explora todas las funciones de LumenLingo: tarjetas inmersivas, repetición espaciada inteligente, 3 modos de práctica, 12 paisajes sonoros, esferas de respiración, más de 25 pares de idiomas y más.",
+      "ogTitle": "Funciones — LumenLingo",
+      "ogDescription": "Explora todas las funciones de LumenLingo: tarjetas inmersivas, repetición espaciada, 3 modos de práctica, 12 paisajes sonoros y más."
     }
   },
   "About": {
@@ -204,35 +224,48 @@
     "email": "hello@lumenshore.com",
     "responseTime": "Generalmente respondemos en 48 horas",
     "faqHeading": "Preguntas Frecuentes",
-    "faqDescription": "Respuestas rápidas a las preguntas más comunes sobre LumenLingo."
+    "faqDescription": "Respuestas rápidas a las preguntas más comunes sobre LumenLingo.",
+    "meta": {
+      "title": "Ayuda y Contacto",
+      "description": "Encuentra respuestas a preguntas frecuentes sobre LumenLingo o contacta con el equipo de LumenShore. Estamos aquí para ayudarte en tu viaje de aprendizaje de idiomas.",
+      "ogTitle": "Ayuda y Contacto — LumenLingo",
+      "ogDescription": "Encuentra respuestas a preguntas frecuentes sobre LumenLingo o contacta con el equipo de LumenShore."
+    },
+    "supportLanguage": "Respondemos en inglés y español."
   },
   "Download": {
     "heading": "LumenLingo",
-    "description": "Domina idiomas a través de experiencias inmersivas. Hermoso, consciente, efectivo.",
-    "meta": "Empieza gratis · Sin cuenta necesaria · iPhone y iPad",
+    "description": "Domina idiomas a través de experiencias inmersivas. Hermosa, consciente, efectiva.",
+    "meta": "Gratis para empezar · Sin cuenta requerida · iPhone y iPad",
     "benefits": {
       "flashcards": "Tarjetas Hermosas",
-      "flashcardsDesc": "Tarjetas deslizables con visuales impresionantes y repetición espaciada incorporada.",
+      "flashcardsDesc": "Aprende vocabulario con tarjetas inmersivas y ricamente diseñadas. Desliza para dominar palabras a tu ritmo.",
       "practice": "Práctica Adaptativa",
-      "practiceDesc": "Tres modos que se ajustan a tu nivel — desde principiante hasta avanzado.",
+      "practiceDesc": "Tres modos de juego que se adaptan a ti: emparejamiento, completar espacios y opción múltiple.",
       "soundscapes": "Paisajes Sonoros Ambientales",
-      "soundscapesDesc": "12 entornos inmersivos que transforman tus sesiones de estudio."
+      "soundscapesDesc": "12 paisajes sonoros seleccionados — desde lluvia suave hasta nébula cósmica — para sesiones de estudio concentrado."
     },
     "stats": {
-      "languages": "9 Idiomas",
-      "soundscapes": "12 Paisajes Sonoros",
-      "practiceModes": "3 Modos de Práctica",
-      "flashcards": "∞ Tarjetas"
+      "languages": "Idiomas",
+      "soundscapes": "Paisajes Sonoros",
+      "practiceModes": "Modos de Práctica",
+      "flashcards": "Tarjetas"
     },
-    "upgradeNote": "Empieza gratis. Niveles Pro, Élite y Royal disponibles dentro de la app.",
+    "upgradeNote": "Gratis para empezar. Niveles Pro, Elite y Royal disponibles en la app.",
     "qr": {
       "heading": "Escanea para descargar",
-      "description": "Apunta la cámara de tu iPhone al código QR para descargar LumenLingo de la App Store.",
+      "description": "Apunta la cámara de tu iPhone al código QR para obtener LumenLingo al instante.",
       "fallback": "O visita lumenlingo.com/open en tu teléfono"
     },
     "showcase": {
+      "flashcards": "Tarjetas Inmersivas",
+      "flashcardsSub": "Desliza entre tarjetas bellamente diseñadas",
+      "practice": "Práctica Inteligente",
+      "practiceSub": "Tres modos de juego adaptativos",
+      "soundscapes": "Paisajes Sonoros Ambientales",
+      "soundscapesSub": "12 entornos de concentración seleccionados",
       "heading": "Diseñado para deleitar",
-      "description": "Cada interacción está creada con esmero. Animaciones fluidas como la seda, hápticas cuidadosas y una interfaz que parece cobrar vida."
+      "description": "Cada interacción está elaborada con cuidado. Animaciones fluidas, hápticos sutiles y paisajes sonoros ambientales crean un entorno de aprendizaje al que realmente quieres volver."
     }
   },
   "Newsletter": {
@@ -292,6 +325,12 @@
       "twitter": "X (Twitter)",
       "whatsapp": "WhatsApp",
       "email": "Correo"
+    },
+    "meta": {
+      "title": "Acceso anticipado — Sé de los primeros",
+      "description": "Únete a la lista de acceso anticipado de LumenLingo. Sé el primero en enterarte cuando se lancen nuevos idiomas y funciones. Ofertas exclusivas para los primeros seguidores.",
+      "ogTitle": "Acceso anticipado — LumenLingo",
+      "ogDescription": "Únete a la lista de espera y obtén acceso anticipado a LumenLingo. Domina un nuevo idioma a través de la inmersión multisensorial."
     }
   },
   "Demo": {
@@ -312,6 +351,12 @@
       "description": "¿Te gustó? La experiencia real es aún mejor — con 9 idiomas, aprendizaje adaptativo, paisajes sonoros ambientales y miles de tarjetas.",
       "downloadFree": "Descarga Gratis",
       "tryAgain": "Intentar de Nuevo"
+    },
+    "meta": {
+      "title": "Pruébalo — Demo interactiva de tarjetas",
+      "description": "Experimenta las tarjetas de LumenLingo directamente en tu navegador. Voltea, desliza y aprende — luego descarga la app completa gratis.",
+      "ogTitle": "Pruébalo — Demo interactiva | LumenLingo",
+      "ogDescription": "Desliza hermosas tarjetas en 5 idiomas. Experimenta la calidad antes de descargar."
     }
   },
   "NotFound": {
@@ -336,7 +381,10 @@
     "description": "La app LumenLingo funciona perfectamente sin conexión con una suscripción Pro o superior. Descárgala y nunca pierdas una sesión de práctica.",
     "retry": "Reintentar Conexión",
     "retrying": "Reconectando…",
-    "goHome": "Ir al Inicio"
+    "goHome": "Ir al Inicio",
+    "meta": {
+      "title": "Sin conexión"
+    }
   },
   "Footer": {
     "brand": "LumenLingo",
@@ -584,6 +632,22 @@
       "email": "<b>Correo electrónico</b>: <emailLink>hello@lumenshore.com</emailLink>",
       "company": "<b>Empresa</b>: LumenShore Ltd, Reino Unido",
       "responseTime": "Normalmente respondemos en un plazo de 48 horas."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "Blog",
+      "description": "Consejos, guías e información para aprendices de idiomas. Descubre la ciencia del aprendizaje, consejos prácticos y lo último del equipo LumenLingo.",
+      "ogTitle": "Blog — LumenLingo",
+      "ogDescription": "Consejos, guías e información para aprendices de idiomas de LumenLingo."
+    }
+  },
+  "Languages": {
+    "meta": {
+      "title": "Idiomas compatibles — 9 idiomas, más de 25 pares",
+      "description": "Explora todos los pares de idiomas de LumenLingo. Aprende español, francés, alemán, japonés, chino, árabe, italiano, polaco y más con hermosas tarjetas.",
+      "ogTitle": "Idiomas compatibles — LumenLingo",
+      "ogDescription": "9 idiomas, más de 25 pares bidireccionales. Aprende en cualquier dirección con vocabulario curado y práctica adaptativa."
     }
   }
 }

@@ -1,41 +1,23 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
 
-const screenshots = [
-  {
-    id: 'flashcards',
-    title: 'Immersive Flashcards',
-    gradient: 'from-violet/20 to-cyan/10',
-    emoji: '🃏',
-    subtitle: 'Swipe through beautifully designed cards',
-  },
-  {
-    id: 'practice',
-    title: 'Smart Practice',
-    gradient: 'from-cyan/20 to-violet/10',
-    emoji: '🧠',
-    subtitle: 'Three adaptive game modes',
-  },
-  {
-    id: 'soundscapes',
-    title: 'Ambient Soundscapes',
-    gradient: 'from-violet/15 to-amber/10',
-    emoji: '🎧',
-    subtitle: '12 curated focus environments',
-  },
-];
+const screenshotKeys = ['flashcards', 'practice', 'soundscapes'] as const;
+const gradients = ['from-violet/20 to-cyan/10', 'from-cyan/20 to-violet/10', 'from-violet/15 to-amber/10'];
+const emojis = ['🃏', '🧠', '🎧'];
 
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 export function DownloadShowcase() {
   const [active, setActive] = useState(0);
   const prefersReduced = useReducedMotion();
+  const t = useTranslations('Download.showcase');
 
   const advance = useCallback(() => {
-    setActive((prev) => (prev + 1) % screenshots.length);
+    setActive((prev) => (prev + 1) % screenshotKeys.length);
   }, []);
 
   useEffect(() => {
@@ -44,7 +26,7 @@ export function DownloadShowcase() {
     return () => clearInterval(interval);
   }, [advance, prefersReduced]);
 
-  const current = screenshots[active];
+  const currentKey = screenshotKeys[active];
 
   return (
     <section className="relative px-6 py-20">
@@ -62,22 +44,22 @@ export function DownloadShowcase() {
               <div className="absolute top-2.5 left-1/2 z-20 h-[24px] w-[80px] -translate-x-1/2 rounded-full bg-black" />
               <div className="relative aspect-[9/19.5] overflow-hidden rounded-[32px] bg-surface">
                 <AnimatePresence mode="wait">
-                  {current && (
+                  {currentKey && (
                     <motion.div
-                      key={current.id}
+                      key={currentKey}
                       initial={{ opacity: 0, scale: 1.04 }}
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 0.96 }}
                       transition={{ duration: 0.5, ease }}
                       className="absolute inset-0 flex flex-col"
                     >
-                      <div className={`absolute inset-0 bg-gradient-to-br ${current.gradient}`} />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${gradients[active]}`} />
                       <div className="relative flex flex-1 flex-col items-center justify-center gap-3 p-5 pt-10">
-                        <span className="text-4xl">{current.emoji}</span>
+                        <span className="text-4xl">{emojis[active]}</span>
                         <span className="font-display text-sm font-bold text-foreground">
-                          {current.title}
+                          {t(currentKey)}
                         </span>
-                        <span className="text-xs text-foreground-muted">{current.subtitle}</span>
+                        <span className="text-xs text-foreground-muted">{t(`${currentKey}Sub`)}</span>
                         <div className="mt-3 flex w-full flex-col gap-2">
                           <div className="h-7 w-full rounded-lg bg-white/5" />
                           <div className="h-7 w-3/4 rounded-lg bg-white/3" />
@@ -92,7 +74,7 @@ export function DownloadShowcase() {
 
             {/* Carousel dots */}
             <div className="mt-5 flex justify-center gap-2">
-              {screenshots.map((_, i) => (
+              {screenshotKeys.map((key, i) => (
                 <button
                   key={i}
                   onClick={() => setActive(i)}
@@ -101,7 +83,7 @@ export function DownloadShowcase() {
                       ? 'w-6 bg-violet'
                       : 'w-1.5 bg-foreground-muted/40 hover:bg-foreground-muted/60'
                   }`}
-                  aria-label={`View screenshot ${i + 1}: ${screenshots[i]?.title}`}
+                  aria-label={`View screenshot ${i + 1}: ${t(key)}`}
                 />
               ))}
             </div>
@@ -111,17 +93,15 @@ export function DownloadShowcase() {
         {/* Captions */}
         <div className="flex flex-col gap-6 text-center lg:text-start">
           <h2 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
-            Designed to delight
+            {t('heading')}
           </h2>
           <p className="max-w-md text-foreground-secondary leading-relaxed">
-            Every interaction is crafted with care. Smooth animations, 
-            subtle haptics, and ambient soundscapes create a learning 
-            environment you actually want to return to.
+            {t('description')}
           </p>
           <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
-            {screenshots.map((s, i) => (
+            {screenshotKeys.map((key, i) => (
               <button
-                key={s.id}
+                key={key}
                 onClick={() => setActive(i)}
                 className={`rounded-full border px-4 py-1.5 text-sm transition-all ${
                   i === active
@@ -129,7 +109,7 @@ export function DownloadShowcase() {
                     : 'border-glass-border bg-glass text-foreground-secondary hover:bg-glass-hover'
                 }`}
               >
-                {s.title}
+                {t(key)}
               </button>
             ))}
           </div>

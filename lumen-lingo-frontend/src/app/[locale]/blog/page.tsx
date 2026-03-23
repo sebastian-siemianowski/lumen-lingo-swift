@@ -1,35 +1,47 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAllPosts, getPostsByCategory, getFeaturedPost, paginatePosts } from '@/lib/blog';
 import { BlogHero, PostCard, CategoryFilter, Pagination } from '@/components/blog';
 import { PageTransition } from '@/components/layout';
 import { BreadcrumbJsonLd } from '@/components/home';
+import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Blog',
-  description:
-    'Tips, guides, and insights for language learners. Explore the science of learning, practical study advice, and the latest from the LumenLingo team.',
-  alternates: {
-    canonical: 'https://lumenlingo.com/blog',
-  },
-  openGraph: {
-    title: 'Blog — LumenLingo',
-    description:
-      'Tips, guides, and insights for language learners. Explore the science of learning, practical study advice, and the latest from LumenLingo.',
-    url: 'https://lumenlingo.com/blog',
-    siteName: 'LumenLingo',
-    type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'LumenLingo Blog' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Blog — LumenLingo',
-    description:
-      'Tips, guides, and insights for language learners from LumenLingo.',
-    images: ['/og-image.png'],
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Blog.meta' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      ...buildAlternates('/blog', locale),
+      types: {
+        'application/rss+xml': localizedUrl('/blog/feed.xml', locale),
+      },
+    },
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      url: localizedUrl('/blog', locale),
+      siteName: 'LumenLingo',
+      locale: getOgLocale(locale),
+      alternateLocales: getOgAlternateLocales(locale),
+      type: 'website',
+      images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'LumenLingo Blog' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      images: ['/og-image.png'],
+    },
+  };
+}
 
 interface BlogPageProps {
   params: Promise<{ locale: string }>;
@@ -55,7 +67,7 @@ export default async function BlogPage({ params: paramsPromise, searchParams }: 
 
   return (
     <PageTransition>
-      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }]} />
+      <BreadcrumbJsonLd locale={locale} items={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }]} />
       <BlogHero />
 
       <section className="relative mx-auto max-w-7xl px-6 pb-24 sm:px-8 lg:px-12">

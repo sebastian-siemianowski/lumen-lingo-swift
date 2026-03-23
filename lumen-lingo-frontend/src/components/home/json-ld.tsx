@@ -1,3 +1,5 @@
+import { localizedUrl } from '@/lib/seo';
+
 interface JsonLdProps {
   data: Record<string, unknown>;
 }
@@ -16,7 +18,7 @@ interface BreadcrumbItem {
   href: string;
 }
 
-export function BreadcrumbJsonLd({ items }: { items: BreadcrumbItem[] }) {
+export function BreadcrumbJsonLd({ items, locale }: { items: BreadcrumbItem[]; locale?: string }) {
   const data = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -24,7 +26,7 @@ export function BreadcrumbJsonLd({ items }: { items: BreadcrumbItem[] }) {
       '@type': 'ListItem',
       position: i + 1,
       name: item.name,
-      item: `https://lumenlingo.com${item.href}`,
+      item: locale ? localizedUrl(item.href === '/' ? '' : item.href, locale) : `https://lumenlingo.com${item.href}`,
     })),
   };
 

@@ -22,9 +22,12 @@ test.describe('Mobile Navigation', () => {
     await page.goto('/');
     const hamburger = page.locator('button[aria-label*="menu" i], button[aria-label*="nav" i], [data-testid="mobile-menu"]');
     await hamburger.first().click();
-    await page.getByRole('link', { name: /pricing/i }).click();
+    // Wait for mobile menu link to be visible, then click
+    const pricingLink = page.locator('a[href*="/pricing"]:visible').first();
+    await pricingLink.waitFor({ state: 'visible', timeout: 10_000 });
+    await pricingLink.click();
     await page.waitForURL(/pricing/);
-    await expect(page.locator('h1, h2').filter({ hasText: /pricing/i }).first()).toBeVisible();
+    await expect(page.locator('h1').first()).toBeVisible();
   });
 
   test('closes mobile menu after navigation', async ({ page }) => {

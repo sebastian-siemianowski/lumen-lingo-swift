@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+"""Add description and cta keys to Pricing.tier.* in ja.json."""
+import json, pathlib
+
+fp = pathlib.Path(__file__).resolve().parent.parent / "lumen-lingo-frontend" / "messages" / "ja.json"
+data = json.loads(fp.read_text("utf-8"))
+
+t = data["Pricing"]["tier"]
+t["free"]["description"] = "\u307e\u305a\u306f\u7121\u6599\u3067\u59cb\u3081\u307e\u3057\u3087\u3046\u3002\u4e3b\u8981\u6a5f\u80fd\u3092\u4f53\u9a13\u3057\u3066\u3001LumenLingo\u304c\u611b\u3055\u308c\u308b\u7406\u7531\u3092\u898b\u3064\u3051\u3066\u304f\u3060\u3055\u3044\u3002"
+t["free"]["cta"] = "\u7121\u6599\u3067\u59cb\u3081\u308b"
+t["pro"]["description"] = "\u3088\u308a\u591a\u304f\u306e\u8a00\u8a9e\u3001\u7121\u5236\u9650\u306e\u7df4\u7fd2\u3001\u8c4a\u304b\u306a\u4f53\u9a13\u3092\u6c42\u3081\u308b\u719f\u7df4\u306e\u5b66\u7fd2\u8005\u306b\u3002"
+t["pro"]["cta"] = "Pro\u306b\u30a2\u30c3\u30d7\u30b0\u30ec\u30fc\u30c9"
+t["elite"]["description"] = "\u3059\u3079\u3066\u306e\u8a00\u8a9e\u3001\u4e0a\u7d1a\u30e2\u30fc\u30c9\u3001\u7f8e\u3057\u3044\u30d3\u30b8\u30e5\u30a2\u30eb\u3067LumenLingo\u306e\u5b8c\u5168\u306a\u4f53\u9a13\u3092\u89e3\u653e\u3057\u307e\u3057\u3087\u3046\u3002"
+t["elite"]["cta"] = "Elite\u3092\u9078\u3076"
+t["royal"]["description"] = "\u8a00\u8a9e\u30de\u30b9\u30bf\u30fc\u306e\u305f\u3081\u306e\u6700\u9ad8\u5cf0\u3002\u3059\u3079\u3066\u306e\u6a5f\u80fd\u3001\u5236\u9650\u306a\u3057\u3001\u30d7\u30ec\u30df\u30a2\u30e0\u9650\u5b9a\u7279\u5178\u3002"
+t["royal"]["cta"] = "Royal\u3092\u9078\u3076"
+
+fp.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", "utf-8")
+print("ja.json tier descriptions and CTAs added")

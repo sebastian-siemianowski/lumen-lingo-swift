@@ -104,7 +104,9 @@
           "50 张闪卡套组",
           "每日 30 分钟练习",
           "基础进度追踪"
-        ]
+        ],
+        "description": "完美的入门选择。探索核心功能，了解学习者为什么喜爱LumenLingo。",
+        "cta": "免费开始"
       },
       "pro": {
         "name": "Pro",
@@ -116,7 +118,9 @@
           "3 个音景",
           "离线模式",
           "详细分析"
-        ]
+        ],
+        "description": "为认真的学习者而设，更多语言、无限练习、更丰富的体验。",
+        "cta": "升级到Pro"
       },
       "elite": {
         "name": "Elite",
@@ -128,7 +132,9 @@
           "星云背景",
           "优先支持",
           "2 倍经验加成"
-        ]
+        ],
+        "description": "解锁LumenLingo完整体验——所有语言、高级模式和惊艳的视觉效果。",
+        "cta": "选择Elite"
       },
       "royal": {
         "name": "Royal",
@@ -140,7 +146,9 @@
           "新功能抢先体验",
           "终身价格锁定",
           "创始人直接支持"
-        ]
+        ],
+        "description": "语言大师的终极选择。所有功能、无限制、专属特权。",
+        "cta": "选择Royal"
       }
     },
     "comparison": {
@@ -150,6 +158,12 @@
     "faq": {
       "heading": "常见问题",
       "description": "关于 LumenLingo 定价和订阅的一切须知。"
+    },
+    "meta": {
+      "title": "价格方案",
+      "description": "选择完美的LumenLingo会员等级。免费开始，或解锁Pro、Elite或Royal以获取更多语言、声景、视觉背景和高级功能。",
+      "ogTitle": "价格方案 — LumenLingo",
+      "ogDescription": "比较Free、Pro、Elite和Royal等级。免费开始，准备好了再升级。"
     }
   },
   "Features": {
@@ -172,6 +186,12 @@
       "description": "任意方向学习。悬停卡片查看示例闪卡。",
       "comingSoon": "即将推出",
       "comingSoonDesc": "更多语言和语言对即将上线。加入抢先体验，第一时间获知。"
+    },
+    "meta": {
+      "title": "功能",
+      "description": "探索LumenLingo的全部功能：沉浸式闪卡、智能间隔重复、3种练习模式、12个声景、呼吸球、25+语言对等。",
+      "ogTitle": "功能 — LumenLingo",
+      "ogDescription": "探索LumenLingo的全部功能：沉浸式闪卡、间隔重复、3种练习模式、12个声景等。"
     }
   },
   "About": {
@@ -204,35 +224,48 @@
     "email": "hello@lumenshore.com",
     "responseTime": "我们通常在 48 小时内回复",
     "faqHeading": "常见问题",
-    "faqDescription": "关于 LumenLingo 最常见问题的快速解答。"
+    "faqDescription": "关于 LumenLingo 最常见问题的快速解答。",
+    "meta": {
+      "title": "帮助与联系",
+      "description": "查找关于LumenLingo的常见问题解答，或联系LumenShore团队。我们随时帮助您的语言学习之旅。",
+      "ogTitle": "帮助与联系 — LumenLingo",
+      "ogDescription": "查找关于LumenLingo的常见问题解答，或联系LumenShore团队。"
+    },
+    "supportLanguage": "我们用英语和中文回复。"
   },
   "Download": {
     "heading": "LumenLingo",
-    "description": "通过沉浸式体验掌握语言。精美、正念、高效。",
-    "meta": "免费开始 · 无需注册 · iPhone 和 iPad",
+    "description": "通过沉浸式体验掌握语言。美观、用心、高效。",
+    "meta": "免费开始 · 无需账户 · iPhone和iPad",
     "benefits": {
       "flashcards": "精美闪卡",
-      "flashcardsDesc": "滑动式卡片，华丽视觉效果，内置间隔重复。",
+      "flashcardsDesc": "用沉浸式、精心设计的卡片学习词汇。按自己的节奏滑动掌握单词。",
       "practice": "自适应练习",
-      "practiceDesc": "三种模式根据你的水平自动调整——从入门到高级。",
-      "soundscapes": "环境音效",
-      "soundscapesDesc": "12 种沉浸式环境，重新定义你的学习体验。"
+      "practiceDesc": "三种游戏模式适应您的学习：匹配、填空和选择题。",
+      "soundscapes": "氛围音景",
+      "soundscapesDesc": "12种精选音景——从细雨到宇宙星云——助您专注学习。"
     },
     "stats": {
-      "languages": "9 种语言",
-      "soundscapes": "12 个音景",
-      "practiceModes": "3 种练习模式",
-      "flashcards": "∞ 闪卡"
+      "languages": "语言",
+      "soundscapes": "音景",
+      "practiceModes": "练习模式",
+      "flashcards": "闪卡"
     },
-    "upgradeNote": "免费开始。Pro、Elite 和 Royal 方案可在应用内升级。",
+    "upgradeNote": "免费开始。Pro、Elite和Royal等级可在应用内升级。",
     "qr": {
       "heading": "扫码下载",
-      "description": "用 iPhone 摄像头扫描二维码，从 App Store 下载 LumenLingo。",
+      "description": "将iPhone摄像头对准QR码，立即获取LumenLingo。",
       "fallback": "或在手机上访问 lumenlingo.com/open"
     },
     "showcase": {
-      "heading": "为愉悦而设计",
-      "description": "每个交互都精心打造。丝滑动画、精妙触感反馈和充满生命力的界面。"
+      "flashcards": "沉浸式闪卡",
+      "flashcardsSub": "滑动浏览精美设计的卡片",
+      "practice": "智能练习",
+      "practiceSub": "三种自适应游戏模式",
+      "soundscapes": "氛围音景",
+      "soundscapesSub": "12种精选专注环境",
+      "heading": "精心设计，令人愉悦",
+      "description": "每次交互都经过精心打造。流畅的动画、微妙的触觉反馈和氛围音景，创造了一个你真正想回到的学习环境。"
     }
   },
   "Newsletter": {
@@ -292,6 +325,12 @@
       "twitter": "X（推特）",
       "whatsapp": "WhatsApp",
       "email": "邮件"
+    },
+    "meta": {
+      "title": "抢先体验 — 成为第一批用户",
+      "description": "加入LumenLingo抢先体验名单。第一时间获知新语言和新功能的发布。早期支持者专属优惠。",
+      "ogTitle": "抢先体验 — LumenLingo",
+      "ogDescription": "加入等待名单并抢先体验LumenLingo。通过多感官沉浸掌握新语言。"
     }
   },
   "Demo": {
@@ -312,6 +351,12 @@
       "description": "喜欢吗？真实体验更加出色——9 种语言、自适应学习、环境音效和数千张闪卡。",
       "downloadFree": "免费下载",
       "tryAgain": "再试一次"
+    },
+    "meta": {
+      "title": "立即体验 — 互动闪卡演示",
+      "description": "在浏览器中体验LumenLingo闪卡。翻转、滑动、学习 — 然后免费下载完整版应用。",
+      "ogTitle": "立即体验 — 互动演示 | LumenLingo",
+      "ogDescription": "滑动5种语言的精美闪卡。下载前先体验品质。"
     }
   },
   "NotFound": {
@@ -336,7 +381,10 @@
     "description": "LumenLingo 应用在 Pro 及以上订阅下可以完美离线运行。下载它，永不错过练习机会。",
     "retry": "重试连接",
     "retrying": "重新连接中…",
-    "goHome": "返回首页"
+    "goHome": "返回首页",
+    "meta": {
+      "title": "您已离线"
+    }
   },
   "Footer": {
     "brand": "LumenLingo",
@@ -584,6 +632,22 @@
       "email": "<b>电子邮件</b>：<emailLink>hello@lumenshore.com</emailLink>",
       "company": "<b>公司</b>：LumenShore Ltd，英国",
       "responseTime": "我们通常在48小时内回复。"
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "博客",
+      "description": "为语言学习者提供的技巧、指南和见解。探索学习科学、实用建议和LumenLingo团队的最新动态。",
+      "ogTitle": "博客 — LumenLingo",
+      "ogDescription": "LumenLingo为语言学习者提供的技巧、指南和见解。"
+    }
+  },
+  "Languages": {
+    "meta": {
+      "title": "支持的语言 — 9种语言，25+语言对",
+      "description": "探索LumenLingo的所有语言对。用精美闪卡学习西班牙语、法语、德语、日语、中文、阿拉伯语、意大利语、波兰语等。",
+      "ogTitle": "支持的语言 — LumenLingo",
+      "ogDescription": "9种语言，25+双向语言对。通过精选词汇和自适应练习从任何方向学习。"
     }
   }
 }

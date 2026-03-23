@@ -1,11 +1,14 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { AppStoreBadge } from '@/components/home/app-store-badge';
 
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 export function DownloadQR() {
+  const t = useTranslations('Download.qr');
+
   return (
     <section className="relative px-6 py-20 pb-12">
       {/* top divider glow */}
@@ -19,10 +22,10 @@ export function DownloadQR() {
         transition={{ duration: 0.5, ease }}
       >
         <h2 className="font-display text-2xl font-bold text-foreground">
-          Scan to download
+          {t('heading')}
         </h2>
         <p className="text-foreground-secondary">
-          Point your iPhone camera at the QR code to get LumenLingo instantly.
+          {t('description')}
         </p>
 
         {/* QR code placeholder — replace with real QR image once App Store ID is live */}
@@ -55,7 +58,7 @@ export function DownloadQR() {
             </div>
           </div>
           <span className="text-xs text-foreground-muted">
-            Or visit <span className="text-violet">lumenlingo.com/open</span> on your phone
+            {t('fallback')}
           </span>
         </div>
 

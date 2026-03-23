@@ -1,19 +1,37 @@
 import type { Metadata } from 'next';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { FlashcardDemo } from '@/components/demo';
 import { Section, Container, Heading, Text } from '@/components/ui';
+import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Try It — Interactive Flashcard Demo | LumenLingo',
-  description:
-    'Experience LumenLingo flashcards right in your browser. Flip, swipe, and learn — then download the full app for free.',
-  openGraph: {
-    title: 'Try It — Interactive Flashcard Demo | LumenLingo',
-    description:
-      'Swipe through beautiful flashcards in 5 languages. Experience the quality before you download.',
-    type: 'website',
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Demo.meta' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: buildAlternates('/demo', locale),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      url: localizedUrl('/demo', locale),
+      siteName: 'LumenLingo',
+      locale: getOgLocale(locale),
+      alternateLocales: getOgAlternateLocales(locale),
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+    },
+  };
+}
 
 export default async function DemoPage({
   params,

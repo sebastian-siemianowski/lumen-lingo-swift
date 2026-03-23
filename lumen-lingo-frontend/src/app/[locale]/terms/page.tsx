@@ -6,6 +6,7 @@ import { FadeIn } from '@/components/motion';
 import { LegalTOC, DownloadPDFButton } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { Link } from '@/i18n/navigation';
+import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
 export async function generateMetadata({
   params,
@@ -18,14 +19,14 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: 'https://lumenlingo.com/terms',
-    },
+    alternates: buildAlternates('/terms', locale),
     openGraph: {
       title: t('ogTitle'),
       description: t('description'),
-      url: 'https://lumenlingo.com/terms',
+      url: localizedUrl('/terms', locale),
       siteName: 'LumenLingo',
+      locale: getOgLocale(locale),
+      alternateLocales: getOgAlternateLocales(locale),
       type: 'website',
     },
     twitter: {
@@ -68,7 +69,7 @@ export default async function TermsPage({
 
   return (
     <PageTransition>
-      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: t('breadcrumb'), href: '/terms' }]} />
+      <BreadcrumbJsonLd locale={locale} items={[{ name: 'Home', href: '/' }, { name: t('breadcrumb'), href: '/terms' }]} />
 
       {/* Hero */}
       <Section className="pt-32 pb-8 sm:pt-40 sm:pb-12">

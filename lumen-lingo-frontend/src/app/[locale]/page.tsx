@@ -11,6 +11,7 @@ import {
   organizationLd,
 } from '@/components/home';
 import { PageTransition } from '@/components/layout';
+import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
 export async function generateMetadata({
   params,
@@ -23,14 +24,14 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: 'https://lumenlingo.com',
-    },
+    alternates: buildAlternates('', locale),
     openGraph: {
       title: t('title'),
       description: t('description'),
-      url: 'https://lumenlingo.com',
+      url: localizedUrl('', locale),
       siteName: 'LumenLingo',
+      locale: getOgLocale(locale),
+      alternateLocales: getOgAlternateLocales(locale),
       type: 'website',
       images: [
         {

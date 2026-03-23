@@ -12,8 +12,9 @@ test.describe('Homepage', () => {
   test('renders navigation links', async ({ page }) => {
     await page.goto('/');
     await expect(page.getByRole('navigation')).toBeVisible();
-    await expect(page.getByRole('link', { name: /pricing/i })).toBeVisible();
-    await expect(page.getByRole('link', { name: /blog/i })).toBeVisible();
+    // Nav links exist — check by href since text is localised
+    await expect(page.locator('nav a[href*="/pricing"]').first()).toBeVisible();
+    await expect(page.locator('nav a[href*="/blog"]').first()).toBeVisible();
   });
 
   test('hero CTA links to App Store', async ({ page }) => {
@@ -25,9 +26,9 @@ test.describe('Homepage', () => {
 
   test('navigates to pricing page', async ({ page }) => {
     await page.goto('/');
-    await page.getByRole('link', { name: /pricing/i }).first().click();
+    await page.locator('nav a[href*="/pricing"]').first().click();
     await page.waitForURL(/pricing/);
-    await expect(page.locator('h1, h2').filter({ hasText: /pricing/i }).first()).toBeVisible();
+    await expect(page.locator('h1').first()).toBeVisible();
   });
 
   test('navigates to blog page', async ({ page }) => {

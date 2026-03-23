@@ -1,11 +1,14 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { AppStoreBadge } from '@/components/home/app-store-badge';
 
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 export function DownloadHero() {
+  const t = useTranslations('Download');
+
   return (
     <section className="relative flex min-h-[70vh] flex-col items-center justify-center px-6 pt-24 pb-16 text-center">
       {/* Background radial glow */}
@@ -33,11 +36,10 @@ export function DownloadHero() {
         {/* App name & tagline */}
         <div className="space-y-3">
           <h1 className="font-display text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            LumenLingo
+            {t('heading')}
           </h1>
           <p className="mx-auto max-w-md text-lg text-foreground-secondary sm:text-xl">
-            Master languages through immersive experiences.
-            Beautiful, mindful, effective.
+            {t('description')}
           </p>
         </div>
 
@@ -52,7 +54,7 @@ export function DownloadHero() {
 
         {/* Trust line */}
         <p className="text-sm text-foreground-muted">
-          Free to start · No account required · iPhone &amp; iPad
+          {t('meta')}
         </p>
       </motion.div>
     </section>

@@ -33,6 +33,7 @@ export default async function AccessibilityPage({
   return (
     <PageTransition>
       <BreadcrumbJsonLd
+        locale={locale}
         items={[
           { name: 'Home', href: '/' },
           { name: 'Accessibility Statement', href: '/accessibility' },

@@ -1,17 +1,16 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 
-const features = [
-  { value: '9', label: 'Languages' },
-  { value: '12', label: 'Soundscapes' },
-  { value: '3', label: 'Practice Modes' },
-  { value: '∞', label: 'Flashcards' },
-];
+const statKeys = ['languages', 'soundscapes', 'practiceModes', 'flashcards'] as const;
+const statValues = ['9', '12', '3', '\u221e'];
 
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 export function DownloadFeatures() {
+  const t = useTranslations('Download');
+
   return (
     <section className="relative px-6 py-16">
       <div className="mx-auto max-w-3xl">
@@ -23,10 +22,10 @@ export function DownloadFeatures() {
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 0.5, ease }}
         >
-          {features.map((f) => (
-            <div key={f.label} className="flex flex-col items-center gap-1 bg-surface py-6">
-              <span className="font-display text-2xl font-bold text-violet">{f.value}</span>
-              <span className="text-sm text-foreground-secondary">{f.label}</span>
+          {statKeys.map((key, i) => (
+            <div key={key} className="flex flex-col items-center gap-1 bg-surface py-6">
+              <span className="font-display text-2xl font-bold text-violet">{statValues[i]}</span>
+              <span className="text-sm text-foreground-secondary">{t(`stats.${key}`)}</span>
             </div>
           ))}
         </motion.div>
@@ -39,7 +38,7 @@ export function DownloadFeatures() {
           viewport={{ once: true }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          Free to start. Pro, Elite, and Royal tiers available in-app.
+          {t('upgradeNote')}
         </motion.p>
       </div>
     </section>

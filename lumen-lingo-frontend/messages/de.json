@@ -104,7 +104,9 @@
           "Lernkartendecks mit 50 Karten",
           "30 Min. tägliches Training",
           "Einfache Fortschrittsverfolgung"
-        ]
+        ],
+        "description": "Perfekt zum Einstieg. Entdecken Sie die Kernfunktionen und erfahren Sie, warum Lernende LumenLingo lieben.",
+        "cta": "Kostenlos starten"
       },
       "pro": {
         "name": "Pro",
@@ -116,7 +118,9 @@
           "3 Klangwelten",
           "Offline-Modus",
           "Detaillierte Analysen"
-        ]
+        ],
+        "description": "Für engagierte Lernende, die mehr Sprachen, unbegrenztes Üben und reichhaltigere Erfahrungen möchten.",
+        "cta": "Auf Pro upgraden"
       },
       "elite": {
         "name": "Elite",
@@ -128,7 +132,9 @@
           "Nebula-Hintergründe",
           "Prioritäts-Support",
           "2× XP-Multiplikator"
-        ]
+        ],
+        "description": "Schalten Sie das vollständige LumenLingo-Erlebnis frei — alle Sprachen, fortgeschrittene Modi und beeindruckende Visualisierungen.",
+        "cta": "Elite wählen"
       },
       "royal": {
         "name": "Royal",
@@ -140,7 +146,9 @@
           "Frühzeitiger Zugang zu neuen Funktionen",
           "Lebenslang gesicherter Preis",
           "Direkter Support vom Gründer"
-        ]
+        ],
+        "description": "Die ultimative Stufe für Sprachmeister. Alle Funktionen, keine Grenzen, exklusive Extras.",
+        "cta": "Royal wählen"
       }
     },
     "comparison": {
@@ -150,6 +158,12 @@
     "faq": {
       "heading": "Häufig Gestellte Fragen",
       "description": "Alles, was Sie über die Preise und Abonnements von LumenLingo wissen müssen."
+    },
+    "meta": {
+      "title": "Preise",
+      "description": "Wählen Sie die perfekte LumenLingo-Mitgliedschaftsstufe. Starten Sie kostenlos oder schalten Sie Pro, Elite oder Royal für mehr Sprachen, Klanglandschaften, visuelle Hintergründe und Premium-Funktionen frei.",
+      "ogTitle": "Preise — LumenLingo",
+      "ogDescription": "Vergleichen Sie die Stufen Free, Pro, Elite und Royal. Starten Sie kostenlos, upgraden Sie wenn Sie bereit sind."
     }
   },
   "Features": {
@@ -172,6 +186,12 @@
       "description": "Lernen Sie in jede Richtung. Bewegen Sie den Mauszeiger über eine Karte, um ein Beispiel zu sehen.",
       "comingSoon": "Demnächst Verfügbar",
       "comingSoonDesc": "Weitere Sprachen und Paare sind in Arbeit. Melden Sie sich für den frühzeitigen Zugang an, um als Erster informiert zu werden."
+    },
+    "meta": {
+      "title": "Funktionen",
+      "description": "Entdecken Sie alle Funktionen von LumenLingo: immersive Karteikarten, intelligente Wiederholung, 3 Übungsmodi, 12 Klanglandschaften, Atemsphären, 25+ Sprachpaare und mehr.",
+      "ogTitle": "Funktionen — LumenLingo",
+      "ogDescription": "Entdecken Sie alle Funktionen von LumenLingo: immersive Karteikarten, intelligente Wiederholung, 3 Übungsmodi, 12 Klanglandschaften und mehr."
     }
   },
   "About": {
@@ -204,35 +224,48 @@
     "email": "hello@lumenshore.com",
     "responseTime": "Wir antworten in der Regel innerhalb von 48 Stunden",
     "faqHeading": "Häufig Gestellte Fragen",
-    "faqDescription": "Schnelle Antworten auf die häufigsten Fragen zu LumenLingo."
+    "faqDescription": "Schnelle Antworten auf die häufigsten Fragen zu LumenLingo.",
+    "meta": {
+      "title": "Hilfe & Kontakt",
+      "description": "Finden Sie Antworten auf häufige Fragen zu LumenLingo oder kontaktieren Sie das LumenShore-Team. Wir helfen Ihnen gerne auf Ihrer Sprachlernreise.",
+      "ogTitle": "Hilfe & Kontakt — LumenLingo",
+      "ogDescription": "Finden Sie Antworten auf häufige Fragen zu LumenLingo oder kontaktieren Sie das LumenShore-Team."
+    },
+    "supportLanguage": "Wir antworten auf Englisch und Deutsch."
   },
   "Download": {
     "heading": "LumenLingo",
-    "description": "Sprachen meistern durch immersive Erlebnisse. Schön, achtsam, effektiv.",
+    "description": "Sprachen meistern durch immersive Erfahrungen. Schön, achtsam, effektiv.",
     "meta": "Kostenlos starten · Kein Konto erforderlich · iPhone und iPad",
     "benefits": {
-      "flashcards": "Schöne Lernkarten",
-      "flashcardsDesc": "Wischbare Karten mit beeindruckenden Visuals und integrierter verteilter Wiederholung.",
-      "practice": "Adaptives Training",
-      "practiceDesc": "Drei Modi, die sich Ihrem Niveau anpassen — vom Anfänger bis zum Fortgeschrittenen.",
-      "soundscapes": "Ambient-Klangwelten",
-      "soundscapesDesc": "12 immersive Umgebungen, die Ihre Lernsitzungen verwandeln."
+      "flashcards": "Wunderschöne Lernkarten",
+      "flashcardsDesc": "Vokabeln lernen mit immersiven, aufwendig gestalteten Karten. Wischen, um Wörter in Ihrem Tempo zu meistern.",
+      "practice": "Adaptive Übungen",
+      "practiceDesc": "Drei Spielmodi, die sich an Sie anpassen: Zuordnung, Lückentext und Multiple-Choice.",
+      "soundscapes": "Ambiente Klangwelten",
+      "soundscapesDesc": "12 kuratierte Klangwelten — von sanftem Regen bis zum kosmischen Nebel — für konzentrierte Lernsessions."
     },
     "stats": {
-      "languages": "9 Sprachen",
-      "soundscapes": "12 Klangwelten",
-      "practiceModes": "3 Übungsmodi",
-      "flashcards": "∞ Karten"
+      "languages": "Sprachen",
+      "soundscapes": "Klangwelten",
+      "practiceModes": "Übungsmodi",
+      "flashcards": "Lernkarten"
     },
     "upgradeNote": "Kostenlos starten. Pro-, Elite- und Royal-Stufen in der App verfügbar.",
     "qr": {
-      "heading": "Zum Herunterladen scannen",
-      "description": "Richten Sie Ihre iPhone-Kamera auf den QR-Code, um LumenLingo aus dem App Store herunterzuladen.",
-      "fallback": "Oder besuchen Sie lumenlingo.com/open auf Ihrem Smartphone"
+      "heading": "Scannen zum Herunterladen",
+      "description": "Richten Sie Ihre iPhone-Kamera auf den QR-Code, um LumenLingo sofort zu erhalten.",
+      "fallback": "Oder besuchen Sie lumenlingo.com/open auf Ihrem Handy"
     },
     "showcase": {
-      "heading": "Gestaltet, um zu begeistern",
-      "description": "Jede Interaktion ist mit Bedacht gestaltet. Seidenweiche Animationen, durchdachte Haptik und eine Oberfläche, die sich lebendig anfühlt."
+      "flashcards": "Immersive Lernkarten",
+      "flashcardsSub": "Wischen Sie durch wunderschön gestaltete Karten",
+      "practice": "Intelligente Übungen",
+      "practiceSub": "Drei adaptive Spielmodi",
+      "soundscapes": "Ambiente Klangwelten",
+      "soundscapesSub": "12 kuratierte Fokus-Umgebungen",
+      "heading": "Gestaltet zum Begeistern",
+      "description": "Jede Interaktion ist sorgfältig gestaltet. Flüssige Animationen, subtile Haptik und ambiente Klangwelten schaffen eine Lernumgebung, in die Sie gerne zurückkehren."
     }
   },
   "Newsletter": {
@@ -292,6 +325,12 @@
       "twitter": "X (Twitter)",
       "whatsapp": "WhatsApp",
       "email": "E-Mail"
+    },
+    "meta": {
+      "title": "Früher Zugang — Seien Sie unter den Ersten",
+      "description": "Melden Sie sich für die LumenLingo-Frühzugangsliste an. Erfahren Sie als Erster von neuen Sprachen und Funktionen. Exklusive Angebote für frühe Unterstützer.",
+      "ogTitle": "Früher Zugang — LumenLingo",
+      "ogDescription": "Melden Sie sich an und erhalten Sie frühen Zugang zu LumenLingo. Meistern Sie eine neue Sprache durch multisensorisches Eintauchen."
     }
   },
   "Demo": {
@@ -312,6 +351,12 @@
       "description": "Hat es Ihnen gefallen? Das echte Erlebnis ist noch besser — mit 9 Sprachen, adaptivem Lernen, Ambient-Klangwelten und Tausenden von Karten.",
       "downloadFree": "Kostenlos Herunterladen",
       "tryAgain": "Nochmal Versuchen"
+    },
+    "meta": {
+      "title": "Ausprobieren — Interaktive Karteikarten-Demo",
+      "description": "Erleben Sie LumenLingo-Karteikarten direkt in Ihrem Browser. Umdrehen, wischen und lernen — dann laden Sie die vollständige App kostenlos herunter.",
+      "ogTitle": "Ausprobieren — Interaktive Demo | LumenLingo",
+      "ogDescription": "Blättern Sie durch schöne Karteikarten in 5 Sprachen. Erleben Sie die Qualität vor dem Download."
     }
   },
   "NotFound": {
@@ -336,7 +381,10 @@
     "description": "Die LumenLingo-App funktioniert mit einem Pro-Abonnement oder höher perfekt offline. Laden Sie sie herunter und verpassen Sie nie wieder eine Übungssitzung.",
     "retry": "Verbindung Wiederherstellen",
     "retrying": "Verbinde erneut…",
-    "goHome": "Zur Startseite"
+    "goHome": "Zur Startseite",
+    "meta": {
+      "title": "Sie sind offline"
+    }
   },
   "Footer": {
     "brand": "LumenLingo",
@@ -584,6 +632,22 @@
       "email": "<b>E-Mail</b>: <emailLink>hello@lumenshore.com</emailLink>",
       "company": "<b>Unternehmen</b>: LumenShore Ltd, Vereinigtes Königreich",
       "responseTime": "Wir antworten in der Regel innerhalb von 48 Stunden."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "Blog",
+      "description": "Tipps, Anleitungen und Einblicke für Sprachlernende. Entdecken Sie die Wissenschaft des Lernens, praktische Ratschläge und Neuigkeiten vom LumenLingo-Team.",
+      "ogTitle": "Blog — LumenLingo",
+      "ogDescription": "Tipps, Anleitungen und Einblicke für Sprachlernende von LumenLingo."
+    }
+  },
+  "Languages": {
+    "meta": {
+      "title": "Unterstützte Sprachen — 9 Sprachen, 25+ Paare",
+      "description": "Entdecken Sie alle Sprachpaare von LumenLingo. Lernen Sie Spanisch, Französisch, Deutsch, Japanisch, Chinesisch, Arabisch, Italienisch, Polnisch und mehr mit schönen Karteikarten.",
+      "ogTitle": "Unterstützte Sprachen — LumenLingo",
+      "ogDescription": "9 Sprachen, 25+ bidirektionale Paare. Lernen Sie in jede Richtung mit kuratiertem Vokabular und adaptivem Üben."
     }
   }
 }

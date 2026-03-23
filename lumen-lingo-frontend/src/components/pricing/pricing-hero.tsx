@@ -1,11 +1,14 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { StaggerChildren, StaggerItem } from '@/components/motion';
 import { StarField } from '@/components/background';
 
 export function PricingHero() {
+  const t = useTranslations('Pricing');
+
   return (
     <Section className="relative overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-20">
       {/* Star field background */}
@@ -28,7 +31,7 @@ export function PricingHero() {
             >
               <span className="text-sm">💎</span>
               <span className="text-sm font-medium text-white/70">
-                Simple, Transparent Pricing
+                {t('badge')}
               </span>
             </motion.div>
           </StaggerItem>
@@ -36,15 +39,14 @@ export function PricingHero() {
           {/* Headline */}
           <StaggerItem>
             <Heading as="h1" gradient className="mb-6 text-4xl sm:text-5xl lg:text-6xl">
-              Choose Your Learning Journey
+              {t('heading')}
             </Heading>
           </StaggerItem>
 
           {/* Subline */}
           <StaggerItem>
             <Text size="lg" colour="secondary" className="mx-auto max-w-2xl">
-              Start for free, upgrade when you&apos;re ready. Every tier is designed to match your
-              ambition — from casual learner to language master.
+              {t('description')}
             </Text>
           </StaggerItem>
 
@@ -53,7 +55,7 @@ export function PricingHero() {
             <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-amber/20 bg-amber/5 px-4 py-2">
               <span className="text-sm">✨</span>
               <Text size="sm" colour="secondary">
-                Try Royal-level access free for 14 days
+                {t('trialBadge')}
               </Text>
             </div>
           </StaggerItem>

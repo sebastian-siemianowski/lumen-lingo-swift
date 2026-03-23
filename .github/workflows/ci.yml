@@ -59,6 +59,14 @@ jobs:
           path: lumen-lingo-frontend/test-results/
           retention-days: 7
 
+  translations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: node lumen-lingo-frontend/scripts/check-translations.js
+        env:
+          NODE_PATH: lumen-lingo-frontend
+
   build:
     runs-on: ubuntu-latest
     steps:

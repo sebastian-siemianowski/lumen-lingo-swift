@@ -2042,29 +2042,29 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] Privacy Policy content extracted from hardcoded JSX into locale-addressable structured content (message file keys or MDX per locale)
-- [ ] Terms of Service content extracted from hardcoded JSX into locale-addressable structured content
-- [ ] Both pages translated into all 9 non-English locales: ES, FR, JA, DE, PT, PL, AR, ZH, UK
-- [ ] Legal pages render correctly for RTL (Arabic) and CJK (Japanese, Chinese) layouts
-- [ ] `LegalTOC` component supports translated section headings and anchor links
-- [ ] `<DownloadPDFButton>` works for all locales (PDF generation or pre-rendered per locale)
-- [ ] `BreadcrumbJsonLd` structured data uses translated breadcrumb names
-- [ ] EU locales (FR, DE, ES, PT, PL) include GDPR-specific clause translations
+- [x] Privacy Policy content extracted from hardcoded JSX into locale-addressable structured content (message file keys or MDX per locale)
+- [x] Terms of Service content extracted from hardcoded JSX into locale-addressable structured content
+- [x] Both pages translated into all 9 non-English locales: ES, FR, JA, DE, PT, PL, AR, ZH, UK
+- [x] Legal pages render correctly for RTL (Arabic) and CJK (Japanese, Chinese) layouts
+- [x] `LegalTOC` component supports translated section headings and anchor links
+- [x] `<DownloadPDFButton>` works for all locales (PDF generation or pre-rendered per locale)
+- [x] `BreadcrumbJsonLd` structured data uses translated breadcrumb names
+- [x] EU locales (FR, DE, ES, PT, PL) include GDPR-specific clause translations
 - [ ] Legal translations reviewed by a qualified translator with legal knowledge (not machine-only)
-- [ ] Last-updated date shown on each localised page
+- [x] Last-updated date shown on each localised page
 
 ### Subtasks
 
-- [ ] 15.8.1 — Extract Privacy Policy content from `privacy/page.tsx` inline JSX into a structured format (one key per section in message files, or MDX per locale)
-- [ ] 15.8.2 — Extract Terms of Service content from `terms/page.tsx` inline JSX into a structured format
-- [ ] 15.8.3 — Refactor `privacy/page.tsx` and `terms/page.tsx` to render content from the structured source using `useTranslations()`
-- [ ] 15.8.4 — Translate Privacy Policy into ES, FR, DE, PT, PL (EU locales first — GDPR compliance)
-- [ ] 15.8.5 — Translate Privacy Policy into JA, ZH, AR, UK
-- [ ] 15.8.6 — Translate Terms of Service into ES, FR, DE, PT, PL
-- [ ] 15.8.7 — Translate Terms of Service into JA, ZH, AR, UK
-- [ ] 15.8.8 — Update `LegalTOC` to use translated section headings from message files
-- [ ] 15.8.9 — Verify `DownloadPDFButton` generates correct localised PDF for each locale
-- [ ] 15.8.10 — Verify RTL legal page layout for Arabic locale
+- [x] 15.8.1 — Extract Privacy Policy content from `privacy/page.tsx` inline JSX into a structured format (one key per section in message files, or MDX per locale)
+- [x] 15.8.2 — Extract Terms of Service content from `terms/page.tsx` inline JSX into a structured format
+- [x] 15.8.3 — Refactor `privacy/page.tsx` and `terms/page.tsx` to render content from the structured source using `useTranslations()`
+- [x] 15.8.4 — Translate Privacy Policy into ES, FR, DE, PT, PL (EU locales first — GDPR compliance)
+- [x] 15.8.5 — Translate Privacy Policy into JA, ZH, AR, UK
+- [x] 15.8.6 — Translate Terms of Service into ES, FR, DE, PT, PL
+- [x] 15.8.7 — Translate Terms of Service into JA, ZH, AR, UK
+- [x] 15.8.8 — Update `LegalTOC` to use translated section headings from message files
+- [x] 15.8.9 — Verify `DownloadPDFButton` generates correct localised PDF for each locale
+- [x] 15.8.10 — Verify RTL legal page layout for Arabic locale
 - [ ] 15.8.11 — Commission legal-quality review of translated Privacy Policy and Terms for all locales
 
 ---
@@ -2077,25 +2077,25 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] Every page has locale-specific `<title>` and `<meta name="description">` via `generateMetadata`
-- [ ] Open Graph tags (`og:title`, `og:description`, `og:locale`, `og:locale:alternate`) set per locale
-- [ ] `og:locale` uses correct IETF format (e.g. `fr_FR`, `ja_JP`, `de_DE`, `pt_BR`, `pl_PL`, `ar_SA`, `zh_CN`, `uk_UA`)
-- [ ] `hreflang` tags include `x-default` pointing to English
-- [ ] Sitemap includes all localised URLs with `<xhtml:link rel="alternate" hreflang="...">` annotations
-- [ ] Localised canonical URLs set correctly (each locale's page is self-canonical)
+- [x] Every page has locale-specific `<title>` and `<meta name="description">` via `generateMetadata`
+- [x] Open Graph tags (`og:title`, `og:description`, `og:locale`, `og:locale:alternate`) set per locale
+- [x] `og:locale` uses correct IETF format (e.g. `fr_FR`, `ja_JP`, `de_DE`, `pt_BR`, `pl_PL`, `ar_SA`, `zh_CN`, `uk_UA`)
+- [x] `hreflang` tags include `x-default` pointing to English
+- [x] Sitemap includes all localised URLs with `<xhtml:link rel="alternate" hreflang="...">` annotations
+- [x] Localised canonical URLs set correctly (each locale's page is self-canonical)
 - [ ] Google Search Console verified for all locale subpaths
-- [ ] Structured data (`BreadcrumbJsonLd`, `WebSiteJsonLd`, `ArticleJsonLd`) uses translated strings where applicable
+- [x] Structured data (`BreadcrumbJsonLd`, `WebSiteJsonLd`, `ArticleJsonLd`) uses translated strings where applicable
 - [ ] No duplicate content warnings in Search Console between locale variants
 - [ ] Blog post `ArticleJsonLd` uses translated `headline` and `description` per locale
 
 ### Subtasks
 
-- [ ] 15.9.1 — Audit all `generateMetadata` functions to ensure they read locale-specific translations for `title` and `description`
-- [ ] 15.9.2 — Add `og:locale` and `og:locale:alternate` tags to all pages
-- [ ] 15.9.3 — Add `x-default` hreflang tag pointing to the English version on all pages
-- [ ] 15.9.4 — Update `sitemap.ts` to generate `<xhtml:link>` alternate annotations for all locale variants
-- [ ] 15.9.5 — Verify canonical URLs: each localised page self-references as canonical (not pointing to EN)
-- [ ] 15.9.6 — Update structured data (`JsonLd` components) to use translated strings
+- [x] 15.9.1 — Audit all `generateMetadata` functions to ensure they read locale-specific translations for `title` and `description`
+- [x] 15.9.2 — Add `og:locale` and `og:locale:alternate` tags to all pages
+- [x] 15.9.3 — Add `x-default` hreflang tag pointing to the English version on all pages
+- [x] 15.9.4 — Update `sitemap.ts` to generate `<xhtml:link>` alternate annotations for all locale variants
+- [x] 15.9.5 — Verify canonical URLs: each localised page self-references as canonical (not pointing to EN)
+- [x] 15.9.6 — Update structured data (`JsonLd` components) to use translated strings
 - [ ] 15.9.7 — Submit all new locale subpaths to Google Search Console
 - [ ] 15.9.8 — Validate OG previews for 3 sample pages per locale using Facebook/Twitter sharing debuggers
 - [ ] 15.9.9 — Run Screaming Frog (or equivalent) crawl to verify no orphan pages, missing hreflang, or duplicate content
@@ -2110,35 +2110,35 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] Brand glossary document created with approved translations for key terms across all 10 locales:
+- [x] Brand glossary document created with approved translations for key terms across all 10 locales:
   - Product name: "LumenLingo" (never translated)
   - Company name: "LumenShore" (never translated)
   - Feature names: "Flashcards", "Soundscapes", "Breathing Orbs", "Quantum Flow", "Nebula Drift"
   - Tier names: "Free", "Pro", "Elite", "Royal"
   - UI terms: "Download", "Get Started", "Language Pair", "Practice Session"
-- [ ] Translation style guide per language covering:
+- [x] Translation style guide per language covering:
   - Formal vs informal tone (e.g. French `vous` vs `tu`, German `Sie` vs `du`, Spanish `usted` vs `tú`)
   - Date format conventions
   - Number formatting (decimal separator, thousands separator)
   - Currency display preferences
   - Honourifics and politeness conventions (particularly JA, ZH, AR)
-- [ ] Automated translation key completeness check: CI script that verifies every key in `en.json` exists in all other locale `.json` files
-- [ ] Manual review checklist template for native-speaker reviewers
+- [x] Automated translation key completeness check: CI script that verifies every key in `en.json` exists in all other locale `.json` files
+- [x] Manual review checklist template for native-speaker reviewers
 - [ ] At least one native-speaker review completed for each of the 9 non-English locales
 - [ ] All review feedback incorporated and verified
 
 ### Subtasks
 
-- [ ] 15.10.1 — Create `TRANSLATION_GLOSSARY.md` with brand terms and their approved translations (or non-translation) in all 10 locales
-- [ ] 15.10.2 — Create `TRANSLATION_STYLE_GUIDE.md` with per-language tone, formatting, and cultural guidelines
-- [ ] 15.10.3 — Write CI script (`scripts/check-translations.ts`) that compares all locale JSON files against `en.json` and fails if any keys are missing
-- [ ] 15.10.4 — Add CI script to the PR check pipeline
-- [ ] 15.10.5 — Create native-speaker review checklist template (Google Doc or Markdown)
+- [x] 15.10.1 — Create `TRANSLATION_GLOSSARY.md` with brand terms and their approved translations (or non-translation) in all 10 locales
+- [x] 15.10.2 — Create `TRANSLATION_STYLE_GUIDE.md` with per-language tone, formatting, and cultural guidelines
+- [x] 15.10.3 — Write CI script (`scripts/check-translations.js`) that compares all locale JSON files against `en.json` and fails if any keys are missing
+- [x] 15.10.4 — Add CI script to the PR check pipeline
+- [x] 15.10.5 — Create native-speaker review checklist template (Google Doc or Markdown)
 - [ ] 15.10.6 — Commission and complete native-speaker review for FR, DE, ES, PT
 - [ ] 15.10.7 — Commission and complete native-speaker review for JA, ZH
 - [ ] 15.10.8 — Commission and complete native-speaker review for PL, AR, UK
 - [ ] 15.10.9 — Incorporate all reviewer feedback into locale files and blog posts
-- [ ] 15.10.10 — Final automated completeness check — all 10 locales pass with 0 missing keys
+- [x] 15.10.10 — Final automated completeness check — all 10 locales pass with 0 missing keys
 
 ---
 
@@ -2150,7 +2150,7 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] Pricing page displays locale-appropriate currency symbols or conventions:
+- [x] Pricing page displays locale-appropriate currency symbols or conventions:
   - USD for en, es (LATAM default), pt
   - EUR for fr, de
   - JPY for ja
@@ -2158,23 +2158,23 @@ error messages — without falling back to English.
   - PLN for pl
   - UAH for uk
   - Currency display is informational context only (actual purchase via App Store which handles local currency)
-- [ ] Trust statistics on homepage adapted where appropriate (e.g. "Trusted by learners in 50+ countries" has locale-specific phrasing)
-- [ ] Blog post examples and cultural references adapted per locale:
+- [x] Trust statistics on homepage adapted where appropriate (e.g. "Trusted by learners in 50+ countries" has locale-specific phrasing)
+- [x] Blog post examples and cultural references adapted per locale:
   - Spanish learning tips reference relatable scenarios for each source-language audience
   - Japanese learning posts reference culturally specific motivations (anime, business, travel)
-- [ ] Download page CTA language matches locale conventions (e.g. Japanese: polite/formal request form)
-- [ ] Contact page includes locale-relevant support language information
-- [ ] Feature names that are puns or wordplay in English are adapted (not literally translated) for each locale
+- [x] Download page CTA language matches locale conventions (e.g. Japanese: polite/formal request form)
+- [x] Contact page includes locale-relevant support language information
+- [x] Feature names that are puns or wordplay in English are adapted (not literally translated) for each locale
 
 ### Subtasks
 
-- [ ] 15.11.1 — Add locale-aware currency display helper to `src/lib/locale.ts`
-- [ ] 15.11.2 — Update Pricing page to show locale-appropriate currency context
-- [ ] 15.11.3 — Review and adapt homepage trust stats and social proof for each locale
-- [ ] 15.11.4 — Review blog posts for culturally insensitive or irrelevant examples per locale; adapt as needed
-- [ ] 15.11.5 — Adapt Download page CTA copy to match locale-specific tone and conventions
-- [ ] 15.11.6 — Add locale-relevant support language info to Contact page message files
-- [ ] 15.11.7 — Review all feature name translations for natural fluency (avoid literal translations of creative names)
+- [x] 15.11.1 — Add locale-aware currency display helper to `src/lib/locale.ts`
+- [x] 15.11.2 — Update Pricing page to show locale-appropriate currency context
+- [x] 15.11.3 — Review and adapt homepage trust stats and social proof for each locale
+- [x] 15.11.4 — Review blog posts for culturally insensitive or irrelevant examples per locale; adapt as needed
+- [x] 15.11.5 — Adapt Download page CTA copy to match locale-specific tone and conventions
+- [x] 15.11.6 — Add locale-relevant support language info to Contact page message files
+- [x] 15.11.7 — Review all feature name translations for natural fluency (avoid literal translations of creative names)
 
 ---
 
@@ -2186,36 +2186,36 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] Playwright E2E test suite covers all 10 locales for:
-  - [ ] Homepage loads with correct locale content (hero heading, description, CTA text)
-  - [ ] Navigation labels match locale
-  - [ ] Language switcher cycles through all 10 locales correctly
-  - [ ] Features page renders locale content without English fallback
-  - [ ] Pricing page renders locale content with correct currency context
-  - [ ] Blog index shows locale-appropriate posts
-  - [ ] Individual blog post renders in the correct language
-  - [ ] Privacy and Terms pages render locale content
-  - [ ] 404 page shows locale-appropriate message
-  - [ ] Arabic pages render in RTL layout (`dir="rtl"` on `<html>`)
-- [ ] Visual regression tests (Playwright screenshots) for all 10 locales × 5 key pages = 50 baseline screenshots
-- [ ] No console errors or warnings on any localised page
+- [x] Playwright E2E test suite covers all 10 locales for:
+  - [x] Homepage loads with correct locale content (hero heading, description, CTA text)
+  - [x] Navigation labels match locale
+  - [x] Language switcher cycles through all 10 locales correctly
+  - [x] Features page renders locale content without English fallback
+  - [x] Pricing page renders locale content with correct currency context
+  - [x] Blog index shows locale-appropriate posts
+  - [x] Individual blog post renders in the correct language
+  - [x] Privacy and Terms pages render locale content
+  - [x] 404 page shows locale-appropriate message
+  - [x] Arabic pages render in RTL layout (`dir="rtl"` on `<html>`)
+- [x] Visual regression tests (Playwright screenshots) for all 10 locales × 5 key pages = 50 baseline screenshots
+- [x] No console errors or warnings on any localised page
 - [ ] Performance budget maintained: LCP ≤ 2.5 s for all locales (CJK fonts do not regress performance)
-- [ ] All automated tests pass in CI before merge
+- [x] All automated tests pass in CI before merge
 
 ### Subtasks
 
-- [ ] 15.12.1 — Create Playwright test helper that parameterises tests across all 10 locales
-- [ ] 15.12.2 — Write E2E test: homepage content verification per locale
-- [ ] 15.12.3 — Write E2E test: navigation and language switcher per locale
-- [ ] 15.12.4 — Write E2E test: features page content per locale
-- [ ] 15.12.5 — Write E2E test: pricing page content and currency per locale
-- [ ] 15.12.6 — Write E2E test: blog index and post rendering per locale
-- [ ] 15.12.7 — Write E2E test: legal pages per locale
-- [ ] 15.12.8 — Write E2E test: 404 page per locale
-- [ ] 15.12.9 — Write E2E test: Arabic RTL layout assertions (element positioning, `dir` attribute)
-- [ ] 15.12.10 — Generate visual regression baselines for all 10 locales × 5 pages
+- [x] 15.12.1 — Create Playwright test helper that parameterises tests across all 10 locales
+- [x] 15.12.2 — Write E2E test: homepage content verification per locale
+- [x] 15.12.3 — Write E2E test: navigation and language switcher per locale
+- [x] 15.12.4 — Write E2E test: features page content per locale
+- [x] 15.12.5 — Write E2E test: pricing page content and currency per locale
+- [x] 15.12.6 — Write E2E test: blog index and post rendering per locale
+- [x] 15.12.7 — Write E2E test: legal pages per locale
+- [x] 15.12.8 — Write E2E test: 404 page per locale
+- [x] 15.12.9 — Write E2E test: Arabic RTL layout assertions (element positioning, `dir` attribute)
+- [x] 15.12.10 — Generate visual regression baselines for all 10 locales × 5 pages
 - [ ] 15.12.11 — Run Lighthouse performance audit per locale; verify LCP ≤ 2.5 s
-- [ ] 15.12.12 — Integrate locale E2E tests into CI pipeline; block merge on failure
+- [x] 15.12.12 — Integrate locale E2E tests into CI pipeline; block merge on failure
 
 ---
 

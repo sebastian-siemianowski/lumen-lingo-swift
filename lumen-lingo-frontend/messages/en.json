@@ -98,22 +98,57 @@
       "free": {
         "name": "Free",
         "price": "£0",
-        "features": ["3 language pairs", "All practice modes (Beginner)", "50-card flashcard decks", "30 min daily practice", "Basic progress tracking"]
+        "features": [
+          "3 language pairs",
+          "All practice modes (Beginner)",
+          "50-card flashcard decks",
+          "30 min daily practice",
+          "Basic progress tracking"
+        ],
+        "description": "Perfect for getting started. Explore core features and see why learners love LumenLingo.",
+        "cta": "Get Started Free"
       },
       "pro": {
         "name": "Pro",
         "price": "£9.99",
-        "features": ["10 language pairs", "All difficulties unlocked", "Unlimited flashcard decks", "3 soundscapes", "Offline mode", "Detailed analytics"]
+        "features": [
+          "10 language pairs",
+          "All difficulties unlocked",
+          "Unlimited flashcard decks",
+          "3 soundscapes",
+          "Offline mode",
+          "Detailed analytics"
+        ],
+        "description": "For committed learners who want more languages, unlimited practice, and richer experiences.",
+        "cta": "Upgrade to Pro"
       },
       "elite": {
         "name": "Elite",
         "price": "£19.99",
-        "features": ["All language pairs", "All 12 soundscapes", "Breathing Orbs", "Nebula backgrounds", "Priority support", "2× XP multiplier"]
+        "features": [
+          "All language pairs",
+          "All 12 soundscapes",
+          "Breathing Orbs",
+          "Nebula backgrounds",
+          "Priority support",
+          "2× XP multiplier"
+        ],
+        "description": "Unlock the full LumenLingo experience with all languages, advanced modes, and stunning visuals.",
+        "cta": "Go Elite"
       },
       "royal": {
         "name": "Royal",
         "price": "£99.99",
-        "features": ["Everything in Elite", "Quantum Flow background", "Exclusive Royal badge", "Early access to new features", "Lifetime price lock", "Direct founder support"]
+        "features": [
+          "Everything in Elite",
+          "Quantum Flow background",
+          "Exclusive Royal badge",
+          "Early access to new features",
+          "Lifetime price lock",
+          "Direct founder support"
+        ],
+        "description": "The ultimate tier for language masters. Every feature, no limits, premium-only extras.",
+        "cta": "Go Royal"
       }
     },
     "comparison": {
@@ -123,13 +158,23 @@
     "faq": {
       "heading": "Frequently Asked Questions",
       "description": "Everything you need to know about LumenLingo's pricing and subscriptions."
+    },
+    "meta": {
+      "title": "Pricing",
+      "description": "Choose the perfect LumenLingo membership tier. Start free, or unlock Pro, Elite, or Royal for more languages, soundscapes, visual backgrounds, and premium features.",
+      "ogTitle": "Pricing — LumenLingo",
+      "ogDescription": "Compare Free, Pro, Elite, and Royal membership tiers. Start free, upgrade when ready."
     }
   },
   "Features": {
     "badge": "Deep Dive",
     "heading": "Crafted for Serious Learners",
     "description": "Every feature in LumenLingo is designed with cognitive science in mind. From spaced repetition to ambient immersion, discover what makes learning with us different.",
-    "badges": ["iOS Native", "Handcrafted UI", "Science-Backed"],
+    "badges": [
+      "iOS Native",
+      "Handcrafted UI",
+      "Science-Backed"
+    ],
     "walkthroughs": {
       "heading": "See it in action",
       "subheading": "How it feels to learn",
@@ -141,6 +186,12 @@
       "description": "Learn in any direction. Hover any card to see a sample flashcard.",
       "comingSoon": "Coming Soon",
       "comingSoonDesc": "More languages and pairs are on the way. Join early access to be the first to know."
+    },
+    "meta": {
+      "title": "Features",
+      "description": "Explore the full feature set of LumenLingo: immersive flashcards, smart spaced repetition, 3 practice modes, 12 ambient soundscapes, breathing orbs, 25+ language pairs, and more.",
+      "ogTitle": "Features — LumenLingo",
+      "ogDescription": "Explore the full feature set of LumenLingo: immersive flashcards, smart spaced repetition, 3 practice modes, 12 ambient soundscapes, and more."
     }
   },
   "About": {
@@ -173,7 +224,14 @@
     "email": "hello@lumenshore.com",
     "responseTime": "We usually respond within 48 hours",
     "faqHeading": "Frequently Asked Questions",
-    "faqDescription": "Quick answers to the most common questions about LumenLingo."
+    "faqDescription": "Quick answers to the most common questions about LumenLingo.",
+    "meta": {
+      "title": "Help & Contact",
+      "description": "Find answers to common questions about LumenLingo or get in touch with the LumenShore team. We're here to help with your language learning journey.",
+      "ogTitle": "Help & Contact — LumenLingo",
+      "ogDescription": "Find answers to common questions about LumenLingo or get in touch with the LumenShore team."
+    },
+    "supportLanguage": "We respond in English."
   },
   "Download": {
     "heading": "LumenLingo",
@@ -181,27 +239,33 @@
     "meta": "Free to start · No account required · iPhone & iPad",
     "benefits": {
       "flashcards": "Beautiful Flashcards",
-      "flashcardsDesc": "Swipe-based cards with stunning visuals and spaced repetition built in.",
+      "flashcardsDesc": "Learn vocabulary with immersive, richly-designed cards. Swipe to master words at your own pace.",
       "practice": "Adaptive Practice",
-      "practiceDesc": "Three modes that adjust to your level — from beginner to advanced.",
+      "practiceDesc": "Three game modes that adapt to you — matching, fill-in-the-blank, and multiple choice.",
       "soundscapes": "Ambient Soundscapes",
-      "soundscapesDesc": "12 immersive environments that transform your study sessions."
+      "soundscapesDesc": "12 curated soundscapes — from gentle rain to cosmic nebula — for focused study sessions."
     },
     "stats": {
-      "languages": "9 Languages",
-      "soundscapes": "12 Soundscapes",
-      "practiceModes": "3 Practice Modes",
-      "flashcards": "∞ Flashcards"
+      "languages": "Languages",
+      "soundscapes": "Soundscapes",
+      "practiceModes": "Practice Modes",
+      "flashcards": "Flashcards"
     },
     "upgradeNote": "Free to start. Pro, Elite, and Royal tiers available in-app.",
     "qr": {
       "heading": "Scan to download",
-      "description": "Point your iPhone camera at the QR code to download LumenLingo from the App Store.",
+      "description": "Point your iPhone camera at the QR code to get LumenLingo instantly.",
       "fallback": "Or visit lumenlingo.com/open on your phone"
     },
     "showcase": {
+      "flashcards": "Immersive Flashcards",
+      "flashcardsSub": "Swipe through beautifully designed cards",
+      "practice": "Smart Practice",
+      "practiceSub": "Three adaptive game modes",
+      "soundscapes": "Ambient Soundscapes",
+      "soundscapesSub": "12 curated focus environments",
       "heading": "Designed to delight",
-      "description": "Every interaction is crafted with care. Silk-smooth animations, thoughtful haptics, and an interface that feels alive."
+      "description": "Every interaction is crafted with care. Smooth animations, subtle haptics, and ambient soundscapes create a learning environment you actually want to return to."
     }
   },
   "Newsletter": {
@@ -239,7 +303,17 @@
       "successHeading": "You're on the list!",
       "successDescription": "We'll let you know as soon as early access opens."
     },
-    "languages": ["Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Korean", "Mandarin Chinese", "Other"],
+    "languages": [
+      "Spanish",
+      "French",
+      "German",
+      "Italian",
+      "Portuguese",
+      "Japanese",
+      "Korean",
+      "Mandarin Chinese",
+      "Other"
+    ],
     "referral": {
       "position": "#{position} of {total} learners",
       "shareHeading": "Share & move up the list",
@@ -251,6 +325,12 @@
       "twitter": "X (Twitter)",
       "whatsapp": "WhatsApp",
       "email": "Email"
+    },
+    "meta": {
+      "title": "Early Access — Be Among the First",
+      "description": "Join the LumenLingo early access list. Get notified first when new languages and features launch. Exclusive offers for early supporters.",
+      "ogTitle": "Early Access — LumenLingo",
+      "ogDescription": "Join the waitlist and get early access to LumenLingo. Master a new language through multi-sensory immersion."
     }
   },
   "Demo": {
@@ -271,6 +351,12 @@
       "description": "Love it? The real experience is even better — with 9 languages, adaptive learning, ambient soundscapes, and thousands of flashcards.",
       "downloadFree": "Download Free",
       "tryAgain": "Try Again"
+    },
+    "meta": {
+      "title": "Try It — Interactive Flashcard Demo",
+      "description": "Experience LumenLingo flashcards right in your browser. Flip, swipe, and learn — then download the full app for free.",
+      "ogTitle": "Try It — Interactive Flashcard Demo | LumenLingo",
+      "ogDescription": "Swipe through beautiful flashcards in 5 languages. Experience the quality before you download."
     }
   },
   "NotFound": {
@@ -295,7 +381,10 @@
     "description": "The LumenLingo app works beautifully offline with a Pro subscription or higher. Download it and never miss a practice session.",
     "retry": "Retry Connection",
     "retrying": "Reconnecting…",
-    "goHome": "Go Home"
+    "goHome": "Go Home",
+    "meta": {
+      "title": "You're Offline"
+    }
   },
   "Footer": {
     "brand": "LumenLingo",
@@ -349,7 +438,7 @@
     },
     "overview": {
       "heading": "Overview",
-      "p1": "LumenShore Ltd (\u201cLumenShore\u201d, \u201cwe\u201d, \u201cus\u201d, or \u201cour\u201d) operates the LumenLingo mobile application (\u201cthe App\u201d). This Privacy Policy explains how we collect, use, store, and protect information when you use LumenLingo.",
+      "p1": "LumenShore Ltd (“LumenShore”, “we”, “us”, or “our”) operates the LumenLingo mobile application (“the App”). This Privacy Policy explains how we collect, use, store, and protect information when you use LumenLingo.",
       "p2": "We built LumenLingo with a privacy-first architecture. Your learning data is processed and stored on your device and in your personal iCloud account — not on our servers. We believe your data is yours, and it should stay that way."
     },
     "informationWeCollect": {
@@ -424,7 +513,7 @@
     },
     "policyUpdates": {
       "heading": "Policy Updates",
-      "p1": "We may update this Privacy Policy from time to time, typically to reflect changes in the app's features or legal requirements. When we make significant changes, we'll update the \u201cLast updated\u201d date at the top of this page.",
+      "p1": "We may update this Privacy Policy from time to time, typically to reflect changes in the app's features or legal requirements. When we make significant changes, we'll update the “Last updated” date at the top of this page.",
       "p2": "We encourage you to review this page periodically. Continued use of LumenLingo after changes constitutes acceptance of the updated policy."
     },
     "contactUs": {
@@ -448,7 +537,7 @@
     },
     "introduction": {
       "heading": "Introduction",
-      "p1": "Welcome to LumenLingo. These Terms of Service (\u201cTerms\u201d) govern your use of the LumenLingo mobile application (\u201cthe App\u201d) operated by LumenShore Ltd (\u201cLumenShore\u201d, \u201cwe\u201d, \u201cus\u201d, or \u201cour\u201d).",
+      "p1": "Welcome to LumenLingo. These Terms of Service (“Terms”) govern your use of the LumenLingo mobile application (“the App”) operated by LumenShore Ltd (“LumenShore”, “we”, “us”, or “our”).",
       "p2": "By downloading, installing, or using LumenLingo, you agree to be bound by these Terms. If you don't agree with any part of these Terms, please don't use the App."
     },
     "acceptance": {
@@ -502,7 +591,7 @@
     },
     "disclaimers": {
       "heading": "Disclaimers",
-      "intro": "LumenLingo is provided on an \u201cas is\u201d and \u201cas available\u201d basis. While we strive for accuracy and quality, we make no warranties, expressed or implied, regarding:",
+      "intro": "LumenLingo is provided on an “as is” and “as available” basis. While we strive for accuracy and quality, we make no warranties, expressed or implied, regarding:",
       "li1": "The accuracy or completeness of any language content or translations.",
       "li2": "Uninterrupted or error-free operation of the App.",
       "li3": "The results you may achieve from using the App.",
@@ -534,7 +623,7 @@
     },
     "changes": {
       "heading": "Changes to These Terms",
-      "p1": "We may update these Terms from time to time. When we make significant changes, we'll update the \u201cLast updated\u201d date at the top and may notify you through the App.",
+      "p1": "We may update these Terms from time to time. When we make significant changes, we'll update the “Last updated” date at the top and may notify you through the App.",
       "p2": "Continued use of LumenLingo after changes are posted constitutes acceptance of the revised Terms. If you disagree with the changes, please stop using the App and cancel any active subscription."
     },
     "contactUs": {
@@ -543,6 +632,22 @@
       "email": "<b>Email</b>: <emailLink>hello@lumenshore.com</emailLink>",
       "company": "<b>Company</b>: LumenShore Ltd, United Kingdom",
       "responseTime": "We typically respond within 48 hours."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "Blog",
+      "description": "Tips, guides, and insights for language learners. Explore the science of learning, practical study advice, and the latest from the LumenLingo team.",
+      "ogTitle": "Blog — LumenLingo",
+      "ogDescription": "Tips, guides, and insights for language learners. Explore the science of learning, practical study advice, and the latest from LumenLingo."
+    }
+  },
+  "Languages": {
+    "meta": {
+      "title": "Supported Languages — 9 Languages, 25+ Pairs",
+      "description": "Explore all language pairs supported by LumenLingo. Learn Spanish, French, German, Japanese, Chinese, Arabic, Italian, Polish and more with beautiful flashcards.",
+      "ogTitle": "Supported Languages — LumenLingo",
+      "ogDescription": "9 languages, 25+ bidirectional pairs. Learn in any direction with curated vocabulary and adaptive practice."
     }
   }
 }

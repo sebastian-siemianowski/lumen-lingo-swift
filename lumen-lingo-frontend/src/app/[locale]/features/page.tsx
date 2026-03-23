@@ -1,40 +1,47 @@
 import type { Metadata } from 'next';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { FeaturesHero, FeaturesContent, FeatureWalkthroughs, LanguagePairGrid } from '@/components/features';
 import { CTABanner, JsonLd, BreadcrumbJsonLd, softwareApplicationLd } from '@/components/home';
 import { PageTransition } from '@/components/layout';
+import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Features',
-  description:
-    'Explore the full feature set of LumenLingo: immersive flashcards, smart spaced repetition, 3 practice modes, 12 ambient soundscapes, breathing orbs, 25+ language pairs, and more.',
-  alternates: {
-    canonical: 'https://lumenlingo.com/features',
-  },
-  openGraph: {
-    title: 'Features — LumenLingo',
-    description:
-      'Explore the full feature set of LumenLingo: immersive flashcards, smart spaced repetition, 3 practice modes, 12 ambient soundscapes, and more.',
-    url: 'https://lumenlingo.com/features',
-    siteName: 'LumenLingo',
-    type: 'website',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'LumenLingo Features — Premium Language Learning App',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Features — LumenLingo',
-    description:
-      'Explore the full feature set of LumenLingo: immersive flashcards, smart spaced repetition, 3 practice modes, 12 ambient soundscapes, and more.',
-    images: ['/og-image.png'],
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Features.meta' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: buildAlternates('/features', locale),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      url: localizedUrl('/features', locale),
+      siteName: 'LumenLingo',
+      locale: getOgLocale(locale),
+      alternateLocales: getOgAlternateLocales(locale),
+      type: 'website',
+      images: [
+        {
+          url: '/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'LumenLingo Features — Premium Language Learning App',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      images: ['/og-image.png'],
+    },
+  };
+}
 
 export default async function FeaturesPage({
   params,
@@ -46,7 +53,7 @@ export default async function FeaturesPage({
   return (
     <PageTransition>
       <JsonLd data={softwareApplicationLd} />
-      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Features', href: '/features' }]} />
+      <BreadcrumbJsonLd locale={locale} items={[{ name: 'Home', href: '/' }, { name: 'Features', href: '/features' }]} />
       <FeaturesHero />
       <FeaturesContent />
       <FeatureWalkthroughs />

@@ -1,22 +1,40 @@
 import type { Metadata } from 'next';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { DownloadHero } from '@/components/download/download-hero';
 import { DownloadBenefits } from '@/components/download/download-benefits';
 import { DownloadFeatures } from '@/components/download/download-features';
 import { DownloadShowcase } from '@/components/download/download-showcase';
 import { DownloadQR } from '@/components/download/download-qr';
+import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Download LumenLingo — Free on the App Store',
-  description:
-    'Download LumenLingo for iPhone. Beautiful flashcards, adaptive practice, 12 ambient soundscapes, 9 languages. Free to start.',
-  openGraph: {
-    title: 'Download LumenLingo — Free on the App Store',
-    description:
-      'Master languages through immersive experiences. Beautiful flashcards, adaptive practice, and ambient soundscapes.',
-    type: 'website',
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Download.meta' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: buildAlternates('/download', locale),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      url: localizedUrl('/download', locale),
+      siteName: 'LumenLingo',
+      locale: getOgLocale(locale),
+      alternateLocales: getOgAlternateLocales(locale),
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+    },
+  };
+}
 
 export default async function DownloadPage({
   params,

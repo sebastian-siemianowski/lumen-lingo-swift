@@ -54,7 +54,7 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
 
   return (
     <PageTransition>
-      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }, { name: `#${decoded}`, href: `/blog/tag/${tag}` }]} />
+      <BreadcrumbJsonLd locale={locale} items={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }, { name: `#${decoded}`, href: `/blog/tag/${tag}` }]} />
       <section className="relative pt-32 pb-20 sm:pt-40">
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           {/* Breadcrumb */}

@@ -9,17 +9,17 @@ test.describe('Newsletter Signup', () => {
 
   test('shows validation error for empty submit', async ({ page }) => {
     await page.goto('/');
-    const subscribeButton = page.getByRole('button', { name: /subscribe/i });
+    const subscribeButton = page.getByRole('button', { name: /subscribe/i }).first();
     await subscribeButton.click();
-    await expect(page.getByRole('alert')).toBeVisible();
+    await expect(page.getByRole('alert').first()).toBeVisible();
   });
 
   test('shows validation error for invalid email', async ({ page }) => {
     await page.goto('/');
-    const emailInput = page.getByRole('textbox', { name: /email/i });
+    const emailInput = page.getByRole('textbox', { name: /email/i }).first();
     await emailInput.fill('not-an-email');
-    await page.getByRole('button', { name: /subscribe/i }).click();
-    await expect(page.getByRole('alert')).toBeVisible();
+    await page.getByRole('button', { name: /subscribe/i }).first().click();
+    await expect(page.getByRole('alert').first()).toBeVisible();
   });
 
   test('submits valid email via API', async ({ page }) => {

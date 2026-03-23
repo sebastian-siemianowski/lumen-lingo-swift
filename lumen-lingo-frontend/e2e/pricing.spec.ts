@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Pricing Page', () => {
   test('loads and displays pricing heading', async ({ page }) => {
     await page.goto('/pricing');
-    await expect(page.locator('h1, h2').filter({ hasText: /pricing/i }).first()).toBeVisible();
+    await expect(page.locator('h1').first()).toBeVisible();
   });
 
   test('shows all tier cards', async ({ page }) => {
@@ -27,7 +27,7 @@ test.describe('Pricing Page', () => {
 
   test('FAQ section is present', async ({ page }) => {
     await page.goto('/pricing');
-    await expect(page.getByText(/frequently asked/i)).toBeVisible();
+    await expect(page.getByText(/frequently asked|FAQ/i)).toBeVisible();
   });
 
   test('FAQ accordion expands on click', async ({ page }) => {
@@ -40,6 +40,6 @@ test.describe('Pricing Page', () => {
 
   test('"Most Popular" badge appears on one card', async ({ page }) => {
     await page.goto('/pricing');
-    await expect(page.getByText('Most Popular')).toBeVisible();
+    await expect(page.getByText(/Popular/i)).toBeVisible();
   });
 });

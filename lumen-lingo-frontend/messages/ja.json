@@ -104,7 +104,9 @@
           "50枚のフラッシュカードデッキ",
           "1日30分の練習",
           "基本的な進捗トラッキング"
-        ]
+        ],
+        "description": "まずは無料で始めましょう。主要機能を体験して、LumenLingoが愛される理由を見つけてください。",
+        "cta": "無料で始める"
       },
       "pro": {
         "name": "Pro",
@@ -116,11 +118,13 @@
           "3つのサウンドスケープ",
           "オフラインモード",
           "詳細な分析"
-        ]
+        ],
+        "description": "より多くの言語、無制限の練習、豊かな体験を求める熟練の学習者に。",
+        "cta": "Proにアップグレード"
       },
       "elite": {
         "name": "Elite",
-        "price": "¥2,980",
+        "price": "¥3,000",
         "features": [
           "全言語ペア",
           "12のサウンドスケープすべて",
@@ -128,11 +132,13 @@
           "ネビュラ背景",
           "優先サポート",
           "XP 2倍ブースト"
-        ]
+        ],
+        "description": "すべての言語、上級モード、美しいビジュアルでLumenLingoの完全な体験を解放しましょう。",
+        "cta": "Eliteを選ぶ"
       },
       "royal": {
         "name": "Royal",
-        "price": "¥14,800",
+        "price": "¥15,000",
         "features": [
           "Eliteのすべて",
           "Quantum Flow背景",
@@ -140,7 +146,9 @@
           "新機能への先行アクセス",
           "永久価格保証",
           "創業者への直接サポート"
-        ]
+        ],
+        "description": "言語マスターのための最高峰。すべての機能、制限なし、プレミアム限定特典。",
+        "cta": "Royalを選ぶ"
       }
     },
     "comparison": {
@@ -150,6 +158,12 @@
     "faq": {
       "heading": "よくある質問",
       "description": "LumenLingoの料金とサブスクリプションに関するすべての疑問にお答えします。"
+    },
+    "meta": {
+      "title": "料金プラン",
+      "description": "最適なLumenLingo会員プランをお選びください。無料で始めて、Pro、Elite、Royalでより多くの言語、サウンドスケープ、ビジュアル背景、プレミアム機能を解放。",
+      "ogTitle": "料金プラン — LumenLingo",
+      "ogDescription": "Free、Pro、Elite、Royalプランを比較。無料で始めて、準備ができたらアップグレード。"
     }
   },
   "Features": {
@@ -172,6 +186,12 @@
       "description": "あらゆる方向に学習。カードにカーソルを合わせると例を見ることができます。",
       "comingSoon": "近日公開",
       "comingSoonDesc": "さらに多くの言語とペアが近日追加予定。先行アクセスに登録して、いち早くお知らせを受け取りましょう。"
+    },
+    "meta": {
+      "title": "機能",
+      "description": "LumenLingoの全機能を探索：没入型フラッシュカード、スマート間隔反復、3つの練習モード、12のサウンドスケープ、ブリージングオーブ、25以上の言語ペアなど。",
+      "ogTitle": "機能 — LumenLingo",
+      "ogDescription": "LumenLingoの全機能を探索：没入型フラッシュカード、間隔反復、3つの練習モード、12のサウンドスケープなど。"
     }
   },
   "About": {
@@ -204,35 +224,48 @@
     "email": "hello@lumenshore.com",
     "responseTime": "通常48時間以内にご返信いたします",
     "faqHeading": "よくある質問",
-    "faqDescription": "LumenLingoに関する一般的な質問への簡単な回答。"
+    "faqDescription": "LumenLingoに関する一般的な質問への簡単な回答。",
+    "meta": {
+      "title": "ヘルプ & お問い合わせ",
+      "description": "LumenLingoに関するよくある質問の回答を見つけるか、LumenShoreチームにお問い合わせください。言語学習の旅をお手伝いいたします。",
+      "ogTitle": "ヘルプ & お問い合わせ — LumenLingo",
+      "ogDescription": "LumenLingoに関するよくある質問の回答を見つけるか、LumenShoreチームにお問い合わせください。"
+    },
+    "supportLanguage": "英語および日本語で対応いたします。"
   },
   "Download": {
     "heading": "LumenLingo",
-    "description": "没入型体験を通じて言語をマスター。美しく、マインドフルで、効果的。",
-    "meta": "無料で始める · アカウント不要 · iPhone & iPad",
+    "description": "没入型の体験で言語をマスター。美しく、意識的で、効果的。",
+    "meta": "無料で開始 · アカウント不要 · iPhone・iPad",
     "benefits": {
       "flashcards": "美しいフラッシュカード",
-      "flashcardsDesc": "魅力的なビジュアルと間隔反復学習を備えたスワイプ式カード。",
-      "practice": "適応型練習",
-      "practiceDesc": "初級から上級まで、あなたのレベルに合わせて調整される3つのモード。",
+      "flashcardsDesc": "没入型の美しくデザインされたカードで単語を学びましょう。自分のペースでスワイプして単語をマスター。",
+      "practice": "適応型プラクティス",
+      "practiceDesc": "マッチング、空欄補充、選択式の3つのゲームモードがあなたに合わせて適応。",
       "soundscapes": "アンビエントサウンドスケープ",
-      "soundscapesDesc": "学習セッションを変える12の没入型環境。"
+      "soundscapesDesc": "優しい雨から宇宙の星雲まで、12の厳選されたサウンドスケープで集中学習。"
     },
     "stats": {
-      "languages": "9言語",
-      "soundscapes": "12サウンドスケープ",
-      "practiceModes": "3練習モード",
-      "flashcards": "∞ カード"
+      "languages": "言語",
+      "soundscapes": "サウンドスケープ",
+      "practiceModes": "練習モード",
+      "flashcards": "フラッシュカード"
     },
-    "upgradeNote": "無料で始められます。Pro、Elite、Royalプランはアプリ内でご利用いただけます。",
+    "upgradeNote": "無料で開始。Pro、Elite、Royalプランはアプリ内で利用可能。",
     "qr": {
       "heading": "スキャンしてダウンロード",
-      "description": "iPhoneのカメラをQRコードに向けると、App StoreからLumenLingoをダウンロードできます。",
-      "fallback": "またはスマートフォンで lumenlingo.com/open にアクセス"
+      "description": "iPhoneのカメラをQRコードに向けて、LumenLingoをすぐに入手。",
+      "fallback": "またはスマートフォンでlumenlingo.com/openを訪問"
     },
     "showcase": {
-      "heading": "喜びのためにデザイン",
-      "description": "すべてのインタラクションが丁寧に作られています。シルクのように滑らかなアニメーション、繊細なハプティクス、そして生き生きとしたインターフェース。"
+      "flashcards": "没入型フラッシュカード",
+      "flashcardsSub": "美しくデザインされたカードをスワイプ",
+      "practice": "スマートプラクティス",
+      "practiceSub": "3つの適応型ゲームモード",
+      "soundscapes": "アンビエントサウンドスケープ",
+      "soundscapesSub": "12の厳選された集中環境",
+      "heading": "喜びを追求したデザイン",
+      "description": "すべてのインタラクションは丁寫に作られています。滑らかなアニメーション、繊細な触覚フィードバック、アンビエントサウンドスケープが、戯りたくなる学習環境を創り出します。"
     }
   },
   "Newsletter": {
@@ -292,6 +325,12 @@
       "twitter": "X (Twitter)",
       "whatsapp": "WhatsApp",
       "email": "メール"
+    },
+    "meta": {
+      "title": "早期アクセス — いち早く体験",
+      "description": "LumenLingoの早期アクセスリストに参加。新しい言語や機能のリリースをいち早くお知らせします。早期サポーター限定の特典も。",
+      "ogTitle": "早期アクセス — LumenLingo",
+      "ogDescription": "ウェイトリストに参加してLumenLingoへの早期アクセスを取得。マルチセンソリー没入で新しい言語をマスター。"
     }
   },
   "Demo": {
@@ -312,6 +351,12 @@
       "description": "楽しんでいただけましたか？実際の体験はさらに素晴らしいです — 9言語、適応型学習、アンビエントサウンドスケープ、そして何千ものカード。",
       "downloadFree": "無料ダウンロード",
       "tryAgain": "もう一度"
+    },
+    "meta": {
+      "title": "体験する — インタラクティブフラッシュカードデモ",
+      "description": "ブラウザでLumenLingoのフラッシュカードを体験。めくって、スワイプして、学んで — その後完全版アプリを無料ダウンロード。",
+      "ogTitle": "体験する — インタラクティブデモ | LumenLingo",
+      "ogDescription": "5言語の美しいフラッシュカードをスワイプ。ダウンロード前に品質を体験。"
     }
   },
   "NotFound": {
@@ -336,7 +381,10 @@
     "description": "LumenLingoアプリはPro以上のサブスクリプションがあればオフラインで完璧に動作します。ダウンロードして、練習セッションを見逃さないようにしましょう。",
     "retry": "接続を再試行",
     "retrying": "再接続中…",
-    "goHome": "ホームに戻る"
+    "goHome": "ホームに戻る",
+    "meta": {
+      "title": "オフラインです"
+    }
   },
   "Footer": {
     "brand": "LumenLingo",
@@ -584,6 +632,22 @@
       "email": "<b>メール</b>：<emailLink>hello@lumenshore.com</emailLink>",
       "company": "<b>会社</b>：LumenShore Ltd、英国",
       "responseTime": "通常48時間以内にご返答いたします。"
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "ブログ",
+      "description": "言語学習者のためのヒント、ガイド、洞察。学習の科学、実践的なアドバイス、LumenLingoチームからの最新情報。",
+      "ogTitle": "ブログ — LumenLingo",
+      "ogDescription": "LumenLingoからの言語学習者のためのヒント、ガイド、洞察。"
+    }
+  },
+  "Languages": {
+    "meta": {
+      "title": "対応言語 — 9言語、25以上のペア",
+      "description": "LumenLingoの全ての言語ペアを探索。スペイン語、フランス語、ドイツ語、日本語、中国語、アラビア語、イタリア語、ポーランド語などを美しいフラッシュカードで学べます。",
+      "ogTitle": "対応言語 — LumenLingo",
+      "ogDescription": "9言語、25以上の双方向ペア。厳選された語彙とアダプティブ練習であらゆる方向から学べます。"
     }
   }
 }

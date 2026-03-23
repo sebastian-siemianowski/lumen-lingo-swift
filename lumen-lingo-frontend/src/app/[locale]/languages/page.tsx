@@ -1,24 +1,39 @@
 import type { Metadata } from 'next';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { LanguagePairGrid } from '@/components/features';
 import { CTABanner, BreadcrumbJsonLd, JsonLd } from '@/components/home';
 import { Section, Container, Heading, Text } from '@/components/ui';
 import { PageTransition } from '@/components/layout';
+import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Supported Languages — 9 Languages, 25+ Pairs | LumenLingo',
-  description:
-    'Explore all language pairs supported by LumenLingo. Learn Spanish, French, German, Japanese, Chinese, Arabic, Italian, Polish and more with beautiful flashcards.',
-  alternates: { canonical: 'https://lumenlingo.com/languages' },
-  openGraph: {
-    title: 'Supported Languages — LumenLingo',
-    description:
-      '9 languages, 25+ bidirectional pairs. Learn in any direction with curated vocabulary and adaptive practice.',
-    url: 'https://lumenlingo.com/languages',
-    siteName: 'LumenLingo',
-    type: 'website',
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Languages.meta' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: buildAlternates('/languages', locale),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      url: localizedUrl('/languages', locale),
+      siteName: 'LumenLingo',
+      locale: getOgLocale(locale),
+      alternateLocales: getOgAlternateLocales(locale),
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+    },
+  };
+}
 
 const itemListLd = {
   '@context': 'https://schema.org',
@@ -56,6 +71,7 @@ export default async function LanguagesPage({
     <PageTransition>
       <JsonLd data={itemListLd} />
       <BreadcrumbJsonLd
+        locale={locale}
         items={[
           { name: 'Home', href: '/' },
           { name: 'Languages', href: '/languages' },

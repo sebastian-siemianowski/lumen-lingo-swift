@@ -1,9 +1,13 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { Container, Heading, Text } from '@/components/ui';
 import { StaggerChildren, StaggerItem, FadeIn } from '@/components/motion';
 
 export function FeaturesHero() {
+  const t = useTranslations('Features');
+  const badges = t.raw('badges') as string[];
+
   return (
     <section className="relative overflow-hidden pb-12 pt-32 sm:pt-40">
       {/* Background gradient */}
@@ -25,38 +29,32 @@ export function FeaturesHero() {
               <svg viewBox="0 0 16 16" className="h-4 w-4" fill="currentColor">
                 <path d="M8 0l2.09 5.527L16 6.18l-4.36 3.89L12.82 16 8 12.527 3.18 16l1.18-5.93L0 6.18l5.91-.653z" />
               </svg>
-              Deep Dive
+              {t('badge')}
             </span>
           </StaggerItem>
 
           <StaggerItem>
             <Heading as="h1" gradient className="mt-2">
-              Crafted for Serious Learners
+              {t('heading')}
             </Heading>
           </StaggerItem>
 
           <StaggerItem>
             <Text size="xl" colour="secondary" className="mt-6 max-w-2xl">
-              Every feature in LumenLingo is designed with intention — combining
-              cognitive science, beautiful aesthetics, and thoughtful UX into the
-              most immersive language learning experience on iOS.
+              {t('description')}
             </Text>
           </StaggerItem>
 
           {/* Decorative device illustrations */}
           <StaggerItem>
             <div className="mt-12 flex items-center justify-center gap-4">
-              {[
-                { emoji: '📱', label: 'iOS Native' },
-                { emoji: '🎨', label: 'Handcrafted UI' },
-                { emoji: '🧠', label: 'Science-Backed' },
-              ].map(({ emoji, label }) => (
+              {['📱', '🎨', '🧠'].map((emoji, i) => (
                 <div
-                  key={label}
+                  key={i}
                   className="flex items-center gap-2 rounded-full border border-glass-border bg-glass px-4 py-2 text-sm text-foreground-secondary"
                 >
                   <span aria-hidden>{emoji}</span>
-                  {label}
+                  {badges[i]}
                 </div>
               ))}
             </div>

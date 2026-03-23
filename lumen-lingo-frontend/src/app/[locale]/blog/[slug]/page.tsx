@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
   return (
     <PageTransition>
       <JsonLd data={articleLd} />
-      <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }, { name: frontmatter.title, href: `/blog/${slug}` }]} />
+      <BreadcrumbJsonLd locale={locale} items={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }, { name: frontmatter.title, href: `/blog/${slug}` }]} />
 
       <article>
         {/* Header */}
