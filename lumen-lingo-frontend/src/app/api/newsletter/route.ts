@@ -1,5 +1,11 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { z } from 'zod/v4';
+import {
+  hashForConsent,
+  recordConsent,
+  NEWSLETTER_CONSENT_VERSION,
+  NEWSLETTER_CONSENT_TEXT,
+} from '@/lib/consent-log';
 
 // ─── Schema ────────────────────────────────────────────────────────
 const subscribeSchema = z.object({
@@ -71,6 +77,17 @@ export async function POST(request: NextRequest) {
   }
 
   const { email, source } = result.data;
+
+  // ── GDPR consent record ──────────────────────────────────────────
+  recordConsent({
+    timestamp: new Date().toISOString(),
+    type: 'newsletter',
+    subjectHash: hashForConsent(email),
+    ipHash: hashForConsent(ip),
+    consentVersion: NEWSLETTER_CONSENT_VERSION,
+    consentTextShown: NEWSLETTER_CONSENT_TEXT,
+    metadata: { source: source ?? 'none' },
+  });
 
   // ── ESP integration ──────────────────────────────────────────────
   // Replace this section with your preferred email service provider.

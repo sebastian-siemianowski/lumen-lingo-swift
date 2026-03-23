@@ -490,6 +490,14 @@ extension AppStrings {
         deletingAccount: "アカウントを削除中…",
         clearingUserData: "ユーザーデータを消去中",
         accountDeleted: "アカウント削除完了",
+
+        // MARK: - GDPR Data Export
+        gdprExportTitle: "データをエクスポート",
+        gdprExportDesc: "すべての個人データを機械可読なJSONファイルとしてダウンロードします。これはGDPR第20条に基づくあなたの権利です — すべてのユーザーに無料。",
+        gdprExportButton: "個人データをエクスポート",
+        gdprExportSuccess: "データのエクスポートが完了しました",
+        gdprExportEmpty: "エクスポートする個人データがありません",
+
         trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
     )
 }

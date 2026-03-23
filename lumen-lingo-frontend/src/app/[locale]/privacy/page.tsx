@@ -388,6 +388,8 @@ export default async function PrivacyPage({
                     <li>{t.rich('dataRetention.websiteLi2', richTags)}</li>
                     <li>{t.rich('dataRetention.websiteLi3', richTags)}</li>
                     <li>{t.rich('dataRetention.websiteLi4', richTags)}</li>
+                    <li>{t.rich('dataRetention.websiteLi5', richTags)}</li>
+                    <li>{t.rich('dataRetention.websiteLi6', richTags)}</li>
                   </ul>
                   <h3>{t('dataRetention.appHeading')}</h3>
                   <ul>

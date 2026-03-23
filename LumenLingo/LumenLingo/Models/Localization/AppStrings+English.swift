@@ -494,6 +494,14 @@ extension AppStrings {
         deletingAccount: "Deleting account…",
         clearingUserData: "Clearing user data",
         accountDeleted: "Account deleted",
+
+        // MARK: - GDPR Data Export
+        gdprExportTitle: "Export My Data",
+        gdprExportDesc: "Download all your personal data as a machine-readable JSON file. This is your right under GDPR Article 20 — free for all users.",
+        gdprExportButton: "Export Personal Data",
+        gdprExportSuccess: "Data exported successfully",
+        gdprExportEmpty: "No personal data to export",
+
         trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
     )
 }

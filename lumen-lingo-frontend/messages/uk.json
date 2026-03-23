@@ -410,7 +410,8 @@
       "accessibility": "Доступність",
       "cookiePolicy": "Політика cookie",
       "cookieSettings": "Налаштування cookie",
-      "eula": "EULA"
+      "eula": "EULA",
+      "dataRequest": "Запит даних"
     },
     "newsletter": {
       "heading": "Будьте в курсі",
@@ -583,7 +584,9 @@
       "appLi1": "<b>Delete account</b> — use the in-app Settings → Sign Out → Delete Account to permanently erase all learning data, progress, preferences, and iCloud sync data. This action cannot be undone.",
       "appLi2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
       "appLi3": "<b>iCloud data</b> — you can manage iCloud storage through your device’s Settings → Apple ID → iCloud → Manage Storage.",
-      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation."
+      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation.",
+      "websiteLi5": "<b>Записи про згоду</b> — зберігаються протягом 3 років після вашої останньої взаємодії, як вимагається для підзвітності за GDPR.",
+      "websiteLi6": "<b>Журнали запитів даних</b> — зберігаються протягом 3 років після завершення, як вимагається для підзвітності за GDPR."
     },
     "yourRights": {
       "heading": "Your Rights",
@@ -592,7 +595,7 @@
       "gdprLi1": "Right to access your data — app data is on your device and iCloud; for website data, contact us.",
       "gdprLi2": "Right to rectification — edit app preferences directly; for website data, contact us.",
       "gdprLi3": "Right to erasure — use the in-app Delete Account feature, delete the app, or contact us to remove your email from our lists.",
-      "gdprLi4": "Right to data portability — your app data is stored in standard formats in iCloud. Contact us for website data export.",
+      "gdprLi4": "Право на перенесення даних — експортуйте всі ваші персональні дані як безкоштовний JSON-файл з Налаштування → Експортувати мої дані в додатку iOS. Ваші дані завжди зберігаються у стандартних форматах. Зверніться до нас для експорту даних веб-сайту.",
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
@@ -601,7 +604,7 @@
       "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
       "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
       "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
-      "exerciseRights": "To exercise any of these rights, email us at hello@lumenshore.com. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
+      "exerciseRights": "Щоб скористатися будь-яким із цих прав, надішліть нам електронного листа на адресу hello@lumenshore.com або подайте запит через нашу сторінку <dataRequestLink>Запит даних</dataRequestLink>. Ми відповімо протягом 30 днів (або раніше, якщо цього вимагає закон). Нам може знадобитися перевірити вашу особу перед обробкою деяких запитів."
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -1109,5 +1112,73 @@
     },
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
   },
-  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+  "DataRequest": {
+    "meta": {
+      "title": "Запит даних — LumenLingo",
+      "description": "Подайте запит на доступ до даних (DSAR), щоб скористатися правами на конфіденційність відповідно до GDPR, GDPR Великобританії або CCPA.",
+      "ogTitle": "Запит даних — LumenLingo",
+      "ogDescription": "Скористайтеся правами на конфіденційність. Запитайте доступ, виправлення або видалення ваших персональних даних."
+    },
+    "heading": "Запит даних",
+    "subtitle": "Скористайтеся правами на конфіденційність, подавши запит на доступ до даних (DSAR). Ми серйозно ставимося до ваших прав і відповімо протягом 30 днів.",
+    "overview": {
+      "heading": "Ваші права",
+      "p1": "Відповідно до GDPR, GDPR Великобританії та американських законів про конфіденційність (CCPA/CPRA), ви маєте право на:",
+      "li1": "<b>Доступ</b> — отримати копію персональних даних, які ми зберігаємо про вас",
+      "li2": "<b>Виправлення</b> — виправити неточні персональні дані",
+      "li3": "<b>Видалення</b> — вимагати видалення ваших персональних даних",
+      "li4": "<b>Переносимість даних</b> — отримати дані у машиночитаному форматі",
+      "li5": "<b>Обмеження обробки</b> — обмежити спосіб обробки ваших даних",
+      "li6": "<b>Заперечення</b> — заперечити проти обробки на основі законного інтересу"
+    },
+    "iosNote": {
+      "heading": "Користувачі додатка iOS",
+      "p1": "Дані вашого додатка LumenLingo зберігаються виключно на вашому пристрої та у вашому персональному обліковому записі iCloud. Ви маєте прямий доступ до всіх своїх даних через додаток. Також можна експортувати дані у форматі JSON з Налаштувань.",
+      "p2": "Форма нижче призначена переважно для даних вебсайту (розсилка, список очікування, аналітика) або якщо вам потрібна допомога з даними додатка iOS."
+    },
+    "form": {
+      "heading": "Подати запит",
+      "nameLabel": "Повне ім'я",
+      "namePlaceholder": "Ваше повне ім'я",
+      "emailLabel": "Електронна адреса",
+      "emailPlaceholder": "Електронна адреса, пов'язана з вашими даними",
+      "requestTypeLabel": "Тип запиту",
+      "requestTypePlaceholder": "Оберіть тип запиту",
+      "typeAccess": "Доступ — копія моїх даних",
+      "typeRectification": "Виправлення — виправити мої дані",
+      "typeErasure": "Видалення — видалити мої дані",
+      "typePortability": "Переносимість — експортувати мої дані",
+      "typeRestriction": "Обмеження — обмежити обробку",
+      "typeObjection": "Заперечення — зупинити обробку",
+      "detailsLabel": "Деталі",
+      "detailsPlaceholder": "Опишіть ваш запит детально. Вкажіть будь-які конкретні дані або облікові записи, на які ви посилаєтеся.",
+      "submitButton": "Подати запит",
+      "submitting": "Надсилання…",
+      "requiredField": "Це поле є обов'язковим",
+      "invalidEmail": "Введіть дійсну електронну адресу"
+    },
+    "success": {
+      "heading": "Запит подано",
+      "p1": "Дякуємо. Ваш запит на дані отримано. Ми підтвердимо ваш запит протягом 72 годин і надамо повну відповідь протягом 30 календарних днів.",
+      "p2": "Якщо нам потрібно буде перевірити вашу особу перед обробкою запиту, ми зв'яжемося з вами за вказаною електронною адресою.",
+      "reference": "Залиште цю сторінку відкритою або запишіть дату подання для ваших записів."
+    },
+    "process": {
+      "heading": "Що відбувається далі",
+      "step1Title": "Підтвердження",
+      "step1Desc": "Ми підтверджуємо отримання вашого запиту протягом 72 годин.",
+      "step2Title": "Перевірка",
+      "step2Desc": "Ми можемо перевірити вашу особу для захисту вашої конфіденційності.",
+      "step3Title": "Обробка",
+      "step3Desc": "Ми обробляємо ваш запит протягом 30 календарних днів.",
+      "step4Title": "Відповідь",
+      "step4Desc": "Ми відповідаємо з результатом та запитаними даними."
+    },
+    "contact": {
+      "heading": "Надаєте перевагу email?",
+      "p1": "Ви також можете скористатися своїми правами, надіславши нам листа безпосередньо на <emailLink>hello@lumenshore.com</emailLink>. Вкажіть ваше ім'я, електронну адресу, пов'язану з даними, та тип запиту.",
+      "responseTime": "Зазвичай ми відповідаємо протягом 48 годин."
+    }
+  }
 }

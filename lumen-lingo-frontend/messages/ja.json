@@ -410,7 +410,8 @@
       "accessibility": "アクセシビリティ",
       "cookiePolicy": "Cookieポリシー",
       "cookieSettings": "Cookie設定",
-      "eula": "EULA"
+      "eula": "EULA",
+      "dataRequest": "データリクエスト"
     },
     "newsletter": {
       "heading": "最新情報をお届け",
@@ -583,7 +584,9 @@
       "appLi1": "<b>Delete account</b> — use the in-app Settings → Sign Out → Delete Account to permanently erase all learning data, progress, preferences, and iCloud sync data. This action cannot be undone.",
       "appLi2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
       "appLi3": "<b>iCloud data</b> — you can manage iCloud storage through your device’s Settings → Apple ID → iCloud → Manage Storage.",
-      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation."
+      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation.",
+      "websiteLi5": "<b>同意記録</b> — GDPRの説明責任のため、最後のやり取りから 3 年間保管されます。",
+      "websiteLi6": "<b>データリクエストログ</b> — GDPRの説明責任のため、完了後 3 年間保管されます。"
     },
     "yourRights": {
       "heading": "Your Rights",
@@ -592,7 +595,7 @@
       "gdprLi1": "Right to access your data — app data is on your device and iCloud; for website data, contact us.",
       "gdprLi2": "Right to rectification — edit app preferences directly; for website data, contact us.",
       "gdprLi3": "Right to erasure — use the in-app Delete Account feature, delete the app, or contact us to remove your email from our lists.",
-      "gdprLi4": "Right to data portability — your app data is stored in standard formats in iCloud. Contact us for website data export.",
+      "gdprLi4": "データポータビリティの権利 — iOSアプリの「設定」→「データをエクスポート」から、すべての個人データを無料でJSONファイルとしてダウンロードできます。データは常に標準形式で保存されています。ウェブサイトデータのエクスポートについてはお問い合わせください。",
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
@@ -601,7 +604,7 @@
       "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
       "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
       "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
-      "exerciseRights": "To exercise any of these rights, email us at hello@lumenshore.com. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
+      "exerciseRights": "これらの権利を行使するには、hello@lumenshore.com までメールをお送りいただくか、<dataRequestLink>データリクエスト</dataRequestLink>ページからリクエストをご提出ください。30日以内（法律で求められる場合はそれ以前）にご回答いたします。特定のリクエストを処理する前に、本人確認が必要になる場合があります。"
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -1109,5 +1112,73 @@
     },
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
   },
-  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+  "DataRequest": {
+    "meta": {
+      "title": "データリクエスト — LumenLingo",
+      "description": "GDPR、英国GDPR、またはCCPAに基づくプライバシー権を行使するために、データ主体アクセスリクエスト（DSAR）を提出してください。",
+      "ogTitle": "データリクエスト — LumenLingo",
+      "ogDescription": "プライバシー権を行使しましょう。個人データへのアクセス、訂正、削除をリクエストできます。"
+    },
+    "heading": "データリクエスト",
+    "subtitle": "データ主体アクセスリクエスト（DSAR）を提出して、プライバシー権を行使してください。お客様の権利を真摯に受け止め、30日以内にご回答いたします。",
+    "overview": {
+      "heading": "お客様の権利",
+      "p1": "GDPR、英国GDPR、および米国のプライバシー法（CCPA/CPRA）に基づき、お客様には以下の権利があります：",
+      "li1": "<b>アクセス</b> — 当社が保有するお客様の個人データのコピーを受け取る",
+      "li2": "<b>訂正</b> — 不正確な個人データを訂正する",
+      "li3": "<b>消去</b> — 個人データの削除を要求する",
+      "li4": "<b>データポータビリティ</b> — 機械可読形式でデータを受け取る",
+      "li5": "<b>処理の制限</b> — データの処理方法を制限する",
+      "li6": "<b>異議申し立て</b> — 正当な利益に基づく処理に異議を唱える"
+    },
+    "iosNote": {
+      "heading": "iOSアプリユーザーの方へ",
+      "p1": "LumenLingoアプリのデータは、お客様のデバイスと個人のiCloudアカウントにのみ保存されています。アプリを通じてすべてのデータに直接アクセスできます。設定からJSON形式でデータをエクスポートすることも可能です。",
+      "p2": "以下のフォームは主にウェブサイトデータ（ニュースレター、ウェイトリスト、アナリティクス）に関するもの、またはiOSアプリデータについてサポートが必要な場合にご利用ください。"
+    },
+    "form": {
+      "heading": "リクエストを提出",
+      "nameLabel": "氏名",
+      "namePlaceholder": "お名前（フルネーム）",
+      "emailLabel": "メールアドレス",
+      "emailPlaceholder": "データに関連付けられたメールアドレス",
+      "requestTypeLabel": "リクエストの種類",
+      "requestTypePlaceholder": "リクエストの種類を選択",
+      "typeAccess": "アクセス — データのコピー",
+      "typeRectification": "訂正 — データの修正",
+      "typeErasure": "消去 — データの削除",
+      "typePortability": "ポータビリティ — データのエクスポート",
+      "typeRestriction": "制限 — 処理の制限",
+      "typeObjection": "異議 — 処理の停止",
+      "detailsLabel": "詳細",
+      "detailsPlaceholder": "リクエストの詳細をご記入ください。対象となるデータやアカウントをお書きください。",
+      "submitButton": "リクエストを送信",
+      "submitting": "送信中…",
+      "requiredField": "この項目は必須です",
+      "invalidEmail": "有効なメールアドレスを入力してください"
+    },
+    "success": {
+      "heading": "リクエストが送信されました",
+      "p1": "ありがとうございます。データリクエストを受け付けました。72時間以内にリクエストの確認を行い、30暦日以内に完全にご回答いたします。",
+      "p2": "リクエストの処理前に本人確認が必要な場合は、ご提供いただいたメールアドレスにご連絡いたします。",
+      "reference": "このページを開いたままにしておくか、記録のために送信日をメモしてください。"
+    },
+    "process": {
+      "heading": "今後の流れ",
+      "step1Title": "確認",
+      "step1Desc": "72時間以内にリクエストの受領を確認します。",
+      "step2Title": "本人確認",
+      "step2Desc": "プライバシー保護のため、本人確認を行う場合があります。",
+      "step3Title": "処理",
+      "step3Desc": "30暦日以内にリクエストを処理します。",
+      "step4Title": "回答",
+      "step4Desc": "結果とリクエストされたデータをお送りします。"
+    },
+    "contact": {
+      "heading": "メールをご希望ですか？",
+      "p1": "<emailLink>hello@lumenshore.com</emailLink> に直接メールをお送りいただくことでも権利を行使できます。お名前、データに関連付けられたメールアドレス、リクエストの種類をご記入ください。",
+      "responseTime": "通常48時間以内にご回答いたします。"
+    }
+  }
 }

@@ -410,7 +410,8 @@
       "accessibility": "无障碍",
       "cookiePolicy": "Cookie政策",
       "cookieSettings": "Cookie设置",
-      "eula": "EULA"
+      "eula": "EULA",
+      "dataRequest": "数据请求"
     },
     "newsletter": {
       "heading": "保持关注",
@@ -583,7 +584,9 @@
       "appLi1": "<b>Delete account</b> — use the in-app Settings → Sign Out → Delete Account to permanently erase all learning data, progress, preferences, and iCloud sync data. This action cannot be undone.",
       "appLi2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
       "appLi3": "<b>iCloud data</b> — you can manage iCloud storage through your device’s Settings → Apple ID → iCloud → Manage Storage.",
-      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation."
+      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation.",
+      "websiteLi5": "<b>同意记录</b> — 根据 GDPR 问责要求，在您最后一次互动后保留 3 年。",
+      "websiteLi6": "<b>数据请求日志</b> — 根据 GDPR 问责要求，在完成后保留 3 年。"
     },
     "yourRights": {
       "heading": "Your Rights",
@@ -592,7 +595,7 @@
       "gdprLi1": "Right to access your data — app data is on your device and iCloud; for website data, contact us.",
       "gdprLi2": "Right to rectification — edit app preferences directly; for website data, contact us.",
       "gdprLi3": "Right to erasure — use the in-app Delete Account feature, delete the app, or contact us to remove your email from our lists.",
-      "gdprLi4": "Right to data portability — your app data is stored in standard formats in iCloud. Contact us for website data export.",
+      "gdprLi4": "数据可携带权——在iOS应用的「设置」→「导出我的数据」中免费下载所有个人数据的JSON文件。您的数据始终以标准格式存储。如需导出网站数据，请联系我们。",
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
@@ -601,7 +604,7 @@
       "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
       "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
       "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
-      "exerciseRights": "To exercise any of these rights, email us at hello@lumenshore.com. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
+      "exerciseRights": "如需行使上述任何权利，请发送电子邮件至 hello@lumenshore.com 或通过我们的<dataRequestLink>数据请求</dataRequestLink>页面提交请求。我们将在30天内（或法律要求的更短时间内）回复。在处理某些请求之前，我们可能需要验证您的身份。"
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -1109,5 +1112,73 @@
     },
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
   },
-  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+  "DataRequest": {
+    "meta": {
+      "title": "数据请求 — LumenLingo",
+      "description": "提交数据主体访问请求（DSAR），行使您在GDPR、英国GDPR或CCPA下的隐私权利。",
+      "ogTitle": "数据请求 — LumenLingo",
+      "ogDescription": "行使您的隐私权利。请求访问、更正或删除您的个人数据。"
+    },
+    "heading": "数据请求",
+    "subtitle": "通过提交数据主体访问请求（DSAR）行使您的隐私权利。我们认真对待您的权利，并将在30天内回复。",
+    "overview": {
+      "heading": "您的权利",
+      "p1": "根据GDPR、英国GDPR和美国隐私法（CCPA/CPRA），您有权：",
+      "li1": "<b>访问</b> — 获取我们持有的您的个人数据副本",
+      "li2": "<b>更正</b> — 纠正不准确的个人数据",
+      "li3": "<b>删除</b> — 要求删除您的个人数据",
+      "li4": "<b>数据可携性</b> — 以机器可读格式接收您的数据",
+      "li5": "<b>限制处理</b> — 限制我们处理您数据的方式",
+      "li6": "<b>反对</b> — 反对基于合法利益的数据处理"
+    },
+    "iosNote": {
+      "heading": "iOS应用用户",
+      "p1": "您的LumenLingo应用数据完全存储在您的设备和个人iCloud账户中。您可以通过应用直接访问所有数据。也可以从「设置」将数据导出为JSON格式。",
+      "p2": "以下表单主要用于网站数据（新闻通讯、候补名单、分析）或在您需要iOS应用数据方面的帮助时使用。"
+    },
+    "form": {
+      "heading": "提交请求",
+      "nameLabel": "全名",
+      "namePlaceholder": "您的全名",
+      "emailLabel": "电子邮件地址",
+      "emailPlaceholder": "与您的数据关联的电子邮件地址",
+      "requestTypeLabel": "请求类型",
+      "requestTypePlaceholder": "选择请求类型",
+      "typeAccess": "访问 — 获取我的数据副本",
+      "typeRectification": "更正 — 纠正我的数据",
+      "typeErasure": "删除 — 删除我的数据",
+      "typePortability": "数据可携 — 导出我的数据",
+      "typeRestriction": "限制 — 限制数据处理",
+      "typeObjection": "反对 — 停止数据处理",
+      "detailsLabel": "详细信息",
+      "detailsPlaceholder": "请详细描述您的请求。请包含您涉及的具体数据或账户信息。",
+      "submitButton": "提交请求",
+      "submitting": "提交中…",
+      "requiredField": "此字段为必填项",
+      "invalidEmail": "请输入有效的电子邮件地址"
+    },
+    "success": {
+      "heading": "请求已提交",
+      "p1": "感谢您。我们已收到您的数据请求。我们将在72小时内确认收到您的请求，并在30个日历天内给予完整回复。",
+      "p2": "如果我们需要在处理您的请求之前验证您的身份，我们会通过您提供的电子邮件地址与您联系。",
+      "reference": "请保持此页面打开或记录提交日期以作记录。"
+    },
+    "process": {
+      "heading": "后续步骤",
+      "step1Title": "确认",
+      "step1Desc": "我们在72小时内确认收到您的请求。",
+      "step2Title": "身份验证",
+      "step2Desc": "为保护您的隐私，我们可能需要验证您的身份。",
+      "step3Title": "处理",
+      "step3Desc": "我们在30个日历天内处理您的请求。",
+      "step4Title": "回复",
+      "step4Desc": "我们将向您发送处理结果和所请求的数据。"
+    },
+    "contact": {
+      "heading": "更喜欢电子邮件？",
+      "p1": "您也可以直接发送电子邮件至 <emailLink>hello@lumenshore.com</emailLink> 来行使您的权利。请在邮件中注明您的姓名、与数据关联的电子邮件地址和请求类型。",
+      "responseTime": "我们通常在48小时内回复。"
+    }
+  }
 }

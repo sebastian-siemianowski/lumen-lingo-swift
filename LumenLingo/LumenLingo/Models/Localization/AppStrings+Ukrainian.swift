@@ -490,6 +490,14 @@ extension AppStrings {
         deletingAccount: "Видалення облікового запису…",
         clearingUserData: "Очищення даних користувача",
         accountDeleted: "Обліковий запис видалено",
+
+        // MARK: - GDPR Data Export
+        gdprExportTitle: "Експортувати мої дані",
+        gdprExportDesc: "Завантажте всі ваші персональні дані у машинозчитуваному форматі JSON. Це ваше право згідно зі статтею 20 GDPR — безкоштовно для всіх користувачів.",
+        gdprExportButton: "Експортувати персональні дані",
+        gdprExportSuccess: "Дані успішно експортовано",
+        gdprExportEmpty: "Немає персональних даних для експорту",
+
         trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
     )
 }

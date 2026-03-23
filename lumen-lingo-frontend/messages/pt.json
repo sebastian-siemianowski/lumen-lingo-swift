@@ -410,7 +410,8 @@
       "accessibility": "Acessibilidade",
       "cookiePolicy": "Política de Cookies",
       "cookieSettings": "Definições de Cookies",
-      "eula": "EULA"
+      "eula": "EULA",
+      "dataRequest": "Pedido de Dados"
     },
     "newsletter": {
       "heading": "Fique por dentro",
@@ -583,7 +584,9 @@
       "appLi1": "<b>Delete account</b> — use the in-app Settings → Sign Out → Delete Account to permanently erase all learning data, progress, preferences, and iCloud sync data. This action cannot be undone.",
       "appLi2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
       "appLi3": "<b>iCloud data</b> — you can manage iCloud storage through your device’s Settings → Apple ID → iCloud → Manage Storage.",
-      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation."
+      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation.",
+      "websiteLi5": "<b>Registos de consentimento</b> — retidos durante 3 anos após a sua última interação, conforme exigido para a responsabilidade ao abrigo do RGPD.",
+      "websiteLi6": "<b>Registos de pedidos de dados</b> — retidos durante 3 anos após a conclusão, conforme exigido para a responsabilidade ao abrigo do RGPD."
     },
     "yourRights": {
       "heading": "Your Rights",
@@ -592,7 +595,7 @@
       "gdprLi1": "Right to access your data — app data is on your device and iCloud; for website data, contact us.",
       "gdprLi2": "Right to rectification — edit app preferences directly; for website data, contact us.",
       "gdprLi3": "Right to erasure — use the in-app Delete Account feature, delete the app, or contact us to remove your email from our lists.",
-      "gdprLi4": "Right to data portability — your app data is stored in standard formats in iCloud. Contact us for website data export.",
+      "gdprLi4": "Direito à portabilidade de dados — exporte todos os seus dados pessoais como download JSON gratuito em Definições → Exportar os meus dados na app iOS. Os seus dados são sempre armazenados em formatos padrão. Contacte-nos para exportar dados do website.",
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
@@ -601,7 +604,7 @@
       "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
       "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
       "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
-      "exerciseRights": "To exercise any of these rights, email us at hello@lumenshore.com. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
+      "exerciseRights": "Para exercer qualquer um destes direitos, envie-nos um e-mail para hello@lumenshore.com ou submeta um pedido através da nossa página de <dataRequestLink>Pedido de Dados</dataRequestLink>. Responderemos no prazo de 30 dias (ou antes, se exigido por lei). Poderemos ter de verificar a sua identidade antes de processar determinados pedidos."
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -1109,5 +1112,73 @@
     },
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
   },
-  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+  "DataRequest": {
+    "meta": {
+      "title": "Pedido de Dados — LumenLingo",
+      "description": "Submeta um pedido de acesso a dados (DSAR) para exercer os seus direitos de privacidade ao abrigo do RGPD, do RGPD do Reino Unido ou da CCPA.",
+      "ogTitle": "Pedido de Dados — LumenLingo",
+      "ogDescription": "Exerça os seus direitos de privacidade. Solicite acesso, retificação ou eliminação dos seus dados pessoais."
+    },
+    "heading": "Pedido de Dados",
+    "subtitle": "Exerça os seus direitos de privacidade submetendo um pedido de acesso a dados (DSAR). Levamos os seus direitos a sério e responderemos no prazo de 30 dias.",
+    "overview": {
+      "heading": "Os seus direitos",
+      "p1": "Ao abrigo do RGPD, do RGPD do Reino Unido e das leis de privacidade estaduais dos EUA (CCPA/CPRA), tem direito a:",
+      "li1": "<b>Acesso</b> — receber uma cópia dos dados pessoais que detemos sobre si",
+      "li2": "<b>Retificação</b> — corrigir dados pessoais imprecisos",
+      "li3": "<b>Apagamento</b> — solicitar a eliminação dos seus dados pessoais",
+      "li4": "<b>Portabilidade</b> — receber os seus dados num formato legível por máquina",
+      "li5": "<b>Limitação</b> — limitar a forma como processamos os seus dados",
+      "li6": "<b>Oposição</b> — opor-se ao tratamento baseado em interesse legítimo"
+    },
+    "iosNote": {
+      "heading": "Utilizadores da app iOS",
+      "p1": "Os dados da sua app LumenLingo são armazenados inteiramente no seu dispositivo e na sua conta pessoal do iCloud. Tem acesso direto a todos os seus dados através da app. Também pode exportar os seus dados em formato JSON a partir das Definições.",
+      "p2": "O formulário abaixo destina-se principalmente a dados do website (newsletter, lista de espera, analítica) ou se precisar de ajuda com os dados da sua app iOS."
+    },
+    "form": {
+      "heading": "Submeter um pedido",
+      "nameLabel": "Nome completo",
+      "namePlaceholder": "O seu nome completo",
+      "emailLabel": "Endereço de e-mail",
+      "emailPlaceholder": "O endereço de e-mail associado aos seus dados",
+      "requestTypeLabel": "Tipo de pedido",
+      "requestTypePlaceholder": "Selecione o tipo de pedido",
+      "typeAccess": "Acesso — cópia dos meus dados",
+      "typeRectification": "Retificação — corrigir os meus dados",
+      "typeErasure": "Apagamento — eliminar os meus dados",
+      "typePortability": "Portabilidade — exportar os meus dados",
+      "typeRestriction": "Limitação — limitar o tratamento",
+      "typeObjection": "Oposição — parar o tratamento",
+      "detailsLabel": "Detalhes",
+      "detailsPlaceholder": "Descreva o seu pedido em detalhe. Inclua quaisquer dados ou contas específicas a que se refere.",
+      "submitButton": "Submeter pedido",
+      "submitting": "A enviar…",
+      "requiredField": "Este campo é obrigatório",
+      "invalidEmail": "Introduza um endereço de e-mail válido"
+    },
+    "success": {
+      "heading": "Pedido submetido",
+      "p1": "Obrigado. O seu pedido de dados foi recebido. Confirmaremos o seu pedido no prazo de 72 horas e responderemos integralmente no prazo de 30 dias corridos.",
+      "p2": "Se precisarmos de verificar a sua identidade antes de processar o seu pedido, contactá-lo-emos através do endereço de e-mail fornecido.",
+      "reference": "Mantenha esta página aberta ou anote a data de submissão para os seus registos."
+    },
+    "process": {
+      "heading": "O que acontece a seguir",
+      "step1Title": "Confirmação",
+      "step1Desc": "Confirmamos o seu pedido no prazo de 72 horas.",
+      "step2Title": "Verificação",
+      "step2Desc": "Podemos verificar a sua identidade para proteger a sua privacidade.",
+      "step3Title": "Processamento",
+      "step3Desc": "Processamos o seu pedido no prazo de 30 dias corridos.",
+      "step4Title": "Resposta",
+      "step4Desc": "Respondemos com o resultado e os dados solicitados."
+    },
+    "contact": {
+      "heading": "Prefere e-mail?",
+      "p1": "Também pode exercer os seus direitos enviando-nos um e-mail diretamente para <emailLink>hello@lumenshore.com</emailLink>. Inclua o seu nome, o endereço de e-mail associado aos seus dados e o tipo de pedido.",
+      "responseTime": "Normalmente respondemos em 48 horas."
+    }
+  }
 }

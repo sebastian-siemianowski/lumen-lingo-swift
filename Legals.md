@@ -586,26 +586,32 @@
 **So that** I can exercise my rights under GDPR Articles 15-22
 
 #### Subtasks:
-- [ ] 4.2.1 — Create DSAR request mechanism:
+- [x] 4.2.1 — Create DSAR request mechanism:
   - Email: hello@lumenshore.com (already listed)
   - Optional: dedicated `/dsar` or `/data-request` page with structured form
-- [ ] 4.2.2 — Define internal DSAR handling procedure:
+  - **DONE**: Created `/data-request` page (`src/app/[locale]/data-request/page.tsx`) with structured form component (`src/components/data-request/data-request-form.tsx`). Form collects name, email, request type (6 rights), and details, then composes a mailto: link. Full 10-locale i18n (en, es, fr, de, ja, zh, ar, pl, pt, uk). Added to footer and sitemap.
+- [x] 4.2.2 — Define internal DSAR handling procedure:
   - Acknowledge within 72 hours
   - Complete within 30 days (extendable to 90 for complex requests)
   - Identity verification before disclosure
   - Free of charge (unless manifestly excessive)
-- [ ] 4.2.3 — Implement DSAR response templates for:
+  - **DONE**: Created `compliance/DSAR-Procedure.md` with 7 sections: request channels, acknowledgement (72h), verification process, timelines (30 days, extendable to 90), rights handling procedures, response templates, and record-keeping requirements.
+- [x] 4.2.3 — Implement DSAR response templates for:
   - Right of Access (Art. 15) — provide copy of all data
   - Right to Rectification (Art. 16) — correct inaccurate data
   - Right to Erasure (Art. 17) — delete all data
   - Right to Data Portability (Art. 20) — export in machine-readable format
   - Right to Restrict Processing (Art. 18) — stop processing but retain data
   - Right to Object (Art. 21) — object to legitimate interest processing
-- [ ] 4.2.4 — Document which data can be provided for each right:
+  - **DONE**: 9 response templates in Section 6 of `compliance/DSAR-Procedure.md`: Access, Rectification, Erasure Complete, Erasure Partial Refusal, Portability, Restriction, Objection Upheld, Extension Notification, and Identity Verification Request.
+- [x] 4.2.4 — Document which data can be provided for each right:
   - Website: emails from newsletter/waitlist, Sentry logs (request from Sentry), Vercel logs (limited)
   - iOS app: all SwiftData on device (user has direct access), iCloud data (via Apple)
-- [ ] 4.2.5 — Add DSAR process description to Privacy Policy
-- [ ] 4.2.6 — Create internal log for tracking DSARs (date received, type, status, completion date)
+  - **DONE**: Documented in Section 5 of `compliance/DSAR-Procedure.md` — per-right data inventory for website data (newsletter emails, waitlist emails, Sentry logs, Vercel analytics, cookie consent records, UTM data) and iOS app data (on-device SwiftData, iCloud sync).
+- [x] 4.2.5 — Add DSAR process description to Privacy Policy
+  - **DONE**: Updated `exerciseRights` text in Privacy page with `<dataRequestLink>` to `/data-request` page. Privacy page now uses `t.rich()` for the link. All 10 locales updated. Data-request page itself includes full process description (4-step timeline).
+- [x] 4.2.6 — Create internal log for tracking DSARs (date received, type, status, completion date)
+  - **DONE**: Created `compliance/DSAR-Log.md` with tracking template: columns for Reference, Date Received, Requester, Request Type, Verification Status, Due Date, Extension, Completion Date, Outcome, and Notes.
 
 **Acceptance Criteria**:
 - Users can submit DSARs via email or web form
@@ -620,15 +626,15 @@
 **So that** I can exercise my GDPR Article 20 right to data portability
 
 #### Subtasks:
-- [ ] 4.3.1 — Audit current DataExporter service — currently tier-gated (requires Pro+ for CSV/JSON/PDF export)
-- [ ] 4.3.2 — **Legal requirement**: GDPR data portability must be FREE regardless of subscription tier
-- [ ] 4.3.3 — Separate "premium export features" (formatted PDF reports, analytics insights) from "GDPR data export" (raw data dump)
-- [ ] 4.3.4 — Implement free data export option in Settings accessible to all tiers:
+- [x] 4.3.1 — Audit current DataExporter service — currently tier-gated (requires Pro+ for CSV/JSON/PDF export) — DONE: Audited DataExporter.swift — Elite gets CSV, Royal/Trial gets CSV+JSON+PDF, Free/Pro get nothing. Gated via JourneyStatsSection + availableFormats(for:).
+- [x] 4.3.2 — **Legal requirement**: GDPR data portability must be FREE regardless of subscription tier — DONE: Implemented via new GDPRDataExporter service, separate from premium DataExporter. No tier check.
+- [x] 4.3.3 — Separate "premium export features" (formatted PDF reports, analytics insights) from "GDPR data export" (raw data dump) — DONE: Created GDPRDataExporter.swift (free, all personal data as JSON) vs DataExporter.swift (premium, formatted reports).
+- [x] 4.3.4 — Implement free data export option in Settings accessible to all tiers: — DONE: Added "Export My Data" section to SettingsView with green-tinted card, export button using UIActivityViewController share sheet. Exports LumenLingo-PersonalData.json containing all 5 SwiftData models. Localized in all 9 languages.
   - Export all personal data as JSON
   - Include: UserProfile, GameProgressRecord, LanguagePreference, FavoriteCategory, MasteredContent
   - Format: machine-readable (JSON)
-- [ ] 4.3.5 — Keep premium DataExporter features (formatted PDFs, CSV with analytics) gated to paid tiers
-- [ ] 4.3.6 — Add data export instructions to Privacy Policy under "Your Rights" section
+- [x] 4.3.5 — Keep premium DataExporter features (formatted PDFs, CSV with analytics) gated to paid tiers — DONE: No changes to existing premium DataExporter — tier gating preserved.
+- [x] 4.3.6 — Add data export instructions to Privacy Policy under "Your Rights" section — DONE: Updated gdprLi4 in all 10 locale files to reference "Settings → Export My Data" free JSON download.
 
 **Acceptance Criteria**:
 - All users (including Free tier) can export their personal data as JSON
@@ -643,16 +649,16 @@
 **So that** I can demonstrate GDPR compliance and respond to audits
 
 #### Subtasks:
-- [ ] 4.4.1 — Record newsletter consent: timestamp, email, IP address (hashed), consent text shown, version
-- [ ] 4.4.2 — Record waitlist consent: same fields as above plus language preference
-- [ ] 4.4.3 — Record cookie consent: timestamp, categories accepted/rejected, consent banner version
-- [ ] 4.4.4 — Store consent records securely (when backend is implemented)
-- [ ] 4.4.5 — Implement consent withdrawal mechanism:
-  - Newsletter: unsubscribe link in every email
-  - Waitlist: email to request removal
-  - Cookies: "Cookie Settings" link in footer to revoke/change
-- [ ] 4.4.6 — Ensure consent withdrawal is as easy as giving consent (GDPR Art. 7(3))
-- [ ] 4.4.7 — Add consent version tracking — when consent text changes, re-consent may be required
+- [x] 4.4.1 — Record newsletter consent: timestamp, email, IP address (hashed), consent text shown, version — **DONE**: Newsletter API route now calls `recordConsent()` from `consent-log.ts` with SHA-256 hashed email & IP, versioned consent text (`NEWSLETTER_CONSENT_VERSION = '1.0'`), source metadata. Newsletter form updated with explicit consent notice.
+- [x] 4.4.2 — Record waitlist consent: same fields as above plus language preference — **DONE**: Waitlist API route now calls `recordConsent()` with hashed email & IP, versioned consent text, language and referrer metadata.
+- [x] 4.4.3 — Record cookie consent: timestamp, categories accepted/rejected, consent banner version — **DONE**: New `/api/consent/cookie` endpoint logs server-side consent records. `cookie-consent.ts` `setConsentPreferences()` now POSTs to this endpoint after every consent change. Records categories (analytics, errorMonitoring, sessionReplay) and banner version.
+- [x] 4.4.4 — Store consent records securely (when backend is implemented) — **DONE**: `consent-log.ts` provides in-memory store + structured JSON console logs for log aggregator ingestion (Datadog, CloudWatch). All PII hashed with SHA-256. Ready for database persistence when backend is wired in.
+- [x] 4.4.5 — Implement consent withdrawal mechanism — **DONE**:
+  - Newsletter: `/api/newsletter/unsubscribe` endpoint created with consent withdrawal logging
+  - Waitlist: email to request removal (documented in privacy policy)
+  - Cookies: "Cookie Settings" button in footer already dispatches `open-cookie-settings` event to reopen banner
+- [x] 4.4.6 — Ensure consent withdrawal is as easy as giving consent (GDPR Art. 7(3)) — **DONE**: Cookie withdrawal = same banner UI (one click). Newsletter = unsubscribe link in emails + API endpoint. Same or fewer steps than opt-in.
+- [x] 4.4.7 — Add consent version tracking — when consent text changes, re-consent may be required — **DONE**: `consent-log.ts` exports `NEWSLETTER_CONSENT_VERSION`, `WAITLIST_CONSENT_VERSION`, `COOKIE_CONSENT_VERSION` constants. Cookie consent already had `CONSENT_VERSION` with re-prompt on version change. All consent records include version field.
 
 **Acceptance Criteria**:
 - All consents recorded with timestamp and version
@@ -667,22 +673,23 @@
 **So that** we don't hold data longer than necessary (GDPR Art. 5(1)(e))
 
 #### Subtasks:
-- [ ] 4.5.1 — Define retention periods:
+- [x] 4.5.1 — Define retention periods — **DONE**: All retention periods defined per data category:
   - Newsletter emails: until unsubscribe + 30 days to process
-  - Waitlist emails: until product launch + 30 days, or until request removal
-  - Sentry error logs: per Sentry's retention policy (default 90 days)
-  - Sentry session replays: per Sentry's retention policy (default 90 days)
-  - Vercel Analytics: per Vercel's retention policy
-  - iOS app data: until user deletes app or resets progress
-  - iCloud data: until user deletes from iCloud or deletes account
-  - Consent records: 3 years after last interaction (for accountability)
+  - Waitlist emails: 1 year from signup or product launch + 30 days
+  - Sentry error/replay: 90 days (Sentry default)
+  - Vercel Analytics: per Vercel policy (aggregated, no PII)
+  - iOS app data: until user deletes app/account
+  - iCloud data: until user deletes from iCloud
+  - Consent records: 3 years after last interaction
   - DSAR logs: 3 years after completion
-- [ ] 4.5.2 — Document retention periods in Privacy Policy
-- [ ] 4.5.3 — Implement automated data deletion where possible:
-  - Purge old waitlist entries after defined period
-  - Configure Sentry retention settings
-- [ ] 4.5.4 — Create internal data retention schedule document
-- [ ] 4.5.5 — Annual review trigger for retention policy
+- [x] 4.5.2 — Document retention periods in Privacy Policy — **DONE**: `Privacy.dataRetention.websiteLi5` (consent records, 3 years) and `websiteLi6` (data request logs, 3 years) added to Privacy Policy in all 10 locales. Rendered in privacy page.
+- [x] 4.5.3 — Implement automated data deletion where possible — **DONE**:
+  - Waitlist: automated purge of entries >365 days (RETENTION_DAYS) via interval timer in `api/waitlist/route.ts`
+  - Cookie consent: 13-month localStorage expiry already in `lib/cookie-consent.ts`
+  - Newsletter rate-limit: 5-minute cleanup interval
+  - Sentry: configure 90-day retention via Sentry dashboard
+- [x] 4.5.4 — Create internal data retention schedule document — **DONE**: `DATA_RETENTION_SCHEDULE.md` created in lumen-lingo-frontend/ with full table of all data categories, retention periods, deletion methods, and legal bases.
+- [x] 4.5.5 — Annual review trigger for retention policy — **DONE**: Annual review checklist included in `DATA_RETENTION_SCHEDULE.md` with next review date (2026-01-01), cross-referenced with DPIA (Story 4.6).
 
 **Acceptance Criteria**:
 - Retention period defined for every data category
@@ -697,16 +704,11 @@
 **So that** we comply with GDPR Article 35
 
 #### Subtasks:
-- [ ] 4.6.1 — Assess whether DPIA is required (likely yes due to: session replay monitoring, processing of children's data 13+, systematic monitoring via analytics)
-- [ ] 4.6.2 — Complete DPIA covering:
-  - Description of processing operations
-  - Purpose and necessity assessment
-  - Risk assessment to data subjects
-  - Mitigation measures
-  - Consultation with DPO (if applicable — small company may not need DPO)
-- [ ] 4.6.3 — Document DPIA for Sentry session replay specifically (high risk: captures user behavior)
-- [ ] 4.6.4 — Document DPIA for children's data processing (users aged 13-17)
-- [ ] 4.6.5 — Store DPIA internally, update when processing changes significantly
+- [x] 4.6.1 — Assess whether DPIA is required — **DONE**: DPIA required for session replay (systematic monitoring) and children's data (13–17 age group). Documented in `compliance/DPIA.md` Section 1.
+- [x] 4.6.2 — Complete DPIA covering processing descriptions, purpose, risk, mitigation — **DONE**: Full DPIA in `compliance/DPIA.md` with structured sections for each processing activity including risk matrices and mitigation measures.
+- [x] 4.6.3 — Document DPIA for Sentry session replay specifically — **DONE**: Section 2 of `compliance/DPIA.md` — detailed risk assessment covering maskAllText, blockAllMedia, consent-gating, 90-day retention, dynamic consent withdrawal. Residual risk: LOW.
+- [x] 4.6.4 — Document DPIA for children's data processing (users aged 13-17) — **DONE**: Section 3 of `compliance/DPIA.md` — covers on-device processing, zero PII collection, no SDKs, no accounts, no server database. Residual risk: VERY LOW.
+- [x] 4.6.5 — Store DPIA internally, update when processing changes significantly — **DONE**: `compliance/DPIA.md` stored in repo with annual review date (2026-01-01) and action items checklist.
 
 **Acceptance Criteria**:
 - DPIA completed for all high-risk processing
@@ -722,40 +724,12 @@
 **So that** Lumenshore demonstrates compliance with GDPR Article 25 ("data protection by design and by default") and can satisfy ICO / DPA audits
 
 #### Subtasks:
-- [ ] 4.7.1 — Document current "by design" measures already in place:
-  - iOS app: all data stored on-device via SwiftData (no server-side database)
-  - iOS app: zero external SDKs, zero telemetry, zero ad networks
-  - iOS app: iCloud KVS sync is Apple-managed with end-to-end encryption in transit
-  - Website: cookie-free Vercel Analytics (no PII), Sentry replay disabled until consent
-  - Website: input validation (Zod) on all API routes, rate limiting, no user database
-  - Authentication currently mock — no real PII stored server-side
-- [ ] 4.7.2 — Document current "by default" privacy settings:
-  - Default: no tracking, no analytics collection, no session replay
-  - Default: Sentry session replay rate = 0% unless user consents (per Story 2.3)
-  - Default: newsletter/waitlist = explicit opt-in only (no pre-ticked boxes)
-  - Default: iCloud sync = on (but no sensitive PII; learning progress only)
-  - Default: no account required to use Free tier (data minimisation)
-- [ ] 4.7.3 — Create "Privacy by Design Checklist" for new features:
-  - Data minimisation: does the feature collect only what is strictly necessary?
-  - Purpose limitation: is data used only for the stated purpose?
-  - Storage limitation: is there a defined retention period?
-  - Default settings: are the most privacy-protective settings the default?
-  - Pseudonymisation / anonymisation: can data be de-identified?
-  - Access control: who can access the data? Is it least-privilege?
-  - Encryption: is data encrypted at rest and in transit?
-  - Delete-ability: can the data be fully deleted on user request?
-- [ ] 4.7.4 — Integrate privacy-by-design checklist into feature development workflow:
-  - Require completion before any feature touching personal data is merged
-  - Store completed checklists as internal compliance artefacts
-  - Cross-reference with Story 15.3 (Feature-Level Legal Impact Assessment)
-- [ ] 4.7.5 — Demonstrate pseudonymisation where practical:
-  - If backend is implemented: use opaque user IDs (UUIDs), not email addresses, as primary keys
-  - Hash or anonymise IP addresses in logs after rate-limiting check
-  - Sentry: ensure `maskAllText` and `blockAllMedia` are defaults (Story 2.3.5)
-- [ ] 4.7.6 — Annual review of privacy-by-design posture:
-  - Re-assess when new features, SDKs, or sub-processors are added
-  - Update documentation to reflect current state
-  - Align with DPIA updates (Story 4.6)
+- [x] 4.7.1 — Document current "by design" measures — **DONE**: Section 1 of `compliance/PrivacyByDesign.md` — tables for iOS (8 measures), Website (8 measures), and Consent (5 measures) architectures with implementation details and evidence references.
+- [x] 4.7.2 — Document current "by default" privacy settings — **DONE**: Section 2 of `compliance/PrivacyByDesign.md` — 8 default settings documented (analytics off, replay off, opt-in only, no account required, etc.).
+- [x] 4.7.3 — Create "Privacy by Design Checklist" for new features — **DONE**: Section 3 of `compliance/PrivacyByDesign.md` — 9-category checklist covering data minimisation, purpose limitation, storage limitation, default settings, pseudonymisation, access control, encryption, delete-ability, and children's data.
+- [x] 4.7.4 — Integrate privacy-by-design checklist into feature development workflow — **DONE**: Section 4 of `compliance/PrivacyByDesign.md` — pre-merge requirement, feature planning integration, cross-reference with Story 15.3, artefact storage in compliance/ directory.
+- [x] 4.7.5 — Demonstrate pseudonymisation where practical — **DONE**: Section 5 of `compliance/PrivacyByDesign.md` — documents IP hashing (`hashForConsent`), email hashing in consent records, Sentry `maskAllText`/`blockAllMedia`, and planned UUID-based backend IDs.
+- [x] 4.7.6 — Annual review of privacy-by-design posture — **DONE**: Section 6 of `compliance/PrivacyByDesign.md` — annual review checklist with next review date (2026-01-01), cross-referenced with DPIA.
 
 **Acceptance Criteria**:
 - Existing privacy-by-design measures documented and evidenced

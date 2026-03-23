@@ -1,6 +1,12 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { z } from 'zod/v4';
 import crypto from 'crypto';
+import {
+  hashForConsent,
+  recordConsent,
+  WAITLIST_CONSENT_VERSION,
+  WAITLIST_CONSENT_TEXT,
+} from '@/lib/consent-log';
 
 // ─── Schema ────────────────────────────────────────────────────────
 const waitlistSchema = z.object({
@@ -23,6 +29,25 @@ const g = globalThis as unknown as Record<symbol, WaitlistEntry[] | undefined>;
 if (!g[gKey]) g[gKey] = [];
 function getStore(): WaitlistEntry[] {
   return g[gKey]!;
+}
+
+// ─── Automated retention purge (GDPR Art. 5(1)(e)) ────────────────
+// Remove entries older than RETENTION_DAYS. In production, wire to a cron job.
+const RETENTION_DAYS = 365; // 1 year after launch or until product launch + 30 days
+const PURGE_INTERVAL = 24 * 60 * 60 * 1000; // 24 hours
+const purgeKey = Symbol.for('waitlist-purge-interval');
+const gPurge = globalThis as unknown as Record<symbol, ReturnType<typeof setInterval> | undefined>;
+if (!gPurge[purgeKey]) {
+  gPurge[purgeKey] = setInterval(() => {
+    const store = getStore();
+    const cutoff = Date.now() - RETENTION_DAYS * 24 * 60 * 60 * 1000;
+    const before = store.length;
+    const kept = store.filter((e) => new Date(e.createdAt).getTime() > cutoff);
+    if (kept.length < before) {
+      g[gKey] = kept;
+      console.log(`[waitlist] Purged ${before - kept.length} expired entries (>${RETENTION_DAYS} days)`);
+    }
+  }, PURGE_INTERVAL);
 }
 
 function generateReferralCode(): string {
@@ -94,6 +119,17 @@ export async function POST(request: NextRequest) {
     createdAt: new Date().toISOString(),
   };
   store.push(entry);
+
+  // ── GDPR consent record ──────────────────────────────────────────
+  recordConsent({
+    timestamp: entry.createdAt,
+    type: 'waitlist',
+    subjectHash: hashForConsent(email),
+    ipHash: hashForConsent(ip),
+    consentVersion: WAITLIST_CONSENT_VERSION,
+    consentTextShown: WAITLIST_CONSENT_TEXT,
+    metadata: { language, referrer: referrer ?? 'none' },
+  });
 
   console.log(`[waitlist] New signup: ${email} (language: ${language}, ref: ${referrer ?? 'none'})`);
 

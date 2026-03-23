@@ -248,6 +248,7 @@
 		F7A415EA51E56EA8A80006E4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA37A22083A72444CE3F5374 /* SettingsView.swift */; };
 		F9CEA1D33EF3254085E2BE83 /* AccuracyHeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B39BE55826C6132EE40D6 /* AccuracyHeatmapView.swift */; };
 		FC1203F47C411DF45D54CA27 /* wordbuilder_english_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 2516A4527A7F21A7FD49DA48 /* wordbuilder_english_polish.json */; };
+		FD48E593F72EC304EE27AD31 /* GDPRDataExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC911719A82F3B1ACCFB62A4 /* GDPRDataExporter.swift */; };
 		FED1EF451B08FBEF1081AC4D /* grammar_polish_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 1529F75859B9520B053C7083 /* grammar_polish_german.json */; };
 		FEDBB41A11D82843DDC00888 /* AppStrings+French.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CE2159CF9460A51BA2008 /* AppStrings+French.swift */; };
 		FFEB34E94BF794DB93C7F83E /* CelestialLagoonPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = D982946FA08A7CB301870D9F /* CelestialLagoonPreset.metal */; };
@@ -510,6 +511,7 @@
 		EB5EA1D2487A9E973C303FE8 /* SolarAuroraStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SolarAuroraStars.metal; sourceTree = "<group>"; };
 		EBB9411DB022EF3C046C2B75 /* AppStrings+Polish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStrings+Polish.swift"; sourceTree = "<group>"; };
 		EBE04D8108F905F4A7F4E750 /* TierManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierManager.swift; sourceTree = "<group>"; };
+		EC911719A82F3B1ACCFB62A4 /* GDPRDataExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDPRDataExporter.swift; sourceTree = "<group>"; };
 		EE209D9EF404AA5D75D6D840 /* grammar_french_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_french_english.json; sourceTree = "<group>"; };
 		EFE521ADD54E6635CA76C3A1 /* wordbuilder_english_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_spanish.json; sourceTree = "<group>"; };
 		F0AE02E5AA944BBF9A1E7BB2 /* grammar_ukrainian_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_ukrainian_polish.json; sourceTree = "<group>"; };
@@ -999,6 +1001,7 @@
 				CD2F384266BDC87729E97BA3 /* DebugContentController.swift */,
 				A0F8E51321C2F7CFA3CD263A /* DebugNetworkController.swift */,
 				AC30B266BA1A7A2C9EF62445 /* DebugURLProtocol.swift */,
+				EC911719A82F3B1ACCFB62A4 /* GDPRDataExporter.swift */,
 				894DD05B6C1F9A54FFFA697A /* HapticsService.swift */,
 				3766F4844525AE0B8F693647 /* LocalizationManager.swift */,
 				78D1D407AAD1B931847974B4 /* NetworkMonitor.swift */,
@@ -1440,6 +1443,7 @@
 				6EAE1862896060C4D7F2D013 /* FeatureTransitionOverlay.swift in Sources */,
 				637BD9450D9DA97AB7A865D4 /* FlashCardsView.swift in Sources */,
 				BA5B8481D3BD9E9C73C52CC8 /* FlashcardsViewModel.swift in Sources */,
+				FD48E593F72EC304EE27AD31 /* GDPRDataExporter.swift in Sources */,
 				E9D214897F344F36A878487F /* GameHeader.swift in Sources */,
 				73A7E6DA708ED07D00A689B2 /* GlassDivider.swift in Sources */,
 				706716701769FD235DD19131 /* GrammarView.swift in Sources */,

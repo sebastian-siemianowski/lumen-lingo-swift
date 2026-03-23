@@ -503,6 +503,13 @@ struct AppStrings: Sendable {
     let clearingUserData: String             // Progress step
     let accountDeleted: String               // "Account deleted"
 
+    // MARK: - GDPR Data Export (free for all tiers)
+    let gdprExportTitle: String              // "Export My Data"
+    let gdprExportDesc: String               // Explanation of GDPR right
+    let gdprExportButton: String             // "Export Personal Data"
+    let gdprExportSuccess: String            // "Data exported successfully"
+    let gdprExportEmpty: String              // "No personal data to export"
+
     // MARK: - Trademark Attribution
     let trademarkAttribution: String         // Apple trademark attribution line
 

@@ -410,7 +410,8 @@
       "accessibility": "إمكانية الوصول",
       "cookiePolicy": "سياسة ملفات تعريف الارتباط",
       "cookieSettings": "إعدادات ملفات تعريف الارتباط",
-      "eula": "EULA"
+      "eula": "EULA",
+      "dataRequest": "طلب البيانات"
     },
     "newsletter": {
       "heading": "ابقَ على اطلاع",
@@ -583,7 +584,9 @@
       "appLi1": "<b>Delete account</b> — use the in-app Settings → Sign Out → Delete Account to permanently erase all learning data, progress, preferences, and iCloud sync data. This action cannot be undone.",
       "appLi2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
       "appLi3": "<b>iCloud data</b> — you can manage iCloud storage through your device’s Settings → Apple ID → iCloud → Manage Storage.",
-      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation."
+      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation.",
+      "websiteLi5": "<b>سجلات الموافقة</b> — يتم الاحتفاظ بها لمدة 3 سنوات بعد آخر تفاعل لك، كما هو مطلوب للمساءلة بموجب اللائحة العامة لحماية البيانات.",
+      "websiteLi6": "<b>سجلات طلبات البيانات</b> — يتم الاحتفاظ بها لمدة 3 سنوات بعد الاكتمال، كما هو مطلوب للمساءلة بموجب اللائحة العامة لحماية البيانات."
     },
     "yourRights": {
       "heading": "Your Rights",
@@ -592,7 +595,7 @@
       "gdprLi1": "Right to access your data — app data is on your device and iCloud; for website data, contact us.",
       "gdprLi2": "Right to rectification — edit app preferences directly; for website data, contact us.",
       "gdprLi3": "Right to erasure — use the in-app Delete Account feature, delete the app, or contact us to remove your email from our lists.",
-      "gdprLi4": "Right to data portability — your app data is stored in standard formats in iCloud. Contact us for website data export.",
+      "gdprLi4": "الحق في نقل البيانات — قم بتصدير جميع بياناتك الشخصية كملف JSON مجاني من الإعدادات ← تصدير بياناتي في تطبيق iOS. بياناتك مخزنة دائمًا بتنسيقات قياسية. اتصل بنا لتصدير بيانات الموقع الإلكتروني.",
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
@@ -601,7 +604,7 @@
       "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
       "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
       "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
-      "exerciseRights": "To exercise any of these rights, email us at hello@lumenshore.com. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
+      "exerciseRights": "لممارسة أي من هذه الحقوق، أرسل لنا بريدًا إلكترونيًا على hello@lumenshore.com أو قدّم طلبًا عبر صفحة <dataRequestLink>طلب البيانات</dataRequestLink>. سنرد خلال 30 يومًا (أو قبل ذلك إذا تطلب القانون). قد نحتاج إلى التحقق من هويتك قبل معالجة بعض الطلبات."
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -1109,5 +1112,73 @@
     },
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
   },
-  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+  "DataRequest": {
+    "meta": {
+      "title": "طلب البيانات — LumenLingo",
+      "description": "قدّم طلب وصول صاحب البيانات (DSAR) لممارسة حقوقك في الخصوصية بموجب اللائحة العامة لحماية البيانات (GDPR) أو قانون CCPA.",
+      "ogTitle": "طلب البيانات — LumenLingo",
+      "ogDescription": "مارس حقوقك في الخصوصية. اطلب الوصول إلى بياناتك الشخصية أو تصحيحها أو حذفها."
+    },
+    "heading": "طلب البيانات",
+    "subtitle": "مارس حقوقك في الخصوصية من خلال تقديم طلب وصول صاحب البيانات (DSAR). نأخذ حقوقك على محمل الجد وسنرد خلال 30 يومًا.",
+    "overview": {
+      "heading": "حقوقك",
+      "p1": "بموجب اللائحة العامة لحماية البيانات (GDPR) واللائحة البريطانية وقوانين الخصوصية الأمريكية (CCPA/CPRA)، لديك الحق في:",
+      "li1": "<b>الوصول</b> — الحصول على نسخة من البيانات الشخصية التي نحتفظ بها عنك",
+      "li2": "<b>التصحيح</b> — تصحيح البيانات الشخصية غير الدقيقة",
+      "li3": "<b>المحو</b> — طلب حذف بياناتك الشخصية",
+      "li4": "<b>قابلية النقل</b> — الحصول على بياناتك بتنسيق قابل للقراءة الآلية",
+      "li5": "<b>تقييد المعالجة</b> — تقييد كيفية معالجة بياناتك",
+      "li6": "<b>الاعتراض</b> — الاعتراض على المعالجة القائمة على المصلحة المشروعة"
+    },
+    "iosNote": {
+      "heading": "مستخدمو تطبيق iOS",
+      "p1": "يتم تخزين بيانات تطبيق LumenLingo بالكامل على جهازك وفي حساب iCloud الشخصي الخاص بك. لديك وصول مباشر إلى جميع بياناتك عبر التطبيق. يمكنك أيضًا تصدير بياناتك بتنسيق JSON من الإعدادات.",
+      "p2": "النموذج أدناه مخصص بشكل أساسي لبيانات الموقع الإلكتروني (النشرة الإخبارية، قائمة الانتظار، التحليلات) أو إذا كنت بحاجة إلى مساعدة بخصوص بيانات تطبيق iOS."
+    },
+    "form": {
+      "heading": "تقديم طلب",
+      "nameLabel": "الاسم الكامل",
+      "namePlaceholder": "اسمك الكامل",
+      "emailLabel": "عنوان البريد الإلكتروني",
+      "emailPlaceholder": "عنوان البريد الإلكتروني المرتبط ببياناتك",
+      "requestTypeLabel": "نوع الطلب",
+      "requestTypePlaceholder": "اختر نوع الطلب",
+      "typeAccess": "وصول — نسخة من بياناتي",
+      "typeRectification": "تصحيح — تصحيح بياناتي",
+      "typeErasure": "محو — حذف بياناتي",
+      "typePortability": "قابلية النقل — تصدير بياناتي",
+      "typeRestriction": "تقييد — تقييد المعالجة",
+      "typeObjection": "اعتراض — إيقاف المعالجة",
+      "detailsLabel": "التفاصيل",
+      "detailsPlaceholder": "صف طلبك بالتفصيل. يرجى تضمين أي بيانات أو حسابات محددة تشير إليها.",
+      "submitButton": "تقديم الطلب",
+      "submitting": "جارٍ الإرسال…",
+      "requiredField": "هذا الحقل مطلوب",
+      "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صالح"
+    },
+    "success": {
+      "heading": "تم تقديم الطلب",
+      "p1": "شكرًا لك. تم استلام طلب البيانات الخاص بك. سنؤكد استلام طلبك خلال 72 ساعة ونرد بالكامل خلال 30 يومًا تقويميًا.",
+      "p2": "إذا احتجنا إلى التحقق من هويتك قبل معالجة طلبك، سنتواصل معك على عنوان البريد الإلكتروني المقدم.",
+      "reference": "يرجى الاحتفاظ بهذه الصفحة مفتوحة أو تسجيل تاريخ التقديم لسجلاتك."
+    },
+    "process": {
+      "heading": "ما يحدث بعد ذلك",
+      "step1Title": "التأكيد",
+      "step1Desc": "نؤكد استلام طلبك خلال 72 ساعة.",
+      "step2Title": "التحقق",
+      "step2Desc": "قد نتحقق من هويتك لحماية خصوصيتك.",
+      "step3Title": "المعالجة",
+      "step3Desc": "نعالج طلبك خلال 30 يومًا تقويميًا.",
+      "step4Title": "الرد",
+      "step4Desc": "نرد بالنتيجة والبيانات المطلوبة."
+    },
+    "contact": {
+      "heading": "تفضل البريد الإلكتروني؟",
+      "p1": "يمكنك أيضًا ممارسة حقوقك عن طريق إرسال بريد إلكتروني مباشرة إلى <emailLink>hello@lumenshore.com</emailLink>. يرجى تضمين اسمك وعنوان البريد الإلكتروني المرتبط ببياناتك ونوع الطلب.",
+      "responseTime": "نرد عادةً خلال 48 ساعة."
+    }
+  }
 }

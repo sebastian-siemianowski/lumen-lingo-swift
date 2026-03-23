@@ -34,6 +34,10 @@ struct SettingsView: View {
     @State private var gearRotation: Double = 0
     @State private var glowPulse: CGFloat = 0.4
 
+    // GDPR data export
+    @Environment(\.modelContext) private var modelContext
+    @State private var showGDPRExportSuccess = false
+
     private var availableAppearanceSubTabs: [AppearanceSubTab] {
         AppearanceSubTab.allCases.filter { isDark || $0 != .nebulaDrift }
     }
@@ -83,6 +87,11 @@ struct SettingsView: View {
                         removal: .opacity.combined(with: .offset(x: CGFloat(-tabDirection * 30)))
                     ))
                     .id(activeTab)
+
+                // GDPR data export (free for all tiers)
+                gdprExportSection
+                    .padding(.horizontal, 16)
+                    .padding(.top, 16)
 
                 // Legal links
                 legalLinksSection
@@ -699,6 +708,100 @@ struct SettingsView: View {
         settingsCard(tint: .red.opacity(0.6)) {
             SignOutView()
         }
+    }
+
+    // MARK: - GDPR Data Export
+
+    private var gdprExportSection: some View {
+        settingsCard(tint: .green.opacity(0.4)) {
+            VStack(spacing: 12) {
+                HStack(spacing: 12) {
+                    Image(systemName: "arrow.down.doc.fill")
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundStyle(.green)
+
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(L.gdprExportTitle)
+                            .font(.system(size: 15, weight: .semibold))
+                            .foregroundStyle(isDark ? .white : .primary)
+
+                        Text(L.gdprExportDesc)
+                            .font(.system(size: 12))
+                            .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                            .lineLimit(3)
+                    }
+
+                    Spacer()
+                }
+                .padding(.horizontal, 16)
+                .padding(.top, 14)
+
+                Button {
+                    exportGDPRData()
+                } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: showGDPRExportSuccess ? "checkmark.circle.fill" : "square.and.arrow.up")
+                            .font(.system(size: 14, weight: .semibold))
+                        Text(showGDPRExportSuccess ? L.gdprExportSuccess : L.gdprExportButton)
+                            .font(.system(size: 14, weight: .semibold))
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 12)
+                    .background(
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(showGDPRExportSuccess ? .green.opacity(0.2) : (isDark ? .white.opacity(0.08) : .black.opacity(0.05)))
+                    )
+                    .foregroundStyle(showGDPRExportSuccess ? .green : (isDark ? .white.opacity(0.8) : .primary))
+                }
+                .buttonStyle(.plain)
+                .disabled(showGDPRExportSuccess)
+                .padding(.horizontal, 16)
+                .padding(.bottom, 14)
+            }
+        }
+    }
+
+    private func exportGDPRData() {
+        let data = GDPRDataExporter.exportAllData(context: modelContext)
+        guard !data.isEmpty else { return }
+
+        let tempDir = FileManager.default.temporaryDirectory
+        let fileURL = tempDir.appendingPathComponent("LumenLingo-PersonalData.json")
+
+        do {
+            try data.write(to: fileURL, options: .atomic)
+        } catch {
+            return
+        }
+
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let rootVC = windowScene.windows.first?.rootViewController else { return }
+
+        var topVC = rootVC
+        while let presented = topVC.presentedViewController {
+            topVC = presented
+        }
+
+        let activityVC = UIActivityViewController(activityItems: [fileURL], applicationActivities: nil)
+        activityVC.completionWithItemsHandler = { _, completed, _, _ in
+            try? FileManager.default.removeItem(at: fileURL)
+            if completed {
+                withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
+                    showGDPRExportSuccess = true
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    withAnimation { showGDPRExportSuccess = false }
+                }
+            }
+        }
+
+        if let popover = activityVC.popoverPresentationController {
+            popover.sourceView = topVC.view
+            popover.sourceRect = CGRect(x: topVC.view.bounds.midX, y: topVC.view.bounds.midY, width: 0, height: 0)
+            popover.permittedArrowDirections = []
+        }
+
+        topVC.present(activityVC, animated: true)
     }
 
     // MARK: - App Info Footer

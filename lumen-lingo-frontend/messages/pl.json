@@ -410,7 +410,8 @@
       "accessibility": "Dostępność",
       "cookiePolicy": "Polityka plików cookie",
       "cookieSettings": "Ustawienia plików cookie",
-      "eula": "EULA"
+      "eula": "EULA",
+      "dataRequest": "Wniosek o dane"
     },
     "newsletter": {
       "heading": "Bądź na bieżąco",
@@ -583,7 +584,9 @@
       "appLi1": "<b>Delete account</b> — use the in-app Settings → Sign Out → Delete Account to permanently erase all learning data, progress, preferences, and iCloud sync data. This action cannot be undone.",
       "appLi2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
       "appLi3": "<b>iCloud data</b> — you can manage iCloud storage through your device’s Settings → Apple ID → iCloud → Manage Storage.",
-      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation."
+      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation.",
+      "websiteLi5": "<b>Rejestry zgód</b> — przechowywane przez 3 lata od ostatniej interakcji, zgodnie z wymogami rozliczalności RODO.",
+      "websiteLi6": "<b>Rejestry żądań danych</b> — przechowywane przez 3 lata od zakończenia, zgodnie z wymogami rozliczalności RODO."
     },
     "yourRights": {
       "heading": "Your Rights",
@@ -592,7 +595,7 @@
       "gdprLi1": "Right to access your data — app data is on your device and iCloud; for website data, contact us.",
       "gdprLi2": "Right to rectification — edit app preferences directly; for website data, contact us.",
       "gdprLi3": "Right to erasure — use the in-app Delete Account feature, delete the app, or contact us to remove your email from our lists.",
-      "gdprLi4": "Right to data portability — your app data is stored in standard formats in iCloud. Contact us for website data export.",
+      "gdprLi4": "Prawo do przenoszenia danych — eksportuj wszystkie swoje dane osobowe jako bezpłatny plik JSON z Ustawienia → Eksportuj moje dane w aplikacji iOS. Twoje dane są zawsze przechowywane w standardowych formatach. Skontaktuj się z nami w sprawie eksportu danych ze strony internetowej.",
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
@@ -601,7 +604,7 @@
       "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
       "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
       "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
-      "exerciseRights": "To exercise any of these rights, email us at hello@lumenshore.com. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
+      "exerciseRights": "Aby skorzystać z któregokolwiek z tych praw, wyślij nam e-mail na adres hello@lumenshore.com lub prześlij wniosek za pośrednictwem naszej strony <dataRequestLink>Wniosek o dane</dataRequestLink>. Odpowiemy w ciągu 30 dni (lub wcześniej, jeśli wymaga tego prawo). Przed przetworzeniem niektórych wniosków może być konieczna weryfikacja Twojej tożsamości."
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -1109,5 +1112,73 @@
     },
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
   },
-  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+  "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+  "DataRequest": {
+    "meta": {
+      "title": "Wniosek o dane — LumenLingo",
+      "description": "Złóż wniosek o dostęp do danych (DSAR), aby skorzystać z praw do prywatności wynikających z RODO, brytyjskiego RODO lub CCPA.",
+      "ogTitle": "Wniosek o dane — LumenLingo",
+      "ogDescription": "Skorzystaj ze swoich praw do prywatności. Zażądaj dostępu, sprostowania lub usunięcia swoich danych osobowych."
+    },
+    "heading": "Wniosek o dane",
+    "subtitle": "Skorzystaj ze swoich praw do prywatności, składając wniosek o dostęp do danych (DSAR). Traktujemy Twoje prawa poważnie i odpowiemy w ciągu 30 dni.",
+    "overview": {
+      "heading": "Twoje prawa",
+      "p1": "Zgodnie z RODO, brytyjskim RODO i amerykańskimi przepisami o prywatności (CCPA/CPRA) przysługują Ci następujące prawa:",
+      "li1": "<b>Dostęp</b> — otrzymanie kopii danych osobowych, które przechowujemy na Twój temat",
+      "li2": "<b>Sprostowanie</b> — poprawienie niedokładnych danych osobowych",
+      "li3": "<b>Usunięcie</b> — żądanie usunięcia Twoich danych osobowych",
+      "li4": "<b>Przenoszenie danych</b> — otrzymanie danych w formacie nadającym się do odczytu maszynowego",
+      "li5": "<b>Ograniczenie przetwarzania</b> — ograniczenie sposobu przetwarzania Twoich danych",
+      "li6": "<b>Sprzeciw</b> — sprzeciw wobec przetwarzania opartego na prawnie uzasadnionym interesie"
+    },
+    "iosNote": {
+      "heading": "Użytkownicy aplikacji iOS",
+      "p1": "Dane Twojej aplikacji LumenLingo są przechowywane wyłącznie na Twoim urządzeniu i w Twoim osobistym koncie iCloud. Masz bezpośredni dostęp do wszystkich swoich danych poprzez aplikację. Możesz również eksportować dane w formacie JSON z poziomu Ustawień.",
+      "p2": "Poniższy formularz dotyczy głównie danych ze strony internetowej (newsletter, lista oczekujących, analityka) lub jeśli potrzebujesz pomocy z danymi aplikacji iOS."
+    },
+    "form": {
+      "heading": "Złóż wniosek",
+      "nameLabel": "Imię i nazwisko",
+      "namePlaceholder": "Twoje pełne imię i nazwisko",
+      "emailLabel": "Adres e-mail",
+      "emailPlaceholder": "Adres e-mail powiązany z Twoimi danymi",
+      "requestTypeLabel": "Typ wniosku",
+      "requestTypePlaceholder": "Wybierz typ wniosku",
+      "typeAccess": "Dostęp — kopia moich danych",
+      "typeRectification": "Sprostowanie — poprawienie moich danych",
+      "typeErasure": "Usunięcie — usunięcie moich danych",
+      "typePortability": "Przenoszenie — eksport moich danych",
+      "typeRestriction": "Ograniczenie — ograniczenie przetwarzania",
+      "typeObjection": "Sprzeciw — wstrzymanie przetwarzania",
+      "detailsLabel": "Szczegóły",
+      "detailsPlaceholder": "Opisz swój wniosek szczegółowo. Uwzględnij wszelkie konkretne dane lub konta, których dotyczy wniosek.",
+      "submitButton": "Złóż wniosek",
+      "submitting": "Wysyłanie…",
+      "requiredField": "To pole jest wymagane",
+      "invalidEmail": "Podaj prawidłowy adres e-mail"
+    },
+    "success": {
+      "heading": "Wniosek złożony",
+      "p1": "Dziękujemy. Twój wniosek o dane został odebrany. Potwierdzimy jego przyjęcie w ciągu 72 godzin i udzielimy pełnej odpowiedzi w ciągu 30 dni kalendarzowych.",
+      "p2": "Jeśli będziemy musieli zweryfikować Twoją tożsamość przed przetworzeniem wniosku, skontaktujemy się z Tobą pod podanym adresem e-mail.",
+      "reference": "Pozostaw tę stronę otwartą lub zanotuj datę złożenia wniosku dla swoich zapisów."
+    },
+    "process": {
+      "heading": "Co dzieje się dalej",
+      "step1Title": "Potwierdzenie",
+      "step1Desc": "Potwierdzamy przyjęcie wniosku w ciągu 72 godzin.",
+      "step2Title": "Weryfikacja",
+      "step2Desc": "Możemy zweryfikować Twoją tożsamość w celu ochrony prywatności.",
+      "step3Title": "Przetwarzanie",
+      "step3Desc": "Przetwarzamy Twój wniosek w ciągu 30 dni kalendarzowych.",
+      "step4Title": "Odpowiedź",
+      "step4Desc": "Odpowiadamy z wynikiem i żądanymi danymi."
+    },
+    "contact": {
+      "heading": "Wolisz e-mail?",
+      "p1": "Możesz również skorzystać ze swoich praw, wysyłając e-mail bezpośrednio na adres <emailLink>hello@lumenshore.com</emailLink>. Podaj swoje imię i nazwisko, adres e-mail powiązany z danymi oraz typ wniosku.",
+      "responseTime": "Zwykle odpowiadamy w ciągu 48 godzin."
+    }
+  }
 }
