@@ -679,6 +679,58 @@
 
 ---
 
+### Story 4.7: Privacy by Design & Default Documentation (GDPR Article 25)
+
+**As a** data controller
+**I want** documented evidence that data protection is built into system design and that privacy-protective defaults are applied
+**So that** Lumenshore demonstrates compliance with GDPR Article 25 ("data protection by design and by default") and can satisfy ICO / DPA audits
+
+#### Subtasks:
+- [ ] 4.7.1 — Document current "by design" measures already in place:
+  - iOS app: all data stored on-device via SwiftData (no server-side database)
+  - iOS app: zero external SDKs, zero telemetry, zero ad networks
+  - iOS app: iCloud KVS sync is Apple-managed with end-to-end encryption in transit
+  - Website: cookie-free Vercel Analytics (no PII), Sentry replay disabled until consent
+  - Website: input validation (Zod) on all API routes, rate limiting, no user database
+  - Authentication currently mock — no real PII stored server-side
+- [ ] 4.7.2 — Document current "by default" privacy settings:
+  - Default: no tracking, no analytics collection, no session replay
+  - Default: Sentry session replay rate = 0% unless user consents (per Story 2.3)
+  - Default: newsletter/waitlist = explicit opt-in only (no pre-ticked boxes)
+  - Default: iCloud sync = on (but no sensitive PII; learning progress only)
+  - Default: no account required to use Free tier (data minimisation)
+- [ ] 4.7.3 — Create "Privacy by Design Checklist" for new features:
+  - Data minimisation: does the feature collect only what is strictly necessary?
+  - Purpose limitation: is data used only for the stated purpose?
+  - Storage limitation: is there a defined retention period?
+  - Default settings: are the most privacy-protective settings the default?
+  - Pseudonymisation / anonymisation: can data be de-identified?
+  - Access control: who can access the data? Is it least-privilege?
+  - Encryption: is data encrypted at rest and in transit?
+  - Delete-ability: can the data be fully deleted on user request?
+- [ ] 4.7.4 — Integrate privacy-by-design checklist into feature development workflow:
+  - Require completion before any feature touching personal data is merged
+  - Store completed checklists as internal compliance artefacts
+  - Cross-reference with Story 15.3 (Feature-Level Legal Impact Assessment)
+- [ ] 4.7.5 — Demonstrate pseudonymisation where practical:
+  - If backend is implemented: use opaque user IDs (UUIDs), not email addresses, as primary keys
+  - Hash or anonymise IP addresses in logs after rate-limiting check
+  - Sentry: ensure `maskAllText` and `blockAllMedia` are defaults (Story 2.3.5)
+- [ ] 4.7.6 — Annual review of privacy-by-design posture:
+  - Re-assess when new features, SDKs, or sub-processors are added
+  - Update documentation to reflect current state
+  - Align with DPIA updates (Story 4.6)
+
+**Acceptance Criteria**:
+- Existing privacy-by-design measures documented and evidenced
+- Default privacy settings documented as privacy-protective
+- Privacy-by-design checklist created and integrated into dev workflow
+- Pseudonymisation measures documented
+- Annual review cadence established
+- Available for ICO / DPA inspection on request
+
+---
+
 ## Epic 5: CCPA / US State Privacy Laws Compliance
 
 **Priority**: P1 — High
@@ -766,6 +818,49 @@
 - Age gate implemented at registration point
 - Children's privacy addressed in Privacy Policy
 - App Store age rating set accurately
+
+### Story 5.4: Global Privacy Control (GPC) & Do-Not-Track Signal Compliance
+
+**As a** privacy-conscious user sending GPC or DNT signals
+**I want** the website to detect and honour my browser's privacy signals
+**So that** my opt-out preference is respected without requiring manual action (required by CCPA/CPRA § 1798.135(e))
+
+#### Subtasks:
+- [ ] 5.4.1 — Detect Global Privacy Control (GPC) header (`Sec-GPC: 1`) on all website requests:
+  - GPC spec: https://globalprivacycontrol.github.io/gpc-spec/
+  - Check `navigator.globalPrivacyControl` in client JS AND `Sec-GPC` HTTP header on server
+  - California CPRA **requires** honouring GPC as a valid opt-out of sale/sharing signal
+  - Colorado CPA (effective Jul 2024) also requires honouring universal opt-out signals including GPC
+- [ ] 5.4.2 — When GPC detected, automatically:
+  - Suppress Sentry session replay (treat as "Session Replay" consent denied)
+  - Suppress non-essential Vercel `track()` analytics events
+  - Do NOT send user's data to any third party for non-essential purposes
+  - Store GPC-detected opt-out state in `localStorage` alongside manual cookie consent (GPC overrides any prior "Accept All")
+- [ ] 5.4.3 — Do-Not-Track (DNT) header handling:
+  - DNT (`DNT: 1`) is deprecated by W3C but still sent by some browsers
+  - Decision: treat DNT the same as GPC for consistency (best practice, not legally required)
+  - Document this decision in Cookie Policy
+- [ ] 5.4.4 — Privacy Policy disclosure:
+  - Add to Privacy Policy: "We honour the Global Privacy Control (GPC) signal. When detected, we treat it as a valid opt-out request"
+  - Add to CCPA section: "California residents may use the Global Privacy Control browser setting to opt out of the sale or sharing of personal information"
+  - Add to Cookie Policy: "If your browser sends a GPC signal, non-essential tracking will be automatically disabled"
+- [ ] 5.4.5 — Interaction with cookie consent banner:
+  - If GPC detected AND user has not interacted with consent banner → treat as "Reject All" for non-essential categories
+  - If GPC detected AND user previously clicked "Accept All" → GPC overrides (CPRA requires this)
+  - If user subsequently clicks "Accept All" after GPC is active → show notice that GPC is overriding their choice and provide instructions to disable GPC if they wish to opt back in
+- [ ] 5.4.6 — Testing & verification:
+  - Test with GPC-enabled browsers (Firefox, Brave, DuckDuckGo browser, Chrome with GPC extension)
+  - Verify Sentry replay disabled when GPC active
+  - Verify analytics events suppressed when GPC active
+  - Add automated E2E test for GPC detection
+
+**Acceptance Criteria**:
+- GPC signal detected and honoured on all website pages
+- Non-essential tracking automatically suppressed when GPC active
+- Privacy Policy and Cookie Policy disclose GPC handling
+- CCPA/CPRA legal obligation met
+- GPC overrides prior "Accept All" consent (per CPRA requirement)
+- Automated tests verify GPC behaviour
 
 ---
 
@@ -879,6 +974,48 @@
 - iOS app VoiceOver compatibility verified
 - Accessibility Statement accurate and current
 - Regular audit schedule established
+
+### Story 6.5: UK Online Safety Act 2023 Assessment
+
+**As a** UK company operating an online service
+**I want** a documented assessment of the Online Safety Act 2023 (OSA) and its applicability to LumenLingo
+**So that** Lumenshore understands its obligations and avoids Ofcom enforcement action
+
+#### Subtasks:
+- [ ] 6.5.1 — Scope assessment — does the OSA apply to LumenLingo?
+  - OSA applies to "user-to-user services" (platforms with user-generated content) and "search services"
+  - **Current state**: LumenLingo has NO user-generated content, NO comments, NO forums, NO messaging, NO search engine
+  - LumenLingo is a content-publisher service (flashcards, blog) — NOT a user-to-user service
+  - **Conclusion**: likely OUT OF SCOPE for the user-to-user and search service duties
+  - However: if UGC features (comments, forums, shared decks) are added in future → OSA will apply
+- [ ] 6.5.2 — Blog comment risk (future):
+  - If blog comments are ever enabled: LumenLingo becomes a user-to-user service under OSA
+  - Duties triggered: illegal content risk assessment, safety duties, content reporting mechanisms, complaints procedures, record-keeping
+  - Category 2B service duties (small platforms): transparency reporting, complaints procedure, terms of service
+- [ ] 6.5.3 — Children's safety duties:
+  - OSA imposes enhanced duties for services "likely to be accessed by children"
+  - Language learning app = likely accessed by children under 18
+  - Even without UGC: if future social features are added, children's risk assessment mandatory
+  - Cross-reference with Story 19.2 (Children's Privacy Enhanced Protections) and UK Children's Code (19.2.4)
+- [ ] 6.5.4 — Fraudulent advertising duty:
+  - OSA requires certain services to take measures against fraudulent advertising
+  - Likely N/A for LumenLingo (no third-party advertising on the platform)
+  - Document assessment
+- [ ] 6.5.5 — Document compliance posture and triggers:
+  - Create a trigger document: "If LumenLingo adds [feature X], the following OSA duties are activated"
+  - Features that trigger OSA: user comments, forums, messaging, shared decks, user profiles visible to others, community features
+  - Store alongside feature legal impact assessment template (Story 15.3)
+- [ ] 6.5.6 — Monitor Ofcom codes of practice:
+  - Ofcom is publishing OSA codes of practice on a rolling basis (illegal content codes published late 2024, children's safety codes in 2025)
+  - Subscribe to Ofcom updates
+  - If any code applies to LumenLingo's feature set: create compliance stories as needed
+
+**Acceptance Criteria**:
+- OSA applicability assessed and documented (currently out of scope)
+- Trigger features identified that would bring LumenLingo into OSA scope
+- Children's safety duty risk noted for future social features
+- Ofcom codes of practice monitoring established
+- Assessment stored as internal compliance artefact
 
 ---
 
@@ -1550,6 +1687,56 @@
 - Security page accessible
 - Reporting process clear
 - Monitoring in place
+
+### Story 12.4: Sub-Processor DPA Execution & Management
+
+**As a** data controller using third-party services that process personal data
+**I want** executed Data Processing Agreements (DPAs) with every sub-processor
+**So that** Lumenshore meets GDPR Article 28 obligations and can demonstrate lawful data processing chains to supervisory authorities
+
+#### Subtasks:
+- [ ] 12.4.1 — Inventory all current sub-processors that process personal data:
+  - **Vercel** — website hosting, analytics, speed insights (anonymous page views, error data)
+  - **Sentry** — error monitoring, session replay (user interaction data, error stack traces, device metadata)
+  - **Apple** — iCloud KVS sync, App Store (purchase data, Apple ID), CloudKit (if enabled)
+  - **Future ESP** (e.g., Resend, SendGrid, Mailchimp) — email addresses, marketing consent data
+  - **Future payment processor** (if non-IAP revenue) — payment data
+- [ ] 12.4.2 — Execute DPA with Vercel:
+  - Vercel offers a standard DPA: https://vercel.com/legal/dpa
+  - Accept or countersign Vercel's DPA
+  - Verify: data processing location, sub-processor list, security measures, SCCs for international transfers
+  - Store executed copy internally
+- [ ] 12.4.3 — Execute DPA with Sentry:
+  - Sentry offers a standard DPA: https://sentry.io/legal/dpa/
+  - Accept or countersign Sentry's DPA
+  - Verify: data retention periods, data deletion on request, SCCs/UK Addendum, sub-processor notification mechanism
+  - Store executed copy internally
+- [ ] 12.4.4 — Apple data processing arrangements:
+  - Apple's Developer Program License Agreement contains data processing provisions
+  - Apple acts as data processor for iCloud/CloudKit data
+  - Apple acts as independent controller (not processor) for App Store purchase data
+  - Document Apple's dual role and the applicable agreements (DPLA, Apple Media Services ToS)
+  - Note: Apple does not typically execute custom DPAs — their standard agreements contain GDPR provisions
+- [ ] 12.4.5 — DPA register and renewal tracking:
+  - Maintain internal register of all executed DPAs: sub-processor name, DPA version, execution date, review date, data processed, processing location
+  - Set calendar reminders to review DPAs annually or when sub-processor updates their terms
+  - Track sub-processor list changes (most DPAs include sub-processor change notification)
+- [ ] 12.4.6 — Sub-processor change management:
+  - Define internal process for when a sub-processor notifies of changes (new sub-sub-processors, location changes)
+  - Assess impact on Lumenshore's ROPA and privacy policy
+  - Update sub-processor table in Privacy Policy (Story 1.2) when changes occur
+- [ ] 12.4.7 — DPA for future sub-processors:
+  - Before engaging any new service that processes personal data: execute DPA BEFORE sharing any data
+  - Add DPA requirement to vendor onboarding checklist
+  - Verify GDPR compliance, security certifications (SOC 2, ISO 27001), and data processing locations
+
+**Acceptance Criteria**:
+- DPAs executed or documented with all current sub-processors (Vercel, Sentry, Apple)
+- DPA register maintained with execution dates and review dates
+- Sub-processor change management process defined
+- Future vendor onboarding includes mandatory DPA execution
+- Available for ICO / DPA inspection
+- Cross-referenced with Privacy Policy sub-processor table (Story 1.2)
 
 ---
 
@@ -3028,6 +3215,62 @@
 - Children's data age threshold (18) noted
 - Cross-border transfer mechanism confirmed (not blacklisted)
 
+### Story 18.14: Switzerland — Federal Act on Data Protection (nFADP / DSG)
+
+**As a** service serving German- and French-speaking Swiss users (de and fr locales, EN↔DE + EN↔FR language pairs)
+**I want** compliance with Switzerland's revised Federal Act on Data Protection (nFADP, in force since 1 September 2023)
+**So that** Swiss users' data rights are respected and Lumenshore avoids FDPIC enforcement
+
+#### Subtasks:
+- [ ] 18.14.1 — nFADP applicability assessment:
+  - The revised nFADP (Bundesgesetz über den Datenschutz / Loi fédérale sur la protection des données) entered force 1 Sep 2023
+  - Applies to private persons and federal bodies processing personal data of individuals in Switzerland
+  - Extraterritorial scope: applies to foreign controllers if processing produces effects in Switzerland
+  - German (de) and French (fr) locales + DE/FR language pairs = deliberately targeting Swiss users
+  - Newsletter/waitlist signups from Switzerland = collecting personal data of Swiss individuals
+- [ ] 18.14.2 — Key nFADP obligations:
+  - **Information duty** (Art. 19-21): must inform data subjects about identity of controller, purpose, recipients, cross-border transfers, retention periods, data subject rights — very similar to GDPR but with Swiss-specific nuances
+  - **Consent** (Art. 6): consent must be informed, voluntary, and given for specific processing; silence does NOT constitute consent; consent for sensitive data must be explicit
+  - **Cross-border transfers** (Art. 16-17): transfer only to countries with adequate protection per FDPIC list, OR with appropriate safeguards (SCCs, BCRs, or consent)
+  - **Data breach notification** (Art. 24): notify FDPIC "as soon as possible" for breaches likely to result in high risk (no fixed 72-hour window like GDPR, but promptly)
+  - **DPIA** (Art. 22): required when processing entails high risk to personality or fundamental rights
+  - **Record of processing activities** (Art. 12): mandatory (exemption for SMEs with < 250 employees when low-risk processing — assess applicability)
+- [ ] 18.14.3 — Data subject rights under nFADP:
+  - Right of access (Art. 25-27): must provide information within 30 days, free of charge
+  - Right to data portability (Art. 28-29): provide data in common electronic format
+  - Right to rectification (Art. 32(1))
+  - Right to deletion / destruction (Art. 32(2)(c))
+  - Right to object to processing
+  - Note: nFADP does NOT have a "right to restrict processing" like GDPR — Swiss law has its own remedies
+- [ ] 18.14.4 — Swiss representative appointment (Art. 14-15):
+  - If controller is outside Switzerland but regularly processes personal data of Swiss residents on a large scale, AND processing creates a high risk → must designate a representative in Switzerland
+  - Assess whether Lumenshore meets the "large scale" and "high risk" thresholds (likely not at current scale)
+  - If required: appoint a representative and publish their details in the privacy policy
+  - Note: even if not required, recommended to list Swiss-accessible contact details
+- [ ] 18.14.5 — Cross-border transfer mechanism (UK → Switzerland):
+  - Switzerland is on the FDPIC's list of countries with adequate protection (mutual adequacy with EU)
+  - UK has EU adequacy decision — assess whether Swiss FDPIC recognises UK adequacy (yes, per FDPIC guidance)
+  - For transfers to US (Vercel, Sentry): must rely on new Swiss-US Data Privacy Framework, SCCs with Swiss addendum, or consent
+  - Document transfer mechanism for each sub-processor
+- [ ] 18.14.6 — Privacy policy Swiss-specific additions:
+  - Add reference to nFADP alongside GDPR in privacy policy
+  - State FDPIC complaint right: "Swiss residents may lodge a complaint with the Federal Data Protection and Information Commissioner (FDPIC)"
+  - FDPIC contact: https://www.edoeb.admin.ch/
+  - If Swiss representative appointed: publish representative details
+- [ ] 18.14.7 — Criminal penalties awareness:
+  - nFADP uniquely imposes **criminal fines on individuals** (not just companies) — up to CHF 250,000 for intentional breaches of information duty, cross-border transfer rules, or DPO/representative requirements
+  - Directors and data protection officers are personally liable
+  - This is significantly different from GDPR which fines companies only
+  - Ensure director awareness and compliance training
+
+**Acceptance Criteria**:
+- nFADP applicability confirmed and documented
+- Privacy policy includes Swiss-specific disclosures (FDPIC complaint right, nFADP reference)
+- Cross-border transfer mechanisms documented for Swiss data flows
+- Swiss representative assessment completed
+- Criminal penalty risk communicated to director(s)
+- Data subject rights process covers nFADP-specific requirements
+
 ---
 
 ## Epic 19: Age of Digital Consent — Multi-Jurisdiction Compliance
@@ -3624,8 +3867,8 @@
 | Metric | Count |
 |---|---|
 | **Epics** | 24 |
-| **Stories** | 103 |
-| **Subtasks** | 577 |
+| **Stories** | 108 |
+| **Subtasks** | 609 |
 | **P0 (Critical)** | 10 epics |
 | **P1 (High)** | 11 epics |
 | **P2 (Medium)** | 3 epics |
@@ -3702,6 +3945,7 @@ en, es, fr, de, ja, zh, ar, pl, uk, pt
 | **EU** | EU Omnibus Directive (pricing) | Epic 20 |
 | **UK** | UK GDPR / DPA 2018 | Epics 4, 6 |
 | **UK** | PECR | Epics 2, 6, 13 |
+| **UK** | Online Safety Act 2023 | Epic 6 |
 | **UK** | Consumer Rights Act 2015 | Epic 6 |
 | **UK** | Consumer Contracts Regs 2013 | Epic 9 |
 | **UK** | Equality Act 2010 | Epic 6 |
@@ -3709,7 +3953,8 @@ en, es, fr, de, ja, zh, ar, pl, uk, pt
 | **UK** | VAT Act 1994 / MTD | Epic 20 |
 | **UK** | Children's Code (ICO) | Epic 19 |
 | **UK** | Sanctions Act 2018 | Epic 21 |
-| **US** | CCPA / CPRA (California) | Epic 5 |
+| **US** | CCPA / CPRA (California) | Epics 5 |
+| **US** | Global Privacy Control (GPC) | Epic 5 |
 | **US** | COPPA (Children) | Epic 5 |
 | **US** | CAN-SPAM Act | Epic 13 |
 | **US** | State privacy laws (VA, CO, CT+) | Epic 5 |
@@ -3737,10 +3982,13 @@ en, es, fr, de, ja, zh, ar, pl, uk, pt
 | **Australia** | Australian Consumer Law | Epic 18 |
 | **India** | DPDPA 2023 | Epic 18 |
 | **South Korea** | PIPA | Epic 18 |
+| **Switzerland** | nFADP (DSG) | Epic 18 |
 | **Apple** | App Store Review Guidelines | Epics 3, 9, 11 |
 | **Apple** | HIG / Accessibility | Epics 6, 22 |
 | **Global** | WCAG 2.1 AA / EN 301 549 | Epic 22 |
 | **Global** | DMCA / Copyright | Epic 8 |
+| **Global** | GDPR Art. 25 (Privacy by Design) | Epic 4 |
+| **Global** | GDPR Art. 28 (Sub-Processor DPAs) | Epic 12 |
 | **Global** | Arbitration / Class Action Waiver | Epic 14 |
 | **Global** | Limitation of Liability | Epic 14 |
 | **Global** | Refund & Cancellation | Epic 14 |

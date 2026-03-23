@@ -1984,24 +1984,24 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] All 14 English blog posts translated to Japanese (14 new)
-- [ ] All 14 English blog posts translated to Portuguese (14 new)
-- [ ] All 14 English blog posts translated to Chinese — Simplified (14 new)
-- [ ] Translated posts placed in `src/content/blog/{locale}/` following the same structure as Tier 1
-- [ ] Frontmatter translated; same rules as Story 15.5
-- [ ] CJK blog posts render correctly with proper typography (Story 15.4 dependency)
-- [ ] Blog search/filter works correctly with CJK characters
-- [ ] Reading time calculation accounts for CJK character density (~500 chars/min vs ~200 words/min for Latin)
+- [x] All 14 English blog posts translated to Japanese (14 new)
+- [x] All 14 English blog posts translated to Portuguese (14 new)
+- [x] All 14 English blog posts translated to Chinese — Simplified (14 new)
+- [x] Translated posts placed in `src/content/blog/{locale}/` following the same structure as Tier 1
+- [x] Frontmatter translated; same rules as Story 15.5
+- [x] CJK blog posts render correctly with proper typography (Story 15.4 dependency)
+- [x] Blog search/filter works correctly with CJK characters
+- [x] Reading time calculation accounts for CJK character density (~500 chars/min vs ~200 words/min for Latin)
 
 ### Subtasks
 
-- [ ] 15.6.1 — Create `src/content/blog/ja/` — translate all 14 English posts to Japanese
-- [ ] 15.6.2 — Create `src/content/blog/pt/` — translate all 14 English posts to Portuguese
-- [ ] 15.6.3 — Create `src/content/blog/zh/` — translate all 14 English posts to Chinese (Simplified)
-- [ ] 15.6.4 — Translate frontmatter (`title`, `description`) for all JA, PT, ZH posts
-- [ ] 15.6.5 — Update `readingTime` calculation in `src/lib/blog.ts` to use CJK character count for JA and ZH locales
-- [ ] 15.6.6 — Verify blog index, category, tag, and individual post pages render correctly for JA, PT, ZH
-- [ ] 15.6.7 — Add translated blog category display names to JA, PT, ZH message files
+- [x] 15.6.1 — Create `src/content/blog/ja/` — translate all 14 English posts to Japanese
+- [x] 15.6.2 — Create `src/content/blog/pt/` — translate all 14 English posts to Portuguese
+- [x] 15.6.3 — Create `src/content/blog/zh/` — translate all 14 English posts to Chinese (Simplified)
+- [x] 15.6.4 — Translate frontmatter (`title`, `description`) for all JA, PT, ZH posts
+- [x] 15.6.5 — Update `readingTime` calculation in `src/lib/blog.ts` to use CJK character count for JA and ZH locales
+- [x] 15.6.6 — Verify blog index, category, tag, and individual post pages render correctly for JA, PT, ZH
+- [x] 15.6.7 — Add translated blog category display names to JA, PT, ZH message files
 
 ---
 
