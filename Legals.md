@@ -382,6 +382,121 @@
 - All failures resolved before submission
 - App Review notes prepared
 
+### Story 3.6: Apple Privacy Manifest (PrivacyInfo.xcprivacy)
+
+**As a** developer submitting to the App Store
+**I want** a complete and accurate Privacy Manifest file
+**So that** the app passes Apple's automated privacy checks and is not rejected (required since Spring 2024)
+
+#### Subtasks:
+- [ ] 3.6.1 — Create PrivacyInfo.xcprivacy file in the app target:
+  - NSPrivacyTracking = NO (app does not track users per ATT definition)
+  - NSPrivacyTrackingDomains = [] (empty — no tracking domains)
+- [ ] 3.6.2 — Declare Required Reason APIs (NSPrivacyAccessedAPITypes):
+  - **UserDefaults** (NSPrivacyAccessedAPICategoryUserDefaults): Reason CA92.1 — "Access info from same app, per App Group"
+  - **File timestamp APIs** (NSPrivacyAccessedAPICategoryFileTimestamp): Audit if used, declare reason if so (e.g., DDA9.1 for displaying file modification dates)
+  - **System boot time / active keyboard APIs**: Audit and declare if used
+  - **Disk space API** (NSPrivacyAccessedAPICategoryDiskSpace): Audit if used
+  - Audit all code paths including SwiftData, iCloud KVS, and URLSession usage
+- [ ] 3.6.3 — Declare collected data types (NSPrivacyCollectedDataTypes):
+  - Map each data category to Apple's taxonomy: Name (if SIWA), Email (if SIWA), User ID, Product Interaction, Other Usage Data, Crash Data, Performance Data
+  - For each: declare purpose (App Functionality, Analytics), linked to user (Yes/No), used for tracking (No)
+  - Must match App Store Connect privacy nutrition labels exactly (Story 3.1)
+- [ ] 3.6.4 — Third-party SDK privacy manifests:
+  - Verify Sentry SDK includes its own PrivacyInfo.xcprivacy (Sentry v8+ includes it)
+  - If any other SDKs are added, verify they ship privacy manifests
+  - Apple rejects apps where SDKs use Required Reason APIs without privacy manifests
+- [ ] 3.6.5 — Generate Privacy Report in Xcode:
+  - Product → Generate Privacy Report to verify all Required Reason APIs are declared
+  - Resolve any undeclared API usage before submission
+- [ ] 3.6.6 — Ongoing maintenance:
+  - Update privacy manifest whenever new APIs or SDKs are added
+  - Re-generate privacy report before each App Store submission
+  - Align any changes with App Store Connect nutrition labels (Story 3.1)
+
+**Acceptance Criteria**:
+- PrivacyInfo.xcprivacy present in app bundle
+- All Required Reason APIs declared with valid reasons
+- Collected data types match App Store Connect labels
+- Xcode Privacy Report shows no undeclared APIs
+- Third-party SDK manifests verified
+
+### Story 3.7: Apple Developer Program License Agreement (DPLA) Compliance
+
+**As a** developer enrolled in the Apple Developer Program
+**I want** documented compliance with all DPLA requirements beyond the App Store Review Guidelines
+**So that** Lumenshore's developer account is not terminated for DPLA violation
+
+#### Subtasks:
+- [ ] 3.7.1 — DPLA Section 3.3.2 compliance (Data Collection & Storage):
+  - "You and Your Application may not collect, use, or disclose user or device data without prior user consent"
+  - Verify all data collection has clear, upfront consent (Privacy Policy + in-app notice)
+  - Ensure no data collection before user has had opportunity to review privacy policy
+  - Never send device-derived data to third parties without user consent
+- [ ] 3.7.2 — DPLA Schedule 2 compliance (Licensed Application EULA):
+  - All 6 Apple Minimum Terms present in EULA (verified in Story 3.2.3)
+  - EULA scope must not exceed what Apple permits for licensed applications
+  - EULA must not conflict with App Store Terms of Service
+- [ ] 3.7.3 — DPLA Schedule 3 compliance (Auto-Renewing Subscriptions):
+  - Subscription terms clearly communicated to user before purchase
+  - User can easily manage/cancel subscription (link to iOS Settings or showManageSubscriptions)
+  - Clear disclosure of: price, billing period, free trial duration and auto-conversion, any introductory offers
+  - Terms available before the paywall AND within the app at all times
+- [ ] 3.7.4 — DPLA Section 3.3.12 compliance (Location data):
+  - Currently N/A — app does not request location
+  - If location ever requested: must have clear purpose string, must not track location covertly
+  - Document that no CLLocationManager usage exists
+- [ ] 3.7.5 — DPLA Section 3.3.9 compliance (Key-Value Storage / iCloud):
+  - iCloud KVS usage must comply with iCloud terms
+  - Do not store more data than Apple's iCloud limits
+  - User data stored in iCloud must be deletable by user (Story 11.2 covers this)
+- [ ] 3.7.6 — Annual DPLA review:
+  - Review updated DPLA at each renewal (annually)
+  - Apple may update DPLA at WWDC — check for changes
+  - Document any new obligations and create stories as needed
+
+**Acceptance Criteria**:
+- All applicable DPLA sections reviewed and documented
+- No DPLA violations identified
+- Schedule 2 & 3 requirements verified
+- Annual review cadence established
+
+### Story 3.8: Apple Trademark & Brand Usage Compliance
+
+**As a** developer referencing Apple products in marketing and legal materials
+**I want** all Apple trademark usage to comply with Apple's trademark guidelines
+**So that** Apple Legal does not flag the app for trademark misuse
+
+#### Subtasks:
+- [ ] 3.8.1 — Audit all Apple trademark references:
+  - Review Terms of Service, Privacy Policy, EULA, website, App Store listing
+  - Common Apple trademarks: Apple, iPhone, iPad, App Store, iCloud, Apple ID, Sign in with Apple, StoreKit, iOS, macOS
+  - Ensure trademarks are used as adjectives, not nouns (e.g., "App Store service" not "the App Store")
+- [ ] 3.8.2 — Apple trademark attribution:
+  - Add trademark attribution where Apple trademarks are used: "Apple, the Apple logo, iPhone, iPad, and App Store are trademarks of Apple Inc., registered in the U.S. and other countries"
+  - Place in Terms of Service footer or Legal Notices section
+  - Place on website footer or legal pages
+- [ ] 3.8.3 — Apple brand guidelines for marketing materials:
+  - Use correct Apple product names (capitalisation, no abbreviations)
+  - Do not use Apple's logo without permission
+  - Do not imply Apple endorsement or partnership
+  - Follow "Promoting Your App on the App Store" guidelines for App Store badges
+  - Use approved "Download on the App Store" badge from Apple's marketing resources
+- [ ] 3.8.4 — App Store listing compliance:
+  - Do not include "Apple" in app name or subtitle
+  - Do not use Apple product images in screenshots unless showing actual app on device
+  - Follow Apple's screenshot guidelines for marketing
+- [ ] 3.8.5 — Legal documents review:
+  - Ensure legal docs say "Apple Inc." (full legal name) when referencing Apple as entity
+  - Never imply Apple is a party to terms with users (Apple is third-party beneficiary only)
+  - Correct usage in liability disclaimers: "Apple Inc. is not responsible for..."
+
+**Acceptance Criteria**:
+- All Apple trademark references audited
+- Trademark attribution added to legal documents
+- Marketing materials follow Apple brand guidelines
+- No Apple trademark misuse in App Store listing
+
 ---
 
 ## Epic 4: GDPR Full Compliance
@@ -1036,6 +1151,76 @@
 - VAT obligations assessed and documented
 - Apple's tax handling role documented
 
+### Story 9.5: Apple Subscription Management & Cancellation Access
+
+**As a** subscriber
+**I want** easy access to manage and cancel my subscription from within the app
+**So that** Apple's subscription UX requirements are met and the app is not rejected
+
+#### Subtasks:
+- [ ] 9.5.1 — Implement showManageSubscriptions() in-app:
+  - Use StoreKit 2 `AppStore.showManageSubscriptions(in:)` to let users manage subscriptions without leaving the app
+  - Place accessible from: Settings screen, Membership/subscription screen, paywall (for existing subscribers)
+  - This is Apple's preferred method over deep-linking to Settings
+- [ ] 9.5.2 — Cancellation instructions in Terms of Service:
+  - "You may cancel your subscription at any time through your Apple ID account settings"
+  - "Go to Settings → [Your Name] → Subscriptions → LumenLingo → Cancel Subscription"
+  - "You may also manage your subscription from within the app via Settings → Membership"
+  - "Cancellation takes effect at the end of the current billing period — you retain access to paid features until then"
+- [ ] 9.5.3 — Cancellation confirmation and offboarding:
+  - After cancellation detected via StoreKit, show clear confirmation of: what features will remain, when paid access expires, what happens to data
+  - Do NOT delete user data on cancellation — only downgrade tier
+  - Offer win-back messaging per Apple's guidelines (non-aggressive)
+- [ ] 9.5.4 — Subscription status transparency:
+  - Display current subscription status in Settings (plan name, renewal date, price)
+  - Show "Expired" or "Grace Period" status when applicable
+  - Use StoreKit `Product.SubscriptionInfo.Status` for real-time status
+- [ ] 9.5.5 — Grace period and billing retry handling:
+  - Enable billing grace period in App Store Connect (Apple recommendation)
+  - During grace period: maintain subscriber access, show subtle notice
+  - After grace period expires: downgrade to Free tier
+
+**Acceptance Criteria**:
+- Users can manage subscriptions directly from in-app UI
+- Cancellation process documented in Terms
+- Subscription status visible to users
+- Grace period handling implemented
+- Meets Apple guideline 3.1.2 requirements
+
+### Story 9.6: Subscription Price Increase Consent Flow
+
+**As a** business that may need to adjust subscription pricing
+**I want** a compliant price increase consent flow
+**So that** price increases comply with Apple's requirements and don't result in involuntary churn or App Store rejection
+
+#### Subtasks:
+- [ ] 9.6.1 — Apple's price increase consent rules (StoreKit 2):
+  - If price increase ≤ 50% AND ≤ $5 equivalent AND within 1 year of last increase: Apple may auto-renew without explicit consent (Apple "price increase notification" — user can opt out)
+  - If price increase > 50% OR > $5 OR multiple increases within 1 year: Apple requires **affirmative user consent** before renewal at new price
+  - If user does not consent within Apple's deadline: subscription auto-cancels at end of current period
+- [ ] 9.6.2 — Implement StoreKit price increase consent sheet:
+  - Listen for `StoreKit.Message` with `.priceIncreaseConsent` reason
+  - Present Apple's consent sheet when triggered
+  - Handle user response (accepted / declined)
+- [ ] 9.6.3 — Pre-increase communication:
+  - Terms of Service clause: "We may change subscription prices from time to time. Price changes for existing subscribers take effect at the start of the next billing period after notice. Apple will notify you of price changes and, where required, obtain your consent before charging the new price"
+  - Send in-app notification or banner before Apple's price increase takes effect (optional but recommended)
+- [ ] 9.6.4 — Declined price increase handling:
+  - If subscriber declines: subscription will not renew at new price
+  - Maintain access until end of current billing period
+  - Offer: downgrade to lower tier, show value proposition to reconsider
+  - Do NOT immediately revoke access — treat as standard cancellation
+- [ ] 9.6.5 — Legal documentation:
+  - Terms of Service section: "Subscription price changes will be communicated via Apple's notification system. Where applicable law requires, you will be asked to consent to the new price. If you do not consent, your subscription will end at the close of your current billing period."
+  - Add price change clause to EU/UK subscription terms (14-day prior notice required under UK Consumer Contracts Regulations for material changes)
+
+**Acceptance Criteria**:
+- Price increase consent sheet implemented via StoreKit
+- Terms of Service cover price change process
+- Declined increase handled gracefully (no abrupt access loss)
+- UK/EU notice requirements met
+- Apple's consent thresholds documented
+
 ---
 
 ## Epic 10: Legal Page Internationalization
@@ -1198,6 +1383,63 @@
 - ATT requirements documented for future implementation
 - No unnecessary ATT prompt in current build
 - Privacy-first analytics strategy documented
+
+### Story 11.4: Sign in with Apple (SIWA) Legal & Technical Compliance
+
+**As a** developer implementing authentication
+**I want** full compliance with Apple's Sign in with Apple Human Interface Guidelines and requirements
+**So that** the app is not rejected when authentication is added and user privacy is fully respected
+
+#### Subtasks:
+- [ ] 11.4.1 — Apple requirement trigger: If ANY third-party sign-in is offered (Google, Facebook, email/password), Sign in with Apple MUST also be offered (Review Guideline 4.8)
+  - SIWA must be presented as an option at least as prominently as other sign-in methods
+  - SIWA button must appear above or at the same level as other sign-in buttons
+  - Document: if app launches with only anonymous / no-auth, SIWA is not required until a third-party login is added
+- [ ] 11.4.2 — SIWA button implementation requirements:
+  - Use Apple's official `SignInWithAppleButton` (ASAuthorizationAppleIDButton) — do NOT create custom buttons
+  - Support both light and dark appearances (match app theme)
+  - Minimum button size per Apple HIG: 140pt wide × 30pt tall
+  - Display correct button style: `.signIn` for first-time, `.continue` for returning users
+- [ ] 11.4.3 — Handle Apple's private email relay:
+  - Users may choose "Hide My Email" — Apple generates a private relay address (@privaterelay.appleid.com)
+  - App MUST accept relay emails and function fully with them
+  - App MUST NOT require a "real" email address
+  - Outbound emails to relay addresses must be sent from a domain registered in Apple Developer portal (Settings → Sign in with Apple → Email Communication)
+  - Register email sending domain: @lumenshore.com → Apple Developer Portal
+- [ ] 11.4.4 — Handle user name data:
+  - Apple provides user's name ONLY on first authentication — it is NOT provided on subsequent sign-ins
+  - MUST capture and store name on first authentication
+  - If user chose to share name: store it; if user declined: do not re-request
+  - Never require name for app functionality
+- [ ] 11.4.5 — Real User Status indicator:
+  - Use `ASAuthorizationAppleIDCredential.realUserStatus` to detect likely bots
+  - `.likelyReal` = trusted device with Apple ID history
+  - `.unknown` = new device / new Apple ID — may require additional verification
+  - `.unsupported` = not available — do not block user
+- [ ] 11.4.6 — Credential state monitoring:
+  - Check credential state at app launch via `ASAuthorizationAppleIDProvider.getCredentialState(forUserID:)`
+  - Handle `.revoked` state — user revoked SIWA from Settings → Apple ID → Sign in & Security → Sign in with Apple → LumenLingo → Stop Using Apple ID
+  - On revocation: sign user out, preserve local data, prompt to re-authenticate or create new account
+- [ ] 11.4.7 — Token revocation (required for account deletion — Story 3.4):
+  - When user deletes account: MUST revoke Apple's refresh token via `https://appleid.apple.com/auth/revoke`
+  - Failure to revoke = user sees "LumenLingo" in their Apple ID SIWA list indefinitely even after account deletion
+  - Apple verifies this during review — missing revocation = rejection
+- [ ] 11.4.8 — Privacy Policy disclosure for SIWA:
+  - Privacy Policy must disclose: "If you sign in with Apple, we receive your Apple ID user identifier, and optionally your name and email address (which may be a private relay address)"
+  - Disclose that Apple is a data processor for authentication
+  - Disclose that private relay email addresses are stored and used for communication
+- [ ] 11.4.9 — Terms of Service SIWA clauses:
+  - "You may authenticate using Sign in with Apple. By doing so, you agree to Apple's terms and conditions for Sign in with Apple"
+  - "We are not responsible for Apple's authentication service availability or security"
+  - "If you revoke Sign in with Apple access, you may lose access to your account unless you set up an alternative authentication method"
+
+**Acceptance Criteria**:
+- SIWA implementation follows Apple HIG exactly
+- Private email relay fully supported (emails work, domain registered)
+- Name captured on first auth only
+- Credential revocation handled (sign-out + token revoke)
+- Privacy Policy and Terms updated for SIWA
+- Apple Review Guideline 4.8 compliance documented
 
 ---
 
