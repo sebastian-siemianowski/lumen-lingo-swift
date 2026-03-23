@@ -411,7 +411,8 @@
       "cookiePolicy": "Cookieポリシー",
       "cookieSettings": "Cookie設定",
       "eula": "EULA",
-      "dataRequest": "データリクエスト"
+      "dataRequest": "データリクエスト",
+      "doNotSell": "個人情報を販売しない"
     },
     "newsletter": {
       "heading": "最新情報をお届け",
@@ -570,7 +571,19 @@
       "heading": "Children’s Privacy",
       "p1": "LumenLingo is designed for users aged 13 and older. We do not knowingly collect personal information from children under 13 (or the applicable minimum age in your jurisdiction, which may be higher — for example, 16 in Germany and the Netherlands).",
       "p2": "The iOS app does not require account registration and stores data locally, so no personal information is transmitted to us from app users of any age. On the website, we do not knowingly accept newsletter or waitlist signups from anyone under 13.",
-      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at hello@lumenshore.com and we will delete it promptly."
+      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at hello@lumenshore.com and we will delete it promptly.",
+      "coppaHeading": "COPPAの遵守",
+      "coppaP1": "LumenLingoは、米国の児童オンラインプライバシー保護法（COPPA）に準拠しています。当社は、保護者の検証可能な同意なしに、13歳未満の児童の個人情報を意図的に収集、使用、開示することはありません。当社のサービスは13歳未満の児童を対象としておらず、児童向けの広告も行っておりません。",
+      "coppaP2": "個人情報（メールアドレスなど）を収集するすべてのウェブサイトフォームには、ユーザーが13歳以上であること、または18歳未満の場合は保護者の同意を得ていることを確認する年齢確認ステップが含まれています。",
+      "parentalHeading": "保護者の権利",
+      "parentalP1": "COPPAおよび同様の法律に基づき、保護者には以下の権利があります：",
+      "parentalLi1": "当社がお子様から不注意に収集した可能性のある個人情報を確認すること",
+      "parentalLi2": "お子様の個人情報を当社のシステムから削除するよう要求すること",
+      "parentalLi3": "お子様の情報のそれ以上の収集または使用を拒否すること",
+      "parentalLi4": "標準のiOSデバイス管理を通じて、アプリとそのローカルデータを管理または削除すること",
+      "parentalP2": "これらの権利を行使するには、<emailLink>hello@lumenshore.com</emailLink>までご連絡ください。13歳未満の児童から適切な保護者の同意なく個人情報を収集したことが判明した場合、その情報を速やかに削除いたします。",
+      "ferpaHeading": "教育利用とFERPA",
+      "ferpaP1": "LumenLingoは教育機関によって、または教育機関のために運営されているものではありません。学校や教育機関がLumenLingoを生徒に推奨する場合、それは独自の判断で行われます。当該機関は、家族の教育権とプライバシーに関する法律（FERPA）の遵守を確保し、13歳未満の生徒にサービスの利用を指示する前に必要な保護者の同意を得る責任を負います。"
     },
     "dataRetention": {
       "heading": "Data Retention & Deletion",
@@ -599,12 +612,36 @@
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
-      "ccpaHeading": "Under CCPA (California)",
-      "ccpaLi1": "Right to know what data is collected — detailed above.",
-      "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
-      "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
-      "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
-      "exerciseRights": "これらの権利を行使するには、hello@lumenshore.com までメールをお送りいただくか、<dataRequestLink>データリクエスト</dataRequestLink>ページからリクエストをご提出ください。30日以内（法律で求められる場合はそれ以前）にご回答いたします。特定のリクエストを処理する前に、本人確認が必要になる場合があります。"
+      "ccpaHeading": "CCPA/CPRAに基づく権利（カリフォルニア州）",
+      "ccpaLi1": "<b>知る権利</b> — 当社が収集した個人情報のカテゴリーおよび具体的な項目の開示を要求できます。上記の収集時通知セクションをご覧ください。",
+      "ccpaLi2": "<b>削除の権利</b> — 個人情報の削除を要求できます。アプリ内のアカウント削除機能を使用するか、アプリを削除するか、ウェブサイトデータの削除についてお問い合わせください。",
+      "ccpaLi3": "<b>修正の権利</b> — 不正確な個人情報の修正を要求できます。アプリデータは直接編集できます。ウェブサイトデータについてはお問い合わせください。",
+      "ccpaLi4": "<b>販売または共有のオプトアウトの権利</b> — 当社はクロスコンテキスト行動ターゲティング広告のために個人情報を販売または共有しません。オプトアウトの操作は不要です。",
+      "exerciseRights": "これらの権利を行使するには、hello@lumenshore.comにメールを送信するか、<dataRequestLink>データリクエスト</dataRequestLink>ページからリクエストを送信してください。お住まいの管轄権に適用される期限内に回答いたします。特定のリクエストを処理する前に本人確認が必要な場合があります。",
+      "ccpaLi5": "<b>機密個人情報の使用制限の権利</b> — 当社はCCPA/CPRAで定義される機密個人情報を収集していません。",
+      "ccpaLi6": "<b>差別禁止</b> — プライバシー権を行使したことを理由に、サービスの拒否、異なる価格の請求、またはサービス品質の差異を設けることはありません。",
+      "ccpaResponse": "カリフォルニア州の居住者の方へ：10営業日以内にリクエストの受領を確認し、45暦日以内に実質的な回答をいたします。さらに時間が必要な場合、事前通知の上、追加45日間延長することがあります。お客様が提供された情報と当社が保有するデータを照合して本人確認を行う場合があります。",
+      "usStateHeading": "米国州プライバシー法に基づく権利（バージニア州、コロラド州、コネチカット州など）",
+      "usStateIntro": "バージニア州、コロラド州、コネチカット州、ユタ州、または包括的なプライバシー法を有するその他の米国州にお住まいの場合、上記のCCPA/CPRAで説明されている権利と同様の権利をお持ちです。これらの法律には、バージニア消費者データ保護法（VCDPA）、コロラドプライバシー法（CPA）、コネチカットデータプライバシー法（CTDPA）が含まれます。",
+      "usStateLi1": "<b>アクセス権</b> — 当社がお客様の個人データを処理しているかどうかを確認し、コピーを要求できます。",
+      "usStateLi2": "<b>訂正権</b> — 不正確な個人データの訂正を要求できます。",
+      "usStateLi3": "<b>削除権</b> — 個人データの削除を要求できます。",
+      "usStateLi4": "<b>データポータビリティ権</b> — ポータブルですぐに使用できる形式でデータを取得できます。",
+      "usStateLi5": "<b>オプトアウト権</b> — ターゲティング広告、個人データの売却、プロファイリングを拒否できます。LumenShoreはこれらのいずれの行為も行っていません。",
+      "usStateGpc": "コロラド州とコネチカット州では、<gpcLink>Global Privacy Control（GPC）</gpcLink>などのユニバーサルオプトアウトシグナルを尊重することが義務付けられています。当社はすべての管轄権でGPCを尊重します。",
+      "usStateAppeal": "当社がお客様のリクエストを拒否した場合、hello@lumenshore.comまでご連絡いただくことで異議申し立てを行うことができます。60日以内に異議申し立てに回答いたします。結果にご不満な場合は、お住まいの州の司法長官事務所にお問い合わせいただけます。",
+      "verificationHeading": "本人確認と対応プロセス",
+      "verificationP1": "お客様のデータを保護するため、権利リクエストを処理する前に本人確認を行います。アカウントまたはサブスクリプションに関連付けられたメールアドレスの確認、または当社の記録と一致するその他の識別情報の提供をお願いする場合があります。",
+      "verificationP2": "お客様に代わってリクエストを行う代理人を指定することができます。代理人の権限の証明（署名入りの委任状または委任状など）を要求し、お客様の本人確認を直接行う場合があります。",
+      "timeframesHeading": "対応期限",
+      "timeframesCcpa": "<b>CCPA/CPRA（カリフォルニア）</b> — 10営業日以内に受領確認、45暦日以内に実質的な回答（事前通知によりさらに45日間延長可能）。",
+      "timeframesVcdpa": "<b>VCDPA（バージニア）</b> — 45日以内に回答（事前通知によりさらに45日間延長可能）。",
+      "timeframesCpa": "<b>CPA（コロラド）</b> — 45日以内に回答（合理的に必要な場合、さらに45日間延長可能）。",
+      "timeframesCtdpa": "<b>CTDPA（コネチカット）</b> — 45日以内に回答（事前通知によりさらに45日間延長可能）。",
+      "timeframesGdpr": "<b>GDPR（EEAおよび英国）</b> — 1暦月以内に回答（複雑なリクエストの場合、さらに2か月間延長可能）。",
+      "californiaHeading": "カリフォルニア州のプライバシー権利",
+      "californiaP1": "カリフォルニア民法典第1798.83条（「Shine the Light」）に基づき、カリフォルニア州の住民は、ダイレクトマーケティング目的での第三者への個人情報の開示について情報を要求できます。LumenShoreは、第三者のダイレクトマーケティング目的で個人情報を第三者に開示していません。",
+      "californiaP2": "CCPA/CPRAに基づく権利を含むカリフォルニア州のプライバシー権を行使するには、件名「カリフォルニアプライバシー権」で<emailLink>hello@lumenshore.com</emailLink>にメールを送信するか、<dataRequestLink>データリクエスト</dataRequestLink>ページからリクエストを送信してください。"
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -714,7 +751,89 @@
       },
       "survival": "Our right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data that was derived from your use of the Service."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "ccpaNotice": {
+      "heading": "カリフォルニア州収集時通知（CCPA/CPRA）",
+      "intro": "カリフォルニア州の居住者の方へ：カリフォルニア州消費者プライバシー法（CCPA）およびカリフォルニア州プライバシー権法（CPRA）に基づき、収集する個人情報のカテゴリー、収集目的、および当該情報が販売または共有されるかどうかを開示いたします。この通知は収集時または収集前に提供されます。",
+      "tableHeaders": {
+        "category": "CCPAカテゴリー",
+        "dataCollected": "収集データ",
+        "purpose": "目的",
+        "soldOrShared": "販売または共有？",
+        "retention": "保持期間"
+      },
+      "categories": {
+        "identifiers": {
+          "category": "識別子",
+          "dataCollected": "メールアドレス（ウェブサイトでのニュースレターおよびウェイトリスト登録）",
+          "purpose": "製品アップデート、語学学習のヒント、ウェイトリスト通知の送信",
+          "soldOrShared": "いいえ",
+          "retention": "登録解除まで、その後最大30日"
+        },
+        "internetActivity": {
+          "category": "インターネットまたはその他の電子ネットワーク活動",
+          "dataCollected": "ページビュー、クリックイベント、エラーログ、セッションリプレイ（同意あり）",
+          "purpose": "ウェブサイト分析、バグ検出、パフォーマンス監視、ユーザー体験の向上",
+          "soldOrShared": "いいえ",
+          "retention": "90日間（Sentry）、集計（Vercel Analytics）"
+        },
+        "education": {
+          "category": "教育情報",
+          "dataCollected": "語学学習進捗、練習スコア、習得済み語彙（iOSアプリのみ、デバイス上に保存）",
+          "purpose": "学習体験のパーソナライズと進捗の追跡",
+          "soldOrShared": "いいえ",
+          "retention": "アプリまたはアカウントを削除するまで"
+        },
+        "geolocation": {
+          "category": "位置情報データ",
+          "dataCollected": "収集していません",
+          "purpose": "該当なし",
+          "soldOrShared": "いいえ",
+          "retention": "該当なし"
+        },
+        "audioVisual": {
+          "category": "音声、電子、視覚または類似の情報",
+          "dataCollected": "収集していません",
+          "purpose": "該当なし",
+          "soldOrShared": "いいえ",
+          "retention": "該当なし"
+        },
+        "professional": {
+          "category": "職業または雇用関連情報",
+          "dataCollected": "収集していません",
+          "purpose": "該当なし",
+          "soldOrShared": "いいえ",
+          "retention": "該当なし"
+        },
+        "inferences": {
+          "category": "推論",
+          "dataCollected": "行っていません",
+          "purpose": "該当なし",
+          "soldOrShared": "いいえ",
+          "retention": "該当なし"
+        },
+        "sensitive": {
+          "category": "機密個人情報",
+          "dataCollected": "収集していません",
+          "purpose": "該当なし",
+          "soldOrShared": "いいえ",
+          "retention": "該当なし"
+        }
+      },
+      "doNotSell": {
+        "heading": "個人情報を販売または共有しないでください",
+        "p1": "LumenShoreはお客様の個人情報を第三者に販売しません。クロスコンテキスト行動ターゲティング広告のために個人情報を共有することはありません。これらの慣行を行っていないため、オプトアウトの必要はありませんが、CCPA/CPRAの要件に従いこの開示を提供しています。",
+        "p2": "当社の慣行が変更された場合、このポリシーを更新し、販売または共有が開始される前にオプトアウトの仕組みを提供いたします。",
+        "p3": "カリフォルニア州の居住者は、<gpcLink>グローバルプライバシーコントロール（GPC）</gpcLink>ブラウザシグナルを使用してオプトアウトの希望を伝えることもできます。当社はCPRAに基づくGPCを有効なオプトアウトリクエストとして尊重します。"
+      }
+    },
+    "gpcSignals": {
+      "heading": "Global Privacy ControlとDo Not Track",
+      "p1": "当社はGlobal Privacy Control（GPC）信号を尊重します。ブラウザがGPC信号を送信すると（Sec-GPC HTTPヘッダーまたはnavigator.globalPrivacyControl JavaScript API経由）、必須でないデータ処理のオプトアウト要求として取り扱います。",
+      "p2": "カリフォルニア州プライバシー権利法（CPRA）の下では、GPCは個人情報の販売または共有の有効なオプトアウトとなります。コロラド州プライバシー法およびコネチカット州データプライバシー法の下では、GPCを含むユニバーサルオプトアウトメカニズムを尊重する義務があります。",
+      "p3": "GPC信号が検出されると、アナリティクスイベントやセッションリプレイを含むすべての必須でないトラッキングが自動的に拑否されます。これは以前のCookie設定に関係なく適用されます。",
+      "p4": "当社はDo Not Track（DNT）ブラウザ信号も尊重します。DNTはW3Cにより廃止されましたが、一貫性のため、またプライバシーへの取り組みを示すために、GPCと同様に取り扱います。"
+    }
   },
   "Terms": {
     "meta": {
@@ -879,7 +998,9 @@
         "label": "セッションリプレイ",
         "description": "エラー発生時に匿名化されたブラウジングセッションを記録し、バグの再現と修正に役立てます。すべてのテキストとメディアはマスクされます。"
       }
-    }
+    },
+    "gpcNotice": "お使いのブラウザのGlobal Privacy Control（GPC）信号が有効です。プライバシー設定を尊重し、必須でないトラッキングは自動的に無効化されました。これらのカテゴリを有効にするには、まずブラウザの設定でGPCを無効にしてください。",
+    "gpcLearnMore": "GPCについて詳しく"
   },
   "CookiePage": {
     "meta": {
@@ -999,6 +1120,12 @@
       "category": "カテゴリ",
       "purpose": "目的",
       "duration": "期間"
+    },
+    "gpc": {
+      "heading": "Global Privacy ControlとDo Not Track",
+      "p1": "当社は、カリフォルニア州プライバシー権利法（CPRA）、コロラド州プライバシー法（CPA）、コネチカット州データプライバシー法（CTDPA）の要件に従い、Global Privacy Control（GPC）ブラウザ信号を尊重します。ブラウザがGPC信号を送信すると、アナリティクスやセッションリプレイを含むすべての必須でないトラッキングが自動的に無効化されます。",
+      "p2": "当社はDo Not Track（DNT）ブラウザ信号も尊重します。DNTはW3CによるWeb標準としては維持されていませんが、ベストプラクティスとしてGPCと同様に取り扱います。",
+      "p3": "ブラウザでGPCまたはDNTを無効にした場合、ページフッターの「Cookie設定」ボタンでCookieの設定を更新できます。"
     }
   },
   "Eula": {

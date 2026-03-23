@@ -248,6 +248,14 @@ export default async function CookiePolicyPage({
                   <p>{t('manage.p3')}</p>
                 </section>
 
+                {/* GPC & DNT */}
+                <section id="gpc">
+                  <h2>{t('gpc.heading')}</h2>
+                  <p>{t('gpc.p1')}</p>
+                  <p>{t('gpc.p2')}</p>
+                  <p>{t('gpc.p3')}</p>
+                </section>
+
                 {/* Updates */}
                 <section id="updates">
                   <h2>{t('updates.heading')}</h2>

@@ -411,7 +411,8 @@
       "cookiePolicy": "Politique de cookies",
       "cookieSettings": "Paramètres des cookies",
       "eula": "CLUF",
-      "dataRequest": "Demande de données"
+      "dataRequest": "Demande de données",
+      "doNotSell": "Ne Pas Vendre Mes Infos"
     },
     "newsletter": {
       "heading": "Restez informé",
@@ -570,7 +571,19 @@
       "heading": "Children’s Privacy",
       "p1": "LumenLingo is designed for users aged 13 and older. We do not knowingly collect personal information from children under 13 (or the applicable minimum age in your jurisdiction, which may be higher — for example, 16 in Germany and the Netherlands).",
       "p2": "The iOS app does not require account registration and stores data locally, so no personal information is transmitted to us from app users of any age. On the website, we do not knowingly accept newsletter or waitlist signups from anyone under 13.",
-      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at hello@lumenshore.com and we will delete it promptly."
+      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at hello@lumenshore.com and we will delete it promptly.",
+      "coppaHeading": "Conformité COPPA",
+      "coppaP1": "LumenLingo est conforme à la loi américaine sur la protection de la vie privée des enfants en ligne (COPPA). Nous ne collectons, n’utilisons ni ne divulguons sciemment des informations personnelles d’enfants de moins de 13 ans sans le consentement vérifiable des parents. Notre service ne s’adresse pas aux enfants de moins de 13 ans et nous ne ciblons pas de publicité vers les enfants.",
+      "coppaP2": "Tous les formulaires du site web collectant des informations personnelles (telles que des adresses e-mail) incluent une étape de confirmation d’âge exigeant que les utilisateurs confirment avoir au moins 13 ans, ou qu’ils disposent du consentement d’un parent ou tuteur s’ils ont moins de 18 ans.",
+      "parentalHeading": "Droits parentaux",
+      "parentalP1": "En vertu de la COPPA et de lois similaires, les parents et tuteurs ont le droit de :",
+      "parentalLi1": "Consulter toute information personnelle que nous aurions pu collecter par inadvertance concernant leur enfant",
+      "parentalLi2": "Demander la suppression des informations personnelles de leur enfant de nos systèmes",
+      "parentalLi3": "Refuser toute collecte ou utilisation ultérieure des informations de leur enfant",
+      "parentalLi4": "Gérer ou supprimer l’application et ses données stockées localement via la gestion standard des appareils iOS",
+      "parentalP2": "Pour exercer l’un de ces droits, veuillez nous contacter à <emailLink>hello@lumenshore.com</emailLink>. Si nous découvrons que nous avons collecté des informations personnelles d’un enfant de moins de 13 ans sans le consentement parental approprié, nous supprimerons ces informations dans les meilleurs délais.",
+      "ferpaHeading": "Utilisation éducative et FERPA",
+      "ferpaP1": "LumenLingo n’est pas administré par ou pour le compte d’établissements d’enseignement. Si une école ou un organisme éducatif choisit de recommander LumenLingo à ses élèves, il le fait de manière indépendante. L’établissement est responsable du respect de la loi américaine sur les droits éducatifs et la vie privée de la famille (FERPA) et de l’obtention du consentement parental requis avant d’orienter des élèves de moins de 13 ans vers l’utilisation du service."
     },
     "dataRetention": {
       "heading": "Data Retention & Deletion",
@@ -599,12 +612,36 @@
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
-      "ccpaHeading": "Under CCPA (California)",
-      "ccpaLi1": "Right to know what data is collected — detailed above.",
-      "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
-      "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
-      "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
-      "exerciseRights": "Pour exercer l'un de ces droits, envoyez-nous un e-mail à hello@lumenshore.com ou soumettez une demande via notre page de <dataRequestLink>Demande de données</dataRequestLink>. Nous répondrons dans un délai de 30 jours (ou plus tôt si la loi l'exige). Il se peut que nous devions vérifier votre identité avant de traiter certaines demandes."
+      "ccpaHeading": "En vertu de la CCPA/CPRA (Californie)",
+      "ccpaLi1": "<b>Droit de savoir</b> — vous pouvez demander la divulgation des catégories et éléments spécifiques d’informations personnelles que nous avons collectés à votre sujet. Consultez la section Avis de collecte ci-dessus.",
+      "ccpaLi2": "<b>Droit de suppression</b> — vous pouvez demander la suppression de vos informations personnelles. Utilisez la fonctionnalité Supprimer le compte dans l’app, supprimez l’app ou contactez-nous pour effacer les données du site web.",
+      "ccpaLi3": "<b>Droit de correction</b> — vous pouvez demander la correction d’informations personnelles inexactes. Les données de l’app peuvent être modifiées directement ; pour les données du site web, contactez-nous.",
+      "ccpaLi4": "<b>Droit de refuser la vente ou le partage</b> — nous ne vendons ni ne partageons d’informations personnelles pour de la publicité comportementale inter-contexte. Aucune action de désinscription n’est requise.",
+      "exerciseRights": "Pour exercer l’un de ces droits, envoyez-nous un e-mail à hello@lumenshore.com ou soumettez une demande via notre page <dataRequestLink>Demande de données</dataRequestLink>. Nous répondrons dans le délai applicable à votre juridiction. Nous pouvons avoir besoin de vérifier votre identité avant de traiter certaines demandes.",
+      "ccpaLi5": "<b>Droit de limiter l’utilisation d’informations personnelles sensibles</b> — nous ne collectons pas d’informations personnelles sensibles telles que définies par la CCPA/CPRA.",
+      "ccpaLi6": "<b>Non-discrimination</b> — nous ne vous refuserons pas de services, ne vous facturerons pas de prix différents et ne vous fournirons pas une qualité de service différente parce que vous avez exercé vos droits de confidentialité.",
+      "ccpaResponse": "Pour les résidents de Californie, nous confirmerons la réception de votre demande dans les 10 jours ouvrables et répondrons de manière substantielle dans les 45 jours calendaires. Si plus de temps est nécessaire, nous pouvons prolonger de 45 jours supplémentaires avec un préavis. Nous pouvons vérifier votre identité en comparant les informations que vous fournissez avec les données que nous avons en dossier.",
+      "usStateHeading": "En vertu des lois sur la vie privée des États américains (Virginie, Colorado, Connecticut et autres)",
+      "usStateIntro": "Si vous résidez en Virginie, au Colorado, dans le Connecticut, en Utah ou dans d’autres États américains dotés de lois complètes sur la vie privée, vous disposez de droits similaires à ceux décrits dans la CCPA/CPRA ci-dessus. Ces lois comprennent la Virginia Consumer Data Protection Act (VCDPA), la Colorado Privacy Act (CPA) et la Connecticut Data Privacy Act (CTDPA).",
+      "usStateLi1": "<b>Droit d’accès</b> — vous pouvez confirmer si nous traitons vos données personnelles et en demander une copie.",
+      "usStateLi2": "<b>Droit de rectification</b> — vous pouvez demander la correction de données personnelles inexactes.",
+      "usStateLi3": "<b>Droit de suppression</b> — vous pouvez demander la suppression de vos données personnelles.",
+      "usStateLi4": "<b>Droit à la portabilité des données</b> — vous pouvez obtenir vos données dans un format portable et facilement utilisable.",
+      "usStateLi5": "<b>Droit de désinscription</b> — vous pouvez refuser la publicité ciblée, la vente de données personnelles et le profilage. LumenShore ne pratique aucune de ces activités.",
+      "usStateGpc": "Le Colorado et le Connecticut exigent que nous respections les signaux universels de désinscription tels que <gpcLink>Global Privacy Control (GPC)</gpcLink>. Nous respectons le GPC dans toutes les juridictions.",
+      "usStateAppeal": "Si nous rejetons votre demande, vous pouvez faire appel en nous contactant à hello@lumenshore.com. Nous répondrons aux appels dans un délai de 60 jours. Si vous n’êtes pas satisfait du résultat, vous pouvez contacter le bureau du procureur général de votre État.",
+      "verificationHeading": "Processus de vérification et de réponse",
+      "verificationP1": "Pour protéger vos données, nous vérifierons votre identité avant de traiter une demande de droits. Nous pourrons vous demander de confirmer l’adresse e-mail associée à votre compte ou abonnement, ou de fournir d’autres informations d’identification correspondant à nos dossiers.",
+      "verificationP2": "Vous pouvez désigner un agent autorisé pour effectuer une demande en votre nom. Nous exigerons une preuve de l’autorité de l’agent (telle qu’une autorisation signée ou une procuration) et pourrons quand même vérifier votre identité directement.",
+      "timeframesHeading": "Délais de réponse",
+      "timeframesCcpa": "<b>CCPA/CPRA (Californie)</b> — accusé de réception dans les 10 jours ouvrables ; réponse substantielle dans les 45 jours civils (extensible de 45 jours supplémentaires avec préavis).",
+      "timeframesVcdpa": "<b>VCDPA (Virginie)</b> — réponse dans les 45 jours (extensible de 45 jours supplémentaires avec préavis).",
+      "timeframesCpa": "<b>CPA (Colorado)</b> — réponse dans les 45 jours (extensible de 45 jours supplémentaires lorsque raisonnablement nécessaire).",
+      "timeframesCtdpa": "<b>CTDPA (Connecticut)</b> — réponse dans les 45 jours (extensible de 45 jours supplémentaires avec préavis).",
+      "timeframesGdpr": "<b>RGPD (EEE et Royaume-Uni)</b> — réponse dans un mois civil (extensible de deux mois supplémentaires pour les demandes complexes).",
+      "californiaHeading": "Vos droits de confidentialité en Californie",
+      "californiaP1": "En vertu de la section 1798.83 du Code civil de Californie (« Shine the Light »), les résidents de Californie peuvent demander des informations sur la divulgation de données personnelles à des tiers à des fins de marketing direct. LumenShore ne divulgue pas de données personnelles à des tiers à des fins de marketing direct.",
+      "californiaP2": "Pour exercer tout droit de confidentialité californien, y compris les droits en vertu de la CCPA/CPRA, envoyez-nous un e-mail à <emailLink>hello@lumenshore.com</emailLink> avec l’objet « Droits de confidentialité Californie » ou soumettez une demande via notre page <dataRequestLink>Demande de données</dataRequestLink>."
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -714,7 +751,89 @@
       },
       "survival": "Our right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data that was derived from your use of the Service."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "ccpaNotice": {
+      "heading": "Avis de collecte pour la Californie (CCPA/CPRA)",
+      "intro": "Si vous êtes résident de Californie, la California Consumer Privacy Act (CCPA) et la California Privacy Rights Act (CPRA) exigent que nous divulguions les catégories d’informations personnelles que nous collectons, les finalités de la collecte et si ces informations sont vendues ou partagées. Cet avis est fourni au moment ou avant la collecte.",
+      "tableHeaders": {
+        "category": "Catégorie CCPA",
+        "dataCollected": "Données Collectées",
+        "purpose": "Finalité",
+        "soldOrShared": "Vendues ou Partagées ?",
+        "retention": "Durée de Conservation"
+      },
+      "categories": {
+        "identifiers": {
+          "category": "Identifiants",
+          "dataCollected": "Adresse e-mail (inscriptions à la newsletter et à la liste d’attente sur le site web)",
+          "purpose": "Pour envoyer des mises à jour produit, des conseils d’apprentissage des langues et des notifications de liste d’attente",
+          "soldOrShared": "Non",
+          "retention": "Jusqu’à désinscription, plus jusqu’à 30 jours"
+        },
+        "internetActivity": {
+          "category": "Activité Internet ou Autre Réseau Électronique",
+          "dataCollected": "Pages vues, événements de clic, journaux d’erreurs, replays de session (avec consentement)",
+          "purpose": "Analyse du site web, détection de bugs, surveillance des performances et amélioration de l’expérience utilisateur",
+          "soldOrShared": "Non",
+          "retention": "90 jours (Sentry), agrégé (Vercel Analytics)"
+        },
+        "education": {
+          "category": "Informations Éducatives",
+          "dataCollected": "Progression d’apprentissage des langues, scores de pratique, vocabulaire maîtrisé (app iOS uniquement, stocké sur l’appareil)",
+          "purpose": "Pour personnaliser votre expérience d’apprentissage et suivre la progression",
+          "soldOrShared": "Non",
+          "retention": "Jusqu’à suppression de l’app ou de votre compte"
+        },
+        "geolocation": {
+          "category": "Données de Géolocalisation",
+          "dataCollected": "Non collectées",
+          "purpose": "N/A",
+          "soldOrShared": "Non",
+          "retention": "N/A"
+        },
+        "audioVisual": {
+          "category": "Informations Audio, Électroniques, Visuelles ou Similaires",
+          "dataCollected": "Non collectées",
+          "purpose": "N/A",
+          "soldOrShared": "Non",
+          "retention": "N/A"
+        },
+        "professional": {
+          "category": "Informations Professionnelles",
+          "dataCollected": "Non collectées",
+          "purpose": "N/A",
+          "soldOrShared": "Non",
+          "retention": "N/A"
+        },
+        "inferences": {
+          "category": "Inférences",
+          "dataCollected": "Non réalisées",
+          "purpose": "N/A",
+          "soldOrShared": "Non",
+          "retention": "N/A"
+        },
+        "sensitive": {
+          "category": "Informations Personnelles Sensibles",
+          "dataCollected": "Non collectées",
+          "purpose": "N/A",
+          "soldOrShared": "Non",
+          "retention": "N/A"
+        }
+      },
+      "doNotSell": {
+        "heading": "Ne Pas Vendre ni Partager Mes Informations Personnelles",
+        "p1": "LumenShore ne vend pas vos informations personnelles à des tiers. Nous ne partageons pas vos informations personnelles pour de la publicité comportementale inter-contexte. Étant donné que nous ne pratiquons pas ces activités, aucune action de désinscription n’est nécessaire — mais nous fournissons cette divulgation comme l’exige la CCPA/CPRA.",
+        "p2": "Si nos pratiques changent à l’avenir, nous mettrons à jour cette politique et fournirons un mécanisme vous permettant de vous désinscrire avant toute vente ou partage.",
+        "p3": "Les résidents de Californie peuvent également utiliser le signal du navigateur <gpcLink>Global Privacy Control (GPC)</gpcLink> pour communiquer leur préférence de désinscription. Nous honorons le GPC comme une demande de désinscription valide en vertu de la CPRA."
+      }
+    },
+    "gpcSignals": {
+      "heading": "Global Privacy Control et Do Not Track",
+      "p1": "Nous respectons le signal Global Privacy Control (GPC). Lorsque votre navigateur envoie un signal GPC (via l’en-tête HTTP Sec-GPC ou l’API JavaScript navigator.globalPrivacyControl), nous le traitons comme une demande valide de désinscription du traitement non essentiel des données.",
+      "p2": "En vertu de la California Privacy Rights Act (CPRA), le GPC constitue une désinscription valide de la vente ou du partage d’informations personnelles. En vertu de la Colorado Privacy Act et de la Connecticut Data Privacy Act, nous sommes tenus de respecter les mécanismes universels de désinscription, y compris le GPC.",
+      "p3": "Lorsqu’un signal GPC est détecté, nous supprimons automatiquement tout suivi non essentiel sur notre site web — y compris les événements d’analyse et la relecture de sessions — indépendamment de toute préférence de cookies antérieure.",
+      "p4": "Nous respectons également le signal Do Not Track (DNT) du navigateur. Bien que DNT ait été abandonné par le W3C, nous le traitons de manière identique au GPC par souci de cohérence et pour démontrer notre engagement en faveur de la confidentialité."
+    }
   },
   "Terms": {
     "meta": {
@@ -879,7 +998,9 @@
         "label": "Replay de session",
         "description": "Enregistre des sessions de navigation anonymisées lors d'erreurs pour nous aider à reproduire et corriger les bugs. Tout le texte et les médias sont masqués."
       }
-    }
+    },
+    "gpcNotice": "Le signal Global Privacy Control (GPC) de votre navigateur est actif. Le suivi non essentiel a été automatiquement désactivé pour respecter votre préférence de confidentialité. Pour activer ces catégories, désactivez d’abord le GPC dans les paramètres de votre navigateur.",
+    "gpcLearnMore": "En savoir plus sur le GPC"
   },
   "CookiePage": {
     "meta": {
@@ -999,6 +1120,12 @@
       "category": "Catégorie",
       "purpose": "Objectif",
       "duration": "Durée"
+    },
+    "gpc": {
+      "heading": "Global Privacy Control et Do Not Track",
+      "p1": "Nous respectons le signal Global Privacy Control (GPC) du navigateur conformément à la California Privacy Rights Act (CPRA), la Colorado Privacy Act (CPA) et la Connecticut Data Privacy Act (CTDPA). Lorsque votre navigateur envoie un signal GPC, nous désactivons automatiquement tout suivi non essentiel — y compris les analyses et la relecture de sessions — indépendamment de toute préférence de cookies antérieure.",
+      "p2": "Nous respectons également le signal Do Not Track (DNT) du navigateur. Bien que DNT ne soit plus maintenu comme standard web par le W3C, nous le traitons de manière identique au GPC par bonne pratique.",
+      "p3": "Si vous désactivez le GPC ou DNT dans votre navigateur, vous pouvez mettre à jour vos préférences de cookies en utilisant le bouton « Paramètres des cookies » en bas de page."
     }
   },
   "Eula": {

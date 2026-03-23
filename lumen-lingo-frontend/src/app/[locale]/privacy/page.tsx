@@ -69,7 +69,9 @@ export default async function PrivacyPage({
     { id: 'aggregate-data', text: t('aggregateData.heading'), level: 2 },
     { id: 'childrens-privacy', text: t('childrensPrivacy.heading'), level: 2 },
     { id: 'data-retention', text: t('dataRetention.heading'), level: 2 },
+    { id: 'ccpa-notice', text: t('ccpaNotice.heading'), level: 2 },
     { id: 'your-rights', text: t('yourRights.heading'), level: 2 },
+    { id: 'california-rights', text: t('yourRights.californiaHeading'), level: 2 },
     { id: 'policy-updates', text: t('policyUpdates.heading'), level: 2 },
     { id: 'contact-us', text: t('contactUs.heading'), level: 2 },
   ];
@@ -377,6 +379,23 @@ export default async function PrivacyPage({
                   <p>{t('childrensPrivacy.p1')}</p>
                   <p>{t('childrensPrivacy.p2')}</p>
                   <p>{t('childrensPrivacy.p3')}</p>
+
+                  <h3>{t('childrensPrivacy.coppaHeading')}</h3>
+                  <p>{t('childrensPrivacy.coppaP1')}</p>
+                  <p>{t('childrensPrivacy.coppaP2')}</p>
+
+                  <h3>{t('childrensPrivacy.parentalHeading')}</h3>
+                  <p>{t('childrensPrivacy.parentalP1')}</p>
+                  <ul>
+                    <li>{t('childrensPrivacy.parentalLi1')}</li>
+                    <li>{t('childrensPrivacy.parentalLi2')}</li>
+                    <li>{t('childrensPrivacy.parentalLi3')}</li>
+                    <li>{t('childrensPrivacy.parentalLi4')}</li>
+                  </ul>
+                  <p>{t.rich('childrensPrivacy.parentalP2', { emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com">{chunks}</a> })}</p>
+
+                  <h3>{t('childrensPrivacy.ferpaHeading')}</h3>
+                  <p>{t('childrensPrivacy.ferpaP1')}</p>
                 </section>
 
                 <section id="data-retention">
@@ -400,6 +419,40 @@ export default async function PrivacyPage({
                   </ul>
                 </section>
 
+                {/* ── California Notice at Collection (CCPA/CPRA) ── */}
+                <section id="ccpa-notice">
+                  <h2>{t('ccpaNotice.heading')}</h2>
+                  <p>{t('ccpaNotice.intro')}</p>
+                  <div className="my-6 overflow-x-auto rounded-lg border border-glass-border">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="border-b border-glass-border bg-white/[0.02]">
+                          <th className="px-4 py-3 text-left font-semibold text-foreground">{t('ccpaNotice.tableHeaders.category')}</th>
+                          <th className="px-4 py-3 text-left font-semibold text-foreground">{t('ccpaNotice.tableHeaders.dataCollected')}</th>
+                          <th className="px-4 py-3 text-left font-semibold text-foreground">{t('ccpaNotice.tableHeaders.purpose')}</th>
+                          <th className="px-4 py-3 text-left font-semibold text-foreground">{t('ccpaNotice.tableHeaders.soldOrShared')}</th>
+                          <th className="px-4 py-3 text-left font-semibold text-foreground">{t('ccpaNotice.tableHeaders.retention')}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {(['identifiers', 'internetActivity', 'education', 'geolocation', 'audioVisual', 'professional', 'inferences', 'sensitive'] as const).map((key) => (
+                          <tr key={key} className="border-b border-glass-border/50 last:border-b-0">
+                            <td className="px-4 py-3 font-medium text-foreground">{t(`ccpaNotice.categories.${key}.category`)}</td>
+                            <td className="px-4 py-3 text-foreground-muted">{t(`ccpaNotice.categories.${key}.dataCollected`)}</td>
+                            <td className="px-4 py-3 text-foreground-muted">{t(`ccpaNotice.categories.${key}.purpose`)}</td>
+                            <td className="px-4 py-3 text-foreground-muted">{t(`ccpaNotice.categories.${key}.soldOrShared`)}</td>
+                            <td className="px-4 py-3 text-foreground-muted">{t(`ccpaNotice.categories.${key}.retention`)}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  <h3>{t('ccpaNotice.doNotSell.heading')}</h3>
+                  <p>{t('ccpaNotice.doNotSell.p1')}</p>
+                  <p>{t('ccpaNotice.doNotSell.p2')}</p>
+                  <p>{t.rich('ccpaNotice.doNotSell.p3', { gpcLink: (chunks: React.ReactNode) => <a href="https://globalprivacycontrol.org/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</p>
+                </section>
+
                 <section id="your-rights">
                   <h2>{t('yourRights.heading')}</h2>
                   <p>{t('yourRights.intro')}</p>
@@ -415,12 +468,51 @@ export default async function PrivacyPage({
                   </ul>
                   <h3>{t('yourRights.ccpaHeading')}</h3>
                   <ul>
-                    <li>{t('yourRights.ccpaLi1')}</li>
-                    <li>{t('yourRights.ccpaLi2')}</li>
-                    <li>{t('yourRights.ccpaLi3')}</li>
-                    <li>{t('yourRights.ccpaLi4')}</li>
+                    <li>{t.rich('yourRights.ccpaLi1', richTags)}</li>
+                    <li>{t.rich('yourRights.ccpaLi2', richTags)}</li>
+                    <li>{t.rich('yourRights.ccpaLi3', richTags)}</li>
+                    <li>{t.rich('yourRights.ccpaLi4', richTags)}</li>
+                    <li>{t.rich('yourRights.ccpaLi5', richTags)}</li>
+                    <li>{t.rich('yourRights.ccpaLi6', richTags)}</li>
+                  </ul>
+                  <p>{t('yourRights.ccpaResponse')}</p>
+                  <h3>{t('yourRights.usStateHeading')}</h3>
+                  <p>{t('yourRights.usStateIntro')}</p>
+                  <ul>
+                    <li>{t.rich('yourRights.usStateLi1', richTags)}</li>
+                    <li>{t.rich('yourRights.usStateLi2', richTags)}</li>
+                    <li>{t.rich('yourRights.usStateLi3', richTags)}</li>
+                    <li>{t.rich('yourRights.usStateLi4', richTags)}</li>
+                    <li>{t.rich('yourRights.usStateLi5', richTags)}</li>
+                  </ul>
+                  <p>{t.rich('yourRights.usStateGpc', { gpcLink: (chunks: React.ReactNode) => <a href="https://globalprivacycontrol.org/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</p>
+                  <p>{t('yourRights.usStateAppeal')}</p>
+                  <h3>{t('yourRights.verificationHeading')}</h3>
+                  <p>{t('yourRights.verificationP1')}</p>
+                  <p>{t('yourRights.verificationP2')}</p>
+                  <h3>{t('yourRights.timeframesHeading')}</h3>
+                  <ul>
+                    <li>{t.rich('yourRights.timeframesCcpa', richTags)}</li>
+                    <li>{t.rich('yourRights.timeframesVcdpa', richTags)}</li>
+                    <li>{t.rich('yourRights.timeframesCpa', richTags)}</li>
+                    <li>{t.rich('yourRights.timeframesCtdpa', richTags)}</li>
+                    <li>{t.rich('yourRights.timeframesGdpr', richTags)}</li>
                   </ul>
                   <p>{t.rich('yourRights.exerciseRights', { dataRequestLink: (chunks: React.ReactNode) => <a href={`/${locale}/data-request`}>{chunks}</a> })}</p>
+                </section>
+
+                <section id="california-rights">
+                  <h2>{t('yourRights.californiaHeading')}</h2>
+                  <p>{t('yourRights.californiaP1')}</p>
+                  <p>{t.rich('yourRights.californiaP2', { emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com">{chunks}</a>, dataRequestLink: (chunks: React.ReactNode) => <a href={`/${locale}/data-request`}>{chunks}</a> })}</p>
+                </section>
+
+                <section id="gpc-signals">
+                  <h2>{t('gpcSignals.heading')}</h2>
+                  <p>{t('gpcSignals.p1')}</p>
+                  <p>{t('gpcSignals.p2')}</p>
+                  <p>{t('gpcSignals.p3')}</p>
+                  <p>{t('gpcSignals.p4')}</p>
                 </section>
 
                 <section id="policy-updates">

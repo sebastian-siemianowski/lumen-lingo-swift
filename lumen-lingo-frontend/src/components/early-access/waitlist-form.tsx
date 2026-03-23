@@ -38,6 +38,7 @@ interface WaitlistFormProps {
 export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
   const [email, setEmail] = useState('');
   const [language, setLanguage] = useState('');
+  const [ageConfirmed, setAgeConfirmed] = useState(false);
   const [state, setState] = useState<FormState>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
@@ -55,6 +56,12 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
 
     if (!language) {
       setErrorMsg('Please select your preferred language.');
+      setState('error');
+      return;
+    }
+
+    if (!ageConfirmed) {
+      setErrorMsg('Please confirm you meet the age requirement.');
       setState('error');
       return;
     }
@@ -177,6 +184,23 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
               ))}
             </select>
           </div>
+
+          {/* Age confirmation — COPPA compliance */}
+          <label className="flex items-start gap-2.5 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={ageConfirmed}
+              onChange={(e) => {
+                setAgeConfirmed(e.target.checked);
+                if (state === 'error') { setState('idle'); setErrorMsg(''); }
+              }}
+              disabled={state === 'loading'}
+              className="mt-0.5 h-4 w-4 shrink-0 rounded border-glass-border accent-violet"
+            />
+            <span className="text-xs leading-relaxed text-foreground-muted/70">
+              I confirm I am at least 13 years old (or have parental consent if under 18).
+            </span>
+          </label>
 
           {/* Error */}
           <AnimatePresence>

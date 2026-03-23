@@ -411,7 +411,8 @@
       "cookiePolicy": "سياسة ملفات تعريف الارتباط",
       "cookieSettings": "إعدادات ملفات تعريف الارتباط",
       "eula": "EULA",
-      "dataRequest": "طلب البيانات"
+      "dataRequest": "طلب البيانات",
+      "doNotSell": "لا تبع معلوماتي"
     },
     "newsletter": {
       "heading": "ابقَ على اطلاع",
@@ -570,7 +571,19 @@
       "heading": "Children’s Privacy",
       "p1": "LumenLingo is designed for users aged 13 and older. We do not knowingly collect personal information from children under 13 (or the applicable minimum age in your jurisdiction, which may be higher — for example, 16 in Germany and the Netherlands).",
       "p2": "The iOS app does not require account registration and stores data locally, so no personal information is transmitted to us from app users of any age. On the website, we do not knowingly accept newsletter or waitlist signups from anyone under 13.",
-      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at hello@lumenshore.com and we will delete it promptly."
+      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at hello@lumenshore.com and we will delete it promptly.",
+      "coppaHeading": "الامتثال لقانون COPPA",
+      "coppaP1": "يمتثل LumenLingo لقانون حماية خصوصية الأطفال على الإنترنت (COPPA). لا نقوم عن علم بجمع أو استخدام أو الكشف عن المعلومات الشخصية للأطفال دون سن 13 عامًا دون موافقة أبوية قابلة للتحقق. خدمتنا غير موجهة للأطفال دون سن 13 عامًا، ولا نستهدف الأطفال بالإعلانات.",
+      "coppaP2": "تتضمن جميع نماذج الموقع التي تجمع معلومات شخصية (مثل عناوين البريد الإلكتروني) خطوة تأكيد العمر التي تتطلب من المستخدمين تأكيد أنهم يبلغون 13 عامًا على الأقل، أو أنهم حصلوا على موافقة ولي الأمر إذا كانوا دون سن 18.",
+      "parentalHeading": "حقوق الوالدين",
+      "parentalP1": "بموجب قانون COPPA والقوانين المماثلة، يحق للوالدين والأوصياء:",
+      "parentalLi1": "مراجعة أي معلومات شخصية قد نكون جمعناها عن غير قصد من طفلهم",
+      "parentalLi2": "طلب حذف المعلومات الشخصية لطفلهم من أنظمتنا",
+      "parentalLi3": "رفض المزيد من جمع أو استخدام معلومات طفلهم",
+      "parentalLi4": "إدارة أو إزالة التطبيق وبياناته المخزنة محليًا عبر إدارة أجهزة iOS القياسية",
+      "parentalP2": "لممارسة أي من هذه الحقوق، يرجى التواصل معنا عبر <emailLink>hello@lumenshore.com</emailLink>. إذا اكتشفنا أننا جمعنا معلومات شخصية من طفل دون سن 13 عامًا دون موافقة أبوية مناسبة، فسنحذف تلك المعلومات على الفور.",
+      "ferpaHeading": "الاستخدام التعليمي وقانون FERPA",
+      "ferpaP1": "لا يُدار LumenLingo من قبل مؤسسات تعليمية أو نيابةً عنها. إذا اختارت مدرسة أو منظمة تعليمية التوصية بـ LumenLingo لطلابها، فإنها تفعل ذلك بشكل مستقل. تتحمل المؤسسة مسؤولية ضمان الامتثال لقانون حقوق التعليم العائلي والخصوصية (FERPA) والحصول على الموافقة الأبوية المطلوبة قبل توجيه الطلاب دون سن 13 عامًا لاستخدام الخدمة."
     },
     "dataRetention": {
       "heading": "Data Retention & Deletion",
@@ -599,12 +612,36 @@
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
-      "ccpaHeading": "Under CCPA (California)",
-      "ccpaLi1": "Right to know what data is collected — detailed above.",
-      "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
-      "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
-      "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
-      "exerciseRights": "لممارسة أي من هذه الحقوق، أرسل لنا بريدًا إلكترونيًا على hello@lumenshore.com أو قدّم طلبًا عبر صفحة <dataRequestLink>طلب البيانات</dataRequestLink>. سنرد خلال 30 يومًا (أو قبل ذلك إذا تطلب القانون). قد نحتاج إلى التحقق من هويتك قبل معالجة بعض الطلبات."
+      "ccpaHeading": "بموجب CCPA/CPRA (كاليفورنيا)",
+      "ccpaLi1": "<b>الحق في المعرفة</b> — يمكنك طلب الإفصاح عن فئات وأجزاء محددة من المعلومات الشخصية التي جمعناها عنك. راجع قسم إشعار الجمع أعلاه.",
+      "ccpaLi2": "<b>الحق في الحذف</b> — يمكنك طلب حذف معلوماتك الشخصية. استخدم ميزة حذف الحساب في التطبيق أو احذف التطبيق أو تواصل معنا لحذف بيانات الموقع.",
+      "ccpaLi3": "<b>الحق في التصحيح</b> — يمكنك طلب تصحيح المعلومات الشخصية غير الدقيقة. يمكن تعديل بيانات التطبيق مباشرة؛ لبيانات الموقع تواصل معنا.",
+      "ccpaLi4": "<b>الحق في إلغاء الاشتراك في البيع أو المشاركة</b> — لا نبيع أو نشارك معلومات شخصية للإعلانات السلوكية عبر السياقات. لا يلزم إلغاء الاشتراك.",
+      "exerciseRights": "لممارسة أي من هذه الحقوق، أرسل بريدًا إلكترونيًا إلى hello@lumenshore.com أو قدم طلبًا عبر صفحة <dataRequestLink>طلب البيانات</dataRequestLink>. سنرد خلال الإطار الزمني المعمول به في ولايتك القضائية. قد نحتاج إلى التحقق من هويتك قبل معالجة بعض الطلبات.",
+      "ccpaLi5": "<b>الحق في تقييد استخدام المعلومات الشخصية الحساسة</b> — لا نجمع معلومات شخصية حساسة كما حددتها CCPA/CPRA.",
+      "ccpaLi6": "<b>عدم التمييز</b> — لن نرفض تقديم الخدمات أو نفرض أسعارًا مختلفة أو نقدم جودة خدمة مختلفة لأنك مارست حقوقك في الخصوصية.",
+      "ccpaResponse": "لسكان كاليفورنيا، سنؤكد استلام طلبك خلال 10 أيام عمل ونرد بشكل جوهري خلال 45 يومًا تقويميًا. إذا لزم مزيد من الوقت، يمكننا التمديد 45 يومًا إضافيًا مع إشعار مسبق. قد نتحقق من هويتك بمقارنة المعلومات التي تقدمها بالبيانات الموجودة لدينا.",
+      "usStateHeading": "حقوقك بموجب قوانين الخصوصية الأمريكية (فيرجينيا، كولورادو، كونيتيكت وغيرها)",
+      "usStateIntro": "إذا كنت مقيمًا في فيرجينيا أو كولورادو أو كونيتيكت أو يوتا أو أي ولاية أمريكية أخرى لديها قانون خصوصية شامل، فلديك حقوق مماثلة لتلك الموضحة أعلاه بموجب CCPA/CPRA. تشمل هذه القوانين قانون حماية بيانات المستهلك في فيرجينيا (VCDPA) وقانون الخصوصية في كولورادو (CPA) وقانون خصوصية البيانات في كونيتيكت (CTDPA).",
+      "usStateLi1": "<b>حق الوصول</b> — يمكنك التأكد مما إذا كنا نعالج بياناتك الشخصية وطلب نسخة منها.",
+      "usStateLi2": "<b>حق التصحيح</b> — يمكنك طلب تصحيح هالبيانات الشخصية غير الدقيقة.",
+      "usStateLi3": "<b>حق الحذف</b> — يمكنك طلب حذف بياناتك الشخصية.",
+      "usStateLi4": "<b>حق نقل البيانات</b> — يمكنك الحصول على بياناتك بتنسيق قابل للنقل وسهل الاستخدام.",
+      "usStateLi5": "<b>حق الانسحاب</b> — يمكنك رفض الإعلانات المستهدفة وبيع البيانات الشخصية والتصنيف. لا تقوم LumenShore بأي من هذه الأنشطة.",
+      "usStateGpc": "تطلب كولورادو وكونيتيكت احترام إشارات الانسحاب العالمية مثل <gpcLink>التحكم العالمي في الخصوصية (GPC)</gpcLink>. نحن نحترم GPC في جميع الولايات القضائية.",
+      "usStateAppeal": "إذا رفضنا طلبك، يمكنك الاستئناف عبر الاتصال بنا على hello@lumenshore.com. سنرد على الاستئناف خلال 60 يومًا. إذا لم تكن راضيًا عن النتيجة، يمكنك التواصل مع مكتب المدعي العام في ولايتك.",
+      "verificationHeading": "عملية التحقق والاستجابة",
+      "verificationP1": "لحماية بياناتك، سنتحقق من هويتك قبل معالجة طلبات الحقوق. قد نطلب منك تأكيد عنوان البريد الإلكتروني المرتبط بحسابك أو اشتراكك، أو تقديم معلومات تعريف أخرى تتطابق مع سجلاتنا.",
+      "verificationP2": "يمكنك تعيين وكيل مفوض لتقديم الطلبات نيابة عنك. سنطلب إثبات صلاحية الوكيل (مثل تفويض موقع أو توكيل) وقد نتحقق من هويتك مباشرة.",
+      "timeframesHeading": "مواعيد الاستجابة",
+      "timeframesCcpa": "<b>CCPA/CPRA (كاليفورنيا)</b> — تأكيد الاستلام خلال 10 أيام عمل؛ رد جوهري خلال 45 يومًا (قابل للتمديد 45 يومًا إضافيًا مع إشعار مسبق).",
+      "timeframesVcdpa": "<b>VCDPA (فيرجينيا)</b> — رد خلال 45 يومًا (قابل للتمديد 45 يومًا إضافيًا مع إشعار مسبق).",
+      "timeframesCpa": "<b>CPA (كولورادو)</b> — رد خلال 45 يومًا (قابل للتمديد 45 يومًا إضافيًا عند الضرورة).",
+      "timeframesCtdpa": "<b>CTDPA (كونيتيكت)</b> — رد خلال 45 يومًا (قابل للتمديد 45 يومًا إضافيًا مع إشعار مسبق).",
+      "timeframesGdpr": "<b>GDPR (المنطقة الاقتصادية الأوروبية والمملكة المتحدة)</b> — رد خلال شهر واحد (قابل للتمديد شهرين إضافيين للطلبات المعقدة).",
+      "californiaHeading": "حقوق الخصوصية في كاليفورنيا",
+      "californiaP1": "بموجب المادة 1798.83 من القانون المدني لكاليفورنيا (قانون \"أشعة الضوء\")، يمكن لسكان كاليفورنيا طلب معلومات حول الكشف عن المعلومات الشخصية لأطراف ثالثة لأغراض التسويق المباشر. لا تكشف LumenShore عن المعلومات الشخصية لأطراف ثالثة لأغراض التسويق المباشر.",
+      "californiaP2": "لممارسة أي من حقوق الخصوصية في كاليفورنيا بما في ذلك حقوق CCPA/CPRA، أرسل بريدًا إلكترونيًا بعنوان \"حقوق الخصوصية في كاليفورنيا\" إلى <emailLink>hello@lumenshore.com</emailLink> أو قدم طلبًا عبر صفحة <dataRequestLink>طلب البيانات</dataRequestLink>."
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -714,7 +751,89 @@
       },
       "survival": "Our right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data that was derived from your use of the Service."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "ccpaNotice": {
+      "heading": "إشعار جمع البيانات في كاليفورنيا (CCPA/CPRA)",
+      "intro": "إذا كنت مقيمًا في كاليفورنيا، يتطلب قانون خصوصية المستهلك في كاليفورنيا (CCPA) وقانون حقوق الخصوصية في كاليفورنيا (CPRA) منا الإفصاح عن فئات المعلومات الشخصية التي نجمعها وأغراض الجمع وما إذا كانت هذه المعلومات تُباع أو تُشارك. يُقدم هذا الإشعار عند أو قبل نقطة الجمع.",
+      "tableHeaders": {
+        "category": "فئة CCPA",
+        "dataCollected": "البيانات المجموعة",
+        "purpose": "الغرض",
+        "soldOrShared": "هل تُباع أو تُشارك؟",
+        "retention": "فترة الاحتفاظ"
+      },
+      "categories": {
+        "identifiers": {
+          "category": "المعرّفات",
+          "dataCollected": "عنوان البريد الإلكتروني (اشتراكات النشرة الإخبارية وقائمة الانتظار على الموقع)",
+          "purpose": "لإرسال تحديثات المنتج ونصائح تعلم اللغات وإشعارات قائمة الانتظار",
+          "soldOrShared": "لا",
+          "retention": "حتى إلغاء الاشتراك، بالإضافة إلى 30 يومًا كحد أقصى"
+        },
+        "internetActivity": {
+          "category": "نشاط الإنترنت أو الشبكات الإلكترونية الأخرى",
+          "dataCollected": "مشاهدات الصفحات، أحداث النقر، سجلات الأخطاء، إعادة تشغيل الجلسات (بالموافقة)",
+          "purpose": "تحليلات الموقع، اكتشاف الأخطاء، مراقبة الأداء وتحسين تجربة المستخدم",
+          "soldOrShared": "لا",
+          "retention": "90 يومًا (Sentry)، مجمعة (Vercel Analytics)"
+        },
+        "education": {
+          "category": "معلومات تعليمية",
+          "dataCollected": "تقدم تعلم اللغات، درجات الممارسة، المفردات المُتقنة (تطبيق iOS فقط، مخزنة على الجهاز)",
+          "purpose": "لتخصيص تجربة التعلم وتتبع التقدم",
+          "soldOrShared": "لا",
+          "retention": "حتى حذف التطبيق أو حسابك"
+        },
+        "geolocation": {
+          "category": "بيانات الموقع الجغرافي",
+          "dataCollected": "لا يتم جمعها",
+          "purpose": "غير منطبق",
+          "soldOrShared": "لا",
+          "retention": "غير منطبق"
+        },
+        "audioVisual": {
+          "category": "معلومات صوتية أو إلكترونية أو بصرية أو مشابهة",
+          "dataCollected": "لا يتم جمعها",
+          "purpose": "غير منطبق",
+          "soldOrShared": "لا",
+          "retention": "غير منطبق"
+        },
+        "professional": {
+          "category": "معلومات مهنية أو وظيفية",
+          "dataCollected": "لا يتم جمعها",
+          "purpose": "غير منطبق",
+          "soldOrShared": "لا",
+          "retention": "غير منطبق"
+        },
+        "inferences": {
+          "category": "الاستنتاجات",
+          "dataCollected": "لا يتم إجراؤها",
+          "purpose": "غير منطبق",
+          "soldOrShared": "لا",
+          "retention": "غير منطبق"
+        },
+        "sensitive": {
+          "category": "معلومات شخصية حساسة",
+          "dataCollected": "لا يتم جمعها",
+          "purpose": "غير منطبق",
+          "soldOrShared": "لا",
+          "retention": "غير منطبق"
+        }
+      },
+      "doNotSell": {
+        "heading": "لا تبع أو تشارك معلوماتي الشخصية",
+        "p1": "لا تبيع LumenShore معلوماتك الشخصية لأطراف ثالثة. لا نشارك معلوماتك الشخصية لأغراض الإعلانات السلوكية عبر السياقات. نظرًا لعدم مشاركتنا في هذه الممارسات، لا يلزم إلغاء الاشتراك — لكننا نقدم هذا الإفصاح وفقًا لمتطلبات CCPA/CPRA.",
+        "p2": "إذا تغيرت ممارساتنا في المستقبل، سنقوم بتحديث هذه السياسة ونوفر آلية لإلغاء الاشتراك قبل بدء أي بيع أو مشاركة.",
+        "p3": "يمكن لسكان كاليفورنيا أيضًا استخدام إشارة المتصفح <gpcLink>التحكم العالمي في الخصوصية (GPC)</gpcLink> للتعبير عن تفضيلهم لإلغاء الاشتراك. نحن نحترم GPC كطلب إلغاء اشتراك صالح بموجب CPRA."
+      }
+    },
+    "gpcSignals": {
+      "heading": "التحكم العالمي في الخصوصية وعدم التتبع",
+      "p1": "نحن نحترم إشارة التحكم العالمي في الخصوصية (GPC). عندما يرسل متصفحك إشارة GPC (عبر رأس HTTP Sec-GPC أو واجهة JavaScript navigator.globalPrivacyControl)، نعاملها كطلب إلغاء اشتراك صالح في معالجة البيانات غير الضرورية.",
+      "p2": "بموجب قانون حقوق الخصوصية في كاليفورنيا (CPRA)، يعد GPC إلغاء اشتراك صالحًا من بيع أو مشاركة المعلومات الشخصية. بموجب قانون الخصوصية في كولورادو وقانون خصوصية البيانات في كونيتيكت، يجب علينا احترام آليات إلغاء الاشتراك العالمية بما في ذلك GPC.",
+      "p3": "عند اكتشاف إشارة GPC، نقوم تلقائيًا بإيقاف جميع أنواع التتبع غير الضرورية على موقعنا — بما في ذلك أحداث التحليلات وإعادة تشغيل الجلسات — بغض النظر عن أي تفضيلات ملفات تعريف الارتباط السابقة.",
+      "p4": "نحن أيضًا نحترم إشارة عدم التتبع (DNT) في المتصفح. على الرغم من إهمال DNT من قبل W3C، إلا أننا نعامله بشكل مماثل لـ GPC للحفاظ على الاتساق ولإظهار التزامنا بالخصوصية."
+    }
   },
   "Terms": {
     "meta": {
@@ -879,7 +998,9 @@
         "label": "إعادة تشغيل الجلسة",
         "description": "تسجيل جلسات التصفح المجهولة عند حدوث أخطاء لمساعدتنا في إعادة إنتاج الأخطاء وإصلاحها. يتم إخفاء جميع النصوص والوسائط."
       }
-    }
+    },
+    "gpcNotice": "إشارة التحكم العالمي في الخصوصية (GPC) في متصفحك مفعّلة. تم تعطيل التتبع غير الضروري تلقائيًا احترامًا لتفضيل الخصوصية الخاص بك. لتفعيل هذه الفئات، قم أولاً بتعطيل GPC في إعدادات المتصفح.",
+    "gpcLearnMore": "معرفة المزيد عن GPC"
   },
   "CookiePage": {
     "meta": {
@@ -999,6 +1120,12 @@
       "category": "الفئة",
       "purpose": "الغرض",
       "duration": "المدة"
+    },
+    "gpc": {
+      "heading": "التحكم العالمي في الخصوصية وعدم التتبع",
+      "p1": "نحن نحترم إشارة التحكم العالمي في الخصوصية (GPC) في المتصفح وفقًا لمتطلبات قانون حقوق الخصوصية في كاليفورنيا (CPRA) وقانون الخصوصية في كولورادو (CPA) وقانون خصوصية البيانات في كونيتيكت (CTDPA). عندما يرسل متصفحك إشارة GPC، نقوم تلقائيًا بتعطيل جميع أنواع التتبع غير الضرورية — بما في ذلك التحليلات وإعادة تشغيل الجلسات.",
+      "p2": "نحن أيضًا نحترم إشارة عدم التتبع (DNT) في المتصفح. على الرغم من أن DNT لم يعد معيارًا للويب يحافظ عليه W3C، إلا أننا نعامله بشكل مماثل لـ GPC كممارسة جيدة.",
+      "p3": "إذا قمت بتعطيل GPC أو DNT في متصفحك، يمكنك تحديث تفضيلات ملفات تعريف الارتباط باستخدام زر «إعدادات ملفات تعريف الارتباط» في أسفل الصفحة."
     }
   },
   "Eula": {

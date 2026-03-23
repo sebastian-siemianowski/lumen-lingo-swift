@@ -211,6 +211,12 @@ export function Footer() {
               &copy; {new Date().getFullYear()} {t('copyright')}
             </p>
             <div className="flex items-center gap-4">
+              <Link
+                href="/privacy#ccpa-notice"
+                className="text-xs text-foreground-muted transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none rounded py-1"
+              >
+                {t('links.doNotSell')}
+              </Link>
               <button
                 type="button"
                 onClick={() => window.dispatchEvent(new CustomEvent('open-cookie-settings'))}

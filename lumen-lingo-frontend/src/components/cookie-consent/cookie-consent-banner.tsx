@@ -11,6 +11,7 @@ import {
   hasConsentDecision,
   type ConsentPreferences,
 } from '@/lib/cookie-consent';
+import { isPrivacySignalActive } from '@/lib/gpc';
 import Link from 'next/link';
 
 type View = 'banner' | 'preferences';
@@ -73,13 +74,21 @@ export function CookieConsentBanner() {
     errorMonitoring: false,
     sessionReplay: false,
   });
+  const [gpcActive, setGpcActive] = useState(false);
   const bannerRef = useRef<HTMLDivElement>(null);
   const firstButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    // Show banner if no consent decision has been made
+    const privacySignal = isPrivacySignalActive();
+    setGpcActive(privacySignal);
+
     if (!hasConsentDecision()) {
-      setVisible(true);
+      if (privacySignal) {
+        // GPC/DNT active — auto-reject non-essential (CPRA § 1798.135(e))
+        rejectAll();
+      } else {
+        setVisible(true);
+      }
     }
   }, []);
 
@@ -111,10 +120,16 @@ export function CookieConsentBanner() {
   }, []);
 
   const handleAcceptAll = useCallback(() => {
+    if (gpcActive) {
+      // GPC overrides — save as reject-all, switch to preferences to show notice
+      rejectAll();
+      setView('preferences');
+      return;
+    }
     acceptAll();
     setVisible(false);
     setView('banner');
-  }, []);
+  }, [gpcActive]);
 
   const handleRejectAll = useCallback(() => {
     rejectAll();
@@ -330,6 +345,26 @@ export function CookieConsentBanner() {
                       {t('preferencesDescription')}
                     </p>
 
+                    {/* GPC/DNT notice */}
+                    {gpcActive && (
+                      <div className="mt-3 flex items-start gap-2.5 rounded-xl border border-cyan/20 bg-cyan/[0.06] px-3.5 py-3">
+                        <svg className="mt-0.5 h-4 w-4 shrink-0 text-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                        <p className="text-xs leading-relaxed text-foreground-muted">
+                          {t('gpcNotice')}{' '}
+                          <a
+                            href="https://globalprivacycontrol.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-cyan hover:text-cyan/80 underline underline-offset-2 transition-colors"
+                          >
+                            {t('gpcLearnMore')}
+                          </a>
+                        </p>
+                      </div>
+                    )}
+
                     {/* Category toggles */}
                     <div className="mt-4 space-y-1 divide-y divide-white/[0.06]">
                       <CategoryToggle
@@ -344,21 +379,24 @@ export function CookieConsentBanner() {
                         id="consent-analytics"
                         label={t('categories.analytics.label')}
                         description={t('categories.analytics.description')}
-                        checked={prefs.analytics}
+                        checked={gpcActive ? false : prefs.analytics}
+                        disabled={gpcActive}
                         onChange={(v) => setPrefs((p) => ({ ...p, analytics: v }))}
                       />
                       <CategoryToggle
                         id="consent-error"
                         label={t('categories.errorMonitoring.label')}
                         description={t('categories.errorMonitoring.description')}
-                        checked={prefs.errorMonitoring}
+                        checked={gpcActive ? false : prefs.errorMonitoring}
+                        disabled={gpcActive}
                         onChange={(v) => setPrefs((p) => ({ ...p, errorMonitoring: v }))}
                       />
                       <CategoryToggle
                         id="consent-replay"
                         label={t('categories.sessionReplay.label')}
                         description={t('categories.sessionReplay.description')}
-                        checked={prefs.sessionReplay}
+                        checked={gpcActive ? false : prefs.sessionReplay}
+                        disabled={gpcActive}
                         onChange={(v) => setPrefs((p) => ({ ...p, sessionReplay: v }))}
                       />
                     </div>

@@ -1,8 +1,10 @@
 import * as Sentry from '@sentry/nextjs';
 import { getConsentPreferences } from '@/lib/cookie-consent';
+import { isPrivacySignalActive } from '@/lib/gpc';
 
+const gpcActive = isPrivacySignalActive();
 const consent = getConsentPreferences();
-const replayAllowed = consent?.sessionReplay === true;
+const replayAllowed = !gpcActive && consent?.sessionReplay === true;
 
 Sentry.init({
   dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,

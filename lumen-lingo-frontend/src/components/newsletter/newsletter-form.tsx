@@ -22,6 +22,7 @@ function isValidEmail(email: string): boolean {
 
 export function NewsletterForm({ source = 'unknown', compact = false, className = '' }: NewsletterFormProps) {
   const [email, setEmail] = useState('');
+  const [ageConfirmed, setAgeConfirmed] = useState(false);
   const [state, setState] = useState<FormState>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
@@ -34,6 +35,12 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
       setErrorMsg('Please enter a valid email address.');
       setState('error');
       inputRef.current?.focus();
+      return;
+    }
+
+    if (!ageConfirmed) {
+      setErrorMsg('Please confirm you meet the age requirement.');
+      setState('error');
       return;
     }
 
@@ -109,7 +116,7 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
             key="form"
             initial={false}
             onSubmit={handleSubmit}
-            className={`flex ${compact ? 'flex-row' : 'flex-col sm:flex-row'} gap-2`}
+            className={`flex flex-wrap ${compact ? 'flex-row' : 'flex-col sm:flex-row'} gap-2`}
             noValidate
           >
             <div className="relative flex-1">
@@ -164,6 +171,23 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
                 'Subscribe'
               )}
             </motion.button>
+
+            {/* Age confirmation — COPPA compliance */}
+            <label className={`flex items-start gap-2 ${compact ? 'basis-full' : ''} cursor-pointer`}>
+              <input
+                type="checkbox"
+                checked={ageConfirmed}
+                onChange={(e) => {
+                  setAgeConfirmed(e.target.checked);
+                  if (state === 'error') { setState('idle'); setErrorMsg(''); }
+                }}
+                disabled={state === 'loading'}
+                className="mt-0.5 h-4 w-4 shrink-0 rounded border-glass-border accent-violet"
+              />
+              <span className="text-[11px] leading-relaxed text-foreground-muted/70">
+                I confirm I am at least 13 years old (or have parental consent if under 18).
+              </span>
+            </label>
           </motion.form>
         )}
       </AnimatePresence>

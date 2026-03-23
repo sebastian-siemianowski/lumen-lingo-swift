@@ -411,7 +411,8 @@
       "cookiePolicy": "Cookie政策",
       "cookieSettings": "Cookie设置",
       "eula": "EULA",
-      "dataRequest": "数据请求"
+      "dataRequest": "数据请求",
+      "doNotSell": "不要出售我的信息"
     },
     "newsletter": {
       "heading": "保持关注",
@@ -570,7 +571,19 @@
       "heading": "Children’s Privacy",
       "p1": "LumenLingo is designed for users aged 13 and older. We do not knowingly collect personal information from children under 13 (or the applicable minimum age in your jurisdiction, which may be higher — for example, 16 in Germany and the Netherlands).",
       "p2": "The iOS app does not require account registration and stores data locally, so no personal information is transmitted to us from app users of any age. On the website, we do not knowingly accept newsletter or waitlist signups from anyone under 13.",
-      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at hello@lumenshore.com and we will delete it promptly."
+      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at hello@lumenshore.com and we will delete it promptly.",
+      "coppaHeading": "COPPA合规",
+      "coppaP1": "LumenLingo遵守美国《儿童在线隐私保护法》（COPPA）。我们不会在未获得父母可验证同意的情况下，故意收集、使用或披露13岁以下儿童的个人信息。我们的服务不面吡13岁以下儿童，我们也不向儿童投放广告。",
+      "coppaP2": "所有收集个人信息（如电子邮件地址）的网站表单均包含年龄确认步骤，要求用户确认自己至少13岁，或18岁以下已获得父母或监护人的同意。",
+      "parentalHeading": "父母权利",
+      "parentalP1": "根据COPPA及类似法律，父母和监护人有权：",
+      "parentalLi1": "查看我们可能无意中从其子女处收集的任何个人信息",
+      "parentalLi2": "要求从我们的系统中删除其子女的个人信息",
+      "parentalLi3": "拒绝进一步收集或使用其子女的信息",
+      "parentalLi4": "通过标准iOS设备管理功能管理或删除应用程序及其本地存储的数据",
+      "parentalP2": "要行使任何这些权利，请通过<emailLink>hello@lumenshore.com</emailLink>联系我们。如果我们发现在未获得适当父母同意的情况下收集了13岁以下儿童的个人信息，我们将立即删除该信息。",
+      "ferpaHeading": "教育用途与FERPA",
+      "ferpaP1": "LumenLingo不由教育机构管理或代表教育机构运行。如果学校或教育组织选择向学生推荐LumenLingo，则是其独立决定。该机构有责任确保遵守《家庭教育权利和隐私法》（FERPA），并在指导13岁以下学生使用服务之前获得必要的父母同意。"
     },
     "dataRetention": {
       "heading": "Data Retention & Deletion",
@@ -599,12 +612,36 @@
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "Right to lodge a complaint — you can complain to the ICO (Information Commissioner’s Office) at ico.org.uk or your local supervisory authority.",
-      "ccpaHeading": "Under CCPA (California)",
-      "ccpaLi1": "Right to know what data is collected — detailed above.",
-      "ccpaLi2": "Right to delete — use the in-app Delete Account feature, delete the app, or contact us to remove website data.",
-      "ccpaLi3": "Right to opt out — we do not sell or share personal information for cross-context behavioural advertising.",
-      "ccpaLi4": "Non-discrimination — you will not be treated differently for exercising your rights.",
-      "exerciseRights": "如需行使上述任何权利，请发送电子邮件至 hello@lumenshore.com 或通过我们的<dataRequestLink>数据请求</dataRequestLink>页面提交请求。我们将在30天内（或法律要求的更短时间内）回复。在处理某些请求之前，我们可能需要验证您的身份。"
+      "ccpaHeading": "根据CCPA/CPRA（加州）",
+      "ccpaLi1": "<b>知情权</b>——您可以要求我们披露我们收集的关于您的个人信息的类别和具体内容。请参阅上述收集通知部分。",
+      "ccpaLi2": "<b>删除权</b>——您可以要求删除您的个人信息。使用应用内的删除账户功能、删除应用或联系我们删除网站数据。",
+      "ccpaLi3": "<b>更正权</b>——您可以要求更正不准确的个人信息。应用数据可以直接编辑；网站数据请联系我们。",
+      "ccpaLi4": "<b>选择退出出售或共享的权利</b>——我们不会为跨上下文行为定向广告出售或共享个人信息。无需退出操作。",
+      "exerciseRights": "要行使任何这些权利，请发送电子邮件至hello@lumenshore.com或通过我们的<dataRequestLink>数据请求</dataRequestLink>页面提交请求。我们将在适用于您所在司法管辖区的时限内回复。在处理某些请求之前，我们可能需要验证您的身份。",
+      "ccpaLi5": "<b>限制使用敏感个人信息的权利</b>——我们不收集CCPA/CPRA定义的敏感个人信息。",
+      "ccpaLi6": "<b>不歧视</b>——我们不会因您行使隐私权利而拒绝提供服务、收取不同价格或提供不同质量的服务。",
+      "ccpaResponse": "对于加州居民，我们将在10个工作日内确认收到您的请求，并在45个日历日内作出实质性回复。如需更多时间，我们可能会在提前通知的情况下延长45天。我们可能会通过将您提供的信息与我们存档的数据进行比对来验证您的身份。",
+      "usStateHeading": "根据美国州隐私法律（弗吉尼亚、科罗拉多、康涅狄格等）",
+      "usStateIntro": "如果您居住在弗吉尼亚、科罗拉多、康涅狄格、犹他或其他具有综合性隐私法律的美国州，您拥有与上述CCPA/CPRA所描述的类似权利。这些法律包括《弗吉尼亚消费者数据保护法》（VCDPA）、《科罗拉多隐私法》（CPA）和《康涅狄格数据隐私法》（CTDPA）。",
+      "usStateLi1": "<b>访问权</b> — 您可以确认我们是否处理您的个人数据并要求获取副本。",
+      "usStateLi2": "<b>更正权</b> — 您可以要求更正不准确的个人数据。",
+      "usStateLi3": "<b>删除权</b> — 您可以要求删除您的个人数据。",
+      "usStateLi4": "<b>数据可移植性权</b> — 您可以以可移植、易于使用的格式获取您的数据。",
+      "usStateLi5": "<b>退出权</b> — 您可以拒绝定向广告、个人数据出售和用户画像分析。LumenShore不从事任何此类活动。",
+      "usStateGpc": "科罗拉多和康涅狄格要求我们尊重通用退出信号，例如<gpcLink>全球隐私控制（GPC）</gpcLink>。我们在所有司法管辖区尊重GPC。",
+      "usStateAppeal": "如果我们拒绝了您的请求，您可以通过hello@lumenshore.com联系我们提出申诉。我们将在60天内回复申诉。如果您对结果不满意，可以联系您所在州的总检察长办公室。",
+      "verificationHeading": "验证与响应流程",
+      "verificationP1": "为保护您的数据，我们将在处理权利请求前验证您的身份。我们可能会要求您确认与您的账户或订阅关联的电子邮件地址，或提供与我们记录匹配的其他识别信息。",
+      "verificationP2": "您可以指定授权代理人代表您提出请求。我们将要求提供代理人授权的证明（如签名的授权书或委托书），并可能仍然会直接验证您的身份。",
+      "timeframesHeading": "响应时限",
+      "timeframesCcpa": "<b>CCPA/CPRA（加利福尼亚）</b> — 10个工作日内确认接收；45个日历日内实质性回复（可在提前通知后再延长45天）。",
+      "timeframesVcdpa": "<b>VCDPA（弗吉尼亚）</b> — 45天内回复（可在提前通知后再延长45天）。",
+      "timeframesCpa": "<b>CPA（科罗拉多）</b> — 45天内回复（在合理必要时可再延长45天）。",
+      "timeframesCtdpa": "<b>CTDPA（康涅狄格）</b> — 45天内回复（可在提前通知后再延长45天）。",
+      "timeframesGdpr": "<b>GDPR（欧洲经济区和英国）</b> — 一个日历月内回复（复杂请求可再延长两个月）。",
+      "californiaHeading": "您的加利福尼亚隐私权利",
+      "californiaP1": "根据《加利福尼亚民法典》第1798.83条（「Shine the Light」），加利福尼亚居民可以要求了解向第三方披露个人信息用于直接营销目的的情况。LumenShore不会为第三方的直接营销目的而向其披露个人信息。",
+      "californiaP2": "要行使任何加利福尼亚隐私权利（包括CCPA/CPRA下的权利），请以「加利福尼亚隐私权利」为主题发送电子邮件至<emailLink>hello@lumenshore.com</emailLink>，或通过我们的<dataRequestLink>数据请求</dataRequestLink>页面提交请求。"
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -714,7 +751,89 @@
       },
       "survival": "Our right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data that was derived from your use of the Service."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "ccpaNotice": {
+      "heading": "加州数据收集通知（CCPA/CPRA）",
+      "intro": "如果您是加州居民，《加州消费者隐私法》（CCPA）和《加州隐私权法》（CPRA）要求我们披露我们收集的个人信息类别、收集目的以及该信息是否被出售或共享。此通知在收集时或收集前提供。",
+      "tableHeaders": {
+        "category": "CCPA类别",
+        "dataCollected": "收集的数据",
+        "purpose": "目的",
+        "soldOrShared": "是否出售或共享？",
+        "retention": "保留期限"
+      },
+      "categories": {
+        "identifiers": {
+          "category": "标识符",
+          "dataCollected": "电子邮件地址（网站新闻通讯和等候名单注册）",
+          "purpose": "发送产品更新、语言学习提示和等候名单通知",
+          "soldOrShared": "否",
+          "retention": "直到取消订阅，另加最多30天"
+        },
+        "internetActivity": {
+          "category": "互联网或其他电子网络活动",
+          "dataCollected": "页面浏览、点击事件、错误日志、会话回放（经同意）",
+          "purpose": "网站分析、错误检测、性能监控和用户体验改进",
+          "soldOrShared": "否",
+          "retention": "90天（Sentry），聚合（Vercel Analytics）"
+        },
+        "education": {
+          "category": "教育信息",
+          "dataCollected": "语言学习进度、练习分数、已掌握词汇（仅限iOS应用，存储在设备上）",
+          "purpose": "个性化您的学习体验并跟踪进度",
+          "soldOrShared": "否",
+          "retention": "直到您删除应用或账户"
+        },
+        "geolocation": {
+          "category": "地理位置数据",
+          "dataCollected": "未收集",
+          "purpose": "不适用",
+          "soldOrShared": "否",
+          "retention": "不适用"
+        },
+        "audioVisual": {
+          "category": "音频、电子、视觉或类似信息",
+          "dataCollected": "未收集",
+          "purpose": "不适用",
+          "soldOrShared": "否",
+          "retention": "不适用"
+        },
+        "professional": {
+          "category": "职业或就业相关信息",
+          "dataCollected": "未收集",
+          "purpose": "不适用",
+          "soldOrShared": "否",
+          "retention": "不适用"
+        },
+        "inferences": {
+          "category": "推断",
+          "dataCollected": "未进行",
+          "purpose": "不适用",
+          "soldOrShared": "否",
+          "retention": "不适用"
+        },
+        "sensitive": {
+          "category": "敏感个人信息",
+          "dataCollected": "未收集",
+          "purpose": "不适用",
+          "soldOrShared": "否",
+          "retention": "不适用"
+        }
+      },
+      "doNotSell": {
+        "heading": "不要出售或共享我的个人信息",
+        "p1": "LumenShore不会向第三方出售您的个人信息。我们不会为了跨上下文行为定向广告而共享您的个人信息。由于我们不从事这些活动，无需选择退出——但我们根据CCPA/CPRA的要求提供此披露。",
+        "p2": "如果我们的做法在未来发生变化，我们将更新此政策并在任何出售或共享开始之前提供退出机制。",
+        "p3": "加州居民还可以使用<gpcLink>全局隐私控制（GPC）</gpcLink>浏览器信号来传达退出偏好。我们尊重GPC作为CPRA下的有效退出请求。"
+      }
+    },
+    "gpcSignals": {
+      "heading": "全球隐私控制与禁止跟踪",
+      "p1": "我们尊重全球隐私控制（GPC）信号。当您的浏览器发送GPC信号时（通过Sec-GPC HTTP头或navigator.globalPrivacyControl JavaScript API），我们将其视为选择退出非必要数据处理的有效请求。",
+      "p2": "根据加利福尼亚州隐私权利法（CPRA），GPC构成选择退出个人信息销售或共享的有效请求。根据科罗拉多州隐私法和康涅狄格州数据隐私法，我们有义务尊重包括GPC在内的通用选择退出机制。",
+      "p3": "当检测到GPC信号时，我们会自动拑绝网站上所有非必要的跟踪——包括分析事件和会话重放——无论之前的Cookie偏好设置如何。",
+      "p4": "我们也尊重禁止跟踪（DNT）浏览器信号。虽然DNT已被W3C弃用，但我们仍将其与GPC同等对待，以保持一致性并展示我们对隐私的承诺。"
+    }
   },
   "Terms": {
     "meta": {
@@ -879,7 +998,9 @@
         "label": "会话回放",
         "description": "在发生错误时记录匿名化的浏览会话，以帮助我们重现和修复Bug。所有文本和媒体均已屏蔽。"
       }
-    }
+    },
+    "gpcNotice": "您的浏览器的全球隐私控制（GPC）信号已启用。非必要的跟踪已自动禁用，以尊重您的隐私偏好。要启用这些类别，请先在浏览器设置中禁用GPC。",
+    "gpcLearnMore": "了解更多GPC信息"
   },
   "CookiePage": {
     "meta": {
@@ -999,6 +1120,12 @@
       "category": "类别",
       "purpose": "目的",
       "duration": "期限"
+    },
+    "gpc": {
+      "heading": "全球隐私控制与禁止跟踪",
+      "p1": "我们根据加利福尼亚州隐私权利法（CPRA）、科罗拉多州隐私法（CPA）和康涅狄格州数据隐私法（CTDPA）的要求，尊重全球隐私控制（GPC）浏览器信号。当您的浏览器发送GPC信号时，我们会自动禁用所有非必要的跟踪——包括分析和会话重放——无论之前的Cookie偏好设置如何。",
+      "p2": "我们也尊重禁止跟踪（DNT）浏览器信号。虽然DNT已不再作为W3C维护的Web标准，但我们仍将其与GPC同等对待，作为良好实践。",
+      "p3": "如果您在浏览器中禁用了GPC或DNT，可以使用页面底部的“Cookie设置”按钮更新Cookie偏好。"
     }
   },
   "Eula": {
