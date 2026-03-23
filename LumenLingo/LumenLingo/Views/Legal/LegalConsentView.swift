@@ -469,6 +469,7 @@ struct LegalConsentView: View {
     private func acceptLegalPolicies() {
         profile?.legalConsentVersion = Self.currentVersion
         profile?.legalConsentDate = Date()
+        PrivacyAuditLogger.log(action: "legal_consent_accepted", detail: "version=\(Self.currentVersion)")
         dismiss()
     }
 }

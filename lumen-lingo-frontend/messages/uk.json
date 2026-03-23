@@ -421,7 +421,12 @@
     "downloadAppStore": "Завантажити з App Store",
     "copyright": "LumenShore Ltd. Усі права захищені.",
     "madeIn": "Створено з турботою у Великій Британії",
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "companyDisclosures": {
+      "name": "Lumenshore Limited — Номер компанії 09607326 — Зареєстрована в Англії та Уельсі",
+      "address": "Юридична адреса: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "vatNumber": "Реєстраційний номер ПДВ: GB 270411929"
+    }
   },
   "NetworkStatus": {
     "offline": "Ви офлайн — деякі функції можуть бути недоступні"

@@ -499,6 +499,26 @@ extension AppStrings {
         gdprExportSuccess: "Datos exportados correctamente",
         gdprExportEmpty: "No hay datos personales para exportar",
 
-        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+
+        companyName: "Lumenshore Limited",
+        companyNumber: "N.º de empresa 09607326",
+        companyRegistration: "Registrada en Inglaterra y Gales",
+        companyAddress: "Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+        companyVAT: "IVA: GB 270411929",
+
+        cookiePolicyTitle: "Política de cookies",
+        legalUpdated: "Actualizado en marzo de 2025",
+
+        viewMyDataTitle: "Ver mis datos",
+        viewMyDataDesc: "Mira qué datos almacena LumenLingo sobre ti",
+        dataProfileInfo: "Información del perfil",
+        dataGameRecords: "Registros de progreso",
+        dataMasteredItems: "Elementos dominados",
+        dataFavorites: "Categorías favoritas",
+        dataICloudSync: "Sincronización iCloud",
+        dataEnabled: "Activada",
+        dataDisabled: "Desactivada",
+        dataStorageEstimate: "Almacenamiento estimado"
     )
 }

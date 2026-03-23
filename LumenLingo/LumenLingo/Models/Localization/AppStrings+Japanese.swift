@@ -498,6 +498,26 @@ extension AppStrings {
         gdprExportSuccess: "データのエクスポートが完了しました",
         gdprExportEmpty: "エクスポートする個人データがありません",
 
-        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+
+        companyName: "Lumenshore Limited",
+        companyNumber: "会社番号 09607326",
+        companyRegistration: "イングランドおよびウェールズ登記",
+        companyAddress: "Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+        companyVAT: "VAT登録番号: GB 270411929",
+
+        cookiePolicyTitle: "Cookieポリシー",
+        legalUpdated: "2025年3月更新",
+
+        viewMyDataTitle: "マイデータを表示",
+        viewMyDataDesc: "LumenLingoがあなたについて保存しているデータを確認",
+        dataProfileInfo: "プロフィール情報",
+        dataGameRecords: "ゲーム進捗記録",
+        dataMasteredItems: "習得済みアイテム",
+        dataFavorites: "お気に入りカテゴリ",
+        dataICloudSync: "iCloud同期",
+        dataEnabled: "有効",
+        dataDisabled: "無効",
+        dataStorageEstimate: "推定ストレージ"
     )
 }

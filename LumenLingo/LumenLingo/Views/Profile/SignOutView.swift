@@ -427,6 +427,7 @@ struct SignOutView: View {
 
     @MainActor
     private func deleteAllSwiftData() {
+        PrivacyAuditLogger.log(action: "account_data_deleted", detail: "all_swiftdata_models")
         // Delete all model instances from the context
         do {
             try modelContext.delete(model: GameProgressRecord.self)

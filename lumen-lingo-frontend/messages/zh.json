@@ -421,7 +421,12 @@
     "downloadAppStore": "从 App Store 下载",
     "copyright": "LumenShore Ltd. 保留所有权利。",
     "madeIn": "用心打造于英国",
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "companyDisclosures": {
+      "name": "Lumenshore Limited — 公司编号 09607326 — 注册于英格兰和威尔士",
+      "address": "注册地址：Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "vatNumber": "增值税登记号：GB 270411929"
+    }
   },
   "NetworkStatus": {
     "offline": "你已离线——部分功能可能不可用"

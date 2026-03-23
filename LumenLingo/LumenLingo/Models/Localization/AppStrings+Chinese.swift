@@ -498,6 +498,26 @@ extension AppStrings {
         gdprExportSuccess: "数据导出成功",
         gdprExportEmpty: "没有可导出的个人数据",
 
-        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+
+        companyName: "Lumenshore Limited",
+        companyNumber: "公司编号 09607326",
+        companyRegistration: "注册于英格兰和威尔士",
+        companyAddress: "Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+        companyVAT: "增值税登记号：GB 270411929",
+
+        cookiePolicyTitle: "Cookie 政策",
+        legalUpdated: "2025年3月更新",
+
+        viewMyDataTitle: "查看我的数据",
+        viewMyDataDesc: "查看 LumenLingo 存储的关于您的数据",
+        dataProfileInfo: "个人资料信息",
+        dataGameRecords: "游戏进度记录",
+        dataMasteredItems: "已掌握项目",
+        dataFavorites: "收藏分类",
+        dataICloudSync: "iCloud 同步",
+        dataEnabled: "已启用",
+        dataDisabled: "已禁用",
+        dataStorageEstimate: "预计存储空间"
     )
 }

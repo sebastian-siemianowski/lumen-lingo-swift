@@ -1,7 +1,12 @@
 import SwiftUI
 import SwiftData
+import SafariServices
 
 // MARK: - Settings View
+
+extension URL: @retroactive Identifiable {
+    public var id: String { absoluteString }
+}
 
 /// Dedicated settings screen accessible from the bottom tab bar.
 /// Contains Appearance, Sound, Sync, and Sign Out tabs previously in ProfileView.
@@ -37,6 +42,9 @@ struct SettingsView: View {
     // GDPR data export
     @Environment(\.modelContext) private var modelContext
     @State private var showGDPRExportSuccess = false
+
+    // In-app legal document browser
+    @State private var legalURL: URL?
 
     private var availableAppearanceSubTabs: [AppearanceSubTab] {
         AppearanceSubTab.allCases.filter { isDark || $0 != .nebulaDrift }
@@ -126,6 +134,10 @@ struct SettingsView: View {
             withAnimation(.easeInOut(duration: 3).repeatForever(autoreverses: true)) {
                 glowPulse = 0.8
             }
+        }
+        .sheet(item: $legalURL) { url in
+            SafariView(url: url)
+                .ignoresSafeArea()
         }
     }
 
@@ -713,7 +725,41 @@ struct SettingsView: View {
     // MARK: - GDPR Data Export
 
     private var gdprExportSection: some View {
-        settingsCard(tint: .green.opacity(0.4)) {
+        VStack(spacing: 12) {
+            // View My Data
+            settingsCard(tint: .cyan.opacity(0.3)) {
+                NavigationLink {
+                    ViewMyDataView()
+                } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "shield.checkered")
+                            .font(.system(size: 20, weight: .semibold))
+                            .foregroundStyle(.cyan)
+
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(L.viewMyDataTitle)
+                                .font(.system(size: 15, weight: .semibold))
+                                .foregroundStyle(isDark ? .white : .primary)
+                            Text(L.viewMyDataDesc)
+                                .font(.system(size: 12))
+                                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                                .lineLimit(2)
+                        }
+
+                        Spacer()
+
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 12, weight: .semibold))
+                            .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 14)
+                }
+                .buttonStyle(.plain)
+            }
+
+            // Export Data
+            settingsCard(tint: .green.opacity(0.4)) {
             VStack(spacing: 12) {
                 HStack(spacing: 12) {
                     Image(systemName: "arrow.down.doc.fill")
@@ -759,9 +805,11 @@ struct SettingsView: View {
                 .padding(.bottom, 14)
             }
         }
+        }
     }
 
     private func exportGDPRData() {
+        PrivacyAuditLogger.log(action: "gdpr_data_export", detail: "user_initiated")
         let data = GDPRDataExporter.exportAllData(context: modelContext)
         guard !data.isEmpty else { return }
 
@@ -832,19 +880,47 @@ struct SettingsView: View {
                         color: .blue,
                         url: "https://lumenlingo.com/en/eula"
                     )
+                    Divider().padding(.leading, 44).background(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
+                    legalLink(
+                        title: L.cookiePolicyTitle,
+                        icon: "globe",
+                        color: .orange,
+                        url: "https://lumenlingo.com/en/privacy#cookie-policy"
+                    )
                 }
             }
+
+            // Version / last-updated badge
+            Text("\(L.legalVersion) · \(L.legalUpdated)")
+                .font(.system(size: 10))
+                .foregroundStyle(isDark ? .white.opacity(0.25) : .secondary.opacity(0.5))
+                .padding(.top, 2)
 
             Text(L.trademarkAttribution)
                 .font(.system(size: 9))
                 .foregroundStyle(isDark ? .white.opacity(0.2) : .secondary.opacity(0.5))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 16)
+
+            // UK Companies Act 2006 s.82 — Statutory disclosures
+            VStack(spacing: 2) {
+                Text(L.companyName)
+                Text("\(L.companyNumber) · \(L.companyRegistration)")
+                Text(L.companyAddress)
+                Text(L.companyVAT)
+            }
+            .font(.system(size: 9))
+            .foregroundStyle(isDark ? .white.opacity(0.18) : .secondary.opacity(0.4))
+            .multilineTextAlignment(.center)
+            .padding(.horizontal, 16)
+            .padding(.top, 4)
         }
     }
 
     private func legalLink(title: String, icon: String, color: Color, url: String) -> some View {
-        Link(destination: URL(string: url)!) {
+        Button {
+            legalURL = URL(string: url)
+        } label: {
             HStack(spacing: 12) {
                 Image(systemName: icon)
                     .font(.system(size: 15, weight: .semibold))
@@ -857,7 +933,7 @@ struct SettingsView: View {
 
                 Spacer()
 
-                Image(systemName: "arrow.up.right")
+                Image(systemName: "chevron.right")
                     .font(.system(size: 11, weight: .semibold))
                     .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
             }

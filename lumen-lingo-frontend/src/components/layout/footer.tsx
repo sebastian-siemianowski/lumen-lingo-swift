@@ -230,8 +230,15 @@ export function Footer() {
             </div>
           </div>
 
+          {/* UK Companies Act 2006 s.82 — Statutory disclosures */}
+          <div className="mt-4 text-center text-[10px] leading-relaxed text-foreground-muted/50">
+            <p>{t('companyDisclosures.name')}</p>
+            <p>{t('companyDisclosures.address')}</p>
+            <p>{t('companyDisclosures.vatNumber')}</p>
+          </div>
+
           {/* Apple trademark attribution */}
-          <p className="mt-4 text-center text-[10px] text-foreground-muted/50">
+          <p className="mt-3 text-center text-[10px] text-foreground-muted/50">
             {t('trademarkAttribution')}
           </p>
         </div>

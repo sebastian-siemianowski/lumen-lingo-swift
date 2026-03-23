@@ -502,6 +502,26 @@ extension AppStrings {
         gdprExportSuccess: "Data exported successfully",
         gdprExportEmpty: "No personal data to export",
 
-        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+
+        companyName: "Lumenshore Limited",
+        companyNumber: "Company No. 09607326",
+        companyRegistration: "Registered in England and Wales",
+        companyAddress: "Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+        companyVAT: "VAT: GB 270411929",
+
+        cookiePolicyTitle: "Cookie Policy",
+        legalUpdated: "Updated March 2025",
+
+        viewMyDataTitle: "View My Data",
+        viewMyDataDesc: "See what data LumenLingo stores about you",
+        dataProfileInfo: "Profile Information",
+        dataGameRecords: "Game Progress Records",
+        dataMasteredItems: "Mastered Items",
+        dataFavorites: "Favourite Categories",
+        dataICloudSync: "iCloud Sync",
+        dataEnabled: "Enabled",
+        dataDisabled: "Disabled",
+        dataStorageEstimate: "Estimated Storage"
     )
 }

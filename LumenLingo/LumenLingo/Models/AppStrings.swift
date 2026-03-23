@@ -513,6 +513,29 @@ struct AppStrings: Sendable {
     // MARK: - Trademark Attribution
     let trademarkAttribution: String         // Apple trademark attribution line
 
+    // MARK: - Company Disclosures (UK Companies Act 2006 s.82)
+    let companyName: String                  // "Lumenshore Limited"
+    let companyNumber: String                // "Company No. 09607326"
+    let companyRegistration: String          // "Registered in England and Wales"
+    let companyAddress: String               // Registered office address
+    let companyVAT: String                   // "VAT: GB 270411929"
+
+    // MARK: - In-App Legal
+    let cookiePolicyTitle: String            // "Cookie Policy"
+    let legalUpdated: String                 // "Updated March 2025"
+
+    // MARK: - View My Data
+    let viewMyDataTitle: String              // "View My Data"
+    let viewMyDataDesc: String               // "See what data LumenLingo stores"
+    let dataProfileInfo: String              // "Profile Information"
+    let dataGameRecords: String              // "Game Progress Records"
+    let dataMasteredItems: String            // "Mastered Items"
+    let dataFavorites: String                // "Favourite Categories"
+    let dataICloudSync: String               // "iCloud Sync"
+    let dataEnabled: String                  // "Enabled"
+    let dataDisabled: String                 // "Disabled"
+    let dataStorageEstimate: String          // "Estimated Storage"
+
     // MARK: - Factory
 
     static func forLanguage(_ lang: SupportedLanguage) -> AppStrings {

@@ -25,6 +25,7 @@
 		135AE1BCF8F739B94DE65461 /* TrialConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCAB9270E7EDFE53A120B2 /* TrialConfirmationView.swift */; };
 		158A5B1BCC24775744979354 /* MetalCosmicRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BB8A676728B666DFB159B8 /* MetalCosmicRenderer.swift */; };
 		1925497ACD434C20F1F46516 /* ShareableCardRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F6AFAACA05ACDF737328C2 /* ShareableCardRenderer.swift */; };
+		19B2041F2C7951080A3DF163 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4667737EDC913923E157DE9E /* SafariView.swift */; };
 		1AA20069E36472C4917C58FC /* wordbuilder_english_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = EFE521ADD54E6635CA76C3A1 /* wordbuilder_english_spanish.json */; };
 		1AB4077E169FE7D63EE2B94D /* grammar_chinese_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 354EAD059D0A762F62E2B0AF /* grammar_chinese_english.json */; };
 		1ABB6C7745E790C07ADF389F /* TierOnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D2B89837318B6C8338C74C /* TierOnboardingFlow.swift */; };
@@ -44,6 +45,7 @@
 		2A74FD303D0EC9DE6CBE598F /* wordbuilder_german_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 62C61FD456ED0B02634CD315 /* wordbuilder_german_polish.json */; };
 		2A87FF2626ED84C5687E1D27 /* MilestonePredictionWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF80C185D1108772AD43DE80 /* MilestonePredictionWidget.swift */; };
 		2B8FCD7F1A048D812A58D29E /* flashcards_english_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 184332E9A816388D71A52CC4 /* flashcards_english_polish.json */; };
+		2C9F4233E25374F0735AC2A7 /* ViewMyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADEC7CAD7866A0FF6DF742F /* ViewMyDataView.swift */; };
 		2D10BFD2A89BA820AEAC4490 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082370545F169B205DEB7118 /* DataModels.swift */; };
 		2D9C5E4E813ED3895FB28EBC /* CollapsibleSectionTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90794C6958EE73CEC20A8F /* CollapsibleSectionTheme.swift */; };
 		2F46AAA7A365380EDAAAA25F /* Midnight-Jazz-Piano.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FA63307B7ED662E74F5272BE /* Midnight-Jazz-Piano.m4a */; };
@@ -246,6 +248,7 @@
 		F5B050BBD9675556C37EF44F /* grammar_french_english.json in Resources */ = {isa = PBXBuildFile; fileRef = EE209D9EF404AA5D75D6D840 /* grammar_french_english.json */; };
 		F6F7A30CD0594D8726E59FA2 /* MetalQuantumFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D714A552DAA2C0B4C1F0B8 /* MetalQuantumFlowView.swift */; };
 		F7A415EA51E56EA8A80006E4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA37A22083A72444CE3F5374 /* SettingsView.swift */; };
+		F91C2DB7E57D68E7EED93800 /* PrivacyAuditLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3907B67E2B962501153B8F7 /* PrivacyAuditLogger.swift */; };
 		F9CEA1D33EF3254085E2BE83 /* AccuracyHeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B39BE55826C6132EE40D6 /* AccuracyHeatmapView.swift */; };
 		FC1203F47C411DF45D54CA27 /* wordbuilder_english_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 2516A4527A7F21A7FD49DA48 /* wordbuilder_english_polish.json */; };
 		FD48E593F72EC304EE27AD31 /* GDPRDataExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC911719A82F3B1ACCFB62A4 /* GDPRDataExporter.swift */; };
@@ -338,6 +341,7 @@
 		424CBBE39C8829383E1E420C /* PDFGeneratingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFGeneratingView.swift; sourceTree = "<group>"; };
 		44222FA157B1496887D5F6BD /* flashcards_polish_german.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_german.json; sourceTree = "<group>"; };
 		45A2278E3B176354236AF109 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		4667737EDC913923E157DE9E /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		4721CE7D6096C14C2E5DF593 /* grammar_english_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_english_arabic.json; sourceTree = "<group>"; };
 		4891182963548D55B27CD859 /* flashcards_chinese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_chinese_english.json; sourceTree = "<group>"; };
 		4B64C00B2CC60355A29B834B /* FeatureTransitionOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTransitionOverlay.swift; sourceTree = "<group>"; };
@@ -379,6 +383,7 @@
 		6822F2E4E589FD329251ABF1 /* grammar_german_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_german_polish.json; sourceTree = "<group>"; };
 		6894E9DF06377B29632C3002 /* LiquidGlassPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassPagination.swift; sourceTree = "<group>"; };
 		6A5378AC5EFC25C439C4A702 /* SettingsSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSliderView.swift; sourceTree = "<group>"; };
+		6ADEC7CAD7866A0FF6DF742F /* ViewMyDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMyDataView.swift; sourceTree = "<group>"; };
 		7013FEB67D3F0AB101B4EF0A /* SchemeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeCardView.swift; sourceTree = "<group>"; };
 		7282D3546969AE1FB324D6B0 /* PDFHapticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFHapticService.swift; sourceTree = "<group>"; };
 		72DC7028C7F8CC902DD56A80 /* flashcards_french_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_french_english.json; sourceTree = "<group>"; };
@@ -453,6 +458,7 @@
 		B1CD6316B947998E54ACB4AF /* flashcards_polish_japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_japanese.json; sourceTree = "<group>"; };
 		B2044354899CA1CB213DE5C1 /* Observatory-Night-2.m4a */ = {isa = PBXFileReference; path = "Observatory-Night-2.m4a"; sourceTree = "<group>"; };
 		B24574C6A55AE978C5AD2FF2 /* Japanese-Bamboo-Forest.m4a */ = {isa = PBXFileReference; path = "Japanese-Bamboo-Forest.m4a"; sourceTree = "<group>"; };
+		B3907B67E2B962501153B8F7 /* PrivacyAuditLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyAuditLogger.swift; sourceTree = "<group>"; };
 		B3982631873ABBAD71CBA185 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		B3C1358AD4F62005FA1B3DBF /* wordbuilder_polish_french.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_french.json; sourceTree = "<group>"; };
 		B4865403B88C2BF7DFD72D5E /* wordbuilder_english_japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_japanese.json; sourceTree = "<group>"; };
@@ -670,6 +676,7 @@
 				D3DCA4D4638FDF2525769692 /* PostSessionNudge.swift */,
 				5881A9A303C2E0066D3F9606 /* PremiumCTAButton.swift */,
 				CD7502A660C79553EC0C2165 /* ProgressCelebrationView.swift */,
+				4667737EDC913923E157DE9E /* SafariView.swift */,
 				5EFC389872A53408E1404066 /* TierGlassCard.swift */,
 			);
 			path = Shared;
@@ -926,6 +933,7 @@
 			isa = PBXGroup;
 			children = (
 				BA37A22083A72444CE3F5374 /* SettingsView.swift */,
+				6ADEC7CAD7866A0FF6DF742F /* ViewMyDataView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -1008,6 +1016,7 @@
 				7282D3546969AE1FB324D6B0 /* PDFHapticService.swift */,
 				20DA8FA91B2C310EC779DC40 /* PerformanceMonitor.swift */,
 				BCFC3AE7BAAD996B05B2D157 /* PracticeTimeTracker.swift */,
+				B3907B67E2B962501153B8F7 /* PrivacyAuditLogger.swift */,
 				310DB5BD274A6F504FBCFFC1 /* ProgressService.swift */,
 				E3FCD1AFF7B3A31B781C8AA1 /* SessionEngine.swift */,
 				33F6AFAACA05ACDF737328C2 /* ShareableCardRenderer.swift */,
@@ -1492,6 +1501,7 @@
 				986D3C34AC49DB0AF388FDBC /* PremiumCTAButton.swift in Sources */,
 				25E93CEE1FC4483A4DEC2CE7 /* PremiumFeatureBadge.swift in Sources */,
 				3D201170B7B43BACCA089962 /* PremiumFeatureCarousel.swift in Sources */,
+				F91C2DB7E57D68E7EED93800 /* PrivacyAuditLogger.swift in Sources */,
 				E5C95676BF77324EABAACEC0 /* ProfileView.swift in Sources */,
 				B58EF9602E893600A943B8A6 /* ProfileViewModel.swift in Sources */,
 				5765D16EDA45281EE2C5F76F /* ProgressCelebrationView.swift in Sources */,
@@ -1502,6 +1512,7 @@
 				D2CB9DACCE1C173522A816D0 /* QuantumFlowPreset.metal in Sources */,
 				98C810678A94878277E25C89 /* QuantumFlowSettingsView.swift in Sources */,
 				3ADCCD186B86AF4E7ED8230B /* QuantumFlowView.swift in Sources */,
+				19B2041F2C7951080A3DF163 /* SafariView.swift in Sources */,
 				DA7EACF50CDA6F892FAE9972 /* SchemeCardView.swift in Sources */,
 				8B9D30E04526B62612E7F623 /* SessionEngine.swift in Sources */,
 				8EDBE1142ECA02BB7746D49D /* SettingsSliderView.swift in Sources */,
@@ -1539,6 +1550,7 @@
 				F15DA9BF1C2DA25798FE4855 /* TrialEndedView.swift in Sources */,
 				E374714E6F741D49D839BDB9 /* UpgradePromptManager.swift in Sources */,
 				EB14E6E4C10C13B33A501ED1 /* UpgradePromptView.swift in Sources */,
+				2C9F4233E25374F0735AC2A7 /* ViewMyDataView.swift in Sources */,
 				016A5792B73AF67510461454 /* WeeklyTrendWidget.swift in Sources */,
 				9B95136E0053CB309F0470A0 /* WordBuilderView.swift in Sources */,
 				686CCE8D7420E55A83113C58 /* WordBuilderViewModel.swift in Sources */,

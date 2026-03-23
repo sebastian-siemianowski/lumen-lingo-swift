@@ -498,6 +498,26 @@ extension AppStrings {
         gdprExportSuccess: "Дані успішно експортовано",
         gdprExportEmpty: "Немає персональних даних для експорту",
 
-        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+
+        companyName: "Lumenshore Limited",
+        companyNumber: "Номер компанії 09607326",
+        companyRegistration: "Зареєстрована в Англії та Уельсі",
+        companyAddress: "Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+        companyVAT: "Реєстраційний номер ПДВ: GB 270411929",
+
+        cookiePolicyTitle: "Політика файлів cookie",
+        legalUpdated: "Оновлено березень 2025",
+
+        viewMyDataTitle: "Переглянути мої дані",
+        viewMyDataDesc: "Дізнайтеся, які дані зберігає LumenLingo про вас",
+        dataProfileInfo: "Інформація профілю",
+        dataGameRecords: "Записи ігрового прогресу",
+        dataMasteredItems: "Засвоєні елементи",
+        dataFavorites: "Улюблені категорії",
+        dataICloudSync: "Синхронізація iCloud",
+        dataEnabled: "Увімкнено",
+        dataDisabled: "Вимкнено",
+        dataStorageEstimate: "Оцінка сховища"
     )
 }

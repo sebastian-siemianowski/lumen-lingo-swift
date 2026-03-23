@@ -421,7 +421,12 @@
     "downloadAppStore": "حمّل من App Store",
     "copyright": "LumenShore Ltd. جميع الحقوق محفوظة.",
     "madeIn": "صُنع بعناية في المملكة المتحدة",
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "companyDisclosures": {
+      "name": "Lumenshore Limited — رقم الشركة 09607326 — مسجّلة في إنجلترا وويلز",
+      "address": "المقر المسجّل: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "vatNumber": "رقم تسجيل ضريبة القيمة المضافة: GB 270411929"
+    }
   },
   "NetworkStatus": {
     "offline": "أنت غير متصل — بعض الميزات قد لا تكون متاحة"

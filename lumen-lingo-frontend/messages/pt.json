@@ -421,7 +421,12 @@
     "downloadAppStore": "Baixar na App Store",
     "copyright": "LumenShore Ltd. Todos os direitos reservados.",
     "madeIn": "Feito com carinho no Reino Unido",
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "companyDisclosures": {
+      "name": "Lumenshore Limited — N.º da empresa 09607326 — Registada em Inglaterra e País de Gales",
+      "address": "Sede social: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "vatNumber": "N.º de IVA: GB 270411929"
+    }
   },
   "NetworkStatus": {
     "offline": "Você está offline — algumas funcionalidades podem estar indisponíveis"

@@ -421,7 +421,12 @@
     "downloadAppStore": "App Storeでダウンロード",
     "copyright": "LumenShore Ltd. All rights reserved.",
     "madeIn": "英国で心を込めて作られています",
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "companyDisclosures": {
+      "name": "Lumenshore Limited — 会社番号 09607326 — イングランドおよびウェールズ登記",
+      "address": "登記上の住所: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "vatNumber": "VAT登録番号: GB 270411929"
+    }
   },
   "NetworkStatus": {
     "offline": "オフラインです — 一部の機能が利用できない場合があります"
