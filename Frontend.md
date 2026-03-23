@@ -2013,24 +2013,24 @@ error messages — without falling back to English.
 
 ### Acceptance Criteria
 
-- [ ] All 14 English blog posts translated to Polish (14 new)
-- [ ] All 14 English blog posts translated to Arabic (14 new)
-- [ ] All 14 English blog posts translated to Ukrainian (14 new)
-- [ ] Arabic blog posts render correctly in RTL layout (Story 15.3 dependency)
-- [ ] Ukrainian blog posts use correct Cyrillic rendering
-- [ ] Translated posts placed in `src/content/blog/{locale}/` following established structure
-- [ ] Frontmatter translated; same rules as Story 15.5
-- [ ] All locale-specific blog RSS feeds are valid for PL, AR, UK
+- [x] All 14 English blog posts translated to Polish (14 new)
+- [x] All 14 English blog posts translated to Arabic (14 new)
+- [x] All 14 English blog posts translated to Ukrainian (14 new)
+- [x] Arabic blog posts render correctly in RTL layout (Story 15.3 dependency)
+- [x] Ukrainian blog posts use correct Cyrillic rendering
+- [x] Translated posts placed in `src/content/blog/{locale}/` following established structure
+- [x] Frontmatter translated; same rules as Story 15.5
+- [x] All locale-specific blog RSS feeds are valid for PL, AR, UK
 
 ### Subtasks
 
-- [ ] 15.7.1 — Create `src/content/blog/pl/` — translate all 14 English posts to Polish
-- [ ] 15.7.2 — Create `src/content/blog/ar/` — translate all 14 English posts to Arabic
-- [ ] 15.7.3 — Create `src/content/blog/uk/` — translate all 14 English posts to Ukrainian
-- [ ] 15.7.4 — Translate frontmatter (`title`, `description`) for all PL, AR, UK posts
-- [ ] 15.7.5 — Verify Arabic blog posts render correctly in RTL (prose direction, image placement, list markers)
-- [ ] 15.7.6 — Verify Ukrainian posts render correctly with Cyrillic font stack
-- [ ] 15.7.7 — Validate all locale RSS feeds pass W3C Feed Validator
+- [x] 15.7.1 — Create `src/content/blog/pl/` — translate all 14 English posts to Polish
+- [x] 15.7.2 — Create `src/content/blog/ar/` — translate all 14 English posts to Arabic
+- [x] 15.7.3 — Create `src/content/blog/uk/` — translate all 14 English posts to Ukrainian
+- [x] 15.7.4 — Translate frontmatter (`title`, `description`) for all PL, AR, UK posts
+- [x] 15.7.5 — Verify Arabic blog posts render correctly in RTL (prose direction, image placement, list markers)
+- [x] 15.7.6 — Verify Ukrainian posts render correctly with Cyrillic font stack
+- [x] 15.7.7 — Validate all locale RSS feeds pass W3C Feed Validator
 
 ---
 

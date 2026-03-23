@@ -154,6 +154,40 @@
 - Legal mechanism for each transfer stated
 - Compliant with UK GDPR Chapter V and EU GDPR Chapter V
 
+### Story 1.4: Aggregate & De-identified Data Rights
+
+**As a** business
+**I want** explicit terms permitting Lumenshore to use aggregate, anonymised, and de-identified data without restriction
+**So that** the company can publish usage insights, improve the product, and create marketing content without privacy risk
+
+#### Subtasks:
+- [ ] 1.4.1 — Privacy Policy: add "Aggregated and De-identified Data" section:
+  - "We may collect, aggregate, and de-identify personal data so that it can no longer reasonably identify any individual"
+  - "Once de-identified, such data is no longer personal data under GDPR, UK GDPR, CCPA, or any applicable data protection law"
+  - "We may use, disclose, and publish de-identified and aggregated data for any purpose, including but not limited to: product improvement, research, analytics, marketing, benchmarking, and public reports"
+- [ ] 1.4.2 — Terms of Service: add data rights clause:
+  - "By using the Service, you acknowledge that Lumenshore may derive aggregated, anonymised, and statistical data from your use of the Service ('Aggregate Data')"
+  - "Aggregate Data does not identify you personally and may be used by Lumenshore for any lawful business purpose without restriction, compensation, or attribution"
+  - "Examples of Aggregate Data: total number of users per language pair, average learning session duration, most commonly studied vocabulary, error rates per difficulty level"
+- [ ] 1.4.3 — Ensure de-identification process is genuine:
+  - Must meet GDPR Recital 26 standard (data cannot be singled out, linked, or inferred to identify an individual)
+  - For CCPA: no re-identification commitment (Cal. Civ. Code §1798.140(m))
+  - Document de-identification methodology internally
+- [ ] 1.4.4 — Right to publish anonymised insights:
+  - Blog posts, case studies, and marketing materials using aggregate usage data
+  - Investor reporting using aggregate metrics
+  - No individual user identifiable from published data
+- [ ] 1.4.5 — Survive termination:
+  - Lumenshore's right to retain and use Aggregate Data survives account deletion and service termination
+  - "After you delete your account, we may retain Aggregate Data derived from your use of the Service"
+
+**Acceptance Criteria**:
+- Privacy Policy discloses aggregate data use
+- Terms of Service grant explicit aggregate data rights
+- De-identification meets GDPR/CCPA standards
+- Right to publish anonymised insights established
+- Aggregate Data rights survive account deletion
+
 ---
 
 ## Epic 2: Cookie & Tracking Consent System
@@ -1162,6 +1196,62 @@
 - ToS addendum prepared
 - Ready to deploy when UGC features launch
 
+### Story 8.4: Anti-Piracy, Content Protection & Competitive Use Restriction
+
+**As a** business whose core asset is proprietary educational content (25 language pairs, thousands of flashcards, grammar explanations, example sentences)
+**I want** enforceable Terms clauses, technical measures, and take-down processes that prevent systematic extraction, cloning, and competitive reuse of LumenLingo content
+**So that** Lumenshore's intellectual property is protected from competitors and bad actors
+
+#### Subtasks:
+- [ ] 8.4.1 — Terms of Service anti-extraction clause:
+  - "You may not use any automated means (including bots, scrapers, crawlers, spiders, or data-mining tools) to access, copy, monitor, or extract any content from the Service"
+  - "Systematic or bulk downloading, copying, or redistribution of flashcard content, vocabulary lists, grammar explanations, example sentences, or audio files is strictly prohibited"
+  - "Any automated access that exceeds reasonable human browsing patterns constitutes unauthorised use"
+- [ ] 8.4.2 — Competitive use restriction on exported data:
+  - "Data exported under GDPR Article 20 (data portability) or equivalent laws is provided for your personal use only"
+  - "You may not use exported data, or any data derived from or informed by your use of the Service, to create, assist in creating, train, or improve a competing product or service"
+  - "This restriction does not limit your statutory data portability rights — it restricts only the commercial exploitation of LumenLingo's proprietary content accessed via your account"
+  - Include carve-out: "This clause does not apply to data you independently created or obtained outside the Service"
+- [ ] 8.4.3 — Technical anti-scraping measures (document in Terms for legal enforceability):
+  - API rate limiting referenced in Terms: "LumenShore employs rate limiting and access controls; circumventing these constitutes unauthorised access"
+  - Terms acknowledge that circumventing technical protection measures may violate UK Computer Misuse Act 1990, US CFAA, and EU Directive 2009/24/EC
+  - Document that automated bulk access may result in IP blocking and account termination without notice
+- [ ] 8.4.4 — App clone takedown process:
+  - Monitor App Store and Google Play for apps cloning LumenLingo's content, design, or name
+  - Prepare Apple App Store IP complaint: https://www.apple.com/legal/intellectual-property/
+  - Prepare Google Play DMCA takedown template
+  - Monitor for web-based clones: periodic search for unique content strings
+- [ ] 8.4.5 — DMCA / Copyright takedown filing process (strengthens Story 8.1.4):
+  - Maintain DMCA agent registered with US Copyright Office (required for safe harbour)
+  - Template takedown notice (17 U.S.C. § 512(c)(3)):
+    - Identification of copyrighted work
+    - Identification of infringing material with URL/location
+    - Good-faith statement
+    - Accuracy and perjury statement
+    - Physical or electronic signature of copyright owner
+  - Counter-notification handling procedure
+  - Repeat infringer policy (required for DMCA safe harbour)
+- [ ] 8.4.6 — Content fingerprinting and provenance:
+  - Include unique, invisible watermark sequences in flashcard content (e.g., specific punctuation choices, minor phrasing variations per export) that can identify the source account if content is pirated
+  - Document watermarking approach internally (do not disclose to users)
+  - Use as evidence in take-down and legal proceedings
+- [ ] 8.4.7 — UK Copyright, Designs and Patents Act 1988 (CDPA):
+  - LumenLingo content qualifies as "literary work" and "compilation" under CDPA
+  - Assertion of moral rights (right of attribution, right against derogatory treatment)
+  - Database right protection under Copyright and Rights in Databases Regulations 1997 (database right lasts 15 years from creation)
+- [ ] 8.4.8 — Injunctive relief reservation:
+  - "You acknowledge that any breach of this section may cause irreparable harm to Lumenshore for which monetary damages would be inadequate"
+  - "Lumenshore reserves the right to seek injunctive or other equitable relief without the necessity of proving actual damages or posting bond (to the extent permitted by law)"
+
+**Acceptance Criteria**:
+- Anti-extraction and anti-scraping clauses in Terms of Service
+- Competitive use restriction on exported data enforceable alongside GDPR portability rights
+- App clone monitoring and takedown process established
+- DMCA agent registered and takedown templates ready
+- Content watermarking strategy documented
+- UK CDPA and database right protections asserted
+- Injunctive relief clause included in Terms
+
 ---
 
 ## Epic 9: Subscription & Payment Compliance
@@ -2052,6 +2142,12 @@
   - Section headings are for convenience only and have no legal effect
 - [ ] 14.6.8 — **Survival clause**:
   - Provisions that by their nature should survive termination shall survive: limitation of liability, indemnification, IP ownership, dispute resolution, confidentiality, and any other provisions
+- [ ] 14.6.9 — **No third-party beneficiaries**:
+  - "These Terms do not confer any rights on any person or entity that is not a party to these Terms"
+  - "No third party may enforce any provision of these Terms under the Contracts (Rights of Third Parties) Act 1999"
+  - **Exception — Apple**: "Notwithstanding the foregoing, Apple Inc. and its subsidiaries are intended third-party beneficiaries of these Terms solely to the extent required by Apple's Licensed Application End User License Agreement (Minimum Terms)"
+  - "Apple has the right to enforce these Terms against you as a third-party beneficiary to the minimum extent required by Apple's guidelines"
+  - This prevents: family members, employers, educational institutions, or any other party from asserting rights under LumenShore's Terms
 
 **Acceptance Criteria**:
 - All standard boilerplate clauses present
@@ -2448,6 +2544,170 @@
 - App update and cloud sync disclaimers present
 - No fiduciary duty explicitly disclaimed
 - All provisions have "maximum extent permitted by law" qualifier
+
+### Story 14.18: Service Discontinuation, Business Transfer & Wind-Down Protection
+
+**As a** business that may be acquired, restructured, or wound down
+**I want** Terms clauses that explicitly permit service discontinuation, assignment to successors, and orderly wind-down with limited liability
+**So that** Lumenshore (and its directors) are protected from user claims arising from M&A, corporate restructuring, or cessation of trading
+
+#### Subtasks:
+- [ ] 14.18.1 — Right to discontinue the Service entirely:
+  - "Lumenshore reserves the right to discontinue, permanently shut down, or cease operating the Service (in whole or in part) at any time, for any reason or no reason"
+  - "If Lumenshore elects to discontinue the Service, we will provide at least 30 days' notice via email (if available) and/or in-app notification"
+  - "During the notice period, paid subscribers may export their data using the built-in export functionality"
+  - "After the discontinuation date, all user accounts and associated data will be deleted in accordance with our data retention policy"
+- [ ] 14.18.2 — Liability cap on discontinuation:
+  - "Lumenshore's sole liability for discontinuation of the Service is a pro-rata refund of the unused portion of any pre-paid subscription fee"
+  - "Lumenshore is not liable for any indirect, incidental, consequential, or special damages arising from discontinuation, including but not limited to: loss of learning progress, loss of data, loss of streaks, loss of achievement records, or inability to continue a learning programme"
+  - "Free tier users have no right to any compensation upon discontinuation"
+- [ ] 14.18.3 — Business transfer / assignment (strengthens Story 14.6.3):
+  - "Lumenshore may assign, transfer, or novate these Terms and all rights and obligations hereunder to any successor, acquirer, or assignee in connection with a merger, acquisition, reorganisation, sale of assets, or change of control, without your prior consent"
+  - "In such event, the assignee shall assume all rights and obligations under these Terms"
+  - "You will be notified of the assignment within 30 days, but your continued use of the Service after assignment constitutes acceptance"
+  - "The assignment shall not, by itself, reduce your rights under these Terms"
+- [ ] 14.18.4 — Wind-down and insolvency protection:
+  - "In the event that Lumenshore enters administration, liquidation, or any insolvency proceeding, these Terms shall terminate automatically"
+  - "Any claims by users shall rank as unsecured claims in accordance with applicable insolvency law (Insolvency Act 1986)"
+  - "Directors and officers of Lumenshore shall have no personal liability for the company's obligations under these Terms (subject to applicable law)"
+- [ ] 14.18.5 — No guaranteed minimum service period:
+  - "Lumenshore does not guarantee any minimum period of service availability"
+  - "Your subscription entitles you to access the Service if and while it is available; it does not create a guarantee of perpetual or long-term service"
+- [ ] 14.18.6 — Content removal rights:
+  - "Lumenshore may remove, modify, or discontinue specific features, language pairs, content categories, or learning materials at any time without prior notice"
+  - "The removal of any specific content does not entitle you to a refund or constitute a breach of these Terms"
+  - "Lumenshore is under no obligation to maintain, update, or expand the content library"
+- [ ] 14.18.7 — Survival post-discontinuation:
+  - The following clauses survive discontinuation: limitation of liability, indemnification, IP ownership, dispute resolution, governing law, aggregate data rights, feedback IP assignment, no-warranty disclaimer
+
+**Acceptance Criteria**:
+- Right to discontinue/wind-down with limited notice clearly stated
+- Liability for discontinuation capped at pro-rata refund
+- Business transfer/assignment permitted without user consent
+- Insolvency protection for directors documented
+- No guaranteed minimum service period or content catalogue
+- Survival clauses explicitly listed
+
+### Story 14.19: Regulatory Change & Compliance Liability Shield
+
+**As a** business operating across 50+ regulatory jurisdictions
+**I want** explicit Terms protection against claims arising from regulatory changes that force service modifications
+**So that** Lumenshore is not liable when compliance with new or changed laws requires feature removal, geo-restrictions, or service degradation
+
+#### Subtasks:
+- [ ] 14.19.1 — Regulatory change clause:
+  - "You acknowledge that the Service is subject to the laws and regulations of multiple jurisdictions, which may change at any time"
+  - "If any law, regulation, court order, regulatory guidance, or platform policy (including Apple App Store policies) requires Lumenshore to modify, restrict, suspend, or discontinue any feature, content, or aspect of the Service, such action shall not constitute a breach of these Terms"
+  - "Lumenshore shall not be liable for any loss or inconvenience arising from regulatory-mandated changes"
+- [ ] 14.19.2 — Geo-restriction protection:
+  - "Lumenshore may restrict or limit the Service in any jurisdiction where providing it would expose the company to legal or regulatory risk"
+  - "If the Service becomes unavailable in your jurisdiction due to regulatory requirements, Lumenshore's sole obligation is to provide a pro-rata refund of any pre-paid subscription fee"
+  - "You are solely responsible for determining whether your use of the Service complies with your local laws"
+- [ ] 14.19.3 — Apple policy change protection:
+  - "The Service relies on Apple's iOS platform, App Store, and StoreKit infrastructure. Changes to Apple's policies, guidelines, pricing structures, commission rates, or technical requirements may require Lumenshore to modify the Service"
+  - "Lumenshore is not liable for any changes to the Service caused by Apple's platform decisions"
+  - "If Apple suspends or removes the app from the App Store, Lumenshore's liability is limited to providing alternative access to data export"
+- [ ] 14.19.4 — Tax and pricing changes:
+  - "Subscription pricing may change due to VAT rate changes, tax law changes, currency fluctuations, or Apple's pricing tier adjustments"
+  - "Price changes resulting from tax or regulatory requirements are not considered a breach of contract and do not require additional consent beyond Apple's standard price increase mechanism (Story 9.6)"
+- [ ] 14.19.5 — Data protection regulation changes:
+  - "If changes to data protection laws (including GDPR, UK GDPR, CCPA, PIPL, or any other applicable law) require Lumenshore to delete data, restrict processing, or modify data handling practices, such actions shall not constitute a breach of these Terms or any warranty"
+  - "Lumenshore shall use reasonable efforts to notify users of material changes to data handling caused by regulatory requirements"
+- [ ] 14.19.6 — Indemnification for user's local law violations:
+  - "You agree to indemnify Lumenshore against any claims, losses, or penalties arising from your use of the Service in violation of your local laws"
+  - "Lumenshore does not warrant that the Service is legal, appropriate, or available for use in any particular jurisdiction"
+
+**Acceptance Criteria**:
+- Regulatory change shield covers law changes, court orders, and platform policy changes
+- Geo-restriction right established without breach liability
+- Apple policy dependency clearly disclaimed
+- Tax/pricing changes due to regulation not a breach
+- Data protection regulatory changes shielded
+- User indemnifies Lumenshore for local law violations
+
+### Story 14.20: Account Security, Single-User License & Credential Sharing
+
+**As a** subscription business
+**I want** enforceable Terms clauses that restrict account sharing, establish single-user licenses, and place security responsibilities on users
+**So that** subscription revenue is protected from credential sharing and Lumenshore has clear grounds for enforcement
+
+#### Subtasks:
+- [ ] 14.20.1 — Single-user license:
+  - "Each subscription is a personal, non-transferable, single-user license"
+  - "Your subscription may be used only by you, the individual who purchased or activated the subscription"
+  - "You may use the Service on multiple devices owned or controlled by you, but you may not allow any other person to use your account"
+- [ ] 14.20.2 — Prohibition on credential sharing:
+  - "You may not share your account credentials (including Apple ID, passwords, or authentication tokens) with any other person"
+  - "You may not allow simultaneous use of your account on devices used by different individuals"
+  - "Account sharing detected by LumenShore may result in immediate account suspension or termination without refund"
+- [ ] 14.20.3 — User responsibility for account security:
+  - "You are solely responsible for maintaining the confidentiality and security of your account credentials"
+  - "You are responsible for all activity that occurs under your account, whether or not authorised by you"
+  - "You must immediately notify Lumenshore (hello@lumenshore.com) of any unauthorised access to or use of your account"
+  - "Lumenshore is not liable for any loss arising from unauthorised access to your account where such access resulted from your failure to maintain account security"
+- [ ] 14.20.4 — Family sharing:
+  - "Apple Family Sharing, where available and supported, is the only authorised method of sharing access to the Service with other members of your household"
+  - "Family Sharing requires each family member to use their own Apple ID"
+  - "Any sharing arrangement outside of Apple Family Sharing constitutes credential sharing and is prohibited"
+- [ ] 14.20.5 — Institutional / Educational use:
+  - "LumenLingo subscriptions are for individual, personal use only"
+  - "Use of LumenLingo in educational institutions, corporate training programmes, or commercial settings requires a separate institutional license agreement from Lumenshore"
+  - "Institutions may not purchase individual subscriptions in bulk as a substitute for an institutional license"
+- [ ] 14.20.6 — Enforcement measures:
+  - "Lumenshore may employ technical measures to detect and prevent account sharing, including device fingerprinting, concurrent session detection, and usage pattern analysis"
+  - "Detection of account sharing constitutes breach of these Terms and entitles Lumenshore to suspend or terminate the account per Story 14.8"
+
+**Acceptance Criteria**:
+- Single-user license clearly defined
+- Credential sharing prohibited with enforcement clause
+- User security responsibility established
+- Apple Family Sharing exception documented
+- Institutional use requires separate agreement
+- Technical enforcement measures disclosed
+
+### Story 14.21: Waiver of Class, Collective & Representative Proceedings (Non-US)
+
+**As a** business exposed to UK Group Litigation Orders, EU Representative Actions, and other collective proceedings
+**I want** enforceable waivers of class/collective actions in all jurisdictions where permissible (complementing the US-specific waiver in Story 14.4)
+**So that** Lumenshore's dispute exposure is limited to individual claims rather than aggregated multi-party proceedings
+
+#### Subtasks:
+- [ ] 14.21.1 — UK Group Litigation Order (GLO) waiver:
+  - "To the maximum extent permitted by applicable law, you agree to bring any claim against Lumenshore only in your individual capacity and not as a plaintiff, claimant, or member of any class, group, collective, or representative action"
+  - "You waive any right to participate in a Group Litigation Order (GLO) under the Civil Procedure Rules (CPR 19.III) against Lumenshore, except where such waiver is prohibited by law"
+  - Note: UK courts may not enforce GLO waivers in consumer contracts — document enforceability risk
+- [ ] 14.21.2 — EU Representative Actions Directive (2020/1828) waiver:
+  - "You waive, to the extent permissible under applicable law, the right to participate in representative actions brought by qualified entities under the EU Representative Actions Directive (2020/1828) or its national implementations"
+  - "This waiver applies to collective actions for injunctive measures and redress measures"
+  - Note: EU Directive allows Member States to override waivers — effectiveness varies by country. Include "to the extent permissible" qualifier
+- [ ] 14.21.3 — Global collective action waiver:
+  - "In jurisdictions outside the US, UK, and EU: you similarly agree that any dispute will be resolved individually and not as part of any class, collective, or group proceeding"
+  - "This includes but is not limited to: Australian class actions (Federal Court Rules Part 9.33), Canadian class proceedings, Brazilian collective actions (LGPD Art. 42), and any similar aggregated or representative proceeding"
+- [ ] 14.21.4 — Exceptions — mandatory collective proceedings:
+  - "This waiver does not apply where: (a) applicable law expressly prohibits waiver of collective proceedings rights, (b) a court of competent jurisdiction invalidates the waiver, or (c) a regulatory body (e.g. ICO, FTC, CNIL) initiates proceedings on behalf of consumers"
+  - "Where the collective action waiver is found unenforceable in a jurisdiction, the remaining Terms continue in full force"
+  - "Regulatory enforcement actions and government-initiated proceedings are not affected by this clause"
+- [ ] 14.21.5 — Enforceability analysis and documentation:
+  - Document enforceability of collective action waivers per key jurisdiction:
+    - UK: uncertain — Consumer Rights Act 2015 and CMA may override in B2C; UCTA unfair terms risk. Include but flag risk.
+    - Germany: likely unenforceable under AGB (standard terms) law — include but note
+    - France: CNIL collective actions cannot be waived — note carve-out
+    - EU generally: Directive 2020/1828 may override — "to the extent permissible" qualifier essential
+    - Australia: class action waivers generally unenforceable — note
+    - US: covered separately in Story 14.4 (generally enforceable under FAA)
+  - Maintain enforceability analysis as living document for legal counsel review
+- [ ] 14.21.6 — Paired with individual dispute resolution:
+  - Cross-reference Story 14.1 (dispute resolution) and Story 14.15 (pre-suit notice)
+  - Reinforce that individual dispute resolution through mandatory negotiation → mediation → arbitration/court is the intended pathway
+  - "Any claim you may have against Lumenshore must be brought within the limitation period set out in Story 14.9 and must follow the pre-suit notice procedure in Story 14.15"
+
+**Acceptance Criteria**:
+- Class/collective action waiver present for UK (GLO), EU (Representative Actions Directive), and global proceedings
+- "To the maximum extent permitted by law" qualifier on all waivers
+- Exceptions for mandatory regulatory proceedings
+- Enforceability analysis documented per jurisdiction
+- Severability ensures waiver invalidity doesn't void other Terms
+- Pairing with individual dispute resolution pathway reinforced
 
 ---
 
