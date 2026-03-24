@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
-import { LegalTOC, DownloadPDFButton, LanguageDisclaimer } from '@/components/legal';
+import { LegalTOC, DownloadPDFButton, LanguageDisclaimer, LegalUpdateBanner } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { Link } from '@/i18n/navigation';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
@@ -137,6 +137,14 @@ export default async function PrivacyPage({
       <Section className="py-8 sm:py-12 pb-20 sm:pb-28">
         <Container>
           <LanguageDisclaimer href="/privacy" />
+          <LegalUpdateBanner
+            version="2.0"
+            documentKey="privacy"
+            message={t('updateBannerMessage')}
+            linkText={tLegal('updateBannerLink')}
+            changesAnchor="policy-updates"
+            dismissLabel={tLegal('updateBannerDismiss')}
+          />
           <div className="mx-auto max-w-4xl xl:grid xl:grid-cols-[1fr_200px] xl:gap-12">
             {/* Prose */}
             <FadeIn>

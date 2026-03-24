@@ -2805,7 +2805,7 @@
   - Date of change
   - Summary of what changed
   - Version number
-- [ ] 15.1.3 — Implement "What's Changed" notification:
+- [x] 15.1.3 — Implement "What's Changed" notification:
   - Banner or modal when legal documents are updated
   - "We've updated our Privacy Policy. [View changes]"
 - [x] 15.1.4 — Store historical versions (in Git or on website as `/privacy/v1`, `/privacy/v2`)
@@ -2898,8 +2898,8 @@
   - DSA enforcement
   - DMA changes (if app store rules change)
   - EU AI Act (if AI features planned)
-- [ ] 15.4.5 — Create quarterly legal compliance review cadence
-- [ ] 15.4.6 — Budget for annual legal counsel review of all documents
+- [x] 15.4.5 — Create quarterly legal compliance review cadence
+- [x] 15.4.6 — Budget for annual legal counsel review of all documents
 
 **Acceptance Criteria**:
 - Monitoring channels established

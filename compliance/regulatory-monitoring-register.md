@@ -96,6 +96,35 @@
 
 ---
 
+## Quarterly Legal Compliance Review Cadence
+
+| Quarter | Review Period | Due Date | Focus Areas |
+|---------|-------------- |----------|-------------|
+| Q1 | Jan–Mar | 31 March | Annual audit (full checklist), ICO registration renewal, EDPB guidance review |
+| Q2 | Apr–Jun | 30 June | WWDC policy review, US state law tracker, DMA/DSA updates |
+| Q3 | Jul–Sep | 30 September | Apple Guidelines pre-submission review, IAPP tracker, UK regulation |
+| Q4 | Oct–Dec | 31 December | Year-end summary, emerging regulation scan, insurance renewal check |
+
+**Process**:
+1. Review all monitoring sources listed above for the quarter's focus areas
+2. Log any findings in the Monitoring Log below
+3. Create remediation tasks for any compliance gaps identified
+4. File a brief quarterly summary in `compliance/quarterly-reviews/YYYY-QN.md`
+
+---
+
+## Annual Legal Counsel Review
+
+**Budget allocation**: Allocate budget annually for external legal counsel to review all legal documents (Privacy Policy, Terms of Service, Cookie Policy, EULA) at least once per year, ideally during Q1 annual audit.
+
+**Scope**: External review should cover:
+- Accuracy of all legal documents against current features and data practices
+- Compliance with any new regulations enacted since last review
+- Jurisdiction-specific requirements (UK, EU, US states, Australia)
+- App Store compliance and EULA adequacy
+
+---
+
 ## Monitoring Log
 
 | Date | Regulation | Finding | Action Required | Status |

@@ -441,7 +441,9 @@
     "version": "Version 2.0",
     "languageDisclaimer": "Ten dokument jest dostępny w wielu językach. W przypadku konfliktu lub rozbieżności między wersjami tłumaczonymi, wersja angielska jest wiążąca.",
     "viewEnglishVersion": "Zobacz wersję angielską",
-    "termsVersion": "Wersja 1.0"
+    "termsVersion": "Wersja 1.0",
+    "updateBannerDismiss": "Zamknij",
+    "updateBannerLink": "Zobacz zmiany"
   },
   "Privacy": {
     "meta": {
@@ -1323,7 +1325,8 @@
       "frenchP1": "Francja wymaga deklaracji importu oprogramowania szyfrującego zgodnie z przepisami ANSSI. Aplikacje używające wyłącznie standardowej komunikacji HTTPS/TLS i szyfrowania systemowego są generalnie zwolnione z wymogów deklaracji. LumenLingo używa wyłącznie szyfrowania dostarczanego przez platformę Apple i nie implementuje żadnych niestandardowych funkcji kryptograficznych.",
       "appStoreHeading": "Zgodność eksportowa App Store Connect",
       "appStoreP1": "Zgodność eksportowa LumenLingo jest deklarowana za pośrednictwem Apple App Store Connect. Aplikacja używa szyfrowania (HTTPS, iCloud), ale kwalifikuje się do zwolnienia, ponieważ opiera się wyłącznie na technologiach szyfrowania dostarczanych przez system."
-    }
+    },
+    "updateBannerMessage": "Zaktualizowaliśmy naszą Politykę Prywatności."
   },
   "Terms": {
     "meta": {
@@ -1854,7 +1857,8 @@
       "consumerHeading": "Zachowanie Praw Konsumenta",
       "consumer1": "Niniejsza klauzula nie wplywa na Twoje prawa ustawowe wynikajace z Consumer Rights Act 2015 (UK), w tym prawa do naprawy, wymiany lub obnizenia ceny wadliwych tresci cyfrowych.",
       "consumer2": "Konsumenci z UE zachowuja wszystkie prawa wynikajace z Dyrektywy o prawach konsumentow UE."
-    }
+    },
+    "updateBannerMessage": "Zaktualizowaliśmy nasze Warunki Użytkowania."
   },
   "Blog": {
     "meta": {
@@ -2036,7 +2040,8 @@
       "p3": "<b>Elementy ściśle niezbędne</b> (stan zgody, preferencja języka, pamięć podręczna Service Worker) są zwolnione z wymogu zgody, ponieważ są niezbędne do świadczenia usługi, o którą wyraźnie prosisz.",
       "p4": "<b>Elementy opcjonalne</b> (analityka, monitorowanie błędów, nagrywanie sesji) są aktywowane dopiero po wyrażeniu pozytywnej zgody. Jeśli odmówisz, te kategorie pozostają całkowicie wyłączone.",
       "p5": "Nasz mechanizm zgody został zaprojektowany zgodnie z wytycznymi ICO: brak wstępnie zaznaczonych pól, brak „ścian cookie”, łatwe wycofanie zgody w dowolnym momencie oraz jasne informacje o każdej kategorii."
-    }
+    },
+    "updateBannerMessage": "Zaktualizowaliśmy naszą Politykę Cookies."
   },
   "Eula": {
     "meta": {

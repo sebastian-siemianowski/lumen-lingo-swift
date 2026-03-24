@@ -441,7 +441,9 @@
     "version": "Version 2.0",
     "languageDisclaimer": "Dieses Dokument ist in mehreren Sprachen verfügbar. Im Falle von Widersprüchen oder Unstimmigkeiten zwischen übersetzten Versionen ist die englische Version maßgeblich.",
     "viewEnglishVersion": "Englische Version anzeigen",
-    "termsVersion": "Version 1.0"
+    "termsVersion": "Version 1.0",
+    "updateBannerDismiss": "Schliessen",
+    "updateBannerLink": "Aenderungen anzeigen"
   },
   "Privacy": {
     "meta": {
@@ -1323,7 +1325,8 @@
       "frenchP1": "Frankreich verlangt eine Erklärung für die Einfuhr von Verschlüsselungssoftware gemäß den ANSSI-Vorschriften. Anwendungen, die ausschließlich Standard-HTTPS/TLS-Kommunikation und systemseitig bereitgestellte Verschlüsselung verwenden, sind in der Regel von den Erklärungspflichten befreit. LumenLingo verwendet ausschließlich von der Apple-Plattform bereitgestellte Verschlüsselung und implementiert keine benutzerdefinierte kryptografische Funktionalität.",
       "appStoreHeading": "App Store Connect Exportkonformität",
       "appStoreP1": "Die Exportkonformität von LumenLingo wird über Apples App Store Connect deklariert. Die App verwendet Verschlüsselung (HTTPS, iCloud), qualifiziert sich jedoch für eine Befreiung, da sie ausschließlich auf systemseitig bereitgestellte Verschlüsselungstechnologien setzt."
-    }
+    },
+    "updateBannerMessage": "Wir haben unsere Datenschutzrichtlinie aktualisiert."
   },
   "Terms": {
     "meta": {
@@ -1854,7 +1857,8 @@
       "consumerHeading": "Wahrung der Verbraucherrechte",
       "consumer1": "Diese Klausel beruehrt nicht Ihre gesetzlichen Rechte nach dem Consumer Rights Act 2015 (UK), einschliesslich der Rechte auf Reparatur, Ersatz oder Preisminderung bei fehlerhaften digitalen Inhalten.",
       "consumer2": "EU-Verbraucher behalten alle Rechte aus der EU-Verbraucherrechterichtlinie."
-    }
+    },
+    "updateBannerMessage": "Wir haben unsere Nutzungsbedingungen aktualisiert."
   },
   "Blog": {
     "meta": {
@@ -2036,7 +2040,8 @@
       "p3": "<b>Unbedingt notwendige Elemente</b> (Einwilligungsstatus, Spracheinstellung, Service-Worker-Cache) sind vom Zustimmungserfordernis ausgenommen, da sie für die Bereitstellung eines von Ihnen ausdrücklich angeforderten Dienstes unerlässlich sind.",
       "p4": "<b>Nicht wesentliche Elemente</b> (Analytik, Fehlerüberwachung, Session-Replay) werden erst nach Ihrer bestätigenden Zustimmung aktiviert. Wenn Sie ablehnen, bleiben diese Kategorien vollständig deaktiviert.",
       "p5": "Unser Einwilligungsmechanismus ist so gestaltet, dass er den ICO-Richtlinien entspricht: keine vorangekreuzten Kästchen, keine „Cookie-Wände“, einfacher Widerruf jederzeit und klare Informationen zu jeder Kategorie."
-    }
+    },
+    "updateBannerMessage": "Wir haben unsere Cookie-Richtlinie aktualisiert."
   },
   "Eula": {
     "meta": {

@@ -441,7 +441,9 @@
     "version": "Version 2.0",
     "languageDisclaimer": "本文档提供多种语言版本。如翻译版本之间存在任何冲突或不一致，以英文版本为准。",
     "viewEnglishVersion": "查看英文版本",
-    "termsVersion": "版本 1.0"
+    "termsVersion": "版本 1.0",
+    "updateBannerDismiss": "关闭",
+    "updateBannerLink": "查看更改"
   },
   "Privacy": {
     "meta": {
@@ -1323,7 +1325,8 @@
       "frenchP1": "法国根据ANSSI法规要求对加密软件的进口进行申报。仅使用标准HTTPS/TLS通信和系统提供的加密的应用程序通常豁免申报要求。LumenLingo仅使用Apple平台提供的加密，不实施任何自定义加密功能。",
       "appStoreHeading": "App Store Connect出口合规",
       "appStoreP1": "LumenLingo的出口合规通过Apple的App Store Connect进行申报。该应用使用加密（HTTPS、iCloud），但由于仅依赖系统提供的加密技术，因此符合豁免资格。"
-    }
+    },
+    "updateBannerMessage": "我们已更新隐私政策。"
   },
   "Terms": {
     "meta": {
@@ -1854,7 +1857,8 @@
       "consumerHeading": "消费者权利保留",
       "consumer1": "本条款不影响您根据2015年消费者权利法（英国）享有的法定权利，包括对有缺陷的数字内容进行维修、更换或降价的权利。",
       "consumer2": "欧盟消费者保留根据欧盟消费者权利指令享有的所有权利。"
-    }
+    },
+    "updateBannerMessage": "我们已更新服务条款。"
   },
   "Blog": {
     "meta": {
@@ -2036,7 +2040,8 @@
       "p3": "<b>严格必要的项目</b>（同意状态、语言偏好、Service Worker缓存）免于同意要求，因为它们对于提供您明确请求的服务是必不可少的。",
       "p4": "<b>非必要的项目</b>（分析、错误监控、会话回放）只有在您给予肯定同意后才会激活。如果您拒绝，这些类别将完全保持禁用状态。",
       "p5": "我们的同意机制旨在符合ICO指南：没有预勾选的复选框，没有“Cookie墙”，可随时轻松撤回，并提供每个类别的明确信息。"
-    }
+    },
+    "updateBannerMessage": "我们已更新Cookie政策。"
   },
   "Eula": {
     "meta": {

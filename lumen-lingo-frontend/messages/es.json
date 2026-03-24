@@ -441,7 +441,9 @@
     "version": "Version 2.0",
     "languageDisclaimer": "Este documento está disponible en varios idiomas. En caso de conflicto o inconsistencia entre las versiones traducidas, prevalecerá la versión en inglés.",
     "viewEnglishVersion": "Ver versión en inglés",
-    "termsVersion": "Version 1.0"
+    "termsVersion": "Version 1.0",
+    "updateBannerDismiss": "Cerrar",
+    "updateBannerLink": "Ver cambios"
   },
   "Privacy": {
     "meta": {
@@ -1323,7 +1325,8 @@
       "frenchP1": "Francia requiere una declaración para la importación de software de cifrado según las regulaciones de la ANSSI. Las aplicaciones que utilizan únicamente comunicaciones HTTPS/TLS estándar y cifrado proporcionado por el sistema están generalmente exentas de los requisitos de declaración. LumenLingo utiliza exclusivamente cifrado proporcionado por la plataforma Apple y no implementa ninguna funcionalidad criptográfica personalizada.",
       "appStoreHeading": "Cumplimiento de exportación en App Store Connect",
       "appStoreP1": "El cumplimiento de exportación de LumenLingo se declara a través de App Store Connect de Apple. La aplicación utiliza cifrado (HTTPS, iCloud) pero califica para la exención ya que se basa exclusivamente en tecnologías de cifrado proporcionadas por el sistema."
-    }
+    },
+    "updateBannerMessage": "Hemos actualizado nuestra Política de Privacidad."
   },
   "Terms": {
     "meta": {
@@ -1854,7 +1857,8 @@
       "consumerHeading": "Preservacion de Derechos del Consumidor",
       "consumer1": "Esta clausula no afecta sus derechos legales bajo la Ley de Derechos del Consumidor 2015 (Reino Unido), incluidos los derechos a reparacion, reemplazo o reduccion de precio por contenido digital defectuoso.",
       "consumer2": "Los consumidores de la UE conservan todos sus derechos bajo la Directiva de Derechos del Consumidor de la UE."
-    }
+    },
+    "updateBannerMessage": "Hemos actualizado nuestros Términos de Servicio."
   },
   "Blog": {
     "meta": {
@@ -2036,7 +2040,8 @@
       "p3": "Los <b>elementos estrictamente necesarios</b> (estado de consentimiento, preferencia de idioma, caché del Service Worker) están exentos del requisito de consentimiento porque son esenciales para proporcionar un servicio que usted ha solicitado explícitamente.",
       "p4": "Los <b>elementos no esenciales</b> (analíticas, monitorización de errores, reproducción de sesiones) solo se activan después de que usted dé su consentimiento afirmativo. Si rechaza, estas categorías permanecen completamente desactivadas.",
       "p5": "Nuestro mecanismo de consentimiento está diseñado para cumplir con las directrices del ICO: sin casillas premarcadas, sin «muros de cookies», fácil revocación en cualquier momento e información clara sobre cada categoría."
-    }
+    },
+    "updateBannerMessage": "Hemos actualizado nuestra Política de Cookies."
   },
   "Eula": {
     "meta": {

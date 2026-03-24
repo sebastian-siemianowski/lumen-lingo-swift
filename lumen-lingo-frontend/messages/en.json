@@ -441,7 +441,9 @@
     "version": "Version 2.0",
     "languageDisclaimer": "This document is available in multiple languages. In the event of any conflict or inconsistency between translated versions, the English version shall prevail.",
     "viewEnglishVersion": "View English version",
-    "termsVersion": "Version 1.0"
+    "termsVersion": "Version 1.0",
+    "updateBannerDismiss": "Dismiss",
+    "updateBannerLink": "View changes"
   },
   "Privacy": {
     "meta": {
@@ -1323,7 +1325,8 @@
       "frenchP1": "France requires declaration for the import of encryption software under ANSSI regulations. Applications using only standard HTTPS/TLS communications and system-provided encryption are generally exempt from declaration requirements. LumenLingo uses exclusively Apple platform-provided encryption and does not implement any custom cryptographic functionality.",
       "appStoreHeading": "App Store Connect Export Compliance",
       "appStoreP1": "LumenLingo's export compliance is declared through Apple's App Store Connect. The app uses encryption (HTTPS, iCloud) but qualifies for exemption as it relies exclusively on system-provided encryption technologies."
-    }
+    },
+    "updateBannerMessage": "We’ve updated our Privacy Policy."
   },
   "Terms": {
     "meta": {
@@ -1854,7 +1857,8 @@
       "consumerHeading": "Consumer Rights Preservation",
       "consumer1": "This clause does not affect your statutory rights under the Consumer Rights Act 2015 (UK), including rights to repair, replacement, or price reduction for faulty digital content.",
       "consumer2": "EU consumers retain all rights under the EU Consumer Rights Directive."
-    }
+    },
+    "updateBannerMessage": "We’ve updated our Terms of Service."
   },
   "Blog": {
     "meta": {
@@ -2036,7 +2040,8 @@
       "p3": "<b>Strictly necessary items</b> (consent state, language preference, Service Worker cache) are exempt from the consent requirement because they are essential to providing a service you have explicitly requested.",
       "p4": "<b>Non-essential items</b> (analytics, error monitoring, session replay) are only activated after you give affirmative consent. If you decline, these categories remain fully disabled.",
       "p5": "Our consent mechanism is designed to meet ICO guidance: no pre-ticked boxes, no “cookie walls,” easy withdrawal at any time, and clear information about each category."
-    }
+    },
+    "updateBannerMessage": "We’ve updated our Cookie Policy."
   },
   "Eula": {
     "meta": {
