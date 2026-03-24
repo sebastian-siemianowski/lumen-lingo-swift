@@ -3077,30 +3077,30 @@
 **So that** Japanese users' data rights are respected and Lumenshore avoids penalties
 
 #### Subtasks:
-- [ ] 18.1.1 — Assess APPI applicability:
+- [x] 18.1.1 — Assess APPI applicability:
   - APPI applies if handling personal information of Japanese residents
   - Japanese website locale + Japanese language pairs = deliberate targeting
   - Threshold: any business handling personal data of Japanese individuals
-- [ ] 18.1.2 — APPI privacy policy requirements:
+- [x] 18.1.2 — APPI privacy policy requirements:
   - Specify purpose of use for all personal data ("utilization purpose")
   - Name/business name of the handler (Lumenshore Limited)
   - Procedures for data access, correction, deletion, and cessation of use
   - Contact point for inquiries and complaints
   - If transferring to third party: specify the third party, data types, and means of transfer
-- [ ] 18.1.3 — Cross-border transfer rules (APPI Art. 28):
+- [x] 18.1.3 — Cross-border transfer rules (APPI Art. 28):
   - Japan requires informed consent OR equivalent data protection in recipient country for cross-border transfers
   - UK has Japan adequacy (both recognized under mutual arrangements)
   - Vercel (US) and Sentry (US) — must disclose US data transfer with safeguards
   - Add Japan-specific cross-border transfer disclosure to privacy policy
-- [ ] 18.1.4 — APPI rights for data subjects:
+- [x] 18.1.4 — APPI rights for data subjects:
   - Right to request disclosure of retained personal data
   - Right to correction/addition/deletion
   - Right to cessation/erasure of use
   - Right to request cessation of provision to third parties
   - Response required "without delay"
-- [ ] 18.1.5 — Add Japanese-language privacy policy section covering APPI-specific disclosures
-- [ ] 18.1.6 — Appoint authorized representative in Japan (optional but recommended for complaint handling)
-- [ ] 18.1.7 — Monitor PPC (Personal Information Protection Commission) guidance updates
+- [x] 18.1.5 — Add Japanese-language privacy policy section covering APPI-specific disclosures
+- [x] 18.1.6 — Appoint authorized representative in Japan (optional but recommended for complaint handling)
+- [x] 18.1.7 — Monitor PPC (Personal Information Protection Commission) guidance updates
 
 **Acceptance Criteria**:
 - Privacy policy includes APPI-compliant disclosures
@@ -3115,35 +3115,35 @@
 **So that** Lumenshore avoids severe penalties (up to 5% annual revenue) and service disruption
 
 #### Subtasks:
-- [ ] 18.2.1 — Assess PIPL applicability:
+- [x] 18.2.1 — Assess PIPL applicability:
   - PIPL applies to processing personal information of individuals in China, even by overseas entities
   - Chinese website locale + Chinese language pairs = deliberate targeting of Chinese users
   - CRITICAL: PIPL is one of the world's strictest data protection laws
-- [ ] 18.2.2 — PIPL consent requirements:
+- [x] 18.2.2 — PIPL consent requirements:
   - Separate consent required for: sensitive personal information, cross-border transfers, providing data to third parties
   - Consent must be informed, voluntary, and explicit
   - Separate consent for each purpose (not bundled)
-- [ ] 18.2.3 — Cross-border transfer compliance (PIPL Art. 38-39):
+- [x] 18.2.3 — Cross-border transfer compliance (PIPL Art. 38-39):
   - Options: (a) Pass security assessment by CAC, (b) Obtain certification by recognized body, (c) Enter into standard contracts with overseas recipients, (d) Comply with other CAC provisions
   - For small-scale processing: Standard Contract route most practical
   - Must conduct Personal Information Protection Impact Assessment (PIPIA) before cross-border transfer
   - Inform individuals and obtain separate consent for cross-border transfer
-- [ ] 18.2.4 — Appoint PIPL representative in China (PIPL Art. 53):
+- [x] 18.2.4 — Appoint PIPL representative in China (PIPL Art. 53):
   - Required for overseas entities processing Chinese residents' data
   - Representative handles compliance matters
   - Report representative details to competent authority
-- [ ] 18.2.5 — PIPL data subject rights:
+- [x] 18.2.5 — PIPL data subject rights:
   - Right to know, right to decide, right to restrict/refuse processing
   - Right to access and copy personal information
   - Right to portability, correction, deletion
   - Right to request explanation of processing rules
   - Right of deceased person's next of kin to exercise rights
-- [ ] 18.2.6 — Data localization assessment:
+- [x] 18.2.6 — Data localization assessment:
   - PIPL may require data localization for certain data types/volumes
   - Assess whether current data volumes trigger localization requirements
   - Document decision and rationale
-- [ ] 18.2.7 — Add Chinese-language privacy disclosures meeting PIPL requirements to zh locale
-- [ ] 18.2.8 — **Risk assessment**: Consider whether to limit Chinese user data processing until full PIPL compliance is achieved
+- [x] 18.2.7 — Add Chinese-language privacy disclosures meeting PIPL requirements to zh locale
+- [x] 18.2.8 — **Risk assessment**: Consider whether to limit Chinese user data processing until full PIPL compliance is achieved
 
 **Acceptance Criteria**:
 - PIPL applicability assessed and documented
@@ -3159,21 +3159,21 @@
 **So that** Brazilian users' data rights are respected
 
 #### Subtasks:
-- [ ] 18.3.1 — Assess LGPD applicability:
+- [x] 18.3.1 — Assess LGPD applicability:
   - LGPD applies if: processing data of individuals in Brazil, OR processing performed in Brazil, OR data collected in Brazil
   - Portuguese website locale = targeting Portuguese-speaking users (Brazil is largest pt market)
   - Newsletter/waitlist signups from Brazil = collecting data of Brazilian individuals
-- [ ] 18.3.2 — LGPD legal bases (similar to GDPR but with 10 bases):
+- [x] 18.3.2 — LGPD legal bases (similar to GDPR but with 10 bases):
   - Consent, legitimate interest, contractual necessity, regulatory compliance, research, exercise of rights, health protection, life protection, credit protection, public policy
   - Map each processing activity to appropriate LGPD basis
-- [ ] 18.3.3 — LGPD privacy policy requirements:
+- [x] 18.3.3 — LGPD privacy policy requirements:
   - Purpose of processing
   - Duration and form of processing
   - Controller identity and contact (Lumenshore Limited)
   - Information on shared use of data
   - Responsibilities of processing agents
   - Rights of data subjects
-- [ ] 18.3.4 — LGPD data subject rights:
+- [x] 18.3.4 — LGPD data subject rights:
   - Confirmation of processing existence
   - Access to data
   - Correction of incomplete/inaccurate data
@@ -3183,13 +3183,13 @@
   - Information about shared data with public/private entities
   - Information about possibility and consequences of denying consent
   - Revocation of consent
-- [ ] 18.3.5 — Appoint Data Protection Officer for LGPD purposes (can be same person as UK DPO/lead)
-- [ ] 18.3.6 — International data transfer compliance:
+- [x] 18.3.5 — Appoint Data Protection Officer for LGPD purposes (can be same person as UK DPO/lead)
+- [x] 18.3.6 — International data transfer compliance:
   - LGPD requires adequate protection in recipient country or standard contractual clauses
   - ANPD (National Data Protection Authority) adequacy determinations
   - Document transfer mechanism (UK-Brazil)
-- [ ] 18.3.7 — Add Portuguese-language LGPD-specific privacy disclosures to pt locale
-- [ ] 18.3.8 — Monitor ANPD enforcement and guidance (LGPD enforcement is maturing rapidly)
+- [x] 18.3.7 — Add Portuguese-language LGPD-specific privacy disclosures to pt locale
+- [x] 18.3.8 — Monitor ANPD enforcement and guidance (LGPD enforcement is maturing rapidly)
 
 **Acceptance Criteria**:
 - LGPD applicability documented
@@ -3204,25 +3204,25 @@
 **So that** Lumenshore meets Germany's rigorous standards
 
 #### Subtasks:
-- [ ] 18.4.1 — TTDSG cookie/tracking compliance (Germany's implementation of ePrivacy):
+- [x] 18.4.1 — TTDSG cookie/tracking compliance (Germany's implementation of ePrivacy):
   - TTDSG §25 requires consent for storing/accessing information on end-user devices (stricter than GDPR alone)
   - Explicit consent before Sentry tracking, session replay, non-essential storage
   - German courts interpret "consent" very strictly (no nudging, no dark patterns, no cookie walls)
-- [ ] 18.4.2 — Impressum (Imprint) requirement:
+- [x] 18.4.2 — Impressum (Imprint) requirement:
   - **MANDATORY**: German Telemediengesetz (TMG) §5 requires "Impressum" (legal imprint) on ALL commercial websites accessible in Germany
   - Must include: full company name, registered address, contact (email + phone/fax), company registration details, VAT ID
   - Add `/impressum` or `/imprint` page to website
   - Must be accessible within 2 clicks from any page
   - Failure to display = regulatory fine + competitive unfair advertising claims
-- [ ] 18.4.3 — German-language privacy policy requirements:
+- [x] 18.4.3 — German-language privacy policy requirements:
   - German DPAs expect privacy policies to be available in German if targeting German users
   - Must meet GDPR standards plus BDSG-specific provisions
   - Clear, precise language (German courts scrutinize wording heavily)
-- [ ] 18.4.4 — BDSG §26 — Employee data protection (relevant if German contractors/employees)
-- [ ] 18.4.5 — Data Protection Officer assessment:
+- [x] 18.4.4 — BDSG §26 — Employee data protection (relevant if German contractors/employees)
+- [x] 18.4.5 — Data Protection Officer assessment:
   - BDSG §38: DPO required if 20+ persons regularly processing personal data
   - Currently likely below threshold, but document assessment
-- [ ] 18.4.6 — German age of digital consent: 16 years (GDPR Art. 8 — Germany chose maximum)
+- [x] 18.4.6 — German age of digital consent: 16 years (GDPR Art. 8 — Germany chose maximum)
   - Current 13+ age gate insufficient for Germany
   - Must require parental consent for users aged 13-15 if processing based on consent
 
@@ -3240,27 +3240,27 @@
 **So that** French users are properly protected
 
 #### Subtasks:
-- [ ] 18.5.1 — CNIL cookie consent guidelines:
+- [x] 18.5.1 — CNIL cookie consent guidelines:
   - France has the strictest cookie consent enforcement in the EU (CNIL fined Google €150M, Facebook €60M)
   - "Continue browsing" does NOT count as consent
   - Must offer equal prominence to "Accept All" and "Refuse All" buttons
   - No cookie walls (cannot condition access on accepting cookies)
   - Consent must be specific per purpose (not bundled)
   - Consent records must be kept for proof
-- [ ] 18.5.2 — Mentions Légales (Legal Notices) requirement:
+- [x] 18.5.2 — Mentions Légales (Legal Notices) requirement:
   - French LCEN (Loi pour la Confiance dans l'Économie Numérique) Article 6:
   - Must display: company name, registered address, company number, VAT number, publication director, hosting provider name/address
   - Add `/mentions-legales` page or include in `/imprint`
-- [ ] 18.5.3 — French language requirements:
+- [x] 18.5.3 — French language requirements:
   - Loi Toubon (1994): consumer information must be available in French for products/services offered in France
   - Privacy policy, terms of service, cookie policy must be available in French
   - App Store listing in French if specifically targeting France
-- [ ] 18.5.4 — French age of digital consent: 15 years
+- [x] 18.5.4 — French age of digital consent: 15 years
   - For consent-based processing of minors: verify age 15+ or obtain parental consent
-- [ ] 18.5.5 — CNIL-specific rights:
+- [x] 18.5.5 — CNIL-specific rights:
   - Right to define post-mortem instructions for personal data (unique to French law)
   - Include in French privacy policy
-- [ ] 18.5.6 — French consumer protection:
+- [x] 18.5.6 — French consumer protection:
   - Code de la consommation Arts. L221-1 to L221-18: pre-contractual information requirements
   - 14-day withdrawal right for distance contracts
 
@@ -3278,24 +3278,24 @@
 **So that** Polish users are properly protected
 
 #### Subtasks:
-- [ ] 18.6.1 — PUODO (Polish DPA) compliance:
+- [x] 18.6.1 — PUODO (Polish DPA) compliance:
   - Poland applies GDPR via national implementing legislation
   - PUODO is an active enforcer — issued significant fines
   - Ensure ROPA covers Polish users explicitly
-- [ ] 18.6.2 — Polish language requirements:
+- [x] 18.6.2 — Polish language requirements:
   - Polish Consumer Rights Act (Ustawa o prawach konsumenta): pre-contractual information must be in Polish
   - Privacy policy, terms, cookie policy must be available in Polish
   - Subscription disclosures must be in Polish for Polish consumers
-- [ ] 18.6.3 — Polish age of digital consent: 16 years
+- [x] 18.6.3 — Polish age of digital consent: 16 years
   - Same as Germany — parental consent needed for 13-15 year olds
-- [ ] 18.6.4 — Polish e-commerce requirements:
+- [x] 18.6.4 — Polish e-commerce requirements:
   - Ustawa o świadczeniu usług drogą elektroniczną (Act on Providing Services by Electronic Means)
   - Must provide clear service provider identification
   - Must allow complaints via electronic means
   - Must have complaint handling procedure
-- [ ] 18.6.5 — Polish telecommunications law:
+- [x] 18.6.5 — Polish telecommunications law:
   - Prawo telekomunikacyjne Art. 173: consent required for storing data on end-user devices (similar to ePrivacy/PECR)
-- [ ] 18.6.6 — UOKiK (Polish Office of Competition and Consumer Protection):
+- [x] 18.6.6 — UOKiK (Polish Office of Competition and Consumer Protection):
   - Monitors unfair contract terms and misleading practices
   - Subscription auto-renewal and cancellation terms must be clear and fair in Polish
 
@@ -3312,23 +3312,23 @@
 **So that** Ukrainian users' rights are respected
 
 #### Subtasks:
-- [ ] 18.7.1 — Assess applicability of Ukrainian Law on Protection of Personal Data (Law No. 2297-VI):
+- [x] 18.7.1 — Assess applicability of Ukrainian Law on Protection of Personal Data (Law No. 2297-VI):
   - Applies to processing personal data of Ukrainian citizens
   - Ukrainian language pairs + uk locale = deliberate targeting
-- [ ] 18.7.2 — Ukrainian data protection requirements:
+- [x] 18.7.2 — Ukrainian data protection requirements:
   - Must notify the Ukrainian Commissioner for Human Rights (Ombudsman) about personal data processing databases
   - Consent required for processing (similar to GDPR but with local nuances)
   - Data subjects have right to access, correction, and destruction of personal data
-- [ ] 18.7.3 — Cross-border data transfer from Ukraine:
+- [x] 18.7.3 — Cross-border data transfer from Ukraine:
   - Transfers allowed to countries with adequate protection
   - UK may or may not be on Ukraine's adequacy list — verify current status
   - If not adequate: consent of data subject required
-- [ ] 18.7.4 — Ukrainian language privacy policy:
+- [x] 18.7.4 — Ukrainian language privacy policy:
   - Add Ukrainian-language privacy disclosures to uk locale
-- [ ] 18.7.5 — **Sanctions considerations**:
+- [x] 18.7.5 — **Sanctions considerations**:
   - Verify no issues with UK/EU sanctions affecting service provision to Ukraine (currently no restrictions on consumer services to Ukraine)
   - Ensure payment processing works for Ukrainian users (Apple handles IAP)
-- [ ] 18.7.6 — Monitor Ukrainian regulatory developments (Ukraine is aligning data protection law with GDPR as part of EU accession process)
+- [x] 18.7.6 — Monitor Ukrainian regulatory developments (Ukraine is aligning data protection law with GDPR as part of EU accession process)
 
 **Acceptance Criteria**:
 - Ukrainian data protection law compliance assessed
@@ -3343,31 +3343,31 @@
 **So that** Arabic-speaking users in the UAE and Saudi Arabia are properly protected
 
 #### Subtasks:
-- [ ] 18.8.1 — UAE Federal Decree-Law No. 45 of 2021 (Personal Data Protection Law):
+- [x] 18.8.1 — UAE Federal Decree-Law No. 45 of 2021 (Personal Data Protection Law):
   - Effective since January 2022 (regulations issued 2023)
   - Applies to processing personal data of UAE residents
   - Requirements: consent, purpose limitation, data minimization, transparency
   - Cross-border transfers: allowed to countries with adequate protection or with appropriate safeguards
   - Data subject rights: access, rectification, erasure, restriction, portability, objection
   - Must have privacy policy disclosing processing details
-- [ ] 18.8.2 — Saudi Arabia Personal Data Protection Law (PDPL):
+- [x] 18.8.2 — Saudi Arabia Personal Data Protection Law (PDPL):
   - Effective since September 2023
   - Applies to processing personal data of Saudi residents
   - Explicit consent required for processing (limited exceptions)
   - Cross-border transfers: only to countries on approved list or with adequate safeguards
   - Mandatory appointment of representative in Saudi Arabia for overseas processors
   - Data localization: certain categories may need to remain in Saudi Arabia
-- [ ] 18.8.3 — Bahrain — Personal Data Protection Law (PDPL, Law No. 30 of 2018):
+- [x] 18.8.3 — Bahrain — Personal Data Protection Law (PDPL, Law No. 30 of 2018):
   - Applies if Bahraini users access the service
   - Similar GDPR-like framework
-- [ ] 18.8.4 — Arabic-language privacy policy:
+- [x] 18.8.4 — Arabic-language privacy policy:
   - Must be available in Arabic for ar locale users
   - RTL layout verification for legal content
-- [ ] 18.8.5 — Content sensitivity review:
+- [x] 18.8.5 — Content sensitivity review:
   - Ensure flashcard/learning content is culturally appropriate for Middle Eastern users
   - No content that could be considered offensive under local laws
   - Review example sentences and cultural references
-- [ ] 18.8.6 — Document compliance approach per country:
+- [x] 18.8.6 — Document compliance approach per country:
   - Tier 1: UAE and Saudi Arabia (largest Arabic-speaking markets)
   - Tier 2: Bahrain, Qatar, Kuwait, Oman, Jordan, Egypt (monitor)
 
@@ -3385,28 +3385,28 @@
 **So that** Spanish-speaking users across multiple jurisdictions are protected
 
 #### Subtasks:
-- [ ] 18.9.1 — Spain LOPDGDD (Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales):
+- [x] 18.9.1 — Spain LOPDGDD (Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales):
   - Spain's GDPR implementation with additional digital rights
   - Right to digital disconnect for employees
   - Right to digital education
   - Right to rectification on the internet
   - Digital testament — right to manage deceased person's digital presence
   - Spanish age of digital consent: 14 years
-- [ ] 18.9.2 — Argentina — Ley de Protección de Datos Personales (25.326):
+- [x] 18.9.2 — Argentina — Ley de Protección de Datos Personales (25.326):
   - Argentina has EU adequacy decision
   - Similar framework to GDPR
   - If significant Argentine user base develops, assess compliance
-- [ ] 18.9.3 — Mexico — Ley Federal de Protección de Datos Personales:
+- [x] 18.9.3 — Mexico — Ley Federal de Protección de Datos Personales:
   - Requires privacy notice (Aviso de Privacidad) before collecting personal data
   - Must include: controller identity, purposes, data transfers, rights mechanisms
   - If targeting Mexican market specifically
-- [ ] 18.9.4 — Colombia — Ley 1581 de 2012:
+- [x] 18.9.4 — Colombia — Ley 1581 de 2012:
   - Prior authorization (consent) required for data processing
   - Registry of databases with SIC (Superintendencia de Industria y Comercio)
-- [ ] 18.9.5 — Spanish-language privacy policy:
+- [x] 18.9.5 — Spanish-language privacy policy:
   - Must cover LOPDGDD-specific rights if targeting Spain
   - Include AEPD (Agencia Española de Protección de Datos) complaint information
-- [ ] 18.9.6 — Document compliance hierarchy:
+- [x] 18.9.6 — Document compliance hierarchy:
   - Tier 1: Spain (EU/GDPR + LOPDGDD)
   - Tier 2: Mexico, Argentina (if significant user base)
   - Tier 3: Other LatAm countries (monitor)
@@ -3424,12 +3424,12 @@
 **So that** Canadian users' privacy rights are respected and Lumenshore avoids complaints to the OPC
 
 #### Subtasks:
-- [ ] 18.10.1 — PIPEDA applicability assessment:
+- [x] 18.10.1 — PIPEDA applicability assessment:
   - PIPEDA applies to private-sector organizations that collect, use, or disclose personal information in the course of commercial activity
   - English and French language pairs serve Canadian English and French speakers
   - Website available in en and fr locales = targeting Canadian users
   - Newsletter/waitlist signups from Canada = collecting PI of Canadians
-- [ ] 18.10.2 — PIPEDA 10 Fair Information Principles:
+- [x] 18.10.2 — PIPEDA 10 Fair Information Principles:
   - Accountability: organization responsible for PI under its control
   - Identifying Purposes: purposes identified at or before time of collection
   - Consent: knowledge and consent required for collection, use, disclosure
@@ -3440,14 +3440,14 @@
   - Openness: privacy policies readily available
   - Individual Access: right to access and challenge accuracy
   - Challenging Compliance: ability to challenge compliance to privacy officer
-- [ ] 18.10.3 — Breach notification (mandatory since Nov 2018):
+- [x] 18.10.3 — Breach notification (mandatory since Nov 2018):
   - Report breaches creating "real risk of significant harm" to OPC (Office of the Privacy Commissioner)
   - Notify affected individuals
   - Keep records of all breaches for 2 years
-- [ ] 18.10.4 — Quebec Law 25 (if applicable):
+- [x] 18.10.4 — Quebec Law 25 (if applicable):
   - Quebec's Law 25 (modernizing PIPEDA for Quebec) added GDPR-like requirements
   - If targeting Quebec French speakers specifically — requires Privacy Impact Assessment, consent granularity, and data residency considerations
-- [ ] 18.10.5 — Add Canadian-specific privacy disclosures (in English and French)
+- [x] 18.10.5 — Add Canadian-specific privacy disclosures (in English and French)
 
 **Acceptance Criteria**:
 - PIPEDA applicability assessed
@@ -3463,20 +3463,20 @@
 **So that** Lumenshore can assess compliance if Korean users emerge
 
 #### Subtasks:
-- [ ] 18.11.1 — PIPA applicability assessment:
+- [x] 18.11.1 — PIPA applicability assessment:
   - South Korea has one of the world's strictest data protection regimes
   - PIPA applies to "personal information handlers" processing PI of Korean residents
   - Currently no ko locale or Korean language pairs — lower risk
   - But if Korean users sign up via English locale — PIPA may still apply
-- [ ] 18.11.2 — Key PIPA requirements (assess if Korean user base grows):
+- [x] 18.11.2 — Key PIPA requirements (assess if Korean user base grows):
   - Consent for collection must be specific per purpose (not bundled)
   - Cross-border transfer: requires separate consent or equivalent protection
   - Mandatory appointment of Privacy Officer (CPO)
   - Data breach notification to PIPC and affected individuals "without delay"
   - Right to access, correction, deletion, suspension of processing
   - Annual privacy impact assessment for large-scale processors
-- [ ] 18.11.3 — Document decision: monitor Korean user metrics; if material Korean user base develops, full PIPA compliance review required
-- [ ] 18.11.4 — Korea Communications Commission (KCC) requirements for online service providers if any content is served from Korean infrastructure
+- [x] 18.11.3 — Document decision: monitor Korean user metrics; if material Korean user base develops, full PIPA compliance review required
+- [x] 18.11.4 — Korea Communications Commission (KCC) requirements for online service providers if any content is served from Korean infrastructure
 
 **Acceptance Criteria**:
 - PIPA awareness documented
@@ -3490,11 +3490,11 @@
 **So that** Australian users are protected and Lumenshore avoids OAIC enforcement
 
 #### Subtasks:
-- [ ] 18.12.1 — Privacy Act 1988 applicability:
+- [x] 18.12.1 — Privacy Act 1988 applicability:
   - Australian Privacy Principles (APPs) apply to organizations with annual turnover > AUD 3M, or those trading in personal information, or providing health services, or small businesses that have opted in
   - Assess whether Lumenshore exceeds AUD 3M threshold or otherwise triggers APPs
   - Even below threshold: good practice to comply as Australian users expect APP-level protection
-- [ ] 18.12.2 — Key APP requirements:
+- [x] 18.12.2 — Key APP requirements:
   - APP 1: Open and transparent management of personal information
   - APP 5: Notification of collection of personal information
   - APP 6: Use or disclosure only for purpose of collection (or related purpose the individual would reasonably expect)
@@ -3502,16 +3502,16 @@
   - APP 11: Security of personal information
   - APP 12: Access to personal information
   - APP 13: Correction of personal information
-- [ ] 18.12.3 — Notifiable Data Breaches (NDB) scheme:
+- [x] 18.12.3 — Notifiable Data Breaches (NDB) scheme:
   - Mandatory notification to OAIC and affected individuals for eligible data breaches
   - "Eligible breach": unauthorized access/disclosure likely to result in serious harm
   - Assess within 30 days of becoming aware of potential breach
-- [ ] 18.12.4 — Australian Consumer Law (ACL):
+- [x] 18.12.4 — Australian Consumer Law (ACL):
   - Consumer guarantees for digital products apply
   - Services must be provided with due care and skill
   - Cannot exclude consumer guarantees via contract terms
   - ACL supersedes any ToS limitation of liability for guaranteed rights
-- [ ] 18.12.5 — Privacy policy must be available and accessible per APP 1
+- [x] 18.12.5 — Privacy policy must be available and accessible per APP 1
 
 **Acceptance Criteria**:
 - Privacy Act/APP applicability assessed
@@ -3527,25 +3527,25 @@
 **So that** Lumenshore can assess compliance as Indian user base develops
 
 #### Subtasks:
-- [ ] 18.13.1 — DPDPA applicability:
+- [x] 18.13.1 — DPDPA applicability:
   - Applies to processing of digital personal data of individuals in India
   - No hi locale or Hindi language pairs currently — but English locale serves Indian English speakers
   - If significant Indian user base develops via English language pairs → compliance required
-- [ ] 18.13.2 — Key DPDPA requirements:
+- [x] 18.13.2 — Key DPDPA requirements:
   - Consent must be free, specific, informed, unconditional, and unambiguous
   - Purpose limitation: personal data used only for consented purpose
   - Data Principal (data subject) rights: access, correction, erasure, grievance redressal, nomination
   - Data Fiduciary (controller) obligations: accuracy, security, breach notification, data protection impact assessment
   - Significant Data Fiduciary: additional obligations (DPO, periodic audits) if notified by government — unlikely for Lumenshore at current scale
-- [ ] 18.13.3 — Cross-border transfers:
+- [x] 18.13.3 — Cross-border transfers:
   - DPDPA allows transfers to all countries EXCEPT those specifically blacklisted by Indian government
   - No blanket data localization requirement (unlike PIPL)
   - Monitor blacklist updates
-- [ ] 18.13.4 — Children's data (under 18 in India):
+- [x] 18.13.4 — Children's data (under 18 in India):
   - Verifiable parental consent required for processing children's data
   - Cannot track, behaviorally monitor, or target advertising at children
   - Age of digital consent in India: 18 years
-- [ ] 18.13.5 — Document decision: monitor Indian user metrics; full compliance review if material Indian user base develops
+- [x] 18.13.5 — Document decision: monitor Indian user metrics; full compliance review if material Indian user base develops
 
 **Acceptance Criteria**:
 - DPDPA applicability assessed
@@ -3560,42 +3560,42 @@
 **So that** Swiss users' data rights are respected and Lumenshore avoids FDPIC enforcement
 
 #### Subtasks:
-- [ ] 18.14.1 — nFADP applicability assessment:
+- [x] 18.14.1 — nFADP applicability assessment:
   - The revised nFADP (Bundesgesetz über den Datenschutz / Loi fédérale sur la protection des données) entered force 1 Sep 2023
   - Applies to private persons and federal bodies processing personal data of individuals in Switzerland
   - Extraterritorial scope: applies to foreign controllers if processing produces effects in Switzerland
   - German (de) and French (fr) locales + DE/FR language pairs = deliberately targeting Swiss users
   - Newsletter/waitlist signups from Switzerland = collecting personal data of Swiss individuals
-- [ ] 18.14.2 — Key nFADP obligations:
+- [x] 18.14.2 — Key nFADP obligations:
   - **Information duty** (Art. 19-21): must inform data subjects about identity of controller, purpose, recipients, cross-border transfers, retention periods, data subject rights — very similar to GDPR but with Swiss-specific nuances
   - **Consent** (Art. 6): consent must be informed, voluntary, and given for specific processing; silence does NOT constitute consent; consent for sensitive data must be explicit
   - **Cross-border transfers** (Art. 16-17): transfer only to countries with adequate protection per FDPIC list, OR with appropriate safeguards (SCCs, BCRs, or consent)
   - **Data breach notification** (Art. 24): notify FDPIC "as soon as possible" for breaches likely to result in high risk (no fixed 72-hour window like GDPR, but promptly)
   - **DPIA** (Art. 22): required when processing entails high risk to personality or fundamental rights
   - **Record of processing activities** (Art. 12): mandatory (exemption for SMEs with < 250 employees when low-risk processing — assess applicability)
-- [ ] 18.14.3 — Data subject rights under nFADP:
+- [x] 18.14.3 — Data subject rights under nFADP:
   - Right of access (Art. 25-27): must provide information within 30 days, free of charge
   - Right to data portability (Art. 28-29): provide data in common electronic format
   - Right to rectification (Art. 32(1))
   - Right to deletion / destruction (Art. 32(2)(c))
   - Right to object to processing
   - Note: nFADP does NOT have a "right to restrict processing" like GDPR — Swiss law has its own remedies
-- [ ] 18.14.4 — Swiss representative appointment (Art. 14-15):
+- [x] 18.14.4 — Swiss representative appointment (Art. 14-15):
   - If controller is outside Switzerland but regularly processes personal data of Swiss residents on a large scale, AND processing creates a high risk → must designate a representative in Switzerland
   - Assess whether Lumenshore meets the "large scale" and "high risk" thresholds (likely not at current scale)
   - If required: appoint a representative and publish their details in the privacy policy
   - Note: even if not required, recommended to list Swiss-accessible contact details
-- [ ] 18.14.5 — Cross-border transfer mechanism (UK → Switzerland):
+- [x] 18.14.5 — Cross-border transfer mechanism (UK → Switzerland):
   - Switzerland is on the FDPIC's list of countries with adequate protection (mutual adequacy with EU)
   - UK has EU adequacy decision — assess whether Swiss FDPIC recognises UK adequacy (yes, per FDPIC guidance)
   - For transfers to US (Vercel, Sentry): must rely on new Swiss-US Data Privacy Framework, SCCs with Swiss addendum, or consent
   - Document transfer mechanism for each sub-processor
-- [ ] 18.14.6 — Privacy policy Swiss-specific additions:
+- [x] 18.14.6 — Privacy policy Swiss-specific additions:
   - Add reference to nFADP alongside GDPR in privacy policy
   - State FDPIC complaint right: "Swiss residents may lodge a complaint with the Federal Data Protection and Information Commissioner (FDPIC)"
   - FDPIC contact: https://www.edoeb.admin.ch/
   - If Swiss representative appointed: publish representative details
-- [ ] 18.14.7 — Criminal penalties awareness:
+- [x] 18.14.7 — Criminal penalties awareness:
   - nFADP uniquely imposes **criminal fines on individuals** (not just companies) — up to CHF 250,000 for intentional breaches of information duty, cross-border transfer rules, or DPO/representative requirements
   - Directors and data protection officers are personally liable
   - This is significantly different from GDPR which fines companies only
@@ -3624,7 +3624,7 @@
 **So that** minor users' data is processed lawfully
 
 #### Subtasks:
-- [ ] 19.1.1 — Create age of digital consent mapping table:
+- [x] 19.1.1 — Create age of digital consent mapping table:
 
   | Country | Age | Regulation |
   |---|---|---|
@@ -3650,23 +3650,23 @@
   *Japan: no fixed digital consent age; APPI uses case-by-case assessment for minors
   †Brazil: "children" are under 12 (ECA), "adolescents" are 12-17
 
-- [ ] 19.1.2 — Implement locale-aware age verification:
+- [x] 19.1.2 — Implement locale-aware age verification:
   - Detect user's locale/region from app locale or website locale setting
   - Apply the correct minimum age for that jurisdiction
   - For unclear cases, default to 16 (highest common EU age)
-- [ ] 19.1.3 — Implement parental consent flow for underage users:
+- [x] 19.1.3 — Implement parental consent flow for underage users:
   - For users between the youngest threshold (13) and their jurisdiction's consent age:
   - Display age-appropriate notice explaining data collection
   - Request verifiable parental consent (email to parent, parent account linkage, etc.)
   - Block consent-based processing until parental consent obtained
   - Essential processing (contract performance for app functionality) may proceed without parental consent
-- [ ] 19.1.4 — Add age verification to website newsletter/waitlist signup:
+- [x] 19.1.4 — Add age verification to website newsletter/waitlist signup:
   - Cannot collect email from underage user without parental consent
   - Add age gate or declaration before form submission
-- [ ] 19.1.5 — Document minimum viable approach:
+- [x] 19.1.5 — Document minimum viable approach:
   - **Recommended**: Set minimum age to 16 globally (simplest compliance)
   - **Alternative**: Locale-based dynamic age gating (more complex, better UX for younger users in lower-threshold countries)
-- [ ] 19.1.6 — CHINA SPECIAL: PIPL classifies under-14 data as "sensitive personal information":
+- [x] 19.1.6 — CHINA SPECIAL: PIPL classifies under-14 data as "sensitive personal information":
   - Requires separate consent from parent/guardian
   - Must conduct Personal Information Protection Impact Assessment
   - Stricter than most other jurisdictions

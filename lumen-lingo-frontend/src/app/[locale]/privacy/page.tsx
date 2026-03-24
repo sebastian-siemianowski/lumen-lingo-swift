@@ -5,6 +5,7 @@ import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { LegalTOC, DownloadPDFButton } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
+import { Link } from '@/i18n/navigation';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
 export async function generateMetadata({
@@ -70,8 +71,23 @@ export default async function PrivacyPage({
     { id: 'international-transfers', text: t('internationalTransfers.heading'), level: 2 },
     { id: 'aggregate-data', text: t('aggregateData.heading'), level: 2 },
     { id: 'childrens-privacy', text: t('childrensPrivacy.heading'), level: 2 },
+    { id: 'age-consent', text: t('ageConsent.heading'), level: 2 },
     { id: 'data-retention', text: t('dataRetention.heading'), level: 2 },
     { id: 'ccpa-notice', text: t('ccpaNotice.heading'), level: 2 },
+    { id: 'japan-privacy', text: t('japanPrivacy.heading'), level: 2 },
+    { id: 'china-privacy', text: t('chinaPrivacy.heading'), level: 2 },
+    { id: 'brazil-privacy', text: t('brazilPrivacy.heading'), level: 2 },
+    { id: 'germany-privacy', text: t('germanyPrivacy.heading'), level: 2 },
+    { id: 'france-privacy', text: t('francePrivacy.heading'), level: 2 },
+    { id: 'poland-privacy', text: t('polandPrivacy.heading'), level: 2 },
+    { id: 'ukraine-privacy', text: t('ukrainePrivacy.heading'), level: 2 },
+    { id: 'middle-east-privacy', text: t('middleEastPrivacy.heading'), level: 2 },
+    { id: 'spain-latam-privacy', text: t('spainLatamPrivacy.heading'), level: 2 },
+    { id: 'canada-privacy', text: t('canadaPrivacy.heading'), level: 2 },
+    { id: 'south-korea-privacy', text: t('southKoreaPrivacy.heading'), level: 2 },
+    { id: 'australia-privacy', text: t('australiaPrivacy.heading'), level: 2 },
+    { id: 'india-privacy', text: t('indiaPrivacy.heading'), level: 2 },
+    { id: 'switzerland-privacy', text: t('switzerlandPrivacy.heading'), level: 2 },
     { id: 'your-rights', text: t('yourRights.heading'), level: 2 },
     { id: 'california-rights', text: t('yourRights.californiaHeading'), level: 2 },
     { id: 'gpc-signals', text: t('gpcSignals.heading'), level: 2 },
@@ -472,6 +488,46 @@ export default async function PrivacyPage({
                   <p>{t('childrensPrivacy.ferpaP1')}</p>
                 </section>
 
+                <section id="age-consent">
+                  <h2>{t('ageConsent.heading')}</h2>
+                  <p>{t('ageConsent.intro')}</p>
+
+                  <h3>{t('ageConsent.mappingHeading')}</h3>
+                  <p>{t('ageConsent.mappingIntro')}</p>
+                  <ul>
+                    <li>{t('ageConsent.mappingUk')}</li>
+                    <li>{t('ageConsent.mappingUs')}</li>
+                    <li>{t('ageConsent.mappingSpain')}</li>
+                    <li>{t('ageConsent.mappingItaly')}</li>
+                    <li>{t('ageConsent.mappingChina')}</li>
+                    <li>{t('ageConsent.mappingSouthKorea')}</li>
+                    <li>{t('ageConsent.mappingFrance')}</li>
+                    <li>{t('ageConsent.mappingGermany')}</li>
+                    <li>{t('ageConsent.mappingNetherlands')}</li>
+                    <li>{t('ageConsent.mappingPoland')}</li>
+                    <li>{t('ageConsent.mappingIreland')}</li>
+                    <li>{t('ageConsent.mappingJapan')}</li>
+                    <li>{t('ageConsent.mappingUae')}</li>
+                    <li>{t('ageConsent.mappingSaudi')}</li>
+                    <li>{t('ageConsent.mappingIndia')}</li>
+                    <li>{t('ageConsent.mappingBrazil')}</li>
+                    <li>{t('ageConsent.mappingCanada')}</li>
+                    <li>{t('ageConsent.mappingAustralia')}</li>
+                  </ul>
+
+                  <h3>{t('ageConsent.approachHeading')}</h3>
+                  <p>{t('ageConsent.approachP1')}</p>
+                  <p>{t('ageConsent.approachP2')}</p>
+
+                  <h3>{t('ageConsent.parentalFlowHeading')}</h3>
+                  <p>{t('ageConsent.parentalFlowP1')}</p>
+                  <p>{t('ageConsent.parentalFlowP2')}</p>
+
+                  <h3>{t('ageConsent.chinaHeading')}</h3>
+                  <p>{t('ageConsent.chinaP1')}</p>
+                  <p>{t('ageConsent.chinaP2')}</p>
+                </section>
+
                 <section id="data-retention">
                   <h2>{t('dataRetention.heading')}</h2>
                   <p>{t('dataRetention.intro')}</p>
@@ -525,6 +581,408 @@ export default async function PrivacyPage({
                   <p>{t('ccpaNotice.doNotSell.p1')}</p>
                   <p>{t('ccpaNotice.doNotSell.p2')}</p>
                   <p>{t.rich('ccpaNotice.doNotSell.p3', { gpcLink: (chunks: React.ReactNode) => <a href="https://globalprivacycontrol.org/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</p>
+                </section>
+
+                {/* ── Japan — APPI ── */}
+                <section id="japan-privacy">
+                  <h2>{t('japanPrivacy.heading')}</h2>
+                  <p>{t('japanPrivacy.intro')}</p>
+
+                  <h3>{t('japanPrivacy.purposeHeading')}</h3>
+                  <p>{t('japanPrivacy.purposeP1')}</p>
+                  <ul>
+                    <li>{t.rich('japanPrivacy.purposeLi1', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.purposeLi2', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.purposeLi3', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.purposeLi4', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.purposeLi5', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('japanPrivacy.handlerHeading')}</h3>
+                  <p>{t('japanPrivacy.handlerP1')}</p>
+                  <ul>
+                    <li>{t.rich('japanPrivacy.handlerLi1', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.handlerLi2', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.handlerLi3', { ...richTags, emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com">{chunks}</a> })}</li>
+                  </ul>
+
+                  <h3>{t('japanPrivacy.crossBorderHeading')}</h3>
+                  <p>{t('japanPrivacy.crossBorderP1')}</p>
+                  <ul>
+                    <li>{t.rich('japanPrivacy.crossBorderLi1', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.crossBorderLi2', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.crossBorderLi3', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.crossBorderLi4', richTags)}</li>
+                  </ul>
+                  <p>{t('japanPrivacy.crossBorderP2')}</p>
+
+                  <h3>{t('japanPrivacy.rightsHeading')}</h3>
+                  <p>{t('japanPrivacy.rightsP1')}</p>
+                  <ul>
+                    <li>{t.rich('japanPrivacy.rightsLi1', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.rightsLi2', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.rightsLi3', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.rightsLi4', richTags)}</li>
+                    <li>{t.rich('japanPrivacy.rightsLi5', richTags)}</li>
+                  </ul>
+                  <p>{t.rich('japanPrivacy.rightsP2', { emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com">{chunks}</a> })}</p>
+
+                  <h3>{t('japanPrivacy.ppcHeading')}</h3>
+                  <p>{t.rich('japanPrivacy.ppcP1', richTags)}</p>
+                  <ul>
+                    <li>{t.rich('japanPrivacy.ppcLi1', { ...richTags, ppcLink: (chunks: React.ReactNode) => <a href="https://www.ppc.go.jp/en/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
+                    <li>{t.rich('japanPrivacy.ppcLi2', richTags)}</li>
+                  </ul>
+                </section>
+
+                {/* ── China — PIPL ── */}
+                <section id="china-privacy">
+                  <h2>{t('chinaPrivacy.heading')}</h2>
+                  <p>{t('chinaPrivacy.intro')}</p>
+
+                  <h3>{t('chinaPrivacy.applicabilityHeading')}</h3>
+                  <p>{t('chinaPrivacy.applicabilityP1')}</p>
+
+                  <h3>{t('chinaPrivacy.legalBasesHeading')}</h3>
+                  <p>{t('chinaPrivacy.legalBasesP1')}</p>
+                  <ul>
+                    <li>{t.rich('chinaPrivacy.legalBasesLi1', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.legalBasesLi2', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.legalBasesLi3', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.legalBasesLi4', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('chinaPrivacy.crossBorderHeading')}</h3>
+                  <p>{t('chinaPrivacy.crossBorderP1')}</p>
+                  <ul>
+                    <li>{t.rich('chinaPrivacy.crossBorderLi1', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.crossBorderLi2', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.crossBorderLi3', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.crossBorderLi4', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.crossBorderLi5', richTags)}</li>
+                  </ul>
+                  <p>{t('chinaPrivacy.crossBorderP2')}</p>
+
+                  <h3>{t('chinaPrivacy.rightsHeading')}</h3>
+                  <p>{t('chinaPrivacy.rightsP1')}</p>
+                  <ul>
+                    <li>{t.rich('chinaPrivacy.rightsLi1', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.rightsLi2', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.rightsLi3', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.rightsLi4', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.rightsLi5', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.rightsLi6', richTags)}</li>
+                    <li>{t.rich('chinaPrivacy.rightsLi7', richTags)}</li>
+                  </ul>
+                  <p>{t.rich('chinaPrivacy.rightsP2', { emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com">{chunks}</a> })}</p>
+
+                  <h3>{t('chinaPrivacy.dataLocalizationHeading')}</h3>
+                  <p>{t('chinaPrivacy.dataLocalizationP1')}</p>
+
+                  <h3>{t('chinaPrivacy.cacHeading')}</h3>
+                  <p>{t.rich('chinaPrivacy.cacP1', richTags)}</p>
+                  <ul>
+                    <li>{t.rich('chinaPrivacy.cacLi1', { ...richTags, cacLink: (chunks: React.ReactNode) => <a href="https://www.cac.gov.cn" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
+                    <li>{t.rich('chinaPrivacy.cacLi2', richTags)}</li>
+                  </ul>
+                </section>
+
+                {/* ── Brazil — LGPD ── */}
+                <section id="brazil-privacy">
+                  <h2>{t('brazilPrivacy.heading')}</h2>
+                  <p>{t('brazilPrivacy.intro')}</p>
+
+                  <h3>{t('brazilPrivacy.applicabilityHeading')}</h3>
+                  <p>{t('brazilPrivacy.applicabilityP1')}</p>
+
+                  <h3>{t('brazilPrivacy.legalBasesHeading')}</h3>
+                  <p>{t('brazilPrivacy.legalBasesP1')}</p>
+                  <ul>
+                    <li>{t.rich('brazilPrivacy.legalBasesLi1', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.legalBasesLi2', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.legalBasesLi3', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.legalBasesLi4', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('brazilPrivacy.rightsHeading')}</h3>
+                  <p>{t('brazilPrivacy.rightsP1')}</p>
+                  <ul>
+                    <li>{t.rich('brazilPrivacy.rightsLi1', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.rightsLi2', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.rightsLi3', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.rightsLi4', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.rightsLi5', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.rightsLi6', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.rightsLi7', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.rightsLi8', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.rightsLi9', richTags)}</li>
+                  </ul>
+                  <p>{t.rich('brazilPrivacy.rightsP2', { emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com">{chunks}</a> })}</p>
+
+                  <h3>{t('brazilPrivacy.crossBorderHeading')}</h3>
+                  <p>{t('brazilPrivacy.crossBorderP1')}</p>
+                  <ul>
+                    <li>{t.rich('brazilPrivacy.crossBorderLi1', richTags)}</li>
+                    <li>{t.rich('brazilPrivacy.crossBorderLi2', richTags)}</li>
+                  </ul>
+                  <p>{t('brazilPrivacy.crossBorderP2')}</p>
+
+                  <h3>{t('brazilPrivacy.anpdHeading')}</h3>
+                  <p>{t.rich('brazilPrivacy.anpdP1', richTags)}</p>
+                  <ul>
+                    <li>{t.rich('brazilPrivacy.anpdLi1', { ...richTags, anpdLink: (chunks: React.ReactNode) => <a href="https://www.gov.br/anpd/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
+                    <li>{t.rich('brazilPrivacy.anpdLi2', { ...richTags, anpdEmail: (chunks: React.ReactNode) => <a href="mailto:encarregado@anpd.gov.br">{chunks}</a> })}</li>
+                  </ul>
+                </section>
+
+                {/* ── Germany — BDSG & TTDSG ── */}
+                <section id="germany-privacy">
+                  <h2>{t('germanyPrivacy.heading')}</h2>
+                  <p>{t('germanyPrivacy.intro')}</p>
+
+                  <h3>{t('germanyPrivacy.ttdsgHeading')}</h3>
+                  <p>{t('germanyPrivacy.ttdsgP1')}</p>
+                  <ul>
+                    <li>{t.rich('germanyPrivacy.ttdsgLi1', richTags)}</li>
+                    <li>{t.rich('germanyPrivacy.ttdsgLi2', richTags)}</li>
+                    <li>{t.rich('germanyPrivacy.ttdsgLi3', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('germanyPrivacy.ageHeading')}</h3>
+                  <p>{t('germanyPrivacy.ageP1')}</p>
+
+                  <h3>{t('germanyPrivacy.dpoHeading')}</h3>
+                  <p>{t('germanyPrivacy.dpoP1')}</p>
+
+                  <h3>{t('germanyPrivacy.impressumHeading')}</h3>
+                  <p>{t.rich('germanyPrivacy.impressumP1', { impressumLink: (chunks: React.ReactNode) => <Link href="/impressum" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</Link> })}</p>
+                </section>
+
+                {/* ── France — CNIL & French Data Protection ── */}
+                <section id="france-privacy">
+                  <h2>{t('francePrivacy.heading')}</h2>
+                  <p>{t('francePrivacy.intro')}</p>
+
+                  <h3>{t('francePrivacy.cnilCookieHeading')}</h3>
+                  <p>{t('francePrivacy.cnilCookieP1')}</p>
+                  <ul>
+                    <li>{t.rich('francePrivacy.cnilCookieLi1', richTags)}</li>
+                    <li>{t.rich('francePrivacy.cnilCookieLi2', richTags)}</li>
+                    <li>{t.rich('francePrivacy.cnilCookieLi3', richTags)}</li>
+                    <li>{t.rich('francePrivacy.cnilCookieLi4', richTags)}</li>
+                    <li>{t.rich('francePrivacy.cnilCookieLi5', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('francePrivacy.ageHeading')}</h3>
+                  <p>{t('francePrivacy.ageP1')}</p>
+
+                  <h3>{t('francePrivacy.postMortemHeading')}</h3>
+                  <p>{t.rich('francePrivacy.postMortemP1', { emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a> })}</p>
+
+                  <h3>{t('francePrivacy.consumerHeading')}</h3>
+                  <p>{t('francePrivacy.consumerP1')}</p>
+
+                  <h3>{t('francePrivacy.mentionsHeading')}</h3>
+                  <p>{t.rich('francePrivacy.mentionsP1', { mentionsLink: (chunks: React.ReactNode) => <Link href="/mentions-legales" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</Link> })}</p>
+                </section>
+
+                {/* ── Poland — PUODO & Polish Regulatory Requirements ── */}
+                <section id="poland-privacy">
+                  <h2>{t('polandPrivacy.heading')}</h2>
+                  <p>{t('polandPrivacy.intro')}</p>
+
+                  <h3>{t('polandPrivacy.puodoHeading')}</h3>
+                  <p>{t('polandPrivacy.puodoP1')}</p>
+
+                  <h3>{t('polandPrivacy.languageHeading')}</h3>
+                  <p>{t('polandPrivacy.languageP1')}</p>
+
+                  <h3>{t('polandPrivacy.ageHeading')}</h3>
+                  <p>{t('polandPrivacy.ageP1')}</p>
+
+                  <h3>{t('polandPrivacy.ecommerceHeading')}</h3>
+                  <p>{t('polandPrivacy.ecommerceP1')}</p>
+
+                  <h3>{t('polandPrivacy.telecomHeading')}</h3>
+                  <p>{t('polandPrivacy.telecomP1')}</p>
+
+                  <h3>{t('polandPrivacy.uokikHeading')}</h3>
+                  <p>{t('polandPrivacy.uokikP1')}</p>
+                </section>
+
+                {/* ── Ukraine — Data Protection Law & Regulatory Requirements ── */}
+                <section id="ukraine-privacy">
+                  <h2>{t('ukrainePrivacy.heading')}</h2>
+                  <p>{t('ukrainePrivacy.intro')}</p>
+
+                  <h3>{t('ukrainePrivacy.lawHeading')}</h3>
+                  <p>{t('ukrainePrivacy.lawP1')}</p>
+
+                  <h3>{t('ukrainePrivacy.rightsHeading')}</h3>
+                  <p>{t('ukrainePrivacy.rightsP1')}</p>
+
+                  <h3>{t('ukrainePrivacy.transferHeading')}</h3>
+                  <p>{t('ukrainePrivacy.transferP1')}</p>
+
+                  <h3>{t('ukrainePrivacy.languageHeading')}</h3>
+                  <p>{t('ukrainePrivacy.languageP1')}</p>
+
+                  <h3>{t('ukrainePrivacy.sanctionsHeading')}</h3>
+                  <p>{t('ukrainePrivacy.sanctionsP1')}</p>
+
+                  <h3>{t('ukrainePrivacy.monitoringHeading')}</h3>
+                  <p>{t('ukrainePrivacy.monitoringP1')}</p>
+                </section>
+
+                <section id="middle-east-privacy">
+                  <h2>{t('middleEastPrivacy.heading')}</h2>
+                  <p>{t('middleEastPrivacy.intro')}</p>
+
+                  <h3>{t('middleEastPrivacy.uaeHeading')}</h3>
+                  <p>{t('middleEastPrivacy.uaeP1')}</p>
+                  <p>{t('middleEastPrivacy.uaeRightsP1')}</p>
+
+                  <h3>{t('middleEastPrivacy.saudiHeading')}</h3>
+                  <p>{t('middleEastPrivacy.saudiP1')}</p>
+
+                  <h3>{t('middleEastPrivacy.bahrainHeading')}</h3>
+                  <p>{t('middleEastPrivacy.bahrainP1')}</p>
+
+                  <h3>{t('middleEastPrivacy.arabicHeading')}</h3>
+                  <p>{t('middleEastPrivacy.arabicP1')}</p>
+
+                  <h3>{t('middleEastPrivacy.culturalHeading')}</h3>
+                  <p>{t('middleEastPrivacy.culturalP1')}</p>
+
+                  <h3>{t('middleEastPrivacy.complianceHeading')}</h3>
+                  <p>{t('middleEastPrivacy.complianceP1')}</p>
+                </section>
+
+                <section id="spain-latam-privacy">
+                  <h2>{t('spainLatamPrivacy.heading')}</h2>
+                  <p>{t('spainLatamPrivacy.intro')}</p>
+
+                  <h3>{t('spainLatamPrivacy.spainHeading')}</h3>
+                  <p>{t('spainLatamPrivacy.spainP1')}</p>
+                  <p>{t('spainLatamPrivacy.spainP2')}</p>
+
+                  <h3>{t('spainLatamPrivacy.argentinaHeading')}</h3>
+                  <p>{t('spainLatamPrivacy.argentinaP1')}</p>
+
+                  <h3>{t('spainLatamPrivacy.mexicoHeading')}</h3>
+                  <p>{t('spainLatamPrivacy.mexicoP1')}</p>
+
+                  <h3>{t('spainLatamPrivacy.colombiaHeading')}</h3>
+                  <p>{t('spainLatamPrivacy.colombiaP1')}</p>
+
+                  <h3>{t('spainLatamPrivacy.languageHeading')}</h3>
+                  <p>{t('spainLatamPrivacy.languageP1')}</p>
+
+                  <h3>{t('spainLatamPrivacy.complianceHeading')}</h3>
+                  <p>{t('spainLatamPrivacy.complianceP1')}</p>
+                </section>
+
+                <section id="canada-privacy">
+                  <h2>{t('canadaPrivacy.heading')}</h2>
+                  <p>{t('canadaPrivacy.intro')}</p>
+
+                  <h3>{t('canadaPrivacy.pipedaHeading')}</h3>
+                  <p>{t('canadaPrivacy.pipedaP1')}</p>
+
+                  <h3>{t('canadaPrivacy.principlesHeading')}</h3>
+                  <p>{t('canadaPrivacy.principlesP1')}</p>
+
+                  <h3>{t('canadaPrivacy.breachHeading')}</h3>
+                  <p>{t('canadaPrivacy.breachP1')}</p>
+
+                  <h3>{t('canadaPrivacy.quebecHeading')}</h3>
+                  <p>{t('canadaPrivacy.quebecP1')}</p>
+
+                  <h3>{t('canadaPrivacy.disclosuresHeading')}</h3>
+                  <p>{t('canadaPrivacy.disclosuresP1')}</p>
+                </section>
+
+                <section id="south-korea-privacy">
+                  <h2>{t('southKoreaPrivacy.heading')}</h2>
+                  <p>{t('southKoreaPrivacy.intro')}</p>
+
+                  <h3>{t('southKoreaPrivacy.assessmentHeading')}</h3>
+                  <p>{t('southKoreaPrivacy.assessmentP1')}</p>
+
+                  <h3>{t('southKoreaPrivacy.requirementsHeading')}</h3>
+                  <p>{t('southKoreaPrivacy.requirementsP1')}</p>
+
+                  <h3>{t('southKoreaPrivacy.monitoringHeading')}</h3>
+                  <p>{t('southKoreaPrivacy.monitoringP1')}</p>
+                </section>
+
+                <section id="australia-privacy">
+                  <h2>{t('australiaPrivacy.heading')}</h2>
+                  <p>{t('australiaPrivacy.intro')}</p>
+
+                  <h3>{t('australiaPrivacy.actHeading')}</h3>
+                  <p>{t('australiaPrivacy.actP1')}</p>
+
+                  <h3>{t('australiaPrivacy.appsHeading')}</h3>
+                  <p>{t('australiaPrivacy.appsP1')}</p>
+
+                  <h3>{t('australiaPrivacy.ndbHeading')}</h3>
+                  <p>{t('australiaPrivacy.ndbP1')}</p>
+
+                  <h3>{t('australiaPrivacy.aclHeading')}</h3>
+                  <p>{t('australiaPrivacy.aclP1')}</p>
+
+                  <h3>{t('australiaPrivacy.disclosuresHeading')}</h3>
+                  <p>{t('australiaPrivacy.disclosuresP1')}</p>
+                </section>
+
+                <section id="india-privacy">
+                  <h2>{t('indiaPrivacy.heading')}</h2>
+                  <p>{t('indiaPrivacy.intro')}</p>
+
+                  <h3>{t('indiaPrivacy.applicabilityHeading')}</h3>
+                  <p>{t('indiaPrivacy.applicabilityP1')}</p>
+
+                  <h3>{t('indiaPrivacy.requirementsHeading')}</h3>
+                  <p>{t('indiaPrivacy.requirementsP1')}</p>
+
+                  <h3>{t('indiaPrivacy.crossBorderHeading')}</h3>
+                  <p>{t('indiaPrivacy.crossBorderP1')}</p>
+
+                  <h3>{t('indiaPrivacy.childrenHeading')}</h3>
+                  <p>{t('indiaPrivacy.childrenP1')}</p>
+
+                  <h3>{t('indiaPrivacy.monitoringHeading')}</h3>
+                  <p>{t('indiaPrivacy.monitoringP1')}</p>
+                </section>
+
+                <section id="switzerland-privacy">
+                  <h2>{t('switzerlandPrivacy.heading')}</h2>
+                  <p>{t('switzerlandPrivacy.intro')}</p>
+
+                  <h3>{t('switzerlandPrivacy.applicabilityHeading')}</h3>
+                  <p>{t('switzerlandPrivacy.applicabilityP1')}</p>
+
+                  <h3>{t('switzerlandPrivacy.obligationsHeading')}</h3>
+                  <p>{t('switzerlandPrivacy.obligationsP1')}</p>
+
+                  <h3>{t('switzerlandPrivacy.crossBorderHeading')}</h3>
+                  <p>{t('switzerlandPrivacy.crossBorderP1')}</p>
+
+                  <h3>{t('switzerlandPrivacy.rightsHeading')}</h3>
+                  <p>{t('switzerlandPrivacy.rightsP1')}</p>
+
+                  <h3>{t('switzerlandPrivacy.representativeHeading')}</h3>
+                  <p>{t('switzerlandPrivacy.representativeP1')}</p>
+
+                  <h3>{t('switzerlandPrivacy.breachHeading')}</h3>
+                  <p>{t('switzerlandPrivacy.breachP1')}</p>
+
+                  <h3>{t('switzerlandPrivacy.fdpicHeading')}</h3>
+                  <p>{t('switzerlandPrivacy.fdpicP1')}</p>
+
+                  <h3>{t('switzerlandPrivacy.penaltiesHeading')}</h3>
+                  <p>{t('switzerlandPrivacy.penaltiesP1')}</p>
                 </section>
 
                 <section id="your-rights">

@@ -3,6 +3,8 @@
 import { useState, useRef, type FormEvent } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { trackEvent } from '@/lib/analytics';
+import { useLocale } from 'next-intl';
+import { getConsentAge } from '@/lib/consent-age';
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';
 
@@ -21,6 +23,8 @@ function isValidEmail(email: string): boolean {
 }
 
 export function NewsletterForm({ source = 'unknown', compact = false, className = '' }: NewsletterFormProps) {
+  const locale = useLocale();
+  const consentAge = getConsentAge(locale);
   const [email, setEmail] = useState('');
   const [ageConfirmed, setAgeConfirmed] = useState(false);
   const [state, setState] = useState<FormState>('idle');
@@ -185,7 +189,7 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
                 className="mt-0.5 h-4 w-4 shrink-0 rounded border-glass-border accent-violet"
               />
               <span className="text-[11px] leading-relaxed text-foreground-muted/70">
-                I confirm I am at least 13 years old (or have parental consent if under 18).
+                I confirm I am at least {consentAge} years old (or have parental consent if under 18).
               </span>
             </label>
           </motion.form>

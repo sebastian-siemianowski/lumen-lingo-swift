@@ -3,6 +3,8 @@
 import { useState, useRef, type FormEvent } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { trackEvent } from '@/lib/analytics';
+import { useLocale } from 'next-intl';
+import { getConsentAge } from '@/lib/consent-age';
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';
 
@@ -36,6 +38,8 @@ interface WaitlistFormProps {
 }
 
 export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
+  const locale = useLocale();
+  const consentAge = getConsentAge(locale);
   const [email, setEmail] = useState('');
   const [language, setLanguage] = useState('');
   const [ageConfirmed, setAgeConfirmed] = useState(false);
@@ -198,7 +202,7 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
               className="mt-0.5 h-4 w-4 shrink-0 rounded border-glass-border accent-violet"
             />
             <span className="text-xs leading-relaxed text-foreground-muted/70">
-              I confirm I am at least 13 years old (or have parental consent if under 18).
+              I confirm I am at least {consentAge} years old (or have parental consent if under 18).
             </span>
           </label>
 
