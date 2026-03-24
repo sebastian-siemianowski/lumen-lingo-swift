@@ -9,14 +9,14 @@ import { Link } from '@/i18n/navigation';
 export const metadata: Metadata = {
   title: 'Accessibility Statement',
   description:
-    'LumenLingo is committed to digital accessibility. Learn about our WCAG 2.1 AA conformance, assistive technology support, and how to report accessibility issues.',
+    'LumenLingo accessibility statement per the European Accessibility Act (EAA) and WCAG 2.1 AA. Conformance status, EN 301 549, known limitations, remediation timelines, and how to report issues.',
   alternates: {
     canonical: 'https://lumenlingo.com/accessibility',
   },
   openGraph: {
     title: 'Accessibility Statement — LumenLingo',
     description:
-      'Our commitment to making language learning accessible to everyone, regardless of ability.',
+      'Our commitment to making language learning accessible to everyone, with EAA conformance details and remediation timelines.',
     url: 'https://lumenlingo.com/accessibility',
     siteName: 'LumenLingo',
     type: 'website',
@@ -56,7 +56,7 @@ export default async function AccessibilityPage({
                 <svg viewBox="0 0 16 16" fill="none" className="h-3.5 w-3.5 text-white/40" aria-hidden>
                   <path d="M8 4v4l2.5 1.5M14 8A6 6 0 112 8a6 6 0 0112 0z" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" />
                 </svg>
-                Last updated: 22 March 2026
+                Last updated: 24 March 2026
               </span>
             </div>
           </FadeIn>
@@ -79,6 +79,74 @@ export default async function AccessibilityPage({
                 </p>
               </section>
 
+              <section id="eaa-scope">
+                <h2>European Accessibility Act (EAA) Scope</h2>
+                <p>
+                  The{' '}
+                  <a
+                    href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    European Accessibility Act (Directive 2019/882)
+                  </a>{' '}
+                  came into force on 28 June 2025, requiring digital services
+                  offered to EU consumers to meet accessibility standards.
+                </p>
+                <p>
+                  LumenLingo sells digital language-learning subscriptions to
+                  consumers in EU member states. As an e-commerce service with
+                  associated website and mobile application, LumenLingo falls
+                  within the scope of the EAA. Compliance requires meeting the{' '}
+                  <a
+                    href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    EN 301 549
+                  </a>{' '}
+                  harmonised European standard, which references WCAG 2.1
+                  Level AA for web content and provides additional requirements
+                  for mobile applications.
+                </p>
+              </section>
+
+              <section id="us-accessibility">
+                <h2>US Accessibility (ADA &amp; Section 508)</h2>
+                <p>
+                  US courts increasingly interpret{' '}
+                  <a
+                    href="https://www.ada.gov/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Title III of the Americans with Disabilities Act (ADA)
+                  </a>{' '}
+                  as applying to websites and mobile applications. While no
+                  formal web accessibility standard is mandated by the ADA,
+                  WCAG 2.1 Level AA is the de facto industry standard
+                  referenced by the Department of Justice.
+                </p>
+                <p>
+                  LumenLingo targets WCAG 2.1 Level AA for both our website
+                  and iOS app, satisfying the ADA&apos;s requirement for
+                  equal access to digital services. Our conformance status,
+                  known limitations, and remediation timelines are documented
+                  on this page and in our{' '}
+                  <Link href="/accessibility/vpat" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">
+                    Voluntary Product Accessibility Template (VPAT)
+                  </Link>.
+                </p>
+                <p>
+                  <strong>Section 508</strong> applies to US federal agencies
+                  and their contractors. LumenShore Ltd does not currently
+                  contract with US federal agencies, so Section 508 is not
+                  directly applicable. However, our WCAG 2.1 AA compliance
+                  target meets the equivalent Section 508 technical standard
+                  (which references WCAG 2.0 Level AA).
+                </p>
+              </section>
+
               <section id="conformance">
                 <h2>Conformance Status</h2>
                 <p>
@@ -92,10 +160,19 @@ export default async function AccessibilityPage({
                 </p>
                 <p>
                   <strong>lumenlingo.com</strong> is partially conformant with
-                  WCAG 2.1 Level AA. &ldquo;Partially conformant&rdquo; means
-                  that some parts of the content do not fully conform to the
-                  accessibility standard. We are actively working toward full
+                  WCAG 2.1 Level AA and EN 301 549 v3.2.1.
+                  &ldquo;Partially conformant&rdquo; means that some parts of
+                  the content do not fully conform to the accessibility
+                  standard. Known non-conformities are listed below with
+                  remediation timelines. We are actively working toward full
                   conformance.
+                </p>
+                <p>
+                  <strong>LumenLingo iOS app</strong> is partially conformant
+                  with EN 301 549 requirements for non-web software (Clause 11).
+                  The app targets WCAG 2.1 Level AA where applicable and
+                  implements platform accessibility APIs (VoiceOver, Reduce
+                  Motion) for key interactions.
                 </p>
               </section>
 
@@ -178,10 +255,12 @@ export default async function AccessibilityPage({
               </section>
 
               <section id="known-limitations">
-                <h2>Known Limitations</h2>
+                <h2>Known Limitations &amp; Remediation</h2>
                 <p>
                   Despite our best efforts, some areas have limitations we are
-                  actively working to address:
+                  actively working to address. In accordance with the EAA, we
+                  list known non-conformities below with planned remediation
+                  timelines.
                 </p>
                 <h3>Website (lumenlingo.com)</h3>
                 <ul>
@@ -189,40 +268,62 @@ export default async function AccessibilityPage({
                     <strong>Screenshot carousel:</strong> Drag-to-swipe
                     interaction requires touch or mouse input. Keyboard
                     navigation via arrow keys is provided as an alternative.
+                    <br />
+                    <em>Status: Alternative provided. No further action needed.</em>
                   </li>
                   <li>
                     <strong>Glass morphism effects:</strong> The
                     backdrop-blur visual effects may not render on all browsers.
                     Content remains fully readable regardless.
-                  </li>
-                  <li>
-                    <strong>Accessibility page translation:</strong> This
-                    accessibility statement is currently available in English
-                    only. We plan to translate it into all supported languages.
+                    <br />
+                    <em>Status: Gracefully degrades. No further action needed.</em>
                   </li>
                 </ul>
                 <h3>iOS Application</h3>
                 <ul>
                   <li>
-                    <strong>VoiceOver labels:</strong> Key interactive elements
-                    (categories, flashcards, membership badges, PDF export
-                    toolbar) include VoiceOver labels and hints. Some
-                    secondary views rely on SwiftUI&apos;s default accessibility
-                    rather than explicit labels. We are progressively adding
-                    full VoiceOver coverage.
+                    <strong>VoiceOver labels (WCAG 4.1.2 — Name, Role, Value):</strong>{' '}
+                    Key interactive elements (categories, flashcards,
+                    membership badges, PDF export toolbar, collapsible sections)
+                    include VoiceOver labels and hints. Approximately 15% of
+                    views have explicit accessibility labels; the remainder rely
+                    on SwiftUI&apos;s built-in accessibility for standard
+                    controls (buttons, toggles, text). Custom decorative views
+                    (glass cards, parallax effects) lack explicit descriptions.
+                    <br />
+                    <em>Target: Q3 2026 — Add explicit VoiceOver labels to all
+                    custom views and game elements.</em>
                   </li>
                   <li>
-                    <strong>Dynamic Type:</strong> The iOS app does not yet
-                    fully support Dynamic Type. Most text uses fixed sizes
-                    optimised for the glass-morphism design. Users who rely on
-                    larger text sizes may not see all text scale. A migration to
-                    scalable text styles is planned.
+                    <strong>Dynamic Type (WCAG 1.4.4 — Resize Text):</strong>{' '}
+                    The iOS app does not yet fully support Dynamic Type.
+                    Approximately 87% of text uses fixed sizes optimised for the
+                    glass-morphism design. Users who rely on larger text sizes
+                    may not see all text scale. A migration to scalable text
+                    styles is planned.
+                    <br />
+                    <em>Target: Q4 2026 — Migrate to @ScaledMetric and
+                    semantic font styles across all views.</em>
                   </li>
                   <li>
-                    <strong>Reduce Motion:</strong> All animation-heavy views
-                    (flashcard flips, parallax effects, particle celebrations,
-                    expand/collapse sections) respect the system Reduce Motion
-                    preference.
+                    <strong>Reduce Motion (WCAG 2.3.3 — Animation from Interactions):</strong>{' '}
+                    All major animation-heavy views (flashcard flips, parallax
+                    effects, particle celebrations, expand/collapse sections,
+                    PDF export animations) respect the system Reduce Motion
+                    preference. Background nebula renderers continue to animate
+                    as purely decorative content.
+                    <br />
+                    <em>Status: Compliant for interactive animations. Decorative
+                    animations excluded per WCAG exception.</em>
+                  </li>
+                  <li>
+                    <strong>Target Size (WCAG 2.5.8 — Target Size Minimum):</strong>{' '}
+                    Most interactive targets meet the 44×44pt minimum. Some
+                    smaller icon buttons in secondary views may fall below this
+                    threshold.
+                    <br />
+                    <em>Target: Q3 2026 — Audit all touch targets and ensure
+                    44pt minimum.</em>
                   </li>
                 </ul>
                 <p>
@@ -300,15 +401,57 @@ export default async function AccessibilityPage({
                     <strong>General contact:</strong>{' '}
                     <Link href="/contact" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">Contact page</Link>
                   </li>
+                  <li>
+                    <strong>VPAT:</strong>{' '}
+                    <Link href="/accessibility/vpat" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">
+                      View our Voluntary Product Accessibility Template
+                    </Link>
+                  </li>
                 </ul>
                 <p>
                   We aim to respond to accessibility feedback within 5 business
-                  days.
+                  days. If you submit an accessibility complaint, we will
+                  acknowledge receipt within 2 business days and provide a
+                  substantive response — including a remediation plan for any
+                  confirmed barrier — within 15 business days.
+                </p>
+              </section>
+
+              <section id="disproportionate-burden">
+                <h2>Disproportionate Burden Assessment</h2>
+                <p>
+                  Article 14 of the European Accessibility Act allows
+                  micro-enterprises (fewer than 10 employees and annual
+                  turnover below &euro;2 million) to claim an exemption where
+                  compliance would impose a &ldquo;disproportionate
+                  burden.&rdquo;
+                </p>
+                <p>
+                  LumenShore Limited (Company No. 09607326, England &amp;
+                  Wales) currently qualifies as a micro-enterprise. However, we
+                  do not rely on this exemption as a blanket defence. Instead,
+                  we take reasonable measures to comply with EN 301 549 and
+                  WCAG 2.1 AA, prioritising the highest-impact accessibility
+                  improvements within our resources:
+                </p>
+                <ul>
+                  <li>Keyboard and screen-reader access for all core workflows</li>
+                  <li>Colour-contrast compliance across light and dark themes</li>
+                  <li>Reduced-motion support for all interactive animations</li>
+                  <li>Quarterly audit schedule with documented remediation plan</li>
+                </ul>
+                <p>
+                  Where full conformance is not yet achieved (e.g. complete
+                  Dynamic Type support in the iOS app), we document the
+                  non-conformity above with a remediation timeline. This
+                  assessment is reviewed annually alongside the accessibility
+                  audit.
                 </p>
               </section>
 
               <section id="enforcement">
                 <h2>Enforcement Procedure</h2>
+                <h3>United Kingdom</h3>
                 <p>
                   If you are not satisfied with our response to your
                   accessibility concern, you may escalate by contacting the{' '}
@@ -318,8 +461,28 @@ export default async function AccessibilityPage({
                     rel="noopener noreferrer"
                   >
                     Equality and Human Rights Commission (EHRC)
+                  </a>.
+                </p>
+                <h3>European Union</h3>
+                <p>
+                  EU residents may contact the national enforcement
+                  authority in their EU member state responsible for the
+                  European Accessibility Act. A list of designated market
+                  surveillance authorities is maintained by each member state
+                  under Article 19 of the EAA.
+                </p>
+                <h3>United States</h3>
+                <p>
+                  US residents with accessibility concerns may file a
+                  complaint under Title III of the Americans with Disabilities
+                  Act. We encourage you to contact us first
+                  at{' '}
+                  <a href="mailto:accessibility@lumenshore.com">
+                    accessibility@lumenshore.com
                   </a>{' '}
-                  in the United Kingdom.
+                  so we can resolve the issue directly. Our{' '}
+                  <Link href="/accessibility/vpat" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">VPAT</Link>{' '}
+                  documents our current conformance level.
                 </p>
               </section>
             </div>

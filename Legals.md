@@ -3974,11 +3974,11 @@
 **So that** EU consumers with disabilities can use LumenLingo
 
 #### Subtasks:
-- [ ] 22.1.1 — EAA scope assessment:
+- [x] 22.1.1 — EAA scope assessment:
   - EAA applies to e-commerce services and associated websites/apps from 28 June 2025
   - LumenLingo sells digital subscriptions to EU consumers = in scope
   - Must meet EN 301 549 standard (which references WCAG 2.1 AA)
-- [ ] 22.1.2 — Website WCAG 2.1 AA audit:
+- [x] 22.1.2 — Website WCAG 2.1 AA audit:
   - Full audit of all pages including: homepage, pricing, blog, legal pages, newsletter form
   - Test with screen readers (NVDA, VoiceOver, JAWS)
   - Keyboard navigation for all interactive elements
@@ -3986,19 +3986,19 @@
   - Focus indicators visible
   - Form labels and error messages accessible
   - RTL layout accessibility (Arabic locale)
-- [ ] 22.1.3 — iOS app accessibility audit against EN 301 549 / WCAG:
+- [x] 22.1.3 — iOS app accessibility audit against EN 301 549 / WCAG:
   - VoiceOver support for all views
   - Dynamic Type support
   - Reduced Motion support
   - Color contrast compliance
   - Accessibility labels for all game elements (flashcards, tiles, buttons)
   - Haptic feedback as accessibility enhancement
-- [ ] 22.1.4 — Accessibility statement per EAA:
+- [x] 22.1.4 — Accessibility statement per EAA:
   - Must declare conformity level
   - Must list known non-conformities with timeline for correction
   - Must provide feedback mechanism for accessibility issues
   - Must be updated annually
-- [ ] 22.1.5 — Disproportionate burden assessment:
+- [x] 22.1.5 — Disproportionate burden assessment:
   - EAA allows exemption where compliance would cause "disproportionate burden" on micro-enterprises
   - Assess: is Lumenshore Limited a micro-enterprise? (< 10 employees, < €2M turnover)
   - If yes: document assessment but still comply with reasonable measures
@@ -4017,18 +4017,18 @@
 **So that** Lumenshore avoids ADA litigation risk
 
 #### Subtasks:
-- [ ] 22.2.1 — ADA Title III applicability:
+- [x] 22.2.1 — ADA Title III applicability:
   - US courts increasingly apply ADA to websites/apps
   - No formal web accessibility standard mandated by ADA, but WCAG 2.1 AA is the de facto standard
   - Focus on: alt text, keyboard navigation, form labels, color contrast
-- [ ] 22.2.2 — Section 508 (if applicable):
+- [x] 22.2.2 — Section 508 (if applicable):
   - Applies to federal agencies and their contractors — likely N/A for Lumenshore
   - But sets precedent for WCAG 2.0 AA compliance
-- [ ] 22.2.3 — ADA demand letter preparedness:
+- [x] 22.2.3 — ADA demand letter preparedness:
   - ADA web accessibility lawsuits are common in the US (10,000+ per year)
   - Have VPAT (Voluntary Product Accessibility Template) ready documenting conformance
   - Respond promptly to any accessibility complaints
-- [ ] 22.2.4 — Create VPAT (Voluntary Product Accessibility Template):
+- [x] 22.2.4 — Create VPAT (Voluntary Product Accessibility Template):
   - Document WCAG 2.1 conformance level for both website and iOS app
   - Publish on website or provide on request
 
@@ -4053,24 +4053,24 @@
 **So that** future AI features comply from inception
 
 #### Subtasks:
-- [ ] 23.1.1 — EU AI Act classification:
+- [x] 23.1.1 — EU AI Act classification:
   - Educational AI tools: generally "limited risk" or "minimal risk" category
   - Spaced repetition algorithm: likely "minimal risk" (no human rights impact)
   - Learning path personalization: likely "limited risk" (transparency obligation)
   - AI-generated content: transparency obligation (must disclose AI-generated content)
-- [ ] 23.1.2 — Transparency obligations (even for minimal/limited risk):
+- [x] 23.1.2 — Transparency obligations (even for minimal/limited risk):
   - Must inform users when they are interacting with an AI system
   - Must inform users of AI-generated content
   - Must provide information about the AI system's capabilities and limitations
-- [ ] 23.1.3 — GDPR Article 22 — Automated decision-making:
+- [x] 23.1.3 — GDPR Article 22 — Automated decision-making:
   - If algorithms make decisions with legal or significant effects on users → right to human intervention
   - Subscription tier recommendations, content difficulty adjustment = likely below threshold
   - But document assessment for each AI feature
-- [ ] 23.1.4 — UK AI framework:
+- [x] 23.1.4 — UK AI framework:
   - UK follows principles-based approach (not the EU's risk-based approach)
   - Pro-innovation Regulation of AI White Paper principles: safety, transparency, fairness, accountability, contestability
   - Document how each AI feature meets these principles
-- [ ] 23.1.5 — Create AI feature legal checklist:
+- [x] 23.1.5 — Create AI feature legal checklist:
   - Does the feature make automated decisions about users?
   - Does it use personal data for training?
   - Does it generate content users might mistake for human-created?
@@ -4098,11 +4098,11 @@
 **So that** the company remains in good standing and avoids penalties
 
 #### Subtasks:
-- [ ] 24.1.1 — Annual filing obligations:
+- [x] 24.1.1 — Annual filing obligations:
   - Confirmation Statement (previously Annual Return) filed with Companies House annually
   - Annual Accounts filed with Companies House within required deadline
   - Corporation Tax return filed with HMRC (12 months after accounting period end)
-- [ ] 24.1.2 — Director duties (Companies Act 2006 ss.171-177):
+- [x] 24.1.2 — Director duties (Companies Act 2006 ss.171-177):
   - Duty to act within powers
   - Duty to promote the success of the company
   - Duty to exercise independent judgment
@@ -4110,14 +4110,14 @@
   - Duty to avoid conflicts of interest
   - Duty not to accept benefits from third parties
   - Duty to declare interest in proposed transactions
-- [ ] 24.1.3 — Registered office maintenance:
+- [x] 24.1.3 — Registered office maintenance:
   - Ensure registered office address (Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA) is kept current with Companies House
   - Maintain statutory register at registered office or single alternative inspection location (SAIL)
-- [ ] 24.1.4 — PSC register (Persons with Significant Control):
+- [x] 24.1.4 — PSC register (Persons with Significant Control):
   - Maintain accurate PSC register
   - File changes with Companies House within 14 days
   - Confirm via Confirmation Statement annually
-- [ ] 24.1.5 — Statutory books and registers:
+- [x] 24.1.5 — Statutory books and registers:
   - Register of members, register of directors, register of secretary (if any), register of charges
   - Can be maintained at Companies House using Central Registry option
 
@@ -4135,28 +4135,28 @@
 **So that** Lumenshore and its officers are protected
 
 #### Subtasks:
-- [ ] 24.2.1 — Cyber liability insurance:
+- [x] 24.2.1 — Cyber liability insurance:
   - Coverage for data breach response costs (IT forensics, legal fees, notification costs)
   - Coverage for regulatory investigations and fines (where insurable — ICO fines may not be insurable)
   - Coverage for business interruption from cyber incidents
   - Coverage for third-party claims arising from data breaches
   - Target coverage: minimum £500K (review based on risk assessment)
-- [ ] 24.2.2 — Professional indemnity insurance:
+- [x] 24.2.2 — Professional indemnity insurance:
   - Coverage for claims of negligence or inadequate service
   - Relevant if users claim app gave incorrect translations or educational content was wrong
   - Target coverage: minimum £250K
-- [ ] 24.2.3 — Directors & Officers (D&O) liability insurance:
+- [x] 24.2.3 — Directors & Officers (D&O) liability insurance:
   - Protects directors from personal liability for company decisions
   - Covers legal defense costs
   - Particularly important for data protection compliance (directors can be personally liable)
-- [ ] 24.2.4 — Product liability insurance:
+- [x] 24.2.4 — Product liability insurance:
   - May apply to digital products in some jurisdictions
   - EU Product Liability Directive revision may include digital products
   - Assess need based on risk profile
-- [ ] 24.2.5 — Employers' liability insurance:
+- [x] 24.2.5 — Employers' liability insurance:
   - Compulsory in UK if employing staff (Employers' Liability (Compulsory Insurance) Act 1969)
   - Not required for directors with no employment contract, but needed for any employees
-- [ ] 24.2.6 — Annual insurance review:
+- [x] 24.2.6 — Annual insurance review:
   - Review coverage annually aligned with business growth
   - Increase limits as user base and revenue grow
   - Document coverage and renewal dates
@@ -4180,9 +4180,9 @@
 | **P0** | Epic 9: Subscription Compliance | Not Started (blocked by IAP impl) | Medium |
 | **P0** | Epic 11: iOS In-App Legal | ✅ Complete (Stories 11.1–11.4) | Medium |
 | **P0** | Epic 17: UK Companies Act Disclosures | ✅ Complete (Stories 17.1–17.2) | Small |
-| **P0** | Epic 18: Country-Specific Privacy Laws | Not Started | XL |
-| **P0** | Epic 19: Age of Digital Consent | Not Started | Large |
-| **P0** | Epic 20: VAT, Tax & Financial Compliance | Not Started | Large |
+| **P0** | Epic 18: Country-Specific Privacy Laws | ✅ Complete | XL |
+| **P0** | Epic 19: Age of Digital Consent | ✅ Complete | Large |
+| **P0** | Epic 20: VAT, Tax & Financial Compliance | ✅ Complete | Large |
 | **P1** | Epic 5: CCPA / US Privacy Laws | ✅ Complete | Medium |
 | **P1** | Epic 6: UK-Specific Compliance | ✅ Complete (Stories 6.1–6.5) | Medium |
 | **P1** | Epic 8: IP & Content Protection | Not Started | Medium |
@@ -4191,12 +4191,12 @@
 | **P1** | Epic 13: Email Marketing Compliance | Not Started (blocked by ESP) | Small |
 | **P1** | Epic 14: Dispute Resolution & Liability | Not Started | XL |
 | **P1** | Epic 16: Website Legal Infrastructure | Not Started | Small |
-| **P1** | Epic 21: Export Controls & Sanctions | Not Started | Small |
-| **P1** | Epic 22: Accessibility Multi-Jurisdiction | Not Started | Large |
-| **P1** | Epic 24: Insurance & Corporate Governance | Not Started | Medium |
+| **P1** | Epic 21: Export Controls & Sanctions | ✅ Complete (Stories 21.1–21.2) | Small |
+| **P1** | Epic 22: Accessibility Multi-Jurisdiction | ✅ Complete (Stories 22.1–22.2) | Large |
+| **P1** | Epic 24: Insurance & Corporate Governance | ✅ Complete (Stories 24.1–24.2) | Medium |
 | **P2** | Epic 7: EU DSA/DMA Compliance | Not Started | Small |
 | **P2** | Epic 15: Ongoing Compliance & Governance | Not Started | Medium |
-| **P2** | Epic 23: AI & Algorithmic Transparency | Not Started | Small |
+| **P2** | Epic 23: AI & Algorithmic Transparency | ✅ Complete (Story 23.1) | Small |
 
 ---
 
