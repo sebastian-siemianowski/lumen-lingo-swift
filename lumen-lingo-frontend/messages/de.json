@@ -166,7 +166,7 @@
       "ogDescription": "Vergleichen Sie die Stufen Free, Pro, Elite und Royal. Starten Sie kostenlos, upgraden Sie wenn Sie bereit sind."
     },
     "disclaimerAppStore": "Abonnements werden über Apples App Store abgerechnet. Preise beinhalten geltende Steuern. Der Endpreis kann je nach Region variieren.",
-    "disclaimerVatInclusive": "Preise verstehen sich inklusive MwSt., soweit zutreffend. Abonnements werden über Apples App Store abgerechnet."
+    "disclaimerVatInclusive": "Die angezeigten Preise in GBP enthalten 20% britische Mehrwertsteuer. Der tatsaechlich berechnete Preis kann je nach Standort, lokalen Steuern und Waehrung abweichen. Alle In-App-Kaeufe werden von Apple abgewickelt und abgerechnet."
   },
   "Features": {
     "badge": "Im Detail",
@@ -1500,6 +1500,27 @@
       "refundsP2": "Um eine Rückerstattung zu beantragen, besuchen Sie reportaproblem.apple.com oder kontaktieren Sie den Apple Support. LumenShore Ltd unterstützt diesen Prozess vollständig und arbeitet bei jeder Erstattungsanfrage mit Apple zusammen.",
       "statutory": "<b>Nichts in diesen Bedingungen beeinträchtigt Ihre gesetzlichen Rechte als Verbraucher.</b> Bei einem Widerspruch zwischen diesen Bedingungen und Ihren gesetzlichen Rechten haben Ihre gesetzlichen Rechte Vorrang."
     },
+    "euConsumerRights": {
+      "heading": "EU-Verbraucherrechterichtlinie",
+      "intro": "Wenn Sie Verbraucher in der Europaeischen Union sind, haben Sie zusaetzliche Rechte gemaess der EU-Verbraucherrechterichtlinie (2011/83/EU). Diese Rechte gelten neben unseren Standardbedingungen und bieten Ihnen besonderen Schutz beim Kauf digitaler Dienste.",
+      "preContractualHeading": "Vorvertragliche Informationen",
+      "preContractualP1": "Vor Ihrem Abonnement stellen wir alle gemaess Artikel 6 der EU-Verbraucherrechterichtlinie erforderlichen Informationen bereit, einschliesslich:",
+      "preContractualLi1": "<b>Haendleridentitaet</b> — LumenShore Limited, registriert in England & Wales (Firmennummer 09607326), USt-IdNr.: GB 270411929",
+      "preContractualLi2": "<b>Dienstbeschreibung</b> — KI-gestuetzte Sprachlern-App mit Lernkarten, Uebungen und adaptivem Lernen",
+      "preContractualLi3": "<b>Gesamtpreis</b> — alle Preise werden inklusive geltender MwSt./Steuern angezeigt. Abonnementpreise werden dynamisch von Apple abgerufen und in Ihrer Landeswaehrung angezeigt",
+      "preContractualLi4": "<b>Zahlungsmethode</b> — alle Zahlungen werden von Apple ueber den App Store verarbeitet. Es fallen keine versteckten oder zusaetzlichen Gebuehren an",
+      "preContractualLi5": "<b>Vertragsdauer</b> — monatlich kuendbares Abonnement ohne Mindestlaufzeit",
+      "withdrawalHeading": "Widerrufsrecht",
+      "withdrawalP1": "Gemaess der EU-Verbraucherrechterichtlinie haben Sie ein <b>14-taegiges Widerrufsrecht</b> ab dem Kaufdatum. Durch die sofortige Nutzung der digitalen Inhalte stimmen Sie jedoch ausdruecklich zu, dass die Vertragserfuellung vor Ablauf der Widerrufsfrist beginnt, und erkennen an, dass Sie Ihr Widerrufsrecht verlieren.",
+      "withdrawalP2": "Fuer ueber den App Store erworbene Abonnements werden Widerrufs- und Erstattungsanfragen von Apple bearbeitet. Sie koennen innerhalb von 14 Tagen nach dem Kauf eine Erstattung unter reportaproblem.apple.com beantragen.",
+      "hiddenChargesHeading": "Verbot versteckter Kosten",
+      "hiddenChargesP1": "Gemaess Artikel 22 der EU-Verbraucherrechterichtlinie erhebt LumenLingo keine Gebuehren ueber die vor dem Kauf klar offengelegten hinaus. Alle Abonnementpreise werden im Voraus inklusive geltender Steuern angezeigt. Es gibt keine versteckten Gebuehren.",
+      "buttonObligationHeading": "Bestellbestaetigung",
+      "buttonObligationP1": "Gemaess Artikel 8(2) der EU-Verbraucherrechterichtlinie weisen unsere Kauf-Schaltflaechen durch Anzeige des Abonnementpreises deutlich auf die Zahlungspflicht hin. Durch Antippen der Kauf-Schaltflaeche erkennen Sie ausdruecklich an, dass die Bestellung eine Zahlungspflicht beinhaltet.",
+      "cancellationHeading": "Einfache Kuendigung",
+      "cancellationP1": "Sie koennen Ihr Abonnement jederzeit genauso einfach kuendigen wie abonnieren. Oeffnen Sie die Einstellungen, tippen Sie auf Ihren Namen, dann Abonnements, waehlen Sie LumenLingo und tippen Sie auf Abo kuendigen. Die Kuendigung wird zum Ende des aktuellen Abrechnungszeitraums wirksam.",
+      "statutory": "Diese EU-Verbraucherrechte bestehen zusaetzlich zu und ersetzen nicht andere Rechte, die Sie nach geltendem nationalem Verbraucherschutzrecht haben koennten."
+    },
     "geographicRestrictions": {
       "heading": "Geografische Einschränkungen",
       "intro": "Der Zugang zu LumenLingo kann in bestimmten Gebieten aufgrund geltender Sanktionsgesetze und App-Store-Vertriebsrichtlinien eingeschränkt sein:",
@@ -1870,7 +1891,31 @@
       "consumer1": "Diese Klausel beruehrt nicht Ihre gesetzlichen Rechte nach dem Consumer Rights Act 2015 (UK), einschliesslich der Rechte auf Reparatur, Ersatz oder Preisminderung bei fehlerhaften digitalen Inhalten.",
       "consumer2": "EU-Verbraucher behalten alle Rechte aus der EU-Verbraucherrechterichtlinie."
     },
-    "updateBannerMessage": "Wir haben unsere Nutzungsbedingungen aktualisiert."
+    "updateBannerMessage": "Wir haben unsere Nutzungsbedingungen aktualisiert.",
+    "regulatoryShield": {
+      "heading": "Regulierung und Compliance",
+      "regulatoryChangeHeading": "Regulatorische Aenderungen",
+      "regulatoryChange1": "Wir behalten uns das Recht vor, den Dienst oder diese Bedingungen zu aendern, um Aenderungen geltender Gesetze, Vorschriften oder Plattformanforderungen zu entsprechen. Soweit praktikabel, werden wir wesentliche Aenderungen im Voraus ankuendigen.",
+      "regulatoryChange2": "Wenn eine regulatorische Aenderung Ihre Nutzung des Dienstes wesentlich beeintraechtigt, koennen Sie Ihr Abonnement vor Inkrafttreten der Aenderung ohne Strafe kuendigen.",
+      "regulatoryChange3": "Wir haften nicht fuer Nichtverfuegbarkeit oder Funktionsaenderungen, die gesetzlich oder regulatorisch erforderlich sind.",
+      "geoRestrictionHeading": "Geografische Einschraenkungen",
+      "geoRestriction1": "Der Dienst richtet sich an Nutzer weltweit, aber bestimmte Funktionen sind moeglicherweise nicht in allen Rechtsgebieten aufgrund rechtlicher, lizenzrechtlicher oder plattformbezogener Einschraenkungen verfuegbar.",
+      "geoRestriction2": "Sie sind dafuer verantwortlich, sicherzustellen, dass Ihre Nutzung des Dienstes mit den Gesetzen Ihres Rechtsgebiets uebereinstimmt.",
+      "geoRestriction3": "Wir koennen den Zugang zum Dienst oder zu bestimmten Funktionen in bestimmten Regionen ohne Vorankuendigung einschraenken, wenn dies gesetzlich erforderlich ist.",
+      "applePolicyHeading": "Apple App Store-Richtlinien",
+      "applePolicy1": "Alle In-App-Kaeufe und Abonnements werden ausschliesslich ueber Apples App Store abgewickelt. Apple fungiert als eingetragener Haendler fuer alle Transaktionen und ist fuer die Zahlungsabwicklung, Rechnungsstellung und Steuererhebung verantwortlich.",
+      "applePolicy2": "Mit dem Kauf eines Abonnements stimmen Sie zusaetzlich zu diesen Bedingungen den Geschaeftsbedingungen von Apple zu. Bei Konflikten zwischen diesen Bedingungen und den Richtlinien von Apple bezueglich der Zahlungsabwicklung gelten die Richtlinien von Apple.",
+      "applePolicy3": "Wir haben keinen Zugang zu Ihren Zahlungsinformationen. Fuer Rechnungsanfragen, Erstattungsantraege oder Zahlungsstreitigkeiten wenden Sie sich bitte direkt an den Apple-Support.",
+      "taxPricingHeading": "Steuer- und Mehrwertsteuer-Compliance",
+      "taxPricing1": "Die auf unserer Website angezeigten Preise sind in Britischen Pfund (GBP) angegeben und enthalten die britische Mehrwertsteuer (VAT) zum Standardsatz von 20%. LumenShore Limited ist in Grossbritannien umsatzsteuerlich registriert (Umsatzsteuer-Identifikationsnummer: GB 270411929). Der tatsaechlich berechnete Preis kann je nach Land, lokalen Steuersaetzen und der von Apple in Ihrer Region verwendeten Waehrung abweichen.",
+      "taxPricing2": "Fuer In-App-Kaeufe ist Apple der eingetragene Haendler und fuer die Berechnung, Erhebung und Abfuehrung aller anfallenden Steuern verantwortlich, einschliesslich Mehrwertsteuer, Waren- und Dienstleistungssteuer und Umsatzsteuer, gemaess den lokalen Gesetzen. Apple wendet die EU-VAT-One-Stop-Shop-Regelung (OSS) fuer EU-Kunden an. Wir erheben oder fuehren Steuern auf Abonnementzahlungen nicht gesondert ab.",
+      "dataProtectionHeading": "Datenschutz und Privatsphaere",
+      "dataProtection1": "Ihre Nutzung des Dienstes unterliegt auch unserer Datenschutzerklaerung, die beschreibt, wie wir Ihre personenbezogenen Daten gemaess der UK-Datenschutz-Grundverordnung (UK GDPR) und dem Data Protection Act 2018 erheben, verwenden und schuetzen.",
+      "dataProtection2": "Wir verarbeiten personenbezogene Daten nur soweit erforderlich, um den Dienst bereitzustellen, gesetzlichen Verpflichtungen nachzukommen und die Benutzererfahrung zu verbessern. Sie haben das Recht auf Zugang, Berichtigung, Loeschung oder Uebertragung Ihrer Daten, wie in unserer Datenschutzerklaerung beschrieben.",
+      "indemnificationHeading": "Regulatorische Freistellung",
+      "indemnification1": "Sie erklaeren sich bereit, LumenShore Limited von allen Anspruechen, Verlusten oder Kosten freizustellen, die aus Ihrem Verstoss gegen geltende Gesetze oder Vorschriften bei der Nutzung des Dienstes entstehen.",
+      "indemnification2": "Diese Freistellungsverpflichtung besteht auch nach Beendigung Ihres Kontos oder dieser Bedingungen fort."
+    }
   },
   "Blog": {
     "meta": {

@@ -96,6 +96,21 @@ struct SubscriptionDisclosureView: View {
             Text(L.subscriptionTraderInfo)
                 .font(.system(size: 10))
                 .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary.opacity(0.7))
+
+            // EU Consumer Rights Directive (2011/83/EU)
+            Text(L.subscriptionEUConsumerRights)
+                .font(.system(size: 10))
+                .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary.opacity(0.7))
+
+            // Step-by-step cancellation instructions
+            Text(L.subscriptionCancelSteps)
+                .font(.system(size: 10))
+                .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary.opacity(0.7))
+
+            // VAT / tax compliance notice
+            Text(L.subscriptionVATNotice)
+                .font(.system(size: 10))
+                .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary.opacity(0.7))
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }

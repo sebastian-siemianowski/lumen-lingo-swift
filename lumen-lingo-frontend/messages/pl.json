@@ -166,7 +166,7 @@
       "ogDescription": "Porównaj poziomy Free, Pro, Elite i Royal. Zacznij za darmo, ulepsz kiedy będziesz gotowy."
     },
     "disclaimerAppStore": "Subskrypcje są rozliczane przez App Store Apple. Ceny zawierają obowiązujące podatki. Cena końcowa może się różnić w zależności od regionu.",
-    "disclaimerVatInclusive": "Ceny zawierają VAT, jeśli dotyczy. Subskrypcje rozliczane przez App Store Apple."
+    "disclaimerVatInclusive": "Ceny podane w GBP zawieraja 20% brytyjski VAT. Rzeczywista kwota moze sie roznic w zaleznosci od lokalizacji, lokalnych podatkow i waluty. Wszystkie zakupy w aplikacji sa przetwarzane i rozliczane przez Apple."
   },
   "Features": {
     "badge": "Szczegóły",
@@ -1500,6 +1500,27 @@
       "refundsP2": "Aby złożyć wniosek o zwrot, odwiedź stronę reportaproblem.apple.com lub skontaktuj się z Pomocą Techniczną Apple. LumenShore Ltd w pełni wspiera ten proces i będzie współpracować z Apple w zakresie wszelkich zapytań dotyczących zwrotów.",
       "statutory": "<b>Żadne z postanowień niniejszego Regulaminu nie wpływa na Twoje prawa ustawowe jako konsumenta.</b> W przypadku sprzeczności między niniejszym Regulaminem a Twoimi prawami ustawowymi, Twoje prawa ustawowe mają pierwszeństwo."
     },
+    "euConsumerRights": {
+      "heading": "Dyrektywa UE o prawach konsumenta",
+      "intro": "Jesli jestes konsumentem w Unii Europejskiej, przysluguja Ci dodatkowe prawa na mocy Dyrektywy o prawach konsumenta UE (2011/83/UE). Prawa te obowiazuja obok naszych standardowych warunkow i zapewniaja szczegolna ochrone przy zakupie uslug cyfrowych.",
+      "preContractualHeading": "Informacje przedumowne",
+      "preContractualP1": "Przed subskrypcja udostepniamy wszystkie informacje wymagane na mocy art. 6 Dyrektywy o prawach konsumenta UE, w tym:",
+      "preContractualLi1": "<b>Tozsamosc przedsiebiorcy</b> — LumenShore Limited, zarejestrowana w Anglii i Walii (numer firmy 09607326), VAT: GB 270411929",
+      "preContractualLi2": "<b>Opis uslugi</b> — aplikacja do nauki jezykow oparta na AI z fiszkami, cwiczeniami i adaptacyjnym uczeniem sie",
+      "preContractualLi3": "<b>Cena calkowita</b> — wszystkie ceny sa wyswietlane z uwzglednieniem VAT/podatkow. Ceny subskrypcji sa pobierane dynamicznie od Apple i wyswietlane w Twojej lokalnej walucie",
+      "preContractualLi4": "<b>Metoda platnosci</b> — wszystkie platnosci sa przetwarzane przez Apple za posrednictwem App Store. Brak ukrytych oplat",
+      "preContractualLi5": "<b>Czas trwania umowy</b> — miesieczna odnawialna subskrypcja bez minimalnego zobowiazania",
+      "withdrawalHeading": "Prawo do odstapienia",
+      "withdrawalP1": "Na mocy Dyrektywy o prawach konsumenta UE przysluguje Ci <b>14-dniowe prawo do odstapienia</b> od daty zakupu. Jednak rozpoczynajac natychmiastowe korzystanie z tresci cyfrowych, wyrazasz wyrazna zgode na rozpoczecie realizacji umowy i przyjmujesz do wiadomosci utrate prawa do odstapienia.",
+      "withdrawalP2": "W przypadku subskrypcji zakupionych w App Store wnioski o odstapienie i zwrot sa obslugiwane przez Apple. Mozesz zlozyc wniosek o zwrot na reportaproblem.apple.com w ciagu 14 dni od zakupu.",
+      "hiddenChargesHeading": "Zakaz ukrytych oplat",
+      "hiddenChargesP1": "Zgodnie z art. 22 Dyrektywy o prawach konsumenta UE, LumenLingo nie nalicza oplat wykraczajacych poza jasno ujawnione przed zakupem. Wszystkie ceny subskrypcji sa wyswietlane z gory, lacznie z podatkami. Brak ukrytych oplat.",
+      "buttonObligationHeading": "Potwierdzenie zamowienia",
+      "buttonObligationP1": "Zgodnie z art. 8(2) Dyrektywy o prawach konsumenta UE, nasze przyciski zakupu subskrypcji wyraznie wskazuja na obowiazek platnosci poprzez wyswietlanie ceny. Klikajac przycisk zakupu, wyraznie potwierdzasz, ze zamowienie wiaze sie z obowiazkiem platnosci.",
+      "cancellationHeading": "Latwe anulowanie",
+      "cancellationP1": "Mozesz anulowac subskrypcje w kazdej chwili rownie latwo jak przy subskrypcji. Otworz Ustawienia, dotknij swoje imie, nastepnie Subskrypcje, wybierz LumenLingo i dotknij Anuluj subskrypcje. Anulowanie wchodzi w zycie na koniec biezacego okresu rozliczeniowego.",
+      "statutory": "Te unijne prawa konsumenta stanowia uzupelnienie i nie zastepuja zadnych innych praw, ktore moga Ci przyslugiwac na mocy obowiazujacych krajowych przepisow o ochronie konsumentow."
+    },
     "geographicRestrictions": {
       "heading": "Ograniczenia geograficzne",
       "intro": "Dostęp do LumenLingo może być ograniczony w niektórych obszarach ze względu na obowiązujące przepisy dotyczące sankcji oraz zasady dystrybucji App Store:",
@@ -1870,7 +1891,31 @@
       "consumer1": "Niniejsza klauzula nie wplywa na Twoje prawa ustawowe wynikajace z Consumer Rights Act 2015 (UK), w tym prawa do naprawy, wymiany lub obnizenia ceny wadliwych tresci cyfrowych.",
       "consumer2": "Konsumenci z UE zachowuja wszystkie prawa wynikajace z Dyrektywy o prawach konsumentow UE."
     },
-    "updateBannerMessage": "Zaktualizowaliśmy nasze Warunki Użytkowania."
+    "updateBannerMessage": "Zaktualizowaliśmy nasze Warunki Użytkowania.",
+    "regulatoryShield": {
+      "heading": "Regulacje i Zgodnosc",
+      "regulatoryChangeHeading": "Zmiany Regulacyjne",
+      "regulatoryChange1": "Zastrzegamy sobie prawo do modyfikacji Uslug lub niniejszych Warunkow w celu dostosowania do zmian obowiazujacych przepisow, regulacji lub wymagan platformy. W miare mozliwosci powiadomimy z wyprzedzeniem o istotnych zmianach.",
+      "regulatoryChange2": "Jezeli zmiana regulacyjna istotnie wplywa na korzystanie z Uslug, mozesz anulowac subskrypcje przed wejsciem zmiany w zycie bez kary.",
+      "regulatoryChange3": "Nie ponosimy odpowiedzialnosci za niedostepnosc lub zmiany funkcji wymagane przez prawo lub regulacje.",
+      "geoRestrictionHeading": "Ograniczenia Geograficzne",
+      "geoRestriction1": "Uslugi sa przeznaczone dla uzytkownikow na calym swiecie, ale niektore funkcje moga nie byc dostepne we wszystkich jurysdykcjach ze wzgledu na ograniczenia prawne, licencyjne lub platformowe.",
+      "geoRestriction2": "Jestes odpowiedzialny za zapewnienie, ze korzystanie z Uslug jest zgodne z prawem Twojej jurysdykcji.",
+      "geoRestriction3": "Mozemy ograniczyc dostep do Uslug lub okreslonych funkcji w okreslonych regionach bez uprzedniego powiadomienia, jezeli wymaga tego prawo.",
+      "applePolicyHeading": "Zasady Apple App Store",
+      "applePolicy1": "Wszystkie zakupy i subskrypcje w aplikacji sa przetwarzane wylacznie za posrednictwem App Store firmy Apple. Apple dziala jako zarejestrowany sprzedawca dla wszystkich transakcji i jest odpowiedzialny za przetwarzanie platnosci, fakturowanie i pobieranie podatkow.",
+      "applePolicy2": "Kupujac subskrypcje, akceptujesz warunki Apple oproz niniejszych Warunkow. W przypadku konfliktu miedzy niniejszymi Warunkami a zasadami Apple dotyczacymi przetwarzania platnosci, zasady Apple beda mialy pierwszenstwo.",
+      "applePolicy3": "Nie mamy dostepu do Twoich informacji platniczych. W sprawie zapytan dotyczacych faktur, wnioskow o zwrot lub sporow platniczych prosimy o bezposredni kontakt z obsluga Apple.",
+      "taxPricingHeading": "Zgodnosc Podatkowa i VAT",
+      "taxPricing1": "Ceny wyswietlane na naszej stronie internetowej sa podane w funtach brytyjskich (GBP) i zawieraja brytyjski podatek VAT w standardowej stawce 20%. LumenShore Limited jest zarejestrowana jako podatnik VAT w Wielkiej Brytanii (numer rejestracji VAT: GB 270411929). Rzeczywista kwota moze sie roznic w zaleznosci od kraju, lokalnych stawek podatkowych i waluty stosowanej przez Apple w Twoim regionie.",
+      "taxPricing2": "W przypadku zakupow w aplikacji Apple jest zarejestrowanym sprzedawca i odpowiada za obliczanie, pobieranie i odprowadzanie wszystkich naleznych podatkow, w tym VAT, GST i podatku od sprzedazy, zgodnie z lokalnymi przepisami. Apple stosuje zasady unijnego systemu VAT One Stop Shop (OSS) dla klientow z UE. Nie pobieramy ani nie odprowadzamy podatkow od platnosci subskrypcyjnych oddzielnie.",
+      "dataProtectionHeading": "Ochrona Danych i Prywatnosc",
+      "dataProtection1": "Korzystanie z Uslug podlega rowniez naszej Polityce Prywatnosci, ktora opisuje, w jaki sposob zbieramy, wykorzystujemy i chronimy Twoje dane osobowe zgodnie z brytyjskim Ogolnym Rozporzadzeniem o Ochronie Danych (UK GDPR) i Ustawa o Ochronie Danych 2018.",
+      "dataProtection2": "Przetwarzamy dane osobowe tylko w zakresie niezbednym do swiadczenia Uslug, wypelniania zobowiazan prawnych i poprawy obslugi uzytkownika. Masz prawo do dostepu, sprostowania, usuniecia lub przeniesienia swoich danych, jak opisano w naszej Polityce Prywatnosci.",
+      "indemnificationHeading": "Rekompensata Regulacyjna",
+      "indemnification1": "Zgadzasz sie zwolnic LumenShore Limited z odpowiedzialnosci za wszelkie roszczenia, straty lub wydatki wynikajace z naruszenia przez Ciebie obowiazujacych przepisow lub regulacji podczas korzystania z Uslug.",
+      "indemnification2": "Niniejsze zobowiazanie do rekompensaty obowiazuje rowniez po zakonczeniu konta lub niniejszych Warunkow."
+    }
   },
   "Blog": {
     "meta": {

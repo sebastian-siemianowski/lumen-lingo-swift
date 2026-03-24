@@ -489,6 +489,9 @@ extension AppStrings {
         subscriptionCoolingOff: "En achetant, vous consentez a l'acces immediat au contenu numerique et reconnaissez que cela annule votre droit de retractation de 14 jours au titre du droit de la consommation.",
         subscriptionRefundNotice: "Les remboursements sont traites par Apple. Pour demander un remboursement, visitez reportaproblem.apple.com.",
         subscriptionContractDuration: "Contrat mensuel reconductible. Sans engagement minimum.",
+        subscriptionEUConsumerRights: "Vos droits au titre de la Directive europeenne relative aux droits des consommateurs (2011/83/UE) et des UK Consumer Contracts Regulations 2013 sont pleinement respectes. Information precontractuelle, droit de retractation et interdiction des frais caches s'appliquent.",
+        subscriptionCancelSteps: "Pour annuler : ouvrez Reglages > touchez votre nom > Abonnements > LumenLingo > Annuler l'abonnement. L'annulation prend effet a la fin de la periode de facturation en cours.",
+        subscriptionVATNotice: "Les prix incluent les taxes applicables. Tous les achats sont traites et factures par Apple. Le prix reel peut varier selon la region et la devise.",
 
         // MARK: - Account Deletion
         deleteAccount: "Supprimer le compte",

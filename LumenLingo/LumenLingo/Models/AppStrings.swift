@@ -500,6 +500,9 @@ struct AppStrings: Sendable {
     let subscriptionCoolingOff: String       // 14-day cooling-off waiver notice
     let subscriptionRefundNotice: String     // Apple handles refunds
     let subscriptionContractDuration: String // Monthly rolling contract
+    let subscriptionEUConsumerRights: String // EU Consumer Rights Directive 2011/83/EU
+    let subscriptionCancelSteps: String      // Step-by-step cancellation instructions
+    let subscriptionVATNotice: String        // VAT/tax compliance notice
 
     // MARK: - Account Deletion
     let deleteAccount: String                // "Delete Account"

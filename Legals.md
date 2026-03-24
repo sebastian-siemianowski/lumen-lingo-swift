@@ -1397,18 +1397,18 @@
 **So that** I have proper protection under EU law
 
 #### Subtasks:
-- [ ] 9.3.1 — Ensure compliance with EU Consumer Rights Directive (2011/83/EU):
+- [x] 9.3.1 — Ensure compliance with EU Consumer Rights Directive (2011/83/EU):
   - Pre-contractual information requirements (similar to UK CCR)
   - Right of withdrawal (14 days) with explicit waiver for digital content
   - Prohibition of hidden charges
   - Clear pricing in local currency
-- [ ] 9.3.2 — Implement "button with obligation to pay" requirement:
+- [x] 9.3.2 — Implement "button with obligation to pay" requirement:
   - Purchase button must clearly indicate financial obligation
   - e.g. "Subscribe — £9.99/month" not just "Continue"
-- [ ] 9.3.3 — Support automatic subscription cancellation per EU regulation:
+- [x] 9.3.3 — Support automatic subscription cancellation per EU regulation:
   - Easy cancellation mechanism (at least as easy as subscribing)
   - Note: Apple handles this via Settings, but add clear instructions in-app
-- [ ] 9.3.4 — Add EU-specific consumer rights section to Terms of Service
+- [x] 9.3.4 — Add EU-specific consumer rights section to Terms of Service
 
 **Acceptance Criteria**:
 - EU CRD pre-contractual information provided
@@ -1423,16 +1423,16 @@
 **So that** I know exactly what I'll pay
 
 #### Subtasks:
-- [ ] 9.4.1 — Website pricing page:
+- [x] 9.4.1 — Website pricing page:
   - Display prices inclusive of VAT/tax (UK and EU require this for B2C)
   - Note that Apple handles actual billing and tax collection for iOS app
   - Add "Prices may vary by region" disclaimer
-- [ ] 9.4.2 — iOS app paywall:
+- [x] 9.4.2 — iOS app paywall:
   - Use StoreKit-provided localized prices (automatically includes local tax)
   - Never hardcode prices — they differ by country and change with tax rates
-- [ ] 9.4.3 — Add pricing disclaimer to website:
+- [x] 9.4.3 — Add pricing disclaimer to website:
   - "Prices shown in GBP include UK VAT. Actual price charged may vary based on your location and local taxes. All purchases are processed by Apple."
-- [ ] 9.4.4 — VAT compliance (Lumenshore Limited IS VAT-registered: GB 270411929):
+- [x] 9.4.4 — VAT compliance (Lumenshore Limited IS VAT-registered: GB 270411929):
   - **VAT on digital services to UK consumers**: 20% VAT must be charged
   - **Apple's role**: Apple acts as agent/merchant of record for iOS IAP — Apple remits VAT to HMRC for UK iOS transactions
   - **Website direct sales** (if any future non-IAP revenue): must charge and remit VAT

@@ -905,7 +905,19 @@ struct TierCardView: View {
                             .font(.caption)
                             .transition(.scale.combined(with: .opacity))
                     }
-                    Text(isActuallyCurrent ? L.currentPlan : tier.cta)
+                    if isActuallyCurrent {
+                        Text(L.currentPlan)
+                    } else if price > 0 {
+                        // EU CRD Art.8(2): button must indicate obligation to pay
+                        VStack(spacing: 2) {
+                            Text(tier.cta)
+                            Text(subscriptionManager.displayPrice(for: MembershipTier(tierId: tier.id)) + L.perMonth)
+                                .font(.caption2)
+                                .opacity(0.8)
+                        }
+                    } else {
+                        Text(tier.cta)
+                    }
                 }
                 .font(.subheadline.bold())
                 .foregroundStyle(.white)

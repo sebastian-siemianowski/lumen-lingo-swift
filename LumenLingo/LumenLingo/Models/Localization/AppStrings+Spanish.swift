@@ -489,6 +489,9 @@ extension AppStrings {
         subscriptionCoolingOff: "Al comprar, consientes el acceso inmediato al contenido digital y reconoces que esto renuncia a tu derecho de desistimiento de 14 dias.",
         subscriptionRefundNotice: "Los reembolsos son procesados por Apple. Para solicitar un reembolso, visita reportaproblem.apple.com.",
         subscriptionContractDuration: "Contrato mensual renovable. Sin compromiso minimo.",
+        subscriptionEUConsumerRights: "Sus derechos en virtud de la Directiva de Derechos del Consumidor de la UE (2011/83/UE) y las UK Consumer Contracts Regulations 2013 son plenamente respetados. Se aplican la informacion precontractual, el derecho de desistimiento y la prohibicion de cargos ocultos.",
+        subscriptionCancelSteps: "Para cancelar: abra Ajustes > toque su nombre > Suscripciones > LumenLingo > Cancelar suscripcion. La cancelacion se hace efectiva al final del periodo de facturacion actual.",
+        subscriptionVATNotice: "Los precios incluyen impuestos aplicables. Todas las compras son procesadas y facturadas por Apple. El precio real puede variar segun la region y la moneda.",
 
         // MARK: - Account Deletion
         deleteAccount: "Eliminar cuenta",

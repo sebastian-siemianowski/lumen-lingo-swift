@@ -488,6 +488,9 @@ extension AppStrings {
         subscriptionCoolingOff: "购买即表示您同意立即访问数字内容，并确认放弃14天冷静期退款权利。",
         subscriptionRefundNotice: "退款由 Apple 处理。如需申请退款，请访问 reportaproblem.apple.com。",
         subscriptionContractDuration: "按月自动续订合约，无最低承诺期。",
+        subscriptionEUConsumerRights: "您根据欧盟消费者权利指令(2011/83/EU)和英国2013年消费者合同规定享有的权利得到充分尊重。合同前信息、撤回权和禁止隐藏收费均适用。",
+        subscriptionCancelSteps: "取消方法：打开设置 > 点击您的姓名 > 订阅 > LumenLingo > 取消订阅。取消将在当前计费周期结束时生效。",
+        subscriptionVATNotice: "价格包含适用税费。所有购买均由Apple处理和计费。实际价格可能因地区和货币而异。",
 
         // MARK: - Account Deletion
         deleteAccount: "删除账户",

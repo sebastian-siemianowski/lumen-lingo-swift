@@ -488,6 +488,9 @@ extension AppStrings {
         subscriptionCoolingOff: "購入により、デジタルコンテンツへの即時アクセスに同意し、14日間のクーリングオフ権を放棄することを了承します。",
         subscriptionRefundNotice: "返金はAppleが処理します。返金のリクエストはreportaproblem.apple.comをご利用ください。",
         subscriptionContractDuration: "月額自動更新契約。最低利用期間なし。",
+        subscriptionEUConsumerRights: "EU消費者権利指令(2011/83/EU)および英国2013年消費者契約規則に基づくお客様の権利は完全に遵守されています。契約前情報、撤回権、隠れた料金の禁止が適用されます。",
+        subscriptionCancelSteps: "解約するには：設定を開く > 自分の名前をタップ > サブスクリプション > LumenLingo > サブスクリプションをキャンセル。解約は現在の請求期間の終了時に有効になります。",
+        subscriptionVATNotice: "価格には適用税が含まれています。すべての購入はAppleが処理・請求します。実際の価格は地域と通貨によって異なる場合があります。",
 
         // MARK: - Account Deletion
         deleteAccount: "アカウントを削除",

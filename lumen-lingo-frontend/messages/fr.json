@@ -166,7 +166,7 @@
       "ogDescription": "Comparez les niveaux Free, Pro, Elite et Royal. Commencez gratuitement, passez au niveau supérieur quand vous êtes prêt."
     },
     "disclaimerAppStore": "Les abonnements sont facturés via l’App Store d’Apple. Les prix incluent les taxes applicables. Le prix final peut varier selon la région.",
-    "disclaimerVatInclusive": "Prix TTC là où applicable. Abonnements facturés via l’App Store d’Apple."
+    "disclaimerVatInclusive": "Les prix affiches en GBP incluent la TVA britannique de 20%. Le prix effectivement facture peut varier selon votre emplacement, les taxes locales et la devise. Tous les achats integres sont traites et factures par Apple."
   },
   "Features": {
     "badge": "En Détail",
@@ -1500,6 +1500,27 @@
       "refundsP2": "Pour demander un remboursement, rendez-vous sur reportaproblem.apple.com ou contactez l’assistance Apple. LumenShore Ltd soutient pleinement ce processus et coopérera avec Apple pour toute demande de remboursement.",
       "statutory": "<b>Rien dans les présentes Conditions n’affecte vos droits légaux en tant que consommateur.</b> En cas de conflit entre les présentes Conditions et vos droits légaux, vos droits légaux prévaudront."
     },
+    "euConsumerRights": {
+      "heading": "Directive europeenne relative aux droits des consommateurs",
+      "intro": "Si vous etes consommateur dans l'Union europeenne, vous beneficiez de droits supplementaires en vertu de la Directive relative aux droits des consommateurs (2011/83/UE). Ces droits s'appliquent en complement de nos conditions generales et vous offrent des protections specifiques lors de l'achat de services numeriques.",
+      "preContractualHeading": "Informations precontractuelles",
+      "preContractualP1": "Avant votre abonnement, nous fournissons toutes les informations requises par l'Article 6 de la Directive relative aux droits des consommateurs, notamment :",
+      "preContractualLi1": "<b>Identite du professionnel</b> — LumenShore Limited, enregistree en Angleterre et au Pays de Galles (numero d'entreprise 09607326), TVA : GB 270411929",
+      "preContractualLi2": "<b>Description du service</b> — application d'apprentissage des langues par IA avec cartes memoire, exercices et apprentissage adaptatif",
+      "preContractualLi3": "<b>Prix total</b> — tous les prix sont affiches TVA/taxes comprises. Les prix d'abonnement sont recuperes dynamiquement aupres d'Apple et affiches dans votre devise locale",
+      "preContractualLi4": "<b>Mode de paiement</b> — tous les paiements sont traites par Apple via l'App Store. Aucun frais cache ni supplement ne s'applique",
+      "preContractualLi5": "<b>Duree du contrat</b> — abonnement mensuel reconductible sans engagement minimum",
+      "withdrawalHeading": "Droit de retractation",
+      "withdrawalP1": "En vertu de la Directive relative aux droits des consommateurs, vous disposez d'un <b>droit de retractation de 14 jours</b> a compter de la date d'achat. Toutefois, en commencant a utiliser le contenu numerique immediatement, vous consentez expressement a l'execution du contrat et reconnaissez perdre votre droit de retractation.",
+      "withdrawalP2": "Pour les abonnements achetes via l'App Store, les demandes de retractation et de remboursement sont gerees par Apple. Vous pouvez demander un remboursement sur reportaproblem.apple.com dans les 14 jours suivant l'achat.",
+      "hiddenChargesHeading": "Interdiction des frais caches",
+      "hiddenChargesP1": "Conformement a l'Article 22 de la Directive relative aux droits des consommateurs, LumenLingo n'impose aucun frais au-dela de ceux clairement communiques avant l'achat. Tous les prix d'abonnement sont affiches a l'avance, taxes comprises. Il n'y a aucun frais cache.",
+      "buttonObligationHeading": "Reconnaissance de commande",
+      "buttonObligationP1": "Conformement a l'Article 8(2) de la Directive relative aux droits des consommateurs, nos boutons d'achat d'abonnement indiquent clairement l'obligation de paiement en affichant le prix. En appuyant sur le bouton d'achat, vous reconnaissez expressement que la commande implique une obligation de paiement.",
+      "cancellationHeading": "Resiliation simplifiee",
+      "cancellationP1": "Vous pouvez resilier votre abonnement a tout moment avec la meme facilite que lors de la souscription. Ouvrez les Reglages, touchez votre nom, puis Abonnements, selectionnez LumenLingo et touchez Annuler l'abonnement. La resiliation prend effet a la fin de la periode de facturation en cours.",
+      "statutory": "Ces droits du consommateur de l'UE s'ajoutent a tout autre droit dont vous pourriez beneficier en vertu des lois nationales de protection du consommateur applicables et ne les remplacent pas."
+    },
     "geographicRestrictions": {
       "heading": "Restrictions géographiques",
       "intro": "L’accès à LumenLingo peut être restreint dans certains territoires en raison des lois sur les sanctions applicables et des politiques de distribution de l’App Store :",
@@ -1870,7 +1891,31 @@
       "consumer1": "Cette clause n'affecte pas vos droits legaux en vertu du Consumer Rights Act 2015 (Royaume-Uni), y compris les droits a la reparation, au remplacement ou a la reduction de prix pour un contenu numerique defectueux.",
       "consumer2": "Les consommateurs de l'UE conservent tous leurs droits en vertu de la Directive sur les droits des consommateurs de l'UE."
     },
-    "updateBannerMessage": "Nous avons mis à jour nos Conditions d’Utilisation."
+    "updateBannerMessage": "Nous avons mis à jour nos Conditions d’Utilisation.",
+    "regulatoryShield": {
+      "heading": "Reglementation et Conformite",
+      "regulatoryChangeHeading": "Changements Reglementaires",
+      "regulatoryChange1": "Nous nous reservons le droit de modifier le Service ou ces Conditions pour nous conformer aux changements des lois, reglementations ou exigences de plateforme applicables. Dans la mesure du possible, nous fournirons un preavis des changements importants.",
+      "regulatoryChange2": "Si un changement reglementaire affecte materiellement votre utilisation du Service, vous pouvez annuler votre abonnement avant l'entree en vigueur du changement sans penalite.",
+      "regulatoryChange3": "Nous ne serons pas responsables de l'indisponibilite ou des modifications de fonctionnalites requises par la loi ou la reglementation.",
+      "geoRestrictionHeading": "Restrictions Geographiques",
+      "geoRestriction1": "Le Service est destine aux utilisateurs du monde entier, mais certaines fonctionnalites peuvent ne pas etre disponibles dans toutes les juridictions en raison de restrictions legales, de licence ou de plateforme.",
+      "geoRestriction2": "Vous etes responsable de vous assurer que votre utilisation du Service est conforme aux lois de votre juridiction.",
+      "geoRestriction3": "Nous pouvons restreindre l'acces au Service ou a certaines fonctionnalites dans des regions specifiques sans preavis si la loi l'exige.",
+      "applePolicyHeading": "Politiques de l'App Store Apple",
+      "applePolicy1": "Tous les achats et abonnements integres sont traites exclusivement via l'App Store d'Apple. Apple agit en tant que commercant enregistre pour toutes les transactions et est responsable du traitement des paiements, de la facturation et de la collecte des taxes.",
+      "applePolicy2": "En achetant un abonnement, vous acceptez les conditions d'Apple en plus de ces Conditions. En cas de conflit entre ces Conditions et les politiques d'Apple concernant le traitement des paiements, les politiques d'Apple prevaudront.",
+      "applePolicy3": "Nous n'avons pas acces a vos informations de paiement. Pour les demandes de facturation, les demandes de remboursement ou les litiges de paiement, veuillez contacter directement le support Apple.",
+      "taxPricingHeading": "Conformite Fiscale et TVA",
+      "taxPricing1": "Les prix affiches sur notre site sont en Livres Sterling (GBP) et incluent la TVA britannique au taux standard de 20%. LumenShore Limited est enregistree a la TVA au Royaume-Uni (Numero d'enregistrement TVA : GB 270411929). Le prix effectivement facture peut differer selon votre pays, les taux d'imposition locaux et la devise utilisee par Apple dans votre region.",
+      "taxPricing2": "Pour les achats integres, Apple est le commercant enregistre et est responsable du calcul, de la collecte et du reversement de toutes les taxes applicables, y compris la TVA, la TPS et la taxe de vente, conformement aux lois locales. Apple applique les regles du Guichet Unique TVA de l'UE (OSS) pour les clients de l'UE. Nous ne collectons ni ne reversons separement les taxes sur les paiements d'abonnement.",
+      "dataProtectionHeading": "Protection des Donnees et Confidentialite",
+      "dataProtection1": "Votre utilisation du Service est egalement regie par notre Politique de Confidentialite, qui decrit comment nous collectons, utilisons et protegeons vos donnees personnelles conformement au Reglement General sur la Protection des Donnees du Royaume-Uni (UK GDPR) et au Data Protection Act 2018.",
+      "dataProtection2": "Nous ne traitons les donnees personnelles que dans la mesure necessaire pour fournir le Service, respecter les obligations legales et ameliorer l'experience utilisateur. Vous avez le droit d'acceder, de rectifier, de supprimer ou de transferer vos donnees comme decrit dans notre Politique de Confidentialite.",
+      "indemnificationHeading": "Indemnisation Reglementaire",
+      "indemnification1": "Vous acceptez d'indemniser et de degager de toute responsabilite LumenShore Limited contre toute reclamation, perte ou depense decoulant de votre violation des lois ou reglementations applicables lors de l'utilisation du Service.",
+      "indemnification2": "Cette obligation d'indemnisation survit a la resiliation de votre compte ou de ces Conditions."
+    }
   },
   "Blog": {
     "meta": {

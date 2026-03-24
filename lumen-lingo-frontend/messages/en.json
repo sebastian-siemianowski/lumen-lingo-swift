@@ -166,7 +166,7 @@
       "ogDescription": "Compare Free, Pro, Elite, and Royal membership tiers. Start free, upgrade when ready."
     },
     "disclaimerAppStore": "Subscriptions are billed through Apple’s App Store. Prices include applicable taxes. Final price may vary by region.",
-    "disclaimerVatInclusive": "Prices shown include VAT where applicable. Subscriptions are billed through Apple’s App Store. Final price is determined by Apple based on your region."
+    "disclaimerVatInclusive": "Prices shown in GBP include UK VAT at 20%. Actual price charged may vary based on your location, local taxes, and currency. All in-app purchases are processed and billed by Apple."
   },
   "Features": {
     "badge": "Deep Dive",
@@ -1515,6 +1515,27 @@
       "refundsP2": "To request a refund, visit reportaproblem.apple.com or contact Apple Support. LumenShore Ltd fully supports this process and will cooperate with Apple on any refund enquiry.",
       "statutory": "<b>Nothing in these Terms affects your statutory rights as a consumer.</b> If there is any conflict between these Terms and your statutory rights, your statutory rights will prevail."
     },
+    "euConsumerRights": {
+      "heading": "EU Consumer Rights Directive",
+      "intro": "If you are a consumer in the European Union, you have additional rights under the EU Consumer Rights Directive (2011/83/EU). These rights apply alongside our standard terms and offer you specific protections when purchasing digital services.",
+      "preContractualHeading": "Pre-Contractual Information",
+      "preContractualP1": "Before you subscribe, we provide all information required under Article 6 of the EU Consumer Rights Directive, including:",
+      "preContractualLi1": "<b>Trader identity</b> — LumenShore Limited, registered in England & Wales (company number 09607326), VAT: GB 270411929",
+      "preContractualLi2": "<b>Service description</b> — AI-powered language learning application with flashcards, practice exercises, and adaptive learning",
+      "preContractualLi3": "<b>Total price</b> — all prices are displayed inclusive of applicable VAT/taxes. Subscription prices are fetched dynamically from Apple and shown in your local currency",
+      "preContractualLi4": "<b>Payment method</b> — all payments are processed by Apple through the App Store. No hidden charges or additional fees apply",
+      "preContractualLi5": "<b>Contract duration</b> — monthly rolling subscription with no minimum commitment",
+      "withdrawalHeading": "Right of Withdrawal",
+      "withdrawalP1": "Under the EU Consumer Rights Directive, you have a <b>14-day right of withdrawal</b> from the date of purchase. However, by starting to use the digital content immediately, you expressly consent to the performance of the contract beginning before the withdrawal period expires and acknowledge that you lose your right of withdrawal once the digital content has been fully provided.",
+      "withdrawalP2": "For subscriptions purchased through the App Store, withdrawal and refund requests are handled by Apple. You may request a refund at reportaproblem.apple.com within 14 days of purchase.",
+      "hiddenChargesHeading": "Prohibition of Hidden Charges",
+      "hiddenChargesP1": "In compliance with Article 22 of the EU Consumer Rights Directive, LumenLingo does not impose any charges beyond those clearly disclosed before purchase. All subscription prices are shown upfront, inclusive of applicable taxes. There are no hidden fees, delivery charges, or additional costs.",
+      "buttonObligationHeading": "Order Acknowledgement",
+      "buttonObligationP1": "In compliance with Article 8(2) of the EU Consumer Rights Directive, our subscription purchase buttons clearly indicate the obligation to pay by displaying the subscription price. By tapping the purchase button, you explicitly acknowledge that the order implies an obligation to pay.",
+      "cancellationHeading": "Easy Cancellation",
+      "cancellationP1": "You can cancel your subscription at any time with the same ease as subscribing. To cancel, open your device Settings, tap your name, then Subscriptions, select LumenLingo, and tap Cancel Subscription. Cancellation takes effect at the end of the current billing period, and you retain access until then.",
+      "statutory": "These EU consumer rights are in addition to, and do not replace, any other rights you may have under applicable national consumer protection laws."
+    },
     "geographicRestrictions": {
       "heading": "Geographic Restrictions",
       "intro": "Access to LumenLingo may be restricted in certain territories due to applicable sanctions laws and App Store distribution policies:",
@@ -1870,7 +1891,31 @@
       "consumer1": "This clause does not affect your statutory rights under the Consumer Rights Act 2015 (UK), including rights to repair, replacement, or price reduction for faulty digital content.",
       "consumer2": "EU consumers retain all rights under the EU Consumer Rights Directive."
     },
-    "updateBannerMessage": "We’ve updated our Terms of Service."
+    "updateBannerMessage": "We’ve updated our Terms of Service.",
+    "regulatoryShield": {
+      "heading": "Regulatory & Compliance",
+      "regulatoryChangeHeading": "Regulatory Changes",
+      "regulatoryChange1": "We reserve the right to modify the Service or these Terms to comply with changes in applicable laws, regulations, or platform requirements. Where practical, we will provide advance notice of material changes.",
+      "regulatoryChange2": "If a regulatory change materially affects your use of the Service, you may cancel your subscription before the change takes effect without penalty.",
+      "regulatoryChange3": "We shall not be liable for any unavailability or feature changes required by law or regulation.",
+      "geoRestrictionHeading": "Geographic Restrictions",
+      "geoRestriction1": "The Service is intended for users worldwide, but certain features may not be available in all jurisdictions due to legal, licensing, or platform restrictions.",
+      "geoRestriction2": "You are responsible for ensuring that your use of the Service complies with the laws of your jurisdiction.",
+      "geoRestriction3": "We may restrict access to the Service or certain features in specific regions without prior notice if required by law.",
+      "applePolicyHeading": "Apple App Store Policies",
+      "applePolicy1": "All in-app purchases and subscriptions are processed exclusively through Apple's App Store. Apple acts as the merchant of record for all transactions and is responsible for payment processing, billing, and tax collection.",
+      "applePolicy2": "By purchasing a subscription, you agree to Apple's terms and conditions in addition to these Terms. In the event of any conflict between these Terms and Apple's policies regarding payment processing, Apple's policies shall prevail.",
+      "applePolicy3": "We do not have access to your payment information. For billing enquiries, refund requests, or payment disputes, please contact Apple Support directly.",
+      "taxPricingHeading": "Tax & VAT Compliance",
+      "taxPricing1": "Prices displayed on our website are shown in British Pounds (GBP) and include UK Value Added Tax (VAT) at the standard rate of 20%. LumenShore Limited is registered for VAT in the United Kingdom (VAT Registration Number: GB 270411929). The actual price you are charged may differ based on your country, local tax rates, and the currency used by Apple in your region.",
+      "taxPricing2": "For in-app purchases, Apple is the merchant of record and is responsible for calculating, collecting, and remitting all applicable taxes, including VAT, GST, and sales tax, in accordance with local laws. Apple applies the EU VAT One Stop Shop (OSS) rules for EU customers and handles tax compliance for all other jurisdictions. We do not separately collect or remit taxes on subscription payments.",
+      "dataProtectionHeading": "Data Protection & Privacy",
+      "dataProtection1": "Your use of the Service is also governed by our Privacy Policy, which describes how we collect, use, and protect your personal data in accordance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.",
+      "dataProtection2": "We process personal data only as necessary to provide the Service, comply with legal obligations, and improve the user experience. You have the right to access, rectify, erase, or port your data as described in our Privacy Policy.",
+      "indemnificationHeading": "Regulatory Indemnification",
+      "indemnification1": "You agree to indemnify and hold harmless LumenShore Limited from any claims, losses, or expenses arising from your breach of applicable laws or regulations while using the Service.",
+      "indemnification2": "This indemnification obligation survives termination of your account or these Terms."
+    }
   },
   "Blog": {
     "meta": {

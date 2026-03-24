@@ -166,7 +166,7 @@
       "ogDescription": "比较Free、Pro、Elite和Royal等级。免费开始，准备好了再升级。"
     },
     "disclaimerAppStore": "订阅通过Apple App Store计费。价格包含适用税费。最终价格可能因地区而异。",
-    "disclaimerVatInclusive": "价格包含适用的VAT。订阅通过Apple App Store计费。"
+    "disclaimerVatInclusive": "显示价格以英鎍（GBP）计算，包含20%英国VAT。实际收费可能因您的位置、当地税费和货币而异。所有应用内购买均由Apple处理和计费。"
   },
   "Features": {
     "badge": "深度探索",
@@ -1500,6 +1500,27 @@
       "refundsP2": "要申请退款，请访问reportaproblem.apple.com或联系Apple支持。LumenShore Ltd完全支持此流程，并将就任何退款查询与Apple合作。",
       "statutory": "<b>本条款不影响您作为消费者的法定权利。</b>如果本条款与您的法定权利之间存在任何冲突，以您的法定权利为准。"
     },
+    "euConsumerRights": {
+      "heading": "欧盟消费者权利指令",
+      "intro": "如果您是欧盟的消费者，您根据欧盟消费者权利指令（2011/83/EU）享有额外权利。这些权利与我们的标准条款并行适用，在购买数字服务时为您提供特定保护。",
+      "preContractualHeading": "合同前信息",
+      "preContractualP1": "在您订阅之前，我们提供欧盟消费者权利指令第6条要求的所有信息，包括：",
+      "preContractualLi1": "<b>经营者身份</b> — LumenShore Limited，在英格兰和威尔士注册（公司编号 09607326），增值税号：GB 270411929",
+      "preContractualLi2": "<b>服务描述</b> — 基于AI的语言学习应用，提供闪卡、练习和自适应学习",
+      "preContractualLi3": "<b>总价</b> — 所有价格均含税显示。订阅价格从Apple动态获取并以您的当地货币显示",
+      "preContractualLi4": "<b>支付方式</b> — 所有付款均通过App Store由Apple处理。无隐藏费用或额外收费",
+      "preContractualLi5": "<b>合同期限</b> — 月度滚动订阅，无最低承诺",
+      "withdrawalHeading": "撤回权",
+      "withdrawalP1": "根据欧盟消费者权利指令，您自购买之日起享有<b>14天的撤回权</b>。但是，当您立即开始使用数字内容时，您明确同意在撤回期到期前开始履行合同，并承认放弃撤回权。",
+      "withdrawalP2": "对于通过App Store购买的订阅，撤回和退款请求由Apple处理。您可以在购买后14天内在reportaproblem.apple.com申请退款。",
+      "hiddenChargesHeading": "禁止隐藏收费",
+      "hiddenChargesP1": "根据欧盟消费者权利指令第22条，LumenLingo不会收取超出购买前明确披露的费用。所有订阅价格均提前含税显示。无隐藏费用。",
+      "buttonObligationHeading": "订单确认",
+      "buttonObligationP1": "根据欧盟消费者权利指令第8条(2)，我们的订阅购买按钮通过显示价格明确指示付款义务。点击购买按钮即表示您明确承认订单包含付款义务。",
+      "cancellationHeading": "轻松取消",
+      "cancellationP1": "您可以随时像订阅一样轻松地取消订阅。打开设置，点击您的名字，然后订阅，选择LumenLingo，点击取消订阅。取消将在当前计费周期结束时生效。",
+      "statutory": "这些欧盟消费者权利是附加的，不会取代您根据适用的国内消费者保护法可能享有的任何其他权利。"
+    },
     "geographicRestrictions": {
       "heading": "地理限制",
       "intro": "由于适用的制裁法律和App Store分发政策，某些地区可能会限制访问LumenLingo：",
@@ -1870,7 +1891,31 @@
       "consumer1": "本条款不影响您根据2015年消费者权利法（英国）享有的法定权利，包括对有缺陷的数字内容进行维修、更换或降价的权利。",
       "consumer2": "欧盟消费者保留根据欧盟消费者权利指令享有的所有权利。"
     },
-    "updateBannerMessage": "我们已更新服务条款。"
+    "updateBannerMessage": "我们已更新服务条款。",
+    "regulatoryShield": {
+      "heading": "监管与合规",
+      "regulatoryChangeHeading": "监管变更",
+      "regulatoryChange1": "我们保留修改服务或本条款的权利，以符合适用法律、法规或平台要求的变化。在实际可行的情况下，我们将提前通知重大变更。",
+      "regulatoryChange2": "如果监管变更对您使用服务产生重大影响，您可以在变更生效前无罚金取消订阅。",
+      "regulatoryChange3": "对于法律或法规要求的服务不可用或功能变更，我们不承担责任。",
+      "geoRestrictionHeading": "地理限制",
+      "geoRestriction1": "本服务面向全球用户，但由于法律、许可或平台限制，某些功能可能并非在所有司法管辖区可用。",
+      "geoRestriction2": "您有责任确保您对服务的使用符合您所在司法管辖区的法律。",
+      "geoRestriction3": "如法律要求，我们可能会在不事先通知的情况下限制特定地区对服务或某些功能的访问。",
+      "applePolicyHeading": "Apple App Store政策",
+      "applePolicy1": "所有应用内购买和订阅均通过Apple的App Store处理。Apple作为所有交易的注册商家，负责支付处理、账单和税款征收。",
+      "applePolicy2": "购买订阅即表示您同意 Apple 的条款以及本条款。如本条款与Apple关于支付处理的政策之间存在冲突，以Apple的政策为准。",
+      "applePolicy3": "我们无法访问您的支付信息。如有账单查询、退款请求或支付争议，请直接联系Apple支持。",
+      "taxPricingHeading": "税务与VAT合规",
+      "taxPricing1": "我们网站上显示的价格以英鎍（GBP）计算，包含英国增值税（VAT）标准税率 20%。LumenShore Limited在英国已注册VAT（VAT注册号：GB 270411929）。实际收费可能因您所在国家、当地税率以及Apple在您所在地区使用的货币而异。",
+      "taxPricing2": "对于应用内购买，Apple是注册商家，负责计算、征收和缴纳所有适用税款，包括VAT、GST和销售税，符合当地法律。Apple对欧盟客户适用欧盟VAT一站式服务（OSS）规则。我们不单独征收或缴纳订阅付款的税款。",
+      "dataProtectionHeading": "数据保护与隐私",
+      "dataProtection1": "您对服务的使用还受我们的隐私政策管辖，该政策描述了我们如何根据英国通用数据保护条例（UK GDPR）和2018年数据保护法收集、使用和保护您的个人数据。",
+      "dataProtection2": "我们仅在提供服务、履行法律义务和改善用户体验所必需的范围内处理个人数据。您有权访问、更正、删除或转移您的数据，如我们的隐私政策中所述。",
+      "indemnificationHeading": "监管赔偿",
+      "indemnification1": "您同意赔偿并使 LumenShore Limited 免受因您在使用服务时违反适用法律或法规而产生的任何索赔、损失或费用。",
+      "indemnification2": "该赔偿义务在您的账户或本条款终止后继续有效。"
+    }
   },
   "Blog": {
     "meta": {

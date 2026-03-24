@@ -488,6 +488,9 @@ extension AppStrings {
         subscriptionCoolingOff: "Dokonujac zakupu, wyrażasz zgode na natychmiastowy dostep do tresci cyfrowych i potwierdzasz, ze rezygnujesz z 14-dniowego prawa do odstapienia od umowy.",
         subscriptionRefundNotice: "Zwroty sa przetwarzane przez Apple. Aby poprosic o zwrot, odwiedz reportaproblem.apple.com.",
         subscriptionContractDuration: "Miesieczna umowa odnawialna. Bez minimalnego zobowiazania.",
+        subscriptionEUConsumerRights: "Twoje prawa wynikajace z Dyrektywy o prawach konsumenta UE (2011/83/UE) oraz UK Consumer Contracts Regulations 2013 sa w pelni respektowane. Obowiazuja informacje przedumowne, prawo do odstapienia i zakaz ukrytych oplat.",
+        subscriptionCancelSteps: "Aby anulowac: otworz Ustawienia > dotknij swoje imie > Subskrypcje > LumenLingo > Anuluj subskrypcje. Anulowanie wchodzi w zycie na koniec biezacego okresu rozliczeniowego.",
+        subscriptionVATNotice: "Ceny zawieraja obowiazujace podatki. Wszystkie zakupy sa przetwarzane i rozliczane przez Apple. Rzeczywista cena moze sie roznic w zaleznosci od regionu i waluty.",
 
         // MARK: - Account Deletion
         deleteAccount: "Usuń konto",

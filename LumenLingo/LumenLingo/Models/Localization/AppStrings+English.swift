@@ -492,6 +492,9 @@ extension AppStrings {
         subscriptionCoolingOff: "By purchasing, you consent to immediate access to digital content and acknowledge that this waives your 14-day cooling-off right under the Consumer Contracts Regulations 2013.",
         subscriptionRefundNotice: "Refunds are processed by Apple. To request a refund, visit reportaproblem.apple.com.",
         subscriptionContractDuration: "Monthly rolling contract. No minimum commitment.",
+        subscriptionEUConsumerRights: "Your rights under the EU Consumer Rights Directive (2011/83/EU) and UK Consumer Contracts Regulations 2013 are fully respected. Pre-contractual information, right of withdrawal, and prohibition of hidden charges all apply.",
+        subscriptionCancelSteps: "To cancel: open Settings > tap your name > Subscriptions > LumenLingo > Cancel Subscription. Cancellation takes effect at the end of the current billing period.",
+        subscriptionVATNotice: "Prices include applicable taxes. All purchases are processed and billed by Apple. Actual price may vary by region and currency.",
 
         // MARK: - Account Deletion
         deleteAccount: "Delete Account",

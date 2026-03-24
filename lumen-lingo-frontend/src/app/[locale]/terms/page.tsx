@@ -75,6 +75,7 @@ export default async function TermsPage({
     { id: 'third-party-services', text: t('thirdPartyServices.heading'), level: 2 },
     { id: 'service-availability', text: t('serviceAvailability.heading'), level: 2 },
     { id: 'consumer-rights', text: t('consumerRights.heading'), level: 2 },
+    { id: 'eu-consumer-rights', text: t('euConsumerRights.heading'), level: 2 },
     { id: 'aggregate-data', text: t('aggregateData.heading'), level: 2 },
     { id: 'termination', text: t('termination.heading'), level: 2 },
     { id: 'geographic-restrictions', text: t('geographicRestrictions.heading'), level: 2 },
@@ -435,6 +436,37 @@ export default async function TermsPage({
                   <p>{t('consumerRights.refundsP2')}</p>
 
                   <p>{t.rich('consumerRights.statutory', richTags)}</p>
+                </section>
+
+                {/* ── EU Consumer Rights Directive (2011/83/EU) ── */}
+                <section id="eu-consumer-rights">
+                  <h2>{t('euConsumerRights.heading')}</h2>
+                  <p>{t('euConsumerRights.intro')}</p>
+
+                  <h3>{t('euConsumerRights.preContractualHeading')}</h3>
+                  <p>{t('euConsumerRights.preContractualP1')}</p>
+                  <ul>
+                    <li>{t.rich('euConsumerRights.preContractualLi1', richTags)}</li>
+                    <li>{t.rich('euConsumerRights.preContractualLi2', richTags)}</li>
+                    <li>{t.rich('euConsumerRights.preContractualLi3', richTags)}</li>
+                    <li>{t.rich('euConsumerRights.preContractualLi4', richTags)}</li>
+                    <li>{t.rich('euConsumerRights.preContractualLi5', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('euConsumerRights.withdrawalHeading')}</h3>
+                  <p>{t.rich('euConsumerRights.withdrawalP1', richTags)}</p>
+                  <p>{t('euConsumerRights.withdrawalP2')}</p>
+
+                  <h3>{t('euConsumerRights.hiddenChargesHeading')}</h3>
+                  <p>{t('euConsumerRights.hiddenChargesP1')}</p>
+
+                  <h3>{t('euConsumerRights.buttonObligationHeading')}</h3>
+                  <p>{t('euConsumerRights.buttonObligationP1')}</p>
+
+                  <h3>{t('euConsumerRights.cancellationHeading')}</h3>
+                  <p>{t('euConsumerRights.cancellationP1')}</p>
+
+                  <p>{t('euConsumerRights.statutory')}</p>
                 </section>
 
                 {/* ── Aggregate Data ── */}

@@ -489,6 +489,9 @@ extension AppStrings {
         subscriptionCoolingOff: "Mit dem Kauf stimmen Sie dem sofortigen Zugang zu digitalen Inhalten zu und erkennen an, dass dies Ihr 14-taegiges Widerrufsrecht aufhebt.",
         subscriptionRefundNotice: "Erstattungen werden von Apple bearbeitet. Um eine Erstattung anzufordern, besuchen Sie reportaproblem.apple.com.",
         subscriptionContractDuration: "Monatlich kuendbarer Vertrag. Keine Mindestlaufzeit.",
+        subscriptionEUConsumerRights: "Ihre Rechte gemaess der EU-Verbraucherrechterichtlinie (2011/83/EU) und den UK Consumer Contracts Regulations 2013 werden vollstaendig gewahrt. Vorvertragliche Informationspflichten, Widerrufsrecht und das Verbot versteckter Kosten gelten.",
+        subscriptionCancelSteps: "Zum Kuendigen: Einstellungen oeffnen > auf Ihren Namen tippen > Abonnements > LumenLingo > Abo kuendigen. Die Kuendigung wird zum Ende des aktuellen Abrechnungszeitraums wirksam.",
+        subscriptionVATNotice: "Preise enthalten anfallende Steuern. Alle Kaeufe werden von Apple abgewickelt und abgerechnet. Der tatsaechliche Preis kann je nach Region und Waehrung abweichen.",
 
         // MARK: - Account Deletion
         deleteAccount: "Konto löschen",
