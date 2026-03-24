@@ -30,6 +30,9 @@ export function PricingGrid() {
             />
           ))}
         </div>
+        <p className="mt-6 text-center text-xs text-foreground-muted/60">
+          {t('disclaimerAppStore')}
+        </p>
       </Container>
     </Section>
   );

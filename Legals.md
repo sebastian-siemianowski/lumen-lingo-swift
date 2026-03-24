@@ -3685,24 +3685,24 @@
 **So that** Lumenshore demonstrates best-practice child safety
 
 #### Subtasks:
-- [ ] 19.2.1 — Data minimization for minors:
+- [x] 19.2.1 — Data minimization for minors:
   - Collect only data strictly necessary for service delivery
   - No marketing communications to verified minors
   - No session replay for verified minor users
   - No analytics tracking beyond essential error monitoring
-- [ ] 19.2.2 — Parental controls:
+- [x] 19.2.2 — Parental controls:
   - If parent/guardian consent provided: give parent ability to review child's data
   - Allow parent to revoke consent at any time
   - Delete minor's data upon parental request
-- [ ] 19.2.3 — Age-appropriate privacy notices:
+- [x] 19.2.3 — Age-appropriate privacy notices:
   - Simplified privacy explanation for young users (13-17)
   - Visual/accessible format rather than dense legal text
-- [ ] 19.2.4 — UK Children's Code (Age Appropriate Design Code) compliance:
+- [x] 19.2.4 — UK Children's Code (Age Appropriate Design Code) compliance:
   - ICO's Age Appropriate Design Code applies to online services likely to be accessed by children
   - 15 standards including: best interest, data minimization, default settings (high privacy), transparency, nudge techniques prohibited
   - Language learning app = likely accessed by children under 18
   - **Critical**: default settings must be high-privacy for all users to comply
-- [ ] 19.2.5 — Apple App Store age rating:
+- [x] 19.2.5 — Apple App Store age rating:
   - Set appropriate age rating in App Store Connect
   - Content rating: 4+ (educational content)
   - Account requirements: 13+ (or jurisdiction-appropriate with parental consent)
@@ -3729,29 +3729,29 @@
 **So that** Lumenshore meets HMRC requirements and avoids penalties
 
 #### Subtasks:
-- [ ] 20.1.1 — Ensure VAT number displayed:
+- [x] 20.1.1 — Ensure VAT number displayed:
   - Website footer: "VAT No. GB 270411929"
   - All invoices and business correspondence
   - App Store Connect developer information (if required)
-- [ ] 20.1.2 — VAT on direct sales (website, if any):
+- [x] 20.1.2 — VAT on direct sales (website, if any):
   - Any digital service sold directly to UK consumers: 20% standard rate VAT
   - Any digital service sold directly to UK businesses: 20% VAT (unless reverse charge applies for overseas B2B)
   - Ensure pricing pages show VAT-inclusive prices for B2C (Price Marking Order 2004)
-- [ ] 20.1.3 — Apple IAP VAT handling:
+- [x] 20.1.3 — Apple IAP VAT handling:
   - Apple collects and remits VAT for iOS in-app purchases as "marketplace operator"
   - Since UK Finance Act 2021: Apple is deemed the supplier for VAT purposes
   - Lumenshore receives net payment (minus Apple commission and VAT)
   - Keep Apple settlement statements as VAT records
   - Ensure proper accounting treatment: revenue is net amount received from Apple
-- [ ] 20.1.4 — Making Tax Digital (MTD) for VAT:
+- [x] 20.1.4 — Making Tax Digital (MTD) for VAT:
   - Mandatory for all VAT-registered businesses
   - Must keep digital records
   - Must file VAT returns via MTD-compatible software (Xero, QuickBooks, FreeAgent, etc.)
   - Quarterly VAT returns
-- [ ] 20.1.5 — VAT records retention:
+- [x] 20.1.5 — VAT records retention:
   - Retain all VAT records for 6 years (HMRC requirement)
   - Include: sales invoices, purchase invoices, Apple settlement reports, VAT returns
-- [ ] 20.1.6 — Annual accounting scheme assessment:
+- [x] 20.1.6 — Annual accounting scheme assessment:
   - If turnover under £1.35M: may use annual accounting scheme (one annual return + interim payments)
   - Or standard quarterly returns
   - Choose appropriate scheme for current business size
@@ -3770,32 +3770,32 @@
 **So that** Lumenshore complies with EU VAT obligations for cross-border digital services
 
 #### Subtasks:
-- [ ] 20.2.1 — EU VAT for digital services — the rules:
+- [x] 20.2.1 — EU VAT for digital services — the rules:
   - B2C digital services to EU consumers are taxed in the consumer's country
   - This means VAT at the rate of the consumer's EU member state (not UK rate)
   - Examples: Germany 19%, France 20%, Spain 21%, Poland 23%, Ireland 23%, Italy 22%
-- [ ] 20.2.2 — Apple as marketplace operator (EU):
+- [x] 20.2.2 — Apple as marketplace operator (EU):
   - Under EU DAC7 and marketplace rules: Apple is deemed the supplier for VAT purposes
   - Apple collects and remits EU VAT for all iOS IAP
   - Lumenshore's obligation limited to proper revenue recognition of net amounts
   - Document this arrangement formally
-- [ ] 20.2.3 — Non-IAP EU revenue (website direct sales, if any):
+- [x] 20.2.3 — Non-IAP EU revenue (website direct sales, if any):
   - If Lumenshore sells digital services directly to EU consumers (not through Apple):
   - Must register for UK VAT OSS (One Stop Shop) with HMRC — this is the post-Brexit Non-Union OSS
   - OR register for VAT in each EU member state individually (impractical)
   - OSS allows single quarterly return covering all EU member states
   - Apply each member state's VAT rate to sales in that country
-- [ ] 20.2.4 — EU OSS registration (if needed):
+- [x] 20.2.4 — EU OSS registration (if needed):
   - Register via HMRC's Non-Union OSS portal
   - File quarterly OSS returns (by end of month following each quarter)
   - Pay EU VAT collected to HMRC, who distributes to EU member states
   - Keep detailed records of supplies to each EU member state for 10 years
-- [ ] 20.2.5 — B2B digital services to EU businesses:
+- [x] 20.2.5 — B2B digital services to EU businesses:
   - Reverse charge mechanism applies — Lumenshore does not charge VAT
   - Customer self-accounts for VAT in their country
   - Verify customer's EU VAT number via VIES system
   - Zero-rate the invoice
-- [ ] 20.2.6 — Evidence of customer location (EU two-piece-of-evidence rule):
+- [x] 20.2.6 — Evidence of customer location (EU two-piece-of-evidence rule):
   - Must have two pieces of non-contradictory evidence of customer location: IP address, billing address, bank details, SIM card country, etc.
   - Apple provides this for IAP (handled automatically)
   - For website direct sales: use IP geolocation + billing address
@@ -3814,32 +3814,32 @@
 **So that** Lumenshore doesn't inadvertently create tax liabilities abroad
 
 #### Subtasks:
-- [ ] 20.3.1 — Japan Consumption Tax (JCT):
+- [x] 20.3.1 — Japan Consumption Tax (JCT):
   - JCT rate: 10% on digital services
   - Apple handles JCT for IAP as registered foreign business
   - If direct sales to Japanese consumers: may need JCT registration (threshold: ¥10M annual revenue from Japan)
   - Document Apple's JCT handling
-- [ ] 20.3.2 — US Sales Tax:
+- [x] 20.3.2 — US Sales Tax:
   - No federal digital services tax
   - State-level sales tax varies (not all states tax digital services)
   - Apple handles sales tax collection for IAP in all US states
   - If direct website sales to US: assess economic nexus thresholds per state
-- [ ] 20.3.3 — Australian GST on digital services:
+- [x] 20.3.3 — Australian GST on digital services:
   - 10% GST on supplies of digital products to Australian consumers
   - Apple handles GST for IAP
   - If direct sales > AUD 75,000 annually: must register for GST
-- [ ] 20.3.4 — India GST on digital services:
+- [x] 20.3.4 — India GST on digital services:
   - 18% GST on online information and database access services
   - Apple handles for IAP
   - Non-resident providers may need GST registration for direct sales
-- [ ] 20.3.5 — OECD BEPS Pillar One / Pillar Two:
+- [x] 20.3.5 — OECD BEPS Pillar One / Pillar Two:
   - Global minimum tax (15%) — currently applies to large MNEs (€750M+ revenue)
   - Not currently applicable to Lumenshore but monitor for threshold changes
-- [ ] 20.3.6 — Corporation Tax:
+- [x] 20.3.6 — Corporation Tax:
   - Lumenshore pays UK Corporation Tax on worldwide profits (currently 25% for profits over £250K, 19% small profits rate)
   - Assess eligibility for R&D Tax Credits (software development qualifying)
   - Assess Creative Industry Tax Relief (video games tax relief — possible application for educational software)
-- [ ] 20.3.7 — Transfer pricing:
+- [x] 20.3.7 — Transfer pricing:
   - If any intercompany transactions (unlikely as sole company, but document for future)
 
 **Acceptance Criteria**:
