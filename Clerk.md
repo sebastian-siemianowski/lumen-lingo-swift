@@ -67,9 +67,9 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
 **Acceptance Criteria:**
 
 **Structure:**
-- [ ] File: `LumenLingo/Services/Debug/DebugAuthController.swift`, wrapped in `#if DEBUG`.
-- [ ] `@Observable final class DebugAuthController: @unchecked Sendable` with `static let shared`.
-- [ ] A `DebugAuthState` enum defining every simulatable state:
+- [x] File: `LumenLingo/Services/Debug/DebugAuthController.swift`, wrapped in `#if DEBUG`.
+- [x] `@Observable final class DebugAuthController: @unchecked Sendable` with `static let shared`.
+- [x] A `DebugAuthState` enum defining every simulatable state:
   ```swift
   enum DebugAuthState: String, CaseIterable, Identifiable {
       case none               // No override — use real auth behavior
@@ -86,7 +86,7 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
       case migrationPending   // Guest → authenticated migration in progress
   }
   ```
-- [ ] Properties:
+- [x] Properties:
   - `activeOverride: DebugAuthState = .none` — the current simulation state.
   - `mockUser: MockUserProfile` — configurable mock user data (name, email, avatar, tier, provider).
   - `simulatedLatency: TimeInterval = 0.0` — artificial delay on all auth calls (0–5 seconds).
@@ -94,10 +94,10 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
   - `simulatedLinkedIdentities: Set<AuthProvider> = [.apple]` — which providers are "linked."
 
 **Behavior:**
-- [ ] When `activeOverride != .none`, `MockAuthService` reads from `DebugAuthController.shared` instead of its hardcoded mock behavior.
-- [ ] Changing `activeOverride` at runtime immediately updates `MockAuthService.isAuthenticated`, `currentUser`, and triggers the appropriate UI state change (no app restart needed).
-- [ ] When `activeOverride == .none`, `MockAuthService` reverts to its default always-authenticated behavior.
-- [ ] All overrides reset to defaults on app launch (no persistence — kept intentional to prevent accidentally shipping a broken state).
+- [x] When `activeOverride != .none`, `MockAuthService` reads from `DebugAuthController.shared` instead of its hardcoded mock behavior.
+- [x] Changing `activeOverride` at runtime immediately updates `MockAuthService.isAuthenticated`, `currentUser`, and triggers the appropriate UI state change (no app restart needed).
+- [x] When `activeOverride == .none`, `MockAuthService` reverts to its default always-authenticated behavior.
+- [x] All overrides reset to defaults on app launch (no persistence — kept intentional to prevent accidentally shipping a broken state).
 
 ---
 
@@ -113,22 +113,22 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
 **Acceptance Criteria:**
 
 **Layout:**
-- [ ] Section header: "🔐 Auth Simulation" with a `CollapsibleSection` wrapper (collapsed by default, using `@PersistedState("qa_auth_collapsed")`).
-- [ ] **Quick State Picker:** A horizontal scroll of pill buttons — one per `DebugAuthState` case. The active state is highlighted with the app's accent color. Tapping a pill instantly switches `DebugAuthController.shared.activeOverride`.
+- [x] Section header: "🔐 Auth Simulation" with a `CollapsibleSection` wrapper (collapsed by default, using `@PersistedState("qa_auth_collapsed")`).
+- [x] **Quick State Picker:** A horizontal scroll of pill buttons — one per `DebugAuthState` case. The active state is highlighted with the app's accent color. Tapping a pill instantly switches `DebugAuthController.shared.activeOverride`.
   - Pills are labeled with human-readable names: "✅ Authed", "🚪 Logged Out", "👤 Guest", "⏰ Expired", "🚫 Revoked", "📡 Net Error", "⏳ Rate Limit", "☁️ Offline", "🔒 Suspended", "🗑️ Deleted", "🔄 Migrating".
   - The "None" pill (no override) is always first and shown with a muted style when active.
-- [ ] **Mock User Card:** Below the picker, a compact card showing the current mock user:
+- [x] **Mock User Card:** Below the picker, a compact card showing the current mock user:
   - Avatar (circle, 40pt, initials if no image), display name, email, tier badge (`TierBadgeView`).
   - Provider pills showing linked identities (Apple, Google, Phone, Email — togglable).
   - Tapping the card expands it into an edit form (Story 0.3).
-- [ ] **Latency Slider:** A slider (0–5s, step 0.5s) controlling `simulatedLatency`. Label: "Auth Latency: {value}s".
-- [ ] **Token Refresh Toggle:** "Force Token Refresh Failure" toggle bound to `shouldSimulateTokenRefreshFailure`.
-- [ ] **Reset Button:** "Reset Auth Overrides" — sets all values to defaults. Confirmation dialog: "Reset all auth simulation settings?"
+- [x] **Latency Slider:** A slider (0–5s, step 0.5s) controlling `simulatedLatency`. Label: "Auth Latency: {value}s".
+- [x] **Token Refresh Toggle:** "Force Token Refresh Failure" toggle bound to `shouldSimulateTokenRefreshFailure`.
+- [x] **Reset Button:** "Reset Auth Overrides" — sets all values to defaults. Confirmation dialog: "Reset all auth simulation settings?"
 
 **Behavior:**
-- [ ] Switching auth state is **instantaneous** — no animation delay. The app's UI (sign-in sheet, dashboard, profile) reacts within the same frame.
-- [ ] The section is only visible in `#if DEBUG` builds (same as all QA panel content).
-- [ ] The selected state survives navigating away from QAPanelView and back (within the same session), but resets on app relaunch.
+- [x] Switching auth state is **instantaneous** — no animation delay. The app's UI (sign-in sheet, dashboard, profile) reacts within the same frame.
+- [x] The section is only visible in `#if DEBUG` builds (same as all QA panel content).
+- [x] The selected state survives navigating away from QAPanelView and back (within the same session), but resets on app relaunch.
 
 ---
 
@@ -141,18 +141,18 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
 **Acceptance Criteria:**
 
 **Editor UI (expanded from the Mock User Card in Story 0.2):**
-- [ ] **Display Name:** Text field, pre-filled with "Luna Cosmos" (the default mock user). Accepts 1–50 characters.
-- [ ] **Email:** Text field, pre-filled with "luna@lumenlingo.test". Validates format on blur.
-- [ ] **Phone:** Text field, pre-filled with "+1 555 000 0000". Optional.
-- [ ] **Avatar:** A row of 6 preset avatar options (initials circle, 3 placeholder illustrations, URL-loaded image from a test URL, and "No Avatar"). Tapping selects.
-- [ ] **Tier:** Horizontal pills (trial, free, pro, elite, royal) — mirrors the existing Tier Switcher but specifically for the mock auth user's tier claim. Changing this updates `mockUser.tier` which flows into `UserProfile.selectedTierId` during sync simulation.
-- [ ] **Auth Provider:** Multi-select toggle for {Apple, Google, Phone, Email}. These populate `simulatedLinkedIdentities`. At least one must always be selected.
-- [ ] **Sign-in Method:** Picker for which provider was used for the current session ("Signed in via: Apple / Google / Phone / Email"). Determines the `lastSignInMethod` field in mock user metadata.
-- [ ] **Account Age:** Stepper (1 day – 365 days). Sets `mockUser.accountCreatedDate` relative to now. Used to test "new user" vs "returning user" flows.
-- [ ] **XP & Streak Carry-over:** Number fields for `totalXP` (0–999,999) and `dailyStreak` (0–365) that the mock user "brings" from Clerk metadata during sync simulation.
+- [x] **Display Name:** Text field, pre-filled with "Luna Cosmos" (the default mock user). Accepts 1–50 characters.
+- [x] **Email:** Text field, pre-filled with "luna@lumenlingo.test". Validates format on blur.
+- [x] **Phone:** Text field, pre-filled with "+1 555 000 0000". Optional.
+- [x] **Avatar:** A row of 6 preset avatar options (initials circle, 3 placeholder illustrations, URL-loaded image from a test URL, and "No Avatar"). Tapping selects.
+- [x] **Tier:** Horizontal pills (trial, free, pro, elite, royal) — mirrors the existing Tier Switcher but specifically for the mock auth user's tier claim. Changing this updates `mockUser.tier` which flows into `UserProfile.selectedTierId` during sync simulation.
+- [x] **Auth Provider:** Multi-select toggle for {Apple, Google, Phone, Email}. These populate `simulatedLinkedIdentities`. At least one must always be selected.
+- [x] **Sign-in Method:** Picker for which provider was used for the current session ("Signed in via: Apple / Google / Phone / Email"). Determines the `lastSignInMethod` field in mock user metadata.
+- [x] **Account Age:** Stepper (1 day – 365 days). Sets `mockUser.accountCreatedDate` relative to now. Used to test "new user" vs "returning user" flows.
+- [x] **XP & Streak Carry-over:** Number fields for `totalXP` (0–999,999) and `dailyStreak` (0–365) that the mock user "brings" from Clerk metadata during sync simulation.
 
 **Presets:**
-- [ ] A row of preset buttons that populate all fields at once:
+- [x] A row of preset buttons that populate all fields at once:
   | Preset | Name | Email | Tier | Provider | Age |
   |--------|------|-------|------|----------|-----|
   | 🆕 New User | "New Explorer" | new@test.ll | free | Apple | 0 days |
@@ -161,11 +161,11 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
   | 📧 Email Only | "Email Student" | email@test.ll | pro | Email | 60 days |
   | 🔗 Multi-linked | "Linked Luna" | luna@test.ll | elite | All four | 90 days |
   | 🫥 Minimal | "" (empty) | — | trial | Apple | 1 day |
-- [ ] Tapping a preset fills all fields instantly. The user can then customize individual fields.
+- [x] Tapping a preset fills all fields instantly. The user can then customize individual fields.
 
 **Behavior:**
-- [ ] Changes are applied to `DebugAuthController.shared.mockUser` in real time — no "Save" button needed.
-- [ ] Mock user data flows through the same `UserProfile` sync path that real Clerk data will use (Story 7.1), ensuring the sync logic is exercised.
+- [x] Changes are applied to `DebugAuthController.shared.mockUser` in real time — no "Save" button needed.
+- [x] Mock user data flows through the same `UserProfile` sync path that real Clerk data will use (Story 7.1), ensuring the sync logic is exercised.
 
 ---
 
@@ -178,8 +178,8 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
 **Acceptance Criteria:**
 
 **QA Panel Controls (sub-section within Auth Simulation):**
-- [ ] **"Show Sign-in Sheet" button** — presents the sign-in sheet (`AuthSheetView` from Epic 5) as a modal, backed by mock data.
-- [ ] **Sign-in Outcome Picker** — determines what happens when the user completes a mock sign-in:
+- [x] **"Show Sign-in Sheet" button** — presents the sign-in sheet (`AuthSheetView` from Epic 5) as a modal, backed by mock data.
+- [x] **Sign-in Outcome Picker** — determines what happens when the user completes a mock sign-in:
   | Outcome | Behavior |
   |---------|----------|
   | ✅ Success (New User) | Simulates first-time sign-in. Welcome animation plays. UserProfile created. |
@@ -192,17 +192,17 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
   | ❌ Expired OTP | OTP verification returns "code expired" after entering digits. |
   | ⏳ Slow Response | Sign-in takes 5–10 seconds. Loading indicators and abort button tested. |
   | 🔄 Account Conflict | Selected provider identity is already linked to a different user. |
-- [ ] **Provider Override** — force the sign-in sheet to pre-select a specific provider button (Apple, Google, Phone, Email) so the tester can jump directly to that flow.
+- [x] **Provider Override** — force the sign-in sheet to pre-select a specific provider button (Apple, Google, Phone, Email) so the tester can jump directly to that flow.
 
 **Mock Sign-in Flow:**
-- [ ] When the user taps "Sign in with Apple" on the mock sheet, no system Apple sheet appears. Instead, after `simulatedLatency` delay, the selected outcome fires.
-- [ ] When the user taps "Continue with Phone/Email", the OTP input screen (Story 4.3) appears with a mock code. Entering `000000` always succeeds; any other 6-digit code triggers the selected error outcome.
-- [ ] The success path triggers the full welcome animation (Story 5.3) and navigates to the dashboard, exactly as it will with real Clerk.
-- [ ] The error paths show the exact error UI (toasts, banners, shake animations) that the real integration will produce.
+- [x] When the user taps "Sign in with Apple" on the mock sheet, no system Apple sheet appears. Instead, after `simulatedLatency` delay, the selected outcome fires.
+- [x] When the user taps "Continue with Phone/Email", the OTP input screen (Story 4.3) appears with a mock code. Entering `000000` always succeeds; any other 6-digit code triggers the selected error outcome.
+- [x] The success path triggers the full welcome animation (Story 5.3) and navigates to the dashboard, exactly as it will with real Clerk.
+- [x] The error paths show the exact error UI (toasts, banners, shake animations) that the real integration will produce.
 
 **Validation:**
-- [ ] Every outcome in the picker produces visually correct UI verified against the acceptance criteria of Epics 4 and 5.
-- [ ] VoiceOver correctly announces the mock sign-in results (success announcements, error descriptions).
+- [x] Every outcome in the picker produces visually correct UI verified against the acceptance criteria of Epics 4 and 5.
+- [x] VoiceOver correctly announces the mock sign-in results (success announcements, error descriptions).
 
 ---
 
@@ -215,7 +215,7 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
 **Acceptance Criteria:**
 
 **MockAuthService Enhancement:**
-- [ ] `MockAuthService` is upgraded to read `DebugAuthController.shared.activeOverride` and respond accordingly:
+- [x] `MockAuthService` is upgraded to read `DebugAuthController.shared.activeOverride` and respond accordingly:
   | Override State | MockAuthService Behavior |
   |---------------|-------------------------|
   | `.authenticated` | `isAuthenticated = true`, `currentUser = mockUser`, `isLoading = false` |
@@ -229,21 +229,21 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
   | `.accountSuspended` | `login()` throws `AuthError.accountSuspended(reason: "Policy violation")` |
   | `.accountDeleted` | `login()` throws `AuthError.accountDeleted` |
   | `.migrationPending` | `isAuthenticated = true`, `isMigrating = true` — shows migration progress UI |
-- [ ] State changes are published via `@Observable` — SwiftUI views using `@Environment(MockAuthService.self)` update automatically.
-- [ ] An `AuthError` enum is created (or extended if it exists) with all error cases above. This enum will be reused by `ClerkAuthService` later.
+- [x] State changes are published via `@Observable` — SwiftUI views using `@Environment(MockAuthService.self)` update automatically.
+- [x] An `AuthError` enum is created (or extended if it exists) with all error cases above. This enum will be reused by `ClerkAuthService` later.
 
 **New AuthServiceProtocol Properties:**
-- [ ] `var isGuestMode: Bool { get }` — true when user skipped sign-in.
-- [ ] `var sessionExpiredReason: SessionExpiredReason? { get }` — nil when session is valid.
-- [ ] `var isMigrating: Bool { get }` — true during guest → authenticated migration.
-- [ ] `var lastSignInMethod: AuthProvider? { get }` — which provider was used last.
-- [ ] `var linkedIdentities: Set<AuthProvider> { get }` — all linked providers.
-- [ ] These additions are backward-compatible — `MockAuthService` provides defaults; `ClerkAuthService` (Epic 1) will implement them from Clerk data.
+- [x] `var isGuestMode: Bool { get }` — true when user skipped sign-in.
+- [x] `var sessionExpiredReason: SessionExpiredReason? { get }` — nil when session is valid.
+- [x] `var isMigrating: Bool { get }` — true during guest → authenticated migration.
+- [x] `var lastSignInMethod: AuthProvider? { get }` — which provider was used last.
+- [x] `var linkedIdentities: Set<AuthProvider> { get }` — all linked providers.
+- [x] These additions are backward-compatible — `MockAuthService` provides defaults; `ClerkAuthService` (Epic 1) will implement them from Clerk data.
 
 **Reactivity Verification:**
-- [ ] Changing `DebugAuthController.shared.activeOverride` from `.authenticated` to `.unauthenticated` in the QA panel immediately presents the sign-in sheet overlay.
-- [ ] Changing from `.unauthenticated` to `.authenticated` immediately dismisses the sign-in sheet and shows the dashboard.
-- [ ] Changing to `.sessionExpired` shows the re-auth prompt without navigating away from the current screen.
+- [x] Changing `DebugAuthController.shared.activeOverride` from `.authenticated` to `.unauthenticated` in the QA panel immediately presents the sign-in sheet overlay.
+- [x] Changing from `.unauthenticated` to `.authenticated` immediately dismisses the sign-in sheet and shows the dashboard.
+- [x] Changing to `.sessionExpired` shows the re-auth prompt without navigating away from the current screen.
 
 ---
 
@@ -256,11 +256,11 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
 **Acceptance Criteria:**
 
 **QA Panel Controls (sub-section: "Session Simulation"):**
-- [ ] **Token Status Display:**
+- [x] **Token Status Display:**
   - Current token state: "Valid" (green), "Expiring Soon" (amber, <5 min), "Expired" (red), "Refreshing" (blue spinner).
   - Mock token expiry countdown: e.g., "Expires in: 4:32".
   - Last refresh time: relative timestamp.
-- [ ] **Token Action Buttons:**
+- [x] **Token Action Buttons:**
   | Button | Action |
   |--------|--------|
   | "Expire Token Now" | Sets mock token as expired → triggers silent refresh flow |
@@ -268,14 +268,14 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
   | "Revoke Session" | Simulates server-side session revocation → triggers forced logout (Story 6.5 flow) |
   | "Refresh Token" | Manually triggers a mock token refresh → shows the refresh spinner and success/failure |
   | "Expire in 30s" | Sets a 30-second countdown → token expires after delay → tests the transition from valid → expired |
-- [ ] **Multi-device Simulation:**
+- [x] **Multi-device Simulation:**
   - "Simulate Other Device Sign-in" button → triggers the multi-device awareness notification (Story 6.3): "Signed in on another device."
   - "Simulate All Sessions Revoked" → triggers the "All other sessions revoked" confirmation.
 
 **Mock Token Behavior:**
-- [ ] A `MockTokenManager` (DEBUG-only) provides fake JWT-like strings with configurable expiry times.
-- [ ] Token refresh follows the same async pattern as real Clerk: `refreshToken() async throws -> String`.
-- [ ] Token expiry fires the same notification that the real Clerk observer will use, so all session-dependent UI (banners, re-auth prompts) is exercised.
+- [x] A `MockTokenManager` (DEBUG-only) provides fake JWT-like strings with configurable expiry times.
+- [x] Token refresh follows the same async pattern as real Clerk: `refreshToken() async throws -> String`.
+- [x] Token expiry fires the same notification that the real Clerk observer will use, so all session-dependent UI (banners, re-auth prompts) is exercised.
 
 ---
 
@@ -288,8 +288,8 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
 **Acceptance Criteria:**
 
 **QA Panel Controls (sub-section: "Sync Simulation"):**
-- [ ] **"Trigger Profile Sync" button** — runs the Clerk → UserProfile sync path (Story 7.1) using mock Clerk data from `DebugAuthController.shared.mockUser`. The sync writes to the real `UserProfile` SwiftData model.
-- [ ] **Conflict Scenario Picker:**
+- [x] **"Trigger Profile Sync" button** — runs the Clerk → UserProfile sync path (Story 7.1) using mock Clerk data from `DebugAuthController.shared.mockUser`. The sync writes to the real `UserProfile` SwiftData model.
+- [x] **Conflict Scenario Picker:**
   | Scenario | Mock Clerk Data | Expected Resolution |
   |----------|----------------|---------------------|
   | 🟢 Clean Sync | Remote XP: 500, Streak: 10 | Local profile updated to match |
@@ -298,7 +298,7 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
   | 🟡 Streak Conflict | Remote Streak: 5, Local Streak: 12 | Higher streak preserved |
   | 🔴 Name Conflict | Remote: "Max", Local: "Luna" | Prompt shown: "Which name do you want to keep?" |
   | 🔴 Tier Conflict | Remote: pro, Local: elite | Higher tier preserved (no downgrade) |
-- [ ] **"Simulate Guest Migration" button:**
+- [x] **"Simulate Guest Migration" button:**
   1. Sets local UserProfile to a "guest" state (XP: 250, Streak: 7, tier: free, no email).
   2. Presents the sign-in sheet.
   3. On mock sign-in success, runs the guest → authenticated migration (Story 7.3):
@@ -306,11 +306,11 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
      - Assigns Clerk user ID to UserProfile.
      - Shows migration success toast: "Your progress has been saved to your account!"
   4. Verifies no data was lost during migration.
-- [ ] **Sync Status Indicator:** A real-time status line: "Last sync: {timestamp}" / "Sync in progress…" / "Sync failed: {reason}".
+- [x] **Sync Status Indicator:** A real-time status line: "Last sync: {timestamp}" / "Sync in progress…" / "Sync failed: {reason}".
 
 **Validation:**
-- [ ] After triggering each conflict scenario, the UserProfile in SwiftData reflects the correct resolution.
-- [ ] The QA panel's State Inspector (existing section) shows the updated XP, streak, name, and tier after sync.
+- [x] After triggering each conflict scenario, the UserProfile in SwiftData reflects the correct resolution.
+- [x] The QA panel's State Inspector (existing section) shows the updated XP, streak, name, and tier after sync.
 
 ---
 
@@ -323,7 +323,7 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
 **Acceptance Criteria:**
 
 **QA Panel Controls (sub-section: "Auth Feature Gating"):**
-- [ ] **Auth Gating Matrix:** A read-only table showing how the current simulated auth state affects key features:
+- [x] **Auth Gating Matrix:** A read-only table showing how the current simulated auth state affects key features:
   | Feature | Guest | Free | Pro | Elite | Royal | Unauthenticated |
   |---------|-------|------|-----|-------|-------|-----------------|
   | Flashcards | ✅ (limit 10) | ✅ (limit 50) | ✅ ∞ | ✅ ∞ | ✅ ∞ | ❌ (sign-in required) |
@@ -334,8 +334,8 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
   - The table dynamically highlights the column matching the current mock state.
   - Red cells are tappable — tapping navigates to that feature so the tester can verify the locked/upgrade UI.
 
-- [ ] **"Walk All Gates" button:** Automatically cycles through all auth states (unauthenticated → guest → free → pro → elite → royal) holding each for 3 seconds and logging which UI elements changed. Outputs a report to the debug console.
-- [ ] **Quick Auth + Tier Combos:** Buttons that set both auth state AND tier simultaneously:
+- [x] **"Walk All Gates" button:** Automatically cycles through all auth states (unauthenticated → guest → free → pro → elite → royal) holding each for 3 seconds and logging which UI elements changed. Outputs a report to the debug console.
+- [x] **Quick Auth + Tier Combos:** Buttons that set both auth state AND tier simultaneously:
   | Combo | Auth State | Tier | Use Case |
   |-------|-----------|------|----------|
   | "Guest Free" | Guest | free | Default skip-sign-in experience |
@@ -345,11 +345,11 @@ The app already has `DebugNetworkController.shared` (network simulation) and `De
   | "Suspended Royal" | Account Suspended | royal | Edge case: premium user banned |
 
 **Integration with Existing QA Panel:**
-- [ ] The Auth Feature Gating section coordinates with the existing Tier Switcher section:
+- [x] The Auth Feature Gating section coordinates with the existing Tier Switcher section:
   - If the tester changes tier in the Tier Switcher, the Auth Gating Matrix updates.
   - If the tester changes auth state → tier, both sections reflect the change.
   - No conflicting state: if auth is set to "unauthenticated," the tier row shows "N/A" (tier is meaningless without auth).
-- [ ] The existing Feature Overrides section (force-enable/disable individual PremiumFeature flags) continues to work and takes precedence over auth-derived gating.
+- [x] The existing Feature Overrides section (force-enable/disable individual PremiumFeature flags) continues to work and takes precedence over auth-derived gating.
 
 ---
 
