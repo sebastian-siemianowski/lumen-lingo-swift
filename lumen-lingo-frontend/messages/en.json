@@ -165,7 +165,8 @@
       "ogTitle": "Pricing — LumenLingo",
       "ogDescription": "Compare Free, Pro, Elite, and Royal membership tiers. Start free, upgrade when ready."
     },
-    "disclaimerAppStore": "Subscriptions are billed through Apple’s App Store. Prices include applicable taxes. Final price may vary by region."
+    "disclaimerAppStore": "Subscriptions are billed through Apple’s App Store. Prices include applicable taxes. Final price may vary by region.",
+    "disclaimerVatInclusive": "Prices shown include VAT where applicable. Subscriptions are billed through Apple’s App Store. Final price is determined by Apple based on your region."
   },
   "Features": {
     "badge": "Deep Dive",
@@ -1274,6 +1275,20 @@
       "corporationTaxP1": "Lumenshore pays UK Corporation Tax on worldwide profits at the applicable rate (currently 25% for profits over £250,000, or the small profits rate of 19%). We assess eligibility for R&D Tax Credits for qualifying software development expenditure and Creative Industry Tax Relief where applicable.",
       "transferPricingHeading": "Transfer Pricing",
       "transferPricingP1": "As a single-entity company, Lumenshore does not currently have intercompany transactions requiring transfer pricing documentation. Should the corporate structure change, we will comply with OECD Transfer Pricing Guidelines and UK legislation."
+    },
+    "pricingCompliance": {
+      "heading": "Pricing Display Compliance",
+      "intro": "Lumenshore is committed to transparent, accurate pricing across all platforms. This section details our compliance with pricing display regulations in every jurisdiction where our app is available.",
+      "ukPriceMarkingHeading": "UK Price Marking Order 2004",
+      "ukPriceMarkingP1": "All prices displayed to UK consumers on our website include VAT at the applicable rate. Prices shown represent the total amount payable with no hidden charges. Where a range of pricing tiers is offered, pricing starts from the lowest available tier (Free, £0.00).",
+      "euConsumerRightsHeading": "EU Consumer Rights Directive",
+      "euConsumerRightsP1": "Prices are displayed in a clear and comprehensible manner. The total price including all applicable taxes is shown before any purchase commitment. Subscription billing frequency (monthly) is clearly indicated alongside the price. No additional delivery or postal charges apply to our digital service.",
+      "euOmnibusHeading": "EU Omnibus Directive",
+      "euOmnibusP1": "In compliance with the Price Indication Directive 98/6/EC as amended by the Omnibus Directive, any promotional or reduced pricing on our website will display the previous lowest price charged during the 30 days prior to the reduction. Our current pricing tiers are standard ongoing prices and are not presented as time-limited discounts.",
+      "iosAppPricingHeading": "iOS App Pricing",
+      "iosAppPricingP1": "In-app purchases use Apple StoreKit to display localised prices that include local taxes automatically. The price shown in the app always matches the price Apple will charge. Regional pricing follows Apple’s App Store Connect tier configuration, ensuring consistency between displayed and charged amounts.",
+      "websitePricingHeading": "Website Pricing",
+      "websitePricingP1": "Our website displays prices in GBP (British Pounds Sterling) inclusive of UK VAT. When purchasing via the iOS app, the final price is determined by Apple’s App Store based on your location and local tax rules. We do not display misleading discount claims or artificial price reductions."
     }
   },
   "Terms": {

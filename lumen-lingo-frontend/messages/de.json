@@ -165,7 +165,8 @@
       "ogTitle": "Preise — LumenLingo",
       "ogDescription": "Vergleichen Sie die Stufen Free, Pro, Elite und Royal. Starten Sie kostenlos, upgraden Sie wenn Sie bereit sind."
     },
-    "disclaimerAppStore": "Abonnements werden über Apples App Store abgerechnet. Preise beinhalten geltende Steuern. Der Endpreis kann je nach Region variieren."
+    "disclaimerAppStore": "Abonnements werden über Apples App Store abgerechnet. Preise beinhalten geltende Steuern. Der Endpreis kann je nach Region variieren.",
+    "disclaimerVatInclusive": "Preise verstehen sich inklusive MwSt., soweit zutreffend. Abonnements werden über Apples App Store abgerechnet."
   },
   "Features": {
     "badge": "Im Detail",
@@ -1274,6 +1275,20 @@
       "corporationTaxP1": "Lumenshore zahlt UK Körperschaftsteuer auf weltweite Gewinne zum gültigen Satz. Wir prüfen Anspruch auf F&E-Steuergutschriften.",
       "transferPricingHeading": "Verrechnungspreise",
       "transferPricingP1": "Als Einzelunternehmen hat Lumenshore derzeit keine konzerninterne Transaktionen, die eine Verrechnungspreisdokumentation erfordern."
+    },
+    "pricingCompliance": {
+      "heading": "Einhaltung der Preisauszeichnungsvorschriften",
+      "intro": "Lumenshore verpflichtet sich zu transparenter, korrekter Preisgestaltung auf allen Plattformen.",
+      "ukPriceMarkingHeading": "UK Price Marking Order 2004",
+      "ukPriceMarkingP1": "Alle für britische Verbraucher angezeigten Preise enthalten die Mehrwertsteuer. Es gibt keine versteckten Kosten.",
+      "euConsumerRightsHeading": "EU-Verbraucherrechterichtlinie",
+      "euConsumerRightsP1": "Preise werden klar und verständlich dargestellt. Der Gesamtpreis einschließlich aller Steuern wird vor dem Kauf angezeigt. Die Abrechnungshäufigkeit ist deutlich angegeben.",
+      "euOmnibusHeading": "EU-Omnibus-Richtlinie",
+      "euOmnibusP1": "Bei Preisreduzierungen wird der niedrigste Preis der letzten 30 Tage angezeigt. Unsere aktuellen Preisstufen sind laufende Standardpreise ohne zeitlich begrenzte Rabatte.",
+      "iosAppPricingHeading": "iOS-App-Preise",
+      "iosAppPricingP1": "In-App-Käufe verwenden Apple StoreKit mit lokalisierten Preisen einschließlich lokaler Steuern. Der angezeigte Preis entspricht immer dem von Apple berechneten Preis.",
+      "websitePricingHeading": "Website-Preise",
+      "websitePricingP1": "Unsere Website zeigt Preise in GBP inklusive britischer Mehrwertsteuer. Der Endpreis wird von Apples App Store basierend auf Ihrem Standort bestimmt."
     }
   },
   "Terms": {

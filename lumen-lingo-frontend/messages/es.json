@@ -165,7 +165,8 @@
       "ogTitle": "Precios — LumenLingo",
       "ogDescription": "Compara los niveles Free, Pro, Elite y Royal. Comienza gratis, mejora cuando estés listo."
     },
-    "disclaimerAppStore": "Las suscripciones se facturan a través del App Store de Apple. Los precios incluyen impuestos aplicables. El precio final puede variar según la región."
+    "disclaimerAppStore": "Las suscripciones se facturan a través del App Store de Apple. Los precios incluyen impuestos aplicables. El precio final puede variar según la región.",
+    "disclaimerVatInclusive": "Precios con IVA incluido donde corresponda. Suscripciones facturadas a través de la App Store de Apple."
   },
   "Features": {
     "badge": "En Profundidad",
@@ -1274,6 +1275,20 @@
       "corporationTaxP1": "Lumenshore paga el impuesto de sociedades del Reino Unido sobre beneficios mundiales. Evaluamos la elegibilidad para créditos fiscales de I+D.",
       "transferPricingHeading": "Precios de transferencia",
       "transferPricingP1": "Como entidad única, Lumenshore no tiene actualmente transacciones interempresariales que requieran documentación de precios de transferencia."
+    },
+    "pricingCompliance": {
+      "heading": "Cumplimiento en la exhibición de precios",
+      "intro": "Lumenshore se compromete con una fijación de precios transparente y precisa en todas las plataformas.",
+      "ukPriceMarkingHeading": "UK Price Marking Order 2004",
+      "ukPriceMarkingP1": "Todos los precios mostrados a consumidores británicos incluyen IVA. No hay cargos ocultos.",
+      "euConsumerRightsHeading": "Directiva de Derechos del Consumidor de la UE",
+      "euConsumerRightsP1": "Los precios se muestran de manera clara y comprensible. El precio total con impuestos se muestra antes de cualquier compromiso de compra.",
+      "euOmnibusHeading": "Directiva Ómnibus de la UE",
+      "euOmnibusP1": "En caso de precios reducidos, se muestra el precio más bajo de los últimos 30 días. Nuestros precios actuales son precios estándar permanentes.",
+      "iosAppPricingHeading": "Precios de la App iOS",
+      "iosAppPricingP1": "Las compras integradas utilizan Apple StoreKit con precios localizados que incluyen impuestos locales. El precio mostrado siempre coincide con lo que cobra Apple.",
+      "websitePricingHeading": "Precios del sitio web",
+      "websitePricingP1": "Nuestro sitio muestra precios en GBP con IVA incluido. El precio final lo determina la App Store de Apple según su ubicación."
     }
   },
   "Terms": {

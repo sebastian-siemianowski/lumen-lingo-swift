@@ -165,7 +165,8 @@
       "ogTitle": "Tarifs — LumenLingo",
       "ogDescription": "Comparez les niveaux Free, Pro, Elite et Royal. Commencez gratuitement, passez au niveau supérieur quand vous êtes prêt."
     },
-    "disclaimerAppStore": "Les abonnements sont facturés via l’App Store d’Apple. Les prix incluent les taxes applicables. Le prix final peut varier selon la région."
+    "disclaimerAppStore": "Les abonnements sont facturés via l’App Store d’Apple. Les prix incluent les taxes applicables. Le prix final peut varier selon la région.",
+    "disclaimerVatInclusive": "Prix TTC là où applicable. Abonnements facturés via l’App Store d’Apple."
   },
   "Features": {
     "badge": "En Détail",
@@ -1274,6 +1275,20 @@
       "corporationTaxP1": "Lumenshore paie l’impôt sur les sociétés au Royaume-Uni sur les bénéfices mondiaux. Nous évaluons l’éligibilité aux crédits d’impôt R&D.",
       "transferPricingHeading": "Prix de transfert",
       "transferPricingP1": "En tant qu’entité unique, Lumenshore n’a pas de transactions interentreprises nécessitant une documentation de prix de transfert."
+    },
+    "pricingCompliance": {
+      "heading": "Conformité de l’affichage des prix",
+      "intro": "Lumenshore s’engage à une tarification transparente et précise sur toutes les plateformes.",
+      "ukPriceMarkingHeading": "UK Price Marking Order 2004",
+      "ukPriceMarkingP1": "Tous les prix affichés aux consommateurs britanniques incluent la TVA. Aucun frais caché ne s’applique.",
+      "euConsumerRightsHeading": "Directive européenne sur les droits des consommateurs",
+      "euConsumerRightsP1": "Les prix sont affichés de manière claire et compréhensible. Le prix total TTC est indiqué avant tout engagement d’achat.",
+      "euOmnibusHeading": "Directive Omnibus européenne",
+      "euOmnibusP1": "En cas de réduction de prix, le prix le plus bas des 30 derniers jours est affiché. Nos tarifs actuels sont des prix standards permanents.",
+      "iosAppPricingHeading": "Tarification App iOS",
+      "iosAppPricingP1": "Les achats intégrés utilisent Apple StoreKit avec des prix localisés incluant les taxes locales. Le prix affiché correspond toujours au montant facturé par Apple.",
+      "websitePricingHeading": "Tarification du site web",
+      "websitePricingP1": "Notre site affiche les prix en GBP TTC. Le prix final est déterminé par l’App Store d’Apple selon votre région."
     }
   },
   "Terms": {

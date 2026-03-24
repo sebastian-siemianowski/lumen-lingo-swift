@@ -92,6 +92,7 @@ export default async function PrivacyPage({
     { id: 'vat-compliance', text: t('vatCompliance.heading'), level: 2 },
     { id: 'eu-vat-compliance', text: t('euVatCompliance.heading'), level: 2 },
     { id: 'international-tax', text: t('internationalTax.heading'), level: 2 },
+    { id: 'pricing-compliance', text: t('pricingCompliance.heading'), level: 2 },
     { id: 'your-rights', text: t('yourRights.heading'), level: 2 },
     { id: 'california-rights', text: t('yourRights.californiaHeading'), level: 2 },
     { id: 'gpc-signals', text: t('gpcSignals.heading'), level: 2 },
@@ -1093,6 +1094,26 @@ export default async function PrivacyPage({
 
                   <h3>{t('internationalTax.transferPricingHeading')}</h3>
                   <p>{t('internationalTax.transferPricingP1')}</p>
+                </section>
+
+                <section id="pricing-compliance">
+                  <h2>{t('pricingCompliance.heading')}</h2>
+                  <p>{t('pricingCompliance.intro')}</p>
+
+                  <h3>{t('pricingCompliance.ukPriceMarkingHeading')}</h3>
+                  <p>{t('pricingCompliance.ukPriceMarkingP1')}</p>
+
+                  <h3>{t('pricingCompliance.euConsumerRightsHeading')}</h3>
+                  <p>{t('pricingCompliance.euConsumerRightsP1')}</p>
+
+                  <h3>{t('pricingCompliance.euOmnibusHeading')}</h3>
+                  <p>{t('pricingCompliance.euOmnibusP1')}</p>
+
+                  <h3>{t('pricingCompliance.iosAppPricingHeading')}</h3>
+                  <p>{t('pricingCompliance.iosAppPricingP1')}</p>
+
+                  <h3>{t('pricingCompliance.websitePricingHeading')}</h3>
+                  <p>{t('pricingCompliance.websitePricingP1')}</p>
                 </section>
 
                 <section id="your-rights">

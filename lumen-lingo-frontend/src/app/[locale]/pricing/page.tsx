@@ -60,6 +60,12 @@ const productLd = {
       price: '0',
       priceCurrency: 'GBP',
       availability: 'https://schema.org/InStock',
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: '0',
+        priceCurrency: 'GBP',
+        valueAddedTaxIncluded: true,
+      },
     },
     {
       '@type': 'Offer',
@@ -71,6 +77,7 @@ const productLd = {
         price: '9.99',
         priceCurrency: 'GBP',
         billingDuration: 'P1M',
+        valueAddedTaxIncluded: true,
       },
     },
     {
@@ -83,6 +90,7 @@ const productLd = {
         price: '19.99',
         priceCurrency: 'GBP',
         billingDuration: 'P1M',
+        valueAddedTaxIncluded: true,
       },
     },
     {
@@ -95,6 +103,7 @@ const productLd = {
         price: '99.99',
         priceCurrency: 'GBP',
         billingDuration: 'P1M',
+        valueAddedTaxIncluded: true,
       },
     },
   ],

@@ -3856,23 +3856,23 @@
 **So that** I know exactly what I'll pay
 
 #### Subtasks:
-- [ ] 20.4.1 — UK Price Marking Order 2004:
+- [x] 20.4.1 — UK Price Marking Order 2004:
   - All prices displayed to UK consumers must include VAT
   - Must show total price (no hidden charges)
   - If display is "from £X" — must be the lowest available price
-- [ ] 20.4.2 — EU Consumer Rights Directive pricing:
+- [x] 20.4.2 — EU Consumer Rights Directive pricing:
   - Prices must be displayed in a clear and comprehensible manner
   - Total price including all taxes and charges
   - If price cannot be calculated in advance: how price is calculated
   - Additional delivery/postal charges disclosed before purchase
-- [ ] 20.4.3 — EU Omnibus Directive (Price Indication Directive 98/6/EC as amended):
+- [x] 20.4.3 — EU Omnibus Directive (Price Indication Directive 98/6/EC as amended):
   - If showing "reduced price" / "sale price": must show previous lowest price in last 30 days
   - Applies to any discount displays on pricing page
-- [ ] 20.4.4 — iOS App pricing:
+- [x] 20.4.4 — iOS App pricing:
   - Use StoreKit-provided localized prices (includes local tax automatically)
   - Never show prices different from what Apple will charge
   - Regional pricing must match App Store Connect tier configuration
-- [ ] 20.4.5 — Website pricing page compliance:
+- [x] 20.4.5 — Website pricing page compliance:
   - Add currency selector or locale-based pricing
   - Show "Prices include VAT" for UK/EU visitors
   - Add "Price charged via Apple's App Store. Final price may vary by location."

@@ -165,7 +165,8 @@
       "ogTitle": "价格方案 — LumenLingo",
       "ogDescription": "比较Free、Pro、Elite和Royal等级。免费开始，准备好了再升级。"
     },
-    "disclaimerAppStore": "订阅通过Apple App Store计费。价格包含适用税费。最终价格可能因地区而异。"
+    "disclaimerAppStore": "订阅通过Apple App Store计费。价格包含适用税费。最终价格可能因地区而异。",
+    "disclaimerVatInclusive": "价格包含适用的VAT。订阅通过Apple App Store计费。"
   },
   "Features": {
     "badge": "深度探索",
@@ -1274,6 +1275,20 @@
       "corporationTaxP1": "Lumenshore就全球利润缴纳英国公司税。我们评估研发税收抵免的资格。",
       "transferPricingHeading": "转让定价",
       "transferPricingP1": "作为单一实体，Lumenshore目前没有需要转让定价文件的集团内交易。"
+    },
+    "pricingCompliance": {
+      "heading": "价格展示合规",
+      "intro": "Lumenshore致力于在所有平台上提供透明、准确的定价。",
+      "ukPriceMarkingHeading": "英国Price Marking Order 2004",
+      "ukPriceMarkingP1": "向英国消费者展示的所有价格均包含VAT。无隐藏费用。",
+      "euConsumerRightsHeading": "欧盟消费者权益指令",
+      "euConsumerRightsP1": "价格以清晰易懂的方式展示。含税总价在购买前显示。",
+      "euOmnibusHeading": "欧盟Omnibus指令",
+      "euOmnibusP1": "如有降价，将显示过去30天的最低价格。我们当前的价格是标准持续价格。",
+      "iosAppPricingHeading": "iOS应用定价",
+      "iosAppPricingP1": "应用内购买使用Apple StoreKit显示包含当地税费的本地化价格。显示价格始终与Apple收取的金额一致。",
+      "websitePricingHeading": "网站定价",
+      "websitePricingP1": "网站以英镭显示含英国VAT的价格。最终价格由Apple App Store根据您的地区确定。"
     }
   },
   "Terms": {

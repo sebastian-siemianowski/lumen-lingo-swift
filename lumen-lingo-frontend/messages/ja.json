@@ -165,7 +165,8 @@
       "ogTitle": "料金プラン — LumenLingo",
       "ogDescription": "Free、Pro、Elite、Royalプランを比較。無料で始めて、準備ができたらアップグレード。"
     },
-    "disclaimerAppStore": "サブスクリプションはAppleのApp Storeを通じて課金されます。価格には該当税が含まれます。最終価格は地域により異なる場合があります。"
+    "disclaimerAppStore": "サブスクリプションはAppleのApp Storeを通じて課金されます。価格には該当税が含まれます。最終価格は地域により異なる場合があります。",
+    "disclaimerVatInclusive": "価格は該当する場合VATを含みます。サブスクリプションはApple App Store経由で課金されます。"
   },
   "Features": {
     "badge": "詳細",
@@ -1274,6 +1275,20 @@
       "corporationTaxP1": "Lumenshoreは世界全体の利益に対して英国法人税を納付します。R&D税額控除の適格性を評価しています。",
       "transferPricingHeading": "移転価格",
       "transferPricingP1": "単一法人として、Lumenshoreは現在移転価格文書を必要とするグループ内取引はありません。"
+    },
+    "pricingCompliance": {
+      "heading": "価格表示のコンプライアンス",
+      "intro": "Lumenshoreは、すべてのプラットフォームで透明で正確な価格設定に取り組んでいます。",
+      "ukPriceMarkingHeading": "英国Price Marking Order 2004",
+      "ukPriceMarkingP1": "英国の消費者に表示されるすべての価格にVATが含まれています。隠れた費用はありません。",
+      "euConsumerRightsHeading": "EU消費者権利指令",
+      "euConsumerRightsP1": "価格は明確で理解しやすい方法で表示されます。税込み総額が購入前に表示されます。",
+      "euOmnibusHeading": "EUオムニバス指令",
+      "euOmnibusP1": "値下げの場合、過去30日間の最低価格が表示されます。現在の価格は標準の継続価格です。",
+      "iosAppPricingHeading": "iOSアプリの価格設定",
+      "iosAppPricingP1": "アプリ内購入はApple StoreKitを使用し、現地税を含むローカライズ価格を表示します。表示価格はAppleの請求額と常に一致します。",
+      "websitePricingHeading": "ウェブサイトの価格",
+      "websitePricingP1": "ウェブサイトでは英国VAT込みのGBPで価格を表示しています。最終価格はApple App Storeが地域に応じて決定します。"
     }
   },
   "Terms": {

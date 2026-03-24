@@ -165,7 +165,8 @@
       "ogTitle": "Cennik — LumenLingo",
       "ogDescription": "Porównaj poziomy Free, Pro, Elite i Royal. Zacznij za darmo, ulepsz kiedy będziesz gotowy."
     },
-    "disclaimerAppStore": "Subskrypcje są rozliczane przez App Store Apple. Ceny zawierają obowiązujące podatki. Cena końcowa może się różnić w zależności od regionu."
+    "disclaimerAppStore": "Subskrypcje są rozliczane przez App Store Apple. Ceny zawierają obowiązujące podatki. Cena końcowa może się różnić w zależności od regionu.",
+    "disclaimerVatInclusive": "Ceny zawierają VAT, jeśli dotyczy. Subskrypcje rozliczane przez App Store Apple."
   },
   "Features": {
     "badge": "Szczegóły",
@@ -1274,6 +1275,20 @@
       "corporationTaxP1": "Lumenshore płaci brytyjski podatek korporacyjny od światowych zysków. Oceniamy uprawnienie do ulg podatkowych na B+R.",
       "transferPricingHeading": "Ceny transferowe",
       "transferPricingP1": "Jako pojedynczy podmiot, Lumenshore nie prowadzi obecnie transakcji międzyfirmowych wymagających dokumentacji cen transferowych."
+    },
+    "pricingCompliance": {
+      "heading": "Zgodność prezentacji cen",
+      "intro": "Lumenshore zobowiązuje się do przejrzystego i dokładnego ustalania cen na wszystkich platformach.",
+      "ukPriceMarkingHeading": "UK Price Marking Order 2004",
+      "ukPriceMarkingP1": "Wszystkie ceny wyświetlane konsumentom brytyjskim zawierają VAT. Brak ukrytych opłat.",
+      "euConsumerRightsHeading": "Dyrektywa UE o prawach konsumenta",
+      "euConsumerRightsP1": "Ceny są prezentowane w sposób jasny i zrozumiały. Całkowita cena z podatkami jest pokazywana przed zakupem.",
+      "euOmnibusHeading": "Dyrektywa Omnibus UE",
+      "euOmnibusP1": "W przypadku obniżek cen prezentowana jest najniższa cena z ostatnich 30 dni. Nasze obecne ceny są standardowymi cenami stałymi.",
+      "iosAppPricingHeading": "Ceny w aplikacji iOS",
+      "iosAppPricingP1": "Zakupy w aplikacji korzystają z Apple StoreKit z lokalnymi cenami zawierającymi podatki. Wyświetlana cena zawsze odpowiada kwocie pobieranej przez Apple.",
+      "websitePricingHeading": "Ceny na stronie",
+      "websitePricingP1": "Nasza strona wyświetla ceny w GBP z brytyjskim VAT. Cena końcowa jest ustalana przez App Store Apple na podstawie lokalizacji."
     }
   },
   "Terms": {
