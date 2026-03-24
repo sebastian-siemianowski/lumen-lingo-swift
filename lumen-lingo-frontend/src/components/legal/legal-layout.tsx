@@ -80,12 +80,12 @@ export function LegalTOC({ items, label }: LegalTOCProps & { label?: string }) {
 
   return (
     <nav aria-label="Table of contents" className="hidden xl:block">
-      <div className="sticky top-28 max-h-[calc(100vh-8rem)] flex flex-col">
-        <p className="mb-3 shrink-0 text-xs font-semibold uppercase tracking-wider text-white/30">
+      <div className="sticky top-28">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/30">
           {label ?? 'On this page'}
         </p>
 
-        <div className="relative min-h-0 flex-1">
+        <div className="relative">
           {/* Top fade */}
           <div
             className={cn(
@@ -96,8 +96,7 @@ export function LegalTOC({ items, label }: LegalTOCProps & { label?: string }) {
 
           <ul
             ref={scrollRef}
-            className="toc-scroll space-y-1 overflow-y-auto border-s border-white/[0.06] pe-1"
-            style={{ maxHeight: '100%' }}
+            className="toc-scroll max-h-[calc(100vh-10rem)] space-y-1 overflow-y-auto border-s border-white/[0.06] pe-1"
           >
             {items.map((item) => (
               <li key={item.id} data-toc-id={item.id}>
