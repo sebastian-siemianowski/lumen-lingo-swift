@@ -77,6 +77,19 @@
 - Trial entitlement maps to `royal_access` with `periodType == .trial`
 - Offline grace period respects RevenueCat's cached `CustomerInfo`
 
+### ADR-4: Mock-First RevenueCat Development
+
+**Context:** RevenueCat integration spans the entire app (paywall, purchase, entitlements, lifecycle, analytics). Other features and QA testing cannot wait until the real SDK integration is complete. The existing codebase follows a protocol + mock pattern for `AuthService` (`AuthServiceProtocol` / `MockAuthService`) and `SyncService` (`SyncServiceProtocol` / `MockSyncService`), but `SubscriptionManager` currently has no protocol abstraction.
+
+**Decision:** Introduce a `RevenueCatServiceProtocol` that wraps all RevenueCat SDK interactions. Provide a `MockRevenueCatService` that simulates purchase flows, entitlement changes, billing failures, and lifecycle events locally without any network calls. Extend the existing QA panel (`QAPanelView`) with a dedicated "RevenueCat Simulation" section that controls the mock. In Dev/QA environments, the mock is the default; in UAT/PreProd/Prod, the real SDK is used.
+
+**Consequences:**
+- All development and QA testing can proceed in parallel with RevenueCat integration
+- The QA team can simulate any subscription state (including edge cases like grace periods, refunds, Family Sharing) at the tap of a button
+- Unit tests for all subscription-dependent views use the mock — no StoreKit 2 sandbox dependency
+- The mock follows the same `#if DEBUG` pattern as existing debug infrastructure
+- The protocol boundary acts as a natural seam for future SDK version upgrades
+
 ---
 
 ## Epic 1 — RevenueCat SDK Foundation
@@ -313,6 +326,193 @@ func handleClerkSignIn(clerkUser: ClerkUser) async {
 - [ ] The same round-trip is verified for Elite and Royal tiers
 - [ ] All 3 entitlements (`pro_access`, `elite_access`, `royal_access`) appear correctly in the RevenueCat dashboard
 - [ ] A documented test script (Markdown checklist) captures the exact steps and expected results for QA to repeat
+
+---
+
+### Story 1.8 — RevenueCat Service Protocol & Mock Implementation
+
+**As a** developer and QA team member  
+**I want** a protocol-abstracted RevenueCat layer with a fully-featured mock implementation  
+**So that** all subscription-related development and testing can proceed without requiring live RevenueCat API calls, and the real SDK integration can happen incrementally without blocking other work
+
+**Story Points:** 8  
+**Priority:** P0 — Must Have (implement FIRST — unblocks all other stories)  
+**Dependencies:** Story 1.1  
+
+#### Acceptance Criteria
+
+- [ ] A `RevenueCatServiceProtocol` is defined with the following surface:
+  ```swift
+  @MainActor
+  protocol RevenueCatServiceProtocol: Observable {
+      // Configuration
+      func configure(apiKey: String, appUserID: String?) async
+      
+      // Identity
+      func logIn(userID: String) async throws -> CustomerInfo
+      func logOut() async throws -> CustomerInfo
+      var currentAppUserID: String { get }
+      var isAnonymous: Bool { get }
+      
+      // Offerings
+      func getOfferings() async throws -> Offerings
+      var currentOffering: Offering? { get }
+      
+      // Purchase
+      func purchase(package: Package) async throws -> (transaction: StoreTransaction?, customerInfo: CustomerInfo, userCancelled: Bool)
+      func restorePurchases() async throws -> CustomerInfo
+      
+      // Customer Info
+      func getCustomerInfo() async throws -> CustomerInfo
+      var customerInfoStream: AsyncStream<CustomerInfo> { get }
+      
+      // Subscription Management
+      func showManageSubscriptions() async throws
+      func presentCodeRedemptionSheet()
+      
+      // Attribution
+      func setAttributes(_ attributes: [String: String])
+      func collectDeviceIdentifiers()
+      
+      // Diagnostics
+      var sdkVersion: String { get }
+      var isSandbox: Bool { get }
+  }
+  ```
+- [ ] A `RealRevenueCatService` class implements the protocol by delegating to `Purchases.shared`
+- [ ] A `MockRevenueCatService` class (gated with `#if DEBUG`) implements the protocol with fully local simulation:
+  - Stores mock offerings with 3 packages (Pro/Elite/Royal) using realistic price data
+  - Stores mock `CustomerInfo` with configurable entitlements
+  - Simulates purchase flow with configurable delay (200ms–2s), success, cancellation, or error outcomes
+  - Simulates restore with configurable outcomes (found entitlements, nothing found, error)
+  - Emits `CustomerInfo` changes through the `customerInfoStream` on state transitions
+  - Simulates billing failure, grace period, expiry, refund, and renewal states
+  - Simulates Family Sharing entitlements
+  - Stores subscriber attributes in-memory for inspection
+  - All state is held in-memory — no network, no disk persistence between launches
+- [ ] The mock supports the following programmable scenarios (set via properties or methods):
+  | Scenario | Description |
+  |---|---|
+  | `happyPath` | Purchase succeeds after configurable delay |
+  | `userCancelled` | User cancels on the App Store sheet |
+  | `networkError` | Purchase fails with a network error |
+  | `paymentDeclined` | Purchase fails with a payment error |
+  | `deferredPurchase` | Purchase enters Ask to Buy / deferred state |
+  | `alreadySubscribed` | User already has the selected entitlement |
+  | `billingFailure` | Subscription enters billing retry / grace period |
+  | `subscriptionExpired` | Subscription has expired (entitlements removed) |
+  | `refundGranted` | Entitlement is revoked (refund simulation) |
+  | `trialActive` | Royal trial with configurable days remaining |
+  | `familyShared` | Entitlement via Family Sharing (ownershipType = .familyShared) |
+  | `offlineMode` | All network calls throw; returns cached data only |
+  | `slowNetwork` | All operations take 3–5 seconds |
+- [ ] Service injection follows the existing `AppEnvironment` pattern:
+  - Dev/QA: `MockRevenueCatService` by default (toggleable to real via QA panel)
+  - UAT/PreProd: `RealRevenueCatService` by default (toggleable to mock via QA panel)
+  - Prod: `RealRevenueCatService` always (no mock available)
+- [ ] The protocol is injected into all consumers via `@Environment(\RevenueCatServiceProtocol.self)` or a typed wrapper
+- [ ] The existing `SubscriptionManager` is refactored to consume `RevenueCatServiceProtocol` instead of calling `Purchases.shared` directly
+- [ ] Unit tests verify: 10+ scenarios on the mock (purchase success, cancel, error, restore, tier mapping, billing failure, expiry, refund, trial, offline)
+- [ ] The mock logs all operations to an in-memory event log for debugging: `[(timestamp: Date, operation: String, result: String)]`
+
+#### Technical Notes
+
+- Follow the existing pattern: `AuthServiceProtocol` / `MockAuthService` in `AuthService.swift` and `SyncServiceProtocol` / `MockSyncService` in `SyncService.swift`
+- RevenueCat types (`CustomerInfo`, `Offerings`, `Package`, `StoreTransaction`) should be used directly in the protocol — do NOT create wrapper types. The mock creates instances of these types using RevenueCat's test helpers or by subclassing/stubbing
+- If RevenueCat types cannot be easily constructed for mocking, define lightweight value-type mirrors (`MockCustomerInfo`, `MockOffering`, etc.) and a mapping layer at the protocol boundary
+- The mock's event log enables the QA panel's "Event History" section (Story 1.9)
+
+---
+
+### Story 1.9 — QA Panel RevenueCat Simulation Controls
+
+**As a** QA team member or developer  
+**I want** a dedicated "RevenueCat Simulation" section in the QA panel  
+**So that** I can test every subscription state, edge case, and error scenario without real purchases, sandbox accounts, or RevenueCat connectivity
+
+**Story Points:** 8  
+**Priority:** P0 — Must Have (unblocks all QA testing)  
+**Dependencies:** Story 1.8  
+
+#### Acceptance Criteria
+
+- [ ] A new "RevenueCat Simulation" section is added to `QAPanelView` (following the existing section pattern)
+- [ ] The section is only visible when `#if DEBUG` and the current service is `MockRevenueCatService` (or can toggle to mock)
+- [ ] **Service Toggle:**
+  - A toggle: "Use Mock RevenueCat" (on/off)
+  - When on: all RevenueCat calls go through `MockRevenueCatService`
+  - When off: all RevenueCat calls go through `RealRevenueCatService` (requires SDK to be configured)
+  - Toggling shows a confirmation: "This will reset your current subscription state. Continue?"
+  - The toggle state persists across app launches (UserDefaults, `#if DEBUG` only)
+- [ ] **Quick State Presets:**
+  - One-tap buttons that configure the mock to a complete state:
+  - "Fresh Free User" — no entitlements, anonymous
+  - "Pro Subscriber" — pro_access active, monthly, renews in 25 days
+  - "Elite Subscriber" — pro + elite active, monthly, renews in 15 days
+  - "Royal Subscriber" — all three active, monthly, renews in 20 days
+  - "Trial User (Day 1)" — royal_access trial, 13 days remaining
+  - "Trial User (Expiring)" — royal_access trial, 1 day remaining
+  - "Trial Expired" — no entitlements, trial previously active
+  - "Grace Period" — pro active but billing issue detected 2 days ago
+  - "Billing Retry" — pro in billing retry, 10 days into retry period
+  - "Expired (Lapsed)" — no entitlements, was Pro, expired 7 days ago
+  - "Refunded" — entitlement revoked, was Elite
+  - "Family Shared (Pro)" — pro via family sharing, not directly purchased
+  - Each preset triggers the `CustomerInfo` stream, updating `TierManager` and all UI in real-time
+- [ ] **Purchase Outcome Control:**
+  - Segmented control: "Next Purchase: Success | Cancel | Fail | Defer"
+  - When "Fail" is selected, a picker for error type: Network / Payment Declined / Unknown
+  - A slider: "Purchase Delay" (0s–5s) — simulates App Store sheet response time
+  - These settings affect the NEXT call to `purchase(package:)` on the mock
+- [ ] **Lifecycle Simulation:**
+  - "Simulate Renewal" button — triggers a renewal event on the current subscription
+  - "Simulate Billing Failure" button — transitions current subscription to billing issue state
+  - "Simulate Expiry" button — expires the current subscription immediately
+  - "Simulate Refund" button — revokes the current entitlement immediately
+  - "Simulate Upgrade" — shows a picker (Pro/Elite/Royal) and transitions to that tier
+  - "Simulate Downgrade" — equivalent but to a lower tier, takes effect at "renewal"
+  - Each simulation updates `CustomerInfo` stream → `TierManager` → all UI
+- [ ] **Offering Controls:**
+  - "Current Offering ID" text field (defaults to "default")
+  - Toggle: "Force Empty Offerings" — makes `getOfferings()` return empty (tests skeleton states)
+  - Toggle: "Force Offerings Error" — makes `getOfferings()` throw (tests error banner)
+  - "Reset to Default Offerings" button
+- [ ] **Network Simulation:**
+  - Integrates with existing `DebugNetworkController` modes for RevenueCat-specific behavior
+  - Toggle: "RevenueCat Offline" — all RevenueCat calls fail with network error (independent of global network sim)
+  - Slider: "RevenueCat Latency" (0–10s) — adds latency to all mock responses
+- [ ] **Event History:**
+  - A scrollable log showing the last 50 mock operations: `[timestamp] purchase(pro) → success`, `[timestamp] getCustomerInfo() → cached`, etc.
+  - Each entry is tappable to show full details (request parameters, response data)
+  - "Clear Log" button
+  - "Copy Log" button — copies formatted log to clipboard
+- [ ] **State Inspector:**
+  - Current mock state displayed:
+    - Active entitlements (list with identifiers and expiry dates)
+    - Current App User ID
+    - Is Anonymous (yes/no)
+    - Will Renew (yes/no)
+    - Billing Issue (yes/no with date)
+    - Subscriber attributes (key-value list)
+    - Service type: Mock / Real
+  - All values update live as state changes
+- [ ] **Disable RevenueCat Entirely:**
+  - A master toggle: "Disable RevenueCat Integration"
+  - When enabled: `SubscriptionManager` bypasses all RevenueCat calls entirely and uses TierManager's existing direct tier-switching (already in QA panel)
+  - All paywall and purchase UI shows a "[RC Disabled]" watermark in debug builds
+  - This mode allows the team to develop and test all non-subscription features without RevenueCat being initialized at all
+  - Particularly useful during early development before the SDK is fully wired up
+- [ ] All controls respect the cosmic/glass UI theme of the existing QA panel
+- [ ] VoiceOver labels are set for all controls
+- [ ] The section collapses/expands following the existing `CollapsibleSection` pattern
+
+#### UX Details — For the QA Team to Fall in Love
+
+- The Quick State Presets are a grid of glass cards, each showing the tier icon and a one-line description. Tapping one triggers a brief "state transition" animation (the QA panel briefly flashes the tier's accent colour) so the tester gets visual confirmation that the state changed
+- The Event History log uses a monospace cosmic font with colour-coded entries: green for success, amber for user-cancelled, red for errors, blue for info. It looks like a spaceship mission log — QA testers will actually enjoy reading it
+- The Purchase Outcome control has small inline previews: selecting "Cancel" shows a tiny crossed-out cart icon, "Fail" shows a warning triangle, "Defer" shows an hourglass. Visual anchors make the dense controls scannable
+- The "Disable RevenueCat Entirely" toggle is visually distinct — positioned at the very top of the section with an amber border, making it impossible to accidentally miss. When enabled, the entire RevenueCat Simulation section below it greys out (since the mock isn't active either)
+- The State Inspector section mirrors the layout of the Subscription Diagnostics screen (Story 6.3) so QA testers build muscle memory that transfers between debug and production views
 
 ---
 
@@ -1682,6 +1882,7 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 ```
 Epic 1 (Foundation)
   ├── 1.1 → 1.2 → 1.3 → 1.4 → 1.5 → 1.7
+  ├── 1.1 → 1.8 (Protocol + Mock) → 1.9 (QA Panel) ★ P0 — unblocks all dev/QA
   └── 1.6 (Clerk Bridge) ← depends on Clerk.md auth stories
   
 Epic 2 (Paywall) ← depends on Epic 1
@@ -1726,8 +1927,8 @@ Epic 7 (UX Polish) ← depends on Epics 2-4
 
 | Sprint | Stories | Points | Focus |
 |---|---|---|---|
-| Sprint 1 | 1.1, 1.2, 1.3, 1.4, 1.5 | 16 | SDK Foundation |
-| Sprint 2 | 1.6, 1.7, 2.1, 2.2 | 19 | Identity Bridge + Offering Fetch |
+| Sprint 1 | 1.1, 1.2, 1.8, 1.9 | 21 | SDK Foundation + Mock (★ unblocks all work) |
+| Sprint 2 | 1.3, 1.4, 1.5, 1.6, 1.7 | 19 | SDK Init + Identity Bridge |
 | Sprint 3 | 2.3, 2.4, 2.5 | 16 | Paywall Experience |
 | Sprint 4 | 2.6, 2.7, 3.1 | 14 | Paywall Polish + First Purchase |
 | Sprint 5 | 3.2, 3.3, 3.4, 3.5 | 18 | Purchase Flows |
@@ -1739,7 +1940,7 @@ Epic 7 (UX Polish) ← depends on Epics 2-4
 | Sprint 11 | 7.2, 7.3 | 13 | Micro-Interactions + Onboarding |
 | Sprint 12 | 7.4, 7.5, 7.6, 7.7 | 20 | Value Framing + Accessibility + Themes |
 
-**Total: ~202 story points across 12 sprints (≈ 24 weeks)**
+**Total: ~218 story points across 12 sprints (≈ 24 weeks)**
 
 ### Appendix D — Risk Register
 
@@ -1755,8 +1956,10 @@ Epic 7 (UX Polish) ← depends on Epics 2-4
 | ATT prompt (if MMP added later) reduces attribution quality | Medium | Low | Story 6.5 defers ATT; Apple Search Ads works without it; design prompt for right moment |
 | Paywall A/B test shows losing variant for too long | Medium | Medium | Story 2.3; use RevenueCat Experiments with auto-significance detection; set max runtime |
 | Offline user purchases but CustomerInfo doesn't sync | Low | High | StoreKit 2 transaction listener (server-side) + RevenueCat's receipt verification handles this |
+| Development blocked waiting for RevenueCat SDK integration | High | High | Story 1.8 + 1.9: protocol + mock layer allows all dev/QA to proceed with zero SDK dependency; mock is the default in Dev/QA environments |
+| Mock behaviour drifts from real RevenueCat SDK behaviour | Medium | Medium | Integration tests in UAT compare mock outputs vs real SDK; mock scenarios are based directly on RevenueCat documentation |
 
 ---
 
-*Document version: 2.0 — Revised to delegate authentication to Clerk (see Clerk.md). 7 Epics, 47 Stories.*  
+*Document version: 2.1 — Added Stories 1.8 & 1.9 (RevenueCat mock layer + QA panel). 7 Epics, 49 Stories.*  
 *Last updated: 2025*
