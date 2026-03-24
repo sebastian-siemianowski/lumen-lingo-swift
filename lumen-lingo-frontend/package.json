@@ -13,7 +13,9 @@
     "test:coverage": "vitest run --coverage",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "check:translations": "node scripts/check-translations.js"
+    "check:translations": "node scripts/check-translations.js",
+    "generate:licenses": "node scripts/generate-licenses.mjs",
+    "check:licenses": "node scripts/check-licenses.mjs"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.45.0",

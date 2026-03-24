@@ -887,6 +887,13 @@ struct SettingsView: View {
                         color: .orange,
                         url: "https://lumenlingo.com/en/privacy#cookie-policy"
                     )
+                    Divider().padding(.leading, 44).background(isDark ? .white.opacity(0.06) : .black.opacity(0.06))
+                    legalLink(
+                        title: "Open-Source Licenses",
+                        icon: "chevron.left.forwardslash.chevron.right",
+                        color: .green,
+                        url: "https://lumenlingo.com/en/open-source"
+                    )
                 }
             }
 
@@ -955,6 +962,13 @@ struct SettingsView: View {
                 .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanMist.opacity(0.7))
 
             madeWithLoveLabel
+
+            Text("© 2015–\(Calendar.current.component(.year, from: Date())) Lumenshore Limited. All rights reserved.")
+                .font(.system(size: 9))
+                .foregroundStyle(isDark ? .white.opacity(0.18) : .secondary.opacity(0.4))
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 16)
+                .padding(.top, 2)
         }
     }
 

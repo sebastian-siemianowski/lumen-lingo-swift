@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
@@ -16,7 +16,18 @@ interface LegalTOCProps {
 
 export function LegalTOC({ items, label }: LegalTOCProps & { label?: string }) {
   const [activeId, setActiveId] = useState<string>('');
+  const scrollRef = useRef<HTMLUListElement>(null);
+  const [canScrollUp, setCanScrollUp] = useState(false);
+  const [canScrollDown, setCanScrollDown] = useState(false);
 
+  const updateScrollState = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollUp(el.scrollTop > 2);
+    setCanScrollDown(el.scrollTop + el.clientHeight < el.scrollHeight - 2);
+  }, []);
+
+  /* Intersection observer to track active section */
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -37,41 +48,94 @@ export function LegalTOC({ items, label }: LegalTOCProps & { label?: string }) {
     return () => observer.disconnect();
   }, [items]);
 
+  /* Auto-scroll the TOC to keep the active item visible */
+  useEffect(() => {
+    if (!activeId || !scrollRef.current) return;
+    const active = scrollRef.current.querySelector<HTMLElement>(`[data-toc-id="${activeId}"]`);
+    if (!active) return;
+
+    const container = scrollRef.current;
+    const activeTop = active.offsetTop - container.offsetTop;
+    const activeBottom = activeTop + active.offsetHeight;
+    const visibleTop = container.scrollTop;
+    const visibleBottom = visibleTop + container.clientHeight;
+
+    if (activeTop < visibleTop + 24) {
+      container.scrollTo({ top: activeTop - 24, behavior: 'smooth' });
+    } else if (activeBottom > visibleBottom - 24) {
+      container.scrollTo({ top: activeBottom - container.clientHeight + 24, behavior: 'smooth' });
+    }
+  }, [activeId]);
+
+  /* Track scroll state for fade indicators */
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    updateScrollState();
+    el.addEventListener('scroll', updateScrollState, { passive: true });
+    const ro = new ResizeObserver(updateScrollState);
+    ro.observe(el);
+    return () => { el.removeEventListener('scroll', updateScrollState); ro.disconnect(); };
+  }, [updateScrollState]);
+
   return (
     <nav aria-label="Table of contents" className="hidden xl:block">
-      <div className="sticky top-28">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/30">
+      <div className="sticky top-28 max-h-[calc(100vh-8rem)] flex flex-col">
+        <p className="mb-3 shrink-0 text-xs font-semibold uppercase tracking-wider text-white/30">
           {label ?? 'On this page'}
         </p>
-        <ul className="space-y-1 border-s border-white/[0.06]">
-          {items.map((item) => (
-            <li key={item.id}>
-              <a
-                href={`#${item.id}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className={cn(
-                  'relative block py-1.5 ps-4 text-[13px] leading-snug transition-all duration-200',
-                  item.level > 2 && 'ps-7',
-                  activeId === item.id
-                    ? 'text-violet font-medium'
-                    : 'text-white/35 hover:text-white/60',
-                )}
-              >
-                {activeId === item.id && (
-                  <motion.div
-                    layoutId="toc-indicator"
-                    className="absolute start-0 top-0 bottom-0 w-px bg-violet"
-                    transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-                  />
-                )}
-                {item.text}
-              </a>
-            </li>
-          ))}
-        </ul>
+
+        <div className="relative min-h-0 flex-1">
+          {/* Top fade */}
+          <div
+            className={cn(
+              'pointer-events-none absolute inset-x-0 top-0 z-10 h-6 bg-gradient-to-b from-[var(--background,#0a0a0a)] to-transparent transition-opacity duration-200',
+              canScrollUp ? 'opacity-100' : 'opacity-0',
+            )}
+          />
+
+          <ul
+            ref={scrollRef}
+            className="toc-scroll space-y-1 overflow-y-auto border-s border-white/[0.06] pe-1"
+            style={{ maxHeight: '100%' }}
+          >
+            {items.map((item) => (
+              <li key={item.id} data-toc-id={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className={cn(
+                    'relative block py-1.5 ps-4 text-[13px] leading-snug transition-all duration-200',
+                    item.level > 2 && 'ps-7',
+                    activeId === item.id
+                      ? 'text-violet font-medium'
+                      : 'text-white/35 hover:text-white/60',
+                  )}
+                >
+                  {activeId === item.id && (
+                    <motion.div
+                      layoutId="toc-indicator"
+                      className="absolute start-0 top-0 bottom-0 w-px bg-violet"
+                      transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+                    />
+                  )}
+                  {item.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          {/* Bottom fade */}
+          <div
+            className={cn(
+              'pointer-events-none absolute inset-x-0 bottom-0 z-10 h-6 bg-gradient-to-t from-[var(--background,#0a0a0a)] to-transparent transition-opacity duration-200',
+              canScrollDown ? 'opacity-100' : 'opacity-0',
+            )}
+          />
+        </div>
       </div>
     </nav>
   );

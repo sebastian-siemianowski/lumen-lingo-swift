@@ -58,6 +58,9 @@ export default async function TermsPage({
     { id: 'subscriptions', text: t('subscriptions.heading'), level: 2 },
     { id: 'acceptable-use', text: t('acceptableUse.heading'), level: 2 },
     { id: 'intellectual-property', text: t('intellectualProperty.heading'), level: 2 },
+    { id: 'copyright-infringement', text: t('copyrightInfringement.heading'), level: 2 },
+    { id: 'content-protection', text: t('contentProtection.heading'), level: 2 },
+    { id: 'data-export', text: t('dataExport.heading'), level: 2 },
     { id: 'user-content', text: t('userContent.heading'), level: 2 },
     { id: 'disclaimers', text: t('disclaimers.heading'), level: 2 },
     { id: 'limitation-of-liability', text: t('limitationOfLiability.heading'), level: 2 },
@@ -66,6 +69,7 @@ export default async function TermsPage({
     { id: 'termination', text: t('termination.heading'), level: 2 },
     { id: 'geographic-restrictions', text: t('geographicRestrictions.heading'), level: 2 },
     { id: 'governing-law', text: t('governingLaw.heading'), level: 2 },
+    { id: 'enforcement-remedies', text: t('enforcementRemedies.heading'), level: 2 },
     { id: 'changes', text: t('changes.heading'), level: 2 },
     { id: 'contact', text: t('contactUs.heading'), level: 2 },
   ];
@@ -166,13 +170,67 @@ export default async function TermsPage({
                     <li>{t('intellectualProperty.li1')}</li>
                     <li>{t('intellectualProperty.li2')}</li>
                     <li>{t('intellectualProperty.li3')}</li>
+                    <li>{t('intellectualProperty.li4')}</li>
+                    <li>{t('intellectualProperty.li5')}</li>
                   </ul>
+                </section>
+
+                <section id="copyright-infringement">
+                  <h2>{t('copyrightInfringement.heading')}</h2>
+                  <p>{t('copyrightInfringement.p1')}</p>
+                  <p>{t('copyrightInfringement.p2')}</p>
+                  <ul>
+                    <li>{t('copyrightInfringement.li1')}</li>
+                    <li>{t('copyrightInfringement.li2')}</li>
+                    <li>{t('copyrightInfringement.li3')}</li>
+                    <li>{t('copyrightInfringement.li4')}</li>
+                    <li>{t('copyrightInfringement.li5')}</li>
+                    <li>{t('copyrightInfringement.li6')}</li>
+                  </ul>
+                  <p>
+                    {t.rich('copyrightInfringement.p3', {
+                      email: (chunks: React.ReactNode) => (
+                        <a href="mailto:legal@lumenshore.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
+                      ),
+                    })}
+                  </p>
+                  <p>{t('copyrightInfringement.p4')}</p>
+                  <p>{t('copyrightInfringement.p5')}</p>
+                  <p>{t('copyrightInfringement.p6')}</p>
+                </section>
+
+                <section id="content-protection">
+                  <h2>{t('contentProtection.heading')}</h2>
+                  <p>{t('contentProtection.p1')}</p>
+                  <ul>
+                    <li>{t('contentProtection.li1')}</li>
+                    <li>{t('contentProtection.li2')}</li>
+                    <li>{t('contentProtection.li3')}</li>
+                  </ul>
+                  <p>{t('contentProtection.p2')}</p>
+                  <ul>
+                    <li>{t('contentProtection.li4')}</li>
+                    <li>{t('contentProtection.li5')}</li>
+                    <li>{t('contentProtection.li6')}</li>
+                  </ul>
+                </section>
+
+                <section id="data-export">
+                  <h2>{t('dataExport.heading')}</h2>
+                  <p>{t('dataExport.p1')}</p>
+                  <ul>
+                    <li>{t('dataExport.li1')}</li>
+                    <li>{t('dataExport.li2')}</li>
+                    <li>{t('dataExport.li3')}</li>
+                  </ul>
+                  <p>{t('dataExport.p2')}</p>
                 </section>
 
                 <section id="user-content">
                   <h2>{t('userContent.heading')}</h2>
                   <p>{t('userContent.p1')}</p>
-                  <p>{t.rich('userContent.p2', { privacyLink: (chunks: React.ReactNode) => <Link href="/privacy" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</Link> })}</p>
+                  <p>{t('userContent.p2UGC')}</p>
+                  <p>{t.rich('userContent.p3', { privacyLink: (chunks: React.ReactNode) => <Link href="/privacy" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</Link> })}</p>
                 </section>
 
                 <section id="disclaimers">
@@ -268,6 +326,18 @@ export default async function TermsPage({
                   <h2>{t('governingLaw.heading')}</h2>
                   <p>{t('governingLaw.p1')}</p>
                   <p>{t('governingLaw.p2')}</p>
+                </section>
+
+                <section id="enforcement-remedies">
+                  <h2>{t('enforcementRemedies.heading')}</h2>
+                  <p>{t('enforcementRemedies.p1')}</p>
+                  <p>{t('enforcementRemedies.p2')}</p>
+                  <ul>
+                    <li>{t('enforcementRemedies.li1')}</li>
+                    <li>{t('enforcementRemedies.li2')}</li>
+                    <li>{t('enforcementRemedies.li3')}</li>
+                  </ul>
+                  <p>{t('enforcementRemedies.p3')}</p>
                 </section>
 
                 <section id="changes">

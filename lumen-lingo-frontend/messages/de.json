@@ -414,7 +414,8 @@
       "cookieSettings": "Cookie-Einstellungen",
       "eula": "EULA",
       "dataRequest": "Datenauskunft",
-      "doNotSell": "Meine Daten nicht verkaufen"
+      "doNotSell": "Meine Daten nicht verkaufen",
+      "openSource": "Open-Source Licenses"
     },
     "newsletter": {
       "heading": "Bleiben Sie informiert",
@@ -1379,12 +1380,15 @@
       "p2": "Your subscription grants you a limited, non-exclusive, non-transferable, revocable licence to use the App for personal, non-commercial language-learning purposes. This licence does not include the right to:",
       "li1": "Reproduce, distribute, or publicly display any App content.",
       "li2": "Use any content for commercial purposes or in competing products.",
-      "li3": "Remove or alter any proprietary notices or labels."
+      "li3": "Remove or alter any proprietary notices or labels.",
+      "li4": "Use any automated means (including bots, scrapers, crawlers, spiders, or data-mining tools) to access, copy, monitor, or extract any content from the Service.",
+      "li5": "Create derivative works based on LumenLingo content, or reverse-engineer any aspect of the App."
     },
     "userContent": {
       "heading": "User Content & Data",
       "p1": "Your learning data (progress, preferences, practice history) is stored on your device and in your personal iCloud account. LumenShore does not claim ownership of your personal learning data.",
-      "p2": "For more details on how we handle data, please review our <privacyLink>Privacy Policy</privacyLink>."
+      "p2UGC": "If we introduce features that allow you to submit, post, or share content (such as notes, comments, or shared word lists), you retain ownership of that content but grant LumenShore Ltd a non-exclusive, worldwide, royalty-free licence to use, display, and distribute it within the Service. You may request removal of your content at any time.",
+      "p3": "For more details on how we handle data, please review our <privacyLink>Privacy Policy</privacyLink>."
     },
     "disclaimers": {
       "heading": "Disclaimers",
@@ -1467,6 +1471,49 @@
       "bullet2": "LumenShore Limited vertreibt die App nicht eigenständig in Rechtsordnungen, die britischen, US-amerikanischen oder EU-Sanktionen unterliegen.",
       "bullet3": "Wenn Sie von einer Rechtsordnung aus auf den Dienst zugreifen, in der ein solcher Zugang nach geltendem Recht verboten ist, tun Sie dies auf eigenes Risiko und sind allein für die Einhaltung der örtlichen Gesetze verantwortlich.",
       "closing": "Wir behalten uns das Recht vor, den Zugang zum Dienst in jeder Rechtsordnung einzuschränken oder zu beenden, in der wir nach eigenem Ermessen feststellen, dass die Einhaltung gesetzlicher Vorschriften eine solche Maßnahme erfordert."
+    },
+    "copyrightInfringement": {
+      "heading": "Copyright Infringement & DMCA",
+      "p1": "LumenShore Ltd respects the intellectual property rights of others and expects users to do the same. If you believe that any content available through LumenLingo infringes your copyright, you may submit a notice of claimed infringement.",
+      "p2": "Your notice must include:",
+      "li1": "A physical or electronic signature of the copyright owner or a person authorised to act on their behalf.",
+      "li2": "Identification of the copyrighted work claimed to have been infringed.",
+      "li3": "Identification of the material that is claimed to be infringing, with information reasonably sufficient to permit us to locate it.",
+      "li4": "Your contact information, including address, telephone number, and email.",
+      "li5": "A statement that you have a good-faith belief that the use of the material is not authorised by the copyright owner, its agent, or the law.",
+      "li6": "A statement, under penalty of perjury, that the information in the notice is accurate and that you are authorised to act on behalf of the copyright owner.",
+      "p3": "Send copyright infringement notices to: <email>legal@lumenshore.com</email>",
+      "p4": "LumenShore will respond to valid takedown notices in accordance with the US Digital Millennium Copyright Act (17 U.S.C. § 512) and equivalent UK and EU legislation. Repeat infringers may have their accounts terminated.",
+      "p5": "Repeat Infringer Policy: LumenShore maintains a policy to terminate, in appropriate circumstances, the accounts of users who are repeat infringers of copyright. Three or more valid infringement notices against an account within any twelve-month period will result in permanent account termination.",
+      "p6": "Counter-notification: If you believe content was removed in error, you may submit a counter-notification to legal@lumenshore.com including: (i) identification of the removed material, (ii) a statement under penalty of perjury that the removal was a mistake, (iii) your name, address, and consent to jurisdiction, and (iv) your physical or electronic signature. Counter-notifications are processed in accordance with 17 U.S.C. § 512(g)."
+    },
+    "contentProtection": {
+      "heading": "Content Protection & Anti-Scraping",
+      "p1": "You may not use any automated means — including bots, scrapers, crawlers, spiders, data-mining tools, or artificial intelligence training pipelines — to access, copy, monitor, or extract any content from the Service. Specifically:",
+      "li1": "Systematic or bulk downloading, copying, or redistribution of flashcard content, vocabulary lists, grammar explanations, example sentences, or audio files is strictly prohibited",
+      "li2": "Any automated access that exceeds reasonable human browsing patterns constitutes unauthorised use and grounds for immediate account termination",
+      "li3": "You may not compile, aggregate, or create derivative datasets from LumenLingo content for any purpose, including machine-learning model training",
+      "p2": "LumenShore employs technical protection measures to safeguard its content. You further agree that:",
+      "li4": "LumenShore employs rate limiting, access controls, and content-integrity measures; circumventing, bypassing, or disabling any of these constitutes unauthorised access",
+      "li5": "Circumventing technical protection measures may violate the UK Computer Misuse Act 1990, the US Computer Fraud and Abuse Act (18 U.S.C. § 1030), and EU Directive 2009/24/EC on the legal protection of computer programs",
+      "li6": "Automated bulk access may result in IP blocking, API key revocation, and account termination without prior notice"
+    },
+    "dataExport": {
+      "heading": "Data Export & Competitive Use Restriction",
+      "p1": "Data exported under GDPR Article 20 (data portability), the UK GDPR, or equivalent data-protection laws is provided for your personal use only. The following restrictions apply:",
+      "li1": "You may not use exported data, or any data derived from or informed by your use of the Service, to create, assist in creating, train, or improve a competing product or service",
+      "li2": "You may not licence, sell, distribute, or otherwise make exported LumenLingo content available to third parties for commercial purposes",
+      "li3": "This restriction does not limit your statutory data portability rights — it restricts only the commercial exploitation of LumenShore’s proprietary learning content accessed via your account",
+      "p2": "This clause does not apply to data you independently created or obtained outside the Service, nor does it restrict any rights that cannot lawfully be excluded."
+    },
+    "enforcementRemedies": {
+      "heading": "Enforcement & Remedies",
+      "p1": "LumenLingo’s content — including flashcard sets across 25 language pairs, grammar explanations, example sentences, and audio — constitutes a \"literary work\" and a protected \"database\" under the UK Copyright, Designs and Patents Act 1988 (CDPA) and the Copyright and Rights in Databases Regulations 1997. LumenShore asserts its moral rights of attribution and the right against derogatory treatment in respect of all original content.",
+      "p2": "You acknowledge that any breach of the Intellectual Property, Content Protection, or Data Export sections of these Terms may cause irreparable harm to LumenShore for which monetary damages would be inadequate. Accordingly:",
+      "li1": "LumenShore reserves the right to seek injunctive or other equitable relief in any court of competent jurisdiction, without the necessity of proving actual damages or posting a bond (to the extent permitted by applicable law)",
+      "li2": "LumenShore’s database right protection lasts 15 years from creation and is renewed with each substantial update to the content database",
+      "li3": "These remedies are in addition to — and not in lieu of — any other rights or remedies available at law or in equity",
+      "p3": "Nothing in this section limits any rights or remedies that LumenShore may have under applicable intellectual property, competition, or data-protection law."
     }
   },
   "Blog": {
@@ -1909,5 +1956,94 @@
     "intellectualP1": "Alle Inhalte dieser Website (Texte, Bilder, Grafiken, Logos, Icons, Software) sind Eigentum von LumenShore Limited oder deren Lizenzgebern und durch Gesetze zum Schutz geistigen Eigentums geschützt. Jede Vervielfältigung oder Darstellung, ganz oder teilweise, ohne vorherige schriftliche Zustimmung von LumenShore Limited ist untersagt.",
     "disputeHeading": "Streitbeilegung",
     "disputeP1": "Im Streitfall kann der Verbraucher die Online-Streitbeilegungsplattform der Europäischen Kommission unter https://ec.europa.eu/consumers/odr nutzen oder uns unter hello@lumenshore.com kontaktieren."
+  },
+  "CommunityGuidelines": {
+    "breadcrumb": "Community Guidelines",
+    "hero": {
+      "heading": "Community Guidelines",
+      "subtitle": "Our expectations for respectful, constructive participation in the LumenLingo community."
+    },
+    "introduction": {
+      "heading": "Introduction",
+      "p1": "LumenLingo is a language-learning community built on mutual respect, curiosity, and a shared desire to grow. These guidelines set expectations for all community interactions — whether in-app discussions, user-generated content, shared flashcard sets, or any future social features.",
+      "p2": "By using community features within LumenLingo, you agree to follow these guidelines. Violation may result in content removal, feature restrictions, or account suspension."
+    },
+    "acceptableUse": {
+      "heading": "Acceptable Use",
+      "p1": "We encourage community members to:",
+      "li1": "Share language-learning tips, vocabulary, and cultural insights",
+      "li2": "Provide constructive, respectful feedback to fellow learners",
+      "li3": "Create and share flashcard sets, mnemonics, and study aids",
+      "li4": "Participate in discussions about language, culture, and learning strategies",
+      "li5": "Report content or behaviour that violates these guidelines"
+    },
+    "prohibitedContent": {
+      "heading": "Prohibited Content & Behaviour",
+      "p1": "The following are strictly prohibited in all community spaces:",
+      "li1": "Hate speech — content targeting individuals or groups based on race, ethnicity, religion, gender, sexual orientation, disability, or national origin",
+      "li2": "Harassment — bullying, intimidation, stalking, doxxing, or unwanted contact directed at another user",
+      "li3": "Spam — unsolicited commercial messages, promotional content, chain messages, or repetitive posts that disrupt the community",
+      "li4": "Illegal content — material that violates applicable laws, including but not limited to content involving the exploitation of minors, incitement to violence, or terrorism-related content",
+      "li5": "Explicit or sexual content — pornographic material, graphic violence, or content not suitable for a general audience",
+      "li6": "Misinformation — deliberately false or misleading content about language, culture, or any other subject",
+      "li7": "Impersonation — pretending to be another user, LumenLingo staff, or any other person or entity",
+      "li8": "Intellectual property violation — sharing copyrighted material without permission, including content from textbooks, other learning platforms, or proprietary resources"
+    },
+    "contentModeration": {
+      "heading": "Content Moderation",
+      "p1": "LumenLingo uses a combination of automated and human review to enforce these guidelines:",
+      "li1": "Automated filters — machine-learning and keyword-based systems flag potentially problematic content for review before or shortly after publication",
+      "li2": "Human review — a dedicated moderation team reviews flagged content and user reports, typically within 24 hours",
+      "li3": "Proactive monitoring — we periodically review community spaces to identify emerging issues or patterns of misuse",
+      "li4": "Transparent actions — when content is removed or an account is restricted, we notify the affected user with an explanation and instructions for appeal",
+      "p2": "Our moderation decisions are guided by these guidelines, applicable law (including the EU Digital Services Act), and the principle of proportionality."
+    },
+    "reporting": {
+      "heading": "Reporting Mechanism",
+      "p1": "If you encounter content or behaviour that violates these guidelines, you can report it through:",
+      "li1": "In-app report button — available on all user-generated content (tap the three-dot menu and select 'Report')",
+      "li2": "Email — send reports to community@lumenshore.com with a description of the issue and any screenshots or links",
+      "li3": "Contact form — use our Contact page to submit a detailed report",
+      "li4": "Trusted flaggers — organisations designated under the EU Digital Services Act receive priority review for their reports",
+      "p2": "All reports are treated confidentially. We do not disclose the identity of reporters to the reported user."
+    },
+    "enforcement": {
+      "heading": "Enforcement Actions",
+      "p1": "When a violation is confirmed, LumenLingo may take one or more of the following actions, proportionate to the severity:",
+      "li1": "Warning — a private notice explaining the violation and expectations for future conduct",
+      "li2": "Content removal — the offending content is removed and the user is notified",
+      "li3": "Temporary restriction — reduced access to community features for a defined period (e.g. 7 or 30 days)",
+      "li4": "Account suspension or termination — permanent removal from the community for serious or repeated violations",
+      "p2": "Repeat violations result in escalating enforcement. Criminal activity is reported to the relevant authorities."
+    },
+    "appeals": {
+      "heading": "Appeal Process",
+      "p1": "If you believe a moderation decision was made in error, you may appeal:",
+      "li1": "Submit an appeal via email to appeals@lumenshore.com within 14 days of the enforcement action, including your account identifier and a clear explanation of why you believe the decision was incorrect",
+      "li2": "Appeals are reviewed by a moderator who was not involved in the original decision, typically within 7 business days",
+      "li3": "EU users may also refer complaints to the Digital Services Coordinator in their Member State or to a certified out-of-court dispute settlement body under DSA Article 21"
+    },
+    "ugcTerms": {
+      "heading": "User-Generated Content Terms",
+      "p1": "When you create or share content through LumenLingo (including flashcard sets, comments, translations, and study notes), the following terms apply:",
+      "li1": "You retain ownership — you remain the owner of any original content you create and share through the Service",
+      "li2": "Licence grant — by sharing content, you grant LumenShore Limited a worldwide, non-exclusive, royalty-free licence to host, display, reproduce, modify (e.g. for formatting), and distribute your content within the Service, solely for the purpose of operating and improving LumenLingo",
+      "li3": "Right to remove — LumenShore reserves the right to remove any content that violates these guidelines, our Terms of Service, or applicable law, without prior notice where urgency requires",
+      "li4": "User responsibility — you are responsible for ensuring your content does not infringe third-party intellectual property rights or violate any applicable law",
+      "li5": "Indemnification — you agree to indemnify and hold harmless LumenShore Limited from any claims arising from content you create or share through the Service"
+    },
+    "dsaCompliance": {
+      "heading": "EU Digital Services Act Compliance",
+      "p1": "In accordance with Regulation (EU) 2022/2065 (the Digital Services Act), LumenLingo as an intermediary service provider:",
+      "li1": "Maintains a single point of contact for competent authorities and users — reachable at dsa@lumenshore.com",
+      "li2": "Publishes this transparency notice as part of our Terms of Service and Community Guidelines",
+      "li3": "Provides a notice-and-action mechanism for reporting illegal content, accessible through the reporting channels described above",
+      "li4": "Issues statements of reasons when content is removed or accounts are restricted, including the legal or contractual basis and information on available redress",
+      "li5": "Publishes an annual transparency report covering content moderation actions, report volumes, and average response times, available on our corporate governance page"
+    },
+    "changes": {
+      "heading": "Changes to These Guidelines",
+      "p1": "We may update these guidelines as we introduce new community features or in response to evolving legal requirements. Material changes will be announced in-app and on our website. Continued use of community features after changes constitutes acceptance."
+    }
   }
 }

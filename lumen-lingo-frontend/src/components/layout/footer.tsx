@@ -37,6 +37,7 @@ const footerSections = [
       { href: '/cookies', key: 'cookiePolicy' },
       { href: '/accessibility', key: 'accessibility' },
       { href: '/data-request', key: 'dataRequest' },
+      { href: '/open-source', key: 'openSource' },
     ],
   },
 ];
@@ -208,7 +209,7 @@ export function Footer() {
           {/* Bottom bar */}
           <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-glass-border pt-8 sm:flex-row">
             <p className="text-xs text-foreground-muted">
-              &copy; {new Date().getFullYear()} {t('copyright')}
+              &copy; 2015&ndash;{new Date().getFullYear()} {t('copyright')}
             </p>
             <div className="flex items-center gap-4">
               <Link

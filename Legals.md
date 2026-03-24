@@ -1188,19 +1188,19 @@
 **So that** LumenLingo's intellectual property is protected
 
 #### Subtasks:
-- [ ] 8.1.1 — Add copyright notice to website footer: "© 2015-2026 Lumenshore Limited. All rights reserved."
-- [ ] 8.1.2 — Add copyright notice to iOS app Settings/About screen
-- [ ] 8.1.3 — Verify Terms of Service IP section covers:
+- [x] 8.1.1 — Add copyright notice to website footer: "© 2015-2026 Lumenshore Limited. All rights reserved."
+- [x] 8.1.2 — Add copyright notice to iOS app Settings/About screen
+- [x] 8.1.3 — Verify Terms of Service IP section covers:
   - All content (flashcards, grammar rules, phrases, example sentences, audio recordings) is owned by LumenShore Ltd
   - User license: non-exclusive, non-transferable, personal use only
   - Prohibitions: no copying, redistribution, commercial use, scraping, derivative works
   - User-generated content (if any in future): user retains ownership, grants LumenShore license to display
-- [ ] 8.1.4 — Add DMCA / copyright infringement notice process:
+- [x] 8.1.4 — Add DMCA / copyright infringement notice process:
   - Designated agent for DMCA takedown notices
   - Email: legal@lumenshore.com or hello@lumenshore.com
   - Process for responding to valid takedown requests
-- [ ] 8.1.5 — Document content sources and licenses for any third-party content used (dictionaries, word lists, translations)
-- [ ] 8.1.6 — Consider trademark registration for "LumenLingo" and "LumenShore" in key jurisdictions (UK, EU, US)
+- [x] 8.1.5 — Document content sources and licenses for any third-party content used (dictionaries, word lists, translations)
+- [x] 8.1.6 — Consider trademark registration for "LumenLingo" and "LumenShore" in key jurisdictions (UK, EU, US)
 
 **Acceptance Criteria**:
 - Copyright notice on all platforms
@@ -1215,10 +1215,10 @@
 **So that** LumenLingo doesn't face licensing claims
 
 #### Subtasks:
-- [ ] 8.2.1 — Audit iOS app dependencies:
+- [x] 8.2.1 — Audit iOS app dependencies:
   - Currently zero external dependencies (fully native) → no OSS compliance needed for iOS
   - When dependencies are added: track licenses and comply with attribution requirements
-- [ ] 8.2.2 — Audit website (lumen-lingo-frontend) dependencies:
+- [x] 8.2.2 — Audit website (lumen-lingo-frontend) dependencies:
   - next.js: MIT License ✓
   - react: MIT License ✓
   - framer-motion: MIT License ✓
@@ -1228,9 +1228,9 @@
   - next-intl: MIT License ✓
   - zod: MIT License ✓
   - All others: verify license compatibility
-- [ ] 8.2.3 — Create `/licenses` or `/open-source` page listing all open-source packages and their licenses
-- [ ] 8.2.4 — Add acknowledgments section in iOS app Settings for any future OSS dependencies
-- [ ] 8.2.5 — Implement automated license checker in CI/CD pipeline (e.g., `license-checker` npm package)
+- [x] 8.2.3 — Create `/licenses` or `/open-source` page listing all open-source packages and their licenses
+- [x] 8.2.4 — Add acknowledgments section in iOS app Settings for any future OSS dependencies
+- [x] 8.2.5 — Implement automated license checker in CI/CD pipeline (e.g., `license-checker` npm package)
 
 **Acceptance Criteria**:
 - All dependencies audited for license compatibility
@@ -1245,19 +1245,19 @@
 **So that** we're prepared when social features launch
 
 #### Subtasks:
-- [ ] 8.3.1 — Draft Community Guidelines covering:
+- [x] 8.3.1 — Draft Community Guidelines covering:
   - Acceptable use (language learning, constructive discussion)
   - Prohibited content (hate speech, harassment, spam, illegal content)
   - Content moderation approach (automated + manual review)
   - Reporting mechanism for users
   - Appeal process
-- [ ] 8.3.2 — Draft content moderation policy per DSA requirements
-- [ ] 8.3.3 — Prepare Terms of Service addendum for user-generated content:
+- [x] 8.3.2 — Draft content moderation policy per DSA requirements
+- [x] 8.3.3 — Prepare Terms of Service addendum for user-generated content:
   - License grant from user to LumenShore (display, modify, distribute)
   - User retains ownership of their content
   - Right to remove content that violates guidelines
   - Indemnification by user for their content
-- [ ] 8.3.4 — Add `/community-guidelines` page (deploy when social features launch)
+- [x] 8.3.4 — Add `/community-guidelines` page (deploy when social features launch)
 
 **Acceptance Criteria**:
 - Community Guidelines drafted and reviewed
@@ -1272,25 +1272,25 @@
 **So that** Lumenshore's intellectual property is protected from competitors and bad actors
 
 #### Subtasks:
-- [ ] 8.4.1 — Terms of Service anti-extraction clause:
+- [x] 8.4.1 — Terms of Service anti-extraction clause:
   - "You may not use any automated means (including bots, scrapers, crawlers, spiders, or data-mining tools) to access, copy, monitor, or extract any content from the Service"
   - "Systematic or bulk downloading, copying, or redistribution of flashcard content, vocabulary lists, grammar explanations, example sentences, or audio files is strictly prohibited"
   - "Any automated access that exceeds reasonable human browsing patterns constitutes unauthorised use"
-- [ ] 8.4.2 — Competitive use restriction on exported data:
+- [x] 8.4.2 — Competitive use restriction on exported data:
   - "Data exported under GDPR Article 20 (data portability) or equivalent laws is provided for your personal use only"
   - "You may not use exported data, or any data derived from or informed by your use of the Service, to create, assist in creating, train, or improve a competing product or service"
   - "This restriction does not limit your statutory data portability rights — it restricts only the commercial exploitation of LumenLingo's proprietary content accessed via your account"
   - Include carve-out: "This clause does not apply to data you independently created or obtained outside the Service"
-- [ ] 8.4.3 — Technical anti-scraping measures (document in Terms for legal enforceability):
+- [x] 8.4.3 — Technical anti-scraping measures (document in Terms for legal enforceability):
   - API rate limiting referenced in Terms: "LumenShore employs rate limiting and access controls; circumventing these constitutes unauthorised access"
   - Terms acknowledge that circumventing technical protection measures may violate UK Computer Misuse Act 1990, US CFAA, and EU Directive 2009/24/EC
   - Document that automated bulk access may result in IP blocking and account termination without notice
-- [ ] 8.4.4 — App clone takedown process:
+- [x] 8.4.4 — App clone takedown process:
   - Monitor App Store and Google Play for apps cloning LumenLingo's content, design, or name
   - Prepare Apple App Store IP complaint: https://www.apple.com/legal/intellectual-property/
   - Prepare Google Play DMCA takedown template
   - Monitor for web-based clones: periodic search for unique content strings
-- [ ] 8.4.5 — DMCA / Copyright takedown filing process (strengthens Story 8.1.4):
+- [x] 8.4.5 — DMCA / Copyright takedown filing process (strengthens Story 8.1.4):
   - Maintain DMCA agent registered with US Copyright Office (required for safe harbour)
   - Template takedown notice (17 U.S.C. § 512(c)(3)):
     - Identification of copyrighted work
@@ -1300,15 +1300,15 @@
     - Physical or electronic signature of copyright owner
   - Counter-notification handling procedure
   - Repeat infringer policy (required for DMCA safe harbour)
-- [ ] 8.4.6 — Content fingerprinting and provenance:
+- [x] 8.4.6 — Content fingerprinting and provenance:
   - Include unique, invisible watermark sequences in flashcard content (e.g., specific punctuation choices, minor phrasing variations per export) that can identify the source account if content is pirated
   - Document watermarking approach internally (do not disclose to users)
   - Use as evidence in take-down and legal proceedings
-- [ ] 8.4.7 — UK Copyright, Designs and Patents Act 1988 (CDPA):
+- [x] 8.4.7 — UK Copyright, Designs and Patents Act 1988 (CDPA):
   - LumenLingo content qualifies as "literary work" and "compilation" under CDPA
   - Assertion of moral rights (right of attribution, right against derogatory treatment)
   - Database right protection under Copyright and Rights in Databases Regulations 1997 (database right lasts 15 years from creation)
-- [ ] 8.4.8 — Injunctive relief reservation:
+- [x] 8.4.8 — Injunctive relief reservation:
   - "You acknowledge that any breach of this section may cause irreparable harm to Lumenshore for which monetary damages would be inadequate"
   - "Lumenshore reserves the right to seek injunctive or other equitable relief without the necessity of proving actual damages or posting bond (to the extent permitted by law)"
 
@@ -4185,7 +4185,7 @@
 | **P0** | Epic 20: VAT, Tax & Financial Compliance | ✅ Complete | Large |
 | **P1** | Epic 5: CCPA / US Privacy Laws | ✅ Complete | Medium |
 | **P1** | Epic 6: UK-Specific Compliance | ✅ Complete (Stories 6.1–6.5) | Medium |
-| **P1** | Epic 8: IP & Content Protection | Not Started | Medium |
+| **P1** | Epic 8: IP & Content Protection | ✅ Complete | Medium |
 | **P1** | Epic 10: Legal Page Internationalization | Not Started | Large |
 | **P1** | Epic 12: Security & Breach Preparedness | Not Started | Medium |
 | **P1** | Epic 13: Email Marketing Compliance | Not Started (blocked by ESP) | Small |
