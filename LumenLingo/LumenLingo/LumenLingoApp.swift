@@ -14,6 +14,12 @@ struct LumenLingoApp: App {
     @State private var upgradePromptManager = UpgradePromptManager()
     @State private var sessionEngine = SessionEngine()
 
+    #if DEBUG
+    @State private var authService: any AuthServiceProtocol = MockAuthService()
+    #else
+    @State private var authService: any AuthServiceProtocol = ClerkAuthService()
+    #endif
+
     init() {
         #if DEBUG
         URLProtocol.registerClass(DebugURLProtocol.self)
@@ -50,6 +56,7 @@ struct LumenLingoApp: App {
             }
             .environment(themeManager)
             .environment(tierManager)
+            .environment(\.authService, authService)
             .environment(subscriptionManager)
             .environment(practiceTimeTracker)
             .environment(networkMonitor)
@@ -57,6 +64,9 @@ struct LumenLingoApp: App {
             .environment(sessionEngine)
             .environment(\.localization, localizationManager)
             .preferredColorScheme(themeManager.colorScheme)
+            .task {
+                await authService.checkAuthState()
+            }
         }
         .modelContainer(for: [
             UserProfile.self,

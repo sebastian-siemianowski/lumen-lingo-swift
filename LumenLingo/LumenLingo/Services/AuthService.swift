@@ -1,4 +1,6 @@
 import Foundation
+import SwiftUI
+import UIKit
 
 // MARK: - Auth Provider
 
@@ -31,10 +33,17 @@ enum AuthProvider: String, CaseIterable, Identifiable, Codable, Hashable {
     }
 }
 
+// MARK: - OTP Destination
+
+enum OTPDestination: Equatable {
+    case phone(String)   // E.164 format, e.g. "+44 7700 900000"
+    case email(String)   // RFC 5322 format
+}
+
 // MARK: - Auth Error
 
 /// Error types for authentication operations.
-/// Used by both MockAuthService and the future ClerkAuthService.
+/// Used by both MockAuthService and ClerkAuthService.
 enum AuthError: Error, Equatable {
     case networkUnavailable
     case rateLimited(retryAfter: TimeInterval)
@@ -44,7 +53,42 @@ enum AuthError: Error, Equatable {
     case expiredOTP
     case clerkUnavailable
     case accountConflict
+    case useSpecificMethod
+    case notSupported
+    case cancelled
+    case clerkError(underlying: String)
     case unknown(String)
+
+    var localizedDescription: String {
+        switch self {
+        case .networkUnavailable:
+            return "No internet connection. Please check your network and try again."
+        case .rateLimited(let retryAfter):
+            return "Too many attempts. Please wait \(Int(retryAfter)) seconds and try again."
+        case .accountSuspended(let reason):
+            return "Your account has been suspended: \(reason)"
+        case .accountDeleted:
+            return "This account has been deleted."
+        case .invalidOTP:
+            return "The code you entered is incorrect. Please try again."
+        case .expiredOTP:
+            return "This code has expired. Please request a new one."
+        case .clerkUnavailable:
+            return "Authentication service is temporarily unavailable. Please try again later."
+        case .accountConflict:
+            return "This identity is already linked to another account."
+        case .useSpecificMethod:
+            return "Please use a specific sign-in method (Apple, Google, or OTP)."
+        case .notSupported:
+            return "This sign-in method is not available."
+        case .cancelled:
+            return "Sign-in was cancelled."
+        case .clerkError(let underlying):
+            return "Authentication failed: \(underlying)"
+        case .unknown(let message):
+            return message
+        }
+    }
 }
 
 // MARK: - Session Expired Reason
@@ -71,6 +115,31 @@ protocol AuthServiceProtocol: Observable, Sendable {
     func login() async throws
     func logout() async
     func checkAuthState() async
+
+    func signInWithApple() async throws
+    func signInWithGoogle(presenting: UIViewController) async throws
+    func requestOTP(to destination: OTPDestination) async throws
+    func verifyOTP(code: String) async throws
+}
+
+// MARK: - Default Implementations
+
+extension AuthServiceProtocol {
+    func signInWithApple() async throws {
+        throw AuthError.notSupported
+    }
+
+    func signInWithGoogle(presenting: UIViewController) async throws {
+        throw AuthError.notSupported
+    }
+
+    func requestOTP(to destination: OTPDestination) async throws {
+        throw AuthError.notSupported
+    }
+
+    func verifyOTP(code: String) async throws {
+        throw AuthError.notSupported
+    }
 }
 
 // MARK: - Mock Auth Service
@@ -218,5 +287,18 @@ final class MockAuthService: AuthServiceProtocol, @unchecked Sendable {
         isAuthenticated = true
         isLoading = false
         #endif
+    }
+}
+
+// MARK: - Auth Service Environment Key
+
+private struct AuthServiceKey: EnvironmentKey {
+    static let defaultValue: any AuthServiceProtocol = MockAuthService()
+}
+
+extension EnvironmentValues {
+    var authService: any AuthServiceProtocol {
+        get { self[AuthServiceKey.self] }
+        set { self[AuthServiceKey.self] = newValue }
     }
 }

@@ -11,6 +11,10 @@ LL_ENVIRONMENT = dev
 LL_API_BASE_URL = https:/$()/api-dev.lumenlingo.com
 LL_LOG_LEVEL = verbose
 
+// ─── Clerk Auth ──────────────────────────────────────────────
+CLERK_PUBLISHABLE_KEY = pk_test_PLACEHOLDER_REPLACE_WITH_REAL_KEY
+CLERK_INSTANCE_URL =
+
 // ─── Debug Settings ───────────────────────────────────────────
 SWIFT_OPTIMIZATION_LEVEL = -Onone
 DEBUG_INFORMATION_FORMAT = dwarf

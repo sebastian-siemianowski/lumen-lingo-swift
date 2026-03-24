@@ -20,6 +20,10 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>ClerkInstanceURL</key>
+	<string>$(CLERK_INSTANCE_URL)</string>
+	<key>ClerkPublishableKey</key>
+	<string>$(CLERK_PUBLISHABLE_KEY)</string>
 	<key>LLApiBaseURL</key>
 	<string>$(LL_API_BASE_URL)</string>
 	<key>LLEnvironment</key>

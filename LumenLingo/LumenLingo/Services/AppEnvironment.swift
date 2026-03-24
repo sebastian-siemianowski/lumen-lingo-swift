@@ -55,6 +55,8 @@ struct EnvironmentConfig: Sendable {
     let logLevel: LogLevel
     let bundleIdentifier: String
     let displayName: String
+    let clerkPublishableKey: String
+    let clerkInstanceURL: URL?
 
     var isDebugBuild: Bool {
         #if DEBUG
@@ -81,12 +83,27 @@ struct EnvironmentConfig: Sendable {
             ?? info["CFBundleName"] as? String
             ?? "LumenLingo"
 
+        let clerkKey = info["ClerkPublishableKey"] as? String ?? ""
+        if clerkKey.isEmpty {
+            #if DEBUG
+            fatalError("Missing CLERK_PUBLISHABLE_KEY in build configuration for environment: \(envString)")
+            #else
+            // Cannot use Log here — Log depends on EnvironmentConfig.current (circular)
+            Logger(subsystem: bundleId, category: "Auth").error("Missing CLERK_PUBLISHABLE_KEY — auth will be unavailable")
+            #endif
+        }
+
+        let clerkURLString = info["ClerkInstanceURL"] as? String ?? ""
+        let clerkInstanceURL = clerkURLString.isEmpty ? nil : URL(string: clerkURLString)
+
         return EnvironmentConfig(
             environment: environment,
             apiBaseURL: apiBaseURL,
             logLevel: logLevel,
             bundleIdentifier: bundleId,
-            displayName: name
+            displayName: name,
+            clerkPublishableKey: clerkKey,
+            clerkInstanceURL: clerkInstanceURL
         )
     }()
 }

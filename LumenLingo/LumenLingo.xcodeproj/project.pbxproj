@@ -95,6 +95,7 @@
 		5FB26168DC3D5D7E4F31A7E2 /* grammar_german_english.json in Resources */ = {isa = PBXBuildFile; fileRef = D508F16BB89B3B9C89C1BCD7 /* grammar_german_english.json */; };
 		60F70FD0BAD33EBA757BFCAA /* StarburstRingPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = CB8C0791AB4D515F992AC1E7 /* StarburstRingPreset.metal */; };
 		61636958291765DA59A50806 /* grammar_polish_french.json in Resources */ = {isa = PBXBuildFile; fileRef = 63AD997B04058E2091CC562A /* grammar_polish_french.json */; };
+		61D656FF8537D2385FB954E9 /* AuthAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F216B2CD3E54A3890B1C /* AuthAnalytics.swift */; };
 		637BD9450D9DA97AB7A865D4 /* FlashCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E4874F32867EAD578F46A /* FlashCardsView.swift */; };
 		661A719FB70972A35AD6E977 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8193CDA27C5F43BF910C5 /* LanguageSelectionView.swift */; };
 		6633EEEC1516F35A75D8040B /* Paris-Café-1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 262EF23FC7FDF13661748EC8 /* Paris-Café-1.m4a */; };
@@ -167,6 +168,7 @@
 		A597B5030071EAC72D59777A /* SolarAuroraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E0E826DB4B9AC7450DB492 /* SolarAuroraView.swift */; };
 		A6E57ECCE0761DBEDD2075CC /* TierManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EADC31DDB860FC7246935 /* TierManagerTests.swift */; };
 		A71CCAEA069D1304C4EFFF39 /* CosmicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB257B68C610CCEA553916 /* CosmicBackgroundView.swift */; };
+		A845C2A5C827198914664F12 /* ClerkAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B922AF6B99D408DE52E0D63 /* ClerkAuthService.swift */; };
 		A96ECB64AECD533AD9CE4200 /* flashcards_arabic_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 253ACC5CC16E7092400D4079 /* flashcards_arabic_english.json */; };
 		A9B6CE17AF11302C2F071C8D /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D84646F3760F4E9CCAE6B6 /* AppStrings.swift */; };
 		A9DF7EC0313E9EC8BEEDAA12 /* SolarAuroraStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = EB5EA1D2487A9E973C303FE8 /* SolarAuroraStars.metal */; };
@@ -193,6 +195,7 @@
 		B948B4AB826E5B38E0B044BE /* wordbuilder_polish_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FB2375AD490242C723FC30E /* wordbuilder_polish_ukrainian.json */; };
 		BA5B8481D3BD9E9C73C52CC8 /* FlashcardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A5EB7427BAE3106C94D4ED /* FlashcardsViewModel.swift */; };
 		BBB021509E641F28D020C46E /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91F45BE0B0F87E54E615E52 /* ProgressViewModel.swift */; };
+		BC539DEF7F308B59C3330C9B /* ClerkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2F1DE6F43DD6DECD17241B0A /* ClerkKit */; };
 		BCD7C091DEFE190310358407 /* QAPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E5F13C59DFA837F0D324B /* QAPanelView.swift */; };
 		BCDD18444DE1C80FEF877D9A /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE1A87C9FE959A341B5B7EF /* TranslationService.swift */; };
 		BD1D6890A6B4D7D9F9B3456D /* LockedJourneySectionOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E837BDCAD527DE18810EF3 /* LockedJourneySectionOverlay.swift */; };
@@ -283,6 +286,7 @@
 		082370545F169B205DEB7118 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		0902F86CEF9AE637376DB143 /* AdventureCTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureCTAButton.swift; sourceTree = "<group>"; };
 		0B6BC346843C39C8CEC01294 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		0B922AF6B99D408DE52E0D63 /* ClerkAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClerkAuthService.swift; sourceTree = "<group>"; };
 		0C637EFA05F05EEE861FA130 /* grammar_polish_arabic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_arabic.json; sourceTree = "<group>"; };
 		0C84297D92B80DD22BB1E11C /* BreathingOrbsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingOrbsSettingsView.swift; sourceTree = "<group>"; };
 		0DE6B49807212013A7E3480A /* LumenLingoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LumenLingoIcon.png; sourceTree = "<group>"; };
@@ -534,6 +538,7 @@
 		F27B4ACED23C18E53C32B300 /* BreathingOrbsLockedPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingOrbsLockedPreview.swift; sourceTree = "<group>"; };
 		F2A5EB7427BAE3106C94D4ED /* FlashcardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsViewModel.swift; sourceTree = "<group>"; };
 		F32819B82122B08BA2490CB7 /* wordbuilder_chinese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_chinese_english.json; sourceTree = "<group>"; };
+		F488F216B2CD3E54A3890B1C /* AuthAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAnalytics.swift; sourceTree = "<group>"; };
 		F829FC2D29C631AC681A340D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		F9D84646F3760F4E9CCAE6B6 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		FA63307B7ED662E74F5272BE /* Midnight-Jazz-Piano.m4a */ = {isa = PBXFileReference; path = "Midnight-Jazz-Piano.m4a"; sourceTree = "<group>"; };
@@ -542,6 +547,17 @@
 		FCAA7717377E15C1E4F98955 /* grammar_english_japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_english_japanese.json; sourceTree = "<group>"; };
 		FD6B91A1B527FBA83F1C2E25 /* MockTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTokenManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A9E4B600034563C4A6393C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC539DEF7F308B59C3330C9B /* ClerkKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0017D5437595FBF8754D4373 /* LumenLingo */ = {
@@ -1032,7 +1048,9 @@
 			children = (
 				95F5473D12BA0C8348F8BD61 /* AppEnvironment.swift */,
 				0B6BC346843C39C8CEC01294 /* AudioService.swift */,
+				F488F216B2CD3E54A3890B1C /* AuthAnalytics.swift */,
 				ACB2AC46688AFD50BFAE024B /* AuthService.swift */,
+				0B922AF6B99D408DE52E0D63 /* ClerkAuthService.swift */,
 				62C3678F93D1D997024205E2 /* ContentLoader.swift */,
 				83FFE5B4A2279AEC6A75A275 /* DataExporter.swift */,
 				CD2F384266BDC87729E97BA3 /* DebugContentController.swift */,
@@ -1251,6 +1269,7 @@
 			buildPhases = (
 				FB51D0716A3E3F5B91A445A8 /* Sources */,
 				16459C7208E32995889CED3A /* Resources */,
+				9A9E4B600034563C4A6393C4 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1258,6 +1277,7 @@
 			);
 			name = LumenLingo;
 			packageProductDependencies = (
+				2F1DE6F43DD6DECD17241B0A /* ClerkKit */,
 			);
 			productName = LumenLingo;
 			productReference = 534F80BB19C4E83CA6907874 /* LumenLingo.app */;
@@ -1305,6 +1325,9 @@
 			);
 			mainGroup = 3E59382009EA29707A881979;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				66204524C85B631EED98A571 /* XCRemoteSwiftPackageReference "clerk-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2615A92C2CF694FD9BCC87CC /* Products */;
 			projectDirPath = "";
@@ -1450,6 +1473,7 @@
 				C74569CE67466710CB768703 /* AppStrings+Ukrainian.swift in Sources */,
 				A9B6CE17AF11302C2F071C8D /* AppStrings.swift in Sources */,
 				3C903D4D3E0D7E30AF1A0FF2 /* AudioService.swift in Sources */,
+				61D656FF8537D2385FB954E9 /* AuthAnalytics.swift in Sources */,
 				B4CF6C8C81966375535DF27F /* AuthService.swift in Sources */,
 				C0651FD8C9746D52B953B5F1 /* BreathingOrbsLockedPreview.swift in Sources */,
 				AAB3EBD187F4B304EF2A471B /* BreathingOrbsSettingsView.swift in Sources */,
@@ -1458,6 +1482,7 @@
 				B08B367E63734C6253D76A0D /* CategoryViewModel.swift in Sources */,
 				FFEB34E94BF794DB93C7F83E /* CelestialLagoonPreset.metal in Sources */,
 				C63BF657373F805F4F205644 /* CelestialStars.metal in Sources */,
+				A845C2A5C827198914664F12 /* ClerkAuthService.swift in Sources */,
 				E0C7DAFA7664FA3950305C9E /* CollapsibleSection.swift in Sources */,
 				2D9C5E4E813ED3895FB28EBC /* CollapsibleSectionTheme.swift in Sources */,
 				42AB89D16F16B1C1F24BFDCE /* ConnectivitySettingsView.swift in Sources */,
@@ -1682,6 +1707,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9137F31FD8583C6952CF681B /* PreProd-Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumenLingo/LumenLingo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1713,6 +1739,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A027C75AA8DF08D073972178 /* Prod-Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumenLingo/LumenLingo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1841,6 +1868,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53F63F2A2B70237F8063C172 /* Prod-Release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumenLingo/LumenLingo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1991,6 +2019,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FC4317264EB1927EAB72088 /* UAT-Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumenLingo/LumenLingo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2124,6 +2153,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 214C76E03A5E16042A59E9DD /* Dev-Release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumenLingo/LumenLingo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2194,6 +2224,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C2D5B3F0150DC2B392ACFC14 /* Dev-Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumenLingo/LumenLingo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2208,6 +2239,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CB63DC3B2913D4BB5CC6C141 /* QA-Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumenLingo/LumenLingo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2358,6 +2390,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C594EE9EEEAEFE3C38B510F /* UAT-Release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumenLingo/LumenLingo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2389,6 +2422,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4BF9E8AEC26B2E8CE19CF09 /* PreProd-Release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumenLingo/LumenLingo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2437,6 +2471,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95FCC09C61438703625C0B4F /* QA-Release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumenLingo/LumenLingo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LumenLingo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2565,6 +2600,25 @@
 			defaultConfigurationName = "Dev-Debug";
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		66204524C85B631EED98A571 /* XCRemoteSwiftPackageReference "clerk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/clerk/clerk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F1DE6F43DD6DECD17241B0A /* ClerkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66204524C85B631EED98A571 /* XCRemoteSwiftPackageReference "clerk-ios" */;
+			productName = ClerkKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 592F503D6BFC632632A449D6 /* Project object */;
 }

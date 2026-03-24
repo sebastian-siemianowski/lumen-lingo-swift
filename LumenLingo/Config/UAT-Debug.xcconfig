@@ -11,7 +11,11 @@ LL_ENVIRONMENT = uat
 LL_API_BASE_URL = https:/$()/api-uat.lumenlingo.com
 LL_LOG_LEVEL = info
 
-// ─── Debug Settings ───────────────────────────────────────────
+// ─── Clerk Auth ──────────────────────────────────────────────
+CLERK_PUBLISHABLE_KEY = pk_test_PLACEHOLDER_REPLACE_WITH_REAL_KEY
+CLERK_INSTANCE_URL =
+
+// ─── Release Settings ───────────────────────────────────────────
 SWIFT_OPTIMIZATION_LEVEL = -Onone
 DEBUG_INFORMATION_FORMAT = dwarf
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG UAT

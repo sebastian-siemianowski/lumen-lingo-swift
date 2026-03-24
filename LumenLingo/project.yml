@@ -5,6 +5,12 @@ options:
   xcodeVersion: "26.0"
   createIntermediateGroups: true
 
+# ─── Swift Package Manager Dependencies ───────────────────────
+packages:
+  clerk-ios:
+    url: https://github.com/clerk/clerk-ios
+    from: "1.0.0"
+
 # ─── Build Configurations (10 total: 5 envs × Debug/Release) ──
 configs:
   Dev-Debug: debug
@@ -53,10 +59,14 @@ targets:
         LLEnvironment: $(LL_ENVIRONMENT)
         LLApiBaseURL: $(LL_API_BASE_URL)
         LLLogLevel: $(LL_LOG_LEVEL)
+        ClerkPublishableKey: $(CLERK_PUBLISHABLE_KEY)
+        ClerkInstanceURL: $(CLERK_INSTANCE_URL)
+    dependencies:
+      - package: clerk-ios
+        product: ClerkKit
     settings:
-      base: {}
-        # TODO: Re-enable once iCloud entitlement is provisioned (see ICloud-sync.md)
-        # CODE_SIGN_ENTITLEMENTS: LumenLingo/LumenLingo.entitlements
+      base:
+        CODE_SIGN_ENTITLEMENTS: LumenLingo/LumenLingo.entitlements
     configFiles:
       Dev-Debug: Config/Dev-Debug.xcconfig
       Dev-Release: Config/Dev-Release.xcconfig
