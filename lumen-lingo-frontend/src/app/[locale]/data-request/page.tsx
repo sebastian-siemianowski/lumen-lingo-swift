@@ -4,6 +4,7 @@ import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { BreadcrumbJsonLd } from '@/components/home';
+import { LanguageDisclaimer } from '@/components/legal';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 import { DataRequestForm } from '@/components/data-request/data-request-form';
 
@@ -79,6 +80,7 @@ export default async function DataRequestPage({
       {/* Your Rights Overview */}
       <Section className="py-8 sm:py-12">
         <Container className="max-w-3xl">
+          <LanguageDisclaimer href="/data-request" />
           <FadeIn>
             <div className="prose prose-invert prose-sm max-w-none">
               <h2>{t('overview.heading')}</h2>

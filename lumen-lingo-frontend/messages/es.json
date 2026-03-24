@@ -438,7 +438,9 @@
     "tocLabel": "On this page",
     "downloadPdf": "Download as PDF",
     "lastUpdated": "Last updated: 23 March 2026",
-    "version": "Version 2.0"
+    "version": "Version 2.0",
+    "languageDisclaimer": "Este documento está disponible en varios idiomas. En caso de conflicto o inconsistencia entre las versiones traducidas, prevalecerá la versión en inglés.",
+    "viewEnglishVersion": "Ver versión en inglés"
   },
   "Privacy": {
     "meta": {
@@ -2044,6 +2046,134 @@
     "changes": {
       "heading": "Changes to These Guidelines",
       "p1": "We may update these guidelines as we introduce new community features or in response to evolving legal requirements. Material changes will be announced in-app and on our website. Continued use of community features after changes constitutes acceptance."
+    }
+  },
+  "Accessibility": {
+    "meta": {
+      "title": "Declaración de Accesibilidad — LumenLingo",
+      "description": "Declaración de accesibilidad de LumenLingo según la Ley Europea de Accesibilidad (EAA) y WCAG 2.1 AA. Estado de conformidad, EN 301 549, limitaciones conocidas, plazos de corrección y cómo reportar problemas.",
+      "ogTitle": "Declaración de Accesibilidad — LumenLingo",
+      "ogDescription": "Nuestro compromiso con hacer el aprendizaje de idiomas accesible para todos, con detalles de conformidad EAA y plazos de corrección."
+    },
+    "breadcrumb": "Declaración de Accesibilidad",
+    "hero": {
+      "heading": "Declaración de Accesibilidad",
+      "subtitle": "El aprendizaje de idiomas debería ser para todos. Estamos comprometidos a hacer LumenLingo accesible para todos los usuarios, independientemente de sus capacidades.",
+      "lastUpdated": "Última actualización: 24 de marzo de 2026"
+    },
+    "commitment": {
+      "heading": "Nuestro Compromiso",
+      "p1": "LumenShore Ltd está comprometida con garantizar la accesibilidad digital para las personas con discapacidades. Mejoramos continuamente la experiencia del usuario para todos y aplicamos los estándares de accesibilidad relevantes tanto a nuestro sitio web como a la aplicación LumenLingo para iOS."
+    },
+    "eaaScope": {
+      "heading": "Ámbito de la Ley Europea de Accesibilidad (EAA)",
+      "p1": "La <eaaLink>Ley Europea de Accesibilidad (Directiva 2019/882)</eaaLink> entró en vigor el 28 de junio de 2025, exigiendo que los servicios digitales ofrecidos a los consumidores de la UE cumplan con los estándares de accesibilidad.",
+      "p2": "LumenLingo vende suscripciones de aprendizaje de idiomas digitales a consumidores en los Estados miembros de la UE. Como servicio de comercio electrónico con sitio web y aplicación móvil asociados, LumenLingo está dentro del ámbito de la EAA. El cumplimiento requiere satisfacer el estándar europeo armonizado <enLink>EN 301 549</enLink>, que hace referencia a WCAG 2.1 Nivel AA para contenido web y establece requisitos adicionales para aplicaciones móviles."
+    },
+    "usAccessibility": {
+      "heading": "Accesibilidad en EE. UU. (ADA y Sección 508)",
+      "p1": "Los tribunales estadounidenses interpretan cada vez más el <adaLink>Título III de la Ley de Estadounidenses con Discapacidades (ADA)</adaLink> como aplicable a los sitios web y aplicaciones móviles. Aunque la ADA no establece un estándar formal de accesibilidad web, WCAG 2.1 Nivel AA es el estándar de la industria de facto al que hace referencia el Departamento de Justicia.",
+      "p2": "LumenLingo tiene como objetivo WCAG 2.1 Nivel AA para nuestro sitio web y aplicación iOS, satisfaciendo el requisito de la ADA de acceso igualitario a los servicios digitales. Nuestro estado de conformidad, limitaciones conocidas y plazos de corrección están documentados en esta página y en nuestra <vpatLink>Plantilla Voluntaria de Accesibilidad del Producto (VPAT)</vpatLink>.",
+      "p3": "<b>La Sección 508</b> se aplica a las agencias federales de EE. UU. y sus contratistas. LumenShore Ltd actualmente no tiene contratos con agencias federales de EE. UU., por lo que la Sección 508 no es directamente aplicable. Sin embargo, nuestro objetivo de conformidad WCAG 2.1 AA cumple con el estándar técnico equivalente de la Sección 508 (que hace referencia a WCAG 2.0 Nivel AA)."
+    },
+    "conformance": {
+      "heading": "Estado de Conformidad",
+      "p1": "Las <wcagLink>Directrices de Accesibilidad para el Contenido Web (WCAG)</wcagLink> definen requisitos para diseñadores y desarrolladores para mejorar la accesibilidad para personas con discapacidades. Define tres niveles de conformidad: Nivel A, Nivel AA y Nivel AAA.",
+      "p2": "<b>lumenlingo.com</b> es parcialmente conforme con WCAG 2.1 Nivel AA y EN 301 549 v3.2.1. \"Parcialmente conforme\" significa que algunas partes del contenido no cumplen completamente con el estándar de accesibilidad. Las no conformidades conocidas se enumeran a continuación con plazos de corrección. Estamos trabajando activamente hacia la conformidad total.",
+      "p3": "<b>La aplicación LumenLingo para iOS</b> es parcialmente conforme con los requisitos de EN 301 549 para software no web (Cláusula 11). La aplicación tiene como objetivo WCAG 2.1 Nivel AA donde sea aplicable e implementa APIs de accesibilidad de la plataforma (VoiceOver, Reducir Movimiento) para las interacciones clave."
+    },
+    "measures": {
+      "heading": "Medidas que Tomamos",
+      "intro": "LumenShore toma las siguientes medidas para garantizar la accesibilidad de lumenlingo.com:",
+      "li1": "Incluir la accesibilidad como parte de nuestro proceso de diseño y desarrollo",
+      "li2": "Usar elementos HTML semánticos y landmarks ARIA para la estructura de la página",
+      "li3": "Mantener ratios de contraste de color que cumplan o superen los estándares WCAG 2.1 AA (4.5:1 para texto normal, 3:1 para texto grande)",
+      "li4": "Proporcionar indicadores de enfoque visibles en todos los elementos interactivos",
+      "li5": "Garantizar que todo el contenido sea navegable solo con el teclado",
+      "li6": "Respetar la preferencia del sistema <code>prefers-reduced-motion</code> — todas las animaciones se desactivan cuando se establece esta preferencia",
+      "li7": "Proporcionar texto alternativo significativo para imágenes y elementos decorativos",
+      "li8": "Incluir un enlace para saltar al contenido para usuarios de teclado",
+      "li9": "Probar con lectores de pantalla incluyendo VoiceOver en macOS e iOS"
+    },
+    "technologies": {
+      "heading": "Tecnologías",
+      "intro": "La accesibilidad de lumenlingo.com depende de las siguientes tecnologías:",
+      "li1": "HTML",
+      "li2": "WAI-ARIA",
+      "li3": "CSS",
+      "li4": "JavaScript",
+      "outro": "Se confía en estas tecnologías para la conformidad con los estándares de accesibilidad utilizados."
+    },
+    "assistiveTech": {
+      "heading": "Compatibilidad con Tecnología Asistiva",
+      "intro": "lumenlingo.com está diseñado para ser compatible con las siguientes tecnologías asistivas:",
+      "li1": "VoiceOver en macOS e iOS",
+      "li2": "Navegación solo con teclado en todos los navegadores principales (Safari, Chrome, Firefox, Edge)",
+      "li3": "Zoom del navegador hasta 200% sin pérdida de contenido",
+      "li4": "Modos de alto contraste y colores invertidos"
+    },
+    "knownLimitations": {
+      "heading": "Limitaciones Conocidas y Corrección",
+      "intro": "A pesar de nuestros mejores esfuerzos, algunas áreas tienen limitaciones en las que estamos trabajando activamente. De acuerdo con la EAA, enumeramos a continuación las no conformidades conocidas con plazos de corrección previstos.",
+      "websiteHeading": "Sitio web (lumenlingo.com)",
+      "websiteLi1": "<b>Carrusel de capturas de pantalla:</b> La interacción de arrastre requiere entrada táctil o de ratón. Se proporciona navegación por teclado mediante teclas de flecha como alternativa.",
+      "websiteLi1Status": "Estado: Alternativa proporcionada. No se requiere acción adicional.",
+      "websiteLi2": "<b>Efectos de glassmorfismo:</b> Los efectos visuales de desenfoque de fondo pueden no renderizarse en todos los navegadores. El contenido sigue siendo completamente legible independientemente.",
+      "websiteLi2Status": "Estado: Degradación elegante. No se requiere acción adicional.",
+      "iosHeading": "Aplicación iOS",
+      "iosLi1": "<b>Etiquetas VoiceOver (WCAG 4.1.2 — Nombre, Rol, Valor):</b> Los elementos interactivos clave (categorías, tarjetas de memoria, insignias de membresía, barra de herramientas de exportación PDF, secciones plegables) incluyen etiquetas y sugerencias de VoiceOver. Aproximadamente el 15% de las vistas tienen etiquetas de accesibilidad explícitas; el resto depende de la accesibilidad incorporada de SwiftUI para controles estándar (botones, interruptores, texto). Las vistas decorativas personalizadas (tarjetas de cristal, efectos parallax) carecen de descripciones explícitas.",
+      "iosLi1Target": "Objetivo: Q3 2026 — Agregar etiquetas VoiceOver explícitas a todas las vistas personalizadas y elementos del juego.",
+      "iosLi2": "<b>Tipo Dinámico (WCAG 1.4.4 — Redimensionar Texto):</b> La aplicación iOS aún no soporta completamente el Tipo Dinámico. Aproximadamente el 87% del texto usa tamaños fijos optimizados para el diseño glassmorfismo. Los usuarios que dependen de tamaños de texto más grandes pueden no ver todo el texto escalado. Se planifica una migración a estilos de texto escalables.",
+      "iosLi2Target": "Objetivo: Q4 2026 — Migrar a @ScaledMetric y estilos de fuente semánticos en todas las vistas.",
+      "iosLi3": "<b>Reducir Movimiento (WCAG 2.3.3 — Animación por Interacciones):</b> Todas las vistas principales con animación intensiva (volteo de tarjetas, efectos parallax, celebraciones de partículas, secciones expandir/colapsar, animaciones de exportación PDF) respetan la preferencia del sistema Reducir Movimiento. Los renderizadores de nebulosa de fondo continúan animándose como contenido puramente decorativo.",
+      "iosLi3Status": "Estado: Conforme para animaciones interactivas. Animaciones decorativas excluidas según excepción WCAG.",
+      "iosLi4": "<b>Tamaño del Objetivo (WCAG 2.5.8 — Tamaño Mínimo del Objetivo):</b> La mayoría de los objetivos interactivos cumplen el mínimo de 44×44pt. Algunos botones de iconos más pequeños en vistas secundarias pueden estar por debajo de este umbral.",
+      "iosLi4Target": "Objetivo: Q3 2026 — Auditar todos los objetivos táctiles y garantizar el mínimo de 44pt.",
+      "outro": "Estamos trabajando activamente para identificar y resolver brechas de accesibilidad. Nuestra hoja de ruta incluye auditorías trimestrales de accesibilidad (ver abajo)."
+    },
+    "alternatives": {
+      "heading": "Formas Alternativas de Acceder al Contenido",
+      "intro": "Si tiene dificultad para usar alguna parte de LumenLingo, están disponibles las siguientes alternativas:",
+      "li1": "<b>Soporte por correo electrónico:</b> Contáctenos en <emailLink>accessibility@lumenshore.com</emailLink> y le proporcionaremos el contenido que necesita en un formato accesible (texto plano, descripción de audio o diseño alternativo).",
+      "li2": "<b>Navegación por teclado:</b> Todo el contenido e interacciones del sitio web pueden accederse usando solo el teclado (Tab, Shift+Tab, Enter, Escape, teclas de flecha).",
+      "li3": "<b>Lector de pantalla:</b> El sitio web se prueba con VoiceOver. Si encuentra problemas con alguna tecnología asistiva, por favor háganoslo saber.",
+      "li4": "<b>Ajustes del navegador:</b> El sitio web soporta zoom hasta 200%, modo de alto contraste y colores invertidos."
+    },
+    "auditSchedule": {
+      "heading": "Calendario de Auditorías de Accesibilidad",
+      "intro": "Realizamos auditorías regulares de accesibilidad para mantener y mejorar el cumplimiento:",
+      "li1": "<b>Q1 (enero–marzo):</b> Auditoría completa WCAG 2.1 AA del sitio web (pruebas automatizadas y manuales)",
+      "li2": "<b>Q2 (abril–junio):</b> Auditoría de VoiceOver y Tipo Dinámico de la aplicación iOS",
+      "li3": "<b>Q3 (julio–septiembre):</b> Pruebas de lector de pantalla multiplataforma",
+      "li4": "<b>Q4 (octubre–diciembre):</b> Revisión integral anual y planificación de corrección",
+      "outro": "Los hallazgos de cada auditoría se publican en una versión actualizada de esta declaración."
+    },
+    "feedback": {
+      "heading": "Comentarios",
+      "intro": "Agradecemos sus comentarios sobre la accesibilidad de lumenlingo.com. Si encuentra barreras de accesibilidad o tiene sugerencias de mejora, contáctenos:",
+      "li1Email": "<b>Correo electrónico:</b> <emailLink>accessibility@lumenshore.com</emailLink>",
+      "li2Contact": "<b>Contacto general:</b> <contactLink>Página de contacto</contactLink>",
+      "li3Vpat": "<b>VPAT:</b> <vpatLink>Ver nuestra Plantilla Voluntaria de Accesibilidad del Producto</vpatLink>",
+      "response": "Nuestro objetivo es responder a los comentarios sobre accesibilidad dentro de 5 días hábiles. Si presenta una queja de accesibilidad, confirmaremos la recepción dentro de 2 días hábiles y proporcionaremos una respuesta sustancial — incluyendo un plan de corrección para cualquier barrera confirmada — dentro de 15 días hábiles."
+    },
+    "disproportionateBurden": {
+      "heading": "Evaluación de Carga Desproporcionada",
+      "p1": "El Artículo 14 de la Ley Europea de Accesibilidad permite a las microempresas (menos de 10 empleados y facturación anual inferior a 2 millones de euros) reclamar una exención cuando el cumplimiento suponga una \"carga desproporcionada\".",
+      "p2": "LumenShore Limited (Número de Empresa 09607326, Inglaterra y Gales) actualmente califica como microempresa. Sin embargo, no nos basamos en esta exención como defensa general. En su lugar, tomamos medidas razonables para cumplir con EN 301 549 y WCAG 2.1 AA, priorizando las mejoras de accesibilidad de mayor impacto dentro de nuestros recursos:",
+      "li1": "Acceso por teclado y lector de pantalla para todos los flujos de trabajo principales",
+      "li2": "Cumplimiento de contraste de color en temas claros y oscuros",
+      "li3": "Soporte de movimiento reducido para todas las animaciones interactivas",
+      "li4": "Calendario de auditoría trimestral con plan de corrección documentado",
+      "p3": "Donde aún no se ha logrado la conformidad total (por ejemplo, soporte completo de Tipo Dinámico en la aplicación iOS), documentamos la no conformidad arriba con un plazo de corrección. Esta evaluación se revisa anualmente junto con la auditoría de accesibilidad."
+    },
+    "enforcement": {
+      "heading": "Procedimiento de Aplicación",
+      "ukHeading": "Reino Unido",
+      "ukP1": "Si no está satisfecho con nuestra respuesta a su preocupación sobre accesibilidad, puede escalar contactando a la <ehrcLink>Comisión de Igualdad y Derechos Humanos (EHRC)</ehrcLink>.",
+      "euHeading": "Unión Europea",
+      "euP1": "Los residentes de la UE pueden contactar a la autoridad nacional de aplicación en su Estado miembro de la UE responsable de la Ley Europea de Accesibilidad. Cada Estado miembro mantiene una lista de autoridades de vigilancia del mercado designadas en virtud del Artículo 19 de la EAA.",
+      "usHeading": "Estados Unidos",
+      "usP1": "Los residentes de EE. UU. con preocupaciones sobre accesibilidad pueden presentar una queja bajo el Título III de la Ley de Estadounidenses con Discapacidades. Le animamos a contactarnos primero en <emailLink>accessibility@lumenshore.com</emailLink> para que podamos resolver el problema directamente. Nuestro <vpatLink>VPAT</vpatLink> documenta nuestro nivel actual de conformidad."
     }
   }
 }

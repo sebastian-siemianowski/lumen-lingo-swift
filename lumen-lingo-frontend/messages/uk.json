@@ -438,7 +438,9 @@
     "tocLabel": "On this page",
     "downloadPdf": "Download as PDF",
     "lastUpdated": "Last updated: 23 March 2026",
-    "version": "Version 2.0"
+    "version": "Version 2.0",
+    "languageDisclaimer": "Цей документ доступний кількома мовами. У разі будь-якого конфлікту чи невідповідності між перекладеними версіями, англійська версія має переважну силу.",
+    "viewEnglishVersion": "Переглянути англійську версію"
   },
   "Privacy": {
     "meta": {
@@ -2044,6 +2046,134 @@
     "changes": {
       "heading": "Changes to These Guidelines",
       "p1": "We may update these guidelines as we introduce new community features or in response to evolving legal requirements. Material changes will be announced in-app and on our website. Continued use of community features after changes constitutes acceptance."
+    }
+  },
+  "Accessibility": {
+    "meta": {
+      "title": "Zaява pro dostuphist — LumenLingo",
+      "description": "Zaява pro dostuphist LumenLingo vidpovidho do Yevropeyskoho aktu pro dostuphist (EAA) ta WCAG 2.1 AA. Status vidpovidnosti, EN 301 549, vidomi obmezhehnya, hrafiky vypravleh ta povidomlehnya pro problemy.",
+      "ogTitle": "Zaява pro dostuphist — LumenLingo",
+      "ogDescription": "Nashe zobovyazahnya zrobyty vyvchehnya mov dostupnym dlya vsikh, z detalyamy vidpovidnosti EAA ta hrafikamy vypravleh."
+    },
+    "breadcrumb": "Zaява pro dostuphist",
+    "hero": {
+      "heading": "Zaява pro dostuphist",
+      "subtitle": "Vyvchehnya mov maye buty dostupnym dlya vsikh. My zobovyazuyemos zrobyty LumenLingo dostupnym dlya vsikh korystuvachiv, nezalezhho vid yikhnikh mozhlyvostey.",
+      "lastUpdated": "Ostahhe onovlehnya: 24 bereznya 2026"
+    },
+    "commitment": {
+      "heading": "Nashe zobovyazahnya",
+      "p1": "LumenShore Ltd zobovyazuyetsya zabezpechuváty tsyfrovu dostuphist dlya lyudey z invalidhistyu. My postiyho pokrashchuyemo korystuvatskyy dosvid dlya vsikh ta zastosovuyemo vidpovidni standarty dostupnosti yak do nashoho veb-saytu, tak i do dodatku LumenLingo dlya iOS."
+    },
+    "eaaScope": {
+      "heading": "Sfera dii Yevropeyskoho aktu pro dostuphist (EAA)",
+      "p1": "<eaaLink>Yevropeysky akt pro dostuphist (Dyrektyva 2019/882)</eaaLink> nabrav chyhnosti 28 chervnya 2025 roku, vymahauychy vid tsyfrovykh posluh, shcho proponuyutsya spozhyvacham v YES, vidpovidnosti standartam dostupnosti.",
+      "p2": "LumenLingo prodaye tsyfrovi pidpysky na vyvchehnya mov spozhyvacham u derzhavakh-chlenakh YES. Yak servis elektronhoyi komertsiyi z suputnim veb-saytom ta mobilnym dodatkom, LumenLingo pidpadaye pid sfeру dii EAA. Vidpovidnist vymahaуe dotrymannya harmonizovanoho yevropeyskoho standartu <enLink>EN 301 549</enLink>, yaky posylayetsya na WCAG 2.1 riven AA dlya veb-kontentu ta peredbachaye dddatkovi vymohy dlya mobilnykh dodatkiv."
+    },
+    "usAccessibility": {
+      "heading": "Dostuphist u SShA (ADA ta Sektsiya 508)",
+      "p1": "Sudy SShА dedali chastishe tlumachat <adaLink>Rozdil III Zakonu pro amerikantsiv z invalidhistyu (ADA)</adaLink> yak taky, shcho zastosovuyetsya do veb-saytiv ta mobilnykh dodatkiv. Khocha ADA ne vstanhovlyuye formalnykh standartiv veb-dostupnosti, WCAG 2.1 riven AA ye de-fakto haluzevym standartom, na yaky posylayetsya Departament yustyrtsiyi.",
+      "p2": "LumenLingo oriyentuyetsya na WCAG 2.1 riven AA yak dlya nashoho veb-saytu, tak i dlya dodatku iOS, shcho vidpovidaye vymoham ADA shchodo rivnoho dostupu do tsyfrovykh posluh. Nash status vidpovidnosti, vidomi obmezhehnya ta hrafiky vypravleh zadokumentovani na tsiy storintsi ta v nashomu <vpatLink>Dobrovilnomu shabloni dostupnosti produktu (VPAT)</vpatLink>.",
+      "p3": "<b>Sektsiya 508</b> zastosovuyetsya do federalnykh ahentsiy SShA ta yikhnikh pidryadnykiv. LumenShore Ltd hа danOy moment ne ukladaye dohovoriv z federalnymy ahentsiyamy SShA, tomu Sektsiya 508 ne zastosovuyetsya bezposerednо. Prote nasha mеta vidpovidnosti WCAG 2.1 AA vidpovidaye ekvivalentnomu tekhnichnomu standartu Sektsii 508 (yaky posylayetsya na WCAG 2.0 riven AA)."
+    },
+    "conformance": {
+      "heading": "Status vidpovidnosti",
+      "p1": "<wcagLink>Nastanovy z dostupnosti veb-kontentu (WCAG)</wcagLink> vyznachayut vymohy dlya dyzayneriv ta rozrobhykiv dlya pokrashchehnya dostupnosti dlya osib z invalidhistyu. Vony vyznáchayut try rivni vidpovidnosti: riven A, riven AA ta riven AAA.",
+      "p2": "<b>lumenlingo.com</b> chastkovo vidpovidaye WCAG 2.1 riven AA ta EN 301 549 v3.2.1. \"Chastkovo vidpovidaye\" oznáchaye, shcho deyaki chastyhy kontentu ne povhistyu vidpovidayut standartu dostupnosti. Vidomi nevtdpovidnosti perelиcheni nyzhche z hratfikamy vypravleh. My aktyvno pratsyuyemo nad povhoyu vidpovidhistyu.",
+      "p3": "<b>Dodatok LumenLingo iOS</b> chastkovo vidpovidaye vymoham EN 301 549 dlya ne-veb-prohraмноhо zabespechennya (Punkt 11). Dodatok oriyentuyetsya na WCAG 2.1 riven AA de tse zastosovno ta realizuye API dostupHosti platformy (VoiceOver, Zmenshennya rukhu) dlya kluchOvykh vzayemodiy."
+    },
+    "measures": {
+      "heading": "Zakhody, yаki my vzhyvayemo",
+      "intro": "LumenShore vzhyvaye nastupni zakhody dlya zabezpechennya dostupnosti lumenlingo.com:",
+      "li1": "Intehratsiуa dostupnosti v nash protses dyzaynu ta rozrobky",
+      "li2": "Vykorystahnya semantychnykh elementiv HTML ta oriуentyriv ARIA dlya struktury storinky",
+      "li3": "Pidtrymka spivvidnosheh kontrastu koloriv, shcho vidpovidayut abo perevyshchuyut standarty WCAG 2.1 AA (4,5:1 dlya zvychaynoho tekstu, 3:1 dlya velykoho tekstu)",
+      "li4": "Nadannya vydymykh indykatoriv fokusu na vsikh interaktyvnykh elementakh",
+      "li5": "Zabezpechennya navihatsiyi po vsomu kontentu lyshe za dopomohoyu klaviatury",
+      "li6": "Povazhahnya systemhoho nalashtuvannya <code>prefers-reduced-motion</code> — vsi animatsiyi vymykayutsya, koly tse nalashtuvannya aktyvne",
+      "li7": "Nadannya zmistoohogo alternatyvnoho tekstu dlya zobrazhen ta dekoratyvnykh elementiv",
+      "li8": "Vklyuchehnya posylahnya dlya propusku do kontentu dlya korystuvachiv klaviatury",
+      "li9": "Testuvannya z ekrannymy dyktoRAmy, vklyuchayuchy VoiceOver na macOS ta iOS"
+    },
+    "technologies": {
+      "heading": "Tekhnolohiyi",
+      "intro": "Dostuphist lumenlingo.com spyrayetsya na nastupni tekhnolohiyi:",
+      "li1": "HTML",
+      "li2": "WAI-ARIA",
+      "li3": "CSS",
+      "li4": "JavaScript",
+      "outro": "Tsi tekhnolohiyi vykorystovuyutsya dlya vidpovidnosti zastosovuvahym standartam dostupnosti."
+    },
+    "assistiveTech": {
+      "heading": "Sumisnist z dopomizhnymy tekhnolohiyamy",
+      "intro": "lumenlingo.com rozrobleno dlya sumisnosti z nastupnymy dopomizhnymy tekhnolohiyamy:",
+      "li1": "VoiceOver na macOS ta iOS",
+      "li2": "Navihatsiya lyshe za dopomohoyu klaviatury v usikh osnovnykh brauzerakh (Safari, Chrome, Firefox, Edge)",
+      "li3": "Masshtabuvannya brauzera do 200% bez vtraty kontentu",
+      "li4": "Rezhymy vysokoho kontrastu ta invertovanykh koloriv"
+    },
+    "knownLimitations": {
+      "heading": "Vidomi obmezhehnya ta vypravlehnya",
+      "intro": "Nezvazhayuchy na nashi nAYkrashchi zusyllya, deyaki oblasti mayut obmezhehnya, yaki my aktyvno vypravlyayemo. Vidpovidho dо EAA, myzhche perelihuyemo vidomi nevtdpovidnosti z planoвanymy hrafikamy vyPravleh.",
+      "websiteHeading": "Veb-sayt (lumenlingo.com)",
+      "websiteLi1": "<b>Karusel skrinshotiv:</b> Vzayemodiya svaypu vymahAye dotykоoho abo myshachoho vvodu. Navihatsiya za dopomohoyu klaviatury cherez klavishi zi strIlkamy nadayetsya yak alternatyva.",
+      "websiteLi1Status": "Status: Alternatyvu nadano. Dodatkovi dii ne potribni.",
+      "websiteLi2": "<b>Efekty glassmorphism:</b> Vizualni efekty rozmyttya fonu mozhut he vidobrazhAtysya v usikh brauzerakh. Kontent zalyshayetsya povhistyu chytabelhym u vsikh vypadkakh.",
+      "websiteLi2Status": "Status: Plаvna dehradatsiya. Dodatkovi dii ne potribni.",
+      "iosHeading": "Dodatok iOS",
+      "iosLi1": "<b>Mitky VoiceOver (WCAG 4.1.2 — Imya, Rol, Znachehnya):</b> Klyuchovi interaktyvni elementy (katehoriyi, fleshkarty, beidzhi uchasnykiv, panel instrumentiv eksportu PDF, zhortani sektsiyi) mistyat mitky ta pidkaZky VoiceOver. Blyzhko 15% vyglyadiv mayut yavni mitky dostupnosti; reshta spoklAdayetsya na vbudovanu dostuphist SwiftUI dlya standаrtnykh kontroliv (knopky, peremikaKhi, tekst). Koristuvatski dekoratyvni vyhlyady (skliani kartky, efekty paralaksu) ne mayut yavnykh opysiv.",
+      "iosLi1Target": "Mеta: Q3 2026 — Dodaty yavni mitky VoiceOver do vsikh koristuvаtskykh vyglyadiv ta elementiv hry.",
+      "iosLi2": "<b>Dynamichnyy typ (WCAG 1.4.4 — Zmina rozmiru tekstu):</b> Dodatok iOS shche ne pidtrymуye povhistyu dynamichnyy typ. Blyzhko 87% tekstu vykorystovuye fiksovani rozmiry, optymizovani pid dyzayn glassmorphism. Корystuvachi, yaki poklAdayutsya na bilshi rozmiry tekstu, mozhut he bachyty масshtabuvannya vsoho tekstu. Mihratsiya na masshtabovani styli tekstu zаplanovana.",
+      "iosLi2Target": "Meta: Q4 2026 — Mihruvaty na @ScaledMetric ta semantychni styli shryftiv v usikh vyhlyadakh.",
+      "iosLi3": "<b>Zmenshennya rukhu (WCAG 2.3.3 — Animatsiya vid vzayemodii):</b> Vsi osnovni vyHlyady z intehsyvnymy animatsiyamy (perehortahnya kartok, efekty paralaksu, svyatkuvannya chastynok, sektsiyi zhortahnya/rozhortahnya, animatsiyi eksportu PDF) povazhayut systemhe nalashtuvannya Zmenshennya rukhu. Fohnovi рenderery nebulosiv prodovzhuyut animatsii yak суто dekoratyvnyy kontent.",
+      "iosLi3Status": "Status: Vidpovidaye dlya interaktyvnykh animatsiy. Dekoratyvni animatsiyi vyklyucheni na pidstavi vynуatku WCAG.",
+      "iosLi4": "<b>Rozmіr tsili (WCAG 2.5.8 — Minimalnуy rozmіr tsili):</b> Bilshist interaktyvhykh tsilEy vidpovidaye minimumu 44x44pt. Deyaki menshi knopky z ikonkamy u drihoryadnykh vyhlyadakh mozhut buty nyzhche tsoho porohu.",
+      "iosLi4Target": "Meta: Q3 2026 — Provesty audyt usikh dotуkovykh tsiley ta zabezpechyty mInimum 44pt.",
+      "outro": "My aktyvno pratsyuyemo nad identyfikatsiyeyu ta усuhehhyam prohalуn u dostupnosti. Nasha dorozhnya karta vklyuchaye shchokvartal'ni audyty dostupnosti (dyv. nyzhche)."
+    },
+    "alternatives": {
+      "heading": "Alternatyvni sposoby dostupu do kontentu",
+      "intro": "Yakshcho vy maуete trudnoshchi z korystuvahnyam bud-yakoyu chastyhOyu LumenLingo, dostupni nastupni alternatyvy:",
+      "li1": "<b>Pidtrymka elektronhoyu poshtoyu:</b> Zvyazhitsya z namy za adresoyu <emailLink>accessibility@lumenshore.com</emailLink>, i my nadamo vam potribnуy kontent u dostuphоmu formAti (zvychaynyy tekst, audio-opys abo altErnatyvnyy maket).",
+      "li2": "<b>Navihatsiya za dopomohoyu klaviatury:</b> Ves kontent ta vzayemodiyi na sajti dostupni lyshe za dopomohoyu klaviatury (Tab, Shift+Tab, Enter, Escape, klavishi zi strilkamy).",
+      "li3": "<b>Ekrannyy dyktor:</b> Sayt testuyetsya z VoiceOver. Якshcho vy zиtknetesya z problemamy z dopОmizhnoyu tekhnolohiyeyu, povidomte nas.",
+      "li4": "<b>Nalashtuvannya brauzera:</b> Sayt pidtrymuyе masshtabuvannya do 200%, rezhym vysokoho kontrastu ta invertovani kolory."
+    },
+    "auditSchedule": {
+      "heading": "Hrafik audytiv dostupnosti",
+      "intro": "My provodymo rehulуarni audyty dostupnosti dlya pidtrymky ta pokrashchennya vidpovidnosti:",
+      "li1": "<b>Q1 (sichen-berezen):</b> Povnyy audyt WCAG 2.1 AA veb-saytu (avtomatychhi ta ruchni testy)",
+      "li2": "<b>Q2 (kviten-cherven):</b> Audyt VoiceOver ta Dynamichnoho Typu dodatku iOS",
+      "li3": "<b>Q3 (lypen-veresen):</b> Krosplatformenhe testuvahnya ekrannykh dуktoriv",
+      "li4": "<b>Q4 (zhovten-hruden):</b> Shchorichnyy kompleksnyy perehlyad ta planuvannya vypravlEh",
+      "outro": "Rezultaty kozhnoho audytu publikuyutsya v onovleniy versiyi tsiyeyi zayavy."
+    },
+    "feedback": {
+      "heading": "Zvorotnyy zvyazok",
+      "intro": "My vitayemo vash zvorotnyy zvyazok shchodo dostupnosti lumenlingo.com. Yakshcho vy zitknetesya z baryeramy dostupnosti aho mayete propozyтsiyi shchodo pokrashchehnya, zvernitysya do nas:",
+      "li1Email": "<b>Elektronna poshta:</b> <emailLink>accessibility@lumenshore.com</emailLink>",
+      "li2Contact": "<b>Zahalnyy kontakt:</b> <contactLink>Storinka kontaktiv</contactLink>",
+      "li3Vpat": "<b>VPAT:</b> <vpatLink>Perehlyanаty nash Dobrovilnyy shablon dostupnosti produktu</vpatLink>",
+      "response": "My prahнemo vidpovidaty na zvorotnyy zvyazok shchodo dostupnosti protyahom 5 robochykh dniv. Yakshcho vy podayete skarhu shchodo dostupnosti, my pidtverdymo otrymannya protyahom 2 robochykh dniv ta nadamo zmistovnu vidpovid — vklyuchayuchy plan vypravleh dlya bud-yakykh pidtverdzhenykh baryeriv — protyahom 15 robochykh dniv."
+    },
+    "disproportionateBurden": {
+      "heading": "Otsinka neproporsiynoho navantazhennya",
+      "p1": "Stattya 14 Yevropeyskoho aktu pro dostuphist dozvolyaye mikropidpryyemstvam (menshe 10 pratsivnykiv ta richnyy oborot nyzhche 2 mln yevro) vymahaty zvIlhennya, koly vidpovidnist nakladaтyme neproporsiyhe navantazhennya.",
+      "p2": "LumenShore Limited (Nomer kompaniyi 09607326, Anhliya ta Uels) na danYy moment klasyfikuyetsya yak mіkropidpryyemstvo. Prote my he spyrayemosya na tse zvilnennya yak na zahalnyy zakhyyt. Natomist my vzhyvayemo rozumnykh zakhodiv dlya dotrymannya EN 301 549 ta WCAG 2.1 AA, priorytezuyuchy pokrashchehnya dostupnosti z nаybilshym vplyvom u mezhakh nashykh resursiv:",
+      "li1": "Dostup za dopomohoyu klaviatury ta ekrannoho dyktora do vsikh holovnykh robochykh protsesiv",
+      "li2": "Vidpovidnist kontrastu koloriv dlya svitloyi ta temnoyi tem",
+      "li3": "Pidtrymka zmenshennya rukhu dlya vsikh interaktyvnykh animatsiy",
+      "li4": "Shchokvartalnyy hrafik audytiv z zadokumentovahym planom vypravleh",
+      "p3": "Koly povna vidpovidhist shche ne dosyahnuta (napryklad, povna pidtrymka Dynamichnoho Typu v dodatku iOS), my dokumentuyemo nevіdpovidnist vyshche z hrafiком vypravleh. Tsya otsinka perEhlyadayetsya shchorichno odnochasno z audytom dostupnosti."
+    },
+    "enforcement": {
+      "heading": "Protsedura prymushehnya",
+      "ukHeading": "Spoluchene Korolivstvo",
+      "ukP1": "Yakshcho vy ne zadоvoleni nashoyu vidpovidyu na vashu zaнepokoyenist shchodo dostupnosti, vy mozhete eskaluvaty, zvernuvshys do <ehrcLink>Komisiyi z pytah rivnosti ta prav lyudyny (EHRC)</ehrcLink>.",
+      "euHeading": "Yevropeysky Soyuz",
+      "euP1": "Rezydenty YES mozhut zvERtAtysya do natsionalnoho orhanu prymushehnya u svoyiy derzhavi-chleni YES, vidpovidalnoho za Yevropeysky akt pro dostuphist. Perelim pryzanchehykh orhahIv nahlyadu za rynkom vedetsya kozhноyu derzhavоyu-chlenom vidpovidno do Statti 19 EAA.",
+      "usHeading": "Spolucheni Shtaty",
+      "usP1": "Rezydeнty SShA z zanepokoyehnyamy shchodo dostupnosti mozhut podaty skarhu za Rozdilom III Zakonu pro amerikantsiv z invalidhistyu. My zаохochuyemo vas spochatku zvyazatysya z namy za adresoyu <emailLink>accessibility@lumenshore.com</emailLink>, shchob my mohly vyrishyty problemu bezposerednо. Nash <vpatLink>VPAT</vpatLink> dokumentuye nash potochnyy riven vidpovidnosti."
     }
   }
 }

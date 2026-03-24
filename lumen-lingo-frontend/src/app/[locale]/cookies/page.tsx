@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
-import { LegalTOC, DownloadPDFButton } from '@/components/legal';
+import { LegalTOC, DownloadPDFButton, LanguageDisclaimer } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
@@ -97,6 +97,7 @@ export default async function CookiePolicyPage({
       {/* Content */}
       <Section className="py-8 sm:py-12 pb-20 sm:pb-28">
         <Container>
+          <LanguageDisclaimer href="/cookies" />
           <div className="mx-auto max-w-4xl xl:grid xl:grid-cols-[1fr_200px] xl:gap-12">
             <FadeIn>
               <div className="legal-prose">

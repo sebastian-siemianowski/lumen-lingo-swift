@@ -438,7 +438,9 @@
     "tocLabel": "On this page",
     "downloadPdf": "Download as PDF",
     "lastUpdated": "Last updated: 23 March 2026",
-    "version": "Version 2.0"
+    "version": "Version 2.0",
+    "languageDisclaimer": "本文档提供多种语言版本。如翻译版本之间存在任何冲突或不一致，以英文版本为准。",
+    "viewEnglishVersion": "查看英文版本"
   },
   "Privacy": {
     "meta": {
@@ -2044,6 +2046,134 @@
     "changes": {
       "heading": "Changes to These Guidelines",
       "p1": "We may update these guidelines as we introduce new community features or in response to evolving legal requirements. Material changes will be announced in-app and on our website. Continued use of community features after changes constitutes acceptance."
+    }
+  },
+  "Accessibility": {
+    "meta": {
+      "title": "无障碍声明 — LumenLingo",
+      "description": "LumenLingo 根据《欧洲无障碍法案》(EAA) 和 WCAG 2.1 AA 的无障碍声明。合规状态、EN 301 549、已知限制、修复时间表和问题报告。",
+      "ogTitle": "无障碍声明 — LumenLingo",
+      "ogDescription": "我们致力于让语言学习对所有人无障碍，包含 EAA 合规详情和修复时间表。"
+    },
+    "breadcrumb": "无障碍声明",
+    "hero": {
+      "heading": "无障碍声明",
+      "subtitle": "语言学习应该对所有人开放。我们致力于让 LumenLingo 对所有用户无障碍，无论其能力如何。",
+      "lastUpdated": "最后更新：2026年3月24日"
+    },
+    "commitment": {
+      "heading": "我们的承诺",
+      "p1": "LumenShore Ltd 致力于确保残障人士的数字无障碍。我们不断改善所有用户的体验，并将相关无障碍标准应用于我们的网站和 LumenLingo iOS 应用程序。"
+    },
+    "eaaScope": {
+      "heading": "欧洲无障碍法案 (EAA) 适用范围",
+      "p1": "<eaaLink>《欧洲无障碍法案》（指令 2019/882）</eaaLink>于2025年6月28日生效，要求向欧盟消费者提供的数字服务符合无障碍标准。",
+      "p2": "LumenLingo 向欧盟成员国消费者销售数字语言学习订阅服务。作为配有网站和移动应用程序的电子商务服务，LumenLingo 属于 EAA 的适用范围。合规要求满足欧洲协调标准 <enLink>EN 301 549</enLink>，该标准参考网页内容的 WCAG 2.1 AA 级别，并对移动应用程序提出额外要求。"
+    },
+    "usAccessibility": {
+      "heading": "美国无障碍（ADA 和第508条）",
+      "p1": "美国法院越来越多地将<adaLink>《美国残疾人法案》(ADA) 第三章</adaLink>解释为适用于网站和移动应用程序。虽然 ADA 没有规定正式的网页无障碍标准，但 WCAG 2.1 AA 级别是司法部参考的事实行业标准。",
+      "p2": "LumenLingo 的网站和 iOS 应用程序均以 WCAG 2.1 AA 级别为目标，满足 ADA 对数字服务平等访问的要求。我们的合规状态、已知限制和修复时间表记录在本页和我们的<vpatLink>自愿产品无障碍模板 (VPAT)</vpatLink>中。",
+      "p3": "<b>第508条</b>适用于美国联邦机构及其承包商。LumenShore Ltd 目前未与美国联邦机构签约，因此第508条不直接适用。但是，我们的 WCAG 2.1 AA 合规目标满足第508条的等效技术标准（参考 WCAG 2.0 AA 级别）。"
+    },
+    "conformance": {
+      "heading": "合规状态",
+      "p1": "<wcagLink>《网页内容无障碍指南》(WCAG)</wcagLink> 为设计师和开发人员定义了改善残障人士无障碍性的要求。它定义了三个合规级别：A 级、AA 级和 AAA 级。",
+      "p2": "<b>lumenlingo.com</b> 部分符合 WCAG 2.1 AA 级别和 EN 301 549 v3.2.1。\"部分符合\"意味着部分内容尚未完全符合无障碍标准。已知的不合规项列于下方，附有修复时间表。我们正在积极努力实现全面合规。",
+      "p3": "<b>LumenLingo iOS 应用程序</b>部分符合 EN 301 549 对非网页软件的要求（第11条）。该应用在适用时以 WCAG 2.1 AA 级别为目标，并为关键交互实现平台无障碍 API（VoiceOver、减少动态效果）。"
+    },
+    "measures": {
+      "heading": "我们采取的措施",
+      "intro": "LumenShore 采取以下措施确保 lumenlingo.com 的无障碍性：",
+      "li1": "将无障碍纳入我们的设计和开发流程",
+      "li2": "使用语义化 HTML 元素和 ARIA 地标进行页面结构化",
+      "li3": "维持符合或超过 WCAG 2.1 AA 标准的颜色对比度（正常文本 4.5:1，大文本 3:1）",
+      "li4": "为所有交互元素提供可见的焦点指示器",
+      "li5": "确保所有内容可仅通过键盘导航",
+      "li6": "尊重系统偏好设置 <code>prefers-reduced-motion</code> — 当此设置启用时，所有动画将被禁用",
+      "li7": "为图像和装饰元素提供有意义的替代文本",
+      "li8": "为键盘用户提供跳转到内容的链接",
+      "li9": "使用屏幕阅读器测试，包括 macOS 和 iOS 上的 VoiceOver"
+    },
+    "technologies": {
+      "heading": "技术",
+      "intro": "lumenlingo.com 的无障碍性依赖于以下技术：",
+      "li1": "HTML",
+      "li2": "WAI-ARIA",
+      "li3": "CSS",
+      "li4": "JavaScript",
+      "outro": "这些技术用于确保符合所应用的无障碍标准。"
+    },
+    "assistiveTech": {
+      "heading": "辅助技术兼容性",
+      "intro": "lumenlingo.com 设计为与以下辅助技术兼容：",
+      "li1": "macOS 和 iOS 上的 VoiceOver",
+      "li2": "所有主流浏览器（Safari、Chrome、Firefox、Edge）的纯键盘导航",
+      "li3": "浏览器缩放至200%且不丢失内容",
+      "li4": "高对比度和反色模式"
+    },
+    "knownLimitations": {
+      "heading": "已知限制与修复",
+      "intro": "尽管我们尽了最大努力，某些方面仍存在限制，我们正在积极解决。根据 EAA，以下列出已知的不合规项及计划的修复时间表。",
+      "websiteHeading": "网站 (lumenlingo.com)",
+      "websiteLi1": "<b>截图轮播：</b>滑动交互需要触摸或鼠标输入。提供箭头键键盘导航作为替代方案。",
+      "websiteLi1Status": "状态：已提供替代方案。无需额外操作。",
+      "websiteLi2": "<b>毛玻璃效果：</b>背景模糊视觉效果可能不会在所有浏览器中显示。内容在任何情况下均完全可读。",
+      "websiteLi2Status": "状态：优雅降级。无需额外操作。",
+      "iosHeading": "iOS 应用程序",
+      "iosLi1": "<b>VoiceOver 标签（WCAG 4.1.2 — 名称、角色、值）：</b>关键交互元素（分类、闪卡、会员徽章、PDF导出工具栏、可折叠部分）包含 VoiceOver 标签和提示。大约15%的视图具有明确的无障碍标签；其余依赖 SwiftUI 对标准控件（按钮、开关、文本）的内置无障碍性。自定义装饰视图（玻璃卡片、视差效果）缺少明确描述。",
+      "iosLi1Target": "目标：2026年第三季度 — 为所有自定义视图和游戏元素添加明确的 VoiceOver 标签。",
+      "iosLi2": "<b>动态字体（WCAG 1.4.4 — 文本调整大小）：</b>iOS 应用尚未完全支持动态字体。大约87%的文本使用针对毛玻璃设计优化的固定大小。依赖较大文本大小的用户可能看不到所有文本的缩放。计划迁移至可缩放文本样式。",
+      "iosLi2Target": "目标：2026年第四季度 — 在所有视图中迁移至 @ScaledMetric 和语义字体样式。",
+      "iosLi3": "<b>减少动态效果（WCAG 2.3.3 — 交互动画）：</b>所有主要的动画密集型视图（翻卡、视差效果、粒子庆祝、展开/折叠部分、PDF导出动画）均遵守系统\"减少动态效果\"设置。背景星云渲染器作为纯装饰内容继续动画。",
+      "iosLi3Status": "状态：交互动画合规。装饰动画根据 WCAG 例外排除。",
+      "iosLi4": "<b>触摸目标大小（WCAG 2.5.8 — 最小目标大小）：</b>大多数交互目标满足44×44pt最小值。次要视图中的一些较小图标按钮可能低于此阈值。",
+      "iosLi4Target": "目标：2026年第三季度 — 审核所有触摸目标并确保44pt最小值。",
+      "outro": "我们正在积极识别和解决无障碍差距。我们的路线图包括季度无障碍审核（见下文）。"
+    },
+    "alternatives": {
+      "heading": "获取内容的替代方式",
+      "intro": "如果您在使用 LumenLingo 的任何部分时遇到困难，可使用以下替代方式：",
+      "li1": "<b>邮件支持：</b>请联系 <emailLink>accessibility@lumenshore.com</emailLink>，我们将以无障碍格式（纯文本、音频描述或替代布局）提供所需内容。",
+      "li2": "<b>键盘导航：</b>网站的所有内容和交互均可仅通过键盘访问（Tab、Shift+Tab、Enter、Escape、箭头键）。",
+      "li3": "<b>屏幕阅读器：</b>网站已通过 VoiceOver 测试。如果您在使用辅助技术时遇到问题，请告知我们。",
+      "li4": "<b>浏览器调整：</b>网站支持缩放至200%、高对比度模式和反色显示。"
+    },
+    "auditSchedule": {
+      "heading": "无障碍审核时间表",
+      "intro": "我们定期进行无障碍审核以维持和改善合规性：",
+      "li1": "<b>第一季度（1月-3月）：</b>网站 WCAG 2.1 AA 全面审核（自动和手动测试）",
+      "li2": "<b>第二季度（4月-6月）：</b>iOS 应用 VoiceOver 和动态字体审核",
+      "li3": "<b>第三季度（7月-9月）：</b>跨平台屏幕阅读器测试",
+      "li4": "<b>第四季度（10月-12月）：</b>年度综合审查和修复规划",
+      "outro": "每次审核的结果将在本声明的更新版本中发布。"
+    },
+    "feedback": {
+      "heading": "反馈",
+      "intro": "我们欢迎您对 lumenlingo.com 无障碍性的反馈。如果您遇到无障碍障碍或有改进建议，请联系我们：",
+      "li1Email": "<b>邮箱：</b><emailLink>accessibility@lumenshore.com</emailLink>",
+      "li2Contact": "<b>常规联系：</b><contactLink>联系页面</contactLink>",
+      "li3Vpat": "<b>VPAT：</b><vpatLink>查看我们的自愿产品无障碍模板</vpatLink>",
+      "response": "我们力争在5个工作日内回复无障碍反馈。如果您提交无障碍投诉，我们将在2个工作日内确认收悉，并在15个工作日内提供实质性回复——包括针对已确认障碍的修复计划。"
+    },
+    "disproportionateBurden": {
+      "heading": "不成比例负担评估",
+      "p1": "《欧洲无障碍法案》第14条允许微型企业（员工少于10人且年营业额低于200万欧元）在合规造成\"不成比例负担\"时申请豁免。",
+      "p2": "LumenShore Limited（公司编号09607326，英格兰和威尔士）目前被归类为微型企业。但是，我们不将此豁免作为总体抗辩。相反，我们采取合理措施遵守 EN 301 549 和 WCAG 2.1 AA，在资源范围内优先进行影响最大的无障碍改进：",
+      "li1": "所有核心工作流程的键盘和屏幕阅读器访问",
+      "li2": "明暗主题的颜色对比度合规",
+      "li3": "所有交互动画的减少动态效果支持",
+      "li4": "带有记录修复计划的季度审核时间表",
+      "p3": "当尚未实现完全合规时（例如 iOS 应用的完整动态字体支持），我们在上方记录不合规项及修复时间表。此评估每年与无障碍审核同时审查。"
+    },
+    "enforcement": {
+      "heading": "执行程序",
+      "ukHeading": "英国",
+      "ukP1": "如果您对我们处理您的无障碍问题的回应不满意，可以联系<ehrcLink>平等与人权委员会 (EHRC)</ehrcLink>进行升级。",
+      "euHeading": "欧盟",
+      "euP1": "欧盟居民可以联系其所在欧盟成员国负责《欧洲无障碍法案》的国家执行机构。各成员国根据 EAA 第19条维护指定市场监督机构的名单。",
+      "usHeading": "美国",
+      "usP1": "有无障碍问题的美国居民可根据《美国残疾人法案》第三章提出投诉。我们鼓励您先通过 <emailLink>accessibility@lumenshore.com</emailLink> 联系我们，以便我们直接解决问题。我们的 <vpatLink>VPAT</vpatLink> 记录了当前的合规水平。"
     }
   }
 }

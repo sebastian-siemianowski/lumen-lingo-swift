@@ -1536,8 +1536,8 @@
 **So that** I can understand how my data is processed
 
 #### Subtasks:
-- [ ] 10.1.1 — Extract all Privacy Policy text into translation keys in message files
-- [ ] 10.1.2 — Translate Privacy Policy into all 10 supported locales:
+- [x] 10.1.1 — Extract all Privacy Policy text into translation keys in message files
+- [x] 10.1.2 — Translate Privacy Policy into all 10 supported locales:
   - en (English) — source ✓
   - es (Spanish)
   - fr (French)
@@ -1548,10 +1548,10 @@
   - ar (Arabic)
   - zh (Chinese)
   - uk (Ukrainian)
-- [ ] 10.1.3 — Use professional/legal translation service (not machine translation alone — legal language requires precision)
-- [ ] 10.1.4 — Add "This policy is available in [languages]. In case of conflict, the English version prevails." disclaimer
-- [ ] 10.1.5 — Ensure RTL layout works for Arabic translation
-- [ ] 10.1.6 — Update all locale JSON files in `messages/` directory
+- [x] 10.1.3 — Use professional/legal translation service (not machine translation alone — legal language requires precision)
+- [x] 10.1.4 — Add "This policy is available in [languages]. In case of conflict, the English version prevails." disclaimer
+- [x] 10.1.5 — Ensure RTL layout works for Arabic translation
+- [x] 10.1.6 — Update all locale JSON files in `messages/` directory
 
 **Acceptance Criteria**:
 - Privacy Policy available in all 10 locales
@@ -1566,11 +1566,11 @@
 **So that** I can understand the agreement I'm entering
 
 #### Subtasks:
-- [ ] 10.2.1 — Extract Terms of Service text into translation keys
-- [ ] 10.2.2 — Translate into all 10 supported locales (same list as 10.1.2)
-- [ ] 10.2.3 — Professional/legal translation review
-- [ ] 10.2.4 — Add governing law notice: "These Terms are governed by the laws of England and Wales regardless of language version"
-- [ ] 10.2.5 — Ensure subscription terms are accurately translated (pricing, auto-renewal, cancellation)
+- [x] 10.2.1 — Extract Terms of Service text into translation keys
+- [x] 10.2.2 — Translate into all 10 supported locales (same list as 10.1.2)
+- [x] 10.2.3 — Professional/legal translation review
+- [x] 10.2.4 — Add governing law notice: "These Terms are governed by the laws of England and Wales regardless of language version"
+- [x] 10.2.5 — Ensure subscription terms are accurately translated (pricing, auto-renewal, cancellation)
 
 **Acceptance Criteria**:
 - Terms available in all 10 locales
@@ -1584,11 +1584,11 @@
 **So that** I have full understanding of all policies
 
 #### Subtasks:
-- [ ] 10.3.1 — Translate Cookie Policy into all 10 locales
-- [ ] 10.3.2 — Translate EULA into all 10 locales
-- [ ] 10.3.3 — Translate cookie consent banner into all 10 locales
-- [ ] 10.3.4 — Translate Accessibility Statement into all 10 locales
-- [ ] 10.3.5 — Ensure PDF download generates correct locale version
+- [x] 10.3.1 — Translate Cookie Policy into all 10 locales
+- [x] 10.3.2 — Translate EULA into all 10 locales
+- [x] 10.3.3 — Translate cookie consent banner into all 10 locales
+- [x] 10.3.4 — Translate Accessibility Statement into all 10 locales
+- [x] 10.3.5 — Ensure PDF download generates correct locale version
 
 **Acceptance Criteria**:
 - All legal documents available in all supported locales
