@@ -40,6 +40,8 @@ struct QAPanelView: View {
 
                 tierSwitcher
 
+                revenueCatSimulation
+
                 authSimulation
 
                 featureOverrides
@@ -223,6 +225,10 @@ struct QAPanelView: View {
     }
 
     // MARK: - Feature Overrides
+
+    private var revenueCatSimulation: some View {
+        QARevenueCatSection()
+    }
 
     private var featureOverrides: some View {
         GlassPanelWrapper {

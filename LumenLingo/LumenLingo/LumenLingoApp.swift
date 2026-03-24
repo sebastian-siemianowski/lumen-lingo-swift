@@ -17,6 +17,12 @@ struct LumenLingoApp: App {
     @State private var sessionEngine = SessionEngine()
 
     #if DEBUG
+    @State private var revenueCatService: any RevenueCatServiceProtocol = MockRevenueCatService()
+    #else
+    @State private var revenueCatService: any RevenueCatServiceProtocol = RealRevenueCatService()
+    #endif
+
+    #if DEBUG
     @State private var authService: any AuthServiceProtocol = MockAuthService()
     #else
     @State private var authService: any AuthServiceProtocol = {
@@ -75,6 +81,7 @@ struct LumenLingoApp: App {
             .environment(themeManager)
             .environment(tierManager)
             .environment(\.authService, authService)
+            .environment(\.revenueCatService, revenueCatService)
             .environment(subscriptionManager)
             .environment(practiceTimeTracker)
             .environment(networkMonitor)
@@ -84,6 +91,19 @@ struct LumenLingoApp: App {
             .preferredColorScheme(themeManager.colorScheme)
             .task {
                 await authService.checkAuthState()
+            }
+            .task {
+                // Configure RevenueCat SDK on launch (no-op for mock in DEBUG)
+                if !revenueCatService.isConfigured {
+                    let apiKey = EnvironmentConfig.current.revenueCatAPIKey
+                    await revenueCatService.configure(apiKey: apiKey, appUserID: nil)
+                }
+            }
+            .task {
+                // Bridge RevenueCat customer info updates → SubscriptionManager
+                for await info in revenueCatService.customerInfoStream {
+                    subscriptionManager.handleRevenueCatCustomerInfo(info)
+                }
             }
             .task {
                 // Prune old security events on launch

@@ -57,6 +57,7 @@ struct EnvironmentConfig: Sendable {
     let displayName: String
     let clerkPublishableKey: String
     let clerkInstanceURL: URL?
+    let revenueCatAPIKey: String
 
     var isDebugBuild: Bool {
         #if DEBUG
@@ -96,6 +97,12 @@ struct EnvironmentConfig: Sendable {
         let clerkURLString = info["ClerkInstanceURL"] as? String ?? ""
         let clerkInstanceURL = clerkURLString.isEmpty ? nil : URL(string: clerkURLString)
 
+        let rcKey = info["RevenueCatAPIKey"] as? String ?? ""
+        if rcKey.isEmpty {
+            Logger(subsystem: bundleId, category: "RevenueCat")
+                .warning("Missing REVENUECAT_API_KEY in build configuration for environment: \(envString) — subscription features will be unavailable")
+        }
+
         return EnvironmentConfig(
             environment: environment,
             apiBaseURL: apiBaseURL,
@@ -103,7 +110,8 @@ struct EnvironmentConfig: Sendable {
             bundleIdentifier: bundleId,
             displayName: name,
             clerkPublishableKey: clerkKey,
-            clerkInstanceURL: clerkInstanceURL
+            clerkInstanceURL: clerkInstanceURL,
+            revenueCatAPIKey: rcKey
         )
     }()
 }

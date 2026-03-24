@@ -108,12 +108,12 @@
 
 #### Acceptance Criteria
 
-- [ ] `RevenueCat/Purchases` Swift Package is added to `project.yml` under `packages:` with the latest stable version (≥ 5.x)
-- [ ] Running `xcodegen generate` produces an `.xcodeproj` that resolves the SPM package without errors
-- [ ] The app builds successfully on all 5 scheme/environment combinations (Dev, QA, UAT, PreProd, Prod)
-- [ ] `import RevenueCatUI` and `import RevenueCat` both compile without errors in a test Swift file
+- [x] `RevenueCat/Purchases` Swift Package is added to `project.yml` under `packages:` with the latest stable version (≥ 5.x)
+- [x] Running `xcodegen generate` produces an `.xcodeproj` that resolves the SPM package without errors
+- [x] The app builds successfully on all 5 scheme/environment combinations (Dev, QA, UAT, PreProd, Prod)
+- [x] `import RevenueCatUI` and `import RevenueCat` both compile without errors in a test Swift file
 - [ ] The binary size increase from the SDK is documented (expected ~2 MB)
-- [ ] No existing unit tests break after adding the dependency
+- [x] No existing unit tests break after adding the dependency
 
 #### Technical Notes
 
@@ -147,12 +147,12 @@ targets:
 
 #### Acceptance Criteria
 
-- [ ] A new `revenueCatAPIKey` property is added to the existing `AppConfig` / environment configuration mechanism
-- [ ] Each of the 5 environments (Dev, QA, UAT, PreProd, Prod) has its own RevenueCat API key placeholder
-- [ ] Dev and QA environments point to the RevenueCat sandbox/test project
-- [ ] UAT and PreProd point to a staging RevenueCat project (or sandbox with separate app)
-- [ ] Prod points to the production RevenueCat project
-- [ ] API keys are **never** hardcoded in source files — they are read from the environment-specific configuration at runtime
+- [x] A new `revenueCatAPIKey` property is added to the existing `AppConfig` / environment configuration mechanism
+- [x] Each of the 5 environments (Dev, QA, UAT, PreProd, Prod) has its own RevenueCat API key placeholder
+- [x] Dev and QA environments point to the RevenueCat sandbox/test project
+- [x] UAT and PreProd point to a staging RevenueCat project (or sandbox with separate app)
+- [x] Prod points to the production RevenueCat project
+- [x] API keys are **never** hardcoded in source files — they are read from the environment-specific configuration at runtime
 - [ ] API keys do not appear in git history (use `.xcconfig` files that are `.gitignore`d, or build-phase injection)
 - [ ] A `README` section or inline comment explains how a new developer obtains the keys
 
@@ -176,14 +176,14 @@ targets:
 
 #### Acceptance Criteria
 
-- [ ] `Purchases.configure(withAPIKey:appUserID:)` is called once during app initialization in `LumenLingoApp.swift`
-- [ ] The `appUserID` parameter is `nil` on first launch (anonymous user) — RevenueCat generates a `$RCAnonymousID`
+- [x] `Purchases.configure(withAPIKey:appUserID:)` is called once during app initialization in `LumenLingoApp.swift`
+- [x] The `appUserID` parameter is `nil` on first launch (anonymous user) — RevenueCat generates a `$RCAnonymousID`
 - [ ] Once the user authenticates via Clerk, `Purchases.shared.logIn(clerkUserID)` is called (see Story 1.6)
-- [ ] `Purchases.logLevel` is set to `.debug` for Dev/QA builds and `.warn` for Prod
-- [ ] `Purchases.shared.delegate` is set to receive real-time `CustomerInfo` updates
-- [ ] The SDK initialisation completes before the first screen that shows subscription state is rendered
-- [ ] If the API key is missing or invalid, the app logs a non-fatal error and continues in "free tier" mode — it does **not** crash
-- [ ] StoreKit 2 is used as the underlying transaction observer (RevenueCat's default for iOS 15+)
+- [x] `Purchases.logLevel` is set to `.debug` for Dev/QA builds and `.warn` for Prod
+- [x] `Purchases.shared.delegate` is set to receive real-time `CustomerInfo` updates
+- [x] The SDK initialisation completes before the first screen that shows subscription state is rendered
+- [x] If the API key is missing or invalid, the app logs a non-fatal error and continues in "free tier" mode — it does **not** crash
+- [x] StoreKit 2 is used as the underlying transaction observer (RevenueCat's default for iOS 15+)
 
 #### Technical Notes
 
@@ -211,21 +211,21 @@ Purchases.configure(
 
 #### Acceptance Criteria
 
-- [ ] `SubscriptionManager` conforms to `PurchasesDelegate`
-- [ ] The `purchases(_:receivedUpdated:)` delegate method receives `CustomerInfo` and:
+- [x] `SubscriptionManager` conforms to `PurchasesDelegate`
+- [x] The `purchases(_:receivedUpdated:)` delegate method receives `CustomerInfo` and:
   1. Extracts active entitlements from `customerInfo.entitlements.active`
   2. Maps entitlements to the internal `MembershipTier` enum
   3. Updates `TierManager.currentTier` via the existing `syncFromSubscriptionState()` method
   4. Publishes the new state to all SwiftUI observers
-- [ ] A Combine/AsyncSequence wrapper exposes the customer info stream for consumers that prefer reactive patterns
-- [ ] The delegate handles all edge cases:
+- [x] A Combine/AsyncSequence wrapper exposes the customer info stream for consumers that prefer reactive patterns
+- [x] The delegate handles all edge cases:
   - No active entitlements → Free tier
   - Multiple active entitlements → highest tier wins (Royal > Elite > Pro)
   - Expired entitlements → demote to appropriate tier
   - Billing issue + grace period → maintain current tier with a warning flag
-- [ ] All delegate callbacks marshal to `@MainActor` before updating any `@Observable` state
-- [ ] Logging captures every `CustomerInfo` update with entitlement summary (debug builds only)
-- [ ] A unit test verifies the entitlement → tier mapping for all 5 tier states
+- [x] All delegate callbacks marshal to `@MainActor` before updating any `@Observable` state
+- [x] Logging captures every `CustomerInfo` update with entitlement summary (debug builds only)
+- [x] A unit test verifies the entitlement → tier mapping for all 5 tier states
 
 ---
 
@@ -241,13 +241,13 @@ Purchases.configure(
 
 #### Acceptance Criteria
 
-- [ ] The `Transaction.updates` / `Transaction.currentEntitlements` listener in `SubscriptionManager.swift` is removed
+- [x] The `Transaction.updates` / `Transaction.currentEntitlements` listener in `SubscriptionManager.swift` is removed
 - [ ] All `Product.purchase()` direct calls are removed or replaced with RevenueCat's `Purchases.shared.purchase(package:)` (Epic 3)
-- [ ] All `Transaction.currentEntitlements` reads are replaced with `Purchases.shared.customerInfo()` (Epic 4)
+- [x] All `Transaction.currentEntitlements` reads are replaced with `Purchases.shared.customerInfo()` (Epic 4)
 - [ ] The `SubscriptionManager.products` array (fetched via `Product.products(for:)`) is replaced with RevenueCat offerings (Epic 2)
 - [ ] No `import StoreKit` remains for purchase logic — only RevenueCat imports (StoreKit may remain for `AppStore.showManageSubscriptions()`)
 - [ ] A regression test verifies that a sandbox purchase still completes end-to-end after the migration
-- [ ] The public API surface of `SubscriptionManager` (methods called by `TierManager` and views) remains unchanged — the refactoring is internal
+- [x] The public API surface of `SubscriptionManager` (methods called by `TierManager` and views) remains unchanged — the refactoring is internal
 
 ---
 
@@ -263,22 +263,22 @@ Purchases.configure(
 
 #### Acceptance Criteria
 
-- [ ] When Clerk's `onSignIn` callback fires (user successfully authenticated), the app immediately calls `Purchases.shared.logIn(clerkUserID)` where `clerkUserID` is the Clerk `user_*` identifier
-- [ ] The RevenueCat `logIn` response includes a `created` boolean:
+- [x] When Clerk's `onSignIn` callback fires (user successfully authenticated), the app immediately calls `Purchases.shared.logIn(clerkUserID)` where `clerkUserID` is the Clerk `user_*` identifier
+- [x] The RevenueCat `logIn` response includes a `created` boolean:
   - If `true`: new RevenueCat customer created — no entitlements to merge
   - If `false`: existing customer found — entitlements are automatically restored
-- [ ] If the user was previously anonymous (browsing without signing in) and had an active subscription, RevenueCat's `TransferIfNoActiveSubscriptions` policy transfers the anonymous subscription to the Clerk user ID
-- [ ] If the Clerk user ID already has a different active subscription (e.g. from another device), the server-side transfer policy resolves the conflict — no confusing dialog is shown to the user
-- [ ] After successful `logIn`, `TierManager.syncFromSubscriptionState()` is called to update the UI to reflect the resolved entitlements
-- [ ] If the `logIn` call fails (network error), the user is still authenticated via Clerk locally; a background retry is scheduled with exponential backoff (1s, 2s, 4s, max 30s, up to 5 attempts)
-- [ ] When Clerk's `onSignOut` callback fires, the app calls `Purchases.shared.logOut()`, which resets to a new anonymous RevenueCat ID
-- [ ] Signing out does **not** revoke the subscription — signing back in with the same Clerk account restores all entitlements
-- [ ] Custom subscriber attributes are set after `logIn`:
+- [x] If the user was previously anonymous (browsing without signing in) and had an active subscription, RevenueCat's `TransferIfNoActiveSubscriptions` policy transfers the anonymous subscription to the Clerk user ID
+- [x] If the Clerk user ID already has a different active subscription (e.g. from another device), the server-side transfer policy resolves the conflict — no confusing dialog is shown to the user
+- [x] After successful `logIn`, `TierManager.syncFromSubscriptionState()` is called to update the UI to reflect the resolved entitlements
+- [x] If the `logIn` call fails (network error), the user is still authenticated via Clerk locally; a background retry is scheduled with exponential backoff (1s, 2s, 4s, max 30s, up to 5 attempts)
+- [x] When Clerk's `onSignOut` callback fires, the app calls `Purchases.shared.logOut()`, which resets to a new anonymous RevenueCat ID
+- [x] Signing out does **not** revoke the subscription — signing back in with the same Clerk account restores all entitlements
+- [x] Custom subscriber attributes are set after `logIn`:
   - `$displayName` → Clerk user's display name
   - `$email` → Clerk user's email (if available)
   - `auth_provider` → "apple" / "google" / "phone" / "email" (from Clerk session metadata)
-- [ ] A unit test verifies: anonymous → Clerk sign-in → sign-out → re-sign-in preserves entitlements
-- [ ] The bridge is implemented as a standalone `RevenueCatIdentityBridge` class (or extension on `SubscriptionManager`) to keep Clerk and RevenueCat concerns decoupled
+- [x] A unit test verifies: anonymous → Clerk sign-in → sign-out → re-sign-in preserves entitlements
+- [x] The bridge is implemented as a standalone `RevenueCatIdentityBridge` class (or extension on `SubscriptionManager`) to keep Clerk and RevenueCat concerns decoupled
 
 #### Technical Notes
 
@@ -325,7 +325,7 @@ func handleClerkSignIn(clerkUser: ClerkUser) async {
 - [ ] After expiry, `TierManager.currentTier` reverts to `.free`
 - [ ] The same round-trip is verified for Elite and Royal tiers
 - [ ] All 3 entitlements (`pro_access`, `elite_access`, `royal_access`) appear correctly in the RevenueCat dashboard
-- [ ] A documented test script (Markdown checklist) captures the exact steps and expected results for QA to repeat
+- [x] A documented test script (Markdown checklist) captures the exact steps and expected results for QA to repeat (`LumenLingo/Docs/SandboxPurchaseVerification.md`)
 
 ---
 
@@ -341,7 +341,7 @@ func handleClerkSignIn(clerkUser: ClerkUser) async {
 
 #### Acceptance Criteria
 
-- [ ] A `RevenueCatServiceProtocol` is defined with the following surface:
+- [x] A `RevenueCatServiceProtocol` is defined with the following surface:
   ```swift
   @MainActor
   protocol RevenueCatServiceProtocol: Observable {
@@ -379,8 +379,8 @@ func handleClerkSignIn(clerkUser: ClerkUser) async {
       var isSandbox: Bool { get }
   }
   ```
-- [ ] A `RealRevenueCatService` class implements the protocol by delegating to `Purchases.shared`
-- [ ] A `MockRevenueCatService` class (gated with `#if DEBUG`) implements the protocol with fully local simulation:
+- [x] A `RealRevenueCatService` class implements the protocol by delegating to `Purchases.shared`
+- [x] A `MockRevenueCatService` class (gated with `#if DEBUG`) implements the protocol with fully local simulation:
   - Stores mock offerings with 3 packages (Pro/Elite/Royal) using realistic price data
   - Stores mock `CustomerInfo` with configurable entitlements
   - Simulates purchase flow with configurable delay (200ms–2s), success, cancellation, or error outcomes
@@ -390,7 +390,7 @@ func handleClerkSignIn(clerkUser: ClerkUser) async {
   - Simulates Family Sharing entitlements
   - Stores subscriber attributes in-memory for inspection
   - All state is held in-memory — no network, no disk persistence between launches
-- [ ] The mock supports the following programmable scenarios (set via properties or methods):
+- [x] The mock supports the following programmable scenarios (set via properties or methods):
   | Scenario | Description |
   |---|---|
   | `happyPath` | Purchase succeeds after configurable delay |
@@ -406,14 +406,14 @@ func handleClerkSignIn(clerkUser: ClerkUser) async {
   | `familyShared` | Entitlement via Family Sharing (ownershipType = .familyShared) |
   | `offlineMode` | All network calls throw; returns cached data only |
   | `slowNetwork` | All operations take 3–5 seconds |
-- [ ] Service injection follows the existing `AppEnvironment` pattern:
+- [x] Service injection follows the existing `AppEnvironment` pattern:
   - Dev/QA: `MockRevenueCatService` by default (toggleable to real via QA panel)
   - UAT/PreProd: `RealRevenueCatService` by default (toggleable to mock via QA panel)
   - Prod: `RealRevenueCatService` always (no mock available)
-- [ ] The protocol is injected into all consumers via `@Environment(\RevenueCatServiceProtocol.self)` or a typed wrapper
+- [x] The protocol is injected into all consumers via `@Environment(\RevenueCatServiceProtocol.self)` or a typed wrapper
 - [ ] The existing `SubscriptionManager` is refactored to consume `RevenueCatServiceProtocol` instead of calling `Purchases.shared` directly
-- [ ] Unit tests verify: 10+ scenarios on the mock (purchase success, cancel, error, restore, tier mapping, billing failure, expiry, refund, trial, offline)
-- [ ] The mock logs all operations to an in-memory event log for debugging: `[(timestamp: Date, operation: String, result: String)]`
+- [x] Unit tests verify: 10+ scenarios on the mock (purchase success, cancel, error, restore, tier mapping, billing failure, expiry, refund, trial, offline)
+- [x] The mock logs all operations to an in-memory event log for debugging: `[(timestamp: Date, operation: String, result: String)]`
 
 #### Technical Notes
 
@@ -436,15 +436,15 @@ func handleClerkSignIn(clerkUser: ClerkUser) async {
 
 #### Acceptance Criteria
 
-- [ ] A new "RevenueCat Simulation" section is added to `QAPanelView` (following the existing section pattern)
-- [ ] The section is only visible when `#if DEBUG` and the current service is `MockRevenueCatService` (or can toggle to mock)
+- [x] A new "RevenueCat Simulation" section is added to `QAPanelView` (following the existing section pattern)
+- [x] The section is only visible when `#if DEBUG` and the current service is `MockRevenueCatService` (or can toggle to mock)
 - [ ] **Service Toggle:**
   - A toggle: "Use Mock RevenueCat" (on/off)
   - When on: all RevenueCat calls go through `MockRevenueCatService`
   - When off: all RevenueCat calls go through `RealRevenueCatService` (requires SDK to be configured)
   - Toggling shows a confirmation: "This will reset your current subscription state. Continue?"
   - The toggle state persists across app launches (UserDefaults, `#if DEBUG` only)
-- [ ] **Quick State Presets:**
+- [x] **Quick State Presets:**
   - One-tap buttons that configure the mock to a complete state:
   - "Fresh Free User" — no entitlements, anonymous
   - "Pro Subscriber" — pro_access active, monthly, renews in 25 days
@@ -459,12 +459,12 @@ func handleClerkSignIn(clerkUser: ClerkUser) async {
   - "Refunded" — entitlement revoked, was Elite
   - "Family Shared (Pro)" — pro via family sharing, not directly purchased
   - Each preset triggers the `CustomerInfo` stream, updating `TierManager` and all UI in real-time
-- [ ] **Purchase Outcome Control:**
+- [x] **Purchase Outcome Control:**
   - Segmented control: "Next Purchase: Success | Cancel | Fail | Defer"
   - When "Fail" is selected, a picker for error type: Network / Payment Declined / Unknown
   - A slider: "Purchase Delay" (0s–5s) — simulates App Store sheet response time
   - These settings affect the NEXT call to `purchase(package:)` on the mock
-- [ ] **Lifecycle Simulation:**
+- [x] **Lifecycle Simulation:**
   - "Simulate Renewal" button — triggers a renewal event on the current subscription
   - "Simulate Billing Failure" button — transitions current subscription to billing issue state
   - "Simulate Expiry" button — expires the current subscription immediately
@@ -472,21 +472,21 @@ func handleClerkSignIn(clerkUser: ClerkUser) async {
   - "Simulate Upgrade" — shows a picker (Pro/Elite/Royal) and transitions to that tier
   - "Simulate Downgrade" — equivalent but to a lower tier, takes effect at "renewal"
   - Each simulation updates `CustomerInfo` stream → `TierManager` → all UI
-- [ ] **Offering Controls:**
+- [x] **Offering Controls:**
   - "Current Offering ID" text field (defaults to "default")
   - Toggle: "Force Empty Offerings" — makes `getOfferings()` return empty (tests skeleton states)
   - Toggle: "Force Offerings Error" — makes `getOfferings()` throw (tests error banner)
   - "Reset to Default Offerings" button
-- [ ] **Network Simulation:**
+- [x] **Network Simulation:**
   - Integrates with existing `DebugNetworkController` modes for RevenueCat-specific behavior
   - Toggle: "RevenueCat Offline" — all RevenueCat calls fail with network error (independent of global network sim)
   - Slider: "RevenueCat Latency" (0–10s) — adds latency to all mock responses
-- [ ] **Event History:**
+- [x] **Event History:**
   - A scrollable log showing the last 50 mock operations: `[timestamp] purchase(pro) → success`, `[timestamp] getCustomerInfo() → cached`, etc.
   - Each entry is tappable to show full details (request parameters, response data)
   - "Clear Log" button
   - "Copy Log" button — copies formatted log to clipboard
-- [ ] **State Inspector:**
+- [x] **State Inspector:**
   - Current mock state displayed:
     - Active entitlements (list with identifiers and expiry dates)
     - Current App User ID
@@ -502,8 +502,8 @@ func handleClerkSignIn(clerkUser: ClerkUser) async {
   - All paywall and purchase UI shows a "[RC Disabled]" watermark in debug builds
   - This mode allows the team to develop and test all non-subscription features without RevenueCat being initialized at all
   - Particularly useful during early development before the SDK is fully wired up
-- [ ] All controls respect the cosmic/glass UI theme of the existing QA panel
-- [ ] VoiceOver labels are set for all controls
+- [x] All controls respect the cosmic/glass UI theme of the existing QA panel
+- [x] VoiceOver labels are set for all controls
 - [ ] The section collapses/expands following the existing `CollapsibleSection` pattern
 
 #### UX Details — For the QA Team to Fall in Love

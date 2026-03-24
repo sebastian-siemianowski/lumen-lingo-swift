@@ -15,6 +15,9 @@ LL_LOG_LEVEL = warning
 CLERK_PUBLISHABLE_KEY = pk_test_PLACEHOLDER_REPLACE_WITH_REAL_KEY
 CLERK_INSTANCE_URL =
 
+// ─── RevenueCat ──────────────────────────────────────────────
+REVENUECAT_API_KEY = appl_PLACEHOLDER_REPLACE_WITH_STAGING_KEY
+
 // ─── Release Settings ─────────────────────────────────────────
 SWIFT_OPTIMIZATION_LEVEL = -O
 SWIFT_COMPILATION_MODE = wholemodule

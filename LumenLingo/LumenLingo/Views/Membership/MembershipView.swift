@@ -90,7 +90,6 @@ struct MembershipView: View {
         }
         .task {
             await subscriptionManager.loadProducts()
-            await subscriptionManager.updateSubscriptionState()
         }
     }
 

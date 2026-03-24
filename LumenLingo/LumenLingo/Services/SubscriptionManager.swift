@@ -94,19 +94,11 @@ final class SubscriptionManager {
 
     // MARK: Internal
 
-    /// Task that listens for transaction updates.
-    private nonisolated(unsafe) var transactionListener: Task<Void, Never>?
-
     // MARK: Lifecycle
 
-    init() {
-        // Start listening for transaction updates immediately.
-        transactionListener = listenForTransactions()
-    }
-
-    deinit {
-        transactionListener?.cancel()
-    }
+    // Note: Transaction observation is now handled by RevenueCat SDK (Story 1.4/1.5).
+    // The customerInfoStream → handleRevenueCatCustomerInfo() bridge in LumenLingoApp
+    // updates subscriptionState reactively. Direct StoreKit 2 listeners are removed.
 
     // MARK: - Product Loading
 
@@ -155,7 +147,7 @@ final class SubscriptionManager {
                 let transaction = try checkVerification(verification)
                 await transaction.finish()
                 storeLog.info("Purchase successful: \(product.id)")
-                await updateSubscriptionState()
+                // State update is handled by RevenueCat customerInfoStream → handleRevenueCatCustomerInfo()
                 guard let tier = SubscriptionProductID.tier(for: product.id) else {
                     throw PurchaseError.productNotFound
                 }
@@ -184,6 +176,7 @@ final class SubscriptionManager {
     // MARK: - Restore Purchases
 
     /// Restore purchases — syncs with App Store and updates state.
+    /// State update is handled by RevenueCat customerInfoStream after sync.
     func restorePurchases() async {
         isRestoring = true
         errorMessage = nil
@@ -191,74 +184,12 @@ final class SubscriptionManager {
 
         do {
             try await AppStore.sync()
-            await updateSubscriptionState()
+            // State update handled by RevenueCat customerInfoStream → handleRevenueCatCustomerInfo()
             storeLog.info("Restore purchases completed")
         } catch {
             storeLog.error("Restore failed: \(error.localizedDescription)")
             errorMessage = error.localizedDescription
         }
-    }
-
-    // MARK: - Subscription State
-
-    /// Update subscription state by checking current entitlements.
-    func updateSubscriptionState() async {
-        var foundActiveSubscription = false
-
-        for await result in Transaction.currentEntitlements {
-            guard case .verified(let transaction) = result else { continue }
-            guard SubscriptionProductID.all.contains(transaction.productID) else { continue }
-
-            if let tier = SubscriptionProductID.tier(for: transaction.productID) {
-                if transaction.revocationDate != nil {
-                    subscriptionState = .revoked
-                    foundActiveSubscription = true
-                    storeLog.info("Subscription revoked: \(transaction.productID)")
-                } else if let expirationDate = transaction.expirationDate {
-                    if expirationDate > Date.now {
-                        // Check for grace period / billing retry
-                        if transaction.isUpgraded {
-                            // This subscription was upgraded to a higher tier — skip
-                            continue
-                        }
-                        if let renewalInfo = await renewalInfo(for: transaction.productID) {
-                            if renewalInfo.gracePeriodExpirationDate != nil {
-                                subscriptionState = .inGracePeriod(tier: tier)
-                                storeLog.info("In grace period: \(transaction.productID)")
-                            } else {
-                                subscriptionState = .subscribed(tier: tier)
-                            }
-                        } else {
-                            subscriptionState = .subscribed(tier: tier)
-                        }
-                        foundActiveSubscription = true
-                        storeLog.info("Active subscription: \(transaction.productID), expires: \(expirationDate)")
-                    }
-                }
-            }
-        }
-
-        if !foundActiveSubscription {
-            subscriptionState = .notSubscribed
-            storeLog.info("No active subscription found")
-        }
-    }
-
-    /// Get renewal info for a product ID.
-    private func renewalInfo(for productID: String) async -> Product.SubscriptionInfo.RenewalInfo? {
-        guard let product = products.first(where: { $0.id == productID }),
-              let subscription = product.subscription else { return nil }
-        do {
-            let statuses = try await subscription.status
-            for status in statuses {
-                if case .verified(let renewalInfo) = status.renewalInfo {
-                    return renewalInfo
-                }
-            }
-        } catch {
-            storeLog.error("Failed to get renewal info: \(error.localizedDescription)")
-        }
-        return nil
     }
 
     /// The currently subscribed tier, if any.
@@ -276,20 +207,6 @@ final class SubscriptionManager {
         currentSubscribedTier != nil
     }
 
-    // MARK: - Transaction Listener
-
-    /// Listen for transaction updates (renewals, refunds, Ask to Buy approvals).
-    private func listenForTransactions() -> Task<Void, Never> {
-        Task.detached { [weak self] in
-            for await result in Transaction.updates {
-                guard case .verified(let transaction) = result else { continue }
-                await transaction.finish()
-                storeLog.info("Transaction update: \(transaction.productID), action: \(transaction.productType.rawValue)")
-                await self?.updateSubscriptionState()
-            }
-        }
-    }
-
     // MARK: - Verification
 
     /// Verify a StoreKit transaction.
@@ -300,6 +217,48 @@ final class SubscriptionManager {
             throw PurchaseError.verificationFailed
         case .verified(let safe):
             return safe
+        }
+    }
+
+    // MARK: - RevenueCat CustomerInfo Bridge
+
+    /// The latest customer info received from RevenueCat.
+    private(set) var latestCustomerInfo: RCCustomerInfo?
+
+    /// Handle a CustomerInfo update from RevenueCat.
+    /// Maps entitlements → `SubscriptionState` and publishes to SwiftUI observers.
+    func handleRevenueCatCustomerInfo(_ info: RCCustomerInfo) {
+        latestCustomerInfo = info
+        let tier = info.highestActiveTier
+
+        if tier == .free {
+            if info.latestExpirationDate != nil {
+                // Had subscriptions before that have now expired
+                subscriptionState = .expired
+            } else {
+                subscriptionState = .notSubscribed
+            }
+        } else if info.isTrialActive {
+            subscriptionState = .subscribed(tier: .trial)
+        } else if info.hasBillingIssue {
+            subscriptionState = .inGracePeriod(tier: tier)
+        } else {
+            subscriptionState = .subscribed(tier: tier)
+        }
+
+        #if DEBUG
+        let entitlementKeys = info.activeEntitlements.keys.sorted().joined(separator: ", ")
+        storeLog.debug("RC CustomerInfo: tier=\(tier.rawValue), state=\(String(describing: self.subscriptionState)), entitlements=[\(entitlementKeys)]")
+        #endif
+    }
+
+    /// Start observing RevenueCat customer info updates.
+    /// Consumes the `customerInfoStream` and maps each update to internal state.
+    func startObservingRevenueCat(_ service: any RevenueCatServiceProtocol) -> Task<Void, Never> {
+        Task { [weak self] in
+            for await info in service.customerInfoStream {
+                await self?.handleRevenueCatCustomerInfo(info)
+            }
         }
     }
 
