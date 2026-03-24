@@ -3900,24 +3900,24 @@
 **So that** Lumenshore doesn't violate any trade sanctions
 
 #### Subtasks:
-- [ ] 21.1.1 — UK sanctions compliance (Sanctions and Anti-Money Laundering Act 2018):
+- [x] 21.1.1 — UK sanctions compliance (Sanctions and Anti-Money Laundering Act 2018):
   - Review OFSI (Office of Financial Sanctions Implementation) sanctions lists
   - Ensure no services provided to sanctioned individuals or entities
   - Consumer language learning app = generally exempt from most sanctions as non-strategic software
   - But must still screen for sanctioned persons if implementing real payments/accounts
-- [ ] 21.1.2 — US OFAC sanctions (relevant because Apple App Store distributes from US):
+- [x] 21.1.2 — US OFAC sanctions (relevant because Apple App Store distributes from US):
   - Apple already restricts App Store access in sanctioned countries (Cuba, Iran, North Korea, Syria, Crimea/DNR/LNR)
   - Lumenshore should not independently distribute to sanctioned territories
   - Terms of Service should describe geographic restrictions
-- [ ] 21.1.3 — EU sanctions:
+- [x] 21.1.3 — EU sanctions:
   - Similar framework — Apple handles distribution restrictions
   - Monitor EU sanctions lists for changes affecting Arabic-speaking or Ukrainian regions
-- [ ] 21.1.4 — Ukraine considerations:
+- [x] 21.1.4 — Ukraine considerations:
   - Ukraine is NOT sanctioned — services to Ukraine are legal and encouraged
   - However: Crimea, Donetsk, Luhansk regions have restricted status
   - Apple restricts App Store in these regions already
   - Document compliance approach
-- [ ] 21.1.5 — Terms of Service geographic restrictions clause:
+- [x] 21.1.5 — Terms of Service geographic restrictions clause:
   - Add: "The Service is not available in jurisdictions where prohibited by law"
   - Note: do not provide services to sanctioned countries
   - Apple's App Store Terms already handle this for iOS
@@ -3935,21 +3935,21 @@
 **So that** Lumenshore's app distribution is lawful
 
 #### Subtasks:
-- [ ] 21.2.1 — US Export Administration Regulations (EAR) — encryption:
+- [x] 21.2.1 — US Export Administration Regulations (EAR) — encryption:
   - iOS apps distributed via US App Store must comply with EAR
   - App uses HTTPS (TLS), iCloud encryption, SwiftData encryption at rest
   - These are standard encryption — generally exempt under EAR License Exception ENC
   - Self-classify encryption use in App Store Connect's export compliance section
-- [ ] 21.2.2 — App Store Connect export compliance:
+- [x] 21.2.2 — App Store Connect export compliance:
   - Answer Apple's export compliance questions accurately:
   - "Does your app use encryption?" → YES (HTTPS, iCloud)
   - "Does your app qualify for any exemptions?" → YES (standard HTTPS/TLS)
   - If using only system-provided encryption (iOS encryption, HTTPS): typically exempt
-- [ ] 21.2.3 — French import controls (historically strict on encryption):
+- [x] 21.2.3 — French import controls (historically strict on encryption):
   - France requires declaration for import of encryption software
   - Apps using standard HTTPS generally exempt
   - Document assessment
-- [ ] 21.2.4 — Document encryption audit:
+- [x] 21.2.4 — Document encryption audit:
   - List all encryption used: HTTPS/TLS, iCloud encryption, SwiftData file protection, Keychain
   - All Apple-system-provided → standard exemptions apply
 

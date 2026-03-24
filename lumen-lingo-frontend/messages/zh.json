@@ -1289,6 +1289,36 @@
       "iosAppPricingP1": "应用内购买使用Apple StoreKit显示包含当地税费的本地化价格。显示价格始终与Apple收取的金额一致。",
       "websitePricingHeading": "网站定价",
       "websitePricingP1": "网站以英镭显示含英国VAT的价格。最终价格由Apple App Store根据您的地区确定。"
+    },
+    "sanctionsCompliance": {
+      "heading": "制裁与贸易合规",
+      "intro": "LumenShore Limited是一家在英国注册的公司（公司编号 09607326），通过Apple App Store在全球范围内分发LumenLingo。我们在所有运营管辖区域均遵守适用的制裁制度。",
+      "ukHeading": "英国制裁合规",
+      "ukP1": "我们遵守2018年《制裁和反洗钱法》以及英国金融制裁实施办公室（OFSI）管理的法规。作为消费者语言学习应用程序，LumenLingo被归类为非战略软件，通常豁免于大多数贸易限制。我们审查OFSI的综合制裁名单，不会故意向受制裁个人或实体提供服务。",
+      "usHeading": "美国OFAC制裁",
+      "usP1": "由于LumenLingo通过在美国运营的Apple App Store分发，因此美国外国资产控制办公室（OFAC）制裁适用于分发。Apple已经限制了全面制裁国家的App Store访问，包括古巴、伊朗、朝鲜、叙利亚以及克里米亚、顿涅茨克和卢甘斯克地区。LumenShore不会独立向任何受制裁地区分发。",
+      "euHeading": "欧盟制裁框架",
+      "euP1": "我们监控欧盟制裁名单的变化，这些变化可能影响数字服务的提供，特别是与我们的阿拉伯语和乌克兰语用户群相关的地区。Apple App Store的分发限制符合欧盟制裁要求。我们不会向受欧盟制裁的个人或实体提供服务。",
+      "ukraineHeading": "乌克兰 — 服务可用性",
+      "ukraineP1": "乌克兰不受英国、欧盟或美国制裁。向乌克兰用户提供服务是合法的，并得到积极支持。LumenLingo提供乌克兰语语言环境和三个乌克兰语言对（UA↔EN、UA↔PL、PL→UA）。但是，克里米亚、顿涅茨克和卢甘斯克地区在多个制裁体制下处于受限状态，Apple限制了这些地区的App Store访问。",
+      "screeningHeading": "制裁筛查",
+      "screeningP1": "对于进行购买的账户用户，制裁筛查由Apple App Store在支付基础设施层面处理。Apple对Apple ID账户进行了解您的客户（KYC）检查，并限制来自受制裁地区的访问。LumenLingo不直接处理支付，而是依赖Apple的合规基础设施进行交易级别的筛查。"
+    },
+    "encryptionExport": {
+      "heading": "加密与出口管制",
+      "intro": "LumenLingo使用Apple iOS平台提供的行业标准加密技术。本节记录了我们的加密使用情况，以便透明和合规。",
+      "auditHeading": "加密审计",
+      "auditP1": "以下加密技术用于LumenLingo，均由Apple iOS平台提供：",
+      "auditLi1": "HTTPS/TLS — 所有网络通信均使用传输层安全协议保护传输中的数据",
+      "auditLi2": "iCloud加密 — 通过iCloud同步的数据使用Apple的端到端加密",
+      "auditLi3": "SwiftData文件保护 — 本地静态数据受iOS文件级加密保护",
+      "auditLi4": "钥匙串服务 — 敏感凭据存储在iOS钥匙串中，采用硬件支持的加密",
+      "earHeading": "美国出口管理条例（EAR）",
+      "earP1": "LumenLingo仅使用系统提供的标准加密（HTTPS/TLS、iCloud、iOS文件保护）。这些符合EAR许可例外ENC（第740.17节）的资格，作为使用已发布加密标准的大众市场加密软件。未实施任何专有或自定义加密算法。",
+      "frenchHeading": "法国加密进口管制",
+      "frenchP1": "法国根据ANSSI法规要求对加密软件的进口进行申报。仅使用标准HTTPS/TLS通信和系统提供的加密的应用程序通常豁免申报要求。LumenLingo仅使用Apple平台提供的加密，不实施任何自定义加密功能。",
+      "appStoreHeading": "App Store Connect出口合规",
+      "appStoreP1": "LumenLingo的出口合规通过Apple的App Store Connect进行申报。该应用使用加密（HTTPS、iCloud），但由于仅依赖系统提供的加密技术，因此符合豁免资格。"
     }
   },
   "Terms": {
@@ -1429,6 +1459,14 @@
       "refundsP1": "LumenLingo的所有应用内购买和订阅均由<b>Apple</b>作为支付提供商处理。退款请求由Apple根据其政策处理。",
       "refundsP2": "要申请退款，请访问reportaproblem.apple.com或联系Apple支持。LumenShore Ltd完全支持此流程，并将就任何退款查询与Apple合作。",
       "statutory": "<b>本条款不影响您作为消费者的法定权利。</b>如果本条款与您的法定权利之间存在任何冲突，以您的法定权利为准。"
+    },
+    "geographicRestrictions": {
+      "heading": "地理限制",
+      "intro": "由于适用的制裁法律和App Store分发政策，某些地区可能会限制访问LumenLingo：",
+      "bullet1": "LumenLingo仅通过Apple App Store分发。Apple限制了全面制裁国家的App Store访问，包括古巴、伊朗、朝鲜、叙利亚以及克里米亚、顿涅茨克和卢甘斯克地区。",
+      "bullet2": "LumenShore Limited不会独立向任何受英国、美国或欧盟制裁的管辖区分发应用程序。",
+      "bullet3": "如果您从适用法律禁止访问的管辖区访问本服务，您将自行承担风险，并对遵守当地法律承担全部责任。",
+      "closing": "我们保留权利，在我们自行判断法律合规需要采取此类行动的任何管辖区内限制或终止对服务的访问。"
     }
   },
   "Blog": {

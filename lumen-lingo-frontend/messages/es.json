@@ -1289,6 +1289,36 @@
       "iosAppPricingP1": "Las compras integradas utilizan Apple StoreKit con precios localizados que incluyen impuestos locales. El precio mostrado siempre coincide con lo que cobra Apple.",
       "websitePricingHeading": "Precios del sitio web",
       "websitePricingP1": "Nuestro sitio muestra precios en GBP con IVA incluido. El precio final lo determina la App Store de Apple según su ubicación."
+    },
+    "sanctionsCompliance": {
+      "heading": "Sanciones y cumplimiento comercial",
+      "intro": "LumenShore Limited es una empresa constituida en el Reino Unido (N.º de empresa 09607326) que distribuye LumenLingo a nivel mundial a través de la App Store de Apple. Mantenemos el cumplimiento de los regímenes de sanciones aplicables en todas las jurisdicciones en las que operamos.",
+      "ukHeading": "Cumplimiento de sanciones del Reino Unido",
+      "ukP1": "Cumplimos con la Ley de Sanciones y Prevención del Blanqueo de Capitales de 2018 y las regulaciones administradas por la Oficina de Implementación de Sanciones Financieras (OFSI). Como aplicación de aprendizaje de idiomas para consumidores, LumenLingo está clasificada como software no estratégico y generalmente está exenta de la mayoría de las restricciones comerciales. Revisamos las listas consolidadas de sanciones de la OFSI y no proporcionamos servicios a sabiendas a personas o entidades sancionadas.",
+      "usHeading": "Sanciones OFAC de EE. UU.",
+      "usP1": "Dado que LumenLingo se distribuye a través de la App Store de Apple, que opera desde Estados Unidos, se aplican las sanciones de la Oficina de Control de Activos Extranjeros (OFAC). Apple ya restringe el acceso a la App Store en países sujetos a sanciones integrales, incluyendo Cuba, Irán, Corea del Norte, Siria y las regiones de Crimea, Donetsk y Lugansk. LumenShore no distribuye de forma independiente a ningún territorio sancionado.",
+      "euHeading": "Marco de sanciones de la UE",
+      "euP1": "Monitorizamos las listas de sanciones de la UE para detectar cambios que puedan afectar la prestación de servicios digitales, particularmente en regiones relevantes para nuestra base de usuarios de habla árabe y ucraniana. Las restricciones de distribución de la App Store de Apple se alinean con los requisitos de sanciones de la UE. No proporcionamos servicios a personas o entidades sancionadas por la UE.",
+      "ukraineHeading": "Ucrania — Disponibilidad del servicio",
+      "ukraineP1": "Ucrania no está sujeta a sanciones del Reino Unido, la UE o EE. UU. Los servicios a usuarios ucranianos son legales y se apoyan activamente. LumenLingo proporciona una configuración regional ucraniana y tres pares de idiomas ucranianos (UA↔EN, UA↔PL, PL→UA). Sin embargo, las regiones de Crimea, Donetsk y Lugansk tienen estado restringido bajo múltiples regímenes de sanciones, y Apple restringe el acceso a la App Store en estas regiones.",
+      "screeningHeading": "Verificación de sanciones",
+      "screeningP1": "Para usuarios con cuenta que realizan compras, la verificación de sanciones se gestiona a nivel de infraestructura de pago por la App Store de Apple. Apple realiza verificaciones de Conozca a su Cliente (KYC) en las cuentas de Apple ID y restringe el acceso desde territorios sancionados. LumenLingo no procesa pagos directamente y depende de la infraestructura de cumplimiento de Apple para la verificación a nivel de transacción."
+    },
+    "encryptionExport": {
+      "heading": "Cifrado y controles de exportación",
+      "intro": "LumenLingo utiliza tecnologías de cifrado estándar de la industria proporcionadas por la plataforma Apple iOS. Esta sección documenta nuestro uso de cifrado para transparencia y cumplimiento normativo.",
+      "auditHeading": "Auditoría de cifrado",
+      "auditP1": "Las siguientes tecnologías de cifrado se utilizan en LumenLingo, todas proporcionadas por la plataforma Apple iOS:",
+      "auditLi1": "HTTPS/TLS — Todas las comunicaciones de red utilizan Transport Layer Security para datos en tránsito",
+      "auditLi2": "Cifrado de iCloud — Los datos sincronizados a través de iCloud utilizan el cifrado de extremo a extremo de Apple",
+      "auditLi3": "Protección de archivos SwiftData — Los datos locales en reposo están protegidos por el cifrado a nivel de archivo de iOS",
+      "auditLi4": "Servicios de llavero — Las credenciales sensibles se almacenan en el llavero de iOS con cifrado respaldado por hardware",
+      "earHeading": "Regulaciones de Administración de Exportaciones de EE. UU. (EAR)",
+      "earP1": "LumenLingo utiliza únicamente cifrado estándar proporcionado por el sistema (HTTPS/TLS, iCloud, protección de archivos iOS). Estos califican para la Excepción de Licencia EAR ENC (Sección 740.17) como software de cifrado de mercado masivo que utiliza estándares criptográficos publicados. No se implementan algoritmos de cifrado propietarios o personalizados.",
+      "frenchHeading": "Controles de importación de cifrado francés",
+      "frenchP1": "Francia requiere una declaración para la importación de software de cifrado según las regulaciones de la ANSSI. Las aplicaciones que utilizan únicamente comunicaciones HTTPS/TLS estándar y cifrado proporcionado por el sistema están generalmente exentas de los requisitos de declaración. LumenLingo utiliza exclusivamente cifrado proporcionado por la plataforma Apple y no implementa ninguna funcionalidad criptográfica personalizada.",
+      "appStoreHeading": "Cumplimiento de exportación en App Store Connect",
+      "appStoreP1": "El cumplimiento de exportación de LumenLingo se declara a través de App Store Connect de Apple. La aplicación utiliza cifrado (HTTPS, iCloud) pero califica para la exención ya que se basa exclusivamente en tecnologías de cifrado proporcionadas por el sistema."
     }
   },
   "Terms": {
@@ -1429,6 +1459,14 @@
       "refundsP1": "Todas las compras integradas y suscripciones de LumenLingo son procesadas por <b>Apple</b> como proveedor de pagos. Las solicitudes de reembolso son gestionadas por Apple de acuerdo con sus políticas.",
       "refundsP2": "Para solicitar un reembolso, visite reportaproblem.apple.com o contacte con el Soporte de Apple. LumenShore Ltd apoya plenamente este proceso y cooperará con Apple ante cualquier consulta de reembolso.",
       "statutory": "<b>Nada en estos Términos afecta a sus derechos legales como consumidor.</b> Si existe algún conflicto entre estos Términos y sus derechos legales, prevalecerán sus derechos legales."
+    },
+    "geographicRestrictions": {
+      "heading": "Restricciones geográficas",
+      "intro": "El acceso a LumenLingo puede estar restringido en ciertos territorios debido a las leyes de sanciones aplicables y las políticas de distribución de la App Store:",
+      "bullet1": "LumenLingo se distribuye exclusivamente a través de la App Store de Apple. Apple restringe el acceso a la App Store en países sujetos a sanciones integrales, incluyendo Cuba, Irán, Corea del Norte, Siria y las regiones de Crimea, Donetsk y Lugansk.",
+      "bullet2": "LumenShore Limited no distribuye la aplicación de forma independiente a ninguna jurisdicción sujeta a sanciones del Reino Unido, EE. UU. o la UE.",
+      "bullet3": "Si accede al Servicio desde una jurisdicción donde dicho acceso está prohibido por la ley aplicable, lo hace bajo su propia responsabilidad y es el único responsable del cumplimiento de las leyes locales.",
+      "closing": "Nos reservamos el derecho de limitar o cancelar el acceso al Servicio en cualquier jurisdicción donde determinemos, a nuestro exclusivo criterio, que el cumplimiento legal requiere dicha acción."
     }
   },
   "Blog": {

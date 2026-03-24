@@ -93,6 +93,8 @@ export default async function PrivacyPage({
     { id: 'eu-vat-compliance', text: t('euVatCompliance.heading'), level: 2 },
     { id: 'international-tax', text: t('internationalTax.heading'), level: 2 },
     { id: 'pricing-compliance', text: t('pricingCompliance.heading'), level: 2 },
+    { id: 'sanctions-compliance', text: t('sanctionsCompliance.heading'), level: 2 },
+    { id: 'encryption-export', text: t('encryptionExport.heading'), level: 2 },
     { id: 'your-rights', text: t('yourRights.heading'), level: 2 },
     { id: 'california-rights', text: t('yourRights.californiaHeading'), level: 2 },
     { id: 'gpc-signals', text: t('gpcSignals.heading'), level: 2 },
@@ -1114,6 +1116,49 @@ export default async function PrivacyPage({
 
                   <h3>{t('pricingCompliance.websitePricingHeading')}</h3>
                   <p>{t('pricingCompliance.websitePricingP1')}</p>
+                </section>
+
+                <section id="sanctions-compliance">
+                  <h2>{t('sanctionsCompliance.heading')}</h2>
+                  <p>{t('sanctionsCompliance.intro')}</p>
+
+                  <h3>{t('sanctionsCompliance.ukHeading')}</h3>
+                  <p>{t('sanctionsCompliance.ukP1')}</p>
+
+                  <h3>{t('sanctionsCompliance.usHeading')}</h3>
+                  <p>{t('sanctionsCompliance.usP1')}</p>
+
+                  <h3>{t('sanctionsCompliance.euHeading')}</h3>
+                  <p>{t('sanctionsCompliance.euP1')}</p>
+
+                  <h3>{t('sanctionsCompliance.ukraineHeading')}</h3>
+                  <p>{t('sanctionsCompliance.ukraineP1')}</p>
+
+                  <h3>{t('sanctionsCompliance.screeningHeading')}</h3>
+                  <p>{t('sanctionsCompliance.screeningP1')}</p>
+                </section>
+
+                <section id="encryption-export">
+                  <h2>{t('encryptionExport.heading')}</h2>
+                  <p>{t('encryptionExport.intro')}</p>
+
+                  <h3>{t('encryptionExport.auditHeading')}</h3>
+                  <p>{t('encryptionExport.auditP1')}</p>
+                  <ul>
+                    <li>{t('encryptionExport.auditLi1')}</li>
+                    <li>{t('encryptionExport.auditLi2')}</li>
+                    <li>{t('encryptionExport.auditLi3')}</li>
+                    <li>{t('encryptionExport.auditLi4')}</li>
+                  </ul>
+
+                  <h3>{t('encryptionExport.earHeading')}</h3>
+                  <p>{t('encryptionExport.earP1')}</p>
+
+                  <h3>{t('encryptionExport.frenchHeading')}</h3>
+                  <p>{t('encryptionExport.frenchP1')}</p>
+
+                  <h3>{t('encryptionExport.appStoreHeading')}</h3>
+                  <p>{t('encryptionExport.appStoreP1')}</p>
                 </section>
 
                 <section id="your-rights">

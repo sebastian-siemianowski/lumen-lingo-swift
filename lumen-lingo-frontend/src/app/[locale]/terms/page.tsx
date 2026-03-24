@@ -64,6 +64,7 @@ export default async function TermsPage({
     { id: 'consumer-rights', text: t('consumerRights.heading'), level: 2 },
     { id: 'aggregate-data', text: t('aggregateData.heading'), level: 2 },
     { id: 'termination', text: t('termination.heading'), level: 2 },
+    { id: 'geographic-restrictions', text: t('geographicRestrictions.heading'), level: 2 },
     { id: 'governing-law', text: t('governingLaw.heading'), level: 2 },
     { id: 'changes', text: t('changes.heading'), level: 2 },
     { id: 'contact', text: t('contactUs.heading'), level: 2 },
@@ -250,6 +251,17 @@ export default async function TermsPage({
                     <li>{t('termination.li3')}</li>
                     <li>{t('termination.li4')}</li>
                   </ul>
+                </section>
+
+                <section id="geographic-restrictions">
+                  <h2>{t('geographicRestrictions.heading')}</h2>
+                  <p>{t('geographicRestrictions.intro')}</p>
+                  <ul>
+                    <li>{t('geographicRestrictions.bullet1')}</li>
+                    <li>{t('geographicRestrictions.bullet2')}</li>
+                    <li>{t('geographicRestrictions.bullet3')}</li>
+                  </ul>
+                  <p>{t('geographicRestrictions.closing')}</p>
                 </section>
 
                 <section id="governing-law">
