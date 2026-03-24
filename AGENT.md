@@ -122,8 +122,10 @@ To add a new language pair:
 Both are protocol-based with mock implementations:
 - `AuthService` protocol → `MockAuthService` returns hardcoded user `"Sebastian"` / `"sebastian@test.com"`
 - `SyncService` protocol → `MockSyncService` simulates network delays
+- `ClerkAuthService` → real Clerk SDK integration (behind `FeatureFlagService.clerkAuthEnabled`)
 
 To add real auth (e.g. Firebase, Sign in with Apple): implement the protocols.
+See [`CLERK_MIGRATION_RUNBOOK.md`](CLERK_MIGRATION_RUNBOOK.md) for deployment, rollback, and monitoring procedures.
 
 ### 4. Backgrounds (Phase 6 — Full Quality)
 

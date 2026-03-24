@@ -57,6 +57,7 @@ enum AuthError: Error, Equatable {
     case notSupported
     case cancelled
     case clerkError(underlying: String)
+    case biometricFailed
     case unknown(String)
 
     var localizedDescription: String {
@@ -85,6 +86,8 @@ enum AuthError: Error, Equatable {
             return "Sign-in was cancelled."
         case .clerkError(let underlying):
             return "Authentication failed: \(underlying)"
+        case .biometricFailed:
+            return "Authentication failed. Please try again."
         case .unknown(let message):
             return message
         }
@@ -96,6 +99,8 @@ enum AuthError: Error, Equatable {
 enum SessionExpiredReason: String, Equatable {
     case tokenExpired
     case serverRevoked
+    case accountSuspended
+    case accountDeleted
 }
 
 // MARK: - Auth Service Protocol
@@ -120,6 +125,8 @@ protocol AuthServiceProtocol: Observable, Sendable {
     func signInWithGoogle(presenting: UIViewController) async throws
     func requestOTP(to destination: OTPDestination) async throws
     func verifyOTP(code: String) async throws
+    func resendOTP(to destination: OTPDestination) async throws
+    func continueAsGuest()
 }
 
 // MARK: - Default Implementations
@@ -140,6 +147,12 @@ extension AuthServiceProtocol {
     func verifyOTP(code: String) async throws {
         throw AuthError.notSupported
     }
+
+    func resendOTP(to destination: OTPDestination) async throws {
+        throw AuthError.notSupported
+    }
+
+    func continueAsGuest() {}
 }
 
 // MARK: - Mock Auth Service
@@ -156,6 +169,33 @@ final class MockAuthService: AuthServiceProtocol, @unchecked Sendable {
     private(set) var isMigrating: Bool = false
     private(set) var lastSignInMethod: AuthProvider? = nil
     private(set) var linkedIdentities: Set<AuthProvider> = [.apple]
+
+    /// When set, `signInWithApple`/`signInWithGoogle`/`verifyOTP` will simulate success
+    /// and transition to authenticated state.
+    var simulateSignInSuccess: Bool = false
+    /// When set, sign-in methods throw `AuthError.networkUnavailable`.
+    var simulateNetworkError: Bool = false
+
+    init() {
+        // Apply launch-argument overrides for UI testing
+        let args = ProcessInfo.processInfo.arguments
+        if args.contains("-UITest_Unauthenticated") {
+            isAuthenticated = false
+            currentUser = nil
+            isGuestMode = false
+        }
+        if args.contains("-UITest_Guest") {
+            isAuthenticated = false
+            currentUser = nil
+            isGuestMode = true
+        }
+        if args.contains("-UITest_SimulateSuccess") {
+            simulateSignInSuccess = true
+        }
+        if args.contains("-UITest_SimulateNetworkError") {
+            simulateNetworkError = true
+        }
+    }
 
     #if DEBUG
     private var lastAppliedUser: AppUser?
@@ -269,11 +309,23 @@ final class MockAuthService: AuthServiceProtocol, @unchecked Sendable {
         isLoading = false
     }
 
+    func continueAsGuest() {
+        isAuthenticated = false
+        currentUser = nil
+        isGuestMode = true
+        sessionExpiredReason = nil
+    }
+
     func checkAuthState() async {
         isLoading = true
         try? await Task.sleep(for: .milliseconds(200))
 
         #if DEBUG
+        // If running UI tests, keep the state set by launch arguments
+        if ProcessInfo.processInfo.arguments.contains(where: { $0.hasPrefix("-UITest_") }) {
+            isLoading = false
+            return
+        }
         let override = await DebugAuthController.shared.activeOverride
         if override == .clerkUnavailable {
             // Graceful offline fallback — keep whatever state we had
@@ -287,6 +339,48 @@ final class MockAuthService: AuthServiceProtocol, @unchecked Sendable {
         isAuthenticated = true
         isLoading = false
         #endif
+    }
+
+    // MARK: - UI Test Simulation
+
+    func signInWithApple() async throws {
+        try await simulateSignIn(provider: .apple)
+    }
+
+    func signInWithGoogle(presenting: UIViewController) async throws {
+        try await simulateSignIn(provider: .google)
+    }
+
+    func requestOTP(to destination: OTPDestination) async throws {
+        if simulateNetworkError {
+            throw AuthError.networkUnavailable
+        }
+        try await Task.sleep(for: .milliseconds(200))
+    }
+
+    func verifyOTP(code: String) async throws {
+        try await simulateSignIn(provider: .phone)
+    }
+
+    func resendOTP(to destination: OTPDestination) async throws {
+        try await Task.sleep(for: .milliseconds(200))
+    }
+
+    private func simulateSignIn(provider: AuthProvider) async throws {
+        if simulateNetworkError {
+            throw AuthError.networkUnavailable
+        }
+        isLoading = true
+        try await Task.sleep(for: .milliseconds(300))
+        if simulateSignInSuccess {
+            currentUser = .mock
+            isAuthenticated = true
+            isGuestMode = false
+            sessionExpiredReason = nil
+            lastSignInMethod = provider
+            linkedIdentities = [provider]
+        }
+        isLoading = false
     }
 }
 

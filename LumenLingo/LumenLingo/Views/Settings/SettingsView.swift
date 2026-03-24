@@ -51,6 +51,7 @@ struct SettingsView: View {
     }
 
     enum SettingsTab: String, CaseIterable {
+        case account = "Account"
         case appearance = "Appearance"
         case sound = "Sound"
         case sync = "Sync"
@@ -351,6 +352,7 @@ struct SettingsView: View {
 
     private func tabIcon(for tab: SettingsTab) -> String {
         switch tab {
+        case .account: return "person.crop.circle"
         case .appearance: return "paintbrush.fill"
         case .sound: return "speaker.wave.2.fill"
         case .sync: return "arrow.triangle.2.circlepath"
@@ -360,6 +362,7 @@ struct SettingsView: View {
 
     private func localizedTabName(_ tab: SettingsTab) -> String {
         switch tab {
+        case .account: return L.account
         case .appearance: return L.appearance
         case .sound: return L.sound
         case .sync: return L.sync
@@ -372,6 +375,8 @@ struct SettingsView: View {
     @ViewBuilder
     private var settingsContent: some View {
         switch activeTab {
+        case .account:
+            accountTab
         case .appearance:
             appearanceSettings
         case .sound:
@@ -380,6 +385,14 @@ struct SettingsView: View {
             syncTab
         case .signOut:
             signOutTab
+        }
+    }
+
+    // MARK: - Account Tab
+
+    private var accountTab: some View {
+        settingsCard(tint: isDark ? Color(hex: "#667eea").opacity(0.3) : Color(hex: "#0EA5E9").opacity(0.3)) {
+            AccountSettingsView()
         }
     }
 

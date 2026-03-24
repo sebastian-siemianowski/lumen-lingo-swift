@@ -108,6 +108,7 @@ struct MockUserProfile {
     /// Convert to an `AppUser` for injection into `MockAuthService`.
     var asAppUser: AppUser {
         AppUser(
+            id: "mock_\(email)",
             name: displayName,
             email: email,
             avatarURL: nil

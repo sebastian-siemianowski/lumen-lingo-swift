@@ -138,6 +138,7 @@ extension AppStrings {
         keepLearningEveryDay: "毎日学習して連続記録を維持しましょう！",
 
         // Profile
+        account: "アカウント",
         appearance: "外観",
         sound: "サウンド",
         sync: "同期",

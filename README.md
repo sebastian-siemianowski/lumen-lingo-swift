@@ -86,6 +86,7 @@ LumenLingo/
 - **SwiftData** for persistence (progress, favorites, settings)
 - **No external dependencies** — fully native stack
 - **Mock authentication** — hardcoded user for development (Sebastian / sebastian@test.com)
+- **Clerk authentication** — real auth via Clerk SDK, behind feature flag. See [`CLERK_MIGRATION_RUNBOOK.md`](CLERK_MIGRATION_RUNBOOK.md).
 - **JSON-bundled content** per language pair (e.g. `english_spanish/flashcards.json`)
 
 ## Notes

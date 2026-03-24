@@ -13,6 +13,7 @@ SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES
 
 // ─── Swift ────────────────────────────────────────────────────
 SWIFT_VERSION = 6.0
+PRODUCT_MODULE_NAME = LumenLingo
 
 // ─── Code Signing ─────────────────────────────────────────────
 CODE_SIGN_STYLE = Automatic

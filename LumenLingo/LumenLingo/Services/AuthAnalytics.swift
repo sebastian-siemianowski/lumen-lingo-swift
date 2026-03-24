@@ -31,6 +31,19 @@ enum AuthAnalytics {
         case otpFailed = "auth_otp_failed"
         case otpResend = "auth_otp_resend"
         case otpMethodSwitch = "auth_otp_method_switch"
+
+        // Skip auth
+        case authSkipped = "auth_skipped"
+
+        // Session lifecycle
+        case forcedLogout = "auth_forced_logout"
+        case sessionRestored = "session_restored"
+        case sessionRestoreFailed = "session_restore_failed"
+        case tokenRefreshSuccess = "token_refresh_success"
+        case tokenRefreshFailed = "token_refresh_failed"
+
+        // Security
+        case integrityWarning = "security_integrity_warning"
     }
 
     // MARK: - Standard Context

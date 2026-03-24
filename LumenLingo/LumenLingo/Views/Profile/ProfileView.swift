@@ -12,6 +12,7 @@ struct ProfileView: View {
     @Environment(ThemeManager.self) private var themeManager
     @Environment(TierManager.self) private var tierManager
     @Environment(\.localization) private var localization
+    @Environment(\.authService) private var authService
 
     private var L: AppStrings { localization.strings }
 
@@ -192,28 +193,22 @@ struct ProfileView: View {
                             y: 4
                         )
 
-                    // User initials or person icon
-                    if !isDark, let initials = userInitials, !initials.isEmpty {
-                        Text(initials)
-                            .font(.system(size: 28, weight: .bold, design: .rounded))
-                            .foregroundStyle(.white)
-                            .frame(width: 80, height: 80)
+                    // User avatar, initials, or person icon
+                    if let avatarURL = authService.currentUser?.avatarURL {
+                        AsyncImage(url: avatarURL) { phase in
+                            switch phase {
+                            case .success(let image):
+                                image
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 80, height: 80)
+                                    .clipShape(Circle())
+                            default:
+                                avatarPlaceholder
+                            }
+                        }
                     } else {
-                        Image(systemName: "person.crop.circle.fill")
-                            .font(.system(size: 72, weight: .thin))
-                            .symbolRenderingMode(.palette)
-                            .foregroundStyle(
-                                .white,
-                                isDark
-                                    ? AnyShapeStyle(LinearGradient(
-                                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    ))
-                                    : AnyShapeStyle(LinearGradient.caribbeanGradientSunset)
-                            )
-                            .frame(width: 80, height: 80)
-                            .clipShape(Circle())
+                        avatarPlaceholder
                     }
                 }
                 .shadow(
@@ -301,6 +296,33 @@ struct ProfileView: View {
             return "\(parts[0].prefix(1))\(parts[1].prefix(1))".uppercased()
         }
         return String(name.prefix(2)).uppercased()
+    }
+
+    /// Placeholder shown when no remote avatar is available (or while loading)
+    @ViewBuilder
+    private var avatarPlaceholder: some View {
+        if !isDark, let initials = userInitials, !initials.isEmpty {
+            Text(initials)
+                .font(.system(size: 28, weight: .bold, design: .rounded))
+                .foregroundStyle(.white)
+                .frame(width: 80, height: 80)
+        } else {
+            Image(systemName: "person.crop.circle.fill")
+                .font(.system(size: 72, weight: .thin))
+                .symbolRenderingMode(.palette)
+                .foregroundStyle(
+                    .white,
+                    isDark
+                        ? AnyShapeStyle(LinearGradient(
+                            colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ))
+                        : AnyShapeStyle(LinearGradient.caribbeanGradientSunset)
+                )
+                .frame(width: 80, height: 80)
+                .clipShape(Circle())
+        }
     }
 
     /// Total unique words the user has answered correctly

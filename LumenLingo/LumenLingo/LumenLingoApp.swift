@@ -5,6 +5,8 @@ import SwiftData
 
 @main
 struct LumenLingoApp: App {
+    @Environment(\.scenePhase) private var scenePhase
+
     @State private var themeManager = ThemeManager()
     @State private var localizationManager = LocalizationManager()
     @State private var tierManager = TierManager()
@@ -17,13 +19,21 @@ struct LumenLingoApp: App {
     #if DEBUG
     @State private var authService: any AuthServiceProtocol = MockAuthService()
     #else
-    @State private var authService: any AuthServiceProtocol = ClerkAuthService()
+    @State private var authService: any AuthServiceProtocol = {
+        if FeatureFlagService.clerkAuthEnabled {
+            return ClerkAuthService()
+        } else {
+            return MockAuthService()
+        }
+    }()
     #endif
 
     init() {
         #if DEBUG
         URLProtocol.registerClass(DebugURLProtocol.self)
         #endif
+        // Lightweight integrity check on launch
+        _ = DeviceIntegrityService.check()
     }
 
     private var debugBackgroundOnly: Bool {
@@ -38,10 +48,16 @@ struct LumenLingoApp: App {
         return preset
     }
 
+    private var isRunningTests: Bool {
+        ProcessInfo.processInfo.environment["XCTestBundlePath"] != nil
+    }
+
     var body: some Scene {
         WindowGroup {
             Group {
-                if debugBackgroundOnly {
+                if isRunningTests {
+                    Color.clear
+                } else if debugBackgroundOnly {
                     Color.clear
                         .cosmicBackground(preset: debugForcedNebula)
                 } else {
@@ -52,6 +68,8 @@ struct LumenLingoApp: App {
                         .overlay {
                             FeatureTransitionOverlay()
                         }
+                        .profileSync()
+                        .legalReconsent()
                 }
             }
             .environment(themeManager)
@@ -67,6 +85,18 @@ struct LumenLingoApp: App {
             .task {
                 await authService.checkAuthState()
             }
+            .task {
+                // Prune old security events on launch
+                if let container = try? ModelContainer(for: SecurityEvent.self) {
+                    let context = ModelContext(container)
+                    SecurityAuditLogger.pruneOldEvents(in: context)
+                }
+            }
+            .onChange(of: scenePhase) { _, newPhase in
+                if newPhase == .active {
+                    Task { await authService.checkAuthState() }
+                }
+            }
         }
         .modelContainer(for: [
             UserProfile.self,
@@ -74,6 +104,7 @@ struct LumenLingoApp: App {
             LanguagePreference.self,
             FavoriteCategory.self,
             MasteredContent.self,
+            SecurityEvent.self,
         ])
     }
 }

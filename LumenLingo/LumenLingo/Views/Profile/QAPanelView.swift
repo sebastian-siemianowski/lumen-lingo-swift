@@ -10,6 +10,7 @@ struct QAPanelView: View {
     @Environment(TierManager.self) private var tierManager
     @Environment(PracticeTimeTracker.self) private var practiceTracker
     @Environment(SessionEngine.self) private var sessionEngine
+    @Environment(\.authService) private var authService
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
@@ -50,6 +51,8 @@ struct QAPanelView: View {
                 languagePairSection
 
                 stateInspector
+
+                sessionHealthSection
 
                 performanceSection
 
@@ -916,6 +919,25 @@ struct QAPanelView: View {
             Text(value)
                 .font(.system(size: 12, weight: .semibold, design: .monospaced))
                 .foregroundStyle(isDark ? .white.opacity(0.8) : .primary)
+        }
+    }
+
+    // MARK: - Session Health
+
+    private var sessionHealthSection: some View {
+        GlassPanelWrapper {
+            VStack(alignment: .leading, spacing: 12) {
+                sectionHeader(icon: "lock.shield", title: "Session Health", color: .cyan)
+
+                VStack(spacing: 6) {
+                    stateRow("Authenticated", value: authService.isAuthenticated ? "Yes" : "No")
+                    stateRow("Guest Mode", value: authService.isGuestMode ? "Yes" : "No")
+                    stateRow("User", value: authService.currentUser?.name ?? "—")
+                    stateRow("Last Method", value: authService.lastSignInMethod?.displayName ?? "—")
+                    stateRow("Session Status", value: authService.sessionExpiredReason?.rawValue ?? "active")
+                    stateRow("Linked IDs", value: authService.linkedIdentities.map(\.displayName).sorted().joined(separator: ", "))
+                }
+            }
         }
     }
 

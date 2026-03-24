@@ -11,6 +11,13 @@ final class UserProfile {
     var dailyStreak: Int
     var totalActiveDays: Int
     var lastActivityDate: Date?
+
+    /// Clerk user ID — links this local profile to a Clerk identity. nil for guest users.
+    var clerkUserId: String? = nil
+
+    /// Date of last successful profile sync from Clerk.
+    var lastSyncDate: Date? = nil
+
     var favoriteGame: String?
     var difficulty: String
     var soundEnabled: Bool

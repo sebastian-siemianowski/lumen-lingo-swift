@@ -141,6 +141,7 @@ struct AppStrings: Sendable {
     let keepLearningEveryDay: String
 
     // MARK: - Profile
+    let account: String
     let appearance: String
     let sound: String
     let sync: String

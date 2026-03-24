@@ -136,6 +136,7 @@ extension AppStrings {
         keepLearningEveryDay: "واصل التعلّم كل يوم للحفاظ على سلسلتك!",
 
         // Profile
+        account: "الحساب",
         appearance: "المظهر",
         sound: "الصوت",
         sync: "المزامنة",

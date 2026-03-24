@@ -220,6 +220,7 @@ struct GameTypeStats: Identifiable {
 // MARK: - User (for mocked auth)
 
 struct AppUser: Equatable {
+    let id: String
     let name: String
     let email: String
     let avatarURL: URL?
@@ -240,6 +241,7 @@ struct AppUser: Equatable {
     }
 
     static let mock = AppUser(
+        id: "mock_user_001",
         name: "Sebastian",
         email: "rudph2@test.com",
         avatarURL: nil

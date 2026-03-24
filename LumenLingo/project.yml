@@ -88,10 +88,71 @@ targets:
       - target: LumenLingo
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: $(PRODUCT_BUNDLE_IDENTIFIER).tests
         GENERATE_INFOPLIST_FILE: true
-        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/$(PRODUCT_NAME).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/$(PRODUCT_NAME)"
-        BUNDLE_LOADER: "$(TEST_HOST)"
+        PRODUCT_MODULE_NAME: LumenLingoTests
+      configs:
+        Dev-Debug:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL Dev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL Dev"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        Dev-Release:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL Dev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL Dev"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        QA-Debug:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL QA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL QA"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        QA-Release:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL QA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL QA"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        UAT-Debug:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL UAT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL UAT"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        UAT-Release:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL UAT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL UAT"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        PreProd-Debug:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL PreProd.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL PreProd"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        PreProd-Release:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL PreProd.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL PreProd"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        Prod-Debug:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LumenLingo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LumenLingo"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        Prod-Release:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LumenLingo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LumenLingo"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+
+  LumenLingoUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: LumenLingoUITests
+    dependencies:
+      - target: LumenLingo
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: true
+      configs:
+        Dev-Debug:
+          TEST_TARGET_NAME: LumenLingo
+        Dev-Release:
+          TEST_TARGET_NAME: LumenLingo
+        QA-Debug:
+          TEST_TARGET_NAME: LumenLingo
+        QA-Release:
+          TEST_TARGET_NAME: LumenLingo
+        UAT-Debug:
+          TEST_TARGET_NAME: LumenLingo
+        UAT-Release:
+          TEST_TARGET_NAME: LumenLingo
+        PreProd-Debug:
+          TEST_TARGET_NAME: LumenLingo
+        PreProd-Release:
+          TEST_TARGET_NAME: LumenLingo
+        Prod-Debug:
+          TEST_TARGET_NAME: LumenLingo
+        Prod-Release:
+          TEST_TARGET_NAME: LumenLingo
 
 # ─── Schemes (one per environment) ────────────────────────────
 schemes:
@@ -100,6 +161,7 @@ schemes:
       targets:
         LumenLingo: all
         LumenLingoTests: [test]
+        LumenLingoUITests: [test]
     run:
       config: Dev-Debug
       storeKitConfiguration: LumenLingo/Configuration.storekit
@@ -111,6 +173,7 @@ schemes:
       config: Dev-Debug
       targets:
         - LumenLingoTests
+        - LumenLingoUITests
     profile:
       config: Dev-Release
     analyze:
@@ -123,6 +186,7 @@ schemes:
       targets:
         LumenLingo: all
         LumenLingoTests: [test]
+        LumenLingoUITests: [test]
     run:
       config: QA-Debug
       environmentVariables:
@@ -133,6 +197,7 @@ schemes:
       config: QA-Debug
       targets:
         - LumenLingoTests
+        - LumenLingoUITests
     profile:
       config: QA-Release
     analyze:
@@ -145,6 +210,7 @@ schemes:
       targets:
         LumenLingo: all
         LumenLingoTests: [test]
+        LumenLingoUITests: [test]
     run:
       config: UAT-Debug
       environmentVariables:
@@ -155,6 +221,7 @@ schemes:
       config: UAT-Debug
       targets:
         - LumenLingoTests
+        - LumenLingoUITests
     profile:
       config: UAT-Release
     analyze:
@@ -167,6 +234,7 @@ schemes:
       targets:
         LumenLingo: all
         LumenLingoTests: [test]
+        LumenLingoUITests: [test]
     run:
       config: PreProd-Debug
       environmentVariables:
@@ -177,6 +245,7 @@ schemes:
       config: PreProd-Debug
       targets:
         - LumenLingoTests
+        - LumenLingoUITests
     profile:
       config: PreProd-Release
     analyze:
@@ -189,6 +258,7 @@ schemes:
       targets:
         LumenLingo: all
         LumenLingoTests: [test]
+        LumenLingoUITests: [test]
     run:
       config: Prod-Debug
       environmentVariables:
@@ -199,6 +269,7 @@ schemes:
       config: Prod-Debug
       targets:
         - LumenLingoTests
+        - LumenLingoUITests
     profile:
       config: Prod-Release
     analyze:

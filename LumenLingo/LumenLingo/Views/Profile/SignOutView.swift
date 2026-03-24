@@ -351,7 +351,19 @@ struct SignOutView: View {
                 Button {
                     AudioService.shared.playSignOutConfirmed()
                     HapticsService.shared.destructiveAction()
-                    executeAccountDeletion()
+                    Task {
+                        let result = await BiometricAuthService.authenticate(
+                            reason: "Authenticate to delete your account"
+                        )
+                        switch result {
+                        case .success:
+                            executeAccountDeletion()
+                        case .failed:
+                            break // User cancelled or failed — stay on confirmation overlay
+                        case .unavailable:
+                            executeAccountDeletion() // No biometrics enrolled — proceed
+                        }
+                    }
                 } label: {
                     Text(L.deleteAccountConfirm)
                         .font(.system(size: 14, weight: .semibold))
