@@ -1,0 +1,212 @@
+{
+  "en": {
+    "dsaCompliance": {
+      "heading": "EU Digital Services Act (DSA) Compliance",
+      "contactHeading": "Point of Contact",
+      "contact1": "In accordance with EU Regulation 2022/2065 (Digital Services Act), the designated point of contact for EU authorities and users for legal and regulatory inquiries is:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "This contact point can be used by recipients of the Service and by competent authorities for communications relating to the application of the DSA. Communications may be made in English.",
+      "intermediaryHeading": "Service Classification",
+      "intermediary1": "LumenLingo is a language learning application that delivers proprietary educational content (flashcards, grammar explanations, phrases, and audio) directly to users. Lumenshore is the publisher of all content within the Service.",
+      "intermediary2": "LumenLingo does not currently host, store, or transmit user-generated content. There are no comments, forums, user profiles, or social features. As such, LumenLingo does not operate as an intermediary service within the meaning of DSA Art. 3.",
+      "intermediary3": "If user-generated content features are introduced in the future, Lumenshore will implement the full notice-and-action obligations required by the DSA.",
+      "transparencyHeading": "Transparency Information (DSA Art. 14)",
+      "transparency1": "Content moderation: LumenLingo does not host user-generated content. All content is created, curated, and published by Lumenshore. No content moderation of user submissions is required or performed.",
+      "transparency2": "Algorithmic decision-making: LumenLingo may use algorithms to personalise the learning experience, including spaced repetition scheduling and content difficulty adaptation. These systems operate locally on the user's device and do not profile users for advertising purposes.",
+      "transparency3": "Complaint handling: If you have a complaint about the Service, you may contact us at hello@lumenshore.com. We will acknowledge receipt within 5 business days and aim to provide a substantive response within 30 calendar days.",
+      "complianceHeading": "DSA Compliance Statement",
+      "compliance1": "Lumenshore Limited is committed to compliance with the Digital Services Act (EU Regulation 2022/2065) as applicable to the Service.",
+      "compliance2": "As LumenLingo does not qualify as an intermediary service, hosting service, or online platform under the DSA, the majority of DSA obligations (including the notice-and-action mechanism under Art. 16 and transparency reporting under Art. 15) do not currently apply.",
+      "compliance3": "Lumenshore monitors regulatory developments and will update its compliance measures if the scope of DSA applicability changes due to new features or regulatory guidance."
+    }
+  },
+  "es": {
+    "dsaCompliance": {
+      "heading": "Cumplimiento de la Ley de Servicios Digitales de la UE (DSA)",
+      "contactHeading": "Punto de Contacto",
+      "contact1": "De conformidad con el Reglamento (UE) 2022/2065 (Ley de Servicios Digitales), el punto de contacto designado para las autoridades de la UE y los usuarios para consultas legales y regulatorias es:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "Este punto de contacto puede ser utilizado por los destinatarios del Servicio y por las autoridades competentes para comunicaciones relacionadas con la aplicacion de la DSA. Las comunicaciones pueden realizarse en ingles.",
+      "intermediaryHeading": "Clasificacion del Servicio",
+      "intermediary1": "LumenLingo es una aplicacion de aprendizaje de idiomas que ofrece contenido educativo propio (tarjetas didacticas, explicaciones gramaticales, frases y audio) directamente a los usuarios. Lumenshore es el editor de todo el contenido del Servicio.",
+      "intermediary2": "LumenLingo actualmente no aloja, almacena ni transmite contenido generado por el usuario. No hay comentarios, foros, perfiles de usuario ni funciones sociales. Como tal, LumenLingo no opera como un servicio de intermediacion en el sentido del Art. 3 de la DSA.",
+      "intermediary3": "Si se introdujeran funciones de contenido generado por el usuario en el futuro, Lumenshore implementara las obligaciones completas de notificacion y accion requeridas por la DSA.",
+      "transparencyHeading": "Informacion de Transparencia (DSA Art. 14)",
+      "transparency1": "Moderacion de contenido: LumenLingo no aloja contenido generado por el usuario. Todo el contenido es creado, curado y publicado por Lumenshore. No se requiere ni se realiza moderacion de contenido de envios de usuarios.",
+      "transparency2": "Toma de decisiones algoritmicas: LumenLingo puede utilizar algoritmos para personalizar la experiencia de aprendizaje, incluida la programacion de repeticion espaciada y la adaptacion de dificultad del contenido. Estos sistemas operan localmente en el dispositivo del usuario y no perfilan a los usuarios con fines publicitarios.",
+      "transparency3": "Gestion de reclamaciones: Si tiene una reclamacion sobre el Servicio, puede contactarnos en hello@lumenshore.com. Acusaremos recibo dentro de 5 dias habiles y trataremos de proporcionar una respuesta sustantiva dentro de 30 dias naturales.",
+      "complianceHeading": "Declaracion de Cumplimiento DSA",
+      "compliance1": "Lumenshore Limited esta comprometida con el cumplimiento de la Ley de Servicios Digitales (Reglamento UE 2022/2065) segun sea aplicable al Servicio.",
+      "compliance2": "Dado que LumenLingo no califica como servicio de intermediacion, servicio de alojamiento o plataforma en linea segun la DSA, la mayoria de las obligaciones de la DSA (incluido el mecanismo de notificacion y accion del Art. 16 y los informes de transparencia del Art. 15) no se aplican actualmente.",
+      "compliance3": "Lumenshore monitorea los desarrollos regulatorios y actualizara sus medidas de cumplimiento si el alcance de la aplicabilidad de la DSA cambia debido a nuevas funciones u orientacion regulatoria."
+    }
+  },
+  "fr": {
+    "dsaCompliance": {
+      "heading": "Conformite au Reglement sur les Services Numeriques de l'UE (DSA)",
+      "contactHeading": "Point de Contact",
+      "contact1": "Conformement au Reglement (UE) 2022/2065 (Reglement sur les Services Numeriques), le point de contact designe pour les autorites de l'UE et les utilisateurs pour les demandes juridiques et reglementaires est:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "Ce point de contact peut etre utilise par les destinataires du Service et par les autorites competentes pour les communications relatives a l'application du DSA. Les communications peuvent etre faites en anglais.",
+      "intermediaryHeading": "Classification du Service",
+      "intermediary1": "LumenLingo est une application d'apprentissage des langues qui fournit du contenu educatif proprietaire (cartes memoire, explications grammaticales, phrases et audio) directement aux utilisateurs. Lumenshore est l'editeur de tout le contenu du Service.",
+      "intermediary2": "LumenLingo n'heberge, ne stocke ni ne transmet actuellement de contenu genere par les utilisateurs. Il n'y a ni commentaires, ni forums, ni profils d'utilisateurs, ni fonctionnalites sociales. A ce titre, LumenLingo ne fonctionne pas comme un service d'intermediation au sens de l'Art. 3 du DSA.",
+      "intermediary3": "Si des fonctionnalites de contenu genere par les utilisateurs sont introduites a l'avenir, Lumenshore mettra en oeuvre les obligations completes de notification et d'action requises par le DSA.",
+      "transparencyHeading": "Informations de Transparence (DSA Art. 14)",
+      "transparency1": "Moderation du contenu: LumenLingo n'heberge pas de contenu genere par les utilisateurs. Tout le contenu est cree, organise et publie par Lumenshore. Aucune moderation du contenu des soumissions des utilisateurs n'est requise ou effectuee.",
+      "transparency2": "Prise de decision algorithmique: LumenLingo peut utiliser des algorithmes pour personnaliser l'experience d'apprentissage, y compris la planification de repetition espacee et l'adaptation de la difficulte du contenu. Ces systemes fonctionnent localement sur l'appareil de l'utilisateur et ne profilent pas les utilisateurs a des fins publicitaires.",
+      "transparency3": "Gestion des reclamations: Si vous avez une reclamation concernant le Service, vous pouvez nous contacter a hello@lumenshore.com. Nous accuserons reception dans les 5 jours ouvrables et nous nous efforcerons de fournir une reponse motivee dans les 30 jours calendaires.",
+      "complianceHeading": "Declaration de Conformite DSA",
+      "compliance1": "Lumenshore Limited s'engage a respecter le Reglement sur les Services Numeriques (Reglement UE 2022/2065) tel qu'il s'applique au Service.",
+      "compliance2": "Etant donne que LumenLingo ne se qualifie pas en tant que service d'intermediation, service d'hebergement ou plateforme en ligne au titre du DSA, la majorite des obligations du DSA (y compris le mecanisme de notification et d'action au titre de l'Art. 16 et les rapports de transparence au titre de l'Art. 15) ne s'appliquent pas actuellement.",
+      "compliance3": "Lumenshore surveille les evolutions reglementaires et mettra a jour ses mesures de conformite si le champ d'application du DSA evolue en raison de nouvelles fonctionnalites ou d'orientations reglementaires."
+    }
+  },
+  "de": {
+    "dsaCompliance": {
+      "heading": "Einhaltung des EU-Gesetzes ueber digitale Dienste (DSA)",
+      "contactHeading": "Kontaktstelle",
+      "contact1": "Gemaess der EU-Verordnung 2022/2065 (Gesetz ueber digitale Dienste) ist die benannte Kontaktstelle fuer EU-Behoerden und Nutzer fuer rechtliche und regulatorische Anfragen:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "Diese Kontaktstelle kann von Empfaengern des Dienstes und von zustaendigen Behoerden fuer Mitteilungen im Zusammenhang mit der Anwendung des DSA genutzt werden. Die Kommunikation kann auf Englisch erfolgen.",
+      "intermediaryHeading": "Diensteinstufung",
+      "intermediary1": "LumenLingo ist eine Sprachlern-App, die proprietaere Bildungsinhalte (Karteikarten, Grammatikerklaerungen, Saetze und Audio) direkt an die Nutzer liefert. Lumenshore ist der Herausgeber aller Inhalte des Dienstes.",
+      "intermediary2": "LumenLingo hostet, speichert oder uebermittelt derzeit keine nutzergenerierten Inhalte. Es gibt keine Kommentare, Foren, Nutzerprofile oder soziale Funktionen. Als solches operiert LumenLingo nicht als Vermittlungsdienst im Sinne von DSA Art. 3.",
+      "intermediary3": "Sollten in Zukunft Funktionen fuer nutzergenerierte Inhalte eingefuehrt werden, wird Lumenshore die vollstaendigen Melde- und Aktionspflichten gemaess dem DSA umsetzen.",
+      "transparencyHeading": "Transparenzinformationen (DSA Art. 14)",
+      "transparency1": "Inhaltsmoderation: LumenLingo hostet keine nutzergenerierten Inhalte. Alle Inhalte werden von Lumenshore erstellt, kuratiert und veroeffentlicht. Eine Moderation von Nutzerbeitraegen ist weder erforderlich noch wird sie durchgefuehrt.",
+      "transparency2": "Algorithmische Entscheidungsfindung: LumenLingo kann Algorithmen verwenden, um das Lernerlebnis zu personalisieren, einschliesslich der Planung von verteiltem Wiederholen und der Anpassung der Inhaltsschwierigkeit. Diese Systeme arbeiten lokal auf dem Geraet des Nutzers und erstellen keine Nutzerprofile fuer Werbezwecke.",
+      "transparency3": "Beschwerdebearbeitung: Wenn Sie eine Beschwerde ueber den Dienst haben, koennen Sie uns unter hello@lumenshore.com kontaktieren. Wir werden den Eingang innerhalb von 5 Werktagen bestaetigen und bemuehen uns, innerhalb von 30 Kalendertagen eine inhaltliche Antwort zu geben.",
+      "complianceHeading": "DSA-Konformitaetserklaerung",
+      "compliance1": "Lumenshore Limited verpflichtet sich zur Einhaltung des Gesetzes ueber digitale Dienste (EU-Verordnung 2022/2065), soweit es auf den Dienst anwendbar ist.",
+      "compliance2": "Da LumenLingo nicht als Vermittlungsdienst, Hosting-Dienst oder Online-Plattform gemaess dem DSA eingestuft wird, gelten die meisten DSA-Pflichten (einschliesslich des Melde- und Aktionsmechanismus gemaess Art. 16 und der Transparenzberichterstattung gemaess Art. 15) derzeit nicht.",
+      "compliance3": "Lumenshore ueberwacht regulatorische Entwicklungen und wird seine Konformitaetsmassnahmen aktualisieren, wenn sich der Anwendungsbereich des DSA aufgrund neuer Funktionen oder regulatorischer Leitlinien aendert."
+    }
+  },
+  "ja": {
+    "dsaCompliance": {
+      "heading": "EUデジタルサービス法（DSA）への準拠",
+      "contactHeading": "連絡先",
+      "contact1": "EU規則2022/2065（デジタルサービス法）に従い、EU当局およびユーザーの法的・規制上のお問い合わせのための指定連絡先は以下のとおりです：",
+      "contact2": "Lumenshore Limited、hello@lumenshore.com",
+      "contact3": "この連絡先は、サービスの受益者およびDSAの適用に関する通信のために管轄当局が使用できます。通信は英語で行うことができます。",
+      "intermediaryHeading": "サービスの分類",
+      "intermediary1": "LumenLingoは、独自の教育コンテンツ（フラッシュカード、文法説明、フレーズ、オーディオ）をユーザーに直接提供する語学学習アプリケーションです。Lumenshoreはサービス内のすべてのコンテンツの発行者です。",
+      "intermediary2": "LumenLingoは現在、ユーザー生成コンテンツのホスティング、保存、または送信を行っていません。コメント、フォーラム、ユーザープロフィール、ソーシャル機能はありません。そのため、LumenLingoはDSA第3条の意味における仲介サービスとして運営されていません。",
+      "intermediary3": "将来的にユーザー生成コンテンツ機能が導入された場合、LumenshoreはDSAが要求する完全な通知と対応の義務を実施します。",
+      "transparencyHeading": "透明性情報（DSA第14条）",
+      "transparency1": "コンテンツモデレーション：LumenLingoはユーザー生成コンテンツをホストしていません。すべてのコンテンツはLumenshoreが作成、キュレーション、公開しています。ユーザー投稿のコンテンツモデレーションは必要なく、実施されていません。",
+      "transparency2": "アルゴリズムによる意思決定：LumenLingoは、間隔反復スケジューリングやコンテンツ難易度の適応を含む学習体験のパーソナライズにアルゴリズムを使用する場合があります。これらのシステムはユーザーのデバイス上でローカルに動作し、広告目的でユーザーをプロファイリングしません。",
+      "transparency3": "苦情処理：サービスに関する苦情がある場合は、hello@lumenshore.comまでご連絡ください。5営業日以内に受領確認を行い、30暦日以内に実質的な回答を提供することを目指します。",
+      "complianceHeading": "DSAコンプライアンス宣言",
+      "compliance1": "Lumenshore Limitedは、サービスに適用されるデジタルサービス法（EU規則2022/2065）の遵守に努めています。",
+      "compliance2": "LumenLingoはDSAに基づく仲介サービス、ホスティングサービス、またはオンラインプラットフォームに該当しないため、DSAの義務の大部分（第16条に基づく通知・対応メカニズムおよび第15条に基づく透明性報告を含む）は現在適用されません。",
+      "compliance3": "Lumenshoreは規制の動向を監視し、新機能や規制ガイダンスによりDSAの適用範囲が変更された場合、コンプライアンス措置を更新します。"
+    }
+  },
+  "pt": {
+    "dsaCompliance": {
+      "heading": "Conformidade com a Lei de Servicos Digitais da UE (DSA)",
+      "contactHeading": "Ponto de Contato",
+      "contact1": "De acordo com o Regulamento (UE) 2022/2065 (Lei de Servicos Digitais), o ponto de contato designado para as autoridades da UE e usuarios para consultas legais e regulatorias e:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "Este ponto de contato pode ser usado pelos destinatarios do Servico e pelas autoridades competentes para comunicacoes relativas a aplicacao do DSA. As comunicacoes podem ser feitas em ingles.",
+      "intermediaryHeading": "Classificacao do Servico",
+      "intermediary1": "O LumenLingo e um aplicativo de aprendizagem de idiomas que fornece conteudo educacional proprietario (cartoes de estudo, explicacoes gramaticais, frases e audio) diretamente aos usuarios. A Lumenshore e a editora de todo o conteudo do Servico.",
+      "intermediary2": "O LumenLingo atualmente nao hospeda, armazena ou transmite conteudo gerado pelo usuario. Nao ha comentarios, foruns, perfis de usuario ou recursos sociais. Sendo assim, o LumenLingo nao opera como um servico de intermediacao no sentido do Art. 3 do DSA.",
+      "intermediary3": "Se funcionalidades de conteudo gerado pelo usuario forem introduzidas no futuro, a Lumenshore implementara as obrigacoes completas de notificacao e acao exigidas pelo DSA.",
+      "transparencyHeading": "Informacoes de Transparencia (DSA Art. 14)",
+      "transparency1": "Moderacao de conteudo: O LumenLingo nao hospeda conteudo gerado pelo usuario. Todo o conteudo e criado, curado e publicado pela Lumenshore. Nenhuma moderacao de conteudo de envios de usuarios e necessaria ou realizada.",
+      "transparency2": "Tomada de decisao algoritmica: O LumenLingo pode usar algoritmos para personalizar a experiencia de aprendizagem, incluindo programacao de repeticao espacada e adaptacao de dificuldade de conteudo. Esses sistemas operam localmente no dispositivo do usuario e nao criam perfis de usuarios para fins publicitarios.",
+      "transparency3": "Tratamento de reclamacoes: Se voce tiver uma reclamacao sobre o Servico, pode nos contatar em hello@lumenshore.com. Acusaremos o recebimento dentro de 5 dias uteis e procuraremos fornecer uma resposta substantiva dentro de 30 dias corridos.",
+      "complianceHeading": "Declaracao de Conformidade DSA",
+      "compliance1": "A Lumenshore Limited esta comprometida com a conformidade com a Lei de Servicos Digitais (Regulamento UE 2022/2065) conforme aplicavel ao Servico.",
+      "compliance2": "Como o LumenLingo nao se qualifica como servico de intermediacao, servico de hospedagem ou plataforma online nos termos do DSA, a maioria das obrigacoes do DSA (incluindo o mecanismo de notificacao e acao nos termos do Art. 16 e os relatorios de transparencia nos termos do Art. 15) nao se aplicam atualmente.",
+      "compliance3": "A Lumenshore monitora desenvolvimentos regulatorios e atualizara suas medidas de conformidade se o escopo de aplicabilidade do DSA mudar devido a novos recursos ou orientacoes regulatorias."
+    }
+  },
+  "pl": {
+    "dsaCompliance": {
+      "heading": "Zgodnosc z Aktem o Uslugach Cyfrowych UE (DSA)",
+      "contactHeading": "Punkt Kontaktowy",
+      "contact1": "Zgodnie z Rozporzadzeniem UE 2022/2065 (Akt o Uslugach Cyfrowych) wyznaczonym punktem kontaktowym dla organow UE i uzytkownikow w sprawach prawnych i regulacyjnych jest:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "Ten punkt kontaktowy moze byc wykorzystywany przez odbiorcow Uslugi oraz przez wlasciwe organy do komunikacji zwiazanej z zastosowaniem DSA. Komunikacja moze odbywac sie w jezyku angielskim.",
+      "intermediaryHeading": "Klasyfikacja Uslugi",
+      "intermediary1": "LumenLingo jest aplikacja do nauki jezykow, ktora dostarcza wlasne tresci edukacyjne (fiszki, objasnienia gramatyczne, zwroty i nagrania audio) bezposrednio uzytkownikom. Lumenshore jest wydawca wszystkich tresci w ramach Uslugi.",
+      "intermediary2": "LumenLingo obecnie nie hostuje, nie przechowuje ani nie przesyla tresci generowanych przez uzytkownikow. Nie ma komentarzy, forow, profili uzytkownikow ani funkcji spolecznosciowych. W zwiazku z tym LumenLingo nie dziala jako usluga posrednictwa w rozumieniu art. 3 DSA.",
+      "intermediary3": "Jesli w przyszlosci zostana wprowadzone funkcje tresci generowanych przez uzytkownikow, Lumenshore wdrozy pelne obowiazki powiadamiania i dzialania wymagane przez DSA.",
+      "transparencyHeading": "Informacje o Przejrzystosci (DSA Art. 14)",
+      "transparency1": "Moderacja tresci: LumenLingo nie hostuje tresci generowanych przez uzytkownikow. Wszystkie tresci sa tworzone, doglądane i publikowane przez Lumenshore. Moderacja tresci przesylanych przez uzytkownikow nie jest wymagana ani prowadzona.",
+      "transparency2": "Podejmowanie decyzji przez algorytmy: LumenLingo moze wykorzystywac algorytmy do personalizacji doswiadczenia uczenia sie, w tym planowania powtórek rozlozonych w czasie i dostosowania poziomu trudnosci tresci. Systemy te dzialaja lokalnie na urzadzeniu uzytkownika i nie profiluja uzytkownikow do celow reklamowych.",
+      "transparency3": "Obsługa reklamacji: Jesli masz reklamacje dotyczaca Uslugi, mozesz skontaktowac sie z nami pod adresem hello@lumenshore.com. Potwierdzimy otrzymanie w ciagu 5 dni roboczych i postaramy sie udzielic merytorycznej odpowiedzi w ciagu 30 dni kalendarzowych.",
+      "complianceHeading": "Oswiadczenie o Zgodnosci z DSA",
+      "compliance1": "Lumenshore Limited zobowiazuje sie do przestrzegania Aktu o Uslugach Cyfrowych (Rozporzadzenie UE 2022/2065) w zakresie, w jakim ma on zastosowanie do Uslugi.",
+      "compliance2": "Poniewaz LumenLingo nie kwalifikuje sie jako usluga posrednictwa, usluga hostingowa ani platforma internetowa w ramach DSA, wiekszosc obowiazkow DSA (w tym mechanizm powiadamiania i dzialania zgodnie z art. 16 oraz raportowanie przejrzystosci zgodnie z art. 15) nie ma obecnie zastosowania.",
+      "compliance3": "Lumenshore monitoruje rozwoj regulacji i zaktualizuje swoje srodki zgodnosci, jesli zakres zastosowalnosci DSA zmieni sie ze wzgledu na nowe funkcje lub wytyczne regulacyjne."
+    }
+  },
+  "ar": {
+    "dsaCompliance": {
+      "heading": "الامتثال لقانون الخدمات الرقمية في الاتحاد الأوروبي (DSA)",
+      "contactHeading": "نقطة الاتصال",
+      "contact1": "وفقاً للائحة الاتحاد الأوروبي 2022/2065 (قانون الخدمات الرقمية)، فإن نقطة الاتصال المعينة لسلطات الاتحاد الأوروبي والمستخدمين للاستفسارات القانونية والتنظيمية هي:",
+      "contact2": "Lumenshore Limited، hello@lumenshore.com",
+      "contact3": "يمكن استخدام نقطة الاتصال هذه من قبل متلقي الخدمة والسلطات المختصة للاتصالات المتعلقة بتطبيق قانون الخدمات الرقمية. يمكن أن تتم الاتصالات باللغة الإنجليزية.",
+      "intermediaryHeading": "تصنيف الخدمة",
+      "intermediary1": "LumenLingo هو تطبيق لتعلم اللغات يقدم محتوى تعليمياً خاصاً (بطاقات تعليمية وشروحات قواعد وعبارات وصوتيات) مباشرة للمستخدمين. Lumenshore هي الناشر لجميع المحتوى داخل الخدمة.",
+      "intermediary2": "لا يستضيف LumenLingo حالياً محتوى من إنشاء المستخدمين ولا يخزنه ولا ينقله. لا توجد تعليقات أو منتديات أو ملفات شخصية للمستخدمين أو ميزات اجتماعية. وعلى هذا النحو، لا يعمل LumenLingo كخدمة وسيطة بالمعنى المقصود في المادة 3 من قانون الخدمات الرقمية.",
+      "intermediary3": "إذا تم تقديم ميزات محتوى من إنشاء المستخدمين في المستقبل، ستنفذ Lumenshore التزامات الإخطار والإجراء الكاملة المطلوبة بموجب قانون الخدمات الرقمية.",
+      "transparencyHeading": "معلومات الشفافية (DSA المادة 14)",
+      "transparency1": "إدارة المحتوى: لا يستضيف LumenLingo محتوى من إنشاء المستخدمين. يتم إنشاء جميع المحتوى وتنظيمه ونشره بواسطة Lumenshore. لا تكون هناك حاجة لإدارة محتوى مقدم من المستخدمين ولا يتم إجراؤها.",
+      "transparency2": "اتخاذ القرارات الخوارزمية: قد يستخدم LumenLingo خوارزميات لتخصيص تجربة التعلم، بما في ذلك جدولة التكرار المتباعد وتكييف صعوبة المحتوى. تعمل هذه الأنظمة محلياً على جهاز المستخدم ولا تقوم بتصنيف المستخدمين لأغراض إعلانية.",
+      "transparency3": "معالجة الشكاوى: إذا كانت لديك شكوى بشأن الخدمة، يمكنك الاتصال بنا على hello@lumenshore.com. سنؤكد الاستلام خلال 5 أيام عمل ونهدف إلى تقديم رد جوهري خلال 30 يوماً تقويمياً.",
+      "complianceHeading": "بيان الامتثال لقانون الخدمات الرقمية",
+      "compliance1": "تلتزم Lumenshore Limited بالامتثال لقانون الخدمات الرقمية (لائحة الاتحاد الأوروبي 2022/2065) بقدر ما ينطبق على الخدمة.",
+      "compliance2": "نظراً لأن LumenLingo لا يصنف كخدمة وسيطة أو خدمة استضافة أو منصة عبر الإنترنت بموجب قانون الخدمات الرقمية، فإن غالبية التزامات القانون (بما في ذلك آلية الإخطار والإجراء بموجب المادة 16 وتقارير الشفافية بموجب المادة 15) لا تنطبق حالياً.",
+      "compliance3": "تراقب Lumenshore التطورات التنظيمية وستحدث إجراءات الامتثال الخاصة بها إذا تغير نطاق تطبيق قانون الخدمات الرقمية بسبب ميزات جديدة أو توجيهات تنظيمية."
+    }
+  },
+  "zh": {
+    "dsaCompliance": {
+      "heading": "欧盟数字服务法（DSA）合规",
+      "contactHeading": "联络点",
+      "contact1": "根据欧盟法规2022/2065（数字服务法），为欧盟当局和用户提供的法律和监管咨询指定联络点为：",
+      "contact2": "Lumenshore Limited，hello@lumenshore.com",
+      "contact3": "服务的接收者和主管当局可使用此联络点进行与DSA适用相关的通信。通信可使用英语进行。",
+      "intermediaryHeading": "服务分类",
+      "intermediary1": "LumenLingo是一款语言学习应用程序，直接向用户提供专有教育内容（闪卡、语法解释、短语和音频）。Lumenshore是服务内所有内容的发布者。",
+      "intermediary2": "LumenLingo目前不托管、存储或传输用户生成的内容。没有评论、论坛、用户个人资料或社交功能。因此，LumenLingo不属于DSA第3条所定义的中介服务。",
+      "intermediary3": "如果未来引入用户生成内容功能，Lumenshore将执行DSA要求的完整通知和行动义务。",
+      "transparencyHeading": "透明度信息（DSA第14条）",
+      "transparency1": "内容审核：LumenLingo不托管用户生成的内容。所有内容均由Lumenshore创建、策划和发布。不需要也不进行用户提交内容的审核。",
+      "transparency2": "算法决策：LumenLingo可能使用算法来个性化学习体验，包括间隔重复调度和内容难度自适应。这些系统在用户设备上本地运行，不会为广告目的对用户进行画像。",
+      "transparency3": "投诉处理：如果您对服务有投诉，可以通过hello@lumenshore.com与我们联系。我们将在5个工作日内确认收到，并力争在30个日历日内提供实质性回复。",
+      "complianceHeading": "DSA合规声明",
+      "compliance1": "Lumenshore Limited致力于遵守适用于本服务的数字服务法（欧盟法规2022/2065）。",
+      "compliance2": "由于LumenLingo不属于DSA下的中介服务、托管服务或在线平台，因此DSA的大部分义务（包括第16条规定的通知和行动机制以及第15条规定的透明度报告）目前不适用。",
+      "compliance3": "Lumenshore监控监管动态，如果因新功能或监管指导而导致DSA适用范围发生变化，将更新其合规措施。"
+    }
+  },
+  "uk": {
+    "dsaCompliance": {
+      "heading": "Вiдповiднiсть Акту про цифровi послуги ЄС (DSA)",
+      "contactHeading": "Контактна точка",
+      "contact1": "Вiдповiдно до Регламенту ЄС 2022/2065 (Акт про цифровi послуги) визначеною контактною точкою для органiв ЄС та користувачiв для правових та регуляторних запитiв є:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "Ця контактна точка може бути використана одержувачами Сервiсу та компетентними органами для комунiкацiй, пов'язаних iз застосуванням DSA. Комунiкацiя може здiйснюватися англiйською мовою.",
+      "intermediaryHeading": "Класифiкацiя Сервiсу",
+      "intermediary1": "LumenLingo — це застосунок для вивчення мов, що надає власний освiтнiй контент (флеш-картки, граматичнi пояснення, фрази та аудiо) безпосередньо користувачам. Lumenshore є видавцем усього контенту в рамках Сервiсу.",
+      "intermediary2": "LumenLingo наразi не розмiщує, не зберiгає та не передає контент, створений користувачами. Немає коментарiв, форумiв, профiлiв користувачiв чи соцiальних функцiй. Таким чином, LumenLingo не працює як посередницька послуга у значеннi ст. 3 DSA.",
+      "intermediary3": "Якщо в майбутньому будуть запровадженi функцiї контенту, створеного користувачами, Lumenshore впровадить повнi зобов'язання щодо повiдомлення та вжиття заходiв, що вимагаються DSA.",
+      "transparencyHeading": "Iнформацiя про прозорiсть (DSA Ст. 14)",
+      "transparency1": "Модерацiя контенту: LumenLingo не розмiщує контент, створений користувачами. Весь контент створюється, курується та публiкується Lumenshore. Модерацiя контенту, наданого користувачами, не потрiбна та не здiйснюється.",
+      "transparency2": "Алгоритмiчне прийняття рiшень: LumenLingo може використовувати алгоритми для персоналiзацiї навчального досвiду, включаючи планування iнтервального повторення та адаптацiю складностi контенту. Цi системи працюють локально на пристрої користувача та не створюють профiлi користувачiв для рекламних цiлей.",
+      "transparency3": "Обробка скарг: Якщо у Вас є скарга щодо Сервiсу, Ви можете зв'язатися з нами за адресою hello@lumenshore.com. Ми пiдтвердимо отримання протягом 5 робочих днiв i прагнутимемо надати змiстовну вiдповiдь протягом 30 календарних днiв.",
+      "complianceHeading": "Заява про вiдповiднiсть DSA",
+      "compliance1": "Lumenshore Limited зобов'язується дотримуватися Акту про цифровi послуги (Регламент ЄС 2022/2065) в мiрi його застосовностi до Сервiсу.",
+      "compliance2": "Оскiльки LumenLingo не класифiкується як посередницька послуга, послуга хостингу або онлайн-платформа вiдповiдно до DSA, бiльшiсть зобов'язань DSA (включаючи механiзм повiдомлення та вжиття заходiв згiдно зi ст. 16 та звiтнiсть про прозорiсть згiдно зi ст. 15) наразi не застосовуються.",
+      "compliance3": "Lumenshore вiдстежує регуляторнi змiни та оновлюватиме свої заходи вiдповiдностi, якщо сфера застосування DSA змiниться через новi функцiї або регуляторнi рекомендацiї."
+    }
+  }
+}

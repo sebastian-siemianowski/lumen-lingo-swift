@@ -4,14 +4,46 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
-export function ContactSection() {
-  const [copied, setCopied] = useState(false);
+function CopyButton({ email, copied, onCopy }: { email: string; copied: string | null; onCopy: (email: string) => void }) {
+  const isCopied = copied === email;
+  return (
+    <button
+      onClick={() => onCopy(email)}
+      className={cn(
+        'inline-flex items-center gap-1.5 rounded-lg px-3 py-2.5 text-xs font-medium transition-all duration-300',
+        isCopied ? 'text-emerald-400' : 'text-white/40 hover:text-white/60',
+      )}
+      aria-label={`Copy ${email}`}
+    >
+      {isCopied ? (
+        <motion.svg
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          viewBox="0 0 16 16"
+          fill="none"
+          className="h-3.5 w-3.5"
+        >
+          <path d="M3 8.5l3 3 7-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        </motion.svg>
+      ) : (
+        <svg viewBox="0 0 16 16" fill="none" className="h-3.5 w-3.5" aria-hidden>
+          <rect x="5" y="5" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.25" />
+          <path d="M3 10.5V3.5a.5.5 0 01.5-.5H11" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" />
+        </svg>
+      )}
+      {isCopied ? 'Copied!' : 'Copy'}
+    </button>
+  );
+}
 
-  const copyEmail = async () => {
+export function ContactSection() {
+  const [copied, setCopied] = useState<string | null>(null);
+
+  const copyEmail = async (email: string) => {
     try {
-      await navigator.clipboard.writeText('hello@lumenshore.com');
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      await navigator.clipboard.writeText(email);
+      setCopied(email);
+      setTimeout(() => setCopied(null), 2000);
     } catch {
       // Fallback for older browsers
     }
@@ -45,47 +77,38 @@ export function ContactSection() {
           Can&apos;t find what you&apos;re looking for in the FAQ? We&apos;re here to help. Drop us a line and we&apos;ll get back to you as soon as we can.
         </p>
 
-        {/* Email link */}
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <a
-            href="mailto:hello@lumenshore.com"
-            className="group inline-flex items-center gap-2.5 rounded-xl border border-violet/25 bg-violet/10 px-5 py-3 text-sm font-medium text-violet transition-all duration-300 hover:border-violet/40 hover:bg-violet/15 hover:shadow-[0_0_20px_rgba(139,92,246,0.12)]"
-          >
-            <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 opacity-80" aria-hidden>
-              <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
-              <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
-            </svg>
-            hello@lumenshore.com
-          </a>
-
-          <button
-            onClick={copyEmail}
-            className={cn(
-              'inline-flex items-center gap-1.5 rounded-lg px-3 py-2.5 text-xs font-medium transition-all duration-300',
-              copied
-                ? 'text-emerald-400'
-                : 'text-white/40 hover:text-white/60',
-            )}
-            aria-label="Copy email address"
-          >
-            {copied ? (
-              <motion.svg
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                viewBox="0 0 16 16"
-                fill="none"
-                className="h-3.5 w-3.5"
-              >
-                <path d="M3 8.5l3 3 7-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </motion.svg>
-            ) : (
-              <svg viewBox="0 0 16 16" fill="none" className="h-3.5 w-3.5" aria-hidden>
-                <rect x="5" y="5" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.25" />
-                <path d="M3 10.5V3.5a.5.5 0 01.5-.5H11" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" />
+        {/* Email links */}
+        <div className="mt-6 space-y-3">
+          {/* Support email — dedicated for support & privacy inquiries */}
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href="mailto:support@lumenshore.com"
+              className="group inline-flex items-center gap-2.5 rounded-xl border border-violet/25 bg-violet/10 px-5 py-3 text-sm font-medium text-violet transition-all duration-300 hover:border-violet/40 hover:bg-violet/15 hover:shadow-[0_0_20px_rgba(139,92,246,0.12)]"
+            >
+              <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 opacity-80" aria-hidden>
+                <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
+                <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
               </svg>
-            )}
-            {copied ? 'Copied!' : 'Copy'}
-          </button>
+              support@lumenshore.com
+            </a>
+
+            <CopyButton email="support@lumenshore.com" copied={copied} onCopy={copyEmail} />
+          </div>
+
+          {/* General enquiries */}
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href="mailto:hello@lumenshore.com"
+              className="group inline-flex items-center gap-2.5 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-3 text-sm font-medium text-white/60 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06] hover:text-white/80"
+            >
+              <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 opacity-60" aria-hidden>
+                <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
+                <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
+              </svg>
+              hello@lumenshore.com
+            </a>
+            <span className="text-xs text-white/30">General enquiries</span>
+          </div>
         </div>
 
         {/* Response time badge */}

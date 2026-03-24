@@ -1,0 +1,222 @@
+{
+  "en": {
+    "governingLaw": {
+      "heading": "Governing Law, Jurisdiction & Venue",
+      "lawHeading": "Governing Law",
+      "law1": "These Terms and any dispute or claim arising out of or in connection with them or their subject matter or formation (including non-contractual disputes or claims) SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF ENGLAND AND WALES.",
+      "law2": "This choice of law applies regardless of your country of residence, domicile, or the country from which you access the Service, and notwithstanding any conflict of law principles that would otherwise apply.",
+      "jurisdictionHeading": "Exclusive Jurisdiction",
+      "jurisdiction1": "The courts of England and Wales shall have exclusive jurisdiction to settle any dispute arising out of or in connection with these Terms.",
+      "jurisdiction2": "Where Section 18 (US Arbitration) of these Terms applies, the arbitration provisions shall govern instead of this jurisdiction clause.",
+      "jurisdiction3": "Nothing in this section prevents either party from seeking interim or injunctive relief in any court of competent jurisdiction.",
+      "venueHeading": "Venue",
+      "venue1": "Any court proceedings shall be brought in the courts located in Leicester, England, or the High Court of Justice in London, at Lumenshore's election.",
+      "venue2": "By using the Service, you consent to the personal jurisdiction of these courts and waive any objections to venue, including on the grounds of forum non conveniens.",
+      "enforceabilityHeading": "Per-Jurisdiction Enforceability",
+      "enforceability1": "If you are an EU consumer, nothing in this clause affects your right to bring proceedings in the courts of your domicile, as provided by the Brussels Regulation (recast).",
+      "enforceability2": "If you are an Australian consumer, this jurisdiction clause does not restrict any rights you may have under the Australian Consumer Law to bring proceedings in Australian courts.",
+      "enforceability3": "To the extent this clause is unenforceable in your jurisdiction, disputes shall be resolved in the courts that have jurisdiction under applicable law.",
+      "languageHeading": "Language of Proceedings",
+      "language1": "All legal proceedings, arbitration, and communications relating to disputes shall be conducted in English.",
+      "language2": "The English language version of these Terms shall prevail over any translated version in the event of conflict."
+    }
+  },
+  "es": {
+    "governingLaw": {
+      "heading": "Ley Aplicable, Jurisdiccion y Competencia",
+      "lawHeading": "Ley Aplicable",
+      "law1": "Estos Terminos y cualquier disputa o reclamacion que surja de ellos o en relacion con ellos o su objeto o formacion (incluidas disputas o reclamaciones no contractuales) SE REGIRAN E INTERPRETARAN DE ACUERDO CON LAS LEYES DE INGLATERRA Y GALES.",
+      "law2": "Esta eleccion de ley se aplica independientemente de su pais de residencia, domicilio o el pais desde el que acceda al Servicio, y no obstante cualquier principio de conflicto de leyes que de otro modo seria aplicable.",
+      "jurisdictionHeading": "Jurisdiccion Exclusiva",
+      "jurisdiction1": "Los tribunales de Inglaterra y Gales tendran jurisdiccion exclusiva para resolver cualquier disputa que surja de estos Terminos o en relacion con ellos.",
+      "jurisdiction2": "Cuando se aplique la Seccion 18 (Arbitraje de EE.UU.) de estos Terminos, las disposiciones de arbitraje regiran en lugar de esta clausula de jurisdiccion.",
+      "jurisdiction3": "Nada en esta seccion impide que cualquiera de las partes solicite medidas cautelares o de urgencia ante cualquier tribunal competente.",
+      "venueHeading": "Competencia Territorial",
+      "venue1": "Cualquier procedimiento judicial se presentara ante los tribunales de Leicester, Inglaterra, o el Tribunal Superior de Justicia de Londres, a eleccion de Lumenshore.",
+      "venue2": "Al utilizar el Servicio, usted acepta la jurisdiccion personal de estos tribunales y renuncia a cualquier objecion sobre la competencia territorial, incluidos los motivos de forum non conveniens.",
+      "enforceabilityHeading": "Ejecutabilidad por Jurisdiccion",
+      "enforceability1": "Si usted es un consumidor de la UE, nada en esta clausula afecta su derecho a iniciar procedimientos ante los tribunales de su domicilio, segun lo dispuesto por el Reglamento de Bruselas (refundido).",
+      "enforceability2": "Si usted es un consumidor australiano, esta clausula de jurisdiccion no restringe ningun derecho que pueda tener conforme a la Ley del Consumidor Australiano para iniciar procedimientos ante tribunales australianos.",
+      "enforceability3": "En la medida en que esta clausula sea inaplicable en su jurisdiccion, las disputas se resolveran ante los tribunales que tengan jurisdiccion segun la legislacion aplicable.",
+      "languageHeading": "Idioma del Procedimiento",
+      "language1": "Todos los procedimientos judiciales, arbitrajes y comunicaciones relacionados con disputas se llevaran a cabo en ingles.",
+      "language2": "La version en ingles de estos Terminos prevalecera sobre cualquier version traducida en caso de conflicto."
+    }
+  },
+  "fr": {
+    "governingLaw": {
+      "heading": "Droit Applicable, Juridiction et Competence",
+      "lawHeading": "Droit Applicable",
+      "law1": "Les presentes Conditions et tout litige ou reclamation decoulant de ou en rapport avec elles ou leur objet ou leur formation (y compris les litiges ou reclamations non contractuels) SERONT REGIS ET INTERPRETES CONFORMEMENT AU DROIT D'ANGLETERRE ET DU PAYS DE GALLES.",
+      "law2": "Ce choix de loi s'applique quel que soit votre pays de residence, votre domicile ou le pays a partir duquel vous accedez au Service, et nonobstant tout principe de conflit de lois autrement applicable.",
+      "jurisdictionHeading": "Competence Exclusive",
+      "jurisdiction1": "Les tribunaux d'Angleterre et du Pays de Galles sont seuls competents pour regler tout litige decoulant des presentes Conditions ou s'y rapportant.",
+      "jurisdiction2": "Lorsque la Section 18 (Arbitrage aux Etats-Unis) des presentes Conditions s'applique, les dispositions d'arbitrage prevaudront en lieu de cette clause de competence.",
+      "jurisdiction3": "Rien dans cette section n'empeche l'une ou l'autre des parties de demander des mesures provisoires ou injonctives aupres de tout tribunal competent.",
+      "venueHeading": "Lieu de Competence",
+      "venue1": "Toute procedure judiciaire sera engagee devant les tribunaux de Leicester, Angleterre, ou la Haute Cour de Justice de Londres, au choix de Lumenshore.",
+      "venue2": "En utilisant le Service, vous consentez a la competence personnelle de ces tribunaux et renoncez a toute objection relative au lieu de competence, y compris pour des motifs de forum non conveniens.",
+      "enforceabilityHeading": "Force Executoire par Juridiction",
+      "enforceability1": "Si vous etes un consommateur de l'UE, rien dans cette clause n'affecte votre droit d'engager des procedures devant les tribunaux de votre domicile, conformement au Reglement de Bruxelles (refonte).",
+      "enforceability2": "Si vous etes un consommateur australien, cette clause de competence ne restreint aucun droit que vous pourriez avoir en vertu de la loi australienne sur la consommation pour engager des procedures devant les tribunaux australiens.",
+      "enforceability3": "Dans la mesure ou cette clause est inapplicable dans votre juridiction, les litiges seront resolus devant les tribunaux competents en vertu du droit applicable.",
+      "languageHeading": "Langue des Procedures",
+      "language1": "Toutes les procedures judiciaires, arbitrages et communications relatifs aux litiges seront menes en anglais.",
+      "language2": "La version anglaise des presentes Conditions prevaudra sur toute version traduite en cas de conflit."
+    }
+  },
+  "de": {
+    "governingLaw": {
+      "heading": "Anwendbares Recht, Gerichtsstand und Zustaendigkeit",
+      "lawHeading": "Anwendbares Recht",
+      "law1": "Diese Bedingungen und alle Streitigkeiten oder Ansprueche, die sich aus ihnen oder im Zusammenhang mit ihnen oder ihrem Gegenstand oder ihrer Entstehung ergeben (einschliesslich ausservertraglicher Streitigkeiten oder Ansprueche), UNTERLIEGEN DEM RECHT VON ENGLAND UND WALES UND SIND DANACH AUSZULEGEN.",
+      "law2": "Diese Rechtswahl gilt unabhaengig von Ihrem Wohnsitzland, Ihrem Domizil oder dem Land, von dem aus Sie auf den Dienst zugreifen, und ungeachtet etwaiger Kollisionsnormen, die andernfalls gelten wuerden.",
+      "jurisdictionHeading": "Ausschliesslicher Gerichtsstand",
+      "jurisdiction1": "Die Gerichte von England und Wales sind ausschliesslich zustaendig fuer die Beilegung aller Streitigkeiten, die sich aus diesen Bedingungen ergeben oder damit zusammenhaengen.",
+      "jurisdiction2": "Soweit Abschnitt 18 (US-Schiedsverfahren) dieser Bedingungen gilt, gelten statt dieser Gerichtsstandsklausel die Schiedsverfahrensbestimmungen.",
+      "jurisdiction3": "Nichts in diesem Abschnitt hindert eine der Parteien daran, einstweilige Verfuegungen bei jedem zustaendigen Gericht zu beantragen.",
+      "venueHeading": "Gerichtsort",
+      "venue1": "Gerichtsverfahren sind vor den Gerichten in Leicester, England, oder dem High Court of Justice in London einzuleiten, nach Wahl von Lumenshore.",
+      "venue2": "Durch die Nutzung des Dienstes stimmen Sie der persoenlichen Zustaendigkeit dieser Gerichte zu und verzichten auf Einwaende gegen den Gerichtsort, einschliesslich aus Gruenden des forum non conveniens.",
+      "enforceabilityHeading": "Durchsetzbarkeit nach Rechtsordnung",
+      "enforceability1": "Wenn Sie ein EU-Verbraucher sind, beruehrt nichts in dieser Klausel Ihr Recht, Verfahren vor den Gerichten Ihres Wohnsitzes einzuleiten, wie in der Bruessel-Ia-Verordnung vorgesehen.",
+      "enforceability2": "Wenn Sie ein australischer Verbraucher sind, schraenkt diese Gerichtsstandsklausel keine Rechte ein, die Sie nach dem australischen Verbraucherrecht haben, Verfahren vor australischen Gerichten einzuleiten.",
+      "enforceability3": "Soweit diese Klausel in Ihrer Rechtsordnung nicht durchsetzbar ist, werden Streitigkeiten vor den Gerichten beigelegt, die nach geltendem Recht zustaendig sind.",
+      "languageHeading": "Verfahrenssprache",
+      "language1": "Alle Gerichtsverfahren, Schiedsverfahren und Korrespondenzen im Zusammenhang mit Streitigkeiten werden in englischer Sprache gefuehrt.",
+      "language2": "Die englischsprachige Fassung dieser Bedingungen hat im Falle eines Widerspruchs Vorrang vor jeder uebersetzten Fassung."
+    }
+  },
+  "ja": {
+    "governingLaw": {
+      "heading": "準拠法、管轄権および裁判地",
+      "lawHeading": "準拠法",
+      "law1": "本規約ならびに本規約またはその主題もしくは締結に起因もしくは関連するあらゆる紛争または請求（契約外の紛争または請求を含む）は、イングランドおよびウェールズの法律に準拠し、同法に従って解釈されるものとします。",
+      "law2": "この準拠法の選択は、お客様の居住国、本籍地、またはサービスにアクセスする国に関わらず適用され、別途適用されうる抵触法の原則にかかわらず適用されます。",
+      "jurisdictionHeading": "専属管轄",
+      "jurisdiction1": "イングランドおよびウェールズの裁判所は、本規約に起因または関連するあらゆる紛争を解決する専属管轄権を有するものとします。",
+      "jurisdiction2": "本規約の第18条（米国仲裁）が適用される場合、本管轄条項に代えて仲裁条項が適用されます。",
+      "jurisdiction3": "本条のいかなる規定も、いずれの当事者がいかなる管轄裁判所においても暫定的または差止的救済を求めることを妨げるものではありません。",
+      "venueHeading": "裁判地",
+      "venue1": "すべての裁判手続きは、Lumenshoreの選択により、イングランドのレスター所在の裁判所またはロンドンの高等法院に提起されるものとします。",
+      "venue2": "本サービスをご利用になることにより、お客様はこれらの裁判所の人的管轄権に同意し、不便な法廷地の抗弁を含む裁判地に対するあらゆる異議を放棄するものとします。",
+      "enforceabilityHeading": "各法域における執行可能性",
+      "enforceability1": "お客様がEUの消費者である場合、本条項のいかなる規定も、ブリュッセル規則（改正版）に基づくお客様の本国裁判所で訴訟を提起する権利に影響を与えるものではありません。",
+      "enforceability2": "お客様がオーストラリアの消費者である場合、本管轄条項は、オーストラリア消費者法に基づきオーストラリアの裁判所で訴訟を提起するお客様の権利を制限するものではありません。",
+      "enforceability3": "本条項がお客様の法域で執行不能である場合、紛争は適用法の下で管轄権を有する裁判所で解決されるものとします。",
+      "languageHeading": "手続き言語",
+      "language1": "紛争に関するすべての法的手続き、仲裁および通信は英語で行われるものとします。",
+      "language2": "本規約の英語版は、翻訳版との間に矛盾がある場合、翻訳版に優先するものとします。"
+    }
+  },
+  "pt": {
+    "governingLaw": {
+      "heading": "Lei Aplicavel, Jurisdicao e Foro",
+      "lawHeading": "Lei Aplicavel",
+      "law1": "Estes Termos e qualquer disputa ou reclamacao decorrente de ou em conexao com eles ou seu objeto ou formacao (incluindo disputas ou reclamacoes nao contratuais) SERAO REGIDOS E INTERPRETADOS DE ACORDO COM AS LEIS DA INGLATERRA E DO PAIS DE GALES.",
+      "law2": "Esta escolha de lei aplica-se independentemente do seu pais de residencia, domicilio ou do pais a partir do qual acede ao Servico, e nao obstante quaisquer principios de conflito de leis que de outra forma se aplicariam.",
+      "jurisdictionHeading": "Jurisdicao Exclusiva",
+      "jurisdiction1": "Os tribunais de Inglaterra e Pais de Gales terao jurisdicao exclusiva para resolver qualquer disputa decorrente de ou em conexao com estes Termos.",
+      "jurisdiction2": "Quando a Secao 18 (Arbitragem nos EUA) destes Termos se aplicar, as disposicoes de arbitragem regerao em vez desta clausula de jurisdicao.",
+      "jurisdiction3": "Nada nesta secao impede qualquer das partes de procurar medidas cautelares ou liminares em qualquer tribunal competente.",
+      "venueHeading": "Foro",
+      "venue1": "Quaisquer procedimentos judiciais serao instaurados nos tribunais localizados em Leicester, Inglaterra, ou no Tribunal Superior de Justica de Londres, por escolha da Lumenshore.",
+      "venue2": "Ao utilizar o Servico, voce consente com a jurisdicao pessoal destes tribunais e renuncia a quaisquer objecoes ao foro, incluindo com base em forum non conveniens.",
+      "enforceabilityHeading": "Aplicabilidade por Jurisdicao",
+      "enforceability1": "Se voce e um consumidor da UE, nada nesta clausula afeta o seu direito de instaurar procedimentos nos tribunais do seu domicilio, conforme previsto pelo Regulamento de Bruxelas (reformulado).",
+      "enforceability2": "Se voce e um consumidor australiano, esta clausula de jurisdicao nao restringe quaisquer direitos que possa ter ao abrigo da Lei do Consumidor Australiano para instaurar procedimentos nos tribunais australianos.",
+      "enforceability3": "Na medida em que esta clausula seja inaplicavel na sua jurisdicao, as disputas serao resolvidas nos tribunais competentes nos termos da lei aplicavel.",
+      "languageHeading": "Idioma dos Procedimentos",
+      "language1": "Todos os procedimentos judiciais, arbitragens e comunicacoes relacionados com disputas serao conduzidos em ingles.",
+      "language2": "A versao em ingles destes Termos prevalecera sobre qualquer versao traduzida em caso de conflito."
+    }
+  },
+  "pl": {
+    "governingLaw": {
+      "heading": "Prawo Wlasciwe, Jurysdykcja i Miejsce",
+      "lawHeading": "Prawo Wlasciwe",
+      "law1": "Niniejsze Warunki oraz wszelkie spory lub roszczenia wynikajace z nich lub w zwiazku z nimi lub ich przedmiotem lub zawarciem (w tym spory lub roszczenia pozaumowne) PODLEGAJA PRAWU ANGLII I WALII I BEDA ZGODNIE Z NIM INTERPRETOWANE.",
+      "law2": "Ten wybor prawa obowiazuje niezaleznie od Twojego kraju zamieszkania, domicylu lub kraju, z ktorego uzyskujesz dostep do Uslugi, i niezaleznie od jakichkolwiek zasad kolizyjnych, ktore w przeciwnym razie mialyby zastosowanie.",
+      "jurisdictionHeading": "Wylaczna Jurysdykcja",
+      "jurisdiction1": "Sady Anglii i Walii maja wylaczna jurysdykcje do rozstrzygania wszelkich sporow wynikajacych z niniejszych Warunkow lub z nimi zwiazanych.",
+      "jurisdiction2": "Gdy zastosowanie ma Sekcja 18 (Arbitraz w USA) niniejszych Warunkow, postanowienia arbitrazowe obowiazuja zamiast niniejszej klauzuli jurysdykcyjnej.",
+      "jurisdiction3": "Nic w tej sekcji nie uniemozliwia zadnej ze stron ubiegania sie o srodki tymczasowe lub zabezpieczajace w jakimkolwiek wlasciwym sadze.",
+      "venueHeading": "Miejsce Postepowania",
+      "venue1": "Wszelkie postepowania sadowe beda wszczynane przed sadami w Leicester, Anglia, lub Wysokim Trybunale Sprawiedliwosci w Londynie, wedlug wyboru Lumenshore.",
+      "venue2": "Korzystajac z Uslugi, wyrazasz zgode na jurysdykcje osobista tych sadow i zrzekasz sie wszelkich zastrzezen co do miejsca, w tym z powodow forum non conveniens.",
+      "enforceabilityHeading": "Wykonalnosc wedlug Jurysdykcji",
+      "enforceability1": "Jesli jestes konsumentem z UE, nic w tej klauzuli nie wplywa na Twoje prawo do wszczecia postepowania przed sadami Twojego domicylu, zgodnie z Rozporzadzeniem Brukselskim (wersja przeksztalcona).",
+      "enforceability2": "Jesli jestes konsumentem australijskim, ta klauzula jurysdykcyjna nie ogranicza zadnych praw, jakie mozesz miec na mocy australijskiego prawa konsumenckiego do wszczecia postepowania przed sadami australijskimi.",
+      "enforceability3": "W zakresie, w jakim ta klauzula jest niewykonalna w Twojej jurysdykcji, spory beda rozstrzygane przez sady wlasciwe na mocy obowiazujacego prawa.",
+      "languageHeading": "Jezyk Postepowania",
+      "language1": "Wszystkie postepowania sadowe, arbitrazowe i komunikacja zwiazana ze sporami beda prowadzone w jezyku angielskim.",
+      "language2": "Angielskojezyczna wersja niniejszych Warunkow ma pierwszenstwo przed jakakolwiek wersja tlumaczona w przypadku konfliktu."
+    }
+  },
+  "ar": {
+    "governingLaw": {
+      "heading": "القانون الحاكم والاختصاص القضائي والمكان",
+      "lawHeading": "القانون الحاكم",
+      "law1": "تخضع هذه الشروط وأي نزاع أو مطالبة ناشئة عنها أو متصلة بها أو بموضوعها أو تكوينها (بما في ذلك النزاعات أو المطالبات غير التعاقدية) لقوانين إنجلترا وويلز وتُفسَّر وفقاً لها.",
+      "law2": "ينطبق اختيار القانون هذا بغض النظر عن بلد إقامتك أو موطنك أو البلد الذي تصل منه إلى الخدمة، وبصرف النظر عن أي مبادئ تنازع قوانين قد تنطبق بخلاف ذلك.",
+      "jurisdictionHeading": "الاختصاص القضائي الحصري",
+      "jurisdiction1": "تختص محاكم إنجلترا وويلز حصرياً بتسوية أي نزاع ينشأ عن هذه الشروط أو يتصل بها.",
+      "jurisdiction2": "عندما ينطبق القسم 18 (التحكيم في الولايات المتحدة) من هذه الشروط، تسود أحكام التحكيم بدلاً من بند الاختصاص القضائي هذا.",
+      "jurisdiction3": "لا يمنع أي شيء في هذا القسم أياً من الطرفين من طلب تدابير مؤقتة أو أوامر قضائية أمام أي محكمة مختصة.",
+      "venueHeading": "المكان",
+      "venue1": "تُرفع أي إجراءات قضائية أمام المحاكم الكائنة في ليستر، إنجلترا، أو المحكمة العليا في لندن، بحسب اختيار Lumenshore.",
+      "venue2": "باستخدام الخدمة، فإنك توافق على الاختصاص الشخصي لهذه المحاكم وتتنازل عن أي اعتراضات على المكان، بما في ذلك على أساس عدم ملاءمة المنتدى.",
+      "enforceabilityHeading": "قابلية التنفيذ حسب الولاية القضائية",
+      "enforceability1": "إذا كنت مستهلكاً في الاتحاد الأوروبي، فلا شيء في هذا البند يؤثر على حقك في رفع دعوى أمام محاكم موطنك، وفقاً لما ينص عليه نظام بروكسل (المعدل).",
+      "enforceability2": "إذا كنت مستهلكاً أسترالياً، فإن بند الاختصاص القضائي هذا لا يقيد أي حقوق قد تكون لك بموجب قانون المستهلك الأسترالي لرفع دعوى أمام المحاكم الأسترالية.",
+      "enforceability3": "بقدر ما يكون هذا البند غير قابل للتنفيذ في نطاق اختصاصك، تُحل النزاعات أمام المحاكم المختصة بموجب القانون المعمول به.",
+      "languageHeading": "لغة الإجراءات",
+      "language1": "تُجرى جميع الإجراءات القانونية والتحكيم والمراسلات المتعلقة بالنزاعات باللغة الإنجليزية.",
+      "language2": "تسود النسخة الإنجليزية من هذه الشروط على أي نسخة مترجمة في حالة التعارض."
+    }
+  },
+  "zh": {
+    "governingLaw": {
+      "heading": "适用法律、管辖权与审判地",
+      "lawHeading": "适用法律",
+      "law1": "本条款以及因其或与其主题或形成有关而产生的任何争议或索赔（包括非合同争议或索赔）应受英格兰和威尔士法律管辖并据其解释。",
+      "law2": "无论您的居住国、住所地或访问服务所在国如何，本法律选择均适用，且不受任何可能适用的法律冲突原则的影响。",
+      "jurisdictionHeading": "专属管辖",
+      "jurisdiction1": "英格兰和威尔士法院对因本条款引起或与之相关的任何争议享有专属管辖权。",
+      "jurisdiction2": "当本条款第18条（美国仲裁）适用时，仲裁条款取代本管辖条款。",
+      "jurisdiction3": "本条款中的任何内容均不妨碍任何一方在任何有管辖权的法院寻求临时或禁令性救济。",
+      "venueHeading": "审判地",
+      "venue1": "任何法院诉讼应在英格兰莱斯特的法院或伦敦高等法院提起，由Lumenshore选择。",
+      "venue2": "使用本服务即表示您同意上述法院的属人管辖权，并放弃对审判地的任何异议，包括基于不方便法院的理由。",
+      "enforceabilityHeading": "各司法管辖区的可执行性",
+      "enforceability1": "如果您是欧盟消费者，本条款中的任何内容均不影响您根据《布鲁塞尔条例》（重铸版）在您住所地法院提起诉讼的权利。",
+      "enforceability2": "如果您是澳大利亚消费者，本管辖条款不限制您根据澳大利亚消费者法在澳大利亚法院提起诉讼的任何权利。",
+      "enforceability3": "如果本条款在您所在司法管辖区不可执行，争议应由适用法律规定的有管辖权的法院解决。",
+      "languageHeading": "诉讼语言",
+      "language1": "与争议相关的所有法律程序、仲裁和通讯应以英文进行。",
+      "language2": "如有冲突，本条款的英文版本应优先于任何翻译版本。"
+    }
+  },
+  "uk": {
+    "governingLaw": {
+      "heading": "Застосовне право, юрисдикцiя та мiсце розгляду",
+      "lawHeading": "Застосовне право",
+      "law1": "Цi Умови та будь-яка суперечка або претензiя, що виникає з них або у зв'язку з ними, їхнiм предметом або формуванням (включаючи позадоговiрнi суперечки або претензiї), РЕГУЛЮЮТЬСЯ ТА ТЛУМАЧАТЬСЯ ВIДПОВIДНО ДО ЗАКОНОДАВСТВА АНГЛIЇ ТА УЕЛЬСУ.",
+      "law2": "Цей вибiр права застосовується незалежно вiд вашої країни проживання, домiцилю або країни, з якої ви отримуєте доступ до Сервiсу, та незважаючи на будь-якi принципи колiзiйного права, якi iнакше застосовувалися б.",
+      "jurisdictionHeading": "Виключна юрисдикцiя",
+      "jurisdiction1": "Суди Англiї та Уельсу мають виключну юрисдикцiю для вирiшення будь-яких спорiв, що виникають з цих Умов або у зв'язку з ними.",
+      "jurisdiction2": "Коли застосовується Роздiл 18 (Арбiтраж у США) цих Умов, арбiтражнi положення мають перевагу над цiєю юрисдикцiйною клаузулою.",
+      "jurisdiction3": "Нiщо в цьому роздiлi не перешкоджає будь-якiй сторонi звертатися за тимчасовим або заборонним захистом до будь-якого компетентного суду.",
+      "venueHeading": "Мiсце розгляду",
+      "venue1": "Будь-якi судовi провадження подаються до судiв, розташованих у Лестерi, Англiя, або до Високого суду правосуддя в Лондонi, за вибором Lumenshore.",
+      "venue2": "Використовуючи Сервiс, ви погоджуєтесь з персональною юрисдикцiєю цих судiв та вiдмовляєтесь вiд будь-яких заперечень щодо мiсця, зокрема на пiдставi незручностi суду.",
+      "enforceabilityHeading": "Виконуванiсть за юрисдикцiєю",
+      "enforceability1": "Якщо ви є споживачем ЄС, нiщо в цiй клаузулi не впливає на ваше право подавати позов до судiв вашого домiцилю, як передбачено Брюссельським регламентом (переглянутим).",
+      "enforceability2": "Якщо ви є австралiйським споживачем, ця юрисдикцiйна клаузула не обмежує жодних прав, якi ви можете мати за австралiйським законодавством про захист споживачiв на подання позову до австралiйських судiв.",
+      "enforceability3": "У тiй мiрi, в якiй ця клаузула є нездiйсненною у вашiй юрисдикцiї, спори вирiшуються судами, якi мають юрисдикцiю за застосовним правом.",
+      "languageHeading": "Мова провадження",
+      "language1": "Усi судовi провадження, арбiтражi та комунiкацiї, пов'язанi зi спорами, провадяться англiйською мовою.",
+      "language2": "Англомовна версiя цих Умов має перевагу над будь-якою перекладеною версiєю у разi конфлiкту."
+    }
+  }
+}

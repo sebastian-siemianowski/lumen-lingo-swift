@@ -63,13 +63,56 @@ export default async function TermsPage({
     { id: 'data-export', text: t('dataExport.heading'), level: 2 },
     { id: 'user-content', text: t('userContent.heading'), level: 2 },
     { id: 'disclaimers', text: t('disclaimers.heading'), level: 2 },
+    { id: 'educational-disclaimer', text: t('educationalDisclaimer.heading'), level: 2 },
     { id: 'limitation-of-liability', text: t('limitationOfLiability.heading'), level: 2 },
+    { id: 'force-majeure', text: t('forceMajeure.heading'), level: 2 },
+    { id: 'indemnification', text: t('indemnification.heading'), level: 2 },
+    { id: 'tiered-liability-caps', text: t('tieredLiabilityCaps.heading'), level: 2 },
+    { id: 'damage-exclusions', text: t('damageExclusions.heading'), level: 2 },
+    { id: 'warranty-disclaimer', text: t('warrantyDisclaimer.heading'), level: 2 },
+    { id: 'user-reliance', text: t('userReliance.heading'), level: 2 },
+    { id: 'third-party-services', text: t('thirdPartyServices.heading'), level: 2 },
+    { id: 'service-availability', text: t('serviceAvailability.heading'), level: 2 },
     { id: 'consumer-rights', text: t('consumerRights.heading'), level: 2 },
     { id: 'aggregate-data', text: t('aggregateData.heading'), level: 2 },
     { id: 'termination', text: t('termination.heading'), level: 2 },
     { id: 'geographic-restrictions', text: t('geographicRestrictions.heading'), level: 2 },
+    { id: 'dispute-resolution', text: t('disputeResolution.heading'), level: 2 },
+    { id: 'us-arbitration', text: t('usArbitration.heading'), level: 2 },
     { id: 'governing-law', text: t('governingLaw.heading'), level: 2 },
     { id: 'enforcement-remedies', text: t('enforcementRemedies.heading'), level: 2 },
+    { id: 'entire-agreement', text: t('entireAgreement.heading'), level: 2 },
+    { id: 'severability', text: t('severability.heading'), level: 2 },
+    { id: 'assignment', text: t('assignment.heading'), level: 2 },
+    { id: 'waiver', text: t('waiver.heading'), level: 2 },
+    { id: 'no-partnership', text: t('noPartnership.heading'), level: 2 },
+    { id: 'electronic-communications', text: t('electronicCommunications.heading'), level: 2 },
+    { id: 'headings-clause', text: t('headingsClause.heading'), level: 2 },
+    { id: 'survival', text: t('survival.heading'), level: 2 },
+    { id: 'no-third-party-beneficiaries', text: t('noThirdPartyBeneficiaries.heading'), level: 2 },
+    { id: 'user-representations', text: t('userRepresentations.heading'), level: 2 },
+    { id: 'user-obligations', text: t('userObligations.heading'), level: 2 },
+    { id: 'user-indemnification', text: t('userIndemnification.heading'), level: 2 },
+    { id: 'breach-consequences', text: t('breachConsequences.heading'), level: 2 },
+    { id: 'service-modification', text: t('serviceModification.heading'), level: 2 },
+    { id: 'service-suspension', text: t('serviceSuspension.heading'), level: 2 },
+    { id: 'service-termination', text: t('serviceTermination.heading'), level: 2 },
+    { id: 'terms-modification', text: t('termsModification.heading'), level: 2 },
+    { id: 'termination-effect', text: t('terminationEffect.heading'), level: 2 },
+    { id: 'claims-limitation', text: t('claimsLimitation.heading'), level: 2 },
+    { id: 'refund-policy', text: t('refundPolicy.heading'), level: 2 },
+    { id: 'governing-law', text: t('governingLaw.heading'), level: 2 },
+    { id: 'assumption-of-risk', text: t('assumptionOfRisk.heading'), level: 2 },
+    { id: 'third-party-disclaimer', text: t('thirdPartyDisclaimer.heading'), level: 2 },
+    { id: 'feedback-ip', text: t('feedbackIP.heading'), level: 2 },
+    { id: 'pre-suit-notice', text: t('preSuitNotice.heading'), level: 2 },
+    { id: 'sole-remedy', text: t('soleRemedy.heading'), level: 2 },
+    { id: 'data-loss-shield', text: t('dataLossShield.heading'), level: 2 },
+    { id: 'service-discontinuation', text: t('serviceDiscontinuation.heading'), level: 2 },
+    { id: 'regulatory-shield', text: t('regulatoryShield.heading'), level: 2 },
+    { id: 'account-security', text: t('accountSecurity.heading'), level: 2 },
+    { id: 'class-action-waiver', text: t('classActionWaiver.heading'), level: 2 },
+    { id: 'dsa-compliance', text: t('dsaCompliance.heading'), level: 2 },
     { id: 'changes', text: t('changes.heading'), level: 2 },
     { id: 'contact', text: t('contactUs.heading'), level: 2 },
   ];
@@ -94,6 +137,9 @@ export default async function TermsPage({
                   <path d="M8 4v4l2.5 1.5M14 8A6 6 0 112 8a6 6 0 0112 0z" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" />
                 </svg>
                 {tLegal('lastUpdated')}
+              </span>
+              <span className="inline-flex items-center gap-2 rounded-full border border-glass-border bg-white/[0.03] px-4 py-2 text-xs text-white/50">
+                {tLegal('termsVersion')}
               </span>
               <DownloadPDFButton label={tLegal('downloadPdf')} />
             </div>
@@ -246,6 +292,13 @@ export default async function TermsPage({
                   <p>{t('disclaimers.supplement')}</p>
                 </section>
 
+                <section id="educational-disclaimer">
+                  <h2>{t('educationalDisclaimer.heading')}</h2>
+                  <p>{t('educationalDisclaimer.p1')}</p>
+                  <p>{t('educationalDisclaimer.p2')}</p>
+                  <p>{t('educationalDisclaimer.p3')}</p>
+                </section>
+
                 <section id="limitation-of-liability">
                   <h2>{t('limitationOfLiability.heading')}</h2>
                   <p>{t('limitationOfLiability.intro')}</p>
@@ -256,6 +309,63 @@ export default async function TermsPage({
                     <li>{t('limitationOfLiability.li4')}</li>
                   </ul>
                   <p>{t('limitationOfLiability.cap')}</p>
+                  <p>{t('limitationOfLiability.statutory')}</p>
+                </section>
+
+                <section id="force-majeure">
+                  <h2>{t('forceMajeure.heading')}</h2>
+                  <p>{t('forceMajeure.p1')}</p>
+                  <p>{t('forceMajeure.p2')}</p>
+                </section>
+
+                <section id="indemnification">
+                  <h2>{t('indemnification.heading')}</h2>
+                  <p>{t('indemnification.p1')}</p>
+                  <ul>
+                    <li>{t('indemnification.li1')}</li>
+                    <li>{t('indemnification.li2')}</li>
+                    <li>{t('indemnification.li3')}</li>
+                    <li>{t('indemnification.li4')}</li>
+                  </ul>
+                </section>
+
+                <section id="tiered-liability-caps">
+                  <h2>{t('tieredLiabilityCaps.heading')}</h2>
+                  <p>{t('tieredLiabilityCaps.freeP1')}</p>
+                  <p>{t('tieredLiabilityCaps.paidP1')}</p>
+                  <p>{t('tieredLiabilityCaps.iapNote')}</p>
+                </section>
+
+                <section id="damage-exclusions">
+                  <h2>{t('damageExclusions.heading')}</h2>
+                  <p>{t('damageExclusions.p1')}</p>
+                  <p>{t('damageExclusions.p2')}</p>
+                </section>
+
+                <section id="warranty-disclaimer">
+                  <h2>{t('warrantyDisclaimer.heading')}</h2>
+                  <p>{t('warrantyDisclaimer.p1')}</p>
+                  <p>{t('warrantyDisclaimer.p2')}</p>
+                  <p>{t('warrantyDisclaimer.ukCarveout')}</p>
+                </section>
+
+                <section id="user-reliance">
+                  <h2>{t('userReliance.heading')}</h2>
+                  <p>{t('userReliance.p1')}</p>
+                  <p>{t('userReliance.p2')}</p>
+                </section>
+
+                <section id="third-party-services">
+                  <h2>{t('thirdPartyServices.heading')}</h2>
+                  <p>{t('thirdPartyServices.p1')}</p>
+                  <p>{t('thirdPartyServices.p2')}</p>
+                </section>
+
+                <section id="service-availability">
+                  <h2>{t('serviceAvailability.heading')}</h2>
+                  <p>{t('serviceAvailability.p1')}</p>
+                  <p>{t('serviceAvailability.p2')}</p>
+                  <p>{t('serviceAvailability.p3')}</p>
                 </section>
 
                 {/* ── Consumer Rights (UK CRA 2015) ── */}
@@ -323,6 +433,67 @@ export default async function TermsPage({
                   <p>{t('geographicRestrictions.closing')}</p>
                 </section>
 
+                <section id="dispute-resolution">
+                  <h2>{t('disputeResolution.heading')}</h2>
+                  <p>{t('disputeResolution.intro')}</p>
+
+                  <h3>{t('disputeResolution.step1Heading')}</h3>
+                  <p>{t.rich('disputeResolution.step1P1', {
+                    b: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
+                    emailLink: (chunks: React.ReactNode) => (
+                      <a href="mailto:hello@lumenshore.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
+                    ),
+                  })}</p>
+
+                  <h3>{t('disputeResolution.step2Heading')}</h3>
+                  <p>{t('disputeResolution.step2P1')}</p>
+
+                  <h3>{t('disputeResolution.step3Heading')}</h3>
+                  <p>{t('disputeResolution.step3P1')}</p>
+
+                  <h3>{t('disputeResolution.odrHeading')}</h3>
+                  <p>{t.rich('disputeResolution.odrP1', {
+                    odrLink: (chunks: React.ReactNode) => (
+                      <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
+                    ),
+                  })}</p>
+
+                  <h3>{t('disputeResolution.arbitrationHeading')}</h3>
+                  <p>{t.rich('disputeResolution.arbitrationP1', richTags)}</p>
+                  <p>{t.rich('disputeResolution.arbitrationP2', richTags)}</p>
+
+                  <h3>{t('disputeResolution.classActionHeading')}</h3>
+                  <p>{t('disputeResolution.classActionP1')}</p>
+
+                  <p>{t('disputeResolution.consumerNote')}</p>
+                </section>
+
+                <section id="us-arbitration">
+                  <h2>{t('usArbitration.heading')}</h2>
+                  <p>{t('usArbitration.p1')}</p>
+                  <p>{t('usArbitration.p2')}</p>
+                  <p>{t('usArbitration.p3')}</p>
+
+                  <h3>{t('usArbitration.classActionHeading')}</h3>
+                  <p><strong>{t('usArbitration.classActionP1')}</strong></p>
+                  <p>{t('usArbitration.classActionP2')}</p>
+
+                  <h3>{t('usArbitration.optOutHeading')}</h3>
+                  <p>{t.rich('usArbitration.optOutP1', {
+                    emailLink: (chunks: React.ReactNode) => (
+                      <a href="mailto:hello@lumenshore.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
+                    ),
+                  })}</p>
+
+                  <h3>{t('usArbitration.smallClaimsHeading')}</h3>
+                  <p>{t('usArbitration.smallClaimsP1')}</p>
+
+                  <h3>{t('usArbitration.exceptionsHeading')}</h3>
+                  <p>{t('usArbitration.exceptionsP1')}</p>
+
+                  <p>{t('usArbitration.severabilityP1')}</p>
+                </section>
+
                 <section id="governing-law">
                   <h2>{t('governingLaw.heading')}</h2>
                   <p>{t('governingLaw.p1')}</p>
@@ -341,10 +512,471 @@ export default async function TermsPage({
                   <p>{t('enforcementRemedies.p3')}</p>
                 </section>
 
+                {/* ── Protective Boilerplate (Story 14.6) ─────────── */}
+                <section id="entire-agreement">
+                  <h2>{t('entireAgreement.heading')}</h2>
+                  <p>{t('entireAgreement.p1')}</p>
+                  <p>{t('entireAgreement.p2')}</p>
+                  <p>{t('entireAgreement.p3')}</p>
+                </section>
+
+                <section id="severability">
+                  <h2>{t('severability.heading')}</h2>
+                  <p>{t('severability.p1')}</p>
+                  <p>{t('severability.p2')}</p>
+                </section>
+
+                <section id="assignment">
+                  <h2>{t('assignment.heading')}</h2>
+                  <p>{t('assignment.p1')}</p>
+                  <p>{t('assignment.p2')}</p>
+                </section>
+
+                <section id="waiver">
+                  <h2>{t('waiver.heading')}</h2>
+                  <p>{t('waiver.p1')}</p>
+                  <p>{t('waiver.p2')}</p>
+                  <p>{t('waiver.p3')}</p>
+                </section>
+
+                <section id="no-partnership">
+                  <h2>{t('noPartnership.heading')}</h2>
+                  <p>{t('noPartnership.p1')}</p>
+                  <p>{t('noPartnership.p2')}</p>
+                </section>
+
+                <section id="electronic-communications">
+                  <h2>{t('electronicCommunications.heading')}</h2>
+                  <p>{t('electronicCommunications.p1')}</p>
+                  <p>{t('electronicCommunications.p2')}</p>
+                </section>
+
+                <section id="headings-clause">
+                  <h2>{t('headingsClause.heading')}</h2>
+                  <p>{t('headingsClause.p1')}</p>
+                </section>
+
+                <section id="survival">
+                  <h2>{t('survival.heading')}</h2>
+                  <p>{t('survival.p1')}</p>
+                </section>
+
+                <section id="no-third-party-beneficiaries">
+                  <h2>{t('noThirdPartyBeneficiaries.heading')}</h2>
+                  <p>{t('noThirdPartyBeneficiaries.p1')}</p>
+                  <p>{t('noThirdPartyBeneficiaries.p2')}</p>
+                  <p>{t('noThirdPartyBeneficiaries.appleException')}</p>
+                </section>
+
+                {/* ── User Representations & Obligations (Story 14.7) ── */}
+                <section id="user-representations">
+                  <h2>{t('userRepresentations.heading')}</h2>
+                  <p>{t('userRepresentations.p1')}</p>
+                  <ul>
+                    <li>{t('userRepresentations.li1')}</li>
+                    <li>{t('userRepresentations.li2')}</li>
+                    <li>{t('userRepresentations.li3')}</li>
+                    <li>{t('userRepresentations.li4')}</li>
+                    <li>{t('userRepresentations.li5')}</li>
+                    <li>{t('userRepresentations.li6')}</li>
+                  </ul>
+                </section>
+
+                <section id="user-obligations">
+                  <h2>{t('userObligations.heading')}</h2>
+                  <p>{t('userObligations.p1')}</p>
+                  <ul>
+                    <li>{t('userObligations.li1')}</li>
+                    <li>{t('userObligations.li2')}</li>
+                    <li>{t('userObligations.li3')}</li>
+                    <li>{t('userObligations.li4')}</li>
+                    <li>{t('userObligations.li5')}</li>
+                    <li>{t('userObligations.li6')}</li>
+                    <li>{t('userObligations.li7')}</li>
+                    <li>{t('userObligations.li8')}</li>
+                  </ul>
+                </section>
+
+                <section id="user-indemnification">
+                  <h2>{t('userIndemnification.heading')}</h2>
+                  <p>{t('userIndemnification.p1')}</p>
+                  <ul>
+                    <li>{t('userIndemnification.li1')}</li>
+                    <li>{t('userIndemnification.li2')}</li>
+                    <li>{t('userIndemnification.li3')}</li>
+                    <li>{t('userIndemnification.li4')}</li>
+                  </ul>
+                  <p>{t('userIndemnification.p2')}</p>
+                </section>
+
+                <section id="breach-consequences">
+                  <h2>{t('breachConsequences.heading')}</h2>
+                  <p>{t('breachConsequences.p1')}</p>
+                  <ul>
+                    <li>{t('breachConsequences.li1')}</li>
+                    <li>{t('breachConsequences.li2')}</li>
+                    <li>{t('breachConsequences.li3')}</li>
+                  </ul>
+                  <p>{t('breachConsequences.p2')}</p>
+                </section>
+
+                {/* ── Service Modification Rights (Story 14.8) ── */}
+                <section id="service-modification">
+                  <h2>{t('serviceModification.heading')}</h2>
+                  <p>{t('serviceModification.p1')}</p>
+                  <p>{t('serviceModification.p2')}</p>
+                  <p>{t('serviceModification.p3')}</p>
+                </section>
+
+                <section id="service-suspension">
+                  <h2>{t('serviceSuspension.heading')}</h2>
+                  <p>{t('serviceSuspension.p1')}</p>
+                  <p>{t('serviceSuspension.p2')}</p>
+                  <p>{t('serviceSuspension.p3')}</p>
+                </section>
+
+                <section id="service-termination">
+                  <h2>{t('serviceTermination.heading')}</h2>
+                  <p>{t('serviceTermination.p1')}</p>
+                  <ul>
+                    <li>{t('serviceTermination.li1')}</li>
+                    <li>{t('serviceTermination.li2')}</li>
+                    <li>{t('serviceTermination.li3')}</li>
+                    <li>{t('serviceTermination.li4')}</li>
+                  </ul>
+                  <p>{t('serviceTermination.p2')}</p>
+                  <p>{t('serviceTermination.p3')}</p>
+                </section>
+
+                <section id="terms-modification">
+                  <h2>{t('termsModification.heading')}</h2>
+                  <p>{t('termsModification.p1')}</p>
+                  <p>{t('termsModification.p2')}</p>
+                  <p>{t('termsModification.p3')}</p>
+                  <p>{t('termsModification.p4')}</p>
+                  <p>{t('termsModification.p5')}</p>
+                </section>
+
+                <section id="termination-effect">
+                  <h2>{t('terminationEffect.heading')}</h2>
+                  <p>{t('terminationEffect.p1')}</p>
+                  <p>{t('terminationEffect.p2')}</p>
+                  <p>{t('terminationEffect.p3')}</p>
+                  <p>{t('terminationEffect.p4')}</p>
+                </section>
+
+                {/* ── Limitation Period for Claims (Story 14.9) ── */}
+                <section id="claims-limitation">
+                  <h2>{t('claimsLimitation.heading')}</h2>
+                  <p>{t('claimsLimitation.p1')}</p>
+                  <p>{t('claimsLimitation.p2')}</p>
+                  <p>{t('claimsLimitation.p3')}</p>
+                  <p>{t('claimsLimitation.p4')}</p>
+                  <p>{t('claimsLimitation.p5')}</p>
+                </section>
+
+                {/* ── Refund & Cancellation Policy (Story 14.10) ── */}
+                <section id="refund-policy">
+                  <h2>{t('refundPolicy.heading')}</h2>
+                  <h3>{t('refundPolicy.appleIapHeading')}</h3>
+                  <p>{t('refundPolicy.appleIap1')}</p>
+                  <p>{t('refundPolicy.appleIap2')}</p>
+                  <p>{t('refundPolicy.appleIap3')}</p>
+                  <h3>{t('refundPolicy.cancellationHeading')}</h3>
+                  <p>{t('refundPolicy.cancellation1')}</p>
+                  <p>{t('refundPolicy.cancellation2')}</p>
+                  <p>{t('refundPolicy.cancellation3')}</p>
+                  <h3>{t('refundPolicy.trialHeading')}</h3>
+                  <p>{t('refundPolicy.trial1')}</p>
+                  <p>{t('refundPolicy.trial2')}</p>
+                  <h3>{t('refundPolicy.coolingOffHeading')}</h3>
+                  <p>{t('refundPolicy.coolingOff1')}</p>
+                  <p>{t('refundPolicy.coolingOff2')}</p>
+                  <p>{t('refundPolicy.coolingOff3')}</p>
+                </section>
+
+                {/* ── Governing Law, Jurisdiction & Venue (Story 14.11) ── */}
+                <section id="governing-law">
+                  <h2>{t('governingLaw.heading')}</h2>
+                  <h3>{t('governingLaw.lawHeading')}</h3>
+                  <p>{t('governingLaw.law1')}</p>
+                  <p>{t('governingLaw.law2')}</p>
+                  <h3>{t('governingLaw.jurisdictionHeading')}</h3>
+                  <p>{t('governingLaw.jurisdiction1')}</p>
+                  <p>{t('governingLaw.jurisdiction2')}</p>
+                  <p>{t('governingLaw.jurisdiction3')}</p>
+                  <h3>{t('governingLaw.venueHeading')}</h3>
+                  <p>{t('governingLaw.venue1')}</p>
+                  <p>{t('governingLaw.venue2')}</p>
+                  <h3>{t('governingLaw.enforceabilityHeading')}</h3>
+                  <p>{t('governingLaw.enforceability1')}</p>
+                  <p>{t('governingLaw.enforceability2')}</p>
+                  <p>{t('governingLaw.enforceability3')}</p>
+                  <h3>{t('governingLaw.languageHeading')}</h3>
+                  <p>{t('governingLaw.language1')}</p>
+                  <p>{t('governingLaw.language2')}</p>
+                </section>
+
+                {/* ── Assumption of Risk & Release (Story 14.12) ── */}
+                <section id="assumption-of-risk">
+                  <h2>{t('assumptionOfRisk.heading')}</h2>
+                  <h3>{t('assumptionOfRisk.riskHeading')}</h3>
+                  <p>{t('assumptionOfRisk.risk1')}</p>
+                  <p>{t('assumptionOfRisk.risk2')}</p>
+                  <h3>{t('assumptionOfRisk.releaseHeading')}</h3>
+                  <p>{t('assumptionOfRisk.release1')}</p>
+                  <p>{t('assumptionOfRisk.release2')}</p>
+                  <h3>{t('assumptionOfRisk.carveOutHeading')}</h3>
+                  <p>{t('assumptionOfRisk.carveOut1')}</p>
+                  <p>{t('assumptionOfRisk.carveOut2')}</p>
+                </section>
+
+                {/* ── Third-Party Content, Links & Services (Story 14.13) ── */}
+                <section id="third-party-disclaimer">
+                  <h2>{t('thirdPartyDisclaimer.heading')}</h2>
+                  <h3>{t('thirdPartyDisclaimer.linksHeading')}</h3>
+                  <p>{t('thirdPartyDisclaimer.links1')}</p>
+                  <p>{t('thirdPartyDisclaimer.links2')}</p>
+                  <p>{t('thirdPartyDisclaimer.links3')}</p>
+                  <h3>{t('thirdPartyDisclaimer.appleHeading')}</h3>
+                  <p>{t('thirdPartyDisclaimer.apple1')}</p>
+                  <p>{t('thirdPartyDisclaimer.apple2')}</p>
+                  <p>{t('thirdPartyDisclaimer.apple3')}</p>
+                  <p>{t('thirdPartyDisclaimer.apple4')}</p>
+                  <h3>{t('thirdPartyDisclaimer.infraHeading')}</h3>
+                  <p>{t('thirdPartyDisclaimer.infra1')}</p>
+                  <p>{t('thirdPartyDisclaimer.infra2')}</p>
+                  <h3>{t('thirdPartyDisclaimer.ugcHeading')}</h3>
+                  <p>{t('thirdPartyDisclaimer.ugc1')}</p>
+                  <h3>{t('thirdPartyDisclaimer.authHeading')}</h3>
+                  <p>{t('thirdPartyDisclaimer.auth1')}</p>
+                </section>
+
+                {/* ── Feedback & Submissions IP (Story 14.14) ── */}
+                <section id="feedback-ip">
+                  <h2>{t('feedbackIP.heading')}</h2>
+                  <h3>{t('feedbackIP.assignHeading')}</h3>
+                  <p>{t('feedbackIP.assign1')}</p>
+                  <p>{t('feedbackIP.assign2')}</p>
+                  <p>{t('feedbackIP.assign3')}</p>
+                  <h3>{t('feedbackIP.obligationHeading')}</h3>
+                  <p>{t('feedbackIP.obligation1')}</p>
+                  <p>{t('feedbackIP.obligation2')}</p>
+                  <h3>{t('feedbackIP.confidentialityHeading')}</h3>
+                  <p>{t('feedbackIP.confidentiality1')}</p>
+                  <p>{t('feedbackIP.confidentiality2')}</p>
+                  <h3>{t('feedbackIP.representationHeading')}</h3>
+                  <p>{t('feedbackIP.representation1')}</p>
+                  <p>{t('feedbackIP.representation2')}</p>
+                </section>
+
+                {/* ── Pre-Suit Notice & Mandatory Negotiation (Story 14.15) ── */}
+                <section id="pre-suit-notice">
+                  <h2>{t('preSuitNotice.heading')}</h2>
+                  <h3>{t('preSuitNotice.noticeHeading')}</h3>
+                  <p>{t('preSuitNotice.notice1')}</p>
+                  <p>{t('preSuitNotice.notice2')}</p>
+                  <h3>{t('preSuitNotice.negotiationHeading')}</h3>
+                  <p>{t('preSuitNotice.negotiation1')}</p>
+                  <p>{t('preSuitNotice.negotiation2')}</p>
+                  <p>{t('preSuitNotice.negotiation3')}</p>
+                  <h3>{t('preSuitNotice.consequenceHeading')}</h3>
+                  <p>{t('preSuitNotice.consequence1')}</p>
+                  <p>{t('preSuitNotice.consequence2')}</p>
+                  <h3>{t('preSuitNotice.exceptionHeading')}</h3>
+                  <p>{t('preSuitNotice.exception1')}</p>
+                  <h3>{t('preSuitNotice.tollingHeading')}</h3>
+                  <p>{t('preSuitNotice.tolling1')}</p>
+                  <p>{t('preSuitNotice.tolling2')}</p>
+                </section>
+
+                {/* ── Sole & Exclusive Remedy (Story 14.16) ── */}
+                <section id="sole-remedy">
+                  <h2>{t('soleRemedy.heading')}</h2>
+                  <h3>{t('soleRemedy.dissatisfactionHeading')}</h3>
+                  <p>{t('soleRemedy.dissatisfaction1')}</p>
+                  <p>{t('soleRemedy.dissatisfaction2')}</p>
+                  <p>{t('soleRemedy.dissatisfaction3')}</p>
+                  <h3>{t('soleRemedy.failureHeading')}</h3>
+                  <p>{t('soleRemedy.failure1')}</p>
+                  <p>{t('soleRemedy.failure2')}</p>
+                  <p>{t('soleRemedy.failure3')}</p>
+                  <h3>{t('soleRemedy.performanceHeading')}</h3>
+                  <p>{t('soleRemedy.performance1')}</p>
+                  <p>{t('soleRemedy.performance2')}</p>
+                  <h3>{t('soleRemedy.cumulativeHeading')}</h3>
+                  <p>{t('soleRemedy.cumulative1')}</p>
+                  <p>{t('soleRemedy.cumulative2')}</p>
+                  <h3>{t('soleRemedy.consumerHeading')}</h3>
+                  <p>{t('soleRemedy.consumer1')}</p>
+                  <p>{t('soleRemedy.consumer2')}</p>
+                </section>
+
+                <section id="data-loss-shield">
+                  <h2>{t('dataLossShield.heading')}</h2>
+                  <h3>{t('dataLossShield.dataLossHeading')}</h3>
+                  <p>{t('dataLossShield.dataLoss1')}</p>
+                  <p>{t('dataLossShield.dataLoss2')}</p>
+                  <p>{t('dataLossShield.dataLoss3')}</p>
+                  <p>{t('dataLossShield.dataLoss4')}</p>
+                  <h3>{t('dataLossShield.interruptionHeading')}</h3>
+                  <p>{t('dataLossShield.interruption1')}</p>
+                  <p>{t('dataLossShield.interruption2')}</p>
+                  <p>{t('dataLossShield.interruption3')}</p>
+                  <p>{t('dataLossShield.interruption4')}</p>
+                  <h3>{t('dataLossShield.forceMajeureHeading')}</h3>
+                  <p>{t('dataLossShield.forceMajeure1')}</p>
+                  <p>{t('dataLossShield.forceMajeure2')}</p>
+                  <p>{t('dataLossShield.forceMajeure3')}</p>
+                  <p>{t('dataLossShield.forceMajeure4')}</p>
+                  <h3>{t('dataLossShield.updateHeading')}</h3>
+                  <p>{t('dataLossShield.update1')}</p>
+                  <p>{t('dataLossShield.update2')}</p>
+                  <p>{t('dataLossShield.update3')}</p>
+                  <h3>{t('dataLossShield.cloudHeading')}</h3>
+                  <p>{t('dataLossShield.cloud1')}</p>
+                  <p>{t('dataLossShield.cloud2')}</p>
+                  <p>{t('dataLossShield.cloud3')}</p>
+                  <h3>{t('dataLossShield.fiduciaryHeading')}</h3>
+                  <p>{t('dataLossShield.fiduciary1')}</p>
+                  <p>{t('dataLossShield.fiduciary2')}</p>
+                </section>
+
+                <section id="service-discontinuation">
+                  <h2>{t('serviceDiscontinuation.heading')}</h2>
+                  <h3>{t('serviceDiscontinuation.discontinueHeading')}</h3>
+                  <p>{t('serviceDiscontinuation.discontinue1')}</p>
+                  <p>{t('serviceDiscontinuation.discontinue2')}</p>
+                  <p>{t('serviceDiscontinuation.discontinue3')}</p>
+                  <p>{t('serviceDiscontinuation.discontinue4')}</p>
+                  <h3>{t('serviceDiscontinuation.liabilityCapHeading')}</h3>
+                  <p>{t('serviceDiscontinuation.liabilityCap1')}</p>
+                  <p>{t('serviceDiscontinuation.liabilityCap2')}</p>
+                  <p>{t('serviceDiscontinuation.liabilityCap3')}</p>
+                  <h3>{t('serviceDiscontinuation.transferHeading')}</h3>
+                  <p>{t('serviceDiscontinuation.transfer1')}</p>
+                  <p>{t('serviceDiscontinuation.transfer2')}</p>
+                  <p>{t('serviceDiscontinuation.transfer3')}</p>
+                  <p>{t('serviceDiscontinuation.transfer4')}</p>
+                  <h3>{t('serviceDiscontinuation.insolvencyHeading')}</h3>
+                  <p>{t('serviceDiscontinuation.insolvency1')}</p>
+                  <p>{t('serviceDiscontinuation.insolvency2')}</p>
+                  <p>{t('serviceDiscontinuation.insolvency3')}</p>
+                  <h3>{t('serviceDiscontinuation.minimumHeading')}</h3>
+                  <p>{t('serviceDiscontinuation.minimum1')}</p>
+                  <p>{t('serviceDiscontinuation.minimum2')}</p>
+                  <h3>{t('serviceDiscontinuation.contentRemovalHeading')}</h3>
+                  <p>{t('serviceDiscontinuation.contentRemoval1')}</p>
+                  <p>{t('serviceDiscontinuation.contentRemoval2')}</p>
+                  <p>{t('serviceDiscontinuation.contentRemoval3')}</p>
+                  <h3>{t('serviceDiscontinuation.survivalHeading')}</h3>
+                  <p>{t('serviceDiscontinuation.survival1')}</p>
+                </section>
+
+                <section id="regulatory-shield">
+                  <h2>{t('regulatoryShield.heading')}</h2>
+                  <h3>{t('regulatoryShield.regulatoryChangeHeading')}</h3>
+                  <p>{t('regulatoryShield.regulatoryChange1')}</p>
+                  <p>{t('regulatoryShield.regulatoryChange2')}</p>
+                  <p>{t('regulatoryShield.regulatoryChange3')}</p>
+                  <h3>{t('regulatoryShield.geoRestrictionHeading')}</h3>
+                  <p>{t('regulatoryShield.geoRestriction1')}</p>
+                  <p>{t('regulatoryShield.geoRestriction2')}</p>
+                  <p>{t('regulatoryShield.geoRestriction3')}</p>
+                  <h3>{t('regulatoryShield.applePolicyHeading')}</h3>
+                  <p>{t('regulatoryShield.applePolicy1')}</p>
+                  <p>{t('regulatoryShield.applePolicy2')}</p>
+                  <p>{t('regulatoryShield.applePolicy3')}</p>
+                  <h3>{t('regulatoryShield.taxPricingHeading')}</h3>
+                  <p>{t('regulatoryShield.taxPricing1')}</p>
+                  <p>{t('regulatoryShield.taxPricing2')}</p>
+                  <h3>{t('regulatoryShield.dataProtectionHeading')}</h3>
+                  <p>{t('regulatoryShield.dataProtection1')}</p>
+                  <p>{t('regulatoryShield.dataProtection2')}</p>
+                  <h3>{t('regulatoryShield.indemnificationHeading')}</h3>
+                  <p>{t('regulatoryShield.indemnification1')}</p>
+                  <p>{t('regulatoryShield.indemnification2')}</p>
+                </section>
+
+                <section id="account-security">
+                  <h2>{t('accountSecurity.heading')}</h2>
+                  <h3>{t('accountSecurity.singleUserHeading')}</h3>
+                  <p>{t('accountSecurity.singleUser1')}</p>
+                  <p>{t('accountSecurity.singleUser2')}</p>
+                  <p>{t('accountSecurity.singleUser3')}</p>
+                  <h3>{t('accountSecurity.credentialHeading')}</h3>
+                  <p>{t('accountSecurity.credential1')}</p>
+                  <p>{t('accountSecurity.credential2')}</p>
+                  <p>{t('accountSecurity.credential3')}</p>
+                  <h3>{t('accountSecurity.securityHeading')}</h3>
+                  <p>{t('accountSecurity.security1')}</p>
+                  <p>{t('accountSecurity.security2')}</p>
+                  <p>{t('accountSecurity.security3')}</p>
+                  <p>{t('accountSecurity.security4')}</p>
+                  <h3>{t('accountSecurity.familyHeading')}</h3>
+                  <p>{t('accountSecurity.family1')}</p>
+                  <p>{t('accountSecurity.family2')}</p>
+                  <p>{t('accountSecurity.family3')}</p>
+                  <h3>{t('accountSecurity.institutionalHeading')}</h3>
+                  <p>{t('accountSecurity.institutional1')}</p>
+                  <p>{t('accountSecurity.institutional2')}</p>
+                  <p>{t('accountSecurity.institutional3')}</p>
+                  <h3>{t('accountSecurity.enforcementHeading')}</h3>
+                  <p>{t('accountSecurity.enforcement1')}</p>
+                  <p>{t('accountSecurity.enforcement2')}</p>
+                </section>
+
+                <section id="class-action-waiver">
+                  <h2>{t('classActionWaiver.heading')}</h2>
+                  <h3>{t('classActionWaiver.ukGloHeading')}</h3>
+                  <p>{t('classActionWaiver.ukGlo1')}</p>
+                  <p>{t('classActionWaiver.ukGlo2')}</p>
+                  <h3>{t('classActionWaiver.euDirectiveHeading')}</h3>
+                  <p>{t('classActionWaiver.euDirective1')}</p>
+                  <p>{t('classActionWaiver.euDirective2')}</p>
+                  <h3>{t('classActionWaiver.globalHeading')}</h3>
+                  <p>{t('classActionWaiver.global1')}</p>
+                  <p>{t('classActionWaiver.global2')}</p>
+                  <h3>{t('classActionWaiver.exceptionsHeading')}</h3>
+                  <p>{t('classActionWaiver.exceptions1')}</p>
+                  <p>{t('classActionWaiver.exceptions2')}</p>
+                  <p>{t('classActionWaiver.exceptions3')}</p>
+                  <h3>{t('classActionWaiver.enforceabilityHeading')}</h3>
+                  <p>{t('classActionWaiver.enforceability1')}</p>
+                  <p>{t('classActionWaiver.enforceability2')}</p>
+                  <h3>{t('classActionWaiver.individualHeading')}</h3>
+                  <p>{t('classActionWaiver.individual1')}</p>
+                  <p>{t('classActionWaiver.individual2')}</p>
+                </section>
+
+                <section id="dsa-compliance">
+                  <h2>{t('dsaCompliance.heading')}</h2>
+                  <h3>{t('dsaCompliance.contactHeading')}</h3>
+                  <p>{t('dsaCompliance.contact1')}</p>
+                  <p>{t('dsaCompliance.contact2')}</p>
+                  <p>{t('dsaCompliance.contact3')}</p>
+                  <h3>{t('dsaCompliance.intermediaryHeading')}</h3>
+                  <p>{t('dsaCompliance.intermediary1')}</p>
+                  <p>{t('dsaCompliance.intermediary2')}</p>
+                  <p>{t('dsaCompliance.intermediary3')}</p>
+                  <h3>{t('dsaCompliance.transparencyHeading')}</h3>
+                  <p>{t('dsaCompliance.transparency1')}</p>
+                  <p>{t('dsaCompliance.transparency2')}</p>
+                  <p>{t('dsaCompliance.transparency3')}</p>
+                  <h3>{t('dsaCompliance.complianceHeading')}</h3>
+                  <p>{t('dsaCompliance.compliance1')}</p>
+                  <p>{t('dsaCompliance.compliance2')}</p>
+                  <p>{t('dsaCompliance.compliance3')}</p>
+                </section>
+
                 <section id="changes">
                   <h2>{t('changes.heading')}</h2>
                   <p>{t('changes.p1')}</p>
                   <p>{t('changes.p2')}</p>
+                  <h3>{t('changes.versionHistory')}</h3>
+                  <ul>
+                    <li>{t.rich('changes.v1', richTags)}</li>
+                  </ul>
                 </section>
 
                 <section id="contact">

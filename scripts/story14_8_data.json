@@ -1,0 +1,392 @@
+{
+  "en": {
+    "serviceModification": {
+      "heading": "Right to Modify Service",
+      "p1": "LumenShore reserves the right to modify, update, or discontinue any feature or content of the Service at any time without prior notice.",
+      "p2": "The addition or removal of language pairs, tiers, features, or content does not constitute a breach of these Terms.",
+      "p3": "We may change pricing for future subscription periods with reasonable notice. Any price changes will not affect your current subscription period."
+    },
+    "serviceSuspension": {
+      "heading": "Right to Suspend Service",
+      "p1": "We may suspend the Service temporarily for maintenance, security incidents, or operational needs.",
+      "p2": "Scheduled maintenance will be communicated when reasonably practicable.",
+      "p3": "We are not liable for any loss or damage arising from a temporary suspension of the Service."
+    },
+    "serviceTermination": {
+      "heading": "Right to Terminate",
+      "p1": "LumenShore may terminate or restrict your access to the Service in the following circumstances:",
+      "li1": "Breach of these Terms;",
+      "li2": "Fraudulent or abusive activity;",
+      "li3": "Extended inactivity (after reasonable notice);",
+      "li4": "At LumenShore's sole discretion with reasonable notice.",
+      "p2": "You may terminate your use of the Service at any time by deleting your account and cancelling any active subscriptions.",
+      "p3": "Upon termination, your licence to use the Service is immediately revoked and your data will be deleted in accordance with our retention policy."
+    },
+    "termsModification": {
+      "heading": "Right to Modify Terms",
+      "p1": "We may modify these Terms at any time by posting updated Terms on our website.",
+      "p2": "Material changes will be communicated via email (to subscribed users) or in-app notification.",
+      "p3": "Your continued use of the Service after notification constitutes acceptance of the modified Terms.",
+      "p4": "If you do not agree to the modified Terms, you must stop using the Service and cancel your subscription.",
+      "p5": "Non-material updates (such as typographical corrections or clarifications) may be made without notice."
+    },
+    "terminationEffect": {
+      "heading": "Effect of Termination",
+      "p1": "Accrued rights and obligations of both parties shall survive termination.",
+      "p2": "No refund will be issued for unused subscription periods upon user-initiated termination, except as required by applicable consumer protection law or Apple's refund policy.",
+      "p3": "If LumenShore terminates your access without cause, you will receive a pro-rata refund for the unused portion of your current subscription period.",
+      "p4": "Your data will be deleted in accordance with the retention schedule described in our Privacy Policy."
+    }
+  },
+  "es": {
+    "serviceModification": {
+      "heading": "Derecho a Modificar el Servicio",
+      "p1": "LumenShore se reserva el derecho de modificar, actualizar o descontinuar cualquier funcion o contenido del Servicio en cualquier momento sin previo aviso.",
+      "p2": "La adicion o eliminacion de pares de idiomas, niveles, funciones o contenido no constituye un incumplimiento de estos Terminos.",
+      "p3": "Podemos cambiar los precios para futuros periodos de suscripcion con aviso razonable. Los cambios de precio no afectaran su periodo de suscripcion actual."
+    },
+    "serviceSuspension": {
+      "heading": "Derecho a Suspender el Servicio",
+      "p1": "Podemos suspender el Servicio temporalmente por mantenimiento, incidentes de seguridad o necesidades operativas.",
+      "p2": "El mantenimiento programado sera comunicado cuando sea razonablemente practicable.",
+      "p3": "No somos responsables de ninguna perdida o dano derivado de una suspension temporal del Servicio."
+    },
+    "serviceTermination": {
+      "heading": "Derecho a Rescindir",
+      "p1": "LumenShore puede rescindir o restringir su acceso al Servicio en las siguientes circunstancias:",
+      "li1": "Incumplimiento de estos Terminos;",
+      "li2": "Actividad fraudulenta o abusiva;",
+      "li3": "Inactividad prolongada (despues de un aviso razonable);",
+      "li4": "A exclusivo criterio de LumenShore con aviso razonable.",
+      "p2": "Usted puede rescindir su uso del Servicio en cualquier momento eliminando su cuenta y cancelando cualquier suscripcion activa.",
+      "p3": "Tras la rescision, su licencia para utilizar el Servicio se revoca inmediatamente y sus datos seran eliminados de acuerdo con nuestra politica de retencion."
+    },
+    "termsModification": {
+      "heading": "Derecho a Modificar los Terminos",
+      "p1": "Podemos modificar estos Terminos en cualquier momento publicando Terminos actualizados en nuestro sitio web.",
+      "p2": "Los cambios materiales seran comunicados por correo electronico (a usuarios suscritos) o mediante notificacion en la aplicacion.",
+      "p3": "Su uso continuado del Servicio despues de la notificacion constituye la aceptacion de los Terminos modificados.",
+      "p4": "Si no esta de acuerdo con los Terminos modificados, debe dejar de usar el Servicio y cancelar su suscripcion.",
+      "p5": "Las actualizaciones no materiales (como correcciones tipograficas o aclaraciones) pueden realizarse sin previo aviso."
+    },
+    "terminationEffect": {
+      "heading": "Efecto de la Rescision",
+      "p1": "Los derechos y obligaciones acumulados de ambas partes sobreviviran a la rescision.",
+      "p2": "No se emitira ningun reembolso por periodos de suscripcion no utilizados tras la rescision iniciada por el usuario, excepto segun lo exija la legislacion de proteccion al consumidor aplicable o la politica de reembolso de Apple.",
+      "p3": "Si LumenShore rescinde su acceso sin causa justificada, recibira un reembolso proporcional por la parte no utilizada de su periodo de suscripcion actual.",
+      "p4": "Sus datos seran eliminados de acuerdo con el calendario de retencion descrito en nuestra Politica de Privacidad."
+    }
+  },
+  "fr": {
+    "serviceModification": {
+      "heading": "Droit de Modifier le Service",
+      "p1": "LumenShore se reserve le droit de modifier, mettre a jour ou interrompre toute fonctionnalite ou contenu du Service a tout moment sans preavis.",
+      "p2": "L'ajout ou la suppression de paires de langues, de niveaux, de fonctionnalites ou de contenu ne constitue pas une violation des presentes Conditions.",
+      "p3": "Nous pouvons modifier les tarifs pour les futures periodes d'abonnement moyennant un preavis raisonnable. Les modifications de prix n'affecteront pas votre periode d'abonnement en cours."
+    },
+    "serviceSuspension": {
+      "heading": "Droit de Suspendre le Service",
+      "p1": "Nous pouvons suspendre temporairement le Service pour des raisons de maintenance, d'incidents de securite ou de besoins operationnels.",
+      "p2": "La maintenance programmee sera communiquee lorsque cela est raisonnablement possible.",
+      "p3": "Nous ne sommes pas responsables des pertes ou dommages resultant d'une suspension temporaire du Service."
+    },
+    "serviceTermination": {
+      "heading": "Droit de Resilier",
+      "p1": "LumenShore peut resilier ou restreindre votre acces au Service dans les circonstances suivantes :",
+      "li1": "Violation des presentes Conditions ;",
+      "li2": "Activite frauduleuse ou abusive ;",
+      "li3": "Inactivite prolongee (apres notification raisonnable) ;",
+      "li4": "A la seule discretion de LumenShore avec un preavis raisonnable.",
+      "p2": "Vous pouvez resilier votre utilisation du Service a tout moment en supprimant votre compte et en annulant tout abonnement actif.",
+      "p3": "A la resiliation, votre licence d'utilisation du Service est immediatement revoquee et vos donnees seront supprimees conformement a notre politique de conservation."
+    },
+    "termsModification": {
+      "heading": "Droit de Modifier les Conditions",
+      "p1": "Nous pouvons modifier les presentes Conditions a tout moment en publiant des Conditions mises a jour sur notre site web.",
+      "p2": "Les modifications substantielles seront communiquees par courrier electronique (aux utilisateurs abonnes) ou par notification dans l'application.",
+      "p3": "Votre utilisation continue du Service apres notification constitue l'acceptation des Conditions modifiees.",
+      "p4": "Si vous n'acceptez pas les Conditions modifiees, vous devez cesser d'utiliser le Service et annuler votre abonnement.",
+      "p5": "Les mises a jour non substantielles (telles que les corrections typographiques ou les clarifications) peuvent etre effectuees sans preavis."
+    },
+    "terminationEffect": {
+      "heading": "Effet de la Resiliation",
+      "p1": "Les droits et obligations accumules des deux parties survivront a la resiliation.",
+      "p2": "Aucun remboursement ne sera accorde pour les periodes d'abonnement non utilisees en cas de resiliation a l'initiative de l'utilisateur, sauf si la legislation applicable en matiere de protection des consommateurs ou la politique de remboursement d'Apple l'exige.",
+      "p3": "Si LumenShore resilie votre acces sans motif, vous recevrez un remboursement au prorata de la partie non utilisee de votre periode d'abonnement en cours.",
+      "p4": "Vos donnees seront supprimees conformement au calendrier de conservation decrit dans notre Politique de Confidentialite."
+    }
+  },
+  "de": {
+    "serviceModification": {
+      "heading": "Recht auf Aenderung des Dienstes",
+      "p1": "LumenShore behaelt sich das Recht vor, jede Funktion oder jeden Inhalt des Dienstes jederzeit ohne vorherige Ankuendigung zu aendern, zu aktualisieren oder einzustellen.",
+      "p2": "Das Hinzufuegen oder Entfernen von Sprachpaaren, Stufen, Funktionen oder Inhalten stellt keinen Verstoss gegen diese Bedingungen dar.",
+      "p3": "Wir koennen die Preise fuer kuenftige Abonnementzeitraeume mit angemessener Vorankundigung aendern. Preisaenderungen wirken sich nicht auf Ihren aktuellen Abonnementzeitraum aus."
+    },
+    "serviceSuspension": {
+      "heading": "Recht auf Aussetzung des Dienstes",
+      "p1": "Wir koennen den Dienst voruebergehend fuer Wartungsarbeiten, Sicherheitsvorfaelle oder betriebliche Erfordernisse aussetzen.",
+      "p2": "Geplante Wartungsarbeiten werden mitgeteilt, soweit dies vernuenftigerweise moeglich ist.",
+      "p3": "Wir haften nicht fuer Verluste oder Schaeden, die aus einer voruebergehenden Aussetzung des Dienstes entstehen."
+    },
+    "serviceTermination": {
+      "heading": "Recht auf Kuendigung",
+      "p1": "LumenShore kann Ihren Zugang zum Dienst unter folgenden Umstaenden kuendigen oder einschraenken:",
+      "li1": "Verstoss gegen diese Bedingungen;",
+      "li2": "Betruegerische oder missbraeuchliche Aktivitaeten;",
+      "li3": "Laengere Inaktivitaet (nach angemessener Vorankundigung);",
+      "li4": "Nach alleinigem Ermessen von LumenShore mit angemessener Vorankundigung.",
+      "p2": "Sie koennen Ihre Nutzung des Dienstes jederzeit beenden, indem Sie Ihr Konto loeschen und aktive Abonnements kuendigen.",
+      "p3": "Nach Kuendigung wird Ihre Lizenz zur Nutzung des Dienstes sofort widerrufen und Ihre Daten werden gemaess unserer Aufbewahrungsrichtlinie geloescht."
+    },
+    "termsModification": {
+      "heading": "Recht auf Aenderung der Bedingungen",
+      "p1": "Wir koennen diese Bedingungen jederzeit aendern, indem wir aktualisierte Bedingungen auf unserer Website veroeffentlichen.",
+      "p2": "Wesentliche Aenderungen werden per E-Mail (an abonnierte Nutzer) oder durch In-App-Benachrichtigung mitgeteilt.",
+      "p3": "Ihre fortgesetzte Nutzung des Dienstes nach Benachrichtigung gilt als Annahme der geaenderten Bedingungen.",
+      "p4": "Wenn Sie den geaenderten Bedingungen nicht zustimmen, muessen Sie die Nutzung des Dienstes einstellen und Ihr Abonnement kuendigen.",
+      "p5": "Unwesentliche Aktualisierungen (wie Tippfehlerberichtigungen oder Klarstellungen) koennen ohne Vorankundigung vorgenommen werden."
+    },
+    "terminationEffect": {
+      "heading": "Wirkung der Kuendigung",
+      "p1": "Die angesammelten Rechte und Pflichten beider Parteien ueberleben die Kuendigung.",
+      "p2": "Eine Erstattung fuer nicht genutzte Abonnementzeitraeume bei vom Nutzer eingeleiteter Kuendigung erfolgt nicht, es sei denn, dies ist nach geltendem Verbraucherschutzrecht oder der Erstattungsrichtlinie von Apple erforderlich.",
+      "p3": "Wenn LumenShore Ihren Zugang ohne Grund kuendigt, erhalten Sie eine anteilige Erstattung fuer den ungenutzten Teil Ihres aktuellen Abonnementzeitraums.",
+      "p4": "Ihre Daten werden gemaess dem in unserer Datenschutzrichtlinie beschriebenen Aufbewahrungsplan geloescht."
+    }
+  },
+  "ja": {
+    "serviceModification": {
+      "heading": "サービス変更の権利",
+      "p1": "LumenShoreは、事前の通知なく、いつでもサービスの機能またはコンテンツを変更、更新、または中止する権利を留保します。",
+      "p2": "言語ペア、ティア、機能、またはコンテンツの追加または削除は、本規約の違反を構成しません。",
+      "p3": "当社は、合理的な事前通知をもって、将来のサブスクリプション期間の価格を変更する場合があります。価格変更は、現在のサブスクリプション期間には影響しません。"
+    },
+    "serviceSuspension": {
+      "heading": "サービス停止の権利",
+      "p1": "当社は、メンテナンス、セキュリティインシデント、または運用上の必要性のために、一時的にサービスを停止する場合があります。",
+      "p2": "定期メンテナンスは、合理的に可能な場合に通知されます。",
+      "p3": "当社は、サービスの一時的な停止から生じるいかなる損失または損害についても責任を負いません。"
+    },
+    "serviceTermination": {
+      "heading": "終了の権利",
+      "p1": "LumenShoreは、以下の状況においてお客様のサービスへのアクセスを終了または制限することができます：",
+      "li1": "本規約の違反。",
+      "li2": "不正または悪意のある活動。",
+      "li3": "長期間の非活動（合理的な通知後）。",
+      "li4": "LumenShoreの独自の裁量により、合理的な通知をもって。",
+      "p2": "お客様は、アカウントを削除し、アクティブなサブスクリプションをキャンセルすることにより、いつでもサービスの利用を終了できます。",
+      "p3": "終了時に、サービスを使用するライセンスは直ちに取り消され、お客様のデータは当社の保持ポリシーに従って削除されます。"
+    },
+    "termsModification": {
+      "heading": "規約変更の権利",
+      "p1": "当社は、更新された規約を当社のウェブサイトに掲載することにより、いつでも本規約を変更することができます。",
+      "p2": "重要な変更は、メール（登録ユーザー宛）またはアプリ内通知により通知されます。",
+      "p3": "通知後のサービスの継続使用は、変更された規約への同意を構成します。",
+      "p4": "変更された規約に同意しない場合は、サービスの使用を停止し、サブスクリプションをキャンセルしなければなりません。",
+      "p5": "非重要な更新（誤字修正や明確化など）は、通知なしに行われる場合があります。"
+    },
+    "terminationEffect": {
+      "heading": "終了の効果",
+      "p1": "両当事者の既得権利および義務は終了後も存続します。",
+      "p2": "ユーザーが開始した終了の場合、未使用のサブスクリプション期間に対する払い戻しは行われません。ただし、適用される消費者保護法またはAppleの払い戻しポリシーによって要求される場合を除きます。",
+      "p3": "LumenShoreが正当な理由なくお客様のアクセスを終了した場合、お客様は現在のサブスクリプション期間の未使用分について日割りの払い戻しを受けます。",
+      "p4": "お客様のデータは、当社のプライバシーポリシーに記載された保持スケジュールに従って削除されます。"
+    }
+  },
+  "pt": {
+    "serviceModification": {
+      "heading": "Direito de Modificar o Servico",
+      "p1": "A LumenShore reserva-se o direito de modificar, atualizar ou descontinuar qualquer funcionalidade ou conteudo do Servico a qualquer momento sem aviso previo.",
+      "p2": "A adicao ou remocao de pares de idiomas, niveis, funcionalidades ou conteudo nao constitui uma violacao destes Termos.",
+      "p3": "Podemos alterar os precos para futuros periodos de subscricao com aviso razoavel. As alteracoes de preco nao afetarao o seu periodo de subscricao atual."
+    },
+    "serviceSuspension": {
+      "heading": "Direito de Suspender o Servico",
+      "p1": "Podemos suspender o Servico temporariamente para manutencao, incidentes de seguranca ou necessidades operacionais.",
+      "p2": "A manutencao programada sera comunicada quando razoavelmente praticavel.",
+      "p3": "Nao somos responsaveis por quaisquer perdas ou danos decorrentes de uma suspensao temporaria do Servico."
+    },
+    "serviceTermination": {
+      "heading": "Direito de Rescindir",
+      "p1": "A LumenShore pode rescindir ou restringir o seu acesso ao Servico nas seguintes circunstancias:",
+      "li1": "Violacao destes Termos;",
+      "li2": "Atividade fraudulenta ou abusiva;",
+      "li3": "Inatividade prolongada (apos aviso razoavel);",
+      "li4": "A exclusivo criterio da LumenShore com aviso razoavel.",
+      "p2": "Pode rescindir a sua utilizacao do Servico a qualquer momento, eliminando a sua conta e cancelando quaisquer subscricoes ativas.",
+      "p3": "Apos a rescisao, a sua licenca para utilizar o Servico e imediatamente revogada e os seus dados serao eliminados de acordo com a nossa politica de retencao."
+    },
+    "termsModification": {
+      "heading": "Direito de Modificar os Termos",
+      "p1": "Podemos modificar estes Termos a qualquer momento, publicando Termos atualizados no nosso website.",
+      "p2": "As alteracoes materiais serao comunicadas por email (a utilizadores subscritos) ou por notificacao na aplicacao.",
+      "p3": "A sua utilizacao continuada do Servico apos a notificacao constitui aceitacao dos Termos modificados.",
+      "p4": "Se nao concordar com os Termos modificados, deve deixar de utilizar o Servico e cancelar a sua subscricao.",
+      "p5": "Atualizacoes nao materiais (como correcoes tipograficas ou clarificacoes) podem ser efetuadas sem aviso previo."
+    },
+    "terminationEffect": {
+      "heading": "Efeito da Rescisao",
+      "p1": "Os direitos e obrigacoes acumulados de ambas as partes sobreviverao a rescisao.",
+      "p2": "Nao sera emitido qualquer reembolso por periodos de subscricao nao utilizados em caso de rescisao iniciada pelo utilizador, exceto conforme exigido pela legislacao de protecao do consumidor aplicavel ou pela politica de reembolso da Apple.",
+      "p3": "Se a LumenShore rescindir o seu acesso sem justa causa, recebera um reembolso proporcional pela parte nao utilizada do seu periodo de subscricao atual.",
+      "p4": "Os seus dados serao eliminados de acordo com o calendario de retencao descrito na nossa Politica de Privacidade."
+    }
+  },
+  "pl": {
+    "serviceModification": {
+      "heading": "Prawo do Modyfikacji Uslugi",
+      "p1": "LumenShore zastrzega sobie prawo do modyfikacji, aktualizacji lub zaprzestania swiadczenia dowolnej funkcji lub tresci Uslugi w dowolnym czasie bez uprzedniego powiadomienia.",
+      "p2": "Dodanie lub usuniecie par jezykowych, poziomow, funkcji lub tresci nie stanowi naruszenia niniejszych Warunkow.",
+      "p3": "Mozemy zmieniac ceny na przyszle okresy subskrypcji z odpowiednim wyprzedzeniem. Zmiany cen nie wplyna na Twoj biezacy okres subskrypcji."
+    },
+    "serviceSuspension": {
+      "heading": "Prawo do Zawieszenia Uslugi",
+      "p1": "Mozemy tymczasowo zawiesic Usluge w celu konserwacji, w przypadku incydentow bezpieczenstwa lub potrzeb operacyjnych.",
+      "p2": "Planowana konserwacja bedzie komunikowana, gdy jest to rozsadnie mozliwe.",
+      "p3": "Nie ponosimy odpowiedzialnosci za jakiekolwiek straty lub szkody wynikajace z tymczasowego zawieszenia Uslugi."
+    },
+    "serviceTermination": {
+      "heading": "Prawo do Wypowiedzenia",
+      "p1": "LumenShore moze wypowiedziec lub ograniczyc Twoj dostep do Uslugi w nastepujacych okolicznosciach:",
+      "li1": "Naruszenie niniejszych Warunkow;",
+      "li2": "Oszustwa lub naduzywanie;",
+      "li3": "Dlugotrwala nieaktywnosc (po odpowiednim powiadomieniu);",
+      "li4": "Wedlug wylacznego uznania LumenShore z odpowiednim wyprzedzeniem.",
+      "p2": "Mozesz wypowiedziec korzystanie z Uslugi w dowolnym momencie, usuwajac swoje konto i anulujac aktywne subskrypcje.",
+      "p3": "Po wypowiedzeniu Twoja licencja na korzystanie z Uslugi zostaje natychmiast cofnieta, a Twoje dane zostana usuniete zgodnie z nasza polityka przechowywania."
+    },
+    "termsModification": {
+      "heading": "Prawo do Modyfikacji Warunkow",
+      "p1": "Mozemy zmodyfikowac niniejsze Warunki w dowolnym czasie, publikujac zaktualizowane Warunki na naszej stronie internetowej.",
+      "p2": "Istotne zmiany beda komunikowane za posrednictwem poczty elektronicznej (subskrybentom) lub powiadomienia w aplikacji.",
+      "p3": "Dalsze korzystanie z Uslugi po powiadomieniu stanowi akceptacje zmodyfikowanych Warunkow.",
+      "p4": "Jesli nie zgadzasz sie ze zmodyfikowanymi Warunkami, musisz zaprzestac korzystania z Uslugi i anulowac subskrypcje.",
+      "p5": "Nieistotne aktualizacje (takie jak poprawki literowek lub wyjasnienia) moga byc dokonywane bez powiadomienia."
+    },
+    "terminationEffect": {
+      "heading": "Skutek Wypowiedzenia",
+      "p1": "Nabyte prawa i obowiazki obu stron przetrwaja wypowiedzenie.",
+      "p2": "Zwrot za niewykorzystane okresy subskrypcji nie jest przyznawany w przypadku wypowiedzenia zainicjowanego przez uzytkownika, z wyjatkiem sytuacji wymaganych przez obowiazujace prawo ochrony konsumentow lub polityke zwrotow Apple.",
+      "p3": "Jesli LumenShore wypowie Twoj dostep bez uzasadnionego powodu, otrzymasz proporcjonalny zwrot za niewykorzystana czesc biezacego okresu subskrypcji.",
+      "p4": "Twoje dane zostana usuniete zgodnie z harmonogramem przechowywania opisanym w naszej Polityce Prywatnosci."
+    }
+  },
+  "ar": {
+    "serviceModification": {
+      "heading": "الحق في تعديل الخدمة",
+      "p1": "تحتفظ LumenShore بالحق في تعديل أو تحديث أو إيقاف أي ميزة أو محتوى في الخدمة في أي وقت دون إشعار مسبق.",
+      "p2": "لا يشكل إضافة أو إزالة أزواج اللغات أو المستويات أو الميزات أو المحتوى انتهاكاً لهذه الشروط.",
+      "p3": "قد نغير الأسعار لفترات الاشتراك المستقبلية مع إشعار معقول. لن تؤثر تغييرات الأسعار على فترة اشتراكك الحالية."
+    },
+    "serviceSuspension": {
+      "heading": "الحق في تعليق الخدمة",
+      "p1": "قد نعلق الخدمة مؤقتاً للصيانة أو حوادث الأمان أو الاحتياجات التشغيلية.",
+      "p2": "سيتم الإبلاغ عن الصيانة المجدولة عندما يكون ذلك ممكناً بشكل معقول.",
+      "p3": "لا نتحمل أي مسؤولية عن أي خسارة أو ضرر ناتج عن التعليق المؤقت للخدمة."
+    },
+    "serviceTermination": {
+      "heading": "الحق في الإنهاء",
+      "p1": "يجوز لـ LumenShore إنهاء أو تقييد وصولك إلى الخدمة في الحالات التالية:",
+      "li1": "انتهاك هذه الشروط؛",
+      "li2": "نشاط احتيالي أو تعسفي؛",
+      "li3": "عدم النشاط لفترة طويلة (بعد إشعار معقول)؛",
+      "li4": "وفقاً لتقدير LumenShore المطلق مع إشعار معقول.",
+      "p2": "يمكنك إنهاء استخدامك للخدمة في أي وقت عن طريق حذف حسابك وإلغاء أي اشتراكات نشطة.",
+      "p3": "عند الإنهاء، يتم إلغاء ترخيصك لاستخدام الخدمة فوراً وسيتم حذف بياناتك وفقاً لسياسة الاحتفاظ الخاصة بنا."
+    },
+    "termsModification": {
+      "heading": "الحق في تعديل الشروط",
+      "p1": "يجوز لنا تعديل هذه الشروط في أي وقت عن طريق نشر شروط محدثة على موقعنا الإلكتروني.",
+      "p2": "سيتم إبلاغ التغييرات الجوهرية عبر البريد الإلكتروني (للمستخدمين المشتركين) أو إشعار داخل التطبيق.",
+      "p3": "يشكل استمرارك في استخدام الخدمة بعد الإشعار قبولاً للشروط المعدلة.",
+      "p4": "إذا لم توافق على الشروط المعدلة، يجب عليك التوقف عن استخدام الخدمة وإلغاء اشتراكك.",
+      "p5": "يمكن إجراء التحديثات غير الجوهرية (مثل تصحيح الأخطاء المطبعية أو التوضيحات) دون إشعار."
+    },
+    "terminationEffect": {
+      "heading": "أثر الإنهاء",
+      "p1": "تظل الحقوق والالتزامات المكتسبة لكلا الطرفين قائمة بعد الإنهاء.",
+      "p2": "لن يتم إصدار أي استرداد لفترات الاشتراك غير المستخدمة عند الإنهاء بمبادرة المستخدم، إلا حسبما يقتضيه قانون حماية المستهلك المعمول به أو سياسة استرداد Apple.",
+      "p3": "إذا أنهت LumenShore وصولك دون سبب، ستتلقى استرداداً نسبياً عن الجزء غير المستخدم من فترة اشتراكك الحالية.",
+      "p4": "سيتم حذف بياناتك وفقاً لجدول الاحتفاظ الموضح في سياسة الخصوصية الخاصة بنا."
+    }
+  },
+  "zh": {
+    "serviceModification": {
+      "heading": "修改服务的权利",
+      "p1": "LumenShore保留随时修改、更新或停止服务的任何功能或内容的权利，无需事先通知。",
+      "p2": "添加或删除语言对、等级、功能或内容不构成对本条款的违反。",
+      "p3": "我们可能会在合理通知后更改未来订阅期的价格。价格变更不会影响您当前的订阅期。"
+    },
+    "serviceSuspension": {
+      "heading": "暂停服务的权利",
+      "p1": "我们可能会因维护、安全事件或运营需要而暂时暂停服务。",
+      "p2": "计划维护将在合理可行的情况下予以通知。",
+      "p3": "我们对因暂时暂停服务而造成的任何损失或损害不承担责任。"
+    },
+    "serviceTermination": {
+      "heading": "终止的权利",
+      "p1": "在以下情况下，LumenShore可以终止或限制您对服务的访问：",
+      "li1": "违反本条款；",
+      "li2": "欺诈或滥用行为；",
+      "li3": "长期不活跃（在合理通知后）；",
+      "li4": "LumenShore自行决定，并给予合理通知。",
+      "p2": "您可以随时通过删除帐户和取消任何有效订阅来终止对服务的使用。",
+      "p3": "终止后，您使用服务的许可将立即被撤销，您的数据将根据我们的保留政策予以删除。"
+    },
+    "termsModification": {
+      "heading": "修改条款的权利",
+      "p1": "我们可以随时通过在我们的网站上发布更新后的条款来修改本条款。",
+      "p2": "重大变更将通过电子邮件（向订阅用户）或应用内通知进行传达。",
+      "p3": "在收到通知后继续使用服务即构成对修改后条款的接受。",
+      "p4": "如果您不同意修改后的条款，您必须停止使用服务并取消订阅。",
+      "p5": "非重大更新（如错别字更正或澄清）可在不通知的情况下进行。"
+    },
+    "terminationEffect": {
+      "heading": "终止的效力",
+      "p1": "双方已累积的权利和义务在终止后继续有效。",
+      "p2": "用户主动终止时，不退还未使用的订阅期费用，除非适用的消费者保护法或Apple的退款政策另有要求。",
+      "p3": "如果LumenShore无故终止您的访问权限，您将获得当前订阅期未使用部分的按比例退款。",
+      "p4": "您的数据将根据我们隐私政策中描述的保留计划予以删除。"
+    }
+  },
+  "uk": {
+    "serviceModification": {
+      "heading": "Право на змiну Сервiсу",
+      "p1": "LumenShore залишає за собою право змiнювати, оновлювати або припиняти будь-яку функцiю або вмiст Сервiсу в будь-який час без попереднього повiдомлення.",
+      "p2": "Додавання або видалення мовних пар, рiвнiв, функцiй або вмiсту не є порушенням цих Умов.",
+      "p3": "Ми можемо змiнювати цiни на майбутнi перiоди пiдписки з розумним попередженням. Змiни цiн не вплинуть на ваш поточний перiод пiдписки."
+    },
+    "serviceSuspension": {
+      "heading": "Право на призупинення Сервiсу",
+      "p1": "Ми можемо тимчасово призупинити Сервiс для обслуговування, iнцидентiв безпеки або операцiйних потреб.",
+      "p2": "Планове обслуговування буде повiдомлено, коли це розумно можливо.",
+      "p3": "Ми не несемо вiдповiдальностi за будь-якi збитки або шкоду, що виникають внаслiдок тимчасового призупинення Сервiсу."
+    },
+    "serviceTermination": {
+      "heading": "Право на припинення",
+      "p1": "LumenShore може припинити або обмежити ваш доступ до Сервiсу за таких обставин:",
+      "li1": "Порушення цих Умов;",
+      "li2": "Шахрайська або зловмисна дiяльнiсть;",
+      "li3": "Тривала неактивнiсть (пiсля розумного повiдомлення);",
+      "li4": "На власний розсуд LumenShore з розумним попередженням.",
+      "p2": "Ви можете припинити використання Сервiсу в будь-який час, видаливши свiй облiковий запис та скасувавши активнi пiдписки.",
+      "p3": "Пiсля припинення ваша лiцензiя на використання Сервiсу негайно скасовується, а вашi данi будуть видаленi вiдповiдно до нашої полiтики зберiгання."
+    },
+    "termsModification": {
+      "heading": "Право на змiну Умов",
+      "p1": "Ми можемо змiнити цi Умови в будь-який час, опублiкувавши оновленi Умови на нашому веб-сайтi.",
+      "p2": "Суттєвi змiни будуть повiдомленi електронною поштою (пiдписаним користувачам) або сповiщенням у додатку.",
+      "p3": "Ваше подальше використання Сервiсу пiсля повiдомлення є прийняттям змiнених Умов.",
+      "p4": "Якщо ви не погоджуєтеся зi змiненими Умовами, ви повиннi припинити використання Сервiсу та скасувати пiдписку.",
+      "p5": "Несуттєвi оновлення (такi як виправлення друкарських помилок або уточнення) можуть бути внесенi без повiдомлення."
+    },
+    "terminationEffect": {
+      "heading": "Наслiдки припинення",
+      "p1": "Набутi права та обов'язки обох сторiн зберiгаються пiсля припинення.",
+      "p2": "Повернення коштiв за невикористанi перiоди пiдписки при припиненнi з iнiцiативи користувача не здiйснюється, за винятком випадкiв, передбачених чинним законодавством про захист прав споживачiв або полiтикою повернення коштiв Apple.",
+      "p3": "Якщо LumenShore припинить ваш доступ без причини, ви отримаєте пропорцiйне повернення за невикористану частину поточного перiоду пiдписки.",
+      "p4": "Вашi данi будуть видаленi вiдповiдно до графiка зберiгання, описаного в нашiй Полiтицi Конфiденцiйностi."
+    }
+  }
+}

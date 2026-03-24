@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/cookies', changeFrequency: 'yearly' as const, priority: 0.3 },
   { path: '/eula', changeFrequency: 'yearly' as const, priority: 0.3 },
     { path: '/accessibility', changeFrequency: 'yearly' as const, priority: 0.3 },
+    { path: '/security', changeFrequency: 'yearly' as const, priority: 0.3 },
     { path: '/data-request', changeFrequency: 'yearly' as const, priority: 0.3 },
     { path: '/download', changeFrequency: 'monthly' as const, priority: 0.9 },
     { path: '/languages', changeFrequency: 'monthly' as const, priority: 0.7 },

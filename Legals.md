@@ -1135,18 +1135,18 @@
 **So that** LumenLingo complies with EU Regulation 2022/2065
 
 #### Subtasks:
-- [ ] 7.1.1 — Add point-of-contact for EU authorities and users on website:
+- [x] 7.1.1 — Add point-of-contact for EU authorities and users on website:
   - Publish email/contact form for legal inquiries (hello@lumenshore.com or dedicated legal@lumenshore.com)
   - Designate a legal representative in the EU (if LumenShore Ltd has no EU establishment)
-- [ ] 7.1.2 — Add Terms of Service transparency per DSA Art. 14:
+- [x] 7.1.2 — Add Terms of Service transparency per DSA Art. 14:
   - Content moderation policies (for user-generated content, if any — currently N/A)
   - Any algorithmic decision-making used (learning path recommendations, if applicable)
   - Clear complaint-handling mechanism
-- [ ] 7.1.3 — Assess whether LumenLingo qualifies as "intermediary service" under DSA:
+- [x] 7.1.3 — Assess whether LumenLingo qualifies as "intermediary service" under DSA:
   - Blog content: hosted by LumenShore (publisher, not intermediary)
   - User content: none currently (no comments, no forums)
   - If user-generated content is added in the future → full DSA notice-and-action obligations apply
-- [ ] 7.1.4 — Add DSA compliance statement to Terms of Service if applicable
+- [x] 7.1.4 — Add DSA compliance statement to Terms of Service if applicable
 
 **Acceptance Criteria**:
 - EU contact point published
@@ -1160,13 +1160,13 @@
 **So that** EU authorities have a local contact
 
 #### Subtasks:
-- [ ] 7.2.1 — Assess GDPR Art. 27 obligation:
+- [x] 7.2.1 — Assess GDPR Art. 27 obligation:
   - Controller not established in EU but processing EU resident data → must appoint EU representative
   - LumenShore Ltd (UK) processes EU data via website and app
   - Unless processing is "occasional" and does not include large-scale special categories
-- [ ] 7.2.2 — If required: appoint EU representative (can be a service like DataRep, European Data Protection Office, etc.)
-- [ ] 7.2.3 — Publish EU representative details in Privacy Policy
-- [ ] 7.2.4 — Inform supervisory authority of EU representative appointment
+- [x] 7.2.2 — If required: appoint EU representative (can be a service like DataRep, European Data Protection Office, etc.)
+- [x] 7.2.3 — Publish EU representative details in Privacy Policy
+- [x] 7.2.4 — Inform supervisory authority of EU representative appointment
 
 **Acceptance Criteria**:
 - Assessment completed
@@ -1760,28 +1760,28 @@
 **So that** we can respond within legal timeframes and minimize harm
 
 #### Subtasks:
-- [ ] 12.1.1 — Create Data Breach Response Plan covering:
+- [x] 12.1.1 — Create Data Breach Response Plan covering:
   - Definition of a personal data breach (GDPR Art. 4(12))
   - Detection and identification procedures
   - Initial containment steps
   - Risk assessment framework (likelihood and severity)
   - Notification decision tree: when to notify ICO, data subjects, or neither
-- [ ] 12.1.2 — ICO notification requirements:
+- [x] 12.1.2 — ICO notification requirements:
   - Notify within 72 hours of becoming aware (GDPR Art. 33)
   - Include: nature of breach, categories/numbers affected, DPO contact, consequences, mitigation measures
   - Use ICO's personal data breach notification form
-- [ ] 12.1.3 — Data subject notification requirements:
+- [x] 12.1.3 — Data subject notification requirements:
   - If breach is "likely to result in high risk to the rights and freedoms of individuals" (GDPR Art. 34)
   - Clear, plain language communication
   - Include: nature of breach, DPO contact, consequences, mitigation measures
-- [ ] 12.1.4 — CCPA breach notification:
+- [x] 12.1.4 — CCPA breach notification:
   - Notify California residents "in the most expedient time possible and without unreasonable delay"
   - If >500 California residents affected: notify California AG
-- [ ] 12.1.5 — Create internal breach log (GDPR Art. 33(5)):
+- [x] 12.1.5 — Create internal breach log (GDPR Art. 33(5)):
   - All breaches documented, even those not reported to ICO
   - Facts, effects, remedial actions
-- [ ] 12.1.6 — Assign breach response roles: who detects, who assesses, who notifies, who communicates
-- [ ] 12.1.7 — Annual breach response simulation/drill
+- [x] 12.1.6 — Assign breach response roles: who detects, who assesses, who notifies, who communicates
+- [x] 12.1.7 — Annual breach response simulation/drill
 
 **Acceptance Criteria**:
 - Breach response plan documented and approved
@@ -1797,24 +1797,24 @@
 **So that** we can demonstrate "appropriate technical and organizational measures" (GDPR Art. 32)
 
 #### Subtasks:
-- [ ] 12.2.1 — Document technical security measures:
+- [x] 12.2.1 — Document technical security measures:
   - iOS app: all data on-device (SwiftData encryption at rest via iOS), iCloud encryption in transit and at rest
   - Website: HTTPS everywhere (Vercel), API rate limiting, input validation (Zod), no SQL (no database)
   - Authentication: mock currently → plan for SIWA (Apple-managed credentials)
   - No sensitive data stored server-side (website is stateless)
-- [ ] 12.2.2 — Document organizational security measures:
+- [x] 12.2.2 — Document organizational security measures:
   - Access control (who can access production systems)
   - Code review process
   - Dependency update policy
   - Secret management (environment variables, no hardcoded keys)
-- [ ] 12.2.3 — API security review:
+- [x] 12.2.3 — API security review:
   - `/api/newsletter` — rate limited, validated, no auth required (public endpoint)
   - `/api/waitlist` — rate limited, validated, no auth required (public endpoint)
   - Review for injection, CSRF, SSRF vulnerabilities
-- [ ] 12.2.4 — Dependency vulnerability scanning:
+- [x] 12.2.4 — Dependency vulnerability scanning:
   - Run `npm audit` on lumen-lingo-frontend regularly
   - Set up automated alerts for critical vulnerabilities (Dependabot/Snyk)
-- [ ] 12.2.5 — Penetration testing plan (annual or before major releases)
+- [x] 12.2.5 — Penetration testing plan (annual or before major releases)
 
 **Acceptance Criteria**:
 - Security policy documented
@@ -1830,20 +1830,20 @@
 **So that** security issues can be fixed before exploitation
 
 #### Subtasks:
-- [ ] 12.3.1 — Create `/.well-known/security.txt` file on website per RFC 9116:
+- [x] 12.3.1 — Create `/.well-known/security.txt` file on website per RFC 9116:
   - Contact: security@lumenshore.com (or hello@lumenshore.com)
   - Preferred languages: English
   - Policy URL
   - Encryption: optional PGP key
-- [ ] 12.3.2 — Create `/security` page on website with:
+- [x] 12.3.2 — Create `/security` page on website with:
   - How to report vulnerabilities
   - Scope (website, iOS app, API endpoints)
   - What qualifies (XSS, injection, auth bypass, etc.)
   - What doesn't qualify (social engineering, DoS)
   - Response timeline commitment (acknowledge within 48 hours)
   - No legal threat for good-faith research
-- [ ] 12.3.3 — Add security.txt to `public/` directory in lumen-lingo-frontend
-- [ ] 12.3.4 — Monitor security@lumenshore.com inbox
+- [x] 12.3.3 — Add security.txt to `public/` directory in lumen-lingo-frontend
+- [x] 12.3.4 — Monitor security@lumenshore.com inbox
 
 **Acceptance Criteria**:
 - security.txt published
@@ -1858,37 +1858,37 @@
 **So that** Lumenshore meets GDPR Article 28 obligations and can demonstrate lawful data processing chains to supervisory authorities
 
 #### Subtasks:
-- [ ] 12.4.1 — Inventory all current sub-processors that process personal data:
+- [x] 12.4.1 — Inventory all current sub-processors that process personal data:
   - **Vercel** — website hosting, analytics, speed insights (anonymous page views, error data)
   - **Sentry** — error monitoring, session replay (user interaction data, error stack traces, device metadata)
   - **Apple** — iCloud KVS sync, App Store (purchase data, Apple ID), CloudKit (if enabled)
   - **Future ESP** (e.g., Resend, SendGrid, Mailchimp) — email addresses, marketing consent data
   - **Future payment processor** (if non-IAP revenue) — payment data
-- [ ] 12.4.2 — Execute DPA with Vercel:
+- [x] 12.4.2 — Execute DPA with Vercel:
   - Vercel offers a standard DPA: https://vercel.com/legal/dpa
   - Accept or countersign Vercel's DPA
   - Verify: data processing location, sub-processor list, security measures, SCCs for international transfers
   - Store executed copy internally
-- [ ] 12.4.3 — Execute DPA with Sentry:
+- [x] 12.4.3 — Execute DPA with Sentry:
   - Sentry offers a standard DPA: https://sentry.io/legal/dpa/
   - Accept or countersign Sentry's DPA
   - Verify: data retention periods, data deletion on request, SCCs/UK Addendum, sub-processor notification mechanism
   - Store executed copy internally
-- [ ] 12.4.4 — Apple data processing arrangements:
+- [x] 12.4.4 — Apple data processing arrangements:
   - Apple's Developer Program License Agreement contains data processing provisions
   - Apple acts as data processor for iCloud/CloudKit data
   - Apple acts as independent controller (not processor) for App Store purchase data
   - Document Apple's dual role and the applicable agreements (DPLA, Apple Media Services ToS)
   - Note: Apple does not typically execute custom DPAs — their standard agreements contain GDPR provisions
-- [ ] 12.4.5 — DPA register and renewal tracking:
+- [x] 12.4.5 — DPA register and renewal tracking:
   - Maintain internal register of all executed DPAs: sub-processor name, DPA version, execution date, review date, data processed, processing location
   - Set calendar reminders to review DPAs annually or when sub-processor updates their terms
   - Track sub-processor list changes (most DPAs include sub-processor change notification)
-- [ ] 12.4.6 — Sub-processor change management:
+- [x] 12.4.6 — Sub-processor change management:
   - Define internal process for when a sub-processor notifies of changes (new sub-sub-processors, location changes)
   - Assess impact on Lumenshore's ROPA and privacy policy
   - Update sub-processor table in Privacy Policy (Story 1.2) when changes occur
-- [ ] 12.4.7 — DPA for future sub-processors:
+- [x] 12.4.7 — DPA for future sub-processors:
   - Before engaging any new service that processes personal data: execute DPA BEFORE sharing any data
   - Add DPA requirement to vendor onboarding checklist
   - Verify GDPR compliance, security certifications (SOC 2, ISO 27001), and data processing locations
@@ -2004,20 +2004,20 @@
 **So that** disputes are handled efficiently without costly litigation
 
 #### Subtasks:
-- [ ] 14.1.1 — Review and enhance dispute resolution clause in Terms:
+- [x] 14.1.1 — Review and enhance dispute resolution clause in Terms:
   - Step 1: Informal resolution (email to hello@lumenshore.com, 30-day good faith period)
   - Step 2: Mediation (optional, via agreed mediator)
   - Step 3: Court proceedings (England and Wales jurisdiction)
-- [ ] 14.1.2 — Add EU Online Dispute Resolution (ODR) link per EU Regulation 524/2013:
+- [x] 14.1.2 — Add EU Online Dispute Resolution (ODR) link per EU Regulation 524/2013:
   - Required for EU B2C e-commerce
   - Link to EC ODR platform: https://ec.europa.eu/consumers/odr/
   - Note: this is being phased out but still required until fully replaced
-- [ ] 14.1.3 — Consider adding arbitration clause for US users (optional but common):
+- [x] 14.1.3 — Consider adding arbitration clause for US users (optional but common):
   - Individual arbitration (not class action)
   - Opt-out period (30 days from first use)
   - Small claims court exception
-- [ ] 14.1.4 — Add class action waiver (if permissible in jurisdiction)
-- [ ] 14.1.5 — Review enforceability of dispute resolution clauses per jurisdiction
+- [x] 14.1.4 — Add class action waiver (if permissible in jurisdiction)
+- [x] 14.1.5 — Review enforceability of dispute resolution clauses per jurisdiction
 
 **Acceptance Criteria**:
 - Multi-step dispute resolution process documented
@@ -2032,29 +2032,29 @@
 **So that** LumenShore is protected from disproportionate claims
 
 #### Subtasks:
-- [ ] 14.2.1 — Review current limitation of liability clause in Terms (verify coverage):
+- [x] 14.2.1 — Review current limitation of liability clause in Terms (verify coverage):
   - Disclaimer of warranties (AS IS, AS AVAILABLE)
   - Limitation of consequential/indirect damages
   - Cap on aggregate liability (fees paid in trailing 12 months or £100, whichever greater)
   - Exclusions: cannot exclude liability for death/personal injury (UK law), fraud, statutory rights
   - Reference Lumenshore Limited (Company No. 09607326) as the contracting entity
-- [ ] 14.2.2 — Add educational content disclaimer:
+- [x] 14.2.2 — Add educational content disclaimer:
   - "LumenLingo is a language learning aid, not a certified educational institution"
   - "We do not guarantee fluency or any specific level of proficiency"
   - "Content is for general learning purposes and should not be relied upon for professional translation"
-- [ ] 14.2.3 — Add force majeure clause:
+- [x] 14.2.3 — Add force majeure clause:
   - Excuses non-performance due to events beyond reasonable control
   - Natural disasters, government actions, internet failures, pandemic
-- [ ] 14.2.4 — Add indemnification clause:
+- [x] 14.2.4 — Add indemnification clause:
   - User indemnifies LumenShore for: misuse, violation of Terms, infringement claims
-- [ ] 14.2.5 — Ensure statutory consumer rights are preserved (UK Consumer Rights Act 2015):
+- [x] 14.2.5 — Ensure statutory consumer rights are preserved (UK Consumer Rights Act 2015):
   - "Nothing in these Terms excludes or limits our liability for: death or personal injury caused by our negligence; fraud or fraudulent misrepresentation; any other liability that cannot be excluded by law"
-- [ ] 14.2.6 — Cross-reference and align with enhanced liability stories:
+- [x] 14.2.6 — Cross-reference and align with enhanced liability stories:
   - Story 14.5: Comprehensive Liability Caps (replaces 14.2.1 cap with tiered structure)
   - Story 14.12: Assumption of Risk & Release (extends beyond disclaimer)
   - Story 14.17: Data Loss & Service Interruption (extends force majeure from 14.2.3)
   - Ensure no internal conflicts between clauses; later-numbered stories provide additional detail
-- [ ] 14.2.7 — Add "reasonable expectations" clause:
+- [x] 14.2.7 — Add "reasonable expectations" clause:
   - "You acknowledge that the Service is a language learning tool and that your expectations should be commensurate with a consumer digital content subscription"
   - "Lumenshore does not represent that the Service will meet your specific learning objectives, timeline, or professional needs"
 
@@ -2072,18 +2072,18 @@
 **So that** LumenShore is protected against claims
 
 #### Subtasks:
-- [ ] 14.3.1 — Assess insurance needs:
+- [x] 14.3.1 — Assess insurance needs:
   - Professional indemnity insurance (covers service errors, negligence claims)
   - Cyber liability insurance (covers data breach costs, notification, legal defense)
   - Product liability insurance (may apply to digital products)
   - Directors & officers liability insurance
-- [ ] 14.3.2 — Obtain cyber liability insurance:
+- [x] 14.3.2 — Obtain cyber liability insurance:
   - Coverage for data breach response costs
   - Coverage for regulatory fines (where insurable)
   - Coverage for legal defense
   - Coverage for business interruption
-- [ ] 14.3.3 — Document insurance coverage and renewal dates
-- [ ] 14.3.4 — Annual insurance review aligned with business growth
+- [x] 14.3.3 — Document insurance coverage and renewal dates
+- [x] 14.3.4 — Annual insurance review aligned with business growth
 
 **Acceptance Criteria**:
 - Insurance needs assessed
@@ -2098,30 +2098,30 @@
 **So that** Lumenshore is protected from US class action lawsuits (single biggest US liability exposure)
 
 #### Subtasks:
-- [ ] 14.4.1 — Draft binding individual arbitration clause for US users:
+- [x] 14.4.1 — Draft binding individual arbitration clause for US users:
   - All disputes resolved by binding individual arbitration (not court)
   - Arbitration administered by AAA (American Arbitration Association) or JAMS under Consumer Arbitration Rules
   - Arbitration seated in London, England OR option for remote/written proceedings
   - Each party bears own attorneys' fees unless arbitrator awards otherwise
   - Arbitrator's decision is final and binding, enforceable in any court
   - Governing law: England and Wales (with Federal Arbitration Act for enforceability in US)
-- [ ] 14.4.2 — Draft class action and collective proceedings waiver:
+- [x] 14.4.2 — Draft class action and collective proceedings waiver:
   - "YOU AND LUMENSHORE AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS, CONSOLIDATED, OR REPRESENTATIVE ACTION"
   - Waiver of jury trial for any disputes not subject to arbitration
   - No consolidation of multiple users' claims
-- [ ] 14.4.3 — 30-day opt-out right:
+- [x] 14.4.3 — 30-day opt-out right:
   - Users must be able to opt out of arbitration within 30 days of first accepting Terms
   - Opt-out via written notice to hello@lumenshore.com
   - User who opts out retains all other rights under Terms
   - This makes the clause more enforceable under US law
-- [ ] 14.4.4 — Small claims court exception:
+- [x] 14.4.4 — Small claims court exception:
   - Either party may bring individual claims in small claims court if claims qualify
   - Ensures fairness for low-value disputes
-- [ ] 14.4.5 — Exceptions to arbitration:
+- [x] 14.4.5 — Exceptions to arbitration:
   - IP infringement claims (either party may seek injunctive relief in court)
   - Claims for injunctive or equitable relief
   - Individual claims in small claims court
-- [ ] 14.4.6 — Severability for arbitration clause:
+- [x] 14.4.6 — Severability for arbitration clause:
   - If class action waiver is found unenforceable → entire arbitration agreement void (prevents forced class arbitration which is worse than court)
   - All other provisions severable
 
@@ -2139,37 +2139,37 @@
 **So that** Lumenshore's financial exposure is capped to the absolute minimum in every jurisdiction
 
 #### Subtasks:
-- [ ] 14.5.1 — Tiered liability caps by user type:
+- [x] 14.5.1 — Tiered liability caps by user type:
   - **Free tier users**: Lumenshore's total aggregate liability = £0 (or £1 nominal if £0 is unenforceable, up to maximum of £10)
   - **Paid tier users**: Lumenshore's total aggregate liability = amount user has actually paid Lumenshore in the 12 months immediately preceding the claim
   - **Note**: for IAP through Apple, "amount paid to Lumenshore" = net revenue received after Apple's commission — document this
-- [ ] 14.5.2 — Exclusion of consequential, indirect, and special damages:
+- [x] 14.5.2 — Exclusion of consequential, indirect, and special damages:
   - IN NO EVENT SHALL LUMENSHORE BE LIABLE FOR: loss of data, lost profits, lost revenue, lost savings, loss of goodwill, business interruption, cost of substitute services, incidental damages, consequential damages, special damages, exemplary damages, punitive damages
   - Even if Lumenshore has been advised of the possibility of such damages
   - Even if a limited remedy fails of its essential purpose
-- [ ] 14.5.3 — Per-jurisdiction enforceability notes:
+- [x] 14.5.3 — Per-jurisdiction enforceability notes:
   - **UK**: Cannot exclude liability for death/personal injury from negligence, fraud, or fraudulent misrepresentation. Consumer Rights Act 2015 prevents "unfair" terms. Liability cap must be "reasonable" under UCTA 1977 (Unfair Contract Terms Act)
   - **EU**: Consumer protection directives prohibit unfair terms. Total exclusion of liability for digital content may be void. Cap must be proportionate.
   - **US**: Varies by state. California unconscionability doctrine. Always preserving small claims court access helps enforceability.
   - **Germany**: Cannot exclude liability for intentional acts or gross negligence. BGB §309 No.7 prohibits excluding liability for personal injury.
   - Add: "To the maximum extent permitted by applicable law" qualifier to all liability limitations
-- [ ] 14.5.4 — "AS IS" and "AS AVAILABLE" warranty disclaimer:
+- [x] 14.5.4 — "AS IS" and "AS AVAILABLE" warranty disclaimer:
   - THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED
   - Disclaim: merchantability, fitness for a particular purpose, non-infringement, accuracy, completeness, reliability, availability, timeliness, security
   - Disclaim: that the service will be uninterrupted, error-free, virus-free, or that defects will be corrected
   - **UK carve-out**: "Nothing in these Terms affects your statutory rights under the Consumer Rights Act 2015" (required)
-- [ ] 14.5.5 — Educational content accuracy disclaimer:
+- [x] 14.5.5 — Educational content accuracy disclaimer:
   - "LumenLingo provides language learning content for general educational purposes only"
   - "We do not guarantee the accuracy, completeness, or reliability of any translations, grammar explanations, or linguistic content"
   - "Content should not be relied upon for professional, commercial, medical, legal, or safety-critical translation or interpretation"
   - "We are not a certified educational institution and do not award recognized qualifications"
-- [ ] 14.5.6 — No liability for user reliance:
+- [x] 14.5.6 — No liability for user reliance:
   - "Lumenshore is not liable for any decisions made or actions taken by users in reliance on the content provided through the Service"
   - "Users are solely responsible for verifying the accuracy of any translation or linguistic information before relying on it for any purpose"
-- [ ] 14.5.7 — No liability for third-party services:
+- [x] 14.5.7 — No liability for third-party services:
   - "Lumenshore is not liable for the acts or omissions of third-party services including Apple, Vercel, Sentry, or any payment processor"
   - "Apple is the merchant of record for all iOS in-app purchases; billing disputes should be directed to Apple"
-- [ ] 14.5.8 — Service availability disclaimer:
+- [x] 14.5.8 — Service availability disclaimer:
   - No guarantee of uptime or availability
   - May perform maintenance with or without notice
   - May experience interruptions due to third-party providers
@@ -2191,31 +2191,31 @@
 **So that** standard legal protections are in place
 
 #### Subtasks:
-- [ ] 14.6.1 — **Entire Agreement clause**:
+- [x] 14.6.1 — **Entire Agreement clause**:
   - Terms + Privacy Policy + EULA + Cookie Policy = entire agreement between parties
   - Supersedes all prior agreements, representations, and understandings
   - No oral modifications
-- [ ] 14.6.2 — **Severability clause**:
+- [x] 14.6.2 — **Severability clause**:
   - If any provision held invalid or unenforceable → severed without affecting remaining provisions
   - Court/arbitrator may reform unenforceable provision to minimum extent necessary
-- [ ] 14.6.3 — **Assignment clause**:
+- [x] 14.6.3 — **Assignment clause**:
   - Lumenshore may assign Terms to any successor, affiliate, or acquirer without user consent
   - User may NOT assign or transfer their rights under Terms
-- [ ] 14.6.4 — **Waiver clause**:
+- [x] 14.6.4 — **Waiver clause**:
   - Failure to enforce any right or provision does NOT constitute waiver
   - Waiver of one breach does not waive subsequent breaches
   - No waiver unless in writing signed by authorized representative
-- [ ] 14.6.5 — **No partnership/agency/employment disclaimer**:
+- [x] 14.6.5 — **No partnership/agency/employment disclaimer**:
   - Terms do not create agency, partnership, joint venture, or employment relationship
   - Neither party has authority to bind the other
-- [ ] 14.6.6 — **Electronic communications agreement**:
+- [x] 14.6.6 — **Electronic communications agreement**:
   - User agrees that electronic communications (email, in-app notices, website postings) satisfy legal requirements for "writing"
   - Consent to receive communications electronically
-- [ ] 14.6.7 — **Headings clause**:
+- [x] 14.6.7 — **Headings clause**:
   - Section headings are for convenience only and have no legal effect
-- [ ] 14.6.8 — **Survival clause**:
+- [x] 14.6.8 — **Survival clause**:
   - Provisions that by their nature should survive termination shall survive: limitation of liability, indemnification, IP ownership, dispute resolution, confidentiality, and any other provisions
-- [ ] 14.6.9 — **No third-party beneficiaries**:
+- [x] 14.6.9 — **No third-party beneficiaries**:
   - "These Terms do not confer any rights on any person or entity that is not a party to these Terms"
   - "No third party may enforce any provision of these Terms under the Contracts (Rights of Third Parties) Act 1999"
   - **Exception — Apple**: "Notwithstanding the foregoing, Apple Inc. and its subsidiaries are intended third-party beneficiaries of these Terms solely to the extent required by Apple's Licensed Application End User License Agreement (Minimum Terms)"
@@ -2234,14 +2234,14 @@
 **So that** users share responsibility and Lumenshore has contractual recourse
 
 #### Subtasks:
-- [ ] 14.7.1 — Users represent and warrant that:
+- [x] 14.7.1 — Users represent and warrant that:
   - They are of legal age in their jurisdiction to form a binding contract (or have parental consent)
   - They have legal capacity and authority to agree to Terms
   - All information provided is accurate, current, and complete
   - They will maintain the accuracy of their information
   - They will not use the Service for any unlawful purpose
   - They have not been previously suspended or removed from the Service
-- [ ] 14.7.2 — User obligations:
+- [x] 14.7.2 — User obligations:
   - Comply with all applicable local, state, national, and international laws
   - Not attempt to reverse-engineer, decompile, or disassemble the app
   - Not scrape, copy, or redistribute Service content
@@ -2250,7 +2250,7 @@
   - Not create multiple accounts for fraudulent purposes
   - Not impersonate any person or entity
   - Responsible for maintaining confidentiality of their account
-- [ ] 14.7.3 — User indemnification (enhanced from 14.2.4):
+- [x] 14.7.3 — User indemnification (enhanced from 14.2.4):
   - User agrees to indemnify, defend, and hold harmless Lumenshore Limited, its directors, officers, employees, and agents from any claims, damages, costs (including reasonable legal fees) arising from:
     - User's breach of Terms
     - User's violation of any law or third-party rights
@@ -2258,7 +2258,7 @@
     - Any content user submits to the Service
   - Lumenshore has right to assume exclusive defense of any indemnified claim
   - User will cooperate with Lumenshore's defense
-- [ ] 14.7.4 — Consequences of breach:
+- [x] 14.7.4 — Consequences of breach:
   - Lumenshore may suspend or terminate access for breach of Terms
   - No refund for termination due to user breach
   - Lumenshore may seek injunctive relief for IP infringement or Terms violation
@@ -2276,25 +2276,25 @@
 **So that** Lumenshore is protected when features change, maintenance occurs, or the service evolves
 
 #### Subtasks:
-- [ ] 14.8.1 — Right to modify Service:
+- [x] 14.8.1 — Right to modify Service:
   - "Lumenshore reserves the right to modify, update, or discontinue any feature or content at any time without prior notice"
   - "Addition or removal of language pairs, tiers, features, or content does not constitute breach of these Terms"
   - "We may change pricing for future subscription periods with reasonable notice"
-- [ ] 14.8.2 — Right to suspend Service:
+- [x] 14.8.2 — Right to suspend Service:
   - "We may suspend the Service temporarily for maintenance, security incidents, or operational needs"
   - "Scheduled maintenance will be communicated when reasonably practicable"
   - "We are not liable for any loss or damage arising from temporary suspension"
-- [ ] 14.8.3 — Right to terminate:
+- [x] 14.8.3 — Right to terminate:
   - Lumenshore may terminate user access for: breach of Terms, fraudulent activity, inactivity (after notice), at Lumenshore's sole discretion with reasonable notice
   - User may terminate at any time by deleting account and unsubscribing
   - Upon termination: license to use Service revoked, user data deleted per retention policy
-- [ ] 14.8.4 — Right to modify Terms:
+- [x] 14.8.4 — Right to modify Terms:
   - "We may modify these Terms at any time by posting updated Terms on the website"
   - "Material changes will be communicated via email (to subscribed users) or in-app notification"
   - "Continued use after notification constitutes acceptance of modified Terms"
   - "If you do not agree to modified Terms, you must stop using the Service and cancel your subscription"
   - "Non-material updates (e.g., typos, clarifications) may be made without notice"
-- [ ] 14.8.5 — Effect of termination:
+- [x] 14.8.5 — Effect of termination:
   - Accrued rights and obligations survive
   - No refund for unused subscription periods upon user-initiated termination (except as required by consumer protection law or Apple's refund policy)
   - Lumenshore-initiated termination without cause: pro-rata refund for unused subscription period
@@ -2314,18 +2314,18 @@
 **So that** Lumenshore's exposure to historic claims is minimized
 
 #### Subtasks:
-- [ ] 14.9.1 — Contractual limitation period:
+- [x] 14.9.1 — Contractual limitation period:
   - "Any claim arising out of or relating to these Terms or the Service must be commenced within ONE (1) YEAR after the claim arose"
   - "Failure to bring a claim within this period constitutes a permanent waiver of that claim"
   - This is enforceable in most US states (default is 2-6 years depending on state)
   - Shorter than default limitation in England & Wales (6 years for contract, Limitation Act 1980)
-- [ ] 14.9.2 — Per-jurisdiction enforceability:
+- [x] 14.9.2 — Per-jurisdiction enforceability:
   - **England & Wales**: Contractual shortening allowed but must be reasonable; courts may refuse to enforce if unfair under UCTA
   - **EU**: Consumer protection may override shortened limitation periods
   - **US**: Generally enforceable if conspicuous and reasonable (1 year is common in tech ToS)
   - **Fallback**: "To the extent this limitation period is unenforceable, the shortest limitation period permitted by applicable law shall apply"
-- [ ] 14.9.3 — Exception: personal injury and fraud claims are NOT subject to contractual limitation (cannot legally shorten these)
-- [ ] 14.9.4 — Discovery rule carve-out:
+- [x] 14.9.3 — Exception: personal injury and fraud claims are NOT subject to contractual limitation (cannot legally shorten these)
+- [x] 14.9.4 — Discovery rule carve-out:
   - "The limitation period begins when the claimant knew or should have known of the claim, but in no event more than TWO (2) YEARS after the act giving rise to the claim"
 
 **Acceptance Criteria**:
@@ -2342,30 +2342,30 @@
 **So that** I understand my options and Lumenshore's obligations are defined
 
 #### Subtasks:
-- [ ] 14.10.1 — iOS App (Apple IAP) refund policy:
+- [x] 14.10.1 — iOS App (Apple IAP) refund policy:
   - "All subscription purchases are processed and managed by Apple"
   - "Refund requests must be directed to Apple: reportaproblem.apple.com"
   - "Lumenshore does not process payments or issue refunds for App Store purchases"
   - "Apple's refund policy governs all iOS subscription refunds"
-- [ ] 14.10.2 — Cancellation process:
+- [x] 14.10.2 — Cancellation process:
   - "You may cancel your subscription at any time via iOS Settings > Apple ID > Subscriptions"
   - "Cancellation takes effect at the end of the current billing period"
   - "You will retain access to paid features until the end of your current billing period"
   - "After the billing period ends, your account will revert to the Free tier"
   - "Cancellation does not entitle you to a refund for the current period"
-- [ ] 14.10.3 — Free trial terms:
+- [x] 14.10.3 — Free trial terms:
   - "14-day Royal tier trial is free of charge"
   - "No payment information is charged during the trial period"
   - "Trial converts to a paid subscription at the published rate unless cancelled before trial ends"
   - "You will receive a reminder before your trial ends" (best practice, not legally required)
-- [ ] 14.10.4 — EU/UK cooling-off period:
+- [x] 14.10.4 — EU/UK cooling-off period:
   - Consumer Contracts Regs 2013 / EU CRD: 14-day withdrawal right for distance contracts
   - Digital content exception: right to withdraw may be waived if consumer:
     (a) Consents to immediate performance, AND
     (b) Acknowledges loss of withdrawal right
   - Implement explicit consent tick/button: "I agree to immediate access and acknowledge I lose my withdrawal right"
   - If consent NOT obtained: 14-day refund right exists regardless of use
-- [ ] 14.10.5 — Publish refund policy on:
+- [x] 14.10.5 — Publish refund policy on:
   - Terms of Service page
   - Website pricing page (summary)
   - iOS app paywall screen (link)
@@ -2385,25 +2385,25 @@
 **So that** all disputes are resolved under England & Wales law in English courts, preventing forum shopping
 
 #### Subtasks:
-- [ ] 14.11.1 — Governing law clause:
+- [x] 14.11.1 — Governing law clause:
   - "These Terms and any dispute or claim arising out of or in connection with them or their subject matter or formation (including non-contractual disputes or claims) SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF ENGLAND AND WALES"
   - "This choice of law applies regardless of your country of residence, domicile, or the country from which you access the Service"
   - "This choice of law applies notwithstanding any conflict of law principles that would otherwise apply"
-- [ ] 14.11.2 — Exclusive jurisdiction:
+- [x] 14.11.2 — Exclusive jurisdiction:
   - "The courts of England and Wales shall have exclusive jurisdiction to settle any dispute arising out of or in connection with these Terms"
   - Exception: where 14.4 (US arbitration) applies, arbitration governs instead
   - Exception: either party may seek interim or injunctive relief in any court of competent jurisdiction
-- [ ] 14.11.3 — Venue:
+- [x] 14.11.3 — Venue:
   - "Any court proceedings shall be brought in the courts located in Leicester, England, or the High Court of Justice in London, at Lumenshore's election"
   - User consents to personal jurisdiction in these courts
   - User waives objections to venue (including forum non conveniens)
-- [ ] 14.11.4 — Per-jurisdiction enforceability notes:
+- [x] 14.11.4 — Per-jurisdiction enforceability notes:
   - **UK**: Fully enforceable as both parties agree
   - **EU**: Brussels Regulation (recast) generally requires consumer to be sued in their domicile; consumer cannot be forced to litigate abroad. Add: "If you are an EU consumer, nothing in this clause affects your right to bring proceedings in the courts of your domicile"
   - **US**: Forum selection clauses generally enforceable (The Bremen v. Zapata, Carnival Cruise Lines v. Shute) except where unconscionable
   - **Australia**: ACL may prevent exclusive foreign jurisdiction clauses for consumer contracts — carve-out required
   - Add fallback: "To the extent this clause is unenforceable in your jurisdiction, disputes shall be resolved in the courts that have jurisdiction under applicable law"
-- [ ] 14.11.5 — Language of proceedings:
+- [x] 14.11.5 — Language of proceedings:
   - "All legal proceedings, arbitration, and communications relating to disputes shall be conducted in English"
   - "The English language version of these Terms shall prevail over any translated version in the event of conflict"
 
@@ -2422,13 +2422,13 @@
 **So that** Lumenshore has contractual protection beyond just limitation of liability
 
 #### Subtasks:
-- [ ] 14.12.1 — Assumption of risk:
+- [x] 14.12.1 — Assumption of risk:
   - "YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT YOUR USE OF THE SERVICE IS AT YOUR SOLE RISK"
   - User assumes all risk of: accuracy of translations and linguistic content, suitability of content for their learning goals, data loss from device failure or cloud sync issues, service interruptions or termination, changes to features or content, reliance on any content for professional or personal decisions
-- [ ] 14.12.2 — Release of claims:
+- [x] 14.12.2 — Release of claims:
   - "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOU HEREBY RELEASE AND FOREVER DISCHARGE LUMENSHORE LIMITED, ITS DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, SUCCESSORS, AND ASSIGNS FROM ANY AND ALL CLAIMS, DEMANDS, AND DAMAGES OF EVERY KIND AND NATURE, KNOWN AND UNKNOWN, ARISING OUT OF OR IN ANY WAY CONNECTED WITH YOUR USE OF THE SERVICE"
   - California Civil Code §1542 waiver (for California users): "You waive California Civil Code Section 1542, which says: 'A general release does not extend to claims that the creditor or releasing party does not know or suspect to exist in his or her favor at the time of executing the release and that, if known by him or her, would have materially affected his or her settlement with the debtor or released party.'"
-- [ ] 14.12.3 — Specific risks assumed:
+- [x] 14.12.3 — Specific risks assumed:
   - Risk of inaccurate, incomplete, or misleading translations
   - Risk of incorrect grammar explanations or linguistic rules
   - Risk of cultural inappropriateness of example sentences
@@ -2436,7 +2436,7 @@
   - Risk of learning progress reset due to technical issues
   - Risk of service features being modified, reduced, or removed
   - Risk of subscription terms changing for future billing periods
-- [ ] 14.12.4 — UK/EU carve-out:
+- [x] 14.12.4 — UK/EU carve-out:
   - "Nothing in this section excludes or limits any liability that cannot be excluded or limited under applicable law, including your statutory rights under the Consumer Rights Act 2015 (UK) or the EU Consumer Rights Directive"
   - "This release does not apply to claims for death or personal injury caused by Lumenshore's negligence, or for fraud or fraudulent misrepresentation"
 
@@ -2454,24 +2454,24 @@
 **So that** Lumenshore is not liable for any third-party acts, omissions, content, or services
 
 #### Subtasks:
-- [ ] 14.13.1 — Third-party links disclaimer:
+- [x] 14.13.1 — Third-party links disclaimer:
   - "The Service may contain links to third-party websites, applications, or services that are not owned or controlled by Lumenshore"
   - "Lumenshore has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party websites or services"
   - "You acknowledge and agree that Lumenshore shall not be liable for any damage or loss caused by or in connection with use of or reliance on any such third-party content"
   - "Inclusion of a link does not imply endorsement, affiliation, or sponsorship"
-- [ ] 14.13.2 — Apple platform disclaimer:
+- [x] 14.13.2 — Apple platform disclaimer:
   - "Apple Inc. is not a party to these Terms and has no obligation to provide maintenance, support, or warranty for the Service"
   - "In the event of any failure of the Service to conform to applicable warranties, you may notify Apple and Apple will refund the purchase price (if any); Apple has no other warranty obligation"
   - "Apple is not responsible for addressing any claims relating to the Service or your possession/use of the Service"
   - "Apple is a third-party beneficiary of these Terms and may enforce them against you"
   - (These are Apple Minimum Terms per App Store Review Guidelines)
-- [ ] 14.13.3 — Infrastructure provider disclaimer:
+- [x] 14.13.3 — Infrastructure provider disclaimer:
   - "Lumenshore is not liable for failures, outages, or data breaches caused by third-party infrastructure providers including but not limited to: Apple (iCloud, App Store), Vercel (hosting), Sentry (error monitoring), or any payment processor"
   - "Service availability depends on third-party infrastructure; Lumenshore does not guarantee availability of third-party services"
-- [ ] 14.13.4 — User-generated content disclaimer (future-proofing):
+- [x] 14.13.4 — User-generated content disclaimer (future-proofing):
   - "If the Service permits user-generated content in the future, Lumenshore is not responsible for any content created, posted, or shared by users"
   - "Lumenshore does not endorse any user content and disclaims all liability arising from user content"
-- [ ] 14.13.5 — Third-party authentication disclaimer (future SIWA):
+- [x] 14.13.5 — Third-party authentication disclaimer (future SIWA):
   - "If you authenticate using third-party services (e.g., Sign in with Apple), Lumenshore is not responsible for the security or availability of those authentication services"
   - "Loss of access to your third-party account may affect your ability to access the Service"
 
@@ -2489,17 +2489,17 @@
 **So that** users cannot later claim ownership of features they suggested or demand compensation
 
 #### Subtasks:
-- [ ] 14.14.1 — Feedback IP assignment clause:
+- [x] 14.14.1 — Feedback IP assignment clause:
   - "Any feedback, suggestions, ideas, feature requests, bug reports, or other communications you submit to Lumenshore ('Feedback') shall be deemed non-confidential and non-proprietary"
   - "By submitting Feedback, you hereby irrevocably assign to Lumenshore all right, title, and interest in and to the Feedback, including all intellectual property rights therein"
   - "You waive any and all moral rights in the Feedback to the fullest extent permitted by law"
-- [ ] 14.14.2 — No obligation on Lumenshore:
+- [x] 14.14.2 — No obligation on Lumenshore:
   - "Lumenshore is under no obligation to: (a) maintain any Feedback in confidence; (b) pay compensation for any Feedback; (c) respond to any Feedback; or (d) use or implement any Feedback"
   - "Lumenshore may use, reproduce, distribute, modify, or create derivative works from Feedback for any purpose without attribution or compensation"
-- [ ] 14.14.3 — No confidentiality obligation:
+- [x] 14.14.3 — No confidentiality obligation:
   - "Do not submit any information you consider confidential or proprietary as Feedback"
   - "Lumenshore has no confidentiality obligations with respect to any Feedback"
-- [ ] 14.14.4 — Representation:
+- [x] 14.14.4 — Representation:
   - "You represent and warrant that you have the right to submit the Feedback and that the Feedback does not infringe any third-party's intellectual property or other rights"
   - "You agree to indemnify Lumenshore against any claims arising from your Feedback"
 
@@ -2517,23 +2517,23 @@
 **So that** frivolous claims are filtered out and Lumenshore has opportunity to resolve before litigation costs accrue
 
 #### Subtasks:
-- [ ] 14.15.1 — Notice requirement:
+- [x] 14.15.1 — Notice requirement:
   - "Before commencing any legal proceeding or arbitration against Lumenshore, you MUST first send a written Notice of Dispute ('Notice') to Lumenshore"
   - Notice must be sent to: legal@lumenshore.com AND by post to registered office (Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA)
   - Notice must include: your full legal name, email address associated with the Service, detailed description of the claim, specific Terms provision allegedly breached, the specific relief sought, and your signature (or electronic equivalent)
-- [ ] 14.15.2 — Mandatory negotiation period:
+- [x] 14.15.2 — Mandatory negotiation period:
   - "After receiving your Notice, the parties shall engage in good faith negotiations for a period of SIXTY (60) DAYS before either party may commence legal proceedings or arbitration"
   - "Lumenshore shall acknowledge receipt of your Notice within 14 days"
   - "During the negotiation period, both parties agree not to commence any legal proceeding"
   - "The negotiation period may be extended by mutual written agreement"
-- [ ] 14.15.3 — Consequence of non-compliance:
+- [x] 14.15.3 — Consequence of non-compliance:
   - "Any legal proceeding or arbitration commenced without complying with this notice and negotiation requirement SHALL be dismissed without prejudice, with costs awarded to Lumenshore"
   - "Failure to provide proper Notice constitutes a material breach of these Terms by the claimant"
-- [ ] 14.15.4 — Exceptions:
+- [x] 14.15.4 — Exceptions:
   - Intellectual property infringement claims (either party)
   - Claims for injunctive or equitable relief to prevent imminent, irreparable harm
   - Claims in small claims court (if qualifying)
-- [ ] 14.15.5 — Tolling:
+- [x] 14.15.5 — Tolling:
   - "The limitation period (Story 14.9) shall be tolled during the mandatory negotiation period"
   - "Sending a compliant Notice preserves your claim within the limitation period"
 
@@ -2551,21 +2551,21 @@
 **So that** users cannot pursue remedies beyond what the Terms explicitly provide
 
 #### Subtasks:
-- [ ] 14.16.1 — Sole remedy for service dissatisfaction:
+- [x] 14.16.1 — Sole remedy for service dissatisfaction:
   - "YOUR SOLE AND EXCLUSIVE REMEDY FOR ANY DISSATISFACTION WITH THE SERVICE IS TO STOP USING THE SERVICE AND CANCEL YOUR SUBSCRIPTION"
   - "If you are dissatisfied with any content, features, or policies: your only recourse is to discontinue use"
   - "You may also: (a) request deletion of your account and data per our Privacy Policy, and (b) request a data export per GDPR Article 20"
-- [ ] 14.16.2 — Sole remedy for service failures:
+- [x] 14.16.2 — Sole remedy for service failures:
   - "In the event of any failure, error, or defect in the Service, your sole remedy (to the maximum extent permitted by law) is for Lumenshore to use commercially reasonable efforts to correct the issue within a reasonable timeframe"
   - "If Lumenshore is unable to correct the issue: your sole remedy for paid subscribers is a pro-rata refund of the subscription fee for the affected period, not to exceed the total amount paid in the preceding 12 months"
   - "For Free tier users: your sole remedy is discontinuation of use"
-- [ ] 14.16.3 — No specific performance:
+- [x] 14.16.3 — No specific performance:
   - "You agree that you are not entitled to specific performance or injunctive relief requiring Lumenshore to provide any particular feature, content, language pair, or service level"
   - "Lumenshore's obligations under these Terms are limited to commercially reasonable efforts"
-- [ ] 14.16.4 — Cumulative remedies for Lumenshore:
+- [x] 14.16.4 — Cumulative remedies for Lumenshore:
   - "Lumenshore's rights and remedies under these Terms are cumulative and not exclusive of any other rights or remedies available at law or in equity"
   - "Lumenshore's election to exercise one remedy does not waive any other remedy"
-- [ ] 14.16.5 — UK/EU carve-out:
+- [x] 14.16.5 — UK/EU carve-out:
   - "This clause does not affect your statutory rights under the Consumer Rights Act 2015 (UK), including rights to repair, replacement, or price reduction for faulty digital content"
   - "EU consumers retain all rights under the EU Consumer Rights Directive"
 
@@ -2583,30 +2583,30 @@
 **So that** Lumenshore is protected from claims arising from technical failures, data issues, and events beyond reasonable control
 
 #### Subtasks:
-- [ ] 14.17.1 — Data loss disclaimer:
+- [x] 14.17.1 — Data loss disclaimer:
   - "LUMENSHORE IS NOT LIABLE FOR ANY LOSS, CORRUPTION, OR DELETION OF USER DATA, INCLUDING BUT NOT LIMITED TO: learning progress, game scores, XP, streaks, mastered content, favorites, language preferences, tier selections, or any other user-generated or user-stored data"
   - "Data loss may occur due to: app updates, operating system updates, device changes, iCloud sync failures, SwiftData migration errors, cache clearing, account deletion, or other technical causes"
   - "Users are solely responsible for maintaining backups of any data they consider important"
   - "Lumenshore provides data export functionality (GDPR Article 20) as a courtesy; however, failure of the export function does not create liability"
-- [ ] 14.17.2 — Service interruption disclaimer:
+- [x] 14.17.2 — Service interruption disclaimer:
   - "Lumenshore does not guarantee continuous, uninterrupted, or error-free operation of the Service"
   - "The Service may be unavailable due to: scheduled maintenance, emergency maintenance, third-party outages (Apple, Vercel, cloud services), DDoS attacks, software bugs, or other operational issues"
   - "Lumenshore is not liable for any loss arising from temporary or permanent unavailability of the Service"
   - "No SLA (Service Level Agreement) is provided unless separately agreed in writing"
-- [ ] 14.17.3 — Enhanced force majeure clause:
+- [x] 14.17.3 — Enhanced force majeure clause:
   - "Lumenshore shall not be liable for any failure or delay in performance arising from causes beyond its reasonable control ('Force Majeure Events')"
   - Force Majeure Events include but are not limited to: acts of God, fire, flood, earthquake, epidemic, pandemic, war, terrorism, civil unrest, sanctions, government orders, strikes, labor disputes, Internet service failures, cloud service provider outages, DDoS or cyber attacks, power failures, telecommunications failures, Apple App Store policy changes or outages, changes in law or regulation, and third-party service provider failures
   - "During a Force Majeure Event, Lumenshore's obligations are suspended for the duration of the event"
   - "If a Force Majeure Event continues for more than 90 consecutive days, either party may terminate the agreement with no liability to the other"
-- [ ] 14.17.4 — App update and migration disclaimer:
+- [x] 14.17.4 — App update and migration disclaimer:
   - "App updates may cause changes to features, UI, content, or data structures"
   - "Lumenshore is not liable for any adverse effects of app updates including: loss of settings, progress reset, feature removal, or incompatibility with user's device or OS version"
   - "Continued use after an update constitutes acceptance of the updated Service"
-- [ ] 14.17.5 — iCloud and cloud sync disclaimer:
+- [x] 14.17.5 — iCloud and cloud sync disclaimer:
   - "Cloud synchronization is provided as a convenience and is subject to Apple's iCloud terms and availability"
   - "Lumenshore is not liable for iCloud sync failures, data conflicts, data loss, or delays"
   - "If you disable iCloud sync, data is stored locally on your device only; local data loss is your responsibility"
-- [ ] 14.17.6 — No fiduciary duty:
+- [x] 14.17.6 — No fiduciary duty:
   - "Nothing in these Terms or your use of the Service creates any fiduciary duty, trust, or special relationship between Lumenshore and you"
   - "Lumenshore acts solely as a licensor of digital content and owes no duty of care beyond what is expressly stated in these Terms and required by applicable law"
 
@@ -2625,32 +2625,32 @@
 **So that** Lumenshore (and its directors) are protected from user claims arising from M&A, corporate restructuring, or cessation of trading
 
 #### Subtasks:
-- [ ] 14.18.1 — Right to discontinue the Service entirely:
+- [x] 14.18.1 — Right to discontinue the Service entirely:
   - "Lumenshore reserves the right to discontinue, permanently shut down, or cease operating the Service (in whole or in part) at any time, for any reason or no reason"
   - "If Lumenshore elects to discontinue the Service, we will provide at least 30 days' notice via email (if available) and/or in-app notification"
   - "During the notice period, paid subscribers may export their data using the built-in export functionality"
   - "After the discontinuation date, all user accounts and associated data will be deleted in accordance with our data retention policy"
-- [ ] 14.18.2 — Liability cap on discontinuation:
+- [x] 14.18.2 — Liability cap on discontinuation:
   - "Lumenshore's sole liability for discontinuation of the Service is a pro-rata refund of the unused portion of any pre-paid subscription fee"
   - "Lumenshore is not liable for any indirect, incidental, consequential, or special damages arising from discontinuation, including but not limited to: loss of learning progress, loss of data, loss of streaks, loss of achievement records, or inability to continue a learning programme"
   - "Free tier users have no right to any compensation upon discontinuation"
-- [ ] 14.18.3 — Business transfer / assignment (strengthens Story 14.6.3):
+- [x] 14.18.3 — Business transfer / assignment (strengthens Story 14.6.3):
   - "Lumenshore may assign, transfer, or novate these Terms and all rights and obligations hereunder to any successor, acquirer, or assignee in connection with a merger, acquisition, reorganisation, sale of assets, or change of control, without your prior consent"
   - "In such event, the assignee shall assume all rights and obligations under these Terms"
   - "You will be notified of the assignment within 30 days, but your continued use of the Service after assignment constitutes acceptance"
   - "The assignment shall not, by itself, reduce your rights under these Terms"
-- [ ] 14.18.4 — Wind-down and insolvency protection:
+- [x] 14.18.4 — Wind-down and insolvency protection:
   - "In the event that Lumenshore enters administration, liquidation, or any insolvency proceeding, these Terms shall terminate automatically"
   - "Any claims by users shall rank as unsecured claims in accordance with applicable insolvency law (Insolvency Act 1986)"
   - "Directors and officers of Lumenshore shall have no personal liability for the company's obligations under these Terms (subject to applicable law)"
-- [ ] 14.18.5 — No guaranteed minimum service period:
+- [x] 14.18.5 — No guaranteed minimum service period:
   - "Lumenshore does not guarantee any minimum period of service availability"
   - "Your subscription entitles you to access the Service if and while it is available; it does not create a guarantee of perpetual or long-term service"
-- [ ] 14.18.6 — Content removal rights:
+- [x] 14.18.6 — Content removal rights:
   - "Lumenshore may remove, modify, or discontinue specific features, language pairs, content categories, or learning materials at any time without prior notice"
   - "The removal of any specific content does not entitle you to a refund or constitute a breach of these Terms"
   - "Lumenshore is under no obligation to maintain, update, or expand the content library"
-- [ ] 14.18.7 — Survival post-discontinuation:
+- [x] 14.18.7 — Survival post-discontinuation:
   - The following clauses survive discontinuation: limitation of liability, indemnification, IP ownership, dispute resolution, governing law, aggregate data rights, feedback IP assignment, no-warranty disclaimer
 
 **Acceptance Criteria**:
@@ -2668,25 +2668,25 @@
 **So that** Lumenshore is not liable when compliance with new or changed laws requires feature removal, geo-restrictions, or service degradation
 
 #### Subtasks:
-- [ ] 14.19.1 — Regulatory change clause:
+- [x] 14.19.1 — Regulatory change clause:
   - "You acknowledge that the Service is subject to the laws and regulations of multiple jurisdictions, which may change at any time"
   - "If any law, regulation, court order, regulatory guidance, or platform policy (including Apple App Store policies) requires Lumenshore to modify, restrict, suspend, or discontinue any feature, content, or aspect of the Service, such action shall not constitute a breach of these Terms"
   - "Lumenshore shall not be liable for any loss or inconvenience arising from regulatory-mandated changes"
-- [ ] 14.19.2 — Geo-restriction protection:
+- [x] 14.19.2 — Geo-restriction protection:
   - "Lumenshore may restrict or limit the Service in any jurisdiction where providing it would expose the company to legal or regulatory risk"
   - "If the Service becomes unavailable in your jurisdiction due to regulatory requirements, Lumenshore's sole obligation is to provide a pro-rata refund of any pre-paid subscription fee"
   - "You are solely responsible for determining whether your use of the Service complies with your local laws"
-- [ ] 14.19.3 — Apple policy change protection:
+- [x] 14.19.3 — Apple policy change protection:
   - "The Service relies on Apple's iOS platform, App Store, and StoreKit infrastructure. Changes to Apple's policies, guidelines, pricing structures, commission rates, or technical requirements may require Lumenshore to modify the Service"
   - "Lumenshore is not liable for any changes to the Service caused by Apple's platform decisions"
   - "If Apple suspends or removes the app from the App Store, Lumenshore's liability is limited to providing alternative access to data export"
-- [ ] 14.19.4 — Tax and pricing changes:
+- [x] 14.19.4 — Tax and pricing changes:
   - "Subscription pricing may change due to VAT rate changes, tax law changes, currency fluctuations, or Apple's pricing tier adjustments"
   - "Price changes resulting from tax or regulatory requirements are not considered a breach of contract and do not require additional consent beyond Apple's standard price increase mechanism (Story 9.6)"
-- [ ] 14.19.5 — Data protection regulation changes:
+- [x] 14.19.5 — Data protection regulation changes:
   - "If changes to data protection laws (including GDPR, UK GDPR, CCPA, PIPL, or any other applicable law) require Lumenshore to delete data, restrict processing, or modify data handling practices, such actions shall not constitute a breach of these Terms or any warranty"
   - "Lumenshore shall use reasonable efforts to notify users of material changes to data handling caused by regulatory requirements"
-- [ ] 14.19.6 — Indemnification for user's local law violations:
+- [x] 14.19.6 — Indemnification for user's local law violations:
   - "You agree to indemnify Lumenshore against any claims, losses, or penalties arising from your use of the Service in violation of your local laws"
   - "Lumenshore does not warrant that the Service is legal, appropriate, or available for use in any particular jurisdiction"
 
@@ -2705,28 +2705,28 @@
 **So that** subscription revenue is protected from credential sharing and Lumenshore has clear grounds for enforcement
 
 #### Subtasks:
-- [ ] 14.20.1 — Single-user license:
+- [x] 14.20.1 — Single-user license:
   - "Each subscription is a personal, non-transferable, single-user license"
   - "Your subscription may be used only by you, the individual who purchased or activated the subscription"
   - "You may use the Service on multiple devices owned or controlled by you, but you may not allow any other person to use your account"
-- [ ] 14.20.2 — Prohibition on credential sharing:
+- [x] 14.20.2 — Prohibition on credential sharing:
   - "You may not share your account credentials (including Apple ID, passwords, or authentication tokens) with any other person"
   - "You may not allow simultaneous use of your account on devices used by different individuals"
   - "Account sharing detected by LumenShore may result in immediate account suspension or termination without refund"
-- [ ] 14.20.3 — User responsibility for account security:
+- [x] 14.20.3 — User responsibility for account security:
   - "You are solely responsible for maintaining the confidentiality and security of your account credentials"
   - "You are responsible for all activity that occurs under your account, whether or not authorised by you"
   - "You must immediately notify Lumenshore (hello@lumenshore.com) of any unauthorised access to or use of your account"
   - "Lumenshore is not liable for any loss arising from unauthorised access to your account where such access resulted from your failure to maintain account security"
-- [ ] 14.20.4 — Family sharing:
+- [x] 14.20.4 — Family sharing:
   - "Apple Family Sharing, where available and supported, is the only authorised method of sharing access to the Service with other members of your household"
   - "Family Sharing requires each family member to use their own Apple ID"
   - "Any sharing arrangement outside of Apple Family Sharing constitutes credential sharing and is prohibited"
-- [ ] 14.20.5 — Institutional / Educational use:
+- [x] 14.20.5 — Institutional / Educational use:
   - "LumenLingo subscriptions are for individual, personal use only"
   - "Use of LumenLingo in educational institutions, corporate training programmes, or commercial settings requires a separate institutional license agreement from Lumenshore"
   - "Institutions may not purchase individual subscriptions in bulk as a substitute for an institutional license"
-- [ ] 14.20.6 — Enforcement measures:
+- [x] 14.20.6 — Enforcement measures:
   - "Lumenshore may employ technical measures to detect and prevent account sharing, including device fingerprinting, concurrent session detection, and usage pattern analysis"
   - "Detection of account sharing constitutes breach of these Terms and entitles Lumenshore to suspend or terminate the account per Story 14.8"
 
@@ -2745,22 +2745,22 @@
 **So that** Lumenshore's dispute exposure is limited to individual claims rather than aggregated multi-party proceedings
 
 #### Subtasks:
-- [ ] 14.21.1 — UK Group Litigation Order (GLO) waiver:
+- [x] 14.21.1 — UK Group Litigation Order (GLO) waiver:
   - "To the maximum extent permitted by applicable law, you agree to bring any claim against Lumenshore only in your individual capacity and not as a plaintiff, claimant, or member of any class, group, collective, or representative action"
   - "You waive any right to participate in a Group Litigation Order (GLO) under the Civil Procedure Rules (CPR 19.III) against Lumenshore, except where such waiver is prohibited by law"
   - Note: UK courts may not enforce GLO waivers in consumer contracts — document enforceability risk
-- [ ] 14.21.2 — EU Representative Actions Directive (2020/1828) waiver:
+- [x] 14.21.2 — EU Representative Actions Directive (2020/1828) waiver:
   - "You waive, to the extent permissible under applicable law, the right to participate in representative actions brought by qualified entities under the EU Representative Actions Directive (2020/1828) or its national implementations"
   - "This waiver applies to collective actions for injunctive measures and redress measures"
   - Note: EU Directive allows Member States to override waivers — effectiveness varies by country. Include "to the extent permissible" qualifier
-- [ ] 14.21.3 — Global collective action waiver:
+- [x] 14.21.3 — Global collective action waiver:
   - "In jurisdictions outside the US, UK, and EU: you similarly agree that any dispute will be resolved individually and not as part of any class, collective, or group proceeding"
   - "This includes but is not limited to: Australian class actions (Federal Court Rules Part 9.33), Canadian class proceedings, Brazilian collective actions (LGPD Art. 42), and any similar aggregated or representative proceeding"
-- [ ] 14.21.4 — Exceptions — mandatory collective proceedings:
+- [x] 14.21.4 — Exceptions — mandatory collective proceedings:
   - "This waiver does not apply where: (a) applicable law expressly prohibits waiver of collective proceedings rights, (b) a court of competent jurisdiction invalidates the waiver, or (c) a regulatory body (e.g. ICO, FTC, CNIL) initiates proceedings on behalf of consumers"
   - "Where the collective action waiver is found unenforceable in a jurisdiction, the remaining Terms continue in full force"
   - "Regulatory enforcement actions and government-initiated proceedings are not affected by this clause"
-- [ ] 14.21.5 — Enforceability analysis and documentation:
+- [x] 14.21.5 — Enforceability analysis and documentation:
   - Document enforceability of collective action waivers per key jurisdiction:
     - UK: uncertain — Consumer Rights Act 2015 and CMA may override in B2C; UCTA unfair terms risk. Include but flag risk.
     - Germany: likely unenforceable under AGB (standard terms) law — include but note
@@ -2769,7 +2769,7 @@
     - Australia: class action waivers generally unenforceable — note
     - US: covered separately in Story 14.4 (generally enforceable under FAA)
   - Maintain enforceability analysis as living document for legal counsel review
-- [ ] 14.21.6 — Paired with individual dispute resolution:
+- [x] 14.21.6 — Paired with individual dispute resolution:
   - Cross-reference Story 14.1 (dispute resolution) and Story 14.15 (pre-suit notice)
   - Reinforce that individual dispute resolution through mandatory negotiation → mediation → arbitration/court is the intended pathway
   - "Any claim you may have against Lumenshore must be brought within the limitation period set out in Story 14.9 and must follow the pre-suit notice procedure in Story 14.15"
@@ -2797,18 +2797,18 @@
 **So that** changes are transparent and auditable
 
 #### Subtasks:
-- [ ] 15.1.1 — Implement version numbering for all legal documents:
+- [x] 15.1.1 — Implement version numbering for all legal documents:
   - Privacy Policy v1.0, v1.1, v2.0, etc.
   - Terms of Service v1.0, v1.1, etc.
   - Cookie Policy v1.0, etc.
-- [ ] 15.1.2 — Create changelog section at bottom of each legal page:
+- [x] 15.1.2 — Create changelog section at bottom of each legal page:
   - Date of change
   - Summary of what changed
   - Version number
 - [ ] 15.1.3 — Implement "What's Changed" notification:
   - Banner or modal when legal documents are updated
   - "We've updated our Privacy Policy. [View changes]"
-- [ ] 15.1.4 — Store historical versions (in Git or on website as `/privacy/v1`, `/privacy/v2`)
+- [x] 15.1.4 — Store historical versions (in Git or on website as `/privacy/v1`, `/privacy/v2`)
 - [ ] 15.1.5 — Notify existing users of material changes (email if newsletter active, in-app notification)
 - [ ] 15.1.6 — Re-consent mechanism for material privacy policy changes (GDPR best practice)
 
@@ -2825,7 +2825,7 @@
 **So that** compliance is maintained as laws and features evolve
 
 #### Subtasks:
-- [ ] 15.2.1 — Create annual audit checklist:
+- [x] 15.2.1 — Create annual audit checklist:
   - Privacy Policy accuracy (does it still match actual data collection?)
   - Terms of Service accuracy (do they match current features?)
   - Cookie Policy accuracy (any new cookies/tracking?)
@@ -2835,10 +2835,10 @@
   - UK law compliance (any post-Brexit regulatory changes?)
   - Insurance coverage adequacy
   - ICO registration renewal
-- [ ] 15.2.2 — Schedule annual audit date (e.g., January each year)
-- [ ] 15.2.3 — Assign audit responsibility
-- [ ] 15.2.4 — Document audit findings and remediation actions
-- [ ] 15.2.5 — Track new laws:
+- [x] 15.2.2 — Schedule annual audit date (e.g., January each year)
+- [x] 15.2.3 — Assign audit responsibility
+- [x] 15.2.4 — Document audit findings and remediation actions
+- [x] 15.2.5 — Track new laws:
   - EU AI Act (if AI features added)
   - EU Data Act
   - New US state privacy laws (currently 15+ states with laws)
@@ -2858,7 +2858,7 @@
 **So that** new features don't introduce compliance gaps
 
 #### Subtasks:
-- [ ] 15.3.1 — Create "Legal Impact Assessment" template for new features:
+- [x] 15.3.1 — Create "Legal Impact Assessment" template for new features:
   - Does this feature collect new personal data?
   - Does this feature share data with a new third party?
   - Does this feature affect children?
@@ -2867,9 +2867,9 @@
   - Does this feature need a Privacy Policy update?
   - Does this feature need a Terms of Service update?
   - Does this feature need a DPIA?
-- [ ] 15.3.2 — Integrate legal impact assessment into feature development workflow
-- [ ] 15.3.3 — Require assessment completion before feature merge
-- [ ] 15.3.4 — Document completed assessments
+- [x] 15.3.2 — Integrate legal impact assessment into feature development workflow
+- [x] 15.3.3 — Require assessment completion before feature merge
+- [x] 15.3.4 — Document completed assessments
 
 **Acceptance Criteria**:
 - Template created
@@ -2884,17 +2884,17 @@
 **So that** we can adapt proactively
 
 #### Subtasks:
-- [ ] 15.4.1 — Monitor Apple developer news and guideline changes:
+- [x] 15.4.1 — Monitor Apple developer news and guideline changes:
   - Subscribe to Apple Developer Newsletter
   - Review WWDC policy sessions annually
   - Check App Store Review Guidelines before each submission
-- [ ] 15.4.2 — Monitor ICO / EU DPA guidance updates:
+- [x] 15.4.2 — Monitor ICO / EU DPA guidance updates:
   - Subscribe to ICO newsletter
   - Follow EDPB (European Data Protection Board) opinions
-- [ ] 15.4.3 — Monitor US state privacy law developments:
+- [x] 15.4.3 — Monitor US state privacy law developments:
   - IAPP (International Association of Privacy Professionals) tracker
   - California AG CPRA enforcement updates
-- [ ] 15.4.4 — Monitor EU digital regulation:
+- [x] 15.4.4 — Monitor EU digital regulation:
   - DSA enforcement
   - DMA changes (if app store rules change)
   - EU AI Act (if AI features planned)
@@ -2921,19 +2921,19 @@
 **So that** I can get help easily (Apple requires functional support URL)
 
 #### Subtasks:
-- [ ] 16.1.1 — Verify `/contact` page meets Apple's support URL requirements:
+- [x] 16.1.1 — Verify `/contact` page meets Apple's support URL requirements:
   - Functional contact form or email address
   - FAQ or help content
   - Response time commitment
-- [ ] 16.1.2 — Add dedicated support email: support@lumenshore.com (separate from hello@)
-- [ ] 16.1.3 — Add FAQ covering common legal questions:
+- [x] 16.1.2 — Add dedicated support email: support@lumenshore.com (separate from hello@)
+- [x] 16.1.3 — Add FAQ covering common legal questions:
   - "How do I delete my account?"
   - "How do I cancel my subscription?"
   - "How do I export my data?"
   - "What data do you collect?"
   - "How do I contact you about a privacy concern?"
-- [ ] 16.1.4 — Add response time SLA: "We aim to respond within 48 hours"
-- [ ] 16.1.5 — Ensure support URL in App Store Connect is correct and functional
+- [x] 16.1.4 — Add response time SLA: "We aim to respond within 48 hours"
+- [x] 16.1.5 — Ensure support URL in App Store Connect is correct and functional
 
 **Acceptance Criteria**:
 - Support page meets Apple requirements
@@ -2948,19 +2948,19 @@
 **So that** I can find policies without navigating the full site
 
 #### Subtasks:
-- [ ] 16.2.1 — Add legal pages to sitemap.xml:
+- [x] 16.2.1 — Add legal pages to sitemap.xml:
   - /privacy
   - /terms
   - /cookies (when created)
   - /accessibility
   - /eula (when created)
   - /security (when created)
-- [ ] 16.2.2 — Add proper meta tags to legal pages:
+- [x] 16.2.2 — Add proper meta tags to legal pages:
   - `<title>Privacy Policy — LumenLingo by LumenShore</title>`
   - `<meta name="description" ...>`
   - OpenGraph tags for sharing
-- [ ] 16.2.3 — Add structured data (JSON-LD) for legal pages where applicable
-- [ ] 16.2.4 — Ensure legal pages are NOT behind locale prefix for default language (English /privacy works without /en/privacy)
+- [x] 16.2.3 — Add structured data (JSON-LD) for legal pages where applicable
+- [x] 16.2.4 — Ensure legal pages are NOT behind locale prefix for default language (English /privacy works without /en/privacy)
 
 **Acceptance Criteria**:
 - All legal pages in sitemap
@@ -2975,20 +2975,20 @@
 **So that** I can always find the policies
 
 #### Subtasks:
-- [ ] 16.3.1 — Verify footer includes links to:
+- [x] 16.3.1 — Verify footer includes links to:
   - Privacy Policy ✓ (exists)
   - Terms of Service ✓ (exists)
   - Cookie Policy (add when created)
   - Accessibility Statement (add link)
   - Cookie Settings (add when consent banner created — allows re-opening preferences)
-- [ ] 16.3.2 — Add company legal disclosures to footer (UK Companies Act 2006 s.82 + Business Names requirements):
+- [x] 16.3.2 — Add company legal disclosures to footer (UK Companies Act 2006 s.82 + Business Names requirements):
   - "Lumenshore Limited"
   - "Company No. 09607326"
   - "Registered in England and Wales"
   - "Registered Office: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA"
   - "VAT No. GB 270411929"
-- [ ] 16.3.3 — Add copyright notice to footer: "© 2015–2026 Lumenshore Limited. All rights reserved."
-- [ ] 16.3.4 — Verify footer renders correctly in all 10 locales including RTL (Arabic)
+- [x] 16.3.3 — Add copyright notice to footer: "© 2015–2026 Lumenshore Limited. All rights reserved."
+- [x] 16.3.4 — Verify footer renders correctly in all 10 locales including RTL (Arabic)
 
 **Acceptance Criteria**:
 - All legal links in footer
@@ -4186,11 +4186,11 @@
 | **P1** | Epic 5: CCPA / US Privacy Laws | ✅ Complete | Medium |
 | **P1** | Epic 6: UK-Specific Compliance | ✅ Complete (Stories 6.1–6.5) | Medium |
 | **P1** | Epic 8: IP & Content Protection | ✅ Complete | Medium |
-| **P1** | Epic 10: Legal Page Internationalization | Not Started | Large |
-| **P1** | Epic 12: Security & Breach Preparedness | Not Started | Medium |
+| **P1** | Epic 10: Legal Page Internationalization | Complete | Large |
+| **P1** | Epic 12: Security & Breach Preparedness | Complete | Medium |
 | **P1** | Epic 13: Email Marketing Compliance | Not Started (blocked by ESP) | Small |
 | **P1** | Epic 14: Dispute Resolution & Liability | Not Started | XL |
-| **P1** | Epic 16: Website Legal Infrastructure | Not Started | Small |
+| **P1** | Epic 16: Website Legal Infrastructure | Complete | Small |
 | **P1** | Epic 21: Export Controls & Sanctions | ✅ Complete (Stories 21.1–21.2) | Small |
 | **P1** | Epic 22: Accessibility Multi-Jurisdiction | ✅ Complete (Stories 22.1–22.2) | Large |
 | **P1** | Epic 24: Insurance & Corporate Governance | ✅ Complete (Stories 24.1–24.2) | Medium |

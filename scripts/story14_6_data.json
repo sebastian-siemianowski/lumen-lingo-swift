@@ -1,0 +1,482 @@
+{
+  "en": {
+    "entireAgreement": {
+      "heading": "Entire Agreement",
+      "p1": "These Terms, together with our Privacy Policy, End User Licence Agreement, and Cookie Policy, constitute the entire agreement between you and LumenShore Limited regarding the Service.",
+      "p2": "This agreement supersedes all prior agreements, representations, and understandings between you and LumenShore, whether written or oral.",
+      "p3": "No oral modification of these Terms shall be effective."
+    },
+    "severability": {
+      "heading": "Severability",
+      "p1": "If any provision of these Terms is held to be invalid, illegal, or unenforceable by a court of competent jurisdiction, that provision shall be severed from these Terms without affecting the validity and enforceability of the remaining provisions.",
+      "p2": "The court or arbitrator may reform the unenforceable provision to the minimum extent necessary to make it valid and enforceable."
+    },
+    "assignment": {
+      "heading": "Assignment",
+      "p1": "LumenShore may assign or transfer these Terms, and any rights and licences granted hereunder, to any successor, affiliate, or acquirer of all or substantially all of its business or assets without your consent.",
+      "p2": "You may not assign or transfer your rights or obligations under these Terms without our prior written consent."
+    },
+    "waiver": {
+      "heading": "Waiver",
+      "p1": "The failure of LumenShore to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision.",
+      "p2": "Any waiver of a breach of these Terms shall not constitute a waiver of any subsequent breach.",
+      "p3": "No waiver shall be effective unless made in writing and signed by an authorised representative of LumenShore."
+    },
+    "noPartnership": {
+      "heading": "Relationship of the Parties",
+      "p1": "Nothing in these Terms shall be construed as creating an agency, partnership, joint venture, or employment relationship between you and LumenShore.",
+      "p2": "Neither party has the authority to bind the other or to incur any obligation on behalf of the other."
+    },
+    "electronicCommunications": {
+      "heading": "Electronic Communications",
+      "p1": "By using the Service, you consent to receiving communications from us electronically, including by email, in-app notifications, and notices posted on our website.",
+      "p2": "You agree that all agreements, notices, disclosures, and other communications we provide to you electronically satisfy any legal requirement that such communications be in writing."
+    },
+    "headingsClause": {
+      "heading": "Headings",
+      "p1": "The section headings in these Terms are for convenience of reference only and shall not affect the interpretation or construction of these Terms."
+    },
+    "survival": {
+      "heading": "Survival",
+      "p1": "Provisions of these Terms that by their nature should survive termination shall survive, including but not limited to: limitation of liability, indemnification, intellectual property ownership, dispute resolution, warranty disclaimers, and any accrued rights and obligations."
+    },
+    "noThirdPartyBeneficiaries": {
+      "heading": "No Third-Party Beneficiaries",
+      "p1": "These Terms do not confer any rights on any person or entity that is not a party to these Terms.",
+      "p2": "No third party may enforce any provision of these Terms under the Contracts (Rights of Third Parties) Act 1999.",
+      "appleException": "Notwithstanding the foregoing, Apple Inc. and its subsidiaries are intended third-party beneficiaries of these Terms solely to the extent required by Apple's Licensed Application End User Licence Agreement. Apple has the right to enforce these Terms against you as a third-party beneficiary to the minimum extent required by Apple's guidelines."
+    }
+  },
+  "es": {
+    "entireAgreement": {
+      "heading": "Acuerdo completo",
+      "p1": "Estos T\u00e9rminos, junto con nuestra Pol\u00edtica de Privacidad, Acuerdo de Licencia de Usuario Final y Pol\u00edtica de Cookies, constituyen el acuerdo completo entre usted y LumenShore Limited con respecto al Servicio.",
+      "p2": "Este acuerdo reemplaza todos los acuerdos, representaciones y entendimientos anteriores entre usted y LumenShore, ya sean escritos u orales.",
+      "p3": "Ninguna modificaci\u00f3n oral de estos T\u00e9rminos ser\u00e1 efectiva."
+    },
+    "severability": {
+      "heading": "Divisibilidad",
+      "p1": "Si alguna disposici\u00f3n de estos T\u00e9rminos se considera inv\u00e1lida, ilegal o inaplicable por un tribunal competente, dicha disposici\u00f3n se separar\u00e1 de estos T\u00e9rminos sin afectar la validez y aplicabilidad de las disposiciones restantes.",
+      "p2": "El tribunal o \u00e1rbitro podr\u00e1 reformar la disposici\u00f3n inaplicable en la medida m\u00ednima necesaria para hacerla v\u00e1lida y aplicable."
+    },
+    "assignment": {
+      "heading": "Cesi\u00f3n",
+      "p1": "LumenShore puede ceder o transferir estos T\u00e9rminos, y cualquier derecho y licencia otorgados en virtud de los mismos, a cualquier sucesor, afiliado o adquirente de la totalidad o una parte sustancial de su negocio o activos sin su consentimiento.",
+      "p2": "Usted no puede ceder ni transferir sus derechos u obligaciones en virtud de estos T\u00e9rminos sin nuestro consentimiento previo por escrito."
+    },
+    "waiver": {
+      "heading": "Renuncia",
+      "p1": "La falta de ejercicio por parte de LumenShore de cualquier derecho o disposici\u00f3n de estos T\u00e9rminos no constituir\u00e1 una renuncia a dicho derecho o disposici\u00f3n.",
+      "p2": "Cualquier renuncia a un incumplimiento de estos T\u00e9rminos no constituir\u00e1 una renuncia a cualquier incumplimiento posterior.",
+      "p3": "Ninguna renuncia ser\u00e1 efectiva a menos que se realice por escrito y sea firmada por un representante autorizado de LumenShore."
+    },
+    "noPartnership": {
+      "heading": "Relaci\u00f3n de las partes",
+      "p1": "Nada en estos T\u00e9rminos se interpretar\u00e1 como la creaci\u00f3n de una relaci\u00f3n de agencia, sociedad, empresa conjunta o empleo entre usted y LumenShore.",
+      "p2": "Ninguna de las partes tiene la autoridad para vincular a la otra o asumir obligaciones en nombre de la otra."
+    },
+    "electronicCommunications": {
+      "heading": "Comunicaciones electr\u00f3nicas",
+      "p1": "Al utilizar el Servicio, usted consiente recibir comunicaciones de nuestra parte por v\u00eda electr\u00f3nica, incluyendo correo electr\u00f3nico, notificaciones en la aplicaci\u00f3n y avisos publicados en nuestro sitio web.",
+      "p2": "Usted acepta que todos los acuerdos, avisos, divulgaciones y otras comunicaciones que le proporcionemos electr\u00f3nicamente satisfacen cualquier requisito legal de que dichas comunicaciones sean por escrito."
+    },
+    "headingsClause": {
+      "heading": "Encabezados",
+      "p1": "Los encabezados de las secciones de estos T\u00e9rminos son solo para facilitar la referencia y no afectar\u00e1n la interpretaci\u00f3n o construcci\u00f3n de estos T\u00e9rminos."
+    },
+    "survival": {
+      "heading": "Supervivencia",
+      "p1": "Las disposiciones de estos T\u00e9rminos que por su naturaleza deban sobrevivir a la terminaci\u00f3n, sobrevivir\u00e1n, incluyendo pero no limit\u00e1ndose a: limitaci\u00f3n de responsabilidad, indemnizaci\u00f3n, propiedad intelectual, resoluci\u00f3n de disputas, descargos de garant\u00eda, y cualquier derecho y obligaci\u00f3n acumulada."
+    },
+    "noThirdPartyBeneficiaries": {
+      "heading": "Sin beneficiarios terceros",
+      "p1": "Estos T\u00e9rminos no confieren ning\u00fan derecho a ninguna persona o entidad que no sea parte de estos T\u00e9rminos.",
+      "p2": "Ning\u00fan tercero puede hacer cumplir ninguna disposici\u00f3n de estos T\u00e9rminos en virtud de la Ley de Contratos (Derechos de Terceros) de 1999.",
+      "appleException": "Sin perjuicio de lo anterior, Apple Inc. y sus subsidiarias son terceros beneficiarios previstos de estos T\u00e9rminos \u00fanicamente en la medida requerida por el Acuerdo de Licencia de Usuario Final de Aplicaciones con Licencia de Apple. Apple tiene derecho a hacer cumplir estos T\u00e9rminos contra usted como tercero beneficiario en la medida m\u00ednima requerida por las directrices de Apple."
+    }
+  },
+  "fr": {
+    "entireAgreement": {
+      "heading": "Int\u00e9gralit\u00e9 de l'accord",
+      "p1": "Les pr\u00e9sentes Conditions, ainsi que notre Politique de confidentialit\u00e9, notre Contrat de licence utilisateur final et notre Politique relative aux cookies, constituent l'int\u00e9gralit\u00e9 de l'accord entre vous et LumenShore Limited concernant le Service.",
+      "p2": "Cet accord remplace tous les accords, repr\u00e9sentations et ententes ant\u00e9rieurs entre vous et LumenShore, qu'ils soient \u00e9crits ou oraux.",
+      "p3": "Aucune modification orale des pr\u00e9sentes Conditions ne sera effective."
+    },
+    "severability": {
+      "heading": "Divisibilit\u00e9",
+      "p1": "Si une disposition des pr\u00e9sentes Conditions est jug\u00e9e invalide, ill\u00e9gale ou inapplicable par un tribunal comp\u00e9tent, cette disposition sera dissoci\u00e9e des pr\u00e9sentes Conditions sans affecter la validit\u00e9 et l'applicabilit\u00e9 des dispositions restantes.",
+      "p2": "Le tribunal ou l'arbitre peut r\u00e9former la disposition inapplicable dans la mesure minimale n\u00e9cessaire pour la rendre valide et applicable."
+    },
+    "assignment": {
+      "heading": "Cession",
+      "p1": "LumenShore peut c\u00e9der ou transf\u00e9rer les pr\u00e9sentes Conditions, ainsi que tous les droits et licences accord\u00e9s en vertu des pr\u00e9sentes, \u00e0 tout successeur, filiale ou acqu\u00e9reur de la totalit\u00e9 ou d'une partie substantielle de ses activit\u00e9s ou actifs sans votre consentement.",
+      "p2": "Vous ne pouvez pas c\u00e9der ni transf\u00e9rer vos droits ou obligations en vertu des pr\u00e9sentes Conditions sans notre consentement \u00e9crit pr\u00e9alable."
+    },
+    "waiver": {
+      "heading": "Renonciation",
+      "p1": "Le fait que LumenShore n'exerce pas un droit ou une disposition des pr\u00e9sentes Conditions ne constitue pas une renonciation \u00e0 ce droit ou \u00e0 cette disposition.",
+      "p2": "Toute renonciation \u00e0 une violation des pr\u00e9sentes Conditions ne constitue pas une renonciation \u00e0 toute violation ult\u00e9rieure.",
+      "p3": "Aucune renonciation ne sera effective sauf si elle est faite par \u00e9crit et sign\u00e9e par un repr\u00e9sentant autoris\u00e9 de LumenShore."
+    },
+    "noPartnership": {
+      "heading": "Relation entre les parties",
+      "p1": "Rien dans les pr\u00e9sentes Conditions ne saurait \u00eatre interpr\u00e9t\u00e9 comme cr\u00e9ant une relation d'agence, de partenariat, de coentreprise ou d'emploi entre vous et LumenShore.",
+      "p2": "Aucune des parties n'a le pouvoir d'engager l'autre ou de contracter des obligations au nom de l'autre."
+    },
+    "electronicCommunications": {
+      "heading": "Communications \u00e9lectroniques",
+      "p1": "En utilisant le Service, vous consentez \u00e0 recevoir des communications de notre part par voie \u00e9lectronique, y compris par e-mail, notifications dans l'application et avis publi\u00e9s sur notre site web.",
+      "p2": "Vous acceptez que tous les accords, avis, divulgations et autres communications que nous vous fournissons par voie \u00e9lectronique satisfont toute exigence l\u00e9gale selon laquelle ces communications doivent \u00eatre faites par \u00e9crit."
+    },
+    "headingsClause": {
+      "heading": "Titres",
+      "p1": "Les titres des sections des pr\u00e9sentes Conditions sont uniquement fournis pour faciliter la r\u00e9f\u00e9rence et n'affectent pas l'interpr\u00e9tation ou la construction des pr\u00e9sentes Conditions."
+    },
+    "survival": {
+      "heading": "Survie",
+      "p1": "Les dispositions des pr\u00e9sentes Conditions qui, par leur nature, devraient survivre \u00e0 la r\u00e9siliation, survivront, y compris mais sans s'y limiter : la limitation de responsabilit\u00e9, l'indemnisation, la propri\u00e9t\u00e9 intellectuelle, le r\u00e8glement des litiges, les exclusions de garantie, et tous droits et obligations acquis."
+    },
+    "noThirdPartyBeneficiaries": {
+      "heading": "Pas de tiers b\u00e9n\u00e9ficiaires",
+      "p1": "Les pr\u00e9sentes Conditions ne conf\u00e8rent aucun droit \u00e0 une personne ou entit\u00e9 qui n'est pas partie aux pr\u00e9sentes Conditions.",
+      "p2": "Aucun tiers ne peut faire appliquer une disposition des pr\u00e9sentes Conditions en vertu de la loi sur les contrats (Droits des tiers) de 1999.",
+      "appleException": "Nonobstant ce qui pr\u00e9c\u00e8de, Apple Inc. et ses filiales sont des tiers b\u00e9n\u00e9ficiaires pr\u00e9vus des pr\u00e9sentes Conditions uniquement dans la mesure requise par le Contrat de licence utilisateur final d'Apple. Apple a le droit de faire appliquer les pr\u00e9sentes Conditions \u00e0 votre encontre en tant que tiers b\u00e9n\u00e9ficiaire dans la mesure minimale requise par les directives d'Apple."
+    }
+  },
+  "de": {
+    "entireAgreement": {
+      "heading": "Gesamte Vereinbarung",
+      "p1": "Diese Bedingungen bilden zusammen mit unserer Datenschutzrichtlinie, der Endbenutzer-Lizenzvereinbarung und der Cookie-Richtlinie die gesamte Vereinbarung zwischen Ihnen und LumenShore Limited in Bezug auf den Dienst.",
+      "p2": "Diese Vereinbarung ersetzt alle frueheren Vereinbarungen, Zusicherungen und Absprachen zwischen Ihnen und LumenShore, ob schriftlich oder muendlich.",
+      "p3": "Muendliche Aenderungen dieser Bedingungen sind nicht wirksam."
+    },
+    "severability": {
+      "heading": "Salvatorische Klausel",
+      "p1": "Sollte eine Bestimmung dieser Bedingungen von einem zustaendigen Gericht fuer ungueltig, rechtswidrig oder nicht durchsetzbar erklaert werden, wird diese Bestimmung von diesen Bedingungen abgetrennt, ohne die Gueltigkeit und Durchsetzbarkeit der uebrigen Bestimmungen zu beeintraechtigen.",
+      "p2": "Das Gericht oder der Schiedsrichter kann die nicht durchsetzbare Bestimmung in dem geringsten erforderlichen Umfang umgestalten, um sie gueltig und durchsetzbar zu machen."
+    },
+    "assignment": {
+      "heading": "Abtretung",
+      "p1": "LumenShore kann diese Bedingungen sowie alle hierunter gewaehrten Rechte und Lizenzen ohne Ihre Zustimmung an jeden Nachfolger, verbundenes Unternehmen oder Erwerber des gesamten oder eines wesentlichen Teils seines Geschaefts oder seiner Vermoegenswerte abtreten oder uebertragen.",
+      "p2": "Sie duerfen Ihre Rechte oder Pflichten aus diesen Bedingungen nicht ohne unsere vorherige schriftliche Zustimmung abtreten oder uebertragen."
+    },
+    "waiver": {
+      "heading": "Verzicht",
+      "p1": "Das Versaeumnis von LumenShore, ein Recht oder eine Bestimmung dieser Bedingungen durchzusetzen, stellt keinen Verzicht auf dieses Recht oder diese Bestimmung dar.",
+      "p2": "Ein Verzicht auf einen Verstoss gegen diese Bedingungen stellt keinen Verzicht auf nachfolgende Verstoesse dar.",
+      "p3": "Ein Verzicht ist nur wirksam, wenn er schriftlich erklaert und von einem bevollmaechtigten Vertreter von LumenShore unterzeichnet wird."
+    },
+    "noPartnership": {
+      "heading": "Verhaeltnis der Parteien",
+      "p1": "Nichts in diesen Bedingungen ist als Begruendung eines Vertretungs-, Partnerschafts-, Gemeinschaftsunternehmens- oder Beschaeftigungsverhaeltnisses zwischen Ihnen und LumenShore auszulegen.",
+      "p2": "Keine der Parteien ist befugt, die andere zu binden oder Verpflichtungen im Namen der anderen einzugehen."
+    },
+    "electronicCommunications": {
+      "heading": "Elektronische Kommunikation",
+      "p1": "Durch die Nutzung des Dienstes stimmen Sie zu, Mitteilungen von uns auf elektronischem Wege zu erhalten, einschliesslich per E-Mail, In-App-Benachrichtigungen und auf unserer Website veroeffentlichte Hinweise.",
+      "p2": "Sie stimmen zu, dass alle Vereinbarungen, Hinweise, Offenlegungen und sonstigen Mitteilungen, die wir Ihnen elektronisch zurstellen, jede gesetzliche Anforderung erfuellen, dass solche Mitteilungen schriftlich erfolgen muessen."
+    },
+    "headingsClause": {
+      "heading": "Ueberschriften",
+      "p1": "Die Abschnittsueberschriften in diesen Bedingungen dienen nur der Uebersichtlichkeit und haben keinen Einfluss auf die Auslegung oder Konstruktion dieser Bedingungen."
+    },
+    "survival": {
+      "heading": "Fortgeltung",
+      "p1": "Bestimmungen dieser Bedingungen, die ihrer Natur nach die Beendigung ueberdauern sollten, gelten fort, einschliesslich aber nicht beschraenkt auf: Haftungsbeschraenkungen, Freistellung, geistiges Eigentum, Streitbeilegung, Garantieausschluesse sowie erworbene Rechte und Pflichten."
+    },
+    "noThirdPartyBeneficiaries": {
+      "heading": "Keine Drittbeguenstigten",
+      "p1": "Diese Bedingungen verleihen keiner Person oder Organisation, die nicht Partei dieser Bedingungen ist, irgendwelche Rechte.",
+      "p2": "Kein Dritter kann eine Bestimmung dieser Bedingungen gemaess dem Contracts (Rights of Third Parties) Act 1999 durchsetzen.",
+      "appleException": "Ungeachtet des Vorstehenden sind Apple Inc. und seine Tochtergesellschaften beabsichtigte Drittbeguenstigte dieser Bedingungen, jedoch nur in dem von Apple's lizenzierter Anwender-Endbenutzer-Lizenzvereinbarung geforderten Umfang. Apple hat das Recht, diese Bedingungen gegen Sie als Drittbeguenstigter in dem von Apple's Richtlinien geforderten Mindestumfang durchzusetzen."
+    }
+  },
+  "ja": {
+    "entireAgreement": {
+      "heading": "\u5b8c\u5168\u5408\u610f",
+      "p1": "\u672c\u898f\u7d04\u306f\u3001\u5f53\u793e\u306e\u30d7\u30e9\u30a4\u30d0\u30b7\u30fc\u30dd\u30ea\u30b7\u30fc\u3001\u30a8\u30f3\u30c9\u30e6\u30fc\u30b6\u30fc\u30e9\u30a4\u30bb\u30f3\u30b9\u5951\u7d04\u3001\u304a\u3088\u3073Cookie\u30dd\u30ea\u30b7\u30fc\u3068\u3068\u3082\u306b\u3001\u672c\u30b5\u30fc\u30d3\u30b9\u306b\u95a2\u3059\u308b\u304a\u5ba2\u69d8\u3068LumenShore Limited\u3068\u306e\u9593\u306e\u5b8c\u5168\u306a\u5408\u610f\u3092\u69cb\u6210\u3057\u307e\u3059\u3002",
+      "p2": "\u672c\u5951\u7d04\u306f\u3001\u66f8\u9762\u307e\u305f\u306f\u53e3\u982d\u3092\u554f\u308f\u305a\u3001\u304a\u5ba2\u69d8\u3068LumenShore\u3068\u306e\u9593\u306e\u3059\u3079\u3066\u306e\u5148\u884c\u5408\u610f\u3001\u8868\u660e\u3001\u304a\u3088\u3073\u4e86\u89e3\u306b\u512a\u5148\u3057\u307e\u3059\u3002",
+      "p3": "\u672c\u898f\u7d04\u306e\u53e3\u982d\u306b\u3088\u308b\u5909\u66f4\u306f\u52b9\u529b\u3092\u6709\u3057\u307e\u305b\u3093\u3002"
+    },
+    "severability": {
+      "heading": "\u53ef\u5206\u6027",
+      "p1": "\u672c\u898f\u7d04\u306e\u3044\u305a\u308c\u304b\u306e\u6761\u9805\u304c\u7ba1\u8f44\u88c1\u5224\u6240\u306b\u3088\u308a\u7121\u52b9\u3001\u9055\u6cd5\u3001\u307e\u305f\u306f\u57f7\u884c\u4e0d\u80fd\u3068\u5224\u65ad\u3055\u308c\u305f\u5834\u5408\u3001\u305d\u306e\u6761\u9805\u306f\u672c\u898f\u7d04\u304b\u3089\u5206\u96e2\u3055\u308c\u3001\u6b8b\u308a\u306e\u6761\u9805\u306e\u6709\u52b9\u6027\u304a\u3088\u3073\u57f7\u884c\u53ef\u80fd\u6027\u306b\u5f71\u97ff\u3092\u4e0e\u3048\u307e\u305b\u3093\u3002",
+      "p2": "\u88c1\u5224\u6240\u307e\u305f\u306f\u4ef2\u88c1\u4eba\u306f\u3001\u57f7\u884c\u4e0d\u80fd\u306a\u6761\u9805\u3092\u6709\u52b9\u304b\u3064\u57f7\u884c\u53ef\u80fd\u306b\u3059\u308b\u305f\u3081\u306b\u5fc5\u8981\u306a\u6700\u5c0f\u9650\u306e\u7bc4\u56f2\u3067\u6539\u8a02\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002"
+    },
+    "assignment": {
+      "heading": "\u8b72\u6e21",
+      "p1": "LumenShore\u306f\u3001\u672c\u898f\u7d04\u304a\u3088\u3073\u672c\u898f\u7d04\u306b\u57fa\u3065\u304d\u4ed8\u4e0e\u3055\u308c\u305f\u6a29\u5229\u304a\u3088\u3073\u30e9\u30a4\u30bb\u30f3\u30b9\u3092\u3001\u304a\u5ba2\u69d8\u306e\u540c\u610f\u306a\u304f\u3001\u5f8c\u7d99\u8005\u3001\u95a2\u9023\u4f1a\u793e\u3001\u307e\u305f\u306f\u4e8b\u696d\u3082\u3057\u304f\u306f\u8cc7\u7523\u306e\u5168\u90e8\u307e\u305f\u306f\u5b9f\u8cea\u7684\u5168\u90e8\u306e\u53d6\u5f97\u8005\u306b\u8b72\u6e21\u307e\u305f\u306f\u79fb\u8ee2\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002",
+      "p2": "\u304a\u5ba2\u69d8\u306f\u3001\u5f53\u793e\u306e\u4e8b\u524d\u306e\u66f8\u9762\u306b\u3088\u308b\u540c\u610f\u306a\u304f\u3001\u672c\u898f\u7d04\u306b\u57fa\u3065\u304f\u6a29\u5229\u307e\u305f\u306f\u7fa9\u52d9\u3092\u8b72\u6e21\u307e\u305f\u306f\u79fb\u8ee2\u3059\u308b\u3053\u3068\u306f\u3067\u304d\u307e\u305b\u3093\u3002"
+    },
+    "waiver": {
+      "heading": "\u6a29\u5229\u653e\u68c4",
+      "p1": "LumenShore\u304c\u672c\u898f\u7d04\u306e\u3044\u305a\u308c\u304b\u306e\u6a29\u5229\u307e\u305f\u306f\u6761\u9805\u3092\u884c\u4f7f\u3057\u306a\u304b\u3063\u305f\u5834\u5408\u3067\u3082\u3001\u305d\u306e\u6a29\u5229\u307e\u305f\u306f\u6761\u9805\u306e\u653e\u68c4\u3068\u306f\u307f\u306a\u3055\u308c\u307e\u305b\u3093\u3002",
+      "p2": "\u672c\u898f\u7d04\u306e\u9055\u53cd\u306b\u5bfe\u3059\u308b\u6a29\u5229\u653e\u68c4\u306f\u3001\u305d\u306e\u5f8c\u306e\u9055\u53cd\u306b\u5bfe\u3059\u308b\u6a29\u5229\u653e\u68c4\u3092\u69cb\u6210\u3057\u307e\u305b\u3093\u3002",
+      "p3": "\u6a29\u5229\u653e\u68c4\u306f\u3001LumenShore\u306e\u6a29\u9650\u3092\u6709\u3059\u308b\u4ee3\u8868\u8005\u304c\u66f8\u9762\u3067\u884c\u308f\u306a\u3044\u9650\u308a\u52b9\u529b\u3092\u6709\u3057\u307e\u305b\u3093\u3002"
+    },
+    "noPartnership": {
+      "heading": "\u5f53\u4e8b\u8005\u306e\u95a2\u4fc2",
+      "p1": "\u672c\u898f\u7d04\u306e\u3044\u304b\u306a\u308b\u5185\u5bb9\u3082\u3001\u304a\u5ba2\u69d8\u3068LumenShore\u3068\u306e\u9593\u306b\u4ee3\u7406\u3001\u30d1\u30fc\u30c8\u30ca\u30fc\u30b7\u30c3\u30d7\u3001\u5408\u5f01\u4e8b\u696d\u3001\u307e\u305f\u306f\u96c7\u7528\u95a2\u4fc2\u3092\u5275\u8a2d\u3059\u308b\u3082\u306e\u3068\u89e3\u91c8\u3055\u308c\u307e\u305b\u3093\u3002",
+      "p2": "\u3044\u305a\u308c\u306e\u5f53\u4e8b\u8005\u3082\u3001\u76f8\u624b\u65b9\u3092\u62d8\u675f\u3057\u305f\u308a\u3001\u76f8\u624b\u65b9\u306e\u305f\u3081\u306b\u7fa9\u52d9\u3092\u8ca0\u3046\u6a29\u9650\u3092\u6709\u3057\u307e\u305b\u3093\u3002"
+    },
+    "electronicCommunications": {
+      "heading": "\u96fb\u5b50\u901a\u4fe1",
+      "p1": "\u672c\u30b5\u30fc\u30d3\u30b9\u3092\u5229\u7528\u3059\u308b\u3053\u3068\u306b\u3088\u308a\u3001\u304a\u5ba2\u69d8\u306f\u3001\u30e1\u30fc\u30eb\u3001\u30a2\u30d7\u30ea\u5185\u901a\u77e5\u3001\u304a\u3088\u3073\u5f53\u793e\u30a6\u30a7\u30d6\u30b5\u30a4\u30c8\u306b\u63b2\u8f09\u3055\u308c\u308b\u901a\u77e5\u3092\u542b\u3080\u96fb\u5b50\u7684\u624b\u6bb5\u306b\u3088\u308b\u5f53\u793e\u304b\u3089\u306e\u9023\u7d61\u306e\u53d7\u9818\u306b\u540c\u610f\u3057\u307e\u3059\u3002",
+      "p2": "\u304a\u5ba2\u69d8\u306f\u3001\u5f53\u793e\u304c\u96fb\u5b50\u7684\u306b\u63d0\u4f9b\u3059\u308b\u3059\u3079\u3066\u306e\u5408\u610f\u3001\u901a\u77e5\u3001\u958b\u793a\u3001\u304a\u3088\u3073\u305d\u306e\u4ed6\u306e\u9023\u7d61\u304c\u3001\u305d\u306e\u3088\u3046\u306a\u9023\u7d61\u304c\u66f8\u9762\u3067\u884c\u308f\u308c\u308b\u3053\u3068\u3092\u6c42\u3081\u308b\u6cd5\u7684\u8981\u4ef6\u3092\u5145\u8db3\u3059\u308b\u3053\u3068\u306b\u540c\u610f\u3057\u307e\u3059\u3002"
+    },
+    "headingsClause": {
+      "heading": "\u898b\u51fa\u3057",
+      "p1": "\u672c\u898f\u7d04\u306e\u30bb\u30af\u30b7\u30e7\u30f3\u898b\u51fa\u3057\u306f\u53c2\u7167\u306e\u4fbf\u5b9c\u4e0a\u306e\u3082\u306e\u3067\u3042\u308a\u3001\u672c\u898f\u7d04\u306e\u89e3\u91c8\u307e\u305f\u306f\u69cb\u6210\u306b\u5f71\u97ff\u3092\u4e0e\u3048\u308b\u3082\u306e\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002"
+    },
+    "survival": {
+      "heading": "\u5b58\u7d9a",
+      "p1": "\u672c\u898f\u7d04\u306e\u6761\u9805\u306e\u3046\u3061\u3001\u305d\u306e\u6027\u8cea\u4e0a\u7d42\u4e86\u5f8c\u3082\u5b58\u7d9a\u3059\u3079\u304d\u3082\u306e\u306f\u5b58\u7d9a\u3057\u307e\u3059\u3002\u3053\u308c\u306b\u306f\u3001\u8cac\u4efb\u306e\u5236\u9650\u3001\u88dc\u511f\u3001\u77e5\u7684\u8ca1\u7523\u6a29\u306e\u5e30\u5c5e\u3001\u7d1b\u4e89\u89e3\u6c7a\u3001\u4fdd\u8a3c\u306e\u514d\u8cac\u3001\u304a\u3088\u3073\u7d2f\u7a4d\u3055\u308c\u305f\u6a29\u5229\u3068\u7fa9\u52d9\u304c\u542b\u307e\u308c\u307e\u3059\u304c\u3001\u3053\u308c\u3089\u306b\u9650\u5b9a\u3055\u308c\u307e\u305b\u3093\u3002"
+    },
+    "noThirdPartyBeneficiaries": {
+      "heading": "\u7b2c\u4e09\u8005\u53d7\u76ca\u8005\u306e\u4e0d\u5b58\u5728",
+      "p1": "\u672c\u898f\u7d04\u306f\u3001\u672c\u898f\u7d04\u306e\u5f53\u4e8b\u8005\u3067\u306a\u3044\u4eba\u307e\u305f\u306f\u56e3\u4f53\u306b\u3044\u304b\u306a\u308b\u6a29\u5229\u3082\u4ed8\u4e0e\u3057\u307e\u305b\u3093\u3002",
+      "p2": "1999\u5e74\u5951\u7d04\uff08\u7b2c\u4e09\u8005\u306e\u6a29\u5229\uff09\u6cd5\u306b\u57fa\u3065\u3044\u3066\u3001\u7b2c\u4e09\u8005\u304c\u672c\u898f\u7d04\u306e\u3044\u305a\u308c\u304b\u306e\u6761\u9805\u3092\u57f7\u884c\u3059\u308b\u3053\u3068\u306f\u3067\u304d\u307e\u305b\u3093\u3002",
+      "appleException": "\u4e0a\u8a18\u306b\u304b\u304b\u308f\u3089\u305a\u3001Apple Inc.\u304a\u3088\u3073\u305d\u306e\u5b50\u4f1a\u793e\u306f\u3001Apple\u306e\u30e9\u30a4\u30bb\u30f3\u30b9\u4ed8\u304d\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u30a8\u30f3\u30c9\u30e6\u30fc\u30b6\u30fc\u30e9\u30a4\u30bb\u30f3\u30b9\u5951\u7d04\u3067\u8981\u6c42\u3055\u308c\u308b\u7bc4\u56f2\u5185\u3067\u306e\u307f\u3001\u672c\u898f\u7d04\u306e\u610f\u56f3\u3055\u308c\u305f\u7b2c\u4e09\u8005\u53d7\u76ca\u8005\u3067\u3059\u3002Apple\u306f\u3001Apple\u306e\u30ac\u30a4\u30c9\u30e9\u30a4\u30f3\u3067\u8981\u6c42\u3055\u308c\u308b\u6700\u4f4e\u9650\u306e\u7bc4\u56f2\u3067\u3001\u7b2c\u4e09\u8005\u53d7\u76ca\u8005\u3068\u3057\u3066\u672c\u898f\u7d04\u3092\u304a\u5ba2\u69d8\u306b\u5bfe\u3057\u3066\u57f7\u884c\u3059\u308b\u6a29\u5229\u3092\u6709\u3057\u307e\u3059\u3002"
+    }
+  },
+  "pt": {
+    "entireAgreement": {
+      "heading": "Acordo integral",
+      "p1": "Estes Termos, juntamente com a nossa Pol\u00edtica de Privacidade, Contrato de Licen\u00e7a de Utilizador Final e Pol\u00edtica de Cookies, constituem o acordo integral entre voc\u00ea e a LumenShore Limited relativamente ao Servi\u00e7o.",
+      "p2": "Este acordo substitui todos os acordos, representa\u00e7\u00f5es e entendimentos anteriores entre voc\u00ea e a LumenShore, quer escritos quer orais.",
+      "p3": "Nenhuma modifica\u00e7\u00e3o oral destes Termos ser\u00e1 eficaz."
+    },
+    "severability": {
+      "heading": "Divisibilidade",
+      "p1": "Se qualquer disposi\u00e7\u00e3o destes Termos for considerada inv\u00e1lida, ilegal ou inexequ\u00edvel por um tribunal competente, essa disposi\u00e7\u00e3o ser\u00e1 separada destes Termos sem afetar a validade e exequibilidade das disposi\u00e7\u00f5es restantes.",
+      "p2": "O tribunal ou \u00e1rbitro pode reformar a disposi\u00e7\u00e3o inexequ\u00edvel na medida m\u00ednima necess\u00e1ria para torn\u00e1-la v\u00e1lida e exequ\u00edvel."
+    },
+    "assignment": {
+      "heading": "Cess\u00e3o",
+      "p1": "A LumenShore pode ceder ou transferir estes Termos, e quaisquer direitos e licen\u00e7as aqui concedidos, a qualquer sucessor, afiliada ou adquirente da totalidade ou de uma parte substancial dos seus neg\u00f3cios ou ativos sem o seu consentimento.",
+      "p2": "Voc\u00ea n\u00e3o pode ceder nem transferir os seus direitos ou obriga\u00e7\u00f5es ao abrigo destes Termos sem o nosso consentimento pr\u00e9vio por escrito."
+    },
+    "waiver": {
+      "heading": "Ren\u00fancia",
+      "p1": "A falta de exerc\u00edcio por parte da LumenShore de qualquer direito ou disposi\u00e7\u00e3o destes Termos n\u00e3o constitui ren\u00fancia a esse direito ou disposi\u00e7\u00e3o.",
+      "p2": "Qualquer ren\u00fancia a uma viola\u00e7\u00e3o destes Termos n\u00e3o constitui ren\u00fancia a qualquer viola\u00e7\u00e3o subsequente.",
+      "p3": "Nenhuma ren\u00fancia ser\u00e1 eficaz a menos que feita por escrito e assinada por um representante autorizado da LumenShore."
+    },
+    "noPartnership": {
+      "heading": "Rela\u00e7\u00e3o entre as partes",
+      "p1": "Nada nestes Termos deve ser interpretado como a cria\u00e7\u00e3o de uma rela\u00e7\u00e3o de ag\u00eancia, sociedade, empreendimento conjunto ou emprego entre voc\u00ea e a LumenShore.",
+      "p2": "Nenhuma das partes tem autoridade para vincular a outra ou incorrer em obriga\u00e7\u00f5es em nome da outra."
+    },
+    "electronicCommunications": {
+      "heading": "Comunica\u00e7\u00f5es eletr\u00f3nicas",
+      "p1": "Ao utilizar o Servi\u00e7o, voc\u00ea consente em receber comunica\u00e7\u00f5es nossas eletronicamente, incluindo por e-mail, notifica\u00e7\u00f5es no aplicativo e avisos publicados no nosso site.",
+      "p2": "Voc\u00ea concorda que todos os acordos, avisos, divulga\u00e7\u00f5es e outras comunica\u00e7\u00f5es que lhe fornecemos eletronicamente satisfazem qualquer requisito legal de que tais comunica\u00e7\u00f5es sejam feitas por escrito."
+    },
+    "headingsClause": {
+      "heading": "Cabe\u00e7alhos",
+      "p1": "Os cabe\u00e7alhos das sec\u00e7\u00f5es nestes Termos destinam-se apenas a facilitar a refer\u00eancia e n\u00e3o afetam a interpreta\u00e7\u00e3o ou constru\u00e7\u00e3o destes Termos."
+    },
+    "survival": {
+      "heading": "Sobreviv\u00eancia",
+      "p1": "As disposi\u00e7\u00f5es destes Termos que, pela sua natureza, devam sobreviver \u00e0 rescis\u00e3o sobreviver\u00e3o, incluindo, mas n\u00e3o se limitando a: limita\u00e7\u00e3o de responsabilidade, indemniza\u00e7\u00e3o, propriedade intelectual, resolu\u00e7\u00e3o de litigos, exclus\u00f5es de garantia e quaisquer direitos e obriga\u00e7\u00f5es acumulados."
+    },
+    "noThirdPartyBeneficiaries": {
+      "heading": "Sem terceiros benefici\u00e1rios",
+      "p1": "Estes Termos n\u00e3o conferem quaisquer direitos a qualquer pessoa ou entidade que n\u00e3o seja parte destes Termos.",
+      "p2": "Nenhum terceiro pode fazer cumprir qualquer disposi\u00e7\u00e3o destes Termos ao abrigo da Lei dos Contratos (Direitos de Terceiros) de 1999.",
+      "appleException": "Sem preju\u00edzo do acima exposto, a Apple Inc. e as suas subsidi\u00e1rias s\u00e3o terceiros benefici\u00e1rios pretendidos destes Termos apenas na medida exigida pelo Contrato de Licen\u00e7a de Utilizador Final de Aplica\u00e7\u00f5es Licenciadas da Apple. A Apple tem o direito de fazer cumprir estes Termos contra voc\u00ea como terceiro benefici\u00e1rio na medida m\u00ednima exigida pelas diretrizes da Apple."
+    }
+  },
+  "pl": {
+    "entireAgreement": {
+      "heading": "Ca\u0142o\u015b\u0107 umowy",
+      "p1": "Niniejsze Warunki, wraz z nasz\u0105 Polityk\u0105 prywatno\u015bci, Umow\u0105 licencyjn\u0105 u\u017cytkownika ko\u0144cowego i Polityk\u0105 cookies, stanowi\u0105 ca\u0142o\u015b\u0107 umowy mi\u0119dzy Tob\u0105 a LumenShore Limited dotycz\u0105cej Us\u0142ugi.",
+      "p2": "Niniejsza umowa zast\u0119puje wszelkie wcze\u015bniejsze umowy, o\u015bwiadczenia i porozumienia mi\u0119dzy Tob\u0105 a LumenShore, zar\u00f3wno pisemne, jak i ustne.",
+      "p3": "Ustne modyfikacje niniejszych Warunk\u00f3w nie b\u0119d\u0105 skuteczne."
+    },
+    "severability": {
+      "heading": "Klauzula salwatoryjna",
+      "p1": "Je\u017celi jakiekolwiek postanowienie niniejszych Warunk\u00f3w zostanie uznane za niewa\u017cne, niezgodne z prawem lub niewykonalne przez w\u0142a\u015bciwy s\u0105d, postanowienie to zostanie oddzielone od niniejszych Warunk\u00f3w bez wp\u0142ywu na wa\u017cno\u015b\u0107 i wykonalno\u015b\u0107 pozosta\u0142ych postanowie\u0144.",
+      "p2": "S\u0105d lub arbiter mo\u017ce zreformowa\u0107 niewykonalne postanowienie w minimalnym zakresie niezb\u0119dnym do uczynienia go wa\u017cnym i wykonalnym."
+    },
+    "assignment": {
+      "heading": "Cesja",
+      "p1": "LumenShore mo\u017ce dokona\u0107 cesji lub przeniesienia niniejszych Warunk\u00f3w oraz wszelkich praw i licencji przyznanych na ich podstawie na dowolnego nast\u0119pc\u0119, podmiot stosowarzyszony lub nabywc\u0119 ca\u0142o\u015bci lub istotnej cz\u0119\u015bci dzia\u0142alno\u015bci lub aktyw\u00f3w bez Twojej zgody.",
+      "p2": "Nie mo\u017cesz dokona\u0107 cesji ani przeniesienia swoich praw lub obowi\u0105zk\u00f3w wynikaj\u0105cych z niniejszych Warunk\u00f3w bez naszej uprzedniej pisemnej zgody."
+    },
+    "waiver": {
+      "heading": "Zrzeczenie si\u0119",
+      "p1": "Niewykonanie przez LumenShore jakiegokolwiek prawa lub postanowienia niniejszych Warunk\u00f3w nie stanowi zrzeczenia si\u0119 tego prawa lub postanowienia.",
+      "p2": "Zrzeczenie si\u0119 naruszenia niniejszych Warunk\u00f3w nie stanowi zrzeczenia si\u0119 jakiegokolwiek p\u00f3\u017aniejszego naruszenia.",
+      "p3": "Zrzeczenie si\u0119 jest skuteczne tylko wtedy, gdy zosta\u0142o dokonane na pi\u015bmie i podpisane przez upowa\u017cnionego przedstawiciela LumenShore."
+    },
+    "noPartnership": {
+      "heading": "Stosunek stron",
+      "p1": "Nic w niniejszych Warunkach nie mo\u017ce by\u0107 interpretowane jako ustanowienie stosunku agencji, sp\u00f3\u0142ki, wsp\u00f3lnego przedsi\u0119wzi\u0119cia lub stosunku pracy mi\u0119dzy Tob\u0105 a LumenShore.",
+      "p2": "\u017badna ze stron nie ma uprawnie\u0144 do wi\u0105zania drugiej strony ani zaci\u0105gania zobowi\u0105za\u0144 w jej imieniu."
+    },
+    "electronicCommunications": {
+      "heading": "Komunikacja elektroniczna",
+      "p1": "Korzystaj\u0105c z Us\u0142ugi, wyra\u017casz zgod\u0119 na otrzymywanie od nas komunikacji drog\u0105 elektroniczn\u0105, w tym za po\u015brednictwem poczty elektronicznej, powiadomie\u0144 w aplikacji oraz og\u0142osze\u0144 zamieszczanych na naszej stronie internetowej.",
+      "p2": "Zgadzasz si\u0119, \u017ce wszystkie umowy, zawiadomienia, ujawnienia i inne komunikaty, kt\u00f3re dostarczamy Ci drog\u0105 elektroniczn\u0105, spe\u0142niaj\u0105 wszelkie wymogi prawne dotycz\u0105ce formy pisemnej takich komunikat\u00f3w."
+    },
+    "headingsClause": {
+      "heading": "Nag\u0142\u00f3wki",
+      "p1": "Nag\u0142\u00f3wki sekcji w niniejszych Warunkach s\u0142u\u017c\u0105 wy\u0142\u0105cznie u\u0142atwieniu odniesie\u0144 i nie wp\u0142ywaj\u0105 na interpretacj\u0119 lub konstrukcj\u0119 niniejszych Warunk\u00f3w."
+    },
+    "survival": {
+      "heading": "Dalsze obowi\u0105zywanie",
+      "p1": "Postanowienia niniejszych Warunk\u00f3w, kt\u00f3re ze wzgl\u0119du na swoj\u0105 natur\u0119 powinny obowi\u0105zywa\u0107 po rozwi\u0105zaniu, pozostaj\u0105 w mocy, w tym m.in.: ograniczenie odpowiedzialno\u015bci, zwolnienie z odpowiedzialno\u015bci, w\u0142asno\u015b\u0107 intelektualna, rozstrzyganie spor\u00f3w, wy\u0142\u0105czenia gwarancji oraz wszelkie nabyte prawa i obowi\u0105zki."
+    },
+    "noThirdPartyBeneficiaries": {
+      "heading": "Brak beneficjent\u00f3w trzecich",
+      "p1": "Niniejsze Warunki nie przyznaj\u0105 \u017cadnych praw \u017cadnej osobie ani podmiotowi, kt\u00f3re nie s\u0105 stron\u0105 niniejszych Warunk\u00f3w.",
+      "p2": "\u017badna osoba trzecia nie mo\u017ce egzekwowa\u0107 \u017cadnego postanowienia niniejszych Warunk\u00f3w na podstawie Contracts (Rights of Third Parties) Act 1999.",
+      "appleException": "Niezale\u017cnie od powy\u017cszego, Apple Inc. i jej sp\u00f3\u0142ki zale\u017cne s\u0105 zamierzonymi beneficjentami trzecimi niniejszych Warunk\u00f3w wy\u0142\u0105cznie w zakresie wymaganym przez Umow\u0119 licencyjn\u0105 u\u017cytkownika ko\u0144cowego Apple. Apple ma prawo egzekwowa\u0107 niniejsze Warunki wobec Ciebie jako beneficjent trzeci w minimalnym zakresie wymaganym przez wytyczne Apple."
+    }
+  },
+  "ar": {
+    "entireAgreement": {
+      "heading": "\u0627\u0644\u0627\u062a\u0641\u0627\u0642 \u0627\u0644\u0643\u0627\u0645\u0644",
+      "p1": "\u062a\u0634\u0643\u0644 \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637\u060c \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u0633\u064a\u0627\u0633\u0629 \u0627\u0644\u062e\u0635\u0648\u0635\u064a\u0629 \u0648\u0627\u062a\u0641\u0627\u0642\u064a\u0629 \u062a\u0631\u062e\u064a\u0635 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0646\u0647\u0627\u0626\u064a \u0648\u0633\u064a\u0627\u0633\u0629 \u0645\u0644\u0641\u0627\u062a \u062a\u0639\u0631\u064a\u0641 \u0627\u0644\u0627\u0631\u062a\u0628\u0627\u0637\u060c \u0627\u0644\u0627\u062a\u0641\u0627\u0642 \u0627\u0644\u0643\u0627\u0645\u0644 \u0628\u064a\u0646\u0643 \u0648\u0628\u064a\u0646 LumenShore Limited \u0641\u064a\u0645\u0627 \u064a\u062a\u0639\u0644\u0642 \u0628\u0627\u0644\u062e\u062f\u0645\u0629.",
+      "p2": "\u064a\u062d\u0644 \u0647\u0630\u0627 \u0627\u0644\u0627\u062a\u0641\u0627\u0642 \u0645\u062d\u0644 \u062c\u0645\u064a\u0639 \u0627\u0644\u0627\u062a\u0641\u0627\u0642\u0627\u062a \u0648\u0627\u0644\u062a\u0645\u062b\u064a\u0644\u0627\u062a \u0648\u0627\u0644\u062a\u0641\u0627\u0647\u0645\u0627\u062a \u0627\u0644\u0633\u0627\u0628\u0642\u0629 \u0628\u064a\u0646\u0643 \u0648\u0628\u064a\u0646 LumenShore\u060c \u0633\u0648\u0627\u0621 \u0643\u0627\u0646\u062a \u0645\u0643\u062a\u0648\u0628\u0629 \u0623\u0648 \u0634\u0641\u0647\u064a\u0629.",
+      "p3": "\u0644\u0646 \u064a\u0643\u0648\u0646 \u0623\u064a \u062a\u0639\u062f\u064a\u0644 \u0634\u0641\u0647\u064a \u0644\u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0633\u0627\u0631\u064a \u0627\u0644\u0645\u0641\u0639\u0648\u0644."
+    },
+    "severability": {
+      "heading": "\u0642\u0627\u0628\u0644\u064a\u0629 \u0627\u0644\u0641\u0635\u0644",
+      "p1": "\u0625\u0630\u0627 \u0627\u0639\u062a\u064f\u0628\u0631 \u0623\u064a \u062d\u0643\u0645 \u0645\u0646 \u0623\u062d\u0643\u0627\u0645 \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0628\u0627\u0637\u0644\u0627\u064b \u0623\u0648 \u063a\u064a\u0631 \u0642\u0627\u0646\u0648\u0646\u064a \u0623\u0648 \u063a\u064a\u0631 \u0642\u0627\u0628\u0644 \u0644\u0644\u062a\u0646\u0641\u064a\u0630 \u0645\u0646 \u0642\u0628\u0644 \u0645\u062d\u0643\u0645\u0629 \u0645\u062e\u062a\u0635\u0629\u060c \u064a\u062a\u0645 \u0641\u0635\u0644 \u0647\u0630\u0627 \u0627\u0644\u062d\u0643\u0645 \u0639\u0646 \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u062f\u0648\u0646 \u0627\u0644\u062a\u0623\u062b\u064a\u0631 \u0639\u0644\u0649 \u0635\u062d\u0629 \u0648\u0642\u0627\u0628\u0644\u064a\u0629 \u062a\u0646\u0641\u064a\u0630 \u0627\u0644\u0623\u062d\u0643\u0627\u0645 \u0627\u0644\u0645\u062a\u0628\u0642\u064a\u0629.",
+      "p2": "\u064a\u062c\u0648\u0632 \u0644\u0644\u0645\u062d\u0643\u0645\u0629 \u0623\u0648 \u0627\u0644\u0645\u062d\u0643\u0645 \u0625\u0635\u0644\u0627\u062d \u0627\u0644\u062d\u0643\u0645 \u063a\u064a\u0631 \u0627\u0644\u0642\u0627\u0628\u0644 \u0644\u0644\u062a\u0646\u0641\u064a\u0630 \u0628\u0627\u0644\u062d\u062f \u0627\u0644\u0623\u062f\u0646\u0649 \u0627\u0644\u0636\u0631\u0648\u0631\u064a \u0644\u062c\u0639\u0644\u0647 \u0635\u062d\u064a\u062d\u064b\u0627 \u0648\u0642\u0627\u0628\u0644\u0627\u064b \u0644\u0644\u062a\u0646\u0641\u064a\u0630."
+    },
+    "assignment": {
+      "heading": "\u0627\u0644\u062a\u0646\u0627\u0632\u0644",
+      "p1": "\u064a\u062c\u0648\u0632 \u0644\u0640 LumenShore \u0627\u0644\u062a\u0646\u0627\u0632\u0644 \u0639\u0646 \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0623\u0648 \u0646\u0642\u0644\u0647\u0627\u060c \u0648\u0623\u064a \u062d\u0642\u0648\u0642 \u0648\u062a\u0631\u0627\u062e\u064a\u0635 \u0645\u0645\u0646\u0648\u062d\u0629 \u0628\u0645\u0648\u062c\u0628\u0647\u0627\u060c \u0625\u0644\u0649 \u0623\u064a \u062e\u0644\u0641 \u0623\u0648 \u0634\u0631\u0643\u0629 \u062a\u0627\u0628\u0639\u0629 \u0623\u0648 \u0645\u0633\u062a\u062d\u0648\u0630 \u0639\u0644\u0649 \u0643\u0644 \u0623\u0648 \u062c\u0632\u0621 \u0643\u0628\u064a\u0631 \u0645\u0646 \u0623\u0639\u0645\u0627\u0644\u0647\u0627 \u0623\u0648 \u0623\u0635\u0648\u0644\u0647\u0627 \u062f\u0648\u0646 \u0645\u0648\u0627\u0641\u0642\u062a\u0643.",
+      "p2": "\u0644\u0627 \u064a\u062c\u0648\u0632 \u0644\u0643 \u0627\u0644\u062a\u0646\u0627\u0632\u0644 \u0639\u0646 \u062d\u0642\u0648\u0642\u0643 \u0623\u0648 \u0627\u0644\u062a\u0632\u0627\u0645\u0627\u062a\u0643 \u0628\u0645\u0648\u062c\u0628 \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0623\u0648 \u0646\u0642\u0644\u0647\u0627 \u062f\u0648\u0646 \u0645\u0648\u0627\u0641\u0642\u062a\u0646\u0627 \u0627\u0644\u0645\u0633\u0628\u0642\u0629 \u0627\u0644\u062e\u0637\u064a\u0629."
+    },
+    "waiver": {
+      "heading": "\u0627\u0644\u062a\u0646\u0627\u0632\u0644 \u0639\u0646 \u0627\u0644\u062d\u0642\u0648\u0642",
+      "p1": "\u0625\u0646 \u0639\u062f\u0645 \u0645\u0645\u0627\u0631\u0633\u0629 LumenShore \u0644\u0623\u064a \u062d\u0642 \u0623\u0648 \u062d\u0643\u0645 \u0645\u0646 \u0623\u062d\u0643\u0627\u0645 \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0644\u0627 \u064a\u0634\u0643\u0644 \u062a\u0646\u0627\u0632\u0644\u0627\u064b \u0639\u0646 \u0647\u0630\u0627 \u0627\u0644\u062d\u0642 \u0623\u0648 \u0627\u0644\u062d\u0643\u0645.",
+      "p2": "\u0623\u064a \u062a\u0646\u0627\u0632\u0644 \u0639\u0646 \u0627\u0646\u062a\u0647\u0627\u0643 \u0644\u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0644\u0627 \u064a\u0634\u0643\u0644 \u062a\u0646\u0627\u0632\u0644\u0627\u064b \u0639\u0646 \u0623\u064a \u0627\u0646\u062a\u0647\u0627\u0643 \u0644\u0627\u062d\u0642.",
+      "p3": "\u0644\u0646 \u064a\u0643\u0648\u0646 \u0623\u064a \u062a\u0646\u0627\u0632\u0644 \u0633\u0627\u0631\u064a \u0627\u0644\u0645\u0641\u0639\u0648\u0644 \u0645\u0627 \u0644\u0645 \u064a\u062a\u0645 \u0643\u062a\u0627\u0628\u064a\u064b\u0627 \u0648\u0645\u0648\u0642\u0639\u064b\u0627 \u0645\u0646 \u0642\u0628\u0644 \u0645\u0645\u062b\u0644 \u0645\u0641\u0648\u0636 \u0644\u0640 LumenShore."
+    },
+    "noPartnership": {
+      "heading": "\u0639\u0644\u0627\u0642\u0629 \u0627\u0644\u0623\u0637\u0631\u0627\u0641",
+      "p1": "\u0644\u0627 \u064a\u0641\u0633\u0631 \u0623\u064a \u0634\u064a\u0621 \u0641\u064a \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0639\u0644\u0649 \u0623\u0646\u0647 \u064a\u0646\u0634\u0626 \u0639\u0644\u0627\u0642\u0629 \u0648\u0643\u0627\u0644\u0629 \u0623\u0648 \u0634\u0631\u0627\u0643\u0629 \u0623\u0648 \u0645\u0634\u0631\u0648\u0639 \u0645\u0634\u062a\u0631\u0643 \u0623\u0648 \u0639\u0644\u0627\u0642\u0629 \u0639\u0645\u0644 \u0628\u064a\u0646\u0643 \u0648\u0628\u064a\u0646 LumenShore.",
+      "p2": "\u0644\u0627 \u064a\u0645\u0644\u0643 \u0623\u064a \u0637\u0631\u0641 \u0635\u0644\u0627\u062d\u064a\u0629 \u0625\u0644\u0632\u0627\u0645 \u0627\u0644\u0637\u0631\u0641 \u0627\u0644\u0622\u062e\u0631 \u0623\u0648 \u062a\u062d\u0645\u0644 \u0627\u0644\u062a\u0632\u0627\u0645\u0627\u062a \u0628\u0627\u0644\u0646\u064a\u0627\u0628\u0629 \u0639\u0646\u0647."
+    },
+    "electronicCommunications": {
+      "heading": "\u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629",
+      "p1": "\u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u062e\u062f\u0645\u0629\u060c \u0641\u0625\u0646\u0643 \u062a\u0648\u0627\u0641\u0642 \u0639\u0644\u0649 \u062a\u0644\u0642\u064a \u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0645\u0646\u0627 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u064b\u0627\u060c \u0628\u0645\u0627 \u0641\u064a \u0630\u0644\u0643 \u0639\u0628\u0631 \u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u0648\u0625\u0634\u0639\u0627\u0631\u0627\u062a \u0627\u0644\u062a\u0637\u0628\u064a\u0642 \u0648\u0627\u0644\u0625\u0634\u0639\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u0646\u0634\u0648\u0631\u0629 \u0639\u0644\u0649 \u0645\u0648\u0642\u0639\u0646\u0627.",
+      "p2": "\u062a\u0648\u0627\u0641\u0642 \u0639\u0644\u0649 \u0623\u0646 \u062c\u0645\u064a\u0639 \u0627\u0644\u0627\u062a\u0641\u0627\u0642\u064a\u0627\u062a \u0648\u0627\u0644\u0625\u0634\u0639\u0627\u0631\u0627\u062a \u0648\u0627\u0644\u0625\u0641\u0635\u0627\u062d\u0627\u062a \u0648\u063a\u064a\u0631\u0647\u0627 \u0645\u0646 \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0627\u0644\u062a\u064a \u0646\u0642\u062f\u0645\u0647\u0627 \u0644\u0643 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u064b\u0627 \u062a\u0641\u064a \u0628\u0623\u064a \u0645\u062a\u0637\u0644\u0628 \u0642\u0627\u0646\u0648\u0646\u064a \u0628\u0623\u0646 \u062a\u0643\u0648\u0646 \u0647\u0630\u0647 \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0643\u062a\u0627\u0628\u064a\u0629."
+    },
+    "headingsClause": {
+      "heading": "\u0627\u0644\u0639\u0646\u0627\u0648\u064a\u0646",
+      "p1": "\u0639\u0646\u0627\u0648\u064a\u0646 \u0627\u0644\u0623\u0642\u0633\u0627\u0645 \u0641\u064a \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0647\u064a \u0644\u0644\u0631\u062c\u0648\u0639 \u0641\u0642\u0637 \u0648\u0644\u0627 \u062a\u0624\u062b\u0631 \u0639\u0644\u0649 \u062a\u0641\u0633\u064a\u0631 \u0623\u0648 \u0628\u0646\u0627\u0621 \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637."
+    },
+    "survival": {
+      "heading": "\u0627\u0644\u0628\u0642\u0627\u0621",
+      "p1": "\u062a\u0638\u0644 \u0623\u062d\u0643\u0627\u0645 \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0627\u0644\u062a\u064a \u064a\u0646\u0628\u063a\u064a \u0628\u0637\u0628\u064a\u0639\u062a\u0647\u0627 \u0623\u0646 \u062a\u0628\u0642\u0649 \u0628\u0639\u062f \u0627\u0644\u0625\u0646\u0647\u0627\u0621 \u0633\u0627\u0631\u064a\u0629 \u0627\u0644\u0645\u0641\u0639\u0648\u0644\u060c \u0628\u0645\u0627 \u0641\u064a \u0630\u0644\u0643 \u0639\u0644\u0649 \u0633\u0628\u064a\u0644 \u0627\u0644\u0645\u062b\u0627\u0644 \u0644\u0627 \u0627\u0644\u062d\u0635\u0631: \u062a\u062d\u062f\u064a\u062f \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0629\u060c \u0627\u0644\u062a\u0639\u0648\u064a\u0636\u060c \u0645\u0644\u0643\u064a\u0629 \u0627\u0644\u0645\u0644\u0643\u064a\u0629 \u0627\u0644\u0641\u0643\u0631\u064a\u0629\u060c \u062a\u0633\u0648\u064a\u0629 \u0627\u0644\u0646\u0632\u0627\u0639\u0627\u062a\u060c \u0625\u062e\u0644\u0627\u0621\u0627\u062a \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0629 \u0639\u0646 \u0627\u0644\u0636\u0645\u0627\u0646\u060c \u0648\u0623\u064a \u062d\u0642\u0648\u0642 \u0648\u0627\u0644\u062a\u0632\u0627\u0645\u0627\u062a \u0645\u0643\u062a\u0633\u0628\u0629."
+    },
+    "noThirdPartyBeneficiaries": {
+      "heading": "\u0644\u0627 \u0645\u0633\u062a\u0641\u064a\u062f\u0648\u0646 \u0645\u0646 \u0627\u0644\u0623\u0637\u0631\u0627\u0641 \u0627\u0644\u062b\u0627\u0644\u062b\u0629",
+      "p1": "\u0644\u0627 \u062a\u0645\u0646\u062d \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0623\u064a \u062d\u0642\u0648\u0642 \u0644\u0623\u064a \u0634\u062e\u0635 \u0623\u0648 \u0643\u064a\u0627\u0646 \u0644\u064a\u0633 \u0637\u0631\u0641\u064b\u0627 \u0641\u064a \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637.",
+      "p2": "\u0644\u0627 \u064a\u062c\u0648\u0632 \u0644\u0623\u064a \u0637\u0631\u0641 \u062b\u0627\u0644\u062b \u0625\u0646\u0641\u0627\u0630 \u0623\u064a \u062d\u0643\u0645 \u0645\u0646 \u0623\u062d\u0643\u0627\u0645 \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0628\u0645\u0648\u062c\u0628 \u0642\u0627\u0646\u0648\u0646 \u0627\u0644\u0639\u0642\u0648\u062f (\u062d\u0642\u0648\u0642 \u0627\u0644\u0623\u0637\u0631\u0627\u0641 \u0627\u0644\u062b\u0627\u0644\u062b\u0629) \u0644\u0639\u0627\u0645 1999.",
+      "appleException": "\u0628\u0635\u0631\u0641 \u0627\u0644\u0646\u0638\u0631 \u0639\u0645\u0627 \u0633\u0628\u0642\u060c \u062a\u0639\u062f Apple Inc. \u0648\u0634\u0631\u0643\u0627\u062a\u0647\u0627 \u0627\u0644\u062a\u0627\u0628\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f\u064a\u0646 \u0645\u0642\u0635\u0648\u062f\u064a\u0646 \u0645\u0646 \u0627\u0644\u0623\u0637\u0631\u0627\u0641 \u0627\u0644\u062b\u0627\u0644\u062b\u0629 \u0644\u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0641\u0642\u0637 \u0628\u0627\u0644\u0642\u062f\u0631 \u0627\u0644\u0645\u0637\u0644\u0648\u0628 \u0628\u0645\u0648\u062c\u0628 \u0627\u062a\u0641\u0627\u0642\u064a\u0629 \u062a\u0631\u062e\u064a\u0635 Apple. \u0644\u062f\u0649 Apple \u0627\u0644\u062d\u0642 \u0641\u064a \u0625\u0646\u0641\u0627\u0630 \u0647\u0630\u0647 \u0627\u0644\u0634\u0631\u0648\u0637 \u0636\u062f\u0643 \u0643\u0645\u0633\u062a\u0641\u064a\u062f \u0645\u0646 \u0627\u0644\u0623\u0637\u0631\u0627\u0641 \u0627\u0644\u062b\u0627\u0644\u062b\u0629 \u0628\u0627\u0644\u062d\u062f \u0627\u0644\u0623\u062f\u0646\u0649 \u0627\u0644\u0645\u0637\u0644\u0648\u0628 \u0628\u0645\u0648\u062c\u0628 \u0625\u0631\u0634\u0627\u062f\u0627\u062a Apple."
+    }
+  },
+  "zh": {
+    "entireAgreement": {
+      "heading": "\u5b8c\u6574\u534f\u8bae",
+      "p1": "\u672c\u6761\u6b3e\u8fde\u540c\u6211\u4eec\u7684\u9690\u79c1\u653f\u7b56\u3001\u6700\u7ec8\u7528\u6237\u8bb8\u53ef\u534f\u8bae\u548cCookie\u653f\u7b56\uff0c\u6784\u6210\u60a8\u4e0eLumenShore Limited\u4e4b\u95f4\u5173\u4e8e\u670d\u52a1\u7684\u5b8c\u6574\u534f\u8bae\u3002",
+      "p2": "\u672c\u534f\u8bae\u53d6\u4ee3\u60a8\u4e0eLumenShore\u4e4b\u95f4\u5148\u524d\u7684\u6240\u6709\u534f\u8bae\u3001\u9648\u8ff0\u548c\u8c05\u89e3\uff0c\u65e0\u8bba\u4e66\u9762\u6216\u53e3\u5934\u3002",
+      "p3": "\u5bf9\u672c\u6761\u6b3e\u7684\u4efb\u4f55\u53e3\u5934\u4fee\u6539\u5747\u65e0\u6548\u3002"
+    },
+    "severability": {
+      "heading": "\u53ef\u5206\u5272\u6027",
+      "p1": "\u5982\u679c\u672c\u6761\u6b3e\u7684\u4efb\u4f55\u6761\u6b3e\u88ab\u6709\u7ba1\u8f96\u6743\u7684\u6cd5\u9662\u8ba4\u5b9a\u65e0\u6548\u3001\u8fdd\u6cd5\u6216\u4e0d\u53ef\u6267\u884c\uff0c\u8be5\u6761\u6b3e\u5c06\u4ece\u672c\u6761\u6b3e\u4e2d\u5206\u79bb\uff0c\u800c\u4e0d\u5f71\u54cd\u5176\u4f59\u6761\u6b3e\u7684\u6709\u6548\u6027\u548c\u53ef\u6267\u884c\u6027\u3002",
+      "p2": "\u6cd5\u9662\u6216\u4ef2\u88c1\u5458\u53ef\u4ee5\u5728\u4f7f\u5176\u6709\u6548\u548c\u53ef\u6267\u884c\u6240\u9700\u7684\u6700\u4f4e\u9650\u5ea6\u5185\u6539\u9769\u4e0d\u53ef\u6267\u884c\u7684\u6761\u6b3e\u3002"
+    },
+    "assignment": {
+      "heading": "\u8f6c\u8ba9",
+      "p1": "LumenShore\u53ef\u4ee5\u5728\u672a\u7ecf\u60a8\u540c\u610f\u7684\u60c5\u51b5\u4e0b\uff0c\u5c06\u672c\u6761\u6b3e\u4ee5\u53ca\u672c\u6761\u6b3e\u9879\u4e0b\u6388\u4e88\u7684\u4efb\u4f55\u6743\u5229\u548c\u8bb8\u53ef\u8f6c\u8ba9\u6216\u8f6c\u79fb\u7ed9\u5176\u4e1a\u52a1\u6216\u8d44\u4ea7\u7684\u5168\u90e8\u6216\u5927\u90e8\u5206\u7684\u4efb\u4f55\u7ee7\u4efb\u8005\u3001\u5173\u8054\u516c\u53f8\u6216\u6536\u8d2d\u65b9\u3002",
+      "p2": "\u672a\u7ecf\u6211\u4eec\u4e8b\u5148\u4e66\u9762\u540c\u610f\uff0c\u60a8\u4e0d\u5f97\u8f6c\u8ba9\u6216\u8f6c\u79fb\u60a8\u5728\u672c\u6761\u6b3e\u9879\u4e0b\u7684\u6743\u5229\u6216\u4e49\u52a1\u3002"
+    },
+    "waiver": {
+      "heading": "\u5f03\u6743",
+      "p1": "LumenShore\u672a\u80fd\u6267\u884c\u672c\u6761\u6b3e\u7684\u4efb\u4f55\u6743\u5229\u6216\u6761\u6b3e\u4e0d\u6784\u6210\u5bf9\u8be5\u6743\u5229\u6216\u6761\u6b3e\u7684\u653e\u5f03\u3002",
+      "p2": "\u5bf9\u672c\u6761\u6b3e\u4efb\u4f55\u8fdd\u53cd\u7684\u5f03\u6743\u4e0d\u6784\u6210\u5bf9\u4efb\u4f55\u540e\u7eed\u8fdd\u53cd\u7684\u5f03\u6743\u3002",
+      "p3": "\u9664\u975eLumenShore\u7684\u6388\u6743\u4ee3\u8868\u4ee5\u4e66\u9762\u5f62\u5f0f\u4f5c\u51fa\uff0c\u5426\u5219\u4efb\u4f55\u5f03\u6743\u5747\u65e0\u6548\u3002"
+    },
+    "noPartnership": {
+      "heading": "\u5f53\u4e8b\u4eba\u5173\u7cfb",
+      "p1": "\u672c\u6761\u6b3e\u4e2d\u7684\u4efb\u4f55\u5185\u5bb9\u5747\u4e0d\u5e94\u88ab\u89e3\u91ca\u4e3a\u5728\u60a8\u4e0eLumenShore\u4e4b\u95f4\u521b\u5efa\u4ee3\u7406\u3001\u5408\u4f19\u3001\u5408\u8d44\u4f01\u4e1a\u6216\u96c7\u4f63\u5173\u7cfb\u3002",
+      "p2": "\u4efb\u4f55\u4e00\u65b9\u5747\u65e0\u6743\u7ea6\u675f\u53e6\u4e00\u65b9\u6216\u4ee3\u8868\u53e6\u4e00\u65b9\u627f\u62c5\u4e49\u52a1\u3002"
+    },
+    "electronicCommunications": {
+      "heading": "\u7535\u5b50\u901a\u4fe1",
+      "p1": "\u901a\u8fc7\u4f7f\u7528\u672c\u670d\u52a1\uff0c\u60a8\u540c\u610f\u4ee5\u7535\u5b50\u65b9\u5f0f\u63a5\u6536\u6211\u4eec\u7684\u901a\u4fe1\uff0c\u5305\u62ec\u7535\u5b50\u90ae\u4ef6\u3001\u5e94\u7528\u5185\u901a\u77e5\u548c\u5728\u6211\u4eec\u7f51\u7ad9\u4e0a\u53d1\u5e03\u7684\u901a\u77e5\u3002",
+      "p2": "\u60a8\u540c\u610f\u6211\u4eec\u4ee5\u7535\u5b50\u65b9\u5f0f\u63d0\u4f9b\u7ed9\u60a8\u7684\u6240\u6709\u534f\u8bae\u3001\u901a\u77e5\u3001\u62ab\u9732\u548c\u5176\u4ed6\u901a\u4fe1\u6ee1\u8db3\u6b64\u7c7b\u901a\u4fe1\u5e94\u4ee5\u4e66\u9762\u5f62\u5f0f\u8fdb\u884c\u7684\u4efb\u4f55\u6cd5\u5f8b\u8981\u6c42\u3002"
+    },
+    "headingsClause": {
+      "heading": "\u6807\u9898",
+      "p1": "\u672c\u6761\u6b3e\u4e2d\u7684\u7ae0\u8282\u6807\u9898\u4ec5\u4f9b\u53c2\u8003\u4e4b\u7528\uff0c\u4e0d\u5f71\u54cd\u672c\u6761\u6b3e\u7684\u89e3\u91ca\u6216\u6784\u9020\u3002"
+    },
+    "survival": {
+      "heading": "\u5b58\u7eed",
+      "p1": "\u672c\u6761\u6b3e\u4e2d\u6309\u5176\u6027\u8d28\u5e94\u5728\u7ec8\u6b62\u540e\u7ee7\u7eed\u6709\u6548\u7684\u6761\u6b3e\u5c06\u7ee7\u7eed\u6709\u6548\uff0c\u5305\u62ec\u4f46\u4e0d\u9650\u4e8e\uff1a\u8d23\u4efb\u9650\u5236\u3001\u8d54\u507f\u3001\u77e5\u8bc6\u4ea7\u6743\u5f52\u5c5e\u3001\u7ea0\u7eb7\u89e3\u51b3\u3001\u4fdd\u8bc1\u514d\u8d23\u58f0\u660e\u4ee5\u53ca\u4efb\u4f55\u7d2f\u79ef\u7684\u6743\u5229\u548c\u4e49\u52a1\u3002"
+    },
+    "noThirdPartyBeneficiaries": {
+      "heading": "\u65e0\u7b2c\u4e09\u65b9\u53d7\u76ca\u4eba",
+      "p1": "\u672c\u6761\u6b3e\u4e0d\u5411\u975e\u672c\u6761\u6b3e\u5f53\u4e8b\u4eba\u7684\u4efb\u4f55\u4eba\u6216\u5b9e\u4f53\u6388\u4e88\u4efb\u4f55\u6743\u5229\u3002",
+      "p2": "\u4efb\u4f55\u7b2c\u4e09\u65b9\u4e0d\u5f97\u4f9d\u636e1999\u5e74\u300a\u5408\u540c\uff08\u7b2c\u4e09\u65b9\u6743\u5229\uff09\u6cd5\u300b\u6267\u884c\u672c\u6761\u6b3e\u7684\u4efb\u4f55\u6761\u6b3e\u3002",
+      "appleException": "\u5c3d\u7ba1\u6709\u4e0a\u8ff0\u89c4\u5b9a\uff0cApple Inc.\u53ca\u5176\u5b50\u516c\u53f8\u4ec5\u5728Apple\u7684\u8bb8\u53ef\u5e94\u7528\u7a0b\u5e8f\u6700\u7ec8\u7528\u6237\u8bb8\u53ef\u534f\u8bae\u8981\u6c42\u7684\u8303\u56f4\u5185\u662f\u672c\u6761\u6b3e\u7684\u9884\u671f\u7b2c\u4e09\u65b9\u53d7\u76ca\u4eba\u3002Apple\u6709\u6743\u5728Apple\u6307\u5357\u8981\u6c42\u7684\u6700\u4f4e\u9650\u5ea6\u5185\u4f5c\u4e3a\u7b2c\u4e09\u65b9\u53d7\u76ca\u4eba\u5bf9\u60a8\u6267\u884c\u672c\u6761\u6b3e\u3002"
+    }
+  },
+  "uk": {
+    "entireAgreement": {
+      "heading": "\u041f\u043e\u0432\u043d\u0430 \u0443\u0433\u043e\u0434\u0430",
+      "p1": "\u0426\u0456 \u0423\u043c\u043e\u0432\u0438 \u0440\u0430\u0437\u043e\u043c \u0437 \u043d\u0430\u0448\u043e\u044e \u041f\u043e\u043b\u0456\u0442\u0438\u043a\u043e\u044e \u043a\u043e\u043d\u0444\u0456\u0434\u0435\u043d\u0446\u0456\u0439\u043d\u043e\u0441\u0442\u0456, \u041b\u0456\u0446\u0435\u043d\u0437\u0456\u0439\u043d\u043e\u044e \u0443\u0433\u043e\u0434\u043e\u044e \u043a\u0456\u043d\u0446\u0435\u0432\u043e\u0433\u043e \u043a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\u0430 \u0442\u0430 \u041f\u043e\u043b\u0456\u0442\u0438\u043a\u043e\u044e \u0444\u0430\u0439\u043b\u0456\u0432 cookie \u0441\u0442\u0430\u043d\u043e\u0432\u043b\u044f\u0442\u044c \u043f\u043e\u0432\u043d\u0443 \u0443\u0433\u043e\u0434\u0443 \u043c\u0456\u0436 \u0432\u0430\u043c\u0438 \u0442\u0430 LumenShore Limited \u0449\u043e\u0434\u043e \u0421\u0435\u0440\u0432\u0456\u0441\u0443.",
+      "p2": "\u0426\u044f \u0443\u0433\u043e\u0434\u0430 \u0437\u0430\u043c\u0456\u043d\u044e\u0454 \u0432\u0441\u0456 \u043f\u043e\u043f\u0435\u0440\u0435\u0434\u043d\u0456 \u0443\u0433\u043e\u0434\u0438, \u0437\u0430\u044f\u0432\u0438 \u0442\u0430 \u0434\u043e\u043c\u043e\u0432\u043b\u0435\u043d\u043e\u0441\u0442\u0456 \u043c\u0456\u0436 \u0432\u0430\u043c\u0438 \u0442\u0430 LumenShore, \u044f\u043a \u043f\u0438\u0441\u044c\u043c\u043e\u0432\u0456, \u0442\u0430\u043a \u0456 \u0443\u0441\u043d\u0456.",
+      "p3": "\u0423\u0441\u043d\u0456 \u0437\u043c\u0456\u043d\u0438 \u0434\u043e \u0446\u0438\u0445 \u0423\u043c\u043e\u0432 \u043d\u0435 \u043c\u0430\u044e\u0442\u044c \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u043e\u0457 \u0441\u0438\u043b\u0438."
+    },
+    "severability": {
+      "heading": "\u0421\u0430\u043b\u044c\u0432\u0430\u0442\u043e\u0440\u043d\u0435 \u0437\u0430\u0441\u0442\u0435\u0440\u0435\u0436\u0435\u043d\u043d\u044f",
+      "p1": "\u042f\u043a\u0449\u043e \u0431\u0443\u0434\u044c-\u044f\u043a\u0435 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u043d\u044f \u0446\u0438\u0445 \u0423\u043c\u043e\u0432 \u0431\u0443\u0434\u0435 \u0432\u0438\u0437\u043d\u0430\u043d\u043e \u043d\u0435\u0434\u0456\u0439\u0441\u043d\u0438\u043c, \u043d\u0435\u0437\u0430\u043a\u043e\u043d\u043d\u0438\u043c \u0430\u0431\u043e \u0442\u0430\u043a\u0438\u043c, \u0449\u043e \u043d\u0435 \u043f\u0456\u0434\u043b\u044f\u0433\u0430\u0454 \u0432\u0438\u043a\u043e\u043d\u0430\u043d\u043d\u044e, \u043a\u043e\u043c\u043f\u0435\u0442\u0435\u043d\u0442\u043d\u0438\u043c \u0441\u0443\u0434\u043e\u043c, \u0442\u0430\u043a\u0435 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u043d\u044f \u0431\u0443\u0434\u0435 \u0432\u0456\u0434\u043e\u043a\u0440\u0435\u043c\u043b\u0435\u043d\u043e \u0432\u0456\u0434 \u0446\u0438\u0445 \u0423\u043c\u043e\u0432 \u0431\u0435\u0437 \u0432\u043f\u043b\u0438\u0432\u0443 \u043d\u0430 \u0434\u0456\u0439\u0441\u043d\u0456\u0441\u0442\u044c \u0442\u0430 \u0432\u0438\u043a\u043e\u043d\u0443\u0432\u0430\u043d\u0456\u0441\u0442\u044c \u0456\u043d\u0448\u0438\u0445 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u044c.",
+      "p2": "\u0421\u0443\u0434 \u0430\u0431\u043e \u0430\u0440\u0431\u0456\u0442\u0440 \u043c\u043e\u0436\u0435 \u0440\u0435\u0444\u043e\u0440\u043c\u0443\u0432\u0430\u0442\u0438 \u043d\u0435\u0432\u0438\u043a\u043e\u043d\u0443\u0432\u0430\u043d\u0435 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u043d\u044f \u0432 \u043c\u0456\u043d\u0456\u043c\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u043e\u0431\u0441\u044f\u0437\u0456, \u043d\u0435\u043e\u0431\u0445\u0456\u0434\u043d\u043e\u043c\u0443 \u0434\u043b\u044f \u0432\u0438\u0437\u043d\u0430\u043d\u043d\u044f \u0439\u043e\u0433\u043e \u0434\u0456\u0439\u0441\u043d\u0438\u043c \u0456 \u0432\u0438\u043a\u043e\u043d\u0443\u0432\u0430\u043d\u0438\u043c."
+    },
+    "assignment": {
+      "heading": "\u0426\u0435\u0441\u0456\u044f",
+      "p1": "LumenShore \u043c\u043e\u0436\u0435 \u043f\u0435\u0440\u0435\u0434\u0430\u0442\u0438 \u0430\u0431\u043e \u043f\u0435\u0440\u0435\u043d\u0435\u0441\u0442\u0438 \u0446\u0456 \u0423\u043c\u043e\u0432\u0438 \u0442\u0430 \u0431\u0443\u0434\u044c-\u044f\u043a\u0456 \u043d\u0430\u0434\u0430\u043d\u0456 \u0437\u0430 \u043d\u0438\u043c\u0438 \u043f\u0440\u0430\u0432\u0430 \u0442\u0430 \u043b\u0456\u0446\u0435\u043d\u0437\u0456\u0457 \u0431\u0443\u0434\u044c-\u044f\u043a\u043e\u043c\u0443 \u043f\u0440\u0430\u0432\u043e\u043d\u0430\u0441\u0442\u0443\u043f\u043d\u0438\u043a\u0443, \u0430\u0444\u0456\u043b\u0456\u0439\u043e\u0432\u0430\u043d\u0456\u0439 \u043a\u043e\u043c\u043f\u0430\u043d\u0456\u0457 \u0430\u0431\u043e \u043d\u0430\u0431\u0443\u0432\u0430\u0447\u0435\u0432\u0456 \u0432\u0441\u044c\u043e\u0433\u043e \u0430\u0431\u043e \u0437\u043d\u0430\u0447\u043d\u043e\u0457 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0431\u0456\u0437\u043d\u0435\u0441\u0443 \u0430\u0431\u043e \u0430\u043a\u0442\u0438\u0432\u0456\u0432 \u0431\u0435\u0437 \u0432\u0430\u0448\u043e\u0457 \u0437\u0433\u043e\u0434\u0438.",
+      "p2": "\u0412\u0438 \u043d\u0435 \u043c\u043e\u0436\u0435\u0442\u0435 \u043f\u0435\u0440\u0435\u0434\u0430\u0432\u0430\u0442\u0438 \u0430\u0431\u043e \u043f\u0435\u0440\u0435\u043d\u043e\u0441\u0438\u0442\u0438 \u0441\u0432\u043e\u0457 \u043f\u0440\u0430\u0432\u0430 \u0430\u0431\u043e \u043e\u0431\u043e\u0432\u2019\u044f\u0437\u043a\u0438 \u0437\u0430 \u0446\u0438\u043c\u0438 \u0423\u043c\u043e\u0432\u0430\u043c\u0438 \u0431\u0435\u0437 \u043d\u0430\u0448\u043e\u0457 \u043f\u043e\u043f\u0435\u0440\u0435\u0434\u043d\u044c\u043e\u0457 \u043f\u0438\u0441\u044c\u043c\u043e\u0432\u043e\u0457 \u0437\u0433\u043e\u0434\u0438."
+    },
+    "waiver": {
+      "heading": "\u0412\u0456\u0434\u043c\u043e\u0432\u0430 \u0432\u0456\u0434 \u043f\u0440\u0430\u0432",
+      "p1": "\u041d\u0435\u0432\u0438\u043a\u043e\u043d\u0430\u043d\u043d\u044f LumenShore \u0431\u0443\u0434\u044c-\u044f\u043a\u043e\u0433\u043e \u043f\u0440\u0430\u0432\u0430 \u0430\u0431\u043e \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u043d\u044f \u0446\u0438\u0445 \u0423\u043c\u043e\u0432 \u043d\u0435 \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u0432\u0456\u0434\u043c\u043e\u0432\u0443 \u0432\u0456\u0434 \u0442\u0430\u043a\u043e\u0433\u043e \u043f\u0440\u0430\u0432\u0430 \u0430\u0431\u043e \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u043d\u044f.",
+      "p2": "\u0412\u0456\u0434\u043c\u043e\u0432\u0430 \u0432\u0456\u0434 \u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f \u0446\u0438\u0445 \u0423\u043c\u043e\u0432 \u043d\u0435 \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u0432\u0456\u0434\u043c\u043e\u0432\u0443 \u0432\u0456\u0434 \u0431\u0443\u0434\u044c-\u044f\u043a\u043e\u0433\u043e \u043d\u0430\u0441\u0442\u0443\u043f\u043d\u043e\u0433\u043e \u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f.",
+      "p3": "\u0412\u0456\u0434\u043c\u043e\u0432\u0430 \u0432\u0456\u0434 \u043f\u0440\u0430\u0432 \u0434\u0456\u0439\u0441\u043d\u0430 \u043b\u0438\u0448\u0435 \u044f\u043a\u0449\u043e \u0432\u043e\u043d\u0430 \u0437\u0440\u043e\u0431\u043b\u0435\u043d\u0430 \u0432 \u043f\u0438\u0441\u044c\u043c\u043e\u0432\u0456\u0439 \u0444\u043e\u0440\u043c\u0456 \u0442\u0430 \u043f\u0456\u0434\u043f\u0438\u0441\u0430\u043d\u0430 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u0438\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043d\u0438\u043a\u043e\u043c LumenShore."
+    },
+    "noPartnership": {
+      "heading": "\u0412\u0456\u0434\u043d\u043e\u0441\u0438\u043d\u0438 \u0441\u0442\u043e\u0440\u0456\u043d",
+      "p1": "\u041d\u0456\u0449\u043e \u0432 \u0446\u0438\u0445 \u0423\u043c\u043e\u0432\u0430\u0445 \u043d\u0435 \u043c\u043e\u0436\u0435 \u0442\u043b\u0443\u043c\u0430\u0447\u0438\u0442\u0438\u0441\u044f \u044f\u043a \u0441\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u0432\u0456\u0434\u043d\u043e\u0441\u0438\u043d \u0430\u0433\u0435\u043d\u0442\u0441\u0442\u0432\u0430, \u043f\u0430\u0440\u0442\u043d\u0435\u0440\u0441\u0442\u0432\u0430, \u0441\u043f\u0456\u043b\u044c\u043d\u043e\u0433\u043e \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0441\u0442\u0432\u0430 \u0430\u0431\u043e \u0442\u0440\u0443\u0434\u043e\u0432\u0438\u0445 \u0432\u0456\u0434\u043d\u043e\u0441\u0438\u043d \u043c\u0456\u0436 \u0432\u0430\u043c\u0438 \u0442\u0430 LumenShore.",
+      "p2": "\u0416\u043e\u0434\u043d\u0430 \u0437\u0456 \u0441\u0442\u043e\u0440\u0456\u043d \u043d\u0435 \u043c\u0430\u0454 \u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u044c \u0437\u043e\u0431\u043e\u0432\u2019\u044f\u0437\u0443\u0432\u0430\u0442\u0438 \u0456\u043d\u0448\u0443 \u0441\u0442\u043e\u0440\u043e\u043d\u0443 \u0430\u0431\u043e \u0431\u0440\u0430\u0442\u0438 \u043d\u0430 \u0441\u0435\u0431\u0435 \u0437\u043e\u0431\u043e\u0432\u2019\u044f\u0437\u0430\u043d\u043d\u044f \u0432\u0456\u0434 \u0457\u0457 \u0456\u043c\u0435\u043d\u0456."
+    },
+    "electronicCommunications": {
+      "heading": "\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0456 \u043a\u043e\u043c\u0443\u043d\u0456\u043a\u0430\u0446\u0456\u0457",
+      "p1": "\u041a\u043e\u0440\u0438\u0441\u0442\u0443\u044e\u0447\u0438\u0441\u044c \u0421\u0435\u0440\u0432\u0456\u0441\u043e\u043c, \u0432\u0438 \u043f\u043e\u0433\u043e\u0434\u0436\u0443\u0454\u0442\u0435\u0441\u044f \u043e\u0442\u0440\u0438\u043c\u0443\u0432\u0430\u0442\u0438 \u0432\u0456\u0434 \u043d\u0430\u0441 \u043f\u043e\u0432\u0456\u0434\u043e\u043c\u043b\u0435\u043d\u043d\u044f \u0432 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0456\u0439 \u0444\u043e\u0440\u043c\u0456, \u0432\u043a\u043b\u044e\u0447\u0430\u044e\u0447\u0438 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0443 \u043f\u043e\u0448\u0442\u0443, \u0441\u043f\u043e\u0432\u0456\u0449\u0435\u043d\u043d\u044f \u0432 \u0434\u043e\u0434\u0430\u0442\u043a\u0443 \u0442\u0430 \u043e\u0433\u043e\u043b\u043e\u0448\u0435\u043d\u043d\u044f \u043d\u0430 \u043d\u0430\u0448\u043e\u043c\u0443 \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u0456.",
+      "p2": "\u0412\u0438 \u043f\u043e\u0433\u043e\u0434\u0436\u0443\u0454\u0442\u0435\u0441\u044f, \u0449\u043e \u0432\u0441\u0456 \u0443\u0433\u043e\u0434\u0438, \u043f\u043e\u0432\u0456\u0434\u043e\u043c\u043b\u0435\u043d\u043d\u044f, \u0440\u043e\u0437\u043a\u0440\u0438\u0442\u0442\u044f \u0442\u0430 \u0456\u043d\u0448\u0456 \u043a\u043e\u043c\u0443\u043d\u0456\u043a\u0430\u0446\u0456\u0457, \u044f\u043a\u0456 \u043c\u0438 \u043d\u0430\u0434\u0430\u0454\u043c\u043e \u0432\u0430\u043c \u0432 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0456\u0439 \u0444\u043e\u0440\u043c\u0456, \u0437\u0430\u0434\u043e\u0432\u043e\u043b\u044c\u043d\u044f\u044e\u0442\u044c \u0431\u0443\u0434\u044c-\u044f\u043a\u0443 \u043f\u0440\u0430\u0432\u043e\u0432\u0443 \u0432\u0438\u043c\u043e\u0433\u0443 \u0449\u043e\u0434\u043e \u043f\u0438\u0441\u044c\u043c\u043e\u0432\u043e\u0457 \u0444\u043e\u0440\u043c\u0438 \u0442\u0430\u043a\u0438\u0445 \u043a\u043e\u043c\u0443\u043d\u0456\u043a\u0430\u0446\u0456\u0439."
+    },
+    "headingsClause": {
+      "heading": "\u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043a\u0438",
+      "p1": "\u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043a\u0438 \u0440\u043e\u0437\u0434\u0456\u043b\u0456\u0432 \u0443 \u0446\u0438\u0445 \u0423\u043c\u043e\u0432\u0430\u0445 \u043d\u0430\u0434\u0430\u043d\u0456 \u043b\u0438\u0448\u0435 \u0434\u043b\u044f \u0437\u0440\u0443\u0447\u043d\u043e\u0441\u0442\u0456 \u043f\u043e\u0441\u0438\u043b\u0430\u043d\u043d\u044f \u0442\u0430 \u043d\u0435 \u0432\u043f\u043b\u0438\u0432\u0430\u044e\u0442\u044c \u043d\u0430 \u0442\u043b\u0443\u043c\u0430\u0447\u0435\u043d\u043d\u044f \u0430\u0431\u043e \u043f\u043e\u0431\u0443\u0434\u043e\u0432\u0443 \u0446\u0438\u0445 \u0423\u043c\u043e\u0432."
+    },
+    "survival": {
+      "heading": "\u041f\u0440\u043e\u0434\u043e\u0432\u0436\u0435\u043d\u043d\u044f \u0434\u0456\u0457",
+      "p1": "\u041f\u043e\u043b\u043e\u0436\u0435\u043d\u043d\u044f \u0446\u0438\u0445 \u0423\u043c\u043e\u0432, \u044f\u043a\u0456 \u0437\u0430 \u0441\u0432\u043e\u0454\u044e \u043f\u0440\u0438\u0440\u043e\u0434\u043e\u044e \u043f\u043e\u0432\u0438\u043d\u043d\u0456 \u0434\u0456\u044f\u0442\u0438 \u043f\u0456\u0441\u043b\u044f \u043f\u0440\u0438\u043f\u0438\u043d\u0435\u043d\u043d\u044f, \u0437\u0430\u043b\u0438\u0448\u0430\u044e\u0442\u044c\u0441\u044f \u0447\u0438\u043d\u043d\u0438\u043c\u0438, \u0432\u043a\u043b\u044e\u0447\u0430\u044e\u0447\u0438, \u0430\u043b\u0435 \u043d\u0435 \u043e\u0431\u043c\u0435\u0436\u0443\u044e\u0447\u0438\u0441\u044c: \u043e\u0431\u043c\u0435\u0436\u0435\u043d\u043d\u044f \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456, \u0432\u0456\u0434\u0448\u043a\u043e\u0434\u0443\u0432\u0430\u043d\u043d\u044f, \u043f\u0440\u0430\u0432\u0430 \u0456\u043d\u0442\u0435\u043b\u0435\u043a\u0442\u0443\u0430\u043b\u044c\u043d\u043e\u0457 \u0432\u043b\u0430\u0441\u043d\u043e\u0441\u0442\u0456, \u0432\u0438\u0440\u0456\u0448\u0435\u043d\u043d\u044f \u0441\u043f\u043e\u0440\u0456\u0432, \u0432\u0456\u0434\u043c\u043e\u0432\u0438 \u0432\u0456\u0434 \u0433\u0430\u0440\u0430\u043d\u0442\u0456\u0439 \u0442\u0430 \u0431\u0443\u0434\u044c-\u044f\u043a\u0456 \u043d\u0430\u043a\u043e\u043f\u0438\u0447\u0435\u043d\u0456 \u043f\u0440\u0430\u0432\u0430 \u0442\u0430 \u043e\u0431\u043e\u0432\u2019\u044f\u0437\u043a\u0438."
+    },
+    "noThirdPartyBeneficiaries": {
+      "heading": "\u0412\u0456\u0434\u0441\u0443\u0442\u043d\u0456\u0441\u0442\u044c \u0442\u0440\u0435\u0442\u0456\u0445 \u0432\u0438\u0433\u043e\u0434\u043e\u043d\u0430\u0431\u0443\u0432\u0430\u0447\u0456\u0432",
+      "p1": "\u0426\u0456 \u0423\u043c\u043e\u0432\u0438 \u043d\u0435 \u043d\u0430\u0434\u0430\u044e\u0442\u044c \u0436\u043e\u0434\u043d\u0438\u0445 \u043f\u0440\u0430\u0432 \u0431\u0443\u0434\u044c-\u044f\u043a\u0456\u0439 \u043e\u0441\u043e\u0431\u0456 \u0430\u0431\u043e \u043e\u0440\u0433\u0430\u043d\u0456\u0437\u0430\u0446\u0456\u0457, \u044f\u043a\u0430 \u043d\u0435 \u0454 \u0441\u0442\u043e\u0440\u043e\u043d\u043e\u044e \u0446\u0438\u0445 \u0423\u043c\u043e\u0432.",
+      "p2": "\u0416\u043e\u0434\u043d\u0430 \u0442\u0440\u0435\u0442\u044f \u0441\u0442\u043e\u0440\u043e\u043d\u0430 \u043d\u0435 \u043c\u043e\u0436\u0435 \u0432\u0438\u043a\u043e\u043d\u0443\u0432\u0430\u0442\u0438 \u0431\u0443\u0434\u044c-\u044f\u043a\u0435 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u043d\u044f \u0446\u0438\u0445 \u0423\u043c\u043e\u0432 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u0417\u0430\u043a\u043e\u043d\u0443 \u043f\u0440\u043e \u043a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u0438 (\u041f\u0440\u0430\u0432\u0430 \u0442\u0440\u0435\u0442\u0456\u0445 \u0441\u0442\u043e\u0440\u0456\u043d) 1999 \u0440\u043e\u043a\u0443.",
+      "appleException": "\u041d\u0435\u0437\u0432\u0430\u0436\u0430\u044e\u0447\u0438 \u043d\u0430 \u0432\u0438\u0449\u0435\u0437\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u0435, Apple Inc. \u0442\u0430 \u0457\u0457 \u0434\u043e\u0447\u0456\u0440\u043d\u0456 \u043a\u043e\u043c\u043f\u0430\u043d\u0456\u0457 \u0454 \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0443\u0432\u0430\u043d\u0438\u043c\u0438 \u0442\u0440\u0435\u0442\u0456\u043c\u0438 \u0432\u0438\u0433\u043e\u0434\u043e\u043d\u0430\u0431\u0443\u0432\u0430\u0447\u0430\u043c\u0438 \u0446\u0438\u0445 \u0423\u043c\u043e\u0432 \u043b\u0438\u0448\u0435 \u0432 \u043e\u0431\u0441\u044f\u0437\u0456, \u0432\u0438\u043c\u0430\u0433\u0430\u043d\u043e\u043c\u0443 \u041b\u0456\u0446\u0435\u043d\u0437\u0456\u0439\u043d\u043e\u044e \u0443\u0433\u043e\u0434\u043e\u044e Apple. Apple \u043c\u0430\u0454 \u043f\u0440\u0430\u0432\u043e \u0432\u0438\u043a\u043e\u043d\u0443\u0432\u0430\u0442\u0438 \u0446\u0456 \u0423\u043c\u043e\u0432\u0438 \u043f\u0440\u043e\u0442\u0438 \u0432\u0430\u0441 \u044f\u043a \u0442\u0440\u0435\u0442\u0456\u0439 \u0432\u0438\u0433\u043e\u0434\u043e\u043d\u0430\u0431\u0443\u0432\u0430\u0447 \u0443 \u043c\u0456\u043d\u0456\u043c\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u043e\u0431\u0441\u044f\u0437\u0456, \u0432\u0438\u043c\u0430\u0433\u0430\u043d\u043e\u043c\u0443 \u043a\u0435\u0440\u0456\u0432\u043d\u0438\u0446\u0442\u0432\u043e\u043c Apple."
+    }
+  }
+}

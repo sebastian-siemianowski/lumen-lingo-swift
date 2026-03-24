@@ -52,7 +52,7 @@ export const contactFaqItems: FAQItem[] = [
   {
     question: 'How do I delete my account and data?',
     answer:
-      'You can clear all your data from within the app at any time by going to Settings → Reset Progress. Since LumenLingo stores data on-device and via iCloud, no server-side deletion is needed. If you\'d like help, reach out to us at hello@lumenshore.com.',
+      'You can clear all your data from within the app at any time by going to Settings → Reset Progress. Since LumenLingo stores data on-device and via iCloud, no server-side deletion is needed. If you\'d like help, reach out to us at support@lumenshore.com.',
   },
   {
     question: 'What practice modes are available?',
@@ -63,5 +63,20 @@ export const contactFaqItems: FAQItem[] = [
     question: 'Do I lose my progress if I downgrade?',
     answer:
       'Never. All your learning progress, streaks, XP, and mastery data are preserved no matter what. If you downgrade, certain premium features become locked, but your learning history stays completely intact. Upgrade again anytime to pick up right where you left off.',
+  },
+  {
+    question: 'How do I export my data?',
+    answer:
+      'LumenLingo stores your learning data on-device and syncs via iCloud. You can view your progress, streaks, and mastery levels directly in the app. If you need a copy of any personal data we hold about you, submit a request through our Data Request page or email us at support@lumenshore.com. We\'ll respond within 30 days as required by GDPR.',
+  },
+  {
+    question: 'What data does LumenLingo collect?',
+    answer:
+      'Very little. The iOS app stores all learning data on your device and syncs via iCloud — we never see it. Our website uses Vercel Analytics (anonymous page views), Sentry for error monitoring, and stores newsletter sign-ups if you opt in. We do not track you across other sites, sell your data, or use advertising cookies. Full details are in our Privacy Policy.',
+  },
+  {
+    question: 'How do I contact you about a privacy concern?',
+    answer:
+      'For privacy-specific questions, email us at support@lumenshore.com with "Privacy" in the subject line. You can also use our Data Request page to exercise your rights under GDPR, CCPA, or other privacy laws — including access, correction, deletion, and data portability. We take every privacy inquiry seriously and respond within 48 hours.',
   },
 ];

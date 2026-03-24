@@ -1,0 +1,412 @@
+{
+  "en": {
+    "userRepresentations": {
+      "heading": "User Representations and Warranties",
+      "p1": "By using the Service, you represent and warrant that:",
+      "li1": "You are of legal age in your jurisdiction to form a binding contract, or you have obtained verifiable parental or guardian consent;",
+      "li2": "You have the legal capacity and authority to agree to these Terms;",
+      "li3": "All information you provide to us is accurate, current, and complete;",
+      "li4": "You will maintain the accuracy of your information and promptly update it as necessary;",
+      "li5": "You will not use the Service for any unlawful purpose;",
+      "li6": "You have not been previously suspended or removed from the Service."
+    },
+    "userObligations": {
+      "heading": "User Obligations",
+      "p1": "In using the Service, you agree to:",
+      "li1": "Comply with all applicable local, state, national, and international laws and regulations;",
+      "li2": "Not attempt to reverse-engineer, decompile, or disassemble the application or any part thereof;",
+      "li3": "Not scrape, copy, or redistribute Service content without prior written authorisation from LumenShore;",
+      "li4": "Not interfere with or disrupt the Service, its servers, or connected networks;",
+      "li5": "Not use automated means (including bots, scrapers, or crawlers) to access the Service;",
+      "li6": "Not create multiple accounts for fraudulent or abusive purposes;",
+      "li7": "Not impersonate any person or entity, or falsely state or misrepresent your affiliation with any person or entity;",
+      "li8": "Maintain the confidentiality of your account credentials and accept responsibility for all activity under your account."
+    },
+    "userIndemnification": {
+      "heading": "User Indemnification",
+      "p1": "You agree to indemnify, defend, and hold harmless LumenShore Limited, its directors, officers, employees, and agents from and against any and all claims, damages, losses, costs, and expenses (including reasonable legal fees) arising from or related to:",
+      "li1": "Your breach of these Terms;",
+      "li2": "Your violation of any applicable law or the rights of any third party;",
+      "li3": "Your use of the Service;",
+      "li4": "Any content you submit to or through the Service.",
+      "p2": "LumenShore reserves the right to assume the exclusive defence and control of any matter otherwise subject to indemnification by you, in which event you agree to cooperate with LumenShore in asserting any available defences."
+    },
+    "breachConsequences": {
+      "heading": "Consequences of Breach",
+      "p1": "If you breach any provision of these Terms, LumenShore may, at its sole discretion:",
+      "li1": "Suspend or terminate your access to the Service immediately and without prior notice;",
+      "li2": "Withhold any refund for the remaining subscription period;",
+      "li3": "Seek injunctive or equitable relief for intellectual property infringement or other violations of these Terms.",
+      "p2": "The remedies set out in this section are in addition to, and not in substitution for, any other remedies available to LumenShore at law or in equity."
+    }
+  },
+  "es": {
+    "userRepresentations": {
+      "heading": "Declaraciones y Garantias del Usuario",
+      "p1": "Al utilizar el Servicio, usted declara y garantiza que:",
+      "li1": "Tiene la edad legal en su jurisdiccion para celebrar un contrato vinculante, o ha obtenido el consentimiento verificable de un padre o tutor;",
+      "li2": "Tiene la capacidad legal y la autoridad para aceptar estos Terminos;",
+      "li3": "Toda la informacion que nos proporciona es precisa, actual y completa;",
+      "li4": "Mantendra la precision de su informacion y la actualizara de manera oportuna cuando sea necesario;",
+      "li5": "No utilizara el Servicio para ningun proposito ilegal;",
+      "li6": "No ha sido previamente suspendido o eliminado del Servicio."
+    },
+    "userObligations": {
+      "heading": "Obligaciones del Usuario",
+      "p1": "Al utilizar el Servicio, usted acepta:",
+      "li1": "Cumplir con todas las leyes y regulaciones locales, estatales, nacionales e internacionales aplicables;",
+      "li2": "No intentar realizar ingenieria inversa, descompilar o desensamblar la aplicacion o cualquier parte de la misma;",
+      "li3": "No copiar, extraer o redistribuir el contenido del Servicio sin autorizacion previa por escrito de LumenShore;",
+      "li4": "No interferir con ni interrumpir el Servicio, sus servidores o las redes conectadas;",
+      "li5": "No utilizar medios automatizados (incluidos bots, extractores o rastreadores) para acceder al Servicio;",
+      "li6": "No crear multiples cuentas con fines fraudulentos o abusivos;",
+      "li7": "No hacerse pasar por ninguna persona o entidad, ni declarar falsamente o tergiversar su afiliacion con ninguna persona o entidad;",
+      "li8": "Mantener la confidencialidad de las credenciales de su cuenta y aceptar la responsabilidad de toda la actividad realizada bajo su cuenta."
+    },
+    "userIndemnification": {
+      "heading": "Indemnizacion del Usuario",
+      "p1": "Usted acepta indemnizar, defender y eximir de responsabilidad a LumenShore Limited, sus directores, funcionarios, empleados y agentes de y contra todas las reclamaciones, danos, perdidas, costos y gastos (incluidos los honorarios legales razonables) que surjan de o esten relacionados con:",
+      "li1": "Su incumplimiento de estos Terminos;",
+      "li2": "Su violacion de cualquier ley aplicable o los derechos de terceros;",
+      "li3": "Su uso del Servicio;",
+      "li4": "Cualquier contenido que envie al Servicio o a traves de el.",
+      "p2": "LumenShore se reserva el derecho de asumir la defensa y el control exclusivos de cualquier asunto sujeto a indemnizacion por su parte, en cuyo caso usted acepta cooperar con LumenShore en la afirmacion de las defensas disponibles."
+    },
+    "breachConsequences": {
+      "heading": "Consecuencias del Incumplimiento",
+      "p1": "Si usted incumple alguna disposicion de estos Terminos, LumenShore podra, a su exclusivo criterio:",
+      "li1": "Suspender o cancelar su acceso al Servicio de forma inmediata y sin previo aviso;",
+      "li2": "Retener cualquier reembolso por el periodo de suscripcion restante;",
+      "li3": "Solicitar una medida cautelar o equitativa por infraccion de propiedad intelectual u otras violaciones de estos Terminos.",
+      "p2": "Los recursos establecidos en esta seccion son adicionales y no sustitutivos de cualquier otro recurso disponible para LumenShore en derecho o en equidad."
+    }
+  },
+  "fr": {
+    "userRepresentations": {
+      "heading": "Declarations et Garanties de l'Utilisateur",
+      "p1": "En utilisant le Service, vous declarez et garantissez que :",
+      "li1": "Vous avez l'age legal dans votre juridiction pour conclure un contrat contraignant, ou vous avez obtenu le consentement verifiable d'un parent ou tuteur ;",
+      "li2": "Vous avez la capacite juridique et l'autorite pour accepter les presentes Conditions ;",
+      "li3": "Toutes les informations que vous nous fournissez sont exactes, actuelles et completes ;",
+      "li4": "Vous maintiendrez l'exactitude de vos informations et les mettrez a jour rapidement si necessaire ;",
+      "li5": "Vous n'utiliserez pas le Service a des fins illegales ;",
+      "li6": "Vous n'avez pas ete precedemment suspendu ou supprime du Service."
+    },
+    "userObligations": {
+      "heading": "Obligations de l'Utilisateur",
+      "p1": "En utilisant le Service, vous acceptez de :",
+      "li1": "Respecter toutes les lois et reglementations locales, nationales et internationales applicables ;",
+      "li2": "Ne pas tenter de proceder a l'ingenierie inverse, la decompilation ou le desassemblage de l'application ou de toute partie de celle-ci ;",
+      "li3": "Ne pas copier, extraire ou redistribuer le contenu du Service sans autorisation ecrite prealable de LumenShore ;",
+      "li4": "Ne pas interferer avec ou perturber le Service, ses serveurs ou les reseaux connectes ;",
+      "li5": "Ne pas utiliser de moyens automatises (y compris les bots, extracteurs ou robots d'indexation) pour acceder au Service ;",
+      "li6": "Ne pas creer de comptes multiples a des fins frauduleuses ou abusives ;",
+      "li7": "Ne pas usurper l'identite d'une personne ou d'une entite, ni declarer faussement ou denaturer votre affiliation avec une personne ou une entite ;",
+      "li8": "Maintenir la confidentialite des identifiants de votre compte et accepter la responsabilite de toute activite sous votre compte."
+    },
+    "userIndemnification": {
+      "heading": "Indemnisation par l'Utilisateur",
+      "p1": "Vous acceptez d'indemniser, de defendre et de degager de toute responsabilite LumenShore Limited, ses administrateurs, dirigeants, employes et agents de et contre toutes reclamations, dommages, pertes, couts et depenses (y compris les frais juridiques raisonnables) decoulant de ou lies a :",
+      "li1": "Votre violation des presentes Conditions ;",
+      "li2": "Votre violation de toute loi applicable ou des droits de tiers ;",
+      "li3": "Votre utilisation du Service ;",
+      "li4": "Tout contenu que vous soumettez au Service ou par son intermediaire.",
+      "p2": "LumenShore se reserve le droit d'assumer la defense et le controle exclusifs de toute question faisant l'objet d'une indemnisation de votre part, auquel cas vous acceptez de cooperer avec LumenShore pour faire valoir les moyens de defense disponibles."
+    },
+    "breachConsequences": {
+      "heading": "Consequences de la Violation",
+      "p1": "Si vous violez une disposition des presentes Conditions, LumenShore pourra, a sa seule discretion :",
+      "li1": "Suspendre ou resilier votre acces au Service immediatement et sans preavis ;",
+      "li2": "Retenir tout remboursement pour la periode d'abonnement restante ;",
+      "li3": "Solliciter une injonction ou une reparation equitable pour contrefacon de propriete intellectuelle ou autre violation des presentes Conditions.",
+      "p2": "Les recours enonces dans la presente section s'ajoutent a tous les autres recours dont LumenShore dispose en droit ou en equite, et ne les remplacent pas."
+    }
+  },
+  "de": {
+    "userRepresentations": {
+      "heading": "Zusicherungen und Gewaehrleistungen des Nutzers",
+      "p1": "Durch die Nutzung des Dienstes versichern und gewaehrleisten Sie, dass:",
+      "li1": "Sie in Ihrer Rechtsordnung das gesetzliche Mindestalter fuer den Abschluss eines verbindlichen Vertrags erreicht haben oder die nachweisbare Zustimmung eines Elternteils oder Erziehungsberechtigten eingeholt haben;",
+      "li2": "Sie die rechtliche Geschaeftsfaehigkeit und Befugnis haben, diesen Bedingungen zuzustimmen;",
+      "li3": "Alle von Ihnen bereitgestellten Informationen zutreffend, aktuell und vollstaendig sind;",
+      "li4": "Sie die Richtigkeit Ihrer Informationen aufrechterhalten und diese bei Bedarf unverzueglich aktualisieren;",
+      "li5": "Sie den Dienst nicht fuer rechtswidrige Zwecke nutzen werden;",
+      "li6": "Sie nicht zuvor vom Dienst gesperrt oder entfernt wurden."
+    },
+    "userObligations": {
+      "heading": "Pflichten des Nutzers",
+      "p1": "Bei der Nutzung des Dienstes verpflichten Sie sich:",
+      "li1": "Alle geltenden lokalen, staatlichen, nationalen und internationalen Gesetze und Vorschriften einzuhalten;",
+      "li2": "Nicht zu versuchen, die Anwendung oder Teile davon zurueckzuentwickeln, zu dekompilieren oder zu disassemblieren;",
+      "li3": "Inhalte des Dienstes nicht ohne vorherige schriftliche Genehmigung von LumenShore zu kopieren, zu extrahieren oder weiterzugeben;",
+      "li4": "Den Dienst, seine Server oder verbundene Netzwerke nicht zu stoeren oder zu beeintraechtigen;",
+      "li5": "Keine automatisierten Mittel (einschliesslich Bots, Scraper oder Crawler) fuer den Zugriff auf den Dienst zu verwenden;",
+      "li6": "Keine mehrfachen Konten fuer betruegerische oder missbraeuchliche Zwecke zu erstellen;",
+      "li7": "Sich nicht als eine andere Person oder Einrichtung auszugeben oder Ihre Zugehoerigkeit zu einer Person oder Einrichtung falsch darzustellen;",
+      "li8": "Die Vertraulichkeit Ihrer Kontodaten zu wahren und die Verantwortung fuer alle Aktivitaeten unter Ihrem Konto zu uebernehmen."
+    },
+    "userIndemnification": {
+      "heading": "Freistellung durch den Nutzer",
+      "p1": "Sie erklaeren sich bereit, LumenShore Limited, seine Direktoren, leitenden Angestellten, Mitarbeiter und Vertreter von und gegen alle Ansprueche, Schaeden, Verluste, Kosten und Aufwendungen (einschliesslich angemessener Rechtsanwaltsgebuehren) freizustellen, zu verteidigen und schadlos zu halten, die sich ergeben aus oder im Zusammenhang stehen mit:",
+      "li1": "Ihrem Verstoss gegen diese Bedingungen;",
+      "li2": "Ihrem Verstoss gegen geltendes Recht oder die Rechte Dritter;",
+      "li3": "Ihrer Nutzung des Dienstes;",
+      "li4": "Jeglichen Inhalten, die Sie an den Dienst oder ueber diesen uebermitteln.",
+      "p2": "LumenShore behaelt sich das Recht vor, die alleinige Verteidigung und Kontrolle ueber jeden Anspruch zu uebernehmen, der andernfalls Ihrer Freistellungspflicht unterliegt, wobei Sie sich in diesem Fall bereit erklaeren, mit LumenShore bei der Geltendmachung verfuegbarer Verteidigungsmittel zusammenzuarbeiten."
+    },
+    "breachConsequences": {
+      "heading": "Folgen eines Verstosses",
+      "p1": "Bei Verstoss gegen eine Bestimmung dieser Bedingungen kann LumenShore nach eigenem Ermessen:",
+      "li1": "Ihren Zugang zum Dienst unverzueglich und ohne vorherige Ankuendigung aussetzen oder kuendigen;",
+      "li2": "Jegliche Erstattung fuer den verbleibenden Abonnementzeitraum einbehalten;",
+      "li3": "Einstweiligen Rechtsschutz oder billigkeitsrechtliche Abhilfe bei Verletzungen des geistigen Eigentums oder anderen Verstoessen gegen diese Bedingungen beantragen.",
+      "p2": "Die in diesem Abschnitt genannten Rechtsmittel gelten zusaetzlich zu allen anderen LumenShore gesetzlich oder billigkeitsrechtlich zur Verfuegung stehenden Rechtsmitteln und ersetzen diese nicht."
+    }
+  },
+  "ja": {
+    "userRepresentations": {
+      "heading": "ユーザーの表明および保証",
+      "p1": "本サービスを利用することにより、お客様は以下を表明し保証するものとします：",
+      "li1": "お客様の法域において拘束力のある契約を締結するための法定年齢に達していること、または保護者の検証可能な同意を得ていること。",
+      "li2": "本規約に同意する法的能力および権限を有していること。",
+      "li3": "お客様が当社に提供するすべての情報が正確、最新かつ完全であること。",
+      "li4": "お客様の情報の正確性を維持し、必要に応じて速やかに更新すること。",
+      "li5": "本サービスを違法な目的で使用しないこと。",
+      "li6": "以前に本サービスから停止または削除されていないこと。"
+    },
+    "userObligations": {
+      "heading": "ユーザーの義務",
+      "p1": "本サービスの利用にあたり、お客様は以下に同意するものとします：",
+      "li1": "適用されるすべての地方、州、国内および国際的な法令を遵守すること。",
+      "li2": "アプリケーションまたはその一部のリバースエンジニアリング、逆コンパイル、または逆アセンブルを試みないこと。",
+      "li3": "LumenShoreの事前の書面による許可なく、本サービスのコンテンツをスクレイピング、コピー、または再配布しないこと。",
+      "li4": "本サービス、そのサーバー、または接続されたネットワークに干渉または妨害しないこと。",
+      "li5": "自動化された手段（ボット、スクレイパー、クローラーを含む）を使用して本サービスにアクセスしないこと。",
+      "li6": "不正または悪意のある目的で複数のアカウントを作成しないこと。",
+      "li7": "他の個人または団体になりすまし、または個人もしくは団体との関係を虚偽に表明もしくは誤表示しないこと。",
+      "li8": "アカウント認証情報の機密性を維持し、アカウントにおけるすべての活動に対する責任を負うこと。"
+    },
+    "userIndemnification": {
+      "heading": "ユーザーによる補償",
+      "p1": "お客様は、以下に起因または関連するあらゆる請求、損害、損失、費用および経費（合理的な弁護士費用を含む）について、LumenShore Limited、その取締役、役員、従業員および代理人を補償、防御し、免責することに同意するものとします：",
+      "li1": "お客様による本規約の違反。",
+      "li2": "お客様による適用法または第三者の権利の侵害。",
+      "li3": "お客様による本サービスの利用。",
+      "li4": "お客様が本サービスに送信したコンテンツ。",
+      "p2": "LumenShoreは、お客様の補償対象となる事項について、独占的な防御および管理を引き受ける権利を留保します。その場合、お客様は利用可能な防御手段の主張においてLumenShoreに協力することに同意するものとします。"
+    },
+    "breachConsequences": {
+      "heading": "違反の結果",
+      "p1": "お客様が本規約のいずれかの条項に違反した場合、LumenShoreはその独自の裁量により以下を行うことができます：",
+      "li1": "事前の通知なく直ちにお客様の本サービスへのアクセスを停止または終了すること。",
+      "li2": "残りのサブスクリプション期間に対するいかなる払い戻しも保留すること。",
+      "li3": "知的財産権の侵害またはその他の本規約違反に対し、差止命令またはエクイティ上の救済を求めること。",
+      "p2": "本条に定める救済措置は、LumenShoreが法律上またはエクイティ上利用し得る他の救済措置に追加されるものであり、これらに代替するものではありません。"
+    }
+  },
+  "pt": {
+    "userRepresentations": {
+      "heading": "Declaracoes e Garantias do Utilizador",
+      "p1": "Ao utilizar o Servico, declara e garante que:",
+      "li1": "Tem a idade legal na sua jurisdicao para celebrar um contrato vinculativo, ou obteve o consentimento verificavel de um progenitor ou tutor;",
+      "li2": "Tem a capacidade legal e a autoridade para concordar com estes Termos;",
+      "li3": "Todas as informacoes que nos fornece sao precisas, atuais e completas;",
+      "li4": "Mantera a precisao das suas informacoes e as atualizara prontamente quando necessario;",
+      "li5": "Nao utilizara o Servico para qualquer finalidade ilegal;",
+      "li6": "Nao foi previamente suspenso ou removido do Servico."
+    },
+    "userObligations": {
+      "heading": "Obrigacoes do Utilizador",
+      "p1": "Ao utilizar o Servico, concorda em:",
+      "li1": "Cumprir todas as leis e regulamentos locais, estaduais, nacionais e internacionais aplicaveis;",
+      "li2": "Nao tentar fazer engenharia reversa, descompilar ou desmontar a aplicacao ou qualquer parte da mesma;",
+      "li3": "Nao copiar, extrair ou redistribuir conteudo do Servico sem autorizacao previa por escrito da LumenShore;",
+      "li4": "Nao interferir com ou perturbar o Servico, os seus servidores ou redes ligadas;",
+      "li5": "Nao utilizar meios automatizados (incluindo bots, scrapers ou crawlers) para aceder ao Servico;",
+      "li6": "Nao criar multiplas contas para fins fraudulentos ou abusivos;",
+      "li7": "Nao se fazer passar por qualquer pessoa ou entidade, nem declarar falsamente ou deturpar a sua afiliacao com qualquer pessoa ou entidade;",
+      "li8": "Manter a confidencialidade das credenciais da sua conta e aceitar a responsabilidade por toda a atividade realizada na sua conta."
+    },
+    "userIndemnification": {
+      "heading": "Indemnizacao pelo Utilizador",
+      "p1": "Concorda em indemnizar, defender e isentar de responsabilidade a LumenShore Limited, os seus diretores, funcionarios, empregados e agentes de e contra todas as reclamacoes, danos, perdas, custos e despesas (incluindo honorarios legais razoaveis) decorrentes de ou relacionados com:",
+      "li1": "A sua violacao destes Termos;",
+      "li2": "A sua violacao de qualquer lei aplicavel ou dos direitos de terceiros;",
+      "li3": "A sua utilizacao do Servico;",
+      "li4": "Qualquer conteudo que submeta ao Servico ou atraves do mesmo.",
+      "p2": "A LumenShore reserva-se o direito de assumir a defesa e o controlo exclusivos de qualquer questao sujeita a indemnizacao por si, caso em que concorda em cooperar com a LumenShore na defesa dos meios disponiveis."
+    },
+    "breachConsequences": {
+      "heading": "Consequencias da Violacao",
+      "p1": "Se violar qualquer disposicao destes Termos, a LumenShore podera, a seu exclusivo criterio:",
+      "li1": "Suspender ou cancelar o seu acesso ao Servico imediatamente e sem aviso previo;",
+      "li2": "Reter qualquer reembolso pelo periodo de subscricao restante;",
+      "li3": "Procurar uma medida cautelar ou equitativa por violacao de propriedade intelectual ou outras violacoes destes Termos.",
+      "p2": "Os recursos previstos nesta seccao sao adicionais e nao substitutivos de quaisquer outros recursos disponiveis para a LumenShore por lei ou em equidade."
+    }
+  },
+  "pl": {
+    "userRepresentations": {
+      "heading": "Oswiadczenia i Gwarancje Uzytkownika",
+      "p1": "Korzystajac z Uslugi, oswiadczasz i gwarantujesz, ze:",
+      "li1": "Osiagnales wiek wymagany w Twojej jurysdykcji do zawarcia wiazacej umowy lub uzyskales weryfikowalna zgode rodzica lub opiekuna;",
+      "li2": "Posiadasz zdolnosc prawna i uprawnienia do zaakceptowania niniejszych Warunkow;",
+      "li3": "Wszystkie informacje, ktore nam przekazujesz, sa dokladne, aktualne i kompletne;",
+      "li4": "Bedziesz utrzymywal dokladnosc swoich informacji i niezwlocznie je aktualizowal w razie potrzeby;",
+      "li5": "Nie bedziesz korzystal z Uslugi w jakimkolwiek niezgodnym z prawem celu;",
+      "li6": "Nie zostales wczesniej zawieszony ani usuniety z Uslugi."
+    },
+    "userObligations": {
+      "heading": "Obowiazki Uzytkownika",
+      "p1": "Korzystajac z Uslugi, zgadzasz sie:",
+      "li1": "Przestrzegac wszystkich obowiazujacych przepisow prawa lokalnego, stanowego, krajowego i miedzynarodowego;",
+      "li2": "Nie podejmowac prob inzynierii wstecznej, dekompilacji lub deasemblacji aplikacji lub jakiejkolwiek jej czesci;",
+      "li3": "Nie kopiowac, wydobywac ani redystrybuowac tresci Uslugi bez uprzedniej pisemnej zgody LumenShore;",
+      "li4": "Nie zaklocac ani nie zaburzac dzialania Uslugi, jej serwerow lub polaczonych sieci;",
+      "li5": "Nie korzystac z automatycznych srodkow (w tym botow, scraperów lub crawlerow) w celu uzyskania dostepu do Uslugi;",
+      "li6": "Nie tworzyc wielu kont w celach oszukaczych lub naduzywajacych;",
+      "li7": "Nie podszywac sie pod zadna osobe lub podmiot ani falszywie deklarowac lub przedstawiac swojego powiazania z jakakolwiek osoba lub podmiotem;",
+      "li8": "Zachowywac poufnosc danych logowania do konta i przyjac odpowiedzialnosc za wszelka aktywnosc na swoim koncie."
+    },
+    "userIndemnification": {
+      "heading": "Zabezpieczenie przez Uzytkownika",
+      "p1": "Zgadzasz sie zabezpieczyc, bronic i chronic LumenShore Limited, jej dyrektorow, urzednikow, pracownikow i agentow przed wszelkimi roszczeniami, szkodami, stratami, kosztami i wydatkami (w tym rozsadnymi kosztami prawniczymi) wynikajacymi z lub zwiazanymi z:",
+      "li1": "Twoim naruszeniem niniejszych Warunkow;",
+      "li2": "Twoim naruszeniem obowiazujacego prawa lub praw osob trzecich;",
+      "li3": "Twoim korzystaniem z Uslugi;",
+      "li4": "Jakimikolwiek tresciami, ktore przesylasz do Uslugi lub za jej posrednictwem.",
+      "p2": "LumenShore zastrzega sobie prawo do przejecia wylacznej obrony i kontroli nad kazda sprawa podlegajaca zabezpieczeniu z Twojej strony, w ktorym to przypadku zgadzasz sie wspolpracowac z LumenShore w dochodzeniu dostepnych srodkow obrony."
+    },
+    "breachConsequences": {
+      "heading": "Konsekwencje Naruszenia",
+      "p1": "W przypadku naruszenia jakiegokolwiek postanowienia niniejszych Warunkow, LumenShore moze, wedlug wlasnego uznania:",
+      "li1": "Natychmiast zawiesic lub wypowiedziec dostep do Uslugi bez uprzedniego powiadomienia;",
+      "li2": "Wstrzymac jakikolwiek zwrot za pozostaly okres subskrypcji;",
+      "li3": "Wystapic o srodek zabezpieczajacy lub slusznosc za naruszenie wlasnosci intelektualnej lub inne naruszenia niniejszych Warunkow.",
+      "p2": "Srodki prawne okreslone w niniejszej sekcji stanowia uzupelnienie, a nie zastepstwo, wszelkich innych srodkow prawnych dostepnych dla LumenShore na mocy prawa lub zasad slusznosci."
+    }
+  },
+  "ar": {
+    "userRepresentations": {
+      "heading": "اقرارات وضمانات المستخدم",
+      "p1": "باستخدام الخدمة، تقر وتضمن ما يلي:",
+      "li1": "أنك بلغت السن القانوني في نطاق اختصاصك لإبرام عقد ملزم، أو حصلت على موافقة قابلة للتحقق من أحد الوالدين أو الوصي؛",
+      "li2": "أن لديك الأهلية القانونية والصلاحية للموافقة على هذه الشروط؛",
+      "li3": "أن جميع المعلومات التي تقدمها لنا دقيقة وحالية وكاملة؛",
+      "li4": "أنك ستحافظ على دقة معلوماتك وتحدثها فوراً عند الضرورة؛",
+      "li5": "أنك لن تستخدم الخدمة لأي غرض غير مشروع؛",
+      "li6": "أنك لم يتم تعليقك أو إزالتك سابقاً من الخدمة."
+    },
+    "userObligations": {
+      "heading": "التزامات المستخدم",
+      "p1": "عند استخدام الخدمة، توافق على:",
+      "li1": "الامتثال لجميع القوانين واللوائح المحلية والوطنية والدولية المعمول بها؛",
+      "li2": "عدم محاولة الهندسة العكسية أو فك التجميع أو تفكيك التطبيق أو أي جزء منه؛",
+      "li3": "عدم نسخ أو استخراج أو إعادة توزيع محتوى الخدمة دون إذن كتابي مسبق من LumenShore؛",
+      "li4": "عدم التدخل في أو تعطيل الخدمة أو خوادمها أو الشبكات المتصلة بها؛",
+      "li5": "عدم استخدام وسائل آلية (بما في ذلك الروبوتات أو أدوات الكشط أو الزواحف) للوصول إلى الخدمة؛",
+      "li6": "عدم إنشاء حسابات متعددة لأغراض احتيالية أو تعسفية؛",
+      "li7": "عدم انتحال شخصية أي شخص أو كيان، أو التصريح كذباً أو تحريف انتمائك لأي شخص أو كيان؛",
+      "li8": "الحفاظ على سرية بيانات اعتماد حسابك وتحمل المسؤولية عن جميع الأنشطة التي تتم من خلال حسابك."
+    },
+    "userIndemnification": {
+      "heading": "تعويض المستخدم",
+      "p1": "توافق على تعويض والدفاع عن وإبراء ذمة LumenShore Limited ومديريها ومسؤوليها وموظفيها ووكلائها من وضد أي وجميع المطالبات والأضرار والخسائر والتكاليف والنفقات (بما في ذلك الرسوم القانونية المعقولة) الناشئة عن أو المتعلقة بـ:",
+      "li1": "انتهاكك لهذه الشروط؛",
+      "li2": "انتهاكك لأي قانون معمول به أو حقوق أي طرف ثالث؛",
+      "li3": "استخدامك للخدمة؛",
+      "li4": "أي محتوى تقدمه إلى الخدمة أو من خلالها.",
+      "p2": "تحتفظ LumenShore بالحق في تولي الدفاع الحصري والسيطرة على أي مسألة تخضع للتعويض من جانبك، وفي هذه الحالة توافق على التعاون مع LumenShore في تأكيد أي دفاعات متاحة."
+    },
+    "breachConsequences": {
+      "heading": "عواقب الإخلال",
+      "p1": "إذا أخللت بأي حكم من أحكام هذه الشروط، يجوز لـ LumenShore، وفقاً لتقديرها المطلق:",
+      "li1": "تعليق أو إنهاء وصولك إلى الخدمة فوراً ودون إشعار مسبق؛",
+      "li2": "حجب أي استرداد عن فترة الاشتراك المتبقية؛",
+      "li3": "طلب أمر قضائي أو تعويض عادل بسبب انتهاك الملكية الفكرية أو غيرها من انتهاكات هذه الشروط.",
+      "p2": "التعويضات المنصوص عليها في هذا القسم هي إضافة إلى، وليست بديلاً عن، أي تعويضات أخرى متاحة لـ LumenShore بموجب القانون أو العدالة."
+    }
+  },
+  "zh": {
+    "userRepresentations": {
+      "heading": "用户声明与保证",
+      "p1": "使用本服务即表示您声明并保证：",
+      "li1": "您已达到您所在司法管辖区订立具有约束力合同的法定年龄，或已获得可验证的父母或监护人的同意；",
+      "li2": "您具有同意本条款的法律行为能力和权限；",
+      "li3": "您向我们提供的所有信息均准确、最新且完整；",
+      "li4": "您将保持您信息的准确性，并在必要时及时更新；",
+      "li5": "您不会将本服务用于任何非法目的；",
+      "li6": "您此前未曾被本服务暂停或移除。"
+    },
+    "userObligations": {
+      "heading": "用户义务",
+      "p1": "在使用本服务时，您同意：",
+      "li1": "遵守所有适用的地方、州、国家和国际法律法规；",
+      "li2": "不试图对应用程序或其任何部分进行逆向工程、反编译或反汇编；",
+      "li3": "未经LumenShore事先书面授权，不得抓取、复制或重新分发服务内容；",
+      "li4": "不干扰或破坏本服务、其服务器或连接的网络；",
+      "li5": "不使用自动化手段（包括机器人、抓取工具或爬虫）访问本服务；",
+      "li6": "不出于欺诈或滥用目的创建多个账户；",
+      "li7": "不冒充任何个人或实体，不虚假陈述或歪曲您与任何个人或实体的关系；",
+      "li8": "维护您账户凭证的保密性，并对您账户下的所有活动负责。"
+    },
+    "userIndemnification": {
+      "heading": "用户赔偿",
+      "p1": "您同意就以下原因引起的或与之相关的任何和所有索赔、损害、损失、费用和开支（包括合理的律师费），对LumenShore Limited及其董事、高管、员工和代理人进行赔偿、辩护并使其免受损害：",
+      "li1": "您违反本条款；",
+      "li2": "您违反任何适用法律或任何第三方的权利；",
+      "li3": "您对本服务的使用；",
+      "li4": "您向本服务或通过本服务提交的任何内容。",
+      "p2": "LumenShore保留对您应赔偿的任何事项承担独占辩护和控制权的权利，在此情况下，您同意配合LumenShore主张任何可用的辩护。"
+    },
+    "breachConsequences": {
+      "heading": "违约后果",
+      "p1": "如果您违反本条款的任何规定，LumenShore可自行决定：",
+      "li1": "立即暂停或终止您对本服务的访问，无需事先通知；",
+      "li2": "扣留剩余订阅期间的任何退款；",
+      "li3": "就知识产权侵权或本条款的其他违反寻求禁令救济或衡平法救济。",
+      "p2": "本节规定的救济措施是LumenShore在法律上或衡平法上可获得的任何其他救济措施的补充，而非替代。"
+    }
+  },
+  "uk": {
+    "userRepresentations": {
+      "heading": "Заяви та гарантii користувача",
+      "p1": "Використовуючи Сервiс, ви заявляєте та гарантуєте, що:",
+      "li1": "Ви досягли повнолiття у вашiй юрисдикцii для укладення обов'язкового договору або отримали пiдтверджену згоду батькiв чи опiкуна;",
+      "li2": "Ви маєте правоздатнiсть та повноваження для прийняття цих Умов;",
+      "li3": "Уся iнформацiя, яку ви нам надаєте, є точною, актуальною та повною;",
+      "li4": "Ви пiдтримуватимете точнiсть вашої iнформацii та оперативно оновлюватимете ii за потреби;",
+      "li5": "Ви не будете використовувати Сервiс з будь-якою незаконною метою;",
+      "li6": "Вас ранiше не було призупинено або видалено з Сервiсу."
+    },
+    "userObligations": {
+      "heading": "Обов'язки користувача",
+      "p1": "Використовуючи Сервiс, ви погоджуєтеся:",
+      "li1": "Дотримуватися всiх застосовних мiсцевих, державних, нацiональних та мiжнародних законiв i нормативних актiв;",
+      "li2": "Не намагатися здiйснювати зворотну iнженерiю, декомпiляцiю або розбирання додатку чи будь-якої його частини;",
+      "li3": "Не копiювати, витягувати або перерозподiляти вмiст Сервiсу без попереднього письмового дозволу LumenShore;",
+      "li4": "Не перешкоджати або порушувати роботу Сервiсу, його серверiв або пiдключених мереж;",
+      "li5": "Не використовувати автоматизованi засоби (включаючи ботiв, скрейпери або краулери) для доступу до Сервiсу;",
+      "li6": "Не створювати кiлька облiкових записiв з шахрайськими або зловмисними цiлями;",
+      "li7": "Не видавати себе за iншу особу чи органiзацiю та не робити неправдивих заяв або не спотворювати свою приналежнiсть до будь-якої особи чи органiзацii;",
+      "li8": "Пiдтримувати конфiденцiйнiсть облiкових даних свого облiкового запису та нести вiдповiдальнiсть за всю дiяльнiсть пiд вашим облiковим записом."
+    },
+    "userIndemnification": {
+      "heading": "Вiдшкодування користувачем",
+      "p1": "Ви погоджуєтеся вiдшкодувати, захищати та звiльняти LumenShore Limited, ii директорiв, посадових осiб, працiвникiв та агентiв вiд будь-яких претензiй, збиткiв, втрат, витрат та видаткiв (включаючи розумнi витрати на юридичнi послуги), що виникають iз або пов'язанi з:",
+      "li1": "Вашим порушенням цих Умов;",
+      "li2": "Вашим порушенням будь-якого застосовного закону або прав третiх осiб;",
+      "li3": "Вашим використанням Сервiсу;",
+      "li4": "Будь-яким контентом, який ви подаєте до Сервiсу або через нього.",
+      "p2": "LumenShore залишає за собою право взяти на себе виключний захист та контроль над будь-якою справою, що пiдлягає вiдшкодуванню з вашого боку, i в такому випадку ви погоджуєтеся спiвпрацювати з LumenShore у використаннi доступних засобiв захисту."
+    },
+    "breachConsequences": {
+      "heading": "Наслiдки порушення",
+      "p1": "У разi порушення будь-якого положення цих Умов LumenShore може, на свiй власний розсуд:",
+      "li1": "Негайно призупинити або припинити ваш доступ до Сервiсу без попереднього повiдомлення;",
+      "li2": "Утримати будь-яке вiдшкодування за залишковий перiод пiдписки;",
+      "li3": "Звернутися за судовою забороною або справедливим захистом у зв'язку з порушенням iнтелектуальної власностi або iншими порушеннями цих Умов.",
+      "p2": "Засоби захисту, зазначенi в цьому роздiлi, є доповненням, а не замiною, будь-яких iнших засобiв захисту, доступних LumenShore за законом або за справедливiстю."
+    }
+  }
+}

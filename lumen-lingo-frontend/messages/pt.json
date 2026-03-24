@@ -440,7 +440,8 @@
     "lastUpdated": "Last updated: 23 March 2026",
     "version": "Version 2.0",
     "languageDisclaimer": "Este documento está disponível em vários idiomas. Em caso de conflito ou inconsistência entre as versões traduzidas, a versão em inglês prevalecerá.",
-    "viewEnglishVersion": "Ver versão em inglês"
+    "viewEnglishVersion": "Ver versão em inglês",
+    "termsVersion": "Versao 1.0"
   },
   "Privacy": {
     "meta": {
@@ -1408,7 +1409,8 @@
       "li2": "Any errors, omissions, or inaccuracies in the content.",
       "li3": "Unauthorised access to your device or data (not caused by our negligence).",
       "li4": "Any interruption or cessation of the service.",
-      "cap": "Our total liability for any claim arising from these Terms or your use of LumenLingo shall not exceed the amount you paid for the App in the 12 months preceding the claim."
+      "cap": "Our total liability for any claim arising from these Terms or your use of LumenLingo shall not exceed the amount you paid for the App in the 12 months preceding the claim.",
+      "statutory": "Nada nestes Termos exclui ou limita a nossa responsabilidade por: morte ou lesao corporal causada pela nossa negligencia; fraude ou deturpacao fraudulenta; ou qualquer outra responsabilidade que nao possa ser excluida ou limitada pela lei aplicavel, incluindo os seus direitos legais ao abrigo da Lei dos Direitos do Consumidor de 2015 (Reino Unido) ou da Diretiva de Direitos do Consumidor da UE."
     },
     "termination": {
       "heading": "Termination",
@@ -1420,14 +1422,31 @@
       "li4": "Provisions that by their nature should survive termination will remain in effect."
     },
     "governingLaw": {
-      "heading": "Governing Law",
-      "p1": "These Terms are governed by and construed in accordance with the laws of England and Wales, without regard to conflict of law principles.",
-      "p2": "Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts of England and Wales. However, this does not affect your statutory rights as a consumer in your country of residence."
+      "heading": "Lei Aplicavel, Jurisdicao e Foro",
+      "lawHeading": "Lei Aplicavel",
+      "law1": "Estes Termos e qualquer disputa ou reclamacao decorrente de ou em conexao com eles ou seu objeto ou formacao (incluindo disputas ou reclamacoes nao contratuais) SERAO REGIDOS E INTERPRETADOS DE ACORDO COM AS LEIS DA INGLATERRA E DO PAIS DE GALES.",
+      "law2": "Esta escolha de lei aplica-se independentemente do seu pais de residencia, domicilio ou do pais a partir do qual acede ao Servico, e nao obstante quaisquer principios de conflito de leis que de outra forma se aplicariam.",
+      "jurisdictionHeading": "Jurisdicao Exclusiva",
+      "jurisdiction1": "Os tribunais de Inglaterra e Pais de Gales terao jurisdicao exclusiva para resolver qualquer disputa decorrente de ou em conexao com estes Termos.",
+      "jurisdiction2": "Quando a Secao 18 (Arbitragem nos EUA) destes Termos se aplicar, as disposicoes de arbitragem regerao em vez desta clausula de jurisdicao.",
+      "jurisdiction3": "Nada nesta secao impede qualquer das partes de procurar medidas cautelares ou liminares em qualquer tribunal competente.",
+      "venueHeading": "Foro",
+      "venue1": "Quaisquer procedimentos judiciais serao instaurados nos tribunais localizados em Leicester, Inglaterra, ou no Tribunal Superior de Justica de Londres, por escolha da Lumenshore.",
+      "venue2": "Ao utilizar o Servico, voce consente com a jurisdicao pessoal destes tribunais e renuncia a quaisquer objecoes ao foro, incluindo com base em forum non conveniens.",
+      "enforceabilityHeading": "Aplicabilidade por Jurisdicao",
+      "enforceability1": "Se voce e um consumidor da UE, nada nesta clausula afeta o seu direito de instaurar procedimentos nos tribunais do seu domicilio, conforme previsto pelo Regulamento de Bruxelas (reformulado).",
+      "enforceability2": "Se voce e um consumidor australiano, esta clausula de jurisdicao nao restringe quaisquer direitos que possa ter ao abrigo da Lei do Consumidor Australiano para instaurar procedimentos nos tribunais australianos.",
+      "enforceability3": "Na medida em que esta clausula seja inaplicavel na sua jurisdicao, as disputas serao resolvidas nos tribunais competentes nos termos da lei aplicavel.",
+      "languageHeading": "Idioma dos Procedimentos",
+      "language1": "Todos os procedimentos judiciais, arbitragens e comunicacoes relacionados com disputas serao conduzidos em ingles.",
+      "language2": "A versao em ingles destes Termos prevalecera sobre qualquer versao traduzida em caso de conflito."
     },
     "changes": {
-      "heading": "Changes to These Terms",
-      "p1": "We may update these Terms from time to time. When we make significant changes, we'll update the “Last updated” date at the top and may notify you through the App.",
-      "p2": "Continued use of LumenLingo after changes are posted constitutes acceptance of the revised Terms. If you disagree with the changes, please stop using the App and cancel any active subscription."
+      "heading": "Alteracoes a Estes Termos",
+      "p1": "Podemos atualizar estes Termos de tempos em tempos. Quando fizermos alteracoes significativas, atualizaremos a data de \"Ultima atualizacao\" e o numero da versao no topo desta pagina e poderemos notifica-lo atraves do Aplicativo.",
+      "p2": "O uso continuado do LumenLingo apos a publicacao das alteracoes constitui aceitacao dos Termos revisados. Se voce nao concordar com as alteracoes, por favor pare de usar o Aplicativo e cancele qualquer assinatura ativa.",
+      "versionHistory": "Historico de Versoes",
+      "v1": "<b>v1.0</b> (23 de marco de 2026) — Termos de Servico iniciais."
     },
     "contactUs": {
       "heading": "Contact Us",
@@ -1516,6 +1535,325 @@
       "li2": "LumenShore’s database right protection lasts 15 years from creation and is renewed with each substantial update to the content database",
       "li3": "These remedies are in addition to — and not in lieu of — any other rights or remedies available at law or in equity",
       "p3": "Nothing in this section limits any rights or remedies that LumenShore may have under applicable intellectual property, competition, or data-protection law."
+    },
+    "disputeResolution": {
+      "heading": "Resolucao de disputas",
+      "intro": "Acreditamos que a maioria das preocupacoes pode ser resolvida de forma rapida e amigavel. Se surgir uma disputa entre voce e a LumenShore em relacao a estes Termos ou ao uso do Servico, aplica-se o seguinte procedimento:",
+      "step1Heading": "Etapa 1 — Resolucao informal",
+      "step1P1": "Antes de iniciar qualquer procedimento formal, entre em contato conosco em <emailLink>hello@lumenshore.com</emailLink> com uma descricao detalhada da sua preocupacao. Comprometemo-nos a participar de discussoes de boa-fe para resolver a questao dentro de <b>30 dias</b> apos o recebimento da sua comunicacao.",
+      "step2Heading": "Etapa 2 — Mediacao",
+      "step2P1": "Se as discussoes informais nao resolverem a disputa dentro do periodo de 30 dias, qualquer uma das partes pode propor mediacao por meio de um mediador mutuamente acordado. A mediacao e voluntaria e os custos serao compartilhados igualmente, salvo acordo em contrario.",
+      "step3Heading": "Etapa 3 — Procedimentos judiciais",
+      "step3P1": "Se a disputa permanecer sem resolucao apos a resolucao informal de boa-fe e, quando tentada, a mediacao, qualquer uma das partes pode iniciar procedimentos judiciais. Os tribunais da Inglaterra e do Pais de Gales terao jurisdicao exclusiva, sujeito as excecoes de protecao ao consumidor abaixo.",
+      "odrHeading": "Resolucao de disputas online da UE",
+      "odrP1": "Se voce e um consumidor na Uniao Europeia, tambem pode utilizar a plataforma de Resolucao de Litigios em Linha (RLL) da Comissao Europeia: <odrLink>https://ec.europa.eu/consumers/odr/</odrLink>. O nosso e-mail para efeitos de RLL e hello@lumenshore.com.",
+      "arbitrationHeading": "Arbitragem para usuarios dos Estados Unidos",
+      "arbitrationP1": "Se voce reside nos Estados Unidos, qualquer disputa que nao possa ser resolvida pelo processo de resolucao informal acima sera resolvida por <b>arbitragem individual vinculativa</b> em vez de em tribunal, exceto que voce pode apresentar reclamacoes em um tribunal de pequenas causas, se as suas reclamacoes se qualificarem. A arbitragem sera administrada pela American Arbitration Association (AAA) sob as suas Regras de Arbitragem do Consumidor.",
+      "arbitrationP2": "Voce tem o direito de <b>optar por nao participar</b> desta clausula de arbitragem dentro de 30 dias apos a primeira aceitacao destes Termos, enviando uma notificacao por escrito para hello@lumenshore.com. Se optar por nao participar, as disputas serao resolvidas nos tribunais da Inglaterra e do Pais de Gales.",
+      "classActionHeading": "Renuncia a acoes coletivas",
+      "classActionP1": "Na maxima extensao permitida pela lei aplicavel, voce e a LumenShore concordam que quaisquer procedimentos de resolucao de disputas serao conduzidos apenas individualmente e nao como uma acao coletiva, consolidada ou representativa. Se esta renuncia for considerada inaplicavel na sua jurisdicao, as disposicoes restantes desta secao permanecem em pleno vigor.",
+      "consumerNote": "Se voce e um consumidor na Uniao Europeia ou no Reino Unido, nada nesta secao afeta os seus direitos legais, incluindo o direito de instaurar procedimentos nos tribunais do seu pais de residencia."
+    },
+    "educationalDisclaimer": {
+      "heading": "Aviso sobre conteudo educacional",
+      "p1": "O LumenLingo e uma ferramenta de apoio a aprendizagem de idiomas e um recurso complementar. Nao e uma instituicao educacional certificada e nao concede qualificacoes reconhecidas.",
+      "p2": "Nao garantimos fluencia nem qualquer nivel especifico de proficiencia. O conteudo e fornecido para fins de aprendizagem geral e nao deve ser usado como base para traducao profissional, interpretacao ou avaliacao academica.",
+      "p3": "Voce reconhece que suas expectativas devem ser proporcionais a uma assinatura de conteudo digital para consumidores. A LumenShore nao garante que o Servico atendera aos seus objetivos de aprendizagem especificos, cronograma ou necessidades profissionais."
+    },
+    "forceMajeure": {
+      "heading": "Forca maior",
+      "p1": "A LumenShore nao sera responsavel por qualquer falha ou atraso no cumprimento decorrente de causas alem do seu controle razoavel, incluindo, mas nao se limitando a: desastres naturais, acoes governamentais, falhas de internet ou telecomunicacoes, pandemia, disturbios civis ou interrupcoes de provedores de servicos terceiros.",
+      "p2": "Durante um evento de forca maior, nossas obrigacoes nos termos destes Termos ficam suspensas pela duracao do evento. Se tal evento continuar por mais de 90 dias consecutivos, qualquer uma das partes pode rescindir o acordo sem responsabilidade perante a outra."
+    },
+    "indemnification": {
+      "heading": "Indenizacao",
+      "p1": "Voce concorda em indenizar, defender e isentar a LumenShore Limited, seus diretores, executivos, funcionarios e agentes de quaisquer reclamacoes, danos, perdas e despesas (incluindo honorarios advocaticios razoaveis) decorrentes de:",
+      "li1": "Sua violacao destes Termos.",
+      "li2": "Sua violacao de qualquer lei aplicavel ou direitos de terceiros.",
+      "li3": "Seu uso do Servico.",
+      "li4": "Qualquer conteudo que voce enviar ao Servico."
+    },
+    "usArbitration": {
+      "heading": "Acordo de Arbitragem dos EUA",
+      "p1": "Se voce e residente nos Estados Unidos, voce e a LumenShore Limited concordam em resolver quaisquer disputas por meio de arbitragem individual vinculante em vez de tribunal, exceto conforme previsto abaixo.",
+      "p2": "A arbitragem sera administrada pela American Arbitration Association (AAA) ou JAMS sob suas Regras de Arbitragem do Consumidor. Os procedimentos podem ser conduzidos remotamente, por escrito ou presencialmente em local acordado por ambas as partes.",
+      "p3": "A decisao do arbitro sera final e vinculante, e podera ser registrada como sentenca em qualquer tribunal competente. A Lei Federal de Arbitragem (9 U.S.C. §§ 1-16) rege a aplicabilidade desta clausula de arbitragem.",
+      "classActionHeading": "Renuncia a acao coletiva e julgamento por juri",
+      "classActionP1": "VOCE E A LUMENSHORE CONCORDAM QUE CADA UM SO PODE APRESENTAR RECLAMACOES CONTRA O OUTRO EM SUA CAPACIDADE INDIVIDUAL E NAO COMO AUTOR OU MEMBRO DE UMA CLASSE EM QUALQUER ACAO COLETIVA, CONSOLIDADA OU REPRESENTATIVA.",
+      "classActionP2": "Voce renuncia ao direito a julgamento por juri para disputas nao sujeitas a arbitragem.",
+      "optOutHeading": "Direito de exclusao de 30 dias",
+      "optOutP1": "Voce pode optar por nao participar deste acordo de arbitragem dentro de 30 dias apos a primeira aceitacao destes Termos, enviando aviso por escrito para <emailLink>hello@lumenshore.com</emailLink>.",
+      "smallClaimsHeading": "Excecao de juizado de pequenas causas",
+      "smallClaimsP1": "Qualquer das partes pode apresentar reclamacoes individuais em um juizado de pequenas causas competente.",
+      "exceptionsHeading": "Excecoes a arbitragem",
+      "exceptionsP1": "Qualquer das partes pode buscar medidas cautelares ou equitativas em tribunal competente para disputas envolvendo violacao de propriedade intelectual.",
+      "severabilityP1": "Se a renuncia a acao coletiva acima for considerada inaplicavel, a totalidade deste acordo de arbitragem sera nula. Todas as demais disposicoes sao separaveis."
+    },
+    "tieredLiabilityCaps": {
+      "heading": "Limites de responsabilidade",
+      "freeP1": "Se você utilizar o Serviço no nível gratuito, a responsabilidade total acumulada da LumenShore perante você por todas as reclamações não excederá dez libras esterlinas (£10).",
+      "paidP1": "Se você utilizar o Serviço com uma assinatura paga, a responsabilidade total acumulada da LumenShore não excederá o valor total que você efetivamente pagou à LumenShore nos doze (12) meses imediatamente anteriores ao evento que gerou a reclamação.",
+      "iapNote": "Para compras feitas pela App Store da Apple, os valores pagos à LumenShore significam a receita líquida recebida pela LumenShore após a comissão da Apple."
+    },
+    "damageExclusions": {
+      "heading": "Exclusão de danos consequenciais",
+      "p1": "NA MÁXIMA MEDIDA PERMITIDA PELA LEI APLICÁVEL, EM NENHUM CASO A LUMENSHORE SERÁ RESPONSÁVEL POR: PERDA DE DADOS, LUCROS CESSANTES, PERDA DE RECEITA, PERDA DE POUPANÇAS, PERDA DE CLIENTELA, INTERRUPÇÃO DE NEGÓCIOS, CUSTO DE SERVIÇOS SUBSTITUTOS, DANOS INCIDENTAIS, CONSEQUENCIAIS, ESPECIAIS, EXEMPLARES OU PUNITIVOS.",
+      "p2": "Esta exclusão se aplica mesmo que a LumenShore tenha sido informada da possibilidade de tais danos, e mesmo que um recurso limitado aqui estabelecido não cumpra seu propósito essencial."
+    },
+    "warrantyDisclaimer": {
+      "heading": "Isenção de garantia",
+      "p1": "O SERVIÇO É FORNECIDO \"COMO ESTÁ\" E \"CONFORME DISPONÍVEL\" SEM GARANTIAS DE QUALQUER TIPO, EXPRESSAS OU IMPLÍCITAS, INCLUINDO, MAS NÃO SE LIMITANDO A, GARANTIAS IMPLÍCITAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM FIM ESPECÍFICO, NÃO VIOLAÇÃO, PRECISÃO, COMPLETUDE, CONFIABILIDADE, DISPONIBILIDADE OU SEGURANÇA.",
+      "p2": "Não garantimos que o Serviço será ininterrupto, livre de erros, livre de vírus, ou que defeitos serão corrigidos.",
+      "ukCarveout": "Nada nestes Termos afeta seus direitos legais nos termos da Lei dos Direitos do Consumidor de 2015 (Reino Unido) ou legislação equivalente de proteção ao consumidor em sua jurisdição."
+    },
+    "userReliance": {
+      "heading": "Sem responsabilidade por confiança do usuário",
+      "p1": "A LumenShore não é responsável por decisões tomadas ou ações realizadas por usuários com base no conteúdo fornecido através do Serviço.",
+      "p2": "Os usuários são os únicos responsáveis por verificar a precisão de qualquer tradução ou informação linguística antes de confiar nela para qualquer finalidade."
+    },
+    "thirdPartyServices": {
+      "heading": "Serviços de terceiros",
+      "p1": "A LumenShore não é responsável por atos ou omissões de serviços de terceiros, incluindo Apple, Vercel, Sentry ou qualquer processador de pagamentos.",
+      "p2": "A Apple é o comerciante registrado para todas as compras dentro do aplicativo iOS. Disputas de cobrança relacionadas a compras na App Store devem ser direcionadas à Apple."
+    },
+    "serviceAvailability": {
+      "heading": "Disponibilidade do serviço",
+      "p1": "Não garantimos nenhum nível específico de tempo de atividade ou disponibilidade do Serviço.",
+      "p2": "Podemos realizar manutenção programada ou não programada com ou sem aviso prévio. O Serviço pode sofrer interrupções devido a provedores terceiros, problemas de rede ou eventos além do nosso controle.",
+      "p3": "Nenhum acordo de nível de serviço (SLA) se aplica a menos que acordado separadamente por escrito."
+    },
+    "entireAgreement": {
+      "heading": "Acordo integral",
+      "p1": "Estes Termos, juntamente com a nossa Política de Privacidade, Contrato de Licença de Utilizador Final e Política de Cookies, constituem o acordo integral entre você e a LumenShore Limited relativamente ao Serviço.",
+      "p2": "Este acordo substitui todos os acordos, representações e entendimentos anteriores entre você e a LumenShore, quer escritos quer orais.",
+      "p3": "Nenhuma modificação oral destes Termos será eficaz."
+    },
+    "severability": {
+      "heading": "Divisibilidade",
+      "p1": "Se qualquer disposição destes Termos for considerada inválida, ilegal ou inexequível por um tribunal competente, essa disposição será separada destes Termos sem afetar a validade e exequibilidade das disposições restantes.",
+      "p2": "O tribunal ou árbitro pode reformar a disposição inexequível na medida mínima necessária para torná-la válida e exequível."
+    },
+    "assignment": {
+      "heading": "Cessão",
+      "p1": "A LumenShore pode ceder ou transferir estes Termos, e quaisquer direitos e licenças aqui concedidos, a qualquer sucessor, afiliada ou adquirente da totalidade ou de uma parte substancial dos seus negócios ou ativos sem o seu consentimento.",
+      "p2": "Você não pode ceder nem transferir os seus direitos ou obrigações ao abrigo destes Termos sem o nosso consentimento prévio por escrito."
+    },
+    "waiver": {
+      "heading": "Renúncia",
+      "p1": "A falta de exercício por parte da LumenShore de qualquer direito ou disposição destes Termos não constitui renúncia a esse direito ou disposição.",
+      "p2": "Qualquer renúncia a uma violação destes Termos não constitui renúncia a qualquer violação subsequente.",
+      "p3": "Nenhuma renúncia será eficaz a menos que feita por escrito e assinada por um representante autorizado da LumenShore."
+    },
+    "noPartnership": {
+      "heading": "Relação entre as partes",
+      "p1": "Nada nestes Termos deve ser interpretado como a criação de uma relação de agência, sociedade, empreendimento conjunto ou emprego entre você e a LumenShore.",
+      "p2": "Nenhuma das partes tem autoridade para vincular a outra ou incorrer em obrigações em nome da outra."
+    },
+    "electronicCommunications": {
+      "heading": "Comunicações eletrónicas",
+      "p1": "Ao utilizar o Serviço, você consente em receber comunicações nossas eletronicamente, incluindo por e-mail, notificações no aplicativo e avisos publicados no nosso site.",
+      "p2": "Você concorda que todos os acordos, avisos, divulgações e outras comunicações que lhe fornecemos eletronicamente satisfazem qualquer requisito legal de que tais comunicações sejam feitas por escrito."
+    },
+    "headingsClause": {
+      "heading": "Cabeçalhos",
+      "p1": "Os cabeçalhos das secções nestes Termos destinam-se apenas a facilitar a referência e não afetam a interpretação ou construção destes Termos."
+    },
+    "survival": {
+      "heading": "Sobrevivência",
+      "p1": "As disposições destes Termos que, pela sua natureza, devam sobreviver à rescisão sobreviverão, incluindo, mas não se limitando a: limitação de responsabilidade, indemnização, propriedade intelectual, resolução de litigos, exclusões de garantia e quaisquer direitos e obrigações acumulados."
+    },
+    "noThirdPartyBeneficiaries": {
+      "heading": "Sem terceiros beneficiários",
+      "p1": "Estes Termos não conferem quaisquer direitos a qualquer pessoa ou entidade que não seja parte destes Termos.",
+      "p2": "Nenhum terceiro pode fazer cumprir qualquer disposição destes Termos ao abrigo da Lei dos Contratos (Direitos de Terceiros) de 1999.",
+      "appleException": "Sem prejuízo do acima exposto, a Apple Inc. e as suas subsidiárias são terceiros beneficiários pretendidos destes Termos apenas na medida exigida pelo Contrato de Licença de Utilizador Final de Aplicações Licenciadas da Apple. A Apple tem o direito de fazer cumprir estes Termos contra você como terceiro beneficiário na medida mínima exigida pelas diretrizes da Apple."
+    },
+    "userRepresentations": {
+      "heading": "Declaracoes e Garantias do Utilizador",
+      "p1": "Ao utilizar o Servico, declara e garante que:",
+      "li1": "Tem a idade legal na sua jurisdicao para celebrar um contrato vinculativo, ou obteve o consentimento verificavel de um progenitor ou tutor;",
+      "li2": "Tem a capacidade legal e a autoridade para concordar com estes Termos;",
+      "li3": "Todas as informacoes que nos fornece sao precisas, atuais e completas;",
+      "li4": "Mantera a precisao das suas informacoes e as atualizara prontamente quando necessario;",
+      "li5": "Nao utilizara o Servico para qualquer finalidade ilegal;",
+      "li6": "Nao foi previamente suspenso ou removido do Servico."
+    },
+    "userObligations": {
+      "heading": "Obrigacoes do Utilizador",
+      "p1": "Ao utilizar o Servico, concorda em:",
+      "li1": "Cumprir todas as leis e regulamentos locais, estaduais, nacionais e internacionais aplicaveis;",
+      "li2": "Nao tentar fazer engenharia reversa, descompilar ou desmontar a aplicacao ou qualquer parte da mesma;",
+      "li3": "Nao copiar, extrair ou redistribuir conteudo do Servico sem autorizacao previa por escrito da LumenShore;",
+      "li4": "Nao interferir com ou perturbar o Servico, os seus servidores ou redes ligadas;",
+      "li5": "Nao utilizar meios automatizados (incluindo bots, scrapers ou crawlers) para aceder ao Servico;",
+      "li6": "Nao criar multiplas contas para fins fraudulentos ou abusivos;",
+      "li7": "Nao se fazer passar por qualquer pessoa ou entidade, nem declarar falsamente ou deturpar a sua afiliacao com qualquer pessoa ou entidade;",
+      "li8": "Manter a confidencialidade das credenciais da sua conta e aceitar a responsabilidade por toda a atividade realizada na sua conta."
+    },
+    "userIndemnification": {
+      "heading": "Indemnizacao pelo Utilizador",
+      "p1": "Concorda em indemnizar, defender e isentar de responsabilidade a LumenShore Limited, os seus diretores, funcionarios, empregados e agentes de e contra todas as reclamacoes, danos, perdas, custos e despesas (incluindo honorarios legais razoaveis) decorrentes de ou relacionados com:",
+      "li1": "A sua violacao destes Termos;",
+      "li2": "A sua violacao de qualquer lei aplicavel ou dos direitos de terceiros;",
+      "li3": "A sua utilizacao do Servico;",
+      "li4": "Qualquer conteudo que submeta ao Servico ou atraves do mesmo.",
+      "p2": "A LumenShore reserva-se o direito de assumir a defesa e o controlo exclusivos de qualquer questao sujeita a indemnizacao por si, caso em que concorda em cooperar com a LumenShore na defesa dos meios disponiveis."
+    },
+    "breachConsequences": {
+      "heading": "Consequencias da Violacao",
+      "p1": "Se violar qualquer disposicao destes Termos, a LumenShore podera, a seu exclusivo criterio:",
+      "li1": "Suspender ou cancelar o seu acesso ao Servico imediatamente e sem aviso previo;",
+      "li2": "Reter qualquer reembolso pelo periodo de subscricao restante;",
+      "li3": "Procurar uma medida cautelar ou equitativa por violacao de propriedade intelectual ou outras violacoes destes Termos.",
+      "p2": "Os recursos previstos nesta seccao sao adicionais e nao substitutivos de quaisquer outros recursos disponiveis para a LumenShore por lei ou em equidade."
+    },
+    "serviceModification": {
+      "heading": "Direito de Modificar o Servico",
+      "p1": "A LumenShore reserva-se o direito de modificar, atualizar ou descontinuar qualquer funcionalidade ou conteudo do Servico a qualquer momento sem aviso previo.",
+      "p2": "A adicao ou remocao de pares de idiomas, niveis, funcionalidades ou conteudo nao constitui uma violacao destes Termos.",
+      "p3": "Podemos alterar os precos para futuros periodos de subscricao com aviso razoavel. As alteracoes de preco nao afetarao o seu periodo de subscricao atual."
+    },
+    "serviceSuspension": {
+      "heading": "Direito de Suspender o Servico",
+      "p1": "Podemos suspender o Servico temporariamente para manutencao, incidentes de seguranca ou necessidades operacionais.",
+      "p2": "A manutencao programada sera comunicada quando razoavelmente praticavel.",
+      "p3": "Nao somos responsaveis por quaisquer perdas ou danos decorrentes de uma suspensao temporaria do Servico."
+    },
+    "serviceTermination": {
+      "heading": "Direito de Rescindir",
+      "p1": "A LumenShore pode rescindir ou restringir o seu acesso ao Servico nas seguintes circunstancias:",
+      "li1": "Violacao destes Termos;",
+      "li2": "Atividade fraudulenta ou abusiva;",
+      "li3": "Inatividade prolongada (apos aviso razoavel);",
+      "li4": "A exclusivo criterio da LumenShore com aviso razoavel.",
+      "p2": "Pode rescindir a sua utilizacao do Servico a qualquer momento, eliminando a sua conta e cancelando quaisquer subscricoes ativas.",
+      "p3": "Apos a rescisao, a sua licenca para utilizar o Servico e imediatamente revogada e os seus dados serao eliminados de acordo com a nossa politica de retencao."
+    },
+    "termsModification": {
+      "heading": "Direito de Modificar os Termos",
+      "p1": "Podemos modificar estes Termos a qualquer momento, publicando Termos atualizados no nosso website.",
+      "p2": "As alteracoes materiais serao comunicadas por email (a utilizadores subscritos) ou por notificacao na aplicacao.",
+      "p3": "A sua utilizacao continuada do Servico apos a notificacao constitui aceitacao dos Termos modificados.",
+      "p4": "Se nao concordar com os Termos modificados, deve deixar de utilizar o Servico e cancelar a sua subscricao.",
+      "p5": "Atualizacoes nao materiais (como correcoes tipograficas ou clarificacoes) podem ser efetuadas sem aviso previo."
+    },
+    "terminationEffect": {
+      "heading": "Efeito da Rescisao",
+      "p1": "Os direitos e obrigacoes acumulados de ambas as partes sobreviverao a rescisao.",
+      "p2": "Nao sera emitido qualquer reembolso por periodos de subscricao nao utilizados em caso de rescisao iniciada pelo utilizador, exceto conforme exigido pela legislacao de protecao do consumidor aplicavel ou pela politica de reembolso da Apple.",
+      "p3": "Se a LumenShore rescindir o seu acesso sem justa causa, recebera um reembolso proporcional pela parte nao utilizada do seu periodo de subscricao atual.",
+      "p4": "Os seus dados serao eliminados de acordo com o calendario de retencao descrito na nossa Politica de Privacidade."
+    },
+    "claimsLimitation": {
+      "heading": "Prazo de Prescricao para Reclamacoes",
+      "p1": "Qualquer reclamacao decorrente de ou relacionada com estes Termos ou o Servico deve ser iniciada dentro de UM (1) ANO apos a data em que a reclamacao surgiu.",
+      "p2": "A nao apresentacao de uma reclamacao dentro deste prazo constitui uma renuncia permanente a essa reclamacao.",
+      "p3": "Na medida em que este prazo de prescricao nao seja aplicavel na sua jurisdicao, aplicar-se-a o prazo de prescricao mais curto permitido pela legislacao aplicavel.",
+      "p4": "Este prazo de prescricao nao se aplica a reclamacoes por danos pessoais nem a reclamacoes decorrentes de fraude ou conduta intencional, que serao regidas pelos prazos de prescricao legais aplicaveis.",
+      "p5": "O prazo de prescricao comeca quando o reclamante tomou conhecimento ou razoavelmente deveria ter tomado conhecimento da reclamacao, mas em caso algum mais de DOIS (2) ANOS apos o ato ou omissao que deu origem a reclamacao."
+    },
+    "refundPolicy": {
+      "heading": "Politica de Reembolso e Cancelamento",
+      "appleIapHeading": "Compras na App Store iOS",
+      "appleIap1": "Todas as compras de assinatura feitas atraves do aplicativo iOS sao processadas e geridas exclusivamente pela Apple atraves da App Store.",
+      "appleIap2": "Solicitacoes de reembolso para compras na App Store devem ser direcionadas a Apple em reportaproblem.apple.com. A Lumenshore nao processa pagamentos e nao pode emitir reembolsos para compras feitas atraves da App Store.",
+      "appleIap3": "A politica de reembolso da Apple rege todos os reembolsos de assinaturas iOS. A Lumenshore nao tem capacidade de anular ou modificar as decisoes de reembolso da Apple.",
+      "cancellationHeading": "Cancelamento",
+      "cancellation1": "Voce pode cancelar sua assinatura a qualquer momento atraves de Ajustes > ID Apple > Assinaturas do seu dispositivo.",
+      "cancellation2": "O cancelamento entra em vigor no final do seu periodo de faturamento atual. Voce mantera o acesso a todos os recursos pagos ate o termino desse periodo.",
+      "cancellation3": "Apos o termino do periodo de faturamento, sua conta será automaticamente revertida para o nivel Gratuito. O cancelamento nao lhe da direito a um reembolso proporcional pelo tempo restante do periodo de faturamento atual.",
+      "trialHeading": "Avaliacao Gratuita",
+      "trial1": "Oferecemos uma avaliacao gratuita de 14 dias do nivel Royal. Nenhum pagamento e cobrado durante o periodo de avaliacao.",
+      "trial2": "A menos que voce cancele antes do termino da avaliacao, esta será convertida em uma assinatura paga pela tarifa publicada vigente. Voce receberá um lembrete antes do termino do seu periodo de avaliacao.",
+      "coolingOffHeading": "Periodo de Reflexao UE/RU",
+      "coolingOff1": "Nos termos do Regulamento sobre Contratos de Consumo (Informacao, Cancelamento e Encargos Adicionais) de 2013 (RU) e da Diretiva Europeia dos Direitos do Consumidor, voce tem um direito de retratacao de 14 dias para contratos a distancia.",
+      "coolingOff2": "Para conteudo digital, este direito de retratacao pode ser renunciado se voce: (a) consentir com a execucao imediata do servico, E (b) reconhecer que perderá seu direito de retratacao uma vez iniciada a entrega de conteudo digital.",
+      "coolingOff3": "Se o consentimento explicito nao for obtido, seu direito de retratacao de 14 dias permanece em pleno vigor independentemente de qualquer uso do Servico durante esse periodo."
+    },
+    "assumptionOfRisk": {
+      "heading": "Assuncao de Risco e Liberacao de Reclamacoes",
+      "riskHeading": "Assuncao de Risco",
+      "risk1": "VOCE RECONHECE E CONCORDA EXPRESSAMENTE QUE O USO DO SERVICO E POR SUA CONTA E RISCO EXCLUSIVO.",
+      "risk2": "Voce assume todos os riscos associados ao uso do Servico, incluindo, mas nao se limitando a, riscos relacionados a: precisao das traducoes e conteudo linguistico; adequacao do conteudo aos seus objetivos de aprendizagem; perda de dados por falha do dispositivo ou problemas de sincronizacao na nuvem; interrupcoes ou encerramento do servico; alteracoes em funcionalidades ou conteudo; e confianca em qualquer conteudo para decisoes profissionais ou pessoais.",
+      "releaseHeading": "Liberacao de Reclamacoes",
+      "release1": "NA MAXIMA EXTENSAO PERMITIDA PELA LEI APLICAVEL, VOCE LIBERA E EXONERA PERMANENTEMENTE A LUMENSHORE LIMITED, SEUS DIRETORES, FUNCIONARIOS, EMPREGADOS, AGENTES, SUCESSORES E CESSIONARIOS DE TODAS E QUAISQUER RECLAMACOES, DEMANDAS E DANOS DE QUALQUER TIPO E NATUREZA, CONHECIDOS E DESCONHECIDOS, DECORRENTES DE OU DE QUALQUER FORMA RELACIONADOS AO SEU USO DO SERVICO.",
+      "release2": "Se voce e residente da California, renuncia a Secao 1542 do Codigo Civil da California, que dispoe: \"Uma liberacao geral nao se estende a reclamacoes que o credor ou a parte que concede a liberacao nao conhece ou suspeita que existam em seu favor no momento da execucao da liberacao e que, se conhecidas, teriam materialmente afetado seu acordo com o devedor ou a parte liberada.\"",
+      "carveOutHeading": "Protecoes Legais",
+      "carveOut1": "Nada nesta secao exclui ou limita qualquer responsabilidade que nao possa ser excluida ou limitada nos termos da lei aplicavel, incluindo seus direitos estatutarios ao abrigo da Lei dos Direitos do Consumidor de 2015 (RU) ou da Diretiva Europeia dos Direitos do Consumidor.",
+      "carveOut2": "Esta liberacao nao se aplica a reclamacoes por morte ou lesao pessoal causada por negligencia da Lumenshore, ou por fraude ou declaracao fraudulenta."
+    },
+    "thirdPartyDisclaimer": {
+      "heading": "Conteudo, Links e Servicos de Terceiros",
+      "linksHeading": "Links de Terceiros",
+      "links1": "O Servico pode conter links para sites, aplicativos ou servicos de terceiros que nao sao de propriedade nem controlados pela Lumenshore.",
+      "links2": "A Lumenshore nao tem controle sobre, e nao assume responsabilidade por, o conteudo, as politicas de privacidade ou as praticas de quaisquer sites ou servicos de terceiros. Voce reconhece e concorda que a Lumenshore nao sera responsavel por quaisquer danos ou perdas causados por ou em conexao com o uso ou a confianca em tal conteudo de terceiros.",
+      "links3": "A inclusao de um link nao implica endosso, afiliacao ou patrocinio pela Lumenshore.",
+      "appleHeading": "Plataforma Apple",
+      "apple1": "A Apple Inc. nao e parte destes Termos e nao tem obrigacao de fornecer manutencao, suporte ou garantia para o Servico.",
+      "apple2": "Em caso de nao conformidade do Servico com as garantias aplicaveis, voce pode notificar a Apple e a Apple reembolsara o preco de compra (se houver). A Apple nao tem nenhuma outra obrigacao de garantia em relacao ao Servico.",
+      "apple3": "A Apple nao e responsavel por tratar quaisquer reclamacoes relacionadas ao Servico ou a sua posse ou uso do Servico.",
+      "apple4": "A Apple e um terceiro beneficiario destes Termos e, apos sua aceitacao, pode aplica-los contra voce.",
+      "infraHeading": "Provedores de Infraestrutura",
+      "infra1": "A Lumenshore nao e responsavel por falhas, interrupcoes ou violacoes de dados causadas por provedores de infraestrutura de terceiros, incluindo, mas nao se limitando a, Apple (iCloud, App Store), Vercel (hospedagem), Sentry (monitoramento de erros) ou qualquer processador de pagamentos.",
+      "infra2": "A disponibilidade do Servico depende da infraestrutura de terceiros. A Lumenshore nao garante a disponibilidade dos servicos de terceiros.",
+      "ugcHeading": "Conteudo Gerado pelo Usuario",
+      "ugc1": "Se o Servico permitir conteudo gerado pelo usuario no futuro, a Lumenshore nao e responsavel por qualquer conteudo criado, publicado ou compartilhado por usuarios. A Lumenshore nao endossa qualquer conteudo de usuario e rejeita toda responsabilidade decorrente de conteudo de usuario.",
+      "authHeading": "Autenticacao de Terceiros",
+      "auth1": "Se voce se autenticar usando servicos de terceiros (por exemplo, Iniciar sessao com a Apple), a Lumenshore nao e responsavel pela seguranca ou disponibilidade desses servicos de autenticacao. A perda de acesso a sua conta de terceiros pode afetar sua capacidade de acessar o Servico."
+    },
+    "feedbackIP": {
+      "heading": "Feedback e Submissoes",
+      "assignHeading": "Cessao de Propriedade Intelectual",
+      "assign1": "Qualquer feedback, sugestao, ideia, solicitacao de funcionalidade, relatorio de erro ou outra comunicacao que voce enviar a Lumenshore ('Feedback') sera considerada nao confidencial e nao proprietaria.",
+      "assign2": "Ao enviar Feedback, voce cede irrevogavelmente a Lumenshore todos os direitos, titulos e interesses no Feedback, incluindo todos os direitos de propriedade intelectual.",
+      "assign3": "Voce renuncia a todos os direitos morais sobre o Feedback na maxima extensao permitida por lei.",
+      "obligationHeading": "Sem Obrigacao",
+      "obligation1": "A Lumenshore nao tem obrigacao de: (a) manter qualquer Feedback em confidencialidade; (b) pagar compensacao por qualquer Feedback; (c) responder a qualquer Feedback; ou (d) usar ou implementar qualquer Feedback.",
+      "obligation2": "A Lumenshore pode usar, reproduzir, distribuir, modificar ou criar obras derivadas do Feedback para qualquer finalidade sem atribuicao ou compensacao.",
+      "confidentialityHeading": "Sem Confidencialidade",
+      "confidentiality1": "Nao envie informacoes que considere confidenciais ou proprietarias como Feedback.",
+      "confidentiality2": "A Lumenshore nao tem obrigacoes de confidencialidade em relacao a qualquer Feedback.",
+      "representationHeading": "Declaracao e Garantia",
+      "representation1": "Voce declara e garante que tem o direito de enviar o Feedback e que o Feedback nao infringe a propriedade intelectual ou outros direitos de terceiros.",
+      "representation2": "Voce concorda em indenizar a Lumenshore contra quaisquer reclamacoes decorrentes do seu Feedback."
+    },
+    "preSuitNotice": {
+      "heading": "Notificacao Pre-Judicial e Negociacao Obrigatoria",
+      "noticeHeading": "Requisito de Notificacao",
+      "notice1": "Antes de iniciar qualquer procedimento judicial ou arbitragem contra a Lumenshore, voce deve primeiro enviar uma Notificacao de Disputa escrita ('Notificacao') a Lumenshore para legal@lumenshore.com e por correio para a sede registrada em Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA.",
+      "notice2": "A Notificacao deve incluir: seu nome legal completo, o endereco de e-mail associado ao Servico, uma descricao detalhada da reclamacao, a disposicao especifica dos Termos supostamente violada, a reparacao especifica solicitada e sua assinatura ou equivalente eletronico.",
+      "negotiationHeading": "Periodo de Negociacao Obrigatoria",
+      "negotiation1": "Apos receber sua Notificacao, as partes deverao se engajar em negociacoes de boa-fe por um periodo de sessenta (60) dias antes que qualquer das partes possa iniciar procedimentos judiciais ou arbitragem.",
+      "negotiation2": "A Lumenshore confirmara o recebimento da sua Notificacao dentro de catorze (14) dias.",
+      "negotiation3": "Durante o periodo de negociacao, ambas as partes concordam em nao iniciar qualquer procedimento judicial. O periodo de negociacao pode ser prorrogado por acordo mutuo por escrito.",
+      "consequenceHeading": "Consequencia do Descumprimento",
+      "consequence1": "Qualquer procedimento judicial ou arbitragem iniciado sem cumprir este requisito de notificacao e negociacao sera indeferido sem prejuizo, com custas atribuidas a Lumenshore.",
+      "consequence2": "A falta de fornecimento de Notificacao adequada constitui violacao material destes Termos pelo reclamante.",
+      "exceptionHeading": "Excecoes",
+      "exception1": "O requisito de notificacao e negociacao nao se aplica a: (a) reclamacoes por violacao de propriedade intelectual por qualquer das partes; (b) pedidos de medida cautelar ou equitativa para prevenir dano iminente e irreparavel; ou (c) reclamacoes em juizados de pequenas causas, se aplicavel.",
+      "tollingHeading": "Suspensao do Prazo",
+      "tolling1": "O prazo prescricional sera suspenso durante o periodo de negociacao obrigatoria.",
+      "tolling2": "O envio de uma Notificacao conforme preserva sua reclamacao dentro do prazo prescricional."
+    },
+    "soleRemedy": {
+      "heading": "Recurso Unico e Exclusivo",
+      "dissatisfactionHeading": "Insatisfacao com o Servico",
+      "dissatisfaction1": "SEU UNICO E EXCLUSIVO RECURSO POR QUALQUER INSATISFACAO COM O SERVICO E PARAR DE USAR O SERVICO E CANCELAR SUA ASSINATURA.",
+      "dissatisfaction2": "Se voce estiver insatisfeito com qualquer conteudo, recurso ou politica, seu unico recurso e descontinuar o uso.",
+      "dissatisfaction3": "Voce tambem pode: (a) solicitar a exclusao da sua conta e dados conforme nossa Politica de Privacidade, e (b) solicitar uma exportacao de dados conforme o Artigo 20 do RGPD.",
+      "failureHeading": "Falhas do Servico",
+      "failure1": "Em caso de falha, erro ou defeito no Servico, seu unico recurso (na maxima extensao permitida por lei) e que a Lumenshore empreenda esforcos comercialmente razoaveis para corrigir o problema em um prazo razoavel.",
+      "failure2": "Se a Lumenshore nao conseguir corrigir o problema, seu unico recurso para assinantes pagos e um reembolso proporcional da taxa de assinatura pelo periodo afetado, nao excedendo o valor total pago nos doze (12) meses anteriores.",
+      "failure3": "Para usuarios do nivel gratuito, seu unico recurso e a descontinuacao do uso.",
+      "performanceHeading": "Sem Execucao Especifica",
+      "performance1": "Voce concorda que nao tem direito a execucao especifica ou medida cautelar exigindo que a Lumenshore forneca qualquer recurso, conteudo, par de idiomas ou nivel de servico especifico.",
+      "performance2": "As obrigacoes da Lumenshore sob estes Termos estao limitadas a esforcos comercialmente razoaveis.",
+      "cumulativeHeading": "Recursos Cumulativos para a Lumenshore",
+      "cumulative1": "Os direitos e recursos da Lumenshore sob estes Termos sao cumulativos e nao excluem outros direitos ou recursos disponiveis em lei ou equidade.",
+      "cumulative2": "A opcao da Lumenshore de exercer um recurso nao constitui renuncia a qualquer outro recurso.",
+      "consumerHeading": "Preservacao dos Direitos do Consumidor",
+      "consumer1": "Esta clausula nao afeta seus direitos legais sob o Consumer Rights Act 2015 (Reino Unido), incluindo direitos a reparo, substituicao ou reducao de preco para conteudo digital defeituoso.",
+      "consumer2": "Os consumidores da UE mantem todos os direitos sob a Diretiva de Direitos do Consumidor da UE."
     }
   },
   "Blog": {
@@ -2174,6 +2512,233 @@
       "euP1": "Residentes da UE podem entrar em contato com a autoridade nacional de aplicacao em seu estado-membro da UE responsavel pela Lei Europeia de Acessibilidade. Uma lista das autoridades de vigilancia de mercado designadas e mantida por cada estado-membro nos termos do Artigo 19 da EAA.",
       "usHeading": "Estados Unidos",
       "usP1": "Residentes dos EUA com preocupacoes de acessibilidade podem apresentar uma reclamacao sob o Titulo III da Lei dos Americanos com Deficiencia. Encorajamos voce a entrar em contato conosco primeiro em <emailLink>accessibility@lumenshore.com</emailLink> para que possamos resolver o problema diretamente. Nosso <vpatLink>VPAT</vpatLink> documenta nosso nivel atual de conformidade."
+    }
+  },
+  "Security": {
+    "meta": {
+      "title": "Seguranca — LumenLingo",
+      "description": "Politica de divulgacao responsavel do LumenLingo. Como reportar vulnerabilidades de seguranca, escopo, prazo de resposta e nosso compromisso com a seguranca dos pesquisadores.",
+      "ogTitle": "Seguranca — LumenLingo",
+      "ogDescription": "Reporte vulnerabilidades de seguranca de forma responsavel. Respondemos em 48 horas e nunca tomamos acoes legais contra pesquisadores de boa-fe."
+    },
+    "breadcrumb": "Seguranca",
+    "hero": {
+      "heading": "Seguranca",
+      "subtitle": "Levamos a seguranca do LumenLingo e dos seus dados muito a serio. Se descobrir uma vulnerabilidade, queremos saber."
+    },
+    "reporting": {
+      "heading": "Reportar uma vulnerabilidade",
+      "p1": "Se acredita ter encontrado uma vulnerabilidade de seguranca no LumenLingo, reporte-a de forma responsavel enviando um e-mail para <emailLink>security@lumenshore.com</emailLink>.",
+      "p2": "Inclua o maximo de detalhes possivel: uma descricao da vulnerabilidade, passos para reproduzi-la, o impacto potencial e qualquer codigo de prova de conceito ou capturas de tela.",
+      "p3": "Tambem publicamos um arquivo <securityTxtLink>security.txt</securityTxtLink> legivel por maquinas conforme a RFC 9116."
+    },
+    "scope": {
+      "heading": "Escopo",
+      "inScopeHeading": "Dentro do escopo",
+      "inScope1": "O site do LumenLingo (lumenlingo.com) e todos os subdominios",
+      "inScope2": "Endpoints de API em lumenlingo.com/api/*",
+      "inScope3": "O aplicativo iOS do LumenLingo",
+      "inScope4": "Falhas de autenticacao e autorizacao",
+      "inScope5": "Vulnerabilidades de cross-site scripting (XSS), injecao e CSRF",
+      "inScope6": "Server-side request forgery (SSRF)",
+      "inScope7": "Exposicao de dados sensiveis",
+      "outOfScopeHeading": "Fora do escopo",
+      "outOfScope1": "Engenharia social (phishing, vishing) contra funcionarios da LumenShore",
+      "outOfScope2": "Ataques de negacao de servico (DoS/DDoS)",
+      "outOfScope3": "Ataques fisicos contra escritorios ou infraestrutura da LumenShore",
+      "outOfScope4": "Vulnerabilidades em servicos de terceiros (Apple, Vercel, Sentry) — reporte-as ao fornecedor correspondente",
+      "outOfScope5": "Varredura automatizada sem aprovacao previa",
+      "outOfScope6": "Spam, manipulacao SEO ou injecao de conteudo que nao afete a seguranca"
+    },
+    "response": {
+      "heading": "Nossa resposta",
+      "p1": "Nos comprometemos com o seguinte prazo de resposta:",
+      "item1": "<b>Confirmacao</b> — dentro de 48 horas do seu relatorio",
+      "item2": "<b>Avaliacao inicial</b> — dentro de 5 dias uteis",
+      "item3": "<b>Meta de resolucao</b> — dentro de 30 dias para problemas criticos, 90 dias para nao criticos",
+      "item4": "<b>Notificacao</b> — informaremos quando o problema for resolvido",
+      "p2": "Manteremos voce informado do nosso progresso e podemos solicitar informacoes adicionais para ajudar a reproduzir ou resolver o problema."
+    },
+    "safeHarbour": {
+      "heading": "Porto seguro",
+      "p1": "Nao tomaremos acoes legais contra pesquisadores de seguranca que:",
+      "item1": "Ajam de boa-fe e sigam esta politica de divulgacao",
+      "item2": "Evitem acessar ou modificar dados de outros usuarios",
+      "item3": "Nao degradem o servico (sem DoS, sem testes destrutivos)",
+      "item4": "Reportem vulnerabilidades prontamente e nao as divulguem publicamente ate que tenhamos tido uma oportunidade razoavel de aborda-las",
+      "p2": "Se seguir estas diretrizes, consideramos sua pesquisa como autorizada e nao tomaremos acoes civis ou criminais relacionadas as suas descobertas."
+    },
+    "contact": {
+      "heading": "Contato",
+      "p1": "Para relatorios de seguranca: <emailLink>security@lumenshore.com</emailLink>",
+      "p2": "Para suporte geral: <supportLink>support@lumenshore.com</supportLink>",
+      "p3": "Idioma preferido: ingles"
+    }
+  },
+  "terms": {
+    "dataLossShield": {
+      "heading": "Perda de Dados, Interrupcao do Servico e Forca Maior",
+      "dataLossHeading": "Isencao de Responsabilidade por Perda de Dados",
+      "dataLoss1": "A LUMENSHORE NAO E RESPONSAVEL POR QUALQUER PERDA, CORRUPCAO OU EXCLUSAO DE DADOS DO USUARIO, INCLUINDO, MAS NAO SE LIMITANDO A: progresso de aprendizagem, pontuacoes de jogos, XP, sequencias, conteudo dominado, favoritos, preferencias de idioma, selecoes de nivel, ou quaisquer outros dados gerados ou armazenados pelo usuario.",
+      "dataLoss2": "A perda de dados pode ocorrer devido a: atualizacoes do aplicativo, atualizacoes do sistema operacional, mudancas de dispositivo, falhas de sincronizacao do iCloud, erros de migracao do SwiftData, limpeza de cache, exclusao de conta ou outras causas tecnicas.",
+      "dataLoss3": "Os usuarios sao os unicos responsaveis por manter copias de seguranca de quaisquer dados que considerem importantes.",
+      "dataLoss4": "A Lumenshore fornece funcionalidade de exportacao de dados (Artigo 20 do RGPD) como cortesia; no entanto, a falha da funcao de exportacao nao cria responsabilidade.",
+      "interruptionHeading": "Interrupcao do Servico",
+      "interruption1": "A Lumenshore nao garante a operacao continua, ininterrupta ou livre de erros do Servico.",
+      "interruption2": "O Servico pode ficar indisponivel devido a: manutencao programada, manutencao de emergencia, interrupcoes de terceiros, ataques DDoS, bugs de software ou outros problemas operacionais.",
+      "interruption3": "A Lumenshore nao e responsavel por qualquer perda decorrente da indisponibilidade temporaria ou permanente do Servico.",
+      "interruption4": "Nenhum Acordo de Nivel de Servico (SLA) e fornecido, salvo acordo separado por escrito.",
+      "forceMajeureHeading": "Forca Maior",
+      "forceMajeure1": "A Lumenshore nao sera responsavel por qualquer falha ou atraso no desempenho decorrente de causas fora de seu controle razoavel ('Eventos de Forca Maior').",
+      "forceMajeure2": "Eventos de Forca Maior incluem, mas nao se limitam a: desastres naturais, incendios, inundacoes, terremotos, epidemias, pandemias, guerras, terrorismo, agitacao civil, sancoes, ordens governamentais, greves, disputas trabalhistas, falhas de servicos de Internet, interrupcoes de provedores de servicos em nuvem, ataques DDoS ou ciberataques, falhas de energia, falhas de telecomunicacoes, mudancas de politica ou interrupcoes da Apple App Store, alteracoes em leis ou regulamentos e falhas de provedores de servicos terceiros.",
+      "forceMajeure3": "Durante um Evento de Forca Maior, as obrigacoes da Lumenshore ficam suspensas pela duracao do evento.",
+      "forceMajeure4": "Se um Evento de Forca Maior continuar por mais de noventa (90) dias consecutivos, qualquer das partes pode rescindir o acordo sem responsabilidade perante a outra.",
+      "updateHeading": "Atualizacoes e Migracao do Aplicativo",
+      "update1": "Atualizacoes do aplicativo podem causar alteracoes em recursos, interface, conteudo ou estruturas de dados.",
+      "update2": "A Lumenshore nao e responsavel por quaisquer efeitos adversos de atualizacoes do aplicativo, incluindo: perda de configuracoes, reinicio de progresso, remocao de recursos ou incompatibilidade com seu dispositivo ou versao do sistema operacional.",
+      "update3": "O uso continuado apos uma atualizacao constitui aceitacao do Servico atualizado.",
+      "cloudHeading": "Sincronizacao em Nuvem",
+      "cloud1": "A sincronizacao em nuvem e fornecida como conveniencia e esta sujeita aos termos e disponibilidade do iCloud da Apple.",
+      "cloud2": "A Lumenshore nao e responsavel por falhas de sincronizacao do iCloud, conflitos de dados, perda de dados ou atrasos.",
+      "cloud3": "Se voce desativar a sincronizacao do iCloud, os dados serao armazenados localmente apenas no seu dispositivo; a perda de dados locais e sua responsabilidade.",
+      "fiduciaryHeading": "Sem Dever Fiduciario",
+      "fiduciary1": "Nada nestes Termos ou no seu uso do Servico cria qualquer dever fiduciario, relacao de confianca ou relacao especial entre a Lumenshore e voce.",
+      "fiduciary2": "A Lumenshore atua exclusivamente como licenciadora de conteudo digital e nao deve nenhum dever de cuidado alem do expressamente declarado nestes Termos e exigido pela legislacao aplicavel."
+    },
+    "serviceDiscontinuation": {
+      "heading": "Descontinuacao do Servico, Transferencia Empresarial e Encerramento",
+      "discontinueHeading": "Direito de Descontinuar",
+      "discontinue1": "A Lumenshore reserva-se o direito de descontinuar, encerrar permanentemente ou cessar a operacao do Servico (no todo ou em parte) a qualquer momento, por qualquer motivo ou sem motivo.",
+      "discontinue2": "Se a Lumenshore optar por descontinuar o Servico, forneceremos pelo menos 30 dias de aviso previo por e-mail (se disponivel) e/ou notificacao no aplicativo.",
+      "discontinue3": "Durante o periodo de aviso, assinantes pagos podem exportar seus dados usando a funcionalidade de exportacao integrada.",
+      "discontinue4": "Apos a data de descontinuacao, todas as contas de usuario e dados associados serao excluidos de acordo com nossa politica de retencao de dados.",
+      "liabilityCapHeading": "Limite de Responsabilidade por Descontinuacao",
+      "liabilityCap1": "A unica responsabilidade da Lumenshore pela descontinuacao do Servico e um reembolso proporcional da parte nao utilizada de qualquer taxa de assinatura pre-paga.",
+      "liabilityCap2": "A Lumenshore nao e responsavel por quaisquer danos indiretos, incidentais, consequenciais ou especiais decorrentes da descontinuacao, incluindo, mas nao se limitando a: perda de progresso de aprendizagem, perda de dados, perda de sequencias, perda de registros de conquistas ou incapacidade de continuar um programa de aprendizagem.",
+      "liabilityCap3": "Usuarios do nivel gratuito nao tem direito a qualquer compensacao mediante descontinuacao.",
+      "transferHeading": "Transferencia e Cessao Empresarial",
+      "transfer1": "A Lumenshore pode ceder, transferir ou novar estes Termos e todos os direitos e obrigacoes aqui previstos a qualquer sucessor, adquirente ou cessionario em conexao com fusao, aquisicao, reorganizacao, venda de ativos ou mudanca de controle, sem seu consentimento previo.",
+      "transfer2": "Em tal evento, o cessionario assumira todos os direitos e obrigacoes sob estes Termos.",
+      "transfer3": "Voce sera notificado da cessao dentro de 30 dias, mas seu uso continuado do Servico apos a cessao constitui aceitacao.",
+      "transfer4": "A cessao nao reduzira, por si so, seus direitos sob estes Termos.",
+      "insolvencyHeading": "Encerramento e Insolvencia",
+      "insolvency1": "No caso de a Lumenshore entrar em administracao, liquidacao ou qualquer processo de insolvencia, estes Termos serao rescindidos automaticamente.",
+      "insolvency2": "Quaisquer reclamacoes de usuarios serao classificadas como creditos quirografarios de acordo com a lei de insolvencia aplicavel (Insolvency Act 1986).",
+      "insolvency3": "Diretores e oficiais da Lumenshore nao terao responsabilidade pessoal pelas obrigacoes da empresa sob estes Termos (sujeito a lei aplicavel).",
+      "minimumHeading": "Sem Periodo Minimo de Servico Garantido",
+      "minimum1": "A Lumenshore nao garante nenhum periodo minimo de disponibilidade do servico.",
+      "minimum2": "Sua assinatura lhe da direito a acessar o Servico se e enquanto estiver disponivel; nao cria uma garantia de servico perpetuo ou de longo prazo.",
+      "contentRemovalHeading": "Direitos de Remocao de Conteudo",
+      "contentRemoval1": "A Lumenshore pode remover, modificar ou descontinuar recursos especificos, pares de idiomas, categorias de conteudo ou materiais de aprendizagem a qualquer momento sem aviso previo.",
+      "contentRemoval2": "A remocao de qualquer conteudo especifico nao lhe da direito a reembolso nem constitui violacao destes Termos.",
+      "contentRemoval3": "A Lumenshore nao tem obrigacao de manter, atualizar ou expandir a biblioteca de conteudo.",
+      "survivalHeading": "Sobrevivencia Pos-Descontinuacao",
+      "survival1": "As seguintes clausulas sobrevivem a descontinuacao do Servico: limitacao de responsabilidade, indenizacao, propriedade intelectual, resolucao de disputas, lei aplicavel, direitos sobre dados agregados, cessao de PI de feedback e a clausula de ausencia de garantia."
+    },
+    "regulatoryShield": {
+      "heading": "Mudanca Regulatoria e Escudo de Conformidade",
+      "regulatoryChangeHeading": "Mudanca Regulatoria",
+      "regulatoryChange1": "Voce reconhece que o Servico esta sujeito as leis e regulamentos de multiplas jurisdicoes, que podem mudar a qualquer momento.",
+      "regulatoryChange2": "Se qualquer lei, regulamento, ordem judicial, orientacao regulatoria ou politica de plataforma (incluindo politicas da Apple App Store) exigir que a Lumenshore modifique, restrinja, suspenda ou descontinue qualquer recurso, conteudo ou aspecto do Servico, tal acao nao constituira violacao destes Termos.",
+      "regulatoryChange3": "A Lumenshore nao sera responsavel por qualquer perda ou inconveniencia decorrente de mudancas impostas por regulamentacoes.",
+      "geoRestrictionHeading": "Restricao Geografica",
+      "geoRestriction1": "A Lumenshore pode restringir ou limitar o Servico em qualquer jurisdicao onde sua prestacao exporia a empresa a risco legal ou regulatorio.",
+      "geoRestriction2": "Se o Servico se tornar indisponivel em sua jurisdicao devido a requisitos regulatorios, a unica obrigacao da Lumenshore e fornecer um reembolso proporcional de qualquer taxa de assinatura pre-paga.",
+      "geoRestriction3": "Voce e o unico responsavel por determinar se o uso do Servico esta em conformidade com suas leis locais.",
+      "applePolicyHeading": "Mudancas nas Politicas da Apple",
+      "applePolicy1": "O Servico depende da plataforma iOS da Apple, App Store e infraestrutura StoreKit. Mudancas nas politicas, diretrizes, estruturas de precos, taxas de comissao ou requisitos tecnicos da Apple podem exigir que a Lumenshore modifique o Servico.",
+      "applePolicy2": "A Lumenshore nao e responsavel por quaisquer mudancas no Servico causadas pelas decisoes de plataforma da Apple.",
+      "applePolicy3": "Se a Apple suspender ou remover o aplicativo da App Store, a responsabilidade da Lumenshore limita-se a fornecer acesso alternativo a exportacao de dados.",
+      "taxPricingHeading": "Mudancas Fiscais e de Precos",
+      "taxPricing1": "Os precos de assinatura podem mudar devido a mudancas nas taxas de IVA, mudancas na legislacao tributaria, flutuacoes cambiais ou ajustes nos niveis de precos da Apple.",
+      "taxPricing2": "Mudancas de preco resultantes de requisitos fiscais ou regulatorios nao sao consideradas violacao de contrato e nao requerem consentimento adicional alem do mecanismo padrao de aumento de precos da Apple.",
+      "dataProtectionHeading": "Mudancas na Regulamentacao de Protecao de Dados",
+      "dataProtection1": "Se mudancas nas leis de protecao de dados (incluindo RGPD, RGPD do Reino Unido, CCPA, PIPL ou qualquer outra lei aplicavel) exigirem que a Lumenshore exclua dados, restrinja o processamento ou modifique praticas de tratamento de dados, tais acoes nao constituirao violacao destes Termos ou de qualquer garantia.",
+      "dataProtection2": "A Lumenshore envidara esforcos razoaveis para notificar os usuarios sobre mudancas materiais no tratamento de dados causadas por requisitos regulatorios.",
+      "indemnificationHeading": "Indenizacao do Usuario por Violacoes de Leis Locais",
+      "indemnification1": "Voce concorda em indenizar a Lumenshore contra quaisquer reclamacoes, perdas ou penalidades decorrentes do uso do Servico em violacao de suas leis locais.",
+      "indemnification2": "A Lumenshore nao garante que o Servico seja legal, apropriado ou disponivel para uso em qualquer jurisdicao especifica."
+    },
+    "accountSecurity": {
+      "heading": "Seguranca da Conta e Licenca de Usuario Unico",
+      "singleUserHeading": "Licenca de Usuario Unico",
+      "singleUser1": "Cada assinatura e uma licenca pessoal, intransferivel e de usuario unico.",
+      "singleUser2": "Sua assinatura pode ser usada apenas por voce, o individuo que comprou ou ativou a assinatura.",
+      "singleUser3": "Voce pode usar o Servico em multiplos dispositivos de sua propriedade ou sob seu controle, mas nao pode permitir que qualquer outra pessoa use sua conta.",
+      "credentialHeading": "Proibicao de Compartilhamento de Credenciais",
+      "credential1": "Voce nao pode compartilhar as credenciais de sua conta (incluindo Apple ID, senhas ou tokens de autenticacao) com qualquer outra pessoa.",
+      "credential2": "Voce nao pode permitir o uso simultaneo de sua conta em dispositivos usados por diferentes individuos.",
+      "credential3": "O compartilhamento de conta detectado pela Lumenshore pode resultar em suspensao ou encerramento imediato da conta sem reembolso.",
+      "securityHeading": "Responsabilidade do Usuario pela Seguranca da Conta",
+      "security1": "Voce e o unico responsavel por manter a confidencialidade e seguranca das credenciais de sua conta.",
+      "security2": "Voce e responsavel por toda atividade que ocorra em sua conta, autorizada ou nao por voce.",
+      "security3": "Voce deve notificar imediatamente a Lumenshore (hello@lumenshore.com) sobre qualquer acesso nao autorizado a sua conta ou uso nao autorizado dela.",
+      "security4": "A Lumenshore nao e responsavel por qualquer perda decorrente de acesso nao autorizado a sua conta quando tal acesso resultou de sua falha em manter a seguranca da conta.",
+      "familyHeading": "Compartilhamento Familiar",
+      "family1": "O Apple Family Sharing, quando disponivel e suportado, e o unico metodo autorizado de compartilhar o acesso ao Servico com outros membros do seu domicilio.",
+      "family2": "O Compartilhamento Familiar requer que cada membro da familia use seu proprio Apple ID.",
+      "family3": "Qualquer acordo de compartilhamento fora do Apple Family Sharing constitui compartilhamento de credenciais e e proibido.",
+      "institutionalHeading": "Uso Institucional e Educacional",
+      "institutional1": "As assinaturas do LumenLingo sao apenas para uso individual e pessoal.",
+      "institutional2": "O uso do LumenLingo em instituicoes de ensino, programas de treinamento corporativo ou ambientes comerciais requer um acordo de licenca institucional separado da Lumenshore.",
+      "institutional3": "Instituicoes nao podem comprar assinaturas individuais em massa como substituto de uma licenca institucional.",
+      "enforcementHeading": "Medidas de Aplicacao",
+      "enforcement1": "A Lumenshore pode empregar medidas tecnicas para detectar e prevenir o compartilhamento de contas, incluindo identificacao de dispositivos, deteccao de sessoes simultaneas e analise de padroes de uso.",
+      "enforcement2": "A deteccao de compartilhamento de conta constitui violacao destes Termos e autoriza a Lumenshore a suspender ou encerrar a conta."
+    },
+    "classActionWaiver": {
+      "heading": "Renuncia a Acoes Coletivas e Representativas (Fora dos EUA)",
+      "ukGloHeading": "Renuncia a Litigio em Grupo do Reino Unido",
+      "ukGlo1": "Na maxima extensao permitida por lei, voce renuncia a qualquer direito de participar de uma Ordem de Litigio em Grupo (GLO) nos termos das Regras de Procedimento Civil (CPR 19.III) contra a Lumenshore.",
+      "ukGlo2": "Esta renuncia nao pode ser aplicada quando proibida pela legislacao de protecao ao consumidor do Reino Unido aplicavel, incluindo a Lei dos Direitos do Consumidor de 2015.",
+      "euDirectiveHeading": "Renuncia a Diretiva de Acoes Representativas da UE",
+      "euDirective1": "Na maxima extensao permitida pela lei aplicavel, voce renuncia ao direito de participar de acoes representativas movidas por entidades qualificadas nos termos da Diretiva de Acoes Representativas da UE (2020/1828) ou de suas implementacoes nacionais.",
+      "euDirective2": "Esta renuncia aplica-se a acoes coletivas por medidas cautelares e medidas de reparacao, na medida permitida pelas leis de sua jurisdicao.",
+      "globalHeading": "Renuncia Global a Acoes Coletivas",
+      "global1": "Em jurisdicoes fora dos EUA, Reino Unido e UE, voce concorda que qualquer disputa sera resolvida individualmente e nao como parte de qualquer procedimento de classe, coletivo ou em grupo.",
+      "global2": "Isto inclui, entre outros, acoes coletivas australianas (Regras do Tribunal Federal Parte 9.33), procedimentos coletivos canadenses, acoes coletivas brasileiras (LGPD Art. 42) e qualquer procedimento agregado ou representativo semelhante.",
+      "exceptionsHeading": "Excecoes — Procedimentos Coletivos Obrigatorios",
+      "exceptions1": "Esta renuncia nao se aplica quando: (a) a lei aplicavel proibe expressamente a renuncia aos direitos de procedimentos coletivos; (b) um tribunal competente invalida a renuncia; ou (c) um orgao regulador inicia procedimentos em nome dos consumidores.",
+      "exceptions2": "Quando a renuncia a acoes coletivas for considerada inaplicavel em uma jurisdicao, os Termos restantes continuam em pleno vigor.",
+      "exceptions3": "Acoes de fiscalizacao regulatoria e procedimentos iniciados pelo governo nao sao afetados por esta clausula.",
+      "enforceabilityHeading": "Aviso de Aplicabilidade",
+      "enforceability1": "A aplicabilidade de renuncias a acoes de classe, coletivas e representativas varia por jurisdicao. Em algumas jurisdicoes (incluindo Alemanha sob a lei AGB, Franca em relacao a acoes coletivas da CNIL e Australia), tais renuncias podem ser inaplicaveis.",
+      "enforceability2": "Todas as renuncias nesta secao estao sujeitas ao qualificador 'na maxima extensao permitida pela lei aplicavel' e sao separaveis.",
+      "individualHeading": "Resolucao Individual de Disputas",
+      "individual1": "Qualquer reclamacao que voce possa ter contra a Lumenshore deve ser apresentada dentro do periodo de prescricao aplicavel e deve seguir os procedimentos de notificacao previa e resolucao de disputas estabelecidos em outras partes destes Termos.",
+      "individual2": "A resolucao individual de disputas por meio de negociacao, mediacao e, quando aplicavel, arbitragem ou procedimentos judiciais, e o caminho pretendido para resolver quaisquer reclamacoes."
+    },
+    "dsaCompliance": {
+      "heading": "Conformidade com a Lei de Servicos Digitais da UE (DSA)",
+      "contactHeading": "Ponto de Contato",
+      "contact1": "De acordo com o Regulamento (UE) 2022/2065 (Lei de Servicos Digitais), o ponto de contato designado para as autoridades da UE e usuarios para consultas legais e regulatorias e:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "Este ponto de contato pode ser usado pelos destinatarios do Servico e pelas autoridades competentes para comunicacoes relativas a aplicacao do DSA. As comunicacoes podem ser feitas em ingles.",
+      "intermediaryHeading": "Classificacao do Servico",
+      "intermediary1": "O LumenLingo e um aplicativo de aprendizagem de idiomas que fornece conteudo educacional proprietario (cartoes de estudo, explicacoes gramaticais, frases e audio) diretamente aos usuarios. A Lumenshore e a editora de todo o conteudo do Servico.",
+      "intermediary2": "O LumenLingo atualmente nao hospeda, armazena ou transmite conteudo gerado pelo usuario. Nao ha comentarios, foruns, perfis de usuario ou recursos sociais. Sendo assim, o LumenLingo nao opera como um servico de intermediacao no sentido do Art. 3 do DSA.",
+      "intermediary3": "Se funcionalidades de conteudo gerado pelo usuario forem introduzidas no futuro, a Lumenshore implementara as obrigacoes completas de notificacao e acao exigidas pelo DSA.",
+      "transparencyHeading": "Informacoes de Transparencia (DSA Art. 14)",
+      "transparency1": "Moderacao de conteudo: O LumenLingo nao hospeda conteudo gerado pelo usuario. Todo o conteudo e criado, curado e publicado pela Lumenshore. Nenhuma moderacao de conteudo de envios de usuarios e necessaria ou realizada.",
+      "transparency2": "Tomada de decisao algoritmica: O LumenLingo pode usar algoritmos para personalizar a experiencia de aprendizagem, incluindo programacao de repeticao espacada e adaptacao de dificuldade de conteudo. Esses sistemas operam localmente no dispositivo do usuario e nao criam perfis de usuarios para fins publicitarios.",
+      "transparency3": "Tratamento de reclamacoes: Se voce tiver uma reclamacao sobre o Servico, pode nos contatar em hello@lumenshore.com. Acusaremos o recebimento dentro de 5 dias uteis e procuraremos fornecer uma resposta substantiva dentro de 30 dias corridos.",
+      "complianceHeading": "Declaracao de Conformidade DSA",
+      "compliance1": "A Lumenshore Limited esta comprometida com a conformidade com a Lei de Servicos Digitais (Regulamento UE 2022/2065) conforme aplicavel ao Servico.",
+      "compliance2": "Como o LumenLingo nao se qualifica como servico de intermediacao, servico de hospedagem ou plataforma online nos termos do DSA, a maioria das obrigacoes do DSA (incluindo o mecanismo de notificacao e acao nos termos do Art. 16 e os relatorios de transparencia nos termos do Art. 15) nao se aplicam atualmente.",
+      "compliance3": "A Lumenshore monitora desenvolvimentos regulatorios e atualizara suas medidas de conformidade se o escopo de aplicabilidade do DSA mudar devido a novos recursos ou orientacoes regulatorias."
+    }
+  },
+  "privacy": {
+    "euRepresentative": {
+      "heading": "Representante na UE (RGPD Art. 27)",
+      "assessment1": "A Lumenshore Limited esta constituida na Inglaterra e no Pais de Gales e, portanto, esta estabelecida fora do Espaco Economico Europeu (EEE). Quando a Lumenshore oferece o seu Servico a individuos no EEE ou monitoriza o seu comportamento dentro do EEE, pode estar sujeita a obrigacao prevista no Art. 27 do RGPD de designar um representante na UE.",
+      "assessment2": "O LumenLingo processa dados pessoais minimos e nao monitoriza sistematicamente o comportamento de individuos sediados na UE. Os algoritmos de aprendizagem da aplicacao operam localmente nos dispositivos dos utilizadores e nao envolvem criacao de perfis ou rastreamento do lado do servidor.",
+      "assessment3": "A Lumenshore avaliou as suas atividades de processamento e determinou que, dado o ambito e a natureza atuais do processamento de dados, a designacao de um representante na UE nos termos do Art. 27 nao e atualmente obrigatoria. No entanto, como questao de boas praticas e transparencia, a Lumenshore designou voluntariamente o seguinte ponto de contacto para consultas de protecao de dados da UE:",
+      "contact1": "Para consultas de protecao de dados de individuos ou autoridades de supervisao sediados na UE:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "A Lumenshore revisara esta avaliacao periodicamente e designara formalmente um representante na UE nos termos do Art. 27 do RGPD se exigido por alteracoes nas atividades de processamento, orientacoes aplicaveis ou requisitos regulatorios.",
+      "supervisory1": "Individuos sediados na UE tem o direito de apresentar uma reclamacao junto da sua autoridade de supervisao de protecao de dados local. Uma lista das autoridades de supervisao do EEE esta disponivel no site do Comite Europeu para a Protecao de Dados.",
+      "supervisory2": "Se a Lumenshore designar formalmente um representante na UE no futuro, os detalhes do representante serao publicados nesta Politica de Privacidade e comunicados a autoridade de supervisao relevante em conformidade com o Art. 27(4) do RGPD."
     }
   }
 }

@@ -99,6 +99,7 @@ export default async function PrivacyPage({
     { id: 'california-rights', text: t('yourRights.californiaHeading'), level: 2 },
     { id: 'gpc-signals', text: t('gpcSignals.heading'), level: 2 },
     { id: 'policy-updates', text: t('policyUpdates.heading'), level: 2 },
+    { id: 'eu-representative', text: t('euRepresentative.heading'), level: 2 },
     { id: 'contact-us', text: t('contactUs.heading'), level: 2 },
   ];
 
@@ -1233,6 +1234,18 @@ export default async function PrivacyPage({
                     <li>{t.rich('policyUpdates.v2', richTags)}</li>
                     <li>{t.rich('policyUpdates.v1', richTags)}</li>
                   </ul>
+                </section>
+
+                <section id="eu-representative">
+                  <h2>{t('euRepresentative.heading')}</h2>
+                  <p>{t('euRepresentative.assessment1')}</p>
+                  <p>{t('euRepresentative.assessment2')}</p>
+                  <p>{t('euRepresentative.assessment3')}</p>
+                  <p>{t('euRepresentative.contact1')}</p>
+                  <p>{t('euRepresentative.contact2')}</p>
+                  <p>{t('euRepresentative.contact3')}</p>
+                  <p>{t('euRepresentative.supervisory1')}</p>
+                  <p>{t('euRepresentative.supervisory2')}</p>
                 </section>
 
                 <section id="contact-us">
