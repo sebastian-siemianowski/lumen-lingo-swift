@@ -1336,12 +1336,12 @@
 **So that** the app passes App Review and users are properly informed
 
 #### Subtasks:
-- [ ] 9.1.1 — Use StoreKit 2 for all subscription management
-- [ ] 9.1.2 — Ensure ALL digital purchases go through Apple IAP (no external payment links per App Store guideline 3.1.1)
-- [ ] 9.1.3 — Display subscription price fetched from StoreKit (not hardcoded) — prices vary by region
-- [ ] 9.1.4 — Implement "Restore Purchases" button prominently on paywall and in Settings
-- [ ] 9.1.5 — Handle all subscription states: active, expired, billing retry, grace period, revoked
-- [ ] 9.1.6 — Display auto-renewal disclosure per Apple guideline 3.1.2:
+- [x] 9.1.1 — Use StoreKit 2 for all subscription management
+- [x] 9.1.2 — Ensure ALL digital purchases go through Apple IAP (no external payment links per App Store guideline 3.1.1)
+- [x] 9.1.3 — Display subscription price fetched from StoreKit (not hardcoded) — prices vary by region
+- [x] 9.1.4 — Implement "Restore Purchases" button prominently on paywall and in Settings
+- [x] 9.1.5 — Handle all subscription states: active, expired, billing retry, grace period, revoked
+- [x] 9.1.6 — Display auto-renewal disclosure per Apple guideline 3.1.2:
   - Subscription name and duration
   - Price
   - "Subscription automatically renews unless canceled at least 24 hours before the end of the current period"
@@ -1349,7 +1349,7 @@
   - "Your account will be charged for renewal within 24 hours prior to the end of the current period"
   - "You can manage and cancel your subscriptions by going to your account settings on the App Store after purchase"
   - Links to Terms and Privacy Policy
-- [ ] 9.1.7 — Handle free trial to paid transition:
+- [x] 9.1.7 — Handle free trial to paid transition:
   - "14-day free trial of Royal tier" — clear start/end
   - "After trial ends, subscription auto-renews at [price]/month unless canceled"
   - Display trial end date prominently in app
@@ -1368,11 +1368,11 @@
 **So that** I have proper cooling-off and cancellation rights
 
 #### Subtasks:
-- [ ] 9.2.1 — Implement 14-day cooling-off period disclosure:
+- [x] 9.2.1 — Implement 14-day cooling-off period disclosure:
   - Consumer Contracts Regulations 2013 give 14-day right to cancel distance contracts
   - For digital content: right to cancel may be waived if consumer consents to immediate performance AND acknowledges loss of cancellation right
   - Apple IAP: Apple's terms handle this — but LumenShore must acknowledge consumer rights
-- [ ] 9.2.2 — Add pre-purchase information per CCR 2013 Schedule 2:
+- [x] 9.2.2 — Add pre-purchase information per CCR 2013 Schedule 2:
   - Main characteristics of digital content
   - Identity of trader (LumenShore Ltd)
   - Business address (registered address)
@@ -1380,9 +1380,9 @@
   - Payment arrangements
   - Duration of contract
   - Cancellation rights and how to exercise them
-- [ ] 9.2.3 — Provide order confirmation (handled by Apple receipt)
-- [ ] 9.2.4 — Add distance selling rights summary to Terms of Service
-- [ ] 9.2.5 — Document that Apple processes all refunds — include link to Apple's refund page (reportaproblem.apple.com)
+- [x] 9.2.3 — Provide order confirmation (handled by Apple receipt)
+- [x] 9.2.4 — Add distance selling rights summary to Terms of Service
+- [x] 9.2.5 — Document that Apple processes all refunds — include link to Apple's refund page (reportaproblem.apple.com)
 
 **Acceptance Criteria**:
 - All CCR 2013 pre-purchase information provided

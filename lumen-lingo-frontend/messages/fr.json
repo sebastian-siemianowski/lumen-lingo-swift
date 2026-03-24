@@ -1370,6 +1370,18 @@
       "li6": "<b>Refunds</b> — refund requests are handled by Apple in accordance with their refund policies. Contact Apple Support for refund enquiries.",
       "li7": "<b>Price changes</b> — we may adjust subscription prices. You will be notified in advance, and changes apply only to your next renewal period."
     },
+    "distanceSelling": {
+      "heading": "Vente a distance et droits des consommateurs",
+      "intro": "Votre abonnement a LumenLingo est un contrat a distance. Les informations suivantes sont fournies conformement aux UK Consumer Contracts Regulations 2013 et a la Directive europeenne relative aux droits des consommateurs (2011/83/UE) :",
+      "li1": "<b>Identite du professionnel</b> — LumenShore Ltd (numero d'entreprise 09607326), enregistree en Angleterre et au Pays de Galles. TVA : GB 270411929.",
+      "li2": "<b>Description du service</b> — LumenLingo est une application numerique d'apprentissage des langues proposant des cartes memoire, des exercices de grammaire, des jeux de construction de mots, des paysages sonores et des themes visuels pour plusieurs paires de langues.",
+      "li3": "<b>Prix et paiement</b> — Les prix d'abonnement sont affiches dans l'application et sur notre site web, taxes comprises le cas echeant. Tous les paiements sont traites par Apple via l'App Store. LumenShore ne traite pas les donnees de cartes de paiement.",
+      "li4": "<b>Duree du contrat</b> — Les abonnements sont des contrats mensuels reconductibles sans engagement minimum. Ils se renouvellent automatiquement sauf annulation au moins 24 heures avant la fin de la periode de facturation en cours.",
+      "li5": "<b>Droit de retractation</b> — En vertu des Consumer Contracts Regulations 2013, vous disposez d'un droit de retractation de 14 jours pour les contrats a distance. Cependant, en achetant un abonnement et en accedant au contenu numerique, vous consentez a l'execution immediate et reconnaissez la perte de votre droit d'annulation pour cette periode de facturation.",
+      "li6": "<b>Annulation</b> — Vous pouvez annuler les renouvellements futurs a tout moment via Reglages → Apple ID → Abonnements. L'annulation prend effet a la fin de la periode de facturation en cours. Vous conservez l'acces aux fonctionnalites premium jusqu'a cette date.",
+      "li7": "<b>Remboursements</b> — Toutes les demandes de remboursement sont traitees par Apple. Pour demander un remboursement, visitez <refundLink>reportaproblem.apple.com</refundLink>. LumenShore ne traite pas les remboursements directement, Apple etant le vendeur officiel pour tous les achats sur l'App Store.",
+      "li8": "<b>Reclamations</b> — Si vous avez une reclamation concernant notre service, veuillez nous contacter a <email>support@lumenshore.com</email>. Nous nous efforcons de resoudre toutes les reclamations sous 14 jours."
+    },
     "acceptableUse": {
       "heading": "Acceptable Use",
       "intro": "You agree to use LumenLingo only for lawful purposes and in accordance with these Terms. You must not:",

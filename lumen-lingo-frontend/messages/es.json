@@ -1370,6 +1370,18 @@
       "li6": "<b>Refunds</b> — refund requests are handled by Apple in accordance with their refund policies. Contact Apple Support for refund enquiries.",
       "li7": "<b>Price changes</b> — we may adjust subscription prices. You will be notified in advance, and changes apply only to your next renewal period."
     },
+    "distanceSelling": {
+      "heading": "Venta a distancia y derechos del consumidor",
+      "intro": "Tu suscripcion a LumenLingo es un contrato a distancia. La siguiente informacion se proporciona de conformidad con las UK Consumer Contracts Regulations 2013 y la Directiva de Derechos del Consumidor de la UE (2011/83/EU):",
+      "li1": "<b>Identidad del comerciante</b> — LumenShore Ltd (numero de empresa 09607326), registrada en Inglaterra y Gales. IVA: GB 270411929.",
+      "li2": "<b>Descripcion del servicio</b> — LumenLingo es una aplicacion digital de aprendizaje de idiomas que ofrece tarjetas didacticas, ejercicios de gramatica, juegos de construccion de palabras, paisajes sonoros y temas visuales en multiples pares de idiomas.",
+      "li3": "<b>Precio y pago</b> — Los precios de suscripcion se muestran en la App y en nuestro sitio web, incluyendo impuestos aplicables. Todos los pagos son procesados por Apple a traves del App Store. LumenShore no maneja datos de tarjetas de pago.",
+      "li4": "<b>Duracion del contrato</b> — Las suscripciones son contratos mensuales renovables sin compromiso minimo. Se renuevan automaticamente a menos que se cancelen al menos 24 horas antes del final del periodo de facturacion actual.",
+      "li5": "<b>Periodo de desistimiento</b> — Segun las Consumer Contracts Regulations 2013, tienes un derecho de desistimiento de 14 dias para contratos a distancia. Sin embargo, al comprar una suscripcion y acceder al contenido digital, consientes la ejecucion inmediata y reconoces la perdida de tu derecho de cancelacion para ese periodo de facturacion.",
+      "li6": "<b>Cancelacion</b> — Puedes cancelar renovaciones futuras en cualquier momento a traves de Ajustes → Apple ID → Suscripciones. La cancelacion surte efecto al final del periodo de facturacion actual. Conservas acceso a las funciones premium hasta esa fecha.",
+      "li7": "<b>Reembolsos</b> — Todas las solicitudes de reembolso son gestionadas por Apple. Para solicitar un reembolso, visita <refundLink>reportaproblem.apple.com</refundLink>. LumenShore no procesa reembolsos directamente, ya que Apple es el comerciante registrado para todas las compras del App Store.",
+      "li8": "<b>Quejas</b> — Si tienes una queja sobre nuestro servicio, contactanos en <email>support@lumenshore.com</email>. Nos esforzamos por resolver todas las quejas en un plazo de 14 dias."
+    },
     "acceptableUse": {
       "heading": "Acceptable Use",
       "intro": "You agree to use LumenLingo only for lawful purposes and in accordance with these Terms. You must not:",

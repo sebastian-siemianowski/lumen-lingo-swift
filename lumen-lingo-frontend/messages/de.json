@@ -1370,6 +1370,18 @@
       "li6": "<b>Refunds</b> — refund requests are handled by Apple in accordance with their refund policies. Contact Apple Support for refund enquiries.",
       "li7": "<b>Price changes</b> — we may adjust subscription prices. You will be notified in advance, and changes apply only to your next renewal period."
     },
+    "distanceSelling": {
+      "heading": "Fernabsatz und Verbraucherrechte",
+      "intro": "Ihr Abonnement von LumenLingo ist ein Fernabsatzvertrag. Die folgenden Informationen werden in Uebereinstimmung mit den UK Consumer Contracts Regulations 2013 und der EU-Verbraucherrechterichtlinie (2011/83/EU) bereitgestellt:",
+      "li1": "<b>Haendleridentitaet</b> — LumenShore Ltd (Firmennummer 09607326), registriert in England und Wales. USt-IdNr.: GB 270411929.",
+      "li2": "<b>Dienstbeschreibung</b> — LumenLingo ist eine digitale Sprachlern-App mit Karteikarten, Grammatikuebungen, Wortbauspielen, Klanglandschaften und visuellen Themen fuer mehrere Sprachpaare.",
+      "li3": "<b>Preis und Zahlung</b> — Abonnementpreise werden in der App und auf unserer Website inklusive anfallender Steuern angezeigt. Alle Zahlungen werden von Apple ueber den App Store abgewickelt. LumenShore verarbeitet keine Zahlungskartendaten.",
+      "li4": "<b>Vertragsdauer</b> — Abonnements sind monatlich kuendbare Vertraege ohne Mindestlaufzeit. Sie verlaengern sich automatisch, sofern nicht mindestens 24 Stunden vor Ende des aktuellen Abrechnungszeitraums gekuendigt wird.",
+      "li5": "<b>Widerrufsfrist</b> — Gemaess den Consumer Contracts Regulations 2013 haben Sie ein 14-taegiges Widerrufsrecht bei Fernabsatzvertraegen. Mit dem Kauf eines Abonnements und dem Zugriff auf die digitalen Inhalte stimmen Sie jedoch der sofortigen Leistungserbringung zu und erkennen den Verlust Ihres Widerrufsrechts fuer diesen Abrechnungszeitraum an.",
+      "li6": "<b>Kuendigung</b> — Sie koennen zukuenftige Verlaengerungen jederzeit ueber Einstellungen → Apple ID → Abonnements kuendigen. Die Kuendigung wird zum Ende des aktuellen Abrechnungszeitraums wirksam. Sie behalten bis dahin Zugang zu Premium-Funktionen.",
+      "li7": "<b>Erstattungen</b> — Alle Erstattungsanfragen werden von Apple bearbeitet. Um eine Erstattung anzufordern, besuchen Sie <refundLink>reportaproblem.apple.com</refundLink>. LumenShore bearbeitet keine Erstattungen direkt, da Apple der eingetragene Haendler fuer alle App Store-Kaeufe ist.",
+      "li8": "<b>Beschwerden</b> — Wenn Sie eine Beschwerde ueber unseren Service haben, kontaktieren Sie uns bitte unter <email>support@lumenshore.com</email>. Wir bemuehen uns, alle Beschwerden innerhalb von 14 Tagen zu loesen."
+    },
     "acceptableUse": {
       "heading": "Acceptable Use",
       "intro": "You agree to use LumenLingo only for lawful purposes and in accordance with these Terms. You must not:",

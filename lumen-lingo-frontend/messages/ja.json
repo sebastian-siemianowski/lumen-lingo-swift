@@ -1370,6 +1370,18 @@
       "li6": "<b>Refunds</b> — refund requests are handled by Apple in accordance with their refund policies. Contact Apple Support for refund enquiries.",
       "li7": "<b>Price changes</b> — we may adjust subscription prices. You will be notified in advance, and changes apply only to your next renewal period."
     },
+    "distanceSelling": {
+      "heading": "通信販売と消費者の権利",
+      "intro": "LumenLingoのサブスクリプションは遠隔契約です。以下の情報は、英国消費者契約規則２０１３およびEU消費者権利指令（２０１１/８３/EU）に準拠して提供されます：",
+      "li1": "<b>事業者情報</b> — LumenShore Ltd（会社番号０９６０７３２６）、イングランド・ウェールズ登録。VAT番号：GB 270411929。",
+      "li2": "<b>サービス内容</b> — LumenLingoは、フラッシュカード、文法演習、単語構築ゲーム、サウンドスケープ、ビジュアルテーマを複数の言語ペアで提供するデジタル言語学習アプリケーションです。",
+      "li3": "<b>価格と支払い</b> — サブスクリプション価格はアプリおよびウェブサイトに税込みで表示されます。すべての支払いはApp Storeを通じてAppleが処理します。LumenShoreは支払いカード情報を取り扱いません。",
+      "li4": "<b>契約期間</b> — サブスクリプションは最低利用期間のない月額自動更新契約です。現在の請求期間終了の２４時間前までにキャンセルされない限り自動更新されます。",
+      "li5": "<b>クーリングオフ期間</b> — 消費者契約規則２０１３に基づき、遠隔契約には１４日間のキャンセル権があります。ただし、サブスクリプションを購入しデジタルコンテンツにアクセスすることで、即時実行に同意し、その請求期間のキャンセル権を放棄することを了承します。",
+      "li6": "<b>解約</b> — 設定 → Apple ID → サブスクリプションから、いつでも将来の更新をキャンセルできます。解約は現在の請求期間の終了時に有効になります。その日までプレミアム機能へのアクセスは維持されます。",
+      "li7": "<b>返金</b> — すべての返金リクエストはAppleが処理します。返金をリクエストするには<refundLink>reportaproblem.apple.com</refundLink>をご利用ください。AppleがApp Storeのすべての購入の販売事業者であるため、LumenShoreは直接返金処理を行いません。",
+      "li8": "<b>苦情</b> — サービスに関する苦情がある場合は、<email>support@lumenshore.com</email>までご連絡ください。１４日以内にすべての苦情を解決するよう努めます。"
+    },
     "acceptableUse": {
       "heading": "Acceptable Use",
       "intro": "You agree to use LumenLingo only for lawful purposes and in accordance with these Terms. You must not:",

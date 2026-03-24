@@ -495,6 +495,12 @@ struct AppStrings: Sendable {
     let subscriptionLegalPrefix: String      // "By subscribing, you agree to our"
     let subscriptionLegalAnd: String         // "and"
 
+    // MARK: - Subscription Compliance (CCR 2013 / CRD)
+    let subscriptionTraderInfo: String       // Trader identity + registration
+    let subscriptionCoolingOff: String       // 14-day cooling-off waiver notice
+    let subscriptionRefundNotice: String     // Apple handles refunds
+    let subscriptionContractDuration: String // Monthly rolling contract
+
     // MARK: - Account Deletion
     let deleteAccount: String                // "Delete Account"
     let deleteAccountWarning: String         // Warning message about data loss

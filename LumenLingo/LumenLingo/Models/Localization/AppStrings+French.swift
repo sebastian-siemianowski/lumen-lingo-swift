@@ -484,6 +484,12 @@ extension AppStrings {
         subscriptionLegalAnd: "et"
 ,
 
+        // MARK: - Subscription Compliance (CCR 2013 / CRD)
+        subscriptionTraderInfo: "Fourni par LumenShore Limited, enregistree en Angleterre et au Pays de Galles (#09607326). TVA : GB 270411929.",
+        subscriptionCoolingOff: "En achetant, vous consentez a l'acces immediat au contenu numerique et reconnaissez que cela annule votre droit de retractation de 14 jours au titre du droit de la consommation.",
+        subscriptionRefundNotice: "Les remboursements sont traites par Apple. Pour demander un remboursement, visitez reportaproblem.apple.com.",
+        subscriptionContractDuration: "Contrat mensuel reconductible. Sans engagement minimum.",
+
         // MARK: - Account Deletion
         deleteAccount: "Supprimer le compte",
         deleteAccountWarning: "Ceci supprimera définitivement toutes vos données d'apprentissage, votre progression, vos séries et vos préférences. Cette action est irréversible.",

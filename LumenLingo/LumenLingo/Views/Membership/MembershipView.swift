@@ -11,6 +11,7 @@ struct MembershipView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.horizontalSizeClass) private var sizeClass
     @Environment(TierManager.self) private var tierManager
+    @Environment(SubscriptionManager.self) private var subscriptionManager
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
     @PersistedState("membership_comparison_collapsed") private var isComparisonCollapsed = true
@@ -29,7 +30,11 @@ struct MembershipView: View {
                 tiersSection
 
                 // Apple-required subscription disclosure (Guideline 3.1.2)
-                SubscriptionDisclosureView()
+                SubscriptionDisclosureView(
+                    onRestorePurchases: {
+                        Task { await subscriptionManager.restorePurchases() }
+                    }
+                )
 
                 comparisonSection
 
@@ -82,6 +87,10 @@ struct MembershipView: View {
         }
         .onAppear {
             selectedTierId = tierManager.currentTierId
+        }
+        .task {
+            await subscriptionManager.loadProducts()
+            await subscriptionManager.updateSubscriptionState()
         }
     }
 
@@ -658,6 +667,7 @@ struct TierCardView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
     @Environment(TierManager.self) private var tierManager
+    @Environment(SubscriptionManager.self) private var subscriptionManager
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
     private var L: AppStrings { localization.strings }
@@ -825,7 +835,7 @@ struct TierCardView: View {
                             )
                         )
                 } else {
-                    Text("£\(String(format: "%.2f", price))")
+                    Text(subscriptionManager.displayPrice(for: MembershipTier(tierId: tier.id)))
                         .font(.system(size: 28, weight: .black))
                         .foregroundStyle(
                             LinearGradient(
@@ -864,11 +874,29 @@ struct TierCardView: View {
                         selectedTierId = "trial"
                         showTrialConfirmation = true
                     }
-                } else {
+                } else if tier.id == "free" {
                     withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
                         selectedTierId = tier.id
                     }
                     tierManager.selectTier(tier.id, profile: profile)
+                } else {
+                    // Paid tier — initiate StoreKit purchase
+                    let membershipTier = MembershipTier(tierId: tier.id)
+                    Task {
+                        do {
+                            let purchasedTier = try await subscriptionManager.purchase(membershipTier)
+                            withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                                selectedTierId = tier.id
+                            }
+                            tierManager.selectTier(purchasedTier.rawValue, profile: profile)
+                        } catch PurchaseError.purchaseCancelled {
+                            // User cancelled — no action needed
+                        } catch PurchaseError.purchasePending {
+                            // Ask to Buy or SCA — no action needed
+                        } catch {
+                            subscriptionManager.errorMessage = error.localizedDescription
+                        }
+                    }
                 }
             } label: {
                 HStack(spacing: 6) {

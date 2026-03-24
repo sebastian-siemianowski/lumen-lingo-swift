@@ -1370,6 +1370,18 @@
       "li6": "<b>Refunds</b> — refund requests are handled by Apple in accordance with their refund policies. Contact Apple Support for refund enquiries.",
       "li7": "<b>Price changes</b> — we may adjust subscription prices. You will be notified in advance, and changes apply only to your next renewal period."
     },
+    "distanceSelling": {
+      "heading": "Sprzedaz na odleglosc i prawa konsumenta",
+      "intro": "Twoja subskrypcja LumenLingo jest umowa zawarta na odleglosc. Ponizsze informacje sa przekazywane zgodnie z brytyjskimi Consumer Contracts Regulations 2013 oraz Dyrektywa UE o prawach konsumentow (2011/83/UE):",
+      "li1": "<b>Tozsamosc sprzedawcy</b> — LumenShore Ltd (numer firmy 09607326), zarejestrowana w Anglii i Walii. VAT: GB 270411929.",
+      "li2": "<b>Opis uslugi</b> — LumenLingo to cyfrowa aplikacja do nauki jezykow oferujaca fiszki, cwiczenia gramatyczne, gry slowotworcze, pejzaze dzwiekowe i motywy wizualne dla wielu par jezykowych.",
+      "li3": "<b>Cena i platnosc</b> — Ceny subskrypcji sa wyswietlane w aplikacji i na naszej stronie internetowej z uwzglednieniem obowiazujacych podatkow. Wszystkie platnosci sa przetwarzane przez Apple za posrednictwem App Store. LumenShore nie przetwarza danych kart platniczych.",
+      "li4": "<b>Czas trwania umowy</b> — Subskrypcje sa miesiecznymi umowami odnawialnymi bez minimalnego zobowiazania. Odnawiaja sie automatycznie, chyba ze zostana anulowane co najmniej 24 godziny przed koncem biezacego okresu rozliczeniowego.",
+      "li5": "<b>Okres odstapienia</b> — Zgodnie z Consumer Contracts Regulations 2013 masz 14-dniowe prawo do odstapienia od umow zawartych na odleglosc. Jednak kupujac subskrypcje i uzyskujac dostep do tresci cyfrowych, wyrazasz zgode na natychmiastowe wykonanie i potwierdzasz utrate prawa do odstapienia za dany okres rozliczeniowy.",
+      "li6": "<b>Anulowanie</b> — Mozesz anulowac przyszle odnowienia w dowolnym momencie w Ustawieniach → Apple ID → Subskrypcje. Anulowanie obowiazuje od konca biezacego okresu rozliczeniowego. Zachowujesz dostep do funkcji premium do tej daty.",
+      "li7": "<b>Zwroty</b> — Wszystkie wnioski o zwrot sa obslugiwane przez Apple. Aby poprosic o zwrot, odwiedz <refundLink>reportaproblem.apple.com</refundLink>. LumenShore nie przetwarza zwrotow bezposrednio, poniewaz Apple jest zarejestrowanym sprzedawca dla wszystkich zakupow w App Store.",
+      "li8": "<b>Reklamacje</b> — Jesli masz reklamacje dotyczaca naszej uslugi, skontaktuj sie z nami pod adresem <email>support@lumenshore.com</email>. Staramy sie rozwiazac wszystkie reklamacje w ciagu 14 dni."
+    },
     "acceptableUse": {
       "heading": "Acceptable Use",
       "intro": "You agree to use LumenLingo only for lawful purposes and in accordance with these Terms. You must not:",

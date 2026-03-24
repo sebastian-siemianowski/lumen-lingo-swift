@@ -56,6 +56,7 @@ export default async function TermsPage({
     { id: 'acceptance', text: t('acceptance.heading'), level: 2 },
     { id: 'your-account', text: t('yourAccount.heading'), level: 2 },
     { id: 'subscriptions', text: t('subscriptions.heading'), level: 2 },
+    { id: 'distance-selling', text: t('distanceSelling.heading'), level: 2 },
     { id: 'acceptable-use', text: t('acceptableUse.heading'), level: 2 },
     { id: 'intellectual-property', text: t('intellectualProperty.heading'), level: 2 },
     { id: 'copyright-infringement', text: t('copyrightInfringement.heading'), level: 2 },
@@ -201,6 +202,34 @@ export default async function TermsPage({
                     <li>{t.rich('subscriptions.li5', richTags)}</li>
                     <li>{t.rich('subscriptions.li6', richTags)}</li>
                     <li>{t.rich('subscriptions.li7', richTags)}</li>
+                  </ul>
+                </section>
+
+                <section id="distance-selling">
+                  <h2>{t('distanceSelling.heading')}</h2>
+                  <p>{t('distanceSelling.intro')}</p>
+                  <ul>
+                    <li>{t.rich('distanceSelling.li1', richTags)}</li>
+                    <li>{t.rich('distanceSelling.li2', richTags)}</li>
+                    <li>{t.rich('distanceSelling.li3', richTags)}</li>
+                    <li>{t.rich('distanceSelling.li4', richTags)}</li>
+                    <li>{t.rich('distanceSelling.li5', richTags)}</li>
+                    <li>{t.rich('distanceSelling.li6', richTags)}</li>
+                    <li>{t.rich('distanceSelling.li7', {
+                      ...richTags,
+                      refundLink: (chunks: React.ReactNode) => (
+                        <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">{chunks}</a>
+                      ),
+                      email: (chunks: React.ReactNode) => (
+                        <a href="mailto:support@lumenshore.com">{chunks}</a>
+                      ),
+                    })}</li>
+                    <li>{t.rich('distanceSelling.li8', {
+                      ...richTags,
+                      email: (chunks: React.ReactNode) => (
+                        <a href="mailto:support@lumenshore.com">{chunks}</a>
+                      ),
+                    })}</li>
                   </ul>
                 </section>
 

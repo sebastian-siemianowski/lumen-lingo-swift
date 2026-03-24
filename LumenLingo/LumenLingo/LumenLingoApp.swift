@@ -8,6 +8,7 @@ struct LumenLingoApp: App {
     @State private var themeManager = ThemeManager()
     @State private var localizationManager = LocalizationManager()
     @State private var tierManager = TierManager()
+    @State private var subscriptionManager = SubscriptionManager()
     @State private var practiceTimeTracker = PracticeTimeTracker()
     @State private var networkMonitor = NetworkMonitor()
     @State private var upgradePromptManager = UpgradePromptManager()
@@ -49,6 +50,7 @@ struct LumenLingoApp: App {
             }
             .environment(themeManager)
             .environment(tierManager)
+            .environment(subscriptionManager)
             .environment(practiceTimeTracker)
             .environment(networkMonitor)
             .environment(upgradePromptManager)

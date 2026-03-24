@@ -483,6 +483,12 @@ extension AppStrings {
         subscriptionLegalAnd: "和"
 ,
 
+        // MARK: - Subscription Compliance (CCR 2013 / CRD)
+        subscriptionTraderInfo: "由 LumenShore Limited 提供，注册于英格兰和威尔士（#09607326）。增值税号：GB 270411929。",
+        subscriptionCoolingOff: "购买即表示您同意立即访问数字内容，并确认放弃14天冷静期退款权利。",
+        subscriptionRefundNotice: "退款由 Apple 处理。如需申请退款，请访问 reportaproblem.apple.com。",
+        subscriptionContractDuration: "按月自动续订合约，无最低承诺期。",
+
         // MARK: - Account Deletion
         deleteAccount: "删除账户",
         deleteAccountWarning: "这将永久删除所有学习数据、进度、连续记录和偏好设置。此操作无法撤销。",

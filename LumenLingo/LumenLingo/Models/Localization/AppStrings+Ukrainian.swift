@@ -483,6 +483,12 @@ extension AppStrings {
         subscriptionLegalAnd: "та"
 ,
 
+        // MARK: - Subscription Compliance (CCR 2013 / CRD)
+        subscriptionTraderInfo: "Надається LumenShore Limited, зареєстрованою в Англії та Уельсі (#09607326). ПДВ: GB 270411929.",
+        subscriptionCoolingOff: "Здійснюючи покупку, ви погоджуєтесь на негайний доступ до цифрового контенту та визнаєте, що це скасовує ваше 14-денне право на відмову.",
+        subscriptionRefundNotice: "Повернення коштів обробляється Apple. Щоб подати запит на повернення, відвідайте reportaproblem.apple.com.",
+        subscriptionContractDuration: "Щомісячний поновлюваний договір. Без мінімального зобов'язання.",
+
         // MARK: - Account Deletion
         deleteAccount: "Видалити обліковий запис",
         deleteAccountWarning: "Це назавжди видалить усі ваші дані навчання, прогрес, серії та налаштування. Цю дію не можна скасувати.",

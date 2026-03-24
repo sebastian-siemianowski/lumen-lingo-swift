@@ -1370,6 +1370,18 @@
       "li6": "<b>Refunds</b> — refund requests are handled by Apple in accordance with their refund policies. Contact Apple Support for refund enquiries.",
       "li7": "<b>Price changes</b> — we may adjust subscription prices. You will be notified in advance, and changes apply only to your next renewal period."
     },
+    "distanceSelling": {
+      "heading": "Distance Selling & Consumer Rights",
+      "intro": "Your subscription to LumenLingo is a distance contract. The following information is provided in compliance with the UK Consumer Contracts Regulations 2013 and the EU Consumer Rights Directive (2011/83/EU):",
+      "li1": "<b>Trader identity</b> — LumenShore Ltd (company number 09607326), registered in England & Wales. VAT registration: GB 270411929.",
+      "li2": "<b>Service description</b> — LumenLingo is a digital language-learning application offering flashcards, grammar exercises, word-building games, soundscapes, and visual themes across multiple language pairs.",
+      "li3": "<b>Price & payment</b> — subscription prices are displayed in the App and on our website, inclusive of applicable taxes. All payments are processed by Apple through the App Store. LumenShore does not handle payment card details.",
+      "li4": "<b>Contract duration</b> — subscriptions are monthly rolling contracts with no minimum commitment. They auto-renew unless cancelled at least 24 hours before the end of the current billing period.",
+      "li5": "<b>Cooling-off period</b> — under the Consumer Contracts Regulations 2013, you have a 14-day right to cancel distance contracts. However, by purchasing a subscription and accessing the digital content, you consent to immediate performance and acknowledge the loss of your cancellation right for that billing period.",
+      "li6": "<b>Cancellation</b> — you may cancel future renewals at any time via Settings → Apple ID → Subscriptions. Cancellation takes effect at the end of the current billing period. You retain access to premium features until that date.",
+      "li7": "<b>Refunds</b> — all refund requests are handled by Apple. To request a refund, visit <refundLink>reportaproblem.apple.com</refundLink>. LumenShore does not process refunds directly, as Apple is the merchant of record for all App Store purchases.",
+      "li8": "<b>Complaints</b> — if you have a complaint about our service, please contact us at <email>support@lumenshore.com</email>. We aim to resolve all complaints within 14 days."
+    },
     "acceptableUse": {
       "heading": "Acceptable Use",
       "intro": "You agree to use LumenLingo only for lawful purposes and in accordance with these Terms. You must not:",

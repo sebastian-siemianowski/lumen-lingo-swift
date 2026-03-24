@@ -1370,6 +1370,18 @@
       "li6": "<b>Refunds</b> — refund requests are handled by Apple in accordance with their refund policies. Contact Apple Support for refund enquiries.",
       "li7": "<b>Price changes</b> — we may adjust subscription prices. You will be notified in advance, and changes apply only to your next renewal period."
     },
+    "distanceSelling": {
+      "heading": "远程销售与消费者权利",
+      "intro": "您订阅LumenLingo属于远程合同。以下信息根据英国2013年消费者合同条例和欧盟消费者权利指令（2011/83/EU）提供：",
+      "li1": "<b>经营者身份</b> — LumenShore Ltd（公司编号09607326），注册于英格兰和威尔士。增值税号：GB 270411929。",
+      "li2": "<b>服务描述</b> — LumenLingo是一款数字语言学习应用程序，提供闪卡、语法练习、单词构建游戏、音景和多种语言对的视觉主题。",
+      "li3": "<b>价格与支付</b> — 订阅价格在应用内和我们的网站上显示，包含适用税费。所有付款通过App Store由Apple处理。LumenShore不处理支付卡信息。",
+      "li4": "<b>合同期限</b> — 订阅为按月自动续订合同，无最低承诺期。除非在当前计费期结束前至少24小时取消，否则将自动续订。",
+      "li5": "<b>冷静期</b> — 根据2013年消费者合同条例，您对远程合同享有14天的取消权。但是，购买订阅并访问数字内容即表示您同意立即执行，并确认放弃该计费期的取消权。",
+      "li6": "<b>取消</b> — 您可以随时通过设置 → Apple ID → 订阅取消未来的续订。取消在当前计费期结束时生效。在此日期之前，您将保留对高级功能的访问权限。",
+      "li7": "<b>退款</b> — 所有退款请求由Apple处理。要申请退款，请访问<refundLink>reportaproblem.apple.com</refundLink>。LumenShore不直接处理退款，因为Apple是所有App Store购买的注册商家。",
+      "li8": "<b>投诉</b> — 如果您对我们的服务有投诉，请通过<email>support@lumenshore.com</email>联系我们。我们力求在14天内解决所有投诉。"
+    },
     "acceptableUse": {
       "heading": "Acceptable Use",
       "intro": "You agree to use LumenLingo only for lawful purposes and in accordance with these Terms. You must not:",

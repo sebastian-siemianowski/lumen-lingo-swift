@@ -624,6 +624,32 @@ final class TierManager {
         }
     }
 
+    /// Sync tier from StoreKit subscription state.
+    /// Called by SubscriptionManager when subscription state changes.
+    func syncFromSubscriptionState(_ subscriptionManager: SubscriptionManager, profile: UserProfile?) {
+        guard let profile else { return }
+
+        switch subscriptionManager.subscriptionState {
+        case .subscribed(let tier), .inGracePeriod(let tier), .inBillingRetry(let tier):
+            // Active subscription — apply the subscribed tier
+            if tier != currentTier {
+                selectTier(tier.rawValue, profile: profile)
+            }
+        case .revoked, .expired:
+            // Subscription ended — downgrade to free (unless on trial)
+            if currentTier != .free && currentTier != .trial {
+                selectTier("free", profile: profile)
+            }
+        case .notSubscribed:
+            // No subscription — only downgrade if on a paid tier (preserve trial)
+            if currentTier == .pro || currentTier == .elite || currentTier == .royal {
+                selectTier("free", profile: profile)
+            }
+        case .unknown:
+            break
+        }
+    }
+
     // MARK: - Dormant Settings
 
     /// Keys used in the dormant settings dictionary.

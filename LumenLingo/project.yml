@@ -92,6 +92,7 @@ schemes:
         LumenLingoTests: [test]
     run:
       config: Dev-Debug
+      storeKitConfiguration: LumenLingo/Configuration.storekit
       environmentVariables:
         - variable: LL_ENVIRONMENT
           value: dev

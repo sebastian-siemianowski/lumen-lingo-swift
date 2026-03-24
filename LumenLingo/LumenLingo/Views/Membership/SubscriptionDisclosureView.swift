@@ -9,12 +9,21 @@ import SwiftUI
 struct SubscriptionDisclosureView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(SubscriptionManager.self) private var subscriptionManager
 
     /// Callback when "Restore Purchases" is tapped.
     var onRestorePurchases: () -> Void = {}
 
     private var L: AppStrings { localization.strings }
     private var isDark: Bool { colorScheme == .dark }
+
+    /// Dynamic pricing string from StoreKit, with fallback to hardcoded values.
+    private var pricingSummary: String {
+        let pro = subscriptionManager.displayPrice(for: .pro)
+        let elite = subscriptionManager.displayPrice(for: .elite)
+        let royal = subscriptionManager.displayPrice(for: .royal)
+        return "Pro \(pro)/mo · Elite \(elite)/mo · Royal \(royal)/mo"
+    }
 
     var body: some View {
         VStack(spacing: 16) {
@@ -44,7 +53,7 @@ struct SubscriptionDisclosureView: View {
     private var disclosureText: some View {
         VStack(alignment: .leading, spacing: 8) {
             // Pricing line
-            Text("Pro £9.99/mo · Elite £19.99/mo · Royal £99.99/mo")
+            Text(pricingSummary)
                 .font(.system(size: 11, weight: .semibold))
                 .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
 
@@ -67,6 +76,26 @@ struct SubscriptionDisclosureView: View {
             Text(L.subscriptionTrialNotice)
                 .font(.system(size: 11))
                 .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+
+            // Contract duration (CCR 2013 / CRD)
+            Text(L.subscriptionContractDuration)
+                .font(.system(size: 11))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+
+            // Cooling-off waiver (CCR 2013)
+            Text(L.subscriptionCoolingOff)
+                .font(.system(size: 11))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+
+            // Refund process
+            Text(L.subscriptionRefundNotice)
+                .font(.system(size: 11))
+                .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
+
+            // Trader identity (CCR 2013 Schedule 2)
+            Text(L.subscriptionTraderInfo)
+                .font(.system(size: 10))
+                .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary.opacity(0.7))
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }

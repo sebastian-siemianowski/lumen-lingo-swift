@@ -4,5 +4,9 @@
 <dict>
 	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
+	<key>com.apple.developer.in-app-payments</key>
+	<array>
+		<string>merchant.com.lumenshore.lumenlingo</string>
+	</array>
 </dict>
 </plist>

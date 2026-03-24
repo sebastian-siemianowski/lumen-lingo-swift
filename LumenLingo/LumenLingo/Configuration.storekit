@@ -1,0 +1,98 @@
+{
+  "identifier" : "8628C74D-7C6F-4A51-A65F-3B25E5F3E8A9",
+  "type" : "Configuration",
+  "version" : 3,
+  "subscriptionGroups" : [
+    {
+      "id" : "DF2A8C31-4E7B-4F19-B312-6D9A8E542C17",
+      "localizations" : [
+        {
+          "description" : "LumenLingo Premium Subscriptions",
+          "displayName" : "LumenLingo Premium",
+          "locale" : "en_US"
+        }
+      ],
+      "name" : "premium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "A1B2C3D4-0001-0001-0001-000000000001",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "7 language pairs, soundscapes, breathing orbs & offline mode",
+              "displayName" : "Pro",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.lumenshore.lumenlingo.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro Monthly",
+          "subscriptionGroupID" : "DF2A8C31-4E7B-4F19-B312-6D9A8E542C17",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "19.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "A1B2C3D4-0002-0002-0002-000000000002",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "25 language pairs, quantum flow, nebula drift & all features",
+              "displayName" : "Elite",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.lumenshore.lumenlingo.elite.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Elite Monthly",
+          "subscriptionGroupID" : "DF2A8C31-4E7B-4F19-B312-6D9A8E542C17",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "99.99",
+          "familyShareable" : false,
+          "groupNumber" : 3,
+          "internalID" : "A1B2C3D4-0003-0003-0003-000000000003",
+          "introductoryOffer" : {
+            "id" : "E5F6A7B8-TRIAL-TRIAL-TRIAL-000000000001",
+            "internalID" : "E5F6A7B8-TRIAL-TRIAL-TRIAL-000000000001",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P2W",
+            "displayPrice" : "0",
+            "numberOfPeriods" : 1
+          },
+          "localizations" : [
+            {
+              "description" : "Unlimited everything — the ultimate language mastery experience",
+              "displayName" : "Royal",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.lumenshore.lumenlingo.royal.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Royal Monthly",
+          "subscriptionGroupID" : "DF2A8C31-4E7B-4F19-B312-6D9A8E542C17",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6740000001",
+    "_developerTeamID" : "XXXXXXXXXX",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storeKitErrors" : [],
+    "_timeRate" : 6
+  }
+}
