@@ -41,29 +41,29 @@ const screenshots: Screenshot[] = [
     icon: FlashcardIcon,
   },
   {
-    id: 'practice-mode',
-    title: 'Practice',
-    caption: 'Three distinct modes that adapt to your pace',
+    id: 'grammar-challenge',
+    title: 'Grammar Challenge',
+    caption: 'Multiple-choice questions that adapt to your level',
     gradient: 'from-cyan/25 via-cyan/10 to-violet/5',
     icon: SpacedRepetitionIcon,
   },
   {
     id: 'soundscapes',
     title: 'Soundscapes',
-    caption: 'Ambient environments that enhance focus',
+    caption: '12 ambient environments that enhance focus',
     gradient: 'from-violet/20 via-amber/10 to-violet/5',
     icon: SoundscapeIcon,
   },
   {
     id: 'breathing-orbs',
     title: 'Breathing Orbs',
-    caption: 'Calming backgrounds for mindful learning',
+    caption: '6 city-inspired visual themes for mindful learning',
     gradient: 'from-amber/20 via-amber/10 to-violet/5',
     icon: BreathingOrbIcon,
   },
   {
     id: 'progress',
-    title: 'Progress',
+    title: 'Journey',
     caption: 'Track streaks, XP, and mastery levels',
     gradient: 'from-cyan/20 via-violet/10 to-cyan/5',
     icon: ProgressIcon,
@@ -71,7 +71,7 @@ const screenshots: Screenshot[] = [
   {
     id: 'membership',
     title: 'Membership',
-    caption: 'Premium tiers for serious learners',
+    caption: 'Free, Pro, Elite & Royal tiers for every learner',
     gradient: 'from-amber/25 via-violet/10 to-amber/5',
     icon: MembershipIcon,
   },
@@ -85,7 +85,7 @@ const SNAP_THRESHOLD = 50;
 /* ─── Snap spring ─── */
 const SNAP_SPRING = { type: 'spring' as const, stiffness: 250, damping: 25 };
 
-/* ─── Gallery-specific mock screens ─── */
+/* ─── Gallery-specific screen content (accurate to real iOS app) ─── */
 
 function GalleryFlashcardScreen() {
   return (
@@ -93,35 +93,40 @@ function GalleryFlashcardScreen() {
       <span className="text-[8px] tracking-wide text-foreground-muted/70 uppercase">
         Spanish → English
       </span>
-      <div className="glass-card w-full rounded-xl border border-glass-border p-2.5 text-center">
-        <span className="font-display text-sm font-bold text-foreground">Mariposa</span>
-        <div className="my-1.5 h-px w-full bg-glass-border" />
+      <div className="relative w-full overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.04] p-2.5 text-center backdrop-blur-sm">
+        <div className="pointer-events-none absolute -top-4 -right-4 h-10 w-10 rounded-full bg-violet/15 blur-lg" />
+        <span className="font-display relative text-sm font-bold text-foreground">Mariposa</span>
+        <div className="my-1.5 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
         <span className="text-xs text-cyan">Butterfly</span>
       </div>
       <div className="flex w-full items-center justify-between px-1">
         <span className="text-[8px] text-foreground-muted/60">7 of 20</span>
-        <span className="text-[7px] text-foreground-muted/40">Tap to flip</span>
+        <span className="text-[7px] text-foreground-muted/40">Swipe to flip</span>
       </div>
     </div>
   );
 }
 
-function GalleryPracticeScreen() {
+function GalleryGrammarScreen() {
   return (
     <div className="mt-2 flex w-full flex-col gap-1.5">
-      <div className="rounded-lg border border-glass-border bg-white/5 p-2 text-center">
-        <span className="text-[9px] font-medium text-foreground">Translate: 夢</span>
+      <div className="rounded-lg border border-white/[0.08] bg-white/[0.04] p-2 text-center backdrop-blur-sm">
+        <span className="text-[9px] font-medium text-foreground">What does 夢 mean?</span>
       </div>
-      {['Dream', 'Sleep', 'Cloud'].map((opt, i) => (
+      {[
+        { label: 'A. Dream', correct: true },
+        { label: 'B. Sleep', correct: false },
+        { label: 'C. Cloud', correct: false },
+      ].map((opt) => (
         <div
-          key={opt}
+          key={opt.label}
           className={`rounded-md border px-2 py-1 text-[9px] ${
-            i === 0
-              ? 'border-cyan/40 bg-cyan/10 text-cyan'
-              : 'border-glass-border bg-white/3 text-foreground-muted'
+            opt.correct
+              ? 'border-cyan/40 bg-cyan/10 text-cyan shadow-[0_0_8px_rgba(6,182,212,0.1)]'
+              : 'border-white/[0.06] bg-white/[0.02] text-foreground-muted'
           }`}
         >
-          {opt}
+          {opt.label}
         </div>
       ))}
     </div>
@@ -131,18 +136,25 @@ function GalleryPracticeScreen() {
 function GallerySoundscapeScreen() {
   return (
     <div className="mt-2 flex w-full flex-col items-center gap-2">
-      <div className="relative flex h-14 w-14 items-center justify-center rounded-full border border-violet/20 bg-violet/5">
-        <div className="absolute inset-0 rounded-full bg-violet/10 animate-pulse" />
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="relative text-violet">
-          <path d="M9 18V6l12 6-12 6z" fill="currentColor" />
-        </svg>
+      <div className="relative flex w-full items-center gap-2 rounded-lg border border-white/[0.08] bg-white/[0.04] p-2 backdrop-blur-sm">
+        <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-violet/20">
+          <svg width="10" height="10" viewBox="0 0 24 24" className="text-violet">
+            <path d="M11 5L6 9H2v6h4l5 4V5z" fill="currentColor" />
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
+          </svg>
+        </div>
+        <div className="flex flex-col">
+          <span className="font-display text-[9px] font-bold text-foreground">Rainy Window</span>
+          <span className="text-[7px] text-foreground-muted/60">Cozy</span>
+        </div>
       </div>
-      <span className="font-display text-[10px] font-bold text-foreground">Ocean Waves</span>
-      <div className="flex items-end gap-[2px] h-5">
-        {[4, 7, 5, 10, 3, 8, 6, 9, 4, 7, 5, 8].map((h, i) => (
-          <div key={i} className="w-[2px] rounded-full bg-violet/40" style={{ height: `${h * 1.5}px` }} />
-        ))}
+      {/* Volume */}
+      <div className="flex w-full items-center gap-1 px-0.5">
+        <div className="h-0.5 flex-1 overflow-hidden rounded-full bg-white/10">
+          <div className="h-full w-[55%] rounded-full bg-violet/60" />
+        </div>
       </div>
+      <span className="text-[7px] text-foreground-muted/40">12 ambient soundscapes</span>
     </div>
   );
 }
@@ -150,12 +162,19 @@ function GallerySoundscapeScreen() {
 function GalleryBreathingScreen() {
   return (
     <div className="mt-2 flex w-full flex-col items-center gap-2">
-      <div className="relative flex h-16 w-16 items-center justify-center">
-        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan/20 to-violet/20 animate-pulse" />
-        <div className="relative h-8 w-8 rounded-full bg-gradient-to-br from-cyan/60 to-violet/60" />
+      <div className="relative flex h-16 w-full items-center justify-center">
+        {/* Mini orb cluster */}
+        <div className="absolute h-10 w-10 rounded-full bg-gradient-to-br from-red-500/25 to-amber-500/15 blur-md" />
+        <div className="absolute h-8 w-8 translate-x-2 rounded-full bg-gradient-to-br from-pink-500/20 to-orange-400/10 blur-md" />
+        <div className="absolute h-9 w-9 -translate-x-2 translate-y-1 rounded-full bg-gradient-to-br from-red-600/20 to-pink-500/15 blur-md" />
       </div>
-      <span className="font-display text-[10px] font-bold text-foreground">Breathe Out</span>
-      <span className="text-[7px] text-foreground-muted/60">Box Breathing · 4s cycle</span>
+      <span className="font-display text-[10px] font-bold text-foreground">Tokyo Sunset</span>
+      <div className="flex gap-1">
+        {['bg-red-500', 'bg-amber-500', 'bg-pink-500', 'bg-orange-400'].map((color) => (
+          <div key={color} className={`h-2 w-2 rounded-full ${color} shadow-sm`} />
+        ))}
+      </div>
+      <span className="text-[7px] text-foreground-muted/60">6 city-inspired schemes</span>
     </div>
   );
 }
@@ -167,22 +186,24 @@ function GalleryProgressScreen() {
         {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((day, i) => (
           <div key={day + i} className="flex flex-col items-center gap-0.5">
             <div
-              className="w-3 rounded-sm bg-gradient-to-t from-violet/60 to-violet"
+              className="w-3 rounded-sm bg-gradient-to-t from-violet/60 to-violet shadow-[0_0_4px_rgba(139,92,246,0.15)]"
               style={{ height: `${[16, 24, 20, 32, 18, 28, 12][i]}px` }}
             />
             <span className="text-[6px] text-foreground-muted/60">{day}</span>
           </div>
         ))}
       </div>
-      <div className="flex justify-between rounded-md border border-glass-border bg-white/3 px-2 py-1">
+      <div className="flex justify-between rounded-md border border-white/[0.08] bg-white/[0.04] px-2 py-1 backdrop-blur-sm">
         <div className="text-center">
           <span className="block text-[9px] font-bold text-violet">152</span>
           <span className="text-[6px] text-foreground-muted/60">XP</span>
         </div>
+        <div className="h-auto w-px bg-white/[0.06]" />
         <div className="text-center">
           <span className="block text-[9px] font-bold text-cyan">31</span>
           <span className="text-[6px] text-foreground-muted/60">Cards</span>
         </div>
+        <div className="h-auto w-px bg-white/[0.06]" />
         <div className="text-center">
           <span className="block text-[9px] font-bold text-amber">92%</span>
           <span className="text-[6px] text-foreground-muted/60">Acc</span>
@@ -194,18 +215,21 @@ function GalleryProgressScreen() {
 
 function GalleryMembershipScreen() {
   return (
-    <div className="mt-2 flex w-full flex-col gap-2">
+    <div className="mt-2 flex w-full flex-col gap-1.5">
       <div className="rounded-lg border border-amber/30 bg-gradient-to-br from-amber/10 to-violet/5 p-2 text-center">
-        <span className="text-[9px] font-bold text-amber">✦ Premium</span>
-        <span className="mt-0.5 block text-[7px] text-foreground-muted">All languages · Unlimited decks</span>
-      </div>
-      <div className="rounded-lg border border-glass-border bg-white/3 p-2 text-center">
-        <span className="text-[9px] font-medium text-foreground">Free</span>
-        <span className="mt-0.5 block text-[7px] text-foreground-muted">1 language · 3 decks</span>
+        <span className="text-[9px] font-bold text-amber">👑 Royal</span>
+        <span className="mt-0.5 block text-[7px] text-foreground-muted">7 languages · All features</span>
       </div>
       <div className="rounded-lg border border-violet/30 bg-violet/5 p-2 text-center">
-        <span className="text-[9px] font-medium text-violet">Lifetime</span>
-        <span className="mt-0.5 block text-[7px] text-foreground-muted">One-time purchase</span>
+        <span className="text-[9px] font-medium text-violet">✦ Elite</span>
+        <span className="mt-0.5 block text-[7px] text-foreground-muted">3 languages · 8 soundscapes</span>
+      </div>
+      <div className="rounded-lg border border-cyan/30 bg-cyan/5 p-2 text-center">
+        <span className="text-[9px] font-medium text-cyan">Pro</span>
+        <span className="mt-0.5 block text-[7px] text-foreground-muted">1 language · Unlimited practice</span>
+      </div>
+      <div className="rounded-lg border border-white/[0.06] bg-white/[0.02] p-1.5 text-center">
+        <span className="text-[8px] font-medium text-foreground-muted">Free</span>
       </div>
     </div>
   );
@@ -214,7 +238,7 @@ function GalleryMembershipScreen() {
 function GalleryScreenContent({ screenshotId }: { screenshotId: string }) {
   switch (screenshotId) {
     case 'flashcard-view': return <GalleryFlashcardScreen />;
-    case 'practice-mode': return <GalleryPracticeScreen />;
+    case 'grammar-challenge': return <GalleryGrammarScreen />;
     case 'soundscapes': return <GallerySoundscapeScreen />;
     case 'breathing-orbs': return <GalleryBreathingScreen />;
     case 'progress': return <GalleryProgressScreen />;
@@ -256,17 +280,27 @@ function DeviceFrame({
       {/* Glow ring for active item */}
       <div
         className={`relative rounded-[44px] transition-shadow duration-500 ${
-          isActive ? 'shadow-[0_0_60px_rgba(139,92,246,0.3)]' : ''
+          isActive ? 'shadow-[0_0_60px_rgba(139,92,246,0.25),0_0_20px_rgba(6,182,212,0.1)]' : ''
         }`}
       >
-        {/* Device body */}
-        <div className="overflow-hidden rounded-[44px] border-[3px] border-white/10 bg-[#0a0a0f] p-3">
-          {/* Notch */}
-          <div className="absolute top-3 left-1/2 z-20 h-[28px] w-[100px] -translate-x-1/2 rounded-full bg-black" />
+        {/* Device body — titanium-style frame */}
+        <div className="overflow-hidden rounded-[44px] border-[3px] border-white/[0.12] bg-[#08080d] p-3 shadow-[0_20px_50px_rgba(0,0,0,0.4),0_0_1px_rgba(255,255,255,0.1)]">
+          {/* Bezel highlight */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[50%] rounded-t-[44px] bg-gradient-to-b from-white/[0.04] to-transparent" />
+
+          {/* Dynamic Island */}
+          <div className="absolute top-3 left-1/2 z-20 h-[28px] w-[100px] -translate-x-1/2 rounded-full bg-black shadow-[0_0_0_1px_rgba(255,255,255,0.05)]" />
 
           {/* Screen */}
-          <div className="relative aspect-[9/19.5] overflow-hidden rounded-[36px] bg-surface">
+          <div
+            className="relative aspect-[9/19.5] overflow-hidden rounded-[36px] bg-surface"
+            style={{ boxShadow: 'inset 0 0 24px rgba(0,0,0,0.3), inset 0 1px 1px rgba(255,255,255,0.04)' }}
+          >
             <div className={`absolute inset-0 bg-gradient-to-br ${screenshot.gradient}`} />
+
+            {/* Subtle mesh texture */}
+            <div className="pointer-events-none absolute inset-0 opacity-[0.012]" style={{ backgroundImage: 'radial-gradient(circle at 25% 25%, white 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+
             <div className="relative flex h-full flex-col items-center justify-center gap-3 p-6 pt-14">
               <screenshot.icon size={48} className="text-foreground-secondary" aria-hidden />
               <span className="font-display text-sm font-bold text-foreground">
@@ -274,6 +308,19 @@ function DeviceFrame({
               </span>
 
               <GalleryScreenContent screenshotId={screenshot.id} />
+            </div>
+
+            {/* Glass reflection overlay */}
+            <div
+              className="pointer-events-none absolute inset-0 z-20"
+              style={{
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 35%, transparent 65%, rgba(255,255,255,0.015) 100%)',
+              }}
+            />
+
+            {/* Home indicator */}
+            <div className="pointer-events-none absolute inset-x-0 bottom-1.5 z-20 flex justify-center">
+              <div className="h-[3px] w-[80px] rounded-full bg-white/15" />
             </div>
           </div>
         </div>
@@ -407,7 +454,7 @@ export function ScreenshotGallery() {
         </motion.div>
       </div>
 
-      {/* Dot indicators with layout animation */}
+      {/* Dot indicators with glow on active */}
       <div className="mt-8 flex justify-center gap-2" role="tablist" aria-label="Screenshot navigation">
         {screenshots.map((_, i) => (
           <motion.button
@@ -417,7 +464,7 @@ export function ScreenshotGallery() {
             onClick={() => snapTo(i)}
             className={`h-2 rounded-full ${
               i === activeIndex
-                ? 'w-6 bg-violet'
+                ? 'w-6 bg-violet shadow-[0_0_8px_rgba(139,92,246,0.4)]'
                 : 'w-2 bg-foreground-muted/30'
             }`}
             transition={{ type: 'spring', stiffness: 300, damping: 25 }}

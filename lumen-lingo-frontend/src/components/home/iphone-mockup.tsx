@@ -11,48 +11,48 @@ import {
   BreathingOrbIcon,
 } from '@/components/icons';
 
-/* ─── Tab data ─── */
+/* ─── Tab data (matches real iOS app features) ─── */
 
 const TABS = [
   {
     id: 'flashcards',
     title: 'Immersive Flashcards',
     tabLabel: 'Cards',
-    gradient: 'from-violet/20 to-cyan/10',
+    gradient: 'from-violet/20 via-violet/8 to-cyan/10',
     icon: FlashcardIcon,
     label: 'Flashcard View',
   },
   {
-    id: 'practice',
-    title: 'Smart Practice',
-    tabLabel: 'Practice',
-    gradient: 'from-cyan/20 to-violet/10',
+    id: 'grammar',
+    title: 'Grammar Challenge',
+    tabLabel: 'Grammar',
+    gradient: 'from-cyan/20 via-cyan/8 to-violet/10',
     icon: SpacedRepetitionIcon,
-    label: 'Practice Mode',
+    label: 'Grammar Challenge',
   },
   {
     id: 'soundscapes',
     title: 'Ambient Soundscapes',
     tabLabel: 'Sounds',
-    gradient: 'from-violet/15 to-amber/10',
+    gradient: 'from-violet/15 via-amber/8 to-amber/10',
     icon: SoundscapeIcon,
     label: 'Soundscapes',
   },
   {
     id: 'progress',
-    title: 'Progress Tracking',
-    tabLabel: 'Stats',
-    gradient: 'from-amber/15 to-violet/10',
+    title: 'Your Journey',
+    tabLabel: 'Journey',
+    gradient: 'from-amber/15 via-amber/5 to-violet/10',
     icon: ProgressIcon,
     label: 'Your Progress',
   },
   {
     id: 'orbs',
     title: 'Breathing Orbs',
-    tabLabel: 'Breathe',
-    gradient: 'from-cyan/15 to-violet/15',
+    tabLabel: 'Orbs',
+    gradient: 'from-cyan/15 via-violet/8 to-violet/15',
     icon: BreathingOrbIcon,
-    label: 'Visual Calm',
+    label: 'Visual Ambiance',
   },
 ];
 
@@ -61,14 +61,32 @@ const AUTO_ADVANCE_MS = 5_000;
 /* ─── Screen transition variants ─── */
 
 const screenVariants = {
-  enter: (dir: number) => ({ x: dir * 20, opacity: 0 }),
-  center: { x: 0, opacity: 1 },
-  exit: (dir: number) => ({ x: dir * -20, opacity: 0 }),
+  enter: (dir: number) => ({
+    x: dir * 30,
+    opacity: 0,
+    scale: 0.96,
+    filter: 'blur(4px)',
+  }),
+  center: {
+    x: 0,
+    opacity: 1,
+    scale: 1,
+    filter: 'blur(0px)',
+  },
+  exit: (dir: number) => ({
+    x: dir * -30,
+    opacity: 0,
+    scale: 0.96,
+    filter: 'blur(4px)',
+  }),
 };
 
-const screenTransition = { duration: 0.2, ease: [0.22, 1, 0.36, 1] as const };
+const screenTransition = {
+  duration: 0.35,
+  ease: [0.22, 1, 0.36, 1] as const,
+};
 
-/* ─── Tab-specific mock content ─── */
+/* ─── Tab-specific screen content (accurate to real iOS app) ─── */
 
 function FlashcardScreen() {
   return (
@@ -76,11 +94,14 @@ function FlashcardScreen() {
       <span className="text-[9px] tracking-wide text-foreground-muted/70 uppercase">
         English → Japanese
       </span>
-      <div className="glass-card w-full rounded-xl border border-glass-border p-3 text-center">
-        <span className="font-display text-base font-bold text-foreground">
+      {/* Glassmorphic flashcard with subtle glow */}
+      <div className="relative w-full overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.04] p-3 text-center backdrop-blur-sm">
+        <div className="pointer-events-none absolute -top-6 -right-6 h-16 w-16 rounded-full bg-violet/15 blur-xl" />
+        <div className="pointer-events-none absolute -bottom-4 -left-4 h-12 w-12 rounded-full bg-cyan/10 blur-xl" />
+        <span className="font-display relative text-base font-bold text-foreground">
           Serenity
         </span>
-        <div className="my-1.5 h-px w-full bg-glass-border" />
+        <div className="my-1.5 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
         <span className="text-xs text-cyan">静けさ</span>
         <span className="mt-0.5 block text-[9px] text-foreground-muted/60">
           shizukesa
@@ -90,40 +111,55 @@ function FlashcardScreen() {
         <span className="text-[9px] text-foreground-muted/60">3 of 12</span>
         <div className="flex gap-0.5">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
-            <div
+            <motion.div
               key={i}
-              className={`h-1 w-2 rounded-full ${i <= 3 ? 'bg-violet' : 'bg-white/10'}`}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: i * 0.03, duration: 0.2 }}
+              className={`h-1 w-2 rounded-full ${i <= 3 ? 'bg-violet shadow-[0_0_4px_rgba(139,92,246,0.5)]' : 'bg-white/10'}`}
             />
           ))}
         </div>
       </div>
-      <span className="mt-1 text-[8px] text-foreground-muted/40">Tap to flip</span>
+      <div className="flex items-center gap-1">
+        <span className="text-[8px] text-foreground-muted/40">Swipe or tap to flip</span>
+      </div>
     </div>
   );
 }
 
-function PracticeScreen() {
+function GrammarScreen() {
   return (
     <div className="mt-2 flex w-full flex-col gap-2">
-      <div className="rounded-lg border border-glass-border bg-white/5 p-2 text-center">
+      <div className="rounded-lg border border-white/[0.08] bg-white/[0.04] p-2.5 text-center backdrop-blur-sm">
         <span className="text-[10px] font-medium text-foreground">
           What does 光 mean?
         </span>
       </div>
-      {['Light', 'Shadow', 'Water', 'Wind'].map((opt, i) => (
-        <button
-          key={opt}
-          className={`rounded-lg border px-3 py-1.5 text-left text-[10px] transition-colors ${
-            i === 0
-              ? 'border-cyan/40 bg-cyan/10 text-cyan'
-              : 'border-glass-border bg-white/3 text-foreground-muted'
+      {[
+        { label: 'A. Light', correct: true },
+        { label: 'B. Shadow', correct: false },
+        { label: 'C. Water', correct: false },
+        { label: 'D. Wind', correct: false },
+      ].map((opt, i) => (
+        <motion.div
+          key={opt.label}
+          initial={{ opacity: 0, x: -8 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.1 + i * 0.06, duration: 0.25 }}
+          className={`rounded-lg border px-3 py-1.5 text-left text-[10px] ${
+            opt.correct
+              ? 'border-cyan/40 bg-cyan/10 text-cyan shadow-[0_0_12px_rgba(6,182,212,0.15)]'
+              : 'border-white/[0.06] bg-white/[0.02] text-foreground-muted'
           }`}
         >
-          {opt}
-        </button>
+          {opt.label}
+        </motion.div>
       ))}
-      <div className="mt-1 flex items-center justify-center gap-1">
-        <div className="h-1 w-8 rounded-full bg-violet" />
+      <div className="mt-1 flex items-center justify-center gap-1.5">
+        <div className="h-1 w-8 overflow-hidden rounded-full bg-white/10">
+          <div className="h-full w-[80%] rounded-full bg-gradient-to-r from-violet to-cyan" />
+        </div>
         <span className="text-[8px] text-foreground-muted/60">80% accuracy</span>
       </div>
     </div>
@@ -132,30 +168,61 @@ function PracticeScreen() {
 
 function SoundscapeScreen() {
   return (
-    <div className="mt-2 flex w-full flex-col items-center gap-3">
-      <div className="relative flex h-16 w-16 items-center justify-center rounded-full border border-violet/20 bg-violet/5">
-        <div className="absolute inset-0 rounded-full bg-violet/10 animate-pulse" />
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="relative text-violet">
-          <path d="M9 18V6l12 6-12 6z" fill="currentColor" />
+    <div className="mt-2 flex w-full flex-col items-center gap-2.5">
+      {/* Toggle-style ambient player (matches real app) */}
+      <div className="relative flex w-full items-center gap-3 rounded-xl border border-white/[0.08] bg-white/[0.04] p-2.5 backdrop-blur-sm">
+        <div className="relative flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet/30 to-amber/20">
+          <motion.div
+            className="absolute inset-0 rounded-full bg-violet/20"
+            animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+          />
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="relative text-violet">
+            <path d="M11 5L6 9H2v6h4l5 4V5z" fill="currentColor" />
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>
+        </div>
+        <div className="flex flex-1 flex-col gap-0.5">
+          <span className="font-display text-[10px] font-bold text-foreground">Paris Café</span>
+          <span className="text-[8px] text-foreground-muted/60">Cozy · Warm chatter &amp; clinking cups</span>
+        </div>
+      </div>
+      {/* Volume slider */}
+      <div className="flex w-full items-center gap-2 px-1">
+        <svg width="10" height="10" viewBox="0 0 24 24" className="text-foreground-muted/40">
+          <path d="M11 5L6 9H2v6h4l5 4V5z" fill="currentColor" />
+        </svg>
+        <div className="h-1 flex-1 overflow-hidden rounded-full bg-white/10">
+          <div className="h-full w-[65%] rounded-full bg-gradient-to-r from-violet/60 to-violet" />
+        </div>
+        <svg width="12" height="12" viewBox="0 0 24 24" className="text-foreground-muted/60">
+          <path d="M11 5L6 9H2v6h4l5 4V5z" fill="currentColor" />
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
         </svg>
       </div>
-      <span className="font-display text-[11px] font-bold text-foreground">Midnight Rain</span>
-      {/* Waveform bars */}
-      <div className="flex items-end gap-[2px] h-6">
-        {[3, 5, 8, 12, 6, 10, 4, 7, 11, 5, 9, 3, 6, 8, 4].map((h, i) => (
-          <div
-            key={i}
-            className="w-[3px] rounded-full bg-violet/40"
-            style={{ height: `${h * 2}px` }}
-          />
+      {/* Soundscape category pills */}
+      <div className="flex flex-wrap justify-center gap-1">
+        {['Cozy', 'Nature', 'Atmospheric', 'Travel'].map((cat, i) => (
+          <span
+            key={cat}
+            className={`rounded-full border px-2 py-0.5 text-[7px] ${
+              i === 0
+                ? 'border-violet/30 bg-violet/10 text-violet'
+                : 'border-white/[0.06] bg-white/[0.02] text-foreground-muted/60'
+            }`}
+          >
+            {cat}
+          </span>
         ))}
       </div>
-      <span className="text-[8px] text-foreground-muted/60">2:34 / 60:00</span>
+      <span className="text-[7px] text-foreground-muted/40">12 immersive soundscapes</span>
     </div>
   );
 }
 
 function ProgressScreen() {
+  const barHeights = [20, 32, 28, 40, 24, 36, 16];
   return (
     <div className="mt-2 flex w-full flex-col gap-2">
       <div className="flex items-center justify-between">
@@ -165,23 +232,27 @@ function ProgressScreen() {
       <div className="flex items-end justify-between gap-1 h-12">
         {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((day, i) => (
           <div key={day + i} className="flex flex-col items-center gap-1">
-            <div
-              className="w-4 rounded-sm bg-gradient-to-t from-violet/60 to-violet"
-              style={{ height: `${[20, 32, 28, 40, 24, 36, 16][i]}px` }}
+            <motion.div
+              initial={{ height: 0 }}
+              animate={{ height: barHeights[i] }}
+              transition={{ delay: 0.1 + i * 0.05, duration: 0.4, ease: 'easeOut' }}
+              className="w-4 rounded-sm bg-gradient-to-t from-violet/60 to-violet shadow-[0_0_8px_rgba(139,92,246,0.2)]"
             />
             <span className="text-[7px] text-foreground-muted/60">{day}</span>
           </div>
         ))}
       </div>
-      <div className="mt-1 flex justify-between rounded-lg border border-glass-border bg-white/3 px-2 py-1.5">
+      <div className="mt-1 flex justify-between rounded-lg border border-white/[0.08] bg-white/[0.04] px-2 py-1.5 backdrop-blur-sm">
         <div className="text-center">
           <span className="block text-[10px] font-bold text-violet">248</span>
           <span className="text-[7px] text-foreground-muted/60">XP</span>
         </div>
+        <div className="h-auto w-px bg-white/[0.06]" />
         <div className="text-center">
           <span className="block text-[10px] font-bold text-cyan">42</span>
           <span className="text-[7px] text-foreground-muted/60">Cards</span>
         </div>
+        <div className="h-auto w-px bg-white/[0.06]" />
         <div className="text-center">
           <span className="block text-[10px] font-bold text-amber">89%</span>
           <span className="text-[7px] text-foreground-muted/60">Mastery</span>
@@ -193,22 +264,52 @@ function ProgressScreen() {
 
 function BreathingOrbScreen() {
   return (
-    <div className="mt-2 flex w-full flex-col items-center gap-3">
-      <div className="relative flex h-20 w-20 items-center justify-center">
-        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan/20 to-violet/20 animate-pulse" />
-        <div className="absolute inset-2 rounded-full bg-gradient-to-br from-cyan/30 to-violet/30 blur-sm" />
-        <div className="relative h-10 w-10 rounded-full bg-gradient-to-br from-cyan/60 to-violet/60" />
+    <div className="mt-2 flex w-full flex-col items-center gap-2.5">
+      {/* City-themed orb preview (matches real app behavior) */}
+      <div className="relative flex h-20 w-full items-center justify-center">
+        {/* Orb cluster — 3 blurred orbs like the real app */}
+        <motion.div
+          className="absolute h-14 w-14 rounded-full bg-gradient-to-br from-indigo-500/30 to-pink-500/20 blur-lg"
+          animate={{
+            scale: [1, 1.15, 1],
+            x: [-4, 4, -4],
+            opacity: [0.4, 0.6, 0.4],
+          }}
+          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <motion.div
+          className="absolute h-10 w-10 translate-x-3 rounded-full bg-gradient-to-br from-amber-400/25 to-teal-400/15 blur-md"
+          animate={{
+            scale: [1.1, 1, 1.1],
+            y: [-3, 3, -3],
+            opacity: [0.3, 0.5, 0.3],
+          }}
+          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+        />
+        <motion.div
+          className="absolute h-12 w-12 -translate-x-2 translate-y-1 rounded-full bg-gradient-to-br from-purple-500/30 to-indigo-500/20 blur-lg"
+          animate={{
+            scale: [1, 1.2, 1],
+            x: [2, -2, 2],
+            opacity: [0.35, 0.55, 0.35],
+          }}
+          transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+        />
       </div>
-      <span className="font-display text-[11px] font-bold text-foreground">Breathe In</span>
-      <div className="flex gap-1">
-        {[1, 2, 3, 4].map((i) => (
-          <div
-            key={i}
-            className={`h-1 w-4 rounded-full ${i <= 2 ? 'bg-cyan' : 'bg-white/10'}`}
+      <span className="font-display text-[11px] font-bold text-foreground">Barcelona Nights</span>
+      {/* Color palette preview */}
+      <div className="flex gap-1.5">
+        {['bg-indigo-500', 'bg-pink-500', 'bg-amber-500', 'bg-teal-400', 'bg-purple-500'].map((color, i) => (
+          <motion.div
+            key={color}
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ delay: 0.2 + i * 0.05, type: 'spring', stiffness: 400 }}
+            className={`h-2.5 w-2.5 rounded-full ${color} shadow-lg`}
           />
         ))}
       </div>
-      <span className="text-[8px] text-foreground-muted/60">4-7-8 Relaxation</span>
+      <span className="text-[8px] text-foreground-muted/60">6 city-inspired colour schemes</span>
     </div>
   );
 }
@@ -216,7 +317,7 @@ function BreathingOrbScreen() {
 function ScreenContent({ tabId }: { tabId: string }) {
   switch (tabId) {
     case 'flashcards': return <FlashcardScreen />;
-    case 'practice': return <PracticeScreen />;
+    case 'grammar': return <GrammarScreen />;
     case 'soundscapes': return <SoundscapeScreen />;
     case 'progress': return <ProgressScreen />;
     case 'orbs': return <BreathingOrbScreen />;
@@ -229,16 +330,16 @@ function ScreenContent({ tabId }: { tabId: string }) {
 function StatusBar() {
   return (
     <div className="absolute top-4 right-0 left-0 z-30 flex items-center justify-between px-8">
-      <span className="text-[10px] font-medium leading-none text-foreground-muted">
+      <span className="text-[10px] font-semibold leading-none text-white/80">
         9:41
       </span>
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-1.5">
         {/* Cellular signal */}
         <svg
           width="13"
           height="8"
           viewBox="0 0 13 8"
-          className="text-foreground-muted"
+          className="text-white/70"
           aria-hidden
         >
           <rect x="0" y="5.5" width="2" height="2.5" rx="0.5" fill="currentColor" />
@@ -246,12 +347,19 @@ function StatusBar() {
           <rect x="7" y="1.5" width="2" height="6.5" rx="0.5" fill="currentColor" />
           <rect x="10.5" y="0" width="2" height="8" rx="0.5" fill="currentColor" />
         </svg>
+        {/* WiFi */}
+        <svg width="12" height="9" viewBox="0 0 16 12" className="text-white/70" aria-hidden>
+          <path d="M8 10.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" fill="currentColor" transform="translate(0,-2)" />
+          <path d="M4.93 8.36a4.5 4.5 0 0 1 6.14 0" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" fill="none" transform="translate(0,-2)" />
+          <path d="M2.1 5.53a8 8 0 0 1 11.8 0" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" fill="none" transform="translate(0,-2)" />
+          <path d="M.29 2.7A11 11 0 0 1 15.71 2.7" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" fill="none" transform="translate(0,-2)" />
+        </svg>
         {/* Battery */}
         <svg
           width="18"
           height="8"
           viewBox="0 0 18 8"
-          className="text-foreground-muted"
+          className="text-white/70"
           aria-hidden
         >
           <rect
@@ -318,21 +426,35 @@ export function IPhoneMockup() {
   return (
     <div className={prefersReduced ? '' : 'animate-float'}>
       <div className="relative mx-auto w-[280px] sm:w-[300px]">
-        {/* Glow behind device */}
-        <div className="absolute -inset-8 rounded-[60px] bg-violet/10 blur-[60px]" />
+        {/* Multi-layer ambient glow behind device */}
+        <div className="pointer-events-none absolute -inset-12">
+          <motion.div
+            className="absolute inset-0 rounded-[80px] bg-violet/12 blur-[80px]"
+            animate={{ opacity: [0.4, 0.7, 0.4] }}
+            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+          />
+          <motion.div
+            className="absolute inset-4 rounded-[60px] bg-cyan/8 blur-[60px]"
+            animate={{ opacity: [0.2, 0.4, 0.2] }}
+            transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+          />
+        </div>
 
-        {/* Device body */}
-        <div className="relative overflow-hidden rounded-[44px] border-[3px] border-white/10 bg-[#0a0a0f] p-3 shadow-2xl">
+        {/* Device body — titanium-style frame */}
+        <div className="relative overflow-hidden rounded-[44px] border-[3px] border-white/[0.12] bg-[#08080d] p-3 shadow-[0_25px_60px_rgba(0,0,0,0.5),0_0_1px_rgba(255,255,255,0.1)]">
+          {/* Bezel highlight — top specular reflection */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[60%] rounded-t-[44px] bg-gradient-to-b from-white/[0.06] to-transparent" />
+
           {/* Dynamic Island */}
-          <div className="absolute top-3 left-1/2 z-20 h-[28px] w-[100px] -translate-x-1/2 rounded-full bg-black" />
+          <div className="absolute top-3 left-1/2 z-20 h-[28px] w-[100px] -translate-x-1/2 rounded-full bg-black shadow-[0_0_0_1px_rgba(255,255,255,0.05)]" />
 
           {/* Status bar */}
           <StatusBar />
 
-          {/* Screen with inner shadow for device depth */}
+          {/* Screen with depth shadow and glass effect */}
           <div
             className="relative aspect-[9/19.5] overflow-hidden rounded-[36px] bg-surface"
-            style={{ boxShadow: 'inset 0 0 20px rgba(0,0,0,0.3)' }}
+            style={{ boxShadow: 'inset 0 0 30px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,0.05)' }}
           >
             {/* Screen content with directional slide transitions */}
             <AnimatePresence mode="wait" custom={direction}>
@@ -352,30 +474,52 @@ export function IPhoneMockup() {
                 {/* Gradient backdrop */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${current.gradient}`} />
 
+                {/* Subtle mesh noise texture */}
+                <div className="pointer-events-none absolute inset-0 opacity-[0.015]" style={{ backgroundImage: 'radial-gradient(circle at 25% 25%, white 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+
                 {/* Screen content (padded for tab bar) */}
                 <div className="relative flex flex-1 flex-col items-center justify-center gap-3 p-6 pt-12 pb-16">
-                  <current.icon
-                    size={48}
-                    className="text-foreground-secondary"
-                    aria-hidden
-                  />
-                  <span className="font-display text-sm font-bold text-foreground">
+                  <motion.div
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.3, delay: 0.05 }}
+                  >
+                    <current.icon
+                      size={48}
+                      className="text-foreground-secondary"
+                      aria-hidden
+                    />
+                  </motion.div>
+                  <motion.span
+                    className="font-display text-sm font-bold text-foreground"
+                    initial={{ opacity: 0, y: 4 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.25, delay: 0.1 }}
+                  >
                     {current.title}
-                  </span>
+                  </motion.span>
 
                   <ScreenContent tabId={current.id} />
                 </div>
               </motion.div>
             </AnimatePresence>
 
-            {/* Tab bar — real icons with layout-animated indicator pill */}
+            {/* Glass reflection overlay — diagonal light streak */}
+            <div
+              className="pointer-events-none absolute inset-0 z-20"
+              style={{
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 40%, transparent 60%, rgba(255,255,255,0.02) 100%)',
+              }}
+            />
+
+            {/* Tab bar — frosted glass with layout-animated indicator pill */}
             <LayoutGroup>
               <div
                 ref={tablistRef}
                 role="tablist"
                 aria-label="App features"
                 onKeyDown={handleKeyDown}
-                className="absolute inset-x-0 bottom-0 z-10 flex items-end justify-around border-t border-white/5 bg-surface/80 px-1 pb-4 pt-1.5 backdrop-blur-md"
+                className="absolute inset-x-0 bottom-0 z-10 flex items-end justify-around border-t border-white/[0.06] bg-surface/70 px-1 pb-4 pt-1.5 backdrop-blur-xl"
               >
                 {TABS.map((tab, i) => {
                   const Icon = tab.icon;
@@ -393,14 +537,14 @@ export function IPhoneMockup() {
                     >
                       <Icon
                         size={16}
-                        className={`transition-colors duration-150 ${
-                          isActive ? 'text-violet' : 'text-foreground-muted'
+                        className={`transition-colors duration-200 ${
+                          isActive ? 'text-violet drop-shadow-[0_0_4px_rgba(139,92,246,0.4)]' : 'text-foreground-muted/60'
                         }`}
                         aria-hidden
                       />
                       <span
-                        className={`text-[9px] leading-tight transition-colors duration-150 ${
-                          isActive ? 'text-violet' : 'text-foreground-muted'
+                        className={`text-[8px] leading-tight transition-colors duration-200 ${
+                          isActive ? 'text-violet' : 'text-foreground-muted/60'
                         }`}
                       >
                         {tab.tabLabel}
@@ -409,7 +553,7 @@ export function IPhoneMockup() {
                       {isActive && (
                         <motion.div
                           layoutId="mockupTabPill"
-                          className="absolute -bottom-1 h-[2px] w-4 rounded-full bg-violet"
+                          className="absolute -bottom-1 h-[2px] w-4 rounded-full bg-violet shadow-[0_0_6px_rgba(139,92,246,0.5)]"
                           transition={{
                             type: 'spring',
                             stiffness: 400,
@@ -422,10 +566,15 @@ export function IPhoneMockup() {
                 })}
               </div>
             </LayoutGroup>
+
+            {/* Home indicator */}
+            <div className="pointer-events-none absolute inset-x-0 bottom-1 z-20 flex justify-center">
+              <div className="h-[3px] w-[100px] rounded-full bg-white/20" />
+            </div>
           </div>
         </div>
 
-        {/* External dot indicators */}
+        {/* External dot indicators with glow */}
         <div className="mt-6 flex justify-center gap-2">
           {TABS.map((_, i) => (
             <button
@@ -433,8 +582,8 @@ export function IPhoneMockup() {
               onClick={() => goTo(i)}
               className={`h-1.5 rounded-full transition-all duration-300 ${
                 i === active
-                  ? 'w-6 bg-violet'
-                  : 'w-1.5 bg-foreground-muted/40 hover:bg-foreground-muted/60'
+                  ? 'w-6 bg-violet shadow-[0_0_8px_rgba(139,92,246,0.4)]'
+                  : 'w-1.5 bg-foreground-muted/30 hover:bg-foreground-muted/50'
               }`}
               aria-label={`View screenshot ${i + 1}`}
             />
