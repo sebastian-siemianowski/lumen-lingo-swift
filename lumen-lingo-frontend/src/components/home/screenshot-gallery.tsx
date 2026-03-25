@@ -180,33 +180,70 @@ function GalleryBreathingScreen() {
 }
 
 function GalleryProgressScreen() {
+  const barHeights = [16, 24, 20, 32, 18, 28, 12];
+  const barColors = [
+    'from-violet/40 to-violet/70',
+    'from-violet/50 to-violet/80',
+    'from-violet/45 to-violet/75',
+    'from-violet/60 to-cyan/80',
+    'from-violet/40 to-violet/70',
+    'from-violet/55 to-cyan/75',
+    'from-violet/35 to-violet/60',
+  ];
   return (
     <div className="mt-2 flex w-full flex-col gap-2">
-      <div className="flex items-end justify-between gap-0.5 h-10">
-        {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((day, i) => (
-          <div key={day + i} className="flex flex-col items-center gap-0.5">
-            <div
-              className="w-3 rounded-sm bg-gradient-to-t from-violet/60 to-violet shadow-[0_0_4px_rgba(139,92,246,0.15)]"
-              style={{ height: `${[16, 24, 20, 32, 18, 28, 12][i]}px` }}
-            />
-            <span className="text-[6px] text-foreground-muted/60">{day}</span>
+      {/* Mini level ring */}
+      <div className="flex items-center gap-2">
+        <div className="relative h-8 w-8 flex-shrink-0">
+          <svg viewBox="0 0 36 36" className="h-full w-full -rotate-90">
+            <circle cx="18" cy="18" r="15" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="3" />
+            <circle cx="18" cy="18" r="15" fill="none" stroke="url(#galleryProgressGrad)" strokeWidth="3" strokeLinecap="round" strokeDasharray="94.25" strokeDashoffset={94.25 * 0.28} />
+            <defs>
+              <linearGradient id="galleryProgressGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="rgb(139,92,246)" />
+                <stop offset="100%" stopColor="rgb(6,182,212)" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="text-[8px] font-bold text-foreground">12</span>
           </div>
-        ))}
+        </div>
+        <div className="flex flex-col">
+          <span className="text-[8px] font-medium text-foreground">Level 12</span>
+          <span className="text-[6px] text-foreground-muted/60">152 / 350 XP</span>
+        </div>
+        <span className="ml-auto text-[8px] text-amber">\uD83D\uDD25 7</span>
       </div>
-      <div className="flex justify-between rounded-md border border-white/[0.08] bg-white/[0.04] px-2 py-1 backdrop-blur-sm">
+      {/* Chart with pill bars */}
+      <div className="flex items-end justify-between gap-1 h-10">
+        {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((day, i) => {
+          const isTallest = barHeights[i] === Math.max(...barHeights);
+          return (
+            <div key={day + i} className="flex flex-1 flex-col items-center gap-0.5">
+              <div
+                className={`w-full max-w-[14px] rounded-full bg-gradient-to-t ${barColors[i]} ${isTallest ? 'shadow-[0_0_8px_rgba(6,182,212,0.3)]' : ''}`}
+                style={{ height: `${barHeights[i]}px` }}
+              />
+              <span className="text-[6px] text-foreground-muted/50">{day}</span>
+            </div>
+          );
+        })}
+      </div>
+      <div className="flex justify-between rounded-lg border border-white/[0.08] bg-white/[0.04] px-2 py-1 backdrop-blur-sm">
         <div className="text-center">
           <span className="block text-[9px] font-bold text-violet">152</span>
-          <span className="text-[6px] text-foreground-muted/60">XP</span>
+          <span className="text-[6px] text-foreground-muted/50">XP</span>
         </div>
-        <div className="h-auto w-px bg-white/[0.06]" />
+        <div className="h-auto w-px bg-gradient-to-b from-transparent via-white/[0.08] to-transparent" />
         <div className="text-center">
           <span className="block text-[9px] font-bold text-cyan">31</span>
-          <span className="text-[6px] text-foreground-muted/60">Cards</span>
+          <span className="text-[6px] text-foreground-muted/50">Cards</span>
         </div>
-        <div className="h-auto w-px bg-white/[0.06]" />
+        <div className="h-auto w-px bg-gradient-to-b from-transparent via-white/[0.08] to-transparent" />
         <div className="text-center">
           <span className="block text-[9px] font-bold text-amber">92%</span>
-          <span className="text-[6px] text-foreground-muted/60">Acc</span>
+          <span className="text-[6px] text-foreground-muted/50">Acc</span>
         </div>
       </div>
     </div>
@@ -283,10 +320,13 @@ function DeviceFrame({
           isActive ? 'shadow-[0_0_60px_rgba(139,92,246,0.25),0_0_20px_rgba(6,182,212,0.1)]' : ''
         }`}
       >
-        {/* Device body — titanium-style frame */}
-        <div className="overflow-hidden rounded-[44px] border-[3px] border-white/[0.12] bg-[#08080d] p-3 shadow-[0_20px_50px_rgba(0,0,0,0.4),0_0_1px_rgba(255,255,255,0.1)]">
+        {/* Device body — titanium-style frame with edge shimmer */}
+        <div className="overflow-hidden rounded-[44px] border-[3px] border-white/[0.14] bg-[#08080d] p-3 shadow-[0_25px_60px_rgba(0,0,0,0.5),0_0_1px_rgba(255,255,255,0.12),0_0_30px_rgba(139,92,246,0.06)]">
           {/* Bezel highlight */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[50%] rounded-t-[44px] bg-gradient-to-b from-white/[0.04] to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[50%] rounded-t-[44px] bg-gradient-to-b from-white/[0.06] to-transparent" />
+          {/* Side edge highlights for 3D depth */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-[1px] bg-gradient-to-b from-white/[0.05] via-white/[0.015] to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-[1px] bg-gradient-to-b from-white/[0.05] via-white/[0.015] to-transparent" />
 
           {/* Dynamic Island */}
           <div className="absolute top-3 left-1/2 z-20 h-[28px] w-[100px] -translate-x-1/2 rounded-full bg-black shadow-[0_0_0_1px_rgba(255,255,255,0.05)]" />
@@ -302,8 +342,12 @@ function DeviceFrame({
             <div className="pointer-events-none absolute inset-0 opacity-[0.012]" style={{ backgroundImage: 'radial-gradient(circle at 25% 25%, white 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
 
             <div className="relative flex h-full flex-col items-center justify-center gap-3 p-6 pt-14">
-              <screenshot.icon size={48} className="text-foreground-secondary" aria-hidden />
-              <span className="font-display text-sm font-bold text-foreground">
+              <div className="relative">
+                {/* Soft icon halo */}
+                <div className="pointer-events-none absolute -inset-3 rounded-full bg-violet/10 blur-xl" />
+                <screenshot.icon size={48} className="relative text-foreground-secondary drop-shadow-[0_0_8px_rgba(139,92,246,0.3)]" aria-hidden />
+              </div>
+              <span className="font-display text-sm font-bold text-foreground drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]">
                 {screenshot.title}
               </span>
 
