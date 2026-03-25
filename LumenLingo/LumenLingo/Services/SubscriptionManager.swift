@@ -45,6 +45,16 @@ enum SubscriptionState: Equatable {
     case inBillingRetry(tier: MembershipTier)
     case revoked
     case expired
+
+    /// The tier associated with this state, if any.
+    var associatedTier: MembershipTier? {
+        switch self {
+        case .subscribed(let tier), .inGracePeriod(let tier), .inBillingRetry(let tier):
+            return tier
+        case .unknown, .notSubscribed, .revoked, .expired:
+            return nil
+        }
+    }
 }
 
 // MARK: - Purchase Error
@@ -103,6 +113,9 @@ final class SubscriptionManager {
 
     /// Whether this is the user's first-ever subscription (extended celebration).
     var isFirstSubscription: Bool = false
+
+    /// The tier before the most recent entitlement update (for analytics and animations).
+    private(set) var previousTier: MembershipTier?
 
     // MARK: - RevenueCat Offerings (Story 2.1)
 
@@ -635,28 +648,58 @@ final class SubscriptionManager {
 
     /// Handle a CustomerInfo update from RevenueCat.
     /// Maps entitlements → `SubscriptionState` and publishes to SwiftUI observers.
-    func handleRevenueCatCustomerInfo(_ info: RCCustomerInfo) {
-        latestCustomerInfo = info
+    /// Pure function: maps RevenueCat customer info to a SubscriptionState.
+    /// Handles all subscription states: active, trial, grace period, billing retry, expired, revoked.
+    static func mapEntitlementsToState(_ info: RCCustomerInfo) -> SubscriptionState {
         let tier = info.highestActiveTier
 
         if tier == .free {
-            if info.latestExpirationDate != nil {
-                // Had subscriptions before that have now expired
-                subscriptionState = .expired
-            } else {
-                subscriptionState = .notSubscribed
+            // Check for revocation: had entitlements that are no longer active
+            let hasRevokedEntitlement = info.allEntitlements.values.contains {
+                !$0.isActive && $0.ownershipType == .purchased
             }
-        } else if info.isTrialActive {
-            subscriptionState = .subscribed(tier: .trial)
-        } else if info.hasBillingIssue {
-            subscriptionState = .inGracePeriod(tier: tier)
-        } else {
-            subscriptionState = .subscribed(tier: tier)
+            if hasRevokedEntitlement {
+                return .revoked
+            }
+            if info.latestExpirationDate != nil {
+                return .expired
+            }
+            return .notSubscribed
         }
+
+        if info.isTrialActive {
+            return .subscribed(tier: .trial)
+        }
+
+        if info.hasBillingIssue {
+            // Distinguish grace period from billing retry:
+            // Grace period: entitlement active + billing issue + willRenew
+            // Billing retry: entitlement active + billing issue + !willRenew
+            let isInRetry = info.activeEntitlements.values.contains {
+                $0.billingIssueDetectedAt != nil && !$0.willRenew
+            }
+            return isInRetry ? .inBillingRetry(tier: tier) : .inGracePeriod(tier: tier)
+        }
+
+        return .subscribed(tier: tier)
+    }
+
+    func handleRevenueCatCustomerInfo(_ info: RCCustomerInfo) {
+        latestCustomerInfo = info
+
+        let newState = Self.mapEntitlementsToState(info)
+        let oldTier = subscriptionState.associatedTier
+        let newTier = newState.associatedTier
+
+        if oldTier != newTier {
+            previousTier = oldTier
+        }
+
+        subscriptionState = newState
 
         #if DEBUG
         let entitlementKeys = info.activeEntitlements.keys.sorted().joined(separator: ", ")
-        storeLog.debug("RC CustomerInfo: tier=\(tier.rawValue), state=\(String(describing: self.subscriptionState)), entitlements=[\(entitlementKeys)]")
+        storeLog.debug("RC CustomerInfo: tier=\(newTier?.rawValue ?? "nil"), state=\(String(describing: self.subscriptionState)), entitlements=[\(entitlementKeys)]")
         #endif
     }
 

@@ -24,7 +24,7 @@ Before submitting the app update with Clerk authentication:
 - [ ] All UI tests pass on target devices (`LumenLingoUITests/AuthFlowUITests.swift`)
 - [ ] Clerk Dashboard has correct redirect URIs for Prod environment
 - [ ] Apple Sign-in capability is enabled in App Store Connect
-- [ ] Google OAuth Client ID is configured for Prod bundle ID (`com.lumenlingo.app`)
+- [ ] Google OAuth Client ID is configured for Prod bundle ID (`com.lumenshore.lumenlingo`)
 - [ ] Test phone numbers are **disabled** in Prod Clerk instance
 - [ ] Feature flag `ff_clerk_auth_enabled` defaults to `false` for Prod (verified in `FeatureFlagService.swift`)
 - [ ] Monitoring alerts are configured in Sentry/Datadog (see [Alert Runbooks](#alert-runbooks))

@@ -4225,7 +4225,7 @@
 | **Incorporated** | 26 May 2015 |
 | **VAT number** | GB 270411929 |
 | **Contact email** | hello@lumenshore.com |
-| **Bundle ID** | com.lumenlingo.app |
+| **Bundle ID** | com.lumenshore.lumenlingo |
 | **Website** | lumenlingo.com |
 
 ---

@@ -415,7 +415,7 @@ Web → React Native:
 ### Apple Developer Setup
 
 1. **Enroll**: $99/year at developer.apple.com
-2. **Create App ID**: com.lumenlingo.app
+2. **Create App ID**: com.lumenshore.lumenlingo
 3. **App Store Connect**: Create app record
 4. **Screenshots**: iPhone + iPad (multiple sizes)
 5. **Privacy Policy**: Required URL

@@ -922,22 +922,22 @@ func fetchOfferings() async {
 
 #### Acceptance Criteria
 
-- [ ] **App Store Promotional Offers (subscription offers for existing/lapsed subscribers):**
+- [x] **App Store Promotional Offers (subscription offers for existing/lapsed subscribers):**
   - RevenueCat's `Purchases.shared.getPromotionalOffer(forProductDiscount:product:)` fetches the signed offer
   - The offer is passed to `purchase(package:promotionalOffer:)` during checkout
   - Promotional offers are only shown to eligible users (RevenueCat checks eligibility server-side)
   - The offer details (discount amount, duration) are displayed clearly on the paywall
-- [ ] **App Store Offer Codes (redeemable codes from marketing campaigns):**
+- [x] **App Store Offer Codes (redeemable codes from marketing campaigns):**
   - A "Redeem Code" button on the paywall calls `Purchases.shared.presentCodeRedemptionSheet()` (or `SKPaymentQueue.presentCodeRedemptionSheet()`)
   - After redemption, the `CustomerInfo` delegate fires with the new entitlement
   - The celebration and tier update flows work identically to a regular purchase
-- [ ] **RevenueCat Promotional Entitlements (manual grants):**
+- [x] **RevenueCat Promotional Entitlements (manual grants):**
   - If support grants a promotional entitlement via the RevenueCat dashboard, the next `CustomerInfo` refresh picks it up automatically
   - The UI reflects the granted entitlement within one app foreground cycle
-- [ ] Promotional offers show the original price with a strikethrough and the offer price highlighted
-- [ ] Promo code redemption errors (invalid, expired, already used) show clear, friendly messages
-- [ ] All promotional transactions are tracked in analytics with `promo_type` attribute (offer/code/manual_grant)
-- [ ] Promotional offers respect the same celebration and onboarding flows as regular purchases
+- [x] Promotional offers show the original price with a strikethrough and the offer price highlighted
+- [x] Promo code redemption errors (invalid, expired, already used) show clear, friendly messages
+- [x] All promotional transactions are tracked in analytics with `promo_type` attribute (offer/code/manual_grant)
+- [x] Promotional offers respect the same celebration and onboarding flows as regular purchases
 
 ---
 
@@ -958,17 +958,17 @@ func fetchOfferings() async {
   2. A sheet appears: "Sign in to secure your subscription" with Clerk's authentication options (Apple, Google, phone, email — see Clerk.md)
   3. The sheet explains: "Signing in lets you restore your subscription on any device"
   4. A "Continue without account" option allows the purchase to proceed anonymously (with a warning: "You may not be able to restore this subscription on another device")
-- [ ] After successful Clerk authentication from this gate:
+- [x] After successful Clerk authentication from this gate:
   1. `Purchases.shared.logIn(clerkUserID)` is called (Story 1.6)
   2. The purchase flow resumes automatically — the user does not have to tap "Subscribe" again
   3. The transition is seamless: auth sheet dismisses → App Store purchase sheet appears
-- [ ] If the user chooses "Continue without account":
+- [x] If the user chooses "Continue without account":
   1. The purchase proceeds on the anonymous RevenueCat ID
   2. A persistent but non-blocking reminder appears in Settings: "Sign in to protect your subscription"
   3. The user can sign in later, and Story 1.6's identity bridge will transfer the subscription
-- [ ] The auth gate does **not** appear if the user is already authenticated via Clerk
-- [ ] The auth gate does **not** appear for "Restore Purchases" (restoring doesn't require Clerk auth — it uses the Apple ID receipt)
-- [ ] VoiceOver announces the gate context: "Sign in to protect your subscription. You can also continue without an account."
+- [x] The auth gate does **not** appear if the user is already authenticated via Clerk
+- [x] The auth gate does **not** appear for "Restore Purchases" (restoring doesn't require Clerk auth — it uses the Apple ID receipt)
+- [x] VoiceOver announces the gate context: "Sign in to protect your subscription. You can also continue without an account."
 
 #### UX Details — Make Users Fall in Love
 

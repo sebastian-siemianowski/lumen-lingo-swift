@@ -1424,7 +1424,7 @@ STEP 3: APP.JSON CONFIGURATION
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.lumenlingo.app",
+      "bundleIdentifier": "com.lumenshore.lumenlingo",
       "buildNumber": "1.0.0",
       "infoPlist": {
         "NSFaceIDUsageDescription": "We use Face ID to secure your learning progress.",
@@ -1436,7 +1436,7 @@ STEP 3: APP.JSON CONFIGURATION
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#7C3AED"
       },
-      "package": "com.lumenlingo.app",
+      "package": "com.lumenshore.lumenlingo",
       "versionCode": 1
     },
     "web": {
@@ -1638,7 +1638,7 @@ APPLE DEVELOPER ACCOUNT SETUP
 2. Create App ID
    - Go to Certificates, Identifiers & Profiles
    - Create new identifier
-   - Bundle ID: com.lumenlingo.app
+   - Bundle ID: com.lumenshore.lumenlingo
    - Enable capabilities:
      * In-App Purchase
      * Push Notifications
@@ -1650,7 +1650,7 @@ APPLE DEVELOPER ACCOUNT SETUP
    - Platform: iOS
    - Name: LumenLingo
    - Primary Language: English
-   - Bundle ID: com.lumenlingo.app
+   - Bundle ID: com.lumenshore.lumenlingo
    - SKU: LUMENLINGO001
 
 4. App Store Listing Information

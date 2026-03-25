@@ -707,4 +707,402 @@ final class OfferingsFetchTests: XCTestCase {
         XCTAssertEqual(SubscriptionManager.TierChangeDirection.upgrade, .upgrade)
         XCTAssertNotEqual(SubscriptionManager.TierChangeDirection.upgrade, .downgrade)
     }
+
+    // MARK: - Story 3.4: Promotional Offers & Promo Codes
+
+    func testPromotionalOffersDefaultsToEmpty() async {
+        await mockRC.configure(apiKey: "test_key", appUserID: nil)
+        await subscriptionManager.fetchOfferings(from: mockRC)
+
+        // Default mock packages have no promo offers
+        let promos = subscriptionManager.promotionalOffers(for: .pro)
+        XCTAssertTrue(promos.isEmpty, "Default packages should have no promo offers")
+    }
+
+    func testBestPromoOfferNilByDefault() async {
+        await mockRC.configure(apiKey: "test_key", appUserID: nil)
+        await subscriptionManager.fetchOfferings(from: mockRC)
+
+        XCTAssertNil(subscriptionManager.bestPromoOffer(for: .pro))
+    }
+
+    func testGetPromotionalOfferReturnsSignedOffer() async throws {
+        await mockRC.configure(apiKey: "test_key", appUserID: nil)
+        await subscriptionManager.fetchOfferings(from: mockRC)
+
+        guard let pkg = subscriptionManager.package(for: .pro) else {
+            XCTFail("Expected pro package")
+            return
+        }
+
+        let signedOffer = try await mockRC.getPromotionalOffer(
+            offerIdentifier: "promo_50_off",
+            package: pkg
+        )
+
+        XCTAssertEqual(signedOffer.offerIdentifier, "promo_50_off")
+        XCTAssertFalse(signedOffer.signature.isEmpty)
+        XCTAssertTrue(signedOffer.timestamp > 0)
+    }
+
+    func testGetPromotionalOfferFailsWhenOffline() async {
+        await mockRC.configure(apiKey: "test_key", appUserID: nil)
+        await subscriptionManager.fetchOfferings(from: mockRC)
+
+        guard let pkg = subscriptionManager.package(for: .pro) else {
+            XCTFail("Expected pro package")
+            return
+        }
+
+        mockRC.isOffline = true
+
+        do {
+            _ = try await mockRC.getPromotionalOffer(offerIdentifier: "promo_50_off", package: pkg)
+            XCTFail("Should throw when offline")
+        } catch let error as RCError {
+            XCTAssertEqual(error, .offlineMode)
+        } catch {
+            XCTFail("Unexpected error type: \(error)")
+        }
+    }
+
+    func testPurchaseWithPromoOfferSuccess() async {
+        await mockRC.configure(apiKey: "test_key", appUserID: nil)
+        await subscriptionManager.fetchOfferings(from: mockRC)
+        mockRC.nextPurchaseScenario = .happyPath
+
+        let outcome = await subscriptionManager.purchaseWithPromoOffer(
+            for: .elite,
+            offerIdentifier: "promo_50_off",
+            using: mockRC
+        )
+
+        if case .success(let tier) = outcome {
+            XCTAssertEqual(tier, .elite)
+        } else {
+            XCTFail("Expected success, got \(outcome)")
+        }
+    }
+
+    func testPurchaseWithPromoOfferErrorMessage() async {
+        await mockRC.configure(apiKey: "test_key", appUserID: nil)
+        await subscriptionManager.fetchOfferings(from: mockRC)
+        mockRC.isOffline = true
+
+        let outcome = await subscriptionManager.purchaseWithPromoOffer(
+            for: .pro,
+            offerIdentifier: "promo_50_off",
+            using: mockRC
+        )
+
+        if case .error = outcome {
+            XCTAssertEqual(
+                subscriptionManager.errorMessage,
+                "Promotional offer could not be applied. Please try again."
+            )
+        } else {
+            XCTFail("Expected error, got \(outcome)")
+        }
+    }
+
+    func testRCPromoOfferEquatable() {
+        let offer1 = RCPackage.RCPromoOffer(
+            id: "promo_1",
+            priceString: "$4.99",
+            price: 4.99,
+            period: "3 months",
+            paymentMode: .payAsYouGo
+        )
+        let offer2 = RCPackage.RCPromoOffer(
+            id: "promo_1",
+            priceString: "$4.99",
+            price: 4.99,
+            period: "3 months",
+            paymentMode: .payAsYouGo
+        )
+        XCTAssertEqual(offer1, offer2)
+    }
+
+    func testRCSignedPromoOfferEquatable() {
+        let nonce = UUID()
+        let signed1 = RCSignedPromoOffer(
+            offerIdentifier: "promo_1",
+            keyIdentifier: "key_1",
+            nonce: nonce,
+            signature: "sig",
+            timestamp: 1000
+        )
+        let signed2 = RCSignedPromoOffer(
+            offerIdentifier: "promo_1",
+            keyIdentifier: "key_1",
+            nonce: nonce,
+            signature: "sig",
+            timestamp: 1000
+        )
+        XCTAssertEqual(signed1, signed2)
+    }
+
+    func testPurchaseWithPromoOfferNoPackageReturnsError() async {
+        // Don't fetch offerings → no packages available
+        let outcome = await subscriptionManager.purchaseWithPromoOffer(
+            for: .pro,
+            offerIdentifier: "promo_50_off",
+            using: mockRC
+        )
+
+        if case .error(let msg) = outcome {
+            XCTAssertEqual(msg, "Subscription product not found.")
+        } else {
+            XCTFail("Expected error, got \(outcome)")
+        }
+    }
+
+    // MARK: - Story 3.5: Pre-Purchase Authentication Gate
+
+    func testMockAuthServiceDefaultsToAuthenticated() {
+        let authService = MockAuthService()
+        XCTAssertTrue(authService.isAuthenticated, "MockAuthService should default to authenticated")
+        XCTAssertFalse(authService.isGuestMode, "MockAuthService should not be in guest mode by default")
+    }
+
+    func testMockAuthServiceGuestMode() {
+        let authService = MockAuthService()
+        authService.continueAsGuest()
+        XCTAssertTrue(authService.isGuestMode, "After continueAsGuest, isGuestMode should be true")
+    }
+
+    func testAuthGateNotNeededWhenAuthenticated() {
+        let authService = MockAuthService()
+        // Simulate the gate logic: gate shows when NOT authenticated and NOT guest
+        let shouldShowGate = !authService.isAuthenticated && !authService.isGuestMode
+        XCTAssertFalse(shouldShowGate, "Auth gate should not show when user is authenticated")
+    }
+
+    func testAuthGateNotNeededInGuestMode() {
+        let authService = MockAuthService()
+        authService.continueAsGuest()
+        let shouldShowGate = !authService.isAuthenticated && !authService.isGuestMode
+        XCTAssertFalse(shouldShowGate, "Auth gate should not show in guest mode")
+    }
+
+    func testPurchaseProceedsWhenAuthenticated() async {
+        // Authenticated user can purchase directly (no gate needed)
+        await mockRC.configure(apiKey: "test_key", appUserID: nil)
+        await subscriptionManager.fetchOfferings(from: mockRC)
+        mockRC.nextPurchaseScenario = .happyPath
+
+        let outcome = await subscriptionManager.purchasePackage(for: .pro, using: mockRC)
+
+        if case .success(let tier) = outcome {
+            XCTAssertEqual(tier, .pro)
+        } else {
+            XCTFail("Expected success, got \(outcome)")
+        }
+    }
+
+    func testRestoreDoesNotRequireAuth() async {
+        // Restore works regardless of auth state — it uses Apple ID receipt
+        await mockRC.configure(apiKey: "test_key", appUserID: nil)
+        await subscriptionManager.fetchOfferings(from: mockRC)
+        mockRC.simulateUpgrade(to: .elite)
+
+        let outcome = await subscriptionManager.restoreViaRevenueCat(using: mockRC)
+
+        if case .restored(let tier) = outcome {
+            XCTAssertEqual(tier, .elite)
+        } else {
+            XCTFail("Expected restored, got \(outcome)")
+        }
+    }
+
+    // MARK: - Story 4.1: Map RevenueCat Entitlements to MembershipTier
+
+    // MARK: Helper — Build RCCustomerInfo
+
+    private func makeEntitlement(
+        id: String,
+        isActive: Bool = true,
+        willRenew: Bool = true,
+        periodType: RCEntitlement.RCPeriodType = .normal,
+        billingIssueDetectedAt: Date? = nil,
+        ownershipType: RCEntitlement.RCOwnershipType = .purchased
+    ) -> RCEntitlement {
+        RCEntitlement(
+            id: id,
+            isActive: isActive,
+            willRenew: willRenew,
+            periodType: periodType,
+            latestPurchaseDate: .now,
+            originalPurchaseDate: .now,
+            expirationDate: .now.addingTimeInterval(30 * 86400),
+            productIdentifier: "com.lumenlingo.\(id)",
+            isSandbox: true,
+            ownershipType: ownershipType,
+            billingIssueDetectedAt: billingIssueDetectedAt
+        )
+    }
+
+    private func makeCustomerInfo(
+        active: [RCEntitlement] = [],
+        all: [RCEntitlement]? = nil,
+        latestExpirationDate: Date? = nil
+    ) -> RCCustomerInfo {
+        let activeDict = Dictionary(uniqueKeysWithValues: active.map { ($0.id, $0) })
+        let allDict = all.map { Dictionary(uniqueKeysWithValues: $0.map { ($0.id, $0) }) } ?? activeDict
+        return RCCustomerInfo(
+            originalAppUserId: "test_user",
+            activeEntitlements: activeDict,
+            allEntitlements: allDict,
+            activeSubscriptions: Set(active.map(\.productIdentifier)),
+            allPurchasedProductIdentifiers: Set(allDict.values.map(\.productIdentifier)),
+            latestExpirationDate: latestExpirationDate,
+            firstSeenDate: .now,
+            requestDate: .now,
+            managementURL: nil
+        )
+    }
+
+    // MARK: Pure Mapping Tests
+
+    func testMapNoEntitlementsToFree() {
+        let info = makeCustomerInfo()
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .notSubscribed)
+    }
+
+    func testMapProEntitlementToSubscribedPro() {
+        let info = makeCustomerInfo(active: [
+            makeEntitlement(id: RCEntitlementID.proAccess)
+        ])
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .subscribed(tier: .pro))
+    }
+
+    func testMapEliteEntitlementsToSubscribedElite() {
+        let info = makeCustomerInfo(active: [
+            makeEntitlement(id: RCEntitlementID.proAccess),
+            makeEntitlement(id: RCEntitlementID.eliteAccess)
+        ])
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .subscribed(tier: .elite))
+    }
+
+    func testMapRoyalEntitlementsToSubscribedRoyal() {
+        let info = makeCustomerInfo(active: [
+            makeEntitlement(id: RCEntitlementID.proAccess),
+            makeEntitlement(id: RCEntitlementID.eliteAccess),
+            makeEntitlement(id: RCEntitlementID.royalAccess)
+        ])
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .subscribed(tier: .royal))
+    }
+
+    func testMapRoyalOnlyDefensive() {
+        // royal_access active without pro/elite — should still map to royal
+        let info = makeCustomerInfo(active: [
+            makeEntitlement(id: RCEntitlementID.royalAccess)
+        ])
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .subscribed(tier: .royal))
+    }
+
+    func testMapTrialToSubscribedTrial() {
+        let info = makeCustomerInfo(active: [
+            makeEntitlement(id: RCEntitlementID.royalAccess, periodType: .trial)
+        ])
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .subscribed(tier: .trial))
+    }
+
+    func testMapGracePeriodWithBillingIssue() {
+        let info = makeCustomerInfo(active: [
+            makeEntitlement(id: RCEntitlementID.proAccess, billingIssueDetectedAt: .now)
+        ])
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .inGracePeriod(tier: .pro))
+    }
+
+    func testMapBillingRetryWhenWillRenewFalse() {
+        let info = makeCustomerInfo(active: [
+            makeEntitlement(id: RCEntitlementID.eliteAccess, willRenew: false, billingIssueDetectedAt: .now),
+            makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false, billingIssueDetectedAt: .now)
+        ])
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .inBillingRetry(tier: .elite))
+    }
+
+    func testMapExpiredWithExpirationDate() {
+        let info = makeCustomerInfo(
+            active: [],
+            latestExpirationDate: .now.addingTimeInterval(-86400)
+        )
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .expired)
+    }
+
+    func testMapRevokedWhenInactiveEntitlementsExist() {
+        let revokedEntitlement = makeEntitlement(id: RCEntitlementID.proAccess, isActive: false)
+        let info = makeCustomerInfo(
+            active: [],
+            all: [revokedEntitlement]
+        )
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .revoked)
+    }
+
+    func testMapIsPureFunction() {
+        // Same input → same output, no side effects
+        let info = makeCustomerInfo(active: [
+            makeEntitlement(id: RCEntitlementID.eliteAccess),
+            makeEntitlement(id: RCEntitlementID.proAccess)
+        ])
+        let state1 = SubscriptionManager.mapEntitlementsToState(info)
+        let state2 = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state1, state2)
+    }
+
+    // MARK: handleRevenueCatCustomerInfo Integration
+
+    func testHandleCustomerInfoUpdatesPreviousTier() {
+        // Start with pro
+        let proInfo = makeCustomerInfo(active: [
+            makeEntitlement(id: RCEntitlementID.proAccess)
+        ])
+        subscriptionManager.handleRevenueCatCustomerInfo(proInfo)
+        XCTAssertEqual(subscriptionManager.subscriptionState, .subscribed(tier: .pro))
+
+        // Upgrade to elite
+        let eliteInfo = makeCustomerInfo(active: [
+            makeEntitlement(id: RCEntitlementID.proAccess),
+            makeEntitlement(id: RCEntitlementID.eliteAccess)
+        ])
+        subscriptionManager.handleRevenueCatCustomerInfo(eliteInfo)
+        XCTAssertEqual(subscriptionManager.subscriptionState, .subscribed(tier: .elite))
+        XCTAssertEqual(subscriptionManager.previousTier, .pro)
+    }
+
+    func testHandleCustomerInfoSkipsPreviousTierWhenUnchanged() {
+        let proInfo = makeCustomerInfo(active: [
+            makeEntitlement(id: RCEntitlementID.proAccess)
+        ])
+        subscriptionManager.handleRevenueCatCustomerInfo(proInfo)
+
+        // Same tier again — previousTier should still be nil (from unknown → pro was nil → .pro)
+        subscriptionManager.handleRevenueCatCustomerInfo(proInfo)
+
+        // previousTier should be nil since the first call set it (unknown→pro counts as change)
+        // but the second call should NOT update previousTier since tier didn't change
+        XCTAssertNil(subscriptionManager.previousTier,
+                     "previousTier should not update when tier is the same")
+    }
+
+    func testAssociatedTierReturnsCorrectly() {
+        XCTAssertEqual(SubscriptionState.subscribed(tier: .pro).associatedTier, .pro)
+        XCTAssertEqual(SubscriptionState.inGracePeriod(tier: .elite).associatedTier, .elite)
+        XCTAssertEqual(SubscriptionState.inBillingRetry(tier: .royal).associatedTier, .royal)
+        XCTAssertNil(SubscriptionState.notSubscribed.associatedTier)
+        XCTAssertNil(SubscriptionState.expired.associatedTier)
+        XCTAssertNil(SubscriptionState.revoked.associatedTier)
+        XCTAssertNil(SubscriptionState.unknown.associatedTier)
+    }
 }

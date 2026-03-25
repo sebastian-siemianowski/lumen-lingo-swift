@@ -35,7 +35,7 @@ Once developer privileges are obtained, this story re-enables iCloud Key-Value S
 - [ ] **1.3** Verify the Team ID is populated in Xcode → Signing & Capabilities
 
 ### 2. Provision the iCloud KVS Entitlement
-- [ ] **2.1** In the Apple Developer portal, create/update the App ID `com.lumenlingo.app` with the "iCloud" capability (Key-Value Storage enabled)
+- [ ] **2.1** In the Apple Developer portal, create/update the App ID `com.lumenshore.lumenlingo` with the "iCloud" capability (Key-Value Storage enabled)
 - [ ] **2.2** Regenerate the provisioning profile to include `com.apple.developer.ubiquity-kvstore-identifier`
 - [ ] **2.3** In `project.yml`, uncomment `CODE_SIGN_ENTITLEMENTS: LumenLingo/LumenLingo.entitlements`
 - [ ] **2.4** Set `DEVELOPMENT_TEAM` in `project.yml` to your actual Team ID
@@ -50,7 +50,7 @@ Once developer privileges are obtained, this story re-enables iCloud Key-Value S
 
 ### 4. Replace Mock SyncService with Real CloudKit Backend
 - [ ] **4.1** Add the CloudKit capability to the App ID (iCloud → CloudKit container)
-- [ ] **4.2** Create a CloudKit container `iCloud.com.lumenlingo.app`
+- [ ] **4.2** Create a CloudKit container `iCloud.com.lumenshore.lumenlingo`
 - [ ] **4.3** Define CloudKit record types: `UserProgressSnapshot` (totalXP, streakDays, level, gameRecords array)
 - [ ] **4.4** Implement `CloudKitSyncService` conforming to `SyncServiceProtocol` with real `uploadData` / `downloadData`
 - [ ] **4.5** Add conflict resolution for full progress data (merging XP, game records, streak)

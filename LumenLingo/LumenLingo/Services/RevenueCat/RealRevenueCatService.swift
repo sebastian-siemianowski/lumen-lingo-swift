@@ -195,65 +195,6 @@ final class RealRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
         )
     }
 
-    func purchase(package: RCPackage, promotionalOffer: RCSignedPromoOffer) async throws -> RCPurchaseResult {
-        guard let offerings = try? await Purchases.shared.offerings(),
-              let realPackage = findRealPackage(package, in: offerings) else {
-            throw RCError.productNotFound
-        }
-
-        // Find the matching StoreProductDiscount by offerIdentifier
-        guard let discount = realPackage.storeProduct.discounts.first(where: {
-            $0.offerIdentifier == promotionalOffer.offerIdentifier
-        }) else {
-            throw RCError.productNotFound
-        }
-
-        do {
-            let promoOffer = try await Purchases.shared.promotionalOffer(
-                forProductDiscount: discount,
-                product: realPackage.storeProduct
-            )
-            let (_, info, userCancelled) = try await Purchases.shared.purchase(
-                package: realPackage,
-                promotionalOffer: promoOffer
-            )
-            let mapped = Self.mapCustomerInfo(info)
-            updateCustomerInfo(mapped)
-            return RCPurchaseResult(
-                customerInfo: mapped,
-                userCancelled: userCancelled,
-                transactionIdentifier: nil
-            )
-        } catch let error as RevenueCat.ErrorCode {
-            throw Self.mapError(error)
-        }
-    }
-
-    func getPromotionalOffer(offerIdentifier: String, package: RCPackage) async throws -> RCSignedPromoOffer {
-        guard let offerings = try? await Purchases.shared.offerings(),
-              let realPackage = findRealPackage(package, in: offerings) else {
-            throw RCError.productNotFound
-        }
-
-        guard let discount = realPackage.storeProduct.discounts.first(where: {
-            $0.offerIdentifier == offerIdentifier
-        }) else {
-            throw RCError.productNotFound
-        }
-
-        let promoOffer = try await Purchases.shared.promotionalOffer(
-            forProductDiscount: discount,
-            product: realPackage.storeProduct
-        )
-        return RCSignedPromoOffer(
-            offerIdentifier: offerIdentifier,
-            keyIdentifier: promoOffer.discount.offerIdentifier ?? "",
-            nonce: UUID(),
-            signature: "server_signed",
-            timestamp: Int(Date.now.timeIntervalSince1970)
-        )
-    }
-
     // MARK: - Customer Info
 
     func getCustomerInfo() async throws -> RCCustomerInfo {
@@ -400,10 +341,10 @@ final class RealRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
         let product = package.storeProduct
         let tier = SubscriptionProductID.tier(for: product.productIdentifier) ?? .free
 
-        let promoOffers: [RCPackage.RCPromoOffer] = product.discounts.compactMap { discount in
+        let promoOffers: [RCPackage.RCPromoOffer] = product.discounts.compactMap { discount -> RCPackage.RCPromoOffer? in
             guard let offerId = discount.offerIdentifier else { return nil }
-            let period = mapPromoOfferPeriod(discount)
-            let paymentMode = mapPromoPaymentMode(discount)
+            let period = Self.mapPromoOfferPeriod(discount)
+            let paymentMode = Self.mapPromoPaymentMode(discount)
             return RCPackage.RCPromoOffer(
                 id: offerId,
                 priceString: discount.localizedPriceString,
@@ -441,7 +382,7 @@ final class RealRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
         return "\(value) \(unitLabel)"
     }
 
-    static func mapPromoPaymentMode(_ discount: RevenueCat.StoreProductDiscount) -> RCPackage.RCPromoOffer.PaymentMode {
+    static func mapPromoPaymentMode(_ discount: RevenueCat.StoreProductDiscount) -> RCPackage.RCIntroOffer.PaymentMode {
         switch discount.paymentMode {
         case .freeTrial: .freeTrial
         case .payAsYouGo: .payAsYouGo

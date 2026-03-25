@@ -765,6 +765,7 @@ struct TierCardView: View {
     @Environment(TierManager.self) private var tierManager
     @Environment(SubscriptionManager.self) private var subscriptionManager
     @Environment(\.revenueCatService) private var revenueCatService
+    @Environment(\.authService) private var authService
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
     private var L: AppStrings { localization.strings }
@@ -785,6 +786,8 @@ struct TierCardView: View {
     @State private var buttonCompressed = false
     @State private var buttonShimmerPhase: CGFloat = 0
     @State private var currentBadgePulse = false
+    @State private var showAuthGate = false
+    @State private var pendingPurchaseTier: MembershipTier?
 
     /// Whether this card is the unlocking tier for a feature gate context.
     private var isFeatureGateTarget: Bool {
@@ -1038,39 +1041,14 @@ struct TierCardView: View {
                     }
                     tierManager.selectTier(tier.id, profile: profile)
                 } else {
-                    // Paid tier — RevenueCat purchase via service protocol
-                    // Button compression micro-transition
-                    withAnimation(.spring(response: 0.15, dampingFraction: 0.6)) {
-                        buttonCompressed = true
-                    }
-                    HapticsService.shared.medium()
-                    // Shimmer sweep then purchase
-                    withAnimation(.easeInOut(duration: 0.35)) {
-                        buttonShimmerPhase = 1.0
-                    }
+                    // Paid tier — Story 3.5: Auth gate for anonymous users
                     let mt = membershipTier
-                    Task {
-                        // Brief delay for micro-transition (fills 200-500ms App Store delay)
-                        try? await Task.sleep(for: .milliseconds(250))
-                        buttonCompressed = false
-                        buttonShimmerPhase = 0
-                        let outcome = await subscriptionManager.purchasePackage(for: mt, using: revenueCatService)
-                        switch outcome {
-                        case .success(let purchasedTier):
-                            // Golden flash before celebration
-                            withAnimation(.easeOut(duration: 0.2)) {
-                                subscriptionManager.showGoldenFlash = true
-                            }
-                            try? await Task.sleep(for: .milliseconds(200))
-                            subscriptionManager.showGoldenFlash = false
-                            withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
-                                selectedTierId = purchasedTier.rawValue
-                            }
-                            tierManager.selectTier(purchasedTier.rawValue, profile: profile)
-                        case .cancelled, .deferred, .error:
-                            break // States handled by SubscriptionManager properties
-                        }
+                    if !authService.isAuthenticated && !authService.isGuestMode {
+                        pendingPurchaseTier = mt
+                        showAuthGate = true
+                        return
                     }
+                    startPurchaseFlow(for: mt)
                 }
             } label: {
                 HStack(spacing: 6) {
@@ -1298,6 +1276,36 @@ struct TierCardView: View {
         .fullScreenCover(isPresented: $showTrialConfirmation) {
             TrialConfirmationView()
         }
+        // Story 3.5: Pre-purchase auth gate for anonymous users
+        .sheet(isPresented: $showAuthGate) {
+            PrePurchaseAuthGateView(
+                onAuthenticated: {
+                    showAuthGate = false
+                    if let tier = pendingPurchaseTier {
+                        // Seamless resume — purchase flow starts after auth
+                        Task {
+                            // Brief crossfade delay (300ms)
+                            try? await Task.sleep(for: .milliseconds(300))
+                            startPurchaseFlow(for: tier)
+                            pendingPurchaseTier = nil
+                        }
+                    }
+                },
+                onContinueWithoutAccount: {
+                    showAuthGate = false
+                    if let tier = pendingPurchaseTier {
+                        startPurchaseFlow(for: tier)
+                        pendingPurchaseTier = nil
+                    }
+                },
+                onDismiss: {
+                    showAuthGate = false
+                    pendingPurchaseTier = nil
+                }
+            )
+            .presentationDetents([.medium, .large])
+            .presentationDragIndicator(.visible)
+        }
     }
 
     // MARK: - CTA (Story 2.4)
@@ -1340,6 +1348,40 @@ struct TierCardView: View {
             return "\(promo.priceString) for \(promo.period), then \(subscriptionManager.offeringPrice(for: membershipTier))/mo"
         }
         return subscriptionManager.offeringPrice(for: membershipTier) + L.perMonth
+    }
+
+    // MARK: - Purchase Flow (Story 3.5)
+
+    private func startPurchaseFlow(for mt: MembershipTier) {
+        // Button compression micro-transition
+        withAnimation(.spring(response: 0.15, dampingFraction: 0.6)) {
+            buttonCompressed = true
+        }
+        HapticsService.shared.medium()
+        // Shimmer sweep then purchase
+        withAnimation(.easeInOut(duration: 0.35)) {
+            buttonShimmerPhase = 1.0
+        }
+        Task {
+            try? await Task.sleep(for: .milliseconds(250))
+            buttonCompressed = false
+            buttonShimmerPhase = 0
+            let outcome = await subscriptionManager.purchasePackage(for: mt, using: revenueCatService)
+            switch outcome {
+            case .success(let purchasedTier):
+                withAnimation(.easeOut(duration: 0.2)) {
+                    subscriptionManager.showGoldenFlash = true
+                }
+                try? await Task.sleep(for: .milliseconds(200))
+                subscriptionManager.showGoldenFlash = false
+                withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                    selectedTierId = purchasedTier.rawValue
+                }
+                tierManager.selectTier(purchasedTier.rawValue, profile: profile)
+            case .cancelled, .deferred, .error:
+                break
+            }
+        }
     }
 
     // MARK: - Animation (Story 2.2)
@@ -1654,5 +1696,112 @@ private struct RestoreBanner: View {
             onDismiss()
         }
         .accessibilityLabel("Restore result: \(message). Tap to dismiss.")
+    }
+}
+
+// MARK: - Pre-Purchase Auth Gate (Story 3.5)
+
+/// Sheet presented to anonymous users before purchase, encouraging sign-in for subscription protection.
+private struct PrePurchaseAuthGateView: View {
+    @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.authService) private var authService
+
+    var onAuthenticated: () -> Void
+    var onContinueWithoutAccount: () -> Void
+    var onDismiss: () -> Void
+
+    @State private var isAuthenticating = false
+    @State private var authError: String?
+
+    private var isDark: Bool { colorScheme == .dark }
+
+    var body: some View {
+        VStack(spacing: 24) {
+            // Header
+            VStack(spacing: 12) {
+                Image(systemName: "lock.shield.fill")
+                    .font(.system(size: 44))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.purple, .blue],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+
+                Text("Let's save your subscription")
+                    .font(.title2.bold())
+                    .multilineTextAlignment(.center)
+
+                Text("Signing in lets you restore your subscription on any device")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+            }
+            .padding(.top, 24)
+
+            // Auth buttons
+            VStack(spacing: 12) {
+                // Sign in with Apple
+                Button {
+                    Task {
+                        isAuthenticating = true
+                        authError = nil
+                        do {
+                            try await authService.signInWithApple()
+                            onAuthenticated()
+                        } catch {
+                            authError = "Sign-in failed. Please try again."
+                        }
+                        isAuthenticating = false
+                    }
+                } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: "apple.logo")
+                        Text("Sign in with Apple")
+                    }
+                    .font(.body.bold())
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 14)
+                    .background(
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .fill(.black)
+                    )
+                }
+                .disabled(isAuthenticating)
+            }
+            .padding(.horizontal, 24)
+
+            if let authError {
+                Text(authError)
+                    .font(.caption)
+                    .foregroundStyle(.red)
+            }
+
+            Spacer()
+
+            // Continue without account (secondary, text link style)
+            VStack(spacing: 8) {
+                Button {
+                    authService.continueAsGuest()
+                    onContinueWithoutAccount()
+                } label: {
+                    Text("Continue without account")
+                        .font(.subheadline)
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                        .underline()
+                }
+
+                Text("You may not be able to restore this subscription on another device")
+                    .font(.caption2)
+                    .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary.opacity(0.6))
+                    .multilineTextAlignment(.center)
+            }
+            .padding(.horizontal, 24)
+            .padding(.bottom, 16)
+        }
+        .accessibilityElement(children: .contain)
+        .accessibilityLabel("Sign in to protect your subscription. You can also continue without an account.")
     }
 }
