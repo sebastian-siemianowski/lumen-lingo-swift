@@ -14,6 +14,9 @@ struct SubscriptionDisclosureView: View {
     /// Callback when "Restore Purchases" is tapped.
     var onRestorePurchases: () -> Void = {}
 
+    /// Callback when "Redeem Code" is tapped (Story 3.4).
+    var onRedeemCode: () -> Void = {}
+
     private var L: AppStrings { localization.strings }
     private var isDark: Bool { colorScheme == .dark }
 
@@ -33,8 +36,11 @@ struct SubscriptionDisclosureView: View {
             // Legal links + Restore button
             legalLinks
 
-            // Restore Purchases
-            restoreButton
+            // Action buttons
+            HStack(spacing: 12) {
+                restoreButton
+                redeemCodeButton
+            }
         }
         .padding(.horizontal, 20)
         .padding(.vertical, 18)
@@ -142,13 +148,53 @@ struct SubscriptionDisclosureView: View {
 
     private var restoreButton: some View {
         Button {
+            guard !subscriptionManager.isRestoring else { return }
             HapticsService.shared.buttonPress()
             onRestorePurchases()
         } label: {
             HStack(spacing: 6) {
-                Image(systemName: "arrow.clockwise")
+                if subscriptionManager.isRestoring {
+                    ProgressView()
+                        .scaleEffect(0.7)
+                        .tint(isDark ? .white.opacity(0.6) : .secondary)
+                    Text("Restoring\u{2026}")
+                        .font(.system(size: 13, weight: .medium))
+                } else {
+                    Image(systemName: "arrow.clockwise")
+                        .font(.system(size: 12, weight: .medium))
+                    Text(L.restorePurchases)
+                        .font(.system(size: 13, weight: .medium))
+                }
+            }
+            .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 10)
+            .background(
+                Capsule()
+                    .fill(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.05))
+                    .overlay(
+                        Capsule()
+                            .strokeBorder(isDark ? Color.white.opacity(0.08) : Color.black.opacity(0.08), lineWidth: 0.5)
+                    )
+            )
+            .animation(.easeInOut(duration: 0.2), value: subscriptionManager.isRestoring)
+        }
+        .buttonStyle(.plain)
+        .disabled(subscriptionManager.isRestoring)
+        .accessibilityLabel(subscriptionManager.isRestoring ? "Restoring purchases" : L.restorePurchases)
+    }
+
+    // MARK: - Redeem Code (Story 3.4)
+
+    private var redeemCodeButton: some View {
+        Button {
+            HapticsService.shared.buttonPress()
+            onRedeemCode()
+        } label: {
+            HStack(spacing: 6) {
+                Image(systemName: "giftcard")
                     .font(.system(size: 12, weight: .medium))
-                Text(L.restorePurchases)
+                Text("Redeem Code")
                     .font(.system(size: 13, weight: .medium))
             }
             .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
@@ -164,6 +210,8 @@ struct SubscriptionDisclosureView: View {
             )
         }
         .buttonStyle(.plain)
-        .accessibilityLabel(L.restorePurchases)
+        .disabled(subscriptionManager.isPurchasing)
+        .accessibilityLabel("Redeem promotional code")
+        .accessibilityHint("Opens the App Store code redemption sheet")
     }
 }

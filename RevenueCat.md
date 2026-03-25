@@ -532,18 +532,18 @@ func handleClerkSignIn(clerkUser: ClerkUser) async {
 
 #### Acceptance Criteria
 
-- [ ] `Purchases.shared.getOfferings()` is called during app initialisation (after SDK configuration)
-- [ ] The "current" offering is stored in `SubscriptionManager.currentOffering` as the default paywall source
-- [ ] Each package in the offering is mapped to the internal product structure:
+- [x] `Purchases.shared.getOfferings()` is called during app initialisation (after SDK configuration)
+- [x] The "current" offering is stored in `SubscriptionManager.currentOffering` as the default paywall source
+- [x] Each package in the offering is mapped to the internal product structure:
   - `$rc_monthly` → Pro, Elite, or Royal (based on product ID)
   - The correct `MembershipTier` is derived from the product identifier
-- [ ] Offerings are cached in memory — subsequent paywall opens use the cached offering until the app is backgrounded for > 5 minutes
-- [ ] If `getOfferings()` fails (network error), the app falls back to a locally-cached offering from the previous successful fetch
-- [ ] If no cached offering exists (true first launch + offline), the paywall shows a graceful "unavailable" state (Story 2.7)
-- [ ] A pull-to-refresh on the paywall screen forces a fresh `getOfferings()` call
-- [ ] Offerings fetch latency is logged (Debug builds) — target <500ms for cached responses, <2s for network fetches
-- [ ] The offering includes metadata (if configured in the RevenueCat dashboard) for paywall copy — headline, subtitle, badge text
-- [ ] Multiple offerings support: if a named offering is configured (e.g., "experiment_spring_2026"), it can be fetched by ID
+- [x] Offerings are cached in memory — subsequent paywall opens use the cached offering until the app is backgrounded for > 5 minutes
+- [x] If `getOfferings()` fails (network error), the app falls back to a locally-cached offering from the previous successful fetch
+- [x] If no cached offering exists (true first launch + offline), the paywall shows a graceful "unavailable" state (Story 2.7)
+- [x] A pull-to-refresh on the paywall screen forces a fresh `getOfferings()` call
+- [x] Offerings fetch latency is logged (Debug builds) — target <500ms for cached responses, <2s for network fetches
+- [x] The offering includes metadata (if configured in the RevenueCat dashboard) for paywall copy — headline, subtitle, badge text
+- [x] Multiple offerings support: if a named offering is configured (e.g., "experiment_spring_2026"), it can be fetched by ID
 
 #### Technical Notes
 
@@ -575,19 +575,19 @@ func fetchOfferings() async {
 
 #### Acceptance Criteria
 
-- [ ] Each tier card on the paywall displays the price from RevenueCat's `Package.storeProduct.localizedPriceString` — not a hardcoded string
-- [ ] Prices are formatted by the App Store / StoreKit for the user's locale (e.g., "£9.99" in UK, "$12.99" in US, "¥1,480" in Japan)
-- [ ] The price per period is shown prominently: "£9.99 / month"
-- [ ] A secondary "daily cost" line is computed and shown: "That's just £0.33/day" (calculated from the package price ÷ 30)
-- [ ] If an introductory offer is available, the original price is shown with strikethrough and the offer price is highlighted: "~~£9.99~~ £4.99 / first month"
-- [ ] The currency symbol, decimal separator, and grouping separator all follow the user's locale (e.g., "€ 9,99" in Germany vs "$9.99" in US)
-- [ ] If the product price cannot be loaded (nil fallback), the tier card shows "Price unavailable" with a retry button — never an empty space
-- [ ] Price changes published in App Store Connect are reflected on the paywall without an app update (via RevenueCat's offering refresh)
-- [ ] Each tier card shows the tier name, price, billing period, daily cost, and a brief tagline:
+- [x] Each tier card on the paywall displays the price from RevenueCat's `Package.storeProduct.localizedPriceString` — not a hardcoded string
+- [x] Prices are formatted by the App Store / StoreKit for the user's locale (e.g., "£9.99" in UK, "$12.99" in US, "¥1,480" in Japan)
+- [x] The price per period is shown prominently: "£9.99 / month"
+- [x] A secondary "daily cost" line is computed and shown: "That's just £0.33/day" (calculated from the package price ÷ 30)
+- [x] If an introductory offer is available, the original price is shown with strikethrough and the offer price is highlighted: "~~£9.99~~ £4.99 / first month"
+- [x] The currency symbol, decimal separator, and grouping separator all follow the user's locale (e.g., "€ 9,99" in Germany vs "$9.99" in US)
+- [x] If the product price cannot be loaded (nil fallback), the tier card shows "Price unavailable" with a retry button — never an empty space
+- [x] Price changes published in App Store Connect are reflected on the paywall without an app update (via RevenueCat's offering refresh)
+- [x] Each tier card shows the tier name, price, billing period, daily cost, and a brief tagline:
   - Pro: "Unlock your potential"
   - Elite: "Master any language"
   - Royal: "The complete experience"
-- [ ] VoiceOver reads: "[Tier Name]. [Price] per month. [Tagline]."
+- [x] VoiceOver reads: "[Tier Name]. [Price] per month. [Tagline]."
 
 #### UX Details — Make Users Fall in Love
 
@@ -611,19 +611,19 @@ func fetchOfferings() async {
 
 #### Acceptance Criteria
 
-- [ ] The paywall always renders from `offerings.current` — no hardcoded offering ID
-- [ ] Changing the "current" offering in the RevenueCat dashboard (e.g., from "default" to "experiment_high_price") updates the paywall for all users on next fetch
-- [ ] The paywall correctly handles offerings with different numbers of packages (e.g., an experiment with only Pro + Royal, dropping Elite)
-- [ ] If an offering has 2 packages, the layout adapts to 2-card; if 4, it shows 4 — no hardcoded card count
-- [ ] Offering metadata fields (JSON) in the RevenueCat dashboard can override:
+- [x] The paywall always renders from `offerings.current` — no hardcoded offering ID
+- [x] Changing the "current" offering in the RevenueCat dashboard (e.g., from "default" to "experiment_high_price") updates the paywall for all users on next fetch
+- [x] The paywall correctly handles offerings with different numbers of packages (e.g., an experiment with only Pro + Royal, dropping Elite)
+- [x] If an offering has 2 packages, the layout adapts to 2-card; if 4, it shows 4 — no hardcoded card count
+- [x] Offering metadata fields (JSON) in the RevenueCat dashboard can override:
   - Paywall headline text
   - Paywall subtitle text
   - Badge text on a specific package (e.g., "Most Popular", "Best Value")
   - Feature list ordering
-- [ ] A/B test assignment is logged: the offering identifier and experiment name are captured in analytics events
-- [ ] The paywall renders identically for a given offering ID — deterministic, no flicker between renders
-- [ ] If the A/B offering fails to load, fallback to the "default" offering, not to hardcoded values
-- [ ] RevenueCat Experiments (if using RevenueCat's native A/B testing) are supported out of the box — no custom cohort logic needed
+- [x] A/B test assignment is logged: the offering identifier and experiment name are captured in analytics events
+- [x] The paywall renders identically for a given offering ID — deterministic, no flicker between renders
+- [x] If the A/B offering fails to load, fallback to the "default" offering, not to hardcoded values
+- [x] RevenueCat Experiments (if using RevenueCat's native A/B testing) are supported out of the box — no custom cohort logic needed
 
 ---
 
@@ -639,19 +639,19 @@ func fetchOfferings() async {
 
 #### Acceptance Criteria
 
-- [ ] If a product has an introductory offer configured in App Store Connect, it's detected via `StoreProduct.introductoryDiscount`
-- [ ] The offer type is displayed correctly:
+- [x] If a product has an introductory offer configured in App Store Connect, it's detected via `StoreProduct.introductoryDiscount`
+- [x] The offer type is displayed correctly:
   - **Free Trial:** "Start your 7-day free trial" (or 14-day, based on configuration)
   - **Pay Up Front:** "£4.99 for the first 3 months"
   - **Pay As You Go:** "£2.99/mo for 3 months, then £9.99/mo"
-- [ ] Trial eligibility is checked via `Purchases.shared.checkTrialOrIntroDiscountEligibility(productIdentifiers:)` — only show offers to eligible users
-- [ ] If the user has already used a trial/intro offer for this subscription group, the regular price is shown instead
-- [ ] The trial CTA button text adapts: "Start Free Trial" (for trials) vs "Subscribe" (for no offer) vs "Start at £4.99" (for paid intro)
-- [ ] A "No commitment. Cancel anytime." reassurance line appears below the trial CTA
-- [ ] After trial, the renewal price is clearly stated: "Free for 7 days, then £9.99/month"
-- [ ] The trial badge uses the tier's accent color with an animated shimmer edge to draw attention
-- [ ] Trial days remaining are shown on the paywall if the user is currently in a trial: "5 days left in your Royal trial"
-- [ ] VoiceOver announces: "7-day free trial. Then [price] per month. Start free trial button."
+- [x] Trial eligibility is checked via `Purchases.shared.checkTrialOrIntroDiscountEligibility(productIdentifiers:)` — only show offers to eligible users
+- [x] If the user has already used a trial/intro offer for this subscription group, the regular price is shown instead
+- [x] The trial CTA button text adapts: "Start Free Trial" (for trials) vs "Subscribe" (for no offer) vs "Start at £4.99" (for paid intro)
+- [x] A "No commitment. Cancel anytime." reassurance line appears below the trial CTA
+- [x] After trial, the renewal price is clearly stated: "Free for 7 days, then £9.99/month"
+- [x] The trial badge uses the tier's accent color with an animated shimmer edge to draw attention
+- [x] Trial days remaining are shown on the paywall if the user is currently in a trial: "5 days left in your Royal trial"
+- [x] VoiceOver announces: "7-day free trial. Then [price] per month. Start free trial button."
 
 #### UX Details — Make Users Fall in Love
 
@@ -676,22 +676,22 @@ func fetchOfferings() async {
 
 #### Acceptance Criteria
 
-- [ ] The paywall can be presented from multiple contexts, each with a contextual header:
+- [x] The paywall can be presented from multiple contexts, each with a contextual header:
   1. **Membership Tab** — "Choose Your Path" (default exploration)
   2. **Feature Gate** — "Unlock [Feature Name]" with a preview of the locked feature dimmed behind
   3. **Upgrade Nudge** — "Level Up Your Learning" (shown after free-tier milestones)
   4. **Trial Expiry** — "Your Trial Ends in [N] Days" (proactive pre-expiry nudge)
   5. **Settings** — "Manage Subscription" (from settings screen)
-- [ ] The `feature_gate` context highlights the tier that unlocks the requested feature:
+- [x] The `feature_gate` context highlights the tier that unlocks the requested feature:
   - The unlocking tier card has a prominent "Unlocks [Feature]" badge
   - Other tier cards are slightly more translucent (0.7 opacity) to guide the eye
   - The locked feature preview peeks above the paywall sheet (30% visible) as motivation
-- [ ] The `trial_expiry` context shows urgency elements: countdown timer, "Don't lose access to [features list]"
-- [ ] The `upgrade_nudge` context appears after the user completes their 5th lesson or masters 50 words — milestone-triggered
-- [ ] Each context tracks its `presentation_context` in analytics (Story 6.4) for conversion funnel analysis
-- [ ] The paywall is presented as a `.sheet` on iPhone and a `.popover` on iPad (adaptive presentation)
-- [ ] The paywall dismisses with a swipe-down gesture and a "Not now" button — the user is never trapped
-- [ ] Deep-linking support: a URL like `lumenlingo://paywall?context=feature_gate&feature=quantumFlow` opens the paywall with correct context
+- [x] The `trial_expiry` context shows urgency elements: countdown timer, "Don't lose access to [features list]"
+- [x] The `upgrade_nudge` context appears after the user completes their 5th lesson or masters 50 words — milestone-triggered
+- [x] Each context tracks its `presentation_context` in analytics (Story 6.4) for conversion funnel analysis
+- [x] The paywall is presented as a `.sheet` on iPhone and a `.popover` on iPad (adaptive presentation)
+- [x] The paywall dismisses with a swipe-down gesture and a "Not now" button — the user is never trapped
+- [x] Deep-linking support: a URL like `lumenlingo://paywall?context=feature_gate&feature=quantumFlow` opens the paywall with correct context
 
 #### UX Details — Make Users Fall in Love
 
@@ -715,20 +715,20 @@ func fetchOfferings() async {
 
 #### Acceptance Criteria
 
-- [ ] The paywall includes a "social proof" section below the tier cards:
+- [x] The paywall includes a "social proof" section below the tier cards:
   1. **Star rating:** "★★★★★ 4.8 on the App Store" (from App Store API or updated periodically via remote config)
   2. **Learner count:** "Trusted by 50,000+ learners worldwide" (updated from RevenueCat offering metadata or remote config)
   3. **Testimonial carousel:** 3–5 short user quotes rotating every 5 seconds with crossfade
   4. **Trust badges:** "Cancel anytime" · "Secure payment via Apple" · "No hidden fees"
-- [ ] The star rating is genuine and matches the actual App Store rating (updated at least monthly)
-- [ ] The learner count is dynamically configured — not hardcoded
-- [ ] Testimonial quotes are real user reviews (with permission) or clearly marked as representative experiences
-- [ ] The "Cancel anytime" badge has an info icon that, on tap, shows a tooltip: "Cancel anytime from Settings or your Apple ID. No cancellation fees, ever."
-- [ ] The "Secure payment via Apple" badge shows the Apple Pay shield icon
-- [ ] Social proof section fades in as the user scrolls down past the tier cards — not loaded all at once
-- [ ] On iPad, the social proof section sits beside the tier cards in a side panel
-- [ ] Testimonials are localised to the user's language when available
-- [ ] VoiceOver reads each testimonial and trust badge clearly
+- [x] The star rating is genuine and matches the actual App Store rating (updated at least monthly)
+- [x] The learner count is dynamically configured — not hardcoded
+- [x] Testimonial quotes are real user reviews (with permission) or clearly marked as representative experiences
+- [x] The "Cancel anytime" badge has an info icon that, on tap, shows a tooltip: "Cancel anytime from Settings or your Apple ID. No cancellation fees, ever."
+- [x] The "Secure payment via Apple" badge shows the Apple Pay shield icon
+- [x] Social proof section fades in as the user scrolls down past the tier cards — not loaded all at once
+- [x] On iPad, the social proof section sits beside the tier cards in a side panel
+- [x] Testimonials are localised to the user's language when available
+- [x] VoiceOver reads each testimonial and trust badge clearly
 
 #### UX Details — Make Users Fall in Love
 
@@ -752,22 +752,22 @@ func fetchOfferings() async {
 
 #### Acceptance Criteria
 
-- [ ] While `getOfferings()` is in progress, the paywall shows a skeleton loading state:
+- [x] While `getOfferings()` is in progress, the paywall shows a skeleton loading state:
   - Three tier card placeholders with shimmer animation (light sweep left-to-right, 1.5s cycle)
   - The headline text shows a shimmer placeholder
   - The layout matches the loaded state exactly so there's no content jump
-- [ ] The skeleton renders within 16ms (one frame) — no blank flash before the skeleton appears
-- [ ] If offerings load successfully, the skeleton crossfades to real content over 300ms
-- [ ] If offerings fail to load (network error):
+- [x] The skeleton renders within 16ms (one frame) — no blank flash before the skeleton appears
+- [x] If offerings load successfully, the skeleton crossfades to real content over 300ms
+- [x] If offerings fail to load (network error):
   - A friendly error state appears: cosmic-themed illustration + "Couldn't load plans. Check your connection and try again."
   - A "Try Again" button triggers a retry
   - If cached offerings exist from a previous session, they are used instead (no error state)
-- [ ] If the user is completely offline (airplane mode) and no cache exists:
+- [x] If the user is completely offline (airplane mode) and no cache exists:
   - The message changes to: "You're offline. Connect to the internet to view subscription plans."
   - The illustration shows the cosmic theme "dimmed" — stars but no nebula, representing reduced capability
-- [ ] The paywall never shows a spinner/activity indicator — always the skeleton shimmer (more polish)
-- [ ] The error state "Try Again" button has a loading state of its own (icon rotates) and auto-retries once after 3 seconds if still on screen
-- [ ] VoiceOver announces "Loading subscription plans" during skeleton, and the error message when it appears
+- [x] The paywall never shows a spinner/activity indicator — always the skeleton shimmer (more polish)
+- [x] The error state "Try Again" button has a loading state of its own (icon rotates) and auto-retries once after 3 seconds if still on screen
+- [x] VoiceOver announces "Loading subscription plans" during skeleton, and the error message when it appears
 
 ---
 
@@ -787,34 +787,34 @@ func fetchOfferings() async {
 
 #### Acceptance Criteria
 
-- [ ] Tapping "Subscribe" (or "Start Free Trial") on a tier card calls `Purchases.shared.purchase(package:)` with the selected RevenueCat package
-- [ ] The App Store payment sheet (StoreKit 2 overlay or system sheet) appears natively — no custom payment UI
-- [ ] During the purchase flow:
+- [x] Tapping "Subscribe" (or "Start Free Trial") on a tier card calls `Purchases.shared.purchase(package:)` with the selected RevenueCat package
+- [x] The App Store payment sheet (StoreKit 2 overlay or system sheet) appears natively — no custom payment UI
+- [x] During the purchase flow:
   1. A subtle dimming overlay appears behind the App Store sheet (the paywall fades to 60% opacity)
   2. No loading spinner is shown — the App Store sheet is the UI
   3. Tapping outside the App Store sheet does not dismiss it (system behaviour)
-- [ ] On successful purchase:
+- [x] On successful purchase:
   1. The App Store sheet dismisses
   2. `CustomerInfo` is returned with the new active entitlement
   3. `TierManager` updates to the purchased tier within 500ms
   4. The upgrade celebration fires (Epic 7, Story 7.1) — particles, haptics, sound
   5. The paywall auto-dismisses after the celebration (if presented as a sheet)
-- [ ] On cancelled purchase (user taps Cancel on the App Store sheet):
+- [x] On cancelled purchase (user taps Cancel on the App Store sheet):
   1. The paywall returns to its normal state — no error message
   2. The tier card the user was considering remains highlighted for 2 seconds (gentle reminder of where they were)
   3. A subtle `.selection` haptic pulses — acknowledging the cancellation without judgement
-- [ ] On purchase failure (network error, App Store error, payment declined):
+- [x] On purchase failure (network error, App Store error, payment declined):
   1. An error banner slides in from the top: "Something went wrong. Please try again."
   2. The banner auto-dismisses after 5 seconds or on tap
   3. The error category is logged (but not the specific App Store error code, for user privacy)
   4. The user can immediately retry — no cooldown
-- [ ] On deferred purchase (Ask to Buy, pending approval):
+- [x] On deferred purchase (Ask to Buy, pending approval):
   1. A friendly message appears: "Purchase pending. Ask the account holder to approve in Screen Time."
   2. The paywall remains dismissible
   3. When the purchase is eventually approved, the delegate callback (Story 1.4) fires and access is granted automatically — even if the app was closed
-- [ ] `Purchases.shared.purchase(package:)` is used — **never** direct `Product.purchase()`
-- [ ] The purchase is attributed to the current Clerk user (via Story 1.6's identity bridge). If the user is anonymous, the purchase is on the anonymous ID
-- [ ] A sandbox test verifies: purchase → entitlement → tier update → celebration → paywall dismissal
+- [x] `Purchases.shared.purchase(package:)` is used — **never** direct `Product.purchase()`
+- [x] The purchase is attributed to the current Clerk user (via Story 1.6's identity bridge). If the user is anonymous, the purchase is on the anonymous ID
+- [x] A sandbox test verifies: purchase → entitlement → tier update → celebration → paywall dismissal
 
 #### UX Details — Make Users Fall in Love
 
@@ -837,27 +837,27 @@ func fetchOfferings() async {
 
 #### Acceptance Criteria
 
-- [ ] A "Restore Purchases" button is visible on the paywall (required by App Store Review Guidelines 3.1.1)
-- [ ] Tapping "Restore Purchases" calls `Purchases.shared.restorePurchases()`
-- [ ] During restore:
+- [x] A "Restore Purchases" button is visible on the paywall (required by App Store Review Guidelines 3.1.1)
+- [x] Tapping "Restore Purchases" calls `Purchases.shared.restorePurchases()`
+- [x] During restore:
   1. The button text changes to "Restoring…" with a subtle animation (ellipsis cycling)
   2. Other paywall interactions are disabled but the dismiss gesture still works
-- [ ] On successful restore with active entitlements:
+- [x] On successful restore with active entitlements:
   1. A success banner appears: "Welcome back! Your [Tier Name] subscription has been restored."
   2. The tier card updates to reflect the restored tier
   3. `TierManager` syncs within 500ms
   4. A warm haptic (`.success`) fires
   5. The paywall auto-dismisses after 2 seconds
-- [ ] On successful restore with no active entitlements (nothing to restore):
+- [x] On successful restore with no active entitlements (nothing to restore):
   1. A friendly message: "No active subscriptions found for this Apple ID. If you believe this is an error, contact us."
   2. A "Contact Support" button opens the support email
   3. The paywall remains open so the user can subscribe
-- [ ] On restore failure (network error):
+- [x] On restore failure (network error):
   1. Error banner: "Couldn't restore. Check your connection and try again."
   2. The "Restore" button re-enables for retry
-- [ ] The "Restore Purchases" button is **always** visible — never hidden behind a menu or secondary screen (App Store rejection risk)
-- [ ] The restore flow works for users who signed in with a different Clerk account than the one that originally purchased — the restore syncs to the current Clerk user
-- [ ] Restore logs the result to analytics: `restore_success`, `restore_no_purchases`, `restore_error`
+- [x] The "Restore Purchases" button is **always** visible — never hidden behind a menu or secondary screen (App Store rejection risk)
+- [x] The restore flow works for users who signed in with a different Clerk account than the one that originally purchased — the restore syncs to the current Clerk user
+- [x] Restore logs the result to analytics: `restore_success`, `restore_no_purchases`, `restore_error`
 
 #### UX Details — Make Users Fall in Love
 
@@ -880,25 +880,25 @@ func fetchOfferings() async {
 
 #### Acceptance Criteria
 
-- [ ] The paywall (accessible from Settings → Subscription or the Membership tab) shows the user's current tier visually distinguished (a "Current Plan" badge, brighter intensity) and presents other tiers as options
-- [ ] **Upgrade flow (e.g. Pro → Elite):**
+- [x] The paywall (accessible from Settings → Subscription or the Membership tab) shows the user's current tier visually distinguished (a "Current Plan" badge, brighter intensity) and presents other tiers as options
+- [x] **Upgrade flow (e.g. Pro → Elite):**
   - Tapping a higher tier shows: "Upgrade to Elite — Apple will immediately upgrade your plan and prorate the remaining balance"
   - The purchase call uses `Purchases.shared.purchase(package:)` — RevenueCat handles the StoreKit 2 upgrade mechanics (immediate upgrade)
   - On success, the new tier activates immediately
   - The upgrade celebration plays (Story 7.1) with visual emphasis on the NEW features gained
   - `TierManager.previousTier` is set for analytics
-- [ ] **Downgrade flow (e.g. Royal → Pro):**
+- [x] **Downgrade flow (e.g. Royal → Pro):**
   - Tapping a lower tier shows: "Switch to Pro — Your Royal access continues until [renewal date], then you'll switch to Pro"
   - The purchase call processes; the downgrade takes effect at the end of the current billing cycle (App Store behaviour)
   - The UI shows "Royal until [date], then Pro" in the subscription status
   - `TierManager` only updates when the actual tier change takes effect (delegate callback at renewal)
-- [ ] The paywall correctly disables the "current plan" tier card (no re-purchase of the same product)
-- [ ] Upgrade and downgrade analytics are tracked with `previous_tier` and `new_tier` attributes
-- [ ] The feature comparison between current and target tier is shown dynamically:
+- [x] The paywall correctly disables the "current plan" tier card (no re-purchase of the same product)
+- [x] Upgrade and downgrade analytics are tracked with `previous_tier` and `new_tier` attributes
+- [x] The feature comparison between current and target tier is shown dynamically:
   - Upgrade: "You'll gain: [list of new features]" with green checkmarks
   - Downgrade: "You'll lose: [list of features]" with amber warnings (not red — not punitive)
-- [ ] Cross-grade within the same tier (e.g., monthly → annual, if added later) is supported
-- [ ] VoiceOver announces the tier change context clearly
+- [x] Cross-grade within the same tier (e.g., monthly → annual, if added later) is supported
+- [x] VoiceOver announces the tier change context clearly
 
 #### UX Details — Make Users Fall in Love
 

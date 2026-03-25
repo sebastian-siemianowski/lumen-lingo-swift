@@ -12,6 +12,7 @@ struct MembershipView: View {
     @Environment(\.horizontalSizeClass) private var sizeClass
     @Environment(TierManager.self) private var tierManager
     @Environment(SubscriptionManager.self) private var subscriptionManager
+    @Environment(\.revenueCatService) private var revenueCatService
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
     @PersistedState("membership_comparison_collapsed") private var isComparisonCollapsed = true
@@ -20,28 +21,67 @@ struct MembershipView: View {
     /// When true, shows a close button in the toolbar (for sheet presentations).
     var isSheet: Bool = false
 
+    /// The context driving this paywall's presentation (Story 2.5).
+    var paywallContext: PaywallContext = .membershipTab
+
     private var L: AppStrings { localization.strings }
     private var isDark: Bool { colorScheme == .dark }
 
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 32) {
-                heroSection
-                tiersSection
+                // Story 2.7: Show skeleton/error/content based on offerings state
+                switch subscriptionManager.offeringsState {
+                case .loading where subscriptionManager.currentOffering == nil:
+                    PaywallSkeletonView()
+                        .transition(.opacity)
+                case .error(let message) where subscriptionManager.currentOffering == nil:
+                    PaywallErrorView(
+                        message: message,
+                        isOffline: message.localizedCaseInsensitiveContains("offline") || message.localizedCaseInsensitiveContains("network"),
+                        onRetry: {
+                            Task { await subscriptionManager.fetchOfferings(from: revenueCatService, forceRefresh: true) }
+                        }
+                    )
+                    .transition(.opacity)
+                default:
+                    heroSection
+                    tiersSection
 
-                // Apple-required subscription disclosure (Guideline 3.1.2)
-                SubscriptionDisclosureView(
-                    onRestorePurchases: {
-                        Task { await subscriptionManager.restorePurchases() }
-                    }
-                )
+                    // Story 2.6: Social proof & trust signals
+                    SocialProofSection()
 
-                comparisonSection
+                    // Apple-required subscription disclosure (Guideline 3.1.2)
+                    SubscriptionDisclosureView(
+                        onRestorePurchases: {
+                            Task {
+                                let outcome = await subscriptionManager.restoreViaRevenueCat(using: revenueCatService)
+                                if case .restored(let tier) = outcome {
+                                    withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                                        selectedTierId = tier.rawValue
+                                    }
+                                    tierManager.selectTier(tier.rawValue, profile: profile)
+                                    // Auto-dismiss after 2 seconds if presented as sheet
+                                    if isSheet {
+                                        try? await Task.sleep(for: .seconds(2))
+                                        dismiss()
+                                    }
+                                }
+                            }
+                        },
+                        onRedeemCode: {
+                            revenueCatService.presentCodeRedemptionSheet()
+                        }
+                    )
 
-                Spacer(minLength: 80)
+                    comparisonSection
+
+                    Spacer(minLength: 80)
+                }
             }
             .padding(.horizontal, 16)
             .padding(.top, 12)
+            .animation(.easeInOut(duration: 0.3), value: subscriptionManager.offeringsState.isLoaded)
         }
         .background(
             Group {
@@ -90,7 +130,62 @@ struct MembershipView: View {
         }
         .task {
             await subscriptionManager.loadProducts()
+            // Refresh offerings if stale (Story 2.2)
+            if subscriptionManager.isOfferingsCacheStale {
+                await subscriptionManager.fetchOfferings(from: revenueCatService)
+            }
         }
+        .refreshable {
+            // Pull-to-refresh: force refresh offerings (Story 2.1 / 2.2)
+            await subscriptionManager.fetchOfferings(from: revenueCatService, forceRefresh: true)
+        }
+        // Story 3.1: Golden flash on successful purchase
+        .overlay {
+            if subscriptionManager.showGoldenFlash {
+                Color(hex: "#fbbf24").opacity(0.25)
+                    .ignoresSafeArea()
+                    .transition(.opacity)
+                    .allowsHitTesting(false)
+            }
+        }
+        .animation(.easeOut(duration: 0.2), value: subscriptionManager.showGoldenFlash)
+        // Story 3.1: Error banner
+        .overlay(alignment: .top) {
+            if let errorMsg = subscriptionManager.errorMessage {
+                PurchaseErrorBanner(message: errorMsg) {
+                    subscriptionManager.errorMessage = nil
+                }
+                .transition(.move(edge: .top).combined(with: .opacity))
+                .padding(.top, 8)
+                .zIndex(100)
+            }
+        }
+        .animation(.spring(response: 0.35, dampingFraction: 0.7), value: subscriptionManager.errorMessage)
+        // Story 3.1: Deferred purchase message
+        .overlay(alignment: .center) {
+            if subscriptionManager.showDeferredMessage {
+                DeferredPurchaseMessage {
+                    subscriptionManager.showDeferredMessage = false
+                }
+                .transition(.scale.combined(with: .opacity))
+                .zIndex(101)
+            }
+        }
+        .animation(.spring(response: 0.35, dampingFraction: 0.75), value: subscriptionManager.showDeferredMessage)
+        // Story 3.2: Restore banner
+        .overlay(alignment: .top) {
+            if let restoreMsg = subscriptionManager.restoreBannerMessage {
+                RestoreBanner(
+                    message: restoreMsg,
+                    isSuccess: subscriptionManager.restoreSucceeded,
+                    onDismiss: { subscriptionManager.restoreBannerMessage = nil }
+                )
+                .transition(.move(edge: .top).combined(with: .opacity))
+                .padding(.top, 8)
+                .zIndex(102)
+            }
+        }
+        .animation(.spring(response: 0.35, dampingFraction: 0.7), value: subscriptionManager.restoreBannerMessage)
     }
 
     // MARK: - Hero
@@ -166,7 +261,8 @@ struct MembershipView: View {
                         TierCardView(
                             tier: tier,
                             index: index,
-                            selectedTierId: $selectedTierId
+                            selectedTierId: $selectedTierId,
+                            paywallContext: paywallContext
                         )
                     }
                 }
@@ -183,7 +279,8 @@ struct MembershipView: View {
                     TierCardView(
                         tier: tier,
                         index: index,
-                        selectedTierId: $selectedTierId
+                        selectedTierId: $selectedTierId,
+                        paywallContext: paywallContext
                     )
                     .padding(.horizontal, 4)
                     .tag(tier.id)
@@ -667,6 +764,7 @@ struct TierCardView: View {
     @Environment(\.localization) private var localization
     @Environment(TierManager.self) private var tierManager
     @Environment(SubscriptionManager.self) private var subscriptionManager
+    @Environment(\.revenueCatService) private var revenueCatService
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
     private var L: AppStrings { localization.strings }
@@ -675,11 +773,30 @@ struct TierCardView: View {
     let tier: MembershipView.TierData
     let index: Int
     @Binding var selectedTierId: String
+    var paywallContext: PaywallContext = .membershipTab
 
     @State private var isHovered = false
     @State private var showTrialConfirmation = false
     @State private var isCardPressed = false
+    @State private var priceRevealed = false
+    @State private var dailCostRevealed = false
+    @State private var taglineCharCount = 0
+    @State private var gradientPhase: CGFloat = 0
+    @State private var buttonCompressed = false
+    @State private var buttonShimmerPhase: CGFloat = 0
+    @State private var currentBadgePulse = false
 
+    /// Whether this card is the unlocking tier for a feature gate context.
+    private var isFeatureGateTarget: Bool {
+        guard case .featureGate(let feature) = paywallContext else { return false }
+        return membershipTier == feature.minimumTier
+    }
+
+    /// Whether this card should be dimmed (feature gate, but not the target).
+    private var isFeatureGateDimmed: Bool {
+        guard case .featureGate = paywallContext else { return false }
+        return !isFeatureGateTarget
+    }
 
     private var price: Double {
         tier.priceMonthly
@@ -696,6 +813,59 @@ struct TierCardView: View {
 
     private var isRoyal: Bool {
         tier.id == "royal"
+    }
+
+    /// During a purchase, dim all cards except the one being purchased.
+    private var purchaseDimmingOpacity: Double {
+        guard subscriptionManager.isPurchasing else { return 1.0 }
+        return 0.6
+    }
+
+    // MARK: Story 3.3 — Upgrade / Downgrade context
+
+    private var changeDirection: SubscriptionManager.TierChangeDirection {
+        subscriptionManager.tierChangeDirection(to: membershipTier)
+    }
+
+    private var tierChangeAccessibilityHint: String {
+        switch changeDirection {
+        case .upgrade: return "Double-tap to upgrade to \(membershipTier.displayName)"
+        case .downgrade: return "Double-tap to switch to \(membershipTier.displayName)"
+        case .sameOrFree: return "Double-tap to subscribe"
+        }
+    }
+
+    @ViewBuilder
+    private var featureComparisonView: some View {
+        let diff = TierManager.featureDiff(
+            from: subscriptionManager.currentSubscribedTier ?? .free,
+            to: membershipTier
+        )
+        if !diff.unlocked.isEmpty || !diff.locked.isEmpty {
+            VStack(alignment: .leading, spacing: 6) {
+                ForEach(diff.unlocked, id: \.self) { feature in
+                    HStack(spacing: 6) {
+                        Image(systemName: "plus.circle.fill")
+                            .font(.caption2)
+                            .foregroundStyle(.green)
+                        Text(feature.displayName)
+                            .font(.caption)
+                            .foregroundStyle(isDark ? .white.opacity(0.75) : .caribbeanInk.opacity(0.8))
+                    }
+                }
+                ForEach(diff.locked, id: \.self) { feature in
+                    HStack(spacing: 6) {
+                        Image(systemName: "minus.circle.fill")
+                            .font(.caption2)
+                            .foregroundStyle(.orange.opacity(0.8))
+                        Text(feature.displayName)
+                            .font(.caption)
+                            .foregroundStyle(isDark ? .white.opacity(0.55) : .caribbeanInk.opacity(0.55))
+                    }
+                }
+            }
+            .padding(.vertical, 4)
+        }
     }
 
     var body: some View {
@@ -763,9 +933,11 @@ struct TierCardView: View {
                                 endPoint: .trailing
                             )
                         )
-                    Text(tier.tagline)
+                    // Story 2.2: Typewriter character reveal for tagline
+                    Text(String(tier.tagline.prefix(taglineCharCount)))
                         .font(.caption)
                         .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
+                        .frame(height: 16, alignment: .leading)
                 }
 
                 Spacer()
@@ -802,6 +974,13 @@ struct TierCardView: View {
                                     )
                                 )
                         )
+                        .scaleEffect(currentBadgePulse ? 1.06 : 1.0)
+                        .opacity(currentBadgePulse ? 1.0 : 0.85)
+                        .onAppear {
+                            withAnimation(.easeInOut(duration: 1.8).repeatForever(autoreverses: true)) {
+                                currentBadgePulse = true
+                            }
+                        }
                 } else if tier.isHighlighted {
                     Text(L.popular)
                         .font(.system(size: 9, weight: .heavy))
@@ -821,33 +1000,8 @@ struct TierCardView: View {
                 }
             }
 
-            // Price
-            HStack(alignment: .firstTextBaseline, spacing: 4) {
-                if price == 0 {
-                    Text(L.free)
-                        .font(.system(size: 28, weight: .black))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: tier.gradientColors,
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                } else {
-                    Text(subscriptionManager.displayPrice(for: MembershipTier(tierId: tier.id)))
-                        .font(.system(size: 28, weight: .black))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: tier.gradientColors,
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                    Text(L.perMonth)
-                        .font(.subheadline)
-                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                }
-            }
+            // Price (Story 2.2 — RC offerings with animations)
+            pricingSection
 
             // Benefits
             VStack(alignment: .leading, spacing: 6) {
@@ -863,7 +1017,12 @@ struct TierCardView: View {
                 }
             }
 
-            // CTA button
+            // Story 3.3: Feature comparison for upgrade/downgrade
+            if !isActuallyCurrent, !tier.isDisabled {
+                featureComparisonView
+            }
+
+            // CTA button (Story 3.1: RevenueCat purchase flow)
             Button {
                 guard !isActuallyCurrent, !tier.isDisabled else { return }
                 HapticsService.shared.buttonPress()
@@ -879,21 +1038,37 @@ struct TierCardView: View {
                     }
                     tierManager.selectTier(tier.id, profile: profile)
                 } else {
-                    // Paid tier — initiate StoreKit purchase
-                    let membershipTier = MembershipTier(tierId: tier.id)
+                    // Paid tier — RevenueCat purchase via service protocol
+                    // Button compression micro-transition
+                    withAnimation(.spring(response: 0.15, dampingFraction: 0.6)) {
+                        buttonCompressed = true
+                    }
+                    HapticsService.shared.medium()
+                    // Shimmer sweep then purchase
+                    withAnimation(.easeInOut(duration: 0.35)) {
+                        buttonShimmerPhase = 1.0
+                    }
+                    let mt = membershipTier
                     Task {
-                        do {
-                            let purchasedTier = try await subscriptionManager.purchase(membershipTier)
+                        // Brief delay for micro-transition (fills 200-500ms App Store delay)
+                        try? await Task.sleep(for: .milliseconds(250))
+                        buttonCompressed = false
+                        buttonShimmerPhase = 0
+                        let outcome = await subscriptionManager.purchasePackage(for: mt, using: revenueCatService)
+                        switch outcome {
+                        case .success(let purchasedTier):
+                            // Golden flash before celebration
+                            withAnimation(.easeOut(duration: 0.2)) {
+                                subscriptionManager.showGoldenFlash = true
+                            }
+                            try? await Task.sleep(for: .milliseconds(200))
+                            subscriptionManager.showGoldenFlash = false
                             withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
-                                selectedTierId = tier.id
+                                selectedTierId = purchasedTier.rawValue
                             }
                             tierManager.selectTier(purchasedTier.rawValue, profile: profile)
-                        } catch PurchaseError.purchaseCancelled {
-                            // User cancelled — no action needed
-                        } catch PurchaseError.purchasePending {
-                            // Ask to Buy or SCA — no action needed
-                        } catch {
-                            subscriptionManager.errorMessage = error.localizedDescription
+                        case .cancelled, .deferred, .error:
+                            break // States handled by SubscriptionManager properties
                         }
                     }
                 }
@@ -908,9 +1083,10 @@ struct TierCardView: View {
                         Text(L.currentPlan)
                     } else if price > 0 {
                         // EU CRD Art.8(2): button must indicate obligation to pay
+                        // Story 2.4: CTA adapts to offer type
                         VStack(spacing: 2) {
-                            Text(tier.cta)
-                            Text(subscriptionManager.displayPrice(for: MembershipTier(tierId: tier.id)) + L.perMonth)
+                            Text(ctaLabel)
+                            Text(ctaPriceSubtext)
                                 .font(.caption2)
                                 .opacity(0.8)
                         }
@@ -949,13 +1125,108 @@ struct TierCardView: View {
                                     lineWidth: isActuallyCurrent ? 1.5 : 0
                                 )
                         )
+                        // Story 3.1: Shimmer sweep overlay
+                        .overlay(
+                            GeometryReader { geo in
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [.clear, .white.opacity(0.3), .clear],
+                                            startPoint: .leading, endPoint: .trailing
+                                        )
+                                    )
+                                    .frame(width: geo.size.width * 0.3)
+                                    .offset(x: geo.size.width * (buttonShimmerPhase - 0.15))
+                                    .opacity(buttonShimmerPhase > 0 ? 1 : 0)
+                            }
+                            .clipShape(Capsule())
+                        )
                 )
+                // Story 3.1: Button compression micro-transition
+                .scaleEffect(buttonCompressed ? 0.96 : 1.0)
+                .animation(.spring(response: 0.15, dampingFraction: 0.6), value: buttonCompressed)
             }
             .buttonStyle(PremiumCTAButtonStyle(glowColor: tier.gradientColors.first ?? .purple))
-            .disabled(isActuallyCurrent || tier.isDisabled)
+            .disabled(isActuallyCurrent || tier.isDisabled || subscriptionManager.isPurchasing)
             .opacity(isActuallyCurrent ? 0.8 : (tier.isDisabled ? 0.3 : 1.0))
+
+            // Story 2.4: "No commitment" reassurance + renewal price
+            if !isActuallyCurrent && !tier.isDisabled && price > 0 {
+                if let introOffer = subscriptionManager.offeringIntroOffer(for: membershipTier) {
+                    VStack(spacing: 2) {
+                        Text("No commitment. Cancel anytime.")
+                            .font(.caption2)
+                            .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                        if introOffer.paymentMode == .freeTrial {
+                            Text("Free for \(introOffer.period), then \(subscriptionManager.offeringPrice(for: membershipTier))/month")
+                                .font(.caption2)
+                                .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanMist.opacity(0.8))
+                        }
+                    }
+                    .frame(maxWidth: .infinity)
+                } else {
+                    Text("No commitment. Cancel anytime.")
+                        .font(.caption2)
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                }
+            }
+
+            // Story 3.3: Upgrade/downgrade context message
+            if !isActuallyCurrent, !tier.isDisabled, price > 0 {
+                switch changeDirection {
+                case .upgrade:
+                    Text("Apple will immediately upgrade your plan and prorate the remaining balance.")
+                        .font(.caption2)
+                        .foregroundStyle(isDark ? .green.opacity(0.6) : .green.opacity(0.7))
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity)
+                case .downgrade:
+                    if let renewalDate = subscriptionManager.nextRenewalDateString {
+                        Text("Your current access continues until \(renewalDate), then you\u{2019}ll switch.")
+                            .font(.caption2)
+                            .foregroundStyle(isDark ? .orange.opacity(0.6) : .orange.opacity(0.7))
+                            .multilineTextAlignment(.center)
+                            .frame(maxWidth: .infinity)
+                    }
+                case .sameOrFree:
+                    EmptyView()
+                }
+            }
         }
         .padding(18)
+        .overlay(alignment: .topTrailing) {
+            // Story 2.5: "Unlocks [Feature]" badge for feature gate context
+            if isFeatureGateTarget, case .featureGate(let feature) = paywallContext {
+                Text("Unlocks \(feature.displayName)")
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(
+                        Capsule().fill(
+                            LinearGradient(
+                                colors: tier.gradientColors,
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                    )
+                    .padding(12)
+            }
+        }
+        .opacity(isFeatureGateDimmed ? 0.7 : 1.0)
+        // Story 3.1: Dimming during purchase (other cards fade to 60%)
+        .opacity(purchaseDimmingOpacity)
+        // Story 3.1: Cancel highlight — gentle glow on the card user was considering
+        .overlay(
+            RoundedRectangle(cornerRadius: 22)
+                .strokeBorder(
+                    LinearGradient(colors: tier.gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing),
+                    lineWidth: 2
+                )
+                .opacity(subscriptionManager.cancelHighlightTier == membershipTier ? 1 : 0)
+                .animation(.easeInOut(duration: 0.3), value: subscriptionManager.cancelHighlightTier)
+        )
         .background(
             ZStack {
                 // Royal inner golden glow
@@ -1017,10 +1288,213 @@ struct TierCardView: View {
             isCardPressed = pressing
         }, perform: {})
         .opacity(tier.isDisabled ? 0.5 : 1.0)
+        .accessibilityHint(isActuallyCurrent ? "This is your current plan" : tierChangeAccessibilityHint)
+        // Story 2.2: Staggered reveal animations
+        .onAppear {
+            animatePriceReveal()
+            animateTypewriter()
+        }
 
         .fullScreenCover(isPresented: $showTrialConfirmation) {
             TrialConfirmationView()
         }
+    }
+
+    // MARK: - CTA (Story 2.4)
+
+    private var ctaLabel: String {
+        // Story 3.3: Contextual verb for subscribed users
+        switch changeDirection {
+        case .upgrade:
+            return "Upgrade to \(membershipTier.displayName)"
+        case .downgrade:
+            return "Switch to \(membershipTier.displayName)"
+        case .sameOrFree:
+            break
+        }
+        if let introOffer = subscriptionManager.offeringIntroOffer(for: membershipTier) {
+            switch introOffer.paymentMode {
+            case .freeTrial:
+                return "Start Free Trial"
+            case .payAsYouGo:
+                return "Try for \(introOffer.priceString)"
+            case .payUpFront:
+                return tier.cta
+            }
+        }
+        return tier.cta
+    }
+
+    private var ctaPriceSubtext: String {
+        if let introOffer = subscriptionManager.offeringIntroOffer(for: membershipTier) {
+            switch introOffer.paymentMode {
+            case .freeTrial:
+                return "\(introOffer.period) free, then \(subscriptionManager.offeringPrice(for: membershipTier))/mo"
+            case .payAsYouGo:
+                return "\(introOffer.priceString) for \(introOffer.period), then \(subscriptionManager.offeringPrice(for: membershipTier))/mo"
+            case .payUpFront:
+                return subscriptionManager.offeringPrice(for: membershipTier) + L.perMonth
+            }
+        }
+        if let promo = subscriptionManager.bestPromoOffer(for: membershipTier) {
+            return "\(promo.priceString) for \(promo.period), then \(subscriptionManager.offeringPrice(for: membershipTier))/mo"
+        }
+        return subscriptionManager.offeringPrice(for: membershipTier) + L.perMonth
+    }
+
+    // MARK: - Animation (Story 2.2)
+
+    private func animatePriceReveal() {
+        // Price scales in over 600ms
+        withAnimation(.spring(response: 0.6, dampingFraction: 0.75).delay(0.15)) {
+            priceRevealed = true
+        }
+        // Daily cost slides up 300ms after price
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.7).delay(0.45)) {
+            dailCostRevealed = true
+        }
+    }
+
+    private func animateTypewriter() {
+        let charCount = tier.tagline.count
+        guard charCount > 0 else { return }
+        // 20ms per character, starting at 100ms delay
+        for i in 1...charCount {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1 + Double(i) * 0.02) {
+                taglineCharCount = i
+            }
+        }
+    }
+
+    // MARK: - Pricing Section (Story 2.2)
+
+    private var membershipTier: MembershipTier {
+        MembershipTier(tierId: tier.id)
+    }
+
+    @ViewBuilder
+    private var pricingSection: some View {
+        let tierEnum = membershipTier
+        VStack(alignment: .leading, spacing: 4) {
+            if price == 0 {
+                Text(L.free)
+                    .font(.system(size: 28, weight: .black))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: tier.gradientColors,
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+            } else if !subscriptionManager.hasPriceAvailable(for: tierEnum)
+                        && subscriptionManager.offeringsState != .loading {
+                // Price unavailable fallback
+                VStack(spacing: 8) {
+                    Text("Price unavailable")
+                        .font(.subheadline)
+                        .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
+                    Button {
+                        Task {
+                            await subscriptionManager.fetchOfferings(from: revenueCatService, forceRefresh: true)
+                        }
+                    } label: {
+                        Label("Retry", systemImage: "arrow.clockwise")
+                            .font(.caption.bold())
+                    }
+                    .buttonStyle(.bordered)
+                    .tint(tier.gradientColors.first ?? .purple)
+                }
+            } else {
+                // Main price with intro offer support
+                HStack(alignment: .firstTextBaseline, spacing: 4) {
+                    if let introOffer = subscriptionManager.offeringIntroOffer(for: tierEnum) {
+                        // Strikethrough original price
+                        Text(subscriptionManager.offeringPrice(for: tierEnum))
+                            .font(.system(size: 18, weight: .bold))
+                            .strikethrough(true, color: isDark ? .white.opacity(0.5) : .caribbeanMist)
+                            .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanMist)
+
+                        Text(introOffer.priceString)
+                            .font(.system(size: 28, weight: .black))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: tier.gradientColors,
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .opacity(priceRevealed ? 1 : 0)
+                            .scaleEffect(priceRevealed ? 1.0 : 0.8)
+                    } else if let promoOffer = subscriptionManager.bestPromoOffer(for: tierEnum) {
+                        // Strikethrough original price with promotional offer (Story 3.4)
+                        Text(subscriptionManager.offeringPrice(for: tierEnum))
+                            .font(.system(size: 18, weight: .bold))
+                            .strikethrough(true, color: isDark ? .white.opacity(0.5) : .caribbeanMist)
+                            .foregroundStyle(isDark ? .white.opacity(0.35) : .caribbeanMist)
+
+                        Text(promoOffer.priceString)
+                            .font(.system(size: 28, weight: .black))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: tier.gradientColors,
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .opacity(priceRevealed ? 1 : 0)
+                            .scaleEffect(priceRevealed ? 1.0 : 0.8)
+                    } else {
+                        Text(subscriptionManager.offeringPrice(for: tierEnum))
+                            .font(.system(size: 28, weight: .black))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: tier.gradientColors,
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .opacity(priceRevealed ? 1 : 0)
+                            .scaleEffect(priceRevealed ? 1.0 : 0.8)
+                    }
+
+                    Text(introOfferPeriodLabel ?? L.perMonth)
+                        .font(.subheadline)
+                        .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                }
+
+                // Daily cost line (appears 300ms after price)
+                if let daily = subscriptionManager.dailyCost(for: tierEnum) {
+                    Text("That's just \(daily)/day")
+                        .font(.caption)
+                        .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum.opacity(0.7))
+                        .offset(y: dailCostRevealed ? 0 : 8)
+                        .opacity(dailCostRevealed ? 1 : 0)
+                }
+            }
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(priceAccessibilityLabel)
+    }
+
+    private var introOfferPeriodLabel: String? {
+        if let offer = subscriptionManager.offeringIntroOffer(for: membershipTier) {
+            switch offer.paymentMode {
+            case .freeTrial:
+                return "/ first \(offer.period)"
+            default:
+                return "/ first \(offer.period)"
+            }
+        }
+        if let promo = subscriptionManager.bestPromoOffer(for: membershipTier) {
+            return "/ \(promo.period)"
+        }
+        return nil
+    }
+
+    private var priceAccessibilityLabel: String {
+        let tierName = tier.name
+        let priceStr = price == 0 ? "Free" : subscriptionManager.offeringPrice(for: membershipTier) + " per month"
+        return "\(tierName). \(priceStr). \(tier.tagline)"
     }
 
     private func benefitIcon(_ impact: String) -> String {
@@ -1047,5 +1521,138 @@ struct TierCardView: View {
         case "ultimate": .orange
         default: isDark ? .white.opacity(0.5) : .caribbeanPlum
         }
+    }
+}
+
+// MARK: - Purchase Error Banner (Story 3.1)
+
+/// A banner that slides in from the top on purchase failure
+/// and auto-dismisses after 5 seconds or on tap.
+private struct PurchaseErrorBanner: View {
+    let message: String
+    let onDismiss: () -> Void
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "exclamationmark.triangle.fill")
+                .font(.subheadline)
+                .foregroundStyle(.yellow)
+            Text(message)
+                .font(.subheadline)
+                .foregroundStyle(.white)
+            Spacer()
+            Button {
+                onDismiss()
+            } label: {
+                Image(systemName: "xmark")
+                    .font(.caption.bold())
+                    .foregroundStyle(.white.opacity(0.6))
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(.ultraThinMaterial)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 14)
+                        .strokeBorder(.red.opacity(0.3), lineWidth: 1)
+                )
+        )
+        .padding(.horizontal, 16)
+        .onTapGesture { onDismiss() }
+        .task {
+            try? await Task.sleep(for: .seconds(5))
+            onDismiss()
+        }
+        .accessibilityLabel("Purchase error: \(message). Tap to dismiss.")
+    }
+}
+
+// MARK: - Deferred Purchase Message (Story 3.1)
+
+/// Friendly overlay shown when a purchase requires approval (Ask to Buy).
+private struct DeferredPurchaseMessage: View {
+    let onDismiss: () -> Void
+
+    var body: some View {
+        VStack(spacing: 16) {
+            Image(systemName: "clock.badge.checkmark")
+                .font(.system(size: 36))
+                .foregroundStyle(.cyan)
+
+            Text("Purchase Pending")
+                .font(.headline)
+                .foregroundStyle(.white)
+
+            Text("Ask the account holder to approve in Screen Time.")
+                .font(.subheadline)
+                .foregroundStyle(.white.opacity(0.7))
+                .multilineTextAlignment(.center)
+
+            Button("OK") { onDismiss() }
+                .font(.subheadline.bold())
+                .foregroundStyle(.white)
+                .padding(.horizontal, 32)
+                .padding(.vertical, 10)
+                .background(Capsule().fill(.ultraThinMaterial))
+        }
+        .padding(28)
+        .background(
+            RoundedRectangle(cornerRadius: 22)
+                .fill(.ultraThinMaterial)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 22)
+                        .strokeBorder(.cyan.opacity(0.3), lineWidth: 1)
+                )
+        )
+        .padding(.horizontal, 40)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("Purchase pending. Ask the account holder to approve in Screen Time.")
+    }
+}
+
+// MARK: - Restore Banner (Story 3.2)
+
+/// A banner that slides from the top showing restore results.
+/// Auto-dismisses after 5 seconds for success, stays for errors.
+private struct RestoreBanner: View {
+    let message: String
+    let isSuccess: Bool
+    let onDismiss: () -> Void
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Image(systemName: isSuccess ? "checkmark.circle.fill" : "info.circle.fill")
+                .font(.subheadline)
+                .foregroundStyle(isSuccess ? .green : .yellow)
+            Text(message)
+                .font(.subheadline)
+                .foregroundStyle(.white)
+                .lineLimit(3)
+            Spacer()
+            Button { onDismiss() } label: {
+                Image(systemName: "xmark")
+                    .font(.caption.bold())
+                    .foregroundStyle(.white.opacity(0.6))
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(.ultraThinMaterial)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 14)
+                        .strokeBorder(isSuccess ? .green.opacity(0.3) : .orange.opacity(0.3), lineWidth: 1)
+                )
+        )
+        .padding(.horizontal, 16)
+        .onTapGesture { onDismiss() }
+        .task {
+            try? await Task.sleep(for: .seconds(isSuccess ? 3 : 8))
+            onDismiss()
+        }
+        .accessibilityLabel("Restore result: \(message). Tap to dismiss.")
     }
 }

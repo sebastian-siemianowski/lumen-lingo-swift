@@ -224,6 +224,9 @@ final class MockRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
     /// Whether to force offering fetch error.
     var forceOfferingsError: Bool = false
 
+    /// Whether to force trial ineligibility.
+    var forceTrialIneligible: Bool = false
+
     /// The current offering ID.
     var currentOfferingID: String = "default"
 
@@ -323,6 +326,15 @@ final class MockRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
         currentOffering = offerings.current
         log(operation: "getOfferings", result: "success", details: "\(offerings.current?.packages.count ?? 0) packages")
         return offerings
+    }
+
+    func checkTrialEligibility(productIdentifiers: [String]) async -> [String: Bool] {
+        var result: [String: Bool] = [:]
+        for id in productIdentifiers {
+            result[id] = !forceTrialIneligible
+        }
+        log(operation: "checkTrialEligibility", result: "success", details: "\(productIdentifiers.count) products, eligible=\(!forceTrialIneligible)")
+        return result
     }
 
     func purchase(package: RCPackage) async throws -> RCPurchaseResult {
@@ -435,6 +447,26 @@ final class MockRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
                 transactionIdentifier: "mock_txn_\(UUID().uuidString.prefix(8))"
             )
         }
+    }
+
+    func purchase(package: RCPackage, promotionalOffer: RCSignedPromoOffer) async throws -> RCPurchaseResult {
+        // In mock, purchase with promo follows the same flow as a normal purchase
+        log(operation: "purchaseWithPromo(\(package.tier), offer=\(promotionalOffer.offerIdentifier))", result: "routing to purchase")
+        return try await purchase(package: package)
+    }
+
+    func getPromotionalOffer(offerIdentifier: String, package: RCPackage) async throws -> RCSignedPromoOffer {
+        try throwIfOffline()
+        await simulateLatency()
+        let offer = RCSignedPromoOffer(
+            offerIdentifier: offerIdentifier,
+            keyIdentifier: "mock_key_id",
+            nonce: UUID(),
+            signature: "mock_signature_\(offerIdentifier)",
+            timestamp: Int(Date.now.timeIntervalSince1970)
+        )
+        log(operation: "getPromotionalOffer(\(offerIdentifier))", result: "success")
+        return offer
     }
 
     func restorePurchases() async throws -> RCCustomerInfo {
@@ -755,7 +787,11 @@ final class MockRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
         let offering = RCOffering(
             id: offeringID,
             displayName: "Default Offering",
-            packages: [proPackage, elitePackage, royalPackage]
+            packages: [proPackage, elitePackage, royalPackage],
+            metadata: [
+                "paywall_headline": "Invest in Your Language Mastery",
+                "paywall_subtitle": "Join thousands mastering new languages"
+            ]
         )
 
         return RCOfferings(

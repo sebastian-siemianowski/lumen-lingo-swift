@@ -93,6 +93,7 @@
 		51F8F1F25214F416831EDB21 /* grammar_polish_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = 86217728B7FFADD692A67832 /* grammar_polish_japanese.json */; };
 		51F9957933F8A2A36D03865A /* TierBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F283713D80218498D7120 /* TierBadgeView.swift */; };
 		5410ECB257F95DD11603527F /* flashcards_polish_arabic.json in Resources */ = {isa = PBXBuildFile; fileRef = 2426F02F8E3AB9B6634761D6 /* flashcards_polish_arabic.json */; };
+		54AC3A74B3978CA3F0A99E25 /* PaywallSkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB162C29BE342EFCC1DB478 /* PaywallSkeletonView.swift */; };
 		556088FCAAB11559220BFA41 /* flashcards_english_french.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6C857CACD14B5F9D11A9BE /* flashcards_english_french.json */; };
 		572A2C73F39ADFE7E1AD1583 /* flashcards_german_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CD9C429C1C49ACDEF66DB34 /* flashcards_german_spanish.json */; };
 		572BB4F60AFAF80471033286 /* grammar_german_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DF4AC8CA444C17E9975F76B /* grammar_german_spanish.json */; };
@@ -113,6 +114,7 @@
 		68219C8D587F4836A58D645C /* wordbuilder_spanish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 21F05258ABE2A1A6CEA8E742 /* wordbuilder_spanish_english.json */; };
 		683883509B146B763360F6A8 /* grammar_polish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FC0C0DB194CFC6D81344A4F /* grammar_polish_english.json */; };
 		686CCE8D7420E55A83113C58 /* WordBuilderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900EAC3D8E68D78ADF09620 /* WordBuilderViewModel.swift */; };
+		6951309844145915749C9364 /* SocialProofSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474FE18357C53FCAF0F26B6 /* SocialProofSection.swift */; };
 		695E376CBFAF9FFBFADE1D25 /* PDFShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E9A8FE86D4454E2156F97 /* PDFShareSheetView.swift */; };
 		6C282A681286D1C3EDAEBD85 /* flashcards_english_chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = AD9C15A96767D9773B948A1E /* flashcards_english_chinese.json */; };
 		6D41BF4356271CBF59F05DCF /* Observatory-Night-1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 59C0A048BA91DCF01083EFDA /* Observatory-Night-1.m4a */; };
@@ -167,6 +169,7 @@
 		91C07042588BEC4D17477119 /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA8FA91B2C310EC779DC40 /* PerformanceMonitor.swift */; };
 		943EECD12689FFF2888436EA /* SpiralHaloPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = DB8D135B47E89CA45DF67B97 /* SpiralHaloPreset.metal */; };
 		94B616D28FC3A7C26CDA94C5 /* Tokyo-Night-Street.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8A7CB0448DE947B938B41FF7 /* Tokyo-Night-Street.m4a */; };
+		9623FC36E4BC4F81E042A72B /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAFE03DA00ABFF321C1F4C /* PaywallView.swift */; };
 		96AB7329C4F494D16175E2C5 /* grammar_japanese_english.json in Resources */ = {isa = PBXBuildFile; fileRef = C2522C1400407731C720E317 /* grammar_japanese_english.json */; };
 		98324CC583C1F2E99D1EC600 /* wordbuilder_polish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = A4DD27AFCE378D73D79D9A34 /* wordbuilder_polish_english.json */; };
 		986D3C34AC49DB0AF388FDBC /* PremiumCTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5881A9A303C2E0066D3F9606 /* PremiumCTAButton.swift */; };
@@ -281,6 +284,7 @@
 		F7A415EA51E56EA8A80006E4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA37A22083A72444CE3F5374 /* SettingsView.swift */; };
 		F91C2DB7E57D68E7EED93800 /* PrivacyAuditLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3907B67E2B962501153B8F7 /* PrivacyAuditLogger.swift */; };
 		F9CEA1D33EF3254085E2BE83 /* AccuracyHeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B39BE55826C6132EE40D6 /* AccuracyHeatmapView.swift */; };
+		FA5E2F12E7F1244B94C18FD7 /* OfferingsFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C8503DE56DAF520AFB59F /* OfferingsFetchTests.swift */; };
 		FC1203F47C411DF45D54CA27 /* wordbuilder_english_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 2516A4527A7F21A7FD49DA48 /* wordbuilder_english_polish.json */; };
 		FD48E593F72EC304EE27AD31 /* GDPRDataExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC911719A82F3B1ACCFB62A4 /* GDPRDataExporter.swift */; };
 		FED1EF451B08FBEF1081AC4D /* grammar_polish_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 1529F75859B9520B053C7083 /* grammar_polish_german.json */; };
@@ -472,6 +476,7 @@
 		894DD05B6C1F9A54FFFA697A /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
 		89EAF9D804D2B676F6EAF215 /* MonthlyReportWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReportWidget.swift; sourceTree = "<group>"; };
 		8A7CB0448DE947B938B41FF7 /* Tokyo-Night-Street.m4a */ = {isa = PBXFileReference; path = "Tokyo-Night-Street.m4a"; sourceTree = "<group>"; };
+		8BB162C29BE342EFCC1DB478 /* PaywallSkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallSkeletonView.swift; sourceTree = "<group>"; };
 		8BBC7CB529E2BAA14AC41CCD /* PracticeExpiredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeExpiredView.swift; sourceTree = "<group>"; };
 		8C9082790B59A90F1EFFED6F /* flashcards_polish_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_polish_spanish.json; sourceTree = "<group>"; };
 		8D6FE4BD7584212604B3B839 /* grammar_english_french.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_english_french.json; sourceTree = "<group>"; };
@@ -528,6 +533,7 @@
 		B566D3C1FF38C5EE6E7F5DE0 /* SoundControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundControlsView.swift; sourceTree = "<group>"; };
 		B6B4D440EDEAC300EBDDE943 /* PracticeTimeTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimeTrackerTests.swift; sourceTree = "<group>"; };
 		B70A4CC223AB0F0CBD300360 /* LiquidGlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassCard.swift; sourceTree = "<group>"; };
+		B70C8503DE56DAF520AFB59F /* OfferingsFetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferingsFetchTests.swift; sourceTree = "<group>"; };
 		B838FDC1EFCA200B83B73377 /* InsightsDashboardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsDashboardWidget.swift; sourceTree = "<group>"; };
 		B84D8F4C0D9010A47DE7222A /* SoundscapeUpgradeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapeUpgradeSheet.swift; sourceTree = "<group>"; };
 		B95DDDEEBA8E45BFB1B39434 /* Rainy-Window.m4a */ = {isa = PBXFileReference; path = "Rainy-Window.m4a"; sourceTree = "<group>"; };
@@ -585,12 +591,14 @@
 		EE209D9EF404AA5D75D6D840 /* grammar_french_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_french_english.json; sourceTree = "<group>"; };
 		EFE521ADD54E6635CA76C3A1 /* wordbuilder_english_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_english_spanish.json; sourceTree = "<group>"; };
 		F0AE02E5AA944BBF9A1E7BB2 /* grammar_ukrainian_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_ukrainian_polish.json; sourceTree = "<group>"; };
+		F0FAFE03DA00ABFF321C1F4C /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		F1079AD7C7C0B803C74DDCC7 /* SyncStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusView.swift; sourceTree = "<group>"; };
 		F15D4EBF77C26814192E01EE /* DebugAuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugAuthController.swift; sourceTree = "<group>"; };
 		F27B4ACED23C18E53C32B300 /* BreathingOrbsLockedPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingOrbsLockedPreview.swift; sourceTree = "<group>"; };
 		F28ED42900B80F6ACBE706BD /* LumenLingoUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LumenLingoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A5EB7427BAE3106C94D4ED /* FlashcardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsViewModel.swift; sourceTree = "<group>"; };
 		F32819B82122B08BA2490CB7 /* wordbuilder_chinese_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_chinese_english.json; sourceTree = "<group>"; };
+		F474FE18357C53FCAF0F26B6 /* SocialProofSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialProofSection.swift; sourceTree = "<group>"; };
 		F488F216B2CD3E54A3890B1C /* AuthAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAnalytics.swift; sourceTree = "<group>"; };
 		F829FC2D29C631AC681A340D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		F8A1A06F72CAB6672E61E1FF /* AuthFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowUITests.swift; sourceTree = "<group>"; };
@@ -886,7 +894,10 @@
 				4B64C00B2CC60355A29B834B /* FeatureTransitionOverlay.swift */,
 				CA4D04FA3A066C26F1C83DBB /* LanguagePairUpgradeSheet.swift */,
 				927863E6ECF97AE41A78326D /* MembershipView.swift */,
+				8BB162C29BE342EFCC1DB478 /* PaywallSkeletonView.swift */,
+				F0FAFE03DA00ABFF321C1F4C /* PaywallView.swift */,
 				A9E9C6E57618CAF9511BB3E9 /* PremiumFeatureBadge.swift */,
+				F474FE18357C53FCAF0F26B6 /* SocialProofSection.swift */,
 				B84D8F4C0D9010A47DE7222A /* SoundscapeUpgradeSheet.swift */,
 				85C11B66DF3D0E54D58043ED /* SubscriptionDisclosureView.swift */,
 				873F283713D80218498D7120 /* TierBadgeView.swift */,
@@ -1204,6 +1215,7 @@
 			children = (
 				A68FDDB2733EC766BCF12108 /* AuthServiceTests.swift */,
 				4F58A8A558EB339C5956E18E /* MockRevenueCatServiceTests.swift */,
+				B70C8503DE56DAF520AFB59F /* OfferingsFetchTests.swift */,
 				B6B4D440EDEAC300EBDDE943 /* PracticeTimeTrackerTests.swift */,
 				62631C787DB4298AAE4CD46A /* PremiumCTAButtonTests.swift */,
 				134F246859CB0B79DDE01858 /* RevenueCatIdentityBridgeTests.swift */,
@@ -1586,6 +1598,7 @@
 			files = (
 				A0E754B1789F91870C3D7FFE /* AuthServiceTests.swift in Sources */,
 				712C6EC11945506E8A95A93A /* MockRevenueCatServiceTests.swift in Sources */,
+				FA5E2F12E7F1244B94C18FD7 /* OfferingsFetchTests.swift in Sources */,
 				C595EFADF175AE74AFFB95A3 /* PracticeTimeTrackerTests.swift in Sources */,
 				E36268A61FC90300A7AB119F /* PremiumCTAButtonTests.swift in Sources */,
 				8F96FD80C9F84DA4F748C1E3 /* RevenueCatIdentityBridgeTests.swift in Sources */,
@@ -1699,6 +1712,8 @@
 				695E376CBFAF9FFBFADE1D25 /* PDFShareSheetView.swift in Sources */,
 				E4512FE2996AF9231CC0892B /* PDFSuccessOverlayView.swift in Sources */,
 				9C5DA80690D3E20EAAABFFCC /* PDFThumbnailRailView.swift in Sources */,
+				54AC3A74B3978CA3F0A99E25 /* PaywallSkeletonView.swift in Sources */,
+				9623FC36E4BC4F81E042A72B /* PaywallView.swift in Sources */,
 				91C07042588BEC4D17477119 /* PerformanceMonitor.swift in Sources */,
 				B8B293695C6D49A6F85B7C5C /* PersistedState.swift in Sources */,
 				DB64940F1C00BE15D3B0A067 /* PostSessionNudge.swift in Sources */,
@@ -1735,6 +1750,7 @@
 				1925497ACD434C20F1F46516 /* ShareableCardRenderer.swift in Sources */,
 				47195CDF17F4EC201D00896A /* SignInSheetView.swift in Sources */,
 				C0996CF3C7F52457D0FC851C /* SignOutView.swift in Sources */,
+				6951309844145915749C9364 /* SocialProofSection.swift in Sources */,
 				078F0B02324FE9D3A556A23A /* SolarAuroraPreset.metal in Sources */,
 				A9DF7EC0313E9EC8BEEDAA12 /* SolarAuroraStars.metal in Sources */,
 				A597B5030071EAC72D59777A /* SolarAuroraView.swift in Sources */,

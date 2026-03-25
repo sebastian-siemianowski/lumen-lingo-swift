@@ -79,7 +79,7 @@ struct EnvironmentConfig: Sendable {
         let logString = info["LLLogLevel"] as? String ?? "verbose"
         let logLevel = LogLevel(rawValue: logString) ?? .verbose
 
-        let bundleId = Bundle.main.bundleIdentifier ?? "com.lumenlingo.app.dev"
+        let bundleId = Bundle.main.bundleIdentifier ?? "com.lumenshore.lumenlingo.dev"
         let name = info["CFBundleDisplayName"] as? String
             ?? info["CFBundleName"] as? String
             ?? "LumenLingo"

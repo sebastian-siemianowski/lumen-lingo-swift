@@ -133,10 +133,16 @@ struct RCOffering: Identifiable, Equatable, Sendable {
     let id: String               // e.g. "default"
     let displayName: String
     let packages: [RCPackage]
+    let metadata: [String: String]  // Dashboard-configured metadata (Story 2.3)
 
     /// Get a package by tier.
     func package(for tier: MembershipTier) -> RCPackage? {
         packages.first { $0.tier == tier }
+    }
+
+    /// Available tiers in this offering (for dynamic card count).
+    var availableTiers: [MembershipTier] {
+        packages.map(\.tier).sorted { $0.rank < $1.rank }
     }
 }
 
@@ -154,6 +160,35 @@ struct RCPackage: Identifiable, Equatable, Sendable {
 
     /// Introductory offer (e.g. free trial)
     let introOffer: RCIntroOffer?
+
+    /// Subscription promotional offers for existing/lapsed subscribers (Story 3.4).
+    let promotionalOffers: [RCPromoOffer]
+
+    init(
+        id: String,
+        productIdentifier: String,
+        localizedPriceString: String,
+        localizedTitle: String,
+        localizedDescription: String,
+        price: Decimal,
+        currencyCode: String,
+        tier: MembershipTier,
+        packageType: RCPackageType,
+        introOffer: RCIntroOffer?,
+        promotionalOffers: [RCPromoOffer] = []
+    ) {
+        self.id = id
+        self.productIdentifier = productIdentifier
+        self.localizedPriceString = localizedPriceString
+        self.localizedTitle = localizedTitle
+        self.localizedDescription = localizedDescription
+        self.price = price
+        self.currencyCode = currencyCode
+        self.tier = tier
+        self.packageType = packageType
+        self.introOffer = introOffer
+        self.promotionalOffers = promotionalOffers
+    }
 
     enum RCPackageType: String, Sendable {
         case monthly
@@ -177,6 +212,15 @@ struct RCPackage: Identifiable, Equatable, Sendable {
             case freeTrial, payAsYouGo, payUpFront
         }
     }
+
+    /// A promotional offer (App Store subscription offer for existing/lapsed subscribers).
+    struct RCPromoOffer: Equatable, Sendable, Identifiable {
+        let id: String                      // offerIdentifier
+        let priceString: String             // e.g. "$4.99"
+        let price: Decimal
+        let period: String                  // e.g. "3 months"
+        let paymentMode: RCIntroOffer.PaymentMode
+    }
 }
 
 // MARK: - Purchase Result
@@ -186,6 +230,17 @@ struct RCPurchaseResult: Equatable, Sendable {
     let customerInfo: RCCustomerInfo
     let userCancelled: Bool
     let transactionIdentifier: String?
+}
+
+// MARK: - Signed Promotional Offer (Story 3.4)
+
+/// A server-signed promotional offer ready to pass to `purchase(package:promotionalOffer:)`.
+struct RCSignedPromoOffer: Equatable, Sendable {
+    let offerIdentifier: String
+    let keyIdentifier: String
+    let nonce: UUID
+    let signature: String
+    let timestamp: Int
 }
 
 // MARK: - RevenueCat Errors

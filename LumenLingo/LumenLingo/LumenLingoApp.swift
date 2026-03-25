@@ -98,6 +98,10 @@ struct LumenLingoApp: App {
                     let apiKey = EnvironmentConfig.current.revenueCatAPIKey
                     await revenueCatService.configure(apiKey: apiKey, appUserID: nil)
                 }
+                // Fetch offerings after configuration (Story 2.1)
+                await subscriptionManager.fetchOfferings(from: revenueCatService)
+                // Check trial eligibility for all packages (Story 2.4)
+                await subscriptionManager.checkTrialEligibility(from: revenueCatService)
             }
             .task {
                 // Bridge RevenueCat customer info updates → SubscriptionManager
@@ -115,6 +119,10 @@ struct LumenLingoApp: App {
             .onChange(of: scenePhase) { _, newPhase in
                 if newPhase == .active {
                     Task { await authService.checkAuthState() }
+                    // Refresh offerings if cache is stale (Story 2.1)
+                    if subscriptionManager.isOfferingsCacheStale {
+                        Task { await subscriptionManager.fetchOfferings(from: revenueCatService) }
+                    }
                 }
             }
         }

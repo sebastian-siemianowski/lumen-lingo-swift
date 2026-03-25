@@ -92,6 +92,48 @@ final class SubscriptionManager {
     /// Error message to display to the user.
     var errorMessage: String?
 
+    /// The tier whose purchase was cancelled (highlighted briefly).
+    var cancelHighlightTier: MembershipTier?
+
+    /// Whether a deferred (Ask to Buy) purchase is pending.
+    var showDeferredMessage: Bool = false
+
+    /// Whether the golden flash should fire (post-purchase success).
+    var showGoldenFlash: Bool = false
+
+    /// Whether this is the user's first-ever subscription (extended celebration).
+    var isFirstSubscription: Bool = false
+
+    // MARK: - RevenueCat Offerings (Story 2.1)
+
+    /// Current offering from RevenueCat (the default offering for the paywall).
+    private(set) var currentOffering: RCOffering?
+
+    /// All available offerings keyed by identifier.
+    private(set) var allOfferings: [String: RCOffering] = [:]
+
+    /// The state of the offerings fetch.
+    private(set) var offeringsState: OfferingsState = .idle
+
+    /// Timestamp of the last successful offerings fetch.
+    private var lastOfferingsFetchDate: Date?
+
+    /// How long cached offerings stay fresh before a background refresh (5 minutes).
+    private let offeringsCacheTTL: TimeInterval = 5 * 60
+
+    /// Offerings loading/error state.
+    enum OfferingsState: Equatable {
+        case idle
+        case loading
+        case loaded
+        case error(String)
+
+        var isLoaded: Bool {
+            if case .loaded = self { return true }
+            return false
+        }
+    }
+
     // MARK: Internal
 
     // MARK: Lifecycle
@@ -120,7 +162,373 @@ final class SubscriptionManager {
         return products.first { $0.id == id }
     }
 
-    // MARK: - Purchase
+    // MARK: - RevenueCat Offerings (Story 2.1)
+
+    /// Fetch offerings from RevenueCat and cache them.
+    /// Uses the cached offering if fresh (< 5 minutes), unless `forceRefresh` is true.
+    func fetchOfferings(from service: any RevenueCatServiceProtocol, forceRefresh: Bool = false) async {
+        // Use cache if still fresh
+        if !forceRefresh, let lastFetch = lastOfferingsFetchDate,
+           Date().timeIntervalSince(lastFetch) < offeringsCacheTTL,
+           currentOffering != nil {
+            storeLog.debug("Using cached offerings (age: \(Int(Date().timeIntervalSince(lastFetch)))s)")
+            return
+        }
+
+        guard service.isConfigured else {
+            storeLog.warning("RevenueCat not configured — skipping offerings fetch")
+            return
+        }
+
+        offeringsState = .loading
+
+        #if DEBUG
+        let fetchStart = CFAbsoluteTimeGetCurrent()
+        #endif
+
+        do {
+            let offerings = try await service.getOfferings()
+            currentOffering = offerings.current
+            allOfferings = offerings.all
+            offeringsState = .loaded
+            lastOfferingsFetchDate = Date()
+
+            #if DEBUG
+            let elapsed = (CFAbsoluteTimeGetCurrent() - fetchStart) * 1000
+            storeLog.debug("Offerings fetched in \(Int(elapsed))ms — \(offerings.all.count) offering(s), current: \(offerings.current?.id ?? "none")")
+            #endif
+        } catch {
+            storeLog.error("Failed to fetch offerings: \(error.localizedDescription)")
+            // Only show error if we have no cached offering to fall back to
+            if currentOffering == nil {
+                offeringsState = .error(error.localizedDescription)
+            } else {
+                // Keep the old cached offering and restore loaded state
+                offeringsState = .loaded
+            }
+        }
+    }
+
+    /// Fetch a specific named offering by ID (e.g., "experiment_spring_2026").
+    func offering(id: String) -> RCOffering? {
+        allOfferings[id]
+    }
+
+    /// Whether cached offerings are stale and should be refreshed.
+    var isOfferingsCacheStale: Bool {
+        guard let lastFetch = lastOfferingsFetchDate else { return true }
+        return Date().timeIntervalSince(lastFetch) >= offeringsCacheTTL
+    }
+
+    // MARK: - Offering Metadata (Story 2.3)
+
+    /// Metadata value from the current offering (e.g., "paywall_headline").
+    func offeringMetadata(_ key: String) -> String? {
+        currentOffering?.metadata[key]
+    }
+
+    /// Tiers available in the current offering (drives dynamic card count).
+    var availablePaidTiers: [MembershipTier] {
+        currentOffering?.availableTiers ?? [.pro, .elite, .royal]
+    }
+
+    // MARK: - Offering-Based Pricing (Story 2.2)
+
+    /// Get the RevenueCat package for a specific tier from the current offering.
+    func package(for tier: MembershipTier) -> RCPackage? {
+        currentOffering?.package(for: tier)
+    }
+
+    /// Localized price string from RevenueCat (e.g., "£9.99", "$12.99", "¥1,480").
+    /// Falls back to StoreKit Product, then to hardcoded enum price.
+    func offeringPrice(for tier: MembershipTier) -> String {
+        if let pkg = package(for: tier) {
+            return pkg.localizedPriceString
+        }
+        return displayPrice(for: tier)
+    }
+
+    /// Daily cost string computed from the package price (price ÷ 30).
+    func dailyCost(for tier: MembershipTier) -> String? {
+        guard let pkg = package(for: tier), pkg.price > 0 else { return nil }
+        let daily = pkg.price / 30
+        // Use the same currency formatting as the package
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = pkg.currencyCode ?? "USD"
+        formatter.maximumFractionDigits = 2
+        return formatter.string(from: daily as NSDecimalNumber)
+    }
+
+    /// Introductory offer from the RevenueCat package (if available).
+    func offeringIntroOffer(for tier: MembershipTier) -> RCPackage.RCIntroOffer? {
+        package(for: tier)?.introOffer
+    }
+
+    /// Promotional offers available for the given tier (Story 3.4).
+    func promotionalOffers(for tier: MembershipTier) -> [RCPackage.RCPromoOffer] {
+        package(for: tier)?.promotionalOffers ?? []
+    }
+
+    /// The best (first) promotional offer for a tier, if any (Story 3.4).
+    func bestPromoOffer(for tier: MembershipTier) -> RCPackage.RCPromoOffer? {
+        promotionalOffers(for: tier).first
+    }
+
+    /// Whether a price is available for the given tier (from offerings or StoreKit).
+    func hasPriceAvailable(for tier: MembershipTier) -> Bool {
+        package(for: tier) != nil || product(for: tier) != nil
+    }
+
+    // MARK: - Trial Eligibility (Story 2.4)
+
+    /// Cached eligibility results: product ID → eligible.
+    private(set) var trialEligibility: [String: Bool] = [:]
+
+    /// Check trial/intro eligibility for all packages in the current offering.
+    func checkTrialEligibility(from service: any RevenueCatServiceProtocol) async {
+        guard let offering = currentOffering else { return }
+        let productIDs = offering.packages.map(\.productIdentifier)
+        guard !productIDs.isEmpty else { return }
+        trialEligibility = await service.checkTrialEligibility(productIdentifiers: productIDs)
+    }
+
+    /// Whether the given tier is eligible for an introductory offer.
+    func isTrialEligible(for tier: MembershipTier) -> Bool {
+        guard let pkg = package(for: tier) else { return false }
+        return trialEligibility[pkg.productIdentifier] ?? (pkg.introOffer != nil)
+    }
+
+    // MARK: - RevenueCat Purchase (Story 3.1)
+
+    /// Result of a RevenueCat package purchase.
+    enum RCPurchaseOutcome: Equatable {
+        case success(MembershipTier)
+        case cancelled
+        case deferred
+        case error(String)
+    }
+
+    /// Purchase a subscription via RevenueCat's `purchase(package:)`.
+    /// Handles all outcomes: success, cancel, deferred, failure.
+    func purchasePackage(for tier: MembershipTier, using service: any RevenueCatServiceProtocol) async -> RCPurchaseOutcome {
+        guard let pkg = package(for: tier) else {
+            storeLog.error("No RC package for tier \(tier.rawValue)")
+            return .error("Subscription product not found.")
+        }
+
+        isPurchasing = true
+        errorMessage = nil
+        cancelHighlightTier = nil
+        showDeferredMessage = false
+        defer { isPurchasing = false }
+
+        // Track if this is the user's first subscription (no prior entitlements)
+        let hadPriorSubscription = latestCustomerInfo?.activeEntitlements.isEmpty == false
+
+        do {
+            let result = try await service.purchase(package: pkg)
+
+            if result.userCancelled {
+                storeLog.info("Purchase cancelled for \(tier.rawValue)")
+                cancelHighlightTier = tier
+                HapticsService.shared.selectionChanged()
+                // Clear highlight after 2 seconds
+                Task { @MainActor in
+                    try? await Task.sleep(for: .seconds(2))
+                    if self.cancelHighlightTier == tier {
+                        self.cancelHighlightTier = nil
+                    }
+                }
+                return .cancelled
+            }
+
+            // Success
+            let purchasedTier = result.customerInfo.highestActiveTier
+            handleRevenueCatCustomerInfo(result.customerInfo)
+            isFirstSubscription = !hadPriorSubscription
+            storeLog.info("Purchase successful: \(purchasedTier.rawValue), txn=\(result.transactionIdentifier ?? "nil")")
+            return .success(purchasedTier)
+        } catch let error as RCError {
+            switch error {
+            case .deferredPurchase:
+                storeLog.info("Purchase deferred (Ask to Buy) for \(tier.rawValue)")
+                showDeferredMessage = true
+                return .deferred
+            case .purchaseCancelled:
+                storeLog.info("Purchase cancelled for \(tier.rawValue)")
+                cancelHighlightTier = tier
+                HapticsService.shared.selectionChanged()
+                Task { @MainActor in
+                    try? await Task.sleep(for: .seconds(2))
+                    if self.cancelHighlightTier == tier {
+                        self.cancelHighlightTier = nil
+                    }
+                }
+                return .cancelled
+            default:
+                storeLog.error("Purchase error for \(tier.rawValue): \(error.localizedDescription)")
+                errorMessage = "Something went wrong. Please try again."
+                return .error(error.localizedDescription)
+            }
+        } catch {
+            storeLog.error("Purchase unknown error for \(tier.rawValue): \(error.localizedDescription)")
+            errorMessage = "Something went wrong. Please try again."
+            return .error(error.localizedDescription)
+        }
+    }
+
+    // MARK: - RevenueCat Promotional Offer Purchase (Story 3.4)
+
+    /// Purchase a package with a promotional offer.
+    func purchaseWithPromoOffer(
+        for tier: MembershipTier,
+        offerIdentifier: String,
+        using service: any RevenueCatServiceProtocol
+    ) async -> RCPurchaseOutcome {
+        guard let pkg = package(for: tier) else {
+            storeLog.error("No RC package for tier \(tier.rawValue)")
+            return .error("Subscription product not found.")
+        }
+
+        isPurchasing = true
+        errorMessage = nil
+        cancelHighlightTier = nil
+        showDeferredMessage = false
+        defer { isPurchasing = false }
+
+        let hadPriorSubscription = latestCustomerInfo?.activeEntitlements.isEmpty == false
+
+        do {
+            let signedOffer = try await service.getPromotionalOffer(
+                offerIdentifier: offerIdentifier,
+                package: pkg
+            )
+            let result = try await service.purchase(package: pkg, promotionalOffer: signedOffer)
+
+            if result.userCancelled {
+                cancelHighlightTier = tier
+                HapticsService.shared.selectionChanged()
+                Task { @MainActor in
+                    try? await Task.sleep(for: .seconds(2))
+                    if self.cancelHighlightTier == tier { self.cancelHighlightTier = nil }
+                }
+                return .cancelled
+            }
+
+            let purchasedTier = result.customerInfo.highestActiveTier
+            handleRevenueCatCustomerInfo(result.customerInfo)
+            isFirstSubscription = !hadPriorSubscription
+            storeLog.info("Promo purchase successful: \(purchasedTier.rawValue), offer=\(offerIdentifier)")
+            return .success(purchasedTier)
+        } catch let error as RCError {
+            switch error {
+            case .deferredPurchase:
+                showDeferredMessage = true
+                return .deferred
+            case .purchaseCancelled:
+                cancelHighlightTier = tier
+                HapticsService.shared.selectionChanged()
+                Task { @MainActor in
+                    try? await Task.sleep(for: .seconds(2))
+                    if self.cancelHighlightTier == tier { self.cancelHighlightTier = nil }
+                }
+                return .cancelled
+            default:
+                storeLog.error("Promo purchase error: \(error.localizedDescription)")
+                errorMessage = "Promotional offer could not be applied. Please try again."
+                return .error(error.localizedDescription)
+            }
+        } catch {
+            storeLog.error("Promo purchase unknown error: \(error.localizedDescription)")
+            errorMessage = "Promotional offer could not be applied. Please try again."
+            return .error(error.localizedDescription)
+        }
+    }
+
+    // MARK: - RevenueCat Restore (Story 3.2)
+
+    /// Result of a restore purchases operation.
+    enum RestoreOutcome: Equatable {
+        case restored(MembershipTier)
+        case nothingToRestore
+        case error(String)
+    }
+
+    /// Banner message shown after a restore (success, nothing found, or error).
+    var restoreBannerMessage: String?
+
+    /// Whether restore succeeded with active entitlements.
+    var restoreSucceeded: Bool = false
+
+    /// Restore purchases via RevenueCat's `restorePurchases()`.
+    func restoreViaRevenueCat(using service: any RevenueCatServiceProtocol) async -> RestoreOutcome {
+        isRestoring = true
+        errorMessage = nil
+        restoreBannerMessage = nil
+        restoreSucceeded = false
+        defer { isRestoring = false }
+
+        do {
+            let customerInfo = try await service.restorePurchases()
+            handleRevenueCatCustomerInfo(customerInfo)
+
+            let restoredTier = customerInfo.highestActiveTier
+            if restoredTier != .free {
+                restoreSucceeded = true
+                restoreBannerMessage = "Welcome back! Your \(restoredTier.displayName) subscription has been restored."
+                HapticsService.shared.success()
+                storeLog.info("Restore success: tier=\(restoredTier.rawValue)")
+                return .restored(restoredTier)
+            } else {
+                restoreBannerMessage = "No active subscriptions found for this Apple ID. If you believe this is an error, contact us."
+                storeLog.info("Restore: no active entitlements")
+                return .nothingToRestore
+            }
+        } catch {
+            let msg = "Couldn't restore. Check your connection and try again."
+            restoreBannerMessage = msg
+            storeLog.error("Restore failed: \(error.localizedDescription)")
+            return .error(error.localizedDescription)
+        }
+    }
+
+    // MARK: - Upgrade / Downgrade Context (Story 3.3)
+
+    /// Describes the context of a tier change relative to the user's current subscription.
+    enum TierChangeDirection: Equatable {
+        case upgrade
+        case downgrade
+        case sameOrFree
+    }
+
+    /// Determines whether changing to `target` is an upgrade, downgrade, or neutral.
+    func tierChangeDirection(to target: MembershipTier) -> TierChangeDirection {
+        guard let current = currentSubscribedTier else { return .sameOrFree }
+        if target.rank > current.rank { return .upgrade }
+        if target.rank < current.rank { return .downgrade }
+        return .sameOrFree
+    }
+
+    /// Contextual label for the CTA button based on the tier change direction.
+    func ctaVerb(for target: MembershipTier) -> String {
+        switch tierChangeDirection(to: target) {
+        case .upgrade: return "Upgrade to \(target.displayName)"
+        case .downgrade: return "Switch to \(target.displayName)"
+        case .sameOrFree: return "Subscribe"
+        }
+    }
+
+    /// The next renewal date (from latest customer info), if available.
+    var nextRenewalDateString: String? {
+        guard let date = latestCustomerInfo?.latestExpirationDate, date > .now else { return nil }
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        return formatter.string(from: date)
+    }
+
+    // MARK: - StoreKit Purchase (Legacy)
 
     /// Purchase a subscription for the given tier.
     /// Returns the tier on success.

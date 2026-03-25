@@ -40,10 +40,20 @@ protocol RevenueCatServiceProtocol: Observable, Sendable {
     /// The current (default) offering, if loaded.
     var currentOffering: RCOffering? { get }
 
+    /// Check introductory offer eligibility for the given product identifiers.
+    /// Returns a dictionary mapping product ID → `true` if eligible for intro/trial.
+    func checkTrialEligibility(productIdentifiers: [String]) async -> [String: Bool]
+
     // MARK: Purchase
 
     /// Purchase a package. Returns the result including transaction info and whether user cancelled.
     func purchase(package: RCPackage) async throws -> RCPurchaseResult
+
+    /// Purchase a package with a signed promotional offer (Story 3.4).
+    func purchase(package: RCPackage, promotionalOffer: RCSignedPromoOffer) async throws -> RCPurchaseResult
+
+    /// Get a signed promotional offer for a given offer identifier and package (Story 3.4).
+    func getPromotionalOffer(offerIdentifier: String, package: RCPackage) async throws -> RCSignedPromoOffer
 
     /// Restore previously completed purchases.
     func restorePurchases() async throws -> RCCustomerInfo

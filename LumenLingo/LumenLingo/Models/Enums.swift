@@ -468,6 +468,42 @@ enum MembershipTier: String, CaseIterable, Identifiable {
     }
 }
 
+// MARK: - Paywall Context (Story 2.5)
+
+/// The context in which the paywall is presented.
+enum PaywallContext: Equatable, Hashable, Sendable {
+    /// Default exploration from the Membership tab.
+    case membershipTab
+    /// Triggered when user hits a locked feature.
+    case featureGate(PremiumFeature)
+    /// Shown after free-tier milestones (5th lesson, 50 words).
+    case upgradeNudge(milestone: String)
+    /// Proactive pre-expiry nudge.
+    case trialExpiry(daysRemaining: Int)
+    /// From settings screen.
+    case settings
+
+    var headline: String {
+        switch self {
+        case .membershipTab: return "Choose Your Path"
+        case .featureGate(let feature): return "Unlock \(feature.displayName)"
+        case .upgradeNudge: return "Level Up Your Learning"
+        case .trialExpiry(let days): return "Your Trial Ends in \(days) Days"
+        case .settings: return "Manage Subscription"
+        }
+    }
+
+    var analyticsName: String {
+        switch self {
+        case .membershipTab: return "membership_tab"
+        case .featureGate: return "feature_gate"
+        case .upgradeNudge: return "upgrade_nudge"
+        case .trialExpiry: return "trial_expiry"
+        case .settings: return "settings"
+        }
+    }
+}
+
 // MARK: - Premium Feature
 
 /// Features that can be gated by tier.
