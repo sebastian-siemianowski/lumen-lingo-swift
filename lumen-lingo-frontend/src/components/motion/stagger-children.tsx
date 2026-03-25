@@ -3,7 +3,7 @@
 import { type ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
-import { staggerContainer, fadeUp } from '@/lib/motion';
+import { stagger, staggerContainer, fadeUp } from '@/lib/motion';
 
 interface StaggerChildrenProps {
   children: ReactNode;
@@ -26,15 +26,7 @@ export function StaggerChildren({
 
   return (
     <motion.div
-      variants={{
-        hidden: {},
-        visible: {
-          transition: {
-            staggerChildren: staggerInterval,
-            delayChildren: 0.1,
-          },
-        },
-      }}
+      variants={staggerContainer(staggerInterval)}
       initial="hidden"
       whileInView="visible"
       viewport={{ once, margin: '-60px' }}

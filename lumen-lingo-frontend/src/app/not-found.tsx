@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { StarField } from '@/components/background';
 import { trackEvent } from '@/lib/analytics';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { spring } from '@/lib/motion';
 
 /* ------------------------------------------------------------------ */
 /*  Floating astronaut SVG — lightweight, on-brand, cosmic            */
@@ -179,7 +180,7 @@ const fadeUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
+    transition: spring.smooth,
   },
 };
 
@@ -194,6 +195,23 @@ export default function NotFound() {
     <div className="relative flex min-h-[100dvh] flex-col items-center justify-center overflow-hidden px-4">
       {/* Cosmic background */}
       <StarField />
+
+      {/* Minimal logo header */}
+      <div className="absolute top-0 inset-x-0 z-20 flex justify-center py-6">
+        <Link
+          href="/"
+          className="group flex items-center gap-2.5 rounded-[--radius-sm] focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none"
+          aria-label="LumenLingo home"
+        >
+          <div className="relative flex h-9 w-9 items-center justify-center">
+            <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-violet to-cyan opacity-80 transition-opacity group-hover:opacity-100" />
+            <span className="relative text-lg font-bold text-white">L</span>
+          </div>
+          <span className="font-display text-lg font-bold text-foreground transition-colors group-hover:text-violet">
+            LumenLingo
+          </span>
+        </Link>
+      </div>
 
       {/* Subtle radial glow from center */}
       <div

@@ -43,14 +43,19 @@ export default async function AboutPage({
       <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'About', href: '/about' }]} />
 
       {/* Hero */}
-      <Section className="relative overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-20">
-        {/* Ambient background blobs */}
-        <div className="absolute inset-0 -z-10" aria-hidden>
-          <div className="absolute left-1/4 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-violet/8 blur-[120px]" />
-          <div className="absolute right-1/4 top-1/2 h-[400px] w-[400px] translate-x-1/2 rounded-full bg-cyan/6 blur-[120px]" />
+      <section className="relative overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-20">
+        {/* Cosmic gradient — inline with boosted opacities for shorter section */}
+        <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+          <div className="absolute inset-0 bg-background" />
+          <div className="absolute -top-[10%] -right-[10%] h-[min(700px,80vw)] w-[min(700px,80vw)] rounded-full bg-violet/[0.30] animate-cosmic-drift-1" style={{ filter: 'blur(100px)' }} />
+          <div className="absolute -bottom-[10%] -left-[8%] h-[min(560px,65vw)] w-[min(560px,65vw)] rounded-full bg-cyan/[0.22] animate-cosmic-drift-2" style={{ filter: 'blur(90px)' }} />
+          <div className="absolute top-[20%] right-[10%] h-[min(480px,50vw)] w-[min(480px,50vw)] rounded-full bg-[#1e3a5f]/[0.30] animate-cosmic-drift-3" style={{ filter: 'blur(80px)' }} />
+          <div className="absolute top-1/2 left-1/2 h-[min(360px,40vw)] w-[min(360px,40vw)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet/[0.15] animate-cosmic-pulse" style={{ filter: 'blur(70px)' }} />
+          <div className="absolute inset-0 opacity-[0.018]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")", backgroundRepeat: 'repeat', backgroundSize: '256px 256px' }} />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,var(--color-background)_95%)]" />
         </div>
 
-        <Container className="max-w-3xl">
+        <Container className="relative max-w-3xl">
           <FadeIn className="text-center">
             <Heading as="h1" gradient className="mb-6">
               We Believe Learning Should Be Beautiful
@@ -60,7 +65,10 @@ export default async function AboutPage({
             </Text>
           </FadeIn>
         </Container>
-      </Section>
+
+        {/* Soft bottom blend */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background via-background/60 to-transparent" />
+      </section>
 
       {/* Mission Statement */}
       <Section className="py-12 sm:py-20">

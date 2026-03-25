@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
-import { LanguageDisclaimer } from '@/components/legal';
+import { LanguageDisclaimer, BackToTop } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { Link } from '@/i18n/navigation';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
@@ -252,6 +252,8 @@ export default async function AccessibilityPage({
           </FadeIn>
         </Container>
       </Section>
+
+      <BackToTop />
     </PageTransition>
   );
 }

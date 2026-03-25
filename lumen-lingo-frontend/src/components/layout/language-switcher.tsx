@@ -41,11 +41,27 @@ export function LanguageSwitcher() {
     return () => document.removeEventListener('mousedown', onClick);
   }, [open]);
 
-  // Close on Escape
+  // Close on Escape & arrow key navigation
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setOpen(false);
+      if (e.key === 'Escape') {
+        setOpen(false);
+        return;
+      }
+      const locales = routing.locales;
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        const container = containerRef.current?.querySelector('[role="listbox"]');
+        const options = container?.querySelectorAll<HTMLButtonElement>('[role="option"]');
+        if (!options?.length) return;
+        const focused = document.activeElement as HTMLElement;
+        const idx = Array.from(options).indexOf(focused as HTMLButtonElement);
+        const next = e.key === 'ArrowDown'
+          ? (idx + 1) % options.length
+          : (idx - 1 + options.length) % options.length;
+        options[next].focus();
+      }
     };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);

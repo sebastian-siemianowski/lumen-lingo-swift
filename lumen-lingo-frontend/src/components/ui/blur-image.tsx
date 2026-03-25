@@ -10,7 +10,7 @@ type Props = Omit<ImageProps, 'onLoad'>;
  * Image with a gradient blur placeholder that crossfades to the loaded image.
  * Drop-in replacement for next/image with the same props.
  */
-export function BlurImage({ className, ...props }: Props) {
+export function BlurImage({ className, quality = 80, ...props }: Props) {
   const [loaded, setLoaded] = useState(false);
 
   return (
@@ -25,6 +25,7 @@ export function BlurImage({ className, ...props }: Props) {
       />
       <Image
         {...props}
+        quality={quality}
         className={cn(
           'transition-opacity duration-500',
           loaded ? 'opacity-100' : 'opacity-0',

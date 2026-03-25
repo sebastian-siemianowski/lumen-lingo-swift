@@ -6,6 +6,7 @@ import { Container, Heading, Text, GlassCard } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { NewsletterForm } from '@/components/newsletter';
 import { cn } from '@/lib/utils';
+import { LanguagePairIcon } from '@/components/icons';
 
 // ─── Language pair data ────────────────────────────────────────────
 interface LanguagePair {
@@ -143,7 +144,7 @@ function ComingSoonCard({ index }: { index: number }) {
       }}
     >
       <GlassCard tint="violet" hover={false} className="flex h-full flex-col items-center justify-center p-6 text-center">
-        <div className="mb-2 text-3xl">🌍</div>
+        <div className="mb-2"><LanguagePairIcon size={32} className="text-foreground-secondary" aria-hidden /></div>
         <h3 className="text-sm font-semibold text-foreground">More languages coming soon</h3>
         <p className="mt-1 text-xs text-foreground-muted">
           Subscribe to be the first to know when new language pairs launch.

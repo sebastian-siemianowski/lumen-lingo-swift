@@ -48,14 +48,6 @@
 - **Currency**: € EUR
 - **Notes**: Compound nouns are one word (Sprachlernanwendung not Sprach Lern Anwendung). Capitalise all nouns. Prefer formal register but keep sentences concise.
 
-### Portuguese (pt)
-
-- **Register**: **Você** (standard Brazilian Portuguese). Warm and approachable.
-- **Date format**: DD de month de YYYY (e.g. "2 de junho de 2025")
-- **Numbers**: Period thousands separator, comma decimal (1.000,99)
-- **Currency**: R$ BRL (primary Brazilian audience)
-- **Notes**: Use Brazilian Portuguese (not European). "Aplicativo" for app (not "aplicação").
-
 ### Polish (pl)
 
 - **Register**: **Ty** (informal). Polish digital convention for modern apps.

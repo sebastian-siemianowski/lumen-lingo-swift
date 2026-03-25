@@ -2,9 +2,13 @@
 
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, type PanInfo } from 'framer-motion';
+import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui';
-import { getAppStoreUrl } from '@/lib/appStoreUrl';
 import { trackEvent } from '@/lib/analytics';
+import { CelebrationIcon, ApplauseIcon, EncourageIcon } from '@/components/icons';
+import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { CountUp } from '@/components/motion';
+import Link from 'next/link';
 
 // ─── Demo card data ────────────────────────────────────────────────
 interface DemoCard {
@@ -23,9 +27,11 @@ const DEMO_CARDS: DemoCard[] = [
 ];
 
 const SWIPE_THRESHOLD = 80;
+const VELOCITY_THRESHOLD = 400;
+const FAST_SWIPE_DISTANCE = 50;
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
-type DemoState = 'playing' | 'complete';
+type DemoState = 'playing' | 'complete' | 'draining';
 
 export function FlashcardDemo() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,11 +41,21 @@ export function FlashcardDemo() {
   const [exitDirection, setExitDirection] = useState<'left' | 'right' | null>(null);
   const [hasTrackedStart, setHasTrackedStart] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const prefersReduced = useReducedMotion();
 
   const x = useMotionValue(0);
   const rotate = useTransform(x, [-200, 200], [-12, 12]);
   const correctOpacity = useTransform(x, [0, SWIPE_THRESHOLD], [0, 1]);
   const incorrectOpacity = useTransform(x, [-SWIPE_THRESHOLD, 0], [1, 0]);
+
+  // Dynamic shadow that intensifies during drag
+  const dragShadow = useTransform(x, (v) => {
+    const t = Math.min(Math.abs(v) / SWIPE_THRESHOLD, 1);
+    return `0 ${4 + 8 * t}px ${20 + 20 * t}px rgba(0,0,0,${0.15 + 0.35 * t})`;
+  });
+  // Colour tint overlays (green = correct, red = skip)
+  const greenTint = useTransform(x, [0, SWIPE_THRESHOLD], [0, 0.15]);
+  const redTint = useTransform(x, [-SWIPE_THRESHOLD, 0], [0.15, 0]);
 
   const card = DEMO_CARDS[currentIndex];
   const progress = currentIndex / DEMO_CARDS.length;
@@ -57,6 +73,9 @@ export function FlashcardDemo() {
       const direction = result === 'correct' ? 'right' : 'left';
       setExitDirection(direction);
       setResults((prev) => [...prev, result]);
+      trackEvent(result === 'correct' ? 'demo_card_swiped_correct' : 'demo_card_swiped_incorrect', {
+        card: String(currentIndex + 1),
+      });
 
       setTimeout(() => {
         const nextIndex = currentIndex + 1;
@@ -78,9 +97,14 @@ export function FlashcardDemo() {
 
   const handleDragEnd = useCallback(
     (_: unknown, info: PanInfo) => {
-      if (info.offset.x > SWIPE_THRESHOLD) {
+      const fastRight =
+        info.velocity.x > VELOCITY_THRESHOLD && info.offset.x > FAST_SWIPE_DISTANCE;
+      const fastLeft =
+        info.velocity.x < -VELOCITY_THRESHOLD && info.offset.x < -FAST_SWIPE_DISTANCE;
+
+      if (info.offset.x > SWIPE_THRESHOLD || fastRight) {
         advanceCard('correct');
-      } else if (info.offset.x < -SWIPE_THRESHOLD) {
+      } else if (info.offset.x < -SWIPE_THRESHOLD || fastLeft) {
         advanceCard('incorrect');
       }
     },
@@ -94,7 +118,10 @@ export function FlashcardDemo() {
     function onKeyDown(e: KeyboardEvent) {
       if (e.key === ' ' || e.key === 'Enter') {
         e.preventDefault();
-        setFlipped((f) => !f);
+        setFlipped((f) => {
+          trackEvent('demo_card_flipped', { card: String(currentIndex + 1) });
+          return !f;
+        });
       } else if (e.key === 'ArrowRight') {
         e.preventDefault();
         advanceCard('correct');
@@ -109,11 +136,14 @@ export function FlashcardDemo() {
   }, [demoState, advanceCard]);
 
   function resetDemo() {
-    setCurrentIndex(0);
-    setFlipped(false);
-    setDemoState('playing');
-    setResults([]);
-    setExitDirection(null);
+    setDemoState('draining');
+    setTimeout(() => {
+      setCurrentIndex(0);
+      setFlipped(false);
+      setDemoState('playing');
+      setResults([]);
+      setExitDirection(null);
+    }, 300);
   }
 
   if (demoState === 'complete') {
@@ -128,18 +158,57 @@ export function FlashcardDemo() {
       role="region"
       aria-label="Interactive flashcard demo"
     >
+      {/* Instruction — fades out after first swipe */}
+      <AnimatePresence>
+        {results.length === 0 && (
+          <motion.p
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0, y: -4 }}
+            transition={{ duration: 0.3 }}
+            className="mb-4 flex items-center justify-center gap-2 text-sm text-foreground-muted"
+          >
+            <span aria-hidden>←</span>
+            Swipe right for correct, left to skip
+            <span aria-hidden>→</span>
+          </motion.p>
+        )}
+      </AnimatePresence>
+
       {/* Progress bar */}
       <div className="mb-8 w-full max-w-xs">
         <div className="mb-2 flex items-center justify-between text-xs text-foreground-muted">
-          <span>Card {currentIndex + 1} of {DEMO_CARDS.length}</span>
+          {/* Number-flip counter */}
+          <div className="relative flex h-4 items-center overflow-hidden">
+            <AnimatePresence mode="popLayout">
+              <motion.span
+                key={currentIndex}
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -10, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                {currentIndex + 1} / {DEMO_CARDS.length}
+              </motion.span>
+            </AnimatePresence>
+          </div>
           <span className="font-medium text-foreground">{card.language}</span>
         </div>
         <div className="h-1.5 w-full overflow-hidden rounded-full bg-white/5">
           <motion.div
-            className="h-full rounded-full bg-gradient-to-r from-violet to-cyan"
+            className="h-full rounded-full bg-gradient-to-r from-violet via-cyan to-amber"
             initial={false}
-            animate={{ width: `${((currentIndex) / DEMO_CARDS.length) * 100}%` }}
-            transition={{ duration: 0.4, ease }}
+            animate={{
+              width: `${(currentIndex / DEMO_CARDS.length) * 100}%`,
+              boxShadow: [
+                '0 0 0 rgba(139,92,246,0)',
+                '0 0 8px rgba(139,92,246,0.4)',
+                '0 0 0 rgba(139,92,246,0)',
+              ],
+            }}
+            transition={{
+              width: { type: 'spring', stiffness: 100, damping: 15 },
+              boxShadow: { duration: 0.3 },
+            }}
           />
         </div>
       </div>
@@ -151,7 +220,7 @@ export function FlashcardDemo() {
             <motion.div
               key={currentIndex}
               className="absolute inset-0 cursor-grab touch-none active:cursor-grabbing"
-              style={{ x, rotate }}
+              style={{ x, rotate, boxShadow: dragShadow }}
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={0.7}
@@ -162,9 +231,9 @@ export function FlashcardDemo() {
                 x: exitDirection === 'right' ? 300 : -300,
                 opacity: 0,
                 rotate: exitDirection === 'right' ? 15 : -15,
-                transition: { duration: 0.3 },
+                transition: { duration: 0.25 },
               }}
-              transition={{ type: 'spring', stiffness: 300, damping: 24 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 20 }}
               whileTap={{ scale: 0.98 }}
             >
               {/* Swipe indicators */}
@@ -181,18 +250,54 @@ export function FlashcardDemo() {
                 SKIP ✗
               </motion.div>
 
+              {/* Colour tint overlays — smooth during drag */}
+              <motion.div
+                className="pointer-events-none absolute inset-0 rounded-2xl bg-emerald-500"
+                style={{ opacity: greenTint }}
+                aria-hidden
+              />
+              <motion.div
+                className="pointer-events-none absolute inset-0 rounded-2xl bg-red-500"
+                style={{ opacity: redTint }}
+                aria-hidden
+              />
+
               {/* The card itself — 3D flip */}
               <div
-                className="relative h-full w-full [perspective:800px]"
+                className={cn(
+                  'relative h-full w-full',
+                  !prefersReduced && '[perspective:1000px]',
+                )}
                 onClick={() => setFlipped((f) => !f)}
               >
                 <motion.div
-                  className="relative h-full w-full [transform-style:preserve-3d]"
-                  animate={{ rotateY: flipped ? 180 : 0 }}
-                  transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
+                  className={cn(
+                    'relative h-full w-full',
+                    !prefersReduced && '[transform-style:preserve-3d]',
+                  )}
+                  animate={
+                    prefersReduced
+                      ? {}
+                      : {
+                          rotateY: flipped ? 180 : 0,
+                          boxShadow: [
+                            '0 0 0 rgba(139,92,246,0)',
+                            '0 0 30px rgba(139,92,246,0.3)',
+                            '0 0 0 rgba(139,92,246,0)',
+                          ],
+                        }
+                  }
+                  transition={{ duration: prefersReduced ? 0 : 0.4, ease: [0.4, 0, 0.2, 1] }}
                 >
                   {/* Front face */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-glass-border bg-gradient-to-br from-white/[0.06] to-white/[0.02] p-8 shadow-xl backdrop-blur-xl [backface-visibility:hidden]">
+                  <motion.div
+                    className={cn(
+                      'absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-glass-border bg-gradient-to-br from-white/[0.06] to-white/[0.02] p-8 shadow-xl backdrop-blur-xl',
+                      !prefersReduced && '[backface-visibility:hidden]',
+                    )}
+                    animate={prefersReduced ? { opacity: flipped ? 0 : 1 } : {}}
+                    transition={prefersReduced ? { duration: 0.15 } : {}}
+                  >
                     <span className="mb-3 rounded-[--radius-pill] bg-violet/10 px-3 py-1 text-[10px] font-semibold tracking-wider text-violet uppercase">
                       {card.language}
                     </span>
@@ -207,20 +312,37 @@ export function FlashcardDemo() {
                     <span className="mt-6 text-xs text-foreground-muted/60">
                       Tap to reveal
                     </span>
-                  </div>
+                  </motion.div>
 
                   {/* Back face */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-cyan/20 bg-gradient-to-br from-cyan/[0.08] to-violet/[0.04] p-8 shadow-xl backdrop-blur-xl [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                  <motion.div
+                    className={cn(
+                      'absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-cyan/20 bg-gradient-to-br from-cyan/[0.08] to-violet/[0.04] p-8 shadow-xl backdrop-blur-xl',
+                      !prefersReduced
+                        ? '[backface-visibility:hidden] [transform:rotateY(180deg)]'
+                        : '',
+                    )}
+                    animate={prefersReduced ? { opacity: flipped ? 1 : 0 } : {}}
+                    transition={prefersReduced ? { duration: 0.15 } : {}}
+                  >
                     <span className="mb-3 rounded-[--radius-pill] bg-cyan/10 px-3 py-1 text-[10px] font-semibold tracking-wider text-cyan uppercase">
                       English
                     </span>
-                    <span className="text-center font-display text-3xl font-bold text-foreground sm:text-4xl">
+                    <span className="text-center font-display text-3xl font-bold text-violet sm:text-4xl">
                       {card.translation}
                     </span>
+                    {card.romanisation && (
+                      <>
+                        <div className="mt-4 h-px w-16 bg-gradient-to-r from-transparent via-violet/30 to-transparent" />
+                        <span className="mt-3 text-sm text-foreground-muted">
+                          {card.romanisation}
+                        </span>
+                      </>
+                    )}
                     <span className="mt-6 text-xs text-foreground-muted/60">
                       Swipe to continue
                     </span>
-                  </div>
+                  </motion.div>
                 </motion.div>
               </div>
             </motion.div>
@@ -294,9 +416,9 @@ function CompletionScreen({
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
+      initial={{ opacity: 0, scale: 0.92 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, ease }}
+      transition={{ duration: 0.5, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
       className="flex flex-col items-center text-center"
     >
       {/* Score ring */}
@@ -315,7 +437,7 @@ function CompletionScreen({
             strokeDasharray={2 * Math.PI * 52}
             initial={{ strokeDashoffset: 2 * Math.PI * 52 }}
             animate={{ strokeDashoffset: 2 * Math.PI * 52 * (1 - percentage / 100) }}
-            transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 1, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
           />
           <defs>
             <linearGradient id="scoreGrad" x1="0" y1="0" x2="1" y2="1">
@@ -325,13 +447,40 @@ function CompletionScreen({
           </defs>
         </svg>
         <div className="flex flex-col items-center">
-          <span className="font-display text-3xl font-bold text-foreground">{percentage}%</span>
+          <CountUp
+            target={percentage}
+            suffix="%"
+            duration={0.6}
+            delay={0.8}
+            className="font-display text-3xl font-bold text-foreground"
+          />
           <span className="text-xs text-foreground-muted">{correct}/{total}</span>
         </div>
       </div>
 
       <h3 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
-        {percentage >= 80 ? '🎉 Amazing!' : percentage >= 60 ? '👏 Great effort!' : '💪 Keep going!'}
+        <span className="flex items-center justify-center gap-2">
+          {/* Celebration icon — springs in T+200ms after score counting (score ~1.4s, so ~1.6s total) */}
+          <motion.span
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{
+              delay: 1.6,
+              type: 'spring',
+              stiffness: 300,
+              damping: 15,
+            }}
+            className="inline-flex"
+          >
+            {percentage >= 80
+              ? <CelebrationIcon size={48} className="text-amber" aria-hidden />
+              : percentage >= 60
+                ? <ApplauseIcon size={48} className="text-violet" aria-hidden />
+                : <EncourageIcon size={48} className="text-cyan" aria-hidden />
+            }
+          </motion.span>
+          {percentage >= 80 ? 'Amazing!' : percentage >= 60 ? 'Great effort!' : 'Keep going!'}
+        </span>
       </h3>
 
       <p className="mt-3 max-w-sm text-sm leading-relaxed text-foreground-muted">
@@ -339,26 +488,23 @@ function CompletionScreen({
         ambient soundscapes, and thousands of flashcards.
       </p>
 
-      {/* CTA buttons */}
-      <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
-        <a
-          href={getAppStoreUrl('demo_completion')}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => trackEvent('demo_cta_click', { location: 'completion' })}
-        >
+      {/* CTA buttons — appear at T+800ms with fadeUp */}
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8, duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+        className="mt-8 flex flex-col items-center gap-3 sm:flex-row"
+      >
+        <Link href="/download">
           <Button variant="primary" size="lg">
-            <svg className="me-2 h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-            </svg>
-            Download Free
+            Try the Full App
           </Button>
-        </a>
+        </Link>
 
         <Button variant="ghost" size="lg" onClick={onRestart}>
           Try Again
         </Button>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }

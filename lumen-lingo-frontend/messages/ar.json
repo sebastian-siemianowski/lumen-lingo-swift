@@ -9,8 +9,8 @@
     "pricing": "الأسعار",
     "blog": "المدونة",
     "about": "من نحن",
-    "download": "تحميل",
-    "downloadFree": "حمّل مجاناً",
+    "download": "Launching Soon",
+    "downloadFree": "Launching Soon",
     "skipToContent": "تخطي إلى المحتوى",
     "openMenu": "فتح القائمة",
     "closeMenu": "إغلاق القائمة",
@@ -23,7 +23,6 @@
     "fr": "Français",
     "ja": "日本語",
     "de": "Deutsch",
-    "pt": "Português",
     "pl": "Polski",
     "ar": "العربية",
     "zh": "中文",
@@ -351,7 +350,7 @@
       "greatEffort": "👏 جهد عظيم!",
       "keepGoing": "💪 واصل!",
       "description": "أعجبك؟ التجربة الحقيقية أفضل — مع ٩ لغات وتعلم تكيفي وأصوات محيطية وآلاف البطاقات التعليمية.",
-      "downloadFree": "حمّل مجاناً",
+      "downloadFree": "Launching Soon",
       "tryAgain": "حاول مرة أخرى"
     },
     "meta": {
@@ -399,8 +398,8 @@
     "links": {
       "features": "المزايا",
       "pricing": "الأسعار",
-      "howItWorks": "كيف يعمل",
-      "reviews": "التقييمات",
+      "earlyAccess": "الوصول المبكر",
+      "download": "Launching Soon",
       "about": "من نحن",
       "blog": "المدونة",
       "careers": "الوظائف",
@@ -421,7 +420,7 @@
       "heading": "ابقَ على اطلاع",
       "subheading": "نصائح تعلم وتحديثات التطبيق وأبرز أخبار المجتمع."
     },
-    "downloadAppStore": "حمّل من App Store",
+    "downloadAppStore": "Launching Soon",
     "copyright": "LumenShore Ltd. جميع الحقوق محفوظة.",
     "madeIn": "صُنع بعناية في المملكة المتحدة",
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",

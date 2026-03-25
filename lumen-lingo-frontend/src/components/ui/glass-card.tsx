@@ -3,6 +3,7 @@
 import { forwardRef, type HTMLAttributes } from 'react';
 import { motion, type HTMLMotionProps } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { spring } from '@/lib/motion';
 
 interface GlassCardProps extends HTMLMotionProps<'div'> {
   tint?: 'default' | 'violet' | 'cyan' | 'amber';
@@ -24,7 +25,7 @@ const GlassCard = forwardRef<HTMLDivElement, GlassCardProps>(
       <motion.div
         ref={ref}
         whileHover={hover ? { y: -4, scale: 1.01 } : undefined}
-        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+        transition={spring.snappy}
         className={cn(
           'glass-card rounded-[--radius-card] p-6 shadow-card transition-all duration-300',
           hover && 'glass-card-hover hover:shadow-[0_8px_32px_rgba(0,0,0,0.5),0_0_0_1px_rgba(255,255,255,0.1)]',

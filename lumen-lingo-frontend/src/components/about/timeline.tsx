@@ -10,28 +10,28 @@ interface Milestone {
 
 const milestones: Milestone[] = [
   {
-    year: '2024',
+    year: 'Late 2025',
     title: 'The Spark',
     description:
-      'LumenShore was founded with a bold idea: language learning could be as beautiful as it is effective. The first prototype was born in a weekend hackathon.',
+      'First working prototype built — a weekend hackathon that refused to stay a weekend. The mission: make language learning feel beautiful.',
   },
   {
-    year: 'Early 2025',
-    title: 'First Beta',
+    year: 'Early 2026',
+    title: 'Building Brick by Brick',
     description:
-      'Our closed beta launched with English–Spanish flashcards, spaced repetition, and the very first nebula background. Early testers called it "addictive."',
+      'Iteration after iteration. Flashcard engine, spaced repetition algorithm, 9 languages, soundscapes, breathing orbs — each feature hand-polished before moving to the next.',
   },
   {
-    year: 'Mid 2025',
-    title: 'App Store Launch',
+    year: 'March 2026',
+    title: 'Approaching Launch',
     description:
-      'LumenLingo hit the App Store with 9 languages, 25+ language pairs, ambient soundscapes, and the breathing orb that became our signature feature.',
+      'Beta testing with early adopters. Premium tiers refined. The website you\'re reading right now, crafted with the same obsessive care as the app itself.',
   },
   {
-    year: '2026',
-    title: 'Growing & Evolving',
+    year: 'The Road Ahead',
+    title: 'What Comes Next',
     description:
-      'New practice modes, premium tiers, offline support, and a thriving community of learners who believe that beauty and education go hand in hand.',
+      'New practice modes, community features, and the App Store launch. Built by a solo developer with the ambition of a studio and the attention to detail of an artisan.',
   },
 ];
 

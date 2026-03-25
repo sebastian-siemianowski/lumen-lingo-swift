@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
@@ -19,6 +20,7 @@ const navLinks = [
 
 export function Header() {
   const t = useTranslations('Nav');
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
@@ -30,9 +32,19 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
+    let rafId = 0;
+    const onScroll = () => {
+      if (rafId) return;
+      rafId = requestAnimationFrame(() => {
+        setScrolled(window.scrollY > 20);
+        rafId = 0;
+      });
+    };
     window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      cancelAnimationFrame(rafId);
+    };
   }, []);
 
   // Lock body scroll when mobile menu is open
@@ -92,14 +104,14 @@ export function Header() {
 
       <header
         className={cn(
-          'fixed top-0 right-0 left-0 z-50 transition-all duration-500',
+          'fixed top-0 right-0 left-0 z-50 transition-[background-color,border-color,box-shadow,backdrop-filter] duration-300 ease-in-out',
           scrolled
-            ? 'border-b border-glass-border bg-background/80 shadow-lg backdrop-blur-xl'
-            : 'bg-transparent',
+            ? 'border-b border-glass-border bg-surface/80 shadow-card backdrop-blur-xl'
+            : 'border-b border-transparent bg-transparent shadow-none',
         )}
       >
         <Container>
-          <nav className="flex h-16 items-center justify-between sm:h-20" aria-label="Main navigation">
+          <nav className="flex h-14 items-center justify-between sm:h-16" aria-label="Main navigation">
             {/* Logo */}
             <Link href="/" className="group flex items-center gap-2.5 rounded-[--radius-sm] focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none" aria-label="LumenLingo home">
               <div className="relative flex h-9 w-9 items-center justify-center">
@@ -113,17 +125,32 @@ export function Header() {
 
             {/* Desktop nav */}
             <div className="hidden items-center gap-1 md:flex">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="group relative rounded-[--radius-sm] px-4 py-2 text-sm font-medium text-foreground-secondary transition-colors hover:text-foreground focus-visible:text-foreground focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none"
-                >
-                  {t(link.key)}
-                  {/* Slide-in underline */}
-                  <span className="absolute bottom-0.5 start-4 end-4 h-[2px] origin-left rtl:origin-right scale-x-0 rounded-full bg-violet transition-transform duration-300 ease-out group-hover:scale-x-100 group-focus-visible:scale-x-100" />
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = pathname.startsWith(link.href);
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={cn(
+                      'group relative rounded-[--radius-sm] px-3 py-2 text-sm font-medium transition-colors duration-150 focus-visible:ring-2 focus-visible:ring-violet focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none',
+                      isActive
+                        ? 'text-foreground'
+                        : 'text-foreground-secondary hover:text-foreground',
+                    )}
+                    aria-current={isActive ? 'page' : undefined}
+                  >
+                    {t(link.key)}
+                    <span
+                      className={cn(
+                        'absolute bottom-0.5 start-3 end-3 h-[2px] rounded-full bg-violet transition-transform duration-200 ease-out',
+                        isActive
+                          ? 'scale-x-100'
+                          : 'origin-left rtl:origin-right scale-x-0 group-hover:scale-x-100 group-focus-visible:scale-x-100',
+                      )}
+                    />
+                  </Link>
+                );
+              })}
             </div>
 
             {/* Desktop CTA */}
@@ -187,7 +214,7 @@ export function Header() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm md:hidden"
+              className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm md:hidden"
               onClick={closeMobile}
               aria-hidden
             />
@@ -201,11 +228,11 @@ export function Header() {
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
-              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-              className="fixed top-0 end-0 bottom-0 z-40 w-[min(85vw,360px)] border-s border-glass-border bg-background/95 backdrop-blur-xl md:hidden"
+              transition={{ type: 'spring', stiffness: 300, damping: 28 }}
+              className="fixed top-0 end-0 bottom-0 z-40 w-full border-s border-glass-border bg-surface/98 backdrop-blur-xl sm:w-80 md:hidden"
             >
               <div className="flex h-full flex-col px-6 pt-24 pb-8">
-                <nav className="flex flex-1 flex-col gap-2">
+                <nav aria-label="Mobile navigation" className="flex flex-1 flex-col gap-2">
                   {navLinks.map((link, i) => (
                     <motion.div
                       key={link.href}
@@ -216,7 +243,7 @@ export function Header() {
                       <Link
                         href={link.href}
                         onClick={closeMobile}
-                        className="block rounded-[--radius-button] px-4 py-3 text-lg font-medium text-foreground-secondary transition-all hover:bg-white/5 hover:text-foreground"
+                        className="block border-b border-glass-border px-4 py-3 text-lg font-medium text-foreground-secondary transition-all hover:bg-white/5 hover:text-foreground"
                       >
                         {t(link.key)}
                       </Link>
@@ -244,6 +271,16 @@ export function Header() {
                     </svg>
                     {t('downloadFree')}
                   </a>
+                </motion.div>
+
+                {/* Language switcher in mobile menu */}
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.45 }}
+                  className="mt-4 border-t border-glass-border pt-4"
+                >
+                  <LanguageSwitcher />
                 </motion.div>
               </div>
             </motion.div>

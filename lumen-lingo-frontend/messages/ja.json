@@ -9,8 +9,8 @@
     "pricing": "料金",
     "blog": "ブログ",
     "about": "概要",
-    "download": "ダウンロード",
-    "downloadFree": "無料ダウンロード",
+    "download": "Launching Soon",
+    "downloadFree": "Launching Soon",
     "skipToContent": "コンテンツへスキップ",
     "openMenu": "メニューを開く",
     "closeMenu": "メニューを閉じる",
@@ -23,7 +23,6 @@
     "fr": "Français",
     "ja": "日本語",
     "de": "Deutsch",
-    "pt": "Português",
     "pl": "Polski",
     "ar": "العربية",
     "zh": "中文",
@@ -351,7 +350,7 @@
       "greatEffort": "👏 がんばりました！",
       "keepGoing": "💪 その調子！",
       "description": "楽しんでいただけましたか？実際の体験はさらに素晴らしいです — 9言語、適応型学習、アンビエントサウンドスケープ、そして何千ものカード。",
-      "downloadFree": "無料ダウンロード",
+      "downloadFree": "Launching Soon",
       "tryAgain": "もう一度"
     },
     "meta": {
@@ -399,8 +398,8 @@
     "links": {
       "features": "機能",
       "pricing": "料金",
-      "howItWorks": "使い方",
-      "reviews": "レビュー",
+      "earlyAccess": "早期アクセス",
+      "download": "Launching Soon",
       "about": "概要",
       "blog": "ブログ",
       "careers": "採用情報",
@@ -421,7 +420,7 @@
       "heading": "最新情報をお届け",
       "subheading": "学習のコツ、アプリの更新情報、コミュニティのハイライト。"
     },
-    "downloadAppStore": "App Storeでダウンロード",
+    "downloadAppStore": "Launching Soon",
     "copyright": "LumenShore Ltd. All rights reserved.",
     "madeIn": "英国で心を込めて作られています",
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",

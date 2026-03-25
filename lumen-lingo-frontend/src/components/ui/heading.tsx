@@ -10,10 +10,10 @@ interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
 }
 
 const headingSizes: Record<HeadingLevel, string> = {
-  h1: 'text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.1]',
-  h2: 'text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.15]',
-  h3: 'text-2xl sm:text-3xl font-semibold tracking-tight leading-[1.2]',
-  h4: 'text-xl sm:text-2xl font-semibold leading-[1.3]',
+  h1: 'text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight md:leading-[1.1]',
+  h2: 'text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight md:leading-[1.15]',
+  h3: 'text-xl md:text-3xl font-semibold tracking-tight leading-tight md:leading-[1.2]',
+  h4: 'text-lg md:text-2xl font-semibold leading-tight md:leading-[1.3]',
 };
 
 const Heading = forwardRef<HTMLHeadingElement, HeadingProps>(

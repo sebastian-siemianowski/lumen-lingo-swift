@@ -57,7 +57,7 @@ const values: ValueCardData[] = [
     ),
     title: 'Privacy First',
     description:
-      'Your data stays yours. Always. We process everything on-device, sync through your personal iCloud, and never run external servers that store your information.',
+      'Your learning data lives on your device and syncs through your personal iCloud. We designed LumenLingo so your data stays under your control — today that means no external servers touch your information.',
     tint: 'amber',
   },
   {

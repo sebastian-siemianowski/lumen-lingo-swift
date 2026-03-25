@@ -1,8 +1,9 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { spring } from '@/lib/motion';
 
 interface TOCItem {
   id: string;
@@ -151,5 +152,95 @@ export function DownloadPDFButton({ label }: { label?: string }) {
       </svg>
       {label ?? 'Download as PDF'}
     </button>
+  );
+}
+
+/** Collapsible TOC for mobile (xl: hidden) */
+export function MobileLegalTOC({ items, label }: LegalTOCProps & { label?: string }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="xl:hidden">
+      <button
+        onClick={() => setOpen((o) => !o)}
+        className="flex w-full items-center justify-between rounded-lg border border-glass-border bg-white/[0.03] px-4 py-2.5 text-sm font-medium text-foreground-secondary transition-colors hover:bg-white/[0.05]"
+        aria-expanded={open}
+      >
+        {label ?? 'Sections'}
+        <svg
+          className={cn('h-4 w-4 transition-transform', open && 'rotate-180')}
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+          aria-hidden
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <AnimatePresence>
+        {open && (
+          <motion.ul
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="mt-2 space-y-0.5 overflow-hidden rounded-lg border border-glass-border bg-white/[0.02] p-2"
+          >
+            {items.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpen(false);
+                    document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className={cn(
+                    'block rounded px-3 py-1.5 text-sm text-foreground-muted transition-colors hover:text-foreground',
+                    item.level > 2 && 'ps-6',
+                  )}
+                >
+                  {item.text}
+                </a>
+              </li>
+            ))}
+          </motion.ul>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+/** Floating back-to-top button — appears after scrolling 400px */
+export function BackToTop() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    function onScroll() {
+      setShow(window.scrollY > 400);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (
+    <AnimatePresence>
+      {show && (
+        <motion.button
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
+          transition={spring.smooth}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-6 end-6 z-40 flex h-10 w-10 items-center justify-center rounded-full border border-glass-border bg-surface/90 text-foreground-muted shadow-lg backdrop-blur-sm transition-colors hover:text-foreground"
+          aria-label="Back to top"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path d="M18 15l-6-6-6 6" />
+          </svg>
+        </motion.button>
+      )}
+    </AnimatePresence>
   );
 }

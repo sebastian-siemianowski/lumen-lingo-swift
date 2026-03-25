@@ -9,8 +9,8 @@
     "pricing": "Preise",
     "blog": "Blog",
     "about": "Über uns",
-    "download": "Download",
-    "downloadFree": "Kostenlos Herunterladen",
+    "download": "Launching Soon",
+    "downloadFree": "Launching Soon",
     "skipToContent": "Zum Inhalt springen",
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schließen",
@@ -23,7 +23,6 @@
     "fr": "Français",
     "ja": "日本語",
     "de": "Deutsch",
-    "pt": "Português",
     "pl": "Polski",
     "ar": "العربية",
     "zh": "中文",
@@ -351,7 +350,7 @@
       "greatEffort": "👏 Toller Einsatz!",
       "keepGoing": "💪 Weiter so!",
       "description": "Hat es Ihnen gefallen? Das echte Erlebnis ist noch besser — mit 9 Sprachen, adaptivem Lernen, Ambient-Klangwelten und Tausenden von Karten.",
-      "downloadFree": "Kostenlos Herunterladen",
+      "downloadFree": "Launching Soon",
       "tryAgain": "Nochmal Versuchen"
     },
     "meta": {
@@ -399,8 +398,8 @@
     "links": {
       "features": "Funktionen",
       "pricing": "Preise",
-      "howItWorks": "So Funktioniert's",
-      "reviews": "Bewertungen",
+      "earlyAccess": "Früher Zugang",
+      "download": "Launching Soon",
       "about": "Über uns",
       "blog": "Blog",
       "careers": "Karriere",
@@ -421,7 +420,7 @@
       "heading": "Bleiben Sie informiert",
       "subheading": "Lerntipps, App-Updates und Community-Highlights."
     },
-    "downloadAppStore": "Im App Store Laden",
+    "downloadAppStore": "Launching Soon",
     "copyright": "LumenShore Ltd. Alle Rechte vorbehalten.",
     "madeIn": "Mit Liebe im Vereinigten Königreich gemacht",
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",

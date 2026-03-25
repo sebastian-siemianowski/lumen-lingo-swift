@@ -9,8 +9,8 @@
     "pricing": "Ціни",
     "blog": "Блог",
     "about": "Про нас",
-    "download": "Завантажити",
-    "downloadFree": "Завантажити безкоштовно",
+    "download": "Launching Soon",
+    "downloadFree": "Launching Soon",
     "skipToContent": "Перейти до вмісту",
     "openMenu": "Відкрити меню",
     "closeMenu": "Закрити меню",
@@ -23,7 +23,6 @@
     "fr": "Français",
     "ja": "日本語",
     "de": "Deutsch",
-    "pt": "Português",
     "pl": "Polski",
     "ar": "العربية",
     "zh": "中文",
@@ -351,7 +350,7 @@
       "greatEffort": "👏 Відмінна робота!",
       "keepGoing": "💪 Так тримати!",
       "description": "Сподобалось? Справжній досвід ще кращий — з 9 мовами, адаптивним навчанням, атмосферними звуками та тисячами флешкарток.",
-      "downloadFree": "Завантажити безкоштовно",
+      "downloadFree": "Launching Soon",
       "tryAgain": "Спробувати знову"
     },
     "meta": {
@@ -399,8 +398,8 @@
     "links": {
       "features": "Можливості",
       "pricing": "Ціни",
-      "howItWorks": "Як це працює",
-      "reviews": "Відгуки",
+      "earlyAccess": "Ранній Доступ",
+      "download": "Launching Soon",
       "about": "Про нас",
       "blog": "Блог",
       "careers": "Кар'єра",
@@ -421,7 +420,7 @@
       "heading": "Будьте в курсі",
       "subheading": "Поради для навчання, оновлення додатку та новини спільноти."
     },
-    "downloadAppStore": "Завантажити з App Store",
+    "downloadAppStore": "Launching Soon",
     "copyright": "LumenShore Ltd. Усі права захищені.",
     "madeIn": "Створено з турботою у Великій Британії",
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",

@@ -16,15 +16,45 @@ export function BlogHero() {
 }
 
 function BlogHeroContent({ animated = false }: { animated?: boolean }) {
+  const prefersReduced = useReducedMotion();
+  const anim = (cls: string) => (prefersReduced ? '' : cls);
   const initial = animated ? { opacity: 0, y: 20 } : undefined;
   const animate = animated ? { opacity: 1, y: 0 } : undefined;
 
   return (
     <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
-      {/* Background gradients */}
-      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div className="absolute left-1/4 top-0 h-[500px] w-[600px] -translate-x-1/2 rounded-full bg-[--color-violet]/8 blur-[120px]" />
-        <div className="absolute right-1/4 top-20 h-[400px] w-[500px] translate-x-1/2 rounded-full bg-[--color-cyan]/6 blur-[100px]" />
+      {/* Cosmic gradient — opacities boosted for shorter section to match homepage intensity */}
+      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <div className="absolute inset-0 bg-background" />
+
+        <div
+          className={`absolute -top-[10%] -right-[10%] h-[min(700px,80vw)] w-[min(700px,80vw)] rounded-full bg-violet/[0.30] will-change-transform ${anim('animate-cosmic-drift-1')}`}
+          style={{ filter: 'blur(100px)' }}
+        />
+        <div
+          className={`absolute -bottom-[10%] -left-[8%] h-[min(560px,65vw)] w-[min(560px,65vw)] rounded-full bg-cyan/[0.22] will-change-transform ${anim('animate-cosmic-drift-2')}`}
+          style={{ filter: 'blur(90px)' }}
+        />
+        <div
+          className={`absolute top-[20%] right-[10%] h-[min(480px,50vw)] w-[min(480px,50vw)] rounded-full bg-[#1e3a5f]/[0.30] will-change-transform ${anim('animate-cosmic-drift-3')}`}
+          style={{ filter: 'blur(80px)' }}
+        />
+        <div
+          className={`absolute top-1/2 left-1/2 h-[min(360px,40vw)] w-[min(360px,40vw)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet/[0.15] will-change-transform ${anim('animate-cosmic-pulse')}`}
+          style={{ filter: 'blur(70px)' }}
+        />
+
+        <div
+          className="absolute inset-0 opacity-[0.018]"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+            backgroundRepeat: 'repeat',
+            backgroundSize: '256px 256px',
+          }}
+        />
+
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,var(--color-background)_95%)]" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
@@ -76,8 +106,8 @@ function BlogHeroContent({ animated = false }: { animated?: boolean }) {
         </div>
       </div>
 
-      {/* Bottom gradient fade */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[--color-background] to-transparent" />
+      {/* Soft bottom blend */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background via-background/60 to-transparent" />
     </section>
   );
 }

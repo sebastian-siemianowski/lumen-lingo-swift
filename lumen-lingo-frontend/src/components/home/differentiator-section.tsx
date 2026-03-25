@@ -1,85 +1,33 @@
 'use client';
 
-import { cn } from '@/lib/utils';
-import { GlassCard, Heading, Text, Container, Section } from '@/components/ui';
-import { StaggerChildren, StaggerItem, FadeIn, CountUp } from '@/components/motion';
+import { motion } from 'framer-motion';
+import { Heading, Text, Container, Section } from '@/components/ui';
+import { FadeIn, StaggerItem, CountUp } from '@/components/motion';
+import { SparkleIcon } from '@/components/icons';
 import { useTranslations } from 'next-intl';
 
-interface Differentiator {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  tint: 'violet' | 'cyan' | 'amber';
-}
+/* ─── Comparison data (max 5 — impactful and concise) ─── */
 
-const differentiators: Differentiator[] = [
+const comparisons = [
   {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-        <path d="M8 40l8-16 8 10 8-20 8 12" className="stroke-violet" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="16" cy="24" r="3" className="fill-violet/20 stroke-violet/60" strokeWidth="1" />
-        <circle cx="32" cy="14" r="3" className="fill-cyan/20 stroke-cyan/60" strokeWidth="1" />
-        <path d="M6 8v34h36" className="stroke-foreground-muted/20" strokeWidth="1" strokeLinecap="round" />
-        <circle cx="24" cy="34" r="2" className="fill-amber/30" />
-      </svg>
-    ),
-    title: 'Breathtaking Design',
-    description:
-      'Every screen is handcrafted with glass morphism, cosmic backgrounds, and smooth animations — learning has never looked this good.',
-    tint: 'violet',
+    others: 'Rote repetition with plain text cards',
+    lumenlingo: 'Glass-morphic flashcards with immersive visual feedback',
   },
   {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-        <circle cx="24" cy="24" r="16" className="stroke-cyan/30" strokeWidth="1" />
-        <circle cx="24" cy="24" r="10" className="stroke-cyan" strokeWidth="2" />
-        <path d="M24 14c5.523 0 10 4.477 10 10" className="stroke-cyan" strokeWidth="2.5" strokeLinecap="round" />
-        <path d="M18 18l-6-6M30 18l6-6M18 30l-6 6M30 30l6 6" className="stroke-cyan/20" strokeWidth="1" strokeLinecap="round" />
-        <circle cx="24" cy="24" r="3" className="fill-cyan/20" />
-        <circle cx="12" cy="12" r="1.5" className="fill-violet/40" />
-        <circle cx="36" cy="36" r="1.5" className="fill-amber/40" />
-      </svg>
-    ),
-    title: 'Immersive Environments',
-    description:
-      "12 ambient soundscapes from Paris cafés to deep space — create the perfect atmosphere for focused learning.",
-    tint: 'cyan',
+    others: 'Silent study in a sterile interface',
+    lumenlingo: '12 ambient soundscapes — from Paris cafés to deep space',
   },
   {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-        <rect x="6" y="10" width="14" height="14" rx="3" className="fill-violet/10 stroke-violet" strokeWidth="2" />
-        <rect x="28" y="10" width="14" height="14" rx="3" className="fill-cyan/10 stroke-cyan" strokeWidth="2" />
-        <rect x="17" y="26" width="14" height="14" rx="3" className="fill-amber/10 stroke-amber" strokeWidth="2" />
-        <text x="13" y="20" textAnchor="middle" className="fill-violet text-[8px] font-bold">A</text>
-        <text x="35" y="20" textAnchor="middle" className="fill-cyan text-[8px] font-bold">B</text>
-        <text x="24" y="36" textAnchor="middle" className="fill-amber text-[8px] font-bold">C</text>
-      </svg>
-    ),
-    title: '3 Distinct Practice Modes',
-    description:
-      'Flashcards, grammar quizzes, and word builder challenges across 25+ language pairs — variety that keeps you engaged.',
-    tint: 'amber',
+    others: 'One-size-fits-all quizzes',
+    lumenlingo: 'Three distinct modes that adapt to your level',
   },
   {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-        <circle cx="24" cy="24" r="16" className="stroke-violet/20" strokeWidth="1" />
-        <circle cx="24" cy="24" r="11" className="fill-violet/5 stroke-violet" strokeWidth="2">
-          <animate attributeName="r" values="11;12.5;11" dur="4s" repeatCount="indefinite" />
-        </circle>
-        <circle cx="24" cy="24" r="6" className="fill-violet/10 stroke-violet/40" strokeWidth="1">
-          <animate attributeName="r" values="6;7;6" dur="4s" repeatCount="indefinite" />
-        </circle>
-        <circle cx="24" cy="24" r="2.5" className="fill-violet/20" />
-        <path d="M10 24c0-2 1-3 2-3s2 1 2 3" className="stroke-cyan/30" strokeWidth="1" strokeLinecap="round" />
-        <path d="M34 24c0-2 1-3 2-3s2 1 2 3" className="stroke-amber/30" strokeWidth="1" strokeLinecap="round" />
-      </svg>
-    ),
-    title: 'Visual Mindfulness',
-    description:
-      'Breathing orbs, quantum flow scenes, and nebula drift backgrounds — reduce learning anxiety with calming visual experiences.',
-    tint: 'violet',
+    others: 'Utilitarian UI with gamification gimmicks',
+    lumenlingo: 'Handcrafted glass-morphism with cosmic animations',
+  },
+  {
+    others: 'Streak pressure and guilt-driven notifications',
+    lumenlingo: 'Breathing orbs and visual mindfulness for calm learning',
   },
 ];
 
@@ -89,31 +37,6 @@ const keyFacts = [
   { target: 12, label: 'Soundscapes', suffix: '' },
   { target: 3, label: 'Practice Modes', suffix: '' },
 ];
-
-function DifferentiatorCard({ icon, title, description, tint }: Differentiator) {
-  return (
-    <GlassCard tint={tint} className="flex flex-col gap-4">
-      <div
-        className={cn(
-          'flex h-14 w-14 items-center justify-center rounded-2xl',
-          tint === 'violet' && 'bg-violet/10',
-          tint === 'cyan' && 'bg-cyan/10',
-          tint === 'amber' && 'bg-amber/10',
-        )}
-      >
-        {icon}
-      </div>
-
-      <Heading as="h3" className="!text-xl">
-        {title}
-      </Heading>
-
-      <Text size="sm" colour="secondary" className="leading-relaxed">
-        {description}
-      </Text>
-    </GlassCard>
-  );
-}
 
 export function DifferentiatorSection() {
   const t = useTranslations('Differentiators');
@@ -125,9 +48,9 @@ export function DifferentiatorSection() {
       }
     >
       <Container>
-        {/* Section header */}
+        {/* Section heading — font-display, text-gradient */}
         <FadeIn className="mx-auto mb-16 max-w-2xl text-center">
-          <Heading as="h2" gradient>
+          <Heading as="h2" gradient className="font-display text-3xl md:text-4xl">
             {t('heading')}
           </Heading>
           <Text size="lg" colour="secondary" className="mt-4">
@@ -135,20 +58,65 @@ export function DifferentiatorSection() {
           </Text>
         </FadeIn>
 
-        {/* Differentiator cards */}
-        <StaggerChildren
-          staggerInterval={0.1}
-          className="grid gap-6 sm:grid-cols-2"
+        {/* Comparison rows — staggered reveal */}
+        <motion.div
+          variants={{
+            hidden: {},
+            visible: {
+              transition: { staggerChildren: 0.12, delayChildren: 0.1 },
+            },
+          }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-80px' }}
+          className="mx-auto max-w-3xl space-y-3"
         >
-          {differentiators.map((d) => (
-            <StaggerItem key={d.title}>
-              <DifferentiatorCard {...d} />
+          {/* Column headers (desktop) */}
+          <div className="mb-2 hidden grid-cols-[1fr_auto_1fr] items-center gap-6 px-5 text-xs font-semibold uppercase tracking-wider sm:grid">
+            <span className="text-foreground-muted">Others</span>
+            <span className="w-px" />
+            <span className="text-violet">LumenLingo</span>
+          </div>
+
+          {comparisons.map((c, i) => (
+            <StaggerItem key={i}>
+              {/* Comparison row */}
+              <div className="group grid grid-cols-1 gap-3 rounded-xl p-4 sm:grid-cols-[1fr_auto_1fr] sm:items-center sm:gap-6">
+                {/* Others column — dimmed, faded */}
+                <p className="text-sm leading-relaxed text-foreground-muted line-through decoration-foreground-muted/30">
+                  {c.others}
+                </p>
+
+                {/* Vertical divider (desktop) */}
+                <div
+                  className="hidden w-px self-stretch bg-gradient-to-b from-transparent via-[var(--glass-border,rgba(255,255,255,0.08))] to-transparent sm:block"
+                  aria-hidden
+                />
+
+                {/* Horizontal divider (mobile) */}
+                <div
+                  className="h-px w-full bg-gradient-to-r from-transparent via-[var(--glass-border,rgba(255,255,255,0.08))] to-transparent sm:hidden"
+                  aria-hidden
+                />
+
+                {/* LumenLingo column — bright with SparkleIcon */}
+                <div className="flex items-start gap-2 rounded-lg px-3 py-1.5 transition-colors duration-150 group-hover:bg-violet/5 sm:items-center">
+                  <SparkleIcon
+                    size={14}
+                    className="mt-0.5 shrink-0 text-violet sm:mt-0"
+                    aria-hidden
+                  />
+                  <p className="text-sm leading-relaxed text-foreground">
+                    {c.lumenlingo}
+                  </p>
+                </div>
+              </div>
             </StaggerItem>
           ))}
-        </StaggerChildren>
+        </motion.div>
 
         {/* Key facts bar */}
-        <FadeIn delay={0.3} className="mt-16">
+        <FadeIn delay={0.3} className="mt-16 mb-8 md:mb-16">
           <div className="glass-card mx-auto flex max-w-3xl flex-wrap items-center justify-center gap-8 rounded-2xl p-8 sm:justify-between sm:gap-4">
             {keyFacts.map((fact) => (
               <div key={fact.label} className="flex flex-col items-center gap-1 text-center">

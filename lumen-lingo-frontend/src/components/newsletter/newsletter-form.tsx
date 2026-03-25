@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { trackEvent } from '@/lib/analytics';
 import { useLocale } from 'next-intl';
 import { getConsentAge } from '@/lib/consent-age';
+import { useFeatureFlag } from '@/hooks/use-feature-flag';
+import { cn } from '@/lib/utils';
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';
 
@@ -23,6 +25,7 @@ function isValidEmail(email: string): boolean {
 }
 
 export function NewsletterForm({ source = 'unknown', compact = false, className = '' }: NewsletterFormProps) {
+  const newsletterLive = useFeatureFlag('NEWSLETTER_LIVE');
   const locale = useLocale();
   const consentAge = getConsentAge(locale);
   const [email, setEmail] = useState('');
@@ -30,6 +33,19 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
   const [state, setState] = useState<FormState>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
+
+  if (!newsletterLive) {
+    return (
+      <div className={cn('rounded-xl border border-glass-border/50 bg-white/[0.03] px-4 py-3 backdrop-blur-sm', className)}>
+        <p className="text-sm font-medium text-foreground/80">
+          We&apos;re preparing something special.
+        </p>
+        <p className="mt-1 text-xs text-foreground-muted">
+          Follow us on social media for updates.
+        </p>
+      </div>
+    );
+  }
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -90,7 +106,11 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.4, ease }}
-            className="flex items-center gap-3"
+            className="flex items-center gap-3 rounded-xl"
+            style={{
+              boxShadow: 'inset 0 0 30px rgba(139,92,246,0.08)',
+              animation: 'fade-glow 2s ease-out forwards',
+            }}
           >
             {/* Animated checkmark */}
             <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-emerald-500/15">
@@ -111,9 +131,14 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
                 />
               </motion.svg>
             </div>
-            <p className="text-sm text-foreground-secondary">
-              Welcome to the LumenShore community! Check your inbox.
-            </p>
+            <div>
+              <p className="text-base font-semibold text-foreground">
+                Welcome to the community!
+              </p>
+              <p className="text-sm text-foreground-muted">
+                Check your inbox for a warm welcome.
+              </p>
+            </div>
           </motion.div>
         ) : (
           <motion.form
@@ -137,6 +162,7 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
                 }}
                 placeholder="your@email.com"
                 aria-label="Email address"
+                aria-required="true"
                 aria-invalid={state === 'error'}
                 aria-describedby={errorMsg ? 'newsletter-error' : undefined}
                 disabled={state === 'loading'}

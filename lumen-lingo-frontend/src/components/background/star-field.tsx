@@ -13,9 +13,9 @@ export function StarField() {
 
   // Generate deterministic star positions once (SSR-safe with fixed seed)
   const [small, medium, large] = useMemo(() => {
-    const s = generateStars(180, 2000, 2000, 1);
-    const m = generateStars(60, 2000, 2000, 2);
-    const l = generateStars(20, 2000, 2000, 3);
+    const s = generateStars(300, 2000, 2000, 1);
+    const m = generateStars(100, 2000, 2000, 2);
+    const l = generateStars(35, 2000, 2000, 3);
     return [s, m, l];
   }, []);
 
@@ -62,7 +62,7 @@ function generateStars(count: number, w: number, h: number, seed: number): strin
   for (let i = 0; i < count; i++) {
     const x = Math.round(rng() * w);
     const y = Math.round(rng() * h);
-    const alpha = 0.15 + rng() * 0.55;
+    const alpha = 0.25 + rng() * 0.55;
     shadows.push(`${x}px ${y}px 0 rgba(255,255,255,${alpha.toFixed(2)})`);
   }
   return shadows.join(',');

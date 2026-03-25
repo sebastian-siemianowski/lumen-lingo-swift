@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { trackEvent } from '@/lib/analytics';
 import { useLocale } from 'next-intl';
 import { getConsentAge } from '@/lib/consent-age';
+import { spring } from '@/lib/motion';
+import { cn } from '@/lib/utils';
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';
 
@@ -19,14 +21,11 @@ const LANGUAGES = [
   'French',
   'German',
   'Italian',
-  'Portuguese',
   'Japanese',
   'Korean',
   'Mandarin Chinese',
   'Other',
 ] as const;
-
-const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -41,11 +40,18 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
   const locale = useLocale();
   const consentAge = getConsentAge(locale);
   const [email, setEmail] = useState('');
-  const [language, setLanguage] = useState('');
+  const [languages, setLanguages] = useState<string[]>([]);
   const [ageConfirmed, setAgeConfirmed] = useState(false);
   const [state, setState] = useState<FormState>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
+
+  function toggleLanguage(lang: string) {
+    setLanguages((prev) =>
+      prev.includes(lang) ? prev.filter((l) => l !== lang) : [...prev, lang],
+    );
+    if (state === 'error') { setState('idle'); setErrorMsg(''); }
+  }
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -58,8 +64,8 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
       return;
     }
 
-    if (!language) {
-      setErrorMsg('Please select your preferred language.');
+    if (languages.length === 0) {
+      setErrorMsg('Please select at least one language.');
       setState('error');
       return;
     }
@@ -77,7 +83,7 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
       const res = await fetch('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: trimmed, language, referrer }),
+        body: JSON.stringify({ email: trimmed, language: languages.join(', '), referrer }),
       });
 
       const data = await res.json().catch(() => ({}));
@@ -109,7 +115,7 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
           key="success"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4, ease }}
+          transition={spring.smooth}
           className="text-center"
         >
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500/15">
@@ -130,7 +136,11 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
               />
             </motion.svg>
           </div>
-          <p className="mt-4 text-lg font-semibold text-foreground">You&apos;re on the list!</p>
+          <p className="mt-4 text-lg font-semibold">
+            <span className="bg-gradient-to-r from-violet via-cyan to-violet bg-clip-text text-transparent">
+              You&apos;re on the list!
+            </span>
+          </p>
           <p className="mt-1 text-sm text-foreground-muted">We&apos;ll let you know as soon as early access opens.</p>
         </motion.div>
       ) : (
@@ -157,37 +167,41 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
               }}
               placeholder="your@email.com"
               aria-invalid={state === 'error'}
+              aria-required="true"
               disabled={state === 'loading'}
               data-sentry-mask
               className="h-12 w-full rounded-[--radius-button] border border-glass-border bg-white/5 px-4 text-sm text-foreground placeholder:text-foreground-muted/60 transition-all duration-300 focus:border-violet/50 focus-visible:outline-none focus:ring-2 focus:ring-violet/40 focus:shadow-[0_0_16px_rgba(139,92,246,0.1)] disabled:opacity-50"
             />
           </div>
 
-          {/* Language */}
-          <div>
-            <label htmlFor="waitlist-language" className="mb-1.5 block text-sm font-medium text-foreground">
-              Which language do you want to learn?
-            </label>
-            <select
-              id="waitlist-language"
-              value={language}
-              onChange={(e) => {
-                setLanguage(e.target.value);
-                if (state === 'error') { setState('idle'); setErrorMsg(''); }
-              }}
-              disabled={state === 'loading'}
-              className="h-12 w-full appearance-none rounded-[--radius-button] border border-glass-border bg-white/5 px-4 text-sm text-foreground transition-all duration-300 focus:border-violet/50 focus-visible:outline-none focus:ring-2 focus:ring-violet/40 focus:shadow-[0_0_16px_rgba(139,92,246,0.1)] disabled:opacity-50"
-            >
-              <option value="" disabled className="bg-surface text-foreground-muted">
-                Select a language…
-              </option>
-              {LANGUAGES.map((lang) => (
-                <option key={lang} value={lang} className="bg-surface text-foreground">
-                  {lang}
-                </option>
-              ))}
-            </select>
-          </div>
+          {/* Language chips (multi-select) */}
+          <fieldset>
+            <legend className="mb-2 text-sm font-medium text-foreground">
+              Which languages interest you?
+            </legend>
+            <div className="flex flex-wrap gap-2" role="group" aria-label="Language selection">
+              {LANGUAGES.map((lang) => {
+                const selected = languages.includes(lang);
+                return (
+                  <button
+                    key={lang}
+                    type="button"
+                    onClick={() => toggleLanguage(lang)}
+                    disabled={state === 'loading'}
+                    className={cn(
+                      'rounded-full border px-3 py-1.5 text-xs font-medium transition-all',
+                      selected
+                        ? 'border-violet/40 bg-violet/15 text-violet'
+                        : 'border-glass-border bg-[--color-glass] text-foreground-muted hover:bg-[--color-glass-hover]',
+                    )}
+                    aria-pressed={selected}
+                  >
+                    {lang}
+                  </button>
+                );
+              })}
+            </div>
+          </fieldset>
 
           {/* Age confirmation — COPPA compliance */}
           <label className="flex items-start gap-2.5 cursor-pointer">
@@ -198,6 +212,7 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
                 setAgeConfirmed(e.target.checked);
                 if (state === 'error') { setState('idle'); setErrorMsg(''); }
               }}
+              aria-required="true"
               disabled={state === 'loading'}
               className="mt-0.5 h-4 w-4 shrink-0 rounded border-glass-border accent-violet"
             />
@@ -227,7 +242,7 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
             disabled={state === 'loading'}
             whileHover={isIdle ? { scale: 1.02 } : undefined}
             whileTap={isIdle ? { scale: 0.97 } : undefined}
-            transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+            transition={spring.snappy}
             className="inline-flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-[--radius-button] bg-violet px-6 text-sm font-semibold text-white transition-all hover:bg-violet-hover hover:shadow-[0_0_24px_rgba(139,92,246,0.3)] focus-visible:ring-2 focus-visible:ring-violet focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 glow-violet"
           >
             {state === 'loading' ? (
@@ -242,7 +257,7 @@ export function WaitlistForm({ onSuccess, referrer }: WaitlistFormProps) {
           </motion.button>
 
           <p className="text-center text-[11px] text-foreground-muted/70">
-            No spam. We respect your privacy.
+            We&apos;ll only email you about launch updates. Unsubscribe anytime.
           </p>
         </motion.form>
       )}

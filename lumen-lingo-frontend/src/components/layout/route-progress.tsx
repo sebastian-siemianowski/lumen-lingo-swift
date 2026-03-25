@@ -1,46 +1,65 @@
 'use client';
 
-import { useEffect, useState, useCallback, startTransition } from 'react';
+import { useEffect, useState, useCallback, useRef, startTransition } from 'react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 /**
- * Thin violet progress bar at the top of the viewport, similar to NProgress.
+ * Thin iridescent progress bar below the header, similar to NProgress.
  * Triggers on client-side navigations via pathname changes.
  */
 export function RouteProgress() {
   const pathname = usePathname();
   const [progress, setProgress] = useState(0);
   const [visible, setVisible] = useState(false);
+  const startTime = useRef(0);
+  const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
+
+  const clearTimers = useCallback(() => {
+    timers.current.forEach(clearTimeout);
+    timers.current = [];
+  }, []);
 
   const start = useCallback(() => {
+    clearTimers();
+    startTime.current = Date.now();
     setProgress(0);
     setVisible(true);
-    // Animate to 80% quickly, then slow down
+    // Phase 1: rapid fill to 80% in 400ms
     requestAnimationFrame(() => setProgress(30));
-    const t1 = setTimeout(() => setProgress(60), 150);
-    const t2 = setTimeout(() => setProgress(80), 400);
-    return () => { clearTimeout(t1); clearTimeout(t2); };
-  }, []);
+    timers.current.push(setTimeout(() => setProgress(60), 150));
+    timers.current.push(setTimeout(() => setProgress(80), 400));
+    // Phase 2: slow creep 80→95 over ~3s
+    timers.current.push(setTimeout(() => setProgress(88), 1500));
+    timers.current.push(setTimeout(() => setProgress(93), 3000));
+    timers.current.push(setTimeout(() => setProgress(95), 4500));
+  }, [clearTimers]);
 
   const finish = useCallback(() => {
-    setProgress(100);
-    const t = setTimeout(() => {
-      setVisible(false);
-      setProgress(0);
-    }, 300);
-    return () => clearTimeout(t);
-  }, []);
+    clearTimers();
+    // Ensure minimum visible time of 150ms
+    const elapsed = Date.now() - startTime.current;
+    const delay = Math.max(0, 150 - elapsed);
+    timers.current.push(
+      setTimeout(() => {
+        setProgress(100);
+        // Phase 3: snap to 100% then fade
+        timers.current.push(
+          setTimeout(() => {
+            setVisible(false);
+            setProgress(0);
+          }, 200),
+        );
+      }, delay),
+    );
+  }, [clearTimers]);
 
   useEffect(() => {
-    // On pathname change, trigger finish animation
     if (visible) {
-      const cleanup = finish();
-      return cleanup;
+      finish();
     }
   }, [pathname]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Intercept link clicks to start the progress bar
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       const anchor = (e.target as HTMLElement).closest('a');
@@ -53,37 +72,34 @@ export function RouteProgress() {
         href.startsWith('mailto:') ||
         anchor.target === '_blank'
       ) return;
-      // Only trigger for internal navigations to a different path
       if (href !== pathname) {
         startTransition(() => { start(); });
       }
     };
-
     document.addEventListener('click', handleClick, { capture: true });
     return () => document.removeEventListener('click', handleClick, { capture: true });
   }, [pathname, start]);
+
+  useEffect(() => clearTimers, [clearTimers]);
 
   if (!visible) return null;
 
   return (
     <div
-      role="progressbar"
-      aria-valuenow={progress}
-      aria-valuemin={0}
-      aria-valuemax={100}
-      className="fixed inset-x-0 top-0 z-[100] h-[2px]"
+      aria-hidden="true"
+      className="fixed inset-x-0 top-14 z-[45] h-0.5 sm:top-16"
     >
       <div
         className={cn(
-          'h-full bg-gradient-to-r from-violet via-cyan to-violet transition-all',
-          progress < 100 ? 'duration-500 ease-out' : 'duration-200 ease-in',
+          'h-full bg-gradient-to-r from-[--color-violet] via-[--color-cyan] to-[--color-violet]',
+          progress < 100
+            ? 'transition-[width] duration-500 ease-out'
+            : 'transition-[width] duration-100 ease-in',
         )}
-        style={{ width: `${progress}%` }}
-      />
-      {/* Glow pulse at the tip */}
-      <div
-        className="absolute right-0 top-0 h-full w-24 -translate-y-px bg-gradient-to-l from-violet/40 to-transparent transition-all"
-        style={{ opacity: progress > 0 && progress < 100 ? 1 : 0 }}
+        style={{
+          width: `${progress}%`,
+          boxShadow: '0 0 8px rgba(139,92,246,0.3)',
+        }}
       />
     </div>
   );

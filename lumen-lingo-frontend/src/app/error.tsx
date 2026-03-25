@@ -1,12 +1,13 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import * as Sentry from '@sentry/nextjs';
 import { StarField } from '@/components/background';
 import { trackEvent } from '@/lib/analytics';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { spring } from '@/lib/motion';
 
 /* ------------------------------------------------------------------ */
 /*  Calming illustration — glitching orb with recovery particles      */
@@ -77,7 +78,7 @@ const fadeUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
+    transition: spring.smooth,
   },
 };
 
@@ -93,6 +94,7 @@ export default function Error({
   reset: () => void;
 }) {
   const prefersReduced = useReducedMotion();
+  const [retryCount, setRetryCount] = useState(0);
 
   useEffect(() => {
     Sentry.captureException(error);
@@ -101,10 +103,32 @@ export default function Error({
     });
   }, [error]);
 
+  const handleReset = () => {
+    setRetryCount((c) => c + 1);
+    reset();
+  };
+
   return (
     <div className="relative flex min-h-[80dvh] flex-col items-center justify-center overflow-hidden px-4">
       {/* Cosmic background */}
       <StarField />
+
+      {/* Minimal logo header */}
+      <div className="absolute top-0 inset-x-0 z-20 flex justify-center py-6">
+        <Link
+          href="/"
+          className="group flex items-center gap-2.5 rounded-[--radius-sm] focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none"
+          aria-label="LumenLingo home"
+        >
+          <div className="relative flex h-9 w-9 items-center justify-center">
+            <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-violet to-cyan opacity-80 transition-opacity group-hover:opacity-100" />
+            <span className="relative text-lg font-bold text-white">L</span>
+          </div>
+          <span className="font-display text-lg font-bold text-foreground transition-colors group-hover:text-violet">
+            LumenLingo
+          </span>
+        </Link>
+      </div>
 
       {/* Subtle center glow */}
       <div
@@ -147,7 +171,7 @@ export default function Error({
           className="flex flex-wrap items-center justify-center gap-3"
         >
           <button
-            onClick={() => reset()}
+            onClick={handleReset}
             className="inline-flex items-center justify-center rounded-[--radius-button] bg-violet px-6 py-2.5 text-sm font-medium text-white shadow-[0_0_20px_rgba(139,92,246,0.25)] transition-all duration-200 hover:bg-violet-hover hover:shadow-[0_0_48px_rgba(139,92,246,0.5)]"
           >
             Try Again
@@ -159,6 +183,31 @@ export default function Error({
             Go Home
           </Link>
         </motion.div>
+
+        {retryCount > 0 && (
+          <motion.p
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={spring.smooth}
+            className="mt-6 text-sm text-foreground-muted"
+          >
+            Still having trouble?{' '}
+            <a href="mailto:support@lumenlingo.com" className="text-violet underline underline-offset-2 hover:text-violet-hover">
+              Contact us
+            </a>
+          </motion.p>
+        )}
+
+        {process.env.NODE_ENV === 'development' && error.stack && (
+          <motion.details variants={fadeUp} className="mt-8 w-full max-w-lg text-start">
+            <summary className="cursor-pointer text-xs text-foreground-muted hover:text-foreground-secondary">
+              Error details (dev only)
+            </summary>
+            <pre className="mt-2 overflow-x-auto rounded-lg border border-glass-border bg-surface/80 p-4 text-xs leading-relaxed text-foreground-muted">
+              {error.stack}
+            </pre>
+          </motion.details>
+        )}
       </motion.div>
     </div>
   );

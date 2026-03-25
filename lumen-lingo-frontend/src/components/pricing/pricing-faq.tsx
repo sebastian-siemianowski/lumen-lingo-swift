@@ -3,6 +3,7 @@
 import { useCallback, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { duration } from '@/lib/motion';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { faqItems } from './faq-data';
@@ -61,7 +62,7 @@ export function PricingFAQ() {
             const triggerId = `faq-trigger-${index}`;
 
             return (
-              <FadeIn key={item.question} delay={index * 0.05}>
+              <FadeIn key={item.question} delay={index * 0.06}>
                 <div
                   className={cn(
                     'overflow-hidden rounded-xl border backdrop-blur-sm transition-colors',
@@ -81,23 +82,25 @@ export function PricingFAQ() {
                       aria-expanded={openIndex === index}
                       aria-controls={panelId}
                     >
-                      <span className="text-sm font-medium text-white/90 sm:text-base">
+                      <span
+                        className={cn(
+                          'text-sm font-medium transition-colors duration-200 sm:text-base',
+                          openIndex === index
+                            ? 'text-foreground'
+                            : 'text-foreground-secondary',
+                        )}
+                      >
                         {item.question}
                       </span>
                       <motion.svg
                         viewBox="0 0 20 20"
                         fill="none"
-                        className="h-5 w-5 shrink-0 text-white/40"
-                        animate={{ rotate: openIndex === index ? 180 : 0 }}
-                        transition={{ duration: 0.25 }}
+                        className="h-5 w-5 shrink-0 text-foreground-muted"
+                        animate={{ rotate: openIndex === index ? 45 : 0 }}
+                        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                       >
-                        <path
-                          d="M5 8l5 5 5-5"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
+                        <path d="M10 4v12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                        <path d="M4 10h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                       </motion.svg>
                     </button>
                   </h3>
@@ -111,11 +114,14 @@ export function PricingFAQ() {
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: 'auto', opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+                        transition={{
+                          height: { duration: duration.normal },
+                          opacity: { duration: duration.fast },
+                        }}
                         className="overflow-hidden"
                       >
                         <div className="px-5 pb-4 sm:px-6">
-                          <p className="text-sm leading-relaxed text-white/55">
+                          <p className="max-w-prose text-base leading-relaxed text-foreground-secondary">
                             {item.answer}
                           </p>
                         </div>

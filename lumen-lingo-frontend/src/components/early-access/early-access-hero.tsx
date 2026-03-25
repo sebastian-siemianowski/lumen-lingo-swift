@@ -1,17 +1,35 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import { Container, GlassCard } from '@/components/ui';
 import { WaitlistForm, ReferralShare, ConfettiBurst } from '@/components/early-access';
-
-const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
+import { spring } from '@/lib/motion';
 
 interface WaitlistResult {
   referralCode: string;
   position: number;
   total: number;
+}
+
+function useCountUp(target: number, duration = 1200) {
+  const [value, setValue] = useState(0);
+  const rafRef = useRef(0);
+  useEffect(() => {
+    if (target <= 0) return;
+    const start = performance.now();
+    function tick(now: number) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setValue(Math.round(eased * target));
+      if (progress < 1) rafRef.current = requestAnimationFrame(tick);
+    }
+    rafRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, [target, duration]);
+  return value;
 }
 
 export function EarlyAccessHero() {
@@ -21,7 +39,8 @@ export function EarlyAccessHero() {
   const [waitlistCount, setWaitlistCount] = useState<number | null>(null);
   const [showConfetti, setShowConfetti] = useState(false);
 
-  // Fetch current waitlist count on mount
+  const animatedCount = useCountUp(waitlistCount ?? 0);
+
   useEffect(() => {
     fetch('/api/waitlist')
       .then((r) => r.json())
@@ -53,14 +72,14 @@ export function EarlyAccessHero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease }}
+              transition={spring.smooth}
               className="w-full max-w-lg text-center"
             >
               {/* Badge */}
               <motion.span
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, ease, delay: 0.1 }}
+                transition={{ ...spring.smooth, delay: 0.1 }}
                 className="inline-flex items-center gap-2 rounded-[--radius-pill] border border-violet/20 bg-violet/10 px-4 py-1.5 text-xs font-semibold text-violet"
               >
                 <span className="relative flex h-2 w-2">
@@ -90,7 +109,7 @@ export function EarlyAccessHero() {
                   transition={{ delay: 0.3 }}
                   className="mt-3 text-sm text-foreground-secondary"
                 >
-                  <span className="font-semibold text-foreground">{waitlistCount.toLocaleString()}</span>{' '}
+                  <span className="font-semibold text-foreground">{animatedCount.toLocaleString()}</span>{' '}
                   {waitlistCount === 1 ? 'learner' : 'learners'} already waiting
                 </motion.p>
               )}
@@ -99,10 +118,10 @@ export function EarlyAccessHero() {
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease, delay: 0.2 }}
+                transition={{ ...spring.smooth, delay: 0.2 }}
                 className="mt-10"
               >
-                <GlassCard className="p-6 sm:p-8">
+                <GlassCard className="gradient-border rounded-2xl p-6 sm:p-8">
                   <WaitlistForm onSuccess={handleSuccess} referrer={referrer} />
                   {result && (
                     <ReferralShare

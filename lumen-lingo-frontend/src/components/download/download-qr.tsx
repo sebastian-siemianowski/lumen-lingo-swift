@@ -3,11 +3,13 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { AppStoreBadge } from '@/components/home/app-store-badge';
+import { useFeatureFlag } from '@/hooks/use-feature-flag';
 
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 export function DownloadQR() {
   const t = useTranslations('Download.qr');
+  const appStoreLive = useFeatureFlag('APP_STORE_LIVE');
 
   return (
     <section className="relative px-6 py-20 pb-12">
@@ -58,7 +60,7 @@ export function DownloadQR() {
             </div>
           </div>
           <span className="text-xs text-foreground-muted">
-            {t('fallback')}
+            {appStoreLive ? t('fallback') : 'Scan to join the waitlist'}
           </span>
         </div>
 

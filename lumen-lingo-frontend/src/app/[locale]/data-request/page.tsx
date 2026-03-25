@@ -4,7 +4,7 @@ import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { BreadcrumbJsonLd } from '@/components/home';
-import { LanguageDisclaimer } from '@/components/legal';
+import { LanguageDisclaimer, BackToTop } from '@/components/legal';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 import { DataRequestForm } from '@/components/data-request/data-request-form';
 
@@ -169,6 +169,8 @@ export default async function DataRequestPage({
           </FadeIn>
         </Container>
       </Section>
+
+      <BackToTop />
     </PageTransition>
   );
 }

@@ -51,9 +51,21 @@ export function FeatureSection({
       <div
         className={cn(
           'grid items-center gap-12 lg:grid-cols-2 lg:gap-16',
-          reversed && 'lg:[&>*:first-child]:order-2',
         )}
       >
+        {/* Screenshot / Visual — first in DOM so it's on top on mobile */}
+        <FadeIn
+          direction={reversed ? 'left' : 'right'}
+          delay={0.1}
+          className={cn(!reversed && 'lg:order-2')}
+        >
+          <GlassCard tint={tint} hover={false} className="overflow-hidden p-0">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[--radius-card]">
+              {screenshot}
+            </div>
+          </GlassCard>
+        </FadeIn>
+
         {/* Text content */}
         <FadeIn direction={reversed ? 'right' : 'left'}>
           <div className="flex flex-col gap-6">
@@ -67,7 +79,7 @@ export function FeatureSection({
               >
                 {icon}
               </div>
-              <Heading as="h2" className="!text-2xl sm:!text-3xl">
+              <Heading as="h2" className="font-display !text-2xl md:!text-3xl">
                 {title}
               </Heading>
             </div>
@@ -98,15 +110,6 @@ export function FeatureSection({
               ))}
             </ul>
           </div>
-        </FadeIn>
-
-        {/* Screenshot / Visual */}
-        <FadeIn direction={reversed ? 'left' : 'right'} delay={0.15}>
-          <GlassCard tint={tint} hover={false} className="overflow-hidden p-0">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[--radius-card]">
-              {screenshot}
-            </div>
-          </GlassCard>
         </FadeIn>
       </div>
     </section>

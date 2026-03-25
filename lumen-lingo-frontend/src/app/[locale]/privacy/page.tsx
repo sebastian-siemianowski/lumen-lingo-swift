@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
-import { LegalTOC, DownloadPDFButton, LanguageDisclaimer, LegalUpdateBanner } from '@/components/legal';
+import { LegalTOC, DownloadPDFButton, LanguageDisclaimer, LegalUpdateBanner, MobileLegalTOC, BackToTop } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { Link } from '@/i18n/navigation';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
@@ -146,6 +146,10 @@ export default async function PrivacyPage({
             dismissLabel={tLegal('updateBannerDismiss')}
           />
           <div className="mx-auto max-w-4xl xl:grid xl:grid-cols-[1fr_200px] xl:gap-12">
+            {/* Mobile TOC */}
+            <div className="col-span-full mb-6">
+              <MobileLegalTOC items={tocItems} label={tLegal('tocLabel')} />
+            </div>
             {/* Prose */}
             <FadeIn>
               <div className="legal-prose">
@@ -1277,6 +1281,8 @@ export default async function PrivacyPage({
           </div>
         </Container>
       </Section>
+
+      <BackToTop />
     </PageTransition>
   );
 }

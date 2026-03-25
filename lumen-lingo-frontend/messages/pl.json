@@ -9,8 +9,8 @@
     "pricing": "Cennik",
     "blog": "Blog",
     "about": "O nas",
-    "download": "Pobierz",
-    "downloadFree": "Pobierz za darmo",
+    "download": "Launching Soon",
+    "downloadFree": "Launching Soon",
     "skipToContent": "Przejdź do treści",
     "openMenu": "Otwórz menu",
     "closeMenu": "Zamknij menu",
@@ -23,7 +23,6 @@
     "fr": "Français",
     "ja": "日本語",
     "de": "Deutsch",
-    "pt": "Português",
     "pl": "Polski",
     "ar": "العربية",
     "zh": "中文",
@@ -351,7 +350,7 @@
       "greatEffort": "👏 Świetna robota!",
       "keepGoing": "💪 Tak trzymaj!",
       "description": "Podoba się? Prawdziwe doświadczenie jest jeszcze lepsze — z 9 językami, adaptacyjną nauką, dźwiękami otoczenia i tysiącami fiszek.",
-      "downloadFree": "Pobierz za darmo",
+      "downloadFree": "Launching Soon",
       "tryAgain": "Spróbuj ponownie"
     },
     "meta": {
@@ -399,8 +398,8 @@
     "links": {
       "features": "Funkcje",
       "pricing": "Cennik",
-      "howItWorks": "Jak to działa",
-      "reviews": "Opinie",
+      "earlyAccess": "Wczesny Dostęp",
+      "download": "Launching Soon",
       "about": "O nas",
       "blog": "Blog",
       "careers": "Kariera",
@@ -421,7 +420,7 @@
       "heading": "Bądź na bieżąco",
       "subheading": "Porady do nauki, aktualizacje aplikacji i nowości społeczności."
     },
-    "downloadAppStore": "Pobierz z App Store",
+    "downloadAppStore": "Launching Soon",
     "copyright": "LumenShore Ltd. Wszelkie prawa zastrzeżone.",
     "madeIn": "Tworzone z troską w Wielkiej Brytanii",
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",

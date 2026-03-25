@@ -12,6 +12,7 @@ import {
   type ConsentPreferences,
 } from '@/lib/cookie-consent';
 import { isPrivacySignalActive } from '@/lib/gpc';
+import { spring } from '@/lib/motion';
 import Link from 'next/link';
 
 type View = 'banner' | 'preferences';
@@ -87,7 +88,9 @@ export function CookieConsentBanner() {
         // GPC/DNT active — auto-reject non-essential (CPRA § 1798.135(e))
         rejectAll();
       } else {
-        setVisible(true);
+        // Delay 1s so the user sees the page first
+        const timer = setTimeout(() => setVisible(true), 1000);
+        return () => clearTimeout(timer);
       }
     }
   }, []);
@@ -191,6 +194,7 @@ export function CookieConsentBanner() {
             ref={bannerRef}
             role="dialog"
             aria-modal={view === 'preferences'}
+            aria-live="polite"
             aria-label={t('bannerTitle')}
             initial={view === 'banner'
               ? { y: 100, opacity: 0 }
@@ -204,12 +208,7 @@ export function CookieConsentBanner() {
               ? { y: 100, opacity: 0 }
               : { scale: 0.95, opacity: 0 }
             }
-            transition={{
-              type: 'spring',
-              stiffness: 300,
-              damping: 30,
-              mass: 0.8,
-            }}
+            transition={spring.snappy}
             className={`
               fixed z-[9999]
               ${view === 'banner'

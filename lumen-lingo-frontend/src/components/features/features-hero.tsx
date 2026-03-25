@@ -3,6 +3,9 @@
 import { useTranslations } from 'next-intl';
 import { Container, Heading, Text } from '@/components/ui';
 import { StaggerChildren, StaggerItem, FadeIn } from '@/components/motion';
+import { DeviceIcon, DesignIcon, BrainIcon } from '@/components/icons';
+import type { ComponentType } from 'react';
+import type { IconProps } from '@/components/icons';
 
 export function FeaturesHero() {
   const t = useTranslations('Features');
@@ -48,12 +51,12 @@ export function FeaturesHero() {
           {/* Decorative device illustrations */}
           <StaggerItem>
             <div className="mt-12 flex items-center justify-center gap-4">
-              {['📱', '🎨', '🧠'].map((emoji, i) => (
+              {([DeviceIcon, DesignIcon, BrainIcon] as ComponentType<IconProps>[]).map((Icon, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-2 rounded-full border border-glass-border bg-glass px-4 py-2 text-sm text-foreground-secondary"
+                  className="flex items-center gap-1.5 rounded-full border border-glass-border bg-glass px-4 py-2 text-sm text-foreground-secondary"
                 >
-                  <span aria-hidden>{emoji}</span>
+                  <Icon size={16} className="text-violet" aria-hidden />
                   {badges[i]}
                 </div>
               ))}

@@ -9,8 +9,8 @@
     "pricing": "Pricing",
     "blog": "Blog",
     "about": "About",
-    "download": "Download",
-    "downloadFree": "Download Free",
+    "download": "Launching Soon",
+    "downloadFree": "Launching Soon",
     "skipToContent": "Skip to content",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -23,7 +23,6 @@
     "fr": "Français",
     "ja": "日本語",
     "de": "Deutsch",
-    "pt": "Português",
     "pl": "Polski",
     "ar": "العربية",
     "zh": "中文",
@@ -211,13 +210,13 @@
     },
     "timeline": {
       "spark": "The Spark",
-      "sparkDesc": "LumenShore was founded with a simple belief: language learning apps can be beautiful, mindful, and effective — all at once.",
-      "beta": "First Beta",
-      "betaDesc": "The first version of LumenLingo shipped to beta testers. Flashcards, soundscapes, and the core learning loop took shape.",
-      "launch": "App Store Launch",
-      "launchDesc": "LumenLingo launched worldwide on the App Store with 9 languages, 25+ pairs, and a five-tier membership model.",
-      "growing": "Growing & Evolving",
-      "growingDesc": "New languages, new features, and a growing community of learners discovering a more beautiful way to learn."
+      "sparkDesc": "First working prototype built — a weekend hackathon that refused to stay a weekend. The mission: make language learning feel beautiful.",
+      "beta": "Building Brick by Brick",
+      "betaDesc": "Iteration after iteration. Flashcard engine, spaced repetition algorithm, 9 languages, soundscapes, breathing orbs — each feature hand-polished before moving to the next.",
+      "launch": "Approaching Launch",
+      "launchDesc": "Beta testing with early adopters. Premium tiers refined. The website you're reading right now, crafted with the same obsessive care as the app itself.",
+      "growing": "What Comes Next",
+      "growingDesc": "New practice modes, community features, and the App Store launch. Built by a solo developer with the ambition of a studio and the attention to detail of an artisan."
     }
   },
   "Contact": {
@@ -310,7 +309,6 @@
       "French",
       "German",
       "Italian",
-      "Portuguese",
       "Japanese",
       "Korean",
       "Mandarin Chinese",
@@ -351,7 +349,7 @@
       "greatEffort": "👏 Great effort!",
       "keepGoing": "💪 Keep going!",
       "description": "Love it? The real experience is even better — with 9 languages, adaptive learning, ambient soundscapes, and thousands of flashcards.",
-      "downloadFree": "Download Free",
+      "downloadFree": "Launching Soon",
       "tryAgain": "Try Again"
     },
     "meta": {
@@ -399,8 +397,8 @@
     "links": {
       "features": "Features",
       "pricing": "Pricing",
-      "howItWorks": "How It Works",
-      "reviews": "Reviews",
+      "earlyAccess": "Early Access",
+      "download": "Launching Soon",
       "about": "About",
       "blog": "Blog",
       "careers": "Careers",
@@ -421,7 +419,7 @@
       "heading": "Stay in the loop",
       "subheading": "Learning tips, app updates & community highlights."
     },
-    "downloadAppStore": "Download on the App Store",
+    "downloadAppStore": "Launching Soon",
     "copyright": "LumenShore Ltd. All rights reserved.",
     "madeIn": "Made with care in the United Kingdom",
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
@@ -970,9 +968,9 @@
     },
     "brazilPrivacy": {
       "heading": "Brazil — Lei Geral de Proteção de Dados (LGPD)",
-      "intro": "LumenLingo provides a Portuguese (pt) locale and targets Portuguese-speaking users. As Brazil is the largest Portuguese-speaking market, we comply with Brazil's Lei Geral de Proteção de Dados (LGPD, Law No. 13,709/2018), in force since September 2020.",
+      "intro": "LumenLingo serves users globally, including in Brazil. As the largest market in Latin America, we comply with Brazil's Lei Geral de Proteção de Dados (LGPD, Law No. 13,709/2018), in force since September 2020.",
       "applicabilityHeading": "Applicability",
-      "applicabilityP1": "The LGPD applies to any processing of personal data carried out in Brazil, of individuals located in Brazil, or where the data was collected in Brazil. Our Portuguese locale, Portuguese-language content, and newsletter/waitlist signups from Brazilian users bring our processing within the scope of the LGPD.",
+      "applicabilityP1": "The LGPD applies to any processing of personal data carried out in Brazil, of individuals located in Brazil, or where the data was collected in Brazil. Our multilingual content and newsletter/waitlist signups from Brazilian users bring our processing within the scope of the LGPD.",
       "legalBasesHeading": "Legal Bases for Processing",
       "legalBasesP1": "The LGPD provides ten legal bases for processing personal data. We rely on the following:",
       "legalBasesLi1": "<b>Consent</b> — we obtain your free, informed, and unambiguous consent for specific processing purposes (e.g., newsletter signup, analytics via Sentry)",
@@ -2061,7 +2059,7 @@
       "heading": "Managing Your Preferences",
       "p1": "You can change your consent choices at any time by clicking the \"Cookie Settings\" button in the footer of any page. This will re-open the consent banner where you can update your preferences.",
       "p2": "To remove all stored data, you can clear your browser's site data through your browser settings or DevTools. This will reset your consent preferences and you'll see the consent banner again on your next visit.",
-      "p3": "Your consent preferences are stored locally on your device — they are never transmitted to our servers."
+      "p3": "Your consent preferences are stored locally on your device — they are not transmitted to any server."
     },
     "updates": {
       "heading": "Policy Updates",
@@ -2801,6 +2799,70 @@
       "contact3": "Lumenshore will review this assessment periodically and will formally appoint an EU representative under GDPR Art. 27 if required by changes in processing activities, applicable guidance, or regulatory requirements.",
       "supervisory1": "EU-based individuals have the right to lodge a complaint with their local data protection supervisory authority. A list of EEA supervisory authorities is available on the European Data Protection Board website.",
       "supervisory2": "If Lumenshore formally appoints an EU representative in the future, the representative's details will be published in this Privacy Policy and communicated to the relevant supervisory authority in accordance with GDPR Art. 27(4)."
+    }
+  },
+  "Careers": {
+    "heading": "Join the Journey",
+    "intro": "We're building something we believe in — and we'd love your help.",
+    "story": "LumenLingo is currently built by a solo founder with the ambition of a studio and the attention to detail of an artisan. We're a small, passionate operation focused on making language learning feel beautiful, mindful, and effective.",
+    "cta": "As LumenLingo grows, so will the team. If you share our obsession with craft and believe software can be both functional and beautiful, we'd love to hear from you.",
+    "valuesHeading": "What We Value",
+    "values": {
+      "craft": "Obsessive Craft",
+      "craftDesc": "Every pixel, every animation, every micro-interaction matters. We sweat the details because our users deserve nothing less.",
+      "privacy": "Privacy by Default",
+      "privacyDesc": "User trust is earned, not assumed. We design systems that respect data from day one.",
+      "accessibility": "Inclusive by Design",
+      "accessibilityDesc": "Beautiful software should be usable by everyone. Accessibility isn't an afterthought — it's a foundation.",
+      "curiosity": "Relentless Curiosity",
+      "curiosityDesc": "Language learning is about connecting with other cultures. We bring that same curiosity to how we build."
+    },
+    "meta": {
+      "title": "Careers — LumenLingo",
+      "description": "Join the LumenLingo team. We're building beautiful, mindful language learning software."
+    }
+  },
+  "Press": {
+    "heading": "Press Kit",
+    "intro": "Everything journalists and partners need to know about LumenLingo.",
+    "aboutHeading": "About LumenLingo",
+    "aboutP1": "LumenLingo is a language learning app for iOS that combines science-backed spaced repetition with a deeply aesthetic, mindful user experience. Our mission: make language learning feel as beautiful as it is effective.",
+    "aboutP2": "With support for 9 languages and 25+ language pairs, LumenLingo offers flashcard drilling, grammar quizzes, word builder challenges, ambient soundscapes, and breathing orbs — all designed to create the perfect atmosphere for focused learning.",
+    "aboutP3": "Founded by a solo developer with a background in software engineering, LumenLingo is built with the same obsessive craft usually reserved for design studios — but with the heart of an independent maker.",
+    "statsHeading": "At a Glance",
+    "stats": {
+      "languagesValue": "9",
+      "languages": "Languages Supported",
+      "pairsValue": "25+",
+      "pairs": "Language Pairs",
+      "modesValue": "3",
+      "modes": "Practice Modes"
+    },
+    "assetsHeading": "Brand Assets",
+    "assetsDesc": "Logos, screenshots, and brand guidelines are available on request. Please email us and we'll send over everything you need.",
+    "newsHeading": "In the News",
+    "newsEmpty": "Coverage coming soon — we'd love to hear from you. Reach out at press@lumenshore.com.",
+    "meta": {
+      "title": "Press Kit — LumenLingo",
+      "description": "Press resources, brand assets, and company information for journalists and partners."
+    }
+  },
+  "Help": {
+    "heading": "Help Centre",
+    "intro": "Find answers, get support, and learn how to get the most out of LumenLingo.",
+    "searchPlaceholder": "Search for help...",
+    "quickLinks": {
+      "contact": "Contact Us",
+      "dataRequest": "Data Request",
+      "accessibility": "Accessibility"
+    },
+    "noResults": "No matching questions found. Try a different search or contact us directly.",
+    "ctaHeading": "Can't find what you're looking for?",
+    "ctaDesc": "Our team is here to help. Reach out and we'll get back to you within 48 hours.",
+    "ctaButton": "Contact Us",
+    "meta": {
+      "title": "Help Centre — LumenLingo",
+      "description": "Find answers to common questions about LumenLingo, manage your data, and contact our support team."
     }
   }
 }

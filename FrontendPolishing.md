@@ -1,7 +1,7 @@
 # Frontend Polishing — Product Backlog
 
 > **Document owner:** Product  
-> **Last updated:** 2026-03-24  
+> **Last updated:** 2026-03-25  
 > **Target:** lumen-lingo-frontend (Next.js 16 / React 19 / Tailwind v4)  
 > **Design system:** Dark-first glass-morphism · Violet / Cyan / Amber palette · Inter + Cabinet Grotesk  
 > **Guiding principle:** Every pixel, every transition, every micro-interaction must feel like it was placed by someone who genuinely cares. Users should never wonder "why does this feel off?" — they should wonder "how does this feel so *right*?"
@@ -30,10 +30,11 @@
 - [Epic 18 — Cookie Consent Polish](#epic-18--cookie-consent-polish)
 - [Epic 19 — Mobile Responsive Deep Polish](#epic-19--mobile-responsive-deep-polish)
 - [Epic 20 — Cross-Page Harmony Audit](#epic-20--cross-page-harmony-audit)
+- [Epic 21 — Pre-Launch Integrity & Content Truthfulness](#epic-21--pre-launch-integrity--content-truthfulness)
 
 ---
 
-## Epic 1 — Unified Icon System
+## Epic 1 — Unified Icon System ✅ COMPLETED
 
 **Goal:** Eliminate the current inconsistency where some features use raw Unicode emojis (🃏, 🧠, 🎧, 🔮, 📊, 👑) while others use hand-crafted SVG icons. A premium product must never mix playground emojis with bespoke design. Every icon across every page must come from a single, cohesive, purpose-built icon set that reinforces the glass-morphism cosmic aesthetic.
 
@@ -43,7 +44,7 @@
 
 ---
 
-### Story 1.1 — Create a Centralised Icon Component Library
+### Story 1.1 — Create a Centralised Icon Component Library ✅ COMPLETED
 
 **As a** developer working on any page,  
 **I want** a single `src/components/icons/` directory containing all product icons as named React components,  
@@ -74,7 +75,7 @@
 
 ---
 
-### Story 1.2 — Replace Emoji Icons in Screenshot Gallery & iPhone Mockup
+### Story 1.2 — Replace Emoji Icons in Screenshot Gallery & iPhone Mockup ✅ COMPLETED
 
 **As a** visitor exploring the homepage,  
 **I want** the screenshot gallery carousel and the interactive iPhone mockup to display the same refined SVG icons used on the features page,  
@@ -93,7 +94,7 @@
 
 ---
 
-### Story 1.3 — Replace Emoji Icons in Soundscape Walkthrough
+### Story 1.3 — Replace Emoji Icons in Soundscape Walkthrough ✅ COMPLETED
 
 **As a** visitor watching the animated soundscape walkthrough on the features page,  
 **I want** each soundscape preset (Coffee Shop, Ocean Waves, Deep Space, Paris Café, Mountain Stream) to display a beautifully designed SVG icon instead of a casual emoji,  
@@ -115,7 +116,7 @@
 
 ---
 
-### Story 1.4 — Replace Emoji Icons in Features Hero Badges
+### Story 1.4 — Replace Emoji Icons in Features Hero Badges ✅ COMPLETED
 
 **As a** visitor landing on the features page,  
 **I want** the hero badge row (currently showing 📱 🎨 🧠) to use the new `DeviceIcon`, `DesignIcon`, and `BrainIcon` SVG components,  
@@ -131,7 +132,7 @@
 
 ---
 
-### Story 1.5 — Replace Emoji Icons in Pricing Hero Badges
+### Story 1.5 — Replace Emoji Icons in Pricing Hero Badges ✅ COMPLETED
 
 **As a** visitor viewing the pricing page,  
 **I want** the hero badges (currently 💎 "Premium pricing" and ✨ "Free trial included") to use `DiamondIcon` and `SparkleIcon` SVG components,  
@@ -147,7 +148,7 @@
 
 ---
 
-### Story 1.6 — Replace Emoji Feedback in Flashcard Demo Completion Screen
+### Story 1.6 — Replace Emoji Feedback in Flashcard Demo Completion Screen ✅ COMPLETED
 
 **As a** visitor who just completed the interactive flashcard demo,  
 **I want** the completion feedback to use elegant, animated SVG icons instead of emoji characters (🎉 / 👏 / 💪),  
@@ -167,7 +168,7 @@
 
 ---
 
-### Story 1.7 — Remove All Remaining Stray Emoji from Non-Editorial Components
+### Story 1.7 — Remove All Remaining Stray Emoji from Non-Editorial Components ✅ COMPLETED
 
 **As a** developer performing a final sweep,  
 **I want** a clean-room audit confirming zero Unicode emoji characters remain in any `.tsx` component file,  
@@ -182,7 +183,7 @@
 
 ---
 
-## Epic 2 — Homepage & Hero Polish
+## Epic 2 — Homepage & Hero Polish ✅ COMPLETED
 
 **Goal:** The homepage is the first impression. Every element — from the hero animation to the trust bar to the screenshot carousel — must feel effortless, premium, and magnetically engaging. Visitors should feel the quality before they even read a word.
 
@@ -190,7 +191,7 @@
 
 ---
 
-### Story 2.1 — Hero Section Entrance Choreography
+### Story 2.1 — Hero Section Entrance Choreography ✅ COMPLETED
 
 **As a** first-time visitor arriving on the homepage,  
 **I want** the hero section elements to cascade into view with a carefully timed, spring-based choreography that builds anticipation,  
@@ -213,7 +214,7 @@
 
 ---
 
-### Story 2.2 — iPhone Mockup Interactive Polish
+### Story 2.2 — iPhone Mockup Interactive Polish ✅ COMPLETED
 
 **As a** visitor exploring the homepage,  
 **I want** the iPhone mockup to feel like a real device I can interact with — tabs that respond satisfyingly, screens that transition smoothly,  
@@ -235,7 +236,7 @@
 
 ---
 
-### Story 2.3 — Screenshot Gallery Carousel Haptic Feel
+### Story 2.3 — Screenshot Gallery Carousel Haptic Feel ✅ COMPLETED
 
 **As a** visitor scrolling through the screenshot gallery,  
 **I want** the carousel to feel physically real — with momentum, snap points, and edge resistance,  
@@ -256,7 +257,7 @@
 
 ---
 
-### Story 2.4 — Feature Showcase Cards Hover Micro-Interactions
+### Story 2.4 — Feature Showcase Cards Hover Micro-Interactions ✅ COMPLETED
 
 **As a** visitor scanning the feature showcase section on the homepage,  
 **I want** each feature card to respond to my cursor with a subtle, delightful micro-interaction that invites exploration,  
@@ -276,7 +277,7 @@
 
 ---
 
-### Story 2.5 — Differentiator Section Visual Hierarchy
+### Story 2.5 — Differentiator Section Visual Hierarchy ✅ COMPLETED
 
 **As a** visitor who wants to understand why LumenLingo is different from Duolingo, Anki, or Memrise,  
 **I want** the differentiator section to present comparisons with crystal-clear visual hierarchy and satisfying reveal animations,  
@@ -295,7 +296,7 @@
 
 ---
 
-### Story 2.6 — CTA Banner Urgency & Warmth
+### Story 2.6 — CTA Banner Urgency & Warmth ✅ COMPLETED
 
 **As a** visitor who has scrolled through the entire homepage,  
 **I want** the bottom CTA banner to feel warm, inviting, and slightly urgent — not pushy,  
@@ -314,7 +315,7 @@
 
 ---
 
-## Epic 3 — Interactive Demo Refinement
+## Epic 3 — Interactive Demo Refinement ✅ COMPLETED
 
 **Goal:** The flashcard demo is the single most important conversion element on the site. A visitor who completes the demo is dramatically more likely to download the app. Every interaction must feel native-app-quality: the swipe physics, the card flip, the progress feedback, the completion celebration. This demo must make people say "if the website demo feels this good, the app must be incredible."
 
@@ -322,7 +323,7 @@
 
 ---
 
-### Story 3.1 — Card Swipe Physics Tuning
+### Story 3.1 — Card Swipe Physics Tuning ✅ COMPLETED
 
 **As a** visitor trying the flashcard demo,  
 **I want** the card swipe to feel physically real — with weight, momentum, and satisfying resistance,  
@@ -345,7 +346,7 @@
 
 ---
 
-### Story 3.2 — Card Flip Animation Premium Feel
+### Story 3.2 — Card Flip Animation Premium Feel ✅ COMPLETED
 
 **As a** visitor flipping a flashcard in the demo,  
 **I want** the flip to feel three-dimensional — like a real card turning over in space,  
@@ -367,7 +368,7 @@
 
 ---
 
-### Story 3.3 — Progress Bar & Completion Celebration
+### Story 3.3 — Progress Bar & Completion Celebration ✅ COMPLETED
 
 **As a** visitor progressing through the flashcard demo,  
 **I want** the progress bar to feel alive and the completion moment to be genuinely celebratory,  
@@ -391,7 +392,7 @@
 
 ---
 
-### Story 3.4 — Demo Page Layout & Framing
+### Story 3.4 — Demo Page Layout & Framing ✅ COMPLETED
 
 **As a** visitor arriving on the dedicated demo page (`/demo`),  
 **I want** the page to set the stage properly — explaining what I'm about to experience before I interact,  
@@ -412,7 +413,7 @@
 
 ---
 
-## Epic 4 — Pricing Page Craftsmanship
+## Epic 4 — Pricing Page Craftsmanship ✅ COMPLETED
 
 **Goal:** The pricing page must accomplish two things simultaneously: make the tiers crystal clear and make the premium tiers irresistible. Every card, comparison row, and CTA must be calibrated to guide the user toward the "right" tier for them — while making the upgrade path feel like an invitation, never a gate.
 
@@ -420,7 +421,7 @@
 
 ---
 
-### Story 4.1 — Pricing Card Tier Personality
+### Story 4.1 — Pricing Card Tier Personality ✅ COMPLETED
 
 **As a** visitor comparing pricing tiers,  
 **I want** each tier card to have a distinct visual personality that instantly communicates its level — from accessible to luxurious,  
@@ -464,7 +465,7 @@
 
 ---
 
-### Story 4.2 — Feature Comparison Table Readability
+### Story 4.2 — Feature Comparison Table Readability ✅ COMPLETED
 
 **As a** visitor who wants to do a detailed tier-by-tier feature comparison,  
 **I want** the comparison table to be scannable, elegant, and immediately clear about what each tier includes,  
@@ -485,7 +486,7 @@
 
 ---
 
-### Story 4.3 — Pricing FAQ Accordion Polish
+### Story 4.3 — Pricing FAQ Accordion Polish ✅ COMPLETED
 
 **As a** visitor with questions about pricing,  
 **I want** the FAQ accordion to open and close with buttery-smooth animations and clear visual feedback,  
@@ -507,7 +508,7 @@
 
 ---
 
-## Epic 5 — Features Page Overhaul
+## Epic 5 — Features Page Overhaul ✅ COMPLETED
 
 **Goal:** The features page is the product's entire story told in one scroll. Every feature must feel compelling, visually distinct, and immediately understandable. The page should make a visitor think: "they've thought of everything — this isn't just another flashcard app."
 
@@ -515,7 +516,7 @@
 
 ---
 
-### Story 5.1 — Features Page Table of Contents Sidebar Navigation
+### Story 5.1 — Features Page Table of Contents Sidebar Navigation ✅ COMPLETED
 
 **As a** visitor arriving on the features page,  
 **I want** a persistent table of contents on the left side that highlights which feature section I'm currently reading and lets me jump to any section,  
@@ -537,7 +538,7 @@
 
 ---
 
-### Story 5.2 — Animated Walkthrough Viewport Awareness
+### Story 5.2 — Animated Walkthrough Viewport Awareness ✅ COMPLETED
 
 **As a** visitor scrolling through the features page,  
 **I want** the animated feature walkthroughs (flashcard flow, focus mode, soundscapes) to automatically play when they're in view and pause when they're off-screen,  
@@ -556,7 +557,7 @@
 
 ---
 
-### Story 5.3 — Feature Section Alternating Layout
+### Story 5.3 — Feature Section Alternating Layout ✅ COMPLETED
 
 **As a** visitor reading through the feature sections,  
 **I want** each feature to alternate between text-left/visual-right and visual-left/text-right layouts,  
@@ -581,7 +582,7 @@
 
 ---
 
-## Epic 6 — Blog Experience Excellence
+## Epic 6 — Blog Experience Excellence ✅ COMPLETED
 
 **Goal:** The blog is a trust-building and SEO engine. Every blog page — from the index to individual posts — must feel editorial-quality: beautiful typography, satisfying reading experience, smart navigation, and polished content presentation. A visitor reading a blog post should think "this company really knows their stuff."
 
@@ -589,7 +590,7 @@
 
 ---
 
-### Story 6.1 — Blog Card Hover & Featured Styling
+### Story 6.1 — Blog Card Hover & Featured Styling ✅ COMPLETED
 
 **As a** visitor browsing the blog index,  
 **I want** each blog post card to respond to my interaction with inviting hover effects and for featured posts to stand out visually,  
@@ -615,7 +616,7 @@
 
 ---
 
-### Story 6.2 — Blog Post Reading Experience
+### Story 6.2 — Blog Post Reading Experience ✅ COMPLETED
 
 **As a** visitor reading a blog post,  
 **I want** the typography, spacing, and visual hierarchy to make reading effortless and enjoyable on any device,  
@@ -642,7 +643,7 @@
 
 ---
 
-### Story 6.3 — Blog Post Table of Contents & Reading Progress
+### Story 6.3 — Blog Post Table of Contents & Reading Progress ✅ COMPLETED
 
 **As a** visitor reading a long blog post,  
 **I want** a table of contents that tracks my scroll position and a reading progress bar that shows how far I've read,  
@@ -664,7 +665,7 @@
 
 ---
 
-### Story 6.4 — Blog Category Filter Interaction
+### Story 6.4 — Blog Category Filter Interaction ✅ COMPLETED
 
 **As a** visitor on the blog index page,  
 **I want** category filter chips that respond crisply and show me results with a satisfying transition,  
@@ -692,7 +693,7 @@
 
 ---
 
-## Epic 7 — Navigation & Header Perfection
+## Epic 7 — Navigation & Header Perfection ✅ COMPLETED
 
 **Goal:** The header is present on every single page. It must be flawless: invisible when not needed, discoverable when wanted, and silky-smooth in every transition. The navigation should feel like a natural extension of the user's intent — never fighting them, always guiding them.
 
@@ -700,7 +701,7 @@
 
 ---
 
-### Story 7.1 — Header Scroll Behaviour & Visual State Transitions
+### Story 7.1 — Header Scroll Behaviour & Visual State Transitions ✅ COMPLETED
 
 **As a** visitor scrolling through any page,  
 **I want** the header to gracefully transition between its transparent landing state and its solid scrolled state,  
@@ -719,7 +720,7 @@
 
 ---
 
-### Story 7.2 — Desktop Navigation Link Hover Effects
+### Story 7.2 — Desktop Navigation Link Hover Effects ✅ COMPLETED
 
 **As a** visitor navigating the site on desktop,  
 **I want** navigation links to respond with a refined hover animation that communicates "this is clickable" without being flashy,  
@@ -742,7 +743,7 @@
 
 ---
 
-### Story 7.3 — Mobile Menu Slide-In & Focus Management
+### Story 7.3 — Mobile Menu Slide-In & Focus Management ✅ COMPLETED
 
 **As a** mobile visitor tapping the hamburger menu,  
 **I want** the menu to slide in smoothly, trap my focus correctly, and feel premium — not like a generic framework drawer,  
@@ -768,7 +769,7 @@
 
 ---
 
-### Story 7.4 — Language Switcher Polish
+### Story 7.4 — Language Switcher Polish ✅ COMPLETED
 
 **As a** multilingual visitor,  
 **I want** the language switcher dropdown to be elegant, fast, and provide clear feedback on the active language,  
@@ -791,7 +792,7 @@
 
 ---
 
-## Epic 8 — Footer & Newsletter Delight
+## Epic 8 — Footer & Newsletter Delight ✅ COMPLETED
 
 **Goal:** The footer is the last element users see before leaving. A perfect footer reinforces trust, provides useful navigation, and — with the newsletter form — creates one final opportunity to capture a relationship. The newsletter signup in particular should feel like joining an exclusive community, not filling out spam.
 
@@ -799,7 +800,7 @@
 
 ---
 
-### Story 8.1 — Footer Visual Hierarchy & Social Links
+### Story 8.1 — Footer Visual Hierarchy & Social Links ✅ COMPLETED
 
 **As a** visitor reaching the bottom of any page,  
 **I want** the footer to feel like a natural, elegant conclusion — well-organised, visually warm, and genuinely useful,  
@@ -823,7 +824,7 @@
 
 ---
 
-### Story 8.2 — Newsletter Form Success Celebration
+### Story 8.2 — Newsletter Form Success Celebration ✅ COMPLETED
 
 **As a** visitor subscribing to the newsletter,  
 **I want** the signup experience to feel like joining something special — with clear feedback, beautiful animations, and a sense of welcome,  
@@ -871,7 +872,7 @@
 
 ---
 
-## Epic 9 — Form UX & Validation Craft
+## Epic 9 — Form UX & Validation Craft ✅ COMPLETED
 
 **Goal:** Every form in the application — newsletter, contact, data request, waitlist — must provide immediate, clear, and encouraging feedback. Validation should feel helpful, not punitive. Success should feel rewarding. Errors should feel fixable.
 
@@ -879,7 +880,7 @@
 
 ---
 
-### Story 9.1 — Unified Form Input Styling
+### Story 9.1 — Unified Form Input Styling ✅
 
 **As a** developer building forms,  
 **I want** a single, consistent `Input` component that all forms use,  
@@ -903,7 +904,7 @@
 
 ---
 
-### Story 9.2 — Data Request Form Progressive Validation
+### Story 9.2 — Data Request Form Progressive Validation ✅
 
 **As a** user submitting a data subject access request (DSAR),  
 **I want** the form to validate each field as I fill it in and guide me toward a complete, correct submission,  
@@ -927,7 +928,7 @@
 
 ---
 
-### Story 9.3 — Contact Page Copy-to-Clipboard Delight
+### Story 9.3 — Contact Page Copy-to-Clipboard Delight ✅
 
 **As a** visitor copying a contact email address,  
 **I want** the copy action to provide clear, satisfying feedback,  
@@ -949,7 +950,7 @@
 
 ---
 
-## Epic 10 — Motion & Animation System
+## Epic 10 — Motion & Animation System ✅ COMPLETED
 
 **Goal:** Establish a rigorous, consistent animation language across the entire site. Every animation should feel like it belongs to the same physical universe — the same gravity, the same spring constants, the same sense of materiality. Random tweens and inconsistent timing destroy the perception of quality.
 
@@ -957,7 +958,7 @@
 
 ---
 
-### Story 10.1 — Motion Token System Codification
+### Story 10.1 — Motion Token System Codification ✅
 
 **As a** developer implementing animations,  
 **I want** a strict set of motion tokens defined in `motion.ts` that all components reference,  
@@ -996,7 +997,7 @@
 
 ---
 
-### Story 10.2 — Parallax Layer Subtlety Tuning
+### Story 10.2 — Parallax Layer Subtlety Tuning ✅
 
 **As a** visitor scrolling through the homepage,  
 **I want** parallax effects to be subtle and physically plausible — enhancing depth without causing motion sickness,  
@@ -1015,7 +1016,7 @@
 
 ---
 
-## Epic 11 — Loading & Skeleton States
+## Epic 11 — Loading & Skeleton States ✅ COMPLETED
 
 **Goal:** The space between a click and content appearing is an opportunity, not dead time. Every loading state must maintain the visual rhythm of the page, prevent layout shift, and feel intentionally designed — as if the skeleton *is* the design, not a placeholder waiting for the real design.
 
@@ -1023,7 +1024,7 @@
 
 ---
 
-### Story 11.1 — Skeleton Component Visual Refinement
+### Story 11.1 — Skeleton Component Visual Refinement ✅
 
 **As a** visitor waiting for content to load,  
 **I want** skeleton placeholders that feel like a natural part of the design — glowing softly, matching the glass aesthetic,  
@@ -1047,7 +1048,7 @@
 
 ---
 
-### Story 11.2 — Route Progress Bar Visual Polish
+### Story 11.2 — Route Progress Bar Visual Polish ✅
 
 **As a** visitor navigating between pages,  
 **I want** the route progress bar to be visually elegant and provide genuine loading feedback,  
@@ -1069,7 +1070,7 @@
 
 ---
 
-## Epic 12 — Accessibility Deep Pass
+## Epic 12 — Accessibility Deep Pass ✅ COMPLETED
 
 **Goal:** Accessibility is not a feature — it's a foundation. This epic ensures that every interactive element, every image, every animation, and every colour contrast ratio meets WCAG 2.1 AA as a floor and AAA where practical. No user should ever feel excluded from LumenLingo's web experience.
 
@@ -1077,7 +1078,7 @@
 
 ---
 
-### Story 12.1 — Colour Contrast & Focus Visibility Audit
+### Story 12.1 — Colour Contrast & Focus Visibility Audit ✅
 
 **As a** user with a visual impairment,  
 **I want** every text element to have sufficient contrast against its background and every focusable element to have a clear focus indicator,  
@@ -1098,7 +1099,7 @@
 
 ---
 
-### Story 12.2 — Screen Reader & Semantic Structure Audit
+### Story 12.2 — Screen Reader & Semantic Structure Audit ✅
 
 **As a** screen reader user,  
 **I want** every page to have correct heading hierarchy, meaningful landmarks, and proper ARIA attributes,  
@@ -1125,7 +1126,7 @@
 
 ---
 
-### Story 12.3 — Keyboard Navigation End-to-End Test
+### Story 12.3 — Keyboard Navigation End-to-End Test ✅
 
 **As a** keyboard-only user,  
 **I want** to navigate every feature of the website using only Tab, Shift+Tab, Enter, Space, Escape, and Arrow keys,  
@@ -1148,7 +1149,7 @@
 
 ---
 
-## Epic 13 — Download Page Conversion-Craft
+## Epic 13 — Download Page Conversion-Craft ✅ COMPLETED
 
 **Goal:** The download page exists for one purpose: to get the app installed. Every element must eliminate friction and amplify desire. The page should answer every "but what if…" question a hesitant visitor might have, while making the download action feel inevitable.
 
@@ -1156,7 +1157,7 @@
 
 ---
 
-### Story 13.1 — Download Hero Urgency & Trust Signals
+### Story 13.1 — Download Hero Urgency & Trust Signals ✅
 
 **As a** visitor who has decided to download the app,  
 **I want** the download page to immediately show me the App Store link, confirm social proof, and make me feel excited — not make me scroll for what I came for,  
@@ -1177,7 +1178,7 @@
 
 ---
 
-### Story 13.2 — App Preview Showcase with Swipeable Screenshots
+### Story 13.2 — App Preview Showcase with Swipeable Screenshots ✅
 
 **As a** visitor curious about what the app looks like inside,  
 **I want** to swipe through beautiful app screenshots that show real features,  
@@ -1198,7 +1199,7 @@
 
 ---
 
-## Epic 14 — Early Access & Waitlist 
+## Epic 14 — Early Access & Waitlist ✅ COMPLETED 
 
 **Goal:** The early access page is for users who are so interested that they want to sign up before the full launch. This is the highest-intent audience on the site. The page must make them feel like insiders joining something exclusive — not just filling out a form.
 
@@ -1206,7 +1207,7 @@
 
 ---
 
-### Story 14.1 — Waitlist Form Exclusive Feel
+### Story 14.1 — Waitlist Form Exclusive Feel ✅
 
 **As a** visitor signing up for early access,  
 **I want** the form experience to feel like I'm being invited into an exclusive group,  
@@ -1231,7 +1232,7 @@
 
 ---
 
-## Epic 15 — Legal Page Typographic Excellence
+## Epic 15 — Legal Page Typographic Excellence ✅ COMPLETED
 
 **Goal:** Legal pages (privacy policy, terms, cookies, EULA, accessibility statement, data request) are mandatory but don't have to be boring. Beautiful typography, well-structured sections, and a table of contents transform legal content from "thing nobody reads" into "company that clearly cares about transparency."
 
@@ -1239,7 +1240,7 @@
 
 ---
 
-### Story 15.1 — Legal Page Shared Layout Component
+### Story 15.1 — Legal Page Shared Layout Component ✅ COMPLETED
 
 **As a** developer implementing all 6 legal pages,  
 **I want** a shared `LegalPageLayout` component that provides consistent structure, typography, and navigation for all legal content,  
@@ -1265,7 +1266,7 @@
 
 ---
 
-### Story 15.2 — Privacy Policy Page Implementation
+### Story 15.2 — Privacy Policy Page Implementation ✅ COMPLETED
 
 **As a** user who wants to read LumenLingo's privacy policy,  
 **I want** the privacy policy to be a fully implemented, beautifully typeset page that uses the existing translation keys,  
@@ -1284,7 +1285,7 @@
 
 ---
 
-### Story 15.3 — Remaining Legal Pages (Terms, Cookies, EULA, Accessibility, Data Request)
+### Story 15.3 — Remaining Legal Pages (Terms, Cookies, EULA, Accessibility, Data Request) ✅ COMPLETED
 
 **As a** user navigating to any legal page,  
 **I want** all 5 remaining legal pages to be implemented with the same quality as the privacy policy,  
@@ -1304,7 +1305,7 @@
 
 ---
 
-## Epic 16 — Error & Empty States
+## Epic 16 — Error & Empty States ✅ COMPLETED
 
 **Goal:** Error pages and empty states are the moments when a product's character is most revealed. A 404 page that makes someone smile, a form error that helps someone fix their mistake — these are trust-building moments that most teams neglect.
 
@@ -1312,7 +1313,7 @@
 
 ---
 
-### Story 16.1 — 404 Page with Cosmic Character
+### Story 16.1 — 404 Page with Cosmic Character ✅ COMPLETED
 
 **As a** visitor who arrives at a broken or non-existent link,  
 **I want** the 404 page to be charming and helpful — not a dead end,  
@@ -1333,7 +1334,7 @@
 
 ---
 
-### Story 16.2 — Error Boundary Graceful Recovery
+### Story 16.2 — Error Boundary Graceful Recovery ✅ COMPLETED
 
 **As a** visitor who encounters a runtime error,  
 **I want** the error page to acknowledge the problem, reassure me, and give me a clear way to recover,  
@@ -1354,7 +1355,7 @@
 
 ---
 
-## Epic 17 — Performance & Core Web Vitals
+## Epic 17 — Performance & Core Web Vitals ✅ COMPLETED
 
 **Goal:** Beauty that takes 5 seconds to render is not beauty — it's frustration. Every animation, every glass effect, every backdrop-blur must be optimised to render within performance budgets. The goal is a Lighthouse score of 95+ on Performance for every page.
 
@@ -1362,7 +1363,7 @@
 
 ---
 
-### Story 17.1 — Image Optimisation & Lazy Loading
+### Story 17.1 — Image Optimisation & Lazy Loading ✅ COMPLETED
 
 **As a** visitor on a mobile device with a slower connection,  
 **I want** images to load progressively with beautiful placeholders and never block the initial render,  
@@ -1383,7 +1384,7 @@
 
 ---
 
-### Story 17.2 — Backdrop-Blur & Glass Effect Performance Budget
+### Story 17.2 — Backdrop-Blur & Glass Effect Performance Budget ✅ COMPLETED
 
 **As a** mobile user scrolling through glass-card-heavy pages,  
 **I want** the glass-morphism effects to be visually beautiful without causing jank on mid-range devices,  
@@ -1401,7 +1402,7 @@
 
 ---
 
-## Epic 18 — Cookie Consent Polish
+## Epic 18 — Cookie Consent Polish ✅ COMPLETED
 
 **Goal:** The cookie consent banner is legally required and often the very first interaction a user has. It must be visually consistent with the brand, crystal clear in its options, and never obstructive beyond what's necessary.
 
@@ -1409,7 +1410,7 @@
 
 ---
 
-### Story 18.1 — Cookie Banner Visual Integration
+### Story 18.1 — Cookie Banner Visual Integration ✅ COMPLETED
 
 **As a** first-time visitor,  
 **I want** the cookie banner to match the website's premium glass aesthetic and give me clear, honest choices,  
@@ -1433,7 +1434,7 @@
 
 ---
 
-## Epic 19 — Mobile Responsive Deep Polish
+## Epic 19 — Mobile Responsive Deep Polish ✅ COMPLETED
 
 **Goal:** Mobile is not a scaled-down desktop — it's its own design context. Touch targets, reading comfort, thumb-zone awareness, and viewport management all require specific attention. This epic goes beyond "it fits on a small screen" to "it was designed for a small screen."
 
@@ -1441,7 +1442,7 @@
 
 ---
 
-### Story 19.1 — Touch Target & Spacing Audit
+### Story 19.1 — Touch Target & Spacing Audit ✅ COMPLETED
 
 **As a** mobile user with average-sized thumbs,  
 **I want** every tappable element to have a comfortably large touch target and no two targets to be too close together,  
@@ -1460,7 +1461,7 @@
 
 ---
 
-### Story 19.2 — Mobile Typography Scale Fine-Tuning
+### Story 19.2 — Mobile Typography Scale Fine-Tuning ✅ COMPLETED
 
 **As a** mobile user reading content on a smaller screen,  
 **I want** typography sizes, line heights, and spacing to be specifically optimised for the reduced viewport,  
@@ -1482,7 +1483,7 @@
 
 ---
 
-## Epic 20 — Cross-Page Harmony Audit
+## Epic 20 — Cross-Page Harmony Audit ✅
 
 **Goal:** The final epic is a holistic pass across every page to ensure that the polish from Epics 1-19 results in a unified, harmonious experience — not a collection of individually polished but disconnected pages. This is about the transitions between pages, the consistency of recurring elements, and the feeling of a single, coherent product.
 
@@ -1490,7 +1491,7 @@
 
 ---
 
-### Story 20.1 — Page-to-Page Visual Consistency Verification
+### Story 20.1 — Page-to-Page Visual Consistency Verification ✅ COMPLETED
 
 **As a** visitor navigating between pages,  
 **I want** every page to feel like part of the same product — same spacing rhythms, same colour usage, same interaction patterns,  
@@ -1516,7 +1517,7 @@
 
 ---
 
-### Story 20.2 — Shared Section Components Extraction
+### Story 20.2 — Shared Section Components Extraction ✅ COMPLETED
 
 **As a** developer maintaining multiple pages with similar section layouts,  
 **I want** shared section layout components extracted from repeated patterns,  
@@ -1534,7 +1535,7 @@
 
 ---
 
-### Story 20.3 — Cross-Page Performance Baseline
+### Story 20.3 — Cross-Page Performance Baseline ✅ COMPLETED
 
 **As a** developer ensuring the polished site remains performant,  
 **I want** a documented performance baseline for every page with target thresholds,  
@@ -1562,7 +1563,7 @@
 
 ---
 
-### Story 20.4 — Final Accessibility Sweep & Certification
+### Story 20.4 — Final Accessibility Sweep & Certification ✅
 
 **As a** product owner,  
 **I want** a final accessibility audit across all pages confirming WCAG 2.1 AA compliance,  
@@ -1581,4 +1582,246 @@
 
 ---
 
-*End of FrontendPolishing.md — 20 Epics, 50+ Stories, each crafted with obsessive attention to the user experience, visual craft, accessibility, and performance that transforms a good frontend into one that makes users fall in love.*
+---
+
+## Epic 21 — Pre-Launch Integrity & Content Truthfulness ✅
+
+**Goal:** The current frontend presents the product as if it were a fully launched, App Store-available, review-earning application — but it isn't. Not yet. Every claim, every download CTA, every rating star, and every timeline milestone must reflect reality. Users who land on this site should feel the product's momentum and craftsmanship, not catch it pretending. This epic fixes every incongruence between what the site *says* and what the product *is*, introduces a lightweight feature-flag system so launch-day toggles are one env-var flip away, and fills every dead-end link in the footer with a real page. The result: a site that is honest, complete, and ready for the world to audit.
+
+**Current problem:** The App Store download badge appears on 5 pages pointing to a placeholder URL (`idXXXXXXXXX`). A "★★★★★ 4.9 on the App Store" badge is displayed despite zero real reviews. iPhone mockups render skeleton placeholder bars instead of real functionality. The footer links to `/careers`, `/press`, and `/help` pages that don't exist. The about-page timeline claims a "Mid 2025 — App Store Launch" that hasn't happened. The newsletter subscription form is live but the backend isn't ready. Privacy copy makes absolute claims ("we never run external servers") that may become false with a future backend. Homepage spacing creates cramped, unpolished transitions between sections. The pricing hero renders as near-black. Blog cards use generic Lucide icons that make every post look identical. Portuguese appears in language pair data that isn't ready. The feature comparison table mixes boolean and string value types creating visual inconsistencies.
+
+**Files affected:** `src/lib/feature-flags.ts` (new), `src/lib/appStoreConfig.ts`, `src/components/home/app-store-badge.tsx`, `src/components/home/hero-section.tsx`, `src/components/home/cta-banner.tsx`, `src/components/home/iphone-mockup.tsx`, `src/components/home/differentiator-section.tsx`, `src/components/download/download-hero.tsx`, `src/components/download/download-qr.tsx`, `src/components/pricing/pricing-hero.tsx`, `src/components/pricing/feature-comparison-table.tsx`, `src/components/blog/post-card.tsx`, `src/components/about/value-cards.tsx`, `src/components/about/timeline.tsx`, `src/components/newsletter/newsletter-form.tsx`, `src/components/layout/footer.tsx`, `src/components/contact/faq-data.ts`, `messages/en.json`, `src/app/[locale]/careers/page.tsx` (new), `src/app/[locale]/press/page.tsx` (new), `src/app/[locale]/help/page.tsx` (new), `.env.example`
+
+---
+
+### Story 21.1 — Feature Flag System & Pre-Launch Gating ✅
+
+**As a** developer preparing for launch,
+**I want** a lightweight, environment-variable-driven feature flag system,
+**So that** pre-launch content (App Store links, reviews, newsletter) can be toggled on with a single `.env` change on launch day — no code changes, no redeployment of logic.
+
+**Acceptance Criteria:**
+
+1. A new `src/lib/feature-flags.ts` module exports a `flags` object with at minimum these boolean flags: `APP_STORE_LIVE`, `REVIEWS_LIVE`, `NEWSLETTER_LIVE`. Each reads from a corresponding `NEXT_PUBLIC_FF_*` environment variable (e.g. `NEXT_PUBLIC_FF_APP_STORE_LIVE`), defaulting to `false`.
+2. A `useFeatureFlag(name: string): boolean` hook is exported for client components. A `getFeatureFlag(name: string): boolean` function is exported for server components.
+3. All flags are documented in `.env.example` with clear comments explaining what each flag controls and what happens when it's `true` vs `false`.
+4. The flag system has zero runtime dependencies — no external services, no fetching — purely compile-time env vars inlined by Next.js.
+5. When `APP_STORE_LIVE` is `false`, every `AppStoreBadge` component across all 5 usage points (hero-section, cta-banner, download-hero, download-qr, footer) renders an "Available Soon" / "Coming to the App Store" variant instead of the download link. The variant must be visually polished — not a broken or greyed-out button, but a deliberate, beautiful "coming soon" state that maintains the glass-morphism aesthetic.
+6. When `REVIEWS_LIVE` is `false`, the "★★★★★ 4.9 on the App Store" badge in `cta-banner.tsx` is replaced with a "Be among the first to try it" or equivalent aspirational message — no star rating, no fabricated number.
+7. When `NEWSLETTER_LIVE` is `false`, the `NewsletterForm` component in the footer and blog post pages renders a "Newsletter coming soon — check back later" message instead of a functional form. The age-confirmation checkbox and legal text are hidden.
+8. TypeScript types are strict — flag names are a union type, not arbitrary strings.
+
+---
+
+### Story 21.2 — App Store CTAs → "Available Soon" Pre-Launch State ✅
+
+**As a** visitor discovering LumenLingo before it's on the App Store,
+**I want** every download CTA to honestly communicate "coming soon" with a way to join the waitlist,
+**So that** I'm excited rather than frustrated when clicking a dead App Store link.
+
+**Acceptance Criteria:**
+
+1. The `AppStoreBadge` component in `src/components/home/app-store-badge.tsx` accepts a new `comingSoon?: boolean` prop (default driven by the `APP_STORE_LIVE` feature flag).
+2. When `comingSoon` is true, the badge renders: the Apple icon + "Coming Soon to the" / "App Store" text stack, styled with the same glass-morphism card but with a subtle pulsing violet border glow to signal anticipation.
+3. The coming-soon variant links to the `/early-access` waitlist page instead of the App Store URL.
+4. All 5 usage points (`hero-section.tsx`, `cta-banner.tsx`, `download-hero.tsx`, `download-qr.tsx`, `footer.tsx`) automatically inherit the flag — no per-file changes needed once the badge component respects the flag.
+5. The download page's QR code section (`download-qr.tsx`) shows a "Scan to join the waitlist" message instead of "Scan to download" when the flag is off.
+6. The `src/lib/appStoreConfig.ts` placeholder IDs (`XXXXXXXXX`, `XXXXXXXXXX`) remain in code but are never rendered to the user when the flag is off — no broken URLs leak to production.
+
+---
+
+### Story 21.3 — iPhone Mockup: Real Functionality Previews ✅
+
+**As a** homepage visitor,
+**I want** the iPhone mockups to show real (or beautifully mocked) app functionality,
+**So that** I can visualise what the app actually looks like and does — not stare at blurred placeholder bars that undermine trust.
+
+**Acceptance Criteria:**
+
+1. The `iphone-mockup.tsx` component's inner content area replaces the current skeleton UI bars (`<div className="h-8 w-full rounded-lg bg-white/5" />` × 3) with a richly rendered mock of the app's flashcard review screen.
+2. The mock flashcard screen includes: a word/translation card with the glass-morphism style, a progress indicator (e.g. "3 of 12"), a language pair label (e.g. "English → Japanese"), and a subtle "Tap to flip" hint — all rendered as styled HTML/SVG, not an image.
+3. The mock content animates gently: the card has a soft floating animation (using `spring.gentle`), and the progress updates with a stagger when the component enters the viewport — echoing the "How it feels to learn" section's approach.
+4. On mobile viewports (below `md`), the mockup content scales gracefully without clipping or overflow.
+5. The screenshot gallery component (`screenshot-gallery.tsx`) is reviewed: if it also contains placeholder/skeleton content, it receives the same treatment — each of the 3 screenshots shows a distinct feature: (a) flashcard review, (b) soundscapes ambient player, (c) breathing orb meditation.
+6. All mock content uses the existing design token system (`--color-violet`, `--color-cyan`, `--color-amber`, `glass-card`, `font-display`) — no ad-hoc colours or fonts.
+
+---
+
+### Story 21.4 — Homepage Section Spacing & Visual Rhythm ✅
+
+**As a** user scrolling through the homepage,
+**I want** generous, consistent breathing room between every section,
+**So that** the page feels considered and luxurious — not cramped, not rushed.
+
+**Acceptance Criteria:**
+
+1. The Key Facts bar in `differentiator-section.tsx` ("9 Languages | 25+ Language Pairs | 12 Soundscapes | 3 Practice Modes") has at minimum `mb-16 md:mb-24` (or equivalent `--spacing-section-y` token) below it, creating clear separation from whatever follows.
+2. Every `<Section>` wrapper on the homepage has consistent vertical padding following the project's `--spacing-section-y` CSS custom property. Specifically audit and fix: `HeroSection` → `FeatureShowcase` → `ScreenshotGallery` → `DifferentiatorSection` → `CTABanner` transitions.
+3. The "Designed to Inspire" section (if part of `FeatureShowcase` or a standalone component) has at minimum `pt-16 md:pt-24` of top padding — no content should ever feel like it's colliding with the section above.
+4. On mobile (below `md`), section spacing reduces proportionally (e.g. `py-12` instead of `py-24`) but never collapses entirely — minimum `48px` between sections.
+5. The stats bar itself retains its current `p-8 gap-8` but its container wrapper gets explicit bottom margin to prevent the "no space below" problem.
+6. A visual regression screenshot test covers the homepage at mobile (375px) and desktop (1440px) to baseline the new spacing — added to `e2e/visual-regression.spec.ts`.
+
+---
+
+### Story 21.5 — Pricing Hero: Fix Black Void Background ✅
+
+**As a** visitor navigating to the Pricing page,
+**I want** the hero section to have a visible, atmospheric background that matches the site's cosmic glass-morphism aesthetic,
+**So that** the heading/subheading content doesn't float in an impenetrable black void.
+
+**Acceptance Criteria:**
+
+1. The `pricing-hero.tsx` `StarField` component's background is verified to render visible stars. If the star density or opacity is too low, increase star count or base opacity so stars are perceptible within 1 second of page load.
+2. The gradient accent blobs (`bg-violet/8`, `bg-cyan/6`, `bg-amber/4`) have their opacity increased to at minimum `/12`, `/10`, `/8` respectively — enough to create visible atmospheric colour without overwhelming the text.
+3. The hero section has a subtle radial gradient from `surface` at edges to `background` at centre, preventing the completely flat black appearance. Consider `bg-gradient-to-b from-surface/50 via-background to-background`.
+4. On mobile, the gradient blobs scale down proportionally (smaller `h-[300px] w-[400px]`) but remain visible — the section should never appear as solid black on any viewport.
+5. The heading "Simple, Transparent Pricing" and subheading text pass WCAG AA contrast against the new background treatment — verified with `get_errors` and a Lighthouse accessibility check.
+6. Content that scrolls behind/below the pricing hero (if the page has `overflow: hidden` or layering issues) is not clipped or hidden — structural z-index and overflow properties are audited.
+
+---
+
+### Story 21.6 — Feature Comparison Table: Consistency Pass ✅
+
+**As a** prospective customer comparing pricing tiers,
+**I want** the feature comparison table to present information in a visually consistent, immediately scannable format,
+**So that** I can make an informed purchasing decision without confusion.
+
+**Acceptance Criteria:**
+
+1. All boolean values in the table render as consistent visual icons: `true` → a check icon (✓) with the tier's accent colour, `false` → a dash icon (—) in `foreground-muted`. No mixing of `true`/`false` booleans with string values like `'1'` or `'8'` in the Soundscapes and Quantum Flow rows.
+2. Numeric-limit cells (e.g. "1", "8", "All 12") use a consistent typographic treatment: the number in `font-display font-semibold` and any qualifier ("All") in regular weight. String values like "All 12 Soundscapes" are shortened to just "All 12" with the feature name already in the row label.
+3. The "Unlimited" values (Flashcard Deck Size for Royal, Daily Practice Limit for Pro/Elite/Royal) render with a consistent infinity symbol (∞) or "Unlimited" text — not mixed approaches.
+4. Row category headers ("Learning Features", "Immersive Experience", etc.) have clear visual separation — a thicker divider or background-tint stripe above each category group.
+5. On mobile, the table is horizontally scrollable with a subtle scroll-hint gradient on the right edge (no content clipping). The first column (feature name) remains sticky.
+6. The table's tier header row uses each tier's accent colour (`foreground-muted`, `violet`, `cyan`, `amber`) consistently — the current implementation is verified or corrected.
+
+---
+
+### Story 21.7 — Remove Portuguese Language References ✅
+
+**As a** product owner maintaining content accuracy,
+**I want** all references to Portuguese removed from the frontend until the language is ready,
+**So that** users are never promised a language pair that doesn't exist.
+
+**Acceptance Criteria:**
+
+1. Every occurrence of "Portuguese", "Português", "pt-BR", "pt-PT", or "pt" as a language identifier is removed from all frontend source files, translation files (`messages/*.json`), and data files.
+2. Language-pair counts that reference Portuguese are updated: if "25+ Language Pairs" includes Portuguese pairs, the number is recalculated and the stats bar, download page features, and any other mentions of pair/language counts are corrected.
+3. The differentiator section's "9 Languages" stat is verified — if Portuguese is one of the 9, it becomes "8 Languages" (or whatever the accurate count is).
+4. A `grep` search for `[Pp]ortugu|pt-BR|pt-PT` across the entire `lumen-lingo-frontend/` directory returns zero matches after this story is complete.
+5. The language selector on the waitlist form (`LANGUAGES` array in `waitlist-form.tsx`) does not include Portuguese.
+
+---
+
+### Story 21.8 — Remove Fabricated Reviews & Rating ✅
+
+**As a** visitor evaluating LumenLingo,
+**I want** the site to never display fabricated reviews, star ratings, or App Store metrics,
+**So that** my trust isn't betrayed when I discover the app isn't even on the App Store yet.
+
+**Acceptance Criteria:**
+
+1. The `cta-banner.tsx` "★★★★★ 4.9 on the App Store" badge is removed or replaced (gated by the `REVIEWS_LIVE` feature flag from Story 21.1). When the flag is off, the space shows an aspirational but honest message (e.g. "Join thousands on the waitlist" or "Built by language lovers, for language lovers").
+2. The footer's `/#testimonials` anchor link is removed entirely — it points to a section that does not exist. Replace it with a link to `/early-access` labelled "Early Access" or remove the "Reviews" footer item until the section exists.
+3. No file anywhere in the frontend renders hardcoded star counts, rating numbers, or review text that implies real user feedback exists. A `grep` search for `4.9|4.8|★★★★★|testimonial` in component files returns zero matches when `REVIEWS_LIVE` is `false` at build time (or renders nothing at runtime).
+4. When `REVIEWS_LIVE` is eventually set to `true`, the star badge and any testimonial section re-appear — the code isn't deleted, just gated.
+5. The "How It Works" footer link (`/#how-it-works`) is verified to scroll to a real section on the homepage. If the anchor doesn't exist, either create the section or remove the link.
+
+---
+
+### Story 21.9 — Blog Card Visual Differentiation & Icon Craft ✅
+
+**As a** blog reader browsing post listings,
+**I want** each blog category to have a distinct, beautiful, bespoke icon (not generic Lucide defaults),
+**So that** I can visually scan the grid and instantly distinguish App Updates from Learning Science from Culture guides — and every card feels like a lovingly designed artefact.
+
+**Acceptance Criteria:**
+
+1. Each blog category receives a unique, custom SVG icon rendered inline (not an emoji, not a generic Lucide icon). The icons should be thematic and evocative:
+   - **Language Tips** → a stylised speech bubble or quill
+   - **App Updates** → a rocket or sparkle burst
+   - **Learning Science** → a brain with neural connections or a lightbulb with orbits
+   - **Culture** → a globe with cultural motifs or a compass rose
+   - **Guides** → an open book with radiating lines or a map with route
+2. Each icon is sized consistently (`w-5 h-5` or `w-6 h-6`), uses the category's existing accent colour (violet, cyan, amber, emerald, rose), and sits alongside — or replaces — the category badge text.
+3. The icons are defined in the existing `src/components/icons/` directory (created in Epic 1) as named React components, following the established icon system conventions.
+4. Featured blog cards (the large hero card) display the icon at a larger size (`w-8 h-8`) with a subtle glow matching the category colour.
+5. On hover, the icon has a gentle rotation or scale micro-interaction using `spring.snappy` from the motion token system — delightful but not distracting.
+6. The visual change is tested in `e2e/visual-regression.spec.ts` with a blog page screenshot baseline.
+
+---
+
+### Story 21.10 — Privacy Copy: Honest & Future-Proof Language ✅
+
+**As a** product team preparing for potential backend services,
+**I want** all privacy-related copy rewritten to be accurate today and not paint us into a corner tomorrow,
+**So that** we maintain user trust and legal accuracy regardless of future architecture decisions.
+
+**Acceptance Criteria:**
+
+1. The `value-cards.tsx` "Privacy First" card description is rewritten from "We process everything on-device, sync through your personal iCloud, and **never run external servers** that store your information" to language that is accurate now and resilient to change. Example: "Your learning data lives on your device and syncs through your personal iCloud. We designed LumenLingo so your data stays under your control — today that means no external servers touch your information."
+2. The `faq-data.ts` entries referencing "we never store data on external servers" are reworded to "Currently, all personal learning data remains on-device and iCloud. We don't operate external databases for user data" — factually identical today but doesn't use "never" as an absolute.
+3. The `messages/en.json` privacy section "No external servers" text is updated consistently with the same careful language.
+4. All updated copy maintains the warm, confident, user-first tone of the existing site — this is not a corporate disclaimer, it's a reassurance.
+5. A `grep` search for `never run external servers|never store.*external|never see` in the frontend returns zero matches after this story. The word "never" is avoided in architecture claims.
+6. If other language translation files (`messages/pl.json`, `messages/fr.json`, etc.) contain translated versions of these claims, they are flagged for translation update (translations themselves are out of scope, but the English source-of-truth strings must be correct).
+
+---
+
+### Story 21.11 — About Page: Honest, Accurate Journey Timeline ✅
+
+**As a** visitor reading about LumenLingo's origins,
+**I want** the journey timeline to accurately reflect the real development history,
+**So that** the narrative is authentic and inspires confidence rather than raising questions.
+
+**Acceptance Criteria:**
+
+1. The `timeline.tsx` milestones are rewritten to reflect reality:
+   - **"Late 2025 — The Spark"**: First working prototype built — a weekend hackathon that refused to stay a weekend. The mission: make language learning feel beautiful.
+   - **"Early 2026 — Building Brick by Brick"**: Iteration after iteration. Flashcard engine, spaced repetition algorithm, 9 languages, soundscapes, breathing orbs — each feature hand-polished before moving to the next.
+   - **"March 2026 — Approaching Launch"**: Beta testing with early adopters. Premium tiers refined. The website you're reading right now, crafted with the same obsessive care as the app itself.
+   - **"The Road Ahead"**: New practice modes, community features, and the App Store launch. Built by a solo developer with the ambition of a studio and the attention to detail of an artisan.
+2. The "Mid 2025 — App Store Launch" milestone is removed — the app has not launched on the App Store.
+3. Timeline dates are accurate and internally consistent with the rest of the site (e.g. the about page body text, any blog posts referencing history).
+4. The visual timeline component itself is unchanged — only the data/content is updated.
+5. The tone is aspirational, personal, and genuine — communicating momentum without overpromising.
+
+---
+
+### Story 21.12 — Newsletter Section: Feature-Flagged Until Ready ✅
+
+**As a** product owner who doesn't have a newsletter backend in place,
+**I want** the newsletter subscription form hidden behind a feature flag,
+**So that** users aren't frustrated by a form that doesn't work or a subscription they'll never receive.
+
+**Acceptance Criteria:**
+
+1. The `NewsletterForm` component checks the `NEWSLETTER_LIVE` feature flag (from Story 21.1).
+2. When `NEWSLETTER_LIVE` is `false`, the footer's newsletter section renders a beautiful "Stay tuned" message: "We're preparing something special. Follow us on [social links] for updates." — styled with the existing glass-morphism aesthetic, not a blank gap.
+3. When `NEWSLETTER_LIVE` is `false`, the `BlogNewsletterCTA` component in blog post pages either renders nothing or shows the same "Stay tuned" placeholder — no orphaned email form.
+4. The age-confirmation checkbox, legal consent text, and email input are completely hidden (not just `disabled`) when the flag is off — there must be no broken-looking form elements.
+5. When the flag is eventually set to `true`, the full newsletter form re-appears with all functionality intact — submit handler, validation, age confirmation, success animation.
+6. The newsletter API route (`/api/newsletter`) gracefully returns a clear error if called while the flag is off — in case any cached page submits the form.
+
+---
+
+### Story 21.13 — Missing Footer Pages: Careers, Press Kit & Help Centre ✅
+
+**As a** visitor clicking any footer link,
+**I want** every single link to land on a real, thoughtfully designed page,
+**So that** I never encounter a 404 error or a dead end — every corner of this site should feel finished.
+
+**Acceptance Criteria:**
+
+1. **Careers page** (`/[locale]/careers`): A beautifully designed page that honestly communicates the company's current stage: "We're a small, passionate team (currently a solo founder) building something we believe in. As LumenLingo grows, so will the team. Interested in joining the journey? Reach out at careers@lumenshore.com." Styled with the `Section`, `Container`, `Heading` components. Includes a brief "What we value" section with 3-4 values. No fake job listings.
+2. **Press Kit page** (`/[locale]/press`): A professional press page with: company description (2-3 paragraphs), founder info, brand assets section (logo download links or "Brand assets available on request"), key stats (languages, features, launch timeline), media contact email, and a "In the news" section that starts empty with a "Coverage coming soon — we'd love to hear from you" message. Follows the legal-page layout pattern.
+3. **Help Centre page** (`/[locale]/help`): A hub page with: a search bar (UI only — filtering FAQ items client-side), grouped FAQ sections pulling from or extending `faq-data.ts`, quick-link cards to `/contact`, `/data-request`, and `/accessibility`, and a "Can't find what you're looking for?" CTA linking to `/contact`. Styled with glass cards and the existing `Section` / `Container` components.
+4. All three pages have proper `<title>` and `meta description` tags for SEO.
+5. All three pages are internationalised: translation keys are added to `messages/en.json` (English content is sufficient; other languages are out of scope but the i18n structure must be in place).
+6. The footer links for "Careers", "Press Kit", and "Help Centre" are verified to correctly navigate to these new pages with the locale prefix.
+7. Each page follows the existing design system: dark background, glass-morphism cards, `font-display` headings, `font-sans` body, Violet/Cyan/Amber accent palette.
+
+---
+
+*End of FrontendPolishing.md — 21 Epics, 65+ Stories, each crafted with obsessive attention to the user experience, visual craft, accessibility, and performance that transforms a good frontend into one that makes users fall in love.*

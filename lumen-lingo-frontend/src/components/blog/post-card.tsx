@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type ComponentType } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -8,6 +8,15 @@ import { useLocale } from 'next-intl';
 import { cn } from '@/lib/utils';
 import { formatDate, type BlogPost } from '@/lib/blog-utils';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { spring } from '@/lib/motion';
+import type { IconProps } from '@/components/icons';
+import {
+  LanguageTipsIcon,
+  AppUpdatesIcon,
+  LearningScienceIcon,
+  CultureIcon,
+  GuidesIcon,
+} from '@/components/icons';
 
 interface PostCardProps {
   post: BlogPost;
@@ -16,12 +25,28 @@ interface PostCardProps {
   priority?: boolean;
 }
 
-const categoryColors: Record<string, string> = {
-  'Language Tips': 'bg-[--color-violet]/15 text-[--color-violet]',
-  'App Updates': 'bg-[--color-cyan]/15 text-[--color-cyan]',
-  'Learning Science': 'bg-[--color-cyan]/15 text-[--color-cyan]',
-  Culture: 'bg-[--color-amber]/15 text-[--color-amber]',
-  Guides: 'bg-[--color-violet]/15 text-[--color-violet]',
+const categoryColors: Record<string, { badge: string; glow: string }> = {
+  'Language Tips': { badge: 'bg-[--color-violet]/15 text-[--color-violet]', glow: 'group-hover:shadow-[0_0_12px_rgba(139,92,246,0.2)]' },
+  'App Updates': { badge: 'bg-[--color-cyan]/15 text-[--color-cyan]', glow: 'group-hover:shadow-[0_0_12px_rgba(6,182,212,0.2)]' },
+  'Learning Science': { badge: 'bg-[--color-amber]/15 text-[--color-amber]', glow: 'group-hover:shadow-[0_0_12px_rgba(245,158,11,0.2)]' },
+  Culture: { badge: 'bg-emerald-500/15 text-emerald-400', glow: 'group-hover:shadow-[0_0_12px_rgba(52,211,153,0.2)]' },
+  Guides: { badge: 'bg-rose-500/15 text-rose-400', glow: 'group-hover:shadow-[0_0_12px_rgba(251,113,133,0.2)]' },
+};
+
+const categoryIcons: Record<string, ComponentType<IconProps>> = {
+  'Language Tips': LanguageTipsIcon,
+  'App Updates': AppUpdatesIcon,
+  'Learning Science': LearningScienceIcon,
+  Culture: CultureIcon,
+  Guides: GuidesIcon,
+};
+
+const categoryGlowStyles: Record<string, string> = {
+  'Language Tips': 'drop-shadow-[0_0_6px_rgba(139,92,246,0.4)]',
+  'App Updates': 'drop-shadow-[0_0_6px_rgba(6,182,212,0.4)]',
+  'Learning Science': 'drop-shadow-[0_0_6px_rgba(245,158,11,0.4)]',
+  Culture: 'drop-shadow-[0_0_6px_rgba(52,211,153,0.4)]',
+  Guides: 'drop-shadow-[0_0_6px_rgba(251,113,133,0.4)]',
 };
 
 export function PostCard({ post, index = 0, featured = false, priority = false }: PostCardProps) {
@@ -38,19 +63,30 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
         viewport: { once: true, margin: '-40px' },
         transition: {
           duration: 0.5,
-          delay: index * 0.08,
+          delay: index * 0.06,
           ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
         },
-        whileHover: { y: -4, transition: { duration: 0.25 } },
+        whileHover: {
+          y: -4,
+          scale: 1.01,
+          transition: { type: 'spring', stiffness: 300, damping: 20 },
+        },
       })}
     >      <Link
         href={`/blog/${slug}`}
         className={cn(
-          'glass-card group block overflow-hidden rounded-[--radius-card] transition-colors',
-          'border border-[--color-glass-border] hover:border-[--color-glass-hover]',
-          featured && 'md:grid md:grid-cols-2 md:gap-0',
+          'glass-card group relative block overflow-hidden rounded-[--radius-card] transition-colors',
+          featured
+            ? 'border border-[--color-violet]/15 bg-[--color-surface-card]/80 md:grid md:grid-cols-[3fr_2fr] md:gap-0'
+            : 'border border-[--color-glass-border] hover:border-[--color-glass-hover]',
         )}
       >
+        {/* Featured pill badge */}
+        {featured && (
+          <span className="absolute end-4 top-4 z-10 rounded-full bg-[--color-violet] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white">
+            Featured
+          </span>
+        )}
         {/* Cover image area */}
         <div
           className={cn(
@@ -71,6 +107,7 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
                 src={frontmatter.image}
                 alt={frontmatter.title}
                 fill
+                quality={80}
                 priority={priority}
                 sizes={featured ? '(max-width: 768px) 100vw, 50vw' : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'}
                 className={cn(
@@ -97,15 +134,32 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
               </svg>
             </div>
           )}
-          {/* Category badge */}
+          {/* Category badge with icon */}
           <div className="absolute start-4 top-4">
             <span
               className={cn(
-                'inline-flex rounded-[--radius-pill] px-3 py-1 text-xs font-semibold backdrop-blur-md',
-                categoryColors[frontmatter.category] ??
+                'inline-flex items-center gap-1.5 rounded-[--radius-pill] px-3 py-1 text-xs font-semibold backdrop-blur-md transition-shadow duration-300',
+                categoryColors[frontmatter.category]?.badge ??
                   'bg-white/10 text-[--color-foreground]',
+                categoryColors[frontmatter.category]?.glow,
               )}
             >
+              {(() => {
+                const Icon = categoryIcons[frontmatter.category];
+                if (!Icon) return null;
+                return (
+                  <motion.span
+                    className={cn(
+                      'inline-flex',
+                      featured && categoryGlowStyles[frontmatter.category],
+                    )}
+                    whileHover={prefersReduced ? undefined : { scale: 1.2, rotate: 8 }}
+                    transition={spring.snappy}
+                  >
+                    <Icon size={featured ? 18 : 14} />
+                  </motion.span>
+                );
+              })()}
               {frontmatter.category}
             </span>
           </div>
@@ -160,7 +214,13 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
               {formatDate(frontmatter.publishedAt, locale)}
             </time>
             <span aria-hidden="true">·</span>
-            <span>{frontmatter.readingTime}</span>
+            <span className="flex items-center gap-1">
+              <svg viewBox="0 0 12 12" fill="none" className="h-3 w-3" aria-hidden="true">
+                <circle cx="6" cy="6" r="5" stroke="currentColor" strokeWidth="1" />
+                <path d="M6 3.5V6l2 1.5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              {frontmatter.readingTime}
+            </span>
           </div>
         </div>
       </Link>

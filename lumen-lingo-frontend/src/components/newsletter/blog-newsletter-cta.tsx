@@ -2,10 +2,15 @@
 
 import { motion } from 'framer-motion';
 import { NewsletterForm } from './newsletter-form';
+import { useFeatureFlag } from '@/hooks/use-feature-flag';
 
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 export function BlogNewsletterCTA() {
+  const newsletterLive = useFeatureFlag('NEWSLETTER_LIVE');
+
+  if (!newsletterLive) return null;
+
   return (
     <motion.aside
       initial={{ opacity: 0, y: 16 }}

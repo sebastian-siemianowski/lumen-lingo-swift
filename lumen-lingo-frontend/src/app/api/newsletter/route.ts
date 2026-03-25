@@ -6,6 +6,7 @@ import {
   NEWSLETTER_CONSENT_VERSION,
   NEWSLETTER_CONSENT_TEXT,
 } from '@/lib/consent-log';
+import { getFeatureFlag } from '@/lib/feature-flags';
 
 // ─── Schema ────────────────────────────────────────────────────────
 const subscribeSchema = z.object({
@@ -51,6 +52,14 @@ if (typeof globalThis !== 'undefined') {
 
 // ─── Handler ───────────────────────────────────────────────────────
 export async function POST(request: NextRequest) {
+  // Feature flag check — reject if newsletter is disabled
+  if (!getFeatureFlag('NEWSLETTER_LIVE')) {
+    return NextResponse.json(
+      { error: 'Newsletter subscriptions are not yet available. Check back soon!' },
+      { status: 503 },
+    );
+  }
+
   // Rate limiting
   const forwarded = request.headers.get('x-forwarded-for');
   const ip = forwarded?.split(',')[0]?.trim() || 'unknown';

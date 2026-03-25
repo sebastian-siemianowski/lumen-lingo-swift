@@ -13,7 +13,7 @@ import pathlib
 BASE = pathlib.Path(__file__).resolve().parent.parent / "messages"
 EN_PATH = BASE / "en.json"
 
-LOCALES = ["es", "fr", "de", "ja", "zh", "ar", "pl", "uk", "pt"]
+LOCALES = ["es", "fr", "de", "ja", "zh", "ar", "pl", "uk"]
 
 
 def main():

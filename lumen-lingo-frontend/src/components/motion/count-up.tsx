@@ -10,6 +10,8 @@ interface CountUpProps {
   suffix?: string;
   prefix?: string;
   className?: string;
+  /** Delay in seconds before counting begins (after entering viewport). */
+  delay?: number;
 }
 
 export function CountUp({
@@ -18,6 +20,7 @@ export function CountUp({
   suffix = '',
   prefix = '',
   className,
+  delay = 0,
 }: CountUpProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, margin: '-60px' });
@@ -31,10 +34,13 @@ export function CountUp({
   });
 
   useEffect(() => {
-    if (isInView) {
-      motionValue.set(target);
+    if (!isInView) return;
+    if (delay > 0) {
+      const timer = setTimeout(() => motionValue.set(target), delay * 1000);
+      return () => clearTimeout(timer);
     }
-  }, [isInView, motionValue, target]);
+    motionValue.set(target);
+  }, [isInView, motionValue, target, delay]);
 
   useEffect(() => {
     const unsubscribe = springValue.on('change', (latest) => {

@@ -4,6 +4,15 @@ import { useRef, useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
 import { cn } from '@/lib/utils';
+import type { ComponentType } from 'react';
+import type { IconProps } from '@/components/icons';
+import {
+  CoffeeShopIcon,
+  OceanWavesIcon,
+  DeepSpaceIcon,
+  ParisCafeIcon,
+  MountainStreamIcon,
+} from '@/components/icons';
 
 // ─── Shared phone frame ────────────────────────────────────────────
 function PhoneFrame({
@@ -31,51 +40,64 @@ function PhoneFrame({
 }
 
 // ─── 1. Flashcard Flow Animation ───────────────────────────────────
-const FLASHCARD_DURATION = 10000; // 10s loop
+const FLASHCARD_CYCLE = 10000; // active animation
+const LOOP_GAP = 2000; // pause between loops
 
 export function FlashcardFlowAnimation() {
   const reduced = useReducedMotion();
-  const [playing, setPlaying] = useState(false);
   const [step, setStep] = useState(0); // 0: appear, 1: flip, 2: swipe, 3: next
   const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const elapsedRef = useRef(0);
+  const lastStepRef = useRef(-1);
 
-  // Intersection observer
+  // Intersection observer — threshold 0.4
   useEffect(() => {
     if (reduced) return;
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([e]) => setPlaying(e.isIntersecting),
-      { threshold: 0.3 },
+      ([e]) => setVisible(e.isIntersecting),
+      { threshold: 0.4 },
     );
     obs.observe(el);
     return () => obs.disconnect();
   }, [reduced]);
 
-  // Animation loop
+  // rAF-driven animation loop — pauses when off-screen, resumes on re-entry
   useEffect(() => {
-    if (!playing || reduced) return;
-    setStep(0);
-    const timers = [
-      setTimeout(() => setStep(1), 2000),  // flip
-      setTimeout(() => setStep(2), 5000),  // swipe
-      setTimeout(() => setStep(3), 7000),  // next card
-      setTimeout(() => setStep(0), 9500),  // reset
-    ];
-    const loop = setInterval(() => {
-      setStep(0);
-      timers.push(
-        setTimeout(() => setStep(1), 2000),
-        setTimeout(() => setStep(2), 5000),
-        setTimeout(() => setStep(3), 7000),
-        setTimeout(() => setStep(0), 9500),
-      );
-    }, FLASHCARD_DURATION);
+    if (!visible || reduced) return;
+
+    const totalCycle = FLASHCARD_CYCLE + LOOP_GAP;
+    const startTime = performance.now() - elapsedRef.current;
+    let rafId: number;
+
+    function tick() {
+      const elapsed = performance.now() - startTime;
+      const t = elapsed % totalCycle;
+
+      let s: number;
+      if (t >= 9500) s = 0; // gap period — rest on step 0
+      else if (t >= 7000) s = 3;
+      else if (t >= 5000) s = 2;
+      else if (t >= 2000) s = 1;
+      else s = 0;
+
+      if (s !== lastStepRef.current) {
+        lastStepRef.current = s;
+        setStep(s);
+      }
+
+      rafId = requestAnimationFrame(tick);
+    }
+
+    rafId = requestAnimationFrame(tick);
+
     return () => {
-      clearInterval(loop);
-      timers.forEach(clearTimeout);
+      elapsedRef.current = performance.now() - startTime;
+      cancelAnimationFrame(rafId);
     };
-  }, [playing, reduced]);
+  }, [visible, reduced]);
 
   if (reduced) {
     return (
@@ -200,53 +222,66 @@ const WORD_BUILDER_DURATION = 10000;
 
 export function WordBuilderAnimation() {
   const reduced = useReducedMotion();
-  const [playing, setPlaying] = useState(false);
   const [placedCount, setPlacedCount] = useState(0);
   const [complete, setComplete] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const elapsedRef = useRef(0);
+  const lastKeyRef = useRef('');
 
   useEffect(() => {
     if (reduced) return;
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([e]) => setPlaying(e.isIntersecting),
-      { threshold: 0.3 },
+      ([e]) => setVisible(e.isIntersecting),
+      { threshold: 0.4 },
     );
     obs.observe(el);
     return () => obs.disconnect();
   }, [reduced]);
 
   useEffect(() => {
-    if (!playing || reduced) return;
-    setPlacedCount(0);
-    setComplete(false);
+    if (!visible || reduced) return;
 
-    const timers: ReturnType<typeof setTimeout>[] = [];
+    const totalCycle = WORD_BUILDER_DURATION + LOOP_GAP;
+    const startTime = performance.now() - elapsedRef.current;
+    let rafId: number;
 
-    function runCycle() {
-      setPlacedCount(0);
-      setComplete(false);
-      // Place letters one by one
-      for (let i = 0; i < LETTERS.length; i++) {
-        timers.push(setTimeout(() => setPlacedCount(i + 1), 1500 + i * 900));
+    // Step timing: T+1500 per letter, complete at T+1500+5*900+400
+    function tick() {
+      const elapsed = performance.now() - startTime;
+      const t = elapsed % totalCycle;
+
+      let placed: number;
+      let comp: boolean;
+
+      if (t >= 9700) { placed = 0; comp = false; } // gap
+      else if (t >= 5900) { placed = 5; comp = true; }
+      else if (t >= 5100) { placed = 5; comp = false; }
+      else if (t >= 4200) { placed = 4; comp = false; }
+      else if (t >= 3300) { placed = 3; comp = false; }
+      else if (t >= 2400) { placed = 2; comp = false; }
+      else if (t >= 1500) { placed = 1; comp = false; }
+      else { placed = 0; comp = false; }
+
+      const key = `${placed}-${comp}`;
+      if (key !== lastKeyRef.current) {
+        lastKeyRef.current = key;
+        setPlacedCount(placed);
+        setComplete(comp);
       }
-      // Mark complete
-      timers.push(setTimeout(() => setComplete(true), 1500 + LETTERS.length * 900 + 400));
-      // Reset
-      timers.push(setTimeout(() => {
-        setPlacedCount(0);
-        setComplete(false);
-      }, WORD_BUILDER_DURATION - 300));
+
+      rafId = requestAnimationFrame(tick);
     }
 
-    runCycle();
-    const loop = setInterval(runCycle, WORD_BUILDER_DURATION);
+    rafId = requestAnimationFrame(tick);
+
     return () => {
-      clearInterval(loop);
-      timers.forEach(clearTimeout);
+      elapsedRef.current = performance.now() - startTime;
+      cancelAnimationFrame(rafId);
     };
-  }, [playing, reduced]);
+  }, [visible, reduced]);
 
   if (reduced) {
     return (
@@ -362,68 +397,75 @@ function WordBuilderStatic() {
 }
 
 // ─── 3. Soundscape Selection Animation ─────────────────────────────
-const SOUNDSCAPES = [
-  { name: 'Coffee Shop', icon: '☕', category: 'Cozy' },
-  { name: 'Ocean Waves', icon: '🌊', category: 'Nature' },
-  { name: 'Deep Space', icon: '🌌', category: 'Atmospheric' },
-  { name: 'Paris Café', icon: '🇫🇷', category: 'Travel' },
-  { name: 'Mountain Stream', icon: '⛰️', category: 'Nature' },
+const SOUNDSCAPES: { name: string; icon: ComponentType<IconProps>; category: string }[] = [
+  { name: 'Coffee Shop', icon: CoffeeShopIcon, category: 'Cozy' },
+  { name: 'Ocean Waves', icon: OceanWavesIcon, category: 'Nature' },
+  { name: 'Deep Space', icon: DeepSpaceIcon, category: 'Atmospheric' },
+  { name: 'Paris Café', icon: ParisCafeIcon, category: 'Travel' },
+  { name: 'Mountain Stream', icon: MountainStreamIcon, category: 'Nature' },
 ];
 
 const SOUNDSCAPE_DURATION = 10000;
 
 export function SoundscapeAnimation() {
   const reduced = useReducedMotion();
-  const [playing, setPlaying] = useState(false);
   const [selectedIdx, setSelectedIdx] = useState(-1);
   const [showVisualiser, setShowVisualiser] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const elapsedRef = useRef(0);
+  const lastKeyRef = useRef('');
 
   useEffect(() => {
     if (reduced) return;
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([e]) => setPlaying(e.isIntersecting),
-      { threshold: 0.3 },
+      ([e]) => setVisible(e.isIntersecting),
+      { threshold: 0.4 },
     );
     obs.observe(el);
     return () => obs.disconnect();
   }, [reduced]);
 
   useEffect(() => {
-    if (!playing || reduced) return;
-    setSelectedIdx(-1);
-    setShowVisualiser(false);
+    if (!visible || reduced) return;
 
-    const timers: ReturnType<typeof setTimeout>[] = [];
+    const totalCycle = SOUNDSCAPE_DURATION + LOOP_GAP;
+    const startTime = performance.now() - elapsedRef.current;
+    let rafId: number;
 
-    function runCycle() {
-      setSelectedIdx(-1);
-      setShowVisualiser(false);
-      // Browse items
-      timers.push(setTimeout(() => setSelectedIdx(0), 1200));
-      timers.push(setTimeout(() => setSelectedIdx(1), 2400));
-      timers.push(setTimeout(() => setSelectedIdx(2), 3600));
-      // Select Deep Space
-      timers.push(setTimeout(() => {
-        setSelectedIdx(2);
-        setShowVisualiser(true);
-      }, 4800));
-      // Reset
-      timers.push(setTimeout(() => {
-        setSelectedIdx(-1);
-        setShowVisualiser(false);
-      }, SOUNDSCAPE_DURATION - 300));
+    function tick() {
+      const elapsed = performance.now() - startTime;
+      const t = elapsed % totalCycle;
+
+      let idx: number;
+      let vis: boolean;
+
+      if (t >= 9700) { idx = -1; vis = false; } // gap
+      else if (t >= 4800) { idx = 2; vis = true; }  // Deep Space selected + visualiser
+      else if (t >= 3600) { idx = 2; vis = false; } // browse to Deep Space
+      else if (t >= 2400) { idx = 1; vis = false; } // browse to Ocean Waves
+      else if (t >= 1200) { idx = 0; vis = false; } // browse to Coffee Shop
+      else { idx = -1; vis = false; }
+
+      const key = `${idx}-${vis}`;
+      if (key !== lastKeyRef.current) {
+        lastKeyRef.current = key;
+        setSelectedIdx(idx);
+        setShowVisualiser(vis);
+      }
+
+      rafId = requestAnimationFrame(tick);
     }
 
-    runCycle();
-    const loop = setInterval(runCycle, SOUNDSCAPE_DURATION);
+    rafId = requestAnimationFrame(tick);
+
     return () => {
-      clearInterval(loop);
-      timers.forEach(clearTimeout);
+      elapsedRef.current = performance.now() - startTime;
+      cancelAnimationFrame(rafId);
     };
-  }, [playing, reduced]);
+  }, [visible, reduced]);
 
   if (reduced) {
     return (
@@ -460,7 +502,9 @@ export function SoundscapeAnimation() {
                 }}
                 transition={{ duration: 0.2 }}
               >
-                <span className="text-base">{s.icon}</span>
+                <s.icon size={20} className={cn(
+                  i === selectedIdx ? 'text-foreground' : 'text-foreground-muted',
+                )} aria-hidden />
                 <div className="flex-1">
                   <div className={cn(
                     'text-[10px] font-medium',
@@ -504,8 +548,8 @@ export function SoundscapeAnimation() {
                 className="mt-3 flex flex-col items-center gap-1"
               >
                 <div className="text-[8px] font-semibold text-violet">Now Playing</div>
-                <div className="text-[10px] font-medium text-foreground">
-                  🌌 Deep Space
+                <div className="flex items-center gap-1 text-[10px] font-medium text-foreground">
+                  <DeepSpaceIcon size={14} aria-hidden /> Deep Space
                 </div>
                 {/* Waveform visualiser */}
                 <div className="mt-1 flex items-end gap-[1.5px]">
@@ -555,7 +599,7 @@ function SoundscapeStatic() {
               i === 2 ? 'border-violet/30 bg-violet/5' : 'border-glass-border/50 bg-white/[0.02]',
             )}
           >
-            <span className="text-base">{s.icon}</span>
+            <s.icon size={20} className="text-foreground-muted" aria-hidden />
             <div>
               <div className="text-[10px] font-medium text-foreground-muted">{s.name}</div>
               <div className="text-[7px] text-foreground-muted/50">{s.category}</div>

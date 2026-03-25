@@ -28,7 +28,7 @@ export default async function RootLayout({
   const locale = await getLocale();
 
   return (
-    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className={`${getFontVariableClasses(locale)} h-full antialiased`}>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className={`${getFontVariableClasses(locale)} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full bg-background text-foreground" suppressHydrationWarning>
         {children}
         <Analytics />

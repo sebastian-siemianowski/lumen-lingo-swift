@@ -1,119 +1,148 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
+import type { ComponentType } from 'react';
+import type { IconProps } from '@/components/icons';
+import { FlashcardIcon, SpacedRepetitionIcon, SoundscapeIcon } from '@/components/icons';
+import { spring } from '@/lib/motion';
+import { cn } from '@/lib/utils';
 
 const screenshotKeys = ['flashcards', 'practice', 'soundscapes'] as const;
 const gradients = ['from-violet/20 to-cyan/10', 'from-cyan/20 to-violet/10', 'from-violet/15 to-amber/10'];
-const emojis = ['🃏', '🧠', '🎧'];
+const icons: ComponentType<IconProps>[] = [FlashcardIcon, SpacedRepetitionIcon, SoundscapeIcon];
 
-const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
+const CARD_W = 260;
+const GAP = 24;
 
 export function DownloadShowcase() {
   const [active, setActive] = useState(0);
-  const prefersReduced = useReducedMotion();
   const t = useTranslations('Download.showcase');
+  const x = useMotionValue(0);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  const advance = useCallback(() => {
-    setActive((prev) => (prev + 1) % screenshotKeys.length);
-  }, []);
+  const goTo = useCallback(
+    (idx: number) => {
+      const clamped = Math.max(0, Math.min(idx, screenshotKeys.length - 1));
+      setActive(clamped);
+      animate(x, -clamped * (CARD_W + GAP), { ...spring.smooth });
+    },
+    [x],
+  );
 
-  useEffect(() => {
-    if (prefersReduced) return;
-    const interval = setInterval(advance, 3500);
-    return () => clearInterval(interval);
-  }, [advance, prefersReduced]);
-
-  const currentKey = screenshotKeys[active];
+  const handleDragEnd = (_: unknown, info: { offset: { x: number }; velocity: { x: number } }) => {
+    const swipe = info.offset.x + info.velocity.x * 0.3;
+    if (swipe < -50) goTo(active + 1);
+    else if (swipe > 50) goTo(active - 1);
+    else goTo(active);
+  };
 
   return (
-    <section className="relative px-6 py-20">
+    <section
+      className="relative px-6 py-20"
+      role="region"
+      aria-label="App screenshots"
+      aria-roledescription="carousel"
+    >
       {/* Background glow */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
         <div className="absolute bottom-0 left-1/2 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-violet/5 blur-[100px]" />
       </div>
 
-      <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-12 lg:flex-row lg:items-center lg:gap-16">
-        {/* Device mockup */}
-        <div className={prefersReduced ? '' : 'animate-float'}>
-          <div className="relative mx-auto w-[240px] sm:w-[260px]">
-            <div className="absolute -inset-8 rounded-[60px] bg-violet/8 blur-[50px]" />
-            <div className="relative overflow-hidden rounded-[40px] border-[3px] border-white/10 bg-[#0a0a0f] p-2.5 shadow-2xl">
-              <div className="absolute top-2.5 left-1/2 z-20 h-[24px] w-[80px] -translate-x-1/2 rounded-full bg-black" />
-              <div className="relative aspect-[9/19.5] overflow-hidden rounded-[32px] bg-surface">
-                <AnimatePresence mode="wait">
-                  {currentKey && (
-                    <motion.div
-                      key={currentKey}
-                      initial={{ opacity: 0, scale: 1.04 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.96 }}
-                      transition={{ duration: 0.5, ease }}
-                      className="absolute inset-0 flex flex-col"
-                    >
-                      <div className={`absolute inset-0 bg-gradient-to-br ${gradients[active]}`} />
-                      <div className="relative flex flex-1 flex-col items-center justify-center gap-3 p-5 pt-10">
-                        <span className="text-4xl">{emojis[active]}</span>
-                        <span className="font-display text-sm font-bold text-foreground">
-                          {t(currentKey)}
-                        </span>
-                        <span className="text-xs text-foreground-muted">{t(`${currentKey}Sub`)}</span>
-                        <div className="mt-3 flex w-full flex-col gap-2">
-                          <div className="h-7 w-full rounded-lg bg-white/5" />
-                          <div className="h-7 w-3/4 rounded-lg bg-white/3" />
-                          <div className="h-7 w-5/6 rounded-lg bg-white/4" />
-                        </div>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            </div>
+      <div className="relative mx-auto max-w-4xl">
+        <h2 className="mb-10 text-center font-display text-2xl font-bold text-foreground sm:text-3xl">
+          {t('heading')}
+        </h2>
 
-            {/* Carousel dots */}
-            <div className="mt-5 flex justify-center gap-2">
-              {screenshotKeys.map((key, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActive(i)}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    i === active
-                      ? 'w-6 bg-violet'
-                      : 'w-1.5 bg-foreground-muted/40 hover:bg-foreground-muted/60'
-                  }`}
-                  aria-label={`View screenshot ${i + 1}: ${t(key)}`}
-                />
-              ))}
-            </div>
-          </div>
+        {/* Carousel */}
+        <div
+          ref={containerRef}
+          className="group relative mx-auto overflow-hidden"
+          style={{ maxWidth: CARD_W + 120 }}
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(active - 1); }
+            if (e.key === 'ArrowRight') { e.preventDefault(); goTo(active + 1); }
+          }}
+        >
+          <motion.div
+            className="flex cursor-grab active:cursor-grabbing"
+            style={{ x, gap: GAP, paddingLeft: 60, paddingRight: 60 }}
+            drag="x"
+            dragConstraints={{ left: -(screenshotKeys.length - 1) * (CARD_W + GAP), right: 0 }}
+            dragElastic={0.15}
+            onDragEnd={handleDragEnd}
+          >
+            {screenshotKeys.map((key, i) => {
+              const Icon = icons[i]!;
+              return (
+                <motion.div
+                  key={key}
+                  className="glass-card shrink-0 overflow-hidden rounded-2xl"
+                  style={{ width: CARD_W }}
+                  animate={{
+                    scale: i === active ? 1 : 0.88,
+                    opacity: i === active ? 1 : 0.5,
+                  }}
+                  transition={spring.smooth}
+                >
+                  <div className={`flex aspect-[9/16] flex-col items-center justify-center gap-3 bg-gradient-to-br p-6 ${gradients[i]}`}>
+                    <Icon size={40} className="text-foreground-secondary" aria-hidden />
+                    <span className="font-display text-sm font-bold text-foreground">{t(key)}</span>
+                    <span className="text-xs text-foreground-muted">{t(`${key}Sub`)}</span>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </motion.div>
+
+          {/* Desktop arrows (show on hover) */}
+          {active > 0 && (
+            <button
+              onClick={() => goTo(active - 1)}
+              className="absolute start-0 top-1/2 z-10 hidden -translate-y-1/2 items-center justify-center rounded-full border border-glass-border bg-surface/90 p-2 text-foreground-muted backdrop-blur-sm transition-opacity hover:text-foreground group-hover:flex"
+              aria-label="Previous screenshot"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
+            </button>
+          )}
+          {active < screenshotKeys.length - 1 && (
+            <button
+              onClick={() => goTo(active + 1)}
+              className="absolute end-0 top-1/2 z-10 hidden -translate-y-1/2 items-center justify-center rounded-full border border-glass-border bg-surface/90 p-2 text-foreground-muted backdrop-blur-sm transition-opacity hover:text-foreground group-hover:flex"
+              aria-label="Next screenshot"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6" /></svg>
+            </button>
+          )}
+        </div>
+
+        {/* Dot indicators */}
+        <div className="mt-6 flex justify-center gap-2">
+          {screenshotKeys.map((key, i) => (
+            <button
+              key={i}
+              onClick={() => goTo(i)}
+              className={cn(
+                'rounded-full transition-all duration-200',
+                i === active
+                  ? 'h-3 w-3 bg-[--color-violet]'
+                  : 'h-2 w-2 bg-[--color-glass-border] hover:bg-[--color-foreground-muted]',
+              )}
+              aria-label={`View screenshot ${i + 1}: ${t(key)}`}
+            />
+          ))}
         </div>
 
         {/* Captions */}
-        <div className="flex flex-col gap-6 text-center lg:text-start">
-          <h2 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
-            {t('heading')}
-          </h2>
-          <p className="max-w-md text-foreground-secondary leading-relaxed">
-            {t('description')}
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
-            {screenshotKeys.map((key, i) => (
-              <button
-                key={key}
-                onClick={() => setActive(i)}
-                className={`rounded-full border px-4 py-1.5 text-sm transition-all ${
-                  i === active
-                    ? 'border-violet/40 bg-violet-muted text-foreground'
-                    : 'border-glass-border bg-glass text-foreground-secondary hover:bg-glass-hover'
-                }`}
-              >
-                {t(key)}
-              </button>
-            ))}
-          </div>
-        </div>
+        <p className="mt-4 text-center text-sm text-foreground-secondary">
+          {t(screenshotKeys[active])}
+        </p>
+      </div>
+    </section>
+  );
+}
       </div>
     </section>
   );

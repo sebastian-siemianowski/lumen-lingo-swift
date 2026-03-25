@@ -26,7 +26,7 @@ export function PricingGrid() {
               features={t.raw(`tier.${tier}.features`) as string[]}
               cta={t(`tier.${tier}.cta`)}
               popular={popularTiers.has(tier)}
-              delay={i * 0.1}
+              delay={i * 0.08}
             />
           ))}
         </div>

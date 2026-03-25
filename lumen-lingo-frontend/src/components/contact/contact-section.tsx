@@ -1,53 +1,104 @@
 'use client';
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useRef, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 function CopyButton({ email, copied, onCopy }: { email: string; copied: string | null; onCopy: (email: string) => void }) {
   const isCopied = copied === email;
+  const [flash, setFlash] = useState(false);
+
+  const handleClick = () => {
+    onCopy(email);
+    setFlash(true);
+    setTimeout(() => setFlash(false), 100);
+  };
+
   return (
-    <button
-      onClick={() => onCopy(email)}
-      className={cn(
-        'inline-flex items-center gap-1.5 rounded-lg px-3 py-2.5 text-xs font-medium transition-all duration-300',
-        isCopied ? 'text-emerald-400' : 'text-white/40 hover:text-white/60',
-      )}
-      aria-label={`Copy ${email}`}
-    >
-      {isCopied ? (
-        <motion.svg
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          viewBox="0 0 16 16"
-          fill="none"
-          className="h-3.5 w-3.5"
-        >
-          <path d="M3 8.5l3 3 7-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        </motion.svg>
-      ) : (
-        <svg viewBox="0 0 16 16" fill="none" className="h-3.5 w-3.5" aria-hidden>
-          <rect x="5" y="5" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.25" />
-          <path d="M3 10.5V3.5a.5.5 0 01.5-.5H11" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" />
-        </svg>
-      )}
-      {isCopied ? 'Copied!' : 'Copy'}
-    </button>
+    <div className="relative">
+      <button
+        onClick={handleClick}
+        className={cn(
+          'relative inline-flex items-center justify-center rounded-lg p-2 transition-all duration-150',
+          flash && 'bg-emerald-400/10',
+          isCopied ? 'text-emerald-400' : 'text-[--color-foreground-muted] hover:text-[--color-foreground-secondary]',
+        )}
+        aria-label={isCopied ? 'Copied' : 'Copy email address'}
+      >
+        <AnimatePresence mode="wait" initial={false}>
+          {isCopied ? (
+            <motion.svg
+              key="check"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.15 }}
+              viewBox="0 0 16 16"
+              fill="none"
+              className="h-3 w-3"
+            >
+              <path d="M3 8.5l3 3 7-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </motion.svg>
+          ) : (
+            <motion.svg
+              key="clipboard"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.15 }}
+              viewBox="0 0 16 16"
+              fill="none"
+              className="h-3 w-3"
+              aria-hidden
+            >
+              <rect x="5" y="5" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.25" />
+              <path d="M3 10.5V3.5a.5.5 0 01.5-.5H11" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" />
+            </motion.svg>
+          )}
+        </AnimatePresence>
+      </button>
+
+      {/* Tooltip */}
+      <AnimatePresence>
+        {isCopied && (
+          <motion.span
+            initial={{ opacity: 0, y: 4 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            className="absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-sm bg-[--color-surface] px-2 py-1 text-xs text-[--color-foreground-secondary] shadow-[--shadow-card]"
+            role="status"
+          >
+            Copied!
+          </motion.span>
+        )}
+      </AnimatePresence>
+    </div>
   );
 }
 
 export function ContactSection() {
   const [copied, setCopied] = useState<string | null>(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout>>(null);
 
-  const copyEmail = async (email: string) => {
+  const copyEmail = useCallback(async (email: string) => {
     try {
       await navigator.clipboard.writeText(email);
-      setCopied(email);
-      setTimeout(() => setCopied(null), 2000);
     } catch {
       // Fallback for older browsers
+      const ta = document.createElement('textarea');
+      ta.value = email;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
     }
-  };
+    setCopied(email);
+    if (timerRef.current) clearTimeout(timerRef.current);
+    timerRef.current = setTimeout(() => setCopied(null), 2000);
+  }, []);
 
   return (
     <div className="relative overflow-hidden rounded-2xl border border-glass-border bg-surface-card/40 p-8 backdrop-blur-sm sm:p-10">
@@ -79,35 +130,32 @@ export function ContactSection() {
 
         {/* Email links */}
         <div className="mt-6 space-y-3">
-          {/* Support email — dedicated for support & privacy inquiries */}
-          <div className="flex flex-wrap items-center gap-3">
+          {/* Support email */}
+          <div className="glass-card flex items-center justify-between px-4 py-3">
             <a
               href="mailto:support@lumenshore.com"
-              className="group inline-flex items-center gap-2.5 rounded-xl border border-violet/25 bg-violet/10 px-5 py-3 text-sm font-medium text-violet transition-all duration-300 hover:border-violet/40 hover:bg-violet/15 hover:shadow-[0_0_20px_rgba(139,92,246,0.12)]"
+              className={cn(
+                'font-mono text-sm transition-colors duration-200',
+                copied === 'support@lumenshore.com' ? 'text-[--color-violet]' : 'text-[--color-foreground]',
+              )}
             >
-              <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 opacity-80" aria-hidden>
-                <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
-                <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
-              </svg>
               support@lumenshore.com
             </a>
-
             <CopyButton email="support@lumenshore.com" copied={copied} onCopy={copyEmail} />
           </div>
 
           {/* General enquiries */}
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="glass-card flex items-center justify-between px-4 py-3">
             <a
               href="mailto:hello@lumenshore.com"
-              className="group inline-flex items-center gap-2.5 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-3 text-sm font-medium text-white/60 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06] hover:text-white/80"
+              className={cn(
+                'font-mono text-sm transition-colors duration-200',
+                copied === 'hello@lumenshore.com' ? 'text-[--color-violet]' : 'text-[--color-foreground]',
+              )}
             >
-              <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 opacity-60" aria-hidden>
-                <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
-                <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
-              </svg>
               hello@lumenshore.com
             </a>
-            <span className="text-xs text-white/30">General enquiries</span>
+            <CopyButton email="hello@lumenshore.com" copied={copied} onCopy={copyEmail} />
           </div>
         </div>
 

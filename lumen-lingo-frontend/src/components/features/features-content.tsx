@@ -3,6 +3,16 @@
 import { Container } from '@/components/ui';
 import { FeatureSection } from './feature-section';
 import { TableOfContents } from './table-of-contents';
+import {
+  FlashcardIcon,
+  SpacedRepetitionIcon,
+  PracticeModeIcon,
+  SoundscapeIcon,
+  BreathingOrbIcon,
+  ProgressIcon,
+  LanguagePairIcon,
+  MembershipIcon,
+} from '@/components/icons';
 
 /* ─── Screenshot placeholders (gradient + icon) ─── */
 function ScreenPlaceholder({
@@ -32,107 +42,34 @@ function ScreenPlaceholder({
   );
 }
 
-/* ─── SVG Icons for each feature ─── */
+/* ─── Feature icons (Epic 1 icons at size 32) ─── */
 const icons = {
-  flashcards: (
-    <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-      <rect x="6" y="10" width="36" height="28" rx="6" className="stroke-violet" strokeWidth="2" />
-      <rect x="10" y="14" width="28" height="20" rx="3" className="fill-violet/10 stroke-violet/40" strokeWidth="1.5" />
-      <path d="M20 24l6-4v8l-6-4z" className="fill-violet" />
-      <circle cx="33" cy="19" r="2.5" className="fill-cyan/60" />
-      <path d="M14 30h20" className="stroke-violet/30" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  ),
-  spacedRepetition: (
-    <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-      <circle cx="24" cy="24" r="18" className="stroke-cyan" strokeWidth="2" />
-      <path d="M24 12c6.627 0 12 5.373 12 12" className="stroke-cyan" strokeWidth="2.5" strokeLinecap="round" />
-      <circle cx="24" cy="24" r="5" className="fill-cyan/15 stroke-cyan" strokeWidth="1.5" />
-      <path d="M24 19v5l3.5 3.5" className="stroke-cyan" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M15 15l2 2M33 15l-2 2M15 33l2-2M33 33l-2-2" className="stroke-cyan/30" strokeWidth="1" strokeLinecap="round" />
-    </svg>
-  ),
-  practice: (
-    <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-      <rect x="6" y="8" width="14" height="14" rx="3" className="stroke-violet" strokeWidth="2" />
-      <rect x="28" y="8" width="14" height="14" rx="3" className="stroke-cyan" strokeWidth="2" />
-      <rect x="6" y="28" width="14" height="14" rx="3" className="stroke-amber" strokeWidth="2" />
-      <rect x="28" y="28" width="14" height="14" rx="3" className="stroke-violet" strokeWidth="2" />
-      <text x="13" y="18" textAnchor="middle" className="fill-violet text-[8px] font-bold">FC</text>
-      <text x="35" y="18" textAnchor="middle" className="fill-cyan text-[8px] font-bold">GQ</text>
-      <text x="13" y="38" textAnchor="middle" className="fill-amber text-[8px] font-bold">WB</text>
-      <path d="M35 33l-3 3 3 3" className="stroke-violet/60" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  ),
-  soundscapes: (
-    <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-      <path d="M8 34c4-8 10-18 16-18s12 10 16 18" className="stroke-violet" strokeWidth="2" strokeLinecap="round" />
-      <path d="M12 30c3-6 7-12 12-12s9 6 12 12" className="stroke-violet/40" strokeWidth="1.5" strokeLinecap="round" />
-      <circle cx="16" cy="16" r="2.5" className="fill-amber/60" />
-      <circle cx="32" cy="13" r="2" className="fill-cyan/50" />
-      <circle cx="24" cy="10" r="1.5" className="fill-violet/60" />
-      <path d="M18 38h12" className="stroke-violet/20" strokeWidth="1" strokeLinecap="round" />
-    </svg>
-  ),
-  orbs: (
-    <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-      <circle cx="24" cy="24" r="16" className="stroke-amber/40" strokeWidth="1" />
-      <circle cx="24" cy="24" r="11" className="fill-amber/5 stroke-amber" strokeWidth="2">
-        <animate attributeName="r" values="11;12;11" dur="3s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="24" cy="24" r="6" className="fill-amber/10 stroke-amber/40" strokeWidth="1">
-        <animate attributeName="r" values="6;7;6" dur="3s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="24" cy="24" r="2.5" className="fill-amber/30" />
-    </svg>
-  ),
-  progress: (
-    <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-      <rect x="6" y="10" width="36" height="28" rx="5" className="stroke-violet" strokeWidth="2" />
-      <path d="M12 32V22" className="stroke-violet/40" strokeWidth="3" strokeLinecap="round" />
-      <path d="M18 32V17" className="stroke-cyan" strokeWidth="3" strokeLinecap="round" />
-      <path d="M24 32V20" className="stroke-violet" strokeWidth="3" strokeLinecap="round" />
-      <path d="M30 32V15" className="stroke-amber" strokeWidth="3" strokeLinecap="round" />
-      <path d="M36 32V13" className="stroke-violet" strokeWidth="3" strokeLinecap="round" />
-    </svg>
-  ),
-  languages: (
-    <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-      <circle cx="24" cy="24" r="18" className="stroke-cyan/30" strokeWidth="1.5" />
-      <ellipse cx="24" cy="24" rx="10" ry="18" className="stroke-cyan/40" strokeWidth="1" />
-      <path d="M6 24h36M8 15h32M8 33h32" className="stroke-cyan/20" strokeWidth="1" />
-      <text x="24" y="20" textAnchor="middle" className="fill-cyan text-[6px] font-bold">ES</text>
-      <text x="15" y="28" textAnchor="middle" className="fill-violet text-[5px] font-bold">FR</text>
-      <text x="33" y="28" textAnchor="middle" className="fill-amber text-[5px] font-bold">JP</text>
-      <text x="24" y="36" textAnchor="middle" className="fill-violet text-[5px] font-bold">DE</text>
-    </svg>
-  ),
-  tiers: (
-    <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-      <path d="M24 6l4 8 8 1.2-5.8 5.6L31.6 29 24 25l-7.6 4 1.4-8.2L12 15.2l8-1.2z" className="stroke-amber" strokeWidth="2" fill="none" />
-      <path d="M24 32v10" className="stroke-amber/40" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M18 38h12" className="stroke-amber/30" strokeWidth="1.5" strokeLinecap="round" />
-      <circle cx="24" cy="18" r="4" className="fill-amber/15" />
-    </svg>
-  ),
+  flashcards: <FlashcardIcon size={32} className="text-violet" />,
+  spacedRepetition: <SpacedRepetitionIcon size={32} className="text-cyan" />,
+  practice: <PracticeModeIcon size={32} className="text-violet" />,
+  soundscapes: <SoundscapeIcon size={32} className="text-violet" />,
+  orbs: <BreathingOrbIcon size={32} className="text-amber" />,
+  progress: <ProgressIcon size={32} className="text-cyan" />,
+  languages: <LanguagePairIcon size={32} className="text-cyan" />,
+  tiers: <MembershipIcon size={32} className="text-amber" />,
 };
 
 /* ─── Feature data ─── */
 const tocItems = [
-  { id: 'flashcards', label: 'Immersive Flashcards' },
-  { id: 'spaced-repetition', label: 'Smart Spaced Repetition' },
-  { id: 'practice-modes', label: 'Practice Modes' },
-  { id: 'soundscapes', label: 'Soundscapes' },
-  { id: 'breathing-orbs', label: 'Breathing Orbs & Visuals' },
-  { id: 'progress', label: 'Progress & Analytics' },
-  { id: 'languages', label: 'Language Pairs' },
-  { id: 'membership', label: 'Membership Tiers' },
+  { id: 'flashcards', label: 'Immersive Flashcards', icon: <FlashcardIcon size={14} /> },
+  { id: 'spaced-repetition', label: 'Smart Spaced Repetition', icon: <SpacedRepetitionIcon size={14} /> },
+  { id: 'practice-modes', label: 'Practice Modes', icon: <PracticeModeIcon size={14} /> },
+  { id: 'soundscapes', label: 'Soundscapes', icon: <SoundscapeIcon size={14} /> },
+  { id: 'breathing-orbs', label: 'Breathing Orbs & Visuals', icon: <BreathingOrbIcon size={14} /> },
+  { id: 'progress', label: 'Progress & Analytics', icon: <ProgressIcon size={14} /> },
+  { id: 'languages', label: 'Language Pairs', icon: <LanguagePairIcon size={14} /> },
+  { id: 'membership', label: 'Membership Tiers', icon: <MembershipIcon size={14} /> },
 ];
 
 export function FeaturesContent() {
   return (
     <Container>
-      <div className="grid gap-8 xl:grid-cols-[220px_1fr]">
+      <div className="grid gap-8 lg:grid-cols-[220px_1fr]">
         {/* Sticky sidebar */}
         <TableOfContents items={tocItems} />
 
@@ -160,7 +97,7 @@ export function FeaturesContent() {
             screenshot={
               <ScreenPlaceholder
                 gradient="bg-gradient-to-br from-violet/20 via-surface to-violet/10"
-                icon={<span className="text-4xl">🃏</span>}
+                icon={<FlashcardIcon size={40} className="text-foreground-secondary" aria-hidden />}
                 label="Flashcard View"
               />
             }
@@ -192,7 +129,7 @@ export function FeaturesContent() {
             screenshot={
               <ScreenPlaceholder
                 gradient="bg-gradient-to-br from-cyan/20 via-surface to-cyan/10"
-                icon={<span className="text-4xl">🧠</span>}
+                icon={<SpacedRepetitionIcon size={40} className="text-foreground-secondary" aria-hidden />}
                 label="Smart Scheduling"
               />
             }
@@ -222,7 +159,7 @@ export function FeaturesContent() {
             screenshot={
               <ScreenPlaceholder
                 gradient="bg-gradient-to-br from-violet/15 via-surface to-cyan/10"
-                icon={<span className="text-4xl">🎯</span>}
+                icon={<PracticeModeIcon size={40} className="text-foreground-secondary" aria-hidden />}
                 label="Practice Modes"
               />
             }
@@ -253,7 +190,7 @@ export function FeaturesContent() {
             screenshot={
               <ScreenPlaceholder
                 gradient="bg-gradient-to-br from-violet/20 via-surface to-amber/10"
-                icon={<span className="text-4xl">🎵</span>}
+                icon={<SoundscapeIcon size={40} className="text-foreground-secondary" aria-hidden />}
                 label="Soundscapes"
               />
             }
@@ -283,7 +220,7 @@ export function FeaturesContent() {
             screenshot={
               <ScreenPlaceholder
                 gradient="bg-gradient-to-br from-amber/15 via-surface to-violet/15"
-                icon={<span className="text-4xl">🔮</span>}
+                icon={<BreathingOrbIcon size={40} className="text-foreground-secondary" aria-hidden />}
                 label="Breathing Orbs"
               />
             }
@@ -314,7 +251,7 @@ export function FeaturesContent() {
             screenshot={
               <ScreenPlaceholder
                 gradient="bg-gradient-to-br from-cyan/20 via-surface to-violet/10"
-                icon={<span className="text-4xl">📊</span>}
+                icon={<ProgressIcon size={40} className="text-foreground-secondary" aria-hidden />}
                 label="Progress Dashboard"
               />
             }
@@ -344,7 +281,7 @@ export function FeaturesContent() {
             screenshot={
               <ScreenPlaceholder
                 gradient="bg-gradient-to-br from-cyan/15 via-surface to-amber/10"
-                icon={<span className="text-4xl">🌍</span>}
+                icon={<LanguagePairIcon size={40} className="text-foreground-secondary" aria-hidden />}
                 label="Language Selection"
               />
             }
@@ -375,7 +312,7 @@ export function FeaturesContent() {
             screenshot={
               <ScreenPlaceholder
                 gradient="bg-gradient-to-br from-amber/20 via-surface to-violet/15"
-                icon={<span className="text-4xl">👑</span>}
+                icon={<MembershipIcon size={40} className="text-foreground-secondary" aria-hidden />}
                 label="Membership Tiers"
               />
             }

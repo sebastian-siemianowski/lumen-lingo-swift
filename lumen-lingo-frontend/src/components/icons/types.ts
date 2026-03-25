@@ -1,0 +1,6 @@
+import type { SVGProps } from 'react';
+
+export interface IconProps extends SVGProps<SVGSVGElement> {
+  /** Icon size in pixels. Defaults to 24. */
+  size?: number;
+}

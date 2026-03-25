@@ -9,8 +9,8 @@
     "pricing": "定价",
     "blog": "博客",
     "about": "关于",
-    "download": "下载",
-    "downloadFree": "免费下载",
+    "download": "Launching Soon",
+    "downloadFree": "Launching Soon",
     "skipToContent": "跳转到内容",
     "openMenu": "打开菜单",
     "closeMenu": "关闭菜单",
@@ -23,7 +23,6 @@
     "fr": "Français",
     "ja": "日本語",
     "de": "Deutsch",
-    "pt": "Português",
     "pl": "Polski",
     "ar": "العربية",
     "zh": "中文",
@@ -351,7 +350,7 @@
       "greatEffort": "👏 做得好！",
       "keepGoing": "💪 继续加油！",
       "description": "喜欢吗？真实体验更加出色——9 种语言、自适应学习、环境音效和数千张闪卡。",
-      "downloadFree": "免费下载",
+      "downloadFree": "Launching Soon",
       "tryAgain": "再试一次"
     },
     "meta": {
@@ -399,8 +398,8 @@
     "links": {
       "features": "功能",
       "pricing": "定价",
-      "howItWorks": "使用方法",
-      "reviews": "评价",
+      "earlyAccess": "抢先体验",
+      "download": "Launching Soon",
       "about": "关于",
       "blog": "博客",
       "careers": "招聘",
@@ -421,7 +420,7 @@
       "heading": "保持关注",
       "subheading": "学习技巧、应用更新和社区亮点。"
     },
-    "downloadAppStore": "从 App Store 下载",
+    "downloadAppStore": "Launching Soon",
     "copyright": "LumenShore Ltd. 保留所有权利。",
     "madeIn": "用心打造于英国",
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",

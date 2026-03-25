@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { getAllPosts, getPostsByCategory, getFeaturedPost, paginatePosts } from '@/lib/blog';
+import { getAllPosts, getPostsByCategory, getFeaturedPost, paginatePosts, getAllCategories } from '@/lib/blog';
 import { BlogHero, PostCard, CategoryFilter, Pagination } from '@/components/blog';
 import { PageTransition } from '@/components/layout';
 import { BreadcrumbJsonLd } from '@/components/home';
@@ -55,8 +55,15 @@ export default async function BlogPage({ params: paramsPromise, searchParams }: 
   const category = params.category;
   const page = Number(params.page) || 1;
 
-  const allPosts = category ? getPostsByCategory(category, locale) : getAllPosts(locale);
+  const allPostsForCounts = getAllPosts(locale);
+  const allPosts = category ? getPostsByCategory(category, locale) : allPostsForCounts;
   const featured = !category ? getFeaturedPost(locale) : undefined;
+
+  // Compute per-category counts
+  const categoryCounts: Record<string, number> = {};
+  for (const post of allPostsForCounts) {
+    categoryCounts[post.frontmatter.category] = (categoryCounts[post.frontmatter.category] || 0) + 1;
+  }
   const postsWithoutFeatured = featured
     ? allPosts.filter((p) => p.slug !== featured.slug)
     : allPosts;
@@ -72,7 +79,7 @@ export default async function BlogPage({ params: paramsPromise, searchParams }: 
 
       <section className="relative mx-auto max-w-7xl px-6 pb-24 sm:px-8 lg:px-12">
         <Suspense fallback={null}>
-          <CategoryFilter />
+          <CategoryFilter counts={categoryCounts} />
         </Suspense>
 
         {/* Featured post */}

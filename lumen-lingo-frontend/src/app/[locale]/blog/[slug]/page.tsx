@@ -182,13 +182,16 @@ export default async function BlogPostPage({ params }: SlugPageProps) {
 
         {/* Article body with TOC sidebar */}
         <div className="mx-auto max-w-7xl px-6 pb-16 sm:px-8">
-          <div className="relative xl:grid xl:grid-cols-[1fr_220px] xl:gap-12">
+          <div className="relative lg:grid lg:grid-cols-[1fr_220px] lg:gap-12">
             <div className="prose-lumenlingo mx-auto max-w-[720px]">
+              <div className="lg:hidden">
+                <TableOfContents content={content} />
+              </div>
               <MDXContent source={content} />
               <BlogNewsletterCTA />
               <ScrollDepthTracker slug={slug} title={frontmatter.title} />
             </div>
-            <aside className="hidden xl:block">
+            <aside className="hidden lg:block">
               <TableOfContents content={content} />
             </aside>
           </div>

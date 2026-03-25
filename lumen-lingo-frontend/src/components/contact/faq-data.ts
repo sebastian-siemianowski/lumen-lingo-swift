@@ -47,7 +47,7 @@ export const contactFaqItems: FAQItem[] = [
   {
     question: 'Is my data synced across devices?',
     answer:
-      'LumenLingo uses iCloud to sync your learning progress, streaks, mastery levels, and settings across all your Apple devices signed in to the same Apple ID. Your data stays private on Apple\'s infrastructure — we never store it on external servers.',
+      'LumenLingo uses iCloud to sync your learning progress, streaks, mastery levels, and settings across all your Apple devices signed in to the same Apple ID. Your data stays private on Apple\'s infrastructure — currently, all personal learning data remains on-device and iCloud. We don\'t operate external databases for user data.',
   },
   {
     question: 'How do I delete my account and data?',
@@ -72,7 +72,7 @@ export const contactFaqItems: FAQItem[] = [
   {
     question: 'What data does LumenLingo collect?',
     answer:
-      'Very little. The iOS app stores all learning data on your device and syncs via iCloud — we never see it. Our website uses Vercel Analytics (anonymous page views), Sentry for error monitoring, and stores newsletter sign-ups if you opt in. We do not track you across other sites, sell your data, or use advertising cookies. Full details are in our Privacy Policy.',
+      'Very little. The iOS app stores all learning data on your device and syncs via iCloud — we don\'t have access to it. Our website uses Vercel Analytics (anonymous page views), Sentry for error monitoring, and stores newsletter sign-ups if you opt in. We do not track you across other sites, sell your data, or use advertising cookies. Full details are in our Privacy Policy.',
   },
   {
     question: 'How do I contact you about a privacy concern?',

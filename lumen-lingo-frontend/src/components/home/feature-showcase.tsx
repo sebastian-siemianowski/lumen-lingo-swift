@@ -1,8 +1,11 @@
 'use client';
 
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { GlassCard, Heading, Text, Container, Section } from '@/components/ui';
-import { StaggerChildren, StaggerItem, FadeIn } from '@/components/motion';
+import { StaggerItem, FadeIn } from '@/components/motion';
+import { fadeUp } from '@/lib/motion';
 import { useTranslations } from 'next-intl';
 
 interface Feature {
@@ -10,6 +13,7 @@ interface Feature {
   title: string;
   description: string;
   tint: 'violet' | 'cyan' | 'amber';
+  anchor: string;
 }
 
 const features: Feature[] = [
@@ -27,6 +31,7 @@ const features: Feature[] = [
     description:
       'Beautiful glass-morphic cards with smooth gestures and instant feedback. Swipe, flip, and master vocabulary in a stunning visual environment.',
     tint: 'violet',
+    anchor: '#flashcards',
   },
   {
     icon: (
@@ -42,6 +47,7 @@ const features: Feature[] = [
     description:
       'Spaced repetition recommendations that adapt to your learning pace. Three distinct modes—match, recall, and compose—keep sessions fresh.',
     tint: 'cyan',
+    anchor: '#practice',
   },
   {
     icon: (
@@ -58,6 +64,7 @@ const features: Feature[] = [
     description:
       'Ambient audio environments—from cosmic nebulae to forest clearings—that enhance focus and retention during every study session.',
     tint: 'violet',
+    anchor: '#soundscapes',
   },
   {
     icon: (
@@ -76,6 +83,7 @@ const features: Feature[] = [
     description:
       'Calming animated backgrounds that gently pulse and shift— reducing learning anxiety and creating a meditative study atmosphere.',
     tint: 'amber',
+    anchor: '#breathing-orbs',
   },
   {
     icon: (
@@ -92,6 +100,7 @@ const features: Feature[] = [
     description:
       '9 languages including Spanish, French, Japanese, German, Arabic, Chinese, and more—with 25+ pair combinations to learn from.',
     tint: 'cyan',
+    anchor: '#language-pairs',
   },
   {
     icon: (
@@ -108,32 +117,52 @@ const features: Feature[] = [
     description:
       'Comprehensive statistics, streaks, and mastery indicators. Watch your vocabulary grow with beautiful visualisations and milestones.',
     tint: 'violet',
+    anchor: '#progress',
   },
 ];
 
-function FeatureCard({ icon, title, description, tint }: Feature) {
+/* ─── Accent glow mapping for heading text-shadow ─── */
+const glowByTint = {
+  violet: 'group-hover:drop-shadow-[0_0_20px_rgba(139,92,246,0.2)]',
+  cyan: 'group-hover:drop-shadow-[0_0_20px_rgba(6,182,212,0.2)]',
+  amber: 'group-hover:drop-shadow-[0_0_20px_rgba(245,158,11,0.2)]',
+} as const;
+
+function FeatureCard({ icon, title, description, tint, anchor }: Feature) {
   return (
-    <GlassCard tint={tint} className="flex flex-col gap-4">
-      {/* Icon container with tinted glow ring */}
-      <div
-        className={cn(
-          'flex h-14 w-14 items-center justify-center rounded-2xl',
-          tint === 'violet' && 'bg-violet/10',
-          tint === 'cyan' && 'bg-cyan/10',
-          tint === 'amber' && 'bg-amber/10',
-        )}
+    <Link href={`/features${anchor}`} className="block outline-none">
+      <GlassCard
+        tint={tint}
+        className="group flex h-full flex-col gap-4"
+        whileTap={{ y: -2, scale: 1.005 }}
       >
-        {icon}
-      </div>
+        {/* Icon container — muted by default, accent-bright on hover */}
+        <div
+          className={cn(
+            'flex h-14 w-14 items-center justify-center rounded-2xl opacity-60 transition-opacity duration-200 group-hover:opacity-100',
+            tint === 'violet' && 'bg-violet/10',
+            tint === 'cyan' && 'bg-cyan/10',
+            tint === 'amber' && 'bg-amber/10',
+          )}
+        >
+          {icon}
+        </div>
 
-      <Heading as="h3" className="!text-xl !sm:text-xl">
-        {title}
-      </Heading>
+        <Heading
+          as="h3"
+          className={cn(
+            '!text-xl !sm:text-xl transition-all duration-200',
+            glowByTint[tint],
+          )}
+        >
+          {title}
+        </Heading>
 
-      <Text size="sm" colour="secondary" className="leading-relaxed">
-        {description}
-      </Text>
-    </GlassCard>
+        <Text size="sm" colour="secondary" className="leading-relaxed">
+          {description}
+        </Text>
+      </GlassCard>
+    </Link>
   );
 }
 
@@ -157,9 +186,17 @@ export function FeatureShowcase() {
           </Text>
         </FadeIn>
 
-        {/* Feature grid */}
-        <StaggerChildren
-          staggerInterval={0.08}
+        {/* Feature grid — staggered entry at -80px viewport margin */}
+        <motion.div
+          variants={{
+            hidden: {},
+            visible: {
+              transition: { staggerChildren: 0.08, delayChildren: 0.1 },
+            },
+          }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-80px' }}
           className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {features.map((feature) => (
@@ -167,7 +204,7 @@ export function FeatureShowcase() {
               <FeatureCard {...feature} />
             </StaggerItem>
           ))}
-        </StaggerChildren>
+        </motion.div>
       </Container>
     </Section>
   );
