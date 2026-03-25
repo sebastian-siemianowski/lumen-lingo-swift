@@ -5,7 +5,7 @@ import SwiftData
 /// GDPR Art. 15 — Right of Access.
 struct ViewMyDataView: View {
     @Environment(\.colorScheme) private var colorScheme
-    @Environment(LocalizationManager.self) private var localization
+    @Environment(\.localization) private var localization
 
     @Query private var profiles: [UserProfile]
     @Query private var records: [GameProgressRecord]

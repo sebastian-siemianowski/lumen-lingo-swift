@@ -9,6 +9,7 @@ import SwiftUI
 /// as the background slowly desaturates.
 struct FeatureTransitionOverlay: View {
     @Environment(TierManager.self) private var tierManager
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @State private var showBackground = false
     @State private var showCard = false
@@ -328,6 +329,26 @@ struct FeatureTransitionOverlay: View {
     // MARK: - Animation Sequence
 
     private func startSequence() {
+        // VoiceOver: announce the transition
+        announceTransition()
+
+        // Reduce Motion: skip all animations, show everything instantly
+        if reduceMotion {
+            showBackground = true
+            showCard = true
+            showTitle = true
+            revealedIndices = Set(features.indices)
+            showSummary = true
+            backgroundGlow = 0.6
+
+            // Auto-dismiss after read time
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                tierManager.showFeatureTransition = false
+                resetState()
+            }
+            return
+        }
+
         // Background fade in (0.5s smooth)
         withAnimation(.easeIn(duration: 0.5)) {
             showBackground = true
@@ -350,8 +371,8 @@ struct FeatureTransitionOverlay: View {
             }
         }
 
-        // Stagger feature reveals
-        let staggerDelay: Double = isUpgrade ? 0.25 : 0.15
+        // Stagger feature reveals (150ms between each for upgrades)
+        let staggerDelay: Double = isUpgrade ? 0.15 : 0.15
         for index in features.indices {
             let delay = 0.5 + Double(index) * staggerDelay
 
@@ -373,7 +394,7 @@ struct FeatureTransitionOverlay: View {
 
             // Reveal the row
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
-                withAnimation(.spring(response: 0.35, dampingFraction: 0.65)) {
+                withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {
                     revealedIndices.insert(index)
                 }
 
@@ -406,6 +427,23 @@ struct FeatureTransitionOverlay: View {
                 tierManager.showFeatureTransition = false
                 resetState()
             }
+        }
+    }
+
+    // MARK: - VoiceOver
+
+    private func announceTransition() {
+        guard UIAccessibility.isVoiceOverRunning else { return }
+        let featureNames = features.map(\.displayName).joined(separator: ", ")
+        let message: String
+        if isUpgrade {
+            message = "Features unlocked: \(featureNames)"
+        } else {
+            message = "Plan adjusted. Features changed: \(featureNames)"
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            UIAccessibility.post(notification: .announcement,
+                                 argument: NSString(string: message))
         }
     }
 

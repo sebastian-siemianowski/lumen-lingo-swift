@@ -14,7 +14,7 @@ struct LegalConsentView: View {
     static let currentVersion = "2.0"
 
     @Environment(\.dismiss) private var dismiss
-    @Environment(LocalizationManager.self) private var localization
+    @Environment(\.localization) private var localization
 
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }

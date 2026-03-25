@@ -1078,7 +1078,7 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] Every `PremiumFeature` enum case has a concrete gate check implemented:
+- [x] Every `PremiumFeature` enum case has a concrete gate check implemented:
   | Feature | Required Tier | Gate Location |
   |---|---|---|
   | `soundscapes` | Pro+ | SoundscapeView.onAppear |
@@ -1091,19 +1091,19 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
   | `flashcardDeckSize` | Tier-dependent | Flashcard deck creation |
   | `grammarDifficulty` | Tier-dependent | Grammar level selector |
   | `wordBuilderDifficulty` | Tier-dependent | Word builder level selector |
-- [ ] `TierManager.hasAccess(to: .soundscapes)` returns `true` for Pro, Elite, Royal, Trial — `false` for Free
-- [ ] `TierManager.allowedCount(for: .languagePairs)` returns the correct limit per tier (Free: 1, Pro: 3, Elite: 5, Royal: unlimited)
-- [ ] When a gated feature is accessed without entitlement:
+- [x] `TierManager.hasAccess(to: .soundscapes)` returns `true` for Pro, Elite, Royal, Trial — `false` for Free
+- [x] `TierManager.allowedCount(for: .languagePairs)` returns the correct limit per tier (Free: 1, Pro: 3, Elite: 5, Royal: unlimited)
+- [x] When a gated feature is accessed without entitlement:
   1. A frosted glass overlay appears over the feature with the tier's lock icon
   2. The lock icon pulses gently (not aggressively)
   3. Tapping the locked overlay presents the paywall in `feature_gate` context (Story 2.5)
   4. After successful purchase, the overlay dissolves and the feature is immediately accessible (Story 4.4)
-- [ ] Gate checks are performed at the UI layer (view modifier or wrapper view) — never in the model/service layer
-- [ ] A `FeatureGateModifier` SwiftUI view modifier wraps any gated view: `.featureGate(.soundscapes)` applies the lock overlay when access is denied
-- [ ] The modifier uses the existing `TierGlassCardModifier` aesthetic for the frosted overlay
-- [ ] Gate checks are reactive — if the user purchases while a locked feature is visible, the gate lifts in real-time (no manual refresh needed)
-- [ ] A "Feature Access Audit" unit test iterates all `PremiumFeature` cases × all `MembershipTier` cases and verifies each expected `hasAccess` result against a truth table
-- [ ] No gate check uses hardcoded tier comparisons (e.g., `tier.rank >= 2`) — always use `TierManager.hasAccess(to:)` which reads from RevenueCat
+- [x] Gate checks are performed at the UI layer (view modifier or wrapper view) — never in the model/service layer
+- [x] A `FeatureGateModifier` SwiftUI view modifier wraps any gated view: `.featureGate(.soundscapes)` applies the lock overlay when access is denied
+- [x] The modifier uses the existing `TierGlassCardModifier` aesthetic for the frosted overlay
+- [x] Gate checks are reactive — if the user purchases while a locked feature is visible, the gate lifts in real-time (no manual refresh needed)
+- [x] A "Feature Access Audit" unit test iterates all `PremiumFeature` cases × all `MembershipTier` cases and verifies each expected `hasAccess` result against a truth table
+- [x] No gate check uses hardcoded tier comparisons (e.g., `tier.rank >= 2`) — always use `TierManager.hasAccess(to:)` which reads from RevenueCat
 
 #### UX Details — Make Users Fall in Love
 
@@ -1126,25 +1126,25 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] **Upgrade transitions (gaining features):**
+- [x] **Upgrade transitions (gaining features):**
   1. The frosted glass lock overlay on newly unlocked features cracks with a spreading crystalline fracture pattern from center (0–200ms)
   2. The fracture pieces shatter outward and dissolve into sparkle particles (200–500ms)
   3. The revealed feature content blooms to full saturation and opacity (500–800ms)
   4. A brief glow ring expands outward from the feature boundary and fades (800–1000ms)
-- [ ] **Downgrade transitions (losing features):**
+- [x] **Downgrade transitions (losing features):**
   1. Feature content desaturates gradually (vibrant → muted) over 500ms
   2. Frost crystallises inward from the edges over 300ms
   3. The lock icon fades in at center with a gentle rotation (200ms)
   4. The transition is respectful — amber tones, not harsh red
-- [ ] **Simultaneous transitions:**
+- [x] **Simultaneous transitions:**
   - When upgrading from Pro to Royal, all newly unlocked features animate with 150ms stagger between each
   - The stagger order follows visual hierarchy: top-to-bottom, left-to-right
-- [ ] The unlock animation plays only for features currently visible on screen — off-screen features update instantly
-- [ ] All animations use `withAnimation(.spring(response: 0.5, dampingFraction: 0.7))` for organic feel
-- [ ] Performance: 60fps on iPhone 13+, 30fps graceful degradation on iPhone 12 and older
-- [ ] The fracture pattern is procedurally generated (not a static image) — each unlock looks slightly different
-- [ ] Reduce Motion: if enabled, all transitions are instant opacity changes (0 → 1 for unlock, 1 → 0 for lock) — no particles or shattering
-- [ ] VoiceOver announces "Feature unlocked: [Feature Name]" for each newly accessible feature
+- [x] The unlock animation plays only for features currently visible on screen — off-screen features update instantly
+- [x] All animations use `withAnimation(.spring(response: 0.5, dampingFraction: 0.7))` for organic feel
+- [x] Performance: 60fps on iPhone 13+, 30fps graceful degradation on iPhone 12 and older
+- [x] The fracture pattern is procedurally generated (not a static image) — each unlock looks slightly different
+- [x] Reduce Motion: if enabled, all transitions are instant opacity changes (0 → 1 for unlock, 1 → 0 for lock) — no particles or shattering
+- [x] VoiceOver announces "Feature unlocked: [Feature Name]" for each newly accessible feature
 
 ---
 
@@ -1342,8 +1342,6 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 - [ ] The button works in sandbox and production environments
 
 ---
-
-### Story 5.6 — Family Sharing Entitlement Support
 
 **As a** family member whose organiser subscribes via Family Sharing  
 **I want** to automatically receive the subscription entitlement on my device  
