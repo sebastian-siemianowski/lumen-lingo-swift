@@ -117,6 +117,35 @@ final class SubscriptionManager {
     /// The tier before the most recent entitlement update (for analytics and animations).
     private(set) var previousTier: MembershipTier?
 
+    // MARK: - Offline Entitlement Cache (Story 4.2)
+
+    /// Timestamp of the last successful RevenueCat customer info sync.
+    private(set) var lastEntitlementSyncDate: Date? {
+        didSet {
+            if let date = lastEntitlementSyncDate {
+                UserDefaults.standard.set(date.timeIntervalSince1970, forKey: "rc_last_entitlement_sync")
+            }
+        }
+    }
+
+    /// How long the cached entitlement is trusted without a server sync (72 hours).
+    private let entitlementCacheGracePeriod: TimeInterval = 72 * 60 * 60
+
+    /// Whether the entitlement cache is stale (no sync for > 72 hours).
+    var isEntitlementCacheStale: Bool {
+        guard let lastSync = lastEntitlementSyncDate else { return false }
+        return Date.now.timeIntervalSince(lastSync) > entitlementCacheGracePeriod
+    }
+
+    /// Human-readable description of when entitlements were last synced.
+    var lastSyncDescription: String? {
+        guard let lastSync = lastEntitlementSyncDate else { return nil }
+        let age = Date.now.timeIntervalSince(lastSync)
+        if age < 60 { return "Last synced just now" }
+        if age < 3600 { return "Last synced \(Int(age / 60)) minutes ago" }
+        return "Last synced \(Int(age / 3600)) hours ago"
+    }
+
     // MARK: - RevenueCat Offerings (Story 2.1)
 
     /// Current offering from RevenueCat (the default offering for the paywall).
@@ -150,6 +179,14 @@ final class SubscriptionManager {
     // MARK: Internal
 
     // MARK: Lifecycle
+
+    init() {
+        // Restore persisted entitlement sync date
+        let timestamp = UserDefaults.standard.double(forKey: "rc_last_entitlement_sync")
+        if timestamp > 0 {
+            lastEntitlementSyncDate = Date(timeIntervalSince1970: timestamp)
+        }
+    }
 
     // Note: Transaction observation is now handled by RevenueCat SDK (Story 1.4/1.5).
     // The customerInfoStream → handleRevenueCatCustomerInfo() bridge in LumenLingoApp
@@ -686,6 +723,7 @@ final class SubscriptionManager {
 
     func handleRevenueCatCustomerInfo(_ info: RCCustomerInfo) {
         latestCustomerInfo = info
+        lastEntitlementSyncDate = .now
 
         let newState = Self.mapEntitlementsToState(info)
         let oldTier = subscriptionState.associatedTier
@@ -696,6 +734,10 @@ final class SubscriptionManager {
         }
 
         subscriptionState = newState
+
+        if isEntitlementCacheStale {
+            storeLog.warning("Entitlement cache is stale — last sync was \(self.lastSyncDescription ?? "unknown")")
+        }
 
         #if DEBUG
         let entitlementKeys = info.activeEntitlements.keys.sorted().joined(separator: ", ")
@@ -709,6 +751,31 @@ final class SubscriptionManager {
         Task { [weak self] in
             for await info in service.customerInfoStream {
                 await self?.handleRevenueCatCustomerInfo(info)
+            }
+        }
+    }
+
+    /// Re-sync entitlements when connectivity resumes after an offline period.
+    /// Observes NetworkMonitor and triggers a CustomerInfo refresh within 30 seconds.
+    func startConnectivityResync(_ service: any RevenueCatServiceProtocol, networkMonitor: NetworkMonitor) -> Task<Void, Never> {
+        Task { [weak self] in
+            var wasOffline = false
+            while !Task.isCancelled {
+                try? await Task.sleep(for: .seconds(5))
+                guard let self else { break }
+
+                if !networkMonitor.isConnected {
+                    wasOffline = true
+                    continue
+                }
+
+                if wasOffline {
+                    wasOffline = false
+                    storeLog.info("Connectivity restored — re-syncing entitlements")
+                    if let info = try? await service.getCustomerInfo() {
+                        await self.handleRevenueCatCustomerInfo(info)
+                    }
+                }
             }
         }
     }

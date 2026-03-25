@@ -105,6 +105,7 @@
 		60EBFB13F61AB004DAD6C424 /* BiometricAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE6CB50F1B3AB3F5795929 /* BiometricAuthService.swift */; };
 		60F70FD0BAD33EBA757BFCAA /* StarburstRingPreset.metal in Sources */ = {isa = PBXBuildFile; fileRef = CB8C0791AB4D515F992AC1E7 /* StarburstRingPreset.metal */; };
 		61636958291765DA59A50806 /* grammar_polish_french.json in Resources */ = {isa = PBXBuildFile; fileRef = 63AD997B04058E2091CC562A /* grammar_polish_french.json */; };
+		6175FD528E4286EEA123EF88 /* FeatureGateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97DBCB6CD2080B244012203 /* FeatureGateModifier.swift */; };
 		61D656FF8537D2385FB954E9 /* AuthAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F216B2CD3E54A3890B1C /* AuthAnalytics.swift */; };
 		637BD9450D9DA97AB7A865D4 /* FlashCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E4874F32867EAD578F46A /* FlashCardsView.swift */; };
 		652B7A1195DE5CAAD7B1FD61 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = D053DD9382B545B4BF5D2D68 /* RevenueCat */; };
@@ -564,6 +565,7 @@
 		D508F16BB89B3B9C89C1BCD7 /* grammar_german_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_german_english.json; sourceTree = "<group>"; };
 		D7154BB85000446A6F0B0B28 /* PracticeTimeRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimeRing.swift; sourceTree = "<group>"; };
 		D91F45BE0B0F87E54E615E52 /* ProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewModel.swift; sourceTree = "<group>"; };
+		D97DBCB6CD2080B244012203 /* FeatureGateModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureGateModifier.swift; sourceTree = "<group>"; };
 		D982946FA08A7CB301870D9F /* CelestialLagoonPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CelestialLagoonPreset.metal; sourceTree = "<group>"; };
 		DB8D135B47E89CA45DF67B97 /* SpiralHaloPreset.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SpiralHaloPreset.metal; sourceTree = "<group>"; };
 		DCC2F5A9F344F2867BB6CB52 /* DebugEnvironmentBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugEnvironmentBanner.swift; sourceTree = "<group>"; };
@@ -795,6 +797,7 @@
 				CA489005CB604BAA943FEB42 /* CollapsibleSection.swift */,
 				1D90794C6958EE73CEC20A8F /* CollapsibleSectionTheme.swift */,
 				DCC2F5A9F344F2867BB6CB52 /* DebugEnvironmentBanner.swift */,
+				D97DBCB6CD2080B244012203 /* FeatureGateModifier.swift */,
 				796514956D77ECBB8603FE69 /* FeatureTooltip.swift */,
 				C7EC466E954463C21BDA8D3C /* GlassDivider.swift */,
 				566E812340AC148093E2BF00 /* LanguagePairBadge.swift */,
@@ -1664,6 +1667,7 @@
 				DC1E26A3337ABA8C60FC9659 /* ExportDataWidget.swift in Sources */,
 				CB01B2380A84E9C75B37B547 /* Extensions.swift in Sources */,
 				24DB72DE8A1A5F8F3FB67208 /* FeatureFlagService.swift in Sources */,
+				6175FD528E4286EEA123EF88 /* FeatureGateModifier.swift in Sources */,
 				23CEE527AFBA57798564F913 /* FeatureTooltip.swift in Sources */,
 				6EAE1862896060C4D7F2D013 /* FeatureTransitionOverlay.swift in Sources */,
 				637BD9450D9DA97AB7A865D4 /* FlashCardsView.swift in Sources */,

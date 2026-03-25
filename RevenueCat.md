@@ -995,8 +995,8 @@ func fetchOfferings() async {
 
 #### Acceptance Criteria
 
-- [ ] The mapping is defined in a single, testable function: `func mapEntitlementsToTier(_ customerInfo: CustomerInfo) -> MembershipTier`
-- [ ] Mapping rules:
+- [x] The mapping is defined in a single, testable function: `func mapEntitlementsToTier(_ customerInfo: CustomerInfo) -> MembershipTier`
+- [x] Mapping rules:
   | Active Entitlements | Resulting Tier |
   |---|---|
   | None | `.free` |
@@ -1004,18 +1004,18 @@ func fetchOfferings() async {
   | `pro_access` + `elite_access` | `.elite` |
   | `pro_access` + `elite_access` + `royal_access` | `.royal` |
   | `royal_access` with `periodType == .trial` | `.trial` |
-- [ ] The highest active entitlement wins — if somehow only `royal_access` is active (without pro/elite), the tier is `.royal` (defensive)
-- [ ] The mapping handles all RevenueCat subscription states:
+- [x] The highest active entitlement wins — if somehow only `royal_access` is active (without pro/elite), the tier is `.royal` (defensive)
+- [x] The mapping handles all RevenueCat subscription states:
   - `active` → Tier is granted
   - `inGracePeriod` → Tier is granted (billing issue, but access continues)
   - `inBillingRetryPeriod` → Tier is granted with a warning flag
   - `expired` → Tier reverts to the next lowest active entitlement, or `.free`
   - `revoked` → Immediate downgrade to `.free`
-- [ ] The mapping function is a pure function with no side effects — easy to unit test
-- [ ] Unit tests cover all 12+ state combinations (each tier × each subscription state)
-- [ ] The mapping is called from `SubscriptionManager` whenever `CustomerInfo` changes (delegate, manual refresh, app foreground)
-- [ ] `TierManager.currentTier` is only updated if the computed tier is different from the current one — avoiding unnecessary UI updates
-- [ ] The `previousTier` is captured before updating for analytics and animation purposes
+- [x] The mapping function is a pure function with no side effects — easy to unit test
+- [x] Unit tests cover all 12+ state combinations (each tier × each subscription state)
+- [x] The mapping is called from `SubscriptionManager` whenever `CustomerInfo` changes (delegate, manual refresh, app foreground)
+- [x] `TierManager.currentTier` is only updated if the computed tier is different from the current one — avoiding unnecessary UI updates
+- [x] The `previousTier` is captured before updating for analytics and animation purposes
 
 #### Technical Notes
 
@@ -1050,19 +1050,19 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] RevenueCat's SDK automatically caches the last-known `CustomerInfo` on disk — this is used when offline
-- [ ] When offline, `Purchases.shared.customerInfo()` returns the cached `CustomerInfo` without error
-- [ ] The cached entitlement is trusted for up to 72 hours after the last successful server sync
-- [ ] After 72 hours offline with no server sync:
+- [x] RevenueCat's SDK automatically caches the last-known `CustomerInfo` on disk — this is used when offline
+- [x] When offline, `Purchases.shared.customerInfo()` returns the cached `CustomerInfo` without error
+- [x] The cached entitlement is trusted for up to 72 hours after the last successful server sync
+- [x] After 72 hours offline with no server sync:
   1. The app logs a warning (not visible to user)
   2. Access continues based on the cached entitlement (benefit of the doubt)
   3. A subtle, non-blocking indicator appears: "Last synced [X hours ago]" in the subscription settings
-- [ ] When connectivity returns, the app automatically re-syncs `CustomerInfo` within 30 seconds
-- [ ] If the re-sync reveals the subscription expired while offline, the downgrade happens immediately with the standard transition animation (Story 4.4)
-- [ ] If the re-sync reveals the subscription is still active, no UI change occurs
-- [ ] The offline cache survives app termination and device restart (persisted to disk by RevenueCat SDK)
-- [ ] No "You're offline" modal ever blocks the user from using the app — offline states are indicated, not enforced
-- [ ] A unit test verifies: cache write → app restart → cache read → correct tier
+- [x] When connectivity returns, the app automatically re-syncs `CustomerInfo` within 30 seconds
+- [x] If the re-sync reveals the subscription expired while offline, the downgrade happens immediately with the standard transition animation (Story 4.4)
+- [x] If the re-sync reveals the subscription is still active, no UI change occurs
+- [x] The offline cache survives app termination and device restart (persisted to disk by RevenueCat SDK)
+- [x] No "You're offline" modal ever blocks the user from using the app — offline states are indicated, not enforced
+- [x] A unit test verifies: cache write → app restart → cache read → correct tier
 
 ---
 
