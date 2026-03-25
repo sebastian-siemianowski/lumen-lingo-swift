@@ -10,6 +10,7 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(ThemeManager.self) private var themeManager
     @Environment(TierManager.self) private var tierManager
+    @Environment(SubscriptionManager.self) private var subscriptionManager
     @Environment(PracticeTimeTracker.self) private var practiceTimeTracker
     @Environment(\.localization) private var localization
 
@@ -51,6 +52,19 @@ struct ContentView: View {
             }
 
             networkSimulationBanner
+
+            // Story 5.2: Billing alert banner (hidden during games/lessons)
+            if !hideTabBar {
+                BillingAlertBanner()
+                    .animation(.spring(response: 0.5, dampingFraction: 0.7), value: subscriptionManager.showBillingAlert)
+                    .animation(.spring(response: 0.5, dampingFraction: 0.7), value: subscriptionManager.billingResolved)
+            }
+
+            // Story 5.3: Cancellation banner (hidden during games/lessons)
+            if !hideTabBar {
+                CancellationBanner()
+                    .animation(.spring(response: 0.5, dampingFraction: 0.7), value: subscriptionManager.showCancellationBanner)
+            }
 
             TabView(selection: $selectedTab) {
                 // MARK: Dashboard Tab
@@ -189,6 +203,22 @@ struct ContentView: View {
         }
         .fullScreenCover(isPresented: $showTierOnboarding) {
             TierOnboardingFlow()
+        }
+        // Story 5.7: Pre-expiry warning sheet
+        .sheet(isPresented: Bindable(subscriptionManager).showExpiryWarning) {
+            ExpiryWarningSheet {
+                selectedTab = .membership
+            }
+            .presentationDetents([.medium, .large])
+            .presentationDragIndicator(.visible)
+        }
+        // Story 5.7: Post-expiry welcome-back sheet
+        .sheet(isPresented: Bindable(subscriptionManager).showWelcomeBack) {
+            WelcomeBackSheet {
+                selectedTab = .membership
+            }
+            .presentationDetents([.medium])
+            .presentationDragIndicator(.visible)
         }
     }
 

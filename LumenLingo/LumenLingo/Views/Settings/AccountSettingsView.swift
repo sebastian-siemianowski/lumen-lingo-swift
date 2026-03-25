@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftData
+import StoreKit
 
 // MARK: - Account Settings View
 
@@ -10,6 +11,8 @@ struct AccountSettingsView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.authService) private var authService
     @Environment(\.localization) private var localization
+    @Environment(SubscriptionManager.self) private var subscriptionManager
+    @Environment(\.revenueCatService) private var revenueCatService
 
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
@@ -42,6 +45,9 @@ struct AccountSettingsView: View {
 
             // Account Actions
             accountActionsSection
+
+            // Subscription (Story 5.5)
+            subscriptionSection
         }
     }
 
@@ -53,11 +59,20 @@ struct AccountSettingsView: View {
             UserAvatarView(user: authService.currentUser, size: 64)
 
             VStack(alignment: .leading, spacing: 4) {
-                // Display name
-                Text(displayName)
-                    .font(.system(size: 20, weight: .bold))
-                    .foregroundStyle(isDark ? .white : .primary)
-                    .lineLimit(1)
+                // Display name + tier badge inline
+                HStack(spacing: 8) {
+                    Text(displayName)
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundStyle(isDark ? .white : .primary)
+                        .lineLimit(1)
+
+                    NavigationLink {
+                        MembershipView()
+                    } label: {
+                        TierBadgeView(animated: false)
+                    }
+                    .buttonStyle(.plain)
+                }
 
                 // Email with verified badge
                 if let email = authService.currentUser?.displayEmail {
@@ -194,6 +209,86 @@ struct AccountSettingsView: View {
                     .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
             )
             .clipShape(RoundedRectangle(cornerRadius: 12))
+        }
+    }
+
+    // MARK: - Subscription (Story 5.5)
+
+    private var subscriptionSection: some View {
+        let isFree = subscriptionManager.subscriptionState == .notSubscribed ||
+                     subscriptionManager.subscriptionState == .unknown
+        let isFamilyShared = subscriptionManager.isFamilyShared
+
+        return VStack(alignment: .leading, spacing: 10) {
+            Text("Subscription")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                .padding(.horizontal, 16)
+
+            // Story 5.6: Family sharing info row
+            if isFamilyShared {
+                HStack(spacing: 12) {
+                    Image(systemName: "person.2.circle")
+                        .font(.system(size: 16))
+                        .foregroundStyle(.purple.opacity(0.8))
+                        .frame(width: 28)
+
+                    Text("Shared with you via Family Sharing")
+                        .font(.system(size: 15))
+                        .foregroundStyle(isDark ? .white : .primary)
+
+                    Spacer()
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+                .background(
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
+                )
+                .accessibilityLabel("Shared with you via Family Sharing")
+            }
+
+            Button {
+                HapticsService.shared.buttonPress()
+                Task {
+                    do {
+                        try await revenueCatService.showManageSubscriptions()
+                    } catch {
+                        if let url = URL(string: "https://apps.apple.com/account/subscriptions") {
+                            await UIApplication.shared.open(url)
+                        }
+                    }
+                    if let info = try? await revenueCatService.getCustomerInfo() {
+                        subscriptionManager.handleRevenueCatCustomerInfo(info)
+                    }
+                }
+            } label: {
+                HStack(spacing: 12) {
+                    Image(systemName: "gear.badge")
+                        .font(.system(size: 16))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
+                        .frame(width: 28)
+
+                    Text(isFree ? "View Subscription Options" : "Manage Subscription")
+                        .font(.system(size: 15))
+                        .foregroundStyle(isDark ? .white : .primary)
+
+                    Spacer()
+
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 13, weight: .medium))
+                        .foregroundStyle(isDark ? .white.opacity(0.3) : .secondary)
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+                .background(
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
+                )
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(isFree ? "View subscription options" : "Manage Subscription")
+            .accessibilityHint("Opens App Store subscription settings")
         }
     }
 

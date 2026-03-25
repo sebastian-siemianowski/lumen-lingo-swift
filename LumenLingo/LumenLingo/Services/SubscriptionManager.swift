@@ -117,6 +117,280 @@ final class SubscriptionManager {
     /// The tier before the most recent entitlement update (for analytics and animations).
     private(set) var previousTier: MembershipTier?
 
+    // MARK: - Billing Alert State (Story 5.2)
+
+    /// Whether the billing alert banner is currently visible.
+    var showBillingAlert: Bool = false
+
+    /// Whether the billing issue was just resolved (drives green checkmark animation).
+    var billingResolved: Bool = false
+
+    /// The date the user last dismissed the billing alert (reappears after 24h).
+    private var billingAlertDismissedAt: Date? {
+        didSet {
+            if let date = billingAlertDismissedAt {
+                UserDefaults.standard.set(date.timeIntervalSince1970, forKey: "billing_alert_dismissed_at")
+            }
+        }
+    }
+
+    /// Whether the subscription has a billing issue (grace period or billing retry).
+    var hasBillingIssue: Bool {
+        switch subscriptionState {
+        case .inGracePeriod, .inBillingRetry: return true
+        default: return false
+        }
+    }
+
+    /// The tier affected by the billing issue, if any.
+    var billingIssueTier: MembershipTier? {
+        switch subscriptionState {
+        case .inGracePeriod(let tier), .inBillingRetry(let tier): return tier
+        default: return nil
+        }
+    }
+
+    /// Dismiss the billing alert. It will reappear after 24 hours if unresolved.
+    func dismissBillingAlert() {
+        showBillingAlert = false
+        billingAlertDismissedAt = .now
+    }
+
+    // MARK: - Cancellation State (Story 5.3)
+
+    /// Whether a one-time cancellation banner should appear.
+    var showCancellationBanner: Bool = false
+
+    /// Whether the user is on an active subscription that won't renew (cancelled by user).
+    var isCancelling: Bool {
+        guard let info = latestCustomerInfo else { return false }
+        guard !info.hasBillingIssue else { return false }
+        let highest = info.highestActiveTier
+        guard highest != .free else { return false }
+        // Check if the highest active entitlement won't renew
+        let entitlementId: String? = {
+            if info.hasActiveEntitlement(RCEntitlementID.royalAccess) { return RCEntitlementID.royalAccess }
+            if info.hasActiveEntitlement(RCEntitlementID.eliteAccess) { return RCEntitlementID.eliteAccess }
+            if info.hasActiveEntitlement(RCEntitlementID.proAccess) { return RCEntitlementID.proAccess }
+            return nil
+        }()
+        guard let eid = entitlementId, let ent = info.entitlement(eid) else { return false }
+        return !ent.willRenew && ent.periodType != .trial
+    }
+
+    /// The tier whose subscription is cancelling (won't renew).
+    var cancellingTier: MembershipTier? {
+        guard isCancelling else { return nil }
+        return latestCustomerInfo?.highestActiveTier
+    }
+
+    /// Formatted expiry date for the cancelling subscription.
+    var cancellationExpiryDateString: String? {
+        guard isCancelling,
+              let date = latestCustomerInfo?.latestExpirationDate,
+              date > .now else { return nil }
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.timeStyle = .none
+        return formatter.string(from: date)
+    }
+
+    /// Dismiss the cancellation banner permanently (for this cancellation cycle).
+    func dismissCancellationBanner() {
+        showCancellationBanner = false
+        UserDefaults.standard.set(true, forKey: "cancellation_banner_dismissed")
+    }
+
+    // MARK: - Family Sharing (Story 5.6)
+
+    /// Whether the current subscription is via Family Sharing.
+    var isFamilyShared: Bool {
+        guard let info = latestCustomerInfo else { return false }
+        let highest = info.highestActiveTier
+        guard highest != .free else { return false }
+        // Check if the highest active entitlement has familyShared ownership
+        let entitlementId: String? = {
+            if info.hasActiveEntitlement(RCEntitlementID.royalAccess) { return RCEntitlementID.royalAccess }
+            if info.hasActiveEntitlement(RCEntitlementID.eliteAccess) { return RCEntitlementID.eliteAccess }
+            if info.hasActiveEntitlement(RCEntitlementID.proAccess) { return RCEntitlementID.proAccess }
+            return nil
+        }()
+        guard let eid = entitlementId, let ent = info.entitlement(eid) else { return false }
+        return ent.ownershipType == .familyShared
+    }
+
+    /// The tier shared via Family Sharing, if any.
+    var familySharedTier: MembershipTier? {
+        guard isFamilyShared else { return nil }
+        return latestCustomerInfo?.highestActiveTier
+    }
+
+    // MARK: - Expiry Warning & Win-Back (Story 5.7)
+
+    /// Whether the pre-expiry warning sheet should be presented.
+    var showExpiryWarning: Bool = false
+
+    /// Whether the post-expiry welcome-back sheet should be presented.
+    var showWelcomeBack: Bool = false
+
+    /// Number of days remaining until subscription/trial expires. Nil if not approaching expiry.
+    var daysUntilExpiry: Int? {
+        guard let info = latestCustomerInfo,
+              let expiry = info.latestExpirationDate,
+              expiry > .now else { return nil }
+        let interval = expiry.timeIntervalSince(.now)
+        return max(0, Int(ceil(interval / 86400)))
+    }
+
+    /// The tier/label for the expiring subscription (e.g., "Pro" or "Trial").
+    var expiringLabel: String? {
+        guard let info = latestCustomerInfo else { return nil }
+        // Check trial first
+        for (_, ent) in info.activeEntitlements where ent.periodType == .trial && !ent.willRenew {
+            return "Trial"
+        }
+        guard isCancelling else { return nil }
+        return cancellingTier?.displayName
+    }
+
+    /// Whether the subscription is in the pre-expiry warning window (≤3 days, willRenew == false).
+    var isInExpiryWarningWindow: Bool {
+        guard let days = daysUntilExpiry, days <= 3 else { return false }
+        guard let info = latestCustomerInfo else { return false }
+        // Check trial not renewing
+        for (_, ent) in info.activeEntitlements where ent.periodType == .trial && !ent.willRenew {
+            return true
+        }
+        // Check cancelled subscription
+        return isCancelling
+    }
+
+    /// Whether the user has lapsed (expired 7+ days ago) and is eligible for welcome-back.
+    var isEligibleForWelcomeBack: Bool {
+        guard let info = latestCustomerInfo,
+              let expiry = info.latestExpirationDate,
+              expiry < .now else { return false }
+        let daysSinceExpiry = Int(Date.now.timeIntervalSince(expiry) / 86400)
+        return daysSinceExpiry >= 7 && info.activeEntitlements.isEmpty
+    }
+
+    // MARK: Expiry Warning Frequency Caps
+
+    /// Number of times the expiry warning sheet has been shown this expiry cycle.
+    private var expiryWarningShownCount: Int {
+        get { UserDefaults.standard.integer(forKey: "expiry_warning_shown_count") }
+        set { UserDefaults.standard.set(newValue, forKey: "expiry_warning_shown_count") }
+    }
+
+    /// Last time the expiry warning sheet was shown.
+    private var expiryWarningLastShownAt: Date? {
+        get {
+            let ts = UserDefaults.standard.double(forKey: "expiry_warning_last_shown")
+            return ts > 0 ? Date(timeIntervalSince1970: ts) : nil
+        }
+        set {
+            if let date = newValue {
+                UserDefaults.standard.set(date.timeIntervalSince1970, forKey: "expiry_warning_last_shown")
+            }
+        }
+    }
+
+    /// Whether the user suppressed all win-back prompts for this expiry cycle.
+    private var winbackSuppressed: Bool {
+        get { UserDefaults.standard.bool(forKey: "winback_suppressed") }
+        set { UserDefaults.standard.set(newValue, forKey: "winback_suppressed") }
+    }
+
+    /// Last time the welcome-back sheet was shown.
+    private var welcomeBackLastShownAt: Date? {
+        get {
+            let ts = UserDefaults.standard.double(forKey: "welcome_back_last_shown")
+            return ts > 0 ? Date(timeIntervalSince1970: ts) : nil
+        }
+        set {
+            if let date = newValue {
+                UserDefaults.standard.set(date.timeIntervalSince1970, forKey: "welcome_back_last_shown")
+            }
+        }
+    }
+
+    /// Features already nudged this session (cleared on app launch).
+    var nudgedFeaturesThisSession: Set<String> = []
+
+    /// Check and present the expiry warning if conditions are met.
+    func evaluateExpiryWarning() {
+        guard isInExpiryWarningWindow else { return }
+        guard !winbackSuppressed else { return }
+        guard expiryWarningShownCount < 3 else { return }
+
+        // Max 1 per 24 hours
+        if let lastShown = expiryWarningLastShownAt,
+           Date.now.timeIntervalSince(lastShown) < 24 * 60 * 60 {
+            return
+        }
+
+        showExpiryWarning = true
+        expiryWarningShownCount += 1
+        expiryWarningLastShownAt = .now
+    }
+
+    /// Dismiss the expiry warning for 24 hours ("I'll think about it").
+    func dismissExpiryWarning() {
+        showExpiryWarning = false
+    }
+
+    /// Suppress all win-back prompts for this expiry cycle.
+    func suppressWinback() {
+        showExpiryWarning = false
+        winbackSuppressed = true
+    }
+
+    /// Check and present the welcome-back sheet if conditions are met.
+    func evaluateWelcomeBack() {
+        guard isEligibleForWelcomeBack else { return }
+        guard !winbackSuppressed else { return }
+
+        // Show once per 30 days
+        if let lastShown = welcomeBackLastShownAt,
+           Date.now.timeIntervalSince(lastShown) < 30 * 86400 {
+            return
+        }
+
+        showWelcomeBack = true
+        welcomeBackLastShownAt = .now
+    }
+
+    /// Dismiss the welcome-back sheet.
+    func dismissWelcomeBack() {
+        showWelcomeBack = false
+    }
+
+    /// Whether a contextual nudge should be shown for a given feature.
+    func shouldShowExpiryNudge(for featureId: String) -> Bool {
+        guard isInExpiryWarningWindow else { return false }
+        guard !winbackSuppressed else { return false }
+        return !nudgedFeaturesThisSession.contains(featureId)
+    }
+
+    /// Mark a feature nudge as shown for this session.
+    func markNudgeShown(for featureId: String) {
+        nudgedFeaturesThisSession.insert(featureId)
+    }
+
+    /// Reset expiry warning state (called when subscription renews or changes).
+    func resetExpiryWarningState() {
+        expiryWarningShownCount = 0
+        expiryWarningLastShownAt = nil
+        winbackSuppressed = false
+        welcomeBackLastShownAt = nil
+        showExpiryWarning = false
+        showWelcomeBack = false
+        UserDefaults.standard.removeObject(forKey: "expiry_warning_shown_count")
+        UserDefaults.standard.removeObject(forKey: "expiry_warning_last_shown")
+        UserDefaults.standard.removeObject(forKey: "winback_suppressed")
+        UserDefaults.standard.removeObject(forKey: "welcome_back_last_shown")
+    }
+
     // MARK: - Offline Entitlement Cache (Story 4.2)
 
     /// Timestamp of the last successful RevenueCat customer info sync.
@@ -185,6 +459,11 @@ final class SubscriptionManager {
         let timestamp = UserDefaults.standard.double(forKey: "rc_last_entitlement_sync")
         if timestamp > 0 {
             lastEntitlementSyncDate = Date(timeIntervalSince1970: timestamp)
+        }
+        // Restore billing alert dismiss date
+        let dismissTimestamp = UserDefaults.standard.double(forKey: "billing_alert_dismissed_at")
+        if dismissTimestamp > 0 {
+            billingAlertDismissedAt = Date(timeIntervalSince1970: dismissTimestamp)
         }
     }
 
@@ -722,11 +1001,13 @@ final class SubscriptionManager {
     }
 
     func handleRevenueCatCustomerInfo(_ info: RCCustomerInfo) {
+        let previousInfo = latestCustomerInfo
         latestCustomerInfo = info
         lastEntitlementSyncDate = .now
 
         let newState = Self.mapEntitlementsToState(info)
-        let oldTier = subscriptionState.associatedTier
+        let oldState = subscriptionState
+        let oldTier = oldState.associatedTier
         let newTier = newState.associatedTier
 
         if oldTier != newTier {
@@ -734,6 +1015,44 @@ final class SubscriptionManager {
         }
 
         subscriptionState = newState
+
+        // Story 5.1: Detect renewals — same tier, updated expiry date
+        #if DEBUG
+        if let oldExpiry = previousInfo?.latestExpirationDate,
+           let newExpiry = info.latestExpirationDate,
+           newExpiry > oldExpiry,
+           oldTier == newTier,
+           newTier != nil {
+            let productIds = info.activeSubscriptions.sorted().joined(separator: ", ")
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .short
+            storeLog.info("Subscription renewed: tier=\(newTier!.rawValue), products=[\(productIds)], newExpiry=\(formatter.string(from: newExpiry))")
+        }
+        #endif
+
+        // Story 5.2: Billing alert state management
+        updateBillingAlertState(oldState: oldState, newState: newState)
+
+        // Story 5.3: Cancellation detection — show one-time banner
+        updateCancellationBannerState(info: info)
+
+        // Story 5.4: Revocation detection — log for analytics
+        if case .revoked = newState, oldState != .revoked {
+            let revokedTier = oldTier ?? .free
+            storeLog.info("Entitlement revoked: tier=\(revokedTier.rawValue), previousState=\(String(describing: oldState))")
+        }
+
+        // Story 5.7: Expiry warning & win-back evaluation
+        // Reset state when subscription renews or upgrades
+        if let oldT = oldTier, let newT = newTier, newT.rank >= oldT.rank,
+           case .subscribed = newState {
+            if previousInfo?.latestExpirationDate != info.latestExpirationDate {
+                resetExpiryWarningState()
+            }
+        }
+        // Note: evaluateExpiryWarning() and evaluateWelcomeBack() are called from
+        // ContentView to respect the "never during lessons" constraint.
 
         if isEntitlementCacheStale {
             storeLog.warning("Entitlement cache is stale — last sync was \(self.lastSyncDescription ?? "unknown")")
@@ -743,6 +1062,67 @@ final class SubscriptionManager {
         let entitlementKeys = info.activeEntitlements.keys.sorted().joined(separator: ", ")
         storeLog.debug("RC CustomerInfo: tier=\(newTier?.rawValue ?? "nil"), state=\(String(describing: self.subscriptionState)), entitlements=[\(entitlementKeys)]")
         #endif
+    }
+
+    /// Story 5.2: Update billing alert visibility based on subscription state transitions.
+    private func updateBillingAlertState(oldState: SubscriptionState, newState: SubscriptionState) {
+        let wasBillingIssue: Bool = {
+            switch oldState {
+            case .inGracePeriod, .inBillingRetry: return true
+            default: return false
+            }
+        }()
+        let isBillingIssue: Bool = {
+            switch newState {
+            case .inGracePeriod, .inBillingRetry: return true
+            default: return false
+            }
+        }()
+
+        if isBillingIssue && !wasBillingIssue {
+            // Billing issue just detected — show banner (unless recently dismissed)
+            let shouldShow = billingAlertDismissedAt.map {
+                Date.now.timeIntervalSince($0) > 24 * 60 * 60
+            } ?? true
+            if shouldShow {
+                showBillingAlert = true
+            }
+            storeLog.info("Billing issue detected: \(String(describing: newState))")
+        } else if !isBillingIssue && wasBillingIssue {
+            // Billing issue resolved
+            billingResolved = true
+            billingAlertDismissedAt = nil
+            storeLog.info("Billing issue resolved")
+            // Auto-clear resolved state after the confirmation animation
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) { [weak self] in
+                self?.billingResolved = false
+                self?.showBillingAlert = false
+            }
+        } else if isBillingIssue {
+            // Still in billing issue — re-check 24h dismiss window
+            let shouldShow = billingAlertDismissedAt.map {
+                Date.now.timeIntervalSince($0) > 24 * 60 * 60
+            } ?? true
+            if shouldShow { showBillingAlert = true }
+        }
+    }
+
+    /// Story 5.3: Show one-time cancellation banner when willRenew becomes false.
+    private func updateCancellationBannerState(info: RCCustomerInfo) {
+        let wasCancelling = UserDefaults.standard.bool(forKey: "cancellation_banner_dismissed")
+        guard isCancelling else {
+            // No longer cancelling — reset the dismiss flag for next cancellation
+            if wasCancelling {
+                UserDefaults.standard.removeObject(forKey: "cancellation_banner_dismissed")
+            }
+            showCancellationBanner = false
+            return
+        }
+        // Show banner once (not if already dismissed for this cycle)
+        if !wasCancelling {
+            showCancellationBanner = true
+            storeLog.info("Subscription cancellation detected: tier=\(self.cancellingTier?.rawValue ?? "unknown"), expiry=\(self.cancellationExpiryDateString ?? "unknown")")
+        }
     }
 
     /// Start observing RevenueCat customer info updates.

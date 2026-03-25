@@ -17,6 +17,9 @@ struct SubscriptionDisclosureView: View {
     /// Callback when "Redeem Code" is tapped (Story 3.4).
     var onRedeemCode: () -> Void = {}
 
+    /// Callback when "Manage Subscription" is tapped (Story 5.5).
+    var onManageSubscription: () -> Void = {}
+
     private var L: AppStrings { localization.strings }
     private var isDark: Bool { colorScheme == .dark }
 
@@ -41,6 +44,9 @@ struct SubscriptionDisclosureView: View {
                 restoreButton
                 redeemCodeButton
             }
+
+            // Story 5.5: Manage Subscription
+            manageSubscriptionButton
         }
         .padding(.horizontal, 20)
         .padding(.vertical, 18)
@@ -213,5 +219,37 @@ struct SubscriptionDisclosureView: View {
         .disabled(subscriptionManager.isPurchasing)
         .accessibilityLabel("Redeem promotional code")
         .accessibilityHint("Opens the App Store code redemption sheet")
+    }
+
+    // MARK: - Manage Subscription (Story 5.5)
+
+    private var manageSubscriptionButton: some View {
+        let isFree = subscriptionManager.subscriptionState == .notSubscribed ||
+                     subscriptionManager.subscriptionState == .unknown
+        return Button {
+            HapticsService.shared.buttonPress()
+            onManageSubscription()
+        } label: {
+            HStack(spacing: 6) {
+                Image(systemName: "gear.badge")
+                    .font(.system(size: 12, weight: .medium))
+                Text(isFree ? "View Subscription Options" : "Manage Subscription")
+                    .font(.system(size: 13, weight: .medium))
+            }
+            .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 10)
+            .background(
+                Capsule()
+                    .fill(isDark ? Color.white.opacity(0.06) : Color.black.opacity(0.05))
+                    .overlay(
+                        Capsule()
+                            .strokeBorder(isDark ? Color.white.opacity(0.08) : Color.black.opacity(0.08), lineWidth: 0.5)
+                    )
+            )
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(isFree ? "View subscription options" : "Manage Subscription")
+        .accessibilityHint("Opens App Store subscription settings")
     }
 }

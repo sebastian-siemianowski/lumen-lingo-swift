@@ -394,6 +394,14 @@ struct JourneyView: View {
                 .font(.system(size: 12))
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 .multilineTextAlignment(.center)
+
+            // Subtle tier indicator
+            NavigationLink {
+                MembershipView()
+            } label: {
+                TierBadgeView(compact: true)
+            }
+            .buttonStyle(.plain)
         }
         .padding(.vertical, 16)
         .padding(.horizontal, 20)

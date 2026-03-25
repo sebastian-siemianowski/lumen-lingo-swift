@@ -1160,26 +1160,26 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] The existing `TierBadgeView` is updated to source its tier from the RevenueCat-backed `TierManager`
-- [ ] The badge appears in the following locations:
+- [x] The existing `TierBadgeView` is updated to source its tier from the RevenueCat-backed `TierManager`
+- [x] The badge appears in the following locations:
   1. Settings screen — next to the user's name/avatar
   2. Membership tab — prominent display
   3. Journey view — subtle indicator
-- [ ] Badge states:
+- [x] Badge states:
   - **Free:** No badge shown (or a subtle "Free" label)
   - **Pro:** Blue lightning bolt icon with "Pro" label
   - **Elite:** Purple diamond icon with "Elite" label
   - **Royal:** Gold crown icon with "Royal" label
   - **Trial:** Royal badge with a "Trial" sub-label and remaining days: "Royal Trial · 5 days left"
-- [ ] The badge reacts to tier changes in real-time — no manual refresh needed
-- [ ] Tapping the badge navigates to the Membership tab
-- [ ] The badge has a subtle ambient animation:
+- [x] The badge reacts to tier changes in real-time — no manual refresh needed
+- [x] Tapping the badge navigates to the Membership tab
+- [x] The badge has a subtle ambient animation:
   - Pro: gentle blue pulse
   - Elite: slow purple shimmer
   - Royal: warm golden glow
   - Trial: additional countdown ring overlay
-- [ ] VoiceOver: "Your current plan: [Tier]. [Trial info if applicable]. Tap to manage."
-- [ ] The badge uses the same `TierGlassCardModifier` styling for consistency across the app
+- [x] VoiceOver: "Your current plan: [Tier]. [Trial info if applicable]. Tap to manage."
+- [x] The badge uses the same `TierGlassCardModifier` styling for consistency across the app
 
 ---
 
@@ -1199,14 +1199,14 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] When a subscription renews, RevenueCat sends an updated `CustomerInfo` via the delegate (Story 1.4)
-- [ ] The renewal is transparent to the user — no popup, no toast, no interruption
-- [ ] `TierManager.currentTier` remains unchanged (same tier, renewed period)
-- [ ] The subscription expiry date in `CustomerInfo.entitlements` is updated to the new renewal date
-- [ ] If the subscription management view is open, the "Renews on" date silently updates to the next cycle
-- [ ] Sandbox accelerated renewals (every 5 minutes for monthly) are handled correctly for testing
-- [ ] A log entry records each renewal with the product ID and new expiry date (debug builds)
-- [ ] If a renewal fails to process (edge case), the billing retry flow (Story 5.2) takes over
+- [x] When a subscription renews, RevenueCat sends an updated `CustomerInfo` via the delegate (Story 1.4)
+- [x] The renewal is transparent to the user — no popup, no toast, no interruption
+- [x] `TierManager.currentTier` remains unchanged (same tier, renewed period)
+- [x] The subscription expiry date in `CustomerInfo.entitlements` is updated to the new renewal date
+- [x] If the subscription management view is open, the "Renews on" date silently updates to the next cycle
+- [x] Sandbox accelerated renewals (every 5 minutes for monthly) are handled correctly for testing
+- [x] A log entry records each renewal with the product ID and new expiry date (debug builds)
+- [x] If a renewal fails to process (edge case), the billing retry flow (Story 5.2) takes over
 
 ---
 
@@ -1222,28 +1222,28 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] When RevenueCat reports a billing issue (`customerInfo.entitlements["pro_access"]?.billingIssueDetectedAt != nil`):
+- [x] When RevenueCat reports a billing issue (`customerInfo.entitlements["pro_access"]?.billingIssueDetectedAt != nil`):
   1. The user retains full access to their current tier (Apple's grace period)
   2. A non-intrusive but visible billing alert appears
   3. The alert is **not** a modal — it's a banner at the top of the main screen
-- [ ] The billing alert banner:
+- [x] The billing alert banner:
   - Warm amber background with the tier's accent color border
   - Message: "There's a problem with your subscription payment. Tap to fix it."
   - Tapping opens `AppStore.showManageSubscriptions()` or a deep link to payment settings
   - The banner is dismissible (tap X) but reappears every 24 hours until resolved
   - It does **not** appear on lesson screens or practice sessions — never interrupt learning
-- [ ] Grace period duration is determined by Apple (typically 6–16 days) and RevenueCat reports it via `CustomerInfo`
-- [ ] If the billing issue resolves (user updates payment method):
+- [x] Grace period duration is determined by Apple (typically 6–16 days) and RevenueCat reports it via `CustomerInfo`
+- [x] If the billing issue resolves (user updates payment method):
   1. The `CustomerInfo` delegate reports the resolved state
   2. The banner disappears with a downward slide animation
   3. A brief, subtle "✓ Payment updated" confirmation fades in and out (2 seconds)
-- [ ] If the grace period expires without resolution:
+- [x] If the grace period expires without resolution:
   1. The subscription state transitions to expired
   2. The standard downgrade transition (Story 4.4) activates
   3. A final message appears: "Your [Tier] subscription has ended. Resubscribe anytime to continue where you left off."
-- [ ] Throughout the grace period, the subscription badge shows an amber warning indicator (small dot)
-- [ ] The billing issue state is tracked in analytics: `billing_issue_detected`, `billing_issue_resolved`, `billing_issue_expired`
-- [ ] If the user contacts support during a billing issue, the diagnostics screen (Story 6.3) shows the billing issue state
+- [x] Throughout the grace period, the subscription badge shows an amber warning indicator (small dot)
+- [x] The billing issue state is tracked in analytics: `billing_issue_detected`, `billing_issue_resolved`, `billing_issue_expired`
+- [x] If the user contacts support during a billing issue, the diagnostics screen (Story 6.3) shows the billing issue state
 
 #### UX Details — Make Users Fall in Love
 
@@ -1267,24 +1267,24 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] When RevenueCat reports `willRenew == false` for an active subscription:
+- [x] When RevenueCat reports `willRenew == false` for an active subscription:
   1. The subscription badge shows a "Cancelling" sub-label
   2. The settings subscription view shows: "Your [Tier] access continues until [expiry date]"
   3. The exact date is formatted in the user's locale with day and month: "15 April 2026"
-- [ ] A soft, non-intrusive banner appears once (on first detection) on the main screen: "Your [Tier] plan ends on [date]. You'll keep access until then."
+- [x] A soft, non-intrusive banner appears once (on first detection) on the main screen: "Your [Tier] plan ends on [date]. You'll keep access until then."
   - The banner is dismissible and does not reappear
   - It does not appear on lesson or practice screens
-- [ ] On the expiry date, when `CustomerInfo` confirms the subscription has expired:
+- [x] On the expiry date, when `CustomerInfo` confirms the subscription has expired:
   1. The tier transitions via the standard downgrade animation (Story 4.4)
   2. All premium features re-gate with frosted glass overlays
   3. `TierManager.currentTier` updates to the appropriate tier (.free, or lower tier if they have another active subscription)
-- [ ] Post-expiry, the paywall shows a "Welcome back" context (warm, not guilt-tripping):
+- [x] Post-expiry, the paywall shows a "Welcome back" context (warm, not guilt-tripping):
   - "We saved your progress. Pick up where you left off with [Tier]."
   - A "Resubscribe" CTA is prominent
   - The user's progress stats are shown: "You've mastered 247 words, completed 32 lessons" — reminding them of the value
-- [ ] At no point does the app delete user data, reset progress, or remove downloaded content upon subscription expiry
-- [ ] Content created during the premium period (flashcard decks, notes) remains accessible in read-only mode
-- [ ] Analytics: `subscription_cancelled`, `subscription_expired`, `subscription_reactivated`
+- [x] At no point does the app delete user data, reset progress, or remove downloaded content upon subscription expiry
+- [x] Content created during the premium period (flashcard decks, notes) remains accessible in read-only mode
+- [x] Analytics: `subscription_cancelled`, `subscription_expired`, `subscription_reactivated`
 
 #### UX Details — Make Users Fall in Love
 
@@ -1307,16 +1307,16 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] When RevenueCat reports a revoked entitlement (via `CustomerInfo` delegate):
+- [x] When RevenueCat reports a revoked entitlement (via `CustomerInfo` delegate):
   1. `TierManager` immediately transitions to `.free` (or to the next active entitlement if another exists)
   2. The downgrade animation (Story 4.4) plays for the affected features
   3. No error message or accusatory language appears — the app does not distinguish between a user-initiated refund and an Apple-side revocation
-- [ ] The transition happens on the next `CustomerInfo` update — it does not require an app restart
-- [ ] If the user had created premium content (soundscapes, custom decks), it becomes read-only with the frosted overlay
-- [ ] If the refund is for a lower tier but the user also has a higher tier active, only the refunded entitlement is removed (RevenueCat handles this)
-- [ ] The user is not re-prompted to subscribe immediately after a refund — the paywall is available in settings/membership but not force-presented
-- [ ] Analytics: `entitlement_revoked` with tier and reason (if available from RevenueCat)
-- [ ] No user data is deleted upon revocation
+- [x] The transition happens on the next `CustomerInfo` update — it does not require an app restart
+- [x] If the user had created premium content (soundscapes, custom decks), it becomes read-only with the frosted overlay
+- [x] If the refund is for a lower tier but the user also has a higher tier active, only the refunded entitlement is removed (RevenueCat handles this)
+- [x] The user is not re-prompted to subscribe immediately after a refund — the paywall is available in settings/membership but not force-presented
+- [x] Analytics: `entitlement_revoked` with tier and reason (if available from RevenueCat)
+- [x] No user data is deleted upon revocation
 
 ---
 
@@ -1332,14 +1332,14 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] A "Manage Subscription" button in Settings → Subscription opens the App Store subscription management page
-- [ ] The implementation uses `AppStore.showManageSubscriptions(in:)` (StoreKit 2) which opens the native in-app management sheet
-- [ ] If `showManageSubscriptions` is unavailable (< iOS 15.4), fall back to opening `https://apps.apple.com/account/subscriptions` via `UIApplication.shared.open()`
-- [ ] The button is always visible, regardless of subscription state (free users see "View Subscription Options")
-- [ ] The button is styled consistently with other Settings items — not buried or hidden
-- [ ] After returning from the management sheet, `Purchases.shared.getCustomerInfo()` is called to refresh subscription state (catches immediate cancellations or plan changes)
-- [ ] VoiceOver: "Manage Subscription. Opens App Store subscription settings."
-- [ ] The button works in sandbox and production environments
+- [x] A "Manage Subscription" button in Settings → Subscription opens the App Store subscription management page
+- [x] The implementation uses `AppStore.showManageSubscriptions(in:)` (StoreKit 2) which opens the native in-app management sheet
+- [x] If `showManageSubscriptions` is unavailable (< iOS 15.4), fall back to opening `https://apps.apple.com/account/subscriptions` via `UIApplication.shared.open()`
+- [x] The button is always visible, regardless of subscription state (free users see "View Subscription Options")
+- [x] The button is styled consistently with other Settings items — not buried or hidden
+- [x] After returning from the management sheet, `Purchases.shared.getCustomerInfo()` is called to refresh subscription state (catches immediate cancellations or plan changes)
+- [x] VoiceOver: "Manage Subscription. Opens App Store subscription settings."
+- [x] The button works in sandbox and production environments
 
 ---
 
@@ -1353,16 +1353,16 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] RevenueCat automatically detects Family Shared subscriptions via `CustomerInfo`
-- [ ] Family-shared entitlements appear in `customerInfo.entitlements.active` with `ownershipType == .familyShared`
-- [ ] The `mapEntitlementsToTier` function (Story 4.1) treats family-shared entitlements identically to directly-purchased ones
-- [ ] The subscription badge shows the tier normally for family members — no "Shared" label unless in the subscription detail view
-- [ ] In the subscription detail view (Settings → Subscription), family-shared subscriptions show: "Shared with you via Family Sharing" and do NOT show a "Cancel" button (since the member can't cancel — only the organiser can)
-- [ ] If the organiser cancels or the subscriber leaves the family group, the entitlement is revoked via the standard RevenueCat delegate — the downgrade animation plays
-- [ ] The paywall does not show "Subscribe" to family members who already have shared access — it shows "Your plan: [Tier] via Family Sharing"
-- [ ] If a family member wants a higher tier than what's shared, they can purchase their own subscription — it takes priority over the shared one
-- [ ] When the Sharing family product is configured in App Store Connect with "Family Sharing" enabled, ensure the products are correctly set up in RevenueCat
-- [ ] A sandbox test verifies family sharing entitlement detection (using a Sandbox Family)
+- [x] RevenueCat automatically detects Family Shared subscriptions via `CustomerInfo`
+- [x] Family-shared entitlements appear in `customerInfo.entitlements.active` with `ownershipType == .familyShared`
+- [x] The `mapEntitlementsToTier` function (Story 4.1) treats family-shared entitlements identically to directly-purchased ones
+- [x] The subscription badge shows the tier normally for family members — no "Shared" label unless in the subscription detail view
+- [x] In the subscription detail view (Settings → Subscription), family-shared subscriptions show: "Shared with you via Family Sharing" and do NOT show a "Cancel" button (since the member can't cancel — only the organiser can)
+- [x] If the organiser cancels or the subscriber leaves the family group, the entitlement is revoked via the standard RevenueCat delegate — the downgrade animation plays
+- [x] The paywall does not show "Subscribe" to family members who already have shared access — it shows "Your plan: [Tier] via Family Sharing"
+- [x] If a family member wants a higher tier than what's shared, they can purchase their own subscription — it takes priority over the shared one
+- [x] When the Sharing family product is configured in App Store Connect with "Family Sharing" enabled, ensure the products are correctly set up in RevenueCat
+- [x] A sandbox test verifies family sharing entitlement detection (using a Sandbox Family)
 
 ---
 

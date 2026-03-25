@@ -71,6 +71,22 @@ struct MembershipView: View {
                         },
                         onRedeemCode: {
                             revenueCatService.presentCodeRedemptionSheet()
+                        },
+                        onManageSubscription: {
+                            Task {
+                                do {
+                                    try await revenueCatService.showManageSubscriptions()
+                                } catch {
+                                    // Fallback: open App Store subscriptions URL
+                                    if let url = URL(string: "https://apps.apple.com/account/subscriptions") {
+                                        await UIApplication.shared.open(url)
+                                    }
+                                }
+                                // Refresh state after returning from management sheet
+                                if let info = try? await revenueCatService.getCustomerInfo() {
+                                    subscriptionManager.handleRevenueCatCustomerInfo(info)
+                                }
+                            }
                         }
                     )
 
@@ -210,6 +226,9 @@ struct MembershipView: View {
                     )
             }
             .padding(.bottom, 4)
+
+            // Current tier badge — prominent
+            TierBadgeView(prominent: true)
 
             Text(L.plansAndPricing)
                 .font(.caption.bold())
@@ -1006,6 +1025,34 @@ struct TierCardView: View {
             // Price (Story 2.2 — RC offerings with animations)
             pricingSection
 
+            // Story 5.1 / 5.3: Renewal or expiry date for active subscription
+            if isActuallyCurrent, let renewalDate = subscriptionManager.nextRenewalDateString {
+                if subscriptionManager.isCancelling {
+                    Text("Access until \(renewalDate)")
+                        .font(.caption2)
+                        .foregroundStyle(Color(red: 0.4, green: 0.6, blue: 0.95).opacity(0.85))
+                        .contentTransition(.numericText())
+                } else {
+                    Text("Renews on \(renewalDate)")
+                        .font(.caption2)
+                        .foregroundStyle(isDark ? .white.opacity(0.45) : .secondary)
+                        .contentTransition(.numericText())
+                }
+            }
+
+            // Story 5.6: Family Sharing indicator
+            if isActuallyCurrent, subscriptionManager.isFamilyShared {
+                HStack(spacing: 4) {
+                    Image(systemName: "person.2.circle")
+                        .font(.caption2)
+                    Text("Shared with you via Family Sharing")
+                        .font(.caption2)
+                }
+                .foregroundStyle(.purple.opacity(0.8))
+                .accessibilityElement(children: .combine)
+                .accessibilityLabel("Shared with you via Family Sharing")
+            }
+
             // Benefits
             VStack(alignment: .leading, spacing: 6) {
                 ForEach(Array(tier.benefits.enumerated()), id: \.offset) { _, benefit in
@@ -1057,7 +1104,10 @@ struct TierCardView: View {
                             .font(.caption)
                             .transition(.scale.combined(with: .opacity))
                     }
-                    if isActuallyCurrent {
+                    if isActuallyCurrent && subscriptionManager.isFamilyShared {
+                        // Story 5.6: Family sharing label
+                        Text("Your plan: \(tier.name) via Family Sharing")
+                    } else if isActuallyCurrent {
                         Text(L.currentPlan)
                     } else if price > 0 {
                         // EU CRD Art.8(2): button must indicate obligation to pay

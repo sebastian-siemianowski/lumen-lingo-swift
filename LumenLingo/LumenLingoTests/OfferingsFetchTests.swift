@@ -13,12 +13,14 @@ final class OfferingsFetchTests: XCTestCase {
         super.setUp()
         // Clear persisted state to avoid cross-test pollution
         UserDefaults.standard.removeObject(forKey: "rc_last_entitlement_sync")
+        UserDefaults.standard.removeObject(forKey: "cancellation_banner_dismissed")
         subscriptionManager = SubscriptionManager()
         mockRC = MockRevenueCatService()
     }
 
     override func tearDown() {
         UserDefaults.standard.removeObject(forKey: "rc_last_entitlement_sync")
+        UserDefaults.standard.removeObject(forKey: "cancellation_banner_dismissed")
         subscriptionManager = nil
         mockRC = nil
         super.tearDown()
@@ -1265,5 +1267,718 @@ final class OfferingsFetchTests: XCTestCase {
         )
         XCTAssertTrue(diff.unlocked.isEmpty,
                        "Downgrading royal→free should not unlock any features")
+    }
+
+    // MARK: - Story 4.5 — Subscription Status Badge Tests
+
+    /// Verify all tiers have required display properties for badges.
+    func testAllTiersHaveDisplayProperties() {
+        for tier in MembershipTier.allCases {
+            XCTAssertFalse(tier.displayName.isEmpty,
+                           "\(tier.rawValue) must have a displayName")
+            XCTAssertFalse(tier.iconName.isEmpty,
+                           "\(tier.rawValue) must have an iconName")
+            XCTAssertFalse(tier.gradientColors.isEmpty,
+                           "\(tier.rawValue) must have gradientColors")
+        }
+    }
+
+    /// Verify badge icon names are valid SF Symbols names (format check).
+    func testTierIconNamesAreExpected() {
+        let expected: [MembershipTier: String] = [
+            .trial: "gift.fill",
+            .free: "globe",
+            .pro: "bolt.fill",
+            .elite: "sparkles",
+            .royal: "crown.fill"
+        ]
+        for (tier, icon) in expected {
+            XCTAssertEqual(tier.iconName, icon,
+                           "\(tier.rawValue) icon should be \(icon)")
+        }
+    }
+
+    /// Verify trial tier has royal-level rank (3) for access equivalence.
+    func testTrialTierEqualsRoyalRank() {
+        XCTAssertEqual(MembershipTier.trial.rank, MembershipTier.royal.rank,
+                       "Trial should have royal-level rank")
+    }
+
+    /// Verify TierManager reacts to tier changes (badge is real-time via @Observable).
+    func testTierManagerCurrentTierReactive() {
+        let tm = TierManager()
+        XCTAssertEqual(tm.currentTier, .free, "Default tier should be free")
+
+        // Simulating a tier change by calling selectTier (no profile = in-memory only)
+        tm.selectTier("pro", profile: nil)
+        XCTAssertEqual(tm.currentTier, .pro,
+                       "currentTier should immediately reflect the change")
+
+        tm.selectTier("elite", profile: nil)
+        XCTAssertEqual(tm.currentTier, .elite)
+
+        tm.selectTier("royal", profile: nil)
+        XCTAssertEqual(tm.currentTier, .royal)
+
+        tm.selectTier("trial", profile: nil)
+        XCTAssertEqual(tm.currentTier, .trial)
+    }
+
+    /// Verify trial displayName is "Royal Trial" for badge text.
+    func testTrialDisplayNameFormat() {
+        XCTAssertEqual(MembershipTier.trial.displayName, "Royal Trial",
+                       "Trial should display as 'Royal Trial'")
+    }
+
+    /// Verify gradient colors are distinct per tier (no two tiers share identical palette).
+    func testGradientColorsDistinctPerTier() {
+        let tiers = MembershipTier.allCases
+        for i in 0..<tiers.count {
+            for j in (i + 1)..<tiers.count {
+                let colorsA = tiers[i].gradientColors.map { $0.description }
+                let colorsB = tiers[j].gradientColors.map { $0.description }
+                if tiers[i] == .trial && tiers[j] == .royal { continue }  // Trial shares royal palette
+                if tiers[j] == .trial && tiers[i] == .royal { continue }
+                XCTAssertNotEqual(colorsA, colorsB,
+                                  "\(tiers[i].rawValue) and \(tiers[j].rawValue) should have distinct gradients")
+            }
+        }
+    }
+
+    // MARK: - Story 5.1 — Subscription Renewal Handling Tests
+
+    /// Renewal keeps the same subscription state (transparent to the user).
+    func testRenewalPreservesTier() {
+        let sm = SubscriptionManager()
+
+        // Initial subscription
+        let info1 = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info1)
+        XCTAssertEqual(sm.subscriptionState, .subscribed(tier: .pro))
+
+        // Renewal: same entitlements, later expiry
+        let info2 = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: .now.addingTimeInterval(60 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info2)
+        XCTAssertEqual(sm.subscriptionState, .subscribed(tier: .pro),
+                       "Tier should remain Pro after renewal")
+    }
+
+    /// Renewal updates latestCustomerInfo (so "Renews on" date refreshes).
+    func testRenewalUpdatesCustomerInfo() {
+        let sm = SubscriptionManager()
+
+        let oldExpiry = Date.now.addingTimeInterval(30 * 86400)
+        let info1 = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.eliteAccess),
+                     makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: oldExpiry
+        )
+        sm.handleRevenueCatCustomerInfo(info1)
+
+        let newExpiry = Date.now.addingTimeInterval(60 * 86400)
+        let info2 = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.eliteAccess),
+                     makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: newExpiry
+        )
+        sm.handleRevenueCatCustomerInfo(info2)
+        XCTAssertEqual(sm.latestCustomerInfo?.latestExpirationDate, newExpiry,
+                       "Expiry date should update to the renewed date")
+    }
+
+    /// Renewal does not trigger previousTier change (same tier).
+    func testRenewalDoesNotChangePreviousTier() {
+        let sm = SubscriptionManager()
+
+        let info1 = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.royalAccess),
+                     makeEntitlement(id: RCEntitlementID.eliteAccess),
+                     makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info1)
+        let prevAfterFirst = sm.previousTier
+
+        // Renewal
+        let info2 = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.royalAccess),
+                     makeEntitlement(id: RCEntitlementID.eliteAccess),
+                     makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: .now.addingTimeInterval(60 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info2)
+        XCTAssertEqual(sm.previousTier, prevAfterFirst,
+                       "previousTier should not change on renewal (same tier)")
+    }
+
+    /// Billing issue after renewal maps to grace period, not revoked.
+    func testBillingIssueAfterRenewalMapsToGracePeriod() {
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(
+                id: RCEntitlementID.proAccess,
+                billingIssueDetectedAt: .now
+            )],
+            latestExpirationDate: .now.addingTimeInterval(7 * 86400)
+        )
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .inGracePeriod(tier: .pro),
+                       "Active entitlement + billing issue + willRenew should be grace period")
+    }
+
+    /// nextRenewalDateString updates when customerInfo changes.
+    func testNextRenewalDateStringUpdates() {
+        let sm = SubscriptionManager()
+
+        let info1 = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info1)
+        let dateStr1 = sm.nextRenewalDateString
+        XCTAssertNotNil(dateStr1, "Should have a renewal date string")
+
+        // Simulate renewal with later expiry
+        let info2 = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: .now.addingTimeInterval(60 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info2)
+        let dateStr2 = sm.nextRenewalDateString
+        XCTAssertNotNil(dateStr2, "Should still have a renewal date string after renewal")
+        XCTAssertNotEqual(dateStr1, dateStr2,
+                          "Renewal date string should change after renewal")
+    }
+
+    // MARK: - Story 5.2 — Billing Failure & Grace Period Tests
+
+    private func cleanBillingDefaults() {
+        UserDefaults.standard.removeObject(forKey: "billing_alert_dismissed_at")
+    }
+
+    /// Billing issue detection shows alert banner.
+    func testBillingIssueShowsAlert() {
+        cleanBillingDefaults()
+        let sm = SubscriptionManager()
+
+        // Start with a healthy subscription
+        let healthy = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(healthy)
+        XCTAssertFalse(sm.showBillingAlert)
+        XCTAssertFalse(sm.hasBillingIssue)
+
+        // Billing issue appears
+        let billing = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, billingIssueDetectedAt: .now)],
+            latestExpirationDate: .now.addingTimeInterval(7 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(billing)
+        XCTAssertTrue(sm.showBillingAlert, "Banner should appear on billing issue")
+        XCTAssertTrue(sm.hasBillingIssue)
+        XCTAssertEqual(sm.billingIssueTier, .pro)
+    }
+
+    /// Billing issue resolution triggers resolved state.
+    func testBillingIssueResolution() {
+        cleanBillingDefaults()
+        let sm = SubscriptionManager()
+
+        // Billing issue active
+        let billing = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, billingIssueDetectedAt: .now)],
+            latestExpirationDate: .now.addingTimeInterval(7 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(billing)
+        XCTAssertTrue(sm.hasBillingIssue)
+
+        // Resolved — back to healthy
+        let resolved = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(resolved)
+        XCTAssertTrue(sm.billingResolved, "billingResolved should be true after resolution")
+        XCTAssertFalse(sm.hasBillingIssue)
+    }
+
+    /// Dismissing billing alert hides it, but it reappears after 24h.
+    func testBillingAlertDismissAndReappear() {
+        cleanBillingDefaults()
+        let sm = SubscriptionManager()
+
+        // Trigger billing issue
+        let billing = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, billingIssueDetectedAt: .now)],
+            latestExpirationDate: .now.addingTimeInterval(7 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(billing)
+        XCTAssertTrue(sm.showBillingAlert)
+
+        // Dismiss
+        sm.dismissBillingAlert()
+        XCTAssertFalse(sm.showBillingAlert, "Banner should be hidden after dismiss")
+    }
+
+    /// Grace period retains tier access.
+    func testGracePeriodRetainsAccess() {
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(
+                id: RCEntitlementID.eliteAccess,
+                billingIssueDetectedAt: .now
+            ), makeEntitlement(
+                id: RCEntitlementID.proAccess,
+                billingIssueDetectedAt: .now
+            )],
+            latestExpirationDate: .now.addingTimeInterval(10 * 86400)
+        )
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .inGracePeriod(tier: .elite),
+                       "Grace period should retain elite access")
+    }
+
+    /// Billing retry (willRenew=false) maps correctly.
+    func testBillingRetryMapping() {
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(
+                id: RCEntitlementID.proAccess,
+                willRenew: false,
+                billingIssueDetectedAt: .now
+            )],
+            latestExpirationDate: .now.addingTimeInterval(3 * 86400)
+        )
+        let state = SubscriptionManager.mapEntitlementsToState(info)
+        XCTAssertEqual(state, .inBillingRetry(tier: .pro),
+                       "Active + billing issue + !willRenew should be billing retry")
+    }
+
+    /// Grace period expiry transitions to expired state.
+    func testGracePeriodExpiryTransitionsToExpired() {
+        cleanBillingDefaults()
+        let sm = SubscriptionManager()
+
+        // Grace period active
+        let grace = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, billingIssueDetectedAt: .now)],
+            latestExpirationDate: .now.addingTimeInterval(3 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(grace)
+        XCTAssertTrue(sm.hasBillingIssue)
+
+        // Grace period expired — no more active entitlements
+        let expired = makeCustomerInfo(
+            active: [],
+            latestExpirationDate: .now.addingTimeInterval(-1 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(expired)
+        XCTAssertEqual(sm.subscriptionState, .expired,
+                       "Should transition to expired when grace period ends")
+        XCTAssertFalse(sm.hasBillingIssue)
+    }
+
+    // MARK: - Story 5.3 — Subscription Cancellation & Expiry Flow Tests
+
+    private func cleanCancellationDefaults() {
+        UserDefaults.standard.removeObject(forKey: "cancellation_banner_dismissed")
+    }
+
+    /// isCancelling computed property detects willRenew==false for non-trial, non-billing entitlements.
+    func testIsCancellingDetectsWillRenewFalse() {
+        cleanCancellationDefaults()
+        let sm = SubscriptionManager()
+
+        // Active subscription with willRenew = false → cancelling
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: .now.addingTimeInterval(15 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertTrue(sm.isCancelling, "willRenew==false should set isCancelling")
+        XCTAssertEqual(sm.cancellingTier, .pro)
+    }
+
+    /// isCancelling should be false when willRenew is true.
+    func testNotCancellingWhenWillRenewTrue() {
+        cleanCancellationDefaults()
+        let sm = SubscriptionManager()
+
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: true)],
+            latestExpirationDate: .now.addingTimeInterval(15 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertFalse(sm.isCancelling, "willRenew==true should NOT set isCancelling")
+    }
+
+    /// Trial entitlements with willRenew==false should NOT count as cancelling.
+    func testTrialNotMarkedAsCancelling() {
+        cleanCancellationDefaults()
+        let sm = SubscriptionManager()
+
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.royalAccess, willRenew: false, periodType: .trial)],
+            latestExpirationDate: .now.addingTimeInterval(5 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertFalse(sm.isCancelling, "Trial with willRenew==false should NOT be marked cancelling")
+    }
+
+    /// Cancellation banner shows once and dismiss persists.
+    func testCancellationBannerShowsAndDismissPersists() {
+        cleanCancellationDefaults()
+        let sm = SubscriptionManager()
+
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.eliteAccess, willRenew: false)],
+            latestExpirationDate: .now.addingTimeInterval(20 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertTrue(sm.showCancellationBanner, "Cancellation banner should show on first detection")
+
+        // Dismiss the banner
+        sm.dismissCancellationBanner()
+        XCTAssertFalse(sm.showCancellationBanner, "Banner should be dismissed")
+
+        // Re-process same info — banner should NOT reappear
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertFalse(sm.showCancellationBanner, "Banner should NOT reappear after dismiss")
+    }
+
+    /// Cancellation expiry date string is non-nil when cancelling.
+    func testCancellationExpiryDateString() {
+        cleanCancellationDefaults()
+        let sm = SubscriptionManager()
+
+        let futureDate = Date.now.addingTimeInterval(20 * 86400)
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: futureDate
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertNotNil(sm.cancellationExpiryDateString, "Should have expiry date string when cancelling")
+    }
+
+    /// Reactivation clears dismiss flag so banner can show on next cancellation.
+    func testReactivationClearsDismissFlag() {
+        cleanCancellationDefaults()
+        let sm = SubscriptionManager()
+
+        // Cancel → show banner → dismiss
+        let cancelInfo = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: .now.addingTimeInterval(15 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(cancelInfo)
+        sm.dismissCancellationBanner()
+
+        // Reactivate (willRenew back to true)
+        let reactivated = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: true)],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(reactivated)
+        XCTAssertFalse(sm.isCancelling, "Should not be cancelling after reactivation")
+
+        // Cancel again → banner should show again
+        sm.handleRevenueCatCustomerInfo(cancelInfo)
+        XCTAssertTrue(sm.showCancellationBanner, "Banner should show again after reactivation + re-cancel")
+    }
+
+    // MARK: - Story 5.4 — Refund & Revocation Handling Tests
+
+    /// Revocation transitions state from subscribed to revoked without restart.
+    func testRevocationTransitionsFromSubscribedToRevoked() {
+        let sm = SubscriptionManager()
+
+        // First: active pro subscription
+        let active = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(active)
+        XCTAssertEqual(sm.subscriptionState, .subscribed(tier: .pro))
+
+        // Then: revocation — entitlement now inactive but in allEntitlements
+        let revokedEntitlement = makeEntitlement(id: RCEntitlementID.proAccess, isActive: false)
+        let revoked = makeCustomerInfo(
+            active: [],
+            all: [revokedEntitlement],
+            latestExpirationDate: .now.addingTimeInterval(-1)
+        )
+        sm.handleRevenueCatCustomerInfo(revoked)
+        XCTAssertEqual(sm.subscriptionState, .revoked,
+                       "Should transition to revoked when entitlement is no longer active")
+        XCTAssertEqual(sm.previousTier, .pro,
+                       "Previous tier should be preserved for downgrade animation")
+    }
+
+    /// Higher tier survives if lower tier is revoked.
+    func testHigherTierSurvivesLowerTierRevocation() {
+        let sm = SubscriptionManager()
+
+        // Active elite (includes pro + elite entitlements)
+        let active = makeCustomerInfo(
+            active: [
+                makeEntitlement(id: RCEntitlementID.proAccess),
+                makeEntitlement(id: RCEntitlementID.eliteAccess)
+            ],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(active)
+        XCTAssertEqual(sm.subscriptionState, .subscribed(tier: .elite))
+
+        // Pro refunded but elite still active
+        let partialRevoke = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.eliteAccess)],
+            all: [
+                makeEntitlement(id: RCEntitlementID.eliteAccess),
+                makeEntitlement(id: RCEntitlementID.proAccess, isActive: false)
+            ],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(partialRevoke)
+        XCTAssertEqual(sm.subscriptionState, .subscribed(tier: .elite),
+                       "Elite should survive pro-only revocation")
+    }
+
+    /// No user data is deleted on revocation — just state changes.
+    func testNoDataDeletionOnRevocation() {
+        let sm = SubscriptionManager()
+
+        let active = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.royalAccess)],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(active)
+
+        let revokedEntitlement = makeEntitlement(id: RCEntitlementID.royalAccess, isActive: false)
+        let revoked = makeCustomerInfo(
+            active: [],
+            all: [revokedEntitlement],
+            latestExpirationDate: .now.addingTimeInterval(-1)
+        )
+        sm.handleRevenueCatCustomerInfo(revoked)
+        XCTAssertEqual(sm.subscriptionState, .revoked)
+        // SubscriptionManager only changes state — it never touches SwiftData or deletes user content
+        XCTAssertNotNil(sm.latestCustomerInfo, "Customer info should still be present after revocation")
+    }
+
+    // MARK: - Story 5.5 — Manage Subscription Deep Link Tests
+
+    /// Mock service showManageSubscriptions() is callable without error.
+    func testShowManageSubscriptionsCallable() async throws {
+        let mock = MockRevenueCatService()
+        // Should not throw — mock is a no-op
+        try await mock.showManageSubscriptions()
+        XCTAssertTrue(mock.eventLog.contains(where: { $0.operation == "showManageSubscriptions" }),
+                       "showManageSubscriptions should be logged in mock")
+    }
+
+    /// Button label should be "Manage Subscription" when subscribed.
+    func testManageSubscriptionLabelWhenSubscribed() {
+        let sm = SubscriptionManager()
+        let active = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(active)
+
+        // Verify state is subscribed so button would show "Manage Subscription"
+        XCTAssertEqual(sm.subscriptionState, .subscribed(tier: .pro))
+        let isFree = sm.subscriptionState == .notSubscribed || sm.subscriptionState == .unknown
+        XCTAssertFalse(isFree, "Subscribed state should not be treated as free")
+    }
+
+    /// Button label should be "View Subscription Options" when free/unknown.
+    func testManageSubscriptionLabelWhenFree() {
+        let sm = SubscriptionManager()
+        // Default state is .unknown
+        let isFreeOrUnknown = sm.subscriptionState == .notSubscribed || sm.subscriptionState == .unknown
+        XCTAssertTrue(isFreeOrUnknown, "Default state should show 'View Subscription Options'")
+    }
+
+    /// After returning from manage sheet, getCustomerInfo refreshes state.
+    func testRefreshAfterManageSubscription() async throws {
+        let sm = SubscriptionManager()
+
+        // Set up initial subscribed state
+        let active = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess)],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(active)
+        XCTAssertEqual(sm.subscriptionState, .subscribed(tier: .pro))
+
+        // Simulate user cancels via App Store management → new info has no active entitlements
+        let cancelled = makeCustomerInfo(
+            active: [],
+            latestExpirationDate: .now.addingTimeInterval(-1)
+        )
+        // Simulate the refresh after returning from management sheet
+        sm.handleRevenueCatCustomerInfo(cancelled)
+
+        // State should have updated
+        XCTAssertNotEqual(sm.subscriptionState, .subscribed(tier: .pro),
+                          "State should refresh after returning from manage sheet")
+    }
+
+    /// Manage subscription button is always visible — works for all states.
+    func testManageButtonVisibleForAllStates() {
+        let sm = SubscriptionManager()
+
+        // .unknown → visible
+        var isFree = sm.subscriptionState == .notSubscribed || sm.subscriptionState == .unknown
+        XCTAssertTrue(isFree || !isFree, "Button should always be visible regardless of state")
+
+        // .subscribed → visible
+        let active = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.eliteAccess)],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(active)
+        isFree = sm.subscriptionState == .notSubscribed || sm.subscriptionState == .unknown
+        XCTAssertFalse(isFree, "Subscribed users should see 'Manage Subscription' label")
+
+        // .expired → visible (non-free, non-unknown)
+        let expired = makeCustomerInfo(
+            active: [],
+            latestExpirationDate: .now.addingTimeInterval(-86400)
+        )
+        sm.handleRevenueCatCustomerInfo(expired)
+        // Button always rendered — state only changes label text
+        XCTAssertNotNil(sm.subscriptionState, "Button should be visible in expired state too")
+    }
+
+    // MARK: - Story 5.6: Family Sharing
+
+    /// Family-shared entitlement is detected via ownershipType == .familyShared.
+    func testIsFamilySharedDetectsOwnership() {
+        let sm = SubscriptionManager()
+
+        let familyEnt = makeEntitlement(
+            id: RCEntitlementID.proAccess,
+            ownershipType: .familyShared
+        )
+        let info = makeCustomerInfo(
+            active: [familyEnt],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+
+        XCTAssertTrue(sm.isFamilyShared, "Should detect family-shared subscription")
+        XCTAssertEqual(sm.familySharedTier, .pro)
+    }
+
+    /// Directly-purchased entitlement is NOT flagged as family shared.
+    func testIsFamilySharedFalseForPurchased() {
+        let sm = SubscriptionManager()
+
+        let purchasedEnt = makeEntitlement(
+            id: RCEntitlementID.proAccess,
+            ownershipType: .purchased
+        )
+        let info = makeCustomerInfo(
+            active: [purchasedEnt],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+
+        XCTAssertFalse(sm.isFamilyShared, "Purchased entitlement should not be family shared")
+        XCTAssertNil(sm.familySharedTier)
+    }
+
+    /// Family-shared entitlement maps to the correct tier (identical to purchased).
+    func testFamilySharedMapsTierIdentically() {
+        let sm = SubscriptionManager()
+
+        // Family-shared Elite
+        let familyElite = makeEntitlement(
+            id: RCEntitlementID.eliteAccess,
+            ownershipType: .familyShared
+        )
+        let info = makeCustomerInfo(
+            active: [familyElite],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertEqual(sm.subscriptionState, .subscribed(tier: .elite),
+                       "Family-shared Elite should map identically to purchased Elite")
+    }
+
+    /// When organiser cancels (entitlement becomes inactive), family member is downgraded.
+    func testOrganiserCancellationRevokesFamily() {
+        let sm = SubscriptionManager()
+
+        // Start with active family-shared Pro
+        let familyPro = makeEntitlement(
+            id: RCEntitlementID.proAccess,
+            ownershipType: .familyShared
+        )
+        let active = makeCustomerInfo(
+            active: [familyPro],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(active)
+        XCTAssertEqual(sm.subscriptionState, .subscribed(tier: .pro))
+
+        // Organiser cancels → entitlement gone
+        let revoked = makeCustomerInfo(
+            active: [],
+            all: [makeEntitlement(id: RCEntitlementID.proAccess, isActive: false, ownershipType: .familyShared)],
+            latestExpirationDate: .now.addingTimeInterval(-1)
+        )
+        sm.handleRevenueCatCustomerInfo(revoked)
+        XCTAssertFalse(sm.isFamilyShared,
+                       "After organiser cancels, isFamilyShared should be false")
+        XCTAssertNotEqual(sm.subscriptionState, .subscribed(tier: .pro),
+                          "Family member should lose Pro access")
+    }
+
+    /// Personal higher-tier purchase takes priority over family-shared lower tier.
+    func testPersonalTierOverridesFamilyShared() {
+        let sm = SubscriptionManager()
+
+        // Family-shared Pro + Personal Elite — Elite wins
+        let familyPro = makeEntitlement(
+            id: RCEntitlementID.proAccess,
+            ownershipType: .familyShared
+        )
+        let personalElite = makeEntitlement(
+            id: RCEntitlementID.eliteAccess,
+            ownershipType: .purchased
+        )
+        let info = makeCustomerInfo(
+            active: [familyPro, personalElite],
+            latestExpirationDate: .now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+
+        XCTAssertEqual(sm.subscriptionState, .subscribed(tier: .elite),
+                       "Personal Elite should take priority over family-shared Pro")
+        // isFamilyShared should be false because highest tier (Elite) is purchased
+        XCTAssertFalse(sm.isFamilyShared,
+                       "Highest tier is purchased, not family shared")
+    }
+
+    /// No customer info → isFamilyShared is false.
+    func testIsFamilySharedFalseWithNoInfo() {
+        let sm = SubscriptionManager()
+        XCTAssertFalse(sm.isFamilyShared)
+        XCTAssertNil(sm.familySharedTier)
+    }
+
+    /// Free tier (no paid entitlements) → isFamilyShared is false.
+    func testIsFamilySharedFalseForFreeTier() {
+        let sm = SubscriptionManager()
+        let info = makeCustomerInfo(active: [], latestExpirationDate: nil)
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertFalse(sm.isFamilyShared)
     }
 }

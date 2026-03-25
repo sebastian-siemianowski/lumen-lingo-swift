@@ -204,6 +204,7 @@
 		B2129156622CEB562771AD00 /* wordbuilder_english_german.json in Resources */ = {isa = PBXBuildFile; fileRef = C0A16D5C93EC371A3F0F50EF /* wordbuilder_english_german.json */; };
 		B21F534227CBED26084C28CE /* DebugURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30B266BA1A7A2C9EF62445 /* DebugURLProtocol.swift */; };
 		B2D43C9265EB92C9EA2E9F70 /* wordbuilder_french_english.json in Resources */ = {isa = PBXBuildFile; fileRef = E7FDE95E978430CB78BE2508 /* wordbuilder_french_english.json */; };
+		B32695B30F0882809DA8B130 /* BillingAlertBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124855BE3ED627E8D2FE4BA /* BillingAlertBanner.swift */; };
 		B3DB0A2F52B672FED0889C08 /* wordbuilder_polish_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = CC0A2E51F66FCC679DA2A5D0 /* wordbuilder_polish_spanish.json */; };
 		B4CF6C8C81966375535DF27F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2AC46688AFD50BFAE024B /* AuthService.swift */; };
 		B5827341B183598722B2A5BE /* grammar_polish_chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = 7798F321317CB763B6FA0DDD /* grammar_polish_chinese.json */; };
@@ -272,6 +273,7 @@
 		E9E04947EA5B47956AC9B61C /* flashcards_chinese_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 4891182963548D55B27CD859 /* flashcards_chinese_english.json */; };
 		EB14E6E4C10C13B33A501ED1 /* UpgradePromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D758E0FCC818F2BA8CE747E /* UpgradePromptView.swift */; };
 		EB3CBFD5BF6CCC0F3FE21A0C /* LagoonStars.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4DCFB0CC96C4AA4F7E7FC737 /* LagoonStars.metal */; };
+		EC0CC835344271FB86231928 /* CancellationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B01B9DAA53F0DB5A11D38DC /* CancellationBanner.swift */; };
 		ECAF2CF4ED087A2B241998B8 /* flashcards_polish_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = B1CD6316B947998E54ACB4AF /* flashcards_polish_japanese.json */; };
 		ED0AE081A91053C6FBC428A2 /* wordbuilder_chinese_english.json in Resources */ = {isa = PBXBuildFile; fileRef = F32819B82122B08BA2490CB7 /* wordbuilder_chinese_english.json */; };
 		F0A31588D49A21C91000A1A1 /* grammar_english_chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = 39CDFBF6DCB5ECB7689CE6C6 /* grammar_english_chinese.json */; };
@@ -350,6 +352,7 @@
 		179F24862354560BCC12AB27 /* flashcards_german_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_german_english.json; sourceTree = "<group>"; };
 		184332E9A816388D71A52CC4 /* flashcards_english_polish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_english_polish.json; sourceTree = "<group>"; };
 		19D0AFE49B5144D47E971846 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		1B01B9DAA53F0DB5A11D38DC /* CancellationBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellationBanner.swift; sourceTree = "<group>"; };
 		1CD9C429C1C49ACDEF66DB34 /* flashcards_german_spanish.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flashcards_german_spanish.json; sourceTree = "<group>"; };
 		1D90794C6958EE73CEC20A8F /* CollapsibleSectionTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleSectionTheme.swift; sourceTree = "<group>"; };
 		1E1633D0552F820F1DECE14C /* MilestoneBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneBadgeView.swift; sourceTree = "<group>"; };
@@ -357,6 +360,7 @@
 		1FB2375AD490242C723FC30E /* wordbuilder_polish_ukrainian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_polish_ukrainian.json; sourceTree = "<group>"; };
 		1FC0C0DB194CFC6D81344A4F /* grammar_polish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_polish_english.json; sourceTree = "<group>"; };
 		20DA8FA91B2C310EC779DC40 /* PerformanceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
+		2124855BE3ED627E8D2FE4BA /* BillingAlertBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingAlertBanner.swift; sourceTree = "<group>"; };
 		214C76E03A5E16042A59E9DD /* Dev-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dev-Release.xcconfig"; sourceTree = "<group>"; };
 		21662A72520A8562578663F8 /* RealRevenueCatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealRevenueCatService.swift; sourceTree = "<group>"; };
 		21F05258ABE2A1A6CEA8E742 /* wordbuilder_spanish_english.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordbuilder_spanish_english.json; sourceTree = "<group>"; };
@@ -894,6 +898,8 @@
 		42913C29432EC47AF7259020 /* Membership */ = {
 			isa = PBXGroup;
 			children = (
+				2124855BE3ED627E8D2FE4BA /* BillingAlertBanner.swift */,
+				1B01B9DAA53F0DB5A11D38DC /* CancellationBanner.swift */,
 				4B64C00B2CC60355A29B834B /* FeatureTransitionOverlay.swift */,
 				CA4D04FA3A066C26F1C83DBB /* LanguagePairUpgradeSheet.swift */,
 				927863E6ECF97AE41A78326D /* MembershipView.swift */,
@@ -1633,10 +1639,12 @@
 				3C903D4D3E0D7E30AF1A0FF2 /* AudioService.swift in Sources */,
 				61D656FF8537D2385FB954E9 /* AuthAnalytics.swift in Sources */,
 				B4CF6C8C81966375535DF27F /* AuthService.swift in Sources */,
+				B32695B30F0882809DA8B130 /* BillingAlertBanner.swift in Sources */,
 				60EBFB13F61AB004DAD6C424 /* BiometricAuthService.swift in Sources */,
 				C0651FD8C9746D52B953B5F1 /* BreathingOrbsLockedPreview.swift in Sources */,
 				AAB3EBD187F4B304EF2A471B /* BreathingOrbsSettingsView.swift in Sources */,
 				E9CFDD03F60EEF1F9D3FBBA9 /* BreathingOrbsView.swift in Sources */,
+				EC0CC835344271FB86231928 /* CancellationBanner.swift in Sources */,
 				89075F39060121315E6E3CEB /* CategoriesView.swift in Sources */,
 				B08B367E63734C6253D76A0D /* CategoryViewModel.swift in Sources */,
 				FFEB34E94BF794DB93C7F83E /* CelestialLagoonPreset.metal in Sources */,
