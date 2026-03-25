@@ -1380,6 +1380,82 @@ final class AudioService: @unchecked Sendable {
         }
     }
 
+    // MARK: - Story 7.1: Tier Upgrade Celebration Sounds
+
+    /// Pro upgrade celebration — warm ascending strings/pads (blue warmth).
+    /// C3+E3+G3 → C4+E4+G4, Glass, Petal, rich chord.
+    func playProCelebration() {
+        guard isEnabled, achievementSoundsEnabled else { return }
+        guard canPlay("proCelebration", cooldown: 2.0) else { return }
+        guard canCelebrate() else { return }
+        // Warm ascending chord: C major voiced across 2 octaves
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.3), (Freq.E3, 0.5), (Freq.G3, 0.4),
+                     (Freq.C4, 1.0), (Freq.E4, 0.7), (Freq.G4, 0.5)],
+            duration: 0.6, volume: achieveVol(0.55),
+            waveform: .glass, envelope: .petal, richness: 0.45)
+        playFromData(chordData)
+        enforceSilence(duration: 0.8)
+    }
+
+    /// Elite upgrade celebration — crystalline bells (purple sophistication).
+    /// E4+G#4+B4+E5, Bell, Petal, high richness.
+    func playEliteCelebration() {
+        guard isEnabled, achievementSoundsEnabled else { return }
+        guard canPlay("eliteCelebration", cooldown: 2.0) else { return }
+        guard canCelebrate() else { return }
+        // Crystalline E major arpeggiated chord
+        let notes: [(Float, TimeInterval)] = [
+            (Freq.E4, 0), (Freq.A4, 0.06), (Freq.C5, 0.12),
+            (Freq.E5, 0.18), (Freq.G5, 0.24),
+        ]
+        for (freq, delay) in notes {
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+                self?.playTone(frequency: freq, duration: 0.35,
+                               volume: self?.achieveVol(0.48) ?? 0.025,
+                               waveform: .bell, envelope: .petal, richness: 0.50)
+            }
+        }
+        enforceSilence(duration: 1.0)
+    }
+
+    /// Royal upgrade celebration — majestic brass/choir hybrid (golden majesty).
+    /// C3+G3+C4+E4+G4+C5+E5, Wood+Bell layered, extended duration.
+    func playRoyalCelebration() {
+        guard isEnabled, achievementSoundsEnabled else { return }
+        guard canPlay("royalCelebration", cooldown: 2.0) else { return }
+        guard canCelebrate() else { return }
+        // Majestic full C major voicing across 3 octaves
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.25), (Freq.G3, 0.35), (Freq.C4, 1.0),
+                     (Freq.E4, 0.7), (Freq.G4, 0.55), (Freq.C5, 0.4),
+                     (Freq.E5, 0.25)],
+            duration: 0.8, volume: achieveVol(0.58),
+            waveform: .wood, envelope: .petal, richness: 0.55)
+        playFromData(chordData)
+        // Follow with bell shimmer
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+            self?.playTone(frequency: Freq.C5, endFrequency: Freq.E5, duration: 0.3,
+                           volume: self?.achieveVol(0.35) ?? 0.02,
+                           waveform: .bell, envelope: .dew, richness: 0.40)
+        }
+        enforceSilence(duration: 1.2)
+    }
+
+    /// Trial start celebration — Royal at 70% intensity.
+    func playTrialCelebration() {
+        guard isEnabled, achievementSoundsEnabled else { return }
+        guard canPlay("trialCelebration", cooldown: 2.0) else { return }
+        guard canCelebrate() else { return }
+        let chordData = generateChordWAVData(
+            notes: [(Freq.C3, 0.18), (Freq.G3, 0.25), (Freq.C4, 0.7),
+                     (Freq.E4, 0.5), (Freq.G4, 0.38), (Freq.C5, 0.28)],
+            duration: 0.6, volume: achieveVol(0.42),
+            waveform: .wood, envelope: .petal, richness: 0.40)
+        playFromData(chordData)
+        enforceSilence(duration: 0.8)
+    }
+
     // MARK: - Wisdom Quotes
 
     /// Quote card appears

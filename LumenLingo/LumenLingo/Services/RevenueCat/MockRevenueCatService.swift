@@ -487,6 +487,15 @@ final class MockRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
         return info
     }
 
+    func syncPurchases() async throws -> RCCustomerInfo {
+        try throwIfOffline()
+        await simulateLatency()
+
+        let info = cachedCustomerInfo ?? .anonymous(userID: currentAppUserID)
+        log(operation: "syncPurchases", result: "success")
+        return info
+    }
+
     func showManageSubscriptions() async throws {
         log(operation: "showManageSubscriptions", result: "ok (no-op in mock)")
     }
@@ -502,6 +511,10 @@ final class MockRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
 
     func collectDeviceIdentifiers() {
         log(operation: "collectDeviceIdentifiers", result: "ok (no-op in mock)")
+    }
+
+    func enableAdServicesAttributionTokenCollection() {
+        log(operation: "enableAdServicesAttributionTokenCollection", result: "ok (no-op in mock)")
     }
 
     // MARK: - Mock Controls (called by QA Panel)

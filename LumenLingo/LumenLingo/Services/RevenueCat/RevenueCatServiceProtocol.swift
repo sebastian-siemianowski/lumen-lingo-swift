@@ -63,6 +63,9 @@ protocol RevenueCatServiceProtocol: Observable, Sendable {
     /// Get the latest customer info from the server (or cache).
     func getCustomerInfo() async throws -> RCCustomerInfo
 
+    /// Force a receipt sync with Apple to re-validate all purchases (Story 6.3).
+    func syncPurchases() async throws -> RCCustomerInfo
+
     /// A stream of customer info updates for reactive observation.
     var customerInfoStream: AsyncStream<RCCustomerInfo> { get }
 
@@ -84,6 +87,9 @@ protocol RevenueCatServiceProtocol: Observable, Sendable {
 
     /// Collect device identifiers for attribution.
     func collectDeviceIdentifiers()
+
+    /// Enable automatic Apple Search Ads attribution token collection via AdServices.
+    func enableAdServicesAttributionTokenCollection()
 
     // MARK: Diagnostics
 

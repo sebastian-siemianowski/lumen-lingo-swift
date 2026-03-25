@@ -391,6 +391,91 @@ final class SubscriptionManager {
         UserDefaults.standard.removeObject(forKey: "welcome_back_last_shown")
     }
 
+    // MARK: - Subscriber Attributes (Story 6.2)
+
+    /// Sync subscriber attributes to RevenueCat for segmentation and analytics.
+    /// Called once per session and when relevant values change.
+    func syncSubscriberAttributes(
+        using service: any RevenueCatServiceProtocol,
+        displayName: String?,
+        email: String?,
+        authProvider: String?,
+        appLanguage: String?,
+        learningLanguage: String?,
+        wordsLearned: Int?,
+        daysActive: Int?,
+        firstOpenDate: Date?,
+        hasConsent: Bool
+    ) {
+        guard hasConsent else {
+            // Clear custom attributes if consent revoked
+            service.setAttributes([
+                "auth_provider": "",
+                "app_language": "",
+                "learning_language": "",
+                "words_learned": "",
+                "days_active": "",
+                "first_open_date": "",
+                "device_model": "",
+                "previous_tier": ""
+            ])
+            return
+        }
+
+        var attrs: [String: String] = [:]
+
+        // Built-in attributes ($-prefixed)
+        if let name = displayName, !name.isEmpty {
+            attrs["$displayName"] = name
+        }
+        if let email = email, !email.isEmpty {
+            attrs["$email"] = email
+        }
+
+        // Custom attributes
+        if let provider = authProvider {
+            attrs["auth_provider"] = provider
+        }
+        if let lang = appLanguage {
+            attrs["app_language"] = lang
+        }
+        if let learning = learningLanguage {
+            attrs["learning_language"] = learning
+        }
+        if let words = wordsLearned {
+            attrs["words_learned"] = String(words)
+        }
+        if let days = daysActive {
+            attrs["days_active"] = String(days)
+        }
+        if let firstOpen = firstOpenDate {
+            let formatter = ISO8601DateFormatter()
+            attrs["first_open_date"] = formatter.string(from: firstOpen)
+        }
+
+        // Device model
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let model = withUnsafePointer(to: &systemInfo.machine) {
+            $0.withMemoryRebound(to: CChar.self, capacity: 1) { String(cString: $0) }
+        }
+        attrs["device_model"] = model
+
+        // Previous tier
+        if let prev = previousTier {
+            attrs["previous_tier"] = prev.rawValue
+        }
+
+        service.setAttributes(attrs)
+        storeLog.info("Synced \(attrs.count) subscriber attributes to RevenueCat")
+    }
+
+    /// Update the previous tier tracking when the tier changes.
+    func trackTierChange(from oldTier: MembershipTier, to newTier: MembershipTier) {
+        guard oldTier != newTier else { return }
+        previousTier = oldTier
+    }
+
     // MARK: - Offline Entitlement Cache (Story 4.2)
 
     /// Timestamp of the last successful RevenueCat customer info sync.

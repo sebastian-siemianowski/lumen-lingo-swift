@@ -441,6 +441,22 @@ extension AppStrings {
         upgradeMessageElite: "你的文字承载着奉献的力量——卓越正成为你的母语。",
         upgradeMessageRoyal: "你用文字为旅程加冕——传奇的语言由你掌控。",
         upgradeMessageTrial: "皇家篇章开启——你语言潜能的完整故事正等待着你。",
+        celebrationWelcomeTo: "欢迎来到",
+        celebrationWelcomeBackTo: "欢迎回到",
+        celebrationContinue: "继续",
+        celebrationFirstSubscription: "感谢您的订阅！",
+
+        // MARK: - Subscription Onboarding (Story 7.3)
+        onboardingExploreTitle: "您的高级功能",
+        onboardingTryIt: "立即体验！",
+        onboardingExplore: "探索",
+        onboardingNext: "下一步",
+        onboardingSkip: "我自己探索",
+        onboardingSummaryTitle: "您刚刚解锁了",
+        onboardingSummaryFeatures: "项新功能",
+        onboardingWelcomeBack: "欢迎回来！这是您的功能",
+        onboardingDone: "开始吧！",
+
         // MARK: - Legal Consent
         legalConsentTitle: "开始之前",
         legalConsentSubtitle: "请查看我们的政策以继续使用 LumenLingo",

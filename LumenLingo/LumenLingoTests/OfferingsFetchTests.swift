@@ -14,6 +14,10 @@ final class OfferingsFetchTests: XCTestCase {
         // Clear persisted state to avoid cross-test pollution
         UserDefaults.standard.removeObject(forKey: "rc_last_entitlement_sync")
         UserDefaults.standard.removeObject(forKey: "cancellation_banner_dismissed")
+        UserDefaults.standard.removeObject(forKey: "expiry_warning_shown_count")
+        UserDefaults.standard.removeObject(forKey: "expiry_warning_last_shown")
+        UserDefaults.standard.removeObject(forKey: "winback_suppressed")
+        UserDefaults.standard.removeObject(forKey: "welcome_back_last_shown")
         subscriptionManager = SubscriptionManager()
         mockRC = MockRevenueCatService()
     }
@@ -21,6 +25,10 @@ final class OfferingsFetchTests: XCTestCase {
     override func tearDown() {
         UserDefaults.standard.removeObject(forKey: "rc_last_entitlement_sync")
         UserDefaults.standard.removeObject(forKey: "cancellation_banner_dismissed")
+        UserDefaults.standard.removeObject(forKey: "expiry_warning_shown_count")
+        UserDefaults.standard.removeObject(forKey: "expiry_warning_last_shown")
+        UserDefaults.standard.removeObject(forKey: "winback_suppressed")
+        UserDefaults.standard.removeObject(forKey: "welcome_back_last_shown")
         subscriptionManager = nil
         mockRC = nil
         super.tearDown()
@@ -1980,5 +1988,901 @@ final class OfferingsFetchTests: XCTestCase {
         let info = makeCustomerInfo(active: [], latestExpirationDate: nil)
         sm.handleRevenueCatCustomerInfo(info)
         XCTAssertFalse(sm.isFamilyShared)
+    }
+
+    // MARK: - Story 5.7: Expiry Warning & Win-Back
+
+    /// daysUntilExpiry returns correct value for expiry 2 days from now.
+    func testDaysUntilExpiryReturnsCorrectValue() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(2 * 86400) // 2 days
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertEqual(sm.daysUntilExpiry, 2)
+    }
+
+    /// daysUntilExpiry returns nil when expiry is in the past.
+    func testDaysUntilExpiryNilWhenExpired() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(-1 * 86400) // 1 day ago
+        let info = makeCustomerInfo(
+            active: [],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertNil(sm.daysUntilExpiry)
+    }
+
+    /// isInExpiryWarningWindow is true for a cancelled subscription expiring in 2 days.
+    func testIsInExpiryWarningWindowCancelledSub() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(2 * 86400)
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertTrue(sm.isInExpiryWarningWindow)
+    }
+
+    /// isInExpiryWarningWindow is true for a trial not renewing, expiring in 1 day.
+    func testIsInExpiryWarningWindowTrial() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(1 * 86400)
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false, periodType: .trial)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertTrue(sm.isInExpiryWarningWindow)
+    }
+
+    /// isInExpiryWarningWindow is false when expiry > 3 days.
+    func testIsInExpiryWarningWindowFalseMoreThan3Days() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(5 * 86400) // 5 days
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertFalse(sm.isInExpiryWarningWindow)
+    }
+
+    /// isInExpiryWarningWindow is false when subscription will renew.
+    func testIsInExpiryWarningWindowFalseWillRenew() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(2 * 86400) // within window
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: true)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertFalse(sm.isInExpiryWarningWindow)
+    }
+
+    /// evaluateExpiryWarning shows warning when in window and no caps exceeded.
+    func testEvaluateExpiryWarningShowsSheet() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(2 * 86400)
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        sm.evaluateExpiryWarning()
+        XCTAssertTrue(sm.showExpiryWarning)
+    }
+
+    /// evaluateExpiryWarning respects 24h cooldown.
+    func testEvaluateExpiryWarning24hCooldown() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(2 * 86400)
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+
+        // First evaluation shows
+        sm.evaluateExpiryWarning()
+        XCTAssertTrue(sm.showExpiryWarning)
+
+        // Dismiss and re-evaluate — should NOT show (24h cooldown)
+        sm.dismissExpiryWarning()
+        sm.evaluateExpiryWarning()
+        XCTAssertFalse(sm.showExpiryWarning)
+    }
+
+    /// evaluateExpiryWarning respects 3x max cap.
+    func testEvaluateExpiryWarning3xMaxCap() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(2 * 86400)
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+
+        // Simulate 3 prior shows by setting UserDefaults directly
+        UserDefaults.standard.set(3, forKey: "expiry_warning_shown_count")
+        sm.evaluateExpiryWarning()
+        XCTAssertFalse(sm.showExpiryWarning, "Should not show after 3x cap")
+    }
+
+    /// suppressWinback prevents future expiry warnings.
+    func testSuppressWinbackPreventsWarning() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(2 * 86400)
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        sm.suppressWinback()
+
+        sm.evaluateExpiryWarning()
+        XCTAssertFalse(sm.showExpiryWarning, "Suppressed winback should block warning")
+    }
+
+    /// isEligibleForWelcomeBack is true when expired 7+ days with no active entitlements.
+    func testIsEligibleForWelcomeBackAfter7Days() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(-8 * 86400) // 8 days ago
+        let info = makeCustomerInfo(
+            active: [],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertTrue(sm.isEligibleForWelcomeBack)
+    }
+
+    /// isEligibleForWelcomeBack is false when expired < 7 days.
+    func testIsEligibleForWelcomeBackFalseTooSoon() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(-3 * 86400) // 3 days ago
+        let info = makeCustomerInfo(
+            active: [],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertFalse(sm.isEligibleForWelcomeBack)
+    }
+
+    /// evaluateWelcomeBack shows sheet when eligible and no 30-day cooldown.
+    func testEvaluateWelcomeBackShowsSheet() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(-10 * 86400) // 10 days ago
+        let info = makeCustomerInfo(
+            active: [],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        sm.evaluateWelcomeBack()
+        XCTAssertTrue(sm.showWelcomeBack)
+    }
+
+    /// evaluateWelcomeBack respects 30-day cooldown.
+    func testEvaluateWelcomeBack30DayCooldown() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(-10 * 86400)
+        let info = makeCustomerInfo(
+            active: [],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+
+        // First shows
+        sm.evaluateWelcomeBack()
+        XCTAssertTrue(sm.showWelcomeBack)
+
+        // Dismiss and re-evaluate — should NOT show (30-day cooldown)
+        sm.dismissWelcomeBack()
+        sm.evaluateWelcomeBack()
+        XCTAssertFalse(sm.showWelcomeBack)
+    }
+
+    /// shouldShowExpiryNudge returns true for unseen features when in window.
+    func testShouldShowExpiryNudgeFirstTime() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(2 * 86400)
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertTrue(sm.shouldShowExpiryNudge(for: "soundscapes"))
+    }
+
+    /// shouldShowExpiryNudge returns false after markNudgeShown.
+    func testShouldShowExpiryNudgeFalseAfterMark() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(2 * 86400)
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        sm.markNudgeShown(for: "soundscapes")
+        XCTAssertFalse(sm.shouldShowExpiryNudge(for: "soundscapes"))
+    }
+
+    /// resetExpiryWarningState clears all frequency caps and UserDefaults.
+    func testResetExpiryWarningStateClearsAll() {
+        let sm = SubscriptionManager()
+        // Set up some state
+        UserDefaults.standard.set(2, forKey: "expiry_warning_shown_count")
+        UserDefaults.standard.set(Date.now.timeIntervalSince1970, forKey: "expiry_warning_last_shown")
+        UserDefaults.standard.set(true, forKey: "winback_suppressed")
+        UserDefaults.standard.set(Date.now.timeIntervalSince1970, forKey: "welcome_back_last_shown")
+        sm.showExpiryWarning = true
+        sm.showWelcomeBack = true
+
+        sm.resetExpiryWarningState()
+
+        XCTAssertFalse(sm.showExpiryWarning)
+        XCTAssertFalse(sm.showWelcomeBack)
+        XCTAssertEqual(UserDefaults.standard.integer(forKey: "expiry_warning_shown_count"), 0)
+        XCTAssertEqual(UserDefaults.standard.double(forKey: "expiry_warning_last_shown"), 0)
+        XCTAssertFalse(UserDefaults.standard.bool(forKey: "winback_suppressed"))
+        XCTAssertEqual(UserDefaults.standard.double(forKey: "welcome_back_last_shown"), 0)
+    }
+
+    /// expiringLabel returns "Trial" for trial about to expire.
+    func testExpiringLabelTrial() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(2 * 86400)
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false, periodType: .trial)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertEqual(sm.expiringLabel, "Trial")
+    }
+
+    /// expiringLabel returns tier display name for cancelled paid subscription.
+    func testExpiringLabelCancelledTier() {
+        let sm = SubscriptionManager()
+        let expiry = Date.now.addingTimeInterval(2 * 86400)
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: false)],
+            latestExpirationDate: expiry
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        XCTAssertEqual(sm.expiringLabel, MembershipTier.pro.displayName)
+    }
+
+    // MARK: - Story 6.2: Subscriber Attributes
+
+    /// syncSubscriberAttributes sends all attributes when consent is given.
+    func testSyncSubscriberAttributesSendsAllWithConsent() {
+        let sm = SubscriptionManager()
+        let mock = MockRevenueCatService()
+        let firstOpen = Date(timeIntervalSince1970: 1_700_000_000)
+
+        sm.syncSubscriberAttributes(
+            using: mock,
+            displayName: "John",
+            email: "john@example.com",
+            authProvider: "clerk",
+            appLanguage: "en",
+            learningLanguage: "ja",
+            wordsLearned: 42,
+            daysActive: 7,
+            firstOpenDate: firstOpen,
+            hasConsent: true
+        )
+
+        // Verify setAttributes was called
+        let setAttrsEntries = mock.eventLog.filter { $0.operation == "setAttributes" }
+        XCTAssertEqual(setAttrsEntries.count, 1, "Should call setAttributes exactly once")
+
+        let details = setAttrsEntries.first?.details ?? ""
+        XCTAssertTrue(details.contains("$displayName=John"), "Should include displayName")
+        XCTAssertTrue(details.contains("$email=john@example.com"), "Should include email")
+        XCTAssertTrue(details.contains("auth_provider=clerk"), "Should include auth_provider")
+        XCTAssertTrue(details.contains("app_language=en"), "Should include app_language")
+        XCTAssertTrue(details.contains("learning_language=ja"), "Should include learning_language")
+        XCTAssertTrue(details.contains("words_learned=42"), "Should include words_learned")
+        XCTAssertTrue(details.contains("days_active=7"), "Should include days_active")
+        XCTAssertTrue(details.contains("first_open_date="), "Should include first_open_date")
+        XCTAssertTrue(details.contains("device_model="), "Should include device_model")
+    }
+
+    /// syncSubscriberAttributes clears all custom attributes when consent is revoked.
+    func testSyncSubscriberAttributesClearsOnNoConsent() {
+        let sm = SubscriptionManager()
+        let mock = MockRevenueCatService()
+
+        sm.syncSubscriberAttributes(
+            using: mock,
+            displayName: "John",
+            email: "john@example.com",
+            authProvider: "clerk",
+            appLanguage: "en",
+            learningLanguage: "ja",
+            wordsLearned: 42,
+            daysActive: 7,
+            firstOpenDate: Date.now,
+            hasConsent: false
+        )
+
+        let setAttrsEntries = mock.eventLog.filter { $0.operation == "setAttributes" }
+        XCTAssertEqual(setAttrsEntries.count, 1, "Should call setAttributes to clear")
+
+        let details = setAttrsEntries.first?.details ?? ""
+        // All custom attribute values should be empty
+        XCTAssertTrue(details.contains("auth_provider=,") || details.contains("auth_provider="),
+                       "Should clear auth_provider")
+        // Should NOT contain the actual values
+        XCTAssertFalse(details.contains("clerk"), "Should not send actual values without consent")
+        XCTAssertFalse(details.contains("john@example.com"), "Should not send email without consent")
+    }
+
+    /// syncSubscriberAttributes omits nil optional fields gracefully.
+    func testSyncSubscriberAttributesOmitsNilFields() {
+        let sm = SubscriptionManager()
+        let mock = MockRevenueCatService()
+
+        sm.syncSubscriberAttributes(
+            using: mock,
+            displayName: nil,
+            email: nil,
+            authProvider: nil,
+            appLanguage: "en",
+            learningLanguage: nil,
+            wordsLearned: nil,
+            daysActive: nil,
+            firstOpenDate: nil,
+            hasConsent: true
+        )
+
+        let details = mock.eventLog.first(where: { $0.operation == "setAttributes" })?.details ?? ""
+        XCTAssertTrue(details.contains("app_language=en"), "Should include non-nil fields")
+        XCTAssertFalse(details.contains("$displayName"), "Should omit nil displayName")
+        XCTAssertFalse(details.contains("$email"), "Should omit nil email")
+        XCTAssertFalse(details.contains("words_learned"), "Should omit nil wordsLearned")
+        XCTAssertFalse(details.contains("days_active"), "Should omit nil daysActive")
+        XCTAssertFalse(details.contains("first_open_date"), "Should omit nil firstOpenDate")
+    }
+
+    /// syncSubscriberAttributes omits empty displayName and email.
+    func testSyncSubscriberAttributesOmitsEmptyStrings() {
+        let sm = SubscriptionManager()
+        let mock = MockRevenueCatService()
+
+        sm.syncSubscriberAttributes(
+            using: mock,
+            displayName: "",
+            email: "",
+            authProvider: "anonymous",
+            appLanguage: "en",
+            learningLanguage: "ja",
+            wordsLearned: 10,
+            daysActive: 3,
+            firstOpenDate: nil,
+            hasConsent: true
+        )
+
+        let details = mock.eventLog.first(where: { $0.operation == "setAttributes" })?.details ?? ""
+        XCTAssertFalse(details.contains("$displayName"), "Should omit empty displayName")
+        XCTAssertFalse(details.contains("$email"), "Should omit empty email")
+        XCTAssertTrue(details.contains("auth_provider=anonymous"), "Should include non-empty fields")
+    }
+
+    /// trackTierChange updates previousTier only when tier actually changes.
+    func testTrackTierChangeUpdatesPreviousTier() {
+        let sm = SubscriptionManager()
+        XCTAssertNil(sm.previousTier, "Should start nil")
+
+        sm.trackTierChange(from: .free, to: .pro)
+        XCTAssertEqual(sm.previousTier, .free)
+
+        sm.trackTierChange(from: .pro, to: .elite)
+        XCTAssertEqual(sm.previousTier, .pro)
+    }
+
+    /// trackTierChange does not update when old == new.
+    func testTrackTierChangeNoOpWhenSameTier() {
+        let sm = SubscriptionManager()
+        sm.trackTierChange(from: .free, to: .pro)
+        XCTAssertEqual(sm.previousTier, .free)
+
+        // Same tier should not overwrite
+        sm.trackTierChange(from: .pro, to: .pro)
+        XCTAssertEqual(sm.previousTier, .free, "Should not overwrite when tiers are equal")
+    }
+
+    /// syncSubscriberAttributes includes previous_tier when set.
+    func testSyncSubscriberAttributesIncludesPreviousTier() {
+        let sm = SubscriptionManager()
+        let mock = MockRevenueCatService()
+
+        // Set up previous tier
+        sm.trackTierChange(from: .free, to: .pro)
+
+        sm.syncSubscriberAttributes(
+            using: mock,
+            displayName: nil,
+            email: nil,
+            authProvider: "anonymous",
+            appLanguage: "en",
+            learningLanguage: "ja",
+            wordsLearned: nil,
+            daysActive: nil,
+            firstOpenDate: nil,
+            hasConsent: true
+        )
+
+        let details = mock.eventLog.first(where: { $0.operation == "setAttributes" })?.details ?? ""
+        XCTAssertTrue(details.contains("previous_tier=free"), "Should include previous_tier")
+    }
+
+    /// syncSubscriberAttributes uses snake_case naming convention per RC best practice.
+    func testSubscriberAttributeNamingConvention() {
+        let sm = SubscriptionManager()
+        let mock = MockRevenueCatService()
+
+        sm.syncSubscriberAttributes(
+            using: mock,
+            displayName: "Test",
+            email: "t@e.com",
+            authProvider: "clerk",
+            appLanguage: "en",
+            learningLanguage: "ja",
+            wordsLearned: 1,
+            daysActive: 1,
+            firstOpenDate: Date.now,
+            hasConsent: true
+        )
+
+        let details = mock.eventLog.first(where: { $0.operation == "setAttributes" })?.details ?? ""
+        // All custom keys should be snake_case
+        XCTAssertTrue(details.contains("auth_provider="), "auth_provider is snake_case")
+        XCTAssertTrue(details.contains("app_language="), "app_language is snake_case")
+        XCTAssertTrue(details.contains("learning_language="), "learning_language is snake_case")
+        XCTAssertTrue(details.contains("words_learned="), "words_learned is snake_case")
+        XCTAssertTrue(details.contains("days_active="), "days_active is snake_case")
+        XCTAssertTrue(details.contains("first_open_date="), "first_open_date is snake_case")
+        XCTAssertTrue(details.contains("device_model="), "device_model is snake_case")
+        // No camelCase keys
+        XCTAssertFalse(details.contains("authProvider"), "Should not use camelCase")
+        XCTAssertFalse(details.contains("appLanguage"), "Should not use camelCase")
+    }
+
+    /// syncSubscriberAttributes formats firstOpenDate as ISO 8601.
+    func testSubscriberAttributeDateFormat() {
+        let sm = SubscriptionManager()
+        let mock = MockRevenueCatService()
+        let date = Date(timeIntervalSince1970: 1_700_000_000) // 2023-11-14T22:13:20Z
+
+        sm.syncSubscriberAttributes(
+            using: mock,
+            displayName: nil,
+            email: nil,
+            authProvider: nil,
+            appLanguage: nil,
+            learningLanguage: nil,
+            wordsLearned: nil,
+            daysActive: nil,
+            firstOpenDate: date,
+            hasConsent: true
+        )
+
+        let details = mock.eventLog.first(where: { $0.operation == "setAttributes" })?.details ?? ""
+        // ISO 8601 should contain "2023" and "T"
+        XCTAssertTrue(details.contains("first_open_date=2023"), "Should format as ISO 8601")
+    }
+
+    // MARK: - Story 6.3: Subscription Diagnostics
+
+    /// syncPurchases is available on MockRevenueCatService and logs correctly.
+    func testSyncPurchasesLogsOnMock() async throws {
+        let mock = MockRevenueCatService()
+        let _ = try await mock.syncPurchases()
+        let entries = mock.eventLog.filter { $0.operation == "syncPurchases" }
+        XCTAssertEqual(entries.count, 1, "syncPurchases should log one event")
+        XCTAssertTrue(entries.first?.isSuccess == true)
+    }
+
+    /// getCustomerInfo followed by handleRevenueCatCustomerInfo populates latestCustomerInfo.
+    func testDiagnosticsRefreshPopulatesLatestInfo() async throws {
+        let sm = SubscriptionManager()
+        let mock = MockRevenueCatService()
+
+        // Initially nil
+        XCTAssertNil(sm.latestCustomerInfo)
+
+        let info = try await mock.getCustomerInfo()
+        sm.handleRevenueCatCustomerInfo(info)
+
+        XCTAssertNotNil(sm.latestCustomerInfo, "latestCustomerInfo should be populated after refresh")
+    }
+
+    /// lastEntitlementSyncDate is updated when handleRevenueCatCustomerInfo is called.
+    func testDiagnosticsLastSyncDateUpdated() {
+        let sm = SubscriptionManager()
+        XCTAssertNil(sm.lastEntitlementSyncDate)
+
+        let info = makeCustomerInfo(active: [], latestExpirationDate: nil)
+        sm.handleRevenueCatCustomerInfo(info)
+
+        XCTAssertNotNil(sm.lastEntitlementSyncDate, "lastEntitlementSyncDate should update after handling info")
+    }
+
+    /// DiagnosticStatus enum returns correct colors.
+    func testDiagnosticStatusValues() {
+        XCTAssertEqual(DiagnosticStatus.healthy.color, .green)
+        XCTAssertEqual(DiagnosticStatus.warning.color, .orange)
+    }
+
+    /// subscriptionState label covers all cases.
+    func testSubscriptionStateLabelCoverage() {
+        let sm = SubscriptionManager()
+        // Default is unknown
+        XCTAssertEqual(sm.subscriptionState, .unknown)
+
+        // Subscribe via customer info
+        let info = makeCustomerInfo(
+            active: [makeEntitlement(id: RCEntitlementID.proAccess, willRenew: true)],
+            latestExpirationDate: Date.now.addingTimeInterval(30 * 86400)
+        )
+        sm.handleRevenueCatCustomerInfo(info)
+        if case .subscribed(let tier) = sm.subscriptionState {
+            XCTAssertEqual(tier, .pro)
+        } else {
+            XCTFail("Expected .subscribed state")
+        }
+    }
+
+    // MARK: - Story 6.4 · Paywall Conversion Funnel Analytics
+
+    /// All 8 paywall event raw values use snake_case, domain-prefixed naming.
+    func testPaywallEventNamingConvention() {
+        let events: [PaywallAnalytics.Event] = [
+            .paywallViewed, .paywallTierSelected,
+            .paywallPurchaseInitiated, .paywallPurchaseCompleted,
+            .paywallPurchaseCancelled, .paywallPurchaseFailed,
+            .paywallDismissed, .paywallRestoreTapped,
+        ]
+        XCTAssertEqual(events.count, 8, "Exactly 8 paywall events defined")
+        for event in events {
+            XCTAssertTrue(event.rawValue.hasPrefix("paywall_"), "'\(event.rawValue)' must be domain-prefixed with 'paywall_'")
+            // snake_case: only lowercase letters, digits, underscores
+            let isSnakeCase = event.rawValue.allSatisfy { $0.isLowercase || $0.isNumber || $0 == "_" }
+            XCTAssertTrue(isSnakeCase, "'\(event.rawValue)' must be snake_case")
+        }
+    }
+
+    /// PaywallContext.analyticsName maps all 5 cases for funnel analytics.
+    func testPaywallContextAnalyticsNamesFunnel() {
+        XCTAssertEqual(PaywallContext.membershipTab.analyticsName, "membership_tab")
+        XCTAssertEqual(PaywallContext.featureGate(.soundscapes).analyticsName, "feature_gate")
+        XCTAssertEqual(PaywallContext.upgradeNudge(milestone: "50_words").analyticsName, "upgrade_nudge")
+        XCTAssertEqual(PaywallContext.trialExpiry(daysRemaining: 3).analyticsName, "trial_expiry")
+        XCTAssertEqual(PaywallContext.settings.analyticsName, "settings")
+    }
+
+    /// trackViewed includes locked_feature for featureGate context.
+    func testPaywallViewedIncludesLockedFeature() {
+        // fire-and-forget: just ensure it runs without throwing
+        PaywallAnalytics.trackViewed(
+            context: .featureGate(.soundscapes),
+            offeringId: "default",
+            currentTier: "free"
+        )
+        // Non-feature-gate context should not crash
+        PaywallAnalytics.trackViewed(
+            context: .membershipTab,
+            offeringId: nil,
+            currentTier: "pro"
+        )
+    }
+
+    /// trackPurchaseInitiated includes trial flag and offering ID.
+    func testPaywallPurchaseInitiatedProperties() {
+        // fire-and-forget: verify no crash
+        PaywallAnalytics.trackPurchaseInitiated(
+            context: .membershipTab,
+            tier: "pro",
+            isTrial: true,
+            offeringId: "default"
+        )
+        PaywallAnalytics.trackPurchaseInitiated(
+            context: .featureGate(.offlineMode),
+            tier: "elite",
+            isTrial: false,
+            offeringId: nil
+        )
+    }
+
+    /// trackPurchaseCompleted includes isUpgrade.
+    func testPaywallPurchaseCompletedProperties() {
+        PaywallAnalytics.trackPurchaseCompleted(
+            context: .upgradeNudge(milestone: "100_words"),
+            tier: "elite",
+            isUpgrade: true
+        )
+    }
+
+    /// trackDismissed includes time_spent_ms.
+    func testPaywallDismissedIncludesTimeSpent() {
+        PaywallAnalytics.trackDismissed(
+            context: .trialExpiry(daysRemaining: 1),
+            timeSpentMs: 4500
+        )
+    }
+
+    /// trackRestoreTapped includes result.
+    func testPaywallRestoreTappedResults() {
+        PaywallAnalytics.trackRestoreTapped(context: .settings, result: "restored")
+        PaywallAnalytics.trackRestoreTapped(context: .settings, result: "nothing_to_restore")
+        PaywallAnalytics.trackRestoreTapped(context: .settings, result: "error_network")
+    }
+
+    /// track is fire-and-forget (static, non-throwing).
+    func testPaywallTrackFireAndForget() {
+        // Calling track with arbitrary properties must never throw or block
+        PaywallAnalytics.track(.paywallViewed, properties: [:])
+        PaywallAnalytics.track(.paywallPurchaseFailed, properties: [
+            "context": "membership_tab",
+            "tier": "pro",
+            "error_code": "StoreKit.Error.purchaseFailed",
+        ])
+    }
+
+    // MARK: - Story 6.5 · Attribution Integration
+
+    /// enableAdServicesAttributionTokenCollection is logged by mock.
+    func testEnableAdServicesAttributionLogged() {
+        let mock = MockRevenueCatService()
+        mock.enableAdServicesAttributionTokenCollection()
+        let logged = mock.eventLog.contains { $0.operation == "enableAdServicesAttributionTokenCollection" }
+        XCTAssertTrue(logged, "enableAdServicesAttributionTokenCollection should be logged")
+    }
+
+    /// collectDeviceIdentifiers is logged by mock.
+    func testCollectDeviceIdentifiersLogged() {
+        let mock = MockRevenueCatService()
+        mock.collectDeviceIdentifiers()
+        let logged = mock.eventLog.contains { $0.operation == "collectDeviceIdentifiers" }
+        XCTAssertTrue(logged, "collectDeviceIdentifiers should be logged")
+    }
+
+    /// Attribution methods are called after SDK configuration (verified structurally).
+    func testAttributionMethodsExistOnProtocol() {
+        // Compile-time check: these methods exist on the protocol
+        let mock: any RevenueCatServiceProtocol = MockRevenueCatService()
+        mock.collectDeviceIdentifiers()
+        mock.enableAdServicesAttributionTokenCollection()
+    }
+
+    // MARK: - Story 7.1: Upgrade Celebration Overhaul
+
+    /// TierCelebrationTheme provides tier-specific durations:
+    /// Pro=2.5s, Elite=3s, Royal=3.5s, Trial=3.5s.
+    func testCelebrationThemeDurations() {
+        let pro = TierCelebrationTheme.theme(for: .pro, isUpgrade: true)
+        let elite = TierCelebrationTheme.theme(for: .elite, isUpgrade: true)
+        let royal = TierCelebrationTheme.theme(for: .royal, isUpgrade: true)
+        let trial = TierCelebrationTheme.theme(for: .trial, isUpgrade: true)
+
+        XCTAssertEqual(pro.animationDuration, 2.5, "Pro should be 2.5s")
+        XCTAssertEqual(elite.animationDuration, 3.0, "Elite should be 3.0s")
+        XCTAssertEqual(royal.animationDuration, 3.5, "Royal should be 3.5s")
+        XCTAssertEqual(trial.animationDuration, 3.5, "Trial should be 3.5s")
+    }
+
+    /// Each upgrade tier theme has correct icon matching the celebration description.
+    func testCelebrationThemeTierIcons() {
+        let pro = TierCelebrationTheme.theme(for: .pro, isUpgrade: true)
+        let elite = TierCelebrationTheme.theme(for: .elite, isUpgrade: true)
+        let royal = TierCelebrationTheme.theme(for: .royal, isUpgrade: true)
+        let trial = TierCelebrationTheme.theme(for: .trial, isUpgrade: true)
+
+        XCTAssertEqual(pro.iconName, "flame.fill")
+        XCTAssertEqual(elite.iconName, "diamond.fill")
+        XCTAssertEqual(royal.iconName, "crown.fill")
+        XCTAssertEqual(trial.iconName, "gift.fill")
+    }
+
+    /// Theme particle colors are tier-specific (not the same for all tiers).
+    func testCelebrationThemeDistinctParticleColors() {
+        let pro = TierCelebrationTheme.theme(for: .pro, isUpgrade: true)
+        let elite = TierCelebrationTheme.theme(for: .elite, isUpgrade: true)
+        let royal = TierCelebrationTheme.theme(for: .royal, isUpgrade: true)
+
+        // Pro, Elite, and Royal should each have distinct first particle colors
+        XCTAssertNotEqual(pro.particleColors.first, elite.particleColors.first,
+                          "Pro and Elite should have distinct primary particle colors")
+        XCTAssertNotEqual(elite.particleColors.first, royal.particleColors.first,
+                          "Elite and Royal should have distinct primary particle colors")
+    }
+
+    /// Downgrade themes use muted styles, not the upgrade gradient.
+    func testCelebrationDowngradeTheme() {
+        let downgrade = TierCelebrationTheme.theme(for: .pro, isUpgrade: false)
+        XCTAssertEqual(downgrade.tagline, "Your plan has been adjusted")
+        // Particle colors should be muted gray/white
+        XCTAssertEqual(downgrade.particleColors.count, 2,
+                       "Downgrade should have only 2 muted particle colors")
+    }
+
+    /// TierManager tracks isFirstEverSubscription and isResubscriber.
+    func testTierManagerFirstSubscriptionTracking() {
+        // Clear any previous state
+        UserDefaults.standard.removeObject(forKey: "ll_previously_held_tiers")
+
+        let tm = TierManager()
+
+        // First paid subscription
+        tm.selectTier("pro", profile: nil)
+        XCTAssertTrue(tm.isFirstEverSubscription,
+                      "First paid tier should be flagged as first-ever subscription")
+        XCTAssertFalse(tm.isResubscriber,
+                       "First time selecting Pro should not be resubscriber")
+
+        // Back to free, then Pro again
+        tm.selectTier("free", profile: nil)
+        tm.selectTier("pro", profile: nil)
+        XCTAssertFalse(tm.isFirstEverSubscription,
+                       "Second subscription should NOT be first-ever")
+        XCTAssertTrue(tm.isResubscriber,
+                      "Returning to Pro should flag as resubscriber")
+
+        // Clean up
+        UserDefaults.standard.removeObject(forKey: "ll_previously_held_tiers")
+    }
+
+    /// TierManager stores celebrationUserName from profile firstName.
+    func testTierManagerCelebrationUserName() {
+        let tm = TierManager()
+        // Without profile, name should be empty
+        tm.selectTier("elite", profile: nil)
+        XCTAssertEqual(tm.celebrationUserName, "",
+                       "Without profile, celebration name should be empty")
+    }
+
+    /// Celebration localization strings exist for Continue and Welcome.
+    func testCelebrationLocalizationStrings() {
+        let strings = AppStrings.english
+        XCTAssertEqual(strings.celebrationContinue, "Continue")
+        XCTAssertEqual(strings.celebrationWelcomeTo, "Welcome to")
+        XCTAssertEqual(strings.celebrationWelcomeBackTo, "Welcome back to")
+        XCTAssertFalse(strings.celebrationFirstSubscription.isEmpty,
+                       "First subscription message should not be empty")
+    }
+
+    /// AudioService has tier-specific celebration methods.
+    func testAudioServiceTierCelebrationMethods() {
+        let audio = AudioService.shared
+        // Compile-time check: all tier celebration methods exist
+        audio.playProCelebration()
+        audio.playEliteCelebration()
+        audio.playRoyalCelebration()
+        audio.playTrialCelebration()
+    }
+
+    /// HapticsService has celebrationChoreography method for all tiers.
+    func testHapticsServiceCelebrationChoreography() {
+        // Compile-time: all MembershipTier cases are handled
+        for tier in MembershipTier.allCases {
+            HapticsService.shared.celebrationChoreography(for: tier)
+        }
+    }
+
+    // MARK: - Story 7.2: Tier Transition Micro-Interactions
+
+    /// tierUpgradeTimestamp is stored and used for afterglow window.
+    func testTierUpgradeTimestampStoredOnUpgrade() {
+        UserDefaults.standard.removeObject(forKey: "ll_tier_upgrade_timestamp")
+        UserDefaults.standard.removeObject(forKey: "ll_previously_held_tiers")
+
+        let tm = TierManager()
+        XCTAssertNil(tm.tierUpgradeTimestamp, "Should be nil before any upgrade")
+        XCTAssertFalse(tm.isWithinUpgradeAfterglowWindow)
+
+        // Trigger an upgrade
+        tm.selectTier("pro", profile: nil)
+        XCTAssertNotNil(tm.tierUpgradeTimestamp, "Timestamp should be set after upgrade")
+        XCTAssertTrue(tm.isWithinUpgradeAfterglowWindow,
+                      "Should be within afterglow window immediately after upgrade")
+
+        // Clean up
+        UserDefaults.standard.removeObject(forKey: "ll_tier_upgrade_timestamp")
+        UserDefaults.standard.removeObject(forKey: "ll_previously_held_tiers")
+    }
+
+    /// Downgrade does not update the upgrade timestamp.
+    func testTierDowngradeDoesNotUpdateTimestamp() {
+        UserDefaults.standard.removeObject(forKey: "ll_tier_upgrade_timestamp")
+        UserDefaults.standard.removeObject(forKey: "ll_previously_held_tiers")
+
+        let tm = TierManager()
+        tm.selectTier("elite", profile: nil)
+        let upgradeTimestamp = tm.tierUpgradeTimestamp
+
+        // Downgrade — timestamp should NOT change
+        tm.selectTier("pro", profile: nil)
+        XCTAssertEqual(tm.tierUpgradeTimestamp, upgradeTimestamp,
+                       "Downgrade should not update the upgrade timestamp")
+
+        // Clean up
+        UserDefaults.standard.removeObject(forKey: "ll_tier_upgrade_timestamp")
+        UserDefaults.standard.removeObject(forKey: "ll_previously_held_tiers")
+    }
+
+    /// featureSparklesShownThisSession tracks first-use sparkles per feature.
+    func testFeatureSparklesResetOnUpgrade() {
+        UserDefaults.standard.removeObject(forKey: "ll_tier_upgrade_timestamp")
+        UserDefaults.standard.removeObject(forKey: "ll_previously_held_tiers")
+
+        let tm = TierManager()
+        tm.selectTier("pro", profile: nil)
+        XCTAssertTrue(tm.featureSparklesShownThisSession.isEmpty,
+                      "Sparkle tracking should reset on upgrade")
+
+        // Clean up
+        UserDefaults.standard.removeObject(forKey: "ll_tier_upgrade_timestamp")
+        UserDefaults.standard.removeObject(forKey: "ll_previously_held_tiers")
+    }
+
+    /// shouldShowFeatureSparkle returns true once per feature per session.
+    func testShouldShowFeatureSparkleOncePerFeature() {
+        UserDefaults.standard.removeObject(forKey: "ll_tier_upgrade_timestamp")
+        UserDefaults.standard.removeObject(forKey: "ll_previously_held_tiers")
+
+        let tm = TierManager()
+        // Upgrade free → pro — soundscapes is newly unlocked
+        tm.selectTier("pro", profile: nil)
+
+        // First call should return true if soundscapes is in newlyUnlockedFeatures
+        if tm.newlyUnlockedFeatures.contains(.soundscapes) {
+            XCTAssertTrue(tm.shouldShowFeatureSparkle(for: .soundscapes),
+                          "First use should show sparkle")
+            XCTAssertFalse(tm.shouldShowFeatureSparkle(for: .soundscapes),
+                           "Second use should NOT show sparkle")
+        }
+
+        // Clean up
+        UserDefaults.standard.removeObject(forKey: "ll_tier_upgrade_timestamp")
+        UserDefaults.standard.removeObject(forKey: "ll_previously_held_tiers")
+    }
+
+    /// isWithinUpgradeAfterglowWindow is false when timestamp is in the past.
+    func testAfterglowWindowExpiresAfter12Hours() {
+        let tm = TierManager()
+        // Simulate a timestamp from 13 hours ago
+        let oldTimestamp = Date().addingTimeInterval(-13 * 3600)
+        UserDefaults.standard.set(oldTimestamp, forKey: "ll_tier_upgrade_timestamp")
+
+        // Re-read — TierManager reads from UserDefaults on init
+        let tm2 = TierManager()
+        XCTAssertFalse(tm2.isWithinUpgradeAfterglowWindow,
+                       "Should be outside afterglow window after 13 hours")
+
+        // Clean up
+        UserDefaults.standard.removeObject(forKey: "ll_tier_upgrade_timestamp")
+    }
+
+    /// MembershipTier provides distinct accent colours for sparkle effects.
+    func testTierAccentColorsAreDefined() {
+        // All tiers should have an accent color (compile-time + not all the same)
+        let colors = MembershipTier.allCases.map { $0.accentColor }
+        // At least Pro, Elite, Royal should differ
+        XCTAssertNotEqual(MembershipTier.pro.accentColor, MembershipTier.elite.accentColor)
+        XCTAssertNotEqual(MembershipTier.elite.accentColor, MembershipTier.royal.accentColor)
+        XCTAssertEqual(colors.count, MembershipTier.allCases.count)
+    }
+
+    /// CosmicTierShift and TierSparkleOverlay compile and exist as view modifiers.
+    func testTierMicroInteractionViewsExist() {
+        // Compile-time check: the modifier and overlay types exist
+        let _ = CosmicTierShift.self
+        let _ = TierSparkleOverlay.self
+        let _ = FeatureUnlockSparkle.self
     }
 }

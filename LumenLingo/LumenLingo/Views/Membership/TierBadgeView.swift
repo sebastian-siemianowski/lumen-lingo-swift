@@ -30,6 +30,11 @@ struct TierBadgeView: View {
     @State private var shimmerLoop: CGFloat = -0.3
     @State private var glowIntensity: CGFloat = 0.3
     @State private var countdownRingProgress: CGFloat = 0
+    // Story 7.2: Badge bloom glow after upgrade
+    @State private var bloomGlowOpacity: CGFloat = 0
+    @State private var bloomGlowScale: CGFloat = 0.8
+    // Story 7.2: Micro-bounce during afterglow window
+    @State private var microBounceScale: CGFloat = 1.0
 
     private var isDark: Bool { colorScheme == .dark }
     private var tier: MembershipTier { tierManager.currentTier }
@@ -98,11 +103,23 @@ struct TierBadgeView: View {
                     .offset(x: prominent ? 18 : 14, y: prominent ? -12 : -10)
             }
         }
+        .scaleEffect(microBounceScale)
         .scaleEffect(isPressed ? 0.92 : 1.0)
         .scaleEffect(appeared ? 1.0 : 0.6)
         .opacity(appeared ? 1.0 : 0)
+        .overlay {
+            // Story 7.2: Bloom glow ring on first appearance after upgrade
+            if bloomGlowOpacity > 0 {
+                RoundedRectangle(cornerRadius: prominent ? 14 : 10)
+                    .stroke(tier.accentColor, lineWidth: 2)
+                    .scaleEffect(bloomGlowScale)
+                    .opacity(bloomGlowOpacity)
+                    .allowsHitTesting(false)
+            }
+        }
         .animation(.spring(response: 0.4, dampingFraction: 0.65), value: appeared)
         .animation(.spring(response: 0.2, dampingFraction: 0.6), value: isPressed)
+        .animation(.spring(response: 0.15, dampingFraction: 0.6), value: microBounceScale)
         .onAppear(perform: handleAppear)
         .onLongPressGesture(minimumDuration: .infinity, pressing: { pressing in
             isPressed = pressing
@@ -308,6 +325,38 @@ struct TierBadgeView: View {
 
         guard !reduceMotion else { return }
         startAmbientAnimations()
+
+        // Story 7.2: Afterglow micro-interactions
+        if tierManager.isWithinUpgradeAfterglowWindow {
+            triggerBloomGlow()
+            triggerMicroBounce()
+        }
+    }
+
+    // MARK: - Story 7.2: Afterglow Animations
+
+    /// Bloom glow ring on first appearance after upgrade.
+    private func triggerBloomGlow() {
+        withAnimation(.easeOut(duration: 0.4)) {
+            bloomGlowOpacity = 0.8
+            bloomGlowScale = 1.3
+        }
+        withAnimation(.easeOut(duration: 0.6).delay(0.4)) {
+            bloomGlowOpacity = 0
+            bloomGlowScale = 1.6
+        }
+    }
+
+    /// Micro-bounce: scale 1.0 → 1.08 → 1.0 over 300ms each time badge becomes visible.
+    private func triggerMicroBounce() {
+        withAnimation(.spring(response: 0.15, dampingFraction: 0.5)) {
+            microBounceScale = 1.08
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+            withAnimation(.spring(response: 0.15, dampingFraction: 0.7)) {
+                microBounceScale = 1.0
+            }
+        }
     }
 
     private func startAmbientAnimations() {

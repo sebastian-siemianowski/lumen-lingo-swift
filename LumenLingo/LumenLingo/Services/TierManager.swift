@@ -67,8 +67,32 @@ final class TierManager {
     var upgradedToTier: MembershipTier = .free
     var isTierUpgrade: Bool = true
 
+    /// Story 7.1: Whether this is a resubscription (user has previously held this tier).
+    private(set) var isResubscriber: Bool = false
+
+    /// Story 7.1: Whether this is the user's first-ever paid subscription.
+    private(set) var isFirstEverSubscription: Bool = false
+
+    /// Story 7.1: User's first name for first-ever subscription celebration.
+    private(set) var celebrationUserName: String = ""
+
+    /// Story 7.2: Timestamp of the most recent tier upgrade, for 12-hour afterglow micro-interactions.
+    private(set) var tierUpgradeTimestamp: Date? = UserDefaults.standard.object(forKey: "ll_tier_upgrade_timestamp") as? Date
+
+    /// Story 7.2: Whether the user is within the 12-hour afterglow window after an upgrade.
+    var isWithinUpgradeAfterglowWindow: Bool {
+        guard let ts = tierUpgradeTimestamp else { return false }
+        return Date().timeIntervalSince(ts) < 12 * 3600
+    }
+
+    /// Story 7.2: Tracks which features have shown their first-use sparkle this session.
+    private(set) var featureSparklesShownThisSession: Set<String> = []
+
     /// Controls the feature transition overlay (unlock ripple / lock dimming).
     var showFeatureTransition: Bool = false
+
+    /// Story 7.3: Controls the subscription onboarding carousel after upgrade.
+    var showSubscriptionOnboarding: Bool = false
 
     /// Features that changed access state during the last tier transition.
     /// Positive = newly unlocked, reported on upgrade.
@@ -85,6 +109,49 @@ final class TierManager {
     }
 
     // MARK: - Feature Gating
+
+    /// Story 7.3: Whether onboarding has been completed for a given tier.
+    func isOnboardingCompleted(for tier: MembershipTier) -> Bool {
+        UserDefaults.standard.bool(forKey: "\(tier.rawValue)_onboarding_completed")
+    }
+
+    /// Story 7.3: Marks onboarding as completed for the given tier.
+    func markOnboardingCompleted(for tier: MembershipTier) {
+        UserDefaults.standard.set(true, forKey: "\(tier.rawValue)_onboarding_completed")
+    }
+
+    /// Story 7.3: Should the onboarding flow be shown after this upgrade?
+    /// Only for first upgrade to a tier (not restore, not resubscribe).
+    func shouldShowOnboarding(for tier: MembershipTier) -> Bool {
+        guard tier != .free else { return false }
+        guard isTierUpgrade else { return false }
+        guard !isResubscriber else { return false }
+        return !isOnboardingCompleted(for: tier)
+    }
+
+    /// Story 7.3: Returns the onboarding screens for this tier upgrade,
+    /// excluding screens for tiers the user has already onboarded through.
+    func onboardingFeatures(for tier: MembershipTier) -> [PremiumFeature] {
+        // All features unlocked at this tier
+        let allFeatures = newlyUnlockedFeatures
+        // If upgrading from a tier whose onboarding is complete, skip those features
+        if let prev = previousTier, isOnboardingCompleted(for: prev) {
+            let prevFeatures = PremiumFeature.allCases.filter { $0.minimumTier.rank <= prev.rank }
+            return allFeatures.filter { !prevFeatures.contains($0) }
+        }
+        return allFeatures
+    }
+
+    /// Story 7.2: Returns true if this is the first use of a newly unlocked feature this session
+    /// (within the afterglow window). Marks the feature as shown so it only sparkles once.
+    func shouldShowFeatureSparkle(for feature: PremiumFeature) -> Bool {
+        guard isWithinUpgradeAfterglowWindow else { return false }
+        let key = String(describing: feature)
+        guard newlyUnlockedFeatures.contains(feature) else { return false }
+        guard !featureSparklesShownThisSession.contains(key) else { return false }
+        featureSparklesShownThisSession.insert(key)
+        return true
+    }
 
     /// Check whether the current tier has access to a given feature.
     /// In DEBUG builds, checks for feature overrides first.
@@ -873,8 +940,25 @@ final class TierManager {
         // Celebration for ALL tier transitions
         upgradedToTier = newTier
         isTierUpgrade = wasUpgrade
+
+        // Story 7.1: Track first-ever subscription and resubscriber status
+        let previouslyHeldTiers = UserDefaults.standard.stringArray(forKey: "ll_previously_held_tiers") ?? []
+        let isPaidTier = newTier != .free
+        isFirstEverSubscription = isPaidTier && previouslyHeldTiers.isEmpty
+        isResubscriber = previouslyHeldTiers.contains(newTier.rawValue)
+        celebrationUserName = profile?.firstName ?? ""
+        if isPaidTier && !previouslyHeldTiers.contains(newTier.rawValue) {
+            var updated = previouslyHeldTiers
+            updated.append(newTier.rawValue)
+            UserDefaults.standard.set(updated, forKey: "ll_previously_held_tiers")
+        }
+
         if wasUpgrade {
             HapticsService.shared.tierUpgrade()
+            // Story 7.2: Record upgrade timestamp for 12-hour afterglow
+            tierUpgradeTimestamp = Date()
+            UserDefaults.standard.set(tierUpgradeTimestamp, forKey: "ll_tier_upgrade_timestamp")
+            featureSparklesShownThisSession = []
         } else {
             HapticsService.shared.tierDowngrade()
         }

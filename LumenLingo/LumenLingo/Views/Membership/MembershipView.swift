@@ -17,6 +17,7 @@ struct MembershipView: View {
     private var profile: UserProfile? { profiles.first }
     @PersistedState("membership_comparison_collapsed") private var isComparisonCollapsed = true
     @State private var selectedTierId: String = "free"
+    @State private var paywallOpenDate: Date?
 
     /// When true, shows a close button in the toolbar (for sheet presentations).
     var isSheet: Bool = false
@@ -55,17 +56,26 @@ struct MembershipView: View {
                     SubscriptionDisclosureView(
                         onRestorePurchases: {
                             Task {
+                                // Story 6.4: paywall_restore_tapped
+                                PaywallAnalytics.track(.paywallRestoreTapped, properties: [
+                                    "context": paywallContext.analyticsName
+                                ])
                                 let outcome = await subscriptionManager.restoreViaRevenueCat(using: revenueCatService)
-                                if case .restored(let tier) = outcome {
+                                switch outcome {
+                                case .restored(let tier):
+                                    PaywallAnalytics.trackRestoreTapped(context: paywallContext, result: "restored")
                                     withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
                                         selectedTierId = tier.rawValue
                                     }
                                     tierManager.selectTier(tier.rawValue, profile: profile)
-                                    // Auto-dismiss after 2 seconds if presented as sheet
                                     if isSheet {
                                         try? await Task.sleep(for: .seconds(2))
                                         dismiss()
                                     }
+                                case .nothingToRestore:
+                                    PaywallAnalytics.trackRestoreTapped(context: paywallContext, result: "nothing_to_restore")
+                                case .error(let msg):
+                                    PaywallAnalytics.trackRestoreTapped(context: paywallContext, result: "error_\(msg)")
                                 }
                             }
                         },
@@ -143,12 +153,26 @@ struct MembershipView: View {
         }
         .onAppear {
             selectedTierId = tierManager.currentTierId
+            // Story 6.4: paywall_viewed
+            PaywallAnalytics.trackViewed(
+                context: paywallContext,
+                offeringId: subscriptionManager.currentOffering?.id,
+                currentTier: tierManager.currentTierId
+            )
+            paywallOpenDate = Date()
         }
         .task {
             await subscriptionManager.loadProducts()
             // Refresh offerings if stale (Story 2.2)
             if subscriptionManager.isOfferingsCacheStale {
                 await subscriptionManager.fetchOfferings(from: revenueCatService)
+            }
+        }
+        .onDisappear {
+            // Story 6.4: paywall_dismissed (only for sheet presentations without a purchase)
+            if isSheet, let opened = paywallOpenDate {
+                let timeSpentMs = Int(Date().timeIntervalSince(opened) * 1000)
+                PaywallAnalytics.trackDismissed(context: paywallContext, timeSpentMs: timeSpentMs)
             }
         }
         .refreshable {
@@ -1077,6 +1101,12 @@ struct TierCardView: View {
                 guard !isActuallyCurrent, !tier.isDisabled else { return }
                 HapticsService.shared.buttonPress()
                 AudioService.shared.playTierSelect()
+                // Story 6.4: paywall_tier_selected
+                PaywallAnalytics.trackTierSelected(
+                    context: paywallContext,
+                    selectedTier: tier.id,
+                    currentTier: tierManager.currentTierId
+                )
                 if tier.id == "trial" {
                     if tierManager.startTrial(profile: profile) {
                         selectedTierId = "trial"
@@ -1412,6 +1442,15 @@ struct TierCardView: View {
         withAnimation(.easeInOut(duration: 0.35)) {
             buttonShimmerPhase = 1.0
         }
+        // Story 6.4: paywall_purchase_initiated
+        let hasTrial = subscriptionManager.offeringIntroOffer(for: mt)?.paymentMode == .freeTrial
+        PaywallAnalytics.trackPurchaseInitiated(
+            context: paywallContext,
+            tier: mt.rawValue,
+            isTrial: hasTrial,
+            offeringId: subscriptionManager.currentOffering?.id
+        )
+        let previousTier = tierManager.currentTierId
         Task {
             try? await Task.sleep(for: .milliseconds(250))
             buttonCompressed = false
@@ -1419,6 +1458,12 @@ struct TierCardView: View {
             let outcome = await subscriptionManager.purchasePackage(for: mt, using: revenueCatService)
             switch outcome {
             case .success(let purchasedTier):
+                // Story 6.4: paywall_purchase_completed
+                PaywallAnalytics.trackPurchaseCompleted(
+                    context: paywallContext,
+                    tier: purchasedTier.rawValue,
+                    isUpgrade: purchasedTier.rawValue != previousTier
+                )
                 withAnimation(.easeOut(duration: 0.2)) {
                     subscriptionManager.showGoldenFlash = true
                 }
@@ -1428,8 +1473,14 @@ struct TierCardView: View {
                     selectedTierId = purchasedTier.rawValue
                 }
                 tierManager.selectTier(purchasedTier.rawValue, profile: profile)
-            case .cancelled, .deferred, .error:
+            case .cancelled:
+                // Story 6.4: paywall_purchase_cancelled
+                PaywallAnalytics.trackPurchaseCancelled(context: paywallContext, tier: mt.rawValue)
+            case .deferred:
                 break
+            case .error(let message):
+                // Story 6.4: paywall_purchase_failed
+                PaywallAnalytics.trackPurchaseFailed(context: paywallContext, tier: mt.rawValue, errorCode: message)
             }
         }
     }

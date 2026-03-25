@@ -97,6 +97,10 @@ struct LumenLingoApp: App {
                 if !revenueCatService.isConfigured {
                     let apiKey = EnvironmentConfig.current.revenueCatAPIKey
                     await revenueCatService.configure(apiKey: apiKey, appUserID: nil)
+                    // Story 6.2: Collect device identifiers for attribution
+                    revenueCatService.collectDeviceIdentifiers()
+                    // Story 6.5: Enable Apple Search Ads attribution token collection
+                    revenueCatService.enableAdServicesAttributionTokenCollection()
                 }
                 // Fetch offerings after configuration (Story 2.1)
                 await subscriptionManager.fetchOfferings(from: revenueCatService)

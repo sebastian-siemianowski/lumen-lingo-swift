@@ -204,6 +204,13 @@ final class RealRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
         return mapped
     }
 
+    func syncPurchases() async throws -> RCCustomerInfo {
+        let info = try await Purchases.shared.syncPurchases()
+        let mapped = Self.mapCustomerInfo(info)
+        updateCustomerInfo(mapped)
+        return mapped
+    }
+
     // MARK: - Subscription Management
 
     func showManageSubscriptions() async throws {
@@ -225,6 +232,10 @@ final class RealRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
 
     func collectDeviceIdentifiers() {
         Purchases.shared.attribution.collectDeviceIdentifiers()
+    }
+
+    func enableAdServicesAttributionTokenCollection() {
+        Purchases.shared.attribution.enableAdServicesAttributionTokenCollection()
     }
 
     // MARK: - Private Helpers

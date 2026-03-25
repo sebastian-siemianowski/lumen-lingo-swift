@@ -441,6 +441,22 @@ extension AppStrings {
         upgradeMessageElite: "あなたの言葉には献身の重みがあります——卓越があなたの母語になりつつあります。",
         upgradeMessageRoyal: "言葉であなたの旅に冠を——伝説の言語はあなたのものです。",
         upgradeMessageTrial: "ロイヤルな章が始まります——あなたの言語的可能性の全物語が待っています。",
+        celebrationWelcomeTo: "ようこそ",
+        celebrationWelcomeBackTo: "おかえりなさい",
+        celebrationContinue: "続ける",
+        celebrationFirstSubscription: "ご登録ありがとうございます！",
+
+        // MARK: - Subscription Onboarding (Story 7.3)
+        onboardingExploreTitle: "プレミアム機能",
+        onboardingTryIt: "試してみる！",
+        onboardingExplore: "探索する",
+        onboardingNext: "次へ",
+        onboardingSkip: "自分で探索します",
+        onboardingSummaryTitle: "解放された機能",
+        onboardingSummaryFeatures: "個の新機能",
+        onboardingWelcomeBack: "おかえりなさい！ご利用可能な機能",
+        onboardingDone: "はじめましょう！",
+
         // MARK: - Legal Consent
         legalConsentTitle: "始める前に",
         legalConsentSubtitle: "LumenLingoを引き続きご利用いただくため、ポリシーをご確認ください",

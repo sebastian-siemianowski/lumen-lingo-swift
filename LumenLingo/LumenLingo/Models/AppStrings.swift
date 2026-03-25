@@ -453,6 +453,21 @@ struct AppStrings: Sendable {
     let upgradeMessageElite: String         // tier-specific linguistic celebration
     let upgradeMessageRoyal: String         // tier-specific linguistic celebration
     let upgradeMessageTrial: String         // tier-specific linguistic celebration
+    let celebrationWelcomeTo: String        // "Welcome to"
+    let celebrationWelcomeBackTo: String    // "Welcome back to"
+    let celebrationContinue: String         // "Continue"
+    let celebrationFirstSubscription: String // "Thank you for subscribing!"
+
+    // MARK: - Subscription Onboarding (Story 7.3)
+    let onboardingExploreTitle: String      // "Your Premium Features"
+    let onboardingTryIt: String             // "Try It!"
+    let onboardingExplore: String           // "Explore"
+    let onboardingNext: String              // "Next"
+    let onboardingSkip: String              // "I'll explore on my own"
+    let onboardingSummaryTitle: String      // "You just unlocked"
+    let onboardingSummaryFeatures: String   // "new features"
+    let onboardingWelcomeBack: String       // "Welcome back! Here's what you have"
+    let onboardingDone: String              // "Let's Go!"
 
     // MARK: - Legal Consent
     let legalConsentTitle: String            // "Before We Begin"

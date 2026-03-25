@@ -344,6 +344,10 @@ struct FeatureTransitionOverlay: View {
             // Auto-dismiss after read time
             DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                 tierManager.showFeatureTransition = false
+                // Story 7.3: Chain to onboarding if applicable
+                if tierManager.shouldShowOnboarding(for: tierManager.currentTier) {
+                    tierManager.showSubscriptionOnboarding = true
+                }
                 resetState()
             }
             return
@@ -425,6 +429,10 @@ struct FeatureTransitionOverlay: View {
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 tierManager.showFeatureTransition = false
+                // Story 7.3: Chain to onboarding if applicable
+                if tierManager.shouldShowOnboarding(for: tierManager.currentTier) {
+                    tierManager.showSubscriptionOnboarding = true
+                }
                 resetState()
             }
         }

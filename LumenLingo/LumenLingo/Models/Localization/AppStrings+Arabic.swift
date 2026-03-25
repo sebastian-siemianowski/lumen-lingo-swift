@@ -439,6 +439,22 @@ extension AppStrings {
         upgradeMessageElite: "كلماتك تحمل ثقل التفاني — التميّز يصبح لغتك الأم.",
         upgradeMessageRoyal: "توّجت رحلتك بالكلمات — لغة الأساطير ملكك.",
         upgradeMessageTrial: "يبدأ فصل ملكي — القصة الكاملة لإمكاناتك اللغوية بانتظارك.",
+        celebrationWelcomeTo: "مرحباً بك في",
+        celebrationWelcomeBackTo: "مرحباً بعودتك إلى",
+        celebrationContinue: "متابعة",
+        celebrationFirstSubscription: "شكراً لاشتراكك!",
+
+        // MARK: - Subscription Onboarding (Story 7.3)
+        onboardingExploreTitle: "ميزاتك المميزة",
+        onboardingTryIt: "جرّبها!",
+        onboardingExplore: "استكشاف",
+        onboardingNext: "التالي",
+        onboardingSkip: "سأستكشف بنفسي",
+        onboardingSummaryTitle: "لقد فتحت للتو",
+        onboardingSummaryFeatures: "ميزات جديدة",
+        onboardingWelcomeBack: "مرحبًا بعودتك! إليك ما لديك",
+        onboardingDone: "هيا بنا!",
+
         // MARK: - Legal Consent
         legalConsentTitle: "قبل أن نبدأ",
         legalConsentSubtitle: "يرجى مراجعة سياساتنا لمتابعة استخدام LumenLingo",

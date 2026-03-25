@@ -46,6 +46,10 @@ struct SettingsView: View {
     // In-app legal document browser
     @State private var legalURL: URL?
 
+    // Story 6.3: Diagnostics Easter egg
+    @State private var versionTapCount = 0
+    @State private var showDiagnostics = false
+
     private var availableAppearanceSubTabs: [AppearanceSubTab] {
         AppearanceSubTab.allCases.filter { isDark || $0 != .nebulaDrift }
     }
@@ -973,6 +977,13 @@ struct SettingsView: View {
             Text(L.version)
                 .font(.caption)
                 .foregroundStyle(isDark ? .white.opacity(0.25) : .caribbeanMist.opacity(0.7))
+                .onTapGesture {
+                    versionTapCount += 1
+                    if versionTapCount >= 7 {
+                        versionTapCount = 0
+                        showDiagnostics = true
+                    }
+                }
 
             madeWithLoveLabel
 
@@ -982,6 +993,9 @@ struct SettingsView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 16)
                 .padding(.top, 2)
+        }
+        .sheet(isPresented: $showDiagnostics) {
+            SubscriptionDiagnosticsView()
         }
     }
 

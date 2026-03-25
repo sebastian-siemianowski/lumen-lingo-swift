@@ -442,6 +442,22 @@ extension AppStrings {
         upgradeMessageElite: "Deine Worte tragen das Gewicht der Hingabe — Exzellenz wird deine Muttersprache.",
         upgradeMessageRoyal: "Du hast deine Reise mit Worten gekrönt — die Sprache der Legenden gehört dir.",
         upgradeMessageTrial: "Ein königliches Kapitel beginnt — die ganze Geschichte deines sprachlichen Potenzials wartet.",
+        celebrationWelcomeTo: "Willkommen bei",
+        celebrationWelcomeBackTo: "Willkommen zurück bei",
+        celebrationContinue: "Weiter",
+        celebrationFirstSubscription: "Danke für dein Abonnement!",
+
+        // MARK: - Subscription Onboarding (Story 7.3)
+        onboardingExploreTitle: "Deine Premium-Funktionen",
+        onboardingTryIt: "Jetzt testen!",
+        onboardingExplore: "Entdecken",
+        onboardingNext: "Weiter",
+        onboardingSkip: "Ich erkunde selbst",
+        onboardingSummaryTitle: "Du hast gerade freigeschaltet",
+        onboardingSummaryFeatures: "neue Funktionen",
+        onboardingWelcomeBack: "Willkommen zurück! Hier sind deine Funktionen",
+        onboardingDone: "Los geht's!",
+
         // MARK: - Legal Consent
         legalConsentTitle: "Bevor wir beginnen",
         legalConsentSubtitle: "Bitte überprüfe unsere Richtlinien, um LumenLingo weiter zu nutzen",

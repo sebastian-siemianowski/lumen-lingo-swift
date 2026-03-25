@@ -1378,29 +1378,29 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] A pre-expiry warning is triggered when the subscription (or trial) has ≤3 days remaining and `willRenew == false`
-- [ ] The warning is a sheet (not modal alert) that appears once per 24 hours, never during lessons:
+- [x] A pre-expiry warning is triggered when the subscription (or trial) has ≤3 days remaining and `willRenew == false`
+- [x] The warning is a sheet (not modal alert) that appears once per 24 hours, never during lessons:
   - Headline: "Your [Tier/Trial] ends in [N] days"
   - Shows the user's achievements during their premium period: words learned, lessons completed, streak days
   - Lists the specific features they'll lose, each with a visual "dimming" preview
   - CTA: "Keep My [Tier]" → opens paywall
   - Secondary: "I'll think about it" → dismisses for 24 hours
-- [ ] If the user engages with a premium feature during the final 3 days, a contextual nudge appears (once per feature per session):
+- [x] If the user engages with a premium feature during the final 3 days, a contextual nudge appears (once per feature per session):
   - "Love using [Feature]? Keep it with [Tier]." — inline banner at the bottom of the feature screen
   - Tappable, opens paywall in `feature_gate` context
   - Dismissable with a swipe
-- [ ] The win-back flow respects user agency:
+- [x] The win-back flow respects user agency:
   - Maximum 1 sheet per day
   - Maximum 1 inline nudge per feature per session
   - "Don't remind me again" option that suppresses all win-back prompts for this expiry cycle
   - If the user has seen the win-back 3 times and dismissed, stop showing it entirely
-- [ ] Post-expiry win-back (lapsed user):
+- [x] Post-expiry win-back (lapsed user):
   - 7 days after expiry, if the user opens the app, a warm "Welcome back" sheet appears once:
     - "We've been holding onto your progress: [stats]. Ready to pick up where you left off?"
     - Shows any new features or content added since they left (if applicable)
     - CTA: "Resubscribe" → paywall
     - "Not yet" → dismisses permanently for 30 days
-- [ ] All win-back interactions are tracked: `winback_shown`, `winback_engaged`, `winback_dismissed`, `winback_suppressed`
+- [x] All win-back interactions are tracked: `winback_shown`, `winback_engaged`, `winback_dismissed`, `winback_suppressed`
 
 #### UX Details — Make Users Fall in Love
 
@@ -1430,8 +1430,8 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] The RevenueCat dashboard correctly tracks all sandbox and production transactions
-- [ ] The following metrics are verified as accurate in the dashboard:
+- [x] The RevenueCat dashboard correctly tracks all sandbox and production transactions
+- [x] The following metrics are verified as accurate in the dashboard:
   - Monthly Recurring Revenue (MRR) by tier
   - Active Subscriptions count by tier
   - Active Trials count
@@ -1439,13 +1439,13 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
   - Churn Rate (monthly)
   - Revenue per customer
   - Refund rate
-- [ ] Sandbox transactions are clearly separated from production (using the sandbox/production toggle)
-- [ ] Each transaction shows: product ID, user ID, purchase date, expiration date, country, price
-- [ ] The "Charts" section renders correctly with at least 7 days of sandbox data
-- [ ] Customer timeline view shows the full lifecycle: initial purchase → renewals → cancellation → expiry
-- [ ] No duplicate transactions appear (verifying Story 1.5 — no dual observer)
-- [ ] The RevenueCat project is configured with the correct App Store Connect shared secret
-- [ ] Platform-specific configuration (iOS bundle ID, App Store Connect API key) is verified
+- [x] Sandbox transactions are clearly separated from production (using the sandbox/production toggle)
+- [x] Each transaction shows: product ID, user ID, purchase date, expiration date, country, price
+- [x] The "Charts" section renders correctly with at least 7 days of sandbox data
+- [x] Customer timeline view shows the full lifecycle: initial purchase → renewals → cancellation → expiry
+- [x] No duplicate transactions appear (verifying Story 1.5 — no dual observer)
+- [x] The RevenueCat project is configured with the correct App Store Connect shared secret
+- [x] Platform-specific configuration (iOS bundle ID, App Store Connect API key) is verified
 
 ---
 
@@ -1461,7 +1461,7 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] The following custom subscriber attributes are set via `Purchases.shared.attribution.set*()`:
+- [x] The following custom subscriber attributes are set via `Purchases.shared.attribution.set*()`:
   - `$displayName` — from Clerk user profile
   - `$email` — from Clerk user profile (if available, for support)
   - `auth_provider` — "apple" / "google" / "phone" / "email" / "anonymous" (from Clerk session)
@@ -1472,17 +1472,17 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
   - `first_open_date` — ISO8601 date of first app launch
   - `device_model` — e.g., "iPhone 16 Pro", "iPad Air M2"
   - `previous_tier` — the tier before current tier (for upgrade/downgrade analysis)
-- [ ] Attributes are updated at appropriate times:
+- [x] Attributes are updated at appropriate times:
   - `auth_provider`, `$displayName`, `$email` → set at Clerk authentication (Story 1.6)
   - `app_language`, `learning_language` → set at selection and on change
   - `words_learned`, `days_active` → updated once per session (avoid API throttling)
   - `previous_tier` → set when `TierManager` changes tier
-- [ ] Attribute names follow RevenueCat's reserved prefix convention ($-prefixed for built-in, unprefixed for custom)
-- [ ] Attributes are visible in the RevenueCat customer detail view
-- [ ] Attributes can be used to filter RevenueCat Experiments
-- [ ] No PII beyond email and display name is sent to RevenueCat
-- [ ] Attribute syncing respects data consent status (only sync if consent given)
-- [ ] If data consent is revoked, custom attributes (except $-prefixed) are cleared
+- [x] Attribute names follow RevenueCat's reserved prefix convention ($-prefixed for built-in, unprefixed for custom)
+- [x] Attributes are visible in the RevenueCat customer detail view
+- [x] Attributes can be used to filter RevenueCat Experiments
+- [x] No PII beyond email and display name is sent to RevenueCat
+- [x] Attribute syncing respects data consent status (only sync if consent given)
+- [x] If data consent is revoked, custom attributes (except $-prefixed) are cleared
 
 ---
 
@@ -1498,8 +1498,8 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] A hidden diagnostics screen is accessible via Settings → About → tap version number 7 times (Easter egg)
-- [ ] The diagnostics screen displays:
+- [x] A hidden diagnostics screen is accessible via Settings → About → tap version number 7 times (Easter egg)
+- [x] The diagnostics screen displays:
   1. **RevenueCat App User ID** (masked — last 4 chars visible, tap to copy full ID)
   2. **Clerk User ID** (masked, tap to copy)
   3. **Authentication Provider** (Apple / Google / Phone / Email / Anonymous)
@@ -1515,12 +1515,12 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
   13. **StoreKit Environment** — Sandbox / Production
   14. **Offering ID** — current offering
   15. **Network Status** — online/offline
-- [ ] A "Copy Diagnostics" button generates a formatted text block and copies to clipboard
-- [ ] The copied text includes a "Support Reference" hash (first 8 chars of SHA256 of App User ID + current date)
-- [ ] A "Refresh" button forces `Purchases.shared.getCustomerInfo()` and updates the display
-- [ ] A "Force Sync" button calls `Purchases.shared.syncPurchases()` for receipt re-validation
-- [ ] All values are read-only — no mutation possible from this screen
-- [ ] Sensitive data (full user IDs, email) requires a second tap-to-reveal interaction
+- [x] A "Copy Diagnostics" button generates a formatted text block and copies to clipboard
+- [x] The copied text includes a "Support Reference" hash (first 8 chars of SHA256 of App User ID + current date)
+- [x] A "Refresh" button forces `Purchases.shared.getCustomerInfo()` and updates the display
+- [x] A "Force Sync" button calls `Purchases.shared.syncPurchases()` for receipt re-validation
+- [x] All values are read-only — no mutation possible from this screen
+- [x] Sensitive data (full user IDs, email) requires a second tap-to-reveal interaction
 
 #### UX Details — Make Users Fall in Love
 
@@ -1544,7 +1544,7 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] The following analytics events are tracked:
+- [x] The following analytics events are tracked:
   1. `paywall_viewed` — Attributes: `context` (membership_tab / feature_gate / upgrade_nudge / trial_expiry / settings), `offering_id`, `current_tier`
   2. `paywall_tier_selected` — Attributes: `context`, `selected_tier`, `current_tier`
   3. `paywall_purchase_initiated` — Attributes: `context`, `tier`, `is_trial`, `offering_id`
@@ -1553,13 +1553,13 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
   6. `paywall_purchase_failed` — Attributes: `context`, `tier`, `error_code`
   7. `paywall_dismissed` — Attributes: `context`, `time_spent_ms`, `tiers_viewed`
   8. `paywall_restore_tapped` — Attributes: `context`, `result` (success/no_purchases/error)
-- [ ] Events are fire-and-forget — they never block the UI or purchase flow
-- [ ] Event delivery handles offline gracefully — events are queued and sent when connectivity returns
-- [ ] A "Funnel" report can be constructed: views → selections → initiations → completions per context
-- [ ] The `feature_gate` context includes `locked_feature` attribute for conversion-by-feature analysis
-- [ ] Dev builds log events to console; Prod builds send only to the analytics service
-- [ ] No user-identifiable data beyond the RevenueCat App User ID is included
-- [ ] Events follow consistent naming: `snake_case`, domain-prefixed (`paywall_`, `tier_`, `auth_`)
+- [x] Events are fire-and-forget — they never block the UI or purchase flow
+- [x] Event delivery handles offline gracefully — events are queued and sent when connectivity returns
+- [x] A "Funnel" report can be constructed: views → selections → initiations → completions per context
+- [x] The `feature_gate` context includes `locked_feature` attribute for conversion-by-feature analysis
+- [x] Dev builds log events to console; Prod builds send only to the analytics service
+- [x] No user-identifiable data beyond the RevenueCat App User ID is included
+- [x] Events follow consistent naming: `snake_case`, domain-prefixed (`paywall_`, `tier_`, `auth_`)
 
 ---
 
@@ -1575,16 +1575,16 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] RevenueCat is configured to receive attribution from at least one network:
+- [x] RevenueCat is configured to receive attribution from at least one network:
   - Apple Search Ads via `AdServices.framework` / `AAAttribution.attributionToken()`
   - Integration hook documented for future MMP (AppsFlyer, Adjust, Branch) if needed
-- [ ] `Purchases.shared.attribution.collectDeviceIdentifiers()` is called after SDK configuration
-- [ ] `Purchases.shared.attribution.enableAdServicesAttributionTokenCollection()` is called for Apple Search Ads
-- [ ] Attribution data appears in the RevenueCat customer timeline for attributed users
-- [ ] Campaigns show in the RevenueCat attribution tab
-- [ ] ATT (App Tracking Transparency) prompt is NOT shown unless a future MMP requires it — Apple Search Ads alone does not need ATT
-- [ ] If ATT is later needed, the prompt appears at an appropriate moment (not first launch)
-- [ ] Attribution does not affect app startup time by more than 50ms
+- [x] `Purchases.shared.attribution.collectDeviceIdentifiers()` is called after SDK configuration
+- [x] `Purchases.shared.attribution.enableAdServicesAttributionTokenCollection()` is called for Apple Search Ads
+- [x] Attribution data appears in the RevenueCat customer timeline for attributed users
+- [x] Campaigns show in the RevenueCat attribution tab
+- [x] ATT (App Tracking Transparency) prompt is NOT shown unless a future MMP requires it — Apple Search Ads alone does not need ATT
+- [x] If ATT is later needed, the prompt appears at an appropriate moment (not first launch)
+- [x] Attribution does not affect app startup time by more than 50ms
 
 ---
 
@@ -1604,23 +1604,23 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] The celebration triggers immediately after a successful purchase (or restore) and before the paywall dismisses
-- [ ] **Tier-specific celebrations:**
+- [x] The celebration triggers immediately after a successful purchase (or restore) and before the paywall dismisses
+- [x] **Tier-specific celebrations:**
   - **Pro upgrade:** A constellation of blue-white stars converges from screen edges into a central starburst. The Pro lightning bolt icon forms from the converging stars, pulses twice, then settles. Duration: 2.5 seconds
   - **Elite upgrade:** A diamond-shaped crystal forms from purple shards that spiral inward. Each shard catches light as it rotates, creating prismatic reflections. The crystal completes, emits a ring of purple energy, and settles. Duration: 3 seconds
   - **Royal upgrade:** A crown descends from above, composed of golden particles that solidify into a metallic crown with embedded gems. Gems ignite one by one in the tier colours (blue, purple, gold). A golden shockwave pulses outward. Duration: 3.5 seconds
   - **Trial start:** The Royal celebration plays at 70% intensity with a softer colour palette and a "Trial" label that fades in beneath the crown
-- [ ] Each celebration includes:
+- [x] Each celebration includes:
   1. A tier-specific haptic choreography (light → medium → heavy at the climax → light fade)
   2. A tier-specific sound (generated via AudioService synthesis — warm, resonant, ascending chord)
   3. Background dimming (80% black behind the celebration, cosmic nebula still subtly visible)
   4. A congratulatory message: "Welcome to [Tier]" (first time) or "Welcome back to [Tier]" (resubscribers)
   5. A "Continue" button that appears after the animation completes — the user controls when the paywall dismisses
-- [ ] **First-ever subscription (any tier):** The celebration is extended by 2 seconds with an additional sequence where the user's name (from Clerk) is written in a calligraphic cosmic font: "[Name], welcome to premium"
-- [ ] Performance: 60fps on iPhone 13+, particles scale down on older devices
-- [ ] Reduce Motion: celebration is replaced with a simple "Welcome to [Tier]" card with the tier icon — no particles, no movement — still premium-feeling with rich colour and subtle gradient shift
-- [ ] The celebration is skippable — tapping anywhere accelerates to the end state
-- [ ] VoiceOver: "Congratulations! You are now a [Tier] member." + haptic
+- [x] **First-ever subscription (any tier):** The celebration is extended by 2 seconds with an additional sequence where the user's name (from Clerk) is written in a calligraphic cosmic font: "[Name], welcome to premium"
+- [x] Performance: 60fps on iPhone 13+, particles scale down on older devices
+- [x] Reduce Motion: celebration is replaced with a simple "Welcome to [Tier]" card with the tier icon — no particles, no movement — still premium-feeling with rich colour and subtle gradient shift
+- [x] The celebration is skippable — tapping anywhere accelerates to the end state
+- [x] VoiceOver: "Congratulations! You are now a [Tier] member." + haptic
 
 #### UX Details — Make Users Fall in Love
 
@@ -1645,18 +1645,18 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] After the celebration (Story 7.1) completes and the paywall dismisses:
+- [x] After the celebration (Story 7.1) completes and the paywall dismisses:
   1. The app returns to wherever the user was before the paywall appeared
   2. A trail of 5–10 tier-coloured sparkle particles follows the user's initial scroll gesture for 3 seconds
   3. The tier badge (Story 4.5) blooms with a brief glow ring on first appearance after the upgrade
-- [ ] For the first 12 hours after an upgrade, the following micro-interactions activate:
+- [x] For the first 12 hours after an upgrade, the following micro-interactions activate:
   - **Tier badge entrance:** Each time the badge becomes visible (scroll, tab switch), it does a micro-bounce (scale 1.0 → 1.08 → 1.0 over 300ms)
   - **Feature unlock sparkles:** The first time a newly unlocked feature is used in a session (e.g., first soundscape play as a new Pro member), 3–5 sparkle particles emit from the feature's icon
   - **Cosmic background shift:** The nebula background subtly shifts colour toward the tier's palette (blue for Pro, purple for Elite, gold for Royal) for 12 hours, then gradually returns to the user's preference
-- [ ] None of these micro-interactions interfere with core functionality — they are purely decorative overlays
-- [ ] A `tierUpgradeTimestamp` is stored to calculate the 12-hour window
-- [ ] All micro-interactions respect Reduce Motion — disabled if the user has motion reduction enabled
-- [ ] The sparkle particles use the same emission system as the celebration for visual consistency
+- [x] None of these micro-interactions interfere with core functionality — they are purely decorative overlays
+- [x] A `tierUpgradeTimestamp` is stored to calculate the 12-hour window
+- [x] All micro-interactions respect Reduce Motion — disabled if the user has motion reduction enabled
+- [x] The sparkle particles use the same emission system as the celebration for visual consistency
 
 #### UX Details — Make Users Fall in Love
 

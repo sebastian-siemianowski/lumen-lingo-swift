@@ -445,6 +445,21 @@ extension AppStrings {
         upgradeMessageElite: "Your words carry the weight of dedication — excellence is becoming your mother tongue.",
         upgradeMessageRoyal: "You've crowned your journey with words — the language of legends is yours to command.",
         upgradeMessageTrial: "A royal chapter begins — the full story of your linguistic potential awaits.",
+        celebrationWelcomeTo: "Welcome to",
+        celebrationWelcomeBackTo: "Welcome back to",
+        celebrationContinue: "Continue",
+        celebrationFirstSubscription: "Thank you for subscribing!",
+
+        // MARK: - Subscription Onboarding (Story 7.3)
+        onboardingExploreTitle: "Your Premium Features",
+        onboardingTryIt: "Try It!",
+        onboardingExplore: "Explore",
+        onboardingNext: "Next",
+        onboardingSkip: "I'll explore on my own",
+        onboardingSummaryTitle: "You just unlocked",
+        onboardingSummaryFeatures: "new features",
+        onboardingWelcomeBack: "Welcome back! Here's what you have",
+        onboardingDone: "Let's Go!",
 
         // MARK: - Legal Consent
         legalConsentTitle: "Before We Begin",

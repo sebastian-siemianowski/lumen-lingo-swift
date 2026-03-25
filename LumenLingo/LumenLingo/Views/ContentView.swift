@@ -13,6 +13,7 @@ struct ContentView: View {
     @Environment(SubscriptionManager.self) private var subscriptionManager
     @Environment(PracticeTimeTracker.self) private var practiceTimeTracker
     @Environment(\.localization) private var localization
+    @Environment(\.revenueCatService) private var revenueCatService
 
     @Query private var profiles: [UserProfile]
     @Query private var languagePrefs: [LanguagePreference]
@@ -25,6 +26,7 @@ struct ContentView: View {
     @State private var showTrialEnded = false
     @State private var showTierOnboarding = false
     @State private var showLegalConsent = false
+    @State private var hasPerformedAttributeSync = false
 
     // Services (shared across all views)
     @State private var progressService: ProgressService?
@@ -156,6 +158,11 @@ struct ContentView: View {
                 audioService.syncFromProfile(profile)
                 hapticsService.syncFromProfile(profile)
             }
+            // Story 6.2: Sync subscriber attributes once per session
+            if !hasPerformedAttributeSync {
+                hasPerformedAttributeSync = true
+                syncSubscriberAttributes()
+            }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 let wantTransparent = selectedTab == .dashboard && themeManager.isDarkMode
                 applyTabBarAppearance(transparent: wantTransparent)
@@ -187,9 +194,25 @@ struct ContentView: View {
         }
         .onChange(of: languagePrefs.first?.sourceLanguage) { _, _ in
             localization.update(from: languagePrefs)
+            // Story 6.2: Re-sync attributes when language changes
+            syncSubscriberAttributes()
         }
-        .onChange(of: tierManager.currentTier) { _, _ in
+        .onChange(of: tierManager.currentTier) { oldTier, newTier in
             validateActiveLanguagePair()
+            // Story 6.2: Track tier changes for subscriber attributes
+            subscriptionManager.trackTierChange(from: oldTier, to: newTier)
+            syncSubscriberAttributes()
+        }
+        // Story 5.7: Evaluate expiry warnings when not in a lesson
+        .onChange(of: subscriptionManager.subscriptionState) { _, _ in
+            guard !hideTabBar else { return }
+            subscriptionManager.evaluateExpiryWarning()
+            subscriptionManager.evaluateWelcomeBack()
+        }
+        .onChange(of: hideTabBar) { _, inLesson in
+            guard !inLesson else { return }
+            subscriptionManager.evaluateExpiryWarning()
+            subscriptionManager.evaluateWelcomeBack()
         }
         .environment(audioService)
         .environment(hapticsService)
@@ -396,6 +419,24 @@ struct ContentView: View {
                 ]
             )
         }
+    }
+
+    // MARK: - Subscriber Attributes (Story 6.2)
+
+    private func syncSubscriberAttributes() {
+        let pref = languagePrefs.first
+        subscriptionManager.syncSubscriberAttributes(
+            using: revenueCatService,
+            displayName: profile?.firstName,
+            email: profile?.email,
+            authProvider: profile?.clerkUserId != nil ? "clerk" : "anonymous",
+            appLanguage: pref?.sourceLanguage,
+            learningLanguage: pref?.targetLanguage,
+            wordsLearned: profile?.totalXP,
+            daysActive: profile?.totalActiveDays,
+            firstOpenDate: profile?.legalConsentDate,
+            hasConsent: profile?.legalConsentVersion.isEmpty == false
+        )
     }
 
     // MARK: - Network Simulation Banner
