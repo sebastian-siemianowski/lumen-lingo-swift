@@ -46,7 +46,7 @@ struct SubscriptionOnboardingView: View {
                         .tag(features.count)
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
-                .animation(.spring(response: 0.4, dampingFraction: 0.8), value: currentPage)
+                .animation(reduceMotion ? .none : .spring(response: 0.4, dampingFraction: 0.8), value: currentPage)
 
                 // Bottom navigation
                 bottomBar
@@ -86,7 +86,7 @@ struct SubscriptionOnboardingView: View {
                     .fill(i == currentPage ? tier.accentColor : .white.opacity(0.3))
                     .frame(width: i == currentPage ? 8 : 6,
                            height: i == currentPage ? 8 : 6)
-                    .animation(.spring(response: 0.3), value: currentPage)
+                    .animation(reduceMotion ? .none : .spring(response: 0.3), value: currentPage)
             }
         }
     }
@@ -106,7 +106,7 @@ struct SubscriptionOnboardingView: View {
                 Image(systemName: feature.iconName)
                     .font(.system(size: 40, weight: .light))
                     .foregroundStyle(tier.accentColor)
-                    .symbolEffect(.pulse, options: .repeating, isActive: appeared)
+                    .symbolEffect(.pulse, options: .repeating, isActive: appeared && !reduceMotion)
             }
 
             // Feature name
@@ -160,6 +160,7 @@ struct SubscriptionOnboardingView: View {
                     .fill(tier.accentColor.opacity(0.6))
                     .frame(width: 4, height: CGFloat.random(in: 15...60))
                     .animation(
+                        reduceMotion ? .none :
                         .easeInOut(duration: Double.random(in: 0.5...1.5))
                         .repeatForever(autoreverses: true)
                         .delay(Double(i) * 0.05),
@@ -185,7 +186,7 @@ struct SubscriptionOnboardingView: View {
             .scaleEffect(appeared ? 1.2 : 0.8)
             .opacity(appeared ? 0.8 : 0.5)
             .animation(
-                .easeInOut(duration: 3.0).repeatForever(autoreverses: true),
+                reduceMotion ? .none : .easeInOut(duration: 3.0).repeatForever(autoreverses: true),
                 value: appeared
             )
             .accessibilityLabel("Breathing orb preview")
@@ -196,7 +197,7 @@ struct SubscriptionOnboardingView: View {
             Image(systemName: "arrow.down.circle.fill")
                 .font(.system(size: 36))
                 .foregroundStyle(tier.accentColor)
-                .symbolEffect(.bounce, options: .repeating.speed(0.5), isActive: appeared)
+                .symbolEffect(.bounce, options: .repeating.speed(0.5), isActive: appeared && !reduceMotion)
 
             Text("Learn Anywhere")
                 .font(.system(size: 14, weight: .medium))
@@ -297,8 +298,12 @@ struct SubscriptionOnboardingView: View {
     // MARK: - Actions
 
     private func handleAppear() {
-        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
+        if reduceMotion {
             appeared = true
+        } else {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
+                appeared = true
+            }
         }
         PaywallAnalytics.trackOnboardingStarted(
             tier: tier.rawValue,
@@ -310,7 +315,7 @@ struct SubscriptionOnboardingView: View {
     }
 
     private func nextPage() {
-        withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
+        withAnimation(reduceMotion ? .none : .spring(response: 0.35, dampingFraction: 0.8)) {
             currentPage = min(currentPage + 1, totalPages - 1)
         }
     }
@@ -333,11 +338,15 @@ struct SubscriptionOnboardingView: View {
     }
 
     private func dismiss() {
-        withAnimation(.easeOut(duration: 0.4)) {
-            dismissing = true
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+        if reduceMotion {
             tierManager.showSubscriptionOnboarding = false
+        } else {
+            withAnimation(.easeOut(duration: 0.4)) {
+                dismissing = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                tierManager.showSubscriptionOnboarding = false
+            }
         }
     }
 

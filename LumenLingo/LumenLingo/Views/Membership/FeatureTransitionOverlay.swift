@@ -92,6 +92,8 @@ struct FeatureTransitionOverlay: View {
             .opacity(dismissing ? 0 : 1)
         }
         .ignoresSafeArea()
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("Subscription updated to \(tierManager.currentTier.displayName)")
     }
 
     // MARK: - Title

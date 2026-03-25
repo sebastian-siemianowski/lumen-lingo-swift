@@ -461,6 +461,17 @@ extension AppStrings {
         onboardingWelcomeBack: "Welcome back! Here's what you have",
         onboardingDone: "Let's Go!",
 
+        // MARK: - Value Framing (Story 7.4)
+        valueFramingTitle: "Your Investment",
+        valueFramingJust: "Just",
+        valueFramingPerDay: "/day",
+        valueFramingFeatures: "features",
+        valueFramingCoffeePro: "Less than your morning coffee",
+        valueFramingCoffeeElite: "Less than a sandwich",
+        valueFramingCoffeeRoyal: "Less than a lunch out",
+        valueFramingWordsLearned: "You've learned {count} words — that's just {cost} per word with {tier}",
+        valueFramingProjected: "Most learners master 300+ words in their first month",
+
         // MARK: - Legal Consent
         legalConsentTitle: "Before We Begin",
         legalConsentSubtitle: "Please review our policies to continue using LumenLingo",

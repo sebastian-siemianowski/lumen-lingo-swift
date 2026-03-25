@@ -123,7 +123,7 @@ final class TierManager {
     /// Story 7.3: Should the onboarding flow be shown after this upgrade?
     /// Only for first upgrade to a tier (not restore, not resubscribe).
     func shouldShowOnboarding(for tier: MembershipTier) -> Bool {
-        guard tier != .free else { return false }
+        guard tier != .free, tier != .trial else { return false }
         guard isTierUpgrade else { return false }
         guard !isResubscriber else { return false }
         return !isOnboardingCompleted(for: tier)
@@ -132,8 +132,11 @@ final class TierManager {
     /// Story 7.3: Returns the onboarding screens for this tier upgrade,
     /// excluding screens for tiers the user has already onboarded through.
     func onboardingFeatures(for tier: MembershipTier) -> [PremiumFeature] {
-        // All features unlocked at this tier
-        let allFeatures = newlyUnlockedFeatures
+        guard tier != .free, tier != .trial else { return [] }
+        // Use transition-derived features if available, otherwise derive from tier
+        let allFeatures = newlyUnlockedFeatures.isEmpty
+            ? PremiumFeature.allCases.filter { $0.minimumTier.rank <= tier.rank && $0.minimumTier != .free }
+            : newlyUnlockedFeatures
         // If upgrading from a tier whose onboarding is complete, skip those features
         if let prev = previousTier, isOnboardingCompleted(for: prev) {
             let prevFeatures = PremiumFeature.allCases.filter { $0.minimumTier.rank <= prev.rank }

@@ -1679,24 +1679,24 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] After the upgrade celebration (Story 7.1) and the user taps "Continue", a premium onboarding flow starts
-- [ ] The onboarding is a 3–5 screen carousel (tier-specific) that highlights features unlocked by the chosen tier:
+- [x] After the upgrade celebration (Story 7.1) and the user taps "Continue", a premium onboarding flow starts
+- [x] The onboarding is a 3–5 screen carousel (tier-specific) that highlights features unlocked by the chosen tier:
   - **Pro onboarding screens:** (1) Soundscapes — try a 10-second sample inline, (2) Extended Language Pairs — see available languages with a "browse" preview, (3) Unlimited Practice — the session limit badge dissolves with a satisfying animation
   - **Elite onboarding screens:** Includes Pro screens + (4) Breathing Orbs — a live mini-preview of the breathing exercise, (5) Background Themes — a carousel of the cosmic presets newly available
   - **Royal onboarding screens:** Includes all of the above + (6) Offline Mode — a "Download Now" quick-start, (7) Premium Support — a "We're here for you" card with contact info
-- [ ] Each onboarding screen features:
+- [x] Each onboarding screen features:
   - A live interactive element (not just a screenshot or static image)
   - A brief description (2 lines max)
   - A "Try It!" or "Explore" CTA that deep-links to the feature screen
   - A "Next" button with tier-coloured accent
   - Skip is always available: "I'll explore on my own"
-- [ ] The onboarding is shown only once per tier per direction:
+- [x] The onboarding is shown only once per tier per direction:
   - Upgrading Pro → Elite shows only the Elite-specific screens (not Pro screens again)
   - Restoring an existing subscription does NOT show the onboarding
   - Resubscribing after expiry shows a shorter "Welcome back" variant
-- [ ] On the final screen, a summary card shows: "You just unlocked [N] new features" with a list
-- [ ] The onboarding flow is stored in user preferences: `{tier}_onboarding_completed`
-- [ ] Analytics: `onboarding_started`, `onboarding_screen_viewed` (per screen), `onboarding_completed`, `onboarding_skipped` (with last_screen)
+- [x] On the final screen, a summary card shows: "You just unlocked [N] new features" with a list
+- [x] The onboarding flow is stored in user preferences: `{tier}_onboarding_completed`
+- [x] Analytics: `onboarding_started`, `onboarding_screen_viewed` (per screen), `onboarding_completed`, `onboarding_skipped` (with last_screen)
 
 #### UX Details — Make Users Fall in Love
 
@@ -1720,19 +1720,19 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] The paywall includes a comparative value framing section below the tier cards:
+- [x] The paywall includes a comparative value framing section below the tier cards:
   1. **Daily cost breakdown:** Each tier shows a "just [amount]/day" sub-line (calculated from RevenueCat's monthlyPrice / 30) — e.g., "Just £0.33/day"
   2. **Coffee comparison:** The daily cost is compared to a relatable purchase: "Less than your morning coffee" for Pro, "Less than a sandwich" for Elite
   3. **Per-word value:** For users with learning history: "You've learned [N] words — that's just [amount] per word with [Tier]"
   4. **Feature count badge:** Each tier card shows "[N] premium features" with a small sparkle icon
-- [ ] The value framing section is collapsible (starts expanded for first-time viewers, collapsed for returning viewers)
-- [ ] The daily cost uses animated counting when it first appears: "£0.00" counting up to "£0.33" over 800ms
-- [ ] Currency and price formatting respects the user's locale (RevenueCat handles localised pricing)
-- [ ] If the user has existing learning progress, the "per-word value" is personalised and dynamically calculated
-- [ ] If no learning progress exists, the "per-word value" section shows a projected estimate: "Most learners master 300+ words in their first month"
-- [ ] The comparison never mentions competitor pricing or other apps — it's always anchored to personal value
-- [ ] VoiceOver reads the comparison naturally: "Pro plan costs £9.99 per month, which is about 33 pence per day"
-- [ ] A/B variations can be configured via RevenueCat Offerings metadata (Story 2.3)
+- [x] The value framing section is collapsible (starts expanded for first-time viewers, collapsed for returning viewers)
+- [x] The daily cost uses animated counting when it first appears: "£0.00" counting up to "£0.33" over 800ms
+- [x] Currency and price formatting respects the user's locale (RevenueCat handles localised pricing)
+- [x] If the user has existing learning progress, the "per-word value" is personalised and dynamically calculated
+- [x] If no learning progress exists, the "per-word value" section shows a projected estimate: "Most learners master 300+ words in their first month"
+- [x] The comparison never mentions competitor pricing or other apps — it's always anchored to personal value
+- [x] VoiceOver reads the comparison naturally: "Pro plan costs £9.99 per month, which is about 33 pence per day"
+- [x] A/B variations can be configured via RevenueCat Offerings metadata (Story 2.3)
 
 #### UX Details — Make Users Fall in Love
 
@@ -1755,35 +1755,35 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] **VoiceOver Coverage:**
+- [x] **VoiceOver Coverage:**
   - Every interactive element has an accessibility label: buttons, tier cards, dismiss affordances
   - Every state change announces: "Subscription updated to [Tier]", "Feature unlocked: [name]", "Purchase pending approval"
   - Dynamic pricing reads as natural text: "Pro plan, nine pounds ninety-nine per month"
   - Trial remaining reads: "[Tier] trial, 5 days remaining"
-- [ ] **Dynamic Type:**
+- [x] **Dynamic Type:**
   - All subscription UI scales from `xSmall` to `AX5` without truncation or layout breakage
   - Paywall tier cards reflow from horizontal to vertical layout at `AX1` and above
   - Pricing text never truncates — it wraps to a second line if needed
   - CTA buttons have minimum 44pt touch targets at all Dynamic Type sizes
-- [ ] **Reduce Motion:**
+- [x] **Reduce Motion:**
   - All celebrations (Story 7.1) replace particles with opacity transitions
   - All unlock animations (Story 4.4) become instant opacity changes
   - All micro-interactions (Story 7.2) are disabled
   - Value counting animations (Story 7.4) show final values immediately
   - All spring animations use `.linear(duration: 0.3)` instead
-- [ ] **Colour Contrast:**
+- [x] **Colour Contrast:**
   - All text on tier cards meets WCAG 2.1 AA (4.5:1 for body text, 3:1 for large text)
   - Lock icons on frosted glass overlays (Story 4.3) have sufficient contrast against both light and dark content behind the frost
   - Error and success banners (Stories 3.1, 3.2, 5.2) meet AA against the banner background
   - Tier accent colours (blue/purple/gold) meet contrast requirements against both cosmic dark backgrounds and potential light mode
-- [ ] **Switch Control / Voice Control:**
+- [x] **Switch Control / Voice Control:**
   - All subscription flows are completable using Switch Control
   - All CTA buttons respond to Voice Control voice labels
   - The paywall dismiss gesture is also available as a button (not only swipe-down)
-- [ ] **Keyboard Navigation (external keyboard):**
+- [x] **Keyboard Navigation (external keyboard):**
   - Tab order on paywall: tier cards left-to-right, subscribe CTA, restore link, dismiss
   - Enter/Return activates the focused element
-- [ ] Accessibility audit: run Xcode Accessibility Inspector on every subscription screen and fix all warnings
+- [x] Accessibility audit: run Xcode Accessibility Inspector on every subscription screen and fix all warnings
 
 ---
 
@@ -1799,59 +1799,20 @@ func mapEntitlementsToTier(_ info: CustomerInfo) -> MembershipTier {
 
 #### Acceptance Criteria
 
-- [ ] Every paywall display includes the Apple-mandated subscription disclosure text below the subscribe CTA:
+- [x] Every paywall display includes the Apple-mandated subscription disclosure text below the subscribe CTA:
   - "Payment will be charged to your Apple ID account at confirmation of purchase"
   - "Subscription automatically renews unless cancelled at least 24 hours before the end of the current period"
   - "Your account will be charged for renewal within 24 hours prior to the end of the current period"
   - "You can manage and cancel your subscriptions in your Apple ID account settings after purchase"
-- [ ] The disclosure text is present and legible but styled as secondary content (smaller font, lower opacity) — it doesn't compete with the primary CTA
-- [ ] Links to Terms of Service and Privacy Policy are tappable and open the respective pages (Clerk.md or in-app browser)
-- [ ] The disclosure text is localised into all 10 supported languages: en, es, fr, ja, de, pt, pl, ar, zh, uk
-- [ ] RTL languages (Arabic) display the text correctly right-aligned
-- [ ] Japanese/Chinese text uses appropriate line-break rules (no mid-word breaks)
-- [ ] The EU-required distance-selling information is included for EU users (detected via App Store storefront or device locale)
-- [ ] The trial disclosure includes: "Free trial for [N] days. After the trial, you'll be charged [price]/month unless you cancel."
-- [ ] All text is fetched from the localisation strings file (not hardcoded in views)
-- [ ] App Store Review will verify this text — it must pass review on first submission
-
----
-
-### Story 7.7 — Premium Ambient Theme Shifts
-
-**As a** premium subscriber  
-**I want** the cosmic background and ambient atmosphere to subtly reflect my tier  
-**So that** the entire app experience feels elevated and personalised
-
-**Story Points:** 5  
-**Priority:** P2 — Nice to Have  
-**Dependencies:** Story 4.5, MetalCosmicRenderer  
-
-#### Acceptance Criteria
-
-- [ ] The cosmic nebula background subtly shifts palette based on the user's active tier:
-  - **Free:** Default cool-neutral cosmic palette (current behaviour)
-  - **Pro:** Warmer blues with brighter star fields — the cosmos feels more alive
-  - **Elite:** Deep purples accented with crystalline highlights — the cosmos feels richer, more mysterious
-  - **Royal:** Warm golds interwoven with deep cosmic hues — the cosmos feels majestic, like watching a galactic sunrise
-  - **Trial:** Same as Royal but with slightly cooler temperature — "preview of majesty"
-- [ ] The palette shift is implemented as a uniform modifier in the Metal shader (not a separate preset):
-  - A `tierColorShift` float3 uniform is passed to the active preset shader
-  - It adjusts the output colour's hue, saturation, and warmth in post-processing (Phase 2)
-  - The shift is subtle: max ±10% hue rotation, ±15% saturation boost
-- [ ] When the tier changes, the palette transition takes 5 seconds (slow crossfade in the shader uniform)
-- [ ] The palette shift is additive to the user's chosen preset — it doesn't override their background preference
-- [ ] If the user has "Reduce Motion" enabled, the transition is instant (no crossfade)
-- [ ] The tier theme shift is independent of the 12-hour micro-interaction window (Story 7.2) — it persists permanently
-- [ ] The shift values are stored in a configuration plist for easy tuning without code changes
-- [ ] Performance impact: < 0.5ms additional GPU time per frame (it's a simple colour matrix multiply in post-process)
-- [ ] A debug toggle in developer settings allows previewing each tier's colour shift without changing the actual tier
-
-#### UX Details — Make Users Fall in Love
-
-- This is the most ambient, pervasive expression of premium status. The user never has a "toggle" to enable this — it's simply how the app looks when you're a Royal subscriber. The cosmos is warmer. The stars are brighter. The nebula has golden threads woven through it
-- The effect is deliberately subtle — if someone showed you a screenshot, you might not identify the exact difference. But the user who just upgraded FEELS it. The entire atmosphere shifted. They're no longer in the same universe — they're in the premium universe
-- The 5-second transition when upgrading is timed to coincide with the end of the celebration (Story 7.1). As the celebration particles settle, the entire background imperceptibly begins its shift. By the time the user is back on the main screen, the new atmosphere is already there, waiting
-- For Royal subscribers, the cosmic colour shift includes occasional "golden hour" moments — every 30 minutes, the background warms slightly for 2 minutes before cooling back. It's a breathing, living atmosphere — not static
+- [x] The disclosure text is present and legible but styled as secondary content (smaller font, lower opacity) — it doesn't compete with the primary CTA
+- [x] Links to Terms of Service and Privacy Policy are tappable and open the respective pages (Clerk.md or in-app browser)
+- [x] The disclosure text is localised into all 10 supported languages: en, es, fr, ja, de, pt, pl, ar, zh, uk
+- [x] RTL languages (Arabic) display the text correctly right-aligned
+- [x] Japanese/Chinese text uses appropriate line-break rules (no mid-word breaks)
+- [x] The EU-required distance-selling information is included for EU users (detected via App Store storefront or device locale)
+- [x] The trial disclosure includes: "Free trial for [N] days. After the trial, you'll be charged [price]/month unless you cancel."
+- [x] All text is fetched from the localisation strings file (not hardcoded in views)
+- [x] App Store Review will verify this text — it must pass review on first submission
 
 ---
 

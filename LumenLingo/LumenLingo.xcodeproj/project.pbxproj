@@ -94,6 +94,7 @@
 		51F37E91BA985E1B866F4DBB /* flashcards_polish_english.json in Resources */ = {isa = PBXBuildFile; fileRef = A09DE5B1813E2A548A69FE53 /* flashcards_polish_english.json */; };
 		51F8F1F25214F416831EDB21 /* grammar_polish_japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = 86217728B7FFADD692A67832 /* grammar_polish_japanese.json */; };
 		51F9957933F8A2A36D03865A /* TierBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F283713D80218498D7120 /* TierBadgeView.swift */; };
+		53F7E6A15346C4B04EF86217 /* ValueFramingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBBC6129F78EDC08F3BD595 /* ValueFramingSection.swift */; };
 		5410ECB257F95DD11603527F /* flashcards_polish_arabic.json in Resources */ = {isa = PBXBuildFile; fileRef = 2426F02F8E3AB9B6634761D6 /* flashcards_polish_arabic.json */; };
 		54AC3A74B3978CA3F0A99E25 /* PaywallSkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB162C29BE342EFCC1DB478 /* PaywallSkeletonView.swift */; };
 		556088FCAAB11559220BFA41 /* flashcards_english_french.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6C857CACD14B5F9D11A9BE /* flashcards_english_french.json */; };
@@ -423,6 +424,7 @@
 		4C476BFA1673DE127430A20B /* PracticeTimeBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimeBanner.swift; sourceTree = "<group>"; };
 		4CFABA29BF47EF565F6ACFF2 /* LegalReconsentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalReconsentView.swift; sourceTree = "<group>"; };
 		4D8094790693AC9E42966B5F /* QuantumFlowSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumFlowSettingsView.swift; sourceTree = "<group>"; };
+		4DBBC6129F78EDC08F3BD595 /* ValueFramingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueFramingSection.swift; sourceTree = "<group>"; };
 		4DCFB0CC96C4AA4F7E7FC737 /* LagoonStars.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LagoonStars.metal; sourceTree = "<group>"; };
 		4DFF01D34AAF3901078DA05B /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
 		4E3D301DA2A58D1C7D9B0EF2 /* QARevenueCatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QARevenueCatSection.swift; sourceTree = "<group>"; };
@@ -936,6 +938,7 @@
 				DFFCAB9270E7EDFE53A120B2 /* TrialConfirmationView.swift */,
 				14117EBFC8212F28D65628C1 /* TrialEndedView.swift */,
 				8D758E0FCC818F2BA8CE747E /* UpgradePromptView.swift */,
+				4DBBC6129F78EDC08F3BD595 /* ValueFramingSection.swift */,
 				04E3E328AAED9304E3E31882 /* WelcomeBackSheet.swift */,
 			);
 			path = Membership;
@@ -1827,6 +1830,7 @@
 				E374714E6F741D49D839BDB9 /* UpgradePromptManager.swift in Sources */,
 				EB14E6E4C10C13B33A501ED1 /* UpgradePromptView.swift in Sources */,
 				6DB0EAE681F4C106121B4CC5 /* UserAvatarView.swift in Sources */,
+				53F7E6A15346C4B04EF86217 /* ValueFramingSection.swift in Sources */,
 				2C9F4233E25374F0735AC2A7 /* ViewMyDataView.swift in Sources */,
 				016A5792B73AF67510461454 /* WeeklyTrendWidget.swift in Sources */,
 				B1BFAB06DD2E3F6560BB4E59 /* WelcomeBackSheet.swift in Sources */,

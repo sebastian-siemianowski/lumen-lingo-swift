@@ -230,6 +230,7 @@ struct TierUpgradeCelebrationView: View {
             .accessibilityElement(children: .combine)
             .accessibilityLabel(voiceOverAnnouncement)
             .accessibilityAddTraits(.isButton)
+            .accessibilityHint("Tap anywhere to skip celebration")
         }
         .ignoresSafeArea()
     }

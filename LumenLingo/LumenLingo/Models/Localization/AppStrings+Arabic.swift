@@ -455,6 +455,17 @@ extension AppStrings {
         onboardingWelcomeBack: "مرحبًا بعودتك! إليك ما لديك",
         onboardingDone: "هيا بنا!",
 
+        // MARK: - Value Framing (Story 7.4)
+        valueFramingTitle: "استثمارك",
+        valueFramingJust: "فقط",
+        valueFramingPerDay: "/يوم",
+        valueFramingFeatures: "ميزات",
+        valueFramingCoffeePro: "أقل من قهوة الصباح",
+        valueFramingCoffeeElite: "أقل من ساندويتش",
+        valueFramingCoffeeRoyal: "أقل من وجبة غداء",
+        valueFramingWordsLearned: "لقد تعلمت {count} كلمة — هذا فقط {cost} لكل كلمة مع {tier}",
+        valueFramingProjected: "معظم المتعلمين يتقنون أكثر من 300 كلمة في شهرهم الأول",
+
         // MARK: - Legal Consent
         legalConsentTitle: "قبل أن نبدأ",
         legalConsentSubtitle: "يرجى مراجعة سياساتنا لمتابعة استخدام LumenLingo",

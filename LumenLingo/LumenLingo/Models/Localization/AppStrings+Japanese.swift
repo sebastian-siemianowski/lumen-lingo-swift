@@ -457,6 +457,17 @@ extension AppStrings {
         onboardingWelcomeBack: "おかえりなさい！ご利用可能な機能",
         onboardingDone: "はじめましょう！",
 
+        // MARK: - Value Framing (Story 7.4)
+        valueFramingTitle: "あなたの投資",
+        valueFramingJust: "たった",
+        valueFramingPerDay: "/日",
+        valueFramingFeatures: "機能",
+        valueFramingCoffeePro: "朝のコーヒーより安い",
+        valueFramingCoffeeElite: "サンドイッチより安い",
+        valueFramingCoffeeRoyal: "ランチ1回分より安い",
+        valueFramingWordsLearned: "{count}個の単語を学びました — {tier}なら1単語あたりわずか{cost}",
+        valueFramingProjected: "ほとんどの学習者が初月に300以上の単語を習得します",
+
         // MARK: - Legal Consent
         legalConsentTitle: "始める前に",
         legalConsentSubtitle: "LumenLingoを引き続きご利用いただくため、ポリシーをご確認ください",

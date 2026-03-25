@@ -457,6 +457,17 @@ extension AppStrings {
         onboardingWelcomeBack: "欢迎回来！这是您的功能",
         onboardingDone: "开始吧！",
 
+        // MARK: - Value Framing (Story 7.4)
+        valueFramingTitle: "您的投资",
+        valueFramingJust: "仅需",
+        valueFramingPerDay: "/天",
+        valueFramingFeatures: "项功能",
+        valueFramingCoffeePro: "比一杯早晨咖啡还便宜",
+        valueFramingCoffeeElite: "比一个三明治还便宜",
+        valueFramingCoffeeRoyal: "比一顿午餐还便宜",
+        valueFramingWordsLearned: "您已学习了{count}个单词 — 使用{tier}每个单词仅需{cost}",
+        valueFramingProjected: "大多数学习者在第一个月就能掌握300多个单词",
+
         // MARK: - Legal Consent
         legalConsentTitle: "开始之前",
         legalConsentSubtitle: "请查看我们的政策以继续使用 LumenLingo",

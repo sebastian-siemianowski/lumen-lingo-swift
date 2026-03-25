@@ -469,6 +469,17 @@ struct AppStrings: Sendable {
     let onboardingWelcomeBack: String       // "Welcome back! Here's what you have"
     let onboardingDone: String              // "Let's Go!"
 
+    // MARK: - Value Framing (Story 7.4)
+    let valueFramingTitle: String           // "Your Investment"
+    let valueFramingJust: String            // "Just"
+    let valueFramingPerDay: String          // "/day"
+    let valueFramingFeatures: String        // "features"
+    let valueFramingCoffeePro: String       // "Less than your morning coffee"
+    let valueFramingCoffeeElite: String     // "Less than a sandwich"
+    let valueFramingCoffeeRoyal: String     // "Less than a lunch out"
+    let valueFramingWordsLearned: String    // "You've learned {count} words — that's just {cost} per word with {tier}"
+    let valueFramingProjected: String       // "Most learners master 300+ words in their first month"
+
     // MARK: - Legal Consent
     let legalConsentTitle: String            // "Before We Begin"
     let legalConsentSubtitle: String         // "Please review and accept..."

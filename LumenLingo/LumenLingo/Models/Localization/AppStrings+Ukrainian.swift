@@ -457,6 +457,17 @@ extension AppStrings {
         onboardingWelcomeBack: "З поверненням! Ось ваші функції",
         onboardingDone: "Почнімо!",
 
+        // MARK: - Value Framing (Story 7.4)
+        valueFramingTitle: "Ваша інвестиція",
+        valueFramingJust: "Лише",
+        valueFramingPerDay: "/день",
+        valueFramingFeatures: "функцій",
+        valueFramingCoffeePro: "Менше, ніж ранкова кава",
+        valueFramingCoffeeElite: "Менше, ніж сендвіч",
+        valueFramingCoffeeRoyal: "Менше, ніж обід у ресторані",
+        valueFramingWordsLearned: "Ви вивчили {count} слів — це лише {cost} за слово з {tier}",
+        valueFramingProjected: "Більшість учнів опановують понад 300 слів за перший місяць",
+
         // MARK: - Legal Consent
         legalConsentTitle: "Перш ніж почати",
         legalConsentSubtitle: "Будь ласка, ознайомтеся з нашими правилами, щоб продовжити користування LumenLingo",

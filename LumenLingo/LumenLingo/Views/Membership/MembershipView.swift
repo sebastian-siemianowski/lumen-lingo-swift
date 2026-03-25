@@ -10,6 +10,8 @@ struct MembershipView: View {
     @Environment(\.localization) private var localization
     @Environment(\.dismiss) private var dismiss
     @Environment(\.horizontalSizeClass) private var sizeClass
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Environment(TierManager.self) private var tierManager
     @Environment(SubscriptionManager.self) private var subscriptionManager
     @Environment(\.revenueCatService) private var revenueCatService
@@ -49,6 +51,12 @@ struct MembershipView: View {
                     heroSection
                     tiersSection
 
+                    // Story 7.4: Value framing below tier cards
+                    ValueFramingSection(
+                        wordsLearned: profile?.totalXP,
+                        selectedTierId: selectedTierId
+                    )
+
                     // Story 2.6: Social proof & trust signals
                     SocialProofSection()
 
@@ -64,7 +72,7 @@ struct MembershipView: View {
                                 switch outcome {
                                 case .restored(let tier):
                                     PaywallAnalytics.trackRestoreTapped(context: paywallContext, result: "restored")
-                                    withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                                    withAnimation(reduceMotion ? .none : .spring(response: 0.30, dampingFraction: 0.50)) {
                                         selectedTierId = tier.rawValue
                                     }
                                     tierManager.selectTier(tier.rawValue, profile: profile)
@@ -107,7 +115,7 @@ struct MembershipView: View {
             }
             .padding(.horizontal, 16)
             .padding(.top, 12)
-            .animation(.easeInOut(duration: 0.3), value: subscriptionManager.offeringsState.isLoaded)
+            .animation(reduceMotion ? .none : .easeInOut(duration: 0.3), value: subscriptionManager.offeringsState.isLoaded)
         }
         .background(
             Group {
@@ -188,7 +196,7 @@ struct MembershipView: View {
                     .allowsHitTesting(false)
             }
         }
-        .animation(.easeOut(duration: 0.2), value: subscriptionManager.showGoldenFlash)
+        .animation(reduceMotion ? .none : .easeOut(duration: 0.2), value: subscriptionManager.showGoldenFlash)
         // Story 3.1: Error banner
         .overlay(alignment: .top) {
             if let errorMsg = subscriptionManager.errorMessage {
@@ -200,7 +208,7 @@ struct MembershipView: View {
                 .zIndex(100)
             }
         }
-        .animation(.spring(response: 0.35, dampingFraction: 0.7), value: subscriptionManager.errorMessage)
+        .animation(reduceMotion ? .none : .spring(response: 0.35, dampingFraction: 0.7), value: subscriptionManager.errorMessage)
         // Story 3.1: Deferred purchase message
         .overlay(alignment: .center) {
             if subscriptionManager.showDeferredMessage {
@@ -211,7 +219,7 @@ struct MembershipView: View {
                 .zIndex(101)
             }
         }
-        .animation(.spring(response: 0.35, dampingFraction: 0.75), value: subscriptionManager.showDeferredMessage)
+        .animation(reduceMotion ? .none : .spring(response: 0.35, dampingFraction: 0.75), value: subscriptionManager.showDeferredMessage)
         // Story 3.2: Restore banner
         .overlay(alignment: .top) {
             if let restoreMsg = subscriptionManager.restoreBannerMessage {
@@ -225,7 +233,7 @@ struct MembershipView: View {
                 .zIndex(102)
             }
         }
-        .animation(.spring(response: 0.35, dampingFraction: 0.7), value: subscriptionManager.restoreBannerMessage)
+        .animation(reduceMotion ? .none : .spring(response: 0.35, dampingFraction: 0.7), value: subscriptionManager.restoreBannerMessage)
     }
 
     // MARK: - Hero
@@ -357,7 +365,7 @@ struct MembershipView: View {
                         )
                 }
             }
-            .animation(.spring(response: 0.3, dampingFraction: 0.7), value: selectedTierId)
+            .animation(reduceMotion ? .none : .spring(response: 0.3, dampingFraction: 0.7), value: selectedTierId)
         }
     }
 
@@ -381,7 +389,7 @@ struct MembershipView: View {
                                 : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
                         )
                         .rotationEffect(.degrees(isComparisonCollapsed ? 0 : 90))
-                        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: isComparisonCollapsed)
+                        .animation(reduceMotion ? .none : .spring(response: 0.35, dampingFraction: 0.8), value: isComparisonCollapsed)
                 }
                 .padding(.vertical, 10)
                 .padding(.horizontal, 20)
@@ -805,6 +813,7 @@ struct MembershipView: View {
 struct TierCardView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.localization) private var localization
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(TierManager.self) private var tierManager
     @Environment(SubscriptionManager.self) private var subscriptionManager
     @Environment(\.revenueCatService) private var revenueCatService
@@ -1023,6 +1032,7 @@ struct TierCardView: View {
                         .scaleEffect(currentBadgePulse ? 1.06 : 1.0)
                         .opacity(currentBadgePulse ? 1.0 : 0.85)
                         .onAppear {
+                            guard !reduceMotion else { return }
                             withAnimation(.easeInOut(duration: 1.8).repeatForever(autoreverses: true)) {
                                 currentBadgePulse = true
                             }
@@ -1113,7 +1123,7 @@ struct TierCardView: View {
                         showTrialConfirmation = true
                     }
                 } else if tier.id == "free" {
-                    withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                    withAnimation(reduceMotion ? .none : .spring(response: 0.30, dampingFraction: 0.50)) {
                         selectedTierId = tier.id
                     }
                     tierManager.selectTier(tier.id, profile: profile)
@@ -1202,7 +1212,7 @@ struct TierCardView: View {
                 )
                 // Story 3.1: Button compression micro-transition
                 .scaleEffect(buttonCompressed ? 0.96 : 1.0)
-                .animation(.spring(response: 0.15, dampingFraction: 0.6), value: buttonCompressed)
+                .animation(reduceMotion ? .none : .spring(response: 0.15, dampingFraction: 0.6), value: buttonCompressed)
             }
             .buttonStyle(PremiumCTAButtonStyle(glowColor: tier.gradientColors.first ?? .purple))
             .disabled(isActuallyCurrent || tier.isDisabled || subscriptionManager.isPurchasing)
@@ -1283,7 +1293,7 @@ struct TierCardView: View {
                     lineWidth: 2
                 )
                 .opacity(subscriptionManager.cancelHighlightTier == membershipTier ? 1 : 0)
-                .animation(.easeInOut(duration: 0.3), value: subscriptionManager.cancelHighlightTier)
+                .animation(reduceMotion ? .none : .easeInOut(duration: 0.3), value: subscriptionManager.cancelHighlightTier)
         )
         .background(
             ZStack {
@@ -1340,8 +1350,8 @@ struct TierCardView: View {
             }
         }
         .scaleEffect(isCardPressed ? 0.98 : 1.0)
-        .animation(.spring(response: 0.3, dampingFraction: 0.65), value: isCardPressed)
-        .animation(.spring(response: 0.3, dampingFraction: 0.65), value: isActuallyCurrent)
+        .animation(reduceMotion ? .none : .spring(response: 0.3, dampingFraction: 0.65), value: isCardPressed)
+        .animation(reduceMotion ? .none : .spring(response: 0.3, dampingFraction: 0.65), value: isActuallyCurrent)
         .onLongPressGesture(minimumDuration: .infinity, pressing: { pressing in
             isCardPressed = pressing
         }, perform: {})
@@ -1434,12 +1444,12 @@ struct TierCardView: View {
 
     private func startPurchaseFlow(for mt: MembershipTier) {
         // Button compression micro-transition
-        withAnimation(.spring(response: 0.15, dampingFraction: 0.6)) {
+        withAnimation(reduceMotion ? .none : .spring(response: 0.15, dampingFraction: 0.6)) {
             buttonCompressed = true
         }
         HapticsService.shared.medium()
         // Shimmer sweep then purchase
-        withAnimation(.easeInOut(duration: 0.35)) {
+        withAnimation(reduceMotion ? .none : .easeInOut(duration: 0.35)) {
             buttonShimmerPhase = 1.0
         }
         // Story 6.4: paywall_purchase_initiated
@@ -1464,12 +1474,12 @@ struct TierCardView: View {
                     tier: purchasedTier.rawValue,
                     isUpgrade: purchasedTier.rawValue != previousTier
                 )
-                withAnimation(.easeOut(duration: 0.2)) {
+                withAnimation(reduceMotion ? .none : .easeOut(duration: 0.2)) {
                     subscriptionManager.showGoldenFlash = true
                 }
                 try? await Task.sleep(for: .milliseconds(200))
                 subscriptionManager.showGoldenFlash = false
-                withAnimation(.spring(response: 0.30, dampingFraction: 0.50)) {
+                withAnimation(reduceMotion ? .none : .spring(response: 0.30, dampingFraction: 0.50)) {
                     selectedTierId = purchasedTier.rawValue
                 }
                 tierManager.selectTier(purchasedTier.rawValue, profile: profile)
@@ -1489,11 +1499,11 @@ struct TierCardView: View {
 
     private func animatePriceReveal() {
         // Price scales in over 600ms
-        withAnimation(.spring(response: 0.6, dampingFraction: 0.75).delay(0.15)) {
+        withAnimation(reduceMotion ? .none : .spring(response: 0.6, dampingFraction: 0.75).delay(0.15)) {
             priceRevealed = true
         }
         // Daily cost slides up 300ms after price
-        withAnimation(.spring(response: 0.5, dampingFraction: 0.7).delay(0.45)) {
+        withAnimation(reduceMotion ? .none : .spring(response: 0.5, dampingFraction: 0.7).delay(0.45)) {
             dailCostRevealed = true
         }
     }

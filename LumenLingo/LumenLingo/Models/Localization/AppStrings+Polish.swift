@@ -457,6 +457,17 @@ extension AppStrings {
         onboardingWelcomeBack: "Witaj ponownie! Oto Twoje funkcje",
         onboardingDone: "Zaczynajmy!",
 
+        // MARK: - Value Framing (Story 7.4)
+        valueFramingTitle: "Twoja inwestycja",
+        valueFramingJust: "Tylko",
+        valueFramingPerDay: "/dzień",
+        valueFramingFeatures: "funkcji",
+        valueFramingCoffeePro: "Mniej niż poranna kawa",
+        valueFramingCoffeeElite: "Mniej niż kanapka",
+        valueFramingCoffeeRoyal: "Mniej niż lunch w restauracji",
+        valueFramingWordsLearned: "Nauczyłeś się {count} słów — to tylko {cost} za słowo z {tier}",
+        valueFramingProjected: "Większość uczniów opanowuje ponad 300 słów w pierwszym miesiącu",
+
         // MARK: - Legal Consent
         legalConsentTitle: "Zanim zaczniemy",
         legalConsentSubtitle: "Zapoznaj się z naszymi zasadami, aby kontynuować korzystanie z LumenLingo",
