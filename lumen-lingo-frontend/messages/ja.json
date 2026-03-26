@@ -456,101 +456,101 @@
   },
   "Privacy": {
     "meta": {
-      "title": "Privacy Policy",
-      "description": "Read how Lumenshore handles your data with care across the LumenLingo iOS app and lumenlingo.com website. Privacy-first approach, on-device processing, GDPR, CCPA and your rights.",
-      "ogTitle": "Privacy Policy — LumenLingo"
+      "title": "プライバシーポリシー",
+      "description": "LumenLingo iOSアプリおよびlumenlingo.comにおいて、Lumenshoreがお客様のデータをどのように取り扱っているかをお読みください。プライバシーファーストのアプローチ、デバイス上での処理、GDPR、CCPAおよびお客様の権利。",
+      "ogTitle": "プライバシーポリシー — LumenLingo"
     },
-    "breadcrumb": "Privacy Policy",
+    "breadcrumb": "プライバシーポリシー",
     "hero": {
-      "heading": "Privacy Policy",
-      "subtitle": "Your privacy matters deeply to us. Here’s exactly how we handle your data across the LumenLingo app and website — in plain English, not legal jargon."
+      "heading": "プライバシーポリシー",
+      "subtitle": "お客様のプライバシーは私たちにとって非常に重要です。LumenLingoアプリおよびウェブサイトでのデータの取り扱い方法を、法律用語ではなくわかりやすい言葉でご説明します。"
     },
     "overview": {
-      "heading": "Overview",
-      "p1": "Lumenshore Limited (“Lumenshore”, “we”, “us”, or “our”), company number 09607326, registered at Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA, operates the LumenLingo mobile application (the “App”) and the lumenlingo.com website (the “Website”). This Privacy Policy explains how we collect, use, store, and protect information when you use either platform.",
-      "p2": "We built LumenLingo with a privacy-first architecture. On the iOS app, your learning data is processed and stored on your device and in your personal iCloud account — not on our servers. On the website, we collect minimal data necessary to operate the service and improve your experience. We believe your data is yours, and it should stay that way.",
-      "p3": "This policy is organised into two sections — Website and iOS App — so you can quickly find the information relevant to you."
+      "heading": "概要",
+      "p1": "Lumenshore Limited（「Lumenshore」、「当社」、「私たち」）、会社番号09607326、登録住所：Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA は、LumenLingoモバイルアプリケーション（「アプリ」）およびlumenlingo.comウェブサイト（「ウェブサイト」）を運営しています。本プライバシーポリシーは、いずれかのプラットフォームをご利用の際に、当社がどのように情報を収集、使用、保存、保護するかを説明します。",
+      "p2": "LumenLingoはプライバシーファーストのアーキテクチャで構築されています。iOSアプリでは、学習データはお客様のデバイスと個人のiCloudアカウントで処理・保存され、当社のサーバーには保存されません。ウェブサイトでは、サービスの運営とお客様の体験向上に必要な最小限のデータのみを収集しています。お客様のデータはお客様のものであり、そうあるべきだと考えています。",
+      "p3": "このポリシーは、ウェブサイトとiOSアプリの2つのセクションに分かれており、関連する情報をすばやく見つけることができます。"
     },
     "websiteData": {
-      "heading": "Website Data Collection",
-      "intro": "When you visit lumenlingo.com, we may collect the following data:",
-      "li1": "<b>Email address</b> — if you sign up for our newsletter or join the waitlist. We collect your email solely to send you product updates and launch notifications. You can unsubscribe at any time.",
-      "li2": "<b>Language preference</b> — if you join the waitlist, we record which language you’re interested in to tailor future communications.",
-      "li3": "<b>Campaign attribution (UTM parameters)</b> — we capture UTM parameters (source, medium, campaign) from URLs in your browser’s sessionStorage to understand which marketing channels are effective. This data is not tied to your identity and is cleared when you close your browser tab.",
-      "li4": "<b>Anonymous page views</b> — we use Vercel Analytics, a cookie-free, privacy-respecting analytics service, to count page visits. No personal data is collected, no cookies are set, and no individual users are identified.",
-      "li5": "<b>Anonymous performance metrics</b> — we use Vercel Speed Insights to measure page load times and core web vitals. This data is fully anonymous and helps us keep the website fast.",
-      "li6": "<b>Error data and session replays</b> — we use Sentry for error monitoring. With your consent, Sentry may record session replays to help us diagnose and fix bugs. See the ‘Sentry Session Replay’ section below for full details.",
-      "li7": "<b>IP addresses</b> — your IP address is processed transiently by our API routes for rate limiting (to prevent abuse). IP addresses are not stored or logged by us."
+      "heading": "ウェブサイトのデータ収集",
+      "intro": "lumenlingo.comにアクセスされた際、以下のデータを収集する場合があります：",
+      "li1": "<b>メールアドレス</b> — ニュースレターに登録された場合、またはウェイトリストに参加された場合。製品アップデートやリリース通知をお送りする目的でのみメールアドレスを収集します。いつでも配信を停止できます。",
+      "li2": "<b>言語設定</b> — ウェイトリストに参加された場合、今後のコミュニケーションをカスタマイズするため、お客様が興味のある言語を記録します。",
+      "li3": "<b>キャンペーンアトリビューション（UTMパラメーター）</b> — ブラウザのsessionStorageからURLのUTMパラメーター（ソース、メディア、キャンペーン）を取得し、どのマーケティングチャネルが効果的かを把握します。このデータはお客様の身元とは関連付けられず、ブラウザのタブを閉じると削除されます。",
+      "li4": "<b>匿名ページビュー</b> — Cookieを使用しないプライバシー配慮型の分析サービスであるVercel Analyticsを使用してページ訪問数をカウントしています。個人データは収集されず、Cookieは設定されず、個人の特定もされません。",
+      "li5": "<b>匿名パフォーマンス指標</b> — ページの読み込み時間とCore Web Vitalsを測定するためにVercel Speed Insightsを使用しています。これらのデータは完全に匿名であり、ウェブサイトの高速性の維持に役立てています。",
+      "li6": "<b>エラーデータとセッションリプレイ</b> — エラー監視にSentryを使用しています。お客様の同意を得た上で、Sentryはバグの診断と修正のためにセッションを記録することがあります。詳細は以下の「Sentryセッションリプレイ」セクションをご覧ください。",
+      "li7": "<b>IPアドレス</b> — お客様のIPアドレスは、レート制限（不正利用防止）のためにAPIルートで一時的に処理されます。IPアドレスは当社により保存または記録されることはありません。"
     },
     "sentryReplay": {
-      "heading": "Sentry Session Replay",
-      "p1": "We use Sentry (operated by Functional Software, Inc.) for error monitoring on our website. Sentry’s session replay feature records page interactions (clicks, scrolls, navigation) to help us reproduce and fix bugs.",
-      "p2": "<b>Sampling rates:</b> Session replays are captured for approximately 0.1% of normal browsing sessions. When an error occurs, the replay capture rate increases to 100% for that session only — this helps us understand exactly what led to the bug.",
-      "p3": "<b>What is captured:</b> Page navigation, clicks, scrolls, and screen content. All text inputs in forms (such as newsletter and waitlist fields) are masked to protect your privacy. Media content is blocked from capture.",
-      "p4": "<b>What is sent:</b> Replay data is transmitted to Sentry’s servers in the United States. It is retained according to Sentry’s data retention policy (typically 90 days).",
-      "p5": "<b>Your control:</b> Session replays are only active if you have given consent via our cookie consent banner. You can change your preference at any time."
+      "heading": "Sentryセッションリプレイ",
+      "p1": "ウェブサイトのエラー監視にSentry（Functional Software, Inc.が運営）を使用しています。Sentryのセッションリプレイ機能は、ページでの操作（クリック、スクロール、ナビゲーション）を記録し、バグの再現と修正に役立てています。",
+      "p2": "<b>サンプリングレート：</b>セッションリプレイは通常のブラウジングセッションの約0.1%で記録されます。エラーが発生した場合、そのセッションに限りキャプチャ率が100%に増加します。これにより、バグの原因を正確に把握できます。",
+      "p3": "<b>記録される内容：</b>ページナビゲーション、クリック、スクロール、画面コンテンツ。フォームへのテキスト入力（ニュースレターやウェイトリストのフィールドなど）はすべてプライバシー保護のためマスクされます。メディアコンテンツはキャプチャされません。",
+      "p4": "<b>送信先：</b>リプレイデータは米国のSentryサーバーに送信されます。Sentryのデータ保持ポリシー（通常90日間）に従って保持されます。",
+      "p5": "<b>お客様の管理：</b>セッションリプレイは、Cookie同意バナーで同意された場合にのみ有効です。設定はいつでも変更できます。"
     },
     "vercelAnalytics": {
       "heading": "Vercel Analytics & Speed Insights",
-      "p1": "We use Vercel Analytics and Vercel Speed Insights on our website. These services are privacy-focused by design:",
-      "li1": "<b>No cookies</b> — Vercel Analytics does not set any cookies on your device.",
-      "li2": "<b>No personal data</b> — no IP addresses, device fingerprints, or user identifiers are collected.",
-      "li3": "<b>Aggregate only</b> — we see total page view counts and performance metrics, but we cannot identify individual visitors.",
-      "p2": "Both services are operated by Vercel Inc. Data is processed on Vercel’s infrastructure. See <vercelPrivacy>Vercel’s Privacy Policy</vercelPrivacy> for more details."
+      "p1": "ウェブサイトではVercel AnalyticsとVercel Speed Insightsを使用しています。これらのサービスは設計段階からプライバシーに配慮しています：",
+      "li1": "<b>Cookieなし</b> — Vercel Analyticsはお客様のデバイスにCookieを設定しません。",
+      "li2": "<b>個人データなし</b> — IPアドレス、デバイスフィンガープリント、ユーザー識別子は収集されません。",
+      "li3": "<b>集約データのみ</b> — ページビューの総数とパフォーマンス指標は確認できますが、個人の訪問者を特定することはできません。",
+      "p2": "両サービスはVercel Inc.が運営しています。データはVercelのインフラストラクチャで処理されます。詳細は<vercelPrivacy>Vercelのプライバシーポリシー</vercelPrivacy>をご覧ください。"
     },
     "customEvents": {
-      "heading": "Custom Analytics Events",
-      "intro": "In addition to page views, we track the following anonymised events through Vercel Analytics to understand how visitors use our website. No personal data is attached to these events:",
-      "li1": "<b>app_store_click</b> — when a visitor clicks an App Store download link (records link location on the page)",
-      "li2": "<b>pricing_view</b> — when a visitor views the pricing page",
-      "li3": "<b>pricing_cta_click</b> — when a visitor clicks a pricing call-to-action button (records which tier)",
-      "li4": "<b>blog_post_read</b> — when a visitor reads most of a blog post (records the post slug and title)",
-      "li5": "<b>feature_section_view</b> — when a visitor views a feature section on the homepage",
-      "li6": "<b>newsletter_signup</b> — when a visitor signs up for the newsletter (records the page location, not the email)",
-      "li7": "<b>demo_started</b> — when a visitor starts the interactive flashcard demo",
-      "li8": "<b>demo_completed</b> — when a visitor completes the demo (records correct/total scores)",
-      "li9": "<b>demo_cta_click</b> — when a visitor clicks a call-to-action after completing the demo",
-      "li10": "<b>page_not_found</b> — when a visitor lands on a 404 page (records the path)",
-      "li11": "<b>error_page_view</b> — when a visitor sees an error page (records the error message)"
+      "heading": "カスタムイベント（PostHog）",
+      "intro": "ウェブサイトでのユーザー行動を把握しサービスを改善するため、PostHogを使用して分析イベントを追跡しています。すべてのイベントは匿名の識別子に紐づけられ、個人データは収集されません。",
+      "li1": "<b>newsletter_signup</b> — ニュースレターに登録した際に記録されます。取得プロパティ：UTMキャンペーンアトリビューションおよび検出された言語。",
+      "li2": "<b>waitlist_signup</b> — ウェイトリストに参加した際に記録されます。取得プロパティ：UTMキャンペーンアトリビューション、検出された言語、選択された学習言語。",
+      "li3": "<b>waitlist_cta_view</b> — ウェイトリストセクションがユーザーの表示領域に入った際に記録されます（Intersection Observerにより1回のみ発火）。",
+      "li4": "<b>splash_screen_interaction</b> — ユーザーがスプラッシュスクリーンをクリックしてメインサイトに入った際に記録され、スプラッシュスクリーンの表示時間を取得します。",
+      "li5": "<b>cookie_consent</b> — ユーザーがCookie同意バナーで選択した際に記録されます。取得情報：Cookieカテゴリ（分析、機能）、カテゴリの承認/拒否、操作元（バナーまたは設定センター）。",
+      "li6": "<b>faq_toggle</b> — ユーザーがFAQの質問を展開または折りたたんだ際に記録されます。取得情報：質問タイトル、カテゴリ、実行されたアクション（展開/折りたたみ）。",
+      "li7": "<b>language_selection_view</b> — ウェイトリストフォームの言語選択セクションが表示された際に記録されます。",
+      "li8": "<b>language_selected</b> — ユーザーがウェイトリストフォームで学習言語を選択した際に記録されます。取得情報：選択された言語名。",
+      "li9": "<b>page_view_custom</b> — ユーザーがページに訪問した際に記録されます。取得情報：URLパス、UTMパラメーター、言語。",
+      "li10": "<b>notification_bar</b> — ユーザーが通知バーを閉じた際に記録されます。取得情報：通知内容。",
+      "li11": "<b>error_page_view</b> — 訪問者がエラーページを見たとき（エラーメッセージを記録）"
     },
     "serviceWorker": {
-      "heading": "Offline Caching (Service Worker)",
-      "p1": "Our website uses a Service Worker to cache static assets (HTML pages, CSS stylesheets, JavaScript bundles, images, and fonts) on your device. This enables faster page loads on repeat visits and limited offline access.",
-      "p2": "The Service Worker cache is stored entirely on your device and contains no personal data. You can clear it at any time through your browser’s settings (Clear site data). No cached data is sent back to our servers."
+      "heading": "Service Workerとキャッシュ",
+      "p1": "当ウェブサイトでは、静的リソース（ページ、画像、フォント）をキャッシュして再訪問時の読み込みを高速化するためにService Workerを使用しています。Service Workerは個人データを収集、送信、保存しません。オフラインでのパフォーマンス向上のためにブラウザ内でのみ動作します。",
+      "p2": "ブラウザの設定からいつでもキャッシュを削除するか、ブラウザの開発者ツールを使用してService Workerの登録を解除できます。"
     },
     "appData": {
-      "heading": "iOS App Data Collection",
-      "intro": "The LumenLingo iOS app collects minimal data necessary to provide a great learning experience:",
-      "li1": "<b>Learning progress data</b> — flashcard mastery levels, practice scores, streaks, XP, and session history. This data is stored locally on your device and synced via iCloud.",
-      "li2": "<b>App preferences</b> — your selected language pairs, soundscape preferences, visual background choices, and tier selection. Stored on-device and synced via iCloud.",
-      "li3": "<b>Subscription status</b> — your membership tier, managed entirely by Apple through the App Store. We receive a subscription status from Apple but do not process payment information.",
-      "li4": "<b>Anonymous analytics</b> — we may collect aggregated, non-identifiable usage metrics (such as which features are most popular) to improve the app. No personal data is included."
+      "heading": "iOSアプリのデータ",
+      "intro": "LumenLingo iOSアプリはプライバシーファーストのアーキテクチャを採用しています。アプリが保存・処理するデータは以下のとおりです：",
+      "li1": "<b>学習進捗</b> — 間隔反復データ、クイズ結果、学習セッション履歴。AppleのSwiftDataフレームワークを使用してデバイスにローカル保存されます。",
+      "li2": "<b>設定</b> — テーマ、難易度、言語設定などのアプリ設定。デバイスのApple UserDefaultsに保存されます。",
+      "li3": "<b>iCloud同期</b> — 学習データは個人のiCloudアカウントを通じてAppleデバイス間で同期される場合があります。このデータはAppleによって暗号化されており、当社はアクセスできません。",
+      "li4": "<b>サブスクリプション状況</b> — サブスクリプションレベル（無料またはプレミアム）はApple App Storeの課金を通じて確認されます。支払いデータはAppleが独占的に処理し、当社はカード情報や請求情報を閲覧・保存しません。"
     },
     "whatWeDontCollect": {
-      "heading": "What We Don’t Collect",
-      "intro": "Across both our app and website, we want to be clear about what we <b>never</b> collect or do:",
-      "li1": "No location data or GPS coordinates",
-      "li2": "No contacts, photos, or access to other apps on your device",
-      "li3": "No payment or credit card information (Apple handles all app billing)",
-      "li4": "No advertising identifiers or tracking pixels",
-      "li5": "No data sold or shared with third-party advertisers — ever",
-      "li6": "No personal data shared with AI model training services"
+      "heading": "収集しないもの",
+      "intro": "当社が行わないことを明確にしたいと思います：",
+      "li1": "iOSアプリの使用にユーザーアカウントやログインは不要",
+      "li2": "位置情報の追跡や地理情報ツールなし",
+      "li3": "アプリやウェブサイトに広告ネットワークやトラッキングピクセルなし",
+      "li4": "データブローカーや広告主へのデータの販売、貸与、共有なし",
+      "li5": "デバイスフィンガープリント、クロスサイトトラッキング、リターゲティングピクセルなし",
+      "li6": "AIモデルの学習サービスとの個人データ共有なし"
     },
     "legalBasis": {
-      "heading": "Legal Basis for Processing",
-      "intro": "Under GDPR and UK GDPR, we process personal data only when we have a lawful basis. Here is the legal basis for each type of data we handle:",
-      "consentHeading": "Consent (GDPR Art. 6(1)(a))",
-      "consentLi1": "<b>Newsletter signup</b> — you actively provide your email and opt in to receive updates",
-      "consentLi2": "<b>Waitlist signup</b> — you actively provide your email and language preference",
-      "consentLi3": "<b>Sentry session replay</b> — replays are only captured after you give explicit consent via our cookie banner",
-      "legitimateHeading": "Legitimate Interest (GDPR Art. 6(1)(f))",
-      "legitimateLi1": "<b>Vercel Analytics</b> — anonymous, cookie-free page view counting to improve our website. Our interest in understanding site usage is balanced against minimal privacy impact (no PII collected)",
-      "legitimateLi2": "<b>Sentry error monitoring</b> — collecting error diagnostics to maintain service reliability. No user behaviour is captured without consent; only crash and error data is collected under this basis",
-      "legitimateLi3": "<b>Rate limiting (IP address processing)</b> — preventing abuse of our API endpoints. IP addresses are processed transiently and not stored",
-      "contractHeading": "Contract Performance (GDPR Art. 6(1)(b))",
-      "contractLi1": "<b>iOS app learning data</b> — processing your learning progress is necessary to deliver the language-learning service you use",
-      "contractLi2": "<b>iCloud sync</b> — syncing your progress across devices is a core part of the service",
-      "contractLi3": "<b>Subscription management</b> — verifying your tier to provide the appropriate features"
+      "heading": "処理の法的根拠",
+      "intro": "GDPRおよび英国GDPRに基づき、当社は合法的な根拠がある場合にのみ個人データを処理します。当社が取り扱う各データの法的根拠は以下のとおりです：",
+      "consentHeading": "同意（GDPR第6条(1)(a)）",
+      "consentLi1": "<b>ニュースレター登録</b> — お客様が能動的にメールアドレスを提供し、アップデートの受信に同意されます",
+      "consentLi2": "<b>ウェイトリスト登録</b> — お客様が能動的にメールアドレスと言語設定を提供されます",
+      "consentLi3": "<b>Sentryセッションリプレイ</b> — リプレイはCookie同意バナーで明示的に同意された場合にのみキャプチャされます",
+      "legitimateHeading": "正当な利益（GDPR第6条(1)(f)）",
+      "legitimateLi1": "<b>Vercel Analytics</b> — ウェブサイト改善のためのCookieを使用しない匿名ページビューのカウント。サイト利用状況の把握に対する当社の利益は、プライバシーへの最小限の影響（個人情報なし）とバランスが取れています",
+      "legitimateLi2": "<b>Sentryエラーモニタリング</b> — サービスの信頼性維持のためのエラー診断データの収集。同意なしにユーザー行動は記録されません。この根拠に基づいて収集されるのはクラッシュおよびエラーデータのみです",
+      "legitimateLi3": "<b>レート制限（IPアドレス処理）</b> — APIエンドポイントの不正利用防止。IPアドレスは一時的に処理され、保存されません",
+      "contractHeading": "契約の履行（GDPR第6条(1)(b)）",
+      "contractLi1": "<b>iOSアプリの学習データ</b> — お客様が利用する言語学習サービスを提供するために、学習進捗の処理が必要です",
+      "contractLi2": "<b>iCloud同期</b> — デバイス間での進捗の同期はサービスの中核的な機能です",
+      "contractLi3": "<b>サブスクリプション管理</b> — 適切な機能を提供するためのレベル確認"
     },
     "dataProvisionRequirements": {
       "heading": "データ提供の義務性について",
@@ -564,49 +564,49 @@
       "statutoryP1": "当社に個人データを提供する法的（制定法上の）要件はありません。すべてのデータ提供は、契約上（サービスに必要）または任意のいずれかです。"
     },
     "dataFlow": {
-      "heading": "Where Your Data Goes",
-      "intro": "Here is a plain-English summary of where your data is stored and processed:",
-      "li1": "<b>Your device</b> — all iOS app learning data, preferences, and progress are stored locally on your iPhone or iPad using Apple’s SwiftData framework",
-      "li2": "<b>Your iCloud account</b> — learning data syncs across your Apple devices via your personal iCloud account, encrypted by Apple. We have no access to this data",
-      "li3": "<b>Vercel (website hosting)</b> — our website is hosted on Vercel’s global edge network. Anonymous analytics data is processed by Vercel. Vercel’s servers are primarily located in the United States with edge nodes worldwide",
-      "li4": "<b>Sentry (error monitoring)</b> — error logs and (with your consent) session replay data are sent to Sentry’s servers in the United States. Sentry processes this data under their DPA with Standard Contractual Clauses",
-      "li5": "<b>Apple (App Store & iCloud)</b> — subscription management and iCloud sync are handled by Apple’s global infrastructure",
-      "noOtherParties": "Your data is not sent to any other third parties. We do not use Google Analytics, Facebook SDK, or any advertising networks."
+      "heading": "お客様のデータの行き先",
+      "intro": "お客様のデータの保存場所と処理場所について、わかりやすくまとめました：",
+      "li1": "<b>お客様のデバイス</b> — iOSアプリのすべての学習データ、設定、進捗はAppleのSwiftDataフレームワークを使用してiPhoneまたはiPadにローカル保存されます",
+      "li2": "<b>お客様のiCloudアカウント</b> — 学習データはAppleによって暗号化された個人のiCloudアカウントを通じてAppleデバイス間で同期されます。当社はこのデータにアクセスできません",
+      "li3": "<b>Vercel（ウェブサイトホスティング）</b> — 当ウェブサイトはVercelのグローバルエッジネットワーク上でホストされています。匿名の分析データはVercelが処理します。Vercelのサーバーは主に米国にあり、世界中にエッジノードがあります",
+      "li4": "<b>Sentry（エラーモニタリング）</b> — エラーログと（お客様の同意を得た上で）セッションリプレイデータは米国のSentryサーバーに送信されます。Sentryは標準契約条項付きのDPAに基づいてこのデータを処理します",
+      "li5": "<b>Apple（App StoreとiCloud）</b> — サブスクリプション管理とiCloud同期はAppleのグローバルインフラストラクチャで処理されます",
+      "noOtherParties": "お客様のデータは他のサードパーティに送信されません。Google Analytics、Facebook SDK、または広告ネットワークは使用していません。"
     },
     "howWeUse": {
-      "heading": "How We Use Your Information",
-      "intro": "The limited data we handle is used solely to:",
-      "li1": "<b>Personalise your learning</b> — spaced repetition scheduling, difficulty adaptation, and progress tracking depend on your learning history.",
-      "li2": "<b>Sync your progress</b> — iCloud sync ensures your data follows you across all your Apple devices.",
-      "li3": "<b>Manage your subscription</b> — we verify your membership tier to unlock the appropriate features.",
-      "li4": "<b>Improve the app and website</b> — anonymous aggregate data helps us understand which features are valuable and where to focus development.",
-      "li5": "<b>Communicate with you</b> — if you signed up for our newsletter or waitlist, we use your email to send product updates. You can unsubscribe at any time.",
-      "li6": "<b>Diagnose and fix bugs</b> — Sentry error data (and session replays with your consent) help us identify and resolve issues quickly."
+      "heading": "お客様の情報の利用方法",
+      "intro": "当社が取り扱う限定的なデータは、以下の目的にのみ使用されます：",
+      "li1": "<b>学習の個人化</b> — 間隔反復のスケジューリング、難易度の調整、進捗の追跡は学習履歴に基づいています。",
+      "li2": "<b>進捗の同期</b> — iCloud同期により、すべてのAppleデバイスでデータが引き継がれます。",
+      "li3": "<b>サブスクリプションの管理</b> — 適切な機能をアンロックするため、サブスクリプションレベルを確認します。",
+      "li4": "<b>アプリとウェブサイトの改善</b> — 匿名の集約データにより、どの機能が価値があり、どこに開発を集中すべきかを把握しています。",
+      "li5": "<b>お客様への連絡</b> — ニュースレターまたはウェイトリストに登録された場合、製品アップデートの送信にメールアドレスを使用します。いつでも配信停止できます。",
+      "li6": "<b>バグの診断と修正</b> — Sentryエラーデータ（およびお客様の同意を得たセッションリプレイ）により、問題を迅速に特定し解決します。"
     },
     "dataStorage": {
-      "heading": "Data Storage & Security",
-      "intro": "LumenLingo uses a privacy-first, on-device architecture:",
-      "li1": "<b>On-device storage</b> — all learning data is stored locally using Apple’s SwiftData framework, protected by your device’s built-in encryption.",
-      "li2": "<b>iCloud sync</b> — data syncs between your devices via your personal iCloud account, encrypted end-to-end by Apple. We do not have access to your iCloud data.",
-      "li3": "<b>No external servers</b> — LumenLingo does not maintain servers that store your personal data from the iOS app. There is no cloud database for us to secure (or breach).",
-      "li4": "<b>App Store security</b> — subscription management is handled by Apple’s secure infrastructure.",
-      "li5": "<b>Website security</b> — lumenlingo.com uses HTTPS encryption, strict Content Security Policy headers, and rate-limited API endpoints to protect your data."
+      "heading": "データの保存とセキュリティ",
+      "intro": "LumenLingoはプライバシーファーストのオンデバイスアーキテクチャを採用しています：",
+      "li1": "<b>デバイスストレージ</b> — すべての学習データはAppleのSwiftDataフレームワークを使用してローカルに保存され、デバイスの内蔵暗号化で保護されています。",
+      "li2": "<b>iCloud同期</b> — データは個人のiCloudアカウントを通じてデバイス間で同期され、Appleによってエンドツーエンドで暗号化されています。お客様のiCloudデータにアクセスすることはできません。",
+      "li3": "<b>外部サーバーなし</b> — LumenLingoはiOSアプリからの個人データを保存するサーバーを運用していません。保護（または侵害）すべきクラウドデータベースは存在しません。",
+      "li4": "<b>App Storeのセキュリティ</b> — サブスクリプション管理はAppleのセキュアなインフラストラクチャで処理されます。",
+      "li5": "<b>ウェブサイトのセキュリティ</b> — lumenlingo.comはHTTPS暗号化、厳格なContent Security Policyヘッダー、レート制限付きAPIエンドポイントを使用してデータを保護しています。"
     },
     "thirdParty": {
-      "heading": "Third-Party Services",
-      "intro": "LumenLingo integrates with a limited number of third-party services:",
-      "li1": "<b>Apple App Store & iCloud</b> — for app distribution, subscription management, payment processing, and data synchronisation. Subject to <applePrivacy>Apple’s Privacy Policy</applePrivacy>.",
-      "li2": "<b>Vercel</b> — for website hosting, anonymous analytics, and performance monitoring. Cookie-free, GDPR-compliant. Subject to <vercelPrivacy>Vercel’s Privacy Policy</vercelPrivacy>.",
-      "li3": "<b>Sentry</b> — for website error monitoring and (with consent) session replay. Subject to <sentryPrivacy>Sentry’s Privacy Policy</sentryPrivacy>.",
-      "noAdNetworks": "We do not use Google Analytics, Facebook SDK, or any advertising networks.",
+      "heading": "サードパーティサービス",
+      "intro": "LumenLingoは限られた数のサードパーティサービスと連携しています：",
+      "li1": "<b>Apple App StoreとiCloud</b> — アプリの配布、サブスクリプション管理、決済処理、データ同期のため。<applePrivacy>Appleのプライバシーポリシー</applePrivacy>が適用されます。",
+      "li2": "<b>Vercel</b> — ウェブサイトホスティング、匿名分析、パフォーマンスモニタリングのため。Cookieなし、GDPR準拠。<vercelPrivacy>Vercelのプライバシーポリシー</vercelPrivacy>が適用されます。",
+      "li3": "<b>Sentry</b> — ウェブサイトのエラーモニタリングおよび（同意を得た上で）セッションリプレイのため。<sentryPrivacy>Sentryのプライバシーポリシー</sentryPrivacy>が適用されます。",
+      "noAdNetworks": "Google Analytics、Facebook SDK、または広告ネットワークは使用していません。",
       "li4": "<b>Clerk</b> — ユーザー認証とID管理用。<clerkPrivacy>Clerkのプライバシーポリシー</clerkPrivacy>に準拠。",
       "li5": "<b>RevenueCat</b> — サブスクリプション管理と権限追跡用。Appleがすべての支払いの販売者です。<revenueCatPrivacy>RevenueCatのプライバシーポリシー</revenueCatPrivacy>に準拠。"
     },
     "childrensPrivacy": {
-      "heading": "Children’s Privacy",
-      "p1": "LumenLingo is designed for users aged 13 and older. We do not knowingly collect personal information from children under 13 (or the applicable minimum age in your jurisdiction, which may be higher — for example, 16 in Germany and the Netherlands).",
-      "p2": "The iOS app does not require account registration and stores data locally, so no personal information is transmitted to us from app users of any age. On the website, we do not knowingly accept newsletter or waitlist signups from anyone under 13.",
-      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at legal@lumenlingo.com and we will delete it promptly.",
+      "heading": "お子様のプライバシー",
+      "p1": "LumenLingoは13歳以上のユーザーを対象としています。13歳未満（またはお住まいの地域の該当する最低年齢。ドイツやオランダでは16歳など、それ以上の場合があります）のお子様から個人情報を故意に収集することはありません。",
+      "p2": "iOSアプリはアカウント登録を必要とせず、データをローカルに保存するため、どの年齢のアプリユーザーからも個人情報が当社に送信されることはありません。ウェブサイトでは、13歳未満の方からのニュースレターやウェイトリストの登録を故意に受け付けていません。",
+      "p3": "保護者は標準的なiOSデバイス管理を通じていつでもアプリとそのデータを管理または削除できます。お子様が当社に個人データを提供したと思われる場合は、legal@lumenlingo.comまでご連絡ください。速やかに削除いたします。",
       "coppaHeading": "COPPAの遵守",
       "coppaP1": "LumenLingoは、米国の児童オンラインプライバシー保護法（COPPA）に準拠しています。当社は、保護者の検証可能な同意なしに、13歳未満の児童の個人情報を意図的に収集、使用、開示することはありません。当社のサービスは13歳未満の児童を対象としておらず、児童向けの広告も行っておりません。",
       "coppaP2": "個人情報（メールアドレスなど）を収集するすべてのウェブサイトフォームには、ユーザーが13歳以上であること、または18歳未満の場合は保護者の同意を得ていることを確認する年齢確認ステップが含まれています。",
@@ -621,18 +621,18 @@
       "ferpaP1": "LumenLingoは教育機関によって、または教育機関のために運営されているものではありません。学校や教育機関がLumenLingoを生徒に推奨する場合、それは独自の判断で行われます。当該機関は、家族の教育権とプライバシーに関する法律（FERPA）の遵守を確保し、13歳未満の生徒にサービスの利用を指示する前に必要な保護者の同意を得る責任を負います。"
     },
     "dataRetention": {
-      "heading": "Data Retention & Deletion",
-      "intro": "We only keep your data for as long as necessary:",
-      "websiteHeading": "Website Data",
-      "websiteLi1": "<b>Newsletter/waitlist emails</b> — retained until you unsubscribe, plus up to 30 days to process your removal.",
-      "websiteLi2": "<b>Sentry error logs</b> — retained by Sentry for 90 days, then automatically deleted.",
-      "websiteLi3": "<b>Sentry session replays</b> — retained by Sentry for 90 days, then automatically deleted.",
+      "heading": "データの保持と削除",
+      "intro": "当社はデータを必要な期間のみ保持します：",
+      "websiteHeading": "ウェブサイトデータ",
+      "websiteLi1": "<b>ニュースレター/ウェイトリストのメール</b> — 配信停止まで保持され、削除の処理に最大30日かかります。",
+      "websiteLi2": "<b>Sentryエラーログ</b> — Sentryにより90日間保持された後、自動的に削除されます。",
+      "websiteLi3": "<b>Sentryセッションリプレイ</b> — Sentryにより90日間保持された後、自動的に削除されます。",
       "websiteLi4": "<b>Vercel Analytics</b> — 集計されたCookieフリーのアナリティクスデータは収集から30日間保持され、その後自動的に削除されます。個人を特定できる情報は保存されません。",
-      "appHeading": "iOS App Data",
-      "appLi1": "<b>Delete account</b> — use the in-app Settings → Sign Out → Delete Account to permanently erase all learning data, progress, preferences, and iCloud sync data. This action cannot be undone.",
-      "appLi2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
-      "appLi3": "<b>iCloud data</b> — you can manage iCloud storage through your device’s Settings → Apple ID → iCloud → Manage Storage.",
-      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation.",
+      "appHeading": "iOSアプリのデータ",
+      "appLi1": "<b>アカウント削除</b> — アプリ内の設定 → サインアウト → アカウント削除を使用して、すべての学習データ、進捗、設定、iCloud同期データを完全に消去できます。この操作は元に戻せません。",
+      "appLi2": "<b>アプリの削除</b> — LumenLingoをアンインストールすると、ローカルに保存されたすべてのデータが削除されます。",
+      "appLi3": "<b>iCloudデータ</b> — デバイスの設定 → Apple ID → iCloud → ストレージを管理からiCloudストレージを管理できます。",
+      "appLi4": "<b>サブスクリプション</b> — 設定 → Apple ID → サブスクリプションからサブスクリプションをキャンセルできます。キャンセル後、当社にデータは保持されません。",
       "websiteLi5": "<b>同意記録</b> — GDPRの説明責任のため、最後のやり取りから 3 年間保管されます。",
       "websiteLi6": "<b>データリクエストログ</b> — GDPRの説明責任のため、完了後 3 年間保管されます。"
     },
@@ -653,15 +653,15 @@
       "p3": "将来、法的または重大な効果を持つ自動意思決定を導入する場合、本ポリシーを更新し、UK GDPR第22条第3項に基づき、(a)人間の介入を得る権利、(b)意見を表明する権利、(c)決定に異議を唱える権利を確保します。"
     },
     "yourRights": {
-      "heading": "Your Rights",
-      "intro": "Depending on your location, you may have additional rights regarding your data:",
-      "gdprHeading": "Under GDPR (European Economic Area & UK)",
-      "gdprLi1": "Right to access your data — app data is on your device and iCloud; for website data, contact us.",
-      "gdprLi2": "Right to rectification — edit app preferences directly; for website data, contact us.",
-      "gdprLi3": "Right to erasure — use the in-app Delete Account feature, delete the app, or contact us to remove your email from our lists.",
+      "heading": "お客様の権利",
+      "intro": "お住まいの地域によっては、データに関する追加の権利をお持ちの場合があります：",
+      "gdprHeading": "GDPRに基づく権利（欧州経済領域および英国）",
+      "gdprLi1": "データへのアクセス権 — アプリデータはお客様のデバイスとiCloudにあります。ウェブサイトデータについてはお問い合わせください。",
+      "gdprLi2": "訂正権 — アプリの設定は直接編集できます。ウェブサイトデータについてはお問い合わせください。",
+      "gdprLi3": "消去権 — アプリ内のアカウント削除機能を使用するか、アプリを削除するか、メールアドレスをリストから削除するようお問い合わせください。",
       "gdprLi4": "データポータビリティの権利 — iOSアプリの「設定」→「データをエクスポート」から、すべての個人データを無料でJSONファイルとしてダウンロードできます。データは常に標準形式で保存されています。ウェブサイトデータのエクスポートについてはお問い合わせください。",
-      "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
-      "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
+      "gdprLi5": "異議申立権 — 匿名分析のオプトアウトまたは正当な利益に基づく処理への異議申立てについてはお問い合わせください。",
+      "gdprLi6": "処理制限権 — データの処理方法の制限をリクエストするにはお問い合わせください。",
       "gdprLi7": "苦情申立権 — <icoLink>情報コミッショナー事務局（ICO）</icoLink>またはお住まいの地域の監督機関に苦情を申し立てることができます。",
       "gdprLi8": "同意を撤回する権利 — 同意を法的根拠として使用している場合（例：アナリティクス）、Cookieの設定を調整するか、<emailLink>legal@lumenlingo.com</emailLink>にご連絡いただくことで、いつでも同意を撤回できます。撤回は、撤回前に行われた処理の適法性には影響しません。",
       "ccpaHeading": "CCPA/CPRAに基づく権利（カリフォルニア州）",
@@ -696,58 +696,58 @@
       "californiaP2": "CCPA/CPRAに基づく権利を含むカリフォルニア州のプライバシー権を行使するには、件名「カリフォルニアプライバシー権」で<emailLink>legal@lumenlingo.com</emailLink>にメールを送信するか、<dataRequestLink>データリクエスト</dataRequestLink>ページからリクエストを送信してください。"
     },
     "policyUpdates": {
-      "heading": "Policy Updates",
-      "p1": "We may update this Privacy Policy from time to time, typically to reflect changes in our services or legal requirements. When we make significant changes, we’ll update the “Last updated” date and version number at the top of this page.",
-      "p2": "We encourage you to review this page periodically. Continued use of LumenLingo after changes constitutes acceptance of the updated policy.",
-      "versionHistory": "Version History",
-      "v2": "<b>v2.0</b> (23 March 2026) — Extended policy to cover lumenlingo.com website data collection, added Sentry session replay disclosure, Vercel Analytics disclosure, legal basis for processing, data flow section, and service worker caching details.",
-      "v1": "<b>v1.0</b> (22 March 2026) — Initial privacy policy covering the LumenLingo iOS app.",
+      "heading": "ポリシーの更新",
+      "p1": "本プライバシーポリシーは、通常サービスや法的要件の変更を反映するために、随時更新される場合があります。重要な変更があった場合は、このページ上部の「最終更新日」とバージョン番号を更新します。",
+      "p2": "このページを定期的に確認されることをお勧めします。変更後のLumenLingoの継続使用は、更新されたポリシーの承認を意味します。",
+      "versionHistory": "バージョン履歴",
+      "v2": "<b>v2.0</b>（2026年3月23日） — lumenlingo.comウェブサイトのデータ収集、Sentryセッションリプレイの開示、Vercel Analyticsの開示、処理の法的根拠、データフローセクション、Service Workerのキャッシュ詳細をカバーするようにポリシーを拡張。",
+      "v1": "<b>v1.0</b>（2026年3月22日） — LumenLingo iOSアプリを対象とした初期プライバシーポリシー。",
       "v2_1": "<b>v2.1</b>（2026年3月26日）— セクションを再編成：商業/規制コンプライアンス開示（VAT処理、EU VAT、国際税務、価格表示コンプライアンス、制裁、暗号化輸出規制）を利用規約に移動。利用規約への相互参照を追加。商標帰属を統合。コンテンツの削除はありません。",
       "v2_2": "<b>v2.2</b>（2025年7月）— フェーズ2法的強化：会社名をLumenshore Limitedに統一、ICO苦情権および連絡先を追加、副処理者登録を追加、国際移転の保護措置を強化、地域別プライバシーフレームワークを追加、PECR開示を改善。"
     },
     "contactUs": {
-      "heading": "Contact Us",
-      "intro": "If you have questions about this Privacy Policy, your data, or want to exercise your rights, please reach out:",
-      "email": "<b>Email</b>: <emailLink>legal@lumenlingo.com</emailLink>",
-      "company": "<b>Company</b>: Lumenshore Limited, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
-      "companyNumber": "<b>Company Number</b>: 09607326 (England and Wales)",
-      "vatNumber": "<b>VAT Number</b>: GB 270411929",
-      "responseTime": "We typically respond within 48 hours and within 30 days for formal data rights requests."
+      "heading": "お問い合わせ",
+      "intro": "本プライバシーポリシー、お客様のデータについてご質問がある場合、または権利を行使されたい場合は、以下にご連絡ください：",
+      "email": "<b>メール</b>：<emailLink>legal@lumenlingo.com</emailLink>",
+      "company": "<b>会社</b>：Lumenshore Limited, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "companyNumber": "<b>会社番号</b>：09607326（イングランドおよびウェールズ）",
+      "vatNumber": "<b>VAT番号</b>：GB 270411929",
+      "responseTime": "通常48時間以内に回答し、正式なデータ権利リクエストには30日以内に対応します。"
     },
     "subProcessors": {
-      "heading": "Sub-Processors",
-      "intro": "The following third-party services process data on our behalf. Each sub-processor has been assessed for data protection compliance:",
+      "heading": "副処理者",
+      "intro": "以下のサードパーティサービスが当社に代わってデータを処理しています。各副処理者はデータ保護コンプライアンスについて評価されています：",
       "tableHeaders": {
-        "service": "Service",
-        "purpose": "Purpose",
-        "dataProcessed": "Data Processed",
-        "location": "Server Location",
-        "privacyPolicy": "Privacy Policy"
+        "service": "サービス",
+        "purpose": "目的",
+        "dataProcessed": "処理されるデータ",
+        "location": "サーバーの場所",
+        "privacyPolicy": "プライバシーポリシー"
       },
       "processors": {
         "apple": {
-          "service": "Apple (App Store & iCloud)",
-          "purpose": "App distribution, subscription billing, data sync",
-          "dataProcessed": "Subscription status, learning data (via iCloud)",
-          "location": "Global (Apple data centres)",
+          "service": "Apple（App StoreとiCloud）",
+          "purpose": "アプリ配布、サブスクリプション請求、データ同期",
+          "dataProcessed": "サブスクリプションステータス、学習データ（iCloud経由）",
+          "location": "グローバル（Appleデータセンター）",
           "privacyUrl": "https://www.apple.com/legal/privacy/",
-          "privacyLabel": "Apple Privacy"
+          "privacyLabel": "Appleプライバシー"
         },
         "vercel": {
           "service": "Vercel",
-          "purpose": "Website hosting, anonymous analytics, speed insights",
-          "dataProcessed": "Anonymous page views, performance metrics",
-          "location": "United States (with global edge nodes)",
+          "purpose": "ウェブサイトホスティング、匿名分析、パフォーマンス分析",
+          "dataProcessed": "匿名のページビュー、パフォーマンスメトリクス",
+          "location": "米国（グローバルエッジノード付き）",
           "privacyUrl": "https://vercel.com/legal/privacy-policy",
-          "privacyLabel": "Vercel Privacy"
+          "privacyLabel": "Vercelプライバシー"
         },
         "sentry": {
-          "service": "Sentry (Functional Software, Inc.)",
-          "purpose": "Error monitoring, session replay (with consent)",
-          "dataProcessed": "Error logs, stack traces, session replays (with consent)",
-          "location": "United States",
+          "service": "Sentry（Functional Software, Inc.）",
+          "purpose": "エラーモニタリング、セッションリプレイ（同意を得た場合）",
+          "dataProcessed": "エラーログ、スタックトレース、セッションリプレイ（同意を得た場合）",
+          "location": "米国",
           "privacyUrl": "https://sentry.io/privacy/",
-          "privacyLabel": "Sentry Privacy"
+          "privacyLabel": "Sentryプライバシー"
         },
         "clerk": {
           "service": "Clerk, Inc.",
@@ -755,7 +755,7 @@
           "dataProcessed": "メールアドレス、ユーザー識別子、認証トークン",
           "location": "アメリカ合衆国",
           "privacyUrl": "https://clerk.com/legal/privacy",
-          "privacyLabel": "Clerk Privacy"
+          "privacyLabel": "Clerkプライバシー"
         },
         "revenueCat": {
           "service": "RevenueCat, Inc.",
@@ -763,67 +763,67 @@
           "dataProcessed": "アプリユーザーID、サブスクリプションステータス、購入レシート（Apple経由 — RevenueCatは生の支払いカードデータを受け取りません）",
           "location": "アメリカ合衆国",
           "privacyUrl": "https://www.revenuecat.com/privacy/",
-          "privacyLabel": "RevenueCat Privacy"
+          "privacyLabel": "RevenueCatプライバシー"
         }
       },
       "dpaStatus": {
-        "heading": "Data Processing Agreements",
-        "p1": "We maintain Data Processing Agreements (DPAs) or equivalent contractual protections with all sub-processors that handle personal data:",
-        "li1": "<b>Apple</b> — covered by Apple's standard DPA for developers, incorporating Standard Contractual Clauses for international transfers.",
-        "li2": "<b>Vercel</b> — covered by Vercel's DPA, available at vercel.com/legal/dpa. Vercel Analytics is cookie-free and processes no personal data.",
-        "li3": "<b>Sentry</b> — covered by Sentry's DPA with Standard Contractual Clauses (SCCs) for EU-US data transfers.",
+        "heading": "データ処理契約",
+        "p1": "個人データを取り扱うすべての副処理者と、データ処理契約（DPA）または同等の契約上の保護措置を維持しています：",
+        "li1": "<b>Apple</b> — Apple開発者向け標準DPAの対象で、国際転送のための標準契約条項を含みます。",
+        "li2": "<b>Vercel</b> — vercel.com/legal/dpaで公開されているVercelのDPAの対象です。Vercel AnalyticsはCookieなしで個人データを処理しません。",
+        "li3": "<b>Sentry</b> — EU-米国データ転送のための標準契約条項（SCC）付きSentryのDPAの対象です。",
         "li4": "<b>Clerk</b> — Clerkのデータ処理契約でカバーされ、国際移転のための標準契約条項とEU-USデータプライバシーフレームワーク認証を含みます。",
         "li5": "<b>RevenueCat</b> — RevenueCatのデータ処理追加条項（標準契約条項付き）でカバーされます。RevenueCatは生の支払いカードデータを受け取りません。Appleが販売者です。"
       },
       "changes": {
-        "heading": "Sub-Processor Changes",
-        "p1": "If we add or change a sub-processor that handles personal data, we will update this page and note the change in the Version History section of this Privacy Policy. For material changes, we will provide at least 30 days' notice before the new sub-processor begins processing data."
+        "heading": "副処理者の変更",
+        "p1": "個人データを処理する副処理者を追加または変更する場合、このページを更新し、本プライバシーポリシーのバージョン履歴セクションに変更を記載します。重要な変更については、新しい副処理者がデータの処理を開始する前に最低30日前に通知します。"
       }
     },
     "internationalTransfers": {
-      "heading": "International Data Transfers",
-      "intro": "Lumenshore Limited is based in the United Kingdom. Some of your data may be transferred to and processed in countries outside the UK and the European Economic Area (EEA). Here is where each service processes data and the legal mechanism that protects the transfer:",
-      "li1": "<b>Apple (United States & global)</b> — iCloud data and App Store subscription data may be processed in Apple’s global data centres, including in the United States. Apple participates in transfers under Standard Contractual Clauses (SCCs) and the EU-US Data Privacy Framework.",
-      "li2": "<b>Vercel (United States & global edge)</b> — our website is served from Vercel’s edge network, with primary servers in the United States. Vercel Analytics processes no personal data. Website hosting data is protected under Vercel’s GDPR DPA with Standard Contractual Clauses.",
-      "li3": "<b>Sentry (United States)</b> — error logs and session replay data (with your consent) are transmitted to Sentry’s servers in the United States. These transfers are protected by Sentry’s DPA incorporating Standard Contractual Clauses (SCCs).",
+      "heading": "国際データ転送",
+      "intro": "Lumenshore Limitedは英国を拠点としています。お客様のデータの一部は、英国および欧州経済領域（EEA）外の国に転送され処理される場合があります。各サービスがデータを処理する場所と、転送を保護する法的メカニズムは以下の通りです：",
+      "li1": "<b>Apple（米国およびグローバル）</b> — iCloudデータとApp Storeサブスクリプションデータは、米国を含むAppleのグローバルデータセンターで処理される場合があります。Appleは標準契約条項（SCC）およびEU-USデータプライバシーフレームワークに基づいて転送に参加しています。",
+      "li2": "<b>Vercel（米国およびグローバルエッジ）</b> — 当ウェブサイトはVercelのエッジネットワークから配信され、主要サーバーは米国にあります。Vercel Analyticsは個人データを処理しません。ウェブサイトホスティングデータは、標準契約条項付きのVercelのGDPR DPAで保護されています。",
+      "li3": "<b>Sentry（米国）</b> — エラーログとセッションリプレイデータ（お客様の同意を得た場合）は、米国のSentryサーバーに送信されます。これらの転送は、標準契約条項（SCC）を含むSentryのDPAにより保護されています。",
       "safeguards": {
-        "heading": "Transfer Safeguards",
-        "intro": "For all international data transfers, we ensure at least one of the following safeguards is in place:",
-        "li1": "<b>Standard Contractual Clauses (SCCs)</b> — EU Commission-approved contractual clauses that bind the data importer to protect your data to GDPR standards.",
-        "li2": "<b>EU-US Data Privacy Framework</b> — where the recipient is certified under the framework, providing an adequacy basis for transfers to the US.",
-        "li3": "<b>UK International Data Transfer Agreement (IDTA)</b> — the UK equivalent of SCCs, approved by the ICO for transfers from the UK.",
-        "li4": "<b>Adequacy decisions</b> — where the European Commission or UK Government has determined that the destination country provides adequate data protection."
+        "heading": "転送保護措置",
+        "intro": "すべての国際データ転送について、以下の保護措置のうち少なくとも1つを確保しています：",
+        "li1": "<b>標準契約条項（SCC）</b> — EU委員会が承認した契約条項で、データインポーターにGDPR基準でのデータ保護を義務付けます。",
+        "li2": "<b>EU-USデータプライバシーフレームワーク</b> — 受領者がフレームワークの認証を受けている場合、米国への転送の十分性の根拠を提供します。",
+        "li3": "<b>UK International Data Transfer Agreement (IDTA)</b> — SCCの英国版で、英国からの転送についてICOが承認しています。",
+        "li4": "<b>十分性認定</b> — 欧州委員会または英国政府が、転送先の国が十分なデータ保護を提供すると判断した場合。"
       },
-      "p1": "You may request a copy of the relevant transfer safeguards by contacting us at legal@lumenlingo.com.",
+      "p1": "関連する転送保護措置のコピーをご希望の場合は、legal@lumenlingo.comまでお問い合わせください。",
       "li4": "<b>Clerk（アメリカ合衆国）</b> — 認証データ（メールアドレス、ユーザー識別子、認証トークン）はアメリカ合衆国のClerkサーバーで処理されます。これらの転送はClerkのDPA（標準契約条項およびEU-USデータプライバシーフレームワーク認証を含む）により保護されています。",
       "li5": "<b>RevenueCat（アメリカ合衆国）</b> — サブスクリプション管理データ（アプリユーザーID、サブスクリプションステータス、Apple購入レシート）はアメリカ合衆国のRevenueCatサーバーで処理されます。これらの転送はRevenueCatのデータ処理追加条項（標準契約条項付き）により保護されています。"
     },
     "aggregateData": {
-      "heading": "Aggregated and De-identified Data",
-      "p1": "We may collect, aggregate, and de-identify personal data so that it can no longer reasonably identify any individual. Once de-identified, such data is no longer personal data under GDPR, UK GDPR, CCPA, or any applicable data protection law.",
-      "p2": "We may use, disclose, and publish de-identified and aggregated data for any purpose, including but not limited to:",
-      "li1": "Product improvement and feature development",
-      "li2": "Research and analytics",
-      "li3": "Marketing materials and case studies",
-      "li4": "Benchmarking and public reports",
-      "li5": "Investor and stakeholder reporting",
+      "heading": "集約データおよび非識別化データ",
+      "p1": "当社は個人データを収集、集約、非識別化し、個人を特定できないようにする場合があります。非識別化された後、そのデータは適用されるデータ保護法の下で個人データとは見なされません。",
+      "p2": "当社は、以下を含むがこれに限定されない目的で、非識別化および集約データを使用、開示、公開する場合があります：",
+      "li1": "製品改善と機能開発",
+      "li2": "調査と分析",
+      "li3": "マーケティング資料とケーススタディ",
+      "li4": "ベンチマーキングと公開レポート",
+      "li5": "投資家およびステークホルダーへの報告",
       "deIdentification": {
-        "heading": "De-identification Standards",
-        "p1": "Our de-identification process meets the following legal standards:",
-        "li1": "<b>GDPR Recital 26</b> — data cannot be singled out, linked, or inferred to identify any individual, taking into account all means reasonably likely to be used.",
-        "li2": "<b>CCPA § 1798.140(m)</b> — information that cannot reasonably be used to infer information about, or otherwise be linked to, a particular consumer or household. We maintain a commitment not to attempt to re-identify de-identified data."
+        "heading": "非識別化基準",
+        "p1": "当社の非識別化プロセスは以下の法的基準を満たしています：",
+        "li1": "<b>GDPRリサイタル26</b> — データは、合理的に使用される可能性のあるすべての手段を考慮して、個人を特定するために選別、関連付け、または推測することができません。",
+        "li2": "<b>CCPA § 1798.140(m)</b> — 特定の消費者または世帯に関する情報を推察したり、関連付けたりするために合理的に使用できない情報。非識別化データの再識別を試みないことを約束します。"
       },
       "examples": {
-        "heading": "Examples of Aggregate Data",
-        "p1": "Examples of the types of aggregate data we may derive and publish include:",
-        "li1": "Total number of users per language pair",
-        "li2": "Average learning session duration",
-        "li3": "Most commonly studied vocabulary",
-        "li4": "Error rates per difficulty level",
-        "li5": "Feature usage statistics across membership tiers",
-        "p2": "No individual user can be identified from any published aggregate data."
+        "heading": "集約データの例",
+        "p1": "当社が導出・公開する可能性のある集約データの種類の例は以下の通りです：",
+        "li1": "言語ペアごとのユーザー総数",
+        "li2": "平均学習セッション時間",
+        "li3": "最もよく学習される語彙",
+        "li4": "難易度レベルごとのエラー率",
+        "li5": "メンバーシップレベル別の機能利用統計",
+        "p2": "公開された集約データから個々のユーザーを特定することはできません。"
       },
-      "survival": "Our right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data that was derived from your use of the Service."
+      "survival": "集約データを保持および使用する当社の権利は、アカウント削除およびサービス終了後も存続します。アカウント削除後も、サービスの利用から得られた集約データを保持する場合があります。"
     },
     "ccpaNotice": {
       "heading": "カリフォルニア州収集時通知（CCPA/CPRA）",
@@ -1323,45 +1323,45 @@
   },
   "Terms": {
     "meta": {
-      "title": "Terms of Service",
-      "description": "Terms of Service for LumenLingo. Understand your rights and responsibilities when using our language-learning app — written in plain English.",
-      "ogTitle": "Terms of Service — LumenLingo"
+      "title": "利用規約",
+      "description": "LumenLingoの利用規約。当社の語学学習アプリをご利用の際の権利と責任についてご確認ください—平易な言葉で記載しています。",
+      "ogTitle": "利用規約 — LumenLingo"
     },
-    "breadcrumb": "Terms of Service",
+    "breadcrumb": "利用規約",
     "hero": {
-      "heading": "Terms of Service",
-      "subtitle": "The rules of the road for using LumenLingo — written simply, because legal documents shouldn't need a dictionary."
+      "heading": "利用規約",
+      "subtitle": "LumenLingoをご利用いただく際のルール—法的文書に辞書が必要であってはならないから、平易に書かれています。"
     },
     "introduction": {
-      "heading": "Introduction",
+      "heading": "はじめに",
       "p1": "LumenLingoへようこそ。本サービス利用規約（「規約」）は、イングランドおよびウェールズで登録されたLumenshore Limited（Company No. 09607326）（「Lumenshore」、「当社」）が運営するLumenLingoモバイルアプリケーション（「アプリ」）のご利用を規定します。",
-      "p2": "By downloading, installing, or using LumenLingo, you agree to be bound by these Terms. If you don't agree with any part of these Terms, please don't use the App."
+      "p2": "LumenLingoをダウンロード、インストール、または使用することにより、お客様は本規約に拘束されることに同意したものとみなされます。本規約のいずれかの部分に同意いただけない場合は、アプリをご利用にならないでください。"
     },
     "acceptance": {
-      "heading": "Acceptance of Terms",
-      "intro": "By accessing or using LumenLingo, you confirm that:",
-      "li1": "You are at least 13 years old (or the minimum age required in your jurisdiction).",
-      "li2": "If you are under 18, you have obtained consent from a parent or legal guardian.",
-      "li3": "You have the legal capacity to enter into a binding agreement.",
-      "li4": "You will comply with these Terms and all applicable laws."
+      "heading": "規約の承諾",
+      "intro": "LumenLingoにアクセスまたはご利用いただくことにより、お客様は以下を確認したものとみなされます：",
+      "li1": "13歳以上（またはお住まいの管轄地域で必要な最低年齢）であること。",
+      "li2": "18歳未満の場合、親権者または法定後見人の同意を得ていること。",
+      "li3": "拘束力のある契約を締結する法的能力を有していること。",
+      "li4": "本規約およびすべての適用法令を遵守すること。"
     },
     "yourAccount": {
-      "heading": "Your Account",
-      "intro": "LumenLingo does not require traditional account registration. Your identity within the App is tied to your Apple ID and device. You are responsible for:",
-      "li1": "Maintaining the security of your Apple ID and device access.",
-      "li2": "All activity that occurs through your use of the App.",
-      "li3": "Keeping your device's operating system updated for the best experience and security."
+      "heading": "お客様のアカウント",
+      "intro": "LumenLingoは従来のアカウント登録を必要としません。アプリ内でのお客様の識別は、Apple IDおよびiCloudアカウントに紐付けられています。お客様は以下について責任を負います：",
+      "li1": "Apple IDおよびデバイスアクセスのセキュリティを維持すること。",
+      "li2": "アプリのご利用を通じて発生するすべての活動。",
+      "li3": "最高の体験とセキュリティのためにデバイスのオペレーティングシステムを最新の状態に保つこと。"
     },
     "subscriptions": {
-      "heading": "Subscriptions & Billing",
-      "intro": "LumenLingo offers free and premium membership tiers. Premium features require a paid subscription.",
-      "li1": "<b>Billing</b> — all subscriptions are processed and managed by Apple through the App Store. We do not handle payments directly.",
-      "li2": "<b>Free tier</b> — provides access to core learning features with limited language pairs and practice modes.",
-      "li3": "<b>Premium tiers</b> — unlock additional language pairs, unlimited practice, soundscapes, breathing orbs, and other premium features as described in the App.",
-      "li4": "<b>Auto-renewal</b> — subscriptions auto-renew unless cancelled at least 24 hours before the end of the current billing period.",
-      "li5": "<b>Cancellation</b> — you can cancel your subscription at any time through your Apple ID Settings → Subscriptions. Cancellation takes effect at the end of your current billing period.",
-      "li6": "<b>Refunds</b> — refund requests are handled by Apple in accordance with their refund policies. Contact Apple Support for refund enquiries.",
-      "li7": "<b>Price changes</b> — we may adjust subscription prices. You will be notified in advance, and changes apply only to your next renewal period."
+      "heading": "サブスクリプションと請求",
+      "intro": "LumenLingoは無料およびプレミアムの会員プランを提供しています。プレミアム機能には有料サブスクリプションが必要です。",
+      "li1": "<b>請求</b> — すべてのサブスクリプションはApp Storeを通じてAppleが処理・管理します。当社が直接支払いを処理することはありません。",
+      "li2": "<b>無料プラン</b> — 限られた言語ペアと練習モードで基本的な学習機能をご利用いただけます。",
+      "li3": "<b>プレミアムプラン</b> — 追加の言語ペア、無制限の練習、サウンドスケープ、ブリージングオーブ、その他アプリに記載のプレミアム機能をご利用いただけます。",
+      "li4": "<b>自動更新</b> — サブスクリプションは、現在の請求期間終了の24時間前までにキャンセルしない限り自動更新されます。",
+      "li5": "<b>キャンセル</b> — Apple IDの設定 → サブスクリプションからいつでもサブスクリプションをキャンセルできます。キャンセルは現在の請求期間の終了時に有効になります。",
+      "li6": "<b>返金</b> — 返金リクエストはAppleの返金ポリシーに従いAppleが処理します。返金についてはAppleサポートにお問い合わせください。",
+      "li7": "<b>価格変更</b> — サブスクリプション価格を変更する場合があります。事前にお知らせし、変更は次の更新期間から適用されます。"
     },
     "distanceSelling": {
       "heading": "通信販売と消費者の権利",
@@ -1377,59 +1377,59 @@
       "li5a": "<b>同意の確認</b> — Apple IDのメールアドレスに配信されるApp Storeレシートを通じて、即時履行への同意の確認を送信します。これはCCR 2013 reg. 16に基づく耐久性のある媒体に該当します。"
     },
     "acceptableUse": {
-      "heading": "Acceptable Use",
-      "intro": "You agree to use LumenLingo only for lawful purposes and in accordance with these Terms. You must not:",
-      "li1": "Reverse engineer, decompile, or disassemble any part of the App.",
-      "li2": "Attempt to access, tamper with, or use non-public areas of the App or its systems.",
-      "li3": "Copy, modify, distribute, or create derivative works based on the App.",
-      "li4": "Use the App in any way that could damage, disable, overburden, or impair its functionality.",
-      "li5": "Use automated scripts, bots, or other tools to interact with the App.",
-      "li6": "Attempt to circumvent subscription or tier restrictions."
+      "heading": "許容される使用",
+      "intro": "お客様はLumenLingoを合法的な目的のためにのみ、かつ本規約に従って使用することに同意します。以下の行為は禁止されています：",
+      "li1": "アプリのいかなる部分もリバースエンジニアリング、逆コンパイル、または逆アセンブルすること。",
+      "li2": "アプリまたはそのシステムの非公開領域にアクセス、改ざん、または使用を試みること。",
+      "li3": "アプリをコピー、改変、配布、またはそれに基づく派生物を作成すること。",
+      "li4": "アプリの機能を損傷、無効化、過負荷、または妨害する可能性のある方法でアプリを使用すること。",
+      "li5": "自動化スクリプト、ボット、その他のツールを使用してアプリとやり取りすること。",
+      "li6": "サブスクリプションまたはプランの制限を回避しようとすること。"
     },
     "intellectualProperty": {
-      "heading": "Intellectual Property",
-      "p1": "All content within LumenLingo — including but not limited to flashcard content, translations, audio, soundscapes, visual designs, shader effects, animations, the LumenLingo name, and the Lumenshore brand — is the intellectual property of Lumenshore Limited and is protected by copyright, trademark, and other intellectual property laws.",
-      "p2": "Your subscription grants you a limited, non-exclusive, non-transferable, revocable licence to use the App for personal, non-commercial language-learning purposes. This licence does not include the right to:",
-      "li1": "Reproduce, distribute, or publicly display any App content.",
-      "li2": "Use any content for commercial purposes or in competing products.",
-      "li3": "Remove or alter any proprietary notices or labels.",
-      "li4": "Use any automated means (including bots, scrapers, crawlers, spiders, or data-mining tools) to access, copy, monitor, or extract any content from the Service.",
-      "li5": "Create derivative works based on LumenLingo content, or reverse-engineer any aspect of the App."
+      "heading": "知的財産",
+      "p1": "LumenLingo内のすべてのコンテンツ—フラッシュカードの内容、翻訳、音声、サウンドスケープ、ビジュアルデザイン、シェーダー効果、アニメーション、LumenLingoの名称、Lumenshoreブランドを含むがこれらに限らない—はLumenshore Limitedの知的財産であり、著作権法、商標法、その他の知的財産法により保護されています。",
+      "p2": "お客様のサブスクリプションは、個人的かつ非商機的な語学学習目的でアプリを使用するための限定的、非独占的、譲渡不可、取り消し可能なライセンスを付与します。本ライセンスには以下の権利は含まれません：",
+      "li1": "アプリのコンテンツを複製、配布、または公開表示すること。",
+      "li2": "コンテンツを商業目的や競合製品に使用すること。",
+      "li3": "所有権表示またはラベルを削除または変更すること。",
+      "li4": "自動化手段（ボット、スクレイパー、クローラー、スパイダー、データマイニングツールを含む）を使用してサービスのコンテンツにアクセス、コピー、監視、または抽出すること。",
+      "li5": "LumenLingoのコンテンツに基づく派生物を作成すること、またはアプリのいかなる側面もリバースエンジニアリングすること。"
     },
     "userContent": {
-      "heading": "User Content & Data",
-      "p1": "Your learning data (progress, preferences, practice history) is stored on your device and in your personal iCloud account. Lumenshore does not claim ownership of your personal learning data.",
-      "p2UGC": "If we introduce features that allow you to submit, post, or share content (such as notes, comments, or shared word lists), you retain ownership of that content but grant Lumenshore Limited a non-exclusive, worldwide, royalty-free licence to use, display, and distribute it within the Service. You may request removal of your content at any time.",
-      "p3": "For more details on how we handle data, please review our <privacyLink>Privacy Policy</privacyLink>."
+      "heading": "ユーザーコンテンツとデータ",
+      "p1": "お客様の学習データ（進捗、設定、練習履歴）はお客様のデバイスおよび個人のiCloudアカウントに保存されます。Lumenshoreはお客様の個人的な学習データの所有権を主張しません。",
+      "p2UGC": "ユーザーがコンテンツ（ノート、コメント、共有単語リストなど）を送信、投稿、または共有できる機能を導入した場合、お客様はそのコンテンツの所有権を保持しますが、Lumenshore Limitedに対し、サービス内での使用、表示、配布のための非独占的、世界規模、ロイヤリティフリーのライセンスを付与します。コンテンツの削除はいつでもリクエストできます。",
+      "p3": "データの取り扱いの詳細については、<privacyLink>プライバシーポリシー</privacyLink>をご覧ください。"
     },
     "disclaimers": {
-      "heading": "Disclaimers",
-      "intro": "LumenLingo is provided on an “as is” and “as available” basis. While we strive for accuracy and quality, we make no warranties, expressed or implied, regarding:",
-      "li1": "The accuracy or completeness of any language content or translations.",
-      "li2": "Uninterrupted or error-free operation of the App.",
-      "li3": "The results you may achieve from using the App.",
-      "li4": "The availability of specific features at any given time.",
-      "supplement": "LumenLingo is a supplementary learning tool. It is not a substitute for professional language instruction, certified translation services, or academic coursework."
+      "heading": "免責事項",
+      "intro": "LumenLingoは「現状のまま」および「利用可能な範囲で」提供されます。正確性と品質の向上に努めておりますが、以下について明示または黙示の保証は行いません：",
+      "li1": "言語コンテンツまたは翻訳の正確性または完全性。",
+      "li2": "アプリの中断のないまたはエラーのない動作。",
+      "li3": "アプリの使用により達成できる結果。",
+      "li4": "特定の機能が特定の時点で利用可能であること。",
+      "supplement": "LumenLingoは補助的な学習ツールです。専門的な語学教育、認定翻訳サービス、または学術課程の代替とはなりません。"
     },
     "limitationOfLiability": {
-      "heading": "Limitation of Liability",
-      "intro": "To the fullest extent permitted by applicable law, Lumenshore Limited shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, or goodwill arising from:",
-      "li1": "Your use of (or inability to use) the App.",
-      "li2": "Any errors, omissions, or inaccuracies in the content.",
-      "li3": "Unauthorised access to your device or data (not caused by our negligence).",
-      "li4": "Any interruption or cessation of the service.",
+      "heading": "責任の制限",
+      "intro": "Consumer Rights Act 2015を含む適用法が許容する最大限の範囲で、Lumenshore Limitedは以下について責任を負いません：",
+      "li1": "間接的、偶発的、特別、結果的、または懲罰的損害",
+      "li2": "利益、データ、使用、のれん、またはその他の無形の損失",
+      "li3": "請求前12か月間にお客様が当社に支払った金額を超える損害",
+      "li4": "本規約のいかなる規定も、当社の過失による死亡または人身傷害、詐欺もしくは詐欺的不実表示、または英国法により排除または制限できないその他の責任について、当社の責任を排除または制限するものではありません",
       "cap": "この利用規約またはLumenLingoの利用に起因するすべての請求に対するLumenshoreの総計賠償責任は次を超えないものとします：(a) 無料プランユーザー—ゼロ英ポンド（£0.00）、(b) 有料購読者—請求の原因となった事象の直前12か月間にお客様が実際に支払った購読料の総額。",
       "statutory": "本規約のいかなる内容も、当社の過失による死亡または身体的損害、詐欺または詐欺的不実表示、あるいは適用法により排除または制限できないその他の責任（2015年消費者権利法（英国）またはEU消費者権利指令に基づくお客様の法定権利を含む）に対する当社の責任を排除または制限するものではありません。",
       "crossReference": "この賠償責任の制限は、当社のエンドユーザーライセンス契約（EULA）の賠償責任の制限条項と整合しています。両方の契約が適用される場合、ユーザーにとってより有利な制限が優先されます。"
     },
     "termination": {
-      "heading": "Termination",
-      "p1": "You may stop using LumenLingo at any time by deleting the App. Your subscription, if active, should be cancelled separately through Apple's subscription management.",
-      "p2": "We reserve the right to suspend or terminate access to the App if we reasonably believe you have violated these Terms. In the event of termination:",
-      "li1": "Your licence to use the App is immediately revoked.",
-      "li2": "Your local data remains on your device until you choose to delete it.",
-      "li3": "Active subscriptions should be cancelled through Apple.",
-      "li4": "Provisions that by their nature should survive termination will remain in effect."
+      "heading": "契約の終了",
+      "p1": "当社は、理由の有無にかかわらず、事前通知の有無にかかわらず、いつでもLumenLingoへのお客様のアクセスを一時停止または終了することができます。",
+      "p2": "以下の方法で、いつでもアカウントを解約できます：",
+      "li1": "App Storeを通じたサブスクリプションのキャンセル",
+      "li2": "アプリの設定からアカウントデータを削除",
+      "li3": "legal@lumenlingo.comへのお問い合わせ",
+      "li4": "契約終了後、サービスを使用する権利は直ちに失われます。iCloudデータはApple IDの設定から管理できます。"
     },
     "governingLaw": {
       "heading": "準拠法、管轄権および裁判地",
@@ -1461,11 +1461,11 @@
       "v1_2": "<b>v1.2</b>（2025年7月）— フェーズ2法的強化：会社名統一、階層別賠償責任上限をEULAと調和、Apple EULA参照による組み込み、アクセシビリティコミットメント追加、譲渡通知義務追加、不可抗力詳細追加。"
     },
     "contactUs": {
-      "heading": "Contact Us",
-      "intro": "If you have questions about these Terms or need to report a concern, please contact us:",
-      "email": "<b>Email</b>: <emailLink>legal@lumenlingo.com</emailLink>",
-      "company": "<b>Company</b>: Lumenshore Limited, United Kingdom",
-      "responseTime": "We typically respond within 48 hours.",
+      "heading": "お問い合わせ",
+      "intro": "本規約についてご質問がある場合、または懸念事項を報告されたい場合は、以下までご連絡ください：",
+      "email": "<b>メール</b>：<emailLink>legal@lumenlingo.com</emailLink>",
+      "company": "<b>会社</b>：Lumenshore Limited、英国",
+      "responseTime": "通常、48時間以内に回答いたします。",
       "address": "<b>登録住所</b>: Lumenshore Limited, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, England"
     },
     "aggregateData": {
@@ -1523,47 +1523,47 @@
       "closing": "当社は、法令遵守上そのような措置が必要であると当社の単独の裁量により判断した管轄区域において、本サービスへのアクセスを制限または終了する権利を留保します。"
     },
     "copyrightInfringement": {
-      "heading": "Copyright Infringement & DMCA",
-      "p1": "Lumenshore Limited respects the intellectual property rights of others and expects users to do the same. If you believe that any content available through LumenLingo infringes your copyright, you may submit a notice of claimed infringement.",
-      "p2": "Your notice must include:",
-      "li1": "A physical or electronic signature of the copyright owner or a person authorised to act on their behalf.",
-      "li2": "Identification of the copyrighted work claimed to have been infringed.",
-      "li3": "Identification of the material that is claimed to be infringing, with information reasonably sufficient to permit us to locate it.",
-      "li4": "Your contact information, including address, telephone number, and email.",
-      "li5": "A statement that you have a good-faith belief that the use of the material is not authorised by the copyright owner, its agent, or the law.",
-      "li6": "A statement, under penalty of perjury, that the information in the notice is accurate and that you are authorised to act on behalf of the copyright owner.",
-      "p3": "Send copyright infringement notices to: <email>legal@lumenlingo.com</email>",
-      "p4": "Lumenshore will respond to valid takedown notices in accordance with the US Digital Millennium Copyright Act (17 U.S.C. § 512) and equivalent UK and EU legislation. Repeat infringers may have their accounts terminated.",
-      "p5": "Repeat Infringer Policy: Lumenshore maintains a policy to terminate, in appropriate circumstances, the accounts of users who are repeat infringers of copyright. Three or more valid infringement notices against an account within any twelve-month period will result in permanent account termination.",
-      "p6": "Counter-notification: If you believe content was removed in error, you may submit a counter-notification to legal@lumenlingo.com including: (i) identification of the removed material, (ii) a statement under penalty of perjury that the removal was a mistake, (iii) your name, address, and consent to jurisdiction, and (iv) your physical or electronic signature. Counter-notifications are processed in accordance with 17 U.S.C. § 512(g)."
+      "heading": "著作権侵害",
+      "p1": "当社は他者の知的財産権を尊重し、ユーザーにも同様を期待します。著作権者であるか、著作権者の代理として行動する権限を有しており、著作権で保護された素材が著作権侵害を構成する形でコピーされたと思われる場合は、通知を提出することができます。",
+      "p2": "LumenLingoのコンテンツがお客様の著作権を侵害していると思われる場合は、デジタルミレニアム著作権法（DMCA）および英国著作権・デザイン・特許法 1988年に基づき、著作権侵害の申立てを行うことができます。",
+      "li1": "使用が許可されていないと誠実に信じる旨の声明",
+      "li2": "偏証罪の罰則の下での声明として、通知の情報が正確であり、お客様が著作権者であるか、その代理として行動する権限を有する旨の声明",
+      "li3": "お客様の物理的または電子的署名",
+      "li4": "有効なDMCA通知に対しては10営業日以内に対応いたします",
+      "li5": "繰り返し侵害を行う者はサービスへのアクセスを停止される場合があります",
+      "li6": "異議申し立ては適用法に従って提出できます",
+      "p3": "DMCA通知を提出するには、以下の情報を添えて<email>legal@lumenlingo.com</email>までご連絡ください：",
+      "p4": "お客様の氏名と連絡先情報",
+      "p5": "侵害されたと主張する著作物の特定",
+      "p6": "侵害素材の説明とサービス内での場所"
     },
     "contentProtection": {
-      "heading": "Content Protection & Anti-Scraping",
-      "p1": "You may not use any automated means — including bots, scrapers, crawlers, spiders, data-mining tools, or artificial intelligence training pipelines — to access, copy, monitor, or extract any content from the Service. Specifically:",
-      "li1": "Systematic or bulk downloading, copying, or redistribution of flashcard content, vocabulary lists, grammar explanations, example sentences, or audio files is strictly prohibited",
-      "li2": "Any automated access that exceeds reasonable human browsing patterns constitutes unauthorised use and grounds for immediate account termination",
-      "li3": "You may not compile, aggregate, or create derivative datasets from LumenLingo content for any purpose, including machine-learning model training",
-      "p2": "Lumenshore employs technical protection measures to safeguard its content. You further agree that:",
-      "li4": "Lumenshore employs rate limiting, access controls, and content-integrity measures; circumventing, bypassing, or disabling any of these constitutes unauthorised access",
-      "li5": "Circumventing technical protection measures may violate the UK Computer Misuse Act 1990, the US Computer Fraud and Abuse Act (18 U.S.C. § 1030), and EU Directive 2009/24/EC on the legal protection of computer programs",
-      "li6": "Automated bulk access may result in IP blocking, API key revocation, and account termination without prior notice"
+      "heading": "コンテンツ保護およびアンチスクレイピング",
+      "p1": "ボット、スクレイパー、クローラー、スパイダー、データマイニングツール、または人工知能訓練パイプラインを含む自動化手段を使用して、サービスのコンテンツにアクセス、コピー、監視、または抽出することはできません。具体的には：",
+      "li1": "フラッシュカードのコンテンツ、単語リスト、文法解説、例文、または音声ファイルの系統的または大量のダウンロード、コピー、または再配布は固く禁じられています",
+      "li2": "合理的な人間のブラウジングパターンを超える自動アクセスは、不正使用とみなされ、アカウントの即時終了の根拠となります",
+      "li3": "機械学習モデルのトレーニングを含むいかなる目的でも、LumenLingoのコンテンツからデータセットをコンパイル、集約、または派生データセットを作成することはできません",
+      "p2": "Lumenshoreはそのコンテンツを保護するために技術的保護措置を採用しています。さらに、お客様は以下に同意するものとします：",
+      "li4": "Lumenshoreはレート制限、アクセス制御、およびコンテンツ整合性保護措置を採用しており、これらのいずれかを回避、迲回、または無効化することは不正アクセスに該当します",
+      "li5": "技術的保護措置の回避は、英国のComputer Misuse Act 1990、米国のComputer Fraud and Abuse Act（18 U.S.C. § 1030）、およびEU指令2009/24/EC（コンピュータプログラムの法的保護）に違反する可能性があります",
+      "li6": "自動化された大量アクセスは、事前通知なく、IPブロック、APIキーの失効、およびアカウントの終了をもたらす可能性があります"
     },
     "dataExport": {
-      "heading": "Data Export & Competitive Use Restriction",
-      "p1": "Data exported under GDPR Article 20 (data portability), the UK GDPR, or equivalent data-protection laws is provided for your personal use only. The following restrictions apply:",
-      "li1": "You may not use exported data, or any data derived from or informed by your use of the Service, to create, assist in creating, train, or improve a competing product or service",
-      "li2": "You may not licence, sell, distribute, or otherwise make exported LumenLingo content available to third parties for commercial purposes",
-      "li3": "This restriction does not limit your statutory data portability rights — it restricts only the commercial exploitation of Lumenshore’s proprietary learning content accessed via your account",
-      "p2": "This clause does not apply to data you independently created or obtained outside the Service, nor does it restrict any rights that cannot lawfully be excluded."
+      "heading": "データエクスポートおよび競合利用制限",
+      "p1": "GDPR第20条（データポータビリティ）、UK GDPR、または同等のデータ保護法に基づきエクスポートされたデータは、お客様の個人的な使用のみを目的として提供されます。以下の制限が適用されます：",
+      "li1": "エクスポートされたデータ、またはサービスの利用に由来するデータを、競合製品またはサービスの作成、作成支援、トレーニング、または改善に使用することはできません",
+      "li2": "エクスポートされたLumenLingoのコンテンツを商業目的で第三者にライセンス、販売、配布、またはその他の方法で提供することはできません",
+      "li3": "この制限は、お客様の法定のデータポータビリティ権を制限するものではありません。お客様のアカウントを通じてアクセスされたLumenshoreの独自の学習コンテンツの商業的利用のみを制限します",
+      "p2": "この条項は、お客様が独自に作成したデータやサービス外で取得したデータには適用されず、法的に除外できない権利を制限するものでもありません。"
     },
     "enforcementRemedies": {
-      "heading": "Enforcement & Remedies",
-      "p1": "LumenLingo’s content — including flashcard sets across 25 language pairs, grammar explanations, example sentences, and audio — constitutes a \"literary work\" and a protected \"database\" under the UK Copyright, Designs and Patents Act 1988 (CDPA) and the Copyright and Rights in Databases Regulations 1997. Lumenshore asserts its moral rights of attribution and the right against derogatory treatment in respect of all original content.",
-      "p2": "You acknowledge that any breach of the Intellectual Property, Content Protection, or Data Export sections of these Terms may cause irreparable harm to Lumenshore for which monetary damages would be inadequate. Accordingly:",
-      "li1": "Lumenshore reserves the right to seek injunctive or other equitable relief in any court of competent jurisdiction, without the necessity of proving actual damages or posting a bond (to the extent permitted by applicable law)",
-      "li2": "Lumenshore’s database right protection lasts 15 years from creation and is renewed with each substantial update to the content database",
-      "li3": "These remedies are in addition to — and not in lieu of — any other rights or remedies available at law or in equity",
-      "p3": "Nothing in this section limits any rights or remedies that Lumenshore may have under applicable intellectual property, competition, or data-protection law."
+      "heading": "執行および救済措置",
+      "p1": "LumenLingoのコンテンツ——25言語ペアのフラッシュカードセット、文法解説、例文、音声を含む——は、英国Copyright, Designs and Patents Act 1988（CDPA）およびCopyright and Rights in Databases Regulations 1997に基づく「文学的著作物」および保護された「データベース」を構成します。Lumenshoreは、すべてのオリジナルコンテンツに関して、帰属の著作者人格権および名誉を損なう取扱いに対する権利を主張します。",
+      "p2": "お客様は、本規約の知的財産、コンテンツ保護、またはデータエクスポートの各条項の違反が、金銭的損害賠償では不十分な、Lumenshoreに対する回復不能な損害を引き起こす可能性があることを認識します。したがって：",
+      "li1": "Lumenshoreは、実際の損害の証明や保証金の供託なしに（適用法が許容する範囲で）、管轄権を有する裁判所において差止命令またはその他の衡平法上の救済を求める権利を留保します",
+      "li2": "Lumenshoreのデータベース権の保護は作成から15年間継続し、コンテンツデータベースの実質的な更新ごとに更新されます",
+      "li3": "これらの救済措置は、法律または衡平法に基づき利用可能なその他の権利または救済措置に追加されるものであり、それらに代わるものではありません",
+      "p3": "本条のいかなる定めも、適用される知的財産法、競争法、またはデータ保護法に基づきLumenshoreが有する権利または救済措置を制限するものではありません。"
     },
     "disputeResolution": {
       "heading": "紛争解決",
@@ -1999,7 +1999,7 @@
       "heading": "英国代替紛争解決（ADR）",
       "p1": "2015年消費者紛争のための代替紛争解決規則に基づき、代替紛争解決についてお知らせする義務があります。",
       "p2": "Lumenshore Limitedは、認定ADR機関を通じた代替紛争解決に参加する意思があります。関連するADRプロバイダーは：",
-      "provider": "<b>Centre for Effective Dispute Resolution (CEDR)</b>",
+      "provider": "<b>Centre for Effective Dispute Resolution（CEDR）</b>",
       "providerWebsite": "ウェブサイト: <cedrLink>https://www.cedr.com</cedrLink>",
       "providerAddress": "住所: 100 St Paul's Churchyard, London, EC4M 8BU",
       "p3": "ADRに問題を付託する前に、まず<emailLink>legal@lumenlingo.com</emailLink>までご連絡ください。直接苦情を解決するよう努めます。",

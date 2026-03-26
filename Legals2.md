@@ -1419,3 +1419,1069 @@ Added Terms.assignment.p3 across all 9 locales with the following obligations: (
 6. **Epic 13** (Terms hardening) — completeness
 7. **Epic 14** (Cookie hardening) — PECR completeness
 8. **Epic 15** (cross-policy consistency + version bumps) — always last
+
+---
+
+# Phase 3 — Ironclad Hardening
+
+> Audit date: 2025-01-XX. Conducted a full legal audit of all four policies against UK GDPR, DPA 2018, CRA 2015, PECR 2003, Equality Act 2010, Online Safety Act 2023, and Export Control Act 2002. Also audited all 8 non-English locales for untranslated strings. Phase 3 addresses every gap found.
+
+---
+
+## Epic 16 — Privacy Policy: Remaining GDPR & DPA Gaps
+
+> **Goal:** Close every remaining GDPR/DPA gap in the Privacy Policy so it is fully compliant with UK GDPR Articles 13-14, DPA 2018 Sections 34-40, and ICO enforcement guidance.
+
+### Story 16.1 — Right to Complain to the ICO (GDPR Art. 77)
+
+**Priority:** Critical
+
+**Description:** The Privacy Policy must explicitly inform users of their right to lodge a complaint with the Information Commissioner's Office. GDPR Art. 77 and DPA 2018 s.165 require data controllers to inform data subjects of this right. Currently absent.
+
+**Tasks:**
+
+1. Add `Privacy.rights.icoComplaint` key to `en.json` with text: "You have the right to lodge a complaint with the Information Commissioner's Office (ICO) if you believe your data has been handled unlawfully. You can contact the ICO at ico.org.uk or by calling 0303 123 1113."
+2. Add equivalent translated keys to all 8 non-English locales.
+3. Render the new key in `privacy/page.tsx` within the existing rights section.
+4. Add the ICO link as a `<icoLink>` rich-text tag.
+
+**Acceptance Criteria:**
+
+- [ ] `Privacy.rights.icoComplaint` key exists in all 9 locales
+- [ ] ICO name, website URL, and phone number are all present in EN text
+- [ ] Rich text link to ico.org.uk renders as clickable external link
+- [ ] Non-English translations are linguistically accurate (not English)
+- [ ] privacy/page.tsx renders the paragraph in the rights section
+
+---
+
+### Story 16.2 — Data Retention Schedule
+
+**Priority:** Critical
+
+**Description:** GDPR Art. 13(2)(a) requires controllers to state storage periods or criteria for determining them. The Privacy Policy currently lacks a data retention schedule. Add a dedicated section listing retention periods for every category of personal data.
+
+**Tasks:**
+
+1. Add new section `Privacy.retention` with `.heading`, `.intro` and list items covering: newsletter emails (until unsubscribe + 30 days), waitlist data (12 months after app launch or until unsubscribe), Sentry error logs (90 days), Sentry replays (30 days), rate-limiting IP logs (24 hours), iOS learning data (until user deletes app or iCloud data), App Store subscription status (duration of subscription + 30 days).
+2. Add translated keys to all 8 non-English locales.
+3. Add TOC entry and render in privacy/page.tsx after the data-flow section.
+
+**Acceptance Criteria:**
+
+- [ ] `Privacy.retention` section exists in all 9 locales with heading + intro + at least 7 list items
+- [ ] Each retention period states a specific duration or clear deletion trigger
+- [ ] TOC entry links to the new section
+- [ ] Section renders correctly in privacy/page.tsx
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 16.3 — Sub-processor List and Notification Obligation
+
+**Priority:** Critical
+
+**Description:** ICO guidance requires controllers to either name sub-processors or provide a mechanism for notification of changes. Currently the policy lists services (Vercel, Sentry, Apple) but does not frame them as sub-processors or commit to notifying users of changes.
+
+**Tasks:**
+
+1. Add `Privacy.subProcessors` section with `.heading`, `.intro` (commitment to notify of sub-processor changes), and list items for each sub-processor: Vercel Inc. (hosting, analytics, speed insights), Sentry / Functional Software Inc. (error monitoring, session replay), Apple Inc. (iCloud sync, App Store billing), PostHog Inc. (product analytics — if applicable).
+2. Each list item must include: sub-processor name, registered country, purpose, and link to their privacy policy.
+3. Add `Privacy.subProcessors.changeNotice` key committing to 30-day advance notice of sub-processor changes via email or in-app notification.
+4. Translate all keys into 8 non-English locales.
+5. Add TOC entry and render in privacy/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Privacy.subProcessors` section exists in all 9 locales
+- [ ] Each sub-processor entry includes name, country, purpose, and privacy policy link
+- [ ] Change notification commitment states 30-day advance notice
+- [ ] TOC entry links to the new section
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 16.4 — International Transfer Safeguards (GDPR Art. 46)
+
+**Priority:** Critical
+
+**Description:** Data is transferred to the US (Vercel, Sentry). The Privacy Policy must state the legal mechanism for international transfers (e.g., UK-US Data Bridge, Standard Contractual Clauses, or adequacy decision). Currently the policy says data goes to the US but not the legal basis.
+
+**Tasks:**
+
+1. Add `Privacy.internationalTransfers` section with `.heading`, `.intro`, and paragraphs covering: (a) the UK-US Data Bridge as the primary mechanism; (b) Standard Contractual Clauses (SCCs) as fallback; (c) confirmation that Transfer Impact Assessments (TIAs) have been conducted; (d) user right to request a copy of the transfer safeguards.
+2. Translate into all 8 non-English locales.
+3. Add TOC entry and render in privacy/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Privacy.internationalTransfers` section exists in all 9 locales
+- [ ] UK-US Data Bridge and SCCs are both named
+- [ ] TIA reference is included
+- [ ] Users are told they can request copies of safeguards
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 16.5 — Consent Withdrawal Mechanism
+
+**Priority:** Critical
+
+**Description:** GDPR Art. 7(3) requires that withdrawal of consent be as easy as giving it. The policy mentions consent for cookies and newsletter but does not explain how to withdraw consent specifically. The CookiePage has a "withdraw" button, but the Privacy Policy itself must describe the mechanism.
+
+**Tasks:**
+
+1. Add `Privacy.consentWithdrawal` section with `.heading` and `.p1` explaining how to withdraw consent for each consent-based processing activity: (a) newsletter — unsubscribe link in every email; (b) waitlist — email legal@lumenlingo.com; (c) Sentry replay — adjust cookie preferences via the cookie banner; (d) confirmation that withdrawal does not affect lawfulness of processing before withdrawal.
+2. Translate into all 8 non-English locales.
+3. Add TOC entry and render in privacy/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Privacy.consentWithdrawal` section exists in all 9 locales
+- [ ] Each consent activity has a specific withdrawal mechanism
+- [ ] Statement that withdrawal does not affect prior lawful processing is present
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 16.6 — Right to Object and Automated Decision-Making
+
+**Priority:** High
+
+**Description:** GDPR Art. 21 requires the right to object to processing based on legitimate interest. Art. 22 requires disclosure of automated decision-making. The rights section must explicitly include both.
+
+**Tasks:**
+
+1. Add `Privacy.rights.objectLegitimate` key explaining the right to object to legitimate-interest processing (Vercel Analytics, Sentry error monitoring, rate limiting) and that Lumenshore will cease processing unless compelling grounds exist.
+2. Add `Privacy.rights.automatedDecisions` key confirming that LumenLingo does not make automated decisions with legal or similarly significant effects.
+3. Translate into all 8 non-English locales.
+4. Render both keys in the rights section of privacy/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] Both keys exist in all 9 locales
+- [ ] Right to object specifically names the legitimate-interest activities
+- [ ] Automated decision-making statement is clear and unambiguous
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 16.7 — Law Enforcement and Government Requests Transparency
+
+**Priority:** High
+
+**Description:** ICO guidance recommends that controllers disclose when and how they respond to law enforcement or government data requests. Currently absent from the policy.
+
+**Tasks:**
+
+1. Add `Privacy.lawEnforcement` section with `.heading` and `.p1` explaining: (a) Lumenshore will only disclose personal data to law enforcement when legally compelled (e.g., court order, statutory obligation under DPA 2018 s.7); (b) Lumenshore will notify affected users unless legally prohibited; (c) Lumenshore will resist overbroad requests; (d) Lumenshore publishes no personal data proactively to any government.
+2. Translate into all 8 non-English locales.
+3. Add TOC entry and render in privacy/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Privacy.lawEnforcement` section exists in all 9 locales
+- [ ] DPA 2018 s.7 is cited
+- [ ] User notification commitment is present
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 16.8 — Children's Privacy Enforcement (Age Gate)
+
+**Priority:** High
+
+**Description:** The policy states the app is not intended for children under 13, but GDPR Art. 8 and DPA 2018 s.9 require affirmative measures. The policy should describe what happens if Lumenshore discovers a child's data has been collected.
+
+**Tasks:**
+
+1. Add `Privacy.childrenPrivacy.enforcement` key explaining: (a) if Lumenshore becomes aware that data of a child under 13 (or under 16 in certain EU jurisdictions) has been collected, it will delete such data within 72 hours; (b) parents/guardians may contact legal@lumenlingo.com to request deletion; (c) Lumenshore does not knowingly process data of children without verified parental consent.
+2. Translate into all 8 non-English locales.
+3. Render in the existing children's privacy section of privacy/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Privacy.childrenPrivacy.enforcement` key exists in all 9 locales
+- [ ] 72-hour deletion commitment is stated
+- [ ] Parental contact mechanism is specified
+- [ ] DPA 2018 s.9 or GDPR Art. 8 is referenced
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+## Epic 17 — Terms of Service: CRA 2015, Online Safety Act & Hardening
+
+> **Goal:** Ensure the Terms of Service are bulletproof against challenges under the Consumer Rights Act 2015 (unfair terms), comply with the Online Safety Act 2023, and close all remaining legal gaps.
+
+### Story 17.1 — CRA 2015 Unfair Terms Compliance Review
+
+**Priority:** Critical
+
+**Description:** Under CRA 2015 ss.62-65, any term that creates a significant imbalance to the consumer's detriment may be deemed unfair and unenforceable. Several terms in the ToS may be vulnerable: broad liability exclusions, unilateral modification rights, and one-sided termination clauses.
+
+**Tasks:**
+
+1. Audit every clause in `Terms` namespace for CRA 2015 unfair terms risk.
+2. Add `Terms.fairnessNotice` key with text confirming that: (a) nothing in the ToS excludes liability for death, personal injury, or fraud (CRA 2015 s.65); (b) all terms have been drafted in plain, intelligible language (s.68); (c) the consumer's statutory rights under CRA 2015 are unaffected.
+3. Add `Terms.modifications.fairness` key stating: modifications that materially reduce user rights will not take effect for existing users for 30 days, and users may terminate free of charge during that period.
+4. Translate both keys into all 8 non-English locales.
+5. Render in terms/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Terms.fairnessNotice` key exists in all 9 locales
+- [ ] CRA 2015 s.65 and s.68 are cited
+- [ ] Modification fairness clause includes 30-day grace period
+- [ ] Death/personal injury/fraud exclusion carve-out is explicit
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 17.2 — Online Safety Act 2023 Compliance
+
+**Priority:** Critical
+
+**Description:** The Online Safety Act 2023 imposes duties on services allowing user-generated content (UGC). LumenLingo may have UGC features (user-created flashcards shared publicly). The ToS must include content moderation commitments, illegal content takedown procedures, and user reporting mechanisms.
+
+**Tasks:**
+
+1. Add `Terms.contentModeration` section with `.heading`, `.intro`, and paragraphs covering: (a) Lumenshore's duty to remove illegal content under OSA 2023 s.10; (b) reporting mechanism (email or in-app button); (c) content moderation timeline (72 hours for review); (d) appeals process for wrongful removal.
+2. If no UGC exists, add a `Terms.noUGC` key clarifying that LaumenLingo does not currently permit user-generated content sharing and that these terms will be updated if UGC features are introduced.
+3. Translate into all 8 non-English locales.
+4. Render in terms/page.tsx with TOC entry.
+
+**Acceptance Criteria:**
+
+- [ ] Content moderation or no-UGC clause exists in all 9 locales
+- [ ] OSA 2023 s.10 is cited
+- [ ] If UGC exists, reporting mechanism and appeals process are documented
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 17.3 — GDPR Claims Exempted from Arbitration
+
+**Priority:** Critical
+
+**Description:** GDPR Art. 79 grants data subjects the right to bring claims before a court. The ToS's dispute resolution and arbitration clauses must exclude GDPR claims so that users can always access courts for data protection matters.
+
+**Tasks:**
+
+1. Add `Terms.disputeResolution.gdprExemption` key stating: "Nothing in this dispute resolution clause limits your right to bring a claim before a competent court under GDPR Art. 79 or DPA 2018 s.167 for infringement of your data protection rights."
+2. Translate into all 8 non-English locales.
+3. Render in the dispute resolution section of terms/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Terms.disputeResolution.gdprExemption` key exists in all 9 locales
+- [ ] GDPR Art. 79 and DPA 2018 s.167 are both cited
+- [ ] Clause is positioned within the dispute resolution section
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 17.4 — Sanctions and Export Control Compliance
+
+**Priority:** High
+
+**Description:** The Terms should include export control and sanctions compliance provisions. Under the Export Control Act 2002 and applicable sanctions regulations (UK Sanctions and OFSI), users in sanctioned jurisdictions should not use the service.
+
+**Tasks:**
+
+1. Add `Terms.exportControl` section with `.heading` and `.p1` covering: (a) users must not use the service in violation of UK sanctions or export control laws; (b) users represent they are not located in a sanctioned country; (c) Lumenshore may suspend accounts if sanctions compliance requires it.
+2. Translate into all 8 non-English locales.
+3. Add TOC entry and render in terms/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Terms.exportControl` section exists in all 9 locales
+- [ ] Export Control Act 2002 is referenced
+- [ ] Sanctions suspension right is clearly stated
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 17.5 — Accessibility Commitment (Equality Act 2010)
+
+**Priority:** High
+
+**Description:** The Equality Act 2010 requires service providers to make reasonable adjustments for disabled users. The ToS should include an accessibility commitment referencing WCAG 2.1 AA and a mechanism for users to request adjustments.
+
+**Tasks:**
+
+1. Add `Terms.accessibility.commitment` key stating Lumenshore's commitment to WCAG 2.1 Level AA and its ongoing efforts to ensure the app and website are accessible.
+2. Add `Terms.accessibility.adjustments` key providing a mechanism: "If you need a reasonable adjustment to use LumenLingo, please contact accessibility@lumenlingo.com and we will work with you to find a solution."
+3. Translate into all 8 non-English locales.
+4. Render in the accessibility section of terms/page.tsx (created in Epic 15).
+
+**Acceptance Criteria:**
+
+- [ ] Both accessibility keys exist in all 9 locales
+- [ ] WCAG 2.1 AA is explicitly referenced
+- [ ] Equality Act 2010 reasonable adjustment wording is used
+- [ ] Contact mechanism is provided
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 17.6 — Defined Terms Precision
+
+**Priority:** Medium
+
+**Description:** Several terms used in the ToS (e.g., "Service", "Content", "User Data", "Intellectual Property") lack precise definitions. Under CRA 2015 s.68from, terms must be in plain and intelligible language. Ambiguous definitions create enforceability risk.
+
+**Tasks:**
+
+1. Add `Terms.definitions` section with `.heading` and individual definition keys for: "Service", "App", "Website", "User Data", "Content", "Intellectual Property", "Subscription", "Free Tier", "Premium Tier".
+2. Each definition must be clear, specific, and consistent with usage throughout the ToS.
+3. Translate into all 8 non-English locales.
+4. Add TOC entry and render in terms/page.tsx before the first substantive section.
+
+**Acceptance Criteria:**
+
+- [ ] `Terms.definitions` section exists in all 9 locales with at least 9 defined terms
+- [ ] Each definition is self-contained and unambiguous
+- [ ] TOC entry links to definitions section
+- [ ] Definitions section appears before first substantive section
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 17.7 — Mutual Indemnification Balance
+
+**Priority:** Medium
+
+**Description:** If the ToS includes an indemnification clause, it should be mutual (not just user-to-company). One-sided indemnification is a CRA 2015 unfairness risk. If the user must indemnify Lumenshore, Lumenshore should reciprocally indemnify the user for its own breaches.
+
+**Tasks:**
+
+1. Review existing `Terms.indemnification` content.
+2. Add `Terms.indemnification.mutual` key providing reciprocal indemnification: Lumenshore will indemnify users against third-party claims arising from Lumenshore's negligence, wilful misconduct, or breach of its obligations under the ToS or applicable law.
+3. Translate into all 8 non-English locales.
+4. Render in the indemnification section of terms/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Terms.indemnification.mutual` key exists in all 9 locales
+- [ ] Reciprocal indemnification covers negligence, wilful misconduct, and breach
+- [ ] Clause is balanced — similar scope to user's indemnification obligation
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+## Epic 18 — EULA: Data Protection, Warranty & Liability Hardening
+
+> **Goal:** Close remaining EULA gaps relating to GDPR/DPA references, warranty disclaimers, third-party service liability, educational tool disclaimers, and biometric data provisions.
+
+### Story 18.1 — GDPR/DPA Cross-Reference in EULA
+
+**Priority:** Critical
+
+**Description:** The EULA governs use of the iOS app but does not reference GDPR or DPA 2018 data protection obligations. Users should be directed to the Privacy Policy for data processing details, and the EULA should confirm that data protection rights are preserved regardless of EULA terms.
+
+**Tasks:**
+
+1. Add `Eula.dataProtection` section with `.heading` and `.p1` stating: (a) the App processes personal data as described in the Privacy Policy; (b) nothing in this EULA limits the user's rights under UK GDPR or DPA 2018; (c) for data processing details, see the Privacy Policy (with link).
+2. Translate into all 8 non-English locales.
+3. Add TOC entry and render in eula/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Eula.dataProtection` section exists in all 9 locales
+- [ ] UK GDPR and DPA 2018 are explicitly named
+- [ ] Privacy Policy link is present as rich text tag
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 18.2 — Warranty Disclaimer for User-Caused Data Loss
+
+**Priority:** High
+
+**Description:** The EULA should disclaim warranty for data loss caused by user actions (e.g., deleting the app, disabling iCloud sync, clearing device storage). This protects against claims where the user's own actions caused data loss.
+
+**Tasks:**
+
+1. Add `Eula.warranty.userDataLoss` key clarifying: (a) Lumenshore is not responsible for data loss caused by user deletion of the app, disabling of iCloud, or clearing of device storage; (b) users are encourageed to ensure iCloud sync is enabled to protect their learning progress; (c) this disclaimer does not affect the user's statutory rights under CRA 2015.
+2. Translate into all 8 non-English locales.
+3. Render in the warranty section of eula/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Eula.warranty.userDataLoss` key exists in all 9 locales
+- [ ] Three specific user actions (app deletion, iCloud disable, storage clear) are named
+- [ ] CRA 2015 statutory rights carve-out is present
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 18.3 — Third-Party Service Provider Liability Boundaries
+
+**Priority:** High
+
+**Description:** The app relies on Apple (App Store, iCloud), RevenueCat (subscription management), and potentially PostHog (analytics). The EULA should clearly state that Lumenshore is not liable for outages, changes, or failures of these third-party services.
+
+**Tasks:**
+
+1. Add `Eula.thirdPartyServices` section with `.heading` and `.p1` listing third-party services and stating: (a) Lumenshore is not liable for unavailability, errors, or changes in third-party services; (b) users should refer to each provider's own terms; (c) this does not exclude liability where Lumenshore's negligence caused the issue.
+2. List providers: Apple Inc. (App Store, iCloud), RevenueCat Inc. (subscription management).
+3. Translate into all 8 non-English locales.
+4. Add TOC entry and render in eula/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Eula.thirdPartyServices` section exists in all 9 locales
+- [ ] Each third-party provider is named with their service role
+- [ ] Negligence carve-out prevents the clause from being unfair under CRA 2015
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 18.4 — Educational Tool Disclaimer
+
+**Priority:** Medium
+
+**Description:** LumenLingo is a language-learning tool. The EULA should disclaim that the app is not a substitute for professional language instruction, certification, or assessment. This limits liability for users who rely on the app for professional or academic outcomes.
+
+**Tasks:**
+
+1. Add `Eula.educationalDisclaimer` section with `.heading` and `.p1` stating: (a) LumenLingo is an educational aid and not a substitute for professional language instruction; (b) Lumenshore makes no representations about the accuracy of flashcard content for professional, academic, or certification purposes; (c) users should verify critical translations with qualified professionals.
+2. Translate into all 8 non-English locales.
+3. Add TOC entry and render in eula/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Eula.educationalDisclaimer` section exists in all 9 locales
+- [ ] Professional instruction disclaimer is clear
+- [ ] No implied fitness for certification or professional purposes
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 18.5 — Biometric Data Clause
+
+**Priority:** Medium
+
+**Description:** If the app uses Face ID or Touch ID for authentication or any purpose, this must be disclosed. Even if LumenLingo does not process biometric data itself (Apple handles it on-device), a clarifying clause prevents confusion and pre-empts regulatory queries.
+
+**Tasks:**
+
+1. Add `Eula.biometricData` key stating: (a) the App may offer Face ID or Touch ID for convenience features; (b) biometric data is processed entirely by Apple on your device and never transmitted to Lumenshore; (c) Lumenshore does not collect, store, or have access to any biometric data.
+2. Translate into all 8 non-English locales.
+3. Render in eula/page.tsx (either in a new section or appended to the data protection section from 18.1).
+
+**Acceptance Criteria:**
+
+- [ ] `Eula.biometricData` key exists in all 9 locales
+- [ ] Clear statement that biometric data stays on-device with Apple
+- [ ] Explicit denial of Lumenshore collecting biometric data
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 18.6 — Open-Source Licence Attribution
+
+**Priority:** Medium
+
+**Description:** If the app uses open-source libraries, the EULA should either include attributions or provide a mechanism to view them (e.g., an in-app "Open Source Licences" screen). Failure to comply with open-source licences (MIT, Apache 2.0, etc.) creates legal exposure.
+
+**Tasks:**
+
+1. Add `Eula.openSource` section with `.heading` and `.p1` stating: (a) the App may contain open-source software components; (b) a list of open-source components and their licences is available in the App's settings or at a URL; (c) open-source components are provided under their respective licences, which take precedence over this EULA where applicable.
+2. Translate into all 8 non-English locales.
+3. Add TOC entry and render in eula/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `Eula.openSource` section exists in all 9 locales
+- [ ] Mechanism for viewing open-source licences is described
+- [ ] Statement that open-source licences take precedence where applicable
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+## Epic 19 — Cookie Policy: PECR 2003 Full Compliance
+
+> **Goal:** Ensure the Cookie Policy is fully compliant with PECR 2003 (as amended), ICO cookie guidance, and GDPR consent requirements. Close all gaps around consent mechanics, third-party cookies, and accessibility.
+
+### Story 19.1 — Explicit Consent Rejection Mechanism
+
+**Priority:** Critical
+
+**Description:** PECR Regulation 6 requires that consent to non-essential cookies is freely given. The cookie banner must allow users to reject all non-essential cookies as easily as accepting them. The policy must document this mechanism.
+
+**Tasks:**
+
+1. Add `CookiePage.consent.rejection` key explaining: (a) users can reject all non-essential cookies via the "Reject All" button on the cookie banner; (b) rejecting cookies does not affect access to any functionality of the website; (c) only strictly necessary cookies will remain active after rejection.
+2. Translate into all 8 non-English locales.
+3. Render in cookies/page.tsx within the consent section.
+
+**Acceptance Criteria:**
+
+- [ ] `CookiePage.consent.rejection` key exists in all 9 locales
+- [ ] "Reject All" functionality is documented
+- [ ] No-functionality-loss guarantee is stated
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 19.2 — Consent Withdrawal with Data Deletion
+
+**Priority:** Critical
+
+**Description:** Users must be able to withdraw cookie consent at any time (PECR + GDPR Art. 7(3)). Upon withdrawal, previously set cookies should be deleted. The policy must explain how withdrawal works and what happens to already-collected data.
+
+**Tasks:**
+
+1. Add `CookiePage.consent.withdrawal` key explaining: (a) users can withdraw consent at any time by clicking "Cookie Settings" in the website footer; (b) upon withdrawal, all non-essential cookies will be deleted from the browser; (c) data already collected during the consent period may be retained in accordance with the Privacy Policy's retention schedule; (d) withdrawal does not affect the lawfulness of processing before withdrawal.
+2. Translate into all 8 non-English locales.
+3. Render in cookies/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `CookiePage.consent.withdrawal` key exists in all 9 locales
+- [ ] Withdrawal mechanism (Cookie Settings button) is specified
+- [ ] Cookie deletion on withdrawal is confirmed
+- [ ] Lawfulness-of-prior-processing statement is included
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 19.3 — Pre-Ticked Box Prohibition
+
+**Priority:** High
+
+**Description:** The CJEU Planet49 ruling and ICO guidance prohibit pre-ticked consent boxes. The cookie policy should confirm that no consent boxes are pre-ticked and that consent requires an affirmative action.
+
+**Tasks:**
+
+1. Add `CookiePage.consent.affirmative` key stating: (a) no cookie consent boxes are pre-ticked; (b) consent requires an affirmative action (clicking "Accept" or toggling individual cookie categories); (c) simply browsing the website does not constitute consent.
+2. Translate into all 8 non-English locales.
+3. Render in cookies/page.tsx within the consent section.
+
+**Acceptance Criteria:**
+
+- [ ] `CookiePage.consent.affirmative` key exists in all 9 locales
+- [ ] Pre-ticked box prohibition is explicit
+- [ ] Browsing-is-not-consent statement is included
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 19.4 — Third-Party Cookie Denial Option
+
+**Priority:** High
+
+**Description:** Users should be able to deny third-party cookies specifically (e.g., Sentry) while accepting first-party strictly necessary cookies. The policy must explain the granularity of cookie controls available.
+
+**Tasks:**
+
+1. Add `CookiePage.granularity` section with `.heading` and `.p1` explaining: (a) users can control cookies by category: Strictly Necessary (always active), Analytics (Vercel — cookie-free, no toggle needed), Functional (Sentry session replay — toggleable); (b) each category can be independently enabled or disabled; (c) third-party cookies from Sentry can be denied without affecting core website functionality.
+2. Translate into all 8 non-English locales.
+3. Render in cookies/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `CookiePage.granularity` section exists in all 9 locales
+- [ ] Cookie categories are clearly listed
+- [ ] Independent toggle per category is documented
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 19.5 — Browser Cookie Deletion Instructions
+
+**Priority:** Medium
+
+**Description:** ICO guidance recommends providing instructions on how to delete cookies via browser settings. The policy should include brief instructions or links to browser support pages for Chrome, Safari, Firefox, and Edge.
+
+**Tasks:**
+
+1. Add `CookiePage.browserInstructions` section with `.heading` and `.p1` intro, then list items for: Chrome, Safari, Firefox, Edge — each with a link to the browser's cookie management documentation.
+2. Add `CookiePage.browserInstructions.safari.itp` key explaining Safari's Intelligent Tracking Prevention (ITP) and how it affects cookie behaviour.
+3. Translate into all 8 non-English locales.
+4. Add TOC entry and render in cookies/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `CookiePage.browserInstructions` section exists in all 9 locales
+- [ ] At least 4 major browsers are covered with links
+- [ ] Safari ITP explanation is included
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 19.6 — Accessibility of Cookie Settings
+
+**Priority:** Medium
+
+**Description:** Under the Equality Act 2010 and WCAG 2.1, cookie consent mechanisms must be accessible to users with disabilities. The policy should confirm that the cookie banner and settings are keyboard-navigable, screen-reader compatible, and meet WCAG 2.1 AA.
+
+**Tasks:**
+
+1. Add `CookiePage.accessibility` key stating: (a) the cookie banner and settings panel are accessible via keyboard navigation; (b) all controls are compatible with screen readers (ARIA labels); (c) colour contrast meets WCAG 2.1 AA requirements; (d) users who cannot interact with the cookie banner can contact accessibility@lumenlingo.com.
+2. Translate into all 8 non-English locales.
+3. Render in cookies/page.tsx.
+
+**Acceptance Criteria:**
+
+- [ ] `CookiePage.accessibility` key exists in all 9 locales
+- [ ] Keyboard navigation, screen reader, and colour contrast are mentioned
+- [ ] Fallback contact mechanism is provided
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+## Epic 20 — Cross-Policy Consistency & Version Management
+
+> **Goal:** Ensure all four policies (Privacy, Terms, EULA, Cookie) are internally consistent with each other on liability caps, dispute resolution, contact details, data retention references, consent withdrawal, and version management.
+
+### Story 20.1 — Unified Liability Cap References
+
+**Priority:** Critical
+
+**Description:** The liability cap must be consistent across Privacy Policy, Terms, and EULA. Currently terms/page.tsx has a liability section but it may not match eula/page.tsx. Any discrepancy creates an argument that the higher cap applies.
+
+**Tasks:**
+
+1. Audit all liability/limitation clauses across `Terms.liability`, `Eula.liability`, and `Privacy` namespaces.
+2. Standardise the liability cap across all three policies (e.g., "the greater of GBP 100 or the total fees paid by you in the 12 months preceding the claim") or ensure each policy cross-references the Terms as the governing document for liability.
+3. Add cross-reference keys where liability is mentioned in EULA and Privacy: e.g., `Eula.liability.crossRef` and `Privacy.liability.crossRef` pointing users to the Terms for the definitive liability framework.
+4. Translate cross-reference keys into all 8 non-English locales.
+5. Render in respective page.tsx files.
+
+**Acceptance Criteria:**
+
+- [ ] Liability caps are numerically identical or explicitly cross-referenced across all policies
+- [ ] No contradictory liability language exists between policies
+- [ ] Cross-reference keys exist in all 9 locales
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 20.2 — Unified Dispute Resolution References
+
+**Priority:** High
+
+**Description:** Dispute resolution provisions (governing law, jurisdiction, ADR) must be consistent across Terms and EULA. The Privacy Policy should reference the Terms' dispute mechanism for non-GDPR disputes while preserving the GDPR Art. 79 court right.
+
+**Tasks:**
+
+1. Audit dispute resolution across `Terms.disputeResolution`, `Terms.ukAdr`, `Eula.governing`, `Privacy` namespaces.
+2. Add `Privacy.disputeResolution` key stating: "For disputes not relating to data protection, the dispute resolution provisions of our Terms of Service apply. For data protection disputes, see our Terms or exercise your rights under GDPR Art. 79."
+3. Ensure EULA's governing law clause is consistent with Terms (England and Wales, exclusive jurisdiction of English courts).
+4. Translate into all 8 non-English locales.
+5. Render cross-references in respective page.tsx files.
+
+**Acceptance Criteria:**
+
+- [ ] Governing law is identical across Terms and EULA (England and Wales)
+- [ ] Privacy Policy references Terms for non-GDPR disputes
+- [ ] GDPR Art. 79 carve-out is present in Privacy Policy
+- [ ] No contradictions between policies
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 20.3 — Unified Data Retention Matrix
+
+**Priority:** High
+
+**Description:** Data retention periods are referenced in the Privacy Policy (Story 16.2) and should be cross-referenced from the Cookie Policy (for cookie durations) and Terms (for account data). Create a single source of truth.
+
+**Tasks:**
+
+1. Ensure `Privacy.retention` (from Story 16.2) is the single source of truth for all data retention.
+2. Add `CookiePage.retention.crossRef` key stating: "For full details on data retention periods, see our Privacy Policy."
+3. Add `Terms.retention.crossRef` key stating: "Data collected during your use of the Service is retained as described in our Privacy Policy."
+4. Translate cross-references into all 8 non-English locales.
+5. Render in respective page.tsx files.
+
+**Acceptance Criteria:**
+
+- [ ] Privacy Policy contains the definitive retention schedule
+- [ ] Cookie Policy cross-references Privacy for retention details
+- [ ] Terms cross-references Privacy for retention details
+- [ ] Cross-reference keys exist in all 9 locales
+- [ ] Non-English translations are linguistically accurate
+
+---
+
+### Story 20.4 — Unified Contact Email Audit
+
+**Priority:** High
+
+**Description:** All four policies must use consistent contact email addresses. Legal matters should use legal@lumenlingo.com. Accessibility matters should use accessibility@lumenlingo.com (if introduced in Story 17.5). No policy should use hello@lumenshore.com or any other stale address.
+
+**Tasks:**
+
+1. Audit all email addresses across all 9 locales in Privacy, Terms, Eula, and CookiePage namespaces.
+2. Standardise: legal matters to legal@lumenlingo.com, accessibility matters to accessibility@lumenlingo.com, general enquiries to hello@lumenlingo.com (if used).
+3. Fix any inconsistencies across locales.
+4. Verify rendered output in all four page.tsx files.
+
+**Acceptance Criteria:**
+
+- [ ] All legal email references use legal@lumenlingo.com across all 9 locales
+- [ ] No stale email addresses remain (hello@lumenshore.com, etc.)
+- [ ] Email addresses render as clickable mailto: links
+- [ ] Consistency verified across all four policy pages
+
+---
+
+### Story 20.5 — Phase 3 Version Bumps
+
+**Priority:** Critical
+
+**Description:** After all Phase 3 content changes are implemented, bump version numbers and update changelogs across all four policies and the iOS consent screen.
+
+**Tasks:**
+
+1. Bump Privacy Policy to v2.3, Terms to v1.3, EULA to v1.2, Cookie Policy to v1.2.
+2. Add changelog entries in each policy's `changes` section describing Phase 3 additions.
+3. Update `LegalConsentView.swift` `currentVersion` to "2.3".
+4. Update all 9 `AppStrings+*.swift` files `legalVersion` to "2.3".
+5. Translate changelog entries into all 8 non-English locales.
+
+**Acceptance Criteria:**
+
+- [ ] Privacy v2.3, Terms v1.3, EULA v1.2, Cookie v1.2 in all 9 locales
+- [ ] Each changelog entry summarises all Phase 3 additions for that policy
+- [ ] iOS consent version is "2.3"
+- [ ] All 9 AppStrings legalVersion is "2.3"
+- [ ] Changelog entries are translated (not English) in non-English locales
+
+---
+
+## Epic 21 — Translation Quality Assurance
+
+> **Goal:** Fix all untranslated (English) strings appearing in non-English locales. The audit found ~2,509 issues: Privacy (~164/locale), Terms (~91/locale), EULA (~57/locale), CookiePage (~1/locale). Every legal string in every locale must be professionally translated, not left in English.
+
+### Story 21.1 — Privacy Policy Translation: Phase 2+ Strings (All 8 Locales) -- COMPLETED
+
+**Priority:** Critical
+
+**Status:** COMPLETED
+
+**Description:** The Privacy Policy has approximately 164 untranslated strings per locale across all 8 non-English locales (pl, de, es, fr, ja, zh, ar, uk). These are strings that were added during Phase 2 hardening but not properly translated -- they remain as exact copies of the English text. This is the largest translation gap.
+
+**Implementation Notes:**
+- Created 7 translation scripts (story_21_1_privacy_part1.py through part7.py) plus 1 patch script
+- Part 1: meta, breadcrumb, hero, overview, websiteData, sentryReplay, vercelAnalytics (31 keys/locale)
+- Part 2: customEvents, serviceWorker, appData, whatWeDontCollect, legalBasis (43 keys/locale)
+- Part 3: dataFlow, howWeUse, dataStorage, thirdParty, childrensPrivacy (33 keys/locale)
+- Part 4: dataRetention, yourRights, policyUpdates, contactUs (32 keys/locale)
+- Part 5: subProcessors (33 keys/locale)
+- Part 6: internationalTransfers, aggregateData (33 keys/locale)
+- Part 7: brazilPrivacy, euRepresentative (0-3 keys/locale — most already translated in Phase 2)
+- Patch: customEvents.li11 (1 key/locale)
+- Total: ~206 unique keys translated x 8 locales = ~1,648 translations applied
+- Remaining "untranslated" keys are intentionally identical: 5 privacy policy URLs, 1 company name, 1 institution name (ANPD), 1 contact line
+- All HTML tags (<b>, <emailLink>, <icoLink>, <anpdLink>, <anpdEmail>) preserved exactly
+
+**Tasks:**
+
+1. Run `scripts/audit_translations.py` to generate a definitive list of untranslated `Privacy.*` keys per locale.
+2. For each locale, translate ALL untranslated Privacy strings into the target language. Translations must be: (a) legally accurate (preserving legal meaning); (b) linguistically natural (not machine-translation-quality); (c) culturally appropriate (formal register for legal text).
+3. Preserve all HTML tags (`<b>`, `<emailLink>`, `<icoLink>`, etc.) and rich text placeholders.
+4. Verify no English text remains in Privacy namespace for any locale.
+
+**Acceptance Criteria:**
+
+- [x] Zero untranslated Privacy strings across all 8 non-English locales (only URLs and company names remain identical by design)
+- [x] All HTML tags and rich text placeholders preserved exactly
+- [x] Translations use formal legal register appropriate to each language
+- [x] `scripts/analyze_privacy_untranslated.py` reports 0 text-content issues per locale
+- [x] All 8 locales verified: pl, de, es, fr, ja, zh, ar, uk
+
+---
+
+### Story 21.2 — Terms of Service Translation: Phase 2+ Strings (All 8 Locales) -- COMPLETED
+
+**Priority:** Critical
+**Status:** COMPLETED
+
+**Description:** The Terms of Service has approximately 91 untranslated strings per locale across all 8 non-English locales. These Phase 2 additions remain in English.
+
+**Tasks:**
+
+1. Generate definitive list of untranslated `Terms.*` keys per locale.
+2. Translate ALL untranslated Terms strings into each target language, maintaining legal precision, formal register, and cultural appropriateness.
+3. Preserve all HTML tags and rich text placeholders.
+4. Verify no English text remains in Terms namespace for any locale.
+
+**Acceptance Criteria:**
+
+- [x] Zero untranslated Terms strings across all 8 non-English locales
+- [x] All HTML tags and rich text placeholders preserved exactly
+- [x] Translations use formal legal register
+- [x] `scripts/audit_translations.py` reports 0 Terms issues per locale
+
+**Implementation Notes:**
+- Analysis found 111 untranslated text-content Terms keys per locale across 21 sections (563 total keys in Terms namespace).
+- Split into 5 translation scripts for manageability:
+  - `scripts/story_21_2_terms_part1.py` — 28 keys: meta(3), breadcrumb(1), hero(2), introduction(2), acceptance(6), yourAccount(5), subscriptions(9)
+  - `scripts/story_21_2_terms_part2.py` — 27 keys: acceptableUse(8), intellectualProperty(8), userContent(4), disclaimers(7)
+  - `scripts/story_21_2_terms_part3.py` — 26 keys: copyrightInfringement(13), limitationOfLiability(6), termination(7)
+  - `scripts/story_21_2_terms_part4.py` — 14 keys: contactUs(5), contentProtection(9)
+  - `scripts/story_21_2_terms_part5.py` — 16 keys: dataExport(6), enforcementRemedies(7), internationalTax.australiaHeading(1), pricingCompliance.ukPriceMarkingHeading(1), ukAdr.provider(1)
+- Total: 111 keys x 8 locales = 888 translations applied.
+- All 5 scripts ran successfully with full key counts per locale.
+- Post-verification: 0 untranslated text-content keys remain. 2 keys are intentionally identical to English (UK statutory instrument name "UK Price Marking Order 2004" and "Australia (GST)" where Spanish spelling matches English).
+- All HTML tags (`<b>`, `<emailLink>`, `<email>`, `<privacyLink>`) preserved exactly.
+- Legal statute names (CDPA 1988, GDPR, UK GDPR, CRA 2015) kept in English or locale-standard abbreviations.
+- Helper scripts: `scripts/analyze_terms_untranslated.py`, `scripts/_extract_terms.py`, `scripts/_check_part4_en.py`.
+
+---
+
+### Story 21.3 — EULA Translation: Phase 2+ Strings (All 8 Locales)
+
+**Priority:** Critical
+
+**Description:** The EULA has approximately 57 untranslated strings per locale across all 8 non-English locales. Nearly half of the EULA content is in English in every non-English locale.
+
+**Tasks:**
+
+1. Generate definitive list of untranslated `Eula.*` keys per locale.
+2. Translate ALL untranslated EULA strings into each target language, maintaining legal precision and formal register.
+3. Preserve all HTML tags and rich text placeholders.
+4. Verify no English text remains in Eula namespace for any locale.
+
+**Acceptance Criteria:**
+
+- [ ] Zero untranslated Eula strings across all 8 non-English locales
+- [ ] All HTML tags and rich text placeholders preserved exactly
+- [ ] Translations use formal legal register
+- [ ] `scripts/audit_translations.py` reports 0 Eula issues per locale
+
+---
+
+### Story 21.4 — Cookie Policy Translation: Remaining Strings
+
+**Priority:** High
+
+**Description:** The Cookie Policy has a small number of untranslated strings (1-2 per locale in pl, de, es). These must be fixed for completeness.
+
+**Tasks:**
+
+1. Identify the specific untranslated `CookiePage.*` keys in pl, de, and es locales.
+2. Translate the identified keys.
+3. Verify zero untranslated CookiePage strings across all locales.
+
+**Acceptance Criteria:**
+
+- [ ] Zero untranslated CookiePage strings across all 8 non-English locales
+- [ ] `scripts/audit_translations.py` reports 0 CookiePage issues per locale
+
+---
+
+### Story 21.5 — Translation of Phase 3 Content (All New Keys)
+
+**Priority:** Critical
+
+**Description:** All new keys added in Phase 3 (Epics 16-20) must be translated into all 8 non-English locales at the time of implementation. This story serves as a gate to ensure no new English-only content is shipped.
+
+**Tasks:**
+
+1. For EVERY new key added in Epics 16-20, ensure translations exist in all 8 non-English locales BEFORE marking the parent story as complete.
+2. Run `scripts/audit_translations.py` after each epic is implemented to verify zero new untranslated strings.
+3. Establish a process: every story in Epics 16-20 includes "Translate into all 8 non-English locales" as a task -- this story enforces that obligation.
+
+**Acceptance Criteria:**
+
+- [ ] `scripts/audit_translations.py` reports 0 total issues across all namespaces and locales after Phase 3 implementation
+- [ ] No story in Epics 16-20 is marked complete without translations
+- [ ] Total untranslated string count is 0
+
+---
+
+### Story 21.6 — Translation Validation Automation
+
+**Priority:** Medium
+
+**Description:** Create or enhance the translation audit script to run as part of CI/CD or pre-commit hooks, ensuring future changes never introduce untranslated legal strings.
+
+**Tasks:**
+
+1. Enhance `scripts/audit_translations.py` to exit with non-zero status if any issues are found.
+2. Add a Makefile target `make check-translations` that runs the audit script.
+3. Document the translation QA process in a `TRANSLATION_QA.md` file.
+4. Optionally integrate into CI pipeline (GitHub Actions) to block PRs that introduce untranslated legal strings.
+
+**Acceptance Criteria:**
+
+- [ ] `scripts/audit_translations.py` exits with code 1 if issues found, code 0 if clean
+- [ ] `make check-translations` target exists and works
+- [ ] `TRANSLATION_QA.md` documents the process
+- [ ] Script catches newly introduced untranslated strings
+
+---
+
+## Epic 22 — iOS App Legal Rendering & Consent
+
+> **Goal:** Ensure the iOS app's legal consent flow and in-app legal text rendering are consistent with the web policies. Any legal content shown in the iOS app must match the web version and be properly localised.
+
+### Story 22.1 — iOS Legal Consent Flow Audit
+
+**Priority:** High
+
+**Description:** The iOS app has a `LegalConsentView.swift` that requires user consent before using the app. This view must display the correct version number, link to all four policies, and require affirmative consent (not pre-ticked). Audit the current implementation and fix any gaps.
+
+**Tasks:**
+
+1. Audit `LegalConsentView.swift` to verify: (a) all four policies (Privacy, Terms, EULA, Cookie) are linked; (b) consent requires an affirmative action (toggle or button); (c) version number matches the latest (currently "2.2", will be "2.3" after Story 20.5); (d) consent is re-requested when the version changes.
+2. Fix any gaps found.
+3. Ensure the consent view is accessible (VoiceOver labels, Dynamic Type support).
+
+**Acceptance Criteria:**
+
+- [ ] All four policies are linked in the consent view
+- [ ] Consent requires affirmative action (not passive/pre-ticked)
+- [ ] Version number is synced with web policy versions
+- [ ] Consent is re-requested on version change
+- [ ] VoiceOver and Dynamic Type are supported
+
+---
+
+### Story 22.2 — iOS AppStrings Legal Version Sync
+
+**Priority:** High
+
+**Description:** All 9 `AppStrings+*.swift` files contain a `legalVersion` string. This must always match the web policy version. Create a validation mechanism to prevent drift.
+
+**Tasks:**
+
+1. Add a Makefile target `make check-legal-version` that: (a) reads the version from `en.json` Privacy changelog; (b) reads the version from `LegalConsentView.swift`; (c) reads the version from all 9 `AppStrings+*.swift` files; (d) fails if any mismatch.
+2. Document the version sync process.
+3. After Phase 3, verify all versions are "2.3".
+
+**Acceptance Criteria:**
+
+- [ ] `make check-legal-version` target exists and validates version consistency
+- [ ] All 9 AppStrings files have identical legalVersion
+- [ ] LegalConsentView.swift currentVersion matches AppStrings legalVersion
+- [ ] Version matches the latest web policy version
+
+---
+
+### Story 22.3 — Privacy/Terms/EULA/Cookie Page TOC Completeness
+
+**Priority:** Medium
+
+**Description:** After Phase 3, each policy page.tsx will have new sections. All new sections must have corresponding TOC (table of contents) entries that correctly anchor-link to the section.
+
+**Tasks:**
+
+1. Audit privacy/page.tsx TOC against all rendered sections.
+2. Audit terms/page.tsx TOC against all rendered sections.
+3. Audit eula/page.tsx TOC against all rendered sections.
+4. Audit cookies/page.tsx TOC against all rendered sections.
+5. Add any missing TOC entries.
+6. Verify anchor links work (scroll to correct section).
+
+**Acceptance Criteria:**
+
+- [ ] Every section in each policy page has a corresponding TOC entry
+- [ ] All TOC anchor links scroll to the correct section
+- [ ] TOC entries are translated in all 9 locales
+- [ ] No orphaned TOC entries (pointing to non-existent sections)
+
+---
+
+### Story 22.4 — Rendered Output Visual QA (All Locales)
+
+**Priority:** Medium
+
+**Description:** After all Phase 3 content and translation changes, perform a visual QA pass on all four policy pages in all 9 locales. Check for rendering issues: broken HTML, missing rich text, layout overflow in RTL (Arabic), character encoding issues in CJK (Japanese, Chinese).
+
+**Tasks:**
+
+1. Visit each policy page in each of the 9 locales in a browser.
+2. Check for: broken HTML rendering, missing bold/italic formatting, broken links, text overflow, RTL layout issues (Arabic), CJK character display issues.
+3. Document and fix any issues found.
+4. Screenshot evidence for at least en, ar, ja, pl locales for each policy.
+
+**Acceptance Criteria:**
+
+- [ ] All four policy pages render correctly in all 9 locales
+- [ ] No broken HTML or missing formatting
+- [ ] RTL (Arabic) layout is correct
+- [ ] CJK (Japanese, Chinese) characters display correctly
+- [ ] Links are clickable and point to correct destinations
+
+---
+
+## Epic 23 — DPIA and Compliance Documentation
+
+> **Goal:** Create supporting compliance documentation that the policies reference or depend on. These are not user-facing policy changes but internal documents required for regulatory compliance.
+
+### Story 23.1 — Data Protection Impact Assessment (DPIA)
+
+**Priority:** Critical
+
+**Description:** GDPR Art. 35 requires a DPIA for processing that is likely to result in high risk. While LumenLingo processes minimal data, the DPIA should be conducted and documented to demonstrate compliance. The Privacy Policy (Story 16.4) references TIAs; a DPIA supports this claim.
+
+**Tasks:**
+
+1. Review existing `compliance/DPIA.md` and update it to cover: (a) all processing activities listed in the Privacy Policy; (b) risk assessment for each activity; (c) mitigation measures; (d) conclusion on necessity and proportionality.
+2. Ensure the DPIA references the specific sub-processors, transfer safeguards, and retention periods documented in the Privacy Policy.
+3. Date-stamp and version the DPIA.
+
+**Acceptance Criteria:**
+
+- [ ] `compliance/DPIA.md` is updated and comprehensive
+- [ ] Every processing activity in the Privacy Policy is assessed
+- [ ] Risk ratings and mitigations are documented
+- [ ] DPIA is date-stamped and versioned
+
+---
+
+### Story 23.2 — Records of Processing Activities (ROPA)
+
+**Priority:** High
+
+**Description:** GDPR Art. 30 requires controllers to maintain records of processing activities. The existing `compliance/ROPA.md` must be updated to reflect all current processing activities, including new ones added in Phase 3.
+
+**Tasks:**
+
+1. Update `compliance/ROPA.md` to include every processing activity from the Privacy Policy.
+2. For each activity, document: purpose, lawful basis, data categories, recipients, retention period, transfer safeguards.
+3. Date-stamp and version the ROPA.
+
+**Acceptance Criteria:**
+
+- [ ] `compliance/ROPA.md` covers all processing activities
+- [ ] Each entry includes all GDPR Art. 30 required fields
+- [ ] ROPA is date-stamped and versioned
+- [ ] No processing activity in the Privacy Policy is missing from ROPA
+
+---
+
+# Phase 3 Summary
+
+| Epic | Policy/Area | Stories | Priority |
+|------|-------------|---------|----------|
+| 16 | Privacy | 8 | Critical |
+| 17 | Terms | 7 | Critical |
+| 18 | EULA | 6 | High |
+| 19 | Cookie | 6 | Critical |
+| 20 | Cross-Policy | 5 | Critical |
+| 21 | Translations | 6 | Critical |
+| 22 | iOS/Rendering | 4 | High |
+| 23 | Compliance Docs | 2 | Critical |
+
+**Total Phase 3 Stories: 44**
+
+### Implementation Order (Recommended)
+
+1. **Epic 21 (Stories 21.1-21.4)** — Fix existing translation gaps first (foundation)
+2. **Epic 16** — Privacy GDPR/DPA gaps (critical regulatory risk)
+3. **Epic 17** — Terms CRA 2015 and OSA 2023 (critical legal risk)
+4. **Epic 18** — EULA hardening
+5. **Epic 19** — Cookie PECR compliance
+6. **Epic 20 (Stories 20.1-20.4)** — Cross-policy consistency
+7. **Epic 22** — iOS and rendering QA
+8. **Epic 23** — Compliance documentation
+9. **Epic 21 (Story 21.5)** — Translate all Phase 3 content
+10. **Epic 21 (Story 21.6)** — Translation automation
+11. **Epic 20 (Story 20.5)** — Version bumps (always last)

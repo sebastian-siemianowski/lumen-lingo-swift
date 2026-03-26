@@ -456,101 +456,101 @@
   },
   "Privacy": {
     "meta": {
-      "title": "Privacy Policy",
-      "description": "Read how Lumenshore handles your data with care across the LumenLingo iOS app and lumenlingo.com website. Privacy-first approach, on-device processing, GDPR, CCPA and your rights.",
-      "ogTitle": "Privacy Policy — LumenLingo"
+      "title": "Datenschutzrichtlinie",
+      "description": "Erfahren Sie, wie Lumenshore Ihre Daten in der LumenLingo iOS-App und auf lumenlingo.com behandelt. Privacy-First-Ansatz, Verarbeitung auf dem Gerät, DSGVO, CCPA und Ihre Rechte.",
+      "ogTitle": "Datenschutzrichtlinie — LumenLingo"
     },
-    "breadcrumb": "Privacy Policy",
+    "breadcrumb": "Datenschutzrichtlinie",
     "hero": {
-      "heading": "Privacy Policy",
-      "subtitle": "Your privacy matters deeply to us. Here’s exactly how we handle your data across the LumenLingo app and website — in plain English, not legal jargon."
+      "heading": "Datenschutzrichtlinie",
+      "subtitle": "Ihre Privatsphäre ist uns sehr wichtig. Hier erfahren Sie genau, wie wir Ihre Daten in der LumenLingo-App und auf der Website verarbeiten — in verständlicher Sprache, nicht in Juristendeutsch."
     },
     "overview": {
-      "heading": "Overview",
-      "p1": "Lumenshore Limited (“Lumenshore”, “we”, “us”, or “our”), company number 09607326, registered at Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA, operates the LumenLingo mobile application (the “App”) and the lumenlingo.com website (the “Website”). This Privacy Policy explains how we collect, use, store, and protect information when you use either platform.",
-      "p2": "We built LumenLingo with a privacy-first architecture. On the iOS app, your learning data is processed and stored on your device and in your personal iCloud account — not on our servers. On the website, we collect minimal data necessary to operate the service and improve your experience. We believe your data is yours, and it should stay that way.",
-      "p3": "This policy is organised into two sections — Website and iOS App — so you can quickly find the information relevant to you."
+      "heading": "Überblick",
+      "p1": "Lumenshore Limited (\"Lumenshore\", \"wir\", \"uns\" oder \"unser\"), Firmennummer 09607326, registriert unter Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA, betreibt die mobile Anwendung LumenLingo (die \"App\") und die Website lumenlingo.com (die \"Website\"). Diese Datenschutzrichtlinie erläutert, wie wir Informationen erheben, verwenden, speichern und schützen, wenn Sie eine der beiden Plattformen nutzen.",
+      "p2": "Wir haben LumenLingo mit einer Privacy-First-Architektur entwickelt. In der iOS-App werden Ihre Lerndaten auf Ihrem Gerät und in Ihrem persönlichen iCloud-Konto verarbeitet und gespeichert — nicht auf unseren Servern. Auf der Website erheben wir nur die minimal notwendigen Daten für den Betrieb des Dienstes und die Verbesserung Ihres Erlebnisses. Wir sind der Überzeugung, dass Ihre Daten Ihnen gehören und das so bleiben sollte.",
+      "p3": "Diese Richtlinie ist in zwei Abschnitte unterteilt — Website und iOS-App — damit Sie schnell die für Sie relevanten Informationen finden können."
     },
     "websiteData": {
-      "heading": "Website Data Collection",
-      "intro": "When you visit lumenlingo.com, we may collect the following data:",
-      "li1": "<b>Email address</b> — if you sign up for our newsletter or join the waitlist. We collect your email solely to send you product updates and launch notifications. You can unsubscribe at any time.",
-      "li2": "<b>Language preference</b> — if you join the waitlist, we record which language you’re interested in to tailor future communications.",
-      "li3": "<b>Campaign attribution (UTM parameters)</b> — we capture UTM parameters (source, medium, campaign) from URLs in your browser’s sessionStorage to understand which marketing channels are effective. This data is not tied to your identity and is cleared when you close your browser tab.",
-      "li4": "<b>Anonymous page views</b> — we use Vercel Analytics, a cookie-free, privacy-respecting analytics service, to count page visits. No personal data is collected, no cookies are set, and no individual users are identified.",
-      "li5": "<b>Anonymous performance metrics</b> — we use Vercel Speed Insights to measure page load times and core web vitals. This data is fully anonymous and helps us keep the website fast.",
-      "li6": "<b>Error data and session replays</b> — we use Sentry for error monitoring. With your consent, Sentry may record session replays to help us diagnose and fix bugs. See the ‘Sentry Session Replay’ section below for full details.",
-      "li7": "<b>IP addresses</b> — your IP address is processed transiently by our API routes for rate limiting (to prevent abuse). IP addresses are not stored or logged by us."
+      "heading": "Datenerfassung auf der Website",
+      "intro": "Wenn Sie lumenlingo.com besuchen, erheben wir möglicherweise die folgenden Daten:",
+      "li1": "<b>E-Mail-Adresse</b> — wenn Sie sich für unseren Newsletter anmelden oder der Warteliste beitreten. Wir erfassen Ihre E-Mail-Adresse ausschließlich, um Ihnen Produktaktualisierungen und Startbenachrichtigungen zu senden. Sie können sich jederzeit abmelden.",
+      "li2": "<b>Sprachpräferenz</b> — wenn Sie der Warteliste beitreten, erfassen wir, an welcher Sprache Sie interessiert sind, um künftige Kommunikation anzupassen.",
+      "li3": "<b>Kampagnenzuordnung (UTM-Parameter)</b> — wir erfassen UTM-Parameter (Quelle, Medium, Kampagne) aus URLs im sessionStorage Ihres Browsers, um zu verstehen, welche Marketingkanäle effektiv sind. Diese Daten sind nicht mit Ihrer Identität verknüpft und werden beim Schließen des Browser-Tabs gelöscht.",
+      "li4": "<b>Anonyme Seitenaufrufe</b> — wir verwenden Vercel Analytics, einen cookiefreien, datenschutzfreundlichen Analysedienst, zur Zählung von Seitenaufrufen. Es werden keine personenbezogenen Daten erhoben, keine Cookies gesetzt und keine einzelnen Nutzer identifiziert.",
+      "li5": "<b>Anonyme Leistungsmetriken</b> — wir verwenden Vercel Speed Insights zur Messung von Seitenladezeiten und Core Web Vitals. Diese Daten sind vollständig anonym und helfen uns, die Website schnell zu halten.",
+      "li6": "<b>Fehlerdaten und Sitzungsaufzeichnungen</b> — wir verwenden Sentry zur Fehlerüberwachung. Mit Ihrer Zustimmung kann Sentry Sitzungen aufzeichnen, um uns bei der Diagnose und Behebung von Fehlern zu helfen. Einzelheiten finden Sie im Abschnitt „Sentry Session Replay” weiter unten.",
+      "li7": "<b>IP-Adressen</b> — Ihre IP-Adresse wird vorübergehend von unseren API-Routen zur Ratenbegrenzung (Missbrauchsverhinderung) verarbeitet. IP-Adressen werden von uns nicht gespeichert oder protokolliert."
     },
     "sentryReplay": {
       "heading": "Sentry Session Replay",
-      "p1": "We use Sentry (operated by Functional Software, Inc.) for error monitoring on our website. Sentry’s session replay feature records page interactions (clicks, scrolls, navigation) to help us reproduce and fix bugs.",
-      "p2": "<b>Sampling rates:</b> Session replays are captured for approximately 0.1% of normal browsing sessions. When an error occurs, the replay capture rate increases to 100% for that session only — this helps us understand exactly what led to the bug.",
-      "p3": "<b>What is captured:</b> Page navigation, clicks, scrolls, and screen content. All text inputs in forms (such as newsletter and waitlist fields) are masked to protect your privacy. Media content is blocked from capture.",
-      "p4": "<b>What is sent:</b> Replay data is transmitted to Sentry’s servers in the United States. It is retained according to Sentry’s data retention policy (typically 90 days).",
-      "p5": "<b>Your control:</b> Session replays are only active if you have given consent via our cookie consent banner. You can change your preference at any time."
+      "p1": "Wir verwenden Sentry (betrieben von Functional Software, Inc.) zur Fehlerüberwachung auf unserer Website. Die Session-Replay-Funktion von Sentry zeichnet Seiteninteraktionen (Klicks, Scrollen, Navigation) auf, um uns zu helfen, Fehler zu reproduzieren und zu beheben.",
+      "p2": "<b>Sampling-Raten:</b> Sitzungsaufzeichnungen werden bei etwa 0,1 % der normalen Browsing-Sitzungen erfasst. Tritt ein Fehler auf, steigt die Aufzeichnungsrate für diese Sitzung auf 100 % — dies hilft uns zu verstehen, was genau zum Fehler geführt hat.",
+      "p3": "<b>Was aufgezeichnet wird:</b> Seitennavigation, Klicks, Scrollen und Bildschirminhalte. Alle Texteingaben in Formularen (wie Newsletter- und Wartelisten-Felder) werden zum Schutz Ihrer Privatsphäre maskiert. Medieninhalte werden nicht erfasst.",
+      "p4": "<b>Wohin die Daten gesendet werden:</b> Replay-Daten werden an die Server von Sentry in den USA übertragen. Sie werden gemäß der Datenaufbewahrungsrichtlinie von Sentry gespeichert (in der Regel 90 Tage).",
+      "p5": "<b>Ihre Kontrolle:</b> Sitzungsaufzeichnungen sind nur aktiv, wenn Sie über unser Cookie-Zustimmungsbanner zugestimmt haben. Sie können Ihre Einstellung jederzeit ändern."
     },
     "vercelAnalytics": {
       "heading": "Vercel Analytics & Speed Insights",
-      "p1": "We use Vercel Analytics and Vercel Speed Insights on our website. These services are privacy-focused by design:",
-      "li1": "<b>No cookies</b> — Vercel Analytics does not set any cookies on your device.",
-      "li2": "<b>No personal data</b> — no IP addresses, device fingerprints, or user identifiers are collected.",
-      "li3": "<b>Aggregate only</b> — we see total page view counts and performance metrics, but we cannot identify individual visitors.",
-      "p2": "Both services are operated by Vercel Inc. Data is processed on Vercel’s infrastructure. See <vercelPrivacy>Vercel’s Privacy Policy</vercelPrivacy> for more details."
+      "p1": "Wir verwenden Vercel Analytics und Vercel Speed Insights auf unserer Website. Diese Dienste sind von Grund auf datenschutzfreundlich konzipiert:",
+      "li1": "<b>Keine Cookies</b> — Vercel Analytics setzt keine Cookies auf Ihrem Gerät.",
+      "li2": "<b>Keine personenbezogenen Daten</b> — es werden keine IP-Adressen, Geräte-Fingerprints oder Benutzerkennungen erfasst.",
+      "li3": "<b>Nur aggregierte Daten</b> — wir sehen Gesamtzahlen von Seitenaufrufen und Leistungsmetriken, können aber keine einzelnen Besucher identifizieren.",
+      "p2": "Beide Dienste werden von Vercel Inc. betrieben. Daten werden auf der Infrastruktur von Vercel verarbeitet. Weitere Informationen finden Sie in der <vercelPrivacy>Datenschutzrichtlinie von Vercel</vercelPrivacy>."
     },
     "customEvents": {
-      "heading": "Custom Analytics Events",
-      "intro": "In addition to page views, we track the following anonymised events through Vercel Analytics to understand how visitors use our website. No personal data is attached to these events:",
-      "li1": "<b>app_store_click</b> — when a visitor clicks an App Store download link (records link location on the page)",
-      "li2": "<b>pricing_view</b> — when a visitor views the pricing page",
-      "li3": "<b>pricing_cta_click</b> — when a visitor clicks a pricing call-to-action button (records which tier)",
-      "li4": "<b>blog_post_read</b> — when a visitor reads most of a blog post (records the post slug and title)",
-      "li5": "<b>feature_section_view</b> — when a visitor views a feature section on the homepage",
-      "li6": "<b>newsletter_signup</b> — when a visitor signs up for the newsletter (records the page location, not the email)",
-      "li7": "<b>demo_started</b> — when a visitor starts the interactive flashcard demo",
-      "li8": "<b>demo_completed</b> — when a visitor completes the demo (records correct/total scores)",
-      "li9": "<b>demo_cta_click</b> — when a visitor clicks a call-to-action after completing the demo",
-      "li10": "<b>page_not_found</b> — when a visitor lands on a 404 page (records the path)",
-      "li11": "<b>error_page_view</b> — when a visitor sees an error page (records the error message)"
+      "heading": "Benutzerdefinierte Ereignisse (PostHog)",
+      "intro": "Wir verwenden PostHog zur Erfassung von Analytics-Ereignissen auf unserer Website, um das Nutzerverhalten zu verstehen und unsere Dienste zu verbessern. Alle Ereignisse sind anonymen Kennungen zugeordnet — es werden keine personenbezogenen Daten erhoben.",
+      "li1": "<b>newsletter_signup</b> — wird erfasst, wenn sich jemand für den Newsletter anmeldet. Erfasste Eigenschaften: UTM-Kampagnenzuordnung und erkannte Sprache.",
+      "li2": "<b>waitlist_signup</b> — wird erfasst, wenn sich jemand auf die Warteliste setzt. Erfasste Eigenschaften: UTM-Kampagnenzuordnung, erkannte Sprache und gewählte Lernsprache.",
+      "li3": "<b>waitlist_cta_view</b> — wird erfasst, wenn der Wartelisten-Bereich im Sichtfeld des Nutzers erscheint (einmalig durch Intersection Observer ausgelöst).",
+      "li4": "<b>splash_screen_interaction</b> — wird erfasst, wenn ein Nutzer auf den Begrüßungsbildschirm klickt, um zur Hauptseite zu gelangen, wobei die Anzeigedauer des Begrüßungsbildschirms erfasst wird.",
+      "li5": "<b>cookie_consent</b> — wird erfasst, wenn ein Nutzer eine Auswahl im Cookie-Zustimmungsbanner trifft, wobei erfasst wird: Cookie-Kategorie (Analytics, funktional), ob die Kategorie akzeptiert oder abgelehnt wurde, sowie die Quelle der Interaktion (Banner oder Einstellungscenter).",
+      "li6": "<b>faq_toggle</b> — wird erfasst, wenn ein Nutzer eine FAQ-Frage auf- oder zuklappt, wobei erfasst wird: Fragetitel, Kategorie und durchgeführte Aktion (Öffnen/Schließen).",
+      "li7": "<b>language_selection_view</b> — wird erfasst, wenn der Sprachauswahl-Bereich im Wartelisten-Formular sichtbar wird.",
+      "li8": "<b>language_selected</b> — wird erfasst, wenn ein Nutzer eine Lernsprache im Wartelisten-Formular auswählt, wobei der Name der gewählten Sprache erfasst wird.",
+      "li9": "<b>page_view_custom</b> — wird erfasst, wenn ein Nutzer eine Seite besucht, wobei URL-Pfad, UTM-Parameter und Sprache erfasst werden.",
+      "li10": "<b>notification_bar</b> — wird erfasst, wenn ein Nutzer die Benachrichtigungsleiste schließt, wobei der Benachrichtigungsinhalt erfasst wird.",
+      "li11": "<b>error_page_view</b> — wenn ein Besucher eine Fehlerseite sieht (zeichnet die Fehlermeldung auf)"
     },
     "serviceWorker": {
-      "heading": "Offline Caching (Service Worker)",
-      "p1": "Our website uses a Service Worker to cache static assets (HTML pages, CSS stylesheets, JavaScript bundles, images, and fonts) on your device. This enables faster page loads on repeat visits and limited offline access.",
-      "p2": "The Service Worker cache is stored entirely on your device and contains no personal data. You can clear it at any time through your browser’s settings (Clear site data). No cached data is sent back to our servers."
+      "heading": "Service Worker & Caching",
+      "p1": "Unsere Website verwendet einen Service Worker, um statische Ressourcen (Seiten, Bilder, Schriftarten) für schnelleres Laden bei späteren Besuchen zwischenzuspeichern. Der Service Worker sammelt, überträgt oder speichert keine personenbezogenen Daten. Er arbeitet ausschließlich in Ihrem Browser, um die Offline-Leistung zu verbessern.",
+      "p2": "Sie können den Cache jederzeit über die Browsereinstellungen löschen oder den Service Worker über die Entwicklertools Ihres Browsers abmelden."
     },
     "appData": {
-      "heading": "iOS App Data Collection",
-      "intro": "The LumenLingo iOS app collects minimal data necessary to provide a great learning experience:",
-      "li1": "<b>Learning progress data</b> — flashcard mastery levels, practice scores, streaks, XP, and session history. This data is stored locally on your device and synced via iCloud.",
-      "li2": "<b>App preferences</b> — your selected language pairs, soundscape preferences, visual background choices, and tier selection. Stored on-device and synced via iCloud.",
-      "li3": "<b>Subscription status</b> — your membership tier, managed entirely by Apple through the App Store. We receive a subscription status from Apple but do not process payment information.",
-      "li4": "<b>Anonymous analytics</b> — we may collect aggregated, non-identifiable usage metrics (such as which features are most popular) to improve the app. No personal data is included."
+      "heading": "iOS-App-Daten",
+      "intro": "Die LumenLingo iOS-App verwendet eine Privacy-First-Architektur. Folgende Daten werden von der App gespeichert und verarbeitet:",
+      "li1": "<b>Lernfortschritt</b> — Daten zur verteilten Wiederholung, Quizergebnisse und Lernhistorie. Lokal auf Ihrem Gerät mit Apples SwiftData-Framework gespeichert.",
+      "li2": "<b>Einstellungen</b> — App-Einstellungen wie Design, Schwierigkeitsgrade und Sprachpräferenzen. In UserDefaults von Apple auf Ihrem Gerät gespeichert.",
+      "li3": "<b>iCloud-Synchronisierung</b> — Ihre Lerndaten können über Ihr persönliches iCloud-Konto zwischen Ihren Apple-Geräten synchronisiert werden. Diese Daten werden von Apple verschlüsselt und wir haben keinen Zugriff darauf.",
+      "li4": "<b>Abonnementstatus</b> — Ihr Abonnement-Level (kostenlos oder Premium) wird über die App-Store-Abrechnung von Apple verifiziert. Zahlungsdaten werden ausschließlich von Apple verarbeitet — wir sehen und speichern keine Kartendaten oder Rechnungsinformationen."
     },
     "whatWeDontCollect": {
-      "heading": "What We Don’t Collect",
-      "intro": "Across both our app and website, we want to be clear about what we <b>never</b> collect or do:",
-      "li1": "No location data or GPS coordinates",
-      "li2": "No contacts, photos, or access to other apps on your device",
-      "li3": "No payment or credit card information (Apple handles all app billing)",
-      "li4": "No advertising identifiers or tracking pixels",
-      "li5": "No data sold or shared with third-party advertisers — ever",
-      "li6": "No personal data shared with AI model training services"
+      "heading": "Was wir nicht erfassen",
+      "intro": "Wir möchten klar darlegen, was wir NICHT tun:",
+      "li1": "Kein Benutzerkonto oder Login erforderlich, um die iOS-App zu nutzen",
+      "li2": "Keine Standortverfolgung oder Geolokalisierungstools",
+      "li3": "Keine Werbenetzwerke oder Tracking-Pixel in der App oder auf der Website",
+      "li4": "Kein Verkauf, keine Vermietung oder Weitergabe von Daten an Datenhändler oder Werbetreibende",
+      "li5": "Keinerlei Device-Fingerprinting, Cross-Site-Tracking oder Retargeting-Pixel",
+      "li6": "Keine Weitergabe personenbezogener Daten an KI-Modelltrainingsdienste"
     },
     "legalBasis": {
-      "heading": "Legal Basis for Processing",
-      "intro": "Under GDPR and UK GDPR, we process personal data only when we have a lawful basis. Here is the legal basis for each type of data we handle:",
-      "consentHeading": "Consent (GDPR Art. 6(1)(a))",
-      "consentLi1": "<b>Newsletter signup</b> — you actively provide your email and opt in to receive updates",
-      "consentLi2": "<b>Waitlist signup</b> — you actively provide your email and language preference",
-      "consentLi3": "<b>Sentry session replay</b> — replays are only captured after you give explicit consent via our cookie banner",
-      "legitimateHeading": "Legitimate Interest (GDPR Art. 6(1)(f))",
-      "legitimateLi1": "<b>Vercel Analytics</b> — anonymous, cookie-free page view counting to improve our website. Our interest in understanding site usage is balanced against minimal privacy impact (no PII collected)",
-      "legitimateLi2": "<b>Sentry error monitoring</b> — collecting error diagnostics to maintain service reliability. No user behaviour is captured without consent; only crash and error data is collected under this basis",
-      "legitimateLi3": "<b>Rate limiting (IP address processing)</b> — preventing abuse of our API endpoints. IP addresses are processed transiently and not stored",
-      "contractHeading": "Contract Performance (GDPR Art. 6(1)(b))",
-      "contractLi1": "<b>iOS app learning data</b> — processing your learning progress is necessary to deliver the language-learning service you use",
-      "contractLi2": "<b>iCloud sync</b> — syncing your progress across devices is a core part of the service",
-      "contractLi3": "<b>Subscription management</b> — verifying your tier to provide the appropriate features"
+      "heading": "Rechtsgrundlage der Verarbeitung",
+      "intro": "Nach der DSGVO und der britischen DSGVO verarbeiten wir personenbezogene Daten nur, wenn wir eine rechtmäßige Grundlage haben. Hier ist die Rechtsgrundlage für jede Art von Daten, die wir verarbeiten:",
+      "consentHeading": "Einwilligung (DSGVO Art. 6(1)(a))",
+      "consentLi1": "<b>Newsletter-Anmeldung</b> — Sie geben aktiv Ihre E-Mail-Adresse an und stimmen dem Erhalt von Updates zu",
+      "consentLi2": "<b>Wartelisten-Anmeldung</b> — Sie geben aktiv Ihre E-Mail-Adresse und Sprachpräferenz an",
+      "consentLi3": "<b>Sentry-Sitzungsaufzeichnung</b> — Aufzeichnungen werden nur nach Ihrer ausdrücklichen Zustimmung über unser Cookie-Zustimmungsbanner erfasst",
+      "legitimateHeading": "Berechtigtes Interesse (DSGVO Art. 6(1)(f))",
+      "legitimateLi1": "<b>Vercel Analytics</b> — anonyme, cookiefreie Seitenaufrufzählung zur Verbesserung unserer Website. Unser Interesse am Verständnis der Websitenutzung steht im Verhältnis zur minimalen Auswirkung auf die Privatsphäre (keine personenbezogenen Daten)",
+      "legitimateLi2": "<b>Sentry-Fehlerüberwachung</b> — Erfassung von Fehlerdiagnosen zur Aufrechterhaltung der Dienstzuverlässigkeit. Nutzerverhalten wird ohne Einwilligung nicht erfasst; nur Absturz- und Fehlerdaten werden auf dieser Grundlage erhoben",
+      "legitimateLi3": "<b>Ratenbegrenzung (IP-Adressverarbeitung)</b> — Verhinderung von Missbrauch unserer API-Endpunkte. IP-Adressen werden vorübergehend verarbeitet und nicht gespeichert",
+      "contractHeading": "Vertragserfüllung (DSGVO Art. 6(1)(b))",
+      "contractLi1": "<b>iOS-App-Lerndaten</b> — die Verarbeitung Ihres Lernfortschritts ist notwendig, um den Sprachlerndienst zu erbringen, den Sie nutzen",
+      "contractLi2": "<b>iCloud-Synchronisierung</b> — die geräteübergreifende Synchronisierung Ihres Fortschritts ist ein wesentlicher Bestandteil des Dienstes",
+      "contractLi3": "<b>Abonnementverwaltung</b> — Überprüfung Ihres Abonnement-Levels zur Bereitstellung der entsprechenden Funktionen"
     },
     "dataProvisionRequirements": {
       "heading": "Ob die Bereitstellung von Daten verpflichtend ist",
@@ -564,49 +564,49 @@
       "statutoryP1": "Es besteht keine gesetzliche Pflicht, uns Ihre personenbezogenen Daten bereitzustellen. Alle Datenbereitstellungen sind entweder vertraglich (für den Dienst erforderlich) oder freiwillig."
     },
     "dataFlow": {
-      "heading": "Where Your Data Goes",
-      "intro": "Here is a plain-English summary of where your data is stored and processed:",
-      "li1": "<b>Your device</b> — all iOS app learning data, preferences, and progress are stored locally on your iPhone or iPad using Apple’s SwiftData framework",
-      "li2": "<b>Your iCloud account</b> — learning data syncs across your Apple devices via your personal iCloud account, encrypted by Apple. We have no access to this data",
-      "li3": "<b>Vercel (website hosting)</b> — our website is hosted on Vercel’s global edge network. Anonymous analytics data is processed by Vercel. Vercel’s servers are primarily located in the United States with edge nodes worldwide",
-      "li4": "<b>Sentry (error monitoring)</b> — error logs and (with your consent) session replay data are sent to Sentry’s servers in the United States. Sentry processes this data under their DPA with Standard Contractual Clauses",
-      "li5": "<b>Apple (App Store & iCloud)</b> — subscription management and iCloud sync are handled by Apple’s global infrastructure",
-      "noOtherParties": "Your data is not sent to any other third parties. We do not use Google Analytics, Facebook SDK, or any advertising networks."
+      "heading": "Wohin Ihre Daten gehen",
+      "intro": "Hier ist eine verständliche Zusammenfassung darüber, wo Ihre Daten gespeichert und verarbeitet werden:",
+      "li1": "<b>Ihr Gerät</b> — alle iOS-App-Lerndaten, Einstellungen und Fortschritte werden lokal auf Ihrem iPhone oder iPad mit Apples SwiftData-Framework gespeichert",
+      "li2": "<b>Ihr iCloud-Konto</b> — Lerndaten werden über Ihr persönliches iCloud-Konto zwischen Ihren Apple-Geräten synchronisiert, verschlüsselt von Apple. Wir haben keinen Zugriff auf diese Daten",
+      "li3": "<b>Vercel (Website-Hosting)</b> — unsere Website wird auf Vercels globalem Edge-Netzwerk gehostet. Anonyme Analysedaten werden von Vercel verarbeitet. Vercels Server befinden sich hauptsächlich in den USA mit Edge-Knoten weltweit",
+      "li4": "<b>Sentry (Fehlerüberwachung)</b> — Fehlerprotokolle und (mit Ihrer Zustimmung) Sitzungsaufzeichnungen werden an Sentrys Server in den USA gesendet. Sentry verarbeitet diese Daten auf Grundlage einer DPA mit Standardvertragsklauseln",
+      "li5": "<b>Apple (App Store & iCloud)</b> — Abonnementverwaltung und iCloud-Synchronisierung werden über Apples globale Infrastruktur abgewickelt",
+      "noOtherParties": "Ihre Daten werden an keine anderen Drittparteien gesendet. Wir verwenden kein Google Analytics, Facebook SDK oder Werbenetzwerke."
     },
     "howWeUse": {
-      "heading": "How We Use Your Information",
-      "intro": "The limited data we handle is used solely to:",
-      "li1": "<b>Personalise your learning</b> — spaced repetition scheduling, difficulty adaptation, and progress tracking depend on your learning history.",
-      "li2": "<b>Sync your progress</b> — iCloud sync ensures your data follows you across all your Apple devices.",
-      "li3": "<b>Manage your subscription</b> — we verify your membership tier to unlock the appropriate features.",
-      "li4": "<b>Improve the app and website</b> — anonymous aggregate data helps us understand which features are valuable and where to focus development.",
-      "li5": "<b>Communicate with you</b> — if you signed up for our newsletter or waitlist, we use your email to send product updates. You can unsubscribe at any time.",
-      "li6": "<b>Diagnose and fix bugs</b> — Sentry error data (and session replays with your consent) help us identify and resolve issues quickly."
+      "heading": "Wie wir Ihre Informationen verwenden",
+      "intro": "Die begrenzten Daten, die wir verarbeiten, werden ausschließlich verwendet für:",
+      "li1": "<b>Personalisierung Ihres Lernens</b> — Planung der verteilten Wiederholung, Schwierigkeitsanpassung und Fortschrittsverfolgung basieren auf Ihrer Lernhistorie.",
+      "li2": "<b>Synchronisierung Ihres Fortschritts</b> — die iCloud-Synchronisierung stellt sicher, dass Ihre Daten auf allen Ihren Apple-Geräten verfügbar sind.",
+      "li3": "<b>Verwaltung Ihres Abonnements</b> — wir überprüfen Ihr Abonnement-Level zur Freischaltung der entsprechenden Funktionen.",
+      "li4": "<b>Verbesserung der App und Website</b> — anonyme aggregierte Daten helfen uns zu verstehen, welche Funktionen wertvoll sind und wo wir die Entwicklung fokussieren sollten.",
+      "li5": "<b>Kommunikation mit Ihnen</b> — wenn Sie sich für unseren Newsletter oder die Warteliste angemeldet haben, verwenden wir Ihre E-Mail-Adresse für Produktaktualisierungen. Sie können sich jederzeit abmelden.",
+      "li6": "<b>Diagnose und Behebung von Fehlern</b> — Sentry-Fehlerdaten (und Sitzungsaufzeichnungen mit Ihrer Zustimmung) helfen uns, Probleme schnell zu identifizieren und zu beheben."
     },
     "dataStorage": {
-      "heading": "Data Storage & Security",
-      "intro": "LumenLingo uses a privacy-first, on-device architecture:",
-      "li1": "<b>On-device storage</b> — all learning data is stored locally using Apple’s SwiftData framework, protected by your device’s built-in encryption.",
-      "li2": "<b>iCloud sync</b> — data syncs between your devices via your personal iCloud account, encrypted end-to-end by Apple. We do not have access to your iCloud data.",
-      "li3": "<b>No external servers</b> — LumenLingo does not maintain servers that store your personal data from the iOS app. There is no cloud database for us to secure (or breach).",
-      "li4": "<b>App Store security</b> — subscription management is handled by Apple’s secure infrastructure.",
-      "li5": "<b>Website security</b> — lumenlingo.com uses HTTPS encryption, strict Content Security Policy headers, and rate-limited API endpoints to protect your data."
+      "heading": "Datenspeicherung und Sicherheit",
+      "intro": "LumenLingo verwendet eine datenschutzorientierte On-Device-Architektur:",
+      "li1": "<b>On-Device-Speicherung</b> — alle Lerndaten werden lokal mit Apples SwiftData-Framework gespeichert und durch die integrierte Geräteverschlüsselung geschützt.",
+      "li2": "<b>iCloud-Synchronisierung</b> — Daten werden über Ihr persönliches iCloud-Konto zwischen Ihren Geräten synchronisiert, Ende-zu-Ende von Apple verschlüsselt. Wir haben keinen Zugriff auf Ihre iCloud-Daten.",
+      "li3": "<b>Keine externen Server</b> — LumenLingo betreibt keine Server, die personenbezogene Daten aus der iOS-App speichern. Es gibt keine Cloud-Datenbank, die wir sichern (oder verletzen) könnten.",
+      "li4": "<b>App-Store-Sicherheit</b> — die Abonnementverwaltung wird über Apples sichere Infrastruktur abgewickelt.",
+      "li5": "<b>Website-Sicherheit</b> — lumenlingo.com verwendet HTTPS-Verschlüsselung, strenge Content-Security-Policy-Header und ratenbegrenzte API-Endpunkte zum Schutz Ihrer Daten."
     },
     "thirdParty": {
-      "heading": "Third-Party Services",
-      "intro": "LumenLingo integrates with a limited number of third-party services:",
-      "li1": "<b>Apple App Store & iCloud</b> — for app distribution, subscription management, payment processing, and data synchronisation. Subject to <applePrivacy>Apple’s Privacy Policy</applePrivacy>.",
-      "li2": "<b>Vercel</b> — for website hosting, anonymous analytics, and performance monitoring. Cookie-free, GDPR-compliant. Subject to <vercelPrivacy>Vercel’s Privacy Policy</vercelPrivacy>.",
-      "li3": "<b>Sentry</b> — for website error monitoring and (with consent) session replay. Subject to <sentryPrivacy>Sentry’s Privacy Policy</sentryPrivacy>.",
-      "noAdNetworks": "We do not use Google Analytics, Facebook SDK, or any advertising networks.",
+      "heading": "Drittanbieter-Dienste",
+      "intro": "LumenLingo verwendet eine begrenzte Anzahl von Drittanbieter-Diensten:",
+      "li1": "<b>Apple App Store & iCloud</b> — für App-Distribution, Abonnementverwaltung, Zahlungsabwicklung und Datensynchronisierung. Es gilt <applePrivacy>Apples Datenschutzrichtlinie</applePrivacy>.",
+      "li2": "<b>Vercel</b> — für Website-Hosting, anonyme Analytik und Leistungsüberwachung. Cookiefrei, DSGVO-konform. Es gilt <vercelPrivacy>Vercels Datenschutzrichtlinie</vercelPrivacy>.",
+      "li3": "<b>Sentry</b> — für Website-Fehlerüberwachung und (mit Zustimmung) Sitzungsaufzeichnung. Es gilt <sentryPrivacy>Sentrys Datenschutzrichtlinie</sentryPrivacy>.",
+      "noAdNetworks": "Wir verwenden kein Google Analytics, Facebook SDK oder Werbenetzwerke.",
       "li4": "<b>Clerk</b> — für Benutzerauthentifizierung und Identitätsverwaltung. Gemäß <clerkPrivacy>Clerks Datenschutzrichtlinie</clerkPrivacy>.",
       "li5": "<b>RevenueCat</b> — für Abonnementverwaltung und Berechtigungsverfolgung. Apple bleibt der Händler für alle Zahlungen. Gemäß <revenueCatPrivacy>RevenueCats Datenschutzrichtlinie</revenueCatPrivacy>."
     },
     "childrensPrivacy": {
-      "heading": "Children’s Privacy",
-      "p1": "LumenLingo is designed for users aged 13 and older. We do not knowingly collect personal information from children under 13 (or the applicable minimum age in your jurisdiction, which may be higher — for example, 16 in Germany and the Netherlands).",
-      "p2": "The iOS app does not require account registration and stores data locally, so no personal information is transmitted to us from app users of any age. On the website, we do not knowingly accept newsletter or waitlist signups from anyone under 13.",
-      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at legal@lumenlingo.com and we will delete it promptly.",
+      "heading": "Datenschutz für Kinder",
+      "p1": "LumenLingo ist für Nutzer ab 13 Jahren konzipiert. Wir erheben wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren (oder dem geltenden Mindestalter in Ihrer Rechtsordnung, das höher sein kann — zum Beispiel 16 Jahre in Deutschland und den Niederlanden).",
+      "p2": "Die iOS-App erfordert keine Kontoregistrierung und speichert Daten lokal, sodass keine personenbezogenen Daten von App-Nutzern jeden Alters an uns übertragen werden. Auf der Website nehmen wir wissentlich keine Newsletter- oder Wartelisten-Anmeldungen von Personen unter 13 Jahren an.",
+      "p3": "Eltern und Erziehungsberechtigte können die App und ihre Daten jederzeit über die Standard-iOS-Geräteverwaltung verwalten oder löschen. Wenn Sie glauben, dass ein Kind uns personenbezogene Daten übermittelt hat, kontaktieren Sie uns bitte unter legal@lumenlingo.com, und wir werden diese umgehend löschen.",
       "coppaHeading": "COPPA-Konformität",
       "coppaP1": "LumenLingo erfüllt die Anforderungen des US-amerikanischen Gesetzes zum Schutz der Online-Privatsphäre von Kindern (COPPA). Wir erheben, verwenden oder offenbaren wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren ohne nachweisbare elterliche Einwilligung. Unser Dienst richtet sich nicht an Kinder unter 13 Jahren, und wir richten keine Werbung an Kinder.",
       "coppaP2": "Alle Website-Formulare, die personenbezogene Daten erfassen (z. B. E-Mail-Adressen), enthalten einen Schritt zur Altersbestätigung, bei dem Nutzer bestätigen müssen, dass sie mindestens 13 Jahre alt sind oder die Einwilligung eines Elternteils oder Erziehungsberechtigten haben, wenn sie unter 18 sind.",
@@ -621,18 +621,18 @@
       "ferpaP1": "LumenLingo wird nicht von oder im Auftrag von Bildungseinrichtungen betrieben. Wenn eine Schule oder Bildungsorganisation LumenLingo ihren Schülern empfiehlt, geschieht dies eigenständig. Die Einrichtung ist dafür verantwortlich, die Einhaltung des US-Gesetzes über Bildungsrechte und Datenschutz der Familie (FERPA) sicherzustellen und die erforderliche elterliche Einwilligung einzuholen, bevor Schüler unter 13 Jahren zur Nutzung des Dienstes aufgefordert werden."
     },
     "dataRetention": {
-      "heading": "Data Retention & Deletion",
-      "intro": "We only keep your data for as long as necessary:",
-      "websiteHeading": "Website Data",
-      "websiteLi1": "<b>Newsletter/waitlist emails</b> — retained until you unsubscribe, plus up to 30 days to process your removal.",
-      "websiteLi2": "<b>Sentry error logs</b> — retained by Sentry for 90 days, then automatically deleted.",
-      "websiteLi3": "<b>Sentry session replays</b> — retained by Sentry for 90 days, then automatically deleted.",
+      "heading": "Datenaufbewahrung und Löschung",
+      "intro": "Wir bewahren Ihre Daten nur so lange auf, wie es nötig ist:",
+      "websiteHeading": "Website-Daten",
+      "websiteLi1": "<b>Newsletter-/Wartelisten-E-Mails</b> — aufbewahrt bis zur Abmeldung, zuzüglich bis zu 30 Tage für die Verarbeitung der Löschung.",
+      "websiteLi2": "<b>Sentry-Fehlerprotokolle</b> — von Sentry 90 Tage aufbewahrt, danach automatisch gelöscht.",
+      "websiteLi3": "<b>Sentry-Sitzungsaufzeichnungen</b> — von Sentry 90 Tage aufbewahrt, danach automatisch gelöscht.",
       "websiteLi4": "<b>Vercel Analytics</b> — aggregierte, cookie-freie Analysedaten werden 30 Tage nach der Erfassung aufbewahrt und dann automatisch gelöscht. Es werden keine personenbezogenen Daten gespeichert.",
-      "appHeading": "iOS App Data",
-      "appLi1": "<b>Delete account</b> — use the in-app Settings → Sign Out → Delete Account to permanently erase all learning data, progress, preferences, and iCloud sync data. This action cannot be undone.",
-      "appLi2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
-      "appLi3": "<b>iCloud data</b> — you can manage iCloud storage through your device’s Settings → Apple ID → iCloud → Manage Storage.",
-      "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation.",
+      "appHeading": "iOS-App-Daten",
+      "appLi1": "<b>Konto löschen</b> — verwenden Sie die In-App-Option Einstellungen → Abmelden → Konto löschen, um alle Lerndaten, Fortschritte, Einstellungen und iCloud-Synchronisierungsdaten dauerhaft zu löschen. Diese Aktion kann nicht rückgängig gemacht werden.",
+      "appLi2": "<b>App löschen</b> — die Deinstallation von LumenLingo entfernt alle lokal gespeicherten Daten.",
+      "appLi3": "<b>iCloud-Daten</b> — Sie können den iCloud-Speicher über die Geräteeinstellungen → Apple-ID → iCloud → Speicher verwalten.",
+      "appLi4": "<b>Abonnement</b> — kündigen Sie Ihr Abonnement über Einstellungen → Apple-ID → Abonnements. Nach der Kündigung werden keine Daten von uns aufbewahrt.",
       "websiteLi5": "<b>Einwilligungsprotokolle</b> — werden 3 Jahre nach Ihrer letzten Interaktion aufbewahrt, wie für die DSGVO-Rechenschaftspflicht erforderlich.",
       "websiteLi6": "<b>Datenauskunfts-Protokolle</b> — werden 3 Jahre nach Abschluss aufbewahrt, wie für die DSGVO-Rechenschaftspflicht erforderlich."
     },
@@ -653,15 +653,15 @@
       "p3": "Sollten wir in Zukunft automatisierte Entscheidungsfindung mit rechtlichen oder erheblichen Auswirkungen einführen, werden wir diese Richtlinie aktualisieren und sicherstellen, dass Sie das Recht haben: (a) menschliches Eingreifen zu erwirken, (b) Ihren Standpunkt darzulegen und (c) die Entscheidung anzufechten, wie in Artikel 22(3) UK GDPR vorgeschrieben."
     },
     "yourRights": {
-      "heading": "Your Rights",
-      "intro": "Depending on your location, you may have additional rights regarding your data:",
-      "gdprHeading": "Under GDPR (European Economic Area & UK)",
-      "gdprLi1": "Right to access your data — app data is on your device and iCloud; for website data, contact us.",
-      "gdprLi2": "Right to rectification — edit app preferences directly; for website data, contact us.",
-      "gdprLi3": "Right to erasure — use the in-app Delete Account feature, delete the app, or contact us to remove your email from our lists.",
+      "heading": "Ihre Rechte",
+      "intro": "Abhängig von Ihrem Standort haben Sie möglicherweise zusätzliche Rechte bezüglich Ihrer Daten:",
+      "gdprHeading": "Nach der DSGVO (Europäischer Wirtschaftsraum & Vereinigtes Königreich)",
+      "gdprLi1": "Recht auf Zugang zu Ihren Daten — App-Daten befinden sich auf Ihrem Gerät und in iCloud; für Website-Daten kontaktieren Sie uns.",
+      "gdprLi2": "Recht auf Berichtigung — bearbeiten Sie App-Einstellungen direkt; für Website-Daten kontaktieren Sie uns.",
+      "gdprLi3": "Recht auf Löschung — verwenden Sie die In-App-Funktion zum Löschen des Kontos, löschen Sie die App oder kontaktieren Sie uns, um Ihre E-Mail-Adresse aus unseren Listen zu entfernen.",
       "gdprLi4": "Recht auf Datenübertragbarkeit — exportieren Sie alle Ihre persönlichen Daten als kostenlosen JSON-Download unter Einstellungen → Meine Daten exportieren in der iOS-App. Ihre Daten werden immer in Standardformaten gespeichert. Kontaktieren Sie uns für den Export von Website-Daten.",
-      "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
-      "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
+      "gdprLi5": "Widerspruchsrecht — kontaktieren Sie uns, um der anonymen Analytik zu widersprechen oder der Verarbeitung auf Grundlage berechtigter Interessen zu widersprechen.",
+      "gdprLi6": "Recht auf Einschränkung der Verarbeitung — kontaktieren Sie uns, um eine Einschränkung der Verarbeitung Ihrer Daten zu verlangen.",
       "gdprLi7": "Recht auf Beschwerde — Sie können sich beim <icoLink>Information Commissioner’s Office (ICO)</icoLink> oder bei Ihrer örtlichen Aufsichtsbehörde beschweren.",
       "gdprLi8": "Recht auf Widerruf der Einwilligung — soweit wir auf Einwilligung als Rechtsgrundlage setzen (z.B. Analysen), können Sie Ihre Einwilligung jederzeit widerrufen, indem Sie Ihre Cookie-Einstellungen anpassen oder uns unter <emailLink>legal@lumenlingo.com</emailLink> kontaktieren. Der Widerruf berührt nicht die Rechtmäßigkeit der vor dem Widerruf erfolgten Verarbeitung.",
       "ccpaHeading": "Gemäß CCPA/CPRA (Kalifornien)",
@@ -696,58 +696,58 @@
       "californiaP2": "Um ein kalifornisches Datenschutzrecht auszuüben — einschließlich der Rechte gemäß CCPA/CPRA — senden Sie uns eine E-Mail an <emailLink>legal@lumenlingo.com</emailLink> mit dem Betreff „Kalifornische Datenschutzrechte“ oder reichen Sie eine Anfrage über unsere <dataRequestLink>Datenanfrage</dataRequestLink>-Seite ein."
     },
     "policyUpdates": {
-      "heading": "Policy Updates",
-      "p1": "We may update this Privacy Policy from time to time, typically to reflect changes in our services or legal requirements. When we make significant changes, we’ll update the “Last updated” date and version number at the top of this page.",
-      "p2": "We encourage you to review this page periodically. Continued use of LumenLingo after changes constitutes acceptance of the updated policy.",
-      "versionHistory": "Version History",
-      "v2": "<b>v2.0</b> (23 March 2026) — Extended policy to cover lumenlingo.com website data collection, added Sentry session replay disclosure, Vercel Analytics disclosure, legal basis for processing, data flow section, and service worker caching details.",
-      "v1": "<b>v1.0</b> (22 March 2026) — Initial privacy policy covering the LumenLingo iOS app.",
+      "heading": "Richtlinienaktualisierungen",
+      "p1": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren, typischerweise um Änderungen in unseren Diensten oder rechtlichen Anforderungen widerzuspiegeln. Bei wesentlichen Änderungen aktualisieren wir das Datum „Zuletzt aktualisiert” und die Versionsnummer oben auf dieser Seite.",
+      "p2": "Wir empfehlen Ihnen, diese Seite regelmäßig zu überprüfen. Die fortgesetzte Nutzung von LumenLingo nach Änderungen gilt als Akzeptanz der aktualisierten Richtlinie.",
+      "versionHistory": "Versionshistorie",
+      "v2": "<b>v2.0</b> (23. März 2026) — Erweiterung der Richtlinie um die Datenerfassung auf lumenlingo.com, Sentry Session Replay, Vercel Analytics, Rechtsgrundlagen, Datenfluss-Abschnitt und Service-Worker-Caching-Details.",
+      "v1": "<b>v1.0</b> (22. März 2026) — Erste Datenschutzrichtlinie für die LumenLingo iOS-App.",
       "v2_1": "<b>v2.1</b> (26. März 2026) — Abschnitte neu organisiert: Kommerzielle/regulatorische Compliance-Offenlegungen (MwSt-Behandlung, EU-MwSt, internationale Steuern, Preiskonformität, Sanktionen, Verschlüsselungsexportkontrollen) in die Nutzungsbedingungen verschoben. Querverweis auf Nutzungsbedingungen hinzugefügt. Markenattribution konsolidiert. Keine Inhalte wurden entfernt.",
       "v2_2": "<b>v2.2</b> (Juli 2025) — Phase-2-Rechtsabsicherung: Firmenname durchgängig auf Lumenshore Limited standardisiert; ICO-Beschwerderecht und Kontaktdaten gemäß DSGVO Art. 77 hinzugefügt; Auftragsverarbeiter-Register ergänzt; Internationale Transfersicherungen verbessert; Regionale Datenschutzrahmen hinzugefügt; PECR-Offenlegungen verbessert."
     },
     "contactUs": {
-      "heading": "Contact Us",
-      "intro": "If you have questions about this Privacy Policy, your data, or want to exercise your rights, please reach out:",
-      "email": "<b>Email</b>: <emailLink>legal@lumenlingo.com</emailLink>",
-      "company": "<b>Company</b>: Lumenshore Limited, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
-      "companyNumber": "<b>Company Number</b>: 09607326 (England and Wales)",
-      "vatNumber": "<b>VAT Number</b>: GB 270411929",
-      "responseTime": "We typically respond within 48 hours and within 30 days for formal data rights requests."
+      "heading": "Kontakt",
+      "intro": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie, Ihren Daten haben oder Ihre Rechte ausüben möchten, kontaktieren Sie uns bitte:",
+      "email": "<b>E-Mail</b>: <emailLink>legal@lumenlingo.com</emailLink>",
+      "company": "<b>Unternehmen</b>: Lumenshore Limited, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "companyNumber": "<b>Firmennummer</b>: 09607326 (England und Wales)",
+      "vatNumber": "<b>USt-IdNr.</b>: GB 270411929",
+      "responseTime": "Wir antworten normalerweise innerhalb von 48 Stunden und innerhalb von 30 Tagen bei formellen Datenschutzanfragen."
     },
     "subProcessors": {
-      "heading": "Sub-Processors",
-      "intro": "The following third-party services process data on our behalf. Each sub-processor has been assessed for data protection compliance:",
+      "heading": "Auftragsverarbeiter",
+      "intro": "Die folgenden Drittanbieter-Dienste verarbeiten Daten in unserem Auftrag. Jeder Auftragsverarbeiter wurde auf die Einhaltung des Datenschutzes geprüft:",
       "tableHeaders": {
-        "service": "Service",
-        "purpose": "Purpose",
-        "dataProcessed": "Data Processed",
-        "location": "Server Location",
-        "privacyPolicy": "Privacy Policy"
+        "service": "Dienst",
+        "purpose": "Zweck",
+        "dataProcessed": "Verarbeitete Daten",
+        "location": "Server-Standort",
+        "privacyPolicy": "Datenschutzrichtlinie"
       },
       "processors": {
         "apple": {
           "service": "Apple (App Store & iCloud)",
-          "purpose": "App distribution, subscription billing, data sync",
-          "dataProcessed": "Subscription status, learning data (via iCloud)",
-          "location": "Global (Apple data centres)",
+          "purpose": "App-Distribution, Abonnementabrechnung, Datensynchronisierung",
+          "dataProcessed": "Abonnementstatus, Lerndaten (über iCloud)",
+          "location": "Global (Apple-Rechenzentren)",
           "privacyUrl": "https://www.apple.com/legal/privacy/",
-          "privacyLabel": "Apple Privacy"
+          "privacyLabel": "Apple Datenschutz"
         },
         "vercel": {
           "service": "Vercel",
-          "purpose": "Website hosting, anonymous analytics, speed insights",
-          "dataProcessed": "Anonymous page views, performance metrics",
-          "location": "United States (with global edge nodes)",
+          "purpose": "Website-Hosting, anonyme Analytik, Leistungsanalyse",
+          "dataProcessed": "Anonyme Seitenaufrufe, Leistungsmetriken",
+          "location": "Vereinigte Staaten (mit globalen Edge-Knoten)",
           "privacyUrl": "https://vercel.com/legal/privacy-policy",
-          "privacyLabel": "Vercel Privacy"
+          "privacyLabel": "Vercel Datenschutz"
         },
         "sentry": {
           "service": "Sentry (Functional Software, Inc.)",
-          "purpose": "Error monitoring, session replay (with consent)",
-          "dataProcessed": "Error logs, stack traces, session replays (with consent)",
-          "location": "United States",
+          "purpose": "Fehlerüberwachung, Sitzungsaufzeichnung (mit Zustimmung)",
+          "dataProcessed": "Fehlerprotokolle, Stack-Traces, Sitzungsaufzeichnungen (mit Zustimmung)",
+          "location": "Vereinigte Staaten",
           "privacyUrl": "https://sentry.io/privacy/",
-          "privacyLabel": "Sentry Privacy"
+          "privacyLabel": "Sentry Datenschutz"
         },
         "clerk": {
           "service": "Clerk, Inc.",
@@ -755,7 +755,7 @@
           "dataProcessed": "E-Mail-Adresse, Benutzerkennung, Authentifizierungstokens",
           "location": "Vereinigte Staaten",
           "privacyUrl": "https://clerk.com/legal/privacy",
-          "privacyLabel": "Clerk Privacy"
+          "privacyLabel": "Clerk Datenschutz"
         },
         "revenueCat": {
           "service": "RevenueCat, Inc.",
@@ -763,67 +763,67 @@
           "dataProcessed": "App-Benutzer-ID, Abonnementstatus, Kaufbelege (über Apple — RevenueCat erhält keine Rohzahlungskartendaten)",
           "location": "Vereinigte Staaten",
           "privacyUrl": "https://www.revenuecat.com/privacy/",
-          "privacyLabel": "RevenueCat Privacy"
+          "privacyLabel": "RevenueCat Datenschutz"
         }
       },
       "dpaStatus": {
-        "heading": "Data Processing Agreements",
-        "p1": "We maintain Data Processing Agreements (DPAs) or equivalent contractual protections with all sub-processors that handle personal data:",
-        "li1": "<b>Apple</b> — covered by Apple's standard DPA for developers, incorporating Standard Contractual Clauses for international transfers.",
-        "li2": "<b>Vercel</b> — covered by Vercel's DPA, available at vercel.com/legal/dpa. Vercel Analytics is cookie-free and processes no personal data.",
-        "li3": "<b>Sentry</b> — covered by Sentry's DPA with Standard Contractual Clauses (SCCs) for EU-US data transfers.",
+        "heading": "Auftragsverarbeitungsvereinbarungen",
+        "p1": "Wir unterhalten Auftragsverarbeitungsvereinbarungen (AVV) oder gleichwertige vertragliche Schutzmaßnahmen mit allen Auftragsverarbeitern, die personenbezogene Daten verarbeiten:",
+        "li1": "<b>Apple</b> — abgedeckt durch Apples Standard-AVV für Entwickler, einschließlich Standardvertragsklauseln für internationale Transfers.",
+        "li2": "<b>Vercel</b> — abgedeckt durch Vercels AVV, verfügbar unter vercel.com/legal/dpa. Vercel Analytics ist cookiefrei und verarbeitet keine personenbezogenen Daten.",
+        "li3": "<b>Sentry</b> — abgedeckt durch Sentrys AVV mit Standardvertragsklauseln (SCCs) für EU-US-Datentransfers.",
         "li4": "<b>Clerk</b> — abgedeckt durch Clerks Auftragsverarbeitungsvertrag mit Standardvertragsklauseln und EU-US Data Privacy Framework-Zertifizierung.",
         "li5": "<b>RevenueCat</b> — abgedeckt durch RevenueCats Auftragsverarbeitungszusatz mit Standardvertragsklauseln. RevenueCat erhält keine Rohzahlungskartendaten; Apple ist der Händler."
       },
       "changes": {
-        "heading": "Sub-Processor Changes",
-        "p1": "If we add or change a sub-processor that handles personal data, we will update this page and note the change in the Version History section of this Privacy Policy. For material changes, we will provide at least 30 days' notice before the new sub-processor begins processing data."
+        "heading": "Änderungen der Auftragsverarbeiter",
+        "p1": "Wenn wir einen Auftragsverarbeiter hinzufügen oder ändern, der personenbezogene Daten verarbeitet, werden wir diese Seite aktualisieren und die Änderung im Abschnitt Versionshistorie dieser Datenschutzrichtlinie vermerken. Bei wesentlichen Änderungen werden wir mindestens 30 Tage im Voraus informieren, bevor der neue Auftragsverarbeiter mit der Datenverarbeitung beginnt."
       }
     },
     "internationalTransfers": {
-      "heading": "International Data Transfers",
-      "intro": "Lumenshore Limited is based in the United Kingdom. Some of your data may be transferred to and processed in countries outside the UK and the European Economic Area (EEA). Here is where each service processes data and the legal mechanism that protects the transfer:",
-      "li1": "<b>Apple (United States & global)</b> — iCloud data and App Store subscription data may be processed in Apple’s global data centres, including in the United States. Apple participates in transfers under Standard Contractual Clauses (SCCs) and the EU-US Data Privacy Framework.",
-      "li2": "<b>Vercel (United States & global edge)</b> — our website is served from Vercel’s edge network, with primary servers in the United States. Vercel Analytics processes no personal data. Website hosting data is protected under Vercel’s GDPR DPA with Standard Contractual Clauses.",
-      "li3": "<b>Sentry (United States)</b> — error logs and session replay data (with your consent) are transmitted to Sentry’s servers in the United States. These transfers are protected by Sentry’s DPA incorporating Standard Contractual Clauses (SCCs).",
+      "heading": "Internationale Datenübermittlungen",
+      "intro": "Lumenshore Limited hat seinen Sitz im Vereinigten Königreich. Einige Ihrer Daten können in Länder außerhalb des Vereinigten Königreichs und des Europäischen Wirtschaftsraums (EWR) übertragen und dort verarbeitet werden. Hier erfahren Sie, wo jeder Dienst Daten verarbeitet und welcher Rechtsmechanismus die Übertragung schützt:",
+      "li1": "<b>Apple (Vereinigte Staaten & global)</b> — iCloud-Daten und App-Store-Abonnementdaten können in Apples globalen Rechenzentren verarbeitet werden, einschließlich in den Vereinigten Staaten. Apple nimmt an Übermittlungen auf Grundlage von Standardvertragsklauseln (SCCs) und dem EU-US Data Privacy Framework teil.",
+      "li2": "<b>Vercel (Vereinigte Staaten & globale Edge-Knoten)</b> — unsere Website wird über Vercels Edge-Netzwerk bereitgestellt, mit primären Servern in den Vereinigten Staaten. Vercel Analytics verarbeitet keine personenbezogenen Daten. Website-Hosting-Daten sind durch Vercels DSGVO-AVV mit Standardvertragsklauseln geschützt.",
+      "li3": "<b>Sentry (Vereinigte Staaten)</b> — Fehlerprotokolle und Sitzungsaufzeichnungsdaten (mit Ihrer Zustimmung) werden an Sentrys Server in den Vereinigten Staaten übermittelt. Diese Übertragungen sind durch Sentrys AVV mit Standardvertragsklauseln (SCCs) geschützt.",
       "safeguards": {
-        "heading": "Transfer Safeguards",
-        "intro": "For all international data transfers, we ensure at least one of the following safeguards is in place:",
-        "li1": "<b>Standard Contractual Clauses (SCCs)</b> — EU Commission-approved contractual clauses that bind the data importer to protect your data to GDPR standards.",
-        "li2": "<b>EU-US Data Privacy Framework</b> — where the recipient is certified under the framework, providing an adequacy basis for transfers to the US.",
-        "li3": "<b>UK International Data Transfer Agreement (IDTA)</b> — the UK equivalent of SCCs, approved by the ICO for transfers from the UK.",
-        "li4": "<b>Adequacy decisions</b> — where the European Commission or UK Government has determined that the destination country provides adequate data protection."
+        "heading": "Transferschutzmaßnahmen",
+        "intro": "Für alle internationalen Datenübermittlungen stellen wir sicher, dass mindestens eine der folgenden Schutzmaßnahmen vorhanden ist:",
+        "li1": "<b>Standardvertragsklauseln (SCCs)</b> — von der EU-Kommission genehmigte Vertragsklauseln, die den Datenimporteur verpflichten, Ihre Daten gemäß DSGVO-Standards zu schützen.",
+        "li2": "<b>EU-US Data Privacy Framework</b> — wenn der Empfänger im Rahmen des Frameworks zertifiziert ist, was eine Angemessenheitsgrundlage für Übermittlungen in die USA bietet.",
+        "li3": "<b>UK International Data Transfer Agreement (IDTA)</b> — das britische Äquivalent zu SCCs, vom ICO für Übermittlungen aus dem Vereinigten Königreich genehmigt.",
+        "li4": "<b>Angemessenheitsbeschlüsse</b> — wenn die Europäische Kommission oder die britische Regierung festgestellt hat, dass das Zielland ein angemessenes Datenschutzniveau bietet."
       },
-      "p1": "You may request a copy of the relevant transfer safeguards by contacting us at legal@lumenlingo.com.",
+      "p1": "Sie können eine Kopie der relevanten Transferschutzmaßnahmen anfordern, indem Sie uns unter legal@lumenlingo.com kontaktieren.",
       "li4": "<b>Clerk (Vereinigte Staaten)</b> — Authentifizierungsdaten (E-Mail-Adresse, Benutzerkennungen, Auth-Tokens) werden auf Clerks Servern in den Vereinigten Staaten verarbeitet. Diese Übertragungen sind durch Clerks DPA mit Standardvertragsklauseln und EU-US Data Privacy Framework-Zertifizierung geschützt.",
       "li5": "<b>RevenueCat (Vereinigte Staaten)</b> — Abonnementverwaltungsdaten (App-Benutzer-ID, Abonnementstatus, Apple-Kaufbelege) werden auf RevenueCats Servern in den Vereinigten Staaten verarbeitet. Diese Übertragungen sind durch RevenueCats Auftragsverarbeitungszusatz mit Standardvertragsklauseln geschützt."
     },
     "aggregateData": {
-      "heading": "Aggregated and De-identified Data",
-      "p1": "We may collect, aggregate, and de-identify personal data so that it can no longer reasonably identify any individual. Once de-identified, such data is no longer personal data under GDPR, UK GDPR, CCPA, or any applicable data protection law.",
-      "p2": "We may use, disclose, and publish de-identified and aggregated data for any purpose, including but not limited to:",
-      "li1": "Product improvement and feature development",
-      "li2": "Research and analytics",
-      "li3": "Marketing materials and case studies",
-      "li4": "Benchmarking and public reports",
-      "li5": "Investor and stakeholder reporting",
+      "heading": "Aggregierte und de-identifizierte Daten",
+      "p1": "Wir können personenbezogene Daten erfassen, aggregieren und de-identifizieren, so dass sie keine einzelne Person mehr identifizieren können. Nach der De-Identifizierung gelten diese Daten nicht mehr als personenbezogene Daten im Sinne der geltenden Datenschutzgesetze.",
+      "p2": "Wir können de-identifizierte und aggregierte Daten für jeden Zweck verwenden, offenlegen und veröffentlichen, einschließlich, aber nicht beschränkt auf:",
+      "li1": "Produktverbesserung und Funktionsentwicklung",
+      "li2": "Forschung und Analytik",
+      "li3": "Marketingmaterialien und Fallstudien",
+      "li4": "Benchmarking und öffentliche Berichte",
+      "li5": "Investoren- und Stakeholder-Berichterstattung",
       "deIdentification": {
-        "heading": "De-identification Standards",
-        "p1": "Our de-identification process meets the following legal standards:",
-        "li1": "<b>GDPR Recital 26</b> — data cannot be singled out, linked, or inferred to identify any individual, taking into account all means reasonably likely to be used.",
-        "li2": "<b>CCPA § 1798.140(m)</b> — information that cannot reasonably be used to infer information about, or otherwise be linked to, a particular consumer or household. We maintain a commitment not to attempt to re-identify de-identified data."
+        "heading": "De-Identifizierungsstandards",
+        "p1": "Unser De-Identifizierungsprozess erfüllt die folgenden rechtlichen Standards:",
+        "li1": "<b>DSGVO Erwägungsgrund 26</b> — Daten können nicht herausgegriffen, verknüpft oder abgeleitet werden, um eine Person zu identifizieren, unter Berücksichtigung aller Mittel, deren Verwendung vernünftigerweise wahrscheinlich ist.",
+        "li2": "<b>CCPA § 1798.140(m)</b> — Informationen, die nicht vernünftigerweise verwendet werden können, um Informationen über einen bestimmten Verbraucher oder Haushalt abzuleiten oder anderweitig mit ihm verknüpft zu werden. Wir verpflichten uns, de-identifizierte Daten nicht erneut zu identifizieren."
       },
       "examples": {
-        "heading": "Examples of Aggregate Data",
-        "p1": "Examples of the types of aggregate data we may derive and publish include:",
-        "li1": "Total number of users per language pair",
-        "li2": "Average learning session duration",
-        "li3": "Most commonly studied vocabulary",
-        "li4": "Error rates per difficulty level",
-        "li5": "Feature usage statistics across membership tiers",
-        "p2": "No individual user can be identified from any published aggregate data."
+        "heading": "Beispiele für aggregierte Daten",
+        "p1": "Beispiele für die Arten aggregierter Daten, die wir ableiten und veröffentlichen können, umfassen:",
+        "li1": "Gesamtzahl der Nutzer pro Sprachpaar",
+        "li2": "Durchschnittliche Lernsitzungsdauer",
+        "li3": "Am häufigsten gelernter Wortschatz",
+        "li4": "Fehlerquoten pro Schwierigkeitsstufe",
+        "li5": "Funktionsnutzungsstatistiken nach Mitgliedschaftsstufen",
+        "p2": "Kein einzelner Nutzer kann aus veröffentlichten aggregierten Daten identifiziert werden."
       },
-      "survival": "Our right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data that was derived from your use of the Service."
+      "survival": "Unser Recht, aggregierte Daten aufzubewahren und zu verwenden, besteht auch nach der Kontolöschung und Beendigung des Dienstes fort. Nach der Löschung Ihres Kontos können wir aggregierte Daten aufbewahren, die aus Ihrer Nutzung des Dienstes abgeleitet wurden."
     },
     "ccpaNotice": {
       "heading": "Kalifornischer Hinweis zur Datenerhebung (CCPA/CPRA)",
@@ -1323,45 +1323,45 @@
   },
   "Terms": {
     "meta": {
-      "title": "Terms of Service",
-      "description": "Terms of Service for LumenLingo. Understand your rights and responsibilities when using our language-learning app — written in plain English.",
-      "ogTitle": "Terms of Service — LumenLingo"
+      "title": "Nutzungsbedingungen",
+      "description": "Nutzungsbedingungen für LumenLingo. Erfahren Sie Ihre Rechte und Pflichten bei der Nutzung unserer Sprachlern-App — verständlich formuliert.",
+      "ogTitle": "Nutzungsbedingungen — LumenLingo"
     },
-    "breadcrumb": "Terms of Service",
+    "breadcrumb": "Nutzungsbedingungen",
     "hero": {
-      "heading": "Terms of Service",
-      "subtitle": "The rules of the road for using LumenLingo — written simply, because legal documents shouldn't need a dictionary."
+      "heading": "Nutzungsbedingungen",
+      "subtitle": "Die Spielregeln für die Nutzung von LumenLingo — verständlich geschrieben, denn Rechtsdokumente sollten kein Wörterbuch erfordern."
     },
     "introduction": {
-      "heading": "Introduction",
+      "heading": "Einleitung",
       "p1": "Willkommen bei LumenLingo. Diese Nutzungsbedingungen („Bedingungen“) regeln Ihre Nutzung der mobilen Anwendung LumenLingo („die App“), betrieben von Lumenshore Limited (Company No. 09607326), einer in England und Wales eingetragenen Gesellschaft („Lumenshore“, „wir“, „uns“ oder „unser“).",
-      "p2": "By downloading, installing, or using LumenLingo, you agree to be bound by these Terms. If you don't agree with any part of these Terms, please don't use the App."
+      "p2": "Durch das Herunterladen, Installieren oder Nutzen von LumenLingo stimmen Sie diesen Nutzungsbedingungen zu. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, nutzen Sie die App bitte nicht."
     },
     "acceptance": {
-      "heading": "Acceptance of Terms",
-      "intro": "By accessing or using LumenLingo, you confirm that:",
-      "li1": "You are at least 13 years old (or the minimum age required in your jurisdiction).",
-      "li2": "If you are under 18, you have obtained consent from a parent or legal guardian.",
-      "li3": "You have the legal capacity to enter into a binding agreement.",
-      "li4": "You will comply with these Terms and all applicable laws."
+      "heading": "Annahme der Nutzungsbedingungen",
+      "intro": "Durch den Zugriff auf oder die Nutzung von LumenLingo bestätigen Sie, dass:",
+      "li1": "Sie sind mindestens 13 Jahre alt (oder haben das in Ihrer Rechtsordnung erforderliche Mindestalter erreicht).",
+      "li2": "Wenn Sie unter 18 Jahre alt sind, haben Sie die Zustimmung eines Elternteils oder gesetzlichen Vertreters eingeholt.",
+      "li3": "Sie sind rechtsfähig, einen verbindlichen Vertrag abzuschließen.",
+      "li4": "Sie werden diese Bedingungen und alle geltenden Gesetze einhalten."
     },
     "yourAccount": {
-      "heading": "Your Account",
-      "intro": "LumenLingo does not require traditional account registration. Your identity within the App is tied to your Apple ID and device. You are responsible for:",
-      "li1": "Maintaining the security of your Apple ID and device access.",
-      "li2": "All activity that occurs through your use of the App.",
-      "li3": "Keeping your device's operating system updated for the best experience and security."
+      "heading": "Ihr Konto",
+      "intro": "LumenLingo erfordert keine herkömmliche Kontoregistrierung. Ihre Identität innerhalb der App ist mit Ihrer Apple-ID und Ihrem iCloud-Konto verknüpft. Sie sind verantwortlich für:",
+      "li1": "Die Sicherheit Ihrer Apple-ID und Ihres Gerätezugangs.",
+      "li2": "Alle Aktivitäten, die im Rahmen Ihrer Nutzung der App stattfinden.",
+      "li3": "Die Aktualisierung des Betriebssystems Ihres Geräts für optimale Leistung und Sicherheit."
     },
     "subscriptions": {
-      "heading": "Subscriptions & Billing",
-      "intro": "LumenLingo offers free and premium membership tiers. Premium features require a paid subscription.",
-      "li1": "<b>Billing</b> — all subscriptions are processed and managed by Apple through the App Store. We do not handle payments directly.",
-      "li2": "<b>Free tier</b> — provides access to core learning features with limited language pairs and practice modes.",
-      "li3": "<b>Premium tiers</b> — unlock additional language pairs, unlimited practice, soundscapes, breathing orbs, and other premium features as described in the App.",
-      "li4": "<b>Auto-renewal</b> — subscriptions auto-renew unless cancelled at least 24 hours before the end of the current billing period.",
-      "li5": "<b>Cancellation</b> — you can cancel your subscription at any time through your Apple ID Settings → Subscriptions. Cancellation takes effect at the end of your current billing period.",
-      "li6": "<b>Refunds</b> — refund requests are handled by Apple in accordance with their refund policies. Contact Apple Support for refund enquiries.",
-      "li7": "<b>Price changes</b> — we may adjust subscription prices. You will be notified in advance, and changes apply only to your next renewal period."
+      "heading": "Abonnements & Abrechnung",
+      "intro": "LumenLingo bietet kostenlose und Premium-Mitgliedschaftsstufen an. Premium-Funktionen erfordern ein kostenpflichtiges Abonnement.",
+      "li1": "<b>Abrechnung</b> — alle Abonnements werden von Apple über den App Store verarbeitet und verwaltet. Wir wickeln keine Zahlungen direkt ab.",
+      "li2": "<b>Kostenlose Stufe</b> — bietet Zugang zu grundlegenden Lernfunktionen mit begrenzten Sprachpaaren und Übungsmodi.",
+      "li3": "<b>Premium-Stufen</b> — schalten zusätzliche Sprachpaare, unbegrenztes Üben, Klanglandschaften, Atemübungen und weitere Premium-Funktionen frei, wie in der App beschrieben.",
+      "li4": "<b>Automatische Verlängerung</b> — Abonnements verlängern sich automatisch, es sei denn, sie werden mindestens 24 Stunden vor Ende des aktuellen Abrechnungszeitraums gekündigt.",
+      "li5": "<b>Kündigung</b> — Sie können Ihr Abonnement jederzeit über Ihre Apple-ID-Einstellungen → Abonnements kündigen. Die Kündigung wird zum Ende des aktuellen Abrechnungszeitraums wirksam.",
+      "li6": "<b>Rückerstattungen</b> — Rückerstattungsanfragen werden von Apple gemäß deren Rückerstattungsrichtlinien bearbeitet. Wenden Sie sich bei Rückerstattungsanfragen an den Apple Support.",
+      "li7": "<b>Preisänderungen</b> — wir können die Abonnementpreise anpassen. Sie werden vorab benachrichtigt, und Änderungen gelten erst ab Ihrem nächsten Verlängerungszeitraum."
     },
     "distanceSelling": {
       "heading": "Fernabsatz und Verbraucherrechte",
@@ -1377,59 +1377,59 @@
       "li5a": "<b>Einwilligungsbestätigung</b> — wir senden eine Bestätigung Ihrer Einwilligung zur sofortigen Ausführung über den App-Store-Beleg, der an Ihre Apple-ID-E-Mail-Adresse gesendet wird und einen dauerhaften Datenträger gemäß CCR 2013 Reg. 16 darstellt."
     },
     "acceptableUse": {
-      "heading": "Acceptable Use",
-      "intro": "You agree to use LumenLingo only for lawful purposes and in accordance with these Terms. You must not:",
-      "li1": "Reverse engineer, decompile, or disassemble any part of the App.",
-      "li2": "Attempt to access, tamper with, or use non-public areas of the App or its systems.",
-      "li3": "Copy, modify, distribute, or create derivative works based on the App.",
-      "li4": "Use the App in any way that could damage, disable, overburden, or impair its functionality.",
-      "li5": "Use automated scripts, bots, or other tools to interact with the App.",
-      "li6": "Attempt to circumvent subscription or tier restrictions."
+      "heading": "Zulässige Nutzung",
+      "intro": "Sie verpflichten sich, LumenLingo nur für rechtmäßige Zwecke und in Übereinstimmung mit diesen Bedingungen zu nutzen. Sie dürfen nicht:",
+      "li1": "Teile der App einem Reverse Engineering, einer Dekompilierung oder Disassemblierung zu unterziehen.",
+      "li2": "Versuchen, auf nicht öffentliche Bereiche der App oder ihrer Systeme zuzugreifen, diese zu manipulieren oder zu nutzen.",
+      "li3": "Die App kopieren, verändern, verbreiten oder davon abgeleitete Werke erstellen.",
+      "li4": "Die App in einer Weise nutzen, die ihre Funktionalität beschädigen, deaktivieren, überlasten oder beeinträchtigen könnte.",
+      "li5": "Automatisierte Skripte, Bots oder andere Tools zur Interaktion mit der App verwenden.",
+      "li6": "Versuchen, Abonnement- oder Stufenbeschränkungen zu umgehen."
     },
     "intellectualProperty": {
-      "heading": "Intellectual Property",
-      "p1": "All content within LumenLingo — including but not limited to flashcard content, translations, audio, soundscapes, visual designs, shader effects, animations, the LumenLingo name, and the Lumenshore brand — is the intellectual property of Lumenshore Limited and is protected by copyright, trademark, and other intellectual property laws.",
-      "p2": "Your subscription grants you a limited, non-exclusive, non-transferable, revocable licence to use the App for personal, non-commercial language-learning purposes. This licence does not include the right to:",
-      "li1": "Reproduce, distribute, or publicly display any App content.",
-      "li2": "Use any content for commercial purposes or in competing products.",
-      "li3": "Remove or alter any proprietary notices or labels.",
-      "li4": "Use any automated means (including bots, scrapers, crawlers, spiders, or data-mining tools) to access, copy, monitor, or extract any content from the Service.",
-      "li5": "Create derivative works based on LumenLingo content, or reverse-engineer any aspect of the App."
+      "heading": "Geistiges Eigentum",
+      "p1": "Alle Inhalte von LumenLingo — einschließlich, aber nicht beschränkt auf Karteikarten-Inhalte, Übersetzungen, Audio, Klanglandschaften, visuelle Designs, Shader-Effekte, Animationen, den Namen LumenLingo und die Marke Lumenshore — sind geistiges Eigentum von Lumenshore Limited und durch Urheberrecht, Markenrecht und andere Gesetze zum Schutz geistigen Eigentums geschützt.",
+      "p2": "Ihr Abonnement gewährt Ihnen eine eingeschränkte, nicht exklusive, nicht übertragbare, widerrufliche Lizenz zur Nutzung der App für persönliche, nicht kommerzielle Sprachlernzwecke. Diese Lizenz umfasst nicht das Recht:",
+      "li1": "App-Inhalte zu reproduzieren, zu verbreiten oder öffentlich anzuzeigen.",
+      "li2": "Inhalte für kommerzielle Zwecke oder in konkurrierenden Produkten zu verwenden.",
+      "li3": "Eigentumshinweise oder Kennzeichnungen zu entfernen oder zu verändern.",
+      "li4": "Automatisierte Mittel (einschließlich Bots, Scraper, Crawler, Spider oder Data-Mining-Tools) zu verwenden, um auf Inhalte des Dienstes zuzugreifen, diese zu kopieren, zu überwachen oder zu extrahieren.",
+      "li5": "Abgeleitete Werke auf Basis von LumenLingo-Inhalten zu erstellen oder Teile der App einem Reverse Engineering zu unterziehen."
     },
     "userContent": {
-      "heading": "User Content & Data",
-      "p1": "Your learning data (progress, preferences, practice history) is stored on your device and in your personal iCloud account. Lumenshore does not claim ownership of your personal learning data.",
-      "p2UGC": "If we introduce features that allow you to submit, post, or share content (such as notes, comments, or shared word lists), you retain ownership of that content but grant Lumenshore Limited a non-exclusive, worldwide, royalty-free licence to use, display, and distribute it within the Service. You may request removal of your content at any time.",
-      "p3": "For more details on how we handle data, please review our <privacyLink>Privacy Policy</privacyLink>."
+      "heading": "Benutzerinhalte & Daten",
+      "p1": "Ihre Lerndaten (Fortschritt, Präferenzen, Übungsverlauf) werden auf Ihrem Gerät und in Ihrem persönlichen iCloud-Konto gespeichert. Lumenshore erhebt keinen Eigentumsanspruch auf Ihre persönlichen Lerndaten.",
+      "p2UGC": "Wenn wir Funktionen einführen, die es Ihnen ermöglichen, Inhalte einzureichen, zu veröffentlichen oder zu teilen (wie Notizen, Kommentare oder geteilte Wortlisten), behalten Sie das Eigentum an diesen Inhalten, gewähren Lumenshore Limited jedoch eine nicht exklusive, weltweite, gebührenfreie Lizenz zur Nutzung, Anzeige und Verbreitung innerhalb des Dienstes. Sie können jederzeit die Entfernung Ihrer Inhalte beantragen.",
+      "p3": "Weitere Informationen zum Umgang mit Daten finden Sie in unserer <privacyLink>Datenschutzerklärung</privacyLink>."
     },
     "disclaimers": {
-      "heading": "Disclaimers",
-      "intro": "LumenLingo is provided on an “as is” and “as available” basis. While we strive for accuracy and quality, we make no warranties, expressed or implied, regarding:",
-      "li1": "The accuracy or completeness of any language content or translations.",
-      "li2": "Uninterrupted or error-free operation of the App.",
-      "li3": "The results you may achieve from using the App.",
-      "li4": "The availability of specific features at any given time.",
-      "supplement": "LumenLingo is a supplementary learning tool. It is not a substitute for professional language instruction, certified translation services, or academic coursework."
+      "heading": "Haftungsausschlüsse",
+      "intro": "LumenLingo wird auf einer „Wie besehen“- und „Wie verfügbar“-Basis bereitgestellt. Obwohl wir nach Genauigkeit und Qualität streben, geben wir keine ausdrücklichen oder stillschweigenden Garantien hinsichtlich:",
+      "li1": "Der Genauigkeit oder Vollständigkeit von Sprachinhalten oder Übersetzungen.",
+      "li2": "Eines unterbrechungsfreien oder fehlerfreien Betriebs der App.",
+      "li3": "Der Ergebnisse, die Sie durch die Nutzung der App erzielen können.",
+      "li4": "Der Verfügbarkeit bestimmter Funktionen zu einem bestimmten Zeitpunkt.",
+      "supplement": "LumenLingo ist ein ergänzendes Lernwerkzeug. Es ist kein Ersatz für professionellen Sprachunterricht, zertifizierte Übersetzungsdienste oder akademische Kurse."
     },
     "limitationOfLiability": {
-      "heading": "Limitation of Liability",
-      "intro": "To the fullest extent permitted by applicable law, Lumenshore Limited shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, or goodwill arising from:",
-      "li1": "Your use of (or inability to use) the App.",
-      "li2": "Any errors, omissions, or inaccuracies in the content.",
-      "li3": "Unauthorised access to your device or data (not caused by our negligence).",
-      "li4": "Any interruption or cessation of the service.",
+      "heading": "Haftungsbeschränkung",
+      "intro": "Im größtmöglichen gesetzlich zulässigen Umfang, einschließlich des Consumer Rights Act 2015, haftet Lumenshore Limited nicht für:",
+      "li1": "Mittelbare, zufällige, besondere, Folge- oder Strafschäden",
+      "li2": "Verlust von Gewinnen, Daten, Nutzungsmöglichkeiten, Geschäftswert oder anderen immateriellen Verlusten",
+      "li3": "Sämtliche Schäden, die den Betrag übersteigen, den Sie uns in den 12 Monaten vor der Geltendmachung des Anspruchs gezahlt haben",
+      "li4": "Nichts in diesen Bedingungen schließt unsere Haftung aus oder beschränkt sie für Tod oder Körperverletzung durch unsere Fahrlässigkeit, Betrug oder arglistige Täuschung oder jede andere Haftung, die nach englischem Recht nicht ausgeschlossen oder beschränkt werden kann",
       "cap": "Die Gesamthaftung von Lumenshore für alle Ansprüche aus diesen Nutzungsbedingungen oder Ihrer Nutzung von LumenLingo ist begrenzt auf: (a) für Nutzer der kostenlosen Stufe — null Pfund Sterling (£0,00); (b) für zahlende Abonnenten — die Gesamtsumme der von Ihnen in den zwölf (12) Monaten unmittelbar vor dem anspruchsbegründenden Ereignis tatsächlich gezahlten Abonnementgebühren.",
       "statutory": "Nichts in diesen Bedingungen schliesst unsere Haftung aus oder beschraenkt sie fuer: Tod oder Koerperverletzung durch unsere Fahrlaessigkeit; Betrug oder arglistige Taeuschung; oder jede andere Haftung, die nicht durch geltendes Recht ausgeschlossen oder beschraenkt werden kann, einschliesslich Ihrer gesetzlichen Rechte nach dem Consumer Rights Act 2015 (Vereinigtes Koenigreich) oder der EU-Verbraucherrechterichtlinie.",
       "crossReference": "Diese Haftungsbegrenzung steht im Einklang mit der Haftungsbegrenzungsklausel in unserer Endbenutzer-Lizenzvereinbarung (EULA). Soweit beide Vereinbarungen gelten, hat die für den Nutzer günstigere Begrenzung Vorrang."
     },
     "termination": {
-      "heading": "Termination",
-      "p1": "You may stop using LumenLingo at any time by deleting the App. Your subscription, if active, should be cancelled separately through Apple's subscription management.",
-      "p2": "We reserve the right to suspend or terminate access to the App if we reasonably believe you have violated these Terms. In the event of termination:",
-      "li1": "Your licence to use the App is immediately revoked.",
-      "li2": "Your local data remains on your device until you choose to delete it.",
-      "li3": "Active subscriptions should be cancelled through Apple.",
-      "li4": "Provisions that by their nature should survive termination will remain in effect."
+      "heading": "Kündigung",
+      "p1": "Wir können Ihren Zugang zu LumenLingo jederzeit mit oder ohne Grund und mit oder ohne Vorankündigung aussetzen oder beenden.",
+      "p2": "Sie können Ihr Konto jederzeit kündigen, indem Sie:",
+      "li1": "Kündigung Ihres Abonnements über den App Store",
+      "li2": "Löschung Ihrer Kontodaten über die App-Einstellungen",
+      "li3": "Kontaktaufnahme unter legal@lumenlingo.com",
+      "li4": "Nach der Kündigung erlischt Ihr Recht zur Nutzung des Dienstes sofort. iCloud-Daten können über Ihre Apple-ID-Einstellungen verwaltet werden."
     },
     "governingLaw": {
       "heading": "Anwendbares Recht, Gerichtsstand und Zustaendigkeit",
@@ -1461,11 +1461,11 @@
       "v1_2": "<b>v1.2</b> (Juli 2025) — Phase-2-Rechtsabsicherung: Firmenname standardisiert; gestaffelte Haftungsobergrenze mit EULA harmonisiert; Apple-Lizenz-EULA einbezogen; Barrierefreiheitsverpflichtung hinzugefügt; 30-Tage-Abtretungsbenachrichtigungspflicht hinzugefügt; Höhere Gewalt und Fernabsatz-Details ergänzt."
     },
     "contactUs": {
-      "heading": "Contact Us",
-      "intro": "If you have questions about these Terms or need to report a concern, please contact us:",
-      "email": "<b>Email</b>: <emailLink>legal@lumenlingo.com</emailLink>",
-      "company": "<b>Company</b>: Lumenshore Limited, United Kingdom",
-      "responseTime": "We typically respond within 48 hours.",
+      "heading": "Kontakt",
+      "intro": "Wenn Sie Fragen zu diesen Bedingungen haben oder ein Anliegen melden möchten, kontaktieren Sie uns bitte:",
+      "email": "<b>E-Mail</b>: <emailLink>legal@lumenlingo.com</emailLink>",
+      "company": "<b>Unternehmen</b>: Lumenshore Limited, Vereinigtes Königreich",
+      "responseTime": "Wir antworten in der Regel innerhalb von 48 Stunden.",
       "address": "<b>Eingetragene Adresse</b>: Lumenshore Limited, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, England"
     },
     "aggregateData": {
@@ -1523,47 +1523,47 @@
       "closing": "Wir behalten uns das Recht vor, den Zugang zum Dienst in jeder Rechtsordnung einzuschränken oder zu beenden, in der wir nach eigenem Ermessen feststellen, dass die Einhaltung gesetzlicher Vorschriften eine solche Maßnahme erfordert."
     },
     "copyrightInfringement": {
-      "heading": "Copyright Infringement & DMCA",
-      "p1": "Lumenshore Limited respects the intellectual property rights of others and expects users to do the same. If you believe that any content available through LumenLingo infringes your copyright, you may submit a notice of claimed infringement.",
-      "p2": "Your notice must include:",
-      "li1": "A physical or electronic signature of the copyright owner or a person authorised to act on their behalf.",
-      "li2": "Identification of the copyrighted work claimed to have been infringed.",
-      "li3": "Identification of the material that is claimed to be infringing, with information reasonably sufficient to permit us to locate it.",
-      "li4": "Your contact information, including address, telephone number, and email.",
-      "li5": "A statement that you have a good-faith belief that the use of the material is not authorised by the copyright owner, its agent, or the law.",
-      "li6": "A statement, under penalty of perjury, that the information in the notice is accurate and that you are authorised to act on behalf of the copyright owner.",
-      "p3": "Send copyright infringement notices to: <email>legal@lumenlingo.com</email>",
-      "p4": "Lumenshore will respond to valid takedown notices in accordance with the US Digital Millennium Copyright Act (17 U.S.C. § 512) and equivalent UK and EU legislation. Repeat infringers may have their accounts terminated.",
-      "p5": "Repeat Infringer Policy: Lumenshore maintains a policy to terminate, in appropriate circumstances, the accounts of users who are repeat infringers of copyright. Three or more valid infringement notices against an account within any twelve-month period will result in permanent account termination.",
-      "p6": "Counter-notification: If you believe content was removed in error, you may submit a counter-notification to legal@lumenlingo.com including: (i) identification of the removed material, (ii) a statement under penalty of perjury that the removal was a mistake, (iii) your name, address, and consent to jurisdiction, and (iv) your physical or electronic signature. Counter-notifications are processed in accordance with 17 U.S.C. § 512(g)."
+      "heading": "Urheberrechtsverletzung",
+      "p1": "Wir respektieren die geistigen Eigentumsrechte anderer und erwarten dies auch von unseren Nutzern. Wenn Sie Urheberrechtsinhaber sind oder befugt sind, im Namen eines solchen zu handeln, und der Meinung sind, dass urheberrechtlich geschütztes Material in einer Weise kopiert wurde, die eine Urheberrechtsverletzung darstellt, können Sie eine Meldung einreichen.",
+      "p2": "Wenn Sie der Meinung sind, dass Inhalte auf LumenLingo Ihr Urheberrecht verletzen, können Sie gemäß dem Digital Millennium Copyright Act (DMCA) und dem britischen Copyright, Designs and Patents Act 1988 einen Anspruch wegen Urheberrechtsverletzung geltend machen.",
+      "li1": "Eine Erklärung, dass Sie nach Treu und Glauben davon ausgehen, dass die Nutzung nicht autorisiert ist",
+      "li2": "Eine eidesstattliche Erklärung, dass die Angaben in Ihrer Meldung korrekt sind und dass Sie der Urheberrechtsinhaber sind oder zur Vertretung befugt sind",
+      "li3": "Ihre physische oder elektronische Unterschrift",
+      "li4": "Wir werden auf gültige DMCA-Meldungen innerhalb von 10 Werktagen reagieren",
+      "li5": "Wiederholten Rechtsverletzern kann der Zugang zum Dienst entzogen werden",
+      "li6": "Gegenbenachrichtigungen können gemäß geltendem Recht eingereicht werden",
+      "p3": "Um eine DMCA-Meldung einzureichen, kontaktieren Sie uns bitte unter <email>legal@lumenlingo.com</email> mit den folgenden Informationen:",
+      "p4": "Ihr Name und Ihre Kontaktdaten",
+      "p5": "Identifizierung des urheberrechtlich geschützten Werks, das Ihrer Meinung nach verletzt wurde",
+      "p6": "Eine Beschreibung des rechtsverletzenden Materials und seines Standorts innerhalb des Dienstes"
     },
     "contentProtection": {
-      "heading": "Content Protection & Anti-Scraping",
-      "p1": "You may not use any automated means — including bots, scrapers, crawlers, spiders, data-mining tools, or artificial intelligence training pipelines — to access, copy, monitor, or extract any content from the Service. Specifically:",
-      "li1": "Systematic or bulk downloading, copying, or redistribution of flashcard content, vocabulary lists, grammar explanations, example sentences, or audio files is strictly prohibited",
-      "li2": "Any automated access that exceeds reasonable human browsing patterns constitutes unauthorised use and grounds for immediate account termination",
-      "li3": "You may not compile, aggregate, or create derivative datasets from LumenLingo content for any purpose, including machine-learning model training",
-      "p2": "Lumenshore employs technical protection measures to safeguard its content. You further agree that:",
-      "li4": "Lumenshore employs rate limiting, access controls, and content-integrity measures; circumventing, bypassing, or disabling any of these constitutes unauthorised access",
-      "li5": "Circumventing technical protection measures may violate the UK Computer Misuse Act 1990, the US Computer Fraud and Abuse Act (18 U.S.C. § 1030), and EU Directive 2009/24/EC on the legal protection of computer programs",
-      "li6": "Automated bulk access may result in IP blocking, API key revocation, and account termination without prior notice"
+      "heading": "Inhaltsschutz und Anti-Scraping",
+      "p1": "Sie dürfen keine automatisierten Mittel verwenden — einschließlich Bots, Scraper, Crawler, Spider, Data-Mining-Tools oder KI-Trainings-Pipelines — um auf Inhalte des Dienstes zuzugreifen, diese zu kopieren, zu überwachen oder zu extrahieren. Insbesondere:",
+      "li1": "Das systematische oder massenhafte Herunterladen, Kopieren oder Weiterverbreiten von Karteikarten-Inhalten, Vokabellisten, Grammatikerklärungen, Beispielsätzen oder Audiodateien ist strengstens untersagt",
+      "li2": "Jeder automatisierte Zugriff, der über vernünftige menschliche Browsing-Muster hinausgeht, stellt eine unbefugte Nutzung und einen Grund für die sofortige Kontokündigung dar",
+      "li3": "Sie dürfen keine Datensätze aus LumenLingo-Inhalten zusammenstellen, aggregieren oder abgeleitete Datensätze erstellen, einschließlich für das Training von maschinellen Lernmodellen",
+      "p2": "Lumenshore setzt technische Schutzmaßnahmen ein, um seine Inhalte zu schützen. Sie stimmen ferner zu, dass:",
+      "li4": "Lumenshore verwendet Ratenbegrenzung, Zugriffskontrollen und Maßnahmen zum Schutz der Inhaltsintegrität; das Umgehen, Aushebeln oder Deaktivieren dieser Maßnahmen stellt einen unbefugten Zugriff dar",
+      "li5": "Die Umgehung technischer Schutzmaßnahmen kann gegen den UK Computer Misuse Act 1990, den US Computer Fraud and Abuse Act (18 U.S.C. § 1030) und die EU-Richtlinie 2009/24/EG zum Rechtsschutz von Computerprogrammen verstoßen",
+      "li6": "Automatisierter Massenzugriff kann zur IP-Sperrung, zum Widerruf des API-Schlüssels und zur Kontokündigung ohne vorherige Ankündigung führen"
     },
     "dataExport": {
-      "heading": "Data Export & Competitive Use Restriction",
-      "p1": "Data exported under GDPR Article 20 (data portability), the UK GDPR, or equivalent data-protection laws is provided for your personal use only. The following restrictions apply:",
-      "li1": "You may not use exported data, or any data derived from or informed by your use of the Service, to create, assist in creating, train, or improve a competing product or service",
-      "li2": "You may not licence, sell, distribute, or otherwise make exported LumenLingo content available to third parties for commercial purposes",
-      "li3": "This restriction does not limit your statutory data portability rights — it restricts only the commercial exploitation of Lumenshore’s proprietary learning content accessed via your account",
-      "p2": "This clause does not apply to data you independently created or obtained outside the Service, nor does it restrict any rights that cannot lawfully be excluded."
+      "heading": "Datenexport und Einschränkung der wettbewerbswidrigen Nutzung",
+      "p1": "Daten, die gemäß Art. 20 DSGVO (Datenübertragbarkeit), der UK-DSGVO oder gleichwertiger Datenschutzgesetze exportiert werden, sind ausschließlich für Ihren persönlichen Gebrauch bestimmt. Es gelten folgende Einschränkungen:",
+      "li1": "Sie dürfen exportierte Daten oder Daten, die aus Ihrer Nutzung des Dienstes stammen oder darauf basieren, nicht verwenden, um ein konkurrierendes Produkt oder einen konkurrierenden Dienst zu erstellen, bei dessen Erstellung zu helfen, zu trainieren oder zu verbessern",
+      "li2": "Sie dürfen exportierte LumenLingo-Inhalte nicht lizenzieren, verkaufen, verbreiten oder anderweitig Dritten für kommerzielle Zwecke zur Verfügung stellen",
+      "li3": "Diese Einschränkung begrenzt nicht Ihre gesetzlichen Datenübertragbarkeitsrechte — sie beschränkt nur die kommerzielle Verwertung der geschützten Lerninhalte von Lumenshore, auf die über Ihr Konto zugegriffen wird",
+      "p2": "Diese Klausel gilt nicht für Daten, die Sie unabhängig erstellt oder außerhalb des Dienstes erhalten haben, und schränkt keine Rechte ein, die gesetzlich nicht ausgeschlossen werden können."
     },
     "enforcementRemedies": {
-      "heading": "Enforcement & Remedies",
-      "p1": "LumenLingo’s content — including flashcard sets across 25 language pairs, grammar explanations, example sentences, and audio — constitutes a \"literary work\" and a protected \"database\" under the UK Copyright, Designs and Patents Act 1988 (CDPA) and the Copyright and Rights in Databases Regulations 1997. Lumenshore asserts its moral rights of attribution and the right against derogatory treatment in respect of all original content.",
-      "p2": "You acknowledge that any breach of the Intellectual Property, Content Protection, or Data Export sections of these Terms may cause irreparable harm to Lumenshore for which monetary damages would be inadequate. Accordingly:",
-      "li1": "Lumenshore reserves the right to seek injunctive or other equitable relief in any court of competent jurisdiction, without the necessity of proving actual damages or posting a bond (to the extent permitted by applicable law)",
-      "li2": "Lumenshore’s database right protection lasts 15 years from creation and is renewed with each substantial update to the content database",
-      "li3": "These remedies are in addition to — and not in lieu of — any other rights or remedies available at law or in equity",
-      "p3": "Nothing in this section limits any rights or remedies that Lumenshore may have under applicable intellectual property, competition, or data-protection law."
+      "heading": "Durchsetzung und Rechtsbehelfe",
+      "p1": "Die Inhalte von LumenLingo — einschließlich Karteikarten-Sets in 25 Sprachpaaren, Grammatikerklärungen, Beispielsätze und Audio — stellen ein „literarisches Werk“ und eine geschützte „Datenbank“ im Sinne des UK Copyright, Designs and Patents Act 1988 (CDPA) und der Copyright and Rights in Databases Regulations 1997 dar. Lumenshore macht seine moralischen Rechte auf Nennung als Urheber und das Recht gegen entstellende Behandlung in Bezug auf alle Originalinhalte geltend.",
+      "p2": "Sie erkennen an, dass jeder Verstoß gegen die Abschnitte zu geistigem Eigentum, Inhaltsschutz oder Datenexport dieser Bedingungen Lumenshore einen nicht wiedergutzumachenden Schaden zufügen kann, für den eine finanzielle Entschädigung nicht ausreichend wäre. Dementsprechend:",
+      "li1": "Lumenshore behält sich das Recht vor, eine einstweilige Verfügung oder anderen billigkeitsrechtlichen Rechtsschutz vor jedem zuständigen Gericht zu beantragen, ohne den Nachweis tatsächlicher Schäden oder die Hinterlegung einer Sicherheitsleistung erbringen zu müssen (soweit nach geltendem Recht zulässig)",
+      "li2": "Der Datenbankrechtsschutz von Lumenshore gilt 15 Jahre ab Erstellung und wird mit jeder wesentlichen Aktualisierung der Inhaltsdatenbank erneuert",
+      "li3": "Diese Rechtsbehelfe gelten zusätzlich zu — und nicht anstelle von — allen anderen Rechten oder Rechtsbehelfen, die nach Gesetz oder Billigkeitsrecht zur Verfügung stehen",
+      "p3": "Nichts in diesem Abschnitt beschränkt irgendwelche Rechte oder Rechtsbehelfe, die Lumenshore nach geltendem Recht des geistigen Eigentums, des Wettbewerbs oder des Datenschutzes haben kann."
     },
     "disputeResolution": {
       "heading": "Streitbeilegung",
