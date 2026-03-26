@@ -3,8 +3,9 @@
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
 
 /**
- * Cosmic gradient mesh — 4 blurred colour orbs drifting on organic
- * paths over 40–60 seconds. Pure CSS, GPU-composited, zero images.
+ * Cosmic diffused background — smooth overlapping gradients that create
+ * a gassy, nebula-like atmosphere. No hard orbs or layered circles.
+ * Pure CSS, GPU-composited, zero images.
  */
 export function CosmicGradient() {
   const prefersReduced = useReducedMotion();
@@ -15,28 +16,40 @@ export function CosmicGradient() {
       {/* Anchored base so we never flash white */}
       <div className="absolute inset-0 bg-background" />
 
-      {/* 1 ─ Violet orb · top-right, 40s loop */}
+      {/* Primary diffused violet wash — top center, very wide spread */}
       <div
-        className={`absolute -top-[20%] -right-[15%] h-[min(800px,70vw)] w-[min(800px,70vw)] rounded-full bg-violet/[0.08] will-change-transform ${anim('animate-cosmic-drift-1')}`}
-        style={{ filter: 'blur(120px)' }}
+        className="absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(ellipse 120% 80% at 50% 20%, rgba(139,92,246,0.10) 0%, transparent 70%)',
+        }}
       />
 
-      {/* 2 ─ Cyan orb · bottom-left, 50s loop */}
+      {/* Secondary cyan wash — bottom right, wide and soft */}
       <div
-        className={`absolute -bottom-[18%] -left-[12%] h-[min(640px,55vw)] w-[min(640px,55vw)] rounded-full bg-cyan/[0.06] will-change-transform ${anim('animate-cosmic-drift-2')}`}
-        style={{ filter: 'blur(110px)' }}
+        className="absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(ellipse 100% 70% at 80% 85%, rgba(6,182,212,0.06) 0%, transparent 65%)',
+        }}
       />
 
-      {/* 3 ─ Deep blue orb · center-right, 55s loop */}
+      {/* Tertiary emerald accent — left side, barely visible */}
       <div
-        className={`absolute top-[30%] right-[5%] h-[min(520px,45vw)] w-[min(520px,45vw)] rounded-full bg-[#1e3a5f]/[0.12] will-change-transform ${anim('animate-cosmic-drift-3')}`}
-        style={{ filter: 'blur(100px)' }}
+        className="absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(ellipse 80% 60% at 15% 50%, rgba(16,185,129,0.04) 0%, transparent 60%)',
+        }}
       />
 
-      {/* 4 ─ Warm violet pulse · centre, 45s loop */}
+      {/* Gentle animated shimmer — slow drift for life */}
       <div
-        className={`absolute top-1/2 left-1/2 h-[min(400px,35vw)] w-[min(400px,35vw)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet/[0.04] will-change-transform ${anim('animate-cosmic-pulse')}`}
-        style={{ filter: 'blur(90px)' }}
+        className={`absolute inset-0 will-change-transform ${anim('animate-cosmic-drift-1')}`}
+        style={{
+          background:
+            'radial-gradient(ellipse 90% 50% at 60% 40%, rgba(139,92,246,0.05) 0%, transparent 60%)',
+        }}
       />
 
       {/* Noise texture — organic grain overlay */}
@@ -50,8 +63,14 @@ export function CosmicGradient() {
         }}
       />
 
-      {/* Radial vignette — draws eye to content */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,var(--color-background)_70%)]" />
+      {/* Soft edge fade — draws eye to center without harsh vignette */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(ellipse at center, transparent 0%, transparent 50%, var(--color-background) 90%)',
+        }}
+      />
     </div>
   );
 }

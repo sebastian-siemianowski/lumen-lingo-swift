@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { redirect } from 'next/navigation';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { LanguageDisclaimer, BackToTop } from '@/components/legal';
+import { getFeatureFlag } from '@/lib/feature-flags';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 import { DataRequestForm } from '@/components/data-request/data-request-form';
 
@@ -44,6 +46,11 @@ export default async function DataRequestPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+
+  if (!getFeatureFlag('DATA_REQUEST_LIVE')) {
+    redirect('/');
+  }
+
   const t = await getTranslations({ locale, namespace: 'DataRequest' });
 
   const richTags = {

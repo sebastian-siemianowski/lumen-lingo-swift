@@ -94,14 +94,6 @@ export function Header() {
 
   return (
     <>
-      {/* Skip to content */}
-      <a
-        href="#main-content"
-        className="fixed top-2 start-2 z-[100] -translate-y-full rounded-[--radius-button] bg-violet px-4 py-2 text-sm font-medium text-white transition-transform focus:translate-y-0"
-      >
-        {t('skipToContent')}
-      </a>
-
       <header
         className={cn(
           'fixed top-0 right-0 left-0 z-50 transition-[background-color,border-color,box-shadow,backdrop-filter] duration-300 ease-in-out',

@@ -20,11 +20,13 @@ const sizes = {
 
 export function AppStoreBadge({ className, size = 'md', location = 'unknown' }: AppStoreBadgeProps) {
   const appStoreLive = useFeatureFlag('APP_STORE_LIVE');
+  const earlyAccessLive = useFeatureFlag('EARLY_ACCESS_LIVE');
 
   if (!appStoreLive) {
+    const comingSoonHref = earlyAccessLive ? '/early-access' : '/launching-soon';
     return (
       <a
-        href="/early-access"
+        href={comingSoonHref}
         onClick={() => trackEvent('coming_soon_click', { location })}
         className={cn(
           'group relative inline-flex items-center gap-2.5 rounded-[--radius-button] border border-violet/30 bg-white/[0.03] px-5 py-2.5 backdrop-blur-sm transition-all duration-300 hover:border-violet/50 hover:bg-violet/[0.06] hover:shadow-[0_0_24px_rgba(139,92,246,0.15)] hover:scale-[1.02] active:scale-100 focus-visible:ring-2 focus-visible:ring-violet focus-visible:shadow-[0_0_24px_rgba(139,92,246,0.15)] focus-visible:outline-none',

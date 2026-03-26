@@ -49,6 +49,45 @@ const categoryGlowStyles: Record<string, string> = {
   Guides: 'drop-shadow-[0_0_6px_rgba(251,113,133,0.4)]',
 };
 
+/* ─── Category-specific gradient backgrounds for posts without images ─── */
+const categoryGradients: Record<string, { bg: string; accent: string; secondary: string; orb1: string; orb2: string }> = {
+  'Language Tips': {
+    bg: 'from-violet/20 via-[--color-surface-card] to-fuchsia-500/10',
+    accent: 'bg-violet/30',
+    secondary: 'bg-fuchsia-400/15',
+    orb1: 'bg-violet/12',
+    orb2: 'bg-fuchsia-400/8',
+  },
+  'App Updates': {
+    bg: 'from-cyan/20 via-[--color-surface-card] to-sky-500/10',
+    accent: 'bg-cyan/30',
+    secondary: 'bg-sky-400/15',
+    orb1: 'bg-cyan/12',
+    orb2: 'bg-sky-400/8',
+  },
+  'Learning Science': {
+    bg: 'from-amber/20 via-[--color-surface-card] to-orange-500/10',
+    accent: 'bg-amber/30',
+    secondary: 'bg-orange-400/15',
+    orb1: 'bg-amber/12',
+    orb2: 'bg-orange-400/8',
+  },
+  Culture: {
+    bg: 'from-emerald-500/20 via-[--color-surface-card] to-teal-500/10',
+    accent: 'bg-emerald-500/30',
+    secondary: 'bg-teal-400/15',
+    orb1: 'bg-emerald-500/12',
+    orb2: 'bg-teal-400/8',
+  },
+  Guides: {
+    bg: 'from-rose-500/20 via-[--color-surface-card] to-pink-500/10',
+    accent: 'bg-rose-500/30',
+    secondary: 'bg-pink-400/15',
+    orb1: 'bg-rose-500/12',
+    orb2: 'bg-pink-400/8',
+  },
+};
+
 export function PostCard({ post, index = 0, featured = false, priority = false }: PostCardProps) {
   const prefersReduced = useReducedMotion();
   const locale = useLocale();
@@ -118,21 +157,34 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
               />
             </>
           ) : (
-            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[--color-violet]/20 via-[--color-surface-card] to-[--color-cyan]/20">
-              <svg
-                className="h-12 w-12 text-[--color-foreground-muted]/30"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1}
-                  d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-                />
-              </svg>
-            </div>
+            (() => {
+              const grad = categoryGradients[frontmatter.category] ?? categoryGradients['Language Tips'];
+              const Icon = categoryIcons[frontmatter.category];
+              return (
+                <div className={cn('relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-br', grad.bg)}>
+                  {/* Ambient orbs */}
+                  <div className={cn('absolute -top-8 -end-8 h-32 w-32 rounded-full blur-2xl', grad.orb1)} />
+                  <div className={cn('absolute -bottom-6 -start-6 h-28 w-28 rounded-full blur-2xl', grad.orb2)} />
+                  {/* Grid pattern overlay */}
+                  <div
+                    className="absolute inset-0 opacity-[0.03]"
+                    style={{
+                      backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
+                      backgroundSize: '24px 24px',
+                    }}
+                  />
+                  {/* Icon with glow */}
+                  {Icon && (
+                    <div className="relative transition-transform duration-300 group-hover:scale-110">
+                      <div className={cn('absolute inset-0 scale-150 rounded-full blur-xl', grad.secondary)} />
+                      <Icon size={featured ? 56 : 44} className="relative" />
+                    </div>
+                  )}
+                  {/* Shimmer line */}
+                  <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+                </div>
+              );
+            })()
           )}
           {/* Category badge with icon */}
           <div className="absolute start-4 top-4">
@@ -184,6 +236,20 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
           >
             {frontmatter.description}
           </p>
+
+          {/* Tags */}
+          {frontmatter.tags.length > 0 && (
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {frontmatter.tags.slice(0, featured ? 5 : 3).map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-md border border-[--color-glass-border] bg-white/[0.03] px-2 py-0.5 text-[10px] text-[--color-foreground-muted] transition-colors group-hover:border-[--color-glass-hover]"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
 
           {/* Meta row */}
           <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[--color-foreground-muted]">

@@ -7,6 +7,7 @@ import { StarField } from '@/components/background';
 import { trackEvent } from '@/lib/analytics';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
 import { spring } from '@/lib/motion';
+import { getFeatureFlag } from '@/lib/feature-flags';
 
 /* ------------------------------------------------------------------ */
 /*  Floating astronaut SVG — lightweight, on-brand, cosmic            */
@@ -107,7 +108,10 @@ function SiteSearch() {
     { href: '/faq', label: 'FAQ', keywords: 'questions help support contact' },
     { href: '/privacy', label: 'Privacy Policy', keywords: 'data privacy gdpr' },
     { href: '/terms', label: 'Terms of Service', keywords: 'legal terms conditions' },
-    { href: '/early-access', label: 'Early Access', keywords: 'waitlist beta signup' },
+    ...(getFeatureFlag('EARLY_ACCESS_LIVE')
+      ? [{ href: '/early-access', label: 'Early Access', keywords: 'waitlist beta signup' }]
+      : []),
+    { href: '/launching-soon', label: 'Launching Soon', keywords: 'coming soon launch app store' },
   ];
 
   const lower = query.toLowerCase();
@@ -213,15 +217,14 @@ export default function NotFound() {
         </Link>
       </div>
 
-      {/* Subtle radial glow from center */}
+      {/* Diffused gradient background */}
       <div
         className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            'radial-gradient(ellipse at 50% 40%, rgba(139,92,246,0.06) 0%, transparent 60%)',
-        }}
         aria-hidden="true"
-      />
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,rgba(139,92,246,0.12)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(6,182,212,0.06)_0%,transparent_50%)]" />
+      </div>
 
       {/* Content */}
       <motion.div

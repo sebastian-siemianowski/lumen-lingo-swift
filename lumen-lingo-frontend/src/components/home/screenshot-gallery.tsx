@@ -93,15 +93,22 @@ function GalleryFlashcardScreen() {
       <span className="text-[8px] tracking-wide text-foreground-muted/70 uppercase">
         Spanish → English
       </span>
-      <div className="relative w-full overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.04] p-2.5 text-center backdrop-blur-sm">
-        <div className="pointer-events-none absolute -top-4 -right-4 h-10 w-10 rounded-full bg-violet/15 blur-lg" />
-        <span className="font-display relative text-sm font-bold text-foreground">Mariposa</span>
-        <div className="my-1.5 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-        <span className="text-xs text-cyan">Butterfly</span>
+      <div className="relative w-full overflow-hidden rounded-xl border border-white/[0.12] bg-white/[0.06] p-3 text-center shadow-[0_6px_24px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] backdrop-blur-md">
+        <div className="pointer-events-none absolute -top-4 -right-4 h-12 w-12 rounded-full bg-violet/20 blur-lg" />
+        <div className="pointer-events-none absolute -bottom-3 -left-3 h-10 w-10 rounded-full bg-cyan/15 blur-lg" />
+        <div className="pointer-events-none absolute inset-0 rounded-xl bg-gradient-to-br from-white/[0.06] via-transparent to-white/[0.02]" />
+        <span className="font-display relative block text-base font-bold tracking-tight bg-gradient-to-r from-violet via-pink-400 to-amber-400 bg-clip-text text-transparent">
+          Mariposa
+        </span>
+        <div className="my-1.5 h-px w-full bg-gradient-to-r from-transparent via-white/12 to-transparent" />
+        <span className="text-xs font-medium bg-gradient-to-r from-cyan via-teal-400 to-emerald-400 bg-clip-text text-transparent">
+          Butterfly
+        </span>
+        <span className="mt-0.5 block text-[8px] italic text-foreground-muted/50">&ldquo;A beautiful mariposa&rdquo;</span>
       </div>
       <div className="flex w-full items-center justify-between px-1">
         <span className="text-[8px] text-foreground-muted/60">7 of 20</span>
-        <span className="text-[7px] text-foreground-muted/40">Swipe to flip</span>
+        <span className="text-[7px] text-foreground-muted/40">🖐 Tap to flip</span>
       </div>
     </div>
   );
@@ -440,6 +447,7 @@ export function ScreenshotGallery() {
   return (
     <Section
       id="gallery"
+      className="pt-[120px]"
       background={
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.04)_0%,transparent_70%)]" />
       }
@@ -458,7 +466,7 @@ export function ScreenshotGallery() {
       {/* Gallery track — full width, overflow hidden */}
       <div
         ref={containerRef}
-        className="relative overflow-hidden focus-visible:rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet focus-visible:ring-offset-2"
+        className="relative overflow-hidden pt-10 focus-visible:rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet focus-visible:ring-offset-2"
         tabIndex={0}
         role="region"
         aria-label="App screenshots"

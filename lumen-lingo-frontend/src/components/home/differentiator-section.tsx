@@ -43,6 +43,7 @@ export function DifferentiatorSection() {
   return (
     <Section
       id="why-lumenlingo"
+      className="pt-[120px]"
       background={
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(139,92,246,0.05)_0%,transparent_70%)]" />
       }

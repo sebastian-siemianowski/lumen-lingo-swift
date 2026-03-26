@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { getAllPosts, getAllCategories, getAllTags } from '@/lib/blog';
 import { routing } from '@/i18n/routing';
+import { getFeatureFlag } from '@/lib/feature-flags';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = 'https://lumenlingo.com';
@@ -35,10 +36,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { path: '/eula', changeFrequency: 'yearly' as const, priority: 0.3 },
     { path: '/accessibility', changeFrequency: 'yearly' as const, priority: 0.3 },
     { path: '/security', changeFrequency: 'yearly' as const, priority: 0.3 },
-    { path: '/data-request', changeFrequency: 'yearly' as const, priority: 0.3 },
+    ...(getFeatureFlag('DATA_REQUEST_LIVE')
+      ? [{ path: '/data-request', changeFrequency: 'yearly' as const, priority: 0.3 }]
+      : []),
     { path: '/download', changeFrequency: 'monthly' as const, priority: 0.9 },
     { path: '/languages', changeFrequency: 'monthly' as const, priority: 0.7 },
-    { path: '/early-access', changeFrequency: 'monthly' as const, priority: 0.6 },
+    ...(getFeatureFlag('EARLY_ACCESS_LIVE')
+      ? [{ path: '/early-access', changeFrequency: 'monthly' as const, priority: 0.6 }]
+      : []),
     { path: '/demo', changeFrequency: 'monthly' as const, priority: 0.7 },
   ];
 

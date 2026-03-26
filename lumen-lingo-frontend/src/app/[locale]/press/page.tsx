@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { redirect } from 'next/navigation';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text, GlassCard } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
+import { getFeatureFlag } from '@/lib/feature-flags';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
 export async function generateMetadata({
@@ -37,6 +39,11 @@ export default async function PressPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+
+  if (!getFeatureFlag('PRESS_KIT_LIVE')) {
+    redirect('/');
+  }
+
   const t = await getTranslations({ locale, namespace: 'Press' });
 
   return (

@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import { motion, useInView, type Variants } from 'framer-motion';
-import { Container, Heading, Text, Button } from '@/components/ui';
+import { Container, Heading, Text } from '@/components/ui';
 import { CountUp } from '@/components/motion';
 import { CosmicGradient } from '@/components/background';
 import { IPhoneMockup } from './iphone-mockup';
@@ -167,27 +167,6 @@ export function HeroSection() {
             {/* CTA group — T+600 ms (scaleIn) */}
             <motion.div variants={heroCta} className="mt-8 flex flex-wrap items-center gap-4">
               <AppStoreBadge location="homepage_hero" />
-              <Button variant="ghost" size="lg" className="gap-2">
-                <svg
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                {t('watchDemo')}
-              </Button>
             </motion.div>
 
             {/* Trust bar — T+750 ms with CountUp */}

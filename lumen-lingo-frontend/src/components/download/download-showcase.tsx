@@ -143,7 +143,3 @@ export function DownloadShowcase() {
     </section>
   );
 }
-      </div>
-    </section>
-  );
-}

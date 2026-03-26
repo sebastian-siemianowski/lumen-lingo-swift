@@ -37,17 +37,32 @@ export default function GlobalError({
           padding: '2rem',
         }}
       >
-        {/* Subtle violet glow */}
+        {/* Diffused gradient background */}
         <div
           aria-hidden="true"
           style={{
             position: 'fixed',
             inset: 0,
-            background:
-              'radial-gradient(ellipse at 50% 40%, rgba(139,92,246,0.06) 0%, transparent 60%)',
             pointerEvents: 'none',
           }}
-        />
+        >
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              background:
+                'radial-gradient(ellipse at 50% 20%, rgba(139,92,246,0.12) 0%, transparent 60%)',
+            }}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              background:
+                'radial-gradient(ellipse at 80% 80%, rgba(6,182,212,0.06) 0%, transparent 50%)',
+            }}
+          />
+        </div>
 
         <div style={{ position: 'relative', zIndex: 1, maxWidth: 480 }}>
           {/* Calming SVG orb */}

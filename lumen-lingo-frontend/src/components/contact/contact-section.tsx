@@ -143,20 +143,6 @@ export function ContactSection() {
             </a>
             <CopyButton email="support@lumenshore.com" copied={copied} onCopy={copyEmail} />
           </div>
-
-          {/* General enquiries */}
-          <div className="glass-card flex items-center justify-between px-4 py-3">
-            <a
-              href="mailto:hello@lumenshore.com"
-              className={cn(
-                'font-mono text-sm transition-colors duration-200',
-                copied === 'hello@lumenshore.com' ? 'text-[--color-violet]' : 'text-[--color-foreground]',
-              )}
-            >
-              hello@lumenshore.com
-            </a>
-            <CopyButton email="hello@lumenshore.com" copied={copied} onCopy={copyEmail} />
-          </div>
         </div>
 
         {/* Response time badge */}
@@ -166,7 +152,7 @@ export function ContactSection() {
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
           </span>
           <span className="text-xs text-white/50">
-            We usually respond within 48 hours
+            We usually respond within 48 hours — during busy periods it may take a little longer
           </span>
         </div>
       </div>

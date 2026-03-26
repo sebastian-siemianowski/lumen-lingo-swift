@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, type Variants } from 'framer-motion';
+import Link from 'next/link';
 import { Container, Heading, Text, Button, Section } from '@/components/ui';
 import { AppStoreBadge } from './app-store-badge';
 import { useTranslations } from 'next-intl';
@@ -44,21 +45,23 @@ export function CTABanner() {
             {/* CTA group: button + App Store badge */}
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
               {/* Primary CTA with shimmer highlight */}
-              <Button
-                variant="primary"
-                size="lg"
-                className="relative overflow-hidden"
-              >
-                <motion.span
-                  initial={{ x: '-100%' }}
-                  whileInView={{ x: '200%' }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-                  className="pointer-events-none absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-transparent via-white/15 to-transparent"
-                  aria-hidden
-                />
-                Launching Soon
-              </Button>
+              <Link href="/launching-soon">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  className="relative overflow-hidden"
+                >
+                  <motion.span
+                    initial={{ x: '-100%' }}
+                    whileInView={{ x: '200%' }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
+                    className="pointer-events-none absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-transparent via-white/15 to-transparent"
+                    aria-hidden
+                  />
+                  Launching Soon
+                </Button>
+              </Link>
               <AppStoreBadge location="homepage_cta_banner" />
             </div>
 

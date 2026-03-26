@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { redirect } from 'next/navigation';
 import { Suspense } from 'react';
 import { EarlyAccessHero } from '@/components/early-access';
+import { getFeatureFlag } from '@/lib/feature-flags';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
 export async function generateMetadata({
@@ -40,6 +42,11 @@ export default async function EarlyAccessPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+
+  if (!getFeatureFlag('EARLY_ACCESS_LIVE')) {
+    redirect('/launching-soon');
+  }
+
   return (
     <div className="relative overflow-hidden">
       <Suspense>

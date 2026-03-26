@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils';
 import { getAppStoreUrl } from '@/lib/appStoreUrl';
 import { NewsletterForm } from '@/components/newsletter';
 import { useFeatureFlag } from '@/hooks/use-feature-flag';
+import { type FeatureFlagName, isDevOnlyFlag } from '@/lib/feature-flags';
 
 const footerSections = [
   {
@@ -15,7 +16,7 @@ const footerSections = [
     links: [
       { href: '/features', key: 'features' },
       { href: '/pricing', key: 'pricing' },
-      { href: '/early-access', key: 'earlyAccess' },
+      { href: '/early-access', key: 'earlyAccess', flag: 'EARLY_ACCESS_LIVE' as FeatureFlagName },
       { href: '/download', key: 'download' },
     ],
   },
@@ -25,7 +26,7 @@ const footerSections = [
       { href: '/about', key: 'about' },
       { href: '/blog', key: 'blog' },
       { href: '/careers', key: 'careers' },
-      { href: '/press', key: 'pressKit' },
+      { href: '/press', key: 'pressKit', flag: 'PRESS_KIT_LIVE' as FeatureFlagName },
     ],
   },
   {
@@ -38,7 +39,7 @@ const footerSections = [
       { href: '/eula', key: 'eula' },
       { href: '/cookies', key: 'cookiePolicy' },
       { href: '/accessibility', key: 'accessibility' },
-      { href: '/data-request', key: 'dataRequest' },
+      { href: '/data-request', key: 'dataRequest', flag: 'DATA_REQUEST_LIVE' as FeatureFlagName },
       { href: '/open-source', key: 'openSource' },
     ],
   },
@@ -80,7 +81,16 @@ const socialLinks = [
 export function Footer() {
   const t = useTranslations('Footer');
   const appStoreLive = useFeatureFlag('APP_STORE_LIVE');
+  const earlyAccessLive = useFeatureFlag('EARLY_ACCESS_LIVE');
+  const pressKitLive = useFeatureFlag('PRESS_KIT_LIVE');
+  const dataRequestLive = useFeatureFlag('DATA_REQUEST_LIVE');
   const [openSection, setOpenSection] = useState<string | null>(null);
+
+  const flagValues: Record<string, boolean> = {
+    EARLY_ACCESS_LIVE: earlyAccessLive,
+    PRESS_KIT_LIVE: pressKitLive,
+    DATA_REQUEST_LIVE: dataRequestLive,
+  };
 
   function toggleSection(heading: string) {
     setOpenSection((prev) => (prev === heading ? null : heading));
@@ -130,7 +140,7 @@ export function Footer() {
 
               {/* App Store badge */}
               <a
-                href={appStoreLive ? getAppStoreUrl('footer') : '/early-access'}
+                href={appStoreLive ? getAppStoreUrl('footer') : (earlyAccessLive ? '/early-access' : '/launching-soon')}
                 target={appStoreLive ? '_blank' : undefined}
                 rel={appStoreLive ? 'noopener noreferrer' : undefined}
                 className="mt-6 inline-flex items-center gap-2 rounded-[--radius-button] border border-glass-border bg-white/5 px-4 py-2.5 text-sm font-medium text-foreground transition-all hover:bg-white/10"
@@ -196,16 +206,32 @@ export function Footer() {
                     role="region"
                     className={`mt-4 space-y-3 sm:block ${isOpen ? 'block' : 'hidden'}`}
                   >
-                    {links.map((link) => (
-                      <li key={link.href}>
-                        <Link
-                          href={link.href}
-                          className="inline-block rounded py-2.5 text-sm text-foreground-muted transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none sm:py-1"
-                        >
-                          {t(`links.${link.key}`)}
-                        </Link>
-                      </li>
-                    ))}
+                    {links
+                      .filter((link) => {
+                        if (!('flag' in link) || !link.flag) return true;
+                        return flagValues[link.flag] ?? true;
+                      })
+                      .map((link) => {
+                        const devOnly = 'flag' in link && link.flag && isDevOnlyFlag(link.flag as FeatureFlagName);
+                        return (
+                          <li key={link.href}>
+                            <Link
+                              href={link.href}
+                              className="inline-flex items-center gap-1.5 rounded py-2.5 text-sm text-foreground-muted transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none sm:py-1"
+                            >
+                              {t(`links.${link.key}`)}
+                              {devOnly && (
+                                <span className="inline-flex items-center gap-0.5 rounded border border-amber-500/30 bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-medium leading-none text-amber-400" title="Visible in development only">
+                                  <svg viewBox="0 0 16 16" fill="none" className="h-2.5 w-2.5" aria-hidden>
+                                    <path d="M8 1l1.545 3.13L13 4.635l-2.5 2.437.59 3.44L8 8.885l-3.09 1.626.59-3.44L3 4.636l3.455-.504L8 1z" fill="currentColor" />
+                                  </svg>
+                                  DEV
+                                </span>
+                              )}
+                            </Link>
+                          </li>
+                        );
+                      })}
                   </ul>
 
                   {/* Divider on mobile between sections */}
