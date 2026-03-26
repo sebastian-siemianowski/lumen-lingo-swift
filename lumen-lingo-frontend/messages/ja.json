@@ -444,19 +444,20 @@
   "Legal": {
     "tocLabel": "On this page",
     "downloadPdf": "Download as PDF",
-    "lastUpdated": "最終更新日：2026年3月26日",
-    "version": "バージョン 2.1",
+    "lastUpdated": "最終更新日: 2025年7月1日",
+    "version": "バージョン 2.2",
     "languageDisclaimer": "この文書は複数の言語でご利用いただけます。翻訳版間に矛盾や不一致がある場合は、英語版が優先されます。",
     "viewEnglishVersion": "英語版を表示",
-    "termsVersion": "バージョン 1.1",
+    "termsVersion": "バージョン 1.2",
     "updateBannerDismiss": "閉じる",
     "updateBannerLink": "変更を見る",
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+    "eulaVersion": "バージョン 1.1"
   },
   "Privacy": {
     "meta": {
       "title": "Privacy Policy",
-      "description": "Read how LumenShore handles your data with care across the LumenLingo iOS app and lumenlingo.com website. Privacy-first approach, on-device processing, GDPR, CCPA and your rights.",
+      "description": "Read how Lumenshore handles your data with care across the LumenLingo iOS app and lumenlingo.com website. Privacy-first approach, on-device processing, GDPR, CCPA and your rights.",
       "ogTitle": "Privacy Policy — LumenLingo"
     },
     "breadcrumb": "Privacy Policy",
@@ -466,7 +467,7 @@
     },
     "overview": {
       "heading": "Overview",
-      "p1": "LumenShore Ltd (“LumenShore”, “we”, “us”, or “our”), company number 09607326, registered at Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA, operates the LumenLingo mobile application (the “App”) and the lumenlingo.com website (the “Website”). This Privacy Policy explains how we collect, use, store, and protect information when you use either platform.",
+      "p1": "Lumenshore Limited (“Lumenshore”, “we”, “us”, or “our”), company number 09607326, registered at Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA, operates the LumenLingo mobile application (the “App”) and the lumenlingo.com website (the “Website”). This Privacy Policy explains how we collect, use, store, and protect information when you use either platform.",
       "p2": "We built LumenLingo with a privacy-first architecture. On the iOS app, your learning data is processed and stored on your device and in your personal iCloud account — not on our servers. On the website, we collect minimal data necessary to operate the service and improve your experience. We believe your data is yours, and it should stay that way.",
       "p3": "This policy is organised into two sections — Website and iOS App — so you can quickly find the information relevant to you."
     },
@@ -551,6 +552,17 @@
       "contractLi2": "<b>iCloud sync</b> — syncing your progress across devices is a core part of the service",
       "contractLi3": "<b>Subscription management</b> — verifying your tier to provide the appropriate features"
     },
+    "dataProvisionRequirements": {
+      "heading": "データ提供の義務性について",
+      "p1": "UK GDPR第13条第2項(e)に基づき、個人データの提供が法的または契約上の要件であるかどうか、およびデータを提供しない場合の考えられる結果について、お知らせする必要があります：",
+      "contractualHeading": "契約上の要件",
+      "contractualLi1": "<b>アカウント作成データ</b>（Clerk認証によるメールアドレス）— これは契約上の要件です。これがないと、アカウントを作成したりサービスを提供したりすることができません。",
+      "contractualLi2": "<b>サブスクリプション支払いデータ</b>（Apple/RevenueCatが処理）— これはプレミアム機能の契約上の要件です。これがないと、お支払いを処理することができません。",
+      "voluntaryHeading": "任意の提供",
+      "voluntaryLi1": "<b>分析の同意</b>（Vercel Analytics、Sentry Session Replay）— これは完全に任意です。拒否してもサービスの利用には影響しません。",
+      "voluntaryLi2": "<b>フィードバックとサポートメール</b>— 任意。連絡先を提供されない場合、お問い合わせに回答できない場合があります。",
+      "statutoryP1": "当社に個人データを提供する法的（制定法上の）要件はありません。すべてのデータ提供は、契約上（サービスに必要）または任意のいずれかです。"
+    },
     "dataFlow": {
       "heading": "Where Your Data Goes",
       "intro": "Here is a plain-English summary of where your data is stored and processed:",
@@ -586,13 +598,15 @@
       "li1": "<b>Apple App Store & iCloud</b> — for app distribution, subscription management, payment processing, and data synchronisation. Subject to <applePrivacy>Apple’s Privacy Policy</applePrivacy>.",
       "li2": "<b>Vercel</b> — for website hosting, anonymous analytics, and performance monitoring. Cookie-free, GDPR-compliant. Subject to <vercelPrivacy>Vercel’s Privacy Policy</vercelPrivacy>.",
       "li3": "<b>Sentry</b> — for website error monitoring and (with consent) session replay. Subject to <sentryPrivacy>Sentry’s Privacy Policy</sentryPrivacy>.",
-      "noAdNetworks": "We do not use Google Analytics, Facebook SDK, or any advertising networks."
+      "noAdNetworks": "We do not use Google Analytics, Facebook SDK, or any advertising networks.",
+      "li4": "<b>Clerk</b> — ユーザー認証とID管理用。<clerkPrivacy>Clerkのプライバシーポリシー</clerkPrivacy>に準拠。",
+      "li5": "<b>RevenueCat</b> — サブスクリプション管理と権限追跡用。Appleがすべての支払いの販売者です。<revenueCatPrivacy>RevenueCatのプライバシーポリシー</revenueCatPrivacy>に準拠。"
     },
     "childrensPrivacy": {
       "heading": "Children’s Privacy",
       "p1": "LumenLingo is designed for users aged 13 and older. We do not knowingly collect personal information from children under 13 (or the applicable minimum age in your jurisdiction, which may be higher — for example, 16 in Germany and the Netherlands).",
       "p2": "The iOS app does not require account registration and stores data locally, so no personal information is transmitted to us from app users of any age. On the website, we do not knowingly accept newsletter or waitlist signups from anyone under 13.",
-      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at hello@lumenshore.com and we will delete it promptly.",
+      "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at legal@lumenlingo.com and we will delete it promptly.",
       "coppaHeading": "COPPAの遵守",
       "coppaP1": "LumenLingoは、米国の児童オンラインプライバシー保護法（COPPA）に準拠しています。当社は、保護者の検証可能な同意なしに、13歳未満の児童の個人情報を意図的に収集、使用、開示することはありません。当社のサービスは13歳未満の児童を対象としておらず、児童向けの広告も行っておりません。",
       "coppaP2": "個人情報（メールアドレスなど）を収集するすべてのウェブサイトフォームには、ユーザーが13歳以上であること、または18歳未満の場合は保護者の同意を得ていることを確認する年齢確認ステップが含まれています。",
@@ -602,7 +616,7 @@
       "parentalLi2": "お子様の個人情報を当社のシステムから削除するよう要求すること",
       "parentalLi3": "お子様の情報のそれ以上の収集または使用を拒否すること",
       "parentalLi4": "標準のiOSデバイス管理を通じて、アプリとそのローカルデータを管理または削除すること",
-      "parentalP2": "これらの権利を行使するには、<emailLink>hello@lumenshore.com</emailLink>までご連絡ください。13歳未満の児童から適切な保護者の同意なく個人情報を収集したことが判明した場合、その情報を速やかに削除いたします。",
+      "parentalP2": "これらの権利を行使するには、<emailLink>legal@lumenlingo.com</emailLink>までご連絡ください。13歳未満の児童から適切な保護者の同意なく個人情報を収集したことが判明した場合、その情報を速やかに削除いたします。",
       "ferpaHeading": "教育利用とFERPA",
       "ferpaP1": "LumenLingoは教育機関によって、または教育機関のために運営されているものではありません。学校や教育機関がLumenLingoを生徒に推奨する場合、それは独自の判断で行われます。当該機関は、家族の教育権とプライバシーに関する法律（FERPA）の遵守を確保し、13歳未満の生徒にサービスの利用を指示する前に必要な保護者の同意を得る責任を負います。"
     },
@@ -613,7 +627,7 @@
       "websiteLi1": "<b>Newsletter/waitlist emails</b> — retained until you unsubscribe, plus up to 30 days to process your removal.",
       "websiteLi2": "<b>Sentry error logs</b> — retained by Sentry for 90 days, then automatically deleted.",
       "websiteLi3": "<b>Sentry session replays</b> — retained by Sentry for 90 days, then automatically deleted.",
-      "websiteLi4": "<b>Vercel Analytics</b> — retention per Vercel’s data retention policy (aggregated, no PII).",
+      "websiteLi4": "<b>Vercel Analytics</b> — 集計されたCookieフリーのアナリティクスデータは収集から30日間保持され、その後自動的に削除されます。個人を特定できる情報は保存されません。",
       "appHeading": "iOS App Data",
       "appLi1": "<b>Delete account</b> — use the in-app Settings → Sign Out → Delete Account to permanently erase all learning data, progress, preferences, and iCloud sync data. This action cannot be undone.",
       "appLi2": "<b>Delete the app</b> — uninstalling LumenLingo removes all locally stored data.",
@@ -621,6 +635,22 @@
       "appLi4": "<b>Subscription</b> — cancel your subscription through Settings → Apple ID → Subscriptions. No data is retained by us after cancellation.",
       "websiteLi5": "<b>同意記録</b> — GDPRの説明責任のため、最後のやり取りから 3 年間保管されます。",
       "websiteLi6": "<b>データリクエストログ</b> — GDPRの説明責任のため、完了後 3 年間保管されます。"
+    },
+    "breachNotification": {
+      "heading": "データ侵害の通知",
+      "p1": "お客様の権利と自由にリスクをもたらす可能性のある個人データ侵害が発生した場合、UK GDPR第33条に従い、侵害を認識してから不当な遅延なく、可能な限り72時間以内に情報コミッショナー事務局（ICO）に通知します。72時間以内にICOへの通知ができない場合は、遅延の理由を添付します。",
+      "p2": "侵害がお客様の権利と自由に<b>高いリスク</b>をもたらす可能性がある場合、UK GDPR第34条に従い、不当な遅延なく直接お客様にも通知します。明確でわかりやすい言葉で以下をお伝えします：",
+      "li1": "個人データ侵害の性質（可能な場合、影響を受けるデータ主体のカテゴリーと概数、および影響を受ける個人データ記録のカテゴリーと概数を含む）",
+      "li2": "詳細情報を入手できるデータ保護責任者の氏名と連絡先",
+      "li3": "侵害の想定される結果",
+      "li4": "侵害に対処するために講じた、または講じることを提案する措置（該当する場合、その悪影響を軽減するための措置を含む）",
+      "p3": "当社は、個人データ侵害を効果的に検出、報告、調査できるよう、侵害登録簿を含む内部侵害対応手順を維持しています。侵害通知手順に関するご質問は、<emailLink>legal@lumenlingo.com</emailLink>までお問い合わせください。"
+    },
+    "automatedDecisions": {
+      "heading": "自動意思決定とプロファイリング",
+      "p1": "UK GDPR第22条に定義されるとおり、法的効果またはそれに類する重大な効果をもたらす自動意思決定にお客様の個人データを使用することはありません。",
+      "p2": "当社のアプリは、学習スケジュールを最適化するために間隔反復アルゴリズムを使用しています。これは教育的な最適化のみであり、フラッシュカードをいつ表示するかを決定するものであって、法的効果やそれに類する重大な効果を持つ決定ではありません。",
+      "p3": "将来、法的または重大な効果を持つ自動意思決定を導入する場合、本ポリシーを更新し、UK GDPR第22条第3項に基づき、(a)人間の介入を得る権利、(b)意見を表明する権利、(c)決定に異議を唱える権利を確保します。"
     },
     "yourRights": {
       "heading": "Your Rights",
@@ -633,12 +663,13 @@
       "gdprLi5": "Right to object — contact us to opt out of anonymous analytics or to object to processing based on legitimate interest.",
       "gdprLi6": "Right to restrict processing — contact us to request that we limit how we process your data.",
       "gdprLi7": "苦情申立権 — <icoLink>情報コミッショナー事務局（ICO）</icoLink>またはお住まいの地域の監督機関に苦情を申し立てることができます。",
+      "gdprLi8": "同意を撤回する権利 — 同意を法的根拠として使用している場合（例：アナリティクス）、Cookieの設定を調整するか、<emailLink>legal@lumenlingo.com</emailLink>にご連絡いただくことで、いつでも同意を撤回できます。撤回は、撤回前に行われた処理の適法性には影響しません。",
       "ccpaHeading": "CCPA/CPRAに基づく権利（カリフォルニア州）",
       "ccpaLi1": "<b>知る権利</b> — 当社が収集した個人情報のカテゴリーおよび具体的な項目の開示を要求できます。上記の収集時通知セクションをご覧ください。",
       "ccpaLi2": "<b>削除の権利</b> — 個人情報の削除を要求できます。アプリ内のアカウント削除機能を使用するか、アプリを削除するか、ウェブサイトデータの削除についてお問い合わせください。",
       "ccpaLi3": "<b>修正の権利</b> — 不正確な個人情報の修正を要求できます。アプリデータは直接編集できます。ウェブサイトデータについてはお問い合わせください。",
       "ccpaLi4": "<b>販売または共有のオプトアウトの権利</b> — 当社はクロスコンテキスト行動ターゲティング広告のために個人情報を販売または共有しません。オプトアウトの操作は不要です。",
-      "exerciseRights": "これらの権利を行使するには、hello@lumenshore.comにメールを送信するか、<dataRequestLink>データリクエスト</dataRequestLink>ページからリクエストを送信してください。お住まいの管轄権に適用される期限内に回答いたします。特定のリクエストを処理する前に本人確認が必要な場合があります。",
+      "exerciseRights": "これらの権利を行使するには、legal@lumenlingo.comにメールを送信するか、<dataRequestLink>データリクエスト</dataRequestLink>ページからリクエストを送信してください。お住まいの管轄権に適用される期限内に回答いたします。特定のリクエストを処理する前に本人確認が必要な場合があります。",
       "ccpaLi5": "<b>機密個人情報の使用制限の権利</b> — 当社はCCPA/CPRAで定義される機密個人情報を収集していません。",
       "ccpaLi6": "<b>差別禁止</b> — プライバシー権を行使したことを理由に、サービスの拒否、異なる価格の請求、またはサービス品質の差異を設けることはありません。",
       "ccpaResponse": "カリフォルニア州の居住者の方へ：10営業日以内にリクエストの受領を確認し、45暦日以内に実質的な回答をいたします。さらに時間が必要な場合、事前通知の上、追加45日間延長することがあります。お客様が提供された情報と当社が保有するデータを照合して本人確認を行う場合があります。",
@@ -648,9 +679,9 @@
       "usStateLi2": "<b>訂正権</b> — 不正確な個人データの訂正を要求できます。",
       "usStateLi3": "<b>削除権</b> — 個人データの削除を要求できます。",
       "usStateLi4": "<b>データポータビリティ権</b> — ポータブルですぐに使用できる形式でデータを取得できます。",
-      "usStateLi5": "<b>オプトアウト権</b> — ターゲティング広告、個人データの売却、プロファイリングを拒否できます。LumenShoreはこれらのいずれの行為も行っていません。",
+      "usStateLi5": "<b>オプトアウト権</b> — ターゲティング広告、個人データの売却、プロファイリングを拒否できます。Lumenshoreはこれらのいずれの行為も行っていません。",
       "usStateGpc": "コロラド州とコネチカット州では、<gpcLink>Global Privacy Control（GPC）</gpcLink>などのユニバーサルオプトアウトシグナルを尊重することが義務付けられています。当社はすべての管轄権でGPCを尊重します。",
-      "usStateAppeal": "当社がお客様のリクエストを拒否した場合、hello@lumenshore.comまでご連絡いただくことで異議申し立てを行うことができます。60日以内に異議申し立てに回答いたします。結果にご不満な場合は、お住まいの州の司法長官事務所にお問い合わせいただけます。",
+      "usStateAppeal": "当社がお客様のリクエストを拒否した場合、legal@lumenlingo.comまでご連絡いただくことで異議申し立てを行うことができます。60日以内に異議申し立てに回答いたします。結果にご不満な場合は、お住まいの州の司法長官事務所にお問い合わせいただけます。",
       "verificationHeading": "本人確認と対応プロセス",
       "verificationP1": "お客様のデータを保護するため、権利リクエストを処理する前に本人確認を行います。アカウントまたはサブスクリプションに関連付けられたメールアドレスの確認、または当社の記録と一致するその他の識別情報の提供をお願いする場合があります。",
       "verificationP2": "お客様に代わってリクエストを行う代理人を指定することができます。代理人の権限の証明（署名入りの委任状または委任状など）を要求し、お客様の本人確認を直接行う場合があります。",
@@ -661,8 +692,8 @@
       "timeframesCtdpa": "<b>CTDPA（コネチカット）</b> — 45日以内に回答（事前通知によりさらに45日間延長可能）。",
       "timeframesGdpr": "<b>GDPR（EEAおよび英国）</b> — 1暦月以内に回答（複雑なリクエストの場合、さらに2か月間延長可能）。",
       "californiaHeading": "カリフォルニア州のプライバシー権利",
-      "californiaP1": "カリフォルニア民法典第1798.83条（「Shine the Light」）に基づき、カリフォルニア州の住民は、ダイレクトマーケティング目的での第三者への個人情報の開示について情報を要求できます。LumenShoreは、第三者のダイレクトマーケティング目的で個人情報を第三者に開示していません。",
-      "californiaP2": "CCPA/CPRAに基づく権利を含むカリフォルニア州のプライバシー権を行使するには、件名「カリフォルニアプライバシー権」で<emailLink>hello@lumenshore.com</emailLink>にメールを送信するか、<dataRequestLink>データリクエスト</dataRequestLink>ページからリクエストを送信してください。"
+      "californiaP1": "カリフォルニア民法典第1798.83条（「Shine the Light」）に基づき、カリフォルニア州の住民は、ダイレクトマーケティング目的での第三者への個人情報の開示について情報を要求できます。Lumenshoreは、第三者のダイレクトマーケティング目的で個人情報を第三者に開示していません。",
+      "californiaP2": "CCPA/CPRAに基づく権利を含むカリフォルニア州のプライバシー権を行使するには、件名「カリフォルニアプライバシー権」で<emailLink>legal@lumenlingo.com</emailLink>にメールを送信するか、<dataRequestLink>データリクエスト</dataRequestLink>ページからリクエストを送信してください。"
     },
     "policyUpdates": {
       "heading": "Policy Updates",
@@ -671,13 +702,14 @@
       "versionHistory": "Version History",
       "v2": "<b>v2.0</b> (23 March 2026) — Extended policy to cover lumenlingo.com website data collection, added Sentry session replay disclosure, Vercel Analytics disclosure, legal basis for processing, data flow section, and service worker caching details.",
       "v1": "<b>v1.0</b> (22 March 2026) — Initial privacy policy covering the LumenLingo iOS app.",
-      "v2_1": "<b>v2.1</b>（2026年3月26日）— セクションを再編成：商業/規制コンプライアンス開示（VAT処理、EU VAT、国際税務、価格表示コンプライアンス、制裁、暗号化輸出規制）を利用規約に移動。利用規約への相互参照を追加。商標帰属を統合。コンテンツの削除はありません。"
+      "v2_1": "<b>v2.1</b>（2026年3月26日）— セクションを再編成：商業/規制コンプライアンス開示（VAT処理、EU VAT、国際税務、価格表示コンプライアンス、制裁、暗号化輸出規制）を利用規約に移動。利用規約への相互参照を追加。商標帰属を統合。コンテンツの削除はありません。",
+      "v2_2": "<b>v2.2</b>（2025年7月）— フェーズ2法的強化：会社名をLumenshore Limitedに統一、ICO苦情権および連絡先を追加、副処理者登録を追加、国際移転の保護措置を強化、地域別プライバシーフレームワークを追加、PECR開示を改善。"
     },
     "contactUs": {
       "heading": "Contact Us",
       "intro": "If you have questions about this Privacy Policy, your data, or want to exercise your rights, please reach out:",
-      "email": "<b>Email</b>: <emailLink>hello@lumenshore.com</emailLink>",
-      "company": "<b>Company</b>: LumenShore Ltd, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+      "email": "<b>Email</b>: <emailLink>legal@lumenlingo.com</emailLink>",
+      "company": "<b>Company</b>: Lumenshore Limited, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
       "companyNumber": "<b>Company Number</b>: 09607326 (England and Wales)",
       "vatNumber": "<b>VAT Number</b>: GB 270411929",
       "responseTime": "We typically respond within 48 hours and within 30 days for formal data rights requests."
@@ -716,6 +748,22 @@
           "location": "United States",
           "privacyUrl": "https://sentry.io/privacy/",
           "privacyLabel": "Sentry Privacy"
+        },
+        "clerk": {
+          "service": "Clerk, Inc.",
+          "purpose": "ユーザー認証とID管理",
+          "dataProcessed": "メールアドレス、ユーザー識別子、認証トークン",
+          "location": "アメリカ合衆国",
+          "privacyUrl": "https://clerk.com/legal/privacy",
+          "privacyLabel": "Clerk Privacy"
+        },
+        "revenueCat": {
+          "service": "RevenueCat, Inc.",
+          "purpose": "サブスクリプション管理と権限追跡",
+          "dataProcessed": "アプリユーザーID、サブスクリプションステータス、購入レシート（Apple経由 — RevenueCatは生の支払いカードデータを受け取りません）",
+          "location": "アメリカ合衆国",
+          "privacyUrl": "https://www.revenuecat.com/privacy/",
+          "privacyLabel": "RevenueCat Privacy"
         }
       },
       "dpaStatus": {
@@ -723,7 +771,9 @@
         "p1": "We maintain Data Processing Agreements (DPAs) or equivalent contractual protections with all sub-processors that handle personal data:",
         "li1": "<b>Apple</b> — covered by Apple's standard DPA for developers, incorporating Standard Contractual Clauses for international transfers.",
         "li2": "<b>Vercel</b> — covered by Vercel's DPA, available at vercel.com/legal/dpa. Vercel Analytics is cookie-free and processes no personal data.",
-        "li3": "<b>Sentry</b> — covered by Sentry's DPA with Standard Contractual Clauses (SCCs) for EU-US data transfers."
+        "li3": "<b>Sentry</b> — covered by Sentry's DPA with Standard Contractual Clauses (SCCs) for EU-US data transfers.",
+        "li4": "<b>Clerk</b> — Clerkのデータ処理契約でカバーされ、国際移転のための標準契約条項とEU-USデータプライバシーフレームワーク認証を含みます。",
+        "li5": "<b>RevenueCat</b> — RevenueCatのデータ処理追加条項（標準契約条項付き）でカバーされます。RevenueCatは生の支払いカードデータを受け取りません。Appleが販売者です。"
       },
       "changes": {
         "heading": "Sub-Processor Changes",
@@ -732,7 +782,7 @@
     },
     "internationalTransfers": {
       "heading": "International Data Transfers",
-      "intro": "LumenShore Ltd is based in the United Kingdom. Some of your data may be transferred to and processed in countries outside the UK and the European Economic Area (EEA). Here is where each service processes data and the legal mechanism that protects the transfer:",
+      "intro": "Lumenshore Limited is based in the United Kingdom. Some of your data may be transferred to and processed in countries outside the UK and the European Economic Area (EEA). Here is where each service processes data and the legal mechanism that protects the transfer:",
       "li1": "<b>Apple (United States & global)</b> — iCloud data and App Store subscription data may be processed in Apple’s global data centres, including in the United States. Apple participates in transfers under Standard Contractual Clauses (SCCs) and the EU-US Data Privacy Framework.",
       "li2": "<b>Vercel (United States & global edge)</b> — our website is served from Vercel’s edge network, with primary servers in the United States. Vercel Analytics processes no personal data. Website hosting data is protected under Vercel’s GDPR DPA with Standard Contractual Clauses.",
       "li3": "<b>Sentry (United States)</b> — error logs and session replay data (with your consent) are transmitted to Sentry’s servers in the United States. These transfers are protected by Sentry’s DPA incorporating Standard Contractual Clauses (SCCs).",
@@ -744,7 +794,9 @@
         "li3": "<b>UK International Data Transfer Agreement (IDTA)</b> — the UK equivalent of SCCs, approved by the ICO for transfers from the UK.",
         "li4": "<b>Adequacy decisions</b> — where the European Commission or UK Government has determined that the destination country provides adequate data protection."
       },
-      "p1": "You may request a copy of the relevant transfer safeguards by contacting us at hello@lumenshore.com."
+      "p1": "You may request a copy of the relevant transfer safeguards by contacting us at legal@lumenlingo.com.",
+      "li4": "<b>Clerk（アメリカ合衆国）</b> — 認証データ（メールアドレス、ユーザー識別子、認証トークン）はアメリカ合衆国のClerkサーバーで処理されます。これらの転送はClerkのDPA（標準契約条項およびEU-USデータプライバシーフレームワーク認証を含む）により保護されています。",
+      "li5": "<b>RevenueCat（アメリカ合衆国）</b> — サブスクリプション管理データ（アプリユーザーID、サブスクリプションステータス、Apple購入レシート）はアメリカ合衆国のRevenueCatサーバーで処理されます。これらの転送はRevenueCatのデータ処理追加条項（標準契約条項付き）により保護されています。"
     },
     "aggregateData": {
       "heading": "Aggregated and De-identified Data",
@@ -843,7 +895,7 @@
       },
       "doNotSell": {
         "heading": "個人情報を販売または共有しないでください",
-        "p1": "LumenShoreはお客様の個人情報を第三者に販売しません。クロスコンテキスト行動ターゲティング広告のために個人情報を共有することはありません。これらの慣行を行っていないため、オプトアウトの必要はありませんが、CCPA/CPRAの要件に従いこの開示を提供しています。",
+        "p1": "Lumenshoreはお客様の個人情報を第三者に販売しません。クロスコンテキスト行動ターゲティング広告のために個人情報を共有することはありません。これらの慣行を行っていないため、オプトアウトの必要はありませんが、CCPA/CPRAの要件に従いこの開示を提供しています。",
         "p2": "当社の慣行が変更された場合、このポリシーを更新し、販売または共有が開始される前にオプトアウトの仕組みを提供いたします。",
         "p3": "カリフォルニア州の居住者は、<gpcLink>グローバルプライバシーコントロール（GPC）</gpcLink>ブラウザシグナルを使用してオプトアウトの希望を伝えることもできます。当社はCPRAに基づくGPCを有効なオプトアウトリクエストとして尊重します。"
       }
@@ -857,19 +909,19 @@
     },
     "ukDataProtection": {
       "heading": "英国データ保護",
-      "intro": "LumenShore Limitedは、イングランドおよびウェールズに登記された会社です（会社番号 09607326）。英国を拠点とするデータ管理者として、当社は英国一般データ保護規則（UK GDPR）— 2018年欧州連合（離脱）法によりEU法から継承 — および2018年データ保護法（DPA 2018）を遵守しています。これらの法律は、当社がお客様の個人データを収集、使用、保存、保護する方法を規定しています。",
+      "intro": "Lumenshore Limitedは、イングランドおよびウェールズに登記された会社です（会社番号 09607326）。英国を拠点とするデータ管理者として、当社は英国一般データ保護規則（UK GDPR）— 2018年欧州連合（離脱）法によりEU法から継承 — および2018年データ保護法（DPA 2018）を遵守しています。これらの法律は、当社がお客様の個人データを収集、使用、保存、保護する方法を規定しています。",
       "controllerHeading": "データ管理者",
       "controllerP1": "お客様の個人データの管理者は次のとおりです：",
-      "controllerLi1": "<b>会社名</b>：LumenShore Ltd",
+      "controllerLi1": "<b>会社名</b>：Lumenshore Limited",
       "controllerLi2": "<b>登記住所</b>：Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
       "controllerLi3": "<b>会社番号</b>：09607326（イングランドおよびウェールズ）",
       "controllerLi4": "<b>VAT番号</b>：GB 270411929",
       "dplHeading": "データ保護責任者",
-      "dplP1": "LumenShoreは、UK GDPR第37条に基づくデータ保護責任者（DPO）の任命義務はありません（当社は公的機関ではなく、大規模な監視を行っておらず、特別カテゴリーのデータを大規模に処理していません）が、コンプライアンスを監督するデータ保護責任者を指名しています：",
-      "dplP2": "<b>データ保護責任者</b>：LumenShore Ltd ディレクター",
-      "dplP3": "個人データの取り扱いに関するご質問、権利の行使、またはデータ保護に関する懸念は、<emailLink>hello@lumenshore.com</emailLink>までお問い合わせください。",
+      "dplP1": "Lumenshoreは、UK GDPR第37条に基づくデータ保護責任者（DPO）の任命義務はありません（当社は公的機関ではなく、大規模な監視を行っておらず、特別カテゴリーのデータを大規模に処理していません）が、コンプライアンスを監督するデータ保護責任者を指名しています：",
+      "dplP2": "<b>データ保護責任者</b>：Lumenshore Limited ディレクター",
+      "dplP3": "個人データの取り扱いに関するご質問、権利の行使、またはデータ保護に関する懸念は、<emailLink>legal@lumenlingo.com</emailLink>までお問い合わせください。",
       "icoHeading": "ICO登録",
-      "icoP1": "2018年データ保護法第25条の要件に従い、LumenShore Ltdは英国の独立したデータ保護監督機関である<icoLink>情報コミッショナー事務局（ICO）</icoLink>に年間データ保護料を納付しています。",
+      "icoP1": "2018年データ保護法第25条の要件に従い、Lumenshore Limitedは英国の独立したデータ保護監督機関である<icoLink>情報コミッショナー事務局（ICO）</icoLink>に年間データ保護料を納付しています。",
       "icoP2": "ICOは料金納付者の公開登録簿を維持しています。当社の登録状況はICOのウェブサイトで確認できます。",
       "adequacyHeading": "国際データ移転の十分性認定",
       "adequacyP1": "英国と欧州経済領域（EEA）間で個人データが移転される場合、UK GDPR第45条に基づく英国–EU十分性認定によって保護されます。欧州委員会は2021年6月に英国に十分性を付与し、英国のデータ保護法がEU GDPRと本質的に同等の保護レベルを提供することを認めました。",
@@ -879,15 +931,16 @@
       "specialCategoryP1": "LumenLingoは、UK GDPR第9条およびDPA 2018第10条で定義される特別カテゴリーのデータを収集・処理しません。これには、人種または民族的出自、政治的意見、宗教的または哲学的信条、労働組合への加入、遺伝データ、生体認証データ、健康データ、性生活または性的指向、および犯罪有罪判決データが含まれます。",
       "specialCategoryP2": "将来、当社のデータ処理活動が変更され、特別カテゴリーのデータが含まれるようになった場合、本ポリシーを更新し、データ保護影響評価（DPIA）を実施し、必要に応じて明示的な同意を取得します。",
       "complaintHeading": "ICOへの苦情申立権",
-      "complaintP1": "当社の個人データの取り扱いにご不満がある場合、情報コミッショナー事務局（ICO）に苦情を申し立てる権利があります。まずは<emailLink>hello@lumenshore.com</emailLink>までご連絡いただければ、問題解決に全力を尽くします。",
+      "complaintP1": "当社の個人データの取り扱いにご不満がある場合、情報コミッショナー事務局（ICO）に苦情を申し立てる権利があります。まずは<emailLink>legal@lumenlingo.com</emailLink>までご連絡いただければ、問題解決に全力を尽くします。",
       "complaintP2": "当社の対応にご納得いただけない場合、ICOに連絡できます：",
       "complaintLi1": "<b>ウェブサイト</b>：<icoComplaintLink>ico.org.uk/make-a-complaint</icoComplaintLink>",
       "complaintLi2": "<b>電話</b>：0303 123 1113",
-      "complaintLi3": "<b>郵便</b>：Information Commissioner’s Office, Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF"
+      "complaintLi3": "<b>郵便</b>：Information Commissioner’s Office, Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF",
+      "icoRegistration": "当社のICO登録番号はZB718685です。<icoLink>ICO登録簿</icoLink>でご確認いただけます。"
     },
     "electronicComms": {
       "heading": "電子通信（英国 PECR）",
-      "intro": "2003年プライバシー及び電子通信規則（PECR）は、電子マーケティングとCookieおよび同様の技術の使用に関する特定の規則を定めています。英国企業として、LumenShore Ltdは英国GDPRと併せてPECRを遵守しています。",
+      "intro": "2003年プライバシー及び電子通信規則（PECR）は、電子マーケティングとCookieおよび同様の技術の使用に関する特定の規則を定めています。英国企業として、Lumenshore Limitedは英国GDPRと併せてPECRを遵守しています。",
       "cookieHeading": "Cookieおよび同様の技術（規則 6）",
       "cookieP1": "PECR規則 6は、お客様が要求したサービスを提供するために厳密に必要な場合を除き、お客様のデバイスに情報を保存またはアクセスする前に同意を得ることを要求しています。当社のアプローチ：",
       "cookieLi1": "<b>厳密に必要なストレージ</b>—同意設定と言語設定—は、お客様が要求した通りにウェブサイトが機能するために不可欠であるため、同意なしに設定されます。",
@@ -898,18 +951,18 @@
       "newsletterHeading": "マーケティング通信（規則 22）",
       "newsletterP1": "当社は、ニュースレターに登録することで明示的かつ自由な同意を与えた方にのみマーケティングメールを送信します。事前にチェックされたボックスは使用せず、マーケティングの同意を他の合意と束ねることはありません。",
       "newsletterP2": "当社が送信する各マーケティングメールは：",
-      "newsletterLi1": "送信者を<b>LumenShore Ltd</b>として識別します",
+      "newsletterLi1": "送信者を<b>Lumenshore Limited</b>として識別します",
       "newsletterLi2": "機能する<b>配信停止リンク</b>を含みます",
       "newsletterLi3": "受け取るコンテンツの種類を説明します（製品アップデート、語学学習のヒント、および時折のオファー）",
       "newsletterP3": "当社は、お客様の同意（表示された同意テキストのバージョン、タイムスタンプ、およびハッシュ化された識別子を含む）を説明責任記録のために記録します。",
       "softOptInHeading": "ソフトオプトイン",
-      "softOptInP1": "PECR規則 22(3)は、データ収集時およびその後の各メッセージでオプトアウトの機会が提供されている場合、既存顧客に対して同様の製品について明示的な同意なくマーケティングを送信することを許可しています（「ソフトオプトイン」）。LumenShoreは現在、ソフトオプトインの例外に依拠して<b>いません</b>—すべてのマーケティングには明示的な同意が必要です。"
+      "softOptInP1": "PECR規則 22(3)は、データ収集時およびその後の各メッセージでオプトアウトの機会が提供されている場合、既存顧客に対して同様の製品について明示的な同意なくマーケティングを送信することを許可しています（「ソフトオプトイン」）。Lumenshoreは現在、ソフトオプトインの例外に依拠して<b>いません</b>—すべてのマーケティングには明示的な同意が必要です。"
     },
     "japanPrivacy": {
       "heading": "日本 — 個人情報の保護に関する法律（APPI）",
       "intro": "LumenLingoは、日本語（ja）ロケールおよび日本語言語ペアを通じて、日本のユーザーを積極的に対象としています。そのため、改正個人情報の保護に関する法律（APPI）を遵守しています。",
       "purposeHeading": "利用目的",
-      "purposeP1": "APPIに基づき、個人情報の利用目的を明確に特定しています。LumenShore Ltdは、お客様の個人情報を以下の目的で利用します：",
+      "purposeP1": "APPIに基づき、個人情報の利用目的を明確に特定しています。Lumenshore Limitedは、お客様の個人情報を以下の目的で利用します：",
       "purposeLi1": "<b>サービスの提供</b> — パーソナライズされた学習コンテンツや進捗追跡を含むLumenLingo語学学習サービスの提供",
       "purposeLi2": "<b>サービスの改善</b> — 匿名化された利用パターンの分析によるアプリ機能および教育コンテンツの改善",
       "purposeLi3": "<b>エラー監視</b> — Sentryを介した技術的問題の検出と解決（ウェブサイトではお客様の同意に基づく）",
@@ -917,12 +970,12 @@
       "purposeLi5": "<b>法令遵守</b> — 適用法令に基づく義務の履行",
       "handlerHeading": "個人情報取扱事業者",
       "handlerP1": "お客様の個人情報を取り扱う事業者は以下のとおりです：",
-      "handlerLi1": "<b>LumenShore Ltd</b>（会社番号：09607326）",
+      "handlerLi1": "<b>Lumenshore Limited</b>（会社番号：09607326）",
       "handlerLi2": "<b>登記住所：</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
-      "handlerLi3": "<b>連絡先：</b> <emailLink>hello@lumenshore.com</emailLink>",
+      "handlerLi3": "<b>連絡先：</b> <emailLink>legal@lumenlingo.com</emailLink>",
       "crossBorderHeading": "越境移転（APPI第28条）",
       "crossBorderP1": "お客様の個人情報は、日本国外に移転され、処理される場合があります。APPIに基づき、以下の越境移転とその保護措置についてお知らせします：",
-      "crossBorderLi1": "<b>英国</b> — LumenShore Ltdは英国に拠点を置いており、英国は日英相互十分性認定に基づくデータ保護基準を維持しています",
+      "crossBorderLi1": "<b>英国</b> — Lumenshore Limitedは英国に拠点を置いており、英国は日英相互十分性認定に基づくデータ保護基準を維持しています",
       "crossBorderLi2": "<b>米国（Vercel）</b> — 当社のウェブサイトはVercelのエッジネットワークでホスティングされています。標準契約条項およびEU-USデータプライバシーフレームワークを移転保護揪置として依拠しています",
       "crossBorderLi3": "<b>米国（Sentry）</b> — エラー監視データ（お客様の同意に基づく）はSentryにより処理されます。標準契約条項を移転保護揪置として依拠しています",
       "crossBorderLi4": "<b>Apple（グローバル）</b> — iCloudデータおよびApp Storeデータは、Appleのデータ保護契約およびプライバシーコミットメントに基づきAppleにより処理されます",
@@ -934,7 +987,7 @@
       "rightsLi3": "<b>利用停止請求権</b> — 個人データの利用停止または消去を請求できます",
       "rightsLi4": "<b>第三者提供停止請求権</b> — 第三者への個人データの提供停止を請求できます",
       "rightsLi5": "<b>第三者提供記録の開示請求権</b> — 個人データの第三者提供記録の開示を請求できます",
-      "rightsP2": "当社はお客様の請求に過度な遅滴なく対応いたします。これらの権利を行使する場合は、<emailLink>hello@lumenshore.com</emailLink>までご連絡ください。",
+      "rightsP2": "当社はお客様の請求に過度な遅滴なく対応いたします。これらの権利を行使する場合は、<emailLink>legal@lumenlingo.com</emailLink>までご連絡ください。",
       "ppcHeading": "個人情報保護委員会（PPC）",
       "ppcP1": "当社の個人情報の取扱いにご不満の場合は、日本の個人情報保護委員会に苦情を申し立てることができます：",
       "ppcLi1": "<b>ウェブサイト：</b> <ppcLink>https://www.ppc.go.jp/</ppcLink>",
@@ -955,7 +1008,7 @@
       "crossBorderP1": "お客様の個人情報は中華人民共和国外に移転・処理される場合があります。PIPLに基づき、越境データ移転に以下の保護措置を実施しています：",
       "crossBorderLi1": "<b>標準契約</b> — 中国サイバースペース管理局（CAC）が策定した「個人情報越境移転標準契約」を主要な移転メカニズムとして採用しています",
       "crossBorderLi2": "<b>個人情報保護影響評価（PIPIA）</b> — PIPL第55条の要件に基づき、越境移転の合法性と必要性、お客様の権利利益へのリスク、保護措置を評価するPIPIAを実施しました",
-      "crossBorderLi3": "<b>英国</b> — LumenShore Ltdは英国に拠点を置いています。データは標準契約の適切な保護措置の下で移転されます",
+      "crossBorderLi3": "<b>英国</b> — Lumenshore Limitedは英国に拠点を置いています。データは標準契約の適切な保護措置の下で移転されます",
       "crossBorderLi4": "<b>米国（Vercel）</b> — ウェブサイトホスティングデータは、標準契約条項に基づきVercelのエッジネットワークで処理されます",
       "crossBorderLi5": "<b>米国（Sentry）</b> — エラー監視データ（お客様の同意を得た上で）は、標準契約条項に基づきSentryで処理されます",
       "crossBorderP2": "越境移転を行う前に、受領者の名称、連絡先、処理目的、処理方法、個人情報の種類、および海外の受領者に対する権利行使方法をお客様にお知らせします。",
@@ -968,7 +1021,7 @@
       "rightsLi5": "<b>削除権</b> — 処理目的が達成された場合、保存期間が満了した場合、同意を撤回した場合、または処理が法令に違反する場合、個人情報の削除を請求できます",
       "rightsLi6": "<b>説明を求める権利</b> — 個人情報の処理規則について説明を求めることができます",
       "rightsLi7": "<b>同意撤回権</b> — 同意に基づく処理について、いつでも同意を撤回する権利があります。撤回は、撤回前に同意に基づいて行われた処理の合法性に影響しません",
-      "rightsP2": "15日以内にご請求に回答いたします。上記の権利を行使するには、<emailLink>hello@lumenshore.com</emailLink>までご連絡ください。",
+      "rightsP2": "15日以内にご請求に回答いたします。上記の権利を行使するには、<emailLink>legal@lumenlingo.com</emailLink>までご連絡ください。",
       "dataLocalizationHeading": "データローカライゼーション",
       "dataLocalizationP1": "PIPLおよび関連規定は、特定の種類の処理についてデータのローカライゼーション（国内保存）を要求する場合があります。現時点の評価に基づき、当社は小規模処理者として、CACが定める強制的なデータローカライゼーションの閾値（100万人超の個人情報の処理、または累計10万人超の個人情報もしくは1万人超の機微個人情報の海外提供）に達していないため、中国国内でのデータ保存ではなく、標準契約方式による越境移転を採用しています。",
       "cacHeading": "中国サイバースペース管理局（CAC）",
@@ -998,10 +1051,10 @@
       "rightsLi7": "<b>共有データに関する情報</b> — 当社がデータを共有した公的・私的機関に関する情報を得る権利",
       "rightsLi8": "<b>同意拒否に関する情報</b> — 同意しないことの可能性と結果に関する情報を得る権利",
       "rightsLi9": "<b>同意の撤回</b> — いつでも無料で簡単な手続きにより同意を撤回する権利",
-      "rightsP2": "これらの権利を行使するには、<emailLink>hello@lumenshore.com</emailLink>までご連絡ください。不当な遅延なくお答えします。",
+      "rightsP2": "これらの権利を行使するには、<emailLink>legal@lumenlingo.com</emailLink>までご連絡ください。不当な遅延なくお答えします。",
       "crossBorderHeading": "国際データ移転",
       "crossBorderP1": "お客様の個人データはブラジル国外に移転される場合があります。LGPDに基づき、国際移転が適切な保護措置のもとで行われることを保証します：",
-      "crossBorderLi1": "<b>英国</b> — LumenShore Ltdは英国に拠点を置き、データ保護基準を維持しています。標準契約条項を移転メカニズムとして採用しています",
+      "crossBorderLi1": "<b>英国</b> — Lumenshore Limitedは英国に拠点を置き、データ保護基準を維持しています。標準契約条項を移転メカニズムとして採用しています",
       "crossBorderLi2": "<b>米国（Vercel、Sentry）</b> — ウェブサイトホスティングおよびエラー監視データは、標準契約条項に基づき米国で処理されます",
       "crossBorderP2": "ANPD（Autoridade Nacional de Proteção de Dados）は特定の国に対する十分性の決定を行う場合があります。ANPDのガイダンスを監視し、移転メカニズムを適宜更新しています。",
       "anpdHeading": "ANPD — ブラジル国家データ保護庁",
@@ -1020,7 +1073,7 @@
       "ageHeading": "デジタル同意年齢",
       "ageP1": "ドイツはGDPR実施法（BDSG）に基づき、デジタル同意年齢を16歳に設定しています。16歳未満のユーザーについては、同意に基づく処理に検証可能な保護者の承認が必要です。ドイツ語ロケールを通じてサービスにアクセスするユーザーにはこの閾値を適用します。",
       "dpoHeading": "データ保護責任者",
-      "dpoP1": "BDSG §38に基づき、少なくとも20名が定期的に個人データの自動処理に従事している組織はデータ保護責任者を任命する必要があります。現時点の評価に基づき、LumenShore Ltdはこの閾値に達していません。チームの成長に伴い、この要件を定期的に再評価しています。",
+      "dpoP1": "BDSG §38に基づき、少なくとも20名が定期的に個人データの自動処理に従事している組織はデータ保護責任者を任命する必要があります。現時点の評価に基づき、Lumenshore Limitedはこの閾値に達していません。チームの成長に伴い、この要件を定期的に再評価しています。",
       "impressumHeading": "インプレッサム（法的記載事項）",
       "impressumP1": "ドイツのテレメディア法（TMG）§5に準拠し、完全な法的記載事項（インプレッサム）は<impressumLink>インプレッサム</impressumLink>でご確認いただけます。インプレッサムには、ドイツ法で求められる当社の会社情報、登記情報、連絡先が記載されています。"
     },
@@ -1037,7 +1090,7 @@
       "ageHeading": "デジタル同意年齢",
       "ageP1": "フランスはデジタル同意年齢を15歳に設定しています。",
       "postMortemHeading": "死後のデータに関する指示",
-      "postMortemP1": "フランス法（情報処理・自由法第85条）に基づき、死後の個人データの保管・削除・通信に関する指示を定める権利があります。<emailLink>hello@lumenshore.com</emailLink>までご連絡ください。",
+      "postMortemP1": "フランス法（情報処理・自由法第85条）に基づき、死後の個人データの保管・削除・通信に関する指示を定める権利があります。<emailLink>legal@lumenlingo.com</emailLink>までご連絡ください。",
       "consumerHeading": "フランスの消費者保護",
       "consumerP1": "消費法典（L221-1条からL221-18条）に基づき、14日間の撤回権があります。",
       "mentionsHeading": "Mentions Légales（法的記載）",
@@ -1225,7 +1278,7 @@
       "minimizationLi4": "未成年ユーザーへのサードパーティ広告トラッカーなし。",
       "parentalHeading": "保護者による管理",
       "parentalP1": "保護者の同意が得られた場合:",
-      "parentalLi1": "保護者はhello@lumenshore.comに連絡して子どものデータを確認できます。",
+      "parentalLi1": "保護者はlegal@lumenlingo.comに連絡して子どものデータを確認できます。",
       "parentalLi2": "保護者はいつでも同意を撤回できます。",
       "parentalLi3": "保護者の要請により未成年者のデータを削除します。",
       "ageAppropriateHeading": "年齢に適したプライバシー通知",
@@ -1234,16 +1287,25 @@
       "ageAppropriateLi2": "簡潔で重要な点に絞った内容。",
       "ageAppropriateLi3": "視覚的でアクセシブルな形式。",
       "childrensCodeHeading": "UK Children’s Code準拠",
-      "childrensCodeP1": "UK Age Appropriate Design Codeは18歳未満がアクセスする可能性のあるオンラインサービスに適用されます。15の基準を対応します:",
-      "childrensCodeLi1": "子どもの最善の利益: データ実践は子どもの福祉を優先。",
-      "childrensCodeLi2": "データ最小化: 必要なデータのみ処理。",
-      "childrensCodeLi3": "デフォルト設定: 全ユーザーに高プライバシー。",
-      "childrensCodeLi4": "透明性: 年齢に適した情報提供。",
-      "childrensCodeLi5": "ナッジ技法: 不要なデータ提供を促す技法なし。",
-      "childrensCodeLi6": "プロファイリング: マーケティング目的のプロファイリングなし。",
+      "childrensCodeP1": "英国情報コミッショナー事務局（ICO）の年齢適切設計コード（Age Appropriate Design Code）は、18歳未満の子どもがアクセスする可能性のあるオンラインサービスに適用されます。語学学習サービスとして、LumenLingoはその適用範囲に含まれます。当社はコードの15の基準すべてに対してサービスを評価しました：",
+      "childrensCodeLi1": "<b>子どもの最善の利益：</b>データ慣行は商業的利益よりも子どもの福祉を優先します。",
+      "childrensCodeLi2": "<b>データ保護影響評価：</b>子どもがアクセスする可能性のある機能についてDPIAを実施します。",
+      "childrensCodeLi3": "<b>年齢に適した適用：</b>デフォルトで年齢に適した保護を適用し、正確な年齢が不明な場合は、プライバシー目的ですべてのユーザーを18歳未満の可能性があるものとして扱います。",
+      "childrensCodeLi4": "<b>透明性：</b>プライバシー情報は、年齢に適した明確な言葉で提供されます。",
+      "childrensCodeLi5": "<b>有害なデータ利用：</b>子どものデータを、その福祉に有害であることが示されている方法で使用しません。",
+      "childrensCodeLi6": "<b>ポリシーとコミュニティ基準：</b>公開された利用規約はコードの基準を遵守しています。",
       "appStoreHeading": "App Store年齢評価",
       "appStoreP1": "LumenLingoはApple App Storeで4+（教育コンテンツ）と評価されています。アカウント登録不要です。",
-      "appStoreP2": "ウェブサイトサービスではユーザーの管轄に応じた最低年齢が適用されます。"
+      "appStoreP2": "ウェブサイトサービスではユーザーの管轄に応じた最低年齢が適用されます。",
+      "childrensCodeLi7": "<b>デフォルト設定：</b>すべてのユーザーに高プライバシーのデフォルト設定が適用され、子どもが設定を変更する必要なく最大限の保護を受けられます。",
+      "childrensCodeLi8": "<b>データ最小化：</b>学習サービスに不可欠なデータのみが処理されます。",
+      "childrensCodeLi9": "<b>データ共有：</b>マーケティングや広告目的で子どもの個人データを第三者と共有しません。",
+      "childrensCodeLi10": "<b>位置情報：</b>正確な位置情報データを収集または使用しません。",
+      "childrensCodeLi11": "<b>ペアレンタルコントロール：</b>該当なし — LumenLingoは現在ペアレンタルコントロール機能を提供していません。導入される場合、適切な監視レベルを提供するよう設計されます。",
+      "childrensCodeLi12": "<b>プロファイリング：</b>子どもはマーケティングや行動ターゲティングのためにプロファイリングされません。間隔反復アルゴリズムは純粋に教育的です。",
+      "childrensCodeLi13": "<b>ナッジ技法：</b>子どもに不要な個人データの提供を促す設計技法は使用しません。",
+      "childrensCodeLi14": "<b>コネクテッドトイとデバイス：</b>該当なし — LumenLingoはソフトウェアアプリケーションであり、コネクテッドトイやIoTデバイスとは連携しません。",
+      "childrensCodeLi15": "<b>オンラインツール：</b>アカウント削除やデータエクスポートを含む、データ権利を行使するためのアクセス可能なツールを提供しています。"
     },
     "updateBannerMessage": "プライバシーポリシーを更新しました。",
     "euRepresentative": {
@@ -1252,7 +1314,7 @@
       "assessment2": "LumenLingoは最小限の個人データを処理しており、EU在住の個人の行動を体系的に監視していません。アプリの学習アルゴリズムはユーザーのデバイス上でローカルに動作し、サーバーサイドのプロファイリングやトラッキングを行いません。",
       "assessment3": "Lumenshoreはデータ処理活動を評価し、現在のデータ処理の範囲と性質を考慮すると、第27条に基づくEU代理人の指名は現在義務ではないと判断しました。ただし、適正慣行と透明性の観点から、LumenshoreはEUデータ保護に関する問い合わせのために以下の連絡先を自主的に指定しています：",
       "contact1": "EU在住の個人または監督当局からのデータ保護に関するお問い合わせ：",
-      "contact2": "Lumenshore Limited、hello@lumenshore.com",
+      "contact2": "Lumenshore Limited、legal@lumenlingo.com",
       "contact3": "Lumenshoreはこの評価を定期的に見直し、処理活動の変更、適用されるガイダンス、または規制要件により必要となった場合、GDPR第27条に基づくEU代理人を正式に任命します。",
       "supervisory1": "EU在住の個人は、現地のデータ保護監督当局に苦情を申し立てる権利があります。EEA監督当局の一覧は欧州データ保護委員会のウェブサイトで確認できます。",
       "supervisory2": "Lumenshoreが将来正式にEU代理人を任命した場合、代理人の詳細はこのプライバシーポリシーに公開され、GDPR第27条(4)に従い関連する監督当局に通知されます。"
@@ -1272,7 +1334,7 @@
     },
     "introduction": {
       "heading": "Introduction",
-      "p1": "Welcome to LumenLingo. These Terms of Service (“Terms”) govern your use of the LumenLingo mobile application (“the App”) operated by LumenShore Ltd (“LumenShore”, “we”, “us”, or “our”).",
+      "p1": "LumenLingoへようこそ。本サービス利用規約（「規約」）は、イングランドおよびウェールズで登録されたLumenshore Limited（Company No. 09607326）（「Lumenshore」、「当社」）が運営するLumenLingoモバイルアプリケーション（「アプリ」）のご利用を規定します。",
       "p2": "By downloading, installing, or using LumenLingo, you agree to be bound by these Terms. If you don't agree with any part of these Terms, please don't use the App."
     },
     "acceptance": {
@@ -1304,14 +1366,15 @@
     "distanceSelling": {
       "heading": "通信販売と消費者の権利",
       "intro": "LumenLingoのサブスクリプションは遠隔契約です。以下の情報は、英国消費者契約規則２０１３およびEU消費者権利指令（２０１１/８３/EU）に準拠して提供されます：",
-      "li1": "<b>事業者情報</b> — LumenShore Ltd（会社番号０９６０７３２６）、イングランド・ウェールズ登録。VAT番号：GB 270411929。",
+      "li1": "<b>事業者情報</b> — Lumenshore Limited（会社番号０９６０７３２６）、イングランド・ウェールズ登録。VAT番号：GB 270411929。",
       "li2": "<b>サービス内容</b> — LumenLingoは、フラッシュカード、文法演習、単語構築ゲーム、サウンドスケープ、ビジュアルテーマを複数の言語ペアで提供するデジタル言語学習アプリケーションです。",
-      "li3": "<b>価格と支払い</b> — サブスクリプション価格はアプリおよびウェブサイトに税込みで表示されます。すべての支払いはApp Storeを通じてAppleが処理します。LumenShoreは支払いカード情報を取り扱いません。",
+      "li3": "<b>価格と支払い</b> — サブスクリプション価格はアプリおよびウェブサイトに税込みで表示されます。すべての支払いはApp Storeを通じてAppleが処理します。Lumenshoreは支払いカード情報を取り扱いません。",
       "li4": "<b>契約期間</b> — サブスクリプションは最低利用期間のない月額自動更新契約です。現在の請求期間終了の２４時間前までにキャンセルされない限り自動更新されます。",
-      "li5": "<b>クーリングオフ期間</b> — 消費者契約規則２０１３に基づき、遠隔契約には１４日間のキャンセル権があります。ただし、サブスクリプションを購入しデジタルコンテンツにアクセスすることで、即時実行に同意し、その請求期間のキャンセル権を放棄することを了承します。",
+      "li5": "<b>クーリングオフ期間</b> — Consumer Contracts Regulations 2013に基づき、お客様は理由を問わず14日間の通信販売契約解約権を有します。App Storeで購入を開始すると、Appleがサブスクリプション条件を提示します。購入を確認（Face ID、Touch ID、またはパスコードで）することにより、デジタルコンテンツの即時提供に明示的に同意し、デジタルコンテンツが利用可能になった時点で14日間の解約権を失うことを承認します。",
       "li6": "<b>解約</b> — 設定 → Apple ID → サブスクリプションから、いつでも将来の更新をキャンセルできます。解約は現在の請求期間の終了時に有効になります。その日までプレミアム機能へのアクセスは維持されます。",
-      "li7": "<b>返金</b> — すべての返金リクエストはAppleが処理します。返金をリクエストするには<refundLink>reportaproblem.apple.com</refundLink>をご利用ください。AppleがApp Storeのすべての購入の販売事業者であるため、LumenShoreは直接返金処理を行いません。",
-      "li8": "<b>苦情</b> — サービスに関する苦情がある場合は、<email>support@lumenshore.com</email>までご連絡ください。１４日以内にすべての苦情を解決するよう努めます。"
+      "li7": "<b>返金</b> — すべての返金リクエストはAppleが処理します。返金をリクエストするには<refundLink>reportaproblem.apple.com</refundLink>をご利用ください。AppleがApp Storeのすべての購入の販売事業者であるため、Lumenshoreは直接返金処理を行いません。",
+      "li8": "<b>苦情</b> — サービスに関する苦情がある場合は、<email>legal@lumenlingo.com</email>までご連絡ください。１４日以内にすべての苦情を解決するよう努めます。",
+      "li5a": "<b>同意の確認</b> — Apple IDのメールアドレスに配信されるApp Storeレシートを通じて、即時履行への同意の確認を送信します。これはCCR 2013 reg. 16に基づく耐久性のある媒体に該当します。"
     },
     "acceptableUse": {
       "heading": "Acceptable Use",
@@ -1325,7 +1388,7 @@
     },
     "intellectualProperty": {
       "heading": "Intellectual Property",
-      "p1": "All content within LumenLingo — including but not limited to flashcard content, translations, audio, soundscapes, visual designs, shader effects, animations, the LumenLingo name, and the LumenShore brand — is the intellectual property of LumenShore Ltd and is protected by copyright, trademark, and other intellectual property laws.",
+      "p1": "All content within LumenLingo — including but not limited to flashcard content, translations, audio, soundscapes, visual designs, shader effects, animations, the LumenLingo name, and the Lumenshore brand — is the intellectual property of Lumenshore Limited and is protected by copyright, trademark, and other intellectual property laws.",
       "p2": "Your subscription grants you a limited, non-exclusive, non-transferable, revocable licence to use the App for personal, non-commercial language-learning purposes. This licence does not include the right to:",
       "li1": "Reproduce, distribute, or publicly display any App content.",
       "li2": "Use any content for commercial purposes or in competing products.",
@@ -1335,8 +1398,8 @@
     },
     "userContent": {
       "heading": "User Content & Data",
-      "p1": "Your learning data (progress, preferences, practice history) is stored on your device and in your personal iCloud account. LumenShore does not claim ownership of your personal learning data.",
-      "p2UGC": "If we introduce features that allow you to submit, post, or share content (such as notes, comments, or shared word lists), you retain ownership of that content but grant LumenShore Ltd a non-exclusive, worldwide, royalty-free licence to use, display, and distribute it within the Service. You may request removal of your content at any time.",
+      "p1": "Your learning data (progress, preferences, practice history) is stored on your device and in your personal iCloud account. Lumenshore does not claim ownership of your personal learning data.",
+      "p2UGC": "If we introduce features that allow you to submit, post, or share content (such as notes, comments, or shared word lists), you retain ownership of that content but grant Lumenshore Limited a non-exclusive, worldwide, royalty-free licence to use, display, and distribute it within the Service. You may request removal of your content at any time.",
       "p3": "For more details on how we handle data, please review our <privacyLink>Privacy Policy</privacyLink>."
     },
     "disclaimers": {
@@ -1350,13 +1413,14 @@
     },
     "limitationOfLiability": {
       "heading": "Limitation of Liability",
-      "intro": "To the fullest extent permitted by applicable law, LumenShore Ltd shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, or goodwill arising from:",
+      "intro": "To the fullest extent permitted by applicable law, Lumenshore Limited shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, or goodwill arising from:",
       "li1": "Your use of (or inability to use) the App.",
       "li2": "Any errors, omissions, or inaccuracies in the content.",
       "li3": "Unauthorised access to your device or data (not caused by our negligence).",
       "li4": "Any interruption or cessation of the service.",
-      "cap": "Our total liability for any claim arising from these Terms or your use of LumenLingo shall not exceed the amount you paid for the App in the 12 months preceding the claim.",
-      "statutory": "本規約のいかなる内容も、当社の過失による死亡または身体的損害、詐欺または詐欺的不実表示、あるいは適用法により排除または制限できないその他の責任（2015年消費者権利法（英国）またはEU消費者権利指令に基づくお客様の法定権利を含む）に対する当社の責任を排除または制限するものではありません。"
+      "cap": "この利用規約またはLumenLingoの利用に起因するすべての請求に対するLumenshoreの総計賠償責任は次を超えないものとします：(a) 無料プランユーザー—ゼロ英ポンド（£0.00）、(b) 有料購読者—請求の原因となった事象の直前12か月間にお客様が実際に支払った購読料の総額。",
+      "statutory": "本規約のいかなる内容も、当社の過失による死亡または身体的損害、詐欺または詐欺的不実表示、あるいは適用法により排除または制限できないその他の責任（2015年消費者権利法（英国）またはEU消費者権利指令に基づくお客様の法定権利を含む）に対する当社の責任を排除または制限するものではありません。",
+      "crossReference": "この賠償責任の制限は、当社のエンドユーザーライセンス契約（EULA）の賠償責任の制限条項と整合しています。両方の契約が適用される場合、ユーザーにとってより有利な制限が優先されます。"
     },
     "termination": {
       "heading": "Termination",
@@ -1370,7 +1434,7 @@
     "governingLaw": {
       "heading": "準拠法、管轄権および裁判地",
       "lawHeading": "準拠法",
-      "law1": "本規約ならびに本規約またはその主題もしくは締結に起因もしくは関連するあらゆる紛争または請求（契約外の紛争または請求を含む）は、イングランドおよびウェールズの法律に準拠し、同法に従って解釈されるものとします。",
+      "law1": "本規約およびそれに起因するまたは関連するすべての紛争または請求（契約外の紛争または請求を含む）は、<b>イングランドおよびウェールズの法律</b>に準拠し、それに従って解釈されるものとします。",
       "law2": "この準拠法の選択は、お客様の居住国、本籍地、またはサービスにアクセスする国に関わらず適用され、別途適用されうる抵触法の原則にかかわらず適用されます。",
       "jurisdictionHeading": "専属管轄",
       "jurisdiction1": "イングランドおよびウェールズの裁判所は、本規約に起因または関連するあらゆる紛争を解決する専属管轄権を有するものとします。",
@@ -1393,14 +1457,16 @@
       "p2": "変更の投稿後にLumenLingoを継続してご利用いただくことにより、改訂された規約に同意したものとみなされます。変更に同意されない場合は、アプリの使用を中止し、有効なサブスクリプションをキャンセルしてください。",
       "versionHistory": "バージョン履歴",
       "v1": "<b>v1.0</b>（2026年3月23日）— 初版利用規約。",
-      "v1_1": "<b>v1.1</b>（2026年3月26日）— プライバシーポリシーから商業/規制コンプライアンスセクションを追加：VAT処理、EU VAT、国際税務義務、価格表示コンプライアンス、制裁・貿易コンプライアンス、暗号化輸出規制。集約データセクションをプライバシーポリシーへの相互参照に置換。準拠法の重複目次エントリを削除。商標帰属を統合。"
+      "v1_1": "<b>v1.1</b>（2026年3月26日）— プライバシーポリシーから商業/規制コンプライアンスセクションを追加：VAT処理、EU VAT、国際税務義務、価格表示コンプライアンス、制裁・貿易コンプライアンス、暗号化輸出規制。集約データセクションをプライバシーポリシーへの相互参照に置換。準拠法の重複目次エントリを削除。商標帰属を統合。",
+      "v1_2": "<b>v1.2</b>（2025年7月）— フェーズ2法的強化：会社名統一、階層別賠償責任上限をEULAと調和、Apple EULA参照による組み込み、アクセシビリティコミットメント追加、譲渡通知義務追加、不可抗力詳細追加。"
     },
     "contactUs": {
       "heading": "Contact Us",
       "intro": "If you have questions about these Terms or need to report a concern, please contact us:",
-      "email": "<b>Email</b>: <emailLink>hello@lumenshore.com</emailLink>",
-      "company": "<b>Company</b>: LumenShore Ltd, United Kingdom",
-      "responseTime": "We typically respond within 48 hours."
+      "email": "<b>Email</b>: <emailLink>legal@lumenlingo.com</emailLink>",
+      "company": "<b>Company</b>: Lumenshore Limited, United Kingdom",
+      "responseTime": "We typically respond within 48 hours.",
+      "address": "<b>登録住所</b>: Lumenshore Limited, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, England"
     },
     "aggregateData": {
       "heading": "集約データおよび匿名化データ",
@@ -1424,7 +1490,7 @@
       "coolingOffP2": "LumenLingoのサブスクリプションはAppleのApp Storeを通じて購入されるため、クーリングオフ期間はAppleの返金ポリシーに従ってAppleが管理します。この権利を行使する場合は、Appleを通じて返金をリクエストしてください。",
       "refundsHeading": "Apple経由の返金",
       "refundsP1": "LumenLingoのすべてのアプリ内購入およびサブスクリプションは、決済プロバイダーである<b>Apple</b>によって処理されます。返金リクエストはAppleのポリシーに従ってAppleが処理します。",
-      "refundsP2": "返金をリクエストするには、reportaproblem.apple.comにアクセスするか、Appleサポートにお問い合わせください。LumenShore Ltdはこのプロセスを全面的にサポートし、返金に関するお問い合わせについてAppleに協力します。",
+      "refundsP2": "返金をリクエストするには、reportaproblem.apple.comにアクセスするか、Appleサポートにお問い合わせください。Lumenshore Limitedはこのプロセスを全面的にサポートし、返金に関するお問い合わせについてAppleに協力します。",
       "statutory": "<b>本利用規約のいかなる条項も、消費者としてのお客様の法的権利に影響を与えるものではありません。</b>本利用規約とお客様の法的権利の間に矛盾がある場合は、お客様の法的権利が優先されます。"
     },
     "euConsumerRights": {
@@ -1432,7 +1498,7 @@
       "intro": "欧州連合の消費者である場合、EU消費者権利指令（2011/83/EU）に基づく追加の権利があります。これらの権利は当社の標準規約と併せて適用され、デジタルサービス購入時に特定の保護を提供します。",
       "preContractualHeading": "契約前情報",
       "preContractualP1": "ご購読前に、EU消費者権利指令第6条で要求されるすべての情報を提供します：",
-      "preContractualLi1": "<b>事業者の身元</b> — LumenShore Limited、イングランド・ウェールズ登記（会社番号 09607326）、VAT: GB 270411929",
+      "preContractualLi1": "<b>事業者の身元</b> — Lumenshore Limited、イングランド・ウェールズ登記（会社番号 09607326）、VAT: GB 270411929",
       "preContractualLi2": "<b>サービスの説明</b> — フラッシュカード、練習問題、適応学習を備えたAI搭載言語学習アプリ",
       "preContractualLi3": "<b>総額</b> — すべての価格は誾税込みで表示されます。サブスクリプション価格はAppleから動的に取得され、現地通貨で表示されます",
       "preContractualLi4": "<b>支払い方法</b> — すべての支払いはApp Storeを通じてAppleが処理します。隠れた料金や追加料金はありません",
@@ -1452,13 +1518,13 @@
       "heading": "地理的制限",
       "intro": "適用される制裁法およびApp Storeの配信ポリシーにより、特定の地域ではLumenLingoへのアクセスが制限される場合があります：",
       "bullet1": "LumenLingoはApple App Storeを通じてのみ配信されています。Appleは、キューバ、イラン、北朝鮮、シリア、およびクリミア、ドネツク、ルハンスク地域を含む包括的制裁対象国でのApp Storeアクセスを制限しています。",
-      "bullet2": "LumenShore Limitedは、英国、米国、またはEUの制裁対象となるいかなる管轄区域にも独自にアプリを配信していません。",
+      "bullet2": "Lumenshore Limitedは、英国、米国、またはEUの制裁対象となるいかなる管轄区域にも独自にアプリを配信していません。",
       "bullet3": "適用法によりアクセスが禁止されている管轄区域から本サービスにアクセスする場合、お客様自身の責任で行うものとし、現地の法律の遵守についてはお客様が単独で責任を負うものとします。",
       "closing": "当社は、法令遵守上そのような措置が必要であると当社の単独の裁量により判断した管轄区域において、本サービスへのアクセスを制限または終了する権利を留保します。"
     },
     "copyrightInfringement": {
       "heading": "Copyright Infringement & DMCA",
-      "p1": "LumenShore Ltd respects the intellectual property rights of others and expects users to do the same. If you believe that any content available through LumenLingo infringes your copyright, you may submit a notice of claimed infringement.",
+      "p1": "Lumenshore Limited respects the intellectual property rights of others and expects users to do the same. If you believe that any content available through LumenLingo infringes your copyright, you may submit a notice of claimed infringement.",
       "p2": "Your notice must include:",
       "li1": "A physical or electronic signature of the copyright owner or a person authorised to act on their behalf.",
       "li2": "Identification of the copyrighted work claimed to have been infringed.",
@@ -1466,10 +1532,10 @@
       "li4": "Your contact information, including address, telephone number, and email.",
       "li5": "A statement that you have a good-faith belief that the use of the material is not authorised by the copyright owner, its agent, or the law.",
       "li6": "A statement, under penalty of perjury, that the information in the notice is accurate and that you are authorised to act on behalf of the copyright owner.",
-      "p3": "Send copyright infringement notices to: <email>legal@lumenshore.com</email>",
-      "p4": "LumenShore will respond to valid takedown notices in accordance with the US Digital Millennium Copyright Act (17 U.S.C. § 512) and equivalent UK and EU legislation. Repeat infringers may have their accounts terminated.",
-      "p5": "Repeat Infringer Policy: LumenShore maintains a policy to terminate, in appropriate circumstances, the accounts of users who are repeat infringers of copyright. Three or more valid infringement notices against an account within any twelve-month period will result in permanent account termination.",
-      "p6": "Counter-notification: If you believe content was removed in error, you may submit a counter-notification to legal@lumenshore.com including: (i) identification of the removed material, (ii) a statement under penalty of perjury that the removal was a mistake, (iii) your name, address, and consent to jurisdiction, and (iv) your physical or electronic signature. Counter-notifications are processed in accordance with 17 U.S.C. § 512(g)."
+      "p3": "Send copyright infringement notices to: <email>legal@lumenlingo.com</email>",
+      "p4": "Lumenshore will respond to valid takedown notices in accordance with the US Digital Millennium Copyright Act (17 U.S.C. § 512) and equivalent UK and EU legislation. Repeat infringers may have their accounts terminated.",
+      "p5": "Repeat Infringer Policy: Lumenshore maintains a policy to terminate, in appropriate circumstances, the accounts of users who are repeat infringers of copyright. Three or more valid infringement notices against an account within any twelve-month period will result in permanent account termination.",
+      "p6": "Counter-notification: If you believe content was removed in error, you may submit a counter-notification to legal@lumenlingo.com including: (i) identification of the removed material, (ii) a statement under penalty of perjury that the removal was a mistake, (iii) your name, address, and consent to jurisdiction, and (iv) your physical or electronic signature. Counter-notifications are processed in accordance with 17 U.S.C. § 512(g)."
     },
     "contentProtection": {
       "heading": "Content Protection & Anti-Scraping",
@@ -1477,8 +1543,8 @@
       "li1": "Systematic or bulk downloading, copying, or redistribution of flashcard content, vocabulary lists, grammar explanations, example sentences, or audio files is strictly prohibited",
       "li2": "Any automated access that exceeds reasonable human browsing patterns constitutes unauthorised use and grounds for immediate account termination",
       "li3": "You may not compile, aggregate, or create derivative datasets from LumenLingo content for any purpose, including machine-learning model training",
-      "p2": "LumenShore employs technical protection measures to safeguard its content. You further agree that:",
-      "li4": "LumenShore employs rate limiting, access controls, and content-integrity measures; circumventing, bypassing, or disabling any of these constitutes unauthorised access",
+      "p2": "Lumenshore employs technical protection measures to safeguard its content. You further agree that:",
+      "li4": "Lumenshore employs rate limiting, access controls, and content-integrity measures; circumventing, bypassing, or disabling any of these constitutes unauthorised access",
       "li5": "Circumventing technical protection measures may violate the UK Computer Misuse Act 1990, the US Computer Fraud and Abuse Act (18 U.S.C. § 1030), and EU Directive 2009/24/EC on the legal protection of computer programs",
       "li6": "Automated bulk access may result in IP blocking, API key revocation, and account termination without prior notice"
     },
@@ -1487,65 +1553,70 @@
       "p1": "Data exported under GDPR Article 20 (data portability), the UK GDPR, or equivalent data-protection laws is provided for your personal use only. The following restrictions apply:",
       "li1": "You may not use exported data, or any data derived from or informed by your use of the Service, to create, assist in creating, train, or improve a competing product or service",
       "li2": "You may not licence, sell, distribute, or otherwise make exported LumenLingo content available to third parties for commercial purposes",
-      "li3": "This restriction does not limit your statutory data portability rights — it restricts only the commercial exploitation of LumenShore’s proprietary learning content accessed via your account",
+      "li3": "This restriction does not limit your statutory data portability rights — it restricts only the commercial exploitation of Lumenshore’s proprietary learning content accessed via your account",
       "p2": "This clause does not apply to data you independently created or obtained outside the Service, nor does it restrict any rights that cannot lawfully be excluded."
     },
     "enforcementRemedies": {
       "heading": "Enforcement & Remedies",
-      "p1": "LumenLingo’s content — including flashcard sets across 25 language pairs, grammar explanations, example sentences, and audio — constitutes a \"literary work\" and a protected \"database\" under the UK Copyright, Designs and Patents Act 1988 (CDPA) and the Copyright and Rights in Databases Regulations 1997. LumenShore asserts its moral rights of attribution and the right against derogatory treatment in respect of all original content.",
-      "p2": "You acknowledge that any breach of the Intellectual Property, Content Protection, or Data Export sections of these Terms may cause irreparable harm to LumenShore for which monetary damages would be inadequate. Accordingly:",
-      "li1": "LumenShore reserves the right to seek injunctive or other equitable relief in any court of competent jurisdiction, without the necessity of proving actual damages or posting a bond (to the extent permitted by applicable law)",
-      "li2": "LumenShore’s database right protection lasts 15 years from creation and is renewed with each substantial update to the content database",
+      "p1": "LumenLingo’s content — including flashcard sets across 25 language pairs, grammar explanations, example sentences, and audio — constitutes a \"literary work\" and a protected \"database\" under the UK Copyright, Designs and Patents Act 1988 (CDPA) and the Copyright and Rights in Databases Regulations 1997. Lumenshore asserts its moral rights of attribution and the right against derogatory treatment in respect of all original content.",
+      "p2": "You acknowledge that any breach of the Intellectual Property, Content Protection, or Data Export sections of these Terms may cause irreparable harm to Lumenshore for which monetary damages would be inadequate. Accordingly:",
+      "li1": "Lumenshore reserves the right to seek injunctive or other equitable relief in any court of competent jurisdiction, without the necessity of proving actual damages or posting a bond (to the extent permitted by applicable law)",
+      "li2": "Lumenshore’s database right protection lasts 15 years from creation and is renewed with each substantial update to the content database",
       "li3": "These remedies are in addition to — and not in lieu of — any other rights or remedies available at law or in equity",
-      "p3": "Nothing in this section limits any rights or remedies that LumenShore may have under applicable intellectual property, competition, or data-protection law."
+      "p3": "Nothing in this section limits any rights or remedies that Lumenshore may have under applicable intellectual property, competition, or data-protection law."
     },
     "disputeResolution": {
       "heading": "紛争解決",
-      "intro": "ほとんどの懸念事項は迅速かつ友好的に解決できると考えています。本規約またはサービスの利用に関連してお客様とLumenShoreの間で紛争が生じた場合、以下の手続きが適用されます：",
+      "intro": "ほとんどの懸念事項は迅速かつ友好的に解決できると考えています。本規約またはサービスの利用に関連してお客様とLumenshoreの間で紛争が生じた場合、以下の手続きが適用されます：",
       "step1Heading": "ステップ1 — 非公式解決",
-      "step1P1": "正式な手続きを開始する前に、お客様の懸念事項の詳細な説明とともに<emailLink>hello@lumenshore.com</emailLink>までご連絡ください。お客様のご連絡を受領してから<b>30日以内</b>に誠意をもって問題解決のための協議を行うことをお約束します。",
+      "step1P1": "正式な手続きを開始する前に、お客様の懸念事項の詳細な説明とともに<emailLink>legal@lumenlingo.com</emailLink>までご連絡ください。お客様のご連絡を受領してから<b>30日以内</b>に誠意をもって問題解決のための協議を行うことをお約束します。",
       "step2Heading": "ステップ2 — 調停",
       "step2P1": "非公式な協議で30日以内に紛争が解決しない場合、いずれの当事者も、相互に合意した調停人による調停を提案することができます。調停は任意であり、別段の合意がない限り、費用は均等に分担されます。",
       "step3Heading": "ステップ3 — 裁判手続き",
       "step3P1": "誠意ある非公式解決および調停を試みた後も紛争が未解決の場合、いずれの当事者も裁判手続きを開始することができます。以下の消費者保護の例外を条件として、イングランドおよびウェールズの裁判所が専属管轄権を有します。",
       "odrHeading": "EU オンライン紛争解決",
-      "odrP1": "欧州連合の消費者の方は、欧州委員会のオンライン紛争解決（ODR）プラットフォームもご利用いただけます：<odrLink>https://ec.europa.eu/consumers/odr/</odrLink>。ODR目的の当社メールアドレスはhello@lumenshore.comです。",
+      "odrP1": "欧州連合の消費者の方は、欧州委員会のオンライン紛争解決（ODR）プラットフォームもご利用いただけます：<odrLink>https://ec.europa.eu/consumers/odr/</odrLink>。ODR目的の当社メールアドレスはlegal@lumenlingo.comです。",
       "arbitrationHeading": "米国ユーザー向け仲裁",
       "arbitrationP1": "米国にお住まいの場合、上記の非公式解決手続きで解決できない紛争は、裁判所ではなく<b>拘束力のある個別仲裁</b>によって解決されます。ただし、お客様の請求が対象となる場合は少額裁判所に請求を提起することができます。仲裁はアメリカ仲裁協会（AAA）の消費者仲裁規則に基づいて実施されます。",
-      "arbitrationP2": "本規約を最初に承諾してから30日以内にhello@lumenshore.comに書面による通知を送付することにより、この仲裁条項から<b>オプトアウト</b>する権利があります。オプトアウトした場合、紛争はイングランドおよびウェールズの裁判所で解決されます。",
+      "arbitrationP2": "本規約を最初に承諾してから30日以内にlegal@lumenlingo.comに書面による通知を送付することにより、この仲裁条項から<b>オプトアウト</b>する権利があります。オプトアウトした場合、紛争はイングランドおよびウェールズの裁判所で解決されます。",
       "classActionHeading": "集団訴訟の放棄",
-      "classActionP1": "適用法で許容される最大限の範囲で、お客様とLumenShoreは、紛争解決手続きが個別にのみ行われ、集団訴訟、統合訴訟、または代表訴訟として行われないことに同意します。この放棄がお客様の管轄区域で執行不能と判断された場合、本セクションの残りの条項は完全に有効です。",
+      "classActionP1": "適用法で許容される最大限の範囲で、お客様とLumenshoreは、紛争解決手続きが個別にのみ行われ、集団訴訟、統合訴訟、または代表訴訟として行われないことに同意します。この放棄がお客様の管轄区域で執行不能と判断された場合、本セクションの残りの条項は完全に有効です。",
       "consumerNote": "欧州連合または英国の消費者の方は、本セクションのいかなる内容も、お住まいの国の裁判所に手続きを提起する権利を含む、お客様の法定権利に影響を与えるものではありません。"
     },
     "educationalDisclaimer": {
       "heading": "教育コンテンツに関する免責事項",
       "p1": "LumenLingoは語学学習支援ツールおよび補助ツールです。認定教育機関ではなく、認定資格を付与するものではありません。",
       "p2": "流暢さや特定の習熟度レベルを保証するものではありません。コンテンツは一般的な学習目的で提供されており、専門的な翻訳、通訳、または学術的評価のために依拠すべきではありません。",
-      "p3": "お客様は、期待値が消費者向けデジタルコンテンツサブスクリプションに見合ったものであることを認めます。LumenShoreは、本サービスがお客様の特定の学習目標、スケジュール、または専門的ニーズに適合することを保証するものではありません。"
+      "p3": "お客様は、期待値が消費者向けデジタルコンテンツサブスクリプションに見合ったものであることを認めます。Lumenshoreは、本サービスがお客様の特定の学習目標、スケジュール、または専門的ニーズに適合することを保証するものではありません。"
     },
     "forceMajeure": {
       "heading": "不可抗力",
-      "p1": "LumenShoreは、自然災害、政府の措置、インターネットまたは電気通信の障害、パンデミック、市民の暴動、または第三者サービスプロバイダーの停止を含むがこれらに限定されない、合理的な制御を超えた原因から生じる履行の不履行または遅延について責任を負いません。",
-      "p2": "不可抗力事象の期間中、本規約に基づく当社の義務は当該事象の期間中停止されます。当該事象が90日間連続して続く場合、いずれの当事者も相手方に対する責任なく契約を終了することができます。"
+      "p1": "いずれの当事者も、本規約に基づく義務の不履行または遅延が、自然災害、政府の措置、インターネットまたは通信の障害、パンデミック、市民の騒乱、または第三者サービスプロバイダーの障害を含むがこれらに限定されない、合理的な制御を超えた原因に起因する場合、責任を負わないものとします（それぞれ「不可抗力事象」）。",
+      "p2": "不可抗力事象の影響を受けた当事者は、事象の性質と予想される期間を記載して、速やかに書面で相手方に通知するものとします。",
+      "p3": "影響を受けた当事者は、不可抗力事象の影響を軽減し、合理的に実行可能な限り早期に義務の履行を再開するために合理的な努力を払うものとします。",
+      "p4": "不可抗力事象の期間中、影響を受けた当事者の義務はその期間中停止されます。",
+      "p5": "不可抗力事象が90日間連続して継続する場合、いずれの当事者も相手方に書面で通知することにより契約を終了することができます。かかる終了の場合、有料サブスクリプション会員は終了日以降の残りの前払いサブスクリプション期間について日割り返金を受けます。"
     },
     "indemnification": {
       "heading": "補償",
-      "p1": "お客様は、以下に起因するすべての請求、損害、損失、および費用（合理的な弁護士費用を含む）について、LumenShore Limited、その取締役、役員、従業員、および代理人を免責し、防御し、損害を与えないことに同意します：",
-      "li1": "お客様による本規約の違反。",
-      "li2": "お客様による適用法または第三者の権利の侵害。",
-      "li3": "お客様による本サービスの使用。",
-      "li4": "お客様が本サービスに送信するコンテンツ。"
+      "p1": "お客様は、以下に起因するすべての請求、損害、損失、費用（合理的な弁護士費用を含む）に対して、Lumenshore Limited、その取締役、役員、従業員、代理人を補償し、防御し、害のないようにすることに同意します：",
+      "li1": "お客様による本規約の違反；",
+      "li2": "お客様による適用法または第三者の権利の侵害；",
+      "li3": "お客様がサービスを通じて提出したコンテンツ。",
+      "p2": "この補償は、請求が当社の過失、当社の契約違反、または当社が提供した欠陥のあるデジタルコンテンツに起因する場合には適用されません。",
+      "p3": "英国または欧州連合の消費者の場合、この補償条項はConsumer Rights Act 2015または同等の消費者保護法に基づくお客様の法定権利に影響を与えません。この条項のいかなる部分も、当社自身の過失に起因する損失について当社を補償することをお客様に要求するものではありません。",
+      "p4": "Lumenshoreは、お客様の補償義務の対象となる事項の独占的な防御と管理を引き受ける権利を留保し、その場合、お客様はLumenshoreに協力することに同意します。"
     },
     "usArbitration": {
       "heading": "米国仲裁合意",
-      "p1": "お客様が米国居住者である場合、お客様およびLumenShore Limitedは、以下に規定する場合を除き、すべての紛争を裁判所ではなく拘束力のある個別仲裁により解決することに同意します。",
+      "p1": "お客様が米国居住者である場合、お客様およびLumenshore Limitedは、以下に規定する場合を除き、すべての紛争を裁判所ではなく拘束力のある個別仲裁により解決することに同意します。",
       "p2": "仲裁は、米国仲裁協会（AAA）またはJAMSの消費者仲裁規則に基づいて管理されます。手続きは、リモートで、書面により、または両当事者が合意した場所で対面で行うことができます。",
       "p3": "仲裁人の決定は最終的かつ拘束力があり、管轄権を有する裁判所で判決として登録することができます。連邦仲裁法（9 U.S.C. §§ 1-16）がこの仲裁条項の執行可能性を規律します。",
       "classActionHeading": "集団訴訟および陪審裁判の放棄",
-      "classActionP1": "お客様およびLUMENSHOREは、各当事者が個人の資格においてのみ相手方に対して請求を行うことができ、いかなる集団訴訟、統合訴訟、または代表訴訟の原告またはクラスメンバーとしては行わないことに同意します。",
+      "classActionP1": "お客様とLumenshoreは、それぞれが相手方に対する請求を個人の立場でのみ提起でき、いかなる集団訴訟、統合訴訟、または代表訴訟においても<b>原告またはクラスメンバーとしてではない</b>ことに同意します。",
       "classActionP2": "お客様は、仲裁の対象とならない紛争について陪審裁判を受ける権利を放棄します。",
       "optOutHeading": "30日間のオプトアウト権",
-      "optOutP1": "<emailLink>hello@lumenshore.com</emailLink>に書面で通知を送ることにより、本規約を最初に承諾してから30日以内にこの仲裁合意からオプトアウトできます。",
+      "optOutP1": "<emailLink>legal@lumenlingo.com</emailLink>に書面で通知を送ることにより、本規約を最初に承諾してから30日以内にこの仲裁合意からオプトアウトできます。",
       "smallClaimsHeading": "少額裁判所の例外",
       "smallClaimsP1": "いずれの当事者も、請求が当該裁判所の規則に基づいて適格である場合、管轄権を有する少額裁判所に個別の請求を提起することができます。",
       "exceptionsHeading": "仲裁の例外",
@@ -1554,29 +1625,30 @@
     },
     "tieredLiabilityCaps": {
       "heading": "責任上限",
-      "freeP1": "無料プランでサービスを利用する場合、サービスに起因するすべての請求に対するLumenShoreの累積責任総額は10ポンド（£10）を超えないものとします。",
-      "paidP1": "有料サブスクリプションでサービスを利用する場合、LumenShoreの累積責任総額は、請求の原因となった事象の直前12ヶ月間にお客様がLumenShoreに実際に支払った金額を超えないものとします。",
-      "iapNote": "Apple App Store経由の購入の場合、LumenShoreに支払われた金額とは、Appleの手数料控除後にLumenShoreが受領した純収益を意味します。"
+      "freeP1": "無料プランでサービスを利用する場合、サービスに起因するすべての請求に対するLumenshoreの累積責任総額は10ポンド（£10）を超えないものとします。",
+      "paidP1": "有料サブスクリプションでサービスを利用する場合、Lumenshoreの累積責任総額は、請求の原因となった事象の直前12ヶ月間にお客様がLumenshoreに実際に支払った金額を超えないものとします。",
+      "iapNote": "Apple App Storeを通じて行われた購入の場合、責任の上限はお客様が支払った総額に基づくものであり、Appleの手数料控除後にLumenshoreが受け取った純額ではありません。"
     },
     "damageExclusions": {
-      "heading": "間接損害の排除",
-      "p1": "適用法により許容される最大限の範囲で、LUMENSHOREは以下のいかなる責任も負いません：データの損失、逸失利益、収益の損失、貯蓄の損失、信用の喪失、事業の中断、代替サービスの費用、付随的損害、間接損害、特別損害、懲罰的損害。",
-      "p2": "この排除は、LumenShoreがそのような損害の可能性を通知されていた場合、および本規約に定める限定的な救済がその本質的な目的を達成できない場合にも適用されます。"
+      "heading": "結果的損害の免責",
+      "p1": "適用法で許可される最大限の範囲で、Lumenshoreは以下について責任を負いません：データの損失、逸失利益、収益の損失、貯蓄の損失、のれんの喪失、事業の中断、代替サービスの費用、付随的損害、結果的損害、特別損害、懲罰的損害。",
+      "p2": "この免責は、Lumenshoreがそのような損害の可能性を知らされていた場合でも、また本書に定める限定的な救済がその本質的な目的を達成しなかった場合でも適用されます。",
+      "p3": "本セクションのいかなる条項も、過失による死亡または人身傷害、詐欺または詐欺的不実表示、またはConsumer Rights Act 2015またはその他の適用法の下で除外または制限できない責任を除外または制限するものではありません。"
     },
     "warrantyDisclaimer": {
       "heading": "保証の免責",
-      "p1": "本サービスは、商品性、特定目的への適合性、非侵害、正確性、完全性、信頼性、可用性、適時性、セキュリティの暗黙の保証を含むがこれに限定されない、明示または黙示を問わず、いかなる種類の保証もなく「現状のまま」「利用可能な限り」で提供されます。",
+      "p1": "本サービスは、商品性、特定目的への適合性、非侵害、正確性、完全性、信頼性、可用性、適時性、またはセキュリティの黙示的保証を含むがこれらに限定されない、明示的または黙示的ないかなる保証もなく、「現状のまま」および「利用可能な限りで」提供されます。",
       "p2": "本サービスが中断なく、エラーなく、ウイルスなく動作すること、または欠陥が修正されることを保証しません。",
       "ukCarveout": "本規約のいかなる内容も、2015年消費者権利法（英国）またはお客様の管轄区域における同等の消費者保護法に基づくお客様の法的権利に影響を及ぼすものではありません。"
     },
     "userReliance": {
       "heading": "ユーザーの依存に対する免責",
-      "p1": "LumenShoreは、本サービスを通じて提供されるコンテンツに依拠してユーザーが行った決定や行動について責任を負いません。",
+      "p1": "Lumenshoreは、本サービスを通じて提供されるコンテンツに依拠してユーザーが行った決定や行動について責任を負いません。",
       "p2": "ユーザーは、いかなる目的であれ翻訳や言語情報の正確性を自ら確認する責任を負います。"
     },
     "thirdPartyServices": {
       "heading": "第三者サービス",
-      "p1": "LumenShoreは、Apple、Vercel、Sentry、またはその他の決済処理業者を含む第三者サービスの行為または不作為について責任を負いません。",
+      "p1": "Lumenshoreは、Apple、Vercel、Sentry、またはその他の決済処理業者を含む第三者サービスの行為または不作為について責任を負いません。",
       "p2": "AppleはすべてのiOSアプリ内課金の販売者です。App Storeでの購入に関する請求上の紛争はAppleにお問い合わせください。"
     },
     "serviceAvailability": {
@@ -1587,8 +1659,8 @@
     },
     "entireAgreement": {
       "heading": "完全合意",
-      "p1": "本規約は、当社のプライバシーポリシー、エンドユーザーライセンス契約、およびCookieポリシーとともに、本サービスに関するお客様とLumenShore Limitedとの間の完全な合意を構成します。",
-      "p2": "本契約は、書面または口頭を問わず、お客様とLumenShoreとの間のすべての先行合意、表明、および了解に優先します。",
+      "p1": "本規約は、当社のプライバシーポリシー、エンドユーザーライセンス契約、およびCookieポリシーとともに、本サービスに関するお客様とLumenshore Limitedとの間の完全な合意を構成します。",
+      "p2": "本契約は、書面または口頭を問わず、お客様とLumenshoreとの間のすべての先行合意、表明、および了解に優先します。",
       "p3": "本規約の口頭による変更は効力を有しません。"
     },
     "severability": {
@@ -1598,18 +1670,19 @@
     },
     "assignment": {
       "heading": "譲渡",
-      "p1": "LumenShoreは、本規約および本規約に基づき付与された権利およびライセンスを、お客様の同意なく、後継者、関連会社、または事業もしくは資産の全部または実質的全部の取得者に譲渡または移転することができます。",
-      "p2": "お客様は、当社の事前の書面による同意なく、本規約に基づく権利または義務を譲渡または移転することはできません。"
+      "p1": "Lumenshoreは、本規約および本規約に基づき付与された権利およびライセンスを、お客様の同意なく、後継者、関連会社、または事業もしくは資産の全部または実質的全部の取得者に譲渡または移転することができます。",
+      "p2": "お客様は、当社の事前の書面による同意なく、本規約に基づく権利または義務を譲渡または移転することはできません。",
+      "p3": "当社が本契約またはその権利を承継体に譲渡する場合（例えば合併、買収、または資産売却に関連して）、譲渡が発効してから30日以内にメールまたはアプリ内通知でお知らせいたします。新しい主体の下での継続を希望しない場合、通知から30日以内にサブスクリプションを解約する権利があります。"
     },
     "waiver": {
       "heading": "権利放棄",
-      "p1": "LumenShoreが本規約のいずれかの権利または条項を行使しなかった場合でも、その権利または条項の放棄とはみなされません。",
+      "p1": "Lumenshoreが本規約のいずれかの権利または条項を行使しなかった場合でも、その権利または条項の放棄とはみなされません。",
       "p2": "本規約の違反に対する権利放棄は、その後の違反に対する権利放棄を構成しません。",
-      "p3": "権利放棄は、LumenShoreの権限を有する代表者が書面で行わない限り効力を有しません。"
+      "p3": "権利放棄は、Lumenshoreの権限を有する代表者が書面で行わない限り効力を有しません。"
     },
     "noPartnership": {
       "heading": "当事者の関係",
-      "p1": "本規約のいかなる内容も、お客様とLumenShoreとの間に代理、パートナーシップ、合弁事業、または雇用関係を創設するものと解釈されません。",
+      "p1": "本規約のいかなる内容も、お客様とLumenshoreとの間に代理、パートナーシップ、合弁事業、または雇用関係を創設するものと解釈されません。",
       "p2": "いずれの当事者も、相手方を拘束したり、相手方のために義務を負う権限を有しません。"
     },
     "electronicCommunications": {
@@ -1646,33 +1719,24 @@
       "p1": "本サービスの利用にあたり、お客様は以下に同意するものとします：",
       "li1": "適用されるすべての地方、州、国内および国際的な法令を遵守すること。",
       "li2": "アプリケーションまたはその一部のリバースエンジニアリング、逆コンパイル、または逆アセンブルを試みないこと。",
-      "li3": "LumenShoreの事前の書面による許可なく、本サービスのコンテンツをスクレイピング、コピー、または再配布しないこと。",
+      "li3": "Lumenshoreの事前の書面による許可なく、本サービスのコンテンツをスクレイピング、コピー、または再配布しないこと。",
       "li4": "本サービス、そのサーバー、または接続されたネットワークに干渉または妨害しないこと。",
       "li5": "自動化された手段（ボット、スクレイパー、クローラーを含む）を使用して本サービスにアクセスしないこと。",
       "li6": "不正または悪意のある目的で複数のアカウントを作成しないこと。",
       "li7": "他の個人または団体になりすまし、または個人もしくは団体との関係を虚偽に表明もしくは誤表示しないこと。",
       "li8": "アカウント認証情報の機密性を維持し、アカウントにおけるすべての活動に対する責任を負うこと。"
     },
-    "userIndemnification": {
-      "heading": "ユーザーによる補償",
-      "p1": "お客様は、以下に起因または関連するあらゆる請求、損害、損失、費用および経費（合理的な弁護士費用を含む）について、LumenShore Limited、その取締役、役員、従業員および代理人を補償、防御し、免責することに同意するものとします：",
-      "li1": "お客様による本規約の違反。",
-      "li2": "お客様による適用法または第三者の権利の侵害。",
-      "li3": "お客様による本サービスの利用。",
-      "li4": "お客様が本サービスに送信したコンテンツ。",
-      "p2": "LumenShoreは、お客様の補償対象となる事項について、独占的な防御および管理を引き受ける権利を留保します。その場合、お客様は利用可能な防御手段の主張においてLumenShoreに協力することに同意するものとします。"
-    },
     "breachConsequences": {
       "heading": "違反の結果",
-      "p1": "お客様が本規約のいずれかの条項に違反した場合、LumenShoreはその独自の裁量により以下を行うことができます：",
+      "p1": "お客様が本規約のいずれかの条項に違反した場合、Lumenshoreはその独自の裁量により以下を行うことができます：",
       "li1": "事前の通知なく直ちにお客様の本サービスへのアクセスを停止または終了すること。",
       "li2": "残りのサブスクリプション期間に対するいかなる払い戻しも保留すること。",
       "li3": "知的財産権の侵害またはその他の本規約違反に対し、差止命令またはエクイティ上の救済を求めること。",
-      "p2": "本条に定める救済措置は、LumenShoreが法律上またはエクイティ上利用し得る他の救済措置に追加されるものであり、これらに代替するものではありません。"
+      "p2": "本条に定める救済措置は、Lumenshoreが法律上またはエクイティ上利用し得る他の救済措置に追加されるものであり、これらに代替するものではありません。"
     },
     "serviceModification": {
       "heading": "サービス変更の権利",
-      "p1": "LumenShoreは、事前の通知なく、いつでもサービスの機能またはコンテンツを変更、更新、または中止する権利を留保します。",
+      "p1": "Lumenshoreは、事前の通知なく、いつでもサービスの機能またはコンテンツを変更、更新、または中止する権利を留保します。",
       "p2": "言語ペア、ティア、機能、またはコンテンツの追加または削除は、本規約の違反を構成しません。",
       "p3": "当社は、合理的な事前通知をもって、将来のサブスクリプション期間の価格を変更する場合があります。価格変更は、現在のサブスクリプション期間には影響しません。"
     },
@@ -1684,13 +1748,14 @@
     },
     "serviceTermination": {
       "heading": "終了の権利",
-      "p1": "LumenShoreは、以下の状況においてお客様のサービスへのアクセスを終了または制限することができます：",
+      "p1": "Lumenshoreは、以下の状況においてお客様のサービスへのアクセスを終了または制限することができます：",
       "li1": "本規約の違反。",
       "li2": "不正または悪意のある活動。",
       "li3": "長期間の非活動（合理的な通知後）。",
-      "li4": "LumenShoreの独自の裁量により、合理的な通知をもって。",
+      "li4": "Lumenshoreの独自の裁量により、合理的な通知をもって。",
       "p2": "お客様は、アカウントを削除し、アクティブなサブスクリプションをキャンセルすることにより、いつでもサービスの利用を終了できます。",
-      "p3": "終了時に、サービスを使用するライセンスは直ちに取り消され、お客様のデータは当社の保持ポリシーに従って削除されます。"
+      "p3": "終了時に、サービスを使用するライセンスは直ちに取り消され、お客様のデータは当社の保持ポリシーに従って削除されます。",
+      "p4": "改善可能な違反について、当社は書面にて違反を通知し、14日間の改善期間を設けます。14日以内に違反が改善されない場合、当社はお客様のサービスへのアクセスを終了することができます。この改善期間は以下の違反には適用されません：違法行為、詐欺、他のユーザーへの危害、または本規約の繰り返しの違反。"
     },
     "termsModification": {
       "heading": "規約変更の権利",
@@ -1704,16 +1769,15 @@
       "heading": "終了の効果",
       "p1": "両当事者の既得権利および義務は終了後も存続します。",
       "p2": "ユーザーが開始した終了の場合、未使用のサブスクリプション期間に対する払い戻しは行われません。ただし、適用される消費者保護法またはAppleの払い戻しポリシーによって要求される場合を除きます。",
-      "p3": "LumenShoreが正当な理由なくお客様のアクセスを終了した場合、お客様は現在のサブスクリプション期間の未使用分について日割りの払い戻しを受けます。",
+      "p3": "Lumenshoreが正当な理由なくお客様のアクセスを終了した場合、お客様は現在のサブスクリプション期間の未使用分について日割りの払い戻しを受けます。",
       "p4": "お客様のデータは、当社のプライバシーポリシーに記載された保持スケジュールに従って削除されます。"
     },
     "claimsLimitation": {
-      "heading": "請求の出訴期限",
-      "p1": "本規約または本サービスに起因または関連するいかなる請求も、請求が発生した日から1（一）年以内に提起されなければなりません。",
-      "p2": "この期間内に請求を提起しなかった場合、当該請求の永久的な放棄とみなされます。",
-      "p3": "この出訴期限がお客様の法域において執行不能である場合、適用法が許容する最短の出訴期限が適用されます。",
-      "p4": "この出訴期限は、人身傷害に関する請求、または詐欺もしくは故意の不正行為に起因する請求には適用されず、これらは適用される法定の出訴期限に従うものとします。",
-      "p5": "出訴期限は、請求者が請求を知った時点、または合理的に知り得べきであった時点から開始しますが、いかなる場合も請求の原因となった行為または不作為から2（二）年を超えないものとします。"
+      "heading": "請求の時効期間",
+      "p1": "以下の例外を条件として、本規約またはサービスに起因する請求は、請求が発生した日から2年以内、または請求の根拠を知った（もしくは合理的に知るべきであった）日のいずれか遅い方から提起する必要があります。",
+      "p2": "この時効期間は以下の請求には適用されません：(a) 過失による死亡または人身傷害、(b) 詐欺または詐欺的不実表示、(c) 適用法の下でより短い時効期間が執行できない請求。",
+      "p3": "この条項は、お客様の管轄区域の法律に基づく法定の時効期間に影響を与えません。英国では、1980年出訴期限法が契約違反または不法行為に基づく請求に6年の時効期間を定めており、本規約のいかなる条項も消費者に対するその期間を短縮しません。",
+      "p4": "欧州連合の消費者である場合、お客様の国内法に基づく適用される時効期間が完全に適用されます。"
     },
     "refundPolicy": {
       "heading": "返金・解約ポリシー",
@@ -1734,16 +1798,15 @@
       "coolingOff3": "明示的な同意が得られない場合、14日間の撤回権は、その期間中のサービスの使用に関わらず完全に有効です。"
     },
     "assumptionOfRisk": {
-      "heading": "リスクの引き受けおよび請求の免除",
-      "riskHeading": "リスクの引き受け",
-      "risk1": "お客様は、本サービスのご利用がお客様の自己責任であることを明示的に認め、同意するものとします。",
-      "risk2": "お客様は、本サービスの利用に関連するすべてのリスクを引き受けます。これには、翻訳および言語コンテンツの正確性、学習目標に対するコンテンツの適合性、デバイスの故障やクラウド同期の問題によるデータ損失、サービスの中断または終了、機能またはコンテンツの変更、および職業的または個人的な判断のためにコンテンツに依存することに関連するリスクが含まれますが、これらに限定されません。",
-      "releaseHeading": "請求の免除",
-      "release1": "適用法が許容する最大限の範囲において、お客様は、本サービスの利用に起因する、またはいかなる形で関連するあらゆる種類および性質の請求、要求、および損害（既知および未知を問わず）について、Lumenshore Limited、その取締役、役員、従業員、代理人、承継人、および譲受人を免除し、永久に免責するものとします。",
-      "release2": "お客様がカリフォルニア州の居住者である場合、カリフォルニア州民法第1542条を放棄するものとします。同条は次のように規定しています：「一般的な免除は、免除の実行時に債権者または免除当事者が自己に有利に存在することを知らないまたは疑わない請求であって、知っていれば債務者または免除当事者との和解に重大な影響を与えたであろう請求には及ばない。」",
-      "carveOutHeading": "法定保護",
-      "carveOut1": "本条のいかなる規定も、適用法の下で排除または制限できない責任を排除または制限するものではなく、消費者権利法2015（UK）またはEU消費者権利指令に基づくお客様の法定の権利を含みます。",
-      "carveOut2": "本免除は、Lumenshoreの過失による死亡または人身傷害に対する請求、または詐欺もしくは詐欺的不実表示に対する請求には適用されません。"
+      "heading": "リスクの引受け",
+      "riskHeading": "教育ツールの確認",
+      "risk1": "LumenLingoは補助的な語学学習ツールであり、プロの語学指導、認定コース、または認定翻訳サービスの代替ではないことを認めます。",
+      "risk2": "教育成果は個人の努力、事前の知識、学習スタイル、およびその他の制御できない要因によって異なる場合があります。結果が保証されないこと、およびサービスが一般的な学習支援として提供されることを受け入れます。",
+      "releaseHeading": "請求の制限",
+      "release1": "適用法で許可される最大限の範囲で、サービスの利用はお客様自身のリスクで行われ、Lumenshoreの責任は本規約の責任制限セクションに記載された通りに制限されることに同意します。",
+      "carveOutHeading": "法的保護",
+      "carveOut1": "本セクションのいかなる条項も、Consumer Rights Act 2015、EU消費者権利指令、またはその他の適用される消費者保護法に基づくお客様の法定権利を除外または制限するものではありません。",
+      "carveOut2": "本セクションは、Lumenshoreの過失による死亡または人身傷害、または詐欺もしくは詐欺的不実表示に関する請求には適用されません。"
     },
     "thirdPartyDisclaimer": {
       "heading": "第三者コンテンツ、リンクおよびサービス",
@@ -1783,7 +1846,7 @@
     "preSuitNotice": {
       "heading": "訴訟前通知および義務的交渉",
       "noticeHeading": "通知要件",
-      "notice1": "Lumenshoreに対する法的手続きまたは仲裁を開始する前に、まずlegal@lumenshore.comおよび登録事務所（Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA）への郵送により、書面による紛争通知（以下「通知」）をLumenshoreに送付しなければなりません。",
+      "notice1": "Lumenshoreに対する法的手続きまたは仲裁を開始する前に、まずlegal@lumenlingo.comおよび登録事務所（Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA）への郵送により、書面による紛争通知（以下「通知」）をLumenshoreに送付しなければなりません。",
       "notice2": "通知には以下を含める必要があります：正式な氏名、本サービスに関連するメールアドレス、請求の詳細な説明、違反されたとされる本規約の具体的条項、求める具体的救済、およびお客様の署名または電子的同等物。",
       "negotiationHeading": "義務的交渉期間",
       "negotiation1": "お客様の通知を受領した後、いずれかの当事者が法的手続きまたは仲裁を開始する前に、両当事者は60日間誠実に交渉を行うものとします。",
@@ -1834,13 +1897,13 @@
       "applePolicy2": "サブスクリプションを購入することで、本規約に加えてAppleの利用規約に同意したことになります。本規約とAppleの決済処理に関するポリシーの間に矛盾がある場合、Appleのポリシーが優先されます。",
       "applePolicy3": "当社はお客様の決済情報にアクセスできません。請求に関するお問い合わせ、返金リクエスト、または決済に関する紛争は、Appleサポートに直接お問い合わせください。",
       "taxPricingHeading": "税金・VATコンプライアンス",
-      "taxPricing1": "当社ウェブサイトの表示価格は英ポンド（GBP）で、英国の付加価値税（VAT）標準税率20%を含んでいます。LumenShore Limitedは英国でVAT登録されています（VAT登録番号：GB 270411929）。実際の請求額は、お住まいの国、現地の税率、およびお住まいの地域でAppleが使用する通貨によって異なる場合があります。",
+      "taxPricing1": "当社ウェブサイトの表示価格は英ポンド（GBP）で、英国の付加価値税（VAT）標準税率20%を含んでいます。Lumenshore Limitedは英国でVAT登録されています（VAT登録番号：GB 270411929）。実際の請求額は、お住まいの国、現地の税率、およびお住まいの地域でAppleが使用する通貨によって異なる場合があります。",
       "taxPricing2": "アプリ内購入については、Appleが登録販売者であり、VAT、GST、売上税を含むすべての適用税金の計算、彴収、納付を現地法に従って担当します。AppleはEU顧客向けにEU VATワンストップショップ（OSS）規則を適用します。当社はサブスクリプション料金に対する税金を別途彴収・納付することはありません。",
       "dataProtectionHeading": "データ保護とプライバシー",
       "dataProtection1": "サービスの利用は、英国一般データ保護規則（UK GDPR）およびデータ保護法2018に従って個人データの収集、使用、保護方法を説明する当社のプライバシーポリシーにも準拠します。",
       "dataProtection2": "当社は、サービスの提供、法的義務の遵守、およびユーザー体験の向上に必要な範囲でのみ個人データを処理します。プライバシーポリシーに記載のとおり、データのアクセス、訂正、削除、移行の権利があります。",
       "indemnificationHeading": "規制上の補償",
-      "indemnification1": "サービス利用中の適用法令または規制の違反から生じるあらゆる請求、損失、または費用について、LumenShore Limitedを補償し免責することに同意します。",
+      "indemnification1": "サービス利用中の適用法令または規制の違反から生じるあらゆる請求、損失、または費用について、Lumenshore Limitedを補償し免責することに同意します。",
       "indemnification2": "この補償義務は、アカウントまたは本規約の終了後も存続します。"
     },
     "vatCompliance": {
@@ -1904,11 +1967,11 @@
     },
     "sanctionsCompliance": {
       "heading": "制裁および貿易コンプライアンス",
-      "intro": "LumenShore Limitedは英国で登記された会社（会社番号 09607326）であり、Apple App Storeを通じてLumenLingoを世界中に配信しています。当社は、事業を展開するすべての管轄区域において、適用される制裁制度への準拠を維持しています。",
+      "intro": "Lumenshore Limitedは英国で登記された会社（会社番号 09607326）であり、Apple App Storeを通じてLumenLingoを世界中に配信しています。当社は、事業を展開するすべての管轄区域において、適用される制裁制度への準拠を維持しています。",
       "ukHeading": "英国制裁遵守",
       "ukP1": "当社は2018年制裁およびマネーロンダリング防止法および英国金融制裁実施事務局（OFSI）が管理する規則を遵守しています。消費者向け語学学習アプリとして、LumenLingoは非戦略的ソフトウェアに分類され、ほとんどの貿易制限から免除されています。当社はOFSIの統合制裁リストを確認し、制裁対象の個人または団体に知りながらサービスを提供することはありません。",
       "usHeading": "米国OFAC制裁",
-      "usP1": "LumenLingoは米国を拠点とするApple App Storeを通じて配信されているため、米国外国資産管理局（OFAC）の制裁が配信に適用されます。Appleは既に、キューバ、イラン、北朝鮮、シリア、およびクリミア、ドネツク、ルハンスク地域など、包括的制裁対象国でのApp Storeアクセスを制限しています。LumenShoreは制裁対象地域へ独自に配信することはありません。",
+      "usP1": "LumenLingoは米国を拠点とするApple App Storeを通じて配信されているため、米国外国資産管理局（OFAC）の制裁が配信に適用されます。Appleは既に、キューバ、イラン、北朝鮮、シリア、およびクリミア、ドネツク、ルハンスク地域など、包括的制裁対象国でのApp Storeアクセスを制限しています。Lumenshoreは制裁対象地域へ独自に配信することはありません。",
       "euHeading": "EU制裁模組み",
       "euP1": "当社は、デジタルサービスの提供に影響を及ぼす可能性のある変更、特にアラビア語およびウクライナのユーザーベースに関連する地域について、EU制裁リストを監視しています。Apple App Storeの配信制限はEU制裁要件に沿っています。当社はEUにより制裁された個人または団体にサービスを提供しません。",
       "ukraineHeading": "ウクライナ — サービスの利用可能性",
@@ -1931,6 +1994,36 @@
       "frenchP1": "フランスではANSSI規則に基づき、暗号化ソフトウェアの輸入に申告が必要です。標準的なHTTPS/TLS通信とシステム提供の暗号化のみを使用するアプリケーションは、一般的に申告要件から免除されます。LumenLingoはAppleプラットフォーム提供の暗号化のみを使用し、カスタムの暗号化機能は実装していません。",
       "appStoreHeading": "App Store Connect輸出コンプライアンス",
       "appStoreP1": "LumenLingoの輸出コンプライアンスはAppleのApp Store Connectを通じて申告されています。アプリは暗号化（HTTPS、iCloud）を使用していますが、システム提供の暗号化技術のみに依存しているため、免除の対象となります。"
+    },
+    "ukAdr": {
+      "heading": "英国代替紛争解決（ADR）",
+      "p1": "2015年消費者紛争のための代替紛争解決規則に基づき、代替紛争解決についてお知らせする義務があります。",
+      "p2": "Lumenshore Limitedは、認定ADR機関を通じた代替紛争解決に参加する意思があります。関連するADRプロバイダーは：",
+      "provider": "<b>Centre for Effective Dispute Resolution (CEDR)</b>",
+      "providerWebsite": "ウェブサイト: <cedrLink>https://www.cedr.com</cedrLink>",
+      "providerAddress": "住所: 100 St Paul's Churchyard, London, EC4M 8BU",
+      "p3": "ADRに問題を付託する前に、まず<emailLink>legal@lumenlingo.com</emailLink>までご連絡ください。直接苦情を解決するよう努めます。",
+      "p4": "EU消費者の場合、欧州委員会のオンライン紛争解決（ODR）プラットフォーム<odrLink>https://ec.europa.eu/consumers/odr/</odrLink>もご利用いただけます。"
+    },
+    "systemRequirements": {
+      "heading": "システム要件",
+      "p1": "LumenLingo iOSアプリを使用するには、お使いのデバイスが以下の最小要件を満たしている必要があります：",
+      "li1": "<b>オペレーティングシステム</b>: iOS 17.0以降",
+      "li2": "<b>デバイス</b>: iPhoneまたはiPad",
+      "li3": "<b>インターネット接続</b>: 初期セットアップ、コンテンツのダウンロード、認証、サブスクリプション管理にはアクティブなインターネット接続が必要です。一部の機能（以前にダウンロードしたコンテンツのフラッシュカード復習）はオフラインで利用できる場合があります。",
+      "li4": "<b>ストレージ</b>: アプリに約100MBの空き容量、およびダウンロードコンテンツ用の追加容量",
+      "li5": "<b>iCloud</b>: デバイス間の学習進捗同期にはiCloudアカウントが必要です。iCloud同期はオプションです。単一デバイスでは同期なしで完全に機能します。",
+      "p2": "LumenLingoウェブサイトにアクセスするには、JavaScriptが有効なモダンウェブブラウザ（Chrome、Safari、Firefox、またはEdge — 現行バージョンまたは1つ前のバージョン）が必要です。"
+    },
+    "appleLicensedEula": {
+      "heading": "AppleライセンスアプリケーションEULA",
+      "p1": "Apple App Storeの規約で要求される範囲において、本契約はAppleのライセンスアプリケーションエンドユーザー使用許諾契約を参照により組み込みます。詳細は<appleEulaLink>https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</appleEulaLink>でご覧いただけます。",
+      "p2": "本規約とAppleのライセンスアプリケーションEULAの間に矛盾がある場合、その矛盾の範囲内ではAppleのEULAが優先されますが、AppleのEULAの範囲内の事項に限ります。"
+    },
+    "accessibility": {
+      "heading": "アクセシビリティ",
+      "p1": "当社はすべてのユーザーが利用できるようLumenLingoのアクセシビリティの向上に努めています。ウェブサイトではWCAG 2.1 レベルAAへの準拠、iOSアプリではAppleのHuman Interface Guidelinesに従っています。詳細は<accessibilityLink>アクセシビリティステートメント</accessibilityLink>をご覧ください。",
+      "p2": "アクセシビリティの障壁を見つけた場合は、<emailLink>legal@lumenlingo.com</emailLink>までお問い合わせください。報告された問題に迅速に対処いたします。"
     }
   },
   "Blog": {
@@ -2032,6 +2125,24 @@
         "purpose": "セッションリプレイに同意した場合、Sentryが内部セッション状態をsessionStorageに保存します。",
         "duration": "現在のブラウザセッションのみ。",
         "data": "内部Sentryセッション識別子。すべてのインタラクションは匿名化されます。"
+      },
+      "sentryKeys": {
+        "heading": "Sentry Session Replay キー",
+        "intro": "Session Replayに同意すると、Sentry SDK（@sentry/nextjs v10.x）は以下のキーをsessionStorageに保存します：",
+        "replaySession": {
+          "heading": "sentryReplaySession",
+          "category": "Session Replay（同意が必要）",
+          "purpose": "リプレイセッション識別子、セグメントカウンター、開始タイムスタンプ、最終アクティビティタイムスタンプを保存します。同じブラウザタブ内のリプレイセグメントを関連付けるために使用されます。",
+          "duration": "現在のブラウザセッションのみ——タブを閉じると削除されます。",
+          "data": "セッションID（UUID）、開始と最終アクティビティのISOタイムスタンプ、セグメントカウンターを含むJSONオブジェクト。個人データは含まれません。"
+        },
+        "sentryUser": {
+          "heading": "__sentry_user",
+          "category": "エラーモニタリング（同意が必要）",
+          "purpose": "エラーモニタリングの同意が有効な場合、Sentryは同じセッション内のエラーを関連付けるために匿名ユーザーコンテキストを保存することがあります。",
+          "duration": "現在のブラウザセッションのみ。",
+          "data": "ランダムな匿名識別子。名前、メールアドレス、IPアドレスなどの個人データは保存されません。"
+        }
       }
     },
     "serviceWorker": {
@@ -2053,7 +2164,7 @@
       "locale": {
         "heading": "言語設定",
         "category": "必須",
-        "purpose": "next-intl国際化ライブラリが言語設定Cookieを設定する場合があります。",
+        "purpose": "国際化ライブラリnext-intlは、訪問間で選択した言語を記憶するためにロケール設定Cookie（NEXT_LOCALE）を設定します。",
         "duration": "削除されるまで永続。",
         "data": "2文字のロケールコード。ファーストパーティ。"
       },
@@ -2071,6 +2182,11 @@
         "heading": "Sentry",
         "description": "エラー監視とセッションリプレイ。<b>エラー報告</b>は同意時に送信。<b>セッションリプレイ</b>は明示的な同意時のみ記録。",
         "link": "Sentryプライバシーポリシー"
+      },
+      "speedInsights": {
+        "heading": "Vercel Speed Insights",
+        "description": "実際の訪問者セッションからCore Web Vitals（LCP、FID、CLS、TTFB、INP）を測定するリアルユーザーパフォーマンスモニタリング。<b>Cookie不使用</b>——デバイスにCookieや永続的な識別子は保存されません。Speed Insightsデータは、アナリティクスカテゴリに同意した場合にのみ収集されます。データは集約・匿名化され、個々のページ読み込みを特定のユーザーに結びつけることはできません。",
+        "link": "Vercel プライバシーポリシー"
       }
     },
     "manage": {
@@ -2082,15 +2198,16 @@
     "updates": {
       "heading": "ポリシーの更新",
       "p1": "新しいストレージメカニズムを追加した場合、このCookieポリシーを更新することがあります。",
-      "version": "<b>現在の同意バージョン：</b> 1.0",
+      "version": "<b>現在の同意バージョン：</b> 1.1",
       "versionHistory": "バージョン履歴",
-      "v1": "<b>v1.0</b>（2025年7月）— Cookieポリシー初版公開。"
+      "v1": "<b>v1.0</b>（2025年7月）— Cookieポリシー初版公開。",
+      "v1_1": "<b>v1.1</b>（2025年7月）— フェーズ2法的強化：ICO苦情権追加、同意説明責任追加、Vercel Speed Insights個別開示、Sentryキー列挙、曖昧表現削除、会社名統一。"
     },
     "contact": {
       "heading": "お問い合わせ",
       "intro": "このCookieポリシーについてご質問がある場合：",
-      "email": "<b>メール：</b> <emailLink>hello@lumenshore.com</emailLink>",
-      "company": "<b>会社：</b> LumenShore Ltd（Company No. 09607326）",
+      "email": "<b>メール：</b> <emailLink>legal@lumenlingo.com</emailLink>",
+      "company": "<b>会社:</b> Lumenshore Limited（会社番号: 09607326）",
       "responseTime": "通常48時間以内に回答いたします。"
     },
     "table": {
@@ -2114,7 +2231,21 @@
       "p4": "<b>非必須の項目</b>（アナリティクス、エラー監視、セッションリプレイ）は、お客様が肯定的な同意を与えた後にのみ有効化されます。拒否された場合、これらのカテゴリーは完全に無効のままになります。",
       "p5": "当社の同意メカニズムはICOのガイダンスに準拠するよう設計されています：事前チェックのボックスなし、「Cookieウォール」なし、いつでも簡単に撤回でき、各カテゴリーについて明確な情報が提供されます。"
     },
-    "updateBannerMessage": "Cookieポリシーを更新しました。"
+    "updateBannerMessage": "Cookieポリシーを更新しました。",
+    "icoComplaint": {
+      "heading": "苦情を申し立てる権利",
+      "p1": "当社のCookieまたは類似技術の使用がお客様の権利を侵害しているとお考えの場合、英国の独立したデータ保護監督当局であるInformation Commissioner’s Office（ICO）に苦情を申し立てる権利があります。",
+      "icoWebsite": "<b>ウェブサイト:</b> <icoLink>ico.org.uk</icoLink>",
+      "icoPhone": "<b>ヘルプライン:</b> 0303 123 1113",
+      "icoAddress": "<b>住所:</b> Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF, United Kingdom",
+      "p2": "ICOにご連絡いただく前に、まず当社にご相談ください。<emailLink>legal@lumenlingo.com</emailLink>までご連絡いただければ、48時間以内に回答いたします。"
+    },
+    "consentAccountability": {
+      "heading": "同意の証明方法（GDPR第7条第1項）",
+      "p1": "お客様の同意設定は、お使いのデバイスのlocalStorageキー<code>ll_cookie_consent</code>にローカルに保存されます。当社は同意記録をサーバーに送信しません——これはデータ最小化のための意図的な選択です。",
+      "p2": "当社は技術的制御を通じて説明責任を果たします：分析データ（Vercel Analytics、Vercel Speed Insights）およびエラー監視データ（Sentry）は、対応するローカル同意フラグが有効な場合にのみ送信されます。お客様のセッションの分析またはエラー監視の記録が存在すること自体が、同意が与えられた証拠となります。同意フラグが設定されていない場合、非必須のデータはデバイスから送信されません。",
+      "p3": "このアプローチは、管理者が同意を証明できなければならないというGDPR第7条第1項の要件を満たしつつ、収集する個人データを最小化します。"
+    }
   },
   "Eula": {
     "meta": {
@@ -2129,12 +2260,12 @@
     },
     "introduction": {
       "heading": "はじめに",
-      "p1": "This End-User Licence Agreement (\"EULA\") is a binding legal agreement between you (\"User\", \"you\") and LumenShore Ltd, a company registered in England and Wales (Company No. 09607326), with its registered office at Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA (\"LumenShore\", \"we\", \"us\").",
+      "p1": "This End-User Licence Agreement (\"EULA\") is a binding legal agreement between you (\"User\", \"you\") and Lumenshore Limited, a company registered in England and Wales (Company No. 09607326), with its registered office at Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA (\"Lumenshore\", \"we\", \"us\").",
       "p2": "This EULA governs your use of the LumenLingo mobile application (\"App\") available through the Apple App Store. By downloading, installing, or using the App, you agree to be bound by the terms of this EULA. If you do not agree, do not download, install, or use the App."
     },
     "licenceGrant": {
       "heading": "ライセンスの付与",
-      "intro": "Subject to the terms of this EULA, LumenShore grants you a limited, non-exclusive, non-transferable, revocable licence to:",
+      "intro": "Subject to the terms of this EULA, Lumenshore grants you a limited, non-exclusive, non-transferable, revocable licence to:",
       "li1": "Download and install the App on Apple-branded devices that you own or control.",
       "li2": "Use the App for your personal, non-commercial language-learning purposes.",
       "li3": "Access features and content according to your membership tier (Free, Pro, Elite, or Royal).",
@@ -2151,8 +2282,8 @@
     },
     "contentOwnership": {
       "heading": "コンテンツの所有権",
-      "p1": "All content within the App — including but not limited to flashcard content, grammar explanations, vocabulary databases, game mechanics, animations, soundscapes, visual effects, and user interface designs — is the intellectual property of LumenShore Ltd or its licensors and is protected by copyright, trademark, and other intellectual property laws.",
-      "p2": "You retain ownership of your personal learning data, including progress records, preferences, and practice history. This data is stored locally on your device and is not transmitted to LumenShore servers."
+      "p1": "All content within the App — including but not limited to flashcard content, grammar explanations, vocabulary databases, game mechanics, animations, soundscapes, visual effects, and user interface designs — is the intellectual property of Lumenshore Limited or its licensors and is protected by copyright, trademark, and other intellectual property laws.",
+      "p2": "You retain ownership of your personal learning data, including progress records, preferences, and practice history. This data is stored locally on your device and is not transmitted to Lumenshore servers."
     },
     "restrictions": {
       "heading": "制限事項",
@@ -2168,7 +2299,7 @@
     "termination": {
       "heading": "契約の終了",
       "p1": "This EULA is effective from when you first download or use the App and continues until terminated. You may terminate it at any time by deleting the App and all copies from your devices.",
-      "p2": "LumenShore may terminate this EULA immediately, without prior notice, if you breach any of its terms. Upon termination:",
+      "p2": "Lumenshore may terminate this EULA immediately, without prior notice, if you breach any of its terms. Upon termination:",
       "li1": "All rights and licences granted to you under this EULA will cease immediately.",
       "li2": "You must stop all use of the App and delete all copies from your devices.",
       "li3": "Any accrued rights or obligations (including limitation of liability) shall survive termination.",
@@ -2176,26 +2307,29 @@
     },
     "warranties": {
       "heading": "保証の免責",
-      "p1": "The App is provided on an \"AS IS\" and \"AS AVAILABLE\" basis, without warranties of any kind, either express or implied. To the maximum extent permitted by applicable law, LumenShore disclaims all warranties, including but not limited to:",
+      "p1": "The App is provided on an \"AS IS\" and \"AS AVAILABLE\" basis, without warranties of any kind, either express or implied. To the maximum extent permitted by applicable law, Lumenshore disclaims all warranties, including but not limited to:",
       "li1": "Merchantability, fitness for a particular purpose, and non-infringement.",
       "li2": "That the App will be uninterrupted, error-free, secure, or free of viruses or harmful components.",
       "li3": "That the language content, translations, or educational material will be completely accurate or current.",
       "li4": "That learning outcomes or proficiency improvements will be achieved.",
-      "p2": "You acknowledge that language learning is a complex process and results may vary. LumenLingo is a supplementary learning tool and is not a substitute for formal language instruction."
+      "p2": "You acknowledge that language learning is a complex process and results may vary. LumenLingo is a supplementary learning tool and is not a substitute for formal language instruction.",
+      "craSavings": "Consumer Rights Act 2015に基づくお客様の法的権利は、この免責事項の影響を受けません。Lumenshoreが提供するデジタルコンテンツは、満足のいく品質であり、特定の目的に適合し、記述通りでなければなりません（CRA 2015、第34-36条）。これらの権利は除外できません。"
     },
     "liability": {
       "heading": "責任の制限",
-      "p1": "To the maximum extent permitted by applicable law, in no event shall LumenShore, its directors, employees, partners, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation:",
+      "p1": "To the maximum extent permitted by applicable law, in no event shall Lumenshore, its directors, employees, partners, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation:",
       "li1": "Loss of profits, data, use, goodwill, or other intangible losses.",
       "li2": "The cost of procurement of substitute goods or services.",
       "li3": "Any damage resulting from unauthorised access to or alteration of your data.",
       "li4": "Any other matter relating to the App.",
-      "cap": "LumenShore's total aggregate liability for all claims arising out of or relating to this EULA or your use of the App shall not exceed: (a) for Free tier users — zero pounds sterling (£0.00); (b) for paid subscribers — the total subscription fees paid by you in the twelve (12) months preceding the claim."
+      "cap": "Lumenshore's total aggregate liability for all claims arising out of or relating to this EULA or your use of the App shall not exceed: (a) for Free tier users — zero pounds sterling (£0.00); (b) for paid subscribers — the total subscription fees paid by you in the twelve (12) months preceding the claim.",
+      "statutory": "本EULAのいかなる条項も、以下に関する当社の責任を除外または制限するものではありません：(a) 当社の過失による死亡または人身傷害、(b) 詐欺または詐欺的不実表示、(c) Consumer Rights Act 2015の下で除外または制限できない責任、(d) 法律により除外または制限できないその他の責任。",
+      "crossReference": "この賠償責任の制限は、当社の利用規約の賠償責任の制限条項と整合しています。両方の契約が適用される場合、ユーザーにとってより有利な制限が優先されます。"
     },
     "assumptionOfRisk": {
       "heading": "リスクの引受け",
       "p1": "You expressly acknowledge and agree that your use of the App is at your sole risk. You are responsible for ensuring that the App is suitable for your language-learning needs.",
-      "p2": "LumenShore shall not be liable for any data loss that may occur as a result of device failure, operating system updates, App deletion, or any other circumstances beyond our reasonable control. You are encouraged to regularly back up your device."
+      "p2": "Lumenshore shall not be liable for any data loss that may occur as a result of device failure, operating system updates, App deletion, or any other circumstances beyond our reasonable control. You are encouraged to regularly back up your device."
     },
     "governingLaw": {
       "heading": "準拠法",
@@ -2205,23 +2339,26 @@
     "appleTerms": {
       "heading": "Apple固有の条件",
       "intro": "The following terms apply to your use of the App obtained through the Apple App Store:",
-      "li1": "This EULA is between you and LumenShore only, and not with Apple Inc. (\"Apple\"). Apple is not a party to this EULA.",
+      "li1": "This EULA is between you and Lumenshore only, and not with Apple Inc. (\"Apple\"). Apple is not a party to this EULA.",
       "li2": "Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App.",
       "li3": "In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the App (if any) to you. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App.",
       "li4": "Apple is not responsible for addressing any claims by you or any third party relating to the App or your possession and/or use of the App, including but not limited to: (a) product liability claims; (b) any claim that the App fails to conform to any applicable legal or regulatory requirement; and (c) claims arising under consumer protection, privacy, or similar legislation.",
       "li5": "In the event of any third-party claim that the App or your possession and use of the App infringes that third party's intellectual property rights, Apple shall not be responsible for the investigation, defence, settlement, or discharge of any such intellectual property infringement claim.",
-      "li6": "Apple and its subsidiaries are third-party beneficiaries of this EULA, and upon your acceptance of the terms and conditions of this EULA, Apple will have the right (and will be deemed to have accepted the right) to enforce this EULA against you as a third-party beneficiary thereof."
+      "li6": "Apple and its subsidiaries are third-party beneficiaries of this EULA, and upon your acceptance of the terms and conditions of this EULA, Apple will have the right (and will be deemed to have accepted the right) to enforce this EULA against you as a third-party beneficiary thereof.",
+      "crossReference": "これらのApple固有の条項は、当社の<termsLink>利用規約</termsLink>におけるAppleライセンスアプリケーションEULAの参照による組み込みを補完するものです。"
     },
     "changes": {
       "heading": "本EULAの変更",
-      "p1": "LumenShore reserves the right to modify this EULA at any time. If we make material changes, we will notify you through the App or by updating the \"Last updated\" date at the top of this page.",
-      "p2": "Your continued use of the App after changes are posted constitutes your acceptance of the revised EULA. If you do not agree to the changes, you must stop using the App and delete it from your devices."
+      "p1": "Lumenshore reserves the right to modify this EULA at any time. If we make material changes, we will notify you through the App or by updating the \"Last updated\" date at the top of this page.",
+      "p2": "Your continued use of the App after changes are posted constitutes your acceptance of the revised EULA. If you do not agree to the changes, you must stop using the App and delete it from your devices.",
+      "versionHistory": "バージョン履歴",
+      "v1_1": "<b>v1.1</b>（2025年7月）— フェーズ2法的強化：会社名統一、CRA 2015法定除外追加、消費者権利追加、輸出コンプライアンス追加、オープンソース謝辞追加、賠償責任整合性ノート追加。"
     },
     "contact": {
       "heading": "お問い合わせ",
       "intro": "本EULAに関するご質問がございましたら、お問い合わせください：",
-      "email": "<b>Email:</b> <emailLink>hello@lumenshore.com</emailLink>",
-      "company": "<b>Company:</b> LumenShore Ltd (Company No. 09607326)",
+      "email": "<b>Email:</b> <emailLink>legal@lumenlingo.com</emailLink>",
+      "company": "<b>Company:</b> Lumenshore Limited (Company No. 09607326)",
       "address": "<b>Address:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom",
       "responseTime": "通常48時間以内にご返信いたします。"
     },
@@ -2243,8 +2380,40 @@
       "coolingOffP2": "LumenLingoはAppleのApp Storeを通じて配信されるため、クーリングオフ期間はAppleの返金ポリシーに従ってAppleが管理します。この権利を行使する場合は、Appleを通じて返金をリクエストしてください。",
       "refundsHeading": "Apple経由の返金",
       "refundsP1": "LumenLingoのすべてのアプリ内購入およびサブスクリプションは、決済プロバイダーである<b>Apple</b>によって処理されます。返金リクエストはAppleのポリシーに従ってAppleが処理します。",
-      "refundsP2": "返金をリクエストするには、reportaproblem.apple.comにアクセスするか、Appleサポートにお問い合わせください。LumenShore Ltdはこのプロセスを全面的にサポートし、返金に関するお問い合わせについてAppleに協力します。",
+      "refundsP2": "返金をリクエストするには、reportaproblem.apple.comにアクセスするか、Appleサポートにお問い合わせください。Lumenshore Limitedはこのプロセスを全面的にサポートし、返金に関するお問い合わせについてAppleに協力します。",
       "statutory": "<b>本ライセンス契約のいかなる条項も、消費者としてのお客様の法的権利に影響を与えるものではありません。</b>本契約とお客様の法的権利の間に矛盾がある場合は、お客様の法的権利が優先されます。"
+    },
+    "exportCompliance": {
+      "heading": "輸出コンプライアンス",
+      "p1": "お客様は、米国または英国政府の禁輸措置の対象国、または「テロ支援」国に所在していないことを表明し保証します。",
+      "p2": "お客様は、米国または英国政府の禁止または制限対象者リストに記載されていないことを表明し保証します。",
+      "p3": "お客様は、UK Export Control Act 2002、US Export Administration Regulations（EAR）、およびその他の適用される貿易コンプライアンス要件を含む、すべての適用される輸出入法規を遵守することに同意します。",
+      "p4": "本アプリは輸出規制の対象となりうる暗号化技術を使用しています。本アプリはEARに基づき大衆市場暗号化製品としてENC/Unrestricted分類に該当します。"
+    },
+    "openSource": {
+      "heading": "オープンソースソフトウェア",
+      "p1": "本アプリにはオープンソースソフトウェアコンポーネントが含まれており、それぞれ独自のライセンス条件に従います。これらのライセンス条件は、本EULAを超える追加の権利をお客様に付与する場合があります。",
+      "p2": "本アプリでは以下のオープンソースライブラリを使用しています：",
+      "li1": "<b>Nuke</b>（画像読み込み） — MITライセンス",
+      "li2": "<b>PhoneNumberKit</b>（電話番号解析） — MITライセンス",
+      "li3": "<b>RevenueCat Purchases</b>（サブスクリプション管理） — MITライセンス",
+      "li4": "<b>Clerk iOS SDK</b>（認証） — MITライセンス",
+      "p3": "各ライセンスの全文はアプリ内の設定 > オープンソースライセンスで、またはlegal@lumenlingo.comまでお問い合わせいただくことでご覧いただけます。"
+    },
+    "appUpdates": {
+      "heading": "アプリのアップデート",
+      "p1": "Lumenshoreは随時、アプリのアップデート、パッチ、バグ修正、および新機能をリリースすることがあります。これらのアップデートはApple App Storeを通じて自動的に配信される場合があります。",
+      "p2": "自動アップデートはiOS設定のApp Store > 自動ダウンロードで管理できます。最新のセキュリティパッチと機能を確保するために、自動アップデートを有効にしておくことを推奨します。",
+      "p3": "Lumenshoreがアプリの提供を終了する場合、有料サブスクリプション会員には少なくとも30日前に通知します。この通知期間中に学習データをエクスポートし、前払い期間の日割り返金のためにサブスクリプションをキャンセルすることができます。",
+      "p4": "アップデート後のアプリの継続使用は、そのアップデートに含まれる変更の承諾となります。変更に同意しない場合、アプリを削除し、残りの前払いサブスクリプション期間の日割り返金を要求することが救済手段です。"
+    },
+    "dataHandling": {
+      "heading": "終了時のデータ取り扱い",
+      "p1": "本EULAの終了またはアプリの削除前に、アプリの設定 > データエクスポート機能を使用して学習データをエクスポートすることをお勧めします。",
+      "p2": "アプリをアンインストールすると、学習進捗、設定、練習履歴を含むすべてのローカルデータがデバイスから完全に削除されます。",
+      "p3": "iCloudデータ（iCloud同期が有効だった場合）はお客様の管理下に残ります。設定 > [お名前] > iCloud > ストレージ管理 > LumenLingoからいつでも管理または削除できます。",
+      "p4": "サブスクリプションの資格はAppleが管理しています。サブスクリプションをキャンセルするには、iOSデバイスの設定 > [お名前] > サブスクリプションにアクセスしてください。",
+      "p5": "UK GDPR第17条に基づく正式なデータ消去要求については、当社のプライバシーポリシーを参照するか、データリクエストページからリクエストを送信してください。"
     }
   },
   "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
@@ -2312,7 +2481,7 @@
     },
     "contact": {
       "heading": "メールをご希望ですか？",
-      "p1": "<emailLink>hello@lumenshore.com</emailLink> に直接メールをお送りいただくことでも権利を行使できます。お名前、データに関連付けられたメールアドレス、リクエストの種類をご記入ください。",
+      "p1": "<emailLink>legal@lumenlingo.com</emailLink> に直接メールをお送りいただくことでも権利を行使できます。お名前、データに関連付けられたメールアドレス、リクエストの種類をご記入ください。",
       "responseTime": "通常48時間以内にご回答いたします。"
     }
   },
@@ -2334,7 +2503,7 @@
     "addressLine2": "Humberstone Lane",
     "addressLine3": "Leicester, England, LE4 9HA",
     "contactHeading": "連絡先",
-    "contactEmail": "メール：hello@lumenshore.com",
+    "contactEmail": "メール：legal@lumenlingo.com",
     "vatHeading": "VAT情報",
     "vatNumber": "VAT登録番号：GB 270411929",
     "responsibleHeading": "コンテンツ責任者（§55 Abs. 2 RStV）",
@@ -2361,7 +2530,7 @@
     "publisherJurisdiction": "イングランド・ウェールズ登記",
     "publisherAddress": "Windsor House, Cornwall Road, Harrogate, HG1 2PW, 英国",
     "publisherVat": "VAT: GB 270411929",
-    "publisherEmail": "メール: hello@lumenshore.com",
+    "publisherEmail": "メール: legal@lumenlingo.com",
     "publisherWebsite": "ウェブサイト: https://lumenshore.com",
     "directorHeading": "発行責任者",
     "directorName": "LumenShore Limited ディレクター",
@@ -2372,7 +2541,7 @@
     "intellectualHeading": "知的財産",
     "intellectualP1": "本サイトの全コンテンツ（テキスト、画像、グラフィックス、ロゴ、アイコン、ソフトウェア）はLumenShore Limitedまたはそのライセンサーの財産であり、知的財産法により保護されています。",
     "disputeHeading": "紛争解決",
-    "disputeP1": "紛争が生じた場合、欧州委員会のオンライン紛争解決プラットフォーム（https://ec.europa.eu/consumers/odr）を利用するか、hello@lumenshore.comまでご連絡ください。"
+    "disputeP1": "紛争が生じた場合、欧州委員会のオンライン紛争解決プラットフォーム（https://ec.europa.eu/consumers/odr）を利用するか、legal@lumenlingo.comまでご連絡ください。"
   },
   "CommunityGuidelines": {
     "breadcrumb": "Community Guidelines",
@@ -2648,7 +2817,7 @@
     "contact": {
       "heading": "連絡先",
       "p1": "セキュリティ報告：<emailLink>security@lumenshore.com</emailLink>",
-      "p2": "一般サポート：<supportLink>support@lumenshore.com</supportLink>",
+      "p2": "一般サポート：<supportLink>legal@lumenlingo.com</supportLink>",
       "p3": "希望言語：英語"
     }
   },
@@ -2749,7 +2918,7 @@
       "securityHeading": "アカウントセキュリティに対するユーザーの責任",
       "security1": "お客様は、アカウントの資格情報の機密性とセキュリティを維持する唯一の責任を負います。",
       "security2": "お客様は、お客様によって承認されたかどうかにかかわらず、アカウントで発生するすべての活動に責任を負います。",
-      "security3": "アカウントへの不正アクセスまたは不正使用があった場合は、直ちにLumenshore（hello@lumenshore.com）に通知する必要があります。",
+      "security3": "アカウントへの不正アクセスまたは不正使用があった場合は、直ちにLumenshore（legal@lumenlingo.com）に通知する必要があります。",
       "security4": "アカウントセキュリティの維持を怠ったことに起因するアカウントへの不正アクセスから生じるいかなる損失についても、Lumenshoreは責任を負いません。",
       "familyHeading": "ファミリー共有",
       "family1": "Apple Family Sharingは、利用可能でサポートされている場合、世帯の他のメンバーとサービスへのアクセスを共有する唯一の承認された方法です。",
@@ -2789,7 +2958,7 @@
       "heading": "EUデジタルサービス法（DSA）への準拠",
       "contactHeading": "連絡先",
       "contact1": "EU規則2022/2065（デジタルサービス法）に従い、EU当局およびユーザーの法的・規制上のお問い合わせのための指定連絡先は以下のとおりです：",
-      "contact2": "Lumenshore Limited、hello@lumenshore.com",
+      "contact2": "Lumenshore Limited、legal@lumenlingo.com",
       "contact3": "この連絡先は、サービスの受益者およびDSAの適用に関する通信のために管轄当局が使用できます。通信は英語で行うことができます。",
       "intermediaryHeading": "サービスの分類",
       "intermediary1": "LumenLingoは、独自の教育コンテンツ（フラッシュカード、文法説明、フレーズ、オーディオ）をユーザーに直接提供する語学学習アプリケーションです。Lumenshoreはサービス内のすべてのコンテンツの発行者です。",
@@ -2798,7 +2967,7 @@
       "transparencyHeading": "透明性情報（DSA第14条）",
       "transparency1": "コンテンツモデレーション：LumenLingoはユーザー生成コンテンツをホストしていません。すべてのコンテンツはLumenshoreが作成、キュレーション、公開しています。ユーザー投稿のコンテンツモデレーションは必要なく、実施されていません。",
       "transparency2": "アルゴリズムによる意思決定：LumenLingoは、間隔反復スケジューリングやコンテンツ難易度の適応を含む学習体験のパーソナライズにアルゴリズムを使用する場合があります。これらのシステムはユーザーのデバイス上でローカルに動作し、広告目的でユーザーをプロファイリングしません。",
-      "transparency3": "苦情処理：サービスに関する苦情がある場合は、hello@lumenshore.comまでご連絡ください。5営業日以内に受領確認を行い、30暦日以内に実質的な回答を提供することを目指します。",
+      "transparency3": "苦情処理：サービスに関する苦情がある場合は、legal@lumenlingo.comまでご連絡ください。5営業日以内に受領確認を行い、30暦日以内に実質的な回答を提供することを目指します。",
       "complianceHeading": "DSAコンプライアンス宣言",
       "compliance1": "Lumenshore Limitedは、サービスに適用されるデジタルサービス法（EU規則2022/2065）の遵守に努めています。",
       "compliance2": "LumenLingoはDSAに基づく仲介サービス、ホスティングサービス、またはオンラインプラットフォームに該当しないため、DSAの義務の大部分（第16条に基づく通知・対応メカニズムおよび第15条に基づく透明性報告を含む）は現在適用されません。",

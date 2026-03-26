@@ -99,7 +99,8 @@ export default async function TermsPage({
     { id: 'no-third-party-beneficiaries', text: t('noThirdPartyBeneficiaries.heading'), level: 2 },
     { id: 'user-representations', text: t('userRepresentations.heading'), level: 2 },
     { id: 'user-obligations', text: t('userObligations.heading'), level: 2 },
-    { id: 'user-indemnification', text: t('userIndemnification.heading'), level: 2 },
+    { id: 'uk-adr', text: t('ukAdr.heading'), level: 2 },
+    { id: 'system-requirements', text: t('systemRequirements.heading'), level: 2 },
     { id: 'breach-consequences', text: t('breachConsequences.heading'), level: 2 },
     { id: 'service-modification', text: t('serviceModification.heading'), level: 2 },
     { id: 'service-suspension', text: t('serviceSuspension.heading'), level: 2 },
@@ -119,6 +120,8 @@ export default async function TermsPage({
     { id: 'regulatory-shield', text: t('regulatoryShield.heading'), level: 2 },
     { id: 'account-security', text: t('accountSecurity.heading'), level: 2 },
     { id: 'class-action-waiver', text: t('classActionWaiver.heading'), level: 2 },
+    { id: 'apple-licensed-eula', text: t('appleLicensedEula.heading'), level: 2 },
+    { id: 'accessibility', text: t('accessibility.heading'), level: 2 },
     { id: 'dsa-compliance', text: t('dsaCompliance.heading'), level: 2 },
     { id: 'changes', text: t('changes.heading'), level: 2 },
     { id: 'contact', text: t('contactUs.heading'), level: 2 },
@@ -305,6 +308,7 @@ export default async function TermsPage({
                     <li>{t.rich('distanceSelling.li3', richTags)}</li>
                     <li>{t.rich('distanceSelling.li4', richTags)}</li>
                     <li>{t.rich('distanceSelling.li5', richTags)}</li>
+                    <li>{t.rich('distanceSelling.li5a', richTags)}</li>
                     <li>{t.rich('distanceSelling.li6', richTags)}</li>
                     <li>{t.rich('distanceSelling.li7', {
                       ...richTags,
@@ -438,12 +442,16 @@ export default async function TermsPage({
                   </ul>
                   <p>{t('limitationOfLiability.cap')}</p>
                   <p>{t('limitationOfLiability.statutory')}</p>
+                  <p>{t('limitationOfLiability.crossReference')}</p>
                 </section>
 
                 <section id="force-majeure">
                   <h2>{t('forceMajeure.heading')}</h2>
                   <p>{t('forceMajeure.p1')}</p>
                   <p>{t('forceMajeure.p2')}</p>
+                  <p>{t('forceMajeure.p3')}</p>
+                  <p>{t('forceMajeure.p4')}</p>
+                  <p>{t('forceMajeure.p5')}</p>
                 </section>
 
                 <section id="indemnification">
@@ -453,8 +461,10 @@ export default async function TermsPage({
                     <li>{t('indemnification.li1')}</li>
                     <li>{t('indemnification.li2')}</li>
                     <li>{t('indemnification.li3')}</li>
-                    <li>{t('indemnification.li4')}</li>
                   </ul>
+                  <p>{t('indemnification.p2')}</p>
+                  <p>{t('indemnification.p3')}</p>
+                  <p>{t('indemnification.p4')}</p>
                 </section>
 
                 <section id="tiered-liability-caps">
@@ -468,11 +478,12 @@ export default async function TermsPage({
                   <h2>{t('damageExclusions.heading')}</h2>
                   <p>{t('damageExclusions.p1')}</p>
                   <p>{t('damageExclusions.p2')}</p>
+                  <p>{t('damageExclusions.p3')}</p>
                 </section>
 
                 <section id="warranty-disclaimer">
                   <h2>{t('warrantyDisclaimer.heading')}</h2>
-                  <p>{t('warrantyDisclaimer.p1')}</p>
+                  <p>{t.rich('warrantyDisclaimer.p1', richTags)}</p>
                   <p>{t('warrantyDisclaimer.p2')}</p>
                   <p>{t('warrantyDisclaimer.ukCarveout')}</p>
                 </section>
@@ -677,7 +688,7 @@ export default async function TermsPage({
                   <p>{t('usArbitration.p3')}</p>
 
                   <h3>{t('usArbitration.classActionHeading')}</h3>
-                  <p><strong>{t('usArbitration.classActionP1')}</strong></p>
+                  <p>{t.rich('usArbitration.classActionP1', richTags)}</p>
                   <p>{t('usArbitration.classActionP2')}</p>
 
                   <h3>{t('usArbitration.optOutHeading')}</h3>
@@ -726,6 +737,7 @@ export default async function TermsPage({
                   <h2>{t('assignment.heading')}</h2>
                   <p>{t('assignment.p1')}</p>
                   <p>{t('assignment.p2')}</p>
+                  <p>{t('assignment.p3')}</p>
                 </section>
 
                 <section id="waiver">
@@ -793,16 +805,30 @@ export default async function TermsPage({
                   </ul>
                 </section>
 
-                <section id="user-indemnification">
-                  <h2>{t('userIndemnification.heading')}</h2>
-                  <p>{t('userIndemnification.p1')}</p>
+                {/* ── UK Alternative Dispute Resolution (Story 11.5) ── */}
+                <section id="uk-adr">
+                  <h2>{t('ukAdr.heading')}</h2>
+                  <p>{t('ukAdr.p1')}</p>
+                  <p>{t('ukAdr.p2')}</p>
+                  <p>{t.rich('ukAdr.provider', richTags)}</p>
+                  <p>{t.rich('ukAdr.providerWebsite', { cedrLink: (chunks: React.ReactNode) => <a href="https://www.cedr.com" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</p>
+                  <p>{t('ukAdr.providerAddress')}</p>
+                  <p>{t.rich('ukAdr.p3', { emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</p>
+                  <p>{t.rich('ukAdr.p4', { odrLink: (chunks: React.ReactNode) => <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</p>
+                </section>
+
+                {/* ── System Requirements (Story 11.6) ── */}
+                <section id="system-requirements">
+                  <h2>{t('systemRequirements.heading')}</h2>
+                  <p>{t('systemRequirements.p1')}</p>
                   <ul>
-                    <li>{t('userIndemnification.li1')}</li>
-                    <li>{t('userIndemnification.li2')}</li>
-                    <li>{t('userIndemnification.li3')}</li>
-                    <li>{t('userIndemnification.li4')}</li>
+                    <li>{t.rich('systemRequirements.li1', richTags)}</li>
+                    <li>{t.rich('systemRequirements.li2', richTags)}</li>
+                    <li>{t.rich('systemRequirements.li3', richTags)}</li>
+                    <li>{t.rich('systemRequirements.li4', richTags)}</li>
+                    <li>{t.rich('systemRequirements.li5', richTags)}</li>
                   </ul>
-                  <p>{t('userIndemnification.p2')}</p>
+                  <p>{t('systemRequirements.p2')}</p>
                 </section>
 
                 <section id="breach-consequences">
@@ -842,6 +868,7 @@ export default async function TermsPage({
                   </ul>
                   <p>{t('serviceTermination.p2')}</p>
                   <p>{t('serviceTermination.p3')}</p>
+                  <p>{t('serviceTermination.p4')}</p>
                 </section>
 
                 <section id="terms-modification">
@@ -868,7 +895,6 @@ export default async function TermsPage({
                   <p>{t('claimsLimitation.p2')}</p>
                   <p>{t('claimsLimitation.p3')}</p>
                   <p>{t('claimsLimitation.p4')}</p>
-                  <p>{t('claimsLimitation.p5')}</p>
                 </section>
 
                 {/* ── Refund & Cancellation Policy (Story 14.10) ── */}
@@ -895,7 +921,7 @@ export default async function TermsPage({
                 <section id="governing-law">
                   <h2>{t('governingLaw.heading')}</h2>
                   <h3>{t('governingLaw.lawHeading')}</h3>
-                  <p>{t('governingLaw.law1')}</p>
+                  <p>{t.rich('governingLaw.law1', richTags)}</p>
                   <p>{t('governingLaw.law2')}</p>
                   <h3>{t('governingLaw.jurisdictionHeading')}</h3>
                   <p>{t('governingLaw.jurisdiction1')}</p>
@@ -921,7 +947,6 @@ export default async function TermsPage({
                   <p>{t('assumptionOfRisk.risk2')}</p>
                   <h3>{t('assumptionOfRisk.releaseHeading')}</h3>
                   <p>{t('assumptionOfRisk.release1')}</p>
-                  <p>{t('assumptionOfRisk.release2')}</p>
                   <h3>{t('assumptionOfRisk.carveOutHeading')}</h3>
                   <p>{t('assumptionOfRisk.carveOut1')}</p>
                   <p>{t('assumptionOfRisk.carveOut2')}</p>
@@ -1145,6 +1170,18 @@ export default async function TermsPage({
                   <p>{t('classActionWaiver.individual2')}</p>
                 </section>
 
+                <section id="apple-licensed-eula">
+                  <h2>{t('appleLicensedEula.heading')}</h2>
+                  <p>{t.rich('appleLicensedEula.p1', { appleEulaLink: (chunks: React.ReactNode) => <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</p>
+                  <p>{t('appleLicensedEula.p2')}</p>
+                </section>
+
+                <section id="accessibility">
+                  <h2>{t('accessibility.heading')}</h2>
+                  <p>{t.rich('accessibility.p1', { accessibilityLink: (chunks: React.ReactNode) => <a href={`/${locale}/accessibility`}>{chunks}</a> })}</p>
+                  <p>{t.rich('accessibility.p2', { emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</p>
+                </section>
+
                 <section id="dsa-compliance">
                   <h2>{t('dsaCompliance.heading')}</h2>
                   <h3>{t('dsaCompliance.contactHeading')}</h3>
@@ -1171,6 +1208,7 @@ export default async function TermsPage({
                   <p>{t('changes.p2')}</p>
                   <h3>{t('changes.versionHistory')}</h3>
                   <ul>
+                    <li>{t.rich('changes.v1_2', richTags)}</li>
                     <li>{t.rich('changes.v1_1', richTags)}</li>
                     <li>{t.rich('changes.v1', richTags)}</li>
                   </ul>
@@ -1180,8 +1218,9 @@ export default async function TermsPage({
                   <h2>{t('contactUs.heading')}</h2>
                   <p>{t('contactUs.intro')}</p>
                   <ul>
-                    <li>{t.rich('contactUs.email', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com">{chunks}</a> })}</li>
+                    <li>{t.rich('contactUs.email', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</li>
                     <li>{t.rich('contactUs.company', richTags)}</li>
+                    <li>{t.rich('contactUs.address', richTags)}</li>
                   </ul>
                   <p>{t('contactUs.responseTime')}</p>
                 </section>

@@ -57,12 +57,16 @@ export default async function EulaPage({
     { id: 'content-ownership', text: t('contentOwnership.heading'), level: 2 },
     { id: 'restrictions', text: t('restrictions.heading'), level: 2 },
     { id: 'termination', text: t('termination.heading'), level: 2 },
+    { id: 'data-handling', text: t('dataHandling.heading'), level: 2 },
     { id: 'warranties', text: t('warranties.heading'), level: 2 },
     { id: 'liability', text: t('liability.heading'), level: 2 },
     { id: 'consumer-rights', text: t('consumerRights.heading'), level: 2 },
     { id: 'assumption-of-risk', text: t('assumptionOfRisk.heading'), level: 2 },
     { id: 'governing-law', text: t('governingLaw.heading'), level: 2 },
     { id: 'apple-terms', text: t('appleTerms.heading'), level: 2 },
+    { id: 'app-updates', text: t('appUpdates.heading'), level: 2 },
+    { id: 'export-compliance', text: t('exportCompliance.heading'), level: 2 },
+    { id: 'open-source', text: t('openSource.heading'), level: 2 },
     { id: 'changes', text: t('changes.heading'), level: 2 },
     { id: 'contact', text: t('contact.heading'), level: 2 },
   ];
@@ -167,6 +171,15 @@ export default async function EulaPage({
                   </ul>
                 </section>
 
+                <section id="data-handling">
+                  <h2>{t('dataHandling.heading')}</h2>
+                  <p>{t('dataHandling.p1')}</p>
+                  <p>{t('dataHandling.p2')}</p>
+                  <p>{t('dataHandling.p3')}</p>
+                  <p>{t('dataHandling.p4')}</p>
+                  <p>{t('dataHandling.p5')}</p>
+                </section>
+
                 <section id="warranties">
                   <h2>{t('warranties.heading')}</h2>
                   <p>{t('warranties.p1')}</p>
@@ -177,6 +190,7 @@ export default async function EulaPage({
                     <li>{t('warranties.li4')}</li>
                   </ul>
                   <p>{t('warranties.p2')}</p>
+                  <p>{t.rich('warranties.craSavings', richTags)}</p>
                 </section>
 
                 <section id="liability">
@@ -189,6 +203,8 @@ export default async function EulaPage({
                     <li>{t('liability.li4')}</li>
                   </ul>
                   <p>{t('liability.cap')}</p>
+                  <p>{t('liability.statutory')}</p>
+                  <p>{t('liability.crossReference')}</p>
                 </section>
 
                 {/* ── Consumer Rights (UK CRA 2015) ── */}
@@ -246,19 +262,53 @@ export default async function EulaPage({
                     <li>{t('appleTerms.li5')}</li>
                     <li>{t('appleTerms.li6')}</li>
                   </ol>
+                  <p>{t.rich('appleTerms.crossReference', { termsLink: (chunks: React.ReactNode) => <a href={`/${locale}/terms`}>{chunks}</a> })}</p>
+                </section>
+
+                <section id="app-updates">
+                  <h2>{t('appUpdates.heading')}</h2>
+                  <p>{t('appUpdates.p1')}</p>
+                  <p>{t('appUpdates.p2')}</p>
+                  <p>{t('appUpdates.p3')}</p>
+                  <p>{t('appUpdates.p4')}</p>
+                </section>
+
+                <section id="export-compliance">
+                  <h2>{t('exportCompliance.heading')}</h2>
+                  <p>{t('exportCompliance.p1')}</p>
+                  <p>{t('exportCompliance.p2')}</p>
+                  <p>{t('exportCompliance.p3')}</p>
+                  <p>{t('exportCompliance.p4')}</p>
+                </section>
+
+                <section id="open-source">
+                  <h2>{t('openSource.heading')}</h2>
+                  <p>{t('openSource.p1')}</p>
+                  <p>{t('openSource.p2')}</p>
+                  <ul>
+                    <li>{t.rich('openSource.li1', richTags)}</li>
+                    <li>{t.rich('openSource.li2', richTags)}</li>
+                    <li>{t.rich('openSource.li3', richTags)}</li>
+                    <li>{t.rich('openSource.li4', richTags)}</li>
+                  </ul>
+                  <p>{t.rich('openSource.p3', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</p>
                 </section>
 
                 <section id="changes">
                   <h2>{t('changes.heading')}</h2>
                   <p>{t('changes.p1')}</p>
                   <p>{t('changes.p2')}</p>
+                  <h3>{t('changes.versionHistory')}</h3>
+                  <ul>
+                    <li>{t.rich('changes.v1_1', richTags)}</li>
+                  </ul>
                 </section>
 
                 <section id="contact">
                   <h2>{t('contact.heading')}</h2>
                   <p>{t('contact.intro')}</p>
                   <ul>
-                    <li>{t.rich('contact.email', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com">{chunks}</a> })}</li>
+                    <li>{t.rich('contact.email', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</li>
                     <li>{t.rich('contact.company', richTags)}</li>
                     <li>{t.rich('contact.address', richTags)}</li>
                   </ul>

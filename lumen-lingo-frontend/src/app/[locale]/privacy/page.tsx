@@ -61,6 +61,7 @@ export default async function PrivacyPage({
     { id: 'app-data', text: t('appData.heading'), level: 2 },
     { id: 'what-we-dont-collect', text: t('whatWeDontCollect.heading'), level: 2 },
     { id: 'legal-basis', text: t('legalBasis.heading'), level: 2 },
+    { id: 'data-provision-requirements', text: t('dataProvisionRequirements.heading'), level: 2 },
     { id: 'uk-data-protection', text: t('ukDataProtection.heading'), level: 2 },
     { id: 'electronic-communications', text: t('electronicComms.heading'), level: 2 },
     { id: 'data-flow', text: t('dataFlow.heading'), level: 2 },
@@ -74,6 +75,8 @@ export default async function PrivacyPage({
     { id: 'age-consent', text: t('ageConsent.heading'), level: 2 },
     { id: 'enhanced-child-privacy', text: t('enhancedChildPrivacy.heading'), level: 2 },
     { id: 'data-retention', text: t('dataRetention.heading'), level: 2 },
+    { id: 'breach-notification', text: t('breachNotification.heading'), level: 2 },
+    { id: 'automated-decisions', text: t('automatedDecisions.heading'), level: 2 },
     { id: 'ccpa-notice', text: t('ccpaNotice.heading'), level: 2 },
     { id: 'japan-privacy', text: t('japanPrivacy.heading'), level: 2 },
     { id: 'china-privacy', text: t('chinaPrivacy.heading'), level: 2 },
@@ -262,6 +265,23 @@ export default async function PrivacyPage({
                   </ul>
                 </section>
 
+                {/* ── Data Provision Requirements (Art. 13(2)(e)) ── */}
+                <section id="data-provision-requirements">
+                  <h2>{t('dataProvisionRequirements.heading')}</h2>
+                  <p>{t('dataProvisionRequirements.p1')}</p>
+                  <h3>{t('dataProvisionRequirements.contractualHeading')}</h3>
+                  <ul>
+                    <li>{t.rich('dataProvisionRequirements.contractualLi1', richTags)}</li>
+                    <li>{t.rich('dataProvisionRequirements.contractualLi2', richTags)}</li>
+                  </ul>
+                  <h3>{t('dataProvisionRequirements.voluntaryHeading')}</h3>
+                  <ul>
+                    <li>{t.rich('dataProvisionRequirements.voluntaryLi1', richTags)}</li>
+                    <li>{t.rich('dataProvisionRequirements.voluntaryLi2', richTags)}</li>
+                  </ul>
+                  <p>{t('dataProvisionRequirements.statutoryP1')}</p>
+                </section>
+
                 {/* ── UK Data Protection ── */}
                 <section id="uk-data-protection">
                   <h2>{t('ukDataProtection.heading')}</h2>
@@ -284,6 +304,7 @@ export default async function PrivacyPage({
                   <h3>{t('ukDataProtection.icoHeading')}</h3>
                   <p>{t.rich('ukDataProtection.icoP1', { icoLink: (chunks: React.ReactNode) => <a href="https://ico.org.uk/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</p>
                   <p>{t('ukDataProtection.icoP2')}</p>
+                  <p>{t.rich('ukDataProtection.icoRegistration', { icoLink: (chunks: React.ReactNode) => <a href="https://ico.org.uk/ESDWebPages/Entry/ZB718685" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</p>
 
                   <h3>{t('ukDataProtection.adequacyHeading')}</h3>
                   <p>{t('ukDataProtection.adequacyP1')}</p>
@@ -379,6 +400,8 @@ export default async function PrivacyPage({
                     <li>{t.rich('thirdParty.li1', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, applePrivacy: (chunks: React.ReactNode) => <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
                     <li>{t.rich('thirdParty.li2', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, vercelPrivacy: (chunks: React.ReactNode) => <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
                     <li>{t.rich('thirdParty.li3', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, sentryPrivacy: (chunks: React.ReactNode) => <a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
+                    <li>{t.rich('thirdParty.li4', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, clerkPrivacy: (chunks: React.ReactNode) => <a href="https://clerk.com/legal/privacy" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
+                    <li>{t.rich('thirdParty.li5', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, revenueCatPrivacy: (chunks: React.ReactNode) => <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
                   </ul>
                   <p>{t('thirdParty.noAdNetworks')}</p>
                 </section>
@@ -399,7 +422,7 @@ export default async function PrivacyPage({
                         </tr>
                       </thead>
                       <tbody>
-                        {(['apple', 'vercel', 'sentry'] as const).map((key) => (
+                        {(['apple', 'vercel', 'sentry', 'clerk', 'revenueCat'] as const).map((key) => (
                           <tr key={key} className="border-b border-glass-border/50 last:border-b-0">
                             <td className="px-4 py-3 font-medium text-foreground">{t(`subProcessors.processors.${key}.service`)}</td>
                             <td className="px-4 py-3 text-foreground-muted">{t(`subProcessors.processors.${key}.purpose`)}</td>
@@ -422,6 +445,8 @@ export default async function PrivacyPage({
                     <li>{t.rich('subProcessors.dpaStatus.li1', richTags)}</li>
                     <li>{t.rich('subProcessors.dpaStatus.li2', richTags)}</li>
                     <li>{t.rich('subProcessors.dpaStatus.li3', richTags)}</li>
+                    <li>{t.rich('subProcessors.dpaStatus.li4', richTags)}</li>
+                    <li>{t.rich('subProcessors.dpaStatus.li5', richTags)}</li>
                   </ul>
 
                   <h3>{t('subProcessors.changes.heading')}</h3>
@@ -436,6 +461,8 @@ export default async function PrivacyPage({
                     <li>{t.rich('internationalTransfers.li1', richTags)}</li>
                     <li>{t.rich('internationalTransfers.li2', richTags)}</li>
                     <li>{t.rich('internationalTransfers.li3', richTags)}</li>
+                    <li>{t.rich('internationalTransfers.li4', richTags)}</li>
+                    <li>{t.rich('internationalTransfers.li5', richTags)}</li>
                   </ul>
                   <h3>{t('internationalTransfers.safeguards.heading')}</h3>
                   <p>{t('internationalTransfers.safeguards.intro')}</p>
@@ -584,12 +611,21 @@ export default async function PrivacyPage({
                   <h3>{t('enhancedChildPrivacy.childrensCodeHeading')}</h3>
                   <p>{t('enhancedChildPrivacy.childrensCodeP1')}</p>
                   <ul>
-                    <li>{t('enhancedChildPrivacy.childrensCodeLi1')}</li>
-                    <li>{t('enhancedChildPrivacy.childrensCodeLi2')}</li>
-                    <li>{t('enhancedChildPrivacy.childrensCodeLi3')}</li>
-                    <li>{t('enhancedChildPrivacy.childrensCodeLi4')}</li>
-                    <li>{t('enhancedChildPrivacy.childrensCodeLi5')}</li>
-                    <li>{t('enhancedChildPrivacy.childrensCodeLi6')}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi1', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi2', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi3', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi4', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi5', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi6', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi7', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi8', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi9', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi10', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi11', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi12', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi13', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi14', richTags)}</li>
+                    <li>{t.rich('enhancedChildPrivacy.childrensCodeLi15', richTags)}</li>
                   </ul>
 
                   <h3>{t('enhancedChildPrivacy.appStoreHeading')}</h3>
@@ -616,6 +652,28 @@ export default async function PrivacyPage({
                     <li>{t.rich('dataRetention.appLi3', richTags)}</li>
                     <li>{t.rich('dataRetention.appLi4', richTags)}</li>
                   </ul>
+                </section>
+
+                {/* ── Data Breach Notification ── */}
+                <section id="breach-notification">
+                  <h2>{t('breachNotification.heading')}</h2>
+                  <p>{t.rich('breachNotification.p1', richTags)}</p>
+                  <p>{t.rich('breachNotification.p2', richTags)}</p>
+                  <ul>
+                    <li>{t('breachNotification.li1')}</li>
+                    <li>{t('breachNotification.li2')}</li>
+                    <li>{t('breachNotification.li3')}</li>
+                    <li>{t('breachNotification.li4')}</li>
+                  </ul>
+                  <p>{t.rich('breachNotification.p3', { ...richTags, emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</p>
+                </section>
+
+                {/* ── Automated Decision-Making and Profiling (Art. 22) ── */}
+                <section id="automated-decisions">
+                  <h2>{t('automatedDecisions.heading')}</h2>
+                  <p>{t('automatedDecisions.p1')}</p>
+                  <p>{t('automatedDecisions.p2')}</p>
+                  <p>{t('automatedDecisions.p3')}</p>
                 </section>
 
                 {/* ── California Notice at Collection (CCPA/CPRA) ── */}
@@ -1066,6 +1124,7 @@ export default async function PrivacyPage({
                     <li>{t('yourRights.gdprLi5')}</li>
                     <li>{t('yourRights.gdprLi6')}</li>
                     <li>{t.rich('yourRights.gdprLi7', { icoLink: (chunks: React.ReactNode) => <a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
+                    <li>{t.rich('yourRights.gdprLi8', { emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</li>
                   </ul>
                   <h3>{t('yourRights.ccpaHeading')}</h3>
                   <ul>

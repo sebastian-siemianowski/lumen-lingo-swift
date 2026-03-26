@@ -58,9 +58,11 @@ export default async function CookiePolicyPage({
     { id: 'cookies', text: t('cookies.heading'), level: 2 },
     { id: 'third-party', text: t('thirdParty.heading'), level: 2 },
     { id: 'manage', text: t('manage.heading'), level: 2 },
+    { id: 'consent-accountability', text: t('consentAccountability.heading'), level: 2 },
     { id: 'gpc', text: t('gpc.heading'), level: 2 },
     { id: 'pecr-compliance', text: t('pecrCompliance.heading'), level: 2 },
     { id: 'updates', text: t('updates.heading'), level: 2 },
+    { id: 'ico-complaint', text: t('icoComplaint.heading'), level: 2 },
     { id: 'contact', text: t('contact.heading'), level: 2 },
   ];
 
@@ -208,6 +210,25 @@ export default async function CookiePolicyPage({
                     <li><strong>{t('table.duration')}:</strong> {t('sessionStorage.sentryKey.duration')}</li>
                     <li><strong>Data:</strong> {t('sessionStorage.sentryKey.data')}</li>
                   </ul>
+
+                  <h3>{t('sessionStorage.sentryKeys.heading')}</h3>
+                  <p>{t('sessionStorage.sentryKeys.intro')}</p>
+
+                  <h4><code>{t('sessionStorage.sentryKeys.replaySession.heading')}</code></h4>
+                  <ul>
+                    <li><strong>{t('table.category')}:</strong> {t('sessionStorage.sentryKeys.replaySession.category')}</li>
+                    <li><strong>{t('table.purpose')}:</strong> {t('sessionStorage.sentryKeys.replaySession.purpose')}</li>
+                    <li><strong>{t('table.duration')}:</strong> {t('sessionStorage.sentryKeys.replaySession.duration')}</li>
+                    <li><strong>Data:</strong> {t('sessionStorage.sentryKeys.replaySession.data')}</li>
+                  </ul>
+
+                  <h4><code>{t('sessionStorage.sentryKeys.sentryUser.heading')}</code></h4>
+                  <ul>
+                    <li><strong>{t('table.category')}:</strong> {t('sessionStorage.sentryKeys.sentryUser.category')}</li>
+                    <li><strong>{t('table.purpose')}:</strong> {t('sessionStorage.sentryKeys.sentryUser.purpose')}</li>
+                    <li><strong>{t('table.duration')}:</strong> {t('sessionStorage.sentryKeys.sentryUser.duration')}</li>
+                    <li><strong>Data:</strong> {t('sessionStorage.sentryKeys.sentryUser.data')}</li>
+                  </ul>
                 </section>
 
                 {/* Service Worker */}
@@ -253,6 +274,10 @@ export default async function CookiePolicyPage({
                   <h3>{t('thirdParty.sentry.heading')}</h3>
                   <p>{t.rich('thirdParty.sentry.description', richTags)}</p>
                   <p><a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">{t('thirdParty.sentry.link')}</a></p>
+
+                  <h3>{t('thirdParty.speedInsights.heading')}</h3>
+                  <p>{t.rich('thirdParty.speedInsights.description', richTags)}</p>
+                  <p><a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">{t('thirdParty.speedInsights.link')}</a></p>
                 </section>
 
                 {/* Manage */}
@@ -261,6 +286,14 @@ export default async function CookiePolicyPage({
                   <p>{t('manage.p1')}</p>
                   <p>{t('manage.p2')}</p>
                   <p>{t('manage.p3')}</p>
+                </section>
+
+                {/* Consent Accountability */}
+                <section id="consent-accountability">
+                  <h2>{t('consentAccountability.heading')}</h2>
+                  <p>{t.rich('consentAccountability.p1', { ...richTags, code: (chunks: React.ReactNode) => <code>{chunks}</code> })}</p>
+                  <p>{t('consentAccountability.p2')}</p>
+                  <p>{t('consentAccountability.p3')}</p>
                 </section>
 
                 {/* GPC & DNT */}
@@ -290,6 +323,18 @@ export default async function CookiePolicyPage({
                   <ul>
                     <li>{t.rich('updates.v1', richTags)}</li>
                   </ul>
+                </section>
+
+                {/* ICO Complaint Right */}
+                <section id="ico-complaint">
+                  <h2>{t('icoComplaint.heading')}</h2>
+                  <p>{t('icoComplaint.p1')}</p>
+                  <ul>
+                    <li>{t.rich('icoComplaint.icoWebsite', { ...richTags, icoLink: (chunks: React.ReactNode) => <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
+                    <li>{t.rich('icoComplaint.icoPhone', richTags)}</li>
+                    <li>{t.rich('icoComplaint.icoAddress', richTags)}</li>
+                  </ul>
+                  <p>{t.rich('icoComplaint.p2', { ...richTags, emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</p>
                 </section>
 
                 {/* Contact */}

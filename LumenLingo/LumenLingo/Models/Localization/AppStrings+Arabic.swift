@@ -471,7 +471,7 @@ extension AppStrings {
         legalConsentSubtitle: "يرجى مراجعة سياساتنا لمتابعة استخدام LumenLingo",
         privacyPolicyTitle: "سياسة الخصوصية",
         termsOfServiceTitle: "شروط الخدمة",
-        legalVersion: "الإصدار 2.1",
+        legalVersion: "الإصدار 2.2",
         legalLastUpdated: "آخر تحديث: ٢٣ مارس ٢٠٢٦",
         legalPrivacySummary: "يتم تشغيل LumenLingo بواسطة LumenShore Ltd. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. تغطي هذه السياسة موقعنا الإلكتروني وتطبيق iOS.",
         legalTermsSummary: "تحكم شروط الخدمة هذه استخدامك لتطبيق LumenLingo المحمول الذي تديره LumenShore Ltd. باستخدام LumenLingo، فإنك توافق على هذه الشروط.",

@@ -473,7 +473,7 @@ extension AppStrings {
         legalConsentSubtitle: "请查看我们的政策以继续使用 LumenLingo",
         privacyPolicyTitle: "隐私政策",
         termsOfServiceTitle: "服务条款",
-        legalVersion: "版本 2.1",
+        legalVersion: "版本 2.2",
         legalLastUpdated: "最后更新：2026年3月23日",
         legalPrivacySummary: "LumenLingo 由 LumenShore Ltd 运营。我们尊重您的隐私并致力于保护您的个人数据。本政策涵盖我们的网站和 iOS 应用程序。",
         legalTermsSummary: "本服务条款管辖您对 LumenShore Ltd 运营的 LumenLingo 移动应用程序的使用。使用 LumenLingo 即表示您同意这些条款。",

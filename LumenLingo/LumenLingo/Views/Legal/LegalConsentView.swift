@@ -11,7 +11,7 @@ struct LegalConsentView: View {
     /// Bumping this re-prompts ALL users to re-accept. Keep in sync with:
     ///   - lumen-lingo-frontend/messages/en.json  (Legal.version)
     ///   - All AppStrings+*.swift locale files    (legalVersion)
-    static let currentVersion = "2.1"
+    static let currentVersion = "2.2"
 
     @Environment(\.dismiss) private var dismiss
     @Environment(\.localization) private var localization
