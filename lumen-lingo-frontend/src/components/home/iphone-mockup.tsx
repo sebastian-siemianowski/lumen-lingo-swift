@@ -658,22 +658,30 @@ export function IPhoneMockup() {
   return (
     <div className={prefersReduced ? '' : 'animate-float'}>
       <div className="relative mx-auto w-[280px] sm:w-[300px]">
-        {/* Multi-layer ambient glow behind device */}
-        <div className="pointer-events-none absolute -inset-12">
+        {/* Soft organic ambient glow behind device */}
+        <div className="pointer-events-none absolute -inset-16">
+          {/* Base radial glow — large, very soft */}
           <motion.div
-            className="absolute inset-0 rounded-[80px] bg-violet/12 blur-[80px]"
-            animate={{ opacity: [0.4, 0.7, 0.4] }}
-            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+            className="absolute inset-0 rounded-full bg-violet/8 blur-[100px]"
+            animate={{ opacity: [0.3, 0.5, 0.3], scale: [0.95, 1.02, 0.95] }}
+            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
           />
+          {/* Mid-layer — offset for asymmetry */}
           <motion.div
-            className="absolute inset-4 rounded-[60px] bg-cyan/8 blur-[60px]"
-            animate={{ opacity: [0.2, 0.4, 0.2] }}
-            transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+            className="absolute inset-6 translate-x-2 rounded-full bg-cyan/5 blur-[90px]"
+            animate={{ opacity: [0.15, 0.3, 0.15], scale: [1, 1.04, 1] }}
+            transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
+          />
+          {/* Warm highlight — bottom accent for depth */}
+          <motion.div
+            className="absolute bottom-4 left-1/4 h-1/2 w-3/4 rounded-full bg-amber/3 blur-[80px]"
+            animate={{ opacity: [0.1, 0.2, 0.1] }}
+            transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 3 }}
           />
         </div>
 
         {/* Device body — titanium-style frame with edge shimmer */}
-        <div className="relative overflow-hidden rounded-[44px] border-[3px] border-white/[0.14] bg-[#08080d] p-3 shadow-[0_30px_80px_rgba(0,0,0,0.6),0_0_1px_rgba(255,255,255,0.12),0_0_40px_rgba(139,92,246,0.08)]">
+        <div className="relative overflow-hidden rounded-[44px] border-[3px] border-white/[0.14] bg-[#08080d] p-3 shadow-[0_20px_60px_rgba(0,0,0,0.5),0_0_1px_rgba(255,255,255,0.1),0_0_60px_rgba(139,92,246,0.06)]">
           {/* Bezel highlight — top specular reflection */}
           <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[60%] rounded-t-[44px] bg-gradient-to-b from-white/[0.08] to-transparent" />
           {/* Side edge highlights for 3D depth */}

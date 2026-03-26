@@ -29,7 +29,7 @@
     "uk": "Українська"
   },
   "Hero": {
-    "badge": "Ya disponible en iOS",
+    "badge": "Próximamente en iOS",
     "headline": "Domina Idiomas <gradient>Con Experiencias</gradient> Inmersivas",
     "subheadline": "Un viaje visual a través del aprendizaje de idiomas. Tarjetas didácticas hermosas, paisajes sonoros ambientales y ejercicios de respiración — diseñado para que cada sesión se sienta como una meditación.",
     "watchDemo": "Ver Demo",
@@ -237,7 +237,15 @@
   "Download": {
     "heading": "LumenLingo",
     "description": "Domina idiomas a través de experiencias inmersivas. Hermosa, consciente, efectiva.",
-    "meta": "Gratis para empezar · Sin cuenta requerida · iPhone y iPad",
+    "tagline": "Gratis para empezar · Sin cuenta requerida · iPhone y iPad",
+    "earlyAccess": "Sé de los primeros en descubrir LumenLingo",
+    "requires": "Requiere iOS 17+",
+    "meta": {
+      "title": "Descargar LumenLingo — Aprendizaje de idiomas para iOS",
+      "description": "Descarga LumenLingo para iPhone y iPad. Domina idiomas con tarjetas inmersivas, práctica adaptativa y paisajes sonoros ambientales.",
+      "ogTitle": "Descargar LumenLingo — Aprendizaje de idiomas, reimaginado",
+      "ogDescription": "Aprendizaje de idiomas hermoso y basado en la ciencia para iOS. Tarjetas, modos de práctica y paisajes sonoros — gratis para empezar."
+    },
     "benefits": {
       "flashcards": "Tarjetas Hermosas",
       "flashcardsDesc": "Aprende vocabulario con tarjetas inmersivas y ricamente diseñadas. Desliza para dominar palabras a tu ritmo.",

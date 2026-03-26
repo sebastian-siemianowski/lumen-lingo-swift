@@ -12,10 +12,31 @@ export function DownloadHero() {
 
   return (
     <section className="relative flex min-h-[70vh] flex-col items-center justify-center px-6 pt-24 pb-16 text-center">
-      {/* Background radial glow */}
+      {/* Rich layered background */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-        <div className="absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet/8 blur-[120px]" />
-        <div className="absolute top-1/3 right-1/4 h-[300px] w-[300px] rounded-full bg-cyan/5 blur-[80px]" />
+        {/* Primary violet bloom */}
+        <motion.div
+          className="absolute top-1/2 left-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet/10 blur-[140px]"
+          animate={{ scale: [1, 1.08, 1], opacity: [0.8, 1, 0.8] }}
+          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        {/* Cyan accent — upper right */}
+        <motion.div
+          className="absolute top-1/4 right-1/5 h-[350px] w-[350px] rounded-full bg-cyan/6 blur-[100px]"
+          animate={{ opacity: [0.5, 0.8, 0.5], x: [0, 20, 0] }}
+          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        {/* Warm accent — lower left */}
+        <motion.div
+          className="absolute bottom-1/4 left-1/5 h-[250px] w-[250px] rounded-full bg-amber/4 blur-[90px]"
+          animate={{ opacity: [0.3, 0.6, 0.3] }}
+          transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+        />
+        {/* Mesh texture */}
+        <div
+          className="absolute inset-0 opacity-[0.012]"
+          style={{ backgroundImage: 'radial-gradient(circle at 25% 25%, white 1px, transparent 1px)', backgroundSize: '24px 24px' }}
+        />
       </div>
 
       <motion.div
@@ -24,14 +45,21 @@ export function DownloadHero() {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={spring.smooth}
       >
-        {/* App icon */}
+        {/* App icon with animated glow ring */}
         <motion.div
-          className="flex h-24 w-24 items-center justify-center rounded-[22px] border border-white/10 bg-gradient-to-br from-violet to-cyan shadow-[0_0_40px_rgba(139,92,246,0.25)]"
+          className="relative"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ ...spring.smooth, delay: 0.1 }}
         >
-          <span className="text-4xl font-bold text-white" aria-hidden="true">L</span>
+          <motion.div
+            className="absolute -inset-3 rounded-[28px] bg-gradient-to-br from-violet/30 to-cyan/20 blur-xl"
+            animate={{ opacity: [0.4, 0.7, 0.4], scale: [0.95, 1.05, 0.95] }}
+            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+          />
+          <div className="relative flex h-24 w-24 items-center justify-center rounded-[22px] border border-white/10 bg-gradient-to-br from-violet to-cyan shadow-[0_0_40px_rgba(139,92,246,0.25)]">
+            <span className="text-4xl font-bold text-white" aria-hidden="true">L</span>
+          </div>
         </motion.div>
 
         {/* App name & tagline */}
@@ -71,17 +99,17 @@ export function DownloadHero() {
         {appStoreLive ? (
           <p className="flex items-center gap-1 text-sm text-foreground-muted">
             <span className="text-amber-400" aria-hidden>★</span>
-            {t('meta')}
+            {t('tagline')}
           </p>
         ) : (
           <p className="text-sm text-foreground-muted">
-            Be among the first to experience LumenLingo
+            {t('earlyAccess')}
           </p>
         )}
 
         {/* iOS requirement */}
         <p className="text-xs text-foreground-muted">
-          Available on iOS 17+
+          {t('requires')}
         </p>
       </motion.div>
     </section>

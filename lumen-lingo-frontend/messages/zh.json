@@ -29,7 +29,7 @@
     "uk": "Українська"
   },
   "Hero": {
-    "badge": "iOS 现已上线",
+    "badge": "iOS 版即将上线",
     "headline": "通过沉浸式体验<gradient>掌握语言</gradient>",
     "subheadline": "语言学习的视觉之旅。精美闪卡、环境音效和呼吸练习——让每一次学习都如同冥想般宁静。",
     "watchDemo": "观看演示",
@@ -237,7 +237,15 @@
   "Download": {
     "heading": "LumenLingo",
     "description": "通过沉浸式体验掌握语言。美观、用心、高效。",
-    "meta": "免费开始 · 无需账户 · iPhone和iPad",
+    "tagline": "免费开始 · 无需账户 · iPhone和iPad",
+    "earlyAccess": "成为首批体验 LumenLingo 的用户",
+    "requires": "需要 iOS 17+",
+    "meta": {
+      "title": "下载 LumenLingo — iOS 精美语言学习",
+      "description": "下载适用于 iPhone 和 iPad 的 LumenLingo。通过沉浸式闪卡、自适应练习和环境音景掌握语言。",
+      "ogTitle": "下载 LumenLingo — 重新定义语言学习",
+      "ogDescription": "iOS 上精美的、基于科学的语言学习。闪卡、练习模式和环境音景 — 免费开始。"
+    },
     "benefits": {
       "flashcards": "精美闪卡",
       "flashcardsDesc": "用沉浸式、精心设计的卡片学习词汇。按自己的节奏滑动掌握单词。",

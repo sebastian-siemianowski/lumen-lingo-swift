@@ -47,7 +47,16 @@ export function DownloadShowcase() {
     >
       {/* Background glow */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-        <div className="absolute bottom-0 left-1/2 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-violet/5 blur-[100px]" />
+        <motion.div
+          className="absolute bottom-0 left-1/2 h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-violet/6 blur-[120px]"
+          animate={{ opacity: [0.5, 0.8, 0.5], scale: [1, 1.05, 1] }}
+          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <motion.div
+          className="absolute bottom-1/4 left-1/3 h-[300px] w-[300px] rounded-full bg-cyan/4 blur-[80px]"
+          animate={{ opacity: [0.3, 0.6, 0.3] }}
+          transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
+        />
       </div>
 
       <div className="relative mx-auto max-w-4xl">

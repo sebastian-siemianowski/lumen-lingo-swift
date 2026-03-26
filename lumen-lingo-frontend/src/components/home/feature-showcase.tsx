@@ -34,11 +34,6 @@ function FlashcardPreview() {
           <div className="mt-2 h-1 w-8 rounded-full bg-fuchsia-400/20" />
         </div>
       </div>
-      {/* Flip arrow */}
-      <svg viewBox="0 0 24 12" className="absolute bottom-0 right-2 h-3 w-6 text-cyan/40">
-        <path d="M2 6c4-4 8-4 12 0" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-        <path d="M12 6l2-2M12 6l2 2" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-      </svg>
     </div>
   );
 }

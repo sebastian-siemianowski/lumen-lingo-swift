@@ -29,7 +29,7 @@
     "uk": "Українська"
   },
   "Hero": {
-    "badge": "Now available on iOS",
+    "badge": "Coming soon to iOS",
     "headline": "Master Languages <gradient>Through Immersive</gradient> Experiences",
     "subheadline": "A visual journey through language learning. Beautiful flashcards, ambient soundscapes, and breathing exercises — designed to make every session feel like a meditation.",
     "watchDemo": "Watch Demo",
@@ -237,7 +237,15 @@
   "Download": {
     "heading": "LumenLingo",
     "description": "Master languages through immersive experiences. Beautiful, mindful, effective.",
-    "meta": "Free to start · No account required · iPhone & iPad",
+    "tagline": "Free to start · No account required · iPhone & iPad",
+    "earlyAccess": "Be among the first to experience LumenLingo",
+    "requires": "Requires iOS 17+",
+    "meta": {
+      "title": "Download LumenLingo — Beautiful Language Learning for iOS",
+      "description": "Download LumenLingo for iPhone and iPad. Master languages through immersive flashcards, adaptive practice, and ambient soundscapes.",
+      "ogTitle": "Download LumenLingo — Language Learning, Reimagined",
+      "ogDescription": "Beautiful, science-backed language learning for iOS. Flashcards, practice modes, and ambient soundscapes — free to start."
+    },
     "benefits": {
       "flashcards": "Beautiful Flashcards",
       "flashcardsDesc": "Learn vocabulary with immersive, richly-designed cards. Swipe to master words at your own pace.",

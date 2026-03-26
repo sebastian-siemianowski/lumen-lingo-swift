@@ -29,7 +29,7 @@
     "uk": "Українська"
   },
   "Hero": {
-    "badge": "Disponible sur iOS",
+    "badge": "Bientôt sur iOS",
     "headline": "Maîtrisez les Langues <gradient>Grâce à des Expériences</gradient> Immersives",
     "subheadline": "Un voyage visuel à travers l'apprentissage des langues. Cartes mémoire élégantes, ambiances sonores et exercices de respiration — conçu pour que chaque session ressemble à une méditation.",
     "watchDemo": "Voir la Démo",
@@ -237,7 +237,15 @@
   "Download": {
     "heading": "LumenLingo",
     "description": "Maîtrisez les langues grâce à des expériences immersives. Beau, conscient, efficace.",
-    "meta": "Gratuit pour commencer · Aucun compte requis · iPhone et iPad",
+    "tagline": "Gratuit pour commencer · Aucun compte requis · iPhone et iPad",
+    "earlyAccess": "Soyez parmi les premiers à découvrir LumenLingo",
+    "requires": "Nécessite iOS 17+",
+    "meta": {
+      "title": "Télécharger LumenLingo — Apprentissage des langues pour iOS",
+      "description": "Téléchargez LumenLingo pour iPhone et iPad. Maîtrisez les langues grâce à des cartes immersives, une pratique adaptative et des ambiances sonores.",
+      "ogTitle": "Télécharger LumenLingo — L'apprentissage des langues, réinventé",
+      "ogDescription": "Apprentissage des langues élégant et scientifique pour iOS. Cartes, modes de pratique et ambiances sonores — gratuit pour commencer."
+    },
     "benefits": {
       "flashcards": "Cartes Élégantes",
       "flashcardsDesc": "Apprenez du vocabulaire avec des cartes immersives et richement conçues. Glissez pour maîtriser les mots à votre rythme.",

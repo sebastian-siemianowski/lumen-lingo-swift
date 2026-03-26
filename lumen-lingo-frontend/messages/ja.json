@@ -29,7 +29,7 @@
     "uk": "Українська"
   },
   "Hero": {
-    "badge": "iOS版リリース中",
+    "badge": "iOS版まもなくリリース",
     "headline": "没入型体験で<gradient>言語を</gradient>マスターしよう",
     "subheadline": "言語学習を巡るビジュアルの旅。美しいフラッシュカード、アンビエントサウンドスケープ、ブリージングエクササイズ — すべてのセッションが瞑想のように感じられるデザイン。",
     "watchDemo": "デモを見る",
@@ -237,7 +237,15 @@
   "Download": {
     "heading": "LumenLingo",
     "description": "没入型の体験で言語をマスター。美しく、意識的で、効果的。",
-    "meta": "無料で開始 · アカウント不要 · iPhone・iPad",
+    "tagline": "無料で開始 · アカウント不要 · iPhone・iPad",
+    "earlyAccess": "LumenLingoをいち早く体験しましょう",
+    "requires": "iOS 17以降が必要です",
+    "meta": {
+      "title": "LumenLingoをダウンロード — iOS向け美しい語学学習",
+      "description": "iPhone・iPad用LumenLingoをダウンロード。没入型フラッシュカード、適応型練習、アンビエントサウンドスケープで言語をマスター。",
+      "ogTitle": "LumenLingoをダウンロード — 語学学習を再定義",
+      "ogDescription": "iOS向けの美しく科学に基づいた語学学習。フラッシュカード、練習モード、アンビエントサウンドスケープ — 無料で開始。"
+    },
     "benefits": {
       "flashcards": "美しいフラッシュカード",
       "flashcardsDesc": "没入型の美しくデザインされたカードで単語を学びましょう。自分のペースでスワイプして単語をマスター。",

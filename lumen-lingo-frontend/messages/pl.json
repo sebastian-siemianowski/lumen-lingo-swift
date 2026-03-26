@@ -29,7 +29,7 @@
     "uk": "Українська"
   },
   "Hero": {
-    "badge": "Teraz dostępne na iOS",
+    "badge": "Wkrótce na iOS",
     "headline": "Opanuj Języki <gradient>Poprzez Immersyjne</gradient> Doświadczenia",
     "subheadline": "Wizualna podróż przez naukę języków. Piękne fiszki, dźwięki otoczenia i ćwiczenia oddechowe — zaprojektowane tak, by każda sesja przypominała medytację.",
     "watchDemo": "Zobacz demo",
@@ -237,7 +237,15 @@
   "Download": {
     "heading": "LumenLingo",
     "description": "Opanuj języki dzięki immersyjnym doświadczeniom. Piękne, świadome, skuteczne.",
-    "meta": "Zacznij za darmo · Bez konta · iPhone i iPad",
+    "tagline": "Zacznij za darmo · Bez konta · iPhone i iPad",
+    "earlyAccess": "Bądź wśród pierwszych, którzy odkryją LumenLingo",
+    "requires": "Wymaga iOS 17+",
+    "meta": {
+      "title": "Pobierz LumenLingo — Piękna nauka języków na iOS",
+      "description": "Pobierz LumenLingo na iPhone i iPad. Opanuj języki dzięki immersyjnym fiszkom, adaptacyjnym ćwiczeniom i ambientowym krajobrazom dźwiękowym.",
+      "ogTitle": "Pobierz LumenLingo — Nauka języków na nowo",
+      "ogDescription": "Piękna, wsparta nauką nauka języków na iOS. Fiszki, tryby ćwiczeń i dźwięki otoczenia — zacznij za darmo."
+    },
     "benefits": {
       "flashcards": "Piękne Fiszki",
       "flashcardsDesc": "Ucz się słówek z immersyjnymi, bogato zaprojektowanymi kartami. Przesuwaj, aby opanować słowa we własnym tempie.",

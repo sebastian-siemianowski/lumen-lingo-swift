@@ -29,7 +29,7 @@
     "uk": "Українська"
   },
   "Hero": {
-    "badge": "Jetzt auf iOS verfügbar",
+    "badge": "Bald auf iOS verfügbar",
     "headline": "Sprachen Meistern <gradient>Durch Immersive</gradient> Erlebnisse",
     "subheadline": "Eine visuelle Reise durch das Sprachenlernen. Schöne Lernkarten, Ambient-Klangwelten und Atemübungen — gestaltet, damit sich jede Sitzung wie eine Meditation anfühlt.",
     "watchDemo": "Demo Ansehen",
@@ -237,7 +237,15 @@
   "Download": {
     "heading": "LumenLingo",
     "description": "Sprachen meistern durch immersive Erfahrungen. Schön, achtsam, effektiv.",
-    "meta": "Kostenlos starten · Kein Konto erforderlich · iPhone und iPad",
+    "tagline": "Kostenlos starten · Kein Konto erforderlich · iPhone und iPad",
+    "earlyAccess": "Gehöre zu den Ersten, die LumenLingo erleben",
+    "requires": "Erfordert iOS 17+",
+    "meta": {
+      "title": "LumenLingo herunterladen — Schönes Sprachenlernen für iOS",
+      "description": "Laden Sie LumenLingo für iPhone und iPad herunter. Meistern Sie Sprachen mit immersiven Lernkarten, adaptiven Übungen und Ambient-Klangwelten.",
+      "ogTitle": "LumenLingo herunterladen — Sprachenlernen, neu gedacht",
+      "ogDescription": "Schönes, wissenschaftlich fundiertes Sprachenlernen für iOS. Lernkarten, Übungsmodi und Ambient-Klangwelten — kostenlos starten."
+    },
     "benefits": {
       "flashcards": "Wunderschöne Lernkarten",
       "flashcardsDesc": "Vokabeln lernen mit immersiven, aufwendig gestalteten Karten. Wischen, um Wörter in Ihrem Tempo zu meistern.",

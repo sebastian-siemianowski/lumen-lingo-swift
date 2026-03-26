@@ -1,5 +1,6 @@
 'use client';
 
+import { Fragment } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { Container, Section, Heading, Text } from '@/components/ui';
@@ -283,9 +284,9 @@ export function FeatureComparisonTable() {
 
                   <tbody>
                     {categories.map((cat, catIdx) => (
-                      <>
+                      <Fragment key={cat.label}>
                         {/* ── Category header ── */}
-                        <tr key={`cat-${cat.label}`} role="row">
+                        <tr role="row">
                           <td
                             colSpan={5}
                             className={cn(
@@ -354,7 +355,7 @@ export function FeatureComparisonTable() {
                             </motion.tr>
                           );
                         })}
-                      </>
+                      </Fragment>
                     ))}
                   </tbody>
                 </table>

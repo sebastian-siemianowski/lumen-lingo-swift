@@ -22,19 +22,24 @@ const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 export function DownloadBenefits() {
   const t = useTranslations('Download.benefits');
 
+  const accents = ['from-violet/10 to-violet/5', 'from-cyan/10 to-cyan/5', 'from-amber/10 to-amber/5'];
+
   return (
-    <section className="relative px-6 py-16">
+    <section className="relative px-6 py-20">
+      {/* Subtle divider glow */}
+      <div className="pointer-events-none absolute top-0 left-1/2 h-px w-2/3 max-w-lg -translate-x-1/2 bg-gradient-to-r from-transparent via-violet/20 to-transparent" aria-hidden />
+
       <div className="mx-auto grid max-w-3xl gap-8 sm:grid-cols-3">
         {benefitKeys.map((key, i) => (
           <motion.div
             key={key}
-            className="flex flex-col items-center gap-3 text-center"
-            initial={{ opacity: 0, y: 20 }}
+            className="group flex flex-col items-center gap-4 rounded-2xl border border-glass-border/50 bg-glass/50 p-6 text-center transition-colors duration-300 hover:border-glass-border hover:bg-glass"
+            initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-50px' }}
-            transition={{ delay: i * 0.1, duration: 0.5, ease }}
+            transition={{ delay: i * 0.12, duration: 0.5, ease }}
           >
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-glass-border bg-glass">
+            <div className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${accents[i]} border border-glass-border shadow-sm transition-transform duration-300 group-hover:scale-110`}>
               {icons[i]}
             </div>
             <h2 className="font-display text-lg font-bold text-foreground">{t(key)}</h2>
