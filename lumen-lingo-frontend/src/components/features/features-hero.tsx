@@ -7,6 +7,12 @@ import { DeviceIcon, DesignIcon, BrainIcon } from '@/components/icons';
 import type { ComponentType } from 'react';
 import type { IconProps } from '@/components/icons';
 
+const PILL_STYLES = [
+  { accent: 'from-violet/20 to-violet/5', iconColor: 'text-violet', glow: 'shadow-violet/10' },
+  { accent: 'from-cyan/20 to-cyan/5', iconColor: 'text-cyan', glow: 'shadow-cyan/10' },
+  { accent: 'from-amber/20 to-amber/5', iconColor: 'text-amber', glow: 'shadow-amber/10' },
+];
+
 export function FeaturesHero() {
   const t = useTranslations('Features');
   const badges = t.raw('badges') as string[];
@@ -48,18 +54,25 @@ export function FeaturesHero() {
             </Text>
           </StaggerItem>
 
-          {/* Decorative device illustrations */}
+          {/* Premium pill badges */}
           <StaggerItem>
-            <div className="mt-12 flex items-center justify-center gap-4">
-              {([DeviceIcon, DesignIcon, BrainIcon] as ComponentType<IconProps>[]).map((Icon, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-1.5 rounded-full border border-glass-border bg-glass px-4 py-2 text-sm text-foreground-secondary"
-                >
-                  <Icon size={16} className="text-violet" aria-hidden />
-                  {badges[i]}
-                </div>
-              ))}
+            <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
+              {([DeviceIcon, DesignIcon, BrainIcon] as ComponentType<IconProps>[]).map((Icon, i) => {
+                const style = PILL_STYLES[i]!;
+                return (
+                  <div
+                    key={i}
+                    className={`group relative flex items-center gap-2.5 rounded-2xl border border-glass-border/60 bg-gradient-to-r ${style.accent} px-5 py-3 shadow-lg ${style.glow} backdrop-blur-sm transition-all duration-300 hover:scale-[1.03] hover:border-glass-border`}
+                  >
+                    <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-white/[0.08] ${style.iconColor}`}>
+                      <Icon size={18} aria-hidden />
+                    </div>
+                    <span className="text-sm font-semibold text-foreground/90">
+                      {badges[i]}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </StaggerItem>
         </StaggerChildren>

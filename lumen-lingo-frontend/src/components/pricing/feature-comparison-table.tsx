@@ -20,14 +20,44 @@ interface Row {
 
 interface Category {
   label: string;
-  icon: string;
+  icon: React.ReactNode;
   rows: Row[];
 }
+
+/* ─── Category SVG icons ─── */
+const BookIcon = () => (
+  <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4 text-violet" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 4.5A2.5 2.5 0 0 1 5.5 2H10v16H5.5A2.5 2.5 0 0 1 3 15.5v-11Z" />
+    <path d="M10 2h4.5A2.5 2.5 0 0 1 17 4.5v11a2.5 2.5 0 0 1-2.5 2.5H10V2Z" />
+  </svg>
+);
+const SparklesIcon = () => (
+  <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4 text-cyan" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2Z" />
+    <path d="M15 12l.75 2.25L18 15l-2.25.75L15 18l-.75-2.25L12 15l2.25-.75L15 12Z" />
+  </svg>
+);
+const BoltIcon = () => (
+  <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4 text-amber" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M11 2L4 11h5l-1 7 7-9h-5l1-7Z" />
+  </svg>
+);
+const ChartIcon = () => (
+  <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4 text-cyan" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 17V10h3v7H3ZM8.5 17V6h3v11h-3ZM14 17V2h3v15h-3Z" />
+  </svg>
+);
+const CrownIcon = () => (
+  <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4 text-amber" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 14l1.5-8L8 10l2-7 2 7 3.5-4L17 14H3Z" />
+    <path d="M3 14h14v2H3v-2Z" />
+  </svg>
+);
 
 const categories: Category[] = [
   {
     label: 'Learning Features',
-    icon: '📚',
+    icon: <BookIcon />,
     rows: [
       { feature: 'Language Pairs', free: '3', pro: '7', elite: '25+', royal: '25+' },
       { feature: 'Practice Modes', free: '3 (Beginner)', pro: '3 (2 levels)', elite: '3 (All levels)', royal: '3 (All levels)' },
@@ -37,7 +67,7 @@ const categories: Category[] = [
   },
   {
     label: 'Immersive Experience',
-    icon: '✨',
+    icon: <SparklesIcon />,
     rows: [
       { feature: 'Breathing Orbs', free: false, pro: true, elite: true, royal: true },
       { feature: 'Soundscapes', free: '—', pro: '1', elite: '8', royal: 'All 12' },
@@ -47,7 +77,7 @@ const categories: Category[] = [
   },
   {
     label: 'Productivity',
-    icon: '⚡',
+    icon: <BoltIcon />,
     rows: [
       { feature: 'Offline Mode', free: false, pro: true, elite: true, royal: true },
       { feature: 'XP Multiplier', free: '1×', pro: '1.25×', elite: '1.5×', royal: '2×' },
@@ -55,7 +85,7 @@ const categories: Category[] = [
   },
   {
     label: 'Analytics & Insights',
-    icon: '📊',
+    icon: <ChartIcon />,
     rows: [
       { feature: 'Advanced Analytics', free: false, pro: false, elite: true, royal: true },
       { feature: 'Data Export', free: false, pro: false, elite: true, royal: true },
@@ -63,7 +93,7 @@ const categories: Category[] = [
   },
   {
     label: 'Royal Exclusive',
-    icon: '👑',
+    icon: <CrownIcon />,
     rows: [
       { feature: 'Shareable Result Cards', free: false, pro: false, elite: false, royal: true },
       { feature: 'Monthly Reports', free: false, pro: false, elite: false, royal: true },
@@ -295,7 +325,7 @@ export function FeatureComparisonTable() {
                             )}
                           >
                             <span className="flex items-center gap-3">
-                              <span className="text-sm" role="img" aria-hidden>
+                              <span className="flex h-6 w-6 items-center justify-center rounded-md bg-white/[0.06]" aria-hidden>
                                 {cat.icon}
                               </span>
                               <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground-muted/70">
