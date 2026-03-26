@@ -1333,7 +1333,18 @@
       "appStoreHeading": "App Store Connect出口合规",
       "appStoreP1": "LumenLingo的出口合规通过Apple的App Store Connect进行申报。该应用使用加密（HTTPS、iCloud），但由于仅依赖系统提供的加密技术，因此符合豁免资格。"
     },
-    "updateBannerMessage": "我们已更新隐私政策。"
+    "updateBannerMessage": "我们已更新隐私政策。",
+    "euRepresentative": {
+      "heading": "欧盟代表（GDPR第27条）",
+      "assessment1": "Lumenshore Limited在英格兰和威尔士注册成立，因此其总部位于欧洲经济区（EEA）之外。当Lumenshore向EEA内的个人提供服务或监控其在EEA内的行为时，可能需要根据GDPR第27条的义务在欧盟指定代表。",
+      "assessment2": "LumenLingo处理最少量的个人数据，不会系统性地监控欧盟居民的行为。应用程序的学习算法在用户设备上本地运行，不涉及服务器端的用户画像或跟踪。",
+      "assessment3": "Lumenshore已评估其处理活动，并确定鉴于当前数据处理的范围和性质，根据第27条指定欧盟代表目前并非强制性的。然而，出于良好实践和透明度的考虑，Lumenshore已自愿指定以下联络点用于欧盟数据保护咨询：",
+      "contact1": "如需欧盟居民或监管机构的数据保护咨询：",
+      "contact2": "Lumenshore Limited，hello@lumenshore.com",
+      "contact3": "Lumenshore将定期审查此评估，如果因处理活动的变化、适用指南或监管要求而需要，将根据GDPR第27条正式任命欧盟代表。",
+      "supervisory1": "欧盟居民有权向当地数据保护监管机构提出投诉。EEA监管机构名单可在欧洲数据保护委员会网站上查阅。",
+      "supervisory2": "如果Lumenshore将来正式任命欧盟代表，代表的详细信息将在本隐私政策中公布，并根据GDPR第27条第(4)款通知相关监管机构。"
+    }
   },
   "Terms": {
     "meta": {
@@ -2795,19 +2806,6 @@
       "compliance1": "Lumenshore Limited致力于遵守适用于本服务的数字服务法（欧盟法规2022/2065）。",
       "compliance2": "由于LumenLingo不属于DSA下的中介服务、托管服务或在线平台，因此DSA的大部分义务（包括第16条规定的通知和行动机制以及第15条规定的透明度报告）目前不适用。",
       "compliance3": "Lumenshore监控监管动态，如果因新功能或监管指导而导致DSA适用范围发生变化，将更新其合规措施。"
-    }
-  },
-  "privacy": {
-    "euRepresentative": {
-      "heading": "欧盟代表（GDPR第27条）",
-      "assessment1": "Lumenshore Limited在英格兰和威尔士注册成立，因此其总部位于欧洲经济区（EEA）之外。当Lumenshore向EEA内的个人提供服务或监控其在EEA内的行为时，可能需要根据GDPR第27条的义务在欧盟指定代表。",
-      "assessment2": "LumenLingo处理最少量的个人数据，不会系统性地监控欧盟居民的行为。应用程序的学习算法在用户设备上本地运行，不涉及服务器端的用户画像或跟踪。",
-      "assessment3": "Lumenshore已评估其处理活动，并确定鉴于当前数据处理的范围和性质，根据第27条指定欧盟代表目前并非强制性的。然而，出于良好实践和透明度的考虑，Lumenshore已自愿指定以下联络点用于欧盟数据保护咨询：",
-      "contact1": "如需欧盟居民或监管机构的数据保护咨询：",
-      "contact2": "Lumenshore Limited，hello@lumenshore.com",
-      "contact3": "Lumenshore将定期审查此评估，如果因处理活动的变化、适用指南或监管要求而需要，将根据GDPR第27条正式任命欧盟代表。",
-      "supervisory1": "欧盟居民有权向当地数据保护监管机构提出投诉。EEA监管机构名单可在欧洲数据保护委员会网站上查阅。",
-      "supervisory2": "如果Lumenshore将来正式任命欧盟代表，代表的详细信息将在本隐私政策中公布，并根据GDPR第27条第(4)款通知相关监管机构。"
     }
   }
 }

@@ -1333,7 +1333,18 @@
       "appStoreHeading": "Conformité à l’exportation App Store Connect",
       "appStoreP1": "La conformité à l’exportation de LumenLingo est déclarée via App Store Connect d’Apple. L’application utilise le chiffrement (HTTPS, iCloud) mais est éligible à l’exemption car elle repose exclusivement sur des technologies de chiffrement fournies par le système."
     },
-    "updateBannerMessage": "Nous avons mis à jour notre Politique de Confidentialité."
+    "updateBannerMessage": "Nous avons mis à jour notre Politique de Confidentialité.",
+    "euRepresentative": {
+      "heading": "Representant dans l'UE (RGPD Art. 27)",
+      "assessment1": "Lumenshore Limited est constituee en Angleterre et au Pays de Galles et est donc etablie en dehors de l'Espace Economique Europeen (EEE). Lorsque Lumenshore propose son Service a des personnes dans l'EEE ou surveille leur comportement au sein de l'EEE, elle peut etre soumise a l'obligation prevue par l'Art. 27 du RGPD de designer un representant dans l'UE.",
+      "assessment2": "LumenLingo traite un minimum de donnees personnelles et ne surveille pas systematiquement le comportement des personnes basees dans l'UE. Les algorithmes d'apprentissage de l'application fonctionnent localement sur les appareils des utilisateurs et n'impliquent pas de profilage ou de suivi cote serveur.",
+      "assessment3": "Lumenshore a evalue ses activites de traitement et a determine que, compte tenu de la portee et de la nature actuelles du traitement des donnees, la designation d'un representant dans l'UE en vertu de l'Art. 27 n'est pas actuellement obligatoire. Cependant, par souci de bonnes pratiques et de transparence, Lumenshore a volontairement designe le point de contact suivant pour les demandes de protection des donnees de l'UE:",
+      "contact1": "Pour les demandes de protection des donnees de personnes ou d'autorites de controle basees dans l'UE:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "Lumenshore reexaminera cette evaluation periodiquement et designera formellement un representant dans l'UE conformement a l'Art. 27 du RGPD si des changements dans les activites de traitement, les orientations applicables ou les exigences reglementaires l'exigent.",
+      "supervisory1": "Les personnes basees dans l'UE ont le droit de deposer une plainte aupres de leur autorite de controle locale en matiere de protection des donnees. Une liste des autorites de controle de l'EEE est disponible sur le site du Comite Europeen de la Protection des Donnees.",
+      "supervisory2": "Si Lumenshore designe formellement un representant dans l'UE a l'avenir, les coordonnees du representant seront publiees dans cette Politique de Confidentialite et communiquees a l'autorite de controle competente conformement a l'Art. 27(4) du RGPD."
+    }
   },
   "Terms": {
     "meta": {
@@ -2795,19 +2806,6 @@
       "compliance1": "Lumenshore Limited s'engage a respecter le Reglement sur les Services Numeriques (Reglement UE 2022/2065) tel qu'il s'applique au Service.",
       "compliance2": "Etant donne que LumenLingo ne se qualifie pas en tant que service d'intermediation, service d'hebergement ou plateforme en ligne au titre du DSA, la majorite des obligations du DSA (y compris le mecanisme de notification et d'action au titre de l'Art. 16 et les rapports de transparence au titre de l'Art. 15) ne s'appliquent pas actuellement.",
       "compliance3": "Lumenshore surveille les evolutions reglementaires et mettra a jour ses mesures de conformite si le champ d'application du DSA evolue en raison de nouvelles fonctionnalites ou d'orientations reglementaires."
-    }
-  },
-  "privacy": {
-    "euRepresentative": {
-      "heading": "Representant dans l'UE (RGPD Art. 27)",
-      "assessment1": "Lumenshore Limited est constituee en Angleterre et au Pays de Galles et est donc etablie en dehors de l'Espace Economique Europeen (EEE). Lorsque Lumenshore propose son Service a des personnes dans l'EEE ou surveille leur comportement au sein de l'EEE, elle peut etre soumise a l'obligation prevue par l'Art. 27 du RGPD de designer un representant dans l'UE.",
-      "assessment2": "LumenLingo traite un minimum de donnees personnelles et ne surveille pas systematiquement le comportement des personnes basees dans l'UE. Les algorithmes d'apprentissage de l'application fonctionnent localement sur les appareils des utilisateurs et n'impliquent pas de profilage ou de suivi cote serveur.",
-      "assessment3": "Lumenshore a evalue ses activites de traitement et a determine que, compte tenu de la portee et de la nature actuelles du traitement des donnees, la designation d'un representant dans l'UE en vertu de l'Art. 27 n'est pas actuellement obligatoire. Cependant, par souci de bonnes pratiques et de transparence, Lumenshore a volontairement designe le point de contact suivant pour les demandes de protection des donnees de l'UE:",
-      "contact1": "Pour les demandes de protection des donnees de personnes ou d'autorites de controle basees dans l'UE:",
-      "contact2": "Lumenshore Limited, hello@lumenshore.com",
-      "contact3": "Lumenshore reexaminera cette evaluation periodiquement et designera formellement un representant dans l'UE conformement a l'Art. 27 du RGPD si des changements dans les activites de traitement, les orientations applicables ou les exigences reglementaires l'exigent.",
-      "supervisory1": "Les personnes basees dans l'UE ont le droit de deposer une plainte aupres de leur autorite de controle locale en matiere de protection des donnees. Une liste des autorites de controle de l'EEE est disponible sur le site du Comite Europeen de la Protection des Donnees.",
-      "supervisory2": "Si Lumenshore designe formellement un representant dans l'UE a l'avenir, les coordonnees du representant seront publiees dans cette Politique de Confidentialite et communiquees a l'autorite de controle competente conformement a l'Art. 27(4) du RGPD."
     }
   }
 }

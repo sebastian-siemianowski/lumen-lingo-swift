@@ -1332,7 +1332,18 @@
       "appStoreHeading": "App Store Connect Export Compliance",
       "appStoreP1": "LumenLingo's export compliance is declared through Apple's App Store Connect. The app uses encryption (HTTPS, iCloud) but qualifies for exemption as it relies exclusively on system-provided encryption technologies."
     },
-    "updateBannerMessage": "We’ve updated our Privacy Policy."
+    "updateBannerMessage": "We’ve updated our Privacy Policy.",
+    "euRepresentative": {
+      "heading": "EU Representative (GDPR Art. 27)",
+      "assessment1": "Lumenshore Limited is incorporated in England and Wales and is therefore established outside the European Economic Area (EEA). Where Lumenshore offers its Service to individuals in the EEA or monitors their behaviour within the EEA, it may be subject to the obligation under GDPR Art. 27 to designate a representative in the EU.",
+      "assessment2": "LumenLingo processes minimal personal data and does not systematically monitor the behaviour of EU-based individuals. The app's learning algorithms operate locally on users' devices and do not involve server-side profiling or tracking.",
+      "assessment3": "Lumenshore has assessed its processing activities and determined that, given the current scope and nature of data processing, the designation of an EU representative under Art. 27 is not currently mandatory. However, as a matter of good practice and transparency, Lumenshore has voluntarily designated the following contact point for EU data protection inquiries:",
+      "contact1": "For data protection inquiries from EU-based individuals or supervisory authorities:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "Lumenshore will review this assessment periodically and will formally appoint an EU representative under GDPR Art. 27 if required by changes in processing activities, applicable guidance, or regulatory requirements.",
+      "supervisory1": "EU-based individuals have the right to lodge a complaint with their local data protection supervisory authority. A list of EEA supervisory authorities is available on the European Data Protection Board website.",
+      "supervisory2": "If Lumenshore formally appoints an EU representative in the future, the representative's details will be published in this Privacy Policy and communicated to the relevant supervisory authority in accordance with GDPR Art. 27(4)."
+    }
   },
   "Terms": {
     "meta": {
@@ -2794,19 +2805,6 @@
       "compliance1": "Lumenshore Limited is committed to compliance with the Digital Services Act (EU Regulation 2022/2065) as applicable to the Service.",
       "compliance2": "As LumenLingo does not qualify as an intermediary service, hosting service, or online platform under the DSA, the majority of DSA obligations (including the notice-and-action mechanism under Art. 16 and transparency reporting under Art. 15) do not currently apply.",
       "compliance3": "Lumenshore monitors regulatory developments and will update its compliance measures if the scope of DSA applicability changes due to new features or regulatory guidance."
-    }
-  },
-  "privacy": {
-    "euRepresentative": {
-      "heading": "EU Representative (GDPR Art. 27)",
-      "assessment1": "Lumenshore Limited is incorporated in England and Wales and is therefore established outside the European Economic Area (EEA). Where Lumenshore offers its Service to individuals in the EEA or monitors their behaviour within the EEA, it may be subject to the obligation under GDPR Art. 27 to designate a representative in the EU.",
-      "assessment2": "LumenLingo processes minimal personal data and does not systematically monitor the behaviour of EU-based individuals. The app's learning algorithms operate locally on users' devices and do not involve server-side profiling or tracking.",
-      "assessment3": "Lumenshore has assessed its processing activities and determined that, given the current scope and nature of data processing, the designation of an EU representative under Art. 27 is not currently mandatory. However, as a matter of good practice and transparency, Lumenshore has voluntarily designated the following contact point for EU data protection inquiries:",
-      "contact1": "For data protection inquiries from EU-based individuals or supervisory authorities:",
-      "contact2": "Lumenshore Limited, hello@lumenshore.com",
-      "contact3": "Lumenshore will review this assessment periodically and will formally appoint an EU representative under GDPR Art. 27 if required by changes in processing activities, applicable guidance, or regulatory requirements.",
-      "supervisory1": "EU-based individuals have the right to lodge a complaint with their local data protection supervisory authority. A list of EEA supervisory authorities is available on the European Data Protection Board website.",
-      "supervisory2": "If Lumenshore formally appoints an EU representative in the future, the representative's details will be published in this Privacy Policy and communicated to the relevant supervisory authority in accordance with GDPR Art. 27(4)."
     }
   },
   "Careers": {

@@ -313,10 +313,10 @@ function LanguagePairPreview() {
 
 function MembershipPreview() {
   const tiers = [
-    { name: 'Free', price: '$0', color: 'border-glass-border/40', active: false },
-    { name: 'Pro', price: '$9.99', color: 'border-violet/30', active: false },
-    { name: 'Elite', price: '$19.99', color: 'border-cyan/40', active: true },
-    { name: 'Royal', price: '$99.99', color: 'border-amber/30', active: false },
+    { name: 'Free', price: '£0', color: 'border-glass-border/40', active: false },
+    { name: 'Pro', price: '£9.99', color: 'border-violet/30', active: false },
+    { name: 'Elite', price: '£19.99', color: 'border-cyan/40', active: true },
+    { name: 'Royal', price: '£99.99', color: 'border-amber/30', active: false },
   ];
   return (
     <div className="flex h-full w-full flex-col bg-gradient-to-b from-amber/[0.05] to-violet/[0.04] p-6">
@@ -569,9 +569,9 @@ export function FeaturesContent() {
             ]}
             capabilities={[
               'Free tier with 3 language pairs and 50-card decks',
-              'Pro ($9.99/mo): unlimited practice + offline mode',
-              'Elite ($19.99/mo): all languages + Quantum Flow',
-              'Royal ($99.99/mo): everything + 2× XP + Nebula Drift',
+              'Pro (£9.99/mo): unlimited practice + offline mode',
+              'Elite (£19.99/mo): all languages + Quantum Flow',
+              'Royal (£99.99/mo): everything + 2× XP + Nebula Drift',
               '14-day free Royal trial',
               'Simple App Store subscription management',
             ]}

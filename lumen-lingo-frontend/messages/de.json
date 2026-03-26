@@ -1333,7 +1333,18 @@
       "appStoreHeading": "App Store Connect Exportkonformität",
       "appStoreP1": "Die Exportkonformität von LumenLingo wird über Apples App Store Connect deklariert. Die App verwendet Verschlüsselung (HTTPS, iCloud), qualifiziert sich jedoch für eine Befreiung, da sie ausschließlich auf systemseitig bereitgestellte Verschlüsselungstechnologien setzt."
     },
-    "updateBannerMessage": "Wir haben unsere Datenschutzrichtlinie aktualisiert."
+    "updateBannerMessage": "Wir haben unsere Datenschutzrichtlinie aktualisiert.",
+    "euRepresentative": {
+      "heading": "EU-Vertreter (DSGVO Art. 27)",
+      "assessment1": "Lumenshore Limited ist in England und Wales eingetragen und hat daher ihren Sitz ausserhalb des Europaeischen Wirtschaftsraums (EWR). Wenn Lumenshore ihren Dienst Personen im EWR anbietet oder deren Verhalten innerhalb des EWR ueberwacht, kann sie der Pflicht gemaess DSGVO Art. 27 unterliegen, einen Vertreter in der EU zu benennen.",
+      "assessment2": "LumenLingo verarbeitet minimale personenbezogene Daten und ueberwacht nicht systematisch das Verhalten von in der EU ansaessigen Personen. Die Lernalgorithmen der App arbeiten lokal auf den Geraeten der Nutzer und beinhalten kein serverseitiges Profiling oder Tracking.",
+      "assessment3": "Lumenshore hat ihre Verarbeitungstaetigkeiten bewertet und festgestellt, dass angesichts des aktuellen Umfangs und der Art der Datenverarbeitung die Benennung eines EU-Vertreters gemaess Art. 27 derzeit nicht verpflichtend ist. Im Sinne guter Praxis und Transparenz hat Lumenshore jedoch freiwillig die folgende Kontaktstelle fuer EU-Datenschutzanfragen benannt:",
+      "contact1": "Fuer Datenschutzanfragen von in der EU ansaessigen Personen oder Aufsichtsbehoerden:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "Lumenshore wird diese Bewertung regelmaessig ueberpruefen und formell einen EU-Vertreter gemaess DSGVO Art. 27 benennen, wenn dies durch Aenderungen der Verarbeitungstaetigkeiten, anwendbare Leitlinien oder regulatorische Anforderungen erforderlich wird.",
+      "supervisory1": "In der EU ansaessige Personen haben das Recht, eine Beschwerde bei ihrer lokalen Datenschutzaufsichtsbehoerde einzureichen. Eine Liste der EWR-Aufsichtsbehoerden ist auf der Website des Europaeischen Datenschutzausschusses verfuegbar.",
+      "supervisory2": "Wenn Lumenshore in Zukunft formell einen EU-Vertreter benennt, werden die Angaben des Vertreters in dieser Datenschutzerklaerung veroeffentlicht und der zustaendigen Aufsichtsbehoerde gemaess DSGVO Art. 27(4) mitgeteilt."
+    }
   },
   "Terms": {
     "meta": {
@@ -2795,19 +2806,6 @@
       "compliance1": "Lumenshore Limited verpflichtet sich zur Einhaltung des Gesetzes ueber digitale Dienste (EU-Verordnung 2022/2065), soweit es auf den Dienst anwendbar ist.",
       "compliance2": "Da LumenLingo nicht als Vermittlungsdienst, Hosting-Dienst oder Online-Plattform gemaess dem DSA eingestuft wird, gelten die meisten DSA-Pflichten (einschliesslich des Melde- und Aktionsmechanismus gemaess Art. 16 und der Transparenzberichterstattung gemaess Art. 15) derzeit nicht.",
       "compliance3": "Lumenshore ueberwacht regulatorische Entwicklungen und wird seine Konformitaetsmassnahmen aktualisieren, wenn sich der Anwendungsbereich des DSA aufgrund neuer Funktionen oder regulatorischer Leitlinien aendert."
-    }
-  },
-  "privacy": {
-    "euRepresentative": {
-      "heading": "EU-Vertreter (DSGVO Art. 27)",
-      "assessment1": "Lumenshore Limited ist in England und Wales eingetragen und hat daher ihren Sitz ausserhalb des Europaeischen Wirtschaftsraums (EWR). Wenn Lumenshore ihren Dienst Personen im EWR anbietet oder deren Verhalten innerhalb des EWR ueberwacht, kann sie der Pflicht gemaess DSGVO Art. 27 unterliegen, einen Vertreter in der EU zu benennen.",
-      "assessment2": "LumenLingo verarbeitet minimale personenbezogene Daten und ueberwacht nicht systematisch das Verhalten von in der EU ansaessigen Personen. Die Lernalgorithmen der App arbeiten lokal auf den Geraeten der Nutzer und beinhalten kein serverseitiges Profiling oder Tracking.",
-      "assessment3": "Lumenshore hat ihre Verarbeitungstaetigkeiten bewertet und festgestellt, dass angesichts des aktuellen Umfangs und der Art der Datenverarbeitung die Benennung eines EU-Vertreters gemaess Art. 27 derzeit nicht verpflichtend ist. Im Sinne guter Praxis und Transparenz hat Lumenshore jedoch freiwillig die folgende Kontaktstelle fuer EU-Datenschutzanfragen benannt:",
-      "contact1": "Fuer Datenschutzanfragen von in der EU ansaessigen Personen oder Aufsichtsbehoerden:",
-      "contact2": "Lumenshore Limited, hello@lumenshore.com",
-      "contact3": "Lumenshore wird diese Bewertung regelmaessig ueberpruefen und formell einen EU-Vertreter gemaess DSGVO Art. 27 benennen, wenn dies durch Aenderungen der Verarbeitungstaetigkeiten, anwendbare Leitlinien oder regulatorische Anforderungen erforderlich wird.",
-      "supervisory1": "In der EU ansaessige Personen haben das Recht, eine Beschwerde bei ihrer lokalen Datenschutzaufsichtsbehoerde einzureichen. Eine Liste der EWR-Aufsichtsbehoerden ist auf der Website des Europaeischen Datenschutzausschusses verfuegbar.",
-      "supervisory2": "Wenn Lumenshore in Zukunft formell einen EU-Vertreter benennt, werden die Angaben des Vertreters in dieser Datenschutzerklaerung veroeffentlicht und der zustaendigen Aufsichtsbehoerde gemaess DSGVO Art. 27(4) mitgeteilt."
     }
   }
 }

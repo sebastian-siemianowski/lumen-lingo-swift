@@ -1333,7 +1333,18 @@
       "appStoreHeading": "Zgodność eksportowa App Store Connect",
       "appStoreP1": "Zgodność eksportowa LumenLingo jest deklarowana za pośrednictwem Apple App Store Connect. Aplikacja używa szyfrowania (HTTPS, iCloud), ale kwalifikuje się do zwolnienia, ponieważ opiera się wyłącznie na technologiach szyfrowania dostarczanych przez system."
     },
-    "updateBannerMessage": "Zaktualizowaliśmy naszą Politykę Prywatności."
+    "updateBannerMessage": "Zaktualizowaliśmy naszą Politykę Prywatności.",
+    "euRepresentative": {
+      "heading": "Przedstawiciel w UE (RODO Art. 27)",
+      "assessment1": "Lumenshore Limited jest zarejestrowana w Anglii i Walii, a zatem ma siedzibe poza Europejskim Obszarem Gospodarczym (EOG). Gdy Lumenshore oferuje swoja Usluge osobom w EOG lub monitoruje ich zachowanie na terenie EOG, moze podlegac obowiazkowi wyznaczenia przedstawiciela w UE na mocy art. 27 RODO.",
+      "assessment2": "LumenLingo przetwarza minimalne dane osobowe i nie monitoruje systematycznie zachowania osob z siedziba w UE. Algorytmy uczenia sie aplikacji dzialaja lokalnie na urzadzeniach uzytkownikow i nie obejmuja profilowania ani sledzenia po stronie serwera.",
+      "assessment3": "Lumenshore ocenila swoje dzialania w zakresie przetwarzania i stwierdzila, ze biorac pod uwage obecny zakres i charakter przetwarzania danych, wyznaczenie przedstawiciela w UE na mocy art. 27 nie jest obecnie obowiazkowe. Jednakze, w duchu dobrych praktyk i przejrzystosci, Lumenshore dobrowolnie wyznaczyla nastepujacy punkt kontaktowy dla zapytan dotyczacych ochrony danych w UE:",
+      "contact1": "W sprawach dotyczacych ochrony danych od osob lub organow nadzorczych z siedziba w UE:",
+      "contact2": "Lumenshore Limited, hello@lumenshore.com",
+      "contact3": "Lumenshore bedzie okresowo dokonywac przegladu tej oceny i formalnie wyznaczy przedstawiciela w UE zgodnie z art. 27 RODO, jesli bedzie to wymagane przez zmiany w dzialalnosci przetwarzania, obowiazujace wytyczne lub wymogi regulacyjne.",
+      "supervisory1": "Osoby z siedziba w UE maja prawo zlozyc skarge do lokalnego organu nadzorczego ds. ochrony danych. Lista organow nadzorczych EOG jest dostepna na stronie internetowej Europejskiej Rady Ochrony Danych.",
+      "supervisory2": "Jesli Lumenshore formalnie wyznaczy przedstawiciela w UE w przyszlosci, dane przedstawiciela zostana opublikowane w niniejszej Polityce Prywatnosci i przekazane wlasciwemu organowi nadzorczemu zgodnie z art. 27(4) RODO."
+    }
   },
   "Terms": {
     "meta": {
@@ -2795,19 +2806,6 @@
       "compliance1": "Lumenshore Limited zobowiazuje sie do przestrzegania Aktu o Uslugach Cyfrowych (Rozporzadzenie UE 2022/2065) w zakresie, w jakim ma on zastosowanie do Uslugi.",
       "compliance2": "Poniewaz LumenLingo nie kwalifikuje sie jako usluga posrednictwa, usluga hostingowa ani platforma internetowa w ramach DSA, wiekszosc obowiazkow DSA (w tym mechanizm powiadamiania i dzialania zgodnie z art. 16 oraz raportowanie przejrzystosci zgodnie z art. 15) nie ma obecnie zastosowania.",
       "compliance3": "Lumenshore monitoruje rozwoj regulacji i zaktualizuje swoje srodki zgodnosci, jesli zakres zastosowalnosci DSA zmieni sie ze wzgledu na nowe funkcje lub wytyczne regulacyjne."
-    }
-  },
-  "privacy": {
-    "euRepresentative": {
-      "heading": "Przedstawiciel w UE (RODO Art. 27)",
-      "assessment1": "Lumenshore Limited jest zarejestrowana w Anglii i Walii, a zatem ma siedzibe poza Europejskim Obszarem Gospodarczym (EOG). Gdy Lumenshore oferuje swoja Usluge osobom w EOG lub monitoruje ich zachowanie na terenie EOG, moze podlegac obowiazkowi wyznaczenia przedstawiciela w UE na mocy art. 27 RODO.",
-      "assessment2": "LumenLingo przetwarza minimalne dane osobowe i nie monitoruje systematycznie zachowania osob z siedziba w UE. Algorytmy uczenia sie aplikacji dzialaja lokalnie na urzadzeniach uzytkownikow i nie obejmuja profilowania ani sledzenia po stronie serwera.",
-      "assessment3": "Lumenshore ocenila swoje dzialania w zakresie przetwarzania i stwierdzila, ze biorac pod uwage obecny zakres i charakter przetwarzania danych, wyznaczenie przedstawiciela w UE na mocy art. 27 nie jest obecnie obowiazkowe. Jednakze, w duchu dobrych praktyk i przejrzystosci, Lumenshore dobrowolnie wyznaczyla nastepujacy punkt kontaktowy dla zapytan dotyczacych ochrony danych w UE:",
-      "contact1": "W sprawach dotyczacych ochrony danych od osob lub organow nadzorczych z siedziba w UE:",
-      "contact2": "Lumenshore Limited, hello@lumenshore.com",
-      "contact3": "Lumenshore bedzie okresowo dokonywac przegladu tej oceny i formalnie wyznaczy przedstawiciela w UE zgodnie z art. 27 RODO, jesli bedzie to wymagane przez zmiany w dzialalnosci przetwarzania, obowiazujace wytyczne lub wymogi regulacyjne.",
-      "supervisory1": "Osoby z siedziba w UE maja prawo zlozyc skarge do lokalnego organu nadzorczego ds. ochrony danych. Lista organow nadzorczych EOG jest dostepna na stronie internetowej Europejskiej Rady Ochrony Danych.",
-      "supervisory2": "Jesli Lumenshore formalnie wyznaczy przedstawiciela w UE w przyszlosci, dane przedstawiciela zostana opublikowane w niniejszej Polityce Prywatnosci i przekazane wlasciwemu organowi nadzorczemu zgodnie z art. 27(4) RODO."
     }
   }
 }
