@@ -474,7 +474,7 @@ extension AppStrings {
         legalConsentSubtitle: "Revisa nuestras políticas para continuar usando LumenLingo",
         privacyPolicyTitle: "Política de privacidad",
         termsOfServiceTitle: "Términos de servicio",
-        legalVersion: "Versión 2.0",
+        legalVersion: "Versión 2.1",
         legalLastUpdated: "Última actualización: 23 de marzo de 2026",
         legalPrivacySummary: "LumenLingo es operado por LumenShore Ltd. Respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta política cubre tanto nuestro sitio web como la app iOS.",
         legalTermsSummary: "Estos Términos de Servicio rigen el uso de la aplicación móvil LumenLingo operada por LumenShore Ltd. Al usar LumenLingo, aceptas estos Términos.",

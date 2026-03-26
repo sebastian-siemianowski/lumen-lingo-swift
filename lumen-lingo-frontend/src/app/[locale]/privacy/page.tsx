@@ -89,12 +89,6 @@ export default async function PrivacyPage({
     { id: 'australia-privacy', text: t('australiaPrivacy.heading'), level: 2 },
     { id: 'india-privacy', text: t('indiaPrivacy.heading'), level: 2 },
     { id: 'switzerland-privacy', text: t('switzerlandPrivacy.heading'), level: 2 },
-    { id: 'vat-compliance', text: t('vatCompliance.heading'), level: 2 },
-    { id: 'eu-vat-compliance', text: t('euVatCompliance.heading'), level: 2 },
-    { id: 'international-tax', text: t('internationalTax.heading'), level: 2 },
-    { id: 'pricing-compliance', text: t('pricingCompliance.heading'), level: 2 },
-    { id: 'sanctions-compliance', text: t('sanctionsCompliance.heading'), level: 2 },
-    { id: 'encryption-export', text: t('encryptionExport.heading'), level: 2 },
     { id: 'your-rights', text: t('yourRights.heading'), level: 2 },
     { id: 'california-rights', text: t('yourRights.californiaHeading'), level: 2 },
     { id: 'gpc-signals', text: t('gpcSignals.heading'), level: 2 },
@@ -454,6 +448,15 @@ export default async function PrivacyPage({
                   <p>{t('internationalTransfers.p1')}</p>
                 </section>
 
+                {/* ── Cross-reference to Terms for moved commercial sections ── */}
+                <p className="mt-6 text-sm text-white/50 italic">
+                  {t.rich('commercialTermsReference', {
+                    termsLink: (chunks: React.ReactNode) => (
+                      <Link href="/terms" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</Link>
+                    ),
+                  })}
+                </p>
+
                 {/* ── Aggregated and De-identified Data ── */}
                 <section id="aggregate-data">
                   <h2>{t('aggregateData.heading')}</h2>
@@ -650,8 +653,8 @@ export default async function PrivacyPage({
                 </section>
 
                 {/* ── Japan — APPI ── */}
-                <section id="japan-privacy">
-                  <h2>{t('japanPrivacy.heading')}</h2>
+                <details id="japan-privacy" className="jurisdiction-details" open={locale === 'ja'}>
+                  <summary><h2>{t('japanPrivacy.heading')}</h2></summary>
                   <p>{t('japanPrivacy.intro')}</p>
 
                   <h3>{t('japanPrivacy.purposeHeading')}</h3>
@@ -699,11 +702,11 @@ export default async function PrivacyPage({
                     <li>{t.rich('japanPrivacy.ppcLi1', { ...richTags, ppcLink: (chunks: React.ReactNode) => <a href="https://www.ppc.go.jp/en/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
                     <li>{t.rich('japanPrivacy.ppcLi2', richTags)}</li>
                   </ul>
-                </section>
+                </details>
 
                 {/* ── China — PIPL ── */}
-                <section id="china-privacy">
-                  <h2>{t('chinaPrivacy.heading')}</h2>
+                <details id="china-privacy" className="jurisdiction-details" open={locale === 'zh'}>
+                  <summary><h2>{t('chinaPrivacy.heading')}</h2></summary>
                   <p>{t('chinaPrivacy.intro')}</p>
 
                   <h3>{t('chinaPrivacy.applicabilityHeading')}</h3>
@@ -751,11 +754,11 @@ export default async function PrivacyPage({
                     <li>{t.rich('chinaPrivacy.cacLi1', { ...richTags, cacLink: (chunks: React.ReactNode) => <a href="https://www.cac.gov.cn" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
                     <li>{t.rich('chinaPrivacy.cacLi2', richTags)}</li>
                   </ul>
-                </section>
+                </details>
 
                 {/* ── Brazil — LGPD ── */}
-                <section id="brazil-privacy">
-                  <h2>{t('brazilPrivacy.heading')}</h2>
+                <details id="brazil-privacy" className="jurisdiction-details">
+                  <summary><h2>{t('brazilPrivacy.heading')}</h2></summary>
                   <p>{t('brazilPrivacy.intro')}</p>
 
                   <h3>{t('brazilPrivacy.applicabilityHeading')}</h3>
@@ -799,11 +802,11 @@ export default async function PrivacyPage({
                     <li>{t.rich('brazilPrivacy.anpdLi1', { ...richTags, anpdLink: (chunks: React.ReactNode) => <a href="https://www.gov.br/anpd/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</li>
                     <li>{t.rich('brazilPrivacy.anpdLi2', { ...richTags, anpdEmail: (chunks: React.ReactNode) => <a href="mailto:encarregado@anpd.gov.br">{chunks}</a> })}</li>
                   </ul>
-                </section>
+                </details>
 
                 {/* ── Germany — BDSG & TTDSG ── */}
-                <section id="germany-privacy">
-                  <h2>{t('germanyPrivacy.heading')}</h2>
+                <details id="germany-privacy" className="jurisdiction-details" open={locale === 'de'}>
+                  <summary><h2>{t('germanyPrivacy.heading')}</h2></summary>
                   <p>{t('germanyPrivacy.intro')}</p>
 
                   <h3>{t('germanyPrivacy.ttdsgHeading')}</h3>
@@ -822,11 +825,11 @@ export default async function PrivacyPage({
 
                   <h3>{t('germanyPrivacy.impressumHeading')}</h3>
                   <p>{t.rich('germanyPrivacy.impressumP1', { impressumLink: (chunks: React.ReactNode) => <Link href="/impressum" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</Link> })}</p>
-                </section>
+                </details>
 
                 {/* ── France — CNIL & French Data Protection ── */}
-                <section id="france-privacy">
-                  <h2>{t('francePrivacy.heading')}</h2>
+                <details id="france-privacy" className="jurisdiction-details" open={locale === 'fr'}>
+                  <summary><h2>{t('francePrivacy.heading')}</h2></summary>
                   <p>{t('francePrivacy.intro')}</p>
 
                   <h3>{t('francePrivacy.cnilCookieHeading')}</h3>
@@ -850,11 +853,11 @@ export default async function PrivacyPage({
 
                   <h3>{t('francePrivacy.mentionsHeading')}</h3>
                   <p>{t.rich('francePrivacy.mentionsP1', { mentionsLink: (chunks: React.ReactNode) => <Link href="/mentions-legales" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</Link> })}</p>
-                </section>
+                </details>
 
                 {/* ── Poland — PUODO & Polish Regulatory Requirements ── */}
-                <section id="poland-privacy">
-                  <h2>{t('polandPrivacy.heading')}</h2>
+                <details id="poland-privacy" className="jurisdiction-details" open={locale === 'pl'}>
+                  <summary><h2>{t('polandPrivacy.heading')}</h2></summary>
                   <p>{t('polandPrivacy.intro')}</p>
 
                   <h3>{t('polandPrivacy.puodoHeading')}</h3>
@@ -874,11 +877,11 @@ export default async function PrivacyPage({
 
                   <h3>{t('polandPrivacy.uokikHeading')}</h3>
                   <p>{t('polandPrivacy.uokikP1')}</p>
-                </section>
+                </details>
 
                 {/* ── Ukraine — Data Protection Law & Regulatory Requirements ── */}
-                <section id="ukraine-privacy">
-                  <h2>{t('ukrainePrivacy.heading')}</h2>
+                <details id="ukraine-privacy" className="jurisdiction-details" open={locale === 'uk'}>
+                  <summary><h2>{t('ukrainePrivacy.heading')}</h2></summary>
                   <p>{t('ukrainePrivacy.intro')}</p>
 
                   <h3>{t('ukrainePrivacy.lawHeading')}</h3>
@@ -898,10 +901,10 @@ export default async function PrivacyPage({
 
                   <h3>{t('ukrainePrivacy.monitoringHeading')}</h3>
                   <p>{t('ukrainePrivacy.monitoringP1')}</p>
-                </section>
+                </details>
 
-                <section id="middle-east-privacy">
-                  <h2>{t('middleEastPrivacy.heading')}</h2>
+                <details id="middle-east-privacy" className="jurisdiction-details" open={locale === 'ar'}>
+                  <summary><h2>{t('middleEastPrivacy.heading')}</h2></summary>
                   <p>{t('middleEastPrivacy.intro')}</p>
 
                   <h3>{t('middleEastPrivacy.uaeHeading')}</h3>
@@ -922,10 +925,10 @@ export default async function PrivacyPage({
 
                   <h3>{t('middleEastPrivacy.complianceHeading')}</h3>
                   <p>{t('middleEastPrivacy.complianceP1')}</p>
-                </section>
+                </details>
 
-                <section id="spain-latam-privacy">
-                  <h2>{t('spainLatamPrivacy.heading')}</h2>
+                <details id="spain-latam-privacy" className="jurisdiction-details" open={locale === 'es'}>
+                  <summary><h2>{t('spainLatamPrivacy.heading')}</h2></summary>
                   <p>{t('spainLatamPrivacy.intro')}</p>
 
                   <h3>{t('spainLatamPrivacy.spainHeading')}</h3>
@@ -946,10 +949,10 @@ export default async function PrivacyPage({
 
                   <h3>{t('spainLatamPrivacy.complianceHeading')}</h3>
                   <p>{t('spainLatamPrivacy.complianceP1')}</p>
-                </section>
+                </details>
 
-                <section id="canada-privacy">
-                  <h2>{t('canadaPrivacy.heading')}</h2>
+                <details id="canada-privacy" className="jurisdiction-details">
+                  <summary><h2>{t('canadaPrivacy.heading')}</h2></summary>
                   <p>{t('canadaPrivacy.intro')}</p>
 
                   <h3>{t('canadaPrivacy.pipedaHeading')}</h3>
@@ -966,10 +969,10 @@ export default async function PrivacyPage({
 
                   <h3>{t('canadaPrivacy.disclosuresHeading')}</h3>
                   <p>{t('canadaPrivacy.disclosuresP1')}</p>
-                </section>
+                </details>
 
-                <section id="south-korea-privacy">
-                  <h2>{t('southKoreaPrivacy.heading')}</h2>
+                <details id="south-korea-privacy" className="jurisdiction-details">
+                  <summary><h2>{t('southKoreaPrivacy.heading')}</h2></summary>
                   <p>{t('southKoreaPrivacy.intro')}</p>
 
                   <h3>{t('southKoreaPrivacy.assessmentHeading')}</h3>
@@ -980,10 +983,10 @@ export default async function PrivacyPage({
 
                   <h3>{t('southKoreaPrivacy.monitoringHeading')}</h3>
                   <p>{t('southKoreaPrivacy.monitoringP1')}</p>
-                </section>
+                </details>
 
-                <section id="australia-privacy">
-                  <h2>{t('australiaPrivacy.heading')}</h2>
+                <details id="australia-privacy" className="jurisdiction-details">
+                  <summary><h2>{t('australiaPrivacy.heading')}</h2></summary>
                   <p>{t('australiaPrivacy.intro')}</p>
 
                   <h3>{t('australiaPrivacy.actHeading')}</h3>
@@ -1000,10 +1003,10 @@ export default async function PrivacyPage({
 
                   <h3>{t('australiaPrivacy.disclosuresHeading')}</h3>
                   <p>{t('australiaPrivacy.disclosuresP1')}</p>
-                </section>
+                </details>
 
-                <section id="india-privacy">
-                  <h2>{t('indiaPrivacy.heading')}</h2>
+                <details id="india-privacy" className="jurisdiction-details">
+                  <summary><h2>{t('indiaPrivacy.heading')}</h2></summary>
                   <p>{t('indiaPrivacy.intro')}</p>
 
                   <h3>{t('indiaPrivacy.applicabilityHeading')}</h3>
@@ -1020,10 +1023,10 @@ export default async function PrivacyPage({
 
                   <h3>{t('indiaPrivacy.monitoringHeading')}</h3>
                   <p>{t('indiaPrivacy.monitoringP1')}</p>
-                </section>
+                </details>
 
-                <section id="switzerland-privacy">
-                  <h2>{t('switzerlandPrivacy.heading')}</h2>
+                <details id="switzerland-privacy" className="jurisdiction-details">
+                  <summary><h2>{t('switzerlandPrivacy.heading')}</h2></summary>
                   <p>{t('switzerlandPrivacy.intro')}</p>
 
                   <h3>{t('switzerlandPrivacy.applicabilityHeading')}</h3>
@@ -1049,131 +1052,7 @@ export default async function PrivacyPage({
 
                   <h3>{t('switzerlandPrivacy.penaltiesHeading')}</h3>
                   <p>{t('switzerlandPrivacy.penaltiesP1')}</p>
-                </section>
-
-                <section id="vat-compliance">
-                  <h2>{t('vatCompliance.heading')}</h2>
-                  <p>{t('vatCompliance.intro')}</p>
-
-                  <h3>{t('vatCompliance.iapHeading')}</h3>
-                  <p>{t('vatCompliance.iapP1')}</p>
-                  <p>{t('vatCompliance.iapP2')}</p>
-
-                  <h3>{t('vatCompliance.directHeading')}</h3>
-                  <p>{t('vatCompliance.directP1')}</p>
-                  <p>{t('vatCompliance.directP2')}</p>
-
-                  <h3>{t('vatCompliance.recordsHeading')}</h3>
-                  <p>{t('vatCompliance.recordsP1')}</p>
-                </section>
-
-                <section id="eu-vat-compliance">
-                  <h2>{t('euVatCompliance.heading')}</h2>
-                  <p>{t('euVatCompliance.intro')}</p>
-
-                  <h3>{t('euVatCompliance.appleMarketplaceHeading')}</h3>
-                  <p>{t('euVatCompliance.appleMarketplaceP1')}</p>
-                  <p>{t('euVatCompliance.appleMarketplaceP2')}</p>
-
-                  <h3>{t('euVatCompliance.ossHeading')}</h3>
-                  <p>{t('euVatCompliance.ossP1')}</p>
-                  <p>{t('euVatCompliance.ossP2')}</p>
-
-                  <h3>{t('euVatCompliance.b2bHeading')}</h3>
-                  <p>{t('euVatCompliance.b2bP1')}</p>
-
-                  <h3>{t('euVatCompliance.evidenceHeading')}</h3>
-                  <p>{t('euVatCompliance.evidenceP1')}</p>
-                </section>
-
-                <section id="international-tax">
-                  <h2>{t('internationalTax.heading')}</h2>
-                  <p>{t('internationalTax.intro')}</p>
-
-                  <h3>{t('internationalTax.japanHeading')}</h3>
-                  <p>{t('internationalTax.japanP1')}</p>
-
-                  <h3>{t('internationalTax.usHeading')}</h3>
-                  <p>{t('internationalTax.usP1')}</p>
-
-                  <h3>{t('internationalTax.australiaHeading')}</h3>
-                  <p>{t('internationalTax.australiaP1')}</p>
-
-                  <h3>{t('internationalTax.indiaHeading')}</h3>
-                  <p>{t('internationalTax.indiaP1')}</p>
-
-                  <h3>{t('internationalTax.oecdHeading')}</h3>
-                  <p>{t('internationalTax.oecdP1')}</p>
-
-                  <h3>{t('internationalTax.corporationTaxHeading')}</h3>
-                  <p>{t('internationalTax.corporationTaxP1')}</p>
-
-                  <h3>{t('internationalTax.transferPricingHeading')}</h3>
-                  <p>{t('internationalTax.transferPricingP1')}</p>
-                </section>
-
-                <section id="pricing-compliance">
-                  <h2>{t('pricingCompliance.heading')}</h2>
-                  <p>{t('pricingCompliance.intro')}</p>
-
-                  <h3>{t('pricingCompliance.ukPriceMarkingHeading')}</h3>
-                  <p>{t('pricingCompliance.ukPriceMarkingP1')}</p>
-
-                  <h3>{t('pricingCompliance.euConsumerRightsHeading')}</h3>
-                  <p>{t('pricingCompliance.euConsumerRightsP1')}</p>
-
-                  <h3>{t('pricingCompliance.euOmnibusHeading')}</h3>
-                  <p>{t('pricingCompliance.euOmnibusP1')}</p>
-
-                  <h3>{t('pricingCompliance.iosAppPricingHeading')}</h3>
-                  <p>{t('pricingCompliance.iosAppPricingP1')}</p>
-
-                  <h3>{t('pricingCompliance.websitePricingHeading')}</h3>
-                  <p>{t('pricingCompliance.websitePricingP1')}</p>
-                </section>
-
-                <section id="sanctions-compliance">
-                  <h2>{t('sanctionsCompliance.heading')}</h2>
-                  <p>{t('sanctionsCompliance.intro')}</p>
-
-                  <h3>{t('sanctionsCompliance.ukHeading')}</h3>
-                  <p>{t('sanctionsCompliance.ukP1')}</p>
-
-                  <h3>{t('sanctionsCompliance.usHeading')}</h3>
-                  <p>{t('sanctionsCompliance.usP1')}</p>
-
-                  <h3>{t('sanctionsCompliance.euHeading')}</h3>
-                  <p>{t('sanctionsCompliance.euP1')}</p>
-
-                  <h3>{t('sanctionsCompliance.ukraineHeading')}</h3>
-                  <p>{t('sanctionsCompliance.ukraineP1')}</p>
-
-                  <h3>{t('sanctionsCompliance.screeningHeading')}</h3>
-                  <p>{t('sanctionsCompliance.screeningP1')}</p>
-                </section>
-
-                <section id="encryption-export">
-                  <h2>{t('encryptionExport.heading')}</h2>
-                  <p>{t('encryptionExport.intro')}</p>
-
-                  <h3>{t('encryptionExport.auditHeading')}</h3>
-                  <p>{t('encryptionExport.auditP1')}</p>
-                  <ul>
-                    <li>{t('encryptionExport.auditLi1')}</li>
-                    <li>{t('encryptionExport.auditLi2')}</li>
-                    <li>{t('encryptionExport.auditLi3')}</li>
-                    <li>{t('encryptionExport.auditLi4')}</li>
-                  </ul>
-
-                  <h3>{t('encryptionExport.earHeading')}</h3>
-                  <p>{t('encryptionExport.earP1')}</p>
-
-                  <h3>{t('encryptionExport.frenchHeading')}</h3>
-                  <p>{t('encryptionExport.frenchP1')}</p>
-
-                  <h3>{t('encryptionExport.appStoreHeading')}</h3>
-                  <p>{t('encryptionExport.appStoreP1')}</p>
-                </section>
+                </details>
 
                 <section id="your-rights">
                   <h2>{t('yourRights.heading')}</h2>
@@ -1243,6 +1122,7 @@ export default async function PrivacyPage({
                   <p>{t('policyUpdates.p2')}</p>
                   <h3>{t('policyUpdates.versionHistory')}</h3>
                   <ul>
+                    <li>{t.rich('policyUpdates.v2_1', richTags)}</li>
                     <li>{t.rich('policyUpdates.v2', richTags)}</li>
                     <li>{t.rich('policyUpdates.v1', richTags)}</li>
                   </ul>
@@ -1272,7 +1152,7 @@ export default async function PrivacyPage({
                   <p>{t('contactUs.responseTime')}</p>
                 </section>
 
-                <p className="mt-12 text-xs text-white/30">{t('trademarkAttribution')}</p>
+                <p className="mt-12 text-xs text-white/30">{tLegal('trademarkAttribution')}</p>
               </div>
             </FadeIn>
 

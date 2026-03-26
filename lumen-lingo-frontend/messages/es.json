@@ -443,13 +443,14 @@
   "Legal": {
     "tocLabel": "On this page",
     "downloadPdf": "Download as PDF",
-    "lastUpdated": "Last updated: 23 March 2026",
-    "version": "Version 2.0",
+    "lastUpdated": "Última actualización: 26 de marzo de 2026",
+    "version": "Versión 2.1",
     "languageDisclaimer": "Este documento está disponible en varios idiomas. En caso de conflicto o inconsistencia entre las versiones traducidas, prevalecerá la versión en inglés.",
     "viewEnglishVersion": "Ver versión en inglés",
-    "termsVersion": "Version 1.0",
+    "termsVersion": "Versión 1.1",
     "updateBannerDismiss": "Cerrar",
-    "updateBannerLink": "Ver cambios"
+    "updateBannerLink": "Ver cambios",
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
   },
   "Privacy": {
     "meta": {
@@ -668,7 +669,8 @@
       "p2": "We encourage you to review this page periodically. Continued use of LumenLingo after changes constitutes acceptance of the updated policy.",
       "versionHistory": "Version History",
       "v2": "<b>v2.0</b> (23 March 2026) — Extended policy to cover lumenlingo.com website data collection, added Sentry session replay disclosure, Vercel Analytics disclosure, legal basis for processing, data flow section, and service worker caching details.",
-      "v1": "<b>v1.0</b> (22 March 2026) — Initial privacy policy covering the LumenLingo iOS app."
+      "v1": "<b>v1.0</b> (22 March 2026) — Initial privacy policy covering the LumenLingo iOS app.",
+      "v2_1": "<b>v2.1</b> (26 de marzo de 2026) — Secciones reorganizadas: se trasladaron las divulgaciones de cumplimiento comercial/regulatorio (tratamiento del IVA, IVA de la UE, impuestos internacionales, cumplimiento de precios, sanciones, controles de exportación de cifrado) a los Términos de servicio. Se añadió referencia cruzada a los Términos. Se consolidó la atribución de marcas registradas. No se eliminó ningún contenido."
     },
     "contactUs": {
       "heading": "Contact Us",
@@ -770,7 +772,6 @@
       },
       "survival": "Our right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data that was derived from your use of the Service."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
     "ccpaNotice": {
       "heading": "Aviso de Recogida de Datos de California (CCPA/CPRA)",
       "intro": "Si usted es residente de California, la Ley de Privacidad del Consumidor de California (CCPA) y la Ley de Derechos de Privacidad de California (CPRA) requieren que divulguemos las categorías de información personal que recopilamos, los propósitos de la recopilación y si dicha información se vende o comparte. Este aviso se proporciona en o antes del punto de recogida.",
@@ -1243,95 +1244,6 @@
       "appStoreP1": "LumenLingo tiene clasificación 4+ (contenido educativo) en el Apple App Store. No requiere registro de cuenta.",
       "appStoreP2": "Para servicios web, la edad mínima se aplica según la jurisdicción del usuario."
     },
-    "vatCompliance": {
-      "heading": "IVA y tratamiento fiscal",
-      "intro": "Lumenshore Limited está registrada a efectos del IVA en el Reino Unido (Nº GB 270411929). Esta sección explica el tratamiento del IVA en nuestros servicios.",
-      "iapHeading": "Compras integradas (iOS)",
-      "iapP1": "Todas las compras integradas realizadas a través del App Store de Apple son procesadas por Apple como comerciante registrado. Apple recauda y remite el IVA.",
-      "iapP2": "Los precios mostrados en el App Store incluyen el IVA aplicable. El precio final lo determina Apple según su región.",
-      "directHeading": "Precios del sitio web",
-      "directP1": "Todos los precios mostrados en nuestro sitio web para consumidores de UK y UE incluyen el IVA al tipo aplicable.",
-      "directP2": "Los precios cobrados a través del App Store pueden variar según la ubicación. El precio en nuestro sitio es indicativo.",
-      "recordsHeading": "Registros fiscales",
-      "recordsP1": "Conservamos todos los registros de IVA y financieros durante un mínimo de 6 años según los requisitos del HMRC.",
-      "disclaimerAppStore": "Las suscripciones se facturan a través del App Store de Apple. Los precios incluyen impuestos aplicables. El precio final puede variar según la región."
-    },
-    "euVatCompliance": {
-      "heading": "IVA de la UE sobre servicios digitales",
-      "intro": "Como proveedor con sede en el Reino Unido que ofrece servicios digitales a consumidores de la UE, cumplimos con las normas de IVA de la UE.",
-      "appleMarketplaceHeading": "Apple como operador de mercado de la UE",
-      "appleMarketplaceP1": "Según las normas de mercado de la UE y DAC7, Apple es considerado el proveedor a efectos del IVA. Apple recauda y remite el IVA al tipo de cada Estado miembro.",
-      "appleMarketplaceP2": "La obligación de Lumenshore se limita al reconocimiento adecuado de los ingresos netos recibidos de Apple.",
-      "ossHeading": "Ventanilla Única (OSS)",
-      "ossP1": "Para los servicios digitales vendidos directamente a consumidores de la UE, utilizamos el régimen OSS Non-Union del Reino Unido.",
-      "ossP2": "El IVA de la UE se aplica al tipo de cada Estado miembro y se remite a través de HMRC. Los registros se conservan durante al menos 10 años.",
-      "b2bHeading": "Servicios digitales B2B",
-      "b2bP1": "Para los servicios prestados a empresas de la UE, se aplica el mecanismo de inversión del sujeto pasivo. Verificamos los números de IVA mediante VIES.",
-      "evidenceHeading": "Prueba de ubicación del cliente",
-      "evidenceP1": "Cumplimos con la regla de dos pruebas de la UE. Para las compras del App Store, Apple proporciona estas pruebas automáticamente."
-    },
-    "internationalTax": {
-      "heading": "Obligaciones fiscales internacionales",
-      "intro": "Como proveedor global, Lumenshore supervisa las obligaciones fiscales en todas las jurisdicciones donde nuestra aplicación está disponible.",
-      "japanHeading": "Japón (Impuesto al consumo)",
-      "japanP1": "El impuesto al consumo japonés del 10% se aplica a los servicios digitales. Apple gestiona la recaudación y remisión del JCT para todas las compras integradas.",
-      "usHeading": "Estados Unidos (Sales Tax)",
-      "usP1": "No existe un impuesto federal sobre servicios digitales en EE.UU. Apple gestiona la recaudación del Sales Tax en todos los estados.",
-      "australiaHeading": "Australia (GST)",
-      "australiaP1": "El GST australiano del 10% se aplica a los productos digitales. Apple gestiona la recaudación del GST para las compras del App Store.",
-      "indiaHeading": "India (GST)",
-      "indiaP1": "El GST indio del 18% se aplica a los servicios de información en línea. Apple gestiona el GST para las compras integradas.",
-      "oecdHeading": "Impuesto mínimo global OCDE",
-      "oecdP1": "El impuesto mínimo global del 15% de la OCDE se aplica actualmente a empresas multinacionales con ingresos superiores a 750 M€. Esto no afecta actualmente a Lumenshore.",
-      "corporationTaxHeading": "Impuesto de sociedades UK",
-      "corporationTaxP1": "Lumenshore paga el impuesto de sociedades del Reino Unido sobre beneficios mundiales. Evaluamos la elegibilidad para créditos fiscales de I+D.",
-      "transferPricingHeading": "Precios de transferencia",
-      "transferPricingP1": "Como entidad única, Lumenshore no tiene actualmente transacciones interempresariales que requieran documentación de precios de transferencia."
-    },
-    "pricingCompliance": {
-      "heading": "Cumplimiento en la exhibición de precios",
-      "intro": "Lumenshore se compromete con una fijación de precios transparente y precisa en todas las plataformas.",
-      "ukPriceMarkingHeading": "UK Price Marking Order 2004",
-      "ukPriceMarkingP1": "Todos los precios mostrados a consumidores británicos incluyen IVA. No hay cargos ocultos.",
-      "euConsumerRightsHeading": "Directiva de Derechos del Consumidor de la UE",
-      "euConsumerRightsP1": "Los precios se muestran de manera clara y comprensible. El precio total con impuestos se muestra antes de cualquier compromiso de compra.",
-      "euOmnibusHeading": "Directiva Ómnibus de la UE",
-      "euOmnibusP1": "En caso de precios reducidos, se muestra el precio más bajo de los últimos 30 días. Nuestros precios actuales son precios estándar permanentes.",
-      "iosAppPricingHeading": "Precios de la App iOS",
-      "iosAppPricingP1": "Las compras integradas utilizan Apple StoreKit con precios localizados que incluyen impuestos locales. El precio mostrado siempre coincide con lo que cobra Apple.",
-      "websitePricingHeading": "Precios del sitio web",
-      "websitePricingP1": "Nuestro sitio muestra precios en GBP con IVA incluido. El precio final lo determina la App Store de Apple según su ubicación."
-    },
-    "sanctionsCompliance": {
-      "heading": "Sanciones y cumplimiento comercial",
-      "intro": "LumenShore Limited es una empresa constituida en el Reino Unido (N.º de empresa 09607326) que distribuye LumenLingo a nivel mundial a través de la App Store de Apple. Mantenemos el cumplimiento de los regímenes de sanciones aplicables en todas las jurisdicciones en las que operamos.",
-      "ukHeading": "Cumplimiento de sanciones del Reino Unido",
-      "ukP1": "Cumplimos con la Ley de Sanciones y Prevención del Blanqueo de Capitales de 2018 y las regulaciones administradas por la Oficina de Implementación de Sanciones Financieras (OFSI). Como aplicación de aprendizaje de idiomas para consumidores, LumenLingo está clasificada como software no estratégico y generalmente está exenta de la mayoría de las restricciones comerciales. Revisamos las listas consolidadas de sanciones de la OFSI y no proporcionamos servicios a sabiendas a personas o entidades sancionadas.",
-      "usHeading": "Sanciones OFAC de EE. UU.",
-      "usP1": "Dado que LumenLingo se distribuye a través de la App Store de Apple, que opera desde Estados Unidos, se aplican las sanciones de la Oficina de Control de Activos Extranjeros (OFAC). Apple ya restringe el acceso a la App Store en países sujetos a sanciones integrales, incluyendo Cuba, Irán, Corea del Norte, Siria y las regiones de Crimea, Donetsk y Lugansk. LumenShore no distribuye de forma independiente a ningún territorio sancionado.",
-      "euHeading": "Marco de sanciones de la UE",
-      "euP1": "Monitorizamos las listas de sanciones de la UE para detectar cambios que puedan afectar la prestación de servicios digitales, particularmente en regiones relevantes para nuestra base de usuarios de habla árabe y ucraniana. Las restricciones de distribución de la App Store de Apple se alinean con los requisitos de sanciones de la UE. No proporcionamos servicios a personas o entidades sancionadas por la UE.",
-      "ukraineHeading": "Ucrania — Disponibilidad del servicio",
-      "ukraineP1": "Ucrania no está sujeta a sanciones del Reino Unido, la UE o EE. UU. Los servicios a usuarios ucranianos son legales y se apoyan activamente. LumenLingo proporciona una configuración regional ucraniana y tres pares de idiomas ucranianos (UA↔EN, UA↔PL, PL→UA). Sin embargo, las regiones de Crimea, Donetsk y Lugansk tienen estado restringido bajo múltiples regímenes de sanciones, y Apple restringe el acceso a la App Store en estas regiones.",
-      "screeningHeading": "Verificación de sanciones",
-      "screeningP1": "Para usuarios con cuenta que realizan compras, la verificación de sanciones se gestiona a nivel de infraestructura de pago por la App Store de Apple. Apple realiza verificaciones de Conozca a su Cliente (KYC) en las cuentas de Apple ID y restringe el acceso desde territorios sancionados. LumenLingo no procesa pagos directamente y depende de la infraestructura de cumplimiento de Apple para la verificación a nivel de transacción."
-    },
-    "encryptionExport": {
-      "heading": "Cifrado y controles de exportación",
-      "intro": "LumenLingo utiliza tecnologías de cifrado estándar de la industria proporcionadas por la plataforma Apple iOS. Esta sección documenta nuestro uso de cifrado para transparencia y cumplimiento normativo.",
-      "auditHeading": "Auditoría de cifrado",
-      "auditP1": "Las siguientes tecnologías de cifrado se utilizan en LumenLingo, todas proporcionadas por la plataforma Apple iOS:",
-      "auditLi1": "HTTPS/TLS — Todas las comunicaciones de red utilizan Transport Layer Security para datos en tránsito",
-      "auditLi2": "Cifrado de iCloud — Los datos sincronizados a través de iCloud utilizan el cifrado de extremo a extremo de Apple",
-      "auditLi3": "Protección de archivos SwiftData — Los datos locales en reposo están protegidos por el cifrado a nivel de archivo de iOS",
-      "auditLi4": "Servicios de llavero — Las credenciales sensibles se almacenan en el llavero de iOS con cifrado respaldado por hardware",
-      "earHeading": "Regulaciones de Administración de Exportaciones de EE. UU. (EAR)",
-      "earP1": "LumenLingo utiliza únicamente cifrado estándar proporcionado por el sistema (HTTPS/TLS, iCloud, protección de archivos iOS). Estos califican para la Excepción de Licencia EAR ENC (Sección 740.17) como software de cifrado de mercado masivo que utiliza estándares criptográficos publicados. No se implementan algoritmos de cifrado propietarios o personalizados.",
-      "frenchHeading": "Controles de importación de cifrado francés",
-      "frenchP1": "Francia requiere una declaración para la importación de software de cifrado según las regulaciones de la ANSSI. Las aplicaciones que utilizan únicamente comunicaciones HTTPS/TLS estándar y cifrado proporcionado por el sistema están generalmente exentas de los requisitos de declaración. LumenLingo utiliza exclusivamente cifrado proporcionado por la plataforma Apple y no implementa ninguna funcionalidad criptográfica personalizada.",
-      "appStoreHeading": "Cumplimiento de exportación en App Store Connect",
-      "appStoreP1": "El cumplimiento de exportación de LumenLingo se declara a través de App Store Connect de Apple. La aplicación utiliza cifrado (HTTPS, iCloud) pero califica para la exención ya que se basa exclusivamente en tecnologías de cifrado proporcionadas por el sistema."
-    },
     "updateBannerMessage": "Hemos actualizado nuestra Política de Privacidad.",
     "euRepresentative": {
       "heading": "Representante en la UE (RGPD Art. 27)",
@@ -1343,7 +1255,8 @@
       "contact3": "Lumenshore revisara esta evaluacion periodicamente y designara formalmente un representante en la UE segun el Art. 27 del RGPD si asi lo requieren cambios en las actividades de procesamiento, orientacion aplicable o requisitos regulatorios.",
       "supervisory1": "Las personas con sede en la UE tienen derecho a presentar una reclamacion ante su autoridad de supervision de proteccion de datos local. Una lista de autoridades de supervision del EEE esta disponible en el sitio web del Comite Europeo de Proteccion de Datos.",
       "supervisory2": "Si Lumenshore designa formalmente un representante en la UE en el futuro, los datos del representante se publicaran en esta Politica de Privacidad y se comunicaran a la autoridad de supervision pertinente de conformidad con el Art. 27(4) del RGPD."
-    }
+    },
+    "commercialTermsReference": "Para obtener información sobre el tratamiento del IVA, la conformidad en la visualización de precios, el cumplimiento de sanciones y los controles de exportación de cifrado, consulte nuestros <termsLink>Términos de servicio</termsLink>."
   },
   "Terms": {
     "meta": {
@@ -1478,7 +1391,8 @@
       "p1": "Podemos actualizar estos Terminos de vez en cuando. Cuando realicemos cambios significativos, actualizaremos la fecha de \"Ultima actualizacion\" y el numero de version en la parte superior de esta pagina y podremos notificarle a traves de la Aplicacion.",
       "p2": "El uso continuado de LumenLingo despues de que se publiquen los cambios constituye la aceptacion de los Terminos revisados. Si no esta de acuerdo con los cambios, deje de usar la Aplicacion y cancele cualquier suscripcion activa.",
       "versionHistory": "Historial de Versiones",
-      "v1": "<b>v1.0</b> (23 de marzo de 2026) — Terminos de Servicio iniciales."
+      "v1": "<b>v1.0</b> (23 de marzo de 2026) — Terminos de Servicio iniciales.",
+      "v1_1": "<b>v1.1</b> (26 de marzo de 2026) — Se añadieron secciones de cumplimiento comercial/regulatorio trasladadas desde la Política de Privacidad: tratamiento del IVA, IVA de la UE, obligaciones fiscales internacionales, cumplimiento de precios, sanciones comerciales, controles de exportación de cifrado. La sección de Datos agregados fue reemplazada con una referencia cruzada a la Política de Privacidad. Se eliminó la entrada duplicada de Ley aplicable en el índice. Se consolidó la atribución de marcas."
     },
     "contactUs": {
       "heading": "Contact Us",
@@ -1488,14 +1402,9 @@
       "responseTime": "We typically respond within 48 hours."
     },
     "aggregateData": {
-      "heading": "Aggregate Data",
-      "p1": "By using the Service, you acknowledge that LumenShore may derive aggregated, anonymised, and statistical data from your use of the Service (“Aggregate Data”).",
-      "p2": "Aggregate Data does not identify you personally and may be used by LumenShore for any lawful business purpose without restriction, compensation, or attribution.",
-      "p3": "Examples of Aggregate Data include: total number of users per language pair, average learning session duration, most commonly studied vocabulary, error rates per difficulty level, and feature usage statistics.",
-      "p4": "LumenShore may use Aggregate Data for product improvement, research, analytics, marketing, benchmarking, investor reporting, blog posts, case studies, and public reports.",
-      "survival": "LumenShore’s right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data derived from your use of the Service."
+      "heading": "Datos agregados y anonimizados",
+      "crossReference": "Nuestras prácticas con respecto a la recopilación, uso y protección de datos agregados y anonimizados se describen en detalle en nuestra Política de Privacidad. Consulte la sección de Datos agregados y anonimizados de nuestra <privacyLink>Política de Privacidad</privacyLink>."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
     "consumerRights": {
       "heading": "Sus Derechos como Consumidor",
       "intro": "Si usted es consumidor en el Reino Unido, tiene derechos legales en virtud de la <b>Ley de Derechos del Consumidor de 2015</b> y los <b>Reglamentos de Contratos de Consumo (Información, Cancelación y Cargos Adicionales) de 2013</b>. Nada en estos Términos excluye ni limita dichos derechos.",
@@ -1932,6 +1841,95 @@
       "indemnificationHeading": "Indemnizacion Regulatoria",
       "indemnification1": "Acepta indemnizar y mantener indemne a LumenShore Limited de cualquier reclamacion, perdida o gastos derivados de su incumplimiento de las leyes o regulaciones aplicables al usar el Servicio.",
       "indemnification2": "Esta obligacion de indemnizacion sobrevive a la terminacion de su cuenta o estos Terminos."
+    },
+    "vatCompliance": {
+      "heading": "IVA y tratamiento fiscal",
+      "intro": "Lumenshore Limited está registrada a efectos del IVA en el Reino Unido (Nº GB 270411929). Esta sección explica el tratamiento del IVA en nuestros servicios.",
+      "iapHeading": "Compras integradas (iOS)",
+      "iapP1": "Todas las compras integradas realizadas a través del App Store de Apple son procesadas por Apple como comerciante registrado. Apple recauda y remite el IVA.",
+      "iapP2": "Los precios mostrados en el App Store incluyen el IVA aplicable. El precio final lo determina Apple según su región.",
+      "directHeading": "Precios del sitio web",
+      "directP1": "Todos los precios mostrados en nuestro sitio web para consumidores de UK y UE incluyen el IVA al tipo aplicable.",
+      "directP2": "Los precios cobrados a través del App Store pueden variar según la ubicación. El precio en nuestro sitio es indicativo.",
+      "recordsHeading": "Registros fiscales",
+      "recordsP1": "Conservamos todos los registros de IVA y financieros durante un mínimo de 6 años según los requisitos del HMRC.",
+      "disclaimerAppStore": "Las suscripciones se facturan a través del App Store de Apple. Los precios incluyen impuestos aplicables. El precio final puede variar según la región."
+    },
+    "euVatCompliance": {
+      "heading": "IVA de la UE sobre servicios digitales",
+      "intro": "Como proveedor con sede en el Reino Unido que ofrece servicios digitales a consumidores de la UE, cumplimos con las normas de IVA de la UE.",
+      "appleMarketplaceHeading": "Apple como operador de mercado de la UE",
+      "appleMarketplaceP1": "Según las normas de mercado de la UE y DAC7, Apple es considerado el proveedor a efectos del IVA. Apple recauda y remite el IVA al tipo de cada Estado miembro.",
+      "appleMarketplaceP2": "La obligación de Lumenshore se limita al reconocimiento adecuado de los ingresos netos recibidos de Apple.",
+      "ossHeading": "Ventanilla Única (OSS)",
+      "ossP1": "Para los servicios digitales vendidos directamente a consumidores de la UE, utilizamos el régimen OSS Non-Union del Reino Unido.",
+      "ossP2": "El IVA de la UE se aplica al tipo de cada Estado miembro y se remite a través de HMRC. Los registros se conservan durante al menos 10 años.",
+      "b2bHeading": "Servicios digitales B2B",
+      "b2bP1": "Para los servicios prestados a empresas de la UE, se aplica el mecanismo de inversión del sujeto pasivo. Verificamos los números de IVA mediante VIES.",
+      "evidenceHeading": "Prueba de ubicación del cliente",
+      "evidenceP1": "Cumplimos con la regla de dos pruebas de la UE. Para las compras del App Store, Apple proporciona estas pruebas automáticamente."
+    },
+    "internationalTax": {
+      "heading": "Obligaciones fiscales internacionales",
+      "intro": "Como proveedor global, Lumenshore supervisa las obligaciones fiscales en todas las jurisdicciones donde nuestra aplicación está disponible.",
+      "japanHeading": "Japón (Impuesto al consumo)",
+      "japanP1": "El impuesto al consumo japonés del 10% se aplica a los servicios digitales. Apple gestiona la recaudación y remisión del JCT para todas las compras integradas.",
+      "usHeading": "Estados Unidos (Sales Tax)",
+      "usP1": "No existe un impuesto federal sobre servicios digitales en EE.UU. Apple gestiona la recaudación del Sales Tax en todos los estados.",
+      "australiaHeading": "Australia (GST)",
+      "australiaP1": "El GST australiano del 10% se aplica a los productos digitales. Apple gestiona la recaudación del GST para las compras del App Store.",
+      "indiaHeading": "India (GST)",
+      "indiaP1": "El GST indio del 18% se aplica a los servicios de información en línea. Apple gestiona el GST para las compras integradas.",
+      "oecdHeading": "Impuesto mínimo global OCDE",
+      "oecdP1": "El impuesto mínimo global del 15% de la OCDE se aplica actualmente a empresas multinacionales con ingresos superiores a 750 M€. Esto no afecta actualmente a Lumenshore.",
+      "corporationTaxHeading": "Impuesto de sociedades UK",
+      "corporationTaxP1": "Lumenshore paga el impuesto de sociedades del Reino Unido sobre beneficios mundiales. Evaluamos la elegibilidad para créditos fiscales de I+D.",
+      "transferPricingHeading": "Precios de transferencia",
+      "transferPricingP1": "Como entidad única, Lumenshore no tiene actualmente transacciones interempresariales que requieran documentación de precios de transferencia."
+    },
+    "pricingCompliance": {
+      "heading": "Cumplimiento en la exhibición de precios",
+      "intro": "Lumenshore se compromete con una fijación de precios transparente y precisa en todas las plataformas.",
+      "ukPriceMarkingHeading": "UK Price Marking Order 2004",
+      "ukPriceMarkingP1": "Todos los precios mostrados a consumidores británicos incluyen IVA. No hay cargos ocultos.",
+      "euConsumerRightsHeading": "Directiva de Derechos del Consumidor de la UE",
+      "euConsumerRightsP1": "Los precios se muestran de manera clara y comprensible. El precio total con impuestos se muestra antes de cualquier compromiso de compra.",
+      "euOmnibusHeading": "Directiva Ómnibus de la UE",
+      "euOmnibusP1": "En caso de precios reducidos, se muestra el precio más bajo de los últimos 30 días. Nuestros precios actuales son precios estándar permanentes.",
+      "iosAppPricingHeading": "Precios de la App iOS",
+      "iosAppPricingP1": "Las compras integradas utilizan Apple StoreKit con precios localizados que incluyen impuestos locales. El precio mostrado siempre coincide con lo que cobra Apple.",
+      "websitePricingHeading": "Precios del sitio web",
+      "websitePricingP1": "Nuestro sitio muestra precios en GBP con IVA incluido. El precio final lo determina la App Store de Apple según su ubicación."
+    },
+    "sanctionsCompliance": {
+      "heading": "Sanciones y cumplimiento comercial",
+      "intro": "LumenShore Limited es una empresa constituida en el Reino Unido (N.º de empresa 09607326) que distribuye LumenLingo a nivel mundial a través de la App Store de Apple. Mantenemos el cumplimiento de los regímenes de sanciones aplicables en todas las jurisdicciones en las que operamos.",
+      "ukHeading": "Cumplimiento de sanciones del Reino Unido",
+      "ukP1": "Cumplimos con la Ley de Sanciones y Prevención del Blanqueo de Capitales de 2018 y las regulaciones administradas por la Oficina de Implementación de Sanciones Financieras (OFSI). Como aplicación de aprendizaje de idiomas para consumidores, LumenLingo está clasificada como software no estratégico y generalmente está exenta de la mayoría de las restricciones comerciales. Revisamos las listas consolidadas de sanciones de la OFSI y no proporcionamos servicios a sabiendas a personas o entidades sancionadas.",
+      "usHeading": "Sanciones OFAC de EE. UU.",
+      "usP1": "Dado que LumenLingo se distribuye a través de la App Store de Apple, que opera desde Estados Unidos, se aplican las sanciones de la Oficina de Control de Activos Extranjeros (OFAC). Apple ya restringe el acceso a la App Store en países sujetos a sanciones integrales, incluyendo Cuba, Irán, Corea del Norte, Siria y las regiones de Crimea, Donetsk y Lugansk. LumenShore no distribuye de forma independiente a ningún territorio sancionado.",
+      "euHeading": "Marco de sanciones de la UE",
+      "euP1": "Monitorizamos las listas de sanciones de la UE para detectar cambios que puedan afectar la prestación de servicios digitales, particularmente en regiones relevantes para nuestra base de usuarios de habla árabe y ucraniana. Las restricciones de distribución de la App Store de Apple se alinean con los requisitos de sanciones de la UE. No proporcionamos servicios a personas o entidades sancionadas por la UE.",
+      "ukraineHeading": "Ucrania — Disponibilidad del servicio",
+      "ukraineP1": "Ucrania no está sujeta a sanciones del Reino Unido, la UE o EE. UU. Los servicios a usuarios ucranianos son legales y se apoyan activamente. LumenLingo proporciona una configuración regional ucraniana y tres pares de idiomas ucranianos (UA↔EN, UA↔PL, PL→UA). Sin embargo, las regiones de Crimea, Donetsk y Lugansk tienen estado restringido bajo múltiples regímenes de sanciones, y Apple restringe el acceso a la App Store en estas regiones.",
+      "screeningHeading": "Verificación de sanciones",
+      "screeningP1": "Para usuarios con cuenta que realizan compras, la verificación de sanciones se gestiona a nivel de infraestructura de pago por la App Store de Apple. Apple realiza verificaciones de Conozca a su Cliente (KYC) en las cuentas de Apple ID y restringe el acceso desde territorios sancionados. LumenLingo no procesa pagos directamente y depende de la infraestructura de cumplimiento de Apple para la verificación a nivel de transacción."
+    },
+    "encryptionExport": {
+      "heading": "Cifrado y controles de exportación",
+      "intro": "LumenLingo utiliza tecnologías de cifrado estándar de la industria proporcionadas por la plataforma Apple iOS. Esta sección documenta nuestro uso de cifrado para transparencia y cumplimiento normativo.",
+      "auditHeading": "Auditoría de cifrado",
+      "auditP1": "Las siguientes tecnologías de cifrado se utilizan en LumenLingo, todas proporcionadas por la plataforma Apple iOS:",
+      "auditLi1": "HTTPS/TLS — Todas las comunicaciones de red utilizan Transport Layer Security para datos en tránsito",
+      "auditLi2": "Cifrado de iCloud — Los datos sincronizados a través de iCloud utilizan el cifrado de extremo a extremo de Apple",
+      "auditLi3": "Protección de archivos SwiftData — Los datos locales en reposo están protegidos por el cifrado a nivel de archivo de iOS",
+      "auditLi4": "Servicios de llavero — Las credenciales sensibles se almacenan en el llavero de iOS con cifrado respaldado por hardware",
+      "earHeading": "Regulaciones de Administración de Exportaciones de EE. UU. (EAR)",
+      "earP1": "LumenLingo utiliza únicamente cifrado estándar proporcionado por el sistema (HTTPS/TLS, iCloud, protección de archivos iOS). Estos califican para la Excepción de Licencia EAR ENC (Sección 740.17) como software de cifrado de mercado masivo que utiliza estándares criptográficos publicados. No se implementan algoritmos de cifrado propietarios o personalizados.",
+      "frenchHeading": "Controles de importación de cifrado francés",
+      "frenchP1": "Francia requiere una declaración para la importación de software de cifrado según las regulaciones de la ANSSI. Las aplicaciones que utilizan únicamente comunicaciones HTTPS/TLS estándar y cifrado proporcionado por el sistema están generalmente exentas de los requisitos de declaración. LumenLingo utiliza exclusivamente cifrado proporcionado por la plataforma Apple y no implementa ninguna funcionalidad criptográfica personalizada.",
+      "appStoreHeading": "Cumplimiento de exportación en App Store Connect",
+      "appStoreP1": "El cumplimiento de exportación de LumenLingo se declara a través de App Store Connect de Apple. La aplicación utiliza cifrado (HTTPS, iCloud) pero califica para la exención ya que se basa exclusivamente en tecnologías de cifrado proporcionadas por el sistema."
     }
   },
   "Blog": {
@@ -2226,7 +2224,6 @@
       "address": "<b>Address:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom",
       "responseTime": "Normalmente respondemos en un plazo de 48 horas."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
     "consumerRights": {
       "heading": "Sus Derechos como Consumidor",
       "intro": "Si usted es consumidor en el Reino Unido, tiene derechos legales en virtud de la <b>Ley de Derechos del Consumidor de 2015</b> y los <b>Reglamentos de Contratos de Consumo (Información, Cancelación y Cargos Adicionales) de 2013</b>. Nada en este Acuerdo de Licencia excluye ni limita dichos derechos.",

@@ -56,6 +56,10 @@ export default async function TermsPage({
     { id: 'acceptance', text: t('acceptance.heading'), level: 2 },
     { id: 'your-account', text: t('yourAccount.heading'), level: 2 },
     { id: 'subscriptions', text: t('subscriptions.heading'), level: 2 },
+    { id: 'vat-compliance', text: t('vatCompliance.heading'), level: 2 },
+    { id: 'eu-vat-compliance', text: t('euVatCompliance.heading'), level: 2 },
+    { id: 'international-tax', text: t('internationalTax.heading'), level: 2 },
+    { id: 'pricing-compliance', text: t('pricingCompliance.heading'), level: 2 },
     { id: 'distance-selling', text: t('distanceSelling.heading'), level: 2 },
     { id: 'acceptable-use', text: t('acceptableUse.heading'), level: 2 },
     { id: 'intellectual-property', text: t('intellectualProperty.heading'), level: 2 },
@@ -79,9 +83,10 @@ export default async function TermsPage({
     { id: 'aggregate-data', text: t('aggregateData.heading'), level: 2 },
     { id: 'termination', text: t('termination.heading'), level: 2 },
     { id: 'geographic-restrictions', text: t('geographicRestrictions.heading'), level: 2 },
+    { id: 'sanctions-compliance', text: t('sanctionsCompliance.heading'), level: 2 },
+    { id: 'encryption-export', text: t('encryptionExport.heading'), level: 2 },
     { id: 'dispute-resolution', text: t('disputeResolution.heading'), level: 2 },
     { id: 'us-arbitration', text: t('usArbitration.heading'), level: 2 },
-    { id: 'governing-law', text: t('governingLaw.heading'), level: 2 },
     { id: 'enforcement-remedies', text: t('enforcementRemedies.heading'), level: 2 },
     { id: 'entire-agreement', text: t('entireAgreement.heading'), level: 2 },
     { id: 'severability', text: t('severability.heading'), level: 2 },
@@ -208,6 +213,87 @@ export default async function TermsPage({
                     <li>{t.rich('subscriptions.li6', richTags)}</li>
                     <li>{t.rich('subscriptions.li7', richTags)}</li>
                   </ul>
+                </section>
+
+                <section id="vat-compliance">
+                  <h2>{t('vatCompliance.heading')}</h2>
+                  <p>{t('vatCompliance.intro')}</p>
+
+                  <h3>{t('vatCompliance.iapHeading')}</h3>
+                  <p>{t('vatCompliance.iapP1')}</p>
+                  <p>{t('vatCompliance.iapP2')}</p>
+
+                  <h3>{t('vatCompliance.directHeading')}</h3>
+                  <p>{t('vatCompliance.directP1')}</p>
+                  <p>{t('vatCompliance.directP2')}</p>
+
+                  <h3>{t('vatCompliance.recordsHeading')}</h3>
+                  <p>{t('vatCompliance.recordsP1')}</p>
+                </section>
+
+                <section id="eu-vat-compliance">
+                  <h2>{t('euVatCompliance.heading')}</h2>
+                  <p>{t('euVatCompliance.intro')}</p>
+
+                  <h3>{t('euVatCompliance.appleMarketplaceHeading')}</h3>
+                  <p>{t('euVatCompliance.appleMarketplaceP1')}</p>
+                  <p>{t('euVatCompliance.appleMarketplaceP2')}</p>
+
+                  <h3>{t('euVatCompliance.ossHeading')}</h3>
+                  <p>{t('euVatCompliance.ossP1')}</p>
+                  <p>{t('euVatCompliance.ossP2')}</p>
+
+                  <h3>{t('euVatCompliance.b2bHeading')}</h3>
+                  <p>{t('euVatCompliance.b2bP1')}</p>
+
+                  <h3>{t('euVatCompliance.evidenceHeading')}</h3>
+                  <p>{t('euVatCompliance.evidenceP1')}</p>
+                </section>
+
+                <section id="international-tax">
+                  <h2>{t('internationalTax.heading')}</h2>
+                  <p>{t('internationalTax.intro')}</p>
+
+                  <h3>{t('internationalTax.japanHeading')}</h3>
+                  <p>{t('internationalTax.japanP1')}</p>
+
+                  <h3>{t('internationalTax.usHeading')}</h3>
+                  <p>{t('internationalTax.usP1')}</p>
+
+                  <h3>{t('internationalTax.australiaHeading')}</h3>
+                  <p>{t('internationalTax.australiaP1')}</p>
+
+                  <h3>{t('internationalTax.indiaHeading')}</h3>
+                  <p>{t('internationalTax.indiaP1')}</p>
+
+                  <h3>{t('internationalTax.oecdHeading')}</h3>
+                  <p>{t('internationalTax.oecdP1')}</p>
+
+                  <h3>{t('internationalTax.corporationTaxHeading')}</h3>
+                  <p>{t('internationalTax.corporationTaxP1')}</p>
+
+                  <h3>{t('internationalTax.transferPricingHeading')}</h3>
+                  <p>{t('internationalTax.transferPricingP1')}</p>
+                </section>
+
+                <section id="pricing-compliance">
+                  <h2>{t('pricingCompliance.heading')}</h2>
+                  <p>{t('pricingCompliance.intro')}</p>
+
+                  <h3>{t('pricingCompliance.ukPriceMarkingHeading')}</h3>
+                  <p>{t('pricingCompliance.ukPriceMarkingP1')}</p>
+
+                  <h3>{t('pricingCompliance.euConsumerRightsHeading')}</h3>
+                  <p>{t('pricingCompliance.euConsumerRightsP1')}</p>
+
+                  <h3>{t('pricingCompliance.euOmnibusHeading')}</h3>
+                  <p>{t('pricingCompliance.euOmnibusP1')}</p>
+
+                  <h3>{t('pricingCompliance.iosAppPricingHeading')}</h3>
+                  <p>{t('pricingCompliance.iosAppPricingP1')}</p>
+
+                  <h3>{t('pricingCompliance.websitePricingHeading')}</h3>
+                  <p>{t('pricingCompliance.websitePricingP1')}</p>
                 </section>
 
                 <section id="distance-selling">
@@ -473,14 +559,14 @@ export default async function TermsPage({
                   <p>{t('euConsumerRights.statutory')}</p>
                 </section>
 
-                {/* ── Aggregate Data ── */}
+                {/* ── Aggregate Data (cross-reference to Privacy Policy) ── */}
                 <section id="aggregate-data">
                   <h2>{t('aggregateData.heading')}</h2>
-                  <p>{t('aggregateData.p1')}</p>
-                  <p>{t('aggregateData.p2')}</p>
-                  <p>{t('aggregateData.p3')}</p>
-                  <p>{t('aggregateData.p4')}</p>
-                  <p>{t('aggregateData.survival')}</p>
+                  <p>{t.rich('aggregateData.crossReference', {
+                    privacyLink: (chunks: React.ReactNode) => (
+                      <Link href="/privacy#aggregate-data" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</Link>
+                    ),
+                  })}</p>
                 </section>
 
                 <section id="termination">
@@ -504,6 +590,49 @@ export default async function TermsPage({
                     <li>{t('geographicRestrictions.bullet3')}</li>
                   </ul>
                   <p>{t('geographicRestrictions.closing')}</p>
+                </section>
+
+                <section id="sanctions-compliance">
+                  <h2>{t('sanctionsCompliance.heading')}</h2>
+                  <p>{t('sanctionsCompliance.intro')}</p>
+
+                  <h3>{t('sanctionsCompliance.ukHeading')}</h3>
+                  <p>{t('sanctionsCompliance.ukP1')}</p>
+
+                  <h3>{t('sanctionsCompliance.usHeading')}</h3>
+                  <p>{t('sanctionsCompliance.usP1')}</p>
+
+                  <h3>{t('sanctionsCompliance.euHeading')}</h3>
+                  <p>{t('sanctionsCompliance.euP1')}</p>
+
+                  <h3>{t('sanctionsCompliance.ukraineHeading')}</h3>
+                  <p>{t('sanctionsCompliance.ukraineP1')}</p>
+
+                  <h3>{t('sanctionsCompliance.screeningHeading')}</h3>
+                  <p>{t('sanctionsCompliance.screeningP1')}</p>
+                </section>
+
+                <section id="encryption-export">
+                  <h2>{t('encryptionExport.heading')}</h2>
+                  <p>{t('encryptionExport.intro')}</p>
+
+                  <h3>{t('encryptionExport.auditHeading')}</h3>
+                  <p>{t('encryptionExport.auditP1')}</p>
+                  <ul>
+                    <li>{t('encryptionExport.auditLi1')}</li>
+                    <li>{t('encryptionExport.auditLi2')}</li>
+                    <li>{t('encryptionExport.auditLi3')}</li>
+                    <li>{t('encryptionExport.auditLi4')}</li>
+                  </ul>
+
+                  <h3>{t('encryptionExport.earHeading')}</h3>
+                  <p>{t('encryptionExport.earP1')}</p>
+
+                  <h3>{t('encryptionExport.frenchHeading')}</h3>
+                  <p>{t('encryptionExport.frenchP1')}</p>
+
+                  <h3>{t('encryptionExport.appStoreHeading')}</h3>
+                  <p>{t('encryptionExport.appStoreP1')}</p>
                 </section>
 
                 <section id="dispute-resolution">
@@ -565,12 +694,6 @@ export default async function TermsPage({
                   <p>{t('usArbitration.exceptionsP1')}</p>
 
                   <p>{t('usArbitration.severabilityP1')}</p>
-                </section>
-
-                <section id="governing-law">
-                  <h2>{t('governingLaw.heading')}</h2>
-                  <p>{t('governingLaw.p1')}</p>
-                  <p>{t('governingLaw.p2')}</p>
                 </section>
 
                 <section id="enforcement-remedies">
@@ -1048,6 +1171,7 @@ export default async function TermsPage({
                   <p>{t('changes.p2')}</p>
                   <h3>{t('changes.versionHistory')}</h3>
                   <ul>
+                    <li>{t.rich('changes.v1_1', richTags)}</li>
                     <li>{t.rich('changes.v1', richTags)}</li>
                   </ul>
                 </section>
@@ -1062,7 +1186,7 @@ export default async function TermsPage({
                   <p>{t('contactUs.responseTime')}</p>
                 </section>
 
-                <p className="mt-12 text-xs text-white/30">{t('trademarkAttribution')}</p>
+                <p className="mt-12 text-xs text-white/30">{tLegal('trademarkAttribution')}</p>
               </div>
             </FadeIn>
 

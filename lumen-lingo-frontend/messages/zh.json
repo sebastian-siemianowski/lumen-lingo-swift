@@ -444,13 +444,14 @@
   "Legal": {
     "tocLabel": "On this page",
     "downloadPdf": "Download as PDF",
-    "lastUpdated": "Last updated: 23 March 2026",
-    "version": "Version 2.0",
+    "lastUpdated": "最后更新：2026年3月26日",
+    "version": "版本 2.1",
     "languageDisclaimer": "本文档提供多种语言版本。如翻译版本之间存在任何冲突或不一致，以英文版本为准。",
     "viewEnglishVersion": "查看英文版本",
-    "termsVersion": "版本 1.0",
+    "termsVersion": "版本 1.1",
     "updateBannerDismiss": "关闭",
-    "updateBannerLink": "查看更改"
+    "updateBannerLink": "查看更改",
+    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions."
   },
   "Privacy": {
     "meta": {
@@ -669,7 +670,8 @@
       "p2": "We encourage you to review this page periodically. Continued use of LumenLingo after changes constitutes acceptance of the updated policy.",
       "versionHistory": "Version History",
       "v2": "<b>v2.0</b> (23 March 2026) — Extended policy to cover lumenlingo.com website data collection, added Sentry session replay disclosure, Vercel Analytics disclosure, legal basis for processing, data flow section, and service worker caching details.",
-      "v1": "<b>v1.0</b> (22 March 2026) — Initial privacy policy covering the LumenLingo iOS app."
+      "v1": "<b>v1.0</b> (22 March 2026) — Initial privacy policy covering the LumenLingo iOS app.",
+      "v2_1": "<b>v2.1</b>（2026年3月26日）— 重新组织章节：将商业/监管合规披露（增值税处理、欧盟增值税、国际税收、价格合规、制裁、加密出口管制）移至服务条款。添加了指向服务条款的交叉引用。合并了商标归属。未删除任何内容。"
     },
     "contactUs": {
       "heading": "Contact Us",
@@ -771,7 +773,6 @@
       },
       "survival": "Our right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data that was derived from your use of the Service."
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
     "ccpaNotice": {
       "heading": "加州数据收集通知（CCPA/CPRA）",
       "intro": "如果您是加州居民，《加州消费者隐私法》（CCPA）和《加州隐私权法》（CPRA）要求我们披露我们收集的个人信息类别、收集目的以及该信息是否被出售或共享。此通知在收集时或收集前提供。",
@@ -1244,95 +1245,6 @@
       "appStoreP1": "LumenLingo在Apple App Store评级4+（教育内容）。无需账户注册。",
       "appStoreP2": "网站服务根据用户司法管辖实施最低年龄要求。"
     },
-    "vatCompliance": {
-      "heading": "VAT与税务处理",
-      "intro": "Lumenshore Limited已在英国注册VAT（编号 GB 270411929）。本节说明我们服务的VAT处理方式。",
-      "iapHeading": "应用内购买（iOS）",
-      "iapP1": "通过Apple App Store进行的所有应用内购买由Apple作为销售商处理。Apple负责征收和缴纳VAT。",
-      "iapP2": "App Store显示的价格包含适用的VAT。最终价格由Apple根据您的地区确定。",
-      "directHeading": "网站价格",
-      "directP1": "我们网站上向UK和EU消费者显示的所有价格包含适用税率的VAT。",
-      "directP2": "通过App Store收取的价格可能因地区而异。我们网站上的价格仅供参考。",
-      "recordsHeading": "税务记录",
-      "recordsP1": "根据HMRC要求，我们保留所有VAT和财务记录至少6年。",
-      "disclaimerAppStore": "订阅通过Apple App Store计费。价格包含适用税费。最终价格可能因地区而异。"
-    },
-    "euVatCompliance": {
-      "heading": "EU数字服务VAT",
-      "intro": "作为总部位于英国的数字服务提供商，我们遵守EU VAT规则。",
-      "appleMarketplaceHeading": "Apple作为EU市场运营者",
-      "appleMarketplaceP1": "根据EU市场规则和DAC7，Apple被视为VAT目的的供应商。Apple按各成员国税率征收并缴纳VAT。",
-      "appleMarketplaceP2": "Lumenshore的义务仅限于对Apple净额的正确收入确认。",
-      "ossHeading": "一站式服务（OSS）",
-      "ossP1": "对于在App Store之外直接向EU消费者销售的数字服务，我们使用英国Non-Union OSS制度。",
-      "ossP2": "EU VAT按各成员国税率适用并通过HMRC缴纳。记录保留至少10年。",
-      "b2bHeading": "B2B数字服务",
-      "b2bP1": "向EU企业提供服务时适用反向征收机制。我们通过VIES系统验证EU VAT编号。",
-      "evidenceHeading": "客户位置证据",
-      "evidenceP1": "我们遵守EU两份证据规则。App Store购买时Apple自动提供证据。"
-    },
-    "internationalTax": {
-      "heading": "国际税务义务",
-      "intro": "作为全球服务提供商，Lumenshore监控所有应用可用司法管辖区的税务义务。",
-      "japanHeading": "日本（消费税）",
-      "japanP1": "日本10%的消费税适用于数字服务。Apple作为在日本注册的外国企业，处理所有iOS应用内购买的消费税。",
-      "usHeading": "美国（Sales Tax）",
-      "usP1": "美国没有联邦数字服务税。Apple处理所有州的应用内购买Sales Tax。",
-      "australiaHeading": "澳大利亚（GST）",
-      "australiaP1": "澳大利亚10%的GST适用于数字产品。Apple处理App Store购买的GST。",
-      "indiaHeading": "印度（GST）",
-      "indiaP1": "印度18%的GST适用于在线信息服务。Apple处理应用内购买的GST。",
-      "oecdHeading": "OECD全球最低税",
-      "oecdP1": "OECD 15%全球最低税目前适用于合并收入超7.5亿欧元的跨国企业。目前不适用于Lumenshore。",
-      "corporationTaxHeading": "英国公司税",
-      "corporationTaxP1": "Lumenshore就全球利润缴纳英国公司税。我们评估研发税收抵免的资格。",
-      "transferPricingHeading": "转让定价",
-      "transferPricingP1": "作为单一实体，Lumenshore目前没有需要转让定价文件的集团内交易。"
-    },
-    "pricingCompliance": {
-      "heading": "价格展示合规",
-      "intro": "Lumenshore致力于在所有平台上提供透明、准确的定价。",
-      "ukPriceMarkingHeading": "英国Price Marking Order 2004",
-      "ukPriceMarkingP1": "向英国消费者展示的所有价格均包含VAT。无隐藏费用。",
-      "euConsumerRightsHeading": "欧盟消费者权益指令",
-      "euConsumerRightsP1": "价格以清晰易懂的方式展示。含税总价在购买前显示。",
-      "euOmnibusHeading": "欧盟Omnibus指令",
-      "euOmnibusP1": "如有降价，将显示过去30天的最低价格。我们当前的价格是标准持续价格。",
-      "iosAppPricingHeading": "iOS应用定价",
-      "iosAppPricingP1": "应用内购买使用Apple StoreKit显示包含当地税费的本地化价格。显示价格始终与Apple收取的金额一致。",
-      "websitePricingHeading": "网站定价",
-      "websitePricingP1": "网站以英镭显示含英国VAT的价格。最终价格由Apple App Store根据您的地区确定。"
-    },
-    "sanctionsCompliance": {
-      "heading": "制裁与贸易合规",
-      "intro": "LumenShore Limited是一家在英国注册的公司（公司编号 09607326），通过Apple App Store在全球范围内分发LumenLingo。我们在所有运营管辖区域均遵守适用的制裁制度。",
-      "ukHeading": "英国制裁合规",
-      "ukP1": "我们遵守2018年《制裁和反洗钱法》以及英国金融制裁实施办公室（OFSI）管理的法规。作为消费者语言学习应用程序，LumenLingo被归类为非战略软件，通常豁免于大多数贸易限制。我们审查OFSI的综合制裁名单，不会故意向受制裁个人或实体提供服务。",
-      "usHeading": "美国OFAC制裁",
-      "usP1": "由于LumenLingo通过在美国运营的Apple App Store分发，因此美国外国资产控制办公室（OFAC）制裁适用于分发。Apple已经限制了全面制裁国家的App Store访问，包括古巴、伊朗、朝鲜、叙利亚以及克里米亚、顿涅茨克和卢甘斯克地区。LumenShore不会独立向任何受制裁地区分发。",
-      "euHeading": "欧盟制裁框架",
-      "euP1": "我们监控欧盟制裁名单的变化，这些变化可能影响数字服务的提供，特别是与我们的阿拉伯语和乌克兰语用户群相关的地区。Apple App Store的分发限制符合欧盟制裁要求。我们不会向受欧盟制裁的个人或实体提供服务。",
-      "ukraineHeading": "乌克兰 — 服务可用性",
-      "ukraineP1": "乌克兰不受英国、欧盟或美国制裁。向乌克兰用户提供服务是合法的，并得到积极支持。LumenLingo提供乌克兰语语言环境和三个乌克兰语言对（UA↔EN、UA↔PL、PL→UA）。但是，克里米亚、顿涅茨克和卢甘斯克地区在多个制裁体制下处于受限状态，Apple限制了这些地区的App Store访问。",
-      "screeningHeading": "制裁筛查",
-      "screeningP1": "对于进行购买的账户用户，制裁筛查由Apple App Store在支付基础设施层面处理。Apple对Apple ID账户进行了解您的客户（KYC）检查，并限制来自受制裁地区的访问。LumenLingo不直接处理支付，而是依赖Apple的合规基础设施进行交易级别的筛查。"
-    },
-    "encryptionExport": {
-      "heading": "加密与出口管制",
-      "intro": "LumenLingo使用Apple iOS平台提供的行业标准加密技术。本节记录了我们的加密使用情况，以便透明和合规。",
-      "auditHeading": "加密审计",
-      "auditP1": "以下加密技术用于LumenLingo，均由Apple iOS平台提供：",
-      "auditLi1": "HTTPS/TLS — 所有网络通信均使用传输层安全协议保护传输中的数据",
-      "auditLi2": "iCloud加密 — 通过iCloud同步的数据使用Apple的端到端加密",
-      "auditLi3": "SwiftData文件保护 — 本地静态数据受iOS文件级加密保护",
-      "auditLi4": "钥匙串服务 — 敏感凭据存储在iOS钥匙串中，采用硬件支持的加密",
-      "earHeading": "美国出口管理条例（EAR）",
-      "earP1": "LumenLingo仅使用系统提供的标准加密（HTTPS/TLS、iCloud、iOS文件保护）。这些符合EAR许可例外ENC（第740.17节）的资格，作为使用已发布加密标准的大众市场加密软件。未实施任何专有或自定义加密算法。",
-      "frenchHeading": "法国加密进口管制",
-      "frenchP1": "法国根据ANSSI法规要求对加密软件的进口进行申报。仅使用标准HTTPS/TLS通信和系统提供的加密的应用程序通常豁免申报要求。LumenLingo仅使用Apple平台提供的加密，不实施任何自定义加密功能。",
-      "appStoreHeading": "App Store Connect出口合规",
-      "appStoreP1": "LumenLingo的出口合规通过Apple的App Store Connect进行申报。该应用使用加密（HTTPS、iCloud），但由于仅依赖系统提供的加密技术，因此符合豁免资格。"
-    },
     "updateBannerMessage": "我们已更新隐私政策。",
     "euRepresentative": {
       "heading": "欧盟代表（GDPR第27条）",
@@ -1344,7 +1256,8 @@
       "contact3": "Lumenshore将定期审查此评估，如果因处理活动的变化、适用指南或监管要求而需要，将根据GDPR第27条正式任命欧盟代表。",
       "supervisory1": "欧盟居民有权向当地数据保护监管机构提出投诉。EEA监管机构名单可在欧洲数据保护委员会网站上查阅。",
       "supervisory2": "如果Lumenshore将来正式任命欧盟代表，代表的详细信息将在本隐私政策中公布，并根据GDPR第27条第(4)款通知相关监管机构。"
-    }
+    },
+    "commercialTermsReference": "有关增值税处理、价格展示合规、制裁合规和加密出口管制的信息，请参阅我们的<termsLink>服务条款</termsLink>。"
   },
   "Terms": {
     "meta": {
@@ -1479,7 +1392,8 @@
       "p1": "我们可能会不时更新这些条款。当我们进行重大变更时，我们将更新本页面顶部的「最后更新」日期和版本号，并可能通过应用程序通知您。",
       "p2": "在变更发布后继续使用LumenLingo即表示接受修订后的条款。如果您不同意变更，请停止使用应用程序并取消任何有效订阅。",
       "versionHistory": "版本历史",
-      "v1": "<b>v1.0</b>（2026年3月23日）— 初始服务条款。"
+      "v1": "<b>v1.0</b>（2026年3月23日）— 初始服务条款。",
+      "v1_1": "<b>v1.1</b>（2026年3月26日）— 从隐私政策移入商业/监管合规章节：增值税处理、欧盟增值税、国际税务义务、价格展示合规、制裁与贸易合规、加密出口管制。汇总数据章节替换为指向隐私政策的交叉引用。删除了重复的管辖法律目录条目。合并了商标归属。"
     },
     "contactUs": {
       "heading": "Contact Us",
@@ -1489,14 +1403,9 @@
       "responseTime": "We typically respond within 48 hours."
     },
     "aggregateData": {
-      "heading": "Aggregate Data",
-      "p1": "By using the Service, you acknowledge that LumenShore may derive aggregated, anonymised, and statistical data from your use of the Service (“Aggregate Data”).",
-      "p2": "Aggregate Data does not identify you personally and may be used by LumenShore for any lawful business purpose without restriction, compensation, or attribution.",
-      "p3": "Examples of Aggregate Data include: total number of users per language pair, average learning session duration, most commonly studied vocabulary, error rates per difficulty level, and feature usage statistics.",
-      "p4": "LumenShore may use Aggregate Data for product improvement, research, analytics, marketing, benchmarking, investor reporting, blog posts, case studies, and public reports.",
-      "survival": "LumenShore’s right to retain and use Aggregate Data survives account deletion and service termination. After you delete your account, we may retain Aggregate Data derived from your use of the Service."
+      "heading": "汇总和去标识化数据",
+      "crossReference": "我们关于汇总和去标识化数据的收集、使用和保护的做法在我们的隐私政策中有详细描述。请参阅我们<privacyLink>隐私政策</privacyLink>中的汇总和去标识化数据部分以了解完整详情。"
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
     "consumerRights": {
       "heading": "您的消费者权利",
       "intro": "如果您是英国的消费者，您根据<b>2015年消费者权利法</b>和<b>2013年消费者合同（信息、取消和额外费用）条例</b>享有法定权利。本条款不排除或限制这些权利。",
@@ -1933,6 +1842,95 @@
       "indemnificationHeading": "监管赔偿",
       "indemnification1": "您同意赔偿并使 LumenShore Limited 免受因您在使用服务时违反适用法律或法规而产生的任何索赔、损失或费用。",
       "indemnification2": "该赔偿义务在您的账户或本条款终止后继续有效。"
+    },
+    "vatCompliance": {
+      "heading": "VAT与税务处理",
+      "intro": "Lumenshore Limited已在英国注册VAT（编号 GB 270411929）。本节说明我们服务的VAT处理方式。",
+      "iapHeading": "应用内购买（iOS）",
+      "iapP1": "通过Apple App Store进行的所有应用内购买由Apple作为销售商处理。Apple负责征收和缴纳VAT。",
+      "iapP2": "App Store显示的价格包含适用的VAT。最终价格由Apple根据您的地区确定。",
+      "directHeading": "网站价格",
+      "directP1": "我们网站上向UK和EU消费者显示的所有价格包含适用税率的VAT。",
+      "directP2": "通过App Store收取的价格可能因地区而异。我们网站上的价格仅供参考。",
+      "recordsHeading": "税务记录",
+      "recordsP1": "根据HMRC要求，我们保留所有VAT和财务记录至少6年。",
+      "disclaimerAppStore": "订阅通过Apple App Store计费。价格包含适用税费。最终价格可能因地区而异。"
+    },
+    "euVatCompliance": {
+      "heading": "EU数字服务VAT",
+      "intro": "作为总部位于英国的数字服务提供商，我们遵守EU VAT规则。",
+      "appleMarketplaceHeading": "Apple作为EU市场运营者",
+      "appleMarketplaceP1": "根据EU市场规则和DAC7，Apple被视为VAT目的的供应商。Apple按各成员国税率征收并缴纳VAT。",
+      "appleMarketplaceP2": "Lumenshore的义务仅限于对Apple净额的正确收入确认。",
+      "ossHeading": "一站式服务（OSS）",
+      "ossP1": "对于在App Store之外直接向EU消费者销售的数字服务，我们使用英国Non-Union OSS制度。",
+      "ossP2": "EU VAT按各成员国税率适用并通过HMRC缴纳。记录保留至少10年。",
+      "b2bHeading": "B2B数字服务",
+      "b2bP1": "向EU企业提供服务时适用反向征收机制。我们通过VIES系统验证EU VAT编号。",
+      "evidenceHeading": "客户位置证据",
+      "evidenceP1": "我们遵守EU两份证据规则。App Store购买时Apple自动提供证据。"
+    },
+    "internationalTax": {
+      "heading": "国际税务义务",
+      "intro": "作为全球服务提供商，Lumenshore监控所有应用可用司法管辖区的税务义务。",
+      "japanHeading": "日本（消费税）",
+      "japanP1": "日本10%的消费税适用于数字服务。Apple作为在日本注册的外国企业，处理所有iOS应用内购买的消费税。",
+      "usHeading": "美国（Sales Tax）",
+      "usP1": "美国没有联邦数字服务税。Apple处理所有州的应用内购买Sales Tax。",
+      "australiaHeading": "澳大利亚（GST）",
+      "australiaP1": "澳大利亚10%的GST适用于数字产品。Apple处理App Store购买的GST。",
+      "indiaHeading": "印度（GST）",
+      "indiaP1": "印度18%的GST适用于在线信息服务。Apple处理应用内购买的GST。",
+      "oecdHeading": "OECD全球最低税",
+      "oecdP1": "OECD 15%全球最低税目前适用于合并收入超7.5亿欧元的跨国企业。目前不适用于Lumenshore。",
+      "corporationTaxHeading": "英国公司税",
+      "corporationTaxP1": "Lumenshore就全球利润缴纳英国公司税。我们评估研发税收抵免的资格。",
+      "transferPricingHeading": "转让定价",
+      "transferPricingP1": "作为单一实体，Lumenshore目前没有需要转让定价文件的集团内交易。"
+    },
+    "pricingCompliance": {
+      "heading": "价格展示合规",
+      "intro": "Lumenshore致力于在所有平台上提供透明、准确的定价。",
+      "ukPriceMarkingHeading": "英国Price Marking Order 2004",
+      "ukPriceMarkingP1": "向英国消费者展示的所有价格均包含VAT。无隐藏费用。",
+      "euConsumerRightsHeading": "欧盟消费者权益指令",
+      "euConsumerRightsP1": "价格以清晰易懂的方式展示。含税总价在购买前显示。",
+      "euOmnibusHeading": "欧盟Omnibus指令",
+      "euOmnibusP1": "如有降价，将显示过去30天的最低价格。我们当前的价格是标准持续价格。",
+      "iosAppPricingHeading": "iOS应用定价",
+      "iosAppPricingP1": "应用内购买使用Apple StoreKit显示包含当地税费的本地化价格。显示价格始终与Apple收取的金额一致。",
+      "websitePricingHeading": "网站定价",
+      "websitePricingP1": "网站以英镭显示含英国VAT的价格。最终价格由Apple App Store根据您的地区确定。"
+    },
+    "sanctionsCompliance": {
+      "heading": "制裁与贸易合规",
+      "intro": "LumenShore Limited是一家在英国注册的公司（公司编号 09607326），通过Apple App Store在全球范围内分发LumenLingo。我们在所有运营管辖区域均遵守适用的制裁制度。",
+      "ukHeading": "英国制裁合规",
+      "ukP1": "我们遵守2018年《制裁和反洗钱法》以及英国金融制裁实施办公室（OFSI）管理的法规。作为消费者语言学习应用程序，LumenLingo被归类为非战略软件，通常豁免于大多数贸易限制。我们审查OFSI的综合制裁名单，不会故意向受制裁个人或实体提供服务。",
+      "usHeading": "美国OFAC制裁",
+      "usP1": "由于LumenLingo通过在美国运营的Apple App Store分发，因此美国外国资产控制办公室（OFAC）制裁适用于分发。Apple已经限制了全面制裁国家的App Store访问，包括古巴、伊朗、朝鲜、叙利亚以及克里米亚、顿涅茨克和卢甘斯克地区。LumenShore不会独立向任何受制裁地区分发。",
+      "euHeading": "欧盟制裁框架",
+      "euP1": "我们监控欧盟制裁名单的变化，这些变化可能影响数字服务的提供，特别是与我们的阿拉伯语和乌克兰语用户群相关的地区。Apple App Store的分发限制符合欧盟制裁要求。我们不会向受欧盟制裁的个人或实体提供服务。",
+      "ukraineHeading": "乌克兰 — 服务可用性",
+      "ukraineP1": "乌克兰不受英国、欧盟或美国制裁。向乌克兰用户提供服务是合法的，并得到积极支持。LumenLingo提供乌克兰语语言环境和三个乌克兰语言对（UA↔EN、UA↔PL、PL→UA）。但是，克里米亚、顿涅茨克和卢甘斯克地区在多个制裁体制下处于受限状态，Apple限制了这些地区的App Store访问。",
+      "screeningHeading": "制裁筛查",
+      "screeningP1": "对于进行购买的账户用户，制裁筛查由Apple App Store在支付基础设施层面处理。Apple对Apple ID账户进行了解您的客户（KYC）检查，并限制来自受制裁地区的访问。LumenLingo不直接处理支付，而是依赖Apple的合规基础设施进行交易级别的筛查。"
+    },
+    "encryptionExport": {
+      "heading": "加密与出口管制",
+      "intro": "LumenLingo使用Apple iOS平台提供的行业标准加密技术。本节记录了我们的加密使用情况，以便透明和合规。",
+      "auditHeading": "加密审计",
+      "auditP1": "以下加密技术用于LumenLingo，均由Apple iOS平台提供：",
+      "auditLi1": "HTTPS/TLS — 所有网络通信均使用传输层安全协议保护传输中的数据",
+      "auditLi2": "iCloud加密 — 通过iCloud同步的数据使用Apple的端到端加密",
+      "auditLi3": "SwiftData文件保护 — 本地静态数据受iOS文件级加密保护",
+      "auditLi4": "钥匙串服务 — 敏感凭据存储在iOS钥匙串中，采用硬件支持的加密",
+      "earHeading": "美国出口管理条例（EAR）",
+      "earP1": "LumenLingo仅使用系统提供的标准加密（HTTPS/TLS、iCloud、iOS文件保护）。这些符合EAR许可例外ENC（第740.17节）的资格，作为使用已发布加密标准的大众市场加密软件。未实施任何专有或自定义加密算法。",
+      "frenchHeading": "法国加密进口管制",
+      "frenchP1": "法国根据ANSSI法规要求对加密软件的进口进行申报。仅使用标准HTTPS/TLS通信和系统提供的加密的应用程序通常豁免申报要求。LumenLingo仅使用Apple平台提供的加密，不实施任何自定义加密功能。",
+      "appStoreHeading": "App Store Connect出口合规",
+      "appStoreP1": "LumenLingo的出口合规通过Apple的App Store Connect进行申报。该应用使用加密（HTTPS、iCloud），但由于仅依赖系统提供的加密技术，因此符合豁免资格。"
     }
   },
   "Blog": {
@@ -2227,7 +2225,6 @@
       "address": "<b>Address:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom",
       "responseTime": "我们通常在48小时内回复。"
     },
-    "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
     "consumerRights": {
       "heading": "您的消费者权利",
       "intro": "如果您是英国的消费者，您根据<b>2015年消费者权利法</b>和<b>2013年消费者合同（信息、取消和额外费用）条例</b>享有法定权利。本许可协议不排除或限制这些权利。",

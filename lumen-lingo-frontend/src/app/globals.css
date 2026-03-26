@@ -650,10 +650,52 @@ body {
   text-decoration-color: rgba(139, 92, 246, 0.6);
 }
 
+/* ── Collapsible Jurisdiction Sections ── */
+.legal-prose details.jurisdiction-details {
+  margin-bottom: 2.5rem;
+  scroll-margin-top: 6rem;
+}
+
+.legal-prose details.jurisdiction-details > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.legal-prose details.jurisdiction-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.legal-prose details.jurisdiction-details > summary::marker {
+  display: none;
+  content: '';
+}
+
+.legal-prose details.jurisdiction-details > summary > h2 {
+  display: inline;
+}
+
+.legal-prose details.jurisdiction-details > summary > h2::after {
+  content: ' +';
+  font-size: 0.85em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.3);
+  margin-inline-start: 0.5rem;
+}
+
+.legal-prose details[open].jurisdiction-details > summary > h2::after {
+  content: ' \2212';
+}
+
 @media print {
   .legal-prose {
     color: #333;
     font-size: 12pt;
+  }
+  .legal-prose details.jurisdiction-details:not([open]) > *:not(summary) {
+    display: block !important;
+  }
+  .legal-prose details.jurisdiction-details > summary > h2::after {
+    content: none;
   }
   .legal-prose h2 {
     color: #111;

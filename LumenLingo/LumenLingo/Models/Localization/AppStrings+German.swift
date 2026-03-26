@@ -474,7 +474,7 @@ extension AppStrings {
         legalConsentSubtitle: "Bitte überprüfe unsere Richtlinien, um LumenLingo weiter zu nutzen",
         privacyPolicyTitle: "Datenschutzrichtlinie",
         termsOfServiceTitle: "Nutzungsbedingungen",
-        legalVersion: "Version 2.0",
+        legalVersion: "Version 2.1",
         legalLastUpdated: "Zuletzt aktualisiert: 23. März 2026",
         legalPrivacySummary: "LumenLingo wird von LumenShore Ltd betrieben. Wir respektieren deine Privatsphäre und verpflichten uns, deine persönlichen Daten zu schützen. Diese Richtlinie gilt für unsere Website und iOS-App.",
         legalTermsSummary: "Diese Nutzungsbedingungen regeln die Nutzung der mobilen Anwendung LumenLingo, betrieben von LumenShore Ltd. Durch die Nutzung von LumenLingo akzeptierst du diese Bedingungen.",

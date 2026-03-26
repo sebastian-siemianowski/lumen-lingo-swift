@@ -265,7 +265,7 @@ export default async function EulaPage({
                   <p>{t('contact.responseTime')}</p>
                 </section>
 
-                <p className="mt-12 text-xs text-white/30">{t('trademarkAttribution')}</p>
+                <p className="mt-12 text-xs text-white/30">{tLegal('trademarkAttribution')}</p>
               </div>
             </FadeIn>
 
