@@ -5,6 +5,7 @@ import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { LegalTOC, DownloadPDFButton, LanguageDisclaimer, LegalUpdateBanner, MobileLegalTOC, BackToTop } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
+import { Link } from '@/i18n/navigation';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
 export async function generateMetadata({
@@ -52,17 +53,22 @@ export default async function CookiePolicyPage({
 
   const tocItems = [
     { id: 'overview', text: t('overview.heading'), level: 2 },
+    { id: 'cookie-consent', text: t('consent.heading'), level: 2 },
+    { id: 'cookie-granularity', text: t('granularity.heading'), level: 2 },
     { id: 'localstorage', text: t('localStorage.heading'), level: 2 },
     { id: 'sessionstorage', text: t('sessionStorage.heading'), level: 2 },
     { id: 'service-worker', text: t('serviceWorker.heading'), level: 2 },
     { id: 'cookies', text: t('cookies.heading'), level: 2 },
     { id: 'third-party', text: t('thirdParty.heading'), level: 2 },
     { id: 'manage', text: t('manage.heading'), level: 2 },
+    { id: 'browser-instructions', text: t('browserInstructions.heading'), level: 2 },
     { id: 'consent-accountability', text: t('consentAccountability.heading'), level: 2 },
     { id: 'gpc', text: t('gpc.heading'), level: 2 },
     { id: 'pecr-compliance', text: t('pecrCompliance.heading'), level: 2 },
     { id: 'updates', text: t('updates.heading'), level: 2 },
+    { id: 'data-retention-crossref', text: t('retention.heading'), level: 2 },
     { id: 'ico-complaint', text: t('icoComplaint.heading'), level: 2 },
+    { id: 'cookie-accessibility', text: t('accessibility.heading'), level: 2 },
     { id: 'contact', text: t('contact.heading'), level: 2 },
   ];
 
@@ -121,6 +127,26 @@ export default async function CookiePolicyPage({
                   <h2>{t('overview.heading')}</h2>
                   <p>{t('overview.p1')}</p>
                   <p>{t('overview.p2')}</p>
+                </section>
+
+                {/* Cookie Consent (19.1-19.3) */}
+                <section id="cookie-consent">
+                  <h2>{t('consent.heading')}</h2>
+                  <p>{t('consent.rejection')}</p>
+                  <p>{t('consent.withdrawal')}</p>
+                  <p>{t('consent.affirmative')}</p>
+                </section>
+
+                {/* Cookie Granularity (19.4) */}
+                <section id="cookie-granularity">
+                  <h2>{t('granularity.heading')}</h2>
+                  <p>{t('granularity.p1')}</p>
+                  <ul>
+                    <li>{t.rich('granularity.li1', richTags)}</li>
+                    <li>{t.rich('granularity.li2', richTags)}</li>
+                    <li>{t.rich('granularity.li3', richTags)}</li>
+                  </ul>
+                  <p>{t('granularity.p2')}</p>
                 </section>
 
                 {/* Summary Table */}
@@ -288,6 +314,31 @@ export default async function CookiePolicyPage({
                   <p>{t('manage.p3')}</p>
                 </section>
 
+                {/* Browser Instructions (19.5) */}
+                <section id="browser-instructions">
+                  <h2>{t('browserInstructions.heading')}</h2>
+                  <p>{t('browserInstructions.intro')}</p>
+                  <ul>
+                    <li>{t.rich('browserInstructions.chrome', {
+                      ...richTags,
+                      chromeLink: (chunks: React.ReactNode) => <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">{chunks}</a>,
+                    })}</li>
+                    <li>{t.rich('browserInstructions.safari', {
+                      ...richTags,
+                      safariLink: (chunks: React.ReactNode) => <a href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">{chunks}</a>,
+                    })}</li>
+                    <li>{t.rich('browserInstructions.firefox', {
+                      ...richTags,
+                      firefoxLink: (chunks: React.ReactNode) => <a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox" target="_blank" rel="noopener noreferrer">{chunks}</a>,
+                    })}</li>
+                    <li>{t.rich('browserInstructions.edge', {
+                      ...richTags,
+                      edgeLink: (chunks: React.ReactNode) => <a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">{chunks}</a>,
+                    })}</li>
+                  </ul>
+                  <p>{t('browserInstructions.itp')}</p>
+                </section>
+
                 {/* Consent Accountability */}
                 <section id="consent-accountability">
                   <h2>{t('consentAccountability.heading')}</h2>
@@ -320,9 +371,14 @@ export default async function CookiePolicyPage({
                   <p>{t('updates.p1')}</p>
                   <p>{t.rich('updates.version', richTags)}</p>
                   <h3>{t('updates.versionHistory')}</h3>
-                  <ul>
-                    <li>{t.rich('updates.v1', richTags)}</li>
+                  <ul>                    <li>{t.rich('updates.v1_2', richTags)}</li>                    <li>{t.rich('updates.v1', richTags)}</li>
                   </ul>
+                </section>
+
+                {/* Data Retention Cross-Reference */}
+                <section id="data-retention-crossref">
+                  <h2>{t('retention.heading')}</h2>
+                  <p>{t.rich('retention.crossRef', { privacyLink: (chunks: React.ReactNode) => <Link href={`/${locale}/privacy`}>{chunks}</Link> })}</p>
                 </section>
 
                 {/* ICO Complaint Right */}
@@ -337,12 +393,21 @@ export default async function CookiePolicyPage({
                   <p>{t.rich('icoComplaint.p2', { ...richTags, emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</p>
                 </section>
 
+                {/* Cookie Settings Accessibility (19.6) */}
+                <section id="cookie-accessibility">
+                  <h2>{t('accessibility.heading')}</h2>
+                  <p>{t.rich('accessibility.p1', {
+                    ...richTags,
+                    emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a>,
+                  })}</p>
+                </section>
+
                 {/* Contact */}
                 <section id="contact">
                   <h2>{t('contact.heading')}</h2>
                   <p>{t('contact.intro')}</p>
                   <ul>
-                    <li>{t.rich('contact.email', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: (chunks: React.ReactNode) => <a href="mailto:hello@lumenshore.com">{chunks}</a> })}</li>
+                    <li>{t.rich('contact.email', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</li>
                     <li>{t.rich('contact.company', richTags)}</li>
                   </ul>
                   <p>{t('contact.responseTime')}</p>

@@ -444,15 +444,15 @@
   "Legal": {
     "tocLabel": "On this page",
     "downloadPdf": "Download as PDF",
-    "lastUpdated": "Ostatnia aktualizacja: 1 lipca 2025",
-    "version": "Wersja 2.2",
+    "lastUpdated": "Ostatnia aktualizacja: 27 marca 2026",
+    "version": "Wersja 2.3",
     "languageDisclaimer": "Ten dokument jest dostępny w wielu językach. W przypadku konfliktu lub rozbieżności między wersjami tłumaczonymi, wersja angielska jest wiążąca.",
     "viewEnglishVersion": "Zobacz wersję angielską",
-    "termsVersion": "Wersja 1.2",
+    "termsVersion": "Wersja 1.3",
     "updateBannerDismiss": "Zamknij",
     "updateBannerLink": "Zobacz zmiany",
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
-    "eulaVersion": "Wersja 1.1"
+    "eulaVersion": "Wersja 1.2"
   },
   "Privacy": {
     "meta": {
@@ -604,7 +604,7 @@
     },
     "childrensPrivacy": {
       "heading": "Prywatność dzieci",
-      "p1": "LumenLingo jest przeznaczony dla użytkowników w wieku 13 lat i starszych. Nie zbieramy świadomie danych osobowych od dzieci poniżej 13 roku życia (lub obowiązującego minimalnego wieku w Twojej jurysdykcji, który może być wyższy — na przykład 16 lat w Niemczech i Holandii).",
+      "p1": "LumenLingo jest przeznaczone dla użytkowników w wieku 13 lat i starszych. Zgodnie z art. 8 RODO i sekcją 9 Ustawy o ochronie danych osobowych 2018 (DPA 2018) nie gromadzimy świadomie danych osobowych dzieci poniżej 13 roku życia (lub odpowiedniego minimalnego wieku obowiązującego w danej jurysdykcji, który może być wyższy — na przykład 16 lat w Niemczech i Holandii).",
       "p2": "Aplikacja iOS nie wymaga rejestracji konta i przechowuje dane lokalnie, więc żadne dane osobowe nie są przekazywane od użytkowników aplikacji w żadnym wieku. Na stronie internetowej nie akceptujemy świadomie zapisów na newsletter lub listę oczekujących od osób poniżej 13 roku życia.",
       "p3": "Rodzice i opiekunowie mogą w dowolnym momencie zarządzać aplikacją i jej danymi lub je usunąć za pomocą standardowych narzędzi zarządzania urządzeniami iOS. Jeśli uważasz, że dziecko przekazało nam dane osobowe, prosimy o kontakt pod adresem legal@lumenlingo.com, a my niezwłocznie je usuniemy.",
       "coppaHeading": "Zgodność z COPPA",
@@ -616,7 +616,7 @@
       "parentalLi2": "Żądania usunięcia danych osobowych ich dziecka z naszych systemów",
       "parentalLi3": "Odmowy dalszego zbierania lub wykorzystywania informacji o ich dziecku",
       "parentalLi4": "Zarządzania lub usunięcia aplikacji i jej lokalnie przechowywanych danych za pomocą standardowego zarządzania urządzeniami iOS",
-      "parentalP2": "Aby skorzystać z któregokolwiek z tych praw, prosimy o kontakt pod adresem <emailLink>legal@lumenlingo.com</emailLink>. Jeśli odkryjemy, że zebraliśmy dane osobowe dziecka poniżej 13 roku życia bez odpowiedniej zgody rodziców, niezwłocznie usuniemy te informacje.",
+      "parentalP2": "Aby skorzystać z któregokolwiek z tych praw, skontaktuj się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>. Jeśli odkryjemy, że zebraliśmy dane osobowe dziecka poniżej 13 roku życia bez odpowiedniej zgody rodzica, usuniemy te informacje w ciągu 72 godzin od wykrycia.",
       "ferpaHeading": "Wykorzystanie edukacyjne i FERPA",
       "ferpaP1": "LumenLingo nie jest administrowany przez instytucje edukacyjne ani w ich imieniu. Jeśli szkoła lub organizacja edukacyjna zdecyduje się polecić LumenLingo swoim uczniom, robi to niezależnie. Instytucja ponosi odpowiedzialność za zapewnienie zgodności z amerykańską ustawą o prawach edukacyjnych rodziny i prywatności (FERPA) oraz za uzyskanie wymaganej zgody rodziców przed skierowaniem uczniów poniżej 13 roku życia do korzystania z usługi."
     },
@@ -662,7 +662,7 @@
       "gdprLi4": "Prawo do przenoszenia danych — eksportuj wszystkie swoje dane osobowe jako bezpłatny plik JSON z Ustawienia → Eksportuj moje dane w aplikacji iOS. Twoje dane są zawsze przechowywane w standardowych formatach. Skontaktuj się z nami w sprawie eksportu danych ze strony internetowej.",
       "gdprLi5": "Prawo do sprzeciwu — skontaktuj się z nami, aby zrezygnować z anonimowej analityki lub sprzeciwić się przetwarzaniu opartemu na prawnie uzasadnionym interesie.",
       "gdprLi6": "Prawo do ograniczenia przetwarzania — skontaktuj się z nami, aby poprosić o ograniczenie sposobu przetwarzania Twoich danych.",
-      "gdprLi7": "Prawo do złożenia skargi — możesz złożyć skargę do <icoLink>Biura Komisarza ds. Informacji (ICO)</icoLink> lub lokalnego organu nadzorczego.",
+      "gdprLi7": "Prawo do skargi — masz prawo złożyć skargę do <icoLink>Biura Komisarza ds. Informacji (ICO)</icoLink> pod adresem ico.org.uk lub telefonicznie pod numerem 0303 123 1113, albo do właściwego organu nadzorczego, jeśli przebywasz poza Wielką Brytanią.",
       "gdprLi8": "Prawo do wycofania zgody — w przypadku gdy opieramy się na zgodzie jako podstawie prawnej (np. analityka), możesz wycofać swoją zgodę w dowolnym momencie, dostosowując preferencje plików cookie lub kontaktując się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>. Wycofanie nie wpływa na zgodność z prawem przetwarzania dokonanego przed wycofaniem.",
       "ccpaHeading": "Na mocy CCPA/CPRA (Kalifornia)",
       "ccpaLi1": "<b>Prawo do informacji</b> — możesz zażądać ujawnienia kategorii i konkretnych elementów danych osobowych, które zebraliśmy na Twój temat. Zobacz sekcję Powiadomienie o zbieraniu powyżej.",
@@ -703,7 +703,8 @@
       "v2": "<b>v2.0</b> (23 marca 2026) — Rozszerzenie polityki o zbieranie danych na stronie lumenlingo.com, ujawnienie nagrań sesji Sentry, ujawnienie Vercel Analytics, podstawy prawne przetwarzania, sekcja dotycząca przepływu danych oraz szczegóły buforowania Service Worker.",
       "v1": "<b>v1.0</b> (22 marca 2026) — Pierwsza polityka prywatności obejmująca aplikację LumenLingo na iOS.",
       "v2_1": "<b>v2.1</b> (26 marca 2026) — Reorganizacja sekcji: przeniesiono ujawnienia dotyczące zgodności handlowej/regulacyjnej (traktowanie VAT, VAT UE, podatek międzynarodowy, zgodność cenowa, sankcje, kontrola eksportu szyfrowania) do Warunków korzystania z usługi. Dodano odniesienie do Warunków. Skonsolidowano atrybucję znaku towarowego. Żadna treść nie została usunięta.",
-      "v2_2": "<b>v2.2</b> (lipiec 2025) — Faza 2 wzmocnienia prawnego: ujednolicono nazwę firmy na Lumenshore Limited; dodano prawo do skargi do ICO (art. 77 RODO); dodano rejestr podprocesorów; wzmocniono zabezpieczenia transferu międzynarodowego; dodano regionalne ramy ochrony prywatności; ulepszono informacje o komunikacji elektronicznej i zgodności z PECR."
+      "v2_2": "<b>v2.2</b> (26 marca 2026) — Faza 2 wzmocnienia prawnego: ujednolicono nazwę firmy na Lumenshore Limited; dodano prawo do skargi do ICO (art. 77 RODO); dodano rejestr podprocesorów; wzmocniono zabezpieczenia transferu międzynarodowego; dodano regionalne ramy ochrony prywatności; ulepszono informacje o komunikacji elektronicznej i zgodności z PECR.",
+      "v2_3": "<b>v2.3</b> (27 marca 2026) — Faza 3 wzmocnienia prawnego: dodano odsyłacz do ograniczenia odpowiedzialności w Regulaminie, dodano sekcję rozstrzygania sporów odwołującą się do Regulaminu dla sporów niezwiązanych z RODO z zastrzeżeniem art. 79 RODO, ustandaryzowano wszystkie adresy e-mail kontaktowe na legal@lumenlingo.com."
     },
     "contactUs": {
       "heading": "Kontakt",
@@ -1319,7 +1320,23 @@
       "supervisory1": "Osoby z siedziba w UE maja prawo zlozyc skarge do lokalnego organu nadzorczego ds. ochrony danych. Lista organow nadzorczych EOG jest dostepna na stronie internetowej Europejskiej Rady Ochrony Danych.",
       "supervisory2": "Jesli Lumenshore formalnie wyznaczy przedstawiciela w UE w przyszlosci, dane przedstawiciela zostana opublikowane w niniejszej Polityce Prywatnosci i przekazane wlasciwemu organowi nadzorczemu zgodnie z art. 27(4) RODO."
     },
-    "commercialTermsReference": "Informacje dotyczące opodatkowania VAT, zgodności cen, sankcji handlowych i kontroli eksportu szyfrowania znajdują się w naszych <termsLink>Warunkach korzystania z usługi</termsLink>."
+    "commercialTermsReference": "Informacje dotyczące opodatkowania VAT, zgodności cen, sankcji handlowych i kontroli eksportu szyfrowania znajdują się w naszych <termsLink>Warunkach korzystania z usługi</termsLink>.",
+    "lawEnforcement": {
+      "heading": "Żądania organów ścigania i rządowe",
+      "p1": "LumenShore ujawni dane osobowe organom ścigania lub organom rządowym wyłącznie w przypadku prawnego zobowiązania — na przykład na podstawie nakazu sądowego, nakazu rewizji lub obowiązku ustawowego wynikającego z Ustawy o ochronie danych osobowych 2018 (Data Protection Act 2018), sekcja 7.",
+      "p2": "W przypadku otrzymania zgodnego z prawem żądania udostępnienia danych osobowych, powiadomimy użytkownika, którego te dane dotyczą, chyba że jest to prawnie zabronione (na przykład na mocy zakazu ujawniania dołączonego do żądania).",
+      "p3": "Sprzeciwiamy się wszelkim żądaniom, które uznajemy za zbyt szerokie, nieproporcjonalne lub pozbawione właściwej podstawy prawnej. Nie udostępniamy dobrowolnie danych osobowych żadnemu organowi rządowemu i nie uczestniczymy w programach masowej inwigilacji.",
+      "p4": "Jeśli masz pytania dotyczące naszego podejścia do żądań organów ścigania, skontaktuj się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>."
+    },
+    "liability": {
+      "crossRef": "Aby zapoznać się ze szczegółami dotyczącymi ograniczenia naszej odpowiedzialności, prosimy o zapoznanie się z sekcją Ograniczenie odpowiedzialności w naszych <termsLink>Warunkach korzystania z usługi</termsLink>.",
+      "heading": "Ograniczenie odpowiedzialności"
+    },
+    "disputeResolution": {
+      "heading": "Rozstrzyganie sporów",
+      "p1": "W przypadku sporów niezwiązanych z ochroną danych osobowych zastosowanie mają postanowienia dotyczące rozstrzygania sporów zawarte w naszych <termsLink>Warunkach korzystania z usługi</termsLink>, w tym polubowne rozwiązanie, mediacja i postępowanie sądowe podlegające prawu Anglii i Walii.",
+      "p2": "W przypadku sporów dotyczących ochrony danych osobowych masz prawo złożyć skargę do Biura Komisarza ds. Informacji (ICO) lub dochodzić środka sądowego na podstawie art. 79 RODO i sekcji 167 Ustawy o ochronie danych 2018, bez uszczerbku dla innych dostępnych środków administracyjnych lub pozasądowych."
+    }
   },
   "Terms": {
     "meta": {
@@ -1418,7 +1435,7 @@
       "li2": "Utratę zysków, danych, możliwości korzystania, reputacji lub innych strat niematerialnych",
       "li3": "Wszelkie szkody przekraczające kwotę, którą zapłaciłeś nam w ciągu 12 miesięcy poprzedzających roszczenie",
       "li4": "Żadne z postanowień niniejszego Regulaminu nie wyłącza ani nie ogranicza naszej odpowiedzialności za śmierć lub uszkodzenie ciała spowodowane naszym zaniedbaniem, oszustwem lub podstępnym wprowadzeniem w błąd, ani za jakąkolwiek inną odpowiedzialność, która nie może być wyłączona lub ograniczona na mocy prawa angielskiego",
-      "cap": "Całkowita (łączna) odpowiedzialność Lumenshore z tytułu wszelkich roszczeń wynikających z niniejszego Regulaminu lub korzystania z LumenLingo nie przekracza: (a) dla użytkowników bezpłatnych — zero funtów szterlingów (£0,00); (b) dla płatnych subskrybentów — całkowitej kwoty opłat subskrypcyjnych faktycznie uiszczonych przez Ciebie w ciągu dwunastu (12) miesięcy bezpośrednio poprzedzających zdarzenie będące podstawą roszczenia.",
+      "cap": "Całkowita (łączna) odpowiedzialność Lumenshore z tytułu wszelkich roszczeń wynikających z niniejszego Regulaminu lub korzystania z LumenLingo nie przekracza: (a) dla użytkowników bezpłatnych — dziesięć funtów szterlingów (£10); (b) dla płatnych subskrybentów — całkowitej kwoty opłat subskrypcyjnych faktycznie uiszczonych przez Ciebie w ciągu dwunastu (12) miesięcy bezpośrednio poprzedzających zdarzenie będące podstawą roszczenia.",
       "statutory": "Nic w niniejszych Warunkach nie wyklucza ani nie ogranicza naszej odpowiedzialnosci za: smierc lub uszczerbek na zdrowiu spowodowany naszym zaniedbaniem; oszustwo lub oszukancze wprowadzenie w blad; ani zadna inna odpowiedzialnosc, ktora nie moze byc wykluczona lub ograniczona przez obowiazujace prawo, w tym Twoje prawa ustawowe wynikajace z ustawy o prawach konsumenta z 2015 r. (Wielka Brytania) lub dyrektywy UE w sprawie praw konsumentow.",
       "crossReference": "To ograniczenie odpowiedzialności jest spójne z klauzulą ograniczenia odpowiedzialności w naszej Umowie Licencyjnej Użytkownika Końcowego (EULA). W przypadku stosowania obu umów obowiązuje korzystniejsze ograniczenie (z perspektywy użytkownika)."
     },
@@ -1458,7 +1475,8 @@
       "versionHistory": "Historia wersji",
       "v1": "<b>v1.0</b> (23 marca 2026) — Poczatkowy Regulamin.",
       "v1_1": "<b>v1.1</b> (26 marca 2026) — Dodano sekcje zgodności handlowej/regulacyjnej przeniesione z Polityki Prywatności: traktowanie VAT, VAT UE, międzynarodowe zobowiązania podatkowe, zgodność cenowa, sankcje handlowe, kontrole eksportu szyfrowania. Sekcja Danych zagregowanych zastąpiona odnośnikiem do Polityki Prywatności. Usunięto zduplikowany wpis Prawa właściwego w spisie treści. Skonsolidowano atrybucję znaku towarowego.",
-      "v1_2": "<b>v1.2</b> (lipiec 2025) — Faza 2 wzmocnienia prawnego: ujednolicono nazwę firmy; zharmonizowano wielopoziomowy limit odpowiedzialności z EULA; dodano włączenie EULA Apple; dodano zobowiązanie dostępności; dodano obowiązek powiadomienia o cesji; dodano siłę wyższą i szczegóły sprzedaży na odległość."
+      "v1_2": "<b>v1.2</b> (26 marca 2026) — Faza 2 wzmocnienia prawnego: ujednolicono nazwę firmy; zharmonizowano wielopoziomowy limit odpowiedzialności z EULA; dodano włączenie EULA Apple; dodano zobowiązanie dostępności; dodano obowiązek powiadomienia o cesji; dodano siłę wyższą i szczegóły sprzedaży na odległość.",
+      "v1_3": "<b>v1.3</b> (27 marca 2026) — Faza 3 wzmocnienia prawnego: ustandaryzowano limit odpowiedzialności dla bezpłatnego poziomu z 0 GBP na 10 GBP we wszystkich sekcjach dotyczących odpowiedzialności dla spójności z EULA, dodano odsyłacz do przechowywania danych w Polityce prywatności."
     },
     "contactUs": {
       "heading": "Kontakt z nami",
@@ -1581,7 +1599,8 @@
       "arbitrationP2": "Masz prawo <b>zrezygnowac</b> z niniejszej klauzuli arbitrazowej w ciagu 30 dni od pierwszego zaakceptowania niniejszych Warunkow, wysylajac pisemne powiadomienie na adres legal@lumenlingo.com. Jezeli zrezygnujesz, spory beda rozwiazywane przed sadami Anglii i Walii.",
       "classActionHeading": "Zrzeczenie sie pozwow zbiorowych",
       "classActionP1": "W najszerszym zakresie dozwolonym przez obowiazujace prawo Ty i Lumenshore zgadzacie sie, ze wszelkie postepowania w sprawie rozwiazywania sporow beda prowadzone wylacznie indywidualnie, a nie jako pozew zbiorowy, skonsolidowany lub reprezentacyjny. Jezeli niniejsze zrzeczenie sie okaze sie niewykonalne w Twojej jurysdykcji, pozostale postanowienia niniejszego dzialu pozostaja w pelnej mocy.",
-      "consumerNote": "Jezeli jestes konsumentem w Unii Europejskiej lub Zjednoczonym Krolestwie, nic w niniejszym dziale nie wplywa na Twoje prawa ustawowe, w tym prawo do wszczecia postepowania przed sadami w kraju Twojego zamieszkania."
+      "consumerNote": "Jezeli jestes konsumentem w Unii Europejskiej lub Zjednoczonym Krolestwie, nic w niniejszym dziale nie wplywa na Twoje prawa ustawowe, w tym prawo do wszczecia postepowania przed sadami w kraju Twojego zamieszkania.",
+      "gdprExemption": "Żadne postanowienie niniejszej klauzuli rozstrzygania sporów nie ogranicza ani nie narusza Twojego prawa do wniesienia powództwa do właściwego sądu w związku z naruszeniem Twoich praw do ochrony danych na podstawie art. 79 RODO lub sekcji 167 Ustawy o ochronie danych osobowych 2018 (Data Protection Act 2018). Roszczenia dotyczące ochrony danych mogą być zawsze wnoszone do sądów niezależnie od jakichkolwiek postanowień dotyczących rozstrzygania sporów, arbitrażu lub zrzeczenia się pozwu zbiorowego zawartych w niniejszych Warunkach."
     },
     "educationalDisclaimer": {
       "heading": "Zastrzezenie dotyczace tresci edukacyjnych",
@@ -1605,7 +1624,8 @@
       "li3": "Jakichkolwiek treści przesłanych przez Ciebie do lub za pośrednictwem Usługi.",
       "p2": "To zwolnienie z odpowiedzialności nie ma zastosowania w zakresie, w jakim roszczenie wynika z naszego zaniedbania, naszego naruszenia umowy lub wadliwych treści cyfrowych dostarczonych przez nas.",
       "p3": "Jeśli jesteś konsumentem w Wielkiej Brytanii lub Unii Europejskiej, ta klauzula zwolnienia z odpowiedzialności nie wpływa na Twoje prawa ustawowe na mocy Consumer Rights Act 2015 lub równoważnych przepisów o ochronie konsumentów. Żadne postanowienie tej klauzuli nie wymaga od Ciebie zwolnienia nas z odpowiedzialności za straty wynikające z naszej własnej winy.",
-      "p4": "Lumenshore zastrzega sobie prawo do przejęcia wyłącznej obrony i kontroli nad każdą sprawą podlegającą zwolnieniu z odpowiedzialności, w którym to przypadku zgadzasz się współpracować z Lumenshore."
+      "p4": "Lumenshore zastrzega sobie prawo do przejęcia wyłącznej obrony i kontroli nad każdą sprawą podlegającą zwolnieniu z odpowiedzialności, w którym to przypadku zgadzasz się współpracować z Lumenshore.",
+      "mutual": "Lumenshore Limited zobowiązuje się do zabezpieczenia, obrony i zwolnienia Cię od wszelkich roszczeń osób trzecich, szkód i uzasadnionych kosztów prawnych wynikających bezpośrednio z: (a) zaniedbania lub umyślnego zachowania Lumenshore; (b) naruszenia przez Lumenshore zobowiązań wynikających z niniejszych Warunków; lub (c) naruszenia przez Lumenshore Twoich praw własności intelektualnej. Niniejsze wzajemne zobowiązanie podlega tym samym ograniczeniom odpowiedzialności określonym w niniejszych Warunkach."
     },
     "usArbitration": {
       "heading": "Umowa arbitrazowa USA",
@@ -1763,7 +1783,8 @@
       "p2": "Istotne zmiany beda komunikowane za posrednictwem poczty elektronicznej (subskrybentom) lub powiadomienia w aplikacji.",
       "p3": "Dalsze korzystanie z Uslugi po powiadomieniu stanowi akceptacje zmodyfikowanych Warunkow.",
       "p4": "Jesli nie zgadzasz sie ze zmodyfikowanymi Warunkami, musisz zaprzestac korzystania z Uslugi i anulowac subskrypcje.",
-      "p5": "Nieistotne aktualizacje (takie jak poprawki literowek lub wyjasnienia) moga byc dokonywane bez powiadomienia."
+      "p5": "Nieistotne aktualizacje (takie jak poprawki literowek lub wyjasnienia) moga byc dokonywane bez powiadomienia.",
+      "fairnessP1": "Jeśli zmiana niniejszych Warunków istotnie ogranicza Twoje prawa lub zwiększa Twoje zobowiązania, zmiana ta nie wejdzie w życie wobec obecnych użytkowników przez 30 dni od powiadomienia. W tym 30-dniowym okresie możesz bezpłatnie rozwiązać konto i anulować subskrypcję, jeśli nie zgadzasz się ze zmienionymi Warunkami."
     },
     "terminationEffect": {
       "heading": "Skutek Wypowiedzenia",
@@ -2024,6 +2045,35 @@
       "heading": "Dostępność",
       "p1": "Zobowiązujemy się do zapewnienia dostępności LumenLingo dla wszystkich użytkowników. Dążymy do zgodności z Wytycznymi dotyczącymi dostępności treści internetowych (WCAG) 2.1 poziom AA dla naszej strony internetowej i stosujemy się do wytycznych Apple dotyczących interfejsu użytkownika w zakresie dostępności w naszej aplikacji iOS. Szczegóły znajdziesz w naszej <accessibilityLink>Deklaracji dostępności</accessibilityLink>.",
       "p2": "Jeśli napotkasz bariery dostępności, skontaktuj się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>. Uznajemy nasze obowiązki wynikające z Ustawy o równości 2010 i dołożymy starań, aby niezwłocznie rozwiązać zgłoszone problemy."
+    },
+    "fairnessNotice": {
+      "heading": "Informacja o prawach konsumenta",
+      "p1": "Niniejsze Warunki zostały sporządzone prostym i zrozumiałym językiem zgodnie z Ustawą o prawach konsumenta 2015 (Consumer Rights Act 2015), sekcja 68. Jeśli jakiekolwiek postanowienie okaże się niejasne, zostanie zinterpretowane na korzyść konsumenta.",
+      "p2": "Żadne postanowienie niniejszych Warunków nie wyłącza ani nie ogranicza naszej odpowiedzialności za: (a) śmierć lub uszkodzenie ciała spowodowane naszym zaniedbaniem; (b) oszustwo lub oszukańcze wprowadzenie w błąd; ani (c) jakąkolwiek inną odpowiedzialność, która nie może być zgodnie z prawem wyłączona lub ograniczona na mocy Ustawy o prawach konsumenta 2015, sekcja 65, lub innego obowiązującego prawa.",
+      "p3": "Twoje ustawowe prawa konsumenta wynikające z Ustawy o prawach konsumenta 2015 nie są naruszone przez żadne postanowienie niniejszych Warunków. W przypadku sprzeczności między niniejszymi Warunkami a Twoimi prawami ustawowymi, pierwszeństwo mają prawa ustawowe."
+    },
+    "onlineSafety": {
+      "heading": "Ustawa o bezpieczeństwie w sieci 2023",
+      "p1": "LumenLingo obecnie nie pozwala użytkownikom na tworzenie, przesyłanie ani udostępnianie treści innym użytkownikom. Wszystkie treści fiszek są dostarczane przez Lumenshore, a wszystkie dane nauki pozostają prywatne dla każdego użytkownika.",
+      "p2": "Ponieważ nie ma treści generowanych przez użytkowników, obowiązki wynikające z Części 3 Ustawy o bezpieczeństwie w sieci 2023 (Online Safety Act 2023) dotyczące usług typu użytkownik-użytkownik (w tym sekcja 10, obowiązki dotyczące nielegalnych treści) nie mają obecnie zastosowania do LumenLingo.",
+      "p3": "Jeśli w przyszłości wprowadzimy funkcje umożliwiające użytkownikom tworzenie lub udostępnianie treści innym użytkownikom, zaktualizujemy niniejsze Warunki o zobowiązania dotyczące moderacji treści, mechanizm zgłaszania, terminy przeglądu oraz proces odwoławczy zgodnie z Ustawą o bezpieczeństwie w sieci 2023."
+    },
+    "definitions": {
+      "heading": "Zdefiniowane terminy",
+      "intro": "Następujące terminy, pisane wielką literą w niniejszych Warunkach korzystania z usługi, mają znaczenie określone poniżej:",
+      "service": "<b>\"Usługa\"</b> oznacza platformę do nauki języków LumenLingo, w tym Aplikację, Stronę internetową oraz wszystkie powiązane funkcje, treści i funkcjonalności dostarczane przez Lumenshore Limited.",
+      "app": "<b>\"Aplikacja\"</b> oznacza aplikację LumenLingo na iOS, dystrybuowaną za pośrednictwem Apple App Store, wraz ze wszystkimi aktualizacjami i nowymi wersjami.",
+      "website": "<b>\"Strona internetowa\"</b> oznacza stronę LumenLingo pod adresem lumenlingo.com oraz wszystkie jej subdomeny.",
+      "userData": "<b>\"Dane użytkownika\"</b> oznaczają dane osobowe i dane edukacyjne związane z korzystaniem z Usługi, w tym postępy, preferencje i historię ćwiczeń.",
+      "content": "<b>\"Treść\"</b> oznacza wszystkie teksty, obrazy, materiały audio, fiszki, tłumaczenia i inne materiały dostarczane przez Lumenshore za pośrednictwem Usługi.",
+      "ip": "<b>\"Własność intelektualna\"</b> oznacza wszystkie prawa autorskie, znaki towarowe, patenty, tajemnice handlowe i inne prawa własności do Usługi i jej Treści.",
+      "subscription": "<b>\"Subskrypcja\"</b> oznacza cykliczny płatny plan zapewniający dostęp do funkcji Premium Usługi, zakupiony za pośrednictwem Apple App Store.",
+      "freeTier": "<b>\"Wariant bezpłatny\"</b> oznacza wersję Usługi dostępną bez Subskrypcji, zapewniającą ograniczony dostęp do Treści i funkcji.",
+      "premiumTier": "<b>\"Wariant Premium\"</b> oznacza wersję Usługi dostępną dla Subskrybentów, zapewniającą pełny dostęp do wszystkich Treści i funkcji."
+    },
+    "retention": {
+      "crossRef": "Dane zebrane podczas korzystania z Usługi są przechowywane zgodnie z opisem w naszej <privacyLink>Polityce prywatności</privacyLink>. Prosimy o zapoznanie się z Polityką prywatności w celu uzyskania informacji o okresach przechowywania, usuwaniu danych i Twoich prawach dotyczących danych osobowych.",
+      "heading": "Przechowywanie danych"
     }
   },
   "Blog": {
@@ -2198,15 +2248,16 @@
     "updates": {
       "heading": "Aktualizacje Polityki",
       "p1": "Możemy zaktualizować tę Politykę Plików Cookie gdy dodamy nowe mechanizmy przechowywania.",
-      "version": "<b>Aktualna wersja zgody:</b> 1.1",
+      "version": "<b>Aktualna wersja zgody:</b> 1.2",
       "versionHistory": "Historia wersji",
-      "v1": "<b>v1.0</b> (lipiec 2025) — Opublikowano początkową Politykę Plików Cookie.",
-      "v1_1": "<b>v1.1</b> (lipiec 2025) — Faza 2 wzmocnienia prawnego: dodano prawo do skargi do ICO; dodano mechanizm rozliczalności zgody; odrębnie ujawniono Vercel Speed Insights; wymieniono klucze Sentry; usunięto język hedgingowy; ujednolicono nazwę firmy."
+      "v1": "<b>v1.0</b> (24 marca 2026) — Opublikowano początkową Politykę Plików Cookie.",
+      "v1_1": "<b>v1.1</b> (26 marca 2026) — Faza 2 wzmocnienia prawnego: dodano prawo do skargi do ICO; dodano mechanizm rozliczalności zgody; odrębnie ujawniono Vercel Speed Insights; wymieniono klucze Sentry; usunięto język hedgingowy; ujednolicono nazwę firmy.",
+      "v1_2": "<b>v1.2</b> (27 marca 2026) — Faza 3 wzmocnienia prawnego: dodano sekcję mechanizmu zgody na pliki cookie (odrzucenie, wycofanie, wyraźna zgoda), dodano granularne kontrole plików cookie (niezbędne, funkcjonalne, analityczne), dodano instrukcje zarządzania pamięcią przeglądarki (Chrome, Safari, Firefox, Edge), dodano oświadczenie o dostępności, dodano odsyłacz do przechowywania danych w Polityce prywatności, ustandaryzowano adresy e-mail kontaktowe na legal@lumenlingo.com."
     },
     "contact": {
       "heading": "Kontakt",
       "intro": "Jeśli masz pytania dotyczące tej Polityki Plików Cookie:",
-      "email": "<b>Email:</b> <emailLink>legal@lumenlingo.com</emailLink>",
+      "email": "<b>E-mail:</b> <emailLink>legal@lumenlingo.com</emailLink>",
       "company": "<b>Firma:</b> Lumenshore Limited (numer firmy: 09607326)",
       "responseTime": "Zwykle odpowiadamy w ciągu 48 godzin."
     },
@@ -2245,6 +2296,37 @@
       "p1": "Twoja preferencja zgody jest przechowywana lokalnie na Twoim urządzeniu w kluczu localStorage <code>ll_cookie_consent</code>. Nie przesyłamy rekordów zgody na nasze serwery — jest to świadomy wybór w ramach minimalizacji danych.",
       "p2": "Zapewniamy rozliczalność poprzez kontrole techniczne: dane analityczne (Vercel Analytics, Vercel Speed Insights) i dane monitorowania błędów (Sentry) są przesyłane wyłącznie wtedy, gdy odpowiednia lokalna flaga zgody jest aktywna. Obecność rekordów analitycznych lub monitoringu błędów dla Twojej sesji stanowi zatem dowód udzielenia zgody. Jeśli flaga zgody nie jest ustawiona, żadne nieistotne dane nie opuszczają Twojego urządzenia.",
       "p3": "To podejście spełnia wymogi art. 7 ust. 1 RODO, zgodnie z którym administrator musi być w stanie wykazać zgodę, jednocześnie minimalizując zbierane przez nas dane osobowe."
+    },
+    "consent": {
+      "heading": "Zgoda na pliki cookie",
+      "rejection": "Możesz odrzucić wszystkie nieistotne pliki cookie, klikając przycisk \"Odrzuć wszystkie\" na banerze cookie. Odrzucenie nieistotnych plików cookie nie wpływa na dostęp do żadnej funkcjonalności witryny. Po odrzuceniu aktywne pozostaną jedynie niezbędne pliki cookie (preferencje zgody i wybór języka).",
+      "withdrawal": "Możesz wycofać zgodę na pliki cookie w dowolnym momencie, klikając \"Ustawienia cookie\" w stopce witryny. Po wycofaniu zgody wszystkie nieistotne pliki cookie i elementy pamięci zostaną usunięte z Twojej przeglądarki. Dane już zebrane w okresie obowiązywania zgody mogą być przechowywane zgodnie z harmonogramem retencji opisanym w naszej Polityce prywatności. Wycofanie zgody nie wpływa na zgodność z prawem przetwarzania przeprowadzonego przed wycofaniem (art. 7 ust. 3 RODO).",
+      "affirmative": "Żadne opcje zgody na pliki cookie nie są domyślnie zaznaczone. Zgoda wymaga potwierdzenia: kliknięcia \"Akceptuj wszystkie\" lub indywidualnego przełączenia poszczególnych kategorii plików cookie na pozycję \"włączone\". Samo przeglądanie witryny bez interakcji z banerem cookie nie stanowi zgody i żadne nieistotne pliki cookie nie zostaną ustawione, dopóki nie dokonasz aktywnego wyboru."
+    },
+    "granularity": {
+      "heading": "Kontrole kategorii plików cookie",
+      "p1": "Możesz kontrolować pliki cookie według kategorii. Każda kategoria może być niezależnie włączona lub wyłączona za pomocą panelu ustawień plików cookie:",
+      "li1": "<b>Ściśle niezbędne</b> -- Zawsze aktywne. Obejmują przechowywanie preferencji zgody (ll_cookie_consent) i wybór języka (NEXT_LOCALE). Nie można ich wyłączyć, ponieważ są niezbędne do działania witryny.",
+      "li2": "<b>Analityczne</b> -- Vercel Web Analytics działa bez ustawiania plików cookie i nie wymaga zgody. Przełącznik nie jest potrzebny dla tej kategorii.",
+      "li3": "<b>Funkcjonalne</b> -- Obejmują powtórkę sesji Sentry do monitorowania błędów. Ta kategoria może być włączona lub wyłączona. Elementy pamięci innych firm od Sentry mogą być odrzucone bez wpływu na podstawową funkcjonalność witryny.",
+      "p2": "Twoje preferencje kategorii są przechowywane w kluczu ll_cookie_consent w localStorage i uwzględniane przy każdej kolejnej wizycie."
+    },
+    "browserInstructions": {
+      "heading": "Zarządzanie plikami cookie w przeglądarce",
+      "intro": "Oprócz naszego panelu ustawień plików cookie, możesz zarządzać plikami cookie lub je usuwać bezpośrednio w ustawieniach przeglądarki. Poniżej znajdują się linki do instrukcji zarządzania plikami cookie dla głównych przeglądarek:",
+      "chrome": "<b>Google Chrome:</b> <chromeLink>Czyszczenie, włączanie i zarządzanie plikami cookie w Chrome</chromeLink>",
+      "safari": "<b>Safari:</b> <safariLink>Zarządzanie plikami cookie i danymi witryn w Safari</safariLink>",
+      "firefox": "<b>Firefox:</b> <firefoxLink>Czyszczenie plików cookie i danych witryn w Firefox</firefoxLink>",
+      "edge": "<b>Microsoft Edge:</b> <edgeLink>Usuwanie plików cookie w Microsoft Edge</edgeLink>",
+      "itp": "Użytkownicy Safari powinni pamiętać, że funkcja Intelligent Tracking Prevention (ITP) w Safari automatycznie ogranicza czas życia większości plików cookie i ogranicza śledzenie między witrynami. ITP może usunąć niektóre pliki cookie wcześniej niż wskazano w naszej tabeli plików cookie powyżej. Jest to funkcja przeglądarki Safari i nie jest kontrolowana przez LumenLingo."
+    },
+    "accessibility": {
+      "heading": "Dostępność ustawień cookie",
+      "p1": "Baner cookie i panel ustawień zostały zaprojektowane tak, aby były w pełni dostępne. Wszystkie elementy sterujące obsługują nawigację klawiaturą (Tab, Enter, Spacja) i są kompatybilne z czytnikami ekranu dzięki odpowiednim etykietom ARIA. Kontrast kolorów spełnia wymagania WCAG 2.1 Poziom AA. Jeśli masz trudności z interakcją z banerem cookie lub ustawieniami, skontaktuj się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>, a pomożemy Ci w zarządzaniu preferencjami cookie."
+    },
+    "retention": {
+      "crossRef": "Aby zapoznać się z pełnymi szczegółami dotyczącymi okresów przechowywania danych, w tym czasu przechowywania danych osobowych i naszego harmonogramu usuwania, prosimy o zapoznanie się z naszą <privacyLink>Polityką prywatności</privacyLink>.",
+      "heading": "Przechowywanie danych"
     }
   },
   "Eula": {
@@ -2260,106 +2342,107 @@
     },
     "introduction": {
       "heading": "Wprowadzenie",
-      "p1": "This End-User Licence Agreement (\"EULA\") is a binding legal agreement between you (\"User\", \"you\") and Lumenshore Limited, a company registered in England and Wales (Company No. 09607326), with its registered office at Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA (\"Lumenshore\", \"we\", \"us\").",
-      "p2": "This EULA governs your use of the LumenLingo mobile application (\"App\") available through the Apple App Store. By downloading, installing, or using the App, you agree to be bound by the terms of this EULA. If you do not agree, do not download, install, or use the App."
+      "p1": "Niniejsza Umowa Licencyjna Użytkownika Końcowego („EULA”) jest wiążącą umową prawną pomiędzy Tobą („Użytkownik”, „ty”) a Lumenshore Limited, spółką zarejestrowaną w Anglii i Walii (numer spółki 09607326), z siedzibą pod adresem Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA („Lumenshore”, „my”, „nas”).",
+      "p2": "Niniejsza EULA reguluje korzystanie z aplikacji mobilnej LumenLingo („Aplikacja”) dostępnej za pośrednictwem Apple App Store. Pobierając, instalując lub używając Aplikacji, zgadzasz się na warunki niniejszej EULA. Jeśli się nie zgadzasz, nie pobieraj, nie instaluj ani nie używaj Aplikacji."
     },
     "licenceGrant": {
       "heading": "Udzielenie Licencji",
-      "intro": "Subject to the terms of this EULA, Lumenshore grants you a limited, non-exclusive, non-transferable, revocable licence to:",
-      "li1": "Download and install the App on Apple-branded devices that you own or control.",
-      "li2": "Use the App for your personal, non-commercial language-learning purposes.",
-      "li3": "Access features and content according to your membership tier (Free, Pro, Elite, or Royal).",
-      "p1": "This licence does not allow you to use the App on any device that you do not own or control, and you may not distribute or make the App available over a network where it could be used by multiple devices at the same time."
+      "intro": "Z zastrzeżeniem warunków niniejszej EULA, Lumenshore udziela Ci ograniczonej, niewyłącznej, niezbywalnej, odwołalnej licencji na:",
+      "li1": "Pobieranie i instalowanie Aplikacji na urządzeniach marki Apple, które posiadasz lub kontrolujesz.",
+      "li2": "Korzystanie z Aplikacji w celach osobistej, niekomercyjnej nauki języków.",
+      "li3": "Dostęp do funkcji i treści zgodnie z Twoim poziomem członkostwa (Free, Pro, Elite lub Royal).",
+      "p1": "Niniejsza licencja nie pozwala na korzystanie z Aplikacji na urządzeniu, którego nie posiadasz ani nie kontrolujesz, i nie możesz rozpowszechniać ani udostępniać Aplikacji za pośrednictwem sieci, w której mogłaby być używana jednocześnie przez wiele urządzeń."
     },
     "tierAccess": {
       "heading": "Poziomy Członkostwa i Dostęp do Funkcji",
-      "intro": "LumenLingo offers multiple membership tiers, each providing different levels of access:",
-      "li1": "<b>Free tier</b> — core language-learning features with limited language pairs and daily practice time.",
-      "li2": "<b>Pro tier</b> — additional language pairs, unlimited practice time, and soundscapes.",
-      "li3": "<b>Elite tier</b> — all Pro features plus breathing orbs, quantum flow, and advanced analytics.",
-      "li4": "<b>Royal tier</b> — the complete LumenLingo experience with all features unlocked, including nebula drift and offline mode.",
-      "p1": "Your access to tier-specific features is conditional upon maintaining an active subscription. If your subscription lapses, access to premium features will revert to the Free tier."
+      "intro": "LumenLingo oferuje różne poziomy członkostwa, z których każdy zapewnia inny poziom dostępu:",
+      "li1": "<b>Poziom Free</b> — podstawowe funkcje nauki języków z ograniczoną liczbą par językowych i dziennym czasem ćwiczeń.",
+      "li2": "<b>Poziom Pro</b> — dodatkowe pary językowe, nieograniczony czas ćwiczeń oraz krajobrazy dźwiękowe.",
+      "li3": "<b>Poziom Elite</b> — wszystkie funkcje Pro plus oddechowe sfery, quantum flow i zaawansowana analityka.",
+      "li4": "<b>Poziom Royal</b> — pełne doświadczenie LumenLingo ze wszystkimi odblokowanymi funkcjami, w tym nebula drift i tryb offline.",
+      "p1": "Twój dostęp do funkcji specyficznych dla poziomu jest uzależniony od utrzymania aktywnej subskrypcji. Jeśli Twoja subskrypcja wygaśnie, dostęp do funkcji premium zostanie przywrócony do poziomu Free."
     },
     "contentOwnership": {
       "heading": "Własność Treści",
-      "p1": "All content within the App — including but not limited to flashcard content, grammar explanations, vocabulary databases, game mechanics, animations, soundscapes, visual effects, and user interface designs — is the intellectual property of Lumenshore Limited or its licensors and is protected by copyright, trademark, and other intellectual property laws.",
-      "p2": "You retain ownership of your personal learning data, including progress records, preferences, and practice history. This data is stored locally on your device and is not transmitted to Lumenshore servers."
+      "p1": "Wszelkie treści w Aplikacji — w tym między innymi treści fiszek, objaśnienia gramatyczne, bazy danych słownictwa, mechaniki gier, animacje, krajobrazy dźwiękowe, efekty wizualne i projekty interfejsu użytkownika — stanowią własność intelektualną Lumenshore Limited lub jej licencjodawców i są chronione prawem autorskim, znakami towarowymi oraz innymi prawami własności intelektualnej.",
+      "p2": "Zachowujesz własność swoich osobistych danych edukacyjnych, w tym zapisów postępów, preferencji i historii ćwiczeń. Dane te są przechowywane lokalnie na Twoim urządzeniu i nie są przesyłane na serwery Lumenshore."
     },
     "restrictions": {
       "heading": "Ograniczenia",
-      "intro": "You agree not to, and you will not permit others to:",
-      "li1": "Copy, modify, or create derivative works based on the App or its content.",
-      "li2": "Reverse engineer, disassemble, decompile, decode, or otherwise attempt to derive the source code of the App.",
-      "li3": "Distribute, sublicence, lease, lend, rent, or otherwise transfer the App or any rights therein to any third party.",
-      "li4": "Remove, alter, or obscure any proprietary notices, labels, or marks on the App.",
-      "li5": "Use the App for any commercial purpose, in competing products, or to develop similar software.",
-      "li6": "Use automated scripts, bots, scraping tools, or data-mining techniques to extract content from the App.",
-      "li7": "Attempt to circumvent subscription tier restrictions or any technical protection measures."
+      "intro": "Zgadzasz się nie podejmować następujących działań i nie zezwalasz na to innym osobom:",
+      "li1": "Kopiowanie, modyfikowanie lub tworzenie dzieł pochodnych na podstawie Aplikacji lub jej treści.",
+      "li2": "Reverse engineering, dezasemblacja, dekompilacja, dekodowanie lub inną próbę uzyskania kodu źródłowego Aplikacji.",
+      "li3": "Dystrybucja, sublicencjonowanie, dzierżawa, pożyczanie, wynajem lub inne przekazywanie Aplikacji lub jakichkolwiek praw do niej osobom trzecim.",
+      "li4": "Usuwanie, zmiana lub ukrywanie jakichkolwiek oznaczeń własnościowych, etykiet lub znaków na Aplikacji.",
+      "li5": "Używanie Aplikacji w celach komercyjnych, w produktach konkurencyjnych lub do tworzenia podobnego oprogramowania.",
+      "li6": "Używanie automatycznych skryptów, botów, narzędzi do scrapingu lub technik eksploracji danych w celu wyodrębniania treści z Aplikacji.",
+      "li7": "Próba obejścia ograniczeń poziomu subskrypcji lub jakichkolwiek technicznych środków ochronnych."
     },
     "termination": {
       "heading": "Rozwiązanie",
-      "p1": "This EULA is effective from when you first download or use the App and continues until terminated. You may terminate it at any time by deleting the App and all copies from your devices.",
-      "p2": "Lumenshore may terminate this EULA immediately, without prior notice, if you breach any of its terms. Upon termination:",
-      "li1": "All rights and licences granted to you under this EULA will cease immediately.",
-      "li2": "You must stop all use of the App and delete all copies from your devices.",
-      "li3": "Any accrued rights or obligations (including limitation of liability) shall survive termination.",
-      "li4": "No refund will be provided for any prepaid subscription period remaining at the time of termination for cause."
+      "p1": "Niniejsza EULA obowiązuje od momentu pierwszego pobrania lub użycia Aplikacji i trwa do jej rozwiązania. Możesz ją rozwiązać w dowolnym momencie, usuwając Aplikację i wszystkie jej kopie ze swoich urządzeń.",
+      "p2": "Lumenshore może rozwiązać niniejszą EULA ze skutkiem natychmiastowym, bez uprzedniego powiadomienia, jeśli naruszysz którykolwiek z jej warunków. Po rozwiązaniu:",
+      "li1": "Wszystkie prawa i licencje przyznane Ci na mocy niniejszej EULA wygasną natychmiast.",
+      "li2": "Musisz zaprzestać korzystania z Aplikacji i usunąć wszystkie jej kopie ze swoich urządzeń.",
+      "li3": "Wszelkie nabyte prawa lub zobowiązania (w tym ograniczenie odpowiedzialności) pozostają w mocy po rozwiązaniu umowy.",
+      "li4": "Żaden zwrot nie zostanie dokonany za pozostały okres opłaconej z góry subskrypcji w momencie rozwiązania umowy z przyczyn leżących po stronie użytkownika."
     },
     "warranties": {
       "heading": "Wyłączenie Gwarancji",
-      "p1": "The App is provided on an \"AS IS\" and \"AS AVAILABLE\" basis, without warranties of any kind, either express or implied. To the maximum extent permitted by applicable law, Lumenshore disclaims all warranties, including but not limited to:",
-      "li1": "Merchantability, fitness for a particular purpose, and non-infringement.",
-      "li2": "That the App will be uninterrupted, error-free, secure, or free of viruses or harmful components.",
-      "li3": "That the language content, translations, or educational material will be completely accurate or current.",
-      "li4": "That learning outcomes or proficiency improvements will be achieved.",
-      "p2": "You acknowledge that language learning is a complex process and results may vary. LumenLingo is a supplementary learning tool and is not a substitute for formal language instruction.",
+      "p1": "Aplikacja jest udostępniana w stanie „TAKIM, JAKI JEST” i „W MIARĘ DOSTĘPNOŚCI”, bez jakichkolwiek gwarancji, wyraźnych lub dorozumianych. W maksymalnym zakresie dozwolonym przez obowiązujące prawo Lumenshore wyklucza wszelkie gwarancje, w tym między innymi:",
+      "li1": "Przydatności handlowej, przydatności do określonego celu i nienaruszalności praw.",
+      "li2": "Że Aplikacja będzie działać nieprzerwanie, bezbłędnie, bezpiecznie lub bez wirusów i szkodliwych komponentów.",
+      "li3": "Że treści językowe, tłumaczenia lub materiały edukacyjne będą całkowicie dokładne lub aktualne.",
+      "li4": "że zostaną osiągnięte określone wyniki nauki lub poprawa biegłości językowej.",
+      "p2": "Przyjmujesz do wiadomości, że nauka języków jest złożonym procesem, a wyniki mogą się różnić. LumenLingo jest uzupełniającym narzędziem edukacyjnym i nie stanowi substytutu formalnej nauki języka.",
       "craSavings": "Twoje prawa ustawowe na mocy Consumer Rights Act 2015 nie są naruszane przez to zastrzeżenie. Treści cyfrowe dostarczane przez Lumenshore muszą być zadowalającej jakości, odpowiednie do określonego celu i zgodne z opisem (CRA 2015, sekcje 34-36). Prawa te nie mogą być wyłączone."
     },
     "liability": {
       "heading": "Ograniczenie Odpowiedzialności",
-      "p1": "To the maximum extent permitted by applicable law, in no event shall Lumenshore, its directors, employees, partners, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation:",
-      "li1": "Loss of profits, data, use, goodwill, or other intangible losses.",
-      "li2": "The cost of procurement of substitute goods or services.",
-      "li3": "Any damage resulting from unauthorised access to or alteration of your data.",
-      "li4": "Any other matter relating to the App.",
-      "cap": "Lumenshore's total aggregate liability for all claims arising out of or relating to this EULA or your use of the App shall not exceed: (a) for Free tier users — zero pounds sterling (£0.00); (b) for paid subscribers — the total subscription fees paid by you in the twelve (12) months preceding the claim.",
+      "p1": "W maksymalnym zakresie dozwolonym przez obowiązujące prawo, w żadnym wypadku Lumenshore, jej dyrektorzy, pracownicy, partnerzy lub podmioty stowarzyszone nie ponoszą odpowiedzialności za jakiekolwiek szkody pośrednie, przypadkowe, specjalne, wynikowe lub karne, w tym bez ograniczeń:",
+      "li1": "Utratę zysków, danych, możliwości korzystania, wartości firmy lub innych strat niematerialnych.",
+      "li2": "Koszty nabycia zastępczych towarów lub usług.",
+      "li3": "Jakiekolwiek szkody wynikające z nieautoryzowanego dostępu do Twoich danych lub ich modyfikacji.",
+      "li4": "Jakiekolwiek inne kwestie związane z Aplikacją.",
+      "cap": "Łączna odpowiedzialność Lumenshore za wszystkie roszczenia wynikające z niniejszej EULA lub korzystania z Aplikacji nie przekroczy: (a) dla użytkowników poziomu Free — dziesięciu funtów szterlingów (£10); (b) dla płatnych subskrybentów — łącznych opłat subskrypcyjnych uiszczonych przez Ciebie w ciągu dwunastu (12) miesięcy poprzedzających roszczenie.",
       "statutory": "Żadne postanowienie niniejszej Umowy EULA nie wyłącza ani nie ogranicza naszej odpowiedzialności za: (a) śmierć lub uszkodzenie ciała spowodowane naszym zaniedbaniem; (b) oszustwo lub oszukańcze wprowadzenie w błąd; (c) jakąkolwiek odpowiedzialność, której nie można wyłączyć lub ograniczyć na mocy Consumer Rights Act 2015; ani (d) jakąkolwiek inną odpowiedzialność, której nie można wyłączyć lub ograniczyć na mocy prawa.",
       "crossReference": "To ograniczenie odpowiedzialności jest spójne z klauzulą ograniczenia odpowiedzialności w naszym Regulaminie. W przypadku stosowania obu umów obowiązuje korzystniejsze ograniczenie (z perspektywy użytkownika)."
     },
     "assumptionOfRisk": {
       "heading": "Przyjęcie Ryzyka",
-      "p1": "You expressly acknowledge and agree that your use of the App is at your sole risk. You are responsible for ensuring that the App is suitable for your language-learning needs.",
-      "p2": "Lumenshore shall not be liable for any data loss that may occur as a result of device failure, operating system updates, App deletion, or any other circumstances beyond our reasonable control. You are encouraged to regularly back up your device."
+      "p1": "Wyraźnie przyjmujesz do wiadomości i zgadzasz się, że korzystanie z Aplikacji odbywa się na Twoje wyłączne ryzyko. Jesteś odpowiedzialny za upewnienie się, że Aplikacja jest odpowiednia dla Twoich potrzeb w zakresie nauki języków.",
+      "p2": "Lumenshore nie ponosi odpowiedzialności za jakiekolwiek straty danych, które mogą wystąpić w wyniku awarii urządzenia, aktualizacji systemu operacyjnego, usunięcia Aplikacji lub innych okoliczności pozostających poza naszą uzasadnioną kontrolą. Zalecamy regularne tworzenie kopii zapasowych urządzenia."
     },
     "governingLaw": {
       "heading": "Prawo Właściwe",
-      "p1": "This EULA shall be governed by and construed in accordance with the laws of England and Wales, without regard to its conflict-of-law provisions.",
-      "p2": "Any disputes arising out of or in connection with this EULA shall be subject to the exclusive jurisdiction of the courts of England and Wales. Nothing in this EULA limits your statutory rights as a consumer under the laws of your country of residence."
+      "p1": "Niniejsza EULA podlega prawu Anglii i Walii i jest zgodnie z nim interpretowana, bez względu na przepisy kolizyjne.",
+      "p2": "Wszelkie spory wynikające z niniejszej EULA lub z nią związane podlegają wyłącznej jurysdykcji sądów Anglii i Walii. Żadne postanowienie niniejszej EULA nie ogranicza Twoich ustawowych praw jako konsumenta wynikających z przepisów prawa państwa Twojego zamieszkania."
     },
     "appleTerms": {
       "heading": "Warunki Specyficzne dla Apple",
-      "intro": "The following terms apply to your use of the App obtained through the Apple App Store:",
-      "li1": "This EULA is between you and Lumenshore only, and not with Apple Inc. (\"Apple\"). Apple is not a party to this EULA.",
-      "li2": "Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App.",
-      "li3": "In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the App (if any) to you. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App.",
-      "li4": "Apple is not responsible for addressing any claims by you or any third party relating to the App or your possession and/or use of the App, including but not limited to: (a) product liability claims; (b) any claim that the App fails to conform to any applicable legal or regulatory requirement; and (c) claims arising under consumer protection, privacy, or similar legislation.",
-      "li5": "In the event of any third-party claim that the App or your possession and use of the App infringes that third party's intellectual property rights, Apple shall not be responsible for the investigation, defence, settlement, or discharge of any such intellectual property infringement claim.",
-      "li6": "Apple and its subsidiaries are third-party beneficiaries of this EULA, and upon your acceptance of the terms and conditions of this EULA, Apple will have the right (and will be deemed to have accepted the right) to enforce this EULA against you as a third-party beneficiary thereof.",
+      "intro": "Poniższe warunki mają zastosowanie do korzystania z Aplikacji uzyskanej za pośrednictwem Apple App Store:",
+      "li1": "Niniejsza EULA jest zawarta między Tobą a Lumenshore, a nie z Apple Inc. („Apple”). Apple nie jest stroną niniejszej EULA.",
+      "li2": "Apple nie jest w żaden sposób zobowiązane do świadczenia jakichkolwiek usług konserwacji i wsparcia w odniesieniu do Aplikacji.",
+      "li3": "W przypadku niezgodności Aplikacji z jakimikolwiek obowiązującymi gwarancjami, możesz powiadomić Apple, a Apple zwróci Ci cenę zakupu Aplikacji (jeśli dotyczy). W maksymalnym zakresie dozwolonym przez obowiązujące prawo, Apple nie ponosi żadnych innych zobowiązań gwarancyjnych w odniesieniu do Aplikacji.",
+      "li4": "Apple nie ponosi odpowiedzialności za rozpatrywanie jakichkolwiek roszczeń zgłaszanych przez Ciebie lub osoby trzecie w związku z Aplikacją lub jej posiadaniem i/lub użytkowaniem, w tym między innymi: (a) roszczeń z tytułu odpowiedzialności za produkt; (b) roszczeń dotyczących niezgodności Aplikacji z obowiązującymi wymaganiami prawnymi lub regulacyjnymi; oraz (c) roszczeń wynikających z przepisów o ochronie konsumentów, prywatności lub podobnych regulacji.",
+      "li5": "W przypadku roszczeń osób trzecich dotyczących naruszenia przez Aplikację lub jej posiadanie i użytkowanie praw własności intelektualnej tych osób, Apple nie ponosi odpowiedzialności za dochodzenie, obronę, ugodę ani rozwiązanie takiego roszczenia.",
+      "li6": "Apple i jej spółki zależne są beneficjentami będącymi osobami trzecimi niniejszej EULA, a po zaakceptowaniu przez Ciebie warunków niniejszej EULA, Apple będzie mieć prawo (i będzie uznać za zaakceptowane prawo) do egzekwowania niniejszej EULA wobec Ciebie jako beneficjent będący osobą trzecią.",
       "crossReference": "Te warunki specyficzne dla Apple uzupełniają włączenie przez odniesienie Umowy licencyjnej Apple dla licencjonowanej aplikacji w naszym <termsLink>Regulaminie</termsLink>."
     },
     "changes": {
       "heading": "Zmiany w Niniejszej EULA",
-      "p1": "Lumenshore reserves the right to modify this EULA at any time. If we make material changes, we will notify you through the App or by updating the \"Last updated\" date at the top of this page.",
-      "p2": "Your continued use of the App after changes are posted constitutes your acceptance of the revised EULA. If you do not agree to the changes, you must stop using the App and delete it from your devices.",
+      "p1": "Lumenshore zastrzega sobie prawo do zmiany niniejszej EULA w dowolnym momencie. W przypadku istotnych zmian powiadomimy Cię za pośrednictwem Aplikacji lub poprzez aktualizację daty „Ostatnia aktualizacja” na górze tej strony.",
+      "p2": "Dalsze korzystanie z Aplikacji po opublikowaniu zmian oznacza akceptację zmienionej EULA. Jeśli nie zgadzasz się ze zmianami, musisz zaprzestać korzystania z Aplikacji i usunąć ją ze swoich urządzeń.",
       "versionHistory": "Historia wersji",
-      "v1_1": "<b>v1.1</b> (lipiec 2025) — Faza 2 wzmocnienia prawnego: ujednolicono nazwę firmy; dodano wyłączenia ustawowe dla CRA 2015; dodano prawa konsumenta; dodano zgodność eksportową; dodano potwierdzenia open source; dodano notę spójności odpowiedzialności między politykami."
+      "v1_1": "<b>v1.1</b> (26 marca 2026) — Faza 2 wzmocnienia prawnego: ujednolicono nazwę firmy; dodano wyłączenia ustawowe dla CRA 2015; dodano prawa konsumenta; dodano zgodność eksportową; dodano potwierdzenia open source; dodano notę spójności odpowiedzialności między politykami.",
+      "v1_2": "<b>v1.2</b> (27 marca 2026) — Faza 3 wzmocnienia prawnego: dodano sekcję ochrony danych z odniesieniem do Polityki prywatności, dodano ujawnienie danych biometrycznych (Face ID/Touch ID Secure Enclave), dodano zastrzeżenie dotyczące utraty danych z wyłączeniem CRA 2015, dodano potwierdzenie usług podmiotów trzecich (Apple, RevenueCat), dodano zastrzeżenie edukacyjne, ustandaryzowano limit odpowiedzialności dla bezpłatnego poziomu z 0 GBP na 10 GBP."
     },
     "contact": {
       "heading": "Kontakt",
       "intro": "Jeśli masz pytania dotyczące niniejszej EULA, skontaktuj się z nami:",
-      "email": "<b>Email:</b> <emailLink>legal@lumenlingo.com</emailLink>",
-      "company": "<b>Company:</b> Lumenshore Limited (Company No. 09607326)",
-      "address": "<b>Address:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom",
+      "email": "<b>E-mail:</b> <emailLink>legal@lumenlingo.com</emailLink>",
+      "company": "<b>Firma:</b> Lumenshore Limited (numer firmy 09607326)",
+      "address": "<b>Adres:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, Zjednoczone Królestwo",
       "responseTime": "Zazwyczaj odpowiadamy w ciągu 48 godzin."
     },
     "consumerRights": {
@@ -2414,6 +2497,38 @@
       "p3": "Twoje dane iCloud (jeśli synchronizacja iCloud była włączona) pozostają pod Twoją kontrolą. Możesz zarządzać tymi danymi lub je usunąć w dowolnym momencie w Ustawienia > [Twoje imię] > iCloud > Zarządzaj miejscem > LumenLingo.",
       "p4": "Uprawnienia subskrypcyjne są zarządzane przez Apple. Aby anulować subskrypcję, przejdź do Ustawienia > [Twoje imię] > Subskrypcje na urządzeniu iOS.",
       "p5": "W sprawie formalnych żądań usunięcia danych na mocy Art. 17 UK GDPR prosimy o zapoznanie się z naszą Polityką Prywatności lub złożenie wniosku za pośrednictwem naszej strony Wniosek o dane."
+    },
+    "dataProtection": {
+      "heading": "Ochrona danych",
+      "p1": "Aplikacja przetwarza dane osobowe zgodnie z naszą <privacyLink>Polityką prywatności</privacyLink>. Korzystając z Aplikacji, przyjmujesz do wiadomości, że Twoje dane osobowe będą przetwarzane zgodnie z tą polityką.",
+      "p2": "Żadne postanowienie niniejszej Umowy EULA nie ogranicza, nie narusza ani nie zastępuje Twoich praw wynikających z ogólnego rozporządzenia o ochronie danych (UK GDPR) lub Ustawy o ochronie danych osobowych 2018 (Data Protection Act 2018). W przypadku sprzeczności między niniejszą Umową EULA a obowiązującym prawem ochrony danych osobowych, pierwszeństwo ma prawo ochrony danych.",
+      "p3": "Aby zapoznać się ze szczegółami dotyczącymi zbieranych danych osobowych, sposobu ich wykorzystania, Twoich praw do ochrony danych i sposobu ich wykonywania, prosimy o zapoznanie się z naszą <privacyLink>Polityką prywatności</privacyLink>."
+    },
+    "warranty": {
+      "heading": "Wyłączenie odpowiedzialności za utratę danych",
+      "p1": "Lumenshore nie ponosi odpowiedzialności za utratę danych edukacyjnych spowodowaną: (a) usunięciem Aplikacji z urządzenia; (b) wyłączeniem lub wylogowaniem z iCloud; lub (c) ręcznym wyczyszczeniem pamięci urządzenia. Czynności te mogą trwale usunąć lokalnie przechowywane postępy w nauce, preferencje i historię ćwiczeń.",
+      "p2": "Aby chronić postępy w nauce, zdecydowanie zalecamy utrzymywanie synchronizacji iCloud włączonej przez cały czas. Gdy synchronizacja iCloud jest aktywna, dane są kopiowane na Twoje osobiste konto iCloud i mogą zostać przywrócone po ponownej instalacji Aplikacji.",
+      "p3": "Niniejsze wyłączenie odpowiedzialności nie wpływa na Twoje ustawowe prawa wynikające z Ustawy o prawach konsumenta 2015 (Consumer Rights Act 2015), w tym prawo do środka prawnego, jeśli Aplikacja nie spełnia standardów zadowalającej jakości nie z Twojej winy."
+    },
+    "thirdPartyServices": {
+      "heading": "Usługi podmiotów trzecich",
+      "p1": "Aplikacja korzysta z usług świadczonych przez podmioty trzecie, w tym między innymi:",
+      "li1": "<b>Apple Inc.</b> -- dystrybucja w App Store, synchronizacja danych iCloud oraz obsługa zakupów w aplikacji.",
+      "li2": "<b>RevenueCat, Inc.</b> -- zarządzanie subskrypcjami i walidacja zakupów.",
+      "p2": "Lumenshore nie ponosi odpowiedzialności za niedostępność, błędy, utratę danych lub zmiany funkcjonalności spowodowane usługami podmiotów trzecich. Użytkownicy powinni zapoznać się z warunkami korzystania z usług każdego dostawcy w celu uzyskania szczegółów dotyczących ich zobowiązań i odpowiedzialności.",
+      "p3": "Niniejsza klauzula nie wyłącza ani nie ogranicza odpowiedzialności Lumenshore w przypadku, gdy problem z usługą podmiotu trzeciego został spowodowany lub przyczyniło się do niego zaniedbanie Lumenshore lub naruszenie jego zobowiązań wynikających z niniejszej Umowy EULA."
+    },
+    "educationalDisclaimer": {
+      "heading": "Zastrzeżenie edukacyjne",
+      "p1": "LumenLingo jest pomocą edukacyjną zaprojektowaną w celu uzupełnienia nauki języków. Nie zastępuje profesjonalnej nauki języka, formalnej oceny ani certyfikacji.",
+      "p2": "Lumenshore nie składa żadnych oświadczeń ani gwarancji dotyczących przydatności treści Aplikacji do celów zawodowych, akademickich lub certyfikacyjnych. Użytkownicy powinni weryfikować kluczowe tłumaczenia, gramatykę i zastosowanie u wykwalifikowanych specjalistów językowych przed poleganiem na nich w kontekstach zawodowych lub akademickich.",
+      "p3": "Treść fiszek w Aplikacji jest dobrana do ogólnych celów nauki języka i może nie odzwierciedlać specjalistycznej terminologii, dialektów regionalnych ani najnowszego użycia we wszystkich kontekstach."
+    },
+    "biometricData": {
+      "heading": "Dane biometryczne",
+      "p1": "Aplikacja może oferować możliwość korzystania z Face ID lub Touch ID w celach wygody, takich jak odblokowywanie Aplikacji. Jeśli zdecydujesz się włączyć te funkcje, uwierzytelnianie biometryczne jest przetwarzane wyłącznie przez Apple na Twoim urządzeniu za pomocą Secure Enclave.",
+      "p2": "Lumenshore nie zbiera, nie przechowuje, nie ma dostępu do ani nie przesyła żadnych danych biometrycznych (w tym geometrii twarzy ani danych odcisków palców). Aplikacja otrzymuje jedynie sygnał powodzenia lub niepowodzenia z systemu biometrycznego urządzenia i nigdy nie ma dostępu do podstawowego szablonu biometrycznego.",
+      "p3": "Możesz wyłączyć uwierzytelnianie biometryczne w dowolnym momencie w Ustawieniach urządzenia bez wpływu na możliwość korzystania z Aplikacji."
     }
   },
   "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",

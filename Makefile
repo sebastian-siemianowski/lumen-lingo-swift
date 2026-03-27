@@ -1,4 +1,4 @@
-.PHONY: generate build-dev build-qa build-uat build-preprod build-prod test clean
+.PHONY: generate build-dev build-qa build-uat build-preprod build-prod test clean check-translations check-legal-version
 
 SIMULATOR = iPhone 17 Pro Max
 PROJECT = LumenLingo.xcodeproj
@@ -38,3 +38,9 @@ archive-prod: generate
 clean:
 	cd LumenLingo && xcodebuild -project $(PROJECT) -scheme LumenLingo-Dev clean
 	rm -rf LumenLingo/build
+
+check-translations:
+	python3 scripts/audit_translations.py
+
+check-legal-version:
+	python3 scripts/check_legal_version.py

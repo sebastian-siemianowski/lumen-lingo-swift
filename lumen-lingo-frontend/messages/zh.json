@@ -444,15 +444,15 @@
   "Legal": {
     "tocLabel": "On this page",
     "downloadPdf": "Download as PDF",
-    "lastUpdated": "最后更新：2025年7月1日",
-    "version": "版本 2.2",
+    "lastUpdated": "最后更新：2026年3月27日",
+    "version": "版本 2.3",
     "languageDisclaimer": "本文档提供多种语言版本。如翻译版本之间存在任何冲突或不一致，以英文版本为准。",
     "viewEnglishVersion": "查看英文版本",
-    "termsVersion": "版本 1.2",
+    "termsVersion": "版本 1.3",
     "updateBannerDismiss": "关闭",
     "updateBannerLink": "查看更改",
     "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
-    "eulaVersion": "版本 1.1"
+    "eulaVersion": "版本 1.2"
   },
   "Privacy": {
     "meta": {
@@ -604,7 +604,7 @@
     },
     "childrensPrivacy": {
       "heading": "儿童隐私",
-      "p1": "LumenLingo面向13岁及以上的用户。我们不会故意收集13岁以下儿童的个人信息（或您所在司法管辖区适用的最低年龄，可能更高——例如，德国和荷兰为16岁）。",
+      "p1": "LumenLingo 面向 13 岁及以上的用户设计。根据 GDPR 第 8 条和《2018 年数据保护法》（DPA 2018）第 9 条，我们不会故意收集 13 岁以下儿童的个人信息（或您所在司法管辖区适用的最低年龄，该年龄可能更高——例如德国和荷兰为 16 岁）。",
       "p2": "iOS应用不需要账户注册且数据本地存储，因此任何年龄的应用用户都不会向我们传输个人信息。在网站上，我们不会故意接受13岁以下人员的新闻通讯或等待名单注册。",
       "p3": "家长和监护人可以随时通过标准iOS设备管理来管理或删除应用及其数据。如果您认为儿童向我们提供了个人数据，请联系legal@lumenlingo.com，我们将立即删除。",
       "coppaHeading": "COPPA合规",
@@ -616,7 +616,7 @@
       "parentalLi2": "要求从我们的系统中删除其子女的个人信息",
       "parentalLi3": "拒绝进一步收集或使用其子女的信息",
       "parentalLi4": "通过标准iOS设备管理功能管理或删除应用程序及其本地存储的数据",
-      "parentalP2": "要行使任何这些权利，请通过<emailLink>legal@lumenlingo.com</emailLink>联系我们。如果我们发现在未获得适当父母同意的情况下收集了13岁以下儿童的个人信息，我们将立即删除该信息。",
+      "parentalP2": "如需行使上述任何权利，请通过 <emailLink>legal@lumenlingo.com</emailLink> 与我们联系。如果我们发现在未获得适当家长同意的情况下收集了 13 岁以下儿童的个人信息，我们将在发现后 72 小时内删除该信息。",
       "ferpaHeading": "教育用途与FERPA",
       "ferpaP1": "LumenLingo不由教育机构管理或代表教育机构运行。如果学校或教育组织选择向学生推荐LumenLingo，则是其独立决定。该机构有责任确保遵守《家庭教育权利和隐私法》（FERPA），并在指导13岁以下学生使用服务之前获得必要的父母同意。"
     },
@@ -662,7 +662,7 @@
       "gdprLi4": "数据可携带权——在iOS应用的「设置」→「导出我的数据」中免费下载所有个人数据的JSON文件。您的数据始终以标准格式存储。如需导出网站数据，请联系我们。",
       "gdprLi5": "反对权 — 联系我们以退出匿名分析或反对基于合法利益的处理。",
       "gdprLi6": "限制处理权 — 联系我们以请求限制我们处理您数据的方式。",
-      "gdprLi7": "投诉权 —— 您可以向<icoLink>信息专员办公室（ICO）</icoLink>或您当地的监督机构提出投诉。",
+      "gdprLi7": "投诉权 — 您有权向<icoLink>信息专员办公室（ICO）</icoLink>投诉，网址为 ico.org.uk，电话为 0303 123 1113；如果您在英国境外，也可以向当地监管机构投诉。",
       "gdprLi8": "撤回同意的权利 — 当我们依赖同意作为法律依据时（例如分析），您可以随时通过调整Cookie偏好或联系<emailLink>legal@lumenlingo.com</emailLink>来撤回您的同意。撤回不影响撤回前已进行处理的合法性。",
       "ccpaHeading": "根据CCPA/CPRA（加州）",
       "ccpaLi1": "<b>知情权</b>——您可以要求我们披露我们收集的关于您的个人信息的类别和具体内容。请参阅上述收集通知部分。",
@@ -703,7 +703,8 @@
       "v2": "<b>v2.0</b>（2026年3月23日） — 扩展政策以涵盖lumenlingo.com网站数据收集、Sentry会话回放披露、Vercel Analytics披露、处理的法律依据、数据流部分和Service Worker缓存详情。",
       "v1": "<b>v1.0</b>（2026年3月22日） — 涵盖LumenLingo iOS应用的初始隐私政策。",
       "v2_1": "<b>v2.1</b>（2026年3月26日）— 重新组织章节：将商业/监管合规披露（增值税处理、欧盟增值税、国际税收、价格合规、制裁、加密出口管制）移至服务条款。添加了指向服务条款的交叉引用。合并了商标归属。未删除任何内容。",
-      "v2_2": "<b>v2.2</b>（2025年7月）— 第二阶段法律加固：公司名称统一为Lumenshore Limited；添加ICO投诉权和联系方式；添加副处理者登记册；加强国际传输保障；添加地区隐私框架；改进PECR披露。"
+      "v2_2": "<b>v2.2</b>（2026年3月26日）— 第二阶段法律加固：公司名称统一为Lumenshore Limited；添加ICO投诉权和联系方式；添加副处理者登记册；加强国际传输保障；添加地区隐私框架；改进PECR披露。",
+      "v2_3": "<b>v2.3</b>（2026年3月27日）— 第三阶段法律强化：添加了引用服务条款的责任限制交叉引用，添加了引用服务条款的非GDPR争议解决部分（含GDPR第79条例外），将所有联系电子邮件地址标准化为legal@lumenlingo.com。"
     },
     "contactUs": {
       "heading": "联系我们",
@@ -1319,7 +1320,23 @@
       "supervisory1": "欧盟居民有权向当地数据保护监管机构提出投诉。EEA监管机构名单可在欧洲数据保护委员会网站上查阅。",
       "supervisory2": "如果Lumenshore将来正式任命欧盟代表，代表的详细信息将在本隐私政策中公布，并根据GDPR第27条第(4)款通知相关监管机构。"
     },
-    "commercialTermsReference": "有关增值税处理、价格展示合规、制裁合规和加密出口管制的信息，请参阅我们的<termsLink>服务条款</termsLink>。"
+    "commercialTermsReference": "有关增值税处理、价格展示合规、制裁合规和加密出口管制的信息，请参阅我们的<termsLink>服务条款</termsLink>。",
+    "lawEnforcement": {
+      "heading": "执法机关和政府请求",
+      "p1": "LumenShore 仅在法律强制要求的情况下才会向执法机关或政府机构披露个人数据——例如，根据法院命令、搜查令或《2018 年数据保护法》（Data Protection Act 2018）第 7 条的法定义务。",
+      "p2": "当我们收到有效的个人数据法律要求时，除非法律禁止（例如，随要求附带的保密令），否则我们将通知受影响的用户。",
+      "p3": "我们将抵制任何我们认为过于宽泛、不成比例或缺乏适当法律依据的请求。我们不会自愿向任何政府机构提供个人数据，也不参与大规模监控计划。",
+      "p4": "如果您对我们处理执法请求的方式有疑问，请通过 <emailLink>legal@lumenlingo.com</emailLink> 与我们联系。"
+    },
+    "liability": {
+      "crossRef": "有关我们责任限制的详情，请参阅我们的<termsLink>服务条款</termsLink>中的责任限制部分。",
+      "heading": "责任限制"
+    },
+    "disputeResolution": {
+      "heading": "争议解决",
+      "p1": "对于与数据保护无关的争议，我们的<termsLink>服务条款</termsLink>中的争议解决条款适用，包括非正式解决、调解和受英格兰和威尔士法律管辖的法院诉讼。",
+      "p2": "对于数据保护争议，您有权向信息专员办公室（ICO）提出投诉，或根据 GDPR 第 79 条和《2018 年数据保护法》第 167 条寻求司法救济，且不影响您可获得的任何其他行政或非司法救济。"
+    }
   },
   "Terms": {
     "meta": {
@@ -1418,7 +1435,7 @@
       "li2": "利润、数据、使用、商誉或其他无形损失",
       "li3": "任何超过您在索赔前12个月内向我们支付的金额的损害",
       "li4": "本条款中的任何内容均不排除或限制我们因我们的过失造成死亡或人身伤害、欺诈或欺诈性虚假陈述、或英国法律不能排除或限制的任何其他责任的责任",
-      "cap": "Lumenshore就本条款或您使用LumenLingo而产生的所有索赔承担的累计赔偿总额不得超过：(a) 免费版用户——零英鎊（£0.00）；(b) 付费订阅用户——您在引起索赔的事件之前十二 (12) 个月内实际支付的订阅费总额。",
+      "cap": "Lumenshore就本条款或您使用LumenLingo而产生的所有索赔承担的累计赔偿总额不得超过：(a) 免费版用户——10英鎊（£10）；(b) 付费订阅用户——您在引起索赔的事件之前十二 (12) 个月内实际支付的订阅费总额。",
       "statutory": "本条款中的任何内容均不排除或限制我们对以下事项的责任：因我们的疏忽造成的死亡或人身伤害；欺诈或欺诈性虚假陈述；或适用法律不能排除或限制的任何其他责任，包括您依据《2015年消费者权利法》（英国）或欧盟消费者权利指令享有的法定权利。",
       "crossReference": "此赔偿责任限制与我们的《最终用户许可协议》（EULA）中的赔偿责任限制条款一致。当两份协议均适用时，以对用户更有利的限制为准。"
     },
@@ -1458,7 +1475,8 @@
       "versionHistory": "版本历史",
       "v1": "<b>v1.0</b>（2026年3月23日）— 初始服务条款。",
       "v1_1": "<b>v1.1</b>（2026年3月26日）— 从隐私政策移入商业/监管合规章节：增值税处理、欧盟增值税、国际税务义务、价格展示合规、制裁与贸易合规、加密出口管制。汇总数据章节替换为指向隐私政策的交叉引用。删除了重复的管辖法律目录条目。合并了商标归属。",
-      "v1_2": "<b>v1.2</b>（2025年7月）— 第二阶段法律加固：统一公司名称；分级赔偿责任上限与EULA协调；Apple EULA引用纳入；添加无障碍承诺；添加转让通知义务；添加不可抗力详情。"
+      "v1_2": "<b>v1.2</b>（2026年3月26日）— 第二阶段法律加固：统一公司名称；分级赔偿责任上限与EULA协调；Apple EULA引用纳入；添加无障碍承诺；添加转让通知义务；添加不可抗力详情。",
+      "v1_3": "<b>v1.3</b>（2026年3月27日）— 第三阶段法律强化：为与EULA保持一致，将所有责任条款中免费版责任上限从0英镑标准化为10英镑，添加了引用隐私政策的数据保留交叉引用。"
     },
     "contactUs": {
       "heading": "联系我们",
@@ -1581,7 +1599,8 @@
       "arbitrationP2": "您有权在首次接受本条款后30天内通过向legal@lumenlingo.com发送书面通知来<b>选择退出</b>本仲裁条款。如果您选择退出，争议将在英格兰和威尔士法院解决。",
       "classActionHeading": "集体诉讼放弃",
       "classActionP1": "在适用法律允许的最大范围内，您和Lumenshore同意，任何争议解决程序将仅以个人方式进行，而非以集体诉讼、合并诉讼或代表诉讼的形式进行。如果本放弃条款在您的司法管辖区被认定为不可执行，本节的其余条款仍然完全有效。",
-      "consumerNote": "如果您是欧盟或英国的消费者，本节中的任何内容均不影响您的法定权利，包括在您居住国法院提起诉讼的权利。"
+      "consumerNote": "如果您是欧盟或英国的消费者，本节中的任何内容均不影响您的法定权利，包括在您居住国法院提起诉讼的权利。",
+      "gdprExemption": "本争议解决条款中的任何内容均不限制或约束您根据 GDPR 第 79 条或《2018 年数据保护法》（Data Protection Act 2018）第 167 条就侵犯数据保护权利向有管辖权的法院提起诉讼的权利。无论本条款中的争议解决、仲裁或集体诉讼放弃条款如何规定，数据保护索赔始终可以向法院提起。"
     },
     "educationalDisclaimer": {
       "heading": "教育内容免责声明",
@@ -1605,7 +1624,8 @@
       "li3": "您通过服务提交的任何内容。",
       "p2": "如果索赔源于我们的过失、我们的违约或我们提供的有缺陷的数字内容，则本赔偿不适用。",
       "p3": "如果您是英国或欧盟的消费者，本赔偿条款不影响您根据《2015年消费者权益法》或同等消费者保护立法享有的法定权利。本条款的任何规定均不要求您就因我们自身过错造成的损失对我们进行赔偿。",
-      "p4": "Lumenshore保留对您赔偿义务范围内的任何事项承担独家辩护和控制的权利，届时您同意配合Lumenshore。"
+      "p4": "Lumenshore保留对您赔偿义务范围内的任何事项承担独家辩护和控制的权利，届时您同意配合Lumenshore。",
+      "mutual": "Lumenshore Limited 将就以下事项直接引起的任何第三方索赔、损害和合理法律费用对您进行赔偿、辩护并使您免受损害：(a) Lumenshore 的疏忽或故意不当行为；(b) Lumenshore 违反本条款下的义务；(c) Lumenshore 侵犯您的知识产权。此互惠赔偿受本条款中规定的相同责任限制的约束。"
     },
     "usArbitration": {
       "heading": "美国仲裁协议",
@@ -1763,7 +1783,8 @@
       "p2": "重大变更将通过电子邮件（向订阅用户）或应用内通知进行传达。",
       "p3": "在收到通知后继续使用服务即构成对修改后条款的接受。",
       "p4": "如果您不同意修改后的条款，您必须停止使用服务并取消订阅。",
-      "p5": "非重大更新（如错别字更正或澄清）可在不通知的情况下进行。"
+      "p5": "非重大更新（如错别字更正或澄清）可在不通知的情况下进行。",
+      "fairnessP1": "如果对本条款的修改实质性地减少了您的权利或增加了您的义务，该变更将在通知后 30 天内不对现有用户生效。在该 30 天期间内，如果您不同意修改后的条款，您可以免费终止账户并取消订阅。"
     },
     "terminationEffect": {
       "heading": "终止的效力",
@@ -2024,6 +2045,35 @@
       "heading": "无障碍访问",
       "p1": "我们致力于让所有用户都能无障碍地使用LumenLingo。我们努力使网站符合WCAG 2.1 AA级标准，并遵循Apple的《人机界面指南》确保iOS应用的无障碍访问。详情请见我们的<accessibilityLink>无障碍访问声明</accessibilityLink>。",
       "p2": "如您遇到无障碍访问障碍，请联系<emailLink>legal@lumenlingo.com</emailLink>。我们将及时处理报告的问题。"
+    },
+    "fairnessNotice": {
+      "heading": "消费者公平性通知",
+      "p1": "本条款根据《2015 年消费者权利法》（Consumer Rights Act 2015）第 68 条的要求，以通俗易懂的语言起草。如任何条款不够清晰，将以有利于您（消费者）的方式进行解释。",
+      "p2": "本条款的任何规定均不排除或限制我们对以下事项的责任：(a) 因我们的疏忽造成的死亡或人身伤害；(b) 欺诈或欺诈性虚假陈述；(c) 根据《2015 年消费者权利法》第 65 条或其他适用法律不能合法排除或限制的任何其他责任。",
+      "p3": "您作为消费者根据《2015 年消费者权利法》享有的法定权利不受本条款任何规定的影响。如本条款与您的法定权利之间存在冲突，以您的法定权利为准。"
+    },
+    "onlineSafety": {
+      "heading": "《2023 年在线安全法》",
+      "p1": "LumenLingo 目前不允许用户生成、上传或与其他用户共享内容。所有闪卡内容均由 Lumenshore 提供，所有学习数据对每位用户均为私密。",
+      "p2": "由于不存在用户生成内容，《2023 年在线安全法》（Online Safety Act 2023）第 3 部分关于用户对用户服务的义务（包括第 10 条的非法内容义务）目前不适用于 LumenLingo。",
+      "p3": "如果我们将来推出允许用户创建或与其他用户共享内容的功能，我们将更新本条款，纳入内容审核承诺、举报机制、审查时限和申诉流程，以符合《2023 年在线安全法》的要求。"
+    },
+    "definitions": {
+      "heading": "定义术语",
+      "intro": "以下术语在本服务条款中大写使用时，具有以下所定义的含义：",
+      "service": "<b>“服务”</b>指 LumenLingo 语言学习平台，包括应用程序、网站以及 Lumenshore Limited 提供的所有相关功能、内容和功能。",
+      "app": "<b>“应用程序”</b>指通过 Apple App Store 分发的 LumenLingo iOS 应用程序，包括所有更新和新版本。",
+      "website": "<b>“网站”</b>指位于 lumenlingo.com 的 LumenLingo 网站及其所有子域名。",
+      "userData": "<b>“用户数据”</b>指与您使用服务相关的个人数据和学习数据，包括进度、偏好和练习历史。",
+      "content": "<b>“内容”</b>指 Lumenshore 通过服务提供的所有文本、图片、音频、闪卡、翻译和其他材料。",
+      "ip": "<b>“知识产权”</b>指服务及其内容中的所有版权、商标、专利、商业秘密和其他专有权利。",
+      "subscription": "<b>“订阅”</b>指通过 Apple App Store 购买的、授予服务高级功能访问权限的定期付费计划。",
+      "freeTier": "<b>“免费版”</b>指无需订阅即可使用的服务版本，提供对内容和功能的有限访问。",
+      "premiumTier": "<b>“高级版”</b>指订阅者可使用的服务版本，提供对所有内容和功能的完全访问。"
+    },
+    "retention": {
+      "crossRef": "在您使用服务期间收集的数据按照我们的<privacyLink>隐私政策</privacyLink>中的描述进行保留。请参阅隐私政策了解有关保留期限、数据删除和您的个人数据权利的信息。",
+      "heading": "数据保留"
     }
   },
   "Blog": {
@@ -2198,10 +2248,11 @@
     "updates": {
       "heading": "政策更新",
       "p1": "当我们添加新的存储机制时，可能会更新此Cookie政策。",
-      "version": "<b>当前同意版本：</b> 1.1",
+      "version": "<b>当前同意版本：</b> 1.2",
       "versionHistory": "版本历史",
-      "v1": "<b>v1.0</b>（2025年7月）— 初始Cookie政策发布。",
-      "v1_1": "<b>v1.1</b>（2025年7月）— 第二阶段法律加固：添加ICO投诉权；添加同意责任机制；单独披露Vercel Speed Insights；枚举Sentry密钥；删除模糊语言；统一公司名称。"
+      "v1": "<b>v1.0</b>（2026年3月24日）— 初始Cookie政策发布。",
+      "v1_1": "<b>v1.1</b>（2026年3月26日）— 第二阶段法律加固：添加ICO投诉权；添加同意责任机制；单独披露Vercel Speed Insights；枚举Sentry密钥；删除模糊语言；统一公司名称。",
+      "v1_2": "<b>v1.2</b>（2026年3月27日）— 第三阶段法律强化：添加了Cookie同意机制部分（拒绝、撤回、明确同意），添加了Cookie粒度控制（必要、功能、分析），添加了浏览器存储管理说明（Chrome、Safari、Firefox、Edge），添加了无障碍声明，添加了引用隐私政策的数据保留交叉引用，将联系电子邮件标准化为legal@lumenlingo.com。"
     },
     "contact": {
       "heading": "联系我们",
@@ -2245,6 +2296,37 @@
       "p1": "您的同意偏好设置以localStorage键<code>ll_cookie_consent</code>的形式本地存储在您的设备上。我们不会将同意记录传输到我们的服务器——这是出于数据最小化的有意选择。",
       "p2": "我们通过技术控制保持问责制：分析数据（Vercel Analytics、Vercel Speed Insights）和错误监控数据（Sentry）仅在相应的本地同意标志激活时才会传输。您的会话中存在分析或错误监控记录本身就构成同意已被给予的证据。如果您的同意标志未设置，则不会有任何非必要数据离开您的设备。",
       "p3": "这种方法满足了GDPR第7条第1款关于控制者必须能够证明同意的要求，同时最小化了我们收集的个人数据。"
+    },
+    "consent": {
+      "heading": "Cookie 同意",
+      "rejection": "您可以通过点击 Cookie 横幅上的\"全部拒绝\"按钮来拒绝所有非必要 Cookie。拒绝非必要 Cookie 不会影响您访问网站的任何功能。拒绝后，仅严格必要的 Cookie（同意偏好和语言选择）将保持活动状态。",
+      "withdrawal": "您可以随时通过点击网站页脚的\"Cookie 设置\"来撤回您的 Cookie 同意。撤回后，所有非必要 Cookie 和存储项将从您的浏览器中删除。在同意期间已收集的数据可能会根据我们隐私政策中描述的保留计划予以保留。撤回同意不影响撤回前进行的处理的合法性（GDPR 第 7 条第 3 款）。",
+      "affirmative": "没有 Cookie 同意选项是预先勾选的。同意需要主动操作：点击\"全部接受\"或单独将特定 Cookie 类别切换为\"开启\"。仅浏览网站而不与 Cookie 横幅互动不构成同意，在您做出主动选择之前不会设置任何非必要 Cookie。"
+    },
+    "granularity": {
+      "heading": "Cookie 类别控制",
+      "p1": "您可以按类别控制 Cookie。每个类别可以通过 Cookie 设置面板独立启用或禁用：",
+      "li1": "<b>严格必要</b> -- 始终处于活动状态。包括同意偏好存储（ll_cookie_consent）和语言选择（NEXT_LOCALE）。这些对网站运行至关重要，不能禁用。",
+      "li2": "<b>分析</b> -- Vercel Web Analytics 无需设置 Cookie 即可运行，不需要同意。此类别不需要切换开关。",
+      "li3": "<b>功能</b> -- 包括用于错误监控的 Sentry 会话回放。此类别可以启用或禁用。可以拒绝来自 Sentry 的第三方存储项，而不影响网站的核心功能。",
+      "p2": "您的类别偏好存储在 localStorage 的 ll_cookie_consent 键中，并在每次后续访问时得到遵守。"
+    },
+    "browserInstructions": {
+      "heading": "在浏览器中管理 Cookie",
+      "intro": "除了我们的 Cookie 设置面板外，您还可以通过浏览器设置直接管理或删除 Cookie。以下是主要浏览器的 Cookie 管理说明链接：",
+      "chrome": "<b>Google Chrome:</b> <chromeLink>在 Chrome 中清除、启用和管理 Cookie</chromeLink>",
+      "safari": "<b>Safari:</b> <safariLink>在 Safari 中管理 Cookie 和网站数据</safariLink>",
+      "firefox": "<b>Firefox:</b> <firefoxLink>在 Firefox 中清除 Cookie 和网站数据</firefoxLink>",
+      "edge": "<b>Microsoft Edge:</b> <edgeLink>在 Microsoft Edge 中删除 Cookie</edgeLink>",
+      "itp": "Safari 用户请注意，Safari 的智能跟踪预防（ITP）会自动限制大多数 Cookie 的生命周期并限制跨站跟踪。ITP 可能会比上方 Cookie 表中列出的持续时间更早地删除某些 Cookie。这是 Safari 浏览器的功能，不受 LumenLingo 控制。"
+    },
+    "accessibility": {
+      "heading": "Cookie 设置无障碍功能",
+      "p1": "Cookie 横幅和设置面板的设计完全无障碍。所有控件支持键盘导航（Tab、Enter、Space）并通过适当的 ARIA 标签与屏幕阅读器兼容。颜色对比度符合 WCAG 2.1 AA 级要求。如果您在与 Cookie 横幅或设置交互时遇到困难，请通过 <emailLink>legal@lumenlingo.com</emailLink> 联系我们，我们将协助您管理 Cookie 偏好。"
+    },
+    "retention": {
+      "crossRef": "有关数据保留期限的完整详情（包括个人数据的保留时长和我们的删除计划），请参阅我们的<privacyLink>隐私政策</privacyLink>。",
+      "heading": "数据保留"
     }
   },
   "Eula": {
@@ -2260,106 +2342,107 @@
     },
     "introduction": {
       "heading": "简介",
-      "p1": "This End-User Licence Agreement (\"EULA\") is a binding legal agreement between you (\"User\", \"you\") and Lumenshore Limited, a company registered in England and Wales (Company No. 09607326), with its registered office at Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA (\"Lumenshore\", \"we\", \"us\").",
-      "p2": "This EULA governs your use of the LumenLingo mobile application (\"App\") available through the Apple App Store. By downloading, installing, or using the App, you agree to be bound by the terms of this EULA. If you do not agree, do not download, install, or use the App."
+      "p1": "本最终用户许可协议（“EULA”）是您（“用户”、“您”）与Lumenshore Limited之间具有法律约束力的协议。Lumenshore Limited是一家在英格兰和威尔士注册的公司（公司编号09607326），注册地址为Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA（“Lumenshore”、“我们”）。",
+      "p2": "本EULA规管您对通过Apple App Store提供的LumenLingo移动应用程序（“应用”）的使用。通过下载、安装或使用本应用，您同意受本EULA条款的约束。如果您不同意，请勿下载、安装或使用本应用。"
     },
     "licenceGrant": {
       "heading": "许可授予",
-      "intro": "Subject to the terms of this EULA, Lumenshore grants you a limited, non-exclusive, non-transferable, revocable licence to:",
-      "li1": "Download and install the App on Apple-branded devices that you own or control.",
-      "li2": "Use the App for your personal, non-commercial language-learning purposes.",
-      "li3": "Access features and content according to your membership tier (Free, Pro, Elite, or Royal).",
-      "p1": "This licence does not allow you to use the App on any device that you do not own or control, and you may not distribute or make the App available over a network where it could be used by multiple devices at the same time."
+      "intro": "在本EULA条款的约束下，Lumenshore授予您一项有限的、非独占的、不可转让的、可撤销的许可，以：",
+      "li1": "在您拥有或控制的Apple品牌设备上下载和安装本应用。",
+      "li2": "将本应用用于您的个人、非商业语言学习目的。",
+      "li3": "根据您的会员等级（Free、Pro、Elite或Royal）访问相应功能和内容。",
+      "p1": "本许可不允许您在非您所有或控制的设备上使用本应用，您也不得通过网络分发或提供本应用供多台设备同时使用。"
     },
     "tierAccess": {
       "heading": "会员等级与功能访问",
-      "intro": "LumenLingo offers multiple membership tiers, each providing different levels of access:",
-      "li1": "<b>Free tier</b> — core language-learning features with limited language pairs and daily practice time.",
-      "li2": "<b>Pro tier</b> — additional language pairs, unlimited practice time, and soundscapes.",
-      "li3": "<b>Elite tier</b> — all Pro features plus breathing orbs, quantum flow, and advanced analytics.",
-      "li4": "<b>Royal tier</b> — the complete LumenLingo experience with all features unlocked, including nebula drift and offline mode.",
-      "p1": "Your access to tier-specific features is conditional upon maintaining an active subscription. If your subscription lapses, access to premium features will revert to the Free tier."
+      "intro": "LumenLingo提供多个会员等级，每个等级提供不同的访问权限：",
+      "li1": "<b>Free等级</b> — 基本语言学习功能，语言对和每日练习时间有限。",
+      "li2": "<b>Pro等级</b> — 额外的语言对、无限练习时间和声景。",
+      "li3": "<b>Elite等级</b> — 所有Pro功能加上呼吸球体、量子流和高级分析。",
+      "li4": "<b>Royal等级</b> — 完整的LumenLingo体验，解锁所有功能，包括星云漂移和离线模式。",
+      "p1": "您对等级特定功能的访问以维持有效订阅为前提。如果您的订阅失效，高级功能的访问权将恢复为Free等级。"
     },
     "contentOwnership": {
       "heading": "内容所有权",
-      "p1": "All content within the App — including but not limited to flashcard content, grammar explanations, vocabulary databases, game mechanics, animations, soundscapes, visual effects, and user interface designs — is the intellectual property of Lumenshore Limited or its licensors and is protected by copyright, trademark, and other intellectual property laws.",
-      "p2": "You retain ownership of your personal learning data, including progress records, preferences, and practice history. This data is stored locally on your device and is not transmitted to Lumenshore servers."
+      "p1": "应用内的所有内容 — 包括但不限于闪卡内容、语法解释、词汇数据库、游戏机制、动画、声景、视觉效果和用户界面设计 — 均为Lumenshore Limited或其许可人的知识产权，受版权、商标和其他知识产权法律保护。",
+      "p2": "您保留对个人学习数据的所有权，包括进度记录、偏好设置和练习历史。这些数据存储在您的设备本地，不会传输到Lumenshore服务器。"
     },
     "restrictions": {
       "heading": "限制条款",
-      "intro": "You agree not to, and you will not permit others to:",
-      "li1": "Copy, modify, or create derivative works based on the App or its content.",
-      "li2": "Reverse engineer, disassemble, decompile, decode, or otherwise attempt to derive the source code of the App.",
-      "li3": "Distribute, sublicence, lease, lend, rent, or otherwise transfer the App or any rights therein to any third party.",
-      "li4": "Remove, alter, or obscure any proprietary notices, labels, or marks on the App.",
-      "li5": "Use the App for any commercial purpose, in competing products, or to develop similar software.",
-      "li6": "Use automated scripts, bots, scraping tools, or data-mining techniques to extract content from the App.",
-      "li7": "Attempt to circumvent subscription tier restrictions or any technical protection measures."
+      "intro": "您同意不会进行以下行为，也不允许他人进行：",
+      "li1": "复制、修改或基于本应用或其内容创建衍生作品。",
+      "li2": "对本应用进行反向工程、反汇编、反编译、解码或以其他方式试图获取其源代码。",
+      "li3": "向任何第三方分发、再许可、租赁、出借、出租或以其他方式转让本应用或其任何权利。",
+      "li4": "删除、更改或遮盖本应用上的任何专有标识、标签或标记。",
+      "li5": "将本应用用于任何商业目的、竞争产品或开发类似软件。",
+      "li6": "使用自动化脚本、机器人、爬虫工具或数据挖掘技术从本应用中提取内容。",
+      "li7": "试图规避订阅等级限制或任何技术保护措施。"
     },
     "termination": {
       "heading": "终止",
-      "p1": "This EULA is effective from when you first download or use the App and continues until terminated. You may terminate it at any time by deleting the App and all copies from your devices.",
-      "p2": "Lumenshore may terminate this EULA immediately, without prior notice, if you breach any of its terms. Upon termination:",
-      "li1": "All rights and licences granted to you under this EULA will cease immediately.",
-      "li2": "You must stop all use of the App and delete all copies from your devices.",
-      "li3": "Any accrued rights or obligations (including limitation of liability) shall survive termination.",
-      "li4": "No refund will be provided for any prepaid subscription period remaining at the time of termination for cause."
+      "p1": "本EULA自您首次下载或使用本应用时生效，并持续至终止。您可以随时通过从设备中删除本应用及其所有副本来终止本EULA。",
+      "p2": "如果您违反本EULA的任何条款，Lumenshore可以立即终止本EULA，无需事先通知。终止后：",
+      "li1": "本EULA授予您的所有权利和许可将立即终止。",
+      "li2": "您必须停止使用本应用并从设备中删除所有副本。",
+      "li3": "任何已产生的权利或义务（包括责任限制）在终止后继续有效。",
+      "li4": "因用户原因终止时，剩余的预付订阅期间不予退款。"
     },
     "warranties": {
       "heading": "免责声明",
-      "p1": "The App is provided on an \"AS IS\" and \"AS AVAILABLE\" basis, without warranties of any kind, either express or implied. To the maximum extent permitted by applicable law, Lumenshore disclaims all warranties, including but not limited to:",
-      "li1": "Merchantability, fitness for a particular purpose, and non-infringement.",
-      "li2": "That the App will be uninterrupted, error-free, secure, or free of viruses or harmful components.",
-      "li3": "That the language content, translations, or educational material will be completely accurate or current.",
-      "li4": "That learning outcomes or proficiency improvements will be achieved.",
-      "p2": "You acknowledge that language learning is a complex process and results may vary. LumenLingo is a supplementary learning tool and is not a substitute for formal language instruction.",
+      "p1": "本应用按“原样”和“可用”的基础提供，不附带任何明示或默示的保证。在适用法律允许的最大范围内，Lumenshore否认所有保证，包括但不限于：",
+      "li1": "适销性、特定用途适用性和不侵权性。",
+      "li2": "应用将不间断、无错误、安全地或无病毒或有害组件地运行。",
+      "li3": "语言内容、翻译或教育材料将完全准确或最新。",
+      "li4": "将实现学习成果或语言能力提升。",
+      "p2": "您承认语言学习是一个复杂的过程，结果可能因人而异。LumenLingo是一款辅助学习工具，不能替代正式的语言教学。",
       "craSavings": "您根据《2015年消费者权益法》享有的法定权利不受本免责声明的影响。Lumenshore提供的数字内容必须质量令人满意、适合特定用途并与描述相符（CRA 2015，第34-36条）。这些权利不能被排除。"
     },
     "liability": {
       "heading": "责任限制",
-      "p1": "To the maximum extent permitted by applicable law, in no event shall Lumenshore, its directors, employees, partners, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation:",
-      "li1": "Loss of profits, data, use, goodwill, or other intangible losses.",
-      "li2": "The cost of procurement of substitute goods or services.",
-      "li3": "Any damage resulting from unauthorised access to or alteration of your data.",
-      "li4": "Any other matter relating to the App.",
-      "cap": "Lumenshore's total aggregate liability for all claims arising out of or relating to this EULA or your use of the App shall not exceed: (a) for Free tier users — zero pounds sterling (£0.00); (b) for paid subscribers — the total subscription fees paid by you in the twelve (12) months preceding the claim.",
+      "p1": "在适用法律允许的最大范围内，在任何情况下，Lumenshore、其董事、员工、合作伙伴或关联公司均不对任何间接、附带、特殊、后果性或惩罚性损害赔偕承担责任，包括但不限于：",
+      "li1": "利润、数据、使用、商誉或其他无形损失。",
+      "li2": "采购替代商品或服务的费用。",
+      "li3": "因未经授权访问或篡改您的数据而造成的任何损害。",
+      "li4": "与本应用相关的任何其他事项。",
+      "cap": "Lumenshore因本EULA或您使用本应用而产生的所有索赔的总责任不超过：(a) 对于Free等级用户 — 10英鎊（£10）；(b) 对于付费订阅用户 — 您在索赔前十二（12）个月内支付的订阅费总额。",
       "statutory": "本EULA的任何内容均不排除或限制我们对以下事项的责任：(a) 因我们的过失造成的死亡或人身伤害；(b) 欺诈或欺诈性虚假陈述；(c) 根据《2015年消费者权益法》不能被排除或限制的任何责任；或 (d) 法律不能排除或限制的任何其他责任。",
       "crossReference": "此赔偿责任限制与我们的《服务条款》中的赔偿责任限制条款一致。当两份协议均适用时，以对用户更有利的限制为准。"
     },
     "assumptionOfRisk": {
       "heading": "风险承担",
-      "p1": "You expressly acknowledge and agree that your use of the App is at your sole risk. You are responsible for ensuring that the App is suitable for your language-learning needs.",
-      "p2": "Lumenshore shall not be liable for any data loss that may occur as a result of device failure, operating system updates, App deletion, or any other circumstances beyond our reasonable control. You are encouraged to regularly back up your device."
+      "p1": "您明确确认并同意，您使用本应用的风险完全由您自行承担。您有责任确保本应用适合您的语言学习需求。",
+      "p2": "Lumenshore不对因设备故障、操作系统更新、应用删除或超出我们合理控制范围的任何其他情况而可能导致的数据丢失承担责任。建议您定期备份您的设备。"
     },
     "governingLaw": {
       "heading": "适用法律",
-      "p1": "This EULA shall be governed by and construed in accordance with the laws of England and Wales, without regard to its conflict-of-law provisions.",
-      "p2": "Any disputes arising out of or in connection with this EULA shall be subject to the exclusive jurisdiction of the courts of England and Wales. Nothing in this EULA limits your statutory rights as a consumer under the laws of your country of residence."
+      "p1": "本EULA受英格兰和威尔士法律管辖并按其解释，不考虑其法律冲突条款。",
+      "p2": "因本EULA引起或与之相关的任何争议应受英格兰和威尔士法院的专属管辖。本EULA的任何规定均不限制您作为消费者根据居住国法律享有的法定权利。"
     },
     "appleTerms": {
       "heading": "Apple特定条款",
-      "intro": "The following terms apply to your use of the App obtained through the Apple App Store:",
-      "li1": "This EULA is between you and Lumenshore only, and not with Apple Inc. (\"Apple\"). Apple is not a party to this EULA.",
-      "li2": "Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App.",
-      "li3": "In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the App (if any) to you. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App.",
-      "li4": "Apple is not responsible for addressing any claims by you or any third party relating to the App or your possession and/or use of the App, including but not limited to: (a) product liability claims; (b) any claim that the App fails to conform to any applicable legal or regulatory requirement; and (c) claims arising under consumer protection, privacy, or similar legislation.",
-      "li5": "In the event of any third-party claim that the App or your possession and use of the App infringes that third party's intellectual property rights, Apple shall not be responsible for the investigation, defence, settlement, or discharge of any such intellectual property infringement claim.",
-      "li6": "Apple and its subsidiaries are third-party beneficiaries of this EULA, and upon your acceptance of the terms and conditions of this EULA, Apple will have the right (and will be deemed to have accepted the right) to enforce this EULA against you as a third-party beneficiary thereof.",
+      "intro": "以下条款适用于您通过Apple App Store获取的应用的使用：",
+      "li1": "本EULA仅在您与Lumenshore之间订立，而非Apple Inc.（“Apple”）。Apple不是本EULA的当事方。",
+      "li2": "Apple没有任何义务提供与本应用相关的维护和支持服务。",
+      "li3": "如果本应用不符合任何适用的保证，您可以通知Apple，Apple将向您退还本应用的购买价格（如适用）。在适用法律允许的最大范围内，Apple对本应用不承担任何其他保证义务。",
+      "li4": "Apple不负责处理您或任何第三方就本应用或您拥有和/或使用本应用而提出的任何索赔，包括但不限于：(a) 产品责任索赔；(b) 本应用不符合任何适用法律或法规要求的索赔；以及(c) 根据消费者保护、隐私或类似法律提出的索赔。",
+      "li5": "如果任何第三方声称本应用或您拥有和使用本应用侵犯了该第三方的知识产权，Apple不对该知识产权侵权索赔的调查、辩护、和解或解除承担责任。",
+      "li6": "Apple及其子公司是本EULA的第三方受益人，在您接受本EULA条款和条件后，Apple将有权（并被视为已接受该权利）作为第三方受益人对您执行本EULA。",
       "crossReference": "这些Apple特定条款是对我们<termsLink>服务条款</termsLink>中引用Apple许可应用程序EULA的补充。"
     },
     "changes": {
       "heading": "本EULA的变更",
-      "p1": "Lumenshore reserves the right to modify this EULA at any time. If we make material changes, we will notify you through the App or by updating the \"Last updated\" date at the top of this page.",
-      "p2": "Your continued use of the App after changes are posted constitutes your acceptance of the revised EULA. If you do not agree to the changes, you must stop using the App and delete it from your devices.",
+      "p1": "Lumenshore保留随时修改本EULA的权利。如果我们进行重大更改，我们将通过应用或通过更新本页顶部的“最后更新”日期通知您。",
+      "p2": "在更改发布后继续使用本应用即表示您接受修订后的EULA。如果您不同意更改，您必须停止使用本应用并将其从设备中删除。",
       "versionHistory": "版本历史",
-      "v1_1": "<b>v1.1</b>（2025年7月）— 第二阶段法律加固：统一公司名称；添加CRA 2015法定豁免；添加消费者权利；添加出口合规；添加开源声明；添加赔偿责任一致性说明。"
+      "v1_1": "<b>v1.1</b>（2026年3月26日）— 第二阶段法律加固：统一公司名称；添加CRA 2015法定豁免；添加消费者权利；添加出口合规；添加开源声明；添加赔偿责任一致性说明。",
+      "v1_2": "<b>v1.2</b>（2026年3月27日）— 第三阶段法律强化：添加了引用隐私政策的数据保护部分，添加了生物识别数据披露（Face ID/Touch ID Secure Enclave），添加了含CRA 2015例外的数据丢失免责声明，添加了第三方服务确认（Apple、RevenueCat），添加了教育免责声明，为跨政策一致性将免费版责任上限从0英镑标准化为10英镑。"
     },
     "contact": {
       "heading": "联系我们",
       "intro": "如果您对本EULA有任何疑问，请联系我们：",
-      "email": "<b>Email:</b> <emailLink>legal@lumenlingo.com</emailLink>",
-      "company": "<b>Company:</b> Lumenshore Limited (Company No. 09607326)",
-      "address": "<b>Address:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom",
+      "email": "<b>电子邮件：</b> <emailLink>legal@lumenlingo.com</emailLink>",
+      "company": "<b>公司：</b> Lumenshore Limited（公司编号 09607326）",
+      "address": "<b>地址：</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, 英国",
       "responseTime": "我们通常在48小时内回复。"
     },
     "consumerRights": {
@@ -2414,6 +2497,38 @@
       "p3": "您的iCloud数据（如果启用了iCloud同步）仍在您的控制之下。您可以随时通过设置 > [您的名字] > iCloud > 管理存储空间 > LumenLingo管理或删除这些数据。",
       "p4": "订阅权利由Apple管理。要取消订阅，请在iOS设备上前往设置 > [您的名字] > 订阅。",
       "p5": "如需根据UK GDPR第17条提出正式数据删除请求，请参阅我们的隐私政策或通过我们的数据请求页面提交请求。"
+    },
+    "dataProtection": {
+      "heading": "数据保护",
+      "p1": "本应用程序按照我们的<privacyLink>隐私政策</privacyLink>处理个人数据。使用本应用程序即表示您确认您的个人数据将根据该政策进行处理。",
+      "p2": "本 EULA 中的任何条款均不限制、约束或取代您依据英国通用数据保护条例（UK GDPR）或《2018 年数据保护法》（Data Protection Act 2018）享有的权利。如本 EULA 与适用的数据保护法律之间存在冲突，以数据保护法律为准。",
+      "p3": "有关我们收集哪些个人数据、如何使用、您的数据保护权利以及如何行使这些权利的完整详情，请参阅我们的<privacyLink>隐私政策</privacyLink>。"
+    },
+    "warranty": {
+      "heading": "数据丢失免责声明",
+      "p1": "Lumenshore 不对以下原因造成的学习数据丢失承担责任：(a) 从设备中删除应用程序；(b) 禁用或退出 iCloud；(c) 手动清除设备存储。这些操作可能会永久删除本地存储的学习进度、偏好和练习历史。",
+      "p2": "为保护您的学习进度，我们强烈建议您始终保持 iCloud 同步开启。当 iCloud 同步处于活动状态时，您的数据将备份到您的个人 iCloud 账户，并可在重新安装应用程序时恢复。",
+      "p3": "本免责声明不影响您根据《2015 年消费者权利法》（Consumer Rights Act 2015）享有的法定权利，包括在非因您的过错而导致应用程序未达到满意质量标准时获得补救的权利。"
+    },
+    "thirdPartyServices": {
+      "heading": "第三方服务",
+      "p1": "本应用程序依赖第三方提供的服务，包括但不限于：",
+      "li1": "<b>Apple Inc.</b> -- App Store 分发、iCloud 数据同步和应用内购买处理。",
+      "li2": "<b>RevenueCat, Inc.</b> -- 订阅管理和购买验证。",
+      "p2": "Lumenshore 不对因第三方服务导致的不可用、错误、数据丢失或功能变更承担责任。用户应参阅各提供商自身的服务条款，了解其义务和责任的详情。",
+      "p3": "如第三方服务问题系由 Lumenshore 的疏忽或违反本 EULA 下的义务所导致或促成，本条款不排除或限制 Lumenshore 的责任。"
+    },
+    "educationalDisclaimer": {
+      "heading": "教育免责声明",
+      "p1": "LumenLingo 是一款旨在辅助语言学习的教育工具。它不能替代专业的语言教学、正式评估或认证。",
+      "p2": "Lumenshore 不对应用程序内容适用于专业、学术或认证目的作出任何陈述或保证。用户在专业或学术场景中使用前，应向合格的语言专业人士核实关键翻译、语法和用法。",
+      "p3": "应用程序中的闪卡内容是为一般语言学习目的策划的，可能不反映专业术语、地区方言或所有语境中的最新用法。"
+    },
+    "biometricData": {
+      "heading": "生物识别数据",
+      "p1": "本应用程序可能提供使用面容 ID 或触控 ID 的便捷功能选项（如解锁应用程序）。如果您选择启用这些功能，生物识别认证将完全由 Apple 在您的设备上通过安全隔区（Secure Enclave）处理。",
+      "p2": "Lumenshore 不收集、存储、访问或传输任何生物识别数据（包括面部几何数据或指纹数据）。应用程序仅从设备的生物识别系统接收成功或失败信号，从不访问底层生物识别模板。",
+      "p3": "您可以随时通过设备的设置禁用生物识别认证，这不会影响您使用应用程序的能力。"
     }
   },
   "trademarkAttribution": "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",

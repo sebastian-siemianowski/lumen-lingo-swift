@@ -56,7 +56,7 @@ export default async function DataRequestPage({
   const richTags = {
     b: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
     emailLink: (chunks: React.ReactNode) => (
-      <a href="mailto:hello@lumenshore.com">{chunks}</a>
+      <a href="mailto:legal@lumenlingo.com">{chunks}</a>
     ),
   };
 

@@ -474,7 +474,7 @@ extension AppStrings {
         legalConsentSubtitle: "Bitte überprüfe unsere Richtlinien, um LumenLingo weiter zu nutzen",
         privacyPolicyTitle: "Datenschutzrichtlinie",
         termsOfServiceTitle: "Nutzungsbedingungen",
-        legalVersion: "Version 2.2",
+        legalVersion: "Version 2.3",
         legalLastUpdated: "Zuletzt aktualisiert: 23. März 2026",
         legalPrivacySummary: "LumenLingo wird von LumenShore Ltd betrieben. Wir respektieren deine Privatsphäre und verpflichten uns, deine persönlichen Daten zu schützen. Diese Richtlinie gilt für unsere Website und iOS-App.",
         legalTermsSummary: "Diese Nutzungsbedingungen regeln die Nutzung der mobilen Anwendung LumenLingo, betrieben von LumenShore Ltd. Durch die Nutzung von LumenLingo akzeptierst du diese Bedingungen.",
@@ -545,6 +545,11 @@ extension AppStrings {
         companyVAT: "USt-IdNr.: GB 270411929",
 
         cookiePolicyTitle: "Cookie-Richtlinie",
+        cookieSummary: "Diese Richtlinie erläutert, welche Cookies, lokale Speicherung und ähnliche Technologien die LumenLingo-Website verwendet, warum wir sie einsetzen und wie Sie diese steuern können.",
+        cookieHighlight1: "Nur ein zwingend erforderliches Cookie für Ihre Einwilligungspräferenz",
+        cookieHighlight2: "Keine Werbe- oder Social-Media-Tracking-Cookies — niemals",
+        cookieHighlight3: "Sentry zur Fehlerüberwachung; Vercel Analytics zur Leistungsanalyse",
+        cookieHighlight4: "Global Privacy Control und Do Not Track-Signale werden respektiert",
         legalUpdated: "Aktualisiert M\u{00E4}rz 2025",
 
         viewMyDataTitle: "Meine Daten anzeigen",

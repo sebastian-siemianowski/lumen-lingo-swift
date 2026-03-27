@@ -11,7 +11,7 @@ struct LegalConsentView: View {
     /// Bumping this re-prompts ALL users to re-accept. Keep in sync with:
     ///   - lumen-lingo-frontend/messages/en.json  (Legal.version)
     ///   - All AppStrings+*.swift locale files    (legalVersion)
-    static let currentVersion = "2.2"
+    static let currentVersion = "2.3"
 
     @Environment(\.dismiss) private var dismiss
     @Environment(\.localization) private var localization
@@ -19,7 +19,7 @@ struct LegalConsentView: View {
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
 
-    // Active tab: 0 = Privacy, 1 = Terms, 2 = EULA
+    // Active tab: 0 = Privacy, 1 = Terms, 2 = EULA, 3 = Cookies
     @State private var activeTab = 0
 
     // Entrance animation
@@ -147,6 +147,7 @@ struct LegalConsentView: View {
                         )
                     )
                     .symbolEffect(.pulse, options: .repeating.speed(0.4))
+                    .accessibilityHidden(true)
             }
             .opacity(opacity(for: 1))
             .offset(y: offset(for: 1))
@@ -155,12 +156,14 @@ struct LegalConsentView: View {
                 Text(strings.legalConsentTitle)
                     .font(.system(size: 28, weight: .bold, design: .rounded))
                     .foregroundStyle(.white)
+                    .dynamicTypeSize(...DynamicTypeSize.accessibility2)
 
                 Text(strings.legalConsentSubtitle)
                     .font(.system(size: 15, weight: .medium))
                     .foregroundStyle(.white.opacity(0.6))
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 32)
+                    .dynamicTypeSize(...DynamicTypeSize.accessibility2)
 
                 HStack(spacing: 8) {
                     Text(strings.legalVersion)
@@ -185,6 +188,7 @@ struct LegalConsentView: View {
             tabButton(title: strings.privacyPolicyTitle, icon: "lock.shield.fill", index: 0)
             tabButton(title: strings.termsOfServiceTitle, icon: "doc.text.fill", index: 1)
             tabButton(title: strings.eulaTitle, icon: "doc.badge.gearshape.fill", index: 2)
+            tabButton(title: strings.cookiePolicyTitle, icon: "globe", index: 3)
         }
         .padding(4)
         .background(
@@ -251,8 +255,10 @@ struct LegalConsentView: View {
                         privacySection
                     } else if activeTab == 1 {
                         termsSection
-                    } else {
+                    } else if activeTab == 2 {
                         eulaSection
+                    } else {
+                        cookieSection
                     }
 
                     Color.clear.frame(height: 1).id("bottom")
@@ -392,6 +398,42 @@ struct LegalConsentView: View {
         ))
     }
 
+    // MARK: - Cookie Section
+
+    private var cookieSection: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text(strings.cookieSummary)
+                .font(.system(size: 14, weight: .regular))
+                .foregroundStyle(.white.opacity(0.75))
+                .fixedSize(horizontal: false, vertical: true)
+
+            Divider().background(.white.opacity(0.1))
+
+            VStack(alignment: .leading, spacing: 12) {
+                highlightRow(icon: "checkmark.shield.fill", text: strings.cookieHighlight1, color: .green)
+                highlightRow(icon: "hand.raised.slash.fill", text: strings.cookieHighlight2, color: .pink)
+                highlightRow(icon: "chart.bar.fill", text: strings.cookieHighlight3, color: .orange)
+                highlightRow(icon: "antenna.radiowaves.left.and.right", text: strings.cookieHighlight4, color: .cyan)
+            }
+
+            Divider().background(.white.opacity(0.1))
+
+            Link(destination: URL(string: "https://lumenlingo.com/en/cookies")!) {
+                HStack(spacing: 6) {
+                    Image(systemName: "arrow.up.right.square")
+                        .font(.system(size: 13))
+                    Text(strings.legalReadFull)
+                        .font(.system(size: 13, weight: .medium))
+                }
+                .foregroundStyle(Color(red: 100/255, green: 126/255, blue: 234/255))
+            }
+        }
+        .transition(.asymmetric(
+            insertion: .move(edge: .trailing).combined(with: .opacity),
+            removal: .move(edge: .leading).combined(with: .opacity)
+        ))
+    }
+
     // MARK: - Highlight Row
 
     private func highlightRow(icon: String, text: String, color: Color) -> some View {
@@ -447,6 +489,7 @@ struct LegalConsentView: View {
             }
             .buttonStyle(LegalAcceptPressStyle())
             .padding(.horizontal, 32)
+            .accessibilityLabel(strings.legalAcceptAll)
 
             // Decline button
             Button {
@@ -455,8 +498,10 @@ struct LegalConsentView: View {
                 Text(strings.legalDecline)
                     .font(.system(size: 15, weight: .medium))
                     .foregroundStyle(.white.opacity(0.4))
+                    .dynamicTypeSize(...DynamicTypeSize.accessibility2)
             }
             .padding(.bottom, 4)
+            .accessibilityLabel(strings.legalDecline)
         }
         .padding(.top, 16)
         .padding(.bottom, 24)

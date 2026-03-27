@@ -473,7 +473,7 @@ extension AppStrings {
         legalConsentSubtitle: "Будь ласка, ознайомтеся з нашими правилами, щоб продовжити користування LumenLingo",
         privacyPolicyTitle: "Політика конфіденційності",
         termsOfServiceTitle: "Умови використання",
-        legalVersion: "Версія 2.2",
+        legalVersion: "Версія 2.3",
         legalLastUpdated: "Останнє оновлення: 23 березня 2026",
         legalPrivacySummary: "LumenLingo керується LumenShore Ltd. Ми поважаємо вашу конфіденційність і зобов'язуємося захищати ваші персональні дані. Ця політика охоплює наш веб-сайт та додаток iOS.",
         legalTermsSummary: "Ці Умови використання регулюють користування мобільним додатком LumenLingo, який керується LumenShore Ltd. Використовуючи LumenLingo, ви погоджуєтесь з цими Умовами.",
@@ -544,6 +544,11 @@ extension AppStrings {
         companyVAT: "Реєстраційний номер ПДВ: GB 270411929",
 
         cookiePolicyTitle: "Політика файлів cookie",
+        cookieSummary: "Ця політика пояснює, які файли cookie, локальне сховище та подібні технології використовує веб-сайт LumenLingo, чому ми їх використовуємо та як ви можете ними керувати.",
+        cookieHighlight1: "Лише один суворо необхідний файл cookie для збереження вашої згоди",
+        cookieHighlight2: "Жодних рекламних або відстежувальних файлів cookie соціальних мереж — ніколи",
+        cookieHighlight3: "Sentry для моніторингу помилок; Vercel Analytics для аналізу продуктивності",
+        cookieHighlight4: "Сигнали Global Privacy Control та Do Not Track враховуються",
         legalUpdated: "Оновлено березень 2025",
 
         viewMyDataTitle: "Переглянути мої дані",

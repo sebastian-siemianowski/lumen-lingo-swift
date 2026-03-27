@@ -52,6 +52,7 @@ export default async function TermsPage({
   };
 
   const tocItems = [
+    { id: 'definitions', text: t('definitions.heading'), level: 2 },
     { id: 'introduction', text: t('introduction.heading'), level: 2 },
     { id: 'acceptance', text: t('acceptance.heading'), level: 2 },
     { id: 'your-account', text: t('yourAccount.heading'), level: 2 },
@@ -78,6 +79,7 @@ export default async function TermsPage({
     { id: 'user-reliance', text: t('userReliance.heading'), level: 2 },
     { id: 'third-party-services', text: t('thirdPartyServices.heading'), level: 2 },
     { id: 'service-availability', text: t('serviceAvailability.heading'), level: 2 },
+    { id: 'fairness-notice', text: t('fairnessNotice.heading'), level: 2 },
     { id: 'consumer-rights', text: t('consumerRights.heading'), level: 2 },
     { id: 'eu-consumer-rights', text: t('euConsumerRights.heading'), level: 2 },
     { id: 'aggregate-data', text: t('aggregateData.heading'), level: 2 },
@@ -122,8 +124,10 @@ export default async function TermsPage({
     { id: 'class-action-waiver', text: t('classActionWaiver.heading'), level: 2 },
     { id: 'apple-licensed-eula', text: t('appleLicensedEula.heading'), level: 2 },
     { id: 'accessibility', text: t('accessibility.heading'), level: 2 },
+    { id: 'online-safety', text: t('onlineSafety.heading'), level: 2 },
     { id: 'dsa-compliance', text: t('dsaCompliance.heading'), level: 2 },
     { id: 'changes', text: t('changes.heading'), level: 2 },
+    { id: 'data-retention-crossref', text: t('retention.heading'), level: 2 },
     { id: 'contact', text: t('contactUs.heading'), level: 2 },
   ];
 
@@ -177,6 +181,22 @@ export default async function TermsPage({
             {/* Prose */}
             <FadeIn>
               <div className="legal-prose">
+                <section id="definitions">
+                  <h2>{t('definitions.heading')}</h2>
+                  <p>{t('definitions.intro')}</p>
+                  <ul>
+                    <li>{t.rich('definitions.service', richTags)}</li>
+                    <li>{t.rich('definitions.app', richTags)}</li>
+                    <li>{t.rich('definitions.website', richTags)}</li>
+                    <li>{t.rich('definitions.userData', richTags)}</li>
+                    <li>{t.rich('definitions.content', richTags)}</li>
+                    <li>{t.rich('definitions.ip', richTags)}</li>
+                    <li>{t.rich('definitions.subscription', richTags)}</li>
+                    <li>{t.rich('definitions.freeTier', richTags)}</li>
+                    <li>{t.rich('definitions.premiumTier', richTags)}</li>
+                  </ul>
+                </section>
+
                 <section id="introduction">
                   <h2>{t('introduction.heading')}</h2>
                   <p>{t('introduction.p1')}</p>
@@ -465,6 +485,7 @@ export default async function TermsPage({
                   <p>{t('indemnification.p2')}</p>
                   <p>{t('indemnification.p3')}</p>
                   <p>{t('indemnification.p4')}</p>
+                  <p>{t('indemnification.mutual')}</p>
                 </section>
 
                 <section id="tiered-liability-caps">
@@ -505,6 +526,14 @@ export default async function TermsPage({
                   <p>{t('serviceAvailability.p1')}</p>
                   <p>{t('serviceAvailability.p2')}</p>
                   <p>{t('serviceAvailability.p3')}</p>
+                </section>
+
+                {/* ── Consumer Fairness Notice (CRA 2015 ss.65, 68) ── */}
+                <section id="fairness-notice">
+                  <h2>{t('fairnessNotice.heading')}</h2>
+                  <p>{t('fairnessNotice.p1')}</p>
+                  <p>{t('fairnessNotice.p2')}</p>
+                  <p>{t('fairnessNotice.p3')}</p>
                 </section>
 
                 {/* ── Consumer Rights (UK CRA 2015) ── */}
@@ -654,7 +683,7 @@ export default async function TermsPage({
                   <p>{t.rich('disputeResolution.step1P1', {
                     b: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
                     emailLink: (chunks: React.ReactNode) => (
-                      <a href="mailto:hello@lumenshore.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
+                      <a href="mailto:legal@lumenlingo.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
                     ),
                   })}</p>
 
@@ -679,6 +708,7 @@ export default async function TermsPage({
                   <p>{t('disputeResolution.classActionP1')}</p>
 
                   <p>{t('disputeResolution.consumerNote')}</p>
+                  <p>{t('disputeResolution.gdprExemption')}</p>
                 </section>
 
                 <section id="us-arbitration">
@@ -694,7 +724,7 @@ export default async function TermsPage({
                   <h3>{t('usArbitration.optOutHeading')}</h3>
                   <p>{t.rich('usArbitration.optOutP1', {
                     emailLink: (chunks: React.ReactNode) => (
-                      <a href="mailto:hello@lumenshore.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
+                      <a href="mailto:legal@lumenlingo.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
                     ),
                   })}</p>
 
@@ -878,6 +908,7 @@ export default async function TermsPage({
                   <p>{t('termsModification.p3')}</p>
                   <p>{t('termsModification.p4')}</p>
                   <p>{t('termsModification.p5')}</p>
+                  <p>{t('termsModification.fairnessP1')}</p>
                 </section>
 
                 <section id="termination-effect">
@@ -1182,6 +1213,14 @@ export default async function TermsPage({
                   <p>{t.rich('accessibility.p2', { emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</p>
                 </section>
 
+                {/* ── Online Safety Act 2023 ── */}
+                <section id="online-safety">
+                  <h2>{t('onlineSafety.heading')}</h2>
+                  <p>{t('onlineSafety.p1')}</p>
+                  <p>{t('onlineSafety.p2')}</p>
+                  <p>{t('onlineSafety.p3')}</p>
+                </section>
+
                 <section id="dsa-compliance">
                   <h2>{t('dsaCompliance.heading')}</h2>
                   <h3>{t('dsaCompliance.contactHeading')}</h3>
@@ -1208,10 +1247,19 @@ export default async function TermsPage({
                   <p>{t('changes.p2')}</p>
                   <h3>{t('changes.versionHistory')}</h3>
                   <ul>
+                    <li>{t.rich('changes.v1_3', richTags)}</li>
                     <li>{t.rich('changes.v1_2', richTags)}</li>
                     <li>{t.rich('changes.v1_1', richTags)}</li>
                     <li>{t.rich('changes.v1', richTags)}</li>
                   </ul>
+                </section>
+
+                </section>
+
+                {/* Data Retention Cross-Reference */}
+                <section id="data-retention-crossref">
+                  <h2>{t('retention.heading')}</h2>
+                  <p>{t.rich('retention.crossRef', { privacyLink: (chunks: React.ReactNode) => <Link href={`/${locale}/privacy`}>{chunks}</Link> })}</p>
                 </section>
 
                 <section id="contact">

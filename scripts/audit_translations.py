@@ -3,11 +3,39 @@
 Audit all non-English locale files for English sentences leaking into legal namespaces.
 Checks Privacy, Terms, Eula, CookiePage namespaces.
 """
-import json, re, pathlib
+import json, re, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent / "lumen-lingo-frontend" / "messages"
 LOCALES = ["pl", "de", "es", "fr", "ja", "zh", "ar", "uk"]
 NAMESPACES = ["Privacy", "Terms", "Eula", "CookiePage"]
+
+# Keys whose values are intentionally identical across all locales.
+# URLs, legal entity names, regulatory body proper nouns, product names.
+INTENTIONALLY_SAME = {
+    # External privacy policy URLs — must remain as-is
+    "Privacy.subProcessors.processors.apple.privacyUrl",
+    "Privacy.subProcessors.processors.vercel.privacyUrl",
+    "Privacy.subProcessors.processors.sentry.privacyUrl",
+    "Privacy.subProcessors.processors.clerk.privacyUrl",
+    "Privacy.subProcessors.processors.revenueCat.privacyUrl",
+    # Legal entity / company names
+    "Privacy.subProcessors.processors.sentry.service",
+    "Privacy.euRepresentative.contact2",
+    # Regulatory body proper noun (Portuguese official name)
+    "Privacy.brazilPrivacy.anpdHeading",
+    # Product proper names
+    "Privacy.vercelAnalytics.heading",
+    # Official organisation name (UK ADR body)
+    "Terms.ukAdr.provider",
+}
+
+# GPC heading keys contain "Global Privacy Control" and "Do Not Track" which are
+# standardised browser-signal names kept in English in all locales.  Only the
+# conjunction is localised (e.g. "und", "et", "i", "та", "と").
+GPC_HEADING_KEYS = {
+    "Privacy.gpcSignals.heading",
+    "CookiePage.gpc.heading",
+}
 
 # Words that are allowed in English in all locales (proper nouns, technical terms, legal terms)
 ALLOWED = {
@@ -123,6 +151,15 @@ def main():
             
             for key, loc_val in loc_flat.items():
                 en_val = en_flat.get(key, "")
+                full_key = f"{ns}.{key}"
+                
+                # Skip intentionally-same keys
+                if full_key in INTENTIONALLY_SAME:
+                    continue
+                
+                # Skip GPC heading keys (standardised names, only conjunction differs)
+                if full_key in GPC_HEADING_KEYS:
+                    continue
                 
                 # Check 1: Exact match with English (untranslated)
                 if loc_val == en_val and len(loc_val) > 30:
@@ -152,6 +189,8 @@ def main():
     print(f"\n{'='*60}")
     print(f"TOTAL ISSUES: {total_issues}")
     print(f"{'='*60}")
+
+    sys.exit(1 if total_issues > 0 else 0)
 
 
 if __name__ == "__main__":

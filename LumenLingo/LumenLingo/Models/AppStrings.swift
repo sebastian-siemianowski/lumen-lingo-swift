@@ -558,6 +558,11 @@ struct AppStrings: Sendable {
 
     // MARK: - In-App Legal
     let cookiePolicyTitle: String            // "Cookie Policy"
+    let cookieSummary: String                // Summary paragraph for cookie policy
+    let cookieHighlight1: String             // key point
+    let cookieHighlight2: String             // key point
+    let cookieHighlight3: String             // key point
+    let cookieHighlight4: String             // key point
     let legalUpdated: String                 // "Updated March 2025"
 
     // MARK: - View My Data

@@ -58,8 +58,13 @@ export default async function EulaPage({
     { id: 'restrictions', text: t('restrictions.heading'), level: 2 },
     { id: 'termination', text: t('termination.heading'), level: 2 },
     { id: 'data-handling', text: t('dataHandling.heading'), level: 2 },
+    { id: 'data-protection', text: t('dataProtection.heading'), level: 2 },
+    { id: 'biometric-data', text: t('biometricData.heading'), level: 2 },
     { id: 'warranties', text: t('warranties.heading'), level: 2 },
+    { id: 'data-loss-disclaimer', text: t('warranty.heading'), level: 2 },
     { id: 'liability', text: t('liability.heading'), level: 2 },
+    { id: 'third-party-services', text: t('thirdPartyServices.heading'), level: 2 },
+    { id: 'educational-disclaimer', text: t('educationalDisclaimer.heading'), level: 2 },
     { id: 'consumer-rights', text: t('consumerRights.heading'), level: 2 },
     { id: 'assumption-of-risk', text: t('assumptionOfRisk.heading'), level: 2 },
     { id: 'governing-law', text: t('governingLaw.heading'), level: 2 },
@@ -180,6 +185,22 @@ export default async function EulaPage({
                   <p>{t('dataHandling.p5')}</p>
                 </section>
 
+                {/* ── Data Protection (GDPR/DPA 2018) ── */}
+                <section id="data-protection">
+                  <h2>{t('dataProtection.heading')}</h2>
+                  <p>{t.rich('dataProtection.p1', { privacyLink: (chunks: React.ReactNode) => <a href={`/${locale}/privacy`}>{chunks}</a> })}</p>
+                  <p>{t('dataProtection.p2')}</p>
+                  <p>{t.rich('dataProtection.p3', { privacyLink: (chunks: React.ReactNode) => <a href={`/${locale}/privacy`}>{chunks}</a> })}</p>
+                </section>
+
+                {/* ── Biometric Data ── */}
+                <section id="biometric-data">
+                  <h2>{t('biometricData.heading')}</h2>
+                  <p>{t('biometricData.p1')}</p>
+                  <p>{t('biometricData.p2')}</p>
+                  <p>{t('biometricData.p3')}</p>
+                </section>
+
                 <section id="warranties">
                   <h2>{t('warranties.heading')}</h2>
                   <p>{t('warranties.p1')}</p>
@@ -191,6 +212,14 @@ export default async function EulaPage({
                   </ul>
                   <p>{t('warranties.p2')}</p>
                   <p>{t.rich('warranties.craSavings', richTags)}</p>
+                </section>
+
+                {/* ── Data Loss Disclaimer ── */}
+                <section id="data-loss-disclaimer">
+                  <h2>{t('warranty.heading')}</h2>
+                  <p>{t('warranty.p1')}</p>
+                  <p>{t('warranty.p2')}</p>
+                  <p>{t('warranty.p3')}</p>
                 </section>
 
                 <section id="liability">
@@ -205,6 +234,26 @@ export default async function EulaPage({
                   <p>{t('liability.cap')}</p>
                   <p>{t('liability.statutory')}</p>
                   <p>{t('liability.crossReference')}</p>
+                </section>
+
+                {/* ── Third-Party Services ── */}
+                <section id="third-party-services">
+                  <h2>{t('thirdPartyServices.heading')}</h2>
+                  <p>{t('thirdPartyServices.p1')}</p>
+                  <ul>
+                    <li>{t.rich('thirdPartyServices.li1', richTags)}</li>
+                    <li>{t.rich('thirdPartyServices.li2', richTags)}</li>
+                  </ul>
+                  <p>{t('thirdPartyServices.p2')}</p>
+                  <p>{t('thirdPartyServices.p3')}</p>
+                </section>
+
+                {/* ── Educational Disclaimer ── */}
+                <section id="educational-disclaimer">
+                  <h2>{t('educationalDisclaimer.heading')}</h2>
+                  <p>{t('educationalDisclaimer.p1')}</p>
+                  <p>{t('educationalDisclaimer.p2')}</p>
+                  <p>{t('educationalDisclaimer.p3')}</p>
                 </section>
 
                 {/* ── Consumer Rights (UK CRA 2015) ── */}
@@ -300,6 +349,7 @@ export default async function EulaPage({
                   <p>{t('changes.p2')}</p>
                   <h3>{t('changes.versionHistory')}</h3>
                   <ul>
+                    <li>{t.rich('changes.v1_2', richTags)}</li>
                     <li>{t.rich('changes.v1_1', richTags)}</li>
                   </ul>
                 </section>

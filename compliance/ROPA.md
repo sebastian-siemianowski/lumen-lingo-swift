@@ -2,11 +2,12 @@
 
 **Controller**: LumenShore Ltd, Company No. 09607326
 **Registered Address**: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom
-**Contact**: hello@lumenshore.com
-**Document Version**: 1.0
+**Contact**: hello@lumenshore.com | legal@lumenlingo.com
+**Document Version**: 2.2
 **Date Created**: 2025-06-26
-**Next Review**: 2026-06-26 (annual)
-**Legal Basis**: GDPR Article 30 / UK GDPR Article 30
+**Date Last Updated**: 2026-03-27
+**Next Review**: 2026-07-10
+**Legal Basis**: UK GDPR Article 30
 
 ---
 
@@ -178,20 +179,110 @@
 
 ---
 
+## 11. Clerk Authentication
+
+| Field | Details |
+|---|---|
+| **Processing Activity** | User authentication and identity management for the web application |
+| **Purpose** | Enable user account creation, sign-in, and access control for personalised features |
+| **Lawful Basis** | Contract Performance -- UK GDPR Art. 6(1)(b) (necessary for account-based service) |
+| **Categories of Data Subjects** | Registered website users |
+| **Categories of Personal Data** | Email address, user identifier (Clerk-assigned), authentication tokens, session metadata |
+| **Recipients / Sub-processors** | Clerk, Inc. (San Francisco, CA, USA) |
+| **Transfers to Third Countries** | USA -- Clerk DPA with Standard Contractual Clauses; EU-US Data Privacy Framework certification |
+| **Retention Period** | Until account deletion or service termination |
+| **Technical & Organisational Measures** | Passwords hashed by Clerk (never accessible to LumenShore), MFA support, rate limiting, bot detection, encryption at rest and in transit, Clerk SOC 2 certified |
+
+---
+
+## 12. RevenueCat Subscription Management
+
+| Field | Details |
+|---|---|
+| **Processing Activity** | Server-side subscription entitlement verification and purchase receipt validation |
+| **Purpose** | Verify subscription status, manage premium feature entitlements, prevent fraud |
+| **Lawful Basis** | Contract Performance -- UK GDPR Art. 6(1)(b) (necessary for subscription fulfilment) |
+| **Categories of Data Subjects** | iOS app users who purchase subscriptions |
+| **Categories of Personal Data** | Anonymous app user ID (random UUID), subscription status (active/expired), Apple purchase receipts |
+| **Data NOT Collected** | Payment card data (Apple is merchant of record), email, name, learning data |
+| **Recipients / Sub-processors** | RevenueCat, Inc. (San Francisco, CA, USA) |
+| **Transfers to Third Countries** | USA -- RevenueCat DPA with Standard Contractual Clauses |
+| **Retention Period** | Subscription lifetime plus 90 days (refund window) |
+| **Technical & Organisational Measures** | Anonymous app user IDs (random UUID, no PII linkage), Apple is merchant of record for all payments, RevenueCat never receives payment card data |
+
+---
+
+## 13. Cookie Consent Preferences (Website)
+
+| Field | Details |
+|---|---|
+| **Processing Activity** | Storage of user's cookie consent choices in browser localStorage |
+| **Purpose** | Remember the user's consent decisions across website visits as required by PECR |
+| **Lawful Basis** | Legal Obligation -- UK GDPR Art. 6(1)(c) (PECR Regulation 6 requires recording consent) |
+| **Categories of Data Subjects** | All website visitors who interact with the cookie consent banner |
+| **Categories of Personal Data** | Consent boolean values (analytics: yes/no, errorMonitoring: yes/no, sessionReplay: yes/no), locale preference |
+| **Recipients / Sub-processors** | None -- client-side localStorage only |
+| **Transfers to Third Countries** | None -- data never leaves the user's browser |
+| **Retention Period** | Persistent in localStorage until user clears browser data or modifies via "Cookie Settings" |
+| **Technical & Organisational Measures** | Client-side only, no server transmission, "Cookie Settings" footer button for modification at any time, reject-all prominently displayed |
+
+---
+
+## 14. Service Worker Offline Cache (Website)
+
+| Field | Details |
+|---|---|
+| **Processing Activity** | Caching static website assets (HTML, CSS, JS, images, fonts) on the user's device |
+| **Purpose** | Enable offline access to previously visited pages and improve page load performance |
+| **Lawful Basis** | Legitimate Interest -- UK GDPR Art. 6(1)(f); strictly necessary under PECR Regulation 6 |
+| **Categories of Data Subjects** | All website visitors |
+| **Categories of Personal Data** | None -- cache contains only static, non-personal assets |
+| **Recipients / Sub-processors** | None -- entirely client-side |
+| **Transfers to Third Countries** | None -- data never leaves the user's browser |
+| **Retention Period** | Until user clears browser cache, unregisters the Service Worker, or cache is invalidated by a new deployment |
+| **Technical & Organisational Measures** | Browser sandbox model, cache-then-network strategy with version invalidation, no personal data cached |
+
+---
+
 ## Summary of Lawful Bases
 
-| Processing Activity | Lawful Basis | Reference |
+| # | Processing Activity | Lawful Basis | Reference |
+|---|---|---|---|
+| 1 | Newsletter signup | Consent | Art. 6(1)(a) |
+| 2 | Waitlist signup | Consent | Art. 6(1)(a) |
+| 3 | Vercel Analytics | Legitimate Interest | Art. 6(1)(f) -- LIA-001 |
+| 4 | Sentry error monitoring | Legitimate Interest | Art. 6(1)(f) -- LIA-002 |
+| 5 | Sentry session replay | Consent | Art. 6(1)(a) |
+| 6 | iOS learning data | Contract Performance | Art. 6(1)(b) |
+| 7 | iCloud sync | Contract Performance | Art. 6(1)(b) |
+| 8 | Subscription management (Apple) | Contract Performance | Art. 6(1)(b) |
+| 9 | UTM parameter capture | Legitimate Interest | Art. 6(1)(f) |
+| 10 | Legal consent records | Legal Obligation | Art. 6(1)(c) |
+| 11 | Clerk authentication | Contract Performance | Art. 6(1)(b) |
+| 12 | RevenueCat subscriptions | Contract Performance | Art. 6(1)(b) |
+| 13 | Cookie consent preferences | Legal Obligation | Art. 6(1)(c) |
+| 14 | Service Worker cache | Legitimate Interest | Art. 6(1)(f) |
+
+---
+
+## Sub-Processor Register
+
+| Sub-Processor | Processing Activity | Location | Transfer Safeguard | DPA Status |
+|---|---|---|---|---|
+| Apple Inc. | iCloud sync, App Store subscriptions | USA + global | Apple DPA with SCCs | Active |
+| Vercel Inc. | Web analytics, hosting, speed insights | USA + global edge | Vercel DPA with SCCs; DPF certified | Active |
+| Functional Software Inc. (Sentry) | Error monitoring, session replay | USA | Sentry DPA with SCCs | Active |
+| Clerk, Inc. | Authentication, identity management | USA | Clerk DPA with SCCs; DPF certified | Active |
+| RevenueCat, Inc. | Subscription entitlement management | USA | RevenueCat DPA with SCCs | Active |
+
+---
+
+## Version History
+
+| Version | Date | Changes |
 |---|---|---|
-| Newsletter signup | Consent | Art. 6(1)(a) |
-| Waitlist signup | Consent | Art. 6(1)(a) |
-| Vercel Analytics | Legitimate Interest | Art. 6(1)(f) — LIA-001 |
-| Sentry error monitoring | Legitimate Interest | Art. 6(1)(f) — LIA-002 |
-| Sentry session replay | Consent | Art. 6(1)(a) |
-| iOS learning data | Contract Performance | Art. 6(1)(b) |
-| iCloud sync | Contract Performance | Art. 6(1)(b) |
-| Subscription management | Contract Performance | Art. 6(1)(b) |
-| UTM parameter capture | Legitimate Interest | Art. 6(1)(f) |
-| Legal consent records | Legal Obligation | Art. 6(1)(c) |
+| 1.0 | 2025-06-26 | Initial ROPA: 10 processing activities |
+| 2.2 | 2025-07-10 | Added Clerk Authentication (s11), RevenueCat Subscriptions (s12), Cookie Consent Preferences (s13), Service Worker Cache (s14). Added Sub-Processor Register. Updated summary table to 14 activities. Version-aligned with Privacy Policy v2.2. |
 
 ---
 

@@ -471,7 +471,7 @@ extension AppStrings {
         legalConsentSubtitle: "يرجى مراجعة سياساتنا لمتابعة استخدام LumenLingo",
         privacyPolicyTitle: "سياسة الخصوصية",
         termsOfServiceTitle: "شروط الخدمة",
-        legalVersion: "الإصدار 2.2",
+        legalVersion: "الإصدار 2.3",
         legalLastUpdated: "آخر تحديث: ٢٣ مارس ٢٠٢٦",
         legalPrivacySummary: "يتم تشغيل LumenLingo بواسطة LumenShore Ltd. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. تغطي هذه السياسة موقعنا الإلكتروني وتطبيق iOS.",
         legalTermsSummary: "تحكم شروط الخدمة هذه استخدامك لتطبيق LumenLingo المحمول الذي تديره LumenShore Ltd. باستخدام LumenLingo، فإنك توافق على هذه الشروط.",
@@ -542,6 +542,11 @@ extension AppStrings {
         companyVAT: "رقم ضريبة القيمة المضافة: GB 270411929",
 
         cookiePolicyTitle: "سياسة ملفات تعريف الارتباط",
+        cookieSummary: "توضح هذه السياسة ملفات تعريف الارتباط والتخزين المحلي والتقنيات المماثلة التي يستخدمها موقع LumenLingo، وأسباب استخدامها، وكيفية التحكم فيها.",
+        cookieHighlight1: "ملف تعريف ارتباط واحد ضروري فقط لحفظ تفضيل موافقتك",
+        cookieHighlight2: "لا توجد ملفات تعريف ارتباط إعلانية أو تتبع وسائل التواصل الاجتماعي — أبدًا",
+        cookieHighlight3: "Sentry لمراقبة الأخطاء؛ Vercel Analytics لتحليل الأداء",
+        cookieHighlight4: "يتم احترام إشارات Global Privacy Control وDo Not Track",
         legalUpdated: "تم التحديث في مارس 2025",
 
         viewMyDataTitle: "عرض بياناتي",
