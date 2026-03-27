@@ -336,13 +336,13 @@ export default async function TermsPage({
                         <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">{chunks}</a>
                       ),
                       email: (chunks: React.ReactNode) => (
-                        <a href="mailto:support@lumenshore.com">{chunks}</a>
+                        <a href="mailto:support@lumenlingo.com">{chunks}</a>
                       ),
                     })}</li>
                     <li>{t.rich('distanceSelling.li8', {
                       ...richTags,
                       email: (chunks: React.ReactNode) => (
-                        <a href="mailto:support@lumenshore.com">{chunks}</a>
+                        <a href="mailto:support@lumenlingo.com">{chunks}</a>
                       ),
                     })}</li>
                   </ul>
@@ -389,7 +389,7 @@ export default async function TermsPage({
                   <p>
                     {t.rich('copyrightInfringement.p3', {
                       email: (chunks: React.ReactNode) => (
-                        <a href="mailto:legal@lumenshore.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
+                        <a href="mailto:legal@lumenlingo.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
                       ),
                     })}
                   </p>

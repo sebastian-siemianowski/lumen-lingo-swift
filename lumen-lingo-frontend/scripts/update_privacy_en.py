@@ -146,7 +146,7 @@ NEW_PRIVACY = {
         "heading": "Children\u2019s Privacy",
         "p1": "LumenLingo is designed for users aged 13 and older. We do not knowingly collect personal information from children under 13 (or the applicable minimum age in your jurisdiction, which may be higher \u2014 for example, 16 in Germany and the Netherlands).",
         "p2": "The iOS app does not require account registration and stores data locally, so no personal information is transmitted to us from app users of any age. On the website, we do not knowingly accept newsletter or waitlist signups from anyone under 13.",
-        "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at hello@lumenshore.com and we will delete it promptly."
+        "p3": "Parents and guardians can manage or delete the app and its data at any time through standard iOS device management. If you believe a child has provided personal data to us, please contact us at support@lumenlingo.com and we will delete it promptly."
     },
     "dataRetention": {
         "heading": "Data Retention & Deletion",
@@ -178,7 +178,7 @@ NEW_PRIVACY = {
         "ccpaLi2": "Right to delete \u2014 reset app progress, delete the app, or contact us to remove website data.",
         "ccpaLi3": "Right to opt out \u2014 we do not sell or share personal information for cross-context behavioural advertising.",
         "ccpaLi4": "Non-discrimination \u2014 you will not be treated differently for exercising your rights.",
-        "exerciseRights": "To exercise any of these rights, email us at hello@lumenshore.com. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
+        "exerciseRights": "To exercise any of these rights, email us at support@lumenlingo.com. We will respond within 30 days (or sooner where required by law). We may need to verify your identity before processing certain requests."
     },
     "policyUpdates": {
         "heading": "Policy Updates",
@@ -191,7 +191,7 @@ NEW_PRIVACY = {
     "contactUs": {
         "heading": "Contact Us",
         "intro": "If you have questions about this Privacy Policy, your data, or want to exercise your rights, please reach out:",
-        "email": "<b>Email</b>: <emailLink>hello@lumenshore.com</emailLink>",
+        "email": "<b>Email</b>: <emailLink>support@lumenlingo.com</emailLink>",
         "company": "<b>Company</b>: LumenShore Ltd, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
         "companyNumber": "<b>Company Number</b>: 09607326 (England and Wales)",
         "vatNumber": "<b>VAT Number</b>: GB 270411929",

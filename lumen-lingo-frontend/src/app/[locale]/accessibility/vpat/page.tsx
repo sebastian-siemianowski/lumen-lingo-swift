@@ -80,7 +80,7 @@ export default async function VPATPage({
                     </tr>
                     <tr>
                       <td><strong>Contact</strong></td>
-                      <td><a href="mailto:accessibility@lumenshore.com">accessibility@lumenshore.com</a></td>
+                      <td><a href="mailto:accessibility@lumenlingo.com">accessibility@lumenlingo.com</a></td>
                     </tr>
                     <tr>
                       <td><strong>Evaluation Methods</strong></td>
@@ -427,8 +427,8 @@ export default async function VPATPage({
                 <p>
                   For questions about this VPAT or to request an updated
                   version, contact{' '}
-                  <a href="mailto:accessibility@lumenshore.com">
-                    accessibility@lumenshore.com
+                  <a href="mailto:accessibility@lumenlingo.com">
+                    accessibility@lumenlingo.com
                   </a>.
                 </p>
               </section>

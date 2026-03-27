@@ -105,7 +105,7 @@ data["Privacy"] = {
     "contactUs": {
         "heading": "お問い合わせ",
         "intro": "本プライバシーポリシー、お客様のデータ、または権利の行使についてご質問がある場合は、お気軽にお問い合わせください：",
-        "email": "<b>メール</b>：<emailLink>hello@lumenshore.com</emailLink>",
+        "email": "<b>メール</b>：<emailLink>support@lumenlingo.com</emailLink>",
         "company": "<b>会社</b>：LumenShore Ltd、英国",
         "responseTime": "通常48時間以内にご返答いたします。"
     }
@@ -216,7 +216,7 @@ data["Terms"] = {
     "contactUs": {
         "heading": "お問い合わせ",
         "intro": "本規約についてご質問がある場合、または問題を報告する必要がある場合は、お問い合わせください：",
-        "email": "<b>メール</b>：<emailLink>hello@lumenshore.com</emailLink>",
+        "email": "<b>メール</b>：<emailLink>support@lumenlingo.com</emailLink>",
         "company": "<b>会社</b>：LumenShore Ltd、英国",
         "responseTime": "通常48時間以内にご返答いたします。"
     }

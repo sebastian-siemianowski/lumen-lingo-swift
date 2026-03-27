@@ -133,15 +133,15 @@ export function ContactSection() {
           {/* Support email */}
           <div className="glass-card flex items-center justify-between px-4 py-3">
             <a
-              href="mailto:support@lumenshore.com"
+              href="mailto:support@lumenlingo.com"
               className={cn(
                 'font-mono text-sm transition-colors duration-200',
-                copied === 'support@lumenshore.com' ? 'text-[--color-violet]' : 'text-[--color-foreground]',
+                copied === 'support@lumenlingo.com' ? 'text-[--color-violet]' : 'text-[--color-foreground]',
               )}
             >
-              support@lumenshore.com
+              support@lumenlingo.com
             </a>
-            <CopyButton email="support@lumenshore.com" copied={copied} onCopy={copyEmail} />
+            <CopyButton email="support@lumenlingo.com" copied={copied} onCopy={copyEmail} />
           </div>
         </div>
 

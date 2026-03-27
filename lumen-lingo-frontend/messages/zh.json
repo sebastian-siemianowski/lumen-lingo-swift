@@ -222,7 +222,7 @@
   "Contact": {
     "heading": "有疑问？",
     "description": "在常见问题中找不到答案？我们很乐意听到你的声音。",
-    "email": "hello@lumenshore.com",
+    "email": "support@lumenlingo.com",
     "responseTime": "我们通常在 48 小时内回复",
     "faqHeading": "常见问题",
     "faqDescription": "关于 LumenLingo 最常见问题的快速解答。",
@@ -2703,7 +2703,7 @@
       "heading": "Reporting Mechanism",
       "p1": "If you encounter content or behaviour that violates these guidelines, you can report it through:",
       "li1": "In-app report button — available on all user-generated content (tap the three-dot menu and select 'Report')",
-      "li2": "Email — send reports to community@lumenshore.com with a description of the issue and any screenshots or links",
+      "li2": "Email — send reports to support@lumenlingo.com with a description of the issue and any screenshots or links",
       "li3": "Contact form — use our Contact page to submit a detailed report",
       "li4": "Trusted flaggers — organisations designated under the EU Digital Services Act receive priority review for their reports",
       "p2": "All reports are treated confidentially. We do not disclose the identity of reporters to the reported user."
@@ -2720,7 +2720,7 @@
     "appeals": {
       "heading": "Appeal Process",
       "p1": "If you believe a moderation decision was made in error, you may appeal:",
-      "li1": "Submit an appeal via email to appeals@lumenshore.com within 14 days of the enforcement action, including your account identifier and a clear explanation of why you believe the decision was incorrect",
+      "li1": "Submit an appeal via email to appeals@lumenlingo.com within 14 days of the enforcement action, including your account identifier and a clear explanation of why you believe the decision was incorrect",
       "li2": "Appeals are reviewed by a moderator who was not involved in the original decision, typically within 7 business days",
       "li3": "EU users may also refer complaints to the Digital Services Coordinator in their Member State or to a certified out-of-court dispute settlement body under DSA Article 21"
     },
@@ -2736,7 +2736,7 @@
     "dsaCompliance": {
       "heading": "EU Digital Services Act Compliance",
       "p1": "In accordance with Regulation (EU) 2022/2065 (the Digital Services Act), LumenLingo as an intermediary service provider:",
-      "li1": "Maintains a single point of contact for competent authorities and users — reachable at dsa@lumenshore.com",
+      "li1": "Maintains a single point of contact for competent authorities and users — reachable at dsa@lumenlingo.com",
       "li2": "Publishes this transparency notice as part of our Terms of Service and Community Guidelines",
       "li3": "Provides a notice-and-action mechanism for reporting illegal content, accessible through the reporting channels described above",
       "li4": "Issues statements of reasons when content is removed or accounts are restricted, including the legal or contractual basis and information on available redress",
@@ -2833,7 +2833,7 @@
     "alternatives": {
       "heading": "获取内容的替代方式",
       "intro": "如果您在使用 LumenLingo 的任何部分时遇到困难，可使用以下替代方式：",
-      "li1": "<b>邮件支持：</b>请联系 <emailLink>accessibility@lumenshore.com</emailLink>，我们将以无障碍格式（纯文本、音频描述或替代布局）提供所需内容。",
+      "li1": "<b>邮件支持：</b>请联系 <emailLink>accessibility@lumenlingo.com</emailLink>，我们将以无障碍格式（纯文本、音频描述或替代布局）提供所需内容。",
       "li2": "<b>键盘导航：</b>网站的所有内容和交互均可仅通过键盘访问（Tab、Shift+Tab、Enter、Escape、箭头键）。",
       "li3": "<b>屏幕阅读器：</b>网站已通过 VoiceOver 测试。如果您在使用辅助技术时遇到问题，请告知我们。",
       "li4": "<b>浏览器调整：</b>网站支持缩放至200%、高对比度模式和反色显示。"
@@ -2850,7 +2850,7 @@
     "feedback": {
       "heading": "反馈",
       "intro": "我们欢迎您对 lumenlingo.com 无障碍性的反馈。如果您遇到无障碍障碍或有改进建议，请联系我们：",
-      "li1Email": "<b>邮箱：</b><emailLink>accessibility@lumenshore.com</emailLink>",
+      "li1Email": "<b>邮箱：</b><emailLink>accessibility@lumenlingo.com</emailLink>",
       "li2Contact": "<b>常规联系：</b><contactLink>联系页面</contactLink>",
       "li3Vpat": "<b>VPAT：</b><vpatLink>查看我们的自愿产品无障碍模板</vpatLink>",
       "response": "我们力争在5个工作日内回复无障碍反馈。如果您提交无障碍投诉，我们将在2个工作日内确认收悉，并在15个工作日内提供实质性回复——包括针对已确认障碍的修复计划。"
@@ -2872,7 +2872,7 @@
       "euHeading": "欧盟",
       "euP1": "欧盟居民可以联系其所在欧盟成员国负责《欧洲无障碍法案》的国家执行机构。各成员国根据 EAA 第19条维护指定市场监督机构的名单。",
       "usHeading": "美国",
-      "usP1": "有无障碍问题的美国居民可根据《美国残疾人法案》第三章提出投诉。我们鼓励您先通过 <emailLink>accessibility@lumenshore.com</emailLink> 联系我们，以便我们直接解决问题。我们的 <vpatLink>VPAT</vpatLink> 记录了当前的合规水平。"
+      "usP1": "有无障碍问题的美国居民可根据《美国残疾人法案》第三章提出投诉。我们鼓励您先通过 <emailLink>accessibility@lumenlingo.com</emailLink> 联系我们，以便我们直接解决问题。我们的 <vpatLink>VPAT</vpatLink> 记录了当前的合规水平。"
     }
   },
   "Security": {
@@ -2889,7 +2889,7 @@
     },
     "reporting": {
       "heading": "报告漏洞",
-      "p1": "如果您认为在LumenLingo中发现了安全漏洞，请发送电子邮件至<emailLink>security@lumenshore.com</emailLink>进行负责任报告。",
+      "p1": "如果您认为在LumenLingo中发现了安全漏洞，请发送电子邮件至<emailLink>security@lumenlingo.com</emailLink>进行负责任报告。",
       "p2": "请尽可能提供详细信息：漏洞描述、复现步骤、潜在影响以及任何概念验证代码或截图。",
       "p3": "我们还根据RFC 9116发布了机器可读的<securityTxtLink>security.txt</securityTxtLink>文件。"
     },
@@ -2931,7 +2931,7 @@
     },
     "contact": {
       "heading": "联系我们",
-      "p1": "安全报告：<emailLink>security@lumenshore.com</emailLink>",
+      "p1": "安全报告：<emailLink>security@lumenlingo.com</emailLink>",
       "p2": "一般支持：<supportLink>legal@lumenlingo.com</supportLink>",
       "p3": "首选语言：英语"
     }

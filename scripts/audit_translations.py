@@ -45,7 +45,7 @@ ALLOWED = {
     "icloud", "cloudkit", "stripe", "ios", "ipv4", "ipv6", "ip",
     "windsor", "house", "troon", "way", "humberstone", "lane", "leicester",
     "england", "wales", "gb", "vat", "http", "https", "www", "com",
-    "email", "legal@lumenlingo.com", "hello@lumenshore.com",
+    "email", "legal@lumenlingo.com", "support@lumenlingo.com",
     "speed", "insights", "web", "analytics", "vitals",
     "cookies", "cookie", "localstorage", "sessionstorage",
     "cnil", "bfdi", "puodo", "aepd", "garante", "cnpd",

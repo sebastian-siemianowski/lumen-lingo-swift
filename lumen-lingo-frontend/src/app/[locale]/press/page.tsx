@@ -122,10 +122,10 @@ export default async function PressPage({
                 {t('assetsDesc')}
               </Text>
               <a
-                href="mailto:press@lumenshore.com"
+                href="mailto:press@lumenlingo.com"
                 className="mt-4 inline-flex items-center gap-2 rounded-[--radius-button] border border-[--color-cyan]/30 bg-[--color-cyan]/10 px-5 py-2.5 text-sm font-medium text-[--color-cyan] transition-colors hover:bg-[--color-cyan]/20"
               >
-                press@lumenshore.com
+                press@lumenlingo.com
               </a>
             </GlassCard>
           </FadeIn>

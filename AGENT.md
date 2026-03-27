@@ -120,7 +120,7 @@ To add a new language pair:
 ### 3. Authentication & Sync
 
 Both are protocol-based with mock implementations:
-- `AuthService` protocol → `MockAuthService` returns hardcoded user `"Sebastian"` / `"sebastian@test.com"`
+- `AuthService` protocol → `MockAuthService` returns hardcoded user `"Sebastian"` / `"testuser@lumenlingo.com"`
 - `SyncService` protocol → `MockSyncService` simulates network delays
 - `ClerkAuthService` → real Clerk SDK integration (behind `FeatureFlagService.clerkAuthEnabled`)
 

@@ -332,8 +332,8 @@ export default async function CorporateGovernancePage({
                 <h2>Contact</h2>
                 <p>
                   For corporate governance enquiries, contact{' '}
-                  <a href="mailto:support@lumenshore.com">
-                    support@lumenshore.com
+                  <a href="mailto:support@lumenlingo.com">
+                    support@lumenlingo.com
                   </a>
                   . For regulatory matters, see our{' '}
                   <Link href="/privacy" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">

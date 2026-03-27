@@ -7,7 +7,7 @@ MESSAGES_DIR = os.path.join(os.path.dirname(__file__), '..', 'lumen-lingo-fronte
 
 KEEP_KEYS = {'Contact'}
 
-OLD_EMAILS = ['hello@lumenshore.com', 'support@lumenshore.com', 'legal@lumenshore.com']
+OLD_EMAILS = ['support@lumenlingo.com', 'support@lumenshore.com', 'legal@lumenshore.com']
 NEW_EMAIL = 'legal@lumenlingo.com'
 
 

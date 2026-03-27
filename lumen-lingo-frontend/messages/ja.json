@@ -222,7 +222,7 @@
   "Contact": {
     "heading": "ご質問はありますか？",
     "description": "FAQで見つからない場合は、お気軽にお問い合わせください。",
-    "email": "hello@lumenshore.com",
+    "email": "support@lumenlingo.com",
     "responseTime": "通常48時間以内にご返信いたします",
     "faqHeading": "よくある質問",
     "faqDescription": "LumenLingoに関する一般的な質問への簡単な回答。",
@@ -2703,7 +2703,7 @@
       "heading": "Reporting Mechanism",
       "p1": "If you encounter content or behaviour that violates these guidelines, you can report it through:",
       "li1": "In-app report button — available on all user-generated content (tap the three-dot menu and select 'Report')",
-      "li2": "Email — send reports to community@lumenshore.com with a description of the issue and any screenshots or links",
+      "li2": "Email — send reports to support@lumenlingo.com with a description of the issue and any screenshots or links",
       "li3": "Contact form — use our Contact page to submit a detailed report",
       "li4": "Trusted flaggers — organisations designated under the EU Digital Services Act receive priority review for their reports",
       "p2": "All reports are treated confidentially. We do not disclose the identity of reporters to the reported user."
@@ -2720,7 +2720,7 @@
     "appeals": {
       "heading": "Appeal Process",
       "p1": "If you believe a moderation decision was made in error, you may appeal:",
-      "li1": "Submit an appeal via email to appeals@lumenshore.com within 14 days of the enforcement action, including your account identifier and a clear explanation of why you believe the decision was incorrect",
+      "li1": "Submit an appeal via email to appeals@lumenlingo.com within 14 days of the enforcement action, including your account identifier and a clear explanation of why you believe the decision was incorrect",
       "li2": "Appeals are reviewed by a moderator who was not involved in the original decision, typically within 7 business days",
       "li3": "EU users may also refer complaints to the Digital Services Coordinator in their Member State or to a certified out-of-court dispute settlement body under DSA Article 21"
     },
@@ -2736,7 +2736,7 @@
     "dsaCompliance": {
       "heading": "EU Digital Services Act Compliance",
       "p1": "In accordance with Regulation (EU) 2022/2065 (the Digital Services Act), LumenLingo as an intermediary service provider:",
-      "li1": "Maintains a single point of contact for competent authorities and users — reachable at dsa@lumenshore.com",
+      "li1": "Maintains a single point of contact for competent authorities and users — reachable at dsa@lumenlingo.com",
       "li2": "Publishes this transparency notice as part of our Terms of Service and Community Guidelines",
       "li3": "Provides a notice-and-action mechanism for reporting illegal content, accessible through the reporting channels described above",
       "li4": "Issues statements of reasons when content is removed or accounts are restricted, including the legal or contractual basis and information on available redress",
@@ -2833,7 +2833,7 @@
     "alternatives": {
       "heading": "コンテンツへのアクセスの代替手段",
       "intro": "LumenLingoの一部の使用に困難がある場合、以下の代替手段が利用可能です：",
-      "li1": "<b>メールサポート：</b><emailLink>accessibility@lumenshore.com</emailLink>までご連絡ください。アクセシブルな形式（プレーンテキスト、音声解説、または代替レイアウト）で必要なコンテンツを提供いたします。",
+      "li1": "<b>メールサポート：</b><emailLink>accessibility@lumenlingo.com</emailLink>までご連絡ください。アクセシブルな形式（プレーンテキスト、音声解説、または代替レイアウト）で必要なコンテンツを提供いたします。",
       "li2": "<b>キーボードナビゲーション：</b>ウェブサイトのすべてのコンテンツとインタラクションはキーボードのみでアクセスできます（Tab、Shift+Tab、Enter、Escape、矢印キー）。",
       "li3": "<b>スクリーンリーダー：</b>ウェブサイトはVoiceOverでテストされています。支援技術に関する問題が発生した場合は、お知らせください。",
       "li4": "<b>ブラウザの調整：</b>ウェブサイトは200％までのズーム、ハイコントラストモード、色反転に対応しています。"
@@ -2850,7 +2850,7 @@
     "feedback": {
       "heading": "フィードバック",
       "intro": "lumenlingo.comのアクセシビリティに関するフィードバックを歓迎します。アクセシビリティの障壁に遭遇した場合や改善の提案がある場合は、ご連絡ください：",
-      "li1Email": "<b>メール：</b><emailLink>accessibility@lumenshore.com</emailLink>",
+      "li1Email": "<b>メール：</b><emailLink>accessibility@lumenlingo.com</emailLink>",
       "li2Contact": "<b>一般的なお問い合わせ：</b><contactLink>お問い合わせページ</contactLink>",
       "li3Vpat": "<b>VPAT：</b><vpatLink>任意製品アクセシビリティテンプレートを表示</vpatLink>",
       "response": "アクセシビリティに関するフィードバックには5営業日以内に回答することを目指しています。アクセシビリティに関する苦情を提出された場合、2営業日以内に受領を確認し、確認された障壁に対する改善計画を含む実質的な回答を15営業日以内に提供いたします。"
@@ -2872,7 +2872,7 @@
       "euHeading": "欧州連合",
       "euP1": "EU居住者は、欧州アクセシビリティ法を管轄するEU加盟国の国内執行機関に連絡できます。指定された市場監視機関のリストは、EAA第19条に基づき各加盟国が管理しています。",
       "usHeading": "米国",
-      "usP1": "アクセシビリティに関する懸念がある米国居住者は、障害を持つアメリカ人法第三編に基づく苦情を申し立てることができます。問題を直接解決できるよう、まず<emailLink>accessibility@lumenshore.com</emailLink>までご連絡ください。当社の<vpatLink>VPAT</vpatLink>に現在の適合レベルが記載されています。"
+      "usP1": "アクセシビリティに関する懸念がある米国居住者は、障害を持つアメリカ人法第三編に基づく苦情を申し立てることができます。問題を直接解決できるよう、まず<emailLink>accessibility@lumenlingo.com</emailLink>までご連絡ください。当社の<vpatLink>VPAT</vpatLink>に現在の適合レベルが記載されています。"
     }
   },
   "Security": {
@@ -2889,7 +2889,7 @@
     },
     "reporting": {
       "heading": "脆弱性の報告",
-      "p1": "LumenLingoにセキュリティ脆弱性を発見したと思われる場合は、<emailLink>security@lumenshore.com</emailLink>にメールで責任を持って報告してください。",
+      "p1": "LumenLingoにセキュリティ脆弱性を発見したと思われる場合は、<emailLink>security@lumenlingo.com</emailLink>にメールで責任を持って報告してください。",
       "p2": "脆弱性の説明、再現手順、潜在的な影響、概念実証コードやスクリーンショットなど、できるだけ詳細な情報を含めてください。",
       "p3": "RFC 9116に準拠した機械可読の<securityTxtLink>security.txt</securityTxtLink>ファイルも公開しています。"
     },
@@ -2931,7 +2931,7 @@
     },
     "contact": {
       "heading": "連絡先",
-      "p1": "セキュリティ報告：<emailLink>security@lumenshore.com</emailLink>",
+      "p1": "セキュリティ報告：<emailLink>security@lumenlingo.com</emailLink>",
       "p2": "一般サポート：<supportLink>legal@lumenlingo.com</supportLink>",
       "p3": "希望言語：英語"
     }

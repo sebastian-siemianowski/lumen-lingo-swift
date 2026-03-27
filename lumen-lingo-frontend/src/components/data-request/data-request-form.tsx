@@ -83,7 +83,7 @@ export function DataRequestForm() {
     const body = encodeURIComponent(
       `Data Subject Access Request\n\nName: ${values.name}\nEmail: ${values.email}\nRequest Type: ${values.requestType}\n\nDetails:\n${values.details}`,
     );
-    window.location.href = `mailto:hello@lumenshore.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:support@lumenlingo.com?subject=${subject}&body=${body}`;
     setTimeout(() => setState('success'), 500);
   }
 

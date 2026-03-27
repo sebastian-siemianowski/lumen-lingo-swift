@@ -114,7 +114,7 @@ TRANSLATIONS = {
         "contact": {
             "heading": "Contacto",
             "intro": "Si tienes preguntas sobre esta Política de Cookies:",
-            "email": "<b>Email:</b> <emailLink>hello@lumenshore.com</emailLink>",
+            "email": "<b>Email:</b> <emailLink>support@lumenlingo.com</emailLink>",
             "company": "<b>Empresa:</b> LumenShore Ltd (Company No. 09607326)",
             "responseTime": "Normalmente respondemos en 48 horas."
         },
@@ -234,7 +234,7 @@ TRANSLATIONS = {
         "contact": {
             "heading": "Nous Contacter",
             "intro": "Si vous avez des questions sur cette Politique de Cookies :",
-            "email": "<b>Email :</b> <emailLink>hello@lumenshore.com</emailLink>",
+            "email": "<b>Email :</b> <emailLink>support@lumenlingo.com</emailLink>",
             "company": "<b>Société :</b> LumenShore Ltd (Company No. 09607326)",
             "responseTime": "Nous répondons généralement sous 48 heures."
         },
@@ -354,7 +354,7 @@ TRANSLATIONS = {
         "contact": {
             "heading": "Kontakt",
             "intro": "Bei Fragen zu dieser Cookie-Richtlinie:",
-            "email": "<b>E-Mail:</b> <emailLink>hello@lumenshore.com</emailLink>",
+            "email": "<b>E-Mail:</b> <emailLink>support@lumenlingo.com</emailLink>",
             "company": "<b>Unternehmen:</b> LumenShore Ltd (Company No. 09607326)",
             "responseTime": "Wir antworten in der Regel innerhalb von 48 Stunden."
         },
@@ -383,7 +383,7 @@ TRANSLATIONS = {
         "thirdParty": { "heading": "サードパーティサービス", "intro": "以下のサードパーティサービスがアクセスデータを処理する場合があります：", "vercel": { "heading": "Vercel Analytics", "description": "プライバシー重視のウェブ分析。<b>Cookieフリー</b>。カスタムtrack()イベントは同意時のみ送信。", "link": "Vercelプライバシーポリシー" }, "sentry": { "heading": "Sentry", "description": "エラー監視とセッションリプレイ。<b>エラー報告</b>は同意時に送信。<b>セッションリプレイ</b>は明示的な同意時のみ記録。", "link": "Sentryプライバシーポリシー" } },
         "manage": { "heading": "設定の管理", "p1": "フッターの「Cookie設定」ボタンからいつでも同意設定を変更できます。", "p2": "すべての保存データを削除するには、ブラウザの設定からサイトデータをクリアしてください。", "p3": "同意設定はデバイスにローカルに保存されます。サーバーには送信されません。" },
         "updates": { "heading": "ポリシーの更新", "p1": "新しいストレージメカニズムを追加した場合、このCookieポリシーを更新することがあります。", "version": "<b>現在の同意バージョン：</b> 1.0", "versionHistory": "バージョン履歴", "v1": "<b>v1.0</b>（2025年7月）— Cookieポリシー初版公開。" },
-        "contact": { "heading": "お問い合わせ", "intro": "このCookieポリシーについてご質問がある場合：", "email": "<b>メール：</b> <emailLink>hello@lumenshore.com</emailLink>", "company": "<b>会社：</b> LumenShore Ltd（Company No. 09607326）", "responseTime": "通常48時間以内に回答いたします。" },
+        "contact": { "heading": "お問い合わせ", "intro": "このCookieポリシーについてご質問がある場合：", "email": "<b>メール：</b> <emailLink>support@lumenlingo.com</emailLink>", "company": "<b>会社：</b> LumenShore Ltd（Company No. 09607326）", "responseTime": "通常48時間以内に回答いたします。" },
         "table": { "key": "ストレージキー", "type": "タイプ", "category": "カテゴリ", "purpose": "目的", "duration": "期間" }
     },
     "zh": {
@@ -403,7 +403,7 @@ TRANSLATIONS = {
         "thirdParty": { "heading": "第三方服务", "intro": "以下第三方服务可能处理您访问的数据：", "vercel": { "heading": "Vercel Analytics", "description": "注重隐私的网站分析。<b>无Cookie</b>。自定义track()事件仅在同意时发送。", "link": "Vercel隐私政策" }, "sentry": { "heading": "Sentry", "description": "错误监控和会话回放。<b>错误报告</b>在同意时发送。<b>会话回放</b>仅在明确同意时记录。", "link": "Sentry隐私政策" } },
         "manage": { "heading": "管理您的偏好设置", "p1": "您可以随时通过页脚的\"Cookie设置\"按钮更改同意选择。", "p2": "要删除所有存储的数据，请通过浏览器设置清除网站数据。", "p3": "您的同意偏好存储在设备本地——永远不会传输到我们的服务器。" },
         "updates": { "heading": "政策更新", "p1": "当我们添加新的存储机制时，可能会更新此Cookie政策。", "version": "<b>当前同意版本：</b> 1.0", "versionHistory": "版本历史", "v1": "<b>v1.0</b>（2025年7月）— 初始Cookie政策发布。" },
-        "contact": { "heading": "联系我们", "intro": "如果您对此Cookie政策有疑问：", "email": "<b>邮箱：</b> <emailLink>hello@lumenshore.com</emailLink>", "company": "<b>公司：</b> LumenShore Ltd（Company No. 09607326）", "responseTime": "我们通常在48小时内回复。" },
+        "contact": { "heading": "联系我们", "intro": "如果您对此Cookie政策有疑问：", "email": "<b>邮箱：</b> <emailLink>support@lumenlingo.com</emailLink>", "company": "<b>公司：</b> LumenShore Ltd（Company No. 09607326）", "responseTime": "我们通常在48小时内回复。" },
         "table": { "key": "存储键", "type": "类型", "category": "类别", "purpose": "目的", "duration": "期限" }
     },
     "ar": {
@@ -423,7 +423,7 @@ TRANSLATIONS = {
         "thirdParty": { "heading": "خدمات الطرف الثالث", "intro": "قد تعالج خدمات الطرف الثالث التالية بيانات من زيارتك:", "vercel": { "heading": "Vercel Analytics", "description": "تحليلات ويب تركز على الخصوصية. <b>بدون ملفات تعريف ارتباط</b>. أحداث track() المخصصة تُرسل فقط بموافقتك.", "link": "سياسة خصوصية Vercel" }, "sentry": { "heading": "Sentry", "description": "مراقبة الأخطاء وإعادة تشغيل الجلسة. <b>تقارير الأخطاء</b> تُرسل بالموافقة. <b>إعادة تشغيل الجلسات</b> تُسجل فقط بموافقة صريحة.", "link": "سياسة خصوصية Sentry" } },
         "manage": { "heading": "إدارة تفضيلاتك", "p1": "يمكنك تغيير خيارات موافقتك في أي وقت عبر زر \"إعدادات ملفات تعريف الارتباط\" في أسفل الصفحة.", "p2": "لإزالة جميع البيانات المخزنة، امسح بيانات الموقع من إعدادات متصفحك.", "p3": "تُخزن تفضيلات موافقتك محليًا على جهازك — لا تُنقل أبدًا إلى خوادمنا." },
         "updates": { "heading": "تحديثات السياسة", "p1": "قد نحدث سياسة ملفات تعريف الارتباط هذه عند إضافة آليات تخزين جديدة.", "version": "<b>إصدار الموافقة الحالي:</b> 1.0", "versionHistory": "سجل الإصدارات", "v1": "<b>v1.0</b> (يوليو 2025) — نُشرت سياسة ملفات تعريف الارتباط الأولية." },
-        "contact": { "heading": "اتصل بنا", "intro": "إذا كانت لديك أسئلة حول سياسة ملفات تعريف الارتباط هذه:", "email": "<b>البريد الإلكتروني:</b> <emailLink>hello@lumenshore.com</emailLink>", "company": "<b>الشركة:</b> LumenShore Ltd (Company No. 09607326)", "responseTime": "نستجيب عادةً خلال 48 ساعة." },
+        "contact": { "heading": "اتصل بنا", "intro": "إذا كانت لديك أسئلة حول سياسة ملفات تعريف الارتباط هذه:", "email": "<b>البريد الإلكتروني:</b> <emailLink>support@lumenlingo.com</emailLink>", "company": "<b>الشركة:</b> LumenShore Ltd (Company No. 09607326)", "responseTime": "نستجيب عادةً خلال 48 ساعة." },
         "table": { "key": "مفتاح التخزين", "type": "النوع", "category": "الفئة", "purpose": "الغرض", "duration": "المدة" }
     },
     "pl": {
@@ -443,7 +443,7 @@ TRANSLATIONS = {
         "thirdParty": { "heading": "Usługi Stron Trzecich", "intro": "Następujące usługi stron trzecich mogą przetwarzać dane z Twojej wizyty:", "vercel": { "heading": "Vercel Analytics", "description": "Analityka internetowa skupiona na prywatności. <b>Bez plików cookie</b>. Niestandardowe zdarzenia track() są wysyłane tylko za zgodą.", "link": "Polityka Prywatności Vercel" }, "sentry": { "heading": "Sentry", "description": "Monitorowanie błędów i nagrywanie sesji. <b>Raporty błędów</b> wysyłane za zgodą. <b>Nagrania sesji</b> rejestrowane tylko za wyraźną zgodą.", "link": "Polityka Prywatności Sentry" } },
         "manage": { "heading": "Zarządzanie Preferencjami", "p1": "Możesz zmienić swoje wybory zgody w dowolnym momencie klikając przycisk \"Ustawienia plików cookie\" w stopce.", "p2": "Aby usunąć wszystkie przechowywane dane, wyczyść dane witryny w ustawieniach przeglądarki.", "p3": "Twoje preferencje zgody są przechowywane lokalnie na urządzeniu — nigdy nie są przesyłane na nasze serwery." },
         "updates": { "heading": "Aktualizacje Polityki", "p1": "Możemy zaktualizować tę Politykę Plików Cookie gdy dodamy nowe mechanizmy przechowywania.", "version": "<b>Aktualna wersja zgody:</b> 1.0", "versionHistory": "Historia wersji", "v1": "<b>v1.0</b> (lipiec 2025) — Opublikowano początkową Politykę Plików Cookie." },
-        "contact": { "heading": "Kontakt", "intro": "Jeśli masz pytania dotyczące tej Polityki Plików Cookie:", "email": "<b>Email:</b> <emailLink>hello@lumenshore.com</emailLink>", "company": "<b>Firma:</b> LumenShore Ltd (Company No. 09607326)", "responseTime": "Zwykle odpowiadamy w ciągu 48 godzin." },
+        "contact": { "heading": "Kontakt", "intro": "Jeśli masz pytania dotyczące tej Polityki Plików Cookie:", "email": "<b>Email:</b> <emailLink>support@lumenlingo.com</emailLink>", "company": "<b>Firma:</b> LumenShore Ltd (Company No. 09607326)", "responseTime": "Zwykle odpowiadamy w ciągu 48 godzin." },
         "table": { "key": "Klucz Przechowywania", "type": "Typ", "category": "Kategoria", "purpose": "Cel", "duration": "Czas trwania" }
     },
     "uk": {
@@ -463,7 +463,7 @@ TRANSLATIONS = {
         "thirdParty": { "heading": "Сервіси Третіх Сторін", "intro": "Наступні сервіси третіх сторін можуть обробляти дані вашого відвідування:", "vercel": { "heading": "Vercel Analytics", "description": "Веб-аналітика з фокусом на конфіденційність. <b>Без Cookie</b>. Користувацькі події track() надсилаються лише за згодою.", "link": "Політика конфіденційності Vercel" }, "sentry": { "heading": "Sentry", "description": "Моніторинг помилок та відтворення сесій. <b>Звіти про помилки</b> надсилаються за згодою. <b>Відтворення сесій</b> записуються лише за явною згодою.", "link": "Політика конфіденційності Sentry" } },
         "manage": { "heading": "Керування Налаштуваннями", "p1": "Ви можете змінити свої рішення про згоду в будь-який час, натиснувши кнопку \"Налаштування Cookie\" у нижньому колонтитулі.", "p2": "Для видалення всіх збережених даних очистіть дані сайту через налаштування браузера.", "p3": "Ваші налаштування згоди зберігаються локально на пристрої — вони ніколи не передаються на наші сервери." },
         "updates": { "heading": "Оновлення Політики", "p1": "Ми можемо оновити цю Політику Cookie при додаванні нових механізмів зберігання.", "version": "<b>Поточна версія згоди:</b> 1.0", "versionHistory": "Історія версій", "v1": "<b>v1.0</b> (липень 2025) — Опубліковано початкову Політику Cookie." },
-        "contact": { "heading": "Зв'язатися з Нами", "intro": "Якщо у вас є питання щодо цієї Політики Cookie:", "email": "<b>Електронна пошта:</b> <emailLink>hello@lumenshore.com</emailLink>", "company": "<b>Компанія:</b> LumenShore Ltd (Company No. 09607326)", "responseTime": "Зазвичай відповідаємо протягом 48 годин." },
+        "contact": { "heading": "Зв'язатися з Нами", "intro": "Якщо у вас є питання щодо цієї Політики Cookie:", "email": "<b>Електронна пошта:</b> <emailLink>support@lumenlingo.com</emailLink>", "company": "<b>Компанія:</b> LumenShore Ltd (Company No. 09607326)", "responseTime": "Зазвичай відповідаємо протягом 48 годин." },
         "table": { "key": "Ключ Сховища", "type": "Тип", "category": "Категорія", "purpose": "Призначення", "duration": "Тривалість" }
     },
     "pt": {
@@ -483,7 +483,7 @@ TRANSLATIONS = {
         "thirdParty": { "heading": "Serviços de Terceiros", "intro": "Os seguintes serviços de terceiros podem processar dados da sua visita:", "vercel": { "heading": "Vercel Analytics", "description": "Analítica web focada na privacidade. <b>Sem cookies</b>. Eventos track() personalizados são enviados apenas com consentimento.", "link": "Política de Privacidade da Vercel" }, "sentry": { "heading": "Sentry", "description": "Monitorização de erros e replay de sessão. <b>Relatórios de erros</b> enviados com consentimento. <b>Replays de sessão</b> gravados apenas com consentimento explícito.", "link": "Política de Privacidade do Sentry" } },
         "manage": { "heading": "Gerir as Suas Preferências", "p1": "Pode alterar as suas escolhas de consentimento a qualquer momento clicando no botão \"Definições de Cookies\" no rodapé.", "p2": "Para remover todos os dados armazenados, limpe os dados do site através das definições do navegador.", "p3": "As suas preferências de consentimento são armazenadas localmente no seu dispositivo — nunca são transmitidas para os nossos servidores." },
         "updates": { "heading": "Atualizações da Política", "p1": "Podemos atualizar esta Política de Cookies quando adicionarmos novos mecanismos de armazenamento.", "version": "<b>Versão atual do consentimento:</b> 1.0", "versionHistory": "Histórico de Versões", "v1": "<b>v1.0</b> (julho 2025) — Publicação inicial da Política de Cookies." },
-        "contact": { "heading": "Contacte-nos", "intro": "Se tiver questões sobre esta Política de Cookies:", "email": "<b>Email:</b> <emailLink>hello@lumenshore.com</emailLink>", "company": "<b>Empresa:</b> LumenShore Ltd (Company No. 09607326)", "responseTime": "Normalmente respondemos dentro de 48 horas." },
+        "contact": { "heading": "Contacte-nos", "intro": "Se tiver questões sobre esta Política de Cookies:", "email": "<b>Email:</b> <emailLink>support@lumenlingo.com</emailLink>", "company": "<b>Empresa:</b> LumenShore Ltd (Company No. 09607326)", "responseTime": "Normalmente respondemos dentro de 48 horas." },
         "table": { "key": "Chave de Armazenamento", "type": "Tipo", "category": "Categoria", "purpose": "Finalidade", "duration": "Duração" }
     }
 }

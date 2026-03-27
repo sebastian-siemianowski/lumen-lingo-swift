@@ -885,7 +885,7 @@ final class TierManager {
 
     /// Emails that bypass trial restrictions for testing.
     private static let qaEmails: Set<String> = [
-        "rudph2@test.com"
+        "testuser@lumenlingo.com"
     ]
 
     /// Whether the given profile belongs to a QA tester.

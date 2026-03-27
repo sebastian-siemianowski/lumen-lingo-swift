@@ -334,8 +334,8 @@ export default async function AITransparencyPage({
                         Users can reset their progress data at any time. Usage
                         queries
                         can be raised via{' '}
-                        <a href="mailto:privacy@lumenshore.com">
-                          privacy@lumenshore.com
+                        <a href="mailto:support@lumenlingo.com">
+                          support@lumenlingo.com
                         </a>.
                       </td>
                     </tr>
@@ -401,8 +401,8 @@ export default async function AITransparencyPage({
                 <p>
                   Questions about LumenLingo&apos;s use of algorithms or AI can be
                   directed to{' '}
-                  <a href="mailto:privacy@lumenshore.com">
-                    privacy@lumenshore.com
+                  <a href="mailto:support@lumenlingo.com">
+                    support@lumenlingo.com
                   </a>
                   . You may also visit our{' '}
                   <Link href="/privacy" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">

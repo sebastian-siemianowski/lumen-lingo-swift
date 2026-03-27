@@ -579,7 +579,7 @@ All Cookie Policy sections are correctly placed. The GPC section in Cookie Polic
 
 # Epic 8: Standardise Legal Contact Email
 
-> **Rationale**: The codebase currently uses three inconsistent email addresses for legal/privacy communications: `hello@lumenshore.com` (Privacy Policy, EULA, Cookie Policy, Contact sections), `support@lumenshore.com` (Terms complaints), and `legal@lumenshore.com` (copyright infringement). Per the user's direction, all legal communications must use `legal@lumenlingo.com`. This is also best practice — a dedicated legal@ address on the product domain (lumenlingo.com) is clearer than a general hello@ on the corporate domain.
+> **Rationale**: The codebase currently uses three inconsistent email addresses for legal/privacy communications: `support@lumenlingo.com` (Privacy Policy, EULA, Cookie Policy, Contact sections), `support@lumenshore.com` (Terms complaints), and `legal@lumenshore.com` (copyright infringement). Per the user's direction, all legal communications must use `legal@lumenlingo.com`. This is also best practice — a dedicated legal@ address on the product domain (lumenlingo.com) is clearer than a general hello@ on the corporate domain.
 
 ## Story 8.1: Replace all legal/privacy email references with legal@lumenlingo.com -- COMPLETED
 
@@ -589,19 +589,19 @@ All Cookie Policy sections are correctly placed. The GPC section in Cookie Polic
 
 ### Tasks
 
-- [x] In `messages/en.json` (and all 8 other locale files), find and replace every occurrence of `hello@lumenshore.com` used in a legal/privacy/data-protection context with `legal@lumenlingo.com`
+- [x] In `messages/en.json` (and all 8 other locale files), find and replace every occurrence of `support@lumenlingo.com` used in a legal/privacy/data-protection context with `legal@lumenlingo.com`
 - [x] Replace `support@lumenshore.com` in `Terms.distanceSelling.li8` (complaints) with `legal@lumenlingo.com` in all 9 locales
 - [x] Replace `legal@lumenshore.com` in `Terms.copyrightInfringement.p3` and `Terms.copyrightInfringement.p6` with `legal@lumenlingo.com` in all 9 locales
 - [x] Update `Privacy.contactUs.email` in all 9 locales
 - [x] Update `Eula.contact` email in all 9 locales
 - [x] Update `CookiePage.contact` email in all 9 locales
-- [x] Verify no `hello@lumenshore.com`, `support@lumenshore.com`, or `legal@lumenshore.com` remains in any legal policy section (Footer contact may keep hello@ for general enquiries)
+- [x] Verify no `support@lumenlingo.com`, `support@lumenshore.com`, or `legal@lumenshore.com` remains in any legal policy section (Footer contact may keep hello@ for general enquiries)
 
 ### Acceptance Criteria
 
-- [x] `grep -r "hello@lumenshore.com\|support@lumenshore.com\|legal@lumenshore.com" messages/` returns zero hits in Privacy, Terms, Eula, or CookiePage namespace contexts
+- [x] `grep -r "support@lumenlingo.com\|support@lumenshore.com\|legal@lumenshore.com" messages/` returns zero hits in Privacy, Terms, Eula, or CookiePage namespace contexts
 - [x] `legal@lumenlingo.com` appears consistently in contactUs, data protection lead, DSAR, complaints, copyright, and cookie contact sections across all 9 locales
-- [x] Footer general contact (`hello@lumenshore.com`) is NOT changed (separate UX concern)
+- [x] Footer general contact (`support@lumenlingo.com`) is NOT changed (separate UX concern)
 - [x] All `<emailLink>` and `<email>` rich-text tags wrap the new address correctly
 
 ---
@@ -2209,7 +2209,7 @@ Added Terms.assignment.p3 across all 9 locales with the following obligations: (
 
 **Priority:** High
 
-**Description:** All four policies must use consistent contact email addresses. Legal matters should use legal@lumenlingo.com. Accessibility matters should use accessibility@lumenlingo.com (if introduced in Story 17.5). No policy should use hello@lumenshore.com or any other stale address.
+**Description:** All four policies must use consistent contact email addresses. Legal matters should use legal@lumenlingo.com. Accessibility matters should use accessibility@lumenlingo.com (if introduced in Story 17.5). No policy should use support@lumenlingo.com or any other stale address.
 
 **Tasks:**
 
@@ -2221,12 +2221,12 @@ Added Terms.assignment.p3 across all 9 locales with the following obligations: (
 **Acceptance Criteria:**
 
 - [x] All legal email references use legal@lumenlingo.com across all 9 locales
-- [x] No stale email addresses remain (hello@lumenshore.com, etc.)
+- [x] No stale email addresses remain (support@lumenlingo.com, etc.)
 - [x] Email addresses render as clickable mailto: links
 - [x] Consistency verified across all four policy pages
 
 **Status:** COMPLETED (2025-07-10)
-**Implementation Notes:** Audited all email addresses across all 9 locales in Privacy, Terms, Eula, and CookiePage namespaces. JSON translation values already use legal@lumenlingo.com consistently for all legal/policy contacts. Fixed 14 stale `mailto:hello@lumenshore.com` hardcoded hrefs across 4 page.tsx files (10 in privacy, 2 in terms, 1 in cookies, 1 in data-request) to `mailto:legal@lumenlingo.com`. Corporate emails (community@, appeals@, dsa@, accessibility@, security@, press@) at @lumenshore.com domain are outside policy scope and retained. Contact.email (general help page) at hello@lumenshore.com is also outside the four policy namespaces and retained. All policy emailLink handlers now render correct mailto: links matching JSON values.
+**Implementation Notes:** Audited all email addresses across all 9 locales in Privacy, Terms, Eula, and CookiePage namespaces. JSON translation values already use legal@lumenlingo.com consistently for all legal/policy contacts. Fixed 14 stale `mailto:support@lumenlingo.com` hardcoded hrefs across 4 page.tsx files (10 in privacy, 2 in terms, 1 in cookies, 1 in data-request) to `mailto:legal@lumenlingo.com`. Corporate emails (community@, appeals@, dsa@, accessibility@, security@, press@) at @lumenshore.com domain are outside policy scope and retained. Contact.email (general help page) at support@lumenlingo.com is also outside the four policy namespaces and retained. All policy emailLink handlers now render correct mailto: links matching JSON values.
 
 ---
 

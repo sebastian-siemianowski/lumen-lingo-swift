@@ -243,7 +243,7 @@ struct AppUser: Equatable {
     static let mock = AppUser(
         id: "mock_user_001",
         name: "Sebastian",
-        email: "rudph2@test.com",
+        email: "testuser@lumenlingo.com",
         avatarURL: nil
     )
 }

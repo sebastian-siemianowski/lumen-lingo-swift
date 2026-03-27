@@ -19,7 +19,7 @@ TRANSFERS_SECTION = {
         "li3": "<b>UK International Data Transfer Agreement (IDTA)</b> \u2014 the UK equivalent of SCCs, approved by the ICO for transfers from the UK.",
         "li4": "<b>Adequacy decisions</b> \u2014 where the European Commission or UK Government has determined that the destination country provides adequate data protection."
     },
-    "p1": "You may request a copy of the relevant transfer safeguards by contacting us at hello@lumenshore.com."
+    "p1": "You may request a copy of the relevant transfer safeguards by contacting us at support@lumenlingo.com."
 }
 
 def main():

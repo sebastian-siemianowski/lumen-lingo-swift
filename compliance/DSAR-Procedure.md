@@ -1,7 +1,7 @@
 # Data Subject Access Request (DSAR) Procedure
 
 **Controller**: LumenShore Ltd, Company No. 09607326
-**Contact**: hello@lumenshore.com
+**Contact**: support@lumenlingo.com
 **Document Version**: 1.0
 **Date Created**: 2025-06-26
 **Next Review**: 2026-06-26 (annual)
@@ -13,7 +13,7 @@
 
 Data subjects may submit requests via:
 
-1. **Email**: hello@lumenshore.com (primary channel)
+1. **Email**: support@lumenlingo.com (primary channel)
 2. **Web form**: lumenlingo.com/data-request (structured form with request type selection)
 
 All requests, regardless of channel, are logged in the DSAR Log (see `compliance/DSAR-Log.md`).
@@ -191,7 +191,7 @@ Before processing any DSAR, verify the requestor's identity:
 >
 > Kind regards,
 > LumenShore Ltd
-> hello@lumenshore.com
+> support@lumenlingo.com
 
 ### 6.2 Access Response Template
 

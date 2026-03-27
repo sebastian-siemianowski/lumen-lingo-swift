@@ -181,7 +181,7 @@ for loc in LOCALES:
     # Filter out common expected emails
     unexpected = [e for e in emails if e not in {
         "legal@lumenlingo.com",
-        "hello@lumenshore.com",
+        "support@lumenlingo.com",
         "community@lumenshore.com",
         "appeals@lumenshore.com",
         "dsa@lumenshore.com",

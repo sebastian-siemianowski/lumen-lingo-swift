@@ -2,7 +2,7 @@
 
 **Controller**: LumenShore Ltd, Company No. 09607326
 **Registered Address**: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, United Kingdom
-**Contact**: hello@lumenshore.com | legal@lumenlingo.com
+**Contact**: support@lumenlingo.com | legal@lumenlingo.com
 **Document Version**: 2.2
 **Date Created**: 2025-06-26
 **Date Last Updated**: 2026-03-27

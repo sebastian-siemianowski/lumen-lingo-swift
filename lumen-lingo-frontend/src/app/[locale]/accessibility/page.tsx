@@ -70,7 +70,7 @@ export default async function AccessibilityPage({
       <a href="https://www.equalityhumanrights.com/en" target="_blank" rel="noopener noreferrer">{chunks}</a>
     ),
     emailLink: (chunks: React.ReactNode) => (
-      <a href="mailto:accessibility@lumenshore.com">{chunks}</a>
+      <a href="mailto:accessibility@lumenlingo.com">{chunks}</a>
     ),
     contactLink: (chunks: React.ReactNode) => (
       <Link href="/contact" className={extLink}>{chunks}</Link>

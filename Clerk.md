@@ -1213,7 +1213,7 @@ Clerk JWTs have a short lifetime (typically 60 seconds). The SDK uses a longer-l
     - Icon: moon.circle with dimming purple/gray gradient (cosmic, on-brand).
     - Title: "Your account has been suspended" / "Your account has been deleted".
     - Body: support contact prompt / 30-day data retention notice.
-    - Button: "Contact Support" → opens `mailto:support@lumenlingo.app`.
+    - Button: "Contact Support" → opens `mailto:support@lumenlingo.com`.
     - Button: "Sign in with a different account" → presents sign-in sheet.
   - Local data (XP, progress) is preserved — nothing is deleted.
 - [x] Account deletion case uses same flow with adjusted messaging and 30-day retention notice.

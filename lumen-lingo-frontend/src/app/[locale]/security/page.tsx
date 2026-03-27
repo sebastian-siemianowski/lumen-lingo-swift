@@ -48,10 +48,10 @@ export default async function SecurityPage({
   const richTags = {
     b: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
     emailLink: (chunks: React.ReactNode) => (
-      <a href="mailto:security@lumenshore.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
+      <a href="mailto:security@lumenlingo.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
     ),
     supportLink: (chunks: React.ReactNode) => (
-      <a href="mailto:support@lumenshore.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
+      <a href="mailto:support@lumenlingo.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
     ),
     securityTxtLink: (chunks: React.ReactNode) => (
       <a href="/.well-known/security.txt" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>

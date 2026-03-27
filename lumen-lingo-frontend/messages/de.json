@@ -222,7 +222,7 @@
   "Contact": {
     "heading": "Haben Sie eine Frage?",
     "description": "In den FAQ nicht fündig geworden? Wir freuen uns, von Ihnen zu hören.",
-    "email": "hello@lumenshore.com",
+    "email": "support@lumenlingo.com",
     "responseTime": "Wir antworten in der Regel innerhalb von 48 Stunden",
     "faqHeading": "Häufig Gestellte Fragen",
     "faqDescription": "Schnelle Antworten auf die häufigsten Fragen zu LumenLingo.",
@@ -2703,7 +2703,7 @@
       "heading": "Reporting Mechanism",
       "p1": "If you encounter content or behaviour that violates these guidelines, you can report it through:",
       "li1": "In-app report button — available on all user-generated content (tap the three-dot menu and select 'Report')",
-      "li2": "Email — send reports to community@lumenshore.com with a description of the issue and any screenshots or links",
+      "li2": "Email — send reports to support@lumenlingo.com with a description of the issue and any screenshots or links",
       "li3": "Contact form — use our Contact page to submit a detailed report",
       "li4": "Trusted flaggers — organisations designated under the EU Digital Services Act receive priority review for their reports",
       "p2": "All reports are treated confidentially. We do not disclose the identity of reporters to the reported user."
@@ -2720,7 +2720,7 @@
     "appeals": {
       "heading": "Appeal Process",
       "p1": "If you believe a moderation decision was made in error, you may appeal:",
-      "li1": "Submit an appeal via email to appeals@lumenshore.com within 14 days of the enforcement action, including your account identifier and a clear explanation of why you believe the decision was incorrect",
+      "li1": "Submit an appeal via email to appeals@lumenlingo.com within 14 days of the enforcement action, including your account identifier and a clear explanation of why you believe the decision was incorrect",
       "li2": "Appeals are reviewed by a moderator who was not involved in the original decision, typically within 7 business days",
       "li3": "EU users may also refer complaints to the Digital Services Coordinator in their Member State or to a certified out-of-court dispute settlement body under DSA Article 21"
     },
@@ -2736,7 +2736,7 @@
     "dsaCompliance": {
       "heading": "EU Digital Services Act Compliance",
       "p1": "In accordance with Regulation (EU) 2022/2065 (the Digital Services Act), LumenLingo as an intermediary service provider:",
-      "li1": "Maintains a single point of contact for competent authorities and users — reachable at dsa@lumenshore.com",
+      "li1": "Maintains a single point of contact for competent authorities and users — reachable at dsa@lumenlingo.com",
       "li2": "Publishes this transparency notice as part of our Terms of Service and Community Guidelines",
       "li3": "Provides a notice-and-action mechanism for reporting illegal content, accessible through the reporting channels described above",
       "li4": "Issues statements of reasons when content is removed or accounts are restricted, including the legal or contractual basis and information on available redress",
@@ -2833,7 +2833,7 @@
     "alternatives": {
       "heading": "Alternative Zugangsmöglichkeiten",
       "intro": "Wenn Sie Schwierigkeiten bei der Nutzung eines Teils von LumenLingo haben, stehen die folgenden Alternativen zur Verfügung:",
-      "li1": "<b>E-Mail-Support:</b> Kontaktieren Sie uns unter <emailLink>accessibility@lumenshore.com</emailLink> und wir stellen Ihnen den benötigten Inhalt in einem barrierefreien Format bereit (Klartext, Audiobeschreibung oder alternatives Layout).",
+      "li1": "<b>E-Mail-Support:</b> Kontaktieren Sie uns unter <emailLink>accessibility@lumenlingo.com</emailLink> und wir stellen Ihnen den benötigten Inhalt in einem barrierefreien Format bereit (Klartext, Audiobeschreibung oder alternatives Layout).",
       "li2": "<b>Tastaturnavigation:</b> Alle Website-Inhalte und -Interaktionen können nur per Tastatur aufgerufen werden (Tab, Umschalt+Tab, Enter, Escape, Pfeiltasten).",
       "li3": "<b>Screenreader:</b> Die Website wird mit VoiceOver getestet. Wenn Sie auf Probleme mit einer assistiven Technologie stoßen, lassen Sie es uns bitte wissen.",
       "li4": "<b>Browser-Anpassungen:</b> Die Website unterstützt Zoom bis 200%, Hochkontrastmodus und invertierte Farben."
@@ -2850,7 +2850,7 @@
     "feedback": {
       "heading": "Feedback",
       "intro": "Wir freuen uns über Ihr Feedback zur Barrierefreiheit von lumenlingo.com. Wenn Sie auf Barrierefreiheitsbarrieren stoßen oder Verbesserungsvorschläge haben, kontaktieren Sie uns bitte:",
-      "li1Email": "<b>E-Mail:</b> <emailLink>accessibility@lumenshore.com</emailLink>",
+      "li1Email": "<b>E-Mail:</b> <emailLink>accessibility@lumenlingo.com</emailLink>",
       "li2Contact": "<b>Allgemeiner Kontakt:</b> <contactLink>Kontaktseite</contactLink>",
       "li3Vpat": "<b>VPAT:</b> <vpatLink>Unser Voluntary Product Accessibility Template anzeigen</vpatLink>",
       "response": "Wir sind bestrebt, auf Barrierefreiheits-Feedback innerhalb von 5 Werktagen zu antworten. Wenn Sie eine Barrierefreiheitsbeschwerde einreichen, bestätigen wir den Eingang innerhalb von 2 Werktagen und geben eine substanzielle Antwort — einschließlich eines Behebungsplans für jede bestätigte Barriere — innerhalb von 15 Werktagen."
@@ -2872,7 +2872,7 @@
       "euHeading": "Europäische Union",
       "euP1": "EU-Bürger können die nationale Durchsetzungsbehörde in ihrem EU-Mitgliedstaat kontaktieren, die für den European Accessibility Act zuständig ist. Eine Liste der benannten Marktüberwachungsbehörden wird von jedem Mitgliedstaat gemäß Artikel 19 des EAA geführt.",
       "usHeading": "Vereinigte Staaten",
-      "usP1": "US-Bürger mit Barrierefreiheitsbedenken können eine Beschwerde gemäß Titel III des Americans with Disabilities Act einreichen. Wir empfehlen, uns zunächst unter <emailLink>accessibility@lumenshore.com</emailLink> zu kontaktieren, damit wir das Problem direkt lösen können. Unser <vpatLink>VPAT</vpatLink> dokumentiert unseren aktuellen Konformitätsgrad."
+      "usP1": "US-Bürger mit Barrierefreiheitsbedenken können eine Beschwerde gemäß Titel III des Americans with Disabilities Act einreichen. Wir empfehlen, uns zunächst unter <emailLink>accessibility@lumenlingo.com</emailLink> zu kontaktieren, damit wir das Problem direkt lösen können. Unser <vpatLink>VPAT</vpatLink> dokumentiert unseren aktuellen Konformitätsgrad."
     }
   },
   "Security": {
@@ -2889,7 +2889,7 @@
     },
     "reporting": {
       "heading": "Eine Sicherheitslucke melden",
-      "p1": "Wenn Sie glauben, eine Sicherheitslucke in LumenLingo gefunden zu haben, melden Sie diese bitte verantwortungsvoll per E-Mail an <emailLink>security@lumenshore.com</emailLink>.",
+      "p1": "Wenn Sie glauben, eine Sicherheitslucke in LumenLingo gefunden zu haben, melden Sie diese bitte verantwortungsvoll per E-Mail an <emailLink>security@lumenlingo.com</emailLink>.",
       "p2": "Bitte fugen Sie so viele Details wie moglich bei: eine Beschreibung der Schwachstelle, Schritte zur Reproduktion, die moglichen Auswirkungen und eventuelle Proof-of-Concept-Codes oder Screenshots.",
       "p3": "Wir veroffentlichen auch eine maschinenlesbare <securityTxtLink>security.txt</securityTxtLink>-Datei gemaess RFC 9116."
     },
@@ -2931,7 +2931,7 @@
     },
     "contact": {
       "heading": "Kontakt",
-      "p1": "Fur Sicherheitsmeldungen: <emailLink>security@lumenshore.com</emailLink>",
+      "p1": "Fur Sicherheitsmeldungen: <emailLink>security@lumenlingo.com</emailLink>",
       "p2": "Fur allgemeinen Support: <supportLink>legal@lumenlingo.com</supportLink>",
       "p3": "Bevorzugte Sprache: Englisch"
     }

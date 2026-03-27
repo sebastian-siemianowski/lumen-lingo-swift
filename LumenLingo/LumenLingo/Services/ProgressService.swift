@@ -21,12 +21,12 @@ final class ProgressService {
             // Backfill firstName/email for profiles created before these fields existed
             if profile.firstName.isEmpty {
                 profile.firstName = "Sebastian"
-                profile.email = "rudph2@test.com"
+                profile.email = "testuser@lumenlingo.com"
                 try? modelContext.save()
             }
             return profile
         }
-        let profile = UserProfile(firstName: "Sebastian", email: "rudph2@test.com")
+        let profile = UserProfile(firstName: "Sebastian", email: "testuser@lumenlingo.com")
         modelContext.insert(profile)
         try? modelContext.save()
         return profile

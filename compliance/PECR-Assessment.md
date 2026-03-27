@@ -87,7 +87,7 @@ PECR Regulation 23 requires that the sender's identity is not concealed and a va
 | Requirement | Status |
 |---|---|
 | Sender identity visible | ✅ LumenShore Ltd in every email |
-| Valid return address | ✅ hello@lumenshore.com |
+| Valid return address | ✅ support@lumenlingo.com |
 | Opt-out address | ✅ Unsubscribe link in every email |
 
 ---

@@ -15,7 +15,7 @@
 > **Registered Office**: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA
 > **Incorporated**: 26 May 2015
 > **VAT Number**: GB 270411929
-> **Contact**: hello@lumenshore.com
+> **Contact**: support@lumenlingo.com
 > **Governing Law**: England and Wales
 > **Last Updated**: 23 March 2026
 >
@@ -587,7 +587,7 @@
 
 #### Subtasks:
 - [x] 4.2.1 — Create DSAR request mechanism:
-  - Email: hello@lumenshore.com (already listed)
+  - Email: support@lumenlingo.com (already listed)
   - Optional: dedicated `/dsar` or `/data-request` page with structured form
   - **DONE**: Created `/data-request` page (`src/app/[locale]/data-request/page.tsx`) with structured form component (`src/components/data-request/data-request-form.tsx`). Form collects name, email, request type (6 rights), and details, then composes a mailto: link. Full 10-locale i18n (en, es, fr, de, ja, zh, ar, pl, pt, uk). Added to footer and sitemap.
 - [x] 4.2.2 — Define internal DSAR handling procedure:
@@ -936,7 +936,7 @@
 - [x] 6.1.2 — Appoint a data protection lead (even if not legally required to have a DPO):
   - Document who is responsible for data protection
   - Add contact to Privacy Policy
-  - ✅ Added Data Protection Lead section to Privacy Policy: Sebastian Siemianowski, Director. Explains no DPO obligation under Art. 37 UK GDPR (not public authority, no large-scale monitoring, no mass special category processing). Contact via hello@lumenshore.com. All 10 locales translated.
+  - ✅ Added Data Protection Lead section to Privacy Policy: Sebastian Siemianowski, Director. Explains no DPO obligation under Art. 37 UK GDPR (not public authority, no large-scale monitoring, no mass special category processing). Contact via support@lumenlingo.com. All 10 locales translated.
 - [x] 6.1.3 — Ensure UK GDPR adequacy decision references are current:
   - UK recognizes EU adequacy (until June 2025 bridge expires — check current status)
   - EU-US Data Privacy Framework recognition
@@ -1136,7 +1136,7 @@
 
 #### Subtasks:
 - [x] 7.1.1 — Add point-of-contact for EU authorities and users on website:
-  - Publish email/contact form for legal inquiries (hello@lumenshore.com or dedicated legal@lumenshore.com)
+  - Publish email/contact form for legal inquiries (support@lumenlingo.com or dedicated legal@lumenshore.com)
   - Designate a legal representative in the EU (if LumenShore Ltd has no EU establishment)
 - [x] 7.1.2 — Add Terms of Service transparency per DSA Art. 14:
   - Content moderation policies (for user-generated content, if any — currently N/A)
@@ -1197,7 +1197,7 @@
   - User-generated content (if any in future): user retains ownership, grants LumenShore license to display
 - [x] 8.1.4 — Add DMCA / copyright infringement notice process:
   - Designated agent for DMCA takedown notices
-  - Email: legal@lumenshore.com or hello@lumenshore.com
+  - Email: legal@lumenshore.com or support@lumenlingo.com
   - Process for responding to valid takedown requests
 - [x] 8.1.5 — Document content sources and licenses for any third-party content used (dictionaries, word lists, translations)
 - [x] 8.1.6 — Consider trademark registration for "LumenLingo" and "LumenShore" in key jurisdictions (UK, EU, US)
@@ -1831,7 +1831,7 @@
 
 #### Subtasks:
 - [x] 12.3.1 — Create `/.well-known/security.txt` file on website per RFC 9116:
-  - Contact: security@lumenshore.com (or hello@lumenshore.com)
+  - Contact: security@lumenshore.com (or support@lumenlingo.com)
   - Preferred languages: English
   - Policy URL
   - Encryption: optional PGP key
@@ -2005,7 +2005,7 @@
 
 #### Subtasks:
 - [x] 14.1.1 — Review and enhance dispute resolution clause in Terms:
-  - Step 1: Informal resolution (email to hello@lumenshore.com, 30-day good faith period)
+  - Step 1: Informal resolution (email to support@lumenlingo.com, 30-day good faith period)
   - Step 2: Mediation (optional, via agreed mediator)
   - Step 3: Court proceedings (England and Wales jurisdiction)
 - [x] 14.1.2 — Add EU Online Dispute Resolution (ODR) link per EU Regulation 524/2013:
@@ -2111,7 +2111,7 @@
   - No consolidation of multiple users' claims
 - [x] 14.4.3 — 30-day opt-out right:
   - Users must be able to opt out of arbitration within 30 days of first accepting Terms
-  - Opt-out via written notice to hello@lumenshore.com
+  - Opt-out via written notice to support@lumenlingo.com
   - User who opts out retains all other rights under Terms
   - This makes the clause more enforceable under US law
 - [x] 14.4.4 — Small claims court exception:
@@ -2716,7 +2716,7 @@
 - [x] 14.20.3 — User responsibility for account security:
   - "You are solely responsible for maintaining the confidentiality and security of your account credentials"
   - "You are responsible for all activity that occurs under your account, whether or not authorised by you"
-  - "You must immediately notify Lumenshore (hello@lumenshore.com) of any unauthorised access to or use of your account"
+  - "You must immediately notify Lumenshore (support@lumenlingo.com) of any unauthorised access to or use of your account"
   - "Lumenshore is not liable for any loss arising from unauthorised access to your account where such access resulted from your failure to maintain account security"
 - [x] 14.20.4 — Family sharing:
   - "Apple Family Sharing, where available and supported, is the only authorised method of sharing access to the Service with other members of your household"
@@ -4224,7 +4224,7 @@
 | **Registered office** | Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA |
 | **Incorporated** | 26 May 2015 |
 | **VAT number** | GB 270411929 |
-| **Contact email** | hello@lumenshore.com |
+| **Contact email** | support@lumenlingo.com |
 | **Bundle ID** | com.lumenshore.lumenlingo |
 | **Website** | lumenlingo.com |
 

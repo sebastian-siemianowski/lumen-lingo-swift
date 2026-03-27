@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Story 20.4: Replace all hello@lumenshore.com with legal@lumenlingo.com
+Story 20.4: Replace all support@lumenlingo.com with legal@lumenlingo.com
 in policy page.tsx files (matching the JSON emailLink values).
 """
 import pathlib
@@ -17,9 +17,9 @@ FILES = [
 total = 0
 for f in FILES:
     text = f.read_text("utf-8")
-    count = text.count("hello@lumenshore.com")
+    count = text.count("support@lumenlingo.com")
     if count:
-        text = text.replace("hello@lumenshore.com", "legal@lumenlingo.com")
+        text = text.replace("support@lumenlingo.com", "legal@lumenlingo.com")
         f.write_text(text, encoding="utf-8")
         print(f"  {f.name}: {count} replacements")
         total += count

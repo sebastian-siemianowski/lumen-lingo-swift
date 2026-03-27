@@ -749,7 +749,7 @@
   - How do I cancel my subscription?
   - Is my data synced across devices?
   - How do I delete my account?
-- [x] Contact section: "Have a question?" with email link (hello@lumenshore.com) and expected response time ("We usually respond within 48 hours")
+- [x] Contact section: "Have a question?" with email link (support@lumenlingo.com) and expected response time ("We usually respond within 48 hours")
 - [x] Glass morphism styling consistent with the rest of the site
 - [x] No search bar, no category cards — keep it minimal for launch
 
