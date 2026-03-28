@@ -74,9 +74,4 @@ export const contactFaqItems: FAQItem[] = [
     answer:
       'Very little. The iOS app stores all learning data on your device and syncs via iCloud — we don\'t have access to it. Our website uses Vercel Analytics (anonymous page views), Sentry for error monitoring, and stores newsletter sign-ups if you opt in. We do not track you across other sites, sell your data, or use advertising cookies. Full details are in our Privacy Policy.',
   },
-  {
-    question: 'How do I contact you about a privacy concern?',
-    answer:
-      'For privacy-specific questions, email us at {{EMAIL:support}} with "Privacy" in the subject line. You can also use our Data Request page to exercise your rights under GDPR, CCPA, or other privacy laws — including access, correction, deletion, and data portability. We take every privacy inquiry seriously and respond within 48 hours.',
-  },
 ];
