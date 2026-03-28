@@ -276,6 +276,13 @@
       "soundscapesSub": "12 kuratierte Fokus-Umgebungen",
       "heading": "Gestaltet zum Begeistern",
       "description": "Jede Interaktion ist sorgfältig gestaltet. Flüssige Animationen, subtile Haptik und ambiente Klangwelten schaffen eine Lernumgebung, in die Sie gerne zurückkehren."
+    },
+    "cta": {
+      "heading": "Bereit, Ihr Lernen zu transformieren?",
+      "description": "Schließen Sie sich Tausenden von Lernenden an, die einen schöneren Weg entdeckt haben, Sprachen zu meistern.",
+      "privacy": "Datenschutz zuerst",
+      "free": "Kostenlos starten",
+      "noAccount": "Kein Konto nötig"
     }
   },
   "Newsletter": {

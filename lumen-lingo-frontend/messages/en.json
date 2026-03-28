@@ -276,6 +276,13 @@
       "soundscapesSub": "12 curated focus environments",
       "heading": "Designed to delight",
       "description": "Every interaction is crafted with care. Smooth animations, subtle haptics, and ambient soundscapes create a learning environment you actually want to return to."
+    },
+    "cta": {
+      "heading": "Ready to transform your learning?",
+      "description": "Join thousands of learners who've discovered a more beautiful way to master languages.",
+      "privacy": "Privacy-first",
+      "free": "Free to start",
+      "noAccount": "No account needed"
     }
   },
   "Newsletter": {

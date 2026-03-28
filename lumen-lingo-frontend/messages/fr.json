@@ -276,6 +276,13 @@
       "soundscapesSub": "12 environnements de concentration sélectionnés",
       "heading": "Conçu pour enchanter",
       "description": "Chaque interaction est créée avec soin. Des animations fluides, des retours haptiques subtils et des paysages sonores ambiants créent un environnement d’apprentissage où vous avez vraiment envie de revenir."
+    },
+    "cta": {
+      "heading": "Prêt à transformer votre apprentissage ?",
+      "description": "Rejoignez des milliers d’apprenants qui ont découvert une façon plus belle de maîtriser les langues.",
+      "privacy": "Confidentialité d’abord",
+      "free": "Gratuit pour commencer",
+      "noAccount": "Aucun compte nécessaire"
     }
   },
   "Newsletter": {

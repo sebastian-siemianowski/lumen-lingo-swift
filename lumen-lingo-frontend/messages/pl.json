@@ -276,6 +276,13 @@
       "soundscapesSub": "12 wyselekcjonowanych środowisk do skupienia",
       "heading": "Zaprojektowane, by zachwycać",
       "description": "Każda interakcja jest starannie dopracowana. Płynne animacje, subtelna haptyka i ambientowe krajobrazy dźwiękowe tworzą środowisko nauki, do którego chcesz wracać."
+    },
+    "cta": {
+      "heading": "Gotowy zmienić swój sposób nauki?",
+      "description": "Dołącz do tysięcy uczących się, którzy odkryli piękniejszy sposób opanowania języków.",
+      "privacy": "Prywatność przede wszystkim",
+      "free": "Za darmo na start",
+      "noAccount": "Bez konta"
     }
   },
   "Newsletter": {

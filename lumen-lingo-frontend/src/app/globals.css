@@ -854,3 +854,73 @@ body {
 :root[lang="zh"] .legal-prose {
   line-height: 1.9;
 }
+
+/* ── Download page premium effects ── */
+@keyframes shimmer-text {
+  0%, 100% { background-position: 200% center; }
+  50% { background-position: -200% center; }
+}
+
+.shimmer-text {
+  background-size: 200% 100%;
+  animation: shimmer-text 5s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(var(--orbit-radius, 60px)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(var(--orbit-radius, 60px)) rotate(-360deg); }
+}
+
+.animate-orbit {
+  animation: orbit var(--orbit-duration, 20s) linear infinite;
+}
+
+/* Count-up glow accent */
+@keyframes number-glow {
+  0%, 100% { filter: drop-shadow(0 0 6px currentColor); }
+  50% { filter: drop-shadow(0 0 16px currentColor); }
+}
+
+.animate-number-glow {
+  animation: number-glow 3s ease-in-out infinite;
+}
+
+/* Device tilt perspective */
+.perspective-800 {
+  perspective: 800px;
+}
+
+/* Smooth card tilt transition */
+.tilt-card {
+  transition: transform 0.15s ease-out;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer-text,
+  .animate-spin-slow,
+  .animate-orbit,
+  .animate-number-glow,
+  .bezel-shimmer {
+    animation: none !important;
+  }
+}
+
+/* Device bezel shimmer sweep */
+@keyframes bezel-shimmer {
+  0% { transform: translateX(-100%) rotate(15deg); }
+  100% { transform: translateX(300%) rotate(15deg); }
+}
+
+.bezel-shimmer {
+  animation: bezel-shimmer 4s ease-in-out infinite;
+}

@@ -276,6 +276,13 @@
       "soundscapesSub": "12 entornos de concentración seleccionados",
       "heading": "Diseñado para deleitar",
       "description": "Cada interacción está elaborada con cuidado. Animaciones fluidas, hápticos sutiles y paisajes sonoros ambientales crean un entorno de aprendizaje al que realmente quieres volver."
+    },
+    "cta": {
+      "heading": "¿Listo para transformar tu aprendizaje?",
+      "description": "Únete a miles de estudiantes que descubrieron una forma más bella de dominar idiomas.",
+      "privacy": "Privacidad primero",
+      "free": "Gratis para empezar",
+      "noAccount": "Sin cuenta necesaria"
     }
   },
   "Newsletter": {

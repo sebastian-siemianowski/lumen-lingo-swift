@@ -5,6 +5,7 @@ import { DownloadBenefits } from '@/components/download/download-benefits';
 import { DownloadFeatures } from '@/components/download/download-features';
 import { DownloadShowcase } from '@/components/download/download-showcase';
 import { DownloadQR } from '@/components/download/download-qr';
+import { DownloadCTA } from '@/components/download/download-cta';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -51,6 +52,7 @@ export default async function DownloadPage({
       <DownloadBenefits />
       <DownloadShowcase />
       <DownloadFeatures />
+      <DownloadCTA />
       {isDev && <DownloadQR />}
     </div>
   );
