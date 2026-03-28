@@ -87,7 +87,7 @@ function CommunityGuidelinesContent({ locale }: { locale: string }) {
       {/* Content */}
       <Section className="py-8 pb-20 sm:py-12 sm:pb-28">
         <Container>
-          <div className="mx-auto max-w-4xl xl:grid xl:grid-cols-[1fr_200px] xl:gap-12">
+          <div className="mx-auto max-w-5xl xl:grid xl:grid-cols-[1fr_240px] xl:gap-10">
             <FadeIn>
               <div className="legal-prose">
 

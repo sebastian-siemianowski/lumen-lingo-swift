@@ -173,7 +173,7 @@ export default async function TermsPage({
             changesAnchor="changes"
             dismissLabel={tLegal('updateBannerDismiss')}
           />
-          <div className="mx-auto max-w-4xl xl:grid xl:grid-cols-[1fr_200px] xl:gap-12">
+          <div className="mx-auto max-w-5xl xl:grid xl:grid-cols-[1fr_240px] xl:gap-10">
             {/* Mobile TOC */}
             <div className="col-span-full mb-6">
               <MobileLegalTOC items={tocItems} label={tLegal('tocLabel')} />

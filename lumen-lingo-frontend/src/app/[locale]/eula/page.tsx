@@ -107,7 +107,7 @@ export default async function EulaPage({
       <Section className="py-8 sm:py-12 pb-20 sm:pb-28">
         <Container>
           <LanguageDisclaimer href="/eula" />
-          <div className="mx-auto max-w-4xl xl:grid xl:grid-cols-[1fr_200px] xl:gap-12">
+          <div className="mx-auto max-w-5xl xl:grid xl:grid-cols-[1fr_240px] xl:gap-10">
             {/* Mobile TOC */}
             <div className="col-span-full mb-6">
               <MobileLegalTOC items={tocItems} label={tLegal('tocLabel')} />
