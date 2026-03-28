@@ -267,7 +267,7 @@ export function EarlyAccessHero() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...spring.gentle, delay: T.sub }}
-                className="mx-auto mt-3 max-w-xl text-lg leading-relaxed text-foreground/70 sm:text-xl"
+                className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-foreground/70 sm:text-xl"
               >
                 Multi-sensory immersion crafted with care. Beautiful design,
                 ambient soundscapes, and methods grounded in cognitive science.
@@ -279,7 +279,7 @@ export function EarlyAccessHero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...spring.gentle, delay: T.share }}
-              className="relative mx-auto mt-8 w-full max-w-lg"
+              className="relative mx-auto mt-16 w-full max-w-lg"
             >
               {/* Soft ambient glow underneath */}
               <div
