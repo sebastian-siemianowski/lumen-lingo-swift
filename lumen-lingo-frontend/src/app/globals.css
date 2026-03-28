@@ -319,6 +319,12 @@ body {
 }
 .animate-badge-pulse { animation: badge-pulse 2.5s ease-in-out infinite; }
 
+/* ── Email reveal breathing glow ── */
+@keyframes breathe {
+  0%, 100% { opacity: 0; }
+  50%      { opacity: 0.35; }
+}
+
 /* ── Skeleton shimmer ── */
 @keyframes skeleton-shimmer {
   0%   { background-position: -200% 0; }

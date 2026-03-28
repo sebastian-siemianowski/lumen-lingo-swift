@@ -1,38 +1,41 @@
 'use client';
 
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { assembleEmail } from '@/lib/email-assembler';
+import { useEmailRevealTimer } from '@/hooks/use-email-reveal-timer';
+import { useBotDetection } from '@/hooks/use-bot-detection';
+import { EmailHoneypot, isBotDetected } from './email-honeypot';
+import { EmailRevealButton } from './email-reveal-button';
+import { RevealCountdown } from './reveal-countdown';
+import { ContactFormFallback } from './contact-form-fallback';
+import { trackEmailRevealed, trackEmailCopied, trackEmailSent, trackEmailTimeout, trackGateSucceeded, trackGateBlocked } from '@/lib/email-analytics';
 
-function CopyButton({ email, copied, onCopy }: { email: string; copied: string | null; onCopy: (email: string) => void }) {
-  const isCopied = copied === email;
-  const [flash, setFlash] = useState(false);
-
-  const handleClick = () => {
-    onCopy(email);
-    setFlash(true);
-    setTimeout(() => setFlash(false), 100);
-  };
-
+function CopyButton({ copied, onCopy }: { copied: boolean; onCopy: () => void }) {
   return (
     <div className="relative">
-      <button
-        onClick={handleClick}
+      <motion.button
+        onClick={onCopy}
         className={cn(
-          'relative inline-flex items-center justify-center rounded-lg p-2 transition-all duration-150',
-          flash && 'bg-emerald-400/10',
-          isCopied ? 'text-emerald-400' : 'text-[--color-foreground-muted] hover:text-[--color-foreground-secondary]',
+          'relative inline-flex items-center justify-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
+          copied
+            ? 'bg-emerald-500/10 text-emerald-400'
+            : 'bg-white/[0.05] text-white/50 hover:bg-white/[0.08] hover:text-white/70',
         )}
-        aria-label={isCopied ? 'Copied' : 'Copy email address'}
+        whileHover={{ scale: 1.03 }}
+        whileTap={{ scale: 0.97 }}
+        aria-label={copied ? 'Copied to clipboard' : 'Copy email address'}
       >
         <AnimatePresence mode="wait" initial={false}>
-          {isCopied ? (
+          {copied ? (
             <motion.svg
               key="check"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.15 }}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: [1.3, 1] }}
+              exit={{ opacity: 0, scale: 0.5 }}
+              transition={{ type: 'spring', stiffness: 500, damping: 15 }}
               viewBox="0 0 16 16"
               fill="none"
               className="h-3 w-3"
@@ -42,10 +45,10 @@ function CopyButton({ email, copied, onCopy }: { email: string; copied: string |
           ) : (
             <motion.svg
               key="clipboard"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.15 }}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+              transition={{ type: 'spring', stiffness: 500, damping: 20 }}
               viewBox="0 0 16 16"
               fill="none"
               className="h-3 w-3"
@@ -56,20 +59,21 @@ function CopyButton({ email, copied, onCopy }: { email: string; copied: string |
             </motion.svg>
           )}
         </AnimatePresence>
-      </button>
+        <span>{copied ? 'Copied!' : 'Copy'}</span>
+      </motion.button>
 
-      {/* Tooltip */}
+      {/* Floating "Copied!" toast */}
       <AnimatePresence>
-        {isCopied && (
+        {copied && (
           <motion.span
             initial={{ opacity: 0, y: 4 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.15 }}
-            className="absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-sm bg-[--color-surface] px-2 py-1 text-xs text-[--color-foreground-secondary] shadow-[--shadow-card]"
-            role="status"
+            exit={{ opacity: 0, y: -4 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+            className="absolute -bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-emerald-500/15 px-2.5 py-0.5 text-[10px] font-medium text-emerald-400"
+            aria-live="polite"
           >
-            Copied!
+            Copied to clipboard
           </motion.span>
         )}
       </AnimatePresence>
@@ -77,15 +81,152 @@ function CopyButton({ email, copied, onCopy }: { email: string; copied: string |
   );
 }
 
-export function ContactSection() {
-  const [copied, setCopied] = useState<string | null>(null);
+function SendEmailButton({ email }: { email: string }) {
+  const [opening, setOpening] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout>>(null);
 
-  const copyEmail = useCallback(async (email: string) => {
+  const handleSend = useCallback(() => {
+    // Construct mailto: dynamically on click — never stored in DOM/href
+    const mailtoUrl = `mailto:${email}`;
+    window.location.href = mailtoUrl;
+    trackEmailSent();
+    setOpening(true);
+    if (timerRef.current) clearTimeout(timerRef.current);
+    timerRef.current = setTimeout(() => setOpening(false), 3000);
+  }, [email]);
+
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, []);
+
+  return (
+    <motion.button
+      onClick={handleSend}
+      className={cn(
+        'relative inline-flex items-center justify-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
+        opening
+          ? 'bg-violet/10 text-violet'
+          : 'bg-white/[0.05] text-white/50 hover:bg-white/[0.08] hover:text-white/70',
+      )}
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.97 }}
+      aria-label={opening ? 'Opening email client' : 'Send email'}
+    >
+      <AnimatePresence mode="wait" initial={false}>
+        {opening ? (
+          <motion.svg
+            key="opening"
+            initial={{ opacity: 0, x: -4 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 4 }}
+            transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+            viewBox="0 0 16 16"
+            fill="none"
+            className="h-3 w-3"
+            aria-hidden
+          >
+            <path d="M2 14l12-6L2 2v4.5L10 8 2 9.5V14z" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+          </motion.svg>
+        ) : (
+          <motion.svg
+            key="send"
+            initial={{ opacity: 0, x: -4 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 4 }}
+            transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+            viewBox="0 0 16 16"
+            fill="none"
+            className="h-3 w-3"
+            aria-hidden
+          >
+            <path d="M2 14l12-6L2 2v4.5L10 8 2 9.5V14z" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+          </motion.svg>
+        )}
+      </AnimatePresence>
+      <span>{opening ? 'Opening…' : 'Send Email'}</span>
+    </motion.button>
+  );
+}
+
+export function ContactSection() {
+  const { isRevealed, timeRemaining, reveal, reset, hasExpired } = useEmailRevealTimer(30_000);
+  const [copied, setCopied] = useState(false);
+  const [announcement, setAnnouncement] = useState('');
+  const emailRef = useRef<string | null>(null);
+  const copyTimerRef = useRef<ReturnType<typeof setTimeout>>(null);
+  const pathname = usePathname();
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { isHuman, rateLimited, cooldownRemaining, recordFailedAttempt, getSignalSnapshot } = useBotDetection(containerRef);
+
+  // Reset reveal when user navigates away — unmount email from DOM
+  useEffect(() => {
+    reset();
+    emailRef.current = null;
+  }, [pathname, reset]);
+
+  const handleReveal = useCallback(() => {
+    const snapshot = getSignalSnapshot();
+
+    if (isBotDetected()) {
+      if (snapshot) {
+        if (process.env.NODE_ENV !== 'production') {
+          console.info('[EmailProtection] gate_blocked', snapshot);
+        }
+        trackGateBlocked(0, snapshot.score as number, snapshot.signals as Record<string, boolean>);
+      }
+      return;
+    }
+
+    if (snapshot) {
+      if (process.env.NODE_ENV !== 'production') {
+        console.info('[EmailProtection] gate_succeeded', snapshot);
+      }
+      trackGateSucceeded(0, snapshot.score as number, snapshot.signals as Record<string, boolean>);
+    }
+
+    if (!emailRef.current) {
+      emailRef.current = assembleEmail();
+    }
+    trackEmailRevealed(0);
+    reveal();
+  }, [reveal, getSignalSnapshot]);
+
+  const handleHoldStart = useCallback(() => {
+    setAnnouncement('Revealing…');
+  }, []);
+
+  // Announce reveal
+  useEffect(() => {
+    if (isRevealed && emailRef.current) {
+      setAnnouncement(`Email address revealed: ${emailRef.current}. Visible for 30 seconds.`);
+    }
+  }, [isRevealed]);
+
+  // Announce expiry
+  useEffect(() => {
+    if (hasExpired) {
+      setAnnouncement('Email hidden. Press the button to reveal again.');
+      trackEmailTimeout(copied);
+    }
+  }, [hasExpired]);
+
+  // When timer expires, clear the in-memory email string too
+  useEffect(() => {
+    if (hasExpired) {
+      emailRef.current = null;
+    }
+  }, [hasExpired]);
+
+  const copyEmail = useCallback(async () => {
+    if (!emailRef.current) {
+      emailRef.current = assembleEmail();
+    }
+    const email = emailRef.current;
     try {
       await navigator.clipboard.writeText(email);
     } catch {
-      // Fallback for older browsers
       const ta = document.createElement('textarea');
       ta.value = email;
       ta.style.position = 'fixed';
@@ -95,13 +236,25 @@ export function ContactSection() {
       document.execCommand('copy');
       document.body.removeChild(ta);
     }
-    setCopied(email);
-    if (timerRef.current) clearTimeout(timerRef.current);
-    timerRef.current = setTimeout(() => setCopied(null), 2000);
+    setCopied(true);
+    setAnnouncement('Email address copied to clipboard.');
+    trackEmailCopied();
+    if (copyTimerRef.current) clearTimeout(copyTimerRef.current);
+    copyTimerRef.current = setTimeout(() => setCopied(false), 2000);
   }, []);
 
+  const secondsRemaining = Math.ceil(timeRemaining / 1000);
+
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-glass-border bg-surface-card/40 p-8 backdrop-blur-sm sm:p-10">
+    <div ref={containerRef} className="relative overflow-hidden rounded-2xl border border-glass-border bg-surface-card/40 p-8 backdrop-blur-sm sm:p-10">
+      {/* Honeypot — looks like mailto: to bots, invisible to humans */}
+      <EmailHoneypot />
+
+      {/* Screen reader announcement region (Story 4.2) */}
+      <div className="sr-only" aria-live="assertive" role="log">
+        {announcement}
+      </div>
+
       {/* Subtle gradient accent */}
       <div className="pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-violet/5 blur-3xl" aria-hidden />
       <div className="pointer-events-none absolute -bottom-16 -left-16 h-32 w-32 rounded-full bg-cyan/5 blur-3xl" aria-hidden />
@@ -128,21 +281,38 @@ export function ContactSection() {
           Can&apos;t find what you&apos;re looking for in the FAQ? We&apos;re here to help. Drop us a line and we&apos;ll get back to you as soon as we can.
         </p>
 
-        {/* Email links */}
+        {/* Email reveal — hold-to-reveal gate with delightful animations */}
         <div className="mt-6 space-y-3">
-          {/* Support email */}
-          <div className="glass-card flex items-center justify-between px-4 py-3">
-            <a
-              href="mailto:support@lumenlingo.com"
-              className={cn(
-                'font-mono text-sm transition-colors duration-200',
-                copied === 'support@lumenlingo.com' ? 'text-[--color-violet]' : 'text-[--color-foreground]',
-              )}
-            >
-              support@lumenlingo.com
-            </a>
-            <CopyButton email="support@lumenlingo.com" copied={copied} onCopy={copyEmail} />
-          </div>
+          <EmailRevealButton
+            onReveal={handleReveal}
+            onHoldStart={handleHoldStart}
+            email={emailRef.current}
+            isRevealed={isRevealed}
+            hasExpired={hasExpired}
+            onShowAgain={handleReveal}
+            disabled={!isHuman || rateLimited}
+            onFailedAttempt={recordFailedAttempt}
+            cooldownRemaining={rateLimited ? cooldownRemaining : undefined}
+          />
+
+          {/* Action buttons — appear after email is revealed */}
+          <AnimatePresence>
+            {isRevealed && emailRef.current && (
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 8 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 25, delay: 0.15 }}
+                className="flex items-center gap-3"
+              >
+                <CopyButton copied={copied} onCopy={copyEmail} />
+                <SendEmailButton email={emailRef.current} />
+                {secondsRemaining > 0 && (
+                  <RevealCountdown timeRemaining={timeRemaining} />
+                )}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         {/* Response time badge */}
@@ -155,6 +325,16 @@ export function ContactSection() {
             We usually respond within 48 hours — during busy periods it may take a little longer
           </span>
         </div>
+
+        {/* No-JS fallback contact form (Story 4.3) */}
+        <noscript>
+          <div className="mt-8 rounded-xl border border-glass-border bg-surface-card/40 p-6">
+            <h4 className="mb-4 text-sm font-medium text-white/70">
+              JavaScript is disabled — use this form to reach us:
+            </h4>
+            <ContactFormFallback />
+          </div>
+        </noscript>
       </div>
     </div>
   );
