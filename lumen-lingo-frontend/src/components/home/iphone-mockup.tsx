@@ -660,70 +660,70 @@ export function IPhoneMockup() {
       <div className="relative mx-auto w-[280px] sm:w-[300px]">
         {/* ── Premium aurora halo system ── */}
         <div className="pointer-events-none absolute -inset-24 sm:-inset-28">
-          {/* Layer 1: Rotating conic aurora — the star of the show */}
+          {/* Layer 1: Rotating conic aurora — soft, dreamy sweep */}
           <div
-            className="device-aurora absolute inset-0 rounded-full opacity-60 blur-[80px]"
+            className="device-aurora absolute inset-0 rounded-full opacity-40 blur-[90px]"
             style={{
-              background: 'conic-gradient(from 0deg, rgba(139,92,246,0.35), rgba(6,182,212,0.2), rgba(245,158,11,0.12), rgba(236,72,153,0.18), rgba(139,92,246,0.35))',
+              background: 'conic-gradient(from 0deg, rgba(139,92,246,0.25), rgba(6,182,212,0.14), rgba(245,158,11,0.08), rgba(236,72,153,0.1), rgba(139,92,246,0.25))',
             }}
           />
           {/* Layer 2: Counter-rotating secondary aurora — creates depth */}
           <div
-            className="device-aurora-slow absolute inset-4 rounded-full opacity-40 blur-[70px]"
+            className="device-aurora-slow absolute inset-4 rounded-full opacity-25 blur-[80px]"
             style={{
-              background: 'conic-gradient(from 180deg, rgba(6,182,212,0.3), rgba(139,92,246,0.15), rgba(245,158,11,0.15), rgba(6,182,212,0.3))',
+              background: 'conic-gradient(from 180deg, rgba(6,182,212,0.2), rgba(139,92,246,0.1), rgba(245,158,11,0.08), rgba(6,182,212,0.2))',
             }}
           />
-          {/* Layer 3: Pulsing violet core */}
+          {/* Layer 3: Pulsing violet core — soft heartbeat */}
           <motion.div
-            className="absolute inset-12 rounded-full blur-[60px]"
-            style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.4) 0%, rgba(139,92,246,0) 70%)' }}
-            animate={{ opacity: [0.5, 0.8, 0.5], scale: [0.95, 1.05, 0.95] }}
-            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+            className="absolute inset-12 rounded-full blur-[70px]"
+            style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.25) 0%, rgba(139,92,246,0) 70%)' }}
+            animate={{ opacity: [0.4, 0.6, 0.4], scale: [0.98, 1.02, 0.98] }}
+            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
           />
-          {/* Layer 4: Cyan accent — top-right bloom */}
+          {/* Layer 4: Cyan accent — gentle top-right bloom */}
           <motion.div
-            className="absolute -top-4 -right-4 h-2/3 w-2/3 rounded-full blur-[90px]"
-            style={{ background: 'radial-gradient(circle, rgba(6,182,212,0.25) 0%, transparent 65%)' }}
-            animate={{ opacity: [0.3, 0.6, 0.3], x: [-8, 8, -8], y: [-4, 4, -4] }}
-            transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+            className="absolute -top-4 -right-4 h-2/3 w-2/3 rounded-full blur-[100px]"
+            style={{ background: 'radial-gradient(circle, rgba(6,182,212,0.15) 0%, transparent 65%)' }}
+            animate={{ opacity: [0.2, 0.4, 0.2], x: [-4, 4, -4], y: [-2, 2, -2] }}
+            transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
           />
-          {/* Layer 5: Warm underlight — bottom accent for depth */}
+          {/* Layer 5: Warm underlight — whisper of warmth at the base */}
           <motion.div
-            className="absolute bottom-0 left-1/4 h-1/2 w-3/4 rounded-full blur-[70px]"
-            style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.2) 0%, rgba(236,72,153,0.1) 50%, transparent 70%)' }}
-            animate={{ opacity: [0.15, 0.35, 0.15] }}
-            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+            className="absolute bottom-0 left-1/4 h-1/2 w-3/4 rounded-full blur-[80px]"
+            style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.12) 0%, rgba(236,72,153,0.06) 50%, transparent 70%)' }}
+            animate={{ opacity: [0.1, 0.22, 0.1] }}
+            transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
           />
           {/* Layer 6: Light rays — subtle directional streaks */}
           <div
-            className="screen-breathe absolute inset-8 rounded-full opacity-25 blur-[50px]"
+            className="screen-breathe absolute inset-8 rounded-full opacity-15 blur-[60px]"
             style={{
-              background: 'linear-gradient(135deg, rgba(139,92,246,0.35) 0%, transparent 30%, transparent 70%, rgba(6,182,212,0.2) 100%)',
+              background: 'linear-gradient(135deg, rgba(139,92,246,0.2) 0%, transparent 30%, transparent 70%, rgba(6,182,212,0.12) 100%)',
             }}
           />
         </div>
 
-        {/* ── Tight screen-bleed glow — makes it look like light is leaking from the screen ── */}
+        {/* ── Tight screen-bleed glow — soft light leak from the display ── */}
         <div className="pointer-events-none absolute -inset-3 z-[1]">
           <motion.div
-            className="absolute inset-0 rounded-[52px] blur-[20px]"
+            className="absolute inset-0 rounded-[52px] blur-[24px]"
             style={{
-              background: 'linear-gradient(180deg, rgba(139,92,246,0.15) 0%, rgba(6,182,212,0.1) 50%, rgba(139,92,246,0.05) 100%)',
+              background: 'linear-gradient(180deg, rgba(139,92,246,0.1) 0%, rgba(6,182,212,0.06) 50%, rgba(139,92,246,0.03) 100%)',
             }}
-            animate={{ opacity: [0.6, 1, 0.6] }}
-            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+            animate={{ opacity: [0.5, 0.75, 0.5] }}
+            transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
           />
         </div>
 
         {/* Device body — titanium-style frame with edge shimmer */}
-        <div className="relative overflow-hidden rounded-[44px] border-[3px] border-white/[0.16] bg-[#08080d] p-3 shadow-[0_20px_80px_rgba(0,0,0,0.6),0_0_1px_rgba(255,255,255,0.15),0_0_80px_rgba(139,92,246,0.12),0_0_120px_rgba(6,182,212,0.06),0_-10px_40px_rgba(139,92,246,0.08)]">
+        <div className="relative overflow-hidden rounded-[44px] border-[3px] border-white/[0.14] bg-[#08080d] p-3 shadow-[0_20px_80px_rgba(0,0,0,0.5),0_0_1px_rgba(255,255,255,0.12),0_0_60px_rgba(139,92,246,0.08),0_0_100px_rgba(6,182,212,0.04),0_-8px_30px_rgba(139,92,246,0.05)]">
           {/* Bezel highlight — top specular reflection */}
           <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[60%] rounded-t-[44px] bg-gradient-to-b from-white/[0.1] to-transparent" />
           {/* Animated bezel shimmer sweep */}
           <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden rounded-[44px]">
             <div
-              className="bezel-shimmer absolute -inset-y-full left-0 w-[60%] opacity-[0.07]"
+              className="bezel-shimmer absolute -inset-y-full left-0 w-[60%] opacity-[0.04]"
               style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)' }}
             />
           </div>
@@ -872,10 +872,10 @@ export function IPhoneMockup() {
           </div>
         </div>
 
-        {/* Reflection pool — subtle light cast below the device */}
+        {/* Reflection pool — soft light cast below the device */}
         <div
-          className="pointer-events-none absolute -bottom-12 left-1/2 h-8 w-[70%] -translate-x-1/2 rounded-full opacity-40 blur-[25px]"
-          style={{ background: 'radial-gradient(ellipse, rgba(139,92,246,0.25) 0%, rgba(6,182,212,0.1) 50%, transparent 80%)' }}
+          className="pointer-events-none absolute -bottom-12 left-1/2 h-8 w-[70%] -translate-x-1/2 rounded-full opacity-30 blur-[30px]"
+          style={{ background: 'radial-gradient(ellipse, rgba(139,92,246,0.18) 0%, rgba(6,182,212,0.06) 50%, transparent 80%)' }}
         />
 
         {/* External dot indicators with glow */}
