@@ -16,7 +16,7 @@ const footerSections = [
     links: [
       { href: '/features', key: 'features' },
       { href: '/pricing', key: 'pricing' },
-      { href: '/share', key: 'share', flag: 'EARLY_ACCESS_LIVE' as FeatureFlagName },
+      { href: '/share', key: 'share' },
       { href: '/download', key: 'download' },
     ],
   },
@@ -87,7 +87,6 @@ export function Footer() {
   const [openSection, setOpenSection] = useState<string | null>(null);
 
   const flagValues: Record<string, boolean> = {
-    EARLY_ACCESS_LIVE: earlyAccessLive,
     PRESS_KIT_LIVE: pressKitLive,
     DATA_REQUEST_LIVE: dataRequestLive,
   };

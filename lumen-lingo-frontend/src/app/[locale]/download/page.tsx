@@ -7,6 +7,8 @@ import { DownloadShowcase } from '@/components/download/download-showcase';
 import { DownloadQR } from '@/components/download/download-qr';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
+const isDev = process.env.NODE_ENV === 'development';
+
 export async function generateMetadata({
   params,
 }: {
@@ -49,7 +51,7 @@ export default async function DownloadPage({
       <DownloadBenefits />
       <DownloadShowcase />
       <DownloadFeatures />
-      <DownloadQR />
+      {isDev && <DownloadQR />}
     </div>
   );
 }

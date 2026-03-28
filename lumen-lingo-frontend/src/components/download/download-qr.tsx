@@ -23,9 +23,20 @@ export function DownloadQR() {
         viewport={{ once: true, margin: '-50px' }}
         transition={{ duration: 0.5, ease }}
       >
-        <h2 className="font-display text-2xl font-bold text-foreground">
-          {t('heading')}
-        </h2>
+        <div className="flex items-center gap-2">
+          <h2 className="font-display text-2xl font-bold text-foreground">
+            {t('heading')}
+          </h2>
+          <span
+            className="inline-flex items-center gap-0.5 rounded border border-amber-500/30 bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-medium leading-none text-amber-400"
+            title="Visible in development only"
+          >
+            <svg viewBox="0 0 16 16" fill="none" className="h-2.5 w-2.5" aria-hidden>
+              <path d="M8 1l1.545 3.13L13 4.635l-2.5 2.437.59 3.44L8 8.885l-3.09 1.626.59-3.44L3 4.636l3.455-.504L8 1z" fill="currentColor" />
+            </svg>
+            DEV
+          </span>
+        </div>
         <p className="text-foreground-secondary">
           {t('description')}
         </p>
