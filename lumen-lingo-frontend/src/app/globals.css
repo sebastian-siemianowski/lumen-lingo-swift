@@ -863,7 +863,13 @@ body {
 
 .shimmer-text {
   background-size: 200% 100%;
-  animation: shimmer-text 5s ease-in-out infinite;
+  animation: none;
+}
+
+@media (min-width: 640px) {
+  .shimmer-text {
+    animation: shimmer-text 5s ease-in-out infinite;
+  }
 }
 
 @keyframes spin-slow {

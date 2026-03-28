@@ -46,13 +46,13 @@ function TiltCard({ children, index }: { children: React.ReactNode; index: numbe
   }, [rotateX, rotateY]);
 
   return (
-    <div className="perspective-800">
+    <div className="perspective-800 h-full">
       <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{ rotateX: springX, rotateY: springY, transformStyle: 'preserve-3d' }}
-        className={`group relative flex flex-col items-center gap-5 rounded-2xl border border-glass-border/60 bg-glass/60 p-8 text-center backdrop-blur-sm transition-colors duration-300 ${borderHoverColors[index]}`}
+        className={`group relative flex h-full flex-col items-center gap-5 rounded-2xl border border-glass-border/60 bg-glass/60 p-8 text-center backdrop-blur-sm transition-colors duration-300 ${borderHoverColors[index]}`}
         initial={{ opacity: 0, y: 28 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-50px' }}

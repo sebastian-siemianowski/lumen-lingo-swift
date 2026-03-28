@@ -135,7 +135,7 @@ export function DownloadHero() {
         {/* Shimmer gradient heading */}
         <motion.div className="space-y-4" variants={itemVariants}>
           <h1 className="font-display text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-            <span className="shimmer-text bg-gradient-to-r from-foreground via-violet to-cyan bg-clip-text text-transparent">
+            <span className="shimmer-text bg-gradient-to-r from-[#c4b5fd] via-[#e2e8f0] to-[#93c5fd] bg-clip-text text-transparent">
               {t('heading')}
             </span>
           </h1>
