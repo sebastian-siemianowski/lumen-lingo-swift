@@ -211,7 +211,7 @@ export function EarlyAccessHero() {
         />
 
         <Container>
-          <div className="flex flex-col items-center pt-28 pb-16 sm:pt-32">
+          <div className="relative z-10 flex flex-col items-center pt-20 pb-16 sm:pt-24">
 
             {/* ─────────── Upper section: brand & headline ─────────── */}
             <div className="w-full max-w-3xl text-center">
@@ -221,7 +221,7 @@ export function EarlyAccessHero() {
                 initial={{ opacity: 0, scale: 0.8, filter: 'blur(10px)' }}
                 animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
                 transition={{ ...spring.smooth, delay: T.badge }}
-                className="mb-8 inline-flex items-center gap-2.5 rounded-[--radius-pill] border border-violet/25 bg-violet/[0.08] px-5 py-2 backdrop-blur-sm"
+                className="mb-4 inline-flex items-center gap-2.5 rounded-[--radius-pill] border border-violet/25 bg-violet/[0.08] px-5 py-2 backdrop-blur-sm"
               >
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-violet opacity-60" />
@@ -267,7 +267,7 @@ export function EarlyAccessHero() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...spring.gentle, delay: T.sub }}
-                className="mx-auto mt-3 max-w-xl text-lg leading-relaxed text-foreground-muted sm:text-xl"
+                className="mx-auto mt-3 max-w-xl text-lg leading-relaxed text-foreground/70 sm:text-xl"
               >
                 Multi-sensory immersion crafted with care. Beautiful design,
                 ambient soundscapes, and methods grounded in cognitive science.
@@ -279,7 +279,7 @@ export function EarlyAccessHero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...spring.gentle, delay: T.share }}
-              className="relative mx-auto mt-4 w-full max-w-lg"
+              className="relative mx-auto mt-8 w-full max-w-lg"
             >
               {/* Soft ambient glow underneath */}
               <div
