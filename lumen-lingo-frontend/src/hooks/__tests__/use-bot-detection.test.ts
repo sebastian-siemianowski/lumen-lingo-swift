@@ -1217,3 +1217,47 @@ describe('useBotDetection – rate limiting', () => {
     expect(result.current.cooldownRemaining).toBe(55);
   });
 });
+
+// Story 5.2 – Signal Snapshot
+describe('useBotDetection – signal snapshot', () => {
+  beforeEach(() => {
+    vi.useFakeTimers();
+    mockBotDetected = false;
+    vi.spyOn(performance, 'now').mockReturnValue(1000);
+  });
+
+  afterEach(() => {
+    vi.useRealTimers();
+    vi.restoreAllMocks();
+  });
+
+  it('exposes getSignalSnapshot that returns a snapshot object', () => {
+    const containerRef = createContainerRef();
+    const { result } = renderHook(() => useBotDetection(containerRef));
+    const snapshot = result.current.getSignalSnapshot();
+    expect(snapshot).toBeDefined();
+    expect(snapshot).toHaveProperty('score');
+    expect(snapshot).toHaveProperty('signals');
+    expect(snapshot).toHaveProperty('timing');
+  });
+
+  it('snapshot contains no user-identifying data', () => {
+    const containerRef = createContainerRef();
+    const { result } = renderHook(() => useBotDetection(containerRef));
+    const snapshot = result.current.getSignalSnapshot();
+    const json = JSON.stringify(snapshot);
+    // No IP, fingerprint, cookie, email, or user ID
+    expect(json).not.toMatch(/ip|fingerprint|cookie|email|userId/i);
+  });
+
+  it('caps snapshots at 50 per session', () => {
+    const containerRef = createContainerRef();
+    const { result } = renderHook(() => useBotDetection(containerRef));
+    // Take 50 snapshots
+    for (let i = 0; i < 50; i++) {
+      expect(result.current.getSignalSnapshot()).not.toBeNull();
+    }
+    // 51st should be null
+    expect(result.current.getSignalSnapshot()).toBeNull();
+  });
+});

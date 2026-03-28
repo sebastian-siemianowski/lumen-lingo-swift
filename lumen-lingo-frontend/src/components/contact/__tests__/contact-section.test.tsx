@@ -212,3 +212,12 @@ describe('ContactSection — Screen Reader Announcements', () => {
     );
   });
 });
+
+// Story 5.3 – CSS Content Injection Decoy
+describe('ContactSection — CSS Decoy', () => {
+  it('has data-contact decoy attribute on the container', () => {
+    const { container } = render(<ContactSection />);
+    const wrapper = container.firstElementChild as HTMLElement;
+    expect(wrapper.getAttribute('data-contact')).toBe('noreply@lumenlingo.example');
+  });
+});

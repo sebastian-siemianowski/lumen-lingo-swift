@@ -559,7 +559,7 @@
 
 ### Acceptance Criteria
 
-- [ ] AC1: The following events are tracked (all with `email_protection_` prefix):
+- [x] AC1: The following events are tracked (all with `email_protection_` prefix):
   | Event Name | Trigger | Properties |
   |-----------|---------|-----------|
   | `email_protection_gate_started` | User begins hold interaction | `{ source: 'mouse' \| 'touch' \| 'keyboard' }` |
@@ -573,18 +573,18 @@
   | `email_protection_honeypot_triggered` | Bot interacted with honeypot | `{ interactionType: 'click' \| 'focus' }` |
   | `email_protection_rate_limited` | Too many failed attempts | `{ attemptCount }` |
   | `email_protection_noscript_form_submitted` | No-JS form used | `{ honeypotFilled: boolean }` |
-- [ ] AC2: All events use `posthog.capture()` from the existing PostHog integration
-- [ ] AC3: No PII is included in any event (no email address, no user name)
-- [ ] AC4: Events fire only on production (not in development mode — use `process.env.NODE_ENV` check)
-- [ ] AC5: A PostHog dashboard "Email Protection" is documented with suggested widgets (funnels, trends)
+- [x] AC2: All events use `posthog.capture()` from the existing PostHog integration
+- [x] AC3: No PII is included in any event (no email address, no user name)
+- [x] AC4: Events fire only on production (not in development mode — use `process.env.NODE_ENV` check)
+- [x] AC5: A PostHog dashboard "Email Protection" is documented with suggested widgets (funnels, trends)
 
 ### Tasks
 
-- [ ] T5.1.1: Create `src/lib/email-analytics.ts` with typed event functions (one per event) wrapping `posthog.capture()`
-- [ ] T5.1.2: Add the `NODE_ENV` guard — all functions are no-ops in development
-- [ ] T5.1.3: Wire each event function into the corresponding component/hook at the correct trigger point
-- [ ] T5.1.4: Verify events appear in PostHog dev tools (Activity tab) during staging testing
-- [ ] T5.1.5: Document the suggested PostHog dashboard configuration in this file (Appendix A)
+- [x] T5.1.1: Create `src/lib/email-analytics.ts` with typed event functions (one per event) wrapping `posthog.capture()`
+- [x] T5.1.2: Add the `NODE_ENV` guard — all functions are no-ops in development
+- [x] T5.1.3: Wire each event function into the corresponding component/hook at the correct trigger point
+- [x] T5.1.4: Verify events appear in PostHog dev tools (Activity tab) during staging testing
+- [x] T5.1.5: Document the suggested PostHog dashboard configuration in this file (Appendix A)
 
 ---
 
@@ -596,19 +596,19 @@
 
 ### Acceptance Criteria
 
-- [ ] AC1: When `score < THRESHOLD` at reveal attempt time, a `console.info` (not `console.log`) outputs a structured JSON object with all signal states — only in development
-- [ ] AC2: In production, the same snapshot is sent as properties on the `email_protection_gate_blocked` PostHog event
-- [ ] AC3: The snapshot includes: `{ score, signals: { mouseMoved, scrollDetected, timeOnPage, ... }, environment: { webdriver, phantom, languages, plugins }, timing: { dwellMs, cadenceStdDev } }`
-- [ ] AC4: No user-identifying data in the snapshot (no IP, no fingerprint, no cookies)
-- [ ] AC5: Snapshots are capped at 50 per session (in-memory counter) to prevent runaway logging from a bot loop
+- [x] AC1: When `score < THRESHOLD` at reveal attempt time, a `console.info` (not `console.log`) outputs a structured JSON object with all signal states — only in development
+- [x] AC2: In production, the same snapshot is sent as properties on the `email_protection_gate_blocked` PostHog event
+- [x] AC3: The snapshot includes: `{ score, signals: { mouseMoved, scrollDetected, timeOnPage, ... }, environment: { webdriver, phantom, languages, plugins }, timing: { dwellMs, cadenceStdDev } }`
+- [x] AC4: No user-identifying data in the snapshot (no IP, no fingerprint, no cookies)
+- [x] AC5: Snapshots are capped at 50 per session (in-memory counter) to prevent runaway logging from a bot loop
 
 ### Tasks
 
-- [ ] T5.2.1: Create a `captureSignalSnapshot()` function in the bot detection hook
-- [ ] T5.2.2: In development, output via `console.info('[EmailProtection]', snapshot)`
-- [ ] T5.2.3: In production, include the snapshot as PostHog event properties
-- [ ] T5.2.4: Add the per-session cap with an in-memory counter
-- [ ] T5.2.5: Review the snapshot schema to ensure zero PII
+- [x] T5.2.1: Create a `captureSignalSnapshot()` function in the bot detection hook
+- [x] T5.2.2: In development, output via `console.info('[EmailProtection]', snapshot)`
+- [x] T5.2.3: In production, include the snapshot as PostHog event properties
+- [x] T5.2.4: Add the per-session cap with an in-memory counter
+- [x] T5.2.5: Review the snapshot schema to ensure zero PII
 
 ---
 
@@ -620,18 +620,18 @@
 
 ### Acceptance Criteria
 
-- [ ] AC1: The contact section container has a `::before` pseudo-element with `content: "contact [at] lumenlingo-support [dot] fake"` — a obviously fake but email-like string
-- [ ] AC2: The pseudo-element is `position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0` — invisible to humans
-- [ ] AC3: The decoy text uses `[at]` and `[dot]` patterns intentionally — some bots parse these into email addresses
-- [ ] AC4: A second `::after` with `content: attr(data-contact)` pulls from a data attribute containing another decoy — `data-contact="noreply@lumenlingo.example"`
-- [ ] AC5: Both decoys are added server-side (they're CSS, no JS needed) and serve as additional honeypot layers
+- [x] AC1: The contact section container has a `::before` pseudo-element with `content: "contact [at] lumenlingo-support [dot] fake"` — a obviously fake but email-like string
+- [x] AC2: The pseudo-element is `position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0` — invisible to humans
+- [x] AC3: The decoy text uses `[at]` and `[dot]` patterns intentionally — some bots parse these into email addresses
+- [x] AC4: A second `::after` with `content: attr(data-contact)` pulls from a data attribute containing another decoy — `data-contact="noreply@lumenlingo.example"`
+- [x] AC5: Both decoys are added server-side (they're CSS, no JS needed) and serve as additional honeypot layers
 
 ### Tasks
 
-- [ ] T5.3.1: Add the `::before` and `::after` CSS rules to the contact section's class
-- [ ] T5.3.2: Add the `data-contact` attribute with the decoy value to the contact section wrapper
-- [ ] T5.3.3: Verify the decoy appears in Chrome DevTools "Computed" styles but not in the visible page
-- [ ] T5.3.4: Ensure screen readers do not read the pseudo-element content (they shouldn't, but verify)
+- [x] T5.3.1: Add the `::before` and `::after` CSS rules to the contact section's class
+- [x] T5.3.2: Add the `data-contact` attribute with the decoy value to the contact section wrapper
+- [x] T5.3.3: Verify the decoy appears in Chrome DevTools "Computed" styles but not in the visible page
+- [x] T5.3.4: Ensure screen readers do not read the pseudo-element content (they shouldn't, but verify)
 
 ---
 
@@ -643,29 +643,29 @@
 
 ### Acceptance Criteria
 
-- [ ] AC1: Test: page source (no JS) contains zero `@` followed by domain patterns → email not in SSR
-- [ ] AC2: Test: with JS enabled, initial DOM contains no email-like strings before interaction
-- [ ] AC3: Test: clicking and holding the reveal button for < 500ms does NOT reveal the email
-- [ ] AC4: Test: clicking and holding the reveal button for ≥ 1500ms reveals the email (with human-like mouse movement first)
-- [ ] AC5: Test: revealed email matches the expected address
-- [ ] AC6: Test: after 30s, the email is no longer in the DOM
-- [ ] AC7: Test: clicking Copy puts the correct email on the clipboard
-- [ ] AC8: Test: interacting with the honeypot blocks future reveals
-- [ ] AC9: Test: the `<noscript>` form renders when JS is disabled
-- [ ] AC10: All tests run in CI on every PR
+- [x] AC1: Test: page source (no JS) contains zero `@` followed by domain patterns → email not in SSR
+- [x] AC2: Test: with JS enabled, initial DOM contains no email-like strings before interaction
+- [x] AC3: Test: clicking and holding the reveal button for < 500ms does NOT reveal the email
+- [x] AC4: Test: clicking and holding the reveal button for ≥ 1500ms reveals the email (with human-like mouse movement first)
+- [x] AC5: Test: revealed email matches the expected address
+- [x] AC6: Test: after 30s, the email is no longer in the DOM
+- [x] AC7: Test: clicking Copy puts the correct email on the clipboard
+- [x] AC8: Test: interacting with the honeypot blocks future reveals
+- [x] AC9: Test: the `<noscript>` form renders when JS is disabled
+- [x] AC10: All tests run in CI on every PR
 
 ### Tasks
 
-- [ ] T5.4.1: Create `e2e/email-protection.spec.ts` with the test file skeleton
-- [ ] T5.4.2: Implement SSR no-email test (fetch page with `javaScriptEnabled: false`)
-- [ ] T5.4.3: Implement initial DOM no-email test
-- [ ] T5.4.4: Implement hold-too-short test (mousedown → 400ms → mouseup → assert no email)
-- [ ] T5.4.5: Implement successful reveal test (simulate mouse movements, then hold for 1600ms)
-- [ ] T5.4.6: Implement DOM sanitisation test (wait 31s after reveal → email gone)
-- [ ] T5.4.7: Implement clipboard copy test
-- [ ] T5.4.8: Implement honeypot block test (click honeypot → try reveal → blocked)
-- [ ] T5.4.9: Implement noscript fallback test
-- [ ] T5.4.10: Add the test file to CI pipeline (Playwright config already exists)
+- [x] T5.4.1: Create `e2e/email-protection.spec.ts` with the test file skeleton
+- [x] T5.4.2: Implement SSR no-email test (fetch page with `javaScriptEnabled: false`)
+- [x] T5.4.3: Implement initial DOM no-email test
+- [x] T5.4.4: Implement hold-too-short test (mousedown → 400ms → mouseup → assert no email)
+- [x] T5.4.5: Implement successful reveal test (simulate mouse movements, then hold for 1600ms)
+- [x] T5.4.6: Implement DOM sanitisation test (wait 31s after reveal → email gone)
+- [x] T5.4.7: Implement clipboard copy test
+- [x] T5.4.8: Implement honeypot block test (click honeypot → try reveal → blocked)
+- [x] T5.4.9: Implement noscript fallback test
+- [x] T5.4.10: Add the test file to CI pipeline (Playwright config already exists)
 
 ---
 

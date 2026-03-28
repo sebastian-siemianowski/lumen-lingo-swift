@@ -246,7 +246,11 @@ export function ContactSection() {
   const secondsRemaining = Math.ceil(timeRemaining / 1000);
 
   return (
-    <div ref={containerRef} className="relative overflow-hidden rounded-2xl border border-glass-border bg-surface-card/40 p-8 backdrop-blur-sm sm:p-10">
+    <div
+      ref={containerRef}
+      data-contact="noreply@lumenlingo.example"
+      className="relative overflow-hidden rounded-2xl border border-glass-border bg-surface-card/40 p-8 backdrop-blur-sm sm:p-10 before:pointer-events-none before:absolute before:left-0 before:top-0 before:h-px before:w-px before:overflow-hidden before:opacity-0 before:content-['contact_[at]_lumenlingo-support_[dot]_fake'] after:pointer-events-none after:absolute after:left-0 after:top-0 after:h-px after:w-px after:overflow-hidden after:opacity-0 after:content-[attr(data-contact)]"
+    >
       {/* Honeypot — looks like mailto: to bots, invisible to humans */}
       <EmailHoneypot />
 
