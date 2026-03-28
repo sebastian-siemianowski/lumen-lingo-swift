@@ -345,6 +345,74 @@ body {
   animation: float 6s ease-in-out infinite;
 }
 
+/* ── Premium device aurora halo ── */
+@keyframes device-aurora {
+  0%   { transform: rotate(0deg) scale(1); }
+  25%  { transform: rotate(90deg) scale(1.04); }
+  50%  { transform: rotate(180deg) scale(1); }
+  75%  { transform: rotate(270deg) scale(1.03); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.device-aurora {
+  animation: device-aurora 12s linear infinite;
+}
+
+@keyframes device-aurora-slow {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+.device-aurora-slow {
+  animation: device-aurora-slow 20s linear infinite;
+}
+
+/* ── Bezel shimmer sweep ── */
+@keyframes bezel-shimmer {
+  0%   { transform: translateX(-200%) rotate(25deg); }
+  100% { transform: translateX(200%) rotate(25deg); }
+}
+
+.bezel-shimmer {
+  animation: bezel-shimmer 4s ease-in-out infinite;
+}
+
+/* ── Pulsing edge glow ── */
+@keyframes edge-pulse {
+  0%, 100% { opacity: 0.3; filter: blur(20px); }
+  50%      { opacity: 0.7; filter: blur(30px); }
+}
+
+.edge-pulse {
+  animation: edge-pulse 3s ease-in-out infinite;
+}
+
+/* ── Gallery card highlight sweep ── */
+@keyframes card-highlight {
+  0%   { transform: translateX(-100%) skewX(-15deg); }
+  100% { transform: translateX(200%) skewX(-15deg); }
+}
+
+/* ── Screen light leak ── */
+@keyframes screen-breathe {
+  0%, 100% { opacity: 0.4; }
+  50%      { opacity: 0.8; }
+}
+
+.screen-breathe {
+  animation: screen-breathe 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .device-aurora,
+  .device-aurora-slow,
+  .bezel-shimmer,
+  .edge-pulse,
+  .screen-breathe {
+    animation: none;
+  }
+}
+
 /* ── Blog prose typography ── */
 .prose-lumenlingo {
   max-width: 720px;

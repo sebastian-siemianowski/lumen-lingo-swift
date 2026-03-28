@@ -321,19 +321,72 @@ function DeviceFrame({
       className="flex-shrink-0 cursor-grab select-none active:cursor-grabbing"
       style={{ width: CARD_WIDTH, scale, opacity }}
     >
-      {/* Glow ring for active item */}
-      <div
-        className={`relative rounded-[44px] transition-shadow duration-500 ${
-          isActive ? 'shadow-[0_0_60px_rgba(139,92,246,0.25),0_0_20px_rgba(6,182,212,0.1)]' : ''
-        }`}
-      >
-        {/* Device body — titanium-style frame with edge shimmer */}
-        <div className="overflow-hidden rounded-[44px] border-[3px] border-white/[0.14] bg-[#08080d] p-3 shadow-[0_25px_60px_rgba(0,0,0,0.5),0_0_1px_rgba(255,255,255,0.12),0_0_30px_rgba(139,92,246,0.06)]">
+      <div className="relative">
+        {/* ── Premium aurora halo — only shows on active card ── */}
+        <div
+          className={`pointer-events-none absolute -inset-16 -z-10 transition-opacity duration-700 ${
+            isActive ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          {/* Rotating conic aurora */}
+          <div
+            className="device-aurora absolute inset-0 rounded-full opacity-50 blur-[60px]"
+            style={{
+              background: 'conic-gradient(from 0deg, rgba(139,92,246,0.3), rgba(6,182,212,0.18), rgba(245,158,11,0.1), rgba(236,72,153,0.15), rgba(139,92,246,0.3))',
+            }}
+          />
+          {/* Pulsing violet core */}
+          <div
+            className="edge-pulse absolute inset-8 rounded-full"
+            style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.3) 0%, transparent 65%)' }}
+          />
+          {/* Warm bottom accent */}
+          <div
+            className="screen-breathe absolute bottom-0 left-1/4 h-1/2 w-3/4 rounded-full opacity-30 blur-[50px]"
+            style={{ background: 'radial-gradient(circle, rgba(6,182,212,0.2) 0%, transparent 70%)' }}
+          />
+        </div>
+
+        {/* Tight screen-bleed glow for active card */}
+        <div
+          className={`pointer-events-none absolute -inset-2 -z-10 rounded-[50px] transition-opacity duration-500 ${
+            isActive ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          <div
+            className="screen-breathe absolute inset-0 rounded-[50px] blur-[15px]"
+            style={{
+              background: 'linear-gradient(180deg, rgba(139,92,246,0.12) 0%, rgba(6,182,212,0.08) 50%, rgba(139,92,246,0.04) 100%)',
+            }}
+          />
+        </div>
+
+        {/* Device body — titanium-style frame with premium shadows */}
+        <div className={`relative z-0 overflow-hidden rounded-[44px] border-[3px] bg-[#08080d] p-3 transition-all duration-500 ${
+          isActive
+            ? 'border-white/[0.18] shadow-[0_25px_80px_rgba(0,0,0,0.6),0_0_1px_rgba(255,255,255,0.15),0_0_60px_rgba(139,92,246,0.15),0_0_100px_rgba(6,182,212,0.06),0_-8px_30px_rgba(139,92,246,0.08)]'
+            : 'border-white/[0.1] shadow-[0_25px_60px_rgba(0,0,0,0.5),0_0_1px_rgba(255,255,255,0.08),0_0_20px_rgba(139,92,246,0.03)]'
+        }`}>
           {/* Bezel highlight */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[50%] rounded-t-[44px] bg-gradient-to-b from-white/[0.06] to-transparent" />
-          {/* Side edge highlights for 3D depth */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-[1px] bg-gradient-to-b from-white/[0.05] via-white/[0.015] to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-[1px] bg-gradient-to-b from-white/[0.05] via-white/[0.015] to-transparent" />
+          <div className={`pointer-events-none absolute inset-x-0 top-0 z-10 h-[50%] rounded-t-[44px] bg-gradient-to-b transition-opacity duration-500 ${
+            isActive ? 'from-white/[0.1] to-transparent' : 'from-white/[0.05] to-transparent'
+          }`} />
+          {/* Animated bezel shimmer sweep — active only */}
+          {isActive && (
+            <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden rounded-[44px]">
+              <div
+                className="bezel-shimmer absolute -inset-y-full left-0 w-[50%] opacity-[0.06]"
+                style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)' }}
+              />
+            </div>
+          )}
+          {/* Side edge highlights — enhanced for active */}
+          <div className={`pointer-events-none absolute inset-y-0 left-0 z-10 w-[1px] bg-gradient-to-b transition-opacity duration-500 ${
+            isActive ? 'from-white/[0.1] via-violet/[0.06] to-transparent' : 'from-white/[0.04] via-white/[0.01] to-transparent'
+          }`} />
+          <div className={`pointer-events-none absolute inset-y-0 right-0 z-10 w-[1px] bg-gradient-to-b transition-opacity duration-500 ${
+            isActive ? 'from-white/[0.1] via-cyan/[0.06] to-transparent' : 'from-white/[0.04] via-white/[0.01] to-transparent'
+          }`} />
 
           {/* Dynamic Island */}
           <div className="absolute top-3 left-1/2 z-20 h-[28px] w-[100px] -translate-x-1/2 rounded-full bg-black shadow-[0_0_0_1px_rgba(255,255,255,0.05)]" />
@@ -341,7 +394,7 @@ function DeviceFrame({
           {/* Screen */}
           <div
             className="relative aspect-[9/19.5] overflow-hidden rounded-[36px] bg-surface"
-            style={{ boxShadow: 'inset 0 0 24px rgba(0,0,0,0.3), inset 0 1px 1px rgba(255,255,255,0.04)' }}
+            style={{ boxShadow: 'inset 0 0 30px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,0.06), inset 0 -1px 2px rgba(139,92,246,0.04)' }}
           >
             <div className={`absolute inset-0 bg-gradient-to-br ${screenshot.gradient}`} />
 
@@ -350,9 +403,13 @@ function DeviceFrame({
 
             <div className="relative flex h-full flex-col items-center justify-center gap-3 p-6 pt-14">
               <div className="relative">
-                {/* Soft icon halo */}
-                <div className="pointer-events-none absolute -inset-3 rounded-full bg-violet/10 blur-xl" />
-                <screenshot.icon size={48} className="relative text-foreground-secondary drop-shadow-[0_0_8px_rgba(139,92,246,0.3)]" aria-hidden />
+                {/* Soft icon halo — enhanced for active */}
+                <div className={`pointer-events-none absolute -inset-3 rounded-full blur-xl transition-all duration-500 ${
+                  isActive ? 'bg-violet/20 scale-125' : 'bg-violet/10'
+                }`} />
+                <screenshot.icon size={48} className={`relative text-foreground-secondary transition-all duration-500 ${
+                  isActive ? 'drop-shadow-[0_0_12px_rgba(139,92,246,0.5)]' : 'drop-shadow-[0_0_6px_rgba(139,92,246,0.2)]'
+                }`} aria-hidden />
               </div>
               <span className="font-display text-sm font-bold text-foreground drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]">
                 {screenshot.title}
@@ -361,11 +418,20 @@ function DeviceFrame({
               <GalleryScreenContent screenshotId={screenshot.id} />
             </div>
 
-            {/* Glass reflection overlay */}
+            {/* Glass reflection overlay — premium multi-layer */}
             <div
               className="pointer-events-none absolute inset-0 z-20"
               style={{
-                background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 35%, transparent 65%, rgba(255,255,255,0.015) 100%)',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.015) 20%, transparent 40%, transparent 60%, rgba(255,255,255,0.01) 80%, rgba(255,255,255,0.03) 100%)',
+              }}
+            />
+            {/* Color-tinted bottom reflection */}
+            <div
+              className={`pointer-events-none absolute inset-0 z-20 transition-opacity duration-500 ${
+                isActive ? 'opacity-100' : 'opacity-0'
+              }`}
+              style={{
+                background: 'linear-gradient(225deg, transparent 0%, transparent 65%, rgba(139,92,246,0.03) 85%, rgba(6,182,212,0.02) 100%)',
               }}
             />
 
@@ -375,6 +441,14 @@ function DeviceFrame({
             </div>
           </div>
         </div>
+
+        {/* Reflection pool — subtle light cast below the active device */}
+        <div
+          className={`pointer-events-none absolute -bottom-10 left-1/2 -z-10 h-6 w-[65%] -translate-x-1/2 rounded-full blur-[20px] transition-opacity duration-500 ${
+            isActive ? 'opacity-40' : 'opacity-0'
+          }`}
+          style={{ background: 'radial-gradient(ellipse, rgba(139,92,246,0.2) 0%, rgba(6,182,212,0.08) 50%, transparent 80%)' }}
+        />
       </div>
 
       {/* Caption */}
@@ -463,10 +537,10 @@ export function ScreenshotGallery() {
         </FadeIn>
       </Container>
 
-      {/* Gallery track — full width, overflow hidden */}
+      {/* Gallery track — full width, clip only horizontal overflow so glow isn't cut */}
       <div
         ref={containerRef}
-        className="relative overflow-hidden pt-10 focus-visible:rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet focus-visible:ring-offset-2"
+        className="relative overflow-x-clip overflow-y-visible pt-20 focus-visible:rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet focus-visible:ring-offset-2"
         tabIndex={0}
         role="region"
         aria-label="App screenshots"
@@ -516,7 +590,7 @@ export function ScreenshotGallery() {
             onClick={() => snapTo(i)}
             className={`h-2 rounded-full ${
               i === activeIndex
-                ? 'w-6 bg-violet shadow-[0_0_8px_rgba(139,92,246,0.4)]'
+                ? 'w-6 bg-violet shadow-[0_0_12px_rgba(139,92,246,0.6),0_0_4px_rgba(139,92,246,0.8)]'
                 : 'w-2 bg-foreground-muted/30'
             }`}
             transition={{ type: 'spring', stiffness: 300, damping: 25 }}

@@ -658,35 +658,80 @@ export function IPhoneMockup() {
   return (
     <div className={prefersReduced ? '' : 'animate-float'}>
       <div className="relative mx-auto w-[280px] sm:w-[300px]">
-        {/* Soft organic ambient glow behind device */}
-        <div className="pointer-events-none absolute -inset-16">
-          {/* Base radial glow — large, very soft */}
-          <motion.div
-            className="absolute inset-0 rounded-full bg-violet/8 blur-[100px]"
-            animate={{ opacity: [0.3, 0.5, 0.3], scale: [0.95, 1.02, 0.95] }}
-            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+        {/* ── Premium aurora halo system ── */}
+        <div className="pointer-events-none absolute -inset-24 sm:-inset-28">
+          {/* Layer 1: Rotating conic aurora — the star of the show */}
+          <div
+            className="device-aurora absolute inset-0 rounded-full opacity-60 blur-[80px]"
+            style={{
+              background: 'conic-gradient(from 0deg, rgba(139,92,246,0.35), rgba(6,182,212,0.2), rgba(245,158,11,0.12), rgba(236,72,153,0.18), rgba(139,92,246,0.35))',
+            }}
           />
-          {/* Mid-layer — offset for asymmetry */}
-          <motion.div
-            className="absolute inset-6 translate-x-2 rounded-full bg-cyan/5 blur-[90px]"
-            animate={{ opacity: [0.15, 0.3, 0.15], scale: [1, 1.04, 1] }}
-            transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
+          {/* Layer 2: Counter-rotating secondary aurora — creates depth */}
+          <div
+            className="device-aurora-slow absolute inset-4 rounded-full opacity-40 blur-[70px]"
+            style={{
+              background: 'conic-gradient(from 180deg, rgba(6,182,212,0.3), rgba(139,92,246,0.15), rgba(245,158,11,0.15), rgba(6,182,212,0.3))',
+            }}
           />
-          {/* Warm highlight — bottom accent for depth */}
+          {/* Layer 3: Pulsing violet core */}
           <motion.div
-            className="absolute bottom-4 left-1/4 h-1/2 w-3/4 rounded-full bg-amber/3 blur-[80px]"
-            animate={{ opacity: [0.1, 0.2, 0.1] }}
-            transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 3 }}
+            className="absolute inset-12 rounded-full blur-[60px]"
+            style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.4) 0%, rgba(139,92,246,0) 70%)' }}
+            animate={{ opacity: [0.5, 0.8, 0.5], scale: [0.95, 1.05, 0.95] }}
+            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+          />
+          {/* Layer 4: Cyan accent — top-right bloom */}
+          <motion.div
+            className="absolute -top-4 -right-4 h-2/3 w-2/3 rounded-full blur-[90px]"
+            style={{ background: 'radial-gradient(circle, rgba(6,182,212,0.25) 0%, transparent 65%)' }}
+            animate={{ opacity: [0.3, 0.6, 0.3], x: [-8, 8, -8], y: [-4, 4, -4] }}
+            transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+          />
+          {/* Layer 5: Warm underlight — bottom accent for depth */}
+          <motion.div
+            className="absolute bottom-0 left-1/4 h-1/2 w-3/4 rounded-full blur-[70px]"
+            style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.2) 0%, rgba(236,72,153,0.1) 50%, transparent 70%)' }}
+            animate={{ opacity: [0.15, 0.35, 0.15] }}
+            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+          />
+          {/* Layer 6: Light rays — subtle directional streaks */}
+          <div
+            className="screen-breathe absolute inset-8 rounded-full opacity-25 blur-[50px]"
+            style={{
+              background: 'linear-gradient(135deg, rgba(139,92,246,0.35) 0%, transparent 30%, transparent 70%, rgba(6,182,212,0.2) 100%)',
+            }}
+          />
+        </div>
+
+        {/* ── Tight screen-bleed glow — makes it look like light is leaking from the screen ── */}
+        <div className="pointer-events-none absolute -inset-3 z-[1]">
+          <motion.div
+            className="absolute inset-0 rounded-[52px] blur-[20px]"
+            style={{
+              background: 'linear-gradient(180deg, rgba(139,92,246,0.15) 0%, rgba(6,182,212,0.1) 50%, rgba(139,92,246,0.05) 100%)',
+            }}
+            animate={{ opacity: [0.6, 1, 0.6] }}
+            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
           />
         </div>
 
         {/* Device body — titanium-style frame with edge shimmer */}
-        <div className="relative overflow-hidden rounded-[44px] border-[3px] border-white/[0.14] bg-[#08080d] p-3 shadow-[0_20px_60px_rgba(0,0,0,0.5),0_0_1px_rgba(255,255,255,0.1),0_0_60px_rgba(139,92,246,0.06)]">
+        <div className="relative overflow-hidden rounded-[44px] border-[3px] border-white/[0.16] bg-[#08080d] p-3 shadow-[0_20px_80px_rgba(0,0,0,0.6),0_0_1px_rgba(255,255,255,0.15),0_0_80px_rgba(139,92,246,0.12),0_0_120px_rgba(6,182,212,0.06),0_-10px_40px_rgba(139,92,246,0.08)]">
           {/* Bezel highlight — top specular reflection */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[60%] rounded-t-[44px] bg-gradient-to-b from-white/[0.08] to-transparent" />
-          {/* Side edge highlights for 3D depth */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-[1px] bg-gradient-to-b from-white/[0.06] via-white/[0.02] to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-[1px] bg-gradient-to-b from-white/[0.06] via-white/[0.02] to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-[60%] rounded-t-[44px] bg-gradient-to-b from-white/[0.1] to-transparent" />
+          {/* Animated bezel shimmer sweep */}
+          <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden rounded-[44px]">
+            <div
+              className="bezel-shimmer absolute -inset-y-full left-0 w-[60%] opacity-[0.07]"
+              style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)' }}
+            />
+          </div>
+          {/* Side edge highlights for 3D depth — enhanced */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-[1px] bg-gradient-to-b from-white/[0.12] via-violet/[0.06] to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-[1px] bg-gradient-to-b from-white/[0.12] via-cyan/[0.06] to-transparent" />
+          {/* Bottom edge warm highlight */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-[1px] bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
 
           {/* Dynamic Island */}
           <div className="absolute top-3 left-1/2 z-20 h-[28px] w-[100px] -translate-x-1/2 rounded-full bg-black shadow-[0_0_0_1px_rgba(255,255,255,0.05)]" />
@@ -697,7 +742,7 @@ export function IPhoneMockup() {
           {/* Screen with depth shadow and glass effect */}
           <div
             className="relative aspect-[9/19.5] overflow-hidden rounded-[36px] bg-surface cursor-pointer"
-            style={{ boxShadow: 'inset 0 0 30px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,0.05)' }}
+            style={{ boxShadow: 'inset 0 0 40px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.08), inset 0 -1px 2px rgba(139,92,246,0.06)' }}
           >
             {/* Screen content with directional slide transitions */}
             <AnimatePresence mode="wait" custom={direction}>
@@ -750,11 +795,18 @@ export function IPhoneMockup() {
               </motion.div>
             </AnimatePresence>
 
-            {/* Glass reflection overlay — diagonal light streak */}
+            {/* Glass reflection overlay — premium multi-layer */}
             <div
               className="pointer-events-none absolute inset-0 z-20"
               style={{
-                background: 'linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 40%, transparent 60%, rgba(255,255,255,0.02) 100%)',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 20%, transparent 40%, transparent 55%, rgba(255,255,255,0.015) 80%, rgba(255,255,255,0.04) 100%)',
+              }}
+            />
+            {/* Secondary diagonal highlight — subtle glass catch */}
+            <div
+              className="pointer-events-none absolute inset-0 z-20 opacity-50"
+              style={{
+                background: 'linear-gradient(225deg, transparent 0%, transparent 60%, rgba(139,92,246,0.04) 80%, rgba(6,182,212,0.03) 100%)',
               }}
             />
 
@@ -820,6 +872,12 @@ export function IPhoneMockup() {
           </div>
         </div>
 
+        {/* Reflection pool — subtle light cast below the device */}
+        <div
+          className="pointer-events-none absolute -bottom-12 left-1/2 h-8 w-[70%] -translate-x-1/2 rounded-full opacity-40 blur-[25px]"
+          style={{ background: 'radial-gradient(ellipse, rgba(139,92,246,0.25) 0%, rgba(6,182,212,0.1) 50%, transparent 80%)' }}
+        />
+
         {/* External dot indicators with glow */}
         <div className="mt-6 flex justify-center gap-2">
           {TABS.map((_, i) => (
@@ -828,7 +886,7 @@ export function IPhoneMockup() {
               onClick={() => goTo(i)}
               className={`h-1.5 rounded-full transition-all duration-300 ${
                 i === active
-                  ? 'w-6 bg-violet shadow-[0_0_8px_rgba(139,92,246,0.4)]'
+                  ? 'w-6 bg-violet shadow-[0_0_12px_rgba(139,92,246,0.6),0_0_4px_rgba(139,92,246,0.8)]'
                   : 'w-1.5 bg-foreground-muted/30 hover:bg-foreground-muted/50'
               }`}
               aria-label={`View screenshot ${i + 1}`}
