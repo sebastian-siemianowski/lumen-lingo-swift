@@ -206,9 +206,9 @@ export function DownloadShowcase() {
               <div className="absolute top-3 left-1/2 z-20 h-[22px] w-[86px] -translate-x-1/2 rounded-full bg-black shadow-[inset_0_0_4px_rgba(0,0,0,0.8)]" />
 
               {/* Screen area */}
-              <div className="mx-[2px] mb-[2px] mt-[2px] overflow-hidden rounded-[42px] bg-background" style={{ aspectRatio: '9/19.5' }}>
+              <div className="mx-[2px] mb-[2px] mt-[2px] flex flex-col overflow-hidden rounded-[42px] bg-background" style={{ aspectRatio: '9/19.5' }}>
                 {/* Status bar */}
-                <div className="flex items-center justify-between px-6 pt-4 pb-2">
+                <div className="flex shrink-0 items-center justify-between px-6 pt-4 pb-2">
                   <span className="text-[9px] font-semibold text-foreground-muted">9:41</span>
                   <div className="flex items-center gap-1">
                     <div className="h-1.5 w-3 rounded-[1px] border border-foreground-muted/40" aria-hidden>
@@ -218,7 +218,7 @@ export function DownloadShowcase() {
                 </div>
 
                 {/* Screen content with AnimatePresence */}
-                <div className="relative" style={{ height: 420 }}>
+                <div className="relative min-h-0 flex-1">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={active}
@@ -234,7 +234,7 @@ export function DownloadShowcase() {
                 </div>
 
                 {/* Home indicator */}
-                <div className="flex justify-center pb-2 pt-1">
+                <div className="flex shrink-0 justify-center pb-2 pt-1">
                   <div className="h-1 w-28 rounded-full bg-white/15" />
                 </div>
               </div>
