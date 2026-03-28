@@ -23,7 +23,7 @@ export function AppStoreBadge({ className, size = 'md', location = 'unknown' }: 
   const earlyAccessLive = useFeatureFlag('EARLY_ACCESS_LIVE');
 
   if (!appStoreLive) {
-    const comingSoonHref = earlyAccessLive ? '/early-access' : '/launching-soon';
+    const comingSoonHref = earlyAccessLive ? '/share' : '/launching-soon';
     return (
       <a
         href={comingSoonHref}

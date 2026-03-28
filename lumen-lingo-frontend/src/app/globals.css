@@ -409,12 +409,24 @@ body {
   50%      { opacity: 1; transform: translateX(60%); }
 }
 
+/* ── Early Access gradient headline shimmer ── */
+@keyframes ea-gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.ea-gradient-shift {
+  animation: ea-gradient-shift 6s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .device-aurora,
   .device-aurora-slow,
   .bezel-shimmer,
   .edge-pulse,
   .screen-breathe,
+  .ea-gradient-shift,
   [style*="footer-shimmer"] {
     animation: none !important;
   }

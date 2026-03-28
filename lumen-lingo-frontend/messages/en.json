@@ -7,6 +7,7 @@
   "Nav": {
     "features": "Features",
     "pricing": "Pricing",
+    "share": "Share",
     "blog": "Blog",
     "about": "About",
     "download": "Launching Soon",
@@ -296,10 +297,10 @@
     "heading": "Language Learning, Reimagined",
     "description": "Multi-sensory immersion crafted with care. Beautiful design, ambient soundscapes, and methods grounded in cognitive science.",
     "shareHeading": "Know someone who'd love this?",
-    "shareDescription": "Share LumenLingo with a fellow language lover.",
+    "shareDescription": "Share with a fellow language lover — they'll thank you.",
     "copyLink": "Copy Link",
     "copied": "Copied!",
-    "shareVia": "Share via:",
+    "shareVia": "or share via",
     "shareText": "I just discovered LumenLingo — a beautiful language learning app with multi-sensory immersion, ambient soundscapes, and science-backed methods. Check it out: {url}",
     "handcraftedUI": "Handcrafted UI",
     "privacyFirst": "Privacy First",
@@ -309,9 +310,9 @@
     "email": "Email",
     "emailSubject": "Discover LumenLingo",
     "meta": {
-      "title": "Early Access — Language Learning, Reimagined",
+      "title": "Share LumenLingo — Language Learning, Reimagined",
       "description": "Discover LumenLingo — multi-sensory language learning with ambient soundscapes, science-backed methods, and a beautifully handcrafted iOS experience.",
-      "ogTitle": "Early Access — LumenLingo",
+      "ogTitle": "Share LumenLingo",
       "ogDescription": "Discover LumenLingo — multi-sensory language learning with ambient soundscapes, science-backed methods, and a beautifully handcrafted iOS experience."
     }
   },
@@ -379,7 +380,7 @@
     "links": {
       "features": "Features",
       "pricing": "Pricing",
-      "earlyAccess": "Early Access",
+      "share": "Share",
       "download": "Launching Soon",
       "about": "About",
       "blog": "Blog",

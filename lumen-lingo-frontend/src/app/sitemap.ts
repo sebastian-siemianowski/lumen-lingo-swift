@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/download', changeFrequency: 'monthly' as const, priority: 0.9 },
     { path: '/languages', changeFrequency: 'monthly' as const, priority: 0.7 },
     ...(getFeatureFlag('EARLY_ACCESS_LIVE')
-      ? [{ path: '/early-access', changeFrequency: 'monthly' as const, priority: 0.6 }]
+      ? [{ path: '/share', changeFrequency: 'monthly' as const, priority: 0.6 }]
       : []),
     { path: '/demo', changeFrequency: 'monthly' as const, priority: 0.7 },
   ];

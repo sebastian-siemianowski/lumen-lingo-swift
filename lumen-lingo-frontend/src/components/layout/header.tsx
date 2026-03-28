@@ -14,6 +14,7 @@ import { LanguageSwitcher } from './language-switcher';
 const navLinks = [
   { href: '/features', key: 'features' },
   { href: '/pricing', key: 'pricing' },
+  { href: '/share', key: 'share' },
   { href: '/blog', key: 'blog' },
   { href: '/about', key: 'about' },
 ] as const;

@@ -17,11 +17,11 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
-    alternates: buildAlternates('/early-access', locale),
+    alternates: buildAlternates('/share', locale),
     openGraph: {
       title: t('ogTitle'),
       description: t('ogDescription'),
-      url: localizedUrl('/early-access', locale),
+      url: localizedUrl('/share', locale),
       siteName: 'LumenLingo',
       locale: getOgLocale(locale),
       alternateLocales: getOgAlternateLocales(locale),
@@ -35,7 +35,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function EarlyAccessPage({
+export default async function SharePage({
   params,
 }: {
   params: Promise<{ locale: string }>;

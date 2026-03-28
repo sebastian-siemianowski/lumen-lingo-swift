@@ -16,7 +16,7 @@ const footerSections = [
     links: [
       { href: '/features', key: 'features' },
       { href: '/pricing', key: 'pricing' },
-      { href: '/early-access', key: 'earlyAccess', flag: 'EARLY_ACCESS_LIVE' as FeatureFlagName },
+      { href: '/share', key: 'share', flag: 'EARLY_ACCESS_LIVE' as FeatureFlagName },
       { href: '/download', key: 'download' },
     ],
   },
@@ -175,7 +175,7 @@ export function Footer() {
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 {/* App Store badge */}
                 <a
-                  href={appStoreLive ? getAppStoreUrl('footer') : (earlyAccessLive ? '/early-access' : '/launching-soon')}
+                  href={appStoreLive ? getAppStoreUrl('footer') : (earlyAccessLive ? '/share' : '/launching-soon')}
                   target={appStoreLive ? '_blank' : undefined}
                   rel={appStoreLive ? 'noopener noreferrer' : undefined}
                   className="group inline-flex items-center gap-2.5 rounded-xl border border-white/[0.08] bg-white/[0.04] px-5 py-3 text-sm font-medium text-foreground transition-all duration-300 hover:border-white/[0.14] hover:bg-white/[0.07] hover:shadow-[0_0_20px_rgba(139,92,246,0.08)]"

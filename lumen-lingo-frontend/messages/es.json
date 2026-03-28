@@ -7,6 +7,7 @@
   "Nav": {
     "features": "Funciones",
     "pricing": "Precios",
+    "share": "Compartir",
     "blog": "Blog",
     "about": "Nosotros",
     "download": "Launching Soon",
@@ -405,7 +406,7 @@
     "links": {
       "features": "Funciones",
       "pricing": "Precios",
-      "earlyAccess": "Acceso Anticipado",
+      "share": "Compartir",
       "download": "Launching Soon",
       "about": "Nosotros",
       "blog": "Blog",
