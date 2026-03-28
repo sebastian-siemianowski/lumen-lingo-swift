@@ -109,7 +109,7 @@ function SiteSearch() {
     { href: '/privacy', label: 'Privacy Policy', keywords: 'data privacy gdpr' },
     { href: '/terms', label: 'Terms of Service', keywords: 'legal terms conditions' },
     ...(getFeatureFlag('EARLY_ACCESS_LIVE')
-      ? [{ href: '/early-access', label: 'Early Access', keywords: 'waitlist beta signup' }]
+      ? [{ href: '/early-access', label: 'Early Access', keywords: 'early access share discover' }]
       : []),
     { href: '/launching-soon', label: 'Launching Soon', keywords: 'coming soon launch app store' },
   ];

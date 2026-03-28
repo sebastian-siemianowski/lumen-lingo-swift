@@ -33,7 +33,7 @@ export function AppStoreBadge({ className, size = 'md', location = 'unknown' }: 
           sizes[size],
           className,
         )}
-        aria-label="Coming soon to the App Store — join the waitlist"
+        aria-label="Coming soon to the App Store"
       >
         {/* Pulsing violet border glow */}
         <span
