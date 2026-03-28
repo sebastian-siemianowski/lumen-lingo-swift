@@ -27,54 +27,40 @@ const T = {
   trust:     1.5,
 } as const;
 
-const FEATURES = [
+/* Feature card visual types */
+type FeatureVisual = 'soundscape' | 'orbs' | 'tiers';
+
+const FEATURES: {
+  visual: FeatureVisual;
+  accentFrom: string;
+  accentTo: string;
+  glow: string;
+  label: string;
+  sub: string;
+}[] = [
   {
-    gradient: 'from-violet/20 to-violet/5',
-    glow: 'rgba(139,92,246,0.35)',
-    iconGlow: 'shadow-[0_0_24px_rgba(139,92,246,0.4)]',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364V3" />
-      </svg>
-    ),
-    label: '9 Languages',
-    sub: '25+ learning pairs',
+    visual: 'soundscape',
+    accentFrom: 'rgba(6,182,212,0.6)',
+    accentTo: 'rgba(139,92,246,0.4)',
+    glow: 'rgba(6,182,212,0.25)',
+    label: '12 Ambient Soundscapes',
+    sub: 'Paris Café, Japanese Bamboo Forest, Deep Space Drift, Dominican Beach — immersive audio scenes crafted to deepen focus while you learn.',
   },
   {
-    gradient: 'from-cyan/20 to-cyan/5',
-    glow: 'rgba(6,182,212,0.35)',
-    iconGlow: 'shadow-[0_0_24px_rgba(6,182,212,0.4)]',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
-      </svg>
-    ),
-    label: '12 Soundscapes',
-    sub: 'Ambient immersion',
-  },
-  {
-    gradient: 'from-amber/20 to-amber/5',
-    glow: 'rgba(245,158,11,0.35)',
-    iconGlow: 'shadow-[0_0_24px_rgba(245,158,11,0.4)]',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
-      </svg>
-    ),
-    label: 'Science-Backed',
-    sub: 'Cognitive research',
-  },
-  {
-    gradient: 'from-violet/15 via-cyan/10 to-violet/5',
+    visual: 'orbs',
+    accentFrom: 'rgba(139,92,246,0.6)',
+    accentTo: 'rgba(245,158,11,0.3)',
     glow: 'rgba(139,92,246,0.25)',
-    iconGlow: 'shadow-[0_0_24px_rgba(139,92,246,0.3)]',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-      </svg>
-    ),
-    label: 'iOS Native',
-    sub: 'Built with SwiftUI',
+    label: '18 Visual Backgrounds',
+    sub: '6 Breathing Orbs, 6 Nebula Drift scenes rendered on the GPU, and 6 Quantum Flow particle animations — living visuals that calm the mind.',
+  },
+  {
+    visual: 'tiers',
+    accentFrom: 'rgba(245,158,11,0.5)',
+    accentTo: 'rgba(139,92,246,0.4)',
+    glow: 'rgba(245,158,11,0.20)',
+    label: '4 Membership Tiers',
+    sub: 'Starter is free with 3 language pairs. Pro unlocks soundscapes and offline mode. Elite adds 25 languages and Nebula Drift. Royal gives you everything.',
   },
 ];
 
@@ -123,7 +109,6 @@ const WORDS_GRADIENT = ['Reimagined'];
 export function EarlyAccessHero() {
   const [copied, setCopied] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
-  const [hoveredFeature, setHoveredFeature] = useState<number | null>(null);
   const copyTimeoutRef = useRef<ReturnType<typeof setTimeout>>();
   const confettiTimeoutRef = useRef<ReturnType<typeof setTimeout>>();
 
@@ -379,53 +364,185 @@ export function EarlyAccessHero() {
               </div>
             </motion.div>
 
-            {/* ─────────── Feature cards — glass morphism with glow ─────────── */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: T.features, duration: 0.3 }}
-              className="mx-auto mt-14 grid w-full max-w-2xl grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-5"
-            >
+            {/* ─────────── Feature cards — Apple-level showcase ─────────── */}
+            <div className="mx-auto mt-20 flex w-full max-w-4xl flex-col gap-5">
               {FEATURES.map((f, i) => (
                 <motion.div
                   key={f.label}
-                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                  initial={{ opacity: 0, y: 30, scale: 0.97 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
-                  transition={{ ...spring.smooth, delay: T.features + i * T.featureI }}
-                  whileHover={{ y: -6, scale: 1.04 }}
-                  onHoverStart={() => setHoveredFeature(i)}
-                  onHoverEnd={() => setHoveredFeature(null)}
-                  className="group relative flex flex-col items-center gap-3 overflow-hidden rounded-2xl border border-glass-border/40 bg-white/[0.025] p-5 backdrop-blur-sm transition-colors duration-500 hover:border-glass-border hover:bg-white/[0.05]"
+                  transition={{ ...spring.smooth, delay: T.features + i * 0.12 }}
+                  className="group relative overflow-hidden rounded-3xl border border-glass-border/30 bg-white/[0.02] backdrop-blur-xl"
                 >
-                  {/* Ambient glow behind card on hover */}
+                  {/* Ambient glow — bleeds outward on hover */}
                   <div
-                    className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-700 group-hover:opacity-100"
+                    className="pointer-events-none absolute -inset-1 rounded-3xl opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-100"
+                    aria-hidden="true"
                     style={{
-                      background: `radial-gradient(ellipse at 50% 30%, ${f.glow} 0%, transparent 70%)`,
+                      background: `radial-gradient(ellipse at 50% 50%, ${f.glow}, transparent 70%)`,
                     }}
                   />
 
-                  {/* Icon container with glow ring */}
-                  <div className={`relative flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${f.gradient} text-foreground/80 transition-all duration-500 group-hover:text-foreground group-hover:${f.iconGlow}`}>
-                    {f.icon}
+                  {/* Top accent line — gradient shimmer */}
+                  <div
+                    className="absolute inset-x-0 top-0 h-px"
+                    style={{
+                      background: `linear-gradient(90deg, transparent 10%, ${f.accentFrom} 50%, transparent 90%)`,
+                    }}
+                  />
+
+                  <div className="relative flex flex-col items-center gap-6 px-6 py-10 sm:flex-row sm:gap-10 sm:px-10 sm:py-12">
+                    {/* Visual preview area */}
+                    <div className="relative flex h-28 w-28 shrink-0 items-center justify-center sm:h-32 sm:w-32">
+                      {/* Outer glow ring */}
+                      <div
+                        className="absolute inset-0 rounded-full opacity-40 blur-xl transition-opacity duration-700 group-hover:opacity-70"
+                        style={{
+                          background: `radial-gradient(circle, ${f.accentFrom}, transparent 70%)`,
+                        }}
+                      />
+
+                      {/* Visual element per card type */}
+                      {f.visual === 'soundscape' && (
+                        <div className="relative flex h-full w-full items-end justify-center gap-[3px] pb-6">
+                          {[0.4, 0.7, 1, 0.85, 0.55, 0.95, 0.6, 0.8, 0.45, 0.7, 0.5, 0.9].map((h, j) => (
+                            <motion.div
+                              key={j}
+                              className="w-[3px] rounded-full sm:w-1"
+                              style={{
+                                background: `linear-gradient(to top, ${f.accentFrom}, ${f.accentTo})`,
+                              }}
+                              initial={{ height: '15%' }}
+                              animate={{
+                                height: [`${15 + h * 50}%`, `${15 + h * 20}%`, `${15 + h * 60}%`, `${15 + h * 30}%`, `${15 + h * 50}%`],
+                              }}
+                              transition={{
+                                duration: 2.5 + j * 0.15,
+                                repeat: Infinity,
+                                ease: 'easeInOut',
+                                delay: j * 0.1,
+                              }}
+                            />
+                          ))}
+                        </div>
+                      )}
+
+                      {f.visual === 'orbs' && (
+                        <div className="relative h-full w-full">
+                          {/* Primary breathing orb */}
+                          <motion.div
+                            className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full sm:h-20 sm:w-20"
+                            style={{
+                              background: `radial-gradient(circle at 35% 35%, ${f.accentFrom}, ${f.accentTo} 70%, transparent)`,
+                            }}
+                            animate={{
+                              scale: [1, 1.15, 1],
+                              opacity: [0.7, 0.9, 0.7],
+                            }}
+                            transition={{
+                              duration: 4,
+                              repeat: Infinity,
+                              ease: 'easeInOut',
+                            }}
+                          />
+                          {/* Secondary orb — offset, delayed */}
+                          <motion.div
+                            className="absolute left-[60%] top-[35%] h-8 w-8 rounded-full sm:h-10 sm:w-10"
+                            style={{
+                              background: `radial-gradient(circle at 40% 40%, rgba(6,182,212,0.5), transparent 70%)`,
+                            }}
+                            animate={{
+                              scale: [1, 1.25, 1],
+                              opacity: [0.5, 0.8, 0.5],
+                              x: [0, 4, 0],
+                              y: [0, -3, 0],
+                            }}
+                            transition={{
+                              duration: 3.5,
+                              repeat: Infinity,
+                              ease: 'easeInOut',
+                              delay: 0.8,
+                            }}
+                          />
+                          {/* Tertiary accent dot */}
+                          <motion.div
+                            className="absolute left-[28%] top-[62%] h-5 w-5 rounded-full sm:h-6 sm:w-6"
+                            style={{
+                              background: `radial-gradient(circle at 40% 40%, rgba(245,158,11,0.4), transparent 70%)`,
+                            }}
+                            animate={{
+                              scale: [1, 1.3, 1],
+                              opacity: [0.4, 0.7, 0.4],
+                            }}
+                            transition={{
+                              duration: 3,
+                              repeat: Infinity,
+                              ease: 'easeInOut',
+                              delay: 1.4,
+                            }}
+                          />
+                        </div>
+                      )}
+
+                      {f.visual === 'tiers' && (
+                        <div className="relative flex h-full w-full flex-col items-center justify-center gap-2">
+                          {/* Three tier bars — progressively wider and more luminous */}
+                          {[
+                            { w: 'w-10 sm:w-12', opacity: 0.35, label: 'Starter', delay: 0 },
+                            { w: 'w-14 sm:w-16', opacity: 0.55, label: 'Pro', delay: 0.08 },
+                            { w: 'w-18 sm:w-20', opacity: 0.75, label: 'Elite', delay: 0.16 },
+                            { w: 'w-22 sm:w-26', opacity: 1, label: 'Royal', delay: 0.24 },
+                          ].map((tier, j) => (
+                            <motion.div
+                              key={tier.label}
+                              className={`${tier.w} relative h-6 overflow-hidden rounded-lg sm:h-7`}
+                              initial={{ opacity: 0, x: -10 }}
+                              animate={{ opacity: tier.opacity, x: 0 }}
+                              transition={{ ...spring.smooth, delay: T.features + i * 0.12 + tier.delay + 0.3 }}
+                            >
+                              <div
+                                className="absolute inset-0 rounded-lg"
+                                style={{
+                                  background: `linear-gradient(90deg, ${f.accentFrom}, ${f.accentTo})`,
+                                }}
+                              />
+                              <span className="relative z-10 flex h-full items-center justify-center text-[10px] font-semibold tracking-wider text-white/90 uppercase">
+                                {tier.label}
+                              </span>
+                            </motion.div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Text content */}
+                    <div className="relative text-center sm:text-left">
+                      <h3 className="font-display text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
+                        {f.label}
+                      </h3>
+                      <p className="mt-2 max-w-sm text-sm leading-relaxed text-foreground/50 transition-colors duration-500 group-hover:text-foreground/70 sm:text-[15px]">
+                        {f.sub}
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="relative text-center">
-                    <span className="block text-sm font-semibold text-foreground/90">{f.label}</span>
-                    <span className="mt-0.5 block text-[11px] tracking-wide text-foreground-muted/50 transition-colors duration-500 group-hover:text-foreground-muted/70">
-                      {f.sub}
-                    </span>
-                  </div>
+                  {/* Bottom edge highlight on hover */}
+                  <div
+                    className="absolute inset-x-0 bottom-0 h-px opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                    style={{
+                      background: `linear-gradient(90deg, transparent 20%, ${f.accentFrom} 50%, transparent 80%)`,
+                    }}
+                  />
                 </motion.div>
               ))}
-            </motion.div>
+            </div>
 
             {/* ─────────── CTA: App Store badge ─────────── */}
             <motion.div
               initial={{ opacity: 0, y: 20, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ ...spring.smooth, delay: T.cta }}
-              className="mt-14 flex justify-center"
+              className="mt-16 flex justify-center"
             >
               <AppStoreBadge location="share_page" size="lg" />
             </motion.div>
