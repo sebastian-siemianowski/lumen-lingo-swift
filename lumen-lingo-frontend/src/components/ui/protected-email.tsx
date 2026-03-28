@@ -437,15 +437,7 @@ export function ProtectedEmail({
             )}
 
             {holding ? (
-              <span>
-                Keep holding
-                <span
-                  className="inline-block transition-all duration-150"
-                  style={{ opacity: 0.5 + progress * 0.5 }}
-                >
-                  … {Math.round(progress * 100)}%
-                </span>
-              </span>
+              <span>Keep holding…</span>
             ) : isDisabled ? (
               <span>
                 Almost ready
