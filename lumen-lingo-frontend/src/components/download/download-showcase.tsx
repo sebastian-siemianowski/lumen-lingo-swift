@@ -87,18 +87,18 @@ function PracticeScreen() {
 
 function SoundscapeScreen() {
   return (
-    <div className="flex h-full flex-col items-center justify-center gap-5 bg-gradient-to-br from-amber/10 via-background to-violet/10 p-5">
-      <p className="text-[10px] font-medium text-amber">NOW PLAYING</p>
+    <div className="flex h-full flex-col items-center justify-center gap-5 bg-gradient-to-br from-violet/15 via-background to-cyan/10 p-5">
+      <p className="text-[10px] font-medium text-violet">NOW PLAYING</p>
       <div className="text-center">
-        <p className="font-display text-sm font-bold text-foreground">🌊 Ocean Waves</p>
-        <p className="text-[10px] text-foreground-muted">Deep focus ambient</p>
+        <p className="font-display text-sm font-bold text-foreground">✦ Deep Space Drift</p>
+        <p className="text-[10px] text-foreground-muted">Atmospheric · Cosmic ambient</p>
       </div>
       {/* Equalizer bars */}
       <div className="flex items-end gap-1">
         {[40, 65, 50, 80, 35, 70, 55, 45, 75, 60, 40, 55].map((h, i) => (
           <motion.div
             key={i}
-            className="w-1.5 rounded-full bg-gradient-to-t from-amber/60 to-amber"
+            className="w-1.5 rounded-full bg-gradient-to-t from-violet/60 to-cyan"
             animate={{ height: [h * 0.4, h * 0.8, h * 0.4] }}
             transition={{ duration: 1 + (i % 3) * 0.3, repeat: Infinity, ease: 'easeInOut', delay: i * 0.1 }}
             style={{ height: h * 0.5 }}
@@ -108,8 +108,8 @@ function SoundscapeScreen() {
       {/* Play controls */}
       <div className="flex items-center gap-4">
         <svg className="h-4 w-4 text-foreground-muted" viewBox="0 0 24 24" fill="currentColor"><path d="M19 12L5 21V3l14 9z" /></svg>
-        <div className="flex h-10 w-10 items-center justify-center rounded-full border border-amber/30 bg-amber/10">
-          <svg className="h-5 w-5 text-amber" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z" /></svg>
+        <div className="flex h-10 w-10 items-center justify-center rounded-full border border-violet/30 bg-violet/10">
+          <svg className="h-5 w-5 text-violet" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z" /></svg>
         </div>
         <svg className="h-4 w-4 text-foreground-muted" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12l14-9v18L5 12z" /></svg>
       </div>
@@ -117,7 +117,7 @@ function SoundscapeScreen() {
       <div className="flex w-full items-center gap-2 px-2">
         <svg className="h-3 w-3 text-foreground-muted" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3z" /></svg>
         <div className="h-1 flex-1 overflow-hidden rounded-full bg-glass-border">
-          <div className="h-full w-3/4 rounded-full bg-amber/50" />
+          <div className="h-full w-3/4 rounded-full bg-violet/50" />
         </div>
       </div>
     </div>
@@ -200,13 +200,13 @@ export function DownloadShowcase() {
               filter: 'blur(30px)',
             }} />
 
-            {/* Device frame */}
-            <div className="relative overflow-hidden rounded-[44px] border-[3px] border-white/[0.08] bg-black shadow-[0_0_80px_rgba(139,92,246,0.12),_0_20px_60px_rgba(0,0,0,0.5)]" style={{ width: 280 }}>
+            {/* Device frame — titanium edge feel */}
+            <div className="relative overflow-hidden rounded-[44px] border-[3px] border-white/[0.1] shadow-[0_0_80px_rgba(139,92,246,0.12),_0_20px_60px_rgba(0,0,0,0.5)]" style={{ width: 280, background: 'linear-gradient(180deg, rgba(30,30,35,1) 0%, rgba(20,20,25,1) 100%)' }}>
               {/* Notch / Dynamic Island */}
-              <div className="absolute top-2.5 left-1/2 z-20 h-[24px] w-[90px] -translate-x-1/2 rounded-full bg-black" />
+              <div className="absolute top-3 left-1/2 z-20 h-[22px] w-[86px] -translate-x-1/2 rounded-full bg-black shadow-[inset_0_0_4px_rgba(0,0,0,0.8)]" />
 
-              {/* Screen bezel */}
-              <div className="overflow-hidden rounded-[40px] bg-background" style={{ aspectRatio: '9/19.5' }}>
+              {/* Screen area */}
+              <div className="mx-[2px] mb-[2px] mt-[2px] overflow-hidden rounded-[42px] bg-background" style={{ aspectRatio: '9/19.5' }}>
                 {/* Status bar */}
                 <div className="flex items-center justify-between px-6 pt-4 pb-2">
                   <span className="text-[9px] font-semibold text-foreground-muted">9:41</span>
@@ -239,10 +239,8 @@ export function DownloadShowcase() {
                 </div>
               </div>
 
-              {/* Bezel shimmer sweep */}
-              <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[44px]">
-                <div className="bezel-shimmer absolute -inset-1/2 h-[200%] w-1/4 bg-gradient-to-r from-transparent via-white/[0.03] to-transparent" />
-              </div>
+              {/* Subtle edge highlight */}
+              <div className="pointer-events-none absolute inset-0 rounded-[44px] border border-white/[0.04]" />
             </div>
           </div>
         </motion.div>

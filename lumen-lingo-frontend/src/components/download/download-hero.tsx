@@ -132,12 +132,10 @@ export function DownloadHero() {
           </div>
         </motion.div>
 
-        {/* Shimmer gradient heading */}
+        {/* Heading — consistent with page, no shimmer */}
         <motion.div className="space-y-4" variants={itemVariants}>
-          <h1 className="font-display text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-            <span className="shimmer-text bg-gradient-to-r from-[#c4b5fd] via-[#e2e8f0] to-[#93c5fd] bg-clip-text text-transparent">
-              {t('heading')}
-            </span>
+          <h1 className="font-display text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+            {t('heading')}
           </h1>
           <p className="mx-auto max-w-md text-lg leading-relaxed text-foreground-secondary sm:text-xl">
             {t('description')}
