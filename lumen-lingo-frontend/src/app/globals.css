@@ -403,13 +403,20 @@ body {
   animation: screen-breathe 7s ease-in-out infinite;
 }
 
+/* ── Footer shimmer — slow light sweep across top border ── */
+@keyframes footer-shimmer {
+  0%, 100% { opacity: 0; transform: translateX(-60%); }
+  50%      { opacity: 1; transform: translateX(60%); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .device-aurora,
   .device-aurora-slow,
   .bezel-shimmer,
   .edge-pulse,
-  .screen-breathe {
-    animation: none;
+  .screen-breathe,
+  [style*="footer-shimmer"] {
+    animation: none !important;
   }
 }
 
