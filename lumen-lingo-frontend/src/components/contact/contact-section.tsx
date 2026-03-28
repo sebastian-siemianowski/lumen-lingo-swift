@@ -11,7 +11,7 @@ import { EmailHoneypot, isBotDetected } from './email-honeypot';
 import { EmailRevealButton } from './email-reveal-button';
 import { RevealCountdown } from './reveal-countdown';
 import { ContactFormFallback } from './contact-form-fallback';
-import { trackEmailRevealed, trackEmailCopied, trackEmailSent, trackEmailTimeout, trackGateSucceeded, trackGateBlocked } from '@/lib/email-analytics';
+import { trackEmailRevealed, trackEmailCopied, trackEmailTimeout, trackGateSucceeded, trackGateBlocked } from '@/lib/email-analytics';
 
 function CopyButton({ copied, onCopy }: { copied: boolean; onCopy: () => void }) {
   return (
@@ -78,75 +78,6 @@ function CopyButton({ copied, onCopy }: { copied: boolean; onCopy: () => void })
         )}
       </AnimatePresence>
     </div>
-  );
-}
-
-function SendEmailButton({ email }: { email: string }) {
-  const [opening, setOpening] = useState(false);
-  const timerRef = useRef<ReturnType<typeof setTimeout>>(null);
-
-  const handleSend = useCallback(() => {
-    // Construct mailto: dynamically on click — never stored in DOM/href
-    const mailtoUrl = `mailto:${email}`;
-    window.location.href = mailtoUrl;
-    trackEmailSent();
-    setOpening(true);
-    if (timerRef.current) clearTimeout(timerRef.current);
-    timerRef.current = setTimeout(() => setOpening(false), 3000);
-  }, [email]);
-
-  useEffect(() => {
-    return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
-    };
-  }, []);
-
-  return (
-    <motion.button
-      onClick={handleSend}
-      className={cn(
-        'relative inline-flex items-center justify-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
-        opening
-          ? 'bg-violet/10 text-violet'
-          : 'bg-white/[0.05] text-white/50 hover:bg-white/[0.08] hover:text-white/70',
-      )}
-      whileHover={{ scale: 1.03 }}
-      whileTap={{ scale: 0.97 }}
-      aria-label={opening ? 'Opening email client' : 'Send email'}
-    >
-      <AnimatePresence mode="wait" initial={false}>
-        {opening ? (
-          <motion.svg
-            key="opening"
-            initial={{ opacity: 0, x: -4 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 4 }}
-            transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-            viewBox="0 0 16 16"
-            fill="none"
-            className="h-3 w-3"
-            aria-hidden
-          >
-            <path d="M2 14l12-6L2 2v4.5L10 8 2 9.5V14z" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
-          </motion.svg>
-        ) : (
-          <motion.svg
-            key="send"
-            initial={{ opacity: 0, x: -4 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 4 }}
-            transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-            viewBox="0 0 16 16"
-            fill="none"
-            className="h-3 w-3"
-            aria-hidden
-          >
-            <path d="M2 14l12-6L2 2v4.5L10 8 2 9.5V14z" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
-          </motion.svg>
-        )}
-      </AnimatePresence>
-      <span>{opening ? 'Opening…' : 'Send Email'}</span>
-    </motion.button>
   );
 }
 
@@ -310,7 +241,6 @@ export function ContactSection() {
                 className="flex items-center gap-3"
               >
                 <CopyButton copied={copied} onCopy={copyEmail} />
-                <SendEmailButton email={emailRef.current} />
                 {secondsRemaining > 0 && (
                   <RevealCountdown timeRemaining={timeRemaining} />
                 )}

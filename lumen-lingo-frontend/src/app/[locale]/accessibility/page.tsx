@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
+import { ProtectedEmail } from '@/components/ui/protected-email';
 import { FadeIn } from '@/components/motion';
 import { LanguageDisclaimer, BackToTop } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
@@ -69,9 +70,7 @@ export default async function AccessibilityPage({
     ehrcLink: (chunks: React.ReactNode) => (
       <a href="https://www.equalityhumanrights.com/en" target="_blank" rel="noopener noreferrer">{chunks}</a>
     ),
-    emailLink: (chunks: React.ReactNode) => (
-      <a href="mailto:accessibility@lumenlingo.com">{chunks}</a>
-    ),
+    emailLink: () => <ProtectedEmail emailKey="accessibility" />,
     contactLink: (chunks: React.ReactNode) => (
       <Link href="/contact" className={extLink}>{chunks}</Link>
     ),

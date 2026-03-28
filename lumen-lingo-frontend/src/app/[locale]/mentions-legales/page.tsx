@@ -4,6 +4,7 @@ import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { BreadcrumbJsonLd } from '@/components/home';
+import { ProtectedEmail } from '@/components/ui/protected-email';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
 export async function generateMetadata({
@@ -75,7 +76,7 @@ export default async function MentionsLegalesPage({
                   <p>{t('publisherJurisdiction')}</p>
                   <p>{t('publisherAddress')}</p>
                   <p>{t('publisherVat')}</p>
-                  <p>{t('publisherEmail')}</p>
+                  <p>{t.rich('publisherEmail', { emailLink: () => <ProtectedEmail emailKey="legal" /> })}</p>
                   <p>{t('publisherWebsite')}</p>
                 </section>
 
@@ -98,7 +99,7 @@ export default async function MentionsLegalesPage({
 
                 <section>
                   <h2>{t('disputeHeading')}</h2>
-                  <p>{t('disputeP1')}</p>
+                  <p>{t.rich('disputeP1', { emailLink: () => <ProtectedEmail emailKey="legal" /> })}</p>
                 </section>
               </div>
             </FadeIn>

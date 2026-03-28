@@ -15,7 +15,7 @@ vi.mock('@/components/contact/email-honeypot', () => ({
 
 // Mock email-config to control threshold
 vi.mock('@/lib/email-config', () => ({
-  BOT_DETECTION_THRESHOLD: 70,
+  BOT_DETECTION_THRESHOLD: 50,
 }));
 
 // Helper: create a fake container ref
@@ -270,7 +270,7 @@ describe('useBotDetection', () => {
     expect(result.current.signals.timeOnPage).toBe(true);
   });
 
-  it('becomes isHuman when score reaches threshold (70)', () => {
+  it('becomes isHuman when score reaches threshold (50)', () => {
     const ref = createContainerRef();
     const { result } = renderHook(() => useBotDetection(ref));
 
@@ -278,8 +278,9 @@ describe('useBotDetection', () => {
       triggerIntersection(true);
     });
 
-    // Static: 30 (pointerFine + noWebDriver + honeypotClean)
-    // Need 40 more: mouse (+15) + scroll (+15) + time (+15) = 45 → total 75 ≥ 70
+    // Static: 30 (pointerFine + noWebDriver + honeypotClean) — not yet ≥ 50
+    expect(result.current.score).toBe(30);
+    expect(result.current.isHuman).toBe(false);
 
     // Advance past suspicious-scroll window and give natural cadence timing
     perfNowValue += 600;
@@ -287,17 +288,14 @@ describe('useBotDetection', () => {
     act(() => {
       // Mouse moves (each advances perfNow by 100ms)
       dispatchHumanMouseMoves(3);
-      // Scroll (after natural delay)
-      perfNowValue += 200;
-      window.dispatchEvent(new Event('scroll'));
     });
 
     act(() => {
       vi.advanceTimersByTime(500);
     });
 
-    // 30 + 15 + 15 = 60, not yet
-    expect(result.current.score).toBe(60);
+    // 30 + 15 (mouse) = 45, not yet ≥ 50
+    expect(result.current.score).toBe(45);
     expect(result.current.isHuman).toBe(false);
 
     // Time on page (3s)
@@ -309,8 +307,8 @@ describe('useBotDetection', () => {
       vi.advanceTimersByTime(500);
     });
 
-    // 60 + 15 = 75 ≥ 70
-    expect(result.current.score).toBe(75);
+    // 45 + 15 = 60 ≥ 50
+    expect(result.current.score).toBe(60);
     expect(result.current.isHuman).toBe(true);
   });
 

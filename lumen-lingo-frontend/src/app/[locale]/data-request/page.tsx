@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
+import { ProtectedEmail } from '@/components/ui/protected-email';
 import { FadeIn } from '@/components/motion';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { LanguageDisclaimer, BackToTop } from '@/components/legal';
@@ -55,9 +56,7 @@ export default async function DataRequestPage({
 
   const richTags = {
     b: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
-    emailLink: (chunks: React.ReactNode) => (
-      <a href="mailto:legal@lumenlingo.com">{chunks}</a>
-    ),
+    emailLink: () => <ProtectedEmail emailKey="legal" />,
   };
 
   return (

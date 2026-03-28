@@ -6,6 +6,7 @@ import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { LegalTOC } from '@/components/legal';
+import { ProtectedEmail } from '@/components/ui/protected-email';
 
 export const metadata: Metadata = {
   title: 'Community Guidelines',
@@ -141,7 +142,7 @@ function CommunityGuidelinesContent({ locale }: { locale: string }) {
                 <p>{t('reporting.p1')}</p>
                 <ul>
                   <li>{t('reporting.li1')}</li>
-                  <li>{t('reporting.li2')}</li>
+                  <li>{t.rich('reporting.li2', { supportEmailLink: () => <ProtectedEmail emailKey="support" /> })}</li>
                   <li>{t('reporting.li3')}</li>
                   <li>{t('reporting.li4')}</li>
                 </ul>
@@ -164,7 +165,7 @@ function CommunityGuidelinesContent({ locale }: { locale: string }) {
                 <h2>{t('appeals.heading')}</h2>
                 <p>{t('appeals.p1')}</p>
                 <ul>
-                  <li>{t('appeals.li1')}</li>
+                  <li>{t.rich('appeals.li1', { appealsEmailLink: () => <ProtectedEmail emailKey="appeals" /> })}</li>
                   <li>{t('appeals.li2')}</li>
                   <li>{t('appeals.li3')}</li>
                 </ul>
@@ -186,7 +187,7 @@ function CommunityGuidelinesContent({ locale }: { locale: string }) {
                 <h2>{t('dsaCompliance.heading')}</h2>
                 <p>{t('dsaCompliance.p1')}</p>
                 <ul>
-                  <li>{t('dsaCompliance.li1')}</li>
+                  <li>{t.rich('dsaCompliance.li1', { dsaEmailLink: () => <ProtectedEmail emailKey="dsa" /> })}</li>
                   <li>{t('dsaCompliance.li2')}</li>
                   <li>{t('dsaCompliance.li3')}</li>
                   <li>{t('dsaCompliance.li4')}</li>

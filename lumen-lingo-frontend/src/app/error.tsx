@@ -8,6 +8,7 @@ import { StarField } from '@/components/background';
 import { trackEvent } from '@/lib/analytics';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
 import { spring } from '@/lib/motion';
+import { ProtectedEmail } from '@/components/ui/protected-email';
 
 /* ------------------------------------------------------------------ */
 /*  Calming illustration — glitching orb with recovery particles      */
@@ -192,9 +193,7 @@ export default function Error({
             className="mt-6 text-sm text-foreground-muted"
           >
             Still having trouble?{' '}
-            <a href="mailto:support@lumenlingo.com" className="text-violet underline underline-offset-2 hover:text-violet-hover">
-              Contact us
-            </a>
+            <ProtectedEmail emailKey="support" fallback="Contact us" />
           </motion.p>
         )}
 

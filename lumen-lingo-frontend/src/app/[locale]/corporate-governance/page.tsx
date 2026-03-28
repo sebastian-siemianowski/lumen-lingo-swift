@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
+import { ProtectedEmail } from '@/components/ui/protected-email';
 import { FadeIn } from '@/components/motion';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { Link } from '@/i18n/navigation';
@@ -332,9 +333,7 @@ export default async function CorporateGovernancePage({
                 <h2>Contact</h2>
                 <p>
                   For corporate governance enquiries, contact{' '}
-                  <a href="mailto:support@lumenlingo.com">
-                    support@lumenlingo.com
-                  </a>
+                  <ProtectedEmail emailKey="support" />
                   . For regulatory matters, see our{' '}
                   <Link href="/privacy" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">
                     Privacy Policy

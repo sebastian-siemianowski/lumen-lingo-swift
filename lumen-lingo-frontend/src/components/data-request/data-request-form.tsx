@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Input, Textarea, Select, Label, ErrorText } from '@/components/ui';
 import { cn } from '@/lib/utils';
+import { getProtectedEmail } from '@/lib/email-registry';
 
 type FormState = 'idle' | 'submitting' | 'success';
 
@@ -83,7 +84,7 @@ export function DataRequestForm() {
     const body = encodeURIComponent(
       `Data Subject Access Request\n\nName: ${values.name}\nEmail: ${values.email}\nRequest Type: ${values.requestType}\n\nDetails:\n${values.details}`,
     );
-    window.location.href = `mailto:support@lumenlingo.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${getProtectedEmail('support')}?subject=${subject}&body=${body}`;
     setTimeout(() => setState('success'), 500);
   }
 

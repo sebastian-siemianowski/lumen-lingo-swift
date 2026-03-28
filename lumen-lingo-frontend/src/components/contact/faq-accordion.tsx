@@ -1,10 +1,35 @@
 'use client';
 
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useRef, useState, type ReactNode } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { FadeIn } from '@/components/motion';
+import { ProtectedEmail } from '@/components/ui/protected-email';
+import type { EmailKey } from '@/lib/email-registry';
 import type { FAQItem } from './faq-data';
+
+const EMAIL_TOKEN_RE = /\{\{EMAIL:(\w+)\}\}/g;
+
+/** Parse answer text, replacing {{EMAIL:key}} tokens with ProtectedEmail components */
+function renderAnswer(text: string): ReactNode {
+  const parts: ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = EMAIL_TOKEN_RE.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    parts.push(
+      <ProtectedEmail key={match.index} emailKey={match[1] as EmailKey} />,
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex === 0) return text;
+  if (lastIndex < text.length) parts.push(text.slice(lastIndex));
+  return parts;
+}
 
 interface FAQAccordionProps {
   items: FAQItem[];
@@ -110,7 +135,7 @@ export function FAQAccordion({ items, className }: FAQAccordionProps) {
                     <div className="px-5 pb-5 sm:px-6 sm:pb-6">
                       <div className="h-px w-full bg-gradient-to-r from-violet/20 via-white/5 to-transparent mb-4" />
                       <p className="text-sm leading-relaxed text-white/55 sm:text-[15px] sm:leading-relaxed">
-                        {item.answer}
+                        {renderAnswer(item.answer)}
                       </p>
                     </div>
                   </motion.div>

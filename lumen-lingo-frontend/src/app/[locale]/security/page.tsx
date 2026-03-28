@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
+import { ProtectedEmail } from '@/components/ui/protected-email';
 import { FadeIn } from '@/components/motion';
 import { LanguageDisclaimer } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
@@ -47,12 +48,8 @@ export default async function SecurityPage({
 
   const richTags = {
     b: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
-    emailLink: (chunks: React.ReactNode) => (
-      <a href="mailto:security@lumenlingo.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
-    ),
-    supportLink: (chunks: React.ReactNode) => (
-      <a href="mailto:support@lumenlingo.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
-    ),
+    emailLink: () => <ProtectedEmail emailKey="security" />,
+    supportEmailLink: () => <ProtectedEmail emailKey="support" />,
     securityTxtLink: (chunks: React.ReactNode) => (
       <a href="/.well-known/security.txt" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
     ),

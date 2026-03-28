@@ -61,7 +61,7 @@ vi.mock('@/hooks/use-bot-detection', () => ({
 // Mock clipboard
 const writeTextMock = vi.fn().mockResolvedValue(undefined);
 
-describe('ContactSection — Copy & Send buttons', () => {
+describe('ContactSection — Copy button', () => {
   beforeEach(() => {
     vi.useFakeTimers();
     vi.spyOn(performance, 'now').mockReturnValue(0);
@@ -92,11 +92,10 @@ describe('ContactSection — Copy & Send buttons', () => {
     });
   }
 
-  it('shows Copy and Send Email buttons after reveal', () => {
+  it('shows Copy button after reveal', () => {
     render(<ContactSection />);
     revealEmail();
     expect(screen.getByLabelText('Copy email address')).toBeTruthy();
-    expect(screen.getByLabelText('Send email')).toBeTruthy();
   });
 
   it('copies email to clipboard on Copy button click', () => {
@@ -117,12 +116,6 @@ describe('ContactSection — Copy & Send buttons', () => {
     expect(screen.getByText('Copied!')).toBeTruthy();
   });
 
-  it('shows "Opening…" state when Send Email is clicked', () => {
-    render(<ContactSection />);
-    revealEmail();
-    fireEvent.click(screen.getByLabelText('Send email'));
-    expect(screen.getByText('Opening…')).toBeTruthy();
-  });
 
   it('shows countdown timer after reveal', () => {
     render(<ContactSection />);

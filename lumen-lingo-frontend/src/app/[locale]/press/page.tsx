@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text, GlassCard } from '@/components/ui';
+import { ProtectedEmail } from '@/components/ui/protected-email';
 import { FadeIn } from '@/components/motion';
 import { getFeatureFlag } from '@/lib/feature-flags';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
@@ -121,12 +122,10 @@ export default async function PressPage({
               <Text colour="secondary" className="leading-relaxed">
                 {t('assetsDesc')}
               </Text>
-              <a
-                href="mailto:press@lumenlingo.com"
+              <ProtectedEmail
+                emailKey="press"
                 className="mt-4 inline-flex items-center gap-2 rounded-[--radius-button] border border-[--color-cyan]/30 bg-[--color-cyan]/10 px-5 py-2.5 text-sm font-medium text-[--color-cyan] transition-colors hover:bg-[--color-cyan]/20"
-              >
-                press@lumenlingo.com
-              </a>
+              />
             </GlassCard>
           </FadeIn>
         </Container>
@@ -141,7 +140,7 @@ export default async function PressPage({
             </Heading>
             <GlassCard className="p-6 sm:p-8 text-center">
               <Text colour="muted" className="text-sm">
-                {t('newsEmpty')}
+                {t.rich('newsEmpty', { pressEmailLink: () => <ProtectedEmail emailKey="press" /> })}
               </Text>
             </GlassCard>
           </FadeIn>

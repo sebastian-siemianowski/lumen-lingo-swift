@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
+import { ProtectedEmail } from '@/components/ui/protected-email';
 import { FadeIn } from '@/components/motion';
 import { LegalTOC, DownloadPDFButton, LanguageDisclaimer, MobileLegalTOC, BackToTop } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
@@ -340,7 +341,7 @@ export default async function EulaPage({
                     <li>{t.rich('openSource.li3', richTags)}</li>
                     <li>{t.rich('openSource.li4', richTags)}</li>
                   </ul>
-                  <p>{t.rich('openSource.p3', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</p>
+                  <p>{t.rich('openSource.p3', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: () => <ProtectedEmail emailKey="legal" /> })}</p>
                 </section>
 
                 <section id="changes">
@@ -358,7 +359,7 @@ export default async function EulaPage({
                   <h2>{t('contact.heading')}</h2>
                   <p>{t('contact.intro')}</p>
                   <ul>
-                    <li>{t.rich('contact.email', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</li>
+                    <li>{t.rich('contact.email', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: () => <ProtectedEmail emailKey="legal" /> })}</li>
                     <li>{t.rich('contact.company', richTags)}</li>
                     <li>{t.rich('contact.address', richTags)}</li>
                   </ul>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
+import { ProtectedEmail } from '@/components/ui/protected-email';
 import { FadeIn } from '@/components/motion';
 import { BreadcrumbJsonLd } from '@/components/home';
 import { Link } from '@/i18n/navigation';
@@ -80,7 +81,7 @@ export default async function VPATPage({
                     </tr>
                     <tr>
                       <td><strong>Contact</strong></td>
-                      <td><a href="mailto:accessibility@lumenlingo.com">accessibility@lumenlingo.com</a></td>
+                      <td><ProtectedEmail emailKey="accessibility" /></td>
                     </tr>
                     <tr>
                       <td><strong>Evaluation Methods</strong></td>
@@ -427,9 +428,7 @@ export default async function VPATPage({
                 <p>
                   For questions about this VPAT or to request an updated
                   version, contact{' '}
-                  <a href="mailto:accessibility@lumenlingo.com">
-                    accessibility@lumenlingo.com
-                  </a>.
+                  <ProtectedEmail emailKey="accessibility" />.
                 </p>
               </section>
             </div>

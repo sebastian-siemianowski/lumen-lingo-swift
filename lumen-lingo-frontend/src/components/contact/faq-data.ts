@@ -52,7 +52,7 @@ export const contactFaqItems: FAQItem[] = [
   {
     question: 'How do I delete my account and data?',
     answer:
-      'You can clear all your data from within the app at any time by going to Settings → Reset Progress. Since LumenLingo stores data on-device and via iCloud, no server-side deletion is needed. If you\'d like help, reach out to us at support@lumenlingo.com.',
+      'You can clear all your data from within the app at any time by going to Settings → Reset Progress. Since LumenLingo stores data on-device and via iCloud, no server-side deletion is needed. If you\'d like help, reach out to us at {{EMAIL:support}}.',
   },
   {
     question: 'What practice modes are available?',
@@ -67,7 +67,7 @@ export const contactFaqItems: FAQItem[] = [
   {
     question: 'How do I export my data?',
     answer:
-      'LumenLingo stores your learning data on-device and syncs via iCloud. You can view your progress, streaks, and mastery levels directly in the app. If you need a copy of any personal data we hold about you, submit a request through our Data Request page or email us at support@lumenlingo.com. We\'ll respond within 30 days as required by GDPR.',
+      'LumenLingo stores your learning data on-device and syncs via iCloud. You can view your progress, streaks, and mastery levels directly in the app. If you need a copy of any personal data we hold about you, submit a request through our Data Request page or email us at {{EMAIL:support}}. We\'ll respond within 30 days as required by GDPR.',
   },
   {
     question: 'What data does LumenLingo collect?',
@@ -77,6 +77,6 @@ export const contactFaqItems: FAQItem[] = [
   {
     question: 'How do I contact you about a privacy concern?',
     answer:
-      'For privacy-specific questions, email us at support@lumenlingo.com with "Privacy" in the subject line. You can also use our Data Request page to exercise your rights under GDPR, CCPA, or other privacy laws — including access, correction, deletion, and data portability. We take every privacy inquiry seriously and respond within 48 hours.',
+      'For privacy-specific questions, email us at {{EMAIL:support}} with "Privacy" in the subject line. You can also use our Data Request page to exercise your rights under GDPR, CCPA, or other privacy laws — including access, correction, deletion, and data portability. We take every privacy inquiry seriously and respond within 48 hours.',
   },
 ];

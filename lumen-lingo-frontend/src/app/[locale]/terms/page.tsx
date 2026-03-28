@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageTransition } from '@/components/layout';
 import { Container, Section, Heading, Text } from '@/components/ui';
+import { ProtectedEmail } from '@/components/ui/protected-email';
 import { FadeIn } from '@/components/motion';
 import { LegalTOC, DownloadPDFButton, LanguageDisclaimer, LegalUpdateBanner, MobileLegalTOC, BackToTop } from '@/components/legal';
 import { BreadcrumbJsonLd } from '@/components/home';
@@ -49,6 +50,7 @@ export default async function TermsPage({
 
   const richTags = {
     b: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
+    emailLink: () => <ProtectedEmail emailKey="legal" />,
   };
 
   const tocItems = [
@@ -335,15 +337,10 @@ export default async function TermsPage({
                       refundLink: (chunks: React.ReactNode) => (
                         <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">{chunks}</a>
                       ),
-                      email: (chunks: React.ReactNode) => (
-                        <a href="mailto:support@lumenlingo.com">{chunks}</a>
-                      ),
                     })}</li>
                     <li>{t.rich('distanceSelling.li8', {
                       ...richTags,
-                      email: (chunks: React.ReactNode) => (
-                        <a href="mailto:support@lumenlingo.com">{chunks}</a>
-                      ),
+                      emailLink: () => <ProtectedEmail emailKey="support" />,
                     })}</li>
                   </ul>
                 </section>
@@ -388,14 +385,12 @@ export default async function TermsPage({
                   </ul>
                   <p>
                     {t.rich('copyrightInfringement.p3', {
-                      email: (chunks: React.ReactNode) => (
-                        <a href="mailto:legal@lumenlingo.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
-                      ),
+                      emailLink: () => <ProtectedEmail emailKey="legal" />,
                     })}
                   </p>
                   <p>{t('copyrightInfringement.p4')}</p>
                   <p>{t('copyrightInfringement.p5')}</p>
-                  <p>{t('copyrightInfringement.p6')}</p>
+                  <p>{t.rich('copyrightInfringement.p6', richTags)}</p>
                 </section>
 
                 <section id="content-protection">
@@ -682,9 +677,7 @@ export default async function TermsPage({
                   <h3>{t('disputeResolution.step1Heading')}</h3>
                   <p>{t.rich('disputeResolution.step1P1', {
                     b: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
-                    emailLink: (chunks: React.ReactNode) => (
-                      <a href="mailto:legal@lumenlingo.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
-                    ),
+                    emailLink: () => <ProtectedEmail emailKey="legal" />,
                   })}</p>
 
                   <h3>{t('disputeResolution.step2Heading')}</h3>
@@ -695,6 +688,7 @@ export default async function TermsPage({
 
                   <h3>{t('disputeResolution.odrHeading')}</h3>
                   <p>{t.rich('disputeResolution.odrP1', {
+                    ...richTags,
                     odrLink: (chunks: React.ReactNode) => (
                       <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
                     ),
@@ -723,9 +717,7 @@ export default async function TermsPage({
 
                   <h3>{t('usArbitration.optOutHeading')}</h3>
                   <p>{t.rich('usArbitration.optOutP1', {
-                    emailLink: (chunks: React.ReactNode) => (
-                      <a href="mailto:legal@lumenlingo.com" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">{chunks}</a>
-                    ),
+                    emailLink: () => <ProtectedEmail emailKey="legal" />,
                   })}</p>
 
                   <h3>{t('usArbitration.smallClaimsHeading')}</h3>
@@ -843,7 +835,7 @@ export default async function TermsPage({
                   <p>{t.rich('ukAdr.provider', richTags)}</p>
                   <p>{t.rich('ukAdr.providerWebsite', { cedrLink: (chunks: React.ReactNode) => <a href="https://www.cedr.com" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</p>
                   <p>{t('ukAdr.providerAddress')}</p>
-                  <p>{t.rich('ukAdr.p3', { emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</p>
+                  <p>{t.rich('ukAdr.p3', { emailLink: () => <ProtectedEmail emailKey="legal" /> })}</p>
                   <p>{t.rich('ukAdr.p4', { odrLink: (chunks: React.ReactNode) => <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">{chunks}</a> })}</p>
                 </section>
 
@@ -1026,7 +1018,7 @@ export default async function TermsPage({
                 <section id="pre-suit-notice">
                   <h2>{t('preSuitNotice.heading')}</h2>
                   <h3>{t('preSuitNotice.noticeHeading')}</h3>
-                  <p>{t('preSuitNotice.notice1')}</p>
+                  <p>{t.rich('preSuitNotice.notice1', richTags)}</p>
                   <p>{t('preSuitNotice.notice2')}</p>
                   <h3>{t('preSuitNotice.negotiationHeading')}</h3>
                   <p>{t('preSuitNotice.negotiation1')}</p>
@@ -1163,7 +1155,7 @@ export default async function TermsPage({
                   <h3>{t('accountSecurity.securityHeading')}</h3>
                   <p>{t('accountSecurity.security1')}</p>
                   <p>{t('accountSecurity.security2')}</p>
-                  <p>{t('accountSecurity.security3')}</p>
+                  <p>{t.rich('accountSecurity.security3', richTags)}</p>
                   <p>{t('accountSecurity.security4')}</p>
                   <h3>{t('accountSecurity.familyHeading')}</h3>
                   <p>{t('accountSecurity.family1')}</p>
@@ -1210,7 +1202,7 @@ export default async function TermsPage({
                 <section id="accessibility">
                   <h2>{t('accessibility.heading')}</h2>
                   <p>{t.rich('accessibility.p1', { accessibilityLink: (chunks: React.ReactNode) => <a href={`/${locale}/accessibility`}>{chunks}</a> })}</p>
-                  <p>{t.rich('accessibility.p2', { emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</p>
+                  <p>{t.rich('accessibility.p2', { emailLink: () => <ProtectedEmail emailKey="legal" /> })}</p>
                 </section>
 
                 {/* ── Online Safety Act 2023 ── */}
@@ -1225,7 +1217,7 @@ export default async function TermsPage({
                   <h2>{t('dsaCompliance.heading')}</h2>
                   <h3>{t('dsaCompliance.contactHeading')}</h3>
                   <p>{t('dsaCompliance.contact1')}</p>
-                  <p>{t('dsaCompliance.contact2')}</p>
+                  <p>{t.rich('dsaCompliance.contact2', richTags)}</p>
                   <p>{t('dsaCompliance.contact3')}</p>
                   <h3>{t('dsaCompliance.intermediaryHeading')}</h3>
                   <p>{t('dsaCompliance.intermediary1')}</p>
@@ -1234,7 +1226,7 @@ export default async function TermsPage({
                   <h3>{t('dsaCompliance.transparencyHeading')}</h3>
                   <p>{t('dsaCompliance.transparency1')}</p>
                   <p>{t('dsaCompliance.transparency2')}</p>
-                  <p>{t('dsaCompliance.transparency3')}</p>
+                  <p>{t.rich('dsaCompliance.transparency3', richTags)}</p>
                   <h3>{t('dsaCompliance.complianceHeading')}</h3>
                   <p>{t('dsaCompliance.compliance1')}</p>
                   <p>{t('dsaCompliance.compliance2')}</p>
@@ -1264,7 +1256,7 @@ export default async function TermsPage({
                   <h2>{t('contactUs.heading')}</h2>
                   <p>{t('contactUs.intro')}</p>
                   <ul>
-                    <li>{t.rich('contactUs.email', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: (chunks: React.ReactNode) => <a href="mailto:legal@lumenlingo.com">{chunks}</a> })}</li>
+                    <li>{t.rich('contactUs.email', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: () => <ProtectedEmail emailKey="legal" /> })}</li>
                     <li>{t.rich('contactUs.company', richTags)}</li>
                     <li>{t.rich('contactUs.address', richTags)}</li>
                   </ul>

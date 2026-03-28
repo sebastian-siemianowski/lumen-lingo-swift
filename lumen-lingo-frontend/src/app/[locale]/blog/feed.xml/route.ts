@@ -32,8 +32,8 @@ export function GET(
     <atom:link href="${siteUrl}/${locale}/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <language>${locale}</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    <managingEditor>support@lumenlingo.com (LumenShore Team)</managingEditor>
-    <webMaster>support@lumenlingo.com (LumenShore Team)</webMaster>
+    <managingEditor>support&#64;lumenlingo&#46;com (LumenShore Team)</managingEditor>
+    <webMaster>support&#64;lumenlingo&#46;com (LumenShore Team)</webMaster>
     <image>
       <url>${siteUrl}/logo.png</url>
       <title>LumenLingo Blog</title>

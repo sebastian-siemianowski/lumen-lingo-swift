@@ -223,7 +223,7 @@
   "Contact": {
     "heading": "Masz pytanie?",
     "description": "Nie możesz znaleźć odpowiedzi w FAQ? Chętnie Cię wysłuchamy.",
-    "email": "support@lumenlingo.com",
+    "email": "<supportEmailLink>email</supportEmailLink>",
     "responseTime": "Zazwyczaj odpowiadamy w ciągu 48 godzin",
     "faqHeading": "Często Zadawane Pytania",
     "faqDescription": "Szybkie odpowiedzi na najczęstsze pytania o LumenLingo.",
@@ -607,7 +607,7 @@
       "heading": "Prywatność dzieci",
       "p1": "LumenLingo jest przeznaczone dla użytkowników w wieku 13 lat i starszych. Zgodnie z art. 8 RODO i sekcją 9 Ustawy o ochronie danych osobowych 2018 (DPA 2018) nie gromadzimy świadomie danych osobowych dzieci poniżej 13 roku życia (lub odpowiedniego minimalnego wieku obowiązującego w danej jurysdykcji, który może być wyższy — na przykład 16 lat w Niemczech i Holandii).",
       "p2": "Aplikacja iOS nie wymaga rejestracji konta i przechowuje dane lokalnie, więc żadne dane osobowe nie są przekazywane od użytkowników aplikacji w żadnym wieku. Na stronie internetowej nie akceptujemy świadomie zapisów na newsletter lub listę oczekujących od osób poniżej 13 roku życia.",
-      "p3": "Rodzice i opiekunowie mogą w dowolnym momencie zarządzać aplikacją i jej danymi lub je usunąć za pomocą standardowych narzędzi zarządzania urządzeniami iOS. Jeśli uważasz, że dziecko przekazało nam dane osobowe, prosimy o kontakt pod adresem legal@lumenlingo.com, a my niezwłocznie je usuniemy.",
+      "p3": "Rodzice i opiekunowie mogą w dowolnym momencie zarządzać aplikacją i jej danymi lub je usunąć za pomocą standardowych narzędzi zarządzania urządzeniami iOS. Jeśli uważasz, że dziecko przekazało nam dane osobowe, prosimy o kontakt pod adresem <emailLink>email</emailLink>, a my niezwłocznie je usuniemy.",
       "coppaHeading": "Zgodność z COPPA",
       "coppaP1": "LumenLingo jest zgodny z amerykańską ustawą o ochronie prywatności dzieci w Internecie (COPPA). Nie gromadzimy, nie wykorzystujemy ani nie ujawniamy świadomie danych osobowych dzieci poniżej 13 roku życia bez weryfikowalnej zgody rodziców. Nasz serwis nie jest skierowany do dzieci poniżej 13 lat i nie kierujemy do nich reklam.",
       "coppaP2": "Wszystkie formularze na stronie zbierające dane osobowe (takie jak adresy e-mail) zawierają krok potwierdzenia wieku, wymagający od użytkowników potwierdzenia, że mają co najmniej 13 lat lub że posiadają zgodę rodzica lub opiekuna prawnego, jeśli nie ukończyli 18 lat.",
@@ -617,7 +617,7 @@
       "parentalLi2": "Żądania usunięcia danych osobowych ich dziecka z naszych systemów",
       "parentalLi3": "Odmowy dalszego zbierania lub wykorzystywania informacji o ich dziecku",
       "parentalLi4": "Zarządzania lub usunięcia aplikacji i jej lokalnie przechowywanych danych za pomocą standardowego zarządzania urządzeniami iOS",
-      "parentalP2": "Aby skorzystać z któregokolwiek z tych praw, skontaktuj się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>. Jeśli odkryjemy, że zebraliśmy dane osobowe dziecka poniżej 13 roku życia bez odpowiedniej zgody rodzica, usuniemy te informacje w ciągu 72 godzin od wykrycia.",
+      "parentalP2": "Aby skorzystać z któregokolwiek z tych praw, skontaktuj się z nami pod adresem <emailLink>email</emailLink>. Jeśli odkryjemy, że zebraliśmy dane osobowe dziecka poniżej 13 roku życia bez odpowiedniej zgody rodzica, usuniemy te informacje w ciągu 72 godzin od wykrycia.",
       "ferpaHeading": "Wykorzystanie edukacyjne i FERPA",
       "ferpaP1": "LumenLingo nie jest administrowany przez instytucje edukacyjne ani w ich imieniu. Jeśli szkoła lub organizacja edukacyjna zdecyduje się polecić LumenLingo swoim uczniom, robi to niezależnie. Instytucja ponosi odpowiedzialność za zapewnienie zgodności z amerykańską ustawą o prawach edukacyjnych rodziny i prywatności (FERPA) oraz za uzyskanie wymaganej zgody rodziców przed skierowaniem uczniów poniżej 13 roku życia do korzystania z usługi."
     },
@@ -645,7 +645,7 @@
       "li2": "Imię i nazwisko oraz dane kontaktowe naszego inspektora ochrony danych, od którego można uzyskać więcej informacji",
       "li3": "Prawdopodobne konsekwencje naruszenia",
       "li4": "Środki podjęte lub proponowane w celu zaradzenia naruszeniu, w tym, w stosownych przypadkach, środki mające na celu złagodzenie jego ewentualnych negatywnych skutków",
-      "p3": "Utrzymujemy wewnętrzne procedury reagowania na naruszenia, w tym rejestr naruszeń, aby zapewnić skuteczne wykrywanie, zgłaszanie i badanie naruszeń ochrony danych osobowych. W przypadku pytań dotyczących naszych procedur powiadamiania o naruszeniach, prosimy o kontakt pod adresem <emailLink>legal@lumenlingo.com</emailLink>."
+      "p3": "Utrzymujemy wewnętrzne procedury reagowania na naruszenia, w tym rejestr naruszeń, aby zapewnić skuteczne wykrywanie, zgłaszanie i badanie naruszeń ochrony danych osobowych. W przypadku pytań dotyczących naszych procedur powiadamiania o naruszeniach, prosimy o kontakt pod adresem <emailLink>email</emailLink>."
     },
     "automatedDecisions": {
       "heading": "Zautomatyzowane podejmowanie decyzji i profilowanie",
@@ -664,13 +664,13 @@
       "gdprLi5": "Prawo do sprzeciwu — skontaktuj się z nami, aby zrezygnować z anonimowej analityki lub sprzeciwić się przetwarzaniu opartemu na prawnie uzasadnionym interesie.",
       "gdprLi6": "Prawo do ograniczenia przetwarzania — skontaktuj się z nami, aby poprosić o ograniczenie sposobu przetwarzania Twoich danych.",
       "gdprLi7": "Prawo do skargi — masz prawo złożyć skargę do <icoLink>Biura Komisarza ds. Informacji (ICO)</icoLink> pod adresem ico.org.uk lub telefonicznie pod numerem 0303 123 1113, albo do właściwego organu nadzorczego, jeśli przebywasz poza Wielką Brytanią.",
-      "gdprLi8": "Prawo do wycofania zgody — w przypadku gdy opieramy się na zgodzie jako podstawie prawnej (np. analityka), możesz wycofać swoją zgodę w dowolnym momencie, dostosowując preferencje plików cookie lub kontaktując się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>. Wycofanie nie wpływa na zgodność z prawem przetwarzania dokonanego przed wycofaniem.",
+      "gdprLi8": "Prawo do wycofania zgody — w przypadku gdy opieramy się na zgodzie jako podstawie prawnej (np. analityka), możesz wycofać swoją zgodę w dowolnym momencie, dostosowując preferencje plików cookie lub kontaktując się z nami pod adresem <emailLink>email</emailLink>. Wycofanie nie wpływa na zgodność z prawem przetwarzania dokonanego przed wycofaniem.",
       "ccpaHeading": "Na mocy CCPA/CPRA (Kalifornia)",
       "ccpaLi1": "<b>Prawo do informacji</b> — możesz zażądać ujawnienia kategorii i konkretnych elementów danych osobowych, które zebraliśmy na Twój temat. Zobacz sekcję Powiadomienie o zbieraniu powyżej.",
       "ccpaLi2": "<b>Prawo do usunięcia</b> — możesz zażądać usunięcia swoich danych osobowych. Użyj funkcji Usuń konto w aplikacji, usuń aplikację lub skontaktuj się z nami w celu usunięcia danych ze strony.",
       "ccpaLi3": "<b>Prawo do sprostowania</b> — możesz zażądać poprawienia niedokładnych danych osobowych. Dane w aplikacji można edytować bezpośrednio; w przypadku danych ze strony skontaktuj się z nami.",
       "ccpaLi4": "<b>Prawo do rezygnacji ze sprzedaży lub udostępniania</b> — nie sprzedajemy ani nie udostępniamy danych osobowych na potrzeby reklamy behawioralnej międzykontekstowej. Rezygnacja nie jest wymagana.",
-      "exerciseRights": "Aby skorzystać z dowolnego z tych praw, wyślij e-mail na adres legal@lumenlingo.com lub złóż wniosek za pośrednictwem strony <dataRequestLink>wniosku o dane</dataRequestLink>. Odpowiemy w terminie obowiązującym w Twojej jurysdykcji. Możemy potrzebować zweryfikować Twoją tożsamość przed przetworzeniem określonych żądań.",
+      "exerciseRights": "Aby skorzystać z dowolnego z tych praw, wyślij e-mail na adres <emailLink>email</emailLink> lub złóż wniosek za pośrednictwem strony <dataRequestLink>wniosku o dane</dataRequestLink>. Odpowiemy w terminie obowiązującym w Twojej jurysdykcji. Możemy potrzebować zweryfikować Twoją tożsamość przed przetworzeniem określonych żądań.",
       "ccpaLi5": "<b>Prawo do ograniczenia wykorzystania wrażliwych danych osobowych</b> — nie zbieramy wrażliwych danych osobowych w rozumieniu CCPA/CPRA.",
       "ccpaLi6": "<b>Zakaz dyskryminacji</b> — nie odmówimy Ci usług, nie naliczymy innych cen ani nie zapewnimy innej jakości usług z powodu skorzystania z praw do prywatności.",
       "ccpaResponse": "Dla mieszkańców Kalifornii potwierdzimy otrzymanie Twojego żądania w ciągu 10 dni roboczych i udzielimy merytorycznej odpowiedzi w ciągu 45 dni kalendarzowych. Jeśli potrzeba więcej czasu, możemy przedłużyć o dodatkowe 45 dni z wcześniejszym powiadomieniem. Możemy zweryfikować Twoją tożsamość, porównując podane przez Ciebie informacje z danymi, które posiadamy.",
@@ -682,7 +682,7 @@
       "usStateLi4": "<b>Prawo do przenoszenia danych</b> — możesz uzyskać swoje dane w przenośnym, łatwo dostępnym formacie.",
       "usStateLi5": "<b>Prawo rezygnacji</b> — możesz odmówić reklamy ukierunkowanej, sprzedaży danych osobowych i profilowania. Lumenshore nie prowadzi żadnej z tych działalności.",
       "usStateGpc": "Kolorado i Connecticut wymagają respektowania uniwersalnych sygnałów rezygnacji, takich jak <gpcLink>Global Privacy Control (GPC)</gpcLink>. Respektujemy GPC we wszystkich jurysdykcjach.",
-      "usStateAppeal": "Jeśli odrzucimy Twoje żądanie, możesz złożyć odwołanie kontaktując się z nami pod adresem legal@lumenlingo.com. Odpowiemy na odwołanie w ciągu 60 dni. Jeśli nie jesteś zadowolony z wyniku, możesz skontaktować się z biurem prokuratora generalnego w swoim stanie.",
+      "usStateAppeal": "Jeśli odrzucimy Twoje żądanie, możesz złożyć odwołanie kontaktując się z nami pod adresem <emailLink>email</emailLink>. Odpowiemy na odwołanie w ciągu 60 dni. Jeśli nie jesteś zadowolony z wyniku, możesz skontaktować się z biurem prokuratora generalnego w swoim stanie.",
       "verificationHeading": "Proces weryfikacji i odpowiedzi",
       "verificationP1": "Aby chronić Twoje dane, zweryfikujemy Twoją tożsamość przed przetworzeniem żądań dotyczących praw. Możemy poprosić o potwierdzenie adresu e-mail powiązanego z Twoim kontem lub subskrypcją, lub podanie innych informacji identyfikacyjnych zgodnych z naszymi rejestrami.",
       "verificationP2": "Możesz wyznaczyć upoważnionego pełnomocnika do składania żądań w Twoim imieniu. Poprosimy o dowód umocowania pełnomocnika (np. podpisane upoważnienie lub pełnomocnictwo) i możemy nadal bezpośrednio zweryfikować Twoją tożsamość.",
@@ -694,7 +694,7 @@
       "timeframesGdpr": "<b>RODO (EOG i Wielka Brytania)</b> — odpowiedź w ciągu jednego miesiąca kalendarzowego (z możliwością przedłużenia o dwa miesiące w przypadku złożonych żądań).",
       "californiaHeading": "Twoje prawa prywatności w Kalifornii",
       "californiaP1": "Na mocy sekcji 1798.83 kalifornijskiego kodeksu cywilnego (ustawa „Shine the Light”) mieszkańcy Kalifornii mogą żądać informacji o ujawnianiu danych osobowych podmiotom trzecim w celach marketingu bezpośredniego. Lumenshore nie ujawnia danych osobowych podmiotom trzecim w celach ich marketingu bezpośredniego.",
-      "californiaP2": "Aby skorzystać z jakichkolwiek praw prywatności w Kalifornii, w tym praw wynikających z CCPA/CPRA, wyślij e-mail z tematem „Prawa prywatności w Kalifornii” na adres <emailLink>legal@lumenlingo.com</emailLink> lub złóż wniosek za pośrednictwem strony <dataRequestLink>wniosku o dane</dataRequestLink>."
+      "californiaP2": "Aby skorzystać z jakichkolwiek praw prywatności w Kalifornii, w tym praw wynikających z CCPA/CPRA, wyślij e-mail z tematem „Prawa prywatności w Kalifornii” na adres <emailLink>email</emailLink> lub złóż wniosek za pośrednictwem strony <dataRequestLink>wniosku o dane</dataRequestLink>."
     },
     "policyUpdates": {
       "heading": "Aktualizacje polityki",
@@ -705,12 +705,12 @@
       "v1": "<b>v1.0</b> (22 marca 2026) — Pierwsza polityka prywatności obejmująca aplikację LumenLingo na iOS.",
       "v2_1": "<b>v2.1</b> (26 marca 2026) — Reorganizacja sekcji: przeniesiono ujawnienia dotyczące zgodności handlowej/regulacyjnej (traktowanie VAT, VAT UE, podatek międzynarodowy, zgodność cenowa, sankcje, kontrola eksportu szyfrowania) do Warunków korzystania z usługi. Dodano odniesienie do Warunków. Skonsolidowano atrybucję znaku towarowego. Żadna treść nie została usunięta.",
       "v2_2": "<b>v2.2</b> (26 marca 2026) — Faza 2 wzmocnienia prawnego: ujednolicono nazwę firmy na Lumenshore Limited; dodano prawo do skargi do ICO (art. 77 RODO); dodano rejestr podprocesorów; wzmocniono zabezpieczenia transferu międzynarodowego; dodano regionalne ramy ochrony prywatności; ulepszono informacje o komunikacji elektronicznej i zgodności z PECR.",
-      "v2_3": "<b>v2.3</b> (27 marca 2026) — Faza 3 wzmocnienia prawnego: dodano odsyłacz do ograniczenia odpowiedzialności w Regulaminie, dodano sekcję rozstrzygania sporów odwołującą się do Regulaminu dla sporów niezwiązanych z RODO z zastrzeżeniem art. 79 RODO, ustandaryzowano wszystkie adresy e-mail kontaktowe na legal@lumenlingo.com."
+      "v2_3": "<b>v2.3</b> (27 marca 2026) — Faza 3 wzmocnienia prawnego: dodano odsyłacz do ograniczenia odpowiedzialności w Regulaminie, dodano sekcję rozstrzygania sporów odwołującą się do Regulaminu dla sporów niezwiązanych z RODO z zastrzeżeniem art. 79 RODO, ustandaryzowano wszystkie adresy e-mail kontaktowe na <emailLink>email</emailLink>."
     },
     "contactUs": {
       "heading": "Kontakt",
       "intro": "Jeśli masz pytania dotyczące niniejszej Polityki prywatności, Twoich danych lub chcesz skorzystać ze swoich praw, prosimy o kontakt:",
-      "email": "<b>E-mail</b>: <emailLink>legal@lumenlingo.com</emailLink>",
+      "email": "<b>E-mail</b>: <emailLink>email</emailLink>",
       "company": "<b>Firma</b>: Lumenshore Limited, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, Anglia, LE4 9HA",
       "companyNumber": "<b>Numer firmy</b>: 09607326 (Anglia i Walia)",
       "vatNumber": "<b>Numer VAT</b>: GB 270411929",
@@ -796,7 +796,7 @@
         "li3": "<b>UK International Data Transfer Agreement (IDTA)</b> — brytyjski odpowiednik SCC, zatwierdzony przez ICO dla transferów z Wielkiej Brytanii.",
         "li4": "<b>Decyzje o adekwatności</b> — w przypadku gdy Komisja Europejska lub rząd Wielkiej Brytanii stwierdził, że kraj docelowy zapewnia odpowiedni poziom ochrony danych."
       },
-      "p1": "Możesz poprosić o kopię odpowiednich zabezpieczeń transferu, kontaktując się z nami pod adresem legal@lumenlingo.com.",
+      "p1": "Możesz poprosić o kopię odpowiednich zabezpieczeń transferu, kontaktując się z nami pod adresem <emailLink>email</emailLink>.",
       "li4": "<b>Clerk (Stany Zjednoczone)</b> — dane uwierzytelniania (adres e-mail, identyfikatory użytkownika, tokeny autoryzacji) są przetwarzane na serwerach Clerk w Stanach Zjednoczonych. Transfery te są chronione umową DPA Clerk ze Standardowymi klauzulami umownymi i certyfikacją EU-US Data Privacy Framework.",
       "li5": "<b>RevenueCat (Stany Zjednoczone)</b> — dane zarządzania subskrypcjami (ID użytkownika aplikacji, status subskrypcji, potwierdzenia zakupu Apple) są przetwarzane na serwerach RevenueCat w Stanach Zjednoczonych. Transfery te są chronione Aneksem o przetwarzanie danych RevenueCat ze Standardowymi klauzulami umownymi."
     },
@@ -921,7 +921,7 @@
       "dplHeading": "Osoba odpowiedzialna za ochronę danych",
       "dplP1": "Choć Lumenshore nie jest zobowiązana do wyznaczenia Inspektora Ochrony Danych (IOD) na mocy art. 37 UK GDPR (nie jesteśmy organem publicznym, nie prowadzimy monitorowania na dużą skalę i nie przetwarzamy masowo danych szczególnych kategorii), wyznaczył osobę odpowiedzialną za ochronę danych w celu nadzorowania zgodności:",
       "dplP2": "<b>Osoba odpowiedzialna za ochronę danych</b>: Dyrektor Lumenshore Limited",
-      "dplP3": "Możesz skontaktować się z naszą osobą odpowiedzialną za ochronę danych pod adresem <emailLink>legal@lumenlingo.com</emailLink> w sprawie jakichkolwiek pytań dotyczących przetwarzania danych osobowych, realizacji swoich praw lub zgłoszenia obaw związanych z ochroną danych.",
+      "dplP3": "Możesz skontaktować się z naszą osobą odpowiedzialną za ochronę danych pod adresem <emailLink>email</emailLink> w sprawie jakichkolwiek pytań dotyczących przetwarzania danych osobowych, realizacji swoich praw lub zgłoszenia obaw związanych z ochroną danych.",
       "icoHeading": "Rejestracja w ICO",
       "icoP1": "Zgodnie z wymogami sekcji 25 Ustawy o ochronie danych z 2018 r., Lumenshore Limited uiszcza roczną opłatę za ochronę danych na rzecz <icoLink>Biura Komisarza ds. Informacji (ICO)</icoLink>, niezależnego organu nadzoru ochrony danych w Wielkiej Brytanii.",
       "icoP2": "ICO prowadzi publiczny rejestr podmiotów opłacających składki. Możesz zweryfikować nasz status rejestracji na stronie ICO.",
@@ -933,7 +933,7 @@
       "specialCategoryP1": "LumenLingo nie zbiera ani nie przetwarza żadnych danych szczególnych kategorii w rozumieniu art. 9 UK GDPR i sekcji 10 DPA 2018. Obejmuje to: pochodzenie rasowe lub etniczne, poglądy polityczne, przekonania religijne lub filozoficzne, członkostwo w związkach zawodowych, dane genetyczne, dane biometryczne, dane dotyczące zdrowia, życia seksualnego lub orientacji seksualnej oraz dane dotyczące wyroków skazujących.",
       "specialCategoryP2": "Jeśli w przyszłości nasze działania w zakresie przetwarzania danych ulegną zmianie i będą obejmować dane szczególnych kategorii, zaktualizujemy niniejszą politykę, przeprowadzimy Ocenę Skutków dla Ochrony Danych (DPIA) i w razie potrzeby uzyskamy wyraźną zgodę.",
       "complaintHeading": "Prawo do złożenia skargi do ICO",
-      "complaintP1": "Jeśli nie jesteś zadowolony ze sposobu, w jaki przetwarzamy Twoje dane osobowe, masz prawo złożyć skargę do Biura Komisarza ds. Informacji (ICO). Będziemy wdzięczni za możliwość wcześniejszego rozwiązania Twoich obaw — skontaktuj się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>, a dołożymy wszelkich starań, aby rozwiązać problem.",
+      "complaintP1": "Jeśli nie jesteś zadowolony ze sposobu, w jaki przetwarzamy Twoje dane osobowe, masz prawo złożyć skargę do Biura Komisarza ds. Informacji (ICO). Będziemy wdzięczni za możliwość wcześniejszego rozwiązania Twoich obaw — skontaktuj się z nami pod adresem <emailLink>email</emailLink>, a dołożymy wszelkich starań, aby rozwiązać problem.",
       "complaintP2": "Jeśli nie jesteś zadowolony z naszej odpowiedzi, możesz skontaktować się z ICO:",
       "complaintLi1": "<b>Strona internetowa</b>: <icoComplaintLink>ico.org.uk/make-a-complaint</icoComplaintLink>",
       "complaintLi2": "<b>Telefon</b>: 0303 123 1113",
@@ -974,7 +974,7 @@
       "handlerP1": "Podmiotem odpowiedzialnym za przetwarzanie Twoich danych osobowych jest:",
       "handlerLi1": "<b>Lumenshore Limited</b> (Nr firmy 09607326)",
       "handlerLi2": "<b>Adres rejestrowy:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
-      "handlerLi3": "<b>Kontakt:</b> <emailLink>legal@lumenlingo.com</emailLink>",
+      "handlerLi3": "<b>Kontakt:</b> <emailLink>email</emailLink>",
       "crossBorderHeading": "Transfery transgraniczne (APPI Artykuł 28)",
       "crossBorderP1": "Twoje dane osobowe mogą być przekazywane i przetwarzane w krajach poza Japonią. Zgodnie z APPI informujemy Cię o następujących transferach transgranicznych i obowiązujących zabezpieczeniach:",
       "crossBorderLi1": "<b>Wielka Brytania</b> — Lumenshore Limited ma siedzibę w Wielkiej Brytanii, która utrzymuje standardy ochrony danych uznane w ramach porozumienia o wzajemnej adekwatności Japonia-Wielka Brytania",
@@ -989,7 +989,7 @@
       "rightsLi3": "<b>Prawo do zaprzestania używania</b> — żądanie zaprzestania używania lub usunięcia Twoich danych osobowych",
       "rightsLi4": "<b>Prawo do zaprzestania udostępniania osobom trzecim</b> — żądanie zaprzestania udostępniania Twoich danych osobowych osobom trzecim",
       "rightsLi5": "<b>Prawo do ewidencji użycia</b> — żądanie ewidencji udostępniania Twoich danych osobowych osobom trzecim",
-      "rightsP2": "Odpowiemy na Twoje żądania bez zbędnej zwłoki. Aby skorzystać z któregokolwiek z tych praw, skontaktuj się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>.",
+      "rightsP2": "Odpowiemy na Twoje żądania bez zbędnej zwłoki. Aby skorzystać z któregokolwiek z tych praw, skontaktuj się z nami pod adresem <emailLink>email</emailLink>.",
       "ppcHeading": "Komisja Ochrony Informacji Osobowych (PPC)",
       "ppcP1": "Jeśli nie jesteś zadowolony z naszego postępowania z Twoimi danymi osobowymi, możesz złożyć skargę do japońskiej Komisji Ochrony Informacji Osobowych:",
       "ppcLi1": "<b>Strona internetowa:</b> <ppcLink>https://www.ppc.go.jp/en/</ppcLink>",
@@ -1023,7 +1023,7 @@
       "rightsLi5": "<b>Prawo do usunięcia</b> — mogą Państwo żądać usunięcia swoich informacji osobistych, gdy cel przetwarzania został osiągnięty, okres przechowywania upłynął, cofnęli Państwo zgodę lub przetwarzanie narusza prawo",
       "rightsLi6": "<b>Prawo do wyjaśnienia</b> — mogą Państwo żądać wyjaśnienia naszych zasad przetwarzania informacji osobistych",
       "rightsLi7": "<b>Prawo do wycofania zgody</b> — gdy przetwarzanie opiera się na Państwa zgodzie, mają Państwo prawo wycofać ją w dowolnym momencie. Wycofanie nie wpływa na legalność przetwarzania dokonanego przed wycofaniem",
-      "rightsP2": "Odpowiemy na Państwa żądania w ciągu 15 dni. Aby skorzystać z któregokolwiek z tych praw, prosimy o kontakt pod adresem <emailLink>legal@lumenlingo.com</emailLink>.",
+      "rightsP2": "Odpowiemy na Państwa żądania w ciągu 15 dni. Aby skorzystać z któregokolwiek z tych praw, prosimy o kontakt pod adresem <emailLink>email</emailLink>.",
       "dataLocalizationHeading": "Lokalizacja danych",
       "dataLocalizationP1": "PIPL i powiązane przepisy mogą wymagać lokalizacji danych dla określonych typów przetwarzania. Na podstawie naszej aktualnej oceny, jako podmiot przetwarzający na małą skalę, który nie osiąga progów ustalonych przez CAC dla obowiązkowej lokalizacji danych (przetwarzanie informacji osobistych ponad miliona osób lub kumulatywne przekazywanie informacji osobistych ponad 100 000 osób lub wrażliwych informacji osobistych ponad 10 000 osób za granicę), korzystamy z trasy umowy standardowej do transferów transgranicznych zamiast utrzymywania lokalnego przechowywania danych w Chinach.",
       "cacHeading": "Administracja Cyberprzestrzeni Chin (CAC)",
@@ -1053,7 +1053,7 @@
       "rightsLi7": "<b>Informacja o udostępnionych danych</b> — prawo do informacji o podmiotach publicznych i prywatnych, którym udostępniliśmy Państwa dane",
       "rightsLi8": "<b>Informacja o odmowie zgody</b> — prawo do informacji o możliwości i konsekwencjach nieudzielenia zgody",
       "rightsLi9": "<b>Wycofanie zgody</b> — prawo do wycofania zgody w dowolnym momencie, poprzez bezpłatną i łatwą procedurę",
-      "rightsP2": "Aby skorzystać z któregokolwiek z tych praw, prosimy o kontakt pod adresem <emailLink>legal@lumenlingo.com</emailLink>. Odpowiemy bez nieuzasadnionej zwłoki.",
+      "rightsP2": "Aby skorzystać z któregokolwiek z tych praw, prosimy o kontakt pod adresem <emailLink>email</emailLink>. Odpowiemy bez nieuzasadnionej zwłoki.",
       "crossBorderHeading": "Międzynarodowe transfery danych",
       "crossBorderP1": "Państwa dane osobowe mogą być przekazywane poza Brazylię. Na podstawie LGPD zapewniamy, że transfery międzynarodowe są dokonywane z odpowiednimi zabezpieczeniami:",
       "crossBorderLi1": "<b>Wielka Brytania</b> — Lumenshore Limited ma siedzibę w Wielkiej Brytanii, która utrzymuje standardy ochrony danych. Opieramy się na standardowych klauzulach umownych jako mechanizmie transferu",
@@ -1092,7 +1092,7 @@
       "ageHeading": "Wiek zgody cyfrowej",
       "ageP1": "Francja ustaliła wiek zgody cyfrowej na 15 lat. Poniżej 15 lat wymagana jest weryfikowalna zgoda rodzicielska.",
       "postMortemHeading": "Dyrektywy post-mortem",
-      "postMortemP1": "Zgodnie z prawem francuskim (Loi Informatique et Libertés, art. 85) mają Państwo prawo do określenia dyspozycji dotyczących danych osobowych po śmierci. Prosimy o kontakt: <emailLink>legal@lumenlingo.com</emailLink>.",
+      "postMortemP1": "Zgodnie z prawem francuskim (Loi Informatique et Libertés, art. 85) mają Państwo prawo do określenia dyspozycji dotyczących danych osobowych po śmierci. Prosimy o kontakt: <emailLink>email</emailLink>.",
       "consumerHeading": "Francuska ochrona konsumentów",
       "consumerP1": "Zgodnie z Code de la consommation (art. L221-1 do L221-18) konsumenci we Francji korzystają z 14-dniowego prawa odstąpienia.",
       "mentionsHeading": "Mentions Légales (Nota prawna)",
@@ -1280,7 +1280,7 @@
       "minimizationLi4": "Brak trackerów reklamowych od stron trzecich.",
       "parentalHeading": "Kontrola rodzicielska",
       "parentalP1": "W przypadku udzielenia zgody rodzica lub opiekuna:",
-      "parentalLi1": "Rodzice mogą przeglądać dane dziecka pisząc na legal@lumenlingo.com.",
+      "parentalLi1": "Rodzice mogą przeglądać dane dziecka pisząc na <emailLink>email</emailLink>.",
       "parentalLi2": "Rodzice mogą cofnąć zgodę w dowolnym momencie.",
       "parentalLi3": "Na żądanie rodzica usuwamy wszystkie dane niepełnoletniego.",
       "ageAppropriateHeading": "Informacje o prywatności dostosowane do wieku",
@@ -1316,7 +1316,7 @@
       "assessment2": "LumenLingo przetwarza minimalne dane osobowe i nie monitoruje systematycznie zachowania osob z siedziba w UE. Algorytmy uczenia sie aplikacji dzialaja lokalnie na urzadzeniach uzytkownikow i nie obejmuja profilowania ani sledzenia po stronie serwera.",
       "assessment3": "Lumenshore ocenila swoje dzialania w zakresie przetwarzania i stwierdzila, ze biorac pod uwage obecny zakres i charakter przetwarzania danych, wyznaczenie przedstawiciela w UE na mocy art. 27 nie jest obecnie obowiazkowe. Jednakze, w duchu dobrych praktyk i przejrzystosci, Lumenshore dobrowolnie wyznaczyla nastepujacy punkt kontaktowy dla zapytan dotyczacych ochrony danych w UE:",
       "contact1": "W sprawach dotyczacych ochrony danych od osob lub organow nadzorczych z siedziba w UE:",
-      "contact2": "Lumenshore Limited, legal@lumenlingo.com",
+      "contact2": "Lumenshore Limited, <emailLink>email</emailLink>",
       "contact3": "Lumenshore bedzie okresowo dokonywac przegladu tej oceny i formalnie wyznaczy przedstawiciela w UE zgodnie z art. 27 RODO, jesli bedzie to wymagane przez zmiany w dzialalnosci przetwarzania, obowiazujace wytyczne lub wymogi regulacyjne.",
       "supervisory1": "Osoby z siedziba w UE maja prawo zlozyc skarge do lokalnego organu nadzorczego ds. ochrony danych. Lista organow nadzorczych EOG jest dostepna na stronie internetowej Europejskiej Rady Ochrony Danych.",
       "supervisory2": "Jesli Lumenshore formalnie wyznaczy przedstawiciela w UE w przyszlosci, dane przedstawiciela zostana opublikowane w niniejszej Polityce Prywatnosci i przekazane wlasciwemu organowi nadzorczemu zgodnie z art. 27(4) RODO."
@@ -1327,7 +1327,7 @@
       "p1": "LumenShore ujawni dane osobowe organom ścigania lub organom rządowym wyłącznie w przypadku prawnego zobowiązania — na przykład na podstawie nakazu sądowego, nakazu rewizji lub obowiązku ustawowego wynikającego z Ustawy o ochronie danych osobowych 2018 (Data Protection Act 2018), sekcja 7.",
       "p2": "W przypadku otrzymania zgodnego z prawem żądania udostępnienia danych osobowych, powiadomimy użytkownika, którego te dane dotyczą, chyba że jest to prawnie zabronione (na przykład na mocy zakazu ujawniania dołączonego do żądania).",
       "p3": "Sprzeciwiamy się wszelkim żądaniom, które uznajemy za zbyt szerokie, nieproporcjonalne lub pozbawione właściwej podstawy prawnej. Nie udostępniamy dobrowolnie danych osobowych żadnemu organowi rządowemu i nie uczestniczymy w programach masowej inwigilacji.",
-      "p4": "Jeśli masz pytania dotyczące naszego podejścia do żądań organów ścigania, skontaktuj się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>."
+      "p4": "Jeśli masz pytania dotyczące naszego podejścia do żądań organów ścigania, skontaktuj się z nami pod adresem <emailLink>email</emailLink>."
     },
     "liability": {
       "crossRef": "Aby zapoznać się ze szczegółami dotyczącymi ograniczenia naszej odpowiedzialności, prosimy o zapoznanie się z sekcją Ograniczenie odpowiedzialności w naszych <termsLink>Warunkach korzystania z usługi</termsLink>.",
@@ -1391,7 +1391,7 @@
       "li5": "<b>Okres odstąpienia</b> — na mocy Consumer Contracts Regulations 2013 przysługuje Ci 14-dniowe prawo do odstąpienia od umowy zawartej na odległość bez podania przyczyny. Po zainicjowaniu zakupu w App Store, Apple przedstawia warunki subskrypcji. Potwierdzając zakup (przez Face ID, Touch ID lub kod), wyrażasz wyraźną zgodę na natychmiastowe dostarczenie treści cyfrowych i potwierdzasz utratę prawa do odstąpienia po udostępnieniu treści.",
       "li6": "<b>Anulowanie</b> — Mozesz anulowac przyszle odnowienia w dowolnym momencie w Ustawieniach → Apple ID → Subskrypcje. Anulowanie obowiazuje od konca biezacego okresu rozliczeniowego. Zachowujesz dostep do funkcji premium do tej daty.",
       "li7": "<b>Zwroty</b> — Wszystkie wnioski o zwrot sa obslugiwane przez Apple. Aby poprosic o zwrot, odwiedz <refundLink>reportaproblem.apple.com</refundLink>. Lumenshore nie przetwarza zwrotow bezposrednio, poniewaz Apple jest zarejestrowanym sprzedawca dla wszystkich zakupow w App Store.",
-      "li8": "<b>Reklamacje</b> — Jesli masz reklamacje dotyczaca naszej uslugi, skontaktuj sie z nami pod adresem <email>legal@lumenlingo.com</email>. Staramy sie rozwiazac wszystkie reklamacje w ciagu 14 dni.",
+      "li8": "<b>Reklamacje</b> — Jesli masz reklamacje dotyczaca naszej uslugi, skontaktuj sie z nami pod adresem <emailLink>email</emailLink>. Staramy sie rozwiazac wszystkie reklamacje w ciagu 14 dni.",
       "li5a": "<b>Potwierdzenie zgody</b> — potwierdzenie Twojej zgody na natychmiastowe wykonanie zostanie wysłane za pośrednictwem paragonu App Store dostarczonego na adres e-mail Twojego Apple ID, który stanowi trwały nośnik zgodnie z CCR 2013 reg. 16."
     },
     "acceptableUse": {
@@ -1446,7 +1446,7 @@
       "p2": "Możesz zrezygnować ze swojego konta w dowolnym momencie, wykonując następujące czynności:",
       "li1": "Anulowanie subskrypcji za pośrednictwem App Store",
       "li2": "Usunięcie danych konta za pośrednictwem ustawień aplikacji",
-      "li3": "Kontakt z nami pod adresem legal@lumenlingo.com",
+      "li3": "Kontakt z nami pod adresem <emailLink>email</emailLink>",
       "li4": "Po rozwiązaniu umowy Twoje prawo do korzystania z Usługi natychmiast wygasa. Danymi iCloud można zarządzać za pośrednictwem ustawień Apple ID."
     },
     "governingLaw": {
@@ -1482,7 +1482,7 @@
     "contactUs": {
       "heading": "Kontakt z nami",
       "intro": "Jeśli masz pytania dotyczące niniejszych Warunków lub chcesz zgłosić problem, skontaktuj się z nami:",
-      "email": "<b>E-mail</b>: <emailLink>legal@lumenlingo.com</emailLink>",
+      "email": "<b>E-mail</b>: <emailLink>email</emailLink>",
       "company": "<b>Firma</b>: Lumenshore Limited, Zjednoczone Królestwo",
       "responseTime": "Zazwyczaj odpowiadamy w ciągu 48 godzin.",
       "address": "<b>Adres siedziby</b>: Lumenshore Limited, Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, Anglia"
@@ -1551,7 +1551,7 @@
       "li4": "Odpowiemy na uzasadnione zgłoszenia DMCA w ciągu 10 dni roboczych",
       "li5": "Wobec osób powtarzających naruszenia dostęp do Usługi może zostać cofnięty",
       "li6": "Sprzeciwy mogą być składane zgodnie z obowiązującym prawem",
-      "p3": "Aby zgłosić naruszenie zgodnie z DMCA, prosimy o kontakt pod adresem <email>legal@lumenlingo.com</email> z następującymi informacjami:",
+      "p3": "Aby zgłosić naruszenie zgodnie z DMCA, prosimy o kontakt pod adresem <emailLink>email</emailLink> z następującymi informacjami:",
       "p4": "Twoje imię i nazwisko oraz dane kontaktowe",
       "p5": "Identyfikacja dzieła chronionego prawem autorskim, którego prawa zostały według Ciebie naruszone",
       "p6": "Opis materiału naruszającego prawa oraz jego lokalizacja w ramach Usługi"
@@ -1588,16 +1588,16 @@
       "heading": "Rozwiazywanie sporow",
       "intro": "Wierzymy, ze wiekszosc wątpliwości mozna rozwiazac szybko i polubownie. Jezeli miedzy Toba a Lumenshore powstanie spor w związku z niniejszymi Warunkami lub korzystaniem z Uslugi, obowiazuje nastepujaca procedura:",
       "step1Heading": "Krok 1 — Polubowne rozwiazanie",
-      "step1P1": "Przed wszczeciem jakichkolwiek formalnych postępowan prosimy o kontakt pod adresem <emailLink>legal@lumenlingo.com</emailLink> ze szczegolowym opisem problemu. Zobowiazujemy sie do prowadzenia rozmow w dobrej wierze w celu rozwiazania sprawy w ciagu <b>30 dni</b> od otrzymania Twojej wiadomosci.",
+      "step1P1": "Przed wszczeciem jakichkolwiek formalnych postępowan prosimy o kontakt pod adresem <emailLink>email</emailLink> ze szczegolowym opisem problemu. Zobowiazujemy sie do prowadzenia rozmow w dobrej wierze w celu rozwiazania sprawy w ciagu <b>30 dni</b> od otrzymania Twojej wiadomosci.",
       "step2Heading": "Krok 2 — Mediacja",
       "step2P1": "Jezeli rozmowy nieformalne nie rozwiaza sporu w ciagu 30 dni, kazda ze stron moze zaproponowac mediacjẹ za posrednictwem wzajemnie uzgodnionego mediatora. Mediacja jest dobrowolna, a koszty sa dzielone rowno, chyba ze strony uzgodniły inaczej.",
       "step3Heading": "Krok 3 — Postẹpowanie sadowe",
       "step3P1": "Jezeli spor pozostanie nierozwiazany po polubownym rozwiazaniu w dobrej wierze i, w przypadku podjecia proby, mediacji, kazda ze stron moze wszczac postepowanie sadowe. Sady Anglii i Walii maja wylaczna jurysdykcje, z zastrzezeniem ponizszych wyjatkow ochrony konsumentow.",
       "odrHeading": "Internetowe rozwiazywanie sporow w UE",
-      "odrP1": "Jezeli jestes konsumentem w Unii Europejskiej, mozesz rowniez skorzystac z platformy internetowego rozwiazywania sporow (ODR) Komisji Europejskiej: <odrLink>https://ec.europa.eu/consumers/odr/</odrLink>. Nasz adres e-mail do celow ODR to legal@lumenlingo.com.",
+      "odrP1": "Jezeli jestes konsumentem w Unii Europejskiej, mozesz rowniez skorzystac z platformy internetowego rozwiazywania sporow (ODR) Komisji Europejskiej: <odrLink>https://ec.europa.eu/consumers/odr/</odrLink>. Nasz adres e-mail do celow ODR to <emailLink>email</emailLink>.",
       "arbitrationHeading": "Arbitraz dla uzytkownikow ze Stanow Zjednoczonych",
       "arbitrationP1": "Jezeli mieszkasz w Stanach Zjednoczonych, kazdy spor, ktory nie moze byc rozwiazany w drodze powyzszego postepowania polubownego, zostanie rozwiazany w drodze <b>wiazacego arbitrazu indywidualnego</b>, a nie przed sadem, z wyjatkiem sytuacji, gdy mozesz dochodzic roszczen w sadzie do spraw drobnych roszczen, jezeli Twoje roszczenia sie kwalifikuja. Arbitraz bedzie prowadzony przez Amerykanskie Stowarzyszenie Arbitrazowe (AAA) zgodnie z jego Regulaminem Arbitrazu Konsumenckiego.",
-      "arbitrationP2": "Masz prawo <b>zrezygnowac</b> z niniejszej klauzuli arbitrazowej w ciagu 30 dni od pierwszego zaakceptowania niniejszych Warunkow, wysylajac pisemne powiadomienie na adres legal@lumenlingo.com. Jezeli zrezygnujesz, spory beda rozwiazywane przed sadami Anglii i Walii.",
+      "arbitrationP2": "Masz prawo <b>zrezygnowac</b> z niniejszej klauzuli arbitrazowej w ciagu 30 dni od pierwszego zaakceptowania niniejszych Warunkow, wysylajac pisemne powiadomienie na adres <emailLink>email</emailLink>. Jezeli zrezygnujesz, spory beda rozwiazywane przed sadami Anglii i Walii.",
       "classActionHeading": "Zrzeczenie sie pozwow zbiorowych",
       "classActionP1": "W najszerszym zakresie dozwolonym przez obowiazujace prawo Ty i Lumenshore zgadzacie sie, ze wszelkie postepowania w sprawie rozwiazywania sporow beda prowadzone wylacznie indywidualnie, a nie jako pozew zbiorowy, skonsolidowany lub reprezentacyjny. Jezeli niniejsze zrzeczenie sie okaze sie niewykonalne w Twojej jurysdykcji, pozostale postanowienia niniejszego dzialu pozostaja w pelnej mocy.",
       "consumerNote": "Jezeli jestes konsumentem w Unii Europejskiej lub Zjednoczonym Krolestwie, nic w niniejszym dziale nie wplywa na Twoje prawa ustawowe, w tym prawo do wszczecia postepowania przed sadami w kraju Twojego zamieszkania.",
@@ -1637,7 +1637,7 @@
       "classActionP1": "Ty i Lumenshore zgadzacie się, że każda ze stron może wnosić roszczenia wobec drugiej wyłącznie w indywidualnym charakterze, a <b>nie jako powód lub członek grupy</b> w jakimkolwiek domniemanym pozwie zbiorowym, skonsolidowanym lub przedstawicielskim.",
       "classActionP2": "Zrzekasz sie prawa do procesu z udzialem lawy przysieclych w sporach niepodlegajacych arbitrazowi.",
       "optOutHeading": "30-dniowe prawo rezygnacji",
-      "optOutP1": "Mozesz zrezygnowac z tej umowy arbitrazowej w ciagu 30 dni od pierwszego zaakceptowania niniejszych Warunkow, wysylajac pisemne zawiadomienie na adres <emailLink>legal@lumenlingo.com</emailLink>.",
+      "optOutP1": "Mozesz zrezygnowac z tej umowy arbitrazowej w ciagu 30 dni od pierwszego zaakceptowania niniejszych Warunkow, wysylajac pisemne zawiadomienie na adres <emailLink>email</emailLink>.",
       "smallClaimsHeading": "Wyjatek dla drobnych roszczen",
       "smallClaimsP1": "Kazda ze stron moze wnosic indywidualne roszczenia do wlasciwego sadu ds. drobnych roszczen.",
       "exceptionsHeading": "Wyjatki od arbitrazu",
@@ -1868,7 +1868,7 @@
     "preSuitNotice": {
       "heading": "Zawiadomienie Przedprocesowe i Obowiazkowe Negocjacje",
       "noticeHeading": "Wymog Zawiadomienia",
-      "notice1": "Przed wszczeciem jakiegokolwiek postepowania sadowego lub arbitrazowego przeciwko Lumenshore, musisz najpierw wyslac pisemne Zawiadomienie o Sporze ('Zawiadomienie') do Lumenshore na adres legal@lumenlingo.com oraz pocztą na adres siedziby: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA.",
+      "notice1": "Przed wszczeciem jakiegokolwiek postepowania sadowego lub arbitrazowego przeciwko Lumenshore, musisz najpierw wyslac pisemne Zawiadomienie o Sporze ('Zawiadomienie') do Lumenshore na adres <emailLink>email</emailLink> oraz pocztą na adres siedziby: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA.",
       "notice2": "Zawiadomienie musi zawierac: pelne imie i nazwisko, adres e-mail powiazany z Usluga, szczegolowy opis roszczenia, konkretne postanowienie Warunkow rzekomo naruszone, konkretne zadane odszkodowanie oraz Twoj podpis lub jego elektroniczny odpowiednik.",
       "negotiationHeading": "Obowiazkowy Okres Negocjacji",
       "negotiation1": "Po otrzymaniu Zawiadomienia strony beda prowadzic negocjacje w dobrej wierze przez okres szescdziesieciu (60) dni, zanim ktorakolwiek ze stron bedzie mogla wszczac postepowanie sadowe lub arbitrazowe.",
@@ -2024,7 +2024,7 @@
       "provider": "<b>Centrum Skutecznego Rozwiązywania Sporów (CEDR)</b>",
       "providerWebsite": "Strona internetowa: <cedrLink>https://www.cedr.com</cedrLink>",
       "providerAddress": "Adres: 100 St Paul's Churchyard, London, EC4M 8BU",
-      "p3": "Przed skierowaniem sprawy do ADR prosimy o kontakt z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>, abyśmy mogli spróbować rozwiązać Twoją reklamację bezpośrednio.",
+      "p3": "Przed skierowaniem sprawy do ADR prosimy o kontakt z nami pod adresem <emailLink>email</emailLink>, abyśmy mogli spróbować rozwiązać Twoją reklamację bezpośrednio.",
       "p4": "Jeśli jesteś konsumentem w UE, możesz również skorzystać z platformy ODR Komisji Europejskiej pod adresem <odrLink>https://ec.europa.eu/consumers/odr/</odrLink>."
     },
     "systemRequirements": {
@@ -2045,7 +2045,7 @@
     "accessibility": {
       "heading": "Dostępność",
       "p1": "Zobowiązujemy się do zapewnienia dostępności LumenLingo dla wszystkich użytkowników. Dążymy do zgodności z Wytycznymi dotyczącymi dostępności treści internetowych (WCAG) 2.1 poziom AA dla naszej strony internetowej i stosujemy się do wytycznych Apple dotyczących interfejsu użytkownika w zakresie dostępności w naszej aplikacji iOS. Szczegóły znajdziesz w naszej <accessibilityLink>Deklaracji dostępności</accessibilityLink>.",
-      "p2": "Jeśli napotkasz bariery dostępności, skontaktuj się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>. Uznajemy nasze obowiązki wynikające z Ustawy o równości 2010 i dołożymy starań, aby niezwłocznie rozwiązać zgłoszone problemy."
+      "p2": "Jeśli napotkasz bariery dostępności, skontaktuj się z nami pod adresem <emailLink>email</emailLink>. Uznajemy nasze obowiązki wynikające z Ustawy o równości 2010 i dołożymy starań, aby niezwłocznie rozwiązać zgłoszone problemy."
     },
     "fairnessNotice": {
       "heading": "Informacja o prawach konsumenta",
@@ -2148,7 +2148,7 @@
       "securityHeading": "Odpowiedzialnosc Uzytkownika za Bezpieczenstwo Konta",
       "security1": "Jestes wylacznie odpowiedzialny za utrzymywanie poufnosci i bezpieczenstwa danych logowania do swojego konta.",
       "security2": "Jestes odpowiedzialny za wszelka aktywnosc na swoim koncie, niezaleznie od tego, czy byla przez Ciebie autoryzowana.",
-      "security3": "Musisz niezwlocznie powiadomic Lumenshore (legal@lumenlingo.com) o kazdym nieautoryzowanym dostepie do Twojego konta lub jego nieautoryzowanym uzyciu.",
+      "security3": "Musisz niezwlocznie powiadomic Lumenshore (<emailLink>email</emailLink>) o kazdym nieautoryzowanym dostepie do Twojego konta lub jego nieautoryzowanym uzyciu.",
       "security4": "Lumenshore nie ponosi odpowiedzialnosci za jakiekolwiek straty wynikajace z nieautoryzowanego dostepu do Twojego konta, jesli taki dostep wynikal z Twojego zaniedbania w utrzymywaniu bezpieczenstwa konta.",
       "familyHeading": "Udostepnianie Rodzinne",
       "family1": "Apple Family Sharing, jesli jest dostepne i obslugiwane, jest jedyna autoryzowana metoda udostepniania dostepu do Uslugi innym czlonkom Twojego gospodarstwa domowego.",
@@ -2188,7 +2188,7 @@
       "heading": "Zgodnosc z Aktem o Uslugach Cyfrowych UE (DSA)",
       "contactHeading": "Punkt Kontaktowy",
       "contact1": "Zgodnie z Rozporzadzeniem UE 2022/2065 (Akt o Uslugach Cyfrowych) wyznaczonym punktem kontaktowym dla organow UE i uzytkownikow w sprawach prawnych i regulacyjnych jest:",
-      "contact2": "Lumenshore Limited, legal@lumenlingo.com",
+      "contact2": "Lumenshore Limited, <emailLink>email</emailLink>",
       "contact3": "Ten punkt kontaktowy moze byc wykorzystywany przez odbiorcow Uslugi oraz przez wlasciwe organy do komunikacji zwiazanej z zastosowaniem DSA. Komunikacja moze odbywac sie w jezyku angielskim.",
       "intermediaryHeading": "Klasyfikacja Uslugi",
       "intermediary1": "LumenLingo jest aplikacja do nauki jezykow, ktora dostarcza wlasne tresci edukacyjne (fiszki, objasnienia gramatyczne, zwroty i nagrania audio) bezposrednio uzytkownikom. Lumenshore jest wydawca wszystkich tresci w ramach Uslugi.",
@@ -2197,7 +2197,7 @@
       "transparencyHeading": "Informacje o Przejrzystosci (DSA Art. 14)",
       "transparency1": "Moderacja tresci: LumenLingo nie hostuje tresci generowanych przez uzytkownikow. Wszystkie tresci sa tworzone, doglądane i publikowane przez Lumenshore. Moderacja tresci przesylanych przez uzytkownikow nie jest wymagana ani prowadzona.",
       "transparency2": "Podejmowanie decyzji przez algorytmy: LumenLingo moze wykorzystywac algorytmy do personalizacji doswiadczenia uczenia sie, w tym planowania powtórek rozlozonych w czasie i dostosowania poziomu trudnosci tresci. Systemy te dzialaja lokalnie na urzadzeniu uzytkownika i nie profiluja uzytkownikow do celow reklamowych.",
-      "transparency3": "Obsługa reklamacji: Jesli masz reklamacje dotyczaca Uslugi, mozesz skontaktowac sie z nami pod adresem legal@lumenlingo.com. Potwierdzimy otrzymanie w ciagu 5 dni roboczych i postaramy sie udzielic merytorycznej odpowiedzi w ciagu 30 dni kalendarzowych.",
+      "transparency3": "Obsługa reklamacji: Jesli masz reklamacje dotyczaca Uslugi, mozesz skontaktowac sie z nami pod adresem <emailLink>email</emailLink>. Potwierdzimy otrzymanie w ciagu 5 dni roboczych i postaramy sie udzielic merytorycznej odpowiedzi w ciagu 30 dni kalendarzowych.",
       "complianceHeading": "Oswiadczenie o Zgodnosci z DSA",
       "compliance1": "Lumenshore Limited zobowiazuje sie do przestrzegania Aktu o Uslugach Cyfrowych (Rozporzadzenie UE 2022/2065) w zakresie, w jakim ma on zastosowanie do Uslugi.",
       "compliance2": "Poniewaz LumenLingo nie kwalifikuje sie jako usluga posrednictwa, usluga hostingowa ani platforma internetowa w ramach DSA, wiekszosc obowiazkow DSA (w tym mechanizm powiadamiania i dzialania zgodnie z art. 16 oraz raportowanie przejrzystosci zgodnie z art. 15) nie ma obecnie zastosowania.",
@@ -2380,12 +2380,12 @@
       "versionHistory": "Historia wersji",
       "v1": "<b>v1.0</b> (24 marca 2026) — Opublikowano początkową Politykę Plików Cookie.",
       "v1_1": "<b>v1.1</b> (26 marca 2026) — Faza 2 wzmocnienia prawnego: dodano prawo do skargi do ICO; dodano mechanizm rozliczalności zgody; odrębnie ujawniono Vercel Speed Insights; wymieniono klucze Sentry; usunięto język hedgingowy; ujednolicono nazwę firmy.",
-      "v1_2": "<b>v1.2</b> (27 marca 2026) — Faza 3 wzmocnienia prawnego: dodano sekcję mechanizmu zgody na pliki cookie (odrzucenie, wycofanie, wyraźna zgoda), dodano granularne kontrole plików cookie (niezbędne, funkcjonalne, analityczne), dodano instrukcje zarządzania pamięcią przeglądarki (Chrome, Safari, Firefox, Edge), dodano oświadczenie o dostępności, dodano odsyłacz do przechowywania danych w Polityce prywatności, ustandaryzowano adresy e-mail kontaktowe na legal@lumenlingo.com."
+      "v1_2": "<b>v1.2</b> (27 marca 2026) — Faza 3 wzmocnienia prawnego: dodano sekcję mechanizmu zgody na pliki cookie (odrzucenie, wycofanie, wyraźna zgoda), dodano granularne kontrole plików cookie (niezbędne, funkcjonalne, analityczne), dodano instrukcje zarządzania pamięcią przeglądarki (Chrome, Safari, Firefox, Edge), dodano oświadczenie o dostępności, dodano odsyłacz do przechowywania danych w Polityce prywatności, ustandaryzowano adresy e-mail kontaktowe na <emailLink>email</emailLink>."
     },
     "contact": {
       "heading": "Kontakt",
       "intro": "Jeśli masz pytania dotyczące tej Polityki Plików Cookie:",
-      "email": "<b>E-mail:</b> <emailLink>legal@lumenlingo.com</emailLink>",
+      "email": "<b>E-mail:</b> <emailLink>email</emailLink>",
       "company": "<b>Firma:</b> Lumenshore Limited (numer firmy: 09607326)",
       "responseTime": "Zwykle odpowiadamy w ciągu 48 godzin."
     },
@@ -2417,7 +2417,7 @@
       "icoWebsite": "<b>Strona internetowa:</b> <icoLink>ico.org.uk</icoLink>",
       "icoPhone": "<b>Infolinia:</b> 0303 123 1113",
       "icoAddress": "<b>Adres:</b> Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF, Wielka Brytania",
-      "p2": "Będziemy wdzięczni za możliwość rozwiązania Twojego problemu przed skontaktowaniem się z ICO. Napisz do nas na adres <emailLink>legal@lumenlingo.com</emailLink>, a odpowiemy w ciągu 48 godzin."
+      "p2": "Będziemy wdzięczni za możliwość rozwiązania Twojego problemu przed skontaktowaniem się z ICO. Napisz do nas na adres <emailLink>email</emailLink>, a odpowiemy w ciągu 48 godzin."
     },
     "consentAccountability": {
       "heading": "Jak wykazujemy zgodę (RODO art. 7 ust. 1)",
@@ -2450,7 +2450,7 @@
     },
     "accessibility": {
       "heading": "Dostępność ustawień cookie",
-      "p1": "Baner cookie i panel ustawień zostały zaprojektowane tak, aby były w pełni dostępne. Wszystkie elementy sterujące obsługują nawigację klawiaturą (Tab, Enter, Spacja) i są kompatybilne z czytnikami ekranu dzięki odpowiednim etykietom ARIA. Kontrast kolorów spełnia wymagania WCAG 2.1 Poziom AA. Jeśli masz trudności z interakcją z banerem cookie lub ustawieniami, skontaktuj się z nami pod adresem <emailLink>legal@lumenlingo.com</emailLink>, a pomożemy Ci w zarządzaniu preferencjami cookie."
+      "p1": "Baner cookie i panel ustawień zostały zaprojektowane tak, aby były w pełni dostępne. Wszystkie elementy sterujące obsługują nawigację klawiaturą (Tab, Enter, Spacja) i są kompatybilne z czytnikami ekranu dzięki odpowiednim etykietom ARIA. Kontrast kolorów spełnia wymagania WCAG 2.1 Poziom AA. Jeśli masz trudności z interakcją z banerem cookie lub ustawieniami, skontaktuj się z nami pod adresem <emailLink>email</emailLink>, a pomożemy Ci w zarządzaniu preferencjami cookie."
     },
     "retention": {
       "crossRef": "Aby zapoznać się z pełnymi szczegółami dotyczącymi okresów przechowywania danych, w tym czasu przechowywania danych osobowych i naszego harmonogramu usuwania, prosimy o zapoznanie się z naszą <privacyLink>Polityką prywatności</privacyLink>.",
@@ -2568,7 +2568,7 @@
     "contact": {
       "heading": "Kontakt",
       "intro": "Jeśli masz pytania dotyczące niniejszej EULA, skontaktuj się z nami:",
-      "email": "<b>E-mail:</b> <emailLink>legal@lumenlingo.com</emailLink>",
+      "email": "<b>E-mail:</b> <emailLink>email</emailLink>",
       "company": "<b>Firma:</b> Lumenshore Limited (numer firmy 09607326)",
       "address": "<b>Adres:</b> Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, LE4 9HA, Zjednoczone Królestwo",
       "responseTime": "Zazwyczaj odpowiadamy w ciągu 48 godzin."
@@ -2609,7 +2609,7 @@
       "li2": "<b>PhoneNumberKit</b> (przetwarzanie numerów telefonu) — Licencja MIT",
       "li3": "<b>RevenueCat Purchases</b> (zarządzanie subskrypcjami) — Licencja MIT",
       "li4": "<b>Clerk iOS SDK</b> (uwierzytelnianie) — Licencja MIT",
-      "p3": "Pełny tekst każdej licencji możesz wyświetlić w Aplikacji w Ustawienia > Licencje Open Source lub kontaktując się z nami pod adresem legal@lumenlingo.com."
+      "p3": "Pełny tekst każdej licencji możesz wyświetlić w Aplikacji w Ustawienia > Licencje Open Source lub kontaktując się z nami pod adresem <emailLink>email</emailLink>."
     },
     "appUpdates": {
       "heading": "Aktualizacje aplikacji",
@@ -2724,7 +2724,7 @@
     },
     "contact": {
       "heading": "Wolisz e-mail?",
-      "p1": "Możesz również skorzystać ze swoich praw, wysyłając e-mail bezpośrednio na adres <emailLink>legal@lumenlingo.com</emailLink>. Podaj swoje imię i nazwisko, adres e-mail powiązany z danymi oraz typ wniosku.",
+      "p1": "Możesz również skorzystać ze swoich praw, wysyłając e-mail bezpośrednio na adres <emailLink>email</emailLink>. Podaj swoje imię i nazwisko, adres e-mail powiązany z danymi oraz typ wniosku.",
       "responseTime": "Zwykle odpowiadamy w ciągu 48 godzin."
     }
   },
@@ -2746,7 +2746,7 @@
     "addressLine2": "Humberstone Lane",
     "addressLine3": "Leicester, England, LE4 9HA",
     "contactHeading": "Kontakt",
-    "contactEmail": "Email: legal@lumenlingo.com",
+    "contactEmail": "Email: <emailLink>email</emailLink>",
     "vatHeading": "Informacje o VAT",
     "vatNumber": "Numer rejestracyjny VAT: GB 270411929",
     "responsibleHeading": "Odpowiedzialny za treść (§ 55 ust. 2 RStV)",
@@ -2773,7 +2773,7 @@
     "publisherJurisdiction": "Zarejestrowana w Anglii i Walii",
     "publisherAddress": "Windsor House, Cornwall Road, Harrogate, HG1 2PW, Wielka Brytania",
     "publisherVat": "VAT: GB 270411929",
-    "publisherEmail": "E-mail: legal@lumenlingo.com",
+    "publisherEmail": "E-mail: <emailLink>email</emailLink>",
     "publisherWebsite": "Strona: https://lumenshore.com",
     "directorHeading": "Dyrektor publikacji",
     "directorName": "Dyrektor LumenShore Limited",
@@ -2784,7 +2784,7 @@
     "intellectualHeading": "Własność intelektualna",
     "intellectualP1": "Wszystkie treści na tej stronie (teksty, obrazy, grafiki, logotypy, ikony, oprogramowanie) są własnością LumenShore Limited lub jej licencjodawców i są chronione prawem własności intelektualnej.",
     "disputeHeading": "Rozstrzyganie sporów",
-    "disputeP1": "W razie sporu konsument może skorzystać z platformy ODR Komisji Europejskiej: https://ec.europa.eu/consumers/odr lub skontaktować się z nami: legal@lumenlingo.com."
+    "disputeP1": "W razie sporu konsument może skorzystać z platformy ODR Komisji Europejskiej: https://ec.europa.eu/consumers/odr lub skontaktować się z nami: <emailLink>email</emailLink>."
   },
   "CommunityGuidelines": {
     "breadcrumb": "Community Guidelines",
@@ -2831,7 +2831,7 @@
       "heading": "Reporting Mechanism",
       "p1": "If you encounter content or behaviour that violates these guidelines, you can report it through:",
       "li1": "In-app report button — available on all user-generated content (tap the three-dot menu and select 'Report')",
-      "li2": "Email — send reports to support@lumenlingo.com with a description of the issue and any screenshots or links",
+      "li2": "Email — send reports to <supportEmailLink>email</supportEmailLink> with a description of the issue and any screenshots or links",
       "li3": "Contact form — use our Contact page to submit a detailed report",
       "li4": "Trusted flaggers — organisations designated under the EU Digital Services Act receive priority review for their reports",
       "p2": "All reports are treated confidentially. We do not disclose the identity of reporters to the reported user."
@@ -2848,7 +2848,7 @@
     "appeals": {
       "heading": "Appeal Process",
       "p1": "If you believe a moderation decision was made in error, you may appeal:",
-      "li1": "Submit an appeal via email to appeals@lumenlingo.com within 14 days of the enforcement action, including your account identifier and a clear explanation of why you believe the decision was incorrect",
+      "li1": "Submit an appeal via email to <appealsEmailLink>email</appealsEmailLink> within 14 days of the enforcement action, including your account identifier and a clear explanation of why you believe the decision was incorrect",
       "li2": "Appeals are reviewed by a moderator who was not involved in the original decision, typically within 7 business days",
       "li3": "EU users may also refer complaints to the Digital Services Coordinator in their Member State or to a certified out-of-court dispute settlement body under DSA Article 21"
     },
@@ -2864,7 +2864,7 @@
     "dsaCompliance": {
       "heading": "EU Digital Services Act Compliance",
       "p1": "In accordance with Regulation (EU) 2022/2065 (the Digital Services Act), LumenLingo as an intermediary service provider:",
-      "li1": "Maintains a single point of contact for competent authorities and users — reachable at dsa@lumenlingo.com",
+      "li1": "Maintains a single point of contact for competent authorities and users — reachable at <dsaEmailLink>email</dsaEmailLink>",
       "li2": "Publishes this transparency notice as part of our Terms of Service and Community Guidelines",
       "li3": "Provides a notice-and-action mechanism for reporting illegal content, accessible through the reporting channels described above",
       "li4": "Issues statements of reasons when content is removed or accounts are restricted, including the legal or contractual basis and information on available redress",
@@ -2961,7 +2961,7 @@
     "alternatives": {
       "heading": "Alternatywne sposoby dostepu do tresci",
       "intro": "Jesli masz trudnosci z korzystaniem z jakiejkolwiek czesci LumenLingo, dostepne sa nastepujace alternatywy:",
-      "li1": "<b>Wsparcie e-mailowe:</b> Skontaktuj sie z nami pod adresem <emailLink>accessibility@lumenlingo.com</emailLink>, a dostarczymy potrzebna tresc w dostepnym formacie (czysty tekst, opis audio lub alternatywny uklad).",
+      "li1": "<b>Wsparcie e-mailowe:</b> Skontaktuj sie z nami pod adresem <emailLink>email</emailLink>, a dostarczymy potrzebna tresc w dostepnym formacie (czysty tekst, opis audio lub alternatywny uklad).",
       "li2": "<b>Nawigacja za pomoca klawiatury:</b> Cala zawartosc i interakcje na stronie sa dostepne wylacznie za pomoca klawiatury (Tab, Shift+Tab, Enter, Escape, klawisze strzalek).",
       "li3": "<b>Czytnik ekranu:</b> Strona jest testowana z VoiceOver. Jesli napotkasz problemy z technologia wspomagajaca, prosimy o kontakt.",
       "li4": "<b>Dostosowania przegladarki:</b> Strona obsluguje powiekszenie do 200%, tryb wysokiego kontrastu i odwrocone kolory."
@@ -2978,7 +2978,7 @@
     "feedback": {
       "heading": "Informacje zwrotne",
       "intro": "Zapraszamy do przesylania opinii na temat dostepnosci lumenlingo.com. Jesli napotkasz bariery dostepnosci lub masz sugestie dotyczace poprawy, skontaktuj sie z nami:",
-      "li1Email": "<b>E-mail:</b> <emailLink>accessibility@lumenlingo.com</emailLink>",
+      "li1Email": "<b>E-mail:</b> <emailLink>email</emailLink>",
       "li2Contact": "<b>Kontakt ogolny:</b> <contactLink>Strona kontaktowa</contactLink>",
       "li3Vpat": "<b>VPAT:</b> <vpatLink>Zobacz nasz Dobrowolny Szablon Dostepnosci Produktu</vpatLink>",
       "response": "Staramy sie odpowiadac na opinie dotyczace dostepnosci w ciagu 5 dni roboczych. Jesli zglaszasz skarge dotyczaca dostepnosci, potwierdzimy jej otrzymanie w ciagu 2 dni roboczych i udzielimy merytorycznej odpowiedzi — w tym planu naprawczego dla potwierdzonych barier — w ciagu 15 dni roboczych."
@@ -3000,7 +3000,7 @@
       "euHeading": "Unia Europejska",
       "euP1": "Mieszkancy UE moga skontaktowac sie z krajowym organem egzekucyjnym w swoim panstwie czlonkowskim UE odpowiedzialnym za Europejski Akt o Dostepnosci. Lista wyznaczonych organow nadzoru rynku jest prowadzona przez kazde panstwo czlonkowskie na podstawie art. 19 EAA.",
       "usHeading": "Stany Zjednoczone",
-      "usP1": "Mieszkancy USA z obawami dotyczacymi dostepnosci moga zlozyc skarge na podstawie Tytulu III Ustawy o Amerykanach z Niepelnosprawnosciami. Zachecamy do kontaktu z nami w pierwszej kolejnosci pod adresem <emailLink>accessibility@lumenlingo.com</emailLink>, abysmy mogli rozwiazac problem bezposrednio. Nasz <vpatLink>VPAT</vpatLink> dokumentuje nasz obecny poziom zgodnosci."
+      "usP1": "Mieszkancy USA z obawami dotyczacymi dostepnosci moga zlozyc skarge na podstawie Tytulu III Ustawy o Amerykanach z Niepelnosprawnosciami. Zachecamy do kontaktu z nami w pierwszej kolejnosci pod adresem <emailLink>email</emailLink>, abysmy mogli rozwiazac problem bezposrednio. Nasz <vpatLink>VPAT</vpatLink> dokumentuje nasz obecny poziom zgodnosci."
     }
   },
   "Security": {
@@ -3017,7 +3017,7 @@
     },
     "reporting": {
       "heading": "Zglaszanie luki",
-      "p1": "Jesli uwazasz, ze znalazles luke bezpieczenstwa w LumenLingo, zglos ja odpowiedzialnie wysylajac e-mail na adres <emailLink>security@lumenlingo.com</emailLink>.",
+      "p1": "Jesli uwazasz, ze znalazles luke bezpieczenstwa w LumenLingo, zglos ja odpowiedzialnie wysylajac e-mail na adres <emailLink>email</emailLink>.",
       "p2": "Prosimy o podanie jak najwiecej szczegolow: opis luki, kroki do odtworzenia, potencjalny wplyw oraz ewentualny kod proof-of-concept lub zrzuty ekranu.",
       "p3": "Publikujemy rowniez plik <securityTxtLink>security.txt</securityTxtLink> zgodny z RFC 9116."
     },
@@ -3059,8 +3059,8 @@
     },
     "contact": {
       "heading": "Kontakt",
-      "p1": "Zgloszenia bezpieczenstwa: <emailLink>security@lumenlingo.com</emailLink>",
-      "p2": "Ogolne wsparcie: <supportLink>legal@lumenlingo.com</supportLink>",
+      "p1": "Zgloszenia bezpieczenstwa: <emailLink>email</emailLink>",
+      "p2": "Ogolne wsparcie: <supportEmailLink>email</supportEmailLink>",
       "p3": "Preferowany jezyk: angielski"
     }
   }
