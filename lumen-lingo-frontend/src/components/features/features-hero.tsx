@@ -56,19 +56,33 @@ export function FeaturesHero() {
 
           {/* Premium pill badges */}
           <StaggerItem>
-            <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
+            <div className="mt-14 flex flex-wrap items-stretch justify-center gap-4 sm:gap-5">
               {([DeviceIcon, DesignIcon, BrainIcon] as ComponentType<IconProps>[]).map((Icon, i) => {
                 const style = PILL_STYLES[i]!;
+                const descriptions = [
+                  'Built with SwiftUI',
+                  'Every pixel considered',
+                  'Cognitive research',
+                ];
                 return (
                   <div
                     key={i}
-                    className={`group relative flex items-center gap-2.5 rounded-2xl border border-glass-border/60 bg-gradient-to-r ${style.accent} px-5 py-3 shadow-lg ${style.glow} backdrop-blur-sm transition-all duration-300 hover:scale-[1.03] hover:border-glass-border`}
+                    className="group relative flex flex-col items-center gap-3 rounded-2xl border border-glass-border/40 bg-white/[0.02] px-6 py-5 backdrop-blur-sm transition-all duration-500 hover:border-glass-border/80 hover:bg-white/[0.04] hover:shadow-[0_0_40px_-8px_rgba(139,92,246,0.12)]"
                   >
-                    <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-white/[0.08] ${style.iconColor}`}>
-                      <Icon size={18} aria-hidden />
+                    {/* Icon container with ambient glow */}
+                    <div className="relative">
+                      <div className={`absolute inset-0 rounded-2xl blur-xl opacity-0 transition-opacity duration-500 group-hover:opacity-100 ${style.accent.replace('from-', 'bg-').split(' ')[0]}`} />
+                      <div className={`relative flex h-12 w-12 items-center justify-center rounded-2xl border border-glass-border/40 bg-white/[0.04] ${style.iconColor} transition-all duration-500 group-hover:border-glass-border/80 group-hover:bg-white/[0.06] group-hover:scale-110`}>
+                        <Icon size={22} aria-hidden />
+                      </div>
                     </div>
-                    <span className="text-sm font-semibold text-foreground/90">
+                    {/* Label */}
+                    <span className="text-sm font-semibold tracking-wide text-foreground/90">
                       {badges[i]}
+                    </span>
+                    {/* Subtle descriptor */}
+                    <span className="text-[11px] leading-tight text-foreground-muted/50 transition-colors duration-300 group-hover:text-foreground-muted/70">
+                      {descriptions[i]}
                     </span>
                   </div>
                 );

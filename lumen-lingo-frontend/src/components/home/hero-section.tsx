@@ -170,36 +170,37 @@ export function HeroSection() {
             </motion.div>
 
             {/* Trust bar — T+750 ms with CountUp */}
-            <motion.div variants={heroTrust} className="mt-10">
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-foreground-muted">
+            <motion.div variants={heroTrust} className="mt-12">
+              <div className="flex flex-wrap items-stretch gap-3">
                 {(['languages', 'pairs', 'soundscapes', 'freeToStart'] as const).map(
-                  (key, i) => {
+                  (key) => {
                     const text = t(`trust.${key}`);
                     const parsed = parseTrustValue(text);
                     return (
-                      <span key={key} className="flex items-center gap-2">
-                        {i > 0 && (
-                          <span
-                            className="hidden text-foreground-muted/30 sm:inline"
-                            aria-hidden="true"
-                          >
-                            ·
-                          </span>
-                        )}
+                      <div
+                        key={key}
+                        className="group relative flex items-center gap-2.5 rounded-xl border border-glass-border/30 bg-white/[0.02] px-4 py-2.5 backdrop-blur-sm transition-all duration-500 hover:border-glass-border/60 hover:bg-white/[0.04]"
+                      >
                         {parsed.num !== undefined ? (
                           <>
-                            <CountUp
-                              target={parsed.num}
-                              suffix={parsed.suffix}
-                              duration={0.8}
-                              delay={T.trust}
-                            />{' '}
-                            {parsed.rest}
+                            <span className="text-base font-bold tabular-nums text-foreground/90">
+                              <CountUp
+                                target={parsed.num}
+                                suffix={parsed.suffix}
+                                duration={0.8}
+                                delay={T.trust}
+                              />
+                            </span>
+                            <span className="text-[13px] text-foreground-muted/60 transition-colors duration-300 group-hover:text-foreground-muted/80">
+                              {parsed.rest}
+                            </span>
                           </>
                         ) : (
-                          text
+                          <span className="text-[13px] font-medium text-foreground-muted/70 transition-colors duration-300 group-hover:text-foreground-muted/90">
+                            {text}
+                          </span>
                         )}
-                      </span>
+                      </div>
                     );
                   },
                 )}
