@@ -1254,8 +1254,6 @@ export default async function TermsPage({
                   </ul>
                 </section>
 
-                </section>
-
                 {/* Data Retention Cross-Reference */}
                 <section id="data-retention-crossref">
                   <h2>{t('retention.heading')}</h2>
