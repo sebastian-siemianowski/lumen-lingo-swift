@@ -2,6 +2,7 @@
 
 import { type ReactNode } from 'react';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 // ─── Callout ────────────────────────────────────────────────────────
 type CalloutVariant = 'info' | 'tip' | 'warning' | 'science' | 'check';
@@ -42,6 +43,15 @@ const calloutStyles: Record<
   },
 };
 
+/* Maps variant → Blog.callout translation key */
+const calloutTitleKeys: Record<CalloutVariant, string> = {
+  info: 'callout.info',
+  tip: 'callout.tip',
+  warning: 'callout.warning',
+  science: 'callout.science',
+  check: 'callout.check',
+};
+
 interface CalloutProps {
   variant?: CalloutVariant;
   title?: string;
@@ -50,6 +60,7 @@ interface CalloutProps {
 
 export function Callout({ variant = 'info', title, children }: CalloutProps) {
   const style = calloutStyles[variant];
+  const t = useTranslations('Blog');
   return (
     <aside
       className={cn(
@@ -64,7 +75,7 @@ export function Callout({ variant = 'info', title, children }: CalloutProps) {
           {style.icon}
         </span>
         <span className="font-display text-sm font-bold text-[--color-foreground]">
-          {title ?? style.title}
+          {title ?? t(calloutTitleKeys[variant])}
         </span>
       </div>
       <div className="text-sm leading-relaxed text-[--color-foreground-secondary]">

@@ -2,11 +2,12 @@
 
 import { GlassCard } from '@/components/ui';
 import { FadeIn, StaggerChildren, StaggerItem } from '@/components/motion';
+import { useTranslations } from 'next-intl';
 
 interface ValueCardData {
   icon: React.ReactNode;
-  title: string;
-  description: string;
+  titleKey: string;
+  descKey: string;
   tint: 'violet' | 'cyan' | 'amber' | 'default';
 }
 
@@ -22,9 +23,8 @@ const values: ValueCardData[] = [
         />
       </svg>
     ),
-    title: 'Beauty in Everything',
-    description:
-      'We craft every pixel with care. From shader-driven backgrounds to hand-tuned animations, LumenLingo is designed to feel as beautiful as it is functional.',
+    titleKey: 'values.beauty',
+    descKey: 'values.beautyDesc',
     tint: 'violet',
   },
   {
@@ -39,9 +39,8 @@ const values: ValueCardData[] = [
         />
       </svg>
     ),
-    title: 'Science-Backed Learning',
-    description:
-      'Every feature is grounded in cognitive research. Spaced repetition, active recall, and multi-modal engagement aren\'t buzzwords — they\'re our foundation.',
+    titleKey: 'values.science',
+    descKey: 'values.scienceDesc',
     tint: 'cyan',
   },
   {
@@ -55,9 +54,8 @@ const values: ValueCardData[] = [
         />
       </svg>
     ),
-    title: 'Privacy First',
-    description:
-      'Your learning data lives on your device and syncs through your personal iCloud. We designed LumenLingo so your data stays under your control.',
+    titleKey: 'values.privacy',
+    descKey: 'values.privacyDesc',
     tint: 'amber',
   },
   {
@@ -72,26 +70,26 @@ const values: ValueCardData[] = [
         />
       </svg>
     ),
-    title: 'Accessible to All',
-    description:
-      'Premium quality shouldn\'t mean exclusion. Our free tier is generous, our pricing is fair, and our goal is to make beautiful learning available to everyone.',
+    titleKey: 'values.accessible',
+    descKey: 'values.accessibleDesc',
     tint: 'violet',
   },
 ];
 
 export function ValueCards() {
+  const t = useTranslations('About');
   return (
     <StaggerChildren className="grid gap-6 sm:grid-cols-2">
       {values.map((v) => (
-        <StaggerItem key={v.title}>
+        <StaggerItem key={v.titleKey}>
           <GlassCard tint={v.tint} className="h-full">
             <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-white/[0.06] text-white/70">
               {v.icon}
             </div>
             <h3 className="mb-2 font-[family-name:var(--font-cabinet)] text-lg font-semibold text-white/90">
-              {v.title}
+              {t(v.titleKey as any)}
             </h3>
-            <p className="text-sm leading-relaxed text-white/50">{v.description}</p>
+            <p className="text-sm leading-relaxed text-white/50">{t(v.descKey as any)}</p>
           </GlassCard>
         </StaggerItem>
       ))}

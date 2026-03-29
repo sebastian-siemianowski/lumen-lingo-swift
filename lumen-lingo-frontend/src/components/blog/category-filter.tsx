@@ -3,8 +3,10 @@
 import { useRef, useEffect, useCallback } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
-const CATEGORIES = [
+/* Category slugs used as URL param values — always English */
+const CATEGORY_SLUGS = [
   'All',
   'Language Tips',
   'App Updates',
@@ -12,6 +14,16 @@ const CATEGORIES = [
   'Culture',
   'Guides',
 ] as const;
+
+/* Maps slug → translation key */
+const CATEGORY_KEYS: Record<string, string> = {
+  All: 'categories.all',
+  'Language Tips': 'categories.languageTips',
+  'App Updates': 'categories.appUpdates',
+  'Learning Science': 'categories.learningScience',
+  Culture: 'categories.culture',
+  Guides: 'categories.guides',
+};
 
 const categoryActiveStyles: Record<string, string> = {
   All: 'bg-[--color-glass] text-[--color-foreground]',
@@ -29,6 +41,7 @@ interface CategoryFilterProps {
 export function CategoryFilter({ counts }: CategoryFilterProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const t = useTranslations('Blog');
   const active = searchParams.get('category') ?? 'All';
   const scrollRef = useRef<HTMLDivElement>(null);
   const chipRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
@@ -65,15 +78,15 @@ export function CategoryFilter({ counts }: CategoryFilterProps) {
         onKeyDown={(e) => {
           if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
           e.preventDefault();
-          const idx = CATEGORIES.indexOf(active as (typeof CATEGORIES)[number]);
+          const idx = CATEGORY_SLUGS.indexOf(active as (typeof CATEGORY_SLUGS)[number]);
           const next = e.key === 'ArrowRight'
-            ? (idx + 1) % CATEGORIES.length
-            : (idx - 1 + CATEGORIES.length) % CATEGORIES.length;
-          handleSelect(CATEGORIES[next]);
-          chipRefs.current.get(CATEGORIES[next])?.focus();
+            ? (idx + 1) % CATEGORY_SLUGS.length
+            : (idx - 1 + CATEGORY_SLUGS.length) % CATEGORY_SLUGS.length;
+          handleSelect(CATEGORY_SLUGS[next]);
+          chipRefs.current.get(CATEGORY_SLUGS[next])?.focus();
         }}
       >
-        {CATEGORIES.map((cat) => {
+        {CATEGORY_SLUGS.map((cat) => {
           const isActive = active === cat;
           const count = cat === 'All' ? undefined : counts?.[cat];
           return (
@@ -93,7 +106,7 @@ export function CategoryFilter({ counts }: CategoryFilterProps) {
                   : 'bg-[--color-glass] text-[--color-foreground-muted] hover:bg-[--color-glass-hover] hover:text-[--color-foreground-secondary]',
               )}
             >
-              {cat}
+              {t(CATEGORY_KEYS[cat])}
               {count != null && (
                 <span className="ms-1.5 text-xs opacity-50">({count})</span>
               )}

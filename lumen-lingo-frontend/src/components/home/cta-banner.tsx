@@ -59,7 +59,7 @@ export function CTABanner() {
                     className="pointer-events-none absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-transparent via-white/15 to-transparent"
                     aria-hidden
                   />
-                  Launching Soon
+                  {t('launchingSoon')}
                 </Button>
               </Link>
               <AppStoreBadge location="homepage_cta_banner" />
@@ -67,23 +67,23 @@ export function CTABanner() {
 
             {/* Commitment-lowering text */}
             <p className="mt-3 text-sm text-foreground-muted">
-              Free to start. No credit card required.
+              {t('freeToStart')}
             </p>
 
             {/* Trust micro-element */}
             <div className="mt-4 flex items-center gap-1.5 text-sm">
               {reviewsLive ? (
                 <>
-                  <span className="text-amber" aria-label="5 star rating">
+                  <span className="text-amber" aria-label={t('starRating')}>
                     ★★★★★
                   </span>
                   <span className="text-foreground-muted">
-                    4.9 on the App Store
+                    {t('appStoreRating')}
                   </span>
                 </>
               ) : (
                 <span className="text-foreground-muted">
-                  Built by language lovers, for language lovers
+                  {t('madeByLovers')}
                 </span>
               )}
             </div>

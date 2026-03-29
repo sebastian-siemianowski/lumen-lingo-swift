@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
 
 interface ShareButtonsProps {
   title: string;
@@ -9,6 +10,7 @@ interface ShareButtonsProps {
 
 export function ShareButtons({ title, url }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
+  const t = useTranslations('Blog');
 
   const encodedTitle = encodeURIComponent(title);
   const encodedUrl = encodeURIComponent(url);
@@ -72,7 +74,7 @@ export function ShareButtons({ title, url }: ShareButtonsProps) {
           href={platform.href}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Share on ${platform.name}`}
+          aria-label={t(`share.shareOn${platform.name}` as any)}
           className="flex h-9 w-9 items-center justify-center rounded-full border border-[--color-glass-border] text-[--color-foreground-muted] transition-colors hover:border-[--color-violet]/30 hover:text-[--color-violet]"
         >
           {platform.icon}
@@ -80,7 +82,7 @@ export function ShareButtons({ title, url }: ShareButtonsProps) {
       ))}
       <button
         onClick={handleCopy}
-        aria-label={copied ? 'Link copied!' : 'Copy link'}
+        aria-label={copied ? t('share.copied') : t('share.copyLink')}
         className="flex h-9 items-center gap-1.5 rounded-full border border-[--color-glass-border] px-3 text-xs text-[--color-foreground-muted] transition-colors hover:border-[--color-violet]/30 hover:text-[--color-violet]"
       >
         {copied ? (
@@ -88,14 +90,14 @@ export function ShareButtons({ title, url }: ShareButtonsProps) {
             <svg className="h-4 w-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            Copied!
+            {t('share.copied')}
           </>
         ) : (
           <>
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
             </svg>
-            Copy Link
+            {t('share.copyLink')}
           </>
         )}
       </button>

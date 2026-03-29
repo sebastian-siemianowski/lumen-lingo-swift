@@ -11,13 +11,14 @@ const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 /* ── Mock screen content for each feature ── */
 function FlashcardScreen() {
+  const t = useTranslations('Download.showcase');
   return (
     <div className="flex h-full flex-col items-center justify-center gap-4 bg-gradient-to-br from-violet/20 via-background to-cyan/10 p-6">
       {/* Language pair */}
       <div className="flex items-center gap-2 text-xs text-foreground-muted">
-        <span className="rounded-full bg-glass px-2 py-0.5">🇯🇵 Japanese</span>
+        <span className="rounded-full bg-glass px-2 py-0.5">{t('flashcardFrom')}</span>
         <span aria-hidden>→</span>
-        <span className="rounded-full bg-glass px-2 py-0.5">🇬🇧 English</span>
+        <span className="rounded-full bg-glass px-2 py-0.5">{t('flashcardTo')}</span>
       </div>
       {/* Flashcard */}
       <motion.div
@@ -36,21 +37,23 @@ function FlashcardScreen() {
           <div key={i} className={cn('h-1.5 rounded-full', i < 3 ? 'w-1.5 bg-violet' : 'w-1.5 bg-glass-border')} />
         ))}
       </div>
-      <p className="text-[10px] text-foreground-muted">Card 3 of 5</p>
+      <p className="text-[10px] text-foreground-muted">{t('flashcardProgress', { current: 3, total: 5 })}</p>
     </div>
   );
 }
 
 function PracticeScreen() {
+  const t = useTranslations('Download.showcase');
+  const options = [t('practiceOpt1'), t('practiceOpt2'), t('practiceOpt3'), t('practiceOpt4')];
   const [selected, setSelected] = useState(1);
   return (
     <div className="flex h-full flex-col gap-4 bg-gradient-to-br from-cyan/15 via-background to-violet/10 p-5">
       <div className="text-center">
-        <p className="text-[10px] font-medium text-cyan">MULTIPLE CHOICE</p>
-        <p className="mt-2 font-display text-sm font-bold text-foreground">What does &quot;merci&quot; mean?</p>
+        <p className="text-[10px] font-medium text-cyan">{t('practiceCategory')}</p>
+        <p className="mt-2 font-display text-sm font-bold text-foreground">{t('practiceQuestion')}</p>
       </div>
       <div className="flex flex-col gap-2">
-        {['Goodbye', 'Thank you', 'Hello', 'Please'].map((opt, i) => (
+        {options.map((opt, i) => (
           <motion.button
             key={opt}
             className={cn(
@@ -79,19 +82,20 @@ function PracticeScreen() {
             transition={{ duration: 1.5, ease }}
           />
         </div>
-        <p className="mt-1 text-center text-[9px] text-foreground-muted">60% complete</p>
+        <p className="mt-1 text-center text-[9px] text-foreground-muted">{t('practiceProgress', { percent: 60 })}</p>
       </div>
     </div>
   );
 }
 
 function SoundscapeScreen() {
+  const t = useTranslations('Download.showcase');
   return (
     <div className="flex h-full flex-col items-center justify-center gap-5 bg-gradient-to-br from-violet/15 via-background to-cyan/10 p-5">
-      <p className="text-[10px] font-medium text-violet">NOW PLAYING</p>
+      <p className="text-[10px] font-medium text-violet">{t('soundscapeNowPlaying')}</p>
       <div className="text-center">
-        <p className="font-display text-sm font-bold text-foreground">✦ Deep Space Drift</p>
-        <p className="text-[10px] text-foreground-muted">Atmospheric · Cosmic ambient</p>
+        <p className="font-display text-sm font-bold text-foreground">{t('soundscapeTrack')}</p>
+        <p className="text-[10px] text-foreground-muted">{t('soundscapeGenre')}</p>
       </div>
       {/* Equalizer bars */}
       <div className="flex items-end gap-1">

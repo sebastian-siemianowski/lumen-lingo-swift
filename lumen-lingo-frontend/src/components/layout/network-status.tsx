@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { useTranslations } from 'next-intl';
 
 /**
  * Floating indicator that fades in when the browser goes offline.
@@ -11,6 +12,7 @@ import { useReducedMotion } from '@/hooks/use-reduced-motion';
 export function NetworkStatus() {
   const [online, setOnline] = useState(true);
   const prefersReduced = useReducedMotion();
+  const t = useTranslations('NetworkStatus');
 
   useEffect(() => {
     const goOnline = () => setOnline(true);
@@ -45,7 +47,7 @@ export function NetworkStatus() {
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-amber" />
             </span>
             <span className="text-sm font-medium text-foreground-secondary">
-              You&apos;re offline
+              {t('offline')}
             </span>
           </div>
         </motion.div>

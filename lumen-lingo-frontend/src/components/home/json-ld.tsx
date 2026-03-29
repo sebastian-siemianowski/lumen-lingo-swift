@@ -38,21 +38,27 @@ export function BreadcrumbJsonLd({ items, locale }: { items: BreadcrumbItem[]; l
   );
 }
 
-export const softwareApplicationLd = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: 'LumenLingo',
-  operatingSystem: 'iOS',
-  applicationCategory: 'EducationApplication',
-  description:
-    'Premium language learning app with immersive flashcards, adaptive practice, ambient soundscapes, and more. 9 languages, 25+ language pairs.',
-  offers: {
-    '@type': 'Offer',
-    price: '0',
-    priceCurrency: 'GBP',
-    availability: 'https://schema.org/InStock',
-  },
-};
+export function getSoftwareApplicationLd(description?: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'LumenLingo',
+    operatingSystem: 'iOS',
+    applicationCategory: 'EducationApplication',
+    description:
+      description ??
+      'Premium language learning app with immersive flashcards, adaptive practice, ambient soundscapes, and more. 9 languages, 25+ language pairs.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'GBP',
+      availability: 'https://schema.org/InStock',
+    },
+  };
+}
+
+/** @deprecated Use getSoftwareApplicationLd() for localised descriptions */
+export const softwareApplicationLd = getSoftwareApplicationLd();
 
 export const organizationLd = {
   '@context': 'https://schema.org',

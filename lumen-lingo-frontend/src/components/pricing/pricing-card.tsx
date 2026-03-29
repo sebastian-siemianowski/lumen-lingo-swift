@@ -6,6 +6,7 @@ import { spring } from '@/lib/motion';
 import { trackEvent } from '@/lib/analytics';
 import { getAppStoreUrl } from '@/lib/appStoreUrl';
 import { SparkleIcon, DiamondIcon, MembershipIcon } from '@/components/icons';
+import { useTranslations } from 'next-intl';
 
 /* ─── Types ─── */
 export type Tier = 'free' | 'pro' | 'elite' | 'royal';
@@ -114,6 +115,7 @@ export function PricingCard({
   delay = 0,
 }: PricingCardProps) {
   const style = tierStyles[tier];
+  const t = useTranslations('Pricing');
 
   return (
     <motion.div
@@ -165,7 +167,7 @@ export function PricingCard({
             transition={{ duration: 2, repeat: Infinity }}
             className="rounded-full bg-cyan px-4 py-1 text-xs font-semibold text-white shadow-lg"
           >
-            Most Popular
+            {t('comparison.mostPopular')}
           </motion.div>
         </div>
       )}

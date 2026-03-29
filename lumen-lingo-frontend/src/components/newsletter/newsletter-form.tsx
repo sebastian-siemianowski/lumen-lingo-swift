@@ -3,7 +3,7 @@
 import { useState, useRef, type FormEvent } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { trackEvent } from '@/lib/analytics';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { getConsentAge } from '@/lib/consent-age';
 import { useFeatureFlag } from '@/hooks/use-feature-flag';
 import { cn } from '@/lib/utils';
@@ -27,6 +27,7 @@ function isValidEmail(email: string): boolean {
 export function NewsletterForm({ source = 'unknown', compact = false, className = '' }: NewsletterFormProps) {
   const newsletterLive = useFeatureFlag('NEWSLETTER_LIVE');
   const locale = useLocale();
+  const t = useTranslations('Newsletter');
   const consentAge = getConsentAge(locale);
   const [email, setEmail] = useState('');
   const [ageConfirmed, setAgeConfirmed] = useState(false);
@@ -38,10 +39,10 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
     return (
       <div className={cn('rounded-xl border border-glass-border/50 bg-white/[0.03] px-4 py-3 backdrop-blur-sm', className)}>
         <p className="text-sm font-medium text-foreground/80">
-          We&apos;re preparing something special.
+          {t('preparing')}
         </p>
         <p className="mt-1 text-xs text-foreground-muted">
-          Follow us on social media for updates.
+          {t('followSocial')}
         </p>
       </div>
     );
@@ -52,14 +53,14 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
     const trimmed = email.trim();
 
     if (!trimmed || !isValidEmail(trimmed)) {
-      setErrorMsg('Please enter a valid email address.');
+      setErrorMsg(t('errorInvalid'));
       setState('error');
       inputRef.current?.focus();
       return;
     }
 
     if (!ageConfirmed) {
-      setErrorMsg('Please confirm you meet the age requirement.');
+      setErrorMsg(t('errorAge'));
       setState('error');
       return;
     }
@@ -79,11 +80,11 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
         trackEvent('newsletter_signup', { source });
       } else {
         const data = await res.json().catch(() => ({}));
-        setErrorMsg(data.error || 'Something went wrong. Please try again.');
+        setErrorMsg(data.error || t('errorGeneric'));
         setState('error');
       }
     } catch {
-      setErrorMsg('Something went wrong. Please try again.');
+      setErrorMsg(t('errorGeneric'));
       setState('error');
     }
   }
@@ -133,10 +134,10 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
             </div>
             <div>
               <p className="text-base font-semibold text-foreground">
-                Welcome to the community!
+                {t('successTitle')}
               </p>
               <p className="text-sm text-foreground-muted">
-                Check your inbox for a warm welcome.
+                {t('successSubtitle')}
               </p>
             </div>
           </motion.div>
@@ -160,8 +161,8 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
                     setErrorMsg('');
                   }
                 }}
-                placeholder="your@email.com"
-                aria-label="Email address"
+                placeholder={t('placeholder')}
+                aria-label={t('label')}
                 aria-required="true"
                 aria-invalid={state === 'error'}
                 aria-describedby={errorMsg ? 'newsletter-error' : undefined}
@@ -198,7 +199,7 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
                   transition={{ duration: 0.8, repeat: Infinity, ease: 'linear' }}
                 />
               ) : (
-                'Subscribe'
+                t('subscribe')
               )}
             </motion.button>
 
@@ -215,7 +216,7 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
                 className="mt-0.5 h-4 w-4 shrink-0 rounded border-glass-border accent-violet"
               />
               <span className="text-[11px] leading-relaxed text-foreground-muted/70">
-                I confirm I am at least {consentAge} years old (or have parental consent if under 18).
+                {t('ageConfirm', { age: consentAge })}
               </span>
             </label>
           </motion.form>
@@ -239,7 +240,7 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
               onClick={handleRetry}
               className="underline underline-offset-2 transition-colors hover:text-red-300"
             >
-              Try again
+              {t('tryAgain')}
             </button>
           </motion.p>
         )}
@@ -248,7 +249,7 @@ export function NewsletterForm({ source = 'unknown', compact = false, className 
       {/* PECR / GDPR consent notice — must match NEWSLETTER_CONSENT_TEXT in consent-log.ts */}
       {state !== 'success' && (
         <p className="mt-2.5 text-[11px] leading-relaxed text-foreground-muted/70">
-          By subscribing, you agree to receive product updates, language learning tips, and occasional offers from LumenShore Ltd. Unsubscribe anytime via the link in every email.
+          {t('gdpr')}
         </p>
       )}
     </div>

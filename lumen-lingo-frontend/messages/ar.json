@@ -2,7 +2,8 @@
   "Metadata": {
     "title": "LumenLingo — أتقن اللغات من خلال تجارب غامرة",
     "titleTemplate": "{title} — LumenLingo",
-    "description": "حمّل LumenLingo، تطبيق تعلم اللغات المتميز لأجهزة iPhone. بطاقات تعليمية جميلة، تدريب تكيفي، أصوات محيطية والمزيد. مجاناً على App Store."
+    "description": "حمّل LumenLingo، تطبيق تعلم اللغات المتميز لأجهزة iPhone. بطاقات تعليمية جميلة، تدريب تكيفي، أصوات محيطية والمزيد. مجاناً على App Store.",
+    "jsonLdDescription": "تطبيق تعلم لغات متميز مع بطاقات تعليمية غامرة، وتدريب تكيفي، ومقاطع صوتية محيطية، والمزيد. 9 لغات، أكثر من 25 زوج لغوي."
   },
   "Nav": {
     "features": "المزايا",
@@ -15,7 +16,9 @@
     "skipToContent": "تخطي إلى المحتوى",
     "openMenu": "فتح القائمة",
     "closeMenu": "إغلاق القائمة",
-    "mobileNav": "التنقل عبر الهاتف"
+    "mobileNav": "التنقل عبر الهاتف",
+    "mainNav": "التنقل الرئيسي",
+    "homeLink": "الصفحة الرئيسية LumenLingo"
   },
   "LanguageSwitcher": {
     "label": "اللغة",
@@ -75,12 +78,38 @@
     "fact1": "٩ لغات",
     "fact2": "+٢٥ زوج لغوي",
     "fact3": "١٢ مشهداً صوتياً",
-    "fact4": "٣ أوضاع تدريب"
+    "fact4": "٣ أوضاع تدريب",
+    "comparison": {
+      "othersHeader": "التطبيقات الأخرى",
+      "lumenHeader": "LumenLingo",
+      "others1": "تكرار آلي ببطاقات نصية بسيطة",
+      "lumen1": "بطاقات بتأثير زجاجي مع تغذية بصرية غامرة",
+      "others2": "دراسة صامتة في واجهة جافة",
+      "lumen2": "12 مشهداً صوتياً — من مقاهي باريس إلى الفضاء العميق",
+      "others3": "اختبارات موحدة للجميع",
+      "lumen3": "ثلاثة أوضاع مميزة تتكيف مع مستواك",
+      "others4": "واجهة نفعية بحيل التلعيب",
+      "lumen4": "تصميم زجاجي يدوي مع رسوم كونية متحركة",
+      "others5": "ضغط السلاسل وإشعارات مبنية على الشعور بالذنب",
+      "lumen5": "كرات التنفس واليقظة البصرية للتعلم الهادئ"
+    }
   },
   "CTA": {
     "heading": "ابدأ رحلتك اللغوية <gradient>اليوم</gradient>",
     "description": "حمّل LumenLingo مجاناً من App Store. باقات متميزة متاحة للمتعلمين الجادين.",
-    "scanToDownload": "امسح للتحميل"
+    "scanToDownload": "امسح للتحميل",
+    "launchingSoon": "قريبًا",
+    "freeToStart": "ابدأ مجانًا. لا حاجة لبطاقة ائتمان.",
+    "starRating": "تقييم 5 نجوم",
+    "appStoreRating": "4.9 على App Store",
+    "madeByLovers": "صُنع بواسطة عشاق اللغات، لعشاق اللغات",
+    "appStoreBadge": {
+      "comingSoonTo": "قريبًا على",
+      "appStore": "App Store",
+      "launchingSoonOn": "قريبًا على",
+      "ariaComingSoon": "قريبًا على App Store",
+      "ariaLaunchingSoon": "قريبًا على App Store"
+    }
   },
   "Pricing": {
     "badge": "أسعار بسيطة وشفافة",
@@ -153,11 +182,94 @@
     },
     "comparison": {
       "heading": "قارن جميع المزايا",
-      "description": "كل باقة تبني على التي قبلها. الباقات الأعلى تشمل جميع ميزات الباقات الأدنى."
+      "description": "كل باقة تبني على التي قبلها. الباقات الأعلى تشمل جميع ميزات الباقات الأدنى.",
+      "feature": "الميزة",
+      "mostPopular": "الأكثر شعبية",
+      "categories": {
+        "learning": "ميزات التعلم",
+        "immersive": "تجربة غامرة",
+        "productivity": "الإنتاجية",
+        "analytics": "التحليلات والرؤى",
+        "royalExclusive": "حصري Royal"
+      },
+      "features": {
+        "languagePairs": "أزواج اللغات",
+        "practiceModes": "أوضاع التمرين",
+        "dailyLimit": "الحد اليومي للتمرين",
+        "deckSize": "حجم مجموعة البطاقات",
+        "breathingOrbs": "كرات التنفس",
+        "soundscapes": "مشاهد صوتية",
+        "quantumFlow": "خلفيات Quantum Flow",
+        "nebulaDrift": "خلفيات Nebula Drift",
+        "offlineMode": "وضع عدم الاتصال",
+        "xpMultiplier": "مضاعف XP",
+        "advancedAnalytics": "تحليلات متقدمة",
+        "dataExport": "تصدير البيانات",
+        "shareCards": "بطاقات نتائج قابلة للمشاركة",
+        "monthlyReports": "تقارير شهرية",
+        "personalisedTips": "نصائح مخصصة"
+      },
+      "values": {
+        "beginner": "٣ (مبتدئ)",
+        "twoLevels": "٣ (مستويان)",
+        "allLevels": "٣ (جميع المستويات)",
+        "thirtyMin": "٣٠ دقيقة",
+        "unlimited": "غير محدود",
+        "fiftyCards": "٥٠ بطاقة",
+        "seventyFiveCards": "٧٥ بطاقة",
+        "hundredCards": "١٠٠ بطاقة",
+        "fourScenes": "٤ مشاهد",
+        "allSix": "جميع الـ ٦",
+        "fourPresets": "٤ إعدادات",
+        "allTwelve": "جميع الـ ١٢"
+      }
     },
     "faq": {
       "heading": "الأسئلة الشائعة",
-      "description": "كل ما تحتاج معرفته عن أسعار واشتراكات LumenLingo."
+      "description": "كل ما تحتاج معرفته عن أسعار واشتراكات LumenLingo.",
+      "ariaLabel": "الأسئلة الشائعة",
+      "items": [
+        {
+          "question": "هل LumenLingo مجاني فعلاً للبدء؟",
+          "answer": "بالتأكيد. المستوى المجاني يمنحك ٣ أزواج لغات، جميع أوضاع التمرين الثلاثة بصعوبة المبتدئ، و٣٠ دقيقة من التمرين اليومي — بدون بطاقة ائتمان، بدون انتهاء صلاحية. تعلّم بالسرعة التي تناسبك."
+        },
+        {
+          "question": "ماذا يتضمن المستوى المجاني؟",
+          "answer": "يحصل المستخدمون المجانيون على أزواج اللغات إنجليزي↔إسباني وإنجليزي↔فرنسي وإنجليزي↔ألماني، وجميع أوضاع التمرين الثلاثة (بطاقات تعليمية، اختبارات قواعد، بناء الكلمات) بصعوبة المبتدئ، ومجموعات من ٥٠ بطاقة، وخلفية Lagoon Nebula، وتتبع التقدم الأساسي."
+        },
+        {
+          "question": "كيف تعمل الفوترة الشهرية؟",
+          "answer": "تُدار جميع الاشتراكات عبر متجر Apple App Store. اختر مستواك في التطبيق، وأكد الشراء عبر Face ID أو Apple ID، وتتم الفوترة تلقائياً كل شهر."
+        },
+        {
+          "question": "كيف أقوم بترقية أو تخفيض مستواي؟",
+          "answer": "يمكنك تغيير مستواك في أي وقت من شاشة العضوية في التطبيق أو من إعدادات اشتراكات App Store. الترقيات تسري فوراً. التخفيضات تسري في نهاية فترة الفوترة الحالية."
+        },
+        {
+          "question": "هل هناك فترة تجريبية مجانية؟",
+          "answer": "نعم! يمكن للمستخدمين الجدد تجربة الوصول Royal — أعلى مستوى — مجاناً لمدة ١٤ يوماً. استمتع بأكثر من ٢٥ زوج لغات، و١٢ مشهداً صوتياً، وجميع الخلفيات، ومضاعف XP بمقدار ٢×. ألغِ في أي وقت خلال الفترة التجريبية بدون رسوم."
+        },
+        {
+          "question": "ما طرق الدفع المقبولة؟",
+          "answer": "يستخدم LumenLingo اشتراكات Apple App Store، لذا تعمل أي طريقة دفع مرتبطة بـ Apple ID — بطاقات الائتمان/الخصم، Apple Pay، ورصيد بطاقات الهدايا."
+        },
+        {
+          "question": "هل يمكنني إلغاء اشتراكي في أي وقت؟",
+          "answer": "نعم، يمكنك الإلغاء في أي وقت بدون غرامات. اذهب إلى الإعدادات ← Apple ID ← الاشتراكات، وابحث عن LumenLingo وانقر إلغاء. ستحتفظ بالوصول حتى نهاية فترة الفوترة."
+        },
+        {
+          "question": "هل أفقد تقدمي إذا خفّضت مستواي؟",
+          "answer": "أبداً. يتم الحفاظ على جميع تقدمك وسلاسلك ونقاط XP وبيانات الإتقان بغض النظر عن تغييرات المستوى. عند التخفيض تُقفل بعض الميزات المتقدمة، لكن بياناتك تبقى سليمة."
+        },
+        {
+          "question": "هل هناك خصومات عائلية أو للطلاب؟",
+          "answer": "نحن نستكشف خيارات أسعار جماعية وتعليمية. حالياً، المستوى المجاني يوفر وصولاً سخياً للطلاب، والفترة التجريبية Royal لمدة ١٤ يوماً تتيح للجميع تجربة التطبيق الكامل."
+        },
+        {
+          "question": "كيف يعمل وضع عدم الاتصال؟",
+          "answer": "وضع عدم الاتصال (مستوى Pro وأعلى) يقوم بتحميل مجموعات البطاقات والمحتوى التمريني على جهازك. ادرس بدون اتصال بالإنترنت — في المترو، في الطائرة، في أي مكان. يتم المزامنة تلقائياً عند إعادة الاتصال."
+        }
+      ]
     },
     "meta": {
       "title": "الأسعار",
@@ -180,7 +292,34 @@
     "walkthroughs": {
       "heading": "شاهدها أثناء العمل",
       "subheading": "كيف يبدو التعلم",
-      "description": "ثلاث تجارب أساسية تحدد رحلة LumenLingo."
+      "description": "ثلاث تجارب أساسية تحدد رحلة LumenLingo.",
+      "demo": {
+        "cardProgress": "بطاقة ١ من ٥",
+        "french": "الفرنسية",
+        "bonjour": "Bonjour",
+        "tapToFlip": "انقر للقلب",
+        "english": "الإنجليزية",
+        "hello": "Hello",
+        "gotIt": "فهمت ✓",
+        "spanish": "الإسبانية",
+        "gracias": "Gracias",
+        "wordBuilder": "بناء الكلمات",
+        "buildWord": "ابنِ كلمة \"Hello\"",
+        "correct": "✓ صحيح!",
+        "xpReward": "+١٥ XP",
+        "soundscapes": "مشاهد صوتية",
+        "findFocus": "اعثر على تركيزك",
+        "nowPlaying": "قيد التشغيل",
+        "coffeeShop": "مقهى",
+        "oceanWaves": "أمواج المحيط",
+        "deepSpace": "فضاء عميق",
+        "parisCafe": "مقهى باريسي",
+        "mountainStream": "جدول جبلي",
+        "cozy": "دافئ",
+        "nature": "طبيعة",
+        "atmospheric": "أجواء",
+        "travel": "سفر"
+      }
     },
     "languagePairs": {
       "heading": "الأزواج اللغوية",
@@ -194,6 +333,231 @@
       "description": "استكشف جميع ميزات LumenLingo: بطاقات تعليمية غامرة، تكرار متباعد ذكي، 3 أوضاع تدريب، 12 مشهد صوتي، كرات تنفس، 25+ زوج لغوي والمزيد.",
       "ogTitle": "الميزات — LumenLingo",
       "ogDescription": "استكشف جميع ميزات LumenLingo: بطاقات تعليمية غامرة، تكرار متباعد، 3 أوضاع تدريب، 12 مشهد صوتي والمزيد."
+    },
+    "toc": {
+      "flashcards": "بطاقات تعليمية غامرة",
+      "spacedRepetition": "تكرار متباعد ذكي",
+      "practiceModes": "أوضاع التمرين",
+      "soundscapes": "مشاهد صوتية",
+      "breathingOrbs": "كرات وخلفيات بصرية",
+      "progress": "التقدم والتحليلات",
+      "languages": "أزواج اللغات",
+      "membership": "مستويات العضوية"
+    },
+    "previews": {
+      "flashcard": {
+        "progress": "٣ / ٥",
+        "badge": "قلب ثلاثي الأبعاد",
+        "language": "الفرنسية",
+        "tapToFlip": "انقر للقلب",
+        "stillLearning": "ما زلت أتعلم",
+        "gotIt": "فهمت",
+        "xpPerCard": "+١٠ XP لكل بطاقة"
+      },
+      "spacedRep": {
+        "masteryTracking": "تتبع الإتقان",
+        "mastered": "٣٧ من ٩٥ أتقنت",
+        "greetings": "التحيات",
+        "foodDrink": "طعام وشراب",
+        "travel": "سفر",
+        "business": "أعمال",
+        "streak": "سلسلة",
+        "accuracy": "الدقة",
+        "totalXp": "إجمالي XP"
+      },
+      "practice": {
+        "chooseMode": "اختر الوضع",
+        "flashCards": "بطاقات تعليمية",
+        "flashCardsDesc": "بطاقات ثلاثية الأبعاد، اسحب للتذكر",
+        "grammarChallenge": "تحدي القواعد",
+        "grammarChallengeDesc": "اختيار من متعدد أ / ب / ج / د",
+        "wordBuilder": "بناء الكلمات",
+        "wordBuilderDesc": "ابنِ الكلمات حرفاً بحرف، ١٥ XP",
+        "intermediate": "متوسط",
+        "startSession": "بدء الجلسة"
+      },
+      "soundscapes": {
+        "heading": "١٢ مشهداً صوتياً",
+        "subheading": "أربع فئات، اعثر على تركيزك",
+        "nowPlaying": "قيد التشغيل",
+        "parisCafe": "مقهى باريسي",
+        "bambooForest": "غابة الخيزران اليابانية",
+        "deepSpace": "انجراف الفضاء العميق",
+        "dominicanBeach": "شاطئ دومينيكي",
+        "cozy": "دافئ",
+        "nature": "طبيعة",
+        "atmospheric": "أجواء",
+        "travel": "سفر"
+      },
+      "breathingOrbs": {
+        "heading": "١٨ خلفية بصرية",
+        "breathingOrbs": "٦ كرات تنفس",
+        "nebulaDrift": "٦ Nebula Drift",
+        "quantumFlow": "٦ Quantum Flow"
+      },
+      "progress": {
+        "heading": "تقدمك",
+        "level": "المستوى ١٢",
+        "thisWeek": "هذا الأسبوع",
+        "streak": "سلسلة ٧ أيام",
+        "days": [
+          "ن",
+          "ث",
+          "ر",
+          "خ",
+          "ج",
+          "س",
+          "ح"
+        ]
+      },
+      "languagePairs": {
+        "heading": "أزواج اللغات",
+        "combinations": "٢٥+ تركيبة",
+        "enEs": "إنجليزي → إسباني",
+        "enFr": "إنجليزي → فرنسي",
+        "enDe": "إنجليزي → ألماني",
+        "enJa": "إنجليزي → ياباني",
+        "enUk": "إنجليزي → أوكراني"
+      },
+      "membership": {
+        "popular": "شائع",
+        "trial": "تجربة Royal مجانية ١٤ يوماً",
+        "starter": "مبتدئ",
+        "threePairs": "٣ أزواج",
+        "offline": "بدون إنترنت",
+        "allLanguages": "جميع اللغات",
+        "everything": "كل شيء"
+      }
+    },
+    "sections": {
+      "flashcards": {
+        "title": "بطاقات تعليمية غامرة",
+        "description": [
+          "LumenLingo's flashcard experience is unlike anything else. Each card is a glass-morphic surface that responds to touch with silky-smooth gestures — swipe right for correct, left for incorrect, and watch the card animate with satisfying physics-based feedback.",
+          "Cards display source and target language text with pronunciation guides, and smart colour coding reinforces your memory through visual association. The frosted-glass design adapts to dark and light modes with cosmic and architectural aesthetics respectively.",
+          "Every interaction is deliberate. The flip animation reveals the answer with a graceful 3D rotation. Colour-coded borders flash green for \"Got It\" and red for \"Still Learning\". Sound feedback complements each gesture, creating a multi-sensory learning loop that earns you 10 XP per correct answer."
+        ],
+        "capabilities": [
+          "Swipe gestures with physics-based spring animations",
+          "3D card flip with glass-morphic design",
+          "Instant colour-coded feedback on every answer",
+          "Pronunciation guides for non-Latin scripts",
+          "Multi-sensory feedback: visual + audio",
+          "Customisable deck sizes per tier (50–unlimited)"
+        ]
+      },
+      "spacedRepetition": {
+        "title": "تكرار متباعد ذكي",
+        "description": [
+          "LumenLingo tracks your performance across every card and surfaces vocabulary you need to practise most. Words you struggle with appear more frequently; words you've mastered recede — so you spend time where it matters.",
+          "The system organises vocabulary into categories — Greetings, Food, Travel, Business, and more — tracking your mastered word count per category. Clear progress bars show exactly how much of each topic you've conquered.",
+          "Unlike rigid SRS systems, LumenLingo adapts in real time. Miss a card after a long break? It reappears sooner. Nail five in a row? The word joins your mastered set. The algorithm works with your brain, not against it."
+        ],
+        "capabilities": [
+          "Per-category mastery tracking",
+          "Mastered word sets that grow with you",
+          "Accuracy and streak statistics",
+          "Real-time difficulty adjustment",
+          "Visual mastery progress bars per topic",
+          "XP system: 10 XP per Flash Card, 10 per Quiz, 15 per Word Builder"
+        ]
+      },
+      "practiceModes": {
+        "title": "٣ أوضاع تمرين مميزة",
+        "description": [
+          "Variety is the engine of engagement. LumenLingo offers three fundamentally different practice modes — each targeting a different cognitive skill — so your sessions never feel repetitive.",
+          "Flash Cards build recognition speed with satisfying 3D flip animations. Grammar Challenge tests your understanding with multiple-choice A/B/C/D questions and explanation panels that teach you why an answer is correct. Word Builder challenges you to construct words letter by letter, strengthening spelling and recall simultaneously.",
+          "Each mode supports three difficulty levels — Beginner, Intermediate, and Advanced — progressively unlocked through your tier. Idle hints nudge you gently if you hesitate, keeping the learning flow unbroken."
+        ],
+        "capabilities": [
+          "Flash Cards: 3D flip with swipe gestures",
+          "Grammar Challenge: A/B/C/D with explanations",
+          "Word Builder: letter-by-letter construction, 15 XP",
+          "Three difficulty levels per mode",
+          "Progress tracked independently per mode",
+          "Idle hints to keep you in flow"
+        ]
+      },
+      "soundscapes": {
+        "title": "١٢ مشهداً صوتياً",
+        "description": [
+          "Transform your study environment with 12 handcrafted ambient soundscapes spanning four categories: Cozy, Nature, Atmospheric, and Travel. Each soundscape is a carefully layered audio composition designed to enhance focus and reduce distractions.",
+          "Study in a Parisian café with the gentle murmur of conversation and clinking cups. Or drift into deep focus with the cosmic hum of a space station. Every soundscape is mixed at optimal volume levels to sit beneath your learning without competing for attention.",
+          "Research shows that consistent ambient audio creates environmental context cues that boost retention. When you study with the same soundscape, your brain associates the audio signature with the learning state, making recall easier."
+        ],
+        "capabilities": [
+          "Cozy: Paris Café, Rainy Window, Midnight Jazz Piano",
+          "Nature: Mountain Campfire, Japanese Bamboo Forest, Amazon Rainforest",
+          "Atmospheric: Observatory Night, Desert Night Sky, Deep Space Drift",
+          "Travel: Dominican Beach, Tokyo Night Street, Venice Canal Morning",
+          "Volume balancing with system audio",
+          "Tier-gated access (0 free → 1 Pro → 8 Elite → 12 Royal)"
+        ]
+      },
+      "breathingOrbs": {
+        "title": "كرات التنفس وخلفيات بصرية",
+        "description": [
+          "LumenLingo is the only language app that treats visual wellness as a core feature. Breathing Orbs are calming, animated backgrounds that gently pulse in rhythm — creating a meditative atmosphere that reduces learning anxiety and sharpens focus.",
+          "Choose from 6 city-inspired colour schemes, each evoking the palette of a real-world location. Beyond orbs, explore Quantum Flow scenes — dynamic particle systems that create mesmerising visual flow — and Nebula Drift presets with real-time cosmic animations rendered in Metal.",
+          "These aren't just eye candy. Studies in environmental psychology show that calming visual stimuli reduce cortisol levels and improve working memory. Every visual background in LumenLingo is designed with this research in mind."
+        ],
+        "capabilities": [
+          "6 city-inspired Breathing Orb colour schemes",
+          "6 Quantum Flow particle scenes (Elite+)",
+          "6 Nebula Drift cosmic presets (Elite+)",
+          "Real-time Metal shader rendering",
+          "Respects reduced-motion preferences",
+          "Tier-gated access with progressive unlocking"
+        ]
+      },
+      "progress": {
+        "title": "التقدم والتحليلات",
+        "description": [
+          "LumenLingo's progress system turns learning into a visible journey. An XP system rewards consistent practice — earn points for every correct answer, streak bonuses for consecutive days, and multipliers based on your membership tier.",
+          "Track your per-game statistics across all three practice modes: accuracy rates, average response times, most-practised categories, and streaks. Beautiful visualisations make your data easy to understand at a glance.",
+          "Daily goals keep you accountable. Set a target practice time or card count, and watch your daily ring fill as you make progress. Monthly reports (Elite and Royal tiers) summarise your growth with detailed breakdowns by language pair and difficulty level."
+        ],
+        "capabilities": [
+          "XP system with tier-based multipliers (1×–2×)",
+          "Streak tracking with daily goals",
+          "Per-mode accuracy and speed analytics",
+          "Category mastery breakdowns",
+          "Beautiful progress visualisations",
+          "Monthly reports (Elite/Royal)"
+        ]
+      },
+      "languages": {
+        "title": "٢٥ زوج لغات",
+        "description": [
+          "LumenLingo supports 9 languages — English, Spanish, French, German, Japanese, Chinese, Arabic, Polish, and Ukrainian — in 25 bidirectional pair combinations. Learn Spanish from English, or flip it around and learn English from Spanish.",
+          "Each language pair comes with a curated vocabulary deck covering essential categories: greetings, food, travel, business, emotions, and more. Non-Latin scripts include romanisation and pronunciation guides to lower the barrier to entry.",
+          "Language pairs are tier-gated: Free users get 3 core pairs (English→Spanish, French, German), Pro unlocks 7 pairs including Japanese and Arabic, and Elite/Royal unlock the full catalogue of 25 pairs."
+        ],
+        "capabilities": [
+          "9 languages: ES, FR, DE, JA, ZH, AR, PL, UK, EN",
+          "25 bidirectional pair combinations",
+          "Curated vocabulary per category",
+          "Romanisation for non-Latin scripts",
+          "Tier-gated: 3 Free → 7 Pro → 25 Elite/Royal",
+          "Bidirectional learning support"
+        ]
+      },
+      "membership": {
+        "title": "مستويات العضوية",
+        "description": [
+          "LumenLingo offers five membership tiers — Free, Trial, Pro, Elite, and Royal — each designed for a different stage of your learning journey. Start with a generous free tier and upgrade as your ambitions grow.",
+          "Every tier unlocks progressively more language pairs, soundscapes, visual backgrounds, and advanced features. Pro adds unlimited practice time and offline mode. Elite opens all language pairs, advanced difficulty, and Quantum Flow scenes. Royal gives you everything — including all Nebula Drift presets, unlimited decks, and a 2× XP multiplier.",
+          "All tiers are managed through the App Store with simple monthly billing. Try Royal-level access free for 14 days to experience everything LumenLingo has to offer."
+        ],
+        "capabilities": [
+          "Free tier with 3 language pairs and 50-card decks",
+          "Pro (£9.99/mo): unlimited practice + offline mode",
+          "Elite (£19.99/mo): all languages + Quantum Flow",
+          "Royal (£99.99/mo): everything + 2× XP + Nebula Drift",
+          "14-day free Royal trial",
+          "Simple App Store subscription management"
+        ]
+      }
     }
   },
   "About": {
@@ -217,7 +581,11 @@
       "launch": "إطلاق App Store",
       "launchDesc": "أُطلق LumenLingo عالمياً على App Store بـ٩ لغات و+٢٥ زوجاً ونموذج عضوية من خمس مستويات.",
       "growing": "نمو وتطور",
-      "growingDesc": "لغات جديدة وميزات جديدة ومجتمع متنامٍ من المتعلمين يكتشفون طريقة أجمل للتعلم."
+      "growingDesc": "لغات جديدة وميزات جديدة ومجتمع متنامٍ من المتعلمين يكتشفون طريقة أجمل للتعلم.",
+      "sparkDate": "أواخر 2025",
+      "betaDate": "أوائل 2026",
+      "launchDate": "مارس 2026",
+      "growingDate": "الطريق أمامنا"
     }
   },
   "Contact": {
@@ -233,7 +601,18 @@
       "ogTitle": "المساعدة والتواصل — LumenLingo",
       "ogDescription": "ابحث عن إجابات للأسئلة الشائعة حول LumenLingo أو تواصل مع فريق LumenShore."
     },
-    "supportLanguage": "نرد بالإنجليزية والعربية."
+    "supportLanguage": "نرد بالإنجليزية والعربية.",
+    "form": {
+      "success": "تم إرسال الرسالة! سنرد على بريدك الإلكتروني.",
+      "nameLabel": "الاسم",
+      "namePlaceholder": "اسمك",
+      "emailLabel": "البريد الإلكتروني",
+      "emailPlaceholder": "your@email.com",
+      "messageLabel": "الرسالة",
+      "messagePlaceholder": "كيف يمكننا مساعدتك؟",
+      "maxChars": "الحد الأقصى 2000 حرف",
+      "submit": "إرسال الرسالة"
+    }
   },
   "Download": {
     "heading": "LumenLingo",
@@ -275,7 +654,20 @@
       "soundscapes": "مشاهد صوتية محيطة",
       "soundscapesSub": "12 بيئة تركيز مختارة",
       "heading": "مصمم للإبهار",
-      "description": "كل تفاعل مصنوع بعناية. رسوم متحركة سلسة، ولمسات حسية دقيقة، ومشاهد صوتية محيطة تنشئ بيئة تعلم تريد حقًا العودة إليها."
+      "description": "كل تفاعل مصنوع بعناية. رسوم متحركة سلسة، ولمسات حسية دقيقة، ومشاهد صوتية محيطة تنشئ بيئة تعلم تريد حقًا العودة إليها.",
+      "flashcardFrom": "🇯🇵 يابانية",
+      "flashcardTo": "🇬🇧 إنجليزية",
+      "flashcardProgress": "بطاقة {current} من {total}",
+      "practiceCategory": "اختيار من متعدد",
+      "practiceQuestion": "ماذا تعني \"merci\"؟",
+      "practiceOpt1": "وداعاً",
+      "practiceOpt2": "شكراً",
+      "practiceOpt3": "مرحباً",
+      "practiceOpt4": "من فضلك",
+      "practiceProgress": "{percent}% مكتمل",
+      "soundscapeNowPlaying": "يتم التشغيل",
+      "soundscapeTrack": "✦ انجراف الفضاء العميق",
+      "soundscapeGenre": "جوي · أجواء كونية"
     },
     "cta": {
       "heading": "هل أنت مستعد لتحويل تعلمك؟",
@@ -297,7 +689,14 @@
     "blogCTA": {
       "heading": "أعجبك هذا المقال؟",
       "description": "احصل على نصائح تعلم اللغات وتحديثات التطبيق مباشرة في بريدك."
-    }
+    },
+    "preparing": "نحن نحضّر شيئاً مميزاً.",
+    "followSocial": "تابعنا على وسائل التواصل الاجتماعي للحصول على التحديثات.",
+    "errorAge": "يرجى تأكيد استيفائك لمتطلبات العمر.",
+    "tryAgain": "حاول مرة أخرى",
+    "ageConfirm": "أؤكد أن عمري {age} سنة على الأقل (أو لدي موافقة الوالدين إذا كنت أقل من 18 عاماً).",
+    "successTitle": "مرحباً بك في المجتمع!",
+    "successSubtitle": "تحقق من بريدك الوارد."
   },
   "EarlyAccess": {
     "badge": "وصول مبكر",
@@ -348,7 +747,20 @@
       "description": "انضم إلى قائمة الوصول المبكر لـLumenLingo. كن أول من يعرف عند إطلاق لغات وميزات جديدة. عروض حصرية للمؤيدين الأوائل.",
       "ogTitle": "الوصول المبكر — LumenLingo",
       "ogDescription": "انضم إلى قائمة الانتظار واحصل على وصول مبكر إلى LumenLingo. أتقن لغة جديدة من خلال الغمر المتعدد الحواس."
-    }
+    },
+    "shareHeading": "هل تعرف شخصًا سيعجبه هذا؟",
+    "shareDescription": "شاركه مع محبّ للغات — سيشكرك على ذلك.",
+    "copyLink": "نسخ الرابط",
+    "copied": "تم النسخ!",
+    "shareVia": "أو شارك عبر",
+    "shareText": "اكتشفتُ للتوّ LumenLingo — تطبيق رائع لتعلّم اللغات بالانغماس متعدد الحواس، والمقاطع الصوتية المحيطية، وأساليب مدعومة علميًا. ألقِ نظرة: {url}",
+    "handcraftedUI": "واجهة مصنوعة يدويًا",
+    "privacyFirst": "الخصوصية أولًا",
+    "freeToStart": "ابدأ مجانًا",
+    "twitter": "X (Twitter)",
+    "whatsapp": "WhatsApp",
+    "email": "البريد الإلكتروني",
+    "emailSubject": "اكتشف LumenLingo"
   },
   "Demo": {
     "region": "عرض تفاعلي للبطاقات التعليمية",
@@ -2217,6 +2629,43 @@
       "description": "نصائح وأدلة ورؤى لمتعلمي اللغات. استكشف علم التعلم، نصائح عملية، وآخر الأخبار من فريق LumenLingo.",
       "ogTitle": "المدونة — LumenLingo",
       "ogDescription": "نصائح وأدلة ورؤى لمتعلمي اللغات من LumenLingo."
+    },
+    "hero": {
+      "badge": "مجلة LumenLingo",
+      "heading": "نصائح وأدلة ورؤى",
+      "description": "استكشف علم تعلم اللغات، ونصائح الدراسة العملية، وآخر أخبار فريق LumenLingo."
+    },
+    "categories": {
+      "all": "الكل",
+      "languageTips": "نصائح لغوية",
+      "appUpdates": "تحديثات التطبيق",
+      "learningScience": "علم التعلم",
+      "culture": "ثقافة",
+      "guides": "أدلة"
+    },
+    "card": {
+      "featured": "مميز",
+      "read": "اقرأ"
+    },
+    "pagination": {
+      "ariaLabel": "تصفح المدونة",
+      "previous": "السابق",
+      "next": "التالي"
+    },
+    "callout": {
+      "info": "هل تعلم؟",
+      "tip": "نصيحة احترافية",
+      "warning": "مهم",
+      "science": "العلم",
+      "check": "اكتشاف رئيسي",
+      "videoUnavailable": "الفيديو غير متاح"
+    },
+    "share": {
+      "shareOnTwitter": "مشاركة على تويتر",
+      "shareOnFacebook": "مشاركة على فيسبوك",
+      "shareOnLinkedIn": "مشاركة على لينكد إن",
+      "copyLink": "نسخ الرابط",
+      "copied": "تم النسخ!"
     }
   },
   "Languages": {
@@ -3069,6 +3518,70 @@
       "p1": "لتقارير الأمان: <emailLink>email</emailLink>",
       "p2": "للدعم العام: <supportEmailLink>email</supportEmailLink>",
       "p3": "اللغة المفضلة: الإنجليزية"
+    }
+  },
+  "Careers": {
+    "heading": "انضم إلى الرحلة",
+    "intro": "نحن نبني شيئًا نؤمن به — ونودّ الحصول على مساعدتك.",
+    "story": "يُطوَّر LumenLingo حاليًا بواسطة مؤسس واحد بطموح استوديو واهتمام حِرَفي بالتفاصيل. نحن فريق صغير وشغوف يركّز على جعل تعلّم اللغات جميلًا وواعيًا وفعّالًا.",
+    "cta": "مع نموّ LumenLingo، سينمو الفريق أيضًا. إذا كنت تشاركنا شغف الحرفية وتؤمن بأنّ البرمجيات يمكن أن تكون عملية وجميلة في آن واحد، فنحن نتطلّع لسماعك.",
+    "valuesHeading": "ما نقدّره",
+    "values": {
+      "craft": "حرفية لا تُضاهى",
+      "craftDesc": "كل بكسل، كل حركة، كل تفاعل دقيق مهم. نهتم بالتفاصيل لأن مستخدمينا يستحقون الأفضل.",
+      "privacy": "الخصوصية افتراضيًا",
+      "privacyDesc": "ثقة المستخدم تُكتسب ولا تُفترض. نصمم أنظمة تحترم البيانات منذ اليوم الأول.",
+      "accessibility": "شمولية بالتصميم",
+      "accessibilityDesc": "يجب أن تكون البرمجيات الجميلة قابلة للاستخدام من قبل الجميع. سهولة الوصول ليست فكرة لاحقة — بل أساس.",
+      "curiosity": "فضول لا يتوقّف",
+      "curiosityDesc": "تعلّم اللغات يعني التواصل مع ثقافات أخرى. ونحمل ذلك الفضول نفسه إلى طريقة بنائنا."
+    },
+    "meta": {
+      "title": "الوظائف — LumenLingo",
+      "description": "انضم إلى فريق LumenLingo. نبني برامج تعلّم لغات جميلة وواعية."
+    }
+  },
+  "Press": {
+    "heading": "الملف الصحفي",
+    "intro": "كل ما يحتاجه الصحفيون والشركاء لمعرفته عن LumenLingo.",
+    "aboutHeading": "عن LumenLingo",
+    "aboutP1": "LumenLingo هو تطبيق لتعلّم اللغات على iOS يجمع بين التكرار المتباعد المبني على العلم وتجربة مستخدم جمالية وواعية بعمق. مهمتنا: جعل تعلّم اللغات جميلًا بقدر ما هو فعّال.",
+    "aboutP2": "بدعم 9 لغات وأكثر من 25 زوجًا لغويًا، يقدّم LumenLingo بطاقات تعليمية واختبارات قواعد وتحديات بناء كلمات ومقاطع صوتية محيطية وكرات تنفّس — كلها مصمّمة لخلق الأجواء المثالية للتعلّم المركّز.",
+    "aboutP3": "أسّسه مطوّر مستقل ذو خلفية في هندسة البرمجيات، وبُني LumenLingo بنفس الحرفية المتقنة المخصّصة عادةً لاستوديوهات التصميم — لكن بروح صانع مستقل.",
+    "statsHeading": "نظرة سريعة",
+    "stats": {
+      "languagesValue": "9",
+      "languages": "لغة مدعومة",
+      "pairsValue": "25+",
+      "pairs": "زوج لغوي",
+      "modesValue": "3",
+      "modes": "أوضاع تدريب"
+    },
+    "assetsHeading": "أصول العلامة التجارية",
+    "assetsDesc": "الشعارات ولقطات الشاشة وإرشادات العلامة التجارية متاحة عند الطلب. راسلنا عبر البريد الإلكتروني وسنرسل لك كل ما تحتاجه.",
+    "newsHeading": "في الأخبار",
+    "newsEmpty": "التغطية الإعلامية قادمة قريبًا — يسعدنا التواصل معك. راسلنا على <pressEmailLink>email</pressEmailLink>.",
+    "meta": {
+      "title": "الملف الصحفي — LumenLingo",
+      "description": "موارد صحفية وأصول العلامة التجارية ومعلومات الشركة للصحفيين والشركاء."
+    }
+  },
+  "Help": {
+    "heading": "مركز المساعدة",
+    "intro": "ابحث عن إجابات، واحصل على الدعم، وتعلّم كيف تستفيد من LumenLingo إلى أقصى حد.",
+    "searchPlaceholder": "ابحث عن مساعدة...",
+    "quickLinks": {
+      "contact": "اتصل بنا",
+      "dataRequest": "طلب البيانات",
+      "accessibility": "إمكانية الوصول"
+    },
+    "noResults": "لم يتم العثور على أسئلة مطابقة. جرّب بحثًا مختلفًا أو تواصل معنا مباشرةً.",
+    "ctaHeading": "لم تجد ما تبحث عنه؟",
+    "ctaDesc": "فريقنا هنا لمساعدتك. تواصل معنا وسنردّ عليك خلال 48 ساعة.",
+    "ctaButton": "تواصل معنا",
+    "meta": {
+      "title": "مركز المساعدة — LumenLingo",
+      "description": "ابحث عن إجابات للأسئلة الشائعة حول LumenLingo، وأدِر بياناتك، وتواصل مع فريق الدعم."
     }
   }
 }

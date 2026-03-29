@@ -1,41 +1,23 @@
 'use client';
 
 import { FadeIn } from '@/components/motion';
+import { useTranslations } from 'next-intl';
 
 interface Milestone {
-  year: string;
-  title: string;
-  description: string;
+  dateKey: string;
+  titleKey: string;
+  descKey: string;
 }
 
 const milestones: Milestone[] = [
-  {
-    year: 'Late 2025',
-    title: 'The Spark',
-    description:
-      'First working prototype built — a weekend hackathon that refused to stay a weekend. The mission: make language learning feel beautiful.',
-  },
-  {
-    year: 'Early 2026',
-    title: 'Building Brick by Brick',
-    description:
-      'Iteration after iteration. Flashcard engine, spaced repetition algorithm, 9 languages, soundscapes, breathing orbs — each feature hand-polished before moving to the next.',
-  },
-  {
-    year: 'March 2026',
-    title: 'Approaching Launch',
-    description:
-      'Beta testing with early adopters. Premium tiers refined. The website you\'re reading right now, crafted with the same obsessive care as the app itself.',
-  },
-  {
-    year: 'The Road Ahead',
-    title: 'What Comes Next',
-    description:
-      'New practice modes, community features, and the App Store launch. Built by a solo developer with the ambition of a studio and the attention to detail of an artisan.',
-  },
+  { dateKey: 'timeline.sparkDate', titleKey: 'timeline.spark', descKey: 'timeline.sparkDesc' },
+  { dateKey: 'timeline.betaDate', titleKey: 'timeline.beta', descKey: 'timeline.betaDesc' },
+  { dateKey: 'timeline.launchDate', titleKey: 'timeline.launch', descKey: 'timeline.launchDesc' },
+  { dateKey: 'timeline.growingDate', titleKey: 'timeline.growing', descKey: 'timeline.growingDesc' },
 ];
 
 export function Timeline() {
+  const t = useTranslations('About');
   return (
     <div className="relative">
       {/* Connecting line */}
@@ -47,9 +29,12 @@ export function Timeline() {
       <div className="space-y-12 sm:space-y-16">
         {milestones.map((m, i) => {
           const isLeft = i % 2 === 0;
+          const year = t(m.dateKey as any);
+          const title = t(m.titleKey as any);
+          const description = t(m.descKey as any);
           return (
             <FadeIn
-              key={m.year}
+              key={m.titleKey}
               delay={i * 0.12}
               className="relative grid grid-cols-[40px_1fr] gap-4 sm:grid-cols-2 sm:gap-12"
             >
@@ -64,12 +49,12 @@ export function Timeline() {
                 <>
                   <div className="hidden text-end sm:block">
                     <span className="inline-block rounded-full border border-glass-border bg-white/[0.04] px-3 py-1 font-[family-name:var(--font-cabinet)] text-xs font-medium text-violet">
-                      {m.year}
+                      {year}
                     </span>
                     <h3 className="mt-2 font-[family-name:var(--font-cabinet)] text-lg font-semibold text-white/90">
-                      {m.title}
+                      {title}
                     </h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-white/50">{m.description}</p>
+                    <p className="mt-1.5 text-sm leading-relaxed text-white/50">{description}</p>
                   </div>
                   <div className="sm:hidden" />
                 </>
@@ -80,12 +65,12 @@ export function Timeline() {
               {/* Content (always visible on mobile, alternates on desktop) */}
               <div className={`${isLeft ? 'sm:hidden' : ''} col-start-2 sm:col-start-auto`}>
                 <span className="inline-block rounded-full border border-glass-border bg-white/[0.04] px-3 py-1 font-[family-name:var(--font-cabinet)] text-xs font-medium text-violet">
-                  {m.year}
+                  {year}
                 </span>
                 <h3 className="mt-2 font-[family-name:var(--font-cabinet)] text-lg font-semibold text-white/90">
-                  {m.title}
+                  {title}
                 </h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-white/50">{m.description}</p>
+                <p className="mt-1.5 text-sm leading-relaxed text-white/50">{description}</p>
               </div>
 
               {!isLeft && <div className="hidden sm:block" />}

@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 import { duration } from '@/lib/motion';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
-import { faqItems } from './faq-data';
+import { useTranslations } from 'next-intl';
 import type { FAQItem } from './faq-data';
 
 export type { FAQItem };
@@ -14,6 +14,8 @@ export type { FAQItem };
 export function PricingFAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const t = useTranslations('Pricing');
+  const faqItems = t.raw('faq.items') as FAQItem[];
 
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -49,14 +51,14 @@ export function PricingFAQ() {
       <Container className="max-w-3xl">
         <FadeIn className="mb-12 text-center">
           <Heading as="h2" gradient className="mb-4">
-            Frequently Asked Questions
+            {t('faq.heading')}
           </Heading>
           <Text colour="secondary" className="mx-auto max-w-xl">
-            Everything you need to know about LumenLingo&apos;s pricing and subscriptions.
+            {t('faq.description')}
           </Text>
         </FadeIn>
 
-        <div role="region" aria-label="Frequently Asked Questions" className="flex flex-col gap-3">
+        <div role="region" aria-label={t('faq.ariaLabel')} className="flex flex-col gap-3">
           {faqItems.map((item, index) => {
             const panelId = `faq-panel-${index}`;
             const triggerId = `faq-trigger-${index}`;

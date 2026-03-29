@@ -3,6 +3,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 import type { ComponentType } from 'react';
 import type { IconProps } from '@/components/icons';
@@ -45,6 +46,7 @@ const LOOP_GAP = 2000; // pause between loops
 
 export function FlashcardFlowAnimation() {
   const reduced = useReducedMotion();
+  const t = useTranslations('Features');
   const [step, setStep] = useState(0); // 0: appear, 1: flip, 2: swipe, 3: next
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -114,7 +116,7 @@ export function FlashcardFlowAnimation() {
           {/* Top bar */}
           <div className="mb-3 flex items-center justify-between pt-6">
             <div className="h-2 w-16 rounded-full bg-white/10" />
-            <div className="text-[9px] font-medium text-foreground-muted">Card 1 of 5</div>
+            <div className="text-[9px] font-medium text-foreground-muted">{t('walkthroughs.demo.cardProgress')}</div>
           </div>
 
           {/* Progress bar */}
@@ -138,14 +140,14 @@ export function FlashcardFlowAnimation() {
                 >
                   {/* Front */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center rounded-xl border border-glass-border bg-gradient-to-br from-white/[0.06] to-white/[0.02] [backface-visibility:hidden]">
-                    <span className="mb-1 text-[8px] font-semibold text-violet uppercase">French</span>
-                    <span className="text-lg font-bold text-foreground">Bonjour</span>
-                    <span className="mt-1 text-[8px] text-foreground-muted">Tap to flip</span>
+                    <span className="mb-1 text-[8px] font-semibold text-violet uppercase">{t('walkthroughs.demo.french')}</span>
+                    <span className="text-lg font-bold text-foreground">{t('walkthroughs.demo.bonjour')}</span>
+                    <span className="mt-1 text-[8px] text-foreground-muted">{t('walkthroughs.demo.tapToFlip')}</span>
                   </div>
                   {/* Back */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center rounded-xl border border-cyan/20 bg-gradient-to-br from-cyan/[0.06] to-violet/[0.03] [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                    <span className="mb-1 text-[8px] font-semibold text-cyan uppercase">English</span>
-                    <span className="text-lg font-bold text-foreground">Hello</span>
+                    <span className="mb-1 text-[8px] font-semibold text-cyan uppercase">{t('walkthroughs.demo.english')}</span>
+                    <span className="text-lg font-bold text-foreground">{t('walkthroughs.demo.hello')}</span>
                   </div>
                 </motion.div>
               ) : step === 2 ? (
@@ -156,8 +158,8 @@ export function FlashcardFlowAnimation() {
                   animate={{ x: 180, opacity: 0, rotate: 12 }}
                   transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
                 >
-                  <span className="mb-1 text-[8px] font-semibold text-emerald-400">GOT IT ✓</span>
-                  <span className="text-lg font-bold text-foreground">Hello</span>
+                  <span className="mb-1 text-[8px] font-semibold text-emerald-400">{t('walkthroughs.demo.gotIt')}</span>
+                  <span className="text-lg font-bold text-foreground">{t('walkthroughs.demo.hello')}</span>
                 </motion.div>
               ) : (
                 <motion.div
@@ -167,9 +169,9 @@ export function FlashcardFlowAnimation() {
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.4, type: 'spring', stiffness: 300, damping: 24 }}
                 >
-                  <span className="mb-1 text-[8px] font-semibold text-violet uppercase">Spanish</span>
-                  <span className="text-lg font-bold text-foreground">Gracias</span>
-                  <span className="mt-1 text-[8px] text-foreground-muted">Tap to flip</span>
+                  <span className="mb-1 text-[8px] font-semibold text-violet uppercase">{t('walkthroughs.demo.spanish')}</span>
+                  <span className="text-lg font-bold text-foreground">{t('walkthroughs.demo.gracias')}</span>
+                  <span className="mt-1 text-[8px] text-foreground-muted">{t('walkthroughs.demo.tapToFlip')}</span>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -200,6 +202,7 @@ export function FlashcardFlowAnimation() {
 }
 
 function FlashcardStatic() {
+  const t = useTranslations('Features');
   return (
     <div className="relative aspect-[9/16] w-full bg-background p-4">
       <div className="pt-6" />
@@ -207,9 +210,9 @@ function FlashcardStatic() {
         <div className="h-full w-1/5 rounded-full bg-gradient-to-r from-violet to-cyan" />
       </div>
       <div className="mx-auto flex h-[55%] w-full flex-col items-center justify-center rounded-xl border border-glass-border bg-gradient-to-br from-white/[0.06] to-white/[0.02]">
-        <span className="mb-1 text-[8px] font-semibold text-violet uppercase">French</span>
-        <span className="text-lg font-bold text-foreground">Bonjour</span>
-        <span className="mt-1 text-[8px] text-foreground-muted">Tap to flip</span>
+        <span className="mb-1 text-[8px] font-semibold text-violet uppercase">{t('walkthroughs.demo.french')}</span>
+        <span className="text-lg font-bold text-foreground">{t('walkthroughs.demo.bonjour')}</span>
+        <span className="mt-1 text-[8px] text-foreground-muted">{t('walkthroughs.demo.tapToFlip')}</span>
       </div>
     </div>
   );
@@ -222,6 +225,7 @@ const WORD_BUILDER_DURATION = 10000;
 
 export function WordBuilderAnimation() {
   const reduced = useReducedMotion();
+  const t = useTranslations('Features');
   const [placedCount, setPlacedCount] = useState(0);
   const [complete, setComplete] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -297,8 +301,8 @@ export function WordBuilderAnimation() {
         <div className="relative aspect-[9/16] w-full overflow-hidden bg-background p-4">
           {/* Header */}
           <div className="mb-2 pt-6 text-center">
-            <span className="text-[8px] font-semibold tracking-wider text-violet/60 uppercase">Word Builder</span>
-            <div className="mt-1 text-[9px] text-foreground-muted">Build the word for &quot;Hello&quot;</div>
+            <span className="text-[8px] font-semibold tracking-wider text-violet/60 uppercase">{t('walkthroughs.demo.wordBuilder')}</span>
+            <div className="mt-1 text-[9px] text-foreground-muted">{t('walkthroughs.demo.buildWord')}</div>
           </div>
 
           {/* Target slots */}
@@ -334,8 +338,8 @@ export function WordBuilderAnimation() {
                 exit={{ opacity: 0 }}
                 className="mb-4 text-center"
               >
-                <span className="text-xs font-semibold text-emerald-400">✓ Correct!</span>
-                <div className="mt-0.5 text-[8px] text-foreground-muted">+15 XP</div>
+                <span className="text-xs font-semibold text-emerald-400">{t('walkthroughs.demo.correct')}</span>
+                <div className="mt-0.5 text-[8px] text-foreground-muted">{t('walkthroughs.demo.xpReward')}</div>
               </motion.div>
             )}
           </AnimatePresence>
@@ -378,11 +382,12 @@ export function WordBuilderAnimation() {
 }
 
 function WordBuilderStatic() {
+  const t = useTranslations('Features');
   return (
     <div className="relative aspect-[9/16] w-full bg-background p-4">
       <div className="mb-2 pt-6 text-center">
-        <span className="text-[8px] font-semibold text-violet/60 uppercase">Word Builder</span>
-        <div className="mt-1 text-[9px] text-foreground-muted">Build the word for &quot;Hello&quot;</div>
+        <span className="text-[8px] font-semibold text-violet/60 uppercase">{t('walkthroughs.demo.wordBuilder')}</span>
+        <div className="mt-1 text-[9px] text-foreground-muted">{t('walkthroughs.demo.buildWord')}</div>
       </div>
       <div className="mx-auto mb-6 flex w-fit gap-1.5 pt-2">
         {LETTERS.map((letter, i) => (
@@ -391,24 +396,25 @@ function WordBuilderStatic() {
           </div>
         ))}
       </div>
-      <div className="text-center text-xs font-semibold text-emerald-400">✓ Correct!</div>
+      <div className="text-center text-xs font-semibold text-emerald-400">{t('walkthroughs.demo.correct')}</div>
     </div>
   );
 }
 
 // ─── 3. Soundscape Selection Animation ─────────────────────────────
-const SOUNDSCAPES: { name: string; icon: ComponentType<IconProps>; category: string }[] = [
-  { name: 'Coffee Shop', icon: CoffeeShopIcon, category: 'Cozy' },
-  { name: 'Ocean Waves', icon: OceanWavesIcon, category: 'Nature' },
-  { name: 'Deep Space', icon: DeepSpaceIcon, category: 'Atmospheric' },
-  { name: 'Paris Café', icon: ParisCafeIcon, category: 'Travel' },
-  { name: 'Mountain Stream', icon: MountainStreamIcon, category: 'Nature' },
+const SOUNDSCAPE_ITEMS: { nameKey: string; icon: ComponentType<IconProps>; catKey: string }[] = [
+  { nameKey: 'coffeeShop', icon: CoffeeShopIcon, catKey: 'cozy' },
+  { nameKey: 'oceanWaves', icon: OceanWavesIcon, catKey: 'nature' },
+  { nameKey: 'deepSpace', icon: DeepSpaceIcon, catKey: 'atmospheric' },
+  { nameKey: 'parisCafe', icon: ParisCafeIcon, catKey: 'travel' },
+  { nameKey: 'mountainStream', icon: MountainStreamIcon, catKey: 'nature' },
 ];
 
 const SOUNDSCAPE_DURATION = 10000;
 
 export function SoundscapeAnimation() {
   const reduced = useReducedMotion();
+  const t = useTranslations('Features');
   const [selectedIdx, setSelectedIdx] = useState(-1);
   const [showVisualiser, setShowVisualiser] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -481,15 +487,15 @@ export function SoundscapeAnimation() {
         <div className="relative aspect-[9/16] w-full overflow-hidden bg-background p-4">
           {/* Header */}
           <div className="mb-3 pt-6 text-center">
-            <span className="text-[8px] font-semibold tracking-wider text-amber/60 uppercase">Soundscapes</span>
-            <div className="mt-1 text-[9px] text-foreground-muted">Find your focus</div>
+            <span className="text-[8px] font-semibold tracking-wider text-amber/60 uppercase">{t('walkthroughs.demo.soundscapes')}</span>
+            <div className="mt-1 text-[9px] text-foreground-muted">{t('walkthroughs.demo.findFocus')}</div>
           </div>
 
           {/* Soundscape list */}
           <div className="flex flex-col gap-1.5">
-            {SOUNDSCAPES.slice(0, 4).map((s, i) => (
+            {SOUNDSCAPE_ITEMS.slice(0, 4).map((sc, i) => (
               <motion.div
-                key={s.name}
+                key={sc.nameKey}
                 className={cn(
                   'flex items-center gap-2.5 rounded-xl border px-3 py-2 transition-colors',
                   i === selectedIdx
@@ -502,7 +508,7 @@ export function SoundscapeAnimation() {
                 }}
                 transition={{ duration: 0.2 }}
               >
-                <s.icon size={20} className={cn(
+                <sc.icon size={20} className={cn(
                   i === selectedIdx ? 'text-foreground' : 'text-foreground-muted',
                 )} aria-hidden />
                 <div className="flex-1">
@@ -510,9 +516,9 @@ export function SoundscapeAnimation() {
                     'text-[10px] font-medium',
                     i === selectedIdx ? 'text-foreground' : 'text-foreground-muted',
                   )}>
-                    {s.name}
+                    {t(`walkthroughs.demo.${sc.nameKey}` as any)}
                   </div>
-                  <div className="text-[7px] text-foreground-muted/50">{s.category}</div>
+                  <div className="text-[7px] text-foreground-muted/50">{t(`walkthroughs.demo.${sc.catKey}` as any)}</div>
                 </div>
                 {i === selectedIdx && showVisualiser && (
                   <div className="flex items-end gap-[2px]">
@@ -547,9 +553,9 @@ export function SoundscapeAnimation() {
                 exit={{ opacity: 0 }}
                 className="mt-3 flex flex-col items-center gap-1"
               >
-                <div className="text-[8px] font-semibold text-violet">Now Playing</div>
+                <div className="text-[8px] font-semibold text-violet">{t('walkthroughs.demo.nowPlaying')}</div>
                 <div className="flex items-center gap-1 text-[10px] font-medium text-foreground">
-                  <DeepSpaceIcon size={14} aria-hidden /> Deep Space
+                  <DeepSpaceIcon size={14} aria-hidden /> {t('walkthroughs.demo.deepSpace')}
                 </div>
                 {/* Waveform visualiser */}
                 <div className="mt-1 flex items-end gap-[1.5px]">
@@ -584,25 +590,26 @@ export function SoundscapeAnimation() {
 }
 
 function SoundscapeStatic() {
+  const t = useTranslations('Features');
   return (
     <div className="relative aspect-[9/16] w-full bg-background p-4">
       <div className="mb-3 pt-6 text-center">
-        <span className="text-[8px] font-semibold text-amber/60 uppercase">Soundscapes</span>
-        <div className="mt-1 text-[9px] text-foreground-muted">Find your focus</div>
+        <span className="text-[8px] font-semibold text-amber/60 uppercase">{t('walkthroughs.demo.soundscapes')}</span>
+        <div className="mt-1 text-[9px] text-foreground-muted">{t('walkthroughs.demo.findFocus')}</div>
       </div>
       <div className="flex flex-col gap-1.5">
-        {SOUNDSCAPES.slice(0, 4).map((s, i) => (
+        {SOUNDSCAPE_ITEMS.slice(0, 4).map((sc, i) => (
           <div
-            key={s.name}
+            key={sc.nameKey}
             className={cn(
               'flex items-center gap-2.5 rounded-xl border px-3 py-2',
               i === 2 ? 'border-violet/30 bg-violet/5' : 'border-glass-border/50 bg-white/[0.02]',
             )}
           >
-            <s.icon size={20} className="text-foreground-muted" aria-hidden />
+            <sc.icon size={20} className="text-foreground-muted" aria-hidden />
             <div>
-              <div className="text-[10px] font-medium text-foreground-muted">{s.name}</div>
-              <div className="text-[7px] text-foreground-muted/50">{s.category}</div>
+              <div className="text-[10px] font-medium text-foreground-muted">{t(`walkthroughs.demo.${sc.nameKey}` as any)}</div>
+              <div className="text-[7px] text-foreground-muted/50">{t(`walkthroughs.demo.${sc.catKey}` as any)}</div>
             </div>
           </div>
         ))}

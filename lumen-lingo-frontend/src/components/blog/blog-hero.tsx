@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { useTranslations } from 'next-intl';
 
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
@@ -17,6 +18,7 @@ export function BlogHero() {
 
 function BlogHeroContent({ animated = false }: { animated?: boolean }) {
   const prefersReduced = useReducedMotion();
+  const t = useTranslations('Blog');
   const anim = (cls: string) => (prefersReduced ? '' : cls);
   const initial = animated ? { opacity: 0, y: 20 } : undefined;
   const animate = animated ? { opacity: 1, y: 0 } : undefined;
@@ -78,7 +80,7 @@ function BlogHeroContent({ animated = false }: { animated?: boolean }) {
                   d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                 />
               </svg>
-              The LumenLingo Journal
+              {t('hero.badge')}
             </span>
           </motion.div>
 
@@ -88,7 +90,7 @@ function BlogHeroContent({ animated = false }: { animated?: boolean }) {
             transition={animated ? { duration: 0.6, delay: 0.1, ease } : undefined}
           >
             <h1 className="text-gradient mt-6 font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-              Tips, Guides &amp; Insights
+              {t('hero.heading')}
             </h1>
           </motion.div>
 
@@ -98,9 +100,7 @@ function BlogHeroContent({ animated = false }: { animated?: boolean }) {
             transition={animated ? { duration: 0.6, delay: 0.2, ease } : undefined}
           >
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[--color-foreground-secondary]">
-              Explore the science of language learning, practical study tips, and
-              the latest from the LumenLingo team. Written for learners who want
-              to go deeper.
+              {t('hero.description')}
             </p>
           </motion.div>
         </div>

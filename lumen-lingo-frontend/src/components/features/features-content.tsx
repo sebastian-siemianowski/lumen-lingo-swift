@@ -3,6 +3,7 @@
 import { cn } from '@/lib/utils';
 import { Container } from '@/components/ui';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { FeatureSection } from './feature-section';
 import { TableOfContents } from './table-of-contents';
 import {
@@ -23,6 +24,7 @@ import {
 /* ─── iOS-representative mini-UIs for each feature ─── */
 
 function FlashcardPreview() {
+  const t = useTranslations('Features');
   return (
     <div className="flex h-full w-full flex-col bg-gradient-to-b from-violet/[0.06] to-background p-6">
       {/* iOS status bar hint */}
@@ -38,48 +40,49 @@ function FlashcardPreview() {
         <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-white/5">
           <div className="h-full w-3/5 rounded-full bg-gradient-to-r from-violet to-cyan" />
         </div>
-        <span className="text-[9px] font-medium text-foreground-muted/60">3 / 5</span>
+        <span className="text-[9px] font-medium text-foreground-muted/60">{t('previews.flashcard.progress')}</span>
       </div>
       {/* Flashcard */}
       <div className="relative mx-auto flex flex-1 w-full max-w-[280px] flex-col items-center justify-center rounded-2xl border border-violet/20 bg-gradient-to-br from-white/[0.06] to-white/[0.02] p-6 shadow-lg shadow-violet/5">
-        <div className="absolute top-3 right-3 rounded-full bg-violet/10 px-2 py-0.5 text-[7px] font-semibold text-violet">3D Flip</div>
-        <span className="mb-1 text-[9px] font-semibold tracking-wider text-violet/60 uppercase">French</span>
+        <div className="absolute top-3 right-3 rounded-full bg-violet/10 px-2 py-0.5 text-[7px] font-semibold text-violet">{t('previews.flashcard.badge')}</div>
+        <span className="mb-1 text-[9px] font-semibold tracking-wider text-violet/60 uppercase">{t('previews.flashcard.language')}</span>
         <span className="text-2xl font-bold text-foreground">Bonjour</span>
         <span className="mt-1 text-[10px] text-foreground-muted/50">/ bɔ̃.ʒuʁ /</span>
         <div className="mt-4 flex items-center gap-1.5 text-[8px] text-foreground-muted/30">
           <svg viewBox="0 0 24 24" className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth={2}><path d="M7 8l5 5 5-5" /></svg>
-          Tap to flip
+          {t('previews.flashcard.tapToFlip')}
         </div>
       </div>
       {/* Action buttons — matching the actual app */}
       <div className="mt-4 flex items-center justify-center gap-4">
         <div className="flex items-center gap-1.5 rounded-full border border-red-400/20 bg-red-500/5 px-4 py-2">
           <svg viewBox="0 0 16 16" className="h-3 w-3 text-red-400/60" fill="none" stroke="currentColor" strokeWidth={2}><path d="M4 4l8 8M12 4l-8 8" /></svg>
-          <span className="text-[8px] font-semibold text-red-400/60">Still Learning</span>
+          <span className="text-[8px] font-semibold text-red-400/60">{t('previews.flashcard.stillLearning')}</span>
         </div>
         <div className="flex items-center gap-1.5 rounded-full border border-emerald-400/20 bg-emerald-500/5 px-4 py-2">
           <svg viewBox="0 0 16 16" className="h-3 w-3 text-emerald-400/60" fill="none" stroke="currentColor" strokeWidth={2.5}><path d="M4 8l3 3 5-5" /></svg>
-          <span className="text-[8px] font-semibold text-emerald-400/60">Got It</span>
+          <span className="text-[8px] font-semibold text-emerald-400/60">{t('previews.flashcard.gotIt')}</span>
         </div>
       </div>
       {/* XP indicator */}
-      <div className="mt-2 text-center text-[8px] font-medium text-violet/50">+10 XP per card</div>
+      <div className="mt-2 text-center text-[8px] font-medium text-violet/50">{t('previews.flashcard.xpPerCard')}</div>
     </div>
   );
 }
 
 function SpacedRepetitionPreview() {
+  const t = useTranslations('Features');
   const categories = [
-    { label: 'Greetings', mastered: 18, total: 20, color: 'bg-emerald-400' },
-    { label: 'Food & Drink', mastered: 12, total: 25, color: 'bg-cyan' },
-    { label: 'Travel', mastered: 5, total: 30, color: 'bg-violet' },
-    { label: 'Business', mastered: 2, total: 20, color: 'bg-amber' },
+    { label: t('previews.spacedRep.greetings'), mastered: 18, total: 20, color: 'bg-emerald-400' },
+    { label: t('previews.spacedRep.foodDrink'), mastered: 12, total: 25, color: 'bg-cyan' },
+    { label: t('previews.spacedRep.travel'), mastered: 5, total: 30, color: 'bg-violet' },
+    { label: t('previews.spacedRep.business'), mastered: 2, total: 20, color: 'bg-amber' },
   ];
   return (
     <div className="flex h-full w-full flex-col bg-gradient-to-b from-cyan/[0.06] to-background p-6">
       <div className="mb-4 text-center">
-        <span className="text-[9px] font-semibold tracking-wider text-cyan/60 uppercase">Mastery Tracking</span>
-        <div className="mt-1 text-sm font-bold text-foreground">37 of 95 mastered</div>
+        <span className="text-[9px] font-semibold tracking-wider text-cyan/60 uppercase">{t('previews.spacedRep.masteryTracking')}</span>
+        <div className="mt-1 text-sm font-bold text-foreground">{t('previews.spacedRep.mastered')}</div>
       </div>
       {/* Category mastery levels */}
       <div className="flex flex-col gap-3">
@@ -96,18 +99,18 @@ function SpacedRepetitionPreview() {
       {/* Stats */}
       <div className="mt-5 flex items-center gap-2">
         <div className="flex-1 rounded-lg border border-glass-border/40 bg-white/[0.03] p-2.5">
-          <div className="text-[8px] text-foreground-muted/40">Streak</div>
+          <div className="text-[8px] text-foreground-muted/40">{t('previews.spacedRep.streak')}</div>
           <div className="mt-0.5 flex items-center gap-1 text-lg font-bold text-foreground">
             7
             <svg viewBox="0 0 16 16" className="h-3.5 w-3.5 text-amber" fill="currentColor"><path d="M8 1.5c-.3 0-.5.1-.7.3L4.5 6.5C3.5 8 3 9.2 3 10.3 3 12.9 5.2 15 8 15s5-2.1 5-4.7c0-1.1-.5-2.3-1.5-3.8L8.7 1.8C8.5 1.6 8.3 1.5 8 1.5z" /></svg>
           </div>
         </div>
         <div className="flex-1 rounded-lg border border-glass-border/40 bg-white/[0.03] p-2.5">
-          <div className="text-[8px] text-foreground-muted/40">Accuracy</div>
+          <div className="text-[8px] text-foreground-muted/40">{t('previews.spacedRep.accuracy')}</div>
           <div className="mt-0.5 text-lg font-bold text-cyan">94%</div>
         </div>
         <div className="flex-1 rounded-lg border border-glass-border/40 bg-white/[0.03] p-2.5">
-          <div className="text-[8px] text-foreground-muted/40">Total XP</div>
+          <div className="text-[8px] text-foreground-muted/40">{t('previews.spacedRep.totalXp')}</div>
           <div className="mt-0.5 text-lg font-bold text-violet">2,450</div>
         </div>
       </div>
@@ -116,15 +119,16 @@ function SpacedRepetitionPreview() {
 }
 
 function PracticeModesPreview() {
+  const t = useTranslations('Features');
   const modes = [
-    { name: 'Flash Cards', desc: '3D flip cards, swipe to recall', active: false, iconPath: 'M3 5a2 2 0 012-2h6a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm10 0a2 2 0 012-2h2a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2V5z' },
-    { name: 'Grammar Challenge', desc: 'Multiple-choice A / B / C / D', active: true, iconPath: 'M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4' },
-    { name: 'Word Builder', desc: 'Build words letter by letter, 15 XP', active: false, iconPath: 'M4 6h16M4 10h16M4 14h10' },
+    { name: t('previews.practice.flashCards'), desc: t('previews.practice.flashCardsDesc'), active: false, iconPath: 'M3 5a2 2 0 012-2h6a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm10 0a2 2 0 012-2h2a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2V5z' },
+    { name: t('previews.practice.grammarChallenge'), desc: t('previews.practice.grammarChallengeDesc'), active: true, iconPath: 'M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4' },
+    { name: t('previews.practice.wordBuilder'), desc: t('previews.practice.wordBuilderDesc'), active: false, iconPath: 'M4 6h16M4 10h16M4 14h10' },
   ];
   return (
     <div className="flex h-full w-full flex-col bg-gradient-to-b from-violet/[0.04] via-background to-cyan/[0.04] p-6">
       <div className="mb-4 text-center">
-        <span className="text-[9px] font-semibold tracking-wider text-violet/60 uppercase">Choose Mode</span>
+        <span className="text-[9px] font-semibold tracking-wider text-violet/60 uppercase">{t('previews.practice.chooseMode')}</span>
       </div>
       <div className="flex flex-col gap-2.5">
         {modes.map((m) => (
@@ -145,7 +149,7 @@ function PracticeModesPreview() {
               <div className="text-[8px] text-foreground-muted/50">{m.desc}</div>
             </div>
             {m.active && (
-              <div className="rounded-full bg-violet/20 px-2 py-0.5 text-[7px] font-bold text-violet">Intermediate</div>
+              <div className="rounded-full bg-violet/20 px-2 py-0.5 text-[7px] font-bold text-violet">{t('previews.practice.intermediate')}</div>
             )}
           </div>
         ))}
@@ -153,7 +157,7 @@ function PracticeModesPreview() {
       {/* Start button */}
       <div className="mt-4 flex justify-center">
         <div className="rounded-full bg-gradient-to-r from-violet to-cyan px-8 py-2 text-[10px] font-bold text-white shadow-lg shadow-violet/20">
-          Start Session
+          {t('previews.practice.startSession')}
         </div>
       </div>
     </div>
@@ -161,17 +165,18 @@ function PracticeModesPreview() {
 }
 
 function SoundscapePreview() {
+  const t = useTranslations('Features');
   const categories = [
-    { name: 'Cozy', count: 3, color: 'from-amber/40 to-orange-400/30', dot: 'bg-amber' },
-    { name: 'Nature', count: 3, color: 'from-emerald-400/40 to-cyan/30', dot: 'bg-emerald-400' },
-    { name: 'Atmospheric', count: 3, color: 'from-violet/40 to-indigo-400/30', dot: 'bg-violet' },
-    { name: 'Travel', count: 3, color: 'from-cyan/40 to-sky-400/30', dot: 'bg-cyan' },
+    { name: t('previews.soundscapes.cozy'), count: 3, color: 'from-amber/40 to-orange-400/30', dot: 'bg-amber' },
+    { name: t('previews.soundscapes.nature'), count: 3, color: 'from-emerald-400/40 to-cyan/30', dot: 'bg-emerald-400' },
+    { name: t('previews.soundscapes.atmospheric'), count: 3, color: 'from-violet/40 to-indigo-400/30', dot: 'bg-violet' },
+    { name: t('previews.soundscapes.travel'), count: 3, color: 'from-cyan/40 to-sky-400/30', dot: 'bg-cyan' },
   ];
   const scapes = [
-    { name: 'Paris Café', cat: 'Cozy', Icon: ParisCafeIcon },
-    { name: 'Japanese Bamboo Forest', cat: 'Nature', Icon: OceanWavesIcon },
-    { name: 'Deep Space Drift', cat: 'Atmospheric', Icon: DeepSpaceIcon, active: true },
-    { name: 'Dominican Beach', cat: 'Travel', Icon: OceanWavesIcon },
+    { name: t('previews.soundscapes.parisCafe'), cat: t('previews.soundscapes.cozy'), Icon: ParisCafeIcon },
+    { name: t('previews.soundscapes.bambooForest'), cat: t('previews.soundscapes.nature'), Icon: OceanWavesIcon },
+    { name: t('previews.soundscapes.deepSpace'), cat: t('previews.soundscapes.atmospheric'), Icon: DeepSpaceIcon, active: true },
+    { name: t('previews.soundscapes.dominicanBeach'), cat: t('previews.soundscapes.travel'), Icon: OceanWavesIcon },
   ];
 
   return (
@@ -193,8 +198,8 @@ function SoundscapePreview() {
       <div className="relative z-10 flex flex-col">
         {/* Header */}
         <div className="mb-5 text-center">
-          <span className="text-[9px] font-semibold tracking-[0.2em] text-violet/60 uppercase">12 Ambient Soundscapes</span>
-          <div className="mt-1 text-xs font-medium text-foreground-muted/50">Four categories, find your focus</div>
+          <span className="text-[9px] font-semibold tracking-[0.2em] text-violet/60 uppercase">{t('previews.soundscapes.heading')}</span>
+          <div className="mt-1 text-xs font-medium text-foreground-muted/50">{t('previews.soundscapes.subheading')}</div>
         </div>
 
         {/* Category pills */}
@@ -285,8 +290,8 @@ function SoundscapePreview() {
                 <DeepSpaceIcon size={14} className="text-violet" aria-hidden />
               </div>
               <div className="flex-1">
-                <div className="text-[8px] font-semibold text-violet/70 uppercase tracking-wider">Now Playing</div>
-                <div className="text-[11px] font-semibold text-foreground">Deep Space Drift</div>
+                <div className="text-[8px] font-semibold text-violet/70 uppercase tracking-wider">{t('previews.soundscapes.nowPlaying')}</div>
+                <div className="text-[11px] font-semibold text-foreground">{t('previews.soundscapes.deepSpace')}</div>
               </div>
               <div className="flex items-end gap-[1.5px]">
                 {Array.from({ length: 20 }).map((_, i) => (
@@ -315,6 +320,7 @@ function SoundscapePreview() {
 }
 
 function BreathingOrbPreview() {
+  const t = useTranslations('Features');
   const cities = [
     { name: 'Barcelona', color: 'from-rose-500/30 to-amber/25', active: true },
     { name: 'Shanghai', color: 'from-cyan/30 to-emerald-400/20', active: false },
@@ -325,9 +331,9 @@ function BreathingOrbPreview() {
   ];
 
   const types = [
-    { label: '6 Breathing Orbs', color: 'text-amber', bg: 'bg-amber/10', border: 'border-amber/20' },
-    { label: '6 Nebula Drift', color: 'text-violet', bg: 'bg-violet/10', border: 'border-violet/20' },
-    { label: '6 Quantum Flow', color: 'text-cyan', bg: 'bg-cyan/10', border: 'border-cyan/20' },
+    { label: t('previews.breathingOrbs.breathingOrbs'), color: 'text-amber', bg: 'bg-amber/10', border: 'border-amber/20' },
+    { label: t('previews.breathingOrbs.nebulaDrift'), color: 'text-violet', bg: 'bg-violet/10', border: 'border-violet/20' },
+    { label: t('previews.breathingOrbs.quantumFlow'), color: 'text-cyan', bg: 'bg-cyan/10', border: 'border-cyan/20' },
   ];
 
   return (
@@ -353,7 +359,7 @@ function BreathingOrbPreview() {
 
       {/* Header */}
       <div className="absolute top-4 left-0 right-0 z-10 text-center">
-        <span className="text-[9px] font-semibold tracking-[0.2em] text-amber/60 uppercase">18 Visual Backgrounds</span>
+        <span className="text-[9px] font-semibold tracking-[0.2em] text-amber/60 uppercase">{t('previews.breathingOrbs.heading')}</span>
       </div>
 
       {/* Central breathing orb — the hero element */}
@@ -462,15 +468,17 @@ function BreathingOrbPreview() {
 }
 
 function ProgressPreview() {
+  const t = useTranslations('Features');
+  const days = t.raw('previews.progress.days') as string[];
   return (
     <div className="flex h-full w-full flex-col bg-gradient-to-b from-cyan/[0.06] to-background p-6">
       <div className="mb-4 text-center">
-        <span className="text-[9px] font-semibold tracking-wider text-cyan/60 uppercase">Your Progress</span>
+        <span className="text-[9px] font-semibold tracking-wider text-cyan/60 uppercase">{t('previews.progress.heading')}</span>
       </div>
       {/* XP and level */}
       <div className="mb-4 flex items-center justify-between rounded-xl border border-glass-border/40 bg-white/[0.03] px-4 py-3">
         <div>
-          <div className="text-[8px] text-foreground-muted/40">Level 12</div>
+          <div className="text-[8px] text-foreground-muted/40">{t('previews.progress.level')}</div>
           <div className="text-base font-bold text-foreground">2,450 XP</div>
         </div>
         <div className="relative h-12 w-12">
@@ -482,7 +490,7 @@ function ProgressPreview() {
         </div>
       </div>
       {/* Weekly chart */}
-      <div className="text-[8px] font-medium text-foreground-muted/50 mb-2">This week</div>
+      <div className="text-[8px] font-medium text-foreground-muted/50 mb-2">{t('previews.progress.thisWeek')}</div>
       <div className="flex items-end justify-between gap-1.5 px-1">
         {[40, 65, 30, 80, 55, 90, 45].map((h, i) => (
           <div key={i} className="flex flex-1 flex-col items-center gap-1">
@@ -490,32 +498,33 @@ function ProgressPreview() {
               'w-full rounded-sm',
               i === 5 ? 'bg-gradient-to-t from-cyan to-violet' : 'bg-white/10',
             )} style={{ height: `${h * 0.6}px` }} />
-            <span className="text-[7px] text-foreground-muted/30">{['M', 'T', 'W', 'T', 'F', 'S', 'S'][i]}</span>
+            <span className="text-[7px] text-foreground-muted/30">{days[i]}</span>
           </div>
         ))}
       </div>
       {/* Streak */}
       <div className="mt-3 flex items-center justify-center gap-1.5 rounded-lg border border-glass-border/30 bg-white/[0.02] py-2 text-[9px] text-foreground-muted/60">
         <svg viewBox="0 0 16 16" className="h-3.5 w-3.5 text-amber" fill="currentColor"><path d="M8 1.5c-.3 0-.5.1-.7.3L4.5 6.5C3.5 8 3 9.2 3 10.3 3 12.9 5.2 15 8 15s5-2.1 5-4.7c0-1.1-.5-2.3-1.5-3.8L8.7 1.8C8.5 1.6 8.3 1.5 8 1.5z" /></svg>
-        7-day streak
+        {t('previews.progress.streak')}
       </div>
     </div>
   );
 }
 
 function LanguagePairPreview() {
+  const t = useTranslations('Features');
   const pairs = [
-    { from: 'EN', to: 'ES', label: 'English → Spanish', tier: 'Free', tierCol: 'text-emerald-400 bg-emerald-500/10' },
-    { from: 'EN', to: 'FR', label: 'English → French', tier: 'Free', tierCol: 'text-emerald-400 bg-emerald-500/10' },
-    { from: 'EN', to: 'DE', label: 'English → German', tier: 'Free', tierCol: 'text-emerald-400 bg-emerald-500/10' },
-    { from: 'EN', to: 'JA', label: 'English → Japanese', tier: 'Pro', tierCol: 'text-violet bg-violet/10' },
-    { from: 'EN', to: 'UK', label: 'English → Ukrainian', tier: 'Pro', tierCol: 'text-violet bg-violet/10' },
+    { from: 'EN', to: 'ES', label: t('previews.languagePairs.enEs'), tier: 'Free', tierCol: 'text-emerald-400 bg-emerald-500/10' },
+    { from: 'EN', to: 'FR', label: t('previews.languagePairs.enFr'), tier: 'Free', tierCol: 'text-emerald-400 bg-emerald-500/10' },
+    { from: 'EN', to: 'DE', label: t('previews.languagePairs.enDe'), tier: 'Free', tierCol: 'text-emerald-400 bg-emerald-500/10' },
+    { from: 'EN', to: 'JA', label: t('previews.languagePairs.enJa'), tier: 'Pro', tierCol: 'text-violet bg-violet/10' },
+    { from: 'EN', to: 'UK', label: t('previews.languagePairs.enUk'), tier: 'Pro', tierCol: 'text-violet bg-violet/10' },
   ];
   return (
     <div className="flex h-full w-full flex-col bg-gradient-to-b from-cyan/[0.04] to-amber/[0.03] p-6">
       <div className="mb-4 text-center">
-        <span className="text-[9px] font-semibold tracking-wider text-cyan/60 uppercase">Language Pairs</span>
-        <div className="mt-1 text-sm font-bold text-foreground">25+ Combinations</div>
+        <span className="text-[9px] font-semibold tracking-wider text-cyan/60 uppercase">{t('previews.languagePairs.heading')}</span>
+        <div className="mt-1 text-sm font-bold text-foreground">{t('previews.languagePairs.combinations')}</div>
       </div>
       <div className="flex flex-col gap-1.5">
         {pairs.map((p) => (
@@ -535,11 +544,12 @@ function LanguagePairPreview() {
 }
 
 function MembershipPreview() {
+  const t = useTranslations('Features');
   const tiers = [
     {
-      name: 'Starter',
+      name: t('previews.membership.starter'),
       price: 'Free',
-      highlight: '3 pairs',
+      highlight: t('previews.membership.threePairs'),
       gradient: 'from-foreground-muted/30 to-foreground-muted/15',
       ringColor: 'border-foreground-muted/15',
       glowColor: 'bg-foreground-muted/5',
@@ -550,7 +560,7 @@ function MembershipPreview() {
     {
       name: 'Pro',
       price: '£9.99',
-      highlight: 'Offline',
+      highlight: t('previews.membership.offline'),
       gradient: 'from-violet to-violet/50',
       ringColor: 'border-violet/30',
       glowColor: 'bg-violet/8',
@@ -561,7 +571,7 @@ function MembershipPreview() {
     {
       name: 'Elite',
       price: '£19.99',
-      highlight: 'All Languages',
+      highlight: t('previews.membership.allLanguages'),
       gradient: 'from-cyan to-violet/60',
       ringColor: 'border-cyan/40',
       glowColor: 'bg-cyan/10',
@@ -572,7 +582,7 @@ function MembershipPreview() {
     {
       name: 'Royal',
       price: '£99.99',
-      highlight: 'Everything',
+      highlight: t('previews.membership.everything'),
       gradient: 'from-amber via-amber/80 to-rose-400/60',
       ringColor: 'border-amber/40',
       glowColor: 'bg-amber/10',
@@ -605,22 +615,22 @@ function MembershipPreview() {
 
       {/* 2×2 Grid of tier cards */}
       <div className="relative z-10 grid w-full grid-cols-2 gap-2.5">
-        {tiers.map((t, i) => (
+        {tiers.map((tier, i) => (
           <motion.div
-            key={t.name}
+            key={tier.name}
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ delay: 0.2 + i * 0.1, type: 'spring', stiffness: 220, damping: 20 }}
             className={cn(
               'group relative flex flex-col items-center gap-1.5 rounded-2xl border p-2.5 sm:p-3 backdrop-blur-sm transition-all duration-500',
-              t.ringColor,
-              t.active
+              tier.ringColor,
+              tier.active
                 ? 'bg-white/[0.04] shadow-xl shadow-cyan/5 ring-1 ring-cyan/15'
                 : 'bg-white/[0.02]',
             )}
           >
             {/* Active shimmer */}
-            {t.active && (
+            {tier.active && (
               <motion.div
                 className="pointer-events-none absolute inset-0 rounded-2xl"
                 style={{
@@ -632,14 +642,14 @@ function MembershipPreview() {
             )}
 
             {/* Popular badge */}
-            {t.active && (
+            {tier.active && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.5, y: -4 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ delay: 0.8, type: 'spring', stiffness: 300, damping: 18 }}
                 className="absolute -top-2 rounded-full bg-gradient-to-r from-cyan to-violet px-2.5 py-0.5 text-[7px] font-bold tracking-wider text-white uppercase shadow-lg shadow-cyan/20"
               >
-                Popular
+                {t('previews.membership.popular')}
               </motion.div>
             )}
 
@@ -647,9 +657,9 @@ function MembershipPreview() {
             <div className="relative flex h-11 w-11 items-center justify-center sm:h-12 sm:w-12">
               {/* Background glow */}
               <motion.div
-                className={cn('absolute -inset-1 rounded-full blur-lg', t.glowColor)}
+                className={cn('absolute -inset-1 rounded-full blur-lg', tier.glowColor)}
                 animate={{ scale: [1, 1.3, 1], opacity: [0.4, 0.7, 0.4] }}
-                transition={{ duration: t.active ? 2.5 : 4, repeat: Infinity, ease: 'easeInOut', delay: i * 0.5 }}
+                transition={{ duration: tier.active ? 2.5 : 4, repeat: Infinity, ease: 'easeInOut', delay: i * 0.5 }}
               />
               {/* Ring track */}
               <svg className="absolute inset-0 h-full w-full -rotate-90" viewBox="0 0 48 48">
@@ -657,24 +667,24 @@ function MembershipPreview() {
                 <motion.circle
                   cx="24" cy="24" r="20" fill="none" strokeWidth="3"
                   strokeLinecap="round"
-                  className={cn('', t.textColor)}
-                  style={{ filter: t.active ? 'drop-shadow(0 0 6px rgba(6,182,212,0.5))' : `drop-shadow(0 0 3px currentColor)` }}
+                  className={cn('', tier.textColor)}
+                  style={{ filter: tier.active ? 'drop-shadow(0 0 6px rgba(6,182,212,0.5))' : `drop-shadow(0 0 3px currentColor)` }}
                   strokeDasharray={`${2 * Math.PI * 20}`}
                   initial={{ strokeDashoffset: 2 * Math.PI * 20 }}
-                  animate={{ strokeDashoffset: 2 * Math.PI * 20 * (1 - t.fillPercent / 100) }}
+                  animate={{ strokeDashoffset: 2 * Math.PI * 20 * (1 - tier.fillPercent / 100) }}
                   transition={{ delay: 0.5 + i * 0.15, duration: 1.2, ease: 'easeOut' }}
                 />
               </svg>
               {/* Icon */}
-              <DiamondIcon size={14} className={cn(t.textColor, 'relative z-10 transition-colors')} aria-hidden />
+              <DiamondIcon size={14} className={cn(tier.textColor, 'relative z-10 transition-colors')} aria-hidden />
             </div>
 
             {/* Name + price */}
             <div className="relative z-10 text-center">
-              <div className={cn('text-[11px] font-bold tracking-wide sm:text-xs', t.active ? 'text-foreground' : 'text-foreground-muted/70')}>
-                {t.name}
+              <div className={cn('text-[11px] font-bold tracking-wide sm:text-xs', tier.active ? 'text-foreground' : 'text-foreground-muted/70')}>
+                {tier.name}
               </div>
-              <div className="mt-0.5 text-[9px] font-medium text-foreground-muted/40">{t.price}</div>
+              <div className="mt-0.5 text-[9px] font-medium text-foreground-muted/40">{tier.price}</div>
             </div>
 
             {/* Feature highlight chip */}
@@ -684,10 +694,10 @@ function MembershipPreview() {
               transition={{ delay: 0.7 + i * 0.1, type: 'spring', stiffness: 250, damping: 22 }}
               className={cn(
                 'rounded-full px-2.5 py-0.5 text-[7px] font-semibold',
-                t.glowColor, t.textColor,
+                tier.glowColor, tier.textColor,
               )}
             >
-              {t.highlight}
+              {tier.highlight}
             </motion.div>
           </motion.div>
         ))}
@@ -701,7 +711,7 @@ function MembershipPreview() {
         className="relative z-10 mt-2.5 flex items-center gap-2"
       >
         <div className="h-px w-6 bg-gradient-to-r from-transparent to-amber/20" />
-        <span className="text-[8px] font-medium text-amber/50">14-day free Royal trial</span>
+        <span className="text-[8px] font-medium text-amber/50">{t('previews.membership.trial')}</span>
         <div className="h-px w-6 bg-gradient-to-l from-transparent to-amber/20" />
       </motion.div>
     </div>
@@ -721,18 +731,29 @@ const icons = {
 };
 
 /* ─── Feature data ─── */
-const tocItems = [
-  { id: 'flashcards', label: 'Immersive Flashcards', icon: <FlashcardIcon size={14} /> },
-  { id: 'spaced-repetition', label: 'Smart Spaced Repetition', icon: <SpacedRepetitionIcon size={14} /> },
-  { id: 'practice-modes', label: 'Practice Modes', icon: <PracticeModeIcon size={14} /> },
-  { id: 'soundscapes', label: 'Soundscapes', icon: <SoundscapeIcon size={14} /> },
-  { id: 'breathing-orbs', label: 'Breathing Orbs & Visuals', icon: <BreathingOrbIcon size={14} /> },
-  { id: 'progress', label: 'Progress & Analytics', icon: <ProgressIcon size={14} /> },
-  { id: 'languages', label: 'Language Pairs', icon: <LanguagePairIcon size={14} /> },
-  { id: 'membership', label: 'Membership Tiers', icon: <MembershipIcon size={14} /> },
+const tocIcons = [
+  { id: 'flashcards', key: 'flashcards', icon: <FlashcardIcon size={14} /> },
+  { id: 'spaced-repetition', key: 'spacedRepetition', icon: <SpacedRepetitionIcon size={14} /> },
+  { id: 'practice-modes', key: 'practiceModes', icon: <PracticeModeIcon size={14} /> },
+  { id: 'soundscapes', key: 'soundscapes', icon: <SoundscapeIcon size={14} /> },
+  { id: 'breathing-orbs', key: 'breathingOrbs', icon: <BreathingOrbIcon size={14} /> },
+  { id: 'progress', key: 'progress', icon: <ProgressIcon size={14} /> },
+  { id: 'languages', key: 'languages', icon: <LanguagePairIcon size={14} /> },
+  { id: 'membership', key: 'membership', icon: <MembershipIcon size={14} /> },
 ];
 
 export function FeaturesContent() {
+  const t = useTranslations('Features');
+  const tocItems = tocIcons.map((item) => ({
+    id: item.id,
+    label: t(`toc.${item.key}` as any),
+    icon: item.icon,
+  }));
+  const s = (section: string) => ({
+    title: t(`sections.${section}.title` as any),
+    description: t.raw(`sections.${section}.description`) as string[],
+    capabilities: t.raw(`sections.${section}.capabilities`) as string[],
+  });
   return (
     <Container>
       <div className="grid gap-8 lg:grid-cols-[220px_1fr]">
@@ -745,21 +766,8 @@ export function FeaturesContent() {
           <FeatureSection
             id="flashcards"
             icon={icons.flashcards}
-            title="Immersive Flashcards"
             tint="violet"
-            description={[
-              'LumenLingo\'s flashcard experience is unlike anything else. Each card is a glass-morphic surface that responds to touch with silky-smooth gestures — swipe right for correct, left for incorrect, and watch the card animate with satisfying physics-based feedback.',
-              'Cards display source and target language text with pronunciation guides, and smart colour coding reinforces your memory through visual association. The frosted-glass design adapts to dark and light modes with cosmic and architectural aesthetics respectively.',
-              'Every interaction is deliberate. The flip animation reveals the answer with a graceful 3D rotation. Colour-coded borders flash green for "Got It" and red for "Still Learning". Sound feedback complements each gesture, creating a multi-sensory learning loop that earns you 10 XP per correct answer.',
-            ]}
-            capabilities={[
-              'Swipe gestures with physics-based spring animations',
-              '3D card flip with glass-morphic design',
-              'Instant colour-coded feedback on every answer',
-              'Pronunciation guides for non-Latin scripts',
-              'Multi-sensory feedback: visual + audio',
-              'Customisable deck sizes per tier (50–unlimited)',
-            ]}
+            {...s('flashcards')}
             screenshot={<FlashcardPreview />}
           />
 
@@ -770,22 +778,9 @@ export function FeaturesContent() {
           <FeatureSection
             id="spaced-repetition"
             icon={icons.spacedRepetition}
-            title="Smart Spaced Repetition"
             tint="cyan"
             reversed
-            description={[
-              'LumenLingo tracks your performance across every card and surfaces vocabulary you need to practise most. Words you struggle with appear more frequently; words you\'ve mastered recede — so you spend time where it matters.',
-              'The system organises vocabulary into categories — Greetings, Food, Travel, Business, and more — tracking your mastered word count per category. Clear progress bars show exactly how much of each topic you\'ve conquered.',
-              'Unlike rigid SRS systems, LumenLingo adapts in real time. Miss a card after a long break? It reappears sooner. Nail five in a row? The word joins your mastered set. The algorithm works with your brain, not against it.',
-            ]}
-            capabilities={[
-              'Per-category mastery tracking',
-              'Mastered word sets that grow with you',
-              'Accuracy and streak statistics',
-              'Real-time difficulty adjustment',
-              'Visual mastery progress bars per topic',
-              'XP system: 10 XP per Flash Card, 10 per Quiz, 15 per Word Builder',
-            ]}
+            {...s('spacedRepetition')}
             screenshot={<SpacedRepetitionPreview />}
           />
 
@@ -795,21 +790,8 @@ export function FeaturesContent() {
           <FeatureSection
             id="practice-modes"
             icon={icons.practice}
-            title="3 Distinct Practice Modes"
             tint="violet"
-            description={[
-              'Variety is the engine of engagement. LumenLingo offers three fundamentally different practice modes — each targeting a different cognitive skill — so your sessions never feel repetitive.',
-              'Flash Cards build recognition speed with satisfying 3D flip animations. Grammar Challenge tests your understanding with multiple-choice A/B/C/D questions and explanation panels that teach you why an answer is correct. Word Builder challenges you to construct words letter by letter, strengthening spelling and recall simultaneously.',
-              'Each mode supports three difficulty levels — Beginner, Intermediate, and Advanced — progressively unlocked through your tier. Idle hints nudge you gently if you hesitate, keeping the learning flow unbroken.',
-            ]}
-            capabilities={[
-              'Flash Cards: 3D flip with swipe gestures',
-              'Grammar Challenge: A/B/C/D with explanations',
-              'Word Builder: letter-by-letter construction, 15 XP',
-              'Three difficulty levels per mode',
-              'Progress tracked independently per mode',
-              'Idle hints to keep you in flow',
-            ]}
+            {...s('practiceModes')}
             screenshot={<PracticeModesPreview />}
           />
 
@@ -819,22 +801,9 @@ export function FeaturesContent() {
           <FeatureSection
             id="soundscapes"
             icon={icons.soundscapes}
-            title="12 Ambient Soundscapes"
             tint="violet"
             reversed
-            description={[
-              'Transform your study environment with 12 handcrafted ambient soundscapes spanning four categories: Cozy, Nature, Atmospheric, and Travel. Each soundscape is a carefully layered audio composition designed to enhance focus and reduce distractions.',
-              'Study in a Parisian café with the gentle murmur of conversation and clinking cups. Or drift into deep focus with the cosmic hum of a space station. Every soundscape is mixed at optimal volume levels to sit beneath your learning without competing for attention.',
-              'Research shows that consistent ambient audio creates environmental context cues that boost retention. When you study with the same soundscape, your brain associates the audio signature with the learning state, making recall easier.',
-            ]}
-            capabilities={[
-              'Cozy: Paris Caf\u00e9, Rainy Window, Midnight Jazz Piano',
-              'Nature: Mountain Campfire, Japanese Bamboo Forest, Amazon Rainforest',
-              'Atmospheric: Observatory Night, Desert Night Sky, Deep Space Drift',
-              'Travel: Dominican Beach, Tokyo Night Street, Venice Canal Morning',
-              'Volume balancing with system audio',
-              'Tier-gated access (0 free \u2192 1 Pro \u2192 8 Elite \u2192 12 Royal)',
-            ]}
+            {...s('soundscapes')}
             screenshot={<SoundscapePreview />}
           />
 
@@ -844,21 +813,8 @@ export function FeaturesContent() {
           <FeatureSection
             id="breathing-orbs"
             icon={icons.orbs}
-            title="Breathing Orbs & Visual Backgrounds"
             tint="amber"
-            description={[
-              'LumenLingo is the only language app that treats visual wellness as a core feature. Breathing Orbs are calming, animated backgrounds that gently pulse in rhythm — creating a meditative atmosphere that reduces learning anxiety and sharpens focus.',
-              'Choose from 6 city-inspired colour schemes, each evoking the palette of a real-world location. Beyond orbs, explore Quantum Flow scenes — dynamic particle systems that create mesmerising visual flow — and Nebula Drift presets with real-time cosmic animations rendered in Metal.',
-              'These aren\'t just eye candy. Studies in environmental psychology show that calming visual stimuli reduce cortisol levels and improve working memory. Every visual background in LumenLingo is designed with this research in mind.',
-            ]}
-            capabilities={[
-              '6 city-inspired Breathing Orb colour schemes',
-              '6 Quantum Flow particle scenes (Elite+)',
-              '6 Nebula Drift cosmic presets (Elite+)',
-              'Real-time Metal shader rendering',
-              'Respects reduced-motion preferences',
-              'Tier-gated access with progressive unlocking',
-            ]}
+            {...s('breathingOrbs')}
             screenshot={<BreathingOrbPreview />}
           />
 
@@ -868,22 +824,9 @@ export function FeaturesContent() {
           <FeatureSection
             id="progress"
             icon={icons.progress}
-            title="Progress & Analytics"
             tint="cyan"
             reversed
-            description={[
-              'LumenLingo\'s progress system turns learning into a visible journey. An XP system rewards consistent practice — earn points for every correct answer, streak bonuses for consecutive days, and multipliers based on your membership tier.',
-              'Track your per-game statistics across all three practice modes: accuracy rates, average response times, most-practised categories, and streaks. Beautiful visualisations make your data easy to understand at a glance.',
-              'Daily goals keep you accountable. Set a target practice time or card count, and watch your daily ring fill as you make progress. Monthly reports (Elite and Royal tiers) summarise your growth with detailed breakdowns by language pair and difficulty level.',
-            ]}
-            capabilities={[
-              'XP system with tier-based multipliers (1×–2×)',
-              'Streak tracking with daily goals',
-              'Per-mode accuracy and speed analytics',
-              'Category mastery breakdowns',
-              'Beautiful progress visualisations',
-              'Monthly reports (Elite/Royal)',
-            ]}
+            {...s('progress')}
             screenshot={<ProgressPreview />}
           />
 
@@ -893,21 +836,8 @@ export function FeaturesContent() {
           <FeatureSection
             id="languages"
             icon={icons.languages}
-            title="25 Language Pairs"
             tint="cyan"
-            description={[
-              'LumenLingo supports 9 languages \u2014 English, Spanish, French, German, Japanese, Chinese, Arabic, Polish, and Ukrainian \u2014 in 25 bidirectional pair combinations. Learn Spanish from English, or flip it around and learn English from Spanish.',
-              'Each language pair comes with a curated vocabulary deck covering essential categories: greetings, food, travel, business, emotions, and more. Non-Latin scripts include romanisation and pronunciation guides to lower the barrier to entry.',
-              'Language pairs are tier-gated: Free users get 3 core pairs (English\u2192Spanish, French, German), Pro unlocks 7 pairs including Japanese and Arabic, and Elite/Royal unlock the full catalogue of 25 pairs.',
-            ]}
-            capabilities={[
-              '9 languages: ES, FR, DE, JA, ZH, AR, PL, UK, EN',
-              '25 bidirectional pair combinations',
-              'Curated vocabulary per category',
-              'Romanisation for non-Latin scripts',
-              'Tier-gated: 3 Free \u2192 7 Pro \u2192 25 Elite/Royal',
-              'Bidirectional learning support',
-            ]}
+            {...s('languages')}
             screenshot={<LanguagePairPreview />}
           />
 
@@ -917,22 +847,9 @@ export function FeaturesContent() {
           <FeatureSection
             id="membership"
             icon={icons.tiers}
-            title="Membership Tiers"
             tint="amber"
             reversed
-            description={[
-              'LumenLingo offers five membership tiers — Free, Trial, Pro, Elite, and Royal — each designed for a different stage of your learning journey. Start with a generous free tier and upgrade as your ambitions grow.',
-              'Every tier unlocks progressively more language pairs, soundscapes, visual backgrounds, and advanced features. Pro adds unlimited practice time and offline mode. Elite opens all language pairs, advanced difficulty, and Quantum Flow scenes. Royal gives you everything — including all Nebula Drift presets, unlimited decks, and a 2× XP multiplier.',
-              'All tiers are managed through the App Store with simple monthly billing. Try Royal-level access free for 14 days to experience everything LumenLingo has to offer.',
-            ]}
-            capabilities={[
-              'Free tier with 3 language pairs and 50-card decks',
-              'Pro (£9.99/mo): unlimited practice + offline mode',
-              'Elite (£19.99/mo): all languages + Quantum Flow',
-              'Royal (£99.99/mo): everything + 2× XP + Nebula Drift',
-              '14-day free Royal trial',
-              'Simple App Store subscription management',
-            ]}
+            {...s('membership')}
             screenshot={<MembershipPreview />}
           />
         </div>

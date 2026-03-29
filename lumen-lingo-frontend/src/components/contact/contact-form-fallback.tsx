@@ -2,6 +2,7 @@
 
 import { useActionState } from 'react';
 import { sendContactMessage, type ContactFormState } from '@/app/[locale]/actions/send-contact';
+import { useTranslations } from 'next-intl';
 
 const initialState: ContactFormState = { success: false };
 
@@ -17,12 +18,13 @@ const initialState: ContactFormState = { success: false };
  */
 export function ContactFormFallback() {
   const [state, formAction] = useActionState(sendContactMessage, initialState);
+  const t = useTranslations('Contact');
 
   if (state.success) {
     return (
       <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/5 p-6 text-center">
         <p className="text-sm font-medium text-emerald-400">
-          Message sent! We&apos;ll reply to your email.
+          {t('form.success')}
         </p>
       </div>
     );
@@ -44,7 +46,7 @@ export function ContactFormFallback() {
 
       <div>
         <label htmlFor="contact-name" className="mb-1 block text-sm font-medium text-white/70">
-          Name <span className="text-red-400">*</span>
+          {t('form.nameLabel')} <span className="text-red-400">*</span>
         </label>
         <input
           id="contact-name"
@@ -53,13 +55,13 @@ export function ContactFormFallback() {
           required
           maxLength={200}
           className="w-full rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder-white/30 outline-none focus:border-cyan/50 focus:ring-1 focus:ring-cyan/30"
-          placeholder="Your name"
+          placeholder={t('form.namePlaceholder')}
         />
       </div>
 
       <div>
         <label htmlFor="contact-email" className="mb-1 block text-sm font-medium text-white/70">
-          Email <span className="text-red-400">*</span>
+          {t('form.emailLabel')} <span className="text-red-400">*</span>
         </label>
         <input
           id="contact-email"
@@ -68,13 +70,13 @@ export function ContactFormFallback() {
           required
           maxLength={200}
           className="w-full rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder-white/30 outline-none focus:border-cyan/50 focus:ring-1 focus:ring-cyan/30"
-          placeholder="your@email.com"
+          placeholder={t('form.emailPlaceholder')}
         />
       </div>
 
       <div>
         <label htmlFor="contact-message" className="mb-1 block text-sm font-medium text-white/70">
-          Message <span className="text-red-400">*</span>
+          {t('form.messageLabel')} <span className="text-red-400">*</span>
         </label>
         <textarea
           id="contact-message"
@@ -83,16 +85,16 @@ export function ContactFormFallback() {
           maxLength={2000}
           rows={5}
           className="w-full resize-y rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder-white/30 outline-none focus:border-cyan/50 focus:ring-1 focus:ring-cyan/30"
-          placeholder="How can we help?"
+          placeholder={t('form.messagePlaceholder')}
         />
-        <p className="mt-1 text-xs text-white/30">Max 2000 characters</p>
+        <p className="mt-1 text-xs text-white/30">{t('form.maxChars')}</p>
       </div>
 
       <button
         type="submit"
         className="inline-flex items-center gap-2 rounded-full border border-violet/25 bg-violet/10 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-violet/20"
       >
-        Send Message
+        {t('form.submit')}
       </button>
     </form>
   );

@@ -6,4 +6,4 @@ export { FeatureShowcase } from './feature-showcase';
 export { ScreenshotGallery } from './screenshot-gallery';
 export { DifferentiatorSection } from './differentiator-section';
 export { CTABanner } from './cta-banner';
-export { JsonLd, BreadcrumbJsonLd, softwareApplicationLd, organizationLd } from './json-ld';
+export { JsonLd, BreadcrumbJsonLd, getSoftwareApplicationLd, softwareApplicationLd, organizationLd } from './json-ld';

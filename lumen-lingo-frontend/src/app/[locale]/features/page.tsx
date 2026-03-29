@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { FeaturesHero, FeaturesContent, FeatureWalkthroughs, LanguagePairGrid } from '@/components/features';
-import { CTABanner, JsonLd, BreadcrumbJsonLd, softwareApplicationLd } from '@/components/home';
+import { CTABanner, JsonLd, BreadcrumbJsonLd, getSoftwareApplicationLd } from '@/components/home';
 import { PageTransition } from '@/components/layout';
 import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
 
@@ -50,9 +50,10 @@ export default async function FeaturesPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
   return (
     <PageTransition>
-      <JsonLd data={softwareApplicationLd} />
+      <JsonLd data={getSoftwareApplicationLd(t('jsonLdDescription'))} />
       <BreadcrumbJsonLd locale={locale} items={[{ name: 'Home', href: '/' }, { name: 'Features', href: '/features' }]} />
       <FeaturesHero />
       <FeaturesContent />

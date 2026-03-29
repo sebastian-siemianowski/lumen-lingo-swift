@@ -104,9 +104,9 @@ export function Header() {
         )}
       >
         <Container>
-          <nav className="flex h-14 items-center justify-between sm:h-16" aria-label="Main navigation">
+          <nav className="flex h-14 items-center justify-between sm:h-16" aria-label={t('mainNav')}>
             {/* Logo */}
-            <Link href="/" className="group flex items-center gap-2.5 rounded-[--radius-sm] focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none" aria-label="LumenLingo home">
+            <Link href="/" className="group flex items-center gap-2.5 rounded-[--radius-sm] focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none" aria-label={t('homeLink')}>
               <div className="relative flex h-9 w-9 items-center justify-center">
                 <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-violet to-cyan opacity-80 transition-opacity group-hover:opacity-100" />
                 <span className="relative text-lg font-bold text-white">L</span>
@@ -225,7 +225,7 @@ export function Header() {
               className="fixed top-0 end-0 bottom-0 z-40 w-full border-s border-glass-border bg-surface/98 backdrop-blur-xl sm:w-80 md:hidden"
             >
               <div className="flex h-full flex-col px-6 pt-24 pb-8">
-                <nav aria-label="Mobile navigation" className="flex flex-1 flex-col gap-2">
+                <nav aria-label={t('mobileNav')} className="flex flex-1 flex-col gap-2">
                   {navLinks.map((link, i) => (
                     <motion.div
                       key={link.href}

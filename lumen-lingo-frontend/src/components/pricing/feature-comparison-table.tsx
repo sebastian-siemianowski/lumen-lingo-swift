@@ -6,9 +6,13 @@ import { cn } from '@/lib/utils';
 import { Container, Section, Heading, Text } from '@/components/ui';
 import { FadeIn, StaggerChildren } from '@/components/motion';
 import { spring, stagger, fadeUp } from '@/lib/motion';
+import { useTranslations } from 'next-intl';
 
 /* ─── Data ─── */
 type CellValue = boolean | string;
+
+/* Sentinel to render ∞ symbol in the cell renderer */
+const UNLIMITED = '∞_UNLIMITED';
 
 interface Row {
   feature: string;
@@ -54,53 +58,56 @@ const CrownIcon = () => (
   </svg>
 );
 
-const categories: Category[] = [
-  {
-    label: 'Learning Features',
-    icon: <BookIcon />,
-    rows: [
-      { feature: 'Language Pairs', free: '3', pro: '7', elite: '25+', royal: '25+' },
-      { feature: 'Practice Modes', free: '3 (Beginner)', pro: '3 (2 levels)', elite: '3 (All levels)', royal: '3 (All levels)' },
-      { feature: 'Daily Practice Limit', free: '30 min', pro: 'Unlimited', elite: 'Unlimited', royal: 'Unlimited' },
-      { feature: 'Flashcard Deck Size', free: '50 cards', pro: '75 cards', elite: '100 cards', royal: 'Unlimited' },
-    ],
-  },
-  {
-    label: 'Immersive Experience',
-    icon: <SparklesIcon />,
-    rows: [
-      { feature: 'Breathing Orbs', free: false, pro: true, elite: true, royal: true },
-      { feature: 'Soundscapes', free: '—', pro: '1', elite: '8', royal: 'All 12' },
-      { feature: 'Quantum Flow Backgrounds', free: '—', pro: '—', elite: '4 scenes', royal: 'All 6' },
-      { feature: 'Nebula Drift Backgrounds', free: '1', pro: '1', elite: '4 presets', royal: 'All 6' },
-    ],
-  },
-  {
-    label: 'Productivity',
-    icon: <BoltIcon />,
-    rows: [
-      { feature: 'Offline Mode', free: false, pro: true, elite: true, royal: true },
-      { feature: 'XP Multiplier', free: '1×', pro: '1.25×', elite: '1.5×', royal: '2×' },
-    ],
-  },
-  {
-    label: 'Analytics & Insights',
-    icon: <ChartIcon />,
-    rows: [
-      { feature: 'Advanced Analytics', free: false, pro: false, elite: true, royal: true },
-      { feature: 'Data Export', free: false, pro: false, elite: true, royal: true },
-    ],
-  },
-  {
-    label: 'Royal Exclusive',
-    icon: <CrownIcon />,
-    rows: [
-      { feature: 'Shareable Result Cards', free: false, pro: false, elite: false, royal: true },
-      { feature: 'Monthly Reports', free: false, pro: false, elite: false, royal: true },
-      { feature: 'Personalised Tips', free: false, pro: false, elite: false, royal: true },
-    ],
-  },
-];
+function useCategories(): Category[] {
+  const t = useTranslations('Pricing');
+  return [
+    {
+      label: t('comparison.categories.learning'),
+      icon: <BookIcon />,
+      rows: [
+        { feature: t('comparison.features.languagePairs'), free: '3', pro: '7', elite: '25+', royal: '25+' },
+        { feature: t('comparison.features.practiceModes'), free: t('comparison.values.beginner'), pro: t('comparison.values.twoLevels'), elite: t('comparison.values.allLevels'), royal: t('comparison.values.allLevels') },
+        { feature: t('comparison.features.dailyLimit'), free: t('comparison.values.thirtyMin'), pro: UNLIMITED, elite: UNLIMITED, royal: UNLIMITED },
+        { feature: t('comparison.features.deckSize'), free: t('comparison.values.fiftyCards'), pro: t('comparison.values.seventyFiveCards'), elite: t('comparison.values.hundredCards'), royal: UNLIMITED },
+      ],
+    },
+    {
+      label: t('comparison.categories.immersive'),
+      icon: <SparklesIcon />,
+      rows: [
+        { feature: t('comparison.features.breathingOrbs'), free: false, pro: true, elite: true, royal: true },
+        { feature: t('comparison.features.soundscapes'), free: '—', pro: '1', elite: '8', royal: t('comparison.values.allTwelve') },
+        { feature: t('comparison.features.quantumFlow'), free: '—', pro: '—', elite: t('comparison.values.fourScenes'), royal: t('comparison.values.allSix') },
+        { feature: t('comparison.features.nebulaDrift'), free: '1', pro: '1', elite: t('comparison.values.fourPresets'), royal: t('comparison.values.allSix') },
+      ],
+    },
+    {
+      label: t('comparison.categories.productivity'),
+      icon: <BoltIcon />,
+      rows: [
+        { feature: t('comparison.features.offlineMode'), free: false, pro: true, elite: true, royal: true },
+        { feature: t('comparison.features.xpMultiplier'), free: '1×', pro: '1.25×', elite: '1.5×', royal: '2×' },
+      ],
+    },
+    {
+      label: t('comparison.categories.analytics'),
+      icon: <ChartIcon />,
+      rows: [
+        { feature: t('comparison.features.advancedAnalytics'), free: false, pro: false, elite: true, royal: true },
+        { feature: t('comparison.features.dataExport'), free: false, pro: false, elite: true, royal: true },
+      ],
+    },
+    {
+      label: t('comparison.categories.royalExclusive'),
+      icon: <CrownIcon />,
+      rows: [
+        { feature: t('comparison.features.shareCards'), free: false, pro: false, elite: false, royal: true },
+        { feature: t('comparison.features.monthlyReports'), free: false, pro: false, elite: false, royal: true },
+        { feature: t('comparison.features.personalisedTips'), free: false, pro: false, elite: false, royal: true },
+      ],
+    },
+  ];
+}
 
 /* ─── Tier styling ─── */
 interface TierCol {
@@ -115,49 +122,53 @@ interface TierCol {
   badge?: string;
 }
 
-const tierCols: TierCol[] = [
-  {
-    key: 'free',
-    label: 'Free',
-    price: '£0',
-    accent: 'text-foreground-muted',
-    dot: 'bg-foreground-muted/50',
-    colBg: '',
-    colBgHover: 'group-hover/row:bg-white/[0.015]',
-    glowColor: '',
-  },
-  {
-    key: 'pro',
-    label: 'Pro',
-    price: '£9.99/mo',
-    accent: 'text-violet',
-    dot: 'bg-violet',
-    colBg: 'bg-violet/[0.02]',
-    colBgHover: 'group-hover/row:bg-violet/[0.05]',
-    glowColor: 'violet',
-  },
-  {
-    key: 'elite',
-    label: 'Elite',
-    price: '£19.99/mo',
-    accent: 'text-cyan',
-    dot: 'bg-cyan',
-    colBg: 'bg-cyan/[0.035]',
-    colBgHover: 'group-hover/row:bg-cyan/[0.06]',
-    glowColor: 'cyan',
-    badge: 'Most Popular',
-  },
-  {
-    key: 'royal',
-    label: 'Royal',
-    price: '£99.99/mo',
-    accent: 'text-amber',
-    dot: 'bg-amber',
-    colBg: 'bg-amber/[0.02]',
-    colBgHover: 'group-hover/row:bg-amber/[0.05]',
-    glowColor: 'amber',
-  },
-];
+function useTierCols() {
+  const t = useTranslations('Pricing');
+  const tierCols: TierCol[] = [
+    {
+      key: 'free',
+      label: t('tier.free.name'),
+      price: t('tier.free.price'),
+      accent: 'text-foreground-muted',
+      dot: 'bg-foreground-muted/50',
+      colBg: '',
+      colBgHover: 'group-hover/row:bg-white/[0.015]',
+      glowColor: '',
+    },
+    {
+      key: 'pro',
+      label: t('tier.pro.name'),
+      price: t('tier.pro.price'),
+      accent: 'text-violet',
+      dot: 'bg-violet',
+      colBg: 'bg-violet/[0.02]',
+      colBgHover: 'group-hover/row:bg-violet/[0.05]',
+      glowColor: 'violet',
+    },
+    {
+      key: 'elite',
+      label: t('tier.elite.name'),
+      price: t('tier.elite.price'),
+      accent: 'text-cyan',
+      dot: 'bg-cyan',
+      colBg: 'bg-cyan/[0.035]',
+      colBgHover: 'group-hover/row:bg-cyan/[0.06]',
+      glowColor: 'cyan',
+      badge: t('comparison.mostPopular'),
+    },
+    {
+      key: 'royal',
+      label: t('tier.royal.name'),
+      price: t('tier.royal.price'),
+      accent: 'text-amber',
+      dot: 'bg-amber',
+      colBg: 'bg-amber/[0.02]',
+      colBgHover: 'group-hover/row:bg-amber/[0.05]',
+      glowColor: 'amber',
+    },
+  ];
+  return tierCols;
+}
 
 /* ─── Cell renderer ─── */
 
@@ -187,7 +198,7 @@ function CellContent({ value, accent, tier }: { value: CellValue; accent: string
   if (value === false || value === '—') {
     return <span className="text-foreground-muted/20 select-none">—</span>;
   }
-  if (value === 'Unlimited') {
+  if (value === UNLIMITED) {
     return (
       <span className={cn('font-display text-base font-bold tracking-tight', accent)}>
         ∞
@@ -213,6 +224,9 @@ const stickyLeft =
   'sticky left-0 z-[2] after:pointer-events-none after:absolute after:inset-y-0 after:-right-4 after:w-4 after:bg-gradient-to-r after:from-black/10 after:to-transparent';
 
 export function FeatureComparisonTable() {
+  const t = useTranslations('Pricing');
+  const categories = useCategories();
+  const tierCols = useTierCols();
   let globalRowIdx = 0;
 
   return (
@@ -220,10 +234,10 @@ export function FeatureComparisonTable() {
       <Container>
         <FadeIn className="mb-14 text-center">
           <Heading as="h2" gradient className="mb-4">
-            Compare All Features
+            {t('comparison.heading')}
           </Heading>
           <Text colour="secondary" className="mx-auto max-w-lg text-[15px]">
-            Every tier builds on the one before it. See exactly what you get at each level.
+            {t('comparison.description')}
           </Text>
         </FadeIn>
 
@@ -253,7 +267,7 @@ export function FeatureComparisonTable() {
                         )}
                       >
                         <span className="text-xs font-bold uppercase tracking-[0.15em] text-foreground-muted/60">
-                          Feature
+                          {t('comparison.feature')}
                         </span>
                       </th>
 

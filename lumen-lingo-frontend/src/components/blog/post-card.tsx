@@ -4,7 +4,7 @@ import { useState, type ComponentType } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 import { formatDate, type BlogPost } from '@/lib/blog-utils';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
@@ -91,6 +91,7 @@ const categoryGradients: Record<string, { bg: string; accent: string; secondary:
 export function PostCard({ post, index = 0, featured = false, priority = false }: PostCardProps) {
   const prefersReduced = useReducedMotion();
   const locale = useLocale();
+  const t = useTranslations('Blog');
   const [imgLoaded, setImgLoaded] = useState(false);
   const { frontmatter, slug } = post;
 
@@ -123,7 +124,7 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
         {/* Featured pill badge */}
         {featured && (
           <span className="absolute end-4 top-4 z-10 rounded-full bg-[--color-violet] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white">
-            Featured
+            {t('card.featured')}
           </span>
         )}
         {/* Cover image area */}
@@ -255,7 +256,7 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
           <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[--color-foreground-muted]">
             {/* "Read →" reveal on hover */}
             <span className="ms-auto translate-x-2 text-xs font-semibold text-[--color-violet] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 rtl:-translate-x-2 rtl:group-hover:translate-x-0">
-              Read&nbsp;&rarr;
+              {t('card.read')}&nbsp;&rarr;
             </span>
           </div>
 

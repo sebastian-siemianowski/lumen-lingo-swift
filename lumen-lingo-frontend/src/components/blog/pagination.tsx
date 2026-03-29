@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 interface PaginationProps {
   currentPage: number;
@@ -15,6 +16,8 @@ export function Pagination({
   searchParams = {},
 }: PaginationProps) {
   if (totalPages <= 1) return null;
+
+  const t = useTranslations('Blog');
 
   function buildHref(page: number) {
     const params = new URLSearchParams(searchParams);
@@ -42,7 +45,7 @@ export function Pagination({
   }
 
   return (
-    <nav aria-label="Blog pagination" className="mt-16 flex items-center justify-center gap-2">
+    <nav aria-label={t('pagination.ariaLabel')} className="mt-16 flex items-center justify-center gap-2">
       {/* Previous */}
       {currentPage > 1 ? (
         <Link
@@ -52,14 +55,14 @@ export function Pagination({
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-          Previous
+          {t('pagination.previous')}
         </Link>
       ) : (
         <span className="flex items-center gap-1 rounded-[--radius-button] border border-[--color-glass-border]/50 px-4 py-2.5 text-sm text-[--color-foreground-muted]/50">
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-          Previous
+          {t('pagination.previous')}
         </span>
       )}
 
@@ -92,14 +95,14 @@ export function Pagination({
           href={buildHref(currentPage + 1)}
           className="flex items-center gap-1 rounded-[--radius-button] border border-[--color-glass-border] bg-[--color-glass] px-4 py-2.5 text-sm text-[--color-foreground-secondary] transition-colors hover:border-[--color-violet]/30 hover:text-[--color-foreground]"
         >
-          Next
+          {t('pagination.next')}
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </Link>
       ) : (
         <span className="flex items-center gap-1 rounded-[--radius-button] border border-[--color-glass-border]/50 px-4 py-2.5 text-sm text-[--color-foreground-muted]/50">
-          Next
+          {t('pagination.next')}
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>

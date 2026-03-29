@@ -7,7 +7,7 @@ import {
   DifferentiatorSection,
   CTABanner,
   JsonLd,
-  softwareApplicationLd,
+  getSoftwareApplicationLd,
   organizationLd,
 } from '@/components/home';
 import { PageTransition } from '@/components/layout';
@@ -58,9 +58,10 @@ export default async function Home({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
   return (
     <PageTransition>
-      <JsonLd data={softwareApplicationLd} />
+      <JsonLd data={getSoftwareApplicationLd(t('jsonLdDescription'))} />
       <JsonLd data={organizationLd} />
       <HeroSection />
       <FeatureShowcase />

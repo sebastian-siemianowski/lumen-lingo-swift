@@ -8,34 +8,13 @@ import { useTranslations } from 'next-intl';
 
 /* ─── Comparison data (max 5 — impactful and concise) ─── */
 
-const comparisons = [
-  {
-    others: 'Rote repetition with plain text cards',
-    lumenlingo: 'Glass-morphic flashcards with immersive visual feedback',
-  },
-  {
-    others: 'Silent study in a sterile interface',
-    lumenlingo: '12 ambient soundscapes — from Paris cafés to deep space',
-  },
-  {
-    others: 'One-size-fits-all quizzes',
-    lumenlingo: 'Three distinct modes that adapt to your level',
-  },
-  {
-    others: 'Utilitarian UI with gamification gimmicks',
-    lumenlingo: 'Handcrafted glass-morphism with cosmic animations',
-  },
-  {
-    others: 'Streak pressure and guilt-driven notifications',
-    lumenlingo: 'Breathing orbs and visual mindfulness for calm learning',
-  },
-];
+const comparisonKeys = [1, 2, 3, 4, 5] as const;
 
 const keyFacts = [
-  { target: 9, label: 'Languages', suffix: '' },
-  { target: 25, label: 'Language Pairs', suffix: '+' },
-  { target: 12, label: 'Soundscapes', suffix: '' },
-  { target: 3, label: 'Practice Modes', suffix: '' },
+  { target: 9, labelKey: 'fact1', suffix: '' },
+  { target: 25, labelKey: 'fact2', suffix: '+' },
+  { target: 12, labelKey: 'fact3', suffix: '' },
+  { target: 3, labelKey: 'fact4', suffix: '' },
 ];
 
 export function DifferentiatorSection() {
@@ -74,18 +53,18 @@ export function DifferentiatorSection() {
         >
           {/* Column headers (desktop) */}
           <div className="mb-2 hidden grid-cols-[1fr_auto_1fr] items-center gap-6 px-5 text-xs font-semibold uppercase tracking-wider sm:grid">
-            <span className="text-foreground-muted">Others</span>
+            <span className="text-foreground-muted">{t('comparison.othersHeader')}</span>
             <span className="w-px" />
-            <span className="text-violet">LumenLingo</span>
+            <span className="text-violet">{t('comparison.lumenHeader')}</span>
           </div>
 
-          {comparisons.map((c, i) => (
-            <StaggerItem key={i}>
+          {comparisonKeys.map((n) => (
+            <StaggerItem key={n}>
               {/* Comparison row */}
               <div className="group grid grid-cols-1 gap-3 rounded-xl p-4 sm:grid-cols-[1fr_auto_1fr] sm:items-center sm:gap-6">
                 {/* Others column — dimmed, faded */}
                 <p className="text-sm leading-relaxed text-foreground-muted line-through decoration-foreground-muted/30">
-                  {c.others}
+                  {t(`comparison.others${n}` as any)}
                 </p>
 
                 {/* Vertical divider (desktop) */}
@@ -108,7 +87,7 @@ export function DifferentiatorSection() {
                     aria-hidden
                   />
                   <p className="text-sm leading-relaxed text-foreground">
-                    {c.lumenlingo}
+                    {t(`comparison.lumen${n}` as any)}
                   </p>
                 </div>
               </div>
@@ -120,13 +99,13 @@ export function DifferentiatorSection() {
         <FadeIn delay={0.3} className="mt-16 mb-8 md:mb-16">
           <div className="glass-card mx-auto flex max-w-3xl flex-wrap items-center justify-center gap-8 rounded-2xl p-8 sm:justify-between sm:gap-4">
             {keyFacts.map((fact) => (
-              <div key={fact.label} className="flex flex-col items-center gap-1 text-center">
+              <div key={fact.labelKey} className="flex flex-col items-center gap-1 text-center">
                 <CountUp
                   target={fact.target}
                   suffix={fact.suffix}
                   className="font-display text-3xl font-bold text-foreground sm:text-4xl"
                 />
-                <span className="text-sm text-foreground-muted">{fact.label}</span>
+                <span className="text-sm text-foreground-muted">{t(fact.labelKey as any)}</span>
               </div>
             ))}
           </div>
