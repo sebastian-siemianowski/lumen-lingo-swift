@@ -154,7 +154,9 @@ final class AudioService: @unchecked Sendable {
             isSessionConfigured = true
             setupRemoteCommandCenter()
             setupAudioInterruptionHandling()
-            UIApplication.shared.beginReceivingRemoteControlEvents()
+            Task { @MainActor in
+                UIApplication.shared.beginReceivingRemoteControlEvents()
+            }
         } catch {
             print("⚠️ Audio session config failed: \(error)")
         }
@@ -343,7 +345,6 @@ final class AudioService: @unchecked Sendable {
         let size = CGSize(width: 600, height: 600)
         let renderer = UIGraphicsImageRenderer(size: size)
         let image = renderer.image { ctx in
-            let rect = CGRect(origin: .zero, size: size)
             let colors = soundscape.previewColors
 
             // Gradient background

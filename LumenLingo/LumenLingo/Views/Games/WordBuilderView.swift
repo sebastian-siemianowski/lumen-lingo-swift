@@ -410,7 +410,6 @@ struct WordBuilderView: View {
     // MARK: - Letter Bank
 
     private var letterBank: some View {
-        let availableLetters = scrambledLetters.filter { !$0.isPlaced }
         let columns = Array(
             repeating: GridItem(.flexible(), spacing: 8),
             count: min(max(scrambledLetters.count, 4), 8)

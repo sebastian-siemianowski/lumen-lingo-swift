@@ -1128,6 +1128,7 @@ final class TierManager {
             tierLog.info("iCloud KVS not available — cloud sync disabled")
             return
         }
+        nonisolated(unsafe) let profile = profile
         NotificationCenter.default.addObserver(
             forName: NSUbiquitousKeyValueStore.didChangeExternallyNotification,
             object: NSUbiquitousKeyValueStore.default,
