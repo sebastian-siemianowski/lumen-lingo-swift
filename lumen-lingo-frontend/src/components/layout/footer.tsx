@@ -10,7 +10,13 @@ import { NewsletterForm } from '@/components/newsletter';
 import { useFeatureFlag } from '@/hooks/use-feature-flag';
 import { type FeatureFlagName, isDevOnlyFlag } from '@/lib/feature-flags';
 
-const footerSections = [
+interface FooterLink {
+  href: string;
+  key: string;
+  flag?: FeatureFlagName;
+}
+
+const footerSections: { key: string; links: FooterLink[] }[] = [
   {
     key: 'Product' as const,
     links: [
@@ -26,7 +32,7 @@ const footerSections = [
       { href: '/about', key: 'about' },
       { href: '/blog', key: 'blog' },
       { href: '/careers', key: 'careers' },
-      { href: '/press', key: 'pressKit', flag: 'PRESS_KIT_LIVE' as FeatureFlagName },
+      { href: '/press', key: 'pressKit', flag: 'PRESS_KIT_LIVE' },
     ],
   },
   {
@@ -39,7 +45,7 @@ const footerSections = [
       { href: '/eula', key: 'eula' },
       { href: '/cookies', key: 'cookiePolicy' },
       { href: '/accessibility', key: 'accessibility' },
-      { href: '/data-request', key: 'dataRequest', flag: 'DATA_REQUEST_LIVE' as FeatureFlagName },
+      { href: '/data-request', key: 'dataRequest', flag: 'DATA_REQUEST_LIVE' },
       { href: '/open-source', key: 'openSource' },
     ],
   },
@@ -252,11 +258,11 @@ export function Footer() {
                     >
                       {links
                         .filter((link) => {
-                          if (!('flag' in link) || !link.flag) return true;
+                          if (!link.flag) return true;
                           return flagValues[link.flag] ?? true;
                         })
                         .map((link) => {
-                          const devOnly = 'flag' in link && link.flag && isDevOnlyFlag(link.flag as FeatureFlagName);
+                          const devOnly = link.flag && isDevOnlyFlag(link.flag);
                           return (
                             <li key={link.href}>
                               <Link

@@ -131,7 +131,7 @@ jobs:
           cd LumenLingo && xcodebuild test \
             -project LumenLingo.xcodeproj \
             -scheme LumenLingo-Dev \
-            -destination 'platform=iOS Simulator,OS=latest' \
+            -destination 'platform=iOS Simulator,name=iPhone 16 Pro' \
             -parallel-testing-enabled YES \
             -resultBundlePath ../build/TestResults.xcresult \
             | xcbeautify
