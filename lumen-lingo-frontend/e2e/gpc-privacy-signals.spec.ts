@@ -20,8 +20,13 @@ test.describe('Global Privacy Control (GPC)', () => {
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
 
+    // Wait for React hydration + useEffect to auto-reject consent
+    await expect.poll(async () => {
+      const raw = await page.evaluate(() => localStorage.getItem('ll_cookie_consent'));
+      return raw !== null;
+    }, { timeout: 15_000 }).toBeTruthy();
+
     // Banner should NOT be visible (GPC auto-rejects)
-    await page.waitForTimeout(2000);
     const banner = page.locator('[role="dialog"][aria-label]');
     await expect(banner).not.toBeVisible();
 
@@ -45,7 +50,14 @@ test.describe('Global Privacy Control (GPC)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(2000);
+
+    // Wait for React hydration + consent auto-reject
+    await expect.poll(async () => {
+      const raw = await page.evaluate(() => localStorage.getItem('ll_cookie_consent'));
+      return raw !== null;
+    }, { timeout: 15_000 }).toBeTruthy();
+
+    // Open cookie settings via dispatching event 
     await page.evaluate(() => {
       window.dispatchEvent(new Event('open-cookie-settings'));
     });
@@ -78,7 +90,14 @@ test.describe('Global Privacy Control (GPC)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(2000);
+
+    // Wait for React hydration + consent auto-reject
+    await expect.poll(async () => {
+      const raw = await page.evaluate(() => localStorage.getItem('ll_cookie_consent'));
+      return raw !== null;
+    }, { timeout: 15_000 }).toBeTruthy();
+
+    // Open cookie settings
     await page.evaluate(() => {
       window.dispatchEvent(new Event('open-cookie-settings'));
     });
@@ -142,7 +161,13 @@ test.describe('Do-Not-Track (DNT)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(2000);
+
+    // Wait for React hydration + useEffect to auto-reject consent
+    await expect.poll(async () => {
+      const raw = await page.evaluate(() => localStorage.getItem('ll_cookie_consent'));
+      return raw !== null;
+    }, { timeout: 15_000 }).toBeTruthy();
+
     const banner = page.locator('[role="dialog"][aria-label]');
     await expect(banner).not.toBeVisible();
 
