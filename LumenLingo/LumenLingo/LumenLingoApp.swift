@@ -90,9 +90,11 @@ struct LumenLingoApp: App {
             .environment(\.localization, localizationManager)
             .preferredColorScheme(themeManager.colorScheme)
             .task {
+                guard !isRunningTests else { return }
                 await authService.checkAuthState()
             }
             .task {
+                guard !isRunningTests else { return }
                 // Configure RevenueCat SDK on launch (no-op for mock in DEBUG)
                 if !revenueCatService.isConfigured {
                     let apiKey = EnvironmentConfig.current.revenueCatAPIKey
@@ -108,6 +110,7 @@ struct LumenLingoApp: App {
                 await subscriptionManager.checkTrialEligibility(from: revenueCatService)
             }
             .task {
+                guard !isRunningTests else { return }
                 // Bridge RevenueCat customer info updates → SubscriptionManager
                 for await info in revenueCatService.customerInfoStream {
                     subscriptionManager.handleRevenueCatCustomerInfo(info)

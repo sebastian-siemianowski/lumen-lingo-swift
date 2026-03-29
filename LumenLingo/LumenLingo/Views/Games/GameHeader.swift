@@ -374,9 +374,7 @@ struct GameHeader: View {
             Capsule()
                 .fill(
                     LinearGradient(
-                        colors: isDark
-                            ? [.clear, .white.opacity(0.3), .clear]
-                            : [.clear, (theme.gradientColors.first ?? .blue).opacity(0.15), .clear],
+                        colors: [.clear, .white.opacity(0.3), .clear],
                         startPoint: UnitPoint(x: -0.3 + Double(effectPhase) * 1.3, y: 0),
                         endPoint: UnitPoint(x: 0.0 + Double(effectPhase) * 1.3, y: 0)
                     )

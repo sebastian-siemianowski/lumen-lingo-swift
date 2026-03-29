@@ -69,8 +69,9 @@ struct AccountSuspendedView: View {
                 Spacer()
 
                 VStack(spacing: 16) {
-                    if reason == .accountSuspended || reason == .accountDeleted {
-                        Link(destination: URL(string: "mailto:support@lumenlingo.com")!) {
+                    if reason == .accountSuspended || reason == .accountDeleted,
+                       let supportURL = URL(string: "mailto:support@lumenlingo.com") {
+                        Link(destination: supportURL) {
                             Label("Contact Support", systemImage: "envelope.fill")
                                 .font(.headline)
                                 .frame(maxWidth: .infinity)

@@ -42,7 +42,7 @@ enum PrivacyAuditLogger {
             }
         }
 
-        logger.info("Privacy audit: \(action, privacy: .public) — \(detail ?? "", privacy: .public)")
+        logger.info("Privacy audit: \(action, privacy: .public) — \(detail ?? "", privacy: .private)")
     }
 
     /// Read all audit entries (for GDPR export).
