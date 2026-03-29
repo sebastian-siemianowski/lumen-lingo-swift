@@ -17,24 +17,25 @@ test.describe('Homepage', () => {
     await expect(page.locator('nav a[href*="/blog"]').first()).toBeVisible();
   });
 
-  test('hero CTA links to App Store', async ({ page }) => {
+  test('hero CTA links to App Store or share page', async ({ page }) => {
     await page.goto('/');
-    const cta = page.getByRole('link', { name: /download|get started|app store/i }).first();
+    const cta = page.getByRole('link', { name: /download|get started|app store|coming soon/i }).first();
     await expect(cta).toBeVisible();
-    await expect(cta).toHaveAttribute('href', /apps\.apple\.com/);
+    // Pre-launch: CTA may link to /share; post-launch: apps.apple.com
+    await expect(cta).toHaveAttribute('href', /apps\.apple\.com|\/share/);
   });
 
   test('navigates to pricing page', async ({ page }) => {
     await page.goto('/');
     await page.locator('nav a[href*="/pricing"]').first().click();
-    await page.waitForURL(/pricing/);
+    await expect(page).toHaveURL(/pricing/, { timeout: 15_000 });
     await expect(page.locator('h1').first()).toBeVisible();
   });
 
   test('navigates to blog page', async ({ page }) => {
     await page.goto('/');
-    await page.getByRole('link', { name: /blog/i }).first().click();
-    await page.waitForURL(/blog/);
+    await page.locator('nav a[href*="/blog"]').first().click();
+    await expect(page).toHaveURL(/blog/, { timeout: 15_000 });
     await expect(page.locator('h1').first()).toBeVisible();
   });
 

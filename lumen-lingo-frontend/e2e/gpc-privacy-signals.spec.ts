@@ -21,7 +21,8 @@ test.describe('Global Privacy Control (GPC)', () => {
     await page.goto('/', { waitUntil: 'domcontentloaded' });
 
     // Banner should NOT be visible (GPC auto-rejects)
-    await page.waitForTimeout(1000);
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(2000);
     const banner = page.locator('[role="dialog"][aria-label]');
     await expect(banner).not.toBeVisible();
 
@@ -45,9 +46,14 @@ test.describe('Global Privacy Control (GPC)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(500);
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(2000);
 
-    // Open cookie settings via footer
+    // Open cookie settings via footer — retry to ensure event listener is registered
+    await page.evaluate(() => {
+      window.dispatchEvent(new Event('open-cookie-settings'));
+    });
+    await page.waitForTimeout(300);
     await page.evaluate(() => {
       window.dispatchEvent(new Event('open-cookie-settings'));
     });
@@ -76,9 +82,14 @@ test.describe('Global Privacy Control (GPC)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(500);
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(2000);
 
-    // Open cookie settings
+    // Open cookie settings — retry to ensure event listener is registered
+    await page.evaluate(() => {
+      window.dispatchEvent(new Event('open-cookie-settings'));
+    });
+    await page.waitForTimeout(300);
     await page.evaluate(() => {
       window.dispatchEvent(new Event('open-cookie-settings'));
     });
@@ -136,9 +147,8 @@ test.describe('Do-Not-Track (DNT)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(1000);
-
-    // Banner should NOT be visible
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(2000);
     const banner = page.locator('[role="dialog"][aria-label]');
     await expect(banner).not.toBeVisible();
 

@@ -6,7 +6,7 @@ import { test, expect, type Page } from '@playwright/test';
  * and captures screenshots for manual comparison.
  */
 
-const LOCALES = ['fr', 'ja', 'de', 'pt', 'pl', 'ar', 'zh', 'uk'] as const;
+const LOCALES = ['fr', 'ja', 'de', 'es', 'pl', 'ar', 'zh', 'uk'] as const;
 const PAGES = [
   { name: 'homepage', path: '' },
   { name: 'features', path: '/features' },

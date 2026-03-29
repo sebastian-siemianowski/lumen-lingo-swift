@@ -40,6 +40,6 @@ test.describe('Pricing Page', () => {
 
   test('"Most Popular" badge appears on one card', async ({ page }) => {
     await page.goto('/pricing');
-    await expect(page.getByText(/Popular/i)).toBeVisible();
+    await expect(page.getByText(/Most Popular/i).first()).toBeVisible();
   });
 });

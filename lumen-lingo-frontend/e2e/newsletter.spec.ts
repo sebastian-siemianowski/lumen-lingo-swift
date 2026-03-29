@@ -1,6 +1,12 @@
 import { test, expect } from '@playwright/test';
 
+// Newsletter form is behind the NEWSLETTER_LIVE feature flag.
+// Skip when the flag is not enabled (pre-launch state).
+const newsletterLive = !!process.env.NEXT_PUBLIC_FF_NEWSLETTER_LIVE;
+
 test.describe('Newsletter Signup', () => {
+  test.skip(!newsletterLive, 'Newsletter form is behind NEWSLETTER_LIVE feature flag');
+
   test('newsletter form is visible on homepage', async ({ page }) => {
     await page.goto('/');
     const emailInput = page.getByRole('textbox', { name: /email/i });
