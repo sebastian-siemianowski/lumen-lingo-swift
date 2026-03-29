@@ -1,6 +1,6 @@
 import SwiftUI
 import SwiftData
-import PDFKit
+@preconcurrency import PDFKit
 
 // MARK: - Export Data Widget (Elite+)
 
@@ -737,9 +737,15 @@ struct ExportDataWidget: View {
         hostingController.view.frame = CGRect(origin: .zero, size: CGSize(width: cardSize, height: cardSize))
         hostingController.view.backgroundColor = .black
         hostingController.overrideUserInterfaceStyle = .dark
-        hostingController._disableSafeArea = true
+        hostingController.safeAreaRegions = []
 
-        let window = UIWindow(frame: CGRect(origin: .zero, size: CGSize(width: cardSize, height: cardSize)))
+        let window: UIWindow
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            window = UIWindow(windowScene: windowScene)
+        } else {
+            window = UIWindow(windowScene: UIApplication.shared.connectedScenes.first as! UIWindowScene)
+        }
+        window.frame = CGRect(origin: .zero, size: CGSize(width: cardSize, height: cardSize))
         window.backgroundColor = .black
         window.overrideUserInterfaceStyle = .dark
         window.rootViewController = hostingController
@@ -1327,14 +1333,18 @@ struct PDFKitView: UIViewRepresentable {
 
         func observe(pdfView: PDFView, document: PDFDocument) {
             if let old = observation { NotificationCenter.default.removeObserver(old) }
+            nonisolated(unsafe) let coordinator = self
+            nonisolated(unsafe) let unsafeDoc = document
             observation = NotificationCenter.default.addObserver(
                 forName: .PDFViewPageChanged,
                 object: pdfView,
                 queue: .main
-            ) { [weak self] _ in
-                guard let currentPage = pdfView.currentPage else { return }
-                let index = document.index(for: currentPage)
-                self?.onPageChange?(index)
+            ) { _ in
+                MainActor.assumeIsolated {
+                    guard let currentPage = pdfView.currentPage else { return }
+                    let index = unsafeDoc.index(for: currentPage)
+                    coordinator.onPageChange?(index)
+                }
             }
         }
 

@@ -1524,8 +1524,9 @@ struct FlashCardsView: View {
     // MARK: - Dopamine Helpers
 
     private func spawnMotes(count: Int, color: Color) {
-        let screenWidth = UIScreen.main.bounds.width
-        let centerY = UIScreen.main.bounds.height * 0.45
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
+        let screenWidth = windowScene.screen.bounds.width
+        let centerY = windowScene.screen.bounds.height * 0.45
 
         for i in 0..<count {
             let delay = Double(i) * 0.08
@@ -1535,7 +1536,7 @@ struct FlashCardsView: View {
                 .white
             ].randomElement() ?? color
 
-            var mote = LuminousMote(
+            let mote = LuminousMote(
                 x: screenWidth * CGFloat.random(in: 0.2...0.8),
                 y: centerY + CGFloat.random(in: -40...40),
                 size: CGFloat.random(in: 3...7),

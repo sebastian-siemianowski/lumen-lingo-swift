@@ -669,7 +669,7 @@ final class SubscriptionManager {
         // Use the same currency formatting as the package
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
-        formatter.currencyCode = pkg.currencyCode ?? "USD"
+        formatter.currencyCode = pkg.currencyCode
         formatter.maximumFractionDigits = 2
         return formatter.string(from: daily as NSDecimalNumber)
     }
@@ -1215,7 +1215,7 @@ final class SubscriptionManager {
     func startObservingRevenueCat(_ service: any RevenueCatServiceProtocol) -> Task<Void, Never> {
         Task { [weak self] in
             for await info in service.customerInfoStream {
-                await self?.handleRevenueCatCustomerInfo(info)
+                self?.handleRevenueCatCustomerInfo(info)
             }
         }
     }
@@ -1238,7 +1238,7 @@ final class SubscriptionManager {
                     wasOffline = false
                     storeLog.info("Connectivity restored — re-syncing entitlements")
                     if let info = try? await service.getCustomerInfo() {
-                        await self.handleRevenueCatCustomerInfo(info)
+                        self.handleRevenueCatCustomerInfo(info)
                     }
                 }
             }

@@ -2,6 +2,7 @@ import XCTest
 @testable import LumenLingo
 
 /// Tests for PracticeTimeTracker — daily limit enforcement, reset logic, and tier integration.
+@MainActor
 final class PracticeTimeTrackerTests: XCTestCase {
 
     private var tracker: PracticeTimeTracker!

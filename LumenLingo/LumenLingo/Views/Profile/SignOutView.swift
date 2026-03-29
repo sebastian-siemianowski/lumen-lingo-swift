@@ -417,7 +417,7 @@ struct SignOutView: View {
             // Step 1: Delete all SwiftData records
             await MainActor.run { deleteStep = L.clearingUserData }
             try? await Task.sleep(for: .milliseconds(300))
-            await deleteAllSwiftData()
+            deleteAllSwiftData()
 
             // Step 2: Clear iCloud KVS
             await MainActor.run { deleteStep = L.deletingAccount }

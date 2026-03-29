@@ -51,16 +51,18 @@ struct SolarAuroraView: View {
             )
 
             // Central solar disk glow
-            RadialGradient(
-                colors: [
-                    Color(red: 255/255, green: 200/255, blue: 100/255).opacity(0.08),
-                    Color(red: 255/255, green: 150/255, blue: 50/255).opacity(0.04),
-                    .clear
-                ],
-                center: UnitPoint(x: 0.5, y: 0.92),
-                startRadius: 0,
-                endRadius: UIScreen.main.bounds.width * 0.4
-            )
+            GeometryReader { geo in
+                RadialGradient(
+                    colors: [
+                        Color(red: 255/255, green: 200/255, blue: 100/255).opacity(0.08),
+                        Color(red: 255/255, green: 150/255, blue: 50/255).opacity(0.04),
+                        .clear
+                    ],
+                    center: UnitPoint(x: 0.5, y: 0.92),
+                    startRadius: 0,
+                    endRadius: geo.size.width * 0.4
+                )
+            }
         }
     }
 
@@ -339,15 +341,17 @@ struct SolarAuroraView: View {
     private var atmosphericRadiance: some View {
         ZStack {
             // Green aurora tint
-            RadialGradient(
-                colors: [
-                    Color(red: 0/255, green: 255/255, blue: 100/255).opacity(0.02),
-                    .clear
-                ],
-                center: UnitPoint(x: 0.5, y: 0.3),
-                startRadius: 0,
-                endRadius: UIScreen.main.bounds.width * 0.6
-            )
+            GeometryReader { geo in
+                RadialGradient(
+                    colors: [
+                        Color(red: 0/255, green: 255/255, blue: 100/255).opacity(0.02),
+                        .clear
+                    ],
+                    center: UnitPoint(x: 0.5, y: 0.3),
+                    startRadius: 0,
+                    endRadius: geo.size.width * 0.6
+                )
+            }
 
             // Top vignette
             LinearGradient(

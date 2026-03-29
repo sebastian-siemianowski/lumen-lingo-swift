@@ -392,14 +392,16 @@ struct GrammarView: View {
         if blankCount > 0 {
             let composed = segments.enumerated().reduce(Text("")) { result, pair in
                 let (i, segment) = pair
-                var built = result + Text(segment)
+                let segText = Text(segment)
                     .font(.title3.bold())
                     .foregroundColor(isDark ? .white : .caribbeanInk)
+                var built = Text("\(result)\(segText)")
                 if i < blankCount {
-                    built = built + Text("  ____  ")
+                    let blankText = Text("  ____  ")
                         .font(.title3.bold())
                         .foregroundColor(isDark ? Color(hex: "#c4b5fd") : .caribbeanOcean)
                         .underline(color: (isDark ? Color(hex: "#c4b5fd") : .caribbeanOcean).opacity(0.4))
+                    built = Text("\(built)\(blankText)")
                 }
                 return built
             }
@@ -434,24 +436,27 @@ struct GrammarView: View {
 
             let composed = segments.enumerated().reduce(Text("")) { result, pair in
                 let (i, segment) = pair
-                var built = result + Text(segment)
+                let segText = Text(segment)
                     .font(.title3.bold())
                     .foregroundColor(isDark ? .white : .caribbeanInk)
+                var built = Text("\(result)\(segText)")
                 if i < displayParts.count {
                     if isCorrectAnswer {
-                        built = built + Text(displayParts[i])
+                        let answerText = Text(displayParts[i])
                             .font(.title3.bold())
                             .foregroundColor(Color(hex: "#34d399"))
+                        built = Text("\(built)\(answerText)")
                     } else {
-                        built = built + Text(displayParts[i])
+                        let wrongText = Text(displayParts[i])
                             .font(.title3.bold())
                             .foregroundColor(Color(hex: "#fb7185"))
                             .strikethrough(color: Color(hex: "#fb7185").opacity(0.4))
-                        + Text("  ")
-                        + Text(correctParts[i])
+                        let spaceText = Text("  ")
+                        let correctText = Text(correctParts[i])
                             .font(.title3.bold())
                             .foregroundColor(Color(hex: "#34d399"))
                             .underline(color: Color(hex: "#34d399").opacity(0.3))
+                        built = Text("\(built)\(wrongText)\(spaceText)\(correctText)")
                     }
                 }
                 return built

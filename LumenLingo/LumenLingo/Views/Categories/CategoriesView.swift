@@ -495,9 +495,11 @@ struct CategoriesView: View {
                 guard !reduceMotion else { return }
                 // Rotate placeholder suggestions every 3 seconds
                 Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { _ in
-                    if searchText.isEmpty {
-                        withAnimation(.easeInOut(duration: 0.3)) {
-                            placeholderIndex = (placeholderIndex + 1) % placeholderSuggestions.count
+                    Task { @MainActor in
+                        if searchText.isEmpty {
+                            withAnimation(.easeInOut(duration: 0.3)) {
+                                placeholderIndex = (placeholderIndex + 1) % placeholderSuggestions.count
+                            }
                         }
                     }
                 }

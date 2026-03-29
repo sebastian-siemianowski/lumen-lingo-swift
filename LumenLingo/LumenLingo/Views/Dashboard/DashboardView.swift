@@ -282,7 +282,7 @@ struct DashboardView: View {
 
     private var languageSelector: some View {
         Button {
-            Task.detached(priority: .utility) { await AudioService.shared.playLanguageHover() }
+            Task.detached(priority: .utility) { AudioService.shared.playLanguageHover() }
             HapticsService.shared.buttonPress()
             showLanguageSheet = true
         } label: {
