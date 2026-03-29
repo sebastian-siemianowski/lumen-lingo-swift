@@ -505,6 +505,12 @@ struct AppStrings: Sendable {
     let legalReadFull: String                // "Read Full Policy"
     let legalScrollToAccept: String          // "Scroll to review"
 
+    // MARK: - Legal Re-consent
+    let legalReconsentTitle: String          // "We've updated our policies"
+    let legalReconsentBody: String           // "We've made changes to our Terms..."
+    let legalReconsentAccept: String         // "I Accept"
+    let legalReconsentDecline: String        // "I Decline"
+
     // MARK: - EULA
     let eulaTitle: String                    // "End-User Licence Agreement"
     let eulaSummary: String                  // Summary paragraph

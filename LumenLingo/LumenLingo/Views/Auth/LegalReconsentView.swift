@@ -16,6 +16,7 @@ struct LegalReconsentView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.authService) private var authService
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.localization) private var localization
 
     @Query private var profiles: [UserProfile]
     private var profile: UserProfile? { profiles.first }
@@ -23,6 +24,7 @@ struct LegalReconsentView: View {
     let onAccept: () -> Void
 
     private var isDark: Bool { colorScheme == .dark }
+    private var L: AppStrings { localization.strings }
 
     var body: some View {
         VStack(spacing: 24) {
@@ -34,13 +36,13 @@ struct LegalReconsentView: View {
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .secondary)
 
             // Title
-            Text("We've updated our policies")
+            Text(L.legalReconsentTitle)
                 .font(.title2.bold())
                 .foregroundStyle(isDark ? .white : .primary)
                 .multilineTextAlignment(.center)
 
             // Body
-            Text("We've made changes to our Terms of Service and Privacy Policy. Please review and accept to continue.")
+            Text(L.legalReconsentBody)
                 .font(.body)
                 .foregroundStyle(isDark ? .white.opacity(0.7) : .secondary)
                 .multilineTextAlignment(.center)
@@ -52,7 +54,7 @@ struct LegalReconsentView: View {
             Button {
                 acceptConsent()
             } label: {
-                Text("I Accept")
+                Text(L.legalReconsentAccept)
                     .font(.system(size: 17, weight: .semibold))
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
@@ -78,7 +80,7 @@ struct LegalReconsentView: View {
                     await authService.logout()
                 }
             } label: {
-                Text("I Decline")
+                Text(L.legalReconsentDecline)
                     .font(.system(size: 15))
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
             }

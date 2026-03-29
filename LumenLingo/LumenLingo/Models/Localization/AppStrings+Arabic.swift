@@ -491,6 +491,12 @@ extension AppStrings {
         legalReadFull: "اقرأ السياسة كاملة",
         legalScrollToAccept: "مرر للمراجعة",
 
+        // MARK: - Legal Re-consent
+        legalReconsentTitle: "لقد قمنا بتحديث سياساتنا",
+        legalReconsentBody: "لقد أجرينا تغييرات على شروط الخدمة وسياسة الخصوصية. يرجى المراجعة والقبول للمتابعة.",
+        legalReconsentAccept: "أوافق",
+        legalReconsentDecline: "أرفض",
+
         // MARK: - EULA
         eulaTitle: "اتفاقية ترخيص المستخدم النهائي",
         eulaSummary: "تحكم اتفاقية الترخيص هذه استخدامك لتطبيق LumenLingo، الموزع عبر متجر Apple App Store بواسطة LumenShore Ltd.",

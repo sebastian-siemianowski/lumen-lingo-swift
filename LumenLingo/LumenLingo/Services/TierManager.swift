@@ -149,7 +149,7 @@ final class TierManager {
     /// (within the afterglow window). Marks the feature as shown so it only sparkles once.
     func shouldShowFeatureSparkle(for feature: PremiumFeature) -> Bool {
         guard isWithinUpgradeAfterglowWindow else { return false }
-        let key = String(describing: feature)
+        let key = feature.overrideKey
         guard newlyUnlockedFeatures.contains(feature) else { return false }
         guard !featureSparklesShownThisSession.contains(key) else { return false }
         featureSparklesShownThisSession.insert(key)

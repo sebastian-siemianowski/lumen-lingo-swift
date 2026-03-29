@@ -9,11 +9,20 @@ enum PrivacyAuditLogger {
     private static let logger = Logger(subsystem: "com.lumenlingo", category: "PrivacyAudit")
     private static let writeQueue = DispatchQueue(label: "com.lumenlingo.privacy-audit", qos: .utility)
 
+    private static let maxFileSize: UInt64 = 1_048_576 // 1 MB
+
     private static let fileURL: URL = {
         let support = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
         try? FileManager.default.createDirectory(at: support, withIntermediateDirectories: true, attributes: nil)
-        return support.appendingPathComponent("privacy-audit.jsonl")
+        let url = support.appendingPathComponent("privacy-audit.jsonl")
+        applyFileProtection(url)
+        return url
     }()
+
+    /// Apply NSFileProtectionComplete so audit trail is encrypted at rest.
+    private static func applyFileProtection(_ url: URL) {
+        try? (url as NSURL).setResourceValue(URLFileProtection.complete, forResourceKey: .fileProtectionKey)
+    }
 
     // MARK: - Public API
 
@@ -33,12 +42,21 @@ enum PrivacyAuditLogger {
 
         let record = line + "\n"
         writeQueue.async {
+            // Rotate if file exceeds size limit
+            if let attrs = try? FileManager.default.attributesOfItem(atPath: fileURL.path),
+               let size = attrs[.size] as? UInt64, size > maxFileSize {
+                let backupURL = fileURL.deletingLastPathComponent().appendingPathComponent("privacy-audit.old.jsonl")
+                try? FileManager.default.removeItem(at: backupURL)
+                try? FileManager.default.moveItem(at: fileURL, to: backupURL)
+            }
+
             if let handle = try? FileHandle(forWritingTo: fileURL) {
                 defer { try? handle.close() }
                 handle.seekToEndOfFile()
                 handle.write(Data(record.utf8))
             } else {
                 try? record.write(to: fileURL, atomically: true, encoding: .utf8)
+                applyFileProtection(fileURL)
             }
         }
 

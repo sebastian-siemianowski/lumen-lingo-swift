@@ -38,8 +38,11 @@ struct LumenLingoApp: App {
         #if DEBUG
         URLProtocol.registerClass(DebugURLProtocol.self)
         #endif
-        // Lightweight integrity check on launch
-        _ = DeviceIntegrityService.check()
+        // Lightweight integrity check on launch (skip during tests and previews)
+        if ProcessInfo.processInfo.environment["XCTestBundlePath"] == nil,
+           ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] != "1" {
+            _ = DeviceIntegrityService.check()
+        }
     }
 
     private var debugBackgroundOnly: Bool {
@@ -96,8 +99,8 @@ struct LumenLingoApp: App {
             .task {
                 guard !isRunningTests else { return }
                 // Configure RevenueCat SDK on launch (no-op for mock in DEBUG)
-                if !revenueCatService.isConfigured {
-                    let apiKey = EnvironmentConfig.current.revenueCatAPIKey
+                let apiKey = EnvironmentConfig.current.revenueCatAPIKey
+                if !revenueCatService.isConfigured, !apiKey.isEmpty {
                     await revenueCatService.configure(apiKey: apiKey, appUserID: nil)
                     // Story 6.2: Collect device identifiers for attribution
                     revenueCatService.collectDeviceIdentifiers()
