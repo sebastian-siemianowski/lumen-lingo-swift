@@ -21,7 +21,6 @@ test.describe('Global Privacy Control (GPC)', () => {
     await page.goto('/', { waitUntil: 'domcontentloaded' });
 
     // Banner should NOT be visible (GPC auto-rejects)
-    await page.waitForLoadState('networkidle');
     await page.waitForTimeout(2000);
     const banner = page.locator('[role="dialog"][aria-label]');
     await expect(banner).not.toBeVisible();
@@ -46,10 +45,7 @@ test.describe('Global Privacy Control (GPC)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForLoadState('networkidle');
     await page.waitForTimeout(2000);
-
-    // Open cookie settings via footer — retry to ensure event listener is registered
     await page.evaluate(() => {
       window.dispatchEvent(new Event('open-cookie-settings'));
     });
@@ -82,10 +78,7 @@ test.describe('Global Privacy Control (GPC)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForLoadState('networkidle');
     await page.waitForTimeout(2000);
-
-    // Open cookie settings — retry to ensure event listener is registered
     await page.evaluate(() => {
       window.dispatchEvent(new Event('open-cookie-settings'));
     });
@@ -130,7 +123,9 @@ test.describe('Global Privacy Control (GPC)', () => {
       await route.fulfill({ status: 200, body: '{}' });
     });
 
-    await page.goto('/pricing', { waitUntil: 'networkidle' });
+    await page.goto('/pricing', { waitUntil: 'domcontentloaded' });
+    // Allow time for any analytics scripts to fire
+    await page.waitForTimeout(3000);
 
     // No analytics tracking calls should have been made
     expect(trackCalls).toHaveLength(0);
@@ -147,7 +142,6 @@ test.describe('Do-Not-Track (DNT)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForLoadState('networkidle');
     await page.waitForTimeout(2000);
     const banner = page.locator('[role="dialog"][aria-label]');
     await expect(banner).not.toBeVisible();

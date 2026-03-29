@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "numberOfRuns": 3,
-      "startServerCommand": "npm run start",
+      "startServerCommand": "npm --prefix lumen-lingo-frontend run start",
       "startServerReadyPattern": "Ready",
       "url": [
         "http://localhost:3000/en",

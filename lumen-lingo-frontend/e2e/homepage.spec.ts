@@ -19,10 +19,10 @@ test.describe('Homepage', () => {
 
   test('hero CTA links to App Store or share page', async ({ page }) => {
     await page.goto('/');
-    const cta = page.getByRole('link', { name: /download|get started|app store|coming soon/i }).first();
+    const cta = page.getByRole('link', { name: /download|get started|app store|coming soon|launching soon/i }).first();
     await expect(cta).toBeVisible();
-    // Pre-launch: CTA may link to /share; post-launch: apps.apple.com
-    await expect(cta).toHaveAttribute('href', /apps\.apple\.com|\/share/);
+    // Pre-launch: CTA may link to /share or /launching-soon; post-launch: apps.apple.com
+    await expect(cta).toHaveAttribute('href', /apps\.apple\.com|\/share|\/launching-soon/);
   });
 
   test('navigates to pricing page', async ({ page }) => {

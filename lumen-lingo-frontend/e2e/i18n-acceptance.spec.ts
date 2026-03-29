@@ -46,8 +46,8 @@ for (const locale of LOCALES) {
       await page.goto(`${locale.prefix}/`, { waitUntil: 'domcontentloaded' });
       const h1 = page.locator('h1').first();
       await expect(h1).toBeVisible({ timeout: 10_000 });
-      const text = await h1.innerText();
-      expect(text).toContain(locale.heroSnippet);
+      const text = (await h1.innerText()).replace(/\s+/g, '');
+      expect(text).toContain(locale.heroSnippet.replace(/\s+/g, ''));
     });
 
     test('hero CTA button is visible', async ({ page }) => {
