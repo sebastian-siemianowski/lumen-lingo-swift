@@ -8,15 +8,14 @@ using namespace metal;
 // MARK: - Shared Noise & Utility Functions for Cosmic Rendering
 // ============================================================
 
+// Suppress unused-function warnings — these utilities are shared across
+// multiple preset shaders via #include; not every preset uses every helper.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-function"
+
 // GPU-side seeded random matching React/Swift: sin(seed*9999 + n*7919) * 10000
 static float seededRandom(int seed, int n) {
     float x = sin(float(seed) * 9999.0 + float(n) * 7919.0) * 10000.0;
-    return fract(x);
-}
-
-// Fast variant using fast::sin — lower precision but sufficient for non-visual params
-static float seededRandomFast(int seed, int n) {
-    float x = fast::sin(float(seed) * 9999.0 + float(n) * 7919.0) * 10000.0;
     return fract(x);
 }
 
@@ -177,6 +176,8 @@ static float3 multiplyBlend(float3 base, float3 overlay, float opacity) {
 static float3 rgb(float r, float g, float b) {
     return float3(r / 255.0, g / 255.0, b / 255.0);
 }
+
+#pragma clang diagnostic pop
 
 // ============================================================
 // MARK: - Shared Uniform Structs
