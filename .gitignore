@@ -189,3 +189,4 @@ htmlcov/
 /lumen-lingo-frontend/test-results/
 /lumen-lingo-frontend/e2e/screenshots/
 /lumen-lingo-frontend/e2e/i18n-visual-snapshots.spec.ts-snapshots/
+/lumen-lingo-frontend/e2e/visual-regression.spec.ts-snapshots/
