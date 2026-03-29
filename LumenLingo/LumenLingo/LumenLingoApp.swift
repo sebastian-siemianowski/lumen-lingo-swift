@@ -37,6 +37,10 @@ struct LumenLingoApp: App {
     init() {
         #if DEBUG
         URLProtocol.registerClass(DebugURLProtocol.self)
+        // Disable animations during UI tests to speed up test execution
+        if ProcessInfo.processInfo.arguments.contains("-UITest_SkipOnboarding") {
+            UIView.setAnimationsEnabled(false)
+        }
         #endif
         // Lightweight integrity check on launch (skip during tests and previews)
         if ProcessInfo.processInfo.environment["XCTestBundlePath"] == nil,
@@ -44,6 +48,8 @@ struct LumenLingoApp: App {
             _ = DeviceIntegrityService.check()
         }
     }
+
+    private static let isUITest = ProcessInfo.processInfo.arguments.contains("-UITest_SkipOnboarding")
 
     private var debugBackgroundOnly: Bool {
         ProcessInfo.processInfo.environment["LL_DEBUG_BACKGROUND_ONLY"] == "1"
@@ -61,6 +67,11 @@ struct LumenLingoApp: App {
         ProcessInfo.processInfo.environment["XCTestBundlePath"] != nil
     }
 
+    /// True when launched by XCUITest runner (separate process, no XCTestBundlePath).
+    private var isRunningUITests: Bool {
+        Self.isUITest
+    }
+
     var body: some Scene {
         WindowGroup {
             Group {
@@ -69,6 +80,9 @@ struct LumenLingoApp: App {
                 } else if debugBackgroundOnly {
                     Color.clear
                         .cosmicBackground(preset: debugForcedNebula)
+                } else if isRunningUITests {
+                    // UI tests: render ContentView without heavy overlays or cosmic background
+                    ContentView()
                 } else {
                     ContentView()
                         .overlay {
@@ -93,11 +107,11 @@ struct LumenLingoApp: App {
             .environment(\.localization, localizationManager)
             .preferredColorScheme(themeManager.colorScheme)
             .task {
-                guard !isRunningTests else { return }
+                guard !isRunningTests, !isRunningUITests else { return }
                 await authService.checkAuthState()
             }
             .task {
-                guard !isRunningTests else { return }
+                guard !isRunningTests, !isRunningUITests else { return }
                 // Configure RevenueCat SDK on launch (no-op for mock in DEBUG)
                 let apiKey = EnvironmentConfig.current.revenueCatAPIKey
                 if !revenueCatService.isConfigured, !apiKey.isEmpty {
@@ -113,7 +127,7 @@ struct LumenLingoApp: App {
                 await subscriptionManager.checkTrialEligibility(from: revenueCatService)
             }
             .task {
-                guard !isRunningTests else { return }
+                guard !isRunningTests, !isRunningUITests else { return }
                 // Bridge RevenueCat customer info updates → SubscriptionManager
                 for await info in revenueCatService.customerInfoStream {
                     subscriptionManager.handleRevenueCatCustomerInfo(info)

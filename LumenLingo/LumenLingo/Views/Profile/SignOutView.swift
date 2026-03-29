@@ -26,6 +26,8 @@ struct SignOutView: View {
     @State private var isDeleting = false
     @State private var deleteStep = ""
 
+    private let isUITest = ProcessInfo.processInfo.arguments.contains("-UITest_SkipOnboarding")
+
     private var isDark: Bool { colorScheme == .dark }
     private var isOnline: Bool { networkMonitor.isConnected }
 
@@ -263,13 +265,13 @@ struct SignOutView: View {
 
         Task {
             logoutStep = L.savingProgress
-            try? await Task.sleep(for: .milliseconds(800))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(800)) }
 
             await MainActor.run { logoutStep = L.clearingLocalData }
-            try? await Task.sleep(for: .milliseconds(500))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(500)) }
 
             await MainActor.run { logoutStep = L.signingOut }
-            try? await Task.sleep(for: .milliseconds(400))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(400)) }
 
             await MainActor.run {
                 isLoggingOut = false
@@ -416,18 +418,18 @@ struct SignOutView: View {
         Task {
             // Step 1: Delete all SwiftData records
             await MainActor.run { deleteStep = L.clearingUserData }
-            try? await Task.sleep(for: .milliseconds(300))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(300)) }
             deleteAllSwiftData()
 
             // Step 2: Clear iCloud KVS
             await MainActor.run { deleteStep = L.deletingAccount }
-            try? await Task.sleep(for: .milliseconds(200))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(200)) }
             await clearCloudKeyValueStore()
 
             // Step 3: Clear all UserDefaults
             clearAllUserDefaults()
 
-            try? await Task.sleep(for: .milliseconds(300))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(300)) }
 
             // Step 4: Reset to clean state — triggers legal consent + onboarding
             await MainActor.run {
