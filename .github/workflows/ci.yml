@@ -121,8 +121,8 @@ jobs:
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
-      - name: Install XcodeGen
-        run: brew install xcodegen
+      - name: Install XcodeGen and xcbeautify
+        run: brew install xcodegen xcbeautify
       - name: Generate Xcode project
         run: cd LumenLingo && xcodegen generate
       - name: Run iOS unit tests

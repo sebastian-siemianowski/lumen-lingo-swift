@@ -3,7 +3,7 @@
 import { useState, useRef, type FormEvent } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { Input, Textarea, Select, Label, ErrorText } from '@/components/ui';
 import { cn } from '@/lib/utils';
 import { getProtectedEmail } from '@/lib/email-registry';

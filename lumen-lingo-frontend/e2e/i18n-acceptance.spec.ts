@@ -179,8 +179,7 @@ for (const locale of LOCALES) {
   for (const pagePath of ['/privacy', '/terms']) {
     test(`[${locale.code.toUpperCase()}] ${pagePath} renders`, async ({ page }) => {
       const response = await page.goto(`${locale.prefix}${pagePath}`, { waitUntil: 'domcontentloaded', timeout: 30_000 });
-      // Skip if the page returns a server error (dev server compilation issue)
-      test.skip(response !== null && response.status() >= 500, 'Server error — likely dev server compilation timeout');
+      expect(response !== null && response.status() < 500, `Expected no server error for ${locale.prefix}${pagePath}, got ${response?.status()}`).toBeTruthy();
       const heading = page.locator('h1').first();
       await expect(heading).toBeVisible({ timeout: 15_000 });
       const text = await heading.textContent();

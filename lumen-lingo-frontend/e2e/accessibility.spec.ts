@@ -62,7 +62,7 @@ test.describe('Accessibility — axe-core WCAG 2.1 AA', () => {
 
 test.describe('Accessibility — keyboard navigation', () => {
   test('homepage skip-to-content and tab order', async ({ page }) => {
-    await page.goto('/en', { waitUntil: 'domcontentloaded' });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
     await page.waitForTimeout(1000);
 
     // First Tab should focus skip-to-content or first focusable element
@@ -72,7 +72,7 @@ test.describe('Accessibility — keyboard navigation', () => {
   });
 
   test('pricing page toggle and cards are keyboard accessible', async ({ page }) => {
-    await page.goto('/en/pricing', { waitUntil: 'domcontentloaded' });
+    await page.goto('/pricing', { waitUntil: 'domcontentloaded' });
     await page.waitForTimeout(1000);
 
     // Tab through to find interactive elements
@@ -91,7 +91,7 @@ test.describe('Accessibility — keyboard navigation', () => {
 test.describe('Accessibility — prefers-reduced-motion', () => {
   test('animations are disabled when reduced motion is preferred', async ({ page }) => {
     await page.emulateMedia({ reducedMotion: 'reduce' });
-    await page.goto('/en', { waitUntil: 'domcontentloaded' });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
 
     // Check that our CSS media query is active
     const hasReducedMotion = await page.evaluate(() => {

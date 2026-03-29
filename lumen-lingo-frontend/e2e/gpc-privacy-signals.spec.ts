@@ -57,11 +57,7 @@ test.describe('Global Privacy Control (GPC)', () => {
       return raw !== null;
     }, { timeout: 15_000 }).toBeTruthy();
 
-    // Open cookie settings via dispatching event 
-    await page.evaluate(() => {
-      window.dispatchEvent(new Event('open-cookie-settings'));
-    });
-    await page.waitForTimeout(300);
+    // Open cookie settings via dispatching event
     await page.evaluate(() => {
       window.dispatchEvent(new Event('open-cookie-settings'));
     });
@@ -98,10 +94,6 @@ test.describe('Global Privacy Control (GPC)', () => {
     }, { timeout: 15_000 }).toBeTruthy();
 
     // Open cookie settings
-    await page.evaluate(() => {
-      window.dispatchEvent(new Event('open-cookie-settings'));
-    });
-    await page.waitForTimeout(300);
     await page.evaluate(() => {
       window.dispatchEvent(new Event('open-cookie-settings'));
     });
