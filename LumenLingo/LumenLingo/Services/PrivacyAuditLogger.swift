@@ -21,7 +21,7 @@ enum PrivacyAuditLogger {
 
     /// Apply NSFileProtectionComplete so audit trail is encrypted at rest.
     private static func applyFileProtection(_ url: URL) {
-        try? (url as NSURL).setResourceValue(URLFileProtection.complete, forResourceKey: .fileProtectionKey)
+        try? (url as NSURL).setResourceValue(URLFileProtection.complete, forKey: .fileProtectionKey)
     }
 
     // MARK: - Public API

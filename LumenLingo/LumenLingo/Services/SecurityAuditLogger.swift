@@ -29,8 +29,15 @@ final class SecurityEvent {
     }
 
     private static func currentDeviceInfo() -> String {
-        let device = UIDevice.current
-        return "\(device.model), \(device.systemName) \(device.systemVersion)"
+        var sysinfo = utsname()
+        uname(&sysinfo)
+        let machine = withUnsafePointer(to: &sysinfo.machine) {
+            $0.withMemoryRebound(to: CChar.self, capacity: 1) {
+                String(validatingCString: $0) ?? "unknown"
+            }
+        }
+        let os = ProcessInfo.processInfo.operatingSystemVersion
+        return "\(machine), iOS \(os.majorVersion).\(os.minorVersion).\(os.patchVersion)"
     }
 }
 
