@@ -10,7 +10,7 @@ enum PrivacyAuditLogger {
 
     private static let fileURL: URL = {
         let support = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-        try? FileManager.default.createDirectory(at: support, withIntermediateDirectories: true)
+        try? FileManager.default.createDirectory(at: support, withIntermediateDirectories: true, attributes: nil)
         return support.appendingPathComponent("privacy-audit.jsonl")
     }()
 
