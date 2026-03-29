@@ -117,7 +117,7 @@ jobs:
       - run: npm run build
         working-directory: lumen-lingo-frontend
 
-  ios-tests:
+  ios-build:
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
@@ -136,6 +136,69 @@ jobs:
         run: brew install xcodegen xcbeautify
       - name: Generate Xcode project
         run: cd LumenLingo && xcodegen generate
+      - name: Cache SPM packages
+        uses: actions/cache@v4
+        with:
+          path: LumenLingo/SPMCache
+          key: spm-${{ hashFiles('LumenLingo/project.yml') }}
+          restore-keys: spm-
+      - name: Cache DerivedData
+        uses: actions/cache@v4
+        with:
+          path: LumenLingo/DerivedData
+          key: derived-${{ runner.os }}-${{ hashFiles('LumenLingo/**/*.swift', 'LumenLingo/**/*.metal', 'LumenLingo/project.yml') }}
+          restore-keys: derived-${{ runner.os }}-
+      - name: Build for testing
+        run: |
+          set -o pipefail
+          cd LumenLingo && xcodebuild build-for-testing \
+            -project LumenLingo.xcodeproj \
+            -scheme LumenLingo-Dev \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath ./DerivedData \
+            -clonedSourcePackagesDirPath ./SPMCache \
+            | xcbeautify
+      - name: Package test products
+        run: |
+          cd LumenLingo/DerivedData/Build
+          tar -czf "$GITHUB_WORKSPACE/test-products.tar.gz" Products
+      - name: Upload test products
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-test-products
+          path: test-products.tar.gz
+          retention-days: 1
+
+  ios-tests:
+    needs: ios-build
+    runs-on: macos-15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: unit-tests
+            target: LumenLingoTests
+            extra-flags: "-parallel-testing-enabled YES"
+          - name: ui-tests
+            target: LumenLingoUITests
+            extra-flags: ""
+    steps:
+      - name: Select Xcode 26
+        run: |
+          XCODE_PATH=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$XCODE_PATH" ]; then
+            echo "::error::Xcode 26 not found"
+            exit 1
+          fi
+          sudo xcode-select -s "$XCODE_PATH/Contents/Developer"
+      - name: Install xcbeautify
+        run: brew install xcbeautify
+      - name: Download test products
+        uses: actions/download-artifact@v4
+        with:
+          name: ios-test-products
+      - name: Extract test products
+        run: tar -xzf test-products.tar.gz
       - name: Boot iOS Simulator
         run: |
           SIM_ID=$(xcrun simctl list devices available -j | python3 -c "
@@ -149,34 +212,21 @@ jobs:
           sys.exit(1)
           ")
           xcrun simctl boot "$SIM_ID" 2>/dev/null || true
-      - name: Run iOS unit tests
+      - name: Run ${{ matrix.name }}
         run: |
           set -o pipefail
-          cd LumenLingo && xcodebuild test \
-            -project LumenLingo.xcodeproj \
-            -scheme LumenLingo-Dev \
+          XCTESTRUN=$(find Products -name "*.xctestrun" -type f | head -1)
+          echo "Using xctestrun: $XCTESTRUN"
+          xcodebuild test-without-building \
+            -xctestrun "$XCTESTRUN" \
             -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
-            -parallel-testing-enabled YES \
-            -parallel-testing-worker-count 4 \
-            -only-testing:LumenLingoTests \
-            -resultBundlePath ../build/TestResults.xcresult \
-            | xcbeautify
-      - name: Run iOS UI tests
-        if: success() || failure()
-        run: |
-          set -o pipefail
-          cd LumenLingo && xcodebuild test \
-            -project LumenLingo.xcodeproj \
-            -scheme LumenLingo-Dev \
-            -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
-            -only-testing:LumenLingoUITests \
-            -resultBundlePath ../build/UITestResults.xcresult \
+            -only-testing:${{ matrix.target }} \
+            ${{ matrix.extra-flags }} \
+            -resultBundlePath build/${{ matrix.name }}.xcresult \
             | xcbeautify
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ios-test-results
-          path: |
-            build/TestResults.xcresult
-            build/UITestResults.xcresult
+          name: ios-${{ matrix.name }}-results
+          path: build/${{ matrix.name }}.xcresult
           retention-days: 7
