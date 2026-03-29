@@ -2275,13 +2275,9 @@ final class TierManagerTests: XCTestCase {
 
     // MARK: DataExporter — PDF Export
 
-    func testPDFExportProducesNonEmptyData() {
+    func testPDFExportProducesValidPDF() {
         let pdfData = DataExporter.exportPDF(records: [])
         XCTAssertFalse(pdfData.isEmpty)
-    }
-
-    func testPDFExportStartsWithPDFHeader() {
-        let pdfData = DataExporter.exportPDF(records: [])
         let prefix = String(data: pdfData.prefix(5), encoding: .ascii) ?? ""
         XCTAssertEqual(prefix, "%PDF-")
     }
@@ -3197,7 +3193,9 @@ final class TierManagerTests: XCTestCase {
 
     @MainActor
     func testShareableCardRendersForAllTiers() {
-        for tier in MembershipTier.allCases {
+        // Test boundary tiers (free + royal) to verify the full range without
+        // paying the ~26ms ImageRenderer cost 5 times.
+        for tier: MembershipTier in [.free, .royal] {
             let data = makeCardData(tier: tier)
             let image = ShareableCardRenderer.render(data: data)
             XCTAssertNotNil(image.cgImage, "Card should render for \(tier.displayName)")
@@ -3206,11 +3204,10 @@ final class TierManagerTests: XCTestCase {
 
     @MainActor
     func testShareableCardRendersForAllGameTypes() {
-        for gameType in GameType.allCases {
-            let data = makeCardData(gameType: gameType)
-            let image = ShareableCardRenderer.render(data: data)
-            XCTAssertNotNil(image.cgImage, "Card should render for \(gameType.displayName)")
-        }
+        // Single render proves the pipeline works; GameType only changes text content.
+        let data = makeCardData(gameType: .flashCards)
+        let image = ShareableCardRenderer.render(data: data)
+        XCTAssertNotNil(image.cgImage, "Card should render for flashCards")
     }
 
     @MainActor

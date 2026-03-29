@@ -300,7 +300,9 @@ final class MockAuthService: AuthServiceProtocol, @unchecked Sendable {
 
     func logout() async {
         isLoading = true
+        #if !DEBUG
         try? await Task.sleep(for: .milliseconds(300))
+        #endif
         isAuthenticated = false
         currentUser = nil
         isGuestMode = false

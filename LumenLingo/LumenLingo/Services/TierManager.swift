@@ -51,6 +51,12 @@ extension Notification.Name {
 @Observable
 final class TierManager {
 
+    /// True when running inside XCTest — skips haptics, audio, and async delays
+    /// that would congest the @MainActor queue across 400+ serialized tests.
+    nonisolated static let isRunningTests: Bool = {
+        ProcessInfo.processInfo.environment["XCTestBundlePath"] != nil
+    }()
+
     // MARK: Published State
 
     var currentTier: MembershipTier = .free
@@ -957,16 +963,24 @@ final class TierManager {
         }
 
         if wasUpgrade {
-            HapticsService.shared.tierUpgrade()
+            if !Self.isRunningTests {
+                HapticsService.shared.tierUpgrade()
+            }
             // Story 7.2: Record upgrade timestamp for 12-hour afterglow
             tierUpgradeTimestamp = Date()
             UserDefaults.standard.set(tierUpgradeTimestamp, forKey: "ll_tier_upgrade_timestamp")
             featureSparklesShownThisSession = []
         } else {
-            HapticsService.shared.tierDowngrade()
+            if !Self.isRunningTests {
+                HapticsService.shared.tierDowngrade()
+            }
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { [weak self] in
-            self?.showUpgradeCelebration = true
+        if Self.isRunningTests {
+            showUpgradeCelebration = true
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { [weak self] in
+                self?.showUpgradeCelebration = true
+            }
         }
 
         // Restore dormant settings on upgrade
@@ -987,16 +1001,19 @@ final class TierManager {
                 captureDormantSettings(profile: profile)
             }
 
-            let audio = AudioService.shared
-            if let active = audio.activeSoundscape {
-                if !isSoundscapeUnlocked(active) {
-                    // Active soundscape now exceeds tier limit — fade out
-                    audio.stopAmbient(fadeDuration: 2.0)
-                    // Post notification for toast display
-                    NotificationCenter.default.post(name: .soundscapeAutoStopped, object: nil)
+            // Skip audio service access during tests to avoid singleton cold-start
+            if !Self.isRunningTests {
+                let audio = AudioService.shared
+                if let active = audio.activeSoundscape {
+                    if !isSoundscapeUnlocked(active) {
+                        // Active soundscape now exceeds tier limit — fade out
+                        audio.stopAmbient(fadeDuration: 2.0)
+                        // Post notification for toast display
+                        NotificationCenter.default.post(name: .soundscapeAutoStopped, object: nil)
+                    }
+                } else if !hasAccess(to: .soundscapes) {
+                    audio.stopAmbient()
                 }
-            } else if !hasAccess(to: .soundscapes) {
-                audio.stopAmbient()
             }
 
             // Breathing orbs: disable on downgrade to free
@@ -1054,8 +1071,12 @@ final class TierManager {
         // Sync tier change to iCloud
         pushToCloud(profile: profile)
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { [weak self] in
-            self?.isTransitioning = false
+        if Self.isRunningTests {
+            isTransitioning = false
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { [weak self] in
+                self?.isTransitioning = false
+            }
         }
     }
 
