@@ -83,10 +83,11 @@ enum SecurityAuditLogger {
                 context.delete(event)
             }
             if !oldEvents.isEmpty {
+                try context.save()
                 Log.info("Pruned \(oldEvents.count) security events older than 90 days")
             }
         } catch {
-            Log.error("Failed to prune security events: \(error.localizedDescription)")
+            Log.error("Failed to prune or save security events: \(error.localizedDescription)")
         }
     }
 }
