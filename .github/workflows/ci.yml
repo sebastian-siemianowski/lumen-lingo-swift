@@ -154,7 +154,7 @@ jobs:
           cd LumenLingo && xcodebuild build-for-testing \
             -project LumenLingo.xcodeproj \
             -scheme LumenLingo-Dev \
-            -destination 'generic/platform=iOS Simulator' \
+            -destination 'generic/platform=iOS Simulator,arch=arm64' \
             -derivedDataPath ./DerivedData \
             -clonedSourcePackagesDirPath ./SPMCache \
             | xcbeautify
@@ -219,7 +219,7 @@ jobs:
           echo "Using xctestrun: $XCTESTRUN"
           xcodebuild test-without-building \
             -xctestrun "$XCTESTRUN" \
-            -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro,arch=arm64' \
             -only-testing:${{ matrix.target }} \
             ${{ matrix.extra-flags }} \
             -resultBundlePath build/${{ matrix.name }}.xcresult \
