@@ -2756,14 +2756,17 @@ final class OfferingsFetchTests: XCTestCase {
                        "First subscription message should not be empty")
     }
 
-    /// AudioService has tier-specific celebration methods.
+    /// AudioService has tier-specific celebration methods (compile-time check).
     func testAudioServiceTierCelebrationMethods() {
-        let audio = AudioService.shared
-        // Compile-time check: all tier celebration methods exist
-        audio.playProCelebration()
-        audio.playEliteCelebration()
-        audio.playRoyalCelebration()
-        audio.playTrialCelebration()
+        // Verify methods exist on the type without instantiating the singleton
+        // (AudioService.shared triggers expensive prewarm + AVAudioSession setup).
+        let methods: [(AudioService) -> () -> Void] = [
+            AudioService.playProCelebration,
+            AudioService.playEliteCelebration,
+            AudioService.playRoyalCelebration,
+            AudioService.playTrialCelebration,
+        ]
+        XCTAssertEqual(methods.count, 4, "All four tier celebration methods must exist")
     }
 
     /// HapticsService has celebrationChoreography method for all tiers.

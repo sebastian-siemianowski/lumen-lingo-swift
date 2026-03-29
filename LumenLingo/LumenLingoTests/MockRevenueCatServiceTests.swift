@@ -88,7 +88,6 @@ final class MockRevenueCatServiceTests: XCTestCase {
 
     func testPurchaseHappyPathSucceeds() async throws {
         sut.nextPurchaseScenario = .happyPath
-        sut.purchaseDelay = 0.01
 
         let offerings = try await sut.getOfferings()
         let proPackage = offerings.current!.packages.first { $0.tier == .pro }!
@@ -104,7 +103,6 @@ final class MockRevenueCatServiceTests: XCTestCase {
 
     func testPurchaseUserCancelledReturnsCancelFlag() async throws {
         sut.nextPurchaseScenario = .userCancelled
-        sut.purchaseDelay = 0.01
 
         let offerings = try await sut.getOfferings()
         let proPackage = offerings.current!.packages.first { $0.tier == .pro }!
@@ -118,7 +116,6 @@ final class MockRevenueCatServiceTests: XCTestCase {
 
     func testPurchaseNetworkErrorThrows() async throws {
         sut.nextPurchaseScenario = .networkError
-        sut.purchaseDelay = 0.01
 
         let offerings = try await sut.getOfferings()
         let proPackage = offerings.current!.packages.first { $0.tier == .pro }!
@@ -135,7 +132,6 @@ final class MockRevenueCatServiceTests: XCTestCase {
 
     func testPurchasePaymentDeclinedThrows() async throws {
         sut.nextPurchaseScenario = .paymentDeclined
-        sut.purchaseDelay = 0.01
 
         let offerings = try await sut.getOfferings()
         let proPackage = offerings.current!.packages.first { $0.tier == .pro }!
@@ -152,7 +148,6 @@ final class MockRevenueCatServiceTests: XCTestCase {
 
     func testPurchaseDeferredThrows() async throws {
         sut.nextPurchaseScenario = .deferredPurchase
-        sut.purchaseDelay = 0.01
 
         let offerings = try await sut.getOfferings()
         let proPackage = offerings.current!.packages.first { $0.tier == .pro }!
@@ -169,7 +164,6 @@ final class MockRevenueCatServiceTests: XCTestCase {
 
     func testPurchaseBillingFailureSetsBillingIssue() async throws {
         sut.nextPurchaseScenario = .billingFailure
-        sut.purchaseDelay = 0.01
 
         let offerings = try await sut.getOfferings()
         let proPackage = offerings.current!.packages.first { $0.tier == .pro }!
@@ -184,7 +178,6 @@ final class MockRevenueCatServiceTests: XCTestCase {
     func testPurchaseTrialActiveSetsTrialPeriod() async throws {
         sut.nextPurchaseScenario = .trialActive
         sut.trialDaysRemaining = 10
-        sut.purchaseDelay = 0.01
 
         let offerings = try await sut.getOfferings()
         let royalPackage = offerings.current!.packages.first { $0.tier == .royal }!
@@ -198,7 +191,6 @@ final class MockRevenueCatServiceTests: XCTestCase {
 
     func testPurchaseFamilySharedSetsOwnership() async throws {
         sut.nextPurchaseScenario = .familyShared
-        sut.purchaseDelay = 0.01
 
         let offerings = try await sut.getOfferings()
         let proPackage = offerings.current!.packages.first { $0.tier == .pro }!
@@ -212,7 +204,6 @@ final class MockRevenueCatServiceTests: XCTestCase {
 
     func testPurchaseOfflineModeThrows() async throws {
         sut.nextPurchaseScenario = .offlineMode
-        sut.purchaseDelay = 0.01
 
         let offerings = try await sut.getOfferings()
         let proPackage = offerings.current!.packages.first { $0.tier == .pro }!
@@ -257,7 +248,6 @@ final class MockRevenueCatServiceTests: XCTestCase {
     func testRestorePurchasesReturnsCachedInfo() async throws {
         // First purchase Pro
         sut.nextPurchaseScenario = .happyPath
-        sut.purchaseDelay = 0.01
         let offerings = try await sut.getOfferings()
         let proPackage = offerings.current!.packages.first { $0.tier == .pro }!
         _ = try await sut.purchase(package: proPackage)
@@ -276,7 +266,6 @@ final class MockRevenueCatServiceTests: XCTestCase {
 
     func testHighestActiveTierMappingRoyal() async throws {
         sut.nextPurchaseScenario = .happyPath
-        sut.purchaseDelay = 0.01
         let offerings = try await sut.getOfferings()
         let royalPackage = offerings.current!.packages.first { $0.tier == .royal }!
         let result = try await sut.purchase(package: royalPackage)
@@ -338,7 +327,9 @@ final class MockRevenueCatServiceTests: XCTestCase {
 
     func testEventLogLimitsEntries() async {
         sut.clearEventLog()
-        for i in 0..<60 {
+        // Call configure enough times to exceed the 50-entry cap
+        // without unnecessary overhead from 60 async hops.
+        for i in 0..<52 {
             await sut.configure(apiKey: "key_\(i)", appUserID: nil)
         }
         XCTAssertLessThanOrEqual(sut.eventLog.count, 50)

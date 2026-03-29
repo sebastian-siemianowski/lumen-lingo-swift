@@ -2275,13 +2275,9 @@ final class TierManagerTests: XCTestCase {
 
     // MARK: DataExporter — PDF Export
 
-    func testPDFExportProducesNonEmptyData() {
+    func testPDFExportProducesValidPDF() {
         let pdfData = DataExporter.exportPDF(records: [])
         XCTAssertFalse(pdfData.isEmpty)
-    }
-
-    func testPDFExportStartsWithPDFHeader() {
-        let pdfData = DataExporter.exportPDF(records: [])
         let prefix = String(data: pdfData.prefix(5), encoding: .ascii) ?? ""
         XCTAssertEqual(prefix, "%PDF-")
     }
@@ -3197,6 +3193,7 @@ final class TierManagerTests: XCTestCase {
 
     @MainActor
     func testShareableCardRendersForAllTiers() {
+        // Ensure the card renders successfully for every membership tier.
         for tier in MembershipTier.allCases {
             let data = makeCardData(tier: tier)
             let image = ShareableCardRenderer.render(data: data)
@@ -3206,10 +3203,11 @@ final class TierManagerTests: XCTestCase {
 
     @MainActor
     func testShareableCardRendersForAllGameTypes() {
+        // Render all GameType cases to catch missing icons/colors or layout issues.
         for gameType in GameType.allCases {
             let data = makeCardData(gameType: gameType)
             let image = ShareableCardRenderer.render(data: data)
-            XCTAssertNotNil(image.cgImage, "Card should render for \(gameType.displayName)")
+            XCTAssertNotNil(image.cgImage, "Card should render for \(gameType)")
         }
     }
 

@@ -26,6 +26,8 @@ struct SignOutView: View {
     @State private var isDeleting = false
     @State private var deleteStep = ""
 
+    private let isUITest = ProcessInfo.processInfo.arguments.contains("-UITest_SkipOnboarding")
+
     private var isDark: Bool { colorScheme == .dark }
     private var isOnline: Bool { networkMonitor.isConnected }
 
@@ -144,8 +146,10 @@ struct SignOutView: View {
 
     private var signOutButton: some View {
         Button {
-            AudioService.shared.playSignOutWarning()
-            HapticsService.shared.destructiveAction()
+            if !isUITest {
+                AudioService.shared.playSignOutWarning()
+                HapticsService.shared.destructiveAction()
+            }
             withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
                 showConfirmation = true
             }
@@ -192,8 +196,10 @@ struct SignOutView: View {
 
             HStack(spacing: 12) {
                 Button {
-                    AudioService.shared.playButtonTap()
-                    HapticsService.shared.buttonPress()
+                    if !isUITest {
+                        AudioService.shared.playButtonTap()
+                        HapticsService.shared.buttonPress()
+                    }
                     withAnimation { showConfirmation = false }
                 } label: {
                     Text(L.cancel)
@@ -209,8 +215,10 @@ struct SignOutView: View {
                 .buttonStyle(LumenPressStyle(weight: .medium))
 
                 Button {
-                    AudioService.shared.playSignOutConfirmed()
-                    HapticsService.shared.destructiveAction()
+                    if !isUITest {
+                        AudioService.shared.playSignOutConfirmed()
+                        HapticsService.shared.destructiveAction()
+                    }
                     executeSignOut()
                 } label: {
                     Text(L.signOut)
@@ -263,13 +271,13 @@ struct SignOutView: View {
 
         Task {
             logoutStep = L.savingProgress
-            try? await Task.sleep(for: .milliseconds(800))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(800)) }
 
             await MainActor.run { logoutStep = L.clearingLocalData }
-            try? await Task.sleep(for: .milliseconds(500))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(500)) }
 
             await MainActor.run { logoutStep = L.signingOut }
-            try? await Task.sleep(for: .milliseconds(400))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(400)) }
 
             await MainActor.run {
                 isLoggingOut = false
@@ -284,8 +292,10 @@ struct SignOutView: View {
 
     private var deleteAccountButton: some View {
         Button {
-            AudioService.shared.playSignOutWarning()
-            HapticsService.shared.destructiveAction()
+            if !isUITest {
+                AudioService.shared.playSignOutWarning()
+                HapticsService.shared.destructiveAction()
+            }
             withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
                 showDeleteConfirmation = true
             }
@@ -332,8 +342,10 @@ struct SignOutView: View {
 
             HStack(spacing: 12) {
                 Button {
-                    AudioService.shared.playButtonTap()
-                    HapticsService.shared.buttonPress()
+                    if !isUITest {
+                        AudioService.shared.playButtonTap()
+                        HapticsService.shared.buttonPress()
+                    }
                     withAnimation { showDeleteConfirmation = false }
                 } label: {
                     Text(L.cancel)
@@ -349,8 +361,10 @@ struct SignOutView: View {
                 .buttonStyle(LumenPressStyle(weight: .medium))
 
                 Button {
-                    AudioService.shared.playSignOutConfirmed()
-                    HapticsService.shared.destructiveAction()
+                    if !isUITest {
+                        AudioService.shared.playSignOutConfirmed()
+                        HapticsService.shared.destructiveAction()
+                    }
                     Task {
                         let result = await BiometricAuthService.authenticate(
                             reason: "Authenticate to delete your account"
@@ -416,18 +430,18 @@ struct SignOutView: View {
         Task {
             // Step 1: Delete all SwiftData records
             await MainActor.run { deleteStep = L.clearingUserData }
-            try? await Task.sleep(for: .milliseconds(300))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(300)) }
             deleteAllSwiftData()
 
             // Step 2: Clear iCloud KVS
             await MainActor.run { deleteStep = L.deletingAccount }
-            try? await Task.sleep(for: .milliseconds(200))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(200)) }
             await clearCloudKeyValueStore()
 
             // Step 3: Clear all UserDefaults
             clearAllUserDefaults()
 
-            try? await Task.sleep(for: .milliseconds(300))
+            if !isUITest { try? await Task.sleep(for: .milliseconds(300)) }
 
             // Step 4: Reset to clean state — triggers legal consent + onboarding
             await MainActor.run {

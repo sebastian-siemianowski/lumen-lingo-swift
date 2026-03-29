@@ -300,7 +300,6 @@ final class MockAuthService: AuthServiceProtocol, @unchecked Sendable {
 
     func logout() async {
         isLoading = true
-        try? await Task.sleep(for: .milliseconds(300))
         isAuthenticated = false
         currentUser = nil
         isGuestMode = false
@@ -318,7 +317,6 @@ final class MockAuthService: AuthServiceProtocol, @unchecked Sendable {
 
     func checkAuthState() async {
         isLoading = true
-        try? await Task.sleep(for: .milliseconds(200))
 
         #if DEBUG
         // If running UI tests, keep the state set by launch arguments
@@ -326,6 +324,11 @@ final class MockAuthService: AuthServiceProtocol, @unchecked Sendable {
             isLoading = false
             return
         }
+        #endif
+
+        try? await Task.sleep(for: .milliseconds(200))
+
+        #if DEBUG
         let override = await DebugAuthController.shared.activeOverride
         if override == .clerkUnavailable {
             // Graceful offline fallback — keep whatever state we had
