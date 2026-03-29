@@ -180,7 +180,9 @@ schemes:
     test:
       config: Dev-Debug
       targets:
-        - LumenLingoTests
+        - name: LumenLingoTests
+          parallelizable: true
+          randomExecutionOrder: true
         - LumenLingoUITests
     profile:
       config: Dev-Release
@@ -204,7 +206,9 @@ schemes:
     test:
       config: QA-Debug
       targets:
-        - LumenLingoTests
+        - name: LumenLingoTests
+          parallelizable: true
+          randomExecutionOrder: true
         - LumenLingoUITests
     profile:
       config: QA-Release
@@ -228,7 +232,9 @@ schemes:
     test:
       config: UAT-Debug
       targets:
-        - LumenLingoTests
+        - name: LumenLingoTests
+          parallelizable: true
+          randomExecutionOrder: true
         - LumenLingoUITests
     profile:
       config: UAT-Release
@@ -252,7 +258,9 @@ schemes:
     test:
       config: PreProd-Debug
       targets:
-        - LumenLingoTests
+        - name: LumenLingoTests
+          parallelizable: true
+          randomExecutionOrder: true
         - LumenLingoUITests
     profile:
       config: PreProd-Release
@@ -276,7 +284,9 @@ schemes:
     test:
       config: Prod-Debug
       targets:
-        - LumenLingoTests
+        - name: LumenLingoTests
+          parallelizable: true
+          randomExecutionOrder: true
         - LumenLingoUITests
     profile:
       config: Prod-Release

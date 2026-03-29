@@ -210,7 +210,7 @@ final class MockRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
     var nextPurchaseScenario: MockRCScenario = .happyPath
 
     /// Simulated delay for purchase operations (seconds).
-    var purchaseDelay: TimeInterval = 0.5
+    var purchaseDelay: TimeInterval = 0.0
 
     /// Simulated delay for all operations (seconds).
     var globalLatency: TimeInterval = 0.0
@@ -640,8 +640,8 @@ final class MockRevenueCatService: RevenueCatServiceProtocol, @unchecked Sendabl
     }
 
     private func simulateLatency() async {
-        let latency = globalLatency > 0 ? globalLatency : 0.05
-        try? await Task.sleep(for: .seconds(latency))
+        guard globalLatency > 0 else { return }
+        try? await Task.sleep(for: .seconds(globalLatency))
     }
 
     private func throwIfOffline() throws {

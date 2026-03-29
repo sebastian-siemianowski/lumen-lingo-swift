@@ -157,11 +157,26 @@ jobs:
             -scheme LumenLingo-Dev \
             -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
             -parallel-testing-enabled YES \
+            -parallel-testing-worker-count 4 \
+            -only-testing:LumenLingoTests \
             -resultBundlePath ../build/TestResults.xcresult \
+            | xcbeautify
+      - name: Run iOS UI tests
+        if: success() || failure()
+        run: |
+          set -o pipefail
+          cd LumenLingo && xcodebuild test \
+            -project LumenLingo.xcodeproj \
+            -scheme LumenLingo-Dev \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
+            -only-testing:LumenLingoUITests \
+            -resultBundlePath ../build/UITestResults.xcresult \
             | xcbeautify
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: ios-test-results
-          path: build/TestResults.xcresult
+          path: |
+            build/TestResults.xcresult
+            build/UITestResults.xcresult
           retention-days: 7
