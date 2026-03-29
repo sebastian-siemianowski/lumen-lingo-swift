@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { getLocale } from 'next-intl/server';
 import { APP_STORE_ID } from '@/lib/appStoreConfig';
 import { getFontVariableClasses } from '@/lib/fonts';
+import { ConsentAwareAnalytics } from '@/components/analytics/consent-aware-analytics';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -31,8 +30,7 @@ export default async function RootLayout({
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className={`${getFontVariableClasses(locale)} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full bg-background text-foreground" suppressHydrationWarning>
         {children}
-        <Analytics />
-        <SpeedInsights />
+        <ConsentAwareAnalytics />
       </body>
     </html>
   );

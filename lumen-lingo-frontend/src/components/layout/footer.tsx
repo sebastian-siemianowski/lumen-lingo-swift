@@ -185,25 +185,31 @@ export function Footer() {
                   {appStoreLive ? t('downloadAppStore') : 'Coming Soon'}
                 </a>
 
-                {/* Subtle vertical divider */}
-                <div className="hidden h-8 w-px bg-white/[0.06] sm:block" />
+                {/* Social links — only render links with real URLs */}
+                {socialLinks.some((s) => s.href !== '#') && (
+                  <>
+                    {/* Subtle vertical divider */}
+                    <div className="hidden h-8 w-px bg-white/[0.06] sm:block" />
 
-                {/* Social links */}
-                <div className="flex gap-2">
-                  {socialLinks.map((social) => (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      className={cn(
-                        'flex h-10 w-10 items-center justify-center rounded-xl border border-transparent text-foreground-muted transition-all duration-300 hover:border-white/[0.08] hover:bg-white/[0.04] focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none',
-                        social.hoverClass,
-                      )}
-                      aria-label={social.label}
-                    >
-                      {social.icon}
-                    </a>
-                  ))}
-                </div>
+                    <div className="flex gap-2">
+                      {socialLinks
+                        .filter((s) => s.href !== '#')
+                        .map((social) => (
+                          <a
+                            key={social.label}
+                            href={social.href}
+                            className={cn(
+                              'flex h-10 w-10 items-center justify-center rounded-xl border border-transparent text-foreground-muted transition-all duration-300 hover:border-white/[0.08] hover:bg-white/[0.04] focus-visible:ring-2 focus-visible:ring-violet focus-visible:outline-none',
+                              social.hoverClass,
+                            )}
+                            aria-label={social.label}
+                          >
+                            {social.icon}
+                          </a>
+                        ))}
+                    </div>
+                  </>
+                )}
               </div>
             </div>
 
@@ -242,7 +248,6 @@ export function Footer() {
                     {/* Links */}
                     <ul
                       id={`footer-${sectionKey}`}
-                      role="region"
                       className={`mt-4 space-y-1 sm:block ${isOpen ? 'block' : 'hidden'}`}
                     >
                       {links

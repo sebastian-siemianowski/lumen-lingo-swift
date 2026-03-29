@@ -5,9 +5,9 @@
       "startServerCommand": "npm --prefix lumen-lingo-frontend run start",
       "startServerReadyPattern": "Ready",
       "url": [
-        "http://localhost:3000/en",
-        "http://localhost:3000/en/pricing",
-        "http://localhost:3000/en/blog"
+        "http://localhost:3000/",
+        "http://localhost:3000/pricing",
+        "http://localhost:3000/blog"
       ],
       "settings": {
         "preset": "desktop"
