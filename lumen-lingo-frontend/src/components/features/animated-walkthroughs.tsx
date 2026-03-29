@@ -1,0 +1,619 @@
+'use client';
+
+import { useRef, useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { useTranslations } from 'next-intl';
+import { cn } from '@/lib/utils';
+import type { ComponentType } from 'react';
+import type { IconProps } from '@/components/icons';
+import {
+  CoffeeShopIcon,
+  OceanWavesIcon,
+  DeepSpaceIcon,
+  ParisCafeIcon,
+  MountainStreamIcon,
+} from '@/components/icons';
+
+// ─── Shared phone frame ────────────────────────────────────────────
+function PhoneFrame({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div
+      className={cn(
+        'relative mx-auto w-[220px] overflow-hidden rounded-[28px] border border-glass-border bg-gradient-to-b from-white/[0.04] to-white/[0.01] p-2 shadow-xl sm:w-[260px]',
+        className,
+      )}
+    >
+      {/* Notch */}
+      <div className="absolute left-1/2 top-2.5 z-10 h-5 w-24 -translate-x-1/2 rounded-full bg-background/80" />
+      {/* Screen */}
+      <div className="relative overflow-hidden rounded-[20px] bg-background">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+// ─── 1. Flashcard Flow Animation ───────────────────────────────────
+const FLASHCARD_CYCLE = 10000; // active animation
+const LOOP_GAP = 2000; // pause between loops
+
+export function FlashcardFlowAnimation() {
+  const reduced = useReducedMotion();
+  const t = useTranslations('Features');
+  const [step, setStep] = useState(0); // 0: appear, 1: flip, 2: swipe, 3: next
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const elapsedRef = useRef(0);
+  const lastStepRef = useRef(-1);
+
+  // Intersection observer — threshold 0.4
+  useEffect(() => {
+    if (reduced) return;
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([e]) => setVisible(e.isIntersecting),
+      { threshold: 0.4 },
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [reduced]);
+
+  // rAF-driven animation loop — pauses when off-screen, resumes on re-entry
+  useEffect(() => {
+    if (!visible || reduced) return;
+
+    const totalCycle = FLASHCARD_CYCLE + LOOP_GAP;
+    const startTime = performance.now() - elapsedRef.current;
+    let rafId: number;
+
+    function tick() {
+      const elapsed = performance.now() - startTime;
+      const t = elapsed % totalCycle;
+
+      let s: number;
+      if (t >= 9500) s = 0; // gap period — rest on step 0
+      else if (t >= 7000) s = 3;
+      else if (t >= 5000) s = 2;
+      else if (t >= 2000) s = 1;
+      else s = 0;
+
+      if (s !== lastStepRef.current) {
+        lastStepRef.current = s;
+        setStep(s);
+      }
+
+      rafId = requestAnimationFrame(tick);
+    }
+
+    rafId = requestAnimationFrame(tick);
+
+    return () => {
+      elapsedRef.current = performance.now() - startTime;
+      cancelAnimationFrame(rafId);
+    };
+  }, [visible, reduced]);
+
+  if (reduced) {
+    return (
+      <PhoneFrame>
+        <FlashcardStatic />
+      </PhoneFrame>
+    );
+  }
+
+  return (
+    <div ref={ref}>
+      <PhoneFrame>
+        <div className="relative aspect-[9/16] w-full overflow-hidden bg-background p-4">
+          {/* Top bar */}
+          <div className="mb-3 flex items-center justify-between pt-6">
+            <div className="h-2 w-16 rounded-full bg-white/10" />
+            <div className="text-[9px] font-medium text-foreground-muted">{t('walkthroughs.demo.cardProgress')}</div>
+          </div>
+
+          {/* Progress bar */}
+          <div className="mb-4 h-1 w-full overflow-hidden rounded-full bg-white/5">
+            <motion.div
+              className="h-full rounded-full bg-gradient-to-r from-violet to-cyan"
+              animate={{ width: step >= 2 ? '40%' : '20%' }}
+              transition={{ duration: 0.5 }}
+            />
+          </div>
+
+          {/* Card area */}
+          <div className="relative mx-auto h-[55%] w-full [perspective:600px]">
+            <AnimatePresence mode="wait">
+              {step < 2 ? (
+                <motion.div
+                  key="card"
+                  className="absolute inset-0 [transform-style:preserve-3d]"
+                  animate={{ rotateY: step >= 1 ? 180 : 0 }}
+                  transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
+                >
+                  {/* Front */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center rounded-xl border border-glass-border bg-gradient-to-br from-white/[0.06] to-white/[0.02] [backface-visibility:hidden]">
+                    <span className="mb-1 text-[8px] font-semibold text-violet uppercase">{t('walkthroughs.demo.french')}</span>
+                    <span className="text-lg font-bold text-foreground">{t('walkthroughs.demo.bonjour')}</span>
+                    <span className="mt-1 text-[8px] text-foreground-muted">{t('walkthroughs.demo.tapToFlip')}</span>
+                  </div>
+                  {/* Back */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center rounded-xl border border-cyan/20 bg-gradient-to-br from-cyan/[0.06] to-violet/[0.03] [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    <span className="mb-1 text-[8px] font-semibold text-cyan uppercase">{t('walkthroughs.demo.english')}</span>
+                    <span className="text-lg font-bold text-foreground">{t('walkthroughs.demo.hello')}</span>
+                  </div>
+                </motion.div>
+              ) : step === 2 ? (
+                <motion.div
+                  key="swipe"
+                  className="absolute inset-0 flex flex-col items-center justify-center rounded-xl border border-emerald-400/30 bg-gradient-to-br from-emerald-500/5 to-white/[0.02]"
+                  initial={{ x: 0, opacity: 1, rotate: 0 }}
+                  animate={{ x: 180, opacity: 0, rotate: 12 }}
+                  transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
+                >
+                  <span className="mb-1 text-[8px] font-semibold text-emerald-400">{t('walkthroughs.demo.gotIt')}</span>
+                  <span className="text-lg font-bold text-foreground">{t('walkthroughs.demo.hello')}</span>
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="next"
+                  className="absolute inset-0 flex flex-col items-center justify-center rounded-xl border border-glass-border bg-gradient-to-br from-white/[0.06] to-white/[0.02]"
+                  initial={{ scale: 0.9, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.4, type: 'spring', stiffness: 300, damping: 24 }}
+                >
+                  <span className="mb-1 text-[8px] font-semibold text-violet uppercase">{t('walkthroughs.demo.spanish')}</span>
+                  <span className="text-lg font-bold text-foreground">{t('walkthroughs.demo.gracias')}</span>
+                  <span className="mt-1 text-[8px] text-foreground-muted">{t('walkthroughs.demo.tapToFlip')}</span>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* Action buttons */}
+          <div className="mt-4 flex items-center justify-center gap-4">
+            <div className={cn(
+              'flex h-8 w-8 items-center justify-center rounded-full border transition-colors',
+              step === 2 ? 'border-red-400/20 bg-red-500/5' : 'border-glass-border bg-white/5',
+            )}>
+              <span className="text-xs text-foreground-muted">✗</span>
+            </div>
+            <div className="flex h-6 w-6 items-center justify-center rounded-full border border-glass-border bg-white/5">
+              <span className="text-[8px] text-foreground-muted">↻</span>
+            </div>
+            <div className={cn(
+              'flex h-8 w-8 items-center justify-center rounded-full border transition-colors',
+              step === 2 ? 'border-emerald-400/40 bg-emerald-500/10 shadow-[0_0_12px_rgba(16,185,129,0.2)]' : 'border-glass-border bg-white/5',
+            )}>
+              <span className={cn('text-xs', step === 2 ? 'text-emerald-400' : 'text-foreground-muted')}>✓</span>
+            </div>
+          </div>
+        </div>
+      </PhoneFrame>
+    </div>
+  );
+}
+
+function FlashcardStatic() {
+  const t = useTranslations('Features');
+  return (
+    <div className="relative aspect-[9/16] w-full bg-background p-4">
+      <div className="pt-6" />
+      <div className="mb-4 h-1 w-full overflow-hidden rounded-full bg-white/5">
+        <div className="h-full w-1/5 rounded-full bg-gradient-to-r from-violet to-cyan" />
+      </div>
+      <div className="mx-auto flex h-[55%] w-full flex-col items-center justify-center rounded-xl border border-glass-border bg-gradient-to-br from-white/[0.06] to-white/[0.02]">
+        <span className="mb-1 text-[8px] font-semibold text-violet uppercase">{t('walkthroughs.demo.french')}</span>
+        <span className="text-lg font-bold text-foreground">{t('walkthroughs.demo.bonjour')}</span>
+        <span className="mt-1 text-[8px] text-foreground-muted">{t('walkthroughs.demo.tapToFlip')}</span>
+      </div>
+    </div>
+  );
+}
+
+// ─── 2. Word Builder Animation ─────────────────────────────────────
+const LETTERS = ['H', 'E', 'L', 'L', 'O'];
+const SCRAMBLED = ['L', 'E', 'H', 'O', 'L'];
+const WORD_BUILDER_DURATION = 10000;
+
+export function WordBuilderAnimation() {
+  const reduced = useReducedMotion();
+  const t = useTranslations('Features');
+  const [placedCount, setPlacedCount] = useState(0);
+  const [complete, setComplete] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const elapsedRef = useRef(0);
+  const lastKeyRef = useRef('');
+
+  useEffect(() => {
+    if (reduced) return;
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([e]) => setVisible(e.isIntersecting),
+      { threshold: 0.4 },
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [reduced]);
+
+  useEffect(() => {
+    if (!visible || reduced) return;
+
+    const totalCycle = WORD_BUILDER_DURATION + LOOP_GAP;
+    const startTime = performance.now() - elapsedRef.current;
+    let rafId: number;
+
+    // Step timing: T+1500 per letter, complete at T+1500+5*900+400
+    function tick() {
+      const elapsed = performance.now() - startTime;
+      const t = elapsed % totalCycle;
+
+      let placed: number;
+      let comp: boolean;
+
+      if (t >= 9700) { placed = 0; comp = false; } // gap
+      else if (t >= 5900) { placed = 5; comp = true; }
+      else if (t >= 5100) { placed = 5; comp = false; }
+      else if (t >= 4200) { placed = 4; comp = false; }
+      else if (t >= 3300) { placed = 3; comp = false; }
+      else if (t >= 2400) { placed = 2; comp = false; }
+      else if (t >= 1500) { placed = 1; comp = false; }
+      else { placed = 0; comp = false; }
+
+      const key = `${placed}-${comp}`;
+      if (key !== lastKeyRef.current) {
+        lastKeyRef.current = key;
+        setPlacedCount(placed);
+        setComplete(comp);
+      }
+
+      rafId = requestAnimationFrame(tick);
+    }
+
+    rafId = requestAnimationFrame(tick);
+
+    return () => {
+      elapsedRef.current = performance.now() - startTime;
+      cancelAnimationFrame(rafId);
+    };
+  }, [visible, reduced]);
+
+  if (reduced) {
+    return (
+      <PhoneFrame>
+        <WordBuilderStatic />
+      </PhoneFrame>
+    );
+  }
+
+  return (
+    <div ref={ref}>
+      <PhoneFrame>
+        <div className="relative aspect-[9/16] w-full overflow-hidden bg-background p-4">
+          {/* Header */}
+          <div className="mb-2 pt-6 text-center">
+            <span className="text-[8px] font-semibold tracking-wider text-violet/60 uppercase">{t('walkthroughs.demo.wordBuilder')}</span>
+            <div className="mt-1 text-[9px] text-foreground-muted">{t('walkthroughs.demo.buildWord')}</div>
+          </div>
+
+          {/* Target slots */}
+          <div className="mx-auto mb-6 flex w-fit gap-1.5 pt-2">
+            {LETTERS.map((letter, i) => (
+              <motion.div
+                key={`slot-${i}`}
+                className={cn(
+                  'flex h-9 w-9 items-center justify-center rounded-lg border text-sm font-bold',
+                  i < placedCount
+                    ? complete
+                      ? 'border-emerald-400/40 bg-emerald-500/10 text-emerald-400'
+                      : 'border-violet/30 bg-violet/10 text-foreground'
+                    : 'border-dashed border-glass-border bg-white/[0.02] text-transparent',
+                )}
+                animate={
+                  complete && i < placedCount
+                    ? { scale: [1, 1.15, 1], transition: { delay: i * 0.06, duration: 0.3 } }
+                    : {}
+                }
+              >
+                {i < placedCount ? letter : '_'}
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Completion glow */}
+          <AnimatePresence>
+            {complete && (
+              <motion.div
+                initial={{ opacity: 0, y: 4 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                className="mb-4 text-center"
+              >
+                <span className="text-xs font-semibold text-emerald-400">{t('walkthroughs.demo.correct')}</span>
+                <div className="mt-0.5 text-[8px] text-foreground-muted">{t('walkthroughs.demo.xpReward')}</div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* Available tiles */}
+          <div className="mx-auto flex w-fit flex-wrap justify-center gap-1.5">
+            {SCRAMBLED.map((letter, i) => {
+              // Check if this tile has been "used" — find the first matching unused
+              const usedIndices: number[] = [];
+              for (let p = 0; p < placedCount; p++) {
+                const target = LETTERS[p];
+                const idx = SCRAMBLED.findIndex(
+                  (l, si) => l === target && !usedIndices.includes(si),
+                );
+                if (idx !== -1) usedIndices.push(idx);
+              }
+              const isUsed = usedIndices.includes(i);
+
+              return (
+                <motion.div
+                  key={`tile-${i}`}
+                  className={cn(
+                    'flex h-9 w-9 items-center justify-center rounded-lg border text-sm font-bold',
+                    isUsed
+                      ? 'border-glass-border/30 bg-white/[0.01] text-foreground-muted/20'
+                      : 'border-glass-border bg-white/5 text-foreground shadow-sm',
+                  )}
+                  animate={{ scale: isUsed ? 0.9 : 1, opacity: isUsed ? 0.3 : 1 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  {letter}
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </PhoneFrame>
+    </div>
+  );
+}
+
+function WordBuilderStatic() {
+  const t = useTranslations('Features');
+  return (
+    <div className="relative aspect-[9/16] w-full bg-background p-4">
+      <div className="mb-2 pt-6 text-center">
+        <span className="text-[8px] font-semibold text-violet/60 uppercase">{t('walkthroughs.demo.wordBuilder')}</span>
+        <div className="mt-1 text-[9px] text-foreground-muted">{t('walkthroughs.demo.buildWord')}</div>
+      </div>
+      <div className="mx-auto mb-6 flex w-fit gap-1.5 pt-2">
+        {LETTERS.map((letter, i) => (
+          <div key={i} className="flex h-9 w-9 items-center justify-center rounded-lg border border-violet/30 bg-violet/10 text-sm font-bold text-foreground">
+            {letter}
+          </div>
+        ))}
+      </div>
+      <div className="text-center text-xs font-semibold text-emerald-400">{t('walkthroughs.demo.correct')}</div>
+    </div>
+  );
+}
+
+// ─── 3. Soundscape Selection Animation ─────────────────────────────
+const SOUNDSCAPE_ITEMS: { nameKey: string; icon: ComponentType<IconProps>; catKey: string }[] = [
+  { nameKey: 'coffeeShop', icon: CoffeeShopIcon, catKey: 'cozy' },
+  { nameKey: 'oceanWaves', icon: OceanWavesIcon, catKey: 'nature' },
+  { nameKey: 'deepSpace', icon: DeepSpaceIcon, catKey: 'atmospheric' },
+  { nameKey: 'parisCafe', icon: ParisCafeIcon, catKey: 'travel' },
+  { nameKey: 'mountainStream', icon: MountainStreamIcon, catKey: 'nature' },
+];
+
+const SOUNDSCAPE_DURATION = 10000;
+
+export function SoundscapeAnimation() {
+  const reduced = useReducedMotion();
+  const t = useTranslations('Features');
+  const [selectedIdx, setSelectedIdx] = useState(-1);
+  const [showVisualiser, setShowVisualiser] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const elapsedRef = useRef(0);
+  const lastKeyRef = useRef('');
+
+  useEffect(() => {
+    if (reduced) return;
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([e]) => setVisible(e.isIntersecting),
+      { threshold: 0.4 },
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [reduced]);
+
+  useEffect(() => {
+    if (!visible || reduced) return;
+
+    const totalCycle = SOUNDSCAPE_DURATION + LOOP_GAP;
+    const startTime = performance.now() - elapsedRef.current;
+    let rafId: number;
+
+    function tick() {
+      const elapsed = performance.now() - startTime;
+      const t = elapsed % totalCycle;
+
+      let idx: number;
+      let vis: boolean;
+
+      if (t >= 9700) { idx = -1; vis = false; } // gap
+      else if (t >= 4800) { idx = 2; vis = true; }  // Deep Space selected + visualiser
+      else if (t >= 3600) { idx = 2; vis = false; } // browse to Deep Space
+      else if (t >= 2400) { idx = 1; vis = false; } // browse to Ocean Waves
+      else if (t >= 1200) { idx = 0; vis = false; } // browse to Coffee Shop
+      else { idx = -1; vis = false; }
+
+      const key = `${idx}-${vis}`;
+      if (key !== lastKeyRef.current) {
+        lastKeyRef.current = key;
+        setSelectedIdx(idx);
+        setShowVisualiser(vis);
+      }
+
+      rafId = requestAnimationFrame(tick);
+    }
+
+    rafId = requestAnimationFrame(tick);
+
+    return () => {
+      elapsedRef.current = performance.now() - startTime;
+      cancelAnimationFrame(rafId);
+    };
+  }, [visible, reduced]);
+
+  if (reduced) {
+    return (
+      <PhoneFrame>
+        <SoundscapeStatic />
+      </PhoneFrame>
+    );
+  }
+
+  return (
+    <div ref={ref}>
+      <PhoneFrame>
+        <div className="relative aspect-[9/16] w-full overflow-hidden bg-background p-4">
+          {/* Header */}
+          <div className="mb-3 pt-6 text-center">
+            <span className="text-[8px] font-semibold tracking-wider text-amber/60 uppercase">{t('walkthroughs.demo.soundscapes')}</span>
+            <div className="mt-1 text-[9px] text-foreground-muted">{t('walkthroughs.demo.findFocus')}</div>
+          </div>
+
+          {/* Soundscape list */}
+          <div className="flex flex-col gap-1.5">
+            {SOUNDSCAPE_ITEMS.slice(0, 4).map((sc, i) => (
+              <motion.div
+                key={sc.nameKey}
+                className={cn(
+                  'flex items-center gap-2.5 rounded-xl border px-3 py-2 transition-colors',
+                  i === selectedIdx
+                    ? 'border-violet/30 bg-violet/5'
+                    : 'border-glass-border/50 bg-white/[0.02]',
+                )}
+                animate={{
+                  scale: i === selectedIdx ? 1.02 : 1,
+                  borderColor: i === selectedIdx ? 'rgba(139,92,246,0.3)' : 'rgba(255,255,255,0.06)',
+                }}
+                transition={{ duration: 0.2 }}
+              >
+                <sc.icon size={20} className={cn(
+                  i === selectedIdx ? 'text-foreground' : 'text-foreground-muted',
+                )} aria-hidden />
+                <div className="flex-1">
+                  <div className={cn(
+                    'text-[10px] font-medium',
+                    i === selectedIdx ? 'text-foreground' : 'text-foreground-muted',
+                  )}>
+                    {t(`walkthroughs.demo.${sc.nameKey}` as any)}
+                  </div>
+                  <div className="text-[7px] text-foreground-muted/50">{t(`walkthroughs.demo.${sc.catKey}` as any)}</div>
+                </div>
+                {i === selectedIdx && showVisualiser && (
+                  <div className="flex items-end gap-[2px]">
+                    {[0.6, 1, 0.7, 0.4, 0.85].map((h, bi) => (
+                      <motion.div
+                        key={bi}
+                        className="w-[2px] rounded-full bg-violet"
+                        animate={{
+                          height: [h * 12, h * 6, h * 12],
+                        }}
+                        transition={{
+                          duration: 0.8 + bi * 0.1,
+                          repeat: Infinity,
+                          repeatType: 'mirror',
+                          delay: bi * 0.1,
+                        }}
+                        style={{ height: h * 12 }}
+                      />
+                    ))}
+                  </div>
+                )}
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Ambient visualiser overlay */}
+          <AnimatePresence>
+            {showVisualiser && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="mt-3 flex flex-col items-center gap-1"
+              >
+                <div className="text-[8px] font-semibold text-violet">{t('walkthroughs.demo.nowPlaying')}</div>
+                <div className="flex items-center gap-1 text-[10px] font-medium text-foreground">
+                  <DeepSpaceIcon size={14} aria-hidden /> {t('walkthroughs.demo.deepSpace')}
+                </div>
+                {/* Waveform visualiser */}
+                <div className="mt-1 flex items-end gap-[1.5px]">
+                  {Array.from({ length: 20 }).map((_, i) => (
+                    <motion.div
+                      key={i}
+                      className="w-[2px] rounded-full bg-gradient-to-t from-violet to-cyan"
+                      animate={{
+                        height: [
+                          4 + Math.sin(i * 0.8) * 6,
+                          8 + Math.cos(i * 0.5) * 8,
+                          4 + Math.sin(i * 0.8) * 6,
+                        ],
+                      }}
+                      transition={{
+                        duration: 1.2,
+                        repeat: Infinity,
+                        repeatType: 'mirror',
+                        delay: i * 0.05,
+                      }}
+                      style={{ height: 4 + Math.sin(i * 0.8) * 6 }}
+                    />
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      </PhoneFrame>
+    </div>
+  );
+}
+
+function SoundscapeStatic() {
+  const t = useTranslations('Features');
+  return (
+    <div className="relative aspect-[9/16] w-full bg-background p-4">
+      <div className="mb-3 pt-6 text-center">
+        <span className="text-[8px] font-semibold text-amber/60 uppercase">{t('walkthroughs.demo.soundscapes')}</span>
+        <div className="mt-1 text-[9px] text-foreground-muted">{t('walkthroughs.demo.findFocus')}</div>
+      </div>
+      <div className="flex flex-col gap-1.5">
+        {SOUNDSCAPE_ITEMS.slice(0, 4).map((sc, i) => (
+          <div
+            key={sc.nameKey}
+            className={cn(
+              'flex items-center gap-2.5 rounded-xl border px-3 py-2',
+              i === 2 ? 'border-violet/30 bg-violet/5' : 'border-glass-border/50 bg-white/[0.02]',
+            )}
+          >
+            <sc.icon size={20} className="text-foreground-muted" aria-hidden />
+            <div>
+              <div className="text-[10px] font-medium text-foreground-muted">{t(`walkthroughs.demo.${sc.nameKey}` as any)}</div>
+              <div className="text-[7px] text-foreground-muted/50">{t(`walkthroughs.demo.${sc.catKey}` as any)}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

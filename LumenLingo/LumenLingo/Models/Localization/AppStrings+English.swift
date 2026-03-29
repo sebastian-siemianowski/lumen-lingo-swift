@@ -6,7 +6,12 @@ extension AppStrings {
         tabHome: "Home",
         tabStats: "Stats",
         tabPremium: "Premium",
+        tabSettings: "Settings",
         tabProfile: "Profile",
+
+        // Settings Header
+        settingsHeaderTitle: "Preferences",
+        settingsHeaderSubtitle: "Personalize your experience",
 
         // Dashboard
         greeting: { "Hello, \($0)!" },
@@ -133,6 +138,7 @@ extension AppStrings {
         keepLearningEveryDay: "Keep learning every day to maintain your streak!",
 
         // Profile
+        account: "Account",
         appearance: "Appearance",
         sound: "Sound",
         sync: "Sync",
@@ -143,9 +149,12 @@ extension AppStrings {
         nebula: "Nebula",
         learner: "Learner",
         xp: "XP",
+        words: "Words",
+        activityCalendar: "Activity Calendar",
+        dayStreak: "day streak",
         darkMode: "Dark Mode",
-        cosmicDarkTheme: "Cosmic dark theme active",
-        lightModeActive: "Light mode active",
+        cosmicDarkTheme: "Cosmic Night",
+        lightModeActive: "Tropical Island",
         animationSpeed: "Animation Speed",
         slow: "Slow",
         normal: "Normal",
@@ -435,6 +444,131 @@ extension AppStrings {
         upgradeMessagePro: "You speak the language of progress — every lesson shapes your voice in the world.",
         upgradeMessageElite: "Your words carry the weight of dedication — excellence is becoming your mother tongue.",
         upgradeMessageRoyal: "You've crowned your journey with words — the language of legends is yours to command.",
-        upgradeMessageTrial: "A royal chapter begins — the full story of your linguistic potential awaits."
+        upgradeMessageTrial: "A royal chapter begins — the full story of your linguistic potential awaits.",
+        celebrationWelcomeTo: "Welcome to",
+        celebrationWelcomeBackTo: "Welcome back to",
+        celebrationContinue: "Continue",
+        celebrationFirstSubscription: "Thank you for subscribing!",
+
+        // MARK: - Subscription Onboarding (Story 7.3)
+        onboardingExploreTitle: "Your Premium Features",
+        onboardingTryIt: "Try It!",
+        onboardingExplore: "Explore",
+        onboardingNext: "Next",
+        onboardingSkip: "I'll explore on my own",
+        onboardingSummaryTitle: "You just unlocked",
+        onboardingSummaryFeatures: "new features",
+        onboardingWelcomeBack: "Welcome back! Here's what you have",
+        onboardingDone: "Let's Go!",
+
+        // MARK: - Value Framing (Story 7.4)
+        valueFramingTitle: "Your Investment",
+        valueFramingJust: "Just",
+        valueFramingPerDay: "/day",
+        valueFramingFeatures: "features",
+        valueFramingCoffeePro: "Less than your morning coffee",
+        valueFramingCoffeeElite: "Less than a sandwich",
+        valueFramingCoffeeRoyal: "Less than a lunch out",
+        valueFramingWordsLearned: "You've learned {count} words — that's just {cost} per word with {tier}",
+        valueFramingProjected: "Most learners master 300+ words in their first month",
+
+        // MARK: - Legal Consent
+        legalConsentTitle: "Before We Begin",
+        legalConsentSubtitle: "Please review our policies to continue using LumenLingo",
+        privacyPolicyTitle: "Privacy Policy",
+        termsOfServiceTitle: "Terms of Service",
+        legalVersion: "Version 2.3",
+        legalLastUpdated: "Last updated: 23 March 2026",
+        legalPrivacySummary: "LumenLingo is operated by LumenShore Ltd. We respect your privacy and are committed to protecting your personal data. This policy covers both our website and iOS app.",
+        legalTermsSummary: "These Terms of Service govern your use of the LumenLingo mobile application operated by LumenShore Ltd. By using LumenLingo, you agree to be bound by these Terms.",
+        legalPrivacyHighlight1: "Your learning data stays on your device and your personal iCloud account",
+        legalPrivacyHighlight2: "We use cookie-free Vercel Analytics — no tracking cookies on our website",
+        legalPrivacyHighlight3: "Sentry error monitoring helps us fix bugs (session replay requires consent)",
+        legalPrivacyHighlight4: "We never sell your personal data to third parties",
+        legalTermsHighlight1: "Free and premium tiers available — subscriptions managed through Apple",
+        legalTermsHighlight2: "Your content and learning progress belong to you",
+        legalTermsHighlight3: "We may use aggregated, anonymous data for product improvement",
+        legalTermsHighlight4: "Governed by the laws of England and Wales",
+        legalAcceptAll: "I Agree",
+        legalDecline: "Decline",
+        legalDeclineTitle: "Are you sure?",
+        legalDeclineMessage: "You must accept our Privacy Policy and Terms of Service to use LumenLingo.",
+        legalDeclineConfirm: "Decline & Exit",
+        legalReadFull: "Read Full Policy",
+        legalScrollToAccept: "Scroll to review",
+
+        // MARK: - Legal Re-consent
+        legalReconsentTitle: "We've updated our policies",
+        legalReconsentBody: "We've made changes to our Terms of Service and Privacy Policy. Please review and accept to continue.",
+        legalReconsentAccept: "I Accept",
+        legalReconsentDecline: "I Decline",
+
+        // MARK: - EULA
+        eulaTitle: "End-User Licence Agreement",
+        eulaSummary: "This licence agreement governs your use of the LumenLingo app, distributed through the Apple App Store by LumenShore Ltd.",
+        eulaHighlight1: "Non-exclusive, revocable licence for personal language learning",
+        eulaHighlight2: "Tier-based access — Free, Pro, Elite, and Royal memberships",
+        eulaHighlight3: "You own your learning data; we own the app content",
+        eulaHighlight4: "Apple-specific terms included per App Store requirements",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "Subscriptions auto-renew monthly unless cancelled at least 24 hours before the current period ends.",
+        subscriptionPaymentNotice: "Payment is charged to your Apple ID at confirmation of purchase.",
+        subscriptionManageCancel: "Manage or cancel in Settings → Apple ID → Subscriptions.",
+        subscriptionTrialNotice: "14-day Royal trial at no charge. Downgrades to Free after trial ends.",
+        restorePurchases: "Restore Purchases",
+        subscriptionLegalPrefix: "By subscribing, you agree to our",
+        subscriptionLegalAnd: "and",
+
+        // MARK: - Subscription Compliance (CCR 2013 / CRD)
+        subscriptionTraderInfo: "Provided by LumenShore Limited, registered in England & Wales (#09607326). VAT: GB 270411929.",
+        subscriptionCoolingOff: "By purchasing, you consent to immediate access to digital content and acknowledge that this waives your 14-day cooling-off right under the Consumer Contracts Regulations 2013.",
+        subscriptionRefundNotice: "Refunds are processed by Apple. To request a refund, visit reportaproblem.apple.com.",
+        subscriptionContractDuration: "Monthly rolling contract. No minimum commitment.",
+        subscriptionEUConsumerRights: "Your rights under the EU Consumer Rights Directive (2011/83/EU) and UK Consumer Contracts Regulations 2013 are fully respected. Pre-contractual information, right of withdrawal, and prohibition of hidden charges all apply.",
+        subscriptionCancelSteps: "To cancel: open Settings > tap your name > Subscriptions > LumenLingo > Cancel Subscription. Cancellation takes effect at the end of the current billing period.",
+        subscriptionVATNotice: "Prices include applicable taxes. All purchases are processed and billed by Apple. Actual price may vary by region and currency.",
+
+        // MARK: - Account Deletion
+        deleteAccount: "Delete Account",
+        deleteAccountWarning: "This will permanently delete all your learning data, progress, streaks, and preferences. This action cannot be undone.",
+        deleteAccountConfirm: "Delete Everything",
+        deletingAccount: "Deleting account…",
+        clearingUserData: "Clearing user data",
+        accountDeleted: "Account deleted",
+
+        // MARK: - GDPR Data Export
+        gdprExportTitle: "Export My Data",
+        gdprExportDesc: "Download all your personal data as a machine-readable JSON file. This is your right under GDPR Article 20 — free for all users.",
+        gdprExportButton: "Export Personal Data",
+        gdprExportSuccess: "Data exported successfully",
+        gdprExportEmpty: "No personal data to export",
+
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+
+        companyName: "Lumenshore Limited",
+        companyNumber: "Company No. 09607326",
+        companyRegistration: "Registered in England and Wales",
+        companyAddress: "Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+        companyVAT: "VAT: GB 270411929",
+
+        cookiePolicyTitle: "Cookie Policy",
+        cookieSummary: "This policy explains what cookies, local storage, and similar technologies the LumenLingo website uses, why we use them, and how you can control them.",
+        cookieHighlight1: "Only one strictly necessary cookie for your consent preference",
+        cookieHighlight2: "No advertising or social-media tracking cookies — ever",
+        cookieHighlight3: "Sentry for error monitoring; Vercel Analytics for performance",
+        cookieHighlight4: "Global Privacy Control and Do Not Track signals are honoured",
+        legalUpdated: "Updated March 2025",
+
+        viewMyDataTitle: "View My Data",
+        viewMyDataDesc: "See what data LumenLingo stores about you",
+        dataProfileInfo: "Profile Information",
+        dataGameRecords: "Game Progress Records",
+        dataMasteredItems: "Mastered Items",
+        dataFavorites: "Favourite Categories",
+        dataICloudSync: "iCloud Sync",
+        dataEnabled: "Enabled",
+        dataDisabled: "Disabled",
+        dataStorageEstimate: "Estimated Storage"
     )
 }

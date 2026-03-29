@@ -54,7 +54,7 @@ final class PerformanceMonitor {
 }
 
 /// Bridging class for CADisplayLink target (avoids retain cycle with @Observable).
-private class DisplayLinkTarget: NSObject {
+private class DisplayLinkTarget: NSObject, @unchecked Sendable {
     weak var monitor: PerformanceMonitor?
 
     init(monitor: PerformanceMonitor) {
@@ -62,8 +62,9 @@ private class DisplayLinkTarget: NSObject {
     }
 
     @objc func tick(_ link: CADisplayLink) {
-        Task { @MainActor in
-            monitor?.handleTick(link.timestamp)
+        let timestamp = link.timestamp
+        Task { @MainActor [weak self] in
+            self?.monitor?.handleTick(timestamp)
         }
     }
 }

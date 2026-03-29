@@ -6,7 +6,12 @@ extension AppStrings {
         tabHome: "首页",
         tabStats: "统计",
         tabPremium: "高级版",
+        tabSettings: "设置",
         tabProfile: "个人资料",
+
+        // Settings Header
+        settingsHeaderTitle: "偏好设置",
+        settingsHeaderSubtitle: "打造专属体验",
 
         // Dashboard
         greeting: { "你好，\($0)！" },
@@ -133,6 +138,7 @@ extension AppStrings {
         keepLearningEveryDay: "每天坚持学习以保持你的连续记录！",
 
         // Profile
+        account: "账户",
         appearance: "外观",
         sound: "声音",
         sync: "同步",
@@ -143,9 +149,12 @@ extension AppStrings {
         nebula: "星云",
         learner: "学习者",
         xp: "XP",
+        words: "单词",
+        activityCalendar: "活动日历",
+        dayStreak: "天连续",
         darkMode: "深色模式",
-        cosmicDarkTheme: "宇宙深色主题已启用",
-        lightModeActive: "浅色模式已启用",
+        cosmicDarkTheme: "宇宙夜晚",
+        lightModeActive: "热带岛屿",
         animationSpeed: "动画速度",
         slow: "慢速",
         normal: "正常",
@@ -431,6 +440,132 @@ extension AppStrings {
         upgradeMessagePro: "你说着进步的语言——每一课都在塑造你在世界上的声音。",
         upgradeMessageElite: "你的文字承载着奉献的力量——卓越正成为你的母语。",
         upgradeMessageRoyal: "你用文字为旅程加冕——传奇的语言由你掌控。",
-        upgradeMessageTrial: "皇家篇章开启——你语言潜能的完整故事正等待着你。"
+        upgradeMessageTrial: "皇家篇章开启——你语言潜能的完整故事正等待着你。",
+        celebrationWelcomeTo: "欢迎来到",
+        celebrationWelcomeBackTo: "欢迎回到",
+        celebrationContinue: "继续",
+        celebrationFirstSubscription: "感谢您的订阅！",
+
+        // MARK: - Subscription Onboarding (Story 7.3)
+        onboardingExploreTitle: "您的高级功能",
+        onboardingTryIt: "立即体验！",
+        onboardingExplore: "探索",
+        onboardingNext: "下一步",
+        onboardingSkip: "我自己探索",
+        onboardingSummaryTitle: "您刚刚解锁了",
+        onboardingSummaryFeatures: "项新功能",
+        onboardingWelcomeBack: "欢迎回来！这是您的功能",
+        onboardingDone: "开始吧！",
+
+        // MARK: - Value Framing (Story 7.4)
+        valueFramingTitle: "您的投资",
+        valueFramingJust: "仅需",
+        valueFramingPerDay: "/天",
+        valueFramingFeatures: "项功能",
+        valueFramingCoffeePro: "比一杯早晨咖啡还便宜",
+        valueFramingCoffeeElite: "比一个三明治还便宜",
+        valueFramingCoffeeRoyal: "比一顿午餐还便宜",
+        valueFramingWordsLearned: "您已学习了{count}个单词 — 使用{tier}每个单词仅需{cost}",
+        valueFramingProjected: "大多数学习者在第一个月就能掌握300多个单词",
+
+        // MARK: - Legal Consent
+        legalConsentTitle: "开始之前",
+        legalConsentSubtitle: "请查看我们的政策以继续使用 LumenLingo",
+        privacyPolicyTitle: "隐私政策",
+        termsOfServiceTitle: "服务条款",
+        legalVersion: "版本 2.3",
+        legalLastUpdated: "最后更新：2026年3月23日",
+        legalPrivacySummary: "LumenLingo 由 LumenShore Ltd 运营。我们尊重您的隐私并致力于保护您的个人数据。本政策涵盖我们的网站和 iOS 应用程序。",
+        legalTermsSummary: "本服务条款管辖您对 LumenShore Ltd 运营的 LumenLingo 移动应用程序的使用。使用 LumenLingo 即表示您同意这些条款。",
+        legalPrivacyHighlight1: "您的学习数据保存在您的设备和个人 iCloud 账户中",
+        legalPrivacyHighlight2: "我们使用无 Cookie 的 Vercel Analytics — 网站上没有跟踪 Cookie",
+        legalPrivacyHighlight3: "Sentry 帮助我们修复错误（会话回放需要同意）",
+        legalPrivacyHighlight4: "我们从不向第三方出售您的个人数据",
+        legalTermsHighlight1: "提供免费和高级层级 — 订阅通过 Apple 管理",
+        legalTermsHighlight2: "您的内容和学习进度属于您",
+        legalTermsHighlight3: "我们可能使用聚合的匿名数据来改进产品",
+        legalTermsHighlight4: "受英格兰和威尔士法律管辖",
+        legalAcceptAll: "我同意",
+        legalDecline: "拒绝",
+        legalDeclineTitle: "确定吗？",
+        legalDeclineMessage: "您必须接受我们的隐私政策和服务条款才能使用 LumenLingo。",
+        legalDeclineConfirm: "拒绝并退出",
+        legalReadFull: "阅读完整政策",
+        legalScrollToAccept: "滚动查看",
+
+        // MARK: - Legal Re-consent
+        legalReconsentTitle: "我们已更新政策",
+        legalReconsentBody: "我们对服务条款和隐私政策进行了更改。请查看并接受以继续使用。",
+        legalReconsentAccept: "我接受",
+        legalReconsentDecline: "我拒绝",
+
+        // MARK: - EULA
+        eulaTitle: "最终用户许可协议",
+        eulaSummary: "本许可协议管理您对 LumenLingo 应用程序的使用，该应用由 LumenShore Ltd 通过 Apple App Store 分发。",
+        eulaHighlight1: "用于个人语言学习的非独占性、可撤销许可",
+        eulaHighlight2: "分级访问 — 免费、Pro、Elite 和 Royal 会员",
+        eulaHighlight3: "您拥有您的学习数据；我们拥有应用内容",
+        eulaHighlight4: "包含符合 App Store 要求的 Apple 特定条款",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "订阅每月自动续订，除非在当前期间结束前至少24小时取消。",
+        subscriptionPaymentNotice: "确认购买时，费用将从您的 Apple ID 账户扣除。",
+        subscriptionManageCancel: "在「设置」→ Apple ID →「订阅」中管理或取消。",
+        subscriptionTrialNotice: "14天Royal免费试用。试用结束后将降级为免费版。",
+        restorePurchases: "恢复购买",
+        subscriptionLegalPrefix: "订阅即表示您同意我们的",
+        subscriptionLegalAnd: "和"
+,
+
+        // MARK: - Subscription Compliance (CCR 2013 / CRD)
+        subscriptionTraderInfo: "由 LumenShore Limited 提供，注册于英格兰和威尔士（#09607326）。增值税号：GB 270411929。",
+        subscriptionCoolingOff: "购买即表示您同意立即访问数字内容，并确认放弃14天冷静期退款权利。",
+        subscriptionRefundNotice: "退款由 Apple 处理。如需申请退款，请访问 reportaproblem.apple.com。",
+        subscriptionContractDuration: "按月自动续订合约，无最低承诺期。",
+        subscriptionEUConsumerRights: "您根据欧盟消费者权利指令(2011/83/EU)和英国2013年消费者合同规定享有的权利得到充分尊重。合同前信息、撤回权和禁止隐藏收费均适用。",
+        subscriptionCancelSteps: "取消方法：打开设置 > 点击您的姓名 > 订阅 > LumenLingo > 取消订阅。取消将在当前计费周期结束时生效。",
+        subscriptionVATNotice: "价格包含适用税费。所有购买均由Apple处理和计费。实际价格可能因地区和货币而异。",
+
+        // MARK: - Account Deletion
+        deleteAccount: "删除账户",
+        deleteAccountWarning: "这将永久删除所有学习数据、进度、连续记录和偏好设置。此操作无法撤销。",
+        deleteAccountConfirm: "删除所有内容",
+        deletingAccount: "正在删除账户…",
+        clearingUserData: "正在清除用户数据",
+        accountDeleted: "账户已删除",
+
+        // MARK: - GDPR Data Export
+        gdprExportTitle: "导出我的数据",
+        gdprExportDesc: "将您的所有个人数据下载为机器可读的JSON文件。这是您根据GDPR第20条享有的权利——所有用户免费。",
+        gdprExportButton: "导出个人数据",
+        gdprExportSuccess: "数据导出成功",
+        gdprExportEmpty: "没有可导出的个人数据",
+
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+
+        companyName: "Lumenshore Limited",
+        companyNumber: "公司编号 09607326",
+        companyRegistration: "注册于英格兰和威尔士",
+        companyAddress: "Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+        companyVAT: "增值税登记号：GB 270411929",
+
+        cookiePolicyTitle: "Cookie 政策",
+        cookieSummary: "本政策说明LumenLingo网站使用了哪些Cookie、本地存储和类似技术，我们为何使用这些技术，以及您如何控制它们。",
+        cookieHighlight1: "仅一个严格必要的Cookie用于保存您的同意偏好",
+        cookieHighlight2: "绝不使用任何广告或社交媒体追踪Cookie",
+        cookieHighlight3: "使用Sentry进行错误监控，使用Vercel Analytics进行性能分析",
+        cookieHighlight4: "尊重Global Privacy Control和Do Not Track信号",
+        legalUpdated: "2025年3月更新",
+
+        viewMyDataTitle: "查看我的数据",
+        viewMyDataDesc: "查看 LumenLingo 存储的关于您的数据",
+        dataProfileInfo: "个人资料信息",
+        dataGameRecords: "游戏进度记录",
+        dataMasteredItems: "已掌握项目",
+        dataFavorites: "收藏分类",
+        dataICloudSync: "iCloud 同步",
+        dataEnabled: "已启用",
+        dataDisabled: "已禁用",
+        dataStorageEstimate: "预计存储空间"
     )
 }

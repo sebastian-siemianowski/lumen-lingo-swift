@@ -293,11 +293,11 @@
 // APPLE DEVELOPER SETUP:
 //
 // 1. Enroll: $99/year at developer.apple.com/programs
-// 2. Create App ID: com.lumenlingo.app
+// 2. Create App ID: com.lumenshore.lumenlingo
 //    Enable: In-App Purchase, Push Notifications, iCloud
 // 3. App Store Connect: Create app record
 //    Name: LumenLingo - Language Learning
-//    Bundle ID: com.lumenlingo.app
+//    Bundle ID: com.lumenshore.lumenlingo
 // 4. App Store Listing:
 //    - Subtitle: Master Languages Through Games
 //    - Description: 500 words highlighting features

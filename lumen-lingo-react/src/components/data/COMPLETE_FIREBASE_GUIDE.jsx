@@ -510,7 +510,7 @@ APPLE DEVELOPER SETUP:
 
 2. Create App ID
    Go to Certificates Identifiers Profiles
-   Bundle ID: com.lumenlingo.app
+   Bundle ID: com.lumenshore.lumenlingo
    Enable: In-App Purchase Push Notifications iCloud
 
 3. App Store Connect
@@ -518,7 +518,7 @@ APPLE DEVELOPER SETUP:
    Create New App
    Platform: iOS
    Name: LumenLingo
-   Bundle ID: com.lumenlingo.app
+   Bundle ID: com.lumenshore.lumenlingo
 
 4. App Store Listing
    Name: LumenLingo Language Learning

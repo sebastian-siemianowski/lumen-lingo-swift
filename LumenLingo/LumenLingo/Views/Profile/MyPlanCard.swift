@@ -4,6 +4,7 @@ import SwiftUI
 
 /// A "My Plan" summary card for the Profile page showing the user's
 /// current tier, top features, and an expandable full feature list.
+/// Rendered inside a parent CollapsibleSection that provides the header.
 struct MyPlanCard: View {
     @Environment(TierManager.self) private var tierManager
     @Environment(\.colorScheme) private var colorScheme
@@ -15,17 +16,17 @@ struct MyPlanCard: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            // Header row
-            headerRow
-                .padding(.bottom, 14)
+            // Tier hero badge — compact, elegant
+            tierHeroBadge
+                .padding(.bottom, 16)
 
-            // Full feature list (always visible — parent CollapsibleSection manages expand/collapse)
-            allFeaturesSection
+            // Feature grid
+            featureGrid
 
-            // Upgrade link (only if not Royal)
+            // Upgrade CTA (only if not Royal / Trial)
             if tier != .royal && tier != .trial {
-                upgradeLink
-                    .padding(.top, 14)
+                upgradeBanner
+                    .padding(.top, 16)
             }
         }
         .padding(16)
@@ -39,28 +40,52 @@ struct MyPlanCard: View {
         }
     }
 
-    // MARK: - Header
+    // MARK: - Tier Hero Badge
 
-    private var headerRow: some View {
-        HStack(spacing: 12) {
-            // Tier icon with gradient glow
+    private var tierHeroBadge: some View {
+        HStack(spacing: 14) {
+            // Glowing tier icon
             ZStack {
+                // Outer glow ring
                 Circle()
                     .fill(
                         RadialGradient(
                             colors: [
-                                tier.gradientColors.first?.opacity(0.3) ?? .purple.opacity(0.3),
+                                tier.gradientColors.first?.opacity(0.25) ?? .clear,
                                 .clear
                             ],
                             center: .center,
-                            startRadius: 5,
-                            endRadius: 22
+                            startRadius: 8,
+                            endRadius: 28
                         )
                     )
-                    .frame(width: 44, height: 44)
+                    .frame(width: 52, height: 52)
+
+                // Glass circle
+                Circle()
+                    .fill(
+                        isDark
+                            ? AnyShapeStyle(Color.white.opacity(0.06))
+                            : AnyShapeStyle(LinearGradient(
+                                colors: tier.gradientColors.map { $0.opacity(0.08) },
+                                startPoint: .topLeading, endPoint: .bottomTrailing
+                            ))
+                    )
+                    .frame(width: 42, height: 42)
+                    .overlay(
+                        Circle()
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: tier.gradientColors.map { $0.opacity(isDark ? 0.3 : 0.25) },
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 1
+                            )
+                    )
 
                 Image(systemName: tier.iconName)
-                    .font(.system(size: 18, weight: .bold))
+                    .font(.system(size: 17, weight: .bold))
                     .foregroundStyle(
                         LinearGradient(
                             colors: tier.gradientColors,
@@ -70,13 +95,9 @@ struct MyPlanCard: View {
                     )
             }
 
-            VStack(alignment: .leading, spacing: 2) {
-                Text("My Plan")
-                    .font(.system(size: 12, weight: .medium))
-                    .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
-
+            VStack(alignment: .leading, spacing: 3) {
                 Text(tier.displayName)
-                    .font(.system(size: 17, weight: .bold))
+                    .font(.system(size: 18, weight: .bold, design: .rounded))
                     .foregroundStyle(
                         LinearGradient(
                             colors: tier.gradientColors,
@@ -84,11 +105,19 @@ struct MyPlanCard: View {
                             endPoint: .trailing
                         )
                     )
+
+                // Feature count summary
+                let features = tierManager.allFeatures()
+                let enabledCount = features.filter(\.enabled).count
+                let totalCount = features.count
+                Text("\(enabledCount) of \(totalCount) features unlocked")
+                    .font(.system(size: 11, weight: .medium))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .secondary)
             }
 
             Spacer()
 
-            // Trial countdown badge if applicable
+            // Trial badge
             if tier == .trial {
                 trialBadge
             }
@@ -116,80 +145,153 @@ struct MyPlanCard: View {
         )
     }
 
-    // MARK: - Full Feature List
+    // MARK: - Feature Grid
 
-    private var allFeaturesSection: some View {
+    private var featureGrid: some View {
         let features = tierManager.allFeatures()
 
-        return VStack(spacing: 6) {
-            GlassDivider()
-                .padding(.bottom, 6)
+        return VStack(spacing: 0) {
+            // Subtle divider
+            Rectangle()
+                .fill(
+                    LinearGradient(
+                        colors: [
+                            .clear,
+                            tier.gradientColors.first?.opacity(isDark ? 0.2 : 0.15) ?? .clear,
+                            .clear
+                        ],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .frame(height: 0.5)
+                .padding(.bottom, 12)
 
-            ForEach(features, id: \.feature) { item in
+            ForEach(Array(features.enumerated()), id: \.element.feature) { index, item in
                 featureRow(
                     icon: item.feature.iconName,
                     name: item.feature.displayName,
+                    subtitle: item.feature.benefitText,
                     enabled: item.enabled,
-                    count: item.enabled ? tierManager.allowedCount(for: item.feature) : 0
+                    index: index
                 )
+
+                if index < features.count - 1 {
+                    Rectangle()
+                        .fill(isDark ? Color.white.opacity(0.03) : Color.black.opacity(0.03))
+                        .frame(height: 0.5)
+                        .padding(.leading, 42)
+                }
             }
         }
-        .transition(.asymmetric(
-            insertion: .opacity.combined(with: .move(edge: .top)),
-            removal: .opacity
-        ))
     }
 
     // MARK: - Feature Row
 
-    private func featureRow(icon: String, name: String, enabled: Bool, count: Int) -> some View {
-        HStack(spacing: 10) {
-            Image(systemName: icon)
-                .font(.system(size: 12, weight: .semibold))
-                .foregroundStyle(enabled ? tier.accentColor : .gray.opacity(0.5))
-                .frame(width: 20)
+    private func featureRow(icon: String, name: String, subtitle: String, enabled: Bool, index: Int) -> some View {
+        HStack(spacing: 12) {
+            // Icon in a tinted circle
+            ZStack {
+                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                    .fill(
+                        enabled
+                            ? (isDark
+                                ? AnyShapeStyle(tier.accentColor.opacity(0.12))
+                                : AnyShapeStyle(LinearGradient(
+                                    colors: tier.gradientColors.map { $0.opacity(0.08) },
+                                    startPoint: .topLeading, endPoint: .bottomTrailing
+                                )))
+                            : AnyShapeStyle(isDark ? Color.white.opacity(0.04) : Color.black.opacity(0.03))
+                    )
+                    .frame(width: 30, height: 30)
 
-            Text(name)
-                .font(.system(size: 13, weight: .medium))
-                .foregroundStyle(
-                    enabled
-                        ? (isDark ? .white.opacity(0.85) : .primary)
-                        : (isDark ? .white.opacity(0.3) : .secondary.opacity(0.6))
-                )
+                Image(systemName: icon)
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(
+                        enabled
+                            ? (isDark ? AnyShapeStyle(tier.accentColor) : AnyShapeStyle(LinearGradient(
+                                colors: tier.gradientColors,
+                                startPoint: .topLeading, endPoint: .bottomTrailing
+                            )))
+                            : AnyShapeStyle(isDark ? Color.white.opacity(0.2) : Color.gray.opacity(0.4))
+                    )
+            }
 
-            Spacer()
+            VStack(alignment: .leading, spacing: 1) {
+                Text(name)
+                    .font(.system(size: 13, weight: .semibold, design: .rounded))
+                    .foregroundStyle(
+                        enabled
+                            ? (isDark ? .white.opacity(0.9) : .primary)
+                            : (isDark ? .white.opacity(0.3) : .secondary.opacity(0.5))
+                    )
 
+                Text(subtitle)
+                    .font(.system(size: 10, weight: .regular))
+                    .foregroundStyle(isDark ? .white.opacity(0.25) : .secondary.opacity(0.5))
+                    .lineLimit(1)
+            }
+
+            Spacer(minLength: 4)
+
+            // Status indicator
             if enabled {
                 Image(systemName: "checkmark.circle.fill")
-                    .font(.system(size: 14))
-                    .foregroundStyle(.green)
+                    .font(.system(size: 16))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: isDark
+                                ? [Color.green.opacity(0.9), Color.green.opacity(0.7)]
+                                : [Color(hex: "10B981"), Color(hex: "06B6D4")],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
             } else {
-                Image(systemName: "lock.fill")
-                    .font(.system(size: 11))
-                    .foregroundStyle(.gray.opacity(0.5))
+                Image(systemName: "lock.circle.fill")
+                    .font(.system(size: 16))
+                    .foregroundStyle(isDark ? Color.white.opacity(0.12) : Color.gray.opacity(0.25))
             }
         }
-        .padding(.vertical, 4)
+        .padding(.vertical, 8)
     }
 
-    // MARK: - Upgrade Link
+    // MARK: - Upgrade Banner
 
-    private var upgradeLink: some View {
+    private var upgradeBanner: some View {
         NavigationLink {
             MembershipView()
         } label: {
-            HStack(spacing: 6) {
-                Image(systemName: "arrow.up.circle.fill")
-                    .font(.system(size: 13))
-                Text("Upgrade")
-                    .font(.system(size: 13, weight: .medium))
+            HStack(spacing: 8) {
+                Image(systemName: "sparkles")
+                    .font(.system(size: 13, weight: .semibold))
+
+                Text("Unlock More Features")
+                    .font(.system(size: 13, weight: .semibold, design: .rounded))
+
+                Spacer()
+
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(.white.opacity(0.7))
             }
-            .foregroundStyle(
-                LinearGradient(
-                    colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
-                    startPoint: .leading,
-                    endPoint: .trailing
-                )
+            .foregroundStyle(.white)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(
+                        LinearGradient(
+                            colors: [Color(hex: "#a855f7"), Color(hex: "#ec4899")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .shadow(
+                        color: Color(hex: "#a855f7").opacity(isDark ? 0.3 : 0.15),
+                        radius: 8,
+                        y: 4
+                    )
             )
         }
         .buttonStyle(.plain)
@@ -201,7 +303,7 @@ struct MyPlanCard: View {
         RoundedRectangle(cornerRadius: 16)
             .fill(
                 LinearGradient(
-                    colors: tier.gradientColors.map { $0.opacity(0.08) },
+                    colors: tier.gradientColors.map { $0.opacity(isDark ? 0.06 : 0.04) },
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
                 )
@@ -209,7 +311,11 @@ struct MyPlanCard: View {
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
                     .strokeBorder(
-                        tier.gradientColors.first?.opacity(isDark ? 0.15 : 0.20) ?? .clear,
+                        LinearGradient(
+                            colors: tier.gradientColors.map { $0.opacity(isDark ? 0.12 : 0.10) },
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
                         lineWidth: 0.5
                     )
             )

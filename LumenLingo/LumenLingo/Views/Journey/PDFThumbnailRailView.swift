@@ -110,14 +110,12 @@ struct PDFThumbnailRailView: View {
     private func generateThumbnails() {
         let doc = document
         let count = pageCount
-        Task.detached(priority: .userInitiated) {
+        Task {
             for i in 0..<count {
                 autoreleasepool {
                     guard let page = doc.page(at: i) else { return }
                     let thumb = page.thumbnail(of: CGSize(width: 80, height: 104), for: .mediaBox)
-                    Task { @MainActor in
-                        thumbnails[i] = thumb
-                    }
+                    thumbnails[i] = thumb
                 }
             }
         }

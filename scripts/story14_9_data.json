@@ -1,0 +1,102 @@
+{
+  "en": {
+    "claimsLimitation": {
+      "heading": "Limitation Period for Claims",
+      "p1": "Any claim arising out of or relating to these Terms or the Service must be commenced within ONE (1) YEAR after the date the claim arose.",
+      "p2": "Failure to bring a claim within this period constitutes a permanent waiver of that claim.",
+      "p3": "To the extent this limitation period is unenforceable in your jurisdiction, the shortest limitation period permitted by applicable law shall apply.",
+      "p4": "This limitation period does not apply to claims for personal injury or claims arising from fraud or intentional misconduct, which shall be governed by the applicable statutory limitation periods.",
+      "p5": "The limitation period begins when the claimant knew or reasonably should have known of the claim, but in no event more than TWO (2) YEARS after the act or omission giving rise to the claim."
+    }
+  },
+  "es": {
+    "claimsLimitation": {
+      "heading": "Periodo de Prescripcion para Reclamaciones",
+      "p1": "Cualquier reclamacion derivada de o relacionada con estos Terminos o el Servicio debe iniciarse dentro del plazo de UN (1) ANO desde la fecha en que surgio la reclamacion.",
+      "p2": "La falta de presentacion de una reclamacion dentro de este periodo constituye una renuncia permanente a dicha reclamacion.",
+      "p3": "En la medida en que este periodo de prescripcion no sea ejecutable en su jurisdiccion, se aplicara el periodo de prescripcion mas corto permitido por la legislacion aplicable.",
+      "p4": "Este periodo de prescripcion no se aplica a reclamaciones por lesiones personales ni a reclamaciones derivadas de fraude o conducta intencional, que se regiran por los plazos de prescripcion legales aplicables.",
+      "p5": "El periodo de prescripcion comienza cuando el reclamante conocio o razonablemente debio haber conocido la reclamacion, pero en ningun caso mas de DOS (2) ANOS despues del acto u omision que dio origen a la reclamacion."
+    }
+  },
+  "fr": {
+    "claimsLimitation": {
+      "heading": "Delai de Prescription des Reclamations",
+      "p1": "Toute reclamation decoulant des presentes Conditions ou du Service ou s'y rapportant doit etre introduite dans un delai d'UN (1) AN a compter de la date a laquelle la reclamation est nee.",
+      "p2": "Le defaut d'introduire une reclamation dans ce delai constitue une renonciation definitive a cette reclamation.",
+      "p3": "Dans la mesure ou ce delai de prescription est inapplicable dans votre juridiction, le delai de prescription le plus court autorise par la loi applicable s'appliquera.",
+      "p4": "Ce delai de prescription ne s'applique pas aux reclamations pour dommages corporels ni aux reclamations resultant de fraude ou de faute intentionnelle, qui sont soumises aux delais de prescription legaux applicables.",
+      "p5": "Le delai de prescription commence lorsque le reclamant a eu connaissance ou aurait raisonnablement du avoir connaissance de la reclamation, mais en aucun cas plus de DEUX (2) ANS apres l'acte ou l'omission a l'origine de la reclamation."
+    }
+  },
+  "de": {
+    "claimsLimitation": {
+      "heading": "Verjaehrungsfrist fuer Ansprueche",
+      "p1": "Jeder Anspruch, der sich aus diesen Bedingungen oder dem Dienst ergibt oder damit zusammenhaengt, muss innerhalb von EINEM (1) JAHR nach dem Datum geltend gemacht werden, an dem der Anspruch entstanden ist.",
+      "p2": "Das Versaeumnis, einen Anspruch innerhalb dieses Zeitraums geltend zu machen, stellt einen dauerhaften Verzicht auf diesen Anspruch dar.",
+      "p3": "Soweit diese Verjaehrungsfrist in Ihrer Rechtsordnung nicht durchsetzbar ist, gilt die kuerzeste durch geltendes Recht zulaessige Verjaehrungsfrist.",
+      "p4": "Diese Verjaehrungsfrist gilt nicht fuer Ansprueche wegen Personenschaeden oder Ansprueche aus Betrug oder vorsaetzlichem Fehlverhalten, fuer die die gesetzlichen Verjaehrungsfristen gelten.",
+      "p5": "Die Verjaehrungsfrist beginnt, wenn der Anspruchsteller den Anspruch kannte oder vernuenftigerweise haette kennen muessen, jedoch in keinem Fall mehr als ZWEI (2) JAHRE nach der den Anspruch begruendenden Handlung oder Unterlassung."
+    }
+  },
+  "ja": {
+    "claimsLimitation": {
+      "heading": "請求の出訴期限",
+      "p1": "本規約または本サービスに起因または関連するいかなる請求も、請求が発生した日から1（一）年以内に提起されなければなりません。",
+      "p2": "この期間内に請求を提起しなかった場合、当該請求の永久的な放棄とみなされます。",
+      "p3": "この出訴期限がお客様の法域において執行不能である場合、適用法が許容する最短の出訴期限が適用されます。",
+      "p4": "この出訴期限は、人身傷害に関する請求、または詐欺もしくは故意の不正行為に起因する請求には適用されず、これらは適用される法定の出訴期限に従うものとします。",
+      "p5": "出訴期限は、請求者が請求を知った時点、または合理的に知り得べきであった時点から開始しますが、いかなる場合も請求の原因となった行為または不作為から2（二）年を超えないものとします。"
+    }
+  },
+  "pt": {
+    "claimsLimitation": {
+      "heading": "Prazo de Prescricao para Reclamacoes",
+      "p1": "Qualquer reclamacao decorrente de ou relacionada com estes Termos ou o Servico deve ser iniciada dentro de UM (1) ANO apos a data em que a reclamacao surgiu.",
+      "p2": "A nao apresentacao de uma reclamacao dentro deste prazo constitui uma renuncia permanente a essa reclamacao.",
+      "p3": "Na medida em que este prazo de prescricao nao seja aplicavel na sua jurisdicao, aplicar-se-a o prazo de prescricao mais curto permitido pela legislacao aplicavel.",
+      "p4": "Este prazo de prescricao nao se aplica a reclamacoes por danos pessoais nem a reclamacoes decorrentes de fraude ou conduta intencional, que serao regidas pelos prazos de prescricao legais aplicaveis.",
+      "p5": "O prazo de prescricao comeca quando o reclamante tomou conhecimento ou razoavelmente deveria ter tomado conhecimento da reclamacao, mas em caso algum mais de DOIS (2) ANOS apos o ato ou omissao que deu origem a reclamacao."
+    }
+  },
+  "pl": {
+    "claimsLimitation": {
+      "heading": "Okres Przedawnienia Roszczen",
+      "p1": "Wszelkie roszczenia wynikajace z niniejszych Warunkow lub Uslugi lub z nimi zwiazane musza byc wniesione w ciagu JEDNEGO (1) ROKU od daty powstania roszczenia.",
+      "p2": "Brak wniesienia roszczenia w tym okresie stanowi trwale zrzeczenie sie tego roszczenia.",
+      "p3": "W zakresie, w jakim ten okres przedawnienia jest niewykonalny w Twojej jurysdykcji, obowiazuje najkrotszy okres przedawnienia dozwolony przez obowiazujace prawo.",
+      "p4": "Ten okres przedawnienia nie dotyczy roszczen z tytulu szkod na osobie ani roszczen wynikajacych z oszustwa lub umyslnego wykroczenia, ktore podlegaja obowiazujacym ustawowym okresom przedawnienia.",
+      "p5": "Okres przedawnienia rozpoczyna sie, gdy osoba roszczaca wiedziala lub w rozsadny sposob powinna byla wiedziec o roszczeniu, ale w zadnym wypadku nie pozniej niz DWA (2) LATA po czynienie lub zaniechaniu bedacym przyczyna roszczenia."
+    }
+  },
+  "ar": {
+    "claimsLimitation": {
+      "heading": "فترة التقادم للمطالبات",
+      "p1": "يجب تقديم أي مطالبة ناشئة عن هذه الشروط أو الخدمة أو متعلقة بها خلال سنة واحدة (1) من تاريخ نشوء المطالبة.",
+      "p2": "يشكل عدم تقديم مطالبة خلال هذه الفترة تنازلاً دائماً عن تلك المطالبة.",
+      "p3": "بقدر ما تكون فترة التقادم هذه غير قابلة للتنفيذ في نطاق اختصاصك، تسري أقصر فترة تقادم يسمح بها القانون المعمول به.",
+      "p4": "لا تنطبق فترة التقادم هذه على المطالبات المتعلقة بالإصابة الشخصية أو المطالبات الناشئة عن الاحتيال أو سوء السلوك المتعمد، والتي تخضع لفترات التقادم القانونية المعمول بها.",
+      "p5": "تبدأ فترة التقادم عندما علم المدعي أو كان ينبغي له بشكل معقول أن يعلم بالمطالبة، ولكن في أي حال لا تتجاوز سنتين (2) بعد الفعل أو الامتناع الذي أدى إلى نشوء المطالبة."
+    }
+  },
+  "zh": {
+    "claimsLimitation": {
+      "heading": "索赔时效期限",
+      "p1": "因本条款或本服务引起的或与之相关的任何索赔必须在索赔产生之日起一（1）年内提出。",
+      "p2": "未在此期限内提出索赔即构成对该索赔的永久放弃。",
+      "p3": "如果本时效期限在您所在司法管辖区不可执行，则适用适用法律允许的最短时效期限。",
+      "p4": "本时效期限不适用于人身伤害索赔或因欺诈或故意不当行为引起的索赔，这些索赔受适用的法定时效期限约束。",
+      "p5": "时效期限从索赔人知道或合理应当知道索赔之时起算，但在任何情况下不超过导致索赔的行为或不作为发生后两（2）年。"
+    }
+  },
+  "uk": {
+    "claimsLimitation": {
+      "heading": "Строк давностi для позовiв",
+      "p1": "Будь-який позов, що виникає з цих Умов або Сервiсу або пов'язаний з ними, повинен бути поданий протягом ОДНОГО (1) РОКУ з дати виникнення позову.",
+      "p2": "Неподання позову протягом цього перiоду є постiйною вiдмовою вiд цього позову.",
+      "p3": "У тiй мiрi, в якiй цей строк давностi є нездiйсненним у вашiй юрисдикцii, застосовується найкоротший строк давностi, дозволений чинним законодавством.",
+      "p4": "Цей строк давностi не поширюється на позови щодо тiлесних ушкоджень або позови, що виникають iз шахрайства чи навмисної неправомiрної поведiнки, якi регулюються вiдповiдними законодавчими строками давностi.",
+      "p5": "Строк давностi починається, коли позивач дiзнався або повинен був розумно дiзнатися про позов, але в жодному разi не пiзнiше нiж ДВА (2) РОКИ пiсля дii або бездiяльностi, що є пiдставою позову."
+    }
+  }
+}

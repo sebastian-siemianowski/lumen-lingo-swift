@@ -3,16 +3,21 @@ import Foundation
 // MARK: - App-wide UI Strings Localization
 // Provides translations for all user-facing strings based on the user's source (known) language.
 
-struct AppStrings {
+struct AppStrings: Sendable {
 
     // MARK: - Tabs
     let tabHome: String
     let tabStats: String
     let tabPremium: String
+    let tabSettings: String
     let tabProfile: String
 
+    // MARK: - Settings Header
+    let settingsHeaderTitle: String
+    let settingsHeaderSubtitle: String
+
     // MARK: - Dashboard
-    let greeting: (String) -> String   // "Hello, {name}!"
+    let greeting: @Sendable (String) -> String   // "Hello, {name}!"
     let goodMorning: String
     let goodAfternoon: String
     let goodEvening: String
@@ -136,6 +141,7 @@ struct AppStrings {
     let keepLearningEveryDay: String
 
     // MARK: - Profile
+    let account: String
     let appearance: String
     let sound: String
     let sync: String
@@ -146,6 +152,9 @@ struct AppStrings {
     let nebula: String
     let learner: String     // "Learner"
     let xp: String
+    let words: String          // "Words"
+    let activityCalendar: String // "Activity Calendar"
+    let dayStreak: String      // "day streak"
     let darkMode: String
     let cosmicDarkTheme: String
     let lightModeActive: String
@@ -364,11 +373,11 @@ struct AppStrings {
     let trialStartFree: String
 
     // MARK: - Dashboard Feature Visibility
-    let welcomeName: (String) -> String   // "Welcome, {name}!"
-    let daysLeftInTrial: (Int) -> String   // "{n} days left in your trial"
+    let welcomeName: @Sendable (String) -> String   // "Welcome, {name}!"
+    let daysLeftInTrial: @Sendable (Int) -> String   // "{n} days left in your trial"
     let thirtyMinPerDay: String            // "30 min/day"
     // unlimited — reused from Membership section
-    let resetsIn: (String) -> String       // "Resets in {time}"
+    let resetsIn: @Sendable (String) -> String       // "Resets in {time}"
     let nowPlaying: String                 // "Playing"
     let paused: String                     // "Paused"
 
@@ -382,9 +391,9 @@ struct AppStrings {
     let recentPerformance: String          // "Recent Performance"
     let last7Sessions: String              // "Last 7 sessions"
     let areasToImprove: String             // "Areas to Improve"
-    let reviewIncorrect: (Int) -> String   // "Review {n} incorrect answers"
+    let reviewIncorrect: @Sendable (Int) -> String   // "Review {n} incorrect answers"
     let shareResult: String                // "Share Result"
-    let availableOn: (String) -> String    // "Available on {tier}"
+    let availableOn: @Sendable (String) -> String    // "Available on {tier}"
 
     // MARK: - Journey Progress Gating
     let dailyXPChart: String               // "Daily XP"
@@ -444,6 +453,135 @@ struct AppStrings {
     let upgradeMessageElite: String         // tier-specific linguistic celebration
     let upgradeMessageRoyal: String         // tier-specific linguistic celebration
     let upgradeMessageTrial: String         // tier-specific linguistic celebration
+    let celebrationWelcomeTo: String        // "Welcome to"
+    let celebrationWelcomeBackTo: String    // "Welcome back to"
+    let celebrationContinue: String         // "Continue"
+    let celebrationFirstSubscription: String // "Thank you for subscribing!"
+
+    // MARK: - Subscription Onboarding (Story 7.3)
+    let onboardingExploreTitle: String      // "Your Premium Features"
+    let onboardingTryIt: String             // "Try It!"
+    let onboardingExplore: String           // "Explore"
+    let onboardingNext: String              // "Next"
+    let onboardingSkip: String              // "I'll explore on my own"
+    let onboardingSummaryTitle: String      // "You just unlocked"
+    let onboardingSummaryFeatures: String   // "new features"
+    let onboardingWelcomeBack: String       // "Welcome back! Here's what you have"
+    let onboardingDone: String              // "Let's Go!"
+
+    // MARK: - Value Framing (Story 7.4)
+    let valueFramingTitle: String           // "Your Investment"
+    let valueFramingJust: String            // "Just"
+    let valueFramingPerDay: String          // "/day"
+    let valueFramingFeatures: String        // "features"
+    let valueFramingCoffeePro: String       // "Less than your morning coffee"
+    let valueFramingCoffeeElite: String     // "Less than a sandwich"
+    let valueFramingCoffeeRoyal: String     // "Less than a lunch out"
+    let valueFramingWordsLearned: String    // "You've learned {count} words — that's just {cost} per word with {tier}"
+    let valueFramingProjected: String       // "Most learners master 300+ words in their first month"
+
+    // MARK: - Legal Consent
+    let legalConsentTitle: String            // "Before We Begin"
+    let legalConsentSubtitle: String         // "Please review and accept..."
+    let privacyPolicyTitle: String           // "Privacy Policy"
+    let termsOfServiceTitle: String          // "Terms of Service"
+    let legalVersion: String                 // "Version 2.0"
+    let legalLastUpdated: String             // "Last updated: 23 March 2026"
+    let legalPrivacySummary: String          // Summary paragraph
+    let legalTermsSummary: String            // Summary paragraph
+    let legalPrivacyHighlight1: String       // key point
+    let legalPrivacyHighlight2: String       // key point
+    let legalPrivacyHighlight3: String       // key point
+    let legalPrivacyHighlight4: String       // key point
+    let legalTermsHighlight1: String         // key point
+    let legalTermsHighlight2: String         // key point
+    let legalTermsHighlight3: String         // key point
+    let legalTermsHighlight4: String         // key point
+    let legalAcceptAll: String               // "I Agree"
+    let legalDecline: String                 // "Decline"
+    let legalDeclineTitle: String            // "Are you sure?"
+    let legalDeclineMessage: String          // "You must accept to use LumenLingo."
+    let legalDeclineConfirm: String          // "Decline & Exit"
+    let legalReadFull: String                // "Read Full Policy"
+    let legalScrollToAccept: String          // "Scroll to review"
+
+    // MARK: - Legal Re-consent
+    let legalReconsentTitle: String          // "We've updated our policies"
+    let legalReconsentBody: String           // "We've made changes to our Terms..."
+    let legalReconsentAccept: String         // "I Accept"
+    let legalReconsentDecline: String        // "I Decline"
+
+    // MARK: - EULA
+    let eulaTitle: String                    // "End-User Licence Agreement"
+    let eulaSummary: String                  // Summary paragraph
+    let eulaHighlight1: String               // key point
+    let eulaHighlight2: String               // key point
+    let eulaHighlight3: String               // key point
+    let eulaHighlight4: String               // key point
+
+    // MARK: - Subscription Disclosure
+    let subscriptionAutoRenew: String        // Auto-renewal notice
+    let subscriptionPaymentNotice: String    // Payment charged to Apple ID
+    let subscriptionManageCancel: String     // How to manage/cancel
+    let subscriptionTrialNotice: String      // 14-day trial disclosure
+    let restorePurchases: String             // "Restore Purchases" button
+    let subscriptionLegalPrefix: String      // "By subscribing, you agree to our"
+    let subscriptionLegalAnd: String         // "and"
+
+    // MARK: - Subscription Compliance (CCR 2013 / CRD)
+    let subscriptionTraderInfo: String       // Trader identity + registration
+    let subscriptionCoolingOff: String       // 14-day cooling-off waiver notice
+    let subscriptionRefundNotice: String     // Apple handles refunds
+    let subscriptionContractDuration: String // Monthly rolling contract
+    let subscriptionEUConsumerRights: String // EU Consumer Rights Directive 2011/83/EU
+    let subscriptionCancelSteps: String      // Step-by-step cancellation instructions
+    let subscriptionVATNotice: String        // VAT/tax compliance notice
+
+    // MARK: - Account Deletion
+    let deleteAccount: String                // "Delete Account"
+    let deleteAccountWarning: String         // Warning message about data loss
+    let deleteAccountConfirm: String         // "Delete Everything"
+    let deletingAccount: String              // "Deleting account…"
+    let clearingUserData: String             // Progress step
+    let accountDeleted: String               // "Account deleted"
+
+    // MARK: - GDPR Data Export (free for all tiers)
+    let gdprExportTitle: String              // "Export My Data"
+    let gdprExportDesc: String               // Explanation of GDPR right
+    let gdprExportButton: String             // "Export Personal Data"
+    let gdprExportSuccess: String            // "Data exported successfully"
+    let gdprExportEmpty: String              // "No personal data to export"
+
+    // MARK: - Trademark Attribution
+    let trademarkAttribution: String         // Apple trademark attribution line
+
+    // MARK: - Company Disclosures (UK Companies Act 2006 s.82)
+    let companyName: String                  // "Lumenshore Limited"
+    let companyNumber: String                // "Company No. 09607326"
+    let companyRegistration: String          // "Registered in England and Wales"
+    let companyAddress: String               // Registered office address
+    let companyVAT: String                   // "VAT: GB 270411929"
+
+    // MARK: - In-App Legal
+    let cookiePolicyTitle: String            // "Cookie Policy"
+    let cookieSummary: String                // Summary paragraph for cookie policy
+    let cookieHighlight1: String             // key point
+    let cookieHighlight2: String             // key point
+    let cookieHighlight3: String             // key point
+    let cookieHighlight4: String             // key point
+    let legalUpdated: String                 // "Updated March 2025"
+
+    // MARK: - View My Data
+    let viewMyDataTitle: String              // "View My Data"
+    let viewMyDataDesc: String               // "See what data LumenLingo stores"
+    let dataProfileInfo: String              // "Profile Information"
+    let dataGameRecords: String              // "Game Progress Records"
+    let dataMasteredItems: String            // "Mastered Items"
+    let dataFavorites: String                // "Favourite Categories"
+    let dataICloudSync: String               // "iCloud Sync"
+    let dataEnabled: String                  // "Enabled"
+    let dataDisabled: String                 // "Disabled"
+    let dataStorageEstimate: String          // "Estimated Storage"
 
     // MARK: - Factory
 

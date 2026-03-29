@@ -1,0 +1,202 @@
+{
+  "en": {
+    "preSuitNotice": {
+      "heading": "Pre-Suit Notice & Mandatory Negotiation",
+      "noticeHeading": "Notice Requirement",
+      "notice1": "Before commencing any legal proceeding or arbitration against Lumenshore, you must first send a written Notice of Dispute ('Notice') to Lumenshore at legal@lumenshore.com and by post to the registered office at Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA.",
+      "notice2": "The Notice must include: your full legal name, the email address associated with the Service, a detailed description of the claim, the specific Terms provision allegedly breached, the specific relief sought, and your signature or electronic equivalent.",
+      "negotiationHeading": "Mandatory Negotiation Period",
+      "negotiation1": "After receiving your Notice, the parties shall engage in good faith negotiations for a period of sixty (60) days before either party may commence legal proceedings or arbitration.",
+      "negotiation2": "Lumenshore shall acknowledge receipt of your Notice within fourteen (14) days.",
+      "negotiation3": "During the negotiation period, both parties agree not to commence any legal proceeding. The negotiation period may be extended by mutual written agreement.",
+      "consequenceHeading": "Consequence of Non-Compliance",
+      "consequence1": "Any legal proceeding or arbitration commenced without complying with this notice and negotiation requirement shall be dismissed without prejudice, with costs awarded to Lumenshore.",
+      "consequence2": "Failure to provide proper Notice constitutes a material breach of these Terms by the claimant.",
+      "exceptionHeading": "Exceptions",
+      "exception1": "The notice and negotiation requirement does not apply to: (a) intellectual property infringement claims by either party; (b) claims for injunctive or equitable relief to prevent imminent, irreparable harm; or (c) claims in small claims court, if qualifying.",
+      "tollingHeading": "Tolling",
+      "tolling1": "The limitation period shall be tolled during the mandatory negotiation period.",
+      "tolling2": "Sending a compliant Notice preserves your claim within the limitation period."
+    }
+  },
+  "es": {
+    "preSuitNotice": {
+      "heading": "Aviso Previo y Negociacion Obligatoria",
+      "noticeHeading": "Requisito de Aviso",
+      "notice1": "Antes de iniciar cualquier procedimiento legal o arbitraje contra Lumenshore, primero debe enviar un Aviso de Disputa escrito ('Aviso') a Lumenshore a legal@lumenshore.com y por correo postal a la oficina registrada en Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA.",
+      "notice2": "El Aviso debe incluir: su nombre legal completo, la direccion de correo electronico asociada al Servicio, una descripcion detallada de la reclamacion, la disposicion especifica de los Terminos presuntamente incumplida, la reparacion especifica solicitada y su firma o equivalente electronico.",
+      "negotiationHeading": "Periodo de Negociacion Obligatoria",
+      "negotiation1": "Despues de recibir su Aviso, las partes participaran en negociaciones de buena fe durante un periodo de sesenta (60) dias antes de que cualquiera de las partes pueda iniciar procedimientos legales o arbitraje.",
+      "negotiation2": "Lumenshore acusara recibo de su Aviso dentro de los catorce (14) dias.",
+      "negotiation3": "Durante el periodo de negociacion, ambas partes acuerdan no iniciar ningun procedimiento legal. El periodo de negociacion puede extenderse por acuerdo escrito mutuo.",
+      "consequenceHeading": "Consecuencia del Incumplimiento",
+      "consequence1": "Cualquier procedimiento legal o arbitraje iniciado sin cumplir con este requisito de aviso y negociacion sera desestimado sin perjuicio, con costas a cargo de Lumenshore.",
+      "consequence2": "La falta de provision de un Aviso adecuado constituye un incumplimiento material de estos Terminos por parte del reclamante.",
+      "exceptionHeading": "Excepciones",
+      "exception1": "El requisito de aviso y negociacion no se aplica a: (a) reclamaciones por infraccion de propiedad intelectual de cualquiera de las partes; (b) reclamaciones de medidas cautelares o equitativas para prevenir dano inminente e irreparable; o (c) reclamaciones ante tribunales de menor cuantia, si aplica.",
+      "tollingHeading": "Suspension del Plazo",
+      "tolling1": "El periodo de prescripcion se suspendera durante el periodo de negociacion obligatoria.",
+      "tolling2": "El envio de un Aviso conforme preserva su reclamacion dentro del periodo de prescripcion."
+    }
+  },
+  "fr": {
+    "preSuitNotice": {
+      "heading": "Notification Prealable et Negociation Obligatoire",
+      "noticeHeading": "Exigence de Notification",
+      "notice1": "Avant d'engager toute procedure judiciaire ou arbitrage contre Lumenshore, vous devez d'abord envoyer une Notification de Litige ecrite ('Notification') a Lumenshore a legal@lumenshore.com et par courrier postal au siege social a Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA.",
+      "notice2": "La Notification doit inclure : votre nom legal complet, l'adresse e-mail associee au Service, une description detaillee de la reclamation, la disposition specifique des Conditions pretendument violee, la reparation specifique demandee et votre signature ou equivalent electronique.",
+      "negotiationHeading": "Periode de Negociation Obligatoire",
+      "negotiation1": "Apres reception de votre Notification, les parties s'engageront dans des negociations de bonne foi pendant une periode de soixante (60) jours avant que l'une ou l'autre partie puisse engager des procedures judiciaires ou un arbitrage.",
+      "negotiation2": "Lumenshore accusera reception de votre Notification dans les quatorze (14) jours.",
+      "negotiation3": "Pendant la periode de negociation, les deux parties conviennent de ne pas engager de procedure judiciaire. La periode de negociation peut etre prolongee par accord ecrit mutuel.",
+      "consequenceHeading": "Consequence du Non-Respect",
+      "consequence1": "Toute procedure judiciaire ou arbitrage engage sans respecter cette exigence de notification et de negociation sera rejete sans prejudice, avec les depens accordes a Lumenshore.",
+      "consequence2": "Le defaut de fournir une Notification appropriee constitue une violation substantielle des presentes Conditions par le plaignant.",
+      "exceptionHeading": "Exceptions",
+      "exception1": "L'exigence de notification et de negociation ne s'applique pas : (a) aux reclamations pour atteinte a la propriete intellectuelle de l'une ou l'autre partie ; (b) aux demandes de mesures injonctives ou equitables pour prevenir un prejudice imminent et irreparable ; ou (c) aux reclamations devant un tribunal de proximite, le cas echeant.",
+      "tollingHeading": "Suspension du Delai",
+      "tolling1": "Le delai de prescription sera suspendu pendant la periode de negociation obligatoire.",
+      "tolling2": "L'envoi d'une Notification conforme preserve votre reclamation dans le delai de prescription."
+    }
+  },
+  "de": {
+    "preSuitNotice": {
+      "heading": "Vorprozessuale Mitteilung und Pflichtverhandlung",
+      "noticeHeading": "Mitteilungspflicht",
+      "notice1": "Bevor Sie ein Gerichtsverfahren oder Schiedsverfahren gegen Lumenshore einleiten, muessen Sie zunachst eine schriftliche Streitmitteilung ('Mitteilung') an Lumenshore senden an legal@lumenshore.com und per Post an den eingetragenen Sitz: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA.",
+      "notice2": "Die Mitteilung muss enthalten: Ihren vollstaendigen rechtlichen Namen, die mit dem Dienst verbundene E-Mail-Adresse, eine detaillierte Beschreibung des Anspruchs, die spezifische angeblich verletzte Bestimmung der Bedingungen, die begehrte Abhilfe und Ihre Unterschrift oder elektronisches Aequivalent.",
+      "negotiationHeading": "Pflichtverhandlungszeitraum",
+      "negotiation1": "Nach Erhalt Ihrer Mitteilung werden die Parteien waehrend eines Zeitraums von sechzig (60) Tagen in guter Absicht verhandeln, bevor eine der Parteien ein Gerichtsverfahren oder Schiedsverfahren einleiten darf.",
+      "negotiation2": "Lumenshore wird den Eingang Ihrer Mitteilung innerhalb von vierzehn (14) Tagen bestaetigen.",
+      "negotiation3": "Waehrend des Verhandlungszeitraums vereinbaren beide Parteien, kein Gerichtsverfahren einzuleiten. Der Verhandlungszeitraum kann durch gegenseitige schriftliche Vereinbarung verlaengert werden.",
+      "consequenceHeading": "Konsequenz bei Nichteinhaltung",
+      "consequence1": "Jedes Gerichtsverfahren oder Schiedsverfahren, das ohne Einhaltung dieser Mitteilungs- und Verhandlungspflicht eingeleitet wird, wird ohne Praejudiz abgewiesen, wobei die Kosten Lumenshore zugesprochen werden.",
+      "consequence2": "Das Versaeumnis, eine ordnungsgemaesse Mitteilung zu erbringen, stellt eine wesentliche Vertragsverletzung dieser Bedingungen durch den Klaeger dar.",
+      "exceptionHeading": "Ausnahmen",
+      "exception1": "Die Mitteilungs- und Verhandlungspflicht gilt nicht fuer: (a) Ansprueche wegen Verletzung geistigen Eigentums durch eine der Parteien; (b) Antraege auf einstweilige Verfuegung oder billigkeitsrechtlichen Rechtsschutz zur Verhinderung unmittelbaren, nicht wiedergutzumachenden Schadens; oder (c) Ansprueche vor Amtsgerichten, sofern zulaessig.",
+      "tollingHeading": "Hemmung",
+      "tolling1": "Die Verjaehrungsfrist wird waehrend des Pflichtverhandlungszeitraums gehemmt.",
+      "tolling2": "Die Absendung einer ordnungsgemaessen Mitteilung wahrt Ihren Anspruch innerhalb der Verjaehrungsfrist."
+    }
+  },
+  "ja": {
+    "preSuitNotice": {
+      "heading": "訴訟前通知および義務的交渉",
+      "noticeHeading": "通知要件",
+      "notice1": "Lumenshoreに対する法的手続きまたは仲裁を開始する前に、まずlegal@lumenshore.comおよび登録事務所（Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA）への郵送により、書面による紛争通知（以下「通知」）をLumenshoreに送付しなければなりません。",
+      "notice2": "通知には以下を含める必要があります：正式な氏名、本サービスに関連するメールアドレス、請求の詳細な説明、違反されたとされる本規約の具体的条項、求める具体的救済、およびお客様の署名または電子的同等物。",
+      "negotiationHeading": "義務的交渉期間",
+      "negotiation1": "お客様の通知を受領した後、いずれかの当事者が法的手続きまたは仲裁を開始する前に、両当事者は60日間誠実に交渉を行うものとします。",
+      "negotiation2": "Lumenshoreは14日以内に通知の受領を確認します。",
+      "negotiation3": "交渉期間中、両当事者はいかなる法的手続きも開始しないことに同意します。交渉期間は相互の書面による合意により延長することができます。",
+      "consequenceHeading": "不遵守の結果",
+      "consequence1": "この通知および交渉要件に従わずに開始された法的手続きまたは仲裁は、権利を害することなく却下され、費用はLumenshoreに付与されます。",
+      "consequence2": "適切な通知を提供しなかった場合、請求者による本規約の重大な違反を構成します。",
+      "exceptionHeading": "例外",
+      "exception1": "通知および交渉要件は以下には適用されません：(a) いずれかの当事者による知的財産権侵害の請求、(b) 差し迫った回復不能な損害を防止するための差止めまたは衡平法上の救済の請求、(c) 少額裁判所での請求（資格がある場合）。",
+      "tollingHeading": "時効の停止",
+      "tolling1": "出訴期限は義務的交渉期間中は停止されます。",
+      "tolling2": "適合する通知の送付は、出訴期限内のお客様の請求を保全します。"
+    }
+  },
+  "pt": {
+    "preSuitNotice": {
+      "heading": "Notificacao Pre-Judicial e Negociacao Obrigatoria",
+      "noticeHeading": "Requisito de Notificacao",
+      "notice1": "Antes de iniciar qualquer procedimento judicial ou arbitragem contra a Lumenshore, voce deve primeiro enviar uma Notificacao de Disputa escrita ('Notificacao') a Lumenshore para legal@lumenshore.com e por correio para a sede registrada em Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA.",
+      "notice2": "A Notificacao deve incluir: seu nome legal completo, o endereco de e-mail associado ao Servico, uma descricao detalhada da reclamacao, a disposicao especifica dos Termos supostamente violada, a reparacao especifica solicitada e sua assinatura ou equivalente eletronico.",
+      "negotiationHeading": "Periodo de Negociacao Obrigatoria",
+      "negotiation1": "Apos receber sua Notificacao, as partes deverao se engajar em negociacoes de boa-fe por um periodo de sessenta (60) dias antes que qualquer das partes possa iniciar procedimentos judiciais ou arbitragem.",
+      "negotiation2": "A Lumenshore confirmara o recebimento da sua Notificacao dentro de catorze (14) dias.",
+      "negotiation3": "Durante o periodo de negociacao, ambas as partes concordam em nao iniciar qualquer procedimento judicial. O periodo de negociacao pode ser prorrogado por acordo mutuo por escrito.",
+      "consequenceHeading": "Consequencia do Descumprimento",
+      "consequence1": "Qualquer procedimento judicial ou arbitragem iniciado sem cumprir este requisito de notificacao e negociacao sera indeferido sem prejuizo, com custas atribuidas a Lumenshore.",
+      "consequence2": "A falta de fornecimento de Notificacao adequada constitui violacao material destes Termos pelo reclamante.",
+      "exceptionHeading": "Excecoes",
+      "exception1": "O requisito de notificacao e negociacao nao se aplica a: (a) reclamacoes por violacao de propriedade intelectual por qualquer das partes; (b) pedidos de medida cautelar ou equitativa para prevenir dano iminente e irreparavel; ou (c) reclamacoes em juizados de pequenas causas, se aplicavel.",
+      "tollingHeading": "Suspensao do Prazo",
+      "tolling1": "O prazo prescricional sera suspenso durante o periodo de negociacao obrigatoria.",
+      "tolling2": "O envio de uma Notificacao conforme preserva sua reclamacao dentro do prazo prescricional."
+    }
+  },
+  "pl": {
+    "preSuitNotice": {
+      "heading": "Zawiadomienie Przedprocesowe i Obowiazkowe Negocjacje",
+      "noticeHeading": "Wymog Zawiadomienia",
+      "notice1": "Przed wszczeciem jakiegokolwiek postepowania sadowego lub arbitrazowego przeciwko Lumenshore, musisz najpierw wyslac pisemne Zawiadomienie o Sporze ('Zawiadomienie') do Lumenshore na adres legal@lumenshore.com oraz pocztą na adres siedziby: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA.",
+      "notice2": "Zawiadomienie musi zawierac: pelne imie i nazwisko, adres e-mail powiazany z Usluga, szczegolowy opis roszczenia, konkretne postanowienie Warunkow rzekomo naruszone, konkretne zadane odszkodowanie oraz Twoj podpis lub jego elektroniczny odpowiednik.",
+      "negotiationHeading": "Obowiazkowy Okres Negocjacji",
+      "negotiation1": "Po otrzymaniu Zawiadomienia strony beda prowadzic negocjacje w dobrej wierze przez okres szescdziesieciu (60) dni, zanim ktorakolwiek ze stron bedzie mogla wszczac postepowanie sadowe lub arbitrazowe.",
+      "negotiation2": "Lumenshore potwierdzi otrzymanie Zawiadomienia w ciagu czternastu (14) dni.",
+      "negotiation3": "W okresie negocjacji obie strony zobowiazuja sie nie wszczynac zadnego postepowania sadowego. Okres negocjacji moze zostac przedluzony za wzajemnym pisemnym porozumieniem.",
+      "consequenceHeading": "Konsekwencje Nieprzestrzegania",
+      "consequence1": "Kazde postepowanie sadowe lub arbitrazowe wszczete bez przestrzegania tego wymogu zawiadomienia i negocjacji zostanie oddalone bez uszczerbku, z kosztami przyznanymi Lumenshore.",
+      "consequence2": "Brak dostarczenia prawidlowego Zawiadomienia stanowi istotne naruszenie niniejszych Warunkow przez powoda.",
+      "exceptionHeading": "Wyjatki",
+      "exception1": "Wymog zawiadomienia i negocjacji nie dotyczy: (a) roszczen o naruszenie wlasnosci intelektualnej przez ktorakolwiek ze stron; (b) wnioskow o zabezpieczenie lub srodki slusznosci zapobiegajace bezposredniej, nieodwracalnej szkodzie; lub (c) roszczen w sadach drobnych roszczen, jesli maja zastosowanie.",
+      "tollingHeading": "Zawieszenie Biegu Terminu",
+      "tolling1": "Okres przedawnienia ulega zawieszeniu na czas obowiazkowego okresu negocjacji.",
+      "tolling2": "Wyslanie zgodnego Zawiadomienia zachowuje Twoje roszczenie w okresie przedawnienia."
+    }
+  },
+  "ar": {
+    "preSuitNotice": {
+      "heading": "الإشعار المسبق والتفاوض الإلزامي",
+      "noticeHeading": "شرط الإشعار",
+      "notice1": "قبل بدء أي إجراء قانوني أو تحكيم ضد Lumenshore، يجب عليك أولاً إرسال إشعار نزاع مكتوب ('الإشعار') إلى Lumenshore على legal@lumenshore.com وبالبريد إلى المكتب المسجل في Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA.",
+      "notice2": "يجب أن يتضمن الإشعار: اسمك القانوني الكامل، وعنوان البريد الإلكتروني المرتبط بالخدمة، ووصفاً مفصلاً للمطالبة، والحكم المحدد من الشروط المزعوم انتهاكه، والتعويض المحدد المطلوب، وتوقيعك أو ما يعادله إلكترونياً.",
+      "negotiationHeading": "فترة التفاوض الإلزامية",
+      "negotiation1": "بعد استلام الإشعار، يلتزم الطرفان بالتفاوض بحسن نية لمدة ستين (60) يوماً قبل أن يتمكن أي طرف من بدء إجراءات قانونية أو تحكيم.",
+      "negotiation2": "ستؤكد Lumenshore استلام الإشعار خلال أربعة عشر (14) يوماً.",
+      "negotiation3": "خلال فترة التفاوض، يوافق كلا الطرفين على عدم بدء أي إجراء قانوني. يمكن تمديد فترة التفاوض باتفاق خطي متبادل.",
+      "consequenceHeading": "نتيجة عدم الامتثال",
+      "consequence1": "أي إجراء قانوني أو تحكيم يبدأ دون الامتثال لمتطلبات الإشعار والتفاوض هذه سيتم رفضه دون المساس بالحقوق، مع تحميل التكاليف لصالح Lumenshore.",
+      "consequence2": "يشكل عدم تقديم إشعار سليم خرقاً جوهرياً لهذه الشروط من قبل المدعي.",
+      "exceptionHeading": "الاستثناءات",
+      "exception1": "لا ينطبق شرط الإشعار والتفاوض على: (أ) مطالبات انتهاك الملكية الفكرية من أي طرف؛ (ب) طلبات الإنصاف الزجري أو العادل لمنع ضرر وشيك لا يمكن إصلاحه؛ أو (ج) المطالبات في محاكم الدعاوى الصغيرة، إن أمكن.",
+      "tollingHeading": "تعليق المدة",
+      "tolling1": "يتم تعليق فترة التقادم خلال فترة التفاوض الإلزامية.",
+      "tolling2": "يحافظ إرسال إشعار مطابق على مطالبتك ضمن فترة التقادم."
+    }
+  },
+  "zh": {
+    "preSuitNotice": {
+      "heading": "诉前通知和强制协商",
+      "noticeHeading": "通知要求",
+      "notice1": "在对Lumenshore提起任何法律程序或仲裁之前，您必须首先向Lumenshore发送书面争议通知（以下简称'通知'），发送至legal@lumenshore.com并邮寄至注册办事处：Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA。",
+      "notice2": "通知必须包括：您的完整法定姓名、与服务相关的电子邮件地址、索赔的详细描述、据称违反的具体条款条文、寻求的具体救济以及您的签名或电子等效物。",
+      "negotiationHeading": "强制协商期",
+      "negotiation1": "在收到您的通知后，双方应在任何一方启动法律程序或仲裁之前，进行为期六十（60）天的善意协商。",
+      "negotiation2": "Lumenshore将在十四（14）天内确认收到您的通知。",
+      "negotiation3": "在协商期间，双方同意不启动任何法律程序。协商期可经双方书面同意延长。",
+      "consequenceHeading": "不遵守的后果",
+      "consequence1": "未遵守本通知和协商要求而启动的任何法律程序或仲裁将被驳回且不影响权利，费用由Lumenshore承担。",
+      "consequence2": "未能提供适当通知构成索赔人对本条款的重大违反。",
+      "exceptionHeading": "例外情况",
+      "exception1": "通知和协商要求不适用于：(a) 任何一方的知识产权侵权索赔；(b) 为防止迫在眉睫的不可弥补损害而寻求禁令或衡平法救济的请求；或 (c) 小额索赔法院的索赔（如适用）。",
+      "tollingHeading": "时效中止",
+      "tolling1": "诉讼时效在强制协商期间中止。",
+      "tolling2": "发送合规通知将保留您在诉讼时效期内的索赔。"
+    }
+  },
+  "uk": {
+    "preSuitNotice": {
+      "heading": "Досудове повiдомлення та обов'язковi переговори",
+      "noticeHeading": "Вимога щодо повiдомлення",
+      "notice1": "Перед початком будь-якого судового провадження або арбiтражу проти Lumenshore ви повиннi спочатку надiслати письмове Повiдомлення про спiр ('Повiдомлення') до Lumenshore на legal@lumenshore.com та поштою на зареєстровану адресу: Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA.",
+      "notice2": "Повiдомлення повинно мiстити: ваше повне юридичне iм'я, адресу електронної пошти, пов'язану з Сервiсом, детальний опис претензiї, конкретне положення Умов, яке нiбито порушено, конкретну запитувану компенсацiю та ваш пiдпис або електронний еквiвалент.",
+      "negotiationHeading": "Обов'язковий перiод переговорiв",
+      "negotiation1": "Пiсля отримання вашого Повiдомлення сторони проведуть добросовiснi переговори протягом шiстдесяти (60) днiв, перш нiж будь-яка сторона зможе розпочати судове провадження або арбiтраж.",
+      "negotiation2": "Lumenshore пiдтвердить отримання вашого Повiдомлення протягом чотирнадцяти (14) днiв.",
+      "negotiation3": "Протягом перiоду переговорiв обидвi сторони погоджуються не розпочинати жодного судового провадження. Перiод переговорiв може бути продовжений за взаємною письмовою згодою.",
+      "consequenceHeading": "Наслiдки недотримання",
+      "consequence1": "Будь-яке судове провадження або арбiтраж, розпочатi без дотримання цiєї вимоги щодо повiдомлення та переговорiв, будуть вiдхиленi без шкоди для прав, з покладенням витрат на Lumenshore.",
+      "consequence2": "Ненадання належного Повiдомлення становить iстотне порушення цих Умов позивачем.",
+      "exceptionHeading": "Винятки",
+      "exception1": "Вимога щодо повiдомлення та переговорiв не застосовується до: (a) позовiв про порушення iнтелектуальної власностi будь-якою стороною; (b) вимог про судову заборону або справедливий захист для запобiгання невiдворотної шкоди; або (c) позовiв у судах дрiбних позовiв, якщо це застосовно.",
+      "tollingHeading": "Зупинення строку",
+      "tolling1": "Строк позовної давностi зупиняється на перiод обов'язкових переговорiв.",
+      "tolling2": "Надсилання належного Повiдомлення зберiгає ваш позов у межах строку позовної давностi."
+    }
+  }
+}

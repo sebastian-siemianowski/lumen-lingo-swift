@@ -1,0 +1,382 @@
+import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { PageTransition } from '@/components/layout';
+import { Container, Section, Heading, Text } from '@/components/ui';
+import { ProtectedEmail } from '@/components/ui/protected-email';
+import { FadeIn } from '@/components/motion';
+import { LegalTOC, DownloadPDFButton, LanguageDisclaimer, MobileLegalTOC, BackToTop } from '@/components/legal';
+import { BreadcrumbJsonLd } from '@/components/home';
+import { buildAlternates, getOgLocale, getOgAlternateLocales, localizedUrl } from '@/lib/seo';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Eula.meta' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: buildAlternates('/eula', locale),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('description'),
+      url: localizedUrl('/eula', locale),
+      siteName: 'LumenLingo',
+      locale: getOgLocale(locale),
+      alternateLocales: getOgAlternateLocales(locale),
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary',
+      title: t('ogTitle'),
+      description: t('description'),
+    },
+  };
+}
+
+export default async function EulaPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'Eula' });
+  const tLegal = await getTranslations({ locale, namespace: 'Legal' });
+
+  const richTags = {
+    b: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
+  };
+
+  const tocItems = [
+    { id: 'introduction', text: t('introduction.heading'), level: 2 },
+    { id: 'licence-grant', text: t('licenceGrant.heading'), level: 2 },
+    { id: 'tier-access', text: t('tierAccess.heading'), level: 2 },
+    { id: 'content-ownership', text: t('contentOwnership.heading'), level: 2 },
+    { id: 'restrictions', text: t('restrictions.heading'), level: 2 },
+    { id: 'termination', text: t('termination.heading'), level: 2 },
+    { id: 'data-handling', text: t('dataHandling.heading'), level: 2 },
+    { id: 'data-protection', text: t('dataProtection.heading'), level: 2 },
+    { id: 'biometric-data', text: t('biometricData.heading'), level: 2 },
+    { id: 'warranties', text: t('warranties.heading'), level: 2 },
+    { id: 'data-loss-disclaimer', text: t('warranty.heading'), level: 2 },
+    { id: 'liability', text: t('liability.heading'), level: 2 },
+    { id: 'third-party-services', text: t('thirdPartyServices.heading'), level: 2 },
+    { id: 'educational-disclaimer', text: t('educationalDisclaimer.heading'), level: 2 },
+    { id: 'consumer-rights', text: t('consumerRights.heading'), level: 2 },
+    { id: 'assumption-of-risk', text: t('assumptionOfRisk.heading'), level: 2 },
+    { id: 'governing-law', text: t('governingLaw.heading'), level: 2 },
+    { id: 'apple-terms', text: t('appleTerms.heading'), level: 2 },
+    { id: 'app-updates', text: t('appUpdates.heading'), level: 2 },
+    { id: 'export-compliance', text: t('exportCompliance.heading'), level: 2 },
+    { id: 'open-source', text: t('openSource.heading'), level: 2 },
+    { id: 'changes', text: t('changes.heading'), level: 2 },
+    { id: 'contact', text: t('contact.heading'), level: 2 },
+  ];
+
+  return (
+    <PageTransition>
+      <BreadcrumbJsonLd locale={locale} items={[{ name: 'Home', href: '/' }, { name: t('breadcrumb'), href: '/eula' }]} />
+
+      {/* Hero */}
+      <Section className="pt-32 pb-8 sm:pt-40 sm:pb-12">
+        <Container className="max-w-4xl">
+          <FadeIn className="text-center">
+            <Heading as="h1" gradient className="mb-4">
+              {t('hero.heading')}
+            </Heading>
+            <Text colour="secondary" className="mx-auto max-w-lg">
+              {t('hero.subtitle')}
+            </Text>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+              <span className="inline-flex items-center gap-2 rounded-full border border-glass-border bg-white/[0.03] px-4 py-2 text-xs text-white/50">
+                <svg viewBox="0 0 16 16" fill="none" className="h-3.5 w-3.5 text-white/40" aria-hidden>
+                  <path d="M8 4v4l2.5 1.5M14 8A6 6 0 112 8a6 6 0 0112 0z" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" />
+                </svg>
+                {tLegal('lastUpdated')}
+              </span>
+              <DownloadPDFButton label={tLegal('downloadPdf')} />
+            </div>
+          </FadeIn>
+        </Container>
+      </Section>
+
+      {/* Content */}
+      <Section className="py-8 sm:py-12 pb-20 sm:pb-28">
+        <Container>
+          <LanguageDisclaimer href="/eula" />
+          <div className="mx-auto max-w-5xl xl:grid xl:grid-cols-[1fr_240px] xl:gap-10">
+            {/* Mobile TOC */}
+            <div className="col-span-full mb-6">
+              <MobileLegalTOC items={tocItems} label={tLegal('tocLabel')} />
+            </div>
+            {/* Prose */}
+            <FadeIn>
+              <div className="legal-prose">
+                <section id="introduction">
+                  <h2>{t('introduction.heading')}</h2>
+                  <p>{t('introduction.p1')}</p>
+                  <p>{t('introduction.p2')}</p>
+                </section>
+
+                <section id="licence-grant">
+                  <h2>{t('licenceGrant.heading')}</h2>
+                  <p>{t('licenceGrant.intro')}</p>
+                  <ul>
+                    <li>{t('licenceGrant.li1')}</li>
+                    <li>{t('licenceGrant.li2')}</li>
+                    <li>{t('licenceGrant.li3')}</li>
+                  </ul>
+                  <p>{t('licenceGrant.p1')}</p>
+                </section>
+
+                <section id="tier-access">
+                  <h2>{t('tierAccess.heading')}</h2>
+                  <p>{t('tierAccess.intro')}</p>
+                  <ul>
+                    <li>{t.rich('tierAccess.li1', richTags)}</li>
+                    <li>{t.rich('tierAccess.li2', richTags)}</li>
+                    <li>{t.rich('tierAccess.li3', richTags)}</li>
+                    <li>{t.rich('tierAccess.li4', richTags)}</li>
+                  </ul>
+                  <p>{t('tierAccess.p1')}</p>
+                </section>
+
+                <section id="content-ownership">
+                  <h2>{t('contentOwnership.heading')}</h2>
+                  <p>{t('contentOwnership.p1')}</p>
+                  <p>{t('contentOwnership.p2')}</p>
+                </section>
+
+                <section id="restrictions">
+                  <h2>{t('restrictions.heading')}</h2>
+                  <p>{t('restrictions.intro')}</p>
+                  <ul>
+                    <li>{t('restrictions.li1')}</li>
+                    <li>{t('restrictions.li2')}</li>
+                    <li>{t('restrictions.li3')}</li>
+                    <li>{t('restrictions.li4')}</li>
+                    <li>{t('restrictions.li5')}</li>
+                    <li>{t('restrictions.li6')}</li>
+                    <li>{t('restrictions.li7')}</li>
+                  </ul>
+                </section>
+
+                <section id="termination">
+                  <h2>{t('termination.heading')}</h2>
+                  <p>{t('termination.p1')}</p>
+                  <p>{t('termination.p2')}</p>
+                  <ul>
+                    <li>{t('termination.li1')}</li>
+                    <li>{t('termination.li2')}</li>
+                    <li>{t('termination.li3')}</li>
+                    <li>{t('termination.li4')}</li>
+                  </ul>
+                </section>
+
+                <section id="data-handling">
+                  <h2>{t('dataHandling.heading')}</h2>
+                  <p>{t('dataHandling.p1')}</p>
+                  <p>{t('dataHandling.p2')}</p>
+                  <p>{t('dataHandling.p3')}</p>
+                  <p>{t('dataHandling.p4')}</p>
+                  <p>{t('dataHandling.p5')}</p>
+                </section>
+
+                {/* ── Data Protection (GDPR/DPA 2018) ── */}
+                <section id="data-protection">
+                  <h2>{t('dataProtection.heading')}</h2>
+                  <p>{t.rich('dataProtection.p1', { privacyLink: (chunks: React.ReactNode) => <a href={`/${locale}/privacy`}>{chunks}</a> })}</p>
+                  <p>{t('dataProtection.p2')}</p>
+                  <p>{t.rich('dataProtection.p3', { privacyLink: (chunks: React.ReactNode) => <a href={`/${locale}/privacy`}>{chunks}</a> })}</p>
+                </section>
+
+                {/* ── Biometric Data ── */}
+                <section id="biometric-data">
+                  <h2>{t('biometricData.heading')}</h2>
+                  <p>{t('biometricData.p1')}</p>
+                  <p>{t('biometricData.p2')}</p>
+                  <p>{t('biometricData.p3')}</p>
+                </section>
+
+                <section id="warranties">
+                  <h2>{t('warranties.heading')}</h2>
+                  <p>{t('warranties.p1')}</p>
+                  <ul>
+                    <li>{t('warranties.li1')}</li>
+                    <li>{t('warranties.li2')}</li>
+                    <li>{t('warranties.li3')}</li>
+                    <li>{t('warranties.li4')}</li>
+                  </ul>
+                  <p>{t('warranties.p2')}</p>
+                  <p>{t.rich('warranties.craSavings', richTags)}</p>
+                </section>
+
+                {/* ── Data Loss Disclaimer ── */}
+                <section id="data-loss-disclaimer">
+                  <h2>{t('warranty.heading')}</h2>
+                  <p>{t('warranty.p1')}</p>
+                  <p>{t('warranty.p2')}</p>
+                  <p>{t('warranty.p3')}</p>
+                </section>
+
+                <section id="liability">
+                  <h2>{t('liability.heading')}</h2>
+                  <p>{t('liability.p1')}</p>
+                  <ul>
+                    <li>{t('liability.li1')}</li>
+                    <li>{t('liability.li2')}</li>
+                    <li>{t('liability.li3')}</li>
+                    <li>{t('liability.li4')}</li>
+                  </ul>
+                  <p>{t('liability.cap')}</p>
+                  <p>{t('liability.statutory')}</p>
+                  <p>{t('liability.crossReference')}</p>
+                </section>
+
+                {/* ── Third-Party Services ── */}
+                <section id="third-party-services">
+                  <h2>{t('thirdPartyServices.heading')}</h2>
+                  <p>{t('thirdPartyServices.p1')}</p>
+                  <ul>
+                    <li>{t.rich('thirdPartyServices.li1', richTags)}</li>
+                    <li>{t.rich('thirdPartyServices.li2', richTags)}</li>
+                  </ul>
+                  <p>{t('thirdPartyServices.p2')}</p>
+                  <p>{t('thirdPartyServices.p3')}</p>
+                </section>
+
+                {/* ── Educational Disclaimer ── */}
+                <section id="educational-disclaimer">
+                  <h2>{t('educationalDisclaimer.heading')}</h2>
+                  <p>{t('educationalDisclaimer.p1')}</p>
+                  <p>{t('educationalDisclaimer.p2')}</p>
+                  <p>{t('educationalDisclaimer.p3')}</p>
+                </section>
+
+                {/* ── Consumer Rights (UK CRA 2015) ── */}
+                <section id="consumer-rights">
+                  <h2>{t('consumerRights.heading')}</h2>
+                  <p>{t.rich('consumerRights.intro', richTags)}</p>
+
+                  <h3>{t('consumerRights.qualityHeading')}</h3>
+                  <p>{t('consumerRights.qualityP1')}</p>
+                  <ul>
+                    <li>{t.rich('consumerRights.qualityLi1', richTags)}</li>
+                    <li>{t.rich('consumerRights.qualityLi2', richTags)}</li>
+                    <li>{t.rich('consumerRights.qualityLi3', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('consumerRights.remediesHeading')}</h3>
+                  <p>{t('consumerRights.remediesP1')}</p>
+                  <ul>
+                    <li>{t.rich('consumerRights.remediesLi1', richTags)}</li>
+                    <li>{t.rich('consumerRights.remediesLi2', richTags)}</li>
+                    <li>{t.rich('consumerRights.remediesLi3', richTags)}</li>
+                  </ul>
+
+                  <h3>{t('consumerRights.coolingOffHeading')}</h3>
+                  <p>{t.rich('consumerRights.coolingOffP1', richTags)}</p>
+                  <p>{t('consumerRights.coolingOffP2')}</p>
+
+                  <h3>{t('consumerRights.refundsHeading')}</h3>
+                  <p>{t.rich('consumerRights.refundsP1', richTags)}</p>
+                  <p>{t('consumerRights.refundsP2')}</p>
+
+                  <p>{t.rich('consumerRights.statutory', richTags)}</p>
+                </section>
+
+                <section id="assumption-of-risk">
+                  <h2>{t('assumptionOfRisk.heading')}</h2>
+                  <p>{t('assumptionOfRisk.p1')}</p>
+                  <p>{t('assumptionOfRisk.p2')}</p>
+                </section>
+
+                <section id="governing-law">
+                  <h2>{t('governingLaw.heading')}</h2>
+                  <p>{t('governingLaw.p1')}</p>
+                  <p>{t('governingLaw.p2')}</p>
+                </section>
+
+                <section id="apple-terms">
+                  <h2>{t('appleTerms.heading')}</h2>
+                  <p>{t('appleTerms.intro')}</p>
+                  <ol>
+                    <li>{t('appleTerms.li1')}</li>
+                    <li>{t('appleTerms.li2')}</li>
+                    <li>{t('appleTerms.li3')}</li>
+                    <li>{t('appleTerms.li4')}</li>
+                    <li>{t('appleTerms.li5')}</li>
+                    <li>{t('appleTerms.li6')}</li>
+                  </ol>
+                  <p>{t.rich('appleTerms.crossReference', { termsLink: (chunks: React.ReactNode) => <a href={`/${locale}/terms`}>{chunks}</a> })}</p>
+                </section>
+
+                <section id="app-updates">
+                  <h2>{t('appUpdates.heading')}</h2>
+                  <p>{t('appUpdates.p1')}</p>
+                  <p>{t('appUpdates.p2')}</p>
+                  <p>{t('appUpdates.p3')}</p>
+                  <p>{t('appUpdates.p4')}</p>
+                </section>
+
+                <section id="export-compliance">
+                  <h2>{t('exportCompliance.heading')}</h2>
+                  <p>{t('exportCompliance.p1')}</p>
+                  <p>{t('exportCompliance.p2')}</p>
+                  <p>{t('exportCompliance.p3')}</p>
+                  <p>{t('exportCompliance.p4')}</p>
+                </section>
+
+                <section id="open-source">
+                  <h2>{t('openSource.heading')}</h2>
+                  <p>{t('openSource.p1')}</p>
+                  <p>{t('openSource.p2')}</p>
+                  <ul>
+                    <li>{t.rich('openSource.li1', richTags)}</li>
+                    <li>{t.rich('openSource.li2', richTags)}</li>
+                    <li>{t.rich('openSource.li3', richTags)}</li>
+                    <li>{t.rich('openSource.li4', richTags)}</li>
+                  </ul>
+                  <p>{t.rich('openSource.p3', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: () => <ProtectedEmail emailKey="legal" /> })}</p>
+                </section>
+
+                <section id="changes">
+                  <h2>{t('changes.heading')}</h2>
+                  <p>{t('changes.p1')}</p>
+                  <p>{t('changes.p2')}</p>
+                  <h3>{t('changes.versionHistory')}</h3>
+                  <ul>
+                    <li>{t.rich('changes.v1_2', richTags)}</li>
+                    <li>{t.rich('changes.v1_1', richTags)}</li>
+                  </ul>
+                </section>
+
+                <section id="contact">
+                  <h2>{t('contact.heading')}</h2>
+                  <p>{t('contact.intro')}</p>
+                  <ul>
+                    <li>{t.rich('contact.email', { b: (chunks: React.ReactNode) => <strong>{chunks}</strong>, emailLink: () => <ProtectedEmail emailKey="legal" /> })}</li>
+                    <li>{t.rich('contact.company', richTags)}</li>
+                    <li>{t.rich('contact.address', richTags)}</li>
+                  </ul>
+                  <p>{t('contact.responseTime')}</p>
+                </section>
+
+                <p className="mt-12 text-xs text-white/30">{tLegal('trademarkAttribution')}</p>
+              </div>
+            </FadeIn>
+
+            {/* Sidebar TOC */}
+            <LegalTOC items={tocItems} label={tLegal('tocLabel')} />
+          </div>
+        </Container>
+      </Section>
+
+      <BackToTop />
+    </PageTransition>
+  );
+}

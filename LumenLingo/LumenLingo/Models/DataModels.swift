@@ -11,6 +11,13 @@ final class UserProfile {
     var dailyStreak: Int
     var totalActiveDays: Int
     var lastActivityDate: Date?
+
+    /// Clerk user ID — links this local profile to a Clerk identity. nil for guest users.
+    var clerkUserId: String? = nil
+
+    /// Date of last successful profile sync from Clerk.
+    var lastSyncDate: Date? = nil
+
     var favoriteGame: String?
     var difficulty: String
     var soundEnabled: Bool
@@ -68,6 +75,12 @@ final class UserProfile {
     /// Dormant settings captured on tier downgrade, restored on re-upgrade.
     /// JSON-encoded dictionary of feature settings preserved across tier changes.
     var dormantSettingsData: Data? = nil
+
+    /// Version of legal policies the user has accepted (e.g. "2.0"). Empty = never accepted.
+    var legalConsentVersion: String = ""
+
+    /// Date when the user accepted the current legal policies. nil = never accepted.
+    var legalConsentDate: Date? = nil
 
     /// Level scales quadratically: cumulative XP for level L = 50·L·(L−1).
     /// Each level costs 100·L XP, so reaching high levels takes real dedication.
@@ -166,11 +179,11 @@ final class UserProfile {
         difficulty: String = Difficulty.beginner.rawValue,
         soundEnabled: Bool = true,
         darkMode: Bool = true,
-        breathingOrbsEnabled: Bool = true,
+        breathingOrbsEnabled: Bool = false,
         breathingOrbScheme: String = BreathingOrbScheme.barcelonaNights.rawValue,
-        quantumFlowEnabled: Bool = true,
+        quantumFlowEnabled: Bool = false,
         quantumFlowScene: String = QuantumFlowScene.dubaiCelestialMirage.rawValue,
-        nebulaDriftEnabled: Bool = true,
+        nebulaDriftEnabled: Bool = false,
         nebulaPreset: String = NebulaPreset.lagoonNebula.rawValue,
         animationIntensity: Double = 0.8,
         animationSpeed: Double = 1.0,
@@ -200,7 +213,9 @@ final class UserProfile {
         selectedTierId: String = "free",
         offlineModeEnabled: Bool = false,
         trialStartDate: Date? = nil,
-        trialExpiredShown: Bool = false
+        trialExpiredShown: Bool = false,
+        legalConsentVersion: String = "",
+        legalConsentDate: Date? = nil
     ) {
         self.firstName = firstName
         self.email = email
@@ -247,6 +262,8 @@ final class UserProfile {
         self.offlineModeEnabled = offlineModeEnabled
         self.trialStartDate = trialStartDate
         self.trialExpiredShown = trialExpiredShown
+        self.legalConsentVersion = legalConsentVersion
+        self.legalConsentDate = legalConsentDate
     }
 }
 

@@ -64,6 +64,7 @@ struct SyncDataSnapshot: Codable {
 
 /// Protocol for cloud sync/backup service. Designed for easy swap from mock to
 /// CloudKit, Firebase, or custom backend.
+@MainActor
 protocol SyncServiceProtocol {
     var isSyncing: Bool { get }
     var lastSyncDate: Date? { get }
@@ -80,6 +81,7 @@ protocol SyncServiceProtocol {
 /// Mock sync service that simulates cloud backup operations.
 /// Replace with CloudKit or Firebase implementation when ready.
 @Observable
+@MainActor
 final class MockSyncService: SyncServiceProtocol {
     private(set) var isSyncing = false
     private(set) var lastSyncDate: Date?

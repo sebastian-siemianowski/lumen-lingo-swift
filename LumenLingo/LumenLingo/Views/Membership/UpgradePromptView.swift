@@ -68,7 +68,7 @@ struct UpgradePromptView: View {
                 .padding(.top, 8)
                 .padding(.bottom, 24)
             }
-            .background(isDark ? Color(hex: "#0f0f1e") : Color(hex: "#faf9fe"))
+            .background(isDark ? Color(hex: "#0f0f1e") : Color.caribbeanCanvas)
             .navigationDestination(isPresented: $navigateToMembership) {
                 MembershipView()
             }
@@ -76,7 +76,8 @@ struct UpgradePromptView: View {
         }
         .presentationDetents([.medium])
         .presentationDragIndicator(.visible)
-        .presentationCornerRadius(24)
+        .presentationCornerRadius(20)
+        .presentationBackground(isDark ? Color(hex: "#0f0f1e") : Color.caribbeanCanvas)
     }
 
     // MARK: - Feature Hero

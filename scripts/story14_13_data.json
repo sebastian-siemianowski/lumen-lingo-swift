@@ -1,0 +1,212 @@
+{
+  "en": {
+    "thirdPartyDisclaimer": {
+      "heading": "Third-Party Content, Links & Services",
+      "linksHeading": "Third-Party Links",
+      "links1": "The Service may contain links to third-party websites, applications, or services that are not owned or controlled by Lumenshore.",
+      "links2": "Lumenshore has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that Lumenshore shall not be liable for any damage or loss caused by or in connection with use of or reliance on any such third-party content.",
+      "links3": "Inclusion of a link does not imply endorsement, affiliation, or sponsorship by Lumenshore.",
+      "appleHeading": "Apple Platform",
+      "apple1": "Apple Inc. is not a party to these Terms and has no obligation to provide maintenance, support, or warranty for the Service.",
+      "apple2": "In the event of any failure of the Service to conform to applicable warranties, you may notify Apple, and Apple will refund the purchase price (if any). Apple has no other warranty obligation with respect to the Service.",
+      "apple3": "Apple is not responsible for addressing any claims relating to the Service or your possession or use of the Service.",
+      "apple4": "Apple is a third-party beneficiary of these Terms and, upon your acceptance, may enforce them against you.",
+      "infraHeading": "Infrastructure Providers",
+      "infra1": "Lumenshore is not liable for failures, outages, or data breaches caused by third-party infrastructure providers, including but not limited to Apple (iCloud, App Store), Vercel (hosting), Sentry (error monitoring), or any payment processor.",
+      "infra2": "Service availability depends on third-party infrastructure. Lumenshore does not guarantee the availability of third-party services.",
+      "ugcHeading": "User-Generated Content",
+      "ugc1": "If the Service permits user-generated content in the future, Lumenshore is not responsible for any content created, posted, or shared by users. Lumenshore does not endorse any user content and disclaims all liability arising from user content.",
+      "authHeading": "Third-Party Authentication",
+      "auth1": "If you authenticate using third-party services (e.g., Sign in with Apple), Lumenshore is not responsible for the security or availability of those authentication services. Loss of access to your third-party account may affect your ability to access the Service."
+    }
+  },
+  "es": {
+    "thirdPartyDisclaimer": {
+      "heading": "Contenido, Enlaces y Servicios de Terceros",
+      "linksHeading": "Enlaces de Terceros",
+      "links1": "El Servicio puede contener enlaces a sitios web, aplicaciones o servicios de terceros que no son propiedad ni estan controlados por Lumenshore.",
+      "links2": "Lumenshore no tiene control sobre, y no asume responsabilidad por, el contenido, las politicas de privacidad o las practicas de sitios web o servicios de terceros. Usted reconoce y acepta que Lumenshore no sera responsable de ningun dano o perdida causado por o en relacion con el uso o la confianza en dicho contenido de terceros.",
+      "links3": "La inclusion de un enlace no implica respaldo, afiliacion ni patrocinio por parte de Lumenshore.",
+      "appleHeading": "Plataforma Apple",
+      "apple1": "Apple Inc. no es parte de estos Terminos y no tiene obligacion de proporcionar mantenimiento, soporte o garantia para el Servicio.",
+      "apple2": "En caso de que el Servicio no cumpla con las garantias aplicables, puede notificar a Apple y Apple reembolsara el precio de compra (si corresponde). Apple no tiene ninguna otra obligacion de garantia con respecto al Servicio.",
+      "apple3": "Apple no es responsable de atender ninguna reclamacion relacionada con el Servicio o su posesion o uso del Servicio.",
+      "apple4": "Apple es un tercero beneficiario de estos Terminos y, tras su aceptacion, puede hacerlos cumplir contra usted.",
+      "infraHeading": "Proveedores de Infraestructura",
+      "infra1": "Lumenshore no es responsable de fallos, interrupciones o violaciones de datos causados por proveedores de infraestructura de terceros, incluidos, entre otros, Apple (iCloud, App Store), Vercel (alojamiento), Sentry (monitoreo de errores) o cualquier procesador de pagos.",
+      "infra2": "La disponibilidad del Servicio depende de la infraestructura de terceros. Lumenshore no garantiza la disponibilidad de los servicios de terceros.",
+      "ugcHeading": "Contenido Generado por Usuarios",
+      "ugc1": "Si el Servicio permite contenido generado por usuarios en el futuro, Lumenshore no es responsable de ningun contenido creado, publicado o compartido por usuarios. Lumenshore no respalda ningun contenido de usuario y rechaza toda responsabilidad derivada del contenido de usuario.",
+      "authHeading": "Autenticacion de Terceros",
+      "auth1": "Si se autentica utilizando servicios de terceros (por ejemplo, Iniciar sesion con Apple), Lumenshore no es responsable de la seguridad o disponibilidad de esos servicios de autenticacion. La perdida de acceso a su cuenta de terceros puede afectar su capacidad para acceder al Servicio."
+    }
+  },
+  "fr": {
+    "thirdPartyDisclaimer": {
+      "heading": "Contenu, Liens et Services Tiers",
+      "linksHeading": "Liens vers des Tiers",
+      "links1": "Le Service peut contenir des liens vers des sites web, applications ou services tiers qui ne sont ni detenus ni controles par Lumenshore.",
+      "links2": "Lumenshore n'a aucun controle sur le contenu, les politiques de confidentialite ou les pratiques de tout site web ou service tiers et n'en assume aucune responsabilite. Vous reconnaissez et acceptez que Lumenshore ne sera pas responsable de tout dommage ou perte cause par ou en relation avec l'utilisation ou la confiance accordee a un tel contenu tiers.",
+      "links3": "L'inclusion d'un lien n'implique pas l'approbation, l'affiliation ou le parrainage par Lumenshore.",
+      "appleHeading": "Plateforme Apple",
+      "apple1": "Apple Inc. n'est pas partie aux presentes Conditions et n'a aucune obligation de fournir une maintenance, un support ou une garantie pour le Service.",
+      "apple2": "En cas de non-conformite du Service aux garanties applicables, vous pouvez en informer Apple, et Apple remboursera le prix d'achat (le cas echeant). Apple n'a aucune autre obligation de garantie concernant le Service.",
+      "apple3": "Apple n'est pas responsable du traitement de toute reclamation relative au Service ou a votre possession ou utilisation du Service.",
+      "apple4": "Apple est un tiers beneficiaire des presentes Conditions et, apres votre acceptation, peut les faire respecter a votre encontre.",
+      "infraHeading": "Fournisseurs d'Infrastructure",
+      "infra1": "Lumenshore n'est pas responsable des pannes, interruptions ou violations de donnees causees par des fournisseurs d'infrastructure tiers, y compris mais sans s'y limiter Apple (iCloud, App Store), Vercel (hebergement), Sentry (surveillance des erreurs) ou tout processeur de paiement.",
+      "infra2": "La disponibilite du Service depend de l'infrastructure tierce. Lumenshore ne garantit pas la disponibilite des services tiers.",
+      "ugcHeading": "Contenu Genere par les Utilisateurs",
+      "ugc1": "Si le Service autorise a l'avenir le contenu genere par les utilisateurs, Lumenshore n'est pas responsable du contenu cree, publie ou partage par les utilisateurs. Lumenshore ne cautionne aucun contenu utilisateur et decline toute responsabilite decoulant du contenu utilisateur.",
+      "authHeading": "Authentification Tierce",
+      "auth1": "Si vous vous authentifiez a l'aide de services tiers (par exemple, Connexion avec Apple), Lumenshore n'est pas responsable de la securite ou de la disponibilite de ces services d'authentification. La perte d'acces a votre compte tiers peut affecter votre capacite a acceder au Service."
+    }
+  },
+  "de": {
+    "thirdPartyDisclaimer": {
+      "heading": "Inhalte, Links und Dienste Dritter",
+      "linksHeading": "Links zu Dritten",
+      "links1": "Der Dienst kann Links zu Websites, Anwendungen oder Diensten Dritter enthalten, die nicht im Eigentum von Lumenshore stehen oder von Lumenshore kontrolliert werden.",
+      "links2": "Lumenshore hat keine Kontrolle ueber und uebernimmt keine Verantwortung fuer den Inhalt, die Datenschutzrichtlinien oder die Praktiken von Websites oder Diensten Dritter. Sie erkennen an und stimmen zu, dass Lumenshore nicht fuer Schaeden oder Verluste haftbar ist, die durch oder im Zusammenhang mit der Nutzung oder dem Vertrauen auf solche Inhalte Dritter verursacht werden.",
+      "links3": "Die Aufnahme eines Links impliziert keine Billigung, Zugehoerigkeit oder Sponsoring durch Lumenshore.",
+      "appleHeading": "Apple Plattform",
+      "apple1": "Apple Inc. ist nicht Partei dieser Bedingungen und hat keine Verpflichtung, Wartung, Support oder Garantie fuer den Dienst bereitzustellen.",
+      "apple2": "Im Falle einer Nichtkonformitaet des Dienstes mit geltenden Garantien koennen Sie Apple benachrichtigen, und Apple wird den Kaufpreis (falls vorhanden) erstatten. Apple hat keine weitere Garantieverpflichtung in Bezug auf den Dienst.",
+      "apple3": "Apple ist nicht dafuer verantwortlich, Ansprueche im Zusammenhang mit dem Dienst oder Ihrem Besitz oder Ihrer Nutzung des Dienstes zu bearbeiten.",
+      "apple4": "Apple ist ein Drittbeguenstigter dieser Bedingungen und kann diese nach Ihrer Zustimmung gegen Sie durchsetzen.",
+      "infraHeading": "Infrastrukturanbieter",
+      "infra1": "Lumenshore haftet nicht fuer Ausfaelle, Unterbrechungen oder Datenschutzverletzungen, die durch Drittanbieter-Infrastruktur verursacht werden, einschliesslich, aber nicht beschraenkt auf Apple (iCloud, App Store), Vercel (Hosting), Sentry (Fehluerueberwachung) oder andere Zahlungsabwickler.",
+      "infra2": "Die Verfuegbarkeit des Dienstes haengt von der Infrastruktur Dritter ab. Lumenshore garantiert nicht die Verfuegbarkeit von Diensten Dritter.",
+      "ugcHeading": "Nutzergenerierte Inhalte",
+      "ugc1": "Sollte der Dienst zukuenftig nutzergenerierte Inhalte erlauben, ist Lumenshore nicht verantwortlich fuer von Nutzern erstellte, veroeffentlichte oder geteilte Inhalte. Lumenshore unterstuetzt keine Nutzerinhalte und lehnt jede Haftung ab, die aus Nutzerinhalten entsteht.",
+      "authHeading": "Authentifizierung durch Dritte",
+      "auth1": "Wenn Sie sich ueber Dienste Dritter authentifizieren (z. B. Anmelden mit Apple), ist Lumenshore nicht fuer die Sicherheit oder Verfuegbarkeit dieser Authentifizierungsdienste verantwortlich. Der Verlust des Zugangs zu Ihrem Drittanbieterkonto kann Ihre Faehigkeit, auf den Dienst zuzugreifen, beeintraechtigen."
+    }
+  },
+  "ja": {
+    "thirdPartyDisclaimer": {
+      "heading": "第三者コンテンツ、リンクおよびサービス",
+      "linksHeading": "第三者リンク",
+      "links1": "本サービスには、Lumenshoreが所有または管理していない第三者のウェブサイト、アプリケーション、またはサービスへのリンクが含まれる場合があります。",
+      "links2": "Lumenshoreは、第三者のウェブサイトまたはサービスのコンテンツ、プライバシーポリシー、または慣行について管理権限を持たず、一切の責任を負いません。お客様は、そのような第三者コンテンツの使用またはそれへの依存によって生じた損害または損失についてLumenshoreが責任を負わないことに同意するものとします。",
+      "links3": "リンクの掲載は、Lumenshoreによる推奨、提携、またはスポンサーシップを意味するものではありません。",
+      "appleHeading": "Appleプラットフォーム",
+      "apple1": "Apple Inc.は本規約の当事者ではなく、本サービスの保守、サポート、または保証を提供する義務を負いません。",
+      "apple2": "本サービスが適用される保証に適合しない場合、お客様はAppleに通知することができ、Appleは購入価格（もしあれば）を返金します。Appleは本サービスに関してその他の保証義務を負いません。",
+      "apple3": "Appleは、本サービスまたはお客様による本サービスの所有もしくは使用に関する請求の対処について責任を負いません。",
+      "apple4": "Appleは本規約の第三者受益者であり、お客様の承諾後、本規約をお客様に対して執行することができます。",
+      "infraHeading": "インフラストラクチャプロバイダー",
+      "infra1": "Lumenshoreは、Apple（iCloud、App Store）、Vercel（ホスティング）、Sentry（エラー監視）、またはその他の決済処理業者を含む（ただしこれらに限定されない）第三者インフラプロバイダーに起因する障害、停止、またはデータ漏洩について責任を負いません。",
+      "infra2": "サービスの可用性は第三者のインフラストラクチャに依存します。Lumenshoreは第三者サービスの可用性を保証しません。",
+      "ugcHeading": "ユーザー作成コンテンツ",
+      "ugc1": "将来、本サービスがユーザー作成コンテンツを許可する場合、Lumenshoreはユーザーが作成、投稿、または共有したコンテンツについて責任を負いません。Lumenshoreはいかなるユーザーコンテンツも推奨せず、ユーザーコンテンツに起因するすべての責任を否認します。",
+      "authHeading": "第三者認証",
+      "auth1": "第三者サービス（例：Appleでサインイン）を使用して認証する場合、Lumenshoreはそれらの認証サービスのセキュリティまたは可用性について責任を負いません。第三者アカウントへのアクセスを失うと、本サービスへのアクセスに影響を与える可能性があります。"
+    }
+  },
+  "pt": {
+    "thirdPartyDisclaimer": {
+      "heading": "Conteudo, Links e Servicos de Terceiros",
+      "linksHeading": "Links de Terceiros",
+      "links1": "O Servico pode conter links para sites, aplicativos ou servicos de terceiros que nao sao de propriedade nem controlados pela Lumenshore.",
+      "links2": "A Lumenshore nao tem controle sobre, e nao assume responsabilidade por, o conteudo, as politicas de privacidade ou as praticas de quaisquer sites ou servicos de terceiros. Voce reconhece e concorda que a Lumenshore nao sera responsavel por quaisquer danos ou perdas causados por ou em conexao com o uso ou a confianca em tal conteudo de terceiros.",
+      "links3": "A inclusao de um link nao implica endosso, afiliacao ou patrocinio pela Lumenshore.",
+      "appleHeading": "Plataforma Apple",
+      "apple1": "A Apple Inc. nao e parte destes Termos e nao tem obrigacao de fornecer manutencao, suporte ou garantia para o Servico.",
+      "apple2": "Em caso de nao conformidade do Servico com as garantias aplicaveis, voce pode notificar a Apple e a Apple reembolsara o preco de compra (se houver). A Apple nao tem nenhuma outra obrigacao de garantia em relacao ao Servico.",
+      "apple3": "A Apple nao e responsavel por tratar quaisquer reclamacoes relacionadas ao Servico ou a sua posse ou uso do Servico.",
+      "apple4": "A Apple e um terceiro beneficiario destes Termos e, apos sua aceitacao, pode aplica-los contra voce.",
+      "infraHeading": "Provedores de Infraestrutura",
+      "infra1": "A Lumenshore nao e responsavel por falhas, interrupcoes ou violacoes de dados causadas por provedores de infraestrutura de terceiros, incluindo, mas nao se limitando a, Apple (iCloud, App Store), Vercel (hospedagem), Sentry (monitoramento de erros) ou qualquer processador de pagamentos.",
+      "infra2": "A disponibilidade do Servico depende da infraestrutura de terceiros. A Lumenshore nao garante a disponibilidade dos servicos de terceiros.",
+      "ugcHeading": "Conteudo Gerado pelo Usuario",
+      "ugc1": "Se o Servico permitir conteudo gerado pelo usuario no futuro, a Lumenshore nao e responsavel por qualquer conteudo criado, publicado ou compartilhado por usuarios. A Lumenshore nao endossa qualquer conteudo de usuario e rejeita toda responsabilidade decorrente de conteudo de usuario.",
+      "authHeading": "Autenticacao de Terceiros",
+      "auth1": "Se voce se autenticar usando servicos de terceiros (por exemplo, Iniciar sessao com a Apple), a Lumenshore nao e responsavel pela seguranca ou disponibilidade desses servicos de autenticacao. A perda de acesso a sua conta de terceiros pode afetar sua capacidade de acessar o Servico."
+    }
+  },
+  "pl": {
+    "thirdPartyDisclaimer": {
+      "heading": "Tresci, Linki i Uslugi Stron Trzecich",
+      "linksHeading": "Linki do Stron Trzecich",
+      "links1": "Usluga moze zawierac linki do stron internetowych, aplikacji lub uslug stron trzecich, ktore nie sa wlasnoscia ani nie sa kontrolowane przez Lumenshore.",
+      "links2": "Lumenshore nie ma kontroli nad tresciami, politykami prywatnosci lub praktykami stron internetowych lub uslug stron trzecich i nie ponosi za nie odpowiedzialnosci. Przyjmujesz do wiadomosci i zgadzasz sie, ze Lumenshore nie ponosi odpowiedzialnosci za szkody lub straty spowodowane przez lub w zwiazku z korzystaniem z takich tresci stron trzecich lub poleganiem na nich.",
+      "links3": "Umieszczenie linku nie oznacza poparcia, przynaleznosci ani sponsorowania przez Lumenshore.",
+      "appleHeading": "Platforma Apple",
+      "apple1": "Apple Inc. nie jest strona niniejszych Warunkow i nie ma obowiazku swiadczenia konserwacji, wsparcia ani gwarancji dla Uslugi.",
+      "apple2": "W przypadku niezgodnosci Uslugi z obowiazujacymi gwarancjami mozesz powiadomic Apple, a Apple zwroci cene zakupu (jesli dotyczy). Apple nie ma zadnych innych zobowiazan gwarancyjnych w odniesieniu do Uslugi.",
+      "apple3": "Apple nie jest odpowiedzialny za rozpatrywanie jakichkolwiek roszczen zwiazanych z Usluga lub posiadaniem lub korzystaniem z Uslugi.",
+      "apple4": "Apple jest trzecim beneficjentem niniejszych Warunkow i po ich zaakceptowaniu moze je egzekwowac wobec Ciebie.",
+      "infraHeading": "Dostawcy Infrastruktury",
+      "infra1": "Lumenshore nie ponosi odpowiedzialnosci za awarie, przerwy lub naruszenia danych spowodowane przez dostawcow infrastruktury stron trzecich, w tym miedzy innymi Apple (iCloud, App Store), Vercel (hosting), Sentry (monitorowanie bledow) lub jakiegokolwiek procesora platnosci.",
+      "infra2": "Dostepnosc Uslugi zalezy od infrastruktury stron trzecich. Lumenshore nie gwarantuje dostepnosci uslug stron trzecich.",
+      "ugcHeading": "Tresci Generowane przez Uzytkownikow",
+      "ugc1": "Jezeli Usluga bedzie w przyszlosci umozliwiac tworzenie tresci przez uzytkownikow, Lumenshore nie ponosi odpowiedzialnosci za tresci tworzone, publikowane lub udostepniane przez uzytkownikow. Lumenshore nie popiera zadnych tresci uzytkownikow i zrzeka sie wszelkiej odpowiedzialnosci wynikajacej z tresci uzytkownikow.",
+      "authHeading": "Uwierzytelnianie Stron Trzecich",
+      "auth1": "Jezeli uwierzytelniasz sie za pomoca uslug stron trzecich (np. Zaloguj sie z Apple), Lumenshore nie ponosi odpowiedzialnosci za bezpieczenstwo lub dostepnosc tych uslug uwierzytelniania. Utrata dostepu do konta strony trzeciej moze wplynac na Twoja zdolnosc dostepu do Uslugi."
+    }
+  },
+  "ar": {
+    "thirdPartyDisclaimer": {
+      "heading": "محتوى وروابط وخدمات الأطراف الثالثة",
+      "linksHeading": "روابط الأطراف الثالثة",
+      "links1": "قد تحتوي الخدمة على روابط لمواقع ويب أو تطبيقات أو خدمات تابعة لأطراف ثالثة ليست مملوكة أو خاضعة لسيطرة Lumenshore.",
+      "links2": "لا تملك Lumenshore أي سيطرة على محتوى أو سياسات الخصوصية أو ممارسات أي مواقع ويب أو خدمات تابعة لأطراف ثالثة ولا تتحمل أي مسؤولية عنها. تقر وتوافق على أن Lumenshore لن تكون مسؤولة عن أي ضرر أو خسارة ناجمة عن أو متصلة باستخدام أو الاعتماد على محتوى أي طرف ثالث.",
+      "links3": "لا يعني إدراج رابط أي تأييد أو انتساب أو رعاية من قبل Lumenshore.",
+      "appleHeading": "منصة Apple",
+      "apple1": "Apple Inc. ليست طرفاً في هذه الشروط وليس عليها أي التزام بتوفير الصيانة أو الدعم أو الضمان للخدمة.",
+      "apple2": "في حالة عدم مطابقة الخدمة للضمانات المعمول بها، يمكنك إخطار Apple وستقوم Apple برد سعر الشراء (إن وُجد). ليس على Apple أي التزام ضمان آخر فيما يتعلق بالخدمة.",
+      "apple3": "Apple ليست مسؤولة عن معالجة أي مطالبات تتعلق بالخدمة أو حيازتك أو استخدامك للخدمة.",
+      "apple4": "Apple هي طرف ثالث مستفيد من هذه الشروط ويمكنها، بعد قبولك، إنفاذها ضدك.",
+      "infraHeading": "مزودو البنية التحتية",
+      "infra1": "Lumenshore ليست مسؤولة عن الأعطال أو الانقطاعات أو خروقات البيانات الناجمة عن مزودي البنية التحتية من أطراف ثالثة، بما في ذلك على سبيل المثال لا الحصر Apple (iCloud، App Store) و Vercel (الاستضافة) و Sentry (مراقبة الأخطاء) أو أي معالج مدفوعات.",
+      "infra2": "تعتمد إتاحة الخدمة على البنية التحتية لأطراف ثالثة. لا تضمن Lumenshore إتاحة خدمات الأطراف الثالثة.",
+      "ugcHeading": "المحتوى الذي ينشئه المستخدمون",
+      "ugc1": "إذا سمحت الخدمة بالمحتوى الذي ينشئه المستخدمون مستقبلاً، فإن Lumenshore ليست مسؤولة عن أي محتوى ينشئه أو ينشره أو يشاركه المستخدمون. لا تؤيد Lumenshore أي محتوى للمستخدمين وتخلي مسؤوليتها عن كل ما ينشأ عن محتوى المستخدمين.",
+      "authHeading": "مصادقة الأطراف الثالثة",
+      "auth1": "إذا قمت بالمصادقة باستخدام خدمات أطراف ثالثة (مثل تسجيل الدخول باستخدام Apple)، فإن Lumenshore ليست مسؤولة عن أمان أو إتاحة خدمات المصادقة تلك. قد يؤثر فقدان الوصول إلى حساب الطرف الثالث على قدرتك على الوصول إلى الخدمة."
+    }
+  },
+  "zh": {
+    "thirdPartyDisclaimer": {
+      "heading": "第三方内容、链接和服务",
+      "linksHeading": "第三方链接",
+      "links1": "本服务可能包含指向非Lumenshore所有或控制的第三方网站、应用程序或服务的链接。",
+      "links2": "Lumenshore对任何第三方网站或服务的内容、隐私政策或做法不承担任何控制权或责任。您承认并同意，Lumenshore不对因使用或依赖此类第三方内容而造成的任何损害或损失承担责任。",
+      "links3": "包含链接并不意味着Lumenshore的认可、联属或赞助。",
+      "appleHeading": "Apple平台",
+      "apple1": "Apple Inc.不是本条款的当事方，且没有义务为本服务提供维护、支持或保修。",
+      "apple2": "如果本服务未能符合适用的保证，您可以通知Apple，Apple将退还购买价格（如有）。Apple对本服务不承担其他保证义务。",
+      "apple3": "Apple不负责处理与本服务或您对本服务的拥有或使用相关的任何索赔。",
+      "apple4": "Apple是本条款的第三方受益人，在您接受本条款后，可对您执行本条款。",
+      "infraHeading": "基础设施提供商",
+      "infra1": "Lumenshore不对由第三方基础设施提供商（包括但不限于Apple（iCloud、App Store）、Vercel（托管）、Sentry（错误监控）或任何支付处理商）引起的故障、中断或数据泄露承担责任。",
+      "infra2": "服务的可用性依赖于第三方基础设施。Lumenshore不保证第三方服务的可用性。",
+      "ugcHeading": "用户生成内容",
+      "ugc1": "如果本服务将来允许用户生成内容，Lumenshore不对用户创建、发布或分享的任何内容负责。Lumenshore不认可任何用户内容，并免除因用户内容产生的所有责任。",
+      "authHeading": "第三方认证",
+      "auth1": "如果您使用第三方服务（例如通过Apple登录）进行认证，Lumenshore不对这些认证服务的安全性或可用性负责。失去对您第三方账户的访问权限可能会影响您访问本服务的能力。"
+    }
+  },
+  "uk": {
+    "thirdPartyDisclaimer": {
+      "heading": "Контент, посилання та сервiси третiх осiб",
+      "linksHeading": "Посилання на третi сторони",
+      "links1": "Сервiс може мiстити посилання на веб-сайти, додатки або сервiси третiх осiб, якi не належать та не контролюються Lumenshore.",
+      "links2": "Lumenshore не має контролю над змiстом, полiтиками конфiденцiйностi або практиками будь-яких веб-сайтiв або сервiсiв третiх осiб та не несе за них вiдповiдальностi. Ви визнаєте та погоджуєтесь, що Lumenshore не несе вiдповiдальностi за будь-якi збитки або втрати, спричиненi використанням або покладанням на такий контент третiх осiб або у зв'язку з ним.",
+      "links3": "Включення посилання не означає схвалення, приналежностi або спонсорства з боку Lumenshore.",
+      "appleHeading": "Платформа Apple",
+      "apple1": "Apple Inc. не є стороною цих Умов i не має зобов'язань щодо надання обслуговування, пiдтримки або гарантiї для Сервiсу.",
+      "apple2": "У випадку невiдповiдностi Сервiсу застосовним гарантiям, ви можете повiдомити Apple, i Apple поверне цiну покупки (якщо така є). Apple не має iнших гарантiйних зобов'язань щодо Сервiсу.",
+      "apple3": "Apple не несе вiдповiдальностi за розгляд будь-яких претензiй, пов'язаних iз Сервiсом або вашим володiнням чи використанням Сервiсу.",
+      "apple4": "Apple є третьою стороною-вигодонабувачем цих Умов i пiсля вашого прийняття може забезпечити їх виконання проти вас.",
+      "infraHeading": "Постачальники iнфраструктури",
+      "infra1": "Lumenshore не несе вiдповiдальностi за збої, перебої або порушення даних, спричиненi постачальниками iнфраструктури третiх осiб, включаючи, але не обмежуючись Apple (iCloud, App Store), Vercel (хостинг), Sentry (монiторинг помилок) або будь-яким процесором платежiв.",
+      "infra2": "Доступнiсть Сервiсу залежить вiд iнфраструктури третiх осiб. Lumenshore не гарантує доступнiсть сервiсiв третiх осiб.",
+      "ugcHeading": "Контент, створений користувачами",
+      "ugc1": "Якщо Сервiс дозволить створення контенту користувачами в майбутньому, Lumenshore не несе вiдповiдальностi за будь-який контент, створений, опублiкований або поширений користувачами. Lumenshore не пiдтримує жодний контент користувачiв та знiмає з себе всю вiдповiдальнiсть, що виникає з контенту користувачiв.",
+      "authHeading": "Автентифiкацiя третiх осiб",
+      "auth1": "Якщо ви автентифiкуєтесь за допомогою сервiсiв третiх осiб (наприклад, Увiйти з Apple), Lumenshore не несе вiдповiдальностi за безпеку або доступнiсть цих сервiсiв автентифiкацiї. Втрата доступу до вашого облiкового запису третьої сторони може вплинути на вашу здатнiсть отримати доступ до Сервiсу."
+    }
+  }
+}

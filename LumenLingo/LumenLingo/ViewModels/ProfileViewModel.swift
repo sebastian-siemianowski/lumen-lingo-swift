@@ -20,7 +20,8 @@ final class ProfileViewModel {
     }
 
     var userName: String { authService.currentUser?.name ?? "User" }
-    var userEmail: String { authService.currentUser?.email ?? "" }
+    var userEmail: String { authService.currentUser?.displayEmail ?? "" }
+    var isPrivateRelayEmail: Bool { authService.currentUser?.isPrivateRelayEmail ?? false }
 
     var darkMode: Bool {
         get { userProfile?.darkMode ?? true }

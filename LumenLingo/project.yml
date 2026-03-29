@@ -1,16 +1,31 @@
 name: LumenLingo
 options:
-  bundleIdPrefix: com.sebastiansiemianowski
   deploymentTarget:
     iOS: "26.0"
   xcodeVersion: "26.0"
   createIntermediateGroups: true
 
-settings:
-  base:
-    SWIFT_VERSION: "5.9"
-    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
-    DEVELOPMENT_TEAM: ""
+# ─── Swift Package Manager Dependencies ───────────────────────
+packages:
+  clerk-ios:
+    url: https://github.com/clerk/clerk-ios
+    from: "1.0.0"
+  purchases-ios:
+    url: https://github.com/RevenueCat/purchases-ios
+    from: "5.0.0"
+
+# ─── Build Configurations (10 total: 5 envs × Debug/Release) ──
+configs:
+  Dev-Debug: debug
+  Dev-Release: release
+  QA-Debug: debug
+  QA-Release: release
+  UAT-Debug: debug
+  UAT-Release: release
+  PreProd-Debug: debug
+  PreProd-Release: release
+  Prod-Debug: debug
+  Prod-Release: release
 
 targets:
   LumenLingo:
@@ -29,6 +44,7 @@ targets:
       properties:
         UIBackgroundModes:
           - audio
+        CADisableMinimumFrameDurationOnPhone: true
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: true
           UISceneConfigurations: {}
@@ -43,19 +59,33 @@ targets:
           - UIInterfaceOrientationPortrait
           - UIInterfaceOrientationLandscapeLeft
           - UIInterfaceOrientationLandscapeRight
+        LLEnvironment: $(LL_ENVIRONMENT)
+        LLApiBaseURL: $(LL_API_BASE_URL)
+        LLLogLevel: $(LL_LOG_LEVEL)
+        ClerkPublishableKey: $(CLERK_PUBLISHABLE_KEY)
+        ClerkInstanceURL: $(CLERK_INSTANCE_URL)
+        RevenueCatAPIKey: $(REVENUECAT_API_KEY)
+    dependencies:
+      - package: clerk-ios
+        product: ClerkKit
+      - package: purchases-ios
+        product: RevenueCat
+      - package: purchases-ios
+        product: RevenueCatUI
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.sebastiansiemianowski.lumenlingo
-        PRODUCT_NAME: LumenLingo
-        MARKETING_VERSION: "1.0.0"
-        CURRENT_PROJECT_VERSION: "1"
-        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        TARGETED_DEVICE_FAMILY: "1,2"
-        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: true
-        CODE_SIGN_STYLE: Automatic
-        # TODO: Re-enable once iCloud entitlement is provisioned (see ICloud-sync.md)
-        # CODE_SIGN_ENTITLEMENTS: LumenLingo/LumenLingo.entitlements
+        CODE_SIGN_ENTITLEMENTS: LumenLingo/LumenLingo.entitlements
+    configFiles:
+      Dev-Debug: Config/Dev-Debug.xcconfig
+      Dev-Release: Config/Dev-Release.xcconfig
+      QA-Debug: Config/QA-Debug.xcconfig
+      QA-Release: Config/QA-Release.xcconfig
+      UAT-Debug: Config/UAT-Debug.xcconfig
+      UAT-Release: Config/UAT-Release.xcconfig
+      PreProd-Debug: Config/PreProd-Debug.xcconfig
+      PreProd-Release: Config/PreProd-Release.xcconfig
+      Prod-Debug: Config/Prod-Debug.xcconfig
+      Prod-Release: Config/Prod-Release.xcconfig
 
   LumenLingoTests:
     type: bundle.unit-test
@@ -66,20 +96,191 @@ targets:
       - target: LumenLingo
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.sebastiansiemianowski.lumenlingo.tests
         GENERATE_INFOPLIST_FILE: true
-        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LumenLingo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LumenLingo"
-        BUNDLE_LOADER: "$(TEST_HOST)"
+        PRODUCT_MODULE_NAME: LumenLingoTests
+      configs:
+        Dev-Debug:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL Dev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL Dev"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        Dev-Release:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL Dev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL Dev"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        QA-Debug:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL QA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL QA"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        QA-Release:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL QA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL QA"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        UAT-Debug:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL UAT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL UAT"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        UAT-Release:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL UAT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL UAT"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        PreProd-Debug:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL PreProd.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL PreProd"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        PreProd-Release:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LL PreProd.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LL PreProd"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        Prod-Debug:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LumenLingo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LumenLingo"
+          BUNDLE_LOADER: "$(TEST_HOST)"
+        Prod-Release:
+          TEST_HOST: "$(BUILT_PRODUCTS_DIR)/LumenLingo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LumenLingo"
+          BUNDLE_LOADER: "$(TEST_HOST)"
 
+  LumenLingoUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: LumenLingoUITests
+    dependencies:
+      - target: LumenLingo
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: true
+      configs:
+        Dev-Debug:
+          TEST_TARGET_NAME: LumenLingo
+        Dev-Release:
+          TEST_TARGET_NAME: LumenLingo
+        QA-Debug:
+          TEST_TARGET_NAME: LumenLingo
+        QA-Release:
+          TEST_TARGET_NAME: LumenLingo
+        UAT-Debug:
+          TEST_TARGET_NAME: LumenLingo
+        UAT-Release:
+          TEST_TARGET_NAME: LumenLingo
+        PreProd-Debug:
+          TEST_TARGET_NAME: LumenLingo
+        PreProd-Release:
+          TEST_TARGET_NAME: LumenLingo
+        Prod-Debug:
+          TEST_TARGET_NAME: LumenLingo
+        Prod-Release:
+          TEST_TARGET_NAME: LumenLingo
+
+# ─── Schemes (one per environment) ────────────────────────────
 schemes:
-  LumenLingo:
+  LumenLingo-Dev:
     build:
       targets:
         LumenLingo: all
         LumenLingoTests: [test]
+        LumenLingoUITests: [test]
     run:
-      config: Debug
+      config: Dev-Debug
+      storeKitConfiguration: LumenLingo/Configuration.storekit
+      environmentVariables:
+        - variable: LL_ENVIRONMENT
+          value: dev
+          isEnabled: true
     test:
-      config: Debug
+      config: Dev-Debug
       targets:
         - LumenLingoTests
+        - LumenLingoUITests
+    profile:
+      config: Dev-Release
+    analyze:
+      config: Dev-Debug
+    archive:
+      config: Dev-Release
+
+  LumenLingo-QA:
+    build:
+      targets:
+        LumenLingo: all
+        LumenLingoTests: [test]
+        LumenLingoUITests: [test]
+    run:
+      config: QA-Debug
+      environmentVariables:
+        - variable: LL_ENVIRONMENT
+          value: qa
+          isEnabled: true
+    test:
+      config: QA-Debug
+      targets:
+        - LumenLingoTests
+        - LumenLingoUITests
+    profile:
+      config: QA-Release
+    analyze:
+      config: QA-Debug
+    archive:
+      config: QA-Release
+
+  LumenLingo-UAT:
+    build:
+      targets:
+        LumenLingo: all
+        LumenLingoTests: [test]
+        LumenLingoUITests: [test]
+    run:
+      config: UAT-Debug
+      environmentVariables:
+        - variable: LL_ENVIRONMENT
+          value: uat
+          isEnabled: true
+    test:
+      config: UAT-Debug
+      targets:
+        - LumenLingoTests
+        - LumenLingoUITests
+    profile:
+      config: UAT-Release
+    analyze:
+      config: UAT-Debug
+    archive:
+      config: UAT-Release
+
+  LumenLingo-PreProd:
+    build:
+      targets:
+        LumenLingo: all
+        LumenLingoTests: [test]
+        LumenLingoUITests: [test]
+    run:
+      config: PreProd-Debug
+      environmentVariables:
+        - variable: LL_ENVIRONMENT
+          value: preprod
+          isEnabled: true
+    test:
+      config: PreProd-Debug
+      targets:
+        - LumenLingoTests
+        - LumenLingoUITests
+    profile:
+      config: PreProd-Release
+    analyze:
+      config: PreProd-Debug
+    archive:
+      config: PreProd-Release
+
+  LumenLingo-Prod:
+    build:
+      targets:
+        LumenLingo: all
+        LumenLingoTests: [test]
+        LumenLingoUITests: [test]
+    run:
+      config: Prod-Debug
+      environmentVariables:
+        - variable: LL_ENVIRONMENT
+          value: prod
+          isEnabled: true
+    test:
+      config: Prod-Debug
+      targets:
+        - LumenLingoTests
+        - LumenLingoUITests
+    profile:
+      config: Prod-Release
+    analyze:
+      config: Prod-Debug
+    archive:
+      config: Prod-Release

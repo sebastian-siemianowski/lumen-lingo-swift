@@ -1,0 +1,202 @@
+{
+  "en": {
+    "refundPolicy": {
+      "heading": "Refund & Cancellation Policy",
+      "appleIapHeading": "iOS App Store Purchases",
+      "appleIap1": "All subscription purchases made through the iOS app are processed and managed exclusively by Apple through the App Store.",
+      "appleIap2": "Refund requests for App Store purchases must be directed to Apple at reportaproblem.apple.com. Lumenshore does not process payments and cannot issue refunds for any purchases made through the App Store.",
+      "appleIap3": "Apple's refund policy governs all iOS subscription refunds. Lumenshore has no ability to override or modify Apple's refund decisions.",
+      "cancellationHeading": "Cancellation",
+      "cancellation1": "You may cancel your subscription at any time through your device's Settings > Apple ID > Subscriptions.",
+      "cancellation2": "Cancellation takes effect at the end of your current billing period. You will retain access to all paid features until that period expires.",
+      "cancellation3": "After the billing period ends, your account will automatically revert to the Free tier. Cancellation does not entitle you to a pro-rated refund for any remaining time in the current billing period.",
+      "trialHeading": "Free Trial",
+      "trial1": "We offer a 14-day Royal tier trial free of charge. No payment is charged during the trial period.",
+      "trial2": "Unless you cancel before the trial ends, the trial will convert to a paid subscription at the then-current published rate. You will receive a reminder before your trial period ends.",
+      "coolingOffHeading": "EU/UK Cooling-Off Period",
+      "coolingOff1": "Under the Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 (UK) and the EU Consumer Rights Directive, you have a 14-day right of withdrawal for distance contracts.",
+      "coolingOff2": "For digital content, this right of withdrawal may be waived if you: (a) consent to immediate performance of the service, AND (b) acknowledge that you will lose your right of withdrawal once digital content delivery begins.",
+      "coolingOff3": "If explicit consent is not obtained, your 14-day withdrawal right remains in full effect regardless of any use of the Service during that period."
+    }
+  },
+  "es": {
+    "refundPolicy": {
+      "heading": "Politica de Reembolso y Cancelacion",
+      "appleIapHeading": "Compras en la App Store de iOS",
+      "appleIap1": "Todas las compras de suscripcion realizadas a traves de la aplicacion iOS son procesadas y gestionadas exclusivamente por Apple a traves de la App Store.",
+      "appleIap2": "Las solicitudes de reembolso para compras en la App Store deben dirigirse a Apple en reportaproblem.apple.com. Lumenshore no procesa pagos y no puede emitir reembolsos por compras realizadas a traves de la App Store.",
+      "appleIap3": "La politica de reembolso de Apple rige todos los reembolsos de suscripciones iOS. Lumenshore no tiene la capacidad de anular o modificar las decisiones de reembolso de Apple.",
+      "cancellationHeading": "Cancelacion",
+      "cancellation1": "Puede cancelar su suscripcion en cualquier momento a traves de Ajustes > Apple ID > Suscripciones de su dispositivo.",
+      "cancellation2": "La cancelacion surte efecto al final de su periodo de facturacion actual. Conservara el acceso a todas las funciones de pago hasta que expire dicho periodo.",
+      "cancellation3": "Una vez finalizado el periodo de facturacion, su cuenta revertira automaticamente al nivel Gratuito. La cancelacion no le da derecho a un reembolso proporcional por el tiempo restante del periodo de facturacion actual.",
+      "trialHeading": "Prueba Gratuita",
+      "trial1": "Ofrecemos una prueba gratuita de 14 dias del nivel Royal. No se realizan cobros durante el periodo de prueba.",
+      "trial2": "A menos que cancele antes de que finalice la prueba, esta se convertira en una suscripcion de pago a la tarifa publicada vigente. Recibira un recordatorio antes de que finalice su periodo de prueba.",
+      "coolingOffHeading": "Periodo de Desistimiento UE/RU",
+      "coolingOff1": "En virtud del Reglamento sobre Contratos de Consumo (Informacion, Cancelacion y Cargos Adicionales) de 2013 (RU) y la Directiva de Derechos del Consumidor de la UE, usted tiene un derecho de desistimiento de 14 dias para contratos a distancia.",
+      "coolingOff2": "Para contenido digital, este derecho de desistimiento puede ser renunciado si usted: (a) consiente la ejecucion inmediata del servicio, Y (b) reconoce que perdera su derecho de desistimiento una vez que comience la entrega de contenido digital.",
+      "coolingOff3": "Si no se obtiene el consentimiento explicito, su derecho de desistimiento de 14 dias permanece en pleno vigor independientemente del uso del Servicio durante ese periodo."
+    }
+  },
+  "fr": {
+    "refundPolicy": {
+      "heading": "Politique de Remboursement et d'Annulation",
+      "appleIapHeading": "Achats sur l'App Store iOS",
+      "appleIap1": "Tous les achats d'abonnement effectues via l'application iOS sont traites et geres exclusivement par Apple via l'App Store.",
+      "appleIap2": "Les demandes de remboursement pour les achats sur l'App Store doivent etre adressees a Apple a reportaproblem.apple.com. Lumenshore ne traite pas les paiements et ne peut pas emettre de remboursements pour les achats effectues sur l'App Store.",
+      "appleIap3": "La politique de remboursement d'Apple regit tous les remboursements d'abonnements iOS. Lumenshore n'a aucune capacite d'annuler ou de modifier les decisions de remboursement d'Apple.",
+      "cancellationHeading": "Annulation",
+      "cancellation1": "Vous pouvez annuler votre abonnement a tout moment via Reglages > Identifiant Apple > Abonnements de votre appareil.",
+      "cancellation2": "L'annulation prend effet a la fin de votre periode de facturation en cours. Vous conserverez l'acces a toutes les fonctionnalites payantes jusqu'a l'expiration de cette periode.",
+      "cancellation3": "A la fin de la periode de facturation, votre compte reviendra automatiquement au niveau Gratuit. L'annulation ne vous donne pas droit a un remboursement au prorata du temps restant de la periode de facturation en cours.",
+      "trialHeading": "Essai Gratuit",
+      "trial1": "Nous offrons un essai gratuit de 14 jours du niveau Royal. Aucun paiement n'est facture pendant la periode d'essai.",
+      "trial2": "Sauf annulation avant la fin de l'essai, celui-ci sera converti en abonnement payant au tarif publie en vigueur. Vous recevrez un rappel avant la fin de votre periode d'essai.",
+      "coolingOffHeading": "Delai de Retractation UE/RU",
+      "coolingOff1": "En vertu du Reglement sur les Contrats de Consommation (Information, Annulation et Frais Supplementaires) de 2013 (RU) et de la Directive Europeenne sur les Droits des Consommateurs, vous beneficiez d'un droit de retractation de 14 jours pour les contrats a distance.",
+      "coolingOff2": "Pour le contenu numerique, ce droit de retractation peut etre leve si vous: (a) consentez a l'execution immediate du service, ET (b) reconnaissez que vous perdrez votre droit de retractation une fois la livraison du contenu numerique commencee.",
+      "coolingOff3": "Si le consentement explicite n'est pas obtenu, votre droit de retractation de 14 jours reste pleinement en vigueur independamment de toute utilisation du Service pendant cette periode."
+    }
+  },
+  "de": {
+    "refundPolicy": {
+      "heading": "Erstattungs- und Kuendigungsrichtlinie",
+      "appleIapHeading": "iOS App Store Kaeufe",
+      "appleIap1": "Alle Abonnementkaufe ueber die iOS-App werden ausschliesslich von Apple ueber den App Store verarbeitet und verwaltet.",
+      "appleIap2": "Erstattungsanfragen fuer App Store Kaeufe muessen an Apple unter reportaproblem.apple.com gerichtet werden. Lumenshore verarbeitet keine Zahlungen und kann keine Erstattungen fuer ueber den App Store getatiegte Kaeufe ausstellen.",
+      "appleIap3": "Die Erstattungsrichtlinie von Apple regelt alle iOS-Abonnementerstattungen. Lumenshore hat keine Moeglichkeit, Erstattungsentscheidungen von Apple aufzuheben oder zu aendern.",
+      "cancellationHeading": "Kuendigung",
+      "cancellation1": "Sie koennen Ihr Abonnement jederzeit ueber Einstellungen > Apple-ID > Abonnements auf Ihrem Geraet kuendigen.",
+      "cancellation2": "Die Kuendigung wird am Ende Ihres aktuellen Abrechnungszeitraums wirksam. Sie behalten den Zugang zu allen kostenpflichtigen Funktionen bis zum Ablauf dieses Zeitraums.",
+      "cancellation3": "Nach Ablauf des Abrechnungszeitraums wird Ihr Konto automatisch auf die kostenlose Stufe zurueckgesetzt. Die Kuendigung berechtigt Sie nicht zu einer anteiligen Erstattung fuer die verbleibende Zeit des aktuellen Abrechnungszeitraums.",
+      "trialHeading": "Kostenlose Testversion",
+      "trial1": "Wir bieten eine 14-taegige kostenlose Testversion der Royal-Stufe an. Waehrend des Testzeitraums werden keine Zahlungen erhoben.",
+      "trial2": "Wenn Sie nicht vor Ablauf der Testversion kuendigen, wird diese zum dann gueltigen veroeffentlichten Tarif in ein kostenpflichtiges Abonnement umgewandelt. Sie erhalten eine Erinnerung vor Ablauf Ihres Testzeitraums.",
+      "coolingOffHeading": "EU/UK Widerrufsrecht",
+      "coolingOff1": "Gemaess der Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 (UK) und der EU-Verbraucherrechterichtlinie haben Sie ein 14-taegiges Widerrufsrecht fuer Fernabsatzvertraege.",
+      "coolingOff2": "Bei digitalen Inhalten kann dieses Widerrufsrecht erloechen, wenn Sie: (a) der sofortigen Ausfuehrung des Dienstes zustimmen UND (b) anerkennen, dass Sie Ihr Widerrufsrecht verlieren, sobald die Bereitstellung digitaler Inhalte beginnt.",
+      "coolingOff3": "Wenn keine ausdrueckliche Zustimmung eingeholt wird, bleibt Ihr 14-taegiges Widerrufsrecht unabhaengig von jeglicher Nutzung des Dienstes waehrend dieses Zeitraums in voller Wirkung bestehen."
+    }
+  },
+  "ja": {
+    "refundPolicy": {
+      "heading": "返金・解約ポリシー",
+      "appleIapHeading": "iOS App Storeでの購入",
+      "appleIap1": "iOSアプリを通じて行われたすべてのサブスクリプション購入は、App Storeを通じてAppleが独占的に処理および管理します。",
+      "appleIap2": "App Storeでの購入に関する返金リクエストは、reportaproblem.apple.comでAppleに直接お問い合わせください。Lumenshoreは支払いを処理せず、App Storeを通じた購入の返金を行うことはできません。",
+      "appleIap3": "Appleの返金ポリシーがすべてのiOSサブスクリプションの返金を規定します。LumenshoreにはAppleの返金判断を覆すまたは変更する能力はありません。",
+      "cancellationHeading": "解約",
+      "cancellation1": "サブスクリプションは、デバイスの設定 > Apple ID > サブスクリプションからいつでも解約できます。",
+      "cancellation2": "解約は現在の請求期間の終了時に有効になります。その期間が終了するまで、すべての有料機能へのアクセスを維持できます。",
+      "cancellation3": "請求期間の終了後、アカウントは自動的に無料プランに戻ります。解約により、現在の請求期間の残り期間に対する日割り返金の権利は生じません。",
+      "trialHeading": "無料トライアル",
+      "trial1": "14日間のRoyalプラン無料トライアルを提供しています。トライアル期間中に支払いが発生することはありません。",
+      "trial2": "トライアル終了前にキャンセルしない場合、その時点で公表されている料金で有料サブスクリプションに移行します。トライアル期間終了前にリマインダーをお送りします。",
+      "coolingOffHeading": "EU/UKクーリングオフ期間",
+      "coolingOff1": "消費者契約（情報、キャンセルおよび追加料金）規則2013（UK）およびEU消費者権利指令に基づき、通信販売契約について14日間の撤回権があります。",
+      "coolingOff2": "デジタルコンテンツについては、お客様が以下を行った場合、この撤回権を放棄できます：（a）サービスの即時履行に同意し、かつ（b）デジタルコンテンツの提供が開始された時点で撤回権を失うことを認めた場合。",
+      "coolingOff3": "明示的な同意が得られない場合、14日間の撤回権は、その期間中のサービスの使用に関わらず完全に有効です。"
+    }
+  },
+  "pt": {
+    "refundPolicy": {
+      "heading": "Politica de Reembolso e Cancelamento",
+      "appleIapHeading": "Compras na App Store iOS",
+      "appleIap1": "Todas as compras de assinatura feitas atraves do aplicativo iOS sao processadas e geridas exclusivamente pela Apple atraves da App Store.",
+      "appleIap2": "Solicitacoes de reembolso para compras na App Store devem ser direcionadas a Apple em reportaproblem.apple.com. A Lumenshore nao processa pagamentos e nao pode emitir reembolsos para compras feitas atraves da App Store.",
+      "appleIap3": "A politica de reembolso da Apple rege todos os reembolsos de assinaturas iOS. A Lumenshore nao tem capacidade de anular ou modificar as decisoes de reembolso da Apple.",
+      "cancellationHeading": "Cancelamento",
+      "cancellation1": "Voce pode cancelar sua assinatura a qualquer momento atraves de Ajustes > ID Apple > Assinaturas do seu dispositivo.",
+      "cancellation2": "O cancelamento entra em vigor no final do seu periodo de faturamento atual. Voce mantera o acesso a todos os recursos pagos ate o termino desse periodo.",
+      "cancellation3": "Apos o termino do periodo de faturamento, sua conta será automaticamente revertida para o nivel Gratuito. O cancelamento nao lhe da direito a um reembolso proporcional pelo tempo restante do periodo de faturamento atual.",
+      "trialHeading": "Avaliacao Gratuita",
+      "trial1": "Oferecemos uma avaliacao gratuita de 14 dias do nivel Royal. Nenhum pagamento e cobrado durante o periodo de avaliacao.",
+      "trial2": "A menos que voce cancele antes do termino da avaliacao, esta será convertida em uma assinatura paga pela tarifa publicada vigente. Voce receberá um lembrete antes do termino do seu periodo de avaliacao.",
+      "coolingOffHeading": "Periodo de Reflexao UE/RU",
+      "coolingOff1": "Nos termos do Regulamento sobre Contratos de Consumo (Informacao, Cancelamento e Encargos Adicionais) de 2013 (RU) e da Diretiva Europeia dos Direitos do Consumidor, voce tem um direito de retratacao de 14 dias para contratos a distancia.",
+      "coolingOff2": "Para conteudo digital, este direito de retratacao pode ser renunciado se voce: (a) consentir com a execucao imediata do servico, E (b) reconhecer que perderá seu direito de retratacao uma vez iniciada a entrega de conteudo digital.",
+      "coolingOff3": "Se o consentimento explicito nao for obtido, seu direito de retratacao de 14 dias permanece em pleno vigor independentemente de qualquer uso do Servico durante esse periodo."
+    }
+  },
+  "pl": {
+    "refundPolicy": {
+      "heading": "Polityka Zwrotow i Rezygnacji",
+      "appleIapHeading": "Zakupy w iOS App Store",
+      "appleIap1": "Wszystkie zakupy subskrypcji dokonane za posrednictwem aplikacji iOS sa przetwarzane i zarzadzane wylacznie przez Apple za posrednictwem App Store.",
+      "appleIap2": "Wnioski o zwrot za zakupy w App Store nalezy kierowac do Apple na reportaproblem.apple.com. Lumenshore nie przetwarza platnosci i nie moze wystawiac zwrotow za zakupy dokonane w App Store.",
+      "appleIap3": "Polityka zwrotow Apple reguluje wszystkie zwroty subskrypcji iOS. Lumenshore nie ma mozliwosci anulowania ani modyfikowania decyzji Apple dotyczacych zwrotow.",
+      "cancellationHeading": "Rezygnacja",
+      "cancellation1": "Mozesz zrezygnowac z subskrypcji w dowolnym momencie za posrednictwem Ustawien > Apple ID > Subskrypcje na swoim urzadzeniu.",
+      "cancellation2": "Rezygnacja wchodzi w zycie z koncem biezacego okresu rozliczeniowego. Zachowasz dostep do wszystkich platnych funkcji do konca tego okresu.",
+      "cancellation3": "Po zakonczeniu okresu rozliczeniowego Twoje konto zostanie automatycznie przywrocone do poziomu Darmowego. Rezygnacja nie uprawnia do proporcjonalnego zwrotu za pozostaly czas biezacego okresu rozliczeniowego.",
+      "trialHeading": "Bezplatny Okres Probny",
+      "trial1": "Oferujemy 14-dniowy bezplatny okres probny poziomu Royal. Podczas okresu probnego nie sa pobierane zadne oplaty.",
+      "trial2": "Jesli nie anulujesz przed zakonczeniem okresu probnego, zostanie on automatycznie przeksztalcony w platna subskrypcje po aktualnie opublikowanej stawce. Otrzymasz przypomnienie przed zakonczeniem okresu probnego.",
+      "coolingOffHeading": "Okres Odstapienia UE/UK",
+      "coolingOff1": "Na mocy Regulacji dotyczacych Umow Konsumenckich (Informacja, Anulowanie i Dodatkowe Oplaty) z 2013 r. (UK) oraz Dyrektywy UE o Prawach Konsumenta, przysliguje Ci 14-dniowe prawo odstapienia od umowy zawartej na odleglosc.",
+      "coolingOff2": "W przypadku tresci cyfrowych prawo do odstapienia moze wygasnac, jesli: (a) wyrazisz zgode na natychmiastowe wykonanie uslugi ORAZ (b) potwierdzisz, ze tracisz prawo do odstapienia po rozpoczeciu dostarczania tresci cyfrowych.",
+      "coolingOff3": "Jesli wyrazna zgoda nie zostanie uzyskana, Twoje 14-dniowe prawo do odstapienia pozostaje w pelni obowiazujace niezaleznie od jakiegokolwiek korzystania z Uslugi w tym okresie."
+    }
+  },
+  "ar": {
+    "refundPolicy": {
+      "heading": "سياسة الاسترداد والإلغاء",
+      "appleIapHeading": "مشتريات متجر تطبيقات iOS",
+      "appleIap1": "تتم معالجة وإدارة جميع مشتريات الاشتراك التي تتم عبر تطبيق iOS حصرياً بواسطة Apple عبر متجر التطبيقات.",
+      "appleIap2": "يجب توجيه طلبات الاسترداد لمشتريات متجر التطبيقات إلى Apple على reportaproblem.apple.com. لا تقوم Lumenshore بمعالجة المدفوعات ولا يمكنها إصدار استرداد لأي مشتريات تمت عبر متجر التطبيقات.",
+      "appleIap3": "تحكم سياسة الاسترداد الخاصة بـ Apple جميع عمليات استرداد اشتراكات iOS. ليس لدى Lumenshore القدرة على تجاوز أو تعديل قرارات الاسترداد الخاصة بـ Apple.",
+      "cancellationHeading": "الإلغاء",
+      "cancellation1": "يمكنك إلغاء اشتراكك في أي وقت من خلال الإعدادات > معرف Apple > الاشتراكات على جهازك.",
+      "cancellation2": "يسري الإلغاء في نهاية فترة الفوترة الحالية. ستحتفظ بإمكانية الوصول إلى جميع الميزات المدفوعة حتى انتهاء تلك الفترة.",
+      "cancellation3": "بعد انتهاء فترة الفوترة، سيعود حسابك تلقائياً إلى المستوى المجاني. لا يمنحك الإلغاء الحق في استرداد نسبي عن الوقت المتبقي من فترة الفوترة الحالية.",
+      "trialHeading": "النسخة التجريبية المجانية",
+      "trial1": "نقدم نسخة تجريبية مجانية لمدة 14 يوماً لمستوى Royal. لا يتم تحصيل أي دفعة خلال الفترة التجريبية.",
+      "trial2": "ما لم تقم بالإلغاء قبل انتهاء الفترة التجريبية، ستتحول تلقائياً إلى اشتراك مدفوع بالسعر المنشور الحالي. ستتلقى تذكيراً قبل انتهاء فترتك التجريبية.",
+      "coolingOffHeading": "فترة التراجع في الاتحاد الأوروبي/المملكة المتحدة",
+      "coolingOff1": "بموجب لوائح عقود المستهلكين (المعلومات والإلغاء والرسوم الإضافية) لعام 2013 (المملكة المتحدة) وتوجيه حقوق المستهلك في الاتحاد الأوروبي، لديك حق انسحاب لمدة 14 يوماً للعقود عن بُعد.",
+      "coolingOff2": "بالنسبة للمحتوى الرقمي، يمكن التنازل عن حق الانسحاب هذا إذا: (أ) وافقت على الأداء الفوري للخدمة، و(ب) أقررت بأنك ستفقد حق الانسحاب بمجرد بدء تسليم المحتوى الرقمي.",
+      "coolingOff3": "إذا لم يتم الحصول على الموافقة الصريحة، يظل حقك في الانسحاب لمدة 14 يوماً سارياً بالكامل بغض النظر عن أي استخدام للخدمة خلال تلك الفترة."
+    }
+  },
+  "zh": {
+    "refundPolicy": {
+      "heading": "退款与取消政策",
+      "appleIapHeading": "iOS App Store购买",
+      "appleIap1": "通过iOS应用程序进行的所有订阅购买均由Apple通过App Store独家处理和管理。",
+      "appleIap2": "App Store购买的退款请求必须在reportaproblem.apple.com向Apple提出。Lumenshore不处理付款，也无法为通过App Store进行的任何购买发放退款。",
+      "appleIap3": "Apple的退款政策管辖所有iOS订阅退款。Lumenshore无权推翻或修改Apple的退款决定。",
+      "cancellationHeading": "取消",
+      "cancellation1": "您可以随时通过设备的设置 > Apple ID > 订阅取消您的订阅。",
+      "cancellation2": "取消在当前计费期结束时生效。在该期限届满之前，您将保留对所有付费功能的访问权限。",
+      "cancellation3": "计费期结束后，您的账户将自动恢复为免费等级。取消不赋予您对当前计费期剩余时间的按比例退款权利。",
+      "trialHeading": "免费试用",
+      "trial1": "我们提供14天免费Royal等级试用。试用期间不收取任何费用。",
+      "trial2": "除非您在试用结束前取消，否则试用将按当时公布的费率转为付费订阅。我们将在试用期结束前向您发送提醒。",
+      "coolingOffHeading": "欧盟/英国冷静期",
+      "coolingOff1": "根据《消费者合同（信息、取消和额外费用）条例》2013年（英国）和欧盟消费者权利指令，您有14天的远程合同撤回权。",
+      "coolingOff2": "对于数字内容，如果您：（a）同意立即执行服务，且（b）确认一旦数字内容交付开始即失去撤回权，则可以放弃该撤回权。",
+      "coolingOff3": "如未获得明确同意，您的14天撤回权将完全有效，不受该期间内对服务的任何使用的影响。"
+    }
+  },
+  "uk": {
+    "refundPolicy": {
+      "heading": "Полiтика повернення коштiв та скасування",
+      "appleIapHeading": "Покупки в iOS App Store",
+      "appleIap1": "Усi покупки пiдписок, здiйсненi через додаток iOS, обробляються та управляються виключно Apple через App Store.",
+      "appleIap2": "Запити на повернення коштiв за покупки в App Store повиннi бути спрямованi до Apple за адресою reportaproblem.apple.com. Lumenshore не обробляє платежi i не може здiйснювати повернення коштiв за покупки, зробленi через App Store.",
+      "appleIap3": "Полiтика повернення коштiв Apple регулює всi повернення коштiв за пiдписки iOS. Lumenshore не має можливостi скасувати або змiнити рiшення Apple щодо повернення коштiв.",
+      "cancellationHeading": "Скасування",
+      "cancellation1": "Ви можете скасувати пiдписку в будь-який час через Налаштування > Apple ID > Пiдписки на вашому пристрої.",
+      "cancellation2": "Скасування набирає чинностi пiсля закiнчення поточного перiоду виставлення рахункiв. Ви зберiгатимете доступ до всiх платних функцiй до закiнчення цього перiоду.",
+      "cancellation3": "Пiсля закiнчення перiоду виставлення рахункiв ваш облiковий запис автоматично повернеться до Безкоштовного рiвня. Скасування не дає права на пропорцiйне повернення коштiв за час, що залишився у поточному перiодi виставлення рахункiв.",
+      "trialHeading": "Безкоштовна Пробна Версiя",
+      "trial1": "Ми пропонуємо 14-денну безкоштовну пробну версiю рiвня Royal. Пiд час пробного перiоду оплата не стягується.",
+      "trial2": "Якщо ви не скасуєте до закiнчення пробного перiоду, вiн автоматично перетвориться на платну пiдписку за поточною опублiкованою ставкою. Ви отримаєте нагадування перед закiнченням пробного перiоду.",
+      "coolingOffHeading": "Перiод вiдкликання ЄС/Великобританiя",
+      "coolingOff1": "Вiдповiдно до Правил щодо споживчих договорiв (Iнформацiя, Скасування та Додатковi Платежi) 2013 року (Великобританiя) та Директиви ЄС про права споживачiв, ви маєте 14-денне право вiдкликання для дистанцiйних договорiв.",
+      "coolingOff2": "Для цифрового контенту це право вiдкликання може бути скасоване, якщо ви: (a) погоджуєтеся на негайне виконання послуги ТА (b) визнаєте, що втрачаєте право вiдкликання пiсля початку доставки цифрового контенту.",
+      "coolingOff3": "Якщо явна згода не отримана, ваше 14-денне право вiдкликання залишається в повнiй силi незалежно вiд будь-якого використання Сервiсу протягом цього перiоду."
+    }
+  }
+}

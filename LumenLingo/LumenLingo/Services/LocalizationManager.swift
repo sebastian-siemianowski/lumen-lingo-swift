@@ -6,7 +6,7 @@ import SwiftData
 /// Observable object that provides the current `AppStrings` based on the user's source language.
 /// Injected into the environment so all views can access translated strings via `@Environment`.
 @Observable
-final class LocalizationManager {
+final class LocalizationManager: @unchecked Sendable {
     var sourceLanguage: SupportedLanguage = .english
 
     var strings: AppStrings {

@@ -73,20 +73,26 @@ struct JourneyView: View {
     @State private var quoteIconRotation: Double = 0
     @State private var showResetAlert = false
 
-    // Collapsible section state
-    @State private var isStatsCollapsed = false
-    @State private var isMilestonesCollapsed = false
-    @State private var isGameBreakdownCollapsed = false
-    @State private var isDailyXPCollapsed = false
-    @State private var isWeeklyTrendCollapsed = false
-    @State private var isAccuracyHeatmapCollapsed = false
-    @State private var isMonthlyReportCollapsed = false
-    @State private var isMilestonePredictionsCollapsed = false
-    @State private var isExportDataCollapsed = false
-    @State private var isInsightsCollapsed = false
-    @State private var isStreakCollapsed = false
-    @State private var isQuoteCollapsed = false
-    @State private var isResetCollapsed = true
+    // Story 6.1 — timeline animation state
+    @State private var timelineFlowPhase: CGFloat = 0
+    @State private var currentPositionPulse: CGFloat = 0.6
+    @State private var levelRingRotation: Double = 0
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    // Collapsible section state (persisted to UserDefaults, driven by @State for animations)
+    @PersistedState("journey_stats_collapsed") private var isStatsCollapsed = false
+    @PersistedState("journey_milestones_collapsed") private var isMilestonesCollapsed = false
+    @PersistedState("journey_gameBreakdown_collapsed") private var isGameBreakdownCollapsed = false
+    @PersistedState("journey_dailyXP_collapsed") private var isDailyXPCollapsed = false
+    @PersistedState("journey_weeklyTrend_collapsed") private var isWeeklyTrendCollapsed = false
+    @PersistedState("journey_accuracyHeatmap_collapsed") private var isAccuracyHeatmapCollapsed = false
+    @PersistedState("journey_monthlyReport_collapsed") private var isMonthlyReportCollapsed = false
+    @PersistedState("journey_milestonePredictions_collapsed") private var isMilestonePredictionsCollapsed = false
+    @PersistedState("journey_exportData_collapsed") private var isExportDataCollapsed = false
+    @PersistedState("journey_insights_collapsed") private var isInsightsCollapsed = false
+    @PersistedState("journey_streak_collapsed") private var isStreakCollapsed = false
+    @PersistedState("journey_quote_collapsed") private var isQuoteCollapsed = false
+    @PersistedState("journey_reset_collapsed") private var isResetCollapsed = true
 
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -98,8 +104,7 @@ struct JourneyView: View {
                 CollapsibleSection(
                     title: hasUserName ? "\(displayName)'s XP" : L.totalXP,
                     theme: .xpStats,
-                    isCollapsed: $isStatsCollapsed,
-                    badge: .text(formattedXP(profile?.totalXP ?? 0) + " XP")
+                    isCollapsed: $isStatsCollapsed
                 ) {
                     overallStatsPanel
                 }
@@ -108,8 +113,7 @@ struct JourneyView: View {
                 CollapsibleSection(
                     title: L.milestones,
                     theme: .milestones,
-                    isCollapsed: $isMilestonesCollapsed,
-                    badge: .count(completedMilestoneCount)
+                    isCollapsed: $isMilestonesCollapsed
                 ) {
                     milestonesSection
                 }
@@ -119,7 +123,7 @@ struct JourneyView: View {
                     title: L.gamePerformance,
                     theme: .gamePerformance,
                     isCollapsed: $isGameBreakdownCollapsed,
-                    badge: tierBadge(for: .gameBreakdown) ?? .progress(overallAccuracy),
+                    badge: tierBadge(for: .gameBreakdown),
                     isLocked: isSectionLocked(.gameBreakdown),
                     lockedTierName: requiredTierInfo(for: .gameBreakdown).name,
                     lockedTierColor: requiredTierInfo(for: .gameBreakdown).color
@@ -243,7 +247,7 @@ struct JourneyView: View {
                     title: L.currentStreak,
                     theme: .streak,
                     isCollapsed: $isStreakCollapsed,
-                    badge: .count(profile?.streakDays ?? 0)
+                    showsDivider: false
                 ) {
                     streakSection
                 }
@@ -339,22 +343,48 @@ struct JourneyView: View {
     // MARK: - Header
 
     private var journeyHeader: some View {
-        VStack(spacing: 6) {
+        VStack(spacing: 10) {
+            // Icon in tinted glass circle
             Image(systemName: "chart.line.uptrend.xyaxis")
-                .font(.system(size: 32))
+                .font(.system(size: 30, weight: .medium))
                 .foregroundStyle(
                     LinearGradient(
-                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                        colors: isDark
+                            ? [Color(hex: "#667eea"), Color(hex: "#764ba2")]
+                            : [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     )
                 )
+                .padding(14)
+                .background {
+                    Circle()
+                        .fill(
+                            isDark
+                                ? Color(hex: "#667eea").opacity(0.10)
+                                : Color(hex: "#667eea").opacity(0.07)
+                        )
+                    Circle()
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    .white.opacity(isDark ? 0.15 : 0.55),
+                                    .white.opacity(isDark ? 0.05 : 0.20)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                }
 
             Text(L.yourLearningJourney)
                 .font(.system(size: 18, weight: .bold))
                 .foregroundStyle(
                     LinearGradient(
-                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                        colors: isDark
+                            ? [Color(hex: "#667eea"), Color(hex: "#764ba2")]
+                            : [Color(hex: "#667eea"), Color(hex: "#06b6d4")],
                         startPoint: .leading,
                         endPoint: .trailing
                     )
@@ -364,19 +394,57 @@ struct JourneyView: View {
                 .font(.system(size: 12))
                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                 .multilineTextAlignment(.center)
+
+            // Subtle tier indicator
+            NavigationLink {
+                MembershipView()
+            } label: {
+                TierBadgeView(compact: true)
+            }
+            .buttonStyle(.plain)
         }
+        .padding(.vertical, 16)
+        .padding(.horizontal, 20)
+        .frame(maxWidth: .infinity)
+        .background(
+            ZStack {
+                GlassCardBackground(
+                    cornerRadius: 24,
+                    tintColor: Color(hex: "#667eea")
+                )
+                if !isDark {
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(Color.white.opacity(0.25))
+                }
+            }
+        )
         .padding(.top, 10)
     }
 
     // MARK: - Milestones Timeline
 
+    /// Index of the "next to unlock" milestone (upcoming).
+    private var upcomingMilestoneIndex: Int? {
+        let xp = profile?.totalXP ?? 0
+        return milestones.firstIndex { xp < $0.xpRequired }
+    }
+
     private var milestonesSection: some View {
-        GlassPanelWrapper {
-            VStack(alignment: .leading, spacing: 0) {
+        VStack(alignment: .leading, spacing: 0) {
                 ForEach(Array(milestones.enumerated()), id: \.element.title) { index, milestone in
-                    milestoneRow(milestone, isLast: index == milestones.count - 1)
+                    milestoneRow(milestone, index: index, isLast: index == milestones.count - 1)
                         .staggeredReveal(index: index)
                 }
+            }
+        .onAppear {
+            guard !reduceMotion else { return }
+            // Flowing water animation for timeline connectors (Story 6.1.1)
+            withAnimation(.linear(duration: 4).repeatForever(autoreverses: false)) {
+                timelineFlowPhase = 1.0
+            }
+            // Breathing pulse for current position indicator (Story 6.1.1)
+            withAnimation(.easeInOut(duration: 3).repeatForever(autoreverses: true)) {
+                currentPositionPulse = 1.0
             }
         }
     }
@@ -405,46 +473,512 @@ struct JourneyView: View {
         ]
     }
 
-    private func milestoneRow(_ milestone: Milestone, isLast: Bool) -> some View {
+    private func milestoneRow(_ milestone: Milestone, index: Int, isLast: Bool) -> some View {
         let currentXP = profile?.totalXP ?? 0
         let isUnlocked = currentXP >= milestone.xpRequired
+        let isUpcoming = index == upcomingMilestoneIndex
+        let isCurrent = isUnlocked && (index == milestones.count - 1 || currentXP < milestones[index + 1].xpRequired)
         let journeyMilestone = JourneyMilestone(title: milestone.title, icon: milestone.icon, color: milestone.color, xpRequired: milestone.xpRequired)
 
-        return HStack(spacing: 10) {
-            // Timeline column
+        return HStack(alignment: .top, spacing: isDark ? 10 : 14) {
+            // Timeline column (Story 6.1.1)
             VStack(spacing: 0) {
-                MilestoneBadgeView(
-                    milestone: journeyMilestone,
-                    isUnlocked: isUnlocked,
-                    style: badgeStyle
-                )
+                // Junction dot + badge (Story 6.1.1)
+                if isDark {
+                    MilestoneBadgeView(
+                        milestone: journeyMilestone,
+                        isUnlocked: isUnlocked,
+                        style: badgeStyle
+                    )
+                } else {
+                    ZStack {
+                        // Current position — glowing pulse ring
+                        if isCurrent {
+                            Circle()
+                                .stroke(
+                                    LinearGradient.caribbeanGradientOcean,
+                                    lineWidth: 2
+                                )
+                                .frame(width: 46, height: 46)
+                                .opacity(0.15 * currentPositionPulse)
+                                .blur(radius: 8)
 
+                            Circle()
+                                .stroke(
+                                    LinearGradient.caribbeanGradientOcean,
+                                    lineWidth: 1.5
+                                )
+                                .frame(width: 42, height: 42)
+                                .opacity(0.4 * currentPositionPulse)
+                        }
+
+                        // Upcoming — golden shimmer ring
+                        if isUpcoming {
+                            Circle()
+                                .stroke(
+                                    LinearGradient.caribbeanGradientSand,
+                                    lineWidth: 1.5
+                                )
+                                .frame(width: 44, height: 44)
+                                .opacity(0.3)
+                        }
+
+                        // Icon circle
+                        ZStack {
+                            Circle()
+                                .fill(
+                                    isUnlocked
+                                        ? LinearGradient(
+                                            colors: [milestone.color, milestone.color.opacity(0.7)],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        )
+                                        : (isUpcoming
+                                            ? LinearGradient(
+                                                colors: [Color(hex: "F59E0B").opacity(0.12), Color(hex: "FB923C").opacity(0.08)],
+                                                startPoint: .top,
+                                                endPoint: .bottom
+                                            )
+                                            : LinearGradient(
+                                                colors: [Color.caribbeanMist.opacity(0.10), Color.caribbeanMist.opacity(0.06)],
+                                                startPoint: .top,
+                                                endPoint: .bottom
+                                            ))
+                                )
+                                .frame(width: 38, height: 38)
+
+                            if !isUnlocked {
+                                Circle()
+                                    .strokeBorder(
+                                        isUpcoming
+                                            ? Color(hex: "F59E0B").opacity(0.25)
+                                            : Color.caribbeanBorderSubtle,
+                                        style: isUpcoming ? StrokeStyle(lineWidth: 1) : StrokeStyle(lineWidth: 1, dash: [3, 3]),
+                                        antialiased: true
+                                    )
+                                    .frame(width: 38, height: 38)
+                            }
+
+                            Image(systemName: isUnlocked ? milestone.icon : (isUpcoming ? milestone.icon : "lock.fill"))
+                                .font(.system(size: isUnlocked ? 16 : 13, weight: .medium))
+                                .foregroundStyle(
+                                    isUnlocked
+                                        ? AnyShapeStyle(.white)
+                                        : (isUpcoming
+                                            ? AnyShapeStyle(Color(hex: "F59E0B"))
+                                            : AnyShapeStyle(Color.caribbeanMist))
+                                )
+                        }
+                    }
+                    .frame(width: 46)
+                }
+
+                // Connector line (Story 6.1.1)
                 if !isLast {
-                    Rectangle()
-                        .fill(isUnlocked ? milestone.color.opacity(0.3) : .gray.opacity(0.15))
-                        .frame(width: 2, height: 20)
+                    if isDark {
+                        let nextUnlocked = (index + 1 < milestones.count) && (currentXP >= milestones[index + 1].xpRequired)
+                        ZStack {
+                            if isUnlocked && nextUnlocked {
+                                // Flowing gradient connector
+                                RoundedRectangle(cornerRadius: 1.5)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [milestone.color.opacity(0.6), milestones[min(index + 1, milestones.count - 1)].color.opacity(0.6)],
+                                            startPoint: UnitPoint(x: 0.5, y: -timelineFlowPhase),
+                                            endPoint: UnitPoint(x: 0.5, y: 1 - timelineFlowPhase)
+                                        )
+                                    )
+                                    .frame(width: 2.5)
+                                    .shadow(color: milestone.color.opacity(0.2), radius: 4)
+                            } else if isUnlocked && !nextUnlocked {
+                                // Transitional connector — solid fading to dashed
+                                VStack(spacing: 0) {
+                                    RoundedRectangle(cornerRadius: 1)
+                                        .fill(milestone.color.opacity(0.4))
+                                        .frame(width: 2.5)
+                                    Rectangle()
+                                        .fill(.white.opacity(0.08))
+                                        .frame(width: 2)
+                                        .mask(
+                                            VStack(spacing: 5) {
+                                                ForEach(0..<3, id: \.self) { _ in
+                                                    Rectangle().frame(height: 3)
+                                                }
+                                                Spacer(minLength: 0)
+                                            }
+                                        )
+                                }
+                            } else {
+                                // Locked — dashed
+                                Rectangle()
+                                    .fill(.white.opacity(0.06))
+                                    .frame(width: 2)
+                                    .mask(
+                                        VStack(spacing: 5) {
+                                            ForEach(0..<4, id: \.self) { _ in
+                                                Rectangle().frame(height: 3)
+                                            }
+                                            Spacer(minLength: 0)
+                                        }
+                                    )
+                            }
+                        }
+                        .frame(maxHeight: .infinity)
+                    } else {
+                        // Check if the next milestone is also unlocked for the connector
+                        let nextUnlocked = (index + 1 < milestones.count) && (currentXP >= milestones[index + 1].xpRequired)
+                        ZStack {
+                            if isUnlocked && nextUnlocked {
+                                // Fully unlocked connector — flowing gradient
+                                RoundedRectangle(cornerRadius: 1.5)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [Color(hex: "0EA5E9"), Color(hex: "06B6D4"), Color(hex: "14B8A6")],
+                                            startPoint: UnitPoint(x: 0.5, y: -timelineFlowPhase),
+                                            endPoint: UnitPoint(x: 0.5, y: 1 - timelineFlowPhase)
+                                        )
+                                    )
+                                    .frame(width: 3, height: 28)
+                                    // Soft turquoise glow
+                                    .shadow(color: Color.caribbeanOcean.opacity(0.08), radius: 4)
+                            } else if isUnlocked && !nextUnlocked {
+                                // Transitional connector — gradient fade to dashed
+                                VStack(spacing: 0) {
+                                    RoundedRectangle(cornerRadius: 1.5)
+                                        .fill(LinearGradient.caribbeanGradientOcean)
+                                        .frame(width: 3, height: 14)
+                                    Rectangle()
+                                        .fill(Color.caribbeanMist.opacity(0.15))
+                                        .frame(width: 2, height: 14)
+                                        .mask(
+                                            VStack(spacing: 6) {
+                                                ForEach(0..<2, id: \.self) { _ in
+                                                    Rectangle().frame(height: 4)
+                                                }
+                                            }
+                                        )
+                                }
+                            } else {
+                                // Locked connector — dashed
+                                Rectangle()
+                                    .fill(Color.caribbeanMist.opacity(0.15))
+                                    .frame(width: 2, height: 28)
+                                    .mask(
+                                        VStack(spacing: 6) {
+                                            ForEach(0..<3, id: \.self) { _ in
+                                                Rectangle().frame(height: 4)
+                                            }
+                                        }
+                                    )
+                            }
+                        }
+                    }
                 }
             }
 
-            // Content
-            VStack(alignment: .leading, spacing: 1) {
-                Text(milestone.title)
-                    .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(isDark ? .white.opacity(isUnlocked ? 1 : 0.4) : (isUnlocked ? .caribbeanInk : .caribbeanMist))
+            // Content card (Story 6.1.2)
+            if isDark {
+                // Dark mode — premium milestone cards
+                VStack(alignment: .leading, spacing: 6) {
+                    HStack {
+                        Text(milestone.title)
+                            .font(.system(size: 14, weight: .bold, design: .rounded))
+                            .foregroundStyle(
+                                isUnlocked
+                                    ? AnyShapeStyle(LinearGradient(
+                                        colors: [.white, .white.opacity(0.85)],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    ))
+                                    : (isUpcoming
+                                        ? AnyShapeStyle(Color.white.opacity(0.7))
+                                        : AnyShapeStyle(Color.white.opacity(0.3)))
+                            )
 
-                Text(formattedXP(milestone.xpRequired) + " " + L.xpRequired)
-                    .font(.system(size: 10))
-                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-            }
+                        Spacer()
 
-            Spacer()
+                        if isUnlocked {
+                            // Glowing achievement capsule
+                            HStack(spacing: 4) {
+                                Image(systemName: "checkmark.seal.fill")
+                                    .font(.system(size: 10))
+                                Text(formattedXP(milestone.xpRequired) + " XP")
+                                    .font(.system(size: 10, weight: .bold, design: .rounded))
+                            }
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [milestone.color, milestone.color.opacity(0.7)],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 3)
+                            .background(
+                                Capsule()
+                                    .fill(milestone.color.opacity(0.12))
+                                    .overlay(
+                                        Capsule()
+                                            .strokeBorder(milestone.color.opacity(0.2), lineWidth: 0.5)
+                                    )
+                            )
+                        } else if isUpcoming {
+                            // Pulsing "Next up" badge
+                            Text("Next up")
+                                .font(.system(size: 9, weight: .heavy, design: .rounded))
+                                .tracking(0.5)
+                                .foregroundStyle(Color(hex: "fbbf24"))
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 3)
+                                .background(
+                                    Capsule()
+                                        .fill(Color(hex: "fbbf24").opacity(0.1))
+                                        .overlay(
+                                            Capsule()
+                                                .strokeBorder(Color(hex: "fbbf24").opacity(0.2), lineWidth: 0.5)
+                                        )
+                                )
+                                .opacity(0.7 + 0.3 * currentPositionPulse)
+                        }
+                    }
 
-            if isUnlocked {
-                Image(systemName: "checkmark.circle.fill")
-                    .font(.system(size: 14))
-                    .foregroundStyle(.green)
+                    if isUnlocked {
+                        Text(formattedXP(milestone.xpRequired) + " " + L.xpRequired)
+                            .font(.system(size: 11, weight: .medium))
+                            .foregroundStyle(.white.opacity(0.35))
+                    } else if isUpcoming {
+                        // Progress bar toward this milestone
+                        let xpNeeded = milestone.xpRequired
+                        let progress = xpNeeded > 0 ? min(Double(currentXP) / Double(xpNeeded), 1.0) : 0
+
+                        VStack(alignment: .leading, spacing: 4) {
+                            GeometryReader { geo in
+                                ZStack(alignment: .leading) {
+                                    Capsule()
+                                        .fill(.white.opacity(0.06))
+                                        .frame(height: 5)
+                                    Capsule()
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [Color(hex: "fbbf24"), Color(hex: "f59e0b")],
+                                                startPoint: .leading,
+                                                endPoint: .trailing
+                                            )
+                                        )
+                                        .frame(width: max(5, geo.size.width * progress), height: 5)
+                                        .shadow(color: Color(hex: "fbbf24").opacity(0.3), radius: 4, y: 0)
+                                }
+                            }
+                            .frame(height: 5)
+
+                            Text("\(formattedXP(currentXP)) / \(formattedXP(xpNeeded)) XP")
+                                .font(.system(size: 10, weight: .medium))
+                                .foregroundStyle(.white.opacity(0.35))
+                        }
+                    } else {
+                        // Locked — XP hint
+                        HStack(spacing: 4) {
+                            Image(systemName: "lock.fill")
+                                .font(.system(size: 8))
+                            Text("\(formattedXP(milestone.xpRequired)) XP to unlock")
+                                .font(.system(size: 10, weight: .medium))
+                        }
+                        .foregroundStyle(.white.opacity(0.2))
+                    }
+                }
+                .padding(.vertical, 10)
+                .padding(.horizontal, 12)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background {
+                    ZStack {
+                        if isUpcoming {
+                            // Golden glow card
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .fill(Color(hex: "fbbf24").opacity(0.04))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                        .strokeBorder(
+                                            LinearGradient(
+                                                colors: [Color(hex: "fbbf24").opacity(0.20), Color(hex: "f59e0b").opacity(0.10)],
+                                                startPoint: .topLeading,
+                                                endPoint: .bottomTrailing
+                                            ),
+                                            lineWidth: 0.5
+                                        )
+                                )
+                        } else if isUnlocked {
+                            // Unlocked card with milestone color accent
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [milestone.color.opacity(0.06), milestone.color.opacity(0.02)],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                        .strokeBorder(milestone.color.opacity(0.12), lineWidth: 0.5)
+                                )
+                        } else {
+                            // Locked card — very subtle
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .fill(.white.opacity(0.02))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                        .strokeBorder(.white.opacity(0.04), lineWidth: 0.5)
+                                )
+                        }
+                    }
+                }
+                .shadow(
+                    color: isUnlocked
+                        ? milestone.color.opacity(0.12)
+                        : (isUpcoming ? Color(hex: "fbbf24").opacity(0.08) : .clear),
+                    radius: 6,
+                    y: 2
+                )
+            } else {
+                // Light mode — premium milestone cards
+                VStack(alignment: .leading, spacing: 4) {
+                    HStack {
+                        Text(milestone.title)
+                            .font(.system(size: 14, weight: .bold))
+                            .foregroundStyle(isUnlocked ? Color.caribbeanInk : Color.caribbeanMist)
+
+                        Spacer()
+
+                        if isUnlocked {
+                            // Achievement badge — gold ribbon capsule
+                            HStack(spacing: 3) {
+                                Image(systemName: "checkmark.seal.fill")
+                                    .font(.system(size: 10))
+                                Text(formattedXP(milestone.xpRequired) + " XP")
+                                    .font(.system(size: 10, weight: .bold, design: .rounded))
+                            }
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [Color(hex: "F59E0B"), Color(hex: "FB923C")],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 3)
+                            .background(
+                                Capsule()
+                                    .fill(Color(hex: "F59E0B").opacity(0.08))
+                            )
+                        } else if isUpcoming {
+                            // "Almost there!" pulsing badge
+                            Text("Almost there!")
+                                .font(.system(size: 9, weight: .bold))
+                                .foregroundStyle(
+                                    LinearGradient.caribbeanGradientSand
+                                )
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 3)
+                                .background(
+                                    Capsule()
+                                        .fill(Color(hex: "F59E0B").opacity(0.08))
+                                )
+                                .opacity(0.7 + 0.3 * currentPositionPulse)
+                        }
+                    }
+
+                    if isUnlocked {
+                        Text(formattedXP(milestone.xpRequired) + " " + L.xpRequired)
+                            .font(.system(size: 11))
+                            .foregroundStyle(Color.caribbeanPlum)
+                    } else if isUpcoming {
+                        // Progress bar toward this milestone
+                        let xpNeeded = milestone.xpRequired
+                        let progress = xpNeeded > 0 ? min(Double(currentXP) / Double(xpNeeded), 1.0) : 0
+
+                        VStack(alignment: .leading, spacing: 3) {
+                            GeometryReader { geo in
+                                ZStack(alignment: .leading) {
+                                    Capsule()
+                                        .fill(Color.caribbeanRecessed)
+                                        .frame(height: 5)
+                                    Capsule()
+                                        .fill(LinearGradient.caribbeanGradientSand)
+                                        .frame(width: max(5, geo.size.width * progress), height: 5)
+                                }
+                            }
+                            .frame(height: 5)
+
+                            Text("\(formattedXP(currentXP)) / \(formattedXP(xpNeeded)) XP")
+                                .font(.system(size: 10))
+                                .foregroundStyle(Color.caribbeanPlum)
+                        }
+                    } else {
+                        // Locked — XP required hint
+                        HStack(spacing: 4) {
+                            Image(systemName: "lock.fill")
+                                .font(.system(size: 8))
+                            Text("\(formattedXP(milestone.xpRequired)) XP to unlock")
+                                .font(.system(size: 10))
+                        }
+                        .foregroundStyle(Color.caribbeanMist)
+                    }
+                }
+                .padding(.vertical, 8)
+                .padding(.horizontal, 10)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background {
+                        // Frost trough — 3D recessed milestone card
+                        let accentColor: Color = isUpcoming ? Color(hex: "F59E0B") : (isUnlocked ? milestone.color : Color.gray)
+                        let accentOpacity: Double = isUpcoming ? 0.12 : (isUnlocked ? 0.08 : 0.03)
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(Color(red: 0.93, green: 0.94, blue: 0.96))
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(accentColor.opacity(accentOpacity))
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [
+                                            Color(red: 0.78, green: 0.80, blue: 0.85).opacity(0.25),
+                                            Color.clear,
+                                            Color.white.opacity(0.16)
+                                        ],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    )
+                                )
+                            RoundedRectangle(cornerRadius: 20)
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [
+                                            Color.white.opacity(0.68),
+                                            Color.white.opacity(0.28),
+                                            Color.white.opacity(0.48)
+                                        ],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    ),
+                                    lineWidth: 0.5
+                                )
+                            VStack(spacing: 0) {
+                                Rectangle()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [.white.opacity(0.50), .white.opacity(0.12), .clear],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        )
+                                    )
+                                    .frame(height: 12)
+                                Spacer(minLength: 0)
+                            }
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                        }
+                        .shadow(color: accentColor.opacity(isUnlocked ? 0.12 : 0.04), radius: 5, y: 2)
+                }
             }
         }
+        .padding(.vertical, 3)
     }
 
     private func formattedXP(_ xp: Int) -> String {
@@ -468,48 +1002,108 @@ struct JourneyView: View {
         let xpNeeded = profile?.xpForNextLevel ?? 100
 
         return VStack(spacing: 16) {
-            // Hero: Level ring + XP bar
+            // Hero: Level ring + XP bar (Story 6.1.3 — enhanced for light mode)
             HStack(spacing: 16) {
                 // Circular level badge
                 ZStack {
-                    Circle()
-                        .stroke(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea").opacity(0.15), Color(hex: "#764ba2").opacity(0.15)],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 4
-                        )
-                        .frame(width: 64, height: 64)
-
-                    Circle()
-                        .trim(from: 0, to: progress)
-                        .stroke(
-                            LinearGradient(
-                                colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            style: StrokeStyle(lineWidth: 4, lineCap: .round)
-                        )
-                        .frame(width: 64, height: 64)
-                        .rotationEffect(.degrees(-90))
-
-                    VStack(spacing: 0) {
-                        Text("\(level)")
-                            .font(.system(size: 22, weight: .bold, design: .rounded))
-                            .foregroundStyle(
+                    if !isDark {
+                        // Story 6.1.3 — Ambient rotating ring (like a compass on a ship)
+                        Circle()
+                            .stroke(
                                 LinearGradient(
-                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
-                                    startPoint: .top,
-                                    endPoint: .bottom
+                                    colors: [Color(hex: "0EA5E9"), Color(hex: "FB7185"), Color(hex: "FDE68A")],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 2
+                            )
+                            .frame(width: 68, height: 68)
+                            .opacity(0.4)
+                            .rotationEffect(.degrees(levelRingRotation))
+                            .onAppear {
+                                guard !reduceMotion else { return }
+                                withAnimation(.linear(duration: 20).repeatForever(autoreverses: false)) {
+                                    levelRingRotation = 360
+                                }
+                            }
+
+                        // Progress track (faded)
+                        Circle()
+                            .stroke(Color.caribbeanRecessed, lineWidth: 4)
+                            .frame(width: 60, height: 60)
+
+                        // Progress fill — caribbean ocean gradient
+                        Circle()
+                            .trim(from: 0, to: progress)
+                            .stroke(
+                                LinearGradient.caribbeanGradientOcean,
+                                style: StrokeStyle(lineWidth: 4, lineCap: .round)
+                            )
+                            .frame(width: 60, height: 60)
+                            .rotationEffect(.degrees(-90))
+
+                        // Badge circle fill
+                        Circle()
+                            .fill(
+                                LinearGradient(
+                                    colors: [Color(hex: "0EA5E9"), Color(hex: "06B6D4"), Color(hex: "14B8A6")],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
                                 )
                             )
-                        Text(L.level.uppercased())
-                            .font(.system(size: 8, weight: .semibold))
-                            .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanPlum)
-                            .tracking(1)
+                            .frame(width: 48, height: 48)
+                            .shadow(color: Color.caribbeanOcean.opacity(0.20), radius: 8, y: 2)
+
+                        VStack(spacing: 0) {
+                            Text("\(level)")
+                                .font(.system(size: 20, weight: .bold, design: .rounded))
+                                .foregroundStyle(.white)
+                            Text(L.level.uppercased())
+                                .font(.system(size: 7, weight: .semibold))
+                                .foregroundStyle(.white.opacity(0.7))
+                                .tracking(1)
+                        }
+                    } else {
+                        // Dark mode — original treatment
+                        Circle()
+                            .stroke(
+                                LinearGradient(
+                                    colors: [Color(hex: "#667eea").opacity(0.15), Color(hex: "#764ba2").opacity(0.15)],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                lineWidth: 4
+                            )
+                            .frame(width: 64, height: 64)
+
+                        Circle()
+                            .trim(from: 0, to: progress)
+                            .stroke(
+                                LinearGradient(
+                                    colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ),
+                                style: StrokeStyle(lineWidth: 4, lineCap: .round)
+                            )
+                            .frame(width: 64, height: 64)
+                            .rotationEffect(.degrees(-90))
+
+                        VStack(spacing: 0) {
+                            Text("\(level)")
+                                .font(.system(size: 22, weight: .bold, design: .rounded))
+                                .foregroundStyle(
+                                    LinearGradient(
+                                        colors: [Color(hex: "#667eea"), Color(hex: "#764ba2")],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    )
+                                )
+                            Text(L.level.uppercased())
+                                .font(.system(size: 8, weight: .semibold))
+                                .foregroundStyle(.white.opacity(0.4))
+                                .tracking(1)
+                        }
                     }
                 }
 
@@ -519,20 +1113,22 @@ struct JourneyView: View {
                         .font(.system(size: 20, weight: .bold, design: .rounded))
                         .foregroundStyle(isDark ? .white : .caribbeanInk)
 
-                    // Progress bar
+                    // Progress bar (Story 6.1.3 — ocean gradient fill in light mode)
                     GeometryReader { geo in
                         ZStack(alignment: .leading) {
                             Capsule()
-                                .fill(isDark ? .white.opacity(0.08) : .black.opacity(0.06))
+                                .fill(isDark ? .white.opacity(0.08) : Color.caribbeanRecessed)
                                 .frame(height: 6)
 
                             Capsule()
                                 .fill(
-                                    LinearGradient(
-                                        colors: [Color(hex: "#667eea"), Color(hex: "#a855f7")],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
+                                    isDark
+                                        ? AnyShapeStyle(LinearGradient(
+                                            colors: [Color(hex: "#667eea"), Color(hex: "#a855f7")],
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        ))
+                                        : AnyShapeStyle(LinearGradient.caribbeanGradientOcean)
                                 )
                                 .frame(width: max(6, geo.size.width * progress), height: 6)
                         }
@@ -586,8 +1182,6 @@ struct JourneyView: View {
             }
             .staggeredReveal(index: 2)
         }
-        .padding(16)
-        .background(GlassCardBackground())
     }
 
     private func overviewStat(icon: String, value: String, label: String, color: Color) -> some View {
@@ -617,8 +1211,6 @@ struct JourneyView: View {
                     .staggeredReveal(index: index)
             }
         }
-        .padding(14)
-        .background(GlassCardBackground())
     }
 
     private func gameTypeRow(_ type: GameType) -> some View {
@@ -636,44 +1228,117 @@ struct JourneyView: View {
             }
         }()
 
+        let accentColor = colors.first ?? .purple
+
         return HStack(spacing: 0) {
             ZStack {
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(
-                        LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
-                    )
-                    .frame(width: 32, height: 32)
+                if !isDark {
+                    // Light mode: rounded-square icon with shadow
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(
+                            LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
+                        )
+                        .frame(width: 36, height: 36)
+                        .shadow(color: accentColor.opacity(0.20), radius: 6, y: 2)
+                } else {
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(
+                            LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing)
+                        )
+                        .frame(width: 32, height: 32)
+                }
 
                 Image(systemName: gameTypeIcon(type))
-                    .font(.system(size: 14))
+                    .font(.system(size: isDark ? 14 : 15))
                     .foregroundStyle(.white)
             }
-            .padding(.trailing, 8)
+            .padding(.trailing, isDark ? 8 : 10)
 
             Text(type.displayName)
                 .font(.system(size: 13, weight: .semibold))
                 .foregroundStyle(isDark ? .white : .caribbeanInk)
                 .frame(width: 80, alignment: .leading)
 
-            statPill(value: "\(records.count)", label: L.sessions.lowercased())
-            statPill(value: formattedXP(totalScore), label: L.xp)
-            statPill(value: "\(Int(accuracy))%", label: L.accuracy.lowercased())
+            statPill(value: "\(records.count)", label: L.sessions.lowercased(), accent: accentColor)
+            statPill(value: formattedXP(totalScore), label: L.xp, accent: accentColor)
+            statPill(value: "\(Int(accuracy))%", label: L.accuracy.lowercased(), accent: accentColor)
         }
-        .padding(10)
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.03))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 16)
-                        .strokeBorder(isDark ? .white.opacity(0.06) : .black.opacity(0.06), lineWidth: 1)
+        .padding(isDark ? 10 : 12)
+        .background {
+            if isDark {
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(.white.opacity(0.04))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .strokeBorder(.white.opacity(0.06), lineWidth: 1)
+                    )
+            } else {
+                // Frost trough — recessed glass card with accent tint
+                ZStack {
+                    // Recessed frost base
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    // Subtle game-specific accent tint
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(accentColor.opacity(0.04))
+                    // Inner shadow for depth
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
+                                    Color.clear,
+                                    Color.white.opacity(0.15)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    // Glass rim border
+                    RoundedRectangle(cornerRadius: 20)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [
+                                    Color.white.opacity(0.65),
+                                    Color.white.opacity(0.30),
+                                    Color.white.opacity(0.45)
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            ),
+                            lineWidth: 0.5
+                        )
+                    // White surface highlight — top band
+                    VStack(spacing: 0) {
+                        Rectangle()
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color.white.opacity(0.45),
+                                        Color.white.opacity(0.10),
+                                        Color.clear
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                            .frame(height: 18)
+                        Spacer(minLength: 0)
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                }
+                .shadow(
+                    color: accentColor.opacity(0.06),
+                    radius: 4, y: 2
                 )
-        )
+            }
+        }
     }
 
-    private func statPill(value: String, label: String) -> some View {
-        VStack(spacing: 1) {
+    private func statPill(value: String, label: String, accent: Color = .clear) -> some View {
+        VStack(spacing: 2) {
             Text(value)
-                .font(.system(size: 13, weight: .bold))
+                .font(.system(size: 13, weight: .bold, design: .rounded))
                 .foregroundStyle(isDark ? .white.opacity(0.8) : .caribbeanInk)
             Text(label)
                 .font(.system(size: 9))
@@ -686,41 +1351,58 @@ struct JourneyView: View {
 
     private var streakSection: some View {
         VStack(spacing: 10) {
-            HStack(spacing: 4) {
-                Text("\(profile?.streakDays ?? 0)")
-                    .font(.system(size: 42, weight: .bold, design: .rounded))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [.orange, .yellow],
-                            startPoint: .top,
-                            endPoint: .bottom
+                HStack(spacing: 4) {
+                    Text("\(profile?.streakDays ?? 0)")
+                        .font(.system(size: 42, weight: .bold, design: .rounded))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.orange, .yellow],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
                         )
-                    )
-                Text(L.days)
-                    .font(.system(size: 15, weight: .medium))
-                    .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
-                    .padding(.top, 10)
-            }
-            .staggeredReveal(index: 0)
+                    Text(L.days)
+                        .font(.system(size: 15, weight: .medium))
+                        .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
+                        .padding(.top, 10)
+                }
+                .staggeredReveal(index: 0)
 
-            Text(L.keepLearningEveryDay)
-                .font(.system(size: 11))
-                .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
-                .multilineTextAlignment(.center)
-                .staggeredReveal(index: 1)
-        }
-        .padding(14)
-        .background(GlassCardBackground())
+                Text(L.keepLearningEveryDay)
+                    .font(.system(size: 11))
+                    .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
+                    .multilineTextAlignment(.center)
+                    .staggeredReveal(index: 1)
+            }
+            .frame(maxWidth: .infinity)
     }
 
     // MARK: - Reset Progress
 
     private var resetProgressButton: some View {
-        VStack(spacing: 10) {
+        VStack(spacing: isDark ? 10 : 12) {
             HStack(spacing: 6) {
-                Image(systemName: "exclamationmark.triangle.fill")
-                    .font(.system(size: 10, weight: .medium))
-                    .foregroundStyle(.red.opacity(0.6))
+                if !isDark {
+                    // Frost warning icon circle
+                    ZStack {
+                        Circle()
+                            .fill(Color.red.opacity(0.06))
+                            .frame(width: 24, height: 24)
+                        Image(systemName: "exclamationmark.triangle.fill")
+                            .font(.system(size: 10, weight: .medium))
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [.red.opacity(0.65), .orange.opacity(0.55)],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                    }
+                } else {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .font(.system(size: 10, weight: .medium))
+                        .foregroundStyle(.red.opacity(0.6))
+                }
                 Text(L.startFreshDescription)
                     .font(.system(size: 11))
                     .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanMist)
@@ -740,24 +1422,69 @@ struct JourneyView: View {
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 12)
                 .background(
-                    RoundedRectangle(cornerRadius: 12)
-                        .fill(
-                            LinearGradient(
-                                colors: [.red.opacity(0.7), .red.opacity(0.5)],
-                                startPoint: .leading,
-                                endPoint: .trailing
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(
+                                LinearGradient(
+                                    colors: isDark
+                                        ? [.red.opacity(0.7), .red.opacity(0.5)]
+                                        : [Color(red: 0.88, green: 0.22, blue: 0.22), Color(red: 0.78, green: 0.18, blue: 0.18)],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
                             )
-                        )
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .strokeBorder(.white.opacity(0.15), lineWidth: 1)
-                        )
+                        // 3D top highlight band
+                        if !isDark {
+                            VStack(spacing: 0) {
+                                Rectangle()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [.white.opacity(0.38), .white.opacity(0.08), .clear],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        )
+                                    )
+                                    .frame(height: 16)
+                                Spacer(minLength: 0)
+                            }
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                        }
+                        // Inner bottom shadow for inset feel
+                        if !isDark {
+                            VStack(spacing: 0) {
+                                Spacer(minLength: 0)
+                                Rectangle()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [.clear, .black.opacity(0.12)],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        )
+                                    )
+                                    .frame(height: 10)
+                            }
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                        }
+                        RoundedRectangle(cornerRadius: 12)
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: isDark
+                                        ? [.white.opacity(0.15), .white.opacity(0.15)]
+                                        : [.white.opacity(0.40), .white.opacity(0.10), .white.opacity(0.05)],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                ),
+                                lineWidth: isDark ? 1 : 0.75
+                            )
+                    }
+                    .shadow(
+                        color: isDark ? .clear : Color(red: 0.7, green: 0.1, blue: 0.1).opacity(0.25),
+                        radius: 8, y: 3
+                    )
                 )
             }
             .buttonStyle(LumenPressStyle(weight: .soft))
         }
-        .padding(14)
-        .background(GlassCardBackground())
     }
 
     // MARK: - Wisdom Quote
@@ -837,27 +1564,21 @@ struct JourneyView: View {
         .scaleEffect(quoteScale)
         .frame(maxWidth: .infinity)
         .frame(height: 180)
-        .padding(.horizontal, 20)
-        .padding(.vertical, 20)
-        .background(
-            ZStack {
-                GlassCardBackground()
-
-                // Glow pulse on tap
-                RoundedRectangle(cornerRadius: 22)
-                    .fill(
-                        RadialGradient(
-                            colors: [
-                                Color(hex: "#c084fc").opacity(quoteGlowIntensity * 0.15),
-                                Color(hex: "#f0abfc").opacity(quoteGlowIntensity * 0.06),
-                                .clear
-                            ],
-                            center: .center,
-                            startRadius: 0,
-                            endRadius: 200
-                        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 22)
+                .fill(
+                    RadialGradient(
+                        colors: [
+                            Color(hex: "#c084fc").opacity(quoteGlowIntensity * 0.15),
+                            Color(hex: "#f0abfc").opacity(quoteGlowIntensity * 0.06),
+                            .clear
+                        ],
+                        center: .center,
+                        startRadius: 0,
+                        endRadius: 200
                     )
-            }
+                )
+                .allowsHitTesting(false)
         )
         .onTapGesture { cycleQuote() }
     }

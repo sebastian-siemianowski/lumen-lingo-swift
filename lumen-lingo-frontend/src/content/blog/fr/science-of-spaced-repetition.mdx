@@ -1,0 +1,102 @@
+---
+title: "La Science de la Répétition Espacée : Comment Votre Cerveau Retient Vraiment le Vocabulaire"
+description: "Plongez dans les neurosciences de la répétition espacée. Apprenez comment la courbe d'oubli, l'effet de test et la consolidation par le sommeil travaillent ensemble pour créer des souvenirs linguistiques durables."
+publishedAt: "2026-03-08"
+author: "LumenShore Team"
+category: "Learning Science"
+tags: ["répétition espacée", "neurosciences", "mémoire", "courbe d'oubli", "apprentissage"]
+featured: true
+---
+
+La répétition espacée est la pierre angulaire de l'apprentissage efficace du vocabulaire. Presque toutes les applications de cartes mémoire modernes prétendent l'utiliser — mais rares sont celles qui expliquent *pourquoi* cela fonctionne au niveau neuronal, ou *comment* leur implémentation diffère des alternatives. Cet article détaille la science telle que nous la comprenons actuellement.
+
+## La Courbe d'Oubli est Votre Ennemie (et Votre Alliée)
+
+En 1885, le psychologue allemand Hermann Ebbinghaus a mémorisé des listes de syllabes absurdes et s'est testé à différents intervalles pour cartographier le rythme auquel il oubliait. Le résultat — la **courbe d'oubli** — montre que la mémoire décline de manière exponentielle après l'apprentissage, avec la perte la plus rapide intervenant dans les premières 24 heures.
+
+Les chiffres approximatifs sont :
+
+| Temps Après Apprentissage | Rétention Sans Révision |
+|--------------------------|------------------------|
+| 20 minutes | ~60 % |
+| 1 heure | ~45 % |
+| 1 jour | ~35 % |
+| 1 semaine | ~20 % |
+| 1 mois | ~10 % |
+
+Les nouvelles sont décourageantes si on les lit de manière littérale : vous oubliez la majorité de ce que vous apprenez dans les 24 heures. Mais la courbe d'oubli a une propriété cruciale : **chaque révision réussie aplatit la courbe**.
+
+<Callout variant="info">
+Après la première révision réussie d'un mot, votre taux de rétention chute d'environ 100 % à 70 % en une semaine. Après la deuxième révision, il ne chute qu'à 80 % en une semaine. Après la troisième, il peut être de 90 % après un mois. Chaque récupération renforce le souvenir de façon exponentielle.
+</Callout>
+
+## Ce Qui Se Passe Réellement dans Votre Cerveau
+
+Lorsque vous apprenez un nouveau mot — par exemple *mariposa* (papillon en espagnol) — votre cerveau crée un réseau d'activité neuronale dans l'hippocampe. Ce réseau est initialement fragile : les connexions sont faibles, et le souvenir peut être facilement déplacé par de nouvelles informations.
+
+Chaque fois que vous récupérez avec succès *mariposa* de la mémoire (en le voyant sur une carte mémoire et en vous souvenant de la signification), plusieurs processus se produisent :
+
+1. **Potentialisation à long terme (PLT)** : Les connexions synaptiques entre les neurones du réseau se renforcent
+2. **Synthèse protéique** : De nouvelles protéines sont créées pour stabiliser physiquement les connexions synaptiques
+3. **Consolidation dans le néocortex** : Progressivement, le souvenir est copié de l'hippocampe vers le stockage à long terme dans le néocortex
+4. **Élagage des réseaux** : Les associations non pertinentes s'affaiblissent, rendant la voie de récupération plus efficace
+
+### Le Rôle Critique du Sommeil
+
+Le transfert de l'hippocampe vers le néocortex ne se fait pas instantanément. Il se produit principalement pendant le **sommeil à ondes lentes** — les phases profondes de votre cycle de sommeil. Pendant ces phases, votre cerveau « rejoue » les expériences de la journée, renforçant les connexions neuronales associées à un apprentissage significatif.
+
+C'est pourquoi étudier tard le soir puis dormir produit une meilleure rétention qu'étudier le matin puis rester éveillé toute la journée : la consolidation par le sommeil a besoin que le souvenir soit frais.
+
+## L'Effet de Test : Pourquoi la Récupération Surpasse la Révision
+
+Lire une carte mémoire et « reconnaître » la réponse est fondamentalement différent de **récupérer** la réponse de mémoire. La recherche est claire : la récupération active produit une rétention 2 à 3 fois plus forte que la révision passive.
+
+C'est l'**effet de test** — l'acte d'essayer de se souvenir de quelque chose renforce le souvenir beaucoup plus que de simplement le revoir.
+
+<FeatureHighlight title="Rappel Actif d'Abord" icon="🧠">
+Les cartes LumenLingo sont conçues pour le rappel actif : vous voyez une face d'abord et tentez de récupérer l'autre avant de retourner. Ce modèle délibéré d'effort-puis-vérification maximise le bénéfice de l'effet de test à chaque carte.
+</FeatureHighlight>
+
+### Les Difficultés Désirables
+
+Le psychologue Robert Bjork utilise le terme **« difficultés désirables »** pour décrire les conditions d'apprentissage qui rendent l'encodage plus difficile mais améliorent la rétention à long terme. La récupération espacée est la quintessence de la difficulté désirable : il est plus difficile de se souvenir d'un mot que vous n'avez pas vu depuis une semaine que d'un mot que vous avez vu il y a cinq secondes — mais cet effort est précisément ce qui rend le souvenir durable.
+
+## Comment la Répétition Espacée de LumenLingo Est Implémentée
+
+L'algorithme de LumenLingo intègre plusieurs signaux au-delà du simple correct/incorrect :
+
+### Latence de Réponse
+Le temps que vous mettez à répondre contient de l'information. Une réponse correcte en 800 ms suggère une forte rétention ; une réponse correcte en 4 000 ms suggère un souvenir fragile. L'algorithme ajuste les intervalles en conséquence — les souvenirs « lents corrects » reçoivent des intervalles plus courts que les « rapides corrects ».
+
+### Évaluation de Confiance
+Après chaque carte, vous indiquez votre niveau de confiance par geste. Cela donne à l'algorithme un signal subjectif pour compléter les données objectives de chronométrage. Surestimer votre confiance ? L'algorithme apprend votre schéma de calibration et s'ajuste.
+
+### Planification par Interférence
+Des mots à consonance similaire (*pero/perro*, *casa/cosa*) interfèrent entre eux en mémoire. L'algorithme les programme en **paires contrastives** — les montrant proches dans le temps pour forcer votre cerveau à encoder les distinctions, pas seulement les significations individuelles.
+
+### Difficulté des Mots
+Toutes les cartes ne sont pas créées égales. Les concepts abstraits (*libertad*) sont plus difficiles que les noms concrets (*mesa*) ; les faux amis (*actual* ≠ actual) sont plus difficiles que les mots transparents (*hospital*). L'algorithme ajuste les intervalles initiaux en fonction de la difficulté attendue.
+
+## La Courbe d'Apprentissage
+
+Avec une pratique constante utilisant la répétition espacée, les appreneurs typiques voient ce schéma :
+
+- **Semaine 1-2 :** Lent. Peu de mots connus, haute frustration, oubli fréquent
+- **Semaine 3-4 :** Accélération. Les premiers mots atteignent des intervalles de plus d'une semaine. La confiance grandit
+- **Mois 2-3 :** Élan. Le vocabulaire s'accumule, la reconnaissance dans des médias réels commence
+- **Mois 4-6 :** Effet composé. Les intervalles de certains mots atteignent des mois. Le vocabulaire actif est de 500 à 1 000+
+- **Mois 6-12 :** Maîtrise. Les mots du vocabulaire de base sont dans la mémoire à long terme. Les mots avancés entrent régulièrement
+
+<Callout variant="check">
+La recherche montre que 6 à 8 répétitions espacées de manière optimale sont suffisantes pour placer un mot typique en mémoire à long terme. Pour 1 000 mots à 10 cartes nouvelles par jour, c'est environ 3 à 4 mois — si vos intervalles sont correctement optimisés.
+</Callout>
+
+## Pourquoi la Plupart des Gens Abandonnent (et Comment Éviter Cela)
+
+Le plus grand ennemi de la répétition espacée n'est pas l'algorithme — c'est la **constance**. La majorité des apprenants en langues abandonnent dans les 30 premiers jours, pas parce que le système ne fonctionne pas, mais parce que les résultats ne sont pas immédiatement visibles.
+
+C'est la raison pour laquelle les éléments de design « non scientifiques » de LumenLingo sont importants. Les paysages sonores ambiants, les visuels calmes et l'expérience satisfaisante des gestes ne sont pas des gadgets : c'est une **ingénierie de rétention**. Un outil que vous aimez utiliser est un outil que vous utilisez régulièrement — et la régularité est ce qui détermine le succès de la répétition espacée.
+
+---
+
+*Votre mémoire est plus puissante que vous ne le pensez.* **Téléchargez LumenLingo** et laissez la science de la répétition espacée travailler pour vous, une carte parfaitement chronométrée à la fois.

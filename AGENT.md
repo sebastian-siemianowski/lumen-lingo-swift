@@ -6,7 +6,7 @@
 
 **LumenLingo** is a language-learning iOS app (iPad + iPhone) ported from a React/Vite web app. It features three game modes—Flashcards, Grammar, and Word Builder—with stunning full-quality cosmic backgrounds, breathing orb animations, and quantum-flow aurora effects.
 
-- **Bundle ID**: `com.sebastiansiemianowski.lumenlingo`
+- **Bundle ID**: `com.lumenshore.lumenlingo`
 - **Min deployment**: iOS 17.0
 - **Architecture**: MVVM with SwiftUI + `@Observable` macro
 - **Persistence**: SwiftData
@@ -120,10 +120,12 @@ To add a new language pair:
 ### 3. Authentication & Sync
 
 Both are protocol-based with mock implementations:
-- `AuthService` protocol → `MockAuthService` returns hardcoded user `"Sebastian"` / `"sebastian@test.com"`
+- `AuthService` protocol → `MockAuthService` returns hardcoded user `"Sebastian"` / `"testuser@lumenlingo.com"`
 - `SyncService` protocol → `MockSyncService` simulates network delays
+- `ClerkAuthService` → real Clerk SDK integration (behind `FeatureFlagService.clerkAuthEnabled`)
 
 To add real auth (e.g. Firebase, Sign in with Apple): implement the protocols.
+See [`CLERK_MIGRATION_RUNBOOK.md`](CLERK_MIGRATION_RUNBOOK.md) for deployment, rollback, and monitoring procedures.
 
 ### 4. Backgrounds (Phase 6 — Full Quality)
 

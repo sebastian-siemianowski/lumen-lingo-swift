@@ -6,6 +6,7 @@ import Foundation
 /// Port of React's translations.jsx (6,388 lines).
 /// The React app uses source language to determine UI language, not device locale.
 @Observable
+@MainActor
 final class TranslationService {
     static let shared = TranslationService()
 

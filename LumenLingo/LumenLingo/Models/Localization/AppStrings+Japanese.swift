@@ -6,7 +6,12 @@ extension AppStrings {
         tabHome: "ホーム",
         tabStats: "統計",
         tabPremium: "プレミアム",
+        tabSettings: "設定",
         tabProfile: "プロフィール",
+
+        // Settings Header
+        settingsHeaderTitle: "環境設定",
+        settingsHeaderSubtitle: "自分好みにカスタマイズ",
 
         // Dashboard
         greeting: { "こんにちは、\($0)さん！" },
@@ -133,6 +138,7 @@ extension AppStrings {
         keepLearningEveryDay: "毎日学習して連続記録を維持しましょう！",
 
         // Profile
+        account: "アカウント",
         appearance: "外観",
         sound: "サウンド",
         sync: "同期",
@@ -143,9 +149,12 @@ extension AppStrings {
         nebula: "ネビュラ",
         learner: "学習者",
         xp: "XP",
+        words: "単語",
+        activityCalendar: "アクティビティカレンダー",
+        dayStreak: "日連続",
         darkMode: "ダークモード",
-        cosmicDarkTheme: "コズミックダークテーマが有効です",
-        lightModeActive: "ライトモードが有効です",
+        cosmicDarkTheme: "コズミックナイト",
+        lightModeActive: "トロピカルアイランド",
         animationSpeed: "アニメーション速度",
         slow: "遅い",
         normal: "普通",
@@ -431,6 +440,132 @@ extension AppStrings {
         upgradeMessagePro: "あなたは進歩の言葉を話しています——すべてのレッスンが世界でのあなたの声を形作ります。",
         upgradeMessageElite: "あなたの言葉には献身の重みがあります——卓越があなたの母語になりつつあります。",
         upgradeMessageRoyal: "言葉であなたの旅に冠を——伝説の言語はあなたのものです。",
-        upgradeMessageTrial: "ロイヤルな章が始まります——あなたの言語的可能性の全物語が待っています。"
+        upgradeMessageTrial: "ロイヤルな章が始まります——あなたの言語的可能性の全物語が待っています。",
+        celebrationWelcomeTo: "ようこそ",
+        celebrationWelcomeBackTo: "おかえりなさい",
+        celebrationContinue: "続ける",
+        celebrationFirstSubscription: "ご登録ありがとうございます！",
+
+        // MARK: - Subscription Onboarding (Story 7.3)
+        onboardingExploreTitle: "プレミアム機能",
+        onboardingTryIt: "試してみる！",
+        onboardingExplore: "探索する",
+        onboardingNext: "次へ",
+        onboardingSkip: "自分で探索します",
+        onboardingSummaryTitle: "解放された機能",
+        onboardingSummaryFeatures: "個の新機能",
+        onboardingWelcomeBack: "おかえりなさい！ご利用可能な機能",
+        onboardingDone: "はじめましょう！",
+
+        // MARK: - Value Framing (Story 7.4)
+        valueFramingTitle: "あなたの投資",
+        valueFramingJust: "たった",
+        valueFramingPerDay: "/日",
+        valueFramingFeatures: "機能",
+        valueFramingCoffeePro: "朝のコーヒーより安い",
+        valueFramingCoffeeElite: "サンドイッチより安い",
+        valueFramingCoffeeRoyal: "ランチ1回分より安い",
+        valueFramingWordsLearned: "{count}個の単語を学びました — {tier}なら1単語あたりわずか{cost}",
+        valueFramingProjected: "ほとんどの学習者が初月に300以上の単語を習得します",
+
+        // MARK: - Legal Consent
+        legalConsentTitle: "始める前に",
+        legalConsentSubtitle: "LumenLingoを引き続きご利用いただくため、ポリシーをご確認ください",
+        privacyPolicyTitle: "プライバシーポリシー",
+        termsOfServiceTitle: "利用規約",
+        legalVersion: "バージョン 2.3",
+        legalLastUpdated: "最終更新日：2026年3月23日",
+        legalPrivacySummary: "LumenLingoはLumenShore Ltdが運営しています。私たちはあなたのプライバシーを尊重し、個人データの保護に努めています。このポリシーはウェブサイトとiOSアプリの両方に適用されます。",
+        legalTermsSummary: "この利用規約は、LumenShore Ltdが運営するLumenLingoモバイルアプリケーションの使用を規定します。LumenLingoを使用することにより、これらの規約に同意したことになります。",
+        legalPrivacyHighlight1: "学習データはお使いのデバイスと個人のiCloudアカウントに保存されます",
+        legalPrivacyHighlight2: "Cookieフリーの Vercel Analytics を使用 — ウェブサイトにトラッキングCookieなし",
+        legalPrivacyHighlight3: "Sentryがバグ修正を支援（セッションリプレイには同意が必要）",
+        legalPrivacyHighlight4: "個人データを第三者に販売することは一切ありません",
+        legalTermsHighlight1: "無料プランとプレミアムプランを提供 — サブスクリプションはApple経由で管理",
+        legalTermsHighlight2: "コンテンツと学習の進捗はあなたのものです",
+        legalTermsHighlight3: "製品改善のために集約された匿名データを使用することがあります",
+        legalTermsHighlight4: "イングランドおよびウェールズの法律に準拠",
+        legalAcceptAll: "同意する",
+        legalDecline: "拒否",
+        legalDeclineTitle: "よろしいですか？",
+        legalDeclineMessage: "LumenLingoをご利用いただくには、プライバシーポリシーと利用規約に同意していただく必要があります。",
+        legalDeclineConfirm: "拒否して終了",
+        legalReadFull: "ポリシー全文を読む",
+        legalScrollToAccept: "スクロールして確認",
+
+        // MARK: - Legal Re-consent
+        legalReconsentTitle: "ポリシーを更新しました",
+        legalReconsentBody: "利用規約とプライバシーポリシーに変更を加えました。内容をご確認のうえ、同意してください。",
+        legalReconsentAccept: "同意する",
+        legalReconsentDecline: "同意しない",
+
+        // MARK: - EULA
+        eulaTitle: "エンドユーザーライセンス契約",
+        eulaSummary: "本ライセンス契約は、LumenShore Ltdが Apple App Store を通じて配布する LumenLingo アプリの利用を規定するものです。",
+        eulaHighlight1: "個人の語学学習のための非独占的で取り消し可能なライセンス",
+        eulaHighlight2: "ティア別のアクセス — 無料、Pro、Elite、Royal会員",
+        eulaHighlight3: "学習データはお客様のもの、アプリコンテンツは当社のもの",
+        eulaHighlight4: "App Storeの要件に基づくApple固有の条件を含む",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "サブスクリプションは、現在の期間終了の24時間前までにキャンセルしない限り、毎月自動更新されます。",
+        subscriptionPaymentNotice: "購入確認時にApple IDアカウントに請求されます。",
+        subscriptionManageCancel: "設定 → Apple ID → サブスクリプションで管理またはキャンセルできます。",
+        subscriptionTrialNotice: "14日間のRoyalトライアル（無料）。トライアル終了後、無料プランに移行します。",
+        restorePurchases: "購入を復元",
+        subscriptionLegalPrefix: "サブスクリプションの登録により、当社の",
+        subscriptionLegalAnd: "および"
+,
+
+        // MARK: - Subscription Compliance (CCR 2013 / CRD)
+        subscriptionTraderInfo: "LumenShore Limited提供（イングランド・ウェールズ登録 #09607326）。VAT: GB 270411929。",
+        subscriptionCoolingOff: "購入により、デジタルコンテンツへの即時アクセスに同意し、14日間のクーリングオフ権を放棄することを了承します。",
+        subscriptionRefundNotice: "返金はAppleが処理します。返金のリクエストはreportaproblem.apple.comをご利用ください。",
+        subscriptionContractDuration: "月額自動更新契約。最低利用期間なし。",
+        subscriptionEUConsumerRights: "EU消費者権利指令(2011/83/EU)および英国2013年消費者契約規則に基づくお客様の権利は完全に遵守されています。契約前情報、撤回権、隠れた料金の禁止が適用されます。",
+        subscriptionCancelSteps: "解約するには：設定を開く > 自分の名前をタップ > サブスクリプション > LumenLingo > サブスクリプションをキャンセル。解約は現在の請求期間の終了時に有効になります。",
+        subscriptionVATNotice: "価格には適用税が含まれています。すべての購入はAppleが処理・請求します。実際の価格は地域と通貨によって異なる場合があります。",
+
+        // MARK: - Account Deletion
+        deleteAccount: "アカウントを削除",
+        deleteAccountWarning: "すべての学習データ、進捗、連続記録、設定が完全に削除されます。この操作は取り消せません。",
+        deleteAccountConfirm: "すべて削除",
+        deletingAccount: "アカウントを削除中…",
+        clearingUserData: "ユーザーデータを消去中",
+        accountDeleted: "アカウント削除完了",
+
+        // MARK: - GDPR Data Export
+        gdprExportTitle: "データをエクスポート",
+        gdprExportDesc: "すべての個人データを機械可読なJSONファイルとしてダウンロードします。これはGDPR第20条に基づくあなたの権利です — すべてのユーザーに無料。",
+        gdprExportButton: "個人データをエクスポート",
+        gdprExportSuccess: "データのエクスポートが完了しました",
+        gdprExportEmpty: "エクスポートする個人データがありません",
+
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+
+        companyName: "Lumenshore Limited",
+        companyNumber: "会社番号 09607326",
+        companyRegistration: "イングランドおよびウェールズ登記",
+        companyAddress: "Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+        companyVAT: "VAT登録番号: GB 270411929",
+
+        cookiePolicyTitle: "Cookieポリシー",
+        cookieSummary: "本ポリシーでは、LumenLingoのウェブサイトが使用するCookie、ローカルストレージ、類似技術について、使用理由および管理方法をご説明いたします。",
+        cookieHighlight1: "同意設定の保存のために厳密に必要なCookieが1つのみ",
+        cookieHighlight2: "広告やソーシャルメディアのトラッキングCookieは一切使用しません",
+        cookieHighlight3: "エラー監視にSentry、パフォーマンス分析にVercel Analyticsを使用",
+        cookieHighlight4: "Global Privacy ControlおよびDo Not Trackシグナルを尊重します",
+        legalUpdated: "2025年3月更新",
+
+        viewMyDataTitle: "マイデータを表示",
+        viewMyDataDesc: "LumenLingoがあなたについて保存しているデータを確認",
+        dataProfileInfo: "プロフィール情報",
+        dataGameRecords: "ゲーム進捗記録",
+        dataMasteredItems: "習得済みアイテム",
+        dataFavorites: "お気に入りカテゴリ",
+        dataICloudSync: "iCloud同期",
+        dataEnabled: "有効",
+        dataDisabled: "無効",
+        dataStorageEstimate: "推定ストレージ"
     )
 }

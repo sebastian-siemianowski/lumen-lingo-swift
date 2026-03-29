@@ -52,8 +52,7 @@ struct WeeklyTrendWidget: View {
     }
 
     var body: some View {
-        GlassPanelWrapper {
-            VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 12) {
                 HStack {
                     Text(L.thisWeekVsLastWeek)
                         .font(.system(size: 11))
@@ -72,36 +71,39 @@ struct WeeklyTrendWidget: View {
                 }
 
                 // Dual line chart
-                GeometryReader { geo in
-                    let w = geo.size.width
-                    let h = geo.size.height
+                ZStack {
+                    GeometryReader { geo in
+                        let w = geo.size.width
+                        let h = geo.size.height
 
-                    // Last week (dimmed)
-                    linePath(data: lastWeek.days, width: w, height: h)
-                        .stroke(
-                            isDark ? Color.white.opacity(0.15) : Color.black.opacity(0.1),
-                            style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round, dash: [4, 4])
-                        )
+                        // Last week (dimmed)
+                        linePath(data: lastWeek.days, width: w, height: h)
+                            .stroke(
+                                isDark ? Color.white.opacity(0.15) : Color.black.opacity(0.1),
+                                style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round, dash: [4, 4])
+                            )
 
-                    // This week (vivid)
-                    linePath(data: thisWeek.days, width: w, height: h)
-                        .stroke(
-                            LinearGradient(
-                                colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            ),
-                            style: StrokeStyle(lineWidth: 2.5, lineCap: .round, lineJoin: .round)
-                        )
+                        // This week (vivid)
+                        linePath(data: thisWeek.days, width: w, height: h)
+                            .stroke(
+                                LinearGradient(
+                                    colors: [Color(hex: "#10b981"), Color(hex: "#06b6d4")],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                ),
+                                style: StrokeStyle(lineWidth: 2.5, lineCap: .round, lineJoin: .round)
+                            )
 
-                    // Dots for this week
-                    ForEach(0..<7, id: \.self) { i in
-                        let x = w * CGFloat(i) / 6
-                        let y = h - (CGFloat(thisWeek.days[i]) / CGFloat(maxVal) * h)
-                        Circle()
-                            .fill(Color(hex: "#10b981"))
-                            .frame(width: 6, height: 6)
-                            .position(x: x, y: y)
+                        // Dots for this week
+                        ForEach(0..<7, id: \.self) { i in
+                            let x = w * CGFloat(i) / 6
+                            let y = h - (CGFloat(thisWeek.days[i]) / CGFloat(maxVal) * h)
+                            Circle()
+                                .fill(Color(hex: "#10b981"))
+                                .frame(width: 6, height: 6)
+                                .shadow(color: isDark ? .clear : Color(hex: "#10b981").opacity(0.30), radius: 3, y: 1)
+                                .position(x: x, y: y)
+                        }
                     }
                 }
                 .frame(height: 80)
@@ -124,7 +126,6 @@ struct WeeklyTrendWidget: View {
                     }
                 }
             }
-        }
     }
 
     private func linePath(data: [Int], width: CGFloat, height: CGFloat) -> Path {

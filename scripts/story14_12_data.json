@@ -1,0 +1,142 @@
+{
+  "en": {
+    "assumptionOfRisk": {
+      "heading": "Assumption of Risk & Release of Claims",
+      "riskHeading": "Assumption of Risk",
+      "risk1": "YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT YOUR USE OF THE SERVICE IS AT YOUR SOLE RISK.",
+      "risk2": "You assume all risks associated with the use of the Service, including but not limited to risks related to: the accuracy of translations and linguistic content; the suitability of content for your learning goals; data loss from device failure or cloud sync issues; service interruptions or termination; changes to features or content; and reliance on any content for professional or personal decisions.",
+      "releaseHeading": "Release of Claims",
+      "release1": "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOU HEREBY RELEASE AND FOREVER DISCHARGE LUMENSHORE LIMITED, ITS DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, SUCCESSORS, AND ASSIGNS FROM ANY AND ALL CLAIMS, DEMANDS, AND DAMAGES OF EVERY KIND AND NATURE, KNOWN AND UNKNOWN, ARISING OUT OF OR IN ANY WAY CONNECTED WITH YOUR USE OF THE SERVICE.",
+      "release2": "If you are a California resident, you waive California Civil Code Section 1542, which provides: \"A general release does not extend to claims that the creditor or releasing party does not know or suspect to exist in his or her favor at the time of executing the release and that, if known by him or her, would have materially affected his or her settlement with the debtor or released party.\"",
+      "carveOutHeading": "Statutory Protections",
+      "carveOut1": "Nothing in this section excludes or limits any liability that cannot be excluded or limited under applicable law, including your statutory rights under the Consumer Rights Act 2015 (UK) or the EU Consumer Rights Directive.",
+      "carveOut2": "This release does not apply to claims for death or personal injury caused by Lumenshore's negligence, or for fraud or fraudulent misrepresentation."
+    }
+  },
+  "es": {
+    "assumptionOfRisk": {
+      "heading": "Asuncion de Riesgo y Liberacion de Reclamaciones",
+      "riskHeading": "Asuncion de Riesgo",
+      "risk1": "USTED RECONOCE Y ACEPTA EXPRESAMENTE QUE EL USO DEL SERVICIO ES BAJO SU EXCLUSIVO RIESGO.",
+      "risk2": "Usted asume todos los riesgos asociados con el uso del Servicio, incluidos, entre otros, riesgos relacionados con: la precision de las traducciones y el contenido linguistico; la idoneidad del contenido para sus objetivos de aprendizaje; la perdida de datos por fallo del dispositivo o problemas de sincronizacion en la nube; interrupciones o terminacion del servicio; cambios en funciones o contenido; y la confianza en cualquier contenido para decisiones profesionales o personales.",
+      "releaseHeading": "Liberacion de Reclamaciones",
+      "release1": "EN LA MAXIMA MEDIDA PERMITIDA POR LA LEY APLICABLE, USTED LIBERA Y EXIME PERMANENTEMENTE A LUMENSHORE LIMITED, SUS DIRECTORES, FUNCIONARIOS, EMPLEADOS, AGENTES, SUCESORES Y CESIONARIOS DE TODA RECLAMACION, DEMANDA Y DANO DE CUALQUIER TIPO Y NATURALEZA, CONOCIDO O DESCONOCIDO, QUE SURJA DE O ESTE DE ALGUNA MANERA RELACIONADO CON SU USO DEL SERVICIO.",
+      "release2": "Si usted es residente de California, renuncia a la Seccion 1542 del Codigo Civil de California, que establece: \"Una liberacion general no se extiende a reclamaciones que el acreedor o la parte liberadora no conoce o sospecha que existen a su favor en el momento de ejecutar la liberacion y que, de haberlas conocido, habrian afectado materialmente su acuerdo con el deudor o la parte liberada.\"",
+      "carveOutHeading": "Protecciones Legales",
+      "carveOut1": "Nada en esta seccion excluye o limita ninguna responsabilidad que no pueda ser excluida o limitada conforme a la ley aplicable, incluidos sus derechos legales en virtud de la Ley de Derechos del Consumidor de 2015 (RU) o la Directiva de Derechos del Consumidor de la UE.",
+      "carveOut2": "Esta liberacion no se aplica a reclamaciones por muerte o lesiones personales causadas por negligencia de Lumenshore, ni por fraude o declaracion fraudulenta."
+    }
+  },
+  "fr": {
+    "assumptionOfRisk": {
+      "heading": "Acceptation des Risques et Decharge de Reclamations",
+      "riskHeading": "Acceptation des Risques",
+      "risk1": "VOUS RECONNAISSEZ ET ACCEPTEZ EXPRESSEMENT QUE VOTRE UTILISATION DU SERVICE EST A VOS SEULS RISQUES.",
+      "risk2": "Vous assumez tous les risques lies a l'utilisation du Service, y compris mais sans s'y limiter, les risques lies a : l'exactitude des traductions et du contenu linguistique ; l'adequation du contenu a vos objectifs d'apprentissage ; la perte de donnees due a une defaillance de l'appareil ou a des problemes de synchronisation cloud ; les interruptions ou la cessation du service ; les modifications des fonctionnalites ou du contenu ; et la confiance accordee a tout contenu pour des decisions professionnelles ou personnelles.",
+      "releaseHeading": "Decharge de Reclamations",
+      "release1": "DANS LA MESURE MAXIMALE AUTORISEE PAR LA LOI APPLICABLE, VOUS LIBEREZ ET DECHARGE DEFINITIVEMENT LUMENSHORE LIMITED, SES ADMINISTRATEURS, DIRIGEANTS, EMPLOYES, AGENTS, SUCCESSEURS ET CESSIONNAIRES DE TOUTES RECLAMATIONS, DEMANDES ET DOMMAGES DE TOUTE NATURE, CONNUS ET INCONNUS, DECOULANT DE OU DE QUELQUE MANIERE QUE CE SOIT LIES A VOTRE UTILISATION DU SERVICE.",
+      "release2": "Si vous etes resident de Californie, vous renoncez a l'article 1542 du Code civil de Californie, qui dispose : « Une decharge generale ne s'etend pas aux reclamations que le creancier ou la partie qui accorde la decharge ne connait pas ou ne soupconne pas d'exister en sa faveur au moment de l'execution de la decharge et qui, si elles avaient ete connues, auraient materiellememt affecte son reglement avec le debiteur ou la partie decharge. »",
+      "carveOutHeading": "Protections Legales",
+      "carveOut1": "Rien dans cette section n'exclut ni ne limite une responsabilite qui ne peut etre exclue ou limitee en vertu du droit applicable, y compris vos droits statutaires en vertu de la Loi sur les Droits des Consommateurs de 2015 (RU) ou de la Directive Europeenne sur les Droits des Consommateurs.",
+      "carveOut2": "Cette decharge ne s'applique pas aux reclamations pour deces ou dommages corporels causes par la negligence de Lumenshore, ni pour fraude ou declaration frauduleuse."
+    }
+  },
+  "de": {
+    "assumptionOfRisk": {
+      "heading": "Risikouebernahme und Anspruchsverzicht",
+      "riskHeading": "Risikouebernahme",
+      "risk1": "SIE ERKENNEN AUSDRUECKLICH AN UND STIMMEN ZU, DASS DIE NUTZUNG DES DIENSTES AUF IHR ALLEINIGES RISIKO ERFOLGT.",
+      "risk2": "Sie uebernehmen alle mit der Nutzung des Dienstes verbundenen Risiken, einschliesslich, aber nicht beschraenkt auf Risiken im Zusammenhang mit: der Genauigkeit von Uebersetzungen und sprachlichen Inhalten; der Eignung der Inhalte fuer Ihre Lernziele; Datenverlust durch Geraeteausfall oder Cloud-Synchronisierungsprobleme; Dienstunterbrechungen oder -beendigungen; Aenderungen an Funktionen oder Inhalten; und dem Vertrauen auf Inhalte fuer berufliche oder persoenliche Entscheidungen.",
+      "releaseHeading": "Anspruchsverzicht",
+      "release1": "IM GROESSTEN GESETZLICH ZULAESSIGEN UMFANG ENTLASSEN UND BEFREIEN SIE HIERMIT LUMENSHORE LIMITED, IHRE GESCHAEFTSFUEHRER, LEITENDEN ANGESTELLTEN, MITARBEITER, VERTRETER, NACHFOLGER UND RECHTSNACHFOLGER VON ALLEN ANSPRUECHEN, FORDERUNGEN UND SCHAEDEN JEDER ART UND NATUR, BEKANNT UND UNBEKANNT, DIE AUS IHRER NUTZUNG DES DIENSTES ENTSTEHEN ODER IN IRGENDEINER WEISE DAMIT ZUSAMMENHAENGEN.",
+      "release2": "Wenn Sie in Kalifornien ansaessig sind, verzichten Sie auf Abschnitt 1542 des California Civil Code, der besagt: \"Eine allgemeine Freistellung erstreckt sich nicht auf Ansprueche, von denen der Glaeubiger oder die freistellende Partei zum Zeitpunkt der Ausfuehrung der Freistellung nichts weiss oder vermutet und die, wenn sie bekannt gewesen waeren, die Regelung mit dem Schuldner oder der freigestellten Partei wesentlich beeinflusst haetten.\"",
+      "carveOutHeading": "Gesetzlicher Schutz",
+      "carveOut1": "Nichts in diesem Abschnitt schliesst eine Haftung aus oder beschraenkt sie, die nach geltendem Recht nicht ausgeschlossen oder beschraenkt werden kann, einschliesslich Ihrer gesetzlichen Rechte nach dem Consumer Rights Act 2015 (UK) oder der EU-Verbraucherrechterichtlinie.",
+      "carveOut2": "Dieser Anspruchsverzicht gilt nicht fuer Ansprueche wegen Tod oder Koerperverletzung durch Fahrlaessigkeit von Lumenshore oder wegen Betrugs oder arglistiger Taeuschung."
+    }
+  },
+  "ja": {
+    "assumptionOfRisk": {
+      "heading": "リスクの引き受けおよび請求の免除",
+      "riskHeading": "リスクの引き受け",
+      "risk1": "お客様は、本サービスのご利用がお客様の自己責任であることを明示的に認め、同意するものとします。",
+      "risk2": "お客様は、本サービスの利用に関連するすべてのリスクを引き受けます。これには、翻訳および言語コンテンツの正確性、学習目標に対するコンテンツの適合性、デバイスの故障やクラウド同期の問題によるデータ損失、サービスの中断または終了、機能またはコンテンツの変更、および職業的または個人的な判断のためにコンテンツに依存することに関連するリスクが含まれますが、これらに限定されません。",
+      "releaseHeading": "請求の免除",
+      "release1": "適用法が許容する最大限の範囲において、お客様は、本サービスの利用に起因する、またはいかなる形で関連するあらゆる種類および性質の請求、要求、および損害（既知および未知を問わず）について、Lumenshore Limited、その取締役、役員、従業員、代理人、承継人、および譲受人を免除し、永久に免責するものとします。",
+      "release2": "お客様がカリフォルニア州の居住者である場合、カリフォルニア州民法第1542条を放棄するものとします。同条は次のように規定しています：「一般的な免除は、免除の実行時に債権者または免除当事者が自己に有利に存在することを知らないまたは疑わない請求であって、知っていれば債務者または免除当事者との和解に重大な影響を与えたであろう請求には及ばない。」",
+      "carveOutHeading": "法定保護",
+      "carveOut1": "本条のいかなる規定も、適用法の下で排除または制限できない責任を排除または制限するものではなく、消費者権利法2015（UK）またはEU消費者権利指令に基づくお客様の法定の権利を含みます。",
+      "carveOut2": "本免除は、Lumenshoreの過失による死亡または人身傷害に対する請求、または詐欺もしくは詐欺的不実表示に対する請求には適用されません。"
+    }
+  },
+  "pt": {
+    "assumptionOfRisk": {
+      "heading": "Assuncao de Risco e Liberacao de Reclamacoes",
+      "riskHeading": "Assuncao de Risco",
+      "risk1": "VOCE RECONHECE E CONCORDA EXPRESSAMENTE QUE O USO DO SERVICO E POR SUA CONTA E RISCO EXCLUSIVO.",
+      "risk2": "Voce assume todos os riscos associados ao uso do Servico, incluindo, mas nao se limitando a, riscos relacionados a: precisao das traducoes e conteudo linguistico; adequacao do conteudo aos seus objetivos de aprendizagem; perda de dados por falha do dispositivo ou problemas de sincronizacao na nuvem; interrupcoes ou encerramento do servico; alteracoes em funcionalidades ou conteudo; e confianca em qualquer conteudo para decisoes profissionais ou pessoais.",
+      "releaseHeading": "Liberacao de Reclamacoes",
+      "release1": "NA MAXIMA EXTENSAO PERMITIDA PELA LEI APLICAVEL, VOCE LIBERA E EXONERA PERMANENTEMENTE A LUMENSHORE LIMITED, SEUS DIRETORES, FUNCIONARIOS, EMPREGADOS, AGENTES, SUCESSORES E CESSIONARIOS DE TODAS E QUAISQUER RECLAMACOES, DEMANDAS E DANOS DE QUALQUER TIPO E NATUREZA, CONHECIDOS E DESCONHECIDOS, DECORRENTES DE OU DE QUALQUER FORMA RELACIONADOS AO SEU USO DO SERVICO.",
+      "release2": "Se voce e residente da California, renuncia a Secao 1542 do Codigo Civil da California, que dispoe: \"Uma liberacao geral nao se estende a reclamacoes que o credor ou a parte que concede a liberacao nao conhece ou suspeita que existam em seu favor no momento da execucao da liberacao e que, se conhecidas, teriam materialmente afetado seu acordo com o devedor ou a parte liberada.\"",
+      "carveOutHeading": "Protecoes Legais",
+      "carveOut1": "Nada nesta secao exclui ou limita qualquer responsabilidade que nao possa ser excluida ou limitada nos termos da lei aplicavel, incluindo seus direitos estatutarios ao abrigo da Lei dos Direitos do Consumidor de 2015 (RU) ou da Diretiva Europeia dos Direitos do Consumidor.",
+      "carveOut2": "Esta liberacao nao se aplica a reclamacoes por morte ou lesao pessoal causada por negligencia da Lumenshore, ou por fraude ou declaracao fraudulenta."
+    }
+  },
+  "pl": {
+    "assumptionOfRisk": {
+      "heading": "Przyjecie Ryzyka i Zwolnienie z Roszczen",
+      "riskHeading": "Przyjecie Ryzyka",
+      "risk1": "WYRAZNIE PRZYJMUJESZ DO WIADOMOSCI I ZGADZASZ SIE, ZE KORZYSTANIE Z USLUGI ODBYWA SIE NA TWOJE WYLACZNE RYZYKO.",
+      "risk2": "Przyjmujesz na siebie wszystkie ryzyka zwiazane z korzystaniem z Uslugi, w tym miedzy innymi ryzyka zwiazane z: dokladnoscia tlumaczen i tresci jezykowych; przydatnoscia tresci do Twoich celow edukacyjnych; utrata danych spowodowana awaria urzadzenia lub problemami z synchronizacja w chmurze; przerwami lub zakonczeniem uslugi; zmianami w funkcjach lub tresciach; oraz poleganiem na jakichkolwiek tresciach przy podejmowaniu decyzji zawodowych lub osobistych.",
+      "releaseHeading": "Zwolnienie z Roszczen",
+      "release1": "W NAJSZERSZYM ZAKRESIE DOZWOLONYM PRZEZ OBOWIAZUJACE PRAWO, NINIEJSZYM ZWALNIASZ I NA ZAWSZE UWALNIASZ LUMENSHORE LIMITED, JEJ DYREKTOROW, FUNKCJONARIUSZY, PRACOWNIKOW, AGENTOW, NASTEPROW I CESJONARIUSZY OD WSZELKICH ROSZCZEN, ZADAN I SZKOD WSZELKIEGO RODZAJU I NATURY, ZNANYCH I NIEZNANYCH, WYNIKAJACYCH Z LUB W JAKIKOLWIEK SPOSOB ZWIAZANYCH Z TWOIM KORZYSTANIEM Z USLUGI.",
+      "release2": "Jesli jestes mieszkancem Kalifornii, zrzekasz sie Sekcji 1542 Kodeksu Cywilnego Kalifornii, ktora stanowi: \"Ogolne zwolnienie nie obejmuje roszczen, o ktorych wierzyciel lub strona udzielajaca zwolnienia nie wie lub nie podejrzewa, ze istnieja na jego korzysci w momencie wykonania zwolnienia i ktore, gdyby byly znane, mialyby istotny wplyw na ugode z dluznikiem lub strona zwolniona.\"",
+      "carveOutHeading": "Ochrona Ustawowa",
+      "carveOut1": "Nic w tej sekcji nie wylacza ani nie ogranicza jakiejkolwiek odpowiedzialnosci, ktora nie moze byc wylaczona lub ograniczona na mocy obowiazujacego prawa, w tym Twoich praw ustawowych wynikajacych z Ustawy o Prawach Konsumenta z 2015 r. (UK) lub Dyrektywy UE o Prawach Konsumenta.",
+      "carveOut2": "To zwolnienie nie dotyczy roszczen z tytulu smierci lub obrazen ciala spowodowanych zaniedbaniem Lumenshore ani roszczen z tytulu oszustwa lub oszukancego wprowadzenia w blad."
+    }
+  },
+  "ar": {
+    "assumptionOfRisk": {
+      "heading": "تحمل المخاطر والتنازل عن المطالبات",
+      "riskHeading": "تحمل المخاطر",
+      "risk1": "أنت تقر وتوافق صراحةً على أن استخدامك للخدمة يكون على مسؤوليتك الشخصية وحدك.",
+      "risk2": "أنت تتحمل جميع المخاطر المرتبطة باستخدام الخدمة، بما في ذلك على سبيل المثال لا الحصر المخاطر المتعلقة بـ: دقة الترجمات والمحتوى اللغوي؛ ملاءمة المحتوى لأهدافك التعليمية؛ فقدان البيانات بسبب عطل الجهاز أو مشاكل المزامنة السحابية؛ انقطاع الخدمة أو إنهائها؛ التغييرات في الميزات أو المحتوى؛ والاعتماد على أي محتوى لاتخاذ قرارات مهنية أو شخصية.",
+      "releaseHeading": "التنازل عن المطالبات",
+      "release1": "إلى أقصى حد يسمح به القانون المعمول به، فإنك بموجبه تتنازل وتبرئ بشكل دائم شركة Lumenshore Limited ومديريها ومسؤوليها وموظفيها ووكلائها وخلفائها والمتنازل لهم من أي وجميع المطالبات والمتطلبات والأضرار من كل نوع وطبيعة، معروفة وغير معروفة، الناشئة عن أو المتعلقة بأي شكل من الأشكال باستخدامك للخدمة.",
+      "release2": "إذا كنت مقيماً في كاليفورنيا، فإنك تتنازل عن المادة 1542 من القانون المدني لولاية كاليفورنيا، التي تنص على: \"لا يمتد التنازل العام إلى المطالبات التي لا يعلم بها الدائن أو الطرف المتنازل أو لا يشتبه في وجودها لصالحه وقت تنفيذ التنازل والتي لو كانت معروفة لديه لأثرت جوهرياً على تسويته مع المدين أو الطرف المتنازل عنه.\"",
+      "carveOutHeading": "الحماية القانونية",
+      "carveOut1": "لا شيء في هذا القسم يستثني أو يحد من أي مسؤولية لا يمكن استثناؤها أو تحديدها بموجب القانون المعمول به، بما في ذلك حقوقك القانونية بموجب قانون حقوق المستهلك لعام 2015 (المملكة المتحدة) أو توجيه حقوق المستهلك في الاتحاد الأوروبي.",
+      "carveOut2": "لا ينطبق هذا التنازل على المطالبات المتعلقة بالوفاة أو الإصابة الشخصية الناجمة عن إهمال Lumenshore، أو عن الاحتيال أو التضليل الاحتيالي."
+    }
+  },
+  "zh": {
+    "assumptionOfRisk": {
+      "heading": "风险承担与索赔免除",
+      "riskHeading": "风险承担",
+      "risk1": "您明确承认并同意，您使用本服务的风险完全由您自行承担。",
+      "risk2": "您承担与使用本服务相关的所有风险，包括但不限于：翻译和语言内容的准确性；内容对您学习目标的适合性；因设备故障或云同步问题导致的数据丢失；服务中断或终止；功能或内容的变更；以及依赖任何内容做出职业或个人决定的风险。",
+      "releaseHeading": "索赔免除",
+      "release1": "在适用法律允许的最大范围内，您在此免除并永久解除Lumenshore Limited及其董事、高管、员工、代理人、继承人和受让人因您使用本服务而产生的或以任何方式与之相关的任何及所有索赔、要求和各种性质的损害（无论已知或未知）。",
+      "release2": "如果您是加利福尼亚州居民，您放弃加利福尼亚州民法典第1542条，该条规定：'一般免除不延伸至债权人或免除方在执行免除时不知道或不怀疑存在的有利于其的索赔，如果其知道该等索赔，将实质性影响其与债务人或被免除方的和解。'",
+      "carveOutHeading": "法定保护",
+      "carveOut1": "本条款中的任何内容均不排除或限制根据适用法律不能排除或限制的任何责任，包括您根据《2015年消费者权利法》（英国）或《欧盟消费者权利指令》享有的法定权利。",
+      "carveOut2": "本免除不适用于因Lumenshore过失导致的死亡或人身伤害索赔，或因欺诈或欺诈性虚假陈述引起的索赔。"
+    }
+  },
+  "uk": {
+    "assumptionOfRisk": {
+      "heading": "Прийняття ризикiв та звiльнення вiд претензiй",
+      "riskHeading": "Прийняття ризикiв",
+      "risk1": "ВИ ПРЯМО ВИЗНАЄТЕ ТА ПОГОДЖУЄТЕСЬ, ЩО ВИКОРИСТАННЯ СЕРВIСУ ЗДIЙСНЮЄТЬСЯ НА ВАШ ВИКЛЮЧНИЙ РИЗИК.",
+      "risk2": "Ви приймаєте на себе всi ризики, пов'язанi з використанням Сервiсу, включаючи, але не обмежуючись ризиками, пов'язаними з: точнiстю перекладiв та мовного контенту; придатнiстю контенту для ваших навчальних цiлей; втратою даних через несправнiсть пристрою або проблеми синхронiзацiї з хмарою; перебоями або припиненням роботи сервiсу; змiнами функцiй або контенту; та покладанням на будь-який контент при прийняттi професiйних або особистих рiшень.",
+      "releaseHeading": "Звiльнення вiд претензiй",
+      "release1": "У МАКСИМАЛЬНОМУ ОБСЯЗI, ДОЗВОЛЕНОМУ ЧИННИМ ЗАКОНОДАВСТВОМ, ВИ ЦIИМ ЗВIЛЬНЯЄТЕ ТА НАЗАВЖДИ ЗНIМАЄТЕ З LUMENSHORE LIMITED, ЇЇ ДИРЕКТОРIВ, ПОСАДОВИХ ОСIБ, ПРАЦIВНИКIВ, АГЕНТIВ, ПРАВОНАСТУПНИКIВ ТА ПРАВОНАБУВАЧIВ БУДЬ-ЯКI ТА ВСI ПРЕТЕНЗIЇ, ВИМОГИ ТА ЗБИТКИ БУДЬ-ЯКОГО ВИДУ ТА ХАРАКТЕРУ, ВIДОМI ТА НЕВIДОМI, ЩО ВИНИКАЮТЬ АБО БУДЬ-ЯКИМ ЧИНОМ ПОВ'ЯЗАНI З ВАШИМ ВИКОРИСТАННЯМ СЕРВIСУ.",
+      "release2": "Якщо ви є резидентом Калiфорнiї, ви вiдмовляєтесь вiд статтi 1542 Цивiльного кодексу Калiфорнiї, яка передбачає: \"Загальне звiльнення не поширюється на претензiї, про якi кредитор або сторона, що надає звiльнення, не знає або не пiдозрює про їх iснування на його користь на момент виконання звiльнення i якi, якби були вiдомi, суттєво вплинули б на його врегулювання з боржником або звiльненою стороною.\"",
+      "carveOutHeading": "Законодавчий захист",
+      "carveOut1": "Нiщо в цьому роздiлi не виключає та не обмежує будь-яку вiдповiдальнiсть, яка не може бути виключена або обмежена вiдповiдно до чинного законодавства, включаючи вашi законнi права за Законом про права споживачiв 2015 року (Великобританiя) або Директивою ЄС про права споживачiв.",
+      "carveOut2": "Це звiльнення не поширюється на претензiї за смерть або тiлеснi ушкодження, спричиненi недбалiстю Lumenshore, або за шахрайство чи шахрайське введення в оману."
+    }
+  }
+}

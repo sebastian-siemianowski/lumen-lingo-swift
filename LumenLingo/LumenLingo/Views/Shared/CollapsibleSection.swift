@@ -3,29 +3,38 @@ import SwiftUI
 // MARK: - Animation Tokens
 
 /// Centralized spring constants and timing for all CollapsibleSection animations.
-/// Expand feels "breathe open" with ~2% overshoot; collapse feels "snap shut" — crisp and decisive.
+/// Expand feels "breathe open" with gentle overshoot; collapse glides shut like silk.
 enum CollapsibleAnimationTokens {
-    /// Expand: slower response with noticeable overshoot.
-    static let expandSpring: Animation = .spring(response: 0.40, dampingFraction: 0.72, blendDuration: 0.1)
-    /// Collapse: faster, crisper, minimal overshoot.
-    static let collapseSpring: Animation = .spring(response: 0.30, dampingFraction: 0.88)
-    /// Content opacity lags height animation by 30ms to avoid empty-card flash.
-    static let revealDelay: Double = 0.03
+    /// Expand: bouncy with playful overshoot.
+    static let expandSpring: Animation = .spring(response: 0.5, dampingFraction: 0.72, blendDuration: 0.12)
+    /// Collapse: slow silk glide — luxurious deceleration.
+    static let collapseSpring: Animation = .spring(response: 0.6, dampingFraction: 0.82, blendDuration: 0.08)
+    /// Content opacity lags height animation by 40ms for a staged reveal.
+    static let revealDelay: Double = 0.04
     /// Rapid toggle debounce — ignore re-toggle within this interval.
     static let debounceInterval: TimeInterval = 0.2
 }
 
-// MARK: - Collapsible Depth Environment
+// MARK: - Collapsible Depth & Icon Kick Environment
 
 /// Environment key for tracking nesting depth of collapsible sections.
 private struct CollapsibleDepthKey: EnvironmentKey {
     static let defaultValue: Int = 0
 }
 
+/// Environment key for propagating icon kick rotation from toggle animations.
+private struct CollapsibleIconKickKey: EnvironmentKey {
+    static let defaultValue: CGFloat = 0
+}
+
 extension EnvironmentValues {
     var collapsibleDepth: Int {
         get { self[CollapsibleDepthKey.self] }
         set { self[CollapsibleDepthKey.self] = newValue }
+    }
+    var collapsibleIconKick: CGFloat {
+        get { self[CollapsibleIconKickKey.self] }
+        set { self[CollapsibleIconKickKey.self] = newValue }
     }
 }
 
@@ -238,13 +247,14 @@ struct CollapsibleSection<Header: View, Content: View>: View {
     let style: CollapsibleStyle
     let colors: [Color]
     @Binding var isCollapsed: Bool
-    var cornerRadius: CGFloat = 18
+    var cornerRadius: CGFloat = 22
     var glassWeight: GlassWeight? = nil
     var badge: CollapsibleBadge? = nil
     var category: ThemeCategory? = nil
     var isLocked: Bool = false
     var lockedTierName: String? = nil
     var lockedTierColor: Color? = nil
+    var showsDivider: Bool = true
     @ViewBuilder let header: () -> Header
     @ViewBuilder let content: () -> Content
 
@@ -259,6 +269,12 @@ struct CollapsibleSection<Header: View, Content: View>: View {
     @State private var showLockedToast = false
     @State private var wasLocked = false
     @State private var unlockCelebrating = false
+    /// Momentary glow pulse on expand/collapse for "breathing card" effect
+    @State private var toggleGlow: CGFloat = 0
+    /// Subtle card scale breathe on toggle
+    @State private var cardBreathe: CGFloat = 1.0
+    /// Icon flourish rotation kick
+    @State private var iconKick: CGFloat = 0
     private var isDark: Bool { colorScheme == .dark }
 
     /// Resolved weight: explicit override, depth-forced recessed, or auto-derived from style.
@@ -267,13 +283,13 @@ struct CollapsibleSection<Header: View, Content: View>: View {
         return glassWeight ?? GlassWeight.defaultWeight(for: style)
     }
 
-    /// Depth-adjusted corner radius: 18 → 14 → 12.
+    /// Depth-adjusted corner radius: 22 → 20 → 18.
     private var depthCornerRadius: CGFloat {
         let clampedDepth = min(depth, 2)
         switch clampedDepth {
         case 0: return cornerRadius
-        case 1: return 14
-        default: return 12
+        case 1: return 20
+        default: return 18
         }
     }
 
@@ -424,6 +440,31 @@ struct CollapsibleSection<Header: View, Content: View>: View {
 
         let expanding = isCollapsed
         let spring = expanding ? CollapsibleAnimationTokens.expandSpring : CollapsibleAnimationTokens.collapseSpring
+
+        // Card breathe: gentle puff out then settle
+        withAnimation(.spring(response: 0.3, dampingFraction: 0.55)) {
+            cardBreathe = expanding ? 1.01 : 0.993
+        }
+        withAnimation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.18)) {
+            cardBreathe = 1.0
+        }
+
+        // Border glow pulse — soft bloom
+        withAnimation(.easeOut(duration: 0.18)) {
+            toggleGlow = 1.0
+        }
+        withAnimation(.easeOut(duration: 0.6).delay(0.18)) {
+            toggleGlow = 0
+        }
+
+        // Icon flourish — rotation kick with bounce
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.45)) {
+            iconKick = expanding ? 15 : -10
+        }
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.15)) {
+            iconKick = 0
+        }
+
         withAnimation(spring) {
             isCollapsed.toggle()
         }
@@ -435,23 +476,69 @@ struct CollapsibleSection<Header: View, Content: View>: View {
     private var standardBody: some View {
         VStack(spacing: 0) {
             Button { toggle() } label: { header() }
+                .environment(\.collapsibleIconKick, iconKick)
                 .buttonStyle(CollapsibleHeaderButtonStyle())
                 .onPreferenceChange(HeaderPressedKey.self) { pressed in
                     isHeaderPressed = pressed
                 }
-                .background(
-                    isCollapsed ? AnyView(breathingGlassBackground) : AnyView(Color.clear)
-                )
 
-            // Category accent divider between header and content (Story 4.2.2)
-            if !isCollapsed, let cat = category {
-                categoryAccentDivider(cat)
+            // Luminous divider between header and content (integrated card layout)
+            if !isCollapsed, showsDivider {
+                if let cat = category {
+                    categoryAccentDivider(cat)
+                        .transition(.opacity.combined(with: .scale(scale: 0.3, anchor: .center)))
+                } else {
+                    // Default pearlescent divider for sections without a theme category
+                    Rectangle()
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    .clear,
+                                    isDark ? Color.white.opacity(0.08) : (colors.first ?? .gray).opacity(0.12),
+                                    isDark ? Color.white.opacity(0.12) : (colors.first ?? .gray).opacity(0.18),
+                                    isDark ? Color.white.opacity(0.08) : (colors.first ?? .gray).opacity(0.12),
+                                    .clear
+                                ],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(height: 0.5)
+                        .padding(.horizontal, 16)
+                        .transition(.opacity.combined(with: .scale(scale: 0.3, anchor: .center)))
+                }
             }
 
-            MeasuredContentReveal(isExpanded: !isCollapsed) {
+            MeasuredContentReveal(isExpanded: !isCollapsed, colors: colors) {
                 content()
+                    .padding(EdgeInsets(top: 4, leading: 20, bottom: 20, trailing: 20))
             }
         }
+        .scaleEffect(cardBreathe)
+        .background(
+            GlassCardBackground(cornerRadius: 24)
+        )
+        // Toggle glow pulse — luminous border flash on expand/collapse
+        .overlay(
+            RoundedRectangle(cornerRadius: 24)
+                .strokeBorder(
+                    LinearGradient(
+                        colors: [
+                            colors.first?.opacity(0.5 * toggleGlow) ?? .clear,
+                            colors.last?.opacity(0.3 * toggleGlow) ?? .clear
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 1.5
+                )
+                .allowsHitTesting(false)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 24)
+                .strokeBorder(colors[0].opacity(0.05 * longPressGlow), lineWidth: 2)
+                .allowsHitTesting(false)
+        )
         .task(id: isHeaderPressed) {
             guard isHeaderPressed else { return }
             try? await Task.sleep(for: .milliseconds(300))
@@ -820,11 +907,12 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         isCollapsed: Binding<Bool>,
         subtitle: String? = nil,
         badge: CollapsibleBadge? = nil,
-        cornerRadius: CGFloat = 18,
+        cornerRadius: CGFloat = 22,
         glassWeight: GlassWeight? = nil,
         isLocked: Bool = false,
         lockedTierName: String? = nil,
         lockedTierColor: Color? = nil,
+        showsDivider: Bool = true,
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.style = .standard
@@ -836,6 +924,7 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         self.isLocked = isLocked
         self.lockedTierName = lockedTierName
         self.lockedTierColor = lockedTierColor
+        self.showsDivider = showsDivider
         let capturedBinding = isCollapsed
         let capturedSubtitle = subtitle
         let capturedBadge = badge
@@ -863,11 +952,12 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
         isCollapsed: Binding<Bool>,
         subtitle: String? = nil,
         badge: CollapsibleBadge? = nil,
-        cornerRadius: CGFloat = 18,
+        cornerRadius: CGFloat = 22,
         glassWeight: GlassWeight? = nil,
         isLocked: Bool = false,
         lockedTierName: String? = nil,
         lockedTierColor: Color? = nil,
+        showsDivider: Bool = true,
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.init(
@@ -882,6 +972,7 @@ extension CollapsibleSection where Header == DefaultCollapsibleHeader {
             isLocked: isLocked,
             lockedTierName: lockedTierName,
             lockedTierColor: lockedTierColor,
+            showsDivider: showsDivider,
             content: content
         )
         self.category = theme.category
@@ -906,6 +997,7 @@ struct DefaultCollapsibleHeader: View {
 
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.collapsibleDepth) private var depth
+    @Environment(\.collapsibleIconKick) private var iconRotation
     @Namespace private var badgeNS
     private var isDark: Bool { colorScheme == .dark }
 
@@ -962,6 +1054,9 @@ struct DefaultCollapsibleHeader: View {
                                 )
                             )
                     }
+                    .rotationEffect(.degrees(iconRotation))
+                    .scaleEffect(isCollapsed ? 1.0 : 1.06)
+                    .animation(.spring(response: 0.4, dampingFraction: 0.6), value: isCollapsed)
 
                     // Mini lock overlay at bottom-right of icon
                     if isLocked {
@@ -1020,6 +1115,8 @@ struct DefaultCollapsibleHeader: View {
                                     : AnyShapeStyle(isDark ? Color.white.opacity(0.3) : Color.caribbeanMist)
                             )
                             .rotationEffect(.degrees(isCollapsed ? 0 : 90))
+                            .scaleEffect(isCollapsed ? 1.0 : 1.15)
+                            .animation(.spring(response: 0.35, dampingFraction: 0.55), value: isCollapsed)
                     }
                 }
             }
@@ -1044,7 +1141,7 @@ struct DefaultCollapsibleHeader: View {
 
 /// Key for propagating press state from CollapsibleHeaderButtonStyle to parent views.
 private struct HeaderPressedKey: PreferenceKey {
-    static var defaultValue = false
+    nonisolated(unsafe) static var defaultValue = false
     static func reduce(value: inout Bool, nextValue: () -> Bool) {
         value = value || nextValue()
     }
@@ -1156,7 +1253,7 @@ extension View {
 
 /// PreferenceKey for propagating measured content height up the view hierarchy.
 private struct CollapsibleContentHeightKey: PreferenceKey {
-    static var defaultValue: CGFloat = 0
+    nonisolated(unsafe) static var defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
         value = max(value, nextValue())
     }
@@ -1165,20 +1262,27 @@ private struct CollapsibleContentHeightKey: PreferenceKey {
 /// Reveals content with smooth height animation — pre-measures natural height,
 /// animates a clipping frame from 0 to the measured value, and pins content to top.
 /// Removes content from hierarchy after collapse to reclaim layout resources.
+/// Enhanced with unfurl effect: content slides down, scales from top, and fades in with a soft focus transition.
 private struct MeasuredContentReveal<C: View>: View {
     let isExpanded: Bool
+    let colors: [Color]
     @ViewBuilder let content: () -> C
 
     @State private var measuredHeight: CGFloat = 0
     @State private var hasExpanded: Bool
     @State private var contentOpacity: Double
+    @State private var unfurlOffset: CGFloat
+    @State private var unfurlScale: CGFloat
 
-    init(isExpanded: Bool, @ViewBuilder content: @escaping () -> C) {
+    init(isExpanded: Bool, colors: [Color] = [], @ViewBuilder content: @escaping () -> C) {
         self.isExpanded = isExpanded
+        self.colors = colors
         self.content = content
         // Initialize state to match initial expansion so already-expanded sections show content immediately
         self._hasExpanded = State(initialValue: isExpanded)
         self._contentOpacity = State(initialValue: isExpanded ? 1 : 0)
+        self._unfurlOffset = State(initialValue: isExpanded ? 0 : -12)
+        self._unfurlScale = State(initialValue: isExpanded ? 1 : 0.96)
     }
 
     var body: some View {
@@ -1187,6 +1291,8 @@ private struct MeasuredContentReveal<C: View>: View {
                 content()
                     .fixedSize(horizontal: false, vertical: true)
                     .opacity(contentOpacity)
+                    .offset(y: unfurlOffset)
+                    .scaleEffect(y: unfurlScale, anchor: .top)
                     .background(
                         GeometryReader { geo in
                             Color.clear
@@ -1214,21 +1320,26 @@ private struct MeasuredContentReveal<C: View>: View {
         .onChange(of: isExpanded) { _, expanded in
             if expanded {
                 hasExpanded = true
-                // Content opacity lags height by 30ms to avoid empty-card flash
+                // Content unfurls: slides down from above, scales from top edge, fades in
                 withAnimation(
                     CollapsibleAnimationTokens.expandSpring.delay(CollapsibleAnimationTokens.revealDelay)
                 ) {
                     contentOpacity = 1
+                    unfurlOffset = 0
+                    unfurlScale = 1
                 }
             } else {
-                withAnimation(CollapsibleAnimationTokens.collapseSpring) {
+                // Silk tuck: content glides up gently with its own slower spring
+                withAnimation(.spring(response: 0.55, dampingFraction: 0.82).delay(0.04)) {
                     contentOpacity = 0
+                    unfurlOffset = -10
+                    unfurlScale = 0.96
                 }
             }
         }
         .task(id: isExpanded) {
             guard !isExpanded, hasExpanded else { return }
-            try? await Task.sleep(for: .milliseconds(450))
+            try? await Task.sleep(for: .milliseconds(800))
             guard !isExpanded else { return }
             hasExpanded = false
             measuredHeight = 0

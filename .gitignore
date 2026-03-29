@@ -1,3 +1,6 @@
+# Next.js build output
+.next/
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -139,8 +142,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -183,3 +186,5 @@ htmlcov/
 /test_unified_pit_baseline.json
 /src/data/calibration_records/
 
+/lumen-lingo-frontend/test-results/
+/lumen-lingo-frontend/e2e/screenshots/

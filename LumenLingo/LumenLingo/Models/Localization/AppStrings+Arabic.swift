@@ -6,7 +6,12 @@ extension AppStrings {
         tabHome: "الرئيسية",
         tabStats: "الإحصائيات",
         tabPremium: "المميّز",
+        tabSettings: "الإعدادات",
         tabProfile: "الملف الشخصي",
+
+        // Settings Header
+        settingsHeaderTitle: "التفضيلات",
+        settingsHeaderSubtitle: "خصّص تجربتك",
 
         // Dashboard
         greeting: { "مرحبًا، \($0)!" },
@@ -131,6 +136,7 @@ extension AppStrings {
         keepLearningEveryDay: "واصل التعلّم كل يوم للحفاظ على سلسلتك!",
 
         // Profile
+        account: "الحساب",
         appearance: "المظهر",
         sound: "الصوت",
         sync: "المزامنة",
@@ -141,9 +147,12 @@ extension AppStrings {
         nebula: "السديم",
         learner: "متعلّم",
         xp: "XP",
+        words: "كلمات",
+        activityCalendar: "تقويم النشاط",
+        dayStreak: "يوم متتالي",
         darkMode: "الوضع الداكن",
-        cosmicDarkTheme: "السمة الكونية الداكنة مفعّلة",
-        lightModeActive: "الوضع الفاتح مفعّل",
+        cosmicDarkTheme: "ليلة كونية",
+        lightModeActive: "جزيرة استوائية",
         animationSpeed: "سرعة الرسوم المتحركة",
         slow: "بطيء",
         normal: "عادي",
@@ -429,6 +438,132 @@ extension AppStrings {
         upgradeMessagePro: "أنت تتحدث لغة التقدم — كل درس يشكّل صوتك في العالم.",
         upgradeMessageElite: "كلماتك تحمل ثقل التفاني — التميّز يصبح لغتك الأم.",
         upgradeMessageRoyal: "توّجت رحلتك بالكلمات — لغة الأساطير ملكك.",
-        upgradeMessageTrial: "يبدأ فصل ملكي — القصة الكاملة لإمكاناتك اللغوية بانتظارك."
+        upgradeMessageTrial: "يبدأ فصل ملكي — القصة الكاملة لإمكاناتك اللغوية بانتظارك.",
+        celebrationWelcomeTo: "مرحباً بك في",
+        celebrationWelcomeBackTo: "مرحباً بعودتك إلى",
+        celebrationContinue: "متابعة",
+        celebrationFirstSubscription: "شكراً لاشتراكك!",
+
+        // MARK: - Subscription Onboarding (Story 7.3)
+        onboardingExploreTitle: "ميزاتك المميزة",
+        onboardingTryIt: "جرّبها!",
+        onboardingExplore: "استكشاف",
+        onboardingNext: "التالي",
+        onboardingSkip: "سأستكشف بنفسي",
+        onboardingSummaryTitle: "لقد فتحت للتو",
+        onboardingSummaryFeatures: "ميزات جديدة",
+        onboardingWelcomeBack: "مرحبًا بعودتك! إليك ما لديك",
+        onboardingDone: "هيا بنا!",
+
+        // MARK: - Value Framing (Story 7.4)
+        valueFramingTitle: "استثمارك",
+        valueFramingJust: "فقط",
+        valueFramingPerDay: "/يوم",
+        valueFramingFeatures: "ميزات",
+        valueFramingCoffeePro: "أقل من قهوة الصباح",
+        valueFramingCoffeeElite: "أقل من ساندويتش",
+        valueFramingCoffeeRoyal: "أقل من وجبة غداء",
+        valueFramingWordsLearned: "لقد تعلمت {count} كلمة — هذا فقط {cost} لكل كلمة مع {tier}",
+        valueFramingProjected: "معظم المتعلمين يتقنون أكثر من 300 كلمة في شهرهم الأول",
+
+        // MARK: - Legal Consent
+        legalConsentTitle: "قبل أن نبدأ",
+        legalConsentSubtitle: "يرجى مراجعة سياساتنا لمتابعة استخدام LumenLingo",
+        privacyPolicyTitle: "سياسة الخصوصية",
+        termsOfServiceTitle: "شروط الخدمة",
+        legalVersion: "الإصدار 2.3",
+        legalLastUpdated: "آخر تحديث: ٢٣ مارس ٢٠٢٦",
+        legalPrivacySummary: "يتم تشغيل LumenLingo بواسطة LumenShore Ltd. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. تغطي هذه السياسة موقعنا الإلكتروني وتطبيق iOS.",
+        legalTermsSummary: "تحكم شروط الخدمة هذه استخدامك لتطبيق LumenLingo المحمول الذي تديره LumenShore Ltd. باستخدام LumenLingo، فإنك توافق على هذه الشروط.",
+        legalPrivacyHighlight1: "تبقى بيانات التعلم على جهازك وحساب iCloud الشخصي",
+        legalPrivacyHighlight2: "نستخدم Vercel Analytics بدون ملفات تعريف الارتباط",
+        legalPrivacyHighlight3: "يساعدنا Sentry في إصلاح الأخطاء (إعادة تشغيل الجلسة تتطلب موافقة)",
+        legalPrivacyHighlight4: "لا نبيع بياناتك الشخصية أبدًا لأطراف ثالثة",
+        legalTermsHighlight1: "مستويات مجانية ومميزة متاحة — الاشتراكات تُدار عبر Apple",
+        legalTermsHighlight2: "محتواك وتقدمك في التعلم ملك لك",
+        legalTermsHighlight3: "قد نستخدم بيانات مجمعة ومجهولة لتحسين المنتج",
+        legalTermsHighlight4: "يخضع لقوانين إنجلترا وويلز",
+        legalAcceptAll: "أوافق",
+        legalDecline: "رفض",
+        legalDeclineTitle: "هل أنت متأكد؟",
+        legalDeclineMessage: "يجب قبول سياسة الخصوصية وشروط الخدمة لاستخدام LumenLingo.",
+        legalDeclineConfirm: "رفض والخروج",
+        legalReadFull: "اقرأ السياسة كاملة",
+        legalScrollToAccept: "مرر للمراجعة",
+
+        // MARK: - Legal Re-consent
+        legalReconsentTitle: "لقد قمنا بتحديث سياساتنا",
+        legalReconsentBody: "لقد أجرينا تغييرات على شروط الخدمة وسياسة الخصوصية. يرجى المراجعة والقبول للمتابعة.",
+        legalReconsentAccept: "أوافق",
+        legalReconsentDecline: "أرفض",
+
+        // MARK: - EULA
+        eulaTitle: "اتفاقية ترخيص المستخدم النهائي",
+        eulaSummary: "تحكم اتفاقية الترخيص هذه استخدامك لتطبيق LumenLingo، الموزع عبر متجر Apple App Store بواسطة LumenShore Ltd.",
+        eulaHighlight1: "ترخيص غير حصري وقابل للإلغاء لتعلم اللغات الشخصي",
+        eulaHighlight2: "وصول متدرج — عضويات مجانية، Pro، Elite و Royal",
+        eulaHighlight3: "بيانات التعلم ملكك، محتوى التطبيق ملكنا",
+        eulaHighlight4: "شروط خاصة بـ Apple مضمنة وفقًا لمتطلبات App Store",
+
+        // MARK: - Subscription Disclosure
+        subscriptionAutoRenew: "تتجدد الاشتراكات شهريًا تلقائيًا ما لم يتم الإلغاء قبل 24 ساعة على الأقل من نهاية الفترة الحالية.",
+        subscriptionPaymentNotice: "سيتم خصم المبلغ من حساب Apple ID الخاص بك عند تأكيد الشراء.",
+        subscriptionManageCancel: "إدارة أو إلغاء في الإعدادات ← Apple ID ← الاشتراكات.",
+        subscriptionTrialNotice: "تجربة Royal مجانية لمدة 14 يومًا. ينتقل إلى المستوى المجاني بعد انتهاء التجربة.",
+        restorePurchases: "استعادة المشتريات",
+        subscriptionLegalPrefix: "بالاشتراك، فإنك توافق على",
+        subscriptionLegalAnd: "و"
+,
+
+        // MARK: - Subscription Compliance (CCR 2013 / CRD)
+        subscriptionTraderInfo: "مقدم من LumenShore Limited، مسجلة في إنجلترا وويلز (#09607326). ضريبة القيمة المضافة: GB 270411929.",
+        subscriptionCoolingOff: "بالشراء، توافق على الوصول الفوري للمحتوى الرقمي وتقر بأن ذلك يلغي حقك في التراجع خلال 14 يوماً.",
+        subscriptionRefundNotice: "تتم معالجة المبالغ المستردة بواسطة Apple. لطلب استرداد، قم بزيارة reportaproblem.apple.com.",
+        subscriptionContractDuration: "عقد شهري متجدد. بدون التزام أدنى.",
+        subscriptionEUConsumerRights: "حقوقك بموجب توجيه حقوق المستهلك في الاتحاد الأوروبي (2011/83/EU) وقواعد عقود المستهلكين في المملكة المتحدة 2013 محترمة بالكامل. المعلومات قبل التعاقدية وحق الانسحاب وحظر الرسوم المخفية مطبقة.",
+        subscriptionCancelSteps: "للإلغاء: افتح الإعدادات > انقر على اسمك > الاشتراكات > LumenLingo > إلغاء الاشتراك. يسري الإلغاء في نهاية فترة الفوترة الحالية.",
+        subscriptionVATNotice: "الأسعار تشمل الضرائب المعمول بها. تتم معالجة جميع المشتريات وفوترتها بواسطة Apple. قد يختلف السعر الفعلي حسب المنطقة والعملة.",
+
+        // MARK: - Account Deletion
+        deleteAccount: "حذف الحساب",
+        deleteAccountWarning: "سيؤدي هذا إلى حذف جميع بيانات التعلم والتقدم والسلاسل والتفضيلات نهائيًا. لا يمكن التراجع عن هذا الإجراء.",
+        deleteAccountConfirm: "حذف كل شيء",
+        deletingAccount: "جارٍ حذف الحساب…",
+        clearingUserData: "جارٍ مسح بيانات المستخدم",
+        accountDeleted: "تم حذف الحساب",
+
+        // MARK: - GDPR Data Export
+        gdprExportTitle: "تصدير بياناتي",
+        gdprExportDesc: "قم بتنزيل جميع بياناتك الشخصية كملف JSON قابل للقراءة آليًا. هذا حقك بموجب المادة 20 من اللائحة العامة لحماية البيانات — مجاني لجميع المستخدمين.",
+        gdprExportButton: "تصدير البيانات الشخصية",
+        gdprExportSuccess: "تم تصدير البيانات بنجاح",
+        gdprExportEmpty: "لا توجد بيانات شخصية للتصدير",
+
+        trademarkAttribution: "Apple, the Apple logo, iPhone, iPad, App Store, iCloud, Apple ID, and iOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
+
+        companyName: "Lumenshore Limited",
+        companyNumber: "رقم الشركة 09607326",
+        companyRegistration: "مسجّلة في إنجلترا وويلز",
+        companyAddress: "Windsor House, Troon Way Business Centre, Humberstone Lane, Leicester, England, LE4 9HA",
+        companyVAT: "رقم ضريبة القيمة المضافة: GB 270411929",
+
+        cookiePolicyTitle: "سياسة ملفات تعريف الارتباط",
+        cookieSummary: "توضح هذه السياسة ملفات تعريف الارتباط والتخزين المحلي والتقنيات المماثلة التي يستخدمها موقع LumenLingo، وأسباب استخدامها، وكيفية التحكم فيها.",
+        cookieHighlight1: "ملف تعريف ارتباط واحد ضروري فقط لحفظ تفضيل موافقتك",
+        cookieHighlight2: "لا توجد ملفات تعريف ارتباط إعلانية أو تتبع وسائل التواصل الاجتماعي — أبدًا",
+        cookieHighlight3: "Sentry لمراقبة الأخطاء؛ Vercel Analytics لتحليل الأداء",
+        cookieHighlight4: "يتم احترام إشارات Global Privacy Control وDo Not Track",
+        legalUpdated: "تم التحديث في مارس 2025",
+
+        viewMyDataTitle: "عرض بياناتي",
+        viewMyDataDesc: "اطّلع على البيانات التي يخزّنها LumenLingo عنك",
+        dataProfileInfo: "معلومات الملف الشخصي",
+        dataGameRecords: "سجلات تقدّم الألعاب",
+        dataMasteredItems: "العناصر المُتقَنة",
+        dataFavorites: "الفئات المفضّلة",
+        dataICloudSync: "مزامنة iCloud",
+        dataEnabled: "مفعّلة",
+        dataDisabled: "معطّلة",
+        dataStorageEstimate: "التخزين المقدّر"
     )
 }

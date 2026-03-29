@@ -1,0 +1,182 @@
+{
+  "en": {
+    "feedbackIP": {
+      "heading": "Feedback & Submissions",
+      "assignHeading": "IP Assignment",
+      "assign1": "Any feedback, suggestions, ideas, feature requests, bug reports, or other communications you submit to Lumenshore ('Feedback') shall be deemed non-confidential and non-proprietary.",
+      "assign2": "By submitting Feedback, you hereby irrevocably assign to Lumenshore all right, title, and interest in and to the Feedback, including all intellectual property rights therein.",
+      "assign3": "You waive any and all moral rights in the Feedback to the fullest extent permitted by law.",
+      "obligationHeading": "No Obligation",
+      "obligation1": "Lumenshore is under no obligation to: (a) maintain any Feedback in confidence; (b) pay compensation for any Feedback; (c) respond to any Feedback; or (d) use or implement any Feedback.",
+      "obligation2": "Lumenshore may use, reproduce, distribute, modify, or create derivative works from Feedback for any purpose without attribution or compensation.",
+      "confidentialityHeading": "No Confidentiality",
+      "confidentiality1": "Do not submit any information you consider confidential or proprietary as Feedback.",
+      "confidentiality2": "Lumenshore has no confidentiality obligations with respect to any Feedback.",
+      "representationHeading": "Representation & Warranty",
+      "representation1": "You represent and warrant that you have the right to submit the Feedback and that the Feedback does not infringe any third party's intellectual property or other rights.",
+      "representation2": "You agree to indemnify Lumenshore against any claims arising from your Feedback."
+    }
+  },
+  "es": {
+    "feedbackIP": {
+      "heading": "Comentarios y Envios",
+      "assignHeading": "Cesion de Propiedad Intelectual",
+      "assign1": "Cualquier comentario, sugerencia, idea, solicitud de funciones, informe de errores u otras comunicaciones que envie a Lumenshore ('Comentarios') se consideraran no confidenciales y no propietarios.",
+      "assign2": "Al enviar Comentarios, usted cede irrevocablemente a Lumenshore todos los derechos, titulo e interes en los Comentarios, incluidos todos los derechos de propiedad intelectual.",
+      "assign3": "Usted renuncia a todos los derechos morales sobre los Comentarios en la maxima medida permitida por la ley.",
+      "obligationHeading": "Sin Obligacion",
+      "obligation1": "Lumenshore no tiene obligacion de: (a) mantener ningun Comentario en confidencialidad; (b) pagar compensacion por ningun Comentario; (c) responder a ningun Comentario; ni (d) usar o implementar ningun Comentario.",
+      "obligation2": "Lumenshore puede usar, reproducir, distribuir, modificar o crear obras derivadas de los Comentarios para cualquier proposito sin atribucion ni compensacion.",
+      "confidentialityHeading": "Sin Confidencialidad",
+      "confidentiality1": "No envie informacion que considere confidencial o propietaria como Comentarios.",
+      "confidentiality2": "Lumenshore no tiene obligaciones de confidencialidad con respecto a ningun Comentario.",
+      "representationHeading": "Declaracion y Garantia",
+      "representation1": "Usted declara y garantiza que tiene el derecho de enviar los Comentarios y que los Comentarios no infringen la propiedad intelectual ni otros derechos de terceros.",
+      "representation2": "Usted acepta indemnizar a Lumenshore contra cualquier reclamacion derivada de sus Comentarios."
+    }
+  },
+  "fr": {
+    "feedbackIP": {
+      "heading": "Commentaires et Soumissions",
+      "assignHeading": "Cession de Propriete Intellectuelle",
+      "assign1": "Tout commentaire, suggestion, idee, demande de fonctionnalite, rapport de bogue ou autre communication que vous soumettez a Lumenshore ('Commentaires') sera considere comme non confidentiel et non exclusif.",
+      "assign2": "En soumettant des Commentaires, vous cedez irrevocablement a Lumenshore tous les droits, titres et interets relatifs aux Commentaires, y compris tous les droits de propriete intellectuelle.",
+      "assign3": "Vous renoncez a tout droit moral sur les Commentaires dans toute la mesure permise par la loi.",
+      "obligationHeading": "Aucune Obligation",
+      "obligation1": "Lumenshore n'a aucune obligation de : (a) maintenir la confidentialite des Commentaires ; (b) verser une compensation pour les Commentaires ; (c) repondre aux Commentaires ; ou (d) utiliser ou mettre en oeuvre les Commentaires.",
+      "obligation2": "Lumenshore peut utiliser, reproduire, distribuer, modifier ou creer des oeuvres derivees des Commentaires a toute fin sans attribution ni compensation.",
+      "confidentialityHeading": "Aucune Confidentialite",
+      "confidentiality1": "Ne soumettez pas d'informations que vous considerez comme confidentielles ou exclusives en tant que Commentaires.",
+      "confidentiality2": "Lumenshore n'a aucune obligation de confidentialite a l'egard des Commentaires.",
+      "representationHeading": "Declaration et Garantie",
+      "representation1": "Vous declarez et garantissez que vous avez le droit de soumettre les Commentaires et que les Commentaires ne portent pas atteinte a la propriete intellectuelle ou aux autres droits de tiers.",
+      "representation2": "Vous acceptez d'indemniser Lumenshore contre toute reclamation decoulant de vos Commentaires."
+    }
+  },
+  "de": {
+    "feedbackIP": {
+      "heading": "Feedback und Einreichungen",
+      "assignHeading": "Uebertragung geistigen Eigentums",
+      "assign1": "Jedes Feedback, Vorschlaege, Ideen, Funktionswuensche, Fehlerberichte oder andere Mitteilungen, die Sie an Lumenshore uebermitteln ('Feedback'), gelten als nicht vertraulich und nicht proprietaer.",
+      "assign2": "Mit der Uebermittlung von Feedback uebertragen Sie unwiderruflich alle Rechte, Titel und Ansprueche an dem Feedback, einschliesslich aller Rechte an geistigem Eigentum, an Lumenshore.",
+      "assign3": "Sie verzichten im groessten gesetzlich zulaessigen Umfang auf alle Urheberpersoenlichkeitsrechte am Feedback.",
+      "obligationHeading": "Keine Verpflichtung",
+      "obligation1": "Lumenshore ist nicht verpflichtet: (a) Feedback vertraulich zu behandeln; (b) eine Verguetung fuer Feedback zu zahlen; (c) auf Feedback zu antworten; oder (d) Feedback zu verwenden oder umzusetzen.",
+      "obligation2": "Lumenshore darf Feedback fuer jeden Zweck verwenden, vervielfaeltigen, verbreiten, aendern oder abgeleitete Werke daraus erstellen, ohne Namensnennung oder Verguetung.",
+      "confidentialityHeading": "Keine Vertraulichkeit",
+      "confidentiality1": "Uebermitteln Sie keine Informationen, die Sie als vertraulich oder proprietaer betrachten, als Feedback.",
+      "confidentiality2": "Lumenshore hat keinerlei Vertraulichkeitsverpflichtungen in Bezug auf Feedback.",
+      "representationHeading": "Zusicherung und Gewaehrleistung",
+      "representation1": "Sie sichern zu und gewaehrleisten, dass Sie berechtigt sind, das Feedback einzureichen, und dass das Feedback keine Rechte an geistigem Eigentum oder sonstige Rechte Dritter verletzt.",
+      "representation2": "Sie verpflichten sich, Lumenshore gegen alle Ansprueche freizustellen, die aus Ihrem Feedback entstehen."
+    }
+  },
+  "ja": {
+    "feedbackIP": {
+      "heading": "フィードバックおよび提出物",
+      "assignHeading": "知的財産権の譲渡",
+      "assign1": "お客様がLumenshoreに提出するフィードバック、提案、アイデア、機能リクエスト、バグ報告、またはその他の通信（以下「フィードバック」）は、非機密かつ非独占的なものとみなされます。",
+      "assign2": "フィードバックを提出することにより、お客様はフィードバックに関するすべての知的財産権を含む、すべての権利、権原、および利益をLumenshoreに取消不能の形で譲渡します。",
+      "assign3": "お客様は、法律で許容される最大限の範囲でフィードバックに関するすべての著作者人格権を放棄します。",
+      "obligationHeading": "義務なし",
+      "obligation1": "Lumenshoreには以下の義務はありません：(a) フィードバックを機密として維持する義務、(b) フィードバックに対する報酬を支払う義務、(c) フィードバックに回答する義務、(d) フィードバックを使用または実装する義務。",
+      "obligation2": "Lumenshoreは、帰属表示や報酬なしに、いかなる目的でもフィードバックを使用、複製、配布、修正、または派生物を作成することができます。",
+      "confidentialityHeading": "機密保持義務なし",
+      "confidentiality1": "機密または独占的と考える情報をフィードバックとして提出しないでください。",
+      "confidentiality2": "Lumenshoreはフィードバックに関していかなる機密保持義務も負いません。",
+      "representationHeading": "表明および保証",
+      "representation1": "お客様は、フィードバックを提出する権利を有し、フィードバックが第三者の知的財産権その他の権利を侵害しないことを表明し保証します。",
+      "representation2": "お客様は、フィードバックから生じるすべての請求に対してLumenshoreを補償することに同意します。"
+    }
+  },
+  "pt": {
+    "feedbackIP": {
+      "heading": "Feedback e Submissoes",
+      "assignHeading": "Cessao de Propriedade Intelectual",
+      "assign1": "Qualquer feedback, sugestao, ideia, solicitacao de funcionalidade, relatorio de erro ou outra comunicacao que voce enviar a Lumenshore ('Feedback') sera considerada nao confidencial e nao proprietaria.",
+      "assign2": "Ao enviar Feedback, voce cede irrevogavelmente a Lumenshore todos os direitos, titulos e interesses no Feedback, incluindo todos os direitos de propriedade intelectual.",
+      "assign3": "Voce renuncia a todos os direitos morais sobre o Feedback na maxima extensao permitida por lei.",
+      "obligationHeading": "Sem Obrigacao",
+      "obligation1": "A Lumenshore nao tem obrigacao de: (a) manter qualquer Feedback em confidencialidade; (b) pagar compensacao por qualquer Feedback; (c) responder a qualquer Feedback; ou (d) usar ou implementar qualquer Feedback.",
+      "obligation2": "A Lumenshore pode usar, reproduzir, distribuir, modificar ou criar obras derivadas do Feedback para qualquer finalidade sem atribuicao ou compensacao.",
+      "confidentialityHeading": "Sem Confidencialidade",
+      "confidentiality1": "Nao envie informacoes que considere confidenciais ou proprietarias como Feedback.",
+      "confidentiality2": "A Lumenshore nao tem obrigacoes de confidencialidade em relacao a qualquer Feedback.",
+      "representationHeading": "Declaracao e Garantia",
+      "representation1": "Voce declara e garante que tem o direito de enviar o Feedback e que o Feedback nao infringe a propriedade intelectual ou outros direitos de terceiros.",
+      "representation2": "Voce concorda em indenizar a Lumenshore contra quaisquer reclamacoes decorrentes do seu Feedback."
+    }
+  },
+  "pl": {
+    "feedbackIP": {
+      "heading": "Opinie i Zgloszenia",
+      "assignHeading": "Cesja Wlasnosci Intelektualnej",
+      "assign1": "Wszelkie opinie, sugestie, pomysly, prosby o funkcje, zgloszenia bledow lub inne komunikaty przesylane do Lumenshore ('Opinie') beda traktowane jako niepoufne i niezastrzezone.",
+      "assign2": "Przesylajac Opinie, niniejszym nieodwolalnie przenosisz na Lumenshore wszelkie prawa, tytuly i udzialy w Opiniach, w tym wszelkie prawa wlasnosci intelektualnej.",
+      "assign3": "Zrzekasz sie wszelkich praw osobistych do Opinii w najszerszym zakresie dozwolonym przez prawo.",
+      "obligationHeading": "Brak Zobowiazania",
+      "obligation1": "Lumenshore nie ma obowiazku: (a) zachowania poufnosci jakichkolwiek Opinii; (b) wyplacania wynagrodzenia za jakiekolwiek Opinie; (c) odpowiadania na jakiekolwiek Opinie; ani (d) wykorzystywania lub wdrazania jakichkolwiek Opinii.",
+      "obligation2": "Lumenshore moze wykorzystywac, reprodukowac, rozpowszechniac, modyfikowac lub tworzyc dziela pochodne na podstawie Opinii w dowolnym celu bez przypisania autorstwa lub wynagrodzenia.",
+      "confidentialityHeading": "Brak Poufnosci",
+      "confidentiality1": "Nie przesylaj informacji, ktore uwazasz za poufne lub zastrzezone, jako Opinie.",
+      "confidentiality2": "Lumenshore nie ma zadnych zobowiazan dotyczacych poufnosci w odniesieniu do Opinii.",
+      "representationHeading": "Oswiadczenie i Gwarancja",
+      "representation1": "Oswiadczasz i gwarantujesz, ze masz prawo do przeslania Opinii oraz ze Opinie nie naruszaja wlasnosci intelektualnej ani innych praw osob trzecich.",
+      "representation2": "Zgadzasz sie zabezpieczyc Lumenshore przed wszelkimi roszczeniami wynikajacymi z Twoich Opinii."
+    }
+  },
+  "ar": {
+    "feedbackIP": {
+      "heading": "الملاحظات والمقدمات",
+      "assignHeading": "تنازل عن الملكية الفكرية",
+      "assign1": "أي ملاحظات أو اقتراحات أو أفكار أو طلبات ميزات أو تقارير أخطاء أو اتصالات أخرى تقدمها إلى Lumenshore ('الملاحظات') تعتبر غير سرية وغير مملوكة.",
+      "assign2": "بتقديم الملاحظات، فإنك تتنازل بشكل لا رجعة فيه لصالح Lumenshore عن جميع الحقوق والملكية والمصالح في الملاحظات، بما في ذلك جميع حقوق الملكية الفكرية.",
+      "assign3": "تتنازل عن جميع الحقوق المعنوية في الملاحظات إلى أقصى حد يسمح به القانون.",
+      "obligationHeading": "لا التزام",
+      "obligation1": "لا تلتزم Lumenshore بـ: (أ) الحفاظ على سرية أي ملاحظات؛ (ب) دفع تعويض عن أي ملاحظات؛ (ج) الرد على أي ملاحظات؛ أو (د) استخدام أو تنفيذ أي ملاحظات.",
+      "obligation2": "يجوز لـ Lumenshore استخدام الملاحظات أو إعادة إنتاجها أو توزيعها أو تعديلها أو إنشاء أعمال مشتقة منها لأي غرض دون نسب أو تعويض.",
+      "confidentialityHeading": "لا سرية",
+      "confidentiality1": "لا تقدم أي معلومات تعتبرها سرية أو مملوكة كملاحظات.",
+      "confidentiality2": "لا تتحمل Lumenshore أي التزامات بالسرية فيما يتعلق بأي ملاحظات.",
+      "representationHeading": "الإقرار والضمان",
+      "representation1": "تقر وتضمن أن لديك الحق في تقديم الملاحظات وأن الملاحظات لا تنتهك الملكية الفكرية أو الحقوق الأخرى لأي طرف ثالث.",
+      "representation2": "توافق على تعويض Lumenshore ضد أي مطالبات ناشئة عن ملاحظاتك."
+    }
+  },
+  "zh": {
+    "feedbackIP": {
+      "heading": "反馈与提交",
+      "assignHeading": "知识产权转让",
+      "assign1": "您向Lumenshore提交的任何反馈、建议、想法、功能请求、错误报告或其他通信（以下简称'反馈'）将被视为非机密和非专有的。",
+      "assign2": "通过提交反馈，您在此不可撤销地将反馈中的所有权利、所有权和利益（包括所有知识产权）转让给Lumenshore。",
+      "assign3": "您在法律允许的最大范围内放弃对反馈的所有精神权利。",
+      "obligationHeading": "无义务",
+      "obligation1": "Lumenshore没有义务：(a) 对任何反馈保密；(b) 为任何反馈支付报酬；(c) 回复任何反馈；或 (d) 使用或实施任何反馈。",
+      "obligation2": "Lumenshore可以出于任何目的使用、复制、分发、修改反馈或基于反馈创作衍生作品，无需署名或补偿。",
+      "confidentialityHeading": "无保密义务",
+      "confidentiality1": "请勿将您认为机密或专有的信息作为反馈提交。",
+      "confidentiality2": "Lumenshore对任何反馈不承担保密义务。",
+      "representationHeading": "陈述与保证",
+      "representation1": "您声明并保证您有权提交反馈，且该反馈不侵犯任何第三方的知识产权或其他权利。",
+      "representation2": "您同意就因您的反馈引起的任何索赔对Lumenshore进行赔偿。"
+    }
+  },
+  "uk": {
+    "feedbackIP": {
+      "heading": "Зворотний зв'язок та подання",
+      "assignHeading": "Передача iнтелектуальної власностi",
+      "assign1": "Будь-який зворотний зв'язок, пропозицiї, iдеї, запити на функцiї, звiти про помилки або iншi повiдомлення, якi ви надсилаєте Lumenshore ('Зворотний зв'язок'), вважаються неконфiденцiйними та невласницькими.",
+      "assign2": "Надсилаючи Зворотний зв'язок, ви цим безвiдклично передаєте Lumenshore усi права, право власностi та iнтереси у Зворотному зв'язку, включаючи всi права iнтелектуальної власностi.",
+      "assign3": "Ви вiдмовляєтесь вiд усiх особистих немайнових прав на Зворотний зв'язок у максимальному обсязi, дозволеному законом.",
+      "obligationHeading": "Вiдсутнiсть зобов'язань",
+      "obligation1": "Lumenshore не зобов'язана: (a) зберiгати конфiденцiйнiсть будь-якого Зворотного зв'язку; (b) виплачувати компенсацiю за будь-який Зворотний зв'язок; (c) вiдповiдати на будь-який Зворотний зв'язок; або (d) використовувати чи впроваджувати будь-який Зворотний зв'язок.",
+      "obligation2": "Lumenshore може використовувати, вiдтворювати, розповсюджувати, змiнювати або створювати похiднi твори на основi Зворотного зв'язку для будь-якої мети без зазначення авторства або компенсацiї.",
+      "confidentialityHeading": "Вiдсутнiсть конфiденцiйностi",
+      "confidentiality1": "Не надсилайте iнформацiю, яку ви вважаєте конфiденцiйною або власницькою, як Зворотний зв'язок.",
+      "confidentiality2": "Lumenshore не має жодних зобов'язань щодо конфiденцiйностi стосовно будь-якого Зворотного зв'язку.",
+      "representationHeading": "Заява та гарантiя",
+      "representation1": "Ви заявляєте та гарантуєте, що маєте право надiслати Зворотний зв'язок i що Зворотний зв'язок не порушує iнтелектуальну власнiсть чи iншi права третiх осiб.",
+      "representation2": "Ви погоджуєтесь вiдшкодувати Lumenshore будь-якi претензiї, що виникають у зв'язку з вашим Зворотним зв'язком."
+    }
+  }
+}

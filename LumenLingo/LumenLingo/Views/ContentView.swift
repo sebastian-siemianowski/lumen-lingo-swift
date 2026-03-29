@@ -10,8 +10,10 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(ThemeManager.self) private var themeManager
     @Environment(TierManager.self) private var tierManager
+    @Environment(SubscriptionManager.self) private var subscriptionManager
     @Environment(PracticeTimeTracker.self) private var practiceTimeTracker
     @Environment(\.localization) private var localization
+    @Environment(\.revenueCatService) private var revenueCatService
 
     @Query private var profiles: [UserProfile]
     @Query private var languagePrefs: [LanguagePreference]
@@ -23,6 +25,8 @@ struct ContentView: View {
     @State private var navigationPath = NavigationPath()
     @State private var showTrialEnded = false
     @State private var showTierOnboarding = false
+    @State private var showLegalConsent = false
+    @State private var hasPerformedAttributeSync = false
 
     // Services (shared across all views)
     @State private var progressService: ProgressService?
@@ -38,7 +42,7 @@ struct ContentView: View {
         } else if themeManager.isDarkMode {
             return Color(red: 6/255, green: 5/255, blue: 20/255)
         } else {
-            return Color(red: 248/255, green: 245/255, blue: 253/255)
+            return .caribbeanCanvas
         }
     }
 
@@ -50,6 +54,19 @@ struct ContentView: View {
             }
 
             networkSimulationBanner
+
+            // Story 5.2: Billing alert banner (hidden during games/lessons)
+            if !hideTabBar {
+                BillingAlertBanner()
+                    .animation(.spring(response: 0.5, dampingFraction: 0.7), value: subscriptionManager.showBillingAlert)
+                    .animation(.spring(response: 0.5, dampingFraction: 0.7), value: subscriptionManager.billingResolved)
+            }
+
+            // Story 5.3: Cancellation banner (hidden during games/lessons)
+            if !hideTabBar {
+                CancellationBanner()
+                    .animation(.spring(response: 0.5, dampingFraction: 0.7), value: subscriptionManager.showCancellationBanner)
+            }
 
             TabView(selection: $selectedTab) {
                 // MARK: Dashboard Tab
@@ -101,16 +118,19 @@ struct ContentView: View {
                     Label(L.tabProfile, systemImage: "person.fill")
                 }
                 .tag(AppTab.profile)
+
+                // MARK: Settings Tab
+                NavigationStack {
+                    SettingsView()
+                }
+                .environment(\.backgroundActive, selectedTab == .settings)
+                .tabItem {
+                    Label(L.tabSettings, systemImage: "gearshape.fill")
+                }
+                .tag(AppTab.settings)
             }
-            .tint(Color(hex: themeManager.isDarkMode ? "#a855f7" : "#7c3aed"))
+            .tint(Color(hex: themeManager.isDarkMode ? "#a855f7" : "#0EA5E9"))
             .toolbar(hideTabBar ? .hidden : .visible, for: .tabBar)
-            .toolbarBackground(.visible, for: .tabBar)
-            .toolbarBackground(
-                themeManager.isDarkMode
-                    ? Color(red: 10/255, green: 8/255, blue: 20/255).opacity(0.95)
-                    : Color(red: 248/255, green: 245/255, blue: 253/255),
-                for: .tabBar
-            )
             .toolbarColorScheme(themeManager.isDarkMode ? .dark : .light, for: .tabBar)
         }
         .background(vstackBackground)
@@ -122,6 +142,10 @@ struct ContentView: View {
             tierManager.validateState(profile: profile)
             tierManager.pullFromCloud(profile: profile)
             tierManager.startCloudSync(profile: profile)
+            // Check for legal consent — must accept current version before using the app
+            if profile?.legalConsentVersion != LegalConsentView.currentVersion {
+                showLegalConsent = true
+            }
             // Check for trial expiration on app launch
             if tierManager.checkTrialExpiration(profile: profile) {
                 showTrialEnded = true
@@ -133,6 +157,11 @@ struct ContentView: View {
             if let profile {
                 audioService.syncFromProfile(profile)
                 hapticsService.syncFromProfile(profile)
+            }
+            // Story 6.2: Sync subscriber attributes once per session
+            if !hasPerformedAttributeSync {
+                hasPerformedAttributeSync = true
+                syncSubscriberAttributes()
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 let wantTransparent = selectedTab == .dashboard && themeManager.isDarkMode
@@ -165,19 +194,54 @@ struct ContentView: View {
         }
         .onChange(of: languagePrefs.first?.sourceLanguage) { _, _ in
             localization.update(from: languagePrefs)
+            // Story 6.2: Re-sync attributes when language changes
+            syncSubscriberAttributes()
         }
-        .onChange(of: tierManager.currentTier) { _, _ in
+        .onChange(of: tierManager.currentTier) { oldTier, newTier in
             validateActiveLanguagePair()
+            // Story 6.2: Track tier changes for subscriber attributes
+            subscriptionManager.trackTierChange(from: oldTier, to: newTier)
+            syncSubscriberAttributes()
+        }
+        // Story 5.7: Evaluate expiry warnings when not in a lesson
+        .onChange(of: subscriptionManager.subscriptionState) { _, _ in
+            guard !hideTabBar else { return }
+            subscriptionManager.evaluateExpiryWarning()
+            subscriptionManager.evaluateWelcomeBack()
+        }
+        .onChange(of: hideTabBar) { _, inLesson in
+            guard !inLesson else { return }
+            subscriptionManager.evaluateExpiryWarning()
+            subscriptionManager.evaluateWelcomeBack()
         }
         .environment(audioService)
         .environment(hapticsService)
         .environment(contentLoader)
         .environment(practiceTimeTracker)
+        .fullScreenCover(isPresented: $showLegalConsent) {
+            LegalConsentView()
+        }
         .fullScreenCover(isPresented: $showTrialEnded) {
             TrialEndedView()
         }
         .fullScreenCover(isPresented: $showTierOnboarding) {
             TierOnboardingFlow()
+        }
+        // Story 5.7: Pre-expiry warning sheet
+        .sheet(isPresented: Bindable(subscriptionManager).showExpiryWarning) {
+            ExpiryWarningSheet {
+                selectedTab = .membership
+            }
+            .presentationDetents([.medium, .large])
+            .presentationDragIndicator(.visible)
+        }
+        // Story 5.7: Post-expiry welcome-back sheet
+        .sheet(isPresented: Bindable(subscriptionManager).showWelcomeBack) {
+            WelcomeBackSheet {
+                selectedTab = .membership
+            }
+            .presentationDetents([.medium])
+            .presentationDragIndicator(.visible)
         }
     }
 
@@ -224,7 +288,8 @@ struct ContentView: View {
     private func applyTabBarAppearance(transparent: Bool) {
         let appearance = UITabBarAppearance()
 
-        if transparent {
+        if transparent || !themeManager.isDarkMode {
+            // Transparent in dark-mode dashboard; native liquid glass in light mode
             appearance.configureWithTransparentBackground()
             appearance.backgroundColor = .clear
             appearance.shadowColor = .clear
@@ -232,15 +297,8 @@ struct ContentView: View {
             appearance.backgroundImage = nil
         } else {
             appearance.configureWithDefaultBackground()
-            if themeManager.isDarkMode {
-                appearance.backgroundColor = UIColor(Color(red: 10/255, green: 8/255, blue: 20/255).opacity(0.95))
-                appearance.shadowColor = UIColor(white: 1.0, alpha: 0.06)
-            } else {
-                // Light mode: lavender-frost white — harmonises with Caribbean gradient,
-                // fully opaque so no warm bleed-through that reads as "brownish"
-                appearance.backgroundColor = UIColor(Color(red: 248/255, green: 245/255, blue: 253/255))
-                appearance.shadowColor = UIColor(red: 0.45, green: 0.22, blue: 0.62, alpha: 0.08)
-            }
+            appearance.backgroundColor = UIColor(Color(red: 10/255, green: 8/255, blue: 20/255).opacity(0.95))
+            appearance.shadowColor = UIColor(white: 1.0, alpha: 0.06)
         }
 
         // Icon / text colors (shared)
@@ -251,9 +309,9 @@ struct ContentView: View {
             normalColor = UIColor(white: 0.45, alpha: 1)
             selectedColor = UIColor(Color(hex: "#a855f7"))
         } else {
-            // Light mode: rich purple for selected tab
-            normalColor = UIColor(white: 0.0, alpha: 0.45)
-            selectedColor = UIColor(Color(hex: "#7c3aed"))
+            // Light mode: ocean-turquoise tint matching Caribbean icon design
+            normalColor = UIColor(Color(red: 140/255, green: 96/255, blue: 136/255))
+            selectedColor = UIColor(Color(hex: "#0EA5E9"))
         }
 
         appearance.stackedLayoutAppearance.normal.iconColor = normalColor
@@ -276,6 +334,8 @@ struct ContentView: View {
 
         // Apply to the actual UITabBar instance (not the proxy)
         if let tabBar = Self.findTabBar() {
+            tabBar.isHidden = false
+
             tabBar.standardAppearance = appearance
             tabBar.scrollEdgeAppearance = appearance
             // Force unselected/selected tint directly on the instance
@@ -361,6 +421,24 @@ struct ContentView: View {
         }
     }
 
+    // MARK: - Subscriber Attributes (Story 6.2)
+
+    private func syncSubscriberAttributes() {
+        let pref = languagePrefs.first
+        subscriptionManager.syncSubscriberAttributes(
+            using: revenueCatService,
+            displayName: profile?.firstName,
+            email: profile?.email,
+            authProvider: profile?.clerkUserId != nil ? "clerk" : "anonymous",
+            appLanguage: pref?.sourceLanguage,
+            learningLanguage: pref?.targetLanguage,
+            wordsLearned: profile?.totalXP,
+            daysActive: profile?.totalActiveDays,
+            firstOpenDate: profile?.legalConsentDate,
+            hasConsent: profile?.legalConsentVersion.isEmpty == false
+        )
+    }
+
     // MARK: - Network Simulation Banner
 
     @ViewBuilder
@@ -435,6 +513,10 @@ struct LumenLingoNavBar: View {
                             endPoint: .trailing
                         )
                     )
+                    .shadow(
+                        color: isDark ? .clear : Color.caribbeanPlum.opacity(0.10),
+                        radius: 8
+                    )
 
                 Text(L.languageMasteryEngine)
                     .font(.system(size: 10, weight: .medium))
@@ -448,16 +530,43 @@ struct LumenLingoNavBar: View {
         .background(
             isDark
                 ? AnyShapeStyle(Color(red: 6/255, green: 5/255, blue: 20/255).opacity(0.9))
-                : AnyShapeStyle(Color(red: 248/255, green: 245/255, blue: 253/255))
+                : AnyShapeStyle(Color.caribbeanSurface)
         )
         .overlay(
-            Rectangle()
-                .fill(isDark ? .white.opacity(0.05) : Color(red: 0.45, green: 0.22, blue: 0.62).opacity(0.02))
+            isDark
+                ? AnyView(
+                    Rectangle()
+                        .fill(.white.opacity(0.05))
+                )
+                : AnyView(
+                    // Caribbean ocean tint — subtle turquoise wash
+                    LinearGradient(
+                        stops: [
+                            .init(color: Color(hex: "0EA5E9").opacity(0.03), location: 0),
+                            .init(color: Color(hex: "06B6D4").opacity(0.02), location: 1),
+                        ],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
         )
         .overlay(alignment: .bottom) {
-            Rectangle()
-                .fill(isDark ? .white.opacity(0.06) : Color(red: 0.45, green: 0.22, blue: 0.62).opacity(0.06))
-                .frame(height: 0.5)
+            if isDark {
+                Rectangle()
+                    .fill(.white.opacity(0.06))
+                    .frame(height: 0.5)
+            } else {
+                // Turquoise gradient horizon line + glow
+                VStack(spacing: 0) {
+                    Rectangle()
+                        .fill(LinearGradient.caribbeanGradientOcean.opacity(0.15))
+                        .frame(height: 1)
+                    Rectangle()
+                        .fill(LinearGradient.caribbeanGradientOcean.opacity(0.06))
+                        .frame(height: 4)
+                        .blur(radius: 4)
+                }
+            }
         }
         .animation(.smooth(duration: 0.65), value: isDark)
         .onAppear {
@@ -474,6 +583,7 @@ enum AppTab: Hashable {
     case dashboard
     case journey
     case membership
+    case settings
     case profile
 }
 

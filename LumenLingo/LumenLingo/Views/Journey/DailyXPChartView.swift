@@ -33,8 +33,7 @@ struct DailyXPChartView: View {
     private var maxXP: Int { max(dailyData.map(\.xp).max() ?? 1, 1) }
 
     var body: some View {
-        GlassPanelWrapper {
-            VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 12) {
                 Text(L.last7Days)
                     .font(.system(size: 11))
                     .foregroundStyle(isDark ? .white.opacity(0.4) : .caribbeanMist)
@@ -47,15 +46,59 @@ struct DailyXPChartView: View {
                                 .foregroundStyle(isDark ? .white.opacity(0.6) : .caribbeanPlum)
                                 .frame(height: 14)
 
-                            RoundedRectangle(cornerRadius: 4)
-                                .fill(
-                                    LinearGradient(
-                                        colors: [Color(hex: "#667eea"), Color(hex: "#a855f7")],
-                                        startPoint: .bottom,
-                                        endPoint: .top
+                            ZStack(alignment: .bottom) {
+                                // Track trough — frost recessed base
+                                if !isDark {
+                                    RoundedRectangle(cornerRadius: 4)
+                                        .fill(Color(red: 0.92, green: 0.93, blue: 0.95))
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 4)
+                                                .fill(
+                                                    LinearGradient(
+                                                        colors: [
+                                                            Color(red: 0.78, green: 0.80, blue: 0.85).opacity(0.25),
+                                                            Color.clear,
+                                                            Color.white.opacity(0.10)
+                                                        ],
+                                                        startPoint: .top,
+                                                        endPoint: .bottom
+                                                    )
+                                                )
+                                        )
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 4)
+                                                .strokeBorder(.white.opacity(0.50), lineWidth: 0.5)
+                                        )
+                                }
+
+                                // Bar fill
+                                RoundedRectangle(cornerRadius: 4)
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [Color(hex: "#667eea"), Color(hex: "#a855f7")],
+                                            startPoint: .bottom,
+                                            endPoint: .top
+                                        )
                                     )
-                                )
-                                .frame(height: max(4, CGFloat(day.xp) / CGFloat(maxXP) * 100))
+                                    .frame(height: max(4, CGFloat(day.xp) / CGFloat(maxXP) * 100))
+                                    .overlay(
+                                        // Top highlight band for 3D pop
+                                        VStack(spacing: 0) {
+                                            Rectangle()
+                                                .fill(
+                                                    LinearGradient(
+                                                        colors: [.white.opacity(isDark ? 0 : 0.35), .clear],
+                                                        startPoint: .top,
+                                                        endPoint: .bottom
+                                                    )
+                                                )
+                                                .frame(height: 6)
+                                            Spacer(minLength: 0)
+                                        }
+                                        .clipShape(RoundedRectangle(cornerRadius: 4))
+                                    )
+                                    .shadow(color: isDark ? .clear : Color(hex: "#667eea").opacity(0.28), radius: 5, y: 2)
+                            }
 
                             Text(day.label)
                                 .font(.system(size: 9, weight: .medium))
@@ -67,6 +110,5 @@ struct DailyXPChartView: View {
                 .frame(height: 140)
                 .padding(.top, 4)
             }
-        }
     }
 }

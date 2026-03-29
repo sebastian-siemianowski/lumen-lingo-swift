@@ -250,10 +250,10 @@ struct PracticeExpiredView: View {
         }
         .padding(16)
         .background(
-            RoundedRectangle(cornerRadius: 16)
+            RoundedRectangle(cornerRadius: 20)
                 .fill(isDark ? .white.opacity(0.06) : .white.opacity(0.7))
                 .overlay(
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 20)
                         .strokeBorder(Color(hex: "#667eea").opacity(0.2), lineWidth: 1)
                 )
         )

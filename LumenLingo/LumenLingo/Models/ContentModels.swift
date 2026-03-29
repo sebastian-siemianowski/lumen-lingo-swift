@@ -220,6 +220,7 @@ struct GameTypeStats: Identifiable {
 // MARK: - User (for mocked auth)
 
 struct AppUser: Equatable {
+    let id: String
     let name: String
     let email: String
     let avatarURL: URL?
@@ -228,9 +229,21 @@ struct AppUser: Equatable {
         name.components(separatedBy: " ").first ?? name
     }
 
+    /// Whether the email is an Apple Private Relay address.
+    var isPrivateRelayEmail: Bool {
+        email.contains("privaterelay.appleid.com")
+    }
+
+    /// Email text suitable for display in the UI.
+    /// Hides Apple Private Relay addresses behind a friendly label.
+    var displayEmail: String {
+        isPrivateRelayEmail ? "Apple Private Email" : email
+    }
+
     static let mock = AppUser(
+        id: "mock_user_001",
         name: "Sebastian",
-        email: "rudph2@test.com",
+        email: "testuser@lumenlingo.com",
         avatarURL: nil
     )
 }

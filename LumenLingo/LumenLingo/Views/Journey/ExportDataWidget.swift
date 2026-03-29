@@ -34,8 +34,7 @@ struct ExportDataWidget: View {
     }
 
     var body: some View {
-        GlassPanelWrapper {
-            VStack(spacing: 14) {
+        VStack(spacing: 14) {
                 // Section header
                 HStack {
                     Text("\(allProgress.count) \(L.sessionsLabel)")
@@ -62,7 +61,6 @@ struct ExportDataWidget: View {
                     }
                 }
             }
-        }
         .fullScreenCover(isPresented: $showPDFPreview) {
             PDFPreviewView(
                 pdfData: previewPDFData,
@@ -182,35 +180,89 @@ struct ExportDataWidget: View {
             }
             .padding(14)
             .frame(maxWidth: .infinity, minHeight: 100)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.02))
-                    .overlay(
-                        // Tier gradient tint
-                        RoundedRectangle(cornerRadius: 14)
+            .background {
+                if isDark {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.white.opacity(0.04))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(
+                                    LinearGradient(
+                                        colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.04) },
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    ),
+                                    lineWidth: 1.2
+                                )
+                        )
+                } else {
+                    // Frost trough — premium recessed PDF card
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                        RoundedRectangle(cornerRadius: 20)
                             .fill(
                                 LinearGradient(
-                                    colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.04) },
+                                    colors: [Color(hex: "#fbbf24").opacity(0.14), Color(hex: "#f97316").opacity(0.10)],
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
                                 )
                             )
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
+                                        Color.clear,
+                                        Color.white.opacity(0.15)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                        RoundedRectangle(cornerRadius: 20)
                             .strokeBorder(
                                 LinearGradient(
-                                    colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
+                                    colors: [
+                                        Color.white.opacity(0.65),
+                                        Color.white.opacity(0.30),
+                                        Color.white.opacity(0.45)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
                                 ),
-                                lineWidth: 1.2
+                                lineWidth: 0.5
                             )
-                    )
-            )
+                        VStack(spacing: 0) {
+                            Rectangle()
+                                .fill(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.45), .white.opacity(0.10), .clear],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    )
+                                )
+                                .frame(height: 18)
+                            Spacer(minLength: 0)
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                    }
+                    .shadow(color: Color(hex: "#f97316").opacity(0.14), radius: 6, y: 3)
+                }
+            }
             .overlay {
                 if !isPDFAvailable {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(isDark ? .black.opacity(0.5) : .white.opacity(0.6))
                         .overlay {
                             VStack(spacing: 4) {
@@ -258,21 +310,63 @@ struct ExportDataWidget: View {
             }
             .padding(.horizontal, 14)
             .frame(maxWidth: .infinity, minHeight: 44)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.02))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 14)
-                            .strokeBorder(
+            .background {
+                if isDark {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.white.opacity(0.04))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .strokeBorder(
+                                    LinearGradient(
+                                        colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.15) },
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    ),
+                                    lineWidth: 0.8
+                                )
+                        )
+                } else {
+                    // Frost trough — recessed achievement bar
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(
                                 LinearGradient(
-                                    colors: tierManager.currentTier.gradientColors.map { $0.opacity(isDark ? 0.15 : 0.1) },
+                                    colors: tierManager.currentTier.gradientColors.map { $0.opacity(0.10) },
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
-                                ),
-                                lineWidth: 0.8
+                                )
                             )
-                    )
-            )
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.18),
+                                        Color.clear,
+                                        Color.white.opacity(0.12)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                        RoundedRectangle(cornerRadius: 20)
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [
+                                        Color.white.opacity(0.60),
+                                        Color.white.opacity(0.25),
+                                        Color.white.opacity(0.40)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                ),
+                                lineWidth: 0.5
+                            )
+                    }
+                    .shadow(color: tierManager.currentTier.gradientColors.first?.opacity(0.12) ?? .clear, radius: 5, y: 2)
+                }
+            }
         }
         .buttonStyle(LumenPressStyle())
     }
@@ -348,27 +442,76 @@ struct ExportDataWidget: View {
             .frame(maxWidth: .infinity)
             .padding(.vertical, 14)
             .padding(.horizontal, 8)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(isDark ? .white.opacity(0.04) : .black.opacity(0.02))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 14)
-                            .strokeBorder(
-                                format == .pdf
-                                    ? LinearGradient(
-                                        colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    )
-                                    : LinearGradient(
-                                        colors: [cardColor(for: format).opacity(isDark ? 0.2 : 0.15), cardColor(for: format).opacity(0.08)],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    ),
-                                lineWidth: format == .pdf ? 1.2 : 0.8
+            .background {
+                if isDark {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.white.opacity(0.04))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .strokeBorder(
+                                    format == .pdf
+                                        ? LinearGradient(
+                                            colors: [Color(hex: "#fbbf24").opacity(0.5), Color(hex: "#f97316").opacity(0.3)],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        )
+                                        : LinearGradient(
+                                            colors: [cardColor(for: format).opacity(0.2), cardColor(for: format).opacity(0.08)],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        ),
+                                    lineWidth: format == .pdf ? 1.2 : 0.8
+                                )
+                        )
+                } else {
+                    // Frost trough — recessed format card
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color(red: 0.94, green: 0.95, blue: 0.97))
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(cardColor(for: format).opacity(0.12))
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color(red: 0.80, green: 0.82, blue: 0.87).opacity(0.22),
+                                        Color.clear,
+                                        Color.white.opacity(0.15)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
                             )
-                    )
-            )
+                        RoundedRectangle(cornerRadius: 20)
+                            .strokeBorder(
+                                LinearGradient(
+                                    colors: [
+                                        Color.white.opacity(0.65),
+                                        Color.white.opacity(0.30),
+                                        Color.white.opacity(0.45)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                ),
+                                lineWidth: 0.5
+                            )
+                        VStack(spacing: 0) {
+                            Rectangle()
+                                .fill(
+                                    LinearGradient(
+                                        colors: [.white.opacity(0.45), .white.opacity(0.10), .clear],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    )
+                                )
+                                .frame(height: 14)
+                            Spacer(minLength: 0)
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                    }
+                    .shadow(color: cardColor(for: format).opacity(0.12), radius: 5, y: 2)
+                }
+            }
             .overlay(alignment: .topTrailing) {
                 // Premium badge for PDF
                 if format == .pdf {
@@ -397,7 +540,7 @@ struct ExportDataWidget: View {
             .overlay {
                 // Lock overlay for tier-gated formats
                 if !isAvailable {
-                    RoundedRectangle(cornerRadius: 14)
+                    RoundedRectangle(cornerRadius: 20)
                         .fill(isDark ? .black.opacity(0.5) : .white.opacity(0.6))
                         .overlay {
                             VStack(spacing: 4) {
@@ -521,29 +664,27 @@ struct ExportDataWidget: View {
     private func startPDFPreview() {
         exportingFormat = .pdf
         showPDFPreview = true
-        Task.detached(priority: .userInitiated) {
-            let userName = await MainActor.run { profile?.firstName ?? "" }
-            let tier = await MainActor.run { tierManager.currentTier }
-            let isDark = await MainActor.run { self.isDark }
-            let records = await MainActor.run { allProgress }
+        Task {
+            let userName = profile?.firstName ?? ""
+            let tier = tierManager.currentTier
+            let isDark = self.isDark
+            let records = allProgress
             let data = DataExporter.exportPDF(
                 records: records,
                 userName: userName,
                 tier: tier,
                 isDarkMode: isDark
             )
-            await MainActor.run {
-                previewPDFData = data
-                cachedPDFData = data
-                exportingFormat = nil
-            }
+            previewPDFData = data
+            cachedPDFData = data
+            exportingFormat = nil
         }
     }
 
     private func exportData(format: DataExporter.ExportFormat) {
         exportingFormat = format
-        Task.detached(priority: .userInitiated) {
-            let records = await MainActor.run { allProgress }
+        Task {
+            let records = allProgress
             let data: Data
             let fileName: String
 
@@ -555,22 +696,20 @@ struct ExportDataWidget: View {
                 data = DataExporter.exportJSON(records: records)
                 fileName = "lumenlingo_progress.json"
             case .pdf:
-                let userName = await MainActor.run { profile?.firstName ?? "" }
-                let tier = await MainActor.run { tierManager.currentTier }
-                let isDark = await MainActor.run { self.isDark }
+                let userName = profile?.firstName ?? ""
+                let tier = tierManager.currentTier
+                let isDark = self.isDark
                 data = DataExporter.exportPDF(records: records, userName: userName, tier: tier, isDarkMode: isDark)
                 fileName = "lumenlingo_report.pdf"
             }
 
-            await MainActor.run {
-                exportingFormat = nil
-                completedFormat = format
-                shareFile(data: data, fileName: fileName)
+            exportingFormat = nil
+            completedFormat = format
+            shareFile(data: data, fileName: fileName)
 
-                // Reset checkmark after delay
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    withAnimation { completedFormat = nil }
-                }
+            // Reset checkmark after delay
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                withAnimation { completedFormat = nil }
             }
         }
     }
@@ -1106,27 +1245,25 @@ struct PDFPreviewView: View {
         // Preserve current page
         let savedPage = currentPageIndex
 
-        Task.detached(priority: .userInitiated) {
-            let records = await MainActor.run { allProgress }
-            let name = await MainActor.run { userName }
-            let t = await MainActor.run { tier }
+        Task {
+            let records = allProgress
+            let name = userName
+            let t = tier
             let data = DataExporter.exportPDF(records: records, userName: name, tier: t, isDarkMode: newIsDark)
 
-            await MainActor.run {
-                previewIsDark = newIsDark
-                activePDFData = data
-                let newDoc = PDFDocument(data: data)
-                withAnimation(.easeInOut(duration: 0.3)) {
-                    document = newDoc
-                    totalPages = newDoc?.pageCount ?? 1
-                }
-                isRegenerating = false
+            previewIsDark = newIsDark
+            activePDFData = data
+            let newDoc = PDFDocument(data: data)
+            withAnimation(.easeInOut(duration: 0.3)) {
+                document = newDoc
+                totalPages = newDoc?.pageCount ?? 1
+            }
+            isRegenerating = false
 
-                // Restore page position
-                if let doc = newDoc, savedPage < doc.pageCount {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                        goToPage(savedPage)
-                    }
+            // Restore page position
+            if let doc = newDoc, savedPage < doc.pageCount {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    goToPage(savedPage)
                 }
             }
         }

@@ -1,0 +1,15 @@
+{
+  "Legal": {
+    "updateBannerDismiss": "Dismiss",
+    "updateBannerLink": "View changes"
+  },
+  "Terms": {
+    "updateBannerMessage": "We've updated our Terms of Service."
+  },
+  "Privacy": {
+    "updateBannerMessage": "We've updated our Privacy Policy."
+  },
+  "Cookie": {
+    "updateBannerMessage": "We've updated our Cookie Policy."
+  }
+}

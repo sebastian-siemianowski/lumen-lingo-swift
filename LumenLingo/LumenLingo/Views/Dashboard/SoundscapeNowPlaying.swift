@@ -10,9 +10,31 @@ struct SoundscapeNowPlaying: View {
     @Environment(TierManager.self) private var tierManager
     @Query private var profiles: [UserProfile]
 
-    @State private var isCollapsed = true
+    @PersistedState("dashboard_soundscape_collapsed") private var isCollapsed = true
     @State private var barOffsets: [CGFloat] = Array(repeating: 0, count: 9)
     @State private var playPausePressed = false
+
+    // Skip animation state — dreamscape choreography
+    @State private var isSkipping = false
+    @State private var skipDirection: CGFloat = 0
+    @State private var artworkFloat: CGFloat = 0
+    @State private var artworkTilt: Double = 0
+    @State private var artworkGlow: CGFloat = 0
+    @State private var artworkScale: CGFloat = 1.0
+    @State private var cardBreath: CGFloat = 1.0
+    @State private var cardRock: Double = 0
+    @State private var auroraOffset: CGFloat = -0.3
+    @State private var aurora2Offset: CGFloat = -0.3
+    @State private var auroraOpacity: CGFloat = 0
+    @State private var prevBtnScale: CGFloat = 1.0
+    @State private var nextBtnScale: CGFloat = 1.0
+    @State private var skipRingExpand: CGFloat = 0.3
+    @State private var skipRingFade: CGFloat = 0
+    @State private var bloomScale: CGFloat = 0.6
+    @State private var bloomOpacity: CGFloat = 0
+    @State private var textSlide: CGFloat = 0
+    @State private var textBlur: CGFloat = 0
+    @State private var playBtnResonance: CGFloat = 1.0
 
     private var profile: UserProfile? { profiles.first }
     private var isDark: Bool { colorScheme == .dark }
@@ -52,14 +74,18 @@ struct SoundscapeNowPlaying: View {
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
                     .strokeBorder(
                         LinearGradient(
-                            colors: soundscape.previewColors.map { $0.opacity(isDark ? 0.35 : 0.25) },
+                            colors: soundscape.previewColors.map { $0.opacity(isDark ? 0.35 : 0.30) },
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ),
-                        lineWidth: 0.5
+                        lineWidth: isDark ? 0.5 : 1.0
                     )
             )
-            .shadow(color: soundscape.previewColors[0].opacity(isDark ? 0.25 : 0.12), radius: 16, y: 6)
+            .shadow(color: soundscape.previewColors[0].opacity(isDark ? 0.25 : 0.18), radius: isDark ? 16 : 12, y: isDark ? 6 : 4)
+            .background(skipBloomHalo(soundscape))
+            .overlay(skipAuroraOverlay(soundscape))
+            .scaleEffect(cardBreath)
+            .rotationEffect(.degrees(cardRock))
             .animation(.easeInOut(duration: 0.55), value: soundscape)
             .transition(.asymmetric(
                 insertion: .move(edge: .top).combined(with: .opacity),
@@ -75,20 +101,22 @@ struct SoundscapeNowPlaying: View {
             // Artwork + waveform overlay
             artworkWithWaveform(soundscape)
 
-            // Title + subtitle
+            // Title + subtitle — dreamy drift during skip
             VStack(alignment: .leading, spacing: 3) {
                 Text(soundscape.displayName)
                     .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(isDark ? .white : .primary)
+                    .foregroundStyle(isDark ? .white : .caribbeanInk)
                     .lineLimit(1)
                     .contentTransition(.interpolate)
 
                 Text(statusText(soundscape))
                     .font(.system(size: 11, weight: .medium))
-                    .foregroundStyle(isDark ? .white.opacity(0.45) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum)
                     .lineLimit(1)
                     .contentTransition(.interpolate)
             }
+            .offset(x: textSlide)
+            .blur(radius: textBlur)
 
             Spacer(minLength: 4)
 
@@ -146,6 +174,12 @@ struct SoundscapeNowPlaying: View {
                     .shadow(color: .black.opacity(0.25), radius: 3, y: 1)
             }
         }
+        // Dreamscape float & luminous tilt during skip
+        .shadow(color: soundscape.previewColors[0].opacity(artworkGlow * 0.8), radius: 14, y: 0)
+        .shadow(color: (soundscape.previewColors.count > 1 ? soundscape.previewColors[1] : soundscape.previewColors[0]).opacity(artworkGlow * 0.35), radius: 28, y: 0)
+        .scaleEffect(artworkScale)
+        .offset(y: artworkFloat)
+        .rotation3DEffect(.degrees(artworkTilt), axis: (x: 0.15, y: 1, z: 0.05), perspective: 0.35)
     }
 
     // MARK: - Live Waveform (Professional Animated Bars)
@@ -186,9 +220,10 @@ struct SoundscapeNowPlaying: View {
     private func transportControls(_ soundscape: Soundscape) -> some View {
         HStack(spacing: 4) {
             // Previous
-            skipButton(
+            skipControlButton(
                 icon: "backward.fill",
-                action: { skipToPrevious(from: soundscape) }
+                direction: -1,
+                soundscape: soundscape
             )
 
             // Play/Pause — larger, gradient, delightful press animation
@@ -226,29 +261,54 @@ struct SoundscapeNowPlaying: View {
                         .offset(x: isPlaying ? 0 : 1)
                         .contentTransition(.symbolEffect(.replace))
                 }
-                .scaleEffect(playPausePressed ? 0.85 : 1.0)
+                .scaleEffect((playPausePressed ? 0.85 : 1.0) * playBtnResonance)
             }
             .buttonStyle(.plain)
             .animation(.easeInOut(duration: 0.2), value: isPlaying)
 
             // Next
-            skipButton(
+            skipControlButton(
                 icon: "forward.fill",
-                action: { skipToNext(from: soundscape) }
+                direction: 1,
+                soundscape: soundscape
             )
         }
     }
 
-    private func skipButton(icon: String, action: @escaping () -> Void) -> some View {
-        Button {
-            HapticsService.shared.buttonPress()
-            action()
+    private func skipControlButton(icon: String, direction: CGFloat, soundscape: Soundscape) -> some View {
+        let isNext = direction > 0
+        let btnScale = isNext ? nextBtnScale : prevBtnScale
+        let isActiveDir = (isNext && skipDirection > 0) || (!isNext && skipDirection < 0)
+
+        return Button {
+            performSkip(direction: direction, from: soundscape)
         } label: {
-            Image(systemName: icon)
-                .font(.system(size: 13, weight: .semibold))
-                .foregroundStyle(isDark ? .white.opacity(0.7) : .primary.opacity(0.55))
-                .frame(width: 34, height: 34)
-                .contentShape(Circle())
+            ZStack {
+                // Expanding glow ring on skip
+                Circle()
+                    .fill(
+                        RadialGradient(
+                            colors: [
+                                soundscape.previewColors[0].opacity(0.5),
+                                soundscape.previewColors[0].opacity(0.1),
+                                .clear
+                            ],
+                            center: .center,
+                            startRadius: 0,
+                            endRadius: 22
+                        )
+                    )
+                    .frame(width: 48, height: 48)
+                    .scaleEffect(isActiveDir ? skipRingExpand : 0.3)
+                    .opacity(isActiveDir ? skipRingFade : 0)
+
+                Image(systemName: icon)
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(isDark ? .white.opacity(0.7) : .caribbeanInk.opacity(0.6))
+                    .frame(width: 34, height: 34)
+            }
+            .scaleEffect(btnScale)
+            .contentShape(Circle())
         }
         .buttonStyle(.plain)
     }
@@ -284,7 +344,7 @@ struct SoundscapeNowPlaying: View {
 
                 Text("\(Int((profile?.ambientVolume ?? 0.3) * 100))%")
                     .font(.system(size: 11, weight: .medium).monospacedDigit())
-                    .foregroundStyle(isDark ? .white.opacity(0.45) : .secondary)
+                    .foregroundStyle(isDark ? .white.opacity(0.45) : .caribbeanPlum)
                     .frame(width: 32, alignment: .trailing)
             }
 
@@ -302,7 +362,7 @@ struct SoundscapeNowPlaying: View {
                     Text("Stop Soundscape")
                         .font(.system(size: 12, weight: .semibold))
                 }
-                .foregroundStyle(isDark ? .white.opacity(0.5) : .secondary)
+                .foregroundStyle(isDark ? .white.opacity(0.5) : .caribbeanPlum)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 6)
                 .background(
@@ -324,14 +384,242 @@ struct SoundscapeNowPlaying: View {
             if isDark {
                 Color(red: 20/255, green: 16/255, blue: 38/255).opacity(0.85)
             } else {
-                Color(red: 248/255, green: 246/255, blue: 252/255).opacity(0.92)
+                Color.white
             }
 
             LinearGradient(
-                colors: soundscape.previewColors.map { $0.opacity(isDark ? 0.08 : 0.06) },
+                colors: soundscape.previewColors.map { $0.opacity(isDark ? 0.08 : 0.12) },
                 startPoint: .leading,
                 endPoint: .trailing
             )
+        }
+    }
+
+    // MARK: - Aurora Shimmer Overlay (Dual-Band Bioluminescence)
+
+    private func skipAuroraOverlay(_ soundscape: Soundscape) -> some View {
+        let c1 = soundscape.previewColors[0]
+        let c2 = soundscape.previewColors.count > 1 ? soundscape.previewColors[1] : c1
+
+        return ZStack {
+            // Primary aurora band — warm luminous sweep
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .fill(
+                    LinearGradient(
+                        stops: [
+                            .init(color: .clear, location: max(0, min(1, auroraOffset - 0.28))),
+                            .init(color: c1.opacity(0.06), location: max(0, min(1, auroraOffset - 0.12))),
+                            .init(color: c2.opacity(0.22), location: max(0, min(1, auroraOffset))),
+                            .init(color: c1.opacity(0.06), location: max(0, min(1, auroraOffset + 0.12))),
+                            .init(color: .clear, location: max(0, min(1, auroraOffset + 0.28)))
+                        ],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+
+            // Secondary aurora band — cooler ethereal layer
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .fill(
+                    LinearGradient(
+                        stops: [
+                            .init(color: .clear, location: max(0, min(1, aurora2Offset - 0.2))),
+                            .init(color: c2.opacity(0.04), location: max(0, min(1, aurora2Offset - 0.08))),
+                            .init(color: c1.opacity(0.14), location: max(0, min(1, aurora2Offset))),
+                            .init(color: c2.opacity(0.04), location: max(0, min(1, aurora2Offset + 0.08))),
+                            .init(color: .clear, location: max(0, min(1, aurora2Offset + 0.2)))
+                        ],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .blendMode(.plusLighter)
+        }
+        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .opacity(auroraOpacity)
+        .allowsHitTesting(false)
+    }
+
+    // MARK: - Bloom Halo (Radiant Pulse Behind Card)
+
+    private func skipBloomHalo(_ soundscape: Soundscape) -> some View {
+        let c1 = soundscape.previewColors[0]
+        let c2 = soundscape.previewColors.count > 1 ? soundscape.previewColors[1] : c1
+
+        return Ellipse()
+            .fill(
+                RadialGradient(
+                    colors: [
+                        c1.opacity(0.35),
+                        c2.opacity(0.15),
+                        .clear
+                    ],
+                    center: .center,
+                    startRadius: 5,
+                    endRadius: 140
+                )
+            )
+            .frame(width: 280, height: 80)
+            .scaleEffect(bloomScale)
+            .opacity(bloomOpacity)
+            .blur(radius: 18)
+    }
+
+    // MARK: - Skip Choreography
+
+    private func performSkip(direction: CGFloat, from soundscape: Soundscape) {
+        guard !isSkipping else { return }
+        isSkipping = true
+        skipDirection = direction
+        let isNext = direction > 0
+
+        // ── 1. Ethereal haptic ──
+        HapticsService.shared.buttonPress()
+
+        // ── 2. Button melts down with weight ──
+        withAnimation(.easeOut(duration: 0.15)) {
+            if isNext { nextBtnScale = 0.65 } else { prevBtnScale = 0.65 }
+        }
+
+        // ── 3. Glow ring blooms outward ──
+        skipRingExpand = 0.3
+        skipRingFade = 0.9
+        withAnimation(.easeOut(duration: 0.8)) {
+            skipRingExpand = 2.8
+            skipRingFade = 0
+        }
+
+        // ── 4. Card inhales — gentle levitation ──
+        withAnimation(.easeInOut(duration: 0.5)) {
+            cardBreath = 1.025
+        }
+
+        // ── 5. Card rocks gently — like resting on water ──
+        withAnimation(.easeInOut(duration: 0.35)) {
+            cardRock = direction * 0.8
+        }
+
+        // ── 6. Artwork levitates & sweeps toward horizon ──
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+            artworkFloat = -7
+            artworkTilt = direction * 28
+            artworkGlow = 0.75
+            artworkScale = 1.08
+        }
+
+        // ── 7. Bloom halo radiates behind card ──
+        bloomScale = 0.6
+        withAnimation(.easeOut(duration: 0.7)) {
+            bloomScale = 1.4
+            bloomOpacity = 1.0
+        }
+
+        // ── 8. Text drifts in skip direction with dreamy blur ──
+        withAnimation(.easeOut(duration: 0.2)) {
+            textSlide = direction * 6
+            textBlur = 1.5
+        }
+
+        // ── 9. Primary aurora sweep — warm band ──
+        auroraOffset = direction > 0 ? -0.3 : 1.3
+        auroraOpacity = 1.0
+        withAnimation(.easeInOut(duration: 0.85)) {
+            auroraOffset = direction > 0 ? 1.3 : -0.3
+        }
+
+        // ── 10. Secondary aurora — staggered cooler wave ──
+        aurora2Offset = direction > 0 ? -0.25 : 1.25
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            withAnimation(.easeInOut(duration: 0.7)) {
+                self.aurora2Offset = direction > 0 ? 1.25 : -0.25
+            }
+        }
+
+        // ── 11. Play button sympathetic resonance ──
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
+            withAnimation(.easeInOut(duration: 0.2)) {
+                self.playBtnResonance = 0.92
+            }
+        }
+
+        // ── 12. Fire the soundscape change ──
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+            if isNext {
+                self.skipToNext(from: soundscape)
+            } else {
+                self.skipToPrevious(from: soundscape)
+            }
+        }
+
+        // ── 13. Text clears — new title drifts in ──
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            withAnimation(.spring(response: 0.6, dampingFraction: 0.75)) {
+                self.textSlide = 0
+                self.textBlur = 0
+            }
+        }
+
+        // ── 14. Artwork floats home — dreamy settling ──
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+            withAnimation(.spring(response: 0.9, dampingFraction: 0.6)) {
+                self.artworkFloat = 0
+                self.artworkTilt = 0
+                self.artworkScale = 1.0
+            }
+            withAnimation(.easeOut(duration: 0.6)) {
+                self.artworkGlow = 0
+            }
+        }
+
+        // ── 15. Play button settles ──
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.6)) {
+                self.playBtnResonance = 1.0
+            }
+        }
+
+        // ── 16. Skip button rebounds ──
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.22) {
+            withAnimation(.spring(response: 0.55, dampingFraction: 0.5)) {
+                if isNext { self.nextBtnScale = 1.0 } else { self.prevBtnScale = 1.0 }
+            }
+        }
+
+        // ── 17. Card rocks back through center — pendulum on water ──
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+            withAnimation(.spring(response: 0.8, dampingFraction: 0.55)) {
+                self.cardRock = -direction * 0.3
+            }
+        }
+
+        // ── 18. Card exhales — comes to rest ──
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+            withAnimation(.easeInOut(duration: 0.6)) {
+                self.cardBreath = 1.0
+            }
+            withAnimation(.spring(response: 0.7, dampingFraction: 0.7)) {
+                self.cardRock = 0
+            }
+        }
+
+        // ── 19. Bloom halo dissolves ──
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            withAnimation(.easeOut(duration: 0.5)) {
+                self.bloomOpacity = 0
+            }
+        }
+
+        // ── 20. Aurora dissolves like morning mist ──
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
+            withAnimation(.easeOut(duration: 0.4)) {
+                self.auroraOpacity = 0
+            }
+        }
+
+        // ── 21. Reset — ready for next journey ──
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+            self.isSkipping = false
+            self.skipDirection = 0
         }
     }
 

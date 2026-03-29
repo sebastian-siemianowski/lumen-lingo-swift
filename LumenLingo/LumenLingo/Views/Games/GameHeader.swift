@@ -10,23 +10,27 @@ enum ProgressBarEffect {
 
 struct GameHeaderTheme {
     let gradientColors: [Color]
+    let lightProgressColors: [Color]
     let scoreIcon: String
     let progressEffect: ProgressBarEffect
 
     static let flashcards = GameHeaderTheme(
         gradientColors: [Color(hex: "#667eea"), Color(hex: "#06b6d4"), Color(hex: "#0d9488")],
+        lightProgressColors: [Color(hex: "#4F8EFF"), Color(hex: "#00D4FF"), Color(hex: "#00E5A0")],
         scoreIcon: "bolt.circle.fill",
         progressEffect: .flowing
     )
 
     static let grammar = GameHeaderTheme(
         gradientColors: [Color(hex: "#f093fb"), Color(hex: "#f5576c"), Color(hex: "#e11d48")],
+        lightProgressColors: [Color(hex: "#C084FC"), Color(hex: "#F472B6"), Color(hex: "#FB7185")],
         scoreIcon: "brain.fill",
         progressEffect: .heartbeat
     )
 
     static let wordBuilder = GameHeaderTheme(
         gradientColors: [Color(hex: "#fbbf24"), Color(hex: "#f97316"), Color(hex: "#ef4444")],
+        lightProgressColors: [Color(hex: "#FBBF24"), Color(hex: "#FB923C"), Color(hex: "#F472B6")],
         scoreIcon: "star.circle.fill",
         progressEffect: .fireTrail
     )
@@ -158,15 +162,46 @@ struct GameHeader: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .background(
-            RoundedRectangle(cornerRadius: 20)
-                .fill(.ultraThinMaterial)
+        .background {
+            if isDark {
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(.ultraThinMaterial)
+            } else {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.thinMaterial)
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color.white.opacity(0.25))
+                }
+            }
+        }
+        .overlay {
+            if isDark {
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(gameGradient, lineWidth: 0.5)
+            } else {
+                RoundedRectangle(cornerRadius: 20)
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [
+                                Color.white.opacity(0.70),
+                                Color.white.opacity(0.40),
+                                Color.white.opacity(0.60)
+                            ],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 0.75
+                    )
+            }
+        }
+        .shadow(
+            color: isDark
+                ? .black.opacity(0.15)
+                : Color(red: 0.55, green: 0.50, blue: 0.68).opacity(0.10),
+            radius: isDark ? 4 : 6,
+            y: isDark ? 2 : 3
         )
-        .overlay(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(gameGradient, lineWidth: 0.5)
-        )
-        .shadow(color: .black.opacity(0.15), radius: 4, y: 2)
         .padding(.horizontal, 4)
         .padding(.bottom, 8)
         .onAppear {
@@ -227,24 +262,85 @@ struct GameHeader: View {
 
     @ViewBuilder
     private var themedProgressBar: some View {
-        let barHeight: CGFloat = 5
+        let barHeight: CGFloat = isDark ? 5 : 6
         GeometryReader { geo in
             let fillWidth = max(0, geo.size.width * min(progressFraction, 1.0))
             ZStack(alignment: .leading) {
-                Capsule()
-                    .fill(.white.opacity(0.08))
+                // Track
+                if isDark {
+                    Capsule()
+                        .fill(.white.opacity(0.08))
+                } else {
+                    // Frost trough — recessed glass channel with inner shadow depth
+                    ZStack {
+                        Capsule()
+                            .fill(Color(red: 0.88, green: 0.91, blue: 0.94))
+                        // Inner shadow — top-dark to bottom-light for carved depth
+                        Capsule()
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color.black.opacity(0.05),
+                                        Color.clear,
+                                        Color.white.opacity(0.25)
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                        // Glass rim — catches light at the trough edge
+                        Capsule()
+                            .strokeBorder(Color.white.opacity(0.65), lineWidth: 0.5)
+                    }
+                }
 
+                // Fill
                 Capsule()
                     .fill(progressFill(width: fillWidth))
                     .frame(width: fillWidth)
+                    .overlay {
+                        // Frost highlight — light catching the liquid surface
+                        if !isDark {
+                            VStack(spacing: 0) {
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [Color.white.opacity(0.50), Color.white.opacity(0.05)],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        )
+                                    )
+                                    .frame(height: barHeight * 0.38)
+                                    .padding(.horizontal, 1.5)
+                                    .padding(.top, 0.5)
+                                Spacer(minLength: 0)
+                            }
+                        }
+                    }
                     .overlay(progressEffectOverlay(fillWidth: fillWidth, totalWidth: geo.size.width))
                     .clipShape(Capsule())
+                    .shadow(
+                        color: isDark
+                            ? .clear
+                            : (theme.gradientColors.first ?? .blue).opacity(0.30),
+                        radius: 4, x: 0, y: 1.5
+                    )
             }
         }
         .frame(height: barHeight)
     }
 
     private func progressFill(width: CGFloat) -> some ShapeStyle {
+        if !isDark {
+            // Light mode: vibrant uplifting gradient in the frost trough
+            return AnyShapeStyle(
+                LinearGradient(
+                    colors: theme.lightProgressColors,
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+        }
         switch theme.progressEffect {
         case .flowing:
             // Animated gradient position for flowing water effect
@@ -268,6 +364,10 @@ struct GameHeader: View {
 
     @ViewBuilder
     private func progressEffectOverlay(fillWidth: CGFloat, totalWidth: CGFloat) -> some View {
+        if !isDark {
+            // Light mode: no animated overlays — the static frost highlight is enough
+            EmptyView()
+        } else {
         switch theme.progressEffect {
         case .flowing:
             // Inner highlight shimmer
@@ -307,7 +407,11 @@ struct GameHeader: View {
                     Circle()
                         .fill(
                             RadialGradient(
-                                colors: [.white.opacity(0.6), (theme.gradientColors.first ?? .orange).opacity(0.3), .clear],
+                                colors: [
+                                    isDark ? .white.opacity(0.6) : (theme.gradientColors.first ?? .orange).opacity(0.5),
+                                    (theme.gradientColors.first ?? .orange).opacity(0.3),
+                                    .clear
+                                ],
                                 center: .center,
                                 startRadius: 0,
                                 endRadius: 8
@@ -319,6 +423,7 @@ struct GameHeader: View {
                 .frame(width: fillWidth)
             }
         }
+        } // else (dark mode)
     }
 
     // MARK: - Stat Pill

@@ -326,6 +326,63 @@ final class HapticsService {
         }
     }
 
+    /// Story 7.1: Tier-specific celebration haptic choreography.
+    /// Pro: light→medium→light (building warmth)
+    /// Elite: light→medium→heavy→medium (crystalline crescendo)
+    /// Royal: light→medium→heavy→heavy→light (majestic wave)
+    /// Trial: Royal at reduced intensity.
+    func celebrationChoreography(for tier: MembershipTier) {
+        guard isEnabled, canFire("celebrationChoreography", cooldown: 2.0) else { return }
+        switch tier {
+        case .pro:
+            lightGenerator.impactOccurred(intensity: 0.5)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { [weak self] in
+                self?.mediumGenerator.impactOccurred(intensity: 0.7)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) { [weak self] in
+                self?.lightGenerator.impactOccurred(intensity: 0.6)
+            }
+        case .elite:
+            lightGenerator.impactOccurred(intensity: 0.5)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.12) { [weak self] in
+                self?.mediumGenerator.impactOccurred(intensity: 0.7)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.28) { [weak self] in
+                self?.heavyGenerator.impactOccurred(intensity: 0.9)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) { [weak self] in
+                self?.mediumGenerator.impactOccurred(intensity: 0.6)
+            }
+        case .royal:
+            lightGenerator.impactOccurred(intensity: 0.5)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.12) { [weak self] in
+                self?.mediumGenerator.impactOccurred(intensity: 0.7)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.28) { [weak self] in
+                self?.heavyGenerator.impactOccurred(intensity: 1.0)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) { [weak self] in
+                self?.heavyGenerator.impactOccurred(intensity: 0.8)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.65) { [weak self] in
+                self?.lightGenerator.impactOccurred(intensity: 0.5)
+            }
+        case .trial:
+            lightGenerator.impactOccurred(intensity: 0.4)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { [weak self] in
+                self?.mediumGenerator.impactOccurred(intensity: 0.5)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) { [weak self] in
+                self?.mediumGenerator.impactOccurred(intensity: 0.6)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.50) { [weak self] in
+                self?.lightGenerator.impactOccurred(intensity: 0.4)
+            }
+        case .free:
+            mediumGenerator.impactOccurred(intensity: 0.5)
+        }
+    }
+
     /// Enhanced double-tap pattern for higher tier haptic levels
     func enhancedDoubleTap() {
         guard isEnabled, canFire("enhancedDoubleTap", cooldown: 0.2) else { return }

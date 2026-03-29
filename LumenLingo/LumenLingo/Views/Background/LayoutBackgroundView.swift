@@ -52,13 +52,13 @@ struct LayoutBackgroundView: View {
         previewQuantumScene ?? profile?.quantumScene ?? .dubaiCelestialMirage
     }
     private var showOrbs: Bool {
-        debugIsolateCosmic ? false : (profile?.breathingOrbsEnabled ?? true)
+        debugIsolateCosmic ? false : (profile?.breathingOrbsEnabled ?? false)
     }
     private var showQuantumFlow: Bool {
-        debugIsolateCosmic ? false : (profile?.quantumFlowEnabled ?? true)
+        debugIsolateCosmic ? false : (profile?.quantumFlowEnabled ?? false)
     }
     private var showCosmic: Bool {
-        debugIsolateCosmic ? true : (profile?.nebulaDriftEnabled ?? true)
+        debugIsolateCosmic ? true : (profile?.nebulaDriftEnabled ?? false)
     }
     private var orbIntensity: Double {
         profile?.orbIntensity ?? 1.0
@@ -89,15 +89,18 @@ struct LayoutBackgroundView: View {
         let isDark = colorScheme == .dark
         GeometryReader { geometry in
             ZStack {
-                // Layer 0: Base gradient
-                baseGradient
-                    .animation(.smooth(duration: 0.65), value: isDark)
-
-                // Light-mode accent overlays (single compositing group)
-                lightAccentOverlays
-                    .opacity(isDark ? 0 : 1)
-                    .animation(.smooth(duration: 0.65), value: isDark)
-                    .allowsHitTesting(false)
+                if isDark {
+                    // Layer 0: Base gradient (dark mode)
+                    baseGradient
+                        .animation(.smooth(duration: 0.65), value: isDark)
+                } else {
+                    // Layer 0: Light mode background image
+                    Image("LightModeBackground")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea()
+                        .background(baseGradient)
+                }
 
                 // Layer 1: Breathing orbs (respects user toggle + active state)
                 if showOrbs && isActive {
@@ -163,16 +166,7 @@ struct LayoutBackgroundView: View {
                 .blendMode(.overlay)
                 .opacity(colorScheme == .dark ? 1 : 0)
 
-            // Bottom safe area fade
-            LinearGradient(
-                stops: [
-                    .init(color: .clear, location: 0.85),
-                    .init(color: Color(red: 2/255, green: 1/255, blue: 6/255).opacity(0.3), location: 1.0),
-                ],
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .opacity(colorScheme == .dark ? 1 : 0)
+
         }
     }
 
