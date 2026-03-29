@@ -28,6 +28,11 @@ enum ProfileSyncService {
         profile.clerkUserId = clerkUserId
         profile.lastSyncDate = Date()
 
+        do {
+            try modelContext.save()
+        } catch {
+            Log.error("Failed to save profile after Clerk sync (userId: \(clerkUserId)): \(error)")
+        }
         Log.info("Profile synced from Clerk (userId: \(clerkUserId), name: \(profile.firstName))")
     }
 
