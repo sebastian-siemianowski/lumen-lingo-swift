@@ -5,7 +5,7 @@ import SwiftData
 
 enum LegalDocuments {
     /// Current version of legal documents. Bump this when Terms/Privacy are updated.
-    static let currentVersion = "1.0"
+    static let currentVersion = "2.3"
 }
 
 // MARK: - Legal Re-consent View
