@@ -6,9 +6,11 @@ import { test, expect } from '@playwright/test';
  * Uses Playwright's toHaveScreenshot() for pixel-level comparison.
  * Covers 4 pages × 3 locales = 12 baselines, including RTL (ar).
  *
- * Run:  npx playwright test e2e/i18n-visual-snapshots.spec.ts --update-snapshots
- * to generate initial baselines.
+ * Skipped in CI because pixel baselines are platform-dependent (macOS vs Ubuntu).
+ * Run locally with:  npx playwright test e2e/i18n-visual-snapshots.spec.ts --update-snapshots
  */
+
+test.skip(!!process.env.CI, 'Visual baselines are platform-dependent — run locally');
 
 const MATRIX: { page: string; path: string; locales: string[] }[] = [
   { page: 'home', path: '', locales: ['en', 'ar', 'ja'] },

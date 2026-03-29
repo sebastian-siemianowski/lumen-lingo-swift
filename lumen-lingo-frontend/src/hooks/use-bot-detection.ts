@@ -102,9 +102,9 @@ export class MouseRingBuffer {
 export function arePointsCollinear(positions: MousePosition[], tolerance: number = COLLINEARITY_TOLERANCE): boolean {
   if (positions.length < 3) return false;
   for (let i = 0; i < positions.length - 2; i++) {
-    const p1 = positions[i];
-    const p2 = positions[i + 1];
-    const p3 = positions[i + 2];
+    const p1 = positions[i]!;
+    const p2 = positions[i + 1]!;
+    const p3 = positions[i + 2]!;
     const crossProduct = Math.abs(
       (p2.x - p1.x) * (p3.y - p1.y) - (p2.y - p1.y) * (p3.x - p1.x),
     );
@@ -119,7 +119,7 @@ export function arePointsCollinear(positions: MousePosition[], tolerance: number
  */
 export function isSuperhumanSpeed(positions: MousePosition[], threshold: number = SUPERHUMAN_SPEED_MS): boolean {
   if (positions.length < 2) return false;
-  const totalTime = positions[positions.length - 1].timestamp - positions[0].timestamp;
+  const totalTime = positions[positions.length - 1]!.timestamp - positions[0]!.timestamp;
   return totalTime < threshold;
 }
 
@@ -142,7 +142,7 @@ function checkNoWebDriver(): boolean {
 /** Check for PhantomJS/Nightmare indicators on window */
 function checkNoPhantom(): boolean {
   if (typeof window === 'undefined') return true;
-  const w = window as Record<string, unknown>;
+  const w = window as unknown as Record<string, unknown>;
   return !w._phantom && !w.__nightmare && !w.callPhantom;
 }
 
@@ -241,7 +241,7 @@ export function analyseCadence(timestamps: number[]): number {
 
   const gaps: number[] = [];
   for (let i = 1; i < timestamps.length; i++) {
-    gaps.push(timestamps[i] - timestamps[i - 1]);
+    gaps.push(timestamps[i]! - timestamps[i - 1]!);
   }
 
   // Check if all gaps are suspiciously fast
@@ -292,7 +292,7 @@ export function useBotDetection(
   const mouseRingBufferRef = useRef(new MouseRingBuffer());
   const mouseWeightRef = useRef(0); // Variable weight: 0, 7, or 15
   const envWeightRef = useRef(0); // Variable weight from environment fingerprinting
-  const scrollWeightRef = useRef(WEIGHTS.scrollDetected); // Variable: 0 or 15 (Story 3.4)
+  const scrollWeightRef = useRef<number>(WEIGHTS.scrollDetected); // Variable: 0 or 15 (Story 3.4)
   const eventTimestampsRef = useRef<number[]>([]); // For cadence analysis (Story 3.4)
   const cadenceMultiplierRef = useRef(1); // 1 = natural, 0.5 = robotic
   const envResultRef = useRef<EnvironmentResult | null>(null); // Story 5.2: kept for snapshot
@@ -520,7 +520,7 @@ export function useBotDetection(
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry?.isIntersecting) {
           startCollection();
           observer.disconnect();
         }
@@ -581,7 +581,7 @@ export function useBotDetection(
     const cadenceStdDev = (() => {
       const ts = eventTimestampsRef.current;
       if (ts.length < 3) return null;
-      const gaps = ts.slice(1).map((t, i) => t - ts[i]);
+      const gaps = ts.slice(1).map((t, i) => t - ts[i]!);
       const mean = gaps.reduce((a, b) => a + b, 0) / gaps.length;
       const variance = gaps.reduce((s, g) => s + (g - mean) ** 2, 0) / gaps.length;
       return Math.round(Math.sqrt(variance) * 100) / 100;

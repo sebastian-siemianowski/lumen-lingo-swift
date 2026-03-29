@@ -15,9 +15,9 @@ export function Pagination({
   basePath = '/blog',
   searchParams = {},
 }: PaginationProps) {
-  if (totalPages <= 1) return null;
-
   const t = useTranslations('Blog');
+
+  if (totalPages <= 1) return null;
 
   function buildHref(page: number) {
     const params = new URLSearchParams(searchParams);

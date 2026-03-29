@@ -5,6 +5,11 @@ vi.mock('@vercel/analytics', () => ({
   track: vi.fn(),
 }));
 
+// Mock cookie-consent to always allow analytics
+vi.mock('@/lib/cookie-consent', () => ({
+  hasConsent: () => true,
+}));
+
 import { track } from '@vercel/analytics';
 import {
   trackEvent,

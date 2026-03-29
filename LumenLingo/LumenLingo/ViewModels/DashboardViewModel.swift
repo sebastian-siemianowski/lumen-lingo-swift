@@ -10,10 +10,12 @@ final class DashboardViewModel {
     var isLoading = true
 
     private let progressService: ProgressService
-    private let translationService = TranslationService.shared
+    private let translationService: TranslationService
 
+    @MainActor
     init(progressService: ProgressService) {
         self.progressService = progressService
+        self.translationService = TranslationService.shared
     }
 
     func greeting(for name: String?, using strings: AppStrings) -> String {

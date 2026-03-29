@@ -3,6 +3,7 @@
 import { useState, useRef, type FormEvent } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from '@/i18n/navigation';
 import { Input, Textarea, Select, Label, ErrorText } from '@/components/ui';
 import { cn } from '@/lib/utils';
 import { getProtectedEmail } from '@/lib/email-registry';
@@ -124,12 +125,12 @@ export function DataRequestForm() {
           <p className="mb-2 text-sm leading-relaxed text-[--color-foreground-secondary]">
             Your email client has been opened with your request. Please review and send.
           </p>
-          <a
+          <Link
             href="/"
             className="mt-4 inline-block text-sm text-[--color-violet] hover:underline"
           >
             Back to homepage
-          </a>
+          </Link>
         </motion.div>
       ) : (
         <motion.form

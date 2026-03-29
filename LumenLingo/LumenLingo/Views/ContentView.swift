@@ -142,16 +142,17 @@ struct ContentView: View {
             tierManager.validateState(profile: profile)
             tierManager.pullFromCloud(profile: profile)
             tierManager.startCloudSync(profile: profile)
+            let isUITest = ProcessInfo.processInfo.arguments.contains("-UITest_SkipOnboarding")
             // Check for legal consent — must accept current version before using the app
-            if profile?.legalConsentVersion != LegalConsentView.currentVersion {
+            if !isUITest, profile?.legalConsentVersion != LegalConsentView.currentVersion {
                 showLegalConsent = true
             }
             // Check for trial expiration on app launch
-            if tierManager.checkTrialExpiration(profile: profile) {
+            if !isUITest, tierManager.checkTrialExpiration(profile: profile) {
                 showTrialEnded = true
             }
             // Show tier onboarding on first launch
-            if !UserDefaults.standard.bool(forKey: "hasSeenTierOnboarding") {
+            if !isUITest, !UserDefaults.standard.bool(forKey: "hasSeenTierOnboarding") {
                 showTierOnboarding = true
             }
             if let profile {

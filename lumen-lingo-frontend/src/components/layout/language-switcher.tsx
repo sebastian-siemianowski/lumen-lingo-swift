@@ -221,7 +221,7 @@ export function LanguageSwitcher() {
         const next = e.key === 'ArrowDown'
           ? (idx + 1) % options.length
           : (idx - 1 + options.length) % options.length;
-        options[next].focus();
+        options[next]?.focus();
       }
     };
     document.addEventListener('keydown', onKey);

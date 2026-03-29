@@ -8,10 +8,23 @@ vi.mock('@/lib/analytics', () => ({
   trackEvent: vi.fn(),
 }));
 
+// Mock feature flag — enable newsletter form for tests
+vi.mock('@/hooks/use-feature-flag', () => ({
+  useFeatureFlag: () => true,
+}));
+
 describe('NewsletterForm', () => {
   beforeEach(() => {
     vi.restoreAllMocks();
   });
+
+  /** Check the age-confirmation checkbox so form submission proceeds. */
+  function confirmAge() {
+    const checkbox = screen.getByRole('checkbox') as HTMLInputElement;
+    if (!checkbox.checked) {
+      fireEvent.click(checkbox);
+    }
+  }
 
   it('renders email input and subscribe button', () => {
     render(<NewsletterForm />);
@@ -58,10 +71,11 @@ describe('NewsletterForm', () => {
     render(<NewsletterForm source="test" />);
     const input = screen.getByRole('textbox', { name: /email/i });
     await userEvent.type(input, 'user@example.com');
+    confirmAge();
     fireEvent.click(screen.getByRole('button', { name: /subscribe/i }));
 
     await waitFor(() => {
-      expect(screen.getByText(/welcome|community|inbox/i)).toBeInTheDocument();
+      expect(screen.getAllByText(/welcome|community|inbox/i).length).toBeGreaterThan(0);
     });
   });
 
@@ -74,6 +88,7 @@ describe('NewsletterForm', () => {
     render(<NewsletterForm />);
     const input = screen.getByRole('textbox', { name: /email/i });
     await userEvent.type(input, 'user@example.com');
+    confirmAge();
     fireEvent.click(screen.getByRole('button', { name: /subscribe/i }));
 
     await waitFor(() => {
@@ -87,6 +102,7 @@ describe('NewsletterForm', () => {
     render(<NewsletterForm />);
     const input = screen.getByRole('textbox', { name: /email/i });
     await userEvent.type(input, 'user@example.com');
+    confirmAge();
     fireEvent.click(screen.getByRole('button', { name: /subscribe/i }));
 
     await waitFor(() => {

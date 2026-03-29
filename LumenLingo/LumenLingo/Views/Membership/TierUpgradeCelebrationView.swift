@@ -547,7 +547,7 @@ struct TierUpgradeCelebrationView: View {
             if phase > 0.8 { alpha *= (1.0 - (phase - 0.8) / 0.2) }
 
             context.opacity = alpha
-            var transform = CGAffineTransform.identity
+            let transform = CGAffineTransform.identity
                 .translatedBy(x: x, y: y)
                 .rotated(by: rotation)
             let rect = CGRect(x: -Double(shardW) / 2, y: -Double(shardH) / 2,

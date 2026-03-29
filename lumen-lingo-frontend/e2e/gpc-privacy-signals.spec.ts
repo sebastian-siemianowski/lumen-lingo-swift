@@ -20,8 +20,13 @@ test.describe('Global Privacy Control (GPC)', () => {
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
 
+    // Wait for React hydration + useEffect to auto-reject consent
+    await expect.poll(async () => {
+      const raw = await page.evaluate(() => localStorage.getItem('ll_cookie_consent'));
+      return raw !== null;
+    }, { timeout: 15_000 }).toBeTruthy();
+
     // Banner should NOT be visible (GPC auto-rejects)
-    await page.waitForTimeout(1000);
     const banner = page.locator('[role="dialog"][aria-label]');
     await expect(banner).not.toBeVisible();
 
@@ -45,9 +50,14 @@ test.describe('Global Privacy Control (GPC)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(500);
 
-    // Open cookie settings via footer
+    // Wait for React hydration + consent auto-reject
+    await expect.poll(async () => {
+      const raw = await page.evaluate(() => localStorage.getItem('ll_cookie_consent'));
+      return raw !== null;
+    }, { timeout: 15_000 }).toBeTruthy();
+
+    // Open cookie settings via dispatching event
     await page.evaluate(() => {
       window.dispatchEvent(new Event('open-cookie-settings'));
     });
@@ -76,7 +86,12 @@ test.describe('Global Privacy Control (GPC)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(500);
+
+    // Wait for React hydration + consent auto-reject
+    await expect.poll(async () => {
+      const raw = await page.evaluate(() => localStorage.getItem('ll_cookie_consent'));
+      return raw !== null;
+    }, { timeout: 15_000 }).toBeTruthy();
 
     // Open cookie settings
     await page.evaluate(() => {
@@ -119,7 +134,9 @@ test.describe('Global Privacy Control (GPC)', () => {
       await route.fulfill({ status: 200, body: '{}' });
     });
 
-    await page.goto('/pricing', { waitUntil: 'networkidle' });
+    await page.goto('/pricing', { waitUntil: 'domcontentloaded' });
+    // Allow time for any analytics scripts to fire
+    await page.waitForTimeout(3000);
 
     // No analytics tracking calls should have been made
     expect(trackCalls).toHaveLength(0);
@@ -136,9 +153,13 @@ test.describe('Do-Not-Track (DNT)', () => {
     });
 
     await page.goto('/', { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(1000);
 
-    // Banner should NOT be visible
+    // Wait for React hydration + useEffect to auto-reject consent
+    await expect.poll(async () => {
+      const raw = await page.evaluate(() => localStorage.getItem('ll_cookie_consent'));
+      return raw !== null;
+    }, { timeout: 15_000 }).toBeTruthy();
+
     const banner = page.locator('[role="dialog"][aria-label]');
     await expect(banner).not.toBeVisible();
 

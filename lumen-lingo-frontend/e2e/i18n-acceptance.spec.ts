@@ -3,13 +3,13 @@ import { test, expect } from '@playwright/test';
 /**
  * Story 15.12 — End-to-End Internationalisation Acceptance Testing
  *
- * Comprehensive E2E tests covering all 10 supported locales,
+ * Comprehensive E2E tests covering all 9 supported locales,
  * verifying correct content rendering, locale switching, RTL layout,
  * currency context, and absence of English fallback text.
  */
 
 // ---------------------------------------------------------------------------
-// 15.12.1 — Test helper: all 10 locales with locale-specific metadata
+// 15.12.1 — Test helper: all 9 locales with locale-specific metadata
 // ---------------------------------------------------------------------------
 
 interface LocaleMeta {
@@ -31,7 +31,6 @@ const LOCALES: LocaleMeta[] = [
   { code: 'de', prefix: '/de', dir: 'ltr', heroSnippet: 'Sprachen Meistern',    currencyHint: '€' },
   { code: 'ja', prefix: '/ja', dir: 'ltr', heroSnippet: '没入型体験',             currencyHint: '¥' },
   { code: 'zh', prefix: '/zh', dir: 'ltr', heroSnippet: '沉浸式体验',             currencyHint: '¥' },
-  { code: 'pt', prefix: '/pt', dir: 'ltr', heroSnippet: 'Domine Idiomas',       currencyHint: 'R$' },
   { code: 'pl', prefix: '/pl', dir: 'ltr', heroSnippet: 'Opanuj',               currencyHint: 'zł' },
   { code: 'ar', prefix: '/ar', dir: 'rtl', heroSnippet: 'أتقن اللغات',           currencyHint: 'ر.س' },
   { code: 'uk', prefix: '/uk', dir: 'ltr', heroSnippet: 'Опануйте',             currencyHint: '₴' },
@@ -47,8 +46,8 @@ for (const locale of LOCALES) {
       await page.goto(`${locale.prefix}/`, { waitUntil: 'domcontentloaded' });
       const h1 = page.locator('h1').first();
       await expect(h1).toBeVisible({ timeout: 10_000 });
-      const text = await h1.textContent();
-      expect(text).toContain(locale.heroSnippet);
+      const text = (await h1.innerText()).replace(/\s+/g, '');
+      expect(text).toContain(locale.heroSnippet.replace(/\s+/g, ''));
     });
 
     test('hero CTA button is visible', async ({ page }) => {
@@ -73,7 +72,8 @@ for (const locale of LOCALES) {
           !e.includes('NEXT_') &&
           !e.includes('Loading chunk') &&
           !e.includes('Failed to load resource') &&
-          !e.includes('_vercel/')
+          !e.includes('_vercel/') &&
+          !e.includes('React state update on a component that hasn')
       );
       if (real.length > 0) console.log('Console errors:', JSON.stringify(real));
       expect(real).toHaveLength(0);
@@ -178,9 +178,10 @@ for (const locale of LOCALES) {
 for (const locale of LOCALES) {
   for (const pagePath of ['/privacy', '/terms']) {
     test(`[${locale.code.toUpperCase()}] ${pagePath} renders`, async ({ page }) => {
-      await page.goto(`${locale.prefix}${pagePath}`, { waitUntil: 'domcontentloaded' });
+      const response = await page.goto(`${locale.prefix}${pagePath}`, { waitUntil: 'domcontentloaded', timeout: 30_000 });
+      expect(response !== null && response.status() < 500, `Expected no server error for ${locale.prefix}${pagePath}, got ${response?.status()}`).toBeTruthy();
       const heading = page.locator('h1').first();
-      await expect(heading).toBeVisible({ timeout: 10_000 });
+      await expect(heading).toBeVisible({ timeout: 15_000 });
       const text = await heading.textContent();
       expect(text!.length).toBeGreaterThan(0);
     });

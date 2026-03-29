@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - Flashcard Word
 
-struct FlashcardWord: Codable, Identifiable, Equatable {
+struct FlashcardWord: Codable, Identifiable, Equatable, Sendable {
     let id: String
     let front: String
     let back: String
@@ -17,7 +17,7 @@ struct FlashcardWord: Codable, Identifiable, Equatable {
 
 // MARK: - Grammar Question
 
-struct GrammarQuestion: Codable, Identifiable, Equatable {
+struct GrammarQuestion: Codable, Identifiable, Equatable, Sendable {
     let id: String
     let question: String
     let translation: String?
@@ -31,7 +31,7 @@ struct GrammarQuestion: Codable, Identifiable, Equatable {
 
 // MARK: - Word Builder Word
 
-struct WordBuilderWord: Codable, Identifiable, Equatable {
+struct WordBuilderWord: Codable, Identifiable, Equatable, Sendable {
     var id: String { word }
     let word: String
     let hint: String
@@ -39,7 +39,7 @@ struct WordBuilderWord: Codable, Identifiable, Equatable {
 
 // MARK: - Category
 
-struct ContentCategory<T: Codable>: Codable, Identifiable {
+struct ContentCategory<T: Codable & Sendable>: Codable, Identifiable, Sendable {
     let key: String
     let name: String
     let description: String

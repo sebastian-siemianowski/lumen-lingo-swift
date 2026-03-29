@@ -1,4 +1,4 @@
-import AVFoundation
+@preconcurrency import AVFoundation
 import Foundation
 import MediaPlayer
 import UIKit
@@ -154,7 +154,9 @@ final class AudioService: @unchecked Sendable {
             isSessionConfigured = true
             setupRemoteCommandCenter()
             setupAudioInterruptionHandling()
-            UIApplication.shared.beginReceivingRemoteControlEvents()
+            Task { @MainActor in
+                UIApplication.shared.beginReceivingRemoteControlEvents()
+            }
         } catch {
             print("⚠️ Audio session config failed: \(error)")
         }
@@ -275,7 +277,7 @@ final class AudioService: @unchecked Sendable {
             let fadeInterval = 0.4 / Double(fadeSteps)
             let startVol = outgoing.volume
             let delta = -startVol / Float(fadeSteps)
-            var step = 0
+            nonisolated(unsafe) var step = 0
             crossfadeOutTimer = Timer.scheduledTimer(withTimeInterval: fadeInterval, repeats: true) { [weak self] timer in
                 step += 1
                 outgoing.volume = max(0, startVol + delta * Float(step))
@@ -343,7 +345,6 @@ final class AudioService: @unchecked Sendable {
         let size = CGSize(width: 600, height: 600)
         let renderer = UIGraphicsImageRenderer(size: size)
         let image = renderer.image { ctx in
-            let rect = CGRect(origin: .zero, size: size)
             let colors = soundscape.previewColors
 
             // Gradient background
@@ -1787,7 +1788,7 @@ final class AudioService: @unchecked Sendable {
         let fadeOutInterval = fadeOutDuration / Double(fadeOutSteps)
         let startVolume = currentPlayer.volume
         let volumeDecrement = startVolume / Float(fadeOutSteps)
-        var step = 0
+        nonisolated(unsafe) var step = 0
         crossfadeOutTimer?.invalidate()
         crossfadeOutTimer = Timer.scheduledTimer(withTimeInterval: fadeOutInterval, repeats: true) { [weak self] timer in
             step += 1
@@ -1902,7 +1903,7 @@ final class AudioService: @unchecked Sendable {
             let fadeInSteps = 12
             let fadeInInterval = 0.6 / Double(fadeInSteps)
             let volDelta = previewVolume / Float(fadeInSteps)
-            var step = 0
+            nonisolated(unsafe) var step = 0
             Timer.scheduledTimer(withTimeInterval: fadeInInterval, repeats: true) { timer in
                 step += 1
                 player.volume = volDelta * Float(step)
@@ -1917,7 +1918,7 @@ final class AudioService: @unchecked Sendable {
                 let fadeOutInterval = 0.8 / Double(fadeOutSteps)
                 let startVol = player.volume
                 let outDelta = -startVol / Float(fadeOutSteps)
-                var outStep = 0
+                nonisolated(unsafe) var outStep = 0
                 Timer.scheduledTimer(withTimeInterval: fadeOutInterval, repeats: true) { timer in
                     outStep += 1
                     player.volume = max(0, startVol + outDelta * Float(outStep))
@@ -1952,7 +1953,7 @@ final class AudioService: @unchecked Sendable {
             let fadeInterval = 1.0 / Double(fadeSteps)
             let startVol = outgoing.volume
             let delta = -startVol / Float(fadeSteps)
-            var step = 0
+            nonisolated(unsafe) var step = 0
             crossfadeOutTimer = Timer.scheduledTimer(withTimeInterval: fadeInterval, repeats: true) { [weak self] timer in
                 step += 1
                 outgoing.volume = max(0, startVol + delta * Float(step))
@@ -2031,8 +2032,9 @@ final class AudioService: @unchecked Sendable {
         let interval = duration / Double(steps)
         let startVol = player.volume
         let delta = (volume - startVol) / Float(steps)
-        var step = 0
+        nonisolated(unsafe) var step = 0
 
+        nonisolated(unsafe) let fadeCompletion = completion
         ambientFadeTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { [weak self] timer in
             step += 1
             player.volume = startVol + delta * Float(step)
@@ -2040,7 +2042,7 @@ final class AudioService: @unchecked Sendable {
                 timer.invalidate()
                 self?.ambientFadeTimer = nil
                 player.volume = volume
-                completion?()
+                fadeCompletion?()
             }
         }
     }

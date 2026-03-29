@@ -37,6 +37,10 @@ jobs:
 
   e2e-tests:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1/4, 2/4, 3/4, 4/4]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -50,14 +54,40 @@ jobs:
         working-directory: lumen-lingo-frontend
       - run: npm run build
         working-directory: lumen-lingo-frontend
-      - run: npm run test:e2e -- --project=chromium
+      - run: npx playwright test --project=chromium --shard=${{ matrix.shard }}
         working-directory: lumen-lingo-frontend
       - uses: actions/upload-artifact@v4
-        if: failure()
+        if: always()
+        with:
+          name: playwright-blob-${{ strategy.job-index }}
+          path: lumen-lingo-frontend/blob-report/
+          retention-days: 7
+
+  e2e-report:
+    if: always() && needs.e2e-tests.result != 'skipped'
+    needs: e2e-tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: lumen-lingo-frontend/package-lock.json
+      - run: npm ci
+        working-directory: lumen-lingo-frontend
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: playwright-blob-*
+          path: lumen-lingo-frontend/all-blob-reports
+          merge-multiple: true
+      - run: npx playwright merge-reports --reporter=html ./all-blob-reports
+        working-directory: lumen-lingo-frontend
+      - uses: actions/upload-artifact@v4
         with:
           name: playwright-report
-          path: lumen-lingo-frontend/test-results/
-          retention-days: 7
+          path: lumen-lingo-frontend/playwright-report/
+          retention-days: 14
 
   translations:
     runs-on: ubuntu-latest
@@ -70,7 +100,7 @@ jobs:
           cache-dependency-path: lumen-lingo-frontend/package-lock.json
       - run: npm ci
         working-directory: lumen-lingo-frontend
-      - run: node scripts/check-translations.js
+      - run: npm run check:translations
         working-directory: lumen-lingo-frontend
 
   build:
@@ -86,3 +116,118 @@ jobs:
         working-directory: lumen-lingo-frontend
       - run: npm run build
         working-directory: lumen-lingo-frontend
+
+  ios-build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode 26
+        run: |
+          XCODE_PATH=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$XCODE_PATH" ]; then
+            echo "::error::Xcode 26 not found. Available versions:"
+            ls -d /Applications/Xcode*.app
+            exit 1
+          fi
+          sudo xcode-select -s "$XCODE_PATH/Contents/Developer"
+          echo "Selected: $XCODE_PATH"
+          xcodebuild -version
+      - name: Install XcodeGen and xcbeautify
+        run: brew install xcodegen xcbeautify
+      - name: Generate Xcode project
+        run: cd LumenLingo && xcodegen generate
+      - name: Cache SPM packages
+        uses: actions/cache@v4
+        with:
+          path: LumenLingo/SPMCache
+          key: spm-${{ hashFiles('LumenLingo/project.yml') }}
+          restore-keys: spm-
+      - name: Cache DerivedData
+        uses: actions/cache@v4
+        with:
+          path: LumenLingo/DerivedData
+          key: derived-${{ runner.os }}-${{ hashFiles('LumenLingo/**/*.swift', 'LumenLingo/**/*.metal', 'LumenLingo/project.yml') }}
+          restore-keys: derived-${{ runner.os }}-
+      - name: Build for testing
+        run: |
+          set -o pipefail
+          cd LumenLingo && xcodebuild build-for-testing \
+            -project LumenLingo.xcodeproj \
+            -scheme LumenLingo-Dev \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath ./DerivedData \
+            -clonedSourcePackagesDirPath ./SPMCache \
+            ARCHS=arm64 \
+            | xcbeautify
+      - name: Package test products
+        run: |
+          cd LumenLingo/DerivedData/Build
+          tar -czf "$GITHUB_WORKSPACE/test-products.tar.gz" Products
+      - name: Upload test products
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-test-products
+          path: test-products.tar.gz
+          retention-days: 1
+
+  ios-tests:
+    needs: ios-build
+    runs-on: macos-15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: unit-tests
+            target: LumenLingoTests
+            extra-flags: "-parallel-testing-enabled YES"
+          - name: ui-tests
+            target: LumenLingoUITests
+            extra-flags: ""
+    steps:
+      - name: Select Xcode 26
+        run: |
+          XCODE_PATH=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$XCODE_PATH" ]; then
+            echo "::error::Xcode 26 not found"
+            exit 1
+          fi
+          sudo xcode-select -s "$XCODE_PATH/Contents/Developer"
+      - name: Install xcbeautify
+        run: brew install xcbeautify
+      - name: Download test products
+        uses: actions/download-artifact@v4
+        with:
+          name: ios-test-products
+      - name: Extract test products
+        run: tar -xzf test-products.tar.gz
+      - name: Boot iOS Simulator
+        run: |
+          SIM_ID=$(xcrun simctl list devices available -j | python3 -c "
+          import json, sys
+          data = json.load(sys.stdin)
+          for runtime, devices in data['devices'].items():
+            if 'iOS' in runtime:
+              for d in devices:
+                if d['name'] == 'iPhone 17 Pro' and d['isAvailable']:
+                  print(d['udid']); sys.exit(0)
+          sys.exit(1)
+          ")
+          xcrun simctl boot "$SIM_ID" 2>/dev/null || true
+      - name: Run ${{ matrix.name }}
+        run: |
+          set -o pipefail
+          XCTESTRUN=$(find Products -name "*.xctestrun" -type f | head -1)
+          echo "Using xctestrun: $XCTESTRUN"
+          xcodebuild test-without-building \
+            -xctestrun "$XCTESTRUN" \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro,arch=arm64' \
+            -only-testing:${{ matrix.target }} \
+            ${{ matrix.extra-flags }} \
+            -resultBundlePath build/${{ matrix.name }}.xcresult \
+            | xcbeautify
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ios-${{ matrix.name }}-results
+          path: build/${{ matrix.name }}.xcresult
+          retention-days: 7

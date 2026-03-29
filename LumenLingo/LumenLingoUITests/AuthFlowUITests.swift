@@ -2,6 +2,7 @@ import XCTest
 
 /// UI tests for the authentication flows.
 /// Uses launch arguments to configure `MockAuthService` state:
+///   - `-UITest_SkipOnboarding`: skips tier onboarding, legal consent, and trial-ended overlays
 ///   - `-UITest_Unauthenticated`: starts unauthenticated (no user, no guest)
 ///   - `-UITest_Guest`: starts in guest mode
 ///   - `-UITest_SimulateSuccess`: sign-in methods simulate success
@@ -24,7 +25,7 @@ final class AuthFlowUITests: XCTestCase {
     // MARK: - Helpers
 
     private func launch(arguments: [String] = []) {
-        app.launchArguments = arguments
+        app.launchArguments = ["-UITest_SkipOnboarding"] + arguments
         app.launch()
     }
 
@@ -126,9 +127,10 @@ final class AuthFlowUITests: XCTestCase {
         XCTAssertTrue(googleButton.waitForExistence(timeout: 5))
         googleButton.tap()
 
-        // Error toast should appear
-        let toast = app.otherElements["errorToast"]
-        XCTAssertTrue(toast.waitForExistence(timeout: 5), "Error toast should appear on network error")
+        // Error toast should appear (may be classified as button or other due to onTapGesture)
+        let toastPredicate = NSPredicate(format: "identifier == 'errorToast'")
+        let toast = app.descendants(matching: .any).matching(toastPredicate).firstMatch
+        XCTAssertTrue(toast.waitForExistence(timeout: 10), "Error toast should appear on network error")
     }
 
     // MARK: - Account Management

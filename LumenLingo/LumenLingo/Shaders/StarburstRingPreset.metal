@@ -124,8 +124,6 @@ fragment float4 starburstBgFragment(
     //    colour variety, stronger opacity, and richer deformation.
     // ================================================================
     {
-        float po = 0.70; // parent opacity
-
         // ── IRIS MICRO-FIBERS ──
         // Subtle purple radial streaks through deep violet haze,
         // defined mainly by dark gap channels (like a real iris).

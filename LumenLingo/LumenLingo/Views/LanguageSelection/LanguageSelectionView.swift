@@ -333,15 +333,16 @@ struct LanguageSelectionView: View {
 
             // Text label
             VStack(spacing: 6) {
-                (Text(selectedSource.displayName)
+                let sourceText = Text(selectedSource.displayName)
                     .font(.title3.weight(.bold))
-                    .foregroundColor(isDark ? .white : .caribbeanInk) +
-                Text("  \u{2192}  ")
+                    .foregroundColor(isDark ? .white : .caribbeanInk)
+                let arrowText = Text("  \u{2192}  ")
                     .font(.title3.weight(.light))
-                    .foregroundColor(isDark ? .secondary : .caribbeanMist) +
-                Text(selectedTarget.name(in: selectedSource))
+                    .foregroundColor(isDark ? .secondary : .caribbeanMist)
+                let targetText = Text(selectedTarget.name(in: selectedSource))
                     .font(.title3.weight(.bold))
-                    .foregroundColor(isDark ? .white : .caribbeanInk))
+                    .foregroundColor(isDark ? .white : .caribbeanInk)
+                Text("\(sourceText)\(arrowText)\(targetText)")
                 .lineLimit(1)
                 .minimumScaleFactor(0.75)
                 .contentTransition(.interpolate)
@@ -425,7 +426,7 @@ struct LanguageSelectionView: View {
         let isSelected = lang == selectedSource
 
         Button {
-            Task.detached(priority: .utility) { await AudioService.shared.playLanguageHover() }
+            Task.detached(priority: .utility) { AudioService.shared.playLanguageHover() }
             withAnimation(.spring(response: 0.45, dampingFraction: 0.75)) {
                 selectedSource = lang
                 if selectedTarget == lang || !LanguagePair(source: lang, target: selectedTarget).hasContent {
@@ -582,7 +583,7 @@ struct LanguageSelectionView: View {
                                 HapticsService.shared.warning()
                                 lockedPairToShow = pair
                             } else {
-                                Task.detached(priority: .utility) { await AudioService.shared.playLanguageHover() }
+                                Task.detached(priority: .utility) { AudioService.shared.playLanguageHover() }
                                 withAnimation(.spring(response: 0.35, dampingFraction: 0.72)) {
                                     selectedTarget = lang
                                 }

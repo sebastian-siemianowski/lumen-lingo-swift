@@ -22,6 +22,7 @@ extension Notification.Name {
 /// - Call `endSession()` when game completes or user navigates away.
 ///
 /// Persists daily usage in UserDefaults keyed by ISO 8601 date.
+@MainActor
 @Observable
 final class PracticeTimeTracker {
 
@@ -54,8 +55,8 @@ final class PracticeTimeTracker {
     /// Whether "expired" has already been fired this calendar day.
     private var expiredFiredToday: Bool = false
 
-    /// Timer that ticks every second to update `usedSecondsToday`.
-    private var tickTimer: Timer?
+    /// Task that ticks every second to update `usedSecondsToday`.
+    private var tickTask: Task<Void, Never>?
 
     /// The date string (yyyy-MM-dd) for which `usedSecondsToday` is valid.
     private var currentDateKey: String = ""
@@ -192,14 +193,17 @@ final class PracticeTimeTracker {
 
     private func startTickTimer() {
         stopTickTimer()
-        tickTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
-            self?.tick()
+        tickTask = Task {
+            while !Task.isCancelled {
+                try? await Task.sleep(for: .seconds(1))
+                tick()
+            }
         }
     }
 
     private func stopTickTimer() {
-        tickTimer?.invalidate()
-        tickTimer = nil
+        tickTask?.cancel()
+        tickTask = nil
     }
 
     private func tick() {

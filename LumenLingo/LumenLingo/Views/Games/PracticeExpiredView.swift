@@ -77,7 +77,9 @@ struct PracticeExpiredView: View {
         .onAppear {
             updateCountdown()
             refreshTimer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { _ in
-                updateCountdown()
+                Task { @MainActor in
+                    updateCountdown()
+                }
             }
             withAnimation(.spring(response: 0.7, dampingFraction: 0.75).delay(0.1)) {
                 appeared = true

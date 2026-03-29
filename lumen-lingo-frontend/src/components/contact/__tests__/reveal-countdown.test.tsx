@@ -53,7 +53,7 @@ describe('RevealCountdown', () => {
   it('renders progress arc with correct stroke-dasharray', () => {
     const { container } = render(<RevealCountdown timeRemaining={15_000} />);
     const circles = container.querySelectorAll('circle');
-    const progressCircle = circles[1]; // Second circle is the progress arc
+    const progressCircle = circles[1]!; // Second circle is the progress arc
     const circumference = 2 * Math.PI * 10; // RING_RADIUS = 10
     expect(progressCircle.getAttribute('stroke-dasharray')).toBe(String(circumference));
   });

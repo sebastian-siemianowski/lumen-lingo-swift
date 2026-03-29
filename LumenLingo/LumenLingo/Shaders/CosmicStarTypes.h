@@ -53,6 +53,11 @@ struct StarVertexOut {
 // MARK: - Shared Vertex Helpers
 // ============================================================
 
+// Suppress unused-function warnings — these utilities are shared across
+// multiple per-preset star shaders via #include.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-function"
+
 // Common twinkle computation
 static float computeTwinkle(float t, float twinkleSpeed, float twinkleAmp, float phase) {
     float twinkleBase = sin(t * twinkleSpeed * 6.0 + phase) * 0.5 + 0.5;
@@ -124,5 +129,7 @@ static StarVertexOut finalizeStarVertex(
     
     return out;
 }
+
+#pragma clang diagnostic pop
 
 #endif /* CosmicStarTypes_h */

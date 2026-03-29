@@ -500,10 +500,16 @@ struct ParticleEffect: View {
     }
 
     private func spawnParticles() {
+        let screenBounds: CGRect
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            screenBounds = windowScene.screen.bounds
+        } else {
+            screenBounds = CGRect(x: 0, y: 0, width: 393, height: 852)
+        }
         particles = (0..<particleCount).map { _ in
             Particle(
-                x: CGFloat.random(in: 0...UIScreen.main.bounds.width),
-                y: CGFloat.random(in: 0...UIScreen.main.bounds.height * 0.5),
+                x: CGFloat.random(in: 0...screenBounds.width),
+                y: CGFloat.random(in: 0...screenBounds.height * 0.5),
                 size: CGFloat.random(in: 6...14),
                 opacity: Double.random(in: 0.4...0.9),
                 velocity: CGPoint(

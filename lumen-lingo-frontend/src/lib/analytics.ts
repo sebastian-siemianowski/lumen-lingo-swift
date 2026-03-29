@@ -8,6 +8,7 @@ import { hasConsent } from '@/lib/cookie-consent';
 
 type AnalyticsEvents = {
   app_store_click: { location: string };
+  coming_soon_click: { location: string };
   pricing_view: Record<string, never>;
   pricing_cta_click: { tier: string };
   blog_post_read: { slug: string; title: string };

@@ -147,7 +147,8 @@ struct SocialProofSection: View {
 
     private func animateStars() {
         for i in 0..<5 {
-            DispatchQueue.main.asyncAfter(deadline: .now() + Double(i) * 0.08 + 0.5) {
+            Task { @MainActor in
+                try? await Task.sleep(for: .seconds(Double(i) * 0.08 + 0.5))
                 withAnimation(reduceMotion ? .none : .spring(response: 0.3, dampingFraction: 0.6)) {
                     starsRevealed = i + 1
                 }
@@ -157,10 +158,11 @@ struct SocialProofSection: View {
 
     private func startTestimonialTimer() {
         Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { _ in
-            withAnimation(reduceMotion ? .none : .easeOut(duration: 0.3)) {
-                testimonialOpacity = 0
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + (reduceMotion ? 0.01 : 0.35)) {
+            Task { @MainActor in
+                withAnimation(reduceMotion ? .none : .easeOut(duration: 0.3)) {
+                    testimonialOpacity = 0
+                }
+                try? await Task.sleep(for: .seconds(reduceMotion ? 0.01 : 0.35))
                 currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.count
                 withAnimation(reduceMotion ? .none : .easeIn(duration: 0.3)) {
                     testimonialOpacity = 1

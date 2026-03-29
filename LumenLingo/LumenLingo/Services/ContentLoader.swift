@@ -64,7 +64,7 @@ final class ContentLoader: @unchecked Sendable {
 
     // MARK: - Private
 
-    private func loadFromBundle<T: Codable>(languagePair: String, fileName: String) -> [ContentCategory<T>] {
+    private func loadFromBundle<T: Codable & Sendable>(languagePair: String, fileName: String) -> [ContentCategory<T>] {
         #if DEBUG
         if DebugContentController.forceEmptyFlag {
             return []
