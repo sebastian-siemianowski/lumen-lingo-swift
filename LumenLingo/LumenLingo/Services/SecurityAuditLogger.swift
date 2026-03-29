@@ -1,5 +1,6 @@
 import Foundation
 import SwiftData
+import SwiftUI
 import UIKit
 
 // MARK: - Security Event Model
@@ -87,5 +88,26 @@ enum SecurityAuditLogger {
         } catch {
             Log.error("Failed to prune security events: \(error.localizedDescription)")
         }
+    }
+}
+
+// MARK: - Security Event Pruning View Modifier
+
+/// Prunes security events older than 90 days on app launch, using the app's
+/// existing SwiftData model context from the environment.
+private struct SecurityEventPruningModifier: ViewModifier {
+    @Environment(\.modelContext) private var modelContext
+
+    func body(content: Content) -> some View {
+        content
+            .task {
+                SecurityAuditLogger.pruneOldEvents(in: modelContext)
+            }
+    }
+}
+
+extension View {
+    func pruneSecurityEvents() -> some View {
+        modifier(SecurityEventPruningModifier())
     }
 }

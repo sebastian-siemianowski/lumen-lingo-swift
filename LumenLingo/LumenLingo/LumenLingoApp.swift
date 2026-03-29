@@ -113,13 +113,7 @@ struct LumenLingoApp: App {
                     subscriptionManager.handleRevenueCatCustomerInfo(info)
                 }
             }
-            .task {
-                // Prune old security events on launch
-                if let container = try? ModelContainer(for: SecurityEvent.self) {
-                    let context = ModelContext(container)
-                    SecurityAuditLogger.pruneOldEvents(in: context)
-                }
-            }
+            .pruneSecurityEvents()
             .onChange(of: scenePhase) { _, newPhase in
                 if newPhase == .active {
                     Task { await authService.checkAuthState() }
