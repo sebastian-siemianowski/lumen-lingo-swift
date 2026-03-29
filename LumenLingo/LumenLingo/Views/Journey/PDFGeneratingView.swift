@@ -164,14 +164,14 @@ struct PDFGeneratingView: View {
     private func startStageCycling() {
         // Cycle stages every 0.45s
         Timer.scheduledTimer(withTimeInterval: 0.45, repeats: true) { timer in
-            Task { @MainActor in
-                let next = stageIndex + 1
-                if next < stages.count {
+            let next = stageIndex + 1
+            if next < stages.count {
+                Task { @MainActor in
                     withAnimation { stageIndex = next }
                     PDFHapticService.shared.stageProgress()
-                } else {
-                    timer.invalidate()
                 }
+            } else {
+                timer.invalidate()
             }
         }
     }

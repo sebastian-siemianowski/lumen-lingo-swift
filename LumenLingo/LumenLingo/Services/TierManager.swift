@@ -1133,7 +1133,9 @@ final class TierManager {
             object: NSUbiquitousKeyValueStore.default,
             queue: .main
         ) { [weak self] _ in
-            self?.pullFromCloud(profile: profile)
+            Task { @MainActor in
+                self?.pullFromCloud(profile: profile)
+            }
         }
         NSUbiquitousKeyValueStore.default.synchronize()
     }
