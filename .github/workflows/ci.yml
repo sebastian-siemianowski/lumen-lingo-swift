@@ -154,9 +154,10 @@ jobs:
           cd LumenLingo && xcodebuild build-for-testing \
             -project LumenLingo.xcodeproj \
             -scheme LumenLingo-Dev \
-            -destination 'generic/platform=iOS Simulator,arch=arm64' \
+            -destination 'generic/platform=iOS Simulator' \
             -derivedDataPath ./DerivedData \
             -clonedSourcePackagesDirPath ./SPMCache \
+            ARCHS=arm64 \
             | xcbeautify
       - name: Package test products
         run: |
