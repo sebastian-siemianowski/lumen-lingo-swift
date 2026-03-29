@@ -127,13 +127,14 @@ jobs:
         run: cd LumenLingo && xcodegen generate
       - name: Run iOS unit tests
         run: |
+          set -o pipefail
           cd LumenLingo && xcodebuild test \
             -project LumenLingo.xcodeproj \
             -scheme LumenLingo-Dev \
-            -destination 'platform=iOS Simulator,name=iPhone 17 Pro Max' \
+            -destination 'platform=iOS Simulator,OS=latest' \
             -parallel-testing-enabled YES \
             -resultBundlePath ../build/TestResults.xcresult \
-            | xcbeautify || true
+            | xcbeautify
       - uses: actions/upload-artifact@v4
         if: always()
         with:

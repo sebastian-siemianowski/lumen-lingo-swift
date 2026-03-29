@@ -20,8 +20,8 @@ describe('NewsletterForm', () => {
 
   /** Check the age-confirmation checkbox so form submission proceeds. */
   function confirmAge() {
-    const checkbox = screen.getByRole('checkbox');
-    if (!checkbox.hasAttribute('checked')) {
+    const checkbox = screen.getByRole('checkbox') as HTMLInputElement;
+    if (!checkbox.checked) {
       fireEvent.click(checkbox);
     }
   }
