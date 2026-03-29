@@ -3193,9 +3193,8 @@ final class TierManagerTests: XCTestCase {
 
     @MainActor
     func testShareableCardRendersForAllTiers() {
-        // Test boundary tiers (free + royal) to verify the full range without
-        // paying the ~26ms ImageRenderer cost 5 times.
-        for tier: MembershipTier in [.free, .royal] {
+        // Ensure the card renders successfully for every membership tier.
+        for tier in MembershipTier.allCases {
             let data = makeCardData(tier: tier)
             let image = ShareableCardRenderer.render(data: data)
             XCTAssertNotNil(image.cgImage, "Card should render for \(tier.displayName)")
@@ -3204,10 +3203,12 @@ final class TierManagerTests: XCTestCase {
 
     @MainActor
     func testShareableCardRendersForAllGameTypes() {
-        // Single render proves the pipeline works; GameType only changes text content.
-        let data = makeCardData(gameType: .flashCards)
-        let image = ShareableCardRenderer.render(data: data)
-        XCTAssertNotNil(image.cgImage, "Card should render for flashCards")
+        // Render all GameType cases to catch missing icons/colors or layout issues.
+        for gameType in GameType.allCases {
+            let data = makeCardData(gameType: gameType)
+            let image = ShareableCardRenderer.render(data: data)
+            XCTAssertNotNil(image.cgImage, "Card should render for \(gameType)")
+        }
     }
 
     @MainActor
