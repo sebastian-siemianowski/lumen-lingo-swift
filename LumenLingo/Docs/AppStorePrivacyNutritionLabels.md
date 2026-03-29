@@ -2,8 +2,8 @@
 
 **App**: LumenLingo
 **Developer**: LumenShore Ltd (Company No. 09607326)
-**Document Version**: 1.0
-**Date**: 2025-07-21
+**Document Version**: 2.0
+**Date**: 2026-03-29
 **Legals.md Reference**: Epic 3, Story 3.1 (Subtask 3.1.5)
 
 ---
@@ -18,57 +18,71 @@ Per Apple's [App Privacy Details](https://developer.apple.com/app-store/app-priv
 
 ---
 
-## 2. Current Data Architecture (v1.x)
+## 2. Current Data Architecture (v2.x — Clerk Auth + RevenueCat)
 
 | Component | Status |
 |---|---|
-| Backend API | **None** — AuthService and SyncService are mock implementations |
-| Network calls | **Zero** — no URLSession requests in production code |
-| Third-party SDKs (iOS) | **None** — no Sentry, Firebase, Amplitude, or ad SDKs |
-| Analytics | **None** — no telemetry, no crash reporting |
+| Backend API | **Third-party hosted** — Clerk for authentication/session management; RevenueCat for subscriptions and purchase validation |
+| Network calls | **Yes** — outbound requests via Clerk and RevenueCat SDKs for auth, entitlement checks, and subscription status |
+| Third-party SDKs (iOS) | **Present** — Clerk (auth), RevenueCat (subscriptions). No Sentry, Firebase, Amplitude, ad networks, or third-party ad SDKs. |
+| Analytics | **Limited** — subscription and entitlement analytics via RevenueCat; no advertising/behavioral profiling or third-party crash reporting |
 | iCloud KVS | **Disabled** — InMemoryCloudKeyValueStore stub in use |
-| Data storage | **Device-local only** — SwiftData + UserDefaults |
+| Data storage | **Primarily device-local** — SwiftData + UserDefaults, with auth/session and purchase state also synced via Clerk/RevenueCat services |
 
 ---
 
 ## 3. App Store Connect Privacy Label Configuration
 
-### Current State: ALL "Data Not Collected"
+### Current State: Data Collected via Clerk and RevenueCat
 
-Since the app makes zero network calls, stores all data exclusively on-device, and includes no third-party SDKs, the correct App Store Connect configuration is:
+Because the app now uses Clerk (authentication) and RevenueCat (subscriptions), some data is transmitted off the device and is therefore considered **"collected"** under Apple's definition. The App Store Connect configuration must no longer use "Data Not Collected."
 
-**"Data Not Collected"** — None of the data types listed are transmitted off the device.
+At a minimum, the following must be declared:
 
-No individual data type declarations are needed when selecting "Data Not Collected."
+- **Contact Info > Email Address** (provided by the user for account creation or sign-in via Clerk), marked as **linked to the user**, used for **App Functionality** only.
+- **Contact Info > Name** (provided by the user for account/profile display via Clerk), marked as **linked to the user**, used for **App Functionality** only.
+- **Identifiers > User ID** as used by Clerk/RevenueCat SDKs to manage sessions and entitlements, marked as **linked to the user**, used for **App Functionality**.
+- **Purchases > Purchase History** for in-app purchases and subscriptions managed via RevenueCat, marked as **linked to the user**, used for **App Functionality**.
 
-### Data Types Stored On-Device (Not "Collected" per Apple's Definition)
+No tracking for advertising or cross-app profiling is performed, and no data is used for "Tracking" as defined by Apple.
 
-These data types exist on-device but are **never transmitted off the device**:
+### Data Types Collected Off-Device (Transmitted via Clerk / RevenueCat)
+
+| Apple Category | Apple Sub-category | Collected Data | Third Party | Linked to User | Used for Tracking |
+|---|---|---|---|---|---|
+| Contact Info | Email Address | User email for account creation/sign-in | Clerk | Yes | No |
+| Contact Info | Name | First name for account/profile display | Clerk | Yes | No |
+| Identifiers | User ID | User and session IDs for auth and entitlement management | Clerk, RevenueCat | Yes | No |
+| Purchases | Purchase History | Subscription and entitlement state | RevenueCat | Yes | No |
+
+### Data Types Primarily Stored On-Device (Not Transmitted Off-Device)
+
+The following data types are persisted locally in SwiftData/UserDefaults. Some fields (e.g., name, email, purchase/entitlement state) are also synced via Clerk/RevenueCat as described above.
 
 | Apple Category | Apple Sub-category | On-Device Data | Code Location | Linked to User | Used for Tracking |
 |---|---|---|---|---|---|
-| Contact Info | Name | `UserProfile.firstName` (mock auth placeholder) | `Models/DataModels.swift:7` | N/A | No |
-| Contact Info | Email Address | `UserProfile.email` (mock auth placeholder) | `Models/DataModels.swift:8` | N/A | No |
-| Usage Data | Product Interaction | Game scores, XP, streaks, time spent, accuracy | `Models/DataModels.swift:265-329` (GameProgressRecord) | N/A | No |
-| Usage Data | Other Usage Data | UI preferences, sound settings, visual settings | `Models/DataModels.swift:20-70` (UserProfile settings) | N/A | No |
-| Other Data | Language preferences | Source/target language pairs, active selection | `Models/DataModels.swift:331-373` (LanguagePreference) | N/A | No |
-| Other Data | Favourite categories | Bookmarked game categories | `Models/DataModels.swift:375-396` (FavoriteCategory) | N/A | No |
-| Other Data | Mastered content | Content completion tracking | `Models/DataModels.swift:398+` (MasteredContent) | N/A | No |
-| Other Data | Membership tier | Selected tier ID (free/pro/elite/royal) | `Models/DataModels.swift` (UserProfile.selectedTierId) | N/A | No |
-| Other Data | Legal consent record | Consent version + date | `Models/DataModels.swift` (UserProfile.legalConsentVersion/Date) | N/A | No |
-| Other Data | Daily practice time | Seconds per day | `Services/PracticeTimeTracker.swift:65` (UserDefaults) | N/A | No |
-| Other Data | Session counts | Daily round counts | `Services/SessionEngine.swift:85-87` (UserDefaults) | N/A | No |
-| Other Data | UI collapse states | Section expansion preferences | Various views via `@PersistedState` | N/A | No |
+| Contact Info | Name | `UserProfile.firstName` (used for account/profile display and may be sent to Clerk) | `Models/DataModels.swift:7` | Yes | No |
+| Contact Info | Email Address | `UserProfile.email` (used for account/profile display and may be sent to Clerk) | `Models/DataModels.swift:8` | Yes | No |
+| Usage Data | Product Interaction | Game scores, XP, streaks, time spent, accuracy | `Models/DataModels.swift:265-329` (GameProgressRecord) | Yes | No |
+| Usage Data | Other Usage Data | UI preferences, sound settings, visual settings | `Models/DataModels.swift:20-70` (UserProfile settings) | Yes | No |
+| Other Data | Language preferences | Source/target language pairs, active selection | `Models/DataModels.swift:331-373` (LanguagePreference) | Yes | No |
+| Other Data | Favourite categories | Bookmarked game categories | `Models/DataModels.swift:375-396` (FavoriteCategory) | Yes | No |
+| Other Data | Mastered content | Content completion tracking | `Models/DataModels.swift:398+` (MasteredContent) | Yes | No |
+| Other Data | Membership tier | Selected tier ID (free/pro/elite/royal) | `Models/DataModels.swift` (UserProfile.selectedTierId) | Yes | No |
+| Other Data | Legal consent record | Consent version + date | `Models/DataModels.swift` (UserProfile.legalConsentVersion/Date) | Yes | No |
+| Other Data | Daily practice time | Seconds per day | `Services/PracticeTimeTracker.swift:65` (UserDefaults) | Yes | No |
+| Other Data | Session counts | Daily round counts | `Services/SessionEngine.swift:85-87` (UserDefaults) | Yes | No |
+| Other Data | UI collapse states | Section expansion preferences | Various views via `@PersistedState` | Yes | No |
 
-### Identifiers — NOT Collected
+### Identifiers
 
 | Identifier Type | Status | Notes |
 |---|---|---|
 | Device ID (IDFV) | **Not used** | No `UIDevice.current.identifierForVendor` calls |
 | Advertising ID (IDFA) | **Not used** | No `ASIdentifierManager`, no ATT prompt |
-| Custom User ID | **Not used** | Mock auth only; no server-side user IDs |
+| Custom User ID | **Collected** — linked to user, app functionality | Clerk user ID and RevenueCat customer ID used for session/entitlement management |
 
-### Sensitive Categories — NOT Applicable
+### Sensitive Categories
 
 | Category | Status |
 |---|---|
@@ -78,7 +92,7 @@ These data types exist on-device but are **never transmitted off the device**:
 | Photos/Videos | **Not accessed** — No PHPhotoLibrary usage |
 | Camera | **Not accessed** — No AVCaptureDevice usage |
 | Microphone | **Not accessed** — Audio is synthesis output only (AudioService.swift) |
-| Financial Info | **Not accessed** — StoreKit not yet integrated |
+| Financial Info | **Collected via RevenueCat** — subscription and purchase history linked to user, app functionality only; Apple handles raw payment data |
 | Sensitive Info | **Not accessed** — No sensitive categories processed |
 | Browsing History | **Not applicable** |
 | Search History | **Not applicable** |
@@ -89,6 +103,7 @@ These data types exist on-device but are **never transmitted off the device**:
 - **NSPrivacyTracking**: `NO`
 - App does not track users across apps/websites owned by other companies
 - No ATT prompt required (no IDFA, no ad networks, no cross-app tracking)
+- Clerk and RevenueCat network requests are for app functionality only, not for tracking
 
 ---
 
@@ -108,34 +123,19 @@ No other Required Reason APIs identified:
 
 ---
 
-## 5. Future Label Updates Plan (Story 3.1.7)
+## 5. Future Label Updates Plan
 
 When the following features go live, privacy nutrition labels **MUST** be updated in App Store Connect:
 
-### Phase 1: Real Authentication (SIWA)
-When Sign in with Apple is implemented:
-- **Contact Info > Name**: "Data Linked to You" — App Functionality
-- **Contact Info > Email Address**: "Data Linked to You" — App Functionality
-- **Identifiers > User ID**: "Data Linked to You" — App Functionality
-
-### Phase 2: Backend API + Cloud Sync
-When server-side data storage is implemented:
-- **Usage Data > Product Interaction**: "Data Linked to You" — App Functionality
-- **Other Data**: "Data Linked to You" — App Functionality
-
-### Phase 3: StoreKit In-App Purchases
-When subscriptions go live:
-- **Purchases**: "Data Linked to You" — App Functionality (Apple handles payment data)
-
-### Phase 4: Crash Reporting / Analytics
-If Sentry or similar is added to iOS app:
-- **Diagnostics > Crash Data**: "Data Linked to You" or "Data Not Linked to You" — Analytics
-- **Diagnostics > Performance Data**: "Data Not Linked to You" — Analytics
-
-### Phase 5: iCloud KVS Activation
+### Phase 1: iCloud KVS Activation
 When iCloud Key-Value Storage goes live:
 - Review whether tier sync constitutes "collection" — Apple manages iCloud data
 - Apple's guidance: iCloud data managed by Apple's infrastructure is typically not considered "collected" by the developer
+
+### Phase 2: Crash Reporting / Analytics
+If Sentry or similar is added to iOS app:
+- **Diagnostics > Crash Data**: "Data Linked to You" or "Data Not Linked to You" — Analytics
+- **Diagnostics > Performance Data**: "Data Not Linked to You" — Analytics
 
 ---
 
@@ -152,7 +152,5 @@ When iCloud Key-Value Storage goes live:
 
 | Date | Action | By |
 |---|---|---|
-| 2025-07-21 | Initial audit and documentation created | LumenShore Engineering |
-| — | Next: Update when SIWA auth goes live | — |
-| — | Next: Update when backend API goes live | — |
-| — | Next: Update when StoreKit goes live | — |
+| 2025-07-21 | Initial audit and documentation created (v1.x — no network calls) | LumenShore Engineering |
+| 2026-03-29 | Updated for v2.x — Clerk auth + RevenueCat subscriptions now live; declared collected data types | LumenShore Engineering |
