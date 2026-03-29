@@ -16,7 +16,6 @@ const PAGES = [
   { name: 'download', path: '/en/download' },
   { name: 'about', path: '/en/about' },
   { name: 'contact', path: '/en/contact' },
-  { name: 'early-access', path: '/en/early-access' },
   { name: 'demo', path: '/en/demo' },
   { name: 'privacy', path: '/en/privacy' },
   { name: 'terms', path: '/en/terms' },

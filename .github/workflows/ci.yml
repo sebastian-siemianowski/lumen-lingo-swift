@@ -37,6 +37,10 @@ jobs:
 
   e2e-tests:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1/4, 2/4, 3/4, 4/4]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -50,14 +54,40 @@ jobs:
         working-directory: lumen-lingo-frontend
       - run: npm run build
         working-directory: lumen-lingo-frontend
-      - run: npm run test:e2e -- --project=chromium
+      - run: npx playwright test --project=chromium --shard=${{ matrix.shard }}
         working-directory: lumen-lingo-frontend
       - uses: actions/upload-artifact@v4
-        if: failure()
+        if: always()
+        with:
+          name: playwright-blob-${{ strategy.job-index }}
+          path: lumen-lingo-frontend/blob-report/
+          retention-days: 7
+
+  e2e-report:
+    if: always() && needs.e2e-tests.result != 'skipped'
+    needs: e2e-tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: lumen-lingo-frontend/package-lock.json
+      - run: npm ci
+        working-directory: lumen-lingo-frontend
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: playwright-blob-*
+          path: lumen-lingo-frontend/all-blob-reports
+          merge-multiple: true
+      - run: npx playwright merge-reports --reporter=html ./all-blob-reports
+        working-directory: lumen-lingo-frontend
+      - uses: actions/upload-artifact@v4
         with:
           name: playwright-report
-          path: lumen-lingo-frontend/test-results/
-          retention-days: 7
+          path: lumen-lingo-frontend/playwright-report/
+          retention-days: 14
 
   translations:
     runs-on: ubuntu-latest
@@ -70,7 +100,7 @@ jobs:
           cache-dependency-path: lumen-lingo-frontend/package-lock.json
       - run: npm ci
         working-directory: lumen-lingo-frontend
-      - run: node scripts/check-translations.js
+      - run: npm run check:translations
         working-directory: lumen-lingo-frontend
 
   build:
@@ -86,3 +116,27 @@ jobs:
         working-directory: lumen-lingo-frontend
       - run: npm run build
         working-directory: lumen-lingo-frontend
+
+  ios-tests:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install XcodeGen
+        run: brew install xcodegen
+      - name: Generate Xcode project
+        run: cd LumenLingo && xcodegen generate
+      - name: Run iOS unit tests
+        run: |
+          cd LumenLingo && xcodebuild test \
+            -project LumenLingo.xcodeproj \
+            -scheme LumenLingo-Dev \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro Max' \
+            -parallel-testing-enabled YES \
+            -resultBundlePath ../build/TestResults.xcresult \
+            | xcbeautify || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ios-test-results
+          path: build/TestResults.xcresult
+          retention-days: 7

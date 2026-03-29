@@ -82,8 +82,8 @@ export function CategoryFilter({ counts }: CategoryFilterProps) {
           const next = e.key === 'ArrowRight'
             ? (idx + 1) % CATEGORY_SLUGS.length
             : (idx - 1 + CATEGORY_SLUGS.length) % CATEGORY_SLUGS.length;
-          handleSelect(CATEGORY_SLUGS[next]);
-          chipRefs.current.get(CATEGORY_SLUGS[next])?.focus();
+          handleSelect(CATEGORY_SLUGS[next]!);
+          chipRefs.current.get(CATEGORY_SLUGS[next]!)?.focus();
         }}
       >
         {CATEGORY_SLUGS.map((cat) => {
@@ -106,7 +106,7 @@ export function CategoryFilter({ counts }: CategoryFilterProps) {
                   : 'bg-[--color-glass] text-[--color-foreground-muted] hover:bg-[--color-glass-hover] hover:text-[--color-foreground-secondary]',
               )}
             >
-              {t(CATEGORY_KEYS[cat])}
+              {t(CATEGORY_KEYS[cat]!)}
               {count != null && (
                 <span className="ms-1.5 text-xs opacity-50">({count})</span>
               )}

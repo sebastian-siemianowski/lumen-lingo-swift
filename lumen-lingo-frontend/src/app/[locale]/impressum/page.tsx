@@ -25,7 +25,7 @@ export async function generateMetadata({
       url: localizedUrl('/impressum', locale),
       siteName: 'LumenLingo',
       locale: getOgLocale(locale),
-      alternateLocales: getOgAlternateLocales(locale),
+      alternateLocale: getOgAlternateLocales(locale),
       type: 'website',
     },
     twitter: {

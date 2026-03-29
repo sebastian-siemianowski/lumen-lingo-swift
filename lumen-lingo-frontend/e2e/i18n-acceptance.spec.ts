@@ -3,13 +3,13 @@ import { test, expect } from '@playwright/test';
 /**
  * Story 15.12 — End-to-End Internationalisation Acceptance Testing
  *
- * Comprehensive E2E tests covering all 10 supported locales,
+ * Comprehensive E2E tests covering all 9 supported locales,
  * verifying correct content rendering, locale switching, RTL layout,
  * currency context, and absence of English fallback text.
  */
 
 // ---------------------------------------------------------------------------
-// 15.12.1 — Test helper: all 10 locales with locale-specific metadata
+// 15.12.1 — Test helper: all 9 locales with locale-specific metadata
 // ---------------------------------------------------------------------------
 
 interface LocaleMeta {
@@ -31,7 +31,6 @@ const LOCALES: LocaleMeta[] = [
   { code: 'de', prefix: '/de', dir: 'ltr', heroSnippet: 'Sprachen Meistern',    currencyHint: '€' },
   { code: 'ja', prefix: '/ja', dir: 'ltr', heroSnippet: '没入型体験',             currencyHint: '¥' },
   { code: 'zh', prefix: '/zh', dir: 'ltr', heroSnippet: '沉浸式体验',             currencyHint: '¥' },
-  { code: 'pt', prefix: '/pt', dir: 'ltr', heroSnippet: 'Domine Idiomas',       currencyHint: 'R$' },
   { code: 'pl', prefix: '/pl', dir: 'ltr', heroSnippet: 'Opanuj',               currencyHint: 'zł' },
   { code: 'ar', prefix: '/ar', dir: 'rtl', heroSnippet: 'أتقن اللغات',           currencyHint: 'ر.س' },
   { code: 'uk', prefix: '/uk', dir: 'ltr', heroSnippet: 'Опануйте',             currencyHint: '₴' },

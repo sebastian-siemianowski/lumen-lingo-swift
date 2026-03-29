@@ -59,7 +59,7 @@ export function FlashcardFlowAnimation() {
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([e]) => setVisible(e.isIntersecting),
+      (entries) => setVisible(entries[0]!.isIntersecting),
       { threshold: 0.4 },
     );
     obs.observe(el);
@@ -238,7 +238,7 @@ export function WordBuilderAnimation() {
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([e]) => setVisible(e.isIntersecting),
+      (entries) => setVisible(entries[0]!.isIntersecting),
       { threshold: 0.4 },
     );
     obs.observe(el);
@@ -427,7 +427,7 @@ export function SoundscapeAnimation() {
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([e]) => setVisible(e.isIntersecting),
+      (entries) => setVisible(entries[0]!.isIntersecting),
       { threshold: 0.4 },
     );
     obs.observe(el);

@@ -42,7 +42,7 @@ const CURVED_POINTS: [number, number][] = [
 // Helper: dispatch N human-like curved mouse moves (each 100ms apart via perfNow)
 function dispatchHumanMouseMoves(count: number = 3) {
   for (let i = 0; i < count; i++) {
-    const [x, y] = CURVED_POINTS[i % CURVED_POINTS.length];
+    const [x, y] = CURVED_POINTS[i % CURVED_POINTS.length]!;
     perfNowValue += 100;
     window.dispatchEvent(mouseMove(x, y));
   }
@@ -469,9 +469,9 @@ describe('MouseRingBuffer', () => {
 
     expect(buf.count).toBe(3);
     const all = buf.getAll();
-    expect(all[0].x).toBe(2);
-    expect(all[1].x).toBe(3);
-    expect(all[2].x).toBe(4);
+    expect(all[0]!.x).toBe(2);
+    expect(all[1]!.x).toBe(3);
+    expect(all[2]!.x).toBe(4);
   });
 
   it('returns chronological order after wrap-around', () => {
@@ -761,7 +761,7 @@ describe('useBotDetection – environment fingerprinting', () => {
 
   it('detects PhantomJS globals and reduces score', () => {
     // Simulate PhantomJS by adding window._phantom
-    (window as Record<string, unknown>)._phantom = true;
+    (window as unknown as Record<string, unknown>)._phantom = true;
 
     const ref = createContainerRef();
     const { result } = renderHook(() => useBotDetection(ref));
@@ -774,7 +774,7 @@ describe('useBotDetection – environment fingerprinting', () => {
     expect(result.current.score).toBe(28);
 
     // Clean up
-    delete (window as Record<string, unknown>)._phantom;
+    delete (window as unknown as Record<string, unknown>)._phantom;
   });
 
   it('detects empty navigator.languages and reduces score', () => {

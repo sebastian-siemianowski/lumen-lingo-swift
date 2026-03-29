@@ -36,7 +36,7 @@ const messages: Record<SupportedLocale, {
 
 function detectLocale(): SupportedLocale {
   if (typeof window === 'undefined') return 'en';
-  const seg = window.location.pathname.split('/')[1];
+  const seg = window.location.pathname.split('/')[1] ?? '';
   return (SUPPORTED_LOCALES as readonly string[]).includes(seg)
     ? (seg as SupportedLocale)
     : 'en';

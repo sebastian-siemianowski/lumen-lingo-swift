@@ -4,11 +4,11 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 const captureMock = vi.fn();
 
 function mountPostHog() {
-  (window as Record<string, unknown>).posthog = { capture: captureMock };
+  (window as unknown as Record<string, unknown>).posthog = { capture: captureMock };
 }
 
 function unmountPostHog() {
-  delete (window as Record<string, unknown>).posthog;
+  delete (window as unknown as Record<string, unknown>).posthog;
 }
 
 // ── Dynamic import to respect NODE_ENV at import time ────────────

@@ -10,7 +10,7 @@ type PostHogLike = { capture: (event: string, properties?: Record<string, unknow
 function getPostHog(): PostHogLike | null {
   if (process.env.NODE_ENV !== 'production') return null;
   if (typeof window === 'undefined') return null;
-  const ph = (window as Record<string, unknown>).posthog;
+  const ph = (window as unknown as Record<string, unknown>).posthog;
   if (ph && typeof ph === 'object' && typeof (ph as PostHogLike).capture === 'function') {
     return ph as PostHogLike;
   }

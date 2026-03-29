@@ -30,7 +30,7 @@ export async function generateMetadata({
       url: localizedUrl('/blog', locale),
       siteName: 'LumenLingo',
       locale: getOgLocale(locale),
-      alternateLocales: getOgAlternateLocales(locale),
+      alternateLocale: getOgAlternateLocales(locale),
       type: 'website',
       images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'LumenLingo Blog' }],
     },

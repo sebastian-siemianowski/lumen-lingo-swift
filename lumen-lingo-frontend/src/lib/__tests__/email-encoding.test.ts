@@ -61,7 +61,7 @@ describe('email-encoder', () => {
       const { shuffled, indexMap } = shuffleWithMap(arr, seed);
       const restored = new Array<string>(arr.length);
       for (let i = 0; i < indexMap.length; i++) {
-        restored[indexMap[i]] = shuffled[i];
+        restored[indexMap[i]!] = shuffled[i]!;
       }
       expect(restored).toEqual(arr);
     });
@@ -92,7 +92,7 @@ describe('email-encoder', () => {
       // Unshuffle
       const ordered = new Array<string>(fragments.length);
       for (let i = 0; i < indexMap.length; i++) {
-        ordered[indexMap[i]] = fragments[i];
+        ordered[indexMap[i]!] = fragments[i]!;
       }
 
       // Decode

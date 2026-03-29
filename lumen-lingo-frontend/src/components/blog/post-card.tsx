@@ -159,7 +159,7 @@ export function PostCard({ post, index = 0, featured = false, priority = false }
             </>
           ) : (
             (() => {
-              const grad = categoryGradients[frontmatter.category] ?? categoryGradients['Language Tips'];
+              const grad = (categoryGradients[frontmatter.category] ?? categoryGradients['Language Tips'])!;
               const Icon = categoryIcons[frontmatter.category];
               return (
                 <div className={cn('relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-br', grad.bg)}>
