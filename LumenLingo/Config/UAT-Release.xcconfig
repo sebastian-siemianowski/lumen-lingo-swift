@@ -8,7 +8,7 @@ ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
 
 // ─── Environment ──────────────────────────────────────────────
 LL_ENVIRONMENT = uat
-LL_API_BASE_URL = https:/$()/api-uat.lumenlingo.com
+LL_API_BASE_URL = https://api-uat.lumenlingo.com
 LL_LOG_LEVEL = info
 
 // ─── Clerk Auth ──────────────────────────────────────────────

@@ -90,10 +90,15 @@ struct LegalReconsentView: View {
     }
 
     private func acceptConsent() {
-        profile?.legalConsentVersion = LegalDocuments.currentVersion
-        profile?.legalConsentDate = Date()
-        try? modelContext.save()
-        onAccept()
+        guard let profile else { return }
+        profile.legalConsentVersion = LegalDocuments.currentVersion
+        profile.legalConsentDate = Date()
+        do {
+            try modelContext.save()
+            onAccept()
+        } catch {
+            Log.error("Failed to save legal consent: \(error.localizedDescription)")
+        }
     }
 }
 

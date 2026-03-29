@@ -63,9 +63,8 @@ private class DisplayLinkTarget: NSObject, @unchecked Sendable {
 
     @objc func tick(_ link: CADisplayLink) {
         let timestamp = link.timestamp
-        let monitor = self.monitor
-        MainActor.assumeIsolated {
-            monitor?.handleTick(timestamp)
+        Task { @MainActor [weak self] in
+            self?.monitor?.handleTick(timestamp)
         }
     }
 }

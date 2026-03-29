@@ -95,14 +95,11 @@ struct LayoutBackgroundView: View {
                         .animation(.smooth(duration: 0.65), value: isDark)
                 } else {
                     // Layer 0: Light mode background image
-                    if let img = UIImage(named: "LightModeBackground") {
-                        Image(uiImage: img)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .ignoresSafeArea()
-                    } else {
-                        baseGradient
-                    }
+                    Image("LightModeBackground")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea()
+                        .background(baseGradient)
                 }
 
                 // Layer 1: Breathing orbs (respects user toggle + active state)

@@ -7,6 +7,7 @@ import os.log
 enum PrivacyAuditLogger {
 
     private static let logger = Logger(subsystem: "com.lumenlingo", category: "PrivacyAudit")
+    private static let writeQueue = DispatchQueue(label: "com.lumenlingo.privacy-audit", qos: .utility)
 
     private static let fileURL: URL = {
         let support = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
@@ -31,12 +32,14 @@ enum PrivacyAuditLogger {
               let line = String(data: data, encoding: .utf8) else { return }
 
         let record = line + "\n"
-        if let handle = try? FileHandle(forWritingTo: fileURL) {
-            handle.seekToEndOfFile()
-            handle.write(Data(record.utf8))
-            try? handle.close()
-        } else {
-            try? record.write(to: fileURL, atomically: true, encoding: .utf8)
+        writeQueue.async {
+            if let handle = try? FileHandle(forWritingTo: fileURL) {
+                defer { try? handle.close() }
+                handle.seekToEndOfFile()
+                handle.write(Data(record.utf8))
+            } else {
+                try? record.write(to: fileURL, atomically: true, encoding: .utf8)
+            }
         }
 
         logger.info("Privacy audit: \(action, privacy: .public) — \(detail ?? "", privacy: .public)")

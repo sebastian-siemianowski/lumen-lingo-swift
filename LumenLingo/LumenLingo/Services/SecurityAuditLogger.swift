@@ -68,6 +68,11 @@ enum SecurityAuditLogger {
             metadata: metadata
         )
         context.insert(event)
+        do {
+            try context.save()
+        } catch {
+            Log.error("Failed to save security event (\(eventType)): \(error.localizedDescription)")
+        }
     }
 
     /// Prune events older than 90 days.
