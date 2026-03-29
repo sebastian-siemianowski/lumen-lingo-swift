@@ -51,7 +51,7 @@ enum AuthAnalytics {
     private static var standardContext: [String: String] {
         [
             "app_version": Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "unknown",
-            "os_version": UIDevice.current.systemVersion,
+            "os_version": ProcessInfo.processInfo.operatingSystemVersionString,
             "device_model": deviceModel,
             "environment": EnvironmentConfig.current.environment.rawValue
         ]
